@@ -1,160 +1,159 @@
 #!/usr/bin/env python3
 """
-AVGO Signal Model — compact edition
-────────────────────────────────────
-Core question: do proxy signals suggest EPS will beat or miss
-what the current stock price already prices in?
+AVGO Signal Model — v2
+────────────────────────
+Core question: what does the current stock price ($417) EMBED, and do
+proxy signals justify a different distribution?
 
-At $417 the market isn't ignoring TSMC / hyperscaler CapEx data —
-it's already embedding those signals. The edge is only in the GAP
-between (a) what proxies imply for future EPS and (b) what $417
-requires for a fair return.
+The gap between (market-implied score) and (proxy score) is the trade.
+NOT the gap between proxy signals and last quarter's reported data.
 
 Run: python avgo_signal_model.py
 """
-
-# ── CONFIG ────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 417.0
-EXIT_MULTIPLES  = [25, 30, 35, 40]     # range of reasonable 2-yr exit P/Es
-CONSENSUS_EPS   = {"FY2026": 9.39, "FY2027": 12.72, "FY2028": 17.55}
-
-# ── PROXY SIGNALS (latest available: Q1 FY2026 window, Mar 2026) ──────────
-#
-#  Each signal:  (name, value, unit, bear_floor, base_floor, bull_floor, xbull_floor,
-#                 higher_is_better, what_it_implies_for_avgo_eps)
-#
-SIGNALS = [
-    # name                              val    unit         bear  base  bull  xbull  hib
-    ("Hyperscaler CapEx YoY",           77.0,  "% YoY",      0,   10,   30,   60,   True,
-     "upstream AI ASIC order flow; leads AVGO AI rev by 1-2Q"),
-    ("TSMC HPC % of revenue",           61.0,  "% of rev",  40,   50,   57,   62,   True,
-     "actual fab utilisation of N3/N5 — AVGO ASIC slots filling"),
-    ("Arista Networks rev YoY",         35.1,  "% YoY",      0,   15,   25,   35,   True,
-     "AI cluster Ethernet build-out; AVGO Jericho/Tomahawk volume"),
-    ("Nutanix ARR YoY (inverse)",       18.0,  "% YoY",     30,   30,   20,   10,   False,
-     "VMware churn proxy — lower NTNX growth = VMware stickier"),
-    ("Super Micro rev YoY",            123.0,  "% YoY",      0,   20,   60,  100,   True,
-     "GPU rack deployments — AI capex flowing into compute density"),
-    ("CDW commercial YoY",              9.6,   "% YoY",     -5,    0,    5,   10,   True,
-     "enterprise IT budget health — VMware channel + non-AI semi"),
-]
-WEIGHTS = [0.30, 0.20, 0.15, 0.15, 0.10, 0.10]   # must sum to 1.0
-
-# ── SCENARIO EPS BANDS ────────────────────────────────────────────────────
-#  FY2028 non-GAAP EPS implied by each scenario (2-yr horizon)
-SCENARIO_EPS = {"BEAR": 8.50, "BASE": 17.55, "BULL": 22.0, "XBULL": 27.0}
-
-# ─────────────────────────────────────────────────────────────────────────
 import math
 
-def score(val, bear, base, bull, xbull, hib):
-    if hib:
-        if val >= xbull: return 4, "XBULL"
-        if val >= bull:  return 3, "BULL"
-        if val >= base:  return 2, "BASE"
-        return 1, "BEAR"
-    else:   # inverse: lower is better; xbull is the tightest ceiling
-        if val <= xbull: return 4, "XBULL"
-        if val <= bull:  return 3, "BULL"
-        if val <= base:  return 2, "BASE"
-        return 1, "BEAR"
+# ── CONFIG ────────────────────────────────────────────────────────────────
+CURRENT_PRICE    = 417.0
+REQUIRED_RETURN  = 0.15        # annual cost of equity; 2yr discount = 1.32x
+HORIZON_YEARS    = 2
 
-def softmax_probs(composite):
-    """Map composite score (1-4) to scenario probabilities."""
+# Scenario 2-year price targets  (EPS × exit multiple)
+# Exit multiples compress at higher EPS scenarios — AVGO won't get 40x when
+# growing at 15% vs 40x when growing at 35%. This is the key discipline.
+SCENARIOS = {
+    #           EPS    mult   price
+    "BEAR":  ( 8.50,  22,    187),
+    "BASE":  (17.55,  30,    526),   # consensus FY2028E at 30x
+    "BULL":  (22.00,  35,    770),
+    "XBULL": (27.00,  33,   891),   # 33x not 40x — growth decelerating even in XBULL
+}
+
+# ── PROXY SIGNALS ─────────────────────────────────────────────────────────
+#  (name, value, unit, base_floor, bull_floor, xbull_floor, higher_is_better, read-through)
+SIGNALS = [
+    ("Hyperscaler CapEx YoY",       77.0, "% YoY",       10,  30,  60, True,
+     "upstream order flow for AI ASICs; 1-2Q lead"),
+    ("TSMC HPC % of revenue",       61.0, "% of rev",    50,  57,  62, True,
+     "actual fab utilisation; AVGO N3/N5 ASIC slots"),
+    ("Arista Networks rev YoY",     35.1, "% YoY",       15,  25,  35, True,
+     "AI cluster Ethernet; AVGO Jericho/Tomahawk volume"),
+    ("Nutanix ARR YoY (inverse)",   18.0, "% inv",       10,  20,  30, False,
+     "VMware churn proxy — low NTNX growth = VMware sticky"),
+    ("Super Micro rev YoY",        123.0, "% YoY",       20,  60, 100, True,
+     "GPU rack deployments; AI capex flowing"),
+    ("CDW commercial YoY",           9.6, "% YoY",        0,   5,  10, True,
+     "enterprise IT health; VMware channel + non-AI semi"),
+]
+WEIGHTS = [0.30, 0.20, 0.15, 0.15, 0.10, 0.10]
+
+# ── SCORING ───────────────────────────────────────────────────────────────
+def score_signal(val, base_f, bull_f, xbull_f, hib):
+    if hib:
+        if val >= xbull_f: return 4
+        if val >= bull_f:  return 3
+        if val >= base_f:  return 2
+        return 1
+    else:  # inverse: lower is better; thresholds are ceilings
+        if val <= base_f:  return 4
+        if val <= bull_f:  return 3
+        if val <= xbull_f: return 2
+        return 1
+
+ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
+
+def softmax_probs(composite, T=0.60):
     centres = {"BEAR": 1.25, "BASE": 2.0, "BULL": 2.75, "XBULL": 3.75}
-    T = 0.60
     raw = {k: math.exp(-abs(composite - c) / T) for k, c in centres.items()}
     tot = sum(raw.values())
     return {k: v / tot for k, v in raw.items()}
 
-def implied_breakeven_eps(price, multiples):
-    """EPS the stock needs in 2 years to break even at each exit multiple."""
-    return {m: round(price / m, 2) for m in multiples}
+def expected_price(probs):
+    return sum(probs[k] * SCENARIOS[k][2] for k in probs)
 
-def ev(probs):
-    return sum(probs[k] * SCENARIO_EPS[k] for k in probs)
+# ── MARKET-IMPLIED SCORE ──────────────────────────────────────────────────
+# Back-solve: find the composite score whose probability-weighted price
+# equals what $417 implies after applying the required return discount.
+# Market EV (undiscounted 2-yr) = current_price × (1 + r)^n
+def market_implied_composite(target_ev, tolerance=0.5):
+    for c in [x / 100 for x in range(100, 401)]:   # 1.00 to 4.00
+        probs = softmax_probs(c)
+        ev = expected_price(probs)
+        if abs(ev - target_ev) < tolerance:
+            return round(c, 2), probs
+    return None, None
 
-# ── SCORE ALL SIGNALS ─────────────────────────────────────────────────────
-results = []
-for (name, val, unit, bear, base, bull, xbull, hib, note), w in zip(SIGNALS, WEIGHTS):
-    s, label = score(val, bear, base, bull, xbull, hib)
-    results.append((name, val, unit, s, label, w, note))
-
-composite  = sum(r[3] * r[5] for r in results)
-probs      = softmax_probs(composite)
-top        = max(probs, key=probs.get)
-ev_eps     = ev(probs)
-breakevens = implied_breakeven_eps(CURRENT_PRICE, EXIT_MULTIPLES)
-
-# ── OUTPUT ────────────────────────────────────────────────────────────────
+# ── MAIN ──────────────────────────────────────────────────────────────────
 W = 70
+
+# Proxy scoring
+scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
+          for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
+proxy_composite  = sum(s * w for *_, s, w, _ in scored)
+proxy_probs      = softmax_probs(proxy_composite)
+proxy_ev         = expected_price(proxy_probs)
+
+# Market-implied
+discount_factor   = (1 + REQUIRED_RETURN) ** HORIZON_YEARS
+market_target_ev  = CURRENT_PRICE * discount_factor
+mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
+mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
+
 print()
 print("═" * W)
-print("  AVGO SIGNAL MODEL  (proxy signals vs. what $417 prices in)")
+print("  AVGO SIGNAL MODEL  —  proxy vs. market-implied probability")
 print("═" * W)
 
 # Signal scorecard
-print(f"\n  {'Signal':<34} {'Value':>9}  {'Wt':>4}  {'Score'}")
+print(f"\n  {'Signal':<35}{'Value':>9}  Wt   Score")
 print("  " + "─" * (W-2))
-icons = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
-for name, val, unit, s, label, w, note in results:
-    bar = "█" * s + "░" * (4-s)
-    print(f"  {name:<34} {val:>7.1f}{unit[0]:1}  {w*100:.0f}%   {icons[s]}  {bar}")
+for name, val, unit, s, w, rt in scored:
+    bar = "█" * s + "░" * (4 - s)
+    print(f"  {name:<35}{val:>7.1f}{unit[0]}  {w*100:.0f}%  {ICONS[s]}  {bar}")
+print(f"\n  Proxy composite:   {proxy_composite:.2f} / 4.00")
+if mkt_composite:
+    print(f"  Market composite:  {mkt_composite:.2f} / 4.00  "
+          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% reqd return)")
+    gap = proxy_composite - mkt_composite
+    print(f"  Gap (proxy − mkt): {gap:+.2f}  ← this is the trade")
 
-print(f"\n  Proxy composite : {composite:.2f} / 4.00")
-print(f"  Signal says     : {top}  ({probs[top]*100:.0f}% probability)")
-
-# What the price already implies
-print(f"\n  WHAT $417 REQUIRES  (break-even EPS in 2 years at exit multiple)")
+# Probability comparison
+print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "
+      f"{'EPS':>6}  {'Multiple':>8}  {'Price':>7}")
 print("  " + "─" * (W-2))
-print(f"  {'Exit multiple':<20} {'Required EPS':>14}  {'vs consensus FY2028 ($17.55)':>28}")
-print("  " + "─" * (W-2))
-for m, eps in breakevens.items():
-    diff   = (eps / CONSENSUS_EPS["FY2028"] - 1) * 100
-    sign   = "+" if diff >= 0 else ""
-    marker = " ← stock looks CHEAP vs consensus" if eps < CONSENSUS_EPS["FY2028"] else \
-             " ← requires ABOVE consensus" if eps > CONSENSUS_EPS["FY2028"] * 1.1 else ""
-    print(f"  {m}x exit{'':<13} {eps:>14.2f}  consensus {sign}{diff:.0f}%{marker}")
+for k in ["BEAR", "BASE", "BULL", "XBULL"]:
+    eps, mult, price = SCENARIOS[k]
+    pp  = proxy_probs[k]
+    mp  = mkt_probs[k] if mkt_probs else 0
+    gap = pp - mp
+    sign = "+" if gap >= 0 else ""
+    print(f"  {k:<10}  {pp*100:>7.1f}%  {mp*100:>7.1f}%  "
+          f"{sign}{gap*100:>6.1f}pp  ${eps:>5.2f}  {mult:>6}x      ${price}")
 
-# Probability-weighted EPS vs. break-evens
-print(f"\n  Proxy-implied expected EPS (prob-weighted): ${ev_eps:.2f}")
-print(f"  Consensus FY2028E:                          ${CONSENSUS_EPS['FY2028']:.2f}")
-gap = (ev_eps / CONSENSUS_EPS["FY2028"] - 1) * 100
-print(f"  Proxy vs consensus gap:                    {'+' if gap>=0 else ''}{gap:.0f}%")
+print(f"\n  Prob-weighted 2yr price:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
+print(f"  Current price: ${CURRENT_PRICE:.0f}")
 
-# THE KEY QUESTION
-print(f"\n  THE KEY QUESTION")
+# The answer to the user's question
+print(f"\n  WHAT THE GAP MEANS")
 print("  " + "─" * (W-2))
-if ev_eps > CONSENSUS_EPS["FY2028"] * 1.10:
-    verdict = "PROXIES AHEAD OF CONSENSUS — potential upside if signals are right"
-    detail  = (f"  Proxy-implied EPS ${ev_eps:.2f} > consensus ${CONSENSUS_EPS['FY2028']:.2f}.\n"
-               f"  If correct, stock is pricing in less than proxies suggest.\n"
-               f"  Edge exists — but only if signals haven't fully reached analyst models yet.")
-elif ev_eps < CONSENSUS_EPS["FY2028"] * 0.90:
-    verdict = "PROXIES BELOW CONSENSUS — proxy signals warn of downside to estimates"
-    detail  = (f"  Proxy-implied EPS ${ev_eps:.2f} < consensus ${CONSENSUS_EPS['FY2028']:.2f}.\n"
-               f"  Market may be overly optimistic. Watch for estimate cuts.")
-else:
-    verdict = "PROXIES IN LINE WITH CONSENSUS — stock fairly reflects available data"
-    detail  = (f"  Proxy-implied EPS ${ev_eps:.2f} ≈ consensus ${CONSENSUS_EPS['FY2028']:.2f}.\n"
-               f"  No informational edge from proxy signals at current price.\n"
-               f"  Alpha requires a VIEW on: (1) new ASIC customer timing,\n"
-               f"  (2) VMware renewal cohort data not yet public,\n"
-               f"  (3) hyperscaler CapEx guidance revisions.")
-print(f"  {verdict}")
-print()
-for line in detail.split("\n"):
-    print(f"  {line}")
+if mkt_composite:
+    gap = proxy_composite - mkt_composite
+    print(f"""  Proxy signals score {proxy_composite:.2f}.  Market prices in {mkt_composite:.2f}.
+  Gap = {gap:+.2f} — this is NOT the market ignoring the data.
+  It is the market's SKEPTICISM DISCOUNT on four things proxies can't measure:
 
-# Scenario probability table
-print(f"\n  SCENARIO DISTRIBUTION  (proxy-only)")
-print("  " + "─" * (W-2))
-eps_map = {"BEAR": 187, "BASE": 526, "BULL": 770, "XBULL": 1080}
-for k, p in probs.items():
-    bar = "█" * int(p*20) + "░" * (20-int(p*20))
-    print(f"  {k:<8} {p*100:>5.1f}%  {bar}  ${eps_map[k]}")
-ev_price = sum(probs[k]*eps_map[k] for k in probs)
-print(f"\n  Prob-weighted price target: ${ev_price:.0f}  "
-      f"({'+'if ev_price>CURRENT_PRICE else ''}{(ev_price/CURRENT_PRICE-1)*100:.0f}% vs $417)")
+    1. Flow-through risk: CapEx going to AVGO vs NVIDIA / in-house silicon
+    2. Execution risk:    $100B AI target is aspiration, not contract
+    3. Multiple risk:     XBULL EPS ($27) at decelerating growth → 33x, not 40x
+    4. Cycle risk:        AI CapEx can reverse fast if ROI disappoints
+
+  To justify proxy composite ({proxy_composite:.2f}) vs market ({mkt_composite:.2f}):
+  you need a NON-CONSENSUS view that proxies translate to AVGO revenue
+  with higher certainty than the market assumes. Examples:
+    • Supply chain checks confirming AVGO ASIC wafer starts (not just TSMC HPC aggregate)
+    • VMware renewal cohort data (not yet public)
+    • Confirmation of 6th ASIC customer (each = +$15-20B SAM)
+
+  Without that edge, the stock is FAIRLY PRICED for the data available.
+  The proxy signals are already IN the consensus and IN the multiple.""")
 print()
 print("═" * W)
