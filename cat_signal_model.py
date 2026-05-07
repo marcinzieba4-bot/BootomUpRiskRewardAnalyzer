@@ -122,6 +122,14 @@ SIGNALS = [
 ]
 WEIGHTS = [0.25, 0.20, 0.15, 0.15, 0.15, 0.10]
 
+STRUCTURAL_FACTORS = [
+    ("3,800-dealer global distribution moat",         0.8, 0.25),
+    ("Steel / component tariff cost exposure",       -0.8, 0.30),
+    ("Construction / mining cyclicality risk",       -0.5, 0.25),
+    ("Data center power generation new TAM",          0.8, 0.10),
+    ("Strong balance sheet net cash",                 0.5, 0.10),
+]
+
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
     if hib:
@@ -158,6 +166,8 @@ W = 72
 scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
           for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
 proxy_composite = sum(s * w for *_, s, w, _ in scored)
+sca             = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite   = proxy_composite + sca
 proxy_probs     = softmax_probs(proxy_composite)
 proxy_ev        = expected_price(proxy_probs)
 
@@ -216,6 +226,28 @@ print(f"  FY2026E CapEx:               ~$3.5B  (maintenance + modest expansion)"
 print(f"  Net cash / debt:             Net cash positive (no leverage risk)")
 print(f"  Dividend yield:              ~1.8%  (25+ year dividend growth streak)")
 print(f"  → Cheap if recovery materialises; fair if tariffs persist and construction stalls")
+
+# Structural overlay
+print(f"\n  STRUCTURAL RISK OVERLAY  (analyst-assessed; beyond proxy signals)")
+print("  " + "─" * (W-2))
+print(f"  {'Factor':<44}  {'Score':>5}  {'Wt':>3}   {'Adj':>5}")
+for desc, score, wt in STRUCTURAL_FACTORS:
+    adj_c = score * wt
+    arrow = "▲" if score > 0 else "▼"
+    print(f"  {desc:<44}  {score:>+5.1f}  {wt*100:>3.0f}%  {adj_c:>+5.2f}  {arrow}")
+print(f"  {'─'*68}")
+print(f"  Structural adj. (SCA):     {sca:>+6.2f}")
+print(f"  Adjusted composite:         {adj_composite:.2f}  "
+      f"(proxy {proxy_composite:.2f} {'+' if sca >= 0 else ''}{sca:.2f})")
+if mkt_composite:
+    adj_gap = adj_composite - mkt_composite
+    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
+    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
+    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
+    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
+    else:                 _verdict = "OVERVALUED"
+    print(f"  Market composite:          {mkt_composite:.2f}")
+    print(f"  ADJUSTED GAP:             {adj_gap:>+6.2f}  ← {_verdict}")
 
 # Probability table
 print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "

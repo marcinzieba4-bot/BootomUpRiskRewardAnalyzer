@@ -122,6 +122,18 @@ SIGNALS = [
 ]
 WEIGHTS = [0.25, 0.20, 0.15, 0.15, 0.15, 0.10]
 
+# ── STRUCTURAL RISK OVERLAY ──────────────────────────────────────────────
+# Author-assessed factors beyond proxy signals. Score: -2 (severe risk) to
+# +2 (strong advantage). Weighted sum = structural composite adjustment (SCA).
+STRUCTURAL_FACTORS = [
+    # (description, score -2..+2, weight)
+    ("Apple/Google OS-native checkout displacement", -1.0, 0.40),
+    ("Venmo 90M user network effect moat",            0.5, 0.20),
+    ("Chriss turnaround execution (18M record)",      0.3, 0.20),
+    ("$7B net cash — balance sheet strength",         0.3, 0.10),
+    ("US fintech regulatory tailwind",                0.2, 0.10),
+]
+
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
     if hib:
@@ -158,6 +170,8 @@ W = 72
 scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
           for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
 proxy_composite = sum(s * w for *_, s, w, _ in scored)
+sca           = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite = proxy_composite + sca
 proxy_probs     = softmax_probs(proxy_composite)
 proxy_ev        = expected_price(proxy_probs)
 
@@ -219,6 +233,27 @@ print(f"  → At $78, market is pricing PYPL as a mature utility processor, not 
 print(f"    Re-rating to 20-21x requires evidence of organic revenue re-acceleration.")
 
 # Probability table
+print(f"\n  STRUCTURAL RISK OVERLAY  (analyst-assessed; beyond proxy signals)")
+print("  " + "─" * (W-2))
+print(f"  {'Factor':<44}  {'Score':>5}  {'Wt':>3}   {'Adj':>5}")
+for desc, score, wt in STRUCTURAL_FACTORS:
+    adj_c = score * wt
+    arrow = "▲" if score > 0 else "▼"
+    print(f"  {desc:<44}  {score:>+5.1f}  {wt*100:>3.0f}%  {adj_c:>+5.2f}  {arrow}")
+print(f"  {'─'*68}")
+print(f"  Structural adj. (SCA):     {sca:>+6.2f}")
+print(f"  Adjusted composite:         {adj_composite:.2f}  "
+      f"(proxy {proxy_composite:.2f} {'+' if sca >= 0 else ''}{sca:.2f})")
+if mkt_composite:
+    adj_gap = adj_composite - mkt_composite
+    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
+    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
+    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
+    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
+    else:                 _verdict = "OVERVALUED"
+    print(f"  Market composite:          {mkt_composite:.2f}")
+    print(f"  ADJUSTED GAP:             {adj_gap:>+6.2f}  ← {_verdict}")
+
 print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "
       f"{'EPS':>6}  {'Mult':>5}  {'Price':>7}  Narrative")
 print("  " + "─" * (W-2))
