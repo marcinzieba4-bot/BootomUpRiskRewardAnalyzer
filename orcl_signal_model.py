@@ -1,20 +1,11 @@
 #!/usr/bin/env python3
 """
-Oracle Signal Model
-────────────────────
-Same framework applied to Oracle Corporation (NYSE: ORCL).
+Oracle Signal Model  v2
+────────────────────────
+Oracle Corporation (NYSE: ORCL)  ·  Enterprise Software / Cloud
 
-Key structural difference from AVGO, COIN, and SAP:
-  $553B RPO (+325% YoY) — the largest contracted backlog in enterprise software
-  54% of RPO is ONE customer (OpenAI ~$300B) — extreme concentration risk
-  $90B FY2027 revenue target requires 36% growth — the most aggressive guide of all 4
-  OCI growing at 84% YoY but starting from smaller base than AWS/Azure
-
-The interesting question: proxy signals are XBULL-grade across the board, yet
-the market prices Oracle at 22x forward earnings. The gap is the largest of
-any stock in this framework — and entirely explained by delivery uncertainty.
-
-Run: python orcl_signal_model.py
+New format: signal dashboard → bear anatomy → updated EPP →
+            conservative growth → volatility context → probability
 """
 import math
 
@@ -23,10 +14,6 @@ CURRENT_PRICE   = 175.0     # USD (NYSE: ORCL, ~May 2026)
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 
-# Scenario 2-year price targets (non-GAAP EPS × exit multiple)
-# Oracle's multiple is capped by: net debt ~$95.5B, execution history,
-# and the fact that OCI is still 3-4x smaller than AWS/Azure.
-# FY2028E non-GAAP EPS range: $8 (bear) to $18 (xbull)
 SCENARIOS = {
     #           EPS    mult  price   narrative
     "BEAR":  ( 8.0,   18,   144,  "OCI growth stalls; OpenAI diversifies; $90B miss"),
@@ -36,13 +23,13 @@ SCENARIOS = {
 }
 
 # ── RPO CONCENTRATION CALCULATOR (Oracle-specific structural feature) ────
-TOTAL_RPO_B         = 553.0     # total remaining performance obligations ($B, Q3 FY2026)
-OPENAI_RPO_B        = 300.0     # OpenAI multi-year contract ($B, est.)
-OTHER_AI_RPO_B      =  83.0     # other AI customers in RPO ($B, est.)
-TRADITIONAL_RPO_B   = 170.0     # legacy cloud + apps + support ($B)
-FY2026E_REVENUE_B   =  66.0     # FY2026 estimated revenue ($B)
-FY2027_TARGET_B     =  90.0     # Oracle's own FY2027 target ($B)
-ANNUAL_RPO_BURN_PCT =  0.12     # % of RPO that converts to revenue per year (est.)
+TOTAL_RPO_B         = 553.0
+OPENAI_RPO_B        = 300.0
+OTHER_AI_RPO_B      =  83.0
+TRADITIONAL_RPO_B   = 170.0
+FY2026E_REVENUE_B   =  66.0
+FY2027_TARGET_B     =  90.0
+ANNUAL_RPO_BURN_PCT =  0.12
 
 def rpo_analysis():
     openai_pct      = OPENAI_RPO_B / TOTAL_RPO_B
@@ -50,61 +37,39 @@ def rpo_analysis():
     annual_burn     = TOTAL_RPO_B * ANNUAL_RPO_BURN_PCT
     fy2027_gap      = FY2027_TARGET_B - FY2026E_REVENUE_B
     fy2027_growth   = (FY2027_TARGET_B / FY2026E_REVENUE_B - 1) * 100
-    # What % of RPO must convert in FY2027 to hit target (incremental only)
     incremental_conv_needed = fy2027_gap / TOTAL_RPO_B
     return openai_pct, ai_total_pct, annual_burn, fy2027_gap, fy2027_growth, incremental_conv_needed
 
 # ── PROXY SIGNALS ─────────────────────────────────────────────────────────
-# Chosen to cover: AI infra spend (OCI's #1 customer type), Oracle's own
-# backlog momentum, cloud platform growth, enterprise multi-cloud adoption,
-# and frontier AI CapEx direction (drives the $300B OpenAI RPO).
-#
-# (name, value, unit, base_floor, bull_floor, xbull_floor, higher_is_better,
-#  what_it_drives_for_ORCL)
+# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
+#  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
-    # OCI IaaS revenue YoY: +84% in Q3 FY2026.
-    # Oracle's own hyperscale cloud. Primary driver of the $90B FY2027 target.
-    # At $4.9B/quarter run-rate growing 84%, OCI is ~$20B annualised.
-    # This is Oracle's own reported data but is the most directional single metric.
-    ("OCI / IaaS revenue YoY",           84.0, "% YoY",    20,  50,  75, True,
-     "core cloud revenue driver; $20B annualised; must sustain 50%+ for $90B target"),
+    ("OCI / IaaS revenue YoY",           "% YoY",
+     10.0,  20, 50, 75,   84.0, True,
+     "OCI loses hyperscaler-adjacent deals; AWS/Azure take AI workloads"),
 
-    # Oracle RPO sequential change: +$30B QoQ in Q3 FY2026 (to $553B from $523B).
-    # Contracted-not-yet-recognised. The rate of new signings is the best
-    # leading indicator of revenue 2-6 quarters out. Each $10B/Q = ~$1.2B/yr revenue.
-    ("Oracle RPO — sequential change",   30.0, "$B/Q",      5,  15,  25, True,
-     "contracted future revenue; sequential $30B adds → revenue 2-6Q out"),
+    ("Oracle RPO — sequential change",   "$B/Q",
+     -5.0,   5, 15, 25,   30.0, True,
+     "OpenAI diversifies; new bookings collapse; RPO shrinks sequentially"),
 
-    # NVIDIA data center revenue quarterly: $35.6B in Q4 FY2026 (+69% YoY).
-    # OCI is NVIDIA's largest hyperscale customer by GPU cluster size.
-    # NVIDIA data center growth = OCI capacity expansion approval signal.
-    ("NVIDIA data center rev (qtly)",    35.6, "$B/Q",      8,  20,  35, True,
-     "OCI GPU capacity signal; ORCL is top NVIDIA hyperscale GPU customer"),
+    ("NVIDIA data center rev (qtly)",    "$B/Q",
+      5.0,   8, 20, 35,   35.6, True,
+     "AI capex pause; GPU demand drops; OCI expansion stalls"),
 
-    # Hyperscaler CapEx YoY: +77% in aggregate (AWS + Azure + Google + Meta).
-    # Oracle competes for the same AI workloads. High hyperscaler CapEx = AI
-    # demand is real and sustained, directly flows into OCI capacity expansion.
-    ("Hyperscaler CapEx YoY",            77.0, "% YoY",    10,  30,  60, True,
-     "AI demand validation; Oracle wins AI workloads when CapEx cycle is hot"),
+    ("Hyperscaler CapEx YoY",            "% YoY",
+      0.0,  10, 30, 60,   77.0, True,
+     "AI investment bubble bursts; cloud capex cut across all players"),
 
-    # Oracle multi-cloud DB YoY: +531% in Q3 FY2026.
-    # Oracle Database@Azure, @AWS, @Google. The 'Switzerland' strategy — running
-    # Oracle DB inside competing clouds. Each connection = stickier customer.
-    # Growth at 531% is from tiny base but validates the multi-cloud go-to-market.
-    ("Oracle multi-cloud DB YoY",       531.0, "% YoY",    50, 150, 400, True,
-     "cross-cloud stickiness; each multi-cloud DB = higher retention + upsell"),
+    ("Oracle multi-cloud DB YoY",        "% YoY",
+     10.0,  50,150,400,  531.0, True,
+     "Hyperscalers block Oracle DB@Cloud; competitive resistance grows"),
 
-    # Frontier AI CapEx signal (qualitative 1-4):
-    # 1=AI investment pause, 2=flat, 3=continued growth, 4=acceleration
-    # Current: OpenAI, Anthropic, Google Gemini all increasing spend → score 3.
-    # Scored below 4 specifically because OpenAI = 54% of Oracle RPO —
-    # concentration risk means this signal cuts both ways.
-    ("Frontier AI CapEx signal",          3.0, "/4 scale",  1,   2,   4, True,
-     "OpenAI/$300B RPO conversion; frontier model training requires OCI GPU clusters"),
+    ("Frontier AI CapEx signal",         "/4 scale",
+      1.0,   1,  2,  4,    3.0, True,
+     "AI regulation or model quality plateau; frontier investment freezes"),
 ]
 WEIGHTS = [0.25, 0.20, 0.20, 0.15, 0.10, 0.10]
 
-# ── STRUCTURAL RISK OVERLAY ──────────────────────────────────────────────
 STRUCTURAL_FACTORS = [
     ("Oracle DB ecosystem switching cost moat",       1.0, 0.25),
     ("OpenAI 54% RPO concentration risk",            -1.8, 0.30),
@@ -113,29 +78,31 @@ STRUCTURAL_FACTORS = [
     ("10GW power delivery timeline risk",             -0.5, 0.10),
 ]
 
+# ── UPDATED EPP ─────────────────────────────────────────────────────────────
+EPP_TODAY_EPS      = 6.0    # FY2025E non-GAAP EPS (Oracle FY ends May)
+EPP_MIN_PE         = 18.0   # min viable P/E at max pessimism (DB/cloud business;
+                             # subscription revenue raises floor from legacy 10x)
+EPP_HISTORICAL     = 120.0  # historical EPP from v1 floor formula (approx)
 
-FLOOR_DATA = {
-    "trough_year":        2022,
-    "trough_price":       65.0,
-    "cum_fcf_per_share":  11.2,
-    "debt_delta":         5.2,     # +ve = debt grew (EPP lower); -ve = improved
-    "structural_delta":   12.0,  # +ve = fundamentals improved; -ve = weaker today
-    "cpi_since_trough":   0.17,     # cumul. US CPI from trough_year to May 2026
-}
+# ── CONSERVATIVE GROWTH (2-yr, base-minus assumptions) ───────────────────────
+CONS_SIGNALS = [
+    ("OCI / IaaS",             35.0,  "35% YoY (vs 84%); OCI growth halves"),
+    ("Oracle RPO",             10.0,  "$10B/Q adds (vs $30B); bookings slow"),
+    ("NVIDIA data",            22.0,  "$22B/Q (vs $35.6B); capex normalises"),
+    ("Hyperscaler CapEx",      25.0,  "25% YoY (vs 77%); normalization"),
+    ("Oracle multi-cloud",     80.0,  "80% YoY (vs 531%); tiny base matures"),
+    ("Frontier AI",             2.5,  "2.5/4 (vs 3.0); modestly constructive"),
+]
+CONS_EPS_CAGR    = 0.12    # conservative 2yr EPS CAGR
+CONS_EXIT_PE     = 20.0    # exit multiple (no re-rating assumed)
+CONS_DIVIDEND    = 1.60    # annual dividend per share
 
-def worst_case_floor():
-    yr     = FLOOR_DATA["trough_year"]
-    t      = FLOOR_DATA["trough_price"]
-    cpi    = FLOOR_DATA["cpi_since_trough"]
-    fcf    = FLOOR_DATA["cum_fcf_per_share"]
-    ddt    = FLOOR_DATA["debt_delta"]
-    sdelta = FLOOR_DATA["structural_delta"]
-    ref_adj = t * (1 + cpi)
-    epp     = ref_adj + fcf - ddt + sdelta
-    bear_p  = SCENARIOS["BEAR"][2]
-    gap_pct = (CURRENT_PRICE - epp) / epp * 100   # +ve = above EPP; -ve = below
-    bvf_pct = (bear_p - epp) / epp * 100
-    return ref_adj, epp, gap_pct, bear_p, bvf_pct
+# ── VOLATILITY ───────────────────────────────────────────────────────────────
+VOL_ANNUAL_PCT   = 0.30    # 2yr realized annualized vol
+VOL_BETA         = 0.85    # beta vs S&P 500
+VOL_52W_LOW      = 127.0   # 52-week low
+VOL_52W_HIGH     = 198.0   # 52-week high
+VOL_DIVIDEND     = 1.60    # same as CONS_DIVIDEND
 
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -145,9 +112,9 @@ def score_signal(val, base_f, bull_f, xbull_f, hib):
         if val >= base_f:  return 2
         return 1
     else:
-        if val <= base_f:  return 4
+        if val <= xbull_f: return 4
         if val <= bull_f:  return 3
-        if val <= xbull_f: return 2
+        if val <= base_f:  return 2
         return 1
 
 ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
@@ -167,26 +134,63 @@ def market_implied_composite(target_ev, tolerance=1.0):
             return round(c, 2), softmax_probs(c)
     return None, None
 
-# ── MAIN ──────────────────────────────────────────────────────────────────
+# ── COMPUTE ───────────────────────────────────────────────────────────────────
 W = 72
 
-scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
-          for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
-proxy_composite = sum(s * w for *_, s, w, _ in scored)
-sca           = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite = proxy_composite + sca
-proxy_probs     = softmax_probs(proxy_composite)
-proxy_ev        = expected_price(proxy_probs)
+scored = [
+    (name, unit, bv, bf, blf, xf, cv, hib, narr,
+     score_signal(cv, bf, blf, xf, hib), w)
+    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
+    in zip(SIGNALS, WEIGHTS)
+]
+proxy_composite  = sum(s * w for *_, s, w in scored)
+bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
+                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
+                       in zip(SIGNALS, WEIGHTS))
+sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite    = proxy_composite + sca
+proxy_probs      = softmax_probs(proxy_composite)
+bear_probs       = softmax_probs(bear_composite)
+proxy_ev         = expected_price(proxy_probs)
+bear_ev          = expected_price(bear_probs)
 
-market_target_ev  = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
+market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
 mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
 mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
 
+# Updated EPP
+epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
+epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
+bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
+
+# Conservative growth
+cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
+cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
+cons_div_2yr    = CONS_DIVIDEND * (1 + 0.02) + CONS_DIVIDEND * (1 + 0.02) ** 2
+cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
+cons_annual_ret = cons_total_ret / 2
+
+# Volatility
+sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
+vol_low_1yr       = CURRENT_PRICE - sigma_1yr
+vol_high_1yr      = CURRENT_PRICE + sigma_1yr
+sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
+
+if mkt_composite:
+    adj_gap = adj_composite - mkt_composite
+    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
+    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
+    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
+    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
+    else:                 _verdict = "OVERVALUED"
+
 openai_pct, ai_total_pct, annual_burn, fy2027_gap, fy2027_growth, incr_conv = rpo_analysis()
 
+# ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
 print("═" * W)
-print("  ORACLE SIGNAL MODEL  —  proxy vs. market-implied probability")
+print(f"  ORCL  ·  Oracle Corporation  ·  ${CURRENT_PRICE:.2f}  ·  Enterprise Software / Cloud")
+print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
 
 # RPO concentration analysis
@@ -203,172 +207,132 @@ print(f"  FY2026E revenue:                            ${FY2026E_REVENUE_B:.0f}B"
 print(f"  Incremental revenue needed in FY2027:       ${fy2027_gap:.0f}B")
 print(f"  % of total RPO that must convert (incr.):  {incr_conv*100:.1f}%  of $553B")
 print(f"  Estimated annual RPO burn rate (~{ANNUAL_RPO_BURN_PCT*100:.0f}%):      ${annual_burn:.0f}B / yr")
-print(f"  → ${FY2027_TARGET_B:.0f}B target is achievable IF OCI sustains 50%+ growth AND")
-print(f"    OpenAI does not diversify to AWS/Azure/Google before contracts convert.")
 
-# Signal scorecard
-print(f"\n  PROXY SIGNAL SCORECARD")
-print(f"  {'Signal':<38}{'Value':>9}  Wt   Score")
+# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print(f"\n  ① SIGNAL DASHBOARD")
+print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
 print("  " + "─" * (W-2))
-for name, val, unit, s, w, rt in scored:
-    bar = "█" * s + "░" * (4 - s)
-    if unit in ("/4 scale",):
-        fmt = f"{val:>+7.1f}"
-    elif unit == "$B/Q":
-        fmt = f"${val:>6.1f}"
-    else:
-        fmt = f"{val:>+7.1f}"
-    print(f"  {name:<38}{fmt}{unit[0]}  {w*100:.0f}%  {ICONS[s]}  {bar}")
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u = unit.split()[0] if unit else ""
+    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.1f}{u}"
+    bf_s  = f"{bf:.0f}{u}"
+    blf_s = f"{blf:.0f}{u}"
+    xf_s  = f"{xf:.0f}{u}"
+    cv_s  = f"{cv:+.0f}{u}"
+    bar   = "█" * s + "░" * (4 - s)
+    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
 
-print(f"\n  Proxy composite:   {proxy_composite:.2f} / 4.00")
+print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
 if mkt_composite:
-    print(f"  Market composite:  {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% reqd return)")
-    gap = proxy_composite - mkt_composite
-    print(f"  Gap (proxy − mkt): {gap:+.2f}  ← the largest gap in this framework")
+    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
+          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
+    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
+          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
 
-# Valuation context
-print(f"\n  VALUATION CONTEXT")
-print("  " + "─" * (W-2))
-print(f"  Current price:           ${CURRENT_PRICE:.0f}")
-print(f"  FY2026E non-GAAP EPS:    ~$7.95  (consensus)")
-print(f"  Forward P/E:             ~22x  (vs 30-35x for hyperscalers)")
-print(f"  Net debt:                ~$95.5B  ($134.6B gross - $39.1B cash)")
-print(f"  FY2026E CapEx:           ~$50B  (cloud infra buildout)")
-print(f"  Analyst avg target:      ~$200-305  (+{(252/CURRENT_PRICE-1)*100:.0f}% vs current, midpoint)")
-print(f"  → Cheap on PE, expensive on FCF once you net out $50B CapEx cycle")
-
-# Probability table
-print(f"\n  STRUCTURAL RISK OVERLAY  (analyst-assessed; beyond proxy signals)")
-print("  " + "─" * (W-2))
-print(f"  {'Factor':<44}  {'Score':>5}  {'Wt':>3}   {'Adj':>5}")
+print(f"\n  Structural factors:")
 for desc, score, wt in STRUCTURAL_FACTORS:
-    adj_c = score * wt
-    arrow = "▲" if score > 0 else "▼"
-    print(f"  {desc:<44}  {score:>+5.1f}  {wt*100:>3.0f}%  {adj_c:>+5.2f}  {arrow}")
-print(f"  {'─'*68}")
-print(f"  Structural adj. (SCA):     {sca:>+6.2f}")
-print(f"  Adjusted composite:         {adj_composite:.2f}  "
-      f"(proxy {proxy_composite:.2f} {'+' if sca >= 0 else ''}{sca:.2f})")
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
-    print(f"  Market composite:          {mkt_composite:.2f}")
-    print(f"  ADJUSTED GAP:             {adj_gap:>+6.2f}  ← {_verdict}")
+    arrow = "  +" if score > 0 else "  -"
+    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
 
-print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "
-      f"{'EPS':>6}  {'Mult':>5}  {'Price':>7}  Narrative")
+# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
+print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
 print("  " + "─" * (W-2))
+print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u      = unit.split()[0] if unit else ""
+    cv_s   = f"{cv:+.0f}{u}"
+    bv_s   = f"{bv:+.0f}{u}"
+    move   = bv - cv
+    move_s = f"{move:+.0f}{u}"
+    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
+    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+
+bear_model_price = expected_price(bear_probs)
+print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
+      f"~${bear_model_price:.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
+print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
+print(f"\n  KEY TRIGGER: OCI growth deceleration below 20% YoY combined with RPO growth")
+print(f"  stalling (new bookings drop). Oracle's $553B RPO is the foundation of the bull")
+print(f"  case — if OpenAI diversifies suppliers, the concentrated RPO risk becomes negative.")
+
+# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
+print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
+print("  " + "─" * (W-2))
+print(f"  Today's normalized EPS (non-GAAP):  ${EPP_TODAY_EPS:.2f}  (FY2025E; Oracle FY ends May)")
+print(f"  Min viable P/E at peak pessimism:   {EPP_MIN_PE:.0f}x  [DB/cloud: subscription revenue raises floor from legacy 10x]")
+print(f"  {'─'*60}")
+print(f"  UPDATED EPP:                        ${epp_updated:.0f}/share")
+print(f"  Historical EPP (v1 floor):          ${EPP_HISTORICAL:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  "
+      f"{'+' if epp_gap_pct>=0 else ''}{epp_gap_pct:.0f}%  "
+      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  "
+      f"{bear_vs_epp_pct:+.0f}%  "
+      f"{'← BEAR implies fundamental impairment' if bear_vs_epp_pct < 0 else '✓ BEAR above floor'}")
+
+# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
+print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
+for sname, sval, srat in CONS_SIGNALS:
+    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
+               if name.lower().startswith(sname.split()[0].lower()))
+    diff = sval - cur
+    diff_s = f"{diff:+.0f}"
+    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
+
+print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × "
+      f"(1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
+print(f"  At {CONS_EXIT_PE:.0f}x P/E (no multiple expansion):  ${cons_price_2yr:.0f}/share")
+if CONS_DIVIDEND > 0:
+    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  (${CONS_DIVIDEND:.2f} growing 2%/yr)")
+print(f"  {'─'*60}")
+print(f"  Conservative 2yr price:    ${cons_price_2yr:.0f}  "
+      f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} "
+      f"from ${CURRENT_PRICE:.0f})")
+print(f"  Conservative total return: {cons_total_ret:+.0f}% over 2yr  "
+      f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
+print(f"\n  Key: Conservative 12% EPS CAGR at 20x exit suggests modest upside. ORCL's debt")
+print(f"  burden ($95B) caps the multiple; OCI growth pace determines the ceiling.")
+
+# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
+print(f"\n  ⑤ VOLATILITY CONTEXT")
+print("  " + "─" * (W-2))
+print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
+if VOL_DIVIDEND > 0:
+    print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  "
+          f"(yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
+else:
+    print(f"  Dividend:             None")
+print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
+print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}")
+print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
+      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
+print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  "
+      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
+print(f"  {'─'*60}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
+      f"~{sigma_needed_bear:.1f}σ price move  "
+      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
+print(f"  Below-market beta (0.85) despite high-growth AI narrative — DB moat provides floor.")
+print(f"  Dividend yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% modest; ORCL is a growth/buyback story primarily.")
+
+# ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
+print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
+print("  " + "─" * (W-2))
+print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
+      f"{'Gap':>6}  Description")
 for k in ["BEAR", "BASE", "BULL", "XBULL"]:
     eps, mult, price, narr = SCENARIOS[k]
     pp  = proxy_probs[k]
     mp  = mkt_probs[k] if mkt_probs else 0
     gap_pp = pp - mp
-    sign = "+" if gap_pp >= 0 else ""
-    print(f"  {k:<10}  {pp*100:>7.1f}%  {mp*100:>7.1f}%  "
-          f"{sign}{gap_pp*100:>6.1f}pp  ${eps:>5}  {mult:>4}x  ${price:<6}  {narr[:28]}…")
+    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
+          f"{gap_pp*100:>+6.1f}pp  {narr}")
 
-print(f"\n  Prob-weighted 2yr:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
-print(f"  Current price: ${CURRENT_PRICE:.0f}")
+print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
+print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
+      f"${cons_price_2yr + cons_div_2yr:.0f} total value")
 
-# Equivalent Pessimism Price
-_ref_adj, _epp, _gap_pct, _bear_p, _bvf = worst_case_floor()
-_yr     = FLOOR_DATA["trough_year"]
-_t      = FLOOR_DATA["trough_price"]
-_cpi    = FLOOR_DATA["cpi_since_trough"]
-_fcf    = FLOOR_DATA["cum_fcf_per_share"]
-_ddt    = FLOOR_DATA["debt_delta"]
-_sdelta = FLOOR_DATA["structural_delta"]
-print(f"\n  EQUIV. PESSIMISM PRICE  (if {_yr} pessimism returned today, price would be:)")
-print("  " + "─" * (W-2))
-print(f"  {_yr} pessimism trough:                  ${_t:.0f}")
-print(f"    + Reflation (+{_cpi*100:.0f}% cumul. CPI {_yr}→2026):   +${_t*_cpi:.0f}  \u2192  ${_t*(1+_cpi):.0f}")
-print(f"    + Cumul. FCF earned since {_yr}:              +${_fcf:.0f}  \u2192  ${_t*(1+_cpi)+_fcf:.0f}")
-if _ddt > 0:
-    print(f"    - Net debt increase since {_yr} / share:    -${_ddt:.0f}  \u2192  ${_t*(1+_cpi)+_fcf-_ddt:.0f}  (leverage drag)")
-else:
-    print(f"    + Balance sheet improvement / share:        +${-_ddt:.0f}  \u2192  ${_t*(1+_cpi)+_fcf-_ddt:.0f}")
-if _sdelta > 0:
-    print(f"    + Structural improvement since {_yr}:       +${_sdelta:.0f}  \u2192  ${_epp:.0f}  (moat/earnings-power \u2191)")
-elif _sdelta < 0:
-    print(f"    - Structural deterioration since {_yr}:     -${-_sdelta:.0f}  \u2192  ${_epp:.0f}  (weaker business today)")
-print(f"  {chr(32)*4}{chr(45)*62}")
-print(f"  EQUIV. PESSIMISM PRICE (EPP, 2026):     ${_epp:.0f}")
-if _gap_pct >= 0:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  +{_gap_pct:.0f}% above EPP  \u2713  price embeds premium over pure pessimism")
-else:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  {_gap_pct:.0f}% BELOW EPP  \u2190 trading in distressed / structural-break zone")
-if _bvf >= 0:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above EPP  \u2713  bear case is cyclical, not structural")
-else:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW EPP  \u2190 bear case implies permanent impairment")
-print(f"  \u2192 Same pessimism \u2260 same price: FCF locked in, inflation ratcheted every nominal anchor.")
-if _sdelta < 0:
-    print(f"    Structural damage since {_yr}: equal pessimism = lower price than CPI-adj {_yr} trough.")
-elif _sdelta > 0:
-    print(f"    Structural gains since {_yr}: equal pessimism = higher price than CPI-adj {_yr} trough.")
-
-# Verdict
-print(f"\n  WHAT THE GAP MEANS")
-print("  " + "─" * (W-2))
-gap = (proxy_composite - mkt_composite) if mkt_composite else 0
-print(f"""  Proxy composite {proxy_composite:.2f}  vs  market-implied {mkt_composite:.2f}.
-  Gap = {gap:+.2f}
-
-  Cross-stock gap comparison:
-    AVGO gap = +1.41  (proxies bullish; market applies 4-part skepticism discount)
-    SAP  gap = +0.91  (proxies constructive; market in 'show me' mode on Joule)
-    COIN gap = +0.29  (fairly priced; 6 signals collapse into 1 BTC driver)
-    ORCL gap = {gap:+.2f}  (proxies near-XBULL; market applies the LARGEST discount)
-
-  WHY THE MARKET PRICES ORACLE WELL BELOW PROXY SIGNALS:
-
-    1. OpenAI concentration (54% of RPO): $300B from ONE customer.
-       If OpenAI diversifies to AWS/Azure or raises its own capital to build
-       in-house infra, Oracle loses its entire bull case. Market assigns
-       ~40% probability to partial OpenAI diversification within 3 years.
-
-    2. $90B FY2027 target is the most aggressive guide in enterprise software.
-       Requires 36% revenue growth. Oracle has missed aggressive multi-year
-       targets before (the 'cloud 2.0' era). Market discounts by ~30%.
-
-    3. Delivery uncertainty on 10GW power capacity:
-       Oracle has pre-committed to data center builds requiring ~10GW of
-       new power. Permitting, grid connection, and construction timelines
-       routinely slip 12-24 months. CapEx is sunk; revenue is not.
-
-    4. Net debt of ~$95.5B limits financial flexibility:
-       At 15% required return, $95.5B of debt consumes ~$14B/yr of equity
-       value. Refinancing risk rises if rates stay elevated. Oracle cannot
-       easily pivot if OCI growth slows — CapEx is already committed.
-
-    5. OCI is still structurally #4:
-       AWS, Azure, and Google each have 3-5x OCI's scale. Network effects
-       in cloud compound. Oracle wins on price and GPU availability for AI
-       training, but enterprise migration from AWS/Azure is slow.
-
-  THE BULL CASE REQUIRES TWO NON-HEROIC ASSUMPTIONS:
-    (a) OpenAI contract holds: even 50% RPO conversion = $150B over 3 years,
-        sufficient to sustain OCI at 50%+ growth through FY2027.
-    (b) Multi-cloud DB adoption continues: each Oracle DB@Azure/AWS contract
-        locks in 5-7 yr retention and creates natural OCI upsell path.
-    Combined: $90B FY2027 at 22x multiple = $242 (BASE, +38% from $175).
-
-  THE NON-CONSENSUS CATALYST (not yet priced):
-    Oracle becoming the de-facto AI training cloud for frontier models
-    outside of OpenAI. Each new frontier AI lab (xAI, Mistral, Cohere,
-    Databricks) that signs a multi-year OCI GPU contract de-risks the
-    concentration problem AND adds to RPO. One Grok-scale contract
-    (~$5-10B/yr) would move the stock 15-20% on announcement.
-
-  THE BEAR CASE IS ALSO REAL:
-    OpenAI closes its own data centers (Project Stargate alternative route),
-    reducing Oracle OCI demand by 30-40% annually. OCI growth drops to 20%.
-    $90B target is missed by 20%. EPS stays ~$8. Multiple compresses to 18x
-    on debt burden. Stock returns to ~$144 (-18% from current).""")
 print()
 print("═" * W)
