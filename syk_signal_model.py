@@ -142,19 +142,21 @@ STRUCTURAL_FACTORS = [
 FLOOR_DATA = {
     "trough_2022":        190.0,
     "cum_fcf_per_share":  21.4,
-    "debt_delta":         4.8,   # +ve = debt grew (floor lower); -ve = balance sheet improved
-    "reflation":           0.17,   # cumul. US CPI Jan 2022 - May 2026
+    "debt_delta":         4.8,     # +ve = debt grew (EPP lower); -ve = balance sheet improved
+    "structural_delta":   10.0,  # +ve = fundamentals improved; -ve = structurally weaker
+    "reflation":           0.17,     # cumul. US CPI Jan 2022 - May 2026
 }
 
 def worst_case_floor():
-    t, refl = FLOOR_DATA["trough_2022"], FLOOR_DATA["reflation"]
-    fcf, ddt = FLOOR_DATA["cum_fcf_per_share"], FLOOR_DATA["debt_delta"]
-    ref_adj = t * (1 + refl)
-    floor   = ref_adj + fcf - ddt
-    bear_p  = SCENARIOS["BEAR"][2]
-    gap_pct = (floor - CURRENT_PRICE) / CURRENT_PRICE * 100
-    bvf_pct = (bear_p - floor) / floor * 100
-    return ref_adj, floor, gap_pct, bear_p, bvf_pct
+    t, refl   = FLOOR_DATA["trough_2022"], FLOOR_DATA["reflation"]
+    fcf, ddt  = FLOOR_DATA["cum_fcf_per_share"], FLOOR_DATA["debt_delta"]
+    sdelta    = FLOOR_DATA["structural_delta"]
+    ref_adj   = t * (1 + refl)
+    epp       = ref_adj + fcf - ddt + sdelta
+    bear_p    = SCENARIOS["BEAR"][2]
+    gap_pct   = (CURRENT_PRICE - epp) / epp * 100   # +ve = price above EPP; -ve = below
+    bvf_pct   = (bear_p - epp) / epp * 100
+    return ref_adj, epp, gap_pct, bear_p, bvf_pct
 
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -293,29 +295,40 @@ for k in ["BEAR", "BASE", "BULL", "XBULL"]:
 print(f"\n  Prob-weighted 2yr:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
 print(f"  Current price: ${CURRENT_PRICE:.0f}")
 
-# Downside floor
-_ref_adj, _floor, _gap_pct, _bear_p, _bvf = worst_case_floor()
-_t   = FLOOR_DATA["trough_2022"]
-_fcf = FLOOR_DATA["cum_fcf_per_share"]
-_ddt = FLOOR_DATA["debt_delta"]
-print(f"\n  DOWNSIDE FLOOR  (why the 2022 low cannot recur at same nominal price)")
+# Equivalent Pessimism Price
+_ref_adj, _epp, _gap_pct, _bear_p, _bvf = worst_case_floor()
+_t      = FLOOR_DATA["trough_2022"]
+_fcf    = FLOOR_DATA["cum_fcf_per_share"]
+_ddt    = FLOOR_DATA["debt_delta"]
+_sdelta = FLOOR_DATA["structural_delta"]
+print(f"\n  EQUIV. PESSIMISM PRICE  (if 2022 pessimism returned today, price would be:)")
 print("  " + "─" * (W-2))
-print(f"  2022 reference trough:                  ${_t:.0f}")
+print(f"  2022 pessimism trough:                  ${_t:.0f}")
 print(f"    + Reflation (+17% cumul. CPI since 2022):  +${_t*0.17:.0f}  \u2192  ${_t*1.17:.0f}")
 print(f"    + Cumul. FCF earned FY2023-2025:           +${_fcf:.0f}  \u2192  ${_t*1.17+_fcf:.0f}")
 if _ddt > 0:
-    print(f"    - Net debt increase since 2022 / share:    -${_ddt:.0f}  \u2192  ${_floor:.0f}  (leverage drag)")
+    print(f"    - Net debt increase since 2022 / share:    -${_ddt:.0f}  \u2192  ${_t*1.17+_fcf-_ddt:.0f}  (leverage drag)")
 else:
-    print(f"    + Balance sheet improvement / share:       +${-_ddt:.0f}  \u2192  ${_floor:.0f}")
+    print(f"    + Balance sheet improvement / share:       +${-_ddt:.0f}  \u2192  ${_t*1.17+_fcf-_ddt:.0f}")
+if _sdelta > 0:
+    print(f"    + Structural improvement since 2022:       +${_sdelta:.0f}  \u2192  ${_epp:.0f}  (moat/earnings-power \u2191)")
+elif _sdelta < 0:
+    print(f"    - Structural deterioration since 2022:     -${-_sdelta:.0f}  \u2192  ${_epp:.0f}  (weaker business today)")
 print(f"  {chr(32)*4}{chr(45)*62}")
-print(f"  ANALYTICAL FLOOR (2026 equiv.):         ${_floor:.0f}")
-print(f"  Current price:                          ${CURRENT_PRICE:.0f}   downside to floor: {_gap_pct:+.0f}%")
-if _bvf >= 0:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above floor  \u2713  adequate cushion")
+print(f"  EQUIV. PESSIMISM PRICE (EPP, 2026):     ${_epp:.0f}")
+if _gap_pct >= 0:
+    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  +{_gap_pct:.0f}% above EPP  \u2713  price embeds premium over pure pessimism")
 else:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW floor  \u2190 structural break scenario")
-print(f"  \u2192 The 2022 low (${_t:.0f}) cannot recur: ${_fcf:.0f}/share FCF already locked in,")
-print(f"    17% inflation raised every nominal anchor. Floor ratchets up each year.")
+    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  {_gap_pct:.0f}% BELOW EPP  \u2190 trading in distressed / structural-break zone")
+if _bvf >= 0:
+    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above EPP  \u2713  bear case is cyclical, not structural")
+else:
+    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW EPP  \u2190 bear case implies permanent impairment")
+print(f"  \u2192 Same pessimism \u2260 same price: FCF locked in, inflation ratcheted every nominal anchor.")
+if _sdelta < 0:
+    print(f"    Structural damage since 2022 means equal pessimism = lower price than CPI-adj 2022.")
+elif _sdelta > 0:
+    print(f"    Structural gains since 2022 means equal pessimism = higher price than CPI-adj 2022.")
 
 # Verdict
 print(f"\n  WHAT THE GAP MEANS")
