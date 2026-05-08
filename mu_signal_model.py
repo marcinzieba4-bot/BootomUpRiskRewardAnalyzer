@@ -176,22 +176,26 @@ STRUCTURAL_FACTORS = [
 ]
 
 FLOOR_DATA = {
-    "trough_2022":        51.0,
-    "cum_fcf_per_share":   3.5,  # Net of FY2023 negative FCF (-$4/sh); FY2024 +$2.5; FY2025 +$5
-    "debt_delta":          5.0,  # +ve = debt grew (EPP lower); MU issued bonds for capex cycle
-    "structural_delta":    8.0,  # HBM is a genuinely new revenue category vs 2022 HBM2E
-    "reflation":           0.17, # cumul. US CPI Jan 2022 - May 2026
+    "trough_year":         2022,
+    "trough_price":        51.0,
+    "cum_fcf_per_share":    3.5,  # Net of FY2023 negative FCF (-$4/sh); FY2024 +$2.5; FY2025 +$5
+    "debt_delta":           5.0,  # +ve = debt grew (EPP lower); MU issued bonds for capex cycle
+    "structural_delta":     8.0,  # HBM is a genuinely new revenue category vs 2022 HBM2E
+    "cpi_since_trough":    0.17,  # cumul. US CPI Jan 2022 → May 2026
 }
 
 def worst_case_floor():
-    t, refl   = FLOOR_DATA["trough_2022"], FLOOR_DATA["reflation"]
-    fcf, ddt  = FLOOR_DATA["cum_fcf_per_share"], FLOOR_DATA["debt_delta"]
-    sdelta    = FLOOR_DATA["structural_delta"]
-    ref_adj   = t * (1 + refl)
-    epp       = ref_adj + fcf - ddt + sdelta
-    bear_p    = SCENARIOS["BEAR"][2]
-    gap_pct   = (CURRENT_PRICE - epp) / epp * 100   # +ve = above EPP; -ve = below
-    bvf_pct   = (bear_p - epp) / epp * 100
+    yr     = FLOOR_DATA["trough_year"]
+    t      = FLOOR_DATA["trough_price"]
+    cpi    = FLOOR_DATA["cpi_since_trough"]
+    fcf    = FLOOR_DATA["cum_fcf_per_share"]
+    ddt    = FLOOR_DATA["debt_delta"]
+    sdelta = FLOOR_DATA["structural_delta"]
+    ref_adj = t * (1 + cpi)
+    epp     = ref_adj + fcf - ddt + sdelta
+    bear_p  = SCENARIOS["BEAR"][2]
+    gap_pct = (CURRENT_PRICE - epp) / epp * 100   # +ve = above EPP; -ve = below
+    bvf_pct = (bear_p - epp) / epp * 100
     return ref_adj, epp, gap_pct, bear_p, bvf_pct
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
@@ -347,24 +351,26 @@ print(f"  Current price: ${CURRENT_PRICE:.0f}")
 
 # Equivalent Pessimism Price
 _ref_adj, _epp, _gap_pct, _bear_p, _bvf = worst_case_floor()
-_t      = FLOOR_DATA["trough_2022"]
+_yr     = FLOOR_DATA["trough_year"]
+_t      = FLOOR_DATA["trough_price"]
+_cpi    = FLOOR_DATA["cpi_since_trough"]
 _fcf    = FLOOR_DATA["cum_fcf_per_share"]
 _ddt    = FLOOR_DATA["debt_delta"]
 _sdelta = FLOOR_DATA["structural_delta"]
-print(f"\n  EQUIV. PESSIMISM PRICE  (if 2022 pessimism returned today, price would be:)")
+print(f"\n  EQUIV. PESSIMISM PRICE  (if {_yr} pessimism returned today, price would be:)")
 print("  " + "─" * (W-2))
-print(f"  2022 pessimism trough:                  ${_t:.0f}")
-print(f"    + Reflation (+17% cumul. CPI since 2022):  +${_t*0.17:.0f}  →  ${_t*1.17:.0f}")
-print(f"    + Cumul. FCF earned FY2023-2025:           +${_fcf:.0f}  →  ${_t*1.17+_fcf:.0f}")
+print(f"  {_yr} pessimism trough:                  ${_t:.0f}")
+print(f"    + Reflation (+{_cpi*100:.0f}% cumul. CPI {_yr}→2026):   +${_t*_cpi:.0f}  →  ${_t*(1+_cpi):.0f}")
+print(f"    + Cumul. FCF earned since {_yr}:              +${_fcf:.0f}  →  ${_t*(1+_cpi)+_fcf:.0f}")
 print(f"      (note: FY2023 FCF was deeply negative; +$3.5 is net of that -$4/share year)")
 if _ddt > 0:
-    print(f"    - Net debt increase since 2022 / share:    -${_ddt:.0f}  →  ${_t*1.17+_fcf-_ddt:.0f}  (capex cycle leverage)")
+    print(f"    - Net debt increase since {_yr} / share:    -${_ddt:.0f}  →  ${_t*(1+_cpi)+_fcf-_ddt:.0f}  (capex cycle leverage)")
 else:
-    print(f"    + Balance sheet improvement / share:       +${-_ddt:.0f}  →  ${_t*1.17+_fcf-_ddt:.0f}")
+    print(f"    + Balance sheet improvement / share:        +${-_ddt:.0f}  →  ${_t*(1+_cpi)+_fcf-_ddt:.0f}")
 if _sdelta > 0:
-    print(f"    + Structural improvement since 2022:       +${_sdelta:.0f}  →  ${_epp:.0f}  (HBM: new category, higher EPP)")
+    print(f"    + Structural improvement since {_yr}:       +${_sdelta:.0f}  →  ${_epp:.0f}  (HBM: new category, higher EPP)")
 elif _sdelta < 0:
-    print(f"    - Structural deterioration since 2022:     -${-_sdelta:.0f}  →  ${_epp:.0f}  (weaker business today)")
+    print(f"    - Structural deterioration since {_yr}:     -${-_sdelta:.0f}  →  ${_epp:.0f}  (weaker business today)")
 print(f"  {chr(32)*4}{chr(45)*62}")
 print(f"  EQUIV. PESSIMISM PRICE (EPP, 2026):     ${_epp:.0f}")
 if _gap_pct >= 0:
@@ -376,7 +382,7 @@ if _bvf >= 0:
 else:
     print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW EPP  ← bear case implies permanent impairment")
 print(f"  → Same pessimism ≠ same price: FCF locked in (net), inflation ratcheted anchors.")
-print(f"    HBM structural gain means equal pessimism = higher price than CPI-adj 2022.")
+print(f"    HBM structural gain means equal pessimism = higher price than CPI-adj {_yr} trough.")
 print(f"  ⚠  IMPORTANT: MU's EPP math is less reliable than for stable compounders.")
 print(f"    In a true memory downcycle, MU burns $3-5B cash/yr — the 'FCF locked in'")
 print(f"    concept is weaker here. Bear scenarios can gap below EPP rapidly.")
