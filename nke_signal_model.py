@@ -1,132 +1,75 @@
 #!/usr/bin/env python3
 """
-Nike Signal Model
-──────────────────
-Same framework applied to Nike, Inc. (NYSE: NKE).
+NKE Signal Model  v2
+──────────────────────
+Nike, Inc. (NYSE: NKE)  ·  Consumer Discretionary
+Trough year: 2022 (DTC over-rotation; competitor disruption)
 
-Key structural difference from every other company in this framework:
-  NKE is NOT a growth story — it is a TURNAROUND.
-  The analytical question is not "will tailwinds persist?" but
-  "will the fix work?"
-
-  Context: CEO John Donahoe stepped down Oct 2024 → Elliott Hill (returning
-  Nike veteran) took over. Recovery plan: rebuild wholesale relationships
-  damaged by over-indexing on DTC, restore premium brand positioning,
-  cut $2B in costs, refocus on sport-performance storytelling.
-
-  The stock fell ~50% from its 2021 peak ($179) to trough (~$70) as:
-    1. DTC over-rotation cut retailer relationships → channel conflict
-    2. Gross margin declined 2.5pp from peak (heavy discounting)
-    3. Greater China revenue stalled (geopolitics + local brands)
-    4. Disruptive competitors (On Running, HOKA) took premium running share
-    5. Inventory bloat required margin-dilutive clearance (now resolved)
-
-  The gap in this model has a different meaning than ORCL/AVGO/MSFT:
-  here, a NEGATIVE gap means the market is PRICING IN HOPE that proxy
-  signals haven't yet confirmed. This is a structural feature of turnarounds.
-
-Run: python nke_signal_model.py
+New format: signal dashboard → bear anatomy → updated EPP →
+            conservative growth → volatility context → probability
 """
 import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 77.0      # USD (NYSE: NKE, ~May 2026)
-REQUIRED_RETURN = 0.15
-HORIZON_YEARS   = 2
+# ── CONFIG ────────────────────────────────────────────────────────────────────
+CURRENT_PRICE    = 77.0
+REQUIRED_RETURN  = 0.15
+HORIZON_YEARS    = 2
 
-# Scenario 2-year price targets (non-GAAP EPS × exit P/E multiple)
-# FY2025E non-GAAP EPS: ~$2.70 (trough; heavily discounted year).
-# FY2028 scenarios assume recovery path under Elliott Hill.
-# Multiple range 20-30x: Nike is premium consumer brand — deserves premium
-# vs market only if it re-establishes pricing power and brand heat.
 SCENARIOS = {
-    #           EPS    mult  price   narrative
-    "BEAR":  ( 1.5,   20,    30,  "Turnaround fails; China loss permanent; On/HOKA cement share"),
-    "BASE":  ( 3.5,   23,    81,  "Partial recovery; GM +150bp; wholesale rebuilt; China stable"),
-    "BULL":  ( 5.0,   27,   135,  "Full recovery; GM 47%+; product heat returns; China rebounds"),
-    "XBULL": ( 7.0,   30,   210,  "Re-establishment as dominant brand; China boom; AI personalisation"),
+    "BEAR":  ( 1.5,  20,   30, "Turnaround fails; China loss permanent; On/HOKA cement share"),
+    "BASE":  ( 3.5,  23,   81, "Partial recovery; GM +150bp; wholesale rebuilt; China stable"),
+    "BULL":  ( 5.0,  27,  135, "Full recovery; GM 47%+; product heat returns; China rebounds"),
+    "XBULL": ( 7.0,  30,  210, "Re-establishment as dominant brand; China boom; AI personalisation"),
 }
 
-# ── GROSS MARGIN RECOVERY CALCULATOR (NKE-specific structural feature) ───
-# The turnaround thesis is primarily a MARGIN story, not a volume story.
-# Nike's gross margin fell from a ~46.6% peak (FY2022) to ~44.0% (FY2024)
-# via: (1) heavy promotional discounting to clear inventory,
-#      (2) DTC mix headwinds (higher cost to serve vs wholesale),
-#      (3) input cost inflation (transport, materials).
-# Elliott Hill's key levers: less promo, less outlet, premium positioning.
-# Revenue base and share count stable; GM recovery = direct EPS leverage.
-
-REVENUE_BASE_B      = 47.0     # FY2025E revenue ($B)
-GM_CURRENT_PCT      = 44.5     # FY2025E gross margin (%)
-GM_PEAK_PCT         = 46.6     # FY2022 peak gross margin (%)
-GM_TARGET_PCT       = 47.5     # bull case GM target (%)
-SHARES_OUT_B        =  1.22    # diluted shares outstanding (billions)
-TAX_RATE            =  0.19    # effective tax rate
+# ── GROSS MARGIN RECOVERY CALCULATOR (NKE-specific structural feature) ────────
+REVENUE_BASE_B   = 47.0
+GM_CURRENT_PCT   = 44.5
+GM_PEAK_PCT      = 46.6
+GM_TARGET_PCT    = 47.5
+SHARES_OUT_B     =  1.22
+TAX_RATE         =  0.19
 
 def gm_recovery():
-    gm_gap_to_peak   = GM_PEAK_PCT - GM_CURRENT_PCT   # pp to recover to peak
-    gm_gap_to_target = GM_TARGET_PCT - GM_CURRENT_PCT  # pp to bull-case target
-    # Each 1pp of GM on $47B revenue = incremental EBIT
-    rev_per_pp       = REVENUE_BASE_B * 1e9 * 0.01     # $ per 1pp
-    ebit_per_pp      = rev_per_pp / 1e9                 # $B per 1pp
-    eps_per_pp       = ebit_per_pp * (1 - TAX_RATE) / SHARES_OUT_B  # $/share per 1pp
+    gm_gap_to_peak   = GM_PEAK_PCT - GM_CURRENT_PCT
+    gm_gap_to_target = GM_TARGET_PCT - GM_CURRENT_PCT
+    rev_per_pp       = REVENUE_BASE_B * 1e9 * 0.01
+    ebit_per_pp      = rev_per_pp / 1e9
+    eps_per_pp       = ebit_per_pp * (1 - TAX_RATE) / SHARES_OUT_B
     eps_peak_recovery = gm_gap_to_peak * eps_per_pp
     eps_target        = gm_gap_to_target * eps_per_pp
     return gm_gap_to_peak, gm_gap_to_target, eps_per_pp, eps_peak_recovery, eps_target
 
-# ── PROXY SIGNALS ─────────────────────────────────────────────────────────
-# NKE signals are consumer-demand and brand-health focused — fundamentally
-# different from the capex/cloud/backlog signals used in the tech models.
-#
-# (name, value, unit, base_floor, bull_floor, xbull_floor, higher_is_better,
-#  what_it_drives_for_NKE)
+# ── SIGNALS ───────────────────────────────────────────────────────────────────
+# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
+#  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
-    # US consumer discretionary spend YoY: +3.5%.
-    # Nike earns ~43% of revenue in North America. Discretionary spend
-    # is the primary macro driver of athletic footwear / apparel demand.
-    # Tariff headwinds and elevated rates keeping spend below trend.
-    ("US consumer discretionary YoY",    3.5, "% YoY",    2,   5,   9, True,
-     "North America segment (~43% of rev); consumer willingness to pay $120+ for sneakers"),
+    ("US consumer discretionary YoY",    "% YoY",
+     -2.0,   2.0,   5.0,   9.0,   3.5, True,
+     "Recession; consumers trade down from premium footwear"),
 
-    # China sportswear retail sales YoY: +4%.
-    # Greater China = ~15% of NKE revenue, but was 22% at peak (2021).
-    # Recovery is slow: geopolitics (US-China tension), local brand competition
-    # (Anta, Li-Ning), and weakened Chinese consumer confidence post-property crisis.
-    ("China sportswear retail YoY",       4.0, "% YoY",    3,   7,  12, True,
-     "Greater China segment (~15% of rev); structural recovery or permanent share loss"),
+    ("China sportswear retail YoY",       "% YoY",
+     -8.0,   3.0,   7.0,  12.0,   4.0, True,
+     "Geopolitical escalation; China brands take 30%+ share"),
 
-    # Key wholesale partner comps (Foot Locker + Dick's Sporting Goods YoY): +5%.
-    # Nike's decision to rebuild wholesale after the DTC over-rotation.
-    # FL and DKS comps are the best lead indicator for Nike wholesale order health:
-    # strong comps → partners re-order → Nike wholesale revenue recovers.
-    ("Wholesale partner comps YoY",       5.0, "% YoY",    0,   5,  10, True,
-     "channel rebuild signal: FL/DKS health → Nike wholesale order book re-fill"),
+    ("Wholesale partner comps YoY",       "% YoY",
+     -5.0,   0.0,   5.0,  10.0,   5.0, True,
+     "FL/DKS comps collapse; Nike wholesale re-fill fails"),
 
-    # Nike gross margin YoY change (pp): +0.3pp.
-    # The most critical internal metric. Recovery from 44.5% toward 46-47%
-    # is the primary driver of EPS recovery. Currently stabilising —
-    # not yet the 1-2pp annual recovery the bull case requires.
-    ("Nike gross margin change (pp YoY)", 0.3, "pp YoY", -0.5,   1,   2, True,
-     "pricing power proxy; recovering GM = less discounting + premium positioning working"),
+    ("Nike gross margin change (pp YoY)", "pp YoY",
+     -2.0,  -0.5,   1.0,   2.0,   0.3, True,
+     "Promotions accelerate; inventory bloat returns; brand heat lost"),
 
-    # On Running revenue YoY (INVERSE signal): +28%.
-    # On Running (ONON) growing at +28% YoY is the clearest signal of
-    # competitive displacement in Nike's highest-margin running category.
-    # Higher On growth = more share lost in premium performance running.
-    # Each ~$600M of On incremental revenue represents ex-Nike wallet share.
-    ("On Running revenue YoY (inverse)",  28.0, "% YoY",  20,  15,  10, False,
-     "competitive displacement: On + HOKA taking premium running share from Nike"),
+    ("On Running revenue YoY (inverse)",  "% YoY",
+     40.0,  20.0,  15.0,  10.0,  28.0, False,
+     "On/HOKA cement premium running; Nike loses core category"),
 
-    # Nike DTC digital comparable sales: +6%.
-    # Nike.com and SNKRS app comps measure brand heat and premium pricing
-    # without channel noise. Recovering DTC comps = consumers still seeking
-    # Nike directly at full price (vs. off-price / Foot Locker clearance).
-    ("Nike DTC digital comparable sales", 6.0, "% YoY",    0,   5,  12, True,
-     "brand heat and full-price demand; recovering DTC = pricing power returning"),
+    ("Nike DTC digital comparable sales", "% YoY",
+     -5.0,   0.0,   5.0,  12.0,   6.0, True,
+     "Nike.com traffic collapses; full-price demand evaporates"),
 ]
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 
-# ── STRUCTURAL RISK OVERLAY ──────────────────────────────────────────────
 STRUCTURAL_FACTORS = [
     ("China identity-driven permanent share loss",   -1.2, 0.30),
     ("On Running / HOKA structural category gain",   -0.8, 0.25),
@@ -135,31 +78,33 @@ STRUCTURAL_FACTORS = [
     ("DTC / digital data infrastructure",             0.3, 0.10),
 ]
 
+# ── UPDATED EPP ───────────────────────────────────────────────────────────────
+EPP_TODAY_EPS    = 2.00    # FY2025E non-GAAP EPS (depressed; turnaround underway)
+EPP_MIN_PE       = 20.0    # min viable P/E (brand floor — Nike never trades below 20x)
+EPP_HISTORICAL   = 75.0    # historical EPP v1 (near trough floor)
+EPP_REGIME_NOTE  = "(brand floor at 20x; even in turnaround, Nike's consumer mindshare = PE floor)"
 
-FLOOR_DATA = {
-    "trough_year":        2022,
-    "trough_price":       82.0,
-    "cum_fcf_per_share":  8.0,
-    "debt_delta":         2.0,     # +ve = debt grew (EPP lower); -ve = improved
-    "structural_delta":   -15.0,  # +ve = fundamentals improved; -ve = weaker today
-    "cpi_since_trough":   0.17,     # cumul. US CPI from trough_year to May 2026
-}
+# ── CONSERVATIVE GROWTH (2-yr, base-minus) ───────────────────────────────────
+CONS_SIGNALS = [
+    ("US consumer discretionary",   2.0, "+2%/yr (vs +3.5%; tariff drag on discretionary)"),
+    ("China sportswear retail",     3.0, "+3% (vs +4%; Anta/Li-Ning absorb growth)"),
+    ("Wholesale partner comps",     2.0, "+2% (vs +5%; channel rebuild slower than plan)"),
+    ("Nike gross margin",          -0.2, "-0.2pp (vs +0.3pp; promo intensity stays high)"),
+    ("On Running revenue",         25.0, "+25% (vs +28%; On growth continues, not slows)"),
+    ("Nike DTC digital",            2.0, "+2% (vs +6%; digital recovery stalls)"),
+]
+CONS_EPS_CAGR = 0.08     # 8%/yr conservative (turnaround in progress)
+CONS_EXIT_PE  = 23.0     # 23x exit (brand re-rates modestly vs current ~38x)
+CONS_DIVIDEND = 1.40     # $1.40/yr dividend
 
-def worst_case_floor():
-    yr     = FLOOR_DATA["trough_year"]
-    t      = FLOOR_DATA["trough_price"]
-    cpi    = FLOOR_DATA["cpi_since_trough"]
-    fcf    = FLOOR_DATA["cum_fcf_per_share"]
-    ddt    = FLOOR_DATA["debt_delta"]
-    sdelta = FLOOR_DATA["structural_delta"]
-    ref_adj = t * (1 + cpi)
-    epp     = ref_adj + fcf - ddt + sdelta
-    bear_p  = SCENARIOS["BEAR"][2]
-    gap_pct = (CURRENT_PRICE - epp) / epp * 100   # +ve = above EPP; -ve = below
-    bvf_pct = (bear_p - epp) / epp * 100
-    return ref_adj, epp, gap_pct, bear_p, bvf_pct
+# ── VOLATILITY ────────────────────────────────────────────────────────────────
+VOL_ANNUAL_PCT = 0.30    # moderate-high vol; turnaround stock
+VOL_BETA       = 0.90    # below market despite higher vol
+VOL_52W_LOW    = 55.0
+VOL_52W_HIGH   = 98.0
+VOL_DIVIDEND   = 1.40
 
-# ── SCORING ───────────────────────────────────────────────────────────────
+# ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
     if hib:
         if val >= xbull_f: return 4
@@ -189,86 +134,48 @@ def market_implied_composite(target_ev, tolerance=2.0):
             return round(c, 2), softmax_probs(c)
     return None, None
 
-# ── MAIN ──────────────────────────────────────────────────────────────────
+# ── COMPUTE ───────────────────────────────────────────────────────────────────
 W = 72
 
-scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
-          for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
-proxy_composite = sum(s * w for *_, s, w, _ in scored)
-sca           = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite = proxy_composite + sca
-proxy_probs     = softmax_probs(proxy_composite)
-proxy_ev        = expected_price(proxy_probs)
+scored = [
+    (name, unit, bv, bf, blf, xf, cv, hib, narr,
+     score_signal(cv, bf, blf, xf, hib), w)
+    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
+    in zip(SIGNALS, WEIGHTS)
+]
+proxy_composite  = sum(s * w for *_, s, w in scored)
+bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
+                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
+                       in zip(SIGNALS, WEIGHTS))
+sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite    = proxy_composite + sca
+proxy_probs      = softmax_probs(proxy_composite)
+bear_probs       = softmax_probs(bear_composite)
+proxy_ev         = expected_price(proxy_probs)
+bear_ev          = expected_price(bear_probs)
 
-market_target_ev  = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
+market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
 mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
 mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
 
-gm_gap_peak, gm_gap_target, eps_per_pp, eps_peak, eps_target = gm_recovery()
+# Updated EPP (EPS-based)
+epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
+epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
+bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
 
-print()
-print("═" * W)
-print("  NKE SIGNAL MODEL  —  proxy vs. market-implied probability")
-print("═" * W)
-print(f"  ⚠  Turnaround context: Elliott Hill (CEO since Oct 2024) executing reset.")
+# Conservative growth
+cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
+cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
+cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
+cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
+cons_annual_ret = cons_total_ret / 2
 
-# Gross margin recovery
-print(f"\n  GROSS MARGIN RECOVERY CALCULATOR  (the turnaround in one number)")
-print("  " + "─" * (W-2))
-print(f"  Current gross margin (FY2025E):      {GM_CURRENT_PCT:.1f}%")
-print(f"  Peak gross margin (FY2022):          {GM_PEAK_PCT:.1f}%  (-{gm_gap_peak:.1f}pp from peak)")
-print(f"  Bull-case target:                    {GM_TARGET_PCT:.1f}%  (+{gm_gap_target:.1f}pp recovery needed)")
-print(f"  Revenue base (FY2025E):              ${REVENUE_BASE_B:.0f}B")
-print(f"  ─────────────────────────────────────────────────────")
-print(f"  EPS impact per 1pp GM recovery:      ${eps_per_pp:.2f} / share  ← the leverage")
-print(f"  Recovery to {GM_PEAK_PCT:.1f}% peak → EPS tailwind:  +${eps_peak:.2f} / share")
-print(f"  Recovery to {GM_TARGET_PCT:.1f}% target → EPS uplift: +${eps_target:.2f} / share")
-print(f"\n  WHY MARGINS FELL:  inventory discounting (resolved) + DTC promo + FX.")
-print(f"  WHY THEY CAN RECOVER:  less promo is a strategic choice, not market-dependent.")
-print(f"  → This is largely WITHIN NIKE'S CONTROL. The bull case doesn't require macro.")
+# Volatility
+sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
+vol_low_1yr       = CURRENT_PRICE - sigma_1yr
+vol_high_1yr      = CURRENT_PRICE + sigma_1yr
+sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
 
-# Signal scorecard
-print(f"\n  PROXY SIGNAL SCORECARD")
-print(f"  {'Signal':<38}{'Value':>9}  Wt   Score")
-print("  " + "─" * (W-2))
-for name, val, unit, s, w, rt in scored:
-    bar = "█" * s + "░" * (4 - s)
-    print(f"  {name:<38}{val:>+7.1f}{unit[0]}  {w*100:.0f}%  {ICONS[s]}  {bar}")
-
-print(f"\n  Proxy composite:   {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:  {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% reqd return)")
-    gap = proxy_composite - mkt_composite
-    print(f"  Gap (proxy − mkt): {gap:+.2f}  ← market pricing TURNAROUND HOPE ahead of data")
-
-# Valuation context
-print(f"\n  VALUATION CONTEXT")
-print("  " + "─" * (W-2))
-fwd_eps = 2.70
-print(f"  FY2025E non-GAAP EPS:       ~${fwd_eps:.2f}  (trough year)")
-print(f"  FY2026E non-GAAP EPS:       ~$3.20  (partial recovery expected)")
-print(f"  Current P/E on FY2025E:      {CURRENT_PRICE/fwd_eps:.0f}x  (distressed-year multiple)")
-print(f"  Current P/E on FY2026E:      {CURRENT_PRICE/3.20:.0f}x  (forward recovery multiple)")
-print(f"  2021 peak EPS:               ~$3.56  (pre-DTC-over-rotation peak)")
-print(f"  2021 peak stock price:       ~$179   (at ~50x peak-year EPS)")
-print(f"  Dividend yield:              ~2.3%   (dividend maintained throughout decline)")
-print(f"  Net cash:                    ~$10B cash vs ~$9B debt — roughly net flat")
-print(f"  → At $77, market is paying 24x FY2026E for a brand that earned $3.56 EPS in FY2021.")
-print(f"    The implicit bet: Nike EPS returns to at least $3.50 and the multiple holds.")
-
-# Probability table
-print(f"\n  STRUCTURAL RISK OVERLAY  (analyst-assessed; beyond proxy signals)")
-print("  " + "─" * (W-2))
-print(f"  {'Factor':<44}  {'Score':>5}  {'Wt':>3}   {'Adj':>5}")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    adj_c = score * wt
-    arrow = "▲" if score > 0 else "▼"
-    print(f"  {desc:<44}  {score:>+5.1f}  {wt*100:>3.0f}%  {adj_c:>+5.2f}  {arrow}")
-print(f"  {'─'*68}")
-print(f"  Structural adj. (SCA):     {sca:>+6.2f}")
-print(f"  Adjusted composite:         {adj_composite:.2f}  "
-      f"(proxy {proxy_composite:.2f} {'+' if sca >= 0 else ''}{sca:.2f})")
 if mkt_composite:
     adj_gap = adj_composite - mkt_composite
     if   adj_gap >  0.50: _verdict = "UNDERVALUED"
@@ -276,128 +183,118 @@ if mkt_composite:
     elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
     elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
     else:                 _verdict = "OVERVALUED"
-    print(f"  Market composite:          {mkt_composite:.2f}")
-    print(f"  ADJUSTED GAP:             {adj_gap:>+6.2f}  ← {_verdict}")
 
-print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "
-      f"{'EPS':>6}  {'Mult':>5}  {'Price':>7}  Narrative")
+# ── OUTPUT ────────────────────────────────────────────────────────────────────
+print()
+print("═" * W)
+print(f"  NKE  ·  Nike, Inc.  ·  ${CURRENT_PRICE:.2f}  ·  Consumer Discretionary")
+print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
+print("═" * W)
+
+# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print(f"\n  ① SIGNAL DASHBOARD")
+print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")
 print("  " + "─" * (W-2))
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u = unit.split()[0] if unit else ""
+    bv_s  = f"{bv:+.0f}{u}" if hib else f">{bv:.0f}{u}"
+    bf_s  = f"{bf:.0f}{u}"
+    blf_s = f"{blf:.0f}{u}"
+    xf_s  = f"{xf:.0f}{u}"
+    cv_s  = f"{cv:+.0f}{u}"
+    bar   = "█" * s + "░" * (4 - s)
+    print(f"  {name:<32}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>8}  {ICONS[s]}  {bar}")
+
+print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
+if mkt_composite:
+    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  (back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
+    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  →  Gap {adj_gap:+.2f}  [{_verdict}]")
+
+print(f"\n  Structural factors:")
+for desc, score, wt in STRUCTURAL_FACTORS:
+    arrow = "  +" if score > 0 else "  -"
+    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
+
+# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
+print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<32}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u      = unit.split()[0] if unit else ""
+    cv_s   = f"{cv:+.0f}{u}"
+    bv_s   = f"{bv:+.0f}{u}"
+    move   = bv - cv
+    move_s = f"{move:+.0f}{u}"
+    trigger = narr[:40] if len(narr) <= 40 else narr[:37] + "…"
+    print(f"  {name:<32}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+
+print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~${expected_price(bear_probs):.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
+print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
+print(f"\n  KEY TRIGGER: China permanent share loss to Anta/Li-Ning + US wholesale not rebuilt")
+print(f"  + DTC digital failing → turnaround thesis collapses. EPS stays at $2 vs consensus")
+print(f"  $4+; 20x on $1.50 EPS = $30 bear. JOINT event required for full bear realisation.")
+
+# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
+print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
+print("  " + "─" * (W-2))
+print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP)")
+print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
+print(f"  {'─'*60}")
+print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
+print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical repricing'}")
+
+# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
+print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<32}  {'Conservative':>14}  vs Current  Rationale")
+for sname, sval, srat in CONS_SIGNALS:
+    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
+               if name.lower().startswith(sname.split()[0].lower()))
+    diff = sval - cur
+    print(f"  {sname:<32}  {sval:>14.1f}  {diff:>+9.0f}   {srat[:30]}")
+
+print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
+print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
+if CONS_DIVIDEND > 0:
+    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share")
+print(f"  {'─'*60}")
+print(f"  Conservative 2yr price:     ${cons_price_2yr:.0f}  ({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from ${CURRENT_PRICE:.0f})")
+print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  = {cons_annual_ret:+.0f}%/yr")
+print(f"\n  Conservative case barely breaks even — confirms current ${CURRENT_PRICE:.0f} requires")
+print(f"  turnaround execution. Margin recovery is within Nike's control; China is not.")
+
+# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
+print(f"\n  ⑤ VOLATILITY CONTEXT")
+print("  " + "─" * (W-2))
+print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
+if VOL_DIVIDEND > 0:
+    print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  (yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
+print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
+print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}")
+print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  (${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
+print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  ${CURRENT_PRICE + 2*sigma_1yr:.0f}")
+print(f"  {'─'*60}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  ~{sigma_needed_bear:.1f}σ price move  {'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal vol range)'}")
+print(f"  Turnaround stocks exhibit idiosyncratic vol — earnings disappointments = gap-downs.")
+print(f"  The dividend (${VOL_DIVIDEND:.2f}/yr, {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% yield) was maintained through the decline = management confidence signal.")
+
+# ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
+print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
+print("  " + "─" * (W-2))
+print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>6}  Description")
 for k in ["BEAR", "BASE", "BULL", "XBULL"]:
-    eps, mult, price, narr = SCENARIOS[k]
+    sc = SCENARIOS[k]
+    price = sc[2]
+    narr  = sc[3] if len(sc) > 3 else ""
     pp  = proxy_probs[k]
     mp  = mkt_probs[k] if mkt_probs else 0
     gap_pp = pp - mp
-    sign = "+" if gap_pp >= 0 else ""
-    print(f"  {k:<10}  {pp*100:>7.1f}%  {mp*100:>7.1f}%  "
-          f"{sign}{gap_pp*100:>6.1f}pp  ${eps:>5}  {mult:>4}x  ${price:<6}  {narr[:28]}…")
+    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  {gap_pp*100:>+6.1f}pp  {narr}")
 
-print(f"\n  Prob-weighted 2yr:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
-print(f"  Current price: ${CURRENT_PRICE:.0f}")
+print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
+print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = ${cons_price_2yr + cons_div_2yr:.0f} total value")
 
-# Equivalent Pessimism Price
-_ref_adj, _epp, _gap_pct, _bear_p, _bvf = worst_case_floor()
-_yr     = FLOOR_DATA["trough_year"]
-_t      = FLOOR_DATA["trough_price"]
-_cpi    = FLOOR_DATA["cpi_since_trough"]
-_fcf    = FLOOR_DATA["cum_fcf_per_share"]
-_ddt    = FLOOR_DATA["debt_delta"]
-_sdelta = FLOOR_DATA["structural_delta"]
-print(f"\n  EQUIV. PESSIMISM PRICE  (if {_yr} pessimism returned today, price would be:)")
-print("  " + "─" * (W-2))
-print(f"  {_yr} pessimism trough:                  ${_t:.0f}")
-print(f"    + Reflation (+{_cpi*100:.0f}% cumul. CPI {_yr}→2026):   +${_t*_cpi:.0f}  \u2192  ${_t*(1+_cpi):.0f}")
-print(f"    + Cumul. FCF earned since {_yr}:              +${_fcf:.0f}  \u2192  ${_t*(1+_cpi)+_fcf:.0f}")
-if _ddt > 0:
-    print(f"    - Net debt increase since {_yr} / share:    -${_ddt:.0f}  \u2192  ${_t*(1+_cpi)+_fcf-_ddt:.0f}  (leverage drag)")
-else:
-    print(f"    + Balance sheet improvement / share:        +${-_ddt:.0f}  \u2192  ${_t*(1+_cpi)+_fcf-_ddt:.0f}")
-if _sdelta > 0:
-    print(f"    + Structural improvement since {_yr}:       +${_sdelta:.0f}  \u2192  ${_epp:.0f}  (moat/earnings-power \u2191)")
-elif _sdelta < 0:
-    print(f"    - Structural deterioration since {_yr}:     -${-_sdelta:.0f}  \u2192  ${_epp:.0f}  (weaker business today)")
-print(f"  {chr(32)*4}{chr(45)*62}")
-print(f"  EQUIV. PESSIMISM PRICE (EPP, 2026):     ${_epp:.0f}")
-if _gap_pct >= 0:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  +{_gap_pct:.0f}% above EPP  \u2713  price embeds premium over pure pessimism")
-else:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  {_gap_pct:.0f}% BELOW EPP  \u2190 trading in distressed / structural-break zone")
-if _bvf >= 0:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above EPP  \u2713  bear case is cyclical, not structural")
-else:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW EPP  \u2190 bear case implies permanent impairment")
-print(f"  \u26a0  EPP < CPI-adj trough: China market share permanently lost to Anta/Li-Ning.")
-print(f"          Same pessimism today hits a structurally weaker business.")
-print(f"  \u2192 Same pessimism \u2260 same price: FCF locked in, inflation ratcheted every nominal anchor.")
-if _sdelta < 0:
-    print(f"    Structural damage since {_yr}: equal pessimism = lower price than CPI-adj {_yr} trough.")
-elif _sdelta > 0:
-    print(f"    Structural gains since {_yr}: equal pessimism = higher price than CPI-adj {_yr} trough.")
-
-# Verdict
-print(f"\n  WHAT THE GAP MEANS")
-print("  " + "─" * (W-2))
-gap = (proxy_composite - mkt_composite) if mkt_composite else 0
-print(f"""  Proxy composite {proxy_composite:.2f}  vs  market-implied {mkt_composite:.2f}.
-  Gap = {gap:+.2f}
-
-  Complete framework gap table:
-    ORCL gap = +2.16  (proxies XBULL; market prices execution/concentration risk)
-    AVGO gap = +1.41  (proxies bullish; AI flow-through uncertainty)
-    MSFT gap = +1.29  (proxies bullish; Copilot margin expansion uncertainty)
-    SAP  gap = +0.91  (proxies constructive; Joule unmonetised)
-    XTB  gap = +0.46  (justified volatility discount on cyclical revenue)
-    COIN gap = +0.29  (approximately fairly priced; thesis is BTC price)
-    CAT  gap = -0.24  (market priced ahead of confirmed cycle recovery)
-    NKE  gap = {gap:+.2f}  ← market priced ahead of UNCONFIRMED recovery
-
-  WHY NKE'S NEGATIVE GAP IS DIFFERENT FROM CAT'S NEGATIVE GAP:
-
-    CAT (-0.24): Market priced ahead of data because EVERY proxy signal
-    confirms a genuine recovery IS happening — dealer inventory lean,
-    data center construction strong, mining capex up. The market is just
-    one step ahead of lagging monthly surveys. The gap should close.
-
-    NKE ({gap:+.2f}): Market priced ahead of data because investors are
-    BETTING on turnaround success BEFORE proxies confirm it. The
-    competitor displacement signal (On Running +28%) is actively BEARISH.
-    China is only modestly positive. GM recovery is just +0.3pp, not the
-    1-2pp the bull case needs. The market is discounting the bad signals
-    and buying the hope. This gap may NOT close — it may widen bearishly.
-
-  THE THREE SIGNALS TO WATCH (in order of importance):
-
-    1. Gross margin quarterly progression: The single most important
-       data point. If Nike's Q1 FY2026 reports GM +100bp+ YoY, the
-       turnaround is working (pricing discipline confirmed). If GM stays
-       flat or declines, Elliott Hill's reset is failing. Published 4x/yr.
-
-    2. On Running quarterly revenue growth rate: If On slows to <20% YoY
-       (saturation signal), Nike is no longer losing net share in running.
-       If On accelerates to 35%+, Nike running is a structural loss.
-       Published quarterly via ONON earnings.
-
-    3. China quarterly revenue: Greater China was 22% of NKE revenue in
-       FY2021, now ~15%. Even a stabilisation at 15% is fine; a recovery
-       to 18-20% is the BULL case; further erosion to 12% is the BEAR.
-
-  THE STRUCTURAL RISK NOT IN THE MODEL — LOCAL BRAND DISRUPTION IN CHINA:
-    Anta and Li-Ning are not just cheap alternatives. They have signed
-    Chinese Olympic athletes, launched premium performance lines, and
-    operate thousands of stores that are culturally resonant in ways that
-    a Beaverton, Oregon brand cannot easily replicate. The Chinese consumer
-    in 2026 is different from 2019: national brand preference has
-    structurally increased. Nike's Chinese market share loss may be
-    permanent — not cyclically driven but identity-driven.
-
-  THE NON-CONSENSUS BULL CASE (mostly within Nike's control):
-    Gross margin recovery from 44.5% to 47% requires NO volume growth.
-    It requires only: stop discounting, reduce SNKRS / Nike.com promo,
-    return to wholesale at higher ASP, reduce outlet channel mixing.
-    At $47B revenue × 47% GM × tax-effected = ~$5.00 EPS without
-    a single additional unit sold. At 27x (below 2019 median of 32x):
-    $5 × 27x = $135 (BULL scenario, +75% from current $77).
-    This is the asymmetry: the bull case is operational execution,
-    not macro recovery. Markets systematically underprice CEO-controlled
-    operational levers in favour of macro sensitivity analysis.""")
 print()
 print("═" * W)
