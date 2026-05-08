@@ -77,10 +77,10 @@ STRUCTURAL_FACTORS = [
 ]
 
 # ── UPDATED EPP ───────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 7.00    # FY2025E non-GAAP EPS (USD, adjusted from EUR ~6.25)
-EPP_MIN_PE       = 18.0    # min viable P/E at maximum pessimism
-EPP_HISTORICAL   = 100.0   # historical EPP v1 (near bear scenario floor)
-EPP_REGIME_NOTE  = "(raised from 14x 2022 trough; ECC 2027 end-of-support creates captive demand)"
+EPP_TODAY_EPS    = 9.00    # FY2025E non-GAAP EPS in USD (~EUR 8.0 × 1.12 EUR/USD)
+EPP_MIN_PE       = 18.0    # min viable P/E at maximum pessimism (enterprise ERP floor;
+                           # raised from 12x: SaaS transition raises defensibility of revenue)
+EPP_HISTORICAL   = 150.0   # historical EPP v1 (approx)
 
 # ── CONSERVATIVE GROWTH (2-yr, base-minus) ───────────────────────────────────
 CONS_SIGNALS = [
@@ -96,10 +96,10 @@ CONS_EXIT_PE  = 22.0     # 22x exit (de-rate from current ~25x)
 CONS_DIVIDEND = 2.20     # approx $2.20 USD (~EUR 2.00 dividend)
 
 # ── VOLATILITY ────────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT = 0.25    # moderate for large European tech
-VOL_BETA       = 0.90    # slightly below market
-VOL_52W_LOW    = 148.0
-VOL_52W_HIGH   = 196.0
+VOL_ANNUAL_PCT = 0.22    # 2yr realized annualized vol
+VOL_BETA       = 0.75    # beta vs S&P 500
+VOL_52W_LOW    = 137.0   # 52-week low
+VOL_52W_HIGH   = 193.0   # 52-week high
 VOL_DIVIDEND   = 2.20
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
@@ -236,7 +236,7 @@ print(f"  not-growing ECC maintenance business. JOINT event: each alone doesn't 
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
 print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP, USD)")
-print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
+print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  [enterprise ERP floor; raised from 12x: SaaS raises defensibility]")
 print(f"  {'─'*60}")
 print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
 print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
