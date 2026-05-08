@@ -53,6 +53,8 @@ FLOOR = {
         None),
     "pm_signal_model.py":   (  82.0,  17.6,   9.0,   +8.0, "$",
         None),
+    "mu_signal_model.py":   (  51.0,   3.5,   5.0,   +8.0, "$",
+        "cum_fcf is net of FY2023 deeply negative year (-$4/sh); EPP math less reliable than stable compounders."),
 }
 
 REFLATION = 0.17
