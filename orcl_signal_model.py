@@ -45,28 +45,28 @@ def rpo_analysis():
 #  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
     ("OCI / IaaS revenue YoY",           "% YoY",
-     10.0,  20, 50, 75,   84.0, True,
-     "OCI loses hyperscaler-adjacent deals; AWS/Azure take AI workloads"),
+     12.0,  20, 50, 75,   84.0, True,
+     "Hyperscalers price OCI out; enterprise AI workloads route to AWS/Azure"),
 
     ("Oracle RPO — sequential change",   "$B/Q",
-     -5.0,   5, 15, 25,   30.0, True,
-     "OpenAI diversifies; new bookings collapse; RPO shrinks sequentially"),
+      2.0,   5, 15, 25,   30.0, True,
+     "OpenAI diversifies cloud; new RPO signings dry up"),
 
     ("NVIDIA data center rev (qtly)",    "$B/Q",
       5.0,   8, 20, 35,   35.6, True,
-     "AI capex pause; GPU demand drops; OCI expansion stalls"),
+     "AI capex pause; data center buildout freezes; OCI capacity idle"),
 
     ("Hyperscaler CapEx YoY",            "% YoY",
-      0.0,  10, 30, 60,   77.0, True,
-     "AI investment bubble bursts; cloud capex cut across all players"),
+      5.0,  10, 30, 60,   77.0, True,
+     "AI winter; cloud CapEx collapses; OCI demand destroyed"),
 
     ("Oracle multi-cloud DB YoY",        "% YoY",
-     10.0,  50,150,400,  531.0, True,
-     "Hyperscalers block Oracle DB@Cloud; competitive resistance grows"),
+     25.0,  50,150,400,  531.0, True,
+     "AWS/Azure reject Oracle@Cloud agreements; multi-cloud growth halts"),
 
     ("Frontier AI CapEx signal",         "/4 scale",
       1.0,   1,  2,  4,    3.0, True,
-     "AI regulation or model quality plateau; frontier investment freezes"),
+     "OpenAI cuts OCI spend; frontier labs move compute in-house"),
 ]
 WEIGHTS = [0.25, 0.20, 0.20, 0.15, 0.10, 0.10]
 
@@ -79,30 +79,30 @@ STRUCTURAL_FACTORS = [
 ]
 
 # ── UPDATED EPP ─────────────────────────────────────────────────────────────
-EPP_TODAY_EPS      = 6.0    # FY2025E non-GAAP EPS (Oracle FY ends May)
-EPP_MIN_PE         = 18.0   # min viable P/E at max pessimism (DB/cloud business;
-                             # subscription revenue raises floor from legacy 10x)
-EPP_HISTORICAL     = 120.0  # historical EPP from v1 floor formula (approx)
+EPP_TODAY_EPS    = 6.00    # FY2025E non-GAAP EPS
+EPP_MIN_PE       = 18.0    # min viable P/E (DB subscription floor; OCI capex risk limits compression)
+EPP_HISTORICAL   = 144.0   # historical EPP v1 (use bear scenario price as proxy; ORCL was not at panic in 2022)
+EPP_REGIME_NOTE  = "(OCI secular demand + DB subscription moat raises panic floor from 12x to 18x)"
 
 # ── CONSERVATIVE GROWTH (2-yr, base-minus assumptions) ───────────────────────
 CONS_SIGNALS = [
-    ("OCI / IaaS",             35.0,  "35% YoY (vs 84%); OCI growth halves"),
-    ("Oracle RPO",             10.0,  "$10B/Q adds (vs $30B); bookings slow"),
-    ("NVIDIA data",            22.0,  "$22B/Q (vs $35.6B); capex normalises"),
-    ("Hyperscaler CapEx",      25.0,  "25% YoY (vs 77%); normalization"),
-    ("Oracle multi-cloud",     80.0,  "80% YoY (vs 531%); tiny base matures"),
-    ("Frontier AI",             2.5,  "2.5/4 (vs 3.0); modestly constructive"),
+    ("OCI / IaaS",             30.0, "+30%/yr (vs +84%; growth normalization)"),
+    ("Oracle RPO",              8.0,  "$8B/Q (vs $30B/Q; no new mega deals)"),
+    ("NVIDIA data",            20.0,  "$20B/Q (vs $35.6B; AI capex plateaus)"),
+    ("Hyperscaler CapEx",      25.0,  "+25%/yr (vs +77%; capex normalization)"),
+    ("Oracle multi-cloud",     80.0,  "+80%/yr (vs +531%; base effect cools)"),
+    ("Frontier AI",             2.0,  "2.0/4 (vs 3.0; mixed frontier signals)"),
 ]
-CONS_EPS_CAGR    = 0.12    # conservative 2yr EPS CAGR
-CONS_EXIT_PE     = 20.0    # exit multiple (no re-rating assumed)
-CONS_DIVIDEND    = 1.60    # annual dividend per share
+CONS_EPS_CAGR    = 0.08    # 8%/yr conservative (vs consensus 15%+)
+CONS_EXIT_PE     = 20.0    # 20x exit (de-rate from current 29x; OCI slowdown)
+CONS_DIVIDEND    = 1.60    # $1.60/yr dividend
 
 # ── VOLATILITY ───────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT   = 0.30    # 2yr realized annualized vol
-VOL_BETA         = 0.85    # beta vs S&P 500
-VOL_52W_LOW      = 127.0   # 52-week low
-VOL_52W_HIGH     = 198.0   # 52-week high
-VOL_DIVIDEND     = 1.60    # same as CONS_DIVIDEND
+VOL_ANNUAL_PCT   = 0.30    # moderate vol
+VOL_BETA         = 1.05    # ~market beta
+VOL_52W_LOW      = 140.0   # approx
+VOL_52W_HIGH     = 198.0   # approx
+VOL_DIVIDEND     = 1.60
 
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -166,7 +166,7 @@ bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
 # Conservative growth
 cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
 cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = CONS_DIVIDEND * (1 + 0.02) + CONS_DIVIDEND * (1 + 0.02) ** 2
+cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
 cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
 cons_annual_ret = cons_total_ret / 2
 
@@ -251,24 +251,20 @@ bear_model_price = expected_price(bear_probs)
 print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
       f"~${bear_model_price:.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: OCI growth deceleration below 20% YoY combined with RPO growth")
-print(f"  stalling (new bookings drop). Oracle's $553B RPO is the foundation of the bull")
-print(f"  case — if OpenAI diversifies suppliers, the concentrated RPO risk becomes negative.")
+print(f"\n  KEY TRIGGER: OCI growth slows to <30% (hyperscalers route AI workloads to AWS/Azure)")
+print(f"  + OpenAI diversifies away from MSFT/ORCL cloud. The $90B RPO story breaks; investors")
+print(f"  realize contracted backlog was one customer concentrated.")
 
 # ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS (non-GAAP):  ${EPP_TODAY_EPS:.2f}  (FY2025E; Oracle FY ends May)")
-print(f"  Min viable P/E at peak pessimism:   {EPP_MIN_PE:.0f}x  [DB/cloud: subscription revenue raises floor from legacy 10x]")
+print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP)")
+print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
 print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                        ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1 floor):          ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  "
-      f"{'+' if epp_gap_pct>=0 else ''}{epp_gap_pct:.0f}%  "
-      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  "
-      f"{bear_vs_epp_pct:+.0f}%  "
-      f"{'← BEAR implies fundamental impairment' if bear_vs_epp_pct < 0 else '✓ BEAR above floor'}")
+print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
+print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
 
 # ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
@@ -283,17 +279,18 @@ for sname, sval, srat in CONS_SIGNALS:
 
 print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × "
       f"(1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (no multiple expansion):  ${cons_price_2yr:.0f}/share")
+print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
 if CONS_DIVIDEND > 0:
-    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  (${CONS_DIVIDEND:.2f} growing 2%/yr)")
+    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  (${CONS_DIVIDEND:.2f} growing 3%/yr)")
 print(f"  {'─'*60}")
 print(f"  Conservative 2yr price:    ${cons_price_2yr:.0f}  "
       f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} "
       f"from ${CURRENT_PRICE:.0f})")
 print(f"  Conservative total return: {cons_total_ret:+.0f}% over 2yr  "
       f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
-print(f"\n  Key: Conservative 12% EPS CAGR at 20x exit suggests modest upside. ORCL's debt")
-print(f"  burden ($95B) caps the multiple; OCI growth pace determines the ceiling.")
+print(f"\n  Oracle's DB subscription base provides a hard floor — ~20M installed databases create")
+print(f"  mandatory maintenance/cloud migration revenue. Conservative EPS at 20x still implies")
+print(f"  ~${cons_price_2yr:.0f} in 2yr, leaving limited margin of safety at ${CURRENT_PRICE:.0f} entry.")
 
 # ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print(f"\n  ⑤ VOLATILITY CONTEXT")
@@ -314,8 +311,8 @@ print(f"  {'─'*60}")
 print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
       f"~{sigma_needed_bear:.1f}σ price move  "
       f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  Below-market beta (0.85) despite high-growth AI narrative — DB moat provides floor.")
-print(f"  Dividend yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% modest; ORCL is a growth/buyback story primarily.")
+print(f"  Near-market beta ({VOL_BETA:.2f}) with concentrated RPO risk — vol spikes on any OpenAI news.")
+print(f"  Dividend (${VOL_DIVIDEND:.2f}/yr, {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% yield) provides minimal cushion vs {VOL_ANNUAL_PCT*100:.0f}% annual vol.")
 
 # ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
