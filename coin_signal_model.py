@@ -99,6 +99,24 @@ STRUCTURAL_FACTORS = [
     ("Institutional custody moat",                    0.3, 0.10),
 ]
 
+
+FLOOR_DATA = {
+    "trough_2022":        33.0,
+    "cum_fcf_per_share":  22.9,
+    "debt_delta":         -12.5,   # +ve = debt grew (floor lower); -ve = balance sheet improved
+    "reflation":           0.17,   # cumul. US CPI Jan 2022 - May 2026
+}
+
+def worst_case_floor():
+    t, refl = FLOOR_DATA["trough_2022"], FLOOR_DATA["reflation"]
+    fcf, ddt = FLOOR_DATA["cum_fcf_per_share"], FLOOR_DATA["debt_delta"]
+    ref_adj = t * (1 + refl)
+    floor   = ref_adj + fcf - ddt
+    bear_p  = SCENARIOS["BEAR"][2]
+    gap_pct = (floor - CURRENT_PRICE) / CURRENT_PRICE * 100
+    bvf_pct = (bear_p - floor) / floor * 100
+    return ref_adj, floor, gap_pct, bear_p, bvf_pct
+
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
     if hib:
@@ -216,6 +234,30 @@ for k in ["BEAR", "BASE", "BULL", "XBULL"]:
 
 print(f"\n  Prob-weighted 2yr:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
 print(f"  Current price: ${CURRENT_PRICE:.0f}")
+
+# Downside floor
+_ref_adj, _floor, _gap_pct, _bear_p, _bvf = worst_case_floor()
+_t   = FLOOR_DATA["trough_2022"]
+_fcf = FLOOR_DATA["cum_fcf_per_share"]
+_ddt = FLOOR_DATA["debt_delta"]
+print(f"\n  DOWNSIDE FLOOR  (why the 2022 low cannot recur at same nominal price)")
+print("  " + "─" * (W-2))
+print(f"  2022 reference trough:                  ${_t:.0f}")
+print(f"    + Reflation (+17% cumul. CPI since 2022):  +${_t*0.17:.0f}  \u2192  ${_t*1.17:.0f}")
+print(f"    + Cumul. FCF earned FY2023-2025:           +${_fcf:.0f}  \u2192  ${_t*1.17+_fcf:.0f}")
+if _ddt > 0:
+    print(f"    - Net debt increase since 2022 / share:    -${_ddt:.0f}  \u2192  ${_floor:.0f}  (leverage drag)")
+else:
+    print(f"    + Balance sheet improvement / share:       +${-_ddt:.0f}  \u2192  ${_floor:.0f}")
+print(f"  {chr(32)*4}{chr(45)*62}")
+print(f"  ANALYTICAL FLOOR (2026 equiv.):         ${_floor:.0f}")
+print(f"  Current price:                          ${CURRENT_PRICE:.0f}   downside to floor: {_gap_pct:+.0f}%")
+if _bvf >= 0:
+    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above floor  \u2713  adequate cushion")
+else:
+    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW floor  \u2190 structural break scenario")
+print(f"  \u2192 The 2022 low (${_t:.0f}) cannot recur: ${_fcf:.0f}/share FCF already locked in,")
+print(f"    17% inflation raised every nominal anchor. Floor ratchets up each year.")
 
 # Verdict
 print(f"\n  WHAT THE GAP MEANS")
