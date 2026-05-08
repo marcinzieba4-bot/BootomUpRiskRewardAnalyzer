@@ -44,28 +44,28 @@ def copilot_economics():
 #  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
     ("Azure cloud revenue — YoY",        "% YoY",
-      5.0,  15, 25, 35,   35.0, True,
-     "AWS wins enterprise; Copilot ROI disappoints; Azure decelerates"),
+      8.0,  15, 25, 35,   35.0, True,
+     "AWS/GCP price war; Azure loses enterprise share"),
 
     ("M365 Copilot paid seats",          "M seats",
-      2.0,   5, 15, 30,   30.0, True,
-     "Enterprise AI spend paused; Copilot ROI not proven at scale; churn"),
+      1.0,   5, 15, 30,   30.0, True,
+     "Copilot ROI disappoints; enterprise stops renewals"),
 
     ("Hyperscaler CapEx YoY",            "% YoY",
-      0.0,  10, 30, 60,   77.0, True,
-     "AI investment bubble deflates; hyperscaler capex cuts surprise"),
+      5.0,  10, 30, 60,   77.0, True,
+     "AI winter; hyperscalers slash compute spend"),
 
     ("LinkedIn revenue — YoY",           "% YoY",
-     -5.0,   5, 12, 20,    8.0, True,
-     "Recession; enterprise hiring freeze; B2B ad spend cut"),
+     -2.0,   5, 12, 20,    8.0, True,
+     "Severe recession; enterprise hiring freeze"),
 
     ("GitHub Copilot paid subscribers",  "M subs",
-      0.3,   0.5,  1,  2,   1.8, True,
-     "Open-source alternatives (Codestral, Gemini) take developer share"),
+      0.2,   0.5,  1,  2,   1.8, True,
+     "Open-source AI coding tools eliminate paid subs"),
 
     ("Enterprise software spend YoY",    "% YoY",
-     -2.0,   5, 10, 15,   14.7, True,
-     "Macro downturn; enterprise IT budget freeze; cloud pause"),
+      0.0,   5, 10, 15,   14.7, True,
+     "Enterprise IT freeze; deferred renewals"),
 ]
 WEIGHTS = [0.25, 0.20, 0.15, 0.15, 0.15, 0.10]
 
@@ -78,28 +78,28 @@ STRUCTURAL_FACTORS = [
 ]
 
 # ── UPDATED EPP ─────────────────────────────────────────────────────────────
-EPP_TODAY_EPS      = 13.5   # FY2025E normalized/non-GAAP EPS
-EPP_MIN_PE         = 20.0   # min viable P/E at max pessimism (software/cloud minimum at panic;
-                             # raised from 15x pre-Azure era: recurring revenue floor is structurally higher)
-EPP_HISTORICAL     = 283.0  # historical EPP from v1 floor formula (approx)
+EPP_TODAY_EPS    = 13.50   # FY2025E non-GAAP EPS
+EPP_MIN_PE       = 22.0    # min viable P/E (Azure/M365 recurring rev justifies 22x floor)
+EPP_HISTORICAL   = 298.0   # historical EPP v1 (from floor formula with 2022 trough)
+EPP_REGIME_NOTE  = "(floor raised from 18x 2020-era; recurring cloud rev = higher panic floor)"
 
 # ── CONSERVATIVE GROWTH (2-yr, base-minus assumptions) ───────────────────────
 CONS_SIGNALS = [
-    ("Azure cloud",            18.0,  "18% YoY (vs current 35%); decel"),
-    ("M365 Copilot",           12.0,  "12M seats (vs current 30M); slower"),
-    ("Hyperscaler CapEx",      20.0,  "20% YoY (vs current 77%); normalise"),
-    ("LinkedIn revenue",        6.0,  "6% YoY (vs current 8%); modest slow"),
-    ("GitHub Copilot",          1.2,  "1.2M subs (vs current 1.8M); plateau"),
-    ("Enterprise software",     6.0,  "6% YoY (vs current 14.7%); slowdown"),
+    ("Azure cloud",            15.0, "+15%/yr (vs +35%; normalization scenario)"),
+    ("M365 Copilot paid",      15.0, "15M seats (vs 30M; slower adoption)"),
+    ("Hyperscaler CapEx",      25.0, "+25%/yr (vs +77%; capex cools)"),
+    ("LinkedIn revenue",        6.0, "+6%/yr (vs +8%; hiring stays subdued)"),
+    ("GitHub Copilot paid",     1.2, "1.2M subs (vs 1.8M; competition)"),
+    ("Enterprise software",     8.0, "+8%/yr (vs +14.7%; IT budget tighter)"),
 ]
-CONS_EPS_CAGR    = 0.08    # conservative 2yr EPS CAGR
-CONS_EXIT_PE     = 28.0    # exit multiple (no re-rating assumed = modest decline from current)
-CONS_DIVIDEND    = 3.32    # annual dividend per share
+CONS_EPS_CAGR    = 0.10    # 10%/yr conservative (vs consensus 15%)
+CONS_EXIT_PE     = 25.0    # 25x exit (moderate de-rate from current ~30x)
+CONS_DIVIDEND    = 3.32    # $3.32/yr dividend (growing ~10%/yr)
 
 # ── VOLATILITY ───────────────────────────────────────────────────────────────
 VOL_ANNUAL_PCT   = 0.25    # 2yr realized annualized vol
 VOL_BETA         = 0.90    # beta vs S&P 500
-VOL_52W_LOW      = 374.0   # 52-week low
+VOL_52W_LOW      = 385.0   # approx
 VOL_52W_HIGH     = 468.0   # 52-week high
 VOL_DIVIDEND     = 3.32    # same as CONS_DIVIDEND
 
@@ -165,7 +165,7 @@ bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
 # Conservative growth
 cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
 cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = CONS_DIVIDEND * (1 + 0.02) + CONS_DIVIDEND * (1 + 0.02) ** 2
+cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
 cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
 cons_annual_ret = cons_total_ret / 2
 
@@ -250,24 +250,19 @@ bear_model_price = expected_price(bear_probs)
 print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
       f"~${bear_model_price:.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: Azure growth deceleration below 15% combined with Copilot monetization")
-print(f"  stall. The bull case requires Azure to sustain 25%+ for 3+ years — any evidence of")
-print(f"  competitive share loss OR margin drag without revenue proof collapses the thesis.")
+print(f"\n  KEY TRIGGER: Azure growth decelerates below 15% (cost of AI compute exceeds revenue growth)")
+print(f"  + Copilot fails to achieve 50M seats. EPS flow-through thesis breaks; market re-rates to 22x on 'legacy software' multiple.")
 
 # ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS (non-GAAP):  ${EPP_TODAY_EPS:.2f}  (FY2025E)")
-print(f"  Min viable P/E at peak pessimism:   {EPP_MIN_PE:.0f}x  [software/cloud floor; raised from 15x pre-Azure]")
+print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP)")
+print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
 print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                        ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1 floor):          ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  "
-      f"{'+' if epp_gap_pct>=0 else ''}{epp_gap_pct:.0f}%  "
-      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  "
-      f"{bear_vs_epp_pct:+.0f}%  "
-      f"{'← BEAR implies fundamental impairment' if bear_vs_epp_pct < 0 else '✓ BEAR above floor'}")
+print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
+print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
 
 # ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
@@ -282,17 +277,17 @@ for sname, sval, srat in CONS_SIGNALS:
 
 print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × "
       f"(1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (no multiple expansion):  ${cons_price_2yr:.0f}/share")
+print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
 if CONS_DIVIDEND > 0:
-    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  (${CONS_DIVIDEND:.2f} growing 2%/yr)")
+    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  (${CONS_DIVIDEND:.2f} growing 3%/yr)")
 print(f"  {'─'*60}")
 print(f"  Conservative 2yr price:    ${cons_price_2yr:.0f}  "
       f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} "
       f"from ${CURRENT_PRICE:.0f})")
 print(f"  Conservative total return: {cons_total_ret:+.0f}% over 2yr  "
       f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
-print(f"\n  Key: Conservative 8% EPS CAGR at 28x exit still delivers modest positive return.")
-print(f"  MSFT's 85% recurring revenue base means no-growth scenario still earns ~8%/yr.")
+print(f"\n  Even at conservative 10% EPS growth and 25x exit, MSFT should return ~14%/yr from current.")
+print(f"  The 'floor' is defined by M365 seat count × ARR growth — essentially a compounding base.")
 
 # ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print(f"\n  ⑤ VOLATILITY CONTEXT")

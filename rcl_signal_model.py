@@ -1,124 +1,68 @@
 #!/usr/bin/env python3
 """
-Royal Caribbean Signal Model
-──────────────────────────────
-Same framework applied to Royal Caribbean Group (NYSE: RCL).
+RCL Signal Model  v2
+─────────────────────
+Royal Caribbean Group (NYSE: RCL)  ·  Cruise / Leisure
 
-Key structural difference from the other companies in this framework:
-  RCL is a CAPITAL-INTENSIVE RECOVERY story — not tech growth, not a
-  turnaround (like NKE), but a maturing post-COVID upcycle with one
-  structural innovation the market systematically under-models:
-  PRIVATE DESTINATION ECONOMICS.
-
-  The standard cruise analyst model treats all sea days equally.
-  It does not. A day at Perfect Day at CocoCay (RCL-owned private island)
-  generates ~$175 MORE net yield per passenger than a regular port call —
-  purely from onshore spend that flows entirely to RCL with no port fees.
-  As private destination capacity grows (Royal Beach Club Nassau opened 2025),
-  net yield per APCD rises structurally even if pricing power is zero.
-
-  Bear risk is simpler: $20B+ gross debt × consumer spending recession
-  = cash flow squeeze at exactly the wrong moment for debt servicing.
-  The bull case needs BOTH demand staying elevated AND debt declining.
-
-Run: python rcl_signal_model.py
+New format: signal dashboard → bear anatomy → updated EPP →
+            conservative growth → volatility context → probability
 """
 import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 235.0     # USD (NYSE: RCL, ~May 2026)
-REQUIRED_RETURN = 0.15
-HORIZON_YEARS   = 2
+# ── CONFIG ────────────────────────────────────────────────────────────────────
+CURRENT_PRICE    = 235.0
+REQUIRED_RETURN  = 0.15
+HORIZON_YEARS    = 2
 
-# Scenario 2-year price targets (non-GAAP EPS × exit P/E multiple)
-# RCL's own "Trifecta+" plan targeted $18+ EPS by FY2025.
-# FY2025E non-GAAP EPS: ~$14-15 (strong but below original target due to
-# capacity additions diluting per-share economics during ramp).
-# FY2028 scenarios: lower multiples reflect capital-intensity + debt.
-# Cruise stocks rarely trade above 15-18x given cyclicality.
 SCENARIOS = {
-    #           EPS    mult  price   narrative
-    "BEAR":  (12.0,   12,   144,  "Recession; consumer pullback; debt servicing squeeze"),
-    "BASE":  (20.0,   14,   280,  "Steady demand; private dest ramp; debt falls to $15B"),
-    "BULL":  (25.0,   17,   425,  "Yield growth 7%+; private dest at scale; China opens"),
-    "XBULL": (30.0,   20,   600,  "Supercycle: pricing power + private dest + China boom"),
+    "BEAR":  (12.0,  12,  144, "Recession; consumer pullback; debt servicing squeeze"),
+    "BASE":  (20.0,  14,  280, "Steady demand; private dest ramp; debt falls to $15B"),
+    "BULL":  (25.0,  17,  425, "Yield growth 7%+; private dest at scale; China opens"),
+    "XBULL": (30.0,  20,  600, "Supercycle: pricing power + private dest + China boom"),
 }
 
-# ── PRIVATE DESTINATION ECONOMICS CALCULATOR (RCL-specific) ──────────────
-# RCL owns/operates private resort destinations exclusively for its guests.
-# Onshore spend at private destinations (food, excursions, beach clubs)
-# flows 100% to RCL with no port authority fees or revenue sharing.
-# Net yield premium over a standard Caribbean port call:
-#
-# Regular Caribbean port call NPCCD contribution: ~$120-140
-# Perfect Day at CocoCay NPCCD contribution:       ~$290-310
-# Delta (private vs standard):                      ~$160-175 / passenger day
-
-COCCOCAY_ANNUAL_VISITORS     = 4_200_000   # annual visitor throughput (pax)
-RBC_NASSAU_ANNUAL_VISITORS   = 2_400_000   # Royal Beach Club Nassau (pax, 2026E)
-PRIVATE_DEST_YIELD_PREMIUM   =       170   # USD per passenger vs standard port
-STANDARD_PORT_NPCCD          =       130   # USD net yield per passenger / standard port
-FLEET_CAPACITY_APCD_M        =        95   # ~95M available passenger cruise days / yr
+# ── PRIVATE DESTINATION ECONOMICS CALCULATOR (RCL-specific) ───────────────────
+COCCOCAY_ANNUAL_VISITORS     = 4_200_000
+RBC_NASSAU_ANNUAL_VISITORS   = 2_400_000
+PRIVATE_DEST_YIELD_PREMIUM   =       170
+STANDARD_PORT_NPCCD          =       130
+FLEET_CAPACITY_APCD_M        =        95
 
 def private_dest_economics():
     total_private_pax  = COCCOCAY_ANNUAL_VISITORS + RBC_NASSAU_ANNUAL_VISITORS
-    annual_premium_rev = total_private_pax * PRIVATE_DEST_YIELD_PREMIUM / 1e9  # $B
+    annual_premium_rev = total_private_pax * PRIVATE_DEST_YIELD_PREMIUM / 1e9
     pct_of_capacity    = total_private_pax / (FLEET_CAPACITY_APCD_M * 1e6) * 100
     npccd_lift         = (total_private_pax * PRIVATE_DEST_YIELD_PREMIUM) / (FLEET_CAPACITY_APCD_M * 1e6)
-    # If RCL adds 2 more private destinations at similar scale:
     future_premium     = annual_premium_rev * 2.5
     return total_private_pax, annual_premium_rev, pct_of_capacity, npccd_lift, future_premium
 
-# ── PROXY SIGNALS ─────────────────────────────────────────────────────────
-# Consumer-facing and cruise-specific signals. Unlike tech models, there is
-# no analogue of "RPO" or "backlog" — the leading signals are consumer
-# sentiment, competitive pricing, and real-time booking data.
-#
-# (name, value, unit, base_floor, bull_floor, xbull_floor, higher_is_better,
-#  what_it_drives_for_RCL)
+# ── SIGNALS ───────────────────────────────────────────────────────────────────
+# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
+#  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
-    # US consumer confidence index: 93.
-    # Cruise vacations are high-ticket discretionary purchases ($3,000-8,000/trip).
-    # Consumer confidence is the primary macro gating factor — when it drops
-    # below 85-90, discretionary travel is among the first cuts.
-    # Currently moderate: tariff uncertainty → below trend but not recessionary.
-    ("US consumer confidence index",     93.0, "pts",      90, 100, 115, True,
-     "discretionary spend gating: confidence <85 = booking cancellations accelerate"),
+    ("US consumer confidence index",  "pts",
+      70.0,  90.0, 100.0, 115.0,  93.0, True,
+     "Recession; cruise discretionary bookings collapse"),
 
-    # Cruise net yield per APCD YoY: +7.5%.
-    # RCL publishes net yield growth quarterly. It is the single best
-    # measure of pricing power + mix (private dest weighting).
-    # At +7.5%, demand is running ahead of capacity addition — a BULL signal.
-    # Private destination expansion is the structural driver above the trend.
-    ("Cruise net yield per APCD YoY",    7.5, "% YoY",     3,   6,  10, True,
-     "primary revenue driver; private dest premium lifts this structurally above inflation"),
+    ("Cruise net yield per APCD YoY", "% YoY",
+      -5.0,   3.0,   6.0,  10.0,   7.5, True,
+     "Yield war; overcapacity + demand destruction"),
 
-    # Forward 12-month booking price premium YoY: +8%.
-    # RCL reports booking trends on earnings calls. Premium pricing in the
-    # forward book means demand is absorbing new capacity at higher prices —
-    # the key bull signal for the next 2-4 quarters of reported revenue.
-    ("Fwd 12M booking price premium",    8.0, "% YoY",     3,   7,  12, True,
-     "2-4Q lead on revenue; elevated forward pricing = current demand exceeds supply"),
+    ("Fwd 12M booking price premium", "% YoY",
+      -3.0,   3.0,   7.0,  12.0,   8.0, True,
+     "Forward book collapses; recession cancellations accelerate"),
 
-    # Caribbean resort ADR (Average Daily Rate) YoY: +5%.
-    # Land-based Caribbean resort pricing is RCL's key competitive alternative.
-    # When hotels are expensive, cruises look relatively cheap (value proposition).
-    # STR / Smith Travel Research data, monthly.
-    ("Caribbean resort ADR YoY",         5.0, "% YoY",     2,   6,  10, True,
-     "land-based competition: higher hotel rates → cruise perceived value improves"),
+    ("Caribbean resort ADR YoY",      "% YoY",
+      -2.0,   2.0,   6.0,  10.0,   5.0, True,
+     "Land alternatives cheap; cruise value proposition weakens"),
 
-    # US leisure travel spend YoY: +4%.
-    # BEA / TSA travel data. Broad leisure travel spend includes air, hotel, cruise.
-    # At +4%, the market is growing but not booming — consistent with BASE conditions.
-    ("US leisure travel spend YoY",      4.0, "% YoY",     2,   5,   9, True,
-     "total addressable leisure spend; RCL captures ~5-6% of US leisure travel market"),
+    ("US leisure travel spend YoY",   "% YoY",
+      -3.0,   2.0,   5.0,   9.0,   4.0, True,
+     "Leisure travel contracts; RCL loses TAM share"),
 
-    # Fleet load factor: 108%.
-    # RCL consistently sells above double occupancy (100%). At 108%, cabins
-    # are selling additional berths (bunk beds, pullman beds) — demonstrating
-    # that demand exceeds base capacity. Load factor below 104% = weak demand.
-    ("Fleet load factor",               108.0, "%",        100, 106, 110, True,
-     "demand vs. supply: >106% means all berths sold + extras; drives onboard revenue"),
+    ("Fleet load factor",             "%",
+      88.0, 100.0, 106.0, 110.0, 108.0, True,
+     "COVID-variant outbreak; mass cancellations; load below 100%"),
 ]
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 
@@ -130,31 +74,36 @@ STRUCTURAL_FACTORS = [
     ("Fuel / LNG transition capital cost",           -0.3, 0.15),
 ]
 
+# ── UPDATED EPP ───────────────────────────────────────────────────────────────
+EPP_TODAY_EBITDA_B  = 7.0    # FY2025E EBITDA ($B)
+EPP_MIN_EV_EBITDA   = 6.0    # min viable EV/EBITDA at panic (raised from COVID 3x floor)
+EPP_NET_DEBT_B      = 18.0   # current net debt ($B)
+EPP_SHARES_M        = 267.0  # diluted shares (M)
+EPP_HISTORICAL      = 62.0   # historical EPP v1 (from 2020 floor)
+EPP_REGIME_NOTE     = "(raised from 3x COVID panic floor; private destinations = recurring asset)"
 
-FLOOR_DATA = {
-    "trough_year":        2020,
-    "trough_price":       19.0,
-    "cum_fcf_per_share":  12.0,
-    "debt_delta":         -11.0,     # +ve = debt grew (EPP lower); -ve = improved
-    "structural_delta":   15.0,  # +ve = fundamentals improved; -ve = weaker today
-    "cpi_since_trough":   0.25,     # cumul. US CPI from trough_year to May 2026
-}
+# ── CONSERVATIVE GROWTH ───────────────────────────────────────────────────────
+CONS_SIGNALS = [
+    ("US consumer",    88.0,  "88 pts (vs current 93; mild recession anxiety)"),
+    ("Cruise net",      4.0,  "+4% YoY (vs current +7.5%; capacity absorbs demand)"),
+    ("Fwd 12M",         3.5,  "+3.5% YoY (vs current +8%; bookings normalise)"),
+    ("Caribbean",       3.0,  "+3% YoY (vs current +5%; hotel pricing moderates)"),
+    ("US leisure",      2.5,  "+2.5% YoY (vs current +4%; consumer cautious)"),
+    ("Fleet load",    104.0,  "104% (vs current 108%; new capacity absorbs demand)"),
+]
+CONS_EBITDA_CAGR    = 0.08   # 8%/yr conservative (strong bookings; Wave season)
+CONS_EV_EBITDA      = 8.0    # 8x exit EV/EBITDA (no premium re-rating)
+CONS_DEBT_PAYDOWN_B = 2.5    # $2.5B/yr debt repayment (aggressive FCF allocation)
+CONS_DIVIDEND       = 0.0    # no dividend (suspended; capital to debt)
 
-def worst_case_floor():
-    yr     = FLOOR_DATA["trough_year"]
-    t      = FLOOR_DATA["trough_price"]
-    cpi    = FLOOR_DATA["cpi_since_trough"]
-    fcf    = FLOOR_DATA["cum_fcf_per_share"]
-    ddt    = FLOOR_DATA["debt_delta"]
-    sdelta = FLOOR_DATA["structural_delta"]
-    ref_adj = t * (1 + cpi)
-    epp     = ref_adj + fcf - ddt + sdelta
-    bear_p  = SCENARIOS["BEAR"][2]
-    gap_pct = (CURRENT_PRICE - epp) / epp * 100   # +ve = above EPP; -ve = below
-    bvf_pct = (bear_p - epp) / epp * 100
-    return ref_adj, epp, gap_pct, bear_p, bvf_pct
+# ── VOLATILITY ────────────────────────────────────────────────────────────────
+VOL_ANNUAL_PCT = 0.45    # high vol; discretionary + leverage
+VOL_BETA       = 1.80    # high beta; macro sensitive
+VOL_52W_LOW    = 150.0
+VOL_52W_HIGH   = 290.0
+VOL_DIVIDEND   = 0.0
 
-# ── SCORING ───────────────────────────────────────────────────────────────
+# ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
     if hib:
         if val >= xbull_f: return 4
@@ -184,85 +133,52 @@ def market_implied_composite(target_ev, tolerance=2.0):
             return round(c, 2), softmax_probs(c)
     return None, None
 
-# ── MAIN ──────────────────────────────────────────────────────────────────
+# ── COMPUTE ───────────────────────────────────────────────────────────────────
 W = 72
 
-scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
-          for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
-proxy_composite = sum(s * w for *_, s, w, _ in scored)
-sca             = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite   = proxy_composite + sca
-proxy_probs     = softmax_probs(proxy_composite)
-proxy_ev        = expected_price(proxy_probs)
+scored = [
+    (name, unit, bv, bf, blf, xf, cv, hib, narr,
+     score_signal(cv, bf, blf, xf, hib), w)
+    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
+    in zip(SIGNALS, WEIGHTS)
+]
+proxy_composite  = sum(s * w for *_, s, w in scored)
+bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
+                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
+                       in zip(SIGNALS, WEIGHTS))
+sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite    = proxy_composite + sca
+proxy_probs      = softmax_probs(proxy_composite)
+bear_probs       = softmax_probs(bear_composite)
+proxy_ev         = expected_price(proxy_probs)
+bear_ev          = expected_price(bear_probs)
 
-market_target_ev  = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
+market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
 mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
 mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
 
 total_pax, premium_rev, pct_cap, npccd_lift, future_premium = private_dest_economics()
 
-print()
-print("═" * W)
-print("  RCL SIGNAL MODEL  —  proxy vs. market-implied probability")
-print("═" * W)
+# Updated EPP (EBITDA-based)
+epp_updated     = (EPP_TODAY_EBITDA_B * EPP_MIN_EV_EBITDA - EPP_NET_DEBT_B) * 1000 / EPP_SHARES_M
+epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
+bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
 
-# Private destination economics
-print(f"\n  PRIVATE DESTINATION ECONOMICS  (the structural yield driver)")
-print("  " + "─" * (W-2))
-print(f"  Perfect Day at CocoCay (visitors/yr):  {COCCOCAY_ANNUAL_VISITORS/1e6:.1f}M")
-print(f"  Royal Beach Club Nassau (visitors/yr): {RBC_NASSAU_ANNUAL_VISITORS/1e6:.1f}M  (opened 2025)")
-print(f"  Total private destination traffic:     {total_pax/1e6:.1f}M pax/yr  "
-      f"({pct_cap:.0f}% of fleet APCD)")
-print(f"  Net yield premium vs regular port:     ${PRIVATE_DEST_YIELD_PREMIUM}/passenger")
-print(f"  ─────────────────────────────────────────────────────")
-print(f"  Annual revenue premium over std ports: ${premium_rev:.2f}B / yr")
-print(f"  Fleet-wide NPCCD structural lift:      +${npccd_lift:.1f} / APCD  ← invisible in yield YoY comps")
-print(f"  If 2 additional private dests added:   ~${future_premium:.1f}B / yr premium (2028E)")
-print(f"\n  STANDARD ANALYST ERROR: models showing '7.5% net yield growth' as")
-print(f"  'demand/pricing' miss ~${npccd_lift:.0f} of that being structural private-dest mix shift.")
-print(f"  The true underlying pricing growth is ~${npccd_lift:.0f} lower than headline shows.")
-print(f"  This ALSO means yield can sustain above inflation even in a weak demand env.")
+# Conservative growth
+cons_ebitda_2yr  = EPP_TODAY_EBITDA_B * ((1 + CONS_EBITDA_CAGR) ** 2)
+cons_debt_2yr    = EPP_NET_DEBT_B - CONS_DEBT_PAYDOWN_B * 2
+cons_equity_2yr  = (cons_ebitda_2yr * CONS_EV_EBITDA - cons_debt_2yr) * 1000 / EPP_SHARES_M
+cons_div_2yr     = CONS_DIVIDEND * (1 + 0.02) + CONS_DIVIDEND * (1 + 0.02) ** 2
+cons_total_ret   = (cons_equity_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
+cons_annual_ret  = cons_total_ret / 2
+cons_price_2yr   = cons_equity_2yr
 
-# Signal scorecard
-print(f"\n  PROXY SIGNAL SCORECARD")
-print(f"  {'Signal':<38}{'Value':>9}  Wt   Score")
-print("  " + "─" * (W-2))
-for name, val, unit, s, w, rt in scored:
-    bar = "█" * s + "░" * (4 - s)
-    print(f"  {name:<38}{val:>+7.1f}{unit[0]}  {w*100:.0f}%  {ICONS[s]}  {bar}")
+# Volatility
+sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
+vol_low_1yr       = CURRENT_PRICE - sigma_1yr
+vol_high_1yr      = CURRENT_PRICE + sigma_1yr
+sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
 
-print(f"\n  Proxy composite:   {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:  {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% reqd return)")
-    gap = proxy_composite - mkt_composite
-    print(f"  Gap (proxy − mkt): {gap:+.2f}  ← debt discount + capacity absorption risk")
-
-# Valuation context
-print(f"\n  VALUATION CONTEXT")
-print("  " + "─" * (W-2))
-fy25_eps = 14.5
-print(f"  FY2025E non-GAAP EPS:       ~${fy25_eps:.2f}")
-print(f"  Forward P/E:                 {CURRENT_PRICE/fy25_eps:.1f}x  (cruise sector range: 10-18x)")
-print(f"  Gross debt:                  ~$20B  (down from $22B peak; ~2x EV/EBITDA of debt)")
-print(f"  FCF yield:                   ~6-7%  ($3.5-4B FCF / $30B market cap)")
-print(f"  'Trifecta+' EPS target:      $18+  (original FY2025 target; now a FY2026 target)")
-print(f"  Net debt / EBITDA:           ~3.5x  (target: 2.5x by FY2027)")
-print(f"  → At $235, market prices solid execution but not full debt re-rating.")
-print(f"    When net debt/EBITDA crosses 2.5x, multiple should expand to 16-18x.")
-
-# Structural overlay
-print(f"\n  STRUCTURAL RISK OVERLAY  (analyst-assessed; beyond proxy signals)")
-print("  " + "─" * (W-2))
-print(f"  {'Factor':<44}  {'Score':>5}  {'Wt':>3}   {'Adj':>5}")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    adj_c = score * wt
-    arrow = "▲" if score > 0 else "▼"
-    print(f"  {desc:<44}  {score:>+5.1f}  {wt*100:>3.0f}%  {adj_c:>+5.2f}  {arrow}")
-print(f"  {'─'*68}")
-print(f"  Structural adj. (SCA):     {sca:>+6.2f}")
-print(f"  Adjusted composite:         {adj_composite:.2f}  "
-      f"(proxy {proxy_composite:.2f} {'+' if sca >= 0 else ''}{sca:.2f})")
 if mkt_composite:
     adj_gap = adj_composite - mkt_composite
     if   adj_gap >  0.50: _verdict = "UNDERVALUED"
@@ -270,128 +186,144 @@ if mkt_composite:
     elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
     elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
     else:                 _verdict = "OVERVALUED"
-    print(f"  Market composite:          {mkt_composite:.2f}")
-    print(f"  ADJUSTED GAP:             {adj_gap:>+6.2f}  ← {_verdict}")
 
-# Probability table
-print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "
-      f"{'EPS':>6}  {'Mult':>5}  {'Price':>7}  Narrative")
+# ── OUTPUT ────────────────────────────────────────────────────────────────────
+print()
+print("═" * W)
+print(f"  RCL  ·  Royal Caribbean Group  ·  ${CURRENT_PRICE:.2f}  ·  Cruise / Leisure")
+print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
+print("═" * W)
+
+# Private destination economics (keep before ① as RCL-specific feature)
+print(f"\n  PRIVATE DESTINATION ECONOMICS  (the structural yield driver)")
 print("  " + "─" * (W-2))
+print(f"  Perfect Day at CocoCay (visitors/yr):  {COCCOCAY_ANNUAL_VISITORS/1e6:.1f}M")
+print(f"  Royal Beach Club Nassau (visitors/yr): {RBC_NASSAU_ANNUAL_VISITORS/1e6:.1f}M  (opened 2025)")
+print(f"  Total private destination traffic:     {total_pax/1e6:.1f}M pax/yr  ({pct_cap:.0f}% of fleet APCD)")
+print(f"  Net yield premium vs regular port:     ${PRIVATE_DEST_YIELD_PREMIUM}/passenger")
+print(f"  {'─'*60}")
+print(f"  Annual revenue premium over std ports: ${premium_rev:.2f}B / yr")
+print(f"  Fleet-wide NPCCD structural lift:      +${npccd_lift:.1f} / APCD")
+print(f"  If 2 additional private dests added:   ~${future_premium:.1f}B / yr premium (2028E)")
+
+# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print(f"\n  ① SIGNAL DASHBOARD")
+print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
+print("  " + "─" * (W-2))
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u = unit.split()[0] if unit else ""
+    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.0f}{u}"
+    bf_s  = f"{bf:.0f}{u}"
+    blf_s = f"{blf:.0f}{u}"
+    xf_s  = f"{xf:.0f}{u}"
+    cv_s  = f"{cv:+.0f}{u}"
+    bar   = "█" * s + "░" * (4 - s)
+    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
+
+print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
+if mkt_composite:
+    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
+          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
+    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
+          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
+
+print(f"\n  Structural factors:")
+for desc, score, wt in STRUCTURAL_FACTORS:
+    arrow = "  +" if score > 0 else "  -"
+    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
+
+# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
+print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u      = unit.split()[0] if unit else ""
+    cv_s   = f"{cv:+.0f}{u}"
+    bv_s   = f"{bv:+.0f}{u}"
+    move   = bv - cv
+    move_s = f"{move:+.0f}{u}"
+    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
+    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+
+print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
+      f"~${expected_price(bear_probs):.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
+print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
+print(f"\n  KEY TRIGGER: Consumer confidence falls below 80 (recession) + a health scare")
+print(f"  (COVID variant) simultaneously → bookings collapse 40%+. With $18B net debt,")
+print(f"  EBITDA below $3B makes debt service precarious. JOINT PROBABILITY event.")
+
+# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
+print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
+print("  " + "─" * (W-2))
+print(f"  Today's normalized EBITDA:       ${EPP_TODAY_EBITDA_B:.1f}B  (FY2025E)")
+print(f"  Min viable EV/EBITDA at panic:    {EPP_MIN_EV_EBITDA:.1f}x  {EPP_REGIME_NOTE}")
+print(f"  → Trough EV:                     ${EPP_TODAY_EBITDA_B * EPP_MIN_EV_EBITDA:.1f}B")
+print(f"  Less net debt:                  -${EPP_NET_DEBT_B:.0f}B")
+print(f"  → Equity value:                  ${EPP_TODAY_EBITDA_B * EPP_MIN_EV_EBITDA - EPP_NET_DEBT_B:.1f}B  /  {EPP_SHARES_M:.0f}M shares")
+print(f"  {'─'*60}")
+print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
+print(f"  Historical EPP (v1):             ${EPP_HISTORICAL:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  "
+      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  "
+      f"{'← BEAR requires impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
+
+# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
+print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, all signals at BASE lower bound — no tailwinds)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
+for sname, sval, srat in CONS_SIGNALS:
+    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
+               if name.lower().startswith(sname.split()[0].lower()))
+    diff = sval - cur
+    diff_s = f"{diff:+.0f}"
+    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
+
+print(f"\n  Conservative 2yr EBITDA:   ${EPP_TODAY_EBITDA_B:.1f}B × (1+{CONS_EBITDA_CAGR*100:.0f}%)² = ${cons_ebitda_2yr:.2f}B")
+print(f"  Net debt (after paydown):  ${cons_debt_2yr:.1f}B  (-${CONS_DEBT_PAYDOWN_B:.0f}B/yr repayment)")
+print(f"  At {CONS_EV_EBITDA:.0f}x EV/EBITDA:  EV ${cons_ebitda_2yr * CONS_EV_EBITDA:.1f}B  →  equity ${cons_equity_2yr:.0f}/share")
+print(f"  {'─'*60}")
+print(f"  Conservative 2yr price:     ${cons_equity_2yr:.0f}  "
+      f"({'▲' if cons_equity_2yr > CURRENT_PRICE else '▼'}{abs(cons_equity_2yr - CURRENT_PRICE):.0f} from ${CURRENT_PRICE:.0f})")
+print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  = {cons_annual_ret:+.0f}%/yr")
+print(f"\n  Key: debt re-rating catalyst at 2.5x ND/EBITDA triggers multiple expansion.")
+print(f"  Private destination EBITDA is sticky — conservative case preserves this floor.")
+
+# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
+print(f"\n  ⑤ VOLATILITY CONTEXT")
+print("  " + "─" * (W-2))
+print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
+print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  (suspended; capital to debt repayment)")
+print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
+print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}  (high beta; macro + consumer sensitive)")
+print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
+      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
+print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  "
+      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
+print(f"  {'─'*60}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
+      f"~{sigma_needed_bear:.1f}σ price move  "
+      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
+print(f"  No dividend buffer — all FCF directed to debt repayment.")
+print(f"  → High-beta discretionary. Position sizing must account for {VOL_ANNUAL_PCT*100:.0f}% annualized vol.")
+
+# ── ⑥ PROBABILITY DISTRIBUTION ───────────────────────────────────────────────
+print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
+print("  " + "─" * (W-2))
+print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
+      f"{'Gap':>6}  Description")
 for k in ["BEAR", "BASE", "BULL", "XBULL"]:
     eps, mult, price, narr = SCENARIOS[k]
     pp  = proxy_probs[k]
     mp  = mkt_probs[k] if mkt_probs else 0
     gap_pp = pp - mp
-    sign = "+" if gap_pp >= 0 else ""
-    print(f"  {k:<10}  {pp*100:>7.1f}%  {mp*100:>7.1f}%  "
-          f"{sign}{gap_pp*100:>6.1f}pp  ${eps:>5}  {mult:>4}x  ${price:<6}  {narr[:28]}…")
+    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
+          f"{gap_pp*100:>+6.1f}pp  {narr}")
 
-print(f"\n  Prob-weighted 2yr:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
-print(f"  Current price: ${CURRENT_PRICE:.0f}")
+print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  "
+      f"Current: ${CURRENT_PRICE:.0f}")
+print(f"  Conservative EV (2yr, ④): ${cons_equity_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
+      f"${cons_equity_2yr + cons_div_2yr:.0f} total value")
 
-# Equivalent Pessimism Price
-_ref_adj, _epp, _gap_pct, _bear_p, _bvf = worst_case_floor()
-_yr     = FLOOR_DATA["trough_year"]
-_t      = FLOOR_DATA["trough_price"]
-_cpi    = FLOOR_DATA["cpi_since_trough"]
-_fcf    = FLOOR_DATA["cum_fcf_per_share"]
-_ddt    = FLOOR_DATA["debt_delta"]
-_sdelta = FLOOR_DATA["structural_delta"]
-print(f"\n  EQUIV. PESSIMISM PRICE  (if {_yr} pessimism returned today, price would be:)")
-print("  " + "─" * (W-2))
-print(f"  {_yr} pessimism trough:                  ${_t:.0f}")
-print(f"    + Reflation (+{_cpi*100:.0f}% cumul. CPI {_yr}→2026):   +${_t*_cpi:.0f}  \u2192  ${_t*(1+_cpi):.0f}")
-print(f"    + Cumul. FCF earned since {_yr}:              +${_fcf:.0f}  \u2192  ${_t*(1+_cpi)+_fcf:.0f}")
-if _ddt > 0:
-    print(f"    - Net debt increase since {_yr} / share:    -${_ddt:.0f}  \u2192  ${_t*(1+_cpi)+_fcf-_ddt:.0f}  (leverage drag)")
-else:
-    print(f"    + Balance sheet improvement / share:        +${-_ddt:.0f}  \u2192  ${_t*(1+_cpi)+_fcf-_ddt:.0f}")
-if _sdelta > 0:
-    print(f"    + Structural improvement since {_yr}:       +${_sdelta:.0f}  \u2192  ${_epp:.0f}  (moat/earnings-power \u2191)")
-elif _sdelta < 0:
-    print(f"    - Structural deterioration since {_yr}:     -${-_sdelta:.0f}  \u2192  ${_epp:.0f}  (weaker business today)")
-print(f"  {chr(32)*4}{chr(45)*62}")
-print(f"  EQUIV. PESSIMISM PRICE (EPP, 2026):     ${_epp:.0f}")
-if _gap_pct >= 0:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  +{_gap_pct:.0f}% above EPP  \u2713  price embeds premium over pure pessimism")
-else:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  \u2192  {_gap_pct:.0f}% BELOW EPP  \u2190 trading in distressed / structural-break zone")
-if _bvf >= 0:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above EPP  \u2713  bear case is cyclical, not structural")
-else:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW EPP  \u2190 bear case implies permanent impairment")
-print(f"  \u26a0  cum_fcf is net of deeply negative FY2020/2021 (COVID shutdown); FY2023-2025 FCF +$43/share offset those losses.")
-print(f"  \u2192 Same pessimism \u2260 same price: FCF locked in, inflation ratcheted every nominal anchor.")
-if _sdelta < 0:
-    print(f"    Structural damage since {_yr}: equal pessimism = lower price than CPI-adj {_yr} trough.")
-elif _sdelta > 0:
-    print(f"    Structural gains since {_yr}: equal pessimism = higher price than CPI-adj {_yr} trough.")
-
-# Verdict
-print(f"\n  WHAT THE GAP MEANS")
-print("  " + "─" * (W-2))
-gap = (proxy_composite - mkt_composite) if mkt_composite else 0
-print(f"""  Proxy composite {proxy_composite:.2f}  vs  market-implied {mkt_composite:.2f}.
-  Gap = {gap:+.2f}
-
-  Complete framework gap table:
-    ORCL gap = +2.16  (proxies XBULL; market prices execution/concentration risk)
-    AVGO gap = +1.41  (proxies bullish; AI flow-through uncertainty)
-    MSFT gap = +1.29  (proxies bullish; Copilot margin expansion uncertainty)
-    SAP  gap = +0.91  (proxies constructive; Joule unmonetised)
-    XTB  gap = +0.46  (justified volatility discount on cyclical revenue)
-    RCL  gap = {gap:+.2f}  ← debt multiple compression + capacity risk discount
-    COIN gap = +0.29  (approximately fairly priced; thesis is BTC price)
-    CAT  gap = -0.24  (market ahead of confirmed cycle recovery)
-    NKE  gap = -0.12  (market pricing unconfirmed turnaround hope)
-
-  WHY RCL'S GAP IS SMALL BUT POSITIVE:
-
-    Unlike ORCL/AVGO/MSFT, RCL's execution is ALREADY CONFIRMED:
-    Icon of the Seas sailing full. Utopia of the Seas delivering XBULL yields.
-    CocoCay printing money. Forward books at records. The market has credited
-    this execution — hence RCL trades at 16x forward vs 10x in 2022.
-
-    The residual +{gap:.2f} gap reflects two legitimate market concerns:
-    1. DEBT: $20B gross debt requires ~$1.5B/yr interest. A 200bp rate
-       spike or a 2-quarter demand softening converts the bull case to
-       a balance sheet stress scenario. The market is right to discount.
-    2. CAPACITY: RCL, Carnival, and Norwegian are all adding ships
-       simultaneously. ~8-10 new ships across the industry in 2025-2027.
-       If demand grows 4% and supply grows 6%, pricing power evaporates.
-
-  THE PRIVATE DESTINATION THESIS — WHY ANALYSTS ARE WRONG:
-
-    Most models attribute ALL net yield growth to pricing power or demand.
-    At 6.5M private destination visitors × $170 premium = $1.1B in revenue
-    that has NOTHING to do with consumer confidence or macro.
-    It flows from: (1) more ships routed through CocoCay/RBC Nassau,
-    (2) onshore spend once guests are there (captive audience).
-
-    This means:
-      • Even in a moderate recession, yield doesn't fall as far as models predict
-        because private dest revenue is sticky (guests already onboard, no alternative)
-      • Each new private destination adds a structural $300-500M of incremental
-        high-margin revenue that isn't visible in booking or yield trend data
-
-    The correct way to model RCL: split yield into (a) market-driven pricing
-    and (b) private destination structural mix shift. Most sell-side does not.
-
-  THE DEBT RE-RATING CATALYST (not yet in multiple):
-    Net debt / EBITDA: ~3.5x today → target 2.5x in FY2027.
-    At 2.5x, investment-grade credit ratings normalise → interest cost falls
-    ~$300-400M/yr → ~$0.70-0.90 EPS tailwind with zero revenue growth.
-    Credit upgrade also triggers multiple expansion from 14x to 16-17x.
-    Combined: EPS lift + multiple expansion = 25-35% re-rating at the
-    debt crossover point. This is a date-specific, predictable catalyst.
-
-  WHAT WOULD BREAK THE THESIS:
-    1. US recession: consumer confidence below 80 → forward bookings cancel
-       at scale. NCL Chapter 11 risk (2020 replay) if demand falls 25%+.
-    2. Fuel price spike: RCL hedges ~60% but an unhedged spike at $100+ oil
-       costs ~$500M EBIT → ~$1.00 EPS headwind per $20/bbl move.
-    3. Industry overcapacity: if all three major lines execute their orderbooks,
-       Caribbean supply grows 6-8%/yr 2025-2027. At 4% demand growth,
-       pricing power disappears and yield growth turns negative.""")
 print()
 print("═" * W)
