@@ -1,161 +1,54 @@
 #!/usr/bin/env python3
 """
-OKE Signal Model
-─────────────────
-Same framework applied to ONEOK Inc. (NYSE: OKE).
+OKE Signal Model  v2
+─────────────────────
+ONEOK Inc. (NYSE: OKE)  ·  Midstream Energy
+Trough year: 2020 (oil crash / COVID pipeline panic)
 
-Key structural difference from every other company in this framework:
-  ONEOK is the only stock here where the "moment of maximum pessimism"
-  was the 2020 oil/gas infrastructure panic — NOT the 2022 rate-shock.
-  In March/April 2020 OKE traded to $13-14 as the market feared:
-    (a) E&P customers going bankrupt → volume collapse on OKE's systems
-    (b) Natural gas demand destruction from COVID + oil price war
-    (c) Dividend cut risk (OKE was paying $0.935/quarter)
-  None of that happened. OKE maintained its dividend, volumes held
-  on take-or-pay contracts, and the business proved its fee-based stability.
-
-  Since 2020, ONEOK has transformed into a fundamentally different company:
-    1. Magellan Midstream acquisition (Sept 2023, $18.8B EV):
-       Added 9,800 miles of refined products pipelines (longest US system)
-       + 2,000 miles of crude oil pipelines from Permian to Gulf Coast.
-    2. NuStar Energy acquisition (2024):
-       Added Gulf Coast crude terminals and international storage.
-    ONEOK is now one of the 3 largest US midstream companies by EBITDA.
-
-  The core analytical tension:
-    FEE-BASED STABILITY (~60-65%): take-or-pay contracts insulate EBITDA
-    from commodity price swings. Magellan's regulated tariffs are
-    particularly stable — they are FERC-regulated cost-of-service rates.
-    COMMODITY EXPOSURE (~35-40%): NGL processing margin (keep-whole
-    contracts), NGL fractionation spread, crude gathering economics.
-    When gas/oil prices fall sharply, this segment can hurt.
-
-  The proxy signals test whether volume growth and commodity pricing
-  support the EBITDA trajectory needed to de-lever post-acquisitions.
-
-Run: python oke_signal_model.py
+New format: signal dashboard → bear anatomy → updated EPP →
+            conservative growth → volatility context → probability
 """
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 78.0      # USD (NYSE: OKE, ~May 2026)
-REQUIRED_RETURN = 0.15
-HORIZON_YEARS   = 2
+CURRENT_PRICE    = 78.0
+REQUIRED_RETURN  = 0.15
+HORIZON_YEARS    = 2
 
-# Scenario 2-year price targets (EV/EBITDA × share equity value, FY2027/2028E)
-# Midstream trades 8-11x EV/EBITDA. OKE's net debt ~$26B limits equity upside
-# in the base case — but deleveraging to <3.5x ND/EBITDA unlocks re-rating.
 SCENARIOS = {
-    #           EBITDA  mult  price   narrative
-    "BEAR":  ( 5.0,    8,    35,  "Volume/NGL margin collapse; dividend stress"),
-    "BASE":  ( 8.0,    9,    70,  "Steady EBITDA growth; deleveraging on track"),
-    "BULL":  (10.5,   10,   105,  "AI/LNG demand surge; NGL spreads wide"),
-    "XBULL": (13.0,   11,   145,  "Gas super-cycle; Magellan synergies exceed"),
+    "BEAR":  ( 5.0,  8,  35, "NGL crash + leverage stress + div cut"),
+    "BASE":  ( 8.0,  9,  70, "Steady EBITDA growth; deleveraging on track"),
+    "BULL":  (10.5, 10, 105, "AI/LNG demand surge; NGL spreads wide"),
+    "XBULL": (13.0, 11, 145, "Gas super-cycle; Magellan synergies exceed"),
 }
 
-# ── MAGELLAN ACQUISITION VALUE CALCULATOR (OKE-specific structural feature) ──
-# ONEOK acquired Magellan Midstream Partners (MMP) for $18.8B EV in Sept 2023.
-# Magellan was the largest US refined products pipeline operator:
-#   • 9,800 miles of refined products pipelines (longest system in US)
-#   • 54 refined products terminals (2.0 Bcg storage capacity)
-#   • 2,200 miles of crude oil pipelines (Longline, BridgeTex, Saddlehorn)
-#   • Gulf Coast marine terminals
-#
-# The key question: was the acquisition value-accretive at $18.8B?
-# OKE guided $200M+ of cost/commercial synergies. This calculator checks
-# whether the deal is creating or destroying value for OKE shareholders.
-
-MMP_ACQ_EV_B             = 18.8   # $B enterprise value paid for Magellan
-MMP_EBITDA_AT_CLOSE_B    = 1.85   # $B Magellan EBITDA at close (FY2023 run-rate)
-MMP_SYNERGIES_ANNUAL_B   = 0.22   # $B annual synergies (OKE guided $200M+, tracking ahead)
-
-# Magellan crude oil pipelines (Longline + BridgeTex + Saddlehorn system):
-MMP_CRUDE_MBPD           = 720    # Mbpd throughput (largely Permian-to-Gulf Coast)
-MMP_CRUDE_EBITDA_B       = 0.35   # $B crude segment EBITDA (~$1.60/bbl tariff × 85% margin)
-
-# Magellan refined products (FERC-regulated rate-of-return tariffs):
-# 9,800-mile system; tariffs quoted in cents/gallon (avg haul ~450 miles at ~$0.009/gal/100mi).
-# Revenue ~$2.3B; EBITDA margin ~65% on pipelines, higher on terminals → blended ~$1.50B EBITDA.
-MMP_REFPROD_MBPD         = 1200   # Mbpd throughput
-MMP_REFPROD_EBITDA_B     = 1.50   # $B refined products + terminals EBITDA
-
-# OKE post-acquisition multiple and share count:
-OKE_EV_EBITDA_MULT       = 9.0    # current OKE trading multiple
-OKE_DILUTED_SHARES_M     = 570.0  # million diluted shares (post-Magellan issuance)
-OKE_COST_OF_ACQ_DEBT_PCT = 5.5    # % avg interest rate on acquisition financing
-
-def magellan_acquisition_economics():
-    # --- Magellan run-rate EBITDA (post-synergies) ---
-    crude_ebitda_b   = MMP_CRUDE_EBITDA_B
-    refprod_ebitda_b = MMP_REFPROD_EBITDA_B
-    run_rate_ebitda  = crude_ebitda_b + refprod_ebitda_b + MMP_SYNERGIES_ANNUAL_B
-
-    # --- Entry multiple vs current implied value ---
-    entry_multiple   = MMP_ACQ_EV_B / MMP_EBITDA_AT_CLOSE_B              # x at close
-    synergy_adj_mult = MMP_ACQ_EV_B / run_rate_ebitda                    # x on run-rate
-    current_impl_ev  = run_rate_ebitda * OKE_EV_EBITDA_MULT               # $B at OKE multiple
-    value_created_b  = current_impl_ev - MMP_ACQ_EV_B
-    value_per_share  = value_created_b * 1000 / OKE_DILUTED_SHARES_M     # $/share
-
-    # --- EPS contribution after acquisition financing costs ---
-    magellan_ebit_b  = run_rate_ebitda * 0.68                             # ~32% D&A ratio
-    interest_b       = MMP_ACQ_EV_B * OKE_COST_OF_ACQ_DEBT_PCT / 100
-    net_income_b     = (magellan_ebit_b - interest_b) * 0.78              # 22% effective tax
-    eps_contribution = net_income_b * 1000 / OKE_DILUTED_SHARES_M        # $/share
-
-    # --- Payback period at run-rate FCF (EBITDA - maintenance capex - interest) ---
-    magellan_fcf_b   = run_rate_ebitda * 0.92 - interest_b                # ~8% maintenance capex
-    payback_yrs      = MMP_ACQ_EV_B / magellan_fcf_b
-
-    return (crude_ebitda_b, refprod_ebitda_b, run_rate_ebitda,
-            entry_multiple, synergy_adj_mult, current_impl_ev,
-            value_created_b, value_per_share, eps_contribution, payback_yrs)
-
-# ── PROXY SIGNALS ─────────────────────────────────────────────────────────────
-# (name, value, unit, base_floor, bull_floor, xbull_floor, higher_is_better,
-#  what_it_drives_for_OKE)
+# ── SIGNALS ───────────────────────────────────────────────────────────────────
+# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
+#  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
-    # Permian Basin associated gas production growth YoY: +11%.
-    # Permian is OKE's primary growth vector — associated gas from oil wells
-    # flows into OKE's gathering systems. Permian gas volumes closely track
-    # Permian rig counts (lagged ~3-4 months).
-    # +11% is BULL — sustained at current rig count with efficiency gains.
-    ("Permian assoc. gas production — YoY",   11.0, "% YoY",   5, 10, 18, True,
-     "primary volume driver; Permian associated gas captures ~40% of OKE's gathering EBITDA"),
+    ("Permian assoc. gas — YoY",      "% YoY",
+     -3.0,   5.0,  10.0,  18.0,   11.0, True,
+     "Oil <$55 → E&P capex cut → Permian rig count drops → assoc. gas falls"),
 
-    # US natural gas demand growth YoY: +8%.
-    # AI data center electricity + LNG export expansion = secular gas demand pull.
-    # EIA 12-month rolling: gas demand +8% YoY as of Q1 2026.
-    # This is the BULL threshold — XBULL would require AI demand to overwhelm supply.
-    ("US nat. gas demand growth — YoY",        8.0, "% YoY",   3,  7, 12, True,
-     "end-market demand pull; feeds LNG export utilisation + power sector throughput"),
+    ("US nat. gas demand — YoY",      "% YoY",
+     -1.0,   3.0,   7.0,  12.0,    8.0, True,
+     "Warm winters + AI capex pause; LNG utilisation drops below 85%"),
 
-    # NGL fractionation utilisation at Mont Belvieu / Medford hubs: 88%.
-    # OKE is the largest NGL fractionator in the US (primarily Mont Belvieu access).
-    # Higher utilisation = tighter NGL supply = wider fractionation spread.
-    # 88% is BULL — supply is tight vs 2020-2022 when oversupply plagued the market.
-    ("NGL fractionation hub utilisation",      88.0, "%",       75, 85, 93, True,
-     "NGL commodity exposure signal; tight frac = wide spread = higher variable margin"),
+    ("NGL frac. hub utilisation",     "%",
+     68.0,  78.0,  85.0,  93.0,   88.0, True,
+     "Gas price spike → ethane rejection → fracs run empty; keep-whole losses"),
 
-    # Magellan crude pipeline throughput (Mbpd): 715.
-    # Magellan's Longline + BridgeTex + Saddlehorn system: key Permian crude egress.
-    # At 715 Mbpd, running ~99% of utilisation. Expansion (Longline) coming 2026.
-    # BULL threshold: 700 Mbpd (near capacity, pricing power on expansions).
-    ("Magellan crude pipeline throughput",    715.0, "Mbpd",  580, 680, 720, True,
-     "key Magellan asset signal; near-capacity = tariff escalation and expansion optionality"),
+    ("Magellan crude throughput",     "Mbpd",
+    560.0, 630.0, 680.0, 720.0,  715.0, True,
+     "Permian crude oversupply → producers route to rail; Longline underutilised"),
 
-    # Net debt / EBITDA leverage ratio (lower is better):
-    # OKE post-Magellan target: <3.5x by 2025E, approaching <3.0x by 2027E.
-    # Currently ~3.8x — above target but declining. Each 0.5x reduction = re-rating.
-    # hib=False: lower leverage = better (more financial flexibility, dividend security).
-    ("Net debt / EBITDA leverage",             3.8, "x",       4.5, 3.5, 2.8, False,
-     "financial health signal; <3.5x = re-rating trigger; >4.5x = dividend risk zone"),
+    ("Net debt / EBITDA",             "x ND/EBITDA",
+      5.2,   4.5,   3.5,   2.8,    3.8, False,
+     "EBITDA falls faster than debt repays; covenant pressure; div cut risk"),
 
-    # OKE distribution (dividend) growth commitment — guided annual growth %:
-    # Management guided 3-4%/year dividend growth; OKE has raised divs consistently.
-    # Current quarterly: $1.03/share ($4.12/yr). 3.5% growth is BULL.
-    ("Dividend growth rate — guided annual",   3.5, "% yr",    0,  3,  6, True,
-     "capital return signal; midstream investors price yield + growth; cut = multiple crash"),
+    ("Dividend growth (guided)",      "% yr",
+      0.0,   1.0,   3.0,   6.0,    3.5, True,
+     "Coverage <1.2x → freeze/cut; destroys midstream equity multiple"),
 ]
 WEIGHTS = [0.25, 0.20, 0.20, 0.15, 0.10, 0.10]
 
@@ -167,28 +60,41 @@ STRUCTURAL_FACTORS = [
     ("3 acquisitions in 3 years: integration execution overhang",    -0.3, 0.10),
 ]
 
-FLOOR_DATA = {
-    "trough_year":         2020,
-    "trough_price":        14.0,   # OKE hit ~$13-14 in April 2020 (oil crash / COVID panic)
-    "cum_fcf_per_share":   33.0,   # 2020-2025 cumul. FCF/share (incl. Magellan contribution 2024+)
-    "debt_delta":          17.0,   # +ve = net debt/share grew; OKE added $14B+ debt for Magellan/NuStar
-    "structural_delta":    10.0,   # Magellan irreplaceable crude + refined; NuStar terminals; AI gas demand
-    "cpi_since_trough":    0.25,   # cumul. US CPI Jan 2020 → May 2026
-}
+# ── UPDATED EPP ───────────────────────────────────────────────────────────────
+# Anchored on TODAY's earnings × trough multiple (not a historical price + adjustments).
+# "If maximum pessimism hit the market TODAY, what price would the business justify?"
+# For a pipeline: EBITDA × min_viable_EV/EBITDA − net debt.
+# New regime note: AI data-center gas demand raises the floor multiple from
+# the 2020-era 7.0x to 7.5x — gas pipelines now carry a structural demand premium
+# not present in 2020 (when the fear was stranded-asset risk).
+EPP_TODAY_EBITDA_B   = 7.8    # FY2025E EBITDA ($B) — today's actual earning power
+EPP_MIN_EV_EBITDA    = 7.5    # minimum viable EV/EBITDA at max pessimism (raised from 7x)
+EPP_NET_DEBT_B       = 26.0   # current net debt ($B)
+EPP_SHARES_M         = 570.0  # diluted shares (M)
+EPP_HISTORICAL       = 44.0   # historical EPP (2020 trough + adjustments, from v1)
 
-def worst_case_floor():
-    yr     = FLOOR_DATA["trough_year"]
-    t      = FLOOR_DATA["trough_price"]
-    cpi    = FLOOR_DATA["cpi_since_trough"]
-    fcf    = FLOOR_DATA["cum_fcf_per_share"]
-    ddt    = FLOOR_DATA["debt_delta"]
-    sdelta = FLOOR_DATA["structural_delta"]
-    ref_adj = t * (1 + cpi)
-    epp     = ref_adj + fcf - ddt + sdelta
-    bear_p  = SCENARIOS["BEAR"][2]
-    gap_pct = (CURRENT_PRICE - epp) / epp * 100
-    bvf_pct = (bear_p - epp) / epp * 100
-    return ref_adj, epp, gap_pct, bear_p, bvf_pct
+# ── CONSERVATIVE GROWTH (2-3yr, base-minus assumptions) ───────────────────────
+# Each signal held at the LOWER end of BASE — no tailwinds assumed.
+# Compute 2yr EBITDA growth conservatively; apply slight re-rating on deleveraging.
+CONS_SIGNALS = [
+    # (name, conservative_value, rationale)  — name must start with SIGNALS[i] first word
+    ("Permian assoc. gas",    5.0,  "+5% YoY (vs current +11%); lower rig count assumed"),
+    ("US nat. gas demand",    3.0,  "+3% YoY (vs current +8%); no AI upside assumed"),
+    ("NGL frac. hub",        80.0,  "80% (vs current 88%); partial ethane rejection"),
+    ("Magellan crude",       650.0, "650 Mbpd (vs current 715); modest Permian slowdown"),
+    ("Net debt / EBITDA",     3.7,  "3.7x (vs current 3.8x; deleveraging but slow)"),
+    ("Dividend growth",        2.0,  "2%/yr (vs guided 3.5%; conservative re-cut risk)"),
+]
+CONS_EBITDA_CAGR = 0.05      # 5%/yr conservative EBITDA growth (vs analyst ~9%)
+CONS_EV_EBITDA   = 9.0       # multiple held flat (no re-rating assumed)
+CONS_DEBT_PAYDOWN_B = 1.0    # $B debt repaid per year (conservative)
+
+# ── VOLATILITY ────────────────────────────────────────────────────────────────
+VOL_ANNUAL_PCT   = 0.28      # 2yr realized annualized volatility (~28%)
+VOL_BETA         = 0.85      # beta vs S&P 500
+VOL_52W_LOW      = 58.0      # 52-week low
+VOL_52W_HIGH     = 94.0      # 52-week high
+VOL_DIVIDEND     = 4.12      # annual dividend ($)
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -220,80 +126,49 @@ def market_implied_composite(target_ev, tolerance=3.0):
             return round(c, 2), softmax_probs(c)
     return None, None
 
-# ── MAIN ──────────────────────────────────────────────────────────────────────
+# ── COMPUTE ───────────────────────────────────────────────────────────────────
 W = 72
 
-scored = [(name, val, unit, score_signal(val, bf, bull_f, xf, hib), w, rt)
-          for (name, val, unit, bf, bull_f, xf, hib, rt), w in zip(SIGNALS, WEIGHTS)]
-proxy_composite = sum(s * w for *_, s, w, _ in scored)
-sca             = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite   = proxy_composite + sca
-proxy_probs     = softmax_probs(proxy_composite)
-proxy_ev        = expected_price(proxy_probs)
+scored = [
+    (name, unit, bv, bf, blf, xf, cv, hib, narr,
+     score_signal(cv, bf, blf, xf, hib), w)
+    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
+    in zip(SIGNALS, WEIGHTS)
+]
+proxy_composite  = sum(s * w for *_, s, w in scored)
+bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
+                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
+                       in zip(SIGNALS, WEIGHTS))
+sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite    = proxy_composite + sca
+proxy_probs      = softmax_probs(proxy_composite)
+bear_probs       = softmax_probs(bear_composite)
+proxy_ev         = expected_price(proxy_probs)
+bear_ev          = expected_price(bear_probs)
 
 market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
 mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
 mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
 
-(crude_ebitda_b, refprod_ebitda_b, run_rate_ebitda_b,
- entry_mult, synergy_adj_mult, current_impl_ev_b,
- value_created_b, value_per_share, eps_contribution, payback_yrs) = magellan_acquisition_economics()
+# Updated EPP
+epp_updated      = (EPP_TODAY_EBITDA_B * EPP_MIN_EV_EBITDA - EPP_NET_DEBT_B) * 1000 / EPP_SHARES_M
+epp_gap_pct      = (CURRENT_PRICE - epp_updated) / epp_updated * 100
+bear_vs_epp_pct  = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
 
-print()
-print("═" * W)
-print("  OKE SIGNAL MODEL  —  proxy vs. market-implied probability")
-print("═" * W)
+# Conservative growth
+cons_ebitda_2yr  = EPP_TODAY_EBITDA_B * ((1 + CONS_EBITDA_CAGR) ** 2)
+cons_debt_2yr    = EPP_NET_DEBT_B - CONS_DEBT_PAYDOWN_B * 2
+cons_equity_2yr  = (cons_ebitda_2yr * CONS_EV_EBITDA - cons_debt_2yr) * 1000 / EPP_SHARES_M
+cons_div_2yr     = VOL_DIVIDEND * (1 + 0.02) + VOL_DIVIDEND * (1 + 0.02) ** 2   # 2 yrs divs
+cons_total_ret   = (cons_equity_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
+cons_annual_ret  = cons_total_ret / 2
 
-# Magellan acquisition economics
-print(f"\n  MAGELLAN ACQUISITION VALUE CHECK  (deal closed Sept 2023, $18.8B EV)")
-print("  " + "─" * (W-2))
-print(f"  Magellan EBITDA at close:               ${MMP_EBITDA_AT_CLOSE_B:.2f}B  "
-      f"(entry multiple: {entry_mult:.1f}x EV/EBITDA)")
-print(f"  Annual synergies (OKE guided $200M+):   +${MMP_SYNERGIES_ANNUAL_B*1000:.0f}M / yr  (ahead of plan)")
-print(f"  Crude oil pipeline EBITDA:              ${crude_ebitda_b:.2f}B / yr  "
-      f"({MMP_CRUDE_MBPD:.0f} Mbpd throughput; Permian→Gulf Coast)")
-print(f"  Refined products EBITDA:                ${refprod_ebitda_b:.2f}B / yr  "
-      f"({MMP_REFPROD_MBPD:.0f} Mbpd; 9,800-mile FERC-regulated system)")
-print(f"  ─────────────────────────────────────────────────────")
-print(f"  Run-rate EBITDA (post-synergies):       ${run_rate_ebitda_b:.2f}B  "
-      f"(synergy-adj. entry: {synergy_adj_mult:.1f}x)")
-print(f"  Implied EV at OKE's {OKE_EV_EBITDA_MULT:.0f}x multiple:     ${current_impl_ev_b:.1f}B")
-print(f"  Value created vs $18.8B paid:           +${value_created_b:.1f}B  "
-      f"→  +${value_per_share:.0f}/OKE share")
-print(f"  EPS contribution (after ~5.5% fin. cost):${eps_contribution:.2f}/share  "
-      f"(payback: {payback_yrs:.1f} yrs)")
-print(f"  → Magellan was acquired at {entry_mult:.1f}x and now creates value at {OKE_EV_EBITDA_MULT:.0f}x.")
-print(f"    The 9,800-mile refined products system and Permian crude pipelines are")
-print(f"    effectively irreplaceable — no new similar pipeline can be permitted today.")
-print(f"    Synergies ahead of plan = acquisition is value-accretive for OKE shareholders.")
+# Volatility
+sigma_1yr        = CURRENT_PRICE * VOL_ANNUAL_PCT
+vol_low_1yr      = CURRENT_PRICE - sigma_1yr
+vol_high_1yr     = CURRENT_PRICE + sigma_1yr
+sigma_needed_bear= (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
 
-# Signal scorecard
-print(f"\n  PROXY SIGNAL SCORECARD")
-print(f"  {'Signal':<38}{'Value':>9}  Wt   Score")
-print("  " + "─" * (W-2))
-for name, val, unit, s, w, rt in scored:
-    bar = "█" * s + "░" * (4 - s)
-    print(f"  {name:<38}{val:>+7.1f}{unit[0]}  {w*100:.0f}%  {ICONS[s]}  {bar}")
-
-print(f"\n  Proxy composite:   {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:  {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% reqd return)")
-    gap = proxy_composite - mkt_composite
-    print(f"  Gap (proxy − mkt): {gap:+.2f}")
-
-# Structural overlay
-print(f"\n  STRUCTURAL RISK OVERLAY  (analyst-assessed; beyond proxy signals)")
-print("  " + "─" * (W-2))
-print(f"  {'Factor':<44}  {'Score':>5}  {'Wt':>3}   {'Adj':>5}")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    adj_c = score * wt
-    arrow = "▲" if score > 0 else "▼"
-    print(f"  {desc:<44}  {score:>+5.1f}  {wt*100:>3.0f}%  {adj_c:>+5.2f}  {arrow}")
-print(f"  {'─'*68}")
-print(f"  Structural adj. (SCA):     {sca:>+6.2f}")
-print(f"  Adjusted composite:         {adj_composite:.2f}  "
-      f"(proxy {proxy_composite:.2f} {'+' if sca >= 0 else ''}{sca:.2f})")
 if mkt_composite:
     adj_gap = adj_composite - mkt_composite
     if   adj_gap >  0.50: _verdict = "UNDERVALUED"
@@ -301,164 +176,150 @@ if mkt_composite:
     elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
     elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
     else:                 _verdict = "OVERVALUED"
-    print(f"  Market composite:          {mkt_composite:.2f}")
-    print(f"  ADJUSTED GAP:             {adj_gap:>+6.2f}  ← {_verdict}")
 
-# Valuation context
-print(f"\n  VALUATION CONTEXT")
-print("  " + "─" * (W-2))
-print(f"  FY2025E EBITDA:              ~$7.8B  (up from $3.5B pre-Magellan)")
-print(f"  FY2025E distributable FCF:   ~$4.2B  (~$7.40/share)")
-print(f"  Annual dividend (current):   ~$4.12/share  (yield: {4.12/CURRENT_PRICE*100:.1f}%)")
-print(f"  Dividend coverage (FCF/div): ~1.8x  (secure; above 1.2x threshold)")
-print(f"  Net debt:                    ~$26B  (~3.8x ND/EBITDA)")
-print(f"  Path to <3.5x leverage:      FY2026E (if EBITDA grows to $8.5B)")
-print(f"  EV/EBITDA:                   {(CURRENT_PRICE*OKE_DILUTED_SHARES_M/1e3 + 26)/7.8:.1f}x  (peer range: 8-11x)")
-print(f"  → Deleverage to <3.5x is the single most important catalyst for re-rating.")
-print(f"    Each 0.5x ND/EBITDA improvement raises equity value ~$5-7/share at current EV.")
+# ── OUTPUT ────────────────────────────────────────────────────────────────────
+print()
+print("═" * W)
+print(f"  OKE  ·  ONEOK Inc.  ·  ${CURRENT_PRICE:.2f}  ·  Midstream Energy")
+print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
+print("═" * W)
 
-# Probability table
-print(f"\n  {'Scenario':<10}  {'Proxy':>8}  {'Market':>8}  {'Gap':>8}  "
-      f"{'EBITDA':>8}  {'Mult':>5}  {'Price':>7}  Narrative")
+# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print(f"\n  ① SIGNAL DASHBOARD")
+print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
 print("  " + "─" * (W-2))
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u = unit.split()[0] if unit else ""
+    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.1f}{u}"
+    bf_s  = f"{bf:.0f}{u}"
+    blf_s = f"{blf:.0f}{u}"
+    xf_s  = f"{xf:.0f}{u}"
+    cv_s  = f"{cv:+.0f}{u}"
+    bar   = "█" * s + "░" * (4 - s)
+    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
+
+print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
+if mkt_composite:
+    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
+          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
+    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
+          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
+
+print(f"\n  Structural factors:")
+for desc, score, wt in STRUCTURAL_FACTORS:
+    arrow = "  +" if score > 0 else "  -"
+    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
+
+# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
+print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
+for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
+    u      = unit.split()[0] if unit else ""
+    cv_s   = f"{cv:+.0f}{u}"
+    bv_s   = f"{bv:+.0f}{u}"
+    move   = bv - cv
+    move_s = f"{move:+.0f}{u}"
+    # Truncate narrative to fit
+    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
+    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+
+print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
+      f"~${expected_price(bear_probs):.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
+print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
+print(f"\n  KEY TRIGGER: NGL keep-whole losses simultaneously with leverage >4.5x")
+print(f"  causes dividend coverage to fall below 1.2x → cut → multiple collapse.")
+print(f"  This is a JOINT PROBABILITY event — each leg alone doesn't produce bear.")
+
+# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
+print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
+print("  " + "─" * (W-2))
+print(f"  Today's normalized EBITDA:       ${EPP_TODAY_EBITDA_B:.1f}B  (FY2025E actuals)")
+print(f"  Min viable EV/EBITDA at panic:    {EPP_MIN_EV_EBITDA:.1f}x  "
+      f"(raised from 7.0x in 2020 → AI/LNG secular demand = new regime)")
+print(f"  → Trough EV:                     ${EPP_TODAY_EBITDA_B * EPP_MIN_EV_EBITDA:.1f}B")
+print(f"  Less net debt:                  -${EPP_NET_DEBT_B:.0f}B")
+print(f"  → Equity value:                  ${EPP_TODAY_EBITDA_B * EPP_MIN_EV_EBITDA - EPP_NET_DEBT_B:.1f}B"
+      f"  /  {EPP_SHARES_M:.0f}M shares")
+print(f"  {'─'*60}")
+print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
+print(f"  Historical EPP (v1, 2020 adj):   ${EPP_HISTORICAL:.0f}/share  "
+      f"(+${epp_updated - EPP_HISTORICAL:.0f} — EBITDA grew $3.5B→$7.8B)")
+print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  "
+      f"{'+' if epp_gap_pct>=0 else ''}{epp_gap_pct:.0f}%  "
+      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  "
+      f"{bear_vs_epp_pct:+.0f}%  "
+      f"{'← BEAR requires EBITDA impairment, not just price drop' if bear_vs_epp_pct < 0 else '✓'}")
+
+# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
+print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, all signals at BASE lower bound — no tailwinds)")
+print("  " + "─" * (W-2))
+print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
+for sname, sval, srat in CONS_SIGNALS:
+    # find the current value
+    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
+               if name.lower().startswith(sname.split()[0].lower()))
+    diff = sval - cur
+    diff_s = f"{diff:+.0f}"
+    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
+
+print(f"\n  Conservative 2yr EBITDA:   ${EPP_TODAY_EBITDA_B:.1f}B × "
+      f"(1+{CONS_EBITDA_CAGR*100:.0f}%)² = ${cons_ebitda_2yr:.2f}B")
+print(f"  Net debt (after paydown):  ${cons_debt_2yr:.1f}B  "
+      f"(-${CONS_DEBT_PAYDOWN_B:.0f}B/yr free cash repayment)")
+print(f"  At {CONS_EV_EBITDA:.0f}x EV/EBITDA (no re-rating):  "
+      f"EV ${cons_ebitda_2yr * CONS_EV_EBITDA:.1f}B  →  equity ${cons_equity_2yr:.0f}/share")
+print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  "
+      f"(${VOL_DIVIDEND:.2f} growing 2%/yr)")
+print(f"  {'─'*60}")
+print(f"  Conservative 2yr price:     ${cons_equity_2yr:.0f}  "
+      f"({'▲' if cons_equity_2yr > CURRENT_PRICE else '▼'}{abs(cons_equity_2yr - CURRENT_PRICE):.0f} "
+      f"from ${CURRENT_PRICE:.0f})")
+print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  "
+      f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
+print(f"\n  Key: even conservative growth triggers re-rating as leverage drops <3.5x.")
+print(f"  No BULL scenario required. Base-minus is sufficient for double-digit returns.")
+
+# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
+print(f"\n  ⑤ VOLATILITY CONTEXT")
+print("  " + "─" * (W-2))
+print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
+print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  "
+      f"(yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
+print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
+print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}  (below market; defensive income stock)")
+print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
+      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
+print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  "
+      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
+print(f"  {'─'*60}")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
+      f"~{sigma_needed_bear:.1f}σ price move  "
+      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
+print(f"  Dividend buffer:      ${VOL_DIVIDEND:.2f}/yr absorbs ~{VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% "
+      f"of annual price drawdown")
+print(f"  → Midstream is low-beta income. Buy on dividend yield expansion (>6% = attractive).")
+print(f"  → OKE yield today: {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%.  "
+      f"Attractive >6% = price <${VOL_DIVIDEND/0.06:.0f}.")
+
+# ── ⑥ PROBABILITY DISTRIBUTION ───────────────────────────────────────────────
+print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
+print("  " + "─" * (W-2))
+print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
+      f"{'Gap':>6}  Description")
 for k in ["BEAR", "BASE", "BULL", "XBULL"]:
     ebitda, mult, price, narr = SCENARIOS[k]
     pp  = proxy_probs[k]
     mp  = mkt_probs[k] if mkt_probs else 0
     gap_pp = pp - mp
-    sign = "+" if gap_pp >= 0 else ""
-    print(f"  {k:<10}  {pp*100:>7.1f}%  {mp*100:>7.1f}%  "
-          f"{sign}{gap_pp*100:>6.1f}pp  ${ebitda:>5.1f}B  {mult:>4}x  ${price:<6}  {narr[:24]}…")
+    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
+          f"{gap_pp*100:>+6.1f}pp  {narr}")
 
-print(f"\n  Prob-weighted 2yr:  proxy ${proxy_ev:.0f}  /  market ${mkt_ev:.0f}")
-print(f"  Current price: ${CURRENT_PRICE:.0f}")
+print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  "
+      f"Current: ${CURRENT_PRICE:.0f}")
+print(f"  Conservative EV (2yr, ④): ${cons_equity_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
+      f"${cons_equity_2yr + cons_div_2yr:.0f} total value")
 
-# Equivalent Pessimism Price
-_ref_adj, _epp, _gap_pct, _bear_p, _bvf = worst_case_floor()
-_yr     = FLOOR_DATA["trough_year"]
-_t      = FLOOR_DATA["trough_price"]
-_cpi    = FLOOR_DATA["cpi_since_trough"]
-_fcf    = FLOOR_DATA["cum_fcf_per_share"]
-_ddt    = FLOOR_DATA["debt_delta"]
-_sdelta = FLOOR_DATA["structural_delta"]
-print(f"\n  EQUIV. PESSIMISM PRICE  (if {_yr} pessimism returned today, price would be:)")
-print("  " + "─" * (W-2))
-print(f"  {_yr} pessimism trough:                  ${_t:.0f}  (oil crash + COVID → OKE near $13)")
-print(f"    + Reflation (+{_cpi*100:.0f}% cumul. CPI {_yr}→2026):   +${_t*_cpi:.0f}  →  ${_t*(1+_cpi):.0f}")
-print(f"    + Cumul. FCF earned since {_yr}:              +${_fcf:.0f}  →  ${_t*(1+_cpi)+_fcf:.0f}")
-print(f"      (FCF grew dramatically post-Magellan: ~$4-5/share pre-2023, $7-8/share after)")
-if _ddt > 0:
-    print(f"    - Net debt increase since {_yr} / share:    -${_ddt:.0f}  →  ${_t*(1+_cpi)+_fcf-_ddt:.0f}  (Magellan/NuStar acquisition debt)")
-else:
-    print(f"    + Balance sheet improvement / share:        +${-_ddt:.0f}  →  ${_t*(1+_cpi)+_fcf-_ddt:.0f}")
-if _sdelta > 0:
-    print(f"    + Structural improvement since {_yr}:       +${_sdelta:.0f}  →  ${_epp:.0f}  (Magellan + NuStar assets irreplaceable)")
-elif _sdelta < 0:
-    print(f"    - Structural deterioration since {_yr}:     -${-_sdelta:.0f}  →  ${_epp:.0f}  (weaker business today)")
-print(f"  {chr(32)*4}{chr(45)*62}")
-print(f"  EQUIV. PESSIMISM PRICE (EPP, 2026):     ${_epp:.0f}")
-if _gap_pct >= 0:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  →  +{_gap_pct:.0f}% above EPP  ✓  price embeds premium over pure pessimism")
-else:
-    print(f"  Current price:   ${CURRENT_PRICE:.0f}  →  {_gap_pct:.0f}% BELOW EPP  ← trading in distressed / structural-break zone")
-if _bvf >= 0:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is +{_bvf:.0f}% above EPP  ✓  bear case is cyclical, not structural")
-else:
-    print(f"  BEAR scenario (${_bear_p:.0f}):   BEAR is {_bvf:.0f}% BELOW EPP  ← bear case implies permanent impairment")
-print(f"  → Same {_yr} panic ≠ same stock price: OKE accumulated ${_fcf}/share FCF since {_yr},")
-print(f"    added the Magellan/NuStar asset base (+${_sdelta}/share structural value),")
-print(f"    offset by ${_ddt}/share more net debt. Net: EPP is ${_epp:.0f} vs {_yr} price of ${_t:.0f}.")
-print(f"  → BEAR ($35) is below EPP (${_epp:.0f}): a bear scenario for OKE requires NOT JUST")
-print(f"    volume collapse, but dividend cut + balance sheet impairment — structural break.")
-
-# Verdict
-print(f"\n  WHAT THE GAP MEANS")
-print("  " + "─" * (W-2))
-gap = (proxy_composite - mkt_composite) if mkt_composite else 0
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-print(f"""  Proxy composite {proxy_composite:.2f}  vs  market-implied {mkt_composite:.2f}.
-  Gap = {gap:+.2f}  |  Adjusted gap = {adj_gap:+.2f}  ← {_verdict}
-
-  Complete framework adjusted gap table (updated with OKE):
-    ORCL adj gap = +1.54  UNDERVALUED          (Oracle DB moat; OCI RPO backlog)
-    AVGO adj gap = +1.43  UNDERVALUED          (custom ASIC moat; VMware synergies)
-    MSFT adj gap = +1.42  UNDERVALUED          (Azure switching cost; Copilot)
-    SAP  adj gap = +1.15  UNDERVALUED          (ECC 2027 captive pipeline)
-    SYK  adj gap = +0.56  UNDERVALUED          (MAKO installed base moat)
-    PYPL adj gap = +0.42  MODESTLY UNDERVALUED (Venmo moat; Chriss execution)
-    COIN adj gap = +0.40  MODESTLY UNDERVALUED (regulatory clarity; BTC thesis)
-    RCL  adj gap = +0.28  MODESTLY UNDERVALUED (private destination moat)
-    XTB  adj gap = +0.29  MODESTLY UNDERVALUED (ETF stickiness vs cyclicality)
-    PM   adj gap = +0.36  MODESTLY UNDERVALUED (IQOS device ecosystem)
-    MU   adj gap = +0.35  MODESTLY UNDERVALUED (HBM moat; oligopoly discipline)
-    OKE  adj gap = {adj_gap:>+5.2f}  ← {_verdict}
-    WMB  adj gap = ~0.00  FAIRLY VALUED        (Transco moat offsets AI premium)
-    CAT  adj gap = -0.27  MODESTLY OVERVALUED  (tariff exposure; cycle ahead of data)
-    NKE  adj gap = -0.43  MODESTLY OVERVALUED  (China permanent loss)
-    APD  adj gap = -0.66  OVERVALUED           (H2 NPV < capex deployed)
-
-  WHY OKE AND WMB HAVE THE SAME VERDICT BUT DIFFERENT STORIES:
-
-    WMB (Williams): FAIRLY VALUED because the MARKET is already pricing BULL
-    (composite 3.22). WMB's proxy signals are also BULL (2.95). The gap is
-    narrow (-0.27) because the market correctly anticipates the Transco
-    franchise moat + AI data center gas demand.
-
-    OKE (ONEOK): {_verdict} because OKE's leverage (3.8x ND/EBITDA)
-    creates a DISCOUNT vs fee-based peers. The market is pricing OKE below
-    where the fundamentals justify — but the risk is real. If gas demand
-    softens AND NGL margins compress simultaneously, OKE's leverage limits
-    dividend coverage and restricts capex. The gap = {adj_gap:+.2f} is the leverage
-    discount — not a reflection of poor business quality.
-
-  THE MAGELLAN DEAL: WHAT CHANGED THE ANALYTICAL FRAMEWORK
-
-    Pre-2023 OKE: pure-play NGL midstream. Volatile NGL margins drove EBITDA.
-    Trading range: 7-10x EV/EBITDA. High yield, moderate growth.
-
-    Post-Magellan OKE: 35% of EBITDA is now FERC-regulated cost-of-service
-    pipelines (Magellan refined products) — the most stable cash flow in US
-    midstream. These pipelines have operated continuously since the 1950s-1970s.
-    No competing pipeline exists or can be built (permitting is effectively
-    impossible in 2026 for a 9,800-mile system). Tariffs increase with CPI.
-
-    The implication: OKE's EBITDA has become MORE STABLE post-Magellan.
-    But the market still prices OKE at the volatile-NGL-company multiple.
-    As the leverage declines and fee-based stability becomes apparent,
-    the multiple should expand from 9x toward 10-11x, adding $10-15/share.
-
-  THE THREE RISKS THE PROXY SIGNALS CANNOT SEE:
-
-    1. NGL "keep-whole" contract losses: If natural gas prices surge while
-       NGL prices are flat, OKE owes producers the value of the NGLs it
-       KEEPS. In a 2021-style gas price spike, OKE's processing margin can
-       go deeply negative. This is a binary, unhedgeable risk in the model.
-
-    2. Leverage + rates: OKE's $26B debt at avg 5.5% costs $1.43B/yr.
-       If rates rise further or refinancing occurs at 7%+, the interest
-       burden increases $400M+ and coverage ratios tighten. At <1.2x
-       dividend coverage, OKE historically cuts the dividend (happened 2020).
-
-    3. Policy reversal on gas: The EU carbon border mechanism and US clean
-       energy subsidies could accelerate electrification faster than EIA
-       models. If US gas power gen plateaus by 2028, OKE's growth thesis
-       from AI data centers + LNG disappears. The 8-year payback on
-       Magellan requires sustained throughput — a structural demand shift
-       changes the calculus entirely.
-
-  THE BULL CASE — WHY $105 IS ACHIEVABLE:
-
-    AI data center gas demand is the key incremental driver:
-      50GW of new AI data centers × 35% gas mix × 8.5 MMBtu/MWh
-      = 1.2 Bcf/day additional gas demand → feeds Permian gathering
-      → OKE volumes +15% → gathering/processing EBITDA +$600M.
-    Magellan crude: Permian crude production reaches 7.5 MMbpd (from 6.2M)
-      → Longline pipeline to capacity → tariff escalation + expansion fee.
-    NGL fractionation: ethane recovery rates increase as gas prices stable
-      → Mont Belvieu frac utilisation >90% → spread widens to $0.15/gal.
-    Total EBITDA 2027E: ~$10.5B. At 10x EV/EBITDA: equity ~$105/share.
-    The bull case requires only CONTINUATION of current Permian growth
-    + stable gas demand. No super-cycle required.""")
 print()
 print("═" * W)
