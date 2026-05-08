@@ -10,27 +10,27 @@ New format: signal dashboard → bear anatomy → updated EPP →
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 103.0     # USD (NASDAQ: MU, ~May 2026)
+CURRENT_PRICE   = 730.0     # USD (NASDAQ: MU, ~May 2026)
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 
 SCENARIOS = {
     #           EPS    mult  price   narrative
-    "BEAR":  (-2.0,    8,    60,  "DRAM downcycle; HBM ramp miss; oversupply"),
-    "BASE":  ( 9.0,   10,    90,  "DRAM recovery; HBM on track; EPS $8-10"),
-    "BULL":  (14.0,   10,   140,  "HBM share gains; DRAM pricing tight; EPS $14"),
-    "XBULL": (20.0,   10,   200,  "Memory super-cycle; HBM monopoly pricing"),
+    "BEAR":  (-5.0,    8,   250,  "DRAM crash; HBM ramp miss; Samsung floods market; FCF negative"),
+    "BASE":  (42.0,   15,   630,  "HBM scaling; DRAM mid-cycle; EPS $40-45"),
+    "BULL":  (58.0,   18,  1044,  "HBM dominant; DRAM tight; AI allocation sold out; EPS $55+"),
+    "XBULL": (80.0,   20,  1600,  "Memory super-cycle; HBM pricing power; AI compute unabated"),
 }
 
 # ── HBM ECONOMICS CALCULATOR (MU-specific structural feature) ─────────────────
-AI_GPU_SHIPMENTS_M     = 5.5
-HBM_GB_PER_GPU         = 120
-HBM_ASP_PER_GB         = 22.0
-MU_HBM_SHARE           = 0.25
-HBM_GROSS_MARGIN       = 0.52
-DDR5_ASP_PER_GB        = 6.0
-DDR5_GROSS_MARGIN      = 0.40
-MU_DILUTED_SHARES_B    = 1.10
+AI_GPU_SHIPMENTS_M     = 8.5    # B200/B300 ramp + MI350; strong 2026 datacenter build
+HBM_GB_PER_GPU         = 144    # B200=192GB dominant; blended higher than 2025
+HBM_ASP_PER_GB         = 25.0   # firmed up; allocated supply; MU guided $24-26
+MU_HBM_SHARE           = 0.28   # gaining share vs SK Hynix ~48%, Samsung ~24%
+HBM_GROSS_MARGIN       = 0.58   # scale benefits; well above DDR5
+DDR5_ASP_PER_GB        = 7.0    # firmed post-trough; mid-cycle recovery
+DDR5_GROSS_MARGIN      = 0.42   # mid-cycle
+MU_DILUTED_SHARES_B    = 1.11   # diluted shares
 
 def hbm_economics():
     total_hbm_gb_m        = AI_GPU_SHIPMENTS_M * HBM_GB_PER_GPU
@@ -43,8 +43,8 @@ def hbm_economics():
     rev_premium_b         = mu_hbm_rev_b - equiv_ddr5_rev_b
     gp_premium_b          = mu_hbm_gp_b  - equiv_ddr5_gp_b
     gp_premium_per_share  = gp_premium_b  / MU_DILUTED_SHARES_B
-    mu_guided_hbm_rev_b   = 4.5
-    mu_total_dram_rev_b   = 22.0
+    mu_guided_hbm_rev_b   = 8.0    # MU FY2026E HBM revenue guidance
+    mu_total_dram_rev_b   = 28.0   # MU DRAM segment FY2026E (recovery + HBM mix)
     hbm_mix_pct           = mu_guided_hbm_rev_b / mu_total_dram_rev_b * 100
     future_ai_gpu_m       = AI_GPU_SHIPMENTS_M * 1.35
     future_hbm_gb_gpu     = 150
@@ -61,27 +61,27 @@ def hbm_economics():
 #  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
     ("HBM revenue mix — % of DRAM revenue",    "%",
-      5.0,  12, 18, 32,   20.0, True,
+      5.0,  12, 18, 32,   38.0, True,
      "HBM ramp miss; GPU demand fails to materialize"),
 
     ("DRAM contract ASP — QoQ change",        "% QoQ",
-    -12.0,   0,  8, 18,  +10.0, True,
+    -12.0,   0,  8, 18,  +18.0, True,
      "Samsung capacity surge; DDR5 contract prices collapse"),
 
     ("Hyperscaler AI CapEx — YoY growth",     "% YoY",
-      0.0,  10, 25, 40,  +42.0, True,
+      0.0,  10, 25, 40,  +55.0, True,
      "AI capex pause; hyperscalers pull back spending"),
 
     ("MU gross margin — guidance",            "%",
-     15.0,  28, 35, 45,  +37.0, True,
+     15.0,  28, 35, 45,  +48.0, True,
      "Inventory glut; underutilisation charges hit GM"),
 
     ("NAND contract ASP — QoQ change",        "% QoQ",
-    -15.0,   0,  8, 18,   +4.0, True,
+    -15.0,   0,  8, 18,  +14.0, True,
      "YMTC/NAND oversupply; Chinese dumping"),
 
     ("CXMT commodity DRAM share — %",         "%",
-     30.0,  15,  8,  3,   10.0, False,
+     30.0,  15,  8,  3,    8.0, False,
      "CXMT qualifies DDR5; commodity ASP ceiling set"),
 ]
 WEIGHTS = [0.25, 0.25, 0.15, 0.15, 0.10, 0.10]
@@ -89,35 +89,35 @@ WEIGHTS = [0.25, 0.25, 0.15, 0.15, 0.10, 0.10]
 STRUCTURAL_FACTORS = [
     ("Global DRAM oligopoly (3 players); disciplined capex",      1.2, 0.25),
     ("HBM bandwidth monopoly: TSV stacking moat, 18-30mo qual",  1.0, 0.25),
-    ("Extreme cyclicality: EPS $8→-$6→$8 in 24 months",         -1.2, 0.25),
+    ("Extreme cyclicality: EPS $42→-$5→$42 possible in 24 months", -1.2, 0.25),
     ("CXMT commoditising DDR4/NAND; long-run ASP ceiling risk",  -0.5, 0.15),
     ("$45B+ capex cycle 2023-2026; balance sheet in downturn",   -0.3, 0.10),
 ]
 
 # ── UPDATED EPP ─────────────────────────────────────────────────────────────
-EPP_TODAY_EPS      = 9.00   # FY2026E non-GAAP EPS (mid-recovery)
-EPP_MIN_PE         = 8.0    # min viable P/E at panic (trough P/E for memory)
-EPP_HISTORICAL     = 57.0   # historical EPP v1 (from floor formula)
-EPP_REGIME_NOTE    = "(memory trough P/E; HBM oligopoly limits further compression vs 2022)"
+EPP_TODAY_EPS      = 42.0   # FY2026E non-GAAP EPS (HBM + DRAM recovery in full swing)
+EPP_MIN_PE         = 8.0    # min viable P/E at panic (memory trough multiple; unchanged)
+EPP_HISTORICAL     = 57.0   # historical EPP v1 (2022 floor formula)
+EPP_REGIME_NOTE    = "(memory panic P/E = 8x; HBM moat does NOT prevent multiple collapse in downcycle)"
 
 # ── CONSERVATIVE GROWTH (2-yr, base-minus assumptions) ───────────────────────
 CONS_SIGNALS = [
-    ("HBM revenue mix",    15.0,  "15% of DRAM rev (vs 20% actual; cautious ramp)"),
-    ("DRAM contract",       3.0,  "+3% QoQ (vs +10%; modest recovery only)"),
-    ("Hyperscaler AI",     20.0,  "+20%/yr (vs +42%; normalisation)"),
-    ("MU gross margin",    33.0,  "33% (vs 37%; conservative margin path)"),
-    ("NAND contract",       0.0,  "0% QoQ (vs +4%; NAND still soft)"),
-    ("CXMT commodity",     13.0,  "13% (vs 10%; modest share gain)"),
+    ("HBM revenue mix",    30.0,  "30% (vs 38%; AI capex normalises to 2025 pace)"),
+    ("DRAM contract",       5.0,  "+5% QoQ (vs +18%; cycle peaks; pricing cools)"),
+    ("Hyperscaler AI",     25.0,  "+25%/yr (vs +55%; capex growth decelerates)"),
+    ("MU gross margin",    42.0,  "42% (vs 48%; HBM mix growth slows)"),
+    ("NAND contract",       3.0,  "+3% QoQ (vs +14%; modest NAND drift)"),
+    ("CXMT commodity",     11.0,  "11% (vs 8%; modest CXMT creep into DDR5)"),
 ]
-CONS_EPS_CAGR    = 0.05    # 5%/yr (memory cycle + HBM ramp, conservative)
-CONS_EXIT_PE     = 9.0     # 9x on conservative EPS (mid-cycle multiple)
+CONS_EPS_CAGR    = 0.05    # 5%/yr (peak-cycle EPS; normalisation incoming)
+CONS_EXIT_PE     = 12.0    # 12x (mid-cycle de-rate; market prices next downcycle)
 CONS_DIVIDEND    = 0.0     # no meaningful dividend
 
 # ── VOLATILITY ───────────────────────────────────────────────────────────────
 VOL_ANNUAL_PCT   = 0.55    # very high vol; cyclical semiconductor
 VOL_BETA         = 1.80    # high beta
-VOL_52W_LOW      = 66.0    # approx
-VOL_52W_HIGH     = 128.0   # approx
+VOL_52W_LOW      = 350.0   # approx (dipped on DRAM oversupply fears mid-2025)
+VOL_52W_HIGH     = 790.0   # approx (recent AI-driven high)
 VOL_DIVIDEND     = 0.0
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
@@ -144,7 +144,7 @@ def softmax_probs(composite, T=0.60):
 def expected_price(probs):
     return sum(probs[k] * SCENARIOS[k][2] for k in probs)
 
-def market_implied_composite(target_ev, tolerance=3.0):
+def market_implied_composite(target_ev, tolerance=8.0):
     for c in [x / 100 for x in range(100, 401)]:
         if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
             return round(c, 2), softmax_probs(c)
@@ -216,13 +216,13 @@ print("═" * W)
 print(f"\n  HBM ECONOMICS  (the AI memory revenue engine)")
 print("  " + "─" * (W-2))
 print(f"  AI GPU shipments (calendar 2026E):      {AI_GPU_SHIPMENTS_M:.1f}M units")
-print(f"  HBM content per GPU (blended H200/B200):{HBM_GB_PER_GPU}GB  "
-      f"(H200=96GB, B200=192GB, ~50/50 mix)")
+print(f"  HBM content per GPU (blended B200/H200): {HBM_GB_PER_GPU}GB  "
+      f"(B200=192GB dominant; H100=80GB phasing out)")
 print(f"  HBM3E ASP:                              ${HBM_ASP_PER_GB:.0f}/GB  "
       f"(vs DDR5 ${DDR5_ASP_PER_GB:.0f}/GB = {asp_premium_x:.1f}x premium)")
 print(f"  Industry HBM market (AI GPU only):      ${total_hbm_mkt_b:.1f}B")
 print(f"  MU HBM market share:                    {MU_HBM_SHARE*100:.0f}%  "
-      f"(SK Hynix ~52%, Samsung ~23%, Micron ~25%)")
+      f"(SK Hynix ~48%, Samsung ~24%, Micron ~28%)")
 print(f"  ─────────────────────────────────────────────────────")
 print(f"  MU HBM revenue (calendar 2026E):        ${mu_hbm_rev_b:.1f}B")
 print(f"  MU HBM gross profit:                    ${mu_hbm_gp_b:.1f}B  ({HBM_GROSS_MARGIN*100:.0f}% GM)")
@@ -231,10 +231,10 @@ print(f"  Revenue premium from HBM vs DDR5:       +${rev_prem_b:.1f}B / yr")
 print(f"  GP premium from HBM vs DDR5:            +${gp_prem_b:.1f}B / yr  "
       f"→  +${gp_prem_per_share:.1f}/share  ← locked-in by qualification")
 print(f"  HBM as % of MU DRAM revenue:            {hbm_mix_pct:.0f}%  (proxy signal calibration)")
-print(f"\n  2027E forward (B200 ramp + MU share gains to 28%):")
+print(f"\n  2027E forward (B300 ramp + MU share stable at 28%):")
 print(f"  MU HBM revenue:                         ${fut_mu_hbm_rev_b:.1f}B")
 print(f"  MU HBM gross profit:                    ${fut_mu_hbm_gp_b:.1f}B")
-print(f"  → HBM alone could drive EPS of $8-10+ in a zero-NAND scenario.")
+print(f"  → HBM drives $35-40+ EPS at current pricing; DRAM/NAND is incremental.")
 
 # ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print(f"\n  ① SIGNAL DASHBOARD")
@@ -279,8 +279,9 @@ bear_model_price = expected_price(bear_probs)
 print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
       f"~${bear_model_price:.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: Samsung capacity add + AI capex pause simultaneously collapses HBM demand and DRAM ASPs.")
-print(f"  In this scenario MU burns cash — EPP math breaks down as FCF goes deeply negative.")
+print(f"\n  KEY TRIGGER: Samsung capacity surge ($20B+ DRAM capex) + AI capex deceleration <20% simultaneously.")
+print(f"  MU's HBM qualification does NOT prevent ASP collapse if SK Hynix/Samsung flood commodity DRAM.")
+print(f"  FCF goes deeply negative ($3-5B cash burn/yr) — the '$42 EPS floor' disappears fast.")
 
 # ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
@@ -313,8 +314,8 @@ print(f"  Conservative 2yr price:    ${cons_price_2yr:.0f}  "
       f"from ${CURRENT_PRICE:.0f})")
 print(f"  Conservative total return: {cons_total_ret:+.0f}% over 2yr  "
       f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
-print(f"\n  Bear scenario ($60) is only ~0.8σ from current price — memory is the most volatile stock in this framework.")
-print(f"  Conservative case offers limited upside; risk/reward skewed to BULL not BASE.")
+print(f"\n  ⚠  AT PEAK CYCLE: conservative 2yr = negative total return. Market prices in continued perfection.")
+print(f"  MU at $730 is a BULL/XBULL conviction bet — conservative case implies -20%+ from current.")
 
 # ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print(f"\n  ⑤ VOLATILITY CONTEXT")
@@ -335,8 +336,8 @@ print(f"  {'─'*60}")
 print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
       f"~{sigma_needed_bear:.1f}σ price move  "
       f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  High-beta semiconductor: {VOL_ANNUAL_PCT*100:.0f}% vol means normal swings already reach bear levels.")
-print(f"  No dividend buffer — total return is entirely price dependent.")
+print(f"  At 55% vol: bear ${SCENARIOS['BEAR'][2]} requires only ~{sigma_needed_bear:.1f}σ — easily reached in a normal correction.")
+print(f"  No dividend buffer — total return is entirely price-dependent. Size accordingly.")
 
 # ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
