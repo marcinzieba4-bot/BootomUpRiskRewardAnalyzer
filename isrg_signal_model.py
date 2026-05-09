@@ -22,7 +22,7 @@ import math
 # ══════════════════════════════════════════════════════════════════════════════
 # CONFIG
 # ══════════════════════════════════════════════════════════════════════════════
-CURRENT_PRICE   = 530.0    # ISRG May 2026  (est.; last firm data ~$490 Aug-2025)
+CURRENT_PRICE   = 480.0    # ISRG 2026-05-09 — intraday range $471–$483, open $480.75 (WebSearch / Yahoo Finance)
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 
