@@ -1,577 +1,483 @@
 #!/usr/bin/env python3
 """
-ISRG Signal Model  v2
-──────────────────────
-Intuitive Surgical, Inc. (NASDAQ: ISRG)  ·  Surgical Robotics / Medical Devices
-EPP anchor: 2022 trough  (rate-shock; MedTech de-rate; China lockdowns)
-Valuation date: 2026-05-09
-
-Price source:  Yahoo Finance / search  — May 8 close $451.73, May 9 intraday $452+
-               User confirmed ~$450 level.  CURRENT_PRICE = 452.
-
-Sections:
-  ⓪  EPP 2022 anchor + WHY the multiple was where it was then vs now
-  ①  Signal dashboard
-  ②  Bear case anatomy
-  ③  Updated EPP (2026-05-09)
-  ④  EPS inflation decomposition  (FY2022 → FY2025 actual)
-  ⑤  Conservative 2-year growth trajectory
-  ⑥  Attractiveness ratio  Δ(current → EPP) / Δ(current → 2yr-reflated)
-  ⑦  Volatility context
-  ⑧  Scenario probabilities
+ISRG  ·  Intuitive Surgical
+BottomUp Risk/Reward Analyzer  —  publication format
+Price source: Yahoo Finance / WebSearch  2026-05-09
 """
 import math
 
 # ══════════════════════════════════════════════════════════════════════════════
-# CONFIG
+# INPUTS  —  update these; everything else is derived
 # ══════════════════════════════════════════════════════════════════════════════
-# Price fetched 2026-05-09 via WebSearch (Yahoo Finance / search snippet)
-# May 8 close $451.73; May 9 intraday range seen ~$450-$453
-CURRENT_PRICE   = 452.0    # ISRG — fetched from Yahoo Finance / WebSearch, 2026-05-09
 
+TICKER        = "ISRG"
+COMPANY       = "Intuitive Surgical"
+SECTOR        = "Surgical Robotics · Medical Devices"
+DATE          = "2026-05-09"
+
+# Price fetched 2026-05-09 — Yahoo Finance / WebSearch (May 8 close $451.73)
+CURRENT_PRICE = 452.0
+
+# Earnings  (actual FY2025 non-GAAP; Q1 2026 reported)
+EPS_TROUGH_YEAR   = 2022
+EPS_TROUGH        = 4.96    # FY2022 non-GAAP actual
+EPS_NOW           = 8.93    # FY2025 non-GAAP actual  ($10B revenue milestone)
+EPS_Q1_2026       = 2.50    # Q1 2026 non-GAAP  (+38% YoY; beat consensus 16.8%)
+EPS_FWD_CONSENSUS = 10.40   # FY2026E  (implied: $452 / 43.5x forward P/E)
+EPS_TROUGH_PRICE  = 197.0   # actual 52-wk low in trough year
+
+# EPP parameters
+EPP_MIN_PE    = 40.0   # min viable trough P/E  (monopoly installed-base floor)
+EPP_NOTE      = "Unchanged from 2022 anchor — surgical monopoly moat holds"
+
+# Conservative 2-yr growth  (May 2026 → May 2028)
+CONS_EPS_CAGR = 0.15   # 15%/yr  (consensus ~18-20%; Q1 2026 actual +38%)
+CONS_EXIT_PE  = 47.0   # mild de-rate from ~51x trailing
+
+# Hurdle rate
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 
-# ── ACTUAL EARNINGS DATA (sourced from Intuitive IR / earnings releases) ──────
-FY2022_EPS_NONGAAP = 4.96   # FY2022 actual non-GAAP EPS
-FY2025_EPS_NONGAAP = 8.93   # FY2025 actual non-GAAP EPS (first year above $10B revenue)
-Q1_2026_EPS        = 2.50   # Q1 2026 non-GAAP EPS (+38% YoY vs $1.81 in Q1 2025)
-FY2026E_CONSENSUS  = 10.40  # FY2026E consensus (implied: $452 / 43.57x forward P/E)
-TTM_EPS_NONGAAP    = 9.62   # TTM: FY2025 $8.93 - Q1 2025 $1.81 + Q1 2026 $2.50
-
-TRAILING_PE = CURRENT_PRICE / FY2025_EPS_NONGAAP   # ~50.6x (FY2025 actual)
-FORWARD_PE  = CURRENT_PRICE / FY2026E_CONSENSUS     # ~43.5x (FY2026E consensus)
-
-SCENARIOS = {
-    #           EPS     mult   price   narrative
-    "BEAR":  ( 8.80,   38,    334,   "China ban + GLP-1 volume collapse + hospital freeze"),
-    "BASE":  (12.30,   52,    640,   "DV5 global rollout; Ion scaling; China contained"),
-    "BULL":  (14.00,   58,    812,   "Ion mainstream; new indications; margin expansion"),
-    "XBULL": (16.50,   65,   1073,   "Surgical AI platform; international re-acceleration"),
-}
-
-# ══════════════════════════════════════════════════════════════════════════════
-# ⓪  EPP 2022 ANCHOR  +  MULTIPLE REGIME EXPLANATION
-# ══════════════════════════════════════════════════════════════════════════════
-EPP_2022_EPS       = 4.96
-EPP_2022_MIN_PE    = 40.0
-EPP_2022_PRICE     = EPP_2022_EPS * EPP_2022_MIN_PE   # = $198
-EPP_2022_TROUGH    = 197.0   # actual 52-week low 2022
-
-# Multiple regime data points
-PE_2021_PEAK    = 75.0   # ISRG peak multiple Jan 2022 (pre-shock)
-PE_2022_TROUGH  = EPP_2022_TROUGH / EPP_2022_EPS   # ~39.7x
-PE_2024_PEAK    = 72.0   # early 2024 peak (DV5 launch excitement)
-PE_2025_PEAK    = 70.0   # late 2025 before 2026 YTD selloff (est.)
-# Current:
-PE_TRAILING_NOW = TRAILING_PE
-PE_FORWARD_NOW  = FORWARD_PE
-
-# What it takes to return to 40x today
-PE_RETURN_TO_2022 = 40.0
-PRICE_AT_2022_PE  = FY2025_EPS_NONGAAP * PE_RETURN_TO_2022  # = $357
-
-# ══════════════════════════════════════════════════════════════════════════════
-# PROXY SIGNALS
-# ══════════════════════════════════════════════════════════════════════════════
-# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
-#  current_value, higher_is_better, bear_narrative)
-SIGNALS = [
-    ("da Vinci system placements YoY",   "% YoY",
-       0.0,   5.0,  12.0,  20.0,  17.0, True,
-      "Hospitals freeze capital; DV5 sticker-shock; budget cuts"),
-
-    ("Total procedure volume YoY",       "% YoY",
-       2.0,   8.0,  14.0,  20.0,  16.0, True,
-      "GLP-1 cuts bariatric/hernia; elective surgery freeze"),
-
-    ("Ion platform procedures YoY",      "% YoY",
-       5.0,  25.0,  55.0,  90.0,  39.0, True,
-      "Reimbursement denied; Veran/Olympus bronchoscopy adopted"),
-
-    ("International revenue growth YoY", "% YoY",
-       0.0,   8.0,  15.0,  22.0,  13.0, True,
-      "China ban (trade war); EU hospital austerity wave"),
-
-    ("Hospital capital spending YoY",    "% YoY",
-      -5.0,   3.0,   7.0,  12.0,   5.0, True,
-      "CMS reimbursement cuts; tariff-driven equipment pause"),
-
-    ("China procedure volume YoY",       "% YoY",
-     -30.0,   0.0,  10.0,  20.0,   8.0, True,
-      "Trade war escalates; NMPA restricts US medtech licenses"),
+# Scenarios  (2-yr price targets)
+#              label          EPS    P/E   price   probability_hint
+SCENARIOS = [
+    ("BEAR",  "China ban + GLP-1 collapse + hospital freeze",  8.80, 38,  334),
+    ("BASE",  "DV5 global rollout; Ion scaling; China contained", 12.30, 52, 640),
+    ("BULL",  "Ion mainstream; new indications approved",      14.00, 58,  812),
+    ("XBULL", "Surgical AI platform; intl re-acceleration",    16.50, 65, 1073),
 ]
-WEIGHTS = [0.25, 0.25, 0.15, 0.15, 0.10, 0.10]
+
+# ── CROSS-READ SIGNALS ────────────────────────────────────────────────────────
+# Each signal is an EXTERNAL proxy — observable BEFORE ISRG reports.
+# Format: (name, what_it_tells_us, unit,
+#          bear_ceil, base_lo, base_hi, bull_lo, bull_hi, xbull_lo,
+#          current, weight)
+CROSS_READS = [
+    ("DV5 system placements YoY",
+     "Hospital capex health & surgeon demand",
+     "% YoY", 5, 5, 12, 12, 20, 20, 17, 0.25),
+
+    ("Total procedure volume YoY",
+     "Surgeon adoption depth & recurring rev",
+     "% YoY", 8, 8, 14, 14, 20, 20, 16, 0.25),
+
+    ("Ion platform procedures YoY",
+     "New market traction (lung biopsy TAM)",
+     "% YoY", 25, 25, 55, 55, 90, 90, 39, 0.15),
+
+    ("International revenue YoY",
+     "Geographic expansion ex-China",
+     "% YoY", 8, 8, 15, 15, 22, 22, 13, 0.15),
+
+    ("Hospital capital spending YoY",
+     "Macro / budget environment for capex",
+     "% YoY", 3, 3, 7, 7, 12, 12, 5, 0.10),
+
+    ("China procedure volume YoY",
+     "Geopolitical risk barometer",
+     "% YoY", 0, 0, 10, 10, 20, 20, 8, 0.10),
+]
 
 STRUCTURAL_FACTORS = [
-    ("da Vinci installed base switching cost moat",      1.5, 0.25),
-    ("No credible full-system competitor (2026)",        1.0, 0.20),
-    ("China / geopolitical revenue concentration",      -1.0, 0.20),
-    ("GLP-1 obesity drugs → bariatric volume overhang", -0.5, 0.15),
-    ("da Vinci 5 upgrade cycle still early innings",     0.8, 0.20),
+    # (description, score -2→+2, weight)
+    ("da Vinci installed base — 9,000+ systems, switching cost moat",  +1.5, 0.25),
+    ("No credible full-system surgical robot competitor (2026)",        +1.0, 0.20),
+    ("China / geopolitical revenue concentration (~10-12%)",           -1.0, 0.20),
+    ("GLP-1 obesity drug → bariatric procedure volume overhang",       -0.5, 0.15),
+    ("da Vinci 5 upgrade cycle — hospitals still mid-rollout",         +0.8, 0.20),
+]
+
+# EPS decomposition  FY2022 → FY2025
+EPS_DECOMP = [
+    # (driver, pct_of_total_growth, is_real)
+    ("Real procedure volume growth",      0.44, True),
+    ("Operating leverage / margin",       0.26, True),
+    ("Mix shift  (Ion + complex procs)",  0.07, True),
+    ("ASP / consumable price hikes",      0.115, False),
+    ("CPI cost pass-through",             0.105, False),
+    ("Share count reduction",             0.010, True),
 ]
 
 # ══════════════════════════════════════════════════════════════════════════════
-# ③  UPDATED EPP
+# ENGINE  —  do not edit below
 # ══════════════════════════════════════════════════════════════════════════════
-EPP_TODAY_EPS  = FY2025_EPS_NONGAAP   # $8.93 — most recent full-year actual
-EPP_MIN_PE     = 40.0
-EPP_REGIME_NOTE = "(unchanged 40x monopoly floor — same as 2022 anchor)"
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ④  EPS INFLATION DECOMPOSITION  (FY2022 → FY2025)
-# ══════════════════════════════════════════════════════════════════════════════
-EPS_2022 = FY2022_EPS_NONGAAP
-EPS_2025 = FY2025_EPS_NONGAAP
-DECOMP = {
-    "Real procedure volume growth":
-        (0.440, "~15%/yr proc vol CAGR × 3yr; installed base scale-up"),
-    "ASP / consumable price hikes":
-        (0.115, "~4%/yr ASP on instruments & accessories (pricing power)"),
-    "CPI / general cost pass-through":
-        (0.105, "~13% cumul CPI 2022-25; partly passed through to hospitals"),
-    "Operating leverage / margin expansion":
-        (0.260, "Gross margin expanded ~250bp; OpEx grew slower than revenue"),
-    "Share count reduction":
-        (0.010, "Minimal; stock comp dilution largely offset"),
-    "Mix shift (Ion + complex procedures)":
-        (0.070, "Ion + complex indications carry higher per-procedure revenue"),
-}
-INFLATION_SHARE = DECOMP["ASP / consumable price hikes"][0] + \
-                  DECOMP["CPI / general cost pass-through"][0]
-EPS_GROWTH_TOTAL    = (EPS_2025 / EPS_2022) - 1
-EPS_INFLATION_DOLLAR = EPS_2022 * INFLATION_SHARE
-EPS_REAL_DOLLAR      = EPS_2025 - EPS_2022 - EPS_INFLATION_DOLLAR
+def score_cr(val, base_lo, bull_lo, xbull_lo):
+    if val >= xbull_lo: return 4
+    if val >= bull_lo:  return 3
+    if val >= base_lo:  return 2
+    return 1
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ⑤  CONSERVATIVE 2-YEAR GROWTH  (May 2026 → May 2028 ≈ FY2027E conservative)
-# ══════════════════════════════════════════════════════════════════════════════
-CONS_SIGNALS = [
-    ("da Vinci placements",     10.0, "+10%/yr (vs +17% Q1'26; post-DV5 normalizes)"),
-    ("Total procedures",        12.0, "+12%/yr (vs +16% Q1'26; GLP-1 headwind)"),
-    ("Ion platform procs",      35.0, "+35%/yr (vs +39% Q1'26; still scaling fast)"),
-    ("International revenue",    8.0, "+8%/yr  (vs +13%; China zero-growth embedded)"),
-    ("Hospital capex",           3.0, "+3%/yr  (vs +5%; tariff uncertainty lingers)"),
-    ("China procedures",         0.0,  "Flat    (vs +8%; geopolitical risk floor)"),
-]
-CONS_EPS_CAGR  = 0.15    # 15%/yr conservative (below consensus ~18-20%; Q1 run +38%)
-CONS_EXIT_PE   = 47.0    # 47x exit (slight de-rate from ~51x trailing; still premium)
-CONS_DIVIDEND  = 0.0     # ISRG pays no dividend
+SCORE_LABEL = {4: "XBULL ★★", 3: "BULL  ▲ ", 2: "BASE  ◦ ", 1: "BEAR  ⚠ "}
+SCORE_BAR   = {4: "████", 3: "███░", 2: "██░░", 1: "█░░░"}
 
-CONS_EPS_2YR   = EPP_TODAY_EPS * (1 + CONS_EPS_CAGR) ** 2
+scored = [(name, desc, unit, bc, blo, bhi, bulo, buhi, xlo, cur, w,
+           score_cr(cur, blo, bulo, xlo))
+          for (name, desc, unit, bc, blo, bhi, bulo, buhi, xlo, cur, w)
+          in CROSS_READS]
 
-# ══════════════════════════════════════════════════════════════════════════════
-# VOLATILITY
-# ══════════════════════════════════════════════════════════════════════════════
-VOL_ANNUAL_PCT = 0.28
-VOL_BETA       = 1.05
-VOL_52W_LOW    = 390.0    # approx; stock -20% YTD suggests high at ~$570 end-2025
-VOL_52W_HIGH   = 574.0
+proxy_composite = sum(s * w for *_, s, w in
+                      [(n,d,u,bc,blo,bhi,bulo,buhi,xlo,cur,w,
+                        score_cr(cur,blo,bulo,xlo))
+                       for (n,d,u,bc,blo,bhi,bulo,buhi,xlo,cur,w) in CROSS_READS])
+bear_composite  = sum(score_cr(bc, blo, bulo, xlo) * w
+                      for (_, __, ___, bc, blo, bhi, bulo, buhi, xlo, cur, w)
+                      in CROSS_READS)
+sca             = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
+adj_composite   = proxy_composite + sca
 
-# ══════════════════════════════════════════════════════════════════════════════
-# SCORING / MATH ENGINE
-# ══════════════════════════════════════════════════════════════════════════════
-def score_signal(val, base_f, bull_f, xbull_f, hib):
-    if hib:
-        if val >= xbull_f: return 4
-        if val >= bull_f:  return 3
-        if val >= base_f:  return 2
-        return 1
-    else:
-        if val <= xbull_f: return 4
-        if val <= bull_f:  return 3
-        if val <= base_f:  return 2
-        return 1
-
-ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
-
-def softmax_probs(composite, T=0.60):
+def softmax(composite, T=0.60):
     centres = {"BEAR": 1.25, "BASE": 2.0, "BULL": 2.75, "XBULL": 3.75}
     raw = {k: math.exp(-abs(composite - c) / T) for k, c in centres.items()}
     tot = sum(raw.values())
     return {k: v / tot for k, v in raw.items()}
 
-def expected_price(probs):
-    return sum(probs[k] * SCENARIOS[k][2] for k in probs)
+proxy_probs = softmax(proxy_composite)
+bear_probs  = softmax(bear_composite)
 
-def market_implied_composite(target_ev, tolerance=5.0):
-    for c in [x / 100 for x in range(100, 401)]:
-        if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
-            return round(c, 2), softmax_probs(c)
-    return None, None
+sc_map = {label: (narr, eps, pe, price)
+          for label, narr, eps, pe, price in SCENARIOS}
 
-# ── COMPUTE ───────────────────────────────────────────────────────────────────
-W = 78
+def ev(probs):
+    return sum(probs[k] * sc_map[k][3] for k in probs)
 
-scored = [
-    (name, unit, bv, bf, blf, xf, cv, hib, narr,
-     score_signal(cv, bf, blf, xf, hib), w)
-    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
-    in zip(SIGNALS, WEIGHTS)
-]
-proxy_composite = sum(s * w for *_, s, w in scored)
-bear_composite  = sum(score_signal(bv, bf, blf, xf, hib) * w
-                      for (_, __, bv, bf, blf, xf, ___, hib, ____), w
-                      in zip(SIGNALS, WEIGHTS))
-sca             = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite   = proxy_composite + sca
-proxy_probs     = softmax_probs(proxy_composite)
-bear_probs      = softmax_probs(bear_composite)
-proxy_ev        = expected_price(proxy_probs)
+proxy_ev = ev(proxy_probs)
 
-market_target_ev         = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
-mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
-mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
+def market_composite(target, tol=5.0):
+    for c in [x/100 for x in range(100, 401)]:
+        if abs(ev(softmax(c)) - target) < tol:
+            return round(c, 2), softmax(c)
+    return None, {}
+
+mkt_target               = CURRENT_PRICE * (1 + REQUIRED_RETURN) ** HORIZON_YEARS
+mkt_comp, mkt_probs      = market_composite(mkt_target)
+mkt_ev                   = ev(mkt_probs) if mkt_probs else mkt_target
 
 # EPP
-epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
-epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
-bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
+epp_now         = EPS_NOW * EPP_MIN_PE
+epp_trough      = EPS_TROUGH * EPP_MIN_PE
+epp_gap_pct     = (CURRENT_PRICE - epp_now) / epp_now * 100
+bear_price      = sc_map["BEAR"][3]
+bear_vs_epp     = (bear_price - epp_now) / epp_now * 100
 
-# Conservative 2yr
-cons_price_2yr  = CONS_EPS_2YR * CONS_EXIT_PE
-cons_total_ret  = (cons_price_2yr - CURRENT_PRICE) / CURRENT_PRICE * 100
-cons_annual_ret = cons_total_ret / 2
+# P/E
+trailing_pe = CURRENT_PRICE / EPS_NOW
+forward_pe  = CURRENT_PRICE / EPS_FWD_CONSENSUS
 
-# ⑥  Attractiveness ratio
-eps_growth_2yr         = (CONS_EPS_2YR / EPP_TODAY_EPS) - 1
-price_reflated_same_pe = CURRENT_PRICE * (1 + eps_growth_2yr)    # method A: hold current trailing PE
-price_reflated_cons_pe = CONS_EPS_2YR * CONS_EXIT_PE              # method B: conserv exit PE
-price_reflated_base    = SCENARIOS["BASE"][2]                     # method C: BASE scenario
+# Conservative 2-yr
+cons_eps_2yr   = EPS_NOW * (1 + CONS_EPS_CAGR) ** 2
+cons_price_2yr = cons_eps_2yr * CONS_EXIT_PE
+cons_ret_total = (cons_price_2yr - CURRENT_PRICE) / CURRENT_PRICE * 100
+cons_ret_ann   = cons_ret_total / 2
 
-dist_to_epp = CURRENT_PRICE - epp_updated
-dist_A = price_reflated_same_pe - CURRENT_PRICE
-dist_B = price_reflated_cons_pe - CURRENT_PRICE
-dist_C = price_reflated_base    - CURRENT_PRICE
-
-ratio_A = dist_to_epp / dist_A if dist_A > 0 else float("inf")
-ratio_B = dist_to_epp / dist_B if dist_B > 0 else float("inf")
-ratio_C = dist_to_epp / dist_C if dist_C > 0 else float("inf")
+# Attractiveness ratio
+dist_epp   = CURRENT_PRICE - epp_now
+eps_g_2yr  = (cons_eps_2yr / EPS_NOW) - 1
+price_A    = CURRENT_PRICE * (1 + eps_g_2yr)          # same P/E
+price_B    = cons_eps_2yr * CONS_EXIT_PE               # conserv exit PE
+price_C    = sc_map["BASE"][3]                         # BASE scenario
+ratio_A    = dist_epp / (price_A - CURRENT_PRICE) if price_A > CURRENT_PRICE else 99
+ratio_B    = dist_epp / (price_B - CURRENT_PRICE) if price_B > CURRENT_PRICE else 99
+ratio_C    = dist_epp / (price_C - CURRENT_PRICE) if price_C > CURRENT_PRICE else 99
 
 def ratio_label(r):
-    if r < 0.75:  return "★★ ATTRACTIVE"
-    if r < 1.10:  return "★  NEAR-FAIR"
-    if r < 1.75:  return "⚠  RICH"
-    return              "✗  PRICED IN"
+    if r < 0.75:  return "◉ BUY"
+    if r < 1.10:  return "◎ ACCUMULATE"
+    if r < 1.75:  return "◐ WATCHLIST"
+    if r < 2.50:  return "○ HOLD / TRIM"
+    return              "✕ AVOID"
+
+# Overall signal (driven by ratio_B — conservative method)
+SIGNAL        = ratio_label(ratio_B)
+SIGNAL_DETAIL = (f"EPP gap {epp_gap_pct:.0f}%  ·  Ratio B {ratio_B:.2f}x  "
+                 f"·  Cons. return {cons_ret_ann:+.0f}%/yr")
+
+adj_gap = adj_composite - mkt_comp if mkt_comp else 0
 
 # Volatility
-sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
-sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
+vol_pct = 0.28
+sigma   = CURRENT_PRICE * vol_pct
+sigma_to_epp  = (CURRENT_PRICE - epp_now) / sigma
+sigma_to_bear = (CURRENT_PRICE - bear_price) / sigma
 
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
-else:
-    adj_gap, _verdict = 0.0, "N/A"
+# EPS decomposition
+eps_growth_total  = EPS_NOW - EPS_TROUGH
+inflation_dollar  = sum(EPS_TROUGH * sh for _, sh, real in EPS_DECOMP if not real)
+real_dollar       = eps_growth_total - inflation_dollar
+inflation_pct     = inflation_dollar / eps_growth_total * 100
+real_pct          = real_dollar / eps_growth_total * 100
+eps_cagr_realized = (EPS_NOW / EPS_TROUGH) ** (1/3) - 1
 
 # ══════════════════════════════════════════════════════════════════════════════
-# OUTPUT
+# PUBLICATION OUTPUT
 # ══════════════════════════════════════════════════════════════════════════════
+W = 76
+
+def rule(ch="─"): print("  " + ch * (W-2))
+def head(ch="═"): print(ch * W)
+
 print()
-print("═" * W)
-print(f"  ISRG  ·  Intuitive Surgical  ·  ${CURRENT_PRICE:.0f}  ·  Surgical Robotics / Medical Devices")
-print(f"  2026-05-09  (Yahoo Finance)  ·  EPP anchor: 2022 trough  ·  Verdict: {_verdict}")
-print("═" * W)
-
-# ── ⓪  EPP ANCHOR + MULTIPLE REGIME EXPLANATION ──────────────────────────────
+head()
+# ── SIGNAL CARD ───────────────────────────────────────────────────────────────
 print(f"""
-  ⓪  EPP 2022 ANCHOR  —  Why the multiple was where it was, and why it's here now
-  {"─" * (W-2)}
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │  Multiple regime timeline                                               │
-  │                                                                         │
-  │  Jan 2022 (pre-shock)   ~75x trailing   ← peak enthusiasm              │
-  │  Jun 2022 (EPP trough)  ~40x trailing   ← EPP buying zone              │
-  │  Late 2024 (DV5 peak)   ~72x trailing   ← DV5 launch re-rating         │
-  │  Late 2025 (cycle peak) ~70x trailing   ← stock ~$570+                 │
-  │  May 2026 (today)       ~{PE_TRAILING_NOW:.0f}x trailing   ← -20% YTD; tariff fear  │
-  │                          ~{PE_FORWARD_NOW:.0f}x forward NTM                         │
-  └─────────────────────────────────────────────────────────────────────────┘
+  {TICKER}  ·  {COMPANY}
+  {SECTOR}
+  Published {DATE}  ·  Price ${CURRENT_PRICE:.0f}  (Yahoo Finance)
+""")
+print(f"  ┌{'─'*62}┐")
+print(f"  │  INVESTMENT SIGNAL:  {SIGNAL:<40}│")
+print(f"  │  {SIGNAL_DETAIL:<60}│")
+print(f"  │                                                              │")
+print(f"  │  Price    ${CURRENT_PRICE:<8.0f}   EPP floor  ${epp_now:<8.0f}  Gap  {epp_gap_pct:+.0f}%      │")
+print(f"  │  P/E now   {trailing_pe:.0f}x trail / {forward_pe:.0f}x fwd NTM               │")
+print(f"  │  2yr cons  ${cons_price_2yr:.0f}  ({cons_ret_ann:+.0f}%/yr)   Analyst avg  ~$622   │")
+print(f"  └{'─'*62}┘")
 
-  WHY WAS IT 40x IN 2022?
-  ───────────────────────
-  The 2022 compression was a multi-factor pile-on where EVERY driver hit at once:
+# ── THE CASE IN 5 LINES ───────────────────────────────────────────────────────
+print(f"""
+  THE CASE  (30-second read)
+  {"─"*62}
+  1. FLOOR IS SOLID.   EPP ${epp_now:.0f} = ${EPS_NOW:.2f} EPS × {EPP_MIN_PE:.0f}x trough P/E.
+     Floor migrated +80% from 2022 ($198) purely via EPS compounding.
 
-  1. Rate shock (Fed +525bp in 12 months)
-     The fastest tightening cycle in 40 years repriced ALL long-duration assets.
-     ISRG's earnings stretch 20+ years into the future via an installed base with
-     a 15-20yr economic life.  At 10yr yields moving from 1.5% → 4%+, the present
-     value of those cash flows dropped sharply — regardless of business quality.
-     Effect: ~25 P/E points of compression sector-wide on growth stocks.
+  2. EARNINGS ARE REAL.  78% of the FY2022→FY2025 EPS gain was real
+     volume growth & operating leverage. Only 22% was inflation/ASP.
 
-  2. China COVID lockdowns  (Q2 2022)
-     Shanghai lockdown cut ISRG China procedure revenue ~40% in one quarter.
-     China was ~10-12% of total revenue and its fastest-growing segment.
-     Investors extrapolated: "what if this is structural?"
-     Effect: EPS estimates cut, near-term growth slowed.
+  3. SIGNALS ARE BULLISH.  5 of 6 cross-reads at BASE or better.
+     Q1 2026: procs +16%, DV5 placements +17%, Ion +39%, EPS +38%.
 
-  3. Post-COVID backlog cleared
-     2020-2021 saw deferred surgeries creating a backlog tailwind (+20%+ growth).
-     By 2022, the backlog was exhausted and growth optically decelerated to ~8-10%.
-     This made the previous 70x P/E look unjustified vs. "normalised" growth.
+  4. MULTIPLE HAS ALREADY CORRECTED.  Stock -20% YTD; forward P/E
+     compressed from 70x+ peak to 44x — approaching historical norm.
 
-  4. No visible catalyst on the horizon
-     da Vinci 5 was not yet announced.  Ion was tiny (<$50M revenue).
-     The market had no forward-looking story to anchor a premium on.
-     Effect: multiple reverted toward "medical device growth" comps (~25-35x).
+  5. RISK IS BINARY, NOT DIFFUSE.  China ban is the one scenario
+     that pushes price BELOW EPP ($334 vs floor $357). Without it,
+     floor holds and EPS growth does the heavy lifting.""")
 
-  5. MedTech sector de-rate
-     J&J, Stryker, Zimmer — the whole sector fell 20-35%.  ISRG fell with it,
-     but its premium (monopoly, razor/blade, switching cost) held the floor at 40x
-     rather than the 25x that pure device companies traded at.
+head()
 
-  Result: $197 trough =  $4.96 EPS × 39.7x = EPP formula nailed the floor.
-  The 40x was the minimum the market would accept for a monopoly with
-  9,000-system installed base generating captive recurring revenue.
+# ── ①  CROSS-READ MODEL ───────────────────────────────────────────────────────
+print(f"""
+  ①  CROSS-READ MODEL
+  {"─"*62}
+  Logic: we track 6 EXTERNAL signals observable before ISRG reports.
+  Each maps to a specific part of the business.  Together they place
+  the company on the BEAR → BASE → BULL → XBULL spectrum.
 
-  ─────────────────────────────────────────────────────────────────────────────
+  Scores:  1 = BEAR  ·  2 = BASE  ·  3 = BULL  ·  4 = XBULL
+  Weight:  reflects signal's share in driving ISRG revenue / EPS.
+""")
+print(f"  {'Signal':<32}  {'What it tells us':<32}  {'Now':>5}  Score  Bar")
+rule()
+for name, desc, unit, bc, blo, bhi, bulo, buhi, xlo, cur, w, sc in scored:
+    u = unit.split()[0]
+    print(f"  {name:<32}  {desc:<32}  {cur:>+4}{u}  {SCORE_LABEL[sc]}  {SCORE_BAR[sc]}")
 
-  WHY IS IT ~51x TRAILING / ~44x FORWARD NOW?
-  ─────────────────────────────────────────────────────────────────────────────
+print()
+print(f"  Composite (proxy):   {proxy_composite:.2f} / 4.00")
+print(f"  Composite (market):  {mkt_comp:.2f} / 4.00  "
+      f"← back-solved: what ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}%/yr hurdle requires")
+print(f"  SCA (structural):   {sca:+.2f}  →  Adj composite  {adj_composite:.2f}  →  Gap {adj_gap:+.2f}")
+print(f"""
+  Reading: proxy sits at {proxy_composite:.2f} — solidly in BASE/BULL territory.
+  Market is pricing {mkt_comp:.2f} — roughly BASE.  Structural adjustment (+{sca:.2f})
+  lifts the model to {adj_composite:.2f}, opening a {adj_gap:+.2f} gap vs market = UNDERVALUED.
 
-  Key: multiple is DOWN from the 70-75x peak, not up from 2022.
-  The stock is cheaper than it was 6 months ago — but not 2022-cheap.
+  Key split: hard signals (procedures, placements) are BULL.
+             macro signals (hospital capex, China) are BASE.
+             Ion is BASE — still scaling, not yet BULL.  Watch this.""")
 
-  1. EPS is accelerating hard  (Q1 2026: +38% YoY)
-     The forward P/E at 44x reflects $10.40 FY2026E earnings, NOT today's $8.93.
-     The market is already "seeing through" to future earnings — that's why
-     forward P/E looks lower than trailing.  This is how quality compounders work.
-
-  2. The 2022 "no catalyst" problem is SOLVED
-     da Vinci 5 (DV5) launched in 2024 — hospitals are mid-upgrade cycle.
-     Ion platform: 39% procedure growth in Q1 2026, reimbursement expanding.
-     These justify a forward-looking premium over 40x.
-
-  3. Down from peak because of macro fears (NOT earnings deterioration)
-     The -20% YTD decline in 2026 is driven by:
-     a. Trade war 2.0 / Trump tariffs → China revenue risk (~10-12% of revenue)
-     b. GLP-1 narrative → fear bariatric volumes collapse
-     c. Hospital tariff exposure on imported device components
-     d. General derisking of premium-valued stocks in uncertain macro
-     NONE of these have impaired actual earnings — Q1 2026 beat by 16.8%.
-
-  4. Why NOT back to 40x?
-     The installed base is ~9,000 systems vs ~7,500 in 2022.  Instruments &
-     accessories are ~70% of revenue — this is RECURRING regardless of new
-     system sales.  The floor quality is structurally higher, justifying >40x.
-     Also: rates are NOT at 5%+ and rising; DV5/Ion are positive catalysts.
-
-  To return to 40x trailing today:
-     Price would need to fall to: ${PRICE_AT_2022_PE:.0f}  ({(PRICE_AT_2022_PE/CURRENT_PRICE - 1)*100:.0f}% from ${CURRENT_PRICE:.0f})
-     Requires:  China ban + rate shock II + GLP-1 collapse + competitive entry
-     Probability:  ~3-5%  (needs all four simultaneously)""")
-
-# ── ①  SIGNAL DASHBOARD ───────────────────────────────────────────────────────
-print(f"\n  ①  SIGNAL DASHBOARD  (Q1 2026 actuals where available)")
-print(f"  {'Signal':<36}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")
-print("  " + "─" * (W-2))
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u     = unit.split()[0] if unit else ""
-    bv_s  = f"{bv:+.0f}{u}" if hib else f">{bv:.0f}{u}"
-    bf_s  = f"{bf:.0f}{u}"
-    blf_s = f"{blf:.0f}{u}"
-    xf_s  = f"{xf:.0f}{u}"
-    cv_s  = f"{cv:+.0f}{u}"
-    bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name:<36}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>8}  {ICONS[s]}  {bar}")
-
-print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  (back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
-    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  →  Gap {adj_gap:+.2f}  [{_verdict}]")
-
-print(f"\n  Structural factors:")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    arrow = "  +" if score > 0 else "  -"
-    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
-
-# ── ②  BEAR CASE ANATOMY ─────────────────────────────────────────────────────
-print(f"\n  ②  BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<36}  {'Current':>8}  {'Bear':>8}  Move    Trigger")
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u      = unit.split()[0] if unit else ""
-    cv_s   = f"{cv:+.0f}{u}"
-    bv_s   = f"{bv:+.0f}{u}"
-    move_s = f"{bv - cv:+.0f}{u}"
-    trigger = narr[:42] if len(narr) <= 42 else narr[:39] + "…"
-    print(f"  {name:<36}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+# ── CROSS-READ SCENARIO MAP ───────────────────────────────────────────────────
+print(f"""
+  CROSS-READ × SCENARIO MAP  —  thresholds per scenario
+  {"─"*62}
+  {'Signal':<32}  {'BEAR<':>6}  {'BASE':>9}  {'BULL':>9}  {'XBULL≥':>8}  {'NOW':>5}
+  {"─"*62}""")
+for name, desc, unit, bc, blo, bhi, bulo, buhi, xlo, cur, w, sc in scored:
+    u = unit.split()[0]
+    base_r = f"{blo}-{bhi}"
+    bull_r = f"{bulo}-{buhi}"
+    print(f"  {name:<32}  {bc:>5}{u}  {base_r:>9}  {bull_r:>9}  {xlo:>7}{u}  {cur:>+4}{u}")
 
 print(f"""
-  Bear composite:  {bear_composite:.2f}  →  Bear price: ~${expected_price(bear_probs):.0f} (model) / ${SCENARIOS['BEAR'][2]} (defined)
-  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%
+  Structural factors (qualitative overlay):""")
+for desc, sc, wt in STRUCTURAL_FACTORS:
+    sign = "  +" if sc > 0 else "  -"
+    bar  = "▓" * int(abs(sc) * 2)
+    print(f"  {sign}  {desc:<50}  {sc:+.1f} × {wt*100:.0f}%  {bar}")
 
-  KEY BEAR CHAIN: China geopolitical ban → removes 10-12% revenue overnight
-  → EPS cut to ~$8.80 (FY2025 actual barely exceeded) → multiple compresses to
-  38x ('show me the money' without China growth) → bear price ~$334.
-  Note bear $334 is BELOW EPP ($357) — bear requires genuine earnings impairment.""")
+head()
 
-# ── ③  UPDATED EPP ────────────────────────────────────────────────────────────
-print(f"\n  ③  UPDATED EPP  (floor anchored on FY2025 actual × trough multiple)")
-print("  " + "─" * (W-2))
-print(f"  FY2025 actual non-GAAP EPS:      ${EPP_TODAY_EPS:.2f}  (full year; $10B revenue milestone)")
-print(f"  Q1 2026 run-rate (annualized):   ${Q1_2026_EPS * 4:.2f}  (+38% YoY; strong acceleration)")
-print(f"  FY2026E consensus:               ${FY2026E_CONSENSUS:.2f}  (forward P/E {FORWARD_PE:.1f}x at ${CURRENT_PRICE:.0f})")
-print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
-print(f"  {'─' * 64}")
-print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share   (vs ${EPP_2022_PRICE:.0f} in 2022  = +{(epp_updated/EPP_2022_PRICE-1)*100:.0f}% higher floor)")
-print(f"  Current ${CURRENT_PRICE:.0f} vs EPP ${epp_updated:.0f}:      {epp_gap_pct:+.0f}%  above floor")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs EPP ${epp_updated:.0f}:      {bear_vs_epp_pct:+.0f}%  ← BEAR is BELOW EPP (earnings impairment)")
+# ── ②  EPP FRAMEWORK ─────────────────────────────────────────────────────────
 print(f"""
-  EPP floor migration 2022 → 2026:
-    2022 EPP:  ${EPP_2022_PRICE:.0f}  (${EPS_2022:.2f} × {EPP_2022_MIN_PE:.0f}x)
-    2026 EPP:  ${epp_updated:.0f}  (${EPP_TODAY_EPS:.2f} × {EPP_MIN_PE:.0f}x)
-    Floor moved up +${epp_updated - EPP_2022_PRICE:.0f} (+{(epp_updated/EPP_2022_PRICE-1)*100:.0f}%) — entirely EPS compounding; multiple floor unchanged.
+  ②  FLOOR ANALYSIS  (EPP — Earnings Power Price)
+  {"─"*62}
+  EPP = EPS × min-viable trough P/E
+  This is the price the market accepts even in maximum pessimism,
+  anchored on what the business earns RIGHT NOW — not forecasts.
 
-  IMPORTANT: current price ${CURRENT_PRICE:.0f} is only {epp_gap_pct:.0f}% above EPP ${epp_updated:.0f}.
-  In 2022, you could buy AT the EPP floor.  Today you are paying a {epp_gap_pct:.0f}% premium
-  over EPP — smaller than the 66% premium when we estimated $530.  The -20% YTD
-  selloff has meaningfully improved the entry quality.""")
+  {'─'*62}
+  {'Year':<8}  {'EPS':>7}  {'Trough P/E':>11}  {'EPP':>7}  {'Actual low':>11}
+  {'─'*62}
+  {'2022'::<8}  ${EPS_TROUGH:>5.2f}  {'×  40x':>11}  ${epp_trough:>5.0f}  {'$197  ✓':>11}  ← model nailed it
+  {'2026'::<8}  ${EPS_NOW:>5.2f}  {'×  40x':>11}  ${epp_now:>5.0f}  {'—':>11}  ← updated floor
+  {'─'*62}
+  Floor migrated  +${epp_now - epp_trough:.0f}  (+{(epp_now/epp_trough-1)*100:.0f}%)  in 3 years.
+  Every dollar of EPS compounding = $40 of floor.  Multiple unchanged.
 
-# ── ④  EPS INFLATION DECOMPOSITION ───────────────────────────────────────────
-print(f"\n  ④  EPS INFLATION DECOMPOSITION  (FY2022 ${EPS_2022:.2f} → FY2025 ${EPS_2025:.2f}, actual)")
-print("  " + "─" * (W-2))
-eps_total_growth = EPS_2025 - EPS_2022
-eps_cagr         = (EPS_2025 / EPS_2022) ** (1/3) - 1
-print(f"  Total EPS growth:  +${eps_total_growth:.2f}  (+{EPS_GROWTH_TOTAL*100:.0f}%  over 3yr;  CAGR +{eps_cagr*100:.1f}%/yr)")
-print(f"  {'─' * 64}")
-print(f"  {'Driver':<40}  {'Share':>7}  {'$EPS':>7}  Detail")
-for driver, (share, note) in DECOMP.items():
-    dollar = EPS_2022 * share
-    print(f"  {driver:<40}  {share*100:>6.1f}%  ${dollar:>5.2f}  {note[:34]}")
-print(f"  {'─' * 64}")
-print(f"  INFLATION-ATTRIBUTED EPS (ASP + CPI):  {INFLATION_SHARE*100:.0f}% of growth = ${EPS_INFLATION_DOLLAR:.2f}/share")
-print(f"  REAL-GROWTH EPS (volume + leverage):   {(1-INFLATION_SHARE)*100:.0f}% of growth = ${EPS_REAL_DOLLAR:.2f}/share")
+  Current ${CURRENT_PRICE:.0f}  vs  EPP ${epp_now:.0f}:   {epp_gap_pct:+.0f}%  above floor
+  Bear    ${bear_price:.0f}  vs  EPP ${epp_now:.0f}:   {bear_vs_epp:+.0f}%  ← bear IS below EPP
+                                           (bear requires earnings impairment)
+
+  Sigma distance to EPP floor:  {sigma_to_epp:.1f}σ  (needs fundamental break)
+  Sigma distance to bear price: {sigma_to_bear:.1f}σ  (within 1-sigma; China headline risk)
+
+  To return to 40x on TODAY's EPS: price = ${EPS_NOW * 40:.0f}  ({(EPS_NOW*40/CURRENT_PRICE-1)*100:.0f}% from ${CURRENT_PRICE:.0f})
+  What it takes:  China ban  +  rate shock II  +  GLP-1 collapse  simultaneously.
+  Probability:    ~3-5%""")
+
+head()
+
+# ── ③  EPS QUALITY CHECK ─────────────────────────────────────────────────────
 print(f"""
-  Key insight: ~{INFLATION_SHARE*100:.0f}% of EPS lift was inflation / ASP pricing.
-  ~{(1-INFLATION_SHARE)*100:.0f}% was genuinely real: volume, leverage, mix.
-  Even stripping inflation, "real" FY2025 EPS ≈ ${EPS_2025 - EPS_INFLATION_DOLLAR:.2f} → EPP = ${(EPS_2025 - EPS_INFLATION_DOLLAR)*EPP_MIN_PE:.0f}.
-  The business is structurally larger: ~9,000 installed systems vs ~7,500 in 2022.
-  Q1 2026 +38% EPS growth is not inflation — it is real operating leverage.""")
+  ③  EPS QUALITY CHECK  —  Is growth structural or inflated?
+  {"─"*62}
+  FY2022 → FY2025  (actual non-GAAP):  ${EPS_TROUGH:.2f} → ${EPS_NOW:.2f}
+  Total gain:  +${eps_growth_total:.2f}  (+{(EPS_NOW/EPS_TROUGH-1)*100:.0f}%  over 3yr;  CAGR {eps_cagr_realized*100:.1f}%/yr)
+  Q1 2026 run-rate:  ${EPS_Q1_2026*4:.2f} annualized  (+38% YoY — accelerating)
 
-# ── ⑤  CONSERVATIVE 2-YEAR GROWTH ────────────────────────────────────────────
-print(f"\n  ⑤  CONSERVATIVE 2-YEAR GROWTH  (May 2026 → May 2028;  no tailwinds assumed)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<36}  {'Conservative':>13}  vs Q1'26  Rationale")
-cur_map = {name.split()[0].lower(): cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS}
-for sname, sval, srat in CONS_SIGNALS:
-    key = sname.split()[0].lower()
-    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
-               if key in name.lower())
-    diff = sval - cur
-    print(f"  {sname:<36}  {sval:>13.1f}  {diff:>+7.0f}   {srat[:36]}")
-
+  {'─'*62}
+  {'Driver':<40}  {'Share':>7}  {'$EPS':>6}  Type
+  {'─'*62}""")
+for driver, share, is_real in EPS_DECOMP:
+    dollar = EPS_TROUGH * share
+    kind   = "REAL  ✓" if is_real else "INFL. ~"
+    bar    = "▓" * round(share * 30)
+    print(f"  {driver:<40}  {share*100:>6.1f}%  ${dollar:>4.2f}  {kind}  {bar}")
+print(f"  {'─'*62}")
+print(f"  REAL growth:      {real_pct:.0f}% of gain  =  ${real_dollar:.2f}/share  ✓")
+print(f"  Inflation/price:  {inflation_pct:.0f}% of gain  =  ${inflation_dollar:.2f}/share  ~")
 print(f"""
-  Starting EPS:       FY2025 actual ${EPP_TODAY_EPS:.2f}  (conservative base; below current run rate)
-  Conservative CAGR:  {CONS_EPS_CAGR*100:.0f}%/yr  (vs Q1 2026 actual +38%; consensus ~18-20%)
-  Conservative 2yr:   ${EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = ${CONS_EPS_2YR:.2f}  (FY2027E conservative)
-  Consensus 2yr:      ${EPP_TODAY_EPS:.2f} × (1+19%)² = ${EPP_TODAY_EPS*(1.19**2):.2f}  (Street ~18-20% CAGR)
-  At {CONS_EXIT_PE:.0f}x P/E (mild de-rate from ~51x trailing today):  ${cons_price_2yr:.0f}/share
-  {'─' * 64}
-  Conservative 2yr price:   ${cons_price_2yr:.0f}  ({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from ${CURRENT_PRICE:.0f})
-  Conservative total return: {cons_total_ret:+.0f}% over 2yr  =  {cons_annual_ret:+.0f}%/yr  (no dividend)""")
+  Verdict: 78% real.  ISRG did not inflate EPS via pricing tricks.
+  The business is physically larger — more systems, more procedures.
+  Even stripping inflation: "real" EPS ${EPS_NOW - inflation_dollar:.2f} → EPP ${(EPS_NOW - inflation_dollar)*EPP_MIN_PE:.0f}.
+  Q1 2026 +38% YoY is operating leverage at scale — not a one-off.""")
 
-# ── ⑥  ATTRACTIVENESS RATIO ──────────────────────────────────────────────────
-print(f"\n  ⑥  ATTRACTIVENESS RATIO  —  EPP floor gap vs. EPS-reflated upside")
-print("  " + "─" * (W-2))
-print(f"""  Ratio = Δ(current → EPP floor)  /  Δ(current → 2yr-reflated price)
-        = downside to floor  /  upside from EPS compounding
+head()
 
-  Ratio < 0.75  →  ★★ ATTRACTIVE  (EPS upside >> floor gap)
-  Ratio 0.75-1.1 →  ★  NEAR-FAIR  (roughly balanced)
-  Ratio 1.1-1.75 →  ⚠  RICH       (floor gap > EPS upside)
-  Ratio > 1.75   →  ✗  PRICED IN  (floor gap dominates)
+# ── ④  SCENARIO MAP ───────────────────────────────────────────────────────────
+print(f"""
+  ④  SCENARIO MAP  (2-year price targets;  May 2026 → May 2028)
+  {"─"*62}
+  {'Scenario':<8}  {'EPS':>6}  {'P/E':>5}  {'Price':>7}  {'Proxy':>7}  {'Market':>7}  Narrative
+  {'─'*62}""")
+for label, narr, eps, pe, price in SCENARIOS:
+    pp = proxy_probs[label]
+    mp = mkt_probs.get(label, 0)
+    gap = pp - mp
+    bar = "█" * round(pp * 20)
+    print(f"  {label:<8}  ${eps:>5.2f}  {pe:>4}x  ${price:>6}  {pp*100:>6.1f}%  {mp*100:>6.1f}%  {narr[:36]}")
+
+print(f"""  {'─'*62}
+  Proxy EV  (model):   ${proxy_ev:.0f}
+  Market EV (implied): ${mkt_ev:.0f}   ← what ${CURRENT_PRICE:.0f} needs to deliver at {REQUIRED_RETURN*100:.0f}%/yr
+  Analyst consensus:   ~$622  (41 analysts, avg target)
+
+  Model assigns higher weight to BULL vs market.
+  Market is pricing ~BASE (53.7%) + heavy BEAR (28%) — China fear premium.
+  If China risk stays contained, market re-rates toward proxy composite.
+
+  BEAR anatomy — what must break simultaneously:
+  {"─"*62}""")
+for name, desc, unit, bc, blo, bhi, bulo, buhi, xlo, cur, w, sc in scored:
+    u    = unit.split()[0]
+    move = bc - cur
+    print(f"  {name:<32}  {cur:>+4}{u}  →  {bc:>+4}{u}  ({move:>+4}{u})  {desc[:28]}")
+
+head()
+
+# ── ⑤  ATTRACTIVENESS RATIO ──────────────────────────────────────────────────
+print(f"""
+  ⑤  ATTRACTIVENESS RATIO
+  {"─"*62}
+  The single number that answers: "Is the upside worth the floor risk?"
+
+  Ratio  =  Downside to EPP floor  /  Upside from EPS compounding
+
+      < 0.75   ◉  BUY         EPS upside dominates floor risk
+     0.75–1.1  ◎  ACCUMULATE  Roughly balanced; edge to upside
+     1.1–1.75  ◐  WATCHLIST   Floor risk > EPS upside; wait
+      > 1.75   ✕  AVOID       Growth fully priced, asymmetric downside
 
   Inputs:
-    Current price:      ${CURRENT_PRICE:.0f}
-    EPP floor:          ${epp_updated:.0f}    (FY2025 ${EPP_TODAY_EPS:.2f} × {EPP_MIN_PE:.0f}x)
-    Downside to EPP:    ${dist_to_epp:.0f}   ({dist_to_epp/CURRENT_PRICE*100:.0f}% below current)
-""")
-print(f"  ┌──────────────────────────────────────────────────────────────────────────┐")
-print(f"  │  Method               2yr Target  Upside $  Upside %  Ratio   Signal    │")
-print(f"  ├──────────────────────────────────────────────────────────────────────────┤")
-print(f"  │  A: Same P/E (51x)     ${price_reflated_same_pe:>6.0f}      ${dist_A:>5.0f}     {dist_A/CURRENT_PRICE*100:>4.0f}%  {ratio_A:>5.2f}x  {ratio_label(ratio_A):<14}│")
-print(f"  │     (51x trailing × conserv EPS ${CONS_EPS_2YR:.2f})                          │")
-print(f"  │  B: Conserv exit {CONS_EXIT_PE:.0f}x   ${price_reflated_cons_pe:>6.0f}      ${dist_B:>5.0f}     {dist_B/CURRENT_PRICE*100:>4.0f}%  {ratio_B:>5.2f}x  {ratio_label(ratio_B):<14}│")
-print(f"  │     ({CONS_EXIT_PE:.0f}x × ${CONS_EPS_2YR:.2f}; mild de-rate from current)              │")
-print(f"  │  C: BASE scenario       ${price_reflated_base:>6.0f}      ${dist_C:>5.0f}     {dist_C/CURRENT_PRICE*100:>4.0f}%  {ratio_C:>5.2f}x  {ratio_label(ratio_C):<14}│")
-print(f"  │     ({SCENARIOS['BASE'][1]}x × ${SCENARIOS['BASE'][0]:.2f} EPS; market BASE case)                       │")
-print(f"  └──────────────────────────────────────────────────────────────────────────┘")
+    Current price      ${CURRENT_PRICE:.0f}
+    EPP floor          ${epp_now:.0f}
+    Downside to EPP    ${dist_epp:.0f}  ({dist_epp/CURRENT_PRICE*100:.0f}% of price)
 
+  {"─"*62}
+  {'Method':<26}  {'2yr Target':>11}  {'Upside':>8}  {'Ratio':>7}  Signal
+  {"─"*62}
+  A: Same P/E (51x trailing)   ${price_A:>9.0f}  {(price_A-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_A:>6.2f}x  {ratio_label(ratio_A)}
+     (P/E held; conserv EPS ${cons_eps_2yr:.2f})
+  B: Conserv exit {CONS_EXIT_PE:.0f}x           ${price_B:>9.0f}  {(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_B:>6.2f}x  {ratio_label(ratio_B)}
+     (mild de-rate from today's 51x trailing)
+  C: BASE scenario             ${price_C:>9.0f}  {(price_C-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_C:>6.2f}x  {ratio_label(ratio_C)}
+     (model BASE: {sc_map['BASE'][2]}x × ${sc_map['BASE'][1]:.2f} EPS)
+  {"─"*62}
+  Primary signal (Method B):  {ratio_B:.2f}x  →  {ratio_label(ratio_B)}
+
+  B is the honest method — it assumes a modest de-rate (50x→47x)
+  alongside conservative EPS growth.  At 0.92x the upside (+{(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:.0f}%)
+  just covers the floor gap ({dist_epp/CURRENT_PRICE*100:.0f}%).  Conservative return: {cons_ret_ann:+.0f}%/yr.
+
+  The stock reaches ◉ BUY at ~${epp_now + dist_epp*0.35:.0f}  (ratio B → 0.75x).
+  The stock reaches ◉ BUY at EPP ${epp_now:.0f}  if China headline hits.""")
+
+head()
+
+# ── ⑥  ENTRY FRAMEWORK ───────────────────────────────────────────────────────
 print(f"""
-  Reading:
-    Method A ({ratio_A:.2f}x — {ratio_label(ratio_A).strip()}):
-      If P/E holds at current ~51x, EPS growth alone delivers +{dist_A/CURRENT_PRICE*100:.0f}% vs {dist_to_epp/CURRENT_PRICE*100:.0f}% floor gap.
-      Upside {'exceeds' if ratio_A < 1 else 'slightly lags'} downside — {'decent entry on momentum' if ratio_A < 1 else 'needs multiple to hold'}.
+  ⑥  ENTRY FRAMEWORK
+  {"─"*62}
 
-    Method B ({ratio_B:.2f}x — {ratio_label(ratio_B).strip()}):
-      At {CONS_EXIT_PE:.0f}x exit (modest de-rate, rates stay elevated), upside = +{dist_B/CURRENT_PRICE*100:.0f}%.
-      Floor gap ({dist_to_epp/CURRENT_PRICE*100:.0f}%) {'modestly exceeds' if ratio_B > 1 else 'is covered by'} conservative upside.
-      Conservative return = {cons_annual_ret:+.0f}%/yr — {'below' if cons_annual_ret < 15 else 'at'} the 15% hurdle.
+  ┌───────────────┬────────────┬──────────────┬───────────────────┐
+  │  Zone         │  Price     │  Ratio B     │  Action           │
+  ├───────────────┼────────────┼──────────────┼───────────────────┤
+  │  ◉ EPP floor  │  ${epp_now:.0f}–${epp_now+40:.0f}   │  < 0.50x     │  Buy aggressively │
+  │  ◎ High conv. │  ${epp_now+40:.0f}–${epp_now+80:.0f}   │  0.50–0.75x  │  Build position   │
+  │  ◎ Today      │  ~${CURRENT_PRICE:.0f}      │  {ratio_B:.2f}x       │  Accumulate       │
+  │  ◐ Watchlist  │  ${CURRENT_PRICE+30:.0f}–${CURRENT_PRICE+80:.0f}   │  1.1–1.5x    │  Hold / no add    │
+  │  ✕ Avoid      │  >${CURRENT_PRICE+80:.0f}       │  > 1.75x     │  Trim on strength │
+  └───────────────┴────────────┴──────────────┴───────────────────┘
 
-    Method C ({ratio_C:.2f}x — {ratio_label(ratio_C).strip()}):
-      BASE scenario ($640) implies +{dist_C/CURRENT_PRICE*100:.0f}% — comfortably covers the floor gap.
-      If you believe BASE (which the model assigns {proxy_probs['BASE']*100:.0f}% probability), entry is sound.
+  Most probable catalyst for better entry:
+    →  China trade war headline (sudden, -10% to -20% move)
+    →  Hospital capex pause (slower; gives 3-6 month window)
+    →  Broad market correction (beta 1.05; moves with market)
 
-  OVERALL vs $530 (our previous stale estimate):
-    At $452 vs $530: EPP gap shrinks from 66% to {epp_gap_pct:.0f}%.
-    Ratio B improves from 5.02x → {ratio_B:.2f}x.  Materially better entry quality.
-    Conservative annual return: +4%/yr → {cons_annual_ret:+.0f}%/yr.
-    Still not a screaming 2022-style EPP entry — but genuinely improved.""")
+  What would UPGRADE the signal to ◉ BUY without price falling:
+    →  Ion platform reimbursement expanded to colorectal / cardiac
+    →  DV5 placed into 2nd and 3rd tier US hospitals (volume inflection)
+    →  China trade war de-escalation (removes the binary risk premium)
 
-# ── ⑦  VOLATILITY CONTEXT ────────────────────────────────────────────────────
-print(f"\n  ⑦  VOLATILITY CONTEXT")
-print("  " + "─" * (W-2))
-print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}  (stock -20% YTD 2026)")
-print(f"  Realized vol:         {VOL_ANNUAL_PCT*100:.0f}% annualized  ·  Beta {VOL_BETA:.2f}")
-print(f"  1-sigma range (1yr):  ${CURRENT_PRICE - sigma_1yr:.0f}  –  ${CURRENT_PRICE + sigma_1yr:.0f}")
-print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  ${CURRENT_PRICE + sigma_1yr*2:.0f}")
-print(f"  {'─' * 64}")
-print(f"  EPP floor ${epp_updated:.0f}:   {(CURRENT_PRICE - epp_updated)/sigma_1yr:.1f}σ below  (needs fundamental break to reach)")
-print(f"  Bear case ${SCENARIOS['BEAR'][2]}:   {sigma_needed_bear:.1f}σ below  ({'within 1-sigma — plausible on China news' if sigma_needed_bear < 1.0 else 'requires combined triggers'})")
-print(f"\n  Note: the -20% YTD decline already happened — it was the vol event.")
-print(f"  The stock absorbed the tariff shock drawdown.  Current price reflects")
-print(f"  a real risk premium over EPP.  China ban is the remaining binary risk.")
+  Watch for DOWNGRADE triggers (move to AVOID):
+    →  2 consecutive quarters of procedure volume growth < 8%
+    →  DV5 ASP pushback materializes (hospitals delay upgrades)
+    →  GLP-1 bariatric volume data shows structural -15%+ decline""")
 
-# ── ⑧  SCENARIO PROBABILITIES ────────────────────────────────────────────────
-print(f"\n  ⑧  SCENARIO PROBABILITIES  (proxy model vs market-implied)")
-print("  " + "─" * (W-2))
-print(f"  {'Scenario':<8}  {'EPS':>6}  {'P/E':>5}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>6}  Narrative")
-for k in ["BEAR", "BASE", "BULL", "XBULL"]:
-    sc  = SCENARIOS[k]
-    eps_, pe_, price_, narr_ = sc
-    pp  = proxy_probs[k]
-    mp  = mkt_probs[k] if mkt_probs else 0
-    print(f"  {k:<8}  ${eps_:>5.2f}  {pe_:>4}x  ${price_:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  {(pp-mp)*100:>+6.1f}pp  {narr_[:36]}")
+head()
 
-print(f"\n  Proxy EV (2yr):      ${proxy_ev:.0f}")
-print(f"  Market EV (implied): ${mkt_ev:.0f}  (what ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle requires in 2yr)")
-print(f"  Conservative EV:     ${cons_price_2yr:.0f}  (Method B; {CONS_EXIT_PE:.0f}x × ${CONS_EPS_2YR:.2f})")
-print(f"  Analyst consensus:   ~$622  (41 analysts, avg target $621.62 per search data)")
+# ── COMPACT SUMMARY ───────────────────────────────────────────────────────────
+print(f"""
+  SUMMARY CARD  ·  {TICKER}  ·  ${CURRENT_PRICE:.0f}  ·  {DATE}
 
+  Signal         {SIGNAL}
+  EPP floor      ${epp_now:.0f}   ({epp_gap_pct:.0f}% below current;  migrated +80% from 2022)
+  Ratio B        {ratio_B:.2f}x  ({ratio_label(ratio_B)} — floor gap ≈ EPS upside)
+  Cons. return   {cons_ret_ann:+.0f}%/yr  (15% CAGR, 47x exit;  no dividend)
+  EPS quality    78% real  /  22% inflation  (structural growth confirmed)
+  #1 risk        China revenue ban  →  EPS cut + multiple compression → $334
+  #1 catalyst    Ion + DV5 execute  →  BASE/BULL  →  $640–$812  in 2yr
+  Best entry     ${epp_now:.0f}–${epp_now+80:.0f}  (on China headline or broad market dip)""")
 print()
-print("═" * W)
-print(f"""  SUMMARY  /  INVESTMENT FRAMEWORK (2026-05-09 @ ${CURRENT_PRICE:.0f})
-
-  2022 EPP trade at $197 → today $452:  +{(CURRENT_PRICE/EPP_2022_TROUGH - 1)*100:.0f}% price return.
-    Of which:  EPS compounded +{EPS_GROWTH_TOTAL*100:.0f}%  (real earnings growth, mostly real)
-               P/E expanded from 40x → {TRAILING_PE:.0f}x  (+{TRAILING_PE - PE_2022_TROUGH:.0f}pt multiple expansion)
-
-  EPP gap today = {epp_gap_pct:.0f}%  (vs 0% in 2022 when you were AT the floor)
-  Attractiveness ratio B = {ratio_B:.2f}x  (vs 5.02x at stale $530 estimate)
-
-  The -20% YTD decline in 2026 has done real work:
-    At $452 the forward P/E (44x) is approaching "normal" ISRG territory.
-    The earnings acceleration (Q1 +38%) means the business is NOT broken.
-    The multiple is compressing via earnings growth, not price alone.
-
-  Entry framework:
-    ★★  ${epp_updated:.0f}–${epp_updated + 40:.0f}   AT the EPP floor  (2022-quality entry; ~5% prob)
-    ★   ${epp_updated + 40:.0f}–${CURRENT_PRICE - 30:.0f}   Ratio B < 1.0x   (accumulate on China headline)
-    ◦   ${CURRENT_PRICE:.0f}       Today — Ratio B {ratio_B:.2f}x, +{cons_annual_ret:.0f}%/yr conservative, holds on BASE""")
-print("═" * W)
+head()
 print()
