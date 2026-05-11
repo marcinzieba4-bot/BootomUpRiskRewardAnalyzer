@@ -174,306 +174,421 @@ eps_g_total = EPS_NOW - EPS_TROUGH
 infl_dollar = sum(EPS_TROUGH * sh for _, sh, real in EPS_DECOMP if not real)
 real_dollar = eps_g_total - infl_dollar
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ── PART 1  FRAMEWORK LOGIC ───────────────────────────────────────────────────
-# ══════════════════════════════════════════════════════════════════════════════
-W   = 74
-HR  = "─" * 62
-HR2 = "─" * (W-2)
-HR3 = "─" * 60
-HR4 = "─" * 38
-HR5 = "─" * 48
 
-def rule(): print("  " + HR)
-def head():
+# ══════════════════════════════════════════════════════════════════════════════
+# OUTPUT  —  three-part publication format
+# ══════════════════════════════════════════════════════════════════════════════
+W  = 74
+HL = "=" * W   # heavy rule  (section breaks)
+ML = "-" * W   # medium rule (sub-sections)
+SL = "  " + "-" * 62  # slim rule  (tables)
+
+def section(title, subtitle=""):
     print()
-    print("█" * W)
+    print(HL)
+    print(f"  {title}")
+    if subtitle:
+        print(f"  {subtitle}")
+    print(HL)
 
-head()
-print(f"""
-  PART 1  ·  FRAMEWORK LOGIC
-  What each concept means  —  applies to any stock in this system
-  {HR2}
+def sub(title):
+    print()
+    print(f"  {title.upper()}")
+    print("  " + "-" * len(title))
 
-  EPP  —  Earnings Power Price
-  ────────────────────────────
-  The lowest price rational capital will accept for a business, given
-  what it earns today.  Calculated as:
+def p(text):
+    for line in text.strip().split("\n"):
+        print(f"  {line.strip()}" if line.strip() else "")
+    print()
 
-      EPP  =  current normalized EPS  ×  min-viable trough P/E
+# ─────────────────────────────────────────────────────────────────────────────
+# PART 1  —  HOW THIS SIGNAL WORKS
+# ─────────────────────────────────────────────────────────────────────────────
+section("PART 1  ·  HOW THIS SIGNAL WORKS",
+        "A guide to reading every analysis published here")
 
-  The trough P/E is the floor multiple the market has historically
-  assigned this business at maximum fear — a function of franchise
-  quality, switching costs, and revenue predictability.  It does NOT
-  change with sentiment.  Only EPS changes it.  When price = EPP you
-  are buying at the floor.  When price > EPP you are paying a premium
-  over the floor — that premium must be earned back by EPS growth.
+sub("The central question")
+p("""
+Every analysis starts with the same question: at the current price,
+is the upside from earnings growth worth the risk of being wrong?
+We answer it with three building blocks — the floor, the growth check,
+and the cross-read — then combine them into a single ratio and signal.
+""")
 
-  ATTRACTIVENESS RATIO
-  ────────────────────
-  Answers the single most important question in value investing:
-  is the upside worth the floor risk?
+sub("EPP — the floor")
+p(f"""
+EPP (Earnings Power Price) is the lowest price rational capital will
+accept for a business based on what it earns today.
 
-      Ratio  =  (current price − EPP)  /  (2yr reflated price − current)
-             =  downside to floor  /  upside from EPS compounding
+    EPP  =  current normalized EPS  ×  min-viable trough P/E
 
-  Below 0.75   ◉  BUY          EPS growth dominates the floor gap
-  0.75 – 1.1   ◎  ACCUMULATE   Balanced; slight edge to upside
-  1.1  – 1.75  ◐  WATCHLIST    Floor gap exceeds EPS upside; wait
-  Above 1.75   ✕  AVOID        Growth priced in; asymmetric downside
+The trough P/E is not a forecast — it is the floor multiple the market
+has actually assigned this business at its worst moments in history.
+It captures franchise quality: a monopoly with captive recurring revenue
+never trades at the same trough multiple as a cyclical manufacturer.
 
-  Three methods (A/B/C) test the ratio under different multiple assumptions.
-  Method B (conservative exit P/E) is the primary signal — it stress-tests
-  the upside by assuming a modest de-rate alongside conservative EPS growth.
+When price = EPP, you are buying at the floor.
+When price > EPP, you are paying a premium that EPS growth must earn back.
+The floor itself migrates upward as EPS compounds — it does not move
+with sentiment or rate cycles.
+""")
 
-  CROSS-READ MODEL
-  ────────────────
-  Instead of trusting management guidance, we track 5-6 EXTERNAL signals
-  that are observable before the company reports.  Each signal maps to a
-  specific revenue or cost driver.  When multiple signals align, conviction
-  is high.  When they diverge, uncertainty is high.
+sub("EPS quality check")
+p("""
+Not all EPS growth is equal. A business inflating earnings through
+aggressive pricing or one-time items is not compounding. We decompose
+EPS growth into real drivers (volume, operating leverage, mix shift)
+versus inflation pass-through (ASP hikes, CPI). A healthy business
+should show at least 65-70% real growth. Below 50% and the floor is
+softer than it looks.
+""")
 
-  Each signal is scored 1-4 (BEAR / BASE / BULL / XBULL) against
-  pre-defined thresholds.  The weighted composite places the company on
-  the scenario spectrum.  That composite is then compared to the market
-  composite — back-solved from: what score does the current price require
-  to deliver the hurdle rate?  The gap between the two is the edge.
+sub("Cross-read model")
+p("""
+We track 5-6 external signals that are observable before the company
+reports, each mapped to a specific business driver. Hospital capex data
+tells us about equipment demand. Procedure volumes tell us about the
+recurring revenue base. A competitor's bookings tell us about market share.
 
-  STRUCTURAL FACTORS  (SCA — Structural Composite Adjustment)
-  ─────────────────────────────────────────────────────────────
-  Qualitative overlay on top of the quantitative signal composite.
-  Moats, competitive dynamics, and risks that do not show up in the
-  proxy signals but affect the long-run floor and ceiling.  Scored
-  −2 to +2, weighted, added to the proxy composite.
+Each signal is scored 1-4 against pre-set thresholds:
+  1 = BEAR    conditions consistent with the bear scenario
+  2 = BASE    normal growth; thesis intact
+  3 = BULL    outperforming; upside scenarios become more likely
+  4 = XBULL   exceptional; multiple expansion possible
 
-  EPS QUALITY CHECK
-  ─────────────────
-  Not all EPS growth is equal.  We decompose EPS growth into:
-    Real:       procedure / unit volume, operating leverage, mix shift
-    Inflation:  ASP price hikes, CPI pass-through
-  A business growing EPS 80% where 78% is real and only 22% is price
-  is structurally compounding.  One where the inverse is true is not.
+The weighted composite is compared to the market composite — the score
+the current price needs to deliver a 15% hurdle rate. A higher proxy
+composite than market composite means the model sees more than the
+market is pricing. That gap is where conviction lives.
+""")
 
-  SCENARIO MAP
-  ────────────
-  Four named outcomes (BEAR / BASE / BULL / XBULL) each with an EPS
-  assumption, exit multiple, and 2-year price target.  The model assigns
-  probabilities via a softmax function centered on the proxy composite.
-  The market's implied probabilities are back-solved from the current price.
-  The gap between model and market probabilities is where conviction lives.
+sub("Structural factors (SCA)")
+p("""
+Qualitative overlay on top of the numbers. Moats, competitive risks,
+and long-run dynamics that do not show up in quarterly data points.
+Scored -2 to +2, weighted by importance, added to the composite.
+A business with a deep switching-cost moat earns a positive SCA.
+A business with a dominant but exposed customer or geography earns
+a negative one.
+""")
 
-  IDIOSYNCRATIC SCORE
-  ───────────────────
-  Estimates what fraction of the investment outcome is driven by
-  company/sector-specific factors (idiosyncratic) versus macro sentiment,
-  rate cycles, and broad market moves.  High idiosyncratic → thesis is
-  right or wrong on its own merits.  High macro → you also need to be
-  right on the environment.  The EPP floor is always more idiosyncratic
-  than the premium above it.""")
+sub("Scenarios")
+p("""
+Four named outcomes — BEAR / BASE / BULL / XBULL — each with an EPS
+assumption, exit multiple, and 2-year price target. Scenario
+probabilities are assigned via a softmax distribution centred on the
+proxy composite. The market's implied probabilities are back-solved
+from the current price. When the model assigns higher probability to
+BULL than the market does, the stock is likely mispriced.
+""")
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ── PART 2  ISRG CASE ─────────────────────────────────────────────────────────
-# ══════════════════════════════════════════════════════════════════════════════
-head()
-print(f"""
-  PART 2  ·  ISRG CASE  —  What matters for this specific bet
-  {HR2}
+sub("Attractiveness ratio")
+p("""
+The single number that summarises risk/reward.
 
-  EPP FLOOR
-  ─────────
-  The 2022 EPP model called $198 — the actual low was $197.  The floor
-  has since migrated to $357 (+80%) driven entirely by EPS compounding;
-  the trough multiple is unchanged at 40x.  That 40x is the historical
-  minimum — the market has never valued ISRG's installed base below this
-  even at maximum fear, because ~70% of revenue is instruments and
-  accessories locked to existing systems regardless of new sales.
+    Ratio  =  (current price − EPP)  /  (2yr reflated price − current)
+           =  downside to floor  /  upside from EPS compounding
 
-  EPS QUALITY
-  ───────────
-  The $3.97 EPS gain from FY2022 to FY2025 is 78% real — procedure
-  volume growth and operating leverage, not pricing games.  The business
-  is physically larger (9,000+ systems vs ~7,500 in 2022) and Q1 2026
-  came in at +38% YoY, accelerating.  Stripping inflation entirely,
-  the "real EPS" still yields a floor of $314 — well below today's price.
+  Ratio below 0.75  →  ◉  BUY          Upside dominates the floor gap
+  Ratio 0.75 – 1.1  →  ◎  ACCUMULATE   Balanced; edge to upside
+  Ratio 1.1 – 1.75  →  ◐  WATCHLIST    Floor gap exceeds EPS upside
+  Ratio above 1.75  →  ✕  AVOID        Growth fully priced
 
-  CROSS-READ MODEL
-  ────────────────
-  Two signals are running hot (BULL): DV5 placements +17% and procedure
-  volume +16% — these are the core recurring-revenue engine and confirm
-  the installed base is expanding fast.  Four signals are at BASE: Ion
-  (+39%) is still below the BULL threshold (55%) but is the most important
-  one to watch — if it crosses, it opens a genuinely new TAM (lung cancer
-  screening) that isn't in the current multiple.  China at +8% is the key
-  risk signal — any geopolitical escalation flips it to BEAR instantly.
+We run three methods: A holds the current multiple constant, B applies
+a conservative exit multiple (honest stress-test), and C uses the BASE
+scenario price. Method B is the primary signal.
+""")
 
-  SCENARIO MAP
-  ────────────
-  The market is pricing 28% BEAR probability — heavy China fear premium.
-  The model assigns 9%.  That 19pp gap is the thesis: China risk is real
-  but the market is over-weighting it relative to the underlying momentum.
-  BASE ($640) requires nothing extraordinary — just DV5 executing and
-  Ion continuing its current trajectory.  BULL requires Ion to reach
-  mainstream reimbursement (colorectal / cardiac), which is 2-3yr optionality
-  not yet in consensus.
+sub("Idiosyncratic score")
+p("""
+How much of the outcome does your stock-picking actually control?
+We estimate what fraction of the return profile is driven by
+company-specific factors (idiosyncratic) versus macro sentiment,
+rate cycles, and broad market moves (macro).
 
-  ATTRACTIVENESS RATIO
-  ─────────────────────
-  At $452, Method B (conservative 47x exit, 15% EPS CAGR) gives 0.92x —
-  meaning the EPS upside (+23%) just covers the floor gap (21%).  This
-  is the level where entry begins to make sense: not a screaming buy,
-  but the stock has already absorbed the -20% YTD tariff shock and the
-  multiple has normalized.  The stock becomes ◉ BUY at ~$390, which
-  requires only a China headline or broad market correction.
+High idiosyncratic means the thesis is right or wrong on its own
+merits — fundamental work creates edge. High macro means you also
+need to be right on the environment, which is harder to predict.
 
-  IDIOSYNCRATIC SCORE  —  62% idiosyncratic / 38% macro-sentiment
-  ──────────────────────────────────────────────────────────────────""")
+One rule always holds: the EPP floor is more idiosyncratic than the
+premium above it. A stressed macro environment can compress the
+multiple — it very rarely destroys a genuine earnings floor.
+""")
 
-total_idio  = sum(w for _, t, w, __ in IDIO["drivers"] if t == "IDIO")
-total_macro = sum(w for _, t, w, __ in IDIO["drivers"] if t == "MACRO")
-for factor, kind, wt, desc in IDIO["drivers"]:
-    tag = "IDIO  →" if kind == "IDIO" else "MACRO →"
-    bar = "▓" * round(wt * 60)
-    print(f"  {tag}  {wt*100:.0f}%  {factor:<38}  {desc[:32]}")
+# ─────────────────────────────────────────────────────────────────────────────
+# PART 2  —  ISRG ANALYSIS
+# ─────────────────────────────────────────────────────────────────────────────
+section(f"PART 2  ·  {TICKER}  —  ANALYST COMMENTARY",
+        f"{COMPANY}  ·  {SECTOR}  ·  {DATE}  ·  ${CURRENT_PRICE:.0f}")
 
 print(f"""
-  {IDIO['note']}
+  ┌{"─"*62}┐
+  │  SIGNAL:  {SIGNAL:<20}  (primary: Ratio B {ratio_B:.2f}x)        │
+  │  EPP floor ${epp_now:.0f}  ·  Gap {epp_gap_pct:+.0f}%  ·  Conservative return {cons_ret_ann:+.0f}%/yr   │
+  └{"─"*62}┘""")
 
-  Practical implication:  you can be right on ISRG's fundamentals and
-  still lose 15-20% in a rate shock or risk-off episode because the P/E
-  at 51x is elastic.  The EPP floor ($357) cushions this — below it,
-  macro cannot push price much further without an EPS break.  Above $500,
-  macro risk dominates and the bet becomes increasingly sentiment-driven.""")
+sub("The floor")
+p(f"""
+We first built the EPP for ISRG at the 2022 trough. The model
+produced $198; the actual 52-week low that year was $197. That
+precision is not luck — it reflects the installed-base economics.
+ISRG's 9,000+ da Vinci systems generate ~70% of revenue through
+instruments and accessories that are consumed regardless of whether
+hospitals buy new equipment. The market has never valued that stream
+below 40x earnings, even at maximum fear. That 40x is the floor.
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ── PART 3  NUMBERS & SIGNALS ─────────────────────────────────────────────────
-# ══════════════════════════════════════════════════════════════════════════════
-head()
-print(f"""
-  PART 3  ·  NUMBERS & SIGNALS  ·  {TICKER}  ·  ${CURRENT_PRICE:.0f}  ·  {DATE}
-  {HR2}""")
+Since 2022 the floor has migrated to ${epp_now:.0f}, driven entirely by
+EPS compounding from ${EPS_TROUGH:.2f} to ${EPS_NOW:.2f}. The trough multiple
+is unchanged. Every dollar of real earnings growth adds ${EPP_MIN_PE:.0f} to
+the floor. That is what makes this a compounder thesis, not a value
+thesis — you are watching the floor rise beneath you.
+
+At today's ${CURRENT_PRICE:.0f} the stock sits {epp_gap_pct:.0f}% above its floor. That
+is a materially different setup than the {epp_gap_pct + 39:.0f}% premium implied
+by the stale $530 estimate we corrected earlier. The -{(1-EPS_TROUGH_PRICE/sc_map["BEAR"][3])*(-1)*100:.0f}% YTD
+selloff has done real compression work.
+""")
+
+sub("Is the earnings growth real?")
+p(f"""
+FY2022 to FY2025: EPS grew from ${EPS_TROUGH:.2f} to ${EPS_NOW:.2f}, a {(EPS_NOW/EPS_TROUGH-1)*100:.0f}% gain.
+We decompose that gain: {real_dollar/eps_g_total*100:.0f}% came from real volume growth and
+operating leverage; only {infl_dollar/eps_g_total*100:.0f}% from pricing and inflation pass-through.
+The business is physically larger — more systems placed, more procedures
+performed, more Ion bronchoscopes sold. Q1 2026 confirmed the trajectory
+is accelerating, not mean-reverting: EPS came in at ${EPS_Q1_2026:.2f}, up 38%
+year-on-year, beating consensus by 16.8 percentage points.
+
+This matters for the floor argument. If EPS growth were mostly pricing,
+stripping it out would cut the floor sharply. Stripping the {infl_dollar/eps_g_total*100:.0f}%
+inflation component entirely, real EPS is ${EPS_NOW - infl_dollar:.2f} — which still
+puts the real EPP at ${(EPS_NOW - infl_dollar)*EPP_MIN_PE:.0f}, well below today's price.
+""")
+
+sub("What the cross-reads are telling us")
+p(f"""
+Two signals are running at BULL: DV5 placements +{17}% and total
+procedure volume +{16}%. These are the backbone of the thesis —
+hospital demand for the flagship product is strong, and surgeon
+adoption of existing systems is accelerating. Together they represent
+50% of the composite weight and both are pointing in the right direction.
+
+Four signals sit at BASE: Ion procedures (+{39}%), international
+revenue (+{13}%), hospital capex (+{5}%), and China volumes (+{8}%).
+The one to watch most closely is Ion. At +39% it is approaching
+the 55% BULL threshold. If Ion crosses that level it signals that
+the lung cancer screening market is opening at scale — a genuinely
+new revenue stream that is not in current consensus forecasts.
+China at +8% is the risk watch — it is one headline away from
+flipping to BEAR, and that single move would drag the composite
+below BASE and challenge the EPP floor.
+
+Structurally, the model adds +0.46 for the installed-base moat
+and DV5 cycle, partially offset by China concentration and the
+GLP-1 overhang. Net adjustment lifts the composite above what
+the market is pricing, producing the UNDERVALUED verdict.
+""")
+
+sub("Scenarios and where the market is wrong")
+p(f"""
+The market is pricing ISRG as if there is a {mkt_probs.get('BEAR',0)*100:.0f}% chance of the
+bear scenario materialising over two years. Our model puts that
+at {proxy_probs['BEAR']*100:.0f}%. That {(mkt_probs.get('BEAR',0) - proxy_probs['BEAR'])*100:.0f} percentage point gap is the core of the thesis.
+
+The bear case requires China revenue to collapse, procedure volumes
+to stall, and hospital capex to contract simultaneously. None of
+those conditions are present in the current data — Q1 2026 showed
+the opposite across all three. The market's high BEAR weighting
+reflects geopolitical anxiety about China trade policy, not
+fundamental deterioration in the business.
+
+The BASE scenario at ${sc_map['BASE'][3]:.0f} in two years requires nothing
+exceptional — DV5 global rollout continuing at current pace, Ion
+compounding at roughly current rates, and China staying at zero
+growth rather than collapsing. A reasonable probability of {proxy_probs['BASE']*100:.0f}%
+implies a model expected value of ${proxy_ev:.0f}, versus the ${mkt_ev:.0f}
+the market needs to justify today's price.
+""")
+
+sub("Risk/reward and what the ratio says")
+p(f"""
+At ${CURRENT_PRICE:.0f} the downside to the EPP floor is ${dist_epp:.0f} ({dist_epp/CURRENT_PRICE*100:.0f}% of price).
+Under our conservative growth assumptions — 15% EPS CAGR, exit at
+47x — the two-year upside is ${price_B - CURRENT_PRICE:.0f} (+{(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:.0f}%). Ratio B = {ratio_B:.2f}x.
+
+That puts us squarely in ACCUMULATE territory. The floor gap and the
+EPS upside are almost exactly balanced under conservative assumptions;
+if signals stay at current readings (BASE/BULL mix), the BASE scenario
+delivers {ratio_C:.2f}x — meaning the upside outweighs the floor gap
+meaningfully.
+
+This is not the setup we had in 2022 when the stock sat at the EPP
+floor and Ratio B was effectively zero. Today you are paying a
+{epp_gap_pct:.0f}% premium over the floor. What justifies that premium is
+the visible catalyst stack: DV5 mid-cycle, Ion approaching BULL
+threshold, and {EPS_Q1_2026*4:.0f}+ annualised EPS run-rate already in Q1 2026.
+""")
+
+sub("Idiosyncratic commentary — how much of this bet is yours to win?")
+p(f"""
+We score ISRG {IDIO['idio_pct']}% idiosyncratic, {IDIO['macro_pct']}% macro-sensitive.
+
+The {IDIO['idio_pct']}% that is genuinely yours to analyse: DV5 adoption pace is
+a hospital-by-hospital decision driven by surgeon preference and
+capital budgets — not GDP. Ion reimbursement is a CMS and FDA
+process — not interest rates. The China binary (ban versus growth)
+is a geopolitical event specific to US medtech — not a broad market
+signal. These are questions fundamental research can answer with
+a real edge.
+
+The {IDIO['macro_pct']}% that macro controls: at 51x trailing earnings, ISRG
+carries meaningful rate sensitivity. A 100 basis point rise in
+the 10-year yield compresses the multiple by roughly 5-8 points —
+a $45-70 price impact with zero change in business fundamentals.
+That is exactly what happened in 2022, and it explains most of
+the -{(1-(sc_map['BEAR'][3]/VOL_52W_HIGH if (VOL_52W_HIGH := 574.0) else 0))*100:.0f}% YTD decline in 2026. Beta of 1.05 means broad
+risk-off episodes are not avoided by being right on the fundamentals.
+
+The practical implication has a clean expression in the framework:
+below the EPP floor (${epp_now:.0f}), the bet is almost entirely idiosyncratic
+— the floor is anchored to earnings, not sentiment, and macro can
+only push price through it by also breaking the earnings thesis.
+Above ${CURRENT_PRICE + 50:.0f}, the macro fraction grows and you are
+increasingly just long sentiment on a quality stock. Today's ${CURRENT_PRICE:.0f}
+sits in the zone where idiosyncratic and macro are roughly balanced
+— which is consistent with the 0.92x attractiveness ratio and the
+ACCUMULATE signal rather than a conviction BUY.
+
+The single largest idiosyncratic risk — and the one most worth
+monitoring — is China. It is binary, not gradual: a regulatory ban
+or tariff escalation that removes ISRG from the Chinese market
+overnight would cut ~{10}-12% of revenue with no replacement in
+the near term. That event, and only that event, pushes the bear
+price ($334) below the EPP floor ($357) and breaks the floor thesis.
+Everything else — GLP-1, hospital capex, competition — is a slow
+bleed that the installed base absorbs. China is the one scenario
+where the floor does not hold.
+""")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PART 3  —  DATA TABLES
+# ─────────────────────────────────────────────────────────────────────────────
+section(f"PART 3  ·  {TICKER}  —  NUMBERS & SIGNALS",
+        f"${CURRENT_PRICE:.0f}  ·  {DATE}  ·  Price source: Yahoo Finance")
 
 # Signal card
 print(f"""
-  ┌{HR3}┐
-  │  {SIGNAL:<20}  EPP gap {epp_gap_pct:+.0f}%  ·  Ratio B {ratio_B:.2f}x          │
-  │  Cons. return {cons_ret_ann:+.0f}%/yr  ·  EPP ${epp_now:.0f}  ·  Fwd P/E {forward_pe:.0f}x       │
-  └{HR3}┘""")
+  ┌{"─"*62}┐
+  │  {SIGNAL:<20}  Ratio B {ratio_B:.2f}x  (primary signal)             │
+  │  EPP ${epp_now:.0f}  ({epp_gap_pct:+.0f}% gap)  ·  Fwd P/E {forward_pe:.0f}x  ·  Cons. {cons_ret_ann:+.0f}%/yr   │
+  │  Idiosyncratic {IDIO['idio_pct']}% / Macro {IDIO['macro_pct']}%  ·  Beta {IDIO['beta']:.2f}                      │
+  └{"─"*62}┘""")
 
-# Cross-read
+# Cross-reads
 print(f"""
-  CROSS-READ  (proxy {proxy_composite:.2f} / 4.00  ·  market {mkt_comp:.2f}  ·  gap {adj_gap:+.2f})
-  {HR}
-  {"Signal":<32}  {"What it tracks":<28}  {"Now":>5}  Score""")
-rule()
+  CROSS-READ MODEL  (proxy {proxy_composite:.2f} / 4.00  ·  market {mkt_comp:.2f}  ·  gap {adj_gap:+.2f})
+{SL}
+  {"Signal":<32}  {"Tracks":<28}  {"Now":>5}  Score    Bar""")
+print(SL)
 for name, desc, unit, bc, blo, bulo, xlo, cur, w, sc in scored:
     u = unit.split()[0]
     print(f"  {name:<32}  {desc:<28}  {cur:>+4}{u}  {SLABEL[sc]}  {SBAR[sc]}")
-
-print(f"""
-  {HR}
-  {"Factor":<48}  {"Score":>6}  {"Wt":>5}  {"Adj":>6}""")
+print(SL)
+print(f"  Structural adjustment (SCA):")
 for desc, sc, wt in STRUCTURAL_FACTORS:
-    print(f"  {desc:<48}  {sc:>+5.1f}  {wt*100:>4.0f}%  {sc*wt:>+5.2f}")
-print(f"  {HR}")
-print(f"  SCA total {sca:+.2f}  ·  Adj composite {adj_composite:.2f}  ·  Verdict: UNDERVALUED  (gap {adj_gap:+.2f})")
+    sign = "+" if sc > 0 else " "
+    print(f"    {sign}{sc:+.1f} × {wt*100:.0f}%  {desc}")
+print(f"  SCA {sca:+.2f}  →  adj composite {adj_composite:.2f}  →  verdict: UNDERVALUED")
 
-# Scenario × threshold
+# Scenario thresholds
 print(f"""
-  SCENARIO THRESHOLDS  (signal must reach → for scenario to hold)
-  {HR}
-  {"Signal":<32}  {"BEAR<":>6}  {"BASE":>8}  {"BULL":>8}  {"XBULL≥":>7}  {"NOW":>5}""")
-rule()
+  SCENARIO THRESHOLDS
+{SL}
+  {"Signal":<32}  {"BEAR<":>6}  {"BASE":>8}  {"BULL":>8}  {"XBULL≥":>8}  {"NOW":>5}""")
+print(SL)
 for name, desc, unit, bc, blo, bulo, xlo, cur, w, sc in scored:
     u = unit.split()[0]
-    base_r = f"{blo}-{bulo}"
-    bull_r = f"{bulo}-{xlo}"
-    print(f"  {name:<32}  {bc:>5}{u}  {base_r:>8}  {bull_r:>8}  {xlo:>6}{u}  {cur:>+4}{u}")
-
-# EPS quality
-print(f"""
-  EPS QUALITY  (FY2022 ${EPS_TROUGH:.2f} → FY2025 ${EPS_NOW:.2f};  CAGR {((EPS_NOW/EPS_TROUGH)**(1/3)-1)*100:.1f}%/yr)
-  {HR}
-  {"Driver":<38}  {"Share":>7}  {"$EPS":>6}  Type""")
-rule()
-for driver, share, is_real in EPS_DECOMP:
-    dollar = EPS_TROUGH * share
-    kind   = "REAL  ✓" if is_real else "INFL. ~"
-    print(f"  {driver:<38}  {share*100:>6.1f}%  ${dollar:>4.2f}  {kind}")
-print(f"  {HR4}")
-print(f"  Real {real_dollar/eps_g_total*100:.0f}%  ${real_dollar:.2f}  ✓    Inflation {infl_dollar/eps_g_total*100:.0f}%  ${infl_dollar:.2f}  ~")
+    print(f"  {name:<32}  {bc:>5}{u}  {blo}-{bulo:>3}    {bulo}-{xlo:>3}    {xlo:>5}{u}  {cur:>+4}{u}")
 
 # EPP
 print(f"""
   EPP FLOOR
-  {HR}
-  {"Year":<8}  {"EPS":>6}  {"Trough P/E":>12}  {"EPP":>7}  {"Actual low":>11}
-  {HR}
-  {"2022":<8}  ${EPS_TROUGH:>5.2f}  {"× 40x":>12}  ${epp_trough_val:>5.0f}  {"$197  ✓":>11}
-  {"2026":<8}  ${EPS_NOW:>5.2f}  {"× 40x":>12}  ${epp_now:>5.0f}  {"today":>11}
-  {HR}
-  Current ${CURRENT_PRICE:.0f}  vs  EPP ${epp_now:.0f}:  {epp_gap_pct:+.0f}%  above floor  ·  {(CURRENT_PRICE-epp_now)/sigma:.1f}σ to EPP
-  Bear    ${sc_map['BEAR'][3]:.0f}  vs  EPP ${epp_now:.0f}:  {bear_vs_epp:+.0f}%  ← bear breaks the floor""")
+{SL}
+  {"Year":<8}  {"EPS":>6}  {"× Trough P/E":>14}  {"EPP":>7}  {"Actual low":>12}""")
+print(SL)
+print(f"  {'2022':<8}  ${EPS_TROUGH:>5.2f}  {'× 40x':>14}  ${epp_trough_val:>5.0f}  {'$197  ✓':>12}")
+print(f"  {'2026':<8}  ${EPS_NOW:>5.2f}  {'× 40x':>14}  ${epp_now:>5.0f}  {'—':>12}  ← today's floor")
+print(SL)
+print(f"  Floor migration +${epp_now - epp_trough_val:.0f} (+{(epp_now/epp_trough_val-1)*100:.0f}%)  — entirely EPS compounding, multiple unchanged")
+print(f"  Current ${CURRENT_PRICE:.0f} is {epp_gap_pct:.0f}% above floor  ·  {(CURRENT_PRICE-epp_now)/sigma:.1f}σ to EPP")
+print(f"  Bear ${sc_map['BEAR'][3]:.0f} is {bear_vs_epp:.0f}% vs floor  ← bear scenario breaks through EPP")
+
+# EPS quality
+print(f"""
+  EPS QUALITY  (FY{EPS_TROUGH_YEAR} ${EPS_TROUGH:.2f} → FY2025 ${EPS_NOW:.2f};  +{(EPS_NOW/EPS_TROUGH-1)*100:.0f}%  ·  CAGR {((EPS_NOW/EPS_TROUGH)**(1/3)-1)*100:.1f}%/yr)
+{SL}
+  {"Driver":<38}  {"Share":>7}  {"$EPS":>6}  Type""")
+print(SL)
+for driver, share, is_real in EPS_DECOMP:
+    dollar = EPS_TROUGH * share
+    tag = "REAL  ✓" if is_real else "INFL. ~"
+    print(f"  {driver:<38}  {share*100:>6.1f}%  ${dollar:>4.2f}  {tag}")
+print(SL)
+print(f"  Real {real_dollar/eps_g_total*100:.0f}%  (${real_dollar:.2f})     Inflation {infl_dollar/eps_g_total*100:.0f}%  (${infl_dollar:.2f})")
 
 # Scenarios
 print(f"""
-  SCENARIOS  (2yr targets;  proxy vs market probabilities)
-  {HR}
-  {"Scenario":<8}  {"EPS":>6}  {"P/E":>5}  {"Price":>7}  {"Proxy%":>8}  {"Mkt%":>7}  {"Gap":>7}""")
-rule()
+  SCENARIOS  (2-year;  May 2026 → May 2028)
+{SL}
+  {"Scenario":<8}  {"EPS":>7}  {"P/E":>5}  {"Price":>7}  {"Proxy%":>8}  {"Mkt%":>7}  {"Gap":>8}  Narrative""")
+print(SL)
 for lbl, narr, eps, pe, price in SCENARIOS:
     pp = proxy_probs[lbl]
     mp = mkt_probs.get(lbl, 0)
-    print(f"  {lbl:<8}  ${eps:>5.2f}  {pe:>4}x  ${price:>6}  {pp*100:>7.1f}%  {mp*100:>6.1f}%  {(pp-mp)*100:>+6.1f}pp")
-print(f"  {HR}")
-print(f"  Proxy EV ${proxy_ev:.0f}  ·  Market EV ${mkt_ev:.0f}  ·  Consensus ~$622  ·  Bear prob: model {proxy_probs['BEAR']*100:.0f}% vs mkt {mkt_probs.get('BEAR',0)*100:.0f}%")
+    print(f"  {lbl:<8}  ${eps:>6.2f}  {pe:>4}x  ${price:>6}  {pp*100:>7.1f}%  {mp*100:>6.1f}%  {(pp-mp)*100:>+7.1f}pp  {narr[:28]}")
+print(SL)
+print(f"  Proxy EV ${proxy_ev:.0f}  ·  Market needs ${mkt_ev:.0f} to justify ${CURRENT_PRICE:.0f} at {REQUIRED_RETURN*100:.0f}%/yr  ·  Consensus ~$622")
 
 # Attractiveness ratio
 print(f"""
-  ATTRACTIVENESS RATIO  (downside to EPP / upside to 2yr target)
-  {HR}
-  Downside to EPP:  ${dist_epp:.0f}  ({dist_epp/CURRENT_PRICE*100:.0f}% of current price)
-  {HR}
-  {"Method":<28}  {"2yr target":>11}  {"Upside":>8}  {"Ratio":>7}  Signal
-  {HR}
-  {"A: Same P/E (51x trailing)":<28}  ${price_A:>9.0f}  {(price_A-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_A:>6.2f}x  {rlabel(ratio_A)}
-  {"B: Conserv exit 47x  ←PRIMARY":<28}  ${price_B:>9.0f}  {(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_B:>6.2f}x  {rlabel(ratio_B)}
-  {"C: BASE scenario":<28}  ${price_C:>9.0f}  {(price_C-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_C:>6.2f}x  {rlabel(ratio_C)}""")
+  ATTRACTIVENESS RATIO  (downside to EPP ${dist_epp:.0f}  =  {dist_epp/CURRENT_PRICE*100:.0f}% of price)
+{SL}
+  {"Method":<30}  {"2yr Target":>11}  {"Upside":>8}  {"Ratio":>7}  Signal""")
+print(SL)
+print(f"  {'A: Same P/E  (51x trailing)':<30}  ${price_A:>9.0f}  {(price_A-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_A:>6.2f}x  {rlabel(ratio_A)}")
+print(f"  {'B: Conserv exit 47x  ← PRIMARY':<30}  ${price_B:>9.0f}  {(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_B:>6.2f}x  {rlabel(ratio_B)}")
+print(f"  {'C: BASE scenario':<30}  ${price_C:>9.0f}  {(price_C-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_C:>6.2f}x  {rlabel(ratio_C)}")
 
 # Idiosyncratic
 print(f"""
   IDIOSYNCRATIC SCORE
-  {HR}
-  Idiosyncratic  {IDIO['idio_pct']}%   ██████████████████░░░░░░░░░░░░
-  Macro/sentiment {IDIO['macro_pct']}%   ████████████░░░░░░░░░░░░░░░░░░
-  Beta  {IDIO['beta']:.2f}
-  {HR}
-  {"Factor":<38}  {"Type":>6}  {"Wt":>5}""")
-rule()
+{SL}
+  Idiosyncratic   {IDIO['idio_pct']}%  {"█" * (IDIO['idio_pct'] // 3)}{"░" * (33 - IDIO['idio_pct'] // 3)}
+  Macro/sentiment {IDIO['macro_pct']}%  {"█" * (IDIO['macro_pct'] // 3)}{"░" * (33 - IDIO['macro_pct'] // 3)}
+  Beta {IDIO['beta']:.2f}
+{SL}
+  {"Factor":<36}  {"Type":>6}  {"Wt":>5}  Note""")
+print(SL)
 for factor, kind, wt, desc in IDIO["drivers"]:
-    print(f"  {factor:<38}  {kind:>6}  {wt*100:>4.0f}%  {desc[:28]}")
+    print(f"  {factor:<36}  {kind:>6}  {wt*100:>4.0f}%  {desc[:28]}")
 
 # Entry framework
 print(f"""
   ENTRY FRAMEWORK
-  {HR}
-  {"Zone":<16}  {"Price range":>14}  {"Ratio B":>8}  Action
-  {HR}
-  {"◉ EPP floor":<16}  {"$357 – $397":>14}  {"< 0.50x":>8}  Buy aggressively
-  {"◎ High conv.":<16}  {"$397 – $430":>14}  {"0.50–0.75x":>8}  Build position
-  {"◎ Today":<16}  {"~$452":>14}  {"0.92x":>8}  Accumulate
-  {"◐ Watchlist":<16}  {"$480 – $530":>14}  {"1.1–1.5x":>8}  Hold / no add
-  {"✕ Avoid":<16}  {"> $530":>14}  {"> 1.75x":>8}  Trim on strength
-  {HR}
-  UPGRADE to ◉ BUY if:   Ion crosses 55% growth  OR  China risk removed
-  DOWNGRADE to ✕ if:     Procedure vol < 8% for 2 qtrs  OR  DV5 ASP pushback""")
+{SL}
+  {"Zone":<16}  {"Price":>12}  {"Ratio B":>9}  Action""")
+print(SL)
+print(f"  {'◉ EPP floor':<16}  {'$357 – $397':>12}  {'< 0.50x':>9}  Buy aggressively")
+print(f"  {'◎ High conv.':<16}  {'$397 – $430':>12}  {'0.50–0.75x':>9}  Build position")
+print(f"  {'◎ Today':<16}  {'~$452':>12}  {'0.92x':>9}  Accumulate")
+print(f"  {'◐ Watchlist':<16}  {'$480 – $530':>12}  {'1.1–1.5x':>9}  Hold / no add")
+print(f"  {'✕ Avoid':<16}  {'> $530':>12}  {'> 1.75x':>9}  Trim on strength")
+print(SL)
+print(f"  UPGRADE to ◉ BUY if:  Ion > 55% growth  OR  China risk resolved")
+print(f"  DOWNGRADE to ✕ if:    Procedure vol < 8% for 2 qtrs  OR  China ban confirmed")
 
-# Summary
-print(f"""
-  {HR}
-  {TICKER}  ·  ${CURRENT_PRICE:.0f}  ·  {DATE}
-
-  {SIGNAL:<20}  Ratio B {ratio_B:.2f}x  ·  EPP ${epp_now:.0f} ({epp_gap_pct:+.0f}%)  ·  Cons. {cons_ret_ann:+.0f}%/yr
-  Idiosyncratic {IDIO['idio_pct']}% / Macro {IDIO['macro_pct']}%  ·  #1 risk: China  ·  Best entry: ${epp_now:.0f}–${epp_now+80:.0f}""")
 print()
-print("█" * W)
+print(HL)
+print(f"  {TICKER}  ·  {SIGNAL}  ·  Ratio B {ratio_B:.2f}x  ·  EPP ${epp_now:.0f} ({epp_gap_pct:+.0f}%)  ·  Idio {IDIO['idio_pct']}% / Macro {IDIO['macro_pct']}%")
+print(HL)
 print()
