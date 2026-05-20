@@ -329,20 +329,30 @@ print(f"""
 
 sub("1.  The worst EPP — when the floor was touched")
 p(f"""
-ISRG's EPP anchor was set in June 2022. The stock hit an intraday
-low of $197. At that moment EPS was ${EPS_TROUGH:.2f} (FY2022 non-GAAP) and
-the market assigned a 40x trough multiple — the lowest it had ever
-applied to the da Vinci installed-base economics in the company's
-public history. Model output: ${EPS_TROUGH:.2f} × 40 = ${epp_trough_val:.0f}. Actual low: $197.
-The 99.5% match is not luck — 40x is the floor the market has always
-used to value a captive recurring revenue stream with no competitor.
-
-What drove the stock to the floor was not a business event. It was
-the 2022 Fed rate cycle. ISRG was trading at ~70x earnings in late 2021;
-the market repriced every long-duration asset simultaneously. The
-business itself never missed: procedure volumes grew through the entire
+ISRG's EPP floor was last touched in June 2022, when the stock hit
+$197 — its lowest point since 2017. What drove it there was not the
+business: it was the 2022 Fed rate cycle repricing every long-duration
+growth asset simultaneously. Procedure volumes grew through the entire
 selloff, DV5 placements continued, and EPS beat consensus every quarter
-of the decline. Price fell to the floor. The floor held.
+of the decline.
+
+The floor that held at $197 reflects a 40x trough P/E. That number is
+worth understanding. A 40x floor — even at maximum market fear — is not
+assigned to cyclical businesses or companies where earnings are at risk.
+It is the multiple the market applies when it is convinced that earnings
+are structural, recurring, and will compound regardless of the macro
+environment. In ISRG's case the reason is the installed base: 9,000+
+systems already placed generate consumable revenue on every procedure
+performed, independent of whether a single new system is ever sold.
+The market treats that stream as near-annuity quality, and prices it
+accordingly even at the worst moment of a rate cycle.
+
+Contrast this with a medical device company that sells capital equipment
+without a razor/razorblade model — those businesses trough at 12-18x
+because revenue can simply stop. ISRG's 40x floor implies the market
+has always believed high-probability continued EPS growth is structural,
+not cyclical. You cannot buy this stock at a trough multiple that prices
+in business decline — the installed base economics prevent it.
 """)
 
 sub("2.  What changed since 2022 — and is it structural?")
