@@ -327,147 +327,163 @@ print(f"""
   │  EPP floor ${epp_now:.0f}  ·  Gap {epp_gap_pct:+.0f}%  ·  Conservative return {cons_ret_ann:+.0f}%/yr   │
   └{"─"*62}┘""")
 
-sub("The floor")
+sub("1.  The worst EPP — when the floor was touched")
 p(f"""
-We first built the EPP for ISRG at the 2022 trough. The model
-produced $198; the actual 52-week low that year was $197. That
-precision is not luck — it reflects the installed-base economics.
-ISRG's 9,000+ da Vinci systems generate ~70% of revenue through
-instruments and accessories that are consumed regardless of whether
-hospitals buy new equipment. The market has never valued that stream
-below 40x earnings, even at maximum fear. That 40x is the floor.
+ISRG's EPP anchor was set in June 2022. The stock hit an intraday
+low of $197. At that moment EPS was ${EPS_TROUGH:.2f} (FY2022 non-GAAP) and
+the market assigned a 40x trough multiple — the lowest it had ever
+applied to the da Vinci installed-base economics in the company's
+public history. Model output: ${EPS_TROUGH:.2f} × 40 = ${epp_trough_val:.0f}. Actual low: $197.
+The 99.5% match is not luck — 40x is the floor the market has always
+used to value a captive recurring revenue stream with no competitor.
 
-Since 2022 the floor has migrated to ${epp_now:.0f}, driven entirely by
-EPS compounding from ${EPS_TROUGH:.2f} to ${EPS_NOW:.2f}. The trough multiple
-is unchanged. Every dollar of real earnings growth adds ${EPP_MIN_PE:.0f} to
-the floor. That is what makes this a compounder thesis, not a value
-thesis — you are watching the floor rise beneath you.
-
-At today's ${CURRENT_PRICE:.0f} the stock sits {epp_gap_pct:.0f}% above its floor. That
-is a materially different setup than the {epp_gap_pct + 39:.0f}% premium implied
-by the stale $530 estimate we corrected earlier. The -{(1-EPS_TROUGH_PRICE/sc_map["BEAR"][3])*(-1)*100:.0f}% YTD
-selloff has done real compression work.
+What drove the stock to the floor was not a business event. It was
+the 2022 Fed rate cycle. ISRG was trading at ~70x earnings in late 2021;
+the market repriced every long-duration asset simultaneously. The
+business itself never missed: procedure volumes grew through the entire
+selloff, DV5 placements continued, and EPS beat consensus every quarter
+of the decline. Price fell to the floor. The floor held.
 """)
 
-sub("Is the earnings growth real?")
+sub("2.  What changed since 2022 — and is it structural?")
 p(f"""
-FY2022 to FY2025: EPS grew from ${EPS_TROUGH:.2f} to ${EPS_NOW:.2f}, a {(EPS_NOW/EPS_TROUGH-1)*100:.0f}% gain.
-We decompose that gain: {real_dollar/eps_g_total*100:.0f}% came from real volume growth and
-operating leverage; only {infl_dollar/eps_g_total*100:.0f}% from pricing and inflation pass-through.
-The business is physically larger — more systems placed, more procedures
-performed, more Ion bronchoscopes sold. Q1 2026 confirmed the trajectory
-is accelerating, not mean-reverting: EPS came in at ${EPS_Q1_2026:.2f}, up 38%
-year-on-year, beating consensus by 16.8 percentage points.
+EPS has compounded from ${EPS_TROUGH:.2f} to ${EPS_NOW:.2f} — a {(EPS_NOW/EPS_TROUGH-1)*100:.0f}% gain in three years,
+or {((EPS_NOW/EPS_TROUGH)**(1/3)-1)*100:.1f}%/yr. As a result the EPP floor has migrated from $198
+to ${epp_now:.0f}. The trough multiple is unchanged at 40x. The floor moved
+entirely because the business got physically larger.
 
-This matters for the floor argument. If EPS growth were mostly pricing,
-stripping it out would cut the floor sharply. Stripping the {infl_dollar/eps_g_total*100:.0f}%
-inflation component entirely, real EPS is ${EPS_NOW - infl_dollar:.2f} — which still
-puts the real EPP at ${(EPS_NOW - infl_dollar)*EPP_MIN_PE:.0f}, well below today's price.
+We decompose the ${eps_g_total:.2f} EPS gain into real versus inflation:
+
+  {real_dollar/eps_g_total*100:.0f}% real ({real_dollar:.2f}/shr) — procedure volume growth, operating
+    leverage, Ion mix shift, and buybacks. The installed base grew
+    from ~7,000 to 9,000+ systems; that is not a pricing artifact.
+    Stripping inflation entirely, real EPS is ${EPS_NOW - infl_dollar:.2f}, implying
+    a real EPP of ${(EPS_NOW - infl_dollar)*EPP_MIN_PE:.0f}. The floor survives a full
+    inflation haircut.
+
+  {infl_dollar/eps_g_total*100:.0f}% inflation ({infl_dollar:.2f}/shr) — ASP hikes on consumables and
+    CPI cost pass-through. Legitimate in a monopoly with pricing power,
+    but less structural than volume growth.
+
+Verdict: structural. Q1 2026 EPS of ${EPS_Q1_2026:.2f} annualises to $10+,
+up 38% year-on-year, confirming the trajectory is accelerating.
 """)
 
-sub("What the cross-reads are telling us")
+sub("3.  How likely is a return below the EPP floor?")
 p(f"""
-Two signals are running at BULL: DV5 placements +{17}% and total
-procedure volume +{16}%. These are the backbone of the thesis —
-hospital demand for the flagship product is strong, and surgeon
-adoption of existing systems is accelerating. Together they represent
-50% of the composite weight and both are pointing in the right direction.
+At ${CURRENT_PRICE:.0f} the stock is ${dist_epp:.0f} (21%) above the current floor of
+${epp_now:.0f}. To revisit the floor, either EPS must fall or the market
+must compress the trough multiple below 40x.
 
-Four signals sit at BASE: Ion procedures (+{39}%), international
-revenue (+{13}%), hospital capex (+{5}%), and China volumes (+{8}%).
-The one to watch most closely is Ion. At +39% it is approaching
-the 55% BULL threshold. If Ion crosses that level it signals that
-the lung cancer screening market is opening at scale — a genuinely
-new revenue stream that is not in current consensus forecasts.
-China at +8% is the risk watch — it is one headline away from
-flipping to BEAR, and that single move would drag the composite
-below BASE and challenge the EPP floor.
+Multiple compression alone (without EPS decline): a repeat of the 2022
+rate shock would bring the stock to ~${epp_now:.0f} — not below it. The floor
+itself would not break; price would simply converge to it. That is the
+scenario where $357–$397 becomes an extremely attractive entry zone.
 
-Structurally, the model adds +0.46 for the installed-base moat
-and DV5 cycle, partially offset by China concentration and the
-GLP-1 overhang. Net adjustment lifts the composite above what
-the market is pricing, producing the UNDERVALUED verdict.
+EPS decline: the only event that cuts EPS materially is a China ban.
+China is ~10-12% of revenue; a full ban strips ~$0.80-1.00 from EPS,
+cutting the EPP floor to ~${(EPS_NOW - 0.9)*EPP_MIN_PE:.0f}. That is what the BEAR
+scenario captures: ${sc_map['BEAR'][1]:.2f} EPS × {sc_map['BEAR'][2]}x = ${sc_map['BEAR'][3]:.0f} — which is -6%
+below the current floor of ${epp_now:.0f}. The floor pierces, but only
+because the earnings themselves are impaired simultaneously.
+
+Our model: {proxy_probs['BEAR']*100:.0f}% probability on BEAR. Market implies {mkt_probs.get('BEAR',0)*100:.0f}%.
+No current data supports the higher figure. Q1 2026 China procedures
+were up 8%, DV5 placements +17%, procedure volume +16%. The market is
+applying a geopolitical fear premium to a business that is still growing
+in every reportable dimension. The floor will not break unless the
+data breaks first.
 """)
 
-sub("Scenarios and where the market is wrong")
+sub("4.  Cross-read model — observable score vs market-implied score")
 p(f"""
-The market is pricing ISRG as if there is a {mkt_probs.get('BEAR',0)*100:.0f}% chance of the
-bear scenario materialising over two years. Our model puts that
-at {proxy_probs['BEAR']*100:.0f}%. That {(mkt_probs.get('BEAR',0) - proxy_probs['BEAR'])*100:.0f} percentage point gap is the core of the thesis.
+Six signals are tracked and scored 1–4 before each quarter report.
+The weighted composite tells us what the observable environment is
+consistent with. We back-solve the composite the current stock price
+requires to deliver a 15% annual hurdle rate — that is the market's
+implied score.
 
-The bear case requires China revenue to collapse, procedure volumes
-to stall, and hospital capex to contract simultaneously. None of
-those conditions are present in the current data — Q1 2026 showed
-the opposite across all three. The market's high BEAR weighting
-reflects geopolitical anxiety about China trade policy, not
-fundamental deterioration in the business.
+  Signal                        Score (1-4)   Weight   Current reading
+  DV5 placements YoY           BULL  (3/4)     22%    +17%  — above 12% BULL threshold
+  Procedure volume YoY         BULL  (3/4)     20%    +16%  — surgeon adoption accelerating
+  Ion procedures YoY           BASE  (2/4)     18%    +39%  — approaching 55% BULL threshold
+  International revenue YoY   BASE  (2/4)     15%    +13%  — steady, no acceleration
+  Hospital capex YoY           BASE  (2/4)     15%     +5%  — healthy, not a tailwind
+  China procedures YoY         BASE  (2/4)     10%     +8%  — positive; geopolitical watch
 
-The BASE scenario at ${sc_map['BASE'][3]:.0f} in two years requires nothing
-exceptional — DV5 global rollout continuing at current pace, Ion
-compounding at roughly current rates, and China staying at zero
-growth rather than collapsing. A reasonable probability of {proxy_probs['BASE']*100:.0f}%
-implies a model expected value of ${proxy_ev:.0f}, versus the ${mkt_ev:.0f}
-the market needs to justify today's price.
+Raw proxy composite:     {proxy_composite:.2f} / 4.00
+Structural adj (SCA):   +{sca:.2f}  (moat, DV5 cycle vs China/GLP-1 offset)
+Adjusted composite:      {adj_composite:.2f} / 4.00
+
+Market-implied composite: {mkt_comp:.2f}  — the score embedded in ${CURRENT_PRICE:.0f} at 15%/yr
+
+Gap: +{adj_gap:.2f} composite points. Our signals price a BASE/BULL blend.
+The market prices nearly pure BASE, applying a heavy discount for
+geopolitical risk that is not yet materialising in reported data.
+That gap is the source of the ACCUMULATE signal.
+
+Watch: Ion at +39% is approaching its BULL threshold of +55%. If it
+crosses, it signals that lung cancer screening is opening at scale —
+a new market not in consensus. That single move would upgrade the
+composite toward BULL and push Ratio B below 0.75x (BUY territory).
+China at +8% is one headline away from BEAR. A ban confirmation
+collapses the composite below BASE, challenges the EPP floor, and
+triggers a DOWNGRADE.
 """)
 
-sub("Risk/reward and what the ratio says")
+sub("5.  How idiosyncratic is this bet? — what your research controls")
 p(f"""
-At ${CURRENT_PRICE:.0f} the downside to the EPP floor is ${dist_epp:.0f} ({dist_epp/CURRENT_PRICE*100:.0f}% of price).
-Under our conservative growth assumptions — 15% EPS CAGR, exit at
-47x — the two-year upside is ${price_B - CURRENT_PRICE:.0f} (+{(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:.0f}%). Ratio B = {ratio_B:.2f}x.
+ISRG scores {IDIO['idio_pct']}% idiosyncratic: roughly {IDIO['idio_pct']} cents of every dollar of
+return variance comes from factors you can research and have a view on.
+The remaining {IDIO['macro_pct']}% is driven by rates, market sentiment, and
+hospital budget cycles that are harder to forecast precisely.
 
-That puts us squarely in ACCUMULATE territory. The floor gap and the
-EPS upside are almost exactly balanced under conservative assumptions;
-if signals stay at current readings (BASE/BULL mix), the BASE scenario
-delivers {ratio_C:.2f}x — meaning the upside outweighs the floor gap
-meaningfully.
+For context: a bank is ~25% idiosyncratic. A commodity producer ~15%.
+ISRG is unusually company-specific for its size — fundamental work
+creates genuine edge here.
 
-This is not the setup we had in 2022 when the stock sat at the EPP
-floor and Ratio B was effectively zero. Today you are paying a
-{epp_gap_pct:.0f}% premium over the floor. What justifies that premium is
-the visible catalyst stack: DV5 mid-cycle, Ion approaching BULL
-threshold, and {EPS_Q1_2026*4:.0f}+ annualised EPS run-rate already in Q1 2026.
-""")
+THE {IDIO['idio_pct']}% THAT IS YOURS TO GET RIGHT
+─────────────────────────────────────
+DV5 execution (22%): Adoption is hospital-by-hospital. The upgrade
+  cycle is trackable via quarterly placements data. No macro correlation
+  — hospitals decide on surgeon demand and local budgets, not the Fed.
 
-sub("Idiosyncratic commentary — how much of this bet is yours to win?")
-p(f"""
-We score ISRG {IDIO['idio_pct']}% idiosyncratic, {IDIO['macro_pct']}% macro-sensitive.
+Ion reimbursement (18%): CMS and FDA decisions on lung cancer screening
+  reimbursement are the binary events. An expanded code accelerates Ion
+  adoption regardless of the interest rate environment. This is
+  researchable: watch CMS comment periods and clinical guideline updates.
 
-The {IDIO['idio_pct']}% that is genuinely yours to analyse: DV5 adoption pace is
-a hospital-by-hospital decision driven by surgeon preference and
-capital budgets — not GDP. Ion reimbursement is a CMS and FDA
-process — not interest rates. The China binary (ban versus growth)
-is a geopolitical event specific to US medtech — not a broad market
-signal. These are questions fundamental research can answer with
-a real edge.
+China binary (15%): A ban or tariff escalation is geopolitical and
+  specific to US medtech — not a broad market event. You can form a view
+  on US-China trade dynamics and size your China risk exposure accordingly.
+  This is the only factor that breaks the EPP floor.
 
-The {IDIO['macro_pct']}% that macro controls: at 51x trailing earnings, ISRG
-carries meaningful rate sensitivity. A 100 basis point rise in
-the 10-year yield compresses the multiple by roughly 5-8 points —
-a $45-70 price impact with zero change in business fundamentals.
-That is exactly what happened in 2022, and it explains most of
-the -{(1-(sc_map['BEAR'][3]/VOL_52W_HIGH if (VOL_52W_HIGH := 574.0) else 0))*100:.0f}% YTD decline in 2026. Beta of 1.05 means broad
-risk-off episodes are not avoided by being right on the fundamentals.
+GLP-1 bariatric overhang (7%): Incremental data from metabolic surgery
+  conferences and insurance coverage decisions will resolve this. Unlikely
+  to be existential — robotic surgery is expanding beyond bariatric.
 
-The practical implication has a clean expression in the framework:
-below the EPP floor (${epp_now:.0f}), the bet is almost entirely idiosyncratic
-— the floor is anchored to earnings, not sentiment, and macro can
-only push price through it by also breaking the earnings thesis.
-Above ${CURRENT_PRICE + 50:.0f}, the macro fraction grows and you are
-increasingly just long sentiment on a quality stock. Today's ${CURRENT_PRICE:.0f}
-sits in the zone where idiosyncratic and macro are roughly balanced
-— which is consistent with the 0.92x attractiveness ratio and the
-ACCUMULATE signal rather than a conviction BUY.
+THE {IDIO['macro_pct']}% THAT MACRO CONTROLS
+──────────────────────────────
+Rate sensitivity (18%): At {trailing_pe:.0f}x trailing P/E, a 100bp move in the
+  10-year yield compresses the multiple by ~5-8 points — a $45-70 price
+  impact with no change in fundamentals. This happened in 2022 and again
+  in early 2026. Being right on the business does not protect you here.
 
-The single largest idiosyncratic risk — and the one most worth
-monitoring — is China. It is binary, not gradual: a regulatory ban
-or tariff escalation that removes ISRG from the Chinese market
-overnight would cut ~{10}-12% of revenue with no replacement in
-the near term. That event, and only that event, pushes the bear
-price ($334) below the EPP floor ($357) and breaks the floor thesis.
-Everything else — GLP-1, hospital capex, competition — is a slow
-bleed that the installed base absorbs. China is the one scenario
-where the floor does not hold.
+Hospital capex cycle (10%): Correlated to GDP and CFO confidence. In a
+  hard recession, hospitals defer capital equipment purchases. Systematic
+  risk — not ISRG-specific.
+
+Market beta (10%): At 1.05x beta, broad risk-off events track the S&P.
+  No fundamental work protects against a market-wide drawdown.
+
+WHAT THIS MEANS FOR POSITION SIZING
+The EPP floor (${epp_now:.0f}) is almost entirely idiosyncratic — anchored to
+EPS, not sentiment. Macro can only push price through it by also
+impairing the earnings (China scenario). At ${CURRENT_PRICE:.0f} you are 27%
+above the floor, in the zone where the {IDIO['macro_pct']}% macro exposure is most
+relevant. The ACCUMULATE signal rather than conviction BUY reflects
+this: the thesis is right, but you are not being paid to ignore the
+macro component at current prices.
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
