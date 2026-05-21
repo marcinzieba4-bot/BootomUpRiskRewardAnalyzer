@@ -7,7 +7,7 @@ Part 1  FRAMEWORK LOGIC     what each concept means (reusable)
 Part 2  MU CASE             narrative per section, only what matters
 Part 3  NUMBERS & SIGNALS   pure data, no prose
 
-Price: $728.90  (Yahoo Finance / WebSearch, 2026-05-21)
+Price: $720.55  (Yahoo Finance / WebSearch, 2026-05-21)
 """
 import math
 
@@ -18,7 +18,7 @@ TICKER        = "MU"
 COMPANY       = "Micron Technology"
 SECTOR        = "Memory Semiconductors · HBM / DRAM / NAND"
 DATE          = "2026-05-21"
-CURRENT_PRICE = 728.90    # Yahoo Finance / WebSearch 2026-05-21
+CURRENT_PRICE = 720.55    # Yahoo Finance / WebSearch 2026-05-21
 
 EPS_TROUGH_YEAR  = 2022
 EPS_TROUGH       = 9.14     # FY2022 non-GAAP (last conventional cycle peak; used as floor reference)
