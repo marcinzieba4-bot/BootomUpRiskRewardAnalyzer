@@ -563,12 +563,12 @@ print(f"""
 print(SL)
 for name, desc, unit, bc, blo, bulo, xlo, cur, w, sc in scored:
     u = unit.split()[0]
-    print(f"  {name:<32}  {desc:<28}  {cur:>4}{u}  {SLABEL[sc]}  {SBAR[sc]}")
+    val = f"${cur}{u[1:]}" if u.startswith('$') else f"{cur:>4}{u}"
+    print(f"  {name:<32}  {desc:<28}  {val:>6}  {SLABEL[sc]}  {SBAR[sc]}")
 print(SL)
 print(f"  Structural adjustment (SCA):")
 for desc, sc, wt in STRUCTURAL_FACTORS:
-    sign = "+" if sc > 0 else " "
-    print(f"    {sign}{sc:+.1f} × {wt*100:.0f}%  {desc}")
+    print(f"    {sc:+.1f} × {wt*100:.0f}%  {desc}")
 print(f"  SCA {sca:+.2f}  →  adj composite {adj_composite:.2f}  →  verdict: CYCLE PEAK / FAIRLY PRICED")
 
 # Scenario thresholds
@@ -579,7 +579,8 @@ print(f"""
 print(SL)
 for name, desc, unit, bc, blo, bulo, xlo, cur, w, sc in scored:
     u = unit.split()[0]
-    print(f"  {name:<32}  {bc:>5}{u}  {blo}-{bulo:>3}    {bulo}-{xlo:>3}    {xlo:>5}{u}  {cur:>4}{u}")
+    def fmt(v): return f"${v}{u[1:]}" if u.startswith('$') else f"{v}{u}"
+    print(f"  {name:<32}  {fmt(bc):>6}  {fmt(blo)}-{fmt(bulo):>4}  {fmt(bulo)}-{fmt(xlo):>4}  {fmt(xlo):>6}  {fmt(cur):>5}")
 
 # EPP
 print(f"""
