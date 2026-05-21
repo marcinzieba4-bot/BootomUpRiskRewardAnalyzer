@@ -60,19 +60,17 @@ STRUCTURAL_FACTORS = [
     ("Customer concentration — NVIDIA ~40% of HBM revenue",        -0.8, 0.15),
 ]
 
-# EPS_DECOMP uses structural/cyclical split (not real/inflation — appropriate for memory)
-# Share = fraction of (EPS_NOW − EPS_TROUGH) attributed to each driver
-# is_structural=True → structural compounding; False → cyclical/temporary
+# EPS_DECOMP: structural/cyclical split (memory analogue of real/inflation in ISRG/MSFT)
+# is_structural=True → durable compounding; False → cycle-dependent, mean-reverts
+# Shares sum to 1.00; dollar = EPS_TROUGH × share (same engine as ISRG/MSFT)
 EPS_DECOMP = [
     ("HBM mix shift  (near-zero→$8B+ revenue)",  0.40,  True),
-    ("Operating leverage  (scale + fab util.)",  0.30,  True),
-    ("HBM capacity expansion  (1γ node ramp)",   0.10,  True),
-    ("DRAM ASP recovery  (cycle pricing)",        0.20,  False),
-    ("NAND recovery  (partial)",                  0.05,  False),
-    ("Share buybacks  (count reduction)",         0.05,  True),
+    ("Operating leverage  (scale + fab util.)",  0.26,  True),
+    ("HBM capacity expansion  (1γ node ramp)",   0.07,  True),
+    ("DRAM ASP recovery  (cycle pricing)",        0.22,  False),
+    ("NAND recovery  (partial)",                  0.04,  False),
+    ("Share buybacks  (count reduction)",         0.01,  True),
 ]
-# Note: shares sum to >1 (1.10) — deliberate; reflects some driver overlap at peak cycle.
-# We use these only for directional decomp, not strict accounting arithmetic.
 
 # ── IDIOSYNCRATIC ASSESSMENT ──────────────────────────────────────────────────
 IDIO = {
@@ -180,14 +178,10 @@ adj_gap = adj_composite - mkt_comp if mkt_comp else 0
 vol_pct = 0.45     # MU: historically volatile semiconductor; HBM beta
 sigma   = CURRENT_PRICE * vol_pct
 
-# EPS decomp: structural vs cyclical
+# EPS decomp: structural vs cyclical (mirrors ISRG/MSFT real/inflation engine)
 eps_g_total     = EPS_NOW - EPS_TROUGH
-structural_share = sum(sh for _, sh, is_s in EPS_DECOMP if is_s)
-cyclical_share   = sum(sh for _, sh, is_s in EPS_DECOMP if not is_s)
-# dollar approximation (normalised to 1.0 weight)
-total_share = structural_share + cyclical_share
-struct_dollar = eps_g_total * (structural_share / total_share)
-cyclical_dollar = eps_g_total * (cyclical_share / total_share)
+cyclical_dollar = sum(EPS_TROUGH * sh for _, sh, is_s in EPS_DECOMP if not is_s)
+struct_dollar   = eps_g_total - cyclical_dollar
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -385,7 +379,7 @@ shift driven by HBM (High Bandwidth Memory).
 
 We decompose the gain into structural versus cyclical:
 
-  ~{int(structural_share/total_share*100)}% structural (${struct_dollar:.2f}/shr):
+  ~{struct_dollar/eps_g_total*100:.0f}% structural (${struct_dollar:.2f}/shr):
     HBM mix shift — HBM revenue went from essentially zero to an $8B+
     annualised run-rate. HBM earns 3-4x the ASP of standard DRAM per bit
     and commands structurally higher gross margins (~55-60% vs ~35% DRAM).
@@ -394,7 +388,7 @@ We decompose the gain into structural versus cyclical:
     platform generation. Operating leverage and 1γ node cost reductions
     amplify EPS further.
 
-  ~{int(cyclical_share/total_share*100)}% cyclical (${cyclical_dollar:.2f}/shr):
+  ~{cyclical_dollar/eps_g_total*100:.0f}% cyclical (${cyclical_dollar:.2f}/shr):
     DRAM ASP recovery (+54% YoY) and partial NAND recovery. These are
     real but cycle-dependent. DRAM pricing will mean-revert if supply
     discipline breaks. NAND has shown less structural improvement —
@@ -597,32 +591,30 @@ print(f"  Bear ${sc_map['BEAR'][3]:.0f} is {bear_vs_epp:.0f}% vs floor  ← bear
 
 # EPS quality / structural decomp
 print(f"""
-  EPS DECOMP  (FY{EPS_TROUGH_YEAR} ${EPS_TROUGH:.2f} → TTM ${EPS_NOW:.2f};  +{(EPS_NOW/EPS_TROUGH-1)*100:.0f}%;
-               structural/cyclical split for memory — not real/inflation)
+  EPS QUALITY  (FY{EPS_TROUGH_YEAR} ${EPS_TROUGH:.2f} → TTM ${EPS_NOW:.2f};  +{(EPS_NOW/EPS_TROUGH-1)*100:.0f}%  ·  structural/cyclical split)
 {SL}
-  {"Driver":<42}  {"Share":>7}  Type""")
+  {"Driver":<42}  {"Share":>6}  {"$EPS":>6}  Type""")
 print(SL)
 for driver, share, is_struct in EPS_DECOMP:
-    tag = "STRUCTURAL ✓" if is_struct else "CYCLICAL  ~"
-    print(f"  {driver:<42}  {share*100:>6.0f}%  {tag}")
+    dollar = EPS_TROUGH * share
+    tag = "STRUCT ✓" if is_struct else "CYCL.  ~"
+    print(f"  {driver:<42}  {share*100:>5.0f}%  ${dollar:>4.2f}  {tag}")
 print(SL)
-print(f"  Structural ~{int(structural_share/total_share*100)}%  (${struct_dollar:.2f}/shr)     Cyclical ~{int(cyclical_share/total_share*100)}%  (${cyclical_dollar:.2f}/shr)")
-print(f"  NOTE: shares sum >100% due to driver overlap at peak cycle — directional only")
+print(f"  Structural {struct_dollar/eps_g_total*100:.0f}%  (${struct_dollar:.2f})     Cyclical {cyclical_dollar/eps_g_total*100:.0f}%  (${cyclical_dollar:.2f})")
 
 # Scenarios
 print(f"""
   SCENARIOS  (2-year;  May 2026 → May 2028)
 {SL}
-  {"Scenario":<8}  {"EPS":>7}  {"P/E":>5}  {"Price":>7}  {"vs now":>7}  {"Proxy%":>7}  {"Mkt%":>6}  Narrative""")
+  {"Scenario":<8}  {"EPS":>7}  {"P/E":>5}  {"Price":>7}  {"Proxy%":>8}  {"Mkt%":>7}  {"Gap":>8}  Narrative""")
 print(SL)
 for lbl, narr, eps, pe, price in SCENARIOS:
     pp = proxy_probs[lbl]
     mp = mkt_probs.get(lbl, 0)
-    vs_now = (price - CURRENT_PRICE) / CURRENT_PRICE * 100
-    print(f"  {lbl:<8}  ${eps:>6.2f}  {pe:>4}x  ${price:>6}  {vs_now:>+6.0f}%  {pp*100:>6.1f}%  {mp*100:>5.1f}%  {narr[:30]}")
+    print(f"  {lbl:<8}  ${eps:>6.2f}  {pe:>4}x  ${price:>6}  {pp*100:>7.1f}%  {mp*100:>6.1f}%  {(pp-mp)*100:>+7.1f}pp  {narr[:28]}")
 print(SL)
 print(f"  Proxy EV ${proxy_ev:.0f}  ·  Market needs ${mkt_ev:.0f} to justify ${CURRENT_PRICE:.2f} at {REQUIRED_RETURN*100:.0f}%/yr")
-print(f"  BASE (${sc_map['BASE'][3]:.0f}) is -{CURRENT_PRICE - sc_map['BASE'][3]:.0f} below today  ←  even base case implies loss from current price")
+print(f"  BASE (${sc_map['BASE'][3]:.0f}) is {(sc_map['BASE'][3]-CURRENT_PRICE)/CURRENT_PRICE*100:+.0f}% vs today  ←  even base case implies loss from current price")
 
 # Attractiveness ratio
 print(f"""
@@ -630,10 +622,9 @@ print(f"""
 {SL}
   {"Method":<34}  {"2yr Target":>11}  {"Upside":>8}  {"Ratio":>7}  Signal""")
 print(SL)
-print(f"  {'A: Same P/E  ({:.1f}x trailing)'.format(trailing_pe):<34}  ${price_A:>9.0f}  {(price_A-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_A:>6.2f}x  {rlabel(ratio_A)}")
-print(f"  {'B: Conserv exit 25x  ← PRIMARY':<34}  ${price_B:>9.0f}  {(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_B:>6.2f}x  {rlabel(ratio_B)}")
-_c_str = f"${price_C:.0f}  (BASE below price)" if ratio_C_raw <= 0 else f"${price_C:.0f}"
-print(f"  {'C: BASE scenario':<34}  {_c_str:>11}  {(price_C-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {'N/A':>7}  {rlabel(ratio_C)}")
+print(f"  {'A: Same P/E  ({:.1f}x trailing)'.format(trailing_pe):<30}  ${price_A:>9.0f}  {(price_A-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_A:>6.2f}x  {rlabel(ratio_A)}")
+print(f"  {'B: Conserv exit 25x  ← PRIMARY':<30}  ${price_B:>9.0f}  {(price_B-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {ratio_B:>6.2f}x  {rlabel(ratio_B)}")
+print(f"  {'C: BASE scenario':<30}  ${price_C:>9.0f}  {(price_C-CURRENT_PRICE)/CURRENT_PRICE*100:>+7.0f}%  {'N/A':>6}   ✕ AVOID  (BASE below current price)")
 
 # Idiosyncratic
 print(f"""
