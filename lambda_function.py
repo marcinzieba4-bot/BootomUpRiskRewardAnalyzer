@@ -45,6 +45,7 @@ MODELS = {
     "INTC": "intc_signal_model.py",
     "PKN":  "pkn_signal_model.py",
     "MRVL": "mrvl_signal_model.py",
+    "CAT":  "cat_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -191,6 +192,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Intel Corporation", "sector": "Semiconductor IDM · x86 CPU · Intel Foundry (IFS) · AI PC",
               "summary": "One of the greatest mega-cap recoveries ever: +527% from 52-wk low $18.97 to $119. 18A in HVM (Oct 2025), yields +7%/month, Panther Lake H2 2026, Microsoft as foundry customer, $19B CHIPS Act backing. But at 99× FY2026E EPS, Method B (FY2028E $3.00 × 35× = $105) is BELOW current price. Avg analyst target $87.86 — 26% below current. Priced for perfection. WATCHLIST ~$70–80; ACCUMULATE ~$50."},
+    "CAT":  {"ticker": "CAT",  "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
+              "price": 880.00, "date": "2026-05-25", "epp_gap_pct": 229.8, "ratio_b_fmt": "N/A",
+              "sector_group": "Industrials",
+              "company": "Caterpillar Inc.", "sector": "Heavy Equipment · Construction · Mining · Power & Energy",
+              "summary": "+191% from 52-wk low $302; near ATH $931. Q1 2026: Rev $17.4B (+22%), adj EPS $5.54 (+30%), record backlog $63B, Power & Energy +41% (AI data centre turbines). World's best industrial franchise. BUT at 39× FY2026E adj EPS, Method B (FY2027E $27.73 × 22× = $610) is 31% BELOW current. Even at 35× = $970 (BULL scenario), only +10% upside. Analyst avg target $714-778 (-12-19%). WATCHLIST $620-660; ACCUMULATE $530-570."},
     "MRVL": {"ticker": "MRVL", "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
               "price": 196.00, "date": "2026-05-25", "epp_gap_pct": 419.2, "ratio_b_fmt": "N/A",
               "sector_group": "Technology",
