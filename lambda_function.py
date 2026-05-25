@@ -46,6 +46,7 @@ MODELS = {
     "PKN":  "pkn_signal_model.py",
     "MRVL": "mrvl_signal_model.py",
     "CAT":  "cat_signal_model.py",
+    "LLY":  "lly_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -202,6 +203,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "LLY":  {"ticker": "LLY",  "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
+              "price": 1065.00, "date": "2026-05-25", "epp_gap_pct": 287.8, "ratio_b_fmt": "4.73x",
+              "sector_group": "Healthcare",
+              "company": "Eli Lilly and Company", "sector": "Pharmaceuticals · GLP-1 Obesity/Diabetes · Oncology · Neuroscience",
+              "summary": "Best-in-class GLP-1 franchise (Mounjaro + Zepbound $12.8B Q1 2026; +56% YoY rev). Q1 2026: EPS $8.55 (+156% YoY); FY2026 guidance $35.50-37 non-GAAP. Pipeline: retatrutide (triple agonist, Phase 3 — potentially best-ever weight-loss drug), orforglipron (oral GLP-1), donanemab. Quality is undeniable. But at 29× FY2026E, Method B (FY2027E $44 × 28×) = $1,232 gives only +15.7% upside vs $790 EPP downside. Ratio B 4.73×. WATCHLIST $820-880; ACCUMULATE $680-740."},
     "PKN":  {"ticker": "PKN",  "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
               "price": 144.50, "date": "2026-05-25", "epp_gap_pct": 151.7, "ratio_b_fmt": "~290x",
               "sector_group": "Energy",
