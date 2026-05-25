@@ -48,6 +48,7 @@ MODELS = {
     "CAT":  "cat_signal_model.py",
     "LLY":  "lly_signal_model.py",
     "UNH":  "unh_signal_model.py",
+    "JNJ":  "jnj_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -204,6 +205,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "JNJ":  {"ticker": "JNJ",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 234.34,  "date": "2026-05-25", "epp_gap_pct": 55.3,  "ratio_b_fmt": "1.86x",
+              "sector_group": "Healthcare",
+              "company": "Johnson & Johnson", "sector": "Pharmaceuticals · MedTech · Oncology · Immunology · Cardiovascular",
+              "summary": "AAA-rated dividend king (62-yr streak); post-Kenvue pure pharma+MedTech. Darzalex+Carvykti+Rybrevant compounding; Abiomed heart pump monopoly; Q1 2026 revenue +9.9%. BUT: 67K+ talc MDL cases pending; $1.5B single verdict Dec 2025; 3rd bankruptcy rejected. 52-wk low $149 = EPP floor exactly. At 18.5× FY2027E, ratio_b 1.86× — HOLD/TRIM. Talc resolution unlocks re-rate to 24×. WATCHLIST $195-210; ACCUMULATE $165-180."},
     "UNH":  {"ticker": "UNH",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 387.30,  "date": "2026-05-25", "epp_gap_pct": 116.5, "ratio_b_fmt": "2.25x",
               "sector_group": "Healthcare",
