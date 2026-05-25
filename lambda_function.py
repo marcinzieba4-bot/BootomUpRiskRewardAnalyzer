@@ -50,6 +50,7 @@ MODELS = {
     "UNH":  "unh_signal_model.py",
     "JNJ":  "jnj_signal_model.py",
     "ABBV": "abbv_signal_model.py",
+    "MRK":  "mrk_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -206,6 +207,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "MRK":  {"ticker": "MRK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 122.55,  "date": "2026-05-25", "epp_gap_pct": 45.0,  "ratio_b_fmt": "1.91x",
+              "sector_group": "Healthcare",
+              "company": "Merck & Co., Inc.", "sector": "Pharmaceuticals · Oncology · Cardiovascular · Vaccines · Animal Health",
+              "summary": "Keytruda $8.03B/qtr (+12% YoY) near peak, but US patent cliff arrives 2028 — $35B+ revenue at risk. Winrevair $525M (+88%); Qlex SC launch $128M. At 12.9× FY2027E $9.50, cheap on fwd earnings but cliff discount caps multiple. Ratio B 1.91×. WATCHLIST $100-108; ACCUMULATE $88-95; BUY $75-85."},
     "ABBV": {"ticker": "ABBV", "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",   "signal_color": "#60a5fa",
               "price": 215.70,  "date": "2026-05-25", "epp_gap_pct": 77.6,  "ratio_b_fmt": "1.30x",
               "sector_group": "Healthcare",
