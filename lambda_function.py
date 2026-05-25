@@ -52,6 +52,7 @@ MODELS = {
     "ABBV": "abbv_signal_model.py",
     "MRK":  "mrk_signal_model.py",
     "TMO":  "tmo_signal_model.py",
+    "ABT":  "abt_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -208,6 +209,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "ABT":  {"ticker": "ABT",  "signal": "◉ BUY",        "signal_short": "BUY",        "signal_color": "#4ade80",
+              "price": 87.41,   "date": "2026-05-25", "epp_gap_pct": 36.6,  "ratio_b_fmt": "0.62x",
+              "sector_group": "Healthcare",
+              "company": "Abbott Laboratories", "sector": "MedTech · Diagnostics · Nutrition · CGM · Cologuard · Established Pharma",
+              "summary": "World-class franchise at a litigation discount. FreeStyle Libre (global #1 CGM, 60%+ share, CMS Type 2 expansion) + Cologuard (#1 non-invasive colon cancer screen, $21B Exact Sciences acquired March 2026) at 16× FY2026E — trough multiple. Down 37% from Jun 2025 high on NEC baby formula MDL (782 cases; $70M April verdict). NEC is quantifiable and manageable ($1.5-2B settlement most likely). Dividend King 52+ years; 2.9% yield. Ratio B 0.62×. BUY $78-90; strong add $74-82 on August 2026 trial panic."},
     "TMO":  {"ticker": "TMO",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
               "price": 448.28,  "date": "2026-05-25", "epp_gap_pct": 42.3,  "ratio_b_fmt": "0.85x",
               "sector_group": "Healthcare",
