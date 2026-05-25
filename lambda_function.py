@@ -53,6 +53,7 @@ MODELS = {
     "MRK":  "mrk_signal_model.py",
     "TMO":  "tmo_signal_model.py",
     "ABT":  "abt_signal_model.py",
+    "PFE":  "pfe_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -209,6 +210,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "PFE":  {"ticker": "PFE",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 25.90,   "date": "2026-05-25", "epp_gap_pct": 30.8,  "ratio_b_fmt": "0.86x",
+              "sector_group": "Healthcare",
+              "company": "Pfizer Inc.", "sector": "Pharmaceuticals · Oncology (Seagen ADCs) · Vaccines · Obesity",
+              "summary": "Post-COVID normalization complete; LOE cliff now the central risk: Eliquis 2026, Ibrance 2027 — ~$17-18B revenue at risk by 2028. Counter: Seagen ADCs +20% Q1 2026; $4B+ cost cuts by 2027; obesity (PF'3944 Phase IIb positive; 10 Phase III 2026). At 8.9× FY2026E — cheapest since FY2023 trough. 6.6% dividend yield paid while waiting. Ratio B 0.86×. ACCUMULATE $22-28; BUY on panic $20-23."},
     "ABT":  {"ticker": "ABT",  "signal": "◉ BUY",        "signal_short": "BUY",        "signal_color": "#4ade80",
               "price": 87.41,   "date": "2026-05-25", "epp_gap_pct": 36.6,  "ratio_b_fmt": "0.62x",
               "sector_group": "Healthcare",
