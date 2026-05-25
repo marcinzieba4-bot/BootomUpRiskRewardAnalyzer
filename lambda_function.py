@@ -49,6 +49,7 @@ MODELS = {
     "LLY":  "lly_signal_model.py",
     "UNH":  "unh_signal_model.py",
     "JNJ":  "jnj_signal_model.py",
+    "ABBV": "abbv_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -205,6 +206,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "ABBV": {"ticker": "ABBV", "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",   "signal_color": "#60a5fa",
+              "price": 215.70,  "date": "2026-05-25", "epp_gap_pct": 77.6,  "ratio_b_fmt": "1.30x",
+              "sector_group": "Healthcare",
+              "company": "AbbVie Inc.", "sector": "Pharmaceuticals · Immunology · Oncology · Neuroscience · Aesthetics",
+              "summary": "Humira cliff largely absorbed — Skyrizi ($4.5B/qtr) + Rinvoq ($2.1B/qtr) already beat AbbVie's own 2027 combined target. CEO: 'we see upside to consensus.' Q1 2026: revenues $15.0B (+12.4%), adj EPS $2.65. FY2027E $16 adj EPS at 13.5× forward — one of cheapest big pharma. 3.2% dividend yield. Ratio B 1.30×. Emraclidine (schizophrenia) PhIII read-out 2026 is key binary catalyst. ACCUMULATE $178-188; BUY $140-155."},
     "JNJ":  {"ticker": "JNJ",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 234.34,  "date": "2026-05-25", "epp_gap_pct": 55.3,  "ratio_b_fmt": "1.86x",
               "sector_group": "Healthcare",
