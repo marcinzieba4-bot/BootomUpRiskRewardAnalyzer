@@ -55,6 +55,7 @@ MODELS = {
     "ABT":  "abt_signal_model.py",
     "PFE":  "pfe_signal_model.py",
     "DHR":  "dhr_signal_model.py",
+    "AMGN": "amgn_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -261,6 +262,11 @@ SUMMARY = {
               "sector_group": "Energy",
               "company": "Orlen S.A.", "sector": "Integrated Energy · Oil Refining · Upstream Gas · Petrochemicals · Power",
               "summary": "Note: PLN-denominated stock (WSE/GPW). Near ATH PLN 146.98 (May 12, 2026) after +110% surge from 52-wk low PLN 69.20. Poland's largest company — Lotos + PGNiG + Energa mega-merger. FY2025 adj EPS PLN 9.57; EBITDA LIFO PLN 41.5B; dividend PLN 8/share (5.5% yield). BUT: Method B (FY2027E PLN 14.48 × 10×) = PLN 144.8 — AT current price. Avg analyst target PLN 120-127 (-12-17%). Stock has priced in its 2-year fair value. WATCHLIST PLN 105-115; ACCUMULATE PLN 90-100."},
+    "AMGN": {"ticker": "AMGN", "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 331.70,  "date": "2026-05-25", "epp_gap_pct": 58.0,  "ratio_b_fmt": "2.02x",
+              "sector_group": "Healthcare",
+              "company": "Amgen Inc.", "sector": "Biotechnology · Inflammation/Oncology · Rare Disease (Horizon) · Obesity Pipeline (MariTide)",
+              "summary": "Waiting for MariTide — fairly priced while the clock ticks. EPS growing 9-13%/yr (FY2025 $19.84 → FY2026E $22.40); Q1 2026 EPS $5.15 (+13%), revenue $8.62B (+9%), guidance raised. Repatha +22%, Tepezza +24%. But $331.70 = 14.8× FY2026E — already reflecting EPS growth; MariTide Phase 3 (monthly dosing GLP-1) is option not value. Enbrel erosion (-13%) and Otezla LOE Feb 2028 are known headwinds. Horizon debt $28B overhang caps multiple. Ratio B 2.02×. 2.77% dividend while waiting. BUY $250-270; ACCUMULATE $270-295; WATCHLIST $295-330."},
 }
 
 CORS = {
