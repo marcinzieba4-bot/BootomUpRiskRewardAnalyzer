@@ -56,6 +56,7 @@ MODELS = {
     "PFE":  "pfe_signal_model.py",
     "DHR":  "dhr_signal_model.py",
     "AMGN": "amgn_signal_model.py",
+    "BSX":  "bsx_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -262,6 +263,11 @@ SUMMARY = {
               "sector_group": "Energy",
               "company": "Orlen S.A.", "sector": "Integrated Energy · Oil Refining · Upstream Gas · Petrochemicals · Power",
               "summary": "Note: PLN-denominated stock (WSE/GPW). Near ATH PLN 146.98 (May 12, 2026) after +110% surge from 52-wk low PLN 69.20. Poland's largest company — Lotos + PGNiG + Energa mega-merger. FY2025 adj EPS PLN 9.57; EBITDA LIFO PLN 41.5B; dividend PLN 8/share (5.5% yield). BUT: Method B (FY2027E PLN 14.48 × 10×) = PLN 144.8 — AT current price. Avg analyst target PLN 120-127 (-12-17%). Stock has priced in its 2-year fair value. WATCHLIST PLN 105-115; ACCUMULATE PLN 90-100."},
+    "BSX":  {"ticker": "BSX",  "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#4ade80",
+              "price": 57.78,   "date": "2026-05-25", "epp_gap_pct": 11.1,  "ratio_b_fmt": "0.14x",
+              "sector_group": "Healthcare",
+              "company": "Boston Scientific Corporation", "sector": "MedTech · Cardiovascular · Electrophysiology (Farapulse) · WATCHMAN · Neurovascular",
+              "summary": "Trading at the EPP floor ($52.00) after -47% drawdown from Dec 2025 high $109.50. The 52-wk low $52.52 = exactly 20.2× stress EPS — the market priced in permanent impairment. Business reality: revenue +11.6%, adj EPS +6.7%, guidance +9-11% in FY2026. Farapulse PFA $1B+ first year, +35% Q4 even with J&J Varipulse competition. WATCHMAN softness is unexplained but structural driver (AF + anticoagulant alternatives) is intact. Penumbra $14.5B (neurovascular/thrombectomy) adds optionality. Securities litigation manageable ($100-350M range). At 17.1× FY2026E — lowest fwd multiple in 10+ years. 31 analysts: Strong Buy; avg target $83.47. Ratio B 0.14×. BUY $52-65; ACCUMULATE $65-78."},
     "AMGN": {"ticker": "AMGN", "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 331.70,  "date": "2026-05-25", "epp_gap_pct": 58.0,  "ratio_b_fmt": "2.02x",
               "sector_group": "Healthcare",
