@@ -51,6 +51,7 @@ MODELS = {
     "JNJ":  "jnj_signal_model.py",
     "ABBV": "abbv_signal_model.py",
     "MRK":  "mrk_signal_model.py",
+    "TMO":  "tmo_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -207,6 +208,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "TMO":  {"ticker": "TMO",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 448.28,  "date": "2026-05-25", "epp_gap_pct": 42.3,  "ratio_b_fmt": "0.85x",
+              "sector_group": "Healthcare",
+              "company": "Thermo Fisher Scientific Inc.", "sector": "Life Sciences Tools · Instruments · Bioproduction · CRO Services",
+              "summary": "Dominant picks-and-shovels franchise for life sciences: #1 lab tools, instruments, CRO, and bioproduction globally. Off 30% from Jan 2026 high on NIH funding cuts ($500M) + tariffs ($400M) + China weakness. These are quantifiable policy headwinds, not structural impairments. Bioproduction (mRNA, gene therapy) +13% Q4 2025. FY2026 guidance raised: adj EPS $24.64-25.12 (+8-10%). At 18× FY2026E — low end of 5-yr range. Ratio B 0.85×. WATCHLIST $415-440; ACCUMULATE $370-395; BUY $310-340."},
     "MRK":  {"ticker": "MRK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 122.55,  "date": "2026-05-25", "epp_gap_pct": 45.0,  "ratio_b_fmt": "1.91x",
               "sector_group": "Healthcare",
