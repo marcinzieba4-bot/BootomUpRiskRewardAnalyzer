@@ -47,6 +47,7 @@ MODELS = {
     "MRVL": "mrvl_signal_model.py",
     "CAT":  "cat_signal_model.py",
     "LLY":  "lly_signal_model.py",
+    "UNH":  "unh_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -203,6 +204,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "UNH":  {"ticker": "UNH",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 387.30,  "date": "2026-05-25", "epp_gap_pct": 116.5, "ratio_b_fmt": "2.25x",
+              "sector_group": "Healthcare",
+              "company": "UnitedHealth Group Incorporated", "sector": "Managed Care · Medicare Advantage · Optum Health & Rx",
+              "summary": "World's largest health insurer — post-crisis recovery at +65% from 52-wk low $234.60. 2025 crisis: Medicare Advantage cost explosion, CEO Witty resigned, guidance pulled, DOJ criminal + civil probe (MA billing fraud). Q1 2026: $111.7B revenue, adj EPS $7.23. Hemsley back. Franchise intact but DOJ is existential tail risk. At 16× FY2027E $24, ratio_b 2.25× — HOLD/TRIM. WATCHLIST $310-330; ACCUMULATE $260-280."},
     "LLY":  {"ticker": "LLY",  "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
               "price": 1065.00, "date": "2026-05-25", "epp_gap_pct": 287.8, "ratio_b_fmt": "4.73x",
               "sector_group": "Healthcare",
