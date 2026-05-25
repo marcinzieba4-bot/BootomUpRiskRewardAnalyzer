@@ -54,6 +54,7 @@ MODELS = {
     "TMO":  "tmo_signal_model.py",
     "ABT":  "abt_signal_model.py",
     "PFE":  "pfe_signal_model.py",
+    "DHR":  "dhr_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -210,6 +211,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Marvell Technology, Inc.", "sector": "Semiconductors · AI Custom Silicon (ASIC) · Optical Interconnect · Data Center",
               "summary": "+235% from 52-wk low $58.61; at ALL-TIME HIGH heading into Q1 FY2027 earnings May 27. Amazon Trainium custom silicon + optical interconnect franchise is real. FY2026 EPS $2.84 → FY2028E $5.44 (mgmt: 'well over $5'). But Method B ($5.44 × 35×) = $190 — already BELOW current price. At 36× FY2028E, the 3rd hyperscaler win is priced in. Analyst PT upgrades (Citi $215, Melius $220) racing to catch a stock that's run away. WATCHLIST $140-155; ACCUMULATE $120-135."},
+    "DHR":  {"ticker": "DHR",  "signal": "◉ BUY",        "signal_short": "BUY",        "signal_color": "#4ade80",
+              "price": 172.93,  "date": "2026-05-25", "epp_gap_pct": 33.0,  "ratio_b_fmt": "0.61x",
+              "sector_group": "Healthcare",
+              "company": "Danaher Corporation", "sector": "Life Sciences Tools · Bioprocessing (Cytiva/Pall) · Diagnostics (Cepheid) · DBS",
+              "summary": "Bioprocessing supercycle confirmed: Cytiva equipment orders +30% YoY in Q1 2026 — first positive growth in 2 years. Destocking winter (2022-2024) is over. Down 29% from Jan 2026 high. At 20.5× FY2026E $8.45 — pricing near-zero recovery despite order data. DBS compounds at 15-20%/yr historically. Masimo ($9.9B, H2 2026) adds diagnostics. EPP $130 (20× × $6.50); Method B $243.75 (25× × FY2027E $9.75). Ratio B 0.61×. BUY $165-185; strong add $155-165."},
     "PFE":  {"ticker": "PFE",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
               "price": 25.90,   "date": "2026-05-25", "epp_gap_pct": 30.8,  "ratio_b_fmt": "0.86x",
               "sector_group": "Healthcare",
