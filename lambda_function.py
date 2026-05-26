@@ -71,6 +71,7 @@ MODELS = {
     "GS":   "gs_signal_model.py",
     "AXP":  "axp_signal_model.py",
     "SPGI": "spgi_signal_model.py",
+    "MS":   "ms_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -347,6 +348,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "S&P Global Inc.", "sector": "Financial Data & Analytics · Credit Ratings Duopoly · Indices (S&P 500) · Market Intelligence",
               "summary": "Regulated duopoly (S&P + Moody's = 80% global credit ratings) + S&P 500 index perpetual annuity (≥$10T AUM tracking; each index point ≈ $35M/yr licensing fees). IMMINENT CATALYST: Mobility Global (MBGL) spin-off July 1, 2026 — CARFAX + Polk spun as pure auto-data play; record date June 15. Post-spin SPGI becomes purer financial data/analytics business deserving 27-30× (vs 21.4× today). Q1 2026: adj EPS $4.97 (+14% beat), Ratings +13%, Indices +17%, adj margin 52% record. FY2026 guidance $19.40-$19.65 raised. At 21.4× FW vs Moody's 30× — SPGI at 29% discount to duopoly peer. Analyst avg PT $533-562 (+27-34%). Method B $562.50 (+35%). Ratio B 1.51×. WATCHLIST; ACCUMULATE $370-415 (post-MBGL-spin dislocation zone); BUY below $340."},
+    "MS":   {"ticker": "MS",   "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
+              "price": 200.92,  "date": "2026-05-26", "epp_gap_pct": 204.4, "ratio_b_fmt": "3.64x",
+              "sector_group": "Finance",
+              "company": "Morgan Stanley", "sector": "Investment Banking · Global Markets (Trading) · Wealth Management (~$7T AUM) · Investment Management",
+              "summary": "World-class IB+WM hybrid at ALL-TIME HIGH ($201.03 May 22, 2026). Q1 2026 exceptional: ROTCE 27.1% (record), EPS $3.43 (+13.6% beat), revenue $20.6B record — driven by tariff-volatility trading spike. The problem is not the business, it's the price. Gordon Growth trap: Q1 ROTCE 27.1% → warranted P/TBV 4.62× = $238 (looks cheap), but FY2025 normalized ROTCE 19.5% → warranted 3.10× = $160 (BELOW current). Analyst avg PT $176-190 — both BELOW current $200.92. IB cyclicality: FY2023 EPS $5.18 (-16%) in non-recessionary freeze. 52-wk low $123.88 (Apr 2025) was BUY at ratio_b 0.51×; now AVOID at ATH. Method B $238 (+18.5% = very limited upside vs EPP floor $66 = -67%). Ratio B 3.64×. AVOID; revisit below $155; ACCUMULATE $120-140."},
     "BAC":  {"ticker": "BAC",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 51.70,   "date": "2026-05-26", "epp_gap_pct": 187.2, "ratio_b_fmt": "2.17x",
               "sector_group": "Finance",
