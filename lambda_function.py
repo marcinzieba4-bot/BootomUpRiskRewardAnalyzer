@@ -70,6 +70,7 @@ MODELS = {
     "WFC":  "wfc_signal_model.py",
     "GS":   "gs_signal_model.py",
     "AXP":  "axp_signal_model.py",
+    "SPGI": "spgi_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -341,6 +342,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "Wells Fargo & Company", "sector": "Consumer Banking · Commercial Banking · Corporate & Investment Banking · Wealth Management",
               "summary": "Third-largest US bank ($234B market cap) — the REFORM STORY now an EXECUTION STORY. Defining catalyst: asset cap REMOVED June 2025 after 7 years, unlocking balance sheet growth for the first time since the 2016 fake-accounts scandal. Q1 2026: EPS $1.60 (+15% YoY), NII $12.1B (+5%), ROTCE 14.5% (from 13.6% a year ago). Gordon Growth twist: WFC is the ONLY major bank trading below its warranted P/TBV at current ROTCE (1.77× vs warranted 2.10× = $90.36). But recession ROTCE 10% → warranted 1.20× → $51.64 (32% below current). NIM compression (2.47%, down from 2.60% YoY) is the key bear case — most rate-sensitive of big-4. 52-wk low $71.93 (Apr 2026 sell-off) was WATCHLIST at ratio_b 1.37×; now +6% = HOLD. Method B $101.40 (+33%). Ratio B 1.79×. HOLD; ACCUMULATE $60-72; BUY $45-55."},
+    "SPGI": {"ticker": "SPGI", "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
+              "price": 417.95,  "date": "2026-05-26", "epp_gap_pct": 109.0, "ratio_b_fmt": "1.51x",
+              "sector_group": "Finance",
+              "company": "S&P Global Inc.", "sector": "Financial Data & Analytics · Credit Ratings Duopoly · Indices (S&P 500) · Market Intelligence",
+              "summary": "Regulated duopoly (S&P + Moody's = 80% global credit ratings) + S&P 500 index perpetual annuity (≥$10T AUM tracking; each index point ≈ $35M/yr licensing fees). IMMINENT CATALYST: Mobility Global (MBGL) spin-off July 1, 2026 — CARFAX + Polk spun as pure auto-data play; record date June 15. Post-spin SPGI becomes purer financial data/analytics business deserving 27-30× (vs 21.4× today). Q1 2026: adj EPS $4.97 (+14% beat), Ratings +13%, Indices +17%, adj margin 52% record. FY2026 guidance $19.40-$19.65 raised. At 21.4× FW vs Moody's 30× — SPGI at 29% discount to duopoly peer. Analyst avg PT $533-562 (+27-34%). Method B $562.50 (+35%). Ratio B 1.51×. WATCHLIST; ACCUMULATE $370-415 (post-MBGL-spin dislocation zone); BUY below $340."},
     "BAC":  {"ticker": "BAC",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 51.70,   "date": "2026-05-26", "epp_gap_pct": 187.2, "ratio_b_fmt": "2.17x",
               "sector_group": "Finance",
