@@ -66,6 +66,7 @@ MODELS = {
     "JPM":  "jpm_signal_model.py",
     "V":    "v_signal_model.py",
     "MA":   "ma_signal_model.py",
+    "BAC":  "bac_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -322,6 +323,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "JPMorgan Chase & Co.", "sector": "Global Banking · Investment Banking · Commercial Banking · Asset & Wealth Management",
               "summary": "World's #1 bank by market cap (~$824B) and ROTCE leader (23% vs BAC 14%, WFC 15%). Q1 2026: record $16.5B net income, EPS $5.94 (+17%), IB fees +28%, markets +20%. CET1 14.3% fortress. BUT: at 2.83× TBV and 13.7× FY2026E EPS — peak-cycle valuation with peak-cycle ROTCE. NII guided $103B (trimmed from $104.5B); each 25bps Fed cut = ~$1.5-2B headwind. If ROTCE mean-reverts to 16% (mild recession), warranted P/TBV = 2.4× → implied $261 (-15%). Entry was 52-wk low $256 (2.35× TBV); now HOLD. Dimon flagged retirement 'a few years'; succession premium risk. Method B $390 (+27%). Ratio B 2.27×. HOLD; ACCUMULATE $240-270; BUY $195-220."},
+    "BAC":  {"ticker": "BAC",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 51.70,   "date": "2026-05-26", "epp_gap_pct": 187.2, "ratio_b_fmt": "2.17x",
+              "sector_group": "Finance",
+              "company": "Bank of America Corporation", "sector": "Consumer Banking · Global Markets & Investment Banking · NII Franchise · Wealth Management (MLWM)",
+              "summary": "Second-largest US bank ($368B market cap) — dramatically improved since the GFC under CEO Moynihan. Q1 2026: EPS $1.11 (+25% YoY), NII $15.9B (+9%), trading best in 15 years, ROTCE 16%. Gordon Growth: at peak ROTCE 16%, warranted P/TBV is 2.4× → implied $69.55; but recession ROTCE 12% → warranted 1.6× → $46.37. DEFINING SIGNAL: Buffett/Berkshire sold entire ~1B share position at $35-45 (2024-2025) — his revealed fair value. Current $51.70 is +23% above Buffett's exit price. NII sensitivity ($2T deposits; most rate-sensitive major US bank) is the key risk: each 25bps cut → ~$1-1.5B NII headwind. Method B $67.20 (+30%). Ratio B 2.17×. HOLD; ACCUMULATE $38-47; BUY $26-32."},
     "BRK":  {"ticker": "BRK",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
               "price": 485.95,  "date": "2026-05-26", "epp_gap_pct": 44.6,  "ratio_b_fmt": "1.09x",
               "sector_group": "Finance",
