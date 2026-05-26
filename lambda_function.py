@@ -65,6 +65,7 @@ MODELS = {
     "BRK":  "brk_signal_model.py",
     "JPM":  "jpm_signal_model.py",
     "V":    "v_signal_model.py",
+    "MA":   "ma_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -306,6 +307,11 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Bristol-Myers Squibb Company", "sector": "Large-Cap Pharma · Oncology (Opdivo/Opdualag) · Cardiovascular (Eliquis/Camzyos) · Haematology",
               "summary": "Managing two patent cliffs simultaneously — Revlimid (fully generic Jan 2026) and Eliquis (EU May 2026; US ~Apr 2028). Stock +39% from $42.52 low to near 52-wk high $62.89; optimal entry was below $50. Q1 2026: adj EPS $1.58 beat $1.43 (+10.5%); FY2026E $6.20 guided. Growth portfolio (Reblozyl $2B+, Camzyos $1B+, Cobenfy, Opdualag) bridging LOE. Key binary catalyst: milvexian (oral FXI) AF + stroke Phase 3 readouts mid-2026 — positive = 15-20% re-rate; failed = multiple stays compressed at 9-10×. Net debt $34B post-$10B paydown; 4.25% dividend (17 consecutive increases). Ratio B 2.23×. HOLD current; TRIM above $63; RE-ENTER below $50 or on milvexian data."},
+    "MA":   {"ticker": "MA",   "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
+              "price": 498.54,  "date": "2026-05-22", "epp_gap_pct": 74.3,  "ratio_b_fmt": "1.17x",
+              "sector_group": "Finance",
+              "company": "Mastercard Incorporated", "sector": "Payment Networks · Value-Added Services · Cross-Border Payments · Open Banking",
+              "summary": "Visa's natural twin — same asset-light network, same ~50% operating margins, zero credit risk. But MA is cheaper (P/E 25.6× vs V 27.5×), growing faster (Q1 adj EPS +23% vs V +20%), and has no DOJ antitrust lawsuit. Q1 2026: revenue $8.4B (+16%), adj EPS $4.60 (+23%); Value-Added Services (cybersecurity, analytics, open banking) +18% = ~36% of revenue. 52-wk low $480.50 (Apr 2026) was ACCUMULATE at ratio_b ~0.99×; +4% to current $499. $5.7B returned in 4M (Q1+Apr). Key risk: UK interchange class action (~£14B claim). Method B $680 (+36%). Ratio B 1.17×. WATCHLIST; ACCUMULATE $420-480; BUY $345-375."},
     "V":    {"ticker": "V",    "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
               "price": 329.96,  "date": "2026-05-22", "epp_gap_pct": 87.5,  "ratio_b_fmt": "1.71x",
               "sector_group": "Finance",
