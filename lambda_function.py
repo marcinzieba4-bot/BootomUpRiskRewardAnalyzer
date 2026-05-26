@@ -59,6 +59,7 @@ MODELS = {
     "BSX":  "bsx_signal_model.py",
     "SYK":  "syk_signal_model.py",
     "BMY":  "bmy_signal_model.py",
+    "GILD": "gild_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -280,6 +281,11 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Amgen Inc.", "sector": "Biotechnology · Inflammation/Oncology · Rare Disease (Horizon) · Obesity Pipeline (MariTide)",
               "summary": "Waiting for MariTide — fairly priced while the clock ticks. EPS growing 9-13%/yr (FY2025 $19.84 → FY2026E $22.40); Q1 2026 EPS $5.15 (+13%), revenue $8.62B (+9%), guidance raised. Repatha +22%, Tepezza +24%. But $331.70 = 14.8× FY2026E — already reflecting EPS growth; MariTide Phase 3 (monthly dosing GLP-1) is option not value. Enbrel erosion (-13%) and Otezla LOE Feb 2028 are known headwinds. Horizon debt $28B overhang caps multiple. Ratio B 2.02×. 2.77% dividend while waiting. BUY $250-270; ACCUMULATE $270-295; WATCHLIST $295-330."},
+    "GILD": {"ticker": "GILD", "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 134.36,  "date": "2026-05-26", "epp_gap_pct": 144.3, "ratio_b_fmt": "2.17x",
+              "sector_group": "Healthcare",
+              "company": "Gilead Sciences, Inc.", "sector": "Large-Cap Biopharma · HIV (Biktarvy/Lenacapavir) · Oncology (Trodelvy/Yescarta) · Virology",
+              "summary": "Dominant HIV franchise ($30B revenue; Biktarvy $12B+) at a lenacapavir inflection point. PURPOSE-1/2 trials showed 0 and ~0 HIV infections — potentially the biggest HIV prevention breakthrough since oral PrEP. Lenacapavir oral BIC combo (FDA Priority Review) could replace Biktarvy entirely. But stock +44% from $93 low to $134 (fair value); three 2026 acquisitions ($11.5B IPR&D: Arcellx myeloma CAR-T, Ouro HIV, Tubulis ADC) create GAAP loss in FY2026 and execution risk. At 15.5× FY2026E non-GAAP, lenacapavir optionality is partially priced in. Ratio B 2.17×. HOLD; ACCUMULATE $105-115; TRIM above $145; ADD on oral LEN/BIC approval."},
     "BMY":  {"ticker": "BMY",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 59.46,   "date": "2026-05-26", "epp_gap_pct": 88.8,  "ratio_b_fmt": "2.23x",
               "sector_group": "Healthcare",
