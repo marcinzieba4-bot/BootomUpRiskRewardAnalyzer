@@ -61,6 +61,7 @@ MODELS = {
     "BMY":  "bmy_signal_model.py",
     "GILD": "gild_signal_model.py",
     "VRTX": "vrtx_signal_model.py",
+    "ELV":  "elv_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -282,6 +283,11 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Amgen Inc.", "sector": "Biotechnology · Inflammation/Oncology · Rare Disease (Horizon) · Obesity Pipeline (MariTide)",
               "summary": "Waiting for MariTide — fairly priced while the clock ticks. EPS growing 9-13%/yr (FY2025 $19.84 → FY2026E $22.40); Q1 2026 EPS $5.15 (+13%), revenue $8.62B (+9%), guidance raised. Repatha +22%, Tepezza +24%. But $331.70 = 14.8× FY2026E — already reflecting EPS growth; MariTide Phase 3 (monthly dosing GLP-1) is option not value. Enbrel erosion (-13%) and Otezla LOE Feb 2028 are known headwinds. Horizon debt $28B overhang caps multiple. Ratio B 2.02×. 2.77% dividend while waiting. BUY $250-270; ACCUMULATE $270-295; WATCHLIST $295-330."},
+    "ELV":  {"ticker": "ELV",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 392.52,  "date": "2026-05-26", "epp_gap_pct": 180.4, "ratio_b_fmt": "2.15x",
+              "sector_group": "Healthcare",
+              "company": "Elevance Health, Inc.", "sector": "Managed Care · Commercial · Medicaid (Anthem) · Medicare Advantage · Carelon",
+              "summary": "Second-largest US health insurer recovering from simultaneous Medicaid + MA crisis. Stock fell 32% in 2025 to $271 low — the entry. Now +45% to $392. Q1 2026: adj EPS $12.58 (strong recovery); FY2026 guidance raised to ≥$26.75. Two headwinds: (1) Medicaid -1.75% margin trough (26+ state contracts; rate re-rates 2026-2027 are THE key driver); (2) CMS sanctions threatening MA new enrollment (high-teens member loss guided; $935M RADV accrual). Carelon (health services; $1.1B Q1 gain) is ELV's Optum analogue. At 14.7× FY2026E — historically cheap MCO. FY2027E ≥$28.84 (+12%). Ratio B 2.15×. HOLD; ACCUMULATE $310-345; TRIM above $430."},
     "VRTX": {"ticker": "VRTX", "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 433.00,  "date": "2026-05-26", "epp_gap_pct": 140.6, "ratio_b_fmt": "2.36x",
               "sector_group": "Healthcare",
