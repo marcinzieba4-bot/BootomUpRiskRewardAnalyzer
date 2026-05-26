@@ -57,6 +57,7 @@ MODELS = {
     "DHR":  "dhr_signal_model.py",
     "AMGN": "amgn_signal_model.py",
     "BSX":  "bsx_signal_model.py",
+    "SYK":  "syk_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -263,6 +264,11 @@ SUMMARY = {
               "sector_group": "Energy",
               "company": "Orlen S.A.", "sector": "Integrated Energy · Oil Refining · Upstream Gas · Petrochemicals · Power",
               "summary": "Note: PLN-denominated stock (WSE/GPW). Near ATH PLN 146.98 (May 12, 2026) after +110% surge from 52-wk low PLN 69.20. Poland's largest company — Lotos + PGNiG + Energa mega-merger. FY2025 adj EPS PLN 9.57; EBITDA LIFO PLN 41.5B; dividend PLN 8/share (5.5% yield). BUT: Method B (FY2027E PLN 14.48 × 10×) = PLN 144.8 — AT current price. Avg analyst target PLN 120-127 (-12-17%). Stock has priced in its 2-year fair value. WATCHLIST PLN 105-115; ACCUMULATE PLN 90-100."},
+    "SYK":  {"ticker": "SYK",  "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#4ade80",
+              "price": 316.48,  "date": "2026-05-26", "epp_gap_pct": 31.9,  "ratio_b_fmt": "0.64x",
+              "sector_group": "Healthcare",
+              "company": "Stryker Corporation", "sector": "MedTech · Orthopedics (Mako Robotics) · MedSurg · Neurotechnology · Emergency Care",
+              "summary": "Decade-long compounder disrupted by a one-time cyberattack (Iran-linked Handala, March 2026; 3-wk manufacturing shutdown; $310M Q1 miss). Business reality: FY2026 adj EPS guidance $14.90-$15.10 MAINTAINED. Mako robotics (3,000+ installs; <30% global TKA penetration) + LIFEPAK 35 hospital refresh + Inari Medical VTE ($500M, 25-30%/yr). At 21.1× FY2026E — lowest fwd P/E since COVID 2020. EPP $240 (24× × $10 stress EPS); 52-wk low $281 = 28.1× stress EPS. Order book held through outage; demand deferred not destroyed. Ratio B 0.64×. BUY $280-320; ACCUMULATE $320-360."},
     "BSX":  {"ticker": "BSX",  "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#4ade80",
               "price": 57.78,   "date": "2026-05-25", "epp_gap_pct": 11.1,  "ratio_b_fmt": "0.14x",
               "sector_group": "Healthcare",
