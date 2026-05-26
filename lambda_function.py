@@ -68,6 +68,7 @@ MODELS = {
     "MA":   "ma_signal_model.py",
     "BAC":  "bac_signal_model.py",
     "WFC":  "wfc_signal_model.py",
+    "GS":   "gs_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -324,6 +325,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "JPMorgan Chase & Co.", "sector": "Global Banking · Investment Banking · Commercial Banking · Asset & Wealth Management",
               "summary": "World's #1 bank by market cap (~$824B) and ROTCE leader (23% vs BAC 14%, WFC 15%). Q1 2026: record $16.5B net income, EPS $5.94 (+17%), IB fees +28%, markets +20%. CET1 14.3% fortress. BUT: at 2.83× TBV and 13.7× FY2026E EPS — peak-cycle valuation with peak-cycle ROTCE. NII guided $103B (trimmed from $104.5B); each 25bps Fed cut = ~$1.5-2B headwind. If ROTCE mean-reverts to 16% (mild recession), warranted P/TBV = 2.4× → implied $261 (-15%). Entry was 52-wk low $256 (2.35× TBV); now HOLD. Dimon flagged retirement 'a few years'; succession premium risk. Method B $390 (+27%). Ratio B 2.27×. HOLD; ACCUMULATE $240-270; BUY $195-220."},
+    "GS":   {"ticker": "GS",   "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
+              "price": 1000.00, "date": "2026-05-26", "epp_gap_pct": 263.6, "ratio_b_fmt": "6.25x",
+              "sector_group": "Finance",
+              "company": "The Goldman Sachs Group, Inc.", "sector": "Investment Banking · Global Markets (Trading) · Asset & Wealth Management",
+              "summary": "World's premier IB franchise at ALL-TIME HIGH $1,000 — surged 4.9% on SpaceX IPO lead mandate. Q1 2026: EPS $17.55 (+24% YoY), ROTE 21.3% (2nd-highest quarterly revenue ever). The problem is not the business, it's the price. Gordon Growth trap: looks cheap at Q1 ROTE 21.3% (warranted P/TBV 3.46× = $1,176) but FY2025 full-year ROE 15% → warranted P/TBV 2.20× = $748 — BELOW current. Analyst avg PT $901 is 10% below current. IB cyclicality is extreme: FY2023 EPS $22.87 (-47% from FY2022) in one year. SpaceX lead = $200-400M fees; market added $14.7B to GS market cap on the announcement (35-75× the fee value). Method B $1,116 (+11.6%) vs BEAR $275 (-72.5%). Ratio B 6.25×. AVOID; revisit below $800; ACCUMULATE $500-650."},
     "WFC":  {"ticker": "WFC",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 76.33,   "date": "2026-05-26", "epp_gap_pct": 142.3, "ratio_b_fmt": "1.79x",
               "sector_group": "Finance",
