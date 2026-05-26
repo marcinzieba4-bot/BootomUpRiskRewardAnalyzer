@@ -69,6 +69,7 @@ MODELS = {
     "BAC":  "bac_signal_model.py",
     "WFC":  "wfc_signal_model.py",
     "GS":   "gs_signal_model.py",
+    "AXP":  "axp_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -325,6 +326,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "JPMorgan Chase & Co.", "sector": "Global Banking · Investment Banking · Commercial Banking · Asset & Wealth Management",
               "summary": "World's #1 bank by market cap (~$824B) and ROTCE leader (23% vs BAC 14%, WFC 15%). Q1 2026: record $16.5B net income, EPS $5.94 (+17%), IB fees +28%, markets +20%. CET1 14.3% fortress. BUT: at 2.83× TBV and 13.7× FY2026E EPS — peak-cycle valuation with peak-cycle ROTCE. NII guided $103B (trimmed from $104.5B); each 25bps Fed cut = ~$1.5-2B headwind. If ROTCE mean-reverts to 16% (mild recession), warranted P/TBV = 2.4× → implied $261 (-15%). Entry was 52-wk low $256 (2.35× TBV); now HOLD. Dimon flagged retirement 'a few years'; succession premium risk. Method B $390 (+27%). Ratio B 2.27×. HOLD; ACCUMULATE $240-270; BUY $195-220."},
+    "AXP":  {"ticker": "AXP",  "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
+              "price": 311.01,  "date": "2026-05-26", "epp_gap_pct": 146.8, "ratio_b_fmt": "1.60x",
+              "sector_group": "Finance",
+              "company": "American Express Company", "sector": "Closed-Loop Payment Network · Premium Card Issuing · Travel & Lifestyle Services",
+              "summary": "The only closed-loop payment network: AXP owns both the network AND issues cards (unlike Visa/MA). Three engines: merchant discount revenue, net interest income, and $10B/yr net card fees (+18% FY2025; zero credit risk). ROE 35% Q1 2026; billed business $428B (+10%). DEFINING SIGNAL: Buffett sold ENTIRE Visa + Mastercard positions in Q1 2026 but HELD all 151.61M AXP shares — earns $576M/yr dividends. AXP cheapest payment network at 17.7× FW P/E (vs V 27.5×, MA 25.6×). 60%+ new card acquisitions = Millennials/Gen-Z — 20-30yr spending horizon ahead. 52-wk low $281.47 (Apr 2026) was ACCUMULATE at ratio_b 1.07×; +10.5% recovery to current WATCHLIST. Analyst avg PT $362-375 (+16-20%). Method B $426 (+37%). Ratio B 1.60×. WATCHLIST; ACCUMULATE $270-295; BUY $230-260."},
     "GS":   {"ticker": "GS",   "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
               "price": 1000.00, "date": "2026-05-26", "epp_gap_pct": 263.6, "ratio_b_fmt": "6.25x",
               "sector_group": "Finance",
