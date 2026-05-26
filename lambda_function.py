@@ -64,6 +64,7 @@ MODELS = {
     "ELV":  "elv_signal_model.py",
     "BRK":  "brk_signal_model.py",
     "JPM":  "jpm_signal_model.py",
+    "V":    "v_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -305,6 +306,11 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Bristol-Myers Squibb Company", "sector": "Large-Cap Pharma · Oncology (Opdivo/Opdualag) · Cardiovascular (Eliquis/Camzyos) · Haematology",
               "summary": "Managing two patent cliffs simultaneously — Revlimid (fully generic Jan 2026) and Eliquis (EU May 2026; US ~Apr 2028). Stock +39% from $42.52 low to near 52-wk high $62.89; optimal entry was below $50. Q1 2026: adj EPS $1.58 beat $1.43 (+10.5%); FY2026E $6.20 guided. Growth portfolio (Reblozyl $2B+, Camzyos $1B+, Cobenfy, Opdualag) bridging LOE. Key binary catalyst: milvexian (oral FXI) AF + stroke Phase 3 readouts mid-2026 — positive = 15-20% re-rate; failed = multiple stays compressed at 9-10×. Net debt $34B post-$10B paydown; 4.25% dividend (17 consecutive increases). Ratio B 2.23×. HOLD current; TRIM above $63; RE-ENTER below $50 or on milvexian data."},
+    "V":    {"ticker": "V",    "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
+              "price": 329.96,  "date": "2026-05-22", "epp_gap_pct": 87.5,  "ratio_b_fmt": "1.71x",
+              "sector_group": "Finance",
+              "company": "Visa Inc.", "sector": "Payment Networks · Digital Commerce Infrastructure · Cross-Border Payments",
+              "summary": "World's largest payment network: 300B transactions/year, 14,500+ financial institutions, 175M+ merchant locations. Q2 FY2026: revenue $11.23B (+17% YoY, strongest since 2022), adj EPS $3.31 (+20%). FY2026 guidance raised to 'low double-digit to low teens' revenue growth. Agentic commerce: Trusted Agent Protocol + 16B tokens position Visa as THE AI payment infrastructure. 52-wk low $293.89 (Apr 1, 2026) was ACCUMULATE at ratio_b 0.93×; now +12% to $330 = WATCHLIST. DOJ antitrust (debit monopoly) is the key risk; behavioural remedy likely, not structural breakup. Tap-to-pay >80% globally; US ~70%. Method B $420 (+27%). Ratio B 1.71×. WATCHLIST; ACCUMULATE $285-315; BUY $255-275."},
     "JPM":  {"ticker": "JPM",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 307.40,  "date": "2026-05-26", "epp_gap_pct": 156.2, "ratio_b_fmt": "2.27x",
               "sector_group": "Finance",
