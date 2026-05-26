@@ -15,7 +15,7 @@ book $505,723). Cash per B = ~$184 ($397B total / ~2,157M B-equivalent shares).
 import math
 
 # ── Identifiers ────────────────────────────────────────────────────────────────
-TICKER  = "BRKB"
+TICKER  = "BRK"
 COMPANY = "Berkshire Hathaway Inc. (BRK.B — Class B)"
 SECTOR  = "Diversified Conglomerate · Insurance (GEICO/BH Re) · Railroad (BNSF) · Utilities (BHE) · Equity Portfolio"
 
