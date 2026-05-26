@@ -67,6 +67,7 @@ MODELS = {
     "V":    "v_signal_model.py",
     "MA":   "ma_signal_model.py",
     "BAC":  "bac_signal_model.py",
+    "WFC":  "wfc_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -323,6 +324,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "JPMorgan Chase & Co.", "sector": "Global Banking · Investment Banking · Commercial Banking · Asset & Wealth Management",
               "summary": "World's #1 bank by market cap (~$824B) and ROTCE leader (23% vs BAC 14%, WFC 15%). Q1 2026: record $16.5B net income, EPS $5.94 (+17%), IB fees +28%, markets +20%. CET1 14.3% fortress. BUT: at 2.83× TBV and 13.7× FY2026E EPS — peak-cycle valuation with peak-cycle ROTCE. NII guided $103B (trimmed from $104.5B); each 25bps Fed cut = ~$1.5-2B headwind. If ROTCE mean-reverts to 16% (mild recession), warranted P/TBV = 2.4× → implied $261 (-15%). Entry was 52-wk low $256 (2.35× TBV); now HOLD. Dimon flagged retirement 'a few years'; succession premium risk. Method B $390 (+27%). Ratio B 2.27×. HOLD; ACCUMULATE $240-270; BUY $195-220."},
+    "WFC":  {"ticker": "WFC",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 76.33,   "date": "2026-05-26", "epp_gap_pct": 142.3, "ratio_b_fmt": "1.79x",
+              "sector_group": "Finance",
+              "company": "Wells Fargo & Company", "sector": "Consumer Banking · Commercial Banking · Corporate & Investment Banking · Wealth Management",
+              "summary": "Third-largest US bank ($234B market cap) — the REFORM STORY now an EXECUTION STORY. Defining catalyst: asset cap REMOVED June 2025 after 7 years, unlocking balance sheet growth for the first time since the 2016 fake-accounts scandal. Q1 2026: EPS $1.60 (+15% YoY), NII $12.1B (+5%), ROTCE 14.5% (from 13.6% a year ago). Gordon Growth twist: WFC is the ONLY major bank trading below its warranted P/TBV at current ROTCE (1.77× vs warranted 2.10× = $90.36). But recession ROTCE 10% → warranted 1.20× → $51.64 (32% below current). NIM compression (2.47%, down from 2.60% YoY) is the key bear case — most rate-sensitive of big-4. 52-wk low $71.93 (Apr 2026 sell-off) was WATCHLIST at ratio_b 1.37×; now +6% = HOLD. Method B $101.40 (+33%). Ratio B 1.79×. HOLD; ACCUMULATE $60-72; BUY $45-55."},
     "BAC":  {"ticker": "BAC",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 51.70,   "date": "2026-05-26", "epp_gap_pct": 187.2, "ratio_b_fmt": "2.17x",
               "sector_group": "Finance",
