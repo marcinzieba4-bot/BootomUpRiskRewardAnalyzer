@@ -62,6 +62,7 @@ MODELS = {
     "GILD": "gild_signal_model.py",
     "VRTX": "vrtx_signal_model.py",
     "ELV":  "elv_signal_model.py",
+    "BRKB": "brkb_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -303,6 +304,11 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Bristol-Myers Squibb Company", "sector": "Large-Cap Pharma · Oncology (Opdivo/Opdualag) · Cardiovascular (Eliquis/Camzyos) · Haematology",
               "summary": "Managing two patent cliffs simultaneously — Revlimid (fully generic Jan 2026) and Eliquis (EU May 2026; US ~Apr 2028). Stock +39% from $42.52 low to near 52-wk high $62.89; optimal entry was below $50. Q1 2026: adj EPS $1.58 beat $1.43 (+10.5%); FY2026E $6.20 guided. Growth portfolio (Reblozyl $2B+, Camzyos $1B+, Cobenfy, Opdualag) bridging LOE. Key binary catalyst: milvexian (oral FXI) AF + stroke Phase 3 readouts mid-2026 — positive = 15-20% re-rate; failed = multiple stays compressed at 9-10×. Net debt $34B post-$10B paydown; 4.25% dividend (17 consecutive increases). Ratio B 2.23×. HOLD current; TRIM above $63; RE-ENTER below $50 or on milvexian data."},
+    "BRKB": {"ticker": "BRKB", "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 485.95,  "date": "2026-05-26", "epp_gap_pct": 44.6,  "ratio_b_fmt": "1.09x",
+              "sector_group": "Finance",
+              "company": "Berkshire Hathaway (BRK.B)", "sector": "Diversified Conglomerate · Insurance (GEICO/BH Re) · Railroad (BNSF) · Utilities (BHE)",
+              "summary": "World's largest conglomerate (~$1.05T market cap) with $397B cash — a record $184/B in liquid assets. Greg Abel's first quarter as CEO (Q1 2026): operating earnings $11.35B (+18% YoY); book value per B $337.15 (+11.1% YoY). GEICO turnaround complete (87.1% combined ratio). Ex-cash P/E = (485.95 − 184) / 21.05 = 14.35× — the actual business is cheap. Buffett buyback floor = 1.2× book ≈ $404/B provides structural downside protection. Primary risk: BHE PacifiCorp wildfire litigation ($20-30B worst case); Greg Abel's capital deployment track record is unproven at scale. Three insurance pillars (GEICO + BH Re + General Re) generate $176B float at essentially zero cost. Ratio B 1.09×. ACCUMULATE $455-495; BUY on pullback to $404-440 (1.2-1.3× book)."},
 }
 
 CORS = {
