@@ -60,6 +60,7 @@ MODELS = {
     "SYK":  "syk_signal_model.py",
     "BMY":  "bmy_signal_model.py",
     "GILD": "gild_signal_model.py",
+    "VRTX": "vrtx_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -281,6 +282,11 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Amgen Inc.", "sector": "Biotechnology · Inflammation/Oncology · Rare Disease (Horizon) · Obesity Pipeline (MariTide)",
               "summary": "Waiting for MariTide — fairly priced while the clock ticks. EPS growing 9-13%/yr (FY2025 $19.84 → FY2026E $22.40); Q1 2026 EPS $5.15 (+13%), revenue $8.62B (+9%), guidance raised. Repatha +22%, Tepezza +24%. But $331.70 = 14.8× FY2026E — already reflecting EPS growth; MariTide Phase 3 (monthly dosing GLP-1) is option not value. Enbrel erosion (-13%) and Otezla LOE Feb 2028 are known headwinds. Horizon debt $28B overhang caps multiple. Ratio B 2.02×. 2.77% dividend while waiting. BUY $250-270; ACCUMULATE $270-295; WATCHLIST $295-330."},
+    "VRTX": {"ticker": "VRTX", "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 433.00,  "date": "2026-05-26", "epp_gap_pct": 140.6, "ratio_b_fmt": "2.36x",
+              "sector_group": "Healthcare",
+              "company": "Vertex Pharmaceuticals", "sector": "Large-Cap Biopharma · CF Monopoly (TRIKAFTA/ALYFTREK) · Pain (JOURNAVX) · Kidney (Povetacicept)",
+              "summary": "World's only CF treatment company — near-monopoly on 90% of CF patients ($13B+ revenue; patents 2037-38; no competitor before 2030). World-class compounder but fairly priced at $433 (24.3× FY2026E; -15% from $508 high). 52-wk low $362.50 was the entry (ratio_b ~1.0×). Now at 2.36×: HOLD. Three growth vectors: povetacicept IgAN (BLA filed H1 2026; -52% proteinuria in RAINIER), suzetrigine DPN (BTD; Phase 3 data 2027; $3B+ peak), T1D cell therapy (Phase 1/2; insulin independence data). EPP $180 = 20× stress EPS; 52-wk low was still 40× above EPP — the CF moat is extraordinary. Trim above $500; re-enter $370-395 or on pove IgAN approval."},
     "GILD": {"ticker": "GILD", "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 134.36,  "date": "2026-05-26", "epp_gap_pct": 144.3, "ratio_b_fmt": "2.17x",
               "sector_group": "Healthcare",
