@@ -77,6 +77,7 @@ MODELS = {
     "C":    "c_signal_model.py",
     "BX":   "bx_signal_model.py",
     "FISV": "fisv_signal_model.py",
+    "SCHW": "schw_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -373,6 +374,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "Fiserv, Inc.", "sector": "Financial Technology · Payment Processing · Core Banking · Merchant Acquiring (Clover)",
               "summary": "The classic 'fallen quality' setup: Fiserv — dominant US bank-processing infrastructure ($21B revenue, 2,500 bank/CU contracts) + Clover (50M SMB merchants) — crashed 76% from its $237 ATH after a 44% single-session collapse on Oct 29, 2025. Trigger: Argentina peso devaluation wiped out float income from LatAm operations; Merchant Solutions margin fell from 34% to 26%. Management cut adj EPS guidance from $10.15E → $8.64 actual FY2025. BUT: new leadership (CFO Paul Todd ex-Global Payments, co-presidents Dec 2025), Q1 2026 beat 13% ($1.79 vs $1.58E), guidance reaffirmed $8.00-8.30. Core Financial Solutions (50% revenue, 40% margin, multi-year contracts) was NEVER impaired — it's growing 2-3%. At 7× FW earnings, stock is priced for permanent Argentina destruction; even modest recovery to 14× on FY2027E $9.00 = $126 (+120%). Analyst avg PT $70 (+23%). EPP $45 (10× × $4.50). Method B $126 (FY2027E $9.00 × 14×). Ratio B 0.18×. BUY. Watch Q2 2026 organic growth — first clean Argentina comp."},
+    "SCHW": {"ticker": "SCHW", "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE",  "signal_color": "#f0b429",
+              "price": 90.21,   "date": "2026-05-27", "epp_gap_pct": 140.6, "ratio_b_fmt": "0.88x",
+              "sector_group": "Finance",
+              "company": "The Charles Schwab Corporation", "sector": "Retail Brokerage · Wealth Management · Banking · Asset Management",
+              "summary": "Schwab has resolved BOTH crises that depressed earnings for three years. (1) Cash sorting: $200B+ of client cash moved to money market funds 2022-2024 crushing NIM to 1.75% trough — now fully stabilised; NIM recovered to 2.88% Q1 2026 (+35bps YoY) with 12bps more to go as FHLB debt ($80B+ repaid) rolls off. (2) TD Ameritrade integration: 100% complete end 2025; $2B annual synergies fully realised. Q1 2026 was the first clean quarter showing the combined benefit: adj EPS $1.43 (+38% YoY, record), revenue $6.5B (+16%), net income $2.5B (+30%). Record NNA $519B FY2025 (+42%) → $11.77T client assets (+19%). 2026 guidance $5.70-5.80, tracking above after Q1 beat. At $90 = 15.4× FY2026E — near the empirical floor multiple (SVB panic 2023 = ~15×). FY2027E $6.80 at 22× = $150 (+66%). Analyst avg PT $113-116 (+25%). EPP $37.50 (15× × $2.50). Ratio B 0.88×. ACCUMULATE. BUY below $86 (just $4 from current)."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
