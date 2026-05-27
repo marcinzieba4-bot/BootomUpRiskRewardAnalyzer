@@ -85,6 +85,7 @@ MODELS = {
     "LIN":  "lin_signal_model.py",
     "APD":  "apd_signal_model.py",
     "SHW":  "shw_signal_model.py",
+    "ECL":  "ecl_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -421,6 +422,11 @@ SUMMARY = {
               "sector_group": "Materials",
               "company": "The Sherwin-Williams Company", "sector": "Architectural Coatings · Professional Contractors · Paint Stores (4,900+) · Industrial & Performance Coatings",
               "summary": "Sherwin-Williams at $316 = 27× FY2026E adjusted EPS — the world's largest paint company and a quasi-monopoly on professional architectural coatings: 4,900+ company-owned stores in the Americas create distribution density no competitor can match. Professional painters don't switch because they've invested years in SHW's color formulas, tinting systems, and contractor loyalty tiers (up to 40% volume discounts). 47 consecutive annual dividend increases. The business is excellent — the current challenge is housing: high mortgage rates suppress existing home sales (the biggest repaint trigger) and FY2026 guidance is only +2.4% adj EPS growth. Q1 2026 was encouraging: adj EPS $2.35 (+4.4%), revenue $5.67B (+6.8%), record Q1 EBITDA $998M (+8.8%). The aging US housing stock (avg 42 years) and eventual rate normalisation are powerful multi-year tailwinds — every year of deferred painting creates future demand. April 2026 tariff-panic low $294.32 was ACCUMULATE (ratio_b 1.04×); current $316 is fairly valued in WATCHLIST. Analyst avg PT $380-385 requires housing recovery to materialise. EPP $176 (22× × $8.00 trough). Ratio B 1.52×. WATCHLIST. ACCUMULATE below $298. BUY below $275."},
+    "ECL":  {"ticker": "ECL",  "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",   "signal_color": "#60a5fa",
+              "price": 254.00,  "date": "2026-05-27", "epp_gap_pct": 130.9,  "ratio_b_fmt": "1.24x",
+              "sector_group": "Materials",
+              "company": "Ecolab Inc.", "sector": "Water Treatment · Hygiene & Sanitation · Pest Elimination · Life Sciences · Data Center Cooling (CoolIT)",
+              "summary": "Ecolab at $254 = 30× FY2026E adjusted EPS — world leader in water, hygiene, and infection prevention. 45,000+ field reps visit 3M+ customer locations daily; once integrated into Nalco One digital water platform, switching = years of re-implementation. Non-discretionary compliance demand (food safety, water treatment, sterilization regulations). FY2025 adj EPS $7.53 (+13%); FY2026 guidance $8.43-$8.63 (+13%); Q1 2026 adj EPS $1.70 (+13%), record EBITDA. March 2026: CoolIT acquisition ($4.75B; AI data center liquid cooling; ~$550M revenue, growing fast) extends ECL's thermal/water management into the highest-growth infrastructure segment. CoolIT adds $4.75B debt (EPS dilutive year 1) but positions ECL as water and cooling solutions for AI data centers — multi-decade TAM. 34 consecutive annual dividend increases. Near 52-wk low $243 — UBS upgraded to Buy May 20, 2026. EPP $110 (22× × $5.00 trough). Ratio B 1.24×. WATCHLIST. ACCUMULATE below $244. BUY below $215."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
