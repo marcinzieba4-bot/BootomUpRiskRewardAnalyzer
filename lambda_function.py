@@ -82,6 +82,7 @@ MODELS = {
     "CB":   "cb_signal_model.py",
     "KKR":  "kkr_signal_model.py",
     "PYPL": "pypl_signal_model.py",
+    "LIN":  "lin_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -403,6 +404,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "PayPal Holdings, Inc.", "sector": "Digital Payments · Peer-to-Peer (Venmo) · Commerce Platform · BNPL · Fastlane",
               "summary": "PayPal at $44.16 = 8.1× FY2026E non-GAAP EPS and 13-15% FCF yield — the cheapest valuation in PYPL's history as a public company, 86% below the $309 ATH (July 2021). The valuation case is entirely about the buyback flywheel: $6B/yr in buybacks (~15% of market cap annually) at 8× earnings compounds EPS to ~$8-9 by 2029 even with zero revenue growth. Venmo (90M+ US accounts; TPV +14% for 6th consecutive double-digit quarter; Pay with Venmo +23%) is deeply undermonetised at 0.9% take rate vs. 2.2% PayPal branded — the $4.3B annual gap represents real optionality. Bears are right: branded checkout losing share to Apple Pay/Stripe; Q1 2026 transaction margin flat; GAAP EPS fell -6% vs non-GAAP +1%. This is a FCF/buyback BUY, not a high-quality franchise BUY — conviction comes from the capital return math, not the business momentum. Analyst avg PT $55-58. EPP $35 (10× × $3.50 trough). Ratio B 0.24×. BUY below $56."},
+    "LIN":  {"ticker": "LIN",  "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
+              "price": 516.00,  "date": "2026-05-27", "epp_gap_pct": 80.4,  "ratio_b_fmt": "3.65x",
+              "sector_group": "Industrials",
+              "company": "Linde plc", "sector": "Industrial Gases · Hydrogen (Clean Energy) · Semiconductor Specialty Gases · Take-or-Pay Contracts",
+              "summary": "Linde is the world's largest industrial gas company — an oligopolist alongside Air Products and Air Liquide controlling ~75% of global supply. The business is structurally exceptional: on-site ASUs built at customer facilities cannot be moved (zero churn); 10–20 year take-or-pay contracts guarantee revenue regardless of volume; 30% operating margins; $10B clean energy backlog ($2.5–3B starting 2026); AI semiconductor gas demand accelerating. Q1 2026: adj EPS $4.33 (+10%), revenue $8.78B (+8%), op margin 30.0%. FY2026 guidance $17.40–$17.90. The problem is entirely the price: $516 = 29× FY2026E adj EPS, near the $521.28 ATH (May 2026). Method B (FY2027E $19.30 × 30× = $579) implies only +12% in 2 years from the BULL scenario. The BASE case ($480) is BELOW the current price — the market has already priced in clean energy + AI tailwinds. Analyst avg PT $541–553 = only 5–7% upside. Bears don't need deterioration — just multiple compression from 29× to 25× brings the stock to ~$440. The April 2026 tariff-panic low of $387.78 was a BUY at ratio_b 0.53×. EPP $286 (22× × $13 trough). Ratio B 3.65×. AVOID. ACCUMULATE $412–440. BUY below $412."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
