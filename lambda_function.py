@@ -84,6 +84,7 @@ MODELS = {
     "PYPL": "pypl_signal_model.py",
     "LIN":  "lin_signal_model.py",
     "APD":  "apd_signal_model.py",
+    "SHW":  "shw_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -415,6 +416,11 @@ SUMMARY = {
               "sector_group": "Industrials",
               "company": "Air Products and Chemicals, Inc.", "sector": "Industrial Gases · Hydrogen (NEOM Green H2 + Louisiana Blue H2) · Take-or-Pay · Dividend King",
               "summary": "Air Products at $290 = 22× FY2026E adjusted EPS — the same industrial gas oligopoly moat as Linde (take-or-pay contracts, on-site ASUs, zero customer churn, ~75% global market with LIN/Air Liquide) but at a 7-turn PE discount because of uncertainty around two mega-projects: NEOM Green Hydrogen (>90% complete; 2.2GW; commercial 2027; Yara distribution deal 'anticipated' H1 2026) and Louisiana Blue Hydrogen ($8-9B; FID expected mid-2026; online 2030; US IRA $3/kg credit makes economics compelling). New CEO Eduardo Menezes (ex-Linde EVP EMEA, appointed Feb 2025) is doing the right things: exited 3 risky US projects, raised FY2026 guidance twice to $13.00-$13.25 (+9%), pursuing Yara distribution deal. 44 consecutive annual dividend increases (Dividend King; $7.24/yr = 2.5% yield). Q2 FY2026: adj EPS $3.20 (+19% YoY). At $290, NEOM + Louisiana are essentially free call options — core gas alone is worth ~$286-295 at 22× FY2027 core EPS. If both H2 projects confirm (Yara deal + Louisiana FID), the BULL scenario ($370) opens up. EPP $210 (20× × $10.50 trough). Ratio B 1.00×. ACCUMULATE. BUY below $279."},
+    "SHW":  {"ticker": "SHW",  "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",   "signal_color": "#60a5fa",
+              "price": 316.00,  "date": "2026-05-27", "epp_gap_pct": 79.5,  "ratio_b_fmt": "1.52x",
+              "sector_group": "Materials",
+              "company": "The Sherwin-Williams Company", "sector": "Architectural Coatings · Professional Contractors · Paint Stores (4,900+) · Industrial & Performance Coatings",
+              "summary": "Sherwin-Williams at $316 = 27× FY2026E adjusted EPS — the world's largest paint company and a quasi-monopoly on professional architectural coatings: 4,900+ company-owned stores in the Americas create distribution density no competitor can match. Professional painters don't switch because they've invested years in SHW's color formulas, tinting systems, and contractor loyalty tiers (up to 40% volume discounts). 47 consecutive annual dividend increases. The business is excellent — the current challenge is housing: high mortgage rates suppress existing home sales (the biggest repaint trigger) and FY2026 guidance is only +2.4% adj EPS growth. Q1 2026 was encouraging: adj EPS $2.35 (+4.4%), revenue $5.67B (+6.8%), record Q1 EBITDA $998M (+8.8%). The aging US housing stock (avg 42 years) and eventual rate normalisation are powerful multi-year tailwinds — every year of deferred painting creates future demand. April 2026 tariff-panic low $294.32 was ACCUMULATE (ratio_b 1.04×); current $316 is fairly valued in WATCHLIST. Analyst avg PT $380-385 requires housing recovery to materialise. EPP $176 (22× × $8.00 trough). Ratio B 1.52×. WATCHLIST. ACCUMULATE below $298. BUY below $275."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
