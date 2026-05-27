@@ -1,327 +1,444 @@
-#!/usr/bin/env python3
 """
-PYPL Signal Model  v2
-─────────────────────
-PayPal Holdings, Inc. (NASDAQ: PYPL)  ·  Payments / Fintech
+pypl_signal_model.py — PayPal Holdings, Inc. (NASDAQ: PYPL)
+Digital payments network: PayPal branded checkout, Venmo P2P, Braintree PSP, BNPL, Fastlane.
+Signal framework: EPP floor + Method B + SCA softmax engine.
+"""
 
-New format: signal dashboard → bear anatomy → updated EPP →
-            conservative growth → volatility context → probability
-"""
 import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE    = 78.0
-REQUIRED_RETURN  = 0.15
-HORIZON_YEARS    = 2
+# ── LIVE PRICE (fetched before model construction) ──────────────────────────
+CURRENT_PRICE = 44.16    # PYPL — fetched from Yahoo Finance / stockanalysis.com, 2026-05-27
+# 52-wk range: $38.46 (Apr 2026 lows) – $79.50 (summer 2025 high)
+# Market cap ~$38.9B; shares ~881M; P/E 8.3× GAAP; FCF yield ~13%+
 
-SCENARIOS = {
-    "BEAR":  ( 3.0,  13,   39, "Apple Pay/AI wallets structurally displace PYPL checkout"),
-    "BASE":  ( 6.0,  17,  102, "Chriss executes; take rate stabilises; Venmo monetises"),
-    "BULL":  ( 9.0,  21,  189, "Branded checkout revival; ads platform grows; Venmo at scale"),
-    "XBULL": (12.0,  25,  300, "PayPal = primary wallet for AI-native commerce; re-rates to fintech"),
+TICKER        = "PYPL"
+COMPANY       = "PayPal Holdings, Inc."
+SHARES_M      = 881          # million shares; declining ~7-8%/yr via aggressive buybacks
+DIVIDEND_ANN  = 0.56         # USD/yr; $0.14/qtr; recently initiated (Q1 2026); new capital return policy
+
+# ── EPS CONVENTION ───────────────────────────────────────────────────────────
+# Non-GAAP Adjusted EPS — PayPal's primary metric. Excludes stock-based compensation,
+# restructuring charges, intangible amortisation. Under CEO Chriss (Sept 2023), PayPal
+# changed non-GAAP definition to include some restructuring charges — making FY2024
+# the reported trough year. FY2025 returned to cleaner run-rate. GAAP EPS is close to
+# non-GAAP in FY2025 (SBC relatively small vs. earnings base after years of buybacks).
+# CAUTION: Q1 2026 GAAP EPS fell -6% while non-GAAP +1% — impairments re-emerging.
+
+EPS_HISTORY = {
+    "FY2022": 4.13,   # growth decelerating; eBay Marketplaces wind-down; rising rates
+    "FY2023": 4.95,   # +20% approx; buybacks accelerating; CEO Schulman final year
+    "FY2024": 4.03,   # CEO Chriss transition; 9% workforce cut; restructuring in non-GAAP;
+                       #   transitional trough; take-rate compression accelerating
+    "FY2025": 5.46,   # buyback-driven recovery; ~78M shares retired in LTM;
+                       #   float income tailwind (higher rates on $25B+ customer balances);
+                       #   Venmo +14% TPV; BNPL +34%; Q4 adj FCF $2.3B/quarter
 }
 
-# ── TAKE RATE DECOMPOSITION (PYPL-specific structural feature) ────────────────
-TOTAL_TPV_T         = 1.65
-BRANDED_MIX_PCT     = 46
-BRANDED_TAKE_RATE   = 2.30
-UNBRANDED_TAKE_RATE = 0.72
-PEAK_BRANDED_MIX    = 55
+# Q1 2026: non-GAAP EPS $1.34 (+1% YoY); GAAP EPS fell -6%; revenue $8.35B (+7%); TPV $463.96B (+11%)
+# FY2026 guidance: non-GAAP EPS "slightly negative to slightly positive" vs FY2025
+# Transaction margin dollars: "roughly flat or slightly down" — core margin under pressure
+# Venmo TPV +14% YoY (6th consecutive double-digit quarter); Pay with Venmo +23%; BNPL +34%
 
-def take_rate_economics():
-    unbranded_mix    = 100 - BRANDED_MIX_PCT
-    blended          = (BRANDED_MIX_PCT * BRANDED_TAKE_RATE +
-                        unbranded_mix * UNBRANDED_TAKE_RATE) / 100
-    current_rev      = TOTAL_TPV_T * 1e12 * blended / 100 / 1e9
-    take_rate_prem   = BRANDED_TAKE_RATE - UNBRANDED_TAKE_RATE
-    rev_per_pp_shift = TOTAL_TPV_T * 1e12 * (take_rate_prem / 100) * 0.01 / 1e9
-    recovery_blend   = (55 * BRANDED_TAKE_RATE + 45 * UNBRANDED_TAKE_RATE) / 100
-    recovery_rev     = TOTAL_TPV_T * 1e12 * recovery_blend / 100 / 1e9
-    mix_recovery_upside = recovery_rev - current_rev
-    return blended, current_rev, take_rate_prem, rev_per_pp_shift, mix_recovery_upside
+EPS_NOW       = 5.42     # FY2026E analyst consensus (range $5.11–$6.13)
+EPS_TROUGH    = 3.50     # severe scenario: accelerated branded-checkout erosion;
+                          #   take-rate compression beyond guidance; FCF declines to ~$3B;
+                          #   shares still ~800M from continued buybacks at lower price
+EPP_MIN_PE    = 10        # fintech under competitive pressure; real FCF ($5B+) + Venmo
+                          #   network (90M users) + Braintree enterprise contracts floor the stock;
+                          #   same as FISV restructuring (10×) but FISV has contracted B2B
+                          #   revenue; PYPL checkout more exposed to consumer behaviour
+EPP           = EPP_MIN_PE * EPS_TROUGH   # = $35.00
 
-# ── SIGNALS ───────────────────────────────────────────────────────────────────
-# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
-#  current_value, higher_is_better, bear_narrative)
-SIGNALS = [
-    ("US e-commerce sales YoY",          "% YoY",
-       0.0,   4.0,   8.0,  14.0,   7.0, True,
-     "E-commerce contraction; consumer recessionary behavior"),
+CONS_EPS_2YR  = 5.92     # FY2027E analyst consensus (range $5.16–$6.78)
+CONS_EXIT_PE  = 14        # cautious; stagnating fintech with buyback-driven EPS;
+                          # below historical 20×+ but reflects lack of organic growth momentum;
+                          # if Venmo/Fastlane inflects, higher multiple possible
+price_b       = CONS_EPS_2YR * CONS_EXIT_PE   # = $82.88
 
-    ("PayPal transactions / active acct", "TPA",
-      48.0,  55.0,  65.0,  75.0,  62.0, True,
-     "User disengagement; Apple/Google Wallet displaces PayPal"),
+ratio_b       = (CURRENT_PRICE - EPP) / (price_b - CURRENT_PRICE)
+epp_gap_pct   = (CURRENT_PRICE - EPP) / EPP * 100
 
-    ("Shopify GMV YoY",                  "% YoY",
-       3.0,  10.0,  20.0,  30.0,  23.0, True,
-     "SMB e-commerce collapses; PYPL loses checkout partner volume"),
+# Scenario prices
+scenarios = {
+    "BEAR":  35,     # EPP; franchise erosion; FCF declines to ~$3B; 10× trough floor
+    "BASE":  58,     # FY2026E $5.42 × 10.7×; analyst consensus zone ($55–58); minimal re-rating
+    "BULL":  83,     # Method B; FY2027E $5.92 × 14×; buyback flywheel + Venmo monetisation
+    "XBULL": 120,    # $5.92 × 20×; Fastlane breakthrough + Venmo full monetisation + re-rate
+}
 
-    ("PYPL blended take rate change",    "pp YoY",
-      -0.30, -0.15,  0.00,  0.10, -0.03, True,
-     "Braintree structural displacement; take rate compression accelerates"),
+# ── SOFTMAX ENGINE ───────────────────────────────────────────────────────────
+T = 0.60
+CENTRES = {"BEAR": 1.25, "BASE": 2.00, "BULL": 2.75, "XBULL": 3.75}
 
-    ("Global cross-border e-commerce",   "% YoY",
-       2.0,   8.0,  15.0,  22.0,  15.0, True,
-     "Cross-border contracts; premium take-rate segment shrinks"),
+def softmax_weights(composite):
+    logits = {k: -((composite - c) ** 2) / T for k, c in CENTRES.items()}
+    max_l  = max(logits.values())
+    exps   = {k: math.exp(v - max_l) for k, v in logits.items()}
+    total  = sum(exps.values())
+    return {k: v / total for k, v in exps.items()}
 
-    ("BNPL industry volume YoY",         "% YoY",
-       2.0,  10.0,  20.0,  35.0,  22.0, True,
-     "BNPL fades; Pay Later adoption stalls; checkout frequency falls"),
+def expected_price(composite):
+    w = softmax_weights(composite)
+    return sum(w[k] * scenarios[k] for k in scenarios)
+
+def infer_composite(target_price, lo=1.0, hi=4.0, iterations=60):
+    for _ in range(iterations):
+        mid = (lo + hi) / 2
+        if expected_price(mid) < target_price:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2
+
+market_composite = infer_composite(CURRENT_PRICE)
+
+# ── SCA — SIGNAL CATALYST ADJUSTMENTS ───────────────────────────────────────
+sca_items = [
+    # (description, score, weight)
+    ("FCF ~$5-6B/yr on $39B market cap = 13-15% FCF yield; $1.5B/quarter buybacks "
+     "retire 7-8% of shares/yr at 8× EPS — compounding even with zero revenue growth",
+     +0.35, 0.25),
+    ("Venmo 90M+ US users: TPV +14% 6th consecutive double-digit quarter; "
+     "Pay with Venmo +23%; take rate 0.9% vs 2.2% branded = $4.3B annual monetisation gap",
+     +0.25, 0.20),
+    ("Fastlane guest checkout + BNPL +34%: nascent growth options with 430M active "
+     "account base; Fastlane expanding internationally; conversion uplift data emerging",
+     +0.15, 0.15),
+    ("Branded checkout structural erosion: Apple Pay/Google Pay/Stripe/Shopify taking "
+     "share; transaction margin dollars flat per FY2026 guide; take-rate declining annually",
+     -0.35, 0.30),
+    ("EPS 'growth' entirely from buybacks since FY2022: $4.13→$5.46 = share-count "
+     "reduction, not operating leverage; CEO Chriss restructuring yet to show margin gains",
+     -0.30, 0.20),
+    ("Near 52-wk low; 86% below $309 ATH (July 2021); persistent multi-year downtrend; "
+     "GAAP EPS fell -6% Q1 2026 vs non-GAAP +1% — impairments/charges re-emerging",
+     -0.10, 0.10),
 ]
-WEIGHTS = [0.25, 0.20, 0.15, 0.15, 0.15, 0.10]
 
-STRUCTURAL_FACTORS = [
-    ("Apple/Google OS-native checkout displacement", -1.0, 0.40),
-    ("Venmo 90M user network effect moat",            0.5, 0.20),
-    ("Chriss turnaround execution (18M record)",      0.3, 0.20),
-    ("$7B net cash — balance sheet strength",         0.3, 0.10),
-    ("US fintech regulatory tailwind",                0.2, 0.10),
-]
+sca_raw = sum(score * weight for _, score, weight in sca_items)
+sca_adj = sca_raw / 2.0
+adj_composite = market_composite + sca_adj
 
-# ── UPDATED EPP ───────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 4.50     # FY2025E non-GAAP EPS (Chriss execution in progress)
-EPP_MIN_PE       = 13.0     # min viable P/E (network of 430M accounts = floor)
-EPP_HISTORICAL   = 58.0     # historical EPP v1 (from 2022 floor)
-EPP_REGIME_NOTE  = "(account network + Venmo = durable floor; branded checkout recovery = upside)"
+adj_weights    = softmax_weights(adj_composite)
+expected_px    = expected_price(adj_composite)
 
-# ── CONSERVATIVE GROWTH (2-yr, base-minus) ────────────────────────────────────
-CONS_SIGNALS = [
-    ("US e-commerce",   5.0,  "+5% YoY (vs +7%; consumer cautious)"),
-    ("PayPal",         58.0,  "58 TPA (vs 62; engagement plateaus)"),
-    ("Shopify",        12.0,  "+12% YoY (vs +23%; SMB growth moderates)"),
-    ("PYPL blended",  -0.08,  "-0.08pp (vs -0.03; Braintree drag continues)"),
-    ("Global cross",   10.0,  "+10% YoY (vs +15%; cross-border moderates)"),
-    ("BNPL industry",  12.0,  "+12% YoY (vs +22%; BNPL growth normalises)"),
-]
-CONS_EPS_CAGR = 0.08     # 8%/yr conservative (cost cuts + modest TPV growth)
-CONS_EXIT_PE  = 15.0     # 15x exit (no re-rating; market stays skeptical)
-CONS_DIVIDEND = 0.0      # no dividend
+# ── SIGNAL ───────────────────────────────────────────────────────────────────
+if   ratio_b < 0.75:  signal = "◉ BUY"
+elif ratio_b < 1.10:  signal = "◎ ACCUMULATE"
+elif ratio_b < 1.75:  signal = "◐ WATCHLIST"
+elif ratio_b < 2.50:  signal = "▷ HOLD/TRIM"
+else:                  signal = "✕ AVOID"
 
-# ── VOLATILITY ────────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT = 0.40    # high vol; execution risk + sector overhang
-VOL_BETA       = 1.20    # above market
-VOL_52W_LOW    = 55.0
-VOL_52W_HIGH   = 97.0
-VOL_DIVIDEND   = 0.0
+# ── OUTPUT ───────────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    SEP  = "=" * 70
 
-# ── SCORING ───────────────────────────────────────────────────────────────────
-def score_signal(val, base_f, bull_f, xbull_f, hib):
-    if hib:
-        if val >= xbull_f: return 4
-        if val >= bull_f:  return 3
-        if val >= base_f:  return 2
-        return 1
-    else:
-        if val <= xbull_f: return 4
-        if val <= bull_f:  return 3
-        if val <= base_f:  return 2
-        return 1
+    print(SEP)
+    print("PAYPAL HOLDINGS, INC. (PYPL) — SIGNAL MODEL")
+    print("Digital payments: PayPal, Venmo, Braintree, BNPL, Fastlane. 430M accounts.")
+    print(SEP)
 
-ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
+    print("""
+SIGNAL FRAMEWORK — METHOD B + SCA ENGINE
+─────────────────────────────────────────
+EPP  = EPS_TROUGH × EPP_MIN_PE          (structural floor; non-GAAP adj EPS basis)
+Ratio B = (Price − EPP) / (price_b − Price)
 
-def softmax_probs(composite, T=0.60):
-    centres = {"BEAR": 1.25, "BASE": 2.0, "BULL": 2.75, "XBULL": 3.75}
-    raw = {k: math.exp(-abs(composite - c) / T) for k, c in centres.items()}
-    tot = sum(raw.values())
-    return {k: v / tot for k, v in raw.items()}
+PYPL EPS convention: Non-GAAP Adjusted EPS. Excludes SBC, restructuring charges,
+intangible amortisation. Under CEO Chriss (Sept 2023), PayPal changed non-GAAP
+definition to include some restructuring — making FY2024 the reported trough year.
+CAUTION: Q1 2026 GAAP EPS fell -6% while non-GAAP +1% — watch GAAP trend closely.
 
-def expected_price(probs):
-    return sum(probs[k] * SCENARIOS[k][2] for k in probs)
+SIGNAL THRESHOLDS
+  Ratio B < 0.75   →  ◉ BUY
+  0.75 – 1.10      →  ◎ ACCUMULATE
+  1.10 – 1.75      →  ◐ WATCHLIST
+  1.75 – 2.50      →  ▷ HOLD/TRIM
+  > 2.50           →  ✕ AVOID
 
-def market_implied_composite(target_ev, tolerance=2.0):
-    for c in [x / 100 for x in range(100, 401)]:
-        if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
-            return round(c, 2), softmax_probs(c)
-    return None, None
+EPP_MIN_PE = 10×  rationale:
+  PayPal is a fintech under real competitive pressure — not a temporary operational
+  disruption but structural market-share erosion from Apple Pay, Google Pay, Stripe,
+  and Shopify. However, the floor is protected by genuine assets:
+  (1) $5-6B annual free cash flow — does NOT disappear even with branded share loss
+  (2) Venmo's 90M+ US user network — sticky P2P with growing commerce use
+  (3) Braintree enterprise contracts — lower margin but durable volume
+  (4) 430M active global accounts — large embedded base with switching costs
+  10× of conservative trough EPS ($3.50) = $35 EPP. At $44.16 = only 26% above floor —
+  a THIN buffer that accurately reflects the competitive overhang.
+  Note: FISV (also 10×) has contracted B2B revenue from banks that cannot easily switch.
+  PYPL's consumer checkout is more vulnerable to behaviour change.
+""")
 
-# ── COMPUTE ───────────────────────────────────────────────────────────────────
-W = 72
+    print("PAYPAL HOLDINGS (PYPL) — THE FCF FORTRESS PRICED AT 8× EARNINGS")
+    print("=" * 70)
 
-scored = [
-    (name, unit, bv, bf, blf, xf, cv, hib, narr,
-     score_signal(cv, bf, blf, xf, hib), w)
-    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
-    in zip(SIGNALS, WEIGHTS)
-]
-proxy_composite  = sum(s * w for *_, s, w in scored)
-bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
-                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
-                       in zip(SIGNALS, WEIGHTS))
-sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite    = proxy_composite + sca
-proxy_probs      = softmax_probs(proxy_composite)
-bear_probs       = softmax_probs(bear_composite)
-proxy_ev         = expected_price(proxy_probs)
-bear_ev          = expected_price(bear_probs)
+    print("""
+BUSINESS OVERVIEW
+─────────────────
+PayPal Holdings was spun off from eBay in July 2015. It is the world's largest
+digital payments network by account base (430M active accounts, $1.9T annual TPV).
+Headquarters: San Jose, CA. CEO: Alex Chriss (since September 2023, formerly
+President of Intuit Small Business and QuickBooks). PayPal pioneered online payments
+(1998) and remains a default brand for digital wallets globally — but faces the most
+significant competitive pressure in its history from OS-native wallets.
 
-market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
-mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
-mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
+FOUR REVENUE STREAMS
+─────────────────────
+  PAYPAL BRANDED CHECKOUT      ~50% of revenue  (HIGH MARGIN; AT RISK)
+  ─────────────────────────────────────────────
+  The blue PayPal button at checkout. 2.2% take rate. Consumer trust for purchase
+  protection, dispute resolution, and fraud protection.
+  THE FRANCHISE AT RISK from Apple Pay/Google Pay convenience advantage.
+  Q1 2026: branded checkout growing but slower than total TPV (mix dilution).
 
-blended_tr, curr_rev, tr_prem, rev_per_pp, mix_upside = take_rate_economics()
+  BRAINTREE / PSP (Unbranded)  ~30% of revenue  (LOW MARGIN; GROWING)
+  ─────────────────────────────────────────────
+  Unbranded payment processing for Airbnb, Uber, large merchants, and SMBs.
+  Take rate: ~0.4-0.6% — far lower than branded. Growing double-digits but
+  diluting overall economics as it grows faster than branded.
 
-# Updated EPP (EPS-based)
-epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
-epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
-bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
+  VENMO                        ~10% of revenue  (THE HIDDEN ASSET)
+  ─────────────────────────────────────────────
+  America's #1 P2P payments app. 90M+ accounts, $330B+ annual TPV.
+  Currently undermonetised at 0.9% take rate (vs PayPal 2.2% branded).
+  Venmo is accelerating: Pay with Venmo merchant TPV +23% Q1 2026;
+  Venmo Debit/Credit Card; BNPL integration. Six consecutive double-digit quarters.
+  The take-rate gap (0.9% → 2.2%) on $330B+ TPV = $4.3B annual revenue opportunity.
 
-# Conservative growth
-cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
-cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
-cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
-cons_annual_ret = cons_total_ret / 2
+  OTHER (BNPL, FASTLANE, XOOM) ~10% of revenue  (EMERGING)
+  ─────────────────────────────────────────────
+  Buy Now Pay Later: TPV +34% Q1 2026 — meaningful volume growth.
+  Fastlane: one-click guest checkout — PayPal's answer to Apple Pay convenience.
+            Early data shows 40%+ conversion lift vs. traditional guest checkout.
+            Expanding internationally as of Q1 2026.
+  Xoom: international P2P money transfer.
 
-# Volatility
-sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
-vol_low_1yr       = CURRENT_PRICE - sigma_1yr
-vol_high_1yr      = CURRENT_PRICE + sigma_1yr
-sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
+THE VALUATION CASE: 8× EARNINGS ON $5.7B OF BUYBACKS
+─────────────────────────────────────────────────────
+At $44.16:
+  Non-GAAP P/E on FY2026E $5.42:   8.1×  (vs any fintech peer at 15-25×)
+  GAAP P/E:                         8.3×  (GAAP and non-GAAP converged in FY2025)
+  FCF yield:                      ~13-15% (free cash flow $5-6B / market cap $39B)
+  Buyback yield:                    ~15%  ($6B annualised buybacks on $39B market cap)
+  Share count decline:              ~7-8%/yr (881M today from ~1.16B in 2020)
 
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
+The buyback math is compelling even without any operational improvement:
+  FY2027E EPS $5.92 = already priced in at 14× = $83 BULL case
+  If EPS stays flat but share count declines 7%/yr, EPS self-compounds to:
+    2027: $5.92 → 2028: $6.35 → 2029: $6.80 → at 10× P/E = $68 (just from buybacks)
+  This is the FCF/buyback floor that makes PYPL a BUY despite operational uncertainty.
 
-# ── OUTPUT ────────────────────────────────────────────────────────────────────
-print()
-print("═" * W)
-print(f"  PYPL  ·  PayPal Holdings  ·  ${CURRENT_PRICE:.2f}  ·  Payments / Fintech")
-print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
-print("═" * W)
+TAKE-RATE COMPRESSION: THE CORE CONCERN
+─────────────────────────────────────────
+FY2026 guidance: transaction margin dollars "roughly flat or slightly down."
+Revenue growing 7% but gross profit NOT growing = TPV mix shifting to unbranded.
+  Branded checkout take rate: 2.2%   (declining slowly)
+  Braintree/PSP take rate:    0.4-0.6% (growing in volume mix)
+  Blended result: each 1pp shift from branded to unbranded = ~$19B in affected revenue
+  → ~$30-32M annual gross profit loss per basis point of blended take rate decline.
 
-# Take rate decomposition (keep before ① as PYPL-specific feature)
-print(f"\n  TAKE RATE DECOMPOSITION  (the entire Chriss thesis in one table)")
-print("  " + "─" * (W-2))
-print(f"  Total TPV (FY2025E):                         ${TOTAL_TPV_T:.2f}T")
-print(f"  Branded checkout mix:                        {BRANDED_MIX_PCT}%  (take rate {BRANDED_TAKE_RATE:.2f}%)")
-print(f"  Unbranded / Braintree mix:                   {100-BRANDED_MIX_PCT}%  (take rate {UNBRANDED_TAKE_RATE:.2f}%)")
-print(f"  Blended take rate (current):                 {blended_tr:.3f}%")
-print(f"  {'─'*60}")
-print(f"  Revenue uplift per 1pp branded mix gain:     ${rev_per_pp:.2f}B / yr  ← the leverage")
-print(f"  Full recovery to {PEAK_BRANDED_MIX}% branded → +${mix_upside:.1f}B annual revenue uplift")
+Apple Pay, Google Pay, Shopify Pay, and Stripe are the primary share-takers.
+Apple Pay in particular offers zero-friction biometric authentication — no password,
+no redirect. At iPhone's 55%+ US market share, this is a structural competitive moat
+that PayPal cannot directly replicate.
 
-# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
-print(f"\n  ① SIGNAL DASHBOARD")
-print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
-print("  " + "─" * (W-2))
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u = unit.split()[0] if unit else ""
-    bv_s  = f"{bv:+.2f}{u}" if "pp" in unit else (f"{bv:+.0f}{u}" if hib else f">{bv:.0f}{u}")
-    bf_s  = f"{bf:.2f}{u}" if "pp" in unit else f"{bf:.0f}{u}"
-    blf_s = f"{blf:.2f}{u}" if "pp" in unit else f"{blf:.0f}{u}"
-    xf_s  = f"{xf:.2f}{u}" if "pp" in unit else f"{xf:.0f}{u}"
-    cv_s  = f"{cv:+.2f}{u}" if "pp" in unit else f"{cv:+.0f}{u}"
-    bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
+CEO ALEX CHRISS: THE TURNAROUND
+──────────────────────────────────
+Alex Chriss joined from Intuit in September 2023. Key actions under his tenure:
+  1. 9% workforce reduction (Jan 2024) + additional restructuring → cost base lower
+  2. Focus on "profitable growth" — fewer large-merchant price-competitive Braintree deals
+  3. Launched Fastlane (one-click guest checkout) to compete on convenience
+  4. Venmo monetisation acceleration: push merchant checkout, debit/credit card use
+  5. PayPal Everywhere: 3% cashback card to drive branded checkout habit
+  6. Advertising/data platform: PayPal's 430M account purchase data = targeting asset
 
-print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
-    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
-          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
+FY2025 results show cost savings flowing through (EPS $5.46 vs $4.03 in FY2024).
+However, Q1 2026 non-GAAP EPS barely grew (+1%) and GAAP fell -6%: no operating
+leverage yet. The restructuring has stabilised costs but not reversed take-rate erosion.
 
-print(f"\n  Structural factors:")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    arrow = "  +" if score > 0 else "  -"
-    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
+Q1 2026 RESULTS — THE TENSION
+────────────────────────────────
+  Revenue:             $8.35B  (+7% YoY)        ← volumes growing
+  TPV:               $463.96B  (+11% YoY)        ← strong
+  Non-GAAP EPS:          $1.34  (+1% YoY)        ← barely growing
+  GAAP EPS:           fell -6%  YoY              ← warning sign
+  Transaction margin:  flat/slightly down         ← core pressure
+  Venmo TPV:             +14%                    ← bright spot
+  Pay with Venmo:        +23%                    ← bright spot
+  BNPL TPV:             +34%                     ← bright spot
+  Fastlane:           expanding internationally  ← early stage
 
-# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
-print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u      = unit.split()[0] if unit else ""
-    if "pp" in unit:
-        cv_s   = f"{cv:+.2f}{u}"
-        bv_s   = f"{bv:+.2f}{u}"
-        move_s = f"{bv-cv:+.2f}{u}"
-    else:
-        cv_s   = f"{cv:+.0f}{u}"
-        bv_s   = f"{bv:+.0f}{u}"
-        move_s = f"{bv-cv:+.0f}{u}"
-    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
-    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+The tension: volume metrics are strong (+11% TPV) but economics are stagnant
+(transaction margin flat). Revenue grows but profit doesn't follow — classic
+symptom of mix shift toward lower-margin processing.
 
-print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
-      f"~${expected_price(bear_probs):.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
-print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: Apple Pay + Shopify Pay structural displacement of branded")
-print(f"  checkout → TPV share falls from 40% to 30% → Braintree/unbranded margin")
-print(f"  compression. No path to EPS acceleration; re-rates to 13x.")
+VENMO MONETISATION: THE UPSIDE OPTION
+──────────────────────────────────────
+Venmo's 90M US accounts are a defensible and undermonetised asset:
+  Current Venmo take rate: ~0.9%
+  PayPal branded take rate: ~2.2%
+  Gap: 1.3pp × Venmo annual TPV est. $330B = $4.3B annual revenue opportunity
 
-# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
-print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
-print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:           ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP)")
-print(f"  Min viable P/E at max pessimism:   {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
-print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                      ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1):              ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  "
-      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  "
-      f"{'← BEAR requires impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
+  If Venmo take rate reaches 1.5% (still 0.7pp below PayPal branded):
+    Additional annual revenue: +0.6pp × $330B = $1.98B → +$1.80 EPS (20% margin)
+    At 14× multiple: +$25/share upside from Venmo monetisation alone
 
-# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
-print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, all signals at BASE lower bound — no tailwinds)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
-for sname, sval, srat in CONS_SIGNALS:
-    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
-               if name.lower().startswith(sname.split()[0].lower()))
-    diff = sval - cur
-    diff_s = f"{diff:+.2f}" if abs(diff) < 1 else f"{diff:+.0f}"
-    print(f"  {sname:<30}  {sval:>14.2f}  {diff_s:>9}   {srat[:30]}")
+  This is optionality that the current 8× multiple prices at ZERO.
+  Pay with Venmo +23% Q1 2026 = the monetisation is working — slowly.
 
-print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
-print(f"  {'─'*60}")
-print(f"  Conservative 2yr price:     ${cons_price_2yr:.0f}  "
-      f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from ${CURRENT_PRICE:.0f})")
-print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  = {cons_annual_ret:+.0f}%/yr")
-print(f"\n  Key: Chriss cost cuts + buybacks alone deliver EPS growth even without")
-print(f"  revenue re-acceleration. The conservative case doesn't require branded recovery.")
+FASTLANE: CONVERSION REINVENTION OPTION
+─────────────────────────────────────────
+Guest checkout is ~50%+ of ecommerce transactions. Apple Pay wins here on
+convenience (tap, FaceID, done). Fastlane stores card/shipping for PayPal wallet
+users AND guest buyers — auto-fills at any Fastlane-enabled merchant.
+  Early data: 40%+ conversion improvement vs. traditional guest checkout
+  Expanding to international markets Q1 2026
+  Competing with Stripe Link (Stripe's equivalent product)
+  Key risk: needs merchant adoption; PayPal's relationship with large merchants
 
-# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
-print(f"\n  ⑤ VOLATILITY CONTEXT")
-print("  " + "─" * (W-2))
-print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
-print(f"  Annual dividend:      none  ($7B net cash used for buybacks)")
-print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
-print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}  (above market; execution + sector risk)")
-print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
-      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
-print(f"  2-sigma range (1yr):  ${max(0, CURRENT_PRICE - 2*sigma_1yr):.0f}  –  "
-      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
-print(f"  {'─'*60}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
-      f"~{sigma_needed_bear:.1f}σ price move  "
-      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  No dividend buffer — $7B buyback program partially offsets drawdown.")
-print(f"  → Structural displacement risk (Apple/AI) is slow-moving but persistent.")
+If Fastlane captures meaningful share of guest checkout → revenue without incremental
+customer acquisition cost → high incremental margins.
 
-# ── ⑥ PROBABILITY DISTRIBUTION ───────────────────────────────────────────────
-print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
-print("  " + "─" * (W-2))
-print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
-      f"{'Gap':>6}  Description")
-for k in ["BEAR", "BASE", "BULL", "XBULL"]:
-    eps, mult, price, narr = SCENARIOS[k]
-    pp  = proxy_probs[k]
-    mp  = mkt_probs[k] if mkt_probs else 0
-    gap_pp = pp - mp
-    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
-          f"{gap_pp*100:>+6.1f}pp  {narr}")
+KEY RISKS
+──────────
+  1. FRANCHISE EROSION: Apple Pay/Google Pay gaining share faster than projected;
+     branded checkout revenue line could decline while Braintree grows (net margin loss).
+  2. FCF COMPRESSION: Take-rate erosion beyond guidance → FCF declines from $5-6B
+     toward $3-4B → buyback capacity shrinks → EPS compounding slows.
+  3. GAAP vs NON-GAAP DIVERGENCE: Q1 2026 GAAP fell -6% vs non-GAAP +1%.
+     If impairments or asset write-downs persist, true economic earnings may be lower.
+  4. VENMO MONETISATION FAILURE: Venmo users resistant to fees; Gen Z may not
+     adopt "Pay with Venmo" at merchant checkout if Apple Pay is easier.
+  5. CEO EXECUTION: Chriss 2.5 years in without demonstrable margin expansion.
+     If FY2026-2027 EPS growth is entirely from buybacks, multiple stays depressed.
+  6. VALUE TRAP: A company generating 13% FCF yield but buying back shares of a
+     structurally declining franchise is ultimately just liquidating itself — the
+     question is HOW SLOWLY the franchise erodes vs. how fast buybacks compound EPS.
 
-print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  "
-      f"Current: ${CURRENT_PRICE:.0f}")
-print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
-      f"${cons_price_2yr + cons_div_2yr:.0f} total value")
+SUMMARY VERDICT
+───────────────
+PayPal at $44.16 is trading at 8.1× non-GAAP EPS and 13-15% FCF yield. Even as a
+"value trap" scenario with zero organic growth, the buyback math makes the stock a
+BUY: share count shrinking 7-8%/yr compounds EPS to ~$8-9 by 2029 before any
+business improvement. The bears are right about branded-checkout erosion; the bulls
+are right that Venmo (90M users; 1.3pp take-rate gap) and Fastlane represent growth
+options not priced in at 8×. The Q1 2026 GAAP EPS decline is the key watch item.
+BUY below $55. Moderate conviction on the FCF/buyback floor; lower conviction on the
+operational turnaround. This is NOT a high-quality franchise BUY (like MRSH or SCHW);
+it is a deep-value / capital-return BUY with meaningful downside execution risk.
+""")
 
-print()
-print("═" * W)
+    print("KEY METRICS")
+    print(f"  Current price (fetched)          = $  {CURRENT_PRICE:.2f}")
+    print(f"  52-week range                    = $38.46 – $79.50")
+    print(f"  Market cap                       = ~$38.9B")
+    print(f"  Non-GAAP P/E on FY2026E ${EPS_NOW:.2f}  = {CURRENT_PRICE/EPS_NOW:.1f}×  (vs fintech peers 15-25×; near-trough multiple)")
+    print(f"  Non-GAAP P/E on FY2027E ${CONS_EPS_2YR:.2f}  = {CURRENT_PRICE/CONS_EPS_2YR:.1f}×  (cheap on 2-yr view)")
+    print(f"  Dividend (annual)                = ${DIVIDEND_ANN:.2f}  (yield {DIVIDEND_ANN/CURRENT_PRICE*100:.2f}%; recently initiated Q1 2026)")
+    print(f"  Buyback pace                     = ~$6B/yr  (15% of market cap; 7-8% share count decline)")
+    print(f"  Active accounts                  = 430M+  (global; +0.1% sequential Q3 2025 — stagnant)")
+    print(f"  Venmo accounts                   = 90M+  (US P2P; +14% TPV; undermonetised at 0.9% rate)")
+    print(f"  Q1 2026 TPV                      = $463.96B  (+11% YoY)")
+    print(f"  Q1 2026 revenue                  = $8.35B  (+7% YoY)")
+    print(f"  FY2026 transaction margin guide  = flat/slightly down  (core economics under pressure)")
+    print(f"  Analyst avg price target         = ~$55-58  (consensus Hold; wide range $32-$105)")
+    print()
+
+    print("NON-GAAP ADJUSTED EPS HISTORY")
+    for yr, val in EPS_HISTORY.items():
+        print(f"  {yr}  ${val:.2f}")
+    print(f"  FY2026E ${EPS_NOW:.2f}  (consensus; mgmt guides 'roughly flat'; Q1 2026 = $1.34 × 4 = $5.36)")
+    cagr = ((EPS_HISTORY["FY2025"]/EPS_HISTORY["FY2022"])**(1/3)-1)*100
+    print(f"  FY2022–FY2025 CAGR: {cagr:.1f}%/yr  (driven primarily by share reduction, not operating leverage)")
+    print()
+
+    print("EPP CALCULATION")
+    print(f"  EPS_TROUGH × EPP_MIN_PE  =  ${EPS_TROUGH:.2f} × {EPP_MIN_PE}×  =  ${EPP:.2f}")
+    print(f"  (FCF floor; accelerated erosion; buybacks slow as FCF declines to ~$3B)")
+    print(f"  THIN BUFFER: current ${CURRENT_PRICE:.2f} is only +{epp_gap_pct:.1f}% above EPP — reflects real franchise risk")
+    print()
+
+    print("METHOD B  (2-year forward)")
+    print(f"  CONS_EPS_2YR × CONS_EXIT_PE  =  ${CONS_EPS_2YR:.2f} × {CONS_EXIT_PE}×  =  ${price_b:.2f}")
+    print()
+
+    print("RATIO B  (PRIMARY SIGNAL)")
+    print(f"  (${CURRENT_PRICE:.2f} − ${EPP:.2f}) / (${price_b:.2f} − ${CURRENT_PRICE:.2f})")
+    print(f"  = ${CURRENT_PRICE - EPP:.2f} / ${price_b - CURRENT_PRICE:.2f}")
+    print(f"  = {ratio_b:.3f}×   →   {signal}")
+    print(f"  EPP gap: +{epp_gap_pct:.1f}% above structural floor  (THIN — reflects competitive overhang)")
+    print()
+
+    print("SCENARIO PRICES")
+    for name, price in scenarios.items():
+        print(f"  {name:<8} ${price:>7.2f}   ", end="")
+        if name == "BEAR":
+            print("EPP; FCF declines to ~$3B; franchise erosion accelerates beyond guidance")
+        elif name == "BASE":
+            print("FY2026E $5.42 × 10.7×; analyst consensus zone; minimal re-rating from 8×")
+        elif name == "BULL":
+            print("Method B; FY2027E $5.92 × 14×; buyback flywheel + Venmo monetisation")
+        else:
+            print("Fastlane + Venmo breakthrough; $5.92 × 20×; full turnaround re-rate")
+    print()
+
+    print("SOFTMAX COMPOSITE ENGINE")
+    print(f"  Market composite (inferred)  =  {market_composite:.3f}")
+    print(f"  (Market near BEAR zone — pricing structural decline and ignoring FCF/buyback floor)")
+    print()
+
+    print("SCA — SIGNAL CATALYST ADJUSTMENTS")
+    for desc, score, weight in sca_items:
+        trunc = desc[:55]
+        sign  = "+" if score >= 0 else ""
+        print(f"  {trunc:<55}  {sign}{score:.2f} × {weight:.2f}  =  {'+' if score*weight>=0 else ''}{score*weight:.4f}")
+    print()
+    print(f"  sca_raw     =  {'+' if sca_raw>=0 else ''}{sca_raw:.4f}")
+    print(f"  sca_adj     =  {'+' if sca_adj>=0 else ''}{sca_adj:.4f}  (= sca_raw / 2.0)")
+    print(f"  adj_composite  =  {market_composite:.3f}  +  {sca_adj:.4f}  =  {adj_composite:.3f}")
+    print(f"  (Net slightly negative SCA: headwinds outweigh near-term catalysts; cheap but re-rating uncertain)")
+    print()
+
+    print("SOFTMAX SCENARIO WEIGHTS  (at adj_composite = {:.3f})".format(adj_composite))
+    for name, w in adj_weights.items():
+        print(f"  {name:<8}  {w*100:5.1f}%   ${scenarios[name]:.2f}")
+    print()
+    print(f"  Expected price (probability-weighted)  =  ${expected_px:.2f}")
+    print()
+
+    print("BUSINESS METRICS")
+    print(f"  Total payment volume Q1 2026    = $463.96B  (+11% YoY; growing strongly)")
+    print(f"  Active accounts                 = 430M+  (stagnant +0.1% sequential; a concern)")
+    print(f"  Venmo TPV growth Q1 2026        = +14%  (6th consecutive double-digit quarter)")
+    print(f"  Pay with Venmo (merchant)       = +23%  (monetisation accelerating)")
+    print(f"  BNPL TPV growth Q1 2026         = +34%  (strong growth; crowded market)")
+    print(f"  Buyback LTM (through Q3 2025)   = $5.7B  (~78M shares; declining share base)")
+    print(f"  Share count decline             = ~7-8%/yr  (881M now; from 1.16B in 2020)")
+    print(f"  Venmo take rate                 = ~0.9%  (vs PayPal branded 2.2%; $4.3B gap)")
+    print(f"  FY2026 transaction margin guide = roughly flat/slightly down  (core stagnant)")
+    print(f"  ATH (July 2021)                 = $309  (current $44 = 86% below ATH)")
+    print()
+
+    print("SIGNAL ENTRY GUIDE")
+    def threshold_price(rb):
+        return (EPP + rb * price_b) / (1 + rb)
+    p_buy   = threshold_price(0.75)
+    p_watch = threshold_price(1.10)
+    p_hold  = threshold_price(1.75)
+    p_avoid = threshold_price(2.50)
+    print(f"  ✕ AVOID      above  ${p_avoid:.0f}  (ratio_b > 2.50×; 52-wk high $79.50 = extreme AVOID)")
+    print(f"  ▷ HOLD/TRIM  ${p_hold:.0f} – ${p_avoid:.0f}  (ratio_b 1.75–2.50×)")
+    print(f"  ◐ WATCHLIST  ${p_watch:.0f} – ${p_hold:.0f}  (ratio_b 1.10–1.75×)")
+    print(f"  ◎ ACCUMULATE ${p_buy:.0f} – ${p_watch:.0f}  (ratio_b 0.75–1.10×; analyst avg PT $55-58 ≈ zone)")
+    print(f"  ◉ BUY        below  ${p_buy:.0f}  (ratio_b < 0.75×)  ← current ${CURRENT_PRICE:.2f}  BUY")
+    print()
+    print(f"  52-wk low $38.46 = extreme BUY (ratio_b 0.10×); near EPP $35; hard floor.")
+    print(f"  52-wk high $79.50 = deep AVOID (ratio_b 7.0×); market over-optimistic at $79.")
+    print(f"  Analyst avg PT $55-58 ≈ ACCUMULATE zone: consistent with 8× → 10× modest re-rating.")
+    print(f"  EPP gap only +{epp_gap_pct:.1f}%: THINNEST buffer in coverage — genuine franchise risk.")
+    print(f"  KEY WATCH: Transaction margin dollar growth/decline Q2 2026 — the defining metric.")
+    print(f"  GAAP vs non-GAAP divergence: GAAP fell -6% Q1 2026 — impairments/charges re-emerging.")
+    print(f"  Venmo take-rate progress: 0.9%→1.2%+ in next 4 quarters = re-rate trigger.")
+    print(f"  CAVEAT: FCF/buyback BUY, not a high-quality franchise BUY. Requires either")
+    print(f"  (a) multiple re-rating from 8× or (b) Venmo/Fastlane operating inflection.")

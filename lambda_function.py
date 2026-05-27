@@ -81,6 +81,7 @@ MODELS = {
     "MRSH": "mrsh_signal_model.py",
     "CB":   "cb_signal_model.py",
     "KKR":  "kkr_signal_model.py",
+    "PYPL": "pypl_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -397,6 +398,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "KKR & Co. Inc.", "sector": "Alternative Asset Management · Private Equity · Credit · Infrastructure · Insurance (Global Atlantic)",
               "summary": "KKR — founder of modern PE (1976) — is trading at 11.6× FY2027E distributable earnings while every business metric is at all-time highs: AUM $758B (+14% YoY), FPAUM $615B (+17%), $129B raised FY2025, $120B dry powder. Down 39% from $153.87 Nov 2025 high; market extrapolating deal-market distress into perpetuity. The FRE floor ($4.13/share, +23% YoY in Q1 2026) is secured by $615B of LOCKED-UP capital that cannot redeem — in 2009, KKR's fees did not stop. Global Atlantic ($219B insurance AUM) adds permanent capital growing 15%/yr. At $94: market cap/AUM ratio = 11.2% — historically anomalous (BX at trough was 12-15%). The market is pricing $0 for $120B dry powder + future carry from $95B deployed in FY2025 at attractive prices. FY2026E $6.77 (mgmt guides $7+); FY2027E $8.13. EPP $63 (18× × $3.50 FRE trough). Ratio B 0.37×. BUY. Target: $130-179 (+38-90%)."},
+    "PYPL": {"ticker": "PYPL", "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#22c55e",
+              "price": 44.16,   "date": "2026-05-27", "epp_gap_pct": 26.2,  "ratio_b_fmt": "0.24x",
+              "sector_group": "Finance",
+              "company": "PayPal Holdings, Inc.", "sector": "Digital Payments · Peer-to-Peer (Venmo) · Commerce Platform · BNPL · Fastlane",
+              "summary": "PayPal at $44.16 = 8.1× FY2026E non-GAAP EPS and 13-15% FCF yield — the cheapest valuation in PYPL's history as a public company, 86% below the $309 ATH (July 2021). The valuation case is entirely about the buyback flywheel: $6B/yr in buybacks (~15% of market cap annually) at 8× earnings compounds EPS to ~$8-9 by 2029 even with zero revenue growth. Venmo (90M+ US accounts; TPV +14% for 6th consecutive double-digit quarter; Pay with Venmo +23%) is deeply undermonetised at 0.9% take rate vs. 2.2% PayPal branded — the $4.3B annual gap represents real optionality. Bears are right: branded checkout losing share to Apple Pay/Stripe; Q1 2026 transaction margin flat; GAAP EPS fell -6% vs non-GAAP +1%. This is a FCF/buyback BUY, not a high-quality franchise BUY — conviction comes from the capital return math, not the business momentum. Analyst avg PT $55-58. EPP $35 (10× × $3.50 trough). Ratio B 0.24×. BUY below $56."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
