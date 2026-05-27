@@ -78,6 +78,7 @@ MODELS = {
     "BX":   "bx_signal_model.py",
     "FISV": "fisv_signal_model.py",
     "SCHW": "schw_signal_model.py",
+    "MRSH": "mrsh_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -379,6 +380,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "The Charles Schwab Corporation", "sector": "Retail Brokerage · Wealth Management · Banking · Asset Management",
               "summary": "Schwab has resolved BOTH crises that depressed earnings for three years. (1) Cash sorting: $200B+ of client cash moved to money market funds 2022-2024 crushing NIM to 1.75% trough — now fully stabilised; NIM recovered to 2.88% Q1 2026 (+35bps YoY) with 12bps more to go as FHLB debt ($80B+ repaid) rolls off. (2) TD Ameritrade integration: 100% complete end 2025; $2B annual synergies fully realised. Q1 2026 was the first clean quarter showing the combined benefit: adj EPS $1.43 (+38% YoY, record), revenue $6.5B (+16%), net income $2.5B (+30%). Record NNA $519B FY2025 (+42%) → $11.77T client assets (+19%). 2026 guidance $5.70-5.80, tracking above after Q1 beat. At $90 = 15.4× FY2026E — near the empirical floor multiple (SVB panic 2023 = ~15×). FY2027E $6.80 at 22× = $150 (+66%). Analyst avg PT $113-116 (+25%). EPP $37.50 (15× × $2.50). Ratio B 0.88×. ACCUMULATE. BUY below $86 (just $4 from current)."},
+    "MRSH": {"ticker": "MRSH", "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#22c55e",
+              "price": 164.11,  "date": "2026-05-27", "epp_gap_pct": 30.2,  "ratio_b_fmt": "0.37x",
+              "sector_group": "Finance",
+              "company": "Marsh & McLennan Companies, Inc.", "sector": "Insurance Brokerage & Risk Advisory · Reinsurance Broking · HR Consulting · Management Consulting",
+              "summary": "Marsh McLennan (rebranded MMC→MRSH Jan 2026) is the world's #1 insurance broker + Guy Carpenter (#2 reinsurance broker) + Mercer (#1 HR consulting) + Oliver Wyman (elite mgmt consulting). 18 consecutive years of margin expansion; targeting the 19th in 2026. NO underwriting risk — pure fee/commission model; insurers bear the risk. $27B revenue, $4.5B+ FCF, EPS compounding at 8-10%/yr. At $164, the stock is 31% below its $235.78 ATH and trading at 15.5× FY2026E adj EPS — near COVID-crash multiples — despite zero business impairment. Q1 2026: adj EPS $3.29 (+8% YoY), underlying revenue +4%, Risk & Insurance margin 38.3%, Consulting margin 21.6%. FY2025: adj EPS $9.75 (+9%), 18th consecutive margin expansion. Peers Aon (~23-24× FW EPS) and Gallagher (~30-35×) trade at 50-100% premiums. FY2027E $11.60 at 23× = $267 (+63%). Analyst avg PT $202 (+23%; 9 Buy / 1 Sell). EPP $126 (18× × $7.00 trough). Ratio B 0.37×. BUY. Double compounder: multiple re-rating 15.5×→22× + EPS growth 9-10%/yr = $200-267 over 2 years."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
