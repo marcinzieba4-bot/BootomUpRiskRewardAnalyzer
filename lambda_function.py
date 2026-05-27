@@ -73,6 +73,7 @@ MODELS = {
     "SPGI": "spgi_signal_model.py",
     "MS":   "ms_signal_model.py",
     "BLK":  "blk_signal_model.py",
+    "PGR":  "pgr_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -349,6 +350,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "S&P Global Inc.", "sector": "Financial Data & Analytics · Credit Ratings Duopoly · Indices (S&P 500) · Market Intelligence",
               "summary": "Regulated duopoly (S&P + Moody's = 80% global credit ratings) + S&P 500 index perpetual annuity (≥$10T AUM tracking; each index point ≈ $35M/yr licensing fees). IMMINENT CATALYST: Mobility Global (MBGL) spin-off July 1, 2026 — CARFAX + Polk spun as pure auto-data play; record date June 15. Post-spin SPGI becomes purer financial data/analytics business deserving 27-30× (vs 21.4× today). Q1 2026: adj EPS $4.97 (+14% beat), Ratings +13%, Indices +17%, adj margin 52% record. FY2026 guidance $19.40-$19.65 raised. At 21.4× FW vs Moody's 30× — SPGI at 29% discount to duopoly peer. Analyst avg PT $533-562 (+27-34%). Method B $562.50 (+35%). Ratio B 1.51×. WATCHLIST; ACCUMULATE $370-415 (post-MBGL-spin dislocation zone); BUY below $340."},
+    "PGR":  {"ticker": "PGR",  "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#22c55e",
+              "price": 199.51,  "date": "2026-05-22", "epp_gap_pct": 101.5, "ratio_b_fmt": "0.576x",
+              "sector_group": "Finance",
+              "company": "The Progressive Corporation", "sector": "Personal Auto Insurance · Commercial Lines · Property · Snapshot Telematics",
+              "summary": "America's most precise auto insurer — Snapshot telematics (30M+ vehicles) gives PGR unmatched individual risk pricing vs demographics-only peers. Near 52-wk low ($192) while FY2025 EPS was record $19.23 and Q1 2026 $4.96 (+2.9% beat). The paradox: record earnings + 31% drawdown from ATH $289.82. Market is pricing CR normalization from 86.4% → 96% target (EPS would fall from $19 to ~$10). But even at analyst consensus 91-92% CR, EPS $16-17 at even 18× = $288-306 = +45-53% upside. At $199 the BEAR case (CR 95%+) is roughly priced in — downside only ~17% to $165; upside to $374 (+87.5%). Unique dividend: $13.50 variable paid Jan 2026 (6.77% yield for FY2025); annual variable formula based on profitability. FW P/E 12.2× is historically cheap for PGR (normally 20-28×). Analyst avg PT $231 (+16%). Ratio B 0.576×. BUY below $217; ACCUMULATE $217-244."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
