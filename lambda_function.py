@@ -74,6 +74,7 @@ MODELS = {
     "MS":   "ms_signal_model.py",
     "BLK":  "blk_signal_model.py",
     "PGR":  "pgr_signal_model.py",
+    "C":    "c_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -355,6 +356,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "The Progressive Corporation", "sector": "Personal Auto Insurance · Commercial Lines · Property · Snapshot Telematics",
               "summary": "America's most precise auto insurer — Snapshot telematics (30M+ vehicles) gives PGR unmatched individual risk pricing vs demographics-only peers. Near 52-wk low ($192) while FY2025 EPS was record $19.23 and Q1 2026 $4.96 (+2.9% beat). The paradox: record earnings + 31% drawdown from ATH $289.82. Market is pricing CR normalization from 86.4% → 96% target (EPS would fall from $19 to ~$10). But even at analyst consensus 91-92% CR, EPS $16-17 at even 18× = $288-306 = +45-53% upside. At $199 the BEAR case (CR 95%+) is roughly priced in — downside only ~17% to $165; upside to $374 (+87.5%). Unique dividend: $13.50 variable paid Jan 2026 (6.77% yield for FY2025); annual variable formula based on profitability. FW P/E 12.2× is historically cheap for PGR (normally 20-28×). Analyst avg PT $231 (+16%). Ratio B 0.576×. BUY below $217; ACCUMULATE $217-244."},
+    "C":    {"ticker": "C",    "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 126.20,  "date": "2026-05-27", "epp_gap_pct": 250.6, "ratio_b_fmt": "1.85x",
+              "sector_group": "Finance",
+              "company": "Citigroup Inc.", "sector": "Global Banking · Investment Banking · Markets · Treasury & Trade Solutions · Wealth Management",
+              "summary": "The ultimate transformation story: Jane Fraser's 2024-2026 restructuring (5 business lines, 20K job cuts, $20B buyback) is delivering — Q1 2026 EPS $3.06 (annualised $12.24) beat by 16%, revenue $24.6B (+14%) was best in a decade, ROTCE 13.1% ALREADY exceeds the 10-11% FY2026 guidance. Cheapest US SIFI at 1.27× TBV ($99.01/sh); peers JPM/BAC trade 2-3× TBV. Gordon Growth cross-check: at Citi's own 10.5% FY2026 ROTCE target, fair value = 1.30× TBV = $128 ≈ current price — stock needs to EXCEED target (Q1 proves it can). Fraser's medium-term 14.5% ROTCE would warrant 2.10× TBV = $208. The stock has already run +63% in 12 months (from $73 BUY to current HOLD). EPP $36 (9× × $4 trough). Method B $175 (FY2027E $12.50 × 14×). Ratio B 1.85×. HOLD; re-enter ACCUMULATE $100-113 on any macro dislocation; deep BUY below $100 (near TBV)."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
