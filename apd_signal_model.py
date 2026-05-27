@@ -1,339 +1,402 @@
-#!/usr/bin/env python3
 """
-APD Signal Model  v2
-─────────────────────
-Air Products & Chemicals, Inc. (NYSE: APD)  ·  Industrial Gases / Hydrogen
+apd_signal_model.py — Air Products and Chemicals, Inc. (NYSE: APD)
+Industrial gas oligopolist. Hydrogen economy leader. NEOM + Louisiana mega-projects.
+Signal framework: EPP floor + Method B + SCA softmax engine.
+"""
 
-New format: signal dashboard → bear anatomy → updated EPP →
-            conservative growth → volatility context → probability
-"""
 import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE    = 265.0
-REQUIRED_RETURN  = 0.15
-HORIZON_YEARS    = 2
+# ── LIVE PRICE (fetched before model construction) ──────────────────────────
+CURRENT_PRICE = 290.00    # APD — fetched from Yahoo Finance / CNBC, 2026-05-27
+# ($289.60 as of May 26, 2026; 52-wk low $229.11, 52-wk high $307.96)
+# Market cap ~$64.6B; shares ~223M; dividend yield ~2.5%
 
-SCENARIOS = {
-    "BEAR":  (10.0,  18,  180, "H2 write-down; nat gas surge; volumes flat"),
-    "BASE":  (14.0,  21,  294, "Core gas stable; NEOM first contribution 2027"),
-    "BULL":  (17.0,  24,  408, "NEOM online; H2 premium; industrial recovery"),
-    "XBULL": (21.0,  27,  567, "Full H2 scale; green premium; energy leadership"),
+TICKER        = "APD"
+COMPANY       = "Air Products and Chemicals, Inc."
+SHARES_M      = 223          # million diluted shares (~222.7M as of Q2 FY2026)
+DIVIDEND_ANN  = 7.24         # USD/yr; $1.81/quarter (raised Q4 FY2025)
+                              # 44th consecutive annual dividend increase — Dividend King
+
+# ── EPS CONVENTION / FISCAL YEAR NOTE ────────────────────────────────────────
+# Adjusted (non-GAAP) EPS. Excludes: business exit / impairment charges (massive in FY2025:
+# ~$3.7B pre-tax / $13.68/share GAAP hit from exiting US projects), restructuring costs,
+# certain equity affiliate income adjustments, and tax-related items.
+# IMPORTANT: APD's fiscal year ends September 30 (not December 31 like most peers).
+#   FY2025 = Oct 2024 – Sep 2025; FY2026 = Oct 2025 – Sep 2026 (currently in Q3 FY2026)
+# GAAP FY2025 showed a loss (-$1.74/sh) due to $3.7B in strategic charges — use adj EPS only.
+
+EPS_HISTORY = {
+    "FY2022": 10.32,   # (approx; guidance $10.20–$10.40); recovering post-COVID volumes
+    "FY2023": 11.42,   # (approx; guidance $11.20–$11.50); +10% YoY; pricing + efficiency
+    "FY2024": 12.43,   # actual; +9% YoY; Ghasemi era final full year
+    "FY2025": 12.03,   # actual (Nov 6, 2025); -3% YoY; STRATEGIC RESET YEAR —
+                        #   new CEO Menezes (Feb 2025) exited 3 US H2 projects;
+                        #   $3.7B GAAP charges; core business resilient
 }
 
-# ── HYDROGEN MEGAPROJECT NPV CALCULATOR (APD-specific structural feature) ─────
-NEOM_NH3_CAPACITY_MT_YR  = 1.2     # million tonnes/yr green ammonia
-NEOM_NH3_PRICE_USD_T     = 550     # $/tonne green ammonia (est. wholesale)
-NEOM_CAPEX_B             = 8.5     # $B (APD 100% equity)
-NEOM_EBIT_MARGIN         = 0.25    # EBIT margin on H2/NH3 operations
-NEOM_DELAY_YRS           = 1       # years until first revenue (2027E)
+# Q1 FY2026 (Jan 30, 2026): Adj EPS $3.16 (+10% YoY, beat $3.04); revenue $3.1B (+1%)
+# Q2 FY2026 (Apr 30, 2026): Adj EPS $3.20 (+19% YoY); revenue $3.17B (beat +3.3%)
+# Guidance raised to $13.00–$13.25 adj EPS for FY2026 (7–9% growth from $12.03)
 
-LOUISIANA_REVENUE_M_YR   = 380     # $M/yr at full ramp (blue H2 + derivatives)
-LOUISIANA_CAPEX_B        = 4.5     # $B
-LOUISIANA_EBIT_MARGIN    = 0.28    # EBIT margin
-LOUISIANA_DELAY_YRS      = 2       # years until first revenue (2028E)
+EPS_NOW       = 13.13    # NTM; midpoint of raised FY2026 guidance $13.00–$13.25
+                          # H1 FY2026 ($3.16+$3.20=$6.36) on track; H2 seasonally stronger
+EPS_TROUGH    = 10.50    # severe scenario: core industrial gas recession + H2 projects disappoint;
+                          # below FY2022 actual ($10.32); reflects volume declines + FX + no NEOM
+                          # APD's core gas business never collapses: take-or-pay contracts floor
+EPP_MIN_PE    = 20        # industrial gas oligopolist (same structural moat as LIN: take-or-pay,
+                          # on-site ASUs, zero churn, oligopoly pricing) — see rationale below.
+                          # Slightly below LIN (22×) due to higher execution risk from mega-projects
+EPP           = EPP_MIN_PE * EPS_TROUGH   # = $210.00
 
-SHARES_OUT_M             = 222     # shares outstanding (millions)
-TOTAL_H2_CAPEX_B         = 13.5    # total committed H2 capex ($B)
+# NOTE: Horizon is FY2027 (Oct 2026–Sep 2027) — NEOM inflection year. Technically ~16 months
+# from analysis date but chosen deliberately: NEOM starts commercial production in 2027, which
+# is the first earnings step-up from the decade-long H2 investment cycle.
+CONS_EPS_2YR  = 14.80    # FY2027E analyst consensus; NEOM contributing ~$0.50–$1.50/share;
+                          # core gas growing 5–7%/yr; Louisiana still under construction
+CONS_EXIT_PE  = 25        # bull case: H2 optionality + NEOM de-risked drives multiple expansion
+                          # from current 22× FW → 25×; still below LIN's 29×; reflects execution risk
+price_b       = CONS_EPS_2YR * CONS_EXIT_PE   # = $370.00
 
-def hydrogen_project_npv():
-    neom_rev_m    = NEOM_NH3_CAPACITY_MT_YR * 1e6 * NEOM_NH3_PRICE_USD_T / 1e6
-    neom_ebit     = neom_rev_m * NEOM_EBIT_MARGIN
-    la_ebit       = LOUISIANA_REVENUE_M_YR * LOUISIANA_EBIT_MARGIN
-    neom_npv_m    = (neom_ebit * 12) / (1 + REQUIRED_RETURN) ** NEOM_DELAY_YRS
-    la_npv_m      = (la_ebit   * 12) / (1 + REQUIRED_RETURN) ** LOUISIANA_DELAY_YRS
-    total_npv_m   = neom_npv_m + la_npv_m
-    npv_per_share = total_npv_m / SHARES_OUT_M
-    capex_per_shr = TOTAL_H2_CAPEX_B * 1000 / SHARES_OUT_M
-    return neom_ebit, la_ebit, total_npv_m, npv_per_share, capex_per_shr
+ratio_b       = (CURRENT_PRICE - EPP) / (price_b - CURRENT_PRICE)
+epp_gap_pct   = (CURRENT_PRICE - EPP) / EPP * 100
 
-# ── SIGNALS ───────────────────────────────────────────────────────────────────
-# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
-#  current_value, higher_is_better, bear_narrative)
-SIGNALS = [
-    ("US industrial production — YoY",  "% YoY",
-     -3.0,   0.0,   3.0,   6.0,   1.5, True,
-     "Manufacturing recession; on-site O2/N2/Ar volume contracts"),
+# Scenario prices
+scenarios = {
+    "BEAR":  210,    # EPP; core gas recession; H2 projects delayed/cancelled; $10.50 × 20×
+    "BASE":  305,    # FY2027E $13.80 × 22×; core growth only; NEOM modest; no re-rating
+    "BULL":  370,    # Method B; FY2027E $14.80 × 25×; NEOM on-time; distribution deal signed
+    "XBULL": 480,    # Louisiana online early + NEOM at full rate; H2 economy materialises; $16 × 30×
+}
 
-    ("Natural gas price — YoY change",  "% YoY",
-      50.0,  10.0,   0.0, -15.0,  25.0, False,
-     "COGS spike: gas 35-40% of APD cost; destroys H2 economics"),
+# ── SOFTMAX ENGINE ───────────────────────────────────────────────────────────
+T = 0.60
+CENTRES = {"BEAR": 1.25, "BASE": 2.00, "BULL": 2.75, "XBULL": 3.75}
 
-    ("Green H2 project FIDs (GW/yr)",   "GW/yr",
-       1.0,   3.0,  10.0,  20.0,   8.0, True,
-     "H2 market stalls; NEOM/Louisiana offtake confidence collapses"),
+def softmax_weights(composite):
+    logits = {k: -((composite - c) ** 2) / T for k, c in CENTRES.items()}
+    max_l  = max(logits.values())
+    exps   = {k: math.exp(v - max_l) for k, v in logits.items()}
+    total  = sum(exps.values())
+    return {k: v / total for k, v in exps.items()}
 
-    ("EU ETS carbon price ($/tonne)",   "$/t",
-      15.0,  30.0,  55.0,  85.0,  45.0, True,
-     "Green vs grey H2 spread inverts; H2 premium economics vanish"),
+def expected_price(composite):
+    w = softmax_weights(composite)
+    return sum(w[k] * scenarios[k] for k in scenarios)
 
-    ("Industrial gas demand — YoY",     "% YoY",
-      -1.0,   1.0,   4.0,   7.0,   3.0, True,
-     "Peer volume (Air Liquide/Linde) collapses; demand recession signal"),
+def infer_composite(target_price, lo=1.0, hi=4.0, iterations=60):
+    for _ in range(iterations):
+        mid = (lo + hi) / 2
+        if expected_price(mid) < target_price:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2
 
-    ("APD take-or-pay renewal rate",    "%",
-      75.0,  85.0,  90.0,  96.0,  94.0, True,
-     "Contract defection cascade; on-site moat eroding permanently"),
+market_composite = infer_composite(CURRENT_PRICE)
+
+# ── SCA — SIGNAL CATALYST ADJUSTMENTS ───────────────────────────────────────
+sca_items = [
+    # (description, score, weight)
+    ("Core industrial gas oligopoly: same LIN-class moat (on-site ASUs; take-or-pay; "
+     "zero churn; Linde/APD/Air Liquide = ~75% global market). 44yr div increases.",
+     +0.30, 0.25),
+    ("NEOM Green H2: 90% complete; 2.2GW electrolysis; commercial production 2027; "
+     "world's largest green ammonia project. Yara distribution deal 'anticipated' H1 2026.",
+     +0.30, 0.20),
+    ("New CEO Eduardo Menezes (ex-Linde EVP EMEA): disciplined reset — exited 3 risky "
+     "US projects; raised guidance twice; FY2026 on track. Right operator for right-sizing.",
+     +0.20, 0.10),
+    ("Significant valuation discount to LIN: APD at 22× FY2026E vs LIN at 29×. "
+     "Same core moat, lower multiple → option value on H2 is essentially free.",
+     +0.20, 0.10),
+    ("NEOM demand risk: no final distribution agreement signed; green ammonia market "
+     "nascent; green H2 uneconomic without subsidies at scale. 'Demand risk is real' "
+     "(Energy Connects, May 2025). Project economics only proven at commercial startup.",
+     -0.40, 0.25),
+    ("Louisiana Blue H2: cost ballooned $4.5B → $8–9B; FID expected mid-2026 (not yet "
+     "committed); online 2030. Yara partnership for ammonia offtake in advanced talks. "
+     "High execution risk; significant capital still required.",
+     -0.25, 0.20),
+    ("Heavy capex ~$4B/yr constraining FCF; net debt elevated during construction phase. "
+     "Interest burden grows before NEOM/Louisiana earnings arrive.",
+     -0.20, 0.10),
 ]
-WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 
-STRUCTURAL_FACTORS = [
-    ("Long-term take-or-pay gas contract moat",       0.8, 0.25),
-    ("NEOM/Louisiana H2 megaproject execution risk", -1.2, 0.30),
-    ("New CEO strategy reset uncertainty",           -0.8, 0.20),
-    ("Energy transition secular H2 tailwind",         0.8, 0.15),
-    ("Balance sheet leverage from H2 capex",         -0.5, 0.10),
-]
+sca_raw = sum(score * weight for _, score, weight in sca_items)
+sca_adj = sca_raw / 2.0
+adj_composite = market_composite + sca_adj
 
-# ── UPDATED EPP ───────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 10.50    # FY2025E non-GAAP EPS
-EPP_MIN_PE       = 18.0     # min viable P/E (on-site take-or-pay = recurring cash flow floor)
-EPP_HISTORICAL   = 198.0    # historical EPP v1 (from trough formula)
-EPP_REGIME_NOTE  = "(on-site take-or-pay protects earnings floor; H2 optionality = upside)"
+adj_weights    = softmax_weights(adj_composite)
+expected_px    = expected_price(adj_composite)
 
-# ── CONSERVATIVE GROWTH (2-yr, base-minus) ────────────────────────────────────
-CONS_SIGNALS = [
-    ("US industrial",    0.5,  "+0.5% YoY (vs current +1.5%; sluggish manufacturing)"),
-    ("Natural gas",     15.0,  "+15% YoY (vs current +25%; partial easing)"),
-    ("Green H2",         4.0,  "4 GW/yr (vs current 8; H2 market cools)"),
-    ("EU ETS",          35.0,  "$35/t (vs current $45; carbon market softens)"),
-    ("Industrial gas",   1.5,  "+1.5% YoY (vs current +3%; sluggish peers)"),
-    ("APD take",        88.0,  "88% (vs current 94%; one major renewal delay)"),
-]
-CONS_EPS_CAGR = 0.05     # 5%/yr conservative (H2 disappointments; vol sluggish)
-CONS_EXIT_PE  = 20.0     # 20x exit (lower than current ~25x; H2 premium removed)
-CONS_DIVIDEND = 7.72     # $7.72/yr dividend (growing 7%/yr historically)
+# ── SIGNAL ───────────────────────────────────────────────────────────────────
+if   ratio_b < 0.75:  signal = "◉ BUY"
+elif ratio_b < 1.10:  signal = "◎ ACCUMULATE"
+elif ratio_b < 1.75:  signal = "◐ WATCHLIST"
+elif ratio_b < 2.50:  signal = "▷ HOLD/TRIM"
+else:                  signal = "✕ AVOID"
 
-# ── VOLATILITY ────────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT = 0.22    # moderate vol; utility-like industrial gas
-VOL_BETA       = 0.80    # below market
-VOL_52W_LOW    = 220.0   # approx
-VOL_52W_HIGH   = 310.0   # approx
-VOL_DIVIDEND   = 7.72
+# ── OUTPUT ───────────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    SEP  = "=" * 70
+    DASH = "─" * 70
 
-# ── SCORING ───────────────────────────────────────────────────────────────────
-def score_signal(val, base_f, bull_f, xbull_f, hib):
-    if hib:
-        if val >= xbull_f: return 4
-        if val >= bull_f:  return 3
-        if val >= base_f:  return 2
-        return 1
-    else:
-        if val <= xbull_f: return 4
-        if val <= bull_f:  return 3
-        if val <= base_f:  return 2
-        return 1
+    print(SEP)
+    print("AIR PRODUCTS AND CHEMICALS, INC. (APD) — SIGNAL MODEL")
+    print("Industrial gas oligopolist. 44yr dividend king. NEOM + Louisiana H2.")
+    print(SEP)
 
-ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
+    print("""
+SIGNAL FRAMEWORK — METHOD B + SCA ENGINE
+─────────────────────────────────────────
+EPP  = EPS_TROUGH × EPP_MIN_PE          (structural floor; adjusted EPS basis)
+Ratio B = (Price − EPP) / (price_b − Price)
 
-def softmax_probs(composite, T=0.60):
-    centres = {"BEAR": 1.25, "BASE": 2.0, "BULL": 2.75, "XBULL": 3.75}
-    raw = {k: math.exp(-abs(composite - c) / T) for k, c in centres.items()}
-    tot = sum(raw.values())
-    return {k: v / tot for k, v in raw.items()}
+APD EPS convention: Adjusted (non-GAAP) EPS. Excludes restructuring charges,
+business exit impairments (FY2025 included ~$3.7B pre-tax / $13.68/share from
+strategic project exits), and certain non-recurring items. GAAP FY2025 was a
+loss per share of -$1.74 due to strategic charges — adjusted EPS ($12.03) is
+the correct economic earnings lens.
 
-def expected_price(probs):
-    return sum(probs[k] * SCENARIOS[k][2] for k in probs)
+FISCAL YEAR NOTE: APD's fiscal year ends September 30. Current quarter is Q3
+FY2026 (April–June 2026). FY2026 ends September 30, 2026.
 
-def market_implied_composite(target_ev, tolerance=5.0):
-    for c in [x / 100 for x in range(100, 401)]:
-        if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
-            return round(c, 2), softmax_probs(c)
-    return None, None
+SIGNAL THRESHOLDS
+  Ratio B < 0.75   →  ◉ BUY
+  0.75 – 1.10      →  ◎ ACCUMULATE
+  1.10 – 1.75      →  ◐ WATCHLIST
+  1.75 – 2.50      →  ▷ HOLD/TRIM
+  > 2.50           →  ✕ AVOID
 
-# ── COMPUTE ───────────────────────────────────────────────────────────────────
-W = 72
+EPP_MIN_PE = 20×  rationale:
+  Air Products operates the same core industrial gas infrastructure as Linde:
+  (1) ON-SITE ASUs: Air separation units built at customer facilities (steel mills,
+      chip fabs, chemical plants, hospitals). Once installed, the customer physically
+      CANNOT switch — dismantling costs $50M–$500M and takes years. Zero churn.
+  (2) TAKE-OR-PAY CONTRACTS: 10–20 year contracts guarantee minimum revenue.
+      Customers must pay even if they use zero volume. True floor on earnings.
+  (3) OLIGOPOLY: Linde + Air Products + Air Liquide = ~75% global market. Pricing
+      power maintained across cycles. No new entrant in 40+ years.
+  20× (vs LIN 22×): 2-turn discount reflects higher execution risk from mega-projects
+  (NEOM, Louisiana). Core gas business warrants ≥20× (same as LIN analysis basis)
+  but the H2 bet creates more earnings volatility scenarios below EPP than LIN.
+  During the 2009 GFC, Air Products (standalone pre-merger) traded no lower than
+  16–18× forward. 20× = appropriate severe-stress floor for this business quality.
+""")
 
-scored = [
-    (name, unit, bv, bf, blf, xf, cv, hib, narr,
-     score_signal(cv, bf, blf, xf, hib), w)
-    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
-    in zip(SIGNALS, WEIGHTS)
-]
-proxy_composite  = sum(s * w for *_, s, w in scored)
-bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
-                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
-                       in zip(SIGNALS, WEIGHTS))
-sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite    = proxy_composite + sca
-proxy_probs      = softmax_probs(proxy_composite)
-bear_probs       = softmax_probs(bear_composite)
-proxy_ev         = expected_price(proxy_probs)
-bear_ev          = expected_price(bear_probs)
+    print("AIR PRODUCTS (APD) — THE H2 OPTION ON AN INDUSTRIAL GAS OLIGOPOLY")
+    print("=" * 70)
 
-market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
-mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
-mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
+    print("""
+BUSINESS OVERVIEW
+─────────────────
+Air Products and Chemicals was founded in 1940 in Emmaus, Pennsylvania. It is
+the world's #2 industrial gas company by revenue (~$12B/yr; behind Linde ~$35B
+and roughly equal to Air Liquide). Headquarters: Allentown, Pennsylvania.
+CEO: Eduardo F. Menezes (appointed February 7, 2025; former Linde EVP EMEA,
+overseeing €8B+ operations across 40+ countries). Predecessor: Seifi Ghasemi,
+who ran the company 2014–2025 and pivoted APD aggressively toward clean H2.
+44 consecutive years of dividend increases — a Dividend King (Champion tier).
+Dividend: $1.81/quarter = $7.24/yr; 2.5% yield at $290.
 
-neom_ebit, la_ebit, total_npv_m, npv_per_shr, capex_per_shr = hydrogen_project_npv()
+THE CORE BUSINESS: THREE GAS SEGMENTS
+───────────────────────────────────────
+  AMERICAS GAS        ~45% of segment operating profit
+  ─────────────────────────────────────────────────────
+  On-site industrial gas supply (ASUs, H2 generators) at customer sites across
+  North and South America. Long-term take-or-pay contracts. Customers include
+  steel producers, refineries, chemical plants, food processors, semiconductors.
+  The structural backbone of APD — predictable, high-margin, recurring.
 
-# Updated EPP (EPS-based)
-epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
-epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
-bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
+  EUROPE GAS          ~30% of segment operating profit
+  ─────────────────────────────────────────────────────
+  Same model across Europe. Key markets: Germany, Belgium, UK, Netherlands.
+  Hydrogen supply to refineries (hydrotreating). Specialty gases for electronics.
+  FX headwind as EUR/USD fluctuates (APD ~40% ex-USD revenue).
 
-# Conservative growth
-cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
-cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
-cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
-cons_annual_ret = cons_total_ret / 2
+  ASIA GAS            ~25% of segment operating profit
+  ─────────────────────────────────────────────────────
+  China, India, South Korea. On-site supply to steel (China), semiconductor fabs
+  (South Korea/Taiwan), chemical plants. Semiconductor-related specialty gases
+  are the highest-growth, highest-margin sub-segment. TSMC/Samsung-adjacent.
 
-# Volatility
-sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
-vol_low_1yr       = CURRENT_PRICE - sigma_1yr
-vol_high_1yr      = CURRENT_PRICE + sigma_1yr
-sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
+THE STRATEGIC PIVOT: FROM GHASEMI TO MENEZES
+─────────────────────────────────────────────
+Under Seifi Ghasemi (2014–2025), APD pursued the world's most aggressive clean
+hydrogen strategy. Key bets committed:
 
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
+  NEOM Green Hydrogen (Saudi Arabia):    $8.5B  (world's largest green H2 project)
+  Louisiana Blue Hydrogen (US):          $4.5B → $8–9B  (cost inflation)
+  Alberta Oil Sands H2 (Canada):        ~$1.5B  (EXITED Feb 2025 under Menezes)
+  Several US H2 projects:               ~$1.5B  (ALL EXITED Feb 2025 under Menezes)
 
-# ── OUTPUT ────────────────────────────────────────────────────────────────────
-print()
-print("═" * W)
-print(f"  APD  ·  Air Products & Chemicals  ·  ${CURRENT_PRICE:.2f}  ·  Industrial Gases")
-print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
-print("═" * W)
+Total committed H2 capex at peak: ~$15–20B — extraordinary for a ~$60B market
+cap company. Market worried about execution risk, cost overruns, demand uncertainty.
 
-# Hydrogen NPV calculator (keep before ① as APD-specific feature)
-print(f"\n  HYDROGEN MEGAPROJECT NPV  (capex deployed vs. value created)")
-print("  " + "─" * (W-2))
-print(f"  NEOM Green H2 (1.2Mt/yr NH3 @ ${NEOM_NH3_PRICE_USD_T}/t):")
-print(f"    Revenue at ramp:   ${NEOM_NH3_CAPACITY_MT_YR*1e6*NEOM_NH3_PRICE_USD_T/1e6:.0f}M/yr   EBIT: ${neom_ebit:.0f}M/yr")
-print(f"    Capital deployed:  ${NEOM_CAPEX_B:.1f}B    Delay: +{NEOM_DELAY_YRS}yr (2027E)")
-print(f"  Louisiana Clean H2 (750 TPD blue H2):")
-print(f"    Revenue at ramp:   ${LOUISIANA_REVENUE_M_YR:.0f}M/yr       EBIT: ${la_ebit:.0f}M/yr")
-print(f"    Capital deployed:  ${LOUISIANA_CAPEX_B:.1f}B    Delay: +{LOUISIANA_DELAY_YRS}yr (2028E)")
-print(f"  {'─'*60}")
-print(f"  Total H2 capex deployed:  ${TOTAL_H2_CAPEX_B:.1f}B  =  ${capex_per_shr:.0f}/share")
-print(f"  NPV of H2 projects:       ${total_npv_m/1000:.1f}B   =  ${npv_per_shr:.0f}/share  (12x EBIT, discounted)")
-print(f"  Value destruction gap:    ${(capex_per_shr - npv_per_shr):.0f}/share  (at current commodity prices)")
+Menezes's reset (Feb 2025 onwards):
+  ✓ Exited 3 US-based projects (Feb 2025) — reduced risk, improved capital discipline
+  ✓ FY2026 guidance raised twice (initial $12.85–$13.15 → current $13.00–$13.25)
+  ✓ Pursuing Yara partnership for NEOM ammonia distribution (H1 2026 target)
+  ✓ Louisiana FID expected mid-2026 (pending Yara offtake deal)
+  ✓ Core margins expanding: Q1 FY2026 +140bps; Q2 FY2026 adj EPS +19% YoY
 
-# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
-print(f"\n  ① SIGNAL DASHBOARD")
-print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
-print("  " + "─" * (W-2))
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u = unit.split()[0] if unit else ""
-    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.0f}{u}"
-    bf_s  = f"{bf:.0f}{u}"
-    blf_s = f"{blf:.0f}{u}"
-    xf_s  = f"{xf:.0f}{u}"
-    cv_s  = f"{cv:+.0f}{u}"
-    bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
+THE MEGA-PROJECTS: THE OPTION VALUE
+─────────────────────────────────────
+  NEOM GREEN HYDROGEN COMPLEX (Saudi Arabia)
+  ──────────────────────────────────────────
+  Structure: JV — ACWA Power (26.3%), NEOM Company (26.3%), Air Products (47.4%)
+  Scale: 2.2GW electrolysis; 1.2 million metric tonnes/yr green ammonia
+  Status: >90% complete; commercial production targeted 2027
+  Cost: ~$8.5B total project cost (APD share ~$4B)
+  APD's thesis: offtake the green ammonia; sell globally as clean fuel alternative
+  Challenge: No final distribution agreement yet. APD + Yara "anticipating" deal.
+             Green ammonia demand is nascent — market must be built.
+  If successful: $0.50–$1.50 adj EPS annually when at full rate; option on H2 economy
+  Risk: Green H2 is currently uneconomic without policy support. If green ammonia
+        prices don't develop or demand stalls, economics are poor.
 
-print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
-    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
-          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
+  LOUISIANA BLUE HYDROGEN CLEAN ENERGY COMPLEX
+  ─────────────────────────────────────────────
+  Location: Darrow, Louisiana
+  Scale: >750M scf/day blue H2; ~95% CO2 capture; ammonia production
+  Cost: $4.5B (announced 2021) → now $8–9B (inflation + scope; Yara to take ~25%)
+  Status: FID expected mid-2026 (pending Yara deal); startup targeted 2030
+  US IRA: $3/kg clean hydrogen production tax credit — critical economic enabler
+  If successful: ~$1.50–$2.50 adj EPS at full rate (2030+)
+  Risk: Yara deal not yet final; 2030 startup; IRA policy uncertainty; cost may grow
 
-print(f"\n  Structural factors:")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    arrow = "  +" if score > 0 else "  -"
-    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
+  COMBINED H2 OPTION VALUE (if both execute):
+  NEOM (full rate 2028+):      +$1.00–$1.50 EPS
+  Louisiana (full rate 2030+): +$1.50–$2.50 EPS
+  Core FY2027 baseline:        ~$14.00 EPS
+  Total by 2030:               $16.50–$18.00 EPS → at 25–28× = $410–$504 stock
 
-# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
-print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u      = unit.split()[0] if unit else ""
-    cv_s   = f"{cv:+.0f}{u}"
-    bv_s   = f"{bv:+.0f}{u}"
-    move   = bv - cv
-    move_s = f"{move:+.0f}{u}"
-    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
-    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+FY2026 RESULTS SO FAR (two quarters)
+──────────────────────────────────────
+  Q1 FY2026 (Jan 30, 2026):
+    Adj EPS:    $3.16  (+10% YoY; beat consensus $3.04 by 4%)
+    Revenue:    $3.10B (+1% YoY); Op margin 24.4% (+140 bps)
+    Key driver: Non-helium pricing actions + business mix improvement
 
-print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
-      f"~${expected_price(bear_probs):.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
-print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: H2 project write-down + natural gas price spike simultaneously")
-print(f"  destroy APD's hydrogen economics and compress margins on O2/N2 via energy costs.")
-print(f"  Capital deployed at poor ROIC gets impaired. This is a JOINT PROBABILITY event.")
+  Q2 FY2026 (Apr 30, 2026):
+    Adj EPS:    $3.20  (+19% YoY; exceeded top-end of guidance)
+    Revenue:    $3.17B (+3.3% beat estimate)
+    Key driver: Strong onsite volumes + productivity + favourable currency
+    Guidance raised: FY2026 adj EPS to $13.00–$13.25 (was $12.85–$13.15)
 
-# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
-print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
-print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:           ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP)")
-print(f"  Min viable P/E at max pessimism:   {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
-print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                      ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1):              ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  "
-      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  "
-      f"{'← BEAR requires impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
+FY2025 FULL-YEAR (reported Nov 6, 2025)
+──────────────────────────────────────
+  Adj EPS:      $12.03  (-3% from $12.43 in FY2024; strategic reset year)
+  Q4 adj EPS:   $3.39   (modest beat; stock surged ~10% on strategic clarity)
+  Revenue:      $12.0B  (-1% YoY)
+  FY2026 initial guidance: $12.85–$13.15 (+7–9%)
 
-# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
-print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, all signals at BASE lower bound — no tailwinds)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
-for sname, sval, srat in CONS_SIGNALS:
-    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
-               if name.lower().startswith(sname.split()[0].lower()))
-    diff = sval - cur
-    diff_s = f"{diff:+.0f}"
-    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
+THE DISCOUNT TO LIN: THE OPPORTUNITY FRAMING
+──────────────────────────────────────────────
+  Metric              APD ($290)        LIN ($516)
+  ────────────────────────────────────────────────
+  FW P/E (FY2026E)    22.1×             29.1×         APD 7-turn discount
+  Div yield           2.5%              1.2%           APD pays you more to wait
+  EPP buffer          +38%              +80%           LIN has more margin of safety
+  Method B upside     +27.6%            +12.2%         APD 2× more upside to BULL
+  H2 option value     LARGE (free)      smaller        APD has the bigger H2 bet
 
-print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
-if CONS_DIVIDEND > 0:
-    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share")
-print(f"  {'─'*60}")
-print(f"  Conservative 2yr price:     ${cons_price_2yr:.0f}  "
-      f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from ${CURRENT_PRICE:.0f})")
-print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  = {cons_annual_ret:+.0f}%/yr")
-print(f"\n  Key: core gas business alone at 20x EPS floor justifies ~${cons_price_2yr:.0f}.")
-print(f"  H2 projects are free optionality at this entry price.")
+The 7-turn PE discount to LIN is entirely explained by NEOM/Louisiana uncertainty.
+Same core industrial gas moat. At $290, you're paying roughly core-only value for
+APD's industrial gas franchise — NEOM and Louisiana are FREE CALL OPTIONS.
+""")
 
-# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
-print(f"\n  ⑤ VOLATILITY CONTEXT")
-print("  " + "─" * (W-2))
-print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
-print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  "
-      f"(yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
-print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
-print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}  (below market; utility-like industrial gas)")
-print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
-      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
-print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  "
-      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
-print(f"  {'─'*60}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
-      f"~{sigma_needed_bear:.1f}σ price move  "
-      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  Dividend buffer:      ${VOL_DIVIDEND:.2f}/yr absorbs ~{VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% "
-      f"of annual price drawdown")
-print(f"  → APD is low-beta income + growth optionality. Core gas protects floor.")
-print(f"  → APD yield today: {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%.  "
-      f"Attractive >3% = price <${VOL_DIVIDEND/0.03:.0f}.")
+    print(DASH)
+    print("EPS HISTORY  (Adjusted EPS, non-GAAP; fiscal year ends Sep 30)")
+    print(DASH)
+    for yr, eps in EPS_HISTORY.items():
+        print(f"  {yr}  ${eps:.2f}")
+    print(f"  FY2026E ${EPS_NOW:.2f}  (raised guidance $13.00–$13.25; H1 FY2026 = $6.36 on track)")
+    cagr = (EPS_HISTORY["FY2024"] / EPS_HISTORY["FY2022"]) ** (1/2) - 1
+    print(f"  FY2022–FY2024 CAGR: {cagr*100:.1f}%/yr  (FY2025 reset year excluded from trend)")
 
-# ── ⑥ PROBABILITY DISTRIBUTION ───────────────────────────────────────────────
-print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
-print("  " + "─" * (W-2))
-print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
-      f"{'Gap':>6}  Description")
-for k in ["BEAR", "BASE", "BULL", "XBULL"]:
-    eps, mult, price, narr = SCENARIOS[k]
-    pp  = proxy_probs[k]
-    mp  = mkt_probs[k] if mkt_probs else 0
-    gap_pp = pp - mp
-    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
-          f"{gap_pp*100:>+6.1f}pp  {narr}")
+    print(f"""
+EPP CALCULATION
+  EPS_TROUGH × EPP_MIN_PE  =  ${EPS_TROUGH:.2f} × {EPP_MIN_PE}×  =  ${EPP:.2f}
+  (Core gas take-or-pay floor; below FY2022 actual $10.32; H2 projects = $0)
+  EPP buffer: current ${CURRENT_PRICE:.2f} is +{epp_gap_pct:.1f}% above EPP — adequate margin of safety
 
-print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  "
-      f"Current: ${CURRENT_PRICE:.0f}")
-print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
-      f"${cons_price_2yr + cons_div_2yr:.0f} total value")
+METHOD B  (FY2027E horizon — NEOM inflection year)
+  CONS_EPS_2YR × CONS_EXIT_PE  =  ${CONS_EPS_2YR:.2f} × {CONS_EXIT_PE}×  =  ${price_b:.2f}
 
-print()
-print("═" * W)
+RATIO B  (PRIMARY SIGNAL)
+  (${CURRENT_PRICE:.2f} − ${EPP:.2f}) / (${price_b:.2f} − ${CURRENT_PRICE:.2f})
+  = ${CURRENT_PRICE - EPP:.2f} / ${price_b - CURRENT_PRICE:.2f}
+  = {ratio_b:.3f}×   →   {signal}
+  H2 option approximately FREE at current price: core gas alone ≈ $290 at 22× FY2027 EPS
+
+SCENARIO PRICES
+  BEAR     ${scenarios['BEAR']:>7.2f}   EPP; H2 projects fail; core recession; $10.50 × 20×
+  BASE     ${scenarios['BASE']:>7.2f}   Core-only growth; NEOM modest start; $13.80 × 22×; no re-rate
+  BULL     ${scenarios['BULL']:>7.2f}   Method B; FY2027E $14.80 × 25×; NEOM on-time + distribution
+  XBULL    ${scenarios['XBULL']:>7.2f}   Louisiana + NEOM at full rate; H2 economy; $16 × 30×
+""")
+
+    print("SOFTMAX COMPOSITE ENGINE")
+    print(f"  Market composite (inferred)  =  {market_composite:.3f}")
+    print(f"  (Market pricing core recovery only — minimal H2 option value priced in)")
+
+    print(f"""
+SCA — SIGNAL CATALYST ADJUSTMENTS""")
+    for desc, score, wt in sca_items:
+        sign = "+" if score >= 0 else ""
+        print(f"  {desc[:55]:<55}  {sign}{score:.2f} × {wt:.2f}  =  {score*wt:+.4f}")
+
+    print(f"""
+  sca_raw     =  {sca_raw:.4f}
+  sca_adj     =  {sca_adj:.4f}  (= sca_raw / 2.0)
+  adj_composite  =  {market_composite:.3f}  +  {sca_adj:.4f}  =  {adj_composite:.3f}
+  (Near-neutral SCA: core quality + free H2 option vs. execution risk balance out)
+""")
+
+    print("SOFTMAX SCENARIO WEIGHTS  (at adj_composite = {:.3f})".format(adj_composite))
+    for k, w in adj_weights.items():
+        print(f"  {k:<10} {w*100:>5.1f}%   ${scenarios[k]:.2f}")
+
+    ep_price = sum(adj_weights[k] * scenarios[k] for k in scenarios)
+    print(f"\n  Expected price (probability-weighted)  =  ${ep_price:.2f}")
+
+    print(f"""
+BUSINESS METRICS
+  FY2025 revenue                  = $12.0B  (-1% YoY; strategic reset year)
+  Q2 FY2026 revenue               = $3.17B  (+3% YoY; beat estimates)
+  Operating margin Q1 FY2026      = 24.4%  (+140 bps; expanding under Menezes)
+  NEOM completion                 = >90%  (commercial production target 2027)
+  Louisiana FID                   = expected mid-2026 (pending Yara deal)
+  Capex FY2026 guidance           = ~$4.0B  (heavy construction spend)
+  Dividend growth streak          = 44 consecutive annual increases (Dividend King)
+  Dividend yield at $290          = 2.5%  (highest of industrial gas majors)
+  Shares outstanding              = ~223M  (stable; minimal buybacks)
+  Analyst consensus               = Moderate Buy; avg PT $301–$328 (+4–13%)
+  52-wk low $229.11 (Apr 2026)    = deep BUY at ratio_b 0.14×
+  52-wk high $307.96              = WATCHLIST at ratio_b 1.58×
+
+SIGNAL ENTRY GUIDE""")
+
+    thresholds = {}
+    for label, rb in [("AVOID", 2.50), ("HOLD", 1.75), ("WATCH", 1.10), ("ACCUM", 0.75)]:
+        thresholds[label] = (rb * price_b + EPP) / (1 + rb)
+
+    print(f"  ✕ AVOID      above  ${thresholds['AVOID']:>3.0f}  (ratio_b > 2.50×)")
+    print(f"  ▷ HOLD/TRIM  ${thresholds['HOLD']:>3.0f} – ${thresholds['AVOID']:>3.0f}  (ratio_b 1.75–2.50×)")
+    print(f"  ◐ WATCHLIST  ${thresholds['WATCH']:>3.0f} – ${thresholds['HOLD']:>3.0f}  (ratio_b 1.10–1.75×)")
+    print(f"  ◎ ACCUMULATE ${thresholds['ACCUM']:>3.0f} – ${thresholds['WATCH']:>3.0f}  (ratio_b 0.75–1.10×)  ← current ${CURRENT_PRICE:.0f}  {signal}")
+    print(f"  ◉ BUY        below  ${thresholds['ACCUM']:>3.0f}  (ratio_b < 0.75×)")
+
+    lo52 = 229.11
+    rb52lo = (lo52 - EPP) / (price_b - lo52)
+    hi52 = 307.96
+    rb52hi = (hi52 - EPP) / (price_b - hi52)
+    print(f"""
+  52-wk low $229.11 (Apr 2026 tariff panic) = deep BUY at ratio_b {rb52lo:.2f}×.
+  52-wk high $307.96 = WATCHLIST at ratio_b {rb52hi:.2f}×.
+  Analyst avg PT $301–$328: within WATCHLIST/HOLD zone — analysts see limited upside.
+  NEOM + Louisiana = FREE option at $290 (core gas alone ≈ $286–$295 at 22× core EPS).
+  KEY CATALYSTS: NEOM Yara distribution deal (H1 2026); Louisiana FID (mid-2026).
+  If both catalysts confirm → upgrade to BULL scenario; ACCUMULATE adds sharply.
+  If NEOM demand disappoints → stock drifts toward BASE ($305); hold core position.""")

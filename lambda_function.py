@@ -83,6 +83,7 @@ MODELS = {
     "KKR":  "kkr_signal_model.py",
     "PYPL": "pypl_signal_model.py",
     "LIN":  "lin_signal_model.py",
+    "APD":  "apd_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -409,6 +410,11 @@ SUMMARY = {
               "sector_group": "Industrials",
               "company": "Linde plc", "sector": "Industrial Gases · Hydrogen (Clean Energy) · Semiconductor Specialty Gases · Take-or-Pay Contracts",
               "summary": "Linde is the world's largest industrial gas company — an oligopolist alongside Air Products and Air Liquide controlling ~75% of global supply. The business is structurally exceptional: on-site ASUs built at customer facilities cannot be moved (zero churn); 10–20 year take-or-pay contracts guarantee revenue regardless of volume; 30% operating margins; $10B clean energy backlog ($2.5–3B starting 2026); AI semiconductor gas demand accelerating. Q1 2026: adj EPS $4.33 (+10%), revenue $8.78B (+8%), op margin 30.0%. FY2026 guidance $17.40–$17.90. The problem is entirely the price: $516 = 29× FY2026E adj EPS, near the $521.28 ATH (May 2026). Method B (FY2027E $19.30 × 30× = $579) implies only +12% in 2 years from the BULL scenario. The BASE case ($480) is BELOW the current price — the market has already priced in clean energy + AI tailwinds. Analyst avg PT $541–553 = only 5–7% upside. Bears don't need deterioration — just multiple compression from 29× to 25× brings the stock to ~$440. The April 2026 tariff-panic low of $387.78 was a BUY at ratio_b 0.53×. EPP $286 (22× × $13 trough). Ratio B 3.65×. AVOID. ACCUMULATE $412–440. BUY below $412."},
+    "APD":  {"ticker": "APD",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE",  "signal_color": "#f0b429",
+              "price": 290.00,  "date": "2026-05-27", "epp_gap_pct": 38.1,  "ratio_b_fmt": "1.00x",
+              "sector_group": "Industrials",
+              "company": "Air Products and Chemicals, Inc.", "sector": "Industrial Gases · Hydrogen (NEOM Green H2 + Louisiana Blue H2) · Take-or-Pay · Dividend King",
+              "summary": "Air Products at $290 = 22× FY2026E adjusted EPS — the same industrial gas oligopoly moat as Linde (take-or-pay contracts, on-site ASUs, zero customer churn, ~75% global market with LIN/Air Liquide) but at a 7-turn PE discount because of uncertainty around two mega-projects: NEOM Green Hydrogen (>90% complete; 2.2GW; commercial 2027; Yara distribution deal 'anticipated' H1 2026) and Louisiana Blue Hydrogen ($8-9B; FID expected mid-2026; online 2030; US IRA $3/kg credit makes economics compelling). New CEO Eduardo Menezes (ex-Linde EVP EMEA, appointed Feb 2025) is doing the right things: exited 3 risky US projects, raised FY2026 guidance twice to $13.00-$13.25 (+9%), pursuing Yara distribution deal. 44 consecutive annual dividend increases (Dividend King; $7.24/yr = 2.5% yield). Q2 FY2026: adj EPS $3.20 (+19% YoY). At $290, NEOM + Louisiana are essentially free call options — core gas alone is worth ~$286-295 at 22× FY2027 core EPS. If both H2 projects confirm (Yara deal + Louisiana FID), the BULL scenario ($370) opens up. EPP $210 (20× × $10.50 trough). Ratio B 1.00×. ACCUMULATE. BUY below $279."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
