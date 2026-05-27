@@ -72,6 +72,7 @@ MODELS = {
     "AXP":  "axp_signal_model.py",
     "SPGI": "spgi_signal_model.py",
     "MS":   "ms_signal_model.py",
+    "BLK":  "blk_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -348,6 +349,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "S&P Global Inc.", "sector": "Financial Data & Analytics · Credit Ratings Duopoly · Indices (S&P 500) · Market Intelligence",
               "summary": "Regulated duopoly (S&P + Moody's = 80% global credit ratings) + S&P 500 index perpetual annuity (≥$10T AUM tracking; each index point ≈ $35M/yr licensing fees). IMMINENT CATALYST: Mobility Global (MBGL) spin-off July 1, 2026 — CARFAX + Polk spun as pure auto-data play; record date June 15. Post-spin SPGI becomes purer financial data/analytics business deserving 27-30× (vs 21.4× today). Q1 2026: adj EPS $4.97 (+14% beat), Ratings +13%, Indices +17%, adj margin 52% record. FY2026 guidance $19.40-$19.65 raised. At 21.4× FW vs Moody's 30× — SPGI at 29% discount to duopoly peer. Analyst avg PT $533-562 (+27-34%). Method B $562.50 (+35%). Ratio B 1.51×. WATCHLIST; ACCUMULATE $370-415 (post-MBGL-spin dislocation zone); BUY below $340."},
+    "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
+              "sector_group": "Finance",
+              "company": "BlackRock, Inc.", "sector": "Asset Management · Passive Investing (iShares) · Alternatives (GIP + HPS) · Aladdin Technology",
+              "summary": "World's largest asset manager ($13.9T AUM) in strategic transformation: GIP ($170B infrastructure, Oct 2024) + HPS ($190B private credit, July 2025) pivot BLK from pure passive to top-5 alternatives platform. Q1 2026: adj EPS $12.53 (+10.9%), revenue $6.7B (+27%), NNA $135.9B, organic growth 13% (vs 3% Q1 2024). The business is excellent — the price is fairly valued. BASE scenario = FY2026E $54.29 × 20× = $1,086 ≈ current $1,073. 52-wk low $917.39 (Apr 2026) was ACCUMULATE at ratio_b 0.99×; +17% to current HOLD. Analyst avg PT $1,251-1,254 (+17%): bullish but implies only moderate upside. EPP $476 (17× × $28 trough). Method B $1,364 (+27.1%). Ratio B 2.05×. HOLD; ACCUMULATE $860-920 on next macro scare; BUY below $740."},
     "MS":   {"ticker": "MS",   "signal": "✕ AVOID",      "signal_short": "AVOID",       "signal_color": "#f87171",
               "price": 200.92,  "date": "2026-05-26", "epp_gap_pct": 204.4, "ratio_b_fmt": "3.64x",
               "sector_group": "Finance",
