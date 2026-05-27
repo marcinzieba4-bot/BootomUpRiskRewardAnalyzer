@@ -75,6 +75,7 @@ MODELS = {
     "BLK":  "blk_signal_model.py",
     "PGR":  "pgr_signal_model.py",
     "C":    "c_signal_model.py",
+    "BX":   "bx_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -361,6 +362,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "Citigroup Inc.", "sector": "Global Banking · Investment Banking · Markets · Treasury & Trade Solutions · Wealth Management",
               "summary": "The ultimate transformation story: Jane Fraser's 2024-2026 restructuring (5 business lines, 20K job cuts, $20B buyback) is delivering — Q1 2026 EPS $3.06 (annualised $12.24) beat by 16%, revenue $24.6B (+14%) was best in a decade, ROTCE 13.1% ALREADY exceeds the 10-11% FY2026 guidance. Cheapest US SIFI at 1.27× TBV ($99.01/sh); peers JPM/BAC trade 2-3× TBV. Gordon Growth cross-check: at Citi's own 10.5% FY2026 ROTCE target, fair value = 1.30× TBV = $128 ≈ current price — stock needs to EXCEED target (Q1 proves it can). Fraser's medium-term 14.5% ROTCE would warrant 2.10× TBV = $208. The stock has already run +63% in 12 months (from $73 BUY to current HOLD). EPP $36 (9× × $4 trough). Method B $175 (FY2027E $12.50 × 14×). Ratio B 1.85×. HOLD; re-enter ACCUMULATE $100-113 on any macro dislocation; deep BUY below $100 (near TBV)."},
+    "BX":   {"ticker": "BX",   "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE",  "signal_color": "#f0b429",
+              "price": 118.51,  "date": "2026-05-27", "epp_gap_pct": 88.1,  "ratio_b_fmt": "1.05x",
+              "sector_group": "Finance",
+              "company": "Blackstone Inc.", "sector": "Alternative Asset Management · Private Equity · Real Estate · Credit & Insurance · Infrastructure",
+              "summary": "World's dominant alternative asset manager ($1.30T AUM, record Q1 2026) trading 38% below its $190 ATH — AUM at all-time high, stock in deep value. The paradox: AUM +12% YoY to record while stock -38% from peak. Q1 2026: DE $1.36/sh (+25% YoY), FRE $1.26/sh (+22%), inflows $69B. FY2025 was 'best 40-year results in history' (Schwarzman): DE $5.57/sh, inflows $240B. KEY: Fee-Related Earnings (FRE) LTM $4.90/sh is 100% contractual (10-year locked funds = no redemption risk unlike mutual funds). AI data centre + power infrastructure mega-cycle is the single largest PE deployment opportunity in BX history — data centre FRE growing >40% YoY. At $118.51 = 18× FY2026E DE vs 5-yr historical avg 27-30× = historically cheap multiple. Analyst avg PT $156-157 (+33%). EPP $63 (18× × $3.50 trough). Method B $172 (FY2027E $7.80 × 22×). Ratio B 1.05×. ACCUMULATE $110-120; BUY below $110 (near 52-wk low $101.73)."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
