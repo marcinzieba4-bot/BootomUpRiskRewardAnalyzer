@@ -80,6 +80,7 @@ MODELS = {
     "SCHW": "schw_signal_model.py",
     "MRSH": "mrsh_signal_model.py",
     "CB":   "cb_signal_model.py",
+    "KKR":  "kkr_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -391,6 +392,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "Chubb Limited", "sector": "P&C Insurance · Life Insurance · Global Commercial Insurance · High-Net-Worth Personal Lines",
               "summary": "Chubb is the world's largest publicly-traded P&C insurer (NPW $51B+; 54 countries) at COVID-crash multiples. At $328.75 = 12.2× FY2026E core operating EPS — near the lowest multiple in 15 years — despite record FY2025 results ($24.79 core EPS, +10%; 'best year in company history'), a record Q4 2025 combined ratio of 81.2%, and CEO Greenberg guiding double-digit EPS growth in 2026. Warren Buffett's Berkshire Hathaway holds 8.78% ($11.2B; 8th largest Berkshire holding) and was actively adding in Q3/Q4 2025 at $270-325 — implying intrinsic value well above $370+. $7.5B buyback authorized at <12× EPS = massive accretion; 5.2% dividend increase. Q1 2026 missed by 12% (spring cats) but guidance intact. FY2027E $30 at 16× = $480 (+46%). Buffett's view implies $400-570. EPP $208 (13× × $16 trough). Ratio B 0.80×. ACCUMULATE. BUY below $325. Dual compounder: 10% EPS growth + 3.5% buyback yield + potential multiple re-rating 12×→16×."},
+    "KKR":  {"ticker": "KKR",  "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#22c55e",
+              "price": 94.19,   "date": "2026-05-27", "epp_gap_pct": 49.5,  "ratio_b_fmt": "0.37x",
+              "sector_group": "Finance",
+              "company": "KKR & Co. Inc.", "sector": "Alternative Asset Management · Private Equity · Credit · Infrastructure · Insurance (Global Atlantic)",
+              "summary": "KKR — founder of modern PE (1976) — is trading at 11.6× FY2027E distributable earnings while every business metric is at all-time highs: AUM $758B (+14% YoY), FPAUM $615B (+17%), $129B raised FY2025, $120B dry powder. Down 39% from $153.87 Nov 2025 high; market extrapolating deal-market distress into perpetuity. The FRE floor ($4.13/share, +23% YoY in Q1 2026) is secured by $615B of LOCKED-UP capital that cannot redeem — in 2009, KKR's fees did not stop. Global Atlantic ($219B insurance AUM) adds permanent capital growing 15%/yr. At $94: market cap/AUM ratio = 11.2% — historically anomalous (BX at trough was 12-15%). The market is pricing $0 for $120B dry powder + future carry from $95B deployed in FY2025 at attractive prices. FY2026E $6.77 (mgmt guides $7+); FY2027E $8.13. EPP $63 (18× × $3.50 FRE trough). Ratio B 0.37×. BUY. Target: $130-179 (+38-90%)."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
