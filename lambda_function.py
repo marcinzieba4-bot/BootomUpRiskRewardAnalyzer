@@ -79,6 +79,7 @@ MODELS = {
     "FISV": "fisv_signal_model.py",
     "SCHW": "schw_signal_model.py",
     "MRSH": "mrsh_signal_model.py",
+    "CB":   "cb_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -385,6 +386,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "Marsh & McLennan Companies, Inc.", "sector": "Insurance Brokerage & Risk Advisory · Reinsurance Broking · HR Consulting · Management Consulting",
               "summary": "Marsh McLennan (rebranded MMC→MRSH Jan 2026) is the world's #1 insurance broker + Guy Carpenter (#2 reinsurance broker) + Mercer (#1 HR consulting) + Oliver Wyman (elite mgmt consulting). 18 consecutive years of margin expansion; targeting the 19th in 2026. NO underwriting risk — pure fee/commission model; insurers bear the risk. $27B revenue, $4.5B+ FCF, EPS compounding at 8-10%/yr. At $164, the stock is 31% below its $235.78 ATH and trading at 15.5× FY2026E adj EPS — near COVID-crash multiples — despite zero business impairment. Q1 2026: adj EPS $3.29 (+8% YoY), underlying revenue +4%, Risk & Insurance margin 38.3%, Consulting margin 21.6%. FY2025: adj EPS $9.75 (+9%), 18th consecutive margin expansion. Peers Aon (~23-24× FW EPS) and Gallagher (~30-35×) trade at 50-100% premiums. FY2027E $11.60 at 23× = $267 (+63%). Analyst avg PT $202 (+23%; 9 Buy / 1 Sell). EPP $126 (18× × $7.00 trough). Ratio B 0.37×. BUY. Double compounder: multiple re-rating 15.5×→22× + EPS growth 9-10%/yr = $200-267 over 2 years."},
+    "CB":   {"ticker": "CB",   "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE",  "signal_color": "#f0b429",
+              "price": 328.75,  "date": "2026-05-27", "epp_gap_pct": 58.1,  "ratio_b_fmt": "0.80x",
+              "sector_group": "Finance",
+              "company": "Chubb Limited", "sector": "P&C Insurance · Life Insurance · Global Commercial Insurance · High-Net-Worth Personal Lines",
+              "summary": "Chubb is the world's largest publicly-traded P&C insurer (NPW $51B+; 54 countries) at COVID-crash multiples. At $328.75 = 12.2× FY2026E core operating EPS — near the lowest multiple in 15 years — despite record FY2025 results ($24.79 core EPS, +10%; 'best year in company history'), a record Q4 2025 combined ratio of 81.2%, and CEO Greenberg guiding double-digit EPS growth in 2026. Warren Buffett's Berkshire Hathaway holds 8.78% ($11.2B; 8th largest Berkshire holding) and was actively adding in Q3/Q4 2025 at $270-325 — implying intrinsic value well above $370+. $7.5B buyback authorized at <12× EPS = massive accretion; 5.2% dividend increase. Q1 2026 missed by 12% (spring cats) but guidance intact. FY2027E $30 at 16× = $480 (+46%). Buffett's view implies $400-570. EPP $208 (13× × $16 trough). Ratio B 0.80×. ACCUMULATE. BUY below $325. Dual compounder: 10% EPS growth + 3.5% buyback yield + potential multiple re-rating 12×→16×."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
