@@ -76,6 +76,7 @@ MODELS = {
     "PGR":  "pgr_signal_model.py",
     "C":    "c_signal_model.py",
     "BX":   "bx_signal_model.py",
+    "FISV": "fisv_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -367,6 +368,11 @@ SUMMARY = {
               "sector_group": "Finance",
               "company": "Blackstone Inc.", "sector": "Alternative Asset Management · Private Equity · Real Estate · Credit & Insurance · Infrastructure",
               "summary": "World's dominant alternative asset manager ($1.30T AUM, record Q1 2026) trading 38% below its $190 ATH — AUM at all-time high, stock in deep value. The paradox: AUM +12% YoY to record while stock -38% from peak. Q1 2026: DE $1.36/sh (+25% YoY), FRE $1.26/sh (+22%), inflows $69B. FY2025 was 'best 40-year results in history' (Schwarzman): DE $5.57/sh, inflows $240B. KEY: Fee-Related Earnings (FRE) LTM $4.90/sh is 100% contractual (10-year locked funds = no redemption risk unlike mutual funds). AI data centre + power infrastructure mega-cycle is the single largest PE deployment opportunity in BX history — data centre FRE growing >40% YoY. At $118.51 = 18× FY2026E DE vs 5-yr historical avg 27-30× = historically cheap multiple. Analyst avg PT $156-157 (+33%). EPP $63 (18× × $3.50 trough). Method B $172 (FY2027E $7.80 × 22×). Ratio B 1.05×. ACCUMULATE $110-120; BUY below $110 (near 52-wk low $101.73)."},
+    "FISV": {"ticker": "FISV", "signal": "◉ BUY",        "signal_short": "BUY",         "signal_color": "#22c55e",
+              "price": 57.13,   "date": "2026-05-27", "epp_gap_pct": 27.0,  "ratio_b_fmt": "0.18x",
+              "sector_group": "Finance",
+              "company": "Fiserv, Inc.", "sector": "Financial Technology · Payment Processing · Core Banking · Merchant Acquiring (Clover)",
+              "summary": "The classic 'fallen quality' setup: Fiserv — dominant US bank-processing infrastructure ($21B revenue, 2,500 bank/CU contracts) + Clover (50M SMB merchants) — crashed 76% from its $237 ATH after a 44% single-session collapse on Oct 29, 2025. Trigger: Argentina peso devaluation wiped out float income from LatAm operations; Merchant Solutions margin fell from 34% to 26%. Management cut adj EPS guidance from $10.15E → $8.64 actual FY2025. BUT: new leadership (CFO Paul Todd ex-Global Payments, co-presidents Dec 2025), Q1 2026 beat 13% ($1.79 vs $1.58E), guidance reaffirmed $8.00-8.30. Core Financial Solutions (50% revenue, 40% margin, multi-year contracts) was NEVER impaired — it's growing 2-3%. At 7× FW earnings, stock is priced for permanent Argentina destruction; even modest recovery to 14× on FY2027E $9.00 = $126 (+120%). Analyst avg PT $70 (+23%). EPP $45 (10× × $4.50). Method B $126 (FY2027E $9.00 × 14×). Ratio B 0.18×. BUY. Watch Q2 2026 organic growth — first clean Argentina comp."},
     "BLK":  {"ticker": "BLK",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 1073.15, "date": "2026-05-26", "epp_gap_pct": 125.5, "ratio_b_fmt": "2.05x",
               "sector_group": "Finance",
