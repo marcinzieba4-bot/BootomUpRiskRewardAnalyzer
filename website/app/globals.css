@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #05050a;
+  color: #f1f5f9;
+  scroll-behavior: smooth;
+}
+
+/* Subtle grid overlay for depth */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(29, 29, 50, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(29, 29, 50, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gold scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0c17;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4a853;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f0c96a;
+}
+
+/* Typography base */
+h1, h2, h3 {
+  font-family: var(--font-playfair);
+}
+
+/* Gold divider utility */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d4a853, transparent);
+}
+
+/* Category badge */
+.badge {
+  @apply inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold tracking-wide uppercase;
+}
+
+/* Animated underline for nav */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4a853;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Card hover glow */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(212, 168, 83, 0.12);
+  border-color: rgba(212, 168, 83, 0.4) !important;
+}
+
+/* Shimmer loading skeleton */
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 168, 83, 0.03) 25%,
+    rgba(212, 168, 83, 0.08) 50%,
+    rgba(212, 168, 83, 0.03) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+
+/* Prose for research content */
+.prose-vr p {
+  line-height: 1.8;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+.prose-vr strong {
+  color: #f1f5f9;
+}
