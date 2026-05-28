@@ -5,7 +5,7 @@ const API = 'https://7qc9qknegk.execute-api.eu-north-1.amazonaws.com';
 
 async function getSignal(ticker: string) {
   try {
-    const res = await fetch(`${API}/signals/${ticker.toUpperCase()}`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${API}/signals/${ticker.toUpperCase()}`, { cache: 'no-store' });
     if (!res.ok) return null;
     return await res.json();
   } catch { return null; }
