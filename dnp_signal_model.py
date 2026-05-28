@@ -15,7 +15,7 @@ REV_PER_STORE_M   = 10.2     # avg revenue per store (PLN million / year)
 EBIT_MARGIN       = 0.054    # 5.4% EBIT margin
 NET_INTEREST_B    = 0.13     # net interest expense (PLN billion) — owned-store debt
 TAX_RATE          = 0.19     # Polish CIT 19%
-SHARES_M          = 98.5     # shares outstanding (millions; float ~48%)
+SHARES_M          = 985.0    # shares outstanding (millions; 10:1 split Jul 2025; float ~48%)
 
 LFL_PCT           = 7.0      # like-for-like revenue growth YoY (%)
 WHITESPACE_PCT    = 60.0     # % addressable small municipalities not yet entered
@@ -48,19 +48,19 @@ print()
 # ─────────────────────────────────────────────────────────────────────────────
 # SIGNAL PARAMETERS
 # ─────────────────────────────────────────────────────────────────────────────
-CURRENT_PRICE = 275.0    # PLN, WSE: DNP  ~May 2026  (EUR/PLN ≈ 4.25)
+CURRENT_PRICE = 32.0    # PLN, WSE: DNP  ~May 2026 post 10:1 split Jul 2025  (EUR/PLN ≈ 4.25)
 
-EPP_EPS    = round(eps, 1)   # PLN 11.4
+EPP_EPS    = round(eps, 1)   # PLN 1.1
 EPP_MIN_PE = 12               # trough P/E — grocery chain at distressed earnings, not zero
 EPP        = EPP_EPS * EPP_MIN_PE
 epp_gap    = (CURRENT_PRICE - EPP) / EPP * 100
 
 SCENARIOS = {
-    # key: (EPS PLN, P/E, price PLN, narrative)
-    "BEAR":  ( 7.0, 12,  84, "Polish recession + wage spiral; Biedronka price war; EBIT margin halved"),
-    "BASE":  (12.0, 21, 252, "Steady 13–15% store CAGR; LFL 4–6%; margins stable; 21× re-rate"),
-    "BULL":  (15.0, 30, 450, "Margin recovery + growth acceleration; premium compounder re-rate 30×"),
-    "XBULL": (20.0, 32, 640, "25%+ Polish grocery market share; dominant moat; 32× justified"),
+    # key: (EPS PLN, P/E, price PLN, narrative)  — post 10:1 split Jul 2025
+    "BEAR":  (0.70, 12,   8.4, "Polish recession + wage spiral; Biedronka price war; EBIT margin halved"),
+    "BASE":  (1.20, 21,  25.2, "Steady 13–15% store CAGR; LFL 4–6%; margins stable; 21× re-rate"),
+    "BULL":  (1.50, 30,  45.0, "Margin recovery + growth acceleration; premium compounder re-rate 30×"),
+    "XBULL": (2.00, 32,  64.0, "25%+ Polish grocery market share; dominant moat; 32× justified"),
 }
 
 CONS_EPS_CAGR = 0.12    # conservative 12%/yr EPS growth (half the historical rate)
@@ -69,8 +69,8 @@ CONS_DIV      = 0.0     # no dividend — full FCF reinvested in store rollout
 
 VOL_ANNUAL    = 0.30
 VOL_BETA      = 0.75
-VOL_52W_LOW   = 215.0
-VOL_52W_HIGH  = 315.0
+VOL_52W_LOW   = 28.24   # post-split 52W low (Jul 2025–May 2026)
+VOL_52W_HIGH  = 55.80   # post-split 52W high
 
 # ─────────────────────────────────────────────────────────────────────────────
 # HELPERS
@@ -196,6 +196,16 @@ cons_eps_2yr  = EPP_EPS * (1 + CONS_EPS_CAGR)**2
 cons_price    = cons_eps_2yr * CONS_EXIT_PE
 cons_ret_pct  = (cons_price - CURRENT_PRICE) / CURRENT_PRICE * 100
 
+bear_p_pre  = SCENARIOS["BEAR"][2]
+bull_p_pre  = SCENARIOS["BULL"][2]
+dn_pre      = (CURRENT_PRICE - bear_p_pre) / CURRENT_PRICE
+up_pre      = (bull_p_pre - CURRENT_PRICE) / CURRENT_PRICE
+ratio_b_pre = dn_pre / up_pre
+signal_short_pre = ("BUY"        if ratio_b_pre < 0.75 else
+                    "ACCUMULATE" if ratio_b_pre < 1.10 else
+                    "WATCHLIST"  if ratio_b_pre < 1.75 else
+                    "AVOID")
+
 print(f"""DINO POLSKA S.A.  —  ANALYST COMMENTARY
 Note: all prices in PLN.  EUR/PLN ≈ 4.25  |  PLN {CURRENT_PRICE:.0f} ≈ EUR {CURRENT_PRICE/4.25:.0f}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -212,11 +222,11 @@ Probabilities:
   XBULL  {probs['XBULL']*100:5.1f}%  →  PLN {SCENARIOS['XBULL'][2]}
   EV = PLN {ev:.0f}  ({up_pct:+.1f}% vs PLN {CURRENT_PRICE:.0f})
 
-Verdict: ACCUMULATE — adjusted composite {adj:.2f} vs market-implied {mic:.2f} ({gap:+.2f}).
+Verdict: {signal_short_pre} — adjusted composite {adj:.2f} vs market-implied {mic:.2f} ({gap:+.2f}).
 The market prices Dino as a maturing retailer; signals show an active growth
 compounder: {NEW_STORES_TTM} net new stores/yr ({NEW_STORES_TTM/(STORES-NEW_STORES_TTM)*100:.1f}% store CAGR), {LFL_PCT:.0f}% LFL, {WHITESPACE_PCT:.0f}% geographic whitespace.
 Owned-store model and fresh meat differentiation are structural moats
-Biedronka cannot replicate. Accumulate on weakness.
+Biedronka cannot replicate.
 
 ② BEAR CASE ANATOMY
 Polish macro shock: GDP contraction + real wage reversal + Biedronka price

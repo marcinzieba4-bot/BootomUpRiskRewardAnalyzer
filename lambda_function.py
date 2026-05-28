@@ -460,11 +460,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "Newmont Corporation",        "sector": "Gold Mining · Precious Metals · Copper Byproduct · Newcrest Acquired",
               "summary": "World's largest gold miner at gold ATH ($3,300/oz). Proxy composite 2.90 (BULL) vs market-implied 2.15 (BASE): market prices gold mean-reversion; signals show CB de-dollarisation demand, weak USD, and record ETF inflows. $0.40 EPS per +$100/oz gold = high operating leverage. EPP floor $36 (+39% cushion; 8× trough P/E). Conservative case flat; bull-case proxy EV $87 (+74%). Bear EPS goes negative at $1,800 gold. ACCUMULATE on dips; requires gold-continuation thesis."},
-    "DNP":  {"ticker": "DNP",  "signal": "◎ ACCUMULATE",  "signal_short": "ACCUMULATE",  "signal_color": "#f0b429",
-              "price": 275.0,   "date": "2026-05-28", "epp_gap_pct": 101.0, "ratio_b_fmt": "1.09x",
+    "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
+              "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
               "company": "Dino Polska S.A.", "sector": "Polish Grocery Retail · Standalone Discount Format · WSE: DNP · Prices in PLN",
-              "summary": "Poland's fastest-growing grocery chain: 2,750 stores (+360/yr; 15% store CAGR), PLN 28B revenue, 5.4% EBIT margin. EPS PLN 11.4; EPP floor PLN 137 (+101% cushion). Ratio B 1.09× (ACCUMULATE): adj. composite 3.17 vs market-implied 2.50 — market prices a maturing retailer; signals show 60% geographic whitespace, 7% LFL, and structural moats (owned stores + fresh meat). Founder Biernacki holds 52%: aligned, reinvests at 20%+ ROIC, no dividends. Bear (PLN 84): Polish recession + Biedronka price war collapses 5.4% margin. Bull (PLN 450): growth acceleration + premium compounder re-rating to 30×. Note: prices in PLN (÷4.25 for EUR)."},
+              "summary": "Poland's fastest-growing grocery chain: 2,750 stores (+360/yr; 15% store CAGR), PLN 28B revenue, 5.4% EBIT margin. Post 10:1 split (Jul 2025): EPS PLN 1.14; EPP floor PLN 13 (+142% gap). Ratio B 1.82× (AVOID): at PLN 32 the bear scenario (PLN 8.4) gives 73.8% downside vs bull (PLN 45) 40.6% upside — asymmetric risk despite excellent fundamentals. Adj. composite 3.17 vs market-implied 2.72 — business is UNDERVALUED but price is AVOID. Founder Biernacki 52%: aligned, reinvests at 20%+ ROIC, no dividends. Bear (PLN 8.4): Polish recession + Biedronka price war collapses 5.4% margin. Bull (PLN 45): growth acceleration + premium re-rating 30×. 52W range PLN 28–56; current near 2-yr low. Note: prices in PLN (÷4.25 for EUR)."},
 }
 
 CORS = {
