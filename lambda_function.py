@@ -90,6 +90,7 @@ MODELS = {
     "NEM":  "nem_signal_model.py",
     "DNP":  "dnp_signal_model.py",
     "CTVA": "ctva_signal_model.py",
+    "VMC":  "vmc_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -461,6 +462,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "Newmont Corporation",        "sector": "Gold Mining · Precious Metals · Copper Byproduct · Newcrest Acquired",
               "summary": "World's largest gold miner at gold ATH ($3,300/oz). Proxy composite 2.90 (BULL) vs market-implied 2.15 (BASE): market prices gold mean-reversion; signals show CB de-dollarisation demand, weak USD, and record ETF inflows. $0.40 EPS per +$100/oz gold = high operating leverage. EPP floor $36 (+39% cushion; 8× trough P/E). Conservative case flat; bull-case proxy EV $87 (+74%). Bear EPS goes negative at $1,800 gold. ACCUMULATE on dips; requires gold-continuation thesis."},
+    "VMC":  {"ticker": "VMC",  "signal": "◐ WATCHLIST", "signal_short": "WATCHLIST", "signal_color": "#60a5fa",
+              "price": 268.94,  "date": "2026-05-28", "epp_gap_pct": 92.0,  "ratio_b_fmt": "1.59x",
+              "sector_group": "Basic Resources",
+              "company": "Vulcan Materials Company", "sector": "Construction Aggregates · Asphalt · Concrete · NYSE: VMC",
+              "summary": "World's largest aggregates producer at the 21st pct of its 52-wk range ($252–$331): -18.8% from high after a Q1 2026 beat (+20.5% adj EPS, +5% volumes). Investor Day $20/ton cash GP target on 265M tons = $5.3B cash GP vs $2.6B today; every $1/ton improvement = $31/share EV at 15× EBITDA. IIJA still flowing (accelerating pre-Sept 2026 cliff); data centre construction boom (70%+ of 600M+ sq ft within 30 miles of VMC facility). FY2026E adj EPS $9.30 (+19% YoY); adj EBITDA $2.4–2.6B. WATCHLIST: adj composite 2.85 vs market-implied 2.71 (FAIRLY VALUED); Ratio B 1.59×. At $269 the conservative 2yr return is only +4.4%. Key risk: IIJA reauthorisation cliff September 2026. ACCUMULATE $240–252; BUY below $232."},
     "CTVA": {"ticker": "CTVA", "signal": "◐ WATCHLIST", "signal_short": "WATCHLIST", "signal_color": "#60a5fa",
               "price": 82.21,   "date": "2026-05-28", "epp_gap_pct": 64.0,  "ratio_b_fmt": "1.27x",
               "sector_group": "Basic Resources",
