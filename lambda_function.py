@@ -460,11 +460,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "Newmont Corporation",        "sector": "Gold Mining · Precious Metals · Copper Byproduct · Newcrest Acquired",
               "summary": "World's largest gold miner at gold ATH ($3,300/oz). Proxy composite 2.90 (BULL) vs market-implied 2.15 (BASE): market prices gold mean-reversion; signals show CB de-dollarisation demand, weak USD, and record ETF inflows. $0.40 EPS per +$100/oz gold = high operating leverage. EPP floor $36 (+39% cushion; 8× trough P/E). Conservative case flat; bull-case proxy EV $87 (+74%). Bear EPS goes negative at $1,800 gold. ACCUMULATE on dips; requires gold-continuation thesis."},
-    "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",       "signal_short": "AVOID",       "signal_color": "#f87171",
-              "price": 11.00,   "date": "2026-05-28", "epp_gap_pct": 76.3, "ratio_b_fmt": "2.00x",
-              "sector_group": "Utilities",
-              "company": "DNP Select Income Fund, Inc.", "sector": "Closed-End Fund (CEF) · Utility & Telecom Income · Leveraged · Monthly Distribution",
-              "summary": "37-year monthly distribution CEF ($0.065/mo; $0.78/yr) managed by Duff & Phelps. 30% structural leverage amplifies utility/telecom NAV — AI power demand is a structural tailwind, but +4.3% NAV premium and 2.00× Ratio B (54% bear / 27% bull) tip the balance to AVOID at $11. NII coverage 74.8% with 25% ROC component; +100bps rate shock costs $0.045/share NII. EPP floor $6.24 (8× panic yield; +76% cushion). Bear case ($5) requires 6%+ 10yr + forced distribution cut; bull ($14) requires Fed cuts to 3.5%. Conservative 2yr return +19.7% — matchable in IG bonds without NAV risk."},
+    "DNP":  {"ticker": "DNP",  "signal": "◎ ACCUMULATE",  "signal_short": "ACCUMULATE",  "signal_color": "#f0b429",
+              "price": 275.0,   "date": "2026-05-28", "epp_gap_pct": 101.0, "ratio_b_fmt": "1.09x",
+              "sector_group": "Consumer Staples",
+              "company": "Dino Polska S.A.", "sector": "Polish Grocery Retail · Standalone Discount Format · WSE: DNP · Prices in PLN",
+              "summary": "Poland's fastest-growing grocery chain: 2,750 stores (+360/yr; 15% store CAGR), PLN 28B revenue, 5.4% EBIT margin. EPS PLN 11.4; EPP floor PLN 137 (+101% cushion). Ratio B 1.09× (ACCUMULATE): adj. composite 3.17 vs market-implied 2.50 — market prices a maturing retailer; signals show 60% geographic whitespace, 7% LFL, and structural moats (owned stores + fresh meat). Founder Biernacki holds 52%: aligned, reinvests at 20%+ ROIC, no dividends. Bear (PLN 84): Polish recession + Biedronka price war collapses 5.4% margin. Bull (PLN 450): growth acceleration + premium compounder re-rating to 30×. Note: prices in PLN (÷4.25 for EUR)."},
 }
 
 CORS = {
