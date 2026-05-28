@@ -2,7 +2,7 @@
 """
 CTVA Signal Model  v1
 ─────────────────────
-Corteva, Inc. (NYSE: CTVA) · Agricultural Sciences
+Corteva, Inc. (NYSE: CTVA) · Agricultural Sciences · Basic Resources
 Seeds (Pioneer brand + biotech traits) + Crop Protection
 Planned separation into two independent public companies: Q4 2026E
 
