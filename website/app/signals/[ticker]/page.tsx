@@ -1,12 +1,17 @@
-// Server component shell – generateStaticParams builds a placeholder page.
-// The real ticker is read client-side by SignalDetailClient via useParams().
-
 import SignalDetailClient from './SignalDetailClient';
 
-// We export a single placeholder so the static exporter generates the shell HTML.
-// At runtime useParams() reads the actual ticker from the URL.
+const API = 'https://7qc9qknegk.execute-api.eu-north-1.amazonaws.com';
+
 export async function generateStaticParams() {
-  return [{ ticker: '_' }];
+  try {
+    const res = await fetch(`${API}/signals`, { cache: 'no-store' });
+    const data = await res.json();
+    return (data.signals ?? []).map((s: { ticker: string }) => ({
+      ticker: s.ticker.toLowerCase(),
+    }));
+  } catch {
+    return [{ ticker: '_' }];
+  }
 }
 
 export default function SignalDetailPage() {
