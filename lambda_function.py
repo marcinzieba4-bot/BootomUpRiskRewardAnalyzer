@@ -86,6 +86,7 @@ MODELS = {
     "APD":  "apd_signal_model.py",
     "SHW":  "shw_signal_model.py",
     "ECL":  "ecl_signal_model.py",
+    "FCX":  "fcx_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -422,6 +423,11 @@ SUMMARY = {
               "sector_group": "Materials",
               "company": "The Sherwin-Williams Company", "sector": "Architectural Coatings · Professional Contractors · Paint Stores (4,900+) · Industrial & Performance Coatings",
               "summary": "Sherwin-Williams at $316 = 27× FY2026E adjusted EPS — the world's largest paint company and a quasi-monopoly on professional architectural coatings: 4,900+ company-owned stores in the Americas create distribution density no competitor can match. Professional painters don't switch because they've invested years in SHW's color formulas, tinting systems, and contractor loyalty tiers (up to 40% volume discounts). 47 consecutive annual dividend increases. The business is excellent — the current challenge is housing: high mortgage rates suppress existing home sales (the biggest repaint trigger) and FY2026 guidance is only +2.4% adj EPS growth. Q1 2026 was encouraging: adj EPS $2.35 (+4.4%), revenue $5.67B (+6.8%), record Q1 EBITDA $998M (+8.8%). The aging US housing stock (avg 42 years) and eventual rate normalisation are powerful multi-year tailwinds — every year of deferred painting creates future demand. April 2026 tariff-panic low $294.32 was ACCUMULATE (ratio_b 1.04×); current $316 is fairly valued in WATCHLIST. Analyst avg PT $380-385 requires housing recovery to materialise. EPP $176 (22× × $8.00 trough). Ratio B 1.52×. WATCHLIST. ACCUMULATE below $298. BUY below $275."},
+    "FCX":  {"ticker": "FCX",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 63.63,   "date": "2026-05-28", "epp_gap_pct": 324.2,  "ratio_b_fmt": "2.28x",
+              "sector_group": "Materials",
+              "company": "Freeport-McMoRan Inc.", "sector": "Copper Mining · Gold Byproduct · Grasberg (Indonesia) · Americas Operations · US Tariff Beneficiary",
+              "summary": "World's largest publicly traded copper producer at $63.63 — near its 52-wk high of $70.97 as copper hits $6/lb all-time highs driven by AI data centre buildout, EV electrification, and grid investment. Two major tailwinds: US 50% copper import tariff creates a 28% COMEX-LME premium adding ~$1.6B/yr to FCX's Americas profits; and Grasberg Block Cave (Indonesia) recovery progressing toward full capacity end-2027 (1.6B lbs Cu + 1.3M oz Au/yr = EPS step-change from ~$2.32 to $5-7+). Q1 2026: adj EPS $0.57 (+21% beat); Americas operating income 2.5× higher YoY compensating for Grasberg's 82M lb recovery quarter. Balance sheet transformed: net debt $2.3B vs $20B in 2016; $8.7B operating CF at $6/lb; $2.9B buyback authorized. But the stock has priced most of it: Method B ($3.86 × 22× = $85) is only 34% above current; analyst avg PT $70-72 is nearly there already. 52-wk low $35.15 was the BUY (ratio_b 0.40×). EPP $15 (20× × $0.75 trough). Ratio B 2.28×. HOLD/TRIM. Re-enter WATCHLIST $52-60; ACCUMULATE $45-52; BUY below $45."},
     "ECL":  {"ticker": "ECL",  "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",   "signal_color": "#60a5fa",
               "price": 254.00,  "date": "2026-05-27", "epp_gap_pct": 130.9,  "ratio_b_fmt": "1.24x",
               "sector_group": "Materials",
