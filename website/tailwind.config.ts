@@ -10,30 +10,32 @@ const config: Config = {
     extend: {
       colors: {
         vr: {
-          bg:       '#05050a',
-          surface:  '#0c0c17',
-          card:     '#101020',
-          border:   '#1d1d32',
+          bg:       '#080810',
+          surface:  '#0d0d1a',
+          card:     '#10101e',
+          border:   '#1c1c2e',
           gold:     '#d4a853',
           'gold-light': '#f0c96a',
           'gold-dim':   '#8b6914',
-          text:     '#f1f5f9',
-          muted:    '#94a3b8',
-          faint:    '#475569',
-          green:    '#10b981',
-          blue:     '#3b82f6',
+          text:     '#e8e8f4',
+          muted:    '#6b7096',
+          faint:    '#3d4068',
+          green:    '#22c55e',
+          blue:     '#60a5fa',
           red:      '#ef4444',
+          amber:    '#f59e0b',
         },
       },
       fontFamily: {
         sans:  ['var(--font-inter)', 'system-ui', 'sans-serif'],
         serif: ['var(--font-playfair)', 'Georgia', 'serif'],
+        mono:  ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       backgroundImage: {
         'hero-radial':
-          'radial-gradient(ellipse at 20% 50%, rgba(212,168,83,0.07) 0%, transparent 55%), radial-gradient(ellipse at 80% 15%, rgba(59,130,246,0.05) 0%, transparent 50%)',
+          'radial-gradient(ellipse at 20% 50%, rgba(212,168,83,0.06) 0%, transparent 55%), radial-gradient(ellipse at 80% 15%, rgba(96,165,250,0.04) 0%, transparent 50%)',
         'card-shine':
-          'linear-gradient(135deg, rgba(212,168,83,0.04) 0%, transparent 50%)',
+          'linear-gradient(135deg, rgba(212,168,83,0.03) 0%, transparent 50%)',
       },
       keyframes: {
         'fade-up': {
