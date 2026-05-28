@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bottom-Up Risk/Reward Analyzer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d1117;
+      --surface:   #161b22;
+      --border:    #30363d;
+      --accent:    #58a6ff;
+      --green:     #3fb950;
+      --red:       #f85149;
+      --yellow:    #d29922;
+      --text:      #e6edf3;
+      --muted:     #8b949e;
+      --radius:    8px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header svg { flex-shrink: 0; }
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    header p { color: var(--muted); font-size: 0.9rem; }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .hero h2 span { color: var(--accent); }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .badge {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .badge.green { border-color: var(--green); color: var(--green); }
+    .badge.blue  { border-color: var(--accent); color: var(--accent); }
+
+    /* ── LAYOUT ── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+    }
+
+    section { margin-bottom: 3rem; }
+    section h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    section h3::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      margin-left: 0.75rem;
+    }
+
+    /* ── METHODOLOGY CARDS ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+    }
+    .card-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .card p { font-size: 0.875rem; color: var(--muted); }
+
+    /* ── TICKER TABLE ── */
+    .ticker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 0.75rem;
+    }
+    .ticker-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .ticker-card .symbol {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .ticker-card .name {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+    .ticker-card .sector {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: auto;
+      padding-top: 0.4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── SCENARIO TABLE ── */
+    .scenario-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .scenario-table th {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      text-align: left;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .scenario-table td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 1rem;
+    }
+    .scenario-table tr:hover td { background: rgba(88, 166, 255, 0.04); }
+    .dot {
+      display: inline-block;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      margin-right: 0.45rem;
+    }
+    .dot.red    { background: var(--red); }
+    .dot.yellow { background: var(--yellow); }
+    .dot.blue   { background: var(--accent); }
+    .dot.green  { background: var(--green); }
+
+    /* ── PIPELINE ── */
+    .pipeline {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem 1.1rem;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+    .arrow {
+      color: var(--muted);
+      font-size: 1.2rem;
+      padding: 0 0.4rem;
+    }
+
+    /* ── GITHUB LINK ── */
+    .github-cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .github-cta p { color: var(--muted); font-size: 0.9rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent);
+      color: #0d1117;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5rem 1.1rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+    }
+    .btn:hover { opacity: 0.85; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.1rem; }
+      .hero h2 { font-size: 1.5rem; }
+      .pipeline { flex-direction: column; align-items: flex-start; }
+      .arrow { transform: rotate(90deg); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" rx="6" fill="#161b22" stroke="#30363d"/>
+    <polyline points="4,24 10,16 16,19 22,10 28,13" stroke="#58a6ff" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="22" cy="10" r="2.5" fill="#3fb950"/>
+    <circle cx="10" cy="16" r="2" fill="#58a6ff"/>
+  </svg>
+  <div>
+    <h1>Bottom-Up Risk/Reward Analyzer</h1>
+    <p>Quantitative scenario modeling for individual equities</p>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <h2>Data-driven <span>scenario probabilities</span><br>for equity investing</h2>
+  <p>
+    A Python framework that combines fundamental analysis, proxy/alt-data signals,
+    and structural factors to score stocks across Bear, Base, Bull, and Extreme-Bull scenarios.
+  </p>
+  <div class="badge-row">
+    <span class="badge blue">Python 3</span>
+    <span class="badge green">15 Tickers Covered</span>
+    <span class="badge">Signal Models</span>
+    <span class="badge">Proxy Models</span>
+    <span class="badge">Scenario Weighting</span>
+  </div>
+</div>
+
+<main>
+
+  <!-- ── METHODOLOGY ── -->
+  <section>
+    <h3>Methodology</h3>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">&#128202;</div>
+        <h4>Signal Models</h4>
+        <p>
+          Weighted leading indicators per ticker — hyperscaler CapEx, peer revenue trends,
+          macro proxies — scored against bear/base/bull/extreme-bull thresholds.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128101;</div>
+        <h4>Proxy &amp; Alt-Data Model</h4>
+        <p>
+          External data sources (supply-chain peers, channel checks, TSMC mix data)
+          that lead the subject company's own reported results by 1–2 quarters.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9878;</div>
+        <h4>Structural Factors</h4>
+        <p>
+          Qualitative moat adjustments — switching costs, management quality,
+          regulatory risk, concentration risk — applied as score modifiers.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9878;</div>
+        <h4>Blended Verdict</h4>
+        <p>
+          Fundamental and proxy scores are blended (default 60/40), converting
+          the composite into scenario probabilities and a probability-weighted EV.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ANALYSIS PIPELINE ── -->
+  <section>
+    <h3>Analysis Pipeline</h3>
+    <div class="pipeline">
+      <div class="step">Raw Signals</div>
+      <div class="arrow">&#8594;</div>
+      <div class="step">Score vs Thresholds</div>
+      <div class="arrow">&#8594;</div>
+      <div class="step">Weighted Composite</div>
+      <div class="arrow">&#8594;</div>
+      <div class="step">Structural Adjustment</div>
+      <div class="arrow">&#8594;</div>
+      <div class="step">Scenario Probabilities</div>
+      <div class="arrow">&#8594;</div>
+      <div class="step">Prob-Weighted EV</div>
+    </div>
+  </section>
+
+  <!-- ── SCENARIOS ── -->
+  <section>
+    <h3>Scenario Framework</h3>
+    <table class="scenario-table">
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>Description</th>
+          <th>Composite Score Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="dot red"></span>Bear</td>
+          <td>Demand contraction, multiple compression, macro headwinds</td>
+          <td>0.0 – 1.0</td>
+        </tr>
+        <tr>
+          <td><span class="dot yellow"></span>Base</td>
+          <td>Trend-line growth, consensus expectations met</td>
+          <td>1.0 – 2.0</td>
+        </tr>
+        <tr>
+          <td><span class="dot blue"></span>Bull</td>
+          <td>Accelerating demand, margin expansion, positive surprises</td>
+          <td>2.0 – 3.0</td>
+        </tr>
+        <tr>
+          <td><span class="dot green"></span>Extreme Bull</td>
+          <td>Secular tailwind fully materialising, re-rating event</td>
+          <td>3.0 – 4.0</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ── COVERED TICKERS ── -->
+  <section>
+    <h3>Covered Tickers</h3>
+    <div class="ticker-grid">
+      <div class="ticker-card">
+        <span class="symbol">AVGO</span>
+        <span class="name">Broadcom Inc.</span>
+        <span class="sector">Semiconductors / Software</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">MSFT</span>
+        <span class="name">Microsoft Corp.</span>
+        <span class="sector">Cloud / Enterprise Software</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">MU</span>
+        <span class="name">Micron Technology</span>
+        <span class="sector">Memory Semiconductors</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">COIN</span>
+        <span class="name">Coinbase Global</span>
+        <span class="sector">Crypto Infrastructure</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">PYPL</span>
+        <span class="name">PayPal Holdings</span>
+        <span class="sector">Digital Payments</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">NKE</span>
+        <span class="name">Nike Inc.</span>
+        <span class="sector">Consumer / Apparel</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">SAP</span>
+        <span class="name">SAP SE</span>
+        <span class="sector">Enterprise Software</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">SYK</span>
+        <span class="name">Stryker Corp.</span>
+        <span class="sector">Medical Devices</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">WMB</span>
+        <span class="name">Williams Companies</span>
+        <span class="sector">Midstream Energy</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">OKE</span>
+        <span class="name">ONEOK Inc.</span>
+        <span class="sector">Midstream Energy</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">RCL</span>
+        <span class="name">Royal Caribbean</span>
+        <span class="sector">Leisure / Cruises</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">APD</span>
+        <span class="name">Air Products</span>
+        <span class="sector">Industrial Gases</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">ORCL</span>
+        <span class="name">Oracle Corp.</span>
+        <span class="sector">Cloud Database / ERP</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">CAT</span>
+        <span class="name">Caterpillar Inc.</span>
+        <span class="sector">Heavy Equipment</span>
+      </div>
+      <div class="ticker-card">
+        <span class="symbol">XTB</span>
+        <span class="name">XTB S.A.</span>
+        <span class="sector">Online Brokerage</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GITHUB CTA ── -->
+  <section>
+    <h3>Source Code</h3>
+    <div class="github-cta">
+      <div>
+        <strong>Open source on GitHub</strong>
+        <p>All signal models, proxy models, and the analysis runner are available in the repository.</p>
+      </div>
+      <a class="btn" href="https://github.com/marcinzieba4-bot/BootomUpRiskRewardAnalyzer" target="_blank" rel="noopener">
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+          0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+          -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+          .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+          -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
+          1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+          1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+          1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        View on GitHub
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Built with Python &nbsp;·&nbsp; Bottom-Up Risk/Reward Analyzer &nbsp;·&nbsp;
+  <a href="https://github.com/marcinzieba4-bot/BootomUpRiskRewardAnalyzer" style="color:var(--accent);text-decoration:none;">GitHub</a>
+</footer>
+
+</body>
+</html>
