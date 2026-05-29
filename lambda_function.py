@@ -87,6 +87,7 @@ MODELS = {
     "SHW":  "shw_signal_model.py",
     "ECL":  "ecl_signal_model.py",
     "FCX":  "fcx_signal_model.py",
+    "DD":   "dd_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -423,6 +424,11 @@ SUMMARY = {
               "sector_group": "Materials",
               "company": "The Sherwin-Williams Company", "sector": "Architectural Coatings · Professional Contractors · Paint Stores (4,900+) · Industrial & Performance Coatings",
               "summary": "Sherwin-Williams at $316 = 27× FY2026E adjusted EPS — the world's largest paint company and a quasi-monopoly on professional architectural coatings: 4,900+ company-owned stores in the Americas create distribution density no competitor can match. Professional painters don't switch because they've invested years in SHW's color formulas, tinting systems, and contractor loyalty tiers (up to 40% volume discounts). 47 consecutive annual dividend increases. The business is excellent — the current challenge is housing: high mortgage rates suppress existing home sales (the biggest repaint trigger) and FY2026 guidance is only +2.4% adj EPS growth. Q1 2026 was encouraging: adj EPS $2.35 (+4.4%), revenue $5.67B (+6.8%), record Q1 EBITDA $998M (+8.8%). The aging US housing stock (avg 42 years) and eventual rate normalisation are powerful multi-year tailwinds — every year of deferred painting creates future demand. April 2026 tariff-panic low $294.32 was ACCUMULATE (ratio_b 1.04×); current $316 is fairly valued in WATCHLIST. Analyst avg PT $380-385 requires housing recovery to materialise. EPP $176 (22× × $8.00 trough). Ratio B 1.52×. WATCHLIST. ACCUMULATE below $298. BUY below $275."},
+    "DD":   {"ticker": "DD",   "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
+              "price": 49.18,   "date": "2026-05-28", "epp_gap_pct": 119.6,  "ratio_b_fmt": "2.42x",
+              "sector_group": "Materials",
+              "company": "DuPont de Nemours Inc.", "sector": "Specialty Materials · Healthcare (Tyvek/Spectrum) · Water Technologies (FILMTEC) · Diversified Industrials",
+              "summary": "DuPont at $49.18 is the 'new DuPont' — transformed by spinning off Qnity Electronics (Nov 2025) and divesting Kevlar/Nomex Aramids (Apr 2026) into a focused Healthcare & Water + Diversified Industrials specialty company. Q1 2026: adj EPS $0.55 (+15% beat); EBITDA margin 24.6% (record). Healthcare & Water (Tyvek medical packaging, Spectrum medical devices, FILMTEC RO membranes) is ~47% of revenue at ~30% EBITDA margins — genuine defensive growth. But stock has nearly doubled from the $27 post-Qnity panic low and now trades at ~21× FY2026E. Method B ($2.51 × 24× = $60.24) is only +22% upside; analyst avg PT $55–56 is already below price_b. Note: 1-for-3 reverse split June 24, 2026 (post-split price ~$148; EPS ~$7.11 — same economics). PFAS largely ring-fenced. Ratio B 2.42×. HOLD/TRIM. Re-enter WATCHLIST $43–47; ACCUMULATE $39–43; BUY below $39."},
     "FCX":  {"ticker": "FCX",  "signal": "▷ HOLD/TRIM",  "signal_short": "HOLD",        "signal_color": "#a78bfa",
               "price": 63.63,   "date": "2026-05-28", "epp_gap_pct": 324.2,  "ratio_b_fmt": "2.28x",
               "sector_group": "Materials",
