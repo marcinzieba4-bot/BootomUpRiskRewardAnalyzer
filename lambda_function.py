@@ -91,6 +91,7 @@ MODELS = {
     "DNP":  "dnp_signal_model.py",
     "CTVA": "ctva_signal_model.py",
     "VMC":  "vmc_signal_model.py",
+    "DOW":  "dow_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -472,6 +473,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "Corteva, Inc.", "sector": "Agricultural Sciences · Seeds (Pioneer) · Crop Protection · NYSE: CTVA",
               "summary": "Leading ag-input duopolist: Pioneer seeds + Corteva CP. FY2025 op EPS $3.34 (+30% YoY); Q1 2026 EPS $1.50 (+33%, +28% beat). Planned Seed/CP separation Q4 2026 — SOTP $84/share at base multiples ($104 bull, $63 bear). Stock near 52-week high ($82 vs $86 ATH). DOJ antitrust trial October 2026 is the binary event risk: loyalty program ruling could force CP distribution restructure → generic flood. Brazil soy trait penetration entering double digits — multi-year royalty expansion runway. Enlist E3 at 65% US soybean acres. WATCHLIST: adj. composite 2.37 vs market-implied 2.50 (FAIRLY VALUED); Ratio B 1.27×. At $82 the conservative 2yr return is only +1.6% (breakeven). Entry zone: $68–72 on DOJ dip or commodity weakness. EPP floor $50 (+64% gap)."},
+    "DOW":  {"ticker": "DOW",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 34.52,   "date": "2026-05-29", "epp_gap_pct": 147.0, "ratio_b_fmt": "0.95x",
+              "sector_group": "Basic Resources",
+              "company": "Dow Inc.", "sector": "Commodity Chemicals · Polyethylene · Polyurethanes · Silicones · NYSE: DOW",
+              "summary": "Dow at the trough — EPS negative FY2025, dividend cut 50% to $1.40/yr, $13.1B net debt. Yet two structural advantages: NA ethane feedstock moat ($1,200/MT advantage vs naphtha; highest in history due to Middle East supply shock) + Transform to Outperform $2B EBITDA target by 2027. EPP floor $14 (EV/EBITDA framework: $3.3B × 7× less $13.1B debt). Current $34.52 = 148% premium to EPP — market pricing mid-cycle recovery. Decisive test: Q2 2026 EBITDA (~$2B guided vs Q1 $873M). If Q2 delivers: upgrade to BUY. If Q2 misses: re-evaluate at $26–28. EBITDA recovery path: $3.3B trough → $4.5B mid-cycle consensus → $5.3B full Transform → $6.3B Path2Zero. Ratio B 0.95× (56.5% downside / 59.3% upside to BULL). Adj composite 2.56 vs market-implied 1.80 — UNDERVALUED by signals, but conservative 2yr return -13.2% warns stock already prices recovery. ACCUMULATE $30–35; BUY below $28. Size small until Q2 confirms."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
