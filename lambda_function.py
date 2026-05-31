@@ -94,7 +94,8 @@ MODELS = {
     "VMC":  "vmc_signal_model.py",
     "DOW":  "dow_signal_model.py",
     "LYB":  "lyb_signal_model.py",
-    "META": "meta_signal_model.py",
+    "META":  "meta_signal_model.py",
+    "GOOGL": "googl_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -491,6 +492,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "LyondellBasell Industries N.V.", "sector": "Commodity Chemicals · Polypropylene · PO/Styrene · Technology Licensing · NYSE: LYB",
               "summary": "LYB at the trough — EBITDA $2.7B (FY2025 actual), FCF deficit ~$380M vs $1.40B annual dividend burden. Dividend yield 6.2% is attractive but requires EBITDA ≥$3.5B to be FCF-covered. EPP floor $19.5/share (trough EV/EBITDA: $2.7B × 5.5× less $8.8B net debt / 310M shares). Current $72.50 prices in BULL ($5.5B EBITDA × 7.0× EV) — that is the risk. Tech licensing moat (Spherizone/Lupotech IP, 200+ global plants, $505M/yr revenue) provides structural floor. PP-propylene spread $145/MT (BASE), China capacity +3MT/yr (BASE), European output +0.5% (BASE) — all signals cyclically depressed. VEP + Houston exit delivering $430M annualised savings (BULL threshold $450M). Only BULL ($105) and XBULL ($155) scenarios justify current entry. Conservative 2yr: $3.5B EBITDA × 6.0× → $41/shr + $9.04 dividends = $50 → -31% total return. Mid-cycle BASE ($4.0B × 6.5×) = $55/shr — still below today's price. Adj. composite 2.06 vs market-implied 2.68 → OVERVALUED by 0.62 pts. Ratio B 1.46× (WATCHLIST). Key upgrade trigger: PP spread ≥$200/MT or China capacity cancellations confirm peak. WATCHLIST $62–85 | ACCUMULATE $58–67 | BUY below $55 | Size small — dividend at risk below $3.5B EBITDA."},
+    "GOOGL": {"ticker": "GOOGL", "signal": "◉ BUY",       "signal_short": "BUY",       "signal_color": "#4ade80",
+               "price": 172.00,  "date": "2026-05-31", "epp_gap_pct": 17.0,  "ratio_b_fmt": "0.64x",
+               "sector_group": "Technology",
+               "company": "Alphabet Inc.", "sector": "Google Search · YouTube · Google Cloud · AI Infrastructure · NASDAQ: GOOGL",
+               "summary": "Alphabet at ◉ BUY — cheapest it has been on forward P/E in 4 years (~16.4× FY2026E). Ratio B 0.64× (53.5% downside / 83.1% upside): Cloud + YouTube asymmetry swamps the bear case. Proxy 2.35, SCA +0.14 → adj 2.49 vs market 2.16 → UNDERVALUED by 0.33 pts. Cloud growing +29% YoY (BULL signal): every 1% of additional cloud market share = +$4B rev. Search DISRUPTION vs CLOUD OFFSET: at 28% Cloud CAGR, Cloud growth offsets ≤7% search query loss in 2yr; at 10% search loss, net EPS drag only −$0.39 over 2yr vs $10.50 EPS base. Bear ($80) requires DOJ structural divestiture + 25% query loss + cloud slowdown simultaneously — probability 12%. EPP floor $147 (+17% gap); conservative 2yr +3.3% (EPS $11 × 16× + $1.60 div = $177.60) → BUY confirmed even in conservative case. Key binary: DOJ remedy ruling Q3 2026 — behavioral = stock +15-20%; structural = −30%. Upgrade trigger: AI Overviews monetisation ratio ≥1.05× (currently 0.90×). BUY $148–172 | TRIM above $260."},
     "META": {"ticker": "META", "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
               "price": 590.00,  "date": "2026-05-31", "epp_gap_pct": 40.5,  "ratio_b_fmt": "0.98x",
               "sector_group": "Technology",
