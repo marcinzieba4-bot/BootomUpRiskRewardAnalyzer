@@ -94,6 +94,7 @@ MODELS = {
     "VMC":  "vmc_signal_model.py",
     "DOW":  "dow_signal_model.py",
     "LYB":  "lyb_signal_model.py",
+    "META": "meta_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -490,6 +491,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "LyondellBasell Industries N.V.", "sector": "Commodity Chemicals · Polypropylene · PO/Styrene · Technology Licensing · NYSE: LYB",
               "summary": "LYB at the trough — EBITDA $2.7B (FY2025 actual), FCF deficit ~$380M vs $1.40B annual dividend burden. Dividend yield 6.2% is attractive but requires EBITDA ≥$3.5B to be FCF-covered. EPP floor $19.5/share (trough EV/EBITDA: $2.7B × 5.5× less $8.8B net debt / 310M shares). Current $72.50 prices in BULL ($5.5B EBITDA × 7.0× EV) — that is the risk. Tech licensing moat (Spherizone/Lupotech IP, 200+ global plants, $505M/yr revenue) provides structural floor. PP-propylene spread $145/MT (BASE), China capacity +3MT/yr (BASE), European output +0.5% (BASE) — all signals cyclically depressed. VEP + Houston exit delivering $430M annualised savings (BULL threshold $450M). Only BULL ($105) and XBULL ($155) scenarios justify current entry. Conservative 2yr: $3.5B EBITDA × 6.0× → $41/shr + $9.04 dividends = $50 → -31% total return. Mid-cycle BASE ($4.0B × 6.5×) = $55/shr — still below today's price. Adj. composite 2.06 vs market-implied 2.68 → OVERVALUED by 0.62 pts. Ratio B 1.46× (WATCHLIST). Key upgrade trigger: PP spread ≥$200/MT or China capacity cancellations confirm peak. WATCHLIST $62–85 | ACCUMULATE $58–67 | BUY below $55 | Size small — dividend at risk below $3.5B EBITDA."},
+    "META": {"ticker": "META", "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 590.00,  "date": "2026-05-31", "epp_gap_pct": 40.5,  "ratio_b_fmt": "0.98x",
+              "sector_group": "Technology",
+              "company": "Meta Platforms, Inc.", "sector": "Social Media · Digital Advertising · AI Infrastructure · Reality Labs · NASDAQ: META",
+              "summary": "Meta at FAIRLY VALUED with ACCUMULATE asymmetry — Ratio B 0.98× (66.1% downside / 67.8% upside). Proxy 2.25, SCA +0.105 → adj 2.355 ≈ market 2.36: model says priced correctly. Key upside: Advantage+ driving +14% North America ARPU YoY (BULL signal); every 5pp adoption gain = +$27/share at 22×. Reality Labs -$20B/yr is the structural drag — but path to <$4B/qtr loss = BULL upgrade. FTC divestiture ruling (Q3/Q4 2026) is the binary event: win = stable at $590-620; lose = −30%+ near-term. BULL scenario ($990): int'l ARPU +40% + Advantage+ >55% share + $241B revenue × 53% margin → EPS ~$38 at 26×. BEAR ($200): ad recession + FTC breakup + AI capex write-off → EPS $14 × 14×. EPP floor $420 (+40% gap); conservative 2yr (EPS $25 × 21× + $4 div = $529) = −10.3%. AI capex $65-70B/yr delays EPS compounding — META is a growth story, not income (div yield 0.3%). BUY below $490 (conservative 2yr turns positive). ACCUMULATE $453–620. AVOID above $742."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
