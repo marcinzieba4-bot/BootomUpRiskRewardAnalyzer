@@ -93,6 +93,7 @@ MODELS = {
     "CTVA": "ctva_signal_model.py",
     "VMC":  "vmc_signal_model.py",
     "DOW":  "dow_signal_model.py",
+    "LYB":  "lyb_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -484,6 +485,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "Dow Inc.", "sector": "Commodity Chemicals · Polyethylene · Polyurethanes · Silicones · NYSE: DOW",
               "summary": "Dow at the trough — EPS negative FY2025, dividend cut 50% to $1.40/yr, $13.1B net debt. Yet two structural advantages: NA ethane feedstock moat ($1,200/MT advantage vs naphtha; highest in history due to Middle East supply shock) + Transform to Outperform $2B EBITDA target by 2027. EPP floor $14 (EV/EBITDA framework: $3.3B × 7× less $13.1B debt). Current $34.52 = 148% premium to EPP — market pricing mid-cycle recovery. Decisive test: Q2 2026 EBITDA (~$2B guided vs Q1 $873M). If Q2 delivers: upgrade to BUY. If Q2 misses: re-evaluate at $26–28. EBITDA recovery path: $3.3B trough → $4.5B mid-cycle consensus → $5.3B full Transform → $6.3B Path2Zero. Ratio B 0.95× (56.5% downside / 59.3% upside to BULL). Adj composite 2.56 vs market-implied 1.80 — UNDERVALUED by signals, but conservative 2yr return -13.2% warns stock already prices recovery. ACCUMULATE $30–35; BUY below $28. Size small until Q2 confirms."},
+    "LYB":  {"ticker": "LYB",  "signal": "◐ WATCHLIST", "signal_short": "WATCHLIST", "signal_color": "#60a5fa",
+              "price": 72.50,   "date": "2026-05-31", "epp_gap_pct": 272.0, "ratio_b_fmt": "1.46x",
+              "sector_group": "Basic Resources",
+              "company": "LyondellBasell Industries N.V.", "sector": "Commodity Chemicals · Polypropylene · PO/Styrene · Technology Licensing · NYSE: LYB",
+              "summary": "LYB at the trough — EBITDA $2.7B (FY2025 actual), FCF deficit ~$380M vs $1.40B annual dividend burden. Dividend yield 6.2% is attractive but requires EBITDA ≥$3.5B to be FCF-covered. EPP floor $19.5/share (trough EV/EBITDA: $2.7B × 5.5× less $8.8B net debt / 310M shares). Current $72.50 prices in BULL ($5.5B EBITDA × 7.0× EV) — that is the risk. Tech licensing moat (Spherizone/Lupotech IP, 200+ global plants, $505M/yr revenue) provides structural floor. PP-propylene spread $145/MT (BASE), China capacity +3MT/yr (BASE), European output +0.5% (BASE) — all signals cyclically depressed. VEP + Houston exit delivering $430M annualised savings (BULL threshold $450M). Only BULL ($105) and XBULL ($155) scenarios justify current entry. Conservative 2yr: $3.5B EBITDA × 6.0× → $41/shr + $9.04 dividends = $50 → -31% total return. Mid-cycle BASE ($4.0B × 6.5×) = $55/shr — still below today's price. Adj. composite 2.06 vs market-implied 2.68 → OVERVALUED by 0.62 pts. Ratio B 1.46× (WATCHLIST). Key upgrade trigger: PP spread ≥$200/MT or China capacity cancellations confirm peak. WATCHLIST $62–85 | ACCUMULATE $58–67 | BUY below $55 | Size small — dividend at risk below $3.5B EBITDA."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
