@@ -99,6 +99,7 @@ MODELS = {
     "NFLX":  "nflx_signal_model.py",
     "KNEBV": "knebv_signal_model.py",
     "T":     "t_signal_model.py",
+    "TTWO":  "ttwo_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -520,6 +521,11 @@ SUMMARY = {
               "sector_group": "Telecoms/Media",
               "company": "AT&T Inc.", "sector": "Wireless & Fiber · EchoStar Spectrum · Wireline Legacy · NYSE: T",
               "summary": "AT&T ◎ ACCUMULATE — Ratio B 0.97× (51.6% downside / 53.2% upside). Leveraged option on fiber broadband penetration + EchoStar spectrum acquisition ($23B, mid-2026). 37M fiber homes passed, 10.4M subs at 28.1% penetration; Q1 2026 net adds 273K (record). Each +1M fiber subs = +$0.042 EPS on existing plant. $18B FCF 2026E covers $7.7B dividend (4.5% yield, 2.3× coverage) + $10B/yr debt paydown. Deleverages from 3.1× peak (post-EchoStar close) → 2.5× target end-2028. EPP floor $19 (+30.0% gap, EPS $2.12 × 9× trough P/E). BEAR ($12): EPS $1.70 × 7× distress (recession + leverage trap + overbuilder pressure). BULL ($38): EPS $2.90 × 13× fiber re-rate (net adds 300K+/qtr; EchoStar FWA 5M+ homes). XBULL ($54): fiber 45%+ penetration; FWA #4 wireless; leverage 2.0×; EPS $3.40 × 16×. Conservative 2yr: EPS $2.60 × 9× + $2.22 div = $25.62 → +3.3%. ADJ composite 2.47 vs market 2.45 → FAIRLY VALUED. ACCUMULATE on weakness; triggers: EchoStar close confirmation, fiber net adds 300K+/qtr, leverage below 2.8×."},
+    "TTWO": {"ticker": "TTWO", "signal": "◉ BUY",   "signal_short": "BUY",   "signal_color": "#4ade80",
+              "price": 224.16, "date": "2026-06-01", "epp_gap_pct": 315.9, "ratio_b_fmt": "0.55x",
+              "sector_group": "Consumer Discretionary",
+              "company": "Take-Two Interactive Software, Inc.", "sector": "Video Games · AAA Publishing · Mobile (Zynga) · NASDAQ: TTWO",
+              "summary": "TTWO ◉ BUY — Ratio B 0.55× (33.1% downside / 60.6% upside). GTA VI launch stock. Nov 19, 2026 date CONFIRMED — $8.0-8.2B FY2027 guidance explicitly tied to it. FY2026 net bookings $6.72B (+19%); OCF $624M. GTA VI = ~36% of FY2027 NB (~$2.9B). Stock fell $264→$188 on May→Nov delay; recovered to $224, still 15% below avg analyst PT $279. GTA V Online: $5B+ lifetime, $1M+/day still in 2026 (13yr post-launch) — GTA VI Online template for decade-long live-service revenue. PC release 2027-28 = additional $1B+ not in guidance. Net CASH target FY2027 year-end (from $2.6B net debt today). First GAAP profitable year FY2027E ($0.55-$0.75). EPP floor $54 (+315.9% gap — large gap is expected for an event-driven stock 6 months pre-launch). Bear $150 (3rd delay or launch flop) · Base $260 (solid 20M units) · Bull $360 (blockbuster 30M+) · XBull $500 (generational title). BUY below $240. Watch: pre-order numbers June 2026, Metacritic score day-1, GTA Online day-1 availability."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
