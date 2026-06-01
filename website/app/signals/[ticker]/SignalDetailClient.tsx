@@ -85,7 +85,7 @@ export default function SignalDetailClient() {
       {/* Key metrics */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
         {[
-          { label: 'Current Price',    value: `$${data.price}` },
+          { label: 'Current Price',    value: data.sector?.includes('Prices in EUR') ? `€${data.price}` : data.sector?.includes('Prices in PLN') ? `PLN ${data.price}` : `$${data.price}` },
           { label: 'EPP Gap',          value: `+${data.epp_gap_pct}%` },
           { label: 'Ratio B (Method)', value: data.ratio_b_fmt },
         ].map(({ label, value }) => (

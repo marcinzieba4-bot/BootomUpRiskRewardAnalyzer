@@ -199,7 +199,7 @@ export default function SignalsPage() {
 
                   <div className="grid grid-cols-3 gap-2 mb-4">
                     <div className="bg-vr-bg/60 rounded-lg p-2 text-center">
-                      <div className="text-vr-text font-semibold text-sm">${s.price}</div>
+                      <div className="text-vr-text font-semibold text-sm">{s.sector?.includes('Prices in EUR') ? '€' : s.sector?.includes('Prices in PLN') ? 'PLN ' : '$'}{s.price}</div>
                       <div className="text-vr-faint text-[10px] mt-0.5">Price</div>
                     </div>
                     <div className="bg-vr-bg/60 rounded-lg p-2 text-center">
