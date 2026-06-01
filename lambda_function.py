@@ -97,6 +97,7 @@ MODELS = {
     "META":  "meta_signal_model.py",
     "GOOGL": "googl_signal_model.py",
     "NFLX":  "nflx_signal_model.py",
+    "KNEBV": "knebv_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -508,6 +509,11 @@ SUMMARY = {
               "sector_group": "Technology",
               "company": "Meta Platforms, Inc.", "sector": "Social Media · Digital Advertising · AI Infrastructure · Reality Labs · NASDAQ: META",
               "summary": "Meta at FAIRLY VALUED with ACCUMULATE asymmetry — Ratio B 0.98× (66.1% downside / 67.8% upside). Proxy 2.25, SCA +0.105 → adj 2.355 ≈ market 2.36: model says priced correctly. Key upside: Advantage+ driving +14% North America ARPU YoY (BULL signal); every 5pp adoption gain = +$27/share at 22×. Reality Labs -$20B/yr is the structural drag — but path to <$4B/qtr loss = BULL upgrade. FTC divestiture ruling (Q3/Q4 2026) is the binary event: win = stable at $590-620; lose = −30%+ near-term. BULL scenario ($990): int'l ARPU +40% + Advantage+ >55% share + $241B revenue × 53% margin → EPS ~$38 at 26×. BEAR ($200): ad recession + FTC breakup + AI capex write-off → EPS $14 × 14×. EPP floor $420 (+40% gap); conservative 2yr (EPS $25 × 21× + $4 div = $529) = −10.3%. AI capex $65-70B/yr delays EPS compounding — META is a growth story, not income (div yield 0.3%). BUY below $490 (conservative 2yr turns positive). ACCUMULATE $453–620. AVOID above $742."},
+    "KNEBV": {"ticker": "KNEBV", "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+               "price": 46.00,  "date": "2026-06-01", "epp_gap_pct": 9.5,  "ratio_b_fmt": "0.89x",
+               "sector_group": "Industrials",
+               "company": "KONE Corporation", "sector": "Elevators & Escalators · Service & Modernisation · Building Technology · HEL: KNEBV · Prices in EUR",
+               "summary": "KONE FAIRLY VALUED at ◎ ACCUMULATE — Ratio B 0.89× (52.2% downside / 58.7% upside). Proxy 2.30, SCA +0.130 → adj 2.43 ≈ market 2.46 → gap only -0.03. The KONE thesis is counterintuitive: full China NE recovery (€1.8B → €4.2B peak) adds only +€0.17/EPS due to thin 5% NE margins — but 5yr of 7% service growth adds +€0.73/EPS, 4.3× more valuable. The market fears China; the model says SERVICE is the bull case — and it is already happening. 6 signals: China NE orders -12% (BASE), service+modern growth +6% (BULL), EBIT margin 12.5% (BASE), EMEA NE +5% (BASE), modernisation backlog +7% (BASE), KONE Connect 1.2M units (BULL). EPP floor €42 (+9.5% gap); conservative 2yr (EPS €2.20 × 20× + €3.56 div = €47.56) = +3.4%. Dividend yield 3.9% (17yr growth streak) covers the multiple risk. BULL (€73): modernisation inflects + margins 14% + China floor. BEAR (€22): construction recession + China second leg + maintenance deferrals — requires 2.1σ move. Near 52W low (41th pct of range) — China fears already embedded. ACCUMULATE €38–€50 | BUY below €42 (EPP zone) | TRIM above €57. All prices in EUR."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
