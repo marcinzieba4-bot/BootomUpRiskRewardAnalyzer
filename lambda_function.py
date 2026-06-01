@@ -98,6 +98,7 @@ MODELS = {
     "GOOGL": "googl_signal_model.py",
     "NFLX":  "nflx_signal_model.py",
     "KNEBV": "knebv_signal_model.py",
+    "T":     "t_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -514,6 +515,11 @@ SUMMARY = {
                "sector_group": "Industrials",
                "company": "KONE Corporation", "sector": "Elevators & Escalators · Service & Modernisation · Building Technology · HEL: KNEBV · Prices in EUR",
                "summary": "KONE ◐ WATCHLIST — Ratio B 1.17× (60.9% downside / 52.2% upside). SIGNAL DOWNGRADED from ACCUMULATE: KONE agreed to acquire TK Elevator (TKE) for €29.4B on 2026-04-29 — Finland's largest ever corporate acquisition. Deal terms: €5B cash + 270M new KONE shares (33.8% post-deal) + €9.2B TKE debt refinanced → pro-forma net debt ~€12B (~4.0× EBITDA, vs Otis 2.5×). Combined entity: €20.5B revenue, 65% service (vs 53% standalone), world's #1 elevator maker (overtakes Otis), dramatically improved Americas exposure. Synergies €700M/yr run-rate by Year 3; EPS accretive Year 1 (adjusted). Scenarios updated for combined entity on 811M post-close shares. JPMorgan upgraded to Overweight, PT €70, on deal day. BEAR (€18): antitrust block or integration failure + China collapse. BASE (€48): deal closes Q2 2027, synergies €500M by FY2028. BULL (€70): full €700M synergies, service 65%, >16% EBIT margin. Conservative 2yr: EPS €2.00 × 18× + €3.56 div = €39.56 → −14.0%. WATCHLIST does NOT reflect quality concern — it reflects binary deal execution event. Upgrade trigger: antitrust clearance (behavioral remedy) → ACCUMULATE. BUY trigger: <€38. EGM June 3, 2026 (Herlin >50% votes: approval certain). All prices in EUR."},
+    "T":    {"ticker": "T",    "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 24.80,  "date": "2026-06-01", "epp_gap_pct": 30.0,  "ratio_b_fmt": "0.97x",
+              "sector_group": "Telecoms/Media",
+              "company": "AT&T Inc.", "sector": "Wireless & Fiber · EchoStar Spectrum · Wireline Legacy · NYSE: T",
+              "summary": "AT&T ◎ ACCUMULATE — Ratio B 0.97× (51.6% downside / 53.2% upside). Leveraged option on fiber broadband penetration + EchoStar spectrum acquisition ($23B, mid-2026). 37M fiber homes passed, 10.4M subs at 28.1% penetration; Q1 2026 net adds 273K (record). Each +1M fiber subs = +$0.042 EPS on existing plant. $18B FCF 2026E covers $7.7B dividend (4.5% yield, 2.3× coverage) + $10B/yr debt paydown. Deleverages from 3.1× peak (post-EchoStar close) → 2.5× target end-2028. EPP floor $19 (+30.0% gap, EPS $2.12 × 9× trough P/E). BEAR ($12): EPS $1.70 × 7× distress (recession + leverage trap + overbuilder pressure). BULL ($38): EPS $2.90 × 13× fiber re-rate (net adds 300K+/qtr; EchoStar FWA 5M+ homes). XBULL ($54): fiber 45%+ penetration; FWA #4 wireless; leverage 2.0×; EPS $3.40 × 16×. Conservative 2yr: EPS $2.60 × 9× + $2.22 div = $25.62 → +3.3%. ADJ composite 2.47 vs market 2.45 → FAIRLY VALUED. ACCUMULATE on weakness; triggers: EchoStar close confirmation, fiber net adds 300K+/qtr, leverage below 2.8×."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
