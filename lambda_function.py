@@ -96,6 +96,7 @@ MODELS = {
     "LYB":  "lyb_signal_model.py",
     "META":  "meta_signal_model.py",
     "GOOGL": "googl_signal_model.py",
+    "NFLX":  "nflx_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -492,6 +493,11 @@ SUMMARY = {
               "sector_group": "Basic Resources",
               "company": "LyondellBasell Industries N.V.", "sector": "Commodity Chemicals · Polypropylene · PO/Styrene · Technology Licensing · NYSE: LYB",
               "summary": "LYB at the trough — EBITDA $2.7B (FY2025 actual), FCF deficit ~$380M vs $1.40B annual dividend burden. Dividend yield 6.2% is attractive but requires EBITDA ≥$3.5B to be FCF-covered. EPP floor $19.5/share (trough EV/EBITDA: $2.7B × 5.5× less $8.8B net debt / 310M shares). Current $72.50 prices in BULL ($5.5B EBITDA × 7.0× EV) — that is the risk. Tech licensing moat (Spherizone/Lupotech IP, 200+ global plants, $505M/yr revenue) provides structural floor. PP-propylene spread $145/MT (BASE), China capacity +3MT/yr (BASE), European output +0.5% (BASE) — all signals cyclically depressed. VEP + Houston exit delivering $430M annualised savings (BULL threshold $450M). Only BULL ($105) and XBULL ($155) scenarios justify current entry. Conservative 2yr: $3.5B EBITDA × 6.0× → $41/shr + $9.04 dividends = $50 → -31% total return. Mid-cycle BASE ($4.0B × 6.5×) = $55/shr — still below today's price. Adj. composite 2.06 vs market-implied 2.68 → OVERVALUED by 0.62 pts. Ratio B 1.46× (WATCHLIST). Key upgrade trigger: PP spread ≥$200/MT or China capacity cancellations confirm peak. WATCHLIST $62–85 | ACCUMULATE $58–67 | BUY below $55 | Size small — dividend at risk below $3.5B EBITDA."},
+    "NFLX":  {"ticker": "NFLX",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+               "price": 850.00,  "date": "2026-05-31", "epp_gap_pct": 28.8, "ratio_b_fmt": "0.89x",
+               "sector_group": "Technology",
+               "company": "Netflix, Inc.", "sector": "Streaming · Ad-Supported Tier · Live Events · Gaming · NASDAQ: NFLX",
+               "summary": "Netflix FAIRLY VALUED with ACCUMULATE asymmetry — Ratio B 0.89× (57.6% downside / 64.7% upside). Proxy 2.25, SCA +0.16 → adj 2.41 ≈ market 2.36: model broadly agrees with pricing. ARM +10% YoY = BULL (price increases + ad-tier revenue lift). Ad tier flywheel: 70M MAU × $42 ARPU = $2.94B/yr at 75% incremental margin = $4.07/EPS — still tiny but compounding. BULL ($1,400): 160M ad MAU × $80 ARPU = $12.8B rev → $17.72/EPS from ads alone + $22 subscription EPS ≈ $40 total at 35× = $1,400. Every 10M new ad MAU = +$0.58/EPS = +$17/share; every $10/yr ARPU uplift = +$0.97/EPS = +$29/share. Conservative 2yr (EPS $33 × 24× = $792) = −6.8%; BUY trigger below $750. BEAR ($360): Disney bundling wins + EU targeting ban + margin reversal → EPS $18 × 20× = $360 (−58%). EPP $660 (+29% gap); FY2027E EPP ~$770 as earnings grow. No dividend — all return via ~$400M/qtr buyback (~2%/yr yield). Watch: ad MAU ≥90M → BULL upgrade; ARM ≥12% → upgrade. ACCUMULATE $660–850 | BUY below $750."},
     "GOOGL": {"ticker": "GOOGL", "signal": "◉ BUY",       "signal_short": "BUY",       "signal_color": "#4ade80",
                "price": 172.00,  "date": "2026-05-31", "epp_gap_pct": 17.0,  "ratio_b_fmt": "0.64x",
                "sector_group": "Technology",
