@@ -2,6 +2,9 @@ __pycache__/
 *.pyc
 *.pyo
 
+# Lambda deployment artifacts
+lambda_deploy.zip
+
 # Node.js
 website/node_modules/
 website/.next/
