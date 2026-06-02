@@ -101,6 +101,7 @@ MODELS = {
     "T":     "t_signal_model.py",
     "TTWO":  "ttwo_signal_model.py",
     "CMCSA": "cmcsa_signal_model.py",
+    "TMUS":  "tmus_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -527,6 +528,11 @@ SUMMARY = {
               "sector_group": "Consumer Discretionary",
               "company": "Take-Two Interactive Software, Inc.", "sector": "Video Games · AAA Publishing · Mobile (Zynga) · NASDAQ: TTWO",
               "summary": "TTWO ◉ BUY — Ratio B 0.55× (33.1% downside / 60.6% upside). GTA VI launch stock. Nov 19, 2026 date CONFIRMED — $8.0-8.2B FY2027 guidance explicitly tied to it. FY2026 net bookings $6.72B (+19%); OCF $624M. GTA VI = ~36% of FY2027 NB (~$2.9B). Stock fell $264→$188 on May→Nov delay; recovered to $224, still 15% below avg analyst PT $279. GTA V Online: $5B+ lifetime, $1M+/day still in 2026 (13yr post-launch) — GTA VI Online template for decade-long live-service revenue. PC release 2027-28 = additional $1B+ not in guidance. Net CASH target FY2027 year-end (from $2.6B net debt today). First GAAP profitable year FY2027E ($0.55-$0.75). EPP floor $54 (+315.9% gap — large gap is expected for an event-driven stock 6 months pre-launch). Bear $150 (3rd delay or launch flop) · Base $260 (solid 20M units) · Bull $360 (blockbuster 30M+) · XBull $500 (generational title). BUY below $240. Watch: pre-order numbers June 2026, Metacritic score day-1, GTA Online day-1 availability."},
+    "TMUS":  {"ticker": "TMUS",  "signal": "◉ BUY", "signal_short": "BUY", "signal_color": "#4ade80",
+              "price": 187.53, "date": "2026-06-02", "epp_gap_pct": 69.7, "ratio_b_fmt": "0.47x",
+              "sector_group": "Telecoms/Media",
+              "company": "T-Mobile US, Inc.", "sector": "Wireless · Fixed Wireless Access · 5G · Fiber (Lumos JV) · NASDAQ: TMUS",
+              "summary": "TMUS ◉ BUY — Ratio B 0.47× (36.0% downside / 76.0% upside). FCF machine at 8.9% yield ($18B annual FCF) trading 29.6% below ATH ($266.80). Service revenue accelerating: +8% FY2025, +11% Q1 2026 YoY. FWA at 8.5M subs (60% US market share); target 15M by 2030 — pure incremental EBITDA at zero added capex. 2.5GHz: 110MHz depth vs 40-60MHz for Verizon/AT&T — irreplaceable Sprint spectrum moat. Sprint synergies exceeded ($8B actual vs $7.5B target; NPV upgraded $43B → $70B+). $18.2B buyback authorization in 2026 alone (~9% of float). Dividend $4.08/yr (2.2%; growing ~10%/yr). Net debt $83B (2.45× EBITDA; lowest leverage among major US carriers). Cable MVNO risk: Xfinity/Spectrum Mobile took ~45% of 2025 industry phone adds — on T-Mobile's own network. Deutsche Telekom (53% owner) in early-stage merger talks — optionality not priced in. EV/EBITDA cross-check: Base 8× = $198/share; Bull 10× = $310. Analyst consensus $251-261 (+34-39%). Bear $120 · Base $250 · Bull $330 · XBull $450."},
     "CMCSA": {"ticker": "CMCSA", "signal": "◉ BUY", "signal_short": "BUY", "signal_color": "#4ade80",
               "price": 29.59, "date": "2026-06-02", "epp_gap_pct": -13.5, "ratio_b_fmt": "0.39x",
               "sector_group": "Telecoms/Media",
