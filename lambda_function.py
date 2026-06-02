@@ -102,6 +102,7 @@ MODELS = {
     "TTWO":  "ttwo_signal_model.py",
     "CMCSA": "cmcsa_signal_model.py",
     "TMUS":  "tmus_signal_model.py",
+    "VZ":    "vz_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -528,6 +529,11 @@ SUMMARY = {
               "sector_group": "Consumer Discretionary",
               "company": "Take-Two Interactive Software, Inc.", "sector": "Video Games · AAA Publishing · Mobile (Zynga) · NASDAQ: TTWO",
               "summary": "TTWO ◉ BUY — Ratio B 0.55× (33.1% downside / 60.6% upside). GTA VI launch stock. Nov 19, 2026 date CONFIRMED — $8.0-8.2B FY2027 guidance explicitly tied to it. FY2026 net bookings $6.72B (+19%); OCF $624M. GTA VI = ~36% of FY2027 NB (~$2.9B). Stock fell $264→$188 on May→Nov delay; recovered to $224, still 15% below avg analyst PT $279. GTA V Online: $5B+ lifetime, $1M+/day still in 2026 (13yr post-launch) — GTA VI Online template for decade-long live-service revenue. PC release 2027-28 = additional $1B+ not in guidance. Net CASH target FY2027 year-end (from $2.6B net debt today). First GAAP profitable year FY2027E ($0.55-$0.75). EPP floor $54 (+315.9% gap — large gap is expected for an event-driven stock 6 months pre-launch). Bear $150 (3rd delay or launch flop) · Base $260 (solid 20M units) · Bull $360 (blockbuster 30M+) · XBull $500 (generational title). BUY below $240. Watch: pre-order numbers June 2026, Metacritic score day-1, GTA Online day-1 availability."},
+    "VZ":    {"ticker": "VZ",    "signal": "◉ BUY",   "signal_short": "BUY",   "signal_color": "#4ade80",
+              "price": 47.81,  "date": "2026-06-02", "epp_gap_pct": 32.8, "ratio_b_fmt": "0.71x",
+              "sector_group": "Telecoms/Media",
+              "company": "Verizon Communications, Inc.", "sector": "Wireless · Fios Fiber · Frontier Fiber · 5G FWA · NYSE: VZ",
+              "summary": "VZ ◉ BUY — Ratio B 0.71× (33.1% downside / 46.4% upside). Cheapest US telecom: 9.4× forward P/E, 7.1× EV/EBITDA, 10.1% FCF yield. 5.9% dividend yield (22 consecutive annual increases; 56% FCF payout). $8.9B free after dividends. Q1 2026: EPS +7.6% YoY (best since 2021); EBITDA +6.7%; first positive Q1 phone adds in 13 years (+55K). Frontier acquisition closed Jan 20, 2026 ($20B; 30M fiber passings nationally; $1B+ synergy target by 2028). FWA: 6M+ subs; target 8-9M by 2028; total broadband 16.8M. Capital return: $25B buyback authorized; $21.5B+ FCF guided 2026. Risk: net debt ~$123B post-Frontier (2.6× EBITDA; target 2.0-2.25× by 2027). Cable MVNO headwind (Xfinity/Spectrum on T-Mobile network — no wholesale offset for VZ). C-band 230M+ POPs covered ($45B investment). Conservative 2yr: EPS $5.00 × 10× + $5.66 div = $55.66 → +16.4%. Analyst consensus $50-51; Morningstar FV $53. Bear $32 · Base $55 · Bull $70 · XBull $90."},
     "TMUS":  {"ticker": "TMUS",  "signal": "◉ BUY", "signal_short": "BUY", "signal_color": "#4ade80",
               "price": 187.53, "date": "2026-06-02", "epp_gap_pct": 69.7, "ratio_b_fmt": "0.47x",
               "sector_group": "Telecoms/Media",
