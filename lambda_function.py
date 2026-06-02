@@ -100,6 +100,7 @@ MODELS = {
     "KNEBV": "knebv_signal_model.py",
     "T":     "t_signal_model.py",
     "TTWO":  "ttwo_signal_model.py",
+    "CMCSA": "cmcsa_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -526,6 +527,11 @@ SUMMARY = {
               "sector_group": "Consumer Discretionary",
               "company": "Take-Two Interactive Software, Inc.", "sector": "Video Games · AAA Publishing · Mobile (Zynga) · NASDAQ: TTWO",
               "summary": "TTWO ◉ BUY — Ratio B 0.55× (33.1% downside / 60.6% upside). GTA VI launch stock. Nov 19, 2026 date CONFIRMED — $8.0-8.2B FY2027 guidance explicitly tied to it. FY2026 net bookings $6.72B (+19%); OCF $624M. GTA VI = ~36% of FY2027 NB (~$2.9B). Stock fell $264→$188 on May→Nov delay; recovered to $224, still 15% below avg analyst PT $279. GTA V Online: $5B+ lifetime, $1M+/day still in 2026 (13yr post-launch) — GTA VI Online template for decade-long live-service revenue. PC release 2027-28 = additional $1B+ not in guidance. Net CASH target FY2027 year-end (from $2.6B net debt today). First GAAP profitable year FY2027E ($0.55-$0.75). EPP floor $54 (+315.9% gap — large gap is expected for an event-driven stock 6 months pre-launch). Bear $150 (3rd delay or launch flop) · Base $260 (solid 20M units) · Bull $360 (blockbuster 30M+) · XBull $500 (generational title). BUY below $240. Watch: pre-order numbers June 2026, Metacritic score day-1, GTA Online day-1 availability."},
+    "CMCSA": {"ticker": "CMCSA", "signal": "◉ BUY", "signal_short": "BUY", "signal_color": "#4ade80",
+              "price": 29.59, "date": "2026-06-02", "epp_gap_pct": -13.5, "ratio_b_fmt": "0.39x",
+              "sector_group": "Telecoms/Media",
+              "company": "Comcast Corporation", "sector": "Cable & Broadband · NBCUniversal · Peacock · Sky Europe · NASDAQ: CMCSA",
+              "summary": "CMCSA ◉ BUY — Ratio B 0.39× (32.4% downside / 82.5% upside). RARE SIGNAL: stock trades BELOW EPP floor ($34.20; gap -13.5%). FCF machine at 7.1× adj EPS misread as secular-decline cable. Versant spinoff completed Jan 2, 2026 (CNBC/MSNBC/Bravo/USA/Syfy/E! → VSNT). Broadband: 31.255M subs; Q1 2026 losses 65K (best since Q4 2020, -117K YoY inflection). Xfinity Mobile: 9.3M lines (+1.5M record 2025); 15% penetration = 85% runway. Epic Universe opened May 2025: parks +19% Q2, +24% Q1 2026; first $1B+ EBITDA quarter. Peacock: 46M paid subs; >$2B quarterly revenue; Q2 2026 profitability guided. FY2025 capital return $11.7B ($6.8B buybacks + $4.9B div). Dividend $1.32/yr (4.7% yield). Net debt $85.1B (2.33× EBITDA). SOP intrinsic ~$52/share. Conservative 2yr: EPS $4.00 × 9× + $2.64 div = $38.64 → +30.6%. Bear $20 · Base $38 · Bull $54 · XBull $70."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
