@@ -105,6 +105,7 @@ MODELS = {
     "VZ":    "vz_signal_model.py",
     "EA":    "ea_signal_model.py",
     "CHTR":  "chtr_signal_model.py",
+    "WBD":   "wbd_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -551,6 +552,11 @@ SUMMARY = {
               "sector_group": "Telecoms/Media",
               "company": "Charter Communications, Inc.", "sector": "Cable & Broadband · Spectrum Mobile · Cox Merger · NASDAQ: CHTR",
               "summary": "CHTR ◉ BUY — Ratio B 0.29× (47.4% downside / 166.1% upside). HIGH-LEVERAGE DEEP VALUE: stock fell 67% from 52-week high ($437→$143) as market prices in broadband sub losses + Cox merger leverage fear. At $143: EV/EBITDA 5.0× (cable historical 8-10×), P/E 3.9×, FCF yield 25%+. FY2025: revenue $54.8B, EBITDA $22.7B (+0.6%), FCF $5.0B (+16%). Broadband: 29.6M subs, -120K/quarter (FWA + fiber pressure); mobile: 12.1M lines (+17% YoY). CAPEX CLIFF: $11.7B→$11.4B→<$8B (2028) = FCF inflects to $8-9B by 2027-2028. Network Evolution DOCSIS 4.0: WiFi 7 symmetrical multi-gig; 50% complete → 2027 full rollout; 95% of $94.3B debt matures beyond 2026 (avg 12.7yr). Cox merger (May 2025): FCC approved, California pending; adds 6.5M subs + ~$5B EBITDA; pro-forma leverage ~3.4× (vs standalone 4.15×); target 3.5-3.75× within 3yr. Buybacks suspended (was $5.4B in 2025). Analyst consensus PT $295 (2.1× current). HIGH-RISK BUY: size smaller than CMCSA/VZ given leverage. Conservative 2yr: EPS $42.5 × 5.5× + $2.80 div = $236 → +65.7% (+28.2%/yr). Bear $75 · Base $240 · Bull $380 · XBull $550."},
+    "WBD":  {"ticker": "WBD",  "signal": "◌ WATCHLIST", "signal_short": "WATCHLIST", "signal_color": "#60a5fa",
+              "price": 27.14, "date": "2026-06-03", "epp_gap_pct": 352.3, "ratio_b_fmt": "1.48x",
+              "sector_group": "Telecoms/Media",
+              "company": "Warner Bros. Discovery, Inc.", "sector": "Streaming (Max) · Studios · Linear TV (CNN, TNT, TBS) · Netflix Deal · NASDAQ: WBD",
+              "summary": "WBD ◌ WATCHLIST — Ratio B 1.48× (48.4% downside / 32.7% upside). DEAL ARB + MEDIA RENAISSANCE: stock tripled from $9.11 (52W low) to $27.14 on Netflix's $82.7B acquisition of Warner Bros. streaming+studios entity ($27.75/share equity; Dec 2025). Spread = 2.2% — most upside already priced in. Discovery Global (linear TV spin-off Q3 2026) equity uncertain (debt-laden). UNDERLYING BUSINESS EXCEPTIONAL: Studios $4B+ global box office in 2025 (Minecraft $961M, F1 $600M+, Superman $619M — first studio ever); Max 140M+ subs (Q1 2026), DTC EBITDA doubled to $1.37B (FY2025), $438M Q1 2026 (+29% YoY); debt paid down $20B+ to $33.5B (3.3x EBITDA). Linear TV structural drag: Networks EBITDA -21%, NBA rights lost ($1.1B hit). FLOOR: PSKY competing $30 all-cash offer (rejected as 'inferior'); Amazon and Apple interested; Netflix $5.8B breakup fee. WATCHLIST — BUY below $22 (Netflix deal = 26% upside). HOLD existing shares above $28 (PSKY floor). Bear $14 · Base $29 · Bull $36 · XBull $46."},
     "EA":   {"ticker": "EA",   "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 202.01, "date": "2026-06-03", "epp_gap_pct": 72.7, "ratio_b_fmt": "2.89x",
               "sector_group": "Consumer Discretionary",
