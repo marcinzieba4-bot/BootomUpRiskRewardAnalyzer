@@ -104,6 +104,7 @@ MODELS = {
     "TMUS":  "tmus_signal_model.py",
     "VZ":    "vz_signal_model.py",
     "EA":    "ea_signal_model.py",
+    "CHTR":  "chtr_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -545,6 +546,11 @@ SUMMARY = {
               "sector_group": "Telecoms/Media",
               "company": "Comcast Corporation", "sector": "Cable & Broadband · NBCUniversal · Peacock · Sky Europe · NASDAQ: CMCSA",
               "summary": "CMCSA ◉ BUY — Ratio B 0.39× (32.4% downside / 82.5% upside). RARE SIGNAL: stock trades BELOW EPP floor ($34.20; gap -13.5%). FCF machine at 7.1× adj EPS misread as secular-decline cable. Versant spinoff completed Jan 2, 2026 (CNBC/MSNBC/Bravo/USA/Syfy/E! → VSNT). Broadband: 31.255M subs; Q1 2026 losses 65K (best since Q4 2020, -117K YoY inflection). Xfinity Mobile: 9.3M lines (+1.5M record 2025); 15% penetration = 85% runway. Epic Universe opened May 2025: parks +19% Q2, +24% Q1 2026; first $1B+ EBITDA quarter. Peacock: 46M paid subs; >$2B quarterly revenue; Q2 2026 profitability guided. FY2025 capital return $11.7B ($6.8B buybacks + $4.9B div). Dividend $1.32/yr (4.7% yield). Net debt $85.1B (2.33× EBITDA). SOP intrinsic ~$52/share. Conservative 2yr: EPS $4.00 × 9× + $2.64 div = $38.64 → +30.6%. Bear $20 · Base $38 · Bull $54 · XBull $70."},
+    "CHTR": {"ticker": "CHTR", "signal": "◉ BUY",   "signal_short": "BUY",   "signal_color": "#4ade80",
+              "price": 142.79, "date": "2026-06-03", "epp_gap_pct": 90.4, "ratio_b_fmt": "0.29x",
+              "sector_group": "Telecoms/Media",
+              "company": "Charter Communications, Inc.", "sector": "Cable & Broadband · Spectrum Mobile · Cox Merger · NASDAQ: CHTR",
+              "summary": "CHTR ◉ BUY — Ratio B 0.29× (47.4% downside / 166.1% upside). HIGH-LEVERAGE DEEP VALUE: stock fell 67% from 52-week high ($437→$143) as market prices in broadband sub losses + Cox merger leverage fear. At $143: EV/EBITDA 5.0× (cable historical 8-10×), P/E 3.9×, FCF yield 25%+. FY2025: revenue $54.8B, EBITDA $22.7B (+0.6%), FCF $5.0B (+16%). Broadband: 29.6M subs, -120K/quarter (FWA + fiber pressure); mobile: 12.1M lines (+17% YoY). CAPEX CLIFF: $11.7B→$11.4B→<$8B (2028) = FCF inflects to $8-9B by 2027-2028. Network Evolution DOCSIS 4.0: WiFi 7 symmetrical multi-gig; 50% complete → 2027 full rollout; 95% of $94.3B debt matures beyond 2026 (avg 12.7yr). Cox merger (May 2025): FCC approved, California pending; adds 6.5M subs + ~$5B EBITDA; pro-forma leverage ~3.4× (vs standalone 4.15×); target 3.5-3.75× within 3yr. Buybacks suspended (was $5.4B in 2025). Analyst consensus PT $295 (2.1× current). HIGH-RISK BUY: size smaller than CMCSA/VZ given leverage. Conservative 2yr: EPS $42.5 × 5.5× + $2.80 div = $236 → +65.7% (+28.2%/yr). Bear $75 · Base $240 · Bull $380 · XBull $550."},
     "EA":   {"ticker": "EA",   "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 202.01, "date": "2026-06-03", "epp_gap_pct": 72.7, "ratio_b_fmt": "2.89x",
               "sector_group": "Consumer Discretionary",
