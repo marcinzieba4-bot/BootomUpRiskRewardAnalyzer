@@ -9,3 +9,6 @@ lambda_deploy.zip
 website/node_modules/
 website/.next/
 website/out/
+
+# Claude Code memory (contains credentials — never commit)
+CLAUDE.md
