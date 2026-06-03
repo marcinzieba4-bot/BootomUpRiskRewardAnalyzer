@@ -11,7 +11,7 @@ const KNOWN_TICKERS = [
   'JNJ','UNH','LLY','PKN','SYK','BSX','AMGN','ELV','VRTX','GILD','BMY','MA','V',
   'JPM','AXP','GS','WFC','SPGI','PGR','C','BX','FISV','SCHW','MRSH','CB','KKR',
   'PYPL','LIN','APD','SHW','PPG','FCX','ECL','BLK','MS','BAC','BRK','NEM','VMC',
-  'CTVA','DOW','LYB','NFLX','GOOGL','META','KNEBV','DNP','T','TTWO','CMCSA','TMUS','VZ',
+  'CTVA','DOW','LYB','NFLX','GOOGL','META','KNEBV','DNP','T','TTWO','CMCSA','TMUS','VZ','EA',
 ];
 
 export async function generateStaticParams() {

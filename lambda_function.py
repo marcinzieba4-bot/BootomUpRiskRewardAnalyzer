@@ -103,6 +103,7 @@ MODELS = {
     "CMCSA": "cmcsa_signal_model.py",
     "TMUS":  "tmus_signal_model.py",
     "VZ":    "vz_signal_model.py",
+    "EA":    "ea_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -544,6 +545,11 @@ SUMMARY = {
               "sector_group": "Telecoms/Media",
               "company": "Comcast Corporation", "sector": "Cable & Broadband · NBCUniversal · Peacock · Sky Europe · NASDAQ: CMCSA",
               "summary": "CMCSA ◉ BUY — Ratio B 0.39× (32.4% downside / 82.5% upside). RARE SIGNAL: stock trades BELOW EPP floor ($34.20; gap -13.5%). FCF machine at 7.1× adj EPS misread as secular-decline cable. Versant spinoff completed Jan 2, 2026 (CNBC/MSNBC/Bravo/USA/Syfy/E! → VSNT). Broadband: 31.255M subs; Q1 2026 losses 65K (best since Q4 2020, -117K YoY inflection). Xfinity Mobile: 9.3M lines (+1.5M record 2025); 15% penetration = 85% runway. Epic Universe opened May 2025: parks +19% Q2, +24% Q1 2026; first $1B+ EBITDA quarter. Peacock: 46M paid subs; >$2B quarterly revenue; Q2 2026 profitability guided. FY2025 capital return $11.7B ($6.8B buybacks + $4.9B div). Dividend $1.32/yr (4.7% yield). Net debt $85.1B (2.33× EBITDA). SOP intrinsic ~$52/share. Conservative 2yr: EPS $4.00 × 9× + $2.64 div = $38.64 → +30.6%. Bear $20 · Base $38 · Bull $54 · XBull $70."},
+    "EA":   {"ticker": "EA",   "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
+              "price": 202.01, "date": "2026-06-03", "epp_gap_pct": 72.7, "ratio_b_fmt": "2.89x",
+              "sector_group": "Consumer Discretionary",
+              "company": "Electronic Arts Inc.", "sector": "Video Games · Live Services · Sports (FC, Madden, CF) · Battlefield · NASDAQ: EA",
+              "summary": "EA ✕ AVOID — Ratio B 2.89× (25.7% downside / 8.9% upside). DEAL ARB: $210/share take-private by PIF/Silver Lake/Affinity Partners ($55B EV); shareholders approved 99% (Dec 22, 2025); CFIUS pending (outside date Sep 28, 2026). Stock at $202 = 4.0% upside if deal closes vs -20.8% downside if CFIUS blocks. Expected arb value: +0.25% (essentially zero alpha). Underlying business is EXCELLENT: FY2026 record net bookings $8.03B (+9.1%); FCF $2.32B (+24.7%); Battlefield 6 (7M sales day-3; franchise record); EA Sports FC 26 (12M copies in 3wk; Metacritic 84); Apex Legends (guided -40%, actual +double digits); College Football franchise ($1B+/yr). 71% live services recurring revenue; UT ecosystem $4.4B/yr. Deal implied 6.9x net bookings vs Activision paid 9.3x — buyers got a bargain. AVOID for new buyers at $202. HOLD for existing shareholders. Re-evaluate below $185 (better arb spread) or below $170 (standalone entry). Bear $150 (CFIUS block) · Base $210 (deal close) · Bull $220 · XBull $245."},
     "DNP":  {"ticker": "DNP",  "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 32.0,    "date": "2026-05-28", "epp_gap_pct": 142.4, "ratio_b_fmt": "1.82x",
               "sector_group": "Consumer Staples",
