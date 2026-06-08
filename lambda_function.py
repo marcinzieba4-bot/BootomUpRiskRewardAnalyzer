@@ -106,6 +106,7 @@ MODELS = {
     "EA":    "ea_signal_model.py",
     "CHTR":  "chtr_signal_model.py",
     "WBD":   "wbd_signal_model.py",
+    "PSX":   "psx_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -557,6 +558,11 @@ SUMMARY = {
               "sector_group": "Telecoms/Media",
               "company": "Warner Bros. Discovery, Inc.", "sector": "Streaming (Max) · Studios · Linear TV (CNN, TNT, TBS) · Netflix Deal · NASDAQ: WBD",
               "summary": "WBD ◌ WATCHLIST — Ratio B 1.48× (48.4% downside / 32.7% upside). DEAL ARB + MEDIA RENAISSANCE: stock tripled from $9.11 (52W low) to $27.14 on Netflix's $82.7B acquisition of Warner Bros. streaming+studios entity ($27.75/share equity; Dec 2025). Spread = 2.2% — most upside already priced in. Discovery Global (linear TV spin-off Q3 2026) equity uncertain (debt-laden). UNDERLYING BUSINESS EXCEPTIONAL: Studios $4B+ global box office in 2025 (Minecraft $961M, F1 $600M+, Superman $619M — first studio ever); Max 140M+ subs (Q1 2026), DTC EBITDA doubled to $1.37B (FY2025), $438M Q1 2026 (+29% YoY); debt paid down $20B+ to $33.5B (3.3x EBITDA). Linear TV structural drag: Networks EBITDA -21%, NBA rights lost ($1.1B hit). FLOOR: PSKY competing $30 all-cash offer (rejected as 'inferior'); Amazon and Apple interested; Netflix $5.8B breakup fee. WATCHLIST — BUY below $22 (Netflix deal = 26% upside). HOLD existing shares above $28 (PSKY floor). Bear $14 · Base $29 · Bull $36 · XBull $46."},
+    "PSX":  {"ticker": "PSX",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
+              "price": 183.08, "date": "2026-06-08", "epp_gap_pct": 177.4, "ratio_b_fmt": "0.93x",
+              "sector_group": "Energy",
+              "company": "Phillips 66", "sector": "Refining · Midstream (DCP) · Chemicals (CPChem JV) · Marketing & Specialties · NYSE: PSX",
+              "summary": "PSX ◎ ACCUMULATE — Ratio B 0.93× (26.3% downside / 28.4% upside). INTEGRATED ENERGY NEAR HIGHS: trading at $183 (near 52-wk high $191, up from $111 low) as refining margins surged ($10.11/bbl Q1'26 vs $6.81 Q1'25, +48% YoY) on structural capacity tightness (~550K bpd of US refinery closures within 18 months). Midstream scaling toward $4.5B EBITDA target by 2027 (DCP synergies $500mm realized vs $300mm target, +67% beat); CPChem JV and Marketing & Specialties add diversification. FY2025: revenue $145.5B, adj. earnings $2.6B ($6.44/sh, incl. $964mm LA-refinery D&A charge), GAAP EPS $10.90, CROIC 13.2% (2x peer avg). Balance sheet: $27.1B gross debt, Baa2/BBB- ratings. Capital returns: $5.08/yr dividend (+7% raise, ~2.8% yield), $269mm Q1 buybacks, $43B cumulative since 2012 spin-off, policy to return >50% of OCF. KEY CATALYST: Elliott Management ($2.5B stake, 'Streamline66' $40B unlock thesis) won 2 board seats in a split May-2025 proxy vote; March-2026 détente reached but core Midstream/Chemicals separation ask remains UNRESOLVED — a live, binary catalyst. Consensus PT $180.95 (range $138-213) ≈ current price = essentially fairly priced. Conservative 2yr: EPS $13.88 × 13.5x + $10.16 div = $197.54 → +7.9% (+3.9%/yr) on pure compounding (excludes Elliott-driven re-rating upside). QUALITY COMPOUNDER, NOT DEEP VALUE: add on weakness toward $150-160. Bear $135 · Base $190 · Bull $235 · XBull $290."},
     "EA":   {"ticker": "EA",   "signal": "✕ AVOID",  "signal_short": "AVOID",  "signal_color": "#f87171",
               "price": 202.01, "date": "2026-06-03", "epp_gap_pct": 72.7, "ratio_b_fmt": "2.89x",
               "sector_group": "Consumer Discretionary",
