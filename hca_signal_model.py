@@ -1,6 +1,6 @@
 """
 HCA Healthcare Inc. (NYSE: HCA) — Bottom-Up Risk/Reward Signal Model
-SIGNAL: ◎ ACCUMULATE  |  Ratio B: 0.95×  |  EPP Gap: +115.3%
+SIGNAL: ◎ ACCUMULATE  |  Ratio B: 0.95×  |  EPP Gap: +72.2%
 =======================================================================
 THE HOSPITAL NETWORK THAT PRINTS CASH AND BUYS ITSELF BACK: HCA is the
 largest for-profit hospital operator in the United States — 186 hospitals,
@@ -56,14 +56,14 @@ BULL           = 420.0
 XBULL          = 520.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: severe Medicaid cuts + labor inflation simultaneously; still
-# earns ~$12/sh on the scale purchasing, Sun Belt volume, and ASC base
-# PE_TROUGH: 12× reflects for-profit hospital under genuine policy stress —
-# not zero, because the physical infrastructure and community relationships
-# retain intrinsic value even under reimbursement pressure
-EPS_TROUGH     = 12.00
+# EPS_TROUGH: severe Medicaid cuts + labor inflation simultaneously; on a
+# ~$70B revenue base a 30-35% earnings decline gets to ~$15/sh — more
+# defensible than historical trough (~$12 in 2019 on $51B revenue base)
+# PE_TROUGH: 12× reflects for-profit hospital under genuine policy stress;
+# consistent with 10-13× range in prior stressed periods (2015-16, 2018)
+EPS_TROUGH     = 15.00
 PE_TROUGH      = 12.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $144.00
+EPP            = EPS_TROUGH * PE_TROUGH    # $180.00
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
 # FY2026E adj EPS ~$23.00 × 14× conservative multiple + $2.60 div
@@ -116,7 +116,7 @@ EV_MODEL = EPP * (1 + SCA_NET) * (1 + UPSIDE_PCT * WCS / 5)
 SUMMARY = (
     f"HCA ◎ ACCUMULATE — Ratio B {RATIO_B:.2f}× ({DOWNSIDE_PCT*100:.1f}% downside / "
     f"{UPSIDE_PCT*100:.1f}% upside) | EPP floor ${EPP:.0f} vs. price ${CURRENT_PRICE:.0f} "
-    f"(+{EPP_GAP_PCT:.1f}% gap) | "
+    f"(+{EPP_GAP_PCT:.1f}% gap, bear ${BEAR:.0f} is only 14% above EPP floor — thin cushion) | "
     "THE HOSPITAL NETWORK THAT PRINTS CASH AND BUYS ITSELF BACK: HCA is the largest for-profit "
     "hospital operator in the US — 186 hospitals, 2,000+ ambulatory sites, ~$70B revenue. "
     "The scale moat is real: HCA's purchasing power with device makers, pharma suppliers, and "
