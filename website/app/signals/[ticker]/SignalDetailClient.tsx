@@ -108,11 +108,14 @@ export default function SignalDetailClient() {
             </pre>
           </div>
         </section>
-      ) : (
-        <div className="text-vr-muted text-center py-16 rounded-xl border border-vr-border">
-          Report loading…
-        </div>
-      )}
+      ) : data?.summary ? (
+        <section className="mb-12">
+          <h2 className="font-serif text-xl font-bold text-vr-text mb-6">Signal Summary</h2>
+          <div className="rounded-xl border border-vr-border bg-vr-card p-6">
+            <p className="text-vr-muted text-sm leading-relaxed">{data.summary}</p>
+          </div>
+        </section>
+      ) : null}
 
       {/* Disclaimer */}
       <div className="mb-10 p-4 rounded-xl border border-vr-border bg-vr-card/50">
