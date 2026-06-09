@@ -1,332 +1,264 @@
-#!/usr/bin/env python3
 """
-MSFT Signal Model  v2
-──────────────────────
-Microsoft Corporation (NASDAQ: MSFT)  ·  Technology / Cloud
-
-New format: signal dashboard → bear anatomy → updated EPP →
-            conservative growth → volatility context → probability
+Microsoft Corporation (NASDAQ: MSFT) — Bottom-Up Risk/Reward Signal Model
+SIGNAL: ◎ ACCUMULATE  |  Ratio B: 1.00×  |  EPP Gap: +161.4%
+=======================================================================
+THE ENTERPRISE OPERATING SYSTEM FOR THE AI ERA: Microsoft has achieved
+something almost without precedent in the history of technology — it
+became the dominant platform of one era (personal computing, Windows/
+Office), was nearly killed by the internet transition (mid-2000s), and
+then became the dominant platform of the next era (enterprise cloud,
+Azure/Microsoft 365) under Satya Nadella. Now it is positioned to be
+the dominant platform of the third era: AI infrastructure and enterprise
+AI deployment. The OpenAI partnership — $13B+ invested, exclusive Azure
+deployment rights, 49% economic interest before a certain return threshold
+— gives Microsoft a structural position inside the most capable AI model
+development organization on earth, with the commercial distribution
+engine of Azure and Microsoft 365 to monetize it. The Copilot layer
+($30/seat/month on top of M365 E3/E5) across 400M+ paid enterprise seats
+is the most credible enterprise AI monetization story in existence. Azure
+at 22%+ cloud market share growing 30%+ is compounding share on AWS and
+building AI-specific infrastructure (Azure OpenAI Service, AI Foundry)
+that creates migration friction and switching costs exceeding even the
+already-high costs of moving workloads between cloud providers.
 """
-import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 415.0     # USD (NASDAQ: MSFT, ~May 2026)
-REQUIRED_RETURN = 0.15
-HORIZON_YEARS   = 2
+# ── Model identity ──────────────────────────────────────────────────────────
+TICKER         = "MSFT"
+COMPANY        = "Microsoft Corporation"
+ANALYSIS_DATE  = "2026-06-09"
+SECTOR         = "Technology · Cloud Infrastructure / Enterprise Software / AI Platforms · NASDAQ: MSFT"
+SECTOR_GROUP   = "Technology"
 
-SCENARIOS = {
-    #           EPS    mult  price   narrative
-    "BEAR":  (13.0,   22,   286,  "Azure slows <10%; Copilot stalls; AI margin drag"),
-    "BASE":  (18.0,   27,   486,  "Azure 20-25%; Copilot 50M seats; margins recover"),
-    "BULL":  (23.0,   32,   736,  "Azure 30%+; Copilot 100M+ seats; GitHub mainstream"),
-    "XBULL": (28.0,   35,   980,  "Azure #2→#1; Copilot standard; AGI adjacency re-rates"),
-}
+# ── Price & share data ──────────────────────────────────────────────────────
+CURRENT_PRICE  = 460.00          # USD — mid-2026
+ANNUAL_DIV     = 3.32            # USD/yr (~0.7% yield); 20+ consecutive years of growth
+SHARES_OUT_B   = 7.44            # billions; consistent buybacks
 
-# ── COPILOT MONETIZATION CALCULATOR (MSFT-specific structural feature) ───
-M365_COMMERCIAL_SEATS_M  = 400
-COPILOT_PAID_SEATS_M     =  30
-COPILOT_MONTHLY_USD      =  30
-GITHUB_COPILOT_SUBS_M    =   1.8
-GITHUB_COPILOT_ARPU_MO   =  19
+FW52_HIGH      = 510.00
+FW52_LOW       = 385.00
 
-def copilot_economics():
-    current_attach_pct = COPILOT_PAID_SEATS_M / M365_COMMERCIAL_SEATS_M * 100
-    current_arpu_yr    = COPILOT_MONTHLY_USD * 12
-    current_arr        = COPILOT_PAID_SEATS_M * 1e6 * current_arpu_yr / 1e9
-    rev_per_pct_attach = M365_COMMERCIAL_SEATS_M * 1e6 * current_arpu_yr / 100 / 1e9
-    bull_arr   = 100e6 * current_arpu_yr / 1e9
-    xbull_arr  = 200e6 * current_arpu_yr / 1e9
-    github_arr = GITHUB_COPILOT_SUBS_M * 1e6 * GITHUB_COPILOT_ARPU_MO * 12 / 1e9
-    return current_attach_pct, current_arr, rev_per_pct_attach, bull_arr, xbull_arr, github_arr
+# ── Scenario prices ───────────────────────────────────────────────────────────
+# BEAR  — AI monetization disappoints at enterprise scale: Copilot adoption
+#         stalls as productivity gains prove hard to demonstrate in ROI terms;
+#         Azure growth decelerates to mid-teens as hyperscaler capex cycle peaks
+#         and enterprise cloud spending moderates; OpenAI relationship fractures
+#         or open-source models (Llama, Mistral) commoditize AI inference;
+#         multiple compresses from 33× to 22× on growth deceleration; adj EPS
+#         $8-9 × 22× → ~$195-200; but Berkshire-class balance sheet prevents worse
+# BASE  — steady AI compounding: Azure grows 25-28%, M365 Copilot reaches
+#         15-20% enterprise penetration (60-80M seats at $30/month), adj EPS
+#         $15.50 × 30× + div → ~$468; Microsoft sustains premium multiple on
+#         durability of enterprise revenue and AI platform leadership
+# BULL  — AI monetization inflects: Copilot reaches 30%+ enterprise penetration;
+#         Azure AI workloads (inference, fine-tuning, RAG architectures) become
+#         the primary growth driver replacing traditional cloud lift-and-shift;
+#         adj EPS $20+ × 32×; GitHub Copilot enterprise expands; Dynamics 365
+#         wins ERP share from SAP/Oracle on AI differentiation
+# XBULL — Microsoft as AI operating system: Copilot becomes the default
+#         interface for enterprise work globally; Azure AI infrastructure
+#         earns toll-road economics on every enterprise AI deployment;
+#         adj EPS $26+ by FY2029; P/FCF re-rates as AI margins confirmed
+BEAR           = 295.0
+BASE           = 460.0
+BULL           = 625.0
+XBULL          = 800.0
 
-# ── PROXY SIGNALS ─────────────────────────────────────────────────────────
-# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
-#  current_value, higher_is_better, bear_narrative)
+# ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
+# EPS_TROUGH: AI monetization fails + cloud deceleration + macro enterprise
+# spending cuts; still earns ~$8 on the Windows/Office/Azure installed base
+# PE_TROUGH: 22× reflects Microsoft at genuine trough — the enterprise
+# software franchise retains premium multiple even under stress; not a
+# commodity business at trough, a temporarily slowed compounder
+EPS_TROUGH     = 8.00
+PE_TROUGH      = 22.0
+EPP            = EPS_TROUGH * PE_TROUGH    # $176.00
+
+# ── Conservative 2-year price estimate ────────────────────────────────────────
+# FY2026E adj EPS ~$15.50 × 30× conservative multiple + $3.32 div
+PE_CONSERVATIVE  = 30.0
+EPS_FY2026E      = 15.50
+CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $468.32
+
+# ── Signal computation ─────────────────────────────────────────────────────────
+DOWNSIDE_PCT   = (CURRENT_PRICE - BEAR) / CURRENT_PRICE
+UPSIDE_PCT     = (BULL - CURRENT_PRICE) / CURRENT_PRICE
+RATIO_B        = DOWNSIDE_PCT / UPSIDE_PCT
+
+EPP_GAP_PCT    = (CURRENT_PRICE - EPP) / EPP * 100
+CONS_RETURN    = (CONSERVATIVE_PRICE - CURRENT_PRICE) / CURRENT_PRICE * 100
+
+if   RATIO_B < 0.75:  SIGNAL = "◉ BUY";        SIGNAL_COLOR = "#4ade80"
+elif RATIO_B < 1.10:  SIGNAL = "◎ ACCUMULATE"; SIGNAL_COLOR = "#f0b429"
+elif RATIO_B < 1.75:  SIGNAL = "◌ WATCHLIST";  SIGNAL_COLOR = "#60a5fa"
+else:                 SIGNAL = "✕ AVOID";       SIGNAL_COLOR = "#f87171"
+
+# ── Bottom-up signal factors ────────────────────────────────────────────────────
 SIGNALS = [
-    ("Azure cloud revenue — YoY",        "% YoY",
-      8.0,  15, 25, 35,   35.0, True,
-     "AWS/GCP price war; Azure loses enterprise share"),
-
-    ("M365 Copilot paid seats",          "M seats",
-      1.0,   5, 15, 30,   30.0, True,
-     "Copilot ROI disappoints; enterprise stops renewals"),
-
-    ("Hyperscaler CapEx YoY",            "% YoY",
-      5.0,  10, 30, 60,   77.0, True,
-     "AI winter; hyperscalers slash compute spend"),
-
-    ("LinkedIn revenue — YoY",           "% YoY",
-     -2.0,   5, 12, 20,    8.0, True,
-     "Severe recession; enterprise hiring freeze"),
-
-    ("GitHub Copilot paid subscribers",  "M subs",
-      0.2,   0.5,  1,  2,   1.8, True,
-     "Open-source AI coding tools eliminate paid subs"),
-
-    ("Enterprise software spend YoY",    "% YoY",
-      0.0,   5, 10, 15,   14.7, True,
-     "Enterprise IT freeze; deferred renewals"),
-]
-WEIGHTS = [0.25, 0.20, 0.15, 0.15, 0.15, 0.10]
-
-STRUCTURAL_FACTORS = [
-    ("Azure enterprise incumbent switching cost",     1.5, 0.30),
-    ("OpenAI co-opetition / dependency risk",        -0.5, 0.20),
-    ("$65B CapEx cycle commitment risk",             -0.5, 0.20),
-    ("Copilot adoption ceiling uncertainty",         -0.5, 0.15),
-    ("Regulatory / antitrust pressure",              -0.3, 0.15),
+    ("azure_22pct_cloud_share_30pct_growth_and_ai_workload_infrastructure_leadership",  4.5, 0.22),
+    ("microsoft_365_enterprise_lock_in_400m_seats_and_copilot_30_per_seat_monetization",4.5, 0.22),
+    ("openai_partnership_exclusive_azure_deployment_and_ai_platform_first_mover",       4.0, 0.20),
+    ("github_100m_developer_network_and_linkedin_1b_professional_data_moat",            3.5, 0.18),
+    ("valuation_33_to_36x_forward_earnings_requires_sustained_15pct_plus_eps_growth",  3.0, 0.18),
 ]
 
-# ── UPDATED EPP ─────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 13.50   # FY2025E non-GAAP EPS
-EPP_MIN_PE       = 22.0    # min viable P/E (Azure/M365 recurring rev justifies 22x floor)
-EPP_HISTORICAL   = 298.0   # historical EPP v1 (from floor formula with 2022 trough)
-EPP_REGIME_NOTE  = "(floor raised from 18x 2020-era; recurring cloud rev = higher panic floor)"
+# ── Structural Competitive Advantage (SCA) factors ─────────────────────────────
+SCA_FACTORS = {
+    "azure_ai_infrastructure_openai_service_and_ai_foundry_switching_cost_compounding": +0.20,
+    "microsoft_365_400m_enterprise_seats_and_copilot_monetization_layer_locked_in":     +0.18,
+    "openai_13b_plus_investment_exclusive_azure_deployment_and_ai_model_access":        +0.16,
+    "github_100m_developers_and_linkedin_1b_professional_network_data_flywheel":        +0.10,
+    "windows_70pct_desktop_os_and_enterprise_identity_active_directory_foundation":     +0.08,
+    "33_to_36x_forward_pe_leaves_no_margin_of_safety_growth_miss_punishes_harshly":    -0.12,
+    "amazon_aws_first_mover_and_google_gemini_compete_for_ai_workloads_intensifying":  -0.08,
+    "regulatory_antitrust_scrutiny_on_openai_concentration_and_bundling_practices":    -0.06,
+}
+SCA_NET = sum(SCA_FACTORS.values())   # +0.46
 
-# ── CONSERVATIVE GROWTH (2-yr, base-minus assumptions) ───────────────────────
-CONS_SIGNALS = [
-    ("Azure cloud",            15.0, "+15%/yr (vs +35%; normalization scenario)"),
-    ("M365 Copilot paid",      15.0, "15M seats (vs 30M; slower adoption)"),
-    ("Hyperscaler CapEx",      25.0, "+25%/yr (vs +77%; capex cools)"),
-    ("LinkedIn revenue",        6.0, "+6%/yr (vs +8%; hiring stays subdued)"),
-    ("GitHub Copilot paid",     1.2, "1.2M subs (vs 1.8M; competition)"),
-    ("Enterprise software",     8.0, "+8%/yr (vs +14.7%; IT budget tighter)"),
-]
-CONS_EPS_CAGR    = 0.10    # 10%/yr conservative (vs consensus 15%)
-CONS_EXIT_PE     = 25.0    # 25x exit (moderate de-rate from current ~30x)
-CONS_DIVIDEND    = 3.32    # $3.32/yr dividend (growing ~10%/yr)
+# ── Weighted conviction score ──────────────────────────────────────────────────
+WCS = sum(s * w for (_, s, w) in SIGNALS) / sum(w for (_, _, w) in SIGNALS)
 
-# ── VOLATILITY ───────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT   = 0.25    # 2yr realized annualized vol
-VOL_BETA         = 0.90    # beta vs S&P 500
-VOL_52W_LOW      = 385.0   # approx
-VOL_52W_HIGH     = 468.0   # 52-week high
-VOL_DIVIDEND     = 3.32    # same as CONS_DIVIDEND
+# ── EV (model) ─────────────────────────────────────────────────────────────────
+EV_MODEL = EPP * (1 + SCA_NET) * (1 + UPSIDE_PCT * WCS / 5)
 
-# ── SCORING ───────────────────────────────────────────────────────────────
-def score_signal(val, base_f, bull_f, xbull_f, hib):
-    if hib:
-        if val >= xbull_f: return 4
-        if val >= bull_f:  return 3
-        if val >= base_f:  return 2
-        return 1
-    else:
-        if val <= xbull_f: return 4
-        if val <= bull_f:  return 3
-        if val <= base_f:  return 2
-        return 1
+# ── Summary string ─────────────────────────────────────────────────────────────
+SUMMARY = (
+    f"MSFT ◎ ACCUMULATE — Ratio B {RATIO_B:.2f}× ({DOWNSIDE_PCT*100:.1f}% downside / "
+    f"{UPSIDE_PCT*100:.1f}% upside) | EPP floor ${EPP:.0f} vs. price ${CURRENT_PRICE:.0f} "
+    f"(+{EPP_GAP_PCT:.1f}% gap) | "
+    "THE ENTERPRISE OPERATING SYSTEM FOR THE AI ERA: Microsoft achieved something unprecedented — "
+    "dominant platform of personal computing (Windows/Office), nearly killed by internet "
+    "transition, became dominant platform of enterprise cloud (Azure/M365) under Nadella, now "
+    "positioned as dominant platform of AI deployment. The OpenAI partnership ($13B+, exclusive "
+    "Azure deployment, 49% economic interest) gives Microsoft the most capable AI model "
+    "organization inside the most powerful enterprise distribution engine. "
+    "THE COPILOT MONETIZATION IS THE BIGGEST NEAR-TERM CATALYST: $30/seat/month on top of "
+    "M365 E3/E5 across 400M+ paid enterprise seats is the most credible enterprise AI "
+    "monetization in existence — even 20% penetration at $30/month adds $28B+ in high-margin "
+    "annual recurring revenue. AZURE AI IS THE INFRASTRUCTURE MOAT: Azure OpenAI Service, "
+    "AI Foundry, and inference endpoints create switching costs on top of already-high cloud "
+    "migration costs; every enterprise that trains or deploys on Azure becomes progressively "
+    "harder to move. GITHUB COPILOT AND LINKEDIN ADD NETWORK EFFECTS: 100M+ developers "
+    "default to GitHub for code; every Copilot-assisted line of code reinforces Azure/MSFT "
+    "toolchain stickiness. "
+    "THE HONEST RISK: 33-36× forward PE leaves essentially zero margin of safety — any "
+    "quarter where Azure growth decelerates below 25% or Copilot seat adoption misses "
+    "expectations triggers a meaningful de-rating; open-source AI models (Llama 4, Mistral) "
+    "commoditizing inference is the structural bear case; AWS and Google Cloud are formidable "
+    "AI infrastructure competitors with comparable model capabilities. "
+    f"Conservative 2yr: adj EPS ${EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}× + "
+    f"${ANNUAL_DIV:.2f} div = ${CONSERVATIVE_PRICE:.2f} → {CONS_RETURN:.1f}% — "
+    "thin at current price; BULL requires Copilot penetration inflecting and Azure AI "
+    "workloads becoming the primary growth driver. Accumulate steadily; add on AI-fear "
+    f"or macro-fear selloffs toward $395-415. "
+    f"Bear ${BEAR:.0f} · Base ${BASE:.0f} · Bull ${BULL:.0f} · XBull ${XBULL:.0f}."
+)
 
-ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
+# ─────────────────────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    print(f"\n{'='*72}")
+    print(f"  {TICKER}  |  {COMPANY}")
+    print(f"  {SECTOR}")
+    print(f"{'='*72}")
+    print(f"  Current Price:                                     ${CURRENT_PRICE:>8.2f}")
+    print(f"  Annual Dividend:                                   ${ANNUAL_DIV:>8.2f}")
+    print(f"  52-Week Range:                          ${FW52_LOW:.2f} – ${FW52_HIGH:.2f}")
+    print()
+    print(f"  Scenario Prices:")
+    print(f"    Bear:                                            ${BEAR:>8.2f}")
+    print(f"    Base:                                            ${BASE:>8.2f}")
+    print(f"    Bull:                                            ${BULL:>8.2f}")
+    print(f"    XBull:                                           ${XBULL:>8.2f}")
+    print()
+    print(f"  Downside (current → bear):                    {DOWNSIDE_PCT*100:>7.1f}%")
+    print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
+    print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
+    print()
+    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
+    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
+    print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
+    print()
+    print(f"  Conservative Price ({EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}×):         ${CONSERVATIVE_PRICE:>8.2f}  ({CONS_RETURN:>+.1f}%)")
+    print()
+    print(f"  Weighted Conviction Score:                         {WCS:>8.2f} / 5.0")
+    print(f"  SCA Net:                                           {SCA_NET:>+8.2f}")
+    print(f"  EV(model): ${EV_MODEL:>8.2f}   Upside: {(EV_MODEL-CURRENT_PRICE)/CURRENT_PRICE*100:>+.1f}%   Downside: -{DOWNSIDE_PCT*100:.1f}%")
+    print()
+    print(f"  SIGNAL:  {SIGNAL}   Ratio B: {RATIO_B:.2f}×   EPP Gap: {EPP_GAP_PCT:>+.1f}%")
+    print(f"{'='*72}")
+    print()
 
-def softmax_probs(composite, T=0.60):
-    centres = {"BEAR": 1.25, "BASE": 2.0, "BULL": 2.75, "XBULL": 3.75}
-    raw = {k: math.exp(-abs(composite - c) / T) for k, c in centres.items()}
-    tot = sum(raw.values())
-    return {k: v / tot for k, v in raw.items()}
+    print("  BOTTOM-UP SIGNAL FACTORS")
+    print(f"  {'Factor':<64} {'Conv':>4}  {'Wt':>5}")
+    print(f"  {'-'*72}")
+    for name, conv, wt in SIGNALS:
+        print(f"  {name:<64} {conv:>4.1f}  {wt:>5.0%}")
+    print()
 
-def expected_price(probs):
-    return sum(probs[k] * SCENARIOS[k][2] for k in probs)
+    print("  STRUCTURAL COMPETITIVE ADVANTAGE FACTORS")
+    for k, v in SCA_FACTORS.items():
+        print(f"  {k:<68} {v:>+.2f}")
+    print(f"  {'SCA NET':<68} {SCA_NET:>+.2f}")
+    print()
 
-def market_implied_composite(target_ev, tolerance=5.0):
-    for c in [x / 100 for x in range(100, 401)]:
-        if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
-            return round(c, 2), softmax_probs(c)
-    return None, None
-
-# ── COMPUTE ───────────────────────────────────────────────────────────────────
-W = 72
-
-scored = [
-    (name, unit, bv, bf, blf, xf, cv, hib, narr,
-     score_signal(cv, bf, blf, xf, hib), w)
-    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
-    in zip(SIGNALS, WEIGHTS)
-]
-proxy_composite  = sum(s * w for *_, s, w in scored)
-bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
-                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
-                       in zip(SIGNALS, WEIGHTS))
-sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite    = proxy_composite + sca
-proxy_probs      = softmax_probs(proxy_composite)
-bear_probs       = softmax_probs(bear_composite)
-proxy_ev         = expected_price(proxy_probs)
-bear_ev          = expected_price(bear_probs)
-
-market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
-mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
-mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
-
-# Updated EPP
-epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
-epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
-bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
-
-# Conservative growth
-cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
-cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
-cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
-cons_annual_ret = cons_total_ret / 2
-
-# Volatility
-sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
-vol_low_1yr       = CURRENT_PRICE - sigma_1yr
-vol_high_1yr      = CURRENT_PRICE + sigma_1yr
-sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
-
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
-
-attach_pct, curr_arr, rev_per_pp, bull_arr, xbull_arr, github_arr = copilot_economics()
-
-# ── OUTPUT ────────────────────────────────────────────────────────────────────
-print()
-print("═" * W)
-print(f"  MSFT  ·  Microsoft Corporation  ·  ${CURRENT_PRICE:.2f}  ·  Technology / Cloud")
-print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
-print("═" * W)
-
-# Copilot monetization
-print(f"\n  COPILOT MONETIZATION CALCULATOR  (the $30/seat revenue engine)")
-print("  " + "─" * (W-2))
-print(f"  M365 commercial seat base:          {M365_COMMERCIAL_SEATS_M:>4}M seats  (addressable)")
-print(f"  Copilot for M365 paid seats:        {COPILOT_PAID_SEATS_M:>4}M seats  ({attach_pct:.1f}% attach rate)")
-print(f"  Annual price per seat:              ${COPILOT_MONTHLY_USD*12:>3}/yr  (${COPILOT_MONTHLY_USD}/mo)")
-print(f"  Current Copilot ARR:                ${curr_arr:.1f}B / yr")
-print(f"  Incremental ARR per 1pp attach:     ${rev_per_pp:.2f}B / pp  ← the compounding lever")
-print(f"  ─────────────────────────────────────────────────────")
-print(f"  BASE scenario (50M seats, 12.5%):   ${50e6*COPILOT_MONTHLY_USD*12/1e9:.1f}B ARR")
-print(f"  BULL scenario (100M seats, 25%):    ${bull_arr:.0f}B ARR")
-print(f"  XBULL scenario (200M seats, 50%):   ${xbull_arr:.0f}B ARR  ← adds another Azure")
-print(f"\n  GitHub Copilot:  {GITHUB_COPILOT_SUBS_M:.1f}M paid subs × ${GITHUB_COPILOT_ARPU_MO}/mo  =  ${github_arr:.2f}B ARR")
-print(f"  → At 80%+ YoY growth, GitHub Copilot crosses $1B ARR within 12 months.")
-
-# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
-print(f"\n  ① SIGNAL DASHBOARD")
-print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
-print("  " + "─" * (W-2))
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u = unit.split()[0] if unit else ""
-    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.1f}{u}"
-    bf_s  = f"{bf:.0f}{u}"
-    blf_s = f"{blf:.0f}{u}"
-    xf_s  = f"{xf:.0f}{u}"
-    cv_s  = f"{cv:+.0f}{u}"
-    bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
-
-print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
-    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
-          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
-
-print(f"\n  Structural factors:")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    arrow = "  +" if score > 0 else "  -"
-    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
-
-# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
-print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u      = unit.split()[0] if unit else ""
-    cv_s   = f"{cv:+.0f}{u}"
-    bv_s   = f"{bv:+.0f}{u}"
-    move   = bv - cv
-    move_s = f"{move:+.0f}{u}"
-    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
-    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
-
-bear_model_price = expected_price(bear_probs)
-print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
-      f"~${bear_model_price:.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
-print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: Azure growth decelerates below 15% (cost of AI compute exceeds revenue growth)")
-print(f"  + Copilot fails to achieve 50M seats. EPS flow-through thesis breaks; market re-rates to 22x on 'legacy software' multiple.")
-
-# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
-print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
-print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP)")
-print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
-print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
-
-# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
-print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
-for sname, sval, srat in CONS_SIGNALS:
-    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
-               if name.lower().startswith(sname.split()[0].lower()))
-    diff = sval - cur
-    diff_s = f"{diff:+.0f}"
-    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
-
-print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × "
-      f"(1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
-if CONS_DIVIDEND > 0:
-    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share  (${CONS_DIVIDEND:.2f} growing 3%/yr)")
-print(f"  {'─'*60}")
-print(f"  Conservative 2yr price:    ${cons_price_2yr:.0f}  "
-      f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} "
-      f"from ${CURRENT_PRICE:.0f})")
-print(f"  Conservative total return: {cons_total_ret:+.0f}% over 2yr  "
-      f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
-print(f"\n  Even at conservative 10% EPS growth and 25x exit, MSFT should return ~14%/yr from current.")
-print(f"  The 'floor' is defined by M365 seat count × ARR growth — essentially a compounding base.")
-
-# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
-print(f"\n  ⑤ VOLATILITY CONTEXT")
-print("  " + "─" * (W-2))
-print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
-if VOL_DIVIDEND > 0:
-    print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  "
-          f"(yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
-else:
-    print(f"  Dividend:             None")
-print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
-print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}")
-print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
-      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
-print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  "
-      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
-print(f"  {'─'*60}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
-      f"~{sigma_needed_bear:.1f}σ price move  "
-      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  Slight-below-market beta (0.90) reflects defensive cloud recurring revenue.")
-print(f"  Low dividend yield (0.8%) — MSFT is a growth/reinvestment story, not income.")
-
-# ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
-print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
-print("  " + "─" * (W-2))
-print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
-      f"{'Gap':>6}  Description")
-for k in ["BEAR", "BASE", "BULL", "XBULL"]:
-    eps, mult, price, narr = SCENARIOS[k]
-    pp  = proxy_probs[k]
-    mp  = mkt_probs[k] if mkt_probs else 0
-    gap_pp = pp - mp
-    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
-          f"{gap_pp*100:>+6.1f}pp  {narr}")
-
-print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
-print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
-      f"${cons_price_2yr + cons_div_2yr:.0f} total value")
-
-print()
-print("═" * W)
+    print(f"{'='*72}")
+    print()
+    print("  WHY THIS IS AN ◎ ACCUMULATE, NOT A ◌ WATCHLIST OR ◉ BUY")
+    print()
+    print("  NOT ◉ BUY because:")
+    print("  • 33-36× forward PE at $460 leaves no margin of safety: the")
+    print("    entire bull case — Copilot at 30%+ penetration, Azure AI")
+    print("    acceleration, OpenAI relationship sustaining — must materialize")
+    print("    to justify the current multiple; if any one of these disappoints")
+    print("    the stock reprices quickly to 25-28× on revised estimates")
+    print("  • Conservative 2yr return (+1.8%) is the thinnest in the Technology")
+    print("    universe: at $460 you are paying for the bull case, not the base")
+    print("    case; the 0.7% dividend yield does nothing to compensate for")
+    print("    the valuation risk carried")
+    print("  • Open-source AI model commoditization is the real bear: Llama 4,")
+    print("    Mistral, and DeepSeek-class models running on commodity hardware")
+    print("    could commoditize the inference layer that Azure AI monetizes;")
+    print("    if foundation model capability becomes a utility, Azure's AI")
+    print("    premium pricing erodes — not the infrastructure, but the AI")
+    print("    value-add that justifies the premium over AWS")
+    print()
+    print("  NOT ◌ WATCHLIST because:")
+    print("  • SCA_NET = +0.46 is among the highest in the entire model")
+    print("    universe: Azure + M365 + OpenAI + GitHub + LinkedIn represents")
+    print("    a concentration of durable competitive advantages that is")
+    print("    genuinely exceptional — each moat reinforces the others through")
+    print("    data flywheels, switching costs, and network effects")
+    print("  • The Copilot monetization math is enormous: 400M M365 seats ×")
+    print("    20% Copilot penetration × $30/month × 12 = $28.8B incremental")
+    print("    ARR at ~70%+ gross margin — this is not a speculative scenario,")
+    print("    it is a mathematical outcome of enterprise adoption reaching a")
+    print("    fraction of the installed base")
+    print("  • Nadella's track record of platform transitions removes execution")
+    print("    risk discount: Azure from zero to #2 in cloud in a decade,")
+    print("    Teams from zero to 320M+ DAU in 4 years, GitHub Copilot from")
+    print("    zero to the default developer AI tool in 2 years — this")
+    print("    management team has demonstrated AI platform execution")
+    print("  • Ratio B 1.00× — perfectly balanced downside/upside — sits at")
+    print("    the center of ACCUMULATE; the quality of the business earns")
+    print("    the premium, the valuation prevents the BUY rating")
+    print()
+    print("  THE THESIS IN ONE PARAGRAPH:")
+    print("  Microsoft is the only company that has successfully navigated two")
+    print("  platform transitions (PC → Cloud → AI) from a position of")
+    print("  dominance. At $460 — 35.9% from bear, 35.9% from bull — you are")
+    print("  paying a full price for the best-positioned enterprise AI platform")
+    print("  on earth. SCA_NET +0.46, WCS 3.95 — the highest conviction scores")
+    print("  in the technology sector in this model. The conservative case is")
+    print("  thin (+1.8%); the bull and xbull cases require Copilot monetization")
+    print("  inflecting and Azure AI compounding. Accumulate steadily; add hard")
+    print("  on any AI-disappointment or macro selloffs toward $395-415 where")
+    print("  the risk/reward improves meaningfully.")
+    print()
+    print(f"{'='*72}")
+    print()
+    print("  SUMMARY (for API / website display):")
+    print()
+    import textwrap
+    for line in textwrap.wrap(SUMMARY, width=70):
+        print(f"  {line}")
+    print()
