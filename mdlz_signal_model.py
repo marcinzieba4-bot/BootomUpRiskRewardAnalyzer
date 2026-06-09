@@ -57,20 +57,18 @@ BULL           = 84.0
 XBULL          = 104.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: sustained cocoa spike + volume declines; still earns ~$2.20
-# on the brand portfolio — Oreo/Ritz/belVita biscuit margins are insulated
-# from cocoa and provide an earnings floor even in a chocolate margin crisis
-# PE_TROUGH: 16× reflects premium snack franchise even at trough — these
-# brands don't become value businesses, the multiple floor is higher than
-# a commodity food company
-EPS_TROUGH     = 2.20
-PE_TROUGH      = 16.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $35.20
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# PE_PESSIMISTIC: 14× — premium snack franchise (Oreo, Cadbury) even at cocoa
+# crisis floor trades 14-16×; de-rated vs. 19-21× normal for uncertainty;
+# applied to current adj EPS $3.30/sh reflecting actual business earnings power
+PE_PESSIMISTIC = 14.0
+EPS_FY2026E    = 3.30
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 14 × $3.30 = $46.20
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
 # FY2026E adj EPS ~$3.30 × 19× conservative multiple + $1.70 div
 PE_CONSERVATIVE  = 19.0
-EPS_FY2026E      = 3.30
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $64.40
 
 # ── Signal computation ─────────────────────────────────────────────────────────
@@ -163,8 +161,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic:                                    {PE_PESSIMISTIC:>8.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):             ${EPP:>8.2f}")
     print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()

@@ -56,18 +56,19 @@ BULL           = 320.0
 XBULL          = 388.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: recession + industrial volume decline; essential water
-# treatment for food safety and regulatory compliance still earns ~$4.00/sh
-# PE_TROUGH: 25× — premium maintained even at trough for recurring service model
-EPS_TROUGH     = 4.00
-PE_TROUGH      = 25.0
-EPP            = EPS_TROUGH * PE_TROUGH     # $100.00
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# PE_PESSIMISTIC: 14× — water treatment franchise under industrial recession;
+# essential service for food safety / compliance retains a premium floor even
+# at trough; applied to current adj EPS $7.25/sh (the actual business earnings)
+EPS_FY2026E    = 7.25
+PE_PESSIMISTIC = 14.0
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 14 × $7.25 = $101.50
 
 # ── Conservative 2-year price estimate ───────────────────────────────────────
 # FY2027E adj EPS ~$7.25 × 34× conservative multiple + $2.28 div
 # Conservative case essentially flat (+0.3%) — water tech at fair value
 PE_CONSERVATIVE  = 34.0
-EPS_FY2026E      = 7.25
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV   # $248.78
 
 # ── Signal computation ────────────────────────────────────────────────────────
@@ -166,8 +167,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic:                                    {PE_PESSIMISTIC:>8.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):             ${EPP:>8.2f}")
     print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()

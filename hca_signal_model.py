@@ -56,19 +56,18 @@ BULL           = 420.0
 XBULL          = 520.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: severe Medicaid cuts + labor inflation simultaneously; on a
-# ~$70B revenue base a 30-35% earnings decline gets to ~$15/sh — more
-# defensible than historical trough (~$12 in 2019 on $51B revenue base)
-# PE_TROUGH: 12× reflects for-profit hospital under genuine policy stress;
-# consistent with 10-13× range in prior stressed periods (2015-16, 2018)
-EPS_TROUGH     = 15.00
-PE_TROUGH      = 12.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $180.00
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# PE_PESSIMISTIC: 10× — for-profit hospital under policy stress (Medicaid cuts)
+# trades 10-13×; 10× is the genuine historical floor (2015-16, 2018 stress);
+# applied to current adj EPS $23/sh which itself reflects real scale economics
+PE_PESSIMISTIC = 10.0
+EPS_FY2026E    = 23.00
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 10 × $23.00 = $230.00
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
 # FY2026E adj EPS ~$23.00 × 14× conservative multiple + $2.60 div
 PE_CONSERVATIVE  = 14.0
-EPS_FY2026E      = 23.00
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $324.60
 
 # ── Signal computation ─────────────────────────────────────────────────────────
@@ -166,8 +165,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic:                                    {PE_PESSIMISTIC:>8.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):             ${EPP:>8.2f}")
     print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()

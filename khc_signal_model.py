@@ -60,19 +60,18 @@ BULL           = 48.0
 XBULL          = 62.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: organic decline + further impairments + private label erosion;
-# still earns ~$1.50 — Heinz ketchup global condiment share does not go to
-# zero even in the worst scenario; the brands have real residual value
-# PE_TROUGH: 11× reflects a packaged food company with confirmed structural
-# challenges but not bankruptcy risk; Berkshire stake provides a floor bid
-EPS_TROUGH     = 1.50
-PE_TROUGH      = 11.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $16.50
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# PE_PESSIMISTIC: 9× — packaged food turnaround with confirmed structural
+# challenges (SCA_NET -0.12, only negative in universe) trades 9-11× at
+# distress; Berkshire 26% stake provides floor bid; applied to current $2.80/sh
+PE_PESSIMISTIC = 9.0
+EPS_FY2026E    = 2.80
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 9 × $2.80 = $25.20
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
 # FY2026E adj EPS ~$2.80 × 12× conservative multiple + $1.60 div
 PE_CONSERVATIVE  = 12.0
-EPS_FY2026E      = 2.80
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $35.20
 
 # ── Signal computation ─────────────────────────────────────────────────────────
@@ -168,8 +167,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic:                                    {PE_PESSIMISTIC:>8.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):             ${EPP:>8.2f}")
     print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()

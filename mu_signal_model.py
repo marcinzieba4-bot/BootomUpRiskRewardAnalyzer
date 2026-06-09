@@ -57,24 +57,21 @@ BULL           = 1420.0
 XBULL          = 1850.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# NOTE: EPP framework is imperfect for cyclicals — in FY2023, Micron had
-# adj EPS of -$5.36. The trough here reflects a moderate HBM cycle peak/trough
-# scenario where long-term supply agreements dampen (but don't eliminate) the
-# commodity bust. A genuine Samsung-triggers-oversupply scenario floors near
-# book value (~$120-150/sh at current asset base), not this EPP.
-# EPS_TROUGH: HBM agreements provide partial floor; $8 assumes ~75% EPS decline
-# from current $34 run rate — a severe but not catastrophic scenario
-# PE_TROUGH: 18× — Micron is no longer a pure commodity; HBM agreements,
-# oligopoly structure, and CHIPS Act strategic value command a higher floor
-EPS_TROUGH     = 8.00
-PE_TROUGH      = 18.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $144.00
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# NOTE: EPP is imperfect for cyclicals — FY2023 actual adj EPS was -$5.36.
+# Using current peak-cycle EPS $34 × a deeply pessimistic 5× = $170 reflects
+# the floor near book value when the cycle fully inverts. HBM supply agreements
+# dampen but don't eliminate the bust; genuine floor ~$120-150 (near book).
+# A 5× multiple on current earnings is the honest cycle-inversion assumption.
+PE_PESSIMISTIC = 5.0
+EPS_FY2026E    = 34.00
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 5 × $34.00 = $170.00
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
 # FY2026E adj EPS ~$34.00 × 28× conservative cycle-peak multiple + $1.80 div
 # 28× is conservative for a company at cycle peak with HBM supply contracted
 PE_CONSERVATIVE  = 28.0
-EPS_FY2026E      = 34.00
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $953.80
 
 # ── Signal computation ─────────────────────────────────────────────────────────
@@ -166,8 +163,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough (HBM-floored):                          ${EPS_TROUGH:>8.2f}  (FY2023 actual: -$5.36)")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic (cycle inversion):                  {PE_PESSIMISTIC:>8.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):             ${EPP:>8.2f}")
     print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}  (limited for cyclicals)")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()

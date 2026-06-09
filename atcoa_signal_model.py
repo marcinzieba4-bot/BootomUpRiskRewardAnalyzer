@@ -55,16 +55,18 @@ XBULL          = 275.0
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
 # EPS_TROUGH: severe industrial + semiconductor downturn simultaneously;
 # still earns 5.0 SEK on the compressor aftermarket and service base alone
-# PE_TROUGH: 22× reflects the quality of the recurring revenue floor —
-# this is not a cyclical at 10×, it is a franchise at trough
-EPS_TROUGH     = 5.00
-PE_TROUGH      = 22.0
-EPP            = EPS_TROUGH * PE_TROUGH    # 110.0 SEK
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# PE_PESSIMISTIC: 16× — quality Swedish industrial (compressors/vacuum tech)
+# retains a meaningful floor multiple even in semiconductor capex downturn;
+# 65% aftermarket/service floor defends margins; applied to current EPS 7 SEK
+EPS_FY2026E    = 7.00
+PE_PESSIMISTIC = 16.0
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 16 × 7.00 = 112.0 SEK
 
 # ── Conservative 2-year price estimate (SEK) ──────────────────────────────
 # FY2026E adj EPS ~7.0 SEK × 24× conservative multiple + 4.0 div
 PE_CONSERVATIVE  = 24.0
-EPS_FY2026E      = 7.00
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # 172.0 SEK
 
 # ── Signal computation ─────────────────────────────────────────────────────
@@ -161,8 +163,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                                    {EPS_TROUGH:>10.2f} SEK")
-    print(f"  PE Trough:                                       {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic:                                {PE_PESSIMISTIC:>10.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):       {EPP:>10.2f} SEK")
     print(f"  EPP (Earnings Power Price):                    {EPP:>10.2f} SEK")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()

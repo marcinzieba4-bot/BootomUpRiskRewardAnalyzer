@@ -64,19 +64,18 @@ BULL           = 625.0
 XBULL          = 800.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: AI monetization fails + cloud deceleration + macro enterprise
-# spending cuts; still earns ~$8 on the Windows/Office/Azure installed base
-# PE_TROUGH: 22× reflects Microsoft at genuine trough — the enterprise
-# software franchise retains premium multiple even under stress; not a
-# commodity business at trough, a temporarily slowed compounder
-EPS_TROUGH     = 8.00
-PE_TROUGH      = 22.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $176.00
+# EPP = pessimistic_PE × current EPS — what is this business worth at a
+# de-rated multiple on what it actually earns today?
+# PE_PESSIMISTIC: 25× — even in a Microsoft crash (COVID low, 2022 bear) the
+# stock never traded below 25× forward earnings; enterprise software franchise
+# retains premium multiple; 25× is a genuine historical floor, not theoretical
+PE_PESSIMISTIC = 25.0
+EPS_FY2026E    = 15.50
+EPP            = PE_PESSIMISTIC * EPS_FY2026E    # 25 × $15.50 = $387.50
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
 # FY2026E adj EPS ~$15.50 × 30× conservative multiple + $3.32 div
 PE_CONSERVATIVE  = 30.0
-EPS_FY2026E      = 15.50
 CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $468.32
 
 # ── Signal computation ─────────────────────────────────────────────────────────
@@ -173,8 +172,8 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
+    print(f"  PE Pessimistic:                                    {PE_PESSIMISTIC:>8.1f}×")
+    print(f"  EPP (Pessimistic PE × current EPS):             ${EPP:>8.2f}")
     print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()
