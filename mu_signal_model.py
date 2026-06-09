@@ -1,84 +1,81 @@
 """
 Micron Technology Inc. (NASDAQ: MU) — Bottom-Up Risk/Reward Signal Model
-SIGNAL: ◎ ACCUMULATE  |  Ratio B: 0.88×  |  EPP Gap: +285.7%
+SIGNAL: ◎ ACCUMULATE  |  Ratio B: 0.99×  |  EPP Gap: +558.3%
 =======================================================================
-THE MEMORY CYCLICAL THAT BECAME AN AI INFRASTRUCTURE PLAY: Micron is
-the only US-headquartered DRAM and NAND memory manufacturer — one of
-three companies on earth (Samsung, SK Hynix, Micron) with the scale
-and technology to produce leading-edge DRAM at volume. For most of its
-history, Micron was the pure expression of commodity cyclicality: DRAM
-pricing collapsed 60-80% in downturns, earnings went deeply negative
-(adj EPS -$5.36 in FY2023), and the stock oscillated between 0.5× and
-2.5× book value based on where the industry was in the supply/demand
-cycle. HBM (High Bandwidth Memory) is changing this. HBM is the memory
-architecture that sits between the GPU die and DRAM in AI accelerators
-like NVIDIA's H100/H200/B200 — and it is not a commodity. HBM requires
-extreme manufacturing precision (stacking 12+ DRAM dies with through-
-silicon vias), is supplied under negotiated long-term agreements with
-hyperscalers and NVIDIA, and commands 5-8× the ASP of standard DRAM.
-SK Hynix is the current HBM leader supplying NVIDIA's highest-end chips;
-Micron is ramping HBM3E aggressively and has qualified for Nvidia supply.
-The strategic question: does HBM transform Micron from a commodity
-cyclical into a partially-differentiated AI infrastructure supplier?
+THE COMMODITY CYCLICAL THAT BECAME AN AI INFRASTRUCTURE GIANT: Micron
+has completed one of the most dramatic business transformations in
+semiconductor history. Q2 FY2026: $23.86B revenue (+196% YoY), $12.20
+adj EPS per quarter, 74.9% gross margins — numbers that would have seemed
+impossible 18 months ago when Micron was posting -$5.36 adj EPS in FY2023.
+The driver: HBM4 (High Bandwidth Memory 4th generation) for AI accelerators.
+Micron has completed agreements on price and volume for its entire
+calendar 2026 HBM supply. The HBM TAM that was $35B in 2025 is now
+forecast to reach $100B by 2028 — two years ahead of prior estimates.
+Micron, SK Hynix, and Samsung are the only three companies on earth
+capable of supplying HBM at volume; with AI infrastructure capex from
+hyperscalers (Google, Microsoft, Meta, Amazon) and chip designers (NVIDIA,
+AMD, Broadcom, Marvell) running at $200B+/year and accelerating, HBM
+supply is perpetually tight. Micron's HBM4 now leads on performance and
+power efficiency for key workloads. The company that used to be a
+commodity memory cyclical is now an AI infrastructure critical-path
+supplier with 74.9% gross margins and a near-trillion dollar market cap.
 """
 
 # ── Model identity ──────────────────────────────────────────────────────────
 TICKER         = "MU"
 COMPANY        = "Micron Technology Inc."
 ANALYSIS_DATE  = "2026-06-09"
-SECTOR         = "Technology · DRAM & NAND Memory / HBM AI Accelerator Memory / Data Center Storage · NASDAQ: MU"
+SECTOR         = "Technology · HBM AI Accelerator Memory / DRAM & NAND / Data Center Infrastructure · NASDAQ: MU"
 SECTOR_GROUP   = "Technology"
 
 # ── Price & share data ──────────────────────────────────────────────────────
-CURRENT_PRICE  = 108.00          # USD — mid-2026; mid-cycle with HBM ramp in progress
-ANNUAL_DIV     = 0.46            # USD/yr (~0.4% yield); capital return primarily buybacks
-SHARES_OUT_B   = 1.11            # billions
+CURRENT_PRICE  = 948.00          # USD — June 2026; near-trillion market cap
+ANNUAL_DIV     = 1.80            # USD/yr (~0.2% yield); capital return via buybacks
+SHARES_OUT_B   = 1.03            # billions
 
-FW52_HIGH      = 135.00
-FW52_LOW       = 78.00
+FW52_HIGH      = 1080.00         # all-time high reached June 3, 2026
+FW52_LOW       = 280.00          # approximate trough before AI-driven re-rating
 
 # ── Scenario prices ───────────────────────────────────────────────────────────
-# BEAR  — memory cycle peaks and rolls over: PC/mobile DRAM oversupply
-#         re-emerges as Samsung restarts aggressive capacity additions;
-#         AI capex cycle pauses as hyperscalers digest infrastructure build;
-#         HBM pricing compresses as SK Hynix and Samsung ramp capacity;
-#         China export restriction expansion cuts Micron's China revenue
-#         (~10% of sales); EPS turns negative again; stock approaches book
-# BASE  — HBM ramp sustains: AI data center DRAM demand keeps utilization
-#         high; Micron's HBM3E qualifies for NVIDIA B200/B300 supply;
-#         NAND pricing recovers; adj EPS $9.00 × 12× + div → ~$108
-# BULL  — HBM leadership narrows: Micron closes the gap with SK Hynix in
-#         HBM capacity and quality; AI infrastructure spending sustains at
-#         $200B+/yr; CHIPS Act fabs come online improving cost structure;
-#         adj EPS $14+ × 13-14×; structural re-rating from commodity to
-#         AI infrastructure supplier
-# XBULL — memory becomes geopolitically strategic: US government actively
-#         supports Micron as the only domestic DRAM supplier; HBM3E/HBM4
-#         qualification across all major AI chip suppliers; adj EPS $18+ by 2028
-BEAR           = 58.0
-BASE           = 108.0
-BULL           = 165.0
-XBULL          = 215.0
+# BEAR  — HBM cycle peaks and compresses: Samsung executes aggressive HBM
+#         capacity additions 2027-2028; hyperscaler AI capex moderates from
+#         peak levels; HBM pricing compresses 40-50% from peak; Micron's
+#         EPS falls from $34 toward $8-12; multiple compresses to 18-22× on
+#         cyclical fears; stock revisits pre-AI-boom levels in 2-year view
+# BASE  — HBM sustains: entire 2026 supply contracted, 2027 supply agreements
+#         being signed now; HBM TAM grows to $65-75B; FY2027E EPS $42-48;
+#         multiple holds at 22-28× on AI infrastructure premium; ~$948
+# BULL  — HBM TAM hits $100B early: AI inference scaling drives HBM demand
+#         beyond training; Micron HBM4/HBM5 sustains technology leadership;
+#         FY2028E EPS $60+; multiple 24× → ~$1,440
+# XBULL — memory becomes as strategic as GPUs: HBM shortage persists through
+#         2029; Micron's US manufacturing (CHIPS Act) commands government-
+#         supported premium; EPS $80+ by FY2029; P/E re-rates to 28-30×
+BEAR           = 480.0
+BASE           = 948.0
+BULL           = 1420.0
+XBULL          = 1850.0
 
 # ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# NOTE: EPP framework is imperfect for deep cyclicals — Micron had adj EPS
-# of -$5.36 in FY2023. The floor used here assumes HBM mix prevents a full
-# commodity collapse; trough reflects a moderate cycle down with HBM providing
-# a floor, not the FY2023-style structural bust scenario.
-# EPS_TROUGH: moderate cycle down; HBM long-term agreements provide partial
-# floor; data center DRAM does not collapse with commodity DRAM
-# PE_TROUGH: 14× on trough — cyclicals often trade near book value at trough
-# (~$50/sh); this floor is consistent with 0.5-0.6× book historical trough
-EPS_TROUGH     = 2.00
-PE_TROUGH      = 14.0
-EPP            = EPS_TROUGH * PE_TROUGH    # $28.00
+# NOTE: EPP framework is imperfect for cyclicals — in FY2023, Micron had
+# adj EPS of -$5.36. The trough here reflects a moderate HBM cycle peak/trough
+# scenario where long-term supply agreements dampen (but don't eliminate) the
+# commodity bust. A genuine Samsung-triggers-oversupply scenario floors near
+# book value (~$120-150/sh at current asset base), not this EPP.
+# EPS_TROUGH: HBM agreements provide partial floor; $8 assumes ~75% EPS decline
+# from current $34 run rate — a severe but not catastrophic scenario
+# PE_TROUGH: 18× — Micron is no longer a pure commodity; HBM agreements,
+# oligopoly structure, and CHIPS Act strategic value command a higher floor
+EPS_TROUGH     = 8.00
+PE_TROUGH      = 18.0
+EPP            = EPS_TROUGH * PE_TROUGH    # $144.00
 
 # ── Conservative 2-year price estimate ────────────────────────────────────────
-# FY2026E adj EPS ~$9.00 × 12× conservative cycle multiple + $0.46 div
-# 12× reflects mid-cycle memory, not peak; conservative assumes no premium
-PE_CONSERVATIVE  = 12.0
-EPS_FY2026E      = 9.00
-CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $108.46
+# FY2026E adj EPS ~$34.00 × 28× conservative cycle-peak multiple + $1.80 div
+# 28× is conservative for a company at cycle peak with HBM supply contracted
+PE_CONSERVATIVE  = 28.0
+EPS_FY2026E      = 34.00
+CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV  # $953.80
 
 # ── Signal computation ─────────────────────────────────────────────────────────
 DOWNSIDE_PCT   = (CURRENT_PRICE - BEAR) / CURRENT_PRICE
@@ -95,23 +92,25 @@ else:                 SIGNAL = "✕ AVOID";       SIGNAL_COLOR = "#f87171"
 
 # ── Bottom-up signal factors ────────────────────────────────────────────────────
 SIGNALS = [
-    ("hbm3e_ramp_nvidia_qualification_and_ai_accelerator_memory_structural_demand",    4.0, 0.25),
-    ("dram_three_supplier_oligopoly_rational_pricing_and_capacity_discipline",         3.5, 0.20),
-    ("chips_act_us_manufacturing_strategic_positioning_and_government_support",        3.0, 0.15),
-    ("memory_commodity_cycle_volatility_negative_eps_in_downturns_boom_bust_pattern",  2.0, 0.22),
-    ("sk_hynix_hbm_leadership_gap_china_export_restrictions_geopolitical_risk",        2.0, 0.18),
+    ("hbm4_leadership_entire_2026_supply_contracted_and_100b_tam_by_2028",             4.5, 0.25),
+    ("74pct_gross_margins_23b_quarterly_revenue_and_ai_infrastructure_critical_path",  4.5, 0.22),
+    ("three_supplier_oligopoly_rational_hbm_pricing_and_supply_agreement_visibility",  4.0, 0.18),
+    ("memory_commodity_cycle_risk_samsung_capacity_and_hyperscaler_capex_moderation",  2.5, 0.20),
+    ("chips_act_us_manufacturing_and_china_export_restriction_geopolitical_factor",    3.5, 0.15),
 ]
 
 # ── Structural Competitive Advantage (SCA) factors ─────────────────────────────
 SCA_FACTORS = {
-    "hbm_5_to_8x_asp_premium_and_long_term_supply_agreements_with_hyperscalers":       +0.16,
-    "dram_oligopoly_only_3_suppliers_with_leading_edge_process_technology":            +0.14,
-    "only_us_headquartered_dram_manufacturer_chips_act_and_geopolitical_tailwind":     +0.10,
-    "memory_commodity_cycle_severe_downturns_negative_eps_destroys_equity_value":      -0.16,
-    "sk_hynix_hbm_technology_leadership_and_entrenched_nvidia_supply_relationship":    -0.12,
-    "china_export_restriction_risk_and_potential_expansion_to_broader_china_revenue":  -0.10,
+    "hbm4_technology_leadership_and_entire_2026_supply_under_long_term_agreement":     +0.18,
+    "74pct_gross_margins_confirming_hbm_premium_not_commodity_economics":              +0.14,
+    "three_supplier_oligopoly_only_samsung_sk_hynix_micron_at_hbm_scale":             +0.12,
+    "chips_act_us_fab_only_domestic_dram_maker_strategic_government_value":            +0.10,
+    "memory_commodity_cycle_severe_downturns_fiveyear2023_adj_eps_minus_5_36":        -0.14,
+    "samsung_capacity_risk_and_hyperscaler_ai_capex_cycle_peak_moderation":           -0.08,
+    "25b_plus_annual_capex_requirement_capital_intensity_constrains_fcf_at_scale":    -0.06,
+    "china_export_restrictions_potential_expansion_revenue_exposure":                  -0.08,
 }
-SCA_NET = sum(SCA_FACTORS.values())   # +0.02
+SCA_NET = sum(SCA_FACTORS.values())   # +0.18
 
 # ── Weighted conviction score ──────────────────────────────────────────────────
 WCS = sum(s * w for (_, s, w) in SIGNALS) / sum(w for (_, _, w) in SIGNALS)
@@ -123,31 +122,27 @@ EV_MODEL = EPP * (1 + SCA_NET) * (1 + UPSIDE_PCT * WCS / 5)
 SUMMARY = (
     f"MU ◎ ACCUMULATE — Ratio B {RATIO_B:.2f}× ({DOWNSIDE_PCT*100:.1f}% downside / "
     f"{UPSIDE_PCT*100:.1f}% upside) | EPP floor ${EPP:.0f} vs. price ${CURRENT_PRICE:.0f} "
-    f"(+{EPP_GAP_PCT:.1f}% gap — EPP framework limited for deep cyclicals; trough assumes "
-    f"HBM floor; FY2023 actual adj EPS was -$5.36) | "
-    "THE MEMORY CYCLICAL THAT BECAME AN AI INFRASTRUCTURE PLAY: Micron is the only US-"
-    "headquartered DRAM and NAND manufacturer — one of three companies on earth (Samsung, "
-    "SK Hynix, Micron) with the scale to produce leading-edge DRAM at volume. HBM is changing "
-    "the business: High Bandwidth Memory for AI accelerators (NVIDIA H100/H200/B200) is not a "
-    "commodity — it requires stacking 12+ DRAM dies with through-silicon vias, is priced at "
-    "5-8× standard DRAM ASP, and is supplied under negotiated long-term agreements. Micron's "
-    "HBM3E is qualifying for NVIDIA supply, closing the gap with SK Hynix. "
-    "THE OLIGOPOLY FLOOR IS REAL: three suppliers (Samsung, SK Hynix, Micron) with hundreds "
-    "of billions in fab investment create a structural capacity discipline that commodity "
-    "markets with 10+ suppliers cannot achieve — rational pricing in the medium term is "
-    "more achievable than in prior memory cycles. "
-    "CHIPS ACT STRATEGIC POSITIONING: Micron is investing $40B+ in US fabs (Idaho HBM, "
-    "New York NAND) backed by CHIPS Act grants — the geopolitical value of domestic US "
-    "memory production is rising as semiconductor supply chains become strategic. "
-    "THE HONEST RISK: memory remains deeply cyclical — Micron had adj EPS of -$5.36 in "
-    "FY2023 and the stock fell to $50; if AI capex cycles peak and Samsung restarts "
-    "aggressive DRAM capacity additions, pricing collapses; SK Hynix's HBM technology lead "
-    "is real and entrenched at NVIDIA; China export restrictions (10%+ of revenue) could "
-    "expand; EPP framework is imperfect here — the 'floor' in a genuine bust is near book "
-    "value (~$50), not EPP. SCA_NET = +0.02: HBM premium barely offsets commodity cyclicality. "
+    f"(+{EPP_GAP_PCT:.1f}% gap — EPP limited for cyclicals; genuine bust floor near book "
+    f"~$150; FY2023 actual adj EPS was -$5.36) | "
+    "THE COMMODITY CYCLICAL THAT BECAME AN AI INFRASTRUCTURE GIANT: Micron has transformed — "
+    "Q2 FY2026: $23.86B revenue (+196% YoY), $12.20 adj EPS/quarter, 74.9% gross margins. "
+    "HBM4 (High Bandwidth Memory 4th gen) is the driver: entire 2026 HBM supply contracted "
+    "under long-term agreements; HBM TAM growing from $35B (2025) to $100B (2028, two years "
+    "ahead of prior forecast). Only Samsung, SK Hynix, and Micron can supply HBM at volume — "
+    "the oligopoly controls the memory layer of every AI accelerator on earth. "
+    "MICRON NOW LEADS ON HBM4: HBM4 performance and power efficiency leadership confirmed; "
+    "74.9% gross margins prove this is no longer commodity pricing. "
+    "AI CAPEX CREATES MULTI-YEAR CONTRACTED VISIBILITY: hyperscalers (Google, Microsoft, "
+    "Meta, Amazon) and chip designers (NVIDIA, AMD, Broadcom) running $200B+/yr AI infra "
+    "capex; each H200/B200/B300 GPU requires HBM3E/HBM4; supply perpetually tight. "
+    "THE HONEST RISK: memory remains cyclical at its core — Samsung's capacity decisions "
+    "can flood HBM supply in 2027-2028; hyperscaler capex cycles have peaked before; "
+    "the -49% bear case at $480 is not hypothetical (FY2023 Micron: -$5.36 adj EPS, "
+    "stock at $50); EPP at $144 is a mid-cycle floor, not a bust floor. "
     f"Conservative 2yr: adj EPS ${EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}× + "
     f"${ANNUAL_DIV:.2f} div = ${CONSERVATIVE_PRICE:.2f} → {CONS_RETURN:.1f}% — essentially "
-    "flat mid-cycle; position sizing must account for potential -46% bear scenario. "
+    "flat at current peak cycle multiples; BULL requires HBM TAM trajectory to hold. "
+    "Size for the -49% bear being a recurring cyclical outcome. "
     f"Bear ${BEAR:.0f} · Base ${BASE:.0f} · Bull ${BULL:.0f} · XBull ${XBULL:.0f}."
 )
 
@@ -159,7 +154,7 @@ if __name__ == "__main__":
     print(f"{'='*72}")
     print(f"  Current Price:                                     ${CURRENT_PRICE:>8.2f}")
     print(f"  Annual Dividend:                                   ${ANNUAL_DIV:>8.2f}")
-    print(f"  52-Week Range:                          ${FW52_LOW:.2f} – ${FW52_HIGH:.2f}")
+    print(f"  52-Week Range:                      ${FW52_LOW:.2f} – ${FW52_HIGH:.2f}")
     print()
     print(f"  Scenario Prices:")
     print(f"    Bear:                                            ${BEAR:>8.2f}")
@@ -171,12 +166,12 @@ if __name__ == "__main__":
     print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
     print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
     print()
-    print(f"  EPS Trough:                         ${EPS_TROUGH:>8.2f}  (FY2023 actual: -$5.36)")
+    print(f"  EPS Trough (HBM-floored):                          ${EPS_TROUGH:>8.2f}  (FY2023 actual: -$5.36)")
     print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
-    print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}  (limited for deep cyclicals)")
+    print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}  (limited for cyclicals)")
     print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
     print()
-    print(f"  Conservative Price ({EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}×):           ${CONSERVATIVE_PRICE:>8.2f}  ({CONS_RETURN:>+.1f}%)")
+    print(f"  Conservative Price ({EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}×):       ${CONSERVATIVE_PRICE:>8.2f}  ({CONS_RETURN:>+.1f}%)")
     print()
     print(f"  Weighted Conviction Score:                         {WCS:>8.2f} / 5.0")
     print(f"  SCA Net:                                           {SCA_NET:>+8.2f}")
@@ -204,52 +199,53 @@ if __name__ == "__main__":
     print("  WHY THIS IS AN ◎ ACCUMULATE, NOT A ◌ WATCHLIST OR ◉ BUY")
     print()
     print("  NOT ◉ BUY because:")
-    print("  • Memory remains deeply cyclical and the downside is -46%:")
-    print("    the bear case at $58 is not hypothetical — Micron traded at")
-    print("    $50-60 in mid-2024 and at $50 in 2022; these are not tail")
-    print("    events, they are recurring outcomes in a commodity cycle with")
-    print("    long lead times, lumpy capacity additions, and no pricing power")
-    print("    when supply exceeds demand by even a few percent")
-    print("  • SK Hynix's HBM technology lead is real: SK Hynix supplies the")
-    print("    bulk of NVIDIA's HBM for H100/H200/B200; Micron is qualifying")
-    print("    for supply but is not yet the preferred vendor; if NVIDIA's AI")
-    print("    GPU roadmap continues to demand SK Hynix-quality HBM for the")
-    print("    highest-margin products, Micron remains in a secondary position")
-    print("    in the most valuable segment of its addressable market")
-    print("  • Conservative 2yr essentially flat (+0.4%): position sizing must")
-    print("    account for the wide asymmetry and genuine negative EPS scenario")
+    print("  • The -49% bear case is a real cyclical risk, not a tail event:")
+    print("    Micron went from -$5.36 adj EPS in FY2023 to $34 annualized")
+    print("    in FY2026 — the amplitude of memory cycles is extreme; Samsung")
+    print("    has a history of absorbing losses to maintain market share and")
+    print("    flooding capacity when pricing peaks; if Samsung executes an")
+    print("    aggressive HBM ramp in 2027-2028, pricing compresses rapidly")
+    print("  • Conservative 2yr +0.6% — stock is priced at peak cycle multiples:")
+    print("    at $948 on $34 FY2026E EPS (28× forward), there is no margin")
+    print("    of safety on a base-case scenario; you need the HBM TAM to")
+    print("    continue tracking toward $100B AND Micron to maintain share")
+    print("    AND hyperscaler AI capex to remain elevated — three variables")
+    print("    that must all hold simultaneously")
+    print("  • $25B+ annual capex burns most of the operating cash flow:")
+    print("    at $25B capex and ~$40B in operating cash flow, free cash flow")
+    print("    yield is relatively modest at current price; the bull case")
+    print("    requires capex to eventually normalize relative to revenue")
     print()
     print("  NOT ◌ WATCHLIST because:")
-    print("  • HBM is structurally different from commodity DRAM: 5-8× ASP")
-    print("    premium, long-term supply agreements, and limited supplier count")
-    print("    (only Samsung, SK Hynix, Micron can produce it at scale) means")
-    print("    HBM revenue is not subject to the same spot-pricing collapse")
-    print("    as standard DRAM; as AI infrastructure capex persists, HBM")
-    print("    grows as a share of Micron's revenue and provides a structural")
-    print("    earnings floor that prior cycles lacked")
-    print("  • The oligopoly is getting more rational: post-2022 bust, all")
-    print("    three DRAM suppliers have demonstrated more capacity discipline;")
-    print("    Samsung's 2024 leadership change reinforced pricing rationality;")
-    print("    three-supplier markets with $30B+ fab barriers to entry tend")
-    print("    toward rational pricing over time")
-    print("  • Geopolitical value is rising: Micron is the only US DRAM maker;")
-    print("    CHIPS Act grants, DoD interest in domestic memory supply chains,")
-    print("    and Taiwan risk in TSMC/SK Hynix supply chains make Micron's US")
-    print("    manufacturing a strategic asset with government-supported floor")
-    print("  • Ratio B 0.88× — 46.3% downside / 52.8% upside — is genuinely")
-    print("    asymmetric; the wide absolute ranges reflect cyclical reality")
+    print("  • 74.9% gross margins confirm the structural transformation:")
+    print("    commodity DRAM earns 30-40% gross margins at cycle peak;")
+    print("    74.9% is AI infrastructure pricing — Micron is now on the")
+    print("    critical path of every AI accelerator with essentially zero")
+    print("    substitution risk in the 12-18 month window; this is not")
+    print("    a temporary margin spike, it reflects contracted HBM pricing")
+    print("  • Entire 2026 HBM supply is contracted — unusual visibility:")
+    print("    memory companies historically had zero long-term pricing")
+    print("    visibility; HBM supply agreements represent a fundamental")
+    print("    change in the customer relationship from spot commodity to")
+    print("    strategic infrastructure partnership")
+    print("  • HBM TAM trajectory ($35B → $100B by 2028) is driven by AI")
+    print("    scaling laws that are independent of Micron's execution —")
+    print("    each next-generation GPU requires more HBM bandwidth; the")
+    print("    demand is physics-driven, not market-driven")
+    print("  • Ratio B 0.99× — 49.4% downside / 49.8% upside — balanced;")
+    print("    the wide absolute range reflects the cyclical reality")
     print()
     print("  THE THESIS IN ONE PARAGRAPH:")
-    print("  Micron is a cyclical commodity business being partially transformed")
-    print("  by HBM — the AI accelerator memory that commands 5-8× standard")
-    print("  DRAM pricing and is supplied under long-term agreements. At $108,")
-    print("  you are buying a mid-cycle DRAM price with HBM ramp optionality,")
-    print("  protected by a three-supplier oligopoly and CHIPS Act geopolitical")
-    print("  tailwinds. SCA_NET = +0.02: the HBM premium and oligopoly barely")
-    print("  offset the commodity cycle and China risks. Size for the -46%")
-    print("  bear case being a real recurring outcome, not a tail event.")
-    print("  Add aggressively if the stock approaches $72-82 on a cycle")
-    print("  downturn — that is where Ratio B approaches ◉ BUY territory.")
+    print("  Micron has completed a business transformation that most analysts")
+    print("  thought impossible: from -$5.36 EPS in FY2023 to $34 annualized")
+    print("  EPS in FY2026, powered by HBM4 leadership and AI infrastructure")
+    print("  demand. At $948, the stock prices in continued HBM TAM growth")
+    print("  toward $100B by 2028 — a thesis supported by AI scaling laws")
+    print("  and $200B+ annual hyperscaler capex. The bear case at $480 is")
+    print("  a -49% drop that memory investors know is always possible when")
+    print("  Samsung decides to defend market share with aggressive capacity.")
+    print("  Accumulate. Size for the cycle risk. Add hard if Samsung-driven")
+    print("  fears push the stock toward $650-720.")
     print()
     print(f"{'='*72}")
     print()
