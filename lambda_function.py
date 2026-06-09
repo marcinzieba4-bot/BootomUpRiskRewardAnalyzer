@@ -156,7 +156,6 @@ MODELS = {
     "TGT":   "tgt_signal_model.py",
     "MNST":  "mnst_signal_model.py",
     "KHC":   "khc_signal_model.py",
-    "MSFT":  "msft_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -168,11 +167,6 @@ SUMMARY = {
               "sector_group": "Healthcare",
               "company": "Intuitive Surgical",     "sector": "Surgical Robotics · Medical Devices",
               "summary": "Best-in-class surgical robotics with the da Vinci 5 platform driving a multi-year procedure growth cycle. 27% above EPP floor with balanced risk/reward."},
-    "MSFT": {"ticker": "MSFT", "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
-              "price": 417.42, "date": "2026-05-20", "epp_gap_pct": 44.3,  "ratio_b_fmt": "1.22x",
-              "sector_group": "Technology",
-              "company": "Microsoft",               "sector": "Enterprise Software · Cloud · AI",
-              "summary": "Azure and Copilot execution strong, but market composite slightly above proxy. Watch for AI monetisation evidence before adding."},
     "MU":   {"ticker": "MU",   "signal": "✕ AVOID",      "signal_short": "AVOID",      "signal_color": "#f87171",
               "price": 120.55, "date": "2026-05-21", "epp_gap_pct": 119.8, "ratio_b_fmt": "N/A",
               "sector_group": "Technology",
