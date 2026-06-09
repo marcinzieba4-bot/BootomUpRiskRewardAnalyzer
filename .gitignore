@@ -13,3 +13,4 @@ website/out/
 # Claude Code memory (contains credentials — never commit)
 CLAUDE.md
 lambda_deployment.zip
+lambda.zip
