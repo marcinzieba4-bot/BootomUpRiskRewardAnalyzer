@@ -99,20 +99,13 @@ export default function SignalDetailClient() {
       <div className="gold-divider mb-10" />
 
       {/* Full analyst report */}
-      {report ? (
+      {report && report !== data.summary ? (
         <section className="mb-12">
           <h2 className="font-serif text-xl font-bold text-vr-text mb-6">Analyst Report</h2>
           <div className="rounded-xl border border-vr-border bg-vr-card overflow-hidden">
             <pre className="p-6 text-xs leading-relaxed text-vr-muted font-mono overflow-x-auto whitespace-pre-wrap break-words">
               {report}
             </pre>
-          </div>
-        </section>
-      ) : data?.summary ? (
-        <section className="mb-12">
-          <h2 className="font-serif text-xl font-bold text-vr-text mb-6">Signal Summary</h2>
-          <div className="rounded-xl border border-vr-border bg-vr-card p-6">
-            <p className="text-vr-muted text-sm leading-relaxed">{data.summary}</p>
           </div>
         </section>
       ) : null}

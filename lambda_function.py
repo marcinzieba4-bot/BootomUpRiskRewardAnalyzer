@@ -15,6 +15,7 @@ S3_BUCKET = "s3bucketmz"
 S3_PREFIX = "veerock-signals/"
 
 MODELS = {
+<<<<<<< HEAD
     # Only tickers with a .py model file present in the deployment package.
     # Tickers with SUMMARY-only entries (no .py) are served from the SUMMARY
     # dict directly — see the handler below.
@@ -58,12 +59,24 @@ MODELS = {
     "SLB":   "slb_signal_model.py",
     "KMI":   "kmi_signal_model.py",
     "MPC":   "mpc_signal_model.py",
+=======
+    "APD":   "apd_signal_model.py",
+    "AVGO":  "avgo_signal_model.py",
+>>>>>>> f24e663 (Fix signal detail pages: serve full content for all tickers)
     "BKR":   "bkr_signal_model.py",
-    "TRGP":  "trgp_signal_model.py",
-    "VLO":   "vlo_signal_model.py",
-    "OXY":   "oxy_signal_model.py",
+    "CAT":   "cat_signal_model.py",
+    "CHTR":  "chtr_signal_model.py",
+    "CMCSA": "cmcsa_signal_model.py",
+    "COP":   "cop_signal_model.py",
+    "CTVA":  "ctva_signal_model.py",
+    "CVX":   "cvx_signal_model.py",
+    "DNP":   "dnp_signal_model.py",
+    "DOW":   "dow_signal_model.py",
+    "EA":    "ea_signal_model.py",
     "FANG":  "fang_signal_model.py",
+    "GOOGL": "googl_signal_model.py",
     "HAL":   "hal_signal_model.py",
+<<<<<<< HEAD
     "DVN":   "dvn_signal_model.py",
     "GE":    "ge_signal_model.py",
     "RTX":   "rtx_signal_model.py",
@@ -98,6 +111,36 @@ MODELS = {
     "TGT":   "tgt_signal_model.py",
     "MNST":  "mnst_signal_model.py",
     "KHC":   "khc_signal_model.py",
+=======
+    "KMI":   "kmi_signal_model.py",
+    "KNEBV": "knebv_signal_model.py",
+    "LYB":   "lyb_signal_model.py",
+    "META":  "meta_signal_model.py",
+    "MPC":   "mpc_signal_model.py",
+    "MSFT":  "msft_signal_model.py",
+    "MU":    "mu_signal_model.py",
+    "NEM":   "nem_signal_model.py",
+    "NFLX":  "nflx_signal_model.py",
+    "OKE":   "oke_signal_model.py",
+    "ORCL":  "orcl_signal_model.py",
+    "OXY":   "oxy_signal_model.py",
+    "PPG":   "ppg_signal_model.py",
+    "PSX":   "psx_signal_model.py",
+    "PYPL":  "pypl_signal_model.py",
+    "SAP":   "sap_signal_model.py",
+    "SLB":   "slb_signal_model.py",
+    "SYK":   "syk_signal_model.py",
+    "T":     "t_signal_model.py",
+    "TMUS":  "tmus_signal_model.py",
+    "TRGP":  "trgp_signal_model.py",
+    "TTWO":  "ttwo_signal_model.py",
+    "VLO":   "vlo_signal_model.py",
+    "VMC":   "vmc_signal_model.py",
+    "VZ":    "vz_signal_model.py",
+    "WBD":   "wbd_signal_model.py",
+    "WMB":   "wmb_signal_model.py",
+    "XOM":   "xom_signal_model.py",
+>>>>>>> f24e663 (Fix signal detail pages: serve full content for all tickers)
 }
 
 # Warm-invocation memory cache
@@ -950,8 +993,13 @@ def lambda_handler(event, context):
         if ticker not in SUMMARY:
             return resp(404, {"error": f"unknown ticker: {ticker}"})
         if ticker not in MODELS:
+<<<<<<< HEAD
             # SUMMARY-only ticker — return metadata without a full report
             return resp(200, {**SUMMARY[ticker], "report": "", "part2": "", "part3": ""})
+=======
+            d = SUMMARY[ticker]
+            return resp(200, {**d, "report": d.get("summary", ""), "part2": "", "part3": ""})
+>>>>>>> f24e663 (Fix signal detail pages: serve full content for all tickers)
         data = get_report(ticker)
         return resp(200, data)
 
