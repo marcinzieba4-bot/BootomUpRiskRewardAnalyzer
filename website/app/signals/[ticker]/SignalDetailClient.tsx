@@ -120,7 +120,7 @@ export default function SignalDetailClient() {
       {/* Disclaimer */}
       <div className="mb-10 p-4 rounded-xl border border-vr-border bg-vr-card/50">
         <p className="text-vr-faint text-xs text-center">
-          <span className="text-vr-gold font-semibold">EPP</span> = current EPS × min-viable trough P/E (floor, not target).{' '}
+          <span className="text-vr-gold font-semibold">EPP</span> = pessimistic P/E × current EPS (floor, not target).{' '}
           <span className="text-vr-gold font-semibold">Ratio B</span> = downside to EPP ÷ upside at conservative exit multiple.
           All prices USD. Not financial advice.
         </p>
