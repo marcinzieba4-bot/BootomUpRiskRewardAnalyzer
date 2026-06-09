@@ -142,6 +142,7 @@ MODELS = {
     "WMT":   "wmt_signal_model.py",
     "DSV":   "dsv_signal_model.py",
     "PG":    "pg_signal_model.py",
+    "KO":    "ko_signal_model.py",
 }
 
 # Warm-invocation memory cache
@@ -653,6 +654,11 @@ SUMMARY = {
               "ratio_b": 1.05, "epp": 110.0, "epp_gap_pct": 54.5, "wcs": 3.4, "sca_net": 0.28,
               "company": "Procter & Gamble Co.", "sector": "Consumer Staples · Household & Personal Care / Beauty / Baby & Family / Healthcare · NYSE: PG",
               "summary": "PG ◎ ACCUMULATE — Ratio B 1.05× (24.7% downside / 23.5% upside) | EPP floor $110 vs. price $170 (+54.5% gap) | THE CONSUMER STAPLES COMPOUNDER WITH 68 YEARS OF DIVIDEND GROWTH: P&G's portfolio — Tide, Pampers, Gillette, Oral-B, Crest, Head & Shoulders, Pantene, Bounty, Charmin, Dawn, Febreze, SK-II, Olay — represents 50+ years of brand equity in 10 focus categories across 180+ countries. THE PRICING POWER IS REAL AND DEMONSTRATED: 2022-2024 pricing cycle delivered 5-8% annual increases across nearly every category with limited volume defection — the Tide/Pampers consumer absorbed three years of increases and stayed in the category. EMERGING MARKETS ARE THE LONG-DURATION OPTION: ~50% of revenue from outside North America/Europe; India (1.4B people, Pampers penetration in teens), Africa, Middle East — underpenetrated in every category. THE HONEST RISK: at 22-24× forward earnings the moat is priced in; GLP-1 drugs may structurally reduce consumption in adjacent categories; private label gained 2-3% grocery share in 2022-2024 — the elasticity ceiling is unclear; conservative 2yr (adj EPS $7.85 × 22× + $4.04 div = $177) → +3.9% — modest return. Add meaningfully on pullbacks toward $148-155. Bear $128 · Base $170 · Bull $210 · XBull $250."},
+    "KO":  {"ticker": "KO",   "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429", "sector_group": "Consumer Staples",
+              "price": 70.00, "bear": 52.0, "base": 70.0, "bull": 88.0, "xbull": 108.0,
+              "ratio_b": 1.00, "epp": 40.0, "epp_gap_pct": 75.0, "wcs": 3.4, "sca_net": 0.32,
+              "company": "The Coca-Cola Company", "sector": "Consumer Staples · Beverages / Non-Alcoholic / Global Distribution · NYSE: KO",
+              "summary": "KO ◎ ACCUMULATE — Ratio B 1.00× (25.7% downside / 25.7% upside) | EPP floor $40 vs. price $70 (+75.0% gap) | THE GLOBAL DISTRIBUTION SYSTEM THAT TOOK 100 YEARS TO BUILD: Coca-Cola is not a beverage company — it is a global distribution and brand-licensing machine. The franchise bottler system (FEMSA, CCEP, CCBA, 200+ country partners) represents $100B+ in third-party capital deployed into an asset no competitor can replicate. THE MOAT IS THE DISTRIBUTION, NOT THE FORMULA: Coke Zero Sugar, Fairlife ($1B+ brand, 20%+/yr growth), Body Armor, Smartwater, and Costa Coffee all travel the same system; 40%+ of volume is already zero/low calorie — the pivot has been running 20 years. DIVIDEND KING PEDIGREE: 62 consecutive dividend increases, ~2.8% yield, pricing power at 5-7% annual increases with volume resilience. THE HONEST RISK: GLP-1 drug adoption is a genuine structural headwind to sugar consumption not fully modeled by any consensus estimate; sugar tax regulation has spread to UK, Mexico, 30+ US cities and the trajectory is toward more; ~70% of revenue outside US creates structural currency headwind; conservative 2yr (adj EPS $3.18 × 21× + $1.94 div = $69) → -1.8% — you are essentially buying the dividend and hoping for multiple stability. Add meaningfully on GLP-1-fear pullbacks toward $58-62. Bear $52 · Base $70 · Bull $88 · XBull $108."},
     "EMR":  {"ticker": "EMR",  "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429", "sector_group": "Industrials",
               "price": 135.00, "date": "2026-06-09", "epp_gap_pct": 114.3, "ratio_b_fmt": "0.94x",
               "sector_group": "Industrials",
