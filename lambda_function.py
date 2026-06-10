@@ -19,6 +19,7 @@ MODELS = {
     # Tickers with SUMMARY-only entries (no .py) are served from the SUMMARY
     # dict directly — see the handler below.
     "AAPL":  "aapl_signal_model.py",
+    "ABT":   "abt_signal_model.py",
     "ACN":   "acn_signal_model.py",
     "ADBE":  "adbe_signal_model.py",
     "AMD":   "amd_signal_model.py",
@@ -106,6 +107,7 @@ MODELS = {
     "TGT":   "tgt_signal_model.py",
     "TMUS":  "tmus_signal_model.py",
     "TRGP":  "trgp_signal_model.py",
+    "TMO":   "tmo_signal_model.py",
     "TT":    "tt_signal_model.py",
     "TTWO":  "ttwo_signal_model.py",
     "TXN":   "txn_signal_model.py",
