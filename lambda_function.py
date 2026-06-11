@@ -270,7 +270,7 @@ SUMMARY = {
               "summary": "Software (Red Hat hybrid cloud, watsonx AI, automation) driving margin mix shift; consulting backlog and zSystems z17 cycle supportive. Adj composite 2.35 vs market 2.48 — roughly fairly valued, but ratio_b 0.62x still favors accumulation. EPP $184; 2.74% dividend yield (30-year Aristocrat). Method B $265."},
     "AMZN": {"ticker": "AMZN", "signal": "◎ ACCUMULATE", "signal_short": "ACCUMULATE", "signal_color": "#f0b429",
               "price": 218.00, "date": "2026-06-11", "epp_gap_pct": 54.6, "ratio_b_fmt": "1.02x",
-              "sector_group": "Technology",
+              "sector_group": "Consumer Discretionary",
               "company": "Amazon.com, Inc.", "sector": "AWS Cloud · E-commerce/Retail · Advertising · AI Infrastructure",
               "summary": "AWS reaccelerating to ~20% YoY with 36% op margin (Trainium cost edge); advertising ~$68B run-rate at 45% margin; NA retail margin expanding to ~7% on regionalized fulfillment. Adj composite 2.99 vs market 2.95 — roughly fairly valued, ratio_b 1.02x. EPP $141 (+54.6% gap) reflects continued AWS/ads optionality. Heavy AI capex (~15% of revenue) the main near-term drag. Bear $155 · Base $192 · Bull $280 · XBull $414. Method B $192."},
     "AMD":  {"ticker": "AMD",  "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",   "signal_color": "#60a5fa",
