@@ -19,6 +19,7 @@ MODELS = {
     # Tickers with SUMMARY-only entries (no .py) are served from the SUMMARY
     # dict directly — see the handler below.
     "AAPL":  "aapl_signal_model.py",
+    "ABNB":  "abnb_signal_model.py",
     "ABBV":  "abbv_signal_model.py",
     "ABT":   "abt_signal_model.py",
     "ACN":   "acn_signal_model.py",
@@ -198,6 +199,11 @@ SUMMARY = {
               "sector_group": "Energy",
               "company": "The Williams Companies",  "sector": "Midstream Energy · Natural Gas Pipelines",
               "summary": "AI infrastructure re-rating paradox. All 6 signals BULL but market has priced it at 37x P/E. BASE scenario below current price."},
+    "ABNB": {"ticker": "ABNB", "signal": "◐ WATCHLIST", "signal_short": "WATCHLIST", "signal_color": "#f0b429",
+              "price": 130.00, "date": "2026-06-11", "epp_gap_pct": 106.3, "ratio_b_fmt": "1.35x",
+              "sector_group": "Consumer Discretionary",
+              "company": "Airbnb, Inc.", "sector": "Travel · Asset-Light Marketplace · Alternative Accommodations",
+              "summary": "Asset-light two-sided marketplace with strong network effects; ~11% GBV growth, ~35% FCF margin, and net-cash balance sheet fund ~4%/yr buybacks. Adj composite 2.94 vs market 2.55 -> model sees market under-pricing the compounding story, ratio_b 1.35x. EPP $63 (+106.3% gap) reflects deeply discounted trough earnings vs an asset-light marketplace compounder. Regulatory risk on short-term rentals and competitive pressure from Booking/Vrbo are the key offsets. Bear $45 · Base $135 · Bull $193 · XBull $280."},
     "AAPL": {"ticker": "AAPL", "signal": "✕ AVOID",      "signal_short": "AVOID",      "signal_color": "#f87171",
               "price": 302.25, "date": "2026-05-21", "epp_gap_pct": 101.5, "ratio_b_fmt": "2.28x",
               "sector_group": "Technology",
