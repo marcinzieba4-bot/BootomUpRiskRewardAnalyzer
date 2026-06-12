@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const API = 'https://7qc9qknegk.execute-api.eu-north-1.amazonaws.com';
 
@@ -10,7 +11,10 @@ const SIGNAL_META: Record<string, { icon: string; bg: string; border: string; te
   WATCHLIST:  { icon: '◐', bg: 'bg-blue-500/10',  border: 'border-blue-500/30',  text: 'text-blue-400'  },
   AVOID:      { icon: '✕', bg: 'bg-red-500/10',   border: 'border-red-500/30',   text: 'text-red-400'   },
   BUY:        { icon: '◉', bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400' },
+  HOLD:       { icon: '◇', bg: 'bg-gray-500/10',  border: 'border-gray-500/30',  text: 'text-gray-400'  },
 };
+
+const SIGNAL_ORDER = ['BUY', 'ACCUMULATE', 'WATCHLIST', 'AVOID', 'HOLD'] as const;
 
 const SECTOR_ORDER = [
   'Technology',
@@ -21,7 +25,8 @@ const SECTOR_ORDER = [
   'Energy',
   'Utilities',
   'Basic Resources',
-  'Financials',
+  'Materials',
+  'Finance',
   'Telecoms/Media',
 ];
 
@@ -34,14 +39,34 @@ const SECTOR_ICONS: Record<string, string> = {
   'Energy':                 '◎',
   'Utilities':              '○',
   'Basic Resources':        '◉',
-  'Financials':             '◐',
+  'Materials':              '▲',
+  'Finance':                '◐',
   'Telecoms/Media':         '◑',
 };
 
 export default function SignalsPage() {
+  return (
+    <Suspense fallback={<div className="pt-28 pb-24 max-w-7xl mx-auto px-6 text-vr-muted text-center">Loading…</div>}>
+      <SignalsPageInner />
+    </Suspense>
+  );
+}
+
+function SignalsPageInner() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [signals, setSignals] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedSector, setSelectedSector] = useState<string | null>(null);
+
+  const selectedSector = searchParams.get('sector');
+
+  const selectSector = (sector: string | null) => {
+    if (sector === null) {
+      router.push('/signals');
+    } else {
+      router.push(`/signals?sector=${encodeURIComponent(sector)}`);
+    }
+  };
 
   useEffect(() => {
     fetch(`${API}/signals`)
@@ -125,7 +150,7 @@ export default function SignalsPage() {
               return (
                 <button
                   key={sector}
-                  onClick={() => setSelectedSector(sector)}
+                  onClick={() => selectSector(sector)}
                   className="card-hover rounded-xl border border-vr-border bg-vr-card p-6 flex flex-col text-left group transition-all"
                 >
                   <div className="flex items-center gap-3 mb-4">
@@ -140,7 +165,7 @@ export default function SignalsPage() {
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-auto">
-                    {(['BUY', 'ACCUMULATE', 'WATCHLIST', 'AVOID'] as const).map(sig => {
+                    {SIGNAL_ORDER.map(sig => {
                       const n = counts[sig];
                       if (!n) return null;
                       const m = SIGNAL_META[sig];
@@ -164,7 +189,7 @@ export default function SignalsPage() {
         <>
           <div className="flex items-center gap-4 mb-8">
             <button
-              onClick={() => setSelectedSector(null)}
+              onClick={() => selectSector(null)}
               className="flex items-center gap-1.5 text-vr-gold hover:text-vr-text transition-colors text-sm font-medium"
             >
               ← All Sectors
