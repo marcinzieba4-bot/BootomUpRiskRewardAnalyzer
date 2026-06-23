@@ -13,6 +13,14 @@ const SCOLOR: Record<string, string> = {
   BUY:        'text-green-400 border-green-500/40 bg-green-500/10',
 };
 
+const CURRENCY_SYMBOL: Record<string, string> = { EUR: '€', PLN: 'PLN ', USD: '$' };
+function currencySymbol(data: any): string {
+  if (data?.currency) return CURRENCY_SYMBOL[data.currency] ?? `${data.currency} `;
+  if (data?.sector?.includes('Prices in EUR')) return '€';
+  if (data?.sector?.includes('Prices in PLN')) return 'PLN ';
+  return '$';
+}
+
 export default function SignalDetailClient() {
   const params = useParams();
   const ticker = (params?.ticker as string ?? '').toUpperCase();
@@ -76,7 +84,7 @@ export default function SignalDetailClient() {
             <div className={`inline-block border rounded-xl px-4 py-2 text-2xl font-bold font-mono ${colorCls}`}>
               {data.signal}
             </div>
-            <div className="text-vr-muted text-sm mt-2 font-mono">${data.price} · {data.date}</div>
+            <div className="text-vr-muted text-sm mt-2 font-mono">{currencySymbol(data)}{data.price} · {data.date}</div>
           </div>
         </div>
         <p className="text-vr-muted leading-relaxed max-w-2xl">{data.summary}</p>
@@ -85,7 +93,7 @@ export default function SignalDetailClient() {
       {/* Key metrics */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
         {[
-          { label: 'Current Price',    value: data.sector?.includes('Prices in EUR') ? `€${data.price}` : data.sector?.includes('Prices in PLN') ? `PLN ${data.price}` : `$${data.price}` },
+          { label: 'Current Price',    value: `${currencySymbol(data)}${data.price}` },
           { label: 'EPP Gap',          value: `+${data.epp_gap_pct}%` },
           { label: 'Ratio B (Method)', value: data.ratio_b_fmt },
         ].map(({ label, value }) => (
@@ -115,7 +123,7 @@ export default function SignalDetailClient() {
         <p className="text-vr-faint text-xs text-center">
           <span className="text-vr-gold font-semibold">EPP</span> = pessimistic P/E × current EPS (floor, not target).{' '}
           <span className="text-vr-gold font-semibold">Ratio B</span> = downside to EPP ÷ upside at conservative exit multiple.
-          All prices USD. Not financial advice.
+          Prices shown in each company's primary listing currency. Not financial advice.
         </p>
       </div>
 

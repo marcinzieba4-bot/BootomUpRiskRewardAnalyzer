@@ -16,6 +16,14 @@ const SIGNAL_META: Record<string, { icon: string; bg: string; border: string; te
 
 const SIGNAL_ORDER = ['BUY', 'ACCUMULATE', 'WATCHLIST', 'AVOID', 'HOLD'] as const;
 
+const CURRENCY_SYMBOL: Record<string, string> = { EUR: '€', PLN: 'PLN ', USD: '$' };
+function currencySymbol(s: any): string {
+  if (s?.currency) return CURRENCY_SYMBOL[s.currency] ?? `${s.currency} `;
+  if (s?.sector?.includes('Prices in EUR')) return '€';
+  if (s?.sector?.includes('Prices in PLN')) return 'PLN ';
+  return '$';
+}
+
 const SECTOR_ORDER = [
   'Technology',
   'Healthcare',
@@ -224,7 +232,7 @@ function SignalsPageInner() {
 
                   <div className="grid grid-cols-3 gap-2 mb-4">
                     <div className="bg-vr-bg/60 rounded-lg p-2 text-center">
-                      <div className="text-vr-text font-semibold text-sm">{s.sector?.includes('Prices in EUR') ? '€' : s.sector?.includes('Prices in PLN') ? 'PLN ' : '$'}{s.price}</div>
+                      <div className="text-vr-text font-semibold text-sm">{currencySymbol(s)}{s.price}</div>
                       <div className="text-vr-faint text-[10px] mt-0.5">Price</div>
                     </div>
                     <div className="bg-vr-bg/60 rounded-lg p-2 text-center">
@@ -254,7 +262,7 @@ function SignalsPageInner() {
         <p className="text-vr-muted text-sm text-center">
           <span className="text-vr-gold font-semibold">EPP</span> (Earnings Power Price) = current EPS × min-viable trough P/E.{' '}
           <span className="text-vr-gold font-semibold">Ratio B</span> = downside to EPP ÷ upside at conservative exit multiple.{' '}
-          Primary signal is Method B. All prices in USD. Not financial advice.
+          Primary signal is Method B. Prices shown in each company's primary listing currency. Not financial advice.
         </p>
       </div>
     </div>

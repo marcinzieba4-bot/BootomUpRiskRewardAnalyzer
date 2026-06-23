@@ -2,32 +2,33 @@
 """
 SAP Signal Model  v2
 ──────────────────────
-SAP SE (NYSE: SAP)  ·  Enterprise Software
+SAP SE (Xetra: ETR:SAP)  ·  Enterprise Software
 Trough year: 2022 (rate-shock; enterprise software de-rate)
 
 New format: signal dashboard → bear anatomy → updated EPP →
             conservative growth → volatility context → probability
 
 PRICE SOURCE: SAP's primary listing is Frankfurt/Xetra (ETR: SAP, in EUR) —
-NOT the NYSE ADR. Always source CURRENT_PRICE_EUR from the German listing
-(price.google.com/quote/SAP:ETR or similar) and convert to USD here, rather
-than trusting a USD-labeled "SAP" quote, which is frequently a stale/cached
-ADR figure that drifts from the EUR price.
+NOT the NYSE ADR. ALL figures in this model (price, EPS, EPP, scenario
+prices, dividends, volatility bands) are sourced and expressed natively in
+EUR off the German listing. Do not pull EPS/fundamentals/price targets from
+USD-labeled "SAP" (NYSE ADR) sources — that is a different instrument whose
+USD quote/EPS reporting frequently drifts/lags the EUR figures that SAP SE
+itself reports. P/E ratios are currency-invariant, so EUR price = EUR EPS ×
+P/E directly; no FX conversion is needed or used anywhere below.
 """
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE_EUR = 135.12   # Xetra (ETR: SAP) — source of truth, EUR
-EUR_USD          = 1.147
-CURRENT_PRICE    = round(CURRENT_PRICE_EUR * EUR_USD, 2)   # USD-equivalent, for the USD-based model below
+CURRENT_PRICE    = 135.12   # EUR, Xetra (ETR: SAP) — source of truth
 REQUIRED_RETURN  = 0.15
 HORIZON_YEARS    = 2
 
 SCENARIOS = {
-    "BEAR":  ( 6.0,  18,  108, "Cloud decelerates to 10%; Joule fails; migration stalls"),
-    "BASE":  ( 9.0,  25,  225, "Cloud 23-25%; ECC wave executes; Joule 10%+ adoption"),
-    "BULL":  (12.0,  30,  360, "Cloud 30%+; Joule monetisation begins; buyback accretive"),
-    "XBULL": (15.0,  35,  525, "ECC surge + Joule premium pricing + EUR/USD tailwind"),
+    "BEAR":  ( 5.23,  18,   94, "Cloud decelerates to 10%; Joule fails; migration stalls"),
+    "BASE":  ( 7.85,  25,  196, "Cloud 23-25%; ECC wave executes; Joule 10%+ adoption"),
+    "BULL":  (10.46,  30,  314, "Cloud 30%+; Joule monetisation begins; buyback accretive"),
+    "XBULL": (13.08,  35,  458, "ECC surge + Joule premium pricing + EUR strength"),
 }
 
 # ── STRUCTURAL DEMAND CALCULATOR (SAP-specific) ───────────────────────────────
@@ -66,9 +67,9 @@ SIGNALS = [
       0.0,   5.0,  10.0,  15.0,  14.7, True,
      "IT budget freeze; CIOs defer ERP renewal to protect cash"),
 
-    ("EUR/USD rate (inverse)",         "EUR/USD",
+    ("EUR/USD rate (US holder FX)",    "EUR/USD",
       1.30,  1.05,  1.10,  1.20,   1.147, False,
-     "EUR surges >1.30; USD EPS compressed 10pp vs CC growth"),
+     "EUR surges >1.30; USD-translated returns lag EUR-native performance"),
 
     ("Joule AI production adoption",   "%",
       0.5,   1.0,   5.0,  15.0,   3.0, True,
@@ -85,10 +86,10 @@ STRUCTURAL_FACTORS = [
 ]
 
 # ── UPDATED EPP ───────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 8.40    # FY2026E non-GAAP EPS in USD (forward consensus; TTM $7.19, Q1'26 EPS +20% YoY)
+EPP_TODAY_EPS    = 7.32    # FY2026E non-GAAP EPS in EUR (forward consensus; TTM €6.27, Q1'26 EPS +20% YoY)
 EPP_MIN_PE       = 18.0    # min viable P/E at maximum pessimism (enterprise ERP floor;
                            # raised from 12x: SaaS transition raises defensibility of revenue)
-EPP_HISTORICAL   = 150.0   # historical EPP v1 (approx)
+EPP_HISTORICAL   = 130.8   # historical EPP v1 (approx), EUR
 
 # ── CONSERVATIVE GROWTH (2-yr, base-minus) ───────────────────────────────────
 CONS_SIGNALS = [
@@ -101,14 +102,14 @@ CONS_SIGNALS = [
 ]
 CONS_EPS_CAGR = 0.10     # 10%/yr conservative (vs consensus 15%+)
 CONS_EXIT_PE  = 22.0     # 22x exit (de-rate from current ~21x)
-CONS_DIVIDEND = 2.87     # USD-equiv (€2.50 Xetra dividend, 1.85% yield, × EUR/USD)
+CONS_DIVIDEND = 2.50     # EUR, Xetra dividend, ~1.85% yield
 
 # ── VOLATILITY ────────────────────────────────────────────────────────────────
 VOL_ANNUAL_PCT = 0.28    # realized vol elevated post-drawdown (52wk range now spans 2x)
-VOL_BETA       = 0.75    # beta vs S&P 500
-VOL_52W_LOW    = 150.44  # 52-week low, USD-equiv of €131.16 Xetra
-VOL_52W_HIGH   = 308.94  # 52-week high, USD-equiv of €269.35 Xetra
-VOL_DIVIDEND   = 2.87
+VOL_BETA       = 0.75    # beta vs S&P 500 (USD-translated; EUR-native beta would differ)
+VOL_52W_LOW    = 131.16  # 52-week low, EUR, Xetra
+VOL_52W_HIGH   = 269.35  # 52-week high, EUR, Xetra
+VOL_DIVIDEND   = 2.50
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -193,7 +194,7 @@ if mkt_composite:
 # ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
 print("═" * W)
-print(f"  SAP  ·  SAP SE  ·  ${CURRENT_PRICE:.2f}  (€{CURRENT_PRICE_EUR:.2f} Xetra)  ·  Enterprise Software")
+print(f"  SAP  ·  SAP SE  ·  €{CURRENT_PRICE:.2f}  (Xetra: ETR:SAP)  ·  Enterprise Software")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
 
@@ -213,7 +214,7 @@ for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
 
 print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
 if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  (back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
+    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  (back-solved from €{CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
     print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  →  Gap {adj_gap:+.2f}  [{_verdict}]")
 
 print(f"\n  Structural factors:")
@@ -234,7 +235,7 @@ for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
     trigger = narr[:40] if len(narr) <= 40 else narr[:37] + "…"
     print(f"  {name:<32}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
 
-print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~${expected_price(bear_probs):.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
+print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~€{expected_price(bear_probs):.0f}  (model)  /  €{SCENARIOS['BEAR'][2]} (defined)")
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"\n  KEY TRIGGER: Cloud backlog deceleration to <10% CC + Joule AI fails enterprise")
 print(f"  adoption → SAP loses transformation premium, re-rates to 18x on stable-but-")
@@ -243,13 +244,13 @@ print(f"  not-growing ECC maintenance business. JOINT event: each alone doesn't 
 # ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2026E non-GAAP, USD)")
+print(f"  Today's normalized EPS:          €{EPP_TODAY_EPS:.2f}  (FY2026E non-GAAP, EUR; Xetra-native)")
 print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  [enterprise ERP floor; raised from 12x: SaaS raises defensibility]")
 print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical repricing'}")
+print(f"  UPDATED EPP:                     €{epp_updated:.0f}/share")
+print(f"  Historical EPP (v1, floor adj):  €{EPP_HISTORICAL:.0f}/share")
+print(f"  Current €{CURRENT_PRICE:.0f} vs Updated EPP €{epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Bear €{SCENARIOS['BEAR'][2]} vs Updated EPP €{epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical repricing'}")
 
 # ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
@@ -261,28 +262,28 @@ for sname, sval, srat in CONS_SIGNALS:
     diff = sval - cur
     print(f"  {sname:<32}  {sval:>14.1f}  {diff:>+9.0f}   {srat[:30]}")
 
-print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  ${cons_price_2yr:.0f}/share")
+print(f"\n  Conservative 2yr EPS:   €{EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = €{cons_eps_2yr:.2f}")
+print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  €{cons_price_2yr:.0f}/share")
 if CONS_DIVIDEND > 0:
-    print(f"  + Cumul. dividends (2yr):  +${cons_div_2yr:.2f}/share")
+    print(f"  + Cumul. dividends (2yr):  +€{cons_div_2yr:.2f}/share")
 print(f"  {'─'*60}")
-print(f"  Conservative 2yr price:     ${cons_price_2yr:.0f}  ({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from ${CURRENT_PRICE:.0f})")
+print(f"  Conservative 2yr price:     €{cons_price_2yr:.0f}  ({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from €{CURRENT_PRICE:.0f})")
 print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  = {cons_annual_ret:+.0f}%/yr")
-print(f"\n  Even at conservative 10% EPS growth and 22x exit, SAP reaches ${cons_price_2yr:.0f} in 2yr.")
+print(f"\n  Even at conservative 10% EPS growth and 22x exit, SAP reaches €{cons_price_2yr:.0f} in 2yr.")
 print(f"  The 21,000 ECC customers MUST migrate by 2027 — captive demand is the floor.")
 
 # ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print(f"\n  ⑤ VOLATILITY CONTEXT")
 print("  " + "─" * (W-2))
-print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
+print(f"  52-week range:        €{VOL_52W_LOW:.0f}  –  €{VOL_52W_HIGH:.0f}")
 if VOL_DIVIDEND > 0:
-    print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  (yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
+    print(f"  Annual dividend:      €{VOL_DIVIDEND:.2f}/share  (yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
 print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
 print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}")
-print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  (${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
-print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  ${CURRENT_PRICE + 2*sigma_1yr:.0f}")
+print(f"  1-sigma range (1yr):  €{vol_low_1yr:.0f}  –  €{vol_high_1yr:.0f}  (€{CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
+print(f"  2-sigma range (1yr):  €{CURRENT_PRICE - 2*sigma_1yr:.0f}  –  €{CURRENT_PRICE + 2*sigma_1yr:.0f}")
 print(f"  {'─'*60}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  ~{sigma_needed_bear:.1f}σ price move  {'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal vol range)'}")
+print(f"  Bear €{SCENARIOS['BEAR'][2]} requires:  ~{sigma_needed_bear:.1f}σ price move  {'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal vol range)'}")
 print(f"  SAP's EUR-denominated earnings create FX vol overlay not captured in USD beta.")
 print(f"  EUR/USD 1.30+ would compress USD EPS ~10pp vs CC growth — a tail risk for US holders.")
 
@@ -297,10 +298,10 @@ for k in ["BEAR", "BASE", "BULL", "XBULL"]:
     pp  = proxy_probs[k]
     mp  = mkt_probs[k] if mkt_probs else 0
     gap_pp = pp - mp
-    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  {gap_pp*100:>+6.1f}pp  {narr}")
+    print(f"  {k:<8}  €{price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  {gap_pp*100:>+6.1f}pp  {narr}")
 
-print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
-print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = ${cons_price_2yr + cons_div_2yr:.0f} total value")
+print(f"\n  Proxy EV (2yr): €{proxy_ev:.0f}  /  Market EV: €{mkt_ev:.0f}  /  Current: €{CURRENT_PRICE:.0f}")
+print(f"  Conservative EV (2yr, ④): €{cons_price_2yr:.0f} + €{cons_div_2yr:.2f} divs = €{cons_price_2yr + cons_div_2yr:.0f} total value")
 
 print()
 print("═" * W)
