@@ -11,7 +11,7 @@ New format: signal dashboard → bear anatomy → updated EPP →
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE    = 173.0
+CURRENT_PRICE    = 181.79
 REQUIRED_RETURN  = 0.15
 HORIZON_YEARS    = 2
 EUR_USD          = 1.12
@@ -98,8 +98,8 @@ CONS_DIVIDEND = 2.20     # approx $2.20 USD (~EUR 2.00 dividend)
 # ── VOLATILITY ────────────────────────────────────────────────────────────────
 VOL_ANNUAL_PCT = 0.22    # 2yr realized annualized vol
 VOL_BETA       = 0.75    # beta vs S&P 500
-VOL_52W_LOW    = 137.0   # 52-week low
-VOL_52W_HIGH   = 193.0   # 52-week high
+VOL_52W_LOW    = 158.58  # 52-week low
+VOL_52W_HIGH   = 313.28  # 52-week high
 VOL_DIVIDEND   = 2.20
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
