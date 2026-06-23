@@ -198,10 +198,10 @@ _cache: dict = {}
 
 SUMMARY = {
     "NVDA": {"ticker": "NVDA", "signal": "◉ BUY",        "signal_short": "BUY",        "signal_color": "#22c55e",
-              "price": 131.50, "date": "2026-06-09", "epp_gap_pct": 24.1,  "ratio_b_fmt": "0.66x",
+              "price": 208.65, "date": "2026-06-23", "epp_gap_pct": 1.8,  "ratio_b_fmt": "0.50x",
               "sector_group": "Technology",
               "company": "NVIDIA Corporation",        "sector": "Semiconductors · Data Center AI · Accelerated Computing · NASDAQ: NVDA",
-              "summary": "NVDA ◉ BUY — Ratio B 0.66× (58.2% downside / 88.6% upside) | EPP $106 vs price $131.50 (+24.1% gap) | CUDA moat + Blackwell supercycle: adj composite 2.64 vs market-implied 2.19 → UNDERVALUED +0.44pts. FY2027E $175B Data Center (+52% YoY); book-to-bill ~1.6× (demand exceeds CoWoS supply). PEG ~0.70× on 40%/yr EPS growth — cheapest mega-cap AI name by PEG. Conservative 2yr: $6.00 EPS × 24× + div = $144.08 → +9.6%. KEY RISKS: DeepSeek-style efficiency (lower GPU-hrs per task), hyperscaler ASIC displacement (Google TPU/Amazon Trainium), H20 export control tightening. Bear $55 · Base $140 · Bull $248 · XBull $456. AVOID >$200 | WATCHLIST $150–170 | ACCUMULATE $110–130 | BUY <$100."},
+              "summary": "NVDA ◉ BUY — Ratio B 0.50× (51.6% downside / 104.2% upside) | EPP $205 vs price $208.65 (+1.8% gap) | CUDA moat + Blackwell/Rubin supercycle: adj composite 3.14 vs market-implied 1.96 → UNDERVALUED +1.17pts. Q1 FY2027 Data Center $75.2B (+92% YoY); non-GAAP GM 75.0%; FY2027E rev ~$371B. PEG ~0.56× on 40%/yr EPS growth — cheapest mega-cap AI name by PEG. Conservative 2yr: $11.70 EPS × 24× + div = $282.80 → +35.5%. KEY RISKS: DeepSeek-style efficiency (lower GPU-hrs per task), hyperscaler ASIC displacement (Google TPU/Amazon Trainium), China Data Center revenue already at $0 (full export ban baseline). Bear $101 · Base $260 · Bull $426 · XBull $847. AVOID >$360 | WATCHLIST $260–360 | ACCUMULATE $150–200 | BUY <$130."},
     "ISRG": {"ticker": "ISRG", "signal": "◐ WATCHLIST",  "signal_short": "WATCHLIST",  "signal_color": "#60a5fa",
               "price": 452.00,  "date": "2026-06-10", "epp_gap_pct": 61.4,  "ratio_b_fmt": "1.35x",
               "sector_group": "Healthcare",

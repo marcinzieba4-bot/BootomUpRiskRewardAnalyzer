@@ -1,7 +1,7 @@
 """
 NVDA  ·  NVIDIA Corporation  ·  NASDAQ: NVDA
 Bottom-up signal model  ·  Data Center AI / GPU / Accelerated Computing / Automotive
-Date: 2026-06-09
+Date: 2026-06-23
 """
 
 import math
@@ -10,46 +10,48 @@ import math
 TICKER        = "NVDA"
 COMPANY       = "NVIDIA Corporation"
 SECTOR        = "Semiconductors · Data Center AI · Accelerated Computing · NASDAQ: NVDA"
-CURRENT_PRICE = 131.50       # USD; as of 2026-06-09
-VOL_52W_LOW   =  76.18       # January 2026 DeepSeek/tariff trough
-VOL_52W_HIGH  = 165.42       # November 2025 Blackwell ramp peak
-SHARES_OUT_M  = 24_420.0     # millions; ~0.5%/yr dilution net (SBC > buybacks at current pace)
+CURRENT_PRICE = 208.65       # USD; as of 2026-06-22 close
+VOL_52W_LOW   = 142.03       # 52-week low
+VOL_52W_HIGH  = 236.54       # 52-week high
+SHARES_OUT_M  = 24_300.0     # millions; net buybacks roughly offsetting SBC at current pace
 
-# Dividend: initiated 2012; current $0.01/quarter = $0.04/yr; economically negligible
-ANNUAL_DIV    = 0.04         # $/share FY2027 (buybacks are the return vehicle; $50B authorization)
+# Dividend: raised 25x in Q1 FY2027 report (May 2026) to $0.25/quarter = $1.00/yr
+ANNUAL_DIV    = 1.00         # $/share FY2027 (still token vs. buybacks as primary return vehicle)
 
 # ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
 # FY2027E revenue by segment ($B)  [NVDA fiscal year ends Jan; FY2027 = Feb 2026–Jan 2027]
+# Q1 FY2027 (reported May 2026): $81.6B total rev (+85% YoY), Data Center $75.2B (+92% YoY);
+# full-year FY2027 guidance/consensus ~$391B total revenue.
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Data Center",              175.0,  95.0, 225.0, "Blackwell GB200/GB300 clusters; hyperscalers + sovereign AI"),
-    ("Gaming",                    12.0,   8.0,  18.0, "RTX 50 series; DLSS 4; AI-driven frame generation; PC market"),
-    ("Professional Visualization",  3.0,   2.0,   5.0, "Omniverse; design/simulation; industrial digital twin"),
-    ("Automotive",                 5.0,   3.0,   9.0, "DRIVE Thor; robotaxi partnerships; ADAS compute platform"),
+    ("Data Center",              345.0, 190.0, 445.0, "Blackwell GB200/GB300 + Rubin ramp; hyperscalers + sovereign AI"),
+    ("Gaming",                    14.0,   9.5,  21.0, "RTX 50 series; DLSS 4; AI-driven frame generation; PC market"),
+    ("Professional Visualization",  3.5,   2.5,   6.0, "Omniverse; design/simulation; industrial digital twin"),
+    ("Automotive",                 6.5,   4.0,  12.0, "DRIVE Thor; robotaxi partnerships; ADAS compute platform"),
     ("OEM & Other",                2.0,   1.5,   3.0, "Embedded NVIDIA; channel; crypto-adjacent mining"),
 ]
 
 # Margin assumptions
-GROSS_MARGIN_CURR = 0.730   # blended gross margin FY2027E (~73%; Data Center GPU premium)
-GROSS_MARGIN_BULL = 0.760   # BULL: Data Center mix >90%; NVL72 rack premium pricing
-OPEX_FIXED_B      = 10.0    # R&D + SG&A ($B); non-GAAP (excludes ~$4B SBC); growing ~20%/yr
+GROSS_MARGIN_CURR = 0.750   # blended non-GAAP gross margin FY2027E (Q1 FY2027 actual 75.0%; Q2 guide 75.0%)
+GROSS_MARGIN_BULL = 0.770   # BULL: Data Center mix even higher; NVL72/Rubin rack premium pricing
+OPEX_FIXED_B      = 18.0    # R&D + SG&A ($B); non-GAAP; scaled up with revenue base
 TAX_RATE          = 0.130   # effective rate; IP structures; R&D credits
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2027E    = 4.80        # FY2027E adj EPS (consensus $4.70–$5.00; non-GAAP)
+EPS_FY2027E    = 9.34        # FY2027E adj EPS (consensus, post-Q1 FY2027 beat; non-GAAP)
 PE_PESSIMISTIC = 22.0        # trough P/E: CUDA moat provides floor even in pause scenario
                               # (NVDA trough P/E 2022 bear: ~20×; CUDA lock-in justifies premium)
-EPP            = round(PE_PESSIMISTIC * EPS_FY2027E, 0)   # $105.60 → $106
+EPP            = round(PE_PESSIMISTIC * EPS_FY2027E, 0)   # $205.48 → $205
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
 # ── SCENARIO TABLE ────────────────────────────────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 2.50, 22,  55,  "Hyperscaler pause + DeepSeek efficiency + ASIC displacement; EPS $2.50 → 22× floor"),
-    "BASE":  ( 5.00, 28, 140,  "Blackwell/Rubin cycle healthy; ~40% rev CAGR; sovereign AI adds; EPS $5 → 28×"),
-    "BULL":  ( 7.50, 33, 248,  "Rubin supercycle; agentic AI explosion; robotics + autonomous vehicles; EPS $7.50 → 33×"),
-    "XBULL": (12.00, 38, 456,  "NVDA = AGI/physical AI backbone; $500B+ revenue; robotics everywhere; EPS $12 → 38×"),
+    "BEAR":  ( 4.60, 22, 101,  "Hyperscaler pause + DeepSeek efficiency + ASIC displacement; EPS $4.60 → 22× floor"),
+    "BASE":  ( 9.30, 28, 260,  "Blackwell/Rubin cycle healthy; ~40% rev CAGR; sovereign AI adds; EPS $9.30 → 28×"),
+    "BULL":  (12.90, 33, 426,  "Rubin supercycle; agentic AI explosion; robotics + autonomous vehicles; EPS $12.90 → 33×"),
+    "XBULL": (22.30, 38, 847,  "NVDA = AGI/physical AI backbone; $700B+ revenue; robotics everywhere; EPS $22.30 → 38×"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -83,17 +85,17 @@ SIGNALS = [
         "name":       "Data Center revenue YoY growth",
         "weight":     0.35,
         "thresholds": ("<20%",   "≥40%",  "≥70%",   "≥110%"),
-        "now":        "+52%",
-        "score":      3,
-        "comment":    "FY2026 $115B → FY2027E $175B; Blackwell GB200 NVL72 rack demand from all 5 hyperscalers",
+        "now":        "+92%",
+        "score":      4,
+        "comment":    "Q1 FY2027 Data Center $75.2B (+92% YoY); Blackwell GB200/GB300 NVL72 rack demand from all 5 hyperscalers",
     },
     {
         "name":       "Non-GAAP gross margin",
         "weight":     0.20,
         "thresholds": ("<65%",   "≥70%",  "≥75%",   "≥80%"),
-        "now":        "73.0%",
-        "score":      2,
-        "comment":    "FY2026 Q4 73.5%; Blackwell premium vs Hopper; some supply-chain/CoWoS cost drag",
+        "now":        "75.0%",
+        "score":      3,
+        "comment":    "Q1 FY2027 actual 75.0%; Q2 FY2027 guide 75.0%; Blackwell premium vs Hopper sustaining",
     },
     {
         "name":       "Hyperscaler AI capex guidance",
@@ -115,15 +117,15 @@ SIGNALS = [
         "name":       "China revenue / export control exposure",
         "weight":     0.05,
         "thresholds": ("<$5B",   "≥$8B",  "≥$14B",  "≥$20B"),
-        "now":        "~$8B",
-        "score":      2,
-        "comment":    "H20 chip ($8B FY2026) allowed; BIS tightening risk; China was 17% revenue pre-controls",
+        "now":        "$0B",
+        "score":      1,
+        "comment":    "FY2027 guidance assumes ZERO China Data Center compute revenue; full export ban baseline; potential upside if eased",
     },
     {
         "name":       "Automotive + Robotics revenue",
         "weight":     0.05,
         "thresholds": ("<$3B",   "≥$5B",  "≥$8B",   "≥$15B"),
-        "now":        "~$5B",
+        "now":        "~$6.5B",
         "score":      2,
         "comment":    "DRIVE Thor wins: BYD, Li Auto, SAIC; Jetson for robotics; long-cycle optionality",
     },
@@ -174,8 +176,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 6.00    # conservative FY2029E: 12% EPS CAGR (growth decelerating; competition)
-CONS_PE_2YR   = 24      # rerating from ~27× to growth-normalized 24× (growth decelerates to ~15%/yr)
+CONS_EPS_2YR  = 11.70   # conservative FY2029E: ~12% EPS CAGR off FY2027E $9.34 (growth decelerating; competition)
+CONS_PE_2YR   = 24      # rerating from ~22× to growth-normalized 24× (growth decelerates to ~15%/yr)
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -234,7 +236,7 @@ bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
 bear_eps_imp = round(bear_ni / shares, 1)
 
 print(f"  FY2027E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2027E:.2f}  ✓)")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2027E:.2f}  {'✓' if abs(curr_eps-EPS_FY2027E) < 1.0 else '✗'})")
 print()
 print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
 print(f"  ÷ {shares_b:.3f}B shares  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 33× = ~${bull_eps_imp*33:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
@@ -249,10 +251,10 @@ eps_per_1pp_gm    = curr_total * 0.01 * (1 - TAX_RATE) / shares
 eps_per_1B_china  = 1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE) / shares
 
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B Data Center revenue (73% GM): +${eps_per_1B_dc:.3f}/EPS  = +${eps_per_1B_dc*28:.1f}/share at 28× P/E")
+print(f"  Every $1B Data Center revenue (75% GM): +${eps_per_1B_dc:.3f}/EPS  = +${eps_per_1B_dc*28:.1f}/share at 28× P/E")
 print(f"  China revenue ±$1B (H20 chips):         ±${eps_per_1B_china:.3f}/EPS  =  ±${eps_per_1B_china*28:.1f}/share at 28× P/E")
 print(f"  1pp GM expansion (mix/supply):           +${eps_per_1pp_gm:.2f}/EPS  = +${eps_per_1pp_gm*28:.1f}/share at 28× P/E")
-print(f"  1× P/E re-rating ($5.00 EPS):            +${EPS_FY2027E:.2f}/share  (P/E sensitivity: significant at growth multiples)")
+print(f"  1× P/E re-rating (${EPS_FY2027E:.2f} EPS):           +${EPS_FY2027E:.2f}/share  (P/E sensitivity: significant at growth multiples)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
@@ -284,12 +286,12 @@ hr()
 print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("Data Center revenue YoY",         "+52%",   "<+20%",  "−32pp",  "Hyperscalers pivot to in-house ASICs; capex freeze"),
-    ("Non-GAAP gross margin",           "73.0%",  "<65%",   "−8pp",   "Supply glut → pricing pressure; CoWoS cost inflation"),
+    ("Data Center revenue YoY",         "+92%",   "<+20%",  "−72pp",  "Hyperscalers pivot to in-house ASICs; capex freeze"),
+    ("Non-GAAP gross margin",           "75.0%",  "<65%",   "−10pp",  "Supply glut → pricing pressure; CoWoS cost inflation"),
     ("Hyperscaler AI capex guidance",   "+38%",   "<+10%",  "−28pp",  "Recession / rates spike → IT budget freeze"),
     ("Blackwell book-to-bill",          "~1.6×",  "<1.0×",  "−0.6×",  "Demand destruction: LLM efficiency (DeepSeek-level)"),
-    ("China revenue",                   "~$8B",   "<$5B",   "−$3B",   "Full export ban; H20 restrictions tightened to zero"),
-    ("Automotive + Robotics revenue",   "~$5B",   "<$3B",   "−$2B",   "OEM software deferrals; EV demand slowdown"),
+    ("China revenue",                   "$0B",    "$0B",    "flat",   "Already fully impaired in baseline; no further downside lever"),
+    ("Automotive + Robotics revenue",   "~$6.5B", "<$3B",   "−$3.5B", "OEM software deferrals; EV demand slowdown"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
     print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
@@ -300,16 +302,16 @@ print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
 print(f"  KEY TRIGGER: Coordinated hyperscaler capex freeze (recession/rate shock) + DeepSeek-style")
 print(f"  efficiency breakthrough reducing GPU-hours-per-task by 10×, simultaneous with Google/Amazon")
-print(f"  ASIC units (TPU v6/Trainium 3) reaching 60%+ of training workloads. Revenue drops to ~$110B;")
-print(f"  gross margin collapses to ~65% (utilization fall + pricing concessions). EPS ~$2.50 → 22× = ${bear_price}.")
-print(f"  Note: $55 is NOT a permanent impairment — CUDA installed base ($1T+ cumulative hardware) +")
+print(f"  ASIC units (TPU v6/Trainium 3) reaching 60%+ of training workloads. Revenue drops to ~${bear_total:.0f}B;")
+print(f"  gross margin collapses to ~65% (utilization fall + pricing concessions). EPS ~$4.60 → 22× = ${bear_price}.")
+print(f"  Note: ${bear_price} is NOT a permanent impairment — CUDA installed base ($1T+ cumulative hardware) +")
 print(f"  NVIDIA AI Enterprise software ARR provides a durable floor. Recovery likely within 12–18 months.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
 print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
 hr()
-print(f"  FY2027E adj EPS estimate:      ${EPS_FY2027E:.2f}  (consensus $4.70–$5.00; non-GAAP; excl. SBC)")
+print(f"  FY2027E adj EPS estimate:      ${EPS_FY2027E:.2f}  (consensus $9.00–$9.60; non-GAAP; excl. SBC)")
 print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (CUDA moat floor; FY2022 trough 20–22×; DCF floor)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
@@ -319,7 +321,7 @@ print(f"  At ${CURRENT_PRICE:.2f} and FY2027E EPS ${EPS_FY2027E:.2f}, P/E = {CUR
 print(f"  company compounding EPS at ~40%/yr. PEG = {CURRENT_PRICE/EPS_FY2027E/40:.2f}× on trailing growth rate.")
 print(f"  EPP is meaningful: at ${EPP:.0f}, the stock prices in ONLY trough earnings power. The market")
 print(f"  currently prices ~{CURRENT_PRICE/EPP:.1f}× EPP — embedding several years of sustained growth.")
-print(f"  EPP path: FY2029E EPS ~$6.50 × {PE_PESSIMISTIC:.0f}× = ${6.50*PE_PESSIMISTIC:.0f} floor by late 2028 (+{(6.50*PE_PESSIMISTIC/EPP-1)*100:.0f}% EPP growth).")
+print(f"  EPP path: FY2029E EPS ~${CONS_EPS_2YR:.2f} × {PE_PESSIMISTIC:.0f}× = ${CONS_EPS_2YR*PE_PESSIMISTIC:.0f} floor by late 2028 (+{(CONS_EPS_2YR*PE_PESSIMISTIC/EPP-1)*100:.0f}% EPP growth).")
 print(f"  At 28× mid-cycle P/E: ${EPS_FY2027E:.2f} × 28 = ${EPS_FY2027E*28:.0f}  — {((EPS_FY2027E*28/CURRENT_PRICE)-1)*100:+.0f}% vs current price.")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
@@ -335,8 +337,8 @@ print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_to
 print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
 print(f"  THE CORE DYNAMIC: unlike AAPL, NVDA's conservative case is POSITIVE — because the stock")
-print(f"  is NOT priced at nosebleed P/E relative to its growth rate. At ~27× FY2027E, you get a")
-print(f"  40%/yr EPS grower at PEG ~0.7×. Even at 24× on slower $6 EPS = ${cons_equity} — a positive return.")
+print(f"  is NOT priced at nosebleed P/E relative to its growth rate. At ~22× FY2027E, you get a")
+print(f"  40%/yr EPS grower at PEG ~0.56×. Even at 24× on slower ${CONS_EPS_2YR:.2f} EPS = ${cons_equity:.2f} — a positive return.")
 print(f"  The KEY risk is NOT valuation compression; it is GROWTH DECELERATION (ASIC/efficiency).")
 print(f"  BUY trigger: ${round(bear_price * 1.25, 0):.0f}–${round(bear_price * 1.45, 0):.0f} (deep value; ratio_b <0.60×)")
 print(f"  Breakeven on conservative case (24× P/E): current ${CURRENT_PRICE} requires FY2029E EPS ≥ ${CURRENT_PRICE/24:.2f}")
@@ -345,21 +347,21 @@ print(f"  Breakeven on conservative case (24× P/E): current ${CURRENT_PRICE} re
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.45
+annual_vol  = 0.40
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
 print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  token; buybacks are the mechanism)")
 print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (high; AI narrative binary; hyperscaler capex swings ±25%)")
-print(f"  Beta vs S&P 500:      1.85  (elevated; high-growth; AI sentiment amplifier)")
+print(f"  Beta vs S&P 500:      1.75  (elevated; high-growth; AI sentiment amplifier)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
 print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (plausible; seen in 2022: −66%; DeepSeek: −17%)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (Jan 2026 DeepSeek shock) already a peak-to-trough move of ~54%.")
+print(f"  52W low ${VOL_52W_LOW:.2f} (Jan 2026 DeepSeek shock) already a peak-to-trough move of ~40%.")
 print(f"  → Hyperscaler capex freeze is THE KEY binary; each $10B capex cut = ~−8–12% NVDA revenue.")
 print(f"  → DeepSeek-style efficiency gains are the structural bear risk (lower GPU-hrs per task).")
-print(f"  → AVOID above $200  |  WATCHLIST $150–170  |  ACCUMULATE $110–130  |  BUY below $100")
+print(f"  → AVOID above $360  |  WATCHLIST $260–360  |  ACCUMULATE $150–200  |  BUY below $130")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -403,7 +405,7 @@ print(f"  (2) Rubin GPU (R100/R200) ramp timeline — 2027 volume ramp; NVL144 n
 print(f"  (3) DeepSeek-style efficiency breakthrough — each 10× efficiency = structural GPU demand risk")
 print(f"  (4) Export control escalation — H20 ban tightening; Taiwan conflict binary")
 print(f"  (5) ASIC market share — Google TPU/Amazon Trainium reaching >40% of hyperscaler AI workloads")
-print(f"  AVOID above $200  |  WATCHLIST $150–170  |  ACCUMULATE $110–130  |  BUY below $100")
+print(f"  AVOID above $360  |  WATCHLIST $260–360  |  ACCUMULATE $150–200  |  BUY below $130")
 print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2027E EPS: ${EPS_FY2027E:.2f}")
 print("═" * (W + 4))
 print()
