@@ -11,10 +11,10 @@ New format: signal dashboard → bear anatomy → updated EPP →
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE    = 181.79
+CURRENT_PRICE    = 149.51
 REQUIRED_RETURN  = 0.15
 HORIZON_YEARS    = 2
-EUR_USD          = 1.12
+EUR_USD          = 1.147
 
 SCENARIOS = {
     "BEAR":  ( 6.0,  18,  108, "Cloud decelerates to 10%; Joule fails; migration stalls"),
@@ -49,6 +49,7 @@ SIGNALS = [
     ("SAP cloud backlog growth CC",    "% CC",
       5.0,  10.0,  20.0,  30.0,  25.0, True,
      "ECC migration stalls; customers defer cloud contract signing"),
+    # current cloud backlog +25% YoY (Q1 FY2026, reported Apr 2026)
 
     ("ECC migration urgency",          "/4 scale",
       1.0,   1.0,   2.0,   4.0,   3.0, True,
@@ -59,7 +60,7 @@ SIGNALS = [
      "IT budget freeze; CIOs defer ERP renewal to protect cash"),
 
     ("EUR/USD rate (inverse)",         "EUR/USD",
-      1.30,  1.05,  1.10,  1.20,   1.12, False,
+      1.30,  1.05,  1.10,  1.20,   1.147, False,
      "EUR surges >1.30; USD EPS compressed 10pp vs CC growth"),
 
     ("Joule AI production adoption",   "%",
@@ -77,7 +78,7 @@ STRUCTURAL_FACTORS = [
 ]
 
 # ── UPDATED EPP ───────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 9.00    # FY2025E non-GAAP EPS in USD (~EUR 8.0 × 1.12 EUR/USD)
+EPP_TODAY_EPS    = 8.40    # FY2026E non-GAAP EPS in USD (forward consensus; TTM $7.19, Q1'26 EPS +20% YoY)
 EPP_MIN_PE       = 18.0    # min viable P/E at maximum pessimism (enterprise ERP floor;
                            # raised from 12x: SaaS transition raises defensibility of revenue)
 EPP_HISTORICAL   = 150.0   # historical EPP v1 (approx)
@@ -92,15 +93,15 @@ CONS_SIGNALS = [
     ("Joule AI",                 2.0, "2% adoption (vs 3%; monetisation still early)"),
 ]
 CONS_EPS_CAGR = 0.10     # 10%/yr conservative (vs consensus 15%+)
-CONS_EXIT_PE  = 22.0     # 22x exit (de-rate from current ~25x)
-CONS_DIVIDEND = 2.20     # approx $2.20 USD (~EUR 2.00 dividend)
+CONS_EXIT_PE  = 22.0     # 22x exit (de-rate from current ~21x)
+CONS_DIVIDEND = 2.14     # $2.14 USD trailing dividend (1.43% yield)
 
 # ── VOLATILITY ────────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT = 0.22    # 2yr realized annualized vol
+VOL_ANNUAL_PCT = 0.28    # realized vol elevated post-drawdown (52wk range now spans 2x)
 VOL_BETA       = 0.75    # beta vs S&P 500
-VOL_52W_LOW    = 158.58  # 52-week low
+VOL_52W_LOW    = 149.19  # 52-week low
 VOL_52W_HIGH   = 313.28  # 52-week high
-VOL_DIVIDEND   = 2.20
+VOL_DIVIDEND   = 2.14
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -235,7 +236,7 @@ print(f"  not-growing ECC maintenance business. JOINT event: each alone doesn't 
 # ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2025E non-GAAP, USD)")
+print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2026E non-GAAP, USD)")
 print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  [enterprise ERP floor; raised from 12x: SaaS raises defensibility]")
 print(f"  {'─'*60}")
 print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
