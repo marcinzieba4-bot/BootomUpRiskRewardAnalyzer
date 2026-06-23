@@ -7,14 +7,21 @@ Trough year: 2022 (rate-shock; enterprise software de-rate)
 
 New format: signal dashboard → bear anatomy → updated EPP →
             conservative growth → volatility context → probability
+
+PRICE SOURCE: SAP's primary listing is Frankfurt/Xetra (ETR: SAP, in EUR) —
+NOT the NYSE ADR. Always source CURRENT_PRICE_EUR from the German listing
+(price.google.com/quote/SAP:ETR or similar) and convert to USD here, rather
+than trusting a USD-labeled "SAP" quote, which is frequently a stale/cached
+ADR figure that drifts from the EUR price.
 """
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE    = 149.51
+CURRENT_PRICE_EUR = 135.12   # Xetra (ETR: SAP) — source of truth, EUR
+EUR_USD          = 1.147
+CURRENT_PRICE    = round(CURRENT_PRICE_EUR * EUR_USD, 2)   # USD-equivalent, for the USD-based model below
 REQUIRED_RETURN  = 0.15
 HORIZON_YEARS    = 2
-EUR_USD          = 1.147
 
 SCENARIOS = {
     "BEAR":  ( 6.0,  18,  108, "Cloud decelerates to 10%; Joule fails; migration stalls"),
@@ -94,14 +101,14 @@ CONS_SIGNALS = [
 ]
 CONS_EPS_CAGR = 0.10     # 10%/yr conservative (vs consensus 15%+)
 CONS_EXIT_PE  = 22.0     # 22x exit (de-rate from current ~21x)
-CONS_DIVIDEND = 2.14     # $2.14 USD trailing dividend (1.43% yield)
+CONS_DIVIDEND = 2.87     # USD-equiv (€2.50 Xetra dividend, 1.85% yield, × EUR/USD)
 
 # ── VOLATILITY ────────────────────────────────────────────────────────────────
 VOL_ANNUAL_PCT = 0.28    # realized vol elevated post-drawdown (52wk range now spans 2x)
 VOL_BETA       = 0.75    # beta vs S&P 500
-VOL_52W_LOW    = 149.19  # 52-week low
-VOL_52W_HIGH   = 313.28  # 52-week high
-VOL_DIVIDEND   = 2.14
+VOL_52W_LOW    = 150.44  # 52-week low, USD-equiv of €131.16 Xetra
+VOL_52W_HIGH   = 308.94  # 52-week high, USD-equiv of €269.35 Xetra
+VOL_DIVIDEND   = 2.87
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -186,7 +193,7 @@ if mkt_composite:
 # ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
 print("═" * W)
-print(f"  SAP  ·  SAP SE  ·  ${CURRENT_PRICE:.2f}  ·  Enterprise Software")
+print(f"  SAP  ·  SAP SE  ·  ${CURRENT_PRICE:.2f}  (€{CURRENT_PRICE_EUR:.2f} Xetra)  ·  Enterprise Software")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
 
