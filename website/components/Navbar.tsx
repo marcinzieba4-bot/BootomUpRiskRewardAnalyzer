@@ -7,6 +7,7 @@ import Logo from './Logo';
 const navLinks = [
   { label: 'Research', href: '/research' },
   { label: 'Signals', href: '/signals' },
+  { label: 'Reports', href: 'https://d7g7nkeytae81.cloudfront.net/reports/index.html', external: true },
   { label: 'Logic', href: '/logic' },
 ];
 
@@ -28,7 +29,20 @@ export default function Navbar() {
 
         {/* Nav links */}
         <nav className="hidden md:flex items-center gap-7">
-          {navLinks.map(({ label, href }) => {
+          {navLinks.map(({ label, href, external }) => {
+            if (external) {
+              return (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="nav-link text-sm font-medium transition-colors duration-200 pb-0.5 text-vr-muted hover:text-vr-text"
+                >
+                  {label}
+                </a>
+              );
+            }
             const isActive = pathname === href || pathname.startsWith(href + '/');
             return (
               <Link
