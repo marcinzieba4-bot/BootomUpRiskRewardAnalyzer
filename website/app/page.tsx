@@ -15,8 +15,8 @@ const features = [
     linkLabel: 'Browse Research',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M4 4h10l4 4v12H4V4Z" stroke="#d4a853" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M14 4v4h4M7 9h6M7 12h6M7 15h4" stroke="#d4a853" strokeWidth="1.4" strokeLinecap="round" />
+        <path d="M4 4h10l4 4v12H4V4Z" stroke="#9a6f12" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M14 4v4h4M7 9h6M7 12h6M7 15h4" stroke="#9a6f12" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -27,9 +27,9 @@ const features = [
     linkLabel: 'Enter App',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="6" width="20" height="13" rx="2" stroke="#d4a853" strokeWidth="1.5" />
-        <path d="M2 10h20" stroke="#d4a853" strokeWidth="1.4" />
-        <circle cx="17" cy="15.5" r="1.5" fill="#d4a853" />
+        <rect x="2" y="6" width="20" height="13" rx="2" stroke="#9a6f12" strokeWidth="1.5" />
+        <path d="M2 10h20" stroke="#9a6f12" strokeWidth="1.4" />
+        <circle cx="17" cy="15.5" r="1.5" fill="#9a6f12" />
       </svg>
     ),
   },
@@ -40,8 +40,8 @@ const features = [
     linkLabel: 'Read the Methodology',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 3L21 8v8L12 21 3 16V8L12 3Z" stroke="#d4a853" strokeWidth="1.5" />
-        <circle cx="12" cy="12" r="3" stroke="#d4a853" strokeWidth="1.4" />
+        <path d="M12 3L21 8v8L12 21 3 16V8L12 3Z" stroke="#9a6f12" strokeWidth="1.5" />
+        <circle cx="12" cy="12" r="3" stroke="#9a6f12" strokeWidth="1.4" />
       </svg>
     ),
   },
@@ -52,8 +52,8 @@ const features = [
     linkLabel: 'Enter App',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M4 16L9 9l4 4 4-5 3 3" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="19" cy="5" r="2" stroke="#d4a853" strokeWidth="1.4" />
+        <path d="M4 16L9 9l4 4 4-5 3 3" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="19" cy="5" r="2" stroke="#9a6f12" strokeWidth="1.4" />
       </svg>
     ),
   },
@@ -64,8 +64,8 @@ const features = [
     linkLabel: 'See Methodology',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="9" stroke="#d4a853" strokeWidth="1.5" />
-        <path d="M3 12h18M12 3c-3 3-4 5.4-4 9s1 6 4 9M12 3c3 3 4 5.4 4 9s-1 6-4 9" stroke="#d4a853" strokeWidth="1.4" />
+        <circle cx="12" cy="12" r="9" stroke="#9a6f12" strokeWidth="1.5" />
+        <path d="M3 12h18M12 3c-3 3-4 5.4-4 9s1 6 4 9M12 3c3 3 4 5.4 4 9s-1 6-4 9" stroke="#9a6f12" strokeWidth="1.4" />
       </svg>
     ),
   },
@@ -76,8 +76,8 @@ const features = [
     linkLabel: 'View Plans',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2L22 7v10L12 22 2 17V7L12 2Z" stroke="#d4a853" strokeWidth="1.5" />
-        <path d="M8 12l3 3 5-5" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 2L22 7v10L12 22 2 17V7L12 2Z" stroke="#9a6f12" strokeWidth="1.5" />
+        <path d="M8 12l3 3 5-5" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -256,7 +256,7 @@ export default function HomePage() {
                   <span>{date}</span>
                   <span>{readTime}</span>
                   <svg className="opacity-0 group-hover:opacity-100 transition-opacity" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M3 7h8M8 4l3 3-3 3" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M3 7h8M8 4l3 3-3 3" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </Link>

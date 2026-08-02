@@ -1,7 +1,7 @@
 """
 CSCO  ·  Cisco Systems, Inc.  ·  NASDAQ: CSCO
-Bottom-up signal model  ·  Enterprise Networking / AI Infrastructure Fabric / Cybersecurity
-Date: 2026-06-09
+Bottom-up signal model  ·  Enterprise Networking / AI Ethernet Fabric / Cybersecurity
+Date: 2026-08-02
 """
 
 import math
@@ -9,44 +9,51 @@ import math
 # ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
 TICKER        = "CSCO"
 COMPANY       = "Cisco Systems, Inc."
-SECTOR        = "Enterprise Networking · AI Infrastructure Fabric · Cybersecurity · NASDAQ: CSCO"
-CURRENT_PRICE = 118.20       # USD; as of 2026-06-09; up ~90% in 12 months; near 52-week high
-VOL_52W_LOW   =  62.15       # June 2025 trough; pre-AI-networking re-rating
-VOL_52W_HIGH  = 124.80       # May 2026 AI fabric + Silicon One momentum peak
-SHARES_OUT_M  = 4_020.0      # millions; declining ~2%/yr via buybacks
-ANNUAL_DIV    = 1.68         # $0.42/quarter = $1.68/yr; 14-year dividend growth streak
+SECTOR        = "Enterprise Networking · AI Ethernet Fabric · Cybersecurity · NASDAQ: CSCO"
+CURRENT_PRICE = 115.99       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   =  65.75       # 2025 trough; pre-AI-networking re-rating
+VOL_52W_HIGH  = 130.37       # 2026 AI-fabric momentum peak
+SHARES_OUT_M  = 3_941.0      # millions; $457.2B mkt cap / $115.99; ~2%/yr buyback
+ANNUAL_DIV    = 1.68         # $0.42/quarter; 14-year dividend growth streak; yield ~1.45%
 
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B); fiscal year ends July 2026
+# ── SEGMENT REVENUE BRIDGE (FY2026E; fiscal year ends late July) ─────────────
+# FY2026 guidance: revenue $62.8–63.0B, non-GAAP EPS $4.27–4.29
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Networking (Switching/Routing)",  21.0, 15.0, 27.0, "Catalyst 9000/Silicon One; AI cluster spine/ToR fabric; ethernet re-rating"),
-    ("Security",                        10.5,  7.5, 14.0, "Hypershield AI; XDR; identity; fastest-growing segment +22% YoY"),
-    ("Collaboration (Webex/Video)",      4.0,  3.0,  5.5, "Webex AI; Teams competition structural drag; modest growth"),
-    ("Observability & Services",         6.5,  5.0,  9.0, "AppDynamics; ThousandEyes; Splunk integration; recurring ARR"),
-    ("Splunk (Security/Observability)",  4.5,  3.0,  7.0, "Acquired Mar 2024 $28B; ARR $4B+; full integration by FY2027"),
+    ("Networking (switch/route/optics)", 30.5, 26.0, 36.0, "Silicon One + optics into AI clusters; Catalyst enterprise refresh; the swing factor"),
+    ("Security (incl. Splunk)",          12.5, 11.0, 15.5, "Hypershield, XDR, identity; +22% YoY; fastest-growing and highest-multiple segment"),
+    ("Services (support/maintenance)",   13.1, 12.6, 14.0, "Attached annuity on the installed base; the reason the bear case has a floor"),
+    ("Observability (Splunk platform)",   2.9,  2.6,  3.6, "Splunk core; cross-sell into security is the $28B acquisition thesis"),
+    ("Collaboration (Webex)",             3.9,  3.4,  4.5, "Structural share loss to Teams/Zoom; managed for cash, not growth"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.665   # blended non-GAAP; hardware mix + Splunk lifting toward 67%
-GROSS_MARGIN_BULL = 0.700   # BULL: software/security mix reaches 50%; Splunk at scale
-OPEX_FIXED_B      = 16.5    # non-GAAP R&D + SG&A ($B)
-TAX_RATE          = 0.190   # effective; US-based; standard
+# Margin assumptions (non-GAAP)
+GROSS_MARGIN_CURR = 0.680   # FY2026E non-GAAP gross margin
+GROSS_MARGIN_BULL = 0.695   # BULL: security/software mix lifts blend
+OPEX_FIXED_B      = 22.2    # R&D + SG&A ($B); back-solved to FY2026 guided EPS
+TAX_RATE          = 0.190   # non-GAAP effective rate
+
+# ── AI ORDER BOOK (the Cisco-specific calculator) ────────────────────────────
+AI_ORDERS_FY2026_B = 9.0    # $B FY2026 AI infrastructure orders (raised from $5.3B YTD at Q3)
+AI_REVENUE_FY26_B  = 4.0    # $B FY2026 AI revenue guidance
+AI_ORDERS_FY2025_B = 2.0    # $B prior year — the inflection that drove the re-rating
+RESTRUCTURING_B    = 1.0    # $B charges through FY2027 (~$450M in Q4 FY2026)
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 4.40        # consensus $4.30–$4.55 non-GAAP FY2026 (July 2026)
-PE_PESSIMISTIC = 16.0        # trough: hardware networking at commodity risk; 2022-23 trough was 12-14×
-EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)   # $70
+EPS_FY2026E    = 4.28        # FY2026 company guidance midpoint, non-GAAP ($4.27–$4.29)
+PE_PESSIMISTIC = 16.0        # trough P/E: Cisco's 10-yr average is ~15×; 16× credits the
+                             # improved security/software mix but assumes the AI premium unwinds
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 3.20, 14,  45, "AI capex freeze; switching competition (Arista/Juniper); Splunk integration failure; EPS $3.20 → 14×"),
-    "BASE":  ( 4.80, 24, 115, "AI networking steady; Splunk ARR grows to $6B; security +15%/yr; EPS $4.80 → 24× = $115"),
-    "BULL":  ( 6.50, 28, 182, "Silicon One wins AI cluster hyperscaler fabric; Splunk $8B ARR; security platform; EPS $6.50 → 28×"),
-    "XBULL": (10.00, 32, 320, "CSCO = AI networking standard + cybersecurity platform; enterprise full-stack; EPS $10 → 32×"),
+    "BEAR":  ( 3.10, 16,   51, "AI order digestion; hyperscalers move to Broadcom/white-box; refresh cycle ends"),
+    "BASE":  ( 5.20, 20,  104, "FY2026 guide met; ~10% EPS CAGR; AI revenue $6–7B; multiple normalises 27× → 20×"),
+    "BULL":  ( 5.90, 28,  165, "Silicon One takes durable AI-ethernet share; $18–20B AI orders; Splunk cross-sell lands"),
+    "XBULL": ( 7.00, 32,  224, "Cisco = default AI networking standard; sovereign AI buildouts; 20%+ EPS CAGR"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -77,52 +84,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "AI networking orders (Silicon One/Catalyst)",
-        "weight":     0.30,
-        "thresholds": ("<$3B",  "≥$6B",  "≥$9B",  "≥$15B"),
-        "now":        "~$9B",
-        "score":      3,
-        "comment":    "AI orders $9B FY2026 guided (raised from $1B FY2025); Silicon One GPU cluster fabric wins at hyperscalers",
+        "name":       "AI infrastructure orders (FY, $B)",
+        "weight":     0.25,
+        "thresholds": ("<$3B",   "≥$6B",   "≥$12B",  "≥$20B"),
+        "now":        "$9B",
+        "score":      2,
+        "comment":    "FY2026 raised to $9B from ~$2B in FY2025. Real inflection — but the guide is now the hurdle",
     },
     {
-        "name":       "Security ARR growth YoY",
-        "weight":     0.25,
-        "thresholds": ("<8%",   "≥15%",  "≥25%",  "≥40%"),
+        "name":       "Total revenue YoY growth",
+        "weight":     0.20,
+        "thresholds": ("<0%",    "≥4%",    "≥9%",    "≥15%"),
+        "now":        "+12%",
+        "score":      3,
+        "comment":    "Q3 FY2026 revenue $15.8B (+12%); best growth in a decade. Splunk anniversaried, so this is organic",
+    },
+    {
+        "name":       "Security revenue YoY growth",
+        "weight":     0.15,
+        "thresholds": ("<5%",    "≥12%",   "≥20%",   "≥30%"),
         "now":        "+22%",
         "score":      3,
-        "comment":    "Hypershield AI + XDR platform +22% YoY; $10.5B security revenue; fastest segment; Splunk integration",
+        "comment":    "Hypershield + XDR + Splunk; the segment that justifies a software multiple rather than a hardware one",
     },
     {
-        "name":       "Splunk ARR growth post-acquisition",
-        "weight":     0.20,
-        "thresholds": ("<5%",   "≥12%",  "≥22%",  "≥35%"),
-        "now":        "+14%",
+        "name":       "Non-GAAP operating margin",
+        "weight":     0.15,
+        "thresholds": ("<28%",   "≥31%",   "≥34%",   "≥37%"),
+        "now":        "~32.8%",
         "score":      2,
-        "comment":    "Splunk ARR $4.5B growing +14% post-acquisition; integration on track; cross-sell to 35K Cisco accounts",
+        "comment":    "Holding up, but AI/hyperscaler revenue carries lower margin than enterprise. Mix dilutes as AI scales",
     },
     {
-        "name":       "Total product revenue YoY",
+        "name":       "Forward P/E vs 10-yr average (~15×)",
+        "weight":     0.15,
+        "thresholds": (">30x",   "≤24x",   "≤18x",   "≤14x"),
+        "now":        "27.1x",
+        "score":      1,
+        "comment":    "THE PROBLEM. 27.1× FY2026E EPS for a ~10% EPS grower = PEG 2.7×. The re-rating already happened",
+    },
+    {
+        "name":       "Product orders ex-AI (enterprise refresh)",
         "weight":     0.10,
-        "thresholds": ("<-5%",  "≥3%",   "≥8%",   "≥15%"),
+        "thresholds": ("<0%",    "≥5%",    "≥10%",   "≥18%"),
         "now":        "+6%",
         "score":      2,
-        "comment":    "Product revenue recovering after FY2024 inventory digestion; networking +8% led by AI fabric orders",
-    },
-    {
-        "name":       "Non-GAAP gross margin",
-        "weight":     0.10,
-        "thresholds": ("<60%",  "≥64%",  "≥68%",  "≥72%"),
-        "now":        "66.5%",
-        "score":      2,
-        "comment":    "Software mix growing; Splunk dilutive near-term but ARR accretive; hardware pricing stable",
-    },
-    {
-        "name":       "Software/subscription % of total revenue",
-        "weight":     0.05,
-        "thresholds": ("<35%",  "≥42%",  "≥50%",  "≥60%"),
-        "now":        "~45%",
-        "score":      2,
-        "comment":    "Cisco transformation: subscriptions 45% of revenue; Splunk adds pure-software ARR; structural shift",
+        "comment":    "Campus/branch refresh is mid-cycle, not early. Wi-Fi 7 + Catalyst upgrade wave is 2–3 yrs in",
     },
 ]
 
@@ -132,12 +139,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Installed-base moat — 100K+ enterprise customers; IOS ecosystem; multi-decade switching cost",  +0.7, 0.25),
-    ("+", "Silicon One + AI fabric — proprietary ASIC for AI cluster spine/ToR; hyperscaler design wins",  +0.5, 0.20),
-    ("-", "Arista structural threat — ANET taking enterprise AI fabric share; superior software stack",     -0.6, 0.20),
-    ("-", "Splunk integration execution risk — $28B acquisition; culture clash; churn during migration",    -0.4, 0.15),
-    ("+", "Security platform convergence — Hypershield + XDR + identity = sticky ARR; 35K cross-sell",    +0.4, 0.15),
-    ("-", "Valuation stretch — 90% 12-month run; 26.9× FY2026E; easy money made; mean reversion risk",    -0.3, 0.05),
+    ("+", "Installed-base annuity — $13.1B services/support; multi-year contracts; the bear-case floor", +0.6, 0.20),
+    ("+", "Silicon One + optics — genuine merchant AI-fabric position; $9B orders from ~$2B a year ago",  +0.8, 0.20),
+    ("-", "Multiple risk — 27.1× forward vs ~15× 10-yr average; the AI re-rating is already in the price", -1.0, 0.25),
+    ("-", "Hyperscaler in-sourcing — Broadcom Tomahawk + white-box erode the merchant ethernet TAM",      -0.7, 0.15),
+    ("+", "Capital return — $1.68 dividend (14-yr growth streak) + steady buyback; a real yield floor",   +0.4, 0.10),
+    ("-", "Splunk digestion — $28B deal still diluting margin; up to $1B restructuring through FY2027",   -0.5, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -163,8 +170,6 @@ if ratio_b != float("inf") and ratio_b < 0.75:
     signal_short, signal_full = "BUY",       "◉ BUY"
 elif ratio_b != float("inf") and ratio_b < 1.10:
     signal_short, signal_full = "ACCUMULATE","◎ ACCUMULATE"
-elif ratio_b != float("inf") and ratio_b < 1.50:
-    signal_short, signal_full = "HOLD",      "▷ HOLD/TRIM"
 elif ratio_b != float("inf") and ratio_b < 1.75:
     signal_short, signal_full = "WATCHLIST", "◐ WATCHLIST"
 else:
@@ -173,8 +178,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 5.50    # FY2028E conservative: 12% EPS CAGR (Splunk matures; networking stable)
-CONS_PE_2YR   = 20      # rerates from ~27× toward 20× as AI networking normalizes
+CONS_EPS_2YR  = 5.10    # conservative FY2028E: ~9% EPS CAGR off the $4.28 guide
+CONS_PE_2YR   = 20      # multiple reverts partway from 27× toward the ~15× 10-yr average
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -192,179 +197,180 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Enterprise Networking / AI Infrastructure Fabric / Cybersecurity")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Networking / AI Ethernet Fabric / Security")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<35}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<36}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<35}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<36}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<35}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<36}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Company FY2026 guidance: $62.8–63.0B revenue, non-GAAP EPS $4.27–$4.29")
 print()
 
 # EPS bridge
 shares    = SHARES_OUT_M / 1000
 curr_gp   = curr_total * GROSS_MARGIN_CURR
 curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-curr_eps  = round(curr_ni / shares, 2)
+curr_eps  = round(curr_oi * (1 - TAX_RATE) / shares, 2)
 
-bull_gp      = bull_total * GROSS_MARGIN_BULL
-bull_oi      = bull_gp - OPEX_FIXED_B
-bull_ni      = bull_oi * (1 - TAX_RATE)
-shares_b     = shares * 0.96   # ~2%/yr buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_gp   = bull_total * GROSS_MARGIN_BULL
+bull_oi   = bull_gp - OPEX_FIXED_B * 1.08
+shares_b  = shares * 0.96          # ~2%/yr buyback over 2yr
+bull_eps_imp = round(bull_oi * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp      = bear_total * GROSS_MARGIN_CURR * 0.96   # mix shift to hardware (lower margin)
-bear_oi      = bear_gp - OPEX_FIXED_B * 0.97           # partial cost response
-bear_ni      = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_gp   = bear_total * 0.655     # AI/hyperscaler mix + price competition compress GM
+bear_oi   = bear_gp - OPEX_FIXED_B * 0.97
+bear_eps_imp = round(max(0, bear_oi) * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share")
+print(f"  (company guidance ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 28× = ~${bull_eps_imp*28:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − opex, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 28× = ~${bull_eps_imp*28:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.96:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 14× trough P/E (hardware commodity risk) = ~${bear_eps_imp*14:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × 65.5% GM − opex")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 16× (≈ the 10-yr avg multiple) = ~${bear_eps_imp*16:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print()
+print(f"  ⚠ THE STRUCTURAL POINT: only {(bull_total-bear_total)/curr_total*100:.0f}% separates the bear and bull REVENUE cases")
+print(f"  (${bear_total:.1f}B vs ${bull_total:.1f}B). But the bear/bull PRICE spread is ${bear_price}–${bull_price}, a {bull_price/bear_price:.1f}× range.")
+print(f"  Almost all of that spread is the MULTIPLE (15× vs 28×), not the earnings. You are")
+print(f"  underwriting a re-rating call, not an execution call.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev        = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-eps_per_1B_security   = 1.0 * 0.75 * (1 - TAX_RATE) / shares   # security ~75% gross margin
-eps_per_1B_networking = 1.0 * 0.55 * (1 - TAX_RATE) / shares   # networking ~55% gross margin
+eps_per_1B_net  = 1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1B_sec  = 1.0 * 0.78 * (1 - TAX_RATE) / shares      # security carries ~78% GM
+eps_per_1x_pe   = EPS_FY2026E                                # 1 turn of multiple
 
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B security/software revenue:    +${eps_per_1B_security:.3f}/EPS  = +${eps_per_1B_security*24:.1f}/share at 24× P/E")
-print(f"  Every $1B networking revenue:           +${eps_per_1B_networking:.3f}/EPS  = +${eps_per_1B_networking*24:.1f}/share at 24× P/E")
-print(f"  1pp GM expansion (mix/Splunk scale):    +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*24:.1f}/share at 24× P/E")
-print(f"  1% buyback (~40M shares):               +${curr_eps*0.01:.3f}/EPS  (mechanical accretion; ongoing authorization)")
+print(f"  Every $1B networking revenue (68% GM):    +${eps_per_1B_net:.3f}/EPS  = +${eps_per_1B_net*20:.2f}/share at 20× P/E")
+print(f"  Every $1B security revenue (78% GM):      +${eps_per_1B_sec:.3f}/EPS  = +${eps_per_1B_sec*20:.2f}/share at 20× P/E")
+print(f"  Every 1 turn of P/E:                      ±${eps_per_1x_pe:.2f}/share  ({eps_per_1x_pe/CURRENT_PRICE*100:.1f}% of the stock)")
+print(f"  ↑ this is why the multiple, not the P&L, is the whole argument at ${CURRENT_PRICE:.2f}")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (AI networking / Security ARR / Splunk / Product revenue framework)")
+print("  ① SIGNAL DASHBOARD  (AI orders / growth / security mix / valuation discipline)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<44}  {'BEAR':>6}  {'BASE':>6}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>7}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<44}  {ths[0]:>6}  {ths[1]:>6}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>7}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:90]:<90}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<34}  {'Current':>9}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("AI networking orders",           "~$9B",    "<$3B",    "−$6B",   "Arista wins hyperscaler GPU fabric; Silicon One loses bake-off"),
-    ("Security ARR growth YoY",        "+22%",    "<+8%",    "−14pp",  "Microsoft Security suite bundles free with M365 E5"),
-    ("Splunk ARR growth",              "+14%",    "<+5%",    "−9pp",   "Elastic/Datadog displace Splunk during integration chaos"),
-    ("Total product revenue YoY",      "+6%",     "<-5%",    "−11pp",  "Macro recession; enterprise IT freeze; inventory build"),
-    ("Non-GAAP gross margin",          "66.5%",   "<60%",    "−6.5pp", "Competitive pricing pressure on switching hardware"),
-    ("Software/subscription % rev",   "~45%",    "<35%",    "−10pp",  "Hardware mix shift back; software deals delayed"),
+    ("AI infrastructure orders",   "$9B",     "<$3B",    "−$6B",   "Hyperscalers standardise on Broadcom/white-box"),
+    ("Total revenue YoY",          "+12%",    "<0%",     "−12pp",  "AI digestion + enterprise refresh cycle completes"),
+    ("Security revenue YoY",       "+22%",    "<5%",     "−17pp",  "Palo Alto/CrowdStrike win the platform consolidation"),
+    ("Non-GAAP operating margin",  "~32.8%",  "<28%",    "−5pp",   "Hyperscaler pricing + Splunk dilution + restructuring"),
+    ("Forward P/E",                "27.1x",   "≤15x",    "−12x",   "AI premium fully unwinds to the 10-yr average"),
+    ("Product orders ex-AI",       "+6%",     "<0%",     "−6pp",   "Enterprise IT budgets redirected to AI capex"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<34}  {curr:>9}  {bear_v:>9}  {move:>8}  {trigger[:46]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: Arista wins the dominant share of AI hyperscaler cluster spine/ToR fabric,")
-print(f"  combined with a macro IT spending freeze and Splunk integration failure. Networking falls")
-print(f"  from $21B to $15B; security ARR growth stalls at <8%. EPS collapses toward $3.20 → 14×")
-print(f"  trough P/E (hardware commodity risk; 2022-23 CSCO trough was 12-14×) = ${bear_price}.")
-print(f"  Note: $45 is NOT permanent impairment — 100K enterprise customer base + IOS ecosystem")
-print(f"  provides a durable moat floor. Recovery to ~${bear_price+30}–${bear_price+50} in 2yr is base case post-shock.")
+print(f"  KEY TRIGGER: Cisco's AI revenue is merchant silicon and optics sold to a handful of")
+print(f"  hyperscalers who are all actively building alternatives. Broadcom's Tomahawk line and")
+print(f"  white-box designs address the same racks. Cisco does not need to lose the business —")
+print(f"  it only needs to stop GAINING share for the ${AI_ORDERS_FY2026_B:.0f}B order line to flatten, and")
+print(f"  the entire 27× multiple is underwritten by that line continuing to compound.")
+print(f"  Note: BEAR ${bear_price} is a multiple story, not a solvency story. ${SEG_DATA[2][1]:.1f}B of sticky services")
+print(f"  revenue and a 14-yr dividend growth streak mean the floor is a valuation floor.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (consensus $4.30–$4.55; non-GAAP; GAAP ~$3.60 with amort)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (hardware commodity floor; FY2022-23 trough 12-14×; mid at 16×)")
+print(f"  FY2026E non-GAAP EPS (company guide):  ${EPS_FY2026E:.2f}  ($4.27–$4.29)")
+print(f"  Pessimistic P/E at trough:              {PE_PESSIMISTIC:.0f}×  (10-yr average ~15×; 16× credits the security mix)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP reflects the AI networking re-rating: CSCO is no longer")
-print(f"  priced as a legacy hardware vendor but as an AI infrastructure platform. At $118.20 and")
-print(f"  FY2026E EPS $4.40, the P/E is 26.9× — up from ~12× two years ago. The risk is that the")
-print(f"  re-rating is complete: Silicon One wins are priced in; incremental upside requires BULL.")
-print(f"  EPP path: FY2028E EPS ~$5.50 × {PE_PESSIMISTIC:.0f}× = ${5.50*PE_PESSIMISTIC:.0f} floor by late 2028 (EPP growing ~12%/yr).")
-print(f"  At 20× mid-cycle P/E: ${EPS_FY2026E:.2f} × 20 = ${EPS_FY2026E*20:.0f}  — still 25% below current price.")
+print(f"  A +{epp_gap_pct:.0f}% premium to the EPP floor is the widest gap in the large-cap networking")
+print(f"  space. At ${CURRENT_PRICE:.2f} and FY2026E EPS ${EPS_FY2026E:.2f}, the P/E is {CURRENT_PRICE/EPS_FY2026E:.1f}× — versus a 10-year")
+print(f"  average near 15×. Cisco has spent two decades as a 13–17× stock; it is being paid")
+print(f"  a cloud multiple for the first time since 2000. That can persist — the AI order book")
+print(f"  is genuinely different — but it is an assumption, not a margin of safety.")
+print(f"  EPP path: FY2028E EPS ~$5.10 × {PE_PESSIMISTIC:.0f}× = ${5.10*PE_PESSIMISTIC:.0f} floor by FY2028 (EPP growing ~9%/yr).")
+print(f"  At the 15× 10-yr average: ${EPS_FY2026E:.2f} × 15 = ${EPS_FY2026E*15:.0f}  — {(1-EPS_FY2026E*15/CURRENT_PRICE)*100:.0f}% below spot.")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: P/E rerates toward 20× as AI networking normalizes)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: guide met, multiple reverts partway toward the average)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (12% EPS CAGR: Splunk ARR matures; networking stable)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from 27× toward 20× as AI networking cycle normalizes)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr; 14-yr dividend growth streak)")
+print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (~9% EPS CAGR off the ${EPS_FY2026E:.2f} guide)")
+print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (27× → 20×; still a 33% premium to the 10-yr average)")
+print(f"  Conservative equity value:            ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:               ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:            {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE 90% RUN PROBLEM: CSCO is up ~90% in 12 months driven by the AI networking re-rating")
-print(f"  (Silicon One + $9B AI orders). The business has genuinely improved — but at $118 and")
-print(f"  26.9× FY2026E EPS, the easy money is made. BASE scenario ($115) is essentially at current")
-print(f"  price — meaning no upside in the most likely outcome. Upside requires BULL ($182), which")
-print(f"  needs Silicon One to win the majority of hyperscaler AI cluster fabric — a coin-flip vs")
-print(f"  Arista. The correct posture: HOLD existing positions; add aggressively on pullback to")
-print(f"  $95–105 where ratio_b improves materially.")
-print(f"  For conservative 2yr to break even at 20× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~{((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2026E - 1)*100:.1f}% EPS growth by FY2028E — achievable only at BASE+.")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at 20× P/E; ratio_b <1.0×)")
+print(f"  THE CORE PROBLEM: the BASE scenario (${SCENARIOS['BASE'][2]}) sits BELOW the current price of ${CURRENT_PRICE:.2f}.")
+print(f"  In the single most likely outcome, you lose money. Cisco has to deliver something")
+print(f"  closer to BULL just for you to break even — and BULL requires the 28× multiple to")
+print(f"  survive two more years, which has not happened in this stock since the dot-com era.")
+print(f"  Breakeven at 20× P/E requires FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f} (+{((CURRENT_PRICE - cons_divs)/CONS_PE_2YR/EPS_FY2026E-1)*100:.0f}% from FY2026E).")
+print(f"  ACCUMULATE trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.80 + cons_divs, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs, 0):.0f} (where the conservative case turns positive)")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.35
-beta        = 1.20
+annual_vol  = 0.30
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: 52W low ($62.15) was the pre-AI-networking trough; stock has nearly doubled since")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  14-year dividend growth streak)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; AI-networking cycle + Splunk integration uncertainty)")
-print(f"  Beta vs S&P 500:      {beta:.2f}  (enterprise tech; rates-sensitive; AI capex cycle amplifier)")
+print(f"  Move off the low:     +{(CURRENT_PRICE/VOL_52W_LOW-1)*100:.0f}%  in 12 months — the AI-networking re-rating in one number")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  14-yr growth streak)")
+print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated vs Cisco's historical ~22%; now an AI-beta name)")
+print(f"  Beta vs S&P 500:      1.05  (has risen with the AI attachment; used to be a defensive 0.85)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (severe; Arista dominance + IT freeze tail scenario)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (Jun 2025 trough) was a peak-to-trough starting point; stock has re-rated ~90%.")
-print(f"  → Arista competitive wins in AI hyperscaler fabric is THE KEY binary for downside.")
-print(f"  → Splunk ARR milestones ($6B target) and Security ARR acceleration are KEY bull catalysts.")
-print(f"  → AVOID above $135  |  HOLD/TRIM $115–135  |  WATCHLIST $100–115  |  ACCUMULATE $90–105  |  BUY below $85")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (multiple mean-reversion, not a business collapse)")
+print(f"  → The stock sits {(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.0f}% below its 52W high and {(CURRENT_PRICE/VOL_52W_LOW-1)*100:.0f}% above its 52W low.")
+print(f"  → Quarterly AI order disclosure is the only number that matters for the multiple.")
+print(f"  → WATCHLIST at current price  |  ACCUMULATE $88–98  |  BUY below $80")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -392,25 +398,24 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is ABOVE the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 — between")
-print(f"  BASE and BULL. The model scores the fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0 — between BASE and BULL.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: at $118, you are paying full credit for BASE execution with no margin of")
-print(f"  safety. The BULL case ($182) requires Silicon One hyperscaler dominance — not yet proven.")
-print(f"  Arista (ANET) remains a credible and growing threat to that thesis.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0 — the market is")
+print(f"  pricing execution between BASE and BULL. The model's adjusted composite is {ADJ_COMPOSITE:.2f}/4.0.")
+print(f"  The gap ({ADJ_GAP:+.2f}) says the stock is {valuation_label.lower()}.")
+print(f"  Cisco is doing well. That is not in dispute — revenue +12%, security +22%, AI orders")
+print(f"  4.5× year-over-year. The question is what you PAY for it, and at {CURRENT_PRICE/EPS_FY2026E:.1f}× forward the")
+print(f"  answer is: nearly everything good that can happen. Good company, demanding price.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) FY2026 Q4 earnings (August 2026) — AI order backlog disclosure; Splunk ARR update")
-print(f"  (2) Silicon One hyperscaler design win announcements — GPU cluster fabric RFP decisions")
-print(f"  (3) Arista market share data — if ANET takes >35% of AI spine, CSCO upside collapses")
-print(f"  (4) Splunk ARR at $6B target — cross-sell synergy realization timeline confirmation")
-print(f"  (5) Security platform competitive wins — if Hypershield displaces CrowdStrike/Palo Alto")
-print(f"  AVOID above $135  |  HOLD/TRIM $115–135  |  WATCHLIST $100–115  |  ACCUMULATE $90–105  |  BUY below $85")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) FY2027 AI order guidance — the $9B FY2026 number is now the comparison base")
+print(f"  (2) Hyperscaler design wins — any public loss to Broadcom/white-box de-rates the stock")
+print(f"  (3) Security ARR trajectory — the segment that would justify a durable 25×+ multiple")
+print(f"  (4) Splunk cross-sell metrics — proof the $28B was strategic and not defensive")
+print(f"  (5) Enterprise refresh durability — Wi-Fi 7 / Catalyst cycle is mid-innings, not early")
+print(f"  WATCHLIST at ${CURRENT_PRICE:.2f}  |  ACCUMULATE $88–98  |  BUY below $80  |  TRIM above $130")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  AI orders: ${AI_ORDERS_FY2026_B:.0f}B")
 print("═" * (W + 4))
 print()
 

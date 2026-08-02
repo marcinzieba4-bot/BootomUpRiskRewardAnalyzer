@@ -6,10 +6,10 @@ import Link from 'next/link';
 const API = 'https://7qc9qknegk.execute-api.eu-north-1.amazonaws.com';
 
 const SIGNAL_META: Record<string, { icon: string; bg: string; border: string; text: string }> = {
-  ACCUMULATE: { icon: '◎', bg: 'bg-amber-500/10', border: 'border-amber-500/30', text: 'text-amber-400' },
-  WATCHLIST:  { icon: '◐', bg: 'bg-blue-500/10',  border: 'border-blue-500/30',  text: 'text-blue-400'  },
-  AVOID:      { icon: '✕', bg: 'bg-red-500/10',   border: 'border-red-500/30',   text: 'text-red-400'   },
-  BUY:        { icon: '◉', bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-400' },
+  ACCUMULATE: { icon: '◎', bg: 'bg-amber-500/10', border: 'border-amber-500/30', text: 'text-amber-700' },
+  WATCHLIST:  { icon: '◐', bg: 'bg-blue-500/10',  border: 'border-blue-500/30',  text: 'text-blue-700'  },
+  AVOID:      { icon: '✕', bg: 'bg-red-500/10',   border: 'border-red-500/30',   text: 'text-red-700'   },
+  BUY:        { icon: '◉', bg: 'bg-green-500/10', border: 'border-green-500/30', text: 'text-green-700' },
 };
 
 const SECTOR_ORDER = [
@@ -91,13 +91,13 @@ export default function SignalsPage() {
       <div className="rounded-xl border border-vr-border bg-vr-card p-6 mb-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
           {[
-            { label: '◉ BUY',        note: 'Ratio B < 0.75x',   desc: 'Floor gap dominated by upside' },
-            { label: '◎ ACCUMULATE', note: 'Ratio B 0.75–1.1x', desc: 'Balanced; edge to upside' },
-            { label: '◐ WATCHLIST',  note: 'Ratio B 1.1–1.75x', desc: 'Floor gap exceeds EPS upside' },
-            { label: '✕ AVOID',      note: 'Ratio B > 1.75x',   desc: 'Growth fully priced in' },
-          ].map(({ label, note, desc }) => (
-            <div key={label} className="p-3 rounded-lg bg-vr-bg/50">
-              <div className="font-mono text-vr-gold font-bold text-sm mb-1">{label}</div>
+            { label: '◉ BUY',        note: 'Ratio B < 0.75x',   desc: 'Floor gap dominated by upside', cls: 'text-green-700' },
+            { label: '◎ ACCUMULATE', note: 'Ratio B 0.75–1.1x', desc: 'Balanced; edge to upside',      cls: 'text-amber-700' },
+            { label: '◐ WATCHLIST',  note: 'Ratio B 1.1–1.75x', desc: 'Floor gap exceeds EPS upside',  cls: 'text-blue-700'  },
+            { label: '✕ AVOID',      note: 'Ratio B > 1.75x',   desc: 'Growth fully priced in',        cls: 'text-red-700'   },
+          ].map(({ label, note, desc, cls }) => (
+            <div key={label} className="p-3 rounded-lg bg-vr-surface">
+              <div className={`font-mono font-bold text-sm mb-1 ${cls}`}>{label}</div>
               <div className="text-vr-text text-xs font-medium mb-0.5">{note}</div>
               <div className="text-vr-faint text-xs">{desc}</div>
             </div>

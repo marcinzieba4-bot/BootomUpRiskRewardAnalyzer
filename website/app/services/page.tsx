@@ -78,8 +78,8 @@ export default function ServicesPage() {
       <div className="flex items-center justify-center gap-4 mb-14 p-4 rounded-xl border border-vr-gold/20 bg-vr-gold/5 max-w-2xl mx-auto">
         <div className="w-10 h-10 rounded-lg bg-vr-gold/10 border border-vr-gold/20 flex items-center justify-center shrink-0">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 2L18 6v8L10 18 2 14V6L10 2Z" stroke="#d4a853" strokeWidth="1.5" />
-            <path d="M6 10l3 3 5-5" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M10 2L18 6v8L10 18 2 14V6L10 2Z" stroke="#9a6f12" strokeWidth="1.5" />
+            <path d="M6 10l3 3 5-5" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         <div>
@@ -134,10 +134,10 @@ export default function ServicesPage() {
                     viewBox="0 0 14 14"
                     fill="none"
                   >
-                    <circle cx="7" cy="7" r="6" stroke="#d4a853" strokeWidth="1.2" />
+                    <circle cx="7" cy="7" r="6" stroke="#9a6f12" strokeWidth="1.2" />
                     <path
                       d="M4.5 7l2 2 3-3"
-                      stroke="#d4a853"
+                      stroke="#9a6f12"
                       strokeWidth="1.2"
                       strokeLinecap="round"
                       strokeLinejoin="round"

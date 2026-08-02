@@ -9,21 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Light theme. Gold stays the brand accent but is darkened so it
+        // clears WCAG AA as text and as an icon stroke on white.
         vr: {
-          bg:       '#080810',
-          surface:  '#0d0d1a',
-          card:     '#10101e',
-          border:   '#1c1c2e',
-          gold:     '#d4a853',
-          'gold-light': '#f0c96a',
-          'gold-dim':   '#8b6914',
-          text:     '#e8e8f4',
-          muted:    '#6b7096',
-          faint:    '#3d4068',
-          green:    '#22c55e',
-          blue:     '#60a5fa',
-          red:      '#ef4444',
-          amber:    '#f59e0b',
+          bg:       '#ffffff',
+          surface:  '#f6f6f9',
+          card:     '#ffffff',
+          border:   '#e5e5ee',
+          gold:     '#9a6f12',   // 5.0:1 on white — safe for text and icons
+          'gold-light': '#b8862a',
+          'gold-dim':   '#c9a961',
+          text:     '#12122a',
+          muted:    '#565b78',
+          faint:    '#8b90ab',
+          green:    '#15803d',
+          blue:     '#1d4ed8',
+          red:      '#dc2626',
+          amber:    '#b45309',
         },
       },
       fontFamily: {
@@ -33,9 +35,13 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-radial':
-          'radial-gradient(ellipse at 20% 50%, rgba(212,168,83,0.06) 0%, transparent 55%), radial-gradient(ellipse at 80% 15%, rgba(96,165,250,0.04) 0%, transparent 50%)',
+          'radial-gradient(ellipse at 20% 50%, rgba(154,111,18,0.07) 0%, transparent 55%), radial-gradient(ellipse at 80% 15%, rgba(29,78,216,0.05) 0%, transparent 50%)',
         'card-shine':
-          'linear-gradient(135deg, rgba(212,168,83,0.03) 0%, transparent 50%)',
+          'linear-gradient(135deg, rgba(154,111,18,0.045) 0%, transparent 55%)',
+      },
+      boxShadow: {
+        'vr-card':  '0 1px 2px rgba(18,18,42,0.04), 0 1px 3px rgba(18,18,42,0.06)',
+        'vr-raised': '0 8px 28px rgba(18,18,42,0.10), 0 2px 6px rgba(18,18,42,0.05)',
       },
       keyframes: {
         'fade-up': {
@@ -43,8 +49,8 @@ const config: Config = {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         'pulse-glow': {
-          '0%, 100%': { filter: 'drop-shadow(0 0 6px rgba(212,168,83,0.4))' },
-          '50%':       { filter: 'drop-shadow(0 0 14px rgba(212,168,83,0.8))' },
+          '0%, 100%': { filter: 'drop-shadow(0 1px 2px rgba(18,18,42,0.12))' },
+          '50%':       { filter: 'drop-shadow(0 2px 8px rgba(154,111,18,0.38))' },
         },
         shimmer: {
           '0%':   { backgroundPosition: '-200% 0' },

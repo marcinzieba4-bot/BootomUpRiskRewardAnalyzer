@@ -93,7 +93,7 @@ export default function AppPage() {
                     <span className="font-medium">{name}</span>
                     <span className="ml-auto">
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M5 4l3 3-3 3" stroke="#475569" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M5 4l3 3-3 3" stroke="#8b90ab" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </span>
                   </button>
@@ -146,8 +146,8 @@ export default function AppPage() {
             <div className="flex items-center gap-4 p-4 rounded-xl border border-vr-gold/20 bg-vr-gold/4">
               <div className="w-9 h-9 rounded-lg border border-vr-gold/25 bg-vr-gold/10 flex items-center justify-center shrink-0">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M9 1.5L17 5.5v7L9 16.5 1 12.5v-7L9 1.5Z" stroke="#d4a853" strokeWidth="1.4" />
-                  <path d="M6 9l2.5 2.5L12 6" stroke="#d4a853" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M9 1.5L17 5.5v7L9 16.5 1 12.5v-7L9 1.5Z" stroke="#9a6f12" strokeWidth="1.4" />
+                  <path d="M6 9l2.5 2.5L12 6" stroke="#9a6f12" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <div>
@@ -212,8 +212,8 @@ export default function AppPage() {
               </h3>
               <div className="space-y-3">
                 {[
-                  { urgency: 'HIGH', color: 'text-red-400 bg-red-500/10 border-red-500/20', text: 'Reduce cross-chain leverage on Arbitrum positions — liquidation within 12% of current price.' },
-                  { urgency: 'MED',  color: 'text-amber-400 bg-amber-500/10 border-amber-500/20', text: 'Rotate 18% USDC idle balance into short-duration yield on Base (est. +4.2% APY).' },
+                  { urgency: 'HIGH', color: 'text-red-700 bg-red-500/10 border-red-500/20', text: 'Reduce cross-chain leverage on Arbitrum positions — liquidation within 12% of current price.' },
+                  { urgency: 'MED',  color: 'text-amber-700 bg-amber-500/10 border-amber-500/20', text: 'Rotate 18% USDC idle balance into short-duration yield on Base (est. +4.2% APY).' },
                   { urgency: 'LOW',  color: 'text-vr-green bg-vr-green/10 border-vr-green/20', text: 'ETH staking ratio below peer cohort median — consider increasing liquid staking allocation.' },
                 ].map(({ urgency, color, text }) => (
                   <div key={urgency + text.slice(0, 10)} className="flex items-start gap-3 p-3.5 rounded-lg bg-vr-surface border border-vr-border/50">

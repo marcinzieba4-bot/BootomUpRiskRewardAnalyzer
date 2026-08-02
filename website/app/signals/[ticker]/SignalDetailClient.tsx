@@ -7,10 +7,10 @@ import Link from 'next/link';
 const API = 'https://7qc9qknegk.execute-api.eu-north-1.amazonaws.com';
 
 const SCOLOR: Record<string, string> = {
-  ACCUMULATE: 'text-amber-400 border-amber-500/40 bg-amber-500/10',
-  WATCHLIST:  'text-blue-400  border-blue-500/40  bg-blue-500/10',
-  AVOID:      'text-red-400   border-red-500/40   bg-red-500/10',
-  BUY:        'text-green-400 border-green-500/40 bg-green-500/10',
+  ACCUMULATE: 'text-amber-700 border-amber-500/40 bg-amber-500/10',
+  WATCHLIST:  'text-blue-700  border-blue-500/40  bg-blue-500/10',
+  AVOID:      'text-red-700   border-red-500/40   bg-red-500/10',
+  BUY:        'text-green-700 border-green-500/40 bg-green-500/10',
 };
 
 export default function SignalDetailClient() {
@@ -86,7 +86,7 @@ export default function SignalDetailClient() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
         {[
           { label: 'Current Price',    value: data.sector?.includes('Prices in EUR') ? `€${data.price}` : data.sector?.includes('Prices in PLN') ? `PLN ${data.price}` : `$${data.price}` },
-          { label: 'EPP Gap',          value: `+${data.epp_gap_pct}%` },
+          { label: 'EPP Gap',          value: `${data.epp_gap_pct > 0 ? '+' : ''}${data.epp_gap_pct}%` },
           { label: 'Ratio B (Method)', value: data.ratio_b_fmt },
         ].map(({ label, value }) => (
           <div key={label} className="rounded-xl border border-vr-border bg-vr-card p-4 text-center">
@@ -102,7 +102,7 @@ export default function SignalDetailClient() {
       {report && report !== data.summary ? (
         <section className="mb-12">
           <h2 className="font-serif text-xl font-bold text-vr-text mb-6">Analyst Report</h2>
-          <div className="rounded-xl border border-vr-border bg-vr-card overflow-hidden">
+          <div className="rounded-xl border border-vr-border bg-vr-surface overflow-hidden">
             <pre className="p-6 text-xs leading-relaxed text-vr-muted font-mono overflow-x-auto whitespace-pre-wrap break-words">
               {report}
             </pre>

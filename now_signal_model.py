@@ -1,7 +1,7 @@
 """
 NOW  ·  ServiceNow, Inc.  ·  NYSE: NOW
 Bottom-up signal model  ·  Enterprise SaaS / Workflow Automation / Agentic AI Platform
-Date: 2026-06-10
+Date: 2026-08-02
 """
 
 import math
@@ -10,45 +10,54 @@ import math
 TICKER        = "NOW"
 COMPANY       = "ServiceNow, Inc."
 SECTOR        = "Enterprise SaaS · Workflow Automation · Agentic AI Platform · NYSE: NOW"
-CURRENT_PRICE = 100.58       # USD; June 9 2026; post 5-for-1 split Dec 2025; down 52% from $211.48 pre-split-adjusted ATH
-VOL_52W_LOW   = 78.40        # March 2026 trough; AI disruption fear / macro
-VOL_52W_HIGH  = 130.20       # post-split adjusted prior peak
-SHARES_OUT_M  = 1_245.0      # millions; post 5-for-1 split (was ~249M pre-split)
+CURRENT_PRICE = 111.23       # USD; close 2026-07-31 (verified live); post 5-for-1 split
+VOL_52W_LOW   =  81.24       # 2026 trough; agentic-AI disruption fear
+VOL_52W_HIGH  = 196.40       # 2025 peak (split-adjusted)
+SHARES_OUT_M  = 1_030.0      # millions; post 5-for-1 split; $115.0B mkt cap / $111.23
+ANNUAL_DIV    = 0.0          # no dividend; cash goes to R&D and buyback
 
-# Dividend: none; reinvests in growth + buybacks
-ANNUAL_DIV    = 0.0          # $/share
-
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2027E revenue by segment ($B)
+# ── SEGMENT REVENUE BRIDGE ($B) ──────────────────────────────────────────────
+# Current column = FY2026E. Bear/Bull columns = the FY2028E revenue level on each path.
+# FY2026 guidance: subscription revenue $15.77B (+21% YoY)
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("IT Workflows (ITSM/ITOM/ITAM)",       6.5, 5.5, 8.0, "Core ITSM platform; AI-powered incident resolution; mature but durable"),
-    ("Customer & Industry Workflows (CSM)", 3.0, 2.3, 4.2, "Customer service management; vertical industry solutions (telecom/healthcare/finance)"),
-    ("Employee Workflows (HR/Now Assist)",  2.2, 1.6, 3.2, "HR Service Delivery; Now Assist generative AI agents embedded across HR"),
-    ("Creator Workflows / App Engine",      1.5, 1.0, 2.3, "Low-code platform; App Engine; citizen developer expansion"),
-    ("AI Agent Platform (Agentic AI)",      1.8, 0.6, 5.5, "New: autonomous AI agents across workflows; RPO $27.7B includes growing AI agent ACV"),
+    ("IT Workflows (ITSM/ITOM/SecOps)",  6.6,  8.0,  9.8, "The core franchise; system of record for enterprise IT; ~98% renewal rate"),
+    ("Customer & Industry Workflows",    3.5,  4.3,  5.6, "CSM + telco/banking/public-sector verticals; the fastest-growing land motion"),
+    ("Creator / Platform / AI",          3.3,  4.2,  5.4, "App Engine, Now Assist, AI Control Tower — where the $1B+ AI ACV is booked"),
+    ("Employee Workflows (HR)",          2.4,  2.9,  3.7, "HRSD + Workplace; steady 20% grower; expands seat count per logo"),
+    ("Professional services & other",    0.6,  0.7,  0.8, "Deliberately kept small and partner-led; a margin choice, not a business"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.815   # non-GAAP; best-in-class SaaS gross margin
-GROSS_MARGIN_BULL = 0.840   # BULL: AI agent layer adds high-margin incremental revenue
-OPEX_FIXED_B      = 9.2     # non-GAAP R&D + SG&A; heavy go-to-market investment
-TAX_RATE          = 0.180   # effective US-based SaaS
+# Margin assumptions (non-GAAP)
+OP_MARGIN_CURR   = 0.305    # FY2026E: Q2 29.5% actual, Q3 guided 31%
+OP_MARGIN_BULL   = 0.360    # BULL: platform leverage exceeds AI inference cost
+OP_MARGIN_BEAR   = 0.270    # BEAR: pricing pressure + inference COGS compress the model
+INTEREST_INC_B   = 0.4      # $B net interest income on the cash pile
+TAX_RATE         = 0.230    # non-GAAP effective rate
+
+# ── AI TRACTION (the ServiceNow-specific calculator) ─────────────────────────
+AI_ACV_B            = 1.0    # $B AI annual contract value — crossed $1B in Q2 2026
+SUB_REV_Q2_M        = 3877   # $M Q2 2026 subscription revenue (+24.5% YoY, +23% cc)
+SUB_REV_FY26_GUIDE  = 15.77  # $B FY2026 subscription revenue guidance (+21%)
+OP_MARGIN_Q2        = 0.295  # Q2 2026 non-GAAP operating margin — 3pp above guidance
+CONTROL_TOWER_LOGOS = 500    # AI Control Tower customers in the first six months
+AGENTIC_GROWTH_X    = 9      # agentic AI deployments up 9× in nine months
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2027E    = 4.20        # consensus non-GAAP EPS post-split (was ~$21 pre-split / 5)
-PE_PESSIMISTIC = 24.0        # trough P/E: best-in-class SaaS franchise; rarely trades below 24× even in distress
-EPP            = round(PE_PESSIMISTIC * EPS_FY2027E, 0)   # $101
+EPS_FY2026E    = 4.00        # FY2026E non-GAAP EPS, post-split consensus (2025 actual $3.51)
+PE_PESSIMISTIC = 24.0        # trough P/E: NOW has never traded below ~35× forward; 24× prices
+                             # the agentic-AI disruption fear as if it were already happening
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 3.20, 22,  70,  "Macro recession + agentic AI disruption fear peaks; NRR <105%; EPS $3.20 → 22× distress"),
-    "BASE":  ( 4.80, 32, 154,  "Now Assist/AI agents drive 18-20% subscription growth; NRR 112%+; EPS $4.80 → 32×"),
-    "BULL":  ( 6.50, 38, 247,  "AI Agent Platform becomes enterprise standard; RPO accelerates >25%; EPS $6.50 → 38×"),
-    "XBULL": ( 9.50, 44, 418,  "NOW = enterprise AI operating system; agentic workflows replace legacy SaaS seats; EPS $9.50 → 44×"),
+    "BEAR":  ( 4.20, 18,   76, "Agentic AI compresses seat pricing; NRR below 110%; federal reverses; SaaS de-rating completes"),
+    "BASE":  ( 6.30, 28,  176, "20% subscription CAGR holds; AI ACV $2.5B+; op margin 33%; multiple stabilises at 28×"),
+    "BULL":  ( 7.25, 38,  276, "AI Control Tower becomes the enterprise agent-orchestration standard; ACV $5B; margin 36%"),
+    "XBULL": ( 8.80, 46,  405, "ServiceNow = the enterprise AI operating system; consumption pricing opens a second S-curve"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -79,52 +88,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "Subscription revenue YoY growth",
+        "name":       "Subscription revenue YoY growth (cc)",
         "weight":     0.25,
-        "thresholds": ("<14%",  "≥18%",  "≥24%",  "≥32%"),
-        "now":        "+20%",
-        "score":      2,
-        "comment":    "Q1 2026 subscription rev +20% YoY; durable double-digit growth despite macro headwinds",
+        "thresholds": ("<14%",   "≥18%",   "≥23%",   "≥28%"),
+        "now":        "+23%",
+        "score":      3,
+        "comment":    "Q2 subscription revenue $3,877M (+24.5% reported, +23% cc) — 1.5pp above guidance. FY raised to $15.77B",
     },
     {
-        "name":       "Current RPO (cRPO) growth YoY",
-        "weight":     0.25,
-        "thresholds": ("<14%",  "≥18%",  "≥24%",  "≥32%"),
-        "now":        "+22%",
-        "score":      2,
-        "comment":    "cRPO $14.8B +22% YoY — leading indicator; AI agent ACV embedded in new bookings",
-    },
-    {
-        "name":       "Net Revenue Retention (NRR)",
+        "name":       "AI (Now Assist) annual contract value",
         "weight":     0.20,
-        "thresholds": ("<105%", "≥110%", "≥118%", "≥125%"),
-        "now":        "~112%",
+        "thresholds": ("<$0.4B", "≥$0.8B", "≥$2.0B", "≥$4.0B"),
+        "now":        "$1.0B",
         "score":      2,
-        "comment":    "NRR 112%, stable; large enterprise accounts (>$1M ACV) growing +20%+ YoY",
-    },
-    {
-        "name":       "Now Assist / AI agent ACV",
-        "weight":     0.15,
-        "thresholds": ("<$300M","≥$600M","≥$1.2B","≥$2.5B"),
-        "now":        "~$700M",
-        "score":      2,
-        "comment":    "Now Assist ACV crossed $700M, doubling YoY; early but rapid enterprise AI agent adoption",
+        "comment":    "Crossed $1B in Q2. Real money, but ~6% of subscription revenue — not yet the growth engine the bulls need",
     },
     {
         "name":       "Non-GAAP operating margin",
-        "weight":     0.10,
-        "thresholds": ("<27%",  "≥30%",  "≥34%",  "≥40%"),
-        "now":        "31%",
+        "weight":     0.20,
+        "thresholds": ("<26%",   "≥29%",   "≥33%",   "≥37%"),
+        "now":        "29.5%",
         "score":      2,
-        "comment":    "Op margin 31%, expanding ~1pp/yr; reinvestment in AI R&D balanced with operating leverage",
+        "comment":    "Q2 29.5% — 3pp ABOVE guidance; Q3 guided to 31%. Beating on margin while investing heavily in AI",
     },
     {
-        "name":       "Free cash flow margin",
-        "weight":     0.05,
-        "thresholds": ("<28%",  "≥32%",  "≥36%",  "≥42%"),
-        "now":        "~32%",
+        "name":       "cRPO growth (cc)",
+        "weight":     0.15,
+        "thresholds": ("<14%",   "≥18%",   "≥22%",   "≥27%"),
+        "now":        "+19%",
         "score":      2,
-        "comment":    "FCF margin ~32%; strong cash generation funding AI platform R&D without dilution",
+        "comment":    "The soft line in an otherwise clean print. A $35M FX headwind and Q2 federal pull-forward both hit Q3 cRPO",
+    },
+    {
+        "name":       "EV/NTM revenue vs 5-yr avg (~14×)",
+        "weight":     0.10,
+        "thresholds": (">16x",   "≤11x",   "≤8x",    "≤6x"),
+        "now":        "7.1x",
+        "score":      3,
+        "comment":    "$115B EV on ~$16.3B revenue. Half the multiple NOW carried for five years, on faster AI-era growth",
+    },
+    {
+        "name":       "Customers with >$5M ACV",
+        "weight":     0.10,
+        "thresholds": ("<80",    "≥110",   "≥150",   "≥200"),
+        "now":        "~130",
+        "score":      2,
+        "comment":    "Large-deal motion intact; US federal a standout. Expansion within logos still outruns new-logo adds",
     },
 ]
 
@@ -134,12 +143,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Workflow platform moat — single data model across IT/HR/CSM; deep enterprise integration, 5yr+ switching cost", +0.7, 0.25),
-    ("+", "Agentic AI early leader — Now Assist embedded across all workflows; platform-level (not bolt-on) AI",          +0.6, 0.20),
-    ("-", "Macro sensitivity — large enterprise deals elongating in slow-IT-budget environment; deal cycle risk",          -0.4, 0.20),
-    ("-", "Competitive AI agent crowding — Microsoft Copilot Studio, Salesforce Agentforce, Workday all building agents",  -0.5, 0.15),
-    ("+", "Founder-grade execution — Bill McDermott; consistent beat-and-raise; 25%+ revenue CAGR for a decade",           +0.5, 0.10),
-    ("+", "Post-split entry point — down 52% from pre-split-adjusted ATH; lowest forward multiple since 2018",             +0.4, 0.10),
+    ("+", "Platform lock-in — one data model across IT/HR/CS; ~98% renewal rate; 15-yr customer lives", +0.8, 0.20),
+    ("+", "Valuation reset — 7.1× EV/NTM revenue vs a ~14× 5-yr average; 43% below the split-adj high",  +0.8, 0.20),
+    ("-", "Agentic-AI seat risk — the market's core fear: AI agents replace the licensed seats NOW sells", -0.9, 0.20),
+    ("+", "AI is landing, not theoretical — $1B ACV, agentic deploys 9× in 9 months, 500 Control Tower logos", +0.7, 0.15),
+    ("-", "US federal concentration — a genuine driver, but Q2 pulled on-prem revenue forward from Q3",  -0.5, 0.15),
+    ("-", "AI inference COGS — a structural drag on the 30%+ operating margin as usage scales",          -0.4, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -173,8 +182,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 6.20    # FY2029E conservative: 21% EPS CAGR; still strong; below BASE
-CONS_PE_2YR   = 30      # rerates from ~24× toward 30× as growth durability re-confirmed
+CONS_EPS_2YR  = 5.90    # conservative FY2028E: ~21% EPS CAGR (below the revenue growth rate)
+CONS_PE_2YR   = 26      # multiple stays near today's 27.8× — no re-rating credit at all
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -192,175 +201,193 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Enterprise SaaS / Workflow Automation / Agentic AI")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Enterprise SaaS / Workflow / Agentic AI")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2027E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  FY2028E under BEAR / BULL paths)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<26}  {'FY2027E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<34}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<26}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<34}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<26}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<34}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  FY2026 guidance: subscription revenue ${SUB_REV_FY26_GUIDE:.2f}B (+21% YoY), raised at Q2")
+print(f"  Implied 2-yr revenue CAGR:   BEAR {((bear_total/curr_total)**0.5-1)*100:>4.1f}%   BULL {((bull_total/curr_total)**0.5-1)*100:>4.1f}%")
 print()
 
 # EPS bridge
-curr_gp   = curr_total * GROSS_MARGIN_CURR
-curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
 shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps  = round((curr_op + INTEREST_INC_B) * (1 - TAX_RATE) / shares, 2)
 
-bull_gp   = bull_total * GROSS_MARGIN_BULL
-bull_oi   = bull_gp - OPEX_FIXED_B
-bull_ni   = bull_oi * (1 - TAX_RATE)
-shares_b  = shares * 0.97   # modest buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.99
+bull_eps_imp = round((bull_op + INTEREST_INC_B * 1.3) * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.97   # mix shift / pricing pressure
-bear_oi   = bear_gp - OPEX_FIXED_B * 0.97           # partial cost response
-bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round((bear_op + INTEREST_INC_B * 0.8) * (1 - TAX_RATE) / (shares * 1.02), 2)
 
-print(f"  FY2027E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2027E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {OP_MARGIN_CURR*100:.1f}% op margin + ${INTEREST_INC_B:.1f}B interest income")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (consensus ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 38× = ~${bull_eps_imp*38:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B FY2028E rev × {OP_MARGIN_BULL*100:.1f}% op margin")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 38× = ~${bull_eps_imp*38:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.97:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 22× trough P/E (distress) = ~${bear_eps_imp*22:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B FY2028E rev × {OP_MARGIN_BEAR*100:.1f}% op margin (pricing + inference COGS)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 18× = ~${bear_eps_imp*18:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print()
+print(f"  ⚠ READ THE BEAR COLUMN CAREFULLY: even in the BEAR case ServiceNow still GROWS")
+print(f"  revenue from ${curr_total:.1f}B to ${bear_total:.1f}B ({((bear_total/curr_total)**0.5-1)*100:.0f}%/yr) and earns ${bear_eps_imp:.2f}/share. The bear case")
+print(f"  is not a shrinking company — it is a company that keeps compounding while the")
+print(f"  market pays 18× instead of 28× for it. That is what a ${bear_price} print requires.")
+
+# ─── AI TRACTION CHECK ───────────────────────────────────────────────────────
+print()
+print(f"  AI TRACTION CHECK  (the axis the whole valuation now turns on):")
+print(f"  AI annual contract value:        ${AI_ACV_B:.1f}B  (crossed $1B in Q2 2026)")
+print(f"  ...as % of subscription revenue:  {AI_ACV_B/SUB_REV_FY26_GUIDE*100:.1f}%  — meaningful, not yet dominant")
+print(f"  Agentic AI deployments:          {AGENTIC_GROWTH_X}× growth in nine months")
+print(f"  AI Control Tower customers:      {CONTROL_TOWER_LOGOS}+ in the first six months")
+print(f"  Q2 operating margin:             {OP_MARGIN_Q2*100:.1f}%  ({(OP_MARGIN_Q2-0.265)*100:.0f}pp above guidance) — AI investment is not")
+print(f"                                   breaking the margin structure, which was the fear")
+print()
+print(f"  THE CENTRAL IRONY: the market de-rated ServiceNow from ~14× to {7.1:.1f}× revenue on the")
+print(f"  thesis that agentic AI destroys per-seat SaaS. ServiceNow then booked ${AI_ACV_B:.1f}B of ACV")
+print(f"  SELLING agentic AI. If AI is an existential threat to this business, the company's")
+print(f"  own AI revenue line is a strange place for it to be showing up.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-
+eps_per_1B_rev  = 1.0 * 0.80 * (1 - TAX_RATE) / shares   # ~80% incremental margin on subscription
+eps_per_1pp_mar = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B subscription revenue:  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*32:.1f}/share at 32× P/E")
-print(f"  1pp GM expansion (AI agent mix):  +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*32:.1f}/share at 32× P/E")
-print(f"  Now Assist ACV +$1B:              boosts AI Agent Platform segment revenue directly; high-margin incremental")
-print(f"  1% buyback (~12.5M shares):        +${curr_eps*0.01:.3f}/EPS  (mechanical accretion)")
+print(f"  Every $1B subscription revenue (80% inc.):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*28:.2f}/share at 28× P/E")
+print(f"  Every 1pp of operating margin:              +${eps_per_1pp_mar:.3f}/EPS  = +${eps_per_1pp_mar*28:.2f}/share at 28× P/E")
+print(f"  Every 1 turn of P/E:                        ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
+print(f"  Every 1pp of NRR (net revenue retention):   ~+${SUB_REV_FY26_GUIDE*0.01*0.8*(1-TAX_RATE)/shares:.3f}/EPS compounding — the highest-leverage metric NOW has")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (subscription growth / cRPO / NRR / Now Assist framework)")
+print("  ① SIGNAL DASHBOARD  (subscription growth / AI ACV / margin / backlog / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<44}  {'BEAR':>7}  {'BASE':>7}  {'BULL':>7}  {'XBULL':>7}  {'NOW':>7}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<44}  {ths[0]:>7}  {ths[1]:>7}  {ths[2]:>7}  {ths[3]:>7}  {s['now']:>7}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:92]:<92}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<34}  {'Current':>9}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("Subscription revenue YoY",     "+20%",   "<+14%",  "−6pp",   "Macro IT budget freeze; deal elongation hits renewals"),
-    ("cRPO growth YoY",               "+22%",   "<+14%",  "−8pp",   "Large enterprise deals slip to next quarter en masse"),
-    ("Net Revenue Retention",         "~112%",  "<105%",  "−7pp",   "Seat reductions as AI agents replace human workflow operators"),
-    ("Now Assist / AI agent ACV",     "~$700M", "<$300M", "−$400M", "Agentic AI pilots fail to convert; ROI unproven"),
-    ("Non-GAAP operating margin",     "31%",    "<27%",   "−4pp",   "AI compute costs (inference) compress margins faster than revenue grows"),
-    ("Free cash flow margin",         "~32%",   "<28%",   "−4pp",   "Working capital deterioration; deferred revenue growth slows"),
+    ("Subscription revenue YoY (cc)", "+23%",   "<14%",    "−9pp",   "Agentic AI compresses seats faster than ACV grows"),
+    ("AI ACV",                        "$1.0B",  "<$0.4B",  "−$0.6B", "Now Assist upsell stalls; customers build on OpenAI"),
+    ("Non-GAAP operating margin",     "29.5%",  "<26%",    "−3.5pp", "Inference COGS + discounting to defend renewals"),
+    ("cRPO growth (cc)",              "+19%",   "<14%",    "−5pp",   "Federal reverses; pull-forward unwinds; FX persists"),
+    ("EV/NTM revenue",                "7.1x",   "≤4x",     "−3x",    "SaaS repriced permanently as a low-growth utility"),
+    ("Customers >$5M ACV",            "~130",   "<80",     "−50",    "Large logos consolidate onto a competing AI platform"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<34}  {curr:>9}  {bear_v:>9}  {move:>8}  {trigger[:46]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  POST-SPLIT REPRICING: ServiceNow completed a 5-for-1 stock split in December 2025")
-print(f"  ($502 → ~$100 equivalent). The Q1 2026 non-GAAP EPS of $0.97 (post-split) beat the")
-print(f"  $0.55 estimate by 76% — yet the stock remains 52% below its pre-split-adjusted ATH")
-print(f"  ($211.48 equiv. post-split / $1,057 pre-split). At 24x FY2027E, this is the lowest")
-print(f"  forward multiple for NOW since 2018, despite RPO of $27.7B (+24% YoY) representing")
-print(f"  nearly 3x current-year revenue in contracted backlog. The market is treating")
-print(f"  ServiceNow like a mature, slowing SaaS name — but RPO growth and Now Assist traction")
-print(f"  both argue the growth re-acceleration thesis is intact.")
+print(f"  KEY TRIGGER: the bear case is a single thesis — that agentic AI collapses the")
+print(f"  per-seat licensing model ServiceNow sells. If AI agents do the work instead of")
+print(f"  licensed humans, seat counts fall even as the work grows, and NRR breaks below 110%.")
+print(f"  This is a genuine structural risk and it deserves the weight the model gives it.")
+print(f"  What the model disputes is the TIMING: NOW's own AI ACV crossed ${AI_ACV_B:.1f}B this quarter")
+print(f"  while subscription revenue grew +23% cc. The disruption is not visible in the")
+print(f"  numbers yet, and the price already reflects several years of it.")
+print(f"  Note: BEAR ${bear_price} is {(1-bear_price/VOL_52W_LOW)*100:.0f}% below the 52W low of ${VOL_52W_LOW:.2f} — a real path, not a floor.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2027E adj EPS estimate:      ${EPS_FY2027E:.2f}  (consensus; non-GAAP)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (best-in-class SaaS franchise; rarely trades below 24× even in distress)")
+print(f"  FY2026E non-GAAP EPS:       ${EPS_FY2026E:.2f}  (post-split; 2025 actual $3.51; 2027E ~$5.00)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (NOW has never traded below ~35× forward in its public life)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% vs trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  At a {epp_gap_pct:+.1f}% gap to EPP, the current price is essentially trading AT the trough")
-print(f"  floor multiple — the market is pricing almost zero growth premium into a franchise")
-print(f"  still compounding subscription revenue at +20% YoY with cRPO +22% YoY. This is the")
-print(f"  'distress-priced compounder' setup: downside is cushioned by the floor multiple itself.")
-print(f"  EPP path: FY2029E EPS ~${CONS_EPS_2YR:.2f} × {PE_PESSIMISTIC:.0f}× = ${CONS_EPS_2YR*PE_PESSIMISTIC:.0f} floor by 2028 (EPP growing with EPS).")
-print(f"  At 32× mid-cycle P/E: ${EPS_FY2027E:.2f} × 32 = ${EPS_FY2027E*32:.0f}  — {(EPS_FY2027E*32-CURRENT_PRICE)/CURRENT_PRICE*100:.0f}% above current price.")
+print(f"  A +{epp_gap_pct:.0f}% premium to EPP is remarkable for a business compounding subscription")
+print(f"  revenue at 23% with a 30% operating margin. At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}×")
+print(f"  FY2026E and {CURRENT_PRICE/5.00:.1f}× FY2027E non-GAAP EPS — multiples ServiceNow last saw when it")
+print(f"  was a fraction of its current size. And note what the EPP floor is built on: a 24×")
+print(f"  pessimistic multiple that is itself far below anything this stock has ever traded at.")
+print(f"  The floor assumption is doing conservative work, not flattering work.")
+print(f"  EPP path: FY2028E EPS ~$5.90 × {PE_PESSIMISTIC:.0f}× = ${5.90*PE_PESSIMISTIC:.0f} floor by 2028 (EPP compounding ~21%/yr).")
+print(f"  At a 35× 'never-below' multiple: ${EPS_FY2026E:.2f} × 35 = ${EPS_FY2026E*35:.0f}  (+{(EPS_FY2026E*35/CURRENT_PRICE-1)*100:.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: P/E rerates as growth durability re-confirmed)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: growth decelerates, multiple gets NO re-rating credit)")
 hr()
-print(f"  Conservative FY2029E adj EPS:  ${CONS_EPS_2YR:.2f}  (21% EPS CAGR; below BASE but still strong)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from ~24× toward 30× as growth durability re-confirmed)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (no dividend; reinvests in growth + buybacks)")
+print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (~21% EPS CAGR — below the current revenue growth rate)")
+print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (below today's {CURRENT_PRICE/EPS_FY2026E:.1f}× — the multiple contracts further)")
+print(f"  Conservative equity value:            ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (no dividend; all cash reinvested + buyback)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:               ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:            {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE SETUP: even the conservative case (21% EPS CAGR, modest rerate to 30×) produces a")
-print(f"  large positive return from current levels — unlike mature mega-cap compounders where")
-print(f"  multiple compression offsets growth. NOW's combination of post-split distress pricing")
-print(f"  and durable double-digit growth is the core of the bottom-up thesis.")
-print(f"  Breakeven at 24× P/E (no rerate): FY2029E EPS ≥ ${(CURRENT_PRICE - cons_divs) / PE_PESSIMISTIC:.2f}")
-print(f"  Breakeven at 30× P/E: FY2029E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 30:.2f}")
+print(f"  THE SETUP: this case assumes growth SLOWS and the multiple CONTRACTS from {CURRENT_PRICE/EPS_FY2026E:.1f}× to {CONS_PE_2YR}×,")
+print(f"  and still returns {cons_annual:.1f}%/yr. That is what happens when a 20%+ compounder is")
+print(f"  repriced to 28× forward earnings: the growth alone carries the return, and you")
+print(f"  need no help at all from sentiment.")
+print(f"  Breakeven at {CONS_PE_2YR}× requires FY2028E EPS ≥ ${CURRENT_PRICE / CONS_PE_2YR:.2f} — barely above the FY2027E consensus.")
+print(f"  MAX-SIZE trigger: below ${EPP:.0f} (the EPP floor), where you are paid to take the AI-disruption risk")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.38
-beta        = 1.25
+annual_vol  = 0.42
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: range is post-5-for-1-split-adjusted; March 2026 trough = AI disruption fear / macro")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (none; reinvests in growth + buybacks)")
-print(f"  Realized vol (annual):{annual_vol*100:.0f}%  (elevated; high-multiple SaaS + AI narrative sensitivity)")
-print(f"  Beta vs S&P 500:      {beta:.2f}  (high-beta growth name; amplifies macro swings)")
+print(f"  Drawdown from high:   −{(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.1f}%  (split-adjusted; a multiple event, not an earnings event)")
+print(f"  Annual dividend:      none  —  cash funds R&D and buyback")
+print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (high-multiple SaaS beta; earnings gaps of ±10% are routine)")
+print(f"  Beta vs S&P 500:      1.30  (long-duration cash flows; rate- and AI-narrative sensitive)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (severe but plausible in a recession scenario)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (Mar 2026 AI-disruption panic) already a peak-to-trough move of ~22% from current.")
-print(f"  → Macro/recession risk + AI-agent disruption fear are THE KEY binaries for downside.")
-print(f"  → Now Assist ACV acceleration + cRPO reacceleration are KEY bull catalysts.")
-print(f"  → AVOID above $180  |  WATCHLIST $130–150  |  ACCUMULATE $105–125  |  BUY below $105")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (well within one year's normal range — do not dismiss it)")
+print(f"  → The stock fell 6.5% on a Q2 print that beat on every line except cRPO. Sentiment,")
+print(f"    not fundamentals, is setting the price — which cuts both ways.")
+print(f"  → NRR and seat-count disclosure are the metrics that resolve the agentic-AI debate.")
+print(f"  → BUY at current price  |  MAX SIZE below ${EPP:.0f}  |  TRIM above $250")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -388,24 +415,25 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is BELOW the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 — close to")
-print(f"  BEAR/BASE boundary. The model scores the fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0 — between BASE and BULL.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: you are paying near-BEAR scenario prices for what is currently solid")
-print(f"  BASE-to-BULL execution. The post-split repricing is the most significant valuation mismatch.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0 — the market is")
+print(f"  pricing execution BELOW the BASE case. The model's adjusted composite is {ADJ_COMPOSITE:.2f}/4.0,")
+print(f"  for a gap of {ADJ_GAP:+.2f} — the stock is {valuation_label.lower()}.")
+print(f"  In plain terms: ServiceNow raised full-year guidance, beat on subscription revenue,")
+print(f"  beat on margin by 3pp, and crossed $1B in AI ACV — and the market is paying for a")
+print(f"  company doing worse than its base case. The asymmetry ({ratio_b_str}) is the widest in the")
+print(f"  software coverage. The risk is real and named; the price for taking it is generous.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) Q2 2026 earnings (July 2026) — Now Assist ACV update; cRPO trajectory confirmation")
-print(f"  (2) Federal/public sector wins — FedRAMP High momentum continuing post-DOGE disruption")
-print(f"  (3) AI agent competitive differentiation — platform-level vs point-solution agents (vs Copilot/Agentforce)")
-print(f"  (4) Knowledge 2026 (May) product announcements — agentic AI roadmap, pricing model evolution")
-print(f"  (5) Large deal (>$1M ACV) momentum — count and average deal size growth as enterprise AI budget signal")
-print(f"  AVOID above $180  |  WATCHLIST $130–150  |  ACCUMULATE $105–125  |  BUY below $105")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2027E EPS: ${EPS_FY2027E:.2f}")
+print(f"  (1) Net revenue retention — the single number that settles the agentic-AI seat debate")
+print(f"  (2) cRPO growth in Q3 — the pull-forward washes out; a clean +20% cc restores the story")
+print(f"  (3) AI ACV trajectory — $1B → $2B is the proof point the BULL case is built on")
+print(f"  (4) US federal renewal cycle — the biggest single driver, and the biggest single risk")
+print(f"  (5) Operating margin vs inference COGS — can 33%+ survive scaled AI usage?")
+print(f"  BUY at ${CURRENT_PRICE:.2f}  |  MAX SIZE below ${EPP:.0f}  |  TRIM above $250")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  AI ACV: ${AI_ACV_B:.1f}B")
 print("═" * (W + 4))
 print()
 

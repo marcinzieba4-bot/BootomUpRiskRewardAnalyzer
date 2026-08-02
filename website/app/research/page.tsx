@@ -5,7 +5,7 @@ const categories = ['All', 'Analysis', 'Research', 'Commentary', 'Market Update'
 const articles = [
   {
     category: 'Analysis',
-    categoryColor: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+    categoryColor: 'bg-blue-500/10 text-blue-700 border-blue-500/20',
     title: 'The Liquidity Mirage: Understanding Deep Order Books in Thin Markets',
     excerpt:
       'As on-chain liquidity metrics increasingly diverge from reported figures, institutional participants face a fragmented landscape where slippage costs quietly erode alpha generation across DeFi protocols.',
@@ -25,7 +25,7 @@ const articles = [
   },
   {
     category: 'Commentary',
-    categoryColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
+    categoryColor: 'bg-emerald-500/10 text-emerald-700 border-emerald-500/20',
     title: 'Bitcoin Dominance Cycles: A 4-Year Framework Revisited',
     excerpt:
       'Historical dominance cycles suggest we are entering the late expansion phase, characterized by capital rotation from large-cap to mid-cap Layer-1 assets as narrative velocity accelerates.',
@@ -45,7 +45,7 @@ const articles = [
   },
   {
     category: 'Analysis',
-    categoryColor: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+    categoryColor: 'bg-blue-500/10 text-blue-700 border-blue-500/20',
     title: 'The Stablecoin Flywheel: How Circle and Tether Build Treasury Yield Machines',
     excerpt:
       'USDC and USDT reserve compositions reveal a sophisticated arbitrage of short-duration treasury yields, generating over $6B in annualized revenue while bearing minimal credit risk exposure.',

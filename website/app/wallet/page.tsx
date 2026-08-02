@@ -2,8 +2,8 @@ const walletFeatures = [
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <circle cx="11" cy="11" r="9" stroke="#d4a853" strokeWidth="1.5" />
-        <path d="M7 11l3 3 5-5" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="11" cy="11" r="9" stroke="#9a6f12" strokeWidth="1.5" />
+        <path d="M7 11l3 3 5-5" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     label: 'Read-only connection — non-custodial, no signing rights ever granted',
@@ -11,8 +11,8 @@ const walletFeatures = [
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <rect x="3" y="3" width="16" height="16" rx="3" stroke="#d4a853" strokeWidth="1.5" />
-        <path d="M7 11h8M11 7v8" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" />
+        <rect x="3" y="3" width="16" height="16" rx="3" stroke="#9a6f12" strokeWidth="1.5" />
+        <path d="M7 11h8M11 7v8" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
     label: 'Full portfolio snapshot across all connected chains',
@@ -20,8 +20,8 @@ const walletFeatures = [
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M11 3v4M11 15v4M3 11h4M15 11h4" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="11" cy="11" r="4" stroke="#d4a853" strokeWidth="1.5" />
+        <path d="M11 3v4M11 15v4M3 11h4M15 11h4" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="11" cy="11" r="4" stroke="#9a6f12" strokeWidth="1.5" />
       </svg>
     ),
     label: '6-dimensional risk score with drill-down explanations',
@@ -29,7 +29,7 @@ const walletFeatures = [
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M3 17l5-5 4 4 7-9" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M3 17l5-5 4 4 7-9" stroke="#9a6f12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     label: 'Bespoke action recommendations ranked by urgency and impact',
@@ -37,7 +37,7 @@ const walletFeatures = [
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M11 2L13.5 8.5H20L14.5 12.5L16.5 19L11 15.5L5.5 19L7.5 12.5L2 8.5H8.5L11 2Z" stroke="#d4a853" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M11 2L13.5 8.5H20L14.5 12.5L16.5 19L11 15.5L5.5 19L7.5 12.5L2 8.5H8.5L11 2Z" stroke="#9a6f12" strokeWidth="1.5" strokeLinejoin="round" />
       </svg>
     ),
     label: 'Watchlist monitoring — alerts on material wallet state changes',
