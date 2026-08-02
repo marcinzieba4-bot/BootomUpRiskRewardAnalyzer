@@ -1,7 +1,7 @@
 """
 AMD  ·  Advanced Micro Devices, Inc.  ·  NASDAQ: AMD
-Bottom-up signal model  ·  AI Accelerators / Data Center / Client / Gaming
-Date: 2026-06-10
+Bottom-up signal model  ·  AI Accelerators (MI400/Helios) / Data Center / Client / Gaming
+Date: 2026-08-02
 """
 
 import math
@@ -10,44 +10,52 @@ import math
 TICKER        = "AMD"
 COMPANY       = "Advanced Micro Devices, Inc."
 SECTOR        = "AI Accelerators · Data Center GPU/CPU · Client · Gaming · NASDAQ: AMD"
-CURRENT_PRICE = 175.00      # USD; as of 2026-06-10
-VOL_52W_LOW   = 110.00      # 2025 AI-capex-scare trough
-VOL_52W_HIGH  = 240.00      # MI400/Helios hyperscaler-deal euphoria peak
-SHARES_OUT_M  = 1_615.0     # millions; modest dilution from equity comp, offset by buybacks
+CURRENT_PRICE = 476.15       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 149.22       # 2025 AI-capex-scare trough
+VOL_52W_HIGH  = 584.73       # 2026 MI400/Helios hyperscaler-deal euphoria peak
+SHARES_OUT_M  = 1_630.0      # millions; $776.4B mkt cap / $476.15; modest dilution from equity comp
+ANNUAL_DIV    = 0.0          # $/share — all FCF reinvested in the AI roadmap / buybacks
 
-# Dividend: none — all FCF reinvested in AI roadmap / buybacks
-ANNUAL_DIV    = 0.0         # $/share
-
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ─────────────────────────────────────
+# Q1 2026 actual: total revenue $10.3B (+38% YoY); Data Center $5.8B (+57%)
+# Q2 2026 guide (reports Aug 4, 2026 — after this refresh): ~$11.2B (+46% YoY)
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Data Center (MI300/MI350 AI + EPYC)", 24.0, 14.0, 38.0, "AI accelerator ramp + EPYC server CPU share gains; swing factor"),
-    ("Client (Ryzen)",                       9.5,  7.0, 12.5, "Ryzen AI PC refresh cycle; share gains vs Intel in notebooks"),
-    ("Gaming",                               5.5,  3.5,  7.0, "Console SoC cyclicality + Radeon discrete GPU softness"),
-    ("Embedded",                             3.5,  2.5,  4.5, "Xilinx-derived FPGA/adaptive SoC; industrial/aero/defense recovery"),
+    ("Data Center (EPYC + Instinct GPU)", 27.5, 18.0, 46.0, "MI400/Helios ramp is the entire thesis; OpenAI + Meta each committed up to 6GW"),
+    ("Client (Ryzen)",                    11.0,  8.5, 14.5, "PC refresh cycle + AI-PC mix shift; share gains against Intel continue"),
+    ("Gaming (Radeon + semi-custom)",      6.5,  5.0,  8.0, "Console semi-custom cyclical; discrete GPU a smaller, steadier piece"),
+    ("Embedded (Xilinx)",                  3.5,  3.0,  4.5, "Industrial/aerospace/comms; still working through post-acquisition digestion"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.540   # blended gross margin FY2026E (~54%; AI mix lifting blend)
-GROSS_MARGIN_BULL = 0.580   # BULL: Data Center AI mix dominates; margin expands further
-OPEX_FIXED_B      = 8.0     # R&D + SG&A ($B); heavy AI silicon R&D investment
-TAX_RATE          = 0.13    # effective rate; R&D credits, foreign mix
+# Margin assumptions (non-GAAP)
+GROSS_MARGIN_CURR = 0.478   # FY2026E blended non-GAAP gross margin; Data Center GPU mix still dilutive early in the ramp
+GROSS_MARGIN_BULL = 0.560   # BULL: MI400/Helios reach scale, software stack (ROCm) improves attach economics
+OPEX_FIXED_B      = 9.5     # R&D + SG&A ($B); heavy AI roadmap investment
+TAX_RATE          = 0.140   # non-GAAP effective tax rate
+
+# ── HYPERSCALER COMMITMENT CALCULATOR (the AMD-specific angle) ───────────────
+OPENAI_COMMIT_GW   = 6.0    # GW committed by OpenAI, multi-year Helios deployment
+META_COMMIT_GW     = 6.0    # GW committed by Meta, multi-year deployment (~$60B combined value cited)
+COMBINED_VALUE_B   = 60.0   # $B approximate combined multi-year value of the two anchor deals
+Q1_DC_REV_B        =  5.8   # $B Q1 2026 Data Center revenue (+57% YoY)
+Q2_GUIDE_B         = 11.2   # $B total revenue guide for Q2 2026 (+46% YoY) — reports Aug 4, after this refresh
+HELIOS_SHIP_QTR    = "Q3 2026"  # first Helios rack shipments
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 5.50        # FY2026E adj EPS (consensus ~$5.30–$5.70; non-GAAP)
-PE_PESSIMISTIC = 22.0        # trough P/E: AI-capex-scare floor multiple (2025 trough ~22-24×)
-EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)   # $121
+EPS_FY2026E    = 7.20        # $/share non-GAAP FY2026E; Q1 actual $1.37 (+43%), full-year ramping on Data Center
+PE_PESSIMISTIC = 22.0        # trough P/E: AMD traded in the low-20s forward during the 2025 AI-capex
+                             # scare; 22x prices a real air pocket without assuming the AI story is dead
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 2.80, 22,   62, "MI300/MI350 ramp stalls; hyperscalers favor in-house silicon; EPS $2.80 → 22× floor P/E"),
-    "BASE":  ( 5.50, 28,  154, "MI350/MI400 ramp on track; steady DC GPU share gains vs Nvidia; EPYC share continues; EPS $5.50 → 28×"),
-    "BULL":  ( 8.50, 32,  272, "MI400/Helios rack-scale wins major hyperscaler commitments; DC GPU share >15%; EPS $8.50 → 32×"),
-    "XBULL": (13.00, 36,  468, "AMD becomes credible #2 AI silicon platform at scale; multi-vendor diversification favors AMD; EPS $13.00 → 36×"),
+    "BEAR":  ( 3.61, 18,   65, "Data Center growth stalls (not collapses); mix and opex compress margin; multiple resets"),
+    "BASE":  ( 9.35, 28,  262, "Helios ramps on schedule; Data Center compounds ~35%/yr; margin expands to ~50%"),
+    "BULL":  (15.95, 34,  543, "OpenAI/Meta commitments convert on schedule; AMD takes durable #2 AI-accelerator share"),
+    "XBULL": (21.50, 38,  817, "MI500 (2027) extends the roadmap lead; AMD becomes co-equal with Nvidia in merchant AI silicon"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -78,52 +86,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "MI300/MI350/MI400 AI accelerator revenue ramp & guidance",
+        "name":       "Data Center revenue YoY growth",
         "weight":     0.30,
-        "thresholds": ("<$5B",   "≥$8B",  "≥$13B",  "≥$20B"),
-        "now":        "~$8B",
-        "score":      2,
-        "comment":    "MI350 ramping through 2026; MI400/Helios rack-scale slated for 2027; guidance reaffirmed but unproven at scale",
+        "thresholds": ("<25%",   "≥40%",   "≥60%",   "≥85%"),
+        "now":        "+57%",
+        "score":      3,
+        "comment":    "Q1 2026 $5.8B (+57%); Q2 guide $11.2B total implies continued sequential acceleration",
     },
     {
-        "name":       "Data Center GPU market share gains vs Nvidia",
+        "name":       "Hyperscaler multi-year commitments",
         "weight":     0.20,
-        "thresholds": ("<3%",    "≥5%",   "≥10%",   "≥15%"),
-        "now":        "~6%",
-        "score":      2,
-        "comment":    "AMD remains a distant #2; CUDA software moat keeps Nvidia >85% share; AMD gaining selectively in inference workloads",
-    },
-    {
-        "name":       "EPYC server CPU share gains vs Intel",
-        "weight":     0.15,
-        "thresholds": ("<28%",   "≥32%",  "≥38%",   "≥45%"),
-        "now":        "~36%",
+        "thresholds": ("<2GW",   "≥4GW",  "≥8GW",   "≥15GW"),
+        "now":        "~12GW",
         "score":      3,
-        "comment":    "EPYC continues steady cloud/enterprise share gains; Turin ramp strong; Intel struggling to respond competitively",
+        "comment":    "OpenAI 6GW + Meta up to 6GW, ~$60B combined value — genuinely large, but unproven at scale",
     },
     {
-        "name":       "Gross margin trajectory (mix shift to AI accelerators)",
+        "name":       "Total revenue YoY growth",
         "weight":     0.15,
-        "thresholds": ("<50%",   "≥52%",  "≥56%",   "≥60%"),
-        "now":        "~54%",
-        "score":      2,
-        "comment":    "Blended GM improving as Data Center AI mix grows; still below Nvidia-level margins given competitive pricing on MI-series",
-    },
-    {
-        "name":       "Client / Gaming segment health",
-        "weight":     0.10,
-        "thresholds": ("<-5%",   "≥0%",   "≥8%",    "≥15%"),
-        "now":        "+4%",
-        "score":      2,
-        "comment":    "Ryzen AI PC refresh modestly positive; Gaming console cycle late-stage and soft; discrete GPU share stable but small",
-    },
-    {
-        "name":       "Hyperscaler customer diversification (multi-vendor AI silicon strategy)",
-        "weight":     0.10,
-        "thresholds": ("Low",    "Moderate","High",  "Structural"),
-        "now":        "Moderate",
+        "thresholds": ("<15%",   "≥25%",   "≥38%",   "≥55%"),
+        "now":        "+38%",
         "score":      3,
-        "comment":    "OpenAI, Microsoft, Oracle, Meta all signaling multi-vendor AI compute strategies; AMD positioned as credible alternative to Nvidia",
+        "comment":    "Q1 $10.3B (+38%); Q2 guide $11.2B (+46% YoY) — accelerating, not just holding",
+    },
+    {
+        "name":       "Non-GAAP gross margin",
+        "weight":     0.15,
+        "thresholds": ("<44%",   "≥48%",   "≥52%",   "≥56%"),
+        "now":        "~48%",
+        "score":      2,
+        "comment":    "Data Center GPU mix is margin-dilutive early in the ramp; needs to expand as Helios scales",
+    },
+    {
+        "name":       "Forward P/E vs the AI-hardware cohort",
+        "weight":     0.10,
+        "thresholds": (">60x",   "≤45x",  "≤32x",   "≤24x"),
+        "now":        "66.1x",
+        "score":      1,
+        "comment":    "66.1× FY2026E — the richest multiple in this batch by a wide margin; priced for flawless execution",
+    },
+    {
+        "name":       "Helios ramp execution (qualitative)",
+        "weight":     0.10,
+        "thresholds": ("delayed","on-track","ahead",  "sold-out"),
+        "now":        "on-track",
+        "score":      2,
+        "comment":    "First racks shipping Q3 2026 as announced; no disclosed slippage yet, but nothing has shipped at scale either",
     },
 ]
 
@@ -133,12 +141,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Credible #2 AI accelerator vendor — MI300/MI350/MI400 roadmap gaining real customer traction",  +0.6, 0.20),
-    ("+", "EPYC structural share gains — multi-year cloud/enterprise CPU share momentum vs Intel",          +0.5, 0.15),
-    ("-", "Nvidia CUDA software moat — switching costs entrench Nvidia's >85% AI training/inference share", -0.7, 0.20),
-    ("-", "Custom silicon competition — Google TPU, AWS Trainium, Microsoft Maia erode merchant-silicon TAM",-0.5, 0.15),
-    ("-", "High stock volatility / multiple sensitivity to AI capex narrative — sentiment-driven swings",   -0.5, 0.15),
-    ("+", "Multi-vendor diversification tailwind — hyperscalers actively want a non-Nvidia alternative",     +0.4, 0.15),
+    ("+", "Anchor hyperscaler commitments — OpenAI + Meta, ~12GW combined, ~$60B value; not a hope, a signed book", +0.8, 0.20),
+    ("+", "Data Center inflection — +57% YoY and accelerating into a Q2 guide well above the Street setup",         +0.7, 0.20),
+    ("-", "Valuation — 66.1× forward EPS leaves almost no room for a ramp delay or a hyperscaler capex pause",      -1.0, 0.25),
+    ("-", "Execution risk — MI400/Helios is unproven at the scale the commitments imply; software (ROCm) still trails CUDA", -0.6, 0.15),
+    ("-", "Single-supplier concentration risk — two customers anchor most of the incremental Data Center growth",   -0.4, 0.10),
+    ("+", "Client + Gaming diversification — a profitable, cash-generative base that doesn't need the AI story to work", +0.3, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -172,8 +180,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 7.00    # conservative FY2028E: ramp continues but below BULL pace
-CONS_PE_2YR   = 24      # rerating from elevated AI-narrative multiple toward growth-justified 24×
+CONS_EPS_2YR  = 9.60    # conservative FY2028E: ~15.5% EPS CAGR — well below what BASE/BULL imply
+CONS_PE_2YR   = 26      # multiple compresses hard from 66.1× toward a normal-growth-stock range
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -194,175 +202,185 @@ print("═" * (W + 4))
 print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  AI Accelerators / Data Center / Client / Gaming")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
+print(f"  ⚠ Q2 2026 earnings report Aug 4, 2026 — two days after this refresh. Figures below use")
+print(f"  Q1 2026 actuals and the company's Q2 guide; treat Q2 guide as guidance, not a confirmed print.")
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<26}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<36}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<26}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<36}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<26}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<36}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q1 2026 actual: $10.3B total (+38%), Data Center $5.8B (+57%). Q2 guide: ~$11.2B (+46%)")
 print()
 
 # EPS bridge
+shares    = SHARES_OUT_M / 1000
 curr_gp   = curr_total * GROSS_MARGIN_CURR
 curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_eps  = round(curr_oi * (1 - TAX_RATE) / shares, 2)
 
 bull_gp   = bull_total * GROSS_MARGIN_BULL
-bull_oi   = bull_gp - OPEX_FIXED_B
-bull_ni   = bull_oi * (1 - TAX_RATE)
-shares_b  = shares * 0.97   # modest net buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_oi   = bull_gp - OPEX_FIXED_B * 1.15
+shares_b  = shares * 0.99
+bull_eps_imp = round(bull_oi * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.94   # mix shift away from AI accel; pricing pressure
-bear_oi   = bear_gp - OPEX_FIXED_B * 0.97           # partial cost response
-bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_gp   = bear_total * 0.460     # margin compresses as Data Center mix shrinks back toward Client
+bear_oi   = bear_gp - OPEX_FIXED_B * 0.95    # management trims opex growth in a real downturn
+bear_eps_imp = round(max(0, bear_oi) * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 32× = ~${bull_eps_imp*32:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − opex, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 34× = ~${bull_eps_imp*34:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.94:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 22× trough P/E (AI-capex-scare floor) = ~${bear_eps_imp*22:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × 46.0% GM (Data Center mix shrinks back toward Client) − opex")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 18× trough = ~${bear_eps_imp*18:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print()
+print(f"  ⚠ THE LEVERAGE POINT: Data Center is {SEG_DATA[0][1]/curr_total*100:.0f}% of FY2026E revenue but essentially")
+print(f"  100% of the bear-to-bull swing. Client and Gaming are relatively stable, profitable")
+print(f"  businesses on their own — the entire multiple is a bet on one segment's trajectory.")
+
+# HYPERSCALER COMMITMENT CHECK
+print()
+print(f"  HYPERSCALER COMMITMENT CHECK  (the AMD-specific angle):")
+print(f"  OpenAI commitment:             {OPENAI_COMMIT_GW:.0f}GW multi-year Helios deployment")
+print(f"  Meta commitment:               up to {META_COMMIT_GW:.0f}GW multi-year deployment")
+print(f"  Combined approximate value:    ~${COMBINED_VALUE_B:.0f}B across both deals")
+print(f"  First Helios rack shipments:   {HELIOS_SHIP_QTR}")
+print()
+print(f"  These are the two commitments underwriting the entire BULL/XBULL case. Neither has yet")
+print(f"  converted into a full quarter of shipped, recognized Data Center revenue at the scale")
+print(f"  implied by ~12GW of capacity. The gap between 'signed multi-year framework agreement'")
+print(f"  and 'quarterly revenue run-rate' is exactly where AI-hardware theses have broken before —")
+print(f"  it is the thing to track, not the headline GW number itself.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev   = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-eps_per_1B_dc    = 1.0 * 0.60 * (1 - TAX_RATE) / shares   # Data Center AI accel-level incremental margin
-
+eps_per_1B_dc   = 1.0 * 0.58 * (1 - TAX_RATE) / shares    # Data Center incremental margin ~58%
+eps_per_1pp_gm  = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B Data Center AI revenue:  +${eps_per_1B_dc:.3f}/EPS  = +${eps_per_1B_dc*28:.1f}/share at 28× P/E")
-print(f"  1pp Data Center GPU share gain (vs Nvidia, ~$3B TAM/pt): +${eps_per_1B_dc*3:.2f}/EPS  =  +${eps_per_1B_dc*3*28:.1f}/share at 28× P/E")
-print(f"  1pp GM expansion (mix shift to AI accelerators):  +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*28:.1f}/share at 28× P/E")
-print(f"  EPYC 1pp server CPU share gain (~$1.5B TAM/pt):   +${eps_per_1B_dc*1.5:.2f}/EPS  =  +${eps_per_1B_dc*1.5*28:.1f}/share at 28× P/E")
+print(f"  Every $1B Data Center revenue (58% inc. margin):  +${eps_per_1B_dc:.3f}/EPS  = +${eps_per_1B_dc*30:.2f}/share at 30× P/E")
+print(f"  Every 1pp of blended gross margin:                +${eps_per_1pp_gm:.3f}/EPS  = +${eps_per_1pp_gm*30:.2f}/share at 30× P/E")
+print(f"  Every 1 turn of P/E:                              ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
+print(f"  ↑ at 66.1× forward, small misses on either revenue or margin move the stock a lot")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (AI accelerator ramp / DC share / EPYC / margin / client / diversification)")
+print("  ① SIGNAL DASHBOARD  (Data Center growth / hyperscaler commitments / margin / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<42}  {'BEAR':>8}  {'BASE':>8}  {'BULL':>7}  {'XBULL':>8}  {'NOW':>8}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<42}  {ths[0]:>8}  {ths[1]:>8}  {ths[2]:>7}  {ths[3]:>8}  {s['now']:>8}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<32}  {'Current':>9}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("MI300/MI350/MI400 AI accel revenue",  "~$8B",   "<$5B",   "−$3B",   "Major hyperscaler cancels/delays MI400 orders; Helios slips to 2028"),
-    ("Data Center GPU share vs Nvidia",     "~6%",    "<3%",    "−3pp",   "CUDA lock-in deepens; AMD ROCm software stack fails to gain developer traction"),
-    ("EPYC server CPU share vs Intel",      "~36%",   "<28%",   "−8pp",   "Intel Clearwater Forest competitive resurgence; cloud price wars"),
-    ("Gross margin",                        "~54%",   "<50%",   "−4pp",   "Aggressive AI accelerator pricing to win share erodes blended margin"),
-    ("Client/Gaming segment growth",        "+4%",    "<-5%",   "−9pp",   "PC market downturn + console cycle trough simultaneously"),
-    ("Hyperscaler diversification",         "Moderate","Low",   "−1 lvl", "Hyperscalers consolidate back to Nvidia + fully in-house custom silicon"),
+    ("Data Center revenue YoY",    "+57%",   "<25%",    "-32pp",  "OpenAI/Meta phase deployments slower than committed"),
+    ("Hyperscaler commitments",    "~12GW",  "<4GW",    "-8GW",   "A committed deal is renegotiated or scaled back publicly"),
+    ("Total revenue YoY",          "+38%",   "<15%",    "-23pp",  "Data Center deceleration drags the whole company down with it"),
+    ("Non-GAAP gross margin",      "~56%",   "<50%",    "-6pp",   "GPU mix reverts to Client-heavy; pricing pressure from Nvidia"),
+    ("Forward P/E",                "66.1x",  "≤20x",    "-54x",   "Multiple resets to a normal semiconductor-cycle range"),
+    ("Helios ramp",                "on-track","delayed", "slip",  "Manufacturing, HBM supply, or software-stack delays push shipments out"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<32}  {curr:>9}  {bear_v:>9}  {move:>8}  {trigger[:46]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: A major hyperscaler (Microsoft, Meta, Oracle, or OpenAI/Stargate-affiliated)")
-print(f"  publicly pulls back from MI300/MI350/MI400 commitments, citing CUDA/software ecosystem")
-print(f"  gaps or in-house silicon (TPU/Trainium/Maia) prioritization. Combined with an AI-capex")
-print(f"  digestion cycle, Data Center revenue growth stalls, GM compresses on pricing pressure,")
-print(f"  EPS falls to ~$2.80 → 22× floor = ${bear_price}.")
-print(f"  Note: ${bear_price} is NOT a permanent impairment — EPYC server share gains and the")
-print(f"  Embedded/Client base provide an earnings floor independent of the AI accelerator narrative.")
-print(f"  Recovery to ~${bear_price+50}–${bear_price+80} in 2yr is plausible if MI400/Helios re-engages design wins.")
+print(f"  KEY TRIGGER: AMD's bear case is not demand disappearing — it's demand arriving on a")
+print(f"  slower schedule than a 66.1× multiple can tolerate. Two customers anchor most of the")
+print(f"  incremental growth story; if either phases their Helios deployment over 4 years instead")
+print(f"  of 2, the revenue is still coming but the stock re-rates hard in the meantime. This is a")
+print(f"  timing risk wearing a demand-risk costume, and the multiple treats it as if it can't happen.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (consensus $5.30–$5.70; non-GAAP)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (AI-capex-scare floor; 2025 trough ~22-24×)")
+print(f"  FY2026E non-GAAP EPS:       ${EPS_FY2026E:.2f}  (Q1 actual $1.37, +43% YoY; full-year ramping)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (AMD traded low-20s forward during the 2025 AI-capex scare)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP means the market is pricing in multiple years of")
-print(f"  successful MI300/MI350/MI400 ramp execution ABOVE the trough-floor multiple. At")
-print(f"  ${CURRENT_PRICE:.2f} and FY2026E EPS ${EPS_FY2026E:.2f}, the implied P/E is {CURRENT_PRICE/EPS_FY2026E:.1f}×.")
-print(f"  This is the 'AI narrative premium': investors are paying for proof of a Data Center")
-print(f"  GPU revenue run-rate that has not yet fully materialized. The risk is narrative reversion")
-print(f"  if hyperscaler AI capex growth decelerates or MI400 design wins disappoint.")
-print(f"  EPP path: FY2028E EPS ~$8.00 × {PE_PESSIMISTIC:.0f}× = ${8.00*PE_PESSIMISTIC:.0f} floor by late 2028 (EPP growing with ramp).")
-print(f"  At 28× mid-cycle P/E: ${EPS_FY2026E:.2f} × 28 = ${EPS_FY2026E*28:.0f}  — close to current price, i.e. roughly BASE-priced.")
+print(f"  A +{epp_gap_pct:.0f}% premium to EPP is the widest gap in this batch by a large margin. At")
+print(f"  ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E non-GAAP EPS — a multiple that assigns")
+print(f"  almost no probability to the ramp disappointing. The EPP floor itself (22× trough) is not")
+print(f"  a distress multiple; it is roughly where AMD traded twelve months ago on a fraction of")
+print(f"  today's Data Center revenue. The floor is real, but it is a long way down from here.")
+print(f"  At a 40× 'still-growth-priced' multiple: ${EPS_FY2026E:.2f} × 40 = ${EPS_FY2026E*40:.0f}  ({(EPS_FY2026E*40/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: ramp continues at moderate pace; multiple normalizes)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: strong execution, but the multiple compresses hard)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (MI350/MI400 ramp continues; EPYC share gains persist)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from {CURRENT_PRICE/EPS_FY2026E:.0f}× toward growth-justified {CONS_PE_2YR}×)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (no dividend; 100% reinvested in AI roadmap/buybacks)")
+print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (~15.5% EPS CAGR — a fraction of the BULL case)")
+print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (66.1× → 26×; a normal-growth-stock multiple)")
+print(f"  Conservative equity value:            ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (no dividend)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:               ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:            {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE PROBLEM: even the conservative case requires the AI accelerator ramp to keep")
-print(f"  delivering ~27%/yr EPS growth while the multiple normalizes from {CURRENT_PRICE/EPS_FY2026E:.0f}× toward {CONS_PE_2YR}×.")
-print(f"  For conservative 2yr to break even at {CONS_PE_2YR}× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~{((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2026E - 1)*100:.1f}% EPS growth by FY2028E — possible at BASE/BULL, not BEAR.")
-print(f"  Breakeven at 28× P/E (no multiple compression): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 28:.2f}")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at {CONS_PE_2YR}× P/E; ratio_b <1.0×)")
+print(f"  THE PROBLEM THIS MODEL FLAGS: even 15.5%/yr EPS growth — a very good outcome for almost")
+print(f"  any company — produces a NEGATIVE conservative return here, because the multiple has to")
+print(f"  come down from 66.1× to a still-generous 26×. AMD needs the BULL case, not just good")
+print(f"  execution, to justify today's price. That is the definition of priced for perfection.")
+print(f"  Breakeven at 26× requires FY2028E EPS ≥ ${CURRENT_PRICE / CONS_PE_2YR:.2f} — well above even the BASE-case path.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.45
+annual_vol  = 0.55
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: 52W range reflects extreme sensitivity to AI capex narrative shifts and hyperscaler")
-print(f"  capex-guidance commentary throughout 2025-2026")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (none — all FCF reinvested in AI roadmap/buybacks)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (high-beta AI capex proxy; among most volatile mega-caps)")
-print(f"  Beta vs S&P 500:      1.85  (high-beta AI capex cycle proxy; amplifies both AI optimism and capex-digestion fears)")
+print(f"  Round trip:            low $149 → high $585 → current ${CURRENT_PRICE:.2f}, a 3.9× peak-to-trough range in one year")
+print(f"  Annual dividend:      none — all cash reinvested in the AI roadmap / buybacks")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (among the highest in large-cap tech; earnings-day moves of ±15% are routine)")
+print(f"  Beta vs S&P 500:      1.85  (high-beta AI-capex proxy, more volatile than Nvidia on the same news)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (severe but within range seen during 2025 AI-capex scares)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (AI-capex-scare trough) was already a peak-to-trough move of >50%.")
-print(f"  → Hyperscaler AI capex guidance (Microsoft, Meta, Amazon, Google, OpenAI/Stargate) is THE KEY binary.")
-print(f"  → MI400/Helios design-win announcements and Data Center revenue beats are KEY bull catalysts.")
-print(f"  → AVOID at current price  |  WATCHLIST $145–165  |  ACCUMULATE $120–140  |  BUY below $115")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (well within a single year's realized range for this stock)")
+print(f"  → Q2 earnings (Aug 4, 2026) is the immediate catalyst — Data Center revenue vs the $11.2B guide.")
+print(f"  → Any hyperscaler commentary on Helios deployment PACE (not just the GW headline) will move the stock.")
+print(f"  → AVOID at current price  |  WATCHLIST $350–420  |  ACCUMULATE $260–310  |  BUY below $220")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -390,25 +408,26 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) compares to the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 fundamentals.")
-print(f"  The model scores the fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: the gap between bullish AI narrative and proven Data Center GPU revenue")
-print(f"  run-rate is the central risk/reward question for AMD at this price.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0 — between BULL and")
+print(f"  XBULL. The model's adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  AMD's fundamentals are genuinely strong: +57% Data Center growth, ~12GW of anchor")
+print(f"  commitments, and a real roadmap lead over the last AI-capex-scare cycle. None of that is")
+print(f"  in dispute. What the model disputes is whether 66.1× forward earnings leaves room for")
+print(f"  ANY of it to arrive slower than scheduled — and multi-year hyperscaler buildouts almost")
+print(f"  always do. This is AVOID on price, not on the business: the ratio B math says the market")
+print(f"  is already paying for a scenario better than this model's own BULL case delivers.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) MI400/MI450 (Helios rack-scale) launch and hyperscaler adoption — BULL trigger")
-print(f"  (2) Data Center segment revenue/guidance updates — proof of AI accelerator run-rate")
-print(f"  (3) EPYC share gains in cloud/enterprise — structural CPU tailwind vs Intel")
-print(f"  (4) Gross margin trajectory — mix shift to AI accelerators vs competitive pricing pressure")
-print(f"  (5) OpenAI/Microsoft/Oracle compute deals — multi-vendor AI silicon diversification evidence")
-print(f"  (6) Q2/Q3 2026 earnings — Data Center segment beat/miss vs guidance")
-print(f"  AVOID at ${CURRENT_PRICE:.2f}  |  WATCHLIST $145–165  |  ACCUMULATE $120–140  |  BUY below $115")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) Q2 2026 earnings (Aug 4) — Data Center revenue vs the $11.2B total-revenue guide")
+print(f"  (2) Helios rack shipment cadence starting Q3 2026 — proof the timeline is real, not aspirational")
+print(f"  (3) Gross margin trajectory — must expand as GPU mix scales, or the EPS bridge breaks")
+print(f"  (4) Any hyperscaler commentary narrowing or reaffirming OpenAI/Meta deployment pace")
+print(f"  (5) Nvidia competitive response — pricing or roadmap moves that pressure AMD's share gains")
+print(f"  AVOID at ${CURRENT_PRICE:.2f}  |  WATCHLIST $350–420  |  ACCUMULATE $260–310  |  BUY below $220")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  Commitments: ~{OPENAI_COMMIT_GW+META_COMMIT_GW:.0f}GW")
 print("═" * (W + 4))
 print()
 
