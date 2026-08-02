@@ -123,7 +123,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2.5 border border-vr-border bg-vr-surface/60 rounded-full px-4 py-1.5 mb-10">
               <span className="w-1.5 h-1.5 rounded-full bg-vr-green animate-pulse" />
               <span className="text-vr-muted text-xs font-medium tracking-wide">
-                On-Chain Intelligence · Powered by VeeRock
+                On-Chain Intelligence · Powered by ZembiHF
               </span>
             </div>
 
@@ -278,7 +278,7 @@ export default function HomePage() {
                 Ready to analyze your wallet?
               </h2>
               <p className="text-vr-muted leading-relaxed">
-                Connect your wallet to the VeeRock engine. Get a full risk breakdown,
+                Connect your wallet to the ZembiHF engine. Get a full risk breakdown,
                 position analysis, and ranked action recommendations — non-custodial, read-only.
               </p>
             </div>

@@ -23,7 +23,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group shrink-0">
           <Logo size={34} animated />
           <span className="font-sans text-[17px] font-bold tracking-tight text-vr-text group-hover:text-vr-gold transition-colors duration-200">
-            VeeRock
+            ZembiHF
           </span>
         </Link>
 

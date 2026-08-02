@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Logo size={32} />
-              <span className="font-serif text-lg font-bold text-vr-text">VeeRock</span>
+              <span className="font-serif text-lg font-bold text-vr-text">ZembiHF</span>
             </Link>
             <p className="text-vr-faint text-sm leading-relaxed mb-5">
               Institutional-grade on-chain intelligence for the modern digital asset investor.
@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="gold-divider mb-6" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-vr-faint text-xs">
-          <span>© {new Date().getFullYear()} VeeRock. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} ZembiHF. All rights reserved.</span>
           <span className="text-center">
             Not financial advice. Crypto assets involve substantial risk. Past performance is not indicative of future results.
           </span>

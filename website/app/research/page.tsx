@@ -11,7 +11,7 @@ const articles = [
       'As on-chain liquidity metrics increasingly diverge from reported figures, institutional participants face a fragmented landscape where slippage costs quietly erode alpha generation across DeFi protocols.',
     date: 'Apr 12, 2025',
     readTime: '8 min read',
-    author: 'VeeRock Research',
+    author: 'ZembiHF Research',
   },
   {
     category: 'Research',
@@ -21,7 +21,7 @@ const articles = [
       'The emergence of restaking introduces novel vectors of systemic risk while simultaneously unlocking a trillion-dollar addressable market in cryptoeconomic security guarantees across the modular stack.',
     date: 'Apr 8, 2025',
     readTime: '11 min read',
-    author: 'VeeRock Research',
+    author: 'ZembiHF Research',
   },
   {
     category: 'Commentary',
@@ -31,7 +31,7 @@ const articles = [
       'Historical dominance cycles suggest we are entering the late expansion phase, characterized by capital rotation from large-cap to mid-cap Layer-1 assets as narrative velocity accelerates.',
     date: 'Apr 3, 2025',
     readTime: '6 min read',
-    author: 'VeeRock Editorial',
+    author: 'ZembiHF Editorial',
   },
   {
     category: 'Research',
@@ -41,7 +41,7 @@ const articles = [
       'With proving costs comprising up to 40% of operational overhead for zero-knowledge rollups, the economics of decentralized sequencing remain precarious — and the race to proof compression is existential.',
     date: 'Mar 28, 2025',
     readTime: '13 min read',
-    author: 'VeeRock Research',
+    author: 'ZembiHF Research',
   },
   {
     category: 'Analysis',
@@ -51,7 +51,7 @@ const articles = [
       'USDC and USDT reserve compositions reveal a sophisticated arbitrage of short-duration treasury yields, generating over $6B in annualized revenue while bearing minimal credit risk exposure.',
     date: 'Mar 21, 2025',
     readTime: '9 min read',
-    author: 'VeeRock Research',
+    author: 'ZembiHF Research',
   },
   {
     category: 'Market Update',
@@ -61,7 +61,7 @@ const articles = [
       'The evolution of maximal extractable value from chaotic frontrunning to institutionalized block building represents one of the most significant structural shifts in public blockchain economics this cycle.',
     date: 'Mar 14, 2025',
     readTime: '7 min read',
-    author: 'VeeRock Editorial',
+    author: 'ZembiHF Editorial',
   },
 ];
 

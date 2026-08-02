@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'VeeRock — On-Chain Intelligence',
+  title: 'ZembiHF — On-Chain Intelligence',
   description:
-    'Institutional-grade on-chain research, wallet analytics, and DeFi intelligence powered by VeeRock.',
+    'Institutional-grade on-chain research, wallet analytics, and DeFi intelligence powered by ZembiHF.',
   keywords: ['crypto', 'on-chain analysis', 'DeFi', 'blockchain research', 'wallet intelligence'],
 };
 
