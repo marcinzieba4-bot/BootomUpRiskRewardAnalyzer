@@ -1,7 +1,7 @@
 """
 LRCX  ·  Lam Research Corporation  ·  NASDAQ: LRCX
-Bottom-up signal model  ·  Semiconductor Equipment / Etch & Deposition / WFE
-Date: 2026-06-09
+Bottom-up signal model  ·  Wafer Fabrication Equipment / HBM / NAND / Logic
+Date: 2026-08-02
 """
 
 import math
@@ -9,45 +9,46 @@ import math
 # ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
 TICKER        = "LRCX"
 COMPANY       = "Lam Research Corporation"
-SECTOR        = "Semiconductor Equipment · Etch & Deposition · WFE · NASDAQ: LRCX"
-CURRENT_PRICE = 298.46       # USD; as of 2026-06-09; up significantly from 52W low on AI WFE thesis
-VOL_52W_LOW   = 156.30       # October 2025 trough; WFE correction + China uncertainty
-VOL_52W_HIGH  = 345.80       # March 2026 NAND recovery + HBM capex peak
-SHARES_OUT_M  = 1_330.0      # millions; declining ~3%/yr via buybacks
-ANNUAL_DIV    = 2.40         # $/share ($0.60/quarter; growing ~10%/yr; initiated 2014)
+SECTOR        = "Wafer Fabrication Equipment · HBM / NAND / Logic · NASDAQ: LRCX"
+CURRENT_PRICE = 293.02       # USD; as of 2026-08-02
+VOL_52W_LOW   =  90.94       # 52-week low
+VOL_52W_HIGH  = 438.50       # 52-week high
+SHARES_OUT_M  = 1_251.0      # millions (~$366.65B mkt cap / $293.02)
 
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2027E revenue by segment ($B)  [fiscal year ends June 2027]
+# Dividend: $0.26/qtr → $1.04/yr (0.35% yield)
+ANNUAL_DIV    = 1.04         # $/share
+
+# ── WFE END-MARKET REVENUE BRIDGE ─────────────────────────────────────────────
+# FY2026E revenue by end-market ($B); TTM = $23.23B (+26.0% YoY)
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Etch — Logic/Foundry (TSMC/Samsung/Intel)",  7.5, 4.5, 11.0, "Gate-all-around transition; TSMC N2/A16 etch intensity up 30%+ per wafer"),
-    ("Etch — Memory (DRAM/HBM)",                   5.5, 2.5,  9.0, "HBM4 high aspect ratio etch; DRAM EUV integration; SK Hynix/Micron"),
-    ("Etch — NAND",                                3.0, 1.5,  5.5, "232L+ 3D NAND etch; Samsung recovery; inventory cycle bottom"),
-    ("Deposition (CVD/ALD/Epitaxy)",               5.0, 3.0,  8.0, "ALD gate dielectric; EUV underlayers; advanced packaging Cu/barrier"),
-    ("Cryogenic & Cleaning / Other",               2.5, 1.5,  4.0, "Cryo-etch for GAA fins; single wafer clean; advanced packaging"),
+    ("DRAM / HBM Etch & Dep",   9.5,  5.0, 15.0, "HBM3/HBM4 each layer needs Lam etch; every HBM stack = 10+ etch steps"),
+    ("NAND WFE",                 7.5,  3.0, 12.0, "NAND recovering from 2023-24 trough; 200+ layer drives deep etch intensity"),
+    ("Logic / Foundry",          4.5,  3.5,  7.0, "TSMC 2nm, Intel 18A — gate-all-around requires more etch/dep per node"),
+    ("CSBG (Services/Spares)",   1.7,  1.4,  2.2, "Recurring; highest-margin segment; grows with installed base"),
 ]
 
 # Margin assumptions
-GROSS_MARGIN_CURR = 0.480   # blended; WFE equipment typical ~47-49%
-GROSS_MARGIN_BULL = 0.510   # BULL: high-margin service/spares mix increases; pricing power
-OPEX_FIXED_B      = 3.8     # non-GAAP R&D + SG&A; relatively lean
-TAX_RATE          = 0.120   # effective; Singapore/offshore structures
+GROSS_MARGIN_CURR = 0.480   # blended gross margin FY2026E (~48%)
+GROSS_MARGIN_BULL = 0.500   # BULL: services mix + volume leverage
+OPEX_FIXED_B      = 4.8     # R&D + SG&A ($B); ~20.6% of revenue
+TAX_RATE          = 0.130   # effective rate
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2027E    = 4.80        # FY2027E adj EPS (consensus $4.50–$5.10 non-GAAP; fiscal June 2027)
-PE_PESSIMISTIC = 16.0        # trough P/E: semiconductor equipment is deeply cyclical; 2022-23 trough ~12-16×
-                              # Note: at $298 and EPP $77, stock is 287% above trough floor — rich
-EPP            = round(PE_PESSIMISTIC * EPS_FY2027E, 0)   # $77
+EPS_FY2026E    = 9.48        # FY2026E non-GAAP EPS (consensus; forward P/E 30.92×)
+PE_PESSIMISTIC = 18.0        # trough P/E: WFE cycle floor; 2019 trough ~15–18×
+BEAR_EPS       = 5.00        # bear scenario EPS (WFE downturn + China step-down)
+EPP            = round(PE_PESSIMISTIC * BEAR_EPS, 0)   # $90
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
 # ── SCENARIO TABLE ────────────────────────────────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 2.50, 14,  35, "WFE collapse: memory oversupply + China ban; revenue -45%; EPS $2.50 → 14× trough"),
-    "BASE":  ( 5.50, 26, 143, "WFE recovery cycle; HBM3E/4 etch intensity; GAA ramp at TSMC; EPS $5.50 → 26×"),
-    "BULL":  ( 8.00, 30, 240, "HBM supercycle + GAA logic ramp + NAND recovery; EPS $8.00 → 30× growth premium"),
-    "XBULL": (12.00, 35, 420, "AI hardware arms race never pauses; LRCX critical path every node; EPS $12 → 35×"),
+    "BEAR":  ( 5.00, 18,   90, "WFE cycle downturn; China restrictions tighten; capex pause; EPS $5 → 18× trough"),
+    "BASE":  ( 9.48, 24,  227, "HBM/AI memory capex sustains; NAND recovery; EPS $9.48 → 24× justified growth P/E"),
+    "BULL":  (14.00, 28,  392, "Logic+HBM supercycle; DRAM/NAND simultaneous ramp; EPS $14 → 28× premium"),
+    "XBULL": (20.00, 32,  640, "All nodes + EUV upgrade + China localisation; EPS $20 → 32× peak cycle"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -78,52 +79,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "WFE spending YoY (industry)",
-        "weight":     0.25,
-        "thresholds": ("<-10%",  "≥5%",   "≥15%",   "≥25%"),
+        "name":       "HBM/DRAM etch intensity & spend",
+        "weight":     0.30,
+        "thresholds": ("<10%", "≥15%",  "≥30%",  "≥50%"),
+        "now":        "+35%",
+        "score":      3,
+        "comment":    "HBM3/4 drives etch steps per wafer; AI memory capex robust; DRAM investment accelerating YoY",
+    },
+    {
+        "name":       "NAND WFE spend YoY",
+        "weight":     0.20,
+        "thresholds": ("<-20%", "≥0%",  "≥20%",  "≥40%"),
+        "now":        "+18%",
+        "score":      2,
+        "comment":    "NAND recovering from trough; 200+ layer drives etch intensity; Samsung/SK Hynix capex stabilising",
+    },
+    {
+        "name":       "Logic node WFE spending YoY",
+        "weight":     0.20,
+        "thresholds": ("<5%",  "≥8%",   "≥18%",  "≥30%"),
         "now":        "+12%",
         "score":      2,
-        "comment":    "FY2027E WFE ~$115B (+12% YoY); HBM + logic driving; NAND still recovering; China export risk",
+        "comment":    "TSMC 2nm ramp; Intel 18A investment; gate-all-around requires more etch/dep steps per node",
     },
     {
-        "name":       "HBM etch intensity / revenue",
-        "weight":     0.25,
-        "thresholds": ("<$2B",   "≥$3B",  "≥$5B",   "≥$8B"),
-        "now":        "~$5B",
-        "score":      3,
-        "comment":    "HBM4 requires 2× etch steps vs HBM3; LRCX sole-source on key high aspect ratio steps; SK Hynix/Micron",
-    },
-    {
-        "name":       "Gate-all-around logic ramp (TSMC N2)",
-        "weight":     0.20,
-        "thresholds": ("<20%",   "≥40%",  "≥65%",   "≥90%"),
-        "now":        "~55%",
-        "score":      2,
-        "comment":    "TSMC N2 volume ramp at ~55% of planned capacity; GAA adds 15-20% etch steps vs FinFET; FY2027 peak",
-    },
-    {
-        "name":       "NAND WFE recovery",
+        "name":       "China revenue YoY",
         "weight":     0.15,
-        "thresholds": ("<-20%",  "≥0%",   "≥15%",   "≥35%"),
-        "now":        "+8%",
+        "thresholds": ("<-30%", "≥-10%", "≥+5%", "≥+20%"),
+        "now":        "-5%",
         "score":      2,
-        "comment":    "3D NAND capex recovering from trough; 232L+ adoption; Samsung restoring utilization; slow recovery",
+        "comment":    "Export controls constrain leading-edge; legacy node demand partially offsets; uncertainty elevated",
     },
     {
-        "name":       "China revenue / export controls",
+        "name":       "Gross margin",
         "weight":     0.10,
-        "thresholds": ("<$2B",   "≥$3.5B","≥$5B",   "≥$7B"),
-        "now":        "~$3.5B",
-        "score":      2,
-        "comment":    "China ~15% of revenue (~$3.5B); export controls limit advanced etch; lagging-node still allowed",
+        "thresholds": ("<44%",  "≥46%",  "≥48%",  "≥50%"),
+        "now":        "48%",
+        "score":      3,
+        "comment":    "CSBG high-margin services growing; volume leverage on fixed opex; mix toward advanced nodes",
     },
     {
-        "name":       "Service/spares as % of revenue",
+        "name":       "Book-to-bill ratio",
         "weight":     0.05,
-        "thresholds": ("<20%",   "≥25%",  "≥30%",   "≥38%"),
-        "now":        "~27%",
+        "thresholds": ("<0.9",  "≥1.0",  "≥1.1",  "≥1.25"),
+        "now":        "~1.05",
         "score":      2,
-        "comment":    "Service/spares $6.5B/yr (~27% of rev); recurring; high-margin; growing installed base",
+        "comment":    "Slightly above parity; HBM/memory orders positive; logic orders building; NAND still rebuilding",
     },
 ]
 
@@ -133,12 +134,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Etch technology moat — #1 globally ~50% etch market share; conductors/dielectrics/GAA fins",   +0.8, 0.25),
-    ("+", "HBM structural tailwind — sole-source on key HBM4 high-AR etch; AI memory = structural demand", +0.6, 0.20),
-    ("-", "Cyclicality — WFE is deeply cyclical; memory capex can fall 40-50% in down-cycle",             -0.7, 0.20),
-    ("-", "China export control binary — China 15% of rev; tighter BIS rules = permanent revenue loss",   -0.5, 0.15),
-    ("+", "GAA technology transition — N2/A16/Intel 18A all require new etch chamber types; sole-source",  +0.4, 0.15),
-    ("-", "Valuation at cycle peak — 62× FY2026E at $298; paying peak-cycle P/E for cyclical",            -0.5, 0.05),
+    ("+", "HBM monopoly position — every HBM layer requires Lam etch; no viable substitute",           +0.8, 0.25),
+    ("+", "Duopoly WFE market — Lam (#2 globally) + ASML/TEL; high barriers to entry; pricing power",  +0.5, 0.20),
+    ("-", "China export restriction risk — China ~30% of revenue; escalation = step-down revenue",       -0.9, 0.20),
+    ("-", "WFE cycle volatility — capex discretionary; memory over-investment risk post-HBM peak",       -0.6, 0.20),
+    ("+", "CSBG installed-base flywheel — $4B+ recurring services revenue growing with installed base",  +0.4, 0.10),
+    ("-", "Customer concentration — Samsung + SK Hynix + Micron >60% revenue; single-customer risk",    -0.3, 0.05),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -160,7 +161,6 @@ downside_pct = (CURRENT_PRICE - bear_price) / CURRENT_PRICE
 upside_pct   = (bull_price - CURRENT_PRICE) / CURRENT_PRICE
 ratio_b      = round(downside_pct / upside_pct, 2) if upside_pct > 0 else float("inf")
 
-# BULL ($240) < CURRENT ($298.46) → upside_pct < 0 → ratio_b = inf → AVOID
 if ratio_b != float("inf") and ratio_b < 0.75:
     signal_short, signal_full = "BUY",       "◉ BUY"
 elif ratio_b != float("inf") and ratio_b < 1.10:
@@ -173,8 +173,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 5.80    # FY2028E conservative: 10% EPS CAGR from FY2027E (cycle normalizes)
-CONS_PE_2YR   = 22      # WFE companies trade 18-25× mid-cycle; 22× reasonable floor
+CONS_EPS_2YR  = 10.50   # conservative FY2028E: HBM sustains + NAND recovery; ~10.5% EPS CAGR
+CONS_PE_2YR   = 22      # mid-cycle WFE P/E; below current 30.9× forward
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -192,26 +192,26 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Semiconductor Equipment / Etch & Deposition / WFE")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Wafer Fabrication Equipment / HBM / NAND / Logic")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① WFE REVENUE BRIDGE ─────────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2027E  →  BEAR / BULL scenarios)")
+print("  WFE END-MARKET REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<45}  {'FY2027E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<26}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<45}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<26}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<45}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<26}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
 print()
 
 # EPS bridge
@@ -221,49 +221,48 @@ curr_oi   = curr_gp - OPEX_FIXED_B
 curr_ni   = curr_oi * (1 - TAX_RATE)
 curr_eps  = round(curr_ni / shares, 2)
 
-bull_gp      = bull_total * GROSS_MARGIN_BULL
-bull_oi      = bull_gp - OPEX_FIXED_B
-bull_ni      = bull_oi * (1 - TAX_RATE)
-shares_b     = shares * 0.94   # ~3%/yr buyback over 2yr
+bull_gp   = bull_total * GROSS_MARGIN_BULL
+bull_oi   = bull_gp - OPEX_FIXED_B
+bull_ni   = bull_oi * (1 - TAX_RATE)
+shares_b  = shares * 0.97   # modest buyback
 bull_eps_imp = round(bull_ni / shares_b, 1)
 
-bear_gp      = bear_total * GROSS_MARGIN_CURR * 0.95   # mix shift to lower-margin systems
-bear_oi      = bear_gp - OPEX_FIXED_B * 0.95           # partial cost response
-bear_ni      = max(0, bear_oi) * (1 - TAX_RATE)
+bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.95   # margin compression in downturn
+bear_oi   = bear_gp - OPEX_FIXED_B * 0.95
+bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
 bear_eps_imp = round(bear_ni / shares, 1)
 
-print(f"  FY2027E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2027E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2026E:.2f} non-GAAP  ✓)")
 print()
 print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 30× = ~${bull_eps_imp*30:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  ÷ {shares_b:.3f}B shares  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 28× = ~${bull_eps_imp*28:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
 print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.95:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 14× trough P/E (WFE cycle floor) = ~${bear_eps_imp*14:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  At 18× trough P/E (WFE cycle floor) = ~${bear_eps_imp*18:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
 
 # KEY SENSITIVITIES
 print()
 eps_per_1B_rev   = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
 eps_per_1B_china = 1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE) / shares
-
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B WFE revenue:           +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*26:.1f}/share at 26× P/E")
-print(f"  China revenue ±$1B ({GROSS_MARGIN_CURR*100:.0f}% margin): ±${eps_per_1B_china:.3f}/EPS  =  ±${eps_per_1B_china*26:.1f}/share at 26× P/E")
-print(f"  1pp GM expansion (spares mix):   +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*26:.1f}/share at 26× P/E")
-print(f"  1% buyback (13.3M shares):       +${curr_eps*0.01:.3f}/EPS  (mechanical accretion)")
+print(f"  Every $1B revenue (at {GROSS_MARGIN_CURR*100:.0f}% GM):     +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*24:.1f}/share at 24× P/E")
+print(f"  China revenue ±$1B (export risk):    ±${eps_per_1B_china:.3f}/EPS  =  ±${eps_per_1B_china*24:.1f}/share at 24× P/E")
+print(f"  1pp GM expansion (mix/volume):        +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*24:.1f}/share at 24× P/E")
+print(f"  HBM layer count increase (+1 layer):  structural TAM uplift — each extra etch step = ~$300M+ TAM")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (WFE spending / HBM etch / GAA logic / NAND / China / Services framework)")
+print("  ① SIGNAL DASHBOARD  (HBM etch / NAND WFE / Logic / China / GM / B2B framework)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>6}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>7}  Score")
+print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>6}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>7}  {lbl}  {b}")
+    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
@@ -282,12 +281,12 @@ hr()
 print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("WFE spending YoY",               "+12%",    "<-10%",  "−22pp",  "Macro recession + memory oversupply; WFE -30%"),
-    ("HBM etch revenue",               "~$5B",    "<$2B",   "−$3B",   "HBM demand collapses; hyperscaler GPU orders drop"),
-    ("GAA logic ramp (TSMC N2)",       "~55%",    "<20%",   "−35pp",  "TSMC N2 yield crisis delays; FinFET extension"),
-    ("NAND WFE recovery",              "+8%",     "<-20%",  "−28pp",  "NAND oversupply 2.0; Samsung cuts capex 50%"),
-    ("China revenue",                  "~$3.5B",  "<$2B",   "−$1.5B", "BIS expands export controls to all etch tools"),
-    ("Service/spares % of revenue",    "~27%",    "<20%",   "−7pp",   "Customer utilization drops; service contracts cut"),
+    ("HBM/DRAM etch spend YoY",       "+35%",    "<10%",    "−25pp",  "Memory capex pause; hyperscalers defer HBM orders"),
+    ("NAND WFE spend YoY",            "+18%",    "<-20%",   "−38pp",  "NAND oversupply; producers cut capex dramatically"),
+    ("Logic node WFE spending YoY",   "+12%",    "<5%",     "−7pp",   "TSMC delays 2nm; Intel 18A cancelled/deferred"),
+    ("China revenue YoY",             "-5%",     "<-30%",   "−25pp",  "BIS expands export controls to legacy nodes"),
+    ("Gross margin",                  "48%",     "<44%",    "−4pp",   "Volume deleverage; pricing pressure; mix shift"),
+    ("Book-to-bill ratio",            "~1.05",   "<0.9",    "−0.15",  "Order cancellations; customers cut WFE budgets"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
     print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
@@ -296,68 +295,65 @@ probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: BIS expansion of export controls to cover all etch tools (not just advanced-")
-print(f"  node), combined with a memory oversupply cycle. China contributed ~$3.5B (~15% of rev);")
-print(f"  full etch-tool ban removes this permanently. Simultaneously, HBM hyperscaler orders slow")
-print(f"  (GPU demand air-pocket) and TSMC N2 ramp delays. Revenue -45% → EPS ~$2.50 → 14× trough")
-print(f"  floor P/E = ${bear_price}. Note: WFE trough recoveries are violent — LRCX recovered 3× from")
-print(f"  2023 trough within 18 months. Bear scenario is real but likely temporary (~12-18 months).")
+print(f"  KEY TRIGGER: Simultaneous WFE capex pause (memory oversupply) + China export control")
+print(f"  escalation to legacy nodes. China is ~$7B revenue (~30% of TTM). A BIS expansion plus")
+print(f"  DRAM/NAND oversupply (as seen 2022-23) compresses revenue to ~$13B and EPS to ~$5.")
+print(f"  At 18× trough P/E (historical WFE floor) = ${bear_price}.")
+print(f"  Note: HBM structural demand limits depth/duration of bear case vs prior WFE cycles.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × bear EPS)")
 hr()
-print(f"  FY2027E adj EPS estimate:      ${EPS_FY2027E:.2f}  (consensus $4.50–$5.10; non-GAAP; fiscal June 2027)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (WFE equipment deeply cyclical; 2022-23 trough ~12-16×)")
+print(f"  Bear EPS estimate (cycle trough):  ${BEAR_EPS:.2f}  (WFE downturn + China revenue step-down)")
+print(f"  FY2026E non-GAAP EPS estimate:     ${EPS_FY2026E:.2f}  (forward P/E {CURRENT_PRICE/EPS_FY2026E:.1f}×)")
+print(f"  Pessimistic P/E at trough:          {PE_PESSIMISTIC:.0f}×  (2019 WFE trough ~15–18×; HBM floor premium)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
 print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP is extreme even for a high-quality business. At $298.46")
-print(f"  and FY2027E EPS $4.80, the P/E is ~62× — pricing in a permanent AI WFE supercycle with")
-print(f"  no cyclical correction. WFE equipment has NEVER sustained 60×+ P/E through a full cycle.")
-print(f"  EPP path: FY2029E EPS ~$6.50 × {PE_PESSIMISTIC:.0f}× = ${6.50*PE_PESSIMISTIC:.0f} floor (EPP growing ~15%/yr on EPS growth).")
-print(f"  At 25× mid-cycle P/E: ${EPS_FY2027E:.2f} × 25 = ${EPS_FY2027E*25:.0f}  — still 60% below current price.")
+print(f"  A +{epp_gap_pct:.0f}% premium to EPP means market prices in substantial cycle duration.")
+print(f"  At ${CURRENT_PRICE:.2f} and FY2026E non-GAAP EPS ${EPS_FY2026E:.2f}, forward P/E = {CURRENT_PRICE/EPS_FY2026E:.1f}×.")
+print(f"  WFE companies historically trade 20–35× mid-cycle; current premium reflects HBM.")
+print(f"  EPP path: bear EPS $7 by FY2028E × 18× = $126 bear floor (rising as EPS recovers).")
+print(f"  At 24× mid-cycle P/E: ${EPS_FY2026E:.2f} × 24 = ${EPS_FY2026E*24:.0f}  ({(EPS_FY2026E*24/CURRENT_PRICE-1)*100:+.1f}% from current).")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: P/E rerates from cycle-peak 62× toward mid-cycle 22×)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: mid-cycle P/E; HBM sustains; NAND partial recovery)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (10% EPS CAGR: buyback ~3%/yr + EPS growth ~7%/yr)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (WFE mid-cycle floor; 18-25× range; 22× reasonable)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr; growing ~10%/yr)")
+print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (HBM stable + NAND recovery + logic ramp)")
+print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (mid-cycle; below current {CURRENT_PRICE/EPS_FY2026E:.1f}× forward)")
+print(f"  Conservative equity value:            ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:               ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:            {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE PROBLEM: P/E compression from ~62× to 22× = -65% multiple contraction.")
-print(f"  Even with EPS growing 10%/yr, that multiple contraction produces a deeply negative")
-print(f"  total return. For conservative 2yr to break even at 22× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~{((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2027E - 1)*100:.1f}% EPS growth by FY2028E — requires XBULL scenario.")
-print(f"  Breakeven at 30× P/E (partial compression only): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 30:.2f}")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at 22× P/E; ratio_b <1.0×)")
+print(f"  P/E compression from {CURRENT_PRICE/EPS_FY2026E:.1f}× to {CONS_PE_2YR}× offsets EPS growth. Key risk: WFE")
+print(f"  cycle mean-reversion compresses multiple before earnings inflect higher.")
+print(f"  Breakeven at {CONS_PE_2YR}× P/E: FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
+print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f}  (conservative case clearly positive; ratio_b <1.0×)")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.50   # WFE stocks are very volatile; beta ~1.6
+annual_vol  = 0.38   # WFE stocks more volatile than market
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: 52W low ${VOL_52W_LOW:.2f} (Oct 2025 WFE correction); 52W high ${VOL_52W_HIGH:.2f} (Mar 2026 HBM peak)")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  growing ~10%/yr)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (WFE equipment highly cyclical; beta ~1.6; earnings binary risk)")
-print(f"  Beta vs S&P 500:      1.60  (significant; WFE amplifies semiconductor cycle moves)")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  token yield)")
+print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (WFE cycle amplifies; China binary adds tail risk)")
+print(f"  Beta vs S&P 500:      1.60  (high beta; semiconductor capex cycle + China overhang)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (plausible; WFE stocks fall 50-70% in down-cycles)")
-print(f"  52W range ${VOL_52W_LOW:.2f}–${VOL_52W_HIGH:.2f} reflects +91% trough-to-peak in 5 months — extreme WFE vol.")
-print(f"  → China export control expansion is THE KEY binary; full etch ban = -30–40% in days.")
-print(f"  → HBM4 volume ramp timing (H2 2026) is KEY bull catalyst for next re-rating leg.")
-print(f"  → AVOID above $250  |  WATCHLIST $200–230  |  ACCUMULATE $165–195  |  BUY below $150")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (tail; requires full WFE cycle + China shock)")
+print(f"  52W range ${VOL_52W_LOW:.2f}–${VOL_52W_HIGH:.2f} shows extreme cycle amplitude (>4× trough to peak).")
+print(f"  → China export controls are THE binary risk; each escalation = −15–25% move.")
+print(f"  → HBM demand durability (AI memory capex) is THE key bull catalyst to monitor.")
+print(f"  → Signal: {signal_full}  |  WATCHLIST $230–250  |  ACCUMULATE $190–210  |  BUY below $175")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -381,30 +377,26 @@ print()
 print(f"  Adj EV (2yr): ${ev_adj:.0f}  /  Proxy EV: ${ev_prx:.0f}  /  Market EV: ${ev_mkt:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
 hr()
 print(f"  Downside  (→ Bear ${bear_price}):  {downside_pct*100:.1f}%")
-print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%  ← NEGATIVE: BULL target BELOW current price")
-print(f"  Ratio B   :  {ratio_b_str}  (undefined — bull price below current; zero upside to BULL)")
+print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
+print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  THE PEAK-CYCLE VALUATION PROBLEM: At $298, LRCX trades at ~62× FY2026E EPS ($4.80)")
-print(f"  and ~2.8× forward revenue — near historical peak multiples for WFE equipment. The BULL")
-print(f"  case ($240) is BELOW the current price. This means buying at $298 requires the XBULL")
-print(f"  scenario to break even on a 2-year horizon. The business is excellent — #1 etch globally,")
-print(f"  sole-source on HBM4, GAA transition additive — but the market has already priced the")
-print(f"  cycle peak. EPP floor ($77) is 287% below current price. Conservative 2yr return is")
-print(f"  highly negative if P/E normalizes from 62× to 22×. The correct posture: outstanding")
-print(f"  business, wrong price. Re-evaluate on any 30%+ drawdown toward $180–200.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, market composite ({MARKET_COMPOSITE:.2f}) vs model adj ({ADJ_COMPOSITE:.3f}).")
+print(f"  Gap ({ADJ_GAP:.2f}) → stock is {valuation_label.lower()} by model standards.")
+print(f"  Analyst consensus: 35 Strong Buy; avg PT $368 (+25.6% upside). Model more cautious")
+print(f"  on China export risk and WFE cycle timing vs street optimism on HBM durability.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) HBM4 volume ramp timing — SK Hynix/Micron capex for HBM4 (H2 2026) = key BULL catalyst")
-print(f"  (2) TSMC N2 yield data — GAA ramp pace determines etch tool demand timeline")
-print(f"  (3) China export control expansion — BIS rule change to include lagging-node etch = BEAR trigger")
-print(f"  (4) NAND capex recovery signal — Samsung/Kioxia announcing new fab investments")
-print(f"  (5) Memory customer utilization rates — leading indicator for spares/service revenue")
-print(f"  AVOID above $250  |  WATCHLIST $200–230  |  ACCUMULATE $165–195  |  BUY below $150")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2027E EPS: ${EPS_FY2027E:.2f}")
+print(f"  (1) HBM4 ramp velocity — SK Hynix + Samsung HBM4 capex commitments (BULL trigger)")
+print(f"  (2) China export controls — BIS expansion to legacy nodes (BEAR trigger)")
+print(f"  (3) NAND recovery timeline — flash price inflection confirms capex return (BASE→BULL)")
+print(f"  (4) TSMC 2nm yield — high yield = higher etch tool utilisation (BULL trigger)")
+print(f"  (5) Intel 18A volume ramp — determines magnitude of logic WFE spend in 2027")
+print(f"  Signal: {signal_full}  |  Ratio B: {ratio_b_str}  |  EPP floor: ${EPP:.0f}")
+print(f"  Current ${CURRENT_PRICE:.2f}  |  52W: ${VOL_52W_LOW}–${VOL_52W_HIGH}  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
 print("═" * (W + 4))
 print()
 
