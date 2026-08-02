@@ -23,6 +23,7 @@ const SECTOR_ORDER = [
   'Basic Resources',
   'Financials',
   'Telecoms/Media',
+  'Bonds',
 ];
 
 const SECTOR_ICONS: Record<string, string> = {
@@ -36,6 +37,7 @@ const SECTOR_ICONS: Record<string, string> = {
   'Basic Resources':        '◉',
   'Financials':             '◐',
   'Telecoms/Media':         '◑',
+  'Bonds':                  '◬',
 };
 
 export default function SignalsPage() {
