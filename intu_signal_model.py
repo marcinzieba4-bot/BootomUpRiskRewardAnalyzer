@@ -1,7 +1,7 @@
 """
 INTU  ·  Intuit Inc.  ·  NASDAQ: INTU
 Bottom-up signal model  ·  SMB Financial Platform / AI Tax & Bookkeeping / Credit Karma
-Date: 2026-06-10
+Date: 2026-08-02
 """
 
 import math
@@ -10,45 +10,51 @@ import math
 TICKER        = "INTU"
 COMPANY       = "Intuit Inc."
 SECTOR        = "SMB Financial Platform · QuickBooks · TurboTax · Credit Karma · NASDAQ: INTU"
-CURRENT_PRICE = 319.94      # USD; as of 2026-06-10; -61% from $813.70 ATH
-VOL_52W_LOW   = 290.00      # 15-year-low multiple trough
-VOL_52W_HIGH  = 700.00      # pre-selloff high
+CURRENT_PRICE = 316.07       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 252.84       # June 22, 2026 trough; post-layoff/lawsuit overhang
+VOL_52W_HIGH  = 807.15       # 2025 pre-selloff ATH
+SHARES_OUT_M  = 274.0        # millions; $86.5B mkt cap / $316.07; modest buyback vs SBC dilution
+ANNUAL_DIV    = 4.80         # $/share forward; yield ~1.52%
 
-SHARES_OUT_M  = 280.0       # millions; modest buyback offsetting SBC dilution
-
-# Dividend: long growth streak; growing ~10-15%/yr historically
-ANNUAL_DIV    = 4.32        # $/share annualized
-
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B; fiscal year ends July 31) ───────────
+# Q3 FY2026 actual: revenue $8.56B (+10.4% YoY); FY2026 guide raised to $21.34-21.37B (+13-14%)
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Global Business Solutions", 11.50,  9.80, 13.50, "QuickBooks Online ecosystem + Mailchimp; bookkeeping/payments/payroll attach"),
-    ("Consumer (TurboTax)",         4.40,  3.40,  5.20, "AI-driven 'done-for-you' tax filing; IRS Direct File the swing risk"),
-    ("Credit Karma",                2.10,  1.60,  2.70, "Lending/insurance recovery; ad monetization of 130M+ members"),
-    ("ProTax",                      0.75,  0.65,  0.95, "Pro-tax software for accountants; steady mid-single-digit grower"),
+    ("Global Business Solutions (QBO)", 9.6,  8.3, 11.0, "QBO Accounting +22%; core SMB platform; the segment absorbing the AI-agent bet"),
+    ("Consumer (TurboTax)",             4.6,  4.0,  5.2, "Assisted tax momentum was the guide-raise driver; also the segment named in the securities suit"),
+    ("Credit Karma",                    2.5,  2.1,  2.9, "+15% YoY; monetizing the Mint/CK data asset via lending & insurance referrals"),
+    ("ProTax + Other",                  4.7,  4.2,  5.1, "Professional tax software + Mailchimp (being pulled back) + small residual segments"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.79    # blended gross margin FY2026E (~79%; SaaS-heavy mix)
-GROSS_MARGIN_BULL = 0.81    # BULL: AI agent monetization lifts mix further
-OPEX_FIXED_B      = 6.20    # R&D + S&M + G&A ($B); restructuring (17% workforce cut) trims base
-TAX_RATE          = 0.23    # effective tax rate
+# Margin assumptions (non-GAAP)
+OP_MARGIN_CURR   = 0.372    # FY2026E non-GAAP operating margin; restructuring charges are a headwind this year
+OP_MARGIN_BULL   = 0.430    # BULL: AI-agent products (Intuit Assist) drive opex leverage post-restructuring
+OP_MARGIN_BEAR   = 0.310    # BEAR: pricing/legal overhang forces discounting; restructuring savings don't materialize
+TAX_RATE         = 0.180    # non-GAAP effective tax rate
+
+# ── RESTRUCTURING / LEGAL CALCULATOR (the Intuit-specific angle) ─────────────
+WORKFORCE_CUT_PCT   = 17.0   # % of full-time workforce cut, announced with Q3 (~3,000+ people)
+LAWSUIT_CLASS_START = "2025-08-22"  # securities class action alleges misleading TurboTax growth claims
+LAWSUIT_CLASS_END   = "2026-05-20"
+QBO_GROWTH_PCT      = 22.0   # % YoY QuickBooks Online Accounting revenue growth, Q3
+CK_GROWTH_PCT       = 15.0   # % YoY Credit Karma revenue growth, Q3
+NEXT_REPORT_DATE    = "2026-08-25"  # Q4 + full-year FY2026 results — three weeks after this refresh
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 23.82       # FY2026E non-GAAP EPS guidance (raised)
-PE_PESSIMISTIC = 14.0        # trough P/E: 15-year-low multiple already approximates the floor
-EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)   # $333
+EPS_FY2026E    = 23.82       # $/share non-GAAP FY2026E; company guidance $23.80-$23.85 (+18%)
+PE_PESSIMISTIC = 12.0        # trough P/E: the stock already trades near 13x forward; 12x prices
+                             # a further legal/competitive overhang without assuming the franchise breaks
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  (22.00, 14,  308, "QBO growth decelerates; IRS Direct File erodes TurboTax; restructuring stalls; EPS $22 → 14× floor"),
-    "BASE":  (23.82, 22,  524, "FY2026E guidance achieved; QBO ecosystem +mid-teens; Credit Karma recovery; EPS $23.82 → 22×"),
-    "BULL":  (28.00, 27,  756, "AI 'done-for-you' monetization scales; Mailchimp/mid-market traction; margin expansion; EPS $28 → 27×"),
-    "XBULL": (34.00, 32, 1088, "Intuit re-rates as AI financial-platform leader; QBO ecosystem accelerates; EPS $34 → 32×"),
+    "BEAR":  (17.25, 11,  190, "Securities litigation drags on; AI-agent tools cannibalize DIY TurboTax pricing power"),
+    "BASE":  (28.50, 16,  456, "Restructuring savings land; QBO/Credit Karma keep compounding at a mid-teens blended rate"),
+    "BULL":  (32.10, 21,  674, "Intuit Assist becomes the default SMB financial agent; assisted-tax mix keeps shifting up"),
+    "XBULL": (39.00, 24,  936, "Intuit re-rates as the AI-native operating system for SMB finance; multi-year multiple recovery"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -79,52 +85,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "QuickBooks Online ecosystem revenue growth",
-        "weight":     0.30,
-        "thresholds": ("<10%",   "≥14%",  "≥19%",   "≥25%"),
-        "now":        "+19%",
+        "name":       "Total revenue YoY growth",
+        "weight":     0.20,
+        "thresholds": ("<6%",    "≥9%",   "≥13%",   "≥18%"),
+        "now":        "+10.4%",
+        "score":      2,
+        "comment":    "Q3 $8.56B (+10.4%), beat consensus. FY2026 guide raised to $21.34-21.37B (+13-14%)",
+    },
+    {
+        "name":       "QuickBooks Online Accounting growth",
+        "weight":     0.20,
+        "thresholds": ("<10%",   "≥15%",  "≥20%",   "≥28%"),
+        "now":        "+22%",
         "score":      3,
-        "comment":    "Online Ecosystem revenue +19% YoY; mid-market and platform attach driving durable growth",
+        "comment":    "Pricing + customer growth + mix shift all contributing — the core platform is not slowing down",
     },
     {
         "name":       "Credit Karma revenue growth",
-        "weight":     0.15,
-        "thresholds": ("<-5%",   "≥0%",   "≥10%",   "≥20%"),
-        "now":        "~+8%",
+        "weight":     0.10,
+        "thresholds": ("<5%",    "≥10%",  "≥16%",   "≥24%"),
+        "now":        "+15%",
         "score":      2,
-        "comment":    "Lending recovery uneven; ad monetization improving but below pre-2022 peak growth rates",
+        "comment":    "Steady monetization of the data asset via lending/insurance referrals; not the swing factor here",
     },
     {
-        "name":       "AI 'done-for-you' tax/bookkeeping monetization",
+        "name":       "Non-GAAP operating margin (restructuring year)",
         "weight":     0.20,
-        "thresholds": ("Pilot",  "Limited","Scaling","Mainstream"),
-        "now":        "Scaling",
-        "score":      3,
-        "comment":    "AI agents embedded across TurboTax Live and QBO bookkeeping; early monetization signals positive",
-    },
-    {
-        "name":       "Mid-market / Mailchimp expansion",
-        "weight":     0.10,
-        "thresholds": ("<5%",    "≥8%",   "≥14%",   "≥20%"),
-        "now":        "+10%",
+        "thresholds": ("<34%",   "≥37%",  "≥40%",   "≥43%"),
+        "now":        "~37%",
         "score":      2,
-        "comment":    "Mid-market customer growth steady; Mailchimp integration into QBO ecosystem still maturing",
+        "comment":    "17% workforce cut and Mailchimp pullback are real near-term costs before any savings show up",
     },
     {
-        "name":       "Operating margin trajectory (post-restructuring)",
+        "name":       "Legal/regulatory overhang",
         "weight":     0.15,
-        "thresholds": ("Contracting","Flat","Expanding","Strong expansion"),
-        "now":        "Flat-to-expanding",
-        "score":      2,
-        "comment":    "17% workforce reduction creates near-term optics risk; opex savings should flow through FY2027",
+        "thresholds": ("active suit + downgrades","suit pending","narrowing","resolved/dismissed"),
+        "now":        "active suit + downgrades",
+        "score":      1,
+        "comment":    "Securities class action over TurboTax growth claims (Aug 2025-May 2026 purchase window) plus analyst downgrades",
     },
     {
-        "name":       "IRS Direct File competitive risk to TurboTax",
-        "weight":     0.10,
-        "thresholds": ("Severe",  "Elevated","Contained","Minimal"),
-        "now":        "Elevated",
-        "score":      2,
-        "comment":    "Direct File expanding state coverage; TurboTax free-filer base under pressure but paid mix resilient",
+        "name":       "Forward P/E vs 10-yr average (~35x)",
+        "weight":     0.15,
+        "thresholds": (">24x",   "≤18x",  "≤14x",   "≤10x"),
+        "now":        "13.3x",
+        "score":      3,
+        "comment":    "13.3× FY2026E — a 15-year-low multiple for a company still guiding to 18% EPS growth",
     },
 ]
 
@@ -134,12 +140,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "QBO ecosystem moat — durable SMB platform; payments/payroll attach; +19% YoY growth",   +0.7, 0.25),
-    ("+", "Raised FY2026 EPS guidance to $23.82 despite restructuring — execution intact",          +0.4, 0.15),
-    ("-", "Workforce-cut optics — 17% reduction reads as growth-deceleration signal to market",      -0.5, 0.15),
-    ("-", "IRS Direct File — government free-filing competitor expanding scope; structural overhang", -0.6, 0.20),
-    ("+", "Credit Karma + AI agent optionality — 130M members; 'done-for-you' monetization runway",  +0.5, 0.15),
-    ("-", "Multiple compression — 15-year-low P/E (~13.4×) reflects sentiment, not fundamentals",    -0.3, 0.10),
+    ("+", "Valuation reset — 13.3× forward EPS is a 15-year low for a business still growing revenue 13-14%", +0.9, 0.20),
+    ("+", "QBO platform moat — 22% growth, pricing power intact, the SMB financial system-of-record position", +0.6, 0.20),
+    ("-", "Securities litigation — an active class action naming executives is a genuine, not theoretical, overhang", -0.6, 0.20),
+    ("-", "Restructuring execution risk — 17% workforce cut plus Mailchimp pullback must convert to real savings", -0.5, 0.15),
+    ("+", "Credit Karma + assisted tax — two segments proving Intuit can monetize AI-era products, not just defend share", +0.4, 0.15),
+    ("-", "AI-disintermediation risk — DIY tax/bookkeeping is exactly the workflow generalist AI agents target first", -0.5, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -173,8 +179,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 27.50   # conservative FY2028E: ~7-8%/yr EPS CAGR off $23.82 base
-CONS_PE_2YR   = 18      # modest rerating from ~13.4x toward 18x as restructuring optics fade
+CONS_EPS_2YR  = 29.50   # conservative FY2028E: ~11.3% EPS CAGR off the FY2026E guide — well below BASE
+CONS_PE_2YR   = 15      # modest re-rating from 13.3× — still far below the historical ~35× average
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -192,176 +198,186 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  SMB Financial Platform / TurboTax / Credit Karma / AI")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  SMB Financial Platform / AI Tax & Bookkeeping")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
+print(f"  ⚠ Q4/FY2026 results due {NEXT_REPORT_DATE} — three weeks after this refresh. Figures below use")
+print(f"  Q3 FY2026 actuals and the company's raised full-year guidance.")
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<26}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<34}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<26}  ${curr:>11.2f}  ${bear:>8.2f}  ${bull:>8.2f}  {bear-curr:>+7.2f}  {bull-curr:>+7.2f}")
+    print(f"  {seg:<34}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<26}  ${curr_total:>11.2f}  ${bear_total:>8.2f}  ${bull_total:>8.2f}  {bear_total-curr_total:>+7.2f}  {bull_total-curr_total:>+7.2f}")
+print(f"  {'TOTAL':<34}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  FY2026 guidance (raised at Q3): revenue $21.34-21.37B (+13-14%), non-GAAP EPS $23.80-$23.85 (+18%)")
 print()
 
 # EPS bridge
-curr_gp   = curr_total * GROSS_MARGIN_CURR
-curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
 shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps  = round(curr_op * (1 - TAX_RATE) / shares, 2)
 
-bull_gp   = bull_total * GROSS_MARGIN_BULL
-bull_oi   = bull_gp - OPEX_FIXED_B
-bull_ni   = bull_oi * (1 - TAX_RATE)
-shares_b  = shares * 0.97   # modest buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.97
+bull_eps_imp = round(bull_op * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.98   # mix shift / pricing pressure
-bear_oi   = bear_gp - OPEX_FIXED_B * 0.95           # restructuring savings partially offset
-bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round(bear_op * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.2f}B rev × {GROSS_MARGIN_CURR*100:.0f}% GM − ${OPEX_FIXED_B:.2f}B opex − {TAX_RATE*100:.0f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share non-GAAP EPS  (guidance ${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {OP_MARGIN_CURR*100:.1f}% op margin − {TAX_RATE*100:.1f}% tax")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (company guidance ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.2f}B rev × {GROSS_MARGIN_BULL*100:.0f}% GM − ${OPEX_FIXED_B:.2f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 27× = ~${bull_eps_imp*27:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {OP_MARGIN_BULL*100:.1f}% op margin, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 21× = ~${bull_eps_imp*21:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.2f}B rev × {GROSS_MARGIN_CURR*100*0.98:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 14× trough P/E (15-year-low multiple) = ~${bear_eps_imp*14:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {OP_MARGIN_BEAR*100:.1f}% op margin (legal/pricing overhang, no restructuring payoff)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 11× trough = ~${bear_eps_imp*11:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print()
+print(f"  ⚠ NOTE: the revenue spread bear-to-bull is only {(bull_total/bear_total-1)*100:.0f}%, but the EPS spread is")
+print(f"  {(bull_eps_imp/bear_eps_imp-1)*100:.0f}%. Restructuring makes this a margin-swing story in the near term —")
+print(f"  the 17% workforce cut either converts into real opex leverage or it becomes a")
+print(f"  distraction layered on top of an already-active securities lawsuit.")
+
+# RESTRUCTURING / LEGAL CHECK
+print()
+print(f"  RESTRUCTURING & LEGAL CHECK  (the Intuit-specific angle):")
+print(f"  Workforce reduction:          {WORKFORCE_CUT_PCT:.0f}% of FTEs (~3,000+ people), announced with Q3")
+print(f"  QBO Accounting growth:        +{QBO_GROWTH_PCT:.0f}% YoY  (the segment funding the AI-agent bet)")
+print(f"  Credit Karma growth:          +{CK_GROWTH_PCT:.0f}% YoY")
+print(f"  Securities class action:      alleges misleading TurboTax growth/competitive claims,")
+print(f"                                covering purchases {LAWSUIT_CLASS_START} to {LAWSUIT_CLASS_END}")
+print()
+print(f"  Two distinct narratives are running simultaneously. Operationally: QBO and Credit Karma")
+print(f"  are compounding fine, and management just raised guidance. Structurally: a 17% workforce")
+print(f"  cut and an active securities suit are the kind of events that take multiple quarters to")
+print(f"  fully resolve, and the market is pricing the uncertainty more than the current numbers.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-
+eps_per_1B_rev  = 1.0 * OP_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_marg = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B QBO ecosystem revenue:  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*22:.1f}/share at 22× P/E")
-print(f"  Credit Karma revenue ±$0.5B:      ±${eps_per_1B_rev*0.5:.3f}/EPS  =  ±${eps_per_1B_rev*0.5*22:.1f}/share at 22× P/E")
-print(f"  1pp GM expansion (mix/AI agents):  +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*22:.1f}/share at 22× P/E")
-print(f"  Restructuring opex savings ($0.5B): +${0.5*(1-TAX_RATE)/shares:.2f}/EPS  (mechanical from 17% workforce cut)")
+print(f"  Every $1B revenue (at 40% op margin):       +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*16:.2f}/share at 16× P/E")
+print(f"  Every 1pp of operating margin:               +${eps_per_1pp_marg:.3f}/EPS  = +${eps_per_1pp_marg*16:.2f}/share at 16× P/E")
+print(f"  Every 1 turn of P/E:                         ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (QBO ecosystem / Credit Karma / AI monetization / IRS Direct File framework)")
+print("  ① SIGNAL DASHBOARD  (revenue growth / QBO / Credit Karma / margin / legal overhang / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<44}  {'BEAR':>13}  {'BASE':>9}  {'BULL':>9}  {'XBULL':>10}  {'NOW':>9}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<44}  {ths[0]:>13}  {ths[1]:>9}  {ths[2]:>9}  {ths[3]:>10}  {s['now']:>9}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<32}  {'Current':>10}  {'Bear val':>10}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("QBO ecosystem revenue growth",   "+19%",    "<10%",     "−9pp",   "Mid-market deceleration + payments/payroll attach stalls"),
-    ("IRS Direct File expansion",      "Elevated","Severe",   "↑ risk", "Direct File expands to most states; TurboTax free-filer share collapses"),
-    ("Credit Karma growth",            "~+8%",    "<-5%",     "−13pp",  "Lending environment deteriorates; ad spend pulled by partners"),
-    ("AI monetization rollout",        "Scaling", "Pilot",    "↓ stage","'Done-for-you' agent adoption stalls; pricing power fails to materialize"),
-    ("Operating margin trajectory",    "Flat-to-exp.","Contracting","↓","Restructuring savings consumed by AI infrastructure capex"),
-    ("Mid-market/Mailchimp growth",    "+10%",    "<5%",      "−5pp",   "Mailchimp integration disappoints; mid-market churn rises"),
+    ("Total revenue YoY",           "+10.4%", "<6%",     "-4.4pp", "QBO price increases stop converting; SMB macro softens"),
+    ("QBO Accounting growth",       "+22%",   "<10%",    "-12pp",  "AI-native bookkeeping tools win net-new SMB share"),
+    ("Non-GAAP operating margin",   "~40%",   "<36%",    "-4pp",   "Restructuring costs land without the promised savings"),
+    ("Legal/regulatory overhang",   "active", "worse",   "escalate","Class certified, or a second suit/regulatory probe opens"),
+    ("Forward P/E",                 "13.3x",  "≤10x",    "-3.3x",  "Multiple resets further on sustained AI-disintermediation fear"),
+    ("Credit Karma growth",         "+15%",   "<5%",     "-10pp",  "Lending/insurance referral demand softens with consumer credit cycle"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<32}  {curr:>10}  {bear_v:>10}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: IRS Direct File expands to cover most states and form types, eroding")
-print(f"  TurboTax's free-filer funnel (the top of the conversion pipeline into paid products),")
-print(f"  while QBO ecosystem growth decelerates from +19% toward low double digits as mid-market")
-print(f"  competition intensifies. Combined with restructuring savings being absorbed by AI capex,")
-print(f"  EPS stalls near $22 → 14× floor (15-year-low multiple, already near current levels) = ${bear_price}.")
-print(f"  Note: ${bear_price} is close to CURRENT price — the BEAR case is largely already priced in.")
-print(f"  The QBO ecosystem moat (SMB platform lock-in, payments/payroll attach) provides a durable")
-print(f"  earnings floor even in a Direct File adverse scenario.")
+print(f"  KEY TRIGGER: the bear case braids together two separate risks that the market is")
+print(f"  currently pricing as one. The AI-disintermediation risk (generalist agents doing DIY")
+print(f"  tax/bookkeeping) is a real multi-year structural question. The securities litigation is")
+print(f"  a discrete legal process with its own timeline, largely unrelated to whether QBO keeps")
+print(f"  growing 22%. If the market is conflating 'the stock fell on a lawsuit' with 'the AI")
+print(f"  thesis is broken,' that gap is exactly where the mispricing this model flags would sit.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E non-GAAP EPS guidance:  ${EPS_FY2026E:.2f}  (raised guidance; despite restructuring)")
-print(f"  Pessimistic P/E at trough:       {PE_PESSIMISTIC:.0f}×  (15-year-low multiple ~13.4× already near floor)")
+print(f"  FY2026E non-GAAP EPS (company guide):  ${EPS_FY2026E:.2f}  ($23.80-$23.85, +18% YoY)")
+print(f"  Pessimistic P/E at trough:               {PE_PESSIMISTIC:.0f}×  (stock already trades near 13× forward)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({abs(epp_gap_pct):.0f}% below trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  Intuit is trading at the deepest below-EPP discount in coverage — roughly {abs(epp_gap_pct):.0f}%")
-print(f"  BELOW the trough-multiple floor, despite management RAISING FY2026 EPS guidance to")
-print(f"  ${EPS_FY2026E:.2f}. At ${CURRENT_PRICE:.2f}, the stock trades at ~{CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E non-GAAP EPS —")
-print(f"  a 15-year-low multiple. The market is pricing in workforce-cut optics and revenue")
-print(f"  deceleration fears as if they were earnings cuts, when guidance was actually raised.")
-print(f"  This is the central question: is the market over-penalizing restructuring optics vs")
-print(f"  a durable SMB + AI financial platform moat (QBO ecosystem +19% YoY)?")
-print(f"  At 18× mid-cycle P/E: ${EPS_FY2026E:.2f} × 18 = ${EPS_FY2026E*18:.0f}  — {(EPS_FY2026E*18/CURRENT_PRICE-1)*100:+.0f}% vs current price.")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E non-GAAP EPS — down from a")
+print(f"  10-year average closer to 35×. A 61% drawdown from the ${VOL_52W_HIGH:.2f} ATH has taken Intuit")
+print(f"  from a premium SaaS multiple to a value-stock multiple while the company still guides")
+print(f"  to 18% EPS growth. The EPP floor sits only {abs(epp_gap_pct):.0f}% below spot — a narrow gap for")
+print(f"  a name this far off its highs, which is itself informative about how much bad news is priced in.")
+print(f"  At an 18× reversion (about half the historical average): ${EPS_FY2026E:.2f} × 18 = ${EPS_FY2026E*18:.0f}  (+{(EPS_FY2026E*18/CURRENT_PRICE-1)*100:.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: modest rerating off 15-year-low multiple; restructuring savings flow through)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: legal overhang persists, only a modest re-rating)")
 hr()
-print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (~7-8% EPS CAGR: QBO ecosystem growth + restructuring savings)")
-print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (rerates from ~13.4× toward growth-justified 18×; still below historical avg)")
+print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (~11.3% EPS CAGR — below the FY2026 guided pace)")
+print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (13.3× → 15×; still a fraction of the historical ~35×)")
 print(f"  Conservative equity value:            ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr)")
+print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
 print(f"  Conservative 2yr total:               ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
 print(f"  Conservative total return:            {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE OPPORTUNITY: even a modest rerating from ~13.4× to 18× (still well below Intuit's")
-print(f"  historical premium multiple) combined with high-single-digit EPS growth produces a")
-print(f"  meaningfully positive return. Unlike mega-cap compounders facing multiple compression,")
-print(f"  Intuit's downside case is a multiple EXPANSION story off a depressed base.")
-print(f"  Breakeven at 14× P/E (no rerating, BEAR floor): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / PE_PESSIMISTIC:.2f}")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * 14 * 0.95 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * 16 * 0.95 + cons_divs * 0.5, 0):.0f} (margin of safety vs EPP floor; ratio_b <1.0×)")
+print(f"  THE SETUP: even assuming EPS growth decelerates from the guided 18% to ~11%/yr and the")
+print(f"  multiple only partially recovers, the conservative case clears {cons_annual:.1f}%/yr. The margin of")
+print(f"  safety here is almost entirely the valuation reset — the litigation resolving favorably")
+print(f"  and the AI-agent products landing are both upside to this case, not requirements of it.")
+print(f"  Breakeven at 15× requires FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f} — below the FY2026 guide already.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.35
+annual_vol  = 0.40
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: 52W high pre-dates the -61% drawdown from the $813.70 ATH to current ${CURRENT_PRICE:.2f}")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  growing payout)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; restructuring + multiple compression has driven swings)")
-print(f"  Beta vs S&P 500:      1.15  (high-growth software; sentiment-sensitive)")
+print(f"  Drawdown from high:   -{(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.1f}%  (multi-year de-rating: lawsuit + layoffs + AI-fear compounding)")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; long growth streak)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (elevated for Intuit's history; legal + restructuring headline risk)")
+print(f"  Beta vs S&P 500:      1.15  (higher than its historically defensive SaaS profile)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  ({'mild' if bear_sigmas < 0.5 else 'moderate'}; close to current price)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (15-year-low multiple trough) is close to current price already.")
-print(f"  → IRS Direct File expansion is THE KEY structural risk — each state added pressures TurboTax funnel.")
-print(f"  → AI 'done-for-you' monetization evidence (pricing/attach data) is KEY bull catalyst.")
-print(f"  → AVOID above $450  |  WATCHLIST $360–450  |  ACCUMULATE $330–360  |  BUY below $330")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (would retest, not breach, the June 2026 low)")
+print(f"  → {NEXT_REPORT_DATE} full-year print is the near-term catalyst — restructuring savings vs cost, guidance for FY2027.")
+print(f"  → Any lawsuit development (dismissal motion, class certification ruling) will move the stock independent of fundamentals.")
+print(f"  → BUY at current price  |  ADD $260–290  |  TRIM above $520")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -389,26 +405,24 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is BELOW the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 — near")
-print(f"  BEAR/BASE. The model scores the fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0 — between BASE and BULL.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: the market is pricing BEAR-case execution into a company that just RAISED")
-print(f"  guidance. QBO ecosystem growth (+19% YoY, signal score 3/4 = BULL) is the most significant")
-print(f"  valuation mismatch — restructuring optics and IRS Direct File fears appear over-weighted.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  Intuit at 13.3× forward earnings, growing revenue 13-14% and EPS 18%, is priced closer")
+print(f"  to a legacy value stock than a platform business with pricing power and two proven")
+print(f"  AI-era monetization engines (QBO, Credit Karma). The legal overhang justifies SOME")
+print(f"  discount; the model's read is that the market has applied more than that.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) QBO ecosystem revenue updates — sustained mid-to-high-teens growth (BULL trigger)")
-print(f"  (2) Credit Karma growth — lending recovery + ad monetization re-acceleration")
-print(f"  (3) AI agent ('done-for-you') monetization rollout — pricing/attach data from TurboTax & QBO")
-print(f"  (4) Mailchimp/mid-market traction — integration progress and customer growth")
-print(f"  (5) IRS Direct File expansion news — state coverage and form-type expansion (BEAR trigger)")
-print(f"  (6) FY2026 tax season results — April 2026 filing data for TurboTax volume/mix")
-print(f"  AVOID above $450  |  WATCHLIST $360–450  |  ACCUMULATE $330–360  |  BUY below $330")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) {NEXT_REPORT_DATE} Q4/FY2026 results — restructuring-savings evidence and FY2027 initial guidance")
+print(f"  (2) Securities litigation timeline — a dismissal motion ruling is the next concrete milestone")
+print(f"  (3) QBO Accounting growth durability — needs to hold near +20% to validate the platform-moat thesis")
+print(f"  (4) Intuit Assist (AI agent) adoption metrics — the company's own answer to the disintermediation fear")
+print(f"  (5) Workforce reduction completion — confirmation the 17% cut converts to durable opex leverage")
+print(f"  BUY at ${CURRENT_PRICE:.2f}  |  ADD $260–290  |  TRIM above $520")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  QBO growth: +{QBO_GROWTH_PCT:.0f}%")
 print("═" * (W + 4))
 print()
 
