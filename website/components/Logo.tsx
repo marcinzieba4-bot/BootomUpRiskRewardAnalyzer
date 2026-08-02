@@ -10,58 +10,43 @@ export default function Logo({ size = 40, animated = false }: LogoProps) {
     <svg
       width={size}
       height={size}
-      viewBox="0 0 40 40"
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={animated ? 'animate-pulse-glow' : ''}
-      aria-label="VeeRock logo"
+      aria-label="ZembiHF logo"
     >
       <defs>
-        <radialGradient id="rockFace" cx="35%" cy="28%" r="65%">
+        <radialGradient id="badgeFace" cx="35%" cy="28%" r="75%">
+          <stop offset="0%" stopColor="#161628" />
+          <stop offset="100%" stopColor="#080810" />
+        </radialGradient>
+        <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#f0c96a" />
-          <stop offset="45%" stopColor="#d4a853" />
-          <stop offset="100%" stopColor="#7a5b10" />
-        </radialGradient>
-        <radialGradient id="rockShadow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#d4a853" stopOpacity="0" />
-          <stop offset="100%" stopColor="#3b2500" stopOpacity="0.6" />
-        </radialGradient>
+          <stop offset="100%" stopColor="#8b6914" />
+        </linearGradient>
       </defs>
 
-      {/* Rock body — irregular boulder polygon */}
-      <path
-        d="M21 2 L34 7 L38 16 L37 28 L30 36 L18 38 L7 33 L3 22 L5 10 L14 4 Z"
-        fill="url(#rockFace)"
-      />
-      {/* Depth / shadow overlay */}
-      <path
-        d="M21 2 L34 7 L38 16 L37 28 L30 36 L18 38 L7 33 L3 22 L5 10 L14 4 Z"
-        fill="url(#rockShadow)"
-      />
-      {/* Rock texture cracks */}
-      <path d="M14 8 L18 16" stroke="#7a5b10" strokeWidth="0.8" strokeLinecap="round" opacity="0.6" />
-      <path d="M27 10 L31 20" stroke="#7a5b10" strokeWidth="0.8" strokeLinecap="round" opacity="0.5" />
-      <path d="M9 24 L14 30" stroke="#7a5b10" strokeWidth="0.7" strokeLinecap="round" opacity="0.4" />
+      {/* Circle badge */}
+      <circle cx="50" cy="50" r="45.5" fill="url(#badgeFace)" stroke="url(#ringGrad)" strokeWidth="5" />
+      <circle cx="50" cy="50" r="45.5" fill="none" stroke="#f0c96a" strokeWidth="1" opacity="0.25" />
 
-      {/* V carved into the rock */}
-      <path
-        d="M12 13 L19.5 29 L27 13"
-        stroke="#1a0e00"
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      {/* V highlight (gives carved depth) */}
-      <path
-        d="M12 13 L19.5 29 L27 13"
-        stroke="#f0c96a"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-        opacity="0.35"
-      />
+      {/* Wordmark embedded in the circle */}
+      <text
+        x="50"
+        y="51"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="Inter, system-ui, sans-serif"
+        fontWeight="800"
+        fontSize="19"
+        letterSpacing="-0.5"
+        textLength="76"
+        lengthAdjust="spacingAndGlyphs"
+        fill="#f0c96a"
+      >
+        ZembiHF
+      </text>
     </svg>
   );
 }

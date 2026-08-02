@@ -233,7 +233,7 @@ export default function AppPage() {
         {/* Back to site */}
         <div className="mt-12 pt-8 border-t border-vr-border text-center">
           <Link href="/" className="text-vr-faint text-sm hover:text-vr-gold transition-colors">
-            ← Back to VeeRock.com
+            ← Back to ZembiHF.com
           </Link>
         </div>
       </div>

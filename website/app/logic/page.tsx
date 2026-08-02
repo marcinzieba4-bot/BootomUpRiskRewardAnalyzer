@@ -3,7 +3,7 @@ const steps = [
     number: '01',
     title: 'On-Chain Data Aggregation',
     subtitle: 'Multi-chain ingestion at block depth',
-    body: 'VeeRock\'s pipeline continuously ingests raw block data across 18 EVM and non-EVM chains. Transaction traces, internal calls, token transfers, and smart contract events are decoded and normalized into a unified schema. No summarized third-party feeds — only first-party, full-fidelity data.',
+    body: 'ZembiHF\'s pipeline continuously ingests raw block data across 18 EVM and non-EVM chains. Transaction traces, internal calls, token transfers, and smart contract events are decoded and normalized into a unified schema. No summarized third-party feeds — only first-party, full-fidelity data.',
     bullets: [
       'Full transaction trace decoding (EVM debug_traceTransaction)',
       'Event log parsing across 50,000+ contract ABIs',
@@ -87,7 +87,7 @@ export default function LogicPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
           <div>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-vr-text mb-4">
-              The VeeRock Logic Layer
+              The ZembiHF Logic Layer
             </h1>
             <p className="text-vr-muted text-lg leading-relaxed">
               A four-phase analytical pipeline that transforms raw blockchain data into

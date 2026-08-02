@@ -63,7 +63,7 @@ export default function WalletPage() {
           Wallet Intelligence Engine
         </h1>
         <p className="text-vr-muted text-lg leading-relaxed">
-          Connect your wallet and let VeeRock\'s four-phase analytical pipeline scan your
+          Connect your wallet and let ZembiHF\'s four-phase analytical pipeline scan your
           positions, quantify your risk exposure, and surface bespoke on-chain recommendations —
           built for your exact portfolio, not generic advice.
         </p>
