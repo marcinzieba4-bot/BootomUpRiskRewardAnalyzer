@@ -29,7 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    // THEME SWITCH — "light" (white) or "dark" (original navy).
+    // This single attribute drives the entire palette; see app/globals.css.
+    <html lang="en" data-theme="light" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-sans bg-vr-bg text-vr-text antialiased">
         <Navbar />
         <main className="relative z-10 min-h-screen">{children}</main>

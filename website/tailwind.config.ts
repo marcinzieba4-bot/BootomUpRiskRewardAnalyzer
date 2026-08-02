@@ -8,22 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Palette values live in app/globals.css, under the [data-theme='dark']
+      // and [data-theme='light'] blocks. The channel syntax below keeps opacity
+      // modifiers (bg-vr-gold/10, bg-vr-bg/90, …) working.
       colors: {
         vr: {
-          bg:       '#080810',
-          surface:  '#0d0d1a',
-          card:     '#10101e',
-          border:   '#1c1c2e',
-          gold:     '#d4a853',
-          'gold-light': '#f0c96a',
-          'gold-dim':   '#8b6914',
-          text:     '#e8e8f4',
-          muted:    '#6b7096',
-          faint:    '#3d4068',
-          green:    '#22c55e',
-          blue:     '#60a5fa',
-          red:      '#ef4444',
-          amber:    '#f59e0b',
+          bg:       'rgb(var(--vr-bg) / <alpha-value>)',
+          surface:  'rgb(var(--vr-surface) / <alpha-value>)',
+          card:     'rgb(var(--vr-card) / <alpha-value>)',
+          border:   'rgb(var(--vr-border) / <alpha-value>)',
+          gold:     'rgb(var(--vr-gold) / <alpha-value>)',
+          'gold-light': 'rgb(var(--vr-gold-light) / <alpha-value>)',
+          'gold-dim':   'rgb(var(--vr-gold-dim) / <alpha-value>)',
+          text:     'rgb(var(--vr-text) / <alpha-value>)',
+          muted:    'rgb(var(--vr-muted) / <alpha-value>)',
+          faint:    'rgb(var(--vr-faint) / <alpha-value>)',
+          green:    'rgb(var(--vr-green) / <alpha-value>)',
+          blue:     'rgb(var(--vr-blue) / <alpha-value>)',
+          red:      'rgb(var(--vr-red) / <alpha-value>)',
+          amber:    'rgb(var(--vr-amber) / <alpha-value>)',
         },
       },
       fontFamily: {
