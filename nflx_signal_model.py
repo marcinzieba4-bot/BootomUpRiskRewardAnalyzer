@@ -1,7 +1,7 @@
 """
 NFLX  ·  Netflix, Inc.  ·  NASDAQ: NFLX
-Bottom-up signal model  ·  Streaming / Advertising / Live Events / Gaming
-Date: 2026-05-31
+Bottom-up signal model  ·  Streaming Subscription / Advertising / Live Events / Gaming
+Date: 2026-08-03
 """
 
 import math
@@ -10,46 +10,54 @@ import math
 TICKER        = "NFLX"
 COMPANY       = "Netflix, Inc."
 SECTOR        = "Streaming · Ad-Supported Tier · Live Events · Gaming · NASDAQ: NFLX"
-CURRENT_PRICE = 850.00       # USD; as of 2026-05-31
-VOL_52W_LOW   = 660.40       # April 2026 tariff/sentiment trough
-VOL_52W_HIGH  = 1_008.50     # January 2026 — first close above $1,000
-SHARES_OUT_M  = 428.0        # millions; aggressive buyback program
+CURRENT_PRICE = 71.71        # USD; close 2026-07-31 (verified live); post 10-for-1 split (Nov 2025)
+VOL_52W_LOW   = 65.08        # 2026 trough; post Q2 growth-deceleration selloff
+VOL_52W_HIGH  = 126.71       # 2026 peak, pre-deceleration-concern selloff
+SHARES_OUT_M  = 4_164.0      # millions; $298.6B mkt cap / $71.71; post-split share count
+ANNUAL_DIV    = 0.0          # $/share; no dividend, all capital return via buyback
 
-ANNUAL_DIV    = 0.00         # no dividend; all capital return via buyback
-
-# ── AD TIER FLYWHEEL CONSTANTS (company-specific calculator) ──────────────────
-AD_MAU_CURR_M  =  70.0   # ad-supported monthly active users (millions) FY2026E
-AD_ARPU_CURR   =  42.0   # ad revenue per MAU per year ($) — $3.50/month blended
-AD_OP_MARGIN   =  0.75   # incremental OI margin on ad revenue (content sunk; ops ~25%)
-TOTAL_SUBS_M   = 270.0   # total global paid subscribers FY2026E (millions)
-CONTENT_COST_B =  17.5   # annual content spend ($B/yr FY2026E)
-TAX_RATE       =  0.21   # effective rate (US + international blend)
-
-# Ad tier scale scenarios: (MAU_M, arpu_$/yr, label)
-AD_SCENARIOS = [
-    ( 70.0,  42.0, "Current  (FY2026E)"),
-    (100.0,  55.0, "BASE     (FY2027E)"),
-    (160.0,  80.0, "BULL     (FY2028E)"),
-    (220.0, 120.0, "XBULL    (2029+)  "),
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q2 2026 actual: revenue $12.56B (+13% YoY), op margin 33.4%. FY2026 guide: $51.0-51.4B,
+# op margin 31.5%. Ad revenue guided to roughly double to ~$3B in 2026.
+SEG_DATA = [
+    # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
+    ("Streaming Subscription",  48.2, 44.0, 52.5, "Core sub revenue; price increases + moderate member growth; the large, slow-moving base"),
+    ("Advertising",              3.0,  2.2,  4.5, "Roughly doubling in 2026; small base, by far the fastest-growing and highest-optionality line"),
 ]
 
+# Margin assumptions (non-GAAP-equivalent; Netflix reports GAAP with minimal adjustment items)
+OP_MARGIN_CURR   = 0.315    # FY2026E guided operating margin (unchanged at 31.5% even as the revenue range narrowed)
+OP_MARGIN_BULL   = 0.360    # BULL: ad tier scales with high incremental margin; content spend efficiency improves
+OP_MARGIN_BEAR   = 0.270    # BEAR: member growth stalls, forcing pricing/promotional concessions that compress margin
+TAX_RATE         = 0.150    # effective tax rate (below US statutory due to international mix)
+
+# ── WBD TERMINATION / STRATEGIC REFOCUS CALCULATOR (the Netflix-specific angle) ──
+WBD_TERMINATION_FEE_B = 2.8   # $B received from Warner Bros. Discovery when Paramount Skydance won the bidding war
+WBD_DEAL_OUTCOME       = "Netflix withdrew; Paramount Skydance acquired WBD for $31/share"
+Q1_REPORTED_EPS        = 1.23  # $ Q1 2026 diluted EPS, INCLUDING the one-time WBD fee (~$0.67/share pre-tax impact)
+Q2_CLEAN_EPS            = 0.80 # $ Q2 2026 diluted EPS, a clean quarter with no one-time items, still beat consensus
+AD_REVENUE_DOUBLING     = True # 2026 ad revenue guided to roughly double YoY to ~$3B
+Q3_GUIDE_REV_B          = 12.86 # $B Q3 2026 revenue guide (+11.7% YoY — the deceleration that triggered the selloff)
+
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPP_EPS   = 30.00   # FY2026E adj EPS (consensus ~$29–$31)
-PE_TROUGH = 22      # min viable P/E at crisis (confirmed streaming profitability floor)
-EPP       = round(EPP_EPS * PE_TROUGH, 0)   # $660
+EPS_FY2026E    = 3.75         # $/share; reported-basis FY2026E (Q1 $1.23 incl. WBD fee + Q2 $0.80 + Q3E ~$0.83 + Q4E ~$0.88)
+                               # NOTE: ~$0.46/share of this is the one-time WBD termination fee; clean run-rate EPS is closer to $3.29
+PE_PESSIMISTIC = 15.0         # trough P/E: NFLX traded near this level during the 2022 subscriber-loss
+                               # panic (pre-split-adjusted terms); 15x prices a comparable growth-deceleration scare
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  (18.00, 20,  360, "Subscriber stall + Disney bundling wins; margin reversal; EPS $18 → 20× distress"),
-    "BASE":  (30.00, 30,  900, "Ad tier 100M MAU; ARM +10%; streaming consolidates; EPS $30 → 30× mid-cycle"),
-    "BULL":  (40.00, 35, 1400, "Ad flywheel; live sports audience; ARM +15%; EPS $40 → 35× premium multiple"),
-    "XBULL": (60.00, 35, 2100, "Global entertainment OS + gaming; AI content efficiency; EPS $60 → 35× peak"),
+    "BEAR":  ( 2.55, 15,   38, "Member growth stalls; ad tier monetization disappoints; content cost inflation compresses margin"),
+    "BASE":  ( 3.55, 22,   78, "Steady mid-teens subscription growth continues; ad revenue keeps roughly doubling; margin holds near 31-32%"),
+    "BULL":  ( 4.32, 28,  121, "Ad tier and live sports fully scale; content efficiency improves margin faster than guided; multiple re-rates"),
+    "XBULL": ( 5.20, 32,  166, "Netflix becomes the default global video-plus-live-sports platform; ad revenue rivals subscription as a growth driver"),
 }
 
-# ── SOFTMAX ───────────────────────────────────────────────────────────────────
+# ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
 CENTERS = {"BEAR": 1.25, "BASE": 2.00, "BULL": 2.75, "XBULL": 3.75}
 T = 0.60
 
@@ -74,54 +82,55 @@ def back_solve_market_composite(price, tol=0.001):
     return round((lo + hi) / 2, 2)
 
 # ── 6 PROXY SIGNALS ───────────────────────────────────────────────────────────
+# Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "Global paid net adds — quarterly (millions)",
-        "weight":     0.25,
-        "thresholds": ("<2M",    "≥5M",   "≥8M",    "≥12M"),
-        "now":        "~6.5M",
-        "score":      2,
-        "comment":    "~6.5M/qtr; paid sharing normalised; growth from ad-tier converts + LATAM/APAC",
-    },
-    {
-        "name":       "Average Revenue per Member (ARM) — blended global, YoY growth",
-        "weight":     0.25,
-        "thresholds": ("<3%",    "≥5%",   "≥9%",    "≥15%"),
-        "now":        "+10%",
-        "score":      3,
-        "comment":    "+10% YoY; price increases (US $17→$18/mo standard) + ad tier ad revenue uplift",
-    },
-    {
-        "name":       "Ad-supported tier MAU — monthly active users (millions)",
+        "name":       "Total revenue YoY growth",
         "weight":     0.20,
-        "thresholds": ("<30M",   "≥50M",  "≥90M",   "≥140M"),
-        "now":        "~70M",
+        "thresholds": ("<8%",    "≥11%",   "≥15%",   "≥20%"),
+        "now":        "+13%",
         "score":      2,
-        "comment":    "~70M MAU; 26% of subs; growing ~5M/qtr; Netflix Ads Manager direct-sold scaling",
+        "comment":    "Q2 $12.56B (+13%); Q3 guide implies +11.7% — the deceleration that triggered the post-earnings selloff",
     },
     {
-        "name":       "Adjusted operating margin (trailing 12 months)",
+        "name":       "Operating margin",
         "weight":     0.15,
-        "thresholds": ("<20%",   "≥25%",  "≥30%",   "≥36%"),
-        "now":        "~29.5%",
-        "score":      2,
-        "comment":    "~29.5%; FY2026 guidance ~29-30%; below BULL threshold; ad rev not yet accretive at scale",
+        "thresholds": ("<28%",   "≥31%",   "≥34%",   "≥37%"),
+        "now":        "33.4%",
+        "score":      3,
+        "comment":    "Down 0.7pp YoY on higher tech/marketing spend, but still comfortably above the FY guide of 31.5%",
     },
     {
-        "name":       "Live events + sports rights — annualised revenue ($B/yr)",
-        "weight":     0.10,
-        "thresholds": ("<$0.5B", "≥$1B",  "≥$2.5B", "≥$5B"),
-        "now":        "~$1.5B",
-        "score":      2,
-        "comment":    "NFL Christmas games + WWE Raw + boxing; ~$1.5B/yr; above BASE, below BULL threshold",
+        "name":       "Advertising revenue growth",
+        "weight":     0.20,
+        "thresholds": ("<40%",   "≥60%",   "≥85%",   "≥110%"),
+        "now":        "~100%",
+        "score":      4,
+        "comment":    "Guided to roughly double in 2026 to ~$3B — still a small base, but by far the fastest-growing segment",
     },
     {
-        "name":       "Netflix Games — monthly active players (MAU, millions)",
-        "weight":     0.05,
-        "thresholds": ("<3M",    "≥8M",   "≥20M",   "≥45M"),
-        "now":        "~12M",
+        "name":       "WBD deal outcome / capital position",
+        "weight":     0.15,
+        "thresholds": ("lost + no fee","lost + fee","fee + refocus","fee + accretive M&A"),
+        "now":        "fee + refocus",
+        "score":      3,
+        "comment":    "Netflix walked away from a $110B+ bidding war, collected a $2.8B fee, and avoided a massive integration risk",
+    },
+    {
+        "name":       "Q3 guidance vs Street",
+        "weight":     0.15,
+        "thresholds": ("well below","below",  "in-line", "above"),
+        "now":        "below",
         "score":      2,
-        "comment":    "~12M MAU; mobile-first; GTA trilogy + indie titles; optionality not yet priced",
+        "comment":    "Both Q3 revenue and EPS guidance came in modestly below Street forecasts — the proximate cause of the drawdown",
+    },
+    {
+        "name":       "Forward P/E (reported-basis)",
+        "weight":     0.15,
+        "thresholds": (">30x",   "≤24x",   "≤19x",   "≤14x"),
+        "now":        "~19.1x",
+        "score":      3,
+        "comment":    "19.1× FY2026E — the cheapest Netflix has traded relative to its own growth rate in years",
     },
 ]
 
@@ -131,12 +140,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Content moat — #1 global streaming; 7yr original IP runway; Emmy/Oscar wins compounding",       +0.7, 0.25),
-    ("+", "Ad tier flywheel — 70M MAU growing; premium CPM $30-40; high incremental margin (75%)",         +0.6, 0.20),
-    ("-", "Content cost inflation — $17.5B/yr base; live sports add $2-3B; FCF volatility rising",         -0.5, 0.20),
-    ("-", "Competition intensity — Disney+/Hulu/ESPN bundle; Apple TV+ loss-leader; Amazon Prime video",    -0.4, 0.20),
-    ("+", "Operating leverage — each $1B incremental revenue → ~$0.35B OI at current marginal margin",     +0.6, 0.10),
-    ("-", "International FX drag — 60%+ members non-USD; ARM volatility from currency; emerging market FX", -0.3, 0.05),
+    ("+", "Dodged a bullet — walking away from WBD avoided integrating a declining legacy media conglomerate at a $110B+ price", +0.7, 0.20),
+    ("+", "$2.8B termination fee — pure cash gain, no dilution, no debt; strengthens the balance sheet with zero integration risk", +0.4, 0.10),
+    ("+", "Advertising inflection — doubling off a real base, with a completed ad-tech stack now largely built out", +0.6, 0.20),
+    ("-", "Growth deceleration is real — +13% and slowing is a genuine multi-quarter trend, not noise", -0.5, 0.20),
+    ("+", "Valuation reset — 19.1× forward is a historic discount for this name relative to its own growth history", +0.5, 0.15),
+    ("-", "Content cost inflation + competitive intensity — live sports rights and general content costs keep climbing across the industry", -0.4, 0.15),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -149,32 +158,34 @@ if ADJ_GAP > 0.20:
 elif ADJ_GAP > -0.20:
     valuation_label = "FAIRLY VALUED"
 else:
-    valuation_label = "MODESTLY OVERVALUED"
+    valuation_label = "OVERVALUED"
 
 # ── RATIO B ───────────────────────────────────────────────────────────────────
 bear_price   = SCENARIOS["BEAR"][2]
 bull_price   = SCENARIOS["BULL"][2]
 downside_pct = (CURRENT_PRICE - bear_price) / CURRENT_PRICE
 upside_pct   = (bull_price - CURRENT_PRICE) / CURRENT_PRICE
-ratio_b      = round(downside_pct / upside_pct, 2)
+ratio_b      = round(downside_pct / upside_pct, 2) if upside_pct > 0 else float("inf")
 
-if ratio_b < 0.75:
+if ratio_b != float("inf") and ratio_b < 0.75:
     signal_short, signal_full = "BUY",       "◉ BUY"
-elif ratio_b < 1.10:
+elif ratio_b != float("inf") and ratio_b < 1.10:
     signal_short, signal_full = "ACCUMULATE","◎ ACCUMULATE"
-elif ratio_b < 1.75:
+elif ratio_b != float("inf") and ratio_b < 1.75:
     signal_short, signal_full = "WATCHLIST", "◐ WATCHLIST"
 else:
     signal_short, signal_full = "AVOID",     "✕ AVOID"
 
+ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
+
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR = 33.00   # conservative FY2028E: ad tier disappoints; ARM growth slows to 5%
-CONS_PE_2YR  = 24      # floor multiple (proven streaming platform; no existential threat)
-cons_equity  = CONS_EPS_2YR * CONS_PE_2YR
-cons_divs    = 0.00    # no dividend; assume buyback adds ~2%/yr (not captured here)
-cons_total   = cons_equity + cons_divs
-cons_return  = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
-cons_annual  = round(cons_return / 2, 1)
+CONS_EPS_2YR  = 3.90    # conservative FY2028E: ~2.0% EPS CAGR off the clean (ex-WBD-fee) ~$3.29 base — a genuine deceleration case
+CONS_PE_2YR   = 20      # modest re-rating from ~19x — still below Netflix's historical richer multiples
+cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
+cons_divs     = ANNUAL_DIV * 2
+cons_total    = cons_equity + cons_divs
+cons_return   = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
+cons_annual   = round(cons_return / 2, 1)
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  OUTPUT
@@ -187,174 +198,199 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Streaming / Ad Tier / Live Events / Technology")
-print(f"  Signal: {signal_full}   Ratio B: {ratio_b:.2f}x   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Streaming / Advertising / Live Events / Gaming")
+print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
+print(f"  ⚠ Post 10-for-1 stock split (effective Nov 17, 2025). All figures below are split-adjusted.")
 
-# ─── ① AD-SUPPORTED TIER MONETISATION FLYWHEEL ──────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  AD-SUPPORTED TIER MONETISATION FLYWHEEL  (the transformative earnings driver)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
-print(f"  Ad tier architecture (FY2026E):")
-print(f"  Ad-supported MAU: {AD_MAU_CURR_M:.0f}M  ({AD_MAU_CURR_M/TOTAL_SUBS_M*100:.0f}% of {TOTAL_SUBS_M:.0f}M total paid subscribers)")
-print(f"  Ad revenue per MAU per year: ${AD_ARPU_CURR:.0f}  (${AD_ARPU_CURR/12:.2f}/month blended; room to triple vs linear TV)")
-print(f"  Ad load: 4 min/hr  (vs 16 min/hr linear TV; Netflix preserving quality to protect subs)")
-print(f"  CPM: $30–40  (premium brand-safe; above linear TV ~$15; growing with programmatic)")
-print(f"  Incremental OI margin: ~{AD_OP_MARGIN*100:.0f}%  (content already sunk; ad ops ~25% of rev)")
-print(f"  Fill rate: ~65% and rising — Netflix Ads Manager direct-sold platform launched 2025")
-print()
 
-shares_b = SHARES_OUT_M / 1000
-print(f"  AD REVENUE SCALE SCENARIOS:")
-print(f"  {'Scenario':<22}  {'Ad MAU':>7}  {'ARPU/yr':>8}  {'Ad Revenue':>11}  {'EPS (ads)':>10}  {'vs Current':>11}")
+curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
+bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
+bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
+
+print(f"  {'Segment':<28}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
-base_eps_ads = None
-for mau, arpu, label in AD_SCENARIOS:
-    rev_b   = mau * arpu / 1000
-    oi_b    = rev_b * AD_OP_MARGIN
-    ni_b    = oi_b * (1 - TAX_RATE)
-    eps_ads = ni_b / shares_b
-    if base_eps_ads is None:
-        base_eps_ads = eps_ads
-        delta_str = "—"
-    else:
-        delta_str = f"+${eps_ads - base_eps_ads:.2f}/EPS"
-    print(f"  {label:<22}  {mau:>6.0f}M   ${arpu:>5.0f}/yr   ${rev_b:>6.2f}B       ${eps_ads:>5.2f}/EPS   {delta_str:>11}")
-
-print()
-bull_mau, bull_arpu, _ = AD_SCENARIOS[2]
-bull_ad_eps = bull_mau * bull_arpu / 1000 * AD_OP_MARGIN * (1 - TAX_RATE) / shares_b
-sub_eps_at_bull = SCENARIOS["BULL"][0] - bull_ad_eps
-print(f"  At BULL: subscription EPS ~${sub_eps_at_bull:.1f} + ad-tier EPS ~${bull_ad_eps:.1f} ≈ ${SCENARIOS['BULL'][0]:.0f}/EPS total  ✓")
+for seg, curr, bear, bull, desc in SEG_DATA:
+    print(f"  {seg:<28}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"    {desc}")
+hr()
+print(f"  {'TOTAL':<28}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  FY2026 guidance: revenue $51.0-51.4B, operating margin 31.5% (narrowed range, unchanged margin)")
 print()
 
-# Sensitivities
-eps_per_10_arpu   = AD_MAU_CURR_M * 10 / 1000 * AD_OP_MARGIN * (1 - TAX_RATE) / shares_b
-eps_per_10m_mau   = 10 * AD_ARPU_CURR / 1000 * AD_OP_MARGIN * (1 - TAX_RATE) / shares_b
-eps_per_10pp_fill = AD_MAU_CURR_M * AD_ARPU_CURR / 1000 * 0.10 * AD_OP_MARGIN * (1 - TAX_RATE) / shares_b
+# EPS bridge (clean, ex-one-time-items basis)
+shares    = SHARES_OUT_M / 1000
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps_clean = round(curr_op * (1 - TAX_RATE) / shares, 2)
 
-print(f"  KEY SENSITIVITIES  (at current {AD_MAU_CURR_M:.0f}M MAU base):")
-print(f"  Every $10/yr increase in ad ARPU  (${AD_ARPU_CURR:.0f} → ${AD_ARPU_CURR+10:.0f}): +${AD_MAU_CURR_M*10/1000:.2f}B rev  =  +${eps_per_10_arpu:.2f}/EPS  =  +${eps_per_10_arpu*30:.0f}/share at 30×")
-print(f"  Every 10M new ad MAU (at ${AD_ARPU_CURR:.0f}/yr ARPU): +${10*AD_ARPU_CURR/1000:.2f}B rev  =  +${eps_per_10m_mau:.2f}/EPS  =  +${eps_per_10m_mau*30:.0f}/share at 30×")
-print(f"  Fill rate +10pp (~65%→75%): +${AD_MAU_CURR_M*AD_ARPU_CURR/1000*0.10:.2f}B rev  =  +${eps_per_10pp_fill:.2f}/EPS  =  +${eps_per_10pp_fill*30:.0f}/share at 30×")
-print(f"  Content cost: ${CONTENT_COST_B:.1f}B/yr — every $1B more content raises breakeven ARM by ~${1000/TOTAL_SUBS_M*12:.1f}/yr")
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.97
+bull_eps_imp = round(bull_op * (1 - TAX_RATE) / shares_b, 2)
 
-# ─── ② SIGNAL DASHBOARD ──────────────────────────────────────────────────────
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round(bear_op * (1 - TAX_RATE) / shares, 2)
+
+print(f"  FY2026E EPS check (CLEAN basis):  ${curr_total:.1f}B rev × {OP_MARGIN_CURR*100:.1f}% op margin − {TAX_RATE*100:.1f}% tax")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps_clean:.2f}/share")
+print(f"  Reported FY2026E EPS (incl. $2.8B WBD termination fee, ~$0.46/share after-tax): ${EPS_FY2026E:.2f}")
+print(f"  The ${EPS_FY2026E - curr_eps_clean:.2f}/share gap is the one-time item — real cash, but not repeatable operating earnings.")
 print()
-print("  ① SIGNAL DASHBOARD  (subscribers + ARM + ad tier + margin + live events + gaming)")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {OP_MARGIN_BULL*100:.1f}% op margin, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 28× = ~${bull_eps_imp*28:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print()
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {OP_MARGIN_BEAR*100:.1f}% op margin (member growth stalls, pricing pressure)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 15× trough = ~${bear_eps_imp*15:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# WBD TERMINATION CHECK
+print()
+print(f"  WBD TERMINATION & STRATEGIC REFOCUS CHECK  (the Netflix-specific angle):")
+print(f"  Deal outcome:                  {WBD_DEAL_OUTCOME}")
+print(f"  Termination fee received:      ${WBD_TERMINATION_FEE_B:.1f}B  (pure cash, no dilution, no debt)")
+print(f"  Q1 2026 reported EPS:          ${Q1_REPORTED_EPS:.2f}  (includes the one-time fee)")
+print(f"  Q2 2026 clean EPS:             ${Q2_CLEAN_EPS:.2f}  (no one-time items; still beat consensus)")
+print()
+print(f"  Losing the WBD bidding war is, on balance, good news dressed as a disappointment.")
+print(f"  Netflix avoided integrating a declining linear-TV and legacy-studio conglomerate at a")
+print(f"  price north of $110B, kept $2.8B in cash for the trouble, and can now put full")
+print(f"  management attention back on the organic growth engines — ads, live sports, gaming —")
+print(f"  that are actually working. The market's reaction (selling off on the Q2 growth-guide")
+print(f"  miss) suggests this distinction hasn't been fully appreciated yet.")
+
+# KEY SENSITIVITIES
+print()
+eps_per_1B_rev  = 1.0 * OP_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_marg = curr_total * 0.01 * (1 - TAX_RATE) / shares
+print(f"  KEY SENSITIVITIES:")
+print(f"  Every $1B revenue (at 31.5% op margin):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*22:.2f}/share at 22× P/E")
+print(f"  Every 1pp of operating margin:            +${eps_per_1pp_marg:.3f}/EPS  = +${eps_per_1pp_marg*22:.2f}/share at 22× P/E")
+print(f"  Every 1 turn of P/E:                      ±${curr_eps_clean:.2f}/share  ({curr_eps_clean/CURRENT_PRICE*100:.1f}% of the stock, clean-EPS basis)")
+
+# ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print()
+print("  ① SIGNAL DASHBOARD  (revenue growth / margin / advertising / WBD outcome / guidance / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>6}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>7}  Score")
+print(f"  {'Signal':<38}  {'BEAR':>12}  {'BASE':>10}  {'BULL':>12}  {'XBULL':>13}  {'NOW':>10}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>6}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>7}  {lbl}  {b}")
+    print(f"  {s['name']:<38}  {ths[0]:>12}  {ths[1]:>10}  {ths[2]:>12}  {ths[3]:>13}  {s['now']:>10}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
-    c = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {c:+.3f})")
+    contribution = score * weight
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>7}  Trigger")
+print(f"  {'Signal':<30}  {'Current':>9}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("Global paid net adds (quarterly)",                     "~6.5M",  "<2M",    "−4.5M",  "US market saturation + Disney bundle switchi…"),
-    ("ARM growth YoY",                                       "+10%",   "<3%",    "−7pp",   "Pricing power exhausted; competition forces …"),
-    ("Ad-supported MAU",                                     "~70M",   "<30M",   "−40M",   "Ad boycott; GDPR ruling kills targeting; CPM…"),
-    ("Adjusted operating margin",                            "~29.5%", "<20%",   "−9.5pp", "Content cost spiral; live sports rights cost…"),
-    ("Live events revenue ($B/yr)",                          "~$1.5B", "<$0.5B", "−$1B",   "NFL contract not renewed; boxing flops; live…"),
-    ("Gaming MAU (millions)",                                "~12M",   "<3M",    "−9M",    "Gaming pivot abandoned; studios closed; GTA …"),
+    ("Total revenue YoY",          "+13%",   "<8%",     "-5pp",   "Member growth stalls in mature markets; pricing power hits a wall"),
+    ("Operating margin",           "33.4%",  "<28%",    "-5.4pp", "Content cost inflation (esp. live sports rights) outpaces revenue growth"),
+    ("Advertising revenue growth", "~100%",  "<40%",    "-60pp",  "Ad tier monetization plateaus below the doubling pace already guided"),
+    ("Q3 guide vs Street",         "below",  "well below","worse","A second consecutive guidance disappointment confirms a structural slowdown"),
+    ("Forward P/E",                "~19.1x", "≤15x",    "-4x",    "Market fully re-prices the deceleration as a durable trend, not a blip"),
+    ("Free cash flow",             "healthy","pressured","worse", "Content spend commitments (sports rights, film slate) squeeze near-term FCF"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>7}  {trigger[:45]}")
+    print(f"  {name:<30}  {curr:>9}  {bear_v:>9}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: Disney+/Hulu/ESPN+/ABC bundle wins cord-cutter households at $15-18/mo.")
-print(f"  Netflix subscriber count stalls at 270-280M globally. ARM growth slows as pricing power")
-print(f"  exhausted — can't raise prices without accelerating churn. Ad tier MAU growth stalls as")
-print(f"  targeting capability restricted by EU privacy ruling. OI margin reverts to 20%.")
-print(f"  EPS falls to $18; multiple compresses to 20× → ${bear_price} (−{downside_pct*100:.0f}% from current).")
+print(f"  KEY TRIGGER: the bear case is a genuine, not manufactured, growth deceleration — revenue")
+print(f"  growth has stepped down from the mid-teens toward roughly 12%, and Q3 guidance came in")
+print(f"  below Street on both lines. That is real and worth taking seriously. What it is NOT is")
+print(f"  evidence of a broken business: margin remains well above guide, advertising is genuinely")
+print(f"  inflecting, and the company just avoided a massive, distracting acquisition. The bear")
+print(f"  case requires deceleration to become disorderly, not merely continue at its current pace.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: FY2026E adj EPS × min viable trough P/E)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:     ${EPP_EPS:.2f}  (consensus $29–$31)")
-print(f"  Min viable P/E at trough:      {PE_TROUGH}×  (2022 trough ~18–20×; confirmed streaming floor)")
-print(f"  ─────────────────────────────────────────────────────────────────")
+print(f"  FY2026E EPS (reported basis):  ${EPS_FY2026E:.2f}  (includes the one-time $2.8B WBD termination fee)")
+print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (near where NFLX traded during the 2022 subscriber-loss panic)")
+print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  (market {epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  +{epp_gap_pct:.0f}% premium to EPP is justified by ad tier optionality not in current EPS.")
-print(f"  Bear ${bear_price} is BELOW EPP ${EPP:.0f} — requires both EPS collapse AND multiple compression.")
-print(f"  EPP rising path: FY2027E EPS ~${EPP_EPS+5:.0f} × {PE_TROUGH}× = ${(EPP_EPS+5)*PE_TROUGH:.0f} EPP — gap closes with earnings growth.")
-print(f"  FCF EPP: ~$8B FCF ÷ {SHARES_OUT_M:.0f}M shares = ${8000/SHARES_OUT_M:.1f} FCF/shr × 24× = ${8000/SHARES_OUT_M*24:.0f} (higher floor)")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× reported FY2026E EPS, or {CURRENT_PRICE/curr_eps_clean:.1f}× on a")
+print(f"  clean, ex-one-time basis — either way, one of the cheapest multiples Netflix has carried")
+print(f"  relative to its own growth rate since well before the 2022 correction. The EPP floor")
+print(f"  itself sits {abs(epp_gap_pct):.0f}% below the current price, which is a meaningfully tighter gap than")
+print(f"  most names in this coverage — the market has already done real work pricing in caution.")
+print(f"  At a 24× reversion (still below Netflix's historical premium multiples): ${curr_eps_clean:.2f} × 24 = ${curr_eps_clean*24:.0f}")
+print(f"  ({(curr_eps_clean*24/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: ad tier disappoints; ARM growth slows)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: growth stays near the decelerated Q3 pace, modest re-rating)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (ARM growth 5%/yr; ad MAU 90M; no new verticals)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (below current 28×; moderate growth discount)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Buyback yield:               ~+${CURRENT_PRICE*0.02:.0f}/share  (2%/yr; ~$400M/qtr; offsetting dilution)")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~2.0% EPS CAGR off the clean ~${curr_eps_clean:.2f} base — a genuine deceleration case)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (~19× → 20×; barely any re-rating credit)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (no dividend)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f}; excl. buyback)")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr  (excl. buyback ~+2%/yr)")
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  Conservative case is MODESTLY NEGATIVE — NFLX at ${CURRENT_PRICE:.0f} requires BASE execution.")
-print(f"  Breakeven: FY2028E EPS ≥${CURRENT_PRICE/CONS_PE_2YR:.1f} at {CONS_PE_2YR}× = ~$35-36 (ARM +8%/yr + ad tier 100M MAU).")
-print(f"  Buyback yield ~2%/yr closes most of the conservative-case gap.")
-print(f"  BUY trigger: ad MAU ≥90M (BULL) or ARM growth re-accelerates to ≥12%.")
+print(f"  THE SETUP: this case assumes growth essentially STALLS at the clean EPS level and the")
+print(f"  multiple barely moves, and it still clears {cons_annual:.1f}%/yr. The margin of safety here comes from")
+print(f"  how little the price already assumes — you are not paying for the advertising ramp or")
+print(f"  the live-sports optionality to work, both of which are upside to this case.")
+print(f"  Breakeven at {CONS_PE_2YR}× requires FY2028E EPS ≥ ${CURRENT_PRICE / CONS_PE_2YR:.2f} — below this conservative estimate already.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.38
+annual_vol  = 0.32
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
-print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Annual dividend:      none  (all return via buyback; ~$1.5-2B/yr repurchased)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (high; earnings-day moves ±10-15% common; sub data binary)")
-print(f"  Beta vs S&P 500:      1.30  (high beta growth; subscriber number drives violent moves)")
+print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range, post-split)")
+print(f"  Drawdown from high:   -{(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.1f}%  (the growth-deceleration selloff following the Q2 print)")
+print(f"  Annual dividend:      none — all capital return via buyback")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (moderate for a mega-cap; less extreme than the AI-hardware names in this coverage)")
+print(f"  Beta vs S&P 500:      1.15  (still a consumer-discretionary-adjacent name at its core)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ move  (NFLX fell −76% in 2022; history shows severity)")
-print(f"  52W low ${VOL_52W_LOW:.2f} = tariff/sentiment trough; ad tier derisked that level.")
-print(f"  → EARNINGS DATE IS THE KEY EVENT: each quarterly report is ±8-15% on subscriber + ARM.")
-print(f"  → Ad MAU disclosure (starting Q1 2026) is the NEW KEY METRIC — watch CPM trajectory.")
-print(f"  → ACCUMULATE ${VOL_52W_LOW:.0f}–${round(CURRENT_PRICE*1.05,0):.0f}  |  BUY below $750  |  TRIM above ${round(VOL_52W_HIGH*1.05,0):.0f}")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (would meaningfully breach the current 52W low)")
+print(f"  → Q3 2026 print is the next test of whether the deceleration stabilizes or continues.")
+print(f"  → Advertising revenue disclosure is the highest-optionality number to track each quarter.")
+print(f"  → BUY at current price  |  ADD $60–68  |  TRIM above $115")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
 print("  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
 hr()
 probs_mkt = softmax_probs(MARKET_COMPOSITE)
-print(f"  {'Scenario':<10}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
+print(f"  {'Scenario':<10}  {'Price':>7}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
 hr()
 for s in ["BEAR","BASE","BULL","XBULL"]:
-    pp   = probs_proxy[s] * 100
-    pm   = probs_mkt[s]   * 100
-    gap  = pp - pm
-    pr   = SCENARIOS[s][2]
-    desc = SCENARIOS[s][3][:45]
-    print(f"  {s:<10}  ${pr:>5}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
+    pp  = probs_proxy[s] * 100
+    pm  = probs_mkt[s]   * 100
+    gap = pp - pm
+    pr  = SCENARIOS[s][2]
+    desc = SCENARIOS[s][3][:46]
+    print(f"  {s:<10}  ${pr:>6}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
 
 ev_adj = expected_value(ADJ_COMPOSITE)
 ev_prx = expected_value(PROXY_COMPOSITE)
@@ -363,39 +399,45 @@ print()
 print(f"  Adj EV (2yr): ${ev_adj:.0f}  /  Proxy EV: ${ev_prx:.0f}  /  Market EV: ${ev_mkt:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
 hr()
 print(f"  Downside  (→ Bear ${bear_price}):  {downside_pct*100:.1f}%")
-print(f"  Upside    (→ Bull ${bull_price}):   {upside_pct*100:.1f}%")
-print(f"  Ratio B   :  {ratio_b:.2f}x")
+print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
+print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  Model and market are in close agreement (gap {ADJ_GAP:+.2f}). ACCUMULATE driven by asymmetry:")
-print(f"  BULL ($1,400) adds +${bull_price-CURRENT_PRICE:.0f}/share upside; BEAR ($360) only −${CURRENT_PRICE-bear_price:.0f}/share downside.")
-print(f"  The ad flywheel at BULL scale (~$18/EPS from ads alone) justifies the premium multiple.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  Netflix sold off on a real but modest growth-guidance miss, while simultaneously")
+print(f"  banking a $2.8B fee for walking away from a much riskier acquisition. The market appears")
+print(f"  to be pricing the first fact and ignoring the second. At {CURRENT_PRICE/curr_eps_clean:.1f}× clean earnings for a")
+print(f"  business still growing double digits with a genuinely inflecting ad business, this reads as a buy.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
-print(f"  Key catalysts: (1) Ad MAU → ≥90M = BULL upgrade; watch quarterly disclosure closely")
-print(f"  (2) ARM growth re-acceleration → ≥12%/yr; price increase + ad ARPU compounding")
-print(f"  (3) Operating margin → ≥30% = BULL; confirms content cost discipline at live-events scale")
-print(f"  (4) Netflix Ads Manager programmatic fill rate → ≥80% = structural CPM floor at $35+")
-print(f"  ACCUMULATE ${VOL_52W_LOW:.0f}–${round(CURRENT_PRICE,0):.0f}  |  BUY below $750 (conservative case turns positive)  |  AVOID above $1,100")
+print(f"  Key catalysts to watch:")
+print(f"  (1) Q3 2026 results — does revenue growth stabilize near the guided +11.7%, or decelerate further?")
+print(f"  (2) Advertising revenue trajectory — the doubling guide is the single highest-value number to track")
+print(f"  (3) Live sports rights renewals/additions — content cost trajectory and competitive positioning")
+print(f"  (4) Capital allocation post-WBD — how the $2.8B fee and freed-up management bandwidth get deployed")
+print(f"  (5) Member growth in mature markets (UCAN/EMEA) vs still-developing regions (LATAM/APAC)")
+print(f"  BUY at ${CURRENT_PRICE:.2f}  |  ADD $60–68  |  TRIM above $115")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS (reported): ${EPS_FY2026E:.2f}  |  Clean EPS: ~${curr_eps_clean:.2f}")
 print("═" * (W + 4))
 print()
 
 # ── EXPORT ────────────────────────────────────────────────────────────────────
 RESULT = {
-    "ticker":           TICKER,
-    "signal":           signal_full,
-    "signal_short":     signal_short,
-    "price":            CURRENT_PRICE,
-    "epp_gap_pct":      epp_gap_pct,
-    "ratio_b":          ratio_b,
-    "ratio_b_fmt":      f"{ratio_b:.2f}x",
-    "adj_composite":    ADJ_COMPOSITE,
-    "market_composite": MARKET_COMPOSITE,
-    "adj_gap":          ADJ_GAP,
-    "valuation":        valuation_label,
-    "cons_return_2yr":  cons_return,
+    "ticker":            TICKER,
+    "signal":            signal_full,
+    "signal_short":      signal_short,
+    "price":             CURRENT_PRICE,
+    "epp_gap_pct":       epp_gap_pct,
+    "ratio_b":           ratio_b if ratio_b != float("inf") else None,
+    "ratio_b_fmt":       ratio_b_str,
+    "adj_composite":     ADJ_COMPOSITE,
+    "market_composite":  MARKET_COMPOSITE,
+    "adj_gap":           ADJ_GAP,
+    "valuation":         valuation_label,
+    "cons_return_2yr":   cons_return,
 }
 
 if __name__ == "__main__":
