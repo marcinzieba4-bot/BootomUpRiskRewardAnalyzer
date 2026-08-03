@@ -1,7 +1,7 @@
 """
 TXN  ·  Texas Instruments Incorporated  ·  NASDAQ: TXN
 Bottom-up signal model  ·  Analog & Embedded Semiconductors / Industrial / Auto / AI Data Center
-Date: 2026-06-10
+Date: 2026-08-02
 """
 
 import math
@@ -10,44 +10,52 @@ import math
 TICKER        = "TXN"
 COMPANY       = "Texas Instruments Incorporated"
 SECTOR        = "Analog & Embedded Semiconductors · Industrial · Automotive · AI Data Center · NASDAQ: TXN"
-CURRENT_PRICE = 308.65      # USD; as of 2026-06-10; +58% YTD on AI/data-center re-rating
-VOL_52W_LOW   = 165.00
-VOL_52W_HIGH  = 320.00
-SHARES_OUT_M  = 905.0       # millions
+CURRENT_PRICE = 275.74       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 152.73       # 2025 industrial-cycle trough
+VOL_52W_HIGH  = 334.03       # 2026 post-Q1 AI/data-center re-rating peak (one-day +18% on the print)
+SHARES_OUT_M  = 905.0        # millions; $251.8B mkt cap / $275.74
+ANNUAL_DIV    = 5.68         # $/share forward; yield ~2.06%; long-running growth streak
 
-# Dividend: long-running growth streak
-ANNUAL_DIV    = 5.68        # $/share annualized
-
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q1 actual $4.83B (+19%), Q2 actual $5.46B (+23%); Q3 guide $5.65-6.15B.
+# Analog/Embedded mix from Q2: Analog $4.37B (80%), Embedded $788M (14%), Other $310M (6%)
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Analog — Power Management",   8.20, 6.50, 10.50, "Industrial/auto recovery + data center power; largest segment"),
-    ("Analog — Signal Chain",       6.40, 5.00,  8.20, "Industrial sensing/connectivity; data center AI signal chain growth"),
-    ("Embedded Processing",         2.80, 2.20,  3.60, "MCUs/processors; auto + industrial cycle; share-loss risk vs ARM"),
-    ("Other (DLP, calculators)",    0.85, 0.70,  1.00, "Legacy DLP/education products; stable, low-growth cash generator"),
+    ("Analog (Power + High-Volume)", 17.6, 14.0, 20.5, "Industrial +30% YoY, auto mid-teens, data-center power roughly doubled YoY in Q2"),
+    ("Embedded Processing (MCU)",     3.1,  2.5,  3.8, "Industrial/auto microcontrollers; smaller segment, steadier growth than Analog"),
+    ("Other (DLP/custom, royalties)", 1.3,  1.1,  1.5, "Legacy licensing + custom ASIC; low-growth, high-margin tail"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.585   # blended gross margin FY2026E (~58.5%; depressed vs historical 65%+ on capex depreciation)
-GROSS_MARGIN_BULL = 0.640   # BULL: 300mm Sherman ramp drives utilization-led margin expansion
-OPEX_FIXED_B      = 4.10    # R&D + SG&A ($B); roughly fixed cost base
-TAX_RATE          = 0.135   # effective rate
+# Margin assumptions (non-GAAP-equivalent; TI reports GAAP with minimal adjustment items)
+GROSS_MARGIN_CURR = 0.610   # FY2026E blended gross margin; Q2 GM 61%, +340bp sequentially on utilization
+GROSS_MARGIN_BULL = 0.630   # BULL: fab utilization climbs further on data-center/AI demand
+OPEX_FIXED_B      = 4.20    # R&D + SG&A ($B)
+TAX_RATE          = 0.140   # effective tax rate
+
+# ── DATA CENTER / CAPACITY CALCULATOR (the TI-specific angle) ────────────────
+DC_REVENUE_2025_B     = 1.5   # $B AI/data-center-linked revenue in 2025 (~9% of total sales)
+DC_GROWTH_Q2_YOY      = "roughly doubled"  # qualitative: Q2 2026 data-center revenue YoY growth
+CAPEX_GUIDE_LOW_B     = 2.0   # $B FY2026 capex guidance low end
+CAPEX_GUIDE_HIGH_B    = 3.0   # $B FY2026 capex guidance high end (down from prior years' $4-5B pace)
+TTM_FCF_B             = 6.5   # $B trailing-twelve-month free cash flow
+Q3_GUIDE_REV_LOW_B    = 5.65  # $B Q3 2026 revenue guidance low end
+Q3_GUIDE_REV_HIGH_B   = 6.15  # $B Q3 2026 revenue guidance high end
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 7.70        # FY2026E adj EPS (BASE case estimate)
-PE_PESSIMISTIC = 22.0        # trough P/E: cyclical analog floor multiple at depressed-trough EPS
-EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)   # $169
+EPS_FY2026E    = 8.75         # $/share; Q1 $1.68 + Q2 $2.14 + Q3E ~$2.40 (guide midpoint) + Q4E ~$2.55
+PE_PESSIMISTIC = 20.0         # trough P/E: TI traded 20-24x forward during the 2023-24 industrial
+                              # down-cycle; 20x prices a comparable inventory-correction repeat
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 5.50, 22,  121, "Analog cycle double-dips; China competition erodes pricing; EPS $5.50 → 22× floor P/E"),
-    "BASE":  ( 7.70, 28,  216, "Industrial/auto recovery continues at moderate pace; EPS $7.70 → 28×"),
-    "BULL":  ( 9.50, 33,  314, "Data center AI revenue scales further; 300mm utilization lifts margins; EPS $9.50 → 33×"),
-    "XBULL": (12.00, 38,  456, "Full capex-cycle payoff; analog supercycle + AI data center dominance; EPS $12.00 → 38×"),
+    "BEAR":  ( 5.58, 20,  112, "Industrial/auto inventory correction repeats; data-center demand doesn't scale fast enough to offset"),
+    "BASE":  (10.20, 30,  306, "Industrial/auto cycle stays healthy; data-center revenue keeps compounding off a small base"),
+    "BULL":  (11.28, 34,  383, "Fab utilization climbs further; data-center becomes a structural double-digit % of revenue"),
+    "XBULL": (13.50, 38,  513, "TI re-rates as the analog supplier of record for AI-infrastructure power delivery"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -78,52 +86,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "Analog/Embedded revenue cycle recovery (industrial + auto)",
-        "weight":     0.25,
-        "thresholds": ("<0%",    "≥5%",   "≥12%",   "≥20%"),
-        "now":        "+8%",
-        "score":      2,
-        "comment":    "Industrial and automotive revenue growing off the cycle trough; not yet at full BULL recovery pace",
-    },
-    {
-        "name":       "Data center / AI revenue growth YoY",
-        "weight":     0.25,
-        "thresholds": ("<20%",   "≥40%",  "≥70%",   "≥100%"),
-        "now":        "+90%",
-        "score":      3,
-        "comment":    "Q1 2026 data center/AI revenue +90% YoY; strong but off a small base; key driver of re-rating",
-    },
-    {
-        "name":       "Gross margin recovery (300mm Sherman SM1 utilization)",
+        "name":       "Total revenue YoY growth",
         "weight":     0.20,
-        "thresholds": ("<55%",   "≥58%",  "≥61%",   "≥64%"),
-        "now":        "58.5%",
-        "score":      2,
-        "comment":    "Margins still depressed by depreciation from 300mm capacity build; utilization ramp gradual",
+        "thresholds": ("<8%",    "≥14%",   "≥20%",   "≥28%"),
+        "now":        "+23%",
+        "score":      3,
+        "comment":    "Q2 $5.46B (+23%, +13% sequential), above the high end of guidance for a second straight quarter",
     },
     {
-        "name":       "Free cash flow inflection (capex decline)",
+        "name":       "Industrial revenue YoY growth",
+        "weight":     0.20,
+        "thresholds": ("<10%",   "≥18%",   "≥26%",   "≥35%"),
+        "now":        "+30%",
+        "score":      3,
+        "comment":    "The segment that led the 2023-24 down-cycle is now leading the recovery — broad-based, not just AI-linked",
+    },
+    {
+        "name":       "Data-center revenue trajectory",
+        "weight":     0.20,
+        "thresholds": ("flat",   "+30-60%","+60-100%","doubling+"),
+        "now":        "~doubled YoY",
+        "score":      4,
+        "comment":    "~9% of 2025 revenue and roughly doubled YoY in Q2 — small base, but the fastest-growing piece of the mix",
+    },
+    {
+        "name":       "Gross margin trend",
         "weight":     0.15,
-        "thresholds": ("<5%",    "≥8%",   "≥14%",   "≥20%"),
-        "now":        "~10%",
-        "score":      2,
-        "comment":    "Capex cycle ~83% complete; FCF margin improving but not yet at full inflection",
+        "thresholds": ("<52%",   "≥56%",   "≥60%",   "≥64%"),
+        "now":        "61%",
+        "score":      3,
+        "comment":    "+340bp sequentially in Q2 on utilization — the clearest read on where the cycle sits",
     },
     {
-        "name":       "Industrial end-market inventory destocking completion",
+        "name":       "Capex discipline",
         "weight":     0.10,
-        "thresholds": ("Ongoing","Mostly done","Complete","Restocking"),
-        "now":        "Mostly done",
-        "score":      2,
-        "comment":    "Channel inventory normalized in most industrial sub-segments; some pockets remain elevated",
+        "thresholds": (">$5B",   "≤$4B",   "≤$3B",   "≤$2B"),
+        "now":        "$2-3B",
+        "score":      3,
+        "comment":    "Guided down from the $4-5B/yr pace of the prior capacity build-out — funding growth from a smaller check now",
     },
     {
-        "name":       "China/auto competitive pricing pressure (domestic suppliers)",
-        "weight":     0.05,
-        "thresholds": (">-10%",  "≥-5%",  "≥0%",    "≥+3%"),
-        "now":        "-6%",
+        "name":       "Forward P/E vs 10-yr average (~24x)",
+        "weight":     0.15,
+        "thresholds": (">34x",   "≤28x",   "≤22x",   "≤17x"),
+        "now":        "31.5x",
         "score":      1,
-        "comment":    "Domestic Chinese analog suppliers (e.g. SG Micro, Will Semi) gaining share with aggressive pricing",
+        "comment":    "31.5× FY2026E — a meaningful premium to TI's own history, priced for the AI/data-center growth continuing uninterrupted",
     },
 ]
 
@@ -133,12 +141,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Highest-quality analog franchise — scale, 300mm cost advantage, broadest catalog",     +0.7, 0.25),
-    ("+", "Data center/AI halo — +90% YoY growth provides genuine new growth vector",              +0.5, 0.15),
-    ("-", "Valuation already at ~40x FY2026E trough EPS — prices in 2028-2030 capex payoff",       -0.8, 0.25),
-    ("-", "Avg analyst target ~$284 sits BELOW current price $308.65 — re-rating ahead of fundamentals", -0.7, 0.20),
-    ("-", "China domestic analog competition — structural share/pricing erosion in industrial/auto", -0.4, 0.10),
-    ("+", "Capital return — high dividend, long growth streak, capex cycle 83% done supports FCF", +0.3, 0.05),
+    ("+", "Cycle inflection is real — industrial +30%, two straight above-guidance quarters, GM expanding fast", +0.8, 0.20),
+    ("+", "Data-center optionality — ~9% of revenue and doubling YoY, funded by disciplined $2-3B capex, not a re-lever", +0.5, 0.15),
+    ("-", "Valuation — 31.5× forward vs a ~24× 10-yr average; the recovery is already substantially priced in",   -0.9, 0.25),
+    ("-", "Cyclicality — analog/industrial is the textbook boom-bust semiconductor category; nothing here repeals that", -0.5, 0.15),
+    ("+", "Capital return — 2.06% yield, long dividend growth streak, funded by $6.5B TTM FCF",                    +0.4, 0.15),
+    ("-", "One-day +18% move on the Q1 print — a stock that reprices this hard on a single quarter has limited room for a miss", -0.4, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -172,8 +180,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 8.60    # conservative FY2028E EPS: gradual cycle recovery + margin improvement
-CONS_PE_2YR   = 24      # rerating from ~40x toward growth-justified 24x as cycle normalizes
+CONS_EPS_2YR  = 10.00   # conservative FY2028E: ~6.9% EPS CAGR — well below the current growth pace
+CONS_PE_2YR   = 25      # multiple compresses from 31.5× toward a level closer to the historical average
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -191,180 +199,188 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Analog/Embedded Semis / Industrial / Auto / AI Data Center")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Analog / Embedded / Industrial / AI Data Center")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<26}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<32}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<26}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<32}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<26}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<32}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q1 actual $4.83B (+19%), Q2 actual $5.46B (+23%). Q3 guide: ${Q3_GUIDE_REV_LOW_B:.2f}-{Q3_GUIDE_REV_HIGH_B:.2f}B")
 print()
 
 # EPS bridge
+shares    = SHARES_OUT_M / 1000
 curr_gp   = curr_total * GROSS_MARGIN_CURR
 curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_eps  = round(curr_oi * (1 - TAX_RATE) / shares, 2)
 
 bull_gp   = bull_total * GROSS_MARGIN_BULL
-bull_oi   = bull_gp - OPEX_FIXED_B
-bull_ni   = bull_oi * (1 - TAX_RATE)
-shares_b  = shares * 0.97   # modest buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_oi   = bull_gp - OPEX_FIXED_B * 1.10
+shares_b  = shares * 0.98
+bull_eps_imp = round(bull_oi * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.95   # margin compression in downturn
-bear_oi   = bear_gp - OPEX_FIXED_B * 0.97           # partial cost response
-bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_gp   = bear_total * 0.560     # utilization drops hard in an inventory-correction scenario
+bear_oi   = bear_gp - OPEX_FIXED_B * 0.95
+bear_eps_imp = round(max(0, bear_oi) * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (BASE estimate ${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 33× = ~${bull_eps_imp*33:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − opex, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 34× = ~${bull_eps_imp*34:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.95:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 22× trough P/E (cyclical analog floor) = ~${bear_eps_imp*22:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × 56.0% GM (utilization drops in an inventory correction) − opex")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 20× trough = ~${bear_eps_imp*20:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print()
+print(f"  ⚠ NOTE: analog semiconductor economics are almost entirely about FAB UTILIZATION. A")
+print(f"  {(1-bear_total/curr_total)*100:.0f}% revenue decline in the bear case produces a {(1-bear_eps_imp/curr_eps)*100:.0f}% EPS decline, because TI's")
+print(f"  largely fixed manufacturing cost base means gross margin swings 5+ points with volume.")
+print(f"  This is the same mechanism that made 2023-24 painful and made the current recovery so sharp.")
+
+# DATA CENTER / CAPACITY CHECK
+print()
+print(f"  DATA CENTER & CAPACITY CHECK  (the TI-specific angle):")
+print(f"  2025 AI/data-center revenue:     ~${DC_REVENUE_2025_B:.1f}B  (~9% of total sales)")
+print(f"  Q2 2026 data-center YoY growth:  {DC_GROWTH_Q2_YOY}")
+print(f"  FY2026 capex guidance:            ${CAPEX_GUIDE_LOW_B:.0f}-${CAPEX_GUIDE_HIGH_B:.0f}B  (down from the $4-5B/yr prior build-out pace)")
+print(f"  TTM free cash flow:               ${TTM_FCF_B:.1f}B")
+print()
+print(f"  The capex discipline matters as much as the growth number. TI spent through 2022-2024")
+print(f"  building capacity ahead of demand, which crushed free cash flow and the stock through")
+print(f"  the down-cycle. Growing into that capacity now — rather than building more of it — is")
+print(f"  why FCF has recovered to ${TTM_FCF_B:.1f}B even as revenue accelerates. This cycle is being funded")
+print(f"  differently than the last one.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev   = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-eps_per_1B_dc    = 1.0 * 0.55 * (1 - TAX_RATE) / shares   # data center segment-level incremental margin
-
+eps_per_1B_rev  = 1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_gm  = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B Data Center/AI revenue:  +${eps_per_1B_dc:.3f}/EPS  = +${eps_per_1B_dc*28:.1f}/share at 28× P/E")
-print(f"  Every $1B Analog/Embedded revenue:  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*28:.1f}/share at 28× P/E")
-print(f"  1pp GM expansion (300mm utilization): +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*28:.1f}/share at 28× P/E")
-print(f"  1% buyback (~9M shares):              +${curr_eps*0.01:.3f}/EPS  (mechanical accretion)")
+print(f"  Every $1B revenue (at 61% GM):        +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*28:.2f}/share at 28× P/E")
+print(f"  Every 1pp of gross margin:            +${eps_per_1pp_gm:.3f}/EPS  = +${eps_per_1pp_gm*28:.2f}/share at 28× P/E")
+print(f"  Every 1 turn of P/E:                  ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (Analog cycle / Data center AI / Margin recovery / FCF framework)")
+print("  ① SIGNAL DASHBOARD  (revenue growth / industrial / data-center / margin / capex / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<38}  {'BEAR':>7}  {'BASE':>9}  {'BULL':>10}  {'XBULL':>10}  {'NOW':>13}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<38}  {ths[0]:>7}  {ths[1]:>9}  {ths[2]:>10}  {ths[3]:>10}  {s['now']:>13}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<30}  {'Current':>10}  {'Bear val':>10}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("Analog/Embedded cycle recovery YoY",  "+8%",   "<0%",   "−8pp",   "Industrial + auto orders roll over; recovery stalls/double-dips"),
-    ("Data center/AI revenue growth YoY",   "+90%",  "<20%",  "−70pp",  "Hyperscaler capex pause; AI data center revenue growth decelerates sharply"),
-    ("Gross margin",                        "58.5%", "<55%",  "−3.5pp", "300mm Sherman SM1 ramp lags guidance; utilization stays depressed"),
-    ("FCF margin / capex decline",          "~10%",  "<5%",   "−5pp",   "Capex cycle extends beyond 83% complete; FCF inflection delayed"),
-    ("China/auto competitive pricing",      "-6%",   "<-10%", "−4pp",   "Chinese domestic analog suppliers erode industrial/auto pricing further"),
-    ("Inventory destocking",                "Mostly done", "Ongoing", "reversal", "New channel inventory build-up reignites destocking cycle"),
+    ("Total revenue YoY",          "+23%",    "<8%",     "-15pp",  "Industrial/auto customers over-ordered into the recovery, then correct again"),
+    ("Industrial revenue YoY",     "+30%",    "<10%",    "-20pp",  "Global manufacturing PMI rolls over; the 2023-24 inventory cycle repeats"),
+    ("Data-center revenue growth", "~2x YoY", "flat",    "stalls", "Hyperscaler capex pauses; analog power content per rack doesn't scale as modeled"),
+    ("Gross margin",               "61%",     "<52%",    "-9pp",   "Utilization collapses as revenue reverses; largely fixed cost base bites hard"),
+    ("Capex discipline",           "$2-3B",   ">$5B",    "+$2-3B", "A renewed capacity build-out ahead of demand repeats the 2022-24 FCF squeeze"),
+    ("Forward P/E",                "31.5x",   "≤20x",    "-11.5x", "Multiple resets to the historical average as growth decelerates"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<30}  {curr:>10}  {bear_v:>10}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: the analog/embedded cycle recovery (industrial + auto) stalls or double-dips")
-print(f"  just as Sherman SM1 300mm capacity continues ramping, leaving margins depressed under")
-print(f"  higher fixed depreciation. Simultaneously, data center/AI revenue growth decelerates")
-print(f"  sharply from +90% YoY toward the 20% range, removing the primary re-rating narrative.")
-print(f"  Chinese domestic analog suppliers (SG Micro, Will Semi, etc.) continue taking share in")
-print(f"  industrial and automotive, pressuring pricing. EPS falls to ~$5.50 → 22× floor = ${bear_price}.")
-print(f"  Note: ${bear_price} is not a permanent impairment — TXN's scale, 300mm cost advantage,")
-print(f"  and broad catalog provide a durable earnings floor through any one cyclical downturn.")
+print(f"  KEY TRIGGER: TI just delivered a rare cyclical-and-secular combination — a genuine")
+print(f"  industrial recovery from a real trough, arriving at the same time as a nascent AI/")
+print(f"  data-center revenue stream. The market has rewarded that combination with a one-day")
+print(f"  +18% move and a multiple well above TI's own history. The bear case doesn't require")
+print(f"  either story to be false — it only requires the market's TIMING assumption (uninterrupted")
+print(f"  acceleration from here) to be wrong, which analog's own cyclical history says happens regularly.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (BASE case; depressed-trough EPS)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (cyclical analog floor multiple)")
+print(f"  FY2026E EPS estimate:       ${EPS_FY2026E:.2f}  (Q1 $1.68 + Q2 $2.14 + Q3E ~$2.40 + Q4E ~$2.55)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (TI traded 20-24× forward through the 2023-24 industrial down-cycle)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP means the market is pricing a multi-year recovery story")
-print(f"  ABOVE the trough-floor multiple. At ${CURRENT_PRICE:.2f} and FY2026E EPS ${EPS_FY2026E:.2f}, the")
-print(f"  P/E is ~40× on a depressed-trough EPS base. The bull case is that the 2028-2030 capex")
-print(f"  payoff (300mm cost advantage, AI data center scale) justifies this multiple TODAY.")
-print(f"  The bear case is that the AI/data-center halo has pulled forward years of re-rating")
-print(f"  before the fundamental recovery (margin expansion, FCF inflection) has materialized.")
-print(f"  Avg analyst target ~$284 sits BELOW the current price ${CURRENT_PRICE:.2f} — a notable signal")
-print(f"  that sell-side fundamentals have not caught up to the recent +58% YTD re-rating.")
-print(f"  At 28× mid-cycle P/E: ${EPS_FY2026E:.2f} × 28 = ${EPS_FY2026E*28:.0f}  — below current price.")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E EPS, against a 10-year average")
+print(f"  closer to 24×. A +{epp_gap_pct:.0f}% premium to the EPP floor is a wide gap for a cyclical name —")
+print(f"  it says the market is not just pricing today's recovery, but extrapolating its pace")
+print(f"  forward for several years. That extrapolation has been wrong before in this stock.")
+print(f"  At a 26× reversion (still above the 10-yr average): ${EPS_FY2026E:.2f} × 26 = ${EPS_FY2026E*26:.0f}  ({(EPS_FY2026E*26/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: gradual cycle recovery + partial multiple normalization)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: growth decelerates toward trend, multiple compresses)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (gradual industrial/auto recovery + margin gains from 300mm ramp)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from ~40× toward growth-justified 24×; still above historical norm)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr)")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~6.9% EPS CAGR — well below the current cyclical growth rate)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (31.5× → 25×; still above the 10-yr average, not a full de-rate)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE PROBLEM: even the conservative case requires P/E compression from ~40× toward {CONS_PE_2YR}×.")
-print(f"  That multiple contraction offsets EPS growth from the cycle recovery — a negative total return")
-print(f"  unless the recovery + AI data center growth substantially exceeds the conservative path.")
-print(f"  For conservative 2yr to break even at {CONS_PE_2YR}× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~${((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2026E - 1)*100:.1f}% EPS growth by FY2028E — possible at BULL, not BASE.")
-print(f"  Breakeven at 30× P/E (no multiple compression): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 30:.2f}")
-print(f"  ADD trigger: $200–220 pullback (cycle recovery intact, multiple resets toward 28×)")
-print(f"  BUY below: $155 (back near EPP floor; ratio_b <0.75×)")
+print(f"  THE HONEST READ: a growth deceleration toward trend, paired with only a modest multiple")
+print(f"  compression (31.5× → 25×, still above TI's own 10-yr average), produces a SLIGHTLY")
+print(f"  NEGATIVE conservative return. That is the model's clearest signal on this name — you are")
+print(f"  paying a price today that requires the current growth pace, not merely a good business,")
+print(f"  to continue. This is a WATCHLIST, not an AVOID, because the bear case isn't catastrophic")
+print(f"  and the dividend is real — but it is a TIMING call, not a valuation gift.")
+print(f"  Breakeven at 25× requires FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f} — above this conservative estimate.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.30
+annual_vol  = 0.34
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: stock up 58% YTD on AI/data-center re-rating; 52W high near current price")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (cyclical semis; analog historically lower-beta but capex cycle elevates risk)")
-print(f"  Beta vs S&P 500:      1.10  (cyclical semiconductor exposure)")
+print(f"  Q1 print reaction:     +18% in one session — the largest one-day move since 2000")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; long growth streak)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (elevated for TI's history; cycle-inflection repricing)")
+print(f"  Beta vs S&P 500:      1.10  (analog semis carry real cyclicality even with the dividend anchor)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown")
-print(f"  52W low ${VOL_52W_LOW:.2f} reflects pre-AI-re-rating valuation; current price near 52W high.")
-print(f"  → AI/data-center revenue trajectory is THE KEY swing factor for sustaining the multiple.")
-print(f"  → 300mm Sherman SM1 utilization ramp and resulting gross margin trajectory is KEY bull catalyst.")
-print(f"  → AVOID at current price  |  WATCHLIST $260–290  |  ACCUMULATE $200–220  |  BUY below $155")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (a real move, but well within analog's historical range)")
+print(f"  → Q3 print is the next test of whether above-guidance beats continue or the pace normalizes.")
+print(f"  → Watch industrial PMI data and hyperscaler capex commentary as leading indicators between prints.")
+print(f"  → WATCHLIST at current price  |  ACCUMULATE $220–250  |  BUY below $195")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -392,25 +408,24 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) compares to the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The gap ({ADJ_GAP:.2f}) indicates the stock is")
-print(f"  {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: TXN is up 58% YTD on the AI/data-center halo, trading at ~40× FY2026E")
-print(f"  trough EPS — a multiple that already prices in the 2028-2030 capex-payoff recovery.")
-print(f"  Avg analyst target (~$284) sits BELOW current price, suggesting the re-rating narrative")
-print(f"  may be running ahead of the fundamental cycle recovery.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  TI's operating momentum is genuinely strong across every signal the model tracks. The")
+print(f"  valuation signal is the one exception, and it carries real weight: 31.5× forward is not")
+print(f"  a multiple TI has historically sustained through a full cycle. WATCHLIST reflects a")
+print(f"  good business at a price with limited room for anything less than continued acceleration.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) Quarterly data center/AI revenue updates — sustaining +90% YoY growth is the re-rating linchpin")
-print(f"  (2) Analog/embedded cycle recovery — industrial order trends, book-to-bill ratio")
-print(f"  (3) Gross margin trajectory as Sherman SM1 (300mm) ramps utilization toward target")
-print(f"  (4) FCF inflection as capex declines (cycle ~83% done) — confirms capital return acceleration")
-print(f"  (5) China auto/industrial competitive dynamics — domestic analog suppliers' share/pricing impact")
-print(f"  AVOID at ${CURRENT_PRICE:.2f}  |  WATCHLIST $260–290  |  ACCUMULATE $200–220  |  BUY below $155")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) Q3 2026 print — a third straight above-guidance beat would justify more of the premium")
+print(f"  (2) Industrial PMI / global manufacturing data — the leading indicator for the core cyclical business")
+print(f"  (3) Data-center revenue disclosure — needs to keep scaling in dollar terms, not just percentage terms")
+print(f"  (4) Gross margin trajectory — the cleanest read on capacity utilization and the cycle's maturity")
+print(f"  (5) Any capex guidance change — a return to $4-5B/yr would signal management sees more room to run")
+print(f"  WATCHLIST at ${CURRENT_PRICE:.2f}  |  ACCUMULATE $220–250  |  BUY below $195")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  Data-center: ~{DC_REVENUE_2025_B:.0f}%+ of rev, growing")
 print("═" * (W + 4))
 print()
 

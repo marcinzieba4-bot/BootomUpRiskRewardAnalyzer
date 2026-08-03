@@ -1,7 +1,7 @@
 """
 PANW  ·  Palo Alto Networks, Inc.  ·  NASDAQ: PANW
-Bottom-up signal model  ·  Cybersecurity Platform / NGS / Cortex AI-SOC
-Date: 2026-06-10
+Bottom-up signal model  ·  Cybersecurity Platform / NGS / Cortex AI-SOC / CyberArk Identity
+Date: 2026-08-02
 """
 
 import math
@@ -9,45 +9,55 @@ import math
 # ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
 TICKER        = "PANW"
 COMPANY       = "Palo Alto Networks, Inc."
-SECTOR        = "Cybersecurity Platform · Network Security · Cloud Security · AI-SOC · NASDAQ: PANW"
-CURRENT_PRICE = 260.00      # USD; as of 2026-06-10, near all-time high $261.41
-VOL_52W_LOW   = 145.00
-VOL_52W_HIGH  = 262.00      # all-time-high territory ahead of Q3 FY2026 earnings (June 2)
-SHARES_OUT_M  = 615.0       # millions
+SECTOR        = "Cybersecurity Platform · Network Security · Cloud Security · AI-SOC · Identity (CyberArk) · NASDAQ: PANW"
+CURRENT_PRICE = 331.83       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 139.57       # 2025 trough
+VOL_52W_HIGH  = 368.80       # 2026 platformization/CyberArk-deal re-rating peak
+SHARES_OUT_M  = 815.0        # millions; $270.4B mkt cap / $331.83
+ANNUAL_DIV    = 0.0          # $/share — no dividend; all capital to M&A, buyback, and platform R&D
 
-# Dividend: none
-ANNUAL_DIV    = 0.0
-
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B; fiscal year ends July 31) ───────────
+# Q3 FY2026 actual: revenue $3.0B (+31% YoY, incl. $388M from CyberArk+Chronosphere = organic ~+14%)
+# FY2026 guide: revenue $11.415-11.425B (+24%), NGS ARR $8.90-8.95B (+59-60%, CyberArk-inflated), RPO ~$21B (+32-33%)
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Network Security (FW/SASE)",    5.10, 4.40, 5.70, "Hardware/software firewalls + SASE; mature core, steady renewal base"),
-    ("Cloud Security (Prisma Cloud)", 1.55, 1.20, 2.05, "CNAPP consolidation share gains; cloud workload growth tailwind"),
-    ("Security Ops (Cortex XSIAM)",   1.35, 0.95, 1.95, "AI-SOC replacing legacy SIEM; fastest-growing NGS pillar"),
-    ("NGS Platformization (other)",   0.65, 0.45, 1.05, "Bundled platformization ARR conversions across product lines"),
+    ("Network Security (FW/SASE)",         4.60, 4.00, 5.30, "Mature core, steady renewal base; the segment least exposed to platformization upside or AI risk"),
+    ("Cloud Security (Prisma Cloud)",      2.20, 1.90, 2.70, "Cloud-native security growth; competes with CNAPP specialists and hyperscaler-native tools"),
+    ("Security Operations (Cortex/XSIAM)", 1.90, 1.60, 2.60, "The AI-SOC bet; XSIAM is management's proof point that AI displaces, not just assists, the SOC"),
+    ("Identity Security (CyberArk) + Other", 2.72, 2.30, 3.60, "Newly consolidated; integration execution and cross-sell into the base are unproven at this scale"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.760   # blended gross margin FY2026E (~76%)
-GROSS_MARGIN_BULL = 0.785   # BULL: NGS/software mix shift lifts blend further
-OPEX_FIXED_B      = 4.55    # R&D + SG&A ($B); platformization sales investment
-TAX_RATE          = 0.220   # effective non-GAAP tax rate
+# Margin assumptions (non-GAAP; PANW's non-GAAP EPS also nets in interest income, modeled as a blended pre-tax margin)
+OP_MARGIN_CURR   = 0.322    # FY2026E blended non-GAAP pre-tax margin proxy (op margin guide 28.9-29.2% + net interest income)
+OP_MARGIN_BULL   = 0.380    # BULL: platformization drives real operating leverage as CyberArk integration completes
+OP_MARGIN_BEAR   = 0.267    # BEAR: integration costs and discounting to defend renewals compress the blend
+TAX_RATE         = 0.160    # non-GAAP effective tax rate
+
+# ── PLATFORMIZATION / M&A CALCULATOR (the PANW-specific angle) ───────────────
+PLATFORM_CUSTOMERS       = 2280   # organizations consolidating multiple PANW products, +110 net new in Q3
+PLATFORM_TARGET_FY2030   = 4000   # management's stated platformization target
+PLATFORM_NRR_PCT         = 120    # % net retention rate among platformized customers
+CYBERARK_Q3_CONTRIB_M    = 388    # $M CyberArk + Chronosphere contribution to Q3 revenue
+GAAP_Q3_NET_LOSS_M       = 177    # $M GAAP net loss in Q3 (vs GAAP net income $262M a year ago)
+GAAP_Q3_SBC_M            = 517    # $M share-based compensation in Q3
+GAAP_Q3_ACQ_COSTS_M      = 198    # $M acquisition-related costs in Q3
+NEXT_REPORT_DATE         = "2026-08-17"  # Q4/FY2026 results — about two weeks after this refresh
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 3.75        # FY2026E adj EPS (consensus ~$3.75; non-GAAP)
-PE_PESSIMISTIC = 28.0        # trough P/E: even bear case keeps premium for #1 platform position
-EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)   # $105
+EPS_FY2026E    = 3.78         # $/share non-GAAP FY2026E; company guidance $3.77-$3.79
+PE_PESSIMISTIC = 40.0         # trough P/E: even PANW's worst multiple compressions in recent years
+                              # have stopped in the high-30s/low-40s on non-GAAP EPS; this is not a value stock
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 4.50, 28,  126, "NGS ARR growth decelerates <45%; platformization stalls; multiple compresses to 28×"),
-    "BASE":  ( 7.00, 38,  266, "FY2028 Rule of 60 trajectory intact; NGS ARR ~$15B; 38× on $7.00 EPS"),
-    "BULL":  ( 9.50, 45,  428, "AI-SOC (Cortex XSIAM) ARR scales sharply; >40% FCF margin achieved early; 45×"),
-    "XBULL": (13.00, 52,  676, "PANW becomes default cybersecurity OS; NGS ARR >$20B; 52× re-rating"),
+    "BEAR":  ( 2.70, 40,  108, "Platformization stalls; CyberArk integration costs bite margin; NGS ARR growth normalizes hard"),
+    "BASE":  ( 5.20, 70,  364, "NGS ARR keeps compounding as CyberArk integrates cleanly; multiple compresses only modestly"),
+    "BULL":  ( 5.79, 78,  452, "Platformization scales past 3,000 customers; Cortex XSIAM becomes the enterprise AI-SOC standard"),
+    "XBULL": ( 7.20, 88,  634, "PANW re-rates as the AI-native security platform of record; identity + SecOps + network fully cross-sell"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -78,52 +88,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "Next-Gen Security (NGS) ARR YoY growth",
-        "weight":     0.25,
-        "thresholds": ("<40%",   "≥48%",  "≥55%",   "≥65%"),
-        "now":        "53-54%",
-        "score":      3,
-        "comment":    "NGS ARR $8.5B+, growing 53-54% YoY; on Rule-of-60 trajectory toward FY2028 target",
-    },
-    {
-        "name":       "Platformization deal momentum (consolidation)",
-        "weight":     0.20,
-        "thresholds": ("Slowing", "Steady", "Accelerating", "Land-grab"),
-        "now":        "Accelerating",
-        "score":      3,
-        "comment":    "1,550 platform customers; large enterprises consolidating point products to single vendor",
-    },
-    {
-        "name":       "Cortex XSIAM (AI-SOC) ARR contribution",
-        "weight":     0.20,
-        "thresholds": ("<$0.8B", "≥$1.0B","≥$1.4B", "≥$2.0B"),
-        "now":        "~$1.2B",
-        "score":      3,
-        "comment":    "AI-SOC bookings outpacing legacy SIEM displacement; fastest-growing NGS pillar but early innings",
-    },
-    {
-        "name":       "Prisma Cloud / cloud security growth",
+        "name":       "Total revenue YoY growth (reported)",
         "weight":     0.15,
-        "thresholds": ("<15%",   "≥20%",  "≥28%",   "≥38%"),
-        "now":        "~25%",
-        "score":      2,
-        "comment":    "CNAPP consolidation share gains continue but competitive intensity from Wiz/CrowdStrike rising",
+        "thresholds": ("<15%",   "≥20%",   "≥27%",   "≥35%"),
+        "now":        "+31%",
+        "score":      3,
+        "comment":    "Q3 $3.0B (+31%), but $388M (~13pp) came from CyberArk/Chronosphere — headline growth is M&A-flattered",
     },
     {
-        "name":       "FCF margin trajectory (toward FY2028 40% target)",
-        "weight":     0.10,
-        "thresholds": ("<32%",   "≥35%",  "≥38%",   "≥41%"),
-        "now":        "~36%",
+        "name":       "Organic revenue growth (ex-M&A)",
+        "weight":     0.20,
+        "thresholds": ("<8%",    "≥12%",   "≥16%",   "≥20%"),
+        "now":        "~14%",
         "score":      2,
-        "comment":    "On track toward 40% FY2028 target but expansion pace needs to hold through platformization spend",
+        "comment":    "Backing out the $388M acquired contribution implies core-business growth in the mid-teens — solid, not spectacular",
     },
     {
-        "name":       "Net retention rate (NRR) & large deal (>$5M/$10M ACV) momentum",
-        "weight":     0.10,
-        "thresholds": ("<110%",  "≥115%", "≥120%",  "≥125%"),
-        "now":        "119% NRR",
+        "name":       "NGS ARR growth (reported)",
+        "weight":     0.15,
+        "thresholds": ("<30%",   "≥40%",   "≥55%",   "≥70%"),
+        "now":        "+59-60%",
+        "score":      3,
+        "comment":    "Guided $8.90-8.95B; again substantially inflated by consolidating CyberArk's existing ARR base, not pure new bookings",
+    },
+    {
+        "name":       "Platformization momentum",
+        "weight":     0.20,
+        "thresholds": ("<50/qtr","≥80/qtr","≥110/qtr","≥150/qtr"),
+        "now":        "110/qtr",
+        "score":      3,
+        "comment":    "2,280 platformized customers, 120% NRR, single-digit churn — the best evidence the strategy is working, not just a slogan",
+    },
+    {
+        "name":       "GAAP profitability (post-M&A)",
+        "weight":     0.15,
+        "thresholds": ("deep loss","narrow loss","breakeven","GAAP profitable"),
+        "now":        "narrow loss",
         "score":      2,
-        "comment":    "119% NRR steady; >$5M and >$10M ACV deal counts growing but not yet accelerating sharply",
+        "comment":    "Q3 GAAP net loss $177M on $517M SBC + $198M acquisition costs; non-GAAP EPS still grew — a real but bounded distortion",
+    },
+    {
+        "name":       "Forward P/E (non-GAAP)",
+        "weight":     0.15,
+        "thresholds": (">100x",  "≤85x",   "≤70x",   "≤55x"),
+        "now":        "87.8x",
+        "score":      1,
+        "comment":    "87.8× FY2026E non-GAAP EPS — one of the richest multiples in large-cap software, leaving very little room for error",
     },
 ]
 
@@ -133,12 +143,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "#1 cybersecurity platform position — broadest portfolio; structural consolidation tailwind",     +0.6, 0.20),
-    ("+", "NGS ARR growth (53-54% YoY) industry-leading; platformization strategy de-risks revenue mix",     +0.5, 0.20),
-    ("-", "All-time-high valuation — $260 vs ATH $261.41, leaves zero cushion into Q3 FY2026 earnings",      -0.6, 0.20),
-    ("-", "71x FY2026E EPS prices in years of flawless execution; PEG stretched vs decelerating hardware",   -0.7, 0.20),
-    ("+", "Cortex XSIAM (AI-SOC) optionality — credible attacker on legacy SIEM incumbents (Splunk/IBM)",    +0.3, 0.10),
-    ("-", "Competitive intensity — CrowdStrike (XDR/identity) and Microsoft (bundled E5) pressuring share",  -0.4, 0.10),
+    ("+", "Platformization is real and measurable — 2,280 customers, 120% NRR, single-digit churn, not a narrative", +0.7, 0.20),
+    ("-", "Valuation — 87.8× forward non-GAAP EPS prices flawless multi-year execution across three integrations at once", -1.0, 0.25),
+    ("-", "M&A-flattered growth — organic revenue growth (~14%) is roughly half the ~31% headline; the gap is a real quality discount", -0.6, 0.20),
+    ("+", "Cortex XSIAM traction — the clearest evidence yet that PANW can sell AI-native security, not just legacy platform bundling", +0.5, 0.15),
+    ("-", "Integration risk — CyberArk and Chronosphere both landed within the same fiscal year; execution risk is stacked, not staggered", -0.5, 0.15),
+    ("+", "No debt overhang from a cash-funded core business — the GAAP loss is an accounting artifact of the deals, not a cash problem", +0.3, 0.05),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -172,8 +182,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 6.00    # conservative FY2028E EPS: NGS growth decelerates somewhat from current pace
-CONS_PE_2YR   = 32      # rerating from 71× toward growth-justified 32×
+CONS_EPS_2YR  = 4.90    # conservative FY2028E: ~13.9% EPS CAGR — well below the BASE/BULL cases
+CONS_PE_2YR   = 55      # multiple compresses hard from 87.8× toward a still-generous large-cap-software level
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -191,175 +201,190 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Cybersecurity Platform / NGS / AI-SOC")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Cybersecurity Platform / AI-SOC / Identity")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
+print(f"  ⚠ Q4/FY2026 results due {NEXT_REPORT_DATE} — about two weeks after this refresh. Figures below")
+print(f"  use Q3 FY2026 actuals and the company's raised full-year guidance.")
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<26}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<38}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<26}  ${curr:>11.2f}  ${bear:>8.2f}  ${bull:>8.2f}  {bear-curr:>+7.2f}  {bull-curr:>+7.2f}")
+    print(f"  {seg:<38}  ${curr:>11.2f}  ${bear:>8.2f}  ${bull:>8.2f}  {bear-curr:>+7.2f}  {bull-curr:>+7.2f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<26}  ${curr_total:>11.2f}  ${bear_total:>8.2f}  ${bull_total:>8.2f}  {bear_total-curr_total:>+7.2f}  {bull_total-curr_total:>+7.2f}")
+print(f"  {'TOTAL':<38}  ${curr_total:>11.2f}  ${bear_total:>8.2f}  ${bull_total:>8.2f}  {bear_total-curr_total:>+7.2f}  {bull_total-curr_total:>+7.2f}")
+print(f"  FY2026 guidance: revenue $11.415-11.425B (+24%), non-GAAP EPS $3.77-$3.79, NGS ARR $8.90-8.95B")
 print()
 
 # EPS bridge
-curr_gp   = curr_total * GROSS_MARGIN_CURR
-curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
 shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps  = round(curr_op * (1 - TAX_RATE) / shares, 2)
 
-bull_gp   = bull_total * GROSS_MARGIN_BULL
-bull_oi   = bull_gp - OPEX_FIXED_B
-bull_ni   = bull_oi * (1 - TAX_RATE)
-shares_b  = shares * 0.97   # modest buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.98
+bull_eps_imp = round(bull_op * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.97   # margin pressure from competitive discounting
-bear_oi   = bear_gp - OPEX_FIXED_B * 0.97
-bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round(bear_op * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.2f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.2f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ~${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.2f}B rev × {OP_MARGIN_CURR*100:.1f}% pre-tax margin proxy − {TAX_RATE*100:.1f}% tax")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (company guidance ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.2f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.2f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 45× = ~${bull_eps_imp*45:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.2f}B rev × {OP_MARGIN_BULL*100:.1f}% margin, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 78× = ~${bull_eps_imp*78:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.2f}B rev × {GROSS_MARGIN_CURR*100*0.97:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 28× compressed P/E = ~${bear_eps_imp*28:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.2f}B rev × {OP_MARGIN_BEAR*100:.1f}% margin (integration costs, renewal discounting)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 40× trough = ~${bear_eps_imp*40:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print()
+print(f"  ⚠ NOTE: even the BEAR trough multiple (40×) is richer than the CURRENT multiple most")
+print(f"  software names in this coverage trade at. PANW does not have a cheap floor — the entire")
+print(f"  risk/reward here is about whether a persistently expensive multiple holds, compresses")
+print(f"  modestly, or compresses a lot. There is no scenario in this model where it goes to a")
+print(f"  conventional value multiple; the platform economics don't support that kind of re-rating.")
+
+# PLATFORMIZATION / M&A CHECK
+print()
+print(f"  PLATFORMIZATION & M&A CHECK  (the PANW-specific angle):")
+print(f"  Platformized customers:        {PLATFORM_CUSTOMERS:,}  (+110 net new in Q3; target {PLATFORM_TARGET_FY2030:,} by FY2030)")
+print(f"  Net retention (platform cust.): {PLATFORM_NRR_PCT}%  with single-digit churn")
+print(f"  CyberArk + Chronosphere Q3 contribution: ${CYBERARK_Q3_CONTRIB_M}M  (~13pp of the 31% reported growth)")
+print(f"  Q3 GAAP net loss:               (${GAAP_Q3_NET_LOSS_M}M)  — driven by ${GAAP_Q3_SBC_M}M SBC + ${GAAP_Q3_ACQ_COSTS_M}M acquisition costs")
+print()
+print(f"  Two things are true at once, and the model tries to hold both. Platformization is the")
+print(f"  best-evidenced strategy in the cybersecurity sector right now — 120% net retention among")
+print(f"  platform customers is a genuinely strong number. But roughly 13 points of the quarter's")
+print(f"  31% headline growth came from acquired revenue, not organic execution, and the GAAP loss")
+print(f"  — while mostly non-cash — shows the real cost of running three integrations at once.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev  = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-
+eps_per_1B_rev  = 1.0 * OP_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_marg = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B NGS ARR converted to revenue: +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*38:.1f}/share at 38× P/E")
-print(f"  1pp gross margin expansion:             +${curr_total*0.01*(1-TAX_RATE)/shares:.3f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*38:.1f}/share at 38× P/E")
-print(f"  Cortex XSIAM ARR +$0.5B (high margin):  +${0.5*0.80*(1-TAX_RATE)/shares:.3f}/EPS  = +${0.5*0.80*(1-TAX_RATE)/shares*38:.1f}/share at 38× P/E")
-print(f"  P/E compression 71× → 50× (no EPS chg): ${EPS_FY2026E*50:.0f}  vs current ${CURRENT_PRICE:.0f}  ({(EPS_FY2026E*50-CURRENT_PRICE)/CURRENT_PRICE*100:.0f}%)")
+print(f"  Every $1B revenue (at 32.2% margin proxy):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*70:.2f}/share at 70× P/E")
+print(f"  Every 1pp of margin:                        +${eps_per_1pp_marg:.3f}/EPS  = +${eps_per_1pp_marg*70:.2f}/share at 70× P/E")
+print(f"  Every 1 turn of P/E:                        ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
+print(f"  ↑ at 87.8× forward, the multiple dwarfs everything else in this table")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (NGS ARR / Platformization / Cortex XSIAM / Cloud Security / FCF / NRR)")
+print("  ① SIGNAL DASHBOARD  (reported vs organic growth / NGS ARR / platformization / GAAP profit / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<40}  {'BEAR':>10}  {'BASE':>9}  {'BULL':>10}  {'XBULL':>10}  {'NOW':>12}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<40}  {ths[0]:>10}  {ths[1]:>9}  {ths[2]:>10}  {ths[3]:>10}  {s['now']:>12}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<34}  {'Current':>10}  {'Bear val':>10}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("NGS ARR growth YoY",                "53-54%", "<45%",   "−9pp",   "Macro spending pause; mega-deal slippage to next quarter"),
-    ("Platformization deal cadence",      "Accel.", "Slowing","Decel.", "Enterprises pause consolidation amid budget scrutiny"),
-    ("Cortex XSIAM ARR growth",           "~$1.2B", "<$0.9B", "Slower", "CrowdStrike Falcon Next-Gen SIEM / Microsoft Sentinel share gains"),
-    ("Prisma Cloud growth",               "~25%",   "<15%",   "−10pp",  "Wiz (post-Google) and CrowdStrike CNAPP undercut on price"),
-    ("FCF margin trajectory",             "~36%",   "<32%",   "−4pp",   "Platformization sales investment outpaces opex leverage"),
-    ("Net retention rate (NRR)",          "119%",   "<112%",  "−7pp",   "Cross-sell saturation; customers right-size after consolidation"),
+    ("Organic revenue growth",      "~14%",   "<8%",     "-6pp",   "Core network/cloud security decelerates as the market matures"),
+    ("Platformization momentum",    "110/qtr","<50/qtr", "-60/qtr","Customers resist further consolidation after the CyberArk price tag"),
+    ("NGS ARR growth (reported)",   "+59-60%","<30%",    "-30pp",  "Acquired ARR anniversaries and organic bookings don't backfill the comp"),
+    ("GAAP profitability",          "narrow loss","widens","worse","Integration costs run longer or deeper than guided"),
+    ("Forward P/E",                 "87.8x",  "≤55x",    "-33x",   "Market re-prices platformization risk as software multiples broadly compress"),
+    ("Cortex XSIAM traction",       "scaling","stalls",  "reverse","AI-SOC bookings plateau; legacy SIEM vendors or hyperscalers win the category"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<34}  {curr:>10}  {bear_v:>10}  {move:>8}  {trigger[:42]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: Q3 FY2026 earnings (June 2) shows NGS ARR growth decelerating below 45%")
-print(f"  alongside a softer platformization large-deal cadence (>$5M/>$10M ACV deal counts flat")
-print(f"  to down QoQ). Combined with Cortex XSIAM ARR disclosure missing the implied pace needed")
-print(f"  for the FY2028 Rule-of-60 + 40% FCF margin target, the market re-rates from 71× toward")
-print(f"  ~28× on $4.50 EPS = ${bear_price}. At an all-time high with zero cushion, even an")
-print(f"  in-line-but-not-beat quarter could trigger meaningful multiple compression.")
+print(f"  KEY TRIGGER: at 87.8× forward earnings, PANW doesn't need anything to go WRONG for the")
+print(f"  stock to underperform — it only needs growth to merely NORMALIZE from an M&A-inflated")
+print(f"  pace to a purely organic one, while the market simultaneously decides that multiple no")
+print(f"  longer deserves the platformization premium. Both of those are plausible without either")
+print(f"  qualifying as a company-specific disaster, which is what makes the valuation risk here")
+print(f"  structurally different from a name with a cheap floor to catch it.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (consensus ~${EPS_FY2026E:.2f}; non-GAAP)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (#1 platform position retains premium even in a derate)")
+print(f"  FY2026E non-GAAP EPS (company guide):  ${EPS_FY2026E:.2f}  ($3.77-$3.79)")
+print(f"  Pessimistic P/E at trough:               {PE_PESSIMISTIC:.0f}×  (PANW has rarely compressed below the high-30s/low-40s on non-GAAP EPS)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP means the market is pricing in many years of")
-print(f"  uninterrupted NGS ARR growth, platformization deal momentum, and FCF margin expansion")
-print(f"  ABOVE the trough-floor multiple. At ${CURRENT_PRICE:.2f} and FY2026E EPS ${EPS_FY2026E:.2f}, the")
-print(f"  P/E is {CURRENT_PRICE/EPS_FY2026E:.0f}× — extraordinarily rich even for a best-in-class compounder.")
-print(f"  EPP path: FY2028E EPS ~$6.00 × {PE_PESSIMISTIC:.0f}× = ${6.00*PE_PESSIMISTIC:.0f} floor by FY2028 (EPP growing as EPS scales).")
-print(f"  At 38× mid-cycle P/E: ${EPS_FY2026E:.2f} × 38 = ${EPS_FY2026E*38:.0f}  — still well below current price.")
+print(f"  A +{epp_gap_pct:.0f}% premium to EPP is the widest gap in the software coverage. The EPP floor")
+print(f"  itself, at 40× non-GAAP earnings, is not a distress multiple by any normal standard — it")
+print(f"  is simply PANW's own historical floor. That tells you the whole story: there is no cheap")
+print(f"  scenario for this stock short of a genuine platform-thesis failure. You are either paying")
+print(f"  up for quality and execution, or you are waiting for a re-rating that may not come.")
+print(f"  At a 60× reversion (still a rich multiple by any peer comparison): ${EPS_FY2026E:.2f} × 60 = ${EPS_FY2026E*60:.0f}")
+print(f"  ({(EPS_FY2026E*60/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: P/E rerates toward growth-justified multiple)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: growth normalizes toward organic pace, real multiple compression)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (NGS ARR growth moderates from 53-54% but remains strong)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from {CURRENT_PRICE/EPS_FY2026E:.0f}× toward growth-justified {CONS_PE_2YR}×)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (no dividend)")
+print(f"  Conservative FY2028E non-GAAP EPS:  ${CONS_EPS_2YR:.2f}  (~13.9% EPS CAGR — close to the current organic growth rate)")
+print(f"  Conservative exit P/E:               {CONS_PE_2YR}×  (87.8× → 55×; a real de-rating, still rich by absolute standards)")
+print(f"  Conservative equity value:            ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr):        +${cons_divs:.2f}/share  (no dividend)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:               ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:            {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE PROBLEM: even the conservative case requires P/E compression from {CURRENT_PRICE/EPS_FY2026E:.0f}× to {CONS_PE_2YR}×.")
-print(f"  That multiple contraction can offset most/all of EPS growth over 2 years — flat to")
-print(f"  negative total return even if NGS ARR keeps growing in the 40-50% range.")
-print(f"  For conservative 2yr to break even at {CONS_PE_2YR}× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~${((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2026E - 1)*100:.1f}% EPS growth by FY2028E — possible at BULL, not BASE.")
-print(f"  Breakeven at 45× P/E (limited multiple compression): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 45:.2f}")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at {CONS_PE_2YR}× P/E; ratio_b <1.0×)")
+print(f"  THE HONEST READ: even holding EPS growth near today's healthy organic pace, a multiple")
+print(f"  de-rating from 87.8× to a still-generous 55× produces a {'negative' if cons_return < 0 else 'modest positive'} conservative return.")
+print(f"  This is the clearest signal the model has on PANW: you are not being paid a margin of")
+print(f"  safety for the valuation risk. The bull case is genuinely available — platformization is")
+print(f"  real — but the conservative case is a warning, not a floor.")
+print(f"  Breakeven at 55× requires FY2028E EPS ≥ ${CURRENT_PRICE / CONS_PE_2YR:.2f} — above this conservative estimate.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.34
+annual_vol  = 0.38
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: ${CURRENT_PRICE:.2f} sits essentially at the all-time high (~$261.41), heading into")
-print(f"  Q3 FY2026 earnings (June 2, 2026) — minimal cushion for any guidance disappointment.")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (no dividend; full reinvestment in platform)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; high-multiple growth name; earnings-reaction prone)")
-print(f"  Beta vs S&P 500:      1.15  (premium; high-multiple software/security exposure)")
+print(f"  Move off the low:     +{(CURRENT_PRICE/VOL_52W_LOW-1)*100:.0f}%  in the past year — the platformization/M&A re-rating in one number")
+print(f"  Annual dividend:      none — all capital to M&A, buyback, and platform R&D")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (high-multiple software beta; earnings-day gaps of ±10% are routine)")
+print(f"  Beta vs S&P 500:      1.25  (elevated for a security name; now carries M&A-integration risk premium)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (a multiple derate on a soft quarter, not a fundamental collapse)")
-print(f"  52W low ${VOL_52W_LOW:.2f} already represents a peak-to-trough move of ~{(VOL_52W_HIGH-VOL_52W_LOW)/VOL_52W_HIGH*100:.0f}% from current highs.")
-print(f"  → Q3 FY2026 earnings (June 2) is THE near-term binary; any NGS ARR deceleration or")
-print(f"  platformization deal-cadence softness at 71× FY2026E EPS could trigger a sharp derate.")
-print(f"  → Cortex XSIAM ARR disclosure beating expectations is the KEY near-term bull catalyst.")
-print(f"  → Signal screens {signal_short} (Ratio B {ratio_b_str})  |  WATCHLIST $185–195  |  ACCUMULATE ~$165  |  BUY below $145")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (severe, but this stock has already moved similarly in the other direction)")
+print(f"  → {NEXT_REPORT_DATE} print: watch organic growth disclosure and GAAP-loss trajectory, not just the ARR headline.")
+print(f"  → Platformized-customer count is the single best quarterly proof point for the bull case.")
+print(f"  → AVOID at current price  |  WATCHLIST $230–270  |  ACCUMULATE $190–220  |  BUY below $180")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -387,26 +412,25 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) sits relative to the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 fundamentals,")
-print(f"  while the model scores current execution at ~{ADJ_COMPOSITE:.2f}/4.0 (between BASE and BULL).")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: at $260 and 71x FY2026E EPS, downside to BEAR ($126, -{downside_pct*100:.0f}%) is")
-print(f"  comparable to upside to BULL ($428, +{upside_pct*100:.0f}%) — Ratio B {ratio_b_str} is roughly")
-print(f"  symmetric, but the BEAR scenario itself is a deep multiple derate from an all-time high,")
-print(f"  meaning the 'cushion' is thin even though the raw ratio screens as {signal_short}.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  PANW is executing a genuinely ambitious platform strategy, and the platformization")
+print(f"  metrics back that up. But roughly 13 points of headline growth is acquired, not organic,")
+print(f"  and the multiple leaves no room for the market to notice that gap. AVOID reflects a real")
+print(f"  company at a price the model can't underwrite without more evidence of organic acceleration —")
+print(f"  ratio B ({ratio_b_str}) says the downside case outweighs the upside case by a wide margin from here.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) Q3 FY2026 earnings (June 2, 2026) — NGS ARR update vs 53-54% YoY pace")
-print(f"  (2) Cortex XSIAM (AI-SOC) ARR disclosure — pace toward FY2028 Rule-of-60 target")
-print(f"  (3) Platformization large-deal momentum — >$5M and >$10M ACV deal counts QoQ")
-print(f"  (4) FCF margin trajectory toward 40% FY2028 target — any stalling vs plan")
-print(f"  (5) Competitive dynamics vs CrowdStrike (XDR/Next-Gen SIEM), Microsoft (E5 bundling), Zscaler (SASE)")
-print(f"  Signal: {signal_full} at ${CURRENT_PRICE:.2f}  |  WATCHLIST $185–195  |  ACCUMULATE ~$165  |  BUY below $145")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) {NEXT_REPORT_DATE} Q4/FY2026 results — organic growth disclosure is the single most important number")
+print(f"  (2) Platformized-customer count trajectory toward the FY2030 target of {PLATFORM_TARGET_FY2030:,}")
+print(f"  (3) GAAP profitability path — does the loss narrow as integration costs roll off, or persist?")
+print(f"  (4) Cortex XSIAM booking metrics — the company's specific evidence for the AI-SOC thesis")
+print(f"  (5) Any further M&A — another large deal before CyberArk fully integrates would raise execution risk further")
+print(f"  AVOID at ${CURRENT_PRICE:.2f}  |  WATCHLIST $230–270  |  ACCUMULATE $190–220  |  BUY below $180")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  Platform customers: {PLATFORM_CUSTOMERS:,}")
 print("═" * (W + 4))
 print()
 
