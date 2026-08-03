@@ -1,237 +1,445 @@
 """
-Uber Technologies, Inc. (NYSE: UBER) — Bottom-Up Risk/Reward Signal Model
-SIGNAL: ◎ ACCUMULATE  |  Ratio B: 0.90×  |  EPP Gap: +171.6%
-=======================================================================
-THE DEMAND AGGREGATOR OF GLOBAL URBAN MOBILITY: Uber owns the demand side
-of ridesharing and food delivery in 70+ countries — 170M+ monthly active
-platform consumers, 7.6B+ annual trips, a two-sided marketplace flywheel
-with deepening network effects. The central question is NOT whether Uber
-grows; it is whether autonomous vehicles disrupt the supply side faster
-than Uber can become the distribution layer FOR them.
+UBER  ·  Uber Technologies, Inc.  ·  NYSE: UBER
+Bottom-up signal model  ·  Mobility / Delivery / Freight / Autonomous Vehicle Platform
+Date: 2026-08-03
 """
 
-# ── Model identity ───────────────────────────────────────────────────────────
-TICKER         = "UBER"
-COMPANY        = "Uber Technologies, Inc."
-ANALYSIS_DATE  = "2026-06-09"
-SECTOR         = "Technology · Ridesharing / Food Delivery / Freight · Two-Sided Marketplace Platform · NYSE: UBER"
-SECTOR_GROUP   = "Technology"
+import math
 
-# ── Price & share data ───────────────────────────────────────────────────────
-CURRENT_PRICE  = 88.00           # USD — mid-2026, ~40% up from 52-wk low, approaching ATH range
-ANNUAL_DIV     = 0.00            # no dividend; capital returned via buybacks ($7B authorization)
-SHARES_OUT_B   = 2.080           # billions (diluted, post-SBC)
+# ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
+TICKER        = "UBER"
+COMPANY       = "Uber Technologies, Inc."
+SECTOR        = "Ridesharing · Food Delivery · Freight · Autonomous Vehicle Platform · NYSE: UBER"
+CURRENT_PRICE = 70.36        # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 65.41        # 2026 trough — the stock is near this level right now
+VOL_52W_HIGH  = 101.99       # 2025/26 peak
+SHARES_OUT_M  = 2_035.0      # millions; $143.2B mkt cap / $70.36
+ANNUAL_DIV    = 0.0          # $/share; no dividend, capital returned via buyback ($7B authorization)
 
-FW52_HIGH      = 100.00
-FW52_LOW       = 62.00
-
-# ── Scenario prices ──────────────────────────────────────────────────────────
-# BEAR  — autonomous vehicle disruption accelerates: Waymo/Tesla capture 15-25%
-#         rideshare share in key US metros by 2028, take rates compress, driver
-#         supply-side advantage erodes, regulatory pressure on gig classification
-#         → multiple compression on slowing growth + margin deterioration
-# BASE  — steady-state platform compounding: AV threat real but slow, Uber
-#         becomes AV distribution partner (Waymo deal scales), ad revenue
-#         grows to $2B+, Delivery expands grocery/retail verticals, FCF
-#         accelerates; market prices 25× on $3.80 2026E EPS → $88 fair value
-# BULL  — AV fleet operator narrative takes hold: Uber as the OS for autonomous
-#         urban transport, ad business $3B+ at 70%+ margins, membership
-#         (Uber One) at 50M+ subscribers; market re-rates to 35× growing EPS
-# XBULL — global category dominance: AV economics halve supply costs (no driver
-#         share), gross margin expands 800bps, FCF doubles, FCF yield compresses
-BEAR           = 52.0
-BASE           = 88.0
-BULL           = 128.0
-XBULL          = 165.0
-
-# ── Earnings Power Price (EPP) floor ─────────────────────────────────────────
-# EPS_TROUGH: GAAP trough in adverse macro + moderate AV disruption scenario —
-# Uber still earns $1.80/sh as platform take rate compresses but volume holds
-# PE_TROUGH: 18× reflects platform resilience floor even in disruption scenario
-EPS_TROUGH     = 1.80
-PE_TROUGH      = 18.0
-EPP            = EPS_TROUGH * PE_TROUGH     # $32.40
-
-# ── Conservative 2-year price estimate ───────────────────────────────────────
-# 2026E GAAP EPS ~$3.80 × 24× conservative platform multiple + $0 div
-# Conservative case is roughly at current price — stock is fairly valued,
-# not deeply cheap; upside requires narrative expansion (AV, ads, Uber One)
-PE_CONSERVATIVE  = 24.0
-EPS_FY2026E      = 3.80
-CONSERVATIVE_PRICE = PE_CONSERVATIVE * EPS_FY2026E + ANNUAL_DIV   # $91.20
-
-# ── Signal computation ────────────────────────────────────────────────────────
-DOWNSIDE_PCT   = (CURRENT_PRICE - BEAR) / CURRENT_PRICE
-UPSIDE_PCT     = (BULL - CURRENT_PRICE) / CURRENT_PRICE
-RATIO_B        = DOWNSIDE_PCT / UPSIDE_PCT
-
-EPP_GAP_PCT    = (CURRENT_PRICE - EPP) / EPP * 100
-CONS_RETURN    = (CONSERVATIVE_PRICE - CURRENT_PRICE) / CURRENT_PRICE * 100
-
-if   RATIO_B < 0.75:  SIGNAL = "◉ BUY";        SIGNAL_COLOR = "#4ade80"
-elif RATIO_B < 1.10:  SIGNAL = "◎ ACCUMULATE"; SIGNAL_COLOR = "#f0b429"
-elif RATIO_B < 1.75:  SIGNAL = "◌ WATCHLIST";  SIGNAL_COLOR = "#60a5fa"
-else:                 SIGNAL = "✕ AVOID";       SIGNAL_COLOR = "#f87171"
-
-# ── Bottom-up signal factors ──────────────────────────────────────────────────
-# (name, conviction 1-5, weight)
-SIGNALS = [
-    ("global_two_sided_marketplace_flywheel_and_network_effects",          4.0, 0.22),
-    ("autonomous_vehicle_disruption_risk_waymo_tesla_robotaxi_timeline",   1.5, 0.20),
-    ("advertising_platform_and_uber_one_membership_monetization",          3.5, 0.17),
-    ("food_delivery_grocery_and_adjacency_expansion_runway",               3.0, 0.16),
-    ("international_expansion_and_emerging_market_growth",                 3.0, 0.14),
-    ("driver_courier_classification_and_regulatory_cost_risk",             2.0, 0.11),
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q1 2026 actual: gross bookings $53.7B (+25%, above guide), adj EBITDA $2.5B (+33%, margin
+# 4.6% of bookings), non-GAAP EPS $0.72 (+44%), revenue $13.2B (+14.5%, hit by a $1B UK tax
+# accounting headwind). Q2 guide/consensus: bookings $56.25-57.75B, EPS $0.83 consensus.
+SEG_DATA = [
+    # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
+    ("Mobility (rides)",     31.0, 27.0, 36.0, "Core rideshare; steady take-rate expansion; the segment most exposed to AV disruption long-term"),
+    ("Delivery (Eats)",      15.5, 13.5, 18.0, "Uber One membership (50M+) driving frequency and retention; advertising is a growing high-margin kicker"),
+    ("Freight",               1.4,  1.1,  1.8, "Small, cyclical, non-core; a minor drag/contributor either way"),
 ]
 
-# ── Structural Competitive Advantage (SCA) factors ────────────────────────────
-SCA_FACTORS = {
-    "170m_plus_monthly_active_consumers_and_global_demand_aggregation":      +0.22,
-    "advertising_and_membership_high_margin_layer_on_existing_supply":       +0.14,
-    "cross_platform_flywheel_mobility_delivery_freight_one_super_app":       +0.11,
-    "av_distribution_partnership_strategy_waymo_may_mobility_avride":        +0.09,
-    "autonomous_vehicle_supply_side_disruption_risk_waymo_tesla":            -0.18,
-    "driver_and_courier_classification_regulatory_exposure_globally":        -0.10,
-    "take_rate_pressure_and_competitive_intensity_doordash_lyft_local":      -0.08,
+# Margin assumptions (adjusted EBITDA as % of revenue, translated to a net-income-equivalent proxy)
+OP_MARGIN_CURR   = 0.180    # FY2026E blended adj EBITDA margin on revenue (~4.6% of GROSS BOOKINGS translates to a higher % of net revenue)
+OP_MARGIN_BULL   = 0.215    # BULL: take-rate expansion + advertising + AV-platform fees all lift the margin
+OP_MARGIN_BEAR   = 0.135    # BEAR: AV disruption forces pricing concessions to retain drivers/riders during the transition
+TAX_RATE         = 0.220    # effective tax rate
+
+# ── AUTONOMOUS VEHICLE PLATFORM CALCULATOR (the Uber-specific angle) ─────────
+AV_TRIP_GROWTH_YOY_X  = 10   # AV trips on the Uber platform grew this many times YoY, Q1 2026
+AV_PARTNERS           = 30   # number of autonomous vehicle partners across mobility and delivery
+AV_CITIES_TARGET_2026 = 15   # cities targeted for AV operation by end of 2026
+WAYMO_WEEKLY_RIDES_K  = 250  # thousand paid Waymo rides per week via the Uber partnership
+Q1_BOOKINGS_GROWTH_PCT = 25  # % YoY gross bookings growth, Q1 2026
+UK_TAX_HEADWIND_B      = 1.0 # $B one-time revenue accounting headwind from UK tax law changes, Q1 2026
+
+# ── EPP (Earnings Power Price) ────────────────────────────────────────────────
+EPS_FY2026E    = 3.30         # $/share non-GAAP FY2026E; Q1 $0.72 (+44%) annualizing with continued growth
+PE_PESSIMISTIC = 14.0         # trough P/E: a reasonable floor for a company now solidly GAAP-and-non-GAAP
+                               # profitable with double-digit bookings growth; not a distressed-multiple business anymore
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
+
+vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
+epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
+
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
+SCENARIOS = {
+    "BEAR":  ( 2.15, 13,   28, "AV platforms (Waymo, Tesla) disintermediate Uber's demand-aggregation role faster than expected"),
+    "BASE":  ( 3.70, 18,   67, "Gross bookings keep compounding at a mid-teens-to-20% pace; AV remains a platform partner, not a threat"),
+    "BULL":  ( 4.74, 21,  100, "Uber becomes the default distribution layer for AV fleets across multiple operators; margin expands further"),
+    "XBULL": ( 6.00, 24,  144, "Uber = the operating system for autonomous urban mobility globally, capturing fees across every AV operator's fleet"),
 }
-SCA_NET = sum(SCA_FACTORS.values())   # +0.20
 
-# ── Weighted conviction score ─────────────────────────────────────────────────
-WCS = sum(s * w for (_, s, w) in SIGNALS) / sum(w for (_, _, w) in SIGNALS)
+# ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
+CENTERS = {"BEAR": 1.25, "BASE": 2.00, "BULL": 2.75, "XBULL": 3.75}
+T = 0.60
 
-# ── EV (model) ────────────────────────────────────────────────────────────────
-EV_MODEL = EPP * (1 + SCA_NET) * (1 + UPSIDE_PCT * WCS / 5)
+def softmax_probs(c):
+    raw = {s: math.exp(-abs(c - CENTERS[s]) / T) for s in CENTERS}
+    tot = sum(raw.values())
+    return {s: raw[s] / tot for s in raw}
 
-# ── Summary string ────────────────────────────────────────────────────────────
-SUMMARY = (
-    f"UBER ◎ ACCUMULATE — Ratio B {RATIO_B:.2f}× ({DOWNSIDE_PCT*100:.1f}% downside / "
-    f"{UPSIDE_PCT*100:.1f}% upside) | EPP floor ${EPP:.0f} vs. price ${CURRENT_PRICE:.0f} "
-    f"(+{EPP_GAP_PCT:.1f}% gap) | "
-    "THE DEMAND AGGREGATOR OF GLOBAL URBAN MOBILITY: 170M+ monthly active platform consumers, "
-    "7.6B+ annual trips, $44B+ gross bookings in 70+ countries — the most scaled two-sided "
-    "marketplace in transportation history, now layering a high-margin advertising business "
-    "($1.5B+ revenue, 70%+ incremental margin) and Uber One membership (~30M subscribers) "
-    "onto the same infrastructure. "
-    "THE AV QUESTION CUTS BOTH WAYS: Waymo/Tesla robotaxis threaten the driver supply side "
-    "but Uber owns the demand aggregation layer that no AV company has independently replicated "
-    "at scale; Uber is actively positioning as the distribution OS for AV fleets — Waymo "
-    "partnership live in Austin/Atlanta/Phoenix, Avride, May Mobility, Cruise integrations; "
-    "if AV supply costs halve (no driver share ~72% of fare), Uber's take rate economics "
-    "expand dramatically rather than compress. "
-    "FINANCIAL INFLECTION IS REAL: first GAAP annual profit in 2023; 2025 adj. EBITDA "
-    "~$7.5B, FCF ~$6.0B+, $7B buyback authorization active; gross bookings growing "
-    "15-20% organic; GAAP EPS ~$3.80 in 2026E. "
-    "THE HONEST RISK: bear case is genuine — if Waymo/Tesla scale US robotaxi deployment "
-    "faster than Uber deploys the AV partnership model, the supply-side advantage erodes "
-    "before the distribution narrative takes hold; take rates face structural pressure from "
-    "Lyft/DoorDash competition; driver/courier classification battles ongoing in EU, UK, CA. "
-    f"Conservative 2yr: EPS ${EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}× + $0 div = "
-    f"${CONSERVATIVE_PRICE:.0f} → +{CONS_RETURN:.1f}% — essentially fair value; "
-    "BULL/XBULL require AV partnership narrative or advertising re-rate. "
-    f"Bear ${BEAR:.0f} · Base ${BASE:.0f} · Bull ${BULL:.0f} · XBull ${XBULL:.0f}."
-)
+def expected_value(c):
+    p = softmax_probs(c)
+    return sum(p[s] * SCENARIOS[s][2] for s in SCENARIOS)
+
+def back_solve_market_composite(price, tol=0.001):
+    target = price * (1.15 ** 2)
+    lo, hi = 1.0, 4.0
+    for _ in range(80):
+        m = (lo + hi) / 2
+        if expected_value(m) < target:
+            lo = m
+        else:
+            hi = m
+    return round((lo + hi) / 2, 2)
+
+# ── 6 PROXY SIGNALS ───────────────────────────────────────────────────────────
+# Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
+SIGNALS = [
+    {
+        "name":       "Gross bookings YoY growth",
+        "weight":     0.20,
+        "thresholds": ("<12%",   "≥18%",   "≥24%",   "≥30%"),
+        "now":        "+25%",
+        "score":      3,
+        "comment":    "$53.7B in Q1, above the guided range — the core marketplace is not slowing down",
+    },
+    {
+        "name":       "Adjusted EBITDA growth",
+        "weight":     0.20,
+        "thresholds": ("<15%",   "≥25%",   "≥33%",   "≥42%"),
+        "now":        "+33%",
+        "score":      3,
+        "comment":    "$2.5B, margin 4.6% of bookings and rising — profitability is scaling faster than revenue",
+    },
+    {
+        "name":       "AV trip growth on the platform",
+        "weight":     0.20,
+        "thresholds": ("<2x",    "≥4x",    "≥7x",    "≥10x"),
+        "now":        "10x+",
+        "score":      4,
+        "comment":    "AV trips grew more than 10x YoY — the clearest evidence yet that Uber is capturing AV demand, not losing it",
+    },
+    {
+        "name":       "AV partner breadth",
+        "weight":     0.15,
+        "thresholds": ("<10",    "≥15",    "≥25",    "≥35"),
+        "now":        "30+",
+        "score":      3,
+        "comment":    "30+ AV partners across mobility and delivery — Uber is positioning as the aggregator across operators, not betting on one",
+    },
+    {
+        "name":       "Non-GAAP EPS growth",
+        "weight":     0.15,
+        "thresholds": ("<15%",   "≥25%",   "≥35%",   "≥45%"),
+        "now":        "+44%",
+        "score":      3,
+        "comment":    "$0.72 in Q1, +44% YoY — profitability growth is outpacing revenue growth, a sign of genuine operating leverage",
+    },
+    {
+        "name":       "Forward P/E",
+        "weight":     0.10,
+        "thresholds": (">24x",   "≤19x",   "≤15x",   "≤11x"),
+        "now":        "~21.3x",
+        "score":      2,
+        "comment":    "21.3× FY2026E non-GAAP EPS — reasonable, not cheap, for a company growing bookings 25% and EPS 44%",
+    },
+]
+
+assert abs(sum(s["weight"] for s in SIGNALS) - 1.0) < 0.001
+
+PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
+
+# ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
+SCA_FACTORS = [
+    ("+", "AV trips growing 10x+ YoY on the platform — the single best disproof of the 'AVs kill Uber' thesis available", +0.9, 0.25),
+    ("+", "Genuine operating leverage — EPS growth (+44%) outpacing bookings growth (+25%) for multiple quarters running", +0.6, 0.20),
+    ("-", "Valuation near the 52-week low despite the strong operating momentum — the market isn't yet crediting the AV pivot", -0.3, 0.10),
+    ("+", "30+ AV partnerships is a platform strategy, not a single-bet — Uber wins whichever AV operator scales fastest", +0.5, 0.20),
+    ("-", "AV economics long-term are genuinely uncertain — today's take-rate model may not survive a fully autonomous fleet mix", -0.5, 0.15),
+    ("+", "Uber One membership (50M+) and advertising are two underappreciated, high-margin growth engines beyond core rides/delivery", +0.4, 0.10),
+]
+SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
+ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
+
+MARKET_COMPOSITE = back_solve_market_composite(CURRENT_PRICE)
+ADJ_GAP = round(ADJ_COMPOSITE - MARKET_COMPOSITE, 2)
+
+if ADJ_GAP > 0.20:
+    valuation_label = "UNDERVALUED"
+elif ADJ_GAP > -0.20:
+    valuation_label = "FAIRLY VALUED"
+else:
+    valuation_label = "OVERVALUED"
+
+# ── RATIO B ───────────────────────────────────────────────────────────────────
+bear_price   = SCENARIOS["BEAR"][2]
+bull_price   = SCENARIOS["BULL"][2]
+downside_pct = (CURRENT_PRICE - bear_price) / CURRENT_PRICE
+upside_pct   = (bull_price - CURRENT_PRICE) / CURRENT_PRICE
+ratio_b      = round(downside_pct / upside_pct, 2) if upside_pct > 0 else float("inf")
+
+if ratio_b != float("inf") and ratio_b < 0.75:
+    signal_short, signal_full = "BUY",       "◉ BUY"
+elif ratio_b != float("inf") and ratio_b < 1.10:
+    signal_short, signal_full = "ACCUMULATE","◎ ACCUMULATE"
+elif ratio_b != float("inf") and ratio_b < 1.75:
+    signal_short, signal_full = "WATCHLIST", "◐ WATCHLIST"
+else:
+    signal_short, signal_full = "AVOID",     "✕ AVOID"
+
+ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
+
+# ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
+CONS_EPS_2YR  = 4.30    # conservative FY2028E: ~14.2% EPS CAGR — a real deceleration from the current 44% pace
+CONS_PE_2YR   = 17      # modest re-rating from ~21.3x — reflects continued AV-thesis uncertainty
+cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
+cons_divs     = ANNUAL_DIV * 2
+cons_total    = cons_equity + cons_divs
+cons_return   = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
+cons_annual   = round(cons_return / 2, 1)
 
 # ─────────────────────────────────────────────────────────────────────────────
+#  OUTPUT
+# ─────────────────────────────────────────────────────────────────────────────
+W = 72
+
+def hr(): print("  " + "─" * W)
+def bar(score):
+    return "█" * score + "░" * (4 - score)
+
+print()
+print("═" * (W + 4))
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Mobility / Delivery / Freight / Autonomous Vehicle Platform")
+print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
+print("═" * (W + 4))
+print(f"  ⚠ Q2 2026 results due 2026-08-05 — two days after this refresh. Street consensus: EPS $0.83,")
+print(f"  revenue $14.27B, gross bookings ~$57.2B (+18-22% cc). Figures below use Q1 actuals + guidance.")
+
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
+print()
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+hr()
+
+curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
+bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
+bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
+
+print(f"  {'Segment':<28}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+hr()
+for seg, curr, bear, bull, desc in SEG_DATA:
+    print(f"  {seg:<28}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"    {desc}")
+hr()
+print(f"  {'TOTAL':<28}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q1 2026 actual: gross bookings $53.7B (+25%), revenue $13.2B (+14.5%, incl. ${UK_TAX_HEADWIND_B:.0f}B UK tax headwind)")
+print()
+
+# EPS bridge
+shares    = SHARES_OUT_M / 1000
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps  = round(curr_op * (1 - TAX_RATE) / shares, 2)
+
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.97
+bull_eps_imp = round(bull_op * (1 - TAX_RATE) / shares_b, 2)
+
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round(bear_op * (1 - TAX_RATE) / shares, 2)
+
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {OP_MARGIN_CURR*100:.1f}% margin proxy − {TAX_RATE*100:.1f}% tax")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
+print()
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {OP_MARGIN_BULL*100:.1f}% margin, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 21× = ~${bull_eps_imp*21:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print()
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {OP_MARGIN_BEAR*100:.1f}% margin (AV transition pricing pressure)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 13× trough = ~${bear_eps_imp*13:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# AV PLATFORM CHECK
+print()
+print(f"  AUTONOMOUS VEHICLE PLATFORM CHECK  (the Uber-specific angle):")
+print(f"  AV trip growth (Q1 2026):       {AV_TRIP_GROWTH_YOY_X}x+  YoY")
+print(f"  AV partners:                    {AV_PARTNERS}+  across mobility and delivery")
+print(f"  Cities targeted for AV (2026):  up to {AV_CITIES_TARGET_2026}")
+print(f"  Waymo weekly paid rides:        {WAYMO_WEEKLY_RIDES_K}K  (via the Uber partnership; Waymo is Alphabet-owned)")
+print()
+print(f"  This is the single most important data set in the Uber thesis right now. The bear case")
+print(f"  for Uber has always been 'once AVs work, riders go direct to the AV operator and Uber's")
+print(f"  demand-aggregation layer becomes worthless.' The Q1 data says the opposite is happening")
+print(f"  so far: AV trips on Uber's platform grew 10x+ YoY, and Uber has partnered with 30+ AV")
+print(f"  operators rather than betting on a single winner. Uber is positioning itself as the")
+print(f"  distribution layer FOR autonomous vehicles, not the business autonomous vehicles replace.")
+
+# KEY SENSITIVITIES
+print()
+eps_per_1B_rev  = 1.0 * OP_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_marg = curr_total * 0.01 * (1 - TAX_RATE) / shares
+print(f"  KEY SENSITIVITIES:")
+print(f"  Every $1B revenue (at 14.5% margin proxy):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*18:.2f}/share at 18× P/E")
+print(f"  Every 1pp of margin:                        +${eps_per_1pp_marg:.3f}/EPS  = +${eps_per_1pp_marg*18:.2f}/share at 18× P/E")
+print(f"  Every 1 turn of P/E:                        ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
+
+# ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print()
+print("  ① SIGNAL DASHBOARD  (bookings / EBITDA / AV trips / AV partners / EPS growth / valuation)")
+hr()
+score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
+print(f"  {'Signal':<34}  {'BEAR':>6}  {'BASE':>7}  {'BULL':>7}  {'XBULL':>7}  {'NOW':>8}  Score")
+hr()
+for s in SIGNALS:
+    ths = s["thresholds"]
+    lbl = score_labels[s["score"]]
+    b   = bar(s["score"])
+    print(f"  {s['name']:<34}  {ths[0]:>6}  {ths[1]:>7}  {ths[2]:>7}  {ths[3]:>7}  {s['now']:>8}  {lbl}  {b}")
+    print(f"    {s['comment']}")
+
+print()
+print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
+print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
+print()
+print("  Structural factors:")
+for sign, desc, score, weight in SCA_FACTORS:
+    contribution = score * weight
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+
+# ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
+print()
+print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
+hr()
+print(f"  {'Signal':<30}  {'Current':>9}  {'Bear val':>9}  {'Move':>8}  Trigger")
+hr()
+bear_triggers = [
+    ("Gross bookings YoY",         "+25%",   "<12%",    "-13pp",  "Consumer spending softens; AV-operator direct apps start winning share"),
+    ("Adjusted EBITDA growth",     "+33%",   "<15%",    "-18pp",  "Pricing concessions to retain drivers/riders during an AV transition compress margin"),
+    ("AV trip growth",             "10x+",   "<2x",     "flat",   "AV operators bypass Uber's platform in favor of proprietary apps"),
+    ("AV partner breadth",         "30+",    "<10",     "-20",    "Consolidation among AV operators reduces the number of platform partners"),
+    ("Non-GAAP EPS growth",        "+44%",   "<15%",    "-29pp",  "Growth deceleration across bookings and margin both hit the P&L at once"),
+    ("Forward P/E",                "~21.3x", "≤13x",    "-8.3x",  "Market re-prices Uber as an AV-disruption casualty rather than an AV-platform winner"),
+]
+for name, curr, bear_v, move, trigger in bear_triggers:
+    print(f"  {name:<30}  {curr:>9}  {bear_v:>9}  {move:>8}  {trigger[:44]}")
+
+probs_proxy = softmax_probs(PROXY_COMPOSITE)
+print()
+print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
+print()
+print(f"  KEY TRIGGER: the entire multi-year debate on Uber comes down to whether autonomous")
+print(f"  vehicles need a demand-aggregation layer or can go direct to consumers. Every AV")
+print(f"  operator building its own app (as Waymo and Tesla both have, to varying degrees) is a")
+print(f"  bear signal; every AV operator choosing to distribute through Uber (as Waymo is ALSO")
+print(f"  doing, at 250K paid rides/week) is a bull signal. Right now both are happening")
+print(f"  simultaneously, which is exactly why this remains a genuine, unresolved question.")
+
+# ─── ④ EPP ────────────────────────────────────────────────────────────────────
+print()
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
+hr()
+print(f"  FY2026E non-GAAP EPS:       ${EPS_FY2026E:.2f}  (Q1 $0.72, +44% YoY, annualizing with continued growth)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (a reasonable floor for a profitable, double-digit-growth marketplace business)")
+print(f"  ─────────────────────────────────────────────────────────────────────")
+print(f"  EPP floor:    ${EPP:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
+print()
+print(f"  At ${CURRENT_PRICE:.2f} — near the stock's own 52-week low — the market is pricing real AV-")
+print(f"  disruption anxiety despite Uber's own data showing AV trips on its platform growing 10x+.")
+print(f"  The EPP floor sits only {abs(epp_gap_pct):.0f}% below spot, a narrow gap that says the stock is")
+print(f"  already discounting a meaningful amount of that anxiety.")
+print(f"  At a 19× reversion (a modest re-rating credit for the AV-platform evidence): ${EPS_FY2026E:.2f} × 19 = ${EPS_FY2026E*19:.0f}")
+print(f"  ({(EPS_FY2026E*19/CURRENT_PRICE-1)*100:+.0f}% from spot)")
+
+# ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
+print()
+print("  ④ CONSERVATIVE GROWTH  (2-yr: growth decelerates well below the current pace, modest re-rating)")
+hr()
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~14.2% EPS CAGR — a real deceleration from the current 44% pace)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (~21.3× → 17×; reflects continued AV-thesis uncertainty, not resolution)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (no dividend)")
+hr()
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print()
+print(f"  THE SETUP: this case assumes EPS growth decelerates sharply (44% → ~14%/yr) and the")
+print(f"  multiple gets essentially no re-rating credit for the AV-platform evidence, and it still")
+print(f"  clears {cons_annual:.1f}%/yr. Trading near its 52-week low with genuinely strong operating momentum")
+print(f"  is an unusual combination — the market's AV anxiety is doing more work in the price than")
+print(f"  the current data supports.")
+print(f"  Breakeven at 17× requires FY2028E EPS ≥ ${CURRENT_PRICE / CONS_PE_2YR:.2f} — below this conservative estimate already.")
+
+# ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
+print()
+print("  ⑤ VOLATILITY CONTEXT")
+hr()
+annual_vol  = 0.36
+sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
+               round(CURRENT_PRICE * (1 + annual_vol), 0))
+bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
+print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range — near the low)")
+print(f"  Drawdown from high:    -{(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.1f}%  (AV-disruption anxiety, despite bookings/EBITDA both accelerating)")
+print(f"  Annual dividend:      none — capital returned via a $7B buyback authorization")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (elevated; AV-headline sensitivity keeps this a jumpy stock)")
+print(f"  Beta vs S&P 500:      1.35  (consumer-discretionary-adjacent plus AV-narrative sensitivity)")
+print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
+hr()
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (would meaningfully breach the current 52W low)")
+print(f"  → Q2 print (Aug 5) is the immediate catalyst — watch AV trip growth disclosure specifically, not just bookings.")
+print(f"  → Any AV operator publicly moving to a direct-to-consumer app would be the clearest bear signal available.")
+print(f"  → WATCHLIST at current price  |  ACCUMULATE $60–66  |  BUY below $56  |  TRIM above $100")
+
+# ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
+print()
+print("  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
+hr()
+probs_mkt = softmax_probs(MARKET_COMPOSITE)
+print(f"  {'Scenario':<10}  {'Price':>7}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
+hr()
+for s in ["BEAR","BASE","BULL","XBULL"]:
+    pp  = probs_proxy[s] * 100
+    pm  = probs_mkt[s]   * 100
+    gap = pp - pm
+    pr  = SCENARIOS[s][2]
+    desc = SCENARIOS[s][3][:46]
+    print(f"  {s:<10}  ${pr:>6}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
+
+ev_adj = expected_value(ADJ_COMPOSITE)
+ev_prx = expected_value(PROXY_COMPOSITE)
+ev_mkt = expected_value(MARKET_COMPOSITE)
+print()
+print(f"  Adj EV (2yr): ${ev_adj:.0f}  /  Proxy EV: ${ev_prx:.0f}  /  Market EV: ${ev_mkt:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
+hr()
+print(f"  Downside  (→ Bear ${bear_price}):  {downside_pct*100:.1f}%")
+print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
+print(f"  Ratio B   :  {ratio_b_str}")
+print(f"  Signal    :  {signal_full}")
+print()
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  Uber is trading near its 52-week low while bookings grow 25%, EBITDA grows 33%, EPS")
+print(f"  grows 44%, and AV trips on its own platform grow 10x. That combination — accelerating")
+print(f"  operating momentum at a price reflecting the opposite. Ratio B (1.43x) keeps this at")
+print(f"  WATCHLIST rather than BUY only because the AV-disruption downside case, while less likely")
+print(f"  than the data currently suggests, would still be severe if it materialized.")
+
+# ─── FOOTER ───────────────────────────────────────────────────────────────────
+print()
+print("═" * (W + 4))
+print(f"  Key catalysts to watch:")
+print(f"  (1) Q2 2026 results (Aug 5) — AV trip growth disclosure and gross bookings vs the ~$57.2B consensus")
+print(f"  (2) Any AV operator (Waymo, Tesla, others) moving toward or away from Uber platform distribution")
+print(f"  (3) Adjusted EBITDA margin trajectory — confirmation that operating leverage keeps compounding")
+print(f"  (4) Uber One membership growth and advertising revenue — the underappreciated margin engines")
+print(f"  (5) Regulatory developments around AV deployment in target cities")
+print(f"  WATCHLIST at ${CURRENT_PRICE:.2f}  |  ACCUMULATE $60–66  |  BUY below $56  |  TRIM above $100")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  AV trip growth: {AV_TRIP_GROWTH_YOY_X}x+")
+print("═" * (W + 4))
+print()
+
+# ── EXPORT ────────────────────────────────────────────────────────────────────
+RESULT = {
+    "ticker":            TICKER,
+    "signal":            signal_full,
+    "signal_short":      signal_short,
+    "price":             CURRENT_PRICE,
+    "epp_gap_pct":       epp_gap_pct,
+    "ratio_b":           ratio_b if ratio_b != float("inf") else None,
+    "ratio_b_fmt":       ratio_b_str,
+    "adj_composite":     ADJ_COMPOSITE,
+    "market_composite":  MARKET_COMPOSITE,
+    "adj_gap":           ADJ_GAP,
+    "valuation":         valuation_label,
+    "cons_return_2yr":   cons_return,
+}
+
 if __name__ == "__main__":
-    print(f"\n{'='*72}")
-    print(f"  {TICKER}  |  {COMPANY}")
-    print(f"  {SECTOR}")
-    print(f"{'='*72}")
-    print(f"  Current Price:                                     ${CURRENT_PRICE:>8.2f}")
-    print(f"  Annual Dividend:                                   ${ANNUAL_DIV:>8.2f}")
-    print(f"  52-Week Range:                          ${FW52_LOW:.2f} – ${FW52_HIGH:.2f}")
-    print()
-    print(f"  Scenario Prices:")
-    print(f"    Bear:                                            ${BEAR:>8.2f}")
-    print(f"    Base:                                            ${BASE:>8.2f}")
-    print(f"    Bull:                                            ${BULL:>8.2f}")
-    print(f"    XBull:                                           ${XBULL:>8.2f}")
-    print()
-    print(f"  Downside (current → bear):                    {DOWNSIDE_PCT*100:>7.1f}%")
-    print(f"  Upside   (current → bull):                    {UPSIDE_PCT*100:>7.1f}%")
-    print(f"  Ratio B = {RATIO_B:.4f} → {SIGNAL}")
-    print()
-    print(f"  EPS Trough:                                        ${EPS_TROUGH:>8.2f}")
-    print(f"  PE Trough:                                         {PE_TROUGH:>8.1f}×")
-    print(f"  EPP (Earnings Power Price):                        ${EPP:>8.2f}")
-    print(f"  EPP Gap (current vs. EPP floor):              {EPP_GAP_PCT:>+8.1f}%")
-    print()
-    print(f"  Conservative Price ({EPS_FY2026E:.2f} × {PE_CONSERVATIVE:.0f}×):         ${CONSERVATIVE_PRICE:>8.2f}  ({CONS_RETURN:>+.1f}%)")
-    print()
-    print(f"  Weighted Conviction Score:                         {WCS:>8.2f} / 5.0")
-    print(f"  SCA Net:                                           {SCA_NET:>+8.2f}")
-    print(f"  EV(model): ${EV_MODEL:>8.2f}   Upside: {(EV_MODEL-CURRENT_PRICE)/CURRENT_PRICE*100:>+.1f}%   Downside: -{DOWNSIDE_PCT*100:.1f}%")
-    print()
-    print(f"  SIGNAL:  {SIGNAL}   Ratio B: {RATIO_B:.2f}×   EPP Gap: {EPP_GAP_PCT:>+.1f}%")
-    print(f"{'='*72}")
-    print()
-
-    print("  BOTTOM-UP SIGNAL FACTORS")
-    print(f"  {'Factor':<62} {'Conv':>4}  {'Wt':>5}")
-    print(f"  {'-'*72}")
-    for name, conv, wt in SIGNALS:
-        print(f"  {name:<62} {conv:>4.1f}  {wt:>5.0%}")
-    print()
-
-    print("  STRUCTURAL COMPETITIVE ADVANTAGE FACTORS")
-    for k, v in SCA_FACTORS.items():
-        print(f"  {k:<65} {v:>+.2f}")
-    print(f"  {'SCA NET':<65} {SCA_NET:>+.2f}")
-    print()
-
-    print(f"{'='*72}")
-    print()
-    print("  WHY THIS IS AN ◎ ACCUMULATE, NOT A ◌ WATCHLIST OR ◉ BUY")
-    print()
-    print("  NOT ◉ BUY because:")
-    print("  • The autonomous vehicle bear case is real and binary: if Waymo and Tesla")
-    print("    independently scale urban robotaxi fleets without needing Uber's network,")
-    print("    the driver supply-side advantage evaporates and take rates compress")
-    print("    structurally — a scenario the market cannot fully price until it happens")
-    print("  • At ~23× 2026E EPS, the stock is NOT cheap on near-term earnings; it is")
-    print("    a 'show me' story at a fair-but-not-discounted multiple requiring the")
-    print("    AV partnership / advertising / membership thesis to actually print")
-    print("  • Conservative 2yr floor ($91) is essentially at current price — limited")
-    print("    margin of safety; a multiple compression to 20× on AV fear alone")
-    print("    (~$76) is plausible without a fundamental deterioration")
-    print("  • $7B+ in annual stock-based compensation dilutes FCF-to-equity returns;")
-    print("    'cash generation' is substantially offset by SBC before buybacks")
-    print()
-    print("  NOT ◌ WATCHLIST because:")
-    print("  • 170M+ monthly active platform consumers represent the most valuable")
-    print("    demand aggregation asset in transportation — no AV company has built")
-    print("    anything approaching this distribution scale independently")
-    print("  • The AV disruption thesis cuts BOTH ways: if Waymo removes driver costs")
-    print("    (~72% of fare today), Uber's economics improve dramatically as fleet")
-    print("    operator/distributor — this is why Waymo chose Uber as the partner")
-    print("    for its consumer robotaxi expansion (not a competitor, a channel)")
-    print("  • Advertising is an emerging, structurally high-margin business: Journey")
-    print("    Ads, in-app sponsored listings, and out-of-home (tablet ads in vehicles)")
-    print("    at $1.5B+ revenue growing ~80% YoY against near-zero marginal cost —")
-    print("    a Google-search-like monetization layer on captive in-trip attention")
-    print("  • Uber One (~30M subscribers, $9.99/month) drives 30-40% higher spend")
-    print("    per member, reduces churn, and creates a Prime-like loyalty moat")
-    print("    compounding with every new vertical (groceries, alcohol, pharmacy)")
-    print("  • Ratio B 0.90× — downside 40.9% / upside 45.5% — the asymmetry is")
-    print("    genuinely favorable; this is not a coin-flip")
-    print()
-    print("  THE THESIS IN ONE PARAGRAPH:")
-    print("  Uber has solved the hardest problem in platform businesses — it owns both")
-    print("  sides of a global, real-time, two-sided marketplace at scale in 70+")
-    print("  countries. The AV era does not destroy this advantage; it restructures who")
-    print("  owns the supply (human drivers → autonomous vehicles), while the demand")
-    print("  aggregation layer — where consumers open the Uber app — remains Uber's.")
-    print("  The company that cracked consumer behavior in rideshare is now layering")
-    print("  advertising and membership on top, growing FCF, and buying back stock.")
-    print("  At $88, the AV fear creates the entry; the demand flywheel creates the")
-    print("  return. Initiate at ◎ ACCUMULATE; add on AV-driven pullbacks toward")
-    print("  $68-75 where Ratio B would approach ◉ BUY territory.")
-    print()
-    print(f"{'='*72}")
-    print()
-    print("  SUMMARY (for API / website display):")
-    print()
-    import textwrap
-    for line in textwrap.wrap(SUMMARY, width=70):
-        print(f"  {line}")
-    print()
+    pass

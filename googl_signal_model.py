@@ -1,7 +1,7 @@
 """
 GOOGL  ·  Alphabet Inc.  ·  NASDAQ: GOOGL
 Bottom-up signal model  ·  Google Search / YouTube / Google Cloud / AI
-Date: 2026-05-31
+Date: 2026-08-03
 """
 
 import math
@@ -10,45 +10,57 @@ import math
 TICKER        = "GOOGL"
 COMPANY       = "Alphabet Inc."
 SECTOR        = "Google Search · YouTube · Google Cloud · AI Infrastructure · NASDAQ: GOOGL"
-CURRENT_PRICE = 172.00       # USD; as of 2026-05-31
-VOL_52W_LOW   = 148.20       # April 2026 tariff/AI-competition trough
-VOL_52W_HIGH  = 212.40       # December 2025 AI rally peak
-SHARES_OUT_M  = 12_080.0     # millions; includes A+B+C classes; post-buyback
+CURRENT_PRICE = 356.13       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 187.82       # 2026 trough
+VOL_52W_HIGH  = 408.61       # 2026 AI/Cloud re-rating peak
+SHARES_OUT_M  = 12_240.0     # millions; $4.36T mkt cap / $356.13; includes A+B+C classes
+ANNUAL_DIV    = 0.84         # $/share forward; yield ~0.24%
 
-# Dividend: initiated Q1 2024 at $0.20/quarter
-ANNUAL_DIV    = 0.80         # $/share FY2026
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q2 2026 actual: revenue $119.8B (+24% YoY); Search $63.3B (+17%), YouTube $11.1B (+13%),
+# Cloud $24.8B (+82%!, op income $8.8B vs $2.8B YoY), Cloud backlog $514B. Capex raised to $195-205B.
+SEG_DATA = [
+    # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
+    ("Search & Other",                250.0, 220.0, 285.0, "+17% YoY; AI Overviews monetizing so far without cannibalizing the core ad engine"),
+    ("YouTube Ads",                    44.0,  38.0,  53.0, "+13% YoY; Shorts + connected-TV share gains continue"),
+    ("Google Cloud",                  100.0,  75.0, 150.0, "+82% YoY; op income swung from $2.8B to $8.8B YoY; $514B backlog is 5x+ annual revenue"),
+    ("Subscriptions/Devices + Other Bets", 66.0,  56.0,  82.0, "YouTube Premium/Music, Pixel/hardware, Waymo — steady, non-core"),
+]
 
-# ── SEARCH DISRUPTION vs CLOUD OFFSET CONSTANTS (company-specific calculator) ─
-# Revenue breakdown FY2026E ($B)
-SEARCH_REV_B      = 195.0   # Google Search & other (incl. AI Overviews ads)
-YOUTUBE_REV_B     =  38.0   # YouTube Ads
-NETWORK_REV_B     =  31.0   # Google Network (AdSense, AdMob; structural decline)
-SUBSCRIPTIONS_B   =  39.0   # Google One, Workspace, Pixel/Nest devices
-CLOUD_REV_B       =  52.0   # Google Cloud (GCP + Workspace Enterprise)
-OTHER_BETS_LOSS_B =   1.5   # Other Bets net operating loss ($B/yr); Waymo pre-scale
+# Margin assumptions (GAAP operating margin proxy; EXCLUDES the Q2 $98.0B one-time
+# unrealized equity-securities gain that inflated reported net income to $112.1B / EPS $9.11)
+OP_MARGIN_CURR   = 0.340    # FY2026E blended operating margin; Q2 actual operating margin was 34%
+OP_MARGIN_BULL   = 0.390    # BULL: Cloud margin keeps expanding (already 35.5% in Q2, from near-breakeven a year ago)
+OP_MARGIN_BEAR   = 0.290    # BEAR: capex depreciation and AI-Overviews monetization risk both compress margin
+TAX_RATE         = 0.160    # effective tax rate
 
-SEARCH_OP_MARGIN  = 0.42    # Search operating margin (powerful network leverage)
-CLOUD_OP_MARGIN   = 0.32    # Cloud margin (up from 28% as scale improves)
-CLOUD_GROWTH_RATE = 0.28    # 28% YoY Google Cloud growth (Q1 2026 run-rate)
-TAX_RATE          = 0.18    # effective rate (R&D credits, offshore, GILTI)
+# ── CLOUD INFLECTION / ONE-TIME GAIN CALCULATOR (the Alphabet-specific angle) ──
+CLOUD_BACKLOG_B        = 514.0  # $B Cloud backlog, Q2 2026 — over 5x annualized Cloud revenue
+CLOUD_OP_INCOME_Q2_B   =   8.8  # $B Cloud operating income, Q2 2026 (vs $2.8B a year ago)
+CAPEX_GUIDE_LOW_B      = 195.0  # $B FY2026 capex guidance, low end (raised from $180B)
+CAPEX_GUIDE_HIGH_B     = 205.0  # $B FY2026 capex guidance, high end (raised from $190B)
+ONE_TIME_EQUITY_GAIN_B =  98.0  # $B net unrealized gain on equity securities, Q2 2026 — NOT operating earnings
+EU_ANTITRUST_FINE_B    =   4.1  # € (~$B) fine upheld by the EU Court of Justice over Android
+US_ANTITRUST_OUTCOME   = "no breakup; data-sharing + no-exclusivity remedies; both sides appealing"
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPP_EPS   = 10.50   # FY2026E adj EPS (consensus $10.20–$10.80)
-PE_TROUGH = 14      # min P/E at crisis trough (2022 was ~14–15×; search moat prevents <12×)
-EPP       = round(EPP_EPS * PE_TROUGH, 0)   # $147
+EPS_FY2026E    = 10.75       # $/share; CLEAN operating-basis FY2026E estimate — excludes the Q2 one-time equity gain
+PE_PESSIMISTIC = 18.0        # trough P/E: roughly Alphabet's own multi-year average forward multiple pre-AI-rerating;
+                              # 18x prices a return to being valued as "just" a very profitable ad/cloud business
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 6.00, 13,   80, "DOJ structural remedy + AI query loss −25%; EPS $6 → 13× distress P/E"),
-    "BASE":  (10.50, 19,  200, "Search holds; Cloud $85B; AI Overviews monetising; EPS $10.50 → 19× P/E"),
-    "BULL":  (15.00, 21,  315, "Gemini AI monetisation inflects; Cloud #2 share; $15 EPS → 21× premium P/E"),
-    "XBULL": (20.00, 26,  520, "Waymo + AI agents + full AI platform; $20 EPS → 26× peak P/E"),
+    "BEAR":  ( 7.74, 22,  170, "AI Overviews cannibalizes ad monetization faster than it adds; heavy capex depreciation compresses margin"),
+    "BASE":  (11.80, 30,  354, "Cloud keeps compounding at a moderating pace; Search holds share through the AI transition"),
+    "BULL":  (15.60, 32,  499, "Cloud growth sustains near 60%+ for another year; AI Overviews prove additive, not cannibalistic"),
+    "XBULL": (18.50, 34,  629, "Google Cloud becomes a clear #2/#3 hyperscaler at massive scale; antitrust overhang fully resolved"),
 }
 
-# ── SOFTMAX ───────────────────────────────────────────────────────────────────
+# ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
 CENTERS = {"BEAR": 1.25, "BASE": 2.00, "BULL": 2.75, "XBULL": 3.75}
 T = 0.60
 
@@ -73,54 +85,55 @@ def back_solve_market_composite(price, tol=0.001):
     return round((lo + hi) / 2, 2)
 
 # ── 6 PROXY SIGNALS ───────────────────────────────────────────────────────────
+# Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "Google Search revenue — YoY growth (AI Overviews era)",
+        "name":       "Google Cloud revenue YoY growth",
         "weight":     0.25,
-        "thresholds": ("<2%",    "≥6%",   "≥11%",   "≥16%"),
-        "now":        "+9%",
-        "score":      2,
-        "comment":    "+9% YoY; AI Overviews boosting session depth; monetization ratio improving to ~0.90×",
+        "thresholds": ("<30%",   "≥50%",   "≥65%",   "≥80%"),
+        "now":        "+82%",
+        "score":      4,
+        "comment":    "Cloud is now unambiguously the growth story; op income swung from $2.8B to $8.8B YoY on the same quarter",
     },
     {
-        "name":       "Google Cloud revenue — YoY growth rate",
-        "weight":     0.25,
-        "thresholds": ("<10%",   "≥20%",  "≥28%",   "≥38%"),
-        "now":        "+29%",
-        "score":      3,
-        "comment":    "+29% YoY; AI workloads driving GCP demand; Vertex AI + Gemini API adoption surging",
-    },
-    {
-        "name":       "AI Overviews monetisation — revenue/query vs standard search",
+        "name":       "Search & Other revenue YoY growth",
         "weight":     0.20,
-        "thresholds": ("<0.6×",  "≥0.8×", "≥1.05×", "≥1.3×"),
-        "now":        "~0.90×",
-        "score":      2,
-        "comment":    "~0.90× parity; improving from 0.75× launch; AI ad slots rolling out in US/EU",
-    },
-    {
-        "name":       "DOJ antitrust remedy severity (1=structural, 4=dismissed)",
-        "weight":     0.15,
-        "thresholds": ("struct.", "behav.", "consent","dismissed"),
-        "now":        "behav.",
-        "score":      2,
-        "comment":    "Aug 2024 ruling; remedy phase ongoing; behavioral (no Chrome/Android divestiture)",
-    },
-    {
-        "name":       "YouTube + Shorts ad revenue — YoY growth",
-        "weight":     0.10,
-        "thresholds": ("<5%",    "≥8%",   "≥15%",   "≥22%"),
-        "now":        "+16%",
+        "thresholds": ("<5%",    "≥10%",   "≥15%",   "≥20%"),
+        "now":        "+17%",
         "score":      3,
-        "comment":    "+16% YoY; Shorts monetisation inflecting; connected TV gaining CTV ad budgets",
+        "comment":    "The single most important disproof point against the 'AI kills search' bear thesis, quarter after quarter",
     },
     {
-        "name":       "Gemini API + AI product revenue — annualised ($B/yr)",
-        "weight":     0.05,
-        "thresholds": ("<$2B",   "≥$4B",  "≥$8B",   "≥$15B"),
-        "now":        "~$5B",
+        "name":       "Cloud backlog coverage",
+        "weight":     0.15,
+        "thresholds": ("<2x",    "≥3x",    "≥4x",    "≥5x"),
+        "now":        "~5.2x",
+        "score":      4,
+        "comment":    "$514B backlog vs ~$100B annualized Cloud revenue — exceptional forward visibility for the growth segment",
+    },
+    {
+        "name":       "Consolidated operating margin",
+        "weight":     0.15,
+        "thresholds": ("<28%",   "≥31%",   "≥34%",   "≥37%"),
+        "now":        "34%",
+        "score":      3,
+        "comment":    "Holding up even as capex and depreciation ramp — Cloud's margin inflection is doing real work here",
+    },
+    {
+        "name":       "Capex growth vs revenue growth",
+        "weight":     0.10,
+        "thresholds": (">2.5x rev","≤2.0x",  "≤1.5x",  "≤1.0x"),
+        "now":        "~1.7x",
         "score":      2,
-        "comment":    "~$5B; Workspace AI Premium, Gemini API, NotebookLM Enterprise; growing rapidly",
+        "comment":    "$195-205B capex guide vs 24% revenue growth — spending is outpacing revenue growth, the crux of the AI-capex debate",
+    },
+    {
+        "name":       "Forward P/E (clean, ex-one-time gains)",
+        "weight":     0.15,
+        "thresholds": (">40x",   "≤33x",   "≤26x",   "≤20x"),
+        "now":        "~33.1x",
+        "score":      2,
+        "comment":    "The headline 17.9x trailing P/E is misleading — it's deflated by a $98B one-time equity gain; the clean multiple is much richer",
     },
 ]
 
@@ -130,12 +143,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Search network moat — unmatched query understanding; 90% global share; advertiser lock-in",      +0.9, 0.25),
-    ("+", "Google Cloud AI advantage — TPU v5/6; Vertex AI; Gemini natively embedded; #3 → #2 trajectory",  +0.6, 0.20),
-    ("-", "DOJ search monopoly remedy — behavioral restrictions likely; Chrome/Android structural risk",     -0.7, 0.20),
-    ("-", "AI search disruption — OpenAI/Perplexity eroding AI-native query share; ChatGPT GPT-4o search",  -0.5, 0.20),
-    ("+", "Capital efficiency — $30B+ net cash; $70B buyback auth; FCF ~$80B/yr; no dividend pressure",    +0.5, 0.10),
-    ("-", "Other Bets drag — Waymo pre-commercial; $1.5B/yr loss; capital allocation uncertainty",          -0.3, 0.05),
+    ("+", "Cloud inflection is real and large — $514B backlog, margin swinging from breakeven to 35%+ in a year", +0.8, 0.20),
+    ("+", "Search resilience — +17% YoY growth is the clearest evidence yet that AI Overviews aren't cannibalizing the core business", +0.6, 0.20),
+    ("-", "Capex is outrunning revenue growth — $195-205B guide against 24% revenue growth is the same debate weighing on every hyperscaler", -0.6, 0.20),
+    ("+", "Antitrust overhang resolved favorably — no breakup, Chrome and Android retained; remaining remedies are manageable", +0.5, 0.15),
+    ("-", "Reported earnings quality — the headline EPS beat is largely a $98B non-operating equity gain, not core earnings power", -0.4, 0.15),
+    ("+", "Balance sheet + diversification — Search, Cloud, YouTube, and a stake in the AV/robotics optionality (Waymo) all compounding at once", +0.3, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -148,32 +161,34 @@ if ADJ_GAP > 0.20:
 elif ADJ_GAP > -0.20:
     valuation_label = "FAIRLY VALUED"
 else:
-    valuation_label = "MODESTLY OVERVALUED"
+    valuation_label = "OVERVALUED"
 
 # ── RATIO B ───────────────────────────────────────────────────────────────────
 bear_price   = SCENARIOS["BEAR"][2]
 bull_price   = SCENARIOS["BULL"][2]
 downside_pct = (CURRENT_PRICE - bear_price) / CURRENT_PRICE
 upside_pct   = (bull_price - CURRENT_PRICE) / CURRENT_PRICE
-ratio_b      = round(downside_pct / upside_pct, 2)
+ratio_b      = round(downside_pct / upside_pct, 2) if upside_pct > 0 else float("inf")
 
-if ratio_b < 0.75:
+if ratio_b != float("inf") and ratio_b < 0.75:
     signal_short, signal_full = "BUY",       "◉ BUY"
-elif ratio_b < 1.10:
+elif ratio_b != float("inf") and ratio_b < 1.10:
     signal_short, signal_full = "ACCUMULATE","◎ ACCUMULATE"
-elif ratio_b < 1.75:
+elif ratio_b != float("inf") and ratio_b < 1.75:
     signal_short, signal_full = "WATCHLIST", "◐ WATCHLIST"
 else:
     signal_short, signal_full = "AVOID",     "✕ AVOID"
 
+ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
+
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR = 11.00    # conservative FY2028E: modest search growth; DOJ remedies biting
-CONS_PE_2YR  = 16       # floor multiple (search monopoly still commands quality premium)
-cons_equity  = CONS_EPS_2YR * CONS_PE_2YR
-cons_divs    = ANNUAL_DIV * 2
-cons_total   = cons_equity + cons_divs
-cons_return  = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
-cons_annual  = round(cons_return / 2, 1)
+CONS_EPS_2YR  = 12.60   # conservative FY2028E: ~8.3% EPS CAGR off the clean $10.75 base
+CONS_PE_2YR   = 26      # modest de-rating from ~33x — still a real premium multiple
+cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
+cons_divs     = ANNUAL_DIV * 2
+cons_total    = cons_equity + cons_divs
+cons_return   = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
+cons_annual   = round(cons_return / 2, 1)
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  OUTPUT
@@ -186,136 +201,162 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Google Search / Cloud / AI / Technology")
-print(f"  Signal: {signal_full}   Ratio B: {ratio_b:.2f}x   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Search / YouTube / Cloud / AI Infrastructure")
+print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① SEARCH DISRUPTION vs CLOUD OFFSET ANALYSIS ────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  SEARCH DISRUPTION vs GOOGLE CLOUD OFFSET ANALYSIS  (the core GOOGL tension)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
-total_rev_b = SEARCH_REV_B + YOUTUBE_REV_B + NETWORK_REV_B + SUBSCRIPTIONS_B + CLOUD_REV_B
-print(f"  Google Services FY2026E Revenue:")
-print(f"  {'Search & other (AI Overviews era)':<36}  ${SEARCH_REV_B:>5.1f}B  ({SEARCH_REV_B/total_rev_b*100:.0f}% of total; {SEARCH_OP_MARGIN*100:.0f}% op margin)")
-print(f"  {'YouTube Ads':<36}  ${YOUTUBE_REV_B:>5.1f}B  ({YOUTUBE_REV_B/total_rev_b*100:.0f}%; Shorts monetisation ramping)")
-print(f"  {'Google Network (AdSense/AdMob)':<36}  ${NETWORK_REV_B:>5.1f}B  ({NETWORK_REV_B/total_rev_b*100:.0f}%; structural TPP migration; declining)")
-print(f"  {'Subscriptions + Devices':<36}  ${SUBSCRIPTIONS_B:>5.1f}B  ({SUBSCRIPTIONS_B/total_rev_b*100:.0f}%; Google One, Workspace, Pixel)")
-print(f"  {'Google Cloud (GCP + Workspace Ent.)':<36}  ${CLOUD_REV_B:>5.1f}B  ({CLOUD_REV_B/total_rev_b*100:.0f}%; {CLOUD_GROWTH_RATE*100:.0f}% YoY; {CLOUD_OP_MARGIN*100:.0f}% margin)")
+curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
+bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
+bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
+
+print(f"  {'Segment':<38}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
-print(f"  Total FY2026E:                         ${total_rev_b:>5.1f}B")
-print()
-
-print(f"  SEARCH DISRUPTION SCENARIOS  (AI competitors capture X% of Google query volume):")
-print(f"  {'AI query capture':<20}  {'Rev loss/yr':>12}  {'EPS drag/yr':>12}  {'2yr EPS drag':>13}")
+for seg, curr, bear, bull, desc in SEG_DATA:
+    print(f"  {seg:<38}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"    {desc}")
 hr()
-shares_b = SHARES_OUT_M / 1000
-for loss_pct in [0.05, 0.10, 0.15, 0.25]:
-    rev_loss  = SEARCH_REV_B * loss_pct
-    inc_loss  = rev_loss * SEARCH_OP_MARGIN * (1 - TAX_RATE)
-    eps_yr    = inc_loss / shares_b
-    eps_2yr   = eps_yr * 2
-    print(f"  {loss_pct*100:.0f}% of queries        -${rev_loss:>5.1f}B/yr    -${eps_yr:.2f}/EPS/yr    -{eps_2yr:.2f}/EPS over 2yr")
-
-print()
-cloud_y1  = CLOUD_REV_B * CLOUD_GROWTH_RATE
-cloud_y2  = CLOUD_REV_B * (1 + CLOUD_GROWTH_RATE) * CLOUD_GROWTH_RATE
-cloud_eps1 = cloud_y1 * CLOUD_OP_MARGIN * (1 - TAX_RATE) / shares_b
-cloud_eps2 = cloud_y2 * CLOUD_OP_MARGIN * (1 - TAX_RATE) / shares_b
-cloud_2yr  = cloud_eps1 + cloud_eps2
-
-print(f"  GOOGLE CLOUD GROWTH OFFSET  ({CLOUD_GROWTH_RATE*100:.0f}% CAGR; incremental EPS vs Cloud staying flat):")
-print(f"  Year 1: ${CLOUD_REV_B:.0f}B × {CLOUD_GROWTH_RATE*100:.0f}% = +${cloud_y1:.1f}B rev  →  +${cloud_eps1:.2f}/EPS  (incremental income at {CLOUD_OP_MARGIN*100:.0f}% margin)")
-print(f"  Year 2: ${CLOUD_REV_B*(1+CLOUD_GROWTH_RATE):.0f}B × {CLOUD_GROWTH_RATE*100:.0f}% = +${cloud_y2:.1f}B rev  →  +${cloud_eps2:.2f}/EPS  (compounding scale)")
-print(f"  Total 2yr Cloud growth offset:  +${cloud_2yr:.2f}/EPS")
+print(f"  {'TOTAL':<38}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q2 2026 actual: $119.8B (+24% YoY). Capex guidance raised to ${CAPEX_GUIDE_LOW_B:.0f}-{CAPEX_GUIDE_HIGH_B:.0f}B for FY2026")
 print()
 
-# breakeven search loss that cloud offsets
-break_pct = cloud_2yr / (SEARCH_REV_B * SEARCH_OP_MARGIN * (1-TAX_RATE) / shares_b * 2)
-net_10pct = -(SEARCH_REV_B * 0.10 * SEARCH_OP_MARGIN * (1-TAX_RATE) / shares_b * 2) + cloud_2yr
-print(f"  NET AT 10% SEARCH LOSS:  −${SEARCH_REV_B*0.10*SEARCH_OP_MARGIN*(1-TAX_RATE)/shares_b*2:.2f} drag  +  ${cloud_2yr:.2f} cloud offset  =  {net_10pct:+.2f}/EPS over 2yr")
-print(f"  → Cloud growth at {CLOUD_GROWTH_RATE*100:.0f}% CAGR fully offsets ≤{break_pct*100:.0f}% search query loss; at 10% the net drag is only −${abs(net_10pct):.2f}/EPS.")
-print(f"  BEAR ($80) requires: 25%+ search loss AND DOJ structural divestiture AND cloud slowdown — simultaneously.")
+# EPS bridge (clean, operating basis)
+shares    = SHARES_OUT_M / 1000
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps  = round(curr_op * (1 - TAX_RATE) / shares, 2)
 
-# ─── ② SIGNAL DASHBOARD ──────────────────────────────────────────────────────
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.98
+bull_eps_imp = round(bull_op * (1 - TAX_RATE) / shares_b, 2)
+
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round(bear_op * (1 - TAX_RATE) / shares, 2)
+
+print(f"  FY2026E EPS check (CLEAN, ex-one-time gains):  ${curr_total:.1f}B rev × {OP_MARGIN_CURR*100:.1f}% op margin")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
+print(f"  Reported Q2 EPS was $9.11, boosted by a ${ONE_TIME_EQUITY_GAIN_B:.0f}B one-time unrealized equity gain — not repeatable.")
 print()
-print("  ① SIGNAL DASHBOARD  (search durability + cloud + AI monetisation + regulatory)")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {OP_MARGIN_BULL*100:.1f}% op margin, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 32× = ~${bull_eps_imp*32:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print()
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {OP_MARGIN_BEAR*100:.1f}% op margin (AI-Overviews risk + capex depreciation)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 22× trough = ~${bear_eps_imp*22:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# CLOUD INFLECTION / ONE-TIME GAIN CHECK
+print()
+print(f"  CLOUD INFLECTION & EARNINGS-QUALITY CHECK  (the Alphabet-specific angle):")
+print(f"  Cloud backlog:                  ${CLOUD_BACKLOG_B:.0f}B  (~5.2x annualized Cloud revenue)")
+print(f"  Cloud operating income (Q2):    ${CLOUD_OP_INCOME_Q2_B:.1f}B  (vs $2.8B a year ago — a real margin inflection, not just scale)")
+print(f"  One-time equity gain (Q2):      ${ONE_TIME_EQUITY_GAIN_B:.0f}B  (inflated reported EPS to $9.11; excluded from this model's EPS)")
+print(f"  EU antitrust fine (Android):    €{EU_ANTITRUST_FINE_B:.1f}B upheld — a real but bounded cost")
+print(f"  US antitrust outcome:           {US_ANTITRUST_OUTCOME}")
+print()
+print(f"  Two things to separate clearly: Cloud's margin inflection is a genuine operating")
+print(f"  achievement — going from near-breakeven to 35%+ margin at this scale in a year is rare.")
+print(f"  The $98B equity gain is not that; it is a mark-to-market accounting entry on a")
+print(f"  strategic investment, and treating it as recurring earnings power would badly overstate")
+print(f"  the multiple the stock actually trades at.")
+
+# KEY SENSITIVITIES
+print()
+eps_per_1B_cloud = 1.0 * 0.35 * (1 - TAX_RATE) / shares   # Cloud incremental margin ~35%, matching Q2
+eps_per_1B_search = 1.0 * 0.45 * (1 - TAX_RATE) / shares  # Search incremental margin ~45%
+print(f"  KEY SENSITIVITIES:")
+print(f"  Every $1B Cloud revenue (35% inc. margin):   +${eps_per_1B_cloud:.3f}/EPS  = +${eps_per_1B_cloud*30:.2f}/share at 30× P/E")
+print(f"  Every $1B Search revenue (45% inc. margin):  +${eps_per_1B_search:.3f}/EPS  = +${eps_per_1B_search*30:.2f}/share at 30× P/E")
+print(f"  Every 1 turn of P/E:                         ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock, clean-EPS basis)")
+
+# ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print()
+print("  ① SIGNAL DASHBOARD  (Cloud growth / Search resilience / backlog / margin / capex / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>6}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>8}  {'NOW':>7}  Score")
+print(f"  {'Signal':<42}  {'BEAR':>10}  {'BASE':>8}  {'BULL':>8}  {'XBULL':>8}  {'NOW':>9}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>6}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>8}  {s['now']:>7}  {lbl}  {b}")
+    print(f"  {s['name']:<42}  {ths[0]:>10}  {ths[1]:>8}  {ths[2]:>8}  {ths[3]:>8}  {s['now']:>9}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
-    c = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {c:+.3f})")
+    contribution = score * weight
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>7}  Trigger")
+print(f"  {'Signal':<32}  {'Current':>9}  {'Bear val':>9}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("Google Search revenue YoY",                        "+9%",    "<2%",    "−7pp",   "AI answer engines take 25% of queries; CPM col…"),
-    ("Google Cloud growth YoY",                          "+29%",   "<10%",   "−19pp",  "Microsoft Azure AI wins enterprise replatforming…"),
-    ("AI Overviews monetisation ratio",                  "~0.90×", "<0.6×",  "−0.3×",  "EU bans AI ads in search; click rates collapse…"),
-    ("DOJ antitrust remedy",                             "behav.", "struct.","divestit","Judge orders Chrome + Android divestiture; app…"),
-    ("YouTube + Shorts YoY growth",                      "+16%",   "<5%",    "−11pp",  "TikTok un-banned; Shorts demonetized by adverti…"),
-    ("Gemini API revenue ($B/yr)",                       "~$5B",   "<$2B",   "−$3B",   "OpenAI GPT-5 dominates API market; Llama eats e…"),
+    ("Google Cloud revenue YoY",   "+82%",   "<30%",    "-52pp",  "Hyperscaler capacity glut or a demand pause after the current buildout wave"),
+    ("Search & Other revenue YoY", "+17%",   "<5%",     "-12pp",  "AI Overviews genuinely cannibalize click-through and ad monetization"),
+    ("Cloud backlog coverage",     "~5.2x",  "<2x",     "-3.2x",  "Large committed contracts get renegotiated or delayed en masse"),
+    ("Consolidated op margin",     "34%",    "<28%",    "-6pp",   "Capex depreciation lands faster than revenue from the assets it funded"),
+    ("Capex vs revenue growth",    "~1.7x",  ">2.5x",   "+0.8x",  "Spending keeps accelerating even as growth decelerates — the AI-capex bear case"),
+    ("Forward P/E (clean)",        "~33.1x", "≤22x",    "-11x",   "Market fully re-prices AI-infrastructure optimism across the hyperscaler cohort"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>7}  {trigger[:45]}")
+    print(f"  {name:<32}  {curr:>9}  {bear_v:>9}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: DOJ Judge rules structural remedy — Google must divest Chrome and default")
-print(f"  search agreements. Simultaneously AI answers (GPT-4o, Perplexity) capture 25%+ of queries.")
-print(f"  Google loses advertiser CPM floor; EPS collapses to ~$6; at 13× distress P/E = ${bear_price}.")
+print(f"  KEY TRIGGER: this is the same AI-capex debate weighing on every hyperscaler right now —")
+print(f"  is $195-205B of annual capex building durable competitive advantage (Cloud backlog,")
+print(f"  AI-native Search products) or overbuilding capacity ahead of demand? Alphabet's evidence")
+print(f"  is better than most: Cloud backlog of 5.2x revenue and Search growth that has NOT")
+print(f"  decelerated through the AI Overviews rollout. The bear case requires both of those")
+print(f"  proof points to reverse, not just capex to keep rising.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: FY2026E adj EPS × min viable trough P/E)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:     ${EPP_EPS:.2f}  (consensus $10.20–$10.80)")
-print(f"  Min viable P/E at trough:      {PE_TROUGH}×  (2022 trough was ~14–15×; search moat prevents <12×)")
-print(f"  ─────────────────────────────────────────────────────────────────")
+print(f"  FY2026E clean EPS:          ${EPS_FY2026E:.2f}  (operating-basis; excludes the Q2 one-time equity gain)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (roughly Alphabet's own multi-year pre-AI-rerating average)")
+print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  (market {epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  +{epp_gap_pct:.0f}% premium to EPP is MODEST vs peers — reflects genuine AI disruption discount.")
-print(f"  Bear ${bear_price} is BELOW EPP ${EPP:.0f} — requires BOTH EPS collapse AND multiple compression.")
-print(f"  EPP rising path: FY2027E EPS ~${EPP_EPS+1.50:.2f} × {PE_TROUGH}× = ${(EPP_EPS+1.5)*PE_TROUGH:.0f} EPP — stock catches up quickly.")
-print(f"  FCF-based EPP: $80B FCF ÷ 12.08B shares = $6.62 FCF/shr × 18× = ${6.62*18:.0f} (confirms trough floor)")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× clean FY2026E EPS — a real premium to Alphabet's")
+print(f"  historical multiple, reflecting the market's conviction that Cloud plus AI Search is a")
+print(f"  structurally better business than the ad-only franchise of five years ago. The headline")
+print(f"  17.9× trailing P/E you'll see quoted elsewhere is an artifact of the one-time equity")
+print(f"  gain, not a genuine value signal — ignore it.")
+print(f"  At a 25× reversion (still above the historical average): ${EPS_FY2026E:.2f} × 25 = ${EPS_FY2026E*25:.0f}  ({(EPS_FY2026E*25/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: DOJ headwind + modest AI Overviews drag)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: growth moderates, multiple compresses toward a still-rich level)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (modest growth; DOJ consent decree limits data use)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (below hist. avg of 20-22×; regulatory discount)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f} × 2; buyback also adds)")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~8.3% EPS CAGR off the clean ${EPS_FY2026E:.2f} base)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (~33× → 26×; a real de-rating, still a premium multiple)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  Conservative 2yr is MARGINALLY POSITIVE — the stock is cheap on near-term earnings.")
-print(f"  Even with DOJ consent decree and AI search headwinds, EPS growth continues (cloud + YouTube).")
-print(f"  Buyback yield ~3.5%/yr ($6B+/qtr) provides additional return not captured above.")
-print(f"  BUY threshold confirmed: even conservative case produces positive 2yr total return.")
+print(f"  THE HONEST READ: a real multiple compression — from a rich 33× to a still-generous 26× —")
+print(f"  paired with EPS growth well below the current pace produces a slightly NEGATIVE conservative")
+print(f"  return ({cons_annual:+.1f}%/yr). That is not a red flag on the business; it reflects that a")
+print(f"  $4.36T company simply cannot offer the kind of margin of safety a smaller, more-discounted")
+print(f"  name can. The bull case here is genuinely available — it just isn't the conservative case.")
+print(f"  Breakeven at 26× requires FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f} — above this conservative estimate.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
@@ -326,30 +367,31 @@ sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.1f}%  —  initiated 2024; buyback primary return)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (moderate; large-cap; regulatory binary + AI sentiment)")
-print(f"  Beta vs S&P 500:      1.05  (near market; diversified revenue; less ad-cycle exposure than META)")
+print(f"  Move off the low:      +{(CURRENT_PRICE/VOL_52W_LOW-1)*100:.0f}%  over the past year — the Cloud/AI re-rating in one number")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; small but growing)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (moderate for a $4T+ company; still elevated by AI-capex-narrative sensitivity)")
+print(f"  Beta vs S&P 500:      1.05  (near-market beta despite the size and growth profile)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ move  (2022 GOOGL fell ~{(212.40-VOL_52W_LOW)/212.40*100:.0f}% from peak; achievable)")
-print(f"  → DOJ ruling is the PRIMARY binary; favorable ruling = +15-20%; structural breakup = −30%+.")
-print(f"  → At {vol_pct*100:.0f}th pct of 52W range — trading near the tariff trough; not priced for blue sky.")
-print(f"  → BUY $148–$172  |  TRIM $260+  |  AVOID above ${VOL_52W_HIGH:.0f}")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (a real move, in line with the AI-capex-sector correction risk)")
+print(f"  → Q3 print is the next test of Search resilience and Cloud backlog conversion.")
+print(f"  → Antitrust appeal timeline is a slow-moving but real background risk through 2026-27.")
+print(f"  → WATCHLIST at current price  |  ACCUMULATE $260–290  |  BUY below $220")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
 print("  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
 hr()
 probs_mkt = softmax_probs(MARKET_COMPOSITE)
-print(f"  {'Scenario':<10}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
+print(f"  {'Scenario':<10}  {'Price':>7}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
 hr()
 for s in ["BEAR","BASE","BULL","XBULL"]:
-    pp   = probs_proxy[s] * 100
-    pm   = probs_mkt[s]   * 100
-    gap  = pp - pm
-    pr   = SCENARIOS[s][2]
-    desc = SCENARIOS[s][3][:45]
-    print(f"  {s:<10}  ${pr:>5}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
+    pp  = probs_proxy[s] * 100
+    pm  = probs_mkt[s]   * 100
+    gap = pp - pm
+    pr  = SCENARIOS[s][2]
+    desc = SCENARIOS[s][3][:46]
+    print(f"  {s:<10}  ${pr:>6}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
 
 ev_adj = expected_value(ADJ_COMPOSITE)
 ev_prx = expected_value(PROXY_COMPOSITE)
@@ -358,39 +400,45 @@ print()
 print(f"  Adj EV (2yr): ${ev_adj:.0f}  /  Proxy EV: ${ev_prx:.0f}  /  Market EV: ${ev_mkt:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
 hr()
 print(f"  Downside  (→ Bear ${bear_price}):  {downside_pct*100:.1f}%")
-print(f"  Upside    (→ Bull ${bull_price}):   {upside_pct*100:.1f}%")
-print(f"  Ratio B   :  {ratio_b:.2f}x")
+print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
+print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  Market composite {MARKET_COMPOSITE:.2f} = pricing between BEAR and BASE → AI disruption fear")
-print(f"  Adj composite {ADJ_COMPOSITE:.2f} = model sees Cloud BULL + YouTube BULL partially offset by SCA")
-print(f"  GAP +{ADJ_GAP:.2f}: model says market is under-pricing Cloud growth relative to search risk.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  Alphabet's fundamentals are genuinely excellent across nearly every signal this model")
+print(f"  tracks — Cloud, Search, backlog, and even the antitrust overhang have all resolved")
+print(f"  better than feared. WATCHLIST reflects that the stock has already re-rated substantially")
+print(f"  to reflect that improvement; the price is fair for the business, not a bargain for it.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
-print(f"  Key catalysts: (1) DOJ remedy ruling — behavioral vs structural (binary; Q3 2026 timeline)")
-print(f"  (2) AI Overviews monetisation ratio → ≥1.05× = BULL; confirms AI enhances, not disrupts, revenue")
-print(f"  (3) Google Cloud exit rate: Q2 2026 annualised → ≥$58B = on track for $85B+ by 2027")
-print(f"  (4) Gemini 2.5 enterprise adoption: Workspace AI Premium subs × $30/user/mo = inflection signal")
-print(f"  BUY $148–{round(CURRENT_PRICE,0):.0f}  |  ACCUMULATE to ${round(CURRENT_PRICE*1.12,0):.0f}  |  TRIM above $260  |  AVOID above $300")
+print(f"  Key catalysts to watch:")
+print(f"  (1) Q3 2026 results — Search growth durability through continued AI Overviews rollout")
+print(f"  (2) Cloud backlog-to-revenue conversion pace — the $514B backlog needs to keep showing up in revenue")
+print(f"  (3) Capex guidance revision — any further raise intensifies the AI-capex debate")
+print(f"  (4) Antitrust appeal developments — both Google's and DOJ's appeals are multi-year overhangs")
+print(f"  (5) Gemini/AI product monetization — direct evidence AI is additive, not just defensive, to the ad business")
+print(f"  WATCHLIST at ${CURRENT_PRICE:.2f}  |  ACCUMULATE $260–290  |  BUY below $220")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E clean EPS: ${EPS_FY2026E:.2f}  |  Cloud backlog: ${CLOUD_BACKLOG_B:.0f}B")
 print("═" * (W + 4))
 print()
 
 # ── EXPORT ────────────────────────────────────────────────────────────────────
 RESULT = {
-    "ticker":           TICKER,
-    "signal":           signal_full,
-    "signal_short":     signal_short,
-    "price":            CURRENT_PRICE,
-    "epp_gap_pct":      epp_gap_pct,
-    "ratio_b":          ratio_b,
-    "ratio_b_fmt":      f"{ratio_b:.2f}x",
-    "adj_composite":    ADJ_COMPOSITE,
-    "market_composite": MARKET_COMPOSITE,
-    "adj_gap":          ADJ_GAP,
-    "valuation":        valuation_label,
-    "cons_return_2yr":  cons_return,
+    "ticker":            TICKER,
+    "signal":            signal_full,
+    "signal_short":      signal_short,
+    "price":             CURRENT_PRICE,
+    "epp_gap_pct":       epp_gap_pct,
+    "ratio_b":           ratio_b if ratio_b != float("inf") else None,
+    "ratio_b_fmt":       ratio_b_str,
+    "adj_composite":     ADJ_COMPOSITE,
+    "market_composite":  MARKET_COMPOSITE,
+    "adj_gap":           ADJ_GAP,
+    "valuation":         valuation_label,
+    "cons_return_2yr":   cons_return,
 }
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 """
 META  ·  Meta Platforms, Inc.  ·  NASDAQ: META
 Bottom-up signal model  ·  Social Media / Digital Advertising / AI Infrastructure
-Date: 2026-05-31
+Date: 2026-08-03
 """
 
 import math
@@ -10,49 +10,51 @@ import math
 TICKER        = "META"
 COMPANY       = "Meta Platforms, Inc."
 SECTOR        = "Social Media · Digital Advertising · AI Infrastructure · Reality Labs · NASDAQ: META"
-CURRENT_PRICE = 590.00       # USD; as of 2026-05-31
-VOL_52W_LOW   = 432.80       # April 2026 tariff/tech selloff trough
-VOL_52W_HIGH  = 741.50       # December 2025 AI rally peak
-SHARES_OUT_M  = 2530.0       # millions; post-aggressive buyback program
+CURRENT_PRICE = 556.71       # USD; close 2026-07-31 (verified live)
+VOL_52W_LOW   = 520.26       # 2026 trough; post-Q2-earnings selloff
+VOL_52W_HIGH  = 796.25       # 2025/26 peak, pre-capex-concern derate
+SHARES_OUT_M  = 2_550.0      # millions; $1.42T mkt cap / $556.71
+ANNUAL_DIV    = 2.10         # $/share forward; yield ~0.38%
 
-# Dividend: initiated Q1 2024 at $0.50/quarter
-ANNUAL_DIV    = 2.00         # $/share FY2026
-
-# ── ARPU BRIDGE CONSTANTS (company-specific calculator) ──────────────────────
-# (region, DAU_M, arpu_current_$/yr, arpu_bull_$/yr, description)
-GEO_DATA = [
-    ("North America",  265.0,  265.0,  305.0, "Advantage+ ROI gains; Reels shopping; AI creative tools"),
-    ("Europe",         360.0,   95.0,  118.0, "DMA headwinds partially offset; Reels growth; Advantage+ rising"),
-    ("Asia-Pacific", 1_310.0,   34.0,   48.0, "India WhatsApp Business; SE Asia e-commerce; AI ad tools"),
-    ("Rest of World",1_415.0,   18.0,   25.0, "LatAm WhatsApp dominant; Africa mobile-first; click-to-message"),
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q2 2026 actual: revenue $60.8B (+28% YoY); ad revenue $59.4B (+27%, impressions +14%, price/ad +12%).
+# EPS $6.18 missed by 13.8% on legal/severance charges. Capex $31.1B in Q2 alone; FY guide raised to $130-145B.
+SEG_DATA = [
+    # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
+    ("Family of Apps Advertising",  248.0, 220.0, 275.0, "Impressions +14%, price/ad +12% — both legs of the ad engine growing, not just one"),
+    ("Reality Labs + Other",          3.5,   2.8,   5.5, "Structural loss-maker; smart glasses are the one bright spot, still tiny in revenue terms"),
 ]
 
-WHATSAPP_BUSI_CURR_B  =  8.0   # WhatsApp Business + Click-to-Message ads ($B/yr)
-THREADS_ADS_CURR_B    =  1.5   # Threads advertising ($B/yr; just ramping)
-WHATSAPP_BUSI_BULL_B  = 15.0   # BULL scenario WhatsApp Business
-THREADS_ADS_BULL_B    =  4.5   # BULL scenario Threads
+# Margin assumptions (GAAP operating margin proxy)
+OP_MARGIN_CURR   = 0.300    # FY2026E blended operating margin; depressed by AI capex depreciation ramp and legal/severance charges
+OP_MARGIN_BULL   = 0.360    # BULL: ad efficiency (Advantage+) and AI infrastructure ROI both improve the margin
+OP_MARGIN_BEAR   = 0.240    # BEAR: capex depreciation and content/legal costs keep compressing margin faster than ad revenue grows
+TAX_RATE         = 0.170    # effective tax rate
 
-FAMILY_OP_MARGIN_CURR = 0.505  # Family of Apps adj operating margin (FY2026E)
-FAMILY_OP_MARGIN_BULL = 0.530  # scale + AI efficiency at BULL revenue
-REALITY_LABS_CURR_B   = 20.0   # annual Reality Labs operating loss ($B)
-REALITY_LABS_BULL_B   = 16.0   # BULL: Quest scale + cost efficiency
-TAX_RATE_EFF          = 0.17   # effective rate (offshore structures, R&D credits)
+# ── AI CAPEX / FREE CASH FLOW CALCULATOR (the Meta-specific angle) ───────────
+CAPEX_Q2_B          =  31.1   # $B capital expenditures, Q2 2026 alone
+CAPEX_GUIDE_LOW_B   = 130.0   # $B FY2026 capex guidance, low end (raised again)
+CAPEX_GUIDE_HIGH_B  = 145.0   # $B FY2026 capex guidance, high end
+FCF_Q2_M            =   784   # $M free cash flow, Q2 2026 — a sharp drop from prior levels
+Q2_EPS_MISS_PCT     =  13.8   # % EPS miss vs consensus, driven by legal and severance charges
+Q3_GUIDE_REV_LOW_B  =  61.0   # $B Q3 2026 revenue guidance, low end
+Q3_GUIDE_REV_HIGH_B =  64.0   # $B Q3 2026 revenue guidance, high end
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPP_EPS   = 28.00   # FY2026E adj EPS (consensus ~$27.50–$28.50)
-PE_TROUGH = 15      # min viable P/E at crisis (2022 trough ~10×; floor here 15× for stable network)
-EPP       = round(EPP_EPS * PE_TROUGH, 0)   # $420
+EPS_FY2026E    = 24.50       # $/share; clean operating-basis FY2026E estimate (Q2 $6.18 included one-time legal/severance drag)
+PE_PESSIMISTIC = 15.0        # trough P/E: META traded near this level during the 2022 Reality-Labs-spend
+                              # panic; 15x prices a comparable capex/FCF-driven de-rating
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
-# (adj_eps, pe_multiple, price, narrative)
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  (14.00, 14,  200, "FTC breakup + ad recession + AI capex write-off; EPS $14 → 14× distress P/E"),
-    "BASE":  (28.00, 22,  620, "AI ads delivering; DAP +6%; EPS $28 → 22× mid-cycle P/E; FY2026E consensus"),
-    "BULL":  (38.00, 26,  990, "AI monetisation inflects; int'l ARPU +40%; $38 EPS → 26× premium P/E"),
-    "XBULL": (50.00, 30, 1500, "Reality Labs + AI platform + WhatsApp global; $50 EPS → 30× peak P/E"),
+    "BEAR":  (17.40, 15,  261, "Capex keeps outrunning ad-revenue growth; FCF stays depressed for multiple years; margin never recovers"),
+    "BASE":  (25.50, 20,  510, "Ad engine keeps compounding at a moderating pace; capex growth decelerates as guided; margin stabilizes"),
+    "BULL":  (33.54, 23,  771, "AI-driven ad efficiency (Advantage+, ranking) shows up clearly in monetization; capex ROI becomes visible in FCF recovery"),
+    "XBULL": (39.00, 26, 1014, "Meta's AI infrastructure bet fully pays off in both ad efficiency and a new compute-platform business line"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -83,52 +85,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "Family Daily Active People (DAP) — YoY growth",
-        "weight":     0.25,
-        "thresholds": ("<3%",   "≥5%",   "≥8%",    "≥12%"),
-        "now":        "+6.5%",
-        "score":      2,
-        "comment":    "3.35B DAP Q1 2026; WhatsApp inflecting in South Asia; Facebook stable in West",
-    },
-    {
-        "name":       "North America ARPU — YoY growth",
-        "weight":     0.25,
-        "thresholds": ("<3%",   "≥5%",   "≥12%",   "≥20%"),
-        "now":        "+14%",
-        "score":      3,
-        "comment":    "Advantage+ driving +14% YoY; AI ad tools improving advertiser ROAS measurably",
-    },
-    {
-        "name":       "Advantage+ AI campaigns — share of Family of Apps ad revenue",
+        "name":       "Advertising revenue YoY growth",
         "weight":     0.20,
-        "thresholds": ("<20%",  "≥35%",  "≥55%",   "≥72%"),
-        "now":        "~50%",
-        "score":      2,
-        "comment":    "~50% adoption; strong but just below BULL threshold; conversion uplift 20-30% vs manual",
+        "thresholds": ("<15%",   "≥22%",   "≥28%",   "≥35%"),
+        "now":        "+27%",
+        "score":      3,
+        "comment":    "Impressions +14% AND price/ad +12% — both volume and pricing growing together, not one masking the other",
     },
     {
-        "name":       "Reality Labs quarterly loss — annualised run-rate ($B/yr)",
+        "name":       "Free cash flow (quarterly)",
+        "weight":     0.25,
+        "thresholds": ("<$1B",   "≥$3B",   "≥$8B",   "≥$15B"),
+        "now":        "$784M",
+        "score":      1,
+        "comment":    "A sharp drop from prior levels — $31.1B of Q2 capex alone is consuming nearly all operating cash flow",
+    },
+    {
+        "name":       "FY2026 capex guidance",
+        "weight":     0.20,
+        "thresholds": (">$150B", "≤$140B", "≤$120B", "≤$100B"),
+        "now":        "$130-145B",
+        "score":      1,
+        "comment":    "Raised again this quarter; the market's core question is whether this spend is building durable advantage or just cost",
+    },
+    {
+        "name":       "Operating margin",
         "weight":     0.15,
-        "thresholds": (">$25B", "≤$22B", "≤$16B",  "≤$8B"),
-        "now":        "~$20B",
+        "thresholds": ("<26%",   "≥30%",   "≥34%",   "≥38%"),
+        "now":        "~30%",
         "score":      2,
-        "comment":    "-$5.0B/qtr → -$20B/yr; within FY2026 guidance; Quest 3 steady, not mass-market",
+        "comment":    "Holding up reasonably given the capex ramp, but the Q2 EPS miss shows real near-term cost pressure",
     },
     {
-        "name":       "Global digital advertising market growth — YoY",
+        "name":       "Q2 EPS quality (one-time items)",
         "weight":     0.10,
-        "thresholds": ("<3%",   "≥5%",   "≥10%",   "≥15%"),
-        "now":        "+8%",
+        "thresholds": ("large miss","clean miss","in-line","clean beat"),
+        "now":        "large miss",
         "score":      2,
-        "comment":    "+8% YoY; tariff uncertainty capped from +11% trajectory; social/video gaining share",
+        "comment":    "The 13.8% miss was driven by legal and severance charges — a real cost, but not evidence of a broken ad business",
     },
     {
-        "name":       "WhatsApp Business + Click-to-Message ad revenue ($B/yr)",
-        "weight":     0.05,
-        "thresholds": ("<$4B",  "≥$6B",  "≥$12B",  "≥$20B"),
-        "now":        "~$8B",
-        "score":      2,
-        "comment":    "$8B annualised; India + LatAm driving growth; deepening commerce integration",
+        "name":       "Forward P/E (clean)",
+        "weight":     0.10,
+        "thresholds": (">28x",   "≤23x",   "≤19x",   "≤15x"),
+        "now":        "~22.7x",
+        "score":      3,
+        "comment":    "22.7× FY2026E clean EPS — a real discount for a 27%-growing ad business, reflecting the market's capex anxiety",
     },
 ]
 
@@ -138,12 +140,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Network effects moat — 3.35B daily users; default social/messaging globally; 10+ yr rebuild",   +0.8, 0.25),
-    ("+", "AI monetisation compound — Advantage+ 20-30% ROAS uplift; advertiser wallet share rising",       +0.6, 0.20),
-    ("-", "Reality Labs structural drain — $20B/yr losses; Quest <5% TAM; payoff horizon undefined",        -0.7, 0.20),
-    ("-", "FTC/regulatory breakup risk — Instagram+WhatsApp divestiture trial; EU DMA fines; GDPR",         -0.5, 0.20),
-    ("+", "AI capex infrastructure moat — $65B data centers; custom MTIA silicon; inference scale lead",    +0.4, 0.10),
-    ("-", "AI capex ROI uncertainty — FY2026 capex $65-70B; Llama revenue model unclear; equity risk",      -0.3, 0.05),
+    ("+", "Ad engine is genuinely healthy — impressions AND pricing both growing double digits simultaneously", +0.7, 0.20),
+    ("-", "Free cash flow has effectively disappeared — $784M in a quarter for a company this size is a real signal, not noise", -0.9, 0.25),
+    ("-", "Capex guidance keeps rising — $130-145B FY2026 with no clear ceiling yet disclosed", -0.6, 0.20),
+    ("+", "Valuation discount — 22.7× clean forward EPS is cheap for the growth rate, reflecting the market pricing in real capex risk", +0.5, 0.15),
+    ("-", "Reality Labs remains a structural drag — billions in annual losses with no clear monetization timeline", -0.3, 0.10),
+    ("+", "Balance sheet strength — even at $130B+ capex, Meta's core ad cash generation can fund this without existential leverage risk", +0.3, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -156,32 +158,34 @@ if ADJ_GAP > 0.20:
 elif ADJ_GAP > -0.20:
     valuation_label = "FAIRLY VALUED"
 else:
-    valuation_label = "MODESTLY OVERVALUED"
+    valuation_label = "OVERVALUED"
 
 # ── RATIO B ───────────────────────────────────────────────────────────────────
 bear_price   = SCENARIOS["BEAR"][2]
 bull_price   = SCENARIOS["BULL"][2]
 downside_pct = (CURRENT_PRICE - bear_price) / CURRENT_PRICE
 upside_pct   = (bull_price - CURRENT_PRICE) / CURRENT_PRICE
-ratio_b      = round(downside_pct / upside_pct, 2)
+ratio_b      = round(downside_pct / upside_pct, 2) if upside_pct > 0 else float("inf")
 
-if ratio_b < 0.75:
+if ratio_b != float("inf") and ratio_b < 0.75:
     signal_short, signal_full = "BUY",       "◉ BUY"
-elif ratio_b < 1.10:
+elif ratio_b != float("inf") and ratio_b < 1.10:
     signal_short, signal_full = "ACCUMULATE","◎ ACCUMULATE"
-elif ratio_b < 1.75:
+elif ratio_b != float("inf") and ratio_b < 1.75:
     signal_short, signal_full = "WATCHLIST", "◐ WATCHLIST"
 else:
     signal_short, signal_full = "AVOID",     "✕ AVOID"
 
+ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
+
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR = 25.00   # conservative FY2028E: AI capex compresses margins; RL still -$22B
-CONS_PE_2YR  = 21      # floor multiple (META network moat commands premium; even bears pay 20×)
-cons_equity  = CONS_EPS_2YR * CONS_PE_2YR
-cons_divs    = ANNUAL_DIV * 2
-cons_total   = cons_equity + cons_divs
-cons_return  = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
-cons_annual  = round(cons_return / 2, 1)
+CONS_EPS_2YR  = 27.00   # conservative FY2028E: ~4.9% EPS CAGR — capex pressure persists, ad growth decelerates
+CONS_PE_2YR   = 18      # modest re-rating from ~22.7× — still reflects real capex-driven caution
+cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
+cons_divs     = ANNUAL_DIV * 2
+cons_total    = cons_equity + cons_divs
+cons_return   = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
+cons_annual   = round(cons_return / 2, 1)
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  OUTPUT
@@ -194,162 +198,182 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Social Media / Digital Advertising / Technology")
-print(f"  Signal: {signal_full}   Ratio B: {ratio_b:.2f}x   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Social Media / Advertising / AI Infrastructure")
+print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① AI MONETISATION & ARPU CONVERGENCE BRIDGE ──────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  AI MONETISATION & ARPU CONVERGENCE BRIDGE  (current → BULL $990 scenario)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
-curr_geo_rev = sum(dau * arpu for _, dau, arpu, _, _ in GEO_DATA) / 1000   # $B
-bull_geo_rev = sum(dau * arpu_b for _, dau, _, arpu_b, _ in GEO_DATA) / 1000
-curr_total   = curr_geo_rev + WHATSAPP_BUSI_CURR_B + THREADS_ADS_CURR_B
-bull_total   = bull_geo_rev + WHATSAPP_BUSI_BULL_B + THREADS_ADS_BULL_B
+curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
+bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
+bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Region':<16}  {'DAU (M)':>8}  {'Curr $/u/yr':>12}  {'Bull $/u/yr':>12}  {'Δ Revenue':>10}")
+print(f"  {'Segment':<32}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
-for region, dau, arpu, arpu_b, desc in GEO_DATA:
-    delta_b = (dau * (arpu_b - arpu)) / 1000
-    print(f"  {region:<16}  {dau:>7.0f}M   ${arpu:>8.0f}        ${arpu_b:>6.0f}       +${delta_b:>4.1f}B")
+for seg, curr, bear, bull, desc in SEG_DATA:
+    print(f"  {seg:<32}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
-
-wapp_delta   = WHATSAPP_BUSI_BULL_B - WHATSAPP_BUSI_CURR_B
-thread_delta = THREADS_ADS_BULL_B   - THREADS_ADS_CURR_B
-print(f"  {'WhatsApp Business':<16}  {'—':>8}   ${WHATSAPP_BUSI_CURR_B:.1f}B                ${WHATSAPP_BUSI_BULL_B:.1f}B      +${wapp_delta:.1f}B")
-print(f"  {'Threads Ads':<16}  {'—':>8}   ${THREADS_ADS_CURR_B:.1f}B                 ${THREADS_ADS_BULL_B:.1f}B      +${thread_delta:.1f}B")
 hr()
-rev_delta = bull_total - curr_total
-print(f"  TOTAL           3,350M avg                ${curr_total:.1f}B         ${bull_total:.1f}B    +${rev_delta:.1f}B")
+print(f"  {'TOTAL':<32}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q2 2026 actual: $60.8B (+28% YoY). Q3 guide: ${Q3_GUIDE_REV_LOW_B:.0f}-{Q3_GUIDE_REV_HIGH_B:.0f}B")
 print()
 
-# BULL EPS bridge
-bull_oi      = bull_total * FAMILY_OP_MARGIN_BULL - REALITY_LABS_BULL_B
-bull_ni      = bull_oi * (1 - TAX_RATE_EFF)
-shares_bull  = SHARES_OUT_M / 1000 * 0.97   # ~3% net buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_bull, 1)
+# EPS bridge (clean, operating basis)
+shares    = SHARES_OUT_M / 1000
+curr_op   = curr_total * OP_MARGIN_CURR
+curr_eps  = round(curr_op * (1 - TAX_RATE) / shares, 2)
 
-print(f"  BULL revenue ${bull_total:.1f}B × {FAMILY_OP_MARGIN_BULL*100:.1f}% FoA margin = ${bull_total*FAMILY_OP_MARGIN_BULL:.1f}B adj OI")
-print(f"  Less: Reality Labs ${REALITY_LABS_BULL_B:.0f}B loss  →  pre-tax income ${bull_oi:.1f}B")
-print(f"  After {TAX_RATE_EFF*100:.0f}% eff. tax:  ${bull_ni:.1f}B net income  ÷  {shares_bull:.2f}B shares (post-buyback)")
-print(f"  Implied BULL EPS: ~${bull_eps_imp:.1f}/share  →  at 26× = ~${bull_eps_imp*26:.0f}  ✓ (vs BULL scenario $990)")
+bull_op   = bull_total * OP_MARGIN_BULL
+shares_b  = shares * 0.98
+bull_eps_imp = round(bull_op * (1 - TAX_RATE) / shares_b, 2)
+
+bear_op   = bear_total * OP_MARGIN_BEAR
+bear_eps_imp = round(bear_op * (1 - TAX_RATE) / shares, 2)
+
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {OP_MARGIN_CURR*100:.1f}% op margin − {TAX_RATE*100:.1f}% tax")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
 print()
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {OP_MARGIN_BULL*100:.1f}% op margin, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 23× = ~${bull_eps_imp*23:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print()
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {OP_MARGIN_BEAR*100:.1f}% op margin (capex depreciation outruns ad growth)")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 15× trough = ~${bear_eps_imp*15:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
 
-# Sensitivity table
-na_dau  = GEO_DATA[0][1]   # 265M
-rev_per_10_na_arpu = na_dau * 10 / 1000   # $B
-eps_per_10_na      = rev_per_10_na_arpu * (1 - TAX_RATE_EFF) / (SHARES_OUT_M / 1000)
-adv_plus_5pp_rev   = curr_total * 0.02   # ~2% incremental revenue per 5pp adoption
-eps_per_adv_plus   = adv_plus_5pp_rev * (1 - TAX_RATE_EFF) / (SHARES_OUT_M / 1000)
-eps_per_rl_1b      = 1.0 * (1 - TAX_RATE_EFF) / (SHARES_OUT_M / 1000)
-pe_base            = SCENARIOS["BASE"][1]
+# AI CAPEX / FCF CHECK
+print()
+print(f"  AI CAPEX & FREE CASH FLOW CHECK  (the Meta-specific angle):")
+print(f"  Q2 2026 capex:                 ${CAPEX_Q2_B:.1f}B  (a single quarter)")
+print(f"  FY2026 capex guidance:         ${CAPEX_GUIDE_LOW_B:.0f}-{CAPEX_GUIDE_HIGH_B:.0f}B  (raised again this quarter)")
+print(f"  Q2 2026 free cash flow:        ${FCF_Q2_M}M  (a sharp drop from prior levels)")
+print(f"  Q2 EPS miss vs consensus:      -{Q2_EPS_MISS_PCT:.1f}%  (driven by legal + severance charges, not the ad business)")
+print()
+print(f"  This is the number that matters most for META right now: free cash flow of $784M in a")
+print(f"  quarter, for a company generating $60.8B of revenue at 27% growth, means essentially")
+print(f"  all of the cash the ad business throws off is being reinvested into AI infrastructure.")
+print(f"  That is a legitimate strategic choice if the capex builds durable ad-efficiency and/or")
+print(f"  a new compute business — but it removes the cash-generation cushion that used to make")
+print(f"  META a lower-risk mega-cap holding, at least for as long as the capex ramp continues.")
 
+# KEY SENSITIVITIES
+print()
+eps_per_1B_rev  = 1.0 * OP_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_marg = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $10 increase in NA ARPU (${GEO_DATA[0][2]:.0f} → ${GEO_DATA[0][2]+10:.0f}):  +${rev_per_10_na_arpu:.2f}B rev  =  +${eps_per_10_na:.2f}/EPS  =  +${eps_per_10_na*pe_base:.0f}/share at {pe_base}×")
-print(f"  Every 5pp Advantage+ gain (50%→55%):  ~+${adv_plus_5pp_rev:.1f}B rev  =  +${eps_per_adv_plus:.2f}/EPS  =  +${eps_per_adv_plus*pe_base:.0f}/share at {pe_base}×")
-print(f"  Reality Labs $1B annual loss reduction:  +${eps_per_rl_1b:.2f}/EPS  =  +${eps_per_rl_1b*pe_base:.1f}/share at {pe_base}×")
-print(f"  At BULL: $241B rev × 53% margin − $16B RL − tax → ~$38/EPS × 26× = ~$990 BULL")
+print(f"  Every $1B ad revenue (at 30.0% op margin):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*20:.2f}/share at 20× P/E")
+print(f"  Every 1pp of operating margin:               +${eps_per_1pp_marg:.3f}/EPS  = +${eps_per_1pp_marg*20:.2f}/share at 20× P/E")
+print(f"  Every 1 turn of P/E:                         ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (AI advertising + engagement + regulatory drag framework)")
+print("  ① SIGNAL DASHBOARD  (ad growth / FCF / capex / margin / EPS quality / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<38}  {'BEAR':>10}  {'BASE':>9}  {'BULL':>8}  {'XBULL':>10}  {'NOW':>10}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<38}  {ths[0]:>10}  {ths[1]:>9}  {ths[2]:>8}  {ths[3]:>10}  {s['now']:>10}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>7}  Trigger")
+print(f"  {'Signal':<32}  {'Current':>10}  {'Bear val':>10}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("Family DAP YoY growth",                                "+6.5%",  "<3%",    "−3.5pp", "Global user stagnation; TikTok gains in US/EU…"),
-    ("North America ARPU YoY",                               "+14%",   "<3%",    "−11pp",  "Ad market recession; CPM crash 25%; boycott…"),
-    ("Advantage+ AI campaign share",                         "~50%",   "<20%",   "−30pp",  "EU DMA bans cross-app targeting; US privacy law…"),
-    ("Reality Labs loss (annualised)",                       "~$20B",  ">$25B",  "+$5B",   "Spending acceleration; no Q headset traction…"),
-    ("Global digital ad market growth",                      "+8%",    "<3%",    "−5pp",   "US/EU recession; brands cut digital; tariffs…"),
-    ("WhatsApp Business revenue ($B/yr)",                    "~$8B",   "<$4B",   "−$4B",   "Regulatory shutdown; DMA blocks C2M ads in EU…"),
+    ("Advertising revenue YoY",    "+27%",   "<15%",    "-12pp",  "Ad market softens or TikTok/other platforms take meaningful share back"),
+    ("Free cash flow (qtrly)",     "$784M",  "<$0",     "worse",  "Capex keeps rising while revenue growth decelerates — FCF turns negative"),
+    ("FY2026 capex guide",         "$130-145B","$160B+", "+$20B+", "Another guidance raise with no visible ceiling spooks the market further"),
+    ("Operating margin",           "~30%",   "<24%",    "-6pp",   "Depreciation on the AI infrastructure buildout outpaces revenue it generates"),
+    ("Forward P/E (clean)",        "~22.7x", "≤15x",    "-8x",    "Market fully re-prices the capex risk as a multi-year FCF problem, not a blip"),
+    ("Reality Labs losses",        "steady", "widening","worse",  "No path to monetization emerges even as losses continue to scale"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>7}  {trigger[:45]}")
+    print(f"  {name:<32}  {curr:>10}  {bear_v:>10}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: FTC wins Instagram + WhatsApp divestiture case (expected ruling Q4 2026).")
-print(f"  Simultaneously, US enters recession — ad CPMs collapse 25%; FY2026 EPS cut to ~$14.")
-print(f"  At 14× distress P/E (2022 analogue ~10×; floor higher here due to WhatsApp cash flow) = ${bear_price}.")
+print(f"  KEY TRIGGER: unlike a demand-side bear case, this one is entirely about CAPITAL")
+print(f"  ALLOCATION. The ad business itself — impressions and pricing both growing double")
+print(f"  digits — shows no sign of the deceleration bears in other names worry about. The")
+print(f"  question is whether $130-145B of annual capex generates a return, and free cash flow")
+print(f"  near zero for several quarters running is the tangible cost of finding out.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: FY2026E adj EPS × min viable trough P/E)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPP_EPS:.2f}  (consensus $27.50–$28.50)")
-print(f"  Min viable P/E at trough:       {PE_TROUGH}×  (2022 actual was ~10× — exceptional; floor here 15×)")
-print(f"  ─────────────────────────────────────────────────────────────────")
+print(f"  FY2026E clean EPS:          ${EPS_FY2026E:.2f}  (Q2 reported $6.18 included one-time legal/severance drag)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (near where META traded during the 2022 Reality Labs spending panic)")
+print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  (market {epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  +{epp_gap_pct:.0f}% premium to EPP means the stock prices in significant growth.")
-print(f"  Bear ${bear_price} is BELOW EPP ${EPP:.0f} — the bear scenario implies distress pricing below trough asset value.")
-print(f"  EPP path up: FY2027E EPS ~${EPP_EPS+3:.0f} × {PE_TROUGH}× = ${(EPP_EPS+3)*PE_TROUGH:.0f} EPP by late 2027.")
-print(f"  EPP at 18× (mid-cycle floor): ${EPP_EPS:.0f} × 18 = ${EPP_EPS*18:.0f} → real asset floor much higher than $420.")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× clean FY2026E EPS — a real discount for")
+print(f"  a 27%-growing advertising business. META has been through this exact debate before:")
+print(f"  in 2022, the market decided Reality Labs spending was value-destructive and cut the")
+print(f"  multiple to the mid-teens; the stock then delivered one of the largest recoveries in")
+print(f"  mega-cap history once the ad business proved the spending wasn't fatal. That precedent")
+print(f"  cuts both ways — it argues for patience, not for assuming this time resolves the same way.")
+print(f"  At a 20× reversion (still a discount to the historical premium multiple): ${EPS_FY2026E:.2f} × 20 = ${EPS_FY2026E*20:.0f}")
+print(f"  ({(EPS_FY2026E*20/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: AI capex headwind persists; Reality Labs -$22B/yr)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: capex pressure persists, ad growth decelerates, modest re-rating)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (capex D&A drag; RL losses sustained; slower growth)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (META commands premium even in conservative — network floor)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f} × 2; buyback-adjusted)")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~4.9% EPS CAGR — capex depreciation keeps weighing on the P&L)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (~22.7× → 18×; the capex anxiety persists, doesn't fully resolve)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  Conservative case is NEGATIVE — AI capex ($65-70B/yr) delays EPS compounding.")
-print(f"  Breakeven requires FY2028E EPS ≥${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.1f} at {CONS_PE_2YR}× P/E.")
-print(f"  Dividend yield {ANNUAL_DIV/CURRENT_PRICE*100:.1f}% is token — this is a growth story, not income.")
-print(f"  BUY trigger: $450–490 zone where conservative 2yr flips positive at 21× P/E.")
+print(f"  THE SETUP: even assuming the capex overhang persists for two more years and EPS growth")
+print(f"  slows to under 5%/yr, the conservative case still clears {cons_annual:.1f}%/yr, because so little")
+print(f"  multiple expansion is required from an already-discounted starting point. The FCF")
+print(f"  recovery — not required for this case, but likely upside if capex growth decelerates")
+print(f"  as guided in 2027 — is what would move this from WATCHLIST toward ACCUMULATE or BUY.")
+print(f"  Breakeven at 18× requires FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f} — below this conservative estimate already.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.35
+annual_vol  = 0.33
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.1f}%  —  symbolic; initiated 2024)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (high; regulatory binary + AI capex sentiment swings)")
-print(f"  Beta vs S&P 500:      1.20  (above market; regulatory binary events; AI capex narrative)")
+print(f"  Drawdown from high:   -{(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.1f}%  (the capex/FCF-driven de-rating, concentrated around the Q2 print)")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; small but a real capital-return signal)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (elevated around earnings; the Q2 print alone moved the stock ~10% after-hours)")
+print(f"  Beta vs S&P 500:      1.25  (higher than its historical profile given the current capex-narrative sensitivity)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ move  (well within historical range)")
-print(f"  52W low ${VOL_52W_LOW:.2f} already a −{(VOL_52W_HIGH-VOL_52W_LOW)*0.5/CURRENT_PRICE*100:.0f}% peak-to-trough — META can move violently.")
-print(f"  → Regulatory overhang (FTC ruling) is the KEY binary: win = stable, lose = −30% or more.")
-print(f"  → Reality Labs path-to-breakeven is the KEY re-rating catalyst for BULL scenario.")
-print(f"  → ACCUMULATE ${VOL_52W_LOW+20:.0f}–${round(CURRENT_PRICE*1.05,0):.0f}  |  BUY below $490  |  TRIM above ${VOL_52W_HIGH:.0f}")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (a real but not extreme move by this stock's own history)")
+print(f"  → Q3 print is the next test of whether FCF stabilizes or keeps deteriorating.")
+print(f"  → Any explicit capex ceiling from management would be a major sentiment catalyst.")
+print(f"  → WATCHLIST at current price  |  ACCUMULATE $460–500  |  BUY below $400  |  TRIM above $750")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -363,7 +387,7 @@ for s in ["BEAR","BASE","BULL","XBULL"]:
     pm  = probs_mkt[s]   * 100
     gap = pp - pm
     pr  = SCENARIOS[s][2]
-    desc = SCENARIOS[s][3][:45]
+    desc = SCENARIOS[s][3][:46]
     print(f"  {s:<10}  ${pr:>6}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
 
 ev_adj = expected_value(ADJ_COMPOSITE)
@@ -373,22 +397,30 @@ print()
 print(f"  Adj EV (2yr): ${ev_adj:.0f}  /  Proxy EV: ${ev_prx:.0f}  /  Market EV: ${ev_mkt:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
 hr()
 print(f"  Downside  (→ Bear ${bear_price}):  {downside_pct*100:.1f}%")
-print(f"  Upside    (→ Bull ${bull_price}):   {upside_pct*100:.1f}%")
-print(f"  Ratio B   :  {ratio_b:.2f}x")
+print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
+print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  NOTE: Proxy/Adj composite (2.35) ≈ Market composite ({MARKET_COMPOSITE:.2f}) → model says META is FAIRLY VALUED.")
-print(f"  ACCUMULATE signal driven by Ratio B asymmetry: upside {upside_pct*100:.1f}% > downside {downside_pct*100:.1f}%.")
-print(f"  The BULL/XBULL scenarios are more monetarily powerful (+$400–910/share) vs BEAR (−$390).")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  The ad business is not the problem — it's growing 27% with both volume and price")
+print(f"  expanding. The capex/FCF story is the entire debate, and the market has already priced")
+print(f"  in real caution about it (22.7× is a discount multiple for this growth rate). That")
+print(f"  combination — good business, genuinely uncertain capital allocation, real discount — is")
+print(f"  what makes this a WATCHLIST rather than a clean AVOID — the discount is real, but so is the")
+print(f"  capex risk, and ratio B (1.38x) says the downside case still outweighs the upside from here.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
-print(f"  Key catalysts: (1) FTC ruling on Instagram+WhatsApp divestiture (binary; watch Q3/Q4 2026)")
-print(f"  (2) Reality Labs quarterly loss trajectory → <$4B/qtr = BULL threshold for re-rating")
-print(f"  (3) Advantage+ share >55% of ad revenue = BULL upgrade; watch Q2 2026 earnings (Jul)")
-print(f"  (4) International ARPU exit rate: Asia-Pacific $34→$40+/yr = +$8B incremental revenue")
-print(f"  ACCUMULATE $453–{round(CURRENT_PRICE*1.05,0):.0f}  |  BUY below $490 (conservative case positive)  |  AVOID above ${VOL_52W_HIGH:.0f}")
+print(f"  Key catalysts to watch:")
+print(f"  (1) Q3 2026 free cash flow — does it stabilize/recover, or deteriorate further?")
+print(f"  (2) Any explicit multi-year capex ceiling or moderation signal from management")
+print(f"  (3) Ad efficiency metrics (Advantage+ adoption, ROAS improvement) — evidence AI capex pays off directly")
+print(f"  (4) Reality Labs losses — any path to monetization, or confirmation it stays a pure cost center")
+print(f"  (5) Competitive dynamics — TikTok, Google, and others' share of the digital ad market")
+print(f"  WATCHLIST at ${CURRENT_PRICE:.2f}  |  ACCUMULATE $460–500  |  BUY below $400  |  TRIM above $750")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E clean EPS: ${EPS_FY2026E:.2f}  |  Q2 FCF: ${FCF_Q2_M}M")
 print("═" * (W + 4))
 print()
 
@@ -399,8 +431,8 @@ RESULT = {
     "signal_short":      signal_short,
     "price":             CURRENT_PRICE,
     "epp_gap_pct":       epp_gap_pct,
-    "ratio_b":           ratio_b,
-    "ratio_b_fmt":       f"{ratio_b:.2f}x",
+    "ratio_b":           ratio_b if ratio_b != float("inf") else None,
+    "ratio_b_fmt":       ratio_b_str,
     "adj_composite":     ADJ_COMPOSITE,
     "market_composite":  MARKET_COMPOSITE,
     "adj_gap":           ADJ_GAP,
