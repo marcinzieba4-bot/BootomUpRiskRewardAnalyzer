@@ -1,7 +1,7 @@
 """
-AVGO  ·  Broadcom Inc.  ·  NYSE: AVGO
-Bottom-up signal model  ·  Semiconductors / AI Custom Silicon (XPU) / VMware Software
-Date: 2026-06-09
+AVGO  ·  Broadcom Inc.  ·  NASDAQ: AVGO
+Bottom-up signal model  ·  AI Semiconductors / Custom XPU / Networking / VMware Infrastructure Software
+Date: 2026-08-03
 """
 
 import math
@@ -9,46 +9,55 @@ import math
 # ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
 TICKER        = "AVGO"
 COMPANY       = "Broadcom Inc."
-SECTOR        = "Semiconductors · AI Custom Silicon (XPU) · VMware Software · NYSE: AVGO"
-CURRENT_PRICE = 420.00       # USD; as of 2026-06-09
-VOL_52W_LOW   = 278.00       # January 2026 tariff trough
-VOL_52W_HIGH  = 512.40       # November 2025 post-Q4 FY2025 AI beat peak
-SHARES_OUT_M  = 4_720.0      # millions; post 10:1 split July 2024
-ANNUAL_DIV    = 2.36         # $/share FY2026; growing; Hock Tan capital return
+SECTOR        = "AI Semiconductors · Custom XPU · Networking · VMware Infrastructure Software · NASDAQ: AVGO"
+CURRENT_PRICE = 390.74      # USD; close 2026-08-03
+VOL_52W_LOW   = 281.61      # 2025/26 trough
+VOL_52W_HIGH  = 495.00      # 2026 AI-semiconductor-cycle peak
+SHARES_OUT_M  = 4_900.0     # millions diluted (non-GAAP); ~4.76B basic shares outstanding
+ANNUAL_DIV    = 2.36        # $/share; quarterly ~$0.59, growing alongside AI semi profitability
 
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B); fiscal year ends October 2026
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q1 actual: rev $19.31B (+29% YoY), non-GAAP EPS $2.05. Q2 actual: rev $22.19B (+48% YoY), non-GAAP
+# EPS $2.44, GAAP EPS $1.91; AI semiconductor revenue $10.8B (+143% YoY); AI semi bookings >$30B vs
+# $10.8B shipped. Q3 guide: rev $29.4B (+84% YoY), AI semi ~$16.0B (+200%+), infra software ~$8.9B
+# (+31%). FY2026 full-year AI semi guide $56B (+180% YoY); FY2027 AI semi guidance reiterated $100B+.
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("AI Custom Silicon (XPU)",      20.0,  8.0, 32.0, "Google XPU v6, Meta MTIA 3; 2 new hyperscaler wins in pipeline"),
-    ("Networking Silicon",            7.0,  4.0, 11.0, "Tomahawk 5/Jericho 3; AI cluster spine + ToR fabric"),
-    ("Server Storage Connectivity",   3.0,  2.0,  4.0, "PCIe 6/CXL; enterprise & cloud storage fabric"),
-    ("Broadband",                     2.0,  1.5,  3.0, "PON/DSL CPE; low growth; stable cash flow"),
-    ("Industrial / Other Semi",       1.5,  1.0,  2.0, "Embedded; SAN HBA; declining priority"),
-    ("VMware Infrastructure SW",     24.0, 17.0, 30.0, "35K enterprise accounts migrating to subscription; 90%+ gross margin"),
-    ("Security / CA / Other SW",      4.0,  3.5,  5.0, "Carbon Black + CA Tech; steady ARR; minimal growth"),
+    ("Semiconductor Solutions (AI/XPU + networking)", 68.0, 40.0, 95.0, "AI semi bookings ($30B+) already outrun shipments ($10.8B) by 3x — the backlog is the bull case's foundation"),
+    ("Infrastructure Software (VMware)",               35.0, 30.0, 42.0, "Recurring, high-margin, sticky post-migration revenue; the floor under the bear case"),
 ]
 
 # Margin assumptions
-GROSS_MARGIN_CURR = 0.780   # blended; VMware software mix lifting toward 80%
-GROSS_MARGIN_BULL = 0.800   # BULL: VMware matures at 90%+ GM; XPU scale
-OPEX_FIXED_B      = 10.5    # non-GAAP R&D + SG&A (excl SBC and amortization)
-TAX_RATE          = 0.080   # effective low; Cayman IP / Singapore structures
+GROSS_MARGIN_CURR = 0.711   # FY2026E blended (semis ~65-70%, VMware software ~90%+)
+GROSS_MARGIN_BEAR = 0.550   # BEAR: an AI-capex pause hits semi pricing/mix hard even as software holds up
+GROSS_MARGIN_BULL = 0.740   # BULL: AI semi scale + rising software mix lift the blend further
+OPEX_FIXED_B      = 14.0    # R&D + SG&A ($B, non-GAAP)
+TAX_RATE          = 0.140   # effective tax rate
+
+# ── CUSTOM XPU / HYPERSCALER CALCULATOR (the Broadcom-specific angle) ────────
+AI_SEMI_Q2_ACTUAL_B      = 10.8   # $B; Q2 FY2026 AI semiconductor revenue
+AI_SEMI_Q2_YOY_PCT       = 143    # % YoY growth, Q2 AI semiconductor revenue
+AI_SEMI_Q3_GUIDE_B       = 16.0   # $B; Q3 FY2026 AI semiconductor revenue guide
+AI_SEMI_FY26_GUIDE_B     = 56     # $B; full-year FY2026 AI semiconductor revenue guide (+180% YoY)
+AI_SEMI_FY27_GUIDE_B     = 100    # $B; FY2027 AI semiconductor revenue guide (reiterated, "in excess of")
+AI_BOOKINGS_Q2_B         = 30     # $B; Q2 AI semiconductor bookings (vs $10.8B shipped — ~3x book-to-bill)
+HYPERSCALE_XPU_CUSTOMERS = 6      # confirmed/rumored hyperscale custom XPU customers (Google, Meta, Anthropic, OpenAI + 2 unnamed)
+XPU_JV_VALUE_B           = 35     # $B; Apollo/Blackstone-backed AI XPU platform partnership
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 9.20        # FY2026E adj EPS (consensus $9.00–$9.50 non-GAAP; FY2026 Oct 2026)
-PE_PESSIMISTIC = 22.0        # trough: software ARR + ASIC moat justifies floor above commodity semi
+EPS_FY2026E    = 10.40       # $/share FY2026E non-GAAP; Q1 $2.05 + Q2 $2.44 + Q3E ~$2.85 + Q4E ~$3.05
+PE_PESSIMISTIC = 16.0        # trough P/E: a genuine semis-cycle-trough multiple, not a distressed one
 EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 8.80, 22,  194, "AI CapEx freeze + VMware churn acceleration; XPU design loss; EPS $8.80 → 22× panic"),
-    "BASE":  (14.00, 32,  448, "3 XPU hyperscalers + VMware steadying at 88% renewal; FY2028E EPS $14 → 32× = $448"),
-    "BULL":  (20.00, 35,  700, "5-hyperscaler XPU sweep; sovereign AI; VMware 95%+ renewal; FY2028E EPS $20 → 35× = $700"),
-    "XBULL": (30.00, 40, 1200, "AVGO = foundational AI chip layer; every frontier lab custom silicon; EPS $30 → 40×"),
+    "BEAR":  ( 4.25, 16,   68,  "Hyperscaler AI capex pauses; custom XPU orders slow sharply even as VMware software holds up"),
+    "BASE":  (12.84, 33,  424,  "AI semi growth moderates toward the $56B FY2026 guide but doesn't reaccelerate much beyond it"),
+    "BULL":  (15.61, 32,  500,  "The $100B+ FY2027 AI semi guide is hit on schedule; the $30B bookings backlog converts to shipments"),
+    "XBULL": (19.12, 34,  650,  "Custom XPU expands well beyond the current 6 hyperscale customers; AI semi revenue keeps compounding into FY2028"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -79,52 +88,52 @@ def back_solve_market_composite(price, tol=0.001):
 # Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
 SIGNALS = [
     {
-        "name":       "AI Custom Silicon (XPU) revenue YoY",
-        "weight":     0.30,
-        "thresholds": ("<20%",    "≥40%",  "≥80%",   "≥140%"),
-        "now":        "+64%",
-        "score":      3,
-        "comment":    "FY2025 $12.2B → FY2026E $20B; Google XPU v6 + Meta MTIA 3 ramp; 2 new wins confirmed",
-    },
-    {
-        "name":       "VMware ACV growth YoY",
+        "name":       "AI semiconductor revenue YoY growth",
         "weight":     0.25,
-        "thresholds": ("<5%",     "≥12%",  "≥22%",   "≥35%"),
-        "now":        "+18%",
-        "score":      2,
-        "comment":    "Subscription migration 88% complete; $24B ARR at 90%+ gross margin; churn stabilizing",
+        "thresholds": ("<30%",   "≥80%",   "≥130%",  "≥180%"),
+        "now":        "+143%",
+        "score":      3,
+        "comment":    "Q2 AI semi revenue +143% YoY; Q3 guided to accelerate further to +200%+",
     },
     {
-        "name":       "Hyperscaler AI CapEx guidance YoY",
+        "name":       "AI semi bookings vs shipments (book-to-bill)",
         "weight":     0.20,
-        "thresholds": ("<+10%",   "≥+20%", "≥+40%",  "≥+70%"),
-        "now":        "+38%",
-        "score":      2,
-        "comment":    "Meta $65B, MSFT $80B, Google $75B, Amazon $105B; AVGO gets ~30% of AI silicon capex",
+        "thresholds": ("<1.0x",  "≥1.5x",  "≥2.5x",  "≥3.5x"),
+        "now":        "~2.8x",
+        "score":      3,
+        "comment":    "$30B booked vs $10.8B shipped in Q2 — a large, real backlog cushion for the growth guide",
     },
     {
-        "name":       "XPU design-win pipeline (hyperscalers)",
+        "name":       "Total revenue YoY growth",
         "weight":     0.15,
-        "thresholds": ("0 new",   "1 win", "2 wins", "3+ wins"),
-        "now":        "2 wins",
+        "thresholds": ("<20%",   "≥35%",   "≥50%",   "≥70%"),
+        "now":        "+48%",
         "score":      3,
-        "comment":    "2 new publicly confirmed hyperscaler XPU engagements beyond Google/Meta; tape-out 2026",
+        "comment":    "Q2 +48% YoY; Q3 guided to accelerate to +84% YoY on the AI semi ramp",
     },
     {
-        "name":       "Non-GAAP blended gross margin",
-        "weight":     0.05,
-        "thresholds": ("<72%",    "≥75%",  "≥78%",   "≥82%"),
-        "now":        "78.5%",
+        "name":       "VMware/infra software growth",
+        "weight":     0.15,
+        "thresholds": ("<10%",   "≥20%",   "≥28%",   "≥35%"),
+        "now":        "+31%",
         "score":      3,
-        "comment":    "VMware software (90%+ GM) + XPU mix lifting blended; approaching 80% structural level",
+        "comment":    "Post-acquisition VMware integration is delivering real, sticky, high-margin growth — not just cost cuts",
     },
     {
-        "name":       "VMware enterprise renewal rate",
-        "weight":     0.05,
-        "thresholds": ("<80%",    "≥88%",  "≥93%",   "≥97%"),
-        "now":        "~91%",
+        "name":       "Custom XPU customer base",
+        "weight":     0.15,
+        "thresholds": ("1-2",    "3-4",    "5-6",    "7+"),
+        "now":        "6 (4 named + 2 unnamed)",
+        "score":      3,
+        "comment":    "Google, Meta, Anthropic, OpenAI plus two unnamed hyperscale customers — a genuinely diversified custom-silicon base",
+    },
+    {
+        "name":       "Forward P/E",
+        "weight":     0.10,
+        "thresholds": (">45x",   "≤37x",   "≤30x",   "≤24x"),
+        "now":        "~37.6x",
         "score":      2,
-        "comment":    "91% renewal; Nutanix/Hyper-V taking some seats but premium accounts renewing; ACV growing",
+        "comment":    "37.6× FY2026E non-GAAP EPS — a rich multiple even against this growth rate",
     },
 ]
 
@@ -134,12 +143,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Custom ASIC switching cost moat — 3–5yr qualification cycle; Google/Meta locked; unique IP",   +0.8, 0.20),
-    ("+", "VMware software flywheel — 35K enterprise accounts; $24B ARR at 90%+ GM; Hock Tan pricing",   +0.6, 0.20),
-    ("-", "Hyperscaler CapEx concentration — Google ~40% of XPU revenue; single-program binary risk",     -0.6, 0.20),
-    ("-", "VMware churn / Nutanix displacement — Hyper-V + NTNX winning budget-conscious accounts",       -0.5, 0.15),
-    ("+", "Hock Tan capital allocation — serial M&A compounder; $50B+ buyback authorization; div growth", +0.4, 0.15),
-    ("-", "Valuation gap — 45× FY2026E for sum-of-parts semi + software; re-rate risk if AI slows",       -0.3, 0.10),
+    ("+", "The $30B AI semi bookings vs $10.8B shipped is a real, quantified backlog — not a promotional growth claim", +0.6, 0.20),
+    ("-", "Custom XPU demand still concentrates in a handful of hyperscale customers; any single pause hits hard", -0.5, 0.20),
+    ("-", "Valuation (37.6× forward) already prices in most of the FY2027 $100B+ AI semi guide being hit on schedule", -0.6, 0.20),
+    ("+", "VMware gives Broadcom a large, recurring, non-cyclical software base most AI-semi peers lack entirely", +0.5, 0.20),
+    ("+", "Reiterated (not raised, but also not walked back) FY2027 guidance signals management confidence in the backlog", +0.3, 0.10),
+    ("-", "AI capex is ultimately hyperscaler-discretionary spend; a broader AI-infrastructure digestion cycle would hit all of it at once", -0.4, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -173,8 +182,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 11.00   # FY2028E conservative: 9% EPS CAGR (VMware matures; XPU competitive entry)
-CONS_PE_2YR   = 28      # rerates from ~45× toward growth-justified 28× as hyper-growth phase ends
+CONS_EPS_2YR  = 13.50   # conservative FY2028E: modest growth off FY2026E, AI semi growth decelerates but doesn't reverse
+CONS_PE_2YR   = 28      # a real de-rating from ~37.6× as growth-rate skepticism increases
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -192,156 +201,158 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Semiconductors / AI Custom Silicon (XPU) / VMware Software")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  AI Semiconductors / Custom XPU / VMware")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<26}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<48}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<26}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<48}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<26}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<48}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}")
+print(f"  Q1 $19.31B → Q2 $22.19B (+48%) → Q3 $29.4B guide (+84%). AI semi: Q2 $10.8B → Q3 $16.0B guide → FY26 $56B guide")
 print()
 
 # EPS bridge
+shares    = SHARES_OUT_M / 1000
 curr_gp   = curr_total * GROSS_MARGIN_CURR
 curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_eps  = round(curr_oi * (1 - TAX_RATE) / shares, 2)
 
-bull_gp      = bull_total * GROSS_MARGIN_BULL
-bull_oi      = bull_gp - OPEX_FIXED_B
-bull_ni      = bull_oi * (1 - TAX_RATE)
-shares_b     = shares * 0.97   # ~1.5%/yr buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_gp   = bull_total * GROSS_MARGIN_BULL
+bull_oi   = bull_gp - OPEX_FIXED_B * 1.08
+shares_b  = shares * 0.97
+bull_eps_imp = round(bull_oi * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp      = bear_total * GROSS_MARGIN_CURR * 0.96   # mix shift back to semi (lower margin)
-bear_oi      = bear_gp - OPEX_FIXED_B * 0.95           # partial cost response
-bear_ni      = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_gp   = bear_total * GROSS_MARGIN_BEAR
+bear_oi   = bear_gp - OPEX_FIXED_B * 1.02
+bear_eps_imp = round(max(0, bear_oi) * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 35× = ~${bull_eps_imp*35:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − opex, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × {SCENARIOS['BULL'][1]}× = ~${bull_eps_imp*SCENARIOS['BULL'][1]:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.96:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At {PE_PESSIMISTIC:.0f}× trough P/E (software ARR floor) = ~${bear_eps_imp*PE_PESSIMISTIC:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_BEAR*100:.1f}% GM (AI capex pause hits semi mix) − opex")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × {SCENARIOS['BEAR'][1]}× trough = ~${bear_eps_imp*SCENARIOS['BEAR'][1]:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# CUSTOM XPU / HYPERSCALER CHECK
+print()
+print(f"  CUSTOM XPU / HYPERSCALER CHECK  (the Broadcom-specific angle):")
+print(f"  AI semi bookings vs shipped (Q2):     ${AI_BOOKINGS_Q2_B}B booked vs ${AI_SEMI_Q2_ACTUAL_B}B shipped  (~{AI_BOOKINGS_Q2_B/AI_SEMI_Q2_ACTUAL_B:.1f}x book-to-bill)")
+print(f"  AI semi revenue trajectory:            Q2 ${AI_SEMI_Q2_ACTUAL_B}B (+{AI_SEMI_Q2_YOY_PCT}%) → Q3 ${AI_SEMI_Q3_GUIDE_B}B guide → FY26 ${AI_SEMI_FY26_GUIDE_B}B guide → FY27 ${AI_SEMI_FY27_GUIDE_B}B+ guide")
+print(f"  Hyperscale custom XPU customers:       {HYPERSCALE_XPU_CUSTOMERS}  (Google, Meta, Anthropic, OpenAI + 2 unnamed)")
+print(f"  Apollo/Blackstone AI XPU platform JV:  ${XPU_JV_VALUE_B}B")
+print()
+print(f"  This sits at the far downstream end of the same AI infrastructure buildout lifting Lam Research's")
+print(f"  equipment orders and Micron's HBM pricing — Broadcom's custom XPUs are what hyperscalers actually")
+print(f"  deploy the fabbed, packaged memory-attached silicon into. The backlog (bookings 3x shipments) is a")
+print(f"  genuine, quantified signal that this isn't purely sentiment-driven — but it also means the market")
+print(f"  has a lot of very specific, checkable numbers to hold Broadcom accountable to each quarter.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_xpu    = 1.0 * 0.65 * (1 - TAX_RATE) / shares   # XPU at ~65% gross margin
-eps_per_1B_vmware = 1.0 * 0.90 * (1 - TAX_RATE) / shares   # VMware at ~90% gross margin
-eps_per_1pp_gm    = curr_total * 0.01 * (1 - TAX_RATE) / shares
-
+eps_per_1B_rev  = 1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_gm  = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B XPU revenue (65% margin):     +${eps_per_1B_xpu:.3f}/EPS  = +${eps_per_1B_xpu*32:.1f}/share at 32× P/E")
-print(f"  Every $1B VMware ACV (90% margin):      +${eps_per_1B_vmware:.3f}/EPS  = +${eps_per_1B_vmware*32:.1f}/share at 32× P/E")
-print(f"  1pp GM expansion (VMware mix/pricing):  +${eps_per_1pp_gm:.3f}/EPS  = +${eps_per_1pp_gm*32:.1f}/share at 32× P/E")
-print(f"  1 new hyperscaler XPU win:               +$3–5B peak-year revenue = ~${eps_per_1B_xpu*4*32:.0f}–${eps_per_1B_xpu*5*32:.0f}/share at 32× P/E")
+print(f"  Every $1B revenue (at 71.1% GM):      +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*33:.2f}/share at 33× P/E")
+print(f"  Every 1pp of gross margin:            +${eps_per_1pp_gm:.3f}/EPS  = +${eps_per_1pp_gm*33:.2f}/share at 33× P/E")
+print(f"  Every 1 turn of P/E:                  ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (XPU revenue / VMware ACV / hyperscaler CapEx / design wins framework)")
+print("  ① SIGNAL DASHBOARD  (AI semi growth / bookings / total growth / VMware / XPU base / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<44}  {'BEAR':>7}  {'BASE':>7}  {'BULL':>7}  {'XBULL':>7}  {'NOW':>24}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<44}  {ths[0]:>7}  {ths[1]:>7}  {ths[2]:>7}  {ths[3]:>7}  {s['now']:>24}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<32}  {'Current':>10}  {'Bear val':>10}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("AI XPU revenue YoY",             "+64%",    "<+20%",  "−44pp",  "Google defects to in-house NTT silicon project"),
-    ("VMware ACV growth YoY",           "+18%",    "<+5%",   "−13pp",  "Churn spikes; Hyper-V free tier wins SMB wave"),
-    ("Hyperscaler AI CapEx YoY",        "+38%",    "<+10%",  "−28pp",  "Macro recession → IT freeze → $50B capex cuts"),
-    ("XPU design-win pipeline",         "2 wins",  "0 wins", "−2",     "Intel/Marvell win competitive bake-offs at Apple"),
-    ("Non-GAAP gross margin",           "78.5%",   "<72%",   "−6.5pp", "Supply chain cost shock + XPU pricing pressure"),
-    ("VMware renewal rate",             "~91%",    "<80%",   "−11pp",  "Microsoft bundles Hyper-V free in Azure credits"),
+    ("AI semi revenue YoY",         "+143%",  "<30%",    "-113pp", "Hyperscalers pause custom XPU orders after over-provisioning capacity in 2025-26"),
+    ("Book-to-bill",                "~2.8x",  "<1.0x",   "reversal","The $30B backlog gets cancelled or pushed out rather than converting to shipments"),
+    ("Total revenue YoY",           "+48%",   "<20%",    "-28pp+", "AI semi deceleration drags down the consolidated growth rate"),
+    ("VMware growth",               "+31%",   "<10%",    "-21pp+", "Post-migration software growth normalizes faster than expected"),
+    ("Custom XPU customer base",    "6",      "1-2",     "-4/5",   "Concentration risk materializes — one or two customers dominate and then pull back"),
+    ("Forward P/E",                 "~37.6x", ">45x",    "re-rate","Market fully re-prices AI semis for a slower, more cyclical growth trajectory"),
 ]
-for name, curr_v, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr_v:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+for name, curr, bear_v, move, trigger in bear_triggers:
+    print(f"  {name:<32}  {curr:>10}  {bear_v:>10}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: A major hyperscaler (most likely Google at ~40% of XPU revenue) announces")
-print(f"  it is transitioning future AI accelerator roadmap to fully in-house design, ending AVGO")
-print(f"  XPU partnership. Simultaneously, VMware churn accelerates as Nutanix and Microsoft Hyper-V")
-print(f"  offer free migration incentives. EPS collapses toward $8.80 → 22× trough P/E = ${bear_price}.")
-print(f"  Note: ${bear_price} represents a ~54% drawdown — extreme; requires dual fundamental breaks.")
-print(f"  VMware $17B ARR floor + Networking silicon provide a durable $150–180 earnings floor.")
+print(f"  KEY TRIGGER: Broadcom's bear case isn't really about VMware (sticky, recurring, already de-risked) —")
+print(f"  it's entirely about whether the AI semiconductor bookings backlog converts to shipments on schedule.")
+print(f"  A 3x book-to-bill ratio is reassuring, but bookings are cancellable in a way shipped, recognized")
+print(f"  revenue is not. The single biggest swing factor is hyperscaler capex discipline, not Broadcom execution.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (consensus $9.00–$9.50; non-GAAP; GAAP ~$6.50 incl. amortization)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (software ARR + ASIC moat; above commodity semi 12–15×)")
+print(f"  FY2026E EPS estimate:       ${EPS_FY2026E:.2f}  (Q1 $2.05 + Q2 $2.44 + Q3E ~$2.85 + Q4E ~$3.05 non-GAAP)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (a genuine semis-cycle-trough multiple, not distressed)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP means the market prices in significant BULL execution.")
-print(f"  At ${CURRENT_PRICE:.2f} and FY2026E EPS ${EPS_FY2026E:.2f}, the P/E is ~{CURRENT_PRICE/EPS_FY2026E:.0f}× — a premium that")
-print(f"  reflects the unique XPU + VMware software duality. The risk: AI CapEx cycle mean-reversion")
-print(f"  compresses both multiples simultaneously.")
-print(f"  EPP path: FY2028E EPS ~${CONS_EPS_2YR:.2f} × {PE_PESSIMISTIC:.0f}× = ${CONS_EPS_2YR*PE_PESSIMISTIC:.0f} floor by late 2028 (EPP growing ~9%/yr).")
-above_or_below = "above" if EPS_FY2026E * 28 > CURRENT_PRICE else "below"
-print(f"  At 28× mid-cycle P/E: ${EPS_FY2026E:.2f} × 28 = ${EPS_FY2026E*28:.0f}  — {abs(EPS_FY2026E*28 - CURRENT_PRICE)/CURRENT_PRICE*100:.0f}% {above_or_below} current price.")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E EPS — a steep premium that prices in most")
+print(f"  of the FY2027 $100B+ AI semi guide being hit essentially on schedule. The EPP floor assumes a full")
+print(f"  reversion to a normalized semis multiple on THIS YEAR'S earnings — a real, not hypothetical, risk")
+print(f"  if AI semi growth merely decelerates rather than reverses.")
+print(f"  At a 26× reversion (still a growth premium): ${EPS_FY2026E:.2f} × 26 = ${EPS_FY2026E*26:.0f}  ({(EPS_FY2026E*26/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: P/E rerates toward growth rate; XPU hyper-growth phase ends)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: modest growth off FY2026E, AI semi growth decelerates)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (9% EPS CAGR: XPU scale + VMware ARR maturity)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from ~45× toward growth-justified 28×)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr; Hock Tan growth trajectory)")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~14% total EPS growth over 2yr — well below the current trajectory)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (~37.6× → 28×; a real de-rating)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
-up_down = "▼" if cons_total < CURRENT_PRICE else "▲"
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({up_down}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-above_below2 = "below" if cons_total < CURRENT_PRICE else "above"
-print(f"  THE CORE TENSION: conservative case at ${cons_total:.0f} is {above_below2} current price.")
-print(f"  P/E compression from ~45× to 28× (a −38% multiple re-rate) absorbs EPS growth.")
-print(f"  For conservative 2yr to break even at 28× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~{((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2026E - 1)*100:.1f}% EPS growth by FY2028E — requires BULL execution.")
-print(f"  Breakeven at 35× P/E (sustained AI premium): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 35:.2f}")
-print(f"  ACCUMULATE trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.85 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.95 + cons_divs * 0.5, 0):.0f} (conservative case positive at 28× P/E; ratio_b <1.0×)")
+print(f"  THE HONEST READ: even assuming the AI semi bookings backlog converts to shipments roughly as guided,")
+print(f"  a meaningful multiple de-rating from today's 37.6× is enough to produce a {'positive' if cons_return > 0 else 'roughly flat-to-negative'} conservative return.")
+print(f"  This is not a name offering a wide margin of safety — you are paying up front for the $100B+ FY2027")
+print(f"  AI semi guide to be hit close to on schedule, not for it to already be de-risked.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
@@ -352,16 +363,15 @@ sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  growing; Hock Tan capital return)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; AI CapEx binary + VMware integration overhang)")
-print(f"  Beta vs S&P 500:      1.45  (high; AI-sentiment-driven; XPU binary amplifier)")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; growing alongside AI semi profitability)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (elevated — a high-growth AI semi name with real cyclical exposure)")
+print(f"  Beta vs S&P 500:      1.40  (above market; a levered play on AI infrastructure capex)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (unusual; requires fundamental break)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (Jan 2026 tariff trough) already a peak-to-trough move of ~46%.")
-print(f"  → Google XPU partnership continuity is THE KEY binary; any defection = −30%+ move.")
-print(f"  → VMware Nov 2026 renewal cohort confirms or breaks the ARR stabilization thesis.")
-print(f"  → AVOID above $550  |  WATCHLIST $450–500  |  ACCUMULATE $370–420  |  BUY below $320")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (large, consistent with a full AI-capex-cycle reversal)")
+print(f"  → Q3 FY2026 print (early Sept) is the next test of whether the $16B AI semi guide is hit or exceeded.")
+print(f"  → Hyperscaler capex commentary (Google, Meta, Microsoft, Amazon) is the leading indicator between prints.")
+print(f"  → {signal_short} at ${CURRENT_PRICE:.2f}  |  Add below $310  |  Trim above $470")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -370,11 +380,11 @@ hr()
 probs_mkt = softmax_probs(MARKET_COMPOSITE)
 print(f"  {'Scenario':<10}  {'Price':>7}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
 hr()
-for s in ["BEAR", "BASE", "BULL", "XBULL"]:
-    pp   = probs_proxy[s] * 100
-    pm   = probs_mkt[s]   * 100
-    gap  = pp - pm
-    pr   = SCENARIOS[s][2]
+for s in ["BEAR","BASE","BULL","XBULL"]:
+    pp  = probs_proxy[s] * 100
+    pm  = probs_mkt[s]   * 100
+    gap = pp - pm
+    pr  = SCENARIOS[s][2]
     desc = SCENARIOS[s][3][:46]
     print(f"  {s:<10}  ${pr:>6}  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
 
@@ -389,41 +399,23 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-above_below3 = "ABOVE" if MARKET_COMPOSITE > ADJ_COMPOSITE else "BELOW"
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is {above_below3} the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 — between")
-if MARKET_COMPOSITE < 2.0:
-    mkt_band = "BEAR and BASE"
-elif MARKET_COMPOSITE < 2.75:
-    mkt_band = "BASE and BULL"
-elif MARKET_COMPOSITE < 3.75:
-    mkt_band = "BULL and XBULL"
-else:
-    mkt_band = "at XBULL"
-if ADJ_COMPOSITE < 2.0:
-    adj_band = "BEAR and BASE"
-elif ADJ_COMPOSITE < 2.75:
-    adj_band = "BASE and BULL"
-elif ADJ_COMPOSITE < 3.75:
-    adj_band = "BULL and XBULL"
-else:
-    adj_band = "XBULL"
-print(f"  {mkt_band}. The model scores fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0 — between {adj_band}.")
-print(f"  The gap ({ADJ_GAP:+.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  XPU BULL execution at 64% YoY is real — but priced at BULL/XBULL. VMware ACV and")
-print(f"  hyperscaler CapEx guidance are both at BASE (score 2), creating a valuation mismatch.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  Broadcom's AI semiconductor backlog is real and quantified, and VMware provides a genuine software")
+print(f"  floor most AI-semi peers lack — but at 37.6× forward earnings, the stock needs the $100B+ FY2027")
+print(f"  guide to land close to on schedule, and the risk/reward skews toward downside if it merely decelerates.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) Q3 FY2026 earnings (August 2026) — XPU revenue beat and new design-win announcement = BULL trigger")
-print(f"  (2) VMware renewal cohort (12-month mark, Nov 2026) — churn rate confirmation = key binary")
-print(f"  (3) Hyperscaler capex guidance cuts — each 10% CapEx reduction = ~8% AVGO revenue impact")
-print(f"  (4) Additional XPU customer announcements — Apple/Microsoft/Oracle XPU = re-rating catalyst")
-print(f"  (5) Hock Tan M&A — another transformative acquisition ($40B+) could reset growth trajectory")
-print(f"  AVOID above $550  |  WATCHLIST $450–500  |  ACCUMULATE $370–420  |  BUY below $320")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) Q3 FY2026 print (early September) — does the $16B AI semi guide get hit or exceeded?")
+print(f"  (2) Hyperscaler capex guidance at Google, Meta, Microsoft, Amazon earnings — the leading indicator")
+print(f"  (3) AI semi book-to-bill trend — does the ~2.8x ratio hold, expand, or start converting down to 1x?")
+print(f"  (4) Custom XPU customer count — any expansion beyond the current 6 hyperscale names")
+print(f"  (5) VMware growth durability at the ~31% rate as the post-acquisition base normalizes")
+print(f"  {signal_short} at ${CURRENT_PRICE:.2f}  |  Add below $310  |  Trim above $470")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  AI semi FY27 guide: ${AI_SEMI_FY27_GUIDE_B}B+")
 print("═" * (W + 4))
 print()
 

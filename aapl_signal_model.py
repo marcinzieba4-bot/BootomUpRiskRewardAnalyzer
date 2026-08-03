@@ -1,7 +1,7 @@
 """
 AAPL  ·  Apple Inc.  ·  NASDAQ: AAPL
-Bottom-up signal model  ·  Consumer Technology / iPhone / Services / AI
-Date: 2026-05-21
+Bottom-up signal model  ·  Consumer Technology / iPhone / Services / Memory Cost Crisis
+Date: 2026-08-03
 """
 
 import math
@@ -10,46 +10,55 @@ import math
 TICKER        = "AAPL"
 COMPANY       = "Apple Inc."
 SECTOR        = "Consumer Technology · iPhone · Services · Apple Intelligence · NASDAQ: AAPL"
-CURRENT_PRICE = 302.25       # USD; as of 2026-05-21
-VOL_52W_LOW   = 169.21       # April 2026 tariff/China-war trough
-VOL_52W_HIGH  = 259.81       # December 2025 pre-tariff peak (pre-AI-re-rating)
-SHARES_OUT_M  = 15_050.0     # millions; declining ~3%/yr via buyback ($95B+ authorization)
+CURRENT_PRICE = 308.91       # USD; close 2026-07-31 (verified live), -7.35% on the Q3 print/Q4 guide
+VOL_52W_LOW   = 201.68       # 2025/26 trough
+VOL_52W_HIGH  = 344.57       # 2026 pre-memory-crisis peak
+SHARES_OUT_M  = 14_600.0     # millions; $4.51T mkt cap / $308.91; declining via buyback
+ANNUAL_DIV    = 1.08         # $/share FY2026; 47-year growth streak
 
-# Dividend: 47-year growth streak; growing ~4%/yr
-ANNUAL_DIV    = 1.04         # $/share FY2026 ($0.26/quarter)
-
-# ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# ── SEGMENT REVENUE BRIDGE (FY2026E, $B) ──────────────────────────────────────
+# Q3 FY2026 (June qtr) actual: revenue $109.4B (+16%); iPhone $54.3B (+22%), Mac $10.4B
+# (+29%), Services $30.7B (record, but missed the $31.22B estimate). Q4 (Sept qtr) guide:
+# +9-11% YoY (~$113B, below the $114.9B Street consensus) on memory-cost/supply pressure.
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("iPhone",             215.0, 152.0, 255.0, "AI iPhone 17 cycle; China headwinds the swing factor"),
-    ("Services",           107.0,  86.0, 135.0, "App Store + subs + ads; 75%+ gross margin; 13%+ CAGR"),
-    ("Mac",                 42.0,  36.0,  52.0, "M4 Ultra refresh; Apple Intelligence boosts switchers"),
-    ("iPad",                 9.5,   7.5,  12.0, "AI-enabled; declining priority but stable"),
-    ("Wearables/Home/Acc",  42.0,  28.0,  55.0, "AirPods AI; Apple Watch Ultra; Vision Pro ramp optionality"),
+    ("iPhone",                212.0, 185.0, 260.0, "+22% YoY in Q3; the segment most exposed to the memory-driven BOM cost spike heading into Q4"),
+    ("Services",               114.0, 100.0, 150.0, "Record but decelerating — missed the Q3 estimate for the first time in several quarters"),
+    ("Mac + iPad",              62.0,  52.0,  76.0, "Mac +29% YoY; both lines now face lengthening delivery delays from memory/component scarcity"),
+    ("Wearables/Home/Acc",      36.0,  30.0,  34.0, "Steadier, less exposed to the current supply squeeze than the compute-heavy product lines"),
 ]
 
 # Margin assumptions
-GROSS_MARGIN_CURR = 0.468   # blended gross margin FY2026E (~46.8%; Services lifts blend)
-GROSS_MARGIN_BULL = 0.490   # BULL: Services reaches 30% of revenue; blend lifts further
-OPEX_FIXED_B      = 57.0    # R&D + SG&A ($B); grows ~5%/yr; largely fixed cost base
-TAX_RATE          = 0.163   # effective rate; R&D credits; offshore (Ireland/Netherlands)
+GROSS_MARGIN_CURR = 0.462   # FY2026E blended gross margin; memory cost inflation is compressing this from the low-47s
+GROSS_MARGIN_BULL = 0.490   # BULL: Apple Intelligence supercycle + Services mix shift lift margin even as memory costs partly persist
+OPEX_FIXED_B      = 60.0    # R&D + SG&A ($B)
+TAX_RATE          = 0.160   # effective tax rate
+
+# ── MEMORY COST CRISIS CALCULATOR (the Apple-specific angle) ─────────────────
+IPHONE_BOM_INCREASE_LOW  = 200   # $ estimated additional per-unit production cost from memory inflation, iPhone 18 Pro
+IPHONE_BOM_INCREASE_HIGH = 300   # $ high end of the estimated per-unit cost increase
+Q4_GUIDE_GROWTH_LOW_PCT  = 9.0   # % YoY revenue growth, Q4 FY2026 guide, low end
+Q4_GUIDE_GROWTH_HIGH_PCT = 11.0  # % YoY revenue growth, Q4 FY2026 guide, high end
+Q4_STREET_CONSENSUS_B    = 114.9 # $B Street revenue consensus the guide fell short of
+FX_HEADWIND_PP           = 2.5   # percentage points of FX headwind cited for the Q4 guide
+Q3_TARIFF_REFUND_EPS     = 0.11  # $/share one-time favorable tariff-refund impact included in Q3 EPS
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2026E    = 7.50        # FY2026E adj EPS (consensus $7.40–$7.65; non-GAAP)
-PE_PESSIMISTIC = 20.0        # trough P/E: Services mix commands premium even at crisis
-                              # (FY2022-23 trough ~22×; incl. China-ban scenario: 20×)
-EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)   # $150
+EPS_FY2026E    = 7.82        # $/share FY2026E; matches Wedbush's $7.85 and the segment-bridge build below (consensus range $7.28-7.85);
+                              # below the ~$8.27-8.29 TTM run-rate — the memory-cost-driven Q4 guide implies full-year deceleration
+PE_PESSIMISTIC = 20.0        # trough P/E: Apple's own multi-year pre-AI-rerating average; 20x prices
+                              # a genuine margin-compression cycle without assuming the franchise is broken
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
-# ── SCENARIO TABLE ────────────────────────────────────────────────────────────
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 5.00, 20,  100, "China hardware ban + tariffs; iPhone −30%; EPS $5 → 20× floor P/E"),
-    "BASE":  ( 8.50, 26,  221, "AI features modest; China stable/flat; Services+13%; EPS $8.50 at FY2028E → 26×"),
-    "BULL":  (11.50, 34,  391, "AI iPhone supercycle 2027; India scales; Services $135B; EPS $11.50 → 34×"),
-    "XBULL": (16.00, 36,  576, "AAPL becomes AI platform; Vision Pro mainstream; Services $180B; EPS $16 → 36×"),
+    "BEAR":  ( 5.66, 20,  113, "Memory cost inflation persists through FY2027; margin compression outlasts the current supply cycle"),
+    "BASE":  ( 9.88, 34,  336, "Memory costs normalize through FY2027 as HBM-driven fab capacity catches up; rich multiple persists on franchise quality"),
+    "BULL":  (11.38, 32,  364, "Component costs ease faster than guided; Services reaccelerates; AI features drive a real upgrade supercycle"),
+    "XBULL": (13.80, 34,  469, "Apple Intelligence becomes a genuine upgrade driver; Services re-accelerates to mid-teens growth; margin fully recovers"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -81,51 +90,51 @@ def back_solve_market_composite(price, tol=0.001):
 SIGNALS = [
     {
         "name":       "iPhone revenue YoY growth",
-        "weight":     0.30,
-        "thresholds": ("<0%",    "≥3%",   "≥8%",    "≥15%"),
-        "now":        "+3%",
-        "score":      2,
-        "comment":    "AI iPhone 17 mild cycle; China -11% drags blended; India emerging (+18%) offsets partially",
+        "weight":     0.20,
+        "thresholds": ("<0%",    "≥10%",   "≥18%",   "≥25%"),
+        "now":        "+22%",
+        "score":      3,
+        "comment":    "Q3's strongest print in years — the demand side is not the current problem, the supply/cost side is",
     },
     {
         "name":       "Services revenue YoY growth",
-        "weight":     0.25,
-        "thresholds": ("<8%",    "≥10%",  "≥16%",   "≥22%"),
-        "now":        "+13%",
-        "score":      3,
-        "comment":    "App Store +12%; Advertising +25%; Apple One/iCloud subs steady; 75%+ gross margin; $107B ARR",
-    },
-    {
-        "name":       "China revenue YoY",
-        "weight":     0.20,
-        "thresholds": ("<-15%",  "≥-5%",  "≥+3%",   "≥+10%"),
-        "now":        "-11%",
-        "score":      1,
-        "comment":    "Huawei Mate recovery (-6pp share); US tariffs raising iPhone price in China; Q1 FY2026 -11% YoY",
-    },
-    {
-        "name":       "Apple Intelligence daily active user penetration",
         "weight":     0.15,
-        "thresholds": ("<10%",   "≥20%",  "≥45%",   "≥65%"),
-        "now":        "~22%",
+        "thresholds": ("<5%",    "≥8%",   "≥12%",   "≥16%"),
+        "now":        "~decel.",
         "score":      2,
-        "comment":    "Feature set expanding (Writing Tools, Image Playground, Siri+); strong iOS 18.4 uptake; not yet transformative",
+        "comment":    "A record quarter that still missed the Street estimate — the first sign of deceleration in a while",
     },
     {
-        "name":       "Blended gross margin",
-        "weight":     0.05,
-        "thresholds": ("<44%",   "≥45%",  "≥47%",   "≥49%"),
-        "now":        "46.8%",
-        "score":      3,
-        "comment":    "Services (75%+ margin) lifting blended rate; structural improvement; Q2 FY2026 record 46.9%",
+        "name":       "Q4 guidance vs Street consensus",
+        "weight":     0.20,
+        "thresholds": ("well below","below",  "in-line", "above"),
+        "now":        "below",
+        "score":      2,
+        "comment":    "Guide implies ~$113B vs a $114.9B consensus — a real, not manufactured, guidance miss",
     },
     {
-        "name":       "Active installed base (devices)",
-        "weight":     0.05,
-        "thresholds": ("<2.0B",  "≥2.1B", "≥2.3B",  "≥2.6B"),
-        "now":        "2.2B",
-        "score":      3,
-        "comment":    "Record 2.2B active devices; iOS 18 penetration >80%; ecosystem lock-in structural moat",
+        "name":       "Gross margin trajectory",
+        "weight":     0.20,
+        "thresholds": ("<43%",   "≥45%",   "≥47%",   "≥49%"),
+        "now":        "~46.2%",
+        "score":      2,
+        "comment":    "Memory cost inflation is the direct, quantified culprit — Cook flagged 'even higher' costs ahead",
+    },
+    {
+        "name":       "Memory cost impact (iPhone 18 Pro BOM)",
+        "weight":     0.15,
+        "thresholds": (">$400",  "≤$300",  "≤$200",  "≤$100"),
+        "now":        "$200-300",
+        "score":      2,
+        "comment":    "A quantified, real cost headwind tied directly to the AI-driven HBM/DRAM supply crunch hitting the whole industry",
+    },
+    {
+        "name":       "Forward P/E",
+        "weight":     0.10,
+        "thresholds": (">40x",   "≤34x",   "≤28x",   "≤22x"),
+        "now":        "~39.5x",
+        "score":      1,
+        "comment":    "39.5× FY2026E — a rich multiple, close to the >40x BEAR bucket, for a company guiding below consensus on margin pressure",
     },
 ]
 
@@ -135,12 +144,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Installed-base moat — 2.2B active devices; 89% iOS retention rate; ecosystem lock-in",       +0.7, 0.25),
-    ("+", "Services flywheel — $107B ARR at 75%+ margin; App Store monopoly; payments; advertising",    +0.6, 0.20),
-    ("-", "China structural drag — 17% of revenue; Huawei comeback; tariff/ban escalation risk",         -0.8, 0.20),
-    ("-", "AI commoditization — Apple Intelligence = Google Gemini API; no proprietary frontier model",  -0.6, 0.20),
-    ("+", "Capital return machine — $95B+ buyback; 47-yr dividend growth; $60B+ annual FCF",            +0.3, 0.10),
-    ("-", "Valuation compression risk — 40× FY2026E P/E for 7%/yr EPS compounder; PEG ~5.7×",          -0.4, 0.05),
+    ("+", "Demand is not the problem — iPhone +22%, Mac +29%; this is a supply/cost cycle, not a demand cycle", +0.6, 0.20),
+    ("-", "Memory cost inflation is real, quantified, and industry-wide — Apple has limited near-term pricing power to fully pass it through", -0.7, 0.25),
+    ("-", "Valuation carries a steep premium (39.5× forward) for a company that just guided below consensus", -0.7, 0.20),
+    ("+", "Services deceleration, while real, is from a still-large, still-growing, high-margin recurring base", +0.4, 0.15),
+    ("-", "Advanced-node (TSMC) capacity constraints compound the memory problem — this is a multi-input supply squeeze, not one fixable lever", -0.4, 0.10),
+    ("+", "Capital return machine — buyback + 47-year dividend growth streak continues regardless of the cyclical cost pressure", +0.3, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -174,8 +183,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 8.50    # conservative FY2028E: 7% EPS CAGR; China headwind; Services continues
-CONS_PE_2YR   = 25      # rerating from 40× to growth-justified 25× (in line with PEG ~3.5×)
+CONS_EPS_2YR  = 9.60    # conservative FY2028E: ~3.6% EPS CAGR — memory cost pressure persists, limited margin recovery
+CONS_PE_2YR   = 24      # modest de-rating from ~34.5× — still a real premium multiple
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -193,13 +202,13 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Consumer Technology / iPhone / Services / AI")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  iPhone / Services / Memory Cost Crisis")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
-# ─── ① PRODUCT REVENUE BRIDGE ─────────────────────────────────────────────────
+# ─── ① SEGMENT REVENUE BRIDGE ─────────────────────────────────────────────────
 print()
-print("  PRODUCT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 hr()
 
 curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
@@ -213,134 +222,143 @@ for seg, curr, bear, bull, desc in SEG_DATA:
     print(f"    {desc}")
 hr()
 print(f"  {'TOTAL':<26}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q3 FY2026 actual: $109.4B (+16%). Q4 guide: +{Q4_GUIDE_GROWTH_LOW_PCT:.0f}-{Q4_GUIDE_GROWTH_HIGH_PCT:.0f}% YoY (~$113B, below ${Q4_STREET_CONSENSUS_B:.1f}B consensus)")
 print()
 
 # EPS bridge
+shares    = SHARES_OUT_M / 1000
 curr_gp   = curr_total * GROSS_MARGIN_CURR
 curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-shares    = SHARES_OUT_M / 1000
-curr_eps  = round(curr_ni / shares, 2)
+curr_eps  = round(curr_oi * (1 - TAX_RATE) / shares, 2)
 
 bull_gp   = bull_total * GROSS_MARGIN_BULL
-bull_oi   = bull_gp - OPEX_FIXED_B
-bull_ni   = bull_oi * (1 - TAX_RATE)
-shares_b  = shares * 0.94   # ~3%/yr buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_oi   = bull_gp - OPEX_FIXED_B * 1.05
+shares_b  = shares * 0.97
+bull_eps_imp = round(bull_oi * (1 - TAX_RATE) / shares_b, 2)
 
-bear_gp   = bear_total * GROSS_MARGIN_CURR * 0.97   # mix shift to iPhone (lower margin)
-bear_oi   = bear_gp - OPEX_FIXED_B * 0.97           # partial cost response
-bear_ni   = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_gp   = bear_total * 0.435     # memory costs persist and deepen without offset
+bear_oi   = bear_gp - OPEX_FIXED_B * 1.02
+bear_eps_imp = round(max(0, bear_oi) * (1 - TAX_RATE) / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS  (consensus ${EPS_FY2026E:.2f}  ✓)")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex")
+print(f"  − {TAX_RATE*100:.1f}% tax  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (model estimate ${EPS_FY2026E:.2f}  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 34× = ~${bull_eps_imp*34:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − opex, post-buyback")
+print(f"  =  ~${bull_eps_imp:.2f}/share  →  × 32× = ~${bull_eps_imp*32:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.97:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 20× trough P/E (Services floor) = ~${bear_eps_imp*20:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × 43.5% GM (memory costs persist without offset) − opex")
+print(f"  =  ~${bear_eps_imp:.2f}/share  →  × 20× trough = ~${bear_eps_imp*20:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# MEMORY COST CRISIS CHECK
+print()
+print(f"  MEMORY COST CRISIS CHECK  (the Apple-specific angle):")
+print(f"  iPhone 18 Pro BOM increase (est.):  ${IPHONE_BOM_INCREASE_LOW}-${IPHONE_BOM_INCREASE_HIGH}  per unit")
+print(f"  Q4 guide vs Street consensus:        ~${113}B vs ${Q4_STREET_CONSENSUS_B:.1f}B  (a real, quantified miss)")
+print(f"  FX headwind cited in the guide:      -{FX_HEADWIND_PP:.1f}pp")
+print(f"  Q3 one-time tariff-refund EPS boost:  +${Q3_TARIFF_REFUND_EPS:.2f}/share  (not repeatable)")
+print()
+print(f"  This is the same memory supercycle driving Micron's earnings to records — DRAM and HBM")
+print(f"  capacity is being redirected to AI infrastructure, and consumer electronics makers are")
+print(f"  bidding for what's left. Apple is a price-taker on memory the way it has never had to be")
+print(f"  on advanced logic (where its TSMC relationship gives it priority access). This is a real,")
+print(f"  industry-wide cost shock, not an Apple-specific execution failure — but it still hits the")
+print(f"  P&L directly and the market has correctly repriced for it.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev  = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-china_delta_1pp = sum(r for _, r, _, _, _ in SEG_DATA if "iPhone" in _) * 0.17 / 100 / 100  # 1pp china share = 1pp of iPhone China
-# Simpler: $1B China revenue = ~$0.045 EPS
-eps_per_1B_china = 1.0 * 0.38 * (1 - TAX_RATE) / shares   # iPhone-level margin
-
+eps_per_1B_rev  = 1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE) / shares
+eps_per_1pp_gm  = curr_total * 0.01 * (1 - TAX_RATE) / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B Services revenue:      +${eps_per_1B_rev * 0.75 * (1-TAX_RATE):.3f}/EPS  = +${eps_per_1B_rev*0.75*(1-TAX_RATE)*26:.1f}/share at 26× P/E")
-print(f"  China revenue ±$1B (38% margin): ±${eps_per_1B_china:.3f}/EPS  =  ±${eps_per_1B_china*26:.1f}/share at 26× P/E")
-print(f"  1pp GM expansion (mix/pricing):  +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*26:.1f}/share at 26× P/E")
-print(f"  1% buyback (150M shares):        +${curr_eps*0.01:.3f}/EPS  (mechanical accretion; ~${95:.0f}B authorization)")
+print(f"  Every $1B revenue (at 46.2% GM):      +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*26:.2f}/share at 26× P/E")
+print(f"  Every 1pp of gross margin:            +${eps_per_1pp_gm:.3f}/EPS  = +${eps_per_1pp_gm*26:.2f}/share at 26× P/E")
+print(f"  Every 1 turn of P/E:                  ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (iPhone cycle / Services / China / AI penetration framework)")
+print("  ① SIGNAL DASHBOARD  (iPhone / Services / guidance / margin / memory cost / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
-print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
+print(f"  {'Signal':<42}  {'BEAR':>11}  {'BASE':>7}  {'BULL':>8}  {'XBULL':>7}  {'NOW':>9}  Score")
 hr()
 for s in SIGNALS:
     ths = s["thresholds"]
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
-    print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"  {s['name']:<42}  {ths[0]:>11}  {ths[1]:>7}  {ths[2]:>8}  {ths[3]:>7}  {s['now']:>9}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
-print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15% hurdle)")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from ${CURRENT_PRICE} + 15%/yr hurdle)")
 print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
 print()
 print("  Structural factors:")
 for sign, desc, score, weight in SCA_FACTORS:
     contribution = score * weight
-    print(f"    {sign}  {desc[:72]:<72}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
 
 # ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<32}  {'Current':>10}  {'Bear val':>10}  {'Move':>8}  Trigger")
 hr()
 bear_triggers = [
-    ("iPhone revenue YoY",            "+3%",    "<0%",    "−3pp",   "Executive Order banning US components in Huawei + tariff 125%"),
-    ("China revenue YoY",             "-11%",   "<-30%",  "−19pp",  "Full hardware ban + WeChat/iCloud removal from Chinese stores"),
-    ("Services revenue YoY",          "+13%",   "<8%",    "−5pp",   "DOJ App Store structural remedy; 30% commission reduced to 12%"),
-    ("Apple Intelligence DAU %",      "~22%",   "<10%",   "−12pp",  "Gemini API reliability issues; feature set fails vs Android"),
-    ("Blended gross margin",          "46.8%",  "<44%",   "−2.8pp", "iPhone mix + tariff cost absorption; no Services offset"),
-    ("Active installed base",         "2.2B",   "<2.0B",  "−0.2B",  "China ban forces 250M device ecosystem exit"),
+    ("iPhone revenue YoY",         "+22%",   "<0%",     "-22pp",  "Higher retail prices from BOM inflation finally crack consumer demand"),
+    ("Services revenue YoY",       "decel.", "<5%",     "further","AI-native alternatives erode App Store/subscription economics"),
+    ("Q4 guide vs consensus",      "below",  "well below","worse","Memory/component costs prove even worse than the current guide assumes"),
+    ("Gross margin",               "~46.2%", "<43%",    "-3.2pp", "Memory cost inflation persists through FY2027 without full pass-through"),
+    ("Memory BOM impact",          "$200-300","≥$400",  "worse",  "DRAM/HBM scarcity deepens as AI infrastructure demand keeps outrunning supply"),
+    ("Forward P/E",                "~39.5x", "≤20x",    "-19.5x", "Market fully re-prices Apple as a lower-growth, margin-challenged hardware name"),
 ]
 for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+    print(f"  {name:<32}  {curr:>10}  {bear_v:>10}  {move:>8}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: Executive Order banning sale of US-designed chips/components to Chinese")
-print(f"  manufacturers, combined with Chinese government retaliation removing Apple from app")
-print(f"  stores. China is $65–70B iPhone revenue (~30% of iPhone; 17% of total). Simultaneous")
-print(f"  DOJ App Store remedy cuts commission rate. EPS collapses to ~$5 → 20× floor = ${bear_price}.")
-print(f"  Note: $100 is NOT a permanent impairment — Services ($86B floor) + 2.0B device base")
-print(f"  provides a durable earnings floor. Recovery to ~${bear_price+50}–${bear_price+80} in 2yr is base case post-shock.")
+print(f"  KEY TRIGGER: this is a cost-and-supply story, not a demand story — which is actually the")
+print(f"  more repairable kind of problem for Apple to have. iPhone grew 22% and Mac grew 29% in")
+print(f"  the most recent quarter; the risk is entirely about whether memory/component scarcity")
+print(f"  compresses margins for one bad quarter or bleeds into FY2027. The AI-driven memory")
+print(f"  supercycle that is hurting Apple's margins is the same one driving record profits at")
+print(f"  Micron — it will not resolve on Apple's schedule, only on the industry's.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
-print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 hr()
-print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (consensus $7.40–$7.65; non-GAAP; GAAP ~$6.85)")
-print(f"  Pessimistic P/E at trough:      {PE_PESSIMISTIC:.0f}×  (Services mix floor; FY2022-23 trough 22×; China-ban ~20×)")
+print(f"  FY2026E EPS estimate:       ${EPS_FY2026E:.2f}  (TTM ~$8.27-8.29 through March 2026; Q4 pressured by memory costs)")
+print(f"  Pessimistic P/E at trough:   {PE_PESSIMISTIC:.0f}×  (Apple's own multi-year pre-AI-rerating average)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% above trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A +{epp_gap_pct:.0f}% premium to EPP means the market prices in 5–6 years of uninterrupted")
-print(f"  earnings growth ABOVE the trough-floor multiple. At $302.25 and FY2026E EPS $7.50,")
-print(f"  the P/E is 40× — a PEG of ~5.7× on 7%/yr EPS growth. This is the 'premium brand tax':")
-print(f"  investors pay for certainty of future cash flows. The risk is mean reversion.")
-print(f"  EPP path: FY2028E EPS ~$8.75 × {PE_PESSIMISTIC:.0f}× = ${8.75*PE_PESSIMISTIC:.0f} floor by late 2028 (EPP growing ~8%/yr).")
-print(f"  At 25× mid-cycle P/E: ${EPS_FY2026E:.2f} × 25 = ${EPS_FY2026E*25:.0f}  — still 41% below current price.")
+print(f"  At ${CURRENT_PRICE:.2f} the stock trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E EPS — a real premium, though the")
+print(f"  stock has already fallen {(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.0f}% from its 52-week high on the Q4 guide. The EPP floor")
+print(f"  assumes a return to Apple's own historical trough multiple, not a distressed one — the")
+print(f"  margin of safety here is thinner than it looks unless the memory cost cycle resolves.")
+print(f"  At a 26× reversion (still a real premium): ${EPS_FY2026E:.2f} × 26 = ${EPS_FY2026E*26:.0f}  ({(EPS_FY2026E*26/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: P/E rerates toward growth rate; China headwind persists)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: memory cost pressure persists, limited margin recovery)")
 hr()
-print(f"  Conservative FY2028E adj EPS:  ${CONS_EPS_2YR:.2f}  (7% EPS CAGR: buyback ~3%/yr + EPS growth ~4%/yr)")
-print(f"  Conservative exit P/E:          {CONS_PE_2YR}×  (rerates from 40× toward growth-justified 25×; still premium)")
-print(f"  Conservative equity value:       ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):   +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr; 47-yr growth streak)")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2YR:.2f}  (~3.6% EPS CAGR — memory costs stay elevated)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (~39.5× → 24×; a real de-rating)")
+print(f"  Conservative equity value:   ${cons_equity:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
 hr()
-print(f"  Conservative 2yr total:          ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
-print(f"  Conservative total return:       {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print(f"  Conservative 2yr total:      ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE PROBLEM: even the conservative case requires P/E compression from 40× to 25×.")
-print(f"  That 38% multiple contraction offsets 7% annual EPS growth — a negative total return.")
-print(f"  For conservative 2yr to break even at 25× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~${((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2026E - 1)*100:.1f}% EPS growth by FY2028E — possible at BULL, not BASE.")
-print(f"  Breakeven at 30× P/E (no multiple compression): FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / 30:.2f}")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at 25× P/E; ratio_b <1.0×)")
+print(f"  THE HONEST READ: assuming memory costs stay elevated through FY2027 with only modest")
+print(f"  margin recovery, and the multiple de-rates meaningfully from today's premium, the")
+print(f"  conservative case is roughly {'clearly negative' if cons_return < -10 else 'flat-to-negative' if cons_return < 5 else 'modestly positive'}. This is not a name offering a wide margin of")
+print(f"  safety at the current price — you are paying for the memory cost cycle to resolve")
+print(f"  reasonably, not for it to already be resolved.")
+print(f"  Breakeven at 24× requires FY2028E EPS ≥ ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f} — {'above' if (CURRENT_PRICE - cons_divs) / CONS_PE_2YR > CONS_EPS_2YR else 'below'} this conservative estimate.")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
@@ -351,17 +369,16 @@ sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Note: 52W high pre-dates AI-re-rating surge in Jan–May 2026 (+$42 to current $302.25)")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  token; Dividend Aristocrat)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (lower than peers; brand stability; but China binary elevated)")
-print(f"  Beta vs S&P 500:      1.15  (slight premium; mega-cap; China trade war amplifier)")
+print(f"  Single-session move:   -7.35% on the Q3 print/Q4 guide — a large move for Apple specifically")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; 47-year growth streak, low but reliable)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (moderate for mega-cap tech; the memory-cost narrative adds near-term jumpiness)")
+print(f"  Beta vs S&P 500:      1.10  (near-market, slightly elevated on the current cost-cycle sensitivity)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (extreme; China-ban tail scenario)")
-print(f"  52W low ${VOL_52W_LOW:.2f} (Apr 2026 tariff panic) already a peak-to-trough move of ~35%.")
-print(f"  → China trade war escalation is THE KEY binary; each tariff escalation = −10–15% move.")
-print(f"  → Apple Intelligence monetisation evidence (Services ARPU acceleration) is KEY bull catalyst.")
-print(f"  → AVOID at current price  |  WATCHLIST $235–255  |  ACCUMULATE $195–215  |  BUY below $185")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (a real move, in line with the current cost-shock magnitude)")
+print(f"  → Q4 FY2026 print (late Oct) is the next test of whether the memory cost impact matches or exceeds the guide.")
+print(f"  → Memory spot pricing (DRAM/NAND/HBM) is the leading indicator to watch between prints.")
+print(f"  → AVOID at current price  |  Reassess ACCUMULATE under $220  |  BUY below $180")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -389,24 +406,26 @@ print(f"  Upside    (→ Bull ${bull_price}):  {upside_pct*100:.1f}%")
 print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
-print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is ABOVE the")
-print(f"  model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing ~{MARKET_COMPOSITE:.2f}/4.0 — between")
-print(f"  BULL and XBULL. The model scores the fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0 — between BASE and BULL.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: you are paying BULL scenario prices for what is currently BASE execution.")
-print(f"  China headwinds (signal score 1/4 = BEAR) are the most significant valuation mismatch.")
+print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  Apple's demand engines (iPhone, Mac) are working; its cost structure is under genuine,")
+print(f"  industry-wide pressure from the AI memory supercycle. The stock's {(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.0f}% drawdown has")
+print(f"  already priced in real caution, but not enough of it — a {(1-CURRENT_PRICE/VOL_52W_HIGH)*100:.0f}% drawdown from the high still leaves")
+print(f"  the stock at ~39.5× depressed forward earnings. AVOID reflects that the memory cost")
+print(f"  resolution timeline — not Apple's execution — is the swing factor the model can't resolve,")
+print(f"  and the market isn't being paid to wait for a favorable answer.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) China trade war de-escalation — tariff deal restoring iPhone competitiveness (BULL trigger)")
-print(f"  (2) Apple Intelligence monetisation — Services ARPU acceleration above +16%/yr (BULL trigger)")
-print(f"  (3) DOJ App Store remedy — structural commission cut risks ~$8–12B annual Services revenue")
-print(f"  (4) India ramp — 1.4B population, growing middle class; can India replace China by 2030?")
-print(f"  (5) Vision Pro mainstream — current niche ($3,499); any sub-$1,500 mass-market version?")
-print(f"  AVOID at ${CURRENT_PRICE:.2f}  |  WATCHLIST $235–255  |  ACCUMULATE $195–215  |  BUY below $185")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
+print(f"  (1) Q4 FY2026 print (late October) — does the memory cost impact match, beat, or miss the guide?")
+print(f"  (2) DRAM/NAND/HBM spot pricing trends — the leading indicator for Apple's cost trajectory")
+print(f"  (3) iPhone 18 Pro retail pricing decisions — how much of the BOM increase gets passed through")
+print(f"  (4) Services growth reacceleration — needs to resume double-digit growth to offset hardware margin pressure")
+print(f"  (5) TSMC advanced-node capacity allocation — the second supply constraint compounding the memory issue")
+print(f"  AVOID at ${CURRENT_PRICE:.2f}  |  Reassess ACCUMULATE under $220  |  BUY below $180")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}  |  Memory BOM hit: ${IPHONE_BOM_INCREASE_LOW}-${IPHONE_BOM_INCREASE_HIGH}/unit")
 print("═" * (W + 4))
 print()
 
