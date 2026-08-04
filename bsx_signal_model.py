@@ -1,7 +1,7 @@
 """
 BSX  ·  Boston Scientific Corporation  ·  NYSE: BSX
-Bottom-up signal model  ·  Cardiovascular (WATCHMAN/Farapulse) / MedSurg / Premium Growth Valuation
-Date: 2026-06-10
+Bottom-up signal model  ·  Cardiovascular (WATCHMAN/Farapulse) / MedSurg / Post-Crash Reset
+Date: 2026-08-04
 """
 
 import math
@@ -10,44 +10,64 @@ import math
 TICKER        = "BSX"
 COMPANY       = "Boston Scientific Corporation"
 SECTOR        = "MedTech · Cardiovascular (WATCHMAN/Farapulse PFA) · Structural Heart · Urology/MedSurg · NYSE: BSX"
-CURRENT_PRICE = 104.00     # USD; as of 2026-06-10
-VOL_52W_LOW   = 86.50      # 2025 broad medtech pullback trough
-VOL_52W_HIGH  = 112.50     # 2026 Farapulse/WATCHMAN-driven re-rating peak
-SHARES_OUT_M  = 1_475.0    # millions
-ANNUAL_DIV    = 0.0        # $/share; BSX pays no dividend - reinvests for growth/M&A
+CURRENT_PRICE = 48.43       # USD; close 2026-08-03 — down ~53% from Sep 2025 peak
+VOL_52W_LOW   = 42.20       # USD
+VOL_52W_HIGH  = 109.50      # USD
+SHARES_OUT_M  = 1_450.0     # millions
+ANNUAL_DIV    = 0.0         # $/share; BSX pays no dividend — reinvests for growth/M&A
 
 # ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# THE HEADLINE EVENT: BSX has cut FY2026 guidance repeatedly through the year, driven by a
+# sharp, unexpected slowdown in WATCHMAN (LAAC) procedure growth tied to compounding
+# clinical-evidence concerns affecting physician referrals — management now assumes the
+# weakness persists into 2027. Q2 2026 (reported Jul 29): revenue $5.442B (+7.5% YoY, beat);
+# adj EPS $0.86 (beat the high end of guide, aided by favorable tax); GAAP EPS $0.61 — but
+# FY2026 guidance was slashed to reported sales growth ~5.5-6.5% (from an earlier 10-11%) and
+# adj EPS $3.28-3.32 (below consensus $3.36). Two Class II recalls hit in June 2026 (Orca
+# air/water/suction valves, ~9,750 units; Coyote PTA balloon catheter), and a $500M
+# restructuring was announced to protect margins. Despite the crash, 27 of 31 analysts still
+# rate BSX Buy-equivalent, with a consensus target (~$78) implying substantial recovery.
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Electrophysiology (Farapulse PFA)",        2.8,  1.8,  4.2, "Pulsed-field ablation - the single biggest growth driver; rapid global rollout, capacity expansion ongoing"),
-    ("Cardiology - WATCHMAN (LAAC)",             3.4,  2.6,  4.4, "Left atrial appendage closure; durable double-digit growth as guidelines/awareness expand"),
-    ("Cardiology - Interventional/Other",        6.5,  5.6,  7.4, "Coronary therapies, IVL (shockwave), peripheral interventions; steady mid-single-digit growth"),
-    ("Structural Heart (TAVR/Mitral/Tricuspid)", 1.7,  1.3,  2.4, "ACURATE/WATCHMAN-adjacent structural heart pipeline; mitral/tricuspid optionality (Axonics-adjacent M&A)"),
-    ("Urology/Neuromodulation (incl. Axonics)",  3.3,  2.7,  4.0, "Axonics sacral neuromodulation integration driving share gains; rezum/urology steady"),
-    ("MedSurg/Endoscopy/Other",                  4.3,  3.9,  4.8, "Endoscopy, voice/airway, other; stable low-to-mid single-digit growth"),
+    ("Electrophysiology (Farapulse PFA)",        3.2,  2.4,  4.5, "Still the healthiest growth driver — no negative news this refresh; pulsed-field ablation rollout continues"),
+    ("Cardiology - WATCHMAN (LAAC)",             3.0,  2.0,  3.8, "THE crisis driver: procedure growth has slowed sharply on compounding clinical-evidence concerns affecting referrals"),
+    ("Cardiology - Interventional/Other",        6.0,  5.3,  6.8, "Coronary therapies, IVL (shockwave), peripheral interventions; steady mid-single-digit growth continuing"),
+    ("Structural Heart (TAVR/Mitral/Tricuspid)", 1.6,  1.2,  2.2, "ACURATE/WATCHMAN-adjacent structural heart pipeline; mitral/tricuspid optionality"),
+    ("Urology/Neuromodulation (incl. Axonics)",  3.2,  2.7,  3.8, "Axonics sacral neuromodulation integration continuing to drive share gains"),
+    ("MedSurg/Endoscopy/Other",                  4.37, 3.9,  4.9, "Includes the segments affected by the June 2026 Orca/Coyote Class II recalls"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.700   # blended gross margin; medtech device mix with high-growth Farapulse/WATCHMAN
-GROSS_MARGIN_BULL = 0.715   # BULL: Farapulse/WATCHMAN scale + favorable mix lift blend
-OPEX_FIXED_B      = 9.6     # SG&A + R&D ($B); heavy commercial investment behind Farapulse launch
-TAX_RATE          = 0.140   # effective rate
+# Net-margin-based bridge
+NET_MARGIN_CURR = 0.2239   # FY2026E; reconciles to cut guidance midpoint
+NET_MARGIN_BEAR = 0.1906   # BEAR: WATCHMAN weakness persists into 2027 as management now assumes, plus recall/restructuring costs linger
+NET_MARGIN_BULL = 0.2510   # BULL: WATCHMAN concerns resolve, Farapulse continues, restructuring delivers margin benefit
+
+# ── WATCHMAN CRISIS / RECALL TRACKER (the BSX-specific angle) ─────────────────
+Q2_2026_REVENUE_B          = 5.442   # $B, Q2 2026 actual reported revenue
+Q2_2026_ADJ_EPS            = 0.86    # $ adjusted EPS, Q2 2026 (beat, aided by favorable tax)
+Q2_2026_GAAP_EPS           = 0.61    # $ GAAP EPS, Q2 2026
+FY2026_ORIGINAL_GROWTH_GUIDE_PCT = "10-11"   # % reported sales growth, original guidance
+FY2026_CUT_GROWTH_GUIDE_PCT      = "5.5-6.5" # % reported sales growth, current guidance after cuts
+RESTRUCTURING_ANNOUNCED_B  = 0.5     # $B, restructuring program announced to protect margins
+RECALLED_UNITS_ORCA        = 9_750   # units, Orca air/water/suction valve Class II recall
+ANALYST_BUY_RATIO          = "27 of 31"  # analysts still rating BSX Buy-equivalent despite the crash
+CONSENSUS_TARGET_PRICE     = 78.0    # $, analyst consensus price target
+STOCK_MOVE_FROM_JUNE_LOW_PCT = round((CURRENT_PRICE - 104.00) / 104.00 * 100, 1)  # move since last refresh
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2027E    = 3.10        # FY2027E EPS (consensus ~$3.00-3.20 non-GAAP); ~15%+ growth off FY2026E ~$2.70
-PE_PESSIMISTIC = 22.0        # trough P/E: even in a growth-deceleration scare, premium medtech grower floor ~20-24x
-EPP            = round(PE_PESSIMISTIC * EPS_FY2027E, 0)   # $68
+EPS_FY2026E    = 3.30        # FY2026E adj EPS (cut guidance $3.28-3.32; midpoint)
+PE_PESSIMISTIC = 12.0        # pessimistic P/E: a genuine fresh trough, below the current ~14.7× multiple, reflecting the WATCHMAN/recall overhang
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
 # ── SCENARIO TABLE ────────────────────────────────────────────────────────────
 SCENARIOS = {
-    "BEAR":  (2.55, 24,   61, "Farapulse growth decelerates sharply on competitive PFA entrants (Medtronic PulseSelect, J&J Varipulse); WATCHMAN growth slows; multiple compresses to 24x; EPS $2.55 → 24× = $61"),
-    "BASE":  (3.10, 33,  102, "Farapulse maintains strong double-digit growth amid intensifying PFA competition; WATCHMAN expands steadily on guideline tailwinds; Axonics integration on track; EPS $3.10 → 33× = $102"),
-    "BULL":  (3.55, 38,  135, "Farapulse extends share lead with next-gen catheter iterations; WATCHMAN FLX Pro + expanded indications accelerate growth; structural heart pipeline (mitral/tricuspid) gains traction; EPS $3.55 → 38× = $135"),
-    "XBULL": (4.10, 42,  172, "BSX becomes the clear electrophysiology + structural heart category leader; Farapulse achieves dominant global PFA share; WATCHMAN becomes standard-of-care; M&A pipeline (Axonics-style tuck-ins) compounds growth; EPS $4.10 → 42× = $172"),
+    "BEAR":  (2.30, 12,   28, "WATCHMAN weakness persists into 2027 as management now assumes; recall/restructuring costs linger; EPS $2.30 → 12× = $28"),
+    "BASE":  (3.30, 14.68, 48, "FY2026 guidance holds at the cut level; WATCHMAN stabilizes but doesn't recover; Farapulse and other segments offset partially; EPS $3.30 → 14.7× = $48"),
+    "BULL":  (4.50, 18,   81, "WATCHMAN referral concerns resolve faster than guided; restructuring delivers real margin benefit; Farapulse continues strong; EPS $4.50 → 18× = $81"),
+    "XBULL": (5.20, 21,  109, "Full recovery toward pre-crisis growth trajectory; WATCHMAN concerns fully resolved; multiple re-rates back toward its prior premium; EPS $5.20 → 21× = $109"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -79,51 +99,51 @@ def back_solve_market_composite(price, tol=0.001):
 SIGNALS = [
     {
         "name":       "Farapulse (PFA) revenue YoY growth",
-        "weight":     0.30,
+        "weight":     0.25,
         "thresholds": ("<25%",  "≥45%",  "≥65%",   "≥85%"),
-        "now":        "+60%",
+        "now":        "+55%",
         "score":      2,
-        "comment":    "Farapulse remains the single largest growth driver, scaling rapidly off ~$2.8B run-rate; growth still robust but decelerating from triple-digit launch-year pace as comps normalize and competitors enter",
+        "comment":    "Still the healthiest part of the story — no negative Farapulse-specific news this refresh, decelerating from launch-year highs as expected",
     },
     {
-        "name":       "WATCHMAN (LAAC) revenue YoY growth",
-        "weight":     0.20,
+        "name":       "WATCHMAN (LAAC) revenue growth",
+        "weight":     0.25,
         "thresholds": ("<8%",   "≥14%",  "≥20%",   "≥28%"),
-        "now":        "+17%",
-        "score":      2,
-        "comment":    "WATCHMAN FLX Pro adoption continues to expand penetration of the AFib/anticoagulation-intolerant population; durable double-digit growth with long runway",
+        "now":        "~-2%",
+        "score":      1,
+        "comment":    "THE crisis driver — procedure growth has gone negative on compounding clinical-evidence concerns affecting physician referrals",
     },
     {
         "name":       "PFA competitive dynamics (Medtronic/J&J)",
-        "weight":     0.20,
+        "weight":     0.15,
         "thresholds": ("losing share fast", "share roughly stable", "BSX gaining share", "BSX gaining share + pricing holds"),
         "now":        "BSX gaining share",
         "score":      3,
-        "comment":    "Farapulse first-mover advantage and clinical data (ADVENT/ADMIRE) support continued share gains vs Medtronic PulseSelect and J&J Varipulse, though competitive intensity is rising fast",
+        "comment":    "Farapulse first-mover advantage remains intact even as WATCHMAN struggles — this is a WATCHMAN-specific problem, not a company-wide one",
     },
     {
         "name":       "Organic revenue growth (company-wide)",
         "weight":     0.15,
         "thresholds": ("<8%",   "≥12%",  "≥16%",   "≥20%"),
-        "now":        "+15-16%",
-        "score":      3,
-        "comment":    "Company-wide organic growth has consistently run ~15%+, well above large-cap medtech peers, driven by Farapulse/WATCHMAN/Axonics",
+        "now":        "~6%",
+        "score":      1,
+        "comment":    "Guidance cut sharply from 10-11% to 5.5-6.5% — the WATCHMAN slowdown is now dragging on company-wide growth",
     },
     {
-        "name":       "M&A/pipeline integration (Axonics, structural heart)",
+        "name":       "Recall/restructuring execution",
         "weight":     0.10,
-        "thresholds": ("dilutive/stalled", "on-track integration", "accretive ahead of plan", "additional accretive tuck-ins closing"),
-        "now":        "accretive ahead of plan",
-        "score":      3,
-        "comment":    "Axonics integration tracking ahead of deal-model expectations; management's M&A track record (Axonics, Shockwave-style tuck-ins) has consistently been value-additive",
+        "thresholds": ("escalating/cost overrun", "contained but costly", "resolved, modest cost", "resolved ahead of plan"),
+        "now":        "contained but costly",
+        "score":      2,
+        "comment":    "$500M restructuring announced to protect margins; Orca/Coyote Class II recalls are real but not existential",
     },
     {
         "name":       "Valuation vs forward growth (PEG-adjusted)",
-        "weight":     0.05,
+        "weight":     0.10,
         "thresholds": ("PEG>2.2", "PEG~1.6-2.2", "PEG~1.1-1.6", "PEG<1.1"),
-        "now":        "PEG ~2.1",
-        "score":      2,
-        "comment":    "~34x FY2027E EPS against ~16-18%/yr EPS growth implies a PEG near 2.0-2.2x - a full premium that already prices durable double-digit growth continuing for years",
+        "now":        "PEG ~0.8",
+        "score":      4,
+        "comment":    "~14.7× FY2026E EPS against ~18%/yr forward growth (FY2027E consensus $3.90) is now a genuinely cheap PEG — the crash re-priced the multiple faster than the fundamentals actually deteriorated",
     },
 ]
 
@@ -133,12 +153,12 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "Farapulse category leadership — first-mover PFA advantage with strong clinical data; largest single growth lever in medtech", +0.6, 0.25),
-    ("-", "Premium valuation already prices years of flawless double-digit growth — limited margin for any deceleration", -0.6, 0.20),
-    ("+", "WATCHMAN durable franchise — long runway as guideline adoption and anticoagulation-intolerant population penetration continue", +0.5, 0.15),
-    ("-", "Intensifying PFA competition — Medtronic PulseSelect and J&J Varipulse both scaling; pricing/share dynamics could shift quickly", -0.5, 0.20),
-    ("+", "Diversified growth engines + M&A track record — Axonics, structural heart pipeline, and MedSurg base provide multiple compounding levers beyond Farapulse alone", +0.4, 0.15),
-    ("-", "No dividend / capital returned mostly via reinvestment and M&A — total return depends entirely on multiple + EPS growth, no income cushion", -0.2, 0.05),
+    ("+", "Farapulse category leadership remains intact — the crisis is specific to WATCHMAN, not company-wide", +0.6, 0.25),
+    ("-", "WATCHMAN clinical-evidence concerns — real, quantified, and management itself assumes persistence into 2027", -0.8, 0.25),
+    ("+", "Diversified portfolio (Farapulse, Interventional, Urology/Axonics) provides real offset outside WATCHMAN",     +0.5, 0.15),
+    ("-", "Guidance cut from 10-11% to 5.5-6.5% signals the slowdown reached beyond WATCHMAN alone",                       -0.4, 0.15),
+    ("+", "Valuation reset — the ~53% price decline is a larger move than the ~19% guidance-EPS cut, a real margin of safety", +0.5, 0.10),
+    ("-", "No dividend / two Class II recalls add reputational and execution risk on top of the WATCHMAN issue",           -0.3, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
 ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
@@ -172,8 +192,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 3.55   # FY2028E conservative: ~14% CAGR off FY2027E base, modest deceleration from current pace
-CONS_PE_2YR   = 30     # compresses modestly from ~34x as growth normalizes toward "mature high-growth medtech" multiple
+CONS_EPS_2YR  = 4.20   # FY2028E conservative: ~13%/yr off FY2026E, below the street's implied pace
+CONS_PE_2YR   = 16     # a modest re-rate from the current depressed ~14.7× as risks partially resolve
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -191,7 +211,7 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Electrophysiology (Farapulse) / WATCHMAN / Structural Heart / MedSurg")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  Cardiovascular (WATCHMAN/Farapulse) / MedSurg — Post-Crash Reset")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
@@ -207,54 +227,60 @@ bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 print(f"  {'Segment':<42}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<42}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<42}  ${curr:>11.2f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<42}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<42}  ${curr_total:>11.2f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q2 2026 actual: revenue ${Q2_2026_REVENUE_B:.3f}B (+7.5% YoY, beat), adj EPS ${Q2_2026_ADJ_EPS:.2f} (beat), GAAP EPS ${Q2_2026_GAAP_EPS:.2f}")
 print()
 
-# EPS bridge
+# EPS bridge (net-margin based)
 shares    = SHARES_OUT_M / 1000
-curr_gp   = curr_total * GROSS_MARGIN_CURR
-curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-curr_eps  = round(curr_ni / shares, 2)
+curr_net  = curr_total * NET_MARGIN_CURR
+curr_eps  = round(curr_net / shares, 2)
 
-bull_gp      = bull_total * GROSS_MARGIN_BULL
-bull_oi      = bull_gp - OPEX_FIXED_B
-bull_ni      = bull_oi * (1 - TAX_RATE)
-shares_b     = shares * 0.985   # modest buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_net     = bull_total * NET_MARGIN_BULL
+bull_eps_imp = round(bull_net / shares, 2)
 
-bear_gp      = bear_total * GROSS_MARGIN_CURR * 0.97   # mix shift / pricing pressure from PFA competition
-bear_oi      = bear_gp - OPEX_FIXED_B * 1.0            # commercial investment not easily cut
-bear_ni      = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_net     = bear_total * NET_MARGIN_BEAR
+bear_eps_imp = round(bear_net / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS")
+print(f"  FY2026E EPS check:  ${curr_total:.2f}B rev × {NET_MARGIN_CURR*100:.2f}% net margin")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (guidance ${EPS_FY2026E:.2f} midpoint  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 38× = ~${bull_eps_imp*38:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {NET_MARGIN_BULL*100:.2f}% net margin")
+print(f"  ÷ {shares:.3f}B shares  =  ~${bull_eps_imp:.2f}/share  →  × {SCENARIOS['BULL'][1]}× = ~${bull_eps_imp*SCENARIOS['BULL'][1]:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.97:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 24× trough P/E (premium-grower floor) = ~${bear_eps_imp*24:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {NET_MARGIN_BEAR*100:.2f}% net margin (WATCHMAN weakness persists + recall/restructuring drag)")
+print(f"  ÷ {shares:.3f}B shares  =  ~${bear_eps_imp:.2f}/share  →  × {SCENARIOS['BEAR'][1]}× trough = ~${bear_eps_imp*SCENARIOS['BEAR'][1]:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# WATCHMAN CRISIS / RECALL TRACKER
+print()
+print(f"  WATCHMAN CRISIS / RECALL TRACKER  (the BSX-specific angle):")
+print(f"  Q2 2026 revenue / adj EPS / GAAP EPS:        ${Q2_2026_REVENUE_B:.3f}B / ${Q2_2026_ADJ_EPS:.2f} / ${Q2_2026_GAAP_EPS:.2f}")
+print(f"  FY2026 growth guide, original → cut:          {FY2026_ORIGINAL_GROWTH_GUIDE_PCT}%  →  {FY2026_CUT_GROWTH_GUIDE_PCT}%")
+print(f"  Restructuring announced:                       ${RESTRUCTURING_ANNOUNCED_B:.1f}B  (to protect margins)")
+print(f"  Orca valve recall (Class II, Jun 2026):         {RECALLED_UNITS_ORCA:,} units")
+print(f"  Analyst sentiment despite the crash:            {ANALYST_BUY_RATIO} rate Buy-equivalent, consensus target ${CONSENSUS_TARGET_PRICE:.0f}")
+print(f"  Stock move since last refresh (Jun 10):        {STOCK_MOVE_FROM_JUNE_LOW_PCT:+.1f}%")
+print()
+print(f"  This is a real, quantified crisis, not a sentiment-only selloff: WATCHMAN procedure growth")
+print(f"  has gone negative on clinical-evidence concerns affecting referrals, and management itself")
+print(f"  now assumes the weakness persists into 2027 — that's a genuinely bearish admission. But the")
+print(f"  {abs(STOCK_MOVE_FROM_JUNE_LOW_PCT):.0f}% price decline is considerably larger than the ~19% cut to guided EPS, and the rest of the")
+print(f"  portfolio (Farapulse, Interventional, Urology) shows no comparable deterioration.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev    = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-eps_per_1B_farapulse = 1.0 * 0.78 * (1 - TAX_RATE) / shares   # Farapulse very high incremental margin
-eps_per_1B_other  = 1.0 * 0.62 * (1 - TAX_RATE) / shares      # other segments lower margin
-
+eps_per_1B_rev = 1.0 * NET_MARGIN_CURR / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B Farapulse/WATCHMAN revenue:              +${eps_per_1B_farapulse:.3f}/EPS  = +${eps_per_1B_farapulse*33:.1f}/share at 33× P/E")
-print(f"  Every $1B other-portfolio revenue:                 +${eps_per_1B_other:.3f}/EPS  = +${eps_per_1B_other*33:.1f}/share at 33× P/E")
-print(f"  1pp GM expansion (mix shift to Farapulse/WATCHMAN): +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*33:.1f}/share at 33× P/E")
-print(f"  1% buyback (~14.75M shares):                        +${curr_eps*0.01:.3f}/EPS  (mechanical accretion)")
+print(f"  Every $1B revenue (at {NET_MARGIN_CURR*100:.1f}% margin):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*14.68:.2f}/share at 14.7× P/E")
+print(f"  1pp net margin expansion (mix/restructuring):+${curr_total*0.01/shares:.3f}/EPS  = +${curr_total*0.01/shares*14.68:.2f}/share at 14.7× P/E")
+print(f"  Every 1 turn of P/E:                          ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
-print("  ① SIGNAL DASHBOARD  (Farapulse growth / WATCHMAN / PFA competition / organic growth / M&A / valuation)")
+print("  ① SIGNAL DASHBOARD  (Farapulse growth / WATCHMAN crisis / PFA competition / organic growth / recall / valuation)")
 hr()
 score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
 print(f"  {'Signal':<52}  {'BEAR':>5}  {'BASE':>5}  {'BULL':>6}  {'XBULL':>7}  {'NOW':>6}  Score")
@@ -264,6 +290,7 @@ for s in SIGNALS:
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
     print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
@@ -279,93 +306,82 @@ for sign, desc, score, weight in SCA_FACTORS:
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<52}  {'Current':>16}  {'Bear val':>9}  Trigger")
 hr()
 bear_triggers = [
-    ("Farapulse revenue growth",           "+60%",   "<25%",   "−35pp",  "Medtronic PulseSelect/J&J Varipulse capture meaningful PFA share faster than expected"),
-    ("WATCHMAN revenue growth",            "+17%",   "<8%",    "−9pp",   "Guideline/reimbursement headwinds slow LAAC adoption; competitive devices gain ground"),
-    ("PFA competitive share dynamics",     "gaining","losing share", "reversal", "Newer-gen competitor catheters leapfrog Farapulse on efficiency/safety profile"),
-    ("Organic revenue growth (co-wide)",   "+15-16%","<8%",    "−8pp",   "Multiple segments decelerate simultaneously amid macro/medtech-spending slowdown"),
-    ("Axonics/structural heart M&A",       "ahead of plan","dilutive/stalled", "reversal", "Integration costs run over budget; structural heart pipeline readouts disappoint"),
-    ("Gross margin",                       "70.0%",  "<66%",   "−4pp",   "Pricing pressure from PFA competition + unfavorable mix shift away from Farapulse"),
+    ("Farapulse revenue growth",           "+55%",   "<25%",   "Medtronic PulseSelect/J&J Varipulse capture share faster than expected"),
+    ("WATCHMAN revenue growth",            "~-2%",   "<-10%",  "Clinical-evidence concerns deepen further, referral slowdown accelerates"),
+    ("PFA competitive share dynamics",     "gaining","losing share", "Newer-gen competitor catheters leapfrog Farapulse"),
+    ("Organic revenue growth (co-wide)",   "~6%",    "<3%",    "WATCHMAN drag spreads to other segments; broader medtech slowdown"),
+    ("Recall/restructuring execution",     "contained","escalating", "Additional recalls surface; restructuring costs exceed the $500M budget"),
+    ("Net margin",                         "22.4%",  "<19%",   "Sustained WATCHMAN + recall drag compresses margins further"),
 ]
-for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+for name, curr, bear_v, trigger in bear_triggers:
+    print(f"  {name:<52}  {curr:>16}  {bear_v:>9}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: Medtronic's PulseSelect and J&J's Varipulse scale faster than expected and")
-print(f"  capture meaningful share from Farapulse, simultaneously WATCHMAN growth slows on")
-print(f"  guideline/reimbursement friction, and a broader medtech capex slowdown drags company-wide")
-print(f"  organic growth toward high-single-digits. EPS growth stalls to ~$2.55 → 24× trough P/E")
-print(f"  (premium-grower floor) = ${bear_price}.")
-print(f"  Note: ${bear_price} is NOT permanent impairment — the EP/LAAC category remains a multi-year")
-print(f"  secular growth market. Recovery toward ~${bear_price+25}-${bear_price+45} in 2yr is plausible post-shock as")
-print(f"  next-gen Farapulse iterations and structural heart pipeline provide offsetting growth.")
+print(f"  KEY TRIGGER: the WATCHMAN clinical-evidence concerns deepen rather than stabilize, referral")
+print(f"  volumes keep declining through 2027 as management now assumes, and the recall/restructuring")
+print(f"  costs run over the $500M budget. EPS falls to ~$2.30 at a 12× fresh-trough multiple.")
+print(f"  Note: ${bear_price} would represent a level BELOW the current 52-week low (${VOL_52W_LOW:.2f}) —")
+print(f"  a genuinely severe outcome, not the base case even in this bear scenario.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
 print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
 hr()
-print(f"  FY2027E EPS estimate:           ${EPS_FY2027E:.2f}  (consensus ~$3.00-3.20 non-GAAP)")
-print(f"  Pessimistic P/E at trough:       {PE_PESSIMISTIC:.0f}×  (premium-grower floor; even PFA-competitive-scare scenarios likely hold ~22-26×)")
+print(f"  FY2026E adj EPS estimate:      ${EPS_FY2026E:.2f}  (cut guidance midpoint)")
+print(f"  Pessimistic P/E:                {PE_PESSIMISTIC:.0f}×  (below the current ~14.7× multiple; a fresh trough reflecting the WATCHMAN/recall overhang)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% {'above' if epp_gap_pct >= 0 else 'below'} trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A {epp_gap_pct:+.0f}% {'premium to' if epp_gap_pct >= 0 else 'discount to'} EPP reflects that BSX trades at roughly")
-print(f"  {CURRENT_PRICE/EPS_FY2027E:.1f}× FY2027E EPS ${EPS_FY2027E:.2f} — a steep multiple that prices in continued")
-print(f"  Farapulse share leadership, durable WATCHMAN double-digit growth, and successful Axonics/")
-print(f"  structural heart integration ALL playing out favorably. The risk is that even modest")
-print(f"  disappointment on the PFA competitive front compresses the multiple meaningfully toward")
-print(f"  the EPP floor.")
-print(f"  EPP path: FY2029E EPS ~$4.10 × {PE_PESSIMISTIC:.0f}× = ${4.10*PE_PESSIMISTIC:.0f} floor (EPP grows quickly given high underlying EPS growth).")
-print(f"  At 33× mid-cycle P/E: ${EPS_FY2027E:.2f} × 33 = ${EPS_FY2027E*33:.0f}  — roughly in line with current price, implying market is pricing FY2027E earnings power near full value.")
+print(f"  At ${CURRENT_PRICE:.2f}, BSX trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E EPS — a dramatic de-rating from the")
+print(f"  ~30× multiples it commanded through 2025 as a premium medtech grower. The EPP floor still")
+print(f"  provides real margin of safety even after accounting for the genuine WATCHMAN deterioration.")
+print(f"  At 18× mid-cycle P/E (WATCHMAN concerns resolve): ${EPS_FY2026E:.2f} × 18 = ${EPS_FY2026E*18:.0f}  — {(EPS_FY2026E*18/CURRENT_PRICE-1)*100:+.0f}% above current price.")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
-print("  ④ CONSERVATIVE GROWTH  (2-yr: EPS growth decelerates modestly; P/E compresses from current levels)")
+print("  ④ CONSERVATIVE GROWTH  (2-yr: modest EPS growth, partial multiple recovery)")
 hr()
-print(f"  Conservative FY2028E EPS:        ${CONS_EPS_2YR:.2f}  (~14% CAGR off FY2027E; modest deceleration from current ~16%+ growth pace)")
-print(f"  Conservative exit P/E:            {CONS_PE_2YR}×  (compresses from ~{CURRENT_PRICE/EPS_FY2027E:.1f}× as growth normalizes toward 'mature high-growth medtech' multiple)")
+print(f"  Conservative FY2028E EPS:        ${CONS_EPS_2YR:.2f}  (~13%/yr off FY2026E, below the street's implied pace)")
+print(f"  Conservative exit P/E:            {CONS_PE_2YR}×  (a modest re-rate from the current depressed ~14.7×)")
 print(f"  Conservative equity value:        ${cons_equity:.2f}/share")
-print(f"  + Cumulative dividends (2yr):    +${cons_divs:.2f}/share  (no dividend - BSX reinvests for growth/M&A)")
+print(f"  + Cumulative dividends (2yr):    +${cons_divs:.2f}/share  (no dividend — BSX reinvests for growth/M&A)")
 hr()
 print(f"  Conservative 2yr total:           ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
 print(f"  Conservative total return:        {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE QUESTION: BSX trades at {CURRENT_PRICE/EPS_FY2027E:.1f}× FY2027E EPS ${EPS_FY2027E:.2f} — a steep multiple even")
-print(f"  for a company growing EPS mid-to-high-teens annually. The conservative case assumes growth")
-print(f"  decelerates modestly to ~14%/yr by FY2028E AND the multiple compresses to {CONS_PE_2YR}× as PFA")
-print(f"  competition intensifies and the market re-rates from 'category-defining grower' toward")
-print(f"  'best-in-class compounder' pricing. Multiple compression can offset strong earnings growth —")
-print(f"  this is the central risk of owning BSX at current levels, with no dividend cushion.")
+print(f"  THE HONEST READ: even a conservative case — modest EPS growth, only a partial multiple")
+print(f"  recovery, and no credit for WATCHMAN fully resolving — delivers a substantial positive")
+print(f"  return, because the ~53% price decline has already priced in more damage than the")
+print(f"  guidance cuts (~19% EPS reduction) actually reflect.")
 print(f"  For conservative 2yr to break even at {CONS_PE_2YR}× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~{((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2027E - 1)*100:.1f}% EPS growth by FY2028E vs FY2027E.")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at {CONS_PE_2YR}× P/E; ratio_b <1.0×)")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.24
+annual_vol  = 0.42
 beta        = 0.95
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
-print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (no dividend - BSX reinvests for growth/M&A)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (moderate; consistent grower but PFA-competitive headlines drive swings)")
-print(f"  Beta vs S&P 500:      {beta:.2f}  (roughly market-like; growth-stock sensitivity to medtech sentiment)")
+print(f"  Note: stock is down {abs(STOCK_MOVE_FROM_JUNE_LOW_PCT):.1f}% since the last refresh (Jun 10) and ~57-60% from its Sep 2025 peak")
+print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (no dividend — BSX reinvests for growth/M&A)")
+print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; repeated guidance cuts drove large single-day moves through 2026)")
+print(f"  Beta vs S&P 500:      {beta:.2f}  (roughly market-like; now compounded by idiosyncratic WATCHMAN risk)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (significant but plausible on PFA-competitive-shock scenario)")
-print(f"  52W range reflects fairly contained volatility for a premium-multiple grower, given consistent execution.")
-print(f"  → PFA competitive dynamics (Medtronic/J&J) are THE KEY binary for downside risk.")
-print(f"  → WATCHMAN guideline expansion + structural heart pipeline are KEY bull catalysts.")
-print(f"  → AVOID above $120  |  WATCHLIST $100–115  |  ACCUMULATE $85–98  |  BUY below $80")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (a genuinely severe outcome below the current 52-week low)")
+print(f"  → WATCHMAN referral-volume trend over the next 1-2 quarters is THE KEY signal to watch.")
+print(f"  → Farapulse growth durability and restructuring execution are the KEY offsetting factors.")
+print(f"  → {signal_short} at ${CURRENT_PRICE:.2f}  |  Add below $45  |  Trim above $75")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -394,26 +410,23 @@ print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
 print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is")
-print(f"  {'ABOVE' if MARKET_COMPOSITE > ADJ_COMPOSITE else 'BELOW'} the model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing")
-print(f"  ~{MARKET_COMPOSITE:.2f}/4.0 while the model scores fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: the market is pricing in continued Farapulse share leadership and durable")
-print(f"  WATCHMAN/Axonics growth with little allowance for PFA-competitive disruption. The risk/")
-print(f"  reward skew (Ratio B {ratio_b_str}) reflects that current levels leave limited room for error —")
-print(f"  any deceleration in the Farapulse growth story could trigger meaningful multiple compression.")
+print(f"  {'ABOVE' if MARKET_COMPOSITE > ADJ_COMPOSITE else 'BELOW'} the model's adj composite ({ADJ_COMPOSITE:.3f}). The gap ({ADJ_GAP:+.2f}) indicates the stock is")
+print(f"  {valuation_label.lower()} by model standards. In plain terms: the WATCHMAN crisis is real and the proxy")
+print(f"  fundamentals score genuinely weak (~{PROXY_COMPOSITE:.1f}/4.0) — but the price decline has been so severe that")
+print(f"  the resulting valuation reset (ratio_b {ratio_b_str}) more than compensates, consistent with the")
+print(f"  {ANALYST_BUY_RATIO} analysts still rating the stock Buy-equivalent.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) Farapulse (PFA) — global rollout pace, capacity expansion, share vs Medtronic PulseSelect/J&J Varipulse")
-print(f"  (2) WATCHMAN (LAAC) — guideline expansion, reimbursement, FLX Pro adoption trajectory")
-print(f"  (3) Axonics integration — synergy realization, sacral neuromodulation share gains")
-print(f"  (4) Structural heart pipeline — mitral/tricuspid program readouts and approvals")
-print(f"  (5) Organic growth sustainability — company-wide growth vs ~15%+ recent run-rate")
-print(f"  (6) Capital allocation — further accretive tuck-in M&A vs buybacks (no dividend)")
-print(f"  AVOID above $120  |  WATCHLIST $100–115  |  ACCUMULATE $85–98  |  BUY below $80")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2027E EPS: ${EPS_FY2027E:.2f}")
+print(f"  (1) WATCHMAN referral-volume trend — the next 1-2 quarterly prints are the key test")
+print(f"  (2) Farapulse (PFA) growth durability — confirming the rest of the portfolio stays healthy")
+print(f"  (3) $500M restructuring execution — margin benefit realization vs cost overrun risk")
+print(f"  (4) Any further Class II/III recalls — quality-system scrutiny following Orca/Coyote")
+print(f"  (5) Organic revenue growth stabilization — confirming 5.5-6.5% guidance holds, doesn't get cut again")
+print(f"  {signal_short} at ${CURRENT_PRICE:.2f}  |  Add below $45  |  Trim above $75")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
 print("═" * (W + 4))
 print()
 

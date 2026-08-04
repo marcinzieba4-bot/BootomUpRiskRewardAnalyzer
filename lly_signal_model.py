@@ -1,7 +1,7 @@
 """
 LLY  ·  Eli Lilly and Company  ·  NYSE: LLY
-Bottom-up signal model  ·  GLP-1 (Zepbound/Mounjaro/orforglipron) / Pipeline (Donanemab/Verzenio) / Premium Valuation
-Date: 2026-06-10
+Bottom-up signal model  ·  GLP-1 (Zepbound/Mounjaro/Foundayo) / Pipeline (Donanemab/Verzenio) / Premium Valuation
+Date: 2026-08-04
 """
 
 import math
@@ -9,45 +9,57 @@ import math
 # ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
 TICKER        = "LLY"
 COMPANY       = "Eli Lilly and Company"
-SECTOR        = "Pharma · GLP-1 (Zepbound/Mounjaro/Orforglipron) · Alzheimer's (Kisunla) · Oncology (Verzenio) · NYSE: LLY"
-CURRENT_PRICE = 825.00      # USD; as of 2026-06-10
-VOL_52W_LOW   = 680.00      # 2025 GLP-1 competitive-scare trough
-VOL_52W_HIGH  = 985.00      # early-2026 oral GLP-1 (orforglipron) approval euphoria peak
-SHARES_OUT_M  = 950.0       # millions
-ANNUAL_DIV    = 6.16        # $/share; ~0.7% yield; growing fast off small base
+SECTOR        = "Pharma · GLP-1 (Zepbound/Mounjaro/Foundayo) · Alzheimer's (Kisunla) · Oncology (Verzenio) · NYSE: LLY"
+CURRENT_PRICE = 1_121.36    # USD; close 2026-08-03
+VOL_52W_LOW   =   623.78    # USD
+VOL_52W_HIGH  = 1_249.45    # USD
+SHARES_OUT_M  = 892.0       # millions
+ANNUAL_DIV    = 6.92        # $/share; small but growing fast off a low payout ratio
 
 # ── PRODUCT REVENUE BRIDGE (company-specific calculator) ─────────────────────
-# FY2026E revenue by segment ($B)
+# NOTE: Q2 2026 results have NOT yet been reported as of this refresh — Lilly reports
+# tomorrow, Aug 5, 2026. This model is built on Q1 2026 actuals (Mounjaro+Zepbound $12.82B
+# combined, ~65% of revenue) and FY2026 guidance: revenue $82.0-85.0B, adj EPS $35.50-37.00
+# (consensus ~$34.51, +42% YoY). FY2027 consensus EPS ~$45.14. Foundayo (orforglipron, the
+# oral GLP-1 pill) launched April 2026 with an encouraging early ramp — 20,000+ patients
+# treated, 80% new-to-class — a real proof point for the category-expansion thesis.
 SEG_DATA = [
     # (segment, curr_rev_B, bear_rev_B, bull_rev_B, description)
-    ("Mounjaro/Zepbound (tirzepatide)", 38.0, 26.0, 50.0, "Combined GLP-1 incretin franchise; tens-of-billions run-rate, still capacity-constrained in places"),
-    ("Orforglipron (oral GLP-1)",        2.0,  0.0, 10.0, "Newly launched oral GLP-1; massive TAM expansion if uptake/access strong; near-zero if delayed/underwhelming"),
-    ("Verzenio (oncology, CDK4/6)",      8.0,  6.5,  9.5, "Adjuvant breast cancer label drives steady double-digit growth"),
-    ("Donanemab/Kisunla (Alzheimer's)",  1.5,  0.5,  4.0, "Early-stage launch; reimbursement/diagnostic infrastructure the swing factor"),
-    ("Trulicity/Jardiance/Established",  9.5,  7.0, 10.5, "Legacy diabetes/CV portfolio; Trulicity cannibalized by tirzepatide but Jardiance steady"),
-    ("Other (immunology/rare disease)",  6.0,  5.0,  7.5, "Taltz, Olumiant, smaller franchises; mid-single-digit growth"),
+    ("Mounjaro/Zepbound (tirzepatide)",  52.0, 38.0,  64.0, "Combined GLP-1 incretin franchise; Q1 2026 alone was $12.82B, ~65% of revenue"),
+    ("Foundayo (orforglipron, oral GLP-1)", 4.0,  1.0,  12.0, "Launched Apr 2026; 20,000+ patients treated, 80% new-to-class — early proof of category expansion"),
+    ("Verzenio (oncology, CDK4/6)",       8.5,  7.0,  10.0, "Adjuvant breast cancer label drives steady double-digit growth"),
+    ("Donanemab/Kisunla (Alzheimer's)",   2.0,  0.8,   4.5, "Early-stage launch; reimbursement/diagnostic infrastructure the swing factor"),
+    ("Trulicity/Jardiance/Established",   9.5,  7.5,  10.5, "Legacy diabetes/CV portfolio; Trulicity cannibalized by tirzepatide but Jardiance steady"),
+    ("Other (immunology/rare disease)",   7.5,  6.2,   9.0, "Taltz, Olumiant, smaller franchises; mid-single-digit growth"),
 ]
 
-# Margin assumptions
-GROSS_MARGIN_CURR = 0.820   # blended gross margin; high-margin GLP-1 mix
-GROSS_MARGIN_BULL = 0.840   # BULL: scale economies on GLP-1 manufacturing further lift blend
-OPEX_FIXED_B      = 24.0    # SG&A + R&D ($B); heavy R&D investment in pipeline
-TAX_RATE          = 0.130   # effective rate; Puerto Rico/Ireland manufacturing footprint
+# Net-margin-based bridge
+NET_MARGIN_CURR = 0.3872   # FY2026E; reconciles to raised guidance midpoint
+NET_MARGIN_BEAR = 0.3539   # BEAR: competitive share loss + pricing pressure compress margin
+NET_MARGIN_BULL = 0.4217   # BULL: continued GLP-1 scale economies expand margin further
+
+# ── GLP-1 SCALE / ORAL LAUNCH TRACKER (the Lilly-specific angle) ──────────────
+Q1_2026_TIRZEPATIDE_REV_B     = 12.82   # $B, Q1 2026 Mounjaro+Zepbound combined
+FOUNDAYO_PATIENTS_TREATED     = 20_000  # patients treated since April 2026 launch
+FOUNDAYO_NEW_TO_CLASS_PCT     = 80      # % of Foundayo patients new to the GLP-1 class
+FY2026_GUIDANCE_EPS_RANGE     = "35.50-37.00"  # $ non-GAAP, FY2026 guidance
+Q2_EARNINGS_DATE               = "2026-08-05"  # tomorrow — the next real catalyst
+STOCK_MOVE_FROM_JUNE_LOW_PCT  = round((CURRENT_PRICE - 825.00) / 825.00 * 100, 1)  # move since last refresh
 
 # ── EPP (Earnings Power Price) ────────────────────────────────────────────────
-EPS_FY2027E    = 28.00       # FY2027E EPS (consensus ~$27-29 non-GAAP)
-PE_PESSIMISTIC = 22.0        # trough P/E: even in a GLP-1-competitive-scare scenario, premium grower floor ~20-24x
-EPP            = round(PE_PESSIMISTIC * EPS_FY2027E, 0)   # $616
+EPS_FY2026E    = 36.25       # FY2026E EPS (guidance $35.50-37.00; midpoint)
+PE_PESSIMISTIC = 24.0        # pessimistic P/E: premium-grower floor; even a GLP-1 competitive scare likely holds ~22-26×
+EPP            = round(PE_PESSIMISTIC * EPS_FY2026E, 0)
 
 vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
 epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
 
 # ── SCENARIO TABLE ────────────────────────────────────────────────────────────
 SCENARIOS = {
-    "BEAR":  (20.00, 22,  440, "Novo Nordisk + oral generic competition erodes GLP-1 pricing/share; orforglipron launch disappoints; donanemab uptake stalls; EPS $20 → 22× = $440"),
-    "BASE":  (28.00, 30,  840, "Mounjaro/Zepbound continue strong growth as supply constraints ease; orforglipron launches successfully but cannibalizes some injectable share; Verzenio steady; EPS $28 → 30× = $840"),
-    "BULL":  (38.00, 34, 1292, "Orforglipron becomes a blockbuster oral franchise expanding total GLP-1 TAM; donanemab Alzheimer's uptake accelerates; international GLP-1 access expands rapidly; EPS $38 → 34× = $1292"),
-    "XBULL": (52.00, 38, 1976, "LLY achieves durable GLP-1 category dominance across obesity/diabetes/cardiometabolic with minimal share loss to Novo; pipeline (donanemab, next-gen incretins) becomes a second growth engine; EPS $52 → 38× = $1976"),
+    "BEAR":  (24.00, 24,  576, "Novo Nordisk next-gen competition erodes GLP-1 pricing/share; Foundayo uptake stalls; EPS $24 → 24× = $576"),
+    "BASE":  (36.25, 30.93, 1121, "Mounjaro/Zepbound continue strong growth as supply constraints ease; Foundayo scales steadily; Verzenio steady; EPS $36.25 → 31× = $1121"),
+    "BULL":  (52.00, 28,  1456, "Foundayo becomes a blockbuster oral franchise expanding total GLP-1 TAM; donanemab uptake accelerates; international access expands; EPS $52 → 28× = $1456"),
+    "XBULL": (62.00, 32, 1984, "LLY achieves durable GLP-1 category dominance across obesity/diabetes/cardiometabolic with minimal share loss to Novo; pipeline becomes a second growth engine; EPS $62 → 32× = $1984"),
 }
 
 # ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
@@ -81,17 +93,17 @@ SIGNALS = [
         "name":       "Mounjaro/Zepbound combined revenue YoY growth",
         "weight":     0.30,
         "thresholds": ("<25%",  "≥40%",  "≥60%",   "≥80%"),
-        "now":        "+55%",
+        "now":        "+45%",
         "score":      2,
-        "comment":    "Combined incretin franchise still scaling rapidly off a now-massive base; growth rate naturally decelerating from triple-digit early years",
+        "comment":    "Combined incretin franchise still scaling off a now-massive base; growth naturally decelerating from triple-digit early years",
     },
     {
-        "name":       "Orforglipron (oral GLP-1) launch trajectory",
+        "name":       "Foundayo (orforglipron) launch trajectory",
         "weight":     0.20,
         "thresholds": ("delayed/weak", "on-track modest", "strong uptake", "category-expanding blockbuster"),
-        "now":        "early launch, on-track",
-        "score":      2,
-        "comment":    "Approved and launching; early scripts encouraging but too soon to confirm category-expanding blockbuster trajectory vs modest cannibalization of injectables",
+        "now":        "strong early uptake",
+        "score":      3,
+        "comment":    "20,000+ patients treated since April launch, 80% new-to-class — real early evidence the oral pill is expanding the category, not just cannibalizing injectables",
     },
     {
         "name":       "GLP-1 manufacturing capacity / supply-demand balance",
@@ -107,23 +119,23 @@ SIGNALS = [
         "thresholds": ("share loss accelerating", "share roughly stable", "LLY gaining share", "LLY gaining share + price holds"),
         "now":        "LLY gaining share",
         "score":      3,
-        "comment":    "Tirzepatide head-to-head data favors LLY vs semaglutide; Novo execution stumbles have allowed LLY to gain incretin share, though pricing pressure is emerging",
+        "comment":    "Tirzepatide head-to-head data favors LLY vs semaglutide; Novo execution stumbles have allowed LLY to gain incretin share",
     },
     {
         "name":       "Donanemab (Kisunla) Alzheimer's uptake",
         "weight":     0.10,
         "thresholds": ("stalled", "slow ramp", "accelerating", "standard-of-care adoption"),
-        "now":        "slow ramp",
+        "now":        "slow ramp, improving",
         "score":      2,
-        "comment":    "Diagnostic infrastructure (amyloid PET/blood biomarkers) and reimbursement still building; uptake slower than GLP-1 but improving",
+        "comment":    "Diagnostic infrastructure (amyloid PET/blood biomarkers) and reimbursement still building",
     },
     {
         "name":       "Valuation vs forward growth (PEG-adjusted)",
         "weight":     0.10,
         "thresholds": ("PEG>2.5", "PEG~1.8-2.5", "PEG~1.2-1.8", "PEG<1.2"),
-        "now":        "PEG ~2.0",
-        "score":      2,
-        "comment":    "~29x FY2027E EPS against ~20-25%/yr EPS growth implies a PEG near 2.0x - a premium that already prices substantial future success",
+        "now":        "PEG ~1.3",
+        "score":      3,
+        "comment":    "~31x FY2026E EPS against ~25%/yr forward EPS growth (FY2027E consensus $45.14) implies a PEG near 1.3x — rich but not as stretched as the headline multiple suggests",
     },
 ]
 
@@ -133,11 +145,11 @@ PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
 
 # ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
 SCA_FACTORS = [
-    ("+", "GLP-1 category leadership — tirzepatide best-in-class efficacy data; first-mover in oral GLP-1 (orforglipron)", +0.7, 0.25),
-    ("-", "Premium valuation already prices years of flawless execution — limited margin for disappointment", -0.7, 0.20),
+    ("+", "GLP-1 category leadership — tirzepatide best-in-class efficacy data; first-mover advantage now proving out in oral GLP-1 (Foundayo)", +0.7, 0.25),
+    ("-", "Premium valuation still prices substantial future success even after the PEG-adjusted read looks more reasonable", -0.5, 0.20),
     ("+", "Manufacturing capex build-out — multi-billion dollar capacity expansion removes supply as a growth constraint over time", +0.5, 0.15),
     ("-", "Competitive/pricing risk — Novo Nordisk next-gen (CagriSema/oral semaglutide) + eventual generic/biosimilar incretin entrants by early 2030s", -0.5, 0.20),
-    ("+", "Pipeline optionality — donanemab (Alzheimer's), Verzenio (oncology), next-gen incretins (retatrutide) provide diversification beyond tirzepatide", +0.4, 0.10),
+    ("+", "Pipeline optionality — Foundayo's early data is real proof of diversification beyond injectable tirzepatide, plus donanemab/Verzenio", +0.5, 0.10),
     ("-", "Policy/pricing risk — US drug pricing reform (IRA negotiation), international reference pricing pressure on GLP-1 list prices", -0.3, 0.10),
 ]
 SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
@@ -172,8 +184,8 @@ else:
 ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
 
 # ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
-CONS_EPS_2YR  = 33.00   # FY2028E conservative: ~18% CAGR off FY2027E base, deceleration from current pace
-CONS_PE_2YR   = 26      # rerates down modestly from ~30x as growth decelerates toward "mature blockbuster" multiple
+CONS_EPS_2YR  = 48.00   # FY2028E conservative: ~15%/yr off FY2026E, below street's ~25%/yr pace
+CONS_PE_2YR   = 26      # compresses modestly from ~31× as growth normalizes
 cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
 cons_divs     = ANNUAL_DIV * 2
 cons_total    = cons_equity + cons_divs
@@ -191,7 +203,7 @@ def bar(score):
 
 print()
 print("═" * (W + 4))
-print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  GLP-1 (Zepbound/Mounjaro/Orforglipron) / Donanemab / Verzenio")
+print(f"  {TICKER}  ·  {COMPANY}  ·  ${CURRENT_PRICE:.2f}  ·  GLP-1 (Zepbound/Mounjaro/Foundayo) / Donanemab / Verzenio")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]")
 print("═" * (W + 4))
 
@@ -204,53 +216,58 @@ curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
 bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
 bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
 
-print(f"  {'Segment':<36}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
+print(f"  {'Segment':<38}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}  {'Δ Bear':>8}  {'Δ Bull':>8}")
 hr()
 for seg, curr, bear, bull, desc in SEG_DATA:
-    print(f"  {seg:<36}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
+    print(f"  {seg:<38}  ${curr:>11.1f}  ${bear:>8.1f}  ${bull:>8.1f}  {bear-curr:>+7.1f}  {bull-curr:>+7.1f}")
     print(f"    {desc}")
 hr()
-print(f"  {'TOTAL':<36}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  {'TOTAL':<38}  ${curr_total:>11.1f}  ${bear_total:>8.1f}  ${bull_total:>8.1f}  {bear_total-curr_total:>+7.1f}  {bull_total-curr_total:>+7.1f}")
+print(f"  Q1 2026 actual: Mounjaro+Zepbound ${Q1_2026_TIRZEPATIDE_REV_B:.2f}B combined (~65% of revenue)")
+print(f"  ⚠ Q2 2026 earnings report tomorrow ({Q2_EARNINGS_DATE}) — the next confirmation point for this model")
 print()
 
-# EPS bridge
+# EPS bridge (net-margin based)
 shares    = SHARES_OUT_M / 1000
-curr_gp   = curr_total * GROSS_MARGIN_CURR
-curr_oi   = curr_gp - OPEX_FIXED_B
-curr_ni   = curr_oi * (1 - TAX_RATE)
-curr_eps  = round(curr_ni / shares, 2)
+curr_net  = curr_total * NET_MARGIN_CURR
+curr_eps  = round(curr_net / shares, 2)
 
-bull_gp      = bull_total * GROSS_MARGIN_BULL
-bull_oi      = bull_gp - OPEX_FIXED_B
-bull_ni      = bull_oi * (1 - TAX_RATE)
-shares_b     = shares * 0.985   # modest buyback over 2yr
-bull_eps_imp = round(bull_ni / shares_b, 1)
+bull_net     = bull_total * NET_MARGIN_BULL
+bull_eps_imp = round(bull_net / shares, 2)
 
-bear_gp      = bear_total * GROSS_MARGIN_CURR * 0.97   # mix shift / pricing pressure
-bear_oi      = bear_gp - OPEX_FIXED_B * 1.0            # R&D not easily cut
-bear_ni      = max(0, bear_oi) * (1 - TAX_RATE)
-bear_eps_imp = round(bear_ni / shares, 1)
+bear_net     = bear_total * NET_MARGIN_BEAR
+bear_eps_imp = round(bear_net / shares, 2)
 
-print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {GROSS_MARGIN_CURR*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − {TAX_RATE*100:.1f}% tax")
-print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share adj EPS")
+print(f"  FY2026E EPS check:  ${curr_total:.1f}B rev × {NET_MARGIN_CURR*100:.2f}% net margin")
+print(f"  ÷ {shares:.3f}B shares  =  ${curr_eps:.2f}/share  (guidance ${EPS_FY2026E:.2f} midpoint  ✓)")
 print()
-print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {GROSS_MARGIN_BULL*100:.1f}% GM − ${OPEX_FIXED_B:.1f}B opex − tax")
-print(f"  ÷ {shares_b:.3f}B shares (post-buyback)  =  ~${bull_eps_imp:.1f}/share  →  ${bull_eps_imp:.1f} × 34× = ~${bull_eps_imp*34:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
+print(f"  BULL EPS check:  ${bull_total:.1f}B rev × {NET_MARGIN_BULL*100:.2f}% net margin")
+print(f"  ÷ {shares:.3f}B shares  =  ~${bull_eps_imp:.2f}/share  →  × {SCENARIOS['BULL'][1]}× = ~${bull_eps_imp*SCENARIOS['BULL'][1]:.0f}  ✓ BULL ${SCENARIOS['BULL'][2]}")
 print()
-print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {GROSS_MARGIN_CURR*100*0.97:.1f}% GM − opex  =  ~${bear_eps_imp:.1f}/share")
-print(f"  At 22× trough P/E (premium-grower floor) = ~${bear_eps_imp*22:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+print(f"  BEAR EPS check:  ${bear_total:.1f}B rev × {NET_MARGIN_BEAR*100:.2f}% net margin (competitive share loss + pricing pressure)")
+print(f"  ÷ {shares:.3f}B shares  =  ~${bear_eps_imp:.2f}/share  →  × {SCENARIOS['BEAR'][1]}× trough = ~${bear_eps_imp*SCENARIOS['BEAR'][1]:.0f}  ✓ BEAR ${SCENARIOS['BEAR'][2]}")
+
+# GLP-1 SCALE / ORAL LAUNCH TRACKER
+print()
+print(f"  GLP-1 SCALE / ORAL LAUNCH TRACKER  (the Lilly-specific angle):")
+print(f"  Q1 2026 Mounjaro+Zepbound revenue:            ${Q1_2026_TIRZEPATIDE_REV_B:.2f}B combined")
+print(f"  Foundayo patients treated since Apr launch:    {FOUNDAYO_PATIENTS_TREATED:,}+")
+print(f"  Foundayo new-to-class patients:                 {FOUNDAYO_NEW_TO_CLASS_PCT}%")
+print(f"  FY2026 guidance:                                EPS ${FY2026_GUIDANCE_EPS_RANGE}")
+print(f"  Stock move since last refresh (Jun 10):        +{STOCK_MOVE_FROM_JUNE_LOW_PCT:.1f}%")
+print()
+print(f"  ⚠ This model is built entirely on Q1 2026 data and FY2026 guidance — Q2 2026 results report")
+print(f"  tomorrow, {Q2_EARNINGS_DATE}. Given the stock is up {STOCK_MOVE_FROM_JUNE_LOW_PCT:.0f}% since June on Foundayo launch enthusiasm,")
+print(f"  tomorrow's print (and any commentary on oral GLP-1 uptake specifically) is a real near-term")
+print(f"  catalyst that could move this model's inputs meaningfully in either direction.")
 
 # KEY SENSITIVITIES
 print()
-eps_per_1B_rev      = (1.0 * GROSS_MARGIN_CURR * (1 - TAX_RATE)) / shares
-eps_per_1B_glp1     = 1.0 * 0.85 * (1 - TAX_RATE) / shares   # GLP-1 very high incremental margin
-eps_per_1B_other    = 1.0 * 0.70 * (1 - TAX_RATE) / shares   # other segments lower margin
-
+eps_per_1B_rev = 1.0 * NET_MARGIN_CURR / shares
 print(f"  KEY SENSITIVITIES:")
-print(f"  Every $1B Mounjaro/Zepbound/Orforglipron revenue:  +${eps_per_1B_glp1:.3f}/EPS  = +${eps_per_1B_glp1*30:.1f}/share at 30× P/E")
-print(f"  Every $1B other-portfolio revenue:                 +${eps_per_1B_other:.3f}/EPS  = +${eps_per_1B_other*30:.1f}/share at 30× P/E")
-print(f"  1pp GM expansion (manufacturing scale economies):  +${curr_total*0.01*(1-TAX_RATE)/shares:.2f}/EPS  = +${curr_total*0.01*(1-TAX_RATE)/shares*30:.1f}/share at 30× P/E")
-print(f"  1% buyback (~9.5M shares):                          +${curr_eps*0.01:.3f}/EPS  (mechanical accretion)")
+print(f"  Every $1B revenue (at {NET_MARGIN_CURR*100:.1f}% margin):  +${eps_per_1B_rev:.3f}/EPS  = +${eps_per_1B_rev*30.9:.2f}/share at 30.9× P/E")
+print(f"  1pp net margin expansion (mix/scale):        +${curr_total*0.01/shares:.3f}/EPS  = +${curr_total*0.01/shares*30.9:.2f}/share at 30.9× P/E")
+print(f"  Every 1 turn of P/E:                          ±${EPS_FY2026E:.2f}/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
 
 # ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print()
@@ -264,6 +281,7 @@ for s in SIGNALS:
     lbl = score_labels[s["score"]]
     b   = bar(s["score"])
     print(f"  {s['name']:<52}  {ths[0]:>5}  {ths[1]:>5}  {ths[2]:>6}  {ths[3]:>7}  {s['now']:>6}  {lbl}  {b}")
+    print(f"    {s['comment']}")
 
 print()
 print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
@@ -279,90 +297,82 @@ for sign, desc, score, weight in SCA_FACTORS:
 print()
 print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${bear_price})")
 hr()
-print(f"  {'Signal':<52}  {'Current':>8}  {'Bear val':>9}  {'Move':>8}  Trigger")
+print(f"  {'Signal':<52}  {'Current':>16}  {'Bear val':>9}  Trigger")
 hr()
 bear_triggers = [
-    ("Mounjaro/Zepbound revenue growth",   "+55%",   "<25%",   "−30pp",  "Novo Nordisk next-gen (CagriSema) + price wars erode share/pricing"),
-    ("Orforglipron launch trajectory",     "on-track","delayed/weak", "downgrade", "Efficacy/tolerability data underwhelms vs injectables; slow uptake"),
-    ("Manufacturing capacity",             "constrained","severe shortage", "worse", "Capex delays/quality issues at new sites stall supply growth"),
-    ("Competitive share vs Novo",          "gaining","losing share", "reversal", "Novo oral semaglutide + biosimilar entrants take meaningful share"),
-    ("Donanemab uptake",                   "slow ramp","stalled", "worse", "Reimbursement/diagnostic barriers prevent meaningful Alzheimer's revenue"),
-    ("Gross margin",                       "82.0%",  "<78%",   "−4pp",   "Pricing concessions (US IRA negotiation, international reference pricing)"),
+    ("Mounjaro/Zepbound revenue growth",   "+45%",   "<25%",   "Novo Nordisk next-gen (CagriSema) + price wars erode share/pricing"),
+    ("Foundayo launch trajectory",         "strong uptake", "delayed/weak", "Efficacy/tolerability data underwhelms vs injectables; slow uptake"),
+    ("Manufacturing capacity",             "constrained, improving", "severe shortage", "Capex delays/quality issues at new sites stall supply growth"),
+    ("Competitive share vs Novo",          "gaining", "losing share", "Novo oral semaglutide + biosimilar entrants take meaningful share"),
+    ("Donanemab uptake",                   "slow ramp", "stalled", "Reimbursement/diagnostic barriers prevent meaningful Alzheimer's revenue"),
+    ("Net margin",                         "38.7%",  "<33%",   "Pricing concessions (US IRA negotiation, international reference pricing)"),
 ]
-for name, curr, bear_v, move, trigger in bear_triggers:
-    print(f"  {name:<52}  {curr:>8}  {bear_v:>9}  {move:>8}  {trigger[:45]}")
+for name, curr, bear_v, trigger in bear_triggers:
+    print(f"  {name:<52}  {curr:>16}  {bear_v:>9}  {trigger[:44]}")
 
 probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
 print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print(f"  KEY TRIGGER: Novo Nordisk's next-generation incretins (CagriSema, oral semaglutide) launch")
-print(f"  with competitive efficacy and aggressive pricing, simultaneously orforglipron's launch")
-print(f"  underwhelms on tolerability/efficacy, and US drug-pricing reform (IRA negotiation) forces")
-print(f"  GLP-1 list-price cuts. EPS growth stalls to ~$20 → 22× trough P/E (premium-grower floor) = ${bear_price}.")
-print(f"  Note: ${bear_price} is NOT permanent impairment — GLP-1 category remains a multi-decade secular")
-print(f"  growth market. Recovery toward ~${bear_price+150}-${bear_price+250} in 2yr is plausible post-shock as")
-print(f"  pipeline (donanemab, retatrutide) and international expansion provide offsetting growth.")
+print(f"  KEY TRIGGER: Novo Nordisk's next-generation incretins launch with competitive efficacy and")
+print(f"  aggressive pricing, Foundayo's early strong uptake proves unsustainable, and US drug-pricing")
+print(f"  reform forces GLP-1 list-price cuts. EPS growth stalls to ~$24 at a 24× premium-grower floor.")
+print(f"  Note: ${bear_price} is NOT permanent impairment — GLP-1 remains a multi-decade secular growth")
+print(f"  market, and Lilly's pipeline (donanemab, retatrutide) provides offsetting growth vectors.")
 
 # ─── ④ EPP ────────────────────────────────────────────────────────────────────
 print()
 print("  ③ EPP  (Earnings Power Price: pessimistic P/E × current EPS)")
 hr()
-print(f"  FY2027E EPS estimate:           ${EPS_FY2027E:.2f}  (consensus ~$27-29 non-GAAP)")
-print(f"  Pessimistic P/E at trough:       {PE_PESSIMISTIC:.0f}×  (premium-grower floor; even GLP-1 scare scenarios likely hold ~20-24×)")
+print(f"  FY2026E EPS estimate:           ${EPS_FY2026E:.2f}  (guidance midpoint)")
+print(f"  Pessimistic P/E:                 {PE_PESSIMISTIC:.0f}×  (premium-grower floor; even a GLP-1 competitive scare likely holds ~22-26×)")
 print(f"  ─────────────────────────────────────────────────────────────────────")
 print(f"  EPP floor:    ${EPP:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%  ({epp_gap_pct:.0f}% {'above' if epp_gap_pct >= 0 else 'below'} trough floor)")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${EPP:.0f}:  {epp_gap_pct:+.1f}%")
 print()
-print(f"  A {epp_gap_pct:+.0f}% {'premium to' if epp_gap_pct >= 0 else 'discount to'} EPP reflects that LLY trades at roughly")
-print(f"  {CURRENT_PRICE/EPS_FY2027E:.1f}× FY2027E EPS ${EPS_FY2027E:.2f} — a steep multiple that prices in continued")
-print(f"  GLP-1 dominance, successful orforglipron launch, and donanemab ramp ALL playing out")
-print(f"  favorably. The risk is that even modest disappointment on any single pillar (competition,")
-print(f"  oral launch, pricing policy) compresses the multiple meaningfully toward the EPP floor.")
-print(f"  EPP path: FY2029E EPS ~$40 × {PE_PESSIMISTIC:.0f}× = ${40*PE_PESSIMISTIC:.0f} floor (EPP grows quickly given high underlying EPS growth).")
-print(f"  At 30× mid-cycle P/E: ${EPS_FY2027E:.2f} × 30 = ${EPS_FY2027E*30:.0f}  — below current price, implying market expects >FY2027E earnings power already.")
+print(f"  LLY trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E EPS ${EPS_FY2026E:.2f} — a steep multiple that prices in")
+print(f"  continued GLP-1 dominance and a successful Foundayo launch. The early oral-launch data (20,000+")
+print(f"  patients, 80% new-to-class) is genuinely supportive, but tomorrow's Q2 print is the next real test.")
+print(f"  At 34× mid-cycle P/E (FY2027E consensus $45.14): ${45.14:.2f} × 34 = ${45.14*34:.0f}  — {(45.14*34/CURRENT_PRICE-1)*100:+.0f}% vs current price.")
 
 # ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
 print()
 print("  ④ CONSERVATIVE GROWTH  (2-yr: EPS growth decelerates; P/E compresses modestly from current levels)")
 hr()
-print(f"  Conservative FY2028E EPS:        ${CONS_EPS_2YR:.2f}  (~18% CAGR off FY2027E; deceleration from current 50%+ growth pace)")
-print(f"  Conservative exit P/E:            {CONS_PE_2YR}×  (compresses from ~{CURRENT_PRICE/EPS_FY2027E:.1f}× as growth normalizes toward 'mature blockbuster' multiple)")
+print(f"  Conservative FY2028E EPS:        ${CONS_EPS_2YR:.2f}  (~15%/yr off FY2026E; below the street's ~25%/yr pace)")
+print(f"  Conservative exit P/E:            {CONS_PE_2YR}×  (compresses from ~{CURRENT_PRICE/EPS_FY2026E:.1f}× as growth normalizes toward 'mature blockbuster' multiple)")
 print(f"  Conservative equity value:        ${cons_equity:.2f}/share")
 print(f"  + Cumulative dividends (2yr):    +${cons_divs:.2f}/share  (${ANNUAL_DIV:.2f}/yr)")
 hr()
 print(f"  Conservative 2yr total:           ${cons_total:.2f}  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
 print(f"  Conservative total return:        {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
 print()
-print(f"  THE CORE QUESTION: LLY trades at {CURRENT_PRICE/EPS_FY2027E:.1f}× FY2027E EPS ${EPS_FY2027E:.2f} — a steep multiple even")
-print(f"  for a company growing EPS 30-50%/yr. The conservative case assumes growth decelerates to")
-print(f"  ~18%/yr by FY2028E AND the multiple compresses to {CONS_PE_2YR}× as the market re-rates from")
-print(f"  'hyper-growth' to 'mature blockbuster' pricing. Multiple compression can offset even strong")
-print(f"  earnings growth — this is the central risk of owning LLY at current levels.")
+print(f"  THE CORE QUESTION: LLY trades at {CURRENT_PRICE/EPS_FY2026E:.1f}× FY2026E EPS — steep even for a company growing")
+print(f"  EPS 25-45%/yr. The conservative case assumes deceleration to ~15%/yr AND multiple compression")
+print(f"  to {CONS_PE_2YR}×. Multiple compression can offset even strong earnings growth — the central risk")
+print(f"  of owning LLY at current levels, especially heading into tomorrow's earnings print.")
 print(f"  For conservative 2yr to break even at {CONS_PE_2YR}× P/E: need EPS = ${(CURRENT_PRICE - cons_divs) / CONS_PE_2YR:.2f}")
-print(f"  That requires ~{((CURRENT_PRICE - cons_divs) / CONS_PE_2YR / EPS_FY2027E - 1)*100:.1f}% EPS growth by FY2028E vs FY2027E.")
-print(f"  BUY trigger: ${round(CONS_EPS_2YR * CONS_PE_2YR * 0.83 + cons_divs * 0.5, 0):.0f}–${round(CONS_EPS_2YR * CONS_PE_2YR * 0.90 + cons_divs * 0.5, 0):.0f} (conservative case positive at {CONS_PE_2YR}× P/E; ratio_b <1.0×)")
 
 # ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print()
 print("  ⑤ VOLATILITY CONTEXT")
 hr()
-annual_vol  = 0.32
+annual_vol  = 0.30
 beta        = 0.75
 sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
                round(CURRENT_PRICE * (1 + annual_vol), 0))
 bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  (stock at {vol_pct*100:.0f}th pct of 52W range)")
+print(f"  Note: stock is up {STOCK_MOVE_FROM_JUNE_LOW_PCT:.1f}% since the last refresh (Jun 10) on Foundayo launch momentum")
 print(f"  Annual dividend:      ${ANNUAL_DIV:.2f}/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%  —  small but growing fast off low payout ratio)")
-print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; GLP-1 headline-driven swings on competitive/clinical news)")
+print(f"  Realized vol (2yr):   {annual_vol*100:.0f}%  (elevated; GLP-1 headline-driven swings on competitive/clinical/earnings news)")
 print(f"  Beta vs S&P 500:      {beta:.2f}  (moderate; large-cap pharma but high growth-stock sensitivity)")
 print(f"  1-sigma range (1yr):  ${sigma_range[0]:.0f}  –  ${sigma_range[1]:.0f}  (${CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
 hr()
-print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (significant but plausible on competitive-shock scenario)")
-print(f"  52W range already reflects substantial GLP-1-news-driven volatility (competitive scares, trial readouts).")
-print(f"  → Novo Nordisk competitive dynamics + US drug pricing policy are THE KEY binaries for downside risk.")
-print(f"  → Orforglipron uptake + donanemab Alzheimer's ramp are KEY bull catalysts.")
-print(f"  → AVOID above $900  |  WATCHLIST $750–875  |  ACCUMULATE $620–720  |  BUY below $570")
+print(f"  Bear ${bear_price} requires:  ~{bear_sigmas:.1f}σ drawdown  (significant but plausible on a competitive or earnings shock)")
+print(f"  → Tomorrow's Q2 print ({Q2_EARNINGS_DATE}) is the immediate catalyst — watch Foundayo uptake commentary specifically.")
+print(f"  → Novo Nordisk competitive dynamics + US drug pricing policy are the KEY medium-term binaries.")
+print(f"  → {signal_short} at ${CURRENT_PRICE:.2f}  |  Add below $950  |  Trim above $1,250")
 
 # ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print()
@@ -391,26 +401,22 @@ print(f"  Ratio B   :  {ratio_b_str}")
 print(f"  Signal    :  {signal_full}")
 print()
 print(f"  MARKET PRICING: at ${CURRENT_PRICE:.2f}, the market composite ({MARKET_COMPOSITE:.2f}) is")
-print(f"  {'ABOVE' if MARKET_COMPOSITE > ADJ_COMPOSITE else 'BELOW'} the model's adj composite ({ADJ_COMPOSITE:.3f}). The market is pricing")
-print(f"  ~{MARKET_COMPOSITE:.2f}/4.0 while the model scores fundamentals at ~{ADJ_COMPOSITE:.2f}/4.0.")
-print(f"  The gap ({ADJ_GAP:.2f}) indicates the stock is {valuation_label.lower()} by model standards.")
-print(f"  In plain terms: the market is pricing in near-flawless execution across orforglipron,")
-print(f"  donanemab, and continued GLP-1 share gains versus Novo Nordisk. The risk/reward skew")
-print(f"  (Ratio B {ratio_b_str}) reflects that current levels leave little room for error — any single")
-print(f"  pillar disappointing could trigger meaningful multiple compression.")
+print(f"  {'ABOVE' if MARKET_COMPOSITE > ADJ_COMPOSITE else 'BELOW'} the model's adj composite ({ADJ_COMPOSITE:.3f}). The gap ({ADJ_GAP:+.2f}) indicates the stock is")
+print(f"  {valuation_label.lower()} by model standards. In plain terms: Foundayo's early launch data is genuinely")
+print(f"  encouraging, but the market is pricing in continued flawless execution — and tomorrow's Q2 print")
+print(f"  is the next real confirmation point, not yet reflected in this model's fundamentals.")
 
 # ─── FOOTER ───────────────────────────────────────────────────────────────────
 print()
 print("═" * (W + 4))
 print(f"  Key catalysts to watch:")
-print(f"  (1) Orforglipron (oral GLP-1) — launch uptake, pricing, formulary access vs injectables")
+print(f"  (1) Q2 2026 earnings ({Q2_EARNINGS_DATE}, TOMORROW) — Foundayo uptake commentary is the key line item")
 print(f"  (2) Novo Nordisk competitive response — CagriSema/oral semaglutide data and pricing actions")
 print(f"  (3) GLP-1 manufacturing capacity expansion — pace of supply normalization across dose strengths")
 print(f"  (4) Donanemab (Kisunla) Alzheimer's ramp — diagnostic infrastructure and reimbursement progress")
 print(f"  (5) US drug pricing policy (IRA negotiation) — GLP-1 list price exposure")
-print(f"  (6) Verzenio oncology growth — adjuvant breast cancer label expansion")
-print(f"  AVOID above $900  |  WATCHLIST $750–875  |  ACCUMULATE $620–720  |  BUY below $570")
-print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2027E EPS: ${EPS_FY2027E:.2f}")
+print(f"  {signal_short} at ${CURRENT_PRICE:.2f}  |  Add below $950  |  Trim above $1,250")
+print(f"  EPP floor: ${EPP:.0f}  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: ${EPS_FY2026E:.2f}")
 print("═" * (W + 4))
 print()
 
