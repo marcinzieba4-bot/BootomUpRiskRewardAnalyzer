@@ -1,335 +1,436 @@
-#!/usr/bin/env python3
 """
-XTB Signal Model  v2
-─────────────────────
-XTB S.A. (WSE: XTB)  ·  Retail CFD / Investment Broker
-
-⚠  Prices and EPS are in PLN (Polish złoty). XTB trades on the Warsaw
-   Stock Exchange; roughly PLN 4.1 = USD 1.0 (May 2026).
-
-New format: signal dashboard → bear anatomy → updated EPP →
-            conservative growth → volatility context → probability
+XTB  ·  XTB S.A.  ·  WSE: XTB
+Bottom-up signal model  ·  Retail CFD / Forex Broker / Investment Products
+Currency: PLN (Polish złoty) — this model is denominated natively in PLN, not USD
+Date: 2026-08-03
 """
+
 import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE    = 58.0      # PLN
-REQUIRED_RETURN  = 0.15
-HORIZON_YEARS    = 2
+# ── COMPANY CONSTANTS ─────────────────────────────────────────────────────────
+TICKER        = "XTB"
+COMPANY       = "XTB S.A."
+SECTOR        = "Retail CFD / Forex Broker · Investment Products · GPW: XTB (PLN)"
+CURRENT_PRICE = 129.40      # PLN; all-time high, close 2026-08-03
+VOL_52W_LOW   = 61.86       # PLN
+VOL_52W_HIGH  = 129.40      # PLN; stock is AT its 52-week/all-time high today
+SHARES_OUT_M  = 117.57      # millions
+ANNUAL_DIV    = 4.07        # PLN/share; ~60% payout policy
 
+# ── REVENUE BRIDGE (FY2026E, PLN millions) ────────────────────────────────────
+# H1 2026 actual: operating revenue +79.7% YoY to 2.09B PLN; net profit +150.5% YoY to 1.03B PLN.
+# Q1 2026 was a record quarter; Q2 2026 net profit 492M PLN, -8% QoQ from Q1 but still the
+# second-best quarter ever, beating analyst forecasts and pushing the stock to a fresh ATH (+8.6%
+# on the print). Active clients hit a record 1.49M (+74.5% YoY, +333K in Q2 alone). Trading volume
+# moderated to $343B/month in Q2 (from $444B/month in Q1), but revenue efficiency actually IMPROVED —
+# $238 of trading result per $1M traded, up from $216 in Q1. CFDs generate 96% of trading result;
+# investment products (ETFs, stocks) drive client acquisition but are a small revenue contributor today.
+SEG_DATA = [
+    # (segment, curr_rev_M, bear_rev_M, bull_rev_M, description)
+    ("CFD trading (spread/commission revenue)", 3300.0, 1440.0, 4320.0, "96% of trading result; directly tracks volatility and trading volume — the core cyclicality driver"),
+    ("Investment products & other (ETFs, interest income)", 370.0, 160.0, 480.0, "Smaller today, but the client-stickiness and re-rating story for the long term"),
+]
+
+# Net-margin-based bridge (a broker's costs are mostly fixed opex — extreme operating leverage
+# in both directions as trading volume rises and falls)
+NET_MARGIN_CURR = 0.493   # FY2026E; matches H1 2026's actual 49.3% net margin (1.03B / 2.09B)
+NET_MARGIN_BEAR = 0.300   # BEAR: fixed cost base doesn't shrink with revenue; operating leverage inverts hard
+NET_MARGIN_BULL = 0.510   # BULL: further operating leverage as revenue scales past the fixed cost base
+
+# ── BOOM-VS-NORMALIZATION CALCULATOR (the XTB-specific angle) ────────────────
+H1_2026_NET_PROFIT_B      = 1.03   # PLN billions; H1 2026 actual net profit, +150.5% YoY
+H1_2026_NET_PROFIT_GROWTH = 150.5  # % YoY growth, H1 2026 net profit
+ACTIVE_CLIENTS_M          = 1.49   # millions; record active clients, +74.5% YoY
+Q2_TRADING_VOL_B_USD      = 343    # $B/month; Q2 2026 trading volume (down from $444B/month in Q1)
+Q2_REV_PER_1M_TRADED_USD  = 238    # $ trading result per $1M traded, Q2 2026 (up from $216 in Q1 — efficiency improving even as volume cools)
+CFD_PCT_OF_TRADING_RESULT = 96     # % of trading result from CFDs specifically
+ANALYST_FY27_EPS_CONSENSUS = 10.22 # PLN; analyst consensus EPS for the NEXT full year — already prices in a large reversion from this year's boom
+POST_EARNINGS_POP_PCT     = 8.6    # % single-day stock pop on the Q2 2026 beat
+
+# ── EPP (Earnings Power Price) ────────────────────────────────────────────────
+EPS_FY2026E    = 15.39       # PLN/share FY2026E; bottom-up from H1 actual (1.03B) + a realistic H2 continuation
+PE_PESSIMISTIC = 8.0         # trough P/E: a genuine CFD-broker-trough multiple in a low-volatility environment
+EPP            = round(PE_PESSIMISTIC * ANALYST_FY27_EPS_CONSENSUS, 0)  # deliberately uses the NORMALIZED FY2027E consensus, not this year's boom EPS
+
+vol_pct     = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW)
+epp_gap_pct = round((CURRENT_PRICE - EPP) / EPP * 100, 1)
+
+# ── SCENARIO TABLE (2-year horizon → FY2028E) ────────────────────────────────
 SCENARIOS = {
-    "BEAR":  ( 2.5,   8,   20, "Low vol; crypto winter; margin pressure; client churn"),
-    "BASE":  ( 4.5,  12,   54, "Moderate activity; steady client growth; ECB rates hold"),
-    "BULL":  ( 7.0,  14,   98, "Elevated vol; crypto active; ETF platform growing fast"),
-    "XBULL": (10.0,  16,  160, "Retail frenzy + crypto cycle + ETF re-rating to fintech"),
+    "BEAR":  ( 4.08,  8,   33, "A genuine low-volatility/crypto-winter reversion hits trading volume and margins simultaneously, echoing prior CFD-broker down-cycles"),
+    "BASE":  (15.39,  8,  123, "Roughly today's earnings power persists at a trough-ish multiple — the market gives no credit for the boom continuing"),
+    "BULL":  (20.82, 11,  229, "Elevated volatility and client growth continue longer than the analyst consensus reversion assumes"),
+    "XBULL": (27.95, 13,  363, "A full repeat of the 2025-2026 boom — crypto mania, high volatility, and client growth all persist without decelerating"),
 }
 
-# ── CLIENT ECONOMICS CALCULATOR (XTB-specific structural feature) ──────────────
-REGISTERED_CLIENTS_M     = 1.54
-ACTIVE_CLIENTS_K         = 650
-ACTIVATION_RATE          = ACTIVE_CLIENTS_K / (REGISTERED_CLIENTS_M * 1000)
-REVENUE_PER_CLIENT_CURR  = 4_200
-REVENUE_PER_CLIENT_NORM  = 2_200
-NEW_CLIENTS_PER_YEAR_K   = 420
-ETFINVEST_CLIENTS_K      = 380
-ETFINVEST_AVG_AUM_PLN    = 8_500
+# ── SOFTMAX PROBABILITY FUNCTION ─────────────────────────────────────────────
+CENTERS = {"BEAR": 1.25, "BASE": 2.00, "BULL": 2.75, "XBULL": 3.75}
+T = 0.60
 
-def client_economics():
-    floor_rev  = (ACTIVE_CLIENTS_K * 1000) * REVENUE_PER_CLIENT_NORM / 1e9
-    curr_rev   = (ACTIVE_CLIENTS_K * 1000) * REVENUE_PER_CLIENT_CURR / 1e9
-    etf_aum    = ETFINVEST_CLIENTS_K * 1000 * ETFINVEST_AVG_AUM_PLN / 1e9
-    etf_rev    = etf_aum * 0.005
-    future_k   = ACTIVE_CLIENTS_K + NEW_CLIENTS_PER_YEAR_K * 2 * ACTIVATION_RATE
-    future_floor_rev = future_k * 1000 * REVENUE_PER_CLIENT_NORM / 1e9
-    return floor_rev, curr_rev, etf_aum, etf_rev, future_k, future_floor_rev
-
-# ── SIGNALS ───────────────────────────────────────────────────────────────────
-# (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
-#  current_value, higher_is_better, bear_narrative)
-SIGNALS = [
-    ("VIX — CBOE Volatility Index",      "pts",
-      10.0,  15.0,  22.0,  30.0,  22.0, True,
-     "Low vol; retail traders inactive; no CFD spread revenue"),
-
-    ("XTB active clients — YoY growth",  "% YoY",
-       5.0,  20.0,  40.0,  65.0,  52.0, True,
-     "Low vol drives client churn; no new registrations"),
-
-    ("Crypto market cap — YoY",          "% YoY",
-     -45.0, -25.0,   5.0,  40.0, -20.0, True,
-     "Crypto bear; BTC/ETH CFD volumes collapse; retail disengages"),
-
-    ("European equity trading vol YoY",  "% YoY",
-      -5.0,   5.0,  15.0,  30.0,  15.0, True,
-     "European vol dries; CFD demand from EU clients collapses"),
-
-    ("ECB deposit rate",                 "%",
-       0.5,   1.0,   2.5,   4.0,   2.5, True,
-     "Rate cuts to zero; deposit interest income evaporates"),
-
-    ("IG Group revenue — YoY",           "% YoY",
-     -10.0,   0.0,  10.0,  25.0,  12.0, True,
-     "Peer revenue falls; leading indicator of XTB Q decline"),
-]
-WEIGHTS = [0.25, 0.20, 0.15, 0.15, 0.15, 0.10]
-
-STRUCTURAL_FACTORS = [
-    ("ESMA leverage restriction / regulatory risk",  -0.8, 0.30),
-    ("ETF / investment platform client stickiness",   0.5, 0.20),
-    ("Bank and neobank competitive entry",           -0.3, 0.20),
-    ("Net cash + high dividend yield",                0.5, 0.15),
-    ("Warsaw listing / emerging-market discount",    -0.3, 0.15),
-]
-
-# ── UPDATED EPP ───────────────────────────────────────────────────────────────
-EPP_TODAY_EPS    = 3.00     # FY2025E EPS (PLN; normalised from record FY2024)
-EPP_MIN_PE       = 8.0      # min viable P/E (online broker at crypto/vol trough)
-EPP_HISTORICAL   = 22.0     # historical EPP v1 (from 2022 floor)
-EPP_REGIME_NOTE  = "(crypto vol + ETF stickiness raises floor from pure-CFD 6x to 8x)"
-
-# ── CONSERVATIVE GROWTH (2-yr, base-minus) ────────────────────────────────────
-CONS_SIGNALS = [
-    ("VIX",                18.0,  "18 pts (vs 22; vol normalises lower)"),
-    ("XTB active",         25.0,  "+25% YoY (vs +52%; growth decelerates)"),
-    ("Crypto market",      -5.0,  "-5% YoY (vs -20%; crypto stabilises)"),
-    ("European equity",     8.0,  "+8% YoY (vs +15%; trading vol moderates)"),
-    ("ECB deposit",         2.0,  "2.0% (vs 2.5%; ECB cuts one more time)"),
-    ("IG Group",            5.0,  "+5% YoY (vs +12%; peer growth cools)"),
-]
-CONS_EPS_CAGR = 0.08     # 8%/yr conservative (moderate vol environment)
-CONS_EXIT_PE  = 11.0     # 11x exit (no re-rating; vol-dependent earnings)
-CONS_DIVIDEND = 1.60     # XTB pays dividends; approx PLN 1.60/share (60% payout on PLN ~3 EPS)
-
-# ── VOLATILITY ────────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT = 0.45    # high vol; small-cap + crypto sensitive
-VOL_BETA       = 1.40    # above market
-VOL_52W_LOW    = 35.0    # PLN
-VOL_52W_HIGH   = 75.0    # PLN
-VOL_DIVIDEND   = 1.60    # PLN
-
-# ── SCORING ───────────────────────────────────────────────────────────────────
-def score_signal(val, base_f, bull_f, xbull_f, hib):
-    if hib:
-        if val >= xbull_f: return 4
-        if val >= bull_f:  return 3
-        if val >= base_f:  return 2
-        return 1
-    else:
-        if val <= xbull_f: return 4
-        if val <= bull_f:  return 3
-        if val <= base_f:  return 2
-        return 1
-
-ICONS = {4: "★ XBULL", 3: "▲ BULL", 2: "◦ BASE", 1: "⚠ BEAR"}
-
-def softmax_probs(composite, T=0.60):
-    centres = {"BEAR": 1.25, "BASE": 2.0, "BULL": 2.75, "XBULL": 3.75}
-    raw = {k: math.exp(-abs(composite - c) / T) for k, c in centres.items()}
+def softmax_probs(c):
+    raw = {s: math.exp(-abs(c - CENTERS[s]) / T) for s in CENTERS}
     tot = sum(raw.values())
-    return {k: v / tot for k, v in raw.items()}
+    return {s: raw[s] / tot for s in raw}
 
-def expected_price(probs):
-    return sum(probs[k] * SCENARIOS[k][2] for k in probs)
+def expected_value(c):
+    p = softmax_probs(c)
+    return sum(p[s] * SCENARIOS[s][2] for s in SCENARIOS)
 
-def market_implied_composite(target_ev, tolerance=0.5):
-    for c in [x / 100 for x in range(100, 401)]:
-        if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
-            return round(c, 2), softmax_probs(c)
-    return None, None
+def back_solve_market_composite(price, tol=0.001):
+    target = price * (1.15 ** 2)
+    lo, hi = 1.0, 4.0
+    for _ in range(80):
+        m = (lo + hi) / 2
+        if expected_value(m) < target:
+            lo = m
+        else:
+            hi = m
+    return round((lo + hi) / 2, 2)
 
-# ── COMPUTE ───────────────────────────────────────────────────────────────────
+# ── 6 PROXY SIGNALS ───────────────────────────────────────────────────────────
+# Scores: 1=BEAR  2=BASE  3=BULL  4=XBULL
+SIGNALS = [
+    {
+        "name":       "Net profit YoY growth (H1 2026)",
+        "weight":     0.20,
+        "thresholds": ("<20%",   "≥50%",   "≥100%",  "≥140%"),
+        "now":        "+150.5%",
+        "score":      4,
+        "comment":    "H1 net profit more than doubled YoY to 1.03B PLN — an extraordinary result even by XTB's own volatile history",
+    },
+    {
+        "name":       "Active client growth YoY",
+        "weight":     0.15,
+        "thresholds": ("<15%",   "≥30%",   "≥50%",   "≥70%"),
+        "now":        "+74.5%",
+        "score":      4,
+        "comment":    "1.49M active clients, a record, growing faster than at any point in the company's history",
+    },
+    {
+        "name":       "Revenue efficiency ($/1M traded)",
+        "weight":     0.15,
+        "thresholds": ("<180",   "≥200",   "≥220",   "≥240"),
+        "now":        "$238",
+        "score":      3,
+        "comment":    "Up from $216 in Q1 — monetization per unit of trading volume is improving even as raw volume cools",
+    },
+    {
+        "name":       "Trading volume trend (QoQ)",
+        "weight":     0.15,
+        "thresholds": ("<-30%",  "≥-25%",  "≥-10%",  "≥0%"),
+        "now":        "-22.7%",
+        "score":      2,
+        "comment":    "$343B/month in Q2, down from $444B/month in Q1 — the clearest early signal that the boom is cooling",
+    },
+    {
+        "name":       "ESMA / regulatory risk environment",
+        "weight":     0.15,
+        "thresholds": ("new restrictions","review pending","stable","favorable"),
+        "now":        "stable",
+        "score":      3,
+        "comment":    "No new EU leverage-restriction proposals currently active, but this is a structural, recurring industry risk",
+    },
+    {
+        "name":       "Forward P/E (on normalized FY2027E)",
+        "weight":     0.20,
+        "thresholds": (">20x",   "≤16x",   "≤13x",   "≤10x"),
+        "now":        "~12.7x",
+        "score":      3,
+        "comment":    "12.7× on the analyst FY2027E consensus (10.22 PLN) — reasonable, not dirt cheap, on a normalized post-boom earnings basis",
+    },
+]
+
+assert abs(sum(s["weight"] for s in SIGNALS) - 1.0) < 0.001
+
+PROXY_COMPOSITE = sum(s["score"] * s["weight"] for s in SIGNALS)
+
+# ── STRUCTURAL COMPOSITE ADJUSTMENT (SCA) ─────────────────────────────────────
+SCA_FACTORS = [
+    ("+", "H1 2026's 150.5% net profit growth and record client base are real, audited results — not guidance or promotion", +0.5, 0.20),
+    ("-", "Analyst FY2027E consensus (10.22 PLN) already prices a ~34% reversion from this year's bottom-up run-rate — informed opinion doesn't expect the boom to persist", -0.5, 0.20),
+    ("-", "CFD brokerage is a structurally cyclical, volatility-dependent business with a well-documented history of boom-bust earnings at XTB specifically", -0.5, 0.20),
+    ("+", "Revenue efficiency ($238/1M traded) improving even as raw volume cools is a genuinely good sign — this isn't purely a volume story", +0.3, 0.15),
+    ("+", "~60% dividend payout policy and a real yield provide some downside cushion uncommon among high-beta brokers", +0.3, 0.10),
+    ("-", "ESMA leverage restrictions are a recurring, structural regulatory overhang across the entire European CFD industry, not unique to XTB but real", -0.3, 0.15),
+]
+SCA = sum(score * weight for _, _, score, weight in SCA_FACTORS)
+ADJ_COMPOSITE = round(PROXY_COMPOSITE + SCA, 3)
+
+MARKET_COMPOSITE = back_solve_market_composite(CURRENT_PRICE)
+ADJ_GAP = round(ADJ_COMPOSITE - MARKET_COMPOSITE, 2)
+
+if ADJ_GAP > 0.20:
+    valuation_label = "UNDERVALUED"
+elif ADJ_GAP > -0.20:
+    valuation_label = "FAIRLY VALUED"
+else:
+    valuation_label = "OVERVALUED"
+
+# ── RATIO B ───────────────────────────────────────────────────────────────────
+bear_price   = SCENARIOS["BEAR"][2]
+bull_price   = SCENARIOS["BULL"][2]
+downside_pct = (CURRENT_PRICE - bear_price) / CURRENT_PRICE
+upside_pct   = (bull_price - CURRENT_PRICE) / CURRENT_PRICE
+ratio_b      = round(downside_pct / upside_pct, 2) if upside_pct > 0 else float("inf")
+
+if ratio_b != float("inf") and ratio_b < 0.75:
+    signal_short, signal_full = "BUY",       "◉ BUY"
+elif ratio_b != float("inf") and ratio_b < 1.10:
+    signal_short, signal_full = "ACCUMULATE","◎ ACCUMULATE"
+elif ratio_b != float("inf") and ratio_b < 1.75:
+    signal_short, signal_full = "WATCHLIST", "◐ WATCHLIST"
+else:
+    signal_short, signal_full = "AVOID",     "✕ AVOID"
+
+ratio_b_str = f"{ratio_b:.2f}x" if ratio_b != float("inf") else "N/A"
+
+# ── CONSERVATIVE GROWTH (2-yr) ────────────────────────────────────────────────
+CONS_EPS_2YR  = 10.22   # PLN; uses the analyst FY2027E consensus directly as the conservative 2yr assumption — no further growth credited
+CONS_PE_2YR   = 10      # a modest re-rating from the trough 8x as some of today's franchise gains (client base, brand) prove durable
+cons_equity   = CONS_EPS_2YR * CONS_PE_2YR
+cons_divs     = ANNUAL_DIV * 2
+cons_total    = cons_equity + cons_divs
+cons_return   = round((cons_total - CURRENT_PRICE) / CURRENT_PRICE * 100, 1)
+cons_annual   = round(cons_return / 2, 1)
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  OUTPUT
+# ─────────────────────────────────────────────────────────────────────────────
 W = 72
 
-scored = [
-    (name, unit, bv, bf, blf, xf, cv, hib, narr,
-     score_signal(cv, bf, blf, xf, hib), w)
-    for (name, unit, bv, bf, blf, xf, cv, hib, narr), w
-    in zip(SIGNALS, WEIGHTS)
+def hr(): print("  " + "─" * W)
+def bar(score):
+    return "█" * score + "░" * (4 - score)
+
+print()
+print("═" * (W + 4))
+print(f"  {TICKER}  ·  {COMPANY}  ·  {CURRENT_PRICE:.2f} zł  ·  Retail CFD / Forex Broker (all-time high)")
+print(f"  Signal: {signal_full}   Ratio B: {ratio_b_str}   Adj gap: {ADJ_GAP:+.2f}  [{valuation_label}]  (all figures in PLN)")
+print("═" * (W + 4))
+
+# ─── ① REVENUE BRIDGE ─────────────────────────────────────────────────────────
+print()
+print("  REVENUE BRIDGE  (FY2026E, PLN millions  →  BEAR / BULL scenarios)")
+hr()
+
+curr_total = sum(rev for _, rev, _, _, _ in SEG_DATA)
+bear_total = sum(rev for _, _, rev, _, _ in SEG_DATA)
+bull_total = sum(rev for _, _, _, rev, _ in SEG_DATA)
+
+print(f"  {'Segment':<50}  {'FY26E (M zł)':>13}  {'Bear (M zł)':>11}  {'Bull (M zł)':>11}")
+hr()
+for seg, curr, bear, bull, desc in SEG_DATA:
+    print(f"  {seg:<50}  {curr:>11.0f}  {bear:>9.0f}  {bull:>9.0f}")
+    print(f"    {desc}")
+hr()
+print(f"  {'TOTAL':<50}  {curr_total:>11.0f}  {bear_total:>9.0f}  {bull_total:>9.0f}")
+print(f"  H1 2026 actual: 2,090M zł revenue (+79.7% YoY), 1,030M zł net profit (+150.5% YoY)")
+print()
+
+# EPS bridge (net-margin based)
+shares    = SHARES_OUT_M
+curr_net  = curr_total * NET_MARGIN_CURR
+curr_eps  = round(curr_net / shares, 2)
+
+bull_net  = bull_total * NET_MARGIN_BULL
+bull_eps_imp = round(bull_net / shares, 2)
+
+bear_net  = bear_total * NET_MARGIN_BEAR
+bear_eps_imp = round(bear_net / shares, 2)
+
+print(f"  FY2026E EPS check:  {curr_total:.0f}M zł rev × {NET_MARGIN_CURR*100:.1f}% net margin")
+print(f"  ÷ {shares:.2f}M shares  =  {curr_eps:.2f} zł/share  (model estimate {EPS_FY2026E:.2f} zł  ✓)")
+print()
+print(f"  BULL EPS check:  {bull_total:.0f}M zł rev × {NET_MARGIN_BULL*100:.1f}% net margin")
+print(f"  =  ~{bull_eps_imp:.2f} zł/share  →  × {SCENARIOS['BULL'][1]}× = ~{bull_eps_imp*SCENARIOS['BULL'][1]:.0f} zł  ✓ BULL {SCENARIOS['BULL'][2]} zł")
+print()
+print(f"  BEAR EPS check:  {bear_total:.0f}M zł rev × {NET_MARGIN_BEAR*100:.1f}% net margin (fixed opex base inverts operating leverage)")
+print(f"  =  ~{bear_eps_imp:.2f} zł/share  →  × {SCENARIOS['BEAR'][1]}× trough = ~{bear_eps_imp*SCENARIOS['BEAR'][1]:.0f} zł  ✓ BEAR {SCENARIOS['BEAR'][2]} zł")
+
+# BOOM-VS-NORMALIZATION CHECK
+print()
+print(f"  BOOM-VS-NORMALIZATION CHECK  (the XTB-specific angle):")
+print(f"  H1 2026 net profit:                    {H1_2026_NET_PROFIT_B:.2f}B zł  (+{H1_2026_NET_PROFIT_GROWTH:.1f}% YoY)")
+print(f"  Active clients:                         {ACTIVE_CLIENTS_M:.2f}M  (+74.5% YoY, record)")
+print(f"  Q2 trading volume:                      ${Q2_TRADING_VOL_B_USD}B/month  (down from $444B/month in Q1)")
+print(f"  Q2 revenue per $1M traded:               ${Q2_REV_PER_1M_TRADED_USD}  (up from $216 in Q1 — efficiency improving)")
+print(f"  CFD share of trading result:            {CFD_PCT_OF_TRADING_RESULT}%")
+print(f"  Analyst FY2027E EPS consensus:           {ANALYST_FY27_EPS_CONSENSUS:.2f} zł  (implies a large reversion from this year's run-rate)")
+print(f"  Post-Q2-earnings stock reaction:        +{POST_EARNINGS_POP_PCT:.1f}%  (fresh all-time high)")
+print()
+print(f"  This is the central tension in owning XTB today: the stock trades at a genuinely modest multiple")
+print(f"  of THIS YEAR's earnings power, but that earnings power is the product of an extraordinary volatility")
+print(f"  and client-growth environment that both the analyst community and XTB's own trading history suggest")
+print(f"  won't simply repeat. The bear case isn't a story problem — it's a base-rate problem for CFD brokers.")
+
+# KEY SENSITIVITIES
+print()
+eps_per_100M_rev = 100.0 * NET_MARGIN_CURR / shares
+print(f"  KEY SENSITIVITIES:")
+print(f"  Every 100M zł revenue (at 49.3% margin):  +{eps_per_100M_rev:.3f} zł/EPS  = +{eps_per_100M_rev*10:.2f} zł/share at 10× P/E")
+print(f"  Every 1pp of net margin:                   +{curr_total*0.01/shares:.3f} zł/EPS  = +{curr_total*0.01/shares*10:.2f} zł/share at 10× P/E")
+print(f"  Every 1 turn of P/E:                       ±{EPS_FY2026E:.2f} zł/share  ({EPS_FY2026E/CURRENT_PRICE*100:.1f}% of the stock)")
+
+# ─── ② SIGNAL DASHBOARD ───────────────────────────────────────────────────────
+print()
+print("  ① SIGNAL DASHBOARD  (net profit growth / clients / efficiency / volume / regulatory / valuation)")
+hr()
+score_labels = {1: "⚠ BEAR", 2: "◦ BASE", 3: "▲ BULL", 4: "★ XBULL"}
+print(f"  {'Signal':<38}  {'BEAR':>17}  {'BASE':>15}  {'BULL':>7}  {'XBULL':>9}  {'NOW':>10}  Score")
+hr()
+for s in SIGNALS:
+    ths = s["thresholds"]
+    lbl = score_labels[s["score"]]
+    b   = bar(s["score"])
+    print(f"  {s['name']:<38}  {ths[0]:>17}  {ths[1]:>15}  {ths[2]:>7}  {ths[3]:>9}  {s['now']:>10}  {lbl}  {b}")
+    print(f"    {s['comment']}")
+
+print()
+print(f"  Proxy composite:    {PROXY_COMPOSITE:.2f} / 4.00")
+print(f"  Market composite:   {MARKET_COMPOSITE:.2f} / 4.00  (back-solved from {CURRENT_PRICE} zł + 15%/yr hurdle)")
+print(f"  SCA adjustment:    {SCA:+.3f}  →  Adj composite {ADJ_COMPOSITE:.3f}  →  Gap {ADJ_GAP:+.2f}  [{valuation_label}]")
+print()
+print("  Structural factors:")
+for sign, desc, score, weight in SCA_FACTORS:
+    contribution = score * weight
+    print(f"    {sign}  {desc[:88]:<88}  ({score:+.1f} × {weight*100:.0f}%  =  {contribution:+.3f})")
+
+# ─── ③ BEAR CASE ANATOMY ─────────────────────────────────────────────────────
+print()
+print(f"  ② BEAR CASE ANATOMY  (variables needed to reach BEAR {bear_price} zł)")
+hr()
+print(f"  {'Signal':<32}  {'Current':>14}  {'Bear val':>14}  Trigger")
+hr()
+bear_triggers = [
+    ("Net profit YoY",              "+150.5%",       "<20%",           "A low-vol/crypto-winter reversion hits simultaneously, echoing prior XTB down-cycles"),
+    ("Active client growth",        "+74.5%",        "<15%",           "New client acquisition slows sharply as the current promotional/marketing cycle fades"),
+    ("Revenue efficiency",          "$238/1M",       "<$180/1M",       "Spread compression from competition or lower realized volatility per trade"),
+    ("Trading volume (QoQ)",        "-22.7%",        "<-30%",          "Volume decline accelerates rather than stabilizing, confirming the cyclical peak has passed"),
+    ("ESMA/regulatory risk",        "stable",        "new restrictions","A fresh EU leverage-restriction proposal directly compresses CFD revenue per client"),
+    ("Forward P/E (normalized)",    "~12.7x",        ">20x",           "Ironically, P/E can rise even as price falls if EPS reverts faster than price does"),
 ]
-proxy_composite  = sum(s * w for *_, s, w in scored)
-bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
-                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
-                       in zip(SIGNALS, WEIGHTS))
-sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
-adj_composite    = proxy_composite + sca
-proxy_probs      = softmax_probs(proxy_composite)
-bear_probs       = softmax_probs(bear_composite)
-proxy_ev         = expected_price(proxy_probs)
-bear_ev          = expected_price(bear_probs)
+for name, curr, bear_v, trigger in bear_triggers:
+    print(f"  {name:<32}  {curr:>14}  {bear_v:>14}  {trigger[:42]}")
 
-market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
-mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
-mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
-
-floor_rev, curr_rev, etf_aum, etf_rev, future_k, future_floor_rev = client_economics()
-
-# Updated EPP (EPS-based)
-epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
-epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
-bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
-
-# Conservative growth
-cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
-cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = CONS_DIVIDEND * (1 + 0.03) + CONS_DIVIDEND * (1 + 0.03) ** 2
-cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
-cons_annual_ret = cons_total_ret / 2
-
-# Volatility
-sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
-vol_low_1yr       = CURRENT_PRICE - sigma_1yr
-vol_high_1yr      = CURRENT_PRICE + sigma_1yr
-sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
-
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
-
-# ── OUTPUT ────────────────────────────────────────────────────────────────────
+probs_proxy = softmax_probs(PROXY_COMPOSITE)
 print()
-print("═" * W)
-print(f"  XTB  ·  XTB S.A.  ·  PLN {CURRENT_PRICE:.2f}  ·  CFD / Investment Broker  [PLN]")
-print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
-print("═" * W)
-print(f"  ⚠  All prices and EPS in PLN (Polish złoty).  PLN/USD ≈ 0.24")
-
-# Client economics (keep before ① as XTB-specific feature)
-print(f"\n  CLIENT ECONOMICS  (revenue = clients × activity × volatility)")
-print("  " + "─" * (W-2))
-print(f"  Total registered clients:                {REGISTERED_CLIENTS_M*1e6:>10,.0f}")
-print(f"  Active clients (last 12M):               {ACTIVE_CLIENTS_K*1000:>10,.0f}  ({ACTIVATION_RATE*100:.0f}% activation rate)")
-print(f"  New registrations per year (est.):       {NEW_CLIENTS_PER_YEAR_K*1000:>10,.0f}")
-print(f"  Revenue/active client — current yr:      PLN {REVENUE_PER_CLIENT_CURR:>6,}  (elevated vol)")
-print(f"  Revenue/active client — 10yr normal:     PLN {REVENUE_PER_CLIENT_NORM:>6,}  (normalised)")
-print(f"  {'─'*60}")
-print(f"  Floor revenue (current base × normal):   PLN {floor_rev:.1f}B / yr")
-print(f"  In 2yrs at current acq pace, active:     ~{future_k:>6,.0f}K  (~{future_k/1000:.1f}M clients)")
-print(f"  → 2yr floor (growing base × normal):     PLN {future_floor_rev:.1f}B / yr")
-print(f"\n  ETF/savings platform clients: {ETFINVEST_CLIENTS_K*1000:,.0f}   AUM: PLN {etf_aum:.1f}B")
-print(f"  Recurring fee-equivalent (~0.5% AUM):    PLN {etf_rev*1000:.0f}M / yr  (re-rating trigger)")
-
-# ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
-print(f"\n  ① SIGNAL DASHBOARD")
-print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
-print("  " + "─" * (W-2))
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u = unit.split()[0] if unit else ""
-    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.0f}{u}"
-    bf_s  = f"{bf:.0f}{u}"
-    blf_s = f"{blf:.0f}{u}"
-    xf_s  = f"{xf:.0f}{u}"
-    cv_s  = f"{cv:+.0f}{u}"
-    bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
-
-print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from PLN {CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
-    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
-          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
-
-print(f"\n  Structural factors:")
-for desc, score, wt in STRUCTURAL_FACTORS:
-    arrow = "  +" if score > 0 else "  -"
-    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
-
-# ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
-print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
-for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u      = unit.split()[0] if unit else ""
-    cv_s   = f"{cv:+.0f}{u}"
-    bv_s   = f"{bv:+.0f}{u}"
-    move   = bv - cv
-    move_s = f"{move:+.0f}{u}"
-    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
-    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
-
-print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
-      f"~PLN {expected_price(bear_probs):.0f}  (model)  /  PLN {SCENARIOS['BEAR'][2]} (defined)")
-print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: VIX falls to 10 (extreme complacency) + crypto bear market")
-print(f"  simultaneously. XTB spread revenue collapses; high fixed-cost base causes")
-print(f"  operating leverage inversion. Net income falls 60%+.")
-
-# ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
-print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
-print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:           PLN {EPP_TODAY_EPS:.2f}  (FY2025E, normalised from record)")
-print(f"  Min viable P/E at max pessimism:   {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
-print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                      PLN {epp_updated:.0f}/share")
-print(f"  Historical EPP (v1):              PLN {EPP_HISTORICAL:.0f}/share")
-print(f"  Current PLN {CURRENT_PRICE:.0f} vs Updated EPP PLN {epp_updated:.0f}:  {epp_gap_pct:+.0f}%  "
-      f"{'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear PLN {SCENARIOS['BEAR'][2]} vs Updated EPP PLN {epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  "
-      f"{'← BEAR requires impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
-
-# ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
-print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, all signals at BASE lower bound — no tailwinds)")
-print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
-for sname, sval, srat in CONS_SIGNALS:
-    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
-               if name.lower().startswith(sname.split()[0].lower()))
-    diff = sval - cur
-    diff_s = f"{diff:+.0f}"
-    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
-
-print(f"\n  Conservative 2yr EPS:   PLN {EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.0f}%)² = PLN {cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  PLN {cons_price_2yr:.0f}/share")
-if CONS_DIVIDEND > 0:
-    print(f"  + Cumul. dividends (2yr):  +PLN {cons_div_2yr:.2f}/share")
-print(f"  {'─'*60}")
-print(f"  Conservative 2yr price:     PLN {cons_price_2yr:.0f}  "
-      f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} from PLN {CURRENT_PRICE:.0f})")
-print(f"  Conservative total return:  {cons_total_ret:+.0f}% over 2yr  = {cons_annual_ret:+.0f}%/yr")
-print(f"\n  Key: even moderate vol environment generates 8%+/yr EPS growth as client")
-print(f"  base compounds. ETF AUM growth is the re-rating catalyst to 14-16x.")
-
-# ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
-print(f"\n  ⑤ VOLATILITY CONTEXT  [all in PLN]")
-print("  " + "─" * (W-2))
-print(f"  52-week range:        PLN {VOL_52W_LOW:.0f}  –  PLN {VOL_52W_HIGH:.0f}")
-print(f"  Annual dividend:      PLN {VOL_DIVIDEND:.2f}/share  "
-      f"(yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%; 60% payout policy)")
-print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized  (high; crypto + vol-sensitive)")
-print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}  (above market; small-cap cyclical)")
-print(f"  1-sigma range (1yr):  PLN {vol_low_1yr:.0f}  –  PLN {vol_high_1yr:.0f}  "
-      f"(PLN {CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
-print(f"  2-sigma range (1yr):  PLN {max(0, CURRENT_PRICE - 2*sigma_1yr):.0f}  –  "
-      f"PLN {CURRENT_PRICE + 2*sigma_1yr:.0f}")
-print(f"  {'─'*60}")
-print(f"  Bear PLN {SCENARIOS['BEAR'][2]} requires:  "
-      f"~{sigma_needed_bear:.1f}σ price move  "
-      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  Dividend buffer:      PLN {VOL_DIVIDEND:.2f}/yr absorbs ~{VOL_DIVIDEND/CURRENT_PRICE*100:.1f}% "
-      f"of annual price drawdown")
-print(f"  → XTB yield today: {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%.  Compare to Polish gov bonds ~5.5%.")
-
-# ── ⑥ PROBABILITY DISTRIBUTION ───────────────────────────────────────────────
-print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
-print("  " + "─" * (W-2))
-print(f"  {'Scenario':<8}  {'Price':>7}  {'Proxy%':>7}  {'Market%':>8}  "
-      f"{'Gap':>6}  Description")
-for k in ["BEAR", "BASE", "BULL", "XBULL"]:
-    eps, mult, price, narr = SCENARIOS[k]
-    pp  = proxy_probs[k]
-    mp  = mkt_probs[k] if mkt_probs else 0
-    gap_pp = pp - mp
-    print(f"  {k:<8}  PLN {price:>4}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
-          f"{gap_pp*100:>+6.1f}pp  {narr}")
-
-print(f"\n  Proxy EV (2yr): PLN {proxy_ev:.0f}  /  Market EV: PLN {mkt_ev:.0f}  /  "
-      f"Current: PLN {CURRENT_PRICE:.0f}")
-print(f"  Conservative EV (2yr, ④): PLN {cons_price_2yr:.0f} + PLN {cons_div_2yr:.2f} divs = "
-      f"PLN {cons_price_2yr + cons_div_2yr:.0f} total value")
-
+print(f"  Bear probability (proxy model):  {probs_proxy['BEAR']*100:.1f}%")
 print()
-print("═" * W)
+print(f"  KEY TRIGGER: XTB's own multi-year history is the bear case's best evidence — this is a company")
+print(f"  whose earnings have swung wildly with market volatility before, and the Q2 QoQ volume decline")
+print(f"  (-22.7%) is the first concrete data point suggesting the current boom has already peaked, even as")
+print(f"  monetization efficiency improvements are (so far) offsetting it at the earnings line.")
+
+# ─── ④ EPP ────────────────────────────────────────────────────────────────────
+print()
+print("  ③ EPP  (Earnings Power Price: pessimistic P/E × NORMALIZED forward EPS)")
+hr()
+print(f"  Normalized FY2027E EPS estimate:  {ANALYST_FY27_EPS_CONSENSUS:.2f} zł  (analyst consensus — deliberately NOT this year's boom EPS of {EPS_FY2026E:.2f})")
+print(f"  Pessimistic P/E at trough:          {PE_PESSIMISTIC:.0f}×  (a genuine CFD-broker-trough multiple)")
+print(f"  ─────────────────────────────────────────────────────────────────────")
+print(f"  EPP floor:    {EPP:.0f} zł/share")
+print(f"  Current {CURRENT_PRICE:.2f} zł vs EPP {EPP:.0f} zł:  {epp_gap_pct:+.1f}%")
+print()
+print(f"  This EPP intentionally uses next year's ALREADY-DISCOUNTED consensus EPS, not this year's boom")
+print(f"  number — because the whole point of an earnings-power floor is durability, and {EPS_FY2026E:.2f} zł/share is")
+print(f"  not a number anyone, including XTB's own covering analysts, expects to repeat automatically.")
+print(f"  At a 10× reversion on THIS year's actual EPS (a real premium): {EPS_FY2026E:.2f} × 10 = {EPS_FY2026E*10:.0f} zł  ({(EPS_FY2026E*10/CURRENT_PRICE-1)*100:+.0f}% from spot)")
+
+# ─── ⑤ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
+print()
+print("  ④ CONSERVATIVE GROWTH  (2-yr: uses the analyst FY2027E consensus directly, no further growth credited)")
+hr()
+print(f"  Conservative FY2028E EPS:  {CONS_EPS_2YR:.2f} zł  (= the FY2027E consensus itself — zero credit for continued growth)")
+print(f"  Conservative exit P/E:      {CONS_PE_2YR}×  (a modest premium to the 8× trough, crediting some durable franchise value)")
+print(f"  Conservative equity value:   {cons_equity:.2f} zł/share")
+print(f"  + Cumulative dividends (2yr): +{cons_divs:.2f} zł/share  ({ANNUAL_DIV:.2f} zł/yr, {ANNUAL_DIV/CURRENT_PRICE*100:.2f}% yield)")
+hr()
+print(f"  Conservative 2yr total:      {cons_total:.2f} zł  ({'▼' if cons_total < CURRENT_PRICE else '▲'}{abs(cons_total-CURRENT_PRICE):.2f} from {CURRENT_PRICE:.2f} zł)")
+print(f"  Conservative total return:   {cons_return:.1f}% over 2yr  =  {cons_annual:.1f}%/yr")
+print()
+print(f"  THE HONEST READ: even taking the analyst community's own post-boom normalization at face value and")
+print(f"  crediting zero further growth, the conservative case is {'still clearly negative' if cons_return < -10 else 'roughly flat-to-negative' if cons_return < 5 else 'still positive'} — because so much of today's price already")
+print(f"  requires either the boom to persist or a durable re-rating that hasn't been earned yet.")
+
+# ─── ⑥ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
+print()
+print("  ⑤ VOLATILITY CONTEXT")
+hr()
+annual_vol  = 0.55
+sigma_range = (round(CURRENT_PRICE * (1 - annual_vol), 0),
+               round(CURRENT_PRICE * (1 + annual_vol), 0))
+bear_sigmas = (CURRENT_PRICE - bear_price) / (CURRENT_PRICE * annual_vol)
+print(f"  52-week range:        {VOL_52W_LOW:.2f} – {VOL_52W_HIGH:.2f} zł  (stock at its 52-week/all-time high today)")
+print(f"  Annual dividend:      {ANNUAL_DIV:.2f} zł/share  (yield {ANNUAL_DIV/CURRENT_PRICE*100:.2f}%; ~60% payout policy)")
+print(f"  Realized vol (1yr):   {annual_vol*100:.0f}%  (very high — a small-cap CFD broker with genuine boom-bust earnings history)")
+print(f"  Beta vs WIG20:        1.40  (well above the Warsaw benchmark)")
+print(f"  1-sigma range (1yr):  {sigma_range[0]:.0f} – {sigma_range[1]:.0f} zł  ({CURRENT_PRICE:.2f} ± {annual_vol*100:.0f}%)")
+hr()
+print(f"  Bear {bear_price} zł requires:  ~{bear_sigmas:.1f}σ drawdown  (large, but well within XTB's own historical range of moves)")
+print(f"  → Q3 2026 print (likely early November) is the next test of whether trading volume stabilizes or keeps declining QoQ.")
+print(f"  → Monthly trading-volume disclosures and active-client-growth updates are the leading indicators between prints.")
+print(f"  → {signal_short} at {CURRENT_PRICE:.2f} zł  |  Add below 95 zł  |  Trim above 160 zł")
+
+# ─── ⑦ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
+print()
+print("  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
+hr()
+probs_mkt = softmax_probs(MARKET_COMPOSITE)
+print(f"  {'Scenario':<10}  {'Price':>9}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
+hr()
+for s in ["BEAR","BASE","BULL","XBULL"]:
+    pp  = probs_proxy[s] * 100
+    pm  = probs_mkt[s]   * 100
+    gap = pp - pm
+    pr  = SCENARIOS[s][2]
+    desc = SCENARIOS[s][3][:44]
+    print(f"  {s:<10}  {pr:>6} zł  {pp:>6.1f}%  {pm:>7.1f}%  {gap:>+6.1f}pp  {desc}")
+
+ev_adj = expected_value(ADJ_COMPOSITE)
+ev_prx = expected_value(PROXY_COMPOSITE)
+ev_mkt = expected_value(MARKET_COMPOSITE)
+print()
+print(f"  Adj EV (2yr): {ev_adj:.0f} zł  /  Proxy EV: {ev_prx:.0f} zł  /  Market EV: {ev_mkt:.0f} zł  /  Current: {CURRENT_PRICE:.0f} zł")
+hr()
+print(f"  Downside  (→ Bear {bear_price} zł):  {downside_pct*100:.1f}%")
+print(f"  Upside    (→ Bull {bull_price} zł):  {upside_pct*100:.1f}%")
+print(f"  Ratio B   :  {ratio_b_str}")
+print(f"  Signal    :  {signal_full}")
+print()
+print(f"  MARKET PRICING: at {CURRENT_PRICE:.2f} zł the market composite is {MARKET_COMPOSITE:.2f}/4.0. The model's")
+print(f"  adjusted composite is {ADJ_COMPOSITE:.2f}/4.0, for a gap of {ADJ_GAP:+.2f} — {valuation_label.lower()}.")
+print(f"  XTB's H1 2026 results are genuinely extraordinary, and the stock isn't expensive against them —")
+print(f"  the real question this signal can't fully resolve is whether 2026 is XTB's new normal or its peak.")
+
+# ─── FOOTER ───────────────────────────────────────────────────────────────────
+print()
+print("═" * (W + 4))
+print(f"  Key catalysts to watch:")
+print(f"  (1) Q3 2026 print (likely early November) — does trading volume stabilize or keep declining QoQ?")
+print(f"  (2) Monthly trading-volume and active-client disclosures — the leading indicators between prints")
+print(f"  (3) Any new ESMA or national-regulator leverage-restriction proposals across the EU CFD industry")
+print(f"  (4) Investment-products (ETF/stock) platform growth — the longer-term client-stickiness story")
+print(f"  (5) Whether analyst FY2027E estimates get revised up or down as more 2026 data lands")
+print(f"  {signal_short} at {CURRENT_PRICE:.2f} zł  |  Add below 95 zł  |  Trim above 160 zł")
+print(f"  EPP floor: {EPP:.0f} zł  |  Pessimistic P/E: {PE_PESSIMISTIC:.0f}×  |  FY2026E EPS: {EPS_FY2026E:.2f} zł  |  FY2027E consensus: {ANALYST_FY27_EPS_CONSENSUS:.2f} zł")
+print("═" * (W + 4))
+print()
+
+# ── EXPORT ────────────────────────────────────────────────────────────────────
+RESULT = {
+    "ticker":            TICKER,
+    "signal":            signal_full,
+    "signal_short":      signal_short,
+    "price":             CURRENT_PRICE,
+    "epp_gap_pct":       epp_gap_pct,
+    "ratio_b":           ratio_b if ratio_b != float("inf") else None,
+    "ratio_b_fmt":       ratio_b_str,
+    "adj_composite":     ADJ_COMPOSITE,
+    "market_composite":  MARKET_COMPOSITE,
+    "adj_gap":           ADJ_GAP,
+    "valuation":         valuation_label,
+    "cons_return_2yr":   cons_return,
+}
+
+if __name__ == "__main__":
+    pass
