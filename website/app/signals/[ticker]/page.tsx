@@ -6,7 +6,7 @@ const API = 'https://7qc9qknegk.execute-api.eu-north-1.amazonaws.com';
 // is unreachable at build time. Keep in sync with lambda_function.py SUMMARY.
 const KNOWN_TICKERS = [
   'ISRG','MSFT','MU','WMB','AAPL','TSLA','SO','NVDA','HD','LRCX','AVGO','MCD','CL','FERG',
-  'CRM','ORCL','CSCO','SAP','NOW','ACN','KTY','IBM','AMD','ADBE','INTU','QCOM',
+  'CRM','ORCL','CSCO','SAP','NOW','ACN','KTY','IBM','AMD','ADBE','INTU','QCOM','CDR',
   'TXN','PANW','PLTR','INTC','CAT','MRVL','DHR','PFE','ABT','TMO','MRK','ABBV',
   'JNJ','UNH','LLY','PKN','SYK','BSX','AMGN','ELV','VRTX','GILD','BMY','MA','V',
   'JPM','AXP','GS','WFC','SPGI','PGR','C','BX','FISV','SCHW','MRSH','CB','KKR',
