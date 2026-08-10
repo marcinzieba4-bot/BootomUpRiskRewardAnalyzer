@@ -1,126 +1,133 @@
 #!/usr/bin/env python3
 """
-MU Signal Model  v2
+MU Signal Model  v3
 ───────────────────
-Micron Technology Inc. (NASDAQ: MU)  ·  Semiconductors
+Micron Technology, Inc. (NASDAQ: MU)  ·  Memory Semiconductors · DRAM/NAND/HBM
 
-New format: signal dashboard → bear anatomy → updated EPP →
-            conservative growth → volatility context → probability
+Format: segment revenue bridge → signal dashboard → bear anatomy → CXMT threat
+        check → updated EPP → conservative growth → volatility → probability
 """
 import math
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 730.0     # USD (NASDAQ: MU, ~May 2026)
+# ── CONFIG ────────────────────────────────────────────────────────────────
+CURRENT_PRICE   = 877.57    # USD (NASDAQ: MU, 2026-08-10)
+PREV_CLOSE      = 881.47
+PRICE_1WK_AGO   = 823.03    # 2026-08-03 (last refresh, post-CXMT-selloff)
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 
 SCENARIOS = {
-    #           EPS    mult  price   narrative
-    "BEAR":  (-5.0,    8,   250,  "DRAM crash; HBM ramp miss; Samsung floods market; FCF negative"),
-    "BASE":  (42.0,   15,   630,  "HBM scaling; DRAM mid-cycle; EPS $40-45"),
-    "BULL":  (58.0,   18,  1044,  "HBM dominant; DRAM tight; AI allocation sold out; EPS $55+"),
-    "XBULL": (80.0,   20,  1600,  "Memory super-cycle; HBM pricing power; AI compute unabated"),
+    #           EPS     mult  price   narrative
+    "BEAR":  ( 14.36,    8,    115,  "CXMT-driven DRAM oversupply; GM collapses to 35%"),
+    "BASE":  ( 90.00,   11,    990,  "AI/HBM demand and CXMT competition roughly offset"),
+    "BULL":  (117.10,   13,   1523,  "HBM supercycle outruns CXMT's ramp; pricing power holds"),
+    "XBULL": (137.50,   16,   2200,  "HBM TAM hits $100B+ on schedule; Micron holds share"),
 }
 
-# ── HBM ECONOMICS CALCULATOR (MU-specific structural feature) ─────────────────
-AI_GPU_SHIPMENTS_M     = 8.5    # B200/B300 ramp + MI350; strong 2026 datacenter build
-HBM_GB_PER_GPU         = 144    # B200=192GB dominant; blended higher than 2025
-HBM_ASP_PER_GB         = 25.0   # firmed up; allocated supply; MU guided $24-26
-MU_HBM_SHARE           = 0.28   # gaining share vs SK Hynix ~48%, Samsung ~24%
-HBM_GROSS_MARGIN       = 0.58   # scale benefits; well above DDR5
-DDR5_ASP_PER_GB        = 7.0    # firmed post-trough; mid-cycle recovery
-DDR5_GROSS_MARGIN      = 0.42   # mid-cycle
-MU_DILUTED_SHARES_B    = 1.11   # diluted shares
+# ── SEGMENT REVENUE BRIDGE (Micron-specific structural feature) ───────────
+FY2026E_DRAM_B, BEAR_DRAM_B, BULL_DRAM_B = 99.0, 55.0, 145.0
+FY2026E_NAND_B, BEAR_NAND_B, BULL_NAND_B = 30.0, 20.0, 42.0
+Q1_REV_B, Q2_REV_B, Q3_REV_B_ACTUAL      = 13.64, 23.86, 41.5
+Q4_GUIDE_B, Q4_GUIDE_BEAT_B              = 50.0, 6.55
 
-def hbm_economics():
-    total_hbm_gb_m        = AI_GPU_SHIPMENTS_M * HBM_GB_PER_GPU
-    total_hbm_market_b    = total_hbm_gb_m * HBM_ASP_PER_GB / 1000
-    mu_hbm_rev_b          = total_hbm_market_b * MU_HBM_SHARE
-    mu_hbm_gp_b           = mu_hbm_rev_b * HBM_GROSS_MARGIN
-    equiv_ddr5_rev_b      = total_hbm_gb_m * MU_HBM_SHARE * DDR5_ASP_PER_GB / 1000
-    equiv_ddr5_gp_b       = equiv_ddr5_rev_b * DDR5_GROSS_MARGIN
-    asp_premium_x         = HBM_ASP_PER_GB / DDR5_ASP_PER_GB
-    rev_premium_b         = mu_hbm_rev_b - equiv_ddr5_rev_b
-    gp_premium_b          = mu_hbm_gp_b  - equiv_ddr5_gp_b
-    gp_premium_per_share  = gp_premium_b  / MU_DILUTED_SHARES_B
-    mu_guided_hbm_rev_b   = 8.0    # MU FY2026E HBM revenue guidance
-    mu_total_dram_rev_b   = 28.0   # MU DRAM segment FY2026E (recovery + HBM mix)
-    hbm_mix_pct           = mu_guided_hbm_rev_b / mu_total_dram_rev_b * 100
-    future_ai_gpu_m       = AI_GPU_SHIPMENTS_M * 1.35
-    future_hbm_gb_gpu     = 150
-    future_mu_share       = 0.28
-    future_mu_hbm_rev_b   = future_ai_gpu_m * future_hbm_gb_gpu * HBM_ASP_PER_GB * future_mu_share / 1000
-    future_mu_hbm_gp_b    = future_mu_hbm_rev_b * HBM_GROSS_MARGIN
-    return (total_hbm_market_b, mu_hbm_rev_b, mu_hbm_gp_b,
-            equiv_ddr5_rev_b, asp_premium_x, rev_premium_b, gp_premium_b,
-            gp_premium_per_share, hbm_mix_pct,
-            future_mu_hbm_rev_b, future_mu_hbm_gp_b)
+FY2026E_EPS      = 73.00   # Q1 $4.78 + Q2 $12.20 + Q3 $25.11 (actual) + Q4E $31.00 (guide midpoint)
+FY2026E_SHARES_B = 1.150
+FY2026E_GM_PCT   = 0.816
 
-# ── PROXY SIGNALS ─────────────────────────────────────────────────────────────
+def segment_bridge():
+    total_now  = FY2026E_DRAM_B + FY2026E_NAND_B
+    total_bear = BEAR_DRAM_B + BEAR_NAND_B
+    total_bull = BULL_DRAM_B + BULL_NAND_B
+    eps_check_now  = (total_now * FY2026E_GM_PCT - 6.5) * (1 - 0.15) / FY2026E_SHARES_B
+    eps_check_bull = (total_bull * 0.860) / FY2026E_SHARES_B * 0.60   # post-buyback approximation retained from prior model
+    eps_check_bear = (75.0 * 0.35 - 6.5) / FY2026E_SHARES_B
+    return total_now, total_bear, total_bull, eps_check_now
+
+# ── CXMT COMPETITIVE THREAT CHECK (the Micron-specific risk) ──────────────
+CXMT_WSPM_2026E       = 350_000
+MU_WSPM_APPROX        = 375_000
+CXMT_IPO_RAISE_B      = 8.6
+CXMT_IPO_POP_PCT      = 466
+MU_MCAP_ERASED_B      = 45.0
+HBM_TAM_2025_B        = 35
+HBM_TAM_2028E_B       = 100
+CXMT_Q1_DRAM_SHARE_PCT = 8.0
+MU_Q1_DRAM_SHARE_PCT   = 22.0
+CXMT_2ND_FAB_NOTE = "early-Aug reports of CXMT exploring financing for a second Beijing-area fab added fresh selling pressure"
+
+# ── PROXY SIGNALS ─────────────────────────────────────────────────────────
 # (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
 #  current_value, higher_is_better, bear_narrative)
 SIGNALS = [
-    ("HBM revenue mix — % of DRAM revenue",    "%",
-      5.0,  12, 18, 32,   38.0, True,
-     "HBM ramp miss; GPU demand fails to materialize"),
+    ("Revenue YoY growth",              "%",
+      50.0,  100, 200, 300,  346.0, True,
+     "CXMT floods the commodity DRAM market; pricing power evaporates"),
 
-    ("DRAM contract ASP — QoQ change",        "% QoQ",
-    -12.0,   0,  8, 18,  +18.0, True,
-     "Samsung capacity surge; DDR5 contract prices collapse"),
+    ("Gross margin trajectory",         "%",
+      50.0,   65,  78,  85,   85.5, True,
+     "Classic memory down-cycle; oversupply crushes margins"),
 
-    ("Hyperscaler AI CapEx — YoY growth",     "% YoY",
-      0.0,  10, 25, 40,  +55.0, True,
-     "AI capex pause; hyperscalers pull back spending"),
+    ("HBM TAM capture",                 "/4 scale",
+       1.0,    2,   3,   4,    3.0, True,
+     "Alternative memory architectures or a slower AI buildout stalls HBM TAM growth"),
 
-    ("MU gross margin — guidance",            "%",
-     15.0,  28, 35, 45,  +48.0, True,
-     "Inventory glut; underutilisation charges hit GM"),
+    ("CXMT / Chinese DRAM threat",      "/4 scale",
+       3.0,    2,   1,   0,    2.0, False,
+     "CXMT's second Beijing fab comes online faster than expected"),
 
-    ("NAND contract ASP — QoQ change",        "% QoQ",
-    -15.0,   0,  8, 18,  +14.0, True,
-     "YMTC/NAND oversupply; Chinese dumping"),
+    ("Forward P/E (inverted)",          "x",
+      25.0,   18,  13,   9,   12.0, False,
+     "Ironically, P/E can re-rate higher even as the stock falls, if EPS falls faster"),
 
-    ("CXMT commodity DRAM share — %",         "%",
-     30.0,  15,  8,  3,    8.0, False,
-     "CXMT qualifies DDR5; commodity ASP ceiling set"),
+    ("Q4 guidance vs Street consensus", "/4 scale",
+       1.0,    2,   3,   4,    4.0, True,
+     "A single quarter's beat proves to be peak-cycle, not trend"),
 ]
-WEIGHTS = [0.25, 0.25, 0.15, 0.15, 0.10, 0.10]
+WEIGHTS = [0.20, 0.20, 0.10, 0.25, 0.10, 0.15]
+
+# Display labels for qualitative /4-scale signals (bear, base, bull, xbull, current)
+QUAL_LABELS = {
+    "HBM TAM capture":            ("shrinking", "flat", "growing", "tripling", "$35B→$100B by 2028"),
+    "CXMT / Chinese DRAM threat": ("share loss now", "parity risk", "manageable", "non-factor", "parity risk"),
+    "Q4 guidance vs Street consensus": ("well below", "below", "in-line", "above", "well above"),
+}
 
 STRUCTURAL_FACTORS = [
-    ("Global DRAM oligopoly (3 players); disciplined capex",      1.2, 0.25),
-    ("HBM bandwidth monopoly: TSV stacking moat, 18-30mo qual",  1.0, 0.25),
-    ("Extreme cyclicality: EPS $42→-$5→$42 possible in 24 months", -1.2, 0.25),
-    ("CXMT commoditising DDR4/NAND; long-run ASP ceiling risk",  -0.5, 0.15),
-    ("$45B+ capex cycle 2023-2026; balance sheet in downturn",   -0.3, 0.10),
+    ("HBM demand is structurally durable through the 2028 AI buildout",         0.6, 0.20),
+    ("CXMT and Chinese DRAM capacity are the single biggest 2-yr risk",        -0.6, 0.25),
+    ("Memory is a historically brutal boom-bust cycle; 85%+ GM is cyclical",   -0.5, 0.20),
+    ("At ~12x forward earnings the stock is still priced for skepticism",      0.4, 0.15),
+    ("HBM customer base spans essentially every AI accelerator maker",         0.3, 0.10),
+    ("Capex intensity rising sharply to chase capacity, pressuring FCF",      -0.3, 0.10),
 ]
 
 # ── UPDATED EPP ─────────────────────────────────────────────────────────────
-EPP_TODAY_EPS      = 42.0   # FY2026E non-GAAP EPS (HBM + DRAM recovery in full swing)
-EPP_MIN_PE         = 8.0    # min viable P/E at panic (memory trough multiple; unchanged)
-EPP_HISTORICAL     = 57.0   # historical EPP v1 (2022 floor formula)
-EPP_REGIME_NOTE    = "(memory panic P/E = 8x; HBM moat does NOT prevent multiple collapse in downcycle)"
+EPP_TODAY_EPS      = FY2026E_EPS   # $73.00 FY2026E non-GAAP EPS
+EPP_MIN_PE         = 8.0           # Micron's own multi-cycle memory-trough average P/E
+EPP_HISTORICAL     = 584.0         # = EPP_TODAY_EPS * EPP_MIN_PE
+EPP_REGIME_NOTE    = "(Micron's own multi-cycle memory-trough average P/E)"
 
 # ── CONSERVATIVE GROWTH (2-yr, base-minus assumptions) ───────────────────────
-CONS_SIGNALS = [
-    ("HBM revenue mix",    30.0,  "30% (vs 38%; AI capex normalises to 2025 pace)"),
-    ("DRAM contract",       5.0,  "+5% QoQ (vs +18%; cycle peaks; pricing cools)"),
-    ("Hyperscaler AI",     25.0,  "+25%/yr (vs +55%; capex growth decelerates)"),
-    ("MU gross margin",    42.0,  "42% (vs 48%; HBM mix growth slows)"),
-    ("NAND contract",       3.0,  "+3% QoQ (vs +14%; modest NAND drift)"),
-    ("CXMT commodity",     11.0,  "11% (vs 8%; modest CXMT creep into DDR5)"),
-]
-CONS_EPS_CAGR    = 0.05    # 5%/yr (peak-cycle EPS; normalisation incoming)
-CONS_EXIT_PE     = 12.0    # 12x (mid-cycle de-rate; market prices next downcycle)
-CONS_DIVIDEND    = 0.0     # no meaningful dividend
+CONS_EPS_2028      = 85.00  # below FY2026E — assumes the cycle has partially rolled over
+CONS_EXIT_PE       = 10.0   # ~12x → 10x; a modest further de-rating
+CONS_DIVIDEND_2YR  = 0.92   # $0.46/yr, cumulative 2yr
 
 # ── VOLATILITY ───────────────────────────────────────────────────────────────
-VOL_ANNUAL_PCT   = 0.55    # very high vol; cyclical semiconductor
-VOL_BETA         = 1.80    # high beta
-VOL_52W_LOW      = 350.0   # approx (dipped on DRAM oversupply fears mid-2025)
-VOL_52W_HIGH     = 790.0   # approx (recent AI-driven high)
-VOL_DIVIDEND     = 0.0
+VOL_52W_LOW      = 113.46
+VOL_52W_HIGH     = 1255.00
+VOL_ANNUAL_PCT   = 0.55    # very high vol; cyclical semiconductor at a cycle extreme
+VOL_BETA         = 1.75
+VOL_DIVIDEND     = 0.46
+VOL_1DAY_PCT     = (CURRENT_PRICE - PREV_CLOSE) / PREV_CLOSE * 100
+VOL_1WK_PCT      = (CURRENT_PRICE - PRICE_1WK_AGO) / PRICE_1WK_AGO * 100
 
-# ── SCORING ───────────────────────────────────────────────────────────────────
+# ── ANALYST TARGETS (consensus context) ──────────────────────────────────
+ANALYST_AVG_TARGET   = 1502.0   # ~46 analysts, Strong Buy consensus
+ANALYST_LOW_TARGET   = 361.0
+ANALYST_HIGH_TARGET  = 2200.0
+ANALYST_NOTE = "Citi cut its target to $1,150 on Aug 7 (still Buy); Mizuho raised to $1,375, Arete to $1,500, Itau BBA to $1,697 — sentiment still bullish despite the CXMT overhang"
+
+# ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
     if hib:
         if val >= xbull_f: return 4
@@ -144,11 +151,14 @@ def softmax_probs(composite, T=0.60):
 def expected_price(probs):
     return sum(probs[k] * SCENARIOS[k][2] for k in probs)
 
-def market_implied_composite(target_ev, tolerance=8.0):
-    for c in [x / 100 for x in range(100, 401)]:
-        if abs(expected_price(softmax_probs(c)) - target_ev) < tolerance:
-            return round(c, 2), softmax_probs(c)
-    return None, None
+def market_implied_composite(target_ev):
+    best = None
+    for x in range(100, 401):
+        c = x / 100
+        ev = expected_price(softmax_probs(c))
+        if best is None or abs(ev - target_ev) < abs(best[1] - target_ev):
+            best = (c, ev)
+    return best
 
 # ── COMPUTE ───────────────────────────────────────────────────────────────────
 W = 72
@@ -160,19 +170,16 @@ scored = [
     in zip(SIGNALS, WEIGHTS)
 ]
 proxy_composite  = sum(s * w for *_, s, w in scored)
-bear_composite   = sum(score_signal(bv, bf, blf, xf, hib) * w
-                       for (_, __, bv, bf, blf, xf, ___, hib, ____), w
-                       in zip(SIGNALS, WEIGHTS))
 sca              = sum(s * w for _, s, w in STRUCTURAL_FACTORS)
 adj_composite    = proxy_composite + sca
 proxy_probs      = softmax_probs(proxy_composite)
-bear_probs       = softmax_probs(bear_composite)
+adj_probs        = softmax_probs(adj_composite)
 proxy_ev         = expected_price(proxy_probs)
-bear_ev          = expected_price(bear_probs)
+adj_ev           = expected_price(adj_probs)
 
 market_target_ev = CURRENT_PRICE * ((1 + REQUIRED_RETURN) ** HORIZON_YEARS)
-mkt_composite, mkt_probs = market_implied_composite(market_target_ev)
-mkt_ev = expected_price(mkt_probs) if mkt_probs else market_target_ev
+mkt_composite, mkt_ev = market_implied_composite(market_target_ev)
+mkt_probs = softmax_probs(mkt_composite)
 
 # Updated EPP
 epp_updated     = EPP_TODAY_EPS * EPP_MIN_PE
@@ -180,10 +187,8 @@ epp_gap_pct     = (CURRENT_PRICE - epp_updated) / epp_updated * 100
 bear_vs_epp_pct = (SCENARIOS["BEAR"][2] - epp_updated) / epp_updated * 100
 
 # Conservative growth
-cons_eps_2yr    = EPP_TODAY_EPS * ((1 + CONS_EPS_CAGR) ** 2)
-cons_price_2yr  = cons_eps_2yr * CONS_EXIT_PE
-cons_div_2yr    = 0.0   # no dividend
-cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + cons_div_2yr) / CURRENT_PRICE * 100
+cons_price_2yr  = CONS_EPS_2028 * CONS_EXIT_PE
+cons_total_ret  = (cons_price_2yr - CURRENT_PRICE + CONS_DIVIDEND_2YR) / CURRENT_PRICE * 100
 cons_annual_ret = cons_total_ret / 2
 
 # Volatility
@@ -191,170 +196,177 @@ sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
 vol_low_1yr       = CURRENT_PRICE - sigma_1yr
 vol_high_1yr      = CURRENT_PRICE + sigma_1yr
 sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
+pct_of_52w_range  = (CURRENT_PRICE - VOL_52W_LOW) / (VOL_52W_HIGH - VOL_52W_LOW) * 100
 
-if mkt_composite:
-    adj_gap = adj_composite - mkt_composite
-    if   adj_gap >  0.50: _verdict = "UNDERVALUED"
-    elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
-    elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
-    elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
-    else:                 _verdict = "OVERVALUED"
+# Downside / upside / ratio B
+downside_pct = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / CURRENT_PRICE * 100
+upside_pct   = (SCENARIOS["BULL"][2] - CURRENT_PRICE) / CURRENT_PRICE * 100
+ratio_b      = downside_pct / upside_pct
 
-(total_hbm_mkt_b, mu_hbm_rev_b, mu_hbm_gp_b,
- equiv_ddr5_rev_b, asp_premium_x, rev_prem_b, gp_prem_b,
- gp_prem_per_share, hbm_mix_pct,
- fut_mu_hbm_rev_b, fut_mu_hbm_gp_b) = hbm_economics()
+fwd_pe = CURRENT_PRICE / FY2026E_EPS
+
+adj_gap = adj_composite - mkt_composite
+if   adj_gap >  0.50: _verdict = "UNDERVALUED"
+elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
+elif adj_gap > -0.20: _verdict = "FAIRLY VALUED"
+elif adj_gap > -0.50: _verdict = "MODESTLY OVERVALUED"
+else:                 _verdict = "OVERVALUED"
+
+if   ratio_b >= 1.5:                    _signal = "✕ AVOID"
+elif adj_gap > 0.20 and ratio_b < 1.35: _signal = "◎ ACCUMULATE"
+elif adj_gap > -0.20:                   _signal = "◐ WATCHLIST"
+else:                                   _signal = "✕ AVOID"
+
+total_now_b, total_bear_b, total_bull_b, eps_check_now = segment_bridge()
 
 # ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
 print("═" * W)
-print(f"  MU  ·  Micron Technology  ·  ${CURRENT_PRICE:.2f}  ·  Semiconductors")
-print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
+print(f"  MU  ·  Micron Technology, Inc.  ·  ${CURRENT_PRICE:.2f}  ·  DRAM / NAND / HBM AI Supercycle")
+print(f"  Signal: {_signal}   Ratio B: {ratio_b:.2f}x   Adj gap: {adj_gap:+.2f}  [{_verdict}]")
 print("═" * W)
 
-# HBM economics
-print(f"\n  HBM ECONOMICS  (the AI memory revenue engine)")
+# ── SEGMENT REVENUE BRIDGE ───────────────────────────────────────────────────
+print(f"\n  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
 print("  " + "─" * (W-2))
-print(f"  AI GPU shipments (calendar 2026E):      {AI_GPU_SHIPMENTS_M:.1f}M units")
-print(f"  HBM content per GPU (blended B200/H200): {HBM_GB_PER_GPU}GB  "
-      f"(B200=192GB dominant; H100=80GB phasing out)")
-print(f"  HBM3E ASP:                              ${HBM_ASP_PER_GB:.0f}/GB  "
-      f"(vs DDR5 ${DDR5_ASP_PER_GB:.0f}/GB = {asp_premium_x:.1f}x premium)")
-print(f"  Industry HBM market (AI GPU only):      ${total_hbm_mkt_b:.1f}B")
-print(f"  MU HBM market share:                    {MU_HBM_SHARE*100:.0f}%  "
-      f"(SK Hynix ~48%, Samsung ~24%, Micron ~28%)")
-print(f"  ─────────────────────────────────────────────────────")
-print(f"  MU HBM revenue (calendar 2026E):        ${mu_hbm_rev_b:.1f}B")
-print(f"  MU HBM gross profit:                    ${mu_hbm_gp_b:.1f}B  ({HBM_GROSS_MARGIN*100:.0f}% GM)")
-print(f"  Equiv. DDR5 revenue (same volume):      ${equiv_ddr5_rev_b:.1f}B  (commodity baseline)")
-print(f"  Revenue premium from HBM vs DDR5:       +${rev_prem_b:.1f}B / yr")
-print(f"  GP premium from HBM vs DDR5:            +${gp_prem_b:.1f}B / yr  "
-      f"→  +${gp_prem_per_share:.1f}/share  ← locked-in by qualification")
-print(f"  HBM as % of MU DRAM revenue:            {hbm_mix_pct:.0f}%  (proxy signal calibration)")
-print(f"\n  2027E forward (B300 ramp + MU share stable at 28%):")
-print(f"  MU HBM revenue:                         ${fut_mu_hbm_rev_b:.1f}B")
-print(f"  MU HBM gross profit:                    ${fut_mu_hbm_gp_b:.1f}B")
-print(f"  → HBM drives $35-40+ EPS at current pricing; DRAM/NAND is incremental.")
+print(f"  {'Segment':<24}  {'FY2026E ($B)':>13}  {'Bear ($B)':>10}  {'Bull ($B)':>10}    Δ Bear    Δ Bull")
+print("  " + "─" * (W-2))
+print(f"  DRAM                    $  {FY2026E_DRAM_B:>9.1f}  $  {BEAR_DRAM_B:>7.1f}  $  {BULL_DRAM_B:>7.1f}    "
+      f"{BEAR_DRAM_B-FY2026E_DRAM_B:+.1f}    {BULL_DRAM_B-FY2026E_DRAM_B:+.1f}")
+print(f"    Record pricing on AI/HBM demand; CXMT's ramp is the swing factor for the 2-yr bear case")
+print(f"  NAND                    $  {FY2026E_NAND_B:>9.1f}  $  {BEAR_NAND_B:>7.1f}  $  {BULL_NAND_B:>7.1f}    "
+      f"{BEAR_NAND_B-FY2026E_NAND_B:+.1f}    {BULL_NAND_B-FY2026E_NAND_B:+.1f}")
+print(f"    Smaller, steadier segment; less exposed to the DRAM-specific CXMT competitive threat")
+print("  " + "─" * (W-2))
+print(f"  TOTAL                   $  {total_now_b:>9.1f}  $  {total_bear_b:>7.1f}  $  {total_bull_b:>7.1f}    "
+      f"{total_bear_b-total_now_b:+.1f}    {total_bull_b-total_now_b:+.1f}")
+print(f"  Q1 ${Q1_REV_B:.2f}B → Q2 ${Q2_REV_B:.2f}B → Q3 ${Q3_REV_B_ACTUAL:.1f}B (actual) → "
+      f"Q4 ${Q4_GUIDE_B:.1f}B±$1.0B (guide, beat Street by ${Q4_GUIDE_BEAT_B:.2f}B)")
+print(f"\n  FY2026E EPS check:  ${total_now_b:.1f}B rev × {FY2026E_GM_PCT*100:.1f}% GM − $6.5B opex")
+print(f"  − 15.0% tax  ÷ {FY2026E_SHARES_B:.3f}B shares  =  ${eps_check_now:.2f}/share  (model estimate ${FY2026E_EPS:.2f})")
 
 # ── ① SIGNAL DASHBOARD ───────────────────────────────────────────────────────
 print(f"\n  ① SIGNAL DASHBOARD")
 print(f"  {'Signal':<30}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>7}  Score")
 print("  " + "─" * (W-2))
 for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u = unit.split()[0] if unit else ""
-    bv_s  = f"{bv:+.0f}{u}"  if hib else f">{bv:.1f}{u}"
-    bf_s  = f"{bf:.0f}{u}"
-    blf_s = f"{blf:.0f}{u}"
-    xf_s  = f"{xf:.0f}{u}"
-    cv_s  = f"{cv:+.0f}{u}"
-    bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name:<30}  {bv_s:>7}  {bf_s:>7}  {blf_s:>7}  {xf_s:>7}  {cv_s:>7}  {ICONS[s]}  {bar}")
+    bar = "█" * s + "░" * (4 - s)
+    if name in QUAL_LABELS:
+        lb, lba, lbu, lx, lc = QUAL_LABELS[name]
+        print(f"  {name:<30}  {lb:>13}  {lba:>9}  {lbu:>9}  {lx:>9}  {lc:>18}  {ICONS[s]}  {bar}")
+    else:
+        print(f"  {name:<30}  {bv:>6.1f}{unit[:1]}  {bf:>6.0f}{unit[:1]}  {blf:>6.0f}{unit[:1]}  "
+              f"{xf:>6.0f}{unit[:1]}  {cv:>6.1f}{unit[:1]}  {ICONS[s]}  {bar}")
 
 print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
-if mkt_composite:
-    print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
-          f"(back-solved from ${CURRENT_PRICE:.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
-    print(f"  SCA adjustment:    {sca:+.2f}  →  Adj composite {adj_composite:.2f}  "
-          f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
+print(f"  Market composite:   {mkt_composite:.2f} / 4.00  "
+      f"(back-solved from ${CURRENT_PRICE:.2f} + {REQUIRED_RETURN*100:.0f}%/yr hurdle)")
+print(f"  SCA adjustment:    {sca:+.3f}  →  Adj composite {adj_composite:.3f}  "
+      f"→  Gap {adj_gap:+.2f}  [{_verdict}]")
 
 print(f"\n  Structural factors:")
 for desc, score, wt in STRUCTURAL_FACTORS:
     arrow = "  +" if score > 0 else "  -"
-    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.2f})")
+    print(f"  {arrow}  {desc}  ({score:+.1f} × {wt*100:.0f}%  =  {score*wt:+.3f})")
 
 # ── ② BEAR CASE ANATOMY ──────────────────────────────────────────────────────
-print(f"\n  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)")
+print(f"\n  ② BEAR CASE ANATOMY  (variables needed to reach BEAR ${SCENARIOS['BEAR'][2]})")
 print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
+print(f"  {'Signal':<30}  {'Current':>10}  {'Bear val':>10}  Trigger")
 for name, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
-    u      = unit.split()[0] if unit else ""
-    cv_s   = f"{cv:+.0f}{u}"
-    bv_s   = f"{bv:+.0f}{u}"
-    move   = bv - cv
-    move_s = f"{move:+.0f}{u}"
-    trigger = narr[:38] if len(narr) <= 38 else narr[:35] + "…"
-    print(f"  {name:<30}  {cv_s:>8}  {bv_s:>8}  {move_s:>6}  {trigger}")
+    trigger = narr[:42] if len(narr) <= 42 else narr[:39] + "…"
+    if name in QUAL_LABELS:
+        lb, lba, lbu, lx, lc = QUAL_LABELS[name]
+        print(f"  {name:<30}  {lc:>9}  {lb:>9}  {trigger}")
+    else:
+        print(f"  {name:<30}  {cv:>9.1f}{unit[:1]}  {bv:>9.1f}{unit[:1]}  {trigger}")
 
-bear_model_price = expected_price(bear_probs)
-print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: "
-      f"~${bear_model_price:.0f}  (model)  /  ${SCENARIOS['BEAR'][2]} (defined)")
-print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
-print(f"\n  KEY TRIGGER: Samsung capacity surge ($20B+ DRAM capex) + AI capex deceleration <20% simultaneously.")
-print(f"  MU's HBM qualification does NOT prevent ASP collapse if SK Hynix/Samsung flood commodity DRAM.")
-print(f"  FCF goes deeply negative ($3-5B cash burn/yr) — the '$42 EPS floor' disappears fast.")
+print(f"\n  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
+print(f"\n  KEY TRIGGER: memory is the most cyclical major semiconductor category, and Micron's own")
+print(f"  history includes multiple 50-80% peak-to-trough drawdowns. CXMT is the specific, funded,")
+print(f"  fast-moving catalyst that could turn this AI-driven supercycle into a conventional memory")
+print(f"  down-cycle faster than the HBM TAM buildout can offset it. {CXMT_2ND_FAB_NOTE}.")
+
+# ── CXMT COMPETITIVE THREAT CHECK ────────────────────────────────────────────
+print(f"\n  CXMT COMPETITIVE THREAT CHECK  (the Micron-specific risk)")
+print("  " + "─" * (W-2))
+print(f"  CXMT wafer starts/month (2026E):     {CXMT_WSPM_2026E:,}  vs Micron's ~{MU_WSPM_APPROX:,}  "
+      f"(within ~{(MU_WSPM_APPROX-CXMT_WSPM_2026E)/1000:.0f}K of parity)")
+print(f"  CXMT Shanghai IPO:                    ${CXMT_IPO_RAISE_B:.1f}B raised, +{CXMT_IPO_POP_PCT}% first-day pop")
+print(f"  Micron market cap erased on the news:  ${MU_MCAP_ERASED_B:.1f}B")
+print(f"  CXMT Q1 2026 global DRAM revenue share: {CXMT_Q1_DRAM_SHARE_PCT:.0f}%  vs Micron {MU_Q1_DRAM_SHARE_PCT:.0f}%")
+print(f"  HBM TAM (structural counterweight):    ${HBM_TAM_2025_B}B (2025) → ${HBM_TAM_2028E_B}B+ (2027-28E)")
+print(f"  New this week: {CXMT_2ND_FAB_NOTE}.")
 
 # ── ③ UPDATED EPP ────────────────────────────────────────────────────────────
-print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
+print(f"\n  ③ EPP  (Earnings Power Price: pessimistic P/E × forward EPS)")
 print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:          ${EPP_TODAY_EPS:.2f}  (FY2026E non-GAAP)")
-print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
+print(f"  FY2026E EPS estimate:       ${EPP_TODAY_EPS:.2f}  (Q1 $4.78 + Q2 $12.20 + Q3 $25.11 + Q4E $31.00 non-GAAP)")
+print(f"  Pessimistic P/E at trough:   {EPP_MIN_PE:.0f}x  {EPP_REGIME_NOTE}")
 print(f"  {'─'*60}")
-print(f"  UPDATED EPP:                     ${epp_updated:.0f}/share")
-print(f"  Historical EPP (v1, floor adj):  ${EPP_HISTORICAL:.0f}/share")
-print(f"  Current ${CURRENT_PRICE:.0f} vs Updated EPP ${epp_updated:.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} vs Updated EPP ${epp_updated:.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical'}")
+print(f"  EPP floor:    ${epp_updated:.0f}/share")
+print(f"  Current ${CURRENT_PRICE:.2f} vs EPP ${epp_updated:.0f}:  {epp_gap_pct:+.1f}%")
+print(f"  At a 15x reversion (a normalized cyclical multiple): ${EPP_TODAY_EPS:.2f} × 15 = "
+      f"${EPP_TODAY_EPS*15:.0f}  ({(EPP_TODAY_EPS*15/CURRENT_PRICE-1)*100:+.0f}% from spot)")
 
 # ── ④ CONSERVATIVE GROWTH ────────────────────────────────────────────────────
-print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
+print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr: modest growth off the FY2026E base, cycle risk discounted)")
 print("  " + "─" * (W-2))
-print(f"  {'Signal':<30}  {'Conservative':>14}  vs Current  Rationale")
-for sname, sval, srat in CONS_SIGNALS:
-    cur = next(cv for name, _, __, ___, ____, _____, cv, ______, _______ in SIGNALS
-               if name.lower().startswith(sname.split()[0].lower()))
-    diff = sval - cur
-    diff_s = f"{diff:+.0f}"
-    print(f"  {sname:<30}  {sval:>14.1f}  {diff_s:>9}   {srat[:30]}")
-
-print(f"\n  Conservative 2yr EPS:   ${EPP_TODAY_EPS:.2f} × "
-      f"(1+{CONS_EPS_CAGR*100:.0f}%)² = ${cons_eps_2yr:.2f}")
-print(f"  At {CONS_EXIT_PE:.0f}x P/E (no multiple expansion):  ${cons_price_2yr:.0f}/share")
+print(f"  Conservative FY2028E EPS:  ${CONS_EPS_2028:.2f}  (below FY2026E — assumes the cycle has partially rolled over)")
+print(f"  Conservative exit P/E:      {CONS_EXIT_PE:.0f}x  (~{fwd_pe:.0f}x → {CONS_EXIT_PE:.0f}x; a further de-rating)")
+print(f"  Conservative equity value:   ${cons_price_2yr:.2f}/share")
+print(f"  + Cumulative dividends (2yr): +${CONS_DIVIDEND_2YR:.2f}/share  (${VOL_DIVIDEND:.2f}/yr, "
+      f"{VOL_DIVIDEND/CURRENT_PRICE*100:.2f}% yield)")
 print(f"  {'─'*60}")
-print(f"  Conservative 2yr price:    ${cons_price_2yr:.0f}  "
-      f"({'▲' if cons_price_2yr > CURRENT_PRICE else '▼'}{abs(cons_price_2yr - CURRENT_PRICE):.0f} "
-      f"from ${CURRENT_PRICE:.0f})")
-print(f"  Conservative total return: {cons_total_ret:+.0f}% over 2yr  "
-      f"= {cons_annual_ret:+.0f}%/yr  (incl. dividend)")
-print(f"\n  ⚠  AT PEAK CYCLE: conservative 2yr = negative total return. Market prices in continued perfection.")
-print(f"  MU at $730 is a BULL/XBULL conviction bet — conservative case implies -20%+ from current.")
+print(f"  Conservative 2yr total:      ${cons_price_2yr + CONS_DIVIDEND_2YR:.2f}  "
+      f"({'▲' if cons_total_ret >= 0 else '▼'}{abs(cons_price_2yr + CONS_DIVIDEND_2YR - CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
+print(f"  Conservative total return:   {cons_total_ret:+.1f}% over 2yr  =  {cons_annual_ret:+.1f}%/yr")
+print(f"\n  THE HONEST READ: at ${PRICE_1WK_AGO:.0f} a week ago the conservative case still cleared a small")
+print(f"  positive return; at ${CURRENT_PRICE:.2f} today it has flipped modestly negative — the rally has")
+print(f"  eaten the margin of safety in the base case. The real risk isn't a modest EPS decline — it's")
+print(f"  the full-cycle-reversal BEAR case, where CXMT-driven oversupply pushes margins toward the 30s.")
 
 # ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
 print(f"\n  ⑤ VOLATILITY CONTEXT")
 print("  " + "─" * (W-2))
-print(f"  52-week range:        ${VOL_52W_LOW:.0f}  –  ${VOL_52W_HIGH:.0f}")
-if VOL_DIVIDEND > 0:
-    print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  "
-          f"(yield {VOL_DIVIDEND/CURRENT_PRICE*100:.1f}%)")
-else:
-    print(f"  Dividend:             None")
-print(f"  Realized vol (2yr):   {VOL_ANNUAL_PCT*100:.0f}% annualized")
-print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}")
-print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  "
-      f"(${CURRENT_PRICE:.0f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
-print(f"  2-sigma range (1yr):  ${CURRENT_PRICE - 2*sigma_1yr:.0f}  –  "
-      f"${CURRENT_PRICE + 2*sigma_1yr:.0f}")
+print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  "
+      f"(stock at {pct_of_52w_range:.0f}th pct of 52W range)")
+print(f"  Recent moves:          {VOL_1DAY_PCT:+.1f}% (1-day) / {VOL_1WK_PCT:+.1f}% (1-week, recovering off the CXMT selloff)")
+print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  (yield {VOL_DIVIDEND/CURRENT_PRICE*100:.2f}%; "
+      f"a small, recently reinstated payout)")
+print(f"  Realized vol (1yr):   {VOL_ANNUAL_PCT*100:.0f}%  (high — typical for cyclical memory semis, "
+      f"especially at a cycle extreme)")
+print(f"  Beta vs S&P 500:      {VOL_BETA:.2f}  (well above market; among the most volatile large-cap semis)")
+print(f"  1-sigma range (1yr):  ${vol_low_1yr:.0f}  –  ${vol_high_1yr:.0f}  (${CURRENT_PRICE:.2f} ± {VOL_ANNUAL_PCT*100:.0f}%)")
 print(f"  {'─'*60}")
-print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  "
-      f"~{sigma_needed_bear:.1f}σ price move  "
-      f"{'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal range)'}")
-print(f"  At 55% vol: bear ${SCENARIOS['BEAR'][2]} requires only ~{sigma_needed_bear:.1f}σ — easily reached in a normal correction.")
-print(f"  No dividend buffer — total return is entirely price-dependent. Size accordingly.")
+print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  ~{sigma_needed_bear:.1f}σ drawdown  "
+      f"(large but well within Micron's own historical cycle-crash range)")
+print(f"  Analyst consensus: avg target ${ANALYST_AVG_TARGET:.0f} (Strong Buy, ~46 analysts), "
+      f"range ${ANALYST_LOW_TARGET:.0f}-${ANALYST_HIGH_TARGET:.0f}. {ANALYST_NOTE}.")
+print(f"  → Q4 FY2026 print (late Sept) is the next test of whether pricing power holds through the CXMT headlines.")
+print(f"  → CXMT capacity ramp and Chinese DRAM ASPs are the leading indicators to watch between prints.")
 
 # ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
 print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
 print("  " + "─" * (W-2))
-print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  "
-      f"{'Gap':>6}  Description")
+print(f"  {'Scenario':<8}  {'Price':>6}  {'Proxy%':>7}  {'Market%':>8}  {'Gap':>7}  Description")
 for k in ["BEAR", "BASE", "BULL", "XBULL"]:
     eps, mult, price, narr = SCENARIOS[k]
-    pp  = proxy_probs[k]
-    mp  = mkt_probs[k] if mkt_probs else 0
-    gap_pp = pp - mp
-    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  "
-          f"{gap_pp*100:>+6.1f}pp  {narr}")
+    pp, mp = proxy_probs[k], mkt_probs[k]
+    print(f"  {k:<8}  ${price:>5}  {pp*100:>6.1f}%  {mp*100:>7.1f}%  {(pp-mp)*100:>+6.1f}pp  {narr}")
 
-print(f"\n  Proxy EV (2yr): ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  /  Current: ${CURRENT_PRICE:.0f}")
-print(f"  Conservative EV (2yr, ④): ${cons_price_2yr:.0f} + ${cons_div_2yr:.2f} divs = "
-      f"${cons_price_2yr + cons_div_2yr:.0f} total value")
+print(f"\n  Adj EV (2yr): ${adj_ev:.0f}  /  Proxy EV: ${proxy_ev:.0f}  /  Market EV: ${mkt_ev:.0f}  "
+      f"/  Current: ${CURRENT_PRICE:.0f}")
+print(f"  Downside  (→ Bear ${SCENARIOS['BEAR'][2]}):  {downside_pct:.1f}%")
+print(f"  Upside    (→ Bull ${SCENARIOS['BULL'][2]}):  {upside_pct:.1f}%")
+print(f"  Ratio B   :  {ratio_b:.2f}x")
+print(f"  Signal    :  {_signal}")
+print(f"\n  MARKET PRICING: at ${CURRENT_PRICE:.2f} the market composite is {mkt_composite:.2f}/4.0. The model's")
+print(f"  adjusted composite is {adj_composite:.2f}/4.0, for a gap of {adj_gap:+.2f} — {_verdict.lower()}.")
+print(f"  Micron is delivering the strongest growth and margin expansion in its history, and the market")
+print(f"  is still pricing it at a cyclical discount ({fwd_pe:.1f}x forward) rather than a growth-stock multiple.")
+print(f"  CXMT is a real, quantified risk to the 2-year horizon, but the HBM TAM buildout is the larger force.")
 
 print()
 print("═" * W)
+print()
