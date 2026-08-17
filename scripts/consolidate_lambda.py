@@ -147,8 +147,11 @@ def main():
 
         deploy_zip_path = os.path.join(workdir, "deploy.zip")
         with zipfile.ZipFile(deploy_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-            for root, _, files in os.walk(extract_dir):
+            for root, dirs, files in os.walk(extract_dir):
+                dirs[:] = [d for d in dirs if d != "__pycache__"]
                 for fname in files:
+                    if fname.endswith(".pyc"):
+                        continue
                     full = os.path.join(root, fname)
                     arcname = os.path.relpath(full, extract_dir)
                     zf.write(full, arcname)
