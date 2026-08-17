@@ -24,6 +24,8 @@ import zipfile
 
 import boto3
 
+from sector_groups import normalize_sector_group
+
 BUCKET = "s3bucketmz"
 PENDING_PREFIX = "lambda-src/pending/"
 FUNCTION_NAME = "veerock-signal-api"
@@ -132,6 +134,29 @@ def main():
                 os.remove(local_py)
                 skipped.append(t)
                 continue
+
+            normalized_sg, sg_changed = normalize_sector_group(entry.get("sector_group"))
+            if normalized_sg is None:
+                print(f"  {t}: SKIP, sector_group {entry.get('sector_group')!r} is not a "
+                      f"recognized canonical value or known alias — see scripts/sector_groups.py")
+                os.remove(local_py)
+                skipped.append(t)
+                continue
+            if sg_changed:
+                print(f"  {t}: sector_group normalized {entry['sector_group']!r} -> {normalized_sg!r}")
+                entry["sector_group"] = normalized_sg
+                try:
+                    site_key = f"veerock-signals/{t}.json"
+                    site_obj = s3.get_object(Bucket=BUCKET, Key=site_key)
+                    site_json = json.loads(site_obj["Body"].read())
+                    if site_json.get("sector_group") != normalized_sg:
+                        site_json["sector_group"] = normalized_sg
+                        s3.put_object(Bucket=BUCKET, Key=site_key,
+                                       Body=json.dumps(site_json, ensure_ascii=False),
+                                       ContentType="application/json")
+                        print(f"  {t}: also corrected sector_group in {site_key}")
+                except Exception as e:
+                    print(f"  {t}: WARNING, could not write-through sector_group fix to S3 site JSON: {e}")
 
             models[t] = f"{tl}_signal_model.py"
             summary[t] = {k: entry[k] for k in REQUIRED_SUMMARY_FIELDS}
