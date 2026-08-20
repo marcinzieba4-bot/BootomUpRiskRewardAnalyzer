@@ -33,6 +33,7 @@ REGION = "eu-north-1"
 REQUIRED_SUMMARY_FIELDS = {
     "ticker", "signal", "signal_short", "signal_color", "sector_group",
     "price", "date", "epp_gap_pct", "ratio_b_fmt", "company", "sector", "summary",
+    "last_real_refresh",
 }
 
 
