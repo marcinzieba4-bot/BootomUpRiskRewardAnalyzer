@@ -22,6 +22,10 @@ SCENARIOS = {
     "XBULL": (1900,  48, 2450, "Foundry capex supercycle + China restrictions ease + High-NA beats"),
 }
 
+# ── SEGMENT REVENUE BRIDGE (FY2026E, EUR bn) ────────────────────────────────
+SEG_SYSTEM_NOW,  SEG_SYSTEM_BEAR,  SEG_SYSTEM_BULL  = 33.0, 22.0, 40.0
+SEG_IBM_NOW,      SEG_IBM_BEAR,     SEG_IBM_BULL     = 11.0, 10.0, 12.0
+
 # ── SIGNALS ───────────────────────────────────────────────────────────────────
 SIGNALS = [
     ("China % of system sales",        "%",
@@ -169,6 +173,24 @@ print("═" * W)
 print(f"  ASML  ·  ASML Holding N.V.  ·  €{CURRENT_PRICE:.2f}  ·  Semiconductor Lithography (EUV monopoly)")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
+
+print(f"\n  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  " + "─" * (W-2))
+print(f"  {'Segment':<24}  {'FY2026E (€B)':>13}  {'Bear (€B)':>10}  {'Bull (€B)':>10}    Δ Bear    Δ Bull")
+print("  " + "─" * (W-2))
+seg_total_now  = SEG_SYSTEM_NOW + SEG_IBM_NOW
+seg_total_bear = SEG_SYSTEM_BEAR + SEG_IBM_BEAR
+seg_total_bull = SEG_SYSTEM_BULL + SEG_IBM_BULL
+print(f"  System sales (EUV+DUV)  €  {SEG_SYSTEM_NOW:>9.1f}  €  {SEG_SYSTEM_BEAR:>7.1f}  €  {SEG_SYSTEM_BULL:>7.1f}    "
+      f"{SEG_SYSTEM_BEAR-SEG_SYSTEM_NOW:>+6.1f}    {SEG_SYSTEM_BULL-SEG_SYSTEM_NOW:>+6.1f}")
+print(f"    New-tool orders — most cyclical line; China policy + AI capex are the swing factors")
+print(f"  Installed Base Mgmt     €  {SEG_IBM_NOW:>9.1f}  €  {SEG_IBM_BEAR:>7.1f}  €  {SEG_IBM_BULL:>7.1f}    "
+      f"{SEG_IBM_BEAR-SEG_IBM_NOW:>+6.1f}    {SEG_IBM_BULL-SEG_IBM_NOW:>+6.1f}")
+print(f"    Recurring service/upgrade revenue on the installed fleet — far stickier than new systems")
+print("  " + "─" * (W-2))
+print(f"  TOTAL                   €  {seg_total_now:>9.1f}  €  {seg_total_bear:>7.1f}  €  {seg_total_bull:>7.1f}    "
+      f"{seg_total_bear-seg_total_now:>+6.1f}    {seg_total_bull-seg_total_now:>+6.1f}")
+print(f"  FY2026 guidance: €43-45bn total sales, 54-56% gross margin (company guidance, Q2 2026 print)")
 
 print(f"\n  ① SIGNAL DASHBOARD")
 print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")

@@ -22,6 +22,12 @@ SCENARIOS = {
     "XBULL": (22.00, 13,  25.00, "Multi-year re-rating toward global bank peers + LatAm growth premium"),
 }
 
+# ── SEGMENT REVENUE BRIDGE (FY2026E, EUR bn) ────────────────────────────────
+SEG_EUR_NOW,  SEG_EUR_BEAR,  SEG_EUR_BULL  = 27.0, 26.0, 29.0
+SEG_SAM_NOW,  SEG_SAM_BEAR,  SEG_SAM_BULL  = 24.0, 20.0, 28.0
+SEG_NAM_NOW,  SEG_NAM_BEAR,  SEG_NAM_BULL  = 12.0, 11.0, 14.0
+SEG_DCB_NOW,  SEG_DCB_BEAR,  SEG_DCB_BULL  =  2.0,  2.0,  2.5
+
 # ── SIGNALS ───────────────────────────────────────────────────────────────────
 SIGNALS = [
     ("Underlying EPS growth YoY",      "% YoY",
@@ -169,6 +175,30 @@ print("═" * W)
 print(f"  SAN  ·  Banco Santander, S.A.  ·  ${CURRENT_PRICE:.2f}  ·  Global Retail & Commercial Banking")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
+
+print(f"\n  SEGMENT REVENUE BRIDGE  (FY2026E, group revenue  →  BEAR / BULL scenarios)")
+print("  " + "─" * (W-2))
+print(f"  {'Segment':<24}  {'FY2026E (€B)':>13}  {'Bear (€B)':>10}  {'Bull (€B)':>10}    Δ Bear    Δ Bull")
+print("  " + "─" * (W-2))
+seg_total_now  = SEG_EUR_NOW + SEG_SAM_NOW + SEG_NAM_NOW + SEG_DCB_NOW
+seg_total_bear = SEG_EUR_BEAR + SEG_SAM_BEAR + SEG_NAM_BEAR + SEG_DCB_BEAR
+seg_total_bull = SEG_EUR_BULL + SEG_SAM_BULL + SEG_NAM_BULL + SEG_DCB_BULL
+print(f"  Europe (ES/UK/PL/PT)     € {SEG_EUR_NOW:>9.1f}  €  {SEG_EUR_BEAR:>7.1f}  €  {SEG_EUR_BULL:>7.1f}    "
+      f"{SEG_EUR_BEAR-SEG_EUR_NOW:>+6.1f}    {SEG_EUR_BULL-SEG_EUR_NOW:>+6.1f}")
+print(f"    Largest region — mature, rate-sensitive, most defensive of the four")
+print(f"  South America (Brazil)   € {SEG_SAM_NOW:>9.1f}  €  {SEG_SAM_BEAR:>7.1f}  €  {SEG_SAM_BULL:>7.1f}    "
+      f"{SEG_SAM_BEAR-SEG_SAM_NOW:>+6.1f}    {SEG_SAM_BULL-SEG_SAM_NOW:>+6.1f}")
+print(f"    Brazil-dominated — highest growth AND highest credit-cycle sensitivity (widest bear/bull spread)")
+print(f"  North America (US/MX)    € {SEG_NAM_NOW:>9.1f}  €  {SEG_NAM_BEAR:>7.1f}  €  {SEG_NAM_BULL:>7.1f}    "
+      f"{SEG_NAM_BEAR-SEG_NAM_NOW:>+6.1f}    {SEG_NAM_BULL-SEG_NAM_NOW:>+6.1f}")
+print(f"    Mexico growth engine + US consumer/auto finance — building scale")
+print(f"  Digital Consumer Bank    € {SEG_DCB_NOW:>9.1f}  €  {SEG_DCB_BEAR:>7.1f}  €  {SEG_DCB_BULL:>7.1f}    "
+      f"{SEG_DCB_BEAR-SEG_DCB_NOW:>+6.1f}    {SEG_DCB_BULL-SEG_DCB_NOW:>+6.1f}")
+print(f"    Openbank + auto/consumer finance — smallest, fastest-scaling digital-native segment")
+print("  " + "─" * (W-2))
+print(f"  TOTAL                    € {seg_total_now:>9.1f}  €  {seg_total_bear:>7.1f}  €  {seg_total_bull:>7.1f}    "
+      f"{seg_total_bear-seg_total_now:>+6.1f}    {seg_total_bull-seg_total_now:>+6.1f}")
+print(f"  FY2025 actual group revenue: €62.4bn; Q2 2026 record profit €3.8bn, underlying EPS +17% YoY")
 
 print(f"\n  ① SIGNAL DASHBOARD")
 print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")

@@ -22,6 +22,12 @@ SCENARIOS = {
     "XBULL": (400,  28,  480, "Automation re-shoring wave + AI infrastructure buildout accelerates"),
 }
 
+# ── SEGMENT REVENUE BRIDGE (FY2026E, EUR bn) ────────────────────────────────
+SEG_DI_NOW,   SEG_DI_BEAR,   SEG_DI_BULL   = 21.0, 19.0, 23.0
+SEG_SI_NOW,   SEG_SI_BEAR,   SEG_SI_BULL   = 23.0, 22.0, 25.0
+SEG_MOB_NOW,  SEG_MOB_BEAR,  SEG_MOB_BULL  = 11.0, 10.5, 11.5
+SEG_HC_NOW,   SEG_HC_BEAR,   SEG_HC_BULL   = 23.0, 22.0, 23.5
+
 # ── SIGNALS ───────────────────────────────────────────────────────────────────
 SIGNALS = [
     ("Group orders growth YoY",        "% YoY",
@@ -169,6 +175,30 @@ print("═" * W)
 print(f"  SIE  ·  Siemens AG  ·  €{CURRENT_PRICE:.2f}  ·  Industrial Automation & Infrastructure")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
+
+print(f"\n  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  " + "─" * (W-2))
+print(f"  {'Segment':<24}  {'FY2026E (€B)':>13}  {'Bear (€B)':>10}  {'Bull (€B)':>10}    Δ Bear    Δ Bull")
+print("  " + "─" * (W-2))
+seg_total_now  = SEG_DI_NOW + SEG_SI_NOW + SEG_MOB_NOW + SEG_HC_NOW
+seg_total_bear = SEG_DI_BEAR + SEG_SI_BEAR + SEG_MOB_BEAR + SEG_HC_BEAR
+seg_total_bull = SEG_DI_BULL + SEG_SI_BULL + SEG_MOB_BULL + SEG_HC_BULL
+print(f"  Digital Industries      €  {SEG_DI_NOW:>9.1f}  €  {SEG_DI_BEAR:>7.1f}  €  {SEG_DI_BULL:>7.1f}    "
+      f"{SEG_DI_BEAR-SEG_DI_NOW:>+6.1f}    {SEG_DI_BULL-SEG_DI_NOW:>+6.1f}")
+print(f"    Automation + software — most order-book-sensitive to industrial capex cycles")
+print(f"  Smart Infrastructure    €  {SEG_SI_NOW:>9.1f}  €  {SEG_SI_BEAR:>7.1f}  €  {SEG_SI_BULL:>7.1f}    "
+      f"{SEG_SI_BEAR-SEG_SI_NOW:>+6.1f}    {SEG_SI_BULL-SEG_SI_NOW:>+6.1f}")
+print(f"    Grid infrastructure + data-center power — guidance just raised on strong backlog")
+print(f"  Mobility                €  {SEG_MOB_NOW:>9.1f}  €  {SEG_MOB_BEAR:>7.1f}  €  {SEG_MOB_BULL:>7.1f}    "
+      f"{SEG_MOB_BEAR-SEG_MOB_NOW:>+6.1f}    {SEG_MOB_BULL-SEG_MOB_NOW:>+6.1f}")
+print(f"    Rail infrastructure/rolling stock — longer-cycle, government-capex-linked, most stable")
+print(f"  Siemens Healthineers    €  {SEG_HC_NOW:>9.1f}  €  {SEG_HC_BEAR:>7.1f}  €  {SEG_HC_BULL:>7.1f}    "
+      f"{SEG_HC_BEAR-SEG_HC_NOW:>+6.1f}    {SEG_HC_BULL-SEG_HC_NOW:>+6.1f}")
+print(f"    Majority-owned imaging/diagnostics stake — moderate declines seen in latest quarter")
+print("  " + "─" * (W-2))
+print(f"  TOTAL                   €  {seg_total_now:>9.1f}  €  {seg_total_bear:>7.1f}  €  {seg_total_bull:>7.1f}    "
+      f"{seg_total_bear-seg_total_now:>+6.1f}    {seg_total_bull-seg_total_now:>+6.1f}")
+print(f"  FY2026 guidance: group comparable revenue growth 6-8%; record €132bn order backlog (Q3 FY2026)")
 
 print(f"\n  ① SIGNAL DASHBOARD")
 print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")

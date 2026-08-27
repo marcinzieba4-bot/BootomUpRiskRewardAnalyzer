@@ -22,6 +22,13 @@ SCENARIOS = {
     "XBULL": (680,  29,  700, "Full luxury-cycle recovery + Chinese consumer stimulus + US wealth effect"),
 }
 
+# ── SEGMENT REVENUE BRIDGE (FY2026E, EUR bn — H1 2026 actual ×2 as a simple full-year proxy) ──
+SEG_FASHION_NOW, SEG_FASHION_BEAR, SEG_FASHION_BULL = 36.2, 33.0, 39.0
+SEG_WINES_NOW,   SEG_WINES_BEAR,   SEG_WINES_BULL   =  5.2,  4.8,  5.6
+SEG_PERFUME_NOW, SEG_PERFUME_BEAR, SEG_PERFUME_BULL =  7.8,  7.8,  8.5
+SEG_WATCHES_NOW, SEG_WATCHES_BEAR, SEG_WATCHES_BULL = 10.4,  9.5, 11.5
+SEG_RETAIL_NOW,  SEG_RETAIL_BEAR,  SEG_RETAIL_BULL  = 16.8, 15.0, 18.0
+
 # ── SIGNALS ───────────────────────────────────────────────────────────────────
 SIGNALS = [
     ("Fashion & Leather Goods organic", "% YoY",
@@ -169,6 +176,33 @@ print("═" * W)
 print(f"  MC  ·  LVMH Moët Hennessy Louis Vuitton SE  ·  €{CURRENT_PRICE:.2f}  ·  Luxury Goods")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
+
+print(f"\n  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  " + "─" * (W-2))
+print(f"  {'Segment':<24}  {'FY2026E (€B)':>13}  {'Bear (€B)':>10}  {'Bull (€B)':>10}    Δ Bear    Δ Bull")
+print("  " + "─" * (W-2))
+seg_total_now  = SEG_FASHION_NOW + SEG_WINES_NOW + SEG_PERFUME_NOW + SEG_WATCHES_NOW + SEG_RETAIL_NOW
+seg_total_bear = SEG_FASHION_BEAR + SEG_WINES_BEAR + SEG_PERFUME_BEAR + SEG_WATCHES_BEAR + SEG_RETAIL_BEAR
+seg_total_bull = SEG_FASHION_BULL + SEG_WINES_BULL + SEG_PERFUME_BULL + SEG_WATCHES_BULL + SEG_RETAIL_BULL
+print(f"  Fashion & Leather Goods  € {SEG_FASHION_NOW:>9.1f}  €  {SEG_FASHION_BEAR:>7.1f}  €  {SEG_FASHION_BULL:>7.1f}    "
+      f"{SEG_FASHION_BEAR-SEG_FASHION_NOW:>+6.1f}    {SEG_FASHION_BULL-SEG_FASHION_NOW:>+6.1f}")
+print(f"    Core division (LV, Dior, Fendi) — largest segment (~47%); organic sales -9% last quarter")
+print(f"  Wines & Spirits          € {SEG_WINES_NOW:>9.1f}  €  {SEG_WINES_BEAR:>7.1f}  €  {SEG_WINES_BULL:>7.1f}    "
+      f"{SEG_WINES_BEAR-SEG_WINES_NOW:>+6.1f}    {SEG_WINES_BULL-SEG_WINES_NOW:>+6.1f}")
+print(f"    Cognac channel destocking in China/US is the key overhang on this segment")
+print(f"  Perfumes & Cosmetics     € {SEG_PERFUME_NOW:>9.1f}  €  {SEG_PERFUME_BEAR:>7.1f}  €  {SEG_PERFUME_BULL:>7.1f}    "
+      f"{SEG_PERFUME_BEAR-SEG_PERFUME_NOW:>+6.1f}    {SEG_PERFUME_BULL-SEG_PERFUME_NOW:>+6.1f}")
+print(f"    Flat organically in H1 2026 — most defensive segment of the portfolio")
+print(f"  Watches & Jewelry        € {SEG_WATCHES_NOW:>9.1f}  €  {SEG_WATCHES_BEAR:>7.1f}  €  {SEG_WATCHES_BULL:>7.1f}    "
+      f"{SEG_WATCHES_BEAR-SEG_WATCHES_NOW:>+6.1f}    {SEG_WATCHES_BULL-SEG_WATCHES_NOW:>+6.1f}")
+print(f"    Tiffany/Bulgari — best-performing segment (+9% H1), sensitive to high-net-worth wealth effect")
+print(f"  Selective Retailing      € {SEG_RETAIL_NOW:>9.1f}  €  {SEG_RETAIL_BEAR:>7.1f}  €  {SEG_RETAIL_BULL:>7.1f}    "
+      f"{SEG_RETAIL_BEAR-SEG_RETAIL_NOW:>+6.1f}    {SEG_RETAIL_BULL-SEG_RETAIL_NOW:>+6.1f}")
+print(f"    Sephora + DFS — tracks broader consumer traffic; correlated with Fashion & Leather trend")
+print("  " + "─" * (W-2))
+print(f"  TOTAL                    € {seg_total_now:>9.1f}  €  {seg_total_bear:>7.1f}  €  {seg_total_bull:>7.1f}    "
+      f"{seg_total_bear-seg_total_now:>+6.1f}    {seg_total_bull-seg_total_now:>+6.1f}")
+print(f"  H1 2026 actual revenue €38.6bn (-3% reported, +2% organic); FY2026E is a simple H1×2 proxy")
 
 print(f"\n  ① SIGNAL DASHBOARD")
 print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")

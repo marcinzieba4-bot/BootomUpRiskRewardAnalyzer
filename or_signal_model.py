@@ -22,6 +22,12 @@ SCENARIOS = {
     "XBULL": (540,  33,  560, "Beauty super-cycle + North Asia travel-retail rebound + margin expansion"),
 }
 
+# ── SEGMENT REVENUE BRIDGE (FY2026E, EUR bn) ────────────────────────────────
+SEG_CONS_NOW,  SEG_CONS_BEAR,  SEG_CONS_BULL  = 17.5, 16.5, 18.5
+SEG_LUXE_NOW,  SEG_LUXE_BEAR,  SEG_LUXE_BULL  = 14.0, 13.0, 15.5
+SEG_PROF_NOW,  SEG_PROF_BEAR,  SEG_PROF_BULL  =  5.5,  5.0,  6.0
+SEG_DERMA_NOW, SEG_DERMA_BEAR, SEG_DERMA_BULL =  6.3,  5.8,  7.0
+
 # ── SIGNALS ───────────────────────────────────────────────────────────────────
 SIGNALS = [
     ("Like-for-like sales growth",     "% YoY",
@@ -169,6 +175,30 @@ print("═" * W)
 print(f"  OR  ·  L'Oréal S.A.  ·  €{CURRENT_PRICE:.2f}  ·  Beauty & Cosmetics")
 print(f"  Verdict: {_verdict}  ·  Adj gap {adj_gap:+.2f}")
 print("═" * W)
+
+print(f"\n  SEGMENT REVENUE BRIDGE  (FY2026E  →  BEAR / BULL scenarios)")
+print("  " + "─" * (W-2))
+print(f"  {'Segment':<24}  {'FY2026E (€B)':>13}  {'Bear (€B)':>10}  {'Bull (€B)':>10}    Δ Bear    Δ Bull")
+print("  " + "─" * (W-2))
+seg_total_now  = SEG_CONS_NOW + SEG_LUXE_NOW + SEG_PROF_NOW + SEG_DERMA_NOW
+seg_total_bear = SEG_CONS_BEAR + SEG_LUXE_BEAR + SEG_PROF_BEAR + SEG_DERMA_BEAR
+seg_total_bull = SEG_CONS_BULL + SEG_LUXE_BULL + SEG_PROF_BULL + SEG_DERMA_BULL
+print(f"  Consumer Products        € {SEG_CONS_NOW:>9.1f}  €  {SEG_CONS_BEAR:>7.1f}  €  {SEG_CONS_BULL:>7.1f}    "
+      f"{SEG_CONS_BEAR-SEG_CONS_NOW:>+6.1f}    {SEG_CONS_BULL-SEG_CONS_NOW:>+6.1f}")
+print(f"    Mass-market brands (L'Oréal Paris, Garnier, Maybelline) — largest, most economically sensitive")
+print(f"  L'Oréal Luxe             € {SEG_LUXE_NOW:>9.1f}  €  {SEG_LUXE_BEAR:>7.1f}  €  {SEG_LUXE_BULL:>7.1f}    "
+      f"{SEG_LUXE_BEAR-SEG_LUXE_NOW:>+6.1f}    {SEG_LUXE_BULL-SEG_LUXE_NOW:>+6.1f}")
+print(f"    Prestige brands (YSL, Lancôme, Armani) — most exposed to China travel-retail weakness")
+print(f"  Professional Products    € {SEG_PROF_NOW:>9.1f}  €  {SEG_PROF_BEAR:>7.1f}  €  {SEG_PROF_BULL:>7.1f}    "
+      f"{SEG_PROF_BEAR-SEG_PROF_NOW:>+6.1f}    {SEG_PROF_BULL-SEG_PROF_NOW:>+6.1f}")
+print(f"    Salon channel — grew +11.6% last quarter, fastest-growing division")
+print(f"  Dermatological Beauty    € {SEG_DERMA_NOW:>9.1f}  €  {SEG_DERMA_BEAR:>7.1f}  €  {SEG_DERMA_BULL:>7.1f}    "
+      f"{SEG_DERMA_BEAR-SEG_DERMA_NOW:>+6.1f}    {SEG_DERMA_BULL-SEG_DERMA_NOW:>+6.1f}")
+print(f"    La Roche-Posay/CeraVe — grew +10.6% last quarter, strongest structural growth driver")
+print("  " + "─" * (W-2))
+print(f"  TOTAL                    € {seg_total_now:>9.1f}  €  {seg_total_bear:>7.1f}  €  {seg_total_bull:>7.1f}    "
+      f"{seg_total_bear-seg_total_now:>+6.1f}    {seg_total_bull-seg_total_now:>+6.1f}")
+print(f"  H1 2026 actual: €23.77bn sales, +6.8% LFL, record 21.3% operating margin")
 
 print(f"\n  ① SIGNAL DASHBOARD")
 print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE≥':>7}  {'BULL≥':>7}  {'XBULL≥':>7}  {'NOW':>8}  Score")
