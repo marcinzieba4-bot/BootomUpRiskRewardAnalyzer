@@ -120,6 +120,17 @@ def main():
                 skipped.append(t)
                 continue
 
+            # Methodology v2 (2026-08-28): every refreshed script must apply the
+            # EPP-distance adjustment (variable `epp_adj`) so that a large distance
+            # above the EPP panic floor penalizes the adjusted composite.
+            if "epp_adj" not in open(local_py).read():
+                print(f"  {t}: SKIP, script lacks the EPP-distance adjustment (epp_adj) — "
+                      f"methodology v2 is mandatory for refreshed models; see the nightly "
+                      f"batch prompt for the required block")
+                os.remove(local_py)
+                skipped.append(t)
+                continue
+
             try:
                 obj = s3.get_object(Bucket=BUCKET, Key=f"{PENDING_PREFIX}{t}_summary.json")
                 entry = json.loads(obj["Body"].read())

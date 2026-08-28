@@ -162,6 +162,20 @@ cons_annual_ret = cons_total_ret / 2
 sigma_1yr         = CURRENT_PRICE * VOL_ANNUAL_PCT
 sigma_needed_bear = (CURRENT_PRICE - SCENARIOS["BEAR"][2]) / sigma_1yr
 
+
+# ── EPP-DISTANCE ADJUSTMENT (methodology v2) ─────────────────────────────────
+# Distance above the panic floor = drawdown room. LOWER IS BETTER; below floor
+# is the deep-value zone. Far above the floor penalizes the composite.
+if   epp_gap_pct <=   0: epp_adj =  0.20   # below panic floor — deep value
+elif epp_gap_pct <=  40: epp_adj =  0.00   # moderate distance — neutral
+elif epp_gap_pct <= 100: epp_adj = -0.10
+elif epp_gap_pct <= 200: epp_adj = -0.20
+else:                    epp_adj = -0.30   # far above floor — large drawdown room
+adj_composite = adj_composite + epp_adj
+epp_label = ("\u2713 BELOW panic floor \u2014 deep-value zone" if epp_gap_pct <= 0
+             else "moderate distance to floor" if epp_gap_pct <= 40
+             else "\u26a0 far above floor \u2014 large drawdown room")
+
 adj_gap = adj_composite - mkt_composite
 if   adj_gap >  0.50: _verdict = "UNDERVALUED"
 elif adj_gap >  0.20: _verdict = "MODESTLY UNDERVALUED"
@@ -231,7 +245,7 @@ print(f"  Today's normalized EPS:          {CUR}{EPP_TODAY_EPS:.2f}  (FY2026E ap
 print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  [defense floor — a funded backlog converts through any sentiment cycle]")
 print(f"  {'─'*60}")
 print(f"  UPDATED EPP:                     {CUR}{epp_updated:,.0f}/share")
-print(f"  Current {CUR}{CURRENT_PRICE:,.0f} vs Updated EPP {CUR}{epp_updated:,.0f}:  {epp_gap_pct:+.0f}%  {'✓ cushion' if epp_gap_pct >= 0 else '← in distressed zone'}")
+print(f"  Current {CUR}{CURRENT_PRICE:,.0f} vs Updated EPP {CUR}{epp_updated:,.0f}:  {epp_gap_pct:+.0f}%  {epp_label}")
 print(f"  Bear {CUR}{SCENARIOS['BEAR'][2]:,} vs Updated EPP {CUR}{epp_updated:,.0f}:  {bear_vs_epp_pct:+.0f}%  {'← BEAR requires earnings impairment' if bear_vs_epp_pct < 0 else '✓ bear is cyclical repricing'}")
 
 print(f"\n  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)")
