@@ -10,9 +10,9 @@ Format: segment revenue bridge → signal dashboard → bear anatomy → CXMT th
 import math
 
 # ── CONFIG ────────────────────────────────────────────────────────────────
-CURRENT_PRICE   = 877.57    # USD (NASDAQ: MU, 2026-08-10)
-PREV_CLOSE      = 881.47
-PRICE_1WK_AGO   = 823.03    # 2026-08-03 (last refresh, post-CXMT-selloff)
+CURRENT_PRICE   = 935.39    # USD (NASDAQ: MU, 2026-08-24)
+PREV_CLOSE      = 897.77    # 2026-08-21 close
+PRICE_1WK_AGO   = 897.77   # 2026-08-17 close (near the stock's all-time high, pre-Samsung-selloff)
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 
@@ -53,7 +53,9 @@ HBM_TAM_2025_B        = 35
 HBM_TAM_2028E_B       = 100
 CXMT_Q1_DRAM_SHARE_PCT = 8.0
 MU_Q1_DRAM_SHARE_PCT   = 22.0
-CXMT_2ND_FAB_NOTE = "early-Aug reports of CXMT exploring financing for a second Beijing-area fab added fresh selling pressure"
+CXMT_2ND_FAB_NOTE = ("Aug 24 reports that Washington may let Apple source China-market memory from CXMT/YMTC reignited the "
+                      "competitive-threat narrative (analysts note the practical impact is limited to China-only Apple SKUs), "
+                      "compounding a Samsung shareholder-return disappointment that hit the whole memory sector")
 
 # ── PROXY SIGNALS ─────────────────────────────────────────────────────────
 # (name, unit, bear_value, base_floor, bull_floor, xbull_floor,
@@ -76,7 +78,7 @@ SIGNALS = [
      "CXMT's second Beijing fab comes online faster than expected"),
 
     ("Forward P/E (inverted)",          "x",
-      25.0,   18,  13,   9,   12.0, False,
+      25.0,   18,  13,   9,   12.3, False,
      "Ironically, P/E can re-rate higher even as the stock falls, if EPS falls faster"),
 
     ("Q4 guidance vs Street consensus", "/4 scale",
@@ -113,7 +115,7 @@ CONS_EXIT_PE       = 10.0   # ~12x → 10x; a modest further de-rating
 CONS_DIVIDEND_2YR  = 0.92   # $0.46/yr, cumulative 2yr
 
 # ── VOLATILITY ───────────────────────────────────────────────────────────────
-VOL_52W_LOW      = 113.46
+VOL_52W_LOW      = 114.25
 VOL_52W_HIGH     = 1255.00
 VOL_ANNUAL_PCT   = 0.55    # very high vol; cyclical semiconductor at a cycle extreme
 VOL_BETA         = 1.75
@@ -125,7 +127,7 @@ VOL_1WK_PCT      = (CURRENT_PRICE - PRICE_1WK_AGO) / PRICE_1WK_AGO * 100
 ANALYST_AVG_TARGET   = 1502.0   # ~46 analysts, Strong Buy consensus
 ANALYST_LOW_TARGET   = 361.0
 ANALYST_HIGH_TARGET  = 2200.0
-ANALYST_NOTE = "Citi cut its target to $1,150 on Aug 7 (still Buy); Mizuho raised to $1,375, Arete to $1,500, Itau BBA to $1,697 — sentiment still bullish despite the CXMT overhang"
+ANALYST_NOTE = "New Street's Ferragu upgraded to Buy (from Neutral) with a $1,250 target on Aug 20, arguing AI demand is breaking the old memory boom-bust framework; Goldman Sachs remains the bearish outlier at Neutral/$900, flagging a possible FY2027 cyclical peak — sentiment still net-bullish despite the Apple/CXMT-sourcing and Samsung-payout headlines"
 
 # ── SCORING ───────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
@@ -204,6 +206,20 @@ upside_pct   = (SCENARIOS["BULL"][2] - CURRENT_PRICE) / CURRENT_PRICE * 100
 ratio_b      = downside_pct / upside_pct
 
 fwd_pe = CURRENT_PRICE / FY2026E_EPS
+
+
+# ── EPP-DISTANCE ADJUSTMENT (methodology v2) ─────────────────────────────────
+# Distance above the panic floor = drawdown room. LOWER IS BETTER; below floor
+# is the deep-value zone. Far above the floor penalizes the composite.
+if   epp_gap_pct <=   0: epp_adj =  0.20   # below panic floor — deep value
+elif epp_gap_pct <=  40: epp_adj =  0.00   # moderate distance — neutral
+elif epp_gap_pct <= 100: epp_adj = -0.10
+elif epp_gap_pct <= 200: epp_adj = -0.20
+else:                    epp_adj = -0.30   # far above floor — large drawdown room
+adj_composite = adj_composite + epp_adj
+epp_label = ("\u2713 BELOW panic floor \u2014 deep-value zone" if epp_gap_pct <= 0
+             else "moderate distance to floor" if epp_gap_pct <= 40
+             else "\u26a0 far above floor \u2014 large drawdown room")
 
 adj_gap = adj_composite - mkt_composite
 if   adj_gap >  0.50: _verdict = "UNDERVALUED"
@@ -321,9 +337,9 @@ print(f"  {'─'*60}")
 print(f"  Conservative 2yr total:      ${cons_price_2yr + CONS_DIVIDEND_2YR:.2f}  "
       f"({'▲' if cons_total_ret >= 0 else '▼'}{abs(cons_price_2yr + CONS_DIVIDEND_2YR - CURRENT_PRICE):.2f} from ${CURRENT_PRICE:.2f})")
 print(f"  Conservative total return:   {cons_total_ret:+.1f}% over 2yr  =  {cons_annual_ret:+.1f}%/yr")
-print(f"\n  THE HONEST READ: at ${PRICE_1WK_AGO:.0f} a week ago the conservative case still cleared a small")
-print(f"  positive return; at ${CURRENT_PRICE:.2f} today it has flipped modestly negative — the rally has")
-print(f"  eaten the margin of safety in the base case. The real risk isn't a modest EPS decline — it's")
+print(f"\n  THE HONEST READ: at ${PRICE_1WK_AGO:.0f} a week ago — near the stock's all-time high — the conservative")
+print(f"  case was solidly negative; this week's pullback to ${CURRENT_PRICE:.2f} has narrowed that gap but the")
+print(f"  case still doesn't clear its cost of capital. The real risk isn't a modest EPS decline — it's")
 print(f"  the full-cycle-reversal BEAR case, where CXMT-driven oversupply pushes margins toward the 30s.")
 
 # ── ⑤ VOLATILITY CONTEXT ─────────────────────────────────────────────────────
@@ -331,7 +347,8 @@ print(f"\n  ⑤ VOLATILITY CONTEXT")
 print("  " + "─" * (W-2))
 print(f"  52-week range:        ${VOL_52W_LOW:.2f}  –  ${VOL_52W_HIGH:.2f}  "
       f"(stock at {pct_of_52w_range:.0f}th pct of 52W range)")
-print(f"  Recent moves:          {VOL_1DAY_PCT:+.1f}% (1-day) / {VOL_1WK_PCT:+.1f}% (1-week, recovering off the CXMT selloff)")
+print(f"  Recent moves:          {VOL_1DAY_PCT:+.1f}% (1-day) / {VOL_1WK_PCT:+.1f}% (1-week, pulling back from last week's "
+      f"near-all-time-high run on the Samsung-payout and Apple/CXMT-sourcing headlines)")
 print(f"  Annual dividend:      ${VOL_DIVIDEND:.2f}/share  (yield {VOL_DIVIDEND/CURRENT_PRICE*100:.2f}%; "
       f"a small, recently reinstated payout)")
 print(f"  Realized vol (1yr):   {VOL_ANNUAL_PCT*100:.0f}%  (high — typical for cyclical memory semis, "
@@ -343,7 +360,7 @@ print(f"  Bear ${SCENARIOS['BEAR'][2]} requires:  ~{sigma_needed_bear:.1f}σ dra
       f"(large but well within Micron's own historical cycle-crash range)")
 print(f"  Analyst consensus: avg target ${ANALYST_AVG_TARGET:.0f} (Strong Buy, ~46 analysts), "
       f"range ${ANALYST_LOW_TARGET:.0f}-${ANALYST_HIGH_TARGET:.0f}. {ANALYST_NOTE}.")
-print(f"  → Q4 FY2026 print (late Sept) is the next test of whether pricing power holds through the CXMT headlines.")
+print(f"  → Q4 FY2026 print (Sept 29, after the close) is the next test of whether pricing power holds through the CXMT headlines.")
 print(f"  → CXMT capacity ramp and Chinese DRAM ASPs are the leading indicators to watch between prints.")
 
 # ── ⑥ SCENARIO PROBABILITIES ─────────────────────────────────────────────────
