@@ -147,6 +147,10 @@ def main():
                 skipped.append(t)
                 continue
 
+            if entry.get("signal_short") in ("HOLD/TRIM", "TRIM"):
+                entry["signal_short"] = "HOLD"
+                print(f"  {t}: signal_short normalized to 'HOLD'")
+
             normalized_sg, sg_changed = normalize_sector_group(entry.get("sector_group"))
             if normalized_sg is None:
                 print(f"  {t}: SKIP, sector_group {entry.get('sector_group')!r} is not a "
