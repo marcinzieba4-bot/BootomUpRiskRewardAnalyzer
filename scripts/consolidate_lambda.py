@@ -25,6 +25,7 @@ import zipfile
 import boto3
 
 from sector_groups import normalize_sector_group
+from quality_classify import enrich as quality_enrich
 
 BUCKET = "s3bucketmz"
 PENDING_PREFIX = "lambda-src/pending/"
@@ -176,6 +177,27 @@ def main():
 
             models[t] = f"{tl}_signal_model.py"
             summary[t] = {k: entry[k] for k in REQUIRED_SUMMARY_FIELDS}
+            summary[t]["ticker"] = t
+
+            # Quality × price classification (scripts/quality_classify.py): the
+            # refresh routine still emits the legacy BUY/ACCUMULATE/... tier; the
+            # site shows the two-axis class instead.  Enrich the Lambda summary
+            # entry (so the 07:00 regen keeps it) and write through to the site
+            # JSON (so the page shows it before the regen).
+            quality_enrich(summary[t])
+            try:
+                site_key = f"veerock-signals/{t}.json"
+                site_obj = s3.get_object(Bucket=BUCKET, Key=site_key)
+                site_json = json.loads(site_obj["Body"].read())
+                if site_json.get("signal_short") != summary[t]["signal_short"] or "quality_class" not in site_json:
+                    quality_enrich(site_json)
+                    s3.put_object(Bucket=BUCKET, Key=site_key,
+                                   Body=json.dumps(site_json, ensure_ascii=False),
+                                   ContentType="application/json")
+                    print(f"  {t}: site JSON classified as {site_json['signal_short']}")
+            except Exception as e:
+                print(f"  {t}: WARNING, could not write-through quality class to S3 site JSON: {e}")
+            print(f"  {t}: class {summary[t]['signal_short']} (model tier {summary[t].get('legacy_signal_short')})")
             merged.append(t)
             print(f"  {t}: OK, merged (price={entry.get('price')}, date={entry.get('date')})")
 
@@ -185,6 +207,9 @@ def main():
 
         json.dump(models, open(models_path, "w", encoding="utf-8"), ensure_ascii=False)
         json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False)
+        # ship the classifier alongside the models so the package is self-describing
+        shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "quality_classify.py"),
+                    os.path.join(extract_dir, "quality_classify.py"))
 
         deploy_zip_path = os.path.join(workdir, "deploy.zip")
         with zipfile.ZipFile(deploy_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
