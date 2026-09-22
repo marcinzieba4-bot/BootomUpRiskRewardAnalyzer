@@ -717,6 +717,14 @@ def apply_s3(dry=False):
     finally:
         shutil.rmtree(work, ignore_errors=True)
 
+    if not dry and os.path.exists(PROFILES_PATH):
+        try:
+            with open(PROFILES_PATH, encoding="utf-8") as fh:
+                s3.put_object(Bucket=BUCKET, Key="veerock-site/config/business_profiles.json",
+                              Body=fh.read().encode("utf-8"), ContentType="application/json")
+            print("profiles mirrored to s3://s3bucketmz/veerock-site/config/business_profiles.json")
+        except Exception as e:
+            print(f"WARNING: could not mirror profiles to S3: {e}")
     if changed and not dry:
         cf.create_invalidation(DistributionId=DIST, InvalidationBatch={
             "Paths": {"Quantity": 1, "Items": ["/veerock-signals/*"]},

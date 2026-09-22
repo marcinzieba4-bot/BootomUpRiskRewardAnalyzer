@@ -34,7 +34,7 @@
   "ACN": {
    "kind": "AI_EXPOSED",
    "risk": 3,
-   "why": "Accenture: GenAI can deflate IT-services pricing and seat counts; also the delivery partner for it",
+   "why": "Accenture: GenAI deflates IT-services pricing and billable seats - falling job listings and the Accenture Edge signal point to softening large-enterprise demand - while Accenture is also the delivery partner for the same buildout ($1B/5yr Anthropic partnership)",
    "reviewed": "2026-09-22"
   },
   "AD": {
@@ -188,9 +188,9 @@
    "reviewed": "2026-09-22"
   },
   "BKNG": {
-   "kind": "DURABLE",
-   "risk": 2,
-   "why": "Booking: OTA leader; AI agents could disintermediate over time",
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Booking: hotel aggregation plus paid-search distribution is the exact layer an agentic travel assistant replaces; travel demand is fine yet the stock sits in the bottom quartile of its range, so the discount is the AI-disintermediation debate, not the cycle",
    "reviewed": "2026-09-22"
   },
   "BKR": {
@@ -292,7 +292,7 @@
   "CMCSA": {
    "kind": "STRUCTURAL",
    "risk": 3,
-   "why": "Cable broadband losing subscribers to fixed-wireless/fiber; parks/NBCU diversify but core is in slow decline",
+   "why": "Comcast: broadband subscriber losses to fixed-wireless and fiber with management itself calling fiber pricing 'irrational' and guiding no Q3 improvement; parks/NBCU diversify but the connectivity core is in price-led decline",
    "reviewed": "2026-09-22"
   },
   "CMG": {
@@ -446,9 +446,9 @@
    "reviewed": "2026-09-22"
   },
   "EL": {
-   "kind": "DURABLE",
-   "risk": 2,
-   "why": "EssilorLuxottica: lens/frames near-monopoly; Ray-Ban Meta optionality, Apple eyewear risk",
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "Estee Lauder: prestige brands (La Mer, MAC, Jo Malone) intact but earnings still broken - TTM GAAP EPS negative on PRGP restructuring and FY2027 guide of $3.10-3.35 sits far under the old ~$8 power, so the EPP floor is unreliable",
    "reviewed": "2026-09-22"
   },
   "ELV": {
@@ -628,7 +628,7 @@
   "INTU": {
    "kind": "AI_EXPOSED",
    "risk": 3,
-   "why": "Intuit: TurboTax/QuickBooks; AI tax-prep and AI bookkeeping are direct substitution risks, growth reset to 9-10%",
+   "why": "Intuit: AI substitution has spread past TurboTax into the QuickBooks/Global Business Solutions core (JPMorgan cut to Neutral, $605 -> $331), against a reaffirmed FY2027 guide of 9-10% growth",
    "reviewed": "2026-09-22"
   },
   "ISP": {
@@ -910,7 +910,7 @@
   "ORCL": {
    "kind": "DURABLE",
    "risk": 3,
-   "why": "Oracle: AI beneficiary (OCI/RPO) financed with debt + equity; BBB- credit, execution risk, not an AI victim",
+   "why": "Oracle: $664B RPO and OCI ramp make it an AI beneficiary, not an AI victim; the risk is the funding - BBB- credit, $125B+ debt and negative FCF paying for the buildout",
    "reviewed": "2026-09-22"
   },
   "ORLY": {
@@ -950,9 +950,9 @@
    "reviewed": "2026-09-22"
   },
   "PFE": {
-   "kind": "STRUCTURAL",
+   "kind": "DURABLE",
    "risk": 3,
-   "why": "Pfizer: Eliquis/Ibrance LOE cliff, post-COVID reset; 6% yield",
+   "why": "Pfizer: the 2028 Eliquis/Ibrance cliff is real, but unlike the structurally challenged names it has a named offset the model credits - the Seagen ADC oncology platform carries the 53% bull case - so this is a patent cycle to underwrite, not secular decline",
    "reviewed": "2026-09-22"
   },
   "PG": {
@@ -1030,7 +1030,7 @@
   "QCOM": {
    "kind": "CYCLICAL",
    "risk": 3,
-   "why": "Qualcomm: handset decline (Apple exit) vs auto/data-center diversification",
+   "why": "Qualcomm: Apple modem in-sourcing is now confirmed worse than modelled (socket share well below 20%, Apple revenue guided ~-50% sequentially, QCT handset -20% YoY) against auto +61% YoY at a $7B exit run-rate and the AWS inference deal",
    "reviewed": "2026-09-22"
   },
   "RACE": {
@@ -1082,9 +1082,9 @@
    "reviewed": "2026-09-22"
   },
   "SBUX": {
-   "kind": "TURNAROUND",
+   "kind": "DURABLE",
    "risk": 2,
-   "why": "Starbucks: brand intact, US traffic turnaround under way, priced for success",
+   "why": "Starbucks: two straight quarters of US traffic growth (+7.1% US / +7.9% global comps) end the two-year decline - the Niccol turnaround has worked, so the franchise is back to being valued on price, not repair",
    "reviewed": "2026-09-22"
   },
   "SCHW": {
@@ -1252,7 +1252,7 @@
   "UPS": {
    "kind": "DURABLE",
    "risk": 3,
-   "why": "UPS: parcel network; Amazon volume glide-down and margin reset",
+   "why": "UPS: the Amazon glide-down is a chosen volume exit and margin reset rather than lost demand, but it leaves a network sized for parcels that are no longer there while the ground franchise itself stays durable",
    "reviewed": "2026-09-22"
   },
   "UST": {
@@ -1280,9 +1280,9 @@
    "reviewed": "2026-09-22"
   },
   "VOW3": {
-   "kind": "TURNAROUND",
+   "kind": "STRUCTURAL",
    "risk": 3,
-   "why": "Volkswagen: deepest restructuring in its history; China share loss, tariffs",
+   "why": "Volkswagen: China share loss is simultaneous across VW, Audi and Porsche and is not coming back, on top of a EUR4-5bn annual tariff burden with no negotiating leverage and a poor CARIAD/EV record - the earnings base is permanently lower, not cyclically depressed",
    "reviewed": "2026-09-22"
   },
   "VRTX": {
@@ -1305,8 +1305,8 @@
   },
   "WBD": {
    "kind": "SPECIAL",
-   "risk": 3,
-   "why": "Warner Bros Discovery: Paramount Skydance cash deal, trades on close probability",
+   "risk": 2,
+   "why": "Warner Bros Discovery: Paramount Skydance $31.00 cash deal; the Sept 21 antitrust settlement with 12 state AGs removed the main break risk ahead of the Oct 1 ticking-fee trigger, so this now trades on timing rather than on close probability",
    "reviewed": "2026-09-22"
   },
   "WEC": {

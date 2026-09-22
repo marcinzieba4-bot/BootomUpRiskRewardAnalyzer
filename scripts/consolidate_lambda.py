@@ -88,6 +88,14 @@ def main():
 
     print(f"Found {len(tickers)} pending tickers: {tickers}")
 
+    # Durability profiles: take the newest copy (the daily review routine may
+    # have updated S3 without its git push landing) before re-classifying.
+    try:
+        import sync_profiles
+        sync_profiles.pull()
+    except Exception as e:
+        print(f"WARNING: could not pull business profiles from S3: {e}")
+
     workdir = tempfile.mkdtemp(prefix="lambda_consolidate_")
     try:
         try:
