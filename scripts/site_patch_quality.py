@@ -42,6 +42,9 @@ LEGEND_NOTE = {
     "TOO MUCH CYCLE RISK": "Cyclical × rich",
     "CHEAP, BUT STRUCTURAL RISK": "Structural × cheap",
     "STRUCTURAL RISK, NOT CHEAP": "Structural × fair/rich",
+    "AI-FEAR BASKET": "AI-exposed × cheap",
+    "AI-EXPOSED, NEUTRALLY VALUED": "AI-exposed × fair",
+    "AI-EXPOSED, NOT CHEAP": "AI-exposed × rich",
     "TURNAROUND BET": "Broken earnings, intact franchise",
     "SPECIAL SITUATION": "Deal, binary or bond",
 }
@@ -116,17 +119,27 @@ OLD_LEGEND_HTML = (
 )
 
 
-def replace_once(path, old, new, label):
+import re
+
+
+def replace_once(path, old, new, label, prev=None):
+    """Replace `old` with `new` exactly once.  `prev` is a regex matching an
+    earlier generated form of the same block, so re-running after CLASSES
+    changed upgrades it in place."""
     with open(path, encoding="utf-8") as fh:
         s = fh.read()
-    n = s.count(old)
-    if n == 0 and s.count(new) >= 1:
+    if s.count(new) >= 1:
         print(f"  {label}: already patched")
         return
-    if n != 1:
+    n = s.count(old)
+    if n == 1:
+        s = s.replace(old, new)
+    elif prev and len(re.findall(prev, s, flags=re.S)) == 1:
+        s = re.sub(prev, lambda m: new, s, count=1, flags=re.S)
+    else:
         sys.exit(f"  {label}: expected exactly 1 occurrence in {path}, found {n}")
     with open(path, "w", encoding="utf-8") as fh:
-        fh.write(s.replace(old, new))
+        fh.write(s)
     print(f"  {label}: patched")
 
 
@@ -141,15 +154,20 @@ def main():
         sys.exit(f"could not locate chunks: {chunk} {detail}")
     new_chips = "[" + ",".join(js_str(k) for k in CLASSES) + "].map(e=>{let t=a[e];"
     print(chunk[0])
-    replace_once(chunk[0], OLD_MAP, badge_map_js(), "badge map")
-    replace_once(chunk[0], OLD_LEGEND, legend_js(), "legend")
-    replace_once(chunk[0], OLD_CHIPS, new_chips, "sector chips")
+    replace_once(chunk[0], OLD_MAP, badge_map_js(), "badge map",
+                 prev=r'let n=\{"COMPOUNDER AT LOW PRICE":\{.*?"ACQUIRED":\{[^}]*\}\}')
+    replace_once(chunk[0], OLD_LEGEND, legend_js(), "legend",
+                 prev=r'\[\{label:"◉ COMPOUNDER AT LOW PRICE".*?cls:"text-blue-700"\}\](?=\.map)')
+    replace_once(chunk[0], OLD_CHIPS, new_chips, "sector chips",
+                 prev=r'\["COMPOUNDER AT LOW PRICE",.*?\]\.map\(e=>\{let t=a\[e\];')
     print(detail[0])
-    replace_once(detail[0], OLD_DETAIL, detail_map_js(), "detail badge map")
+    replace_once(detail[0], OLD_DETAIL, detail_map_js(), "detail badge map",
+                 prev=r'let i=\{"COMPOUNDER AT LOW PRICE":".*?"ACQUIRED":"[^"]*"\}')
     for page in ("research/index.html", "signals/index.html"):
         p = os.path.join(site, page)
         print(p)
-        replace_once(p, OLD_LEGEND_HTML, legend_html(), "SSR legend")
+        replace_once(p, OLD_LEGEND_HTML, legend_html(), "SSR legend",
+                     prev=r'<div class="p-3 rounded-lg bg-vr-surface"><div class="font-mono font-bold text-sm mb-1 text-green-700">◉ COMPOUNDER AT LOW PRICE</div>.*?SPECIAL SITUATION</div>.*?</div></div>')
     print("done")
 
 

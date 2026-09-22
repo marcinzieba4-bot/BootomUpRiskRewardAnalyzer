@@ -208,8 +208,11 @@ def main():
         json.dump(models, open(models_path, "w", encoding="utf-8"), ensure_ascii=False)
         json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False)
         # ship the classifier alongside the models so the package is self-describing
-        shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "quality_classify.py"),
-                    os.path.join(extract_dir, "quality_classify.py"))
+        here = os.path.dirname(os.path.abspath(__file__))
+        shutil.copy(os.path.join(here, "quality_classify.py"), os.path.join(extract_dir, "quality_classify.py"))
+        profiles = os.path.join(here, "..", "data", "business_profiles.json")
+        if os.path.exists(profiles):
+            shutil.copy(profiles, os.path.join(extract_dir, "business_profiles.json"))
 
         deploy_zip_path = os.path.join(workdir, "deploy.zip")
         with zipfile.ZipFile(deploy_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:

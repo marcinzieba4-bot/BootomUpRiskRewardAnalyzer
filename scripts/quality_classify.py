@@ -31,8 +31,14 @@ two-axis taxonomy:
       TOO MUCH CYCLE RISK              CYCLICAL   × RICH         red
       CHEAP, BUT STRUCTURAL RISK       STRUCTURAL × CHEAP        blue
       STRUCTURAL RISK, NOT CHEAP       STRUCTURAL × FAIR/RICH    red
+      AI-FEAR BASKET                   AI_EXPOSED × CHEAP        amber
+      AI-EXPOSED, NEUTRALLY VALUED     AI_EXPOSED × FAIR         blue
+      AI-EXPOSED, NOT CHEAP            AI_EXPOSED × RICH         red
       TURNAROUND BET                   TURNAROUND × CHEAP/FAIR   blue
       SPECIAL SITUATION                SPECIAL    × any          blue
+
+  Durability profiles live in data/business_profiles.json and are reviewed
+  daily by a strong-model routine; the dict in this file is only the seed.
 
 Usage
   python3 scripts/quality_classify.py --local DIR        classify JSONs in DIR, print table
@@ -57,7 +63,7 @@ import sys
 # (existential), one-line reason.  Hand-curated; keep in sync when tickers
 # are added to coverage.  Unknown tickers fall back to DURABLE/3 with a note.
 # ─────────────────────────────────────────────────────────────────────────────
-D, C, S, T, X = "DURABLE", "CYCLICAL", "STRUCTURAL", "TURNAROUND", "SPECIAL"
+D, C, S, T, X, A = "DURABLE", "CYCLICAL", "STRUCTURAL", "TURNAROUND", "SPECIAL", "AI_EXPOSED"
 
 BUSINESS_PROFILES = {
     # ── Finance ──────────────────────────────────────────────────────────────
@@ -127,36 +133,36 @@ BUSINESS_PROFILES = {
     "WBD":  (X, 3, "Warner Bros Discovery: Paramount Skydance cash deal, trades on close probability"),
     # ── Technology ───────────────────────────────────────────────────────────
     "AAPL": (D, 1, "Apple ecosystem; memory-cost margin question is cyclical, not structural"),
-    "ACN":  (D, 3, "Accenture: GenAI can deflate IT-services pricing; also the delivery partner for it"),
-    "ADBE": (D, 3, "Adobe: creative-suite moat vs generative-AI substitution; CEO seat vacant"),
+    "ACN":  (A, 3, "Accenture: GenAI can deflate IT-services pricing and seat counts; also the delivery partner for it"),
+    "ADBE": (A, 3, "Adobe: creative-suite moat vs generative-AI substitution (Sora/Midjourney/Canva); CEO seat vacant"),
     "ADYEN":(D, 2, "Adyen: single-platform payments, 20%+ growth, net cash"),
     "AMD":  (C, 2, "AMD: AI/data-center GPU ramp; semis cycle and valuation risk"),
     "ASML": (C, 1, "ASML: EUV monopoly; earnings ride the semi-capex cycle and China policy"),
     "AVGO": (D, 2, "Broadcom: custom AI silicon + VMware software; semi cycle exposure"),
-    "CRM":  (D, 3, "Salesforce: CRM leader; agentic AI could compress per-seat pricing"),
+    "CRM":  (A, 3, "Salesforce: CRM leader; agentic AI compresses per-seat pricing, Agentforce is the counter-bet"),
     "CSCO": (D, 2, "Cisco: networking incumbent with AI-infrastructure order book"),
-    "GOOGL":(D, 2, "Alphabet: search cash machine + cloud; AI-search cannibalisation is the debate"),
-    "IBM":  (D, 3, "IBM: consulting + software + mainframe; slow-growth, AI both threat and driver"),
+    "GOOGL":(A, 2, "Alphabet: search cash machine + cloud; AI-search cannibalisation is the debate, Gemini/TPU the counter-bet"),
+    "IBM":  (A, 3, "IBM: consulting + software + mainframe; consulting is the AI-deflation exposure"),
     "IFX":  (C, 2, "Infineon: power/auto semis; auto cycle and Chinese competition"),
     "INTC": (T, 4, "Intel: foundry turnaround with government stake; execution unproven, 5x run"),
-    "INTU": (D, 3, "Intuit: TurboTax/QuickBooks; growth reset to 9-10%, AI-tax risk"),
+    "INTU": (A, 3, "Intuit: TurboTax/QuickBooks; AI tax-prep and AI bookkeeping are direct substitution risks, growth reset to 9-10%"),
     "LRCX": (C, 1, "Lam Research: etch/deposition leader; WFE cycle"),
     "META": (D, 2, "Meta: ad engine healthy; capex/FCF trajectory is the swing"),
     "MRVL": (C, 2, "Marvell: custom AI silicon; hyperscaler capex cycle, priced for a ramp"),
     "MSFT": (D, 1, "Microsoft: Azure + M365 + OpenAI; capex intensity is the only real debate"),
     "MU":   (C, 2, "Micron: HBM/DRAM; memory cycle at a record, CXMT competition"),
     "NFLX": (D, 2, "Netflix: scaled streaming leader with ads flywheel"),
-    "NOW":  (D, 3, "ServiceNow: workflow platform; agentic AI vs per-seat licensing unresolved"),
+    "NOW":  (A, 3, "ServiceNow: workflow platform; agentic AI vs per-seat licensing unresolved"),
     "NVDA": (C, 2, "Nvidia: AI compute leader; demand is a capex cycle, China conceded"),
-    "ORCL": (D, 3, "Oracle: OCI/AI backlog financed with debt + equity; BBB- credit, execution risk"),
+    "ORCL": (D, 3, "Oracle: AI beneficiary (OCI/RPO) financed with debt + equity; BBB- credit, execution risk, not an AI victim"),
     "PANW": (D, 2, "Palo Alto: security platform consolidator; growth decelerating to 20s"),
     "PLTR": (D, 3, "Palantir: exceptional growth, extreme multiple; enterprise AI durability unproven"),
     "PRX":  (D, 2, "Prosus: Tencent stake + profitable e-commerce ecosystems at a NAV discount"),
     "QCOM": (C, 3, "Qualcomm: handset decline (Apple exit) vs auto/data-center diversification"),
-    "SAP":  (D, 2, "SAP: ERP incumbent with cloud backlog; AI-agent rollout pace is the debate"),
+    "SAP":  (A, 2, "SAP: ERP incumbent with cloud backlog; system-of-record is sticky, AI-agent layer is the debate"),
     "TXN":  (C, 1, "Texas Instruments: analog leader; industrial/auto semi cycle, capex-heavy"),
-    "UBER": (D, 3, "Uber: mobility platform; autonomous vehicles are both partner and threat"),
-    "WKL":  (D, 3, "Wolters Kluwer: information services; AI-disruption fear vs proven renewals"),
+    "UBER": (A, 3, "Uber: mobility platform; autonomous vehicles (Waymo/Tesla) are both partner and existential threat"),
+    "WKL":  (A, 3, "Wolters Kluwer: professional information services; AI-disruption fear vs proven renewals"),
     # ── Industrials ──────────────────────────────────────────────────────────
     "AI":   (D, 1, "Air Liquide: industrial-gas oligopoly, take-or-pay contracts"),
     "AIR":  (D, 1, "Airbus: aircraft duopoly with 9,000+ backlog; delivery pace is the swing"),
@@ -302,8 +308,46 @@ BUSINESS_PROFILES = {
 
 KIND_LABEL = {
     D: "durable franchise", C: "cyclical", S: "structurally challenged",
-    T: "turnaround", X: "special situation",
+    T: "turnaround", X: "special situation", A: "AI-exposed franchise",
 }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Profiles live in data/business_profiles.json (kind, risk, why, reviewed,
+# ai_exposure).  The dict above is the seed/fallback; the JSON is the source
+# of truth and is maintained by the daily classification-review routine.
+# ─────────────────────────────────────────────────────────────────────────────
+PROFILES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "business_profiles.json")
+if not os.path.exists(PROFILES_PATH):
+    PROFILES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "business_profiles.json")
+
+
+def load_profiles():
+    """Return {ticker: (kind, risk, why)} from the JSON file, falling back to the seed dict."""
+    try:
+        with open(PROFILES_PATH, encoding="utf-8") as fh:
+            raw = json.load(fh)
+        out = {}
+        for t, p in raw.get("profiles", raw).items():
+            if isinstance(p, dict):
+                out[t.upper()] = (p["kind"], int(p["risk"]), p["why"])
+        if out:
+            return out
+    except (OSError, ValueError, KeyError):
+        pass
+    return dict(BUSINESS_PROFILES)
+
+
+def dump_seed_profiles(path):
+    """Write the built-in seed dict as the JSON file (one-off bootstrap)."""
+    raw = {"_doc": "Business-durability profiles used by scripts/quality_classify.py. kind: DURABLE | CYCLICAL | "
+                   "STRUCTURAL | TURNAROUND | SPECIAL | AI_EXPOSED. risk: obsolescence risk 1 (very low) .. 5 "
+                   "(existential). reviewed: date of the last model review. Maintained by the daily "
+                   "'VeeRock daily classification review + coverage summary' routine.",
+           "profiles": {t: {"kind": k, "risk": r, "why": w, "reviewed": "2026-09-22"}
+                        for t, (k, r, w) in sorted(BUSINESS_PROFILES.items())}}
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(raw, fh, ensure_ascii=False, indent=1)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Classes.  key == signal_short on the site, label == badge text.
@@ -326,6 +370,12 @@ CLASSES = {
         desc="Statistically cheap, but the business faces a live structural threat"),
     "STRUCTURAL RISK, NOT CHEAP":     dict(icon="✕", color="#f87171", tone="red",
         desc="Structural threat and no valuation support"),
+    "AI-FEAR BASKET":                 dict(icon="◎", color="#f0b429", tone="amber",
+        desc="Cheap because the market prices AI disruption; the numbers keep refusing it. Own as a basket"),
+    "AI-EXPOSED, NEUTRALLY VALUED":   dict(icon="◐", color="#60a5fa", tone="blue",
+        desc="Live AI-disruption debate at a fair price; wait for the discount"),
+    "AI-EXPOSED, NOT CHEAP":          dict(icon="✕", color="#f87171", tone="red",
+        desc="Live AI-disruption debate and no valuation support"),
     "TURNAROUND BET":                 dict(icon="◐", color="#60a5fa", tone="blue",
         desc="Franchise intact, earnings broken; pay for the recovery, not the floor"),
     "SPECIAL SITUATION":              dict(icon="◐", color="#60a5fa", tone="blue",
@@ -449,18 +499,33 @@ def price_state(rb, epp, adj, cons, verdict):
     return "CHEAP" if cheap else "FAIR"
 
 
+_TIER_RE = re.compile(r"[◉◎◐▷✕]\s*(BUY|ACCUMULATE|WATCHLIST|HOLD/TRIM|HOLD|TRIM|AVOID)\b")
+
+
+def legacy_tier(entry):
+    """The model's own BUY/ACCUMULATE/... tier: explicit field, else recovered from the narrative."""
+    for k in ("legacy_signal_short", "signal_short"):
+        v = entry.get(k)
+        if v in LEGACY_TIERS:
+            return "HOLD" if v in ("HOLD/TRIM", "TRIM") else v
+    txt = (entry.get("summary") or "") + "\n" + (entry.get("report") or "")[:600]
+    m = _TIER_RE.search(txt)
+    if m:
+        v = m.group(1)
+        return "HOLD" if v in ("HOLD/TRIM", "TRIM") else v
+    return ""
+
+
 def classify(entry):
     """Return the quality dict for one ticker entry (does not mutate)."""
     t = entry.get("ticker", "").upper()
-    kind, risk, why = BUSINESS_PROFILES.get(t, (D, 3, "no curated profile yet — treated as durable/neutral"))
+    kind, risk, why = load_profiles().get(t, (D, 3, "no curated profile yet — treated as durable/neutral"))
     rb = parse_ratio_b(entry)
     epp = _num(entry.get("epp_gap_pct"))
     adj = parse_adj_gap(entry)
     cons = parse_cons_return(entry)
     verdict = parse_verdict(entry)
-    legacy = entry.get("legacy_signal_short") or entry.get("signal_short") or ""
-    if legacy not in LEGACY_TIERS:
-        legacy = entry.get("legacy_signal_short") or ""
+    legacy = legacy_tier(entry)
 
     if legacy == "ACQUIRED" or kind == X:
         ps = price_state(rb, epp, adj, cons, verdict)
@@ -475,6 +540,9 @@ def classify(entry):
                    "RICH": "TOO MUCH CYCLE RISK"}[ps]
         elif kind == S:
             key = "CHEAP, BUT STRUCTURAL RISK" if ps == "CHEAP" else "STRUCTURAL RISK, NOT CHEAP"
+        elif kind == A:
+            key = {"CHEAP": "AI-FEAR BASKET", "FAIR": "AI-EXPOSED, NEUTRALLY VALUED",
+                   "RICH": "AI-EXPOSED, NOT CHEAP"}[ps]
         else:  # TURNAROUND
             key = "TURNAROUND BET" if ps != "RICH" else "STRUCTURAL RISK, NOT CHEAP"
 
@@ -510,10 +578,13 @@ _LEAD_RE = re.compile(
 def enrich(entry):
     """Mutate entry: add quality_* fields, move the legacy tier aside, and make
     signal / signal_short / signal_color carry the new class.  Idempotent."""
-    if entry.get("signal_short") in LEGACY_TIERS or "legacy_signal_short" not in entry:
-        if entry.get("signal_short") in LEGACY_TIERS:
-            entry["legacy_signal_short"] = entry["signal_short"]
-            entry["legacy_signal"] = entry.get("signal", "")
+    if entry.get("signal_short") in LEGACY_TIERS:
+        entry["legacy_signal_short"] = entry["signal_short"]
+        entry["legacy_signal"] = entry.get("signal", "")
+    elif not entry.get("legacy_signal_short"):
+        lt = legacy_tier(entry)
+        if lt:
+            entry["legacy_signal_short"] = lt
     q = classify(entry)
     for k, v in q.items():
         if not k.startswith("_"):
@@ -523,13 +594,19 @@ def enrich(entry):
     entry["signal_color"] = q["quality_color"]
     # Lead the summary with the new class so the narrative and the badge agree.
     summ = entry.get("summary") or ""
-    summ = re.sub(r"^\s*[◉◎◐▷✕] (?:COMPOUNDER|QUALITY|CYCLICAL|TOO MUCH|CHEAP, BUT|STRUCTURAL RISK|TURNAROUND|SPECIAL)[^|]*\|\s*", "", summ)
+    # Drop every segment (the summaries are "|"-delimited) that is a previous
+    # classification lead: the nightly refresh copies the enriched baseline
+    # summary and prepends its own text, so these stack up anywhere in the string.
+    _lead = re.compile(r"^\s*(?:[◉◎◐▷✕]\s*)?(?:COMPOUNDER|QUALITY|CYCLICAL|TOO MUCH|CHEAP, BUT|STRUCTURAL RISK|AI-FEAR|AI-EXPOSED|TURNAROUND|SPECIAL)\b")
+    segs = [x for x in summ.split(" | ")]
+    segs = [x for x in segs if x.strip() and not _lead.match(x) and "(obsolescence risk " not in x]
+    summ = " | ".join(x.strip() for x in segs)
     summ = _LEAD_RE.sub("", summ, count=1)
     entry["summary"] = f"{q['quality_label']} — {q['quality_note']} | {summ}".strip()
     # Header line of the full printed report: "Signal: ◐ WATCHLIST   Ratio B: ..."
     rep = entry.get("report")
     if isinstance(rep, str) and rep:
-        rep = re.sub(r"Signal:\s*[◉◎◐▷✕]?\s*(?:COMPOUNDER|QUALITY|CYCLICAL|TOO MUCH|CHEAP, BUT|STRUCTURAL RISK|TURNAROUND|SPECIAL)[^\n]*?\[model tier: ([A-Z/]+)\]",
+        rep = re.sub(r"Signal:\s*[◉◎◐▷✕]?\s*(?:COMPOUNDER|QUALITY|CYCLICAL|TOO MUCH|CHEAP, BUT|STRUCTURAL RISK|AI-FEAR|AI-EXPOSED|TURNAROUND|SPECIAL)[^\n]*?\[model tier: ([A-Z/]+)\]",
                      r"Signal: \1", rep, count=1)
         rep = re.sub(r"Signal:\s*[◉◎◐▷✕]?\s*(BUY|ACCUMULATE|WATCHLIST|HOLD/TRIM|HOLD|TRIM|AVOID)\b",
                      lambda m: f"Signal: {q['quality_label']}  [model tier: {m.group(1)}]", rep, count=1)
@@ -552,7 +629,7 @@ def print_table(entries):
     rows = []
     for e in entries:
         q = classify(e)
-        rows.append((q["quality_class"], e["ticker"], e.get("legacy_signal_short") or e.get("signal_short"),
+        rows.append((q["quality_class"], e["ticker"], legacy_tier(e) or "-",
                      e.get("sector_group", ""), q["_rb"], q["_epp"], q["_adj"], q["_cons"], q["business_kind"], q["obsolescence_risk"]))
     rows.sort(key=lambda r: (list(CLASSES).index(r[0]), r[1]))
     cur = None
@@ -586,9 +663,9 @@ def apply_s3(dry=False):
     changed = []
     for k in keys:
         body = json.loads(s3.get_object(Bucket=BUCKET, Key=k)["Body"].read())
-        before = (body.get("signal_short"), body.get("quality_note"))
+        before = (body.get("signal_short"), body.get("quality_note"), body.get("summary"), body.get("report"))
         enrich(body)
-        if (body.get("signal_short"), body.get("quality_note")) != before:
+        if (body.get("signal_short"), body.get("quality_note"), body.get("summary"), body.get("report")) != before:
             changed.append("/" + k)
             if not dry:
                 s3.put_object(Bucket=BUCKET, Key=k, Body=json.dumps(body, ensure_ascii=False),
@@ -609,14 +686,16 @@ def apply_s3(dry=False):
         n = 0
         for t, e in summary.items():
             e.setdefault("ticker", t)
-            before = (e.get("signal_short"), e.get("quality_note"))
+            before = (e.get("signal_short"), e.get("quality_note"), e.get("summary"))
             enrich(e)
-            n += (e.get("signal_short"), e.get("quality_note")) != before
+            n += (e.get("signal_short"), e.get("quality_note"), e.get("summary")) != before
         print(f"Lambda summary.json: {n} of {len(summary)} entries updated")
         if not dry and n:
             json.dump(summary, open(sp, "w", encoding="utf-8"), ensure_ascii=False)
             # keep a copy of this module inside the package for future use
             shutil.copy(__file__, os.path.join(ex, "quality_classify.py"))
+            if os.path.exists(PROFILES_PATH):
+                shutil.copy(PROFILES_PATH, os.path.join(ex, "business_profiles.json"))
             dz = os.path.join(work, "deploy.zip")
             with zipfile.ZipFile(dz, "w", zipfile.ZIP_DEFLATED) as zf:
                 for root, dirs, files in os.walk(ex):

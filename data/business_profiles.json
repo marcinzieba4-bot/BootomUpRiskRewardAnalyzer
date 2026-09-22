@@ -1,0 +1,1373 @@
+{
+ "_doc": "Business-durability profiles used by scripts/quality_classify.py. kind: DURABLE | CYCLICAL | STRUCTURAL | TURNAROUND | SPECIAL | AI_EXPOSED. risk: obsolescence risk 1 (very low) .. 5 (existential). reviewed: date of the last model review. Maintained by the daily 'VeeRock daily classification review + coverage summary' routine.",
+ "profiles": {
+  "AAPL": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Apple ecosystem; memory-cost margin question is cyclical, not structural",
+   "reviewed": "2026-09-22"
+  },
+  "ABBV": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "AbbVie: Skyrizi/Rinvoq replaced Humira; patent cycle managed",
+   "reviewed": "2026-09-22"
+  },
+  "ABI": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "AB InBev: global brewer, deleveraging; volumes back to growth",
+   "reviewed": "2026-09-22"
+  },
+  "ABNB": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Airbnb: two-sided travel marketplace; growth slowing, priced richly",
+   "reviewed": "2026-09-22"
+  },
+  "ABT": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Abbott: diversified devices/diagnostics/nutrition",
+   "reviewed": "2026-09-22"
+  },
+  "ACN": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Accenture: GenAI can deflate IT-services pricing and seat counts; also the delivery partner for it",
+   "reviewed": "2026-09-22"
+  },
+  "AD": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Ahold Delhaize: grocery, low margin, 4% yield",
+   "reviewed": "2026-09-22"
+  },
+  "ADBE": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Adobe: creative-suite moat vs generative-AI substitution (Sora/Midjourney/Canva); CEO seat vacant",
+   "reviewed": "2026-09-22"
+  },
+  "ADS": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "adidas: global sportswear #2; brand momentum, CFO succession",
+   "reviewed": "2026-09-22"
+  },
+  "ADYEN": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Adyen: single-platform payments, 20%+ growth, net cash",
+   "reviewed": "2026-09-22"
+  },
+  "AEP": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated transmission/distribution utility; rate-base growth, rate sensitivity",
+   "reviewed": "2026-09-22"
+  },
+  "AI": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Air Liquide: industrial-gas oligopoly, take-or-pay contracts",
+   "reviewed": "2026-09-22"
+  },
+  "AIR": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Airbus: aircraft duopoly with 9,000+ backlog; delivery pace is the swing",
+   "reviewed": "2026-09-22"
+  },
+  "ALE": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "Allegro: Polish e-commerce leader; Temu/Shein price competition",
+   "reviewed": "2026-09-22"
+  },
+  "ALV": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Diversified insurer/asset manager; nat-cat and PIMCO flow risk, not obsolescence",
+   "reviewed": "2026-09-22"
+  },
+  "AMD": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "AMD: AI/data-center GPU ramp; semis cycle and valuation risk",
+   "reviewed": "2026-09-22"
+  },
+  "AMGN": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Amgen: biotech with biosimilar and obesity pipeline",
+   "reviewed": "2026-09-22"
+  },
+  "AMZN": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Amazon: retail + AWS + ads; FTC ad-auction suit is an overhang",
+   "reviewed": "2026-09-22"
+  },
+  "APD": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Air Products: industrial-gas oligopoly; hydrogen megaprojects are optionality",
+   "reviewed": "2026-09-22"
+  },
+  "ARGX": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "argenx: Vyvgart single-franchise concentration, FcRn competition",
+   "reviewed": "2026-09-22"
+  },
+  "ASML": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "ASML: EUV monopoly; earnings ride the semi-capex cycle and China policy",
+   "reviewed": "2026-09-22"
+  },
+  "ATCOA": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Atlas Copco: compressors/vacuum; semi-capex and industrial cycle",
+   "reviewed": "2026-09-22"
+  },
+  "AVGO": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Broadcom: custom AI silicon + VMware software; semi cycle exposure",
+   "reviewed": "2026-09-22"
+  },
+  "AWK": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated water utility, bond proxy",
+   "reviewed": "2026-09-22"
+  },
+  "AXP": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Closed-loop premium card network with fee flywheel; credit cycle is the swing",
+   "reviewed": "2026-09-22"
+  },
+  "AZO": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "AutoZone: auto-parts retail, counter-cyclical; EV mix is a slow long-term headwind",
+   "reviewed": "2026-09-22"
+  },
+  "BA": {
+   "kind": "TURNAROUND",
+   "risk": 2,
+   "why": "Boeing: duopoly franchise in a multi-year production/quality recovery",
+   "reviewed": "2026-09-22"
+  },
+  "BAC": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Money-center bank; earnings are the rate/credit cycle, franchise durable",
+   "reviewed": "2026-09-22"
+  },
+  "BAS": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "BASF: chemicals; China overcapacity, EU energy costs",
+   "reviewed": "2026-09-22"
+  },
+  "BAYN": {
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "Bayer: glyphosate litigation + pharma patent cliff (Xarelto, Eylea)",
+   "reviewed": "2026-09-22"
+  },
+  "BBVA": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Spain/Mexico/Turkey bank at peak ROTE; rate-cut and Mexico concentration risk",
+   "reviewed": "2026-09-22"
+  },
+  "BKNG": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Booking: OTA leader; AI agents could disintermediate over time",
+   "reviewed": "2026-09-22"
+  },
+  "BKR": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Baker Hughes: oilfield services + LNG equipment; leverage post-Chart",
+   "reviewed": "2026-09-22"
+  },
+  "BLK": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Largest asset manager, iShares + Aladdin; fee compression is slow, not existential",
+   "reviewed": "2026-09-22"
+  },
+  "BMW": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "BMW: premium autos; EV transition and Chinese competition, 2.3% auto margin",
+   "reviewed": "2026-09-22"
+  },
+  "BMY": {
+   "kind": "STRUCTURAL",
+   "risk": 3,
+   "why": "Bristol: Eliquis/Opdivo loss-of-exclusivity 2028 vs unproven growth portfolio",
+   "reviewed": "2026-09-22"
+  },
+  "BN": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Danone: specialised nutrition engine, defensive",
+   "reviewed": "2026-09-22"
+  },
+  "BNP": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Eurozone universal bank; re-rating done, NII compression is the cycle risk",
+   "reviewed": "2026-09-22"
+  },
+  "BRK": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Conglomerate with fortress balance sheet; PacifiCorp wildfire tail is the one real risk",
+   "reviewed": "2026-09-22"
+  },
+  "BSX": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Boston Scientific: cardiology device leader (WATCHMAN, Farapulse)",
+   "reviewed": "2026-09-22"
+  },
+  "BX": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Largest alternative manager; fee-related earnings durable, realizations cyclical",
+   "reviewed": "2026-09-22"
+  },
+  "C": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Restructuring money-center bank; ROTCE improving, still a credit/trading cycle name",
+   "reviewed": "2026-09-22"
+  },
+  "CAT": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Caterpillar: heavy equipment; record backlog at a cycle-peak multiple",
+   "reviewed": "2026-09-22"
+  },
+  "CB": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Global P&C underwriter; cat season swings, franchise durable",
+   "reviewed": "2026-09-22"
+  },
+  "CDR": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "CD Projekt: hit-driven game developer priced on two unreleased titles",
+   "reviewed": "2026-09-22"
+  },
+  "CEG": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Nuclear fleet: durable assets, but earnings ride power prices and AI-demand PPAs",
+   "reviewed": "2026-09-22"
+  },
+  "CHTR": {
+   "kind": "STRUCTURAL",
+   "risk": 4,
+   "why": "Cable broadband losing share to fixed-wireless/fiber, video in secular decline, high leverage",
+   "reviewed": "2026-09-22"
+  },
+  "CL": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Colgate: oral-care leader; EM FX, Hill's competition",
+   "reviewed": "2026-09-22"
+  },
+  "CMCSA": {
+   "kind": "STRUCTURAL",
+   "risk": 3,
+   "why": "Cable broadband losing subscribers to fixed-wireless/fiber; parks/NBCU diversify but core is in slow decline",
+   "reviewed": "2026-09-22"
+  },
+  "CMG": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Chipotle: unit-growth restaurant franchise; salmonella outbreak is transient",
+   "reviewed": "2026-09-22"
+  },
+  "COP": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "ConocoPhillips: E&P; earnings are the oil price",
+   "reviewed": "2026-09-22"
+  },
+  "COST": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Costco: membership model, best retail franchise, priced as such",
+   "reviewed": "2026-09-22"
+  },
+  "CRM": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Salesforce: CRM leader; agentic AI compresses per-seat pricing, Agentforce is the counter-bet",
+   "reviewed": "2026-09-22"
+  },
+  "CS": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "AXA: diversified insurer; plan execution excellent, price is the constraint",
+   "reviewed": "2026-09-22"
+  },
+  "CSCO": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Cisco: networking incumbent with AI-infrastructure order book",
+   "reviewed": "2026-09-22"
+  },
+  "CTVA": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Corteva: seeds/crop protection; ag cycle, Vylor spin",
+   "reviewed": "2026-09-22"
+  },
+  "CVX": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Chevron: integrated major; oil price, Hess synergies",
+   "reviewed": "2026-09-22"
+  },
+  "D": {
+   "kind": "SPECIAL",
+   "risk": 1,
+   "why": "Dominion: being acquired by NextEra (all-stock), trades on deal spread",
+   "reviewed": "2026-09-22"
+  },
+  "DB1": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Exchange/clearing/data monopoly-like franchise",
+   "reviewed": "2026-09-22"
+  },
+  "DBK": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Deutsche Bank at a cyclical profit peak after a long restructuring",
+   "reviewed": "2026-09-22"
+  },
+  "DE": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Deere: ag equipment; row-crop replacement cycle at a trough, stock at an all-time high",
+   "reviewed": "2026-09-22"
+  },
+  "DG": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Vinci: concessions (airports/toll roads) + contracting; inflation-linked",
+   "reviewed": "2026-09-22"
+  },
+  "DHL": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "DHL: express/logistics; global-trade and tariff cycle",
+   "reviewed": "2026-09-22"
+  },
+  "DHR": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Danaher: life-science tools compounder",
+   "reviewed": "2026-09-22"
+  },
+  "DNP": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Dino Polska: grocery discounter rollout; Biedronka/Lidl price war",
+   "reviewed": "2026-09-22"
+  },
+  "DOW": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Dow: commodity chemicals at trough earnings; ethane advantage normalising",
+   "reviewed": "2026-09-22"
+  },
+  "DSV": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "DSV: asset-light freight forwarder; Schenker integration, freight cycle",
+   "reviewed": "2026-09-22"
+  },
+  "DTE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated Michigan utility; data-center docket is the catalyst",
+   "reviewed": "2026-09-22"
+  },
+  "DTEGY": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Deutsche Telekom: T-Mobile US growth engine, German incumbent",
+   "reviewed": "2026-09-22"
+  },
+  "DUK": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated Southeast utility; data-center pipeline, rate sensitivity",
+   "reviewed": "2026-09-22"
+  },
+  "DVN": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Devon: shale E&P; oil price",
+   "reviewed": "2026-09-22"
+  },
+  "EA": {
+   "kind": "SPECIAL",
+   "risk": 1,
+   "why": "Electronic Arts: take-private completed, delisted",
+   "reviewed": "2026-09-22"
+  },
+  "ECL": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Ecolab: water/hygiene services compounder",
+   "reviewed": "2026-09-22"
+  },
+  "EIX": {
+   "kind": "SPECIAL",
+   "risk": 3,
+   "why": "Edison: regulated wires franchise, but California wildfire liability is an uncapped, legislature-decided tail",
+   "reviewed": "2026-09-22"
+  },
+  "EL": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "EssilorLuxottica: lens/frames near-monopoly; Ray-Ban Meta optionality, Apple eyewear risk",
+   "reviewed": "2026-09-22"
+  },
+  "ELV": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Elevance: managed care; Medicaid/MA cost trend and policy risk",
+   "reviewed": "2026-09-22"
+  },
+  "EMR": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Emerson: automation; industrial capex cycle, test & measurement",
+   "reviewed": "2026-09-22"
+  },
+  "ENEL": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Italian/LatAm integrated utility; regulated networks plus renewables",
+   "reviewed": "2026-09-22"
+  },
+  "ENI": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Eni: integrated major; Brent-driven, buyback",
+   "reviewed": "2026-09-22"
+  },
+  "ENR": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Siemens Energy: grid/gas-turbine super-cycle; wind losses, order-driven",
+   "reviewed": "2026-09-22"
+  },
+  "ETN": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Eaton: electrical equipment; AI data-center capex cycle, priced for it",
+   "reviewed": "2026-09-22"
+  },
+  "ETR": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated Gulf-coast utility; capex plan priced at ~24x",
+   "reviewed": "2026-09-22"
+  },
+  "EXC": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Pure-play regulated wires utility; PJM capacity tailwind",
+   "reviewed": "2026-09-22"
+  },
+  "F": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Ford: legacy auto with EV losses; tariff and credit cycle",
+   "reviewed": "2026-09-22"
+  },
+  "FANG": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Diamondback: lowest-cost Permian E&P; oil price",
+   "reviewed": "2026-09-22"
+  },
+  "FCX": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Freeport: copper/gold miner; copper price",
+   "reviewed": "2026-09-22"
+  },
+  "FERG": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Ferguson: #1 plumbing/HVAC distributor; housing and R&R cycle",
+   "reviewed": "2026-09-22"
+  },
+  "FISV": {
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "Fiserv: Clover/merchant deceleration and guidance reset; core banking base sticky",
+   "reviewed": "2026-09-22"
+  },
+  "GE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "GE Aerospace: engine aftermarket annuity; priced at ~42x",
+   "reviewed": "2026-09-22"
+  },
+  "GEV": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "GE Vernova: gas turbines/grid; order boom, priced for it",
+   "reviewed": "2026-09-22"
+  },
+  "GILD": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Gilead: HIV franchise annuity, oncology optionality",
+   "reviewed": "2026-09-22"
+  },
+  "GM": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "GM: legacy auto at a cycle-peak margin; tariffs, recalls, EV losses",
+   "reviewed": "2026-09-22"
+  },
+  "GOOGL": {
+   "kind": "AI_EXPOSED",
+   "risk": 2,
+   "why": "Alphabet: search cash machine + cloud; AI-search cannibalisation is the debate, Gemini/TPU the counter-bet",
+   "reviewed": "2026-09-22"
+  },
+  "GS": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Investment bank; trading/IB revenue is the cycle, priced at a peak",
+   "reviewed": "2026-09-22"
+  },
+  "HAL": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Halliburton: oilfield services; rig-count cycle",
+   "reviewed": "2026-09-22"
+  },
+  "HCA": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "HCA: largest hospital operator; policy/reimbursement risk",
+   "reviewed": "2026-09-22"
+  },
+  "HD": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Home Depot: home-improvement leader; frozen housing market is cyclical",
+   "reviewed": "2026-09-22"
+  },
+  "HLT": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Hilton: asset-light franchisor; lodging demand cycle",
+   "reviewed": "2026-09-22"
+  },
+  "HON": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Honeywell: diversified industrial post-spin; steady, fully priced",
+   "reviewed": "2026-09-22"
+  },
+  "IBE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Iberdrola: regulated networks + renewables compounder",
+   "reviewed": "2026-09-22"
+  },
+  "IBM": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "IBM: consulting + software + mainframe; consulting is the AI-deflation exposure",
+   "reviewed": "2026-09-22"
+  },
+  "IFX": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Infineon: power/auto semis; auto cycle and Chinese competition",
+   "reviewed": "2026-09-22"
+  },
+  "INGA": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Dutch/EU retail bank at a 52-week high; deposit-margin compression is the risk",
+   "reviewed": "2026-09-22"
+  },
+  "INTC": {
+   "kind": "TURNAROUND",
+   "risk": 4,
+   "why": "Intel: foundry turnaround with government stake; execution unproven, 5x run",
+   "reviewed": "2026-09-22"
+  },
+  "INTU": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Intuit: TurboTax/QuickBooks; AI tax-prep and AI bookkeeping are direct substitution risks, growth reset to 9-10%",
+   "reviewed": "2026-09-22"
+  },
+  "ISP": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Italian bank with the best fee annuity in Italy; BTP beta and MPS deal risk",
+   "reviewed": "2026-09-22"
+  },
+  "ISRG": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Intuitive Surgical: robotic-surgery leader, razor/blade",
+   "reviewed": "2026-09-22"
+  },
+  "ITX": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Inditex: best-in-class fast-fashion execution, net cash",
+   "reviewed": "2026-09-22"
+  },
+  "JNJ": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "J&J: pharma + medtech; talc settlement overhang",
+   "reviewed": "2026-09-22"
+  },
+  "JPM": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Best-in-class universal bank; still a rate/credit cycle at a record multiple",
+   "reviewed": "2026-09-22"
+  },
+  "KGH": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "KGHM: copper/silver miner; metals at records, Polish state owner",
+   "reviewed": "2026-09-22"
+  },
+  "KHC": {
+   "kind": "STRUCTURAL",
+   "risk": 3,
+   "why": "Kraft Heinz: legacy packaged-food brands in volume decline",
+   "reviewed": "2026-09-22"
+  },
+  "KKR": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Alternative manager with insurance balance sheet; fee earnings durable",
+   "reviewed": "2026-09-22"
+  },
+  "KMI": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Kinder Morgan: fee-based gas pipelines",
+   "reviewed": "2026-09-22"
+  },
+  "KNEBV": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Kone: elevators with service annuity; China new-build weakness",
+   "reviewed": "2026-09-22"
+  },
+  "KO": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Coca-Cola: global beverage brand system",
+   "reviewed": "2026-09-22"
+  },
+  "KTY": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Kety: aluminium extrusions/packaging; European industrial cycle",
+   "reviewed": "2026-09-22"
+  },
+  "LIN": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Linde: industrial-gas oligopoly, pricing power",
+   "reviewed": "2026-09-22"
+  },
+  "LLY": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Eli Lilly: GLP-1 leader; priced for it",
+   "reviewed": "2026-09-22"
+  },
+  "LMT": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Lockheed: defense prime; F-35 program overhang, budget-driven",
+   "reviewed": "2026-09-22"
+  },
+  "LOW": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Lowe's: home-improvement #2; DIY demand trough, guidance cut",
+   "reviewed": "2026-09-22"
+  },
+  "LPP": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "LPP: CEE apparel retailer (Sinsay) with store rollout runway",
+   "reviewed": "2026-09-22"
+  },
+  "LRCX": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Lam Research: etch/deposition leader; WFE cycle",
+   "reviewed": "2026-09-22"
+  },
+  "LYB": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "LyondellBasell: polyolefins at a trough with leverage and a dividend cut",
+   "reviewed": "2026-09-22"
+  },
+  "MA": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Payments network duopoly; regulatory interchange risk, no obsolescence risk",
+   "reviewed": "2026-09-22"
+  },
+  "MAR": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Marriott: asset-light franchisor; Middle East RevPAR headwind",
+   "reviewed": "2026-09-22"
+  },
+  "MBG": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Mercedes: premium autos; China share loss, tariffs",
+   "reviewed": "2026-09-22"
+  },
+  "MC": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "LVMH: luxury leader; China/aspirational demand cycle",
+   "reviewed": "2026-09-22"
+  },
+  "MCD": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "McDonald's: franchised restaurant royalty stream at a 52-week low",
+   "reviewed": "2026-09-22"
+  },
+  "MDLZ": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Mondelez: snacking leader; cocoa costs easing, GLP-1 headwind",
+   "reviewed": "2026-09-22"
+  },
+  "META": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Meta: ad engine healthy; capex/FCF trajectory is the swing",
+   "reviewed": "2026-09-22"
+  },
+  "MMM": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "3M: diversified industrial; PFAS litigation is a long-tail liability",
+   "reviewed": "2026-09-22"
+  },
+  "MNST": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Monster: energy drinks with Coca-Cola distribution; ~41x earnings",
+   "reviewed": "2026-09-22"
+  },
+  "MO": {
+   "kind": "STRUCTURAL",
+   "risk": 3,
+   "why": "Altria: US cigarette volumes in secular decline, NJOY blocked; 6.4% yield",
+   "reviewed": "2026-09-22"
+  },
+  "MPC": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Marathon Petroleum: refining crack spreads at a geopolitical peak",
+   "reviewed": "2026-09-22"
+  },
+  "MRK": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "Merck: Keytruda 2028 patent cliff vs vaccine/pipeline wins",
+   "reviewed": "2026-09-22"
+  },
+  "MRSH": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Marsh McLennan: fee-based broking/consulting moat, 19 years of margin expansion",
+   "reviewed": "2026-09-22"
+  },
+  "MRVL": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Marvell: custom AI silicon; hyperscaler capex cycle, priced for a ramp",
+   "reviewed": "2026-09-22"
+  },
+  "MS": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Wealth-management-led bank; still cyclical, priced for a peak",
+   "reviewed": "2026-09-22"
+  },
+  "MSFT": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Microsoft: Azure + M365 + OpenAI; capex intensity is the only real debate",
+   "reviewed": "2026-09-22"
+  },
+  "MU": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Micron: HBM/DRAM; memory cycle at a record, CXMT competition",
+   "reviewed": "2026-09-22"
+  },
+  "MUV2": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Reinsurer; P&C pricing cycle softening, franchise durable",
+   "reviewed": "2026-09-22"
+  },
+  "NDA": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Nordic bank at the top of its range; rate-cut cycle risk",
+   "reviewed": "2026-09-22"
+  },
+  "NEE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Largest US renewables developer + FPL; Dominion merger execution risk",
+   "reviewed": "2026-09-22"
+  },
+  "NEM": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Newmont: gold miner; gold price, rising AISC",
+   "reviewed": "2026-09-22"
+  },
+  "NFLX": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Netflix: scaled streaming leader with ads flywheel",
+   "reviewed": "2026-09-22"
+  },
+  "NKE": {
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "Nike: brand still huge, but earnings collapsed; new management, China malaise",
+   "reviewed": "2026-09-22"
+  },
+  "NOW": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "ServiceNow: workflow platform; agentic AI vs per-seat licensing unresolved",
+   "reviewed": "2026-09-22"
+  },
+  "NVDA": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Nvidia: AI compute leader; demand is a capex cycle, China conceded",
+   "reviewed": "2026-09-22"
+  },
+  "OKE": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "ONEOK: midstream NGL/gas; acquisition-driven, leverage",
+   "reviewed": "2026-09-22"
+  },
+  "OR": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "L'Oréal: beauty leader, record margins",
+   "reviewed": "2026-09-22"
+  },
+  "ORCL": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "Oracle: AI beneficiary (OCI/RPO) financed with debt + equity; BBB- credit, execution risk, not an AI victim",
+   "reviewed": "2026-09-22"
+  },
+  "ORLY": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "O'Reilly: auto-parts retail compounder",
+   "reviewed": "2026-09-22"
+  },
+  "OXY": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Occidental: levered E&P; oil price and debt",
+   "reviewed": "2026-09-22"
+  },
+  "PANW": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Palo Alto: security platform consolidator; growth decelerating to 20s",
+   "reviewed": "2026-09-22"
+  },
+  "PCG": {
+   "kind": "SPECIAL",
+   "risk": 3,
+   "why": "PG&E: post-bankruptcy wires franchise, but California wildfire liability remains uncapped after SB 492 died",
+   "reviewed": "2026-09-22"
+  },
+  "PEG": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "PSEG: regulated NJ utility plus nuclear; 6-8% EPS growth guide",
+   "reviewed": "2026-09-22"
+  },
+  "PEP": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "PepsiCo: snacks + beverages; Elliott-driven cost program, 4.2% yield",
+   "reviewed": "2026-09-22"
+  },
+  "PFE": {
+   "kind": "STRUCTURAL",
+   "risk": 3,
+   "why": "Pfizer: Eliquis/Ibrance LOE cliff, post-COVID reset; 6% yield",
+   "reviewed": "2026-09-22"
+  },
+  "PG": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "P&G: consumer staples compounder, 70 dividend increases",
+   "reviewed": "2026-09-22"
+  },
+  "PGR": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Progressive: elite underwriter, but combined ratio is at a cyclical peak",
+   "reviewed": "2026-09-22"
+  },
+  "PH": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Parker Hannifin: motion/control; industrial cycle, 70 years of dividend increases",
+   "reviewed": "2026-09-22"
+  },
+  "PKN": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Orlen: CEE refining/petchem/retail at record margins",
+   "reviewed": "2026-09-22"
+  },
+  "PKO": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Polish state-linked bank near all-time high; rate and regulatory cycle",
+   "reviewed": "2026-09-22"
+  },
+  "PLTR": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "Palantir: exceptional growth, extreme multiple; enterprise AI durability unproven",
+   "reviewed": "2026-09-22"
+  },
+  "PM": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Philip Morris: smoke-free (IQOS/ZYN) transition offsets cigarette decline",
+   "reviewed": "2026-09-22"
+  },
+  "PPG": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "PPG: coatings; industrial/auto demand cycle",
+   "reviewed": "2026-09-22"
+  },
+  "PRX": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Prosus: Tencent stake + profitable e-commerce ecosystems at a NAV discount",
+   "reviewed": "2026-09-22"
+  },
+  "PSX": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Phillips 66: refining + midstream; crack-spread peak",
+   "reviewed": "2026-09-22"
+  },
+  "PYPL": {
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "PayPal: branded checkout share loss vs Apple/Shop Pay; Venmo monetisation unproven",
+   "reviewed": "2026-09-22"
+  },
+  "PZU": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Polish insurer; state ownership and Pekao reorganisation overhang",
+   "reviewed": "2026-09-22"
+  },
+  "QCOM": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Qualcomm: handset decline (Apple exit) vs auto/data-center diversification",
+   "reviewed": "2026-09-22"
+  },
+  "RACE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Ferrari: scarcity luxury brand, order book years long",
+   "reviewed": "2026-09-22"
+  },
+  "RCL": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Royal Caribbean: cruise demand cycle with $22B net debt",
+   "reviewed": "2026-09-22"
+  },
+  "RHM": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Rheinmetall: European rearmament; order-driven, ceasefire de-rating risk, 45% vol",
+   "reviewed": "2026-09-22"
+  },
+  "RMS": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Hermès: the most durable luxury brand; growth slowing from Middle East",
+   "reviewed": "2026-09-22"
+  },
+  "RTX": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "RTX: defense + Pratt aftermarket; $289B backlog",
+   "reviewed": "2026-09-22"
+  },
+  "SAF": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Safran: LEAP engine aftermarket annuity; duopoly",
+   "reviewed": "2026-09-22"
+  },
+  "SAN": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Santander: record profitability, LatAm growth; still a bank cycle",
+   "reviewed": "2026-09-22"
+  },
+  "SAP": {
+   "kind": "AI_EXPOSED",
+   "risk": 2,
+   "why": "SAP: ERP incumbent with cloud backlog; system-of-record is sticky, AI-agent layer is the debate",
+   "reviewed": "2026-09-22"
+  },
+  "SBUX": {
+   "kind": "TURNAROUND",
+   "risk": 2,
+   "why": "Starbucks: brand intact, US traffic turnaround under way, priced for success",
+   "reviewed": "2026-09-22"
+  },
+  "SCHW": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Schwab: scale brokerage/bank; cash-sorting relief is the tailwind, rates the risk",
+   "reviewed": "2026-09-22"
+  },
+  "SGO": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Saint-Gobain: building materials; construction cycle",
+   "reviewed": "2026-09-22"
+  },
+  "SHW": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Sherwin-Williams: paint stores moat, pricing power",
+   "reviewed": "2026-09-22"
+  },
+  "SIE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Siemens: automation/electrification/mobility; record industrial profit",
+   "reviewed": "2026-09-22"
+  },
+  "SLB": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Schlumberger: oilfield services leader; upstream capex cycle",
+   "reviewed": "2026-09-22"
+  },
+  "SNY": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Sanofi: Dupixent-led immunology, cheapest large pharma",
+   "reviewed": "2026-09-22"
+  },
+  "SO": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Southern: regulated utility, Vogtle in rate base, data-center pipeline",
+   "reviewed": "2026-09-22"
+  },
+  "SPGI": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Ratings duopoly + indices flywheel; Dividend King",
+   "reviewed": "2026-09-22"
+  },
+  "SRE": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Sempra: regulated California/Texas utilities plus LNG infrastructure",
+   "reviewed": "2026-09-22"
+  },
+  "SU": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Schneider Electric: electrification/energy management leader",
+   "reviewed": "2026-09-22"
+  },
+  "SYK": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Stryker: orthopaedics/medtech compounder",
+   "reviewed": "2026-09-22"
+  },
+  "T": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "AT&T: wireless + fiber; legacy copper/wireline decline is managed",
+   "reviewed": "2026-09-22"
+  },
+  "TDG": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "TransDigm: proprietary aerospace parts, pricing power, levered compounder",
+   "reviewed": "2026-09-22"
+  },
+  "TGT": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "Target: discretionary-heavy retailer losing share to Walmart/Amazon",
+   "reviewed": "2026-09-22"
+  },
+  "TJX": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "TJX: off-price retail leader, counter-cyclical",
+   "reviewed": "2026-09-22"
+  },
+  "TMO": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Thermo Fisher: life-science tools leader",
+   "reviewed": "2026-09-22"
+  },
+  "TMUS": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "T-Mobile: share-gaining US wireless #1; capital-intensive oligopoly",
+   "reviewed": "2026-09-22"
+  },
+  "TRGP": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Targa: Permian midstream/NGL; volume-driven, priced for it",
+   "reviewed": "2026-09-22"
+  },
+  "TSLA": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Tesla: auto earnings collapsed, priced on robotaxi/Optimus optionality",
+   "reviewed": "2026-09-22"
+  },
+  "TT": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Trane: HVAC leader with data-center cooling; priced for flawless execution",
+   "reviewed": "2026-09-22"
+  },
+  "TTE": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "TotalEnergies: integrated major + LNG; Brent-driven",
+   "reviewed": "2026-09-22"
+  },
+  "TTWO": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Take-Two: GTA VI launch Nov 2026; hit-driven but franchise-backed",
+   "reviewed": "2026-09-22"
+  },
+  "TXN": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Texas Instruments: analog leader; industrial/auto semi cycle, capex-heavy",
+   "reviewed": "2026-09-22"
+  },
+  "UBER": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Uber: mobility platform; autonomous vehicles (Waymo/Tesla) are both partner and existential threat",
+   "reviewed": "2026-09-22"
+  },
+  "UCG": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "UniCredit at highs; Commerzbank integration and NII compression risk",
+   "reviewed": "2026-09-22"
+  },
+  "UNH": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "UnitedHealth: managed-care scale; DOJ criminal/civil probe and MA exits",
+   "reviewed": "2026-09-22"
+  },
+  "UNP": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Union Pacific: railroad duopoly; NS merger pending",
+   "reviewed": "2026-09-22"
+  },
+  "UPS": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "UPS: parcel network; Amazon volume glide-down and margin reset",
+   "reviewed": "2026-09-22"
+  },
+  "UST": {
+   "kind": "SPECIAL",
+   "risk": 1,
+   "why": "10-year Treasury benchmark, not an equity",
+   "reviewed": "2026-09-22"
+  },
+  "V": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Payments network duopoly; DOJ debit suit is the overhang",
+   "reviewed": "2026-09-22"
+  },
+  "VLO": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Valero: refining crack spreads at a peak",
+   "reviewed": "2026-09-22"
+  },
+  "VMC": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Vulcan: aggregates quasi-monopoly; infrastructure funding",
+   "reviewed": "2026-09-22"
+  },
+  "VOW3": {
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "Volkswagen: deepest restructuring in its history; China share loss, tariffs",
+   "reviewed": "2026-09-22"
+  },
+  "VRTX": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Vertex: CF monopoly, pain franchise; Crinetics deal",
+   "reviewed": "2026-09-22"
+  },
+  "VST": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Vistra: merchant power + nuclear; earnings ride power prices and AI-load PPAs",
+   "reviewed": "2026-09-22"
+  },
+  "VZ": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Verizon: wireless oligopoly, 5.7% yield; Starlink-direct is the long-term threat",
+   "reviewed": "2026-09-22"
+  },
+  "WBD": {
+   "kind": "SPECIAL",
+   "risk": 3,
+   "why": "Warner Bros Discovery: Paramount Skydance cash deal, trades on close probability",
+   "reviewed": "2026-09-22"
+  },
+  "WEC": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated Wisconsin utility; Microsoft data-center load",
+   "reviewed": "2026-09-22"
+  },
+  "WFC": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Asset-cap-freed bank; earnings cyclical, franchise durable",
+   "reviewed": "2026-09-22"
+  },
+  "WKL": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Wolters Kluwer: professional information services; AI-disruption fear vs proven renewals",
+   "reviewed": "2026-09-22"
+  },
+  "WM": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Waste Management: landfill/collection moat with pricing power",
+   "reviewed": "2026-09-22"
+  },
+  "WMB": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Williams: Transco gas pipeline annuity; AI-power demand",
+   "reviewed": "2026-09-22"
+  },
+  "WMT": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Walmart: scale retail + ads/marketplace; consolidating near 52-week low",
+   "reviewed": "2026-09-22"
+  },
+  "XEL": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Regulated Midwest/Colorado utility; wildfire litigation is the tail",
+   "reviewed": "2026-09-22"
+  },
+  "XOM": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "ExxonMobil: integrated major, Guyana/Permian; oil price",
+   "reviewed": "2026-09-22"
+  },
+  "XTB": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "Retail CFD broker: revenue is client trading volume and volatility",
+   "reviewed": "2026-09-22"
+  },
+  "ZAB": {
+   "kind": "SPECIAL",
+   "risk": 1,
+   "why": "Zabka: Couche-Tard cash tender open, capped upside",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
