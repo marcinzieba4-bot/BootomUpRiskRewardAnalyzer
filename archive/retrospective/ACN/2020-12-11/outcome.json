@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "ACN",
+ "as_of": "2020-12-11",
+ "computed": "2026-10-23",
+ "data_source": "Yahoo Finance daily closes + dividends (ACN, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2021-06-11",
+   "price": 285.28,
+   "dividends": 1.76,
+   "total_return_pct": 16.8,
+   "benchmark_total_return_pct": 16.6,
+   "excess_pct": 0.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2021-12-10",
+   "price": 379.44,
+   "dividends": 3.61,
+   "total_return_pct": 55.8,
+   "benchmark_total_return_pct": 30.1,
+   "excess_pct": 25.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2022-12-09",
+   "price": 288.41,
+   "dividends": 7.64,
+   "total_return_pct": 20.4,
+   "benchmark_total_return_pct": 10.6,
+   "excess_pct": 9.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2023-12-11",
+   "price": 342.31,
+   "dividends": 12.29,
+   "total_return_pct": 44.2,
+   "benchmark_total_return_pct": 31.1,
+   "excess_pct": 13.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2021-12-29",
+   "price": 415.42
+  },
+  "low": {
+   "date": "2021-01-29",
+   "price": 241.92
+  },
+  "max_drawdown_pct": -39.8,
+  "return_to_avg_price_m12_m24_pct": 25.2
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Accenture: GenAI deflates IT-services pricing and billable seats - falling job listings and the Accenture Edge signal point to softening large-enterprise demand - while Accenture is also the delivery partner for the same buildout ($1B/5yr Anthropic partnership)",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -129,6 +129,20 @@ How recurring cases are encoded (each was decided the first time it came up, the
 - **A 10-K that stops giving a headcount** says so in the event's own words (`gdn_clause`, `gdn_factor`). ACN's FY17
   and FY18 10-Ks give "more than 50 delivery centers" and no delivery headcount, so the last count (about 285,000, FY16)
   is quoted as such. Total employees (425,000, 459,000) are a different measure and are not used.
+- **A guide that included an item the company strips out only later** keeps the published figure. ACN's Q2 and Q3 FY20
+  EPS guides included investment gains that the Q4 FY20 release (2020-09-24) first removed ("$0.27 in gains ... which
+  were included in the guidance provided in the company's third-quarter earnings release"); the earlier prints keep
+  $7.48-7.70 and $7.57-7.70. FY20 enters the history at the company's $7.46 excluding $0.43 of investment gains, and the
+  FY21 guide is used ex-gains from the print that first gives that figure (Q1 FY21, $8.02-8.25).
+- **Bookings growth the company states in local currency** is used as stated (ACN from Q3 FY20). A release that gives
+  only dollar growth and no FX impact for bookings keeps the dollar figure, with a note (ACN Q1 FY21: +25%).
+- **A change of segment structure** keeps the segment bridge on the lines the company still reports each quarter. ACN
+  manages through three geographic markets from 2020-03-01 but still reports its five industry groups, the same lines
+  as the old operating groups, so the bridge keeps them. The split is display only; the bridge total does not change.
+- **A guidance reaffirmation without numbers** (ACN 8-Ks of 2019-01-11, 2019-07-11 and 2020-01-13) adds nothing: the last
+  numeric guide stands.
+- **A filing accepted during market hours** is public before that day's close and keeps its filing date (ACN FY19 10-K,
+  accepted 2019-10-29 10:53 ET).
 - **A filing accepted after the 16:00 ET close** counts from the next trading day, so it never meets a closing price
   that was set before it was public. Example: the FY11 10-K, accepted 2011-10-21 16:06 ET, is dated 2011-10-24.
 - **A release made before the open** may meet the same day's close (ACN moved to pre-market releases in 2013).
@@ -141,14 +155,24 @@ Known limitation: the growth factor compares a local-currency guide with dollar 
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
 method version.
 
-Known limitation (from FY19): ACN's revenues include reimbursements from FY19 (new revenue standard), while the annual
-history stays on the net-revenue basis it was reported on. The FY19 LC growth guide is applied to FY18 net revenues in the
-segment bridge, and the guide is compared with the net-revenue growth history. Both are growth rates, so the
-distortion is small. The bridge's dollar base leaves out reimbursements: $2.03B of FY18's $41.60B revenues
-(FY18 10-K), about 5%.
+Known limitation (from FY19): ACN's revenues include reimbursements from FY19 (new revenue standard). Until the FY19 10-K
+the annual history stays on the net-revenue basis it was reported on, so the FY19 LC growth guide is applied to FY18 net
+revenues in the segment bridge. The bridge's dollar base leaves out reimbursements: $2.03B of FY18's $41.60B revenues
+(FY18 10-K), about 5%. From the Q4 FY19 print (2019-09-26) FY19 joins the history at $43.2B on the new basis.
+The FY19 10-K (2019-10-29) then revises FY15-FY18 to the new basis. Each vintage takes a year from the latest 10-K that
+reports it (the same rule as the FY08 and FY11 EPS restatements), so from that date the revenue history is net
+revenues to FY14 and revised revenues from FY15. That seam inflates one year-on-year step (FY15 +8.0% instead of
++3.5% on the old basis). It moves the median revenue growth that the growth factor uses by 0.14pp (5.66% instead of
+5.52%), a growth score of 0.014 or 0.003 on the composite. The seam leaves the window with the FY24 vintage.
+
+Display quirk: the frozen engine prints the latest print's next-quarter LC guide as `+lo-hi%`, so a range that starts
+below zero reads `+-2-2% LC` (ACN Q2-Q4 FY20 prints: 39 dates, 2020-03-20 to 2020-12-11). The stored values and the
+"Growth vs own history" line (`-2% to +2% LC`) are correct. Fixing the string means editing the engine that is copied
+into every model, so it is left for an explicit engine revision.
 
 Ratio B is `inf` (printed `infx`) when the price is above the BULL scenario price: there is no upside even in the bull
-case. ACN reached that on 14 dates in 2018. `analysis.json` stores it as `Infinity`, which Python's json reads.
+case. ACN reached that on 14 dates in 2018 and 59 in 2019-2020. `analysis.json` stores it as `Infinity`,
+which Python's json reads.
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
@@ -213,6 +237,7 @@ python3 retro/build_acn.py --weekly 2012-01-02 2012-12-31
 python3 retro/build_acn.py --weekly 2013-01-07 2014-12-31
 python3 retro/build_acn.py --weekly 2015-01-05 2016-12-31
 python3 retro/build_acn.py --weekly 2017-01-02 2018-12-31
+python3 retro/build_acn.py --weekly 2019-01-07 2020-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done
