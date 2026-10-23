@@ -213,6 +213,59 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2011-12-16 | $54.15 | Accenture plc Q1 FY12 results | 3.35 | +1.70 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.8% | -8.1pp | +38.8% | ✓ |
 | 2011-12-23 | $52.89 | Accenture plc Q1 FY12 results | 3.35 | +1.78 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.3% | +10.8pp | +42.5% | ✓ |
 | 2011-12-30 | $53.23 | Accenture plc Q1 FY12 results | 3.35 | +1.77 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.2% | +8.6pp | +42.0% | ✓ |
+| 2012-01-06 | $51.83 | Accenture plc Q1 FY12 results | 3.35 | +1.83 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.6% | +13.8pp | +46.3% | ✓ |
+| 2012-01-13 | $53.25 | Accenture plc Q1 FY12 results | 3.35 | +1.74 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.3% | +12.3pp | +42.8% | ✓ |
+| 2012-01-20 | $55.81 | Accenture plc Q1 FY12 results | 3.35 | +1.56 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.1% | +13.0pp | +36.7% | ✓ |
+| 2012-01-27 | $56.42 | Accenture plc Q1 FY12 results | 3.35 | +1.51 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +49.5% | +9.6pp | +35.6% | ✓ |
+| 2012-02-03 | $58.31 | Accenture plc Q1 FY12 results | 3.35 | +1.32 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.5% | +5.2pp | +31.5% | ✓ |
+| 2012-02-10 | $56.96 | Accenture plc Q1 FY12 results | 3.35 | +1.45 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.1% | +7.3pp | +34.8% | ✓ |
+| 2012-02-17 | $58.43 | Accenture plc Q1 FY12 results | 3.35 | +1.30 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.0% | +6.4pp | +31.7% | ✓ |
+| 2012-02-24 | $59.65 | Accenture plc Q1 FY12 results | 3.35 | +1.19 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.1% | +6.4pp | +29.2% | ✓ |
+| 2012-03-02 | $59.60 | Accenture plc Q1 FY12 results | 3.35 | +1.19 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.3% | +4.9pp | +29.6% | ✓ |
+| 2012-03-09 | $60.86 | Accenture plc Q1 FY12 results | 3.35 | +1.10 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.2% | +1.7pp | +27.1% | ✓ |
+| 2012-03-16 | $63.62 | Accenture plc Q1 FY12 results | 3.35 | +0.87 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.0% | -2.8pp | +21.8% | ✓ |
+| 2012-03-23 | $64.88 | Accenture plc Q2 FY12 results | 3.35 | +0.86 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.6% | -5.5pp | +19.6% | ✓ |
+| 2012-03-30 | $64.50 | Accenture plc Q2 FY12 results | 3.35 | +1.00 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +27.2% | -9.3pp | +20.5% | ✗ |
+| 2012-04-05 | $64.79 | Accenture plc Q2 FY12 results | 3.35 | +0.98 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.6% | -12.5pp | +20.1% | ✗ |
+| 2012-04-13 | $62.55 | Accenture plc Q2 FY12 results | 3.35 | +1.16 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.8% | -8.4pp | +24.4% | ✗ |
+| 2012-04-20 | $63.40 | Accenture plc Q2 FY12 results | 3.35 | +1.09 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.9% | -10.0pp | +22.8% | ✗ |
+| 2012-04-27 | $65.02 | Accenture plc Q2 FY12 results | 3.35 | +0.85 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.0% | -11.5pp | +19.8% | ✗ |
+| 2012-05-04 | $62.61 | Accenture plc Q2 FY12 results | 3.35 | +1.16 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.3% | -9.8pp | +24.4% | ✓ |
+| 2012-05-11 | $58.61 | Accenture plc Q2 FY12 results | 3.35 | +1.54 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.3% | -3.2pp | +32.9% | ✓ |
+| 2012-05-18 | $57.65 | Accenture plc Q2 FY12 results | 3.35 | +1.62 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.0% | -6.1pp | +35.0% | ✓ |
+| 2012-05-25 | $57.44 | Accenture plc Q2 FY12 results | 3.35 | +1.64 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.0% | -4.2pp | +35.4% | ✓ |
+| 2012-06-01 | $55.28 | Accenture plc Q2 FY12 results | 3.35 | +1.79 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.6% | -1.9pp | +40.6% | ✓ |
+| 2012-06-08 | $58.53 | Accenture plc Q2 FY12 results | 3.35 | +1.55 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.7% | -3.1pp | +32.9% | ✓ |
+| 2012-06-15 | $59.08 | Accenture plc Q2 FY12 results | 3.35 | +1.50 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.9% | -3.3pp | +31.7% | ✓ |
+| 2012-06-22 | $57.56 | Accenture plc Q2 FY12 results | 3.35 | +1.63 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.5% | -1.5pp | +35.3% | ✓ |
+| 2012-06-29 | $60.09 | Accenture plc Q3 FY12 results | 2.60 | +0.57 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.2% | -7.8pp | +29.7% | ✓ |
+| 2012-07-06 | $58.44 | Accenture plc Q3 FY12 results | 2.60 | +0.74 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.5% | -5.9pp | +33.6% | ✓ |
+| 2012-07-13 | $58.06 | Accenture plc Q3 FY12 results | 2.60 | +0.77 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.4% | -6.5pp | +34.7% | ✓ |
+| 2012-07-20 | $59.00 | Accenture plc Q3 FY12 results | 2.60 | +0.69 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -8.9pp | +32.7% | ✓ |
+| 2012-07-27 | $60.43 | Accenture plc Q3 FY12 results | 2.60 | +0.53 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.8% | -8.8pp | +29.7% | ✓ |
+| 2012-08-03 | $60.35 | Accenture plc Q3 FY12 results | 2.60 | +0.54 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +36.2% | -6.9pp | +30.1% | ✓ |
+| 2012-08-10 | $61.63 | Accenture plc Q3 FY12 results | 2.60 | +0.41 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.6% | -8.5pp | +27.6% | ✓ |
+| 2012-08-17 | $61.08 | Accenture plc Q3 FY12 results | 2.60 | +0.46 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.1% | -7.5pp | +29.0% | ✓ |
+| 2012-08-24 | $61.53 | Accenture plc Q3 FY12 results | 2.60 | +0.42 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.5% | -9.1pp | +28.2% | ✓ |
+| 2012-08-31 | $61.60 | Accenture plc Q3 FY12 results | 2.60 | +0.41 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.2% | -9.8pp | +28.4% | ✓ |
+| 2012-09-07 | $64.44 | Accenture plc Q3 FY12 results | 2.60 | +0.17 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.4% | -11.7pp | +22.9% | ✓ |
+| 2012-09-14 | $65.89 | Accenture plc Q3 FY12 results | 2.60 | +0.04 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.2% | -11.8pp | +20.4% | ✗ |
+| 2012-09-21 | $65.25 | Accenture plc Q3 FY12 results | 2.60 | +0.12 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +27.8% | -14.6pp | +21.7% | ✗ |
+| 2012-09-28 | $70.03 | Accenture plc Q4/FY12 results | 2.85 | +0.40 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.2% | -24.2pp | +13.5% | ✗ |
+| 2012-10-05 | $70.74 | Accenture plc Q4/FY12 results | 2.85 | +0.35 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.5% | -20.9pp | +12.6% | ✗ |
+| 2012-10-12 | $69.42 | Accenture plc Q4/FY12 results | 2.85 | +0.43 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.5% | -23.8pp | +14.9% | ✗ |
+| 2012-10-19 | $67.75 | Accenture plc Q4/FY12 results | 2.85 | +0.55 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.5% | -17.8pp | +17.8% | ✗ |
+| 2012-10-26 | $67.11 | Accenture plc Q4/FY12 results | 2.85 | +0.59 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.2% | -21.7pp | +19.1% | ✗ |
+| 2012-11-02 | $67.91 | Accenture plc Q4/FY12 results | 2.85 | +0.54 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +24.9% | -22.6pp | +17.9% | ✗ |
+| 2012-11-09 | $65.81 | Accenture plc Q4/FY12 results | 2.85 | +0.69 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.5% | -19.8pp | +21.9% | ✓ |
+| 2012-11-16 | $66.19 | Accenture plc Q4/FY12 results | 2.85 | +0.66 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.4% | -21.5pp | +21.4% | ✓ |
+| 2012-11-23 | $68.18 | Accenture plc Q4/FY12 results | 2.85 | +0.51 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.7% | -22.5pp | +18.0% | ✗ |
+| 2012-11-30 | $67.92 | Accenture plc Q4/FY12 results | 2.85 | +0.52 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.5% | -18.2pp | +18.6% | ✓ |
+| 2012-12-07 | $69.48 | Accenture plc Q4/FY12 results | 2.85 | +0.41 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.4% | -21.7pp | +16.3% | ✗ |
+| 2012-12-14 | $70.21 | Accenture plc Q4/FY12 results | 2.85 | +0.36 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.9% | -24.4pp | +15.3% | ✗ |
+| 2012-12-20 | $69.02 | Accenture plc Q1 FY13 results | 1.90 | -0.49 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +36.5% | -11.5pp | +17.6% | ✓ |
+| 2012-12-28 | $65.66 | Accenture plc Q1 FY13 results | 1.90 | -0.23 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.6% | -9.4pp | +23.8% | ✓ |
+| 2012-12-31 | $66.50 | Accenture plc Q1 FY13 results | 1.90 | -0.30 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.2% | -9.7pp | +22.4% | ✓ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |

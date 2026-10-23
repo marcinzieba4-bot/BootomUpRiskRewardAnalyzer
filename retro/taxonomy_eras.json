@@ -41,14 +41,18 @@
   },
   "CLOUD": {
    "label": "CLOUD",
-   "live_from": "2013-01-01",
-   "live_from_approx": true,
+   "live_from": "2012-10-30",
+   "live_from_basis": "earliest verified filing in this archive: Accenture's FY2012 10-K names 'cloud-based computing' among 'current areas of significant change' that 'may materially affect the cost and use of technology by our clients' (its FY2008-FY2011 10-Ks mention cloud only as an Accenture offering); the public debate may be older. Replaced an approximate 2013-01-01.",
    "market_pricing_from": "2015-04-23",
    "scope": "public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing",
    "pit_evidence": [
     {
      "date": "2006-03-14",
      "event": "AWS launches S3"
+    },
+    {
+     "date": "2012-10-30",
+     "event": "Accenture FY2012 10-K risk factors: 'cloud-based computing' among 'current areas of significant change' that 'may materially affect the cost and use of technology by our clients'"
     },
     {
      "date": "2015-04-23",

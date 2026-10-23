@@ -130,7 +130,7 @@ on its date, and the class names follow the theme:
 | theme (label) | live from | first market pricing | class family |
 |---|---|---|---|
 | GENAI (AI) = today's `AI_EXPOSED` | 2022-11-30 | 2023-05-02 (Chegg) | AI-FEAR BASKET / AI-EXPOSED, … |
-| CLOUD | ~2013 | 2015-04-23 (AWS disclosed) | CLOUD-FEAR BASKET / … |
+| CLOUD | 2012-10-30 (earliest verified 10-K) | 2015-04-23 (AWS disclosed) | CLOUD-FEAR BASKET / … |
 | ECOMMERCE (AMAZON) | ~2015 | 2017-06-16 (Whole Foods) | AMAZON-FEAR BASKET / … |
 | STREAMING | 2015-08-04 | 2015-08-04 (ESPN subs) | STREAMING-FEAR BASKET / … |
 | ENERGY_TRANSITION | 2015-12-12 | 2020-08-31 | TRANSITION-FEAR BASKET / … |
@@ -158,6 +158,8 @@ What the gates enforce:
   IT services in 2008 had their own live theme: offshore delivery. ACN's FY2007 10-K
   names Indian providers "often at highly competitive prices". ACN in January 2008
   carries it on the watch list, not AI.
+  From its FY2012 10-K (2012-10-30), ACN also carries CLOUD on the watch list: company-acknowledged,
+  no market read. Its earlier 10-Ks mention cloud only as an offering.
 
 ## Workflow
 
@@ -170,6 +172,7 @@ python3 retro/build_acn.py --weekly 2008-10-06 2008-12-31
 python3 retro/build_acn.py --weekly 2009-01-05 2009-12-31
 python3 retro/build_acn.py --weekly 2010-01-04 2010-12-31
 python3 retro/build_acn.py --weekly 2011-01-03 2011-12-31
+python3 retro/build_acn.py --weekly 2012-01-02 2012-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

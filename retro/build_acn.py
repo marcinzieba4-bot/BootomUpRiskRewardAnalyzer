@@ -220,6 +220,12 @@ def build(as_of, facts, acn, spx, engine):
                     "  to spread to run/maintain work as well.")
         cat3, cat4 = "(3) Consulting vs outsourcing bookings mix — where a slowdown shows first", "(4) Outsourcing renewal pricing"
         theme_summary = "no disruption theme has dated evidence"
+    # another live theme with company evidence joins the watch list; the theme signal and factors stay with the first
+    for e in [e for e in events if e["theme"] == "CLOUD"][-1:]:
+        watch.append({"theme": "CLOUD", "status": "live, company-acknowledged; no market read",
+                      "reason": (f"Live: Accenture's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                                 f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CLOUD) "
+                                 "only if dated evidence shows the market pricing cloud substitution of ACN's outsourcing specifically.")})
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{latest['next_q']} {fy_now} print)"
 
@@ -270,7 +276,7 @@ PIT_PROFILE = {{
     "risk": 2,
     "why": {R(h["why"])},
     "theme_watch": {R(watch)},
-    "evidence": {R([e["id"] for e in events])},
+    "evidence": {R(list(dict.fromkeys(e["id"] for e in events)))},
 }}
 
 # ── FACTS: market (prices truncated at AS_OF) ─────────────────────────────────
