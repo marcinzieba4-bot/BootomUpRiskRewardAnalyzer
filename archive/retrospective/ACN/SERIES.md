@@ -683,6 +683,110 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2020-12-18 | $266.25 | Accenture plc Q1 FY21 results | 2.20 | -1.71 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.2% | -4.9pp | +14.8% | ✓ |
 | 2020-12-24 | $257.30 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.4% | -0.6pp | +17.9% | ✓ |
 | 2020-12-31 | $261.21 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.1% | -0.4pp | +15.3% | ✓ |
+| 2021-01-08 | $264.16 | Accenture plc Q1 FY21 results | 2.20 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.8% | -0.1pp | +12.9% | ✓ |
+| 2021-01-15 | $253.65 | Accenture plc Q1 FY21 results | 2.20 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.3% | +5.1pp | +16.9% | ✗ |
+| 2021-01-22 | $254.77 | Accenture plc Q1 FY21 results | 2.20 | -1.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.2% | +6.6pp | +16.0% | ✗ |
+| 2021-01-29 | $241.92 | Accenture plc Q1 FY21 results | 2.20 | -1.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.9% | +5.0pp | +21.7% | ✗ |
+| 2021-02-05 | $253.54 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.2% | +7.7pp | +15.5% | ✗ |
+| 2021-02-12 | $257.47 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.3% | +6.4pp | +13.3% | ✗ |
+| 2021-02-19 | $254.29 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.0% | +4.5pp | +14.4% | ✗ |
+| 2021-02-26 | $250.90 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.4% | +2.0pp | +15.6% | ✗ |
+| 2021-03-05 | $249.51 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.0% | +2.6pp | +15.9% | ✗ |
+| 2021-03-12 | $264.95 | Accenture plc Q1 FY21 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.6% | -2.5pp | +8.8% | ✓ |
+| 2021-03-19 | $263.78 | Accenture plc Q2 FY21 results | 2.30 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.2% | -5.5pp | +8.8% | ✓ |
+| 2021-03-26 | $280.77 | Accenture plc Q2 FY21 results | 2.30 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.3% | -3.4pp | +1.7% | ✓ |
+| 2021-04-01 | $278.34 | Accenture plc Q2 FY21 results | 2.30 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.5% | +0.3pp | +2.2% | ✗ |
+| 2021-04-09 | $287.71 | Accenture plc Q2 FY21 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.6% | -1.8pp | -1.5% | ✓ |
+| 2021-04-16 | $286.96 | Accenture plc Q2 FY21 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.1% | -1.6pp | -1.5% | ✓ |
+| 2021-04-23 | $291.74 | Accenture plc Q2 FY21 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.5% | -4.4pp | -3.4% | ✓ |
+| 2021-04-30 | $289.97 | Accenture plc Q2 FY21 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.5% | -3.1pp | -3.0% | ✓ |
+| 2021-05-07 | $291.53 | Accenture plc Q2 FY21 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.1% | -6.7pp | -3.8% | ✓ |
+| 2021-05-14 | $288.20 | Accenture plc Q2 FY21 results | 2.30 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.0% | -2.7pp | -2.8% | ✓ |
+| 2021-05-21 | $283.38 | Accenture plc Q2 FY21 results | 2.30 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.2% | +1.3pp | -1.1% | ✗ |
+| 2021-05-28 | $282.16 | Accenture plc Q2 FY21 results | 2.30 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.5% | +7.6pp | -0.6% | ✗ |
+| 2021-06-04 | $283.17 | Accenture plc Q2 FY21 results | 2.30 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.8% | +8.7pp | -0.9% | ✗ |
+| 2021-06-11 | $285.28 | Accenture plc Q2 FY21 results | 2.30 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.1% | +6.9pp | -1.6% | ✗ |
+| 2021-06-18 | $281.25 | Accenture plc Q2 FY21 results | 2.30 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.5% | +7.6pp | +0.1% | ✗ |
+| 2021-06-25 | $294.66 | Accenture plc Q3 FY21 results | 3.55 | -0.22 | 8.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +4.0% | -0.4pp | -4.4% | ✓ |
+| 2021-07-02 | $304.84 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | 14.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.9% | -1.2pp | -7.4% | ✓ |
+| 2021-07-09 | $312.62 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | 51.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.4% | -3.2pp | -9.6% | ✓ |
+| 2021-07-16 | $311.91 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | 42.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.9% | -3.1pp | -9.1% | ✓ |
+| 2021-07-23 | $318.65 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.4% | -4.2pp | -10.8% | ✓ |
+| 2021-07-30 | $317.68 | Accenture plc Q3 FY21 results | 3.55 | -0.30 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.0% | -5.1pp | -10.4% | ✓ |
+| 2021-08-06 | $321.83 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.5% | -4.3pp | -11.5% | ✓ |
+| 2021-08-13 | $323.45 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.9% | -4.6pp | -11.9% | ✓ |
+| 2021-08-20 | $332.65 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.4% | -7.7pp | -14.4% | ✓ |
+| 2021-08-27 | $335.66 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.5% | -3.0pp | -15.2% | ✓ |
+| 2021-09-03 | $343.33 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.1% | -4.5pp | -16.9% | ✓ |
+| 2021-09-10 | $341.92 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.4% | -5.2pp | -16.3% | ✓ |
+| 2021-09-17 | $335.40 | Accenture plc Q3 FY21 results | 3.55 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.3% | -7.6pp | -14.5% | ✓ |
+| 2021-09-24 | $339.23 | Accenture plc Q4/FY21 results | 3.15 | -0.62 | 7.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.4% | -4.2pp | -15.2% | ✓ |
+| 2021-10-01 | $324.86 | Accenture plc Q4/FY21 results | 3.15 | -0.62 | 4.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -2.9% | -4.3pp | -11.1% | ✓ |
+| 2021-10-08 | $325.19 | Accenture plc Q4/FY21 results | 3.15 | -0.62 | 4.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -1.4% | -2.4pp | -10.9% | ✓ |
+| 2021-10-15 | $341.82 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | 8.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -9.2% | -8.8pp | -15.0% | ✓ |
+| 2021-10-22 | $353.79 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | 15.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.6% | -9.4pp | -17.6% | ✓ |
+| 2021-10-29 | $358.79 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | 27.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.7% | -8.9pp | -18.7% | ✓ |
+| 2021-11-05 | $368.46 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.6% | -8.0pp | -20.7% | ✓ |
+| 2021-11-12 | $371.23 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.5% | -8.6pp | -21.0% | ✓ |
+| 2021-11-19 | $369.79 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -9.0% | -7.8pp | -20.5% | ✓ |
+| 2021-11-26 | $353.60 | Accenture plc Q4/FY21 results | 3.15 | -0.70 | 14.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.1% | -5.0pp | -16.7% | ✓ |
+| 2021-12-03 | $361.42 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | 35.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.1% | -8.1pp | -18.3% | ✓ |
+| 2021-12-10 | $379.44 | Accenture plc Q4/FY21 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.8% | -9.3pp | -22.0% | ✓ |
+| 2021-12-17 | $396.24 | Accenture plc Q1 FY22 results | 3.55 | -0.48 | 16.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.0% | -15.8pp | -25.0% | ✓ |
+| 2021-12-23 | $403.31 | Accenture plc Q1 FY22 results | 3.55 | -0.48 | 34.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.0% | -13.4pp | -25.9% | ✓ |
+| 2021-12-31 | $414.55 | Accenture plc Q1 FY22 results | 3.55 | -0.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.3% | -16.1pp | -27.6% | ✓ |
+| 2022-01-07 | $370.75 | Accenture plc Q1 FY22 results | 3.55 | -0.38 | 4.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -6.9% | -10.0pp | -18.7% | ✓ |
+| 2022-01-14 | $353.36 | Accenture plc Q1 FY22 results | 3.55 | -0.09 | 3.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +3.0% | -2.3pp | -14.3% | ✓ |
+| 2022-01-21 | $335.63 | Accenture plc Q1 FY22 results | 3.55 | +0.19 | 2.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +11.1% | -2.0pp | -9.4% | ✓ |
+| 2022-01-28 | $342.85 | Accenture plc Q1 FY22 results | 3.55 | +0.12 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +10.9% | -2.4pp | -10.8% | ✓ |
+| 2022-02-04 | $347.50 | Accenture plc Q1 FY22 results | 3.55 | +0.06 | 2.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +9.9% | -3.1pp | -11.5% | ✓ |
+| 2022-02-11 | $329.18 | Accenture plc Q1 FY22 results | 3.55 | +0.32 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +15.6% | -1.1pp | -6.0% | ✓ |
+| 2022-02-18 | $321.18 | Accenture plc Q1 FY22 results | 3.55 | +0.45 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +17.8% | -0.2pp | -3.2% | ✓ |
+| 2022-02-25 | $322.51 | Accenture plc Q1 FY22 results | 3.55 | +0.45 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +19.8% | +0.8pp | -3.1% | ✓ |
+| 2022-03-04 | $314.16 | Accenture plc Q1 FY22 results | 3.55 | +0.60 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +25.0% | +3.5pp | +0.3% | ✓ |
+| 2022-03-11 | $311.58 | Accenture plc Q1 FY22 results | 3.55 | +0.66 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +22.7% | -2.1pp | +1.9% | ✓ |
+| 2022-03-18 | $323.95 | Accenture plc Q2 FY22 results | 3.40 | +0.35 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +17.8% | -0.5pp | -1.2% | ✓ |
+| 2022-03-25 | $327.71 | Accenture plc Q2 FY22 results | 3.40 | +0.30 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +4.6% | -13.1pp | -1.8% | ✓ |
+| 2022-04-01 | $340.64 | Accenture plc Q2 FY22 results | 3.40 | +0.12 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +2.2% | -16.0pp | -5.2% | ✓ |
+| 2022-04-08 | $338.92 | Accenture plc Q2 FY22 results | 3.40 | +0.15 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +0.6% | -18.3pp | -4.5% | ✓ |
+| 2022-04-14 | $319.47 | Accenture plc Q2 FY22 results | 3.40 | +0.47 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.6% | -18.1pp | +1.6% | ✗ |
+| 2022-04-22 | $310.80 | Accenture plc Q2 FY22 results | 3.40 | +0.69 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +5.1% | -15.3pp | +4.7% | ✗ |
+| 2022-04-29 | $300.36 | Accenture plc Q2 FY22 results | 3.40 | +0.84 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +4.0% | -23.0pp | +8.6% | ✗ |
+| 2022-05-06 | $295.74 | Accenture plc Q2 FY22 results | 3.40 | +0.91 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +6.6% | -22.1pp | +10.4% | ✗ |
+| 2022-05-13 | $286.77 | Accenture plc Q2 FY22 results | 3.40 | +1.04 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +10.4% | -22.5pp | +14.2% | ✗ |
+| 2022-05-20 | $276.65 | Accenture plc Q2 FY22 results | 3.40 | +1.19 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.9% | -25.6pp | +18.5% | ✗ |
+| 2022-05-27 | $304.15 | Accenture plc Q2 FY22 results | 3.40 | +0.82 | 0.96x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +2.0% | -28.6pp | +7.9% | ✗ |
+| 2022-06-03 | $304.95 | Accenture plc Q2 FY22 results | 3.40 | +0.83 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -4.5% | -36.3pp | +7.5% | ✗ |
+| 2022-06-10 | $286.01 | Accenture plc Q2 FY22 results | 3.40 | +1.07 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +4.8% | -36.0pp | +14.5% | ✗ |
+| 2022-06-17 | $275.38 | Accenture plc Q2 FY22 results | 3.40 | +1.24 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +7.1% | -45.6pp | +18.7% | ✗ |
+| 2022-06-24 | $299.37 | Accenture plc Q3 FY22 results | 3.40 | +0.77 | 0.96x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +5.7% | -36.8pp | +9.1% | ✗ |
+| 2022-07-01 | $280.65 | Accenture plc Q3 FY22 results | 3.40 | +1.03 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +11.1% | -35.4pp | +16.4% | ✗ |
+| 2022-07-08 | $279.07 | Accenture plc Q3 FY22 results | 3.40 | +1.07 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +10.6% | -35.7pp | +17.0% | ✗ |
+| 2022-07-15 | $271.52 | Accenture plc Q3 FY22 results | 3.40 | +1.17 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +20.6% | -28.7pp | +20.2% | ✗ |
+| 2022-07-22 | $288.01 | Accenture plc Q3 FY22 results | 3.40 | +0.94 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.5% | -25.3pp | +13.4% | ✗ |
+| 2022-07-29 | $306.26 | Accenture plc Q3 FY22 results | 3.40 | +0.70 | 1.04x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +9.7% | -25.8pp | +6.7% | ✗ |
+| 2022-08-05 | $309.35 | Accenture plc Q3 FY22 results | 3.40 | +0.64 | 1.08x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.5% | -23.8pp | +5.7% | ✗ |
+| 2022-08-12 | $320.44 | Accenture plc Q3 FY22 results | 3.40 | +0.38 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.0% | -27.0pp | +2.1% | ✗ |
+| 2022-08-19 | $315.29 | Accenture plc Q3 FY22 results | 3.40 | +0.49 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +7.5% | -28.2pp | +3.9% | ✗ |
+| 2022-08-26 | $298.13 | Accenture plc Q3 FY22 results | 3.40 | +0.84 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +16.2% | -25.5pp | +10.0% | ✗ |
+| 2022-09-02 | $284.07 | Accenture plc Q3 FY22 results | 3.40 | +1.03 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.8% | -23.3pp | +15.5% | ✗ |
+| 2022-09-09 | $290.55 | Accenture plc Q3 FY22 results | 3.40 | +0.95 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.0% | -16.7pp | +13.0% | ✗ |
+| 2022-09-16 | $272.68 | Accenture plc Q3 FY22 results | 3.40 | +1.21 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.4% | -15.6pp | +20.7% | ✓ |
+| 2022-09-23 | $259.98 | Accenture Q4/FY22 results | 3.55 | +1.37 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.2% | -24.3pp | +26.7% | ✓ |
+| 2022-09-30 | $257.30 | Accenture Q4/FY22 results | 3.55 | +1.42 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -23.3pp | +28.3% | ✓ |
+| 2022-10-07 | $259.71 | Accenture Q4/FY22 results | 3.55 | +1.37 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -19.1pp | +27.5% | ✓ |
+| 2022-10-14 | $252.72 | Accenture Q4/FY22 results | 3.55 | +1.40 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.2% | -18.9pp | +31.5% | ✓ |
+| 2022-10-21 | $269.57 | Accenture Q4/FY22 results | 3.55 | +1.10 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.2% | -16.3pp | +23.8% | ✓ |
+| 2022-10-28 | $287.78 | Accenture Q4/FY22 results | 3.55 | +0.55 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +29.0% | -23.8pp | +16.4% | ✗ |
+| 2022-11-04 | $261.16 | Accenture Q4/FY22 results | 3.55 | +1.26 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.5% | -19.5pp | +28.7% | ✓ |
+| 2022-11-11 | $290.09 | Accenture Q4/FY22 results | 3.55 | +0.50 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +26.6% | -27.0pp | +16.1% | ✗ |
+| 2022-11-18 | $286.50 | Accenture Q4/FY22 results | 3.55 | +0.58 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +26.6% | -25.3pp | +17.8% | ✗ |
+| 2022-11-25 | $296.40 | Accenture Q4/FY22 results | 3.55 | +0.40 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +25.3% | -26.6pp | +14.1% | ✗ |
+| 2022-12-02 | $300.13 | Accenture Q4/FY22 results | 3.55 | +0.33 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.7% | -27.9pp | +12.8% | ✗ |
+| 2022-12-09 | $288.41 | Accenture Q4/FY22 results | 3.55 | +0.56 | 1.03x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +28.1% | -29.1pp | +17.5% | ✗ |
+| 2022-12-16 | $264.48 | Accenture Q1 FY23 results | 2.95 | +0.42 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.8% | -22.6pp | +28.3% | ✓ |
+| 2022-12-23 | $266.09 | Accenture Q1 FY23 results | 2.95 | +0.39 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +38.6% | -20.3pp | +27.6% | ✓ |
+| 2022-12-30 | $266.84 | Accenture Q1 FY23 results | 2.95 | +0.36 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +35.8% | -21.5pp | +27.3% | ✓ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |

@@ -1,0 +1,350 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2022-10-07",
+ "price_date": "2022-10-07",
+ "price": 259.71,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: global consulting and outsourcing leader across five industry groups with record bookings ($71.7B in FY22); discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [
+   {
+    "theme": "OFFSHORE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Accenture's own FY2021 10-K names off-shore providers, 'off-shore IT service providers in lower-cost locations, particularly in India', among its competitors and says competitors 'may be willing, at times, to price contracts lower than us' and 'may also offer more aggressive contractual terms', and that its global delivery capability 'is concentrated in India and the Philippines', while its own global delivery capability has 'large portions' based in India and the Philippines (no delivery headcount or center count given; the FY2016 10-K counted about 285,000 people). The stock trades at 23.1x FY23E — near its own median. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."
+   },
+   {
+    "theme": "CLOUD",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Accenture's own FY2021 10-K says 'Examples of areas of significant change include digital-, cloud- and security-related offerings, which are continually evolving, as well as developments in areas such as artificial intelligence, augmented reality, automation, blockchain, Internet of Things, quantum and Edge computing, infrastructure and network engineering, intelligent connected products, digital engineering and manufacturing, and as-a-service solutions. ... Some of these technological developments have reduced and replaced some of our historical services and solutions and may continue to do so in the future.' At the same time it reports 'growing demand to assist clients with application modernization and maintenance, cloud enablement and managed security services'. The stock trades at 23.1x FY23E — near its own median. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market pricing cloud substitution of ACN's outsourcing specifically."
+   }
+  ],
+  "evidence": [
+   "S95"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Accenture: global consulting and outsourcing leader across five industry groups with record bookings ($71.7B in FY22); discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.50x; +28% to EPP floor; model-vs-market gap +1.37; conservative 2yr +19%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.5,
+  "ratio_b_fmt": "0.50x",
+  "epp": 202.5,
+  "epp_gap_pct": 28.3,
+  "epp_adj": 0.0,
+  "proxy_composite": 3.55,
+  "sca": 0.183,
+  "adj_composite": 3.732,
+  "market_composite": 2.36,
+  "adj_gap": 1.37,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 18.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 11.25,
+    "pe": 17.4,
+    "price": 196,
+    "desc": "Flat EPS (worst year FY11-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 14.78,
+    "pe": 21.5,
+    "price": 318,
+    "desc": "EPS +14.6%/yr (latest guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 14.78,
+    "pe": 26.2,
+    "price": 387,
+    "desc": "EPS +14.6%/yr (FY11-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 16.15,
+    "pe": 30.5,
+    "price": 493,
+    "desc": "EPS +19.8%/yr (best 2-yr run FY11-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 1.37,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.24,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 1.99,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.25,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 0.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.41,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 1.48,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.6,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 1.26,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 1.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 9.9,
+   "adj_gap": 1.37,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 28.3,
+   "adj_gap": 1.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.9,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "ACN (retrospective, 2022-10-07) ◉ BUY — Ratio B 0.50x (24.5% downside to Bear $196 / +49.0% upside to Bull $387) | Adj composite 3.73 vs market 2.36: gap +1.37 [UNDERVALUED] | +28% above the EPP floor $202 (18x FY23E $11.25) | Conservative 2-yr case: +18.9% total (+9.5%/yr) | At 23.1x FY23E the 15% hurdle price $343 sits between the BASE and BULL cases; consulting +22% LC in Q4, Q1 guided +10-14% LC; offshore competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "S95",
+   "published": "2021-10-15",
+   "filed": "2021-10-15 10:54 ET, during market hours: public before that day's close",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2021",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000229/acn-20210831.htm",
+   "supports": "income statement FY19-FY21 (revenues, diluted EPS, diluted shares 645.9M in FY21; no five-year selected data, Item 6 reserved); 'off-shore IT service providers in lower-cost locations, particularly in India'; global delivery capability 'concentrated in India and the Philippines', no delivery headcount given; 'Some of these technological developments have reduced and replaced some of our historical services and solutions'"
+  },
+  {
+   "id": "S94",
+   "published": "2021-09-23",
+   "title": "Accenture plc Q4/FY21 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000218/fy21q4plc8-kexhibit.htm",
+   "supports": "Q4 and FY21 revenues by type of work and industry group, record bookings with local-currency growth, margin, EPS with and without investment gains, diluted shares, cash; $0.97 quarterly dividend; FY22 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  {
+   "id": "S90",
+   "published": "2020-10-23",
+   "filed": "2020-10-22 20:28 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2020",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737320000376/acn-20200831.htm",
+   "supports": "selected financial data FY16-FY20 (revenues, diluted EPS), FY20 diluted shares 647.8M; 'off-shore IT service providers in lower-cost locations, particularly in India'; global delivery capability 'concentrated in India and the Philippines', no delivery headcount given; 'Some of these technological developments have reduced and replaced some of our historical services and solutions'"
+  },
+  {
+   "id": "S85",
+   "published": "2019-10-29",
+   "filed": "2019-10-29 10:53 ET, during market hours: public before that day's close",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2019",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737319000339/acn831201910k.htm",
+   "supports": "selected financial data FY15-FY19 (revenues revised to the new revenue standard, diluted EPS), FY19 diluted shares 650.2M; off-shore competitors 'in lower-cost locations, particularly in India'; global delivery capability 'concentrated in India and the Philippines' across 'more than 50 delivery centers', no delivery headcount given; 'Some of these technologies have reduced and replaced some of our historical services and solutions'"
+  },
+  {
+   "id": "S80",
+   "published": "2018-10-25",
+   "filed": "2018-10-24 21:05 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2018",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737318000318/acn831201810k.htm",
+   "supports": "selected financial data FY14-FY18 (net revenues, diluted EPS), FY18 diluted shares 655.3M; off-shore competitors 'in lower-cost locations, particularly in India'; global delivery capability 'concentrated in India and the Philippines' across 'more than 50 delivery centers', no delivery headcount given; 'Some of these technologies have reduced and replaced some of our historical services and solutions'"
+  },
+  {
+   "id": "S75",
+   "published": "2017-10-27",
+   "filed": "2017-10-26 20:27 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2017",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737317000430/acn831201710k.htm",
+   "supports": "selected financial data FY13-FY17 (net revenues, diluted EPS), FY17 diluted shares 660.5M; off-shore competitors 'in lower-cost locations, particularly in India'; global delivery capability 'concentrated in India and the Philippines' across 'more than 50 delivery centers', no delivery headcount given; 'Some of these technologies have reduced and replaced some of our historical services and solutions'"
+  },
+  {
+   "id": "S70",
+   "published": "2016-10-31",
+   "filed": "2016-10-28 21:05 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2016",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316001080/acn831201610k.htm",
+   "supports": "selected financial data FY12-FY16 (net revenues, diluted EPS), FY16 diluted shares 667.8M; off-shore competitors 'in lower-cost locations, particularly in India'; delivery network 'increasingly concentrated in India and the Philippines'; approximately 285,000 professionals in the network; cloud-based services, artificial intelligence and automation 'have reduced and replaced some of our historical services and solutions'"
+  },
+  {
+   "id": "S65",
+   "published": "2015-11-02",
+   "filed": "2015-10-30 17:09 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2015",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000457/acn831201510k.htm",
+   "supports": "selected financial data FY11-FY15 (net revenues, diluted EPS), FY15 diluted shares 678.8M; off-shore competitors 'in lower-cost locations, particularly in India'; delivery network 'increasingly concentrated in India and the Philippines'; approximately 257,000 professionals in the network; technologies including cloud-based services 'could reduce and, over time, replace some of our current business'"
+  },
+  {
+   "id": "S60",
+   "published": "2014-10-27",
+   "filed": "2014-10-24 20:14 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2014",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737314000467/acn831201410k.htm",
+   "supports": "selected financial data FY10-FY14 (net revenues, diluted EPS), FY14 diluted shares 692.4M; off-shore competitors 'particularly in India'; delivery network 'increasingly concentrated in India and the Philippines'; more than 205,000 professionals in the network; mobility, cloud, digital, data and SaaS 'could reduce and, over time, replace some of our current business'"
+  },
+  {
+   "id": "S55",
+   "published": "2013-10-30",
+   "filed": "2013-10-29 20:51 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2013",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737313000482/acn831201310k.htm",
+   "supports": "selected financial data FY09-FY13 (net revenues, diluted EPS), FY13 diluted shares 712.8M; off-shore competitors 'particularly in India, the Philippines and China'; delivery network 'increasingly concentrated in India and the Philippines'; more than 182,000 people in the network; 'cloud-based computing' among changes that 'may materially affect the cost and use of technology by our clients'"
+  },
+  {
+   "id": "S50",
+   "published": "2012-10-30",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737312000170/acn831201210k.htm",
+   "supports": "selected financial data FY08-FY12 (net revenues, diluted EPS; FY11 restated to $3.39), FY12 diluted shares 726.4M; competitors include off-shore providers 'particularly in India, the Philippines and China'; delivery network 'increasingly concentrated in India and the Philippines'; Global Delivery Network of approximately 162,000 people; 'cloud-based computing' among 'current areas of significant change' that 'may materially affect the cost and use of technology by our clients'"
+  },
+  {
+   "id": "S45",
+   "published": "2011-10-24",
+   "filed": "2011-10-21 16:06 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
+   "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
+  },
+  {
+   "id": "S54",
+   "published": "2013-09-26",
+   "title": "Accenture plc Q4/FY13 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737313000438/acn-83120138xkexhibit.htm",
+   "supports": "Q4 and FY13 net revenues by type of work and operating group, record bookings, margin and EPS with and without benefits, diluted shares, cash; $0.93 semi-annual dividend; FY14 and Q1 guidance"
+  },
+  {
+   "id": "S64",
+   "published": "2015-09-24",
+   "title": "Accenture plc Q4/FY15 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000403/acn-83120158xkexhibit.htm",
+   "supports": "Q4 and FY15 net revenues by type of work and operating group, bookings, margin and EPS with and without the pension settlement charge, diluted shares, cash; $1.10 semi-annual dividend; FY16 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  {
+   "id": "S69",
+   "published": "2016-09-29",
+   "title": "Accenture plc Q4/FY16 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316001021/acn-83120168xkexhibit.htm",
+   "supports": "Q4 and FY16 net revenues by type of work and operating group, bookings, margin, EPS with and without gains on the sale of businesses, diluted shares, cash; $1.21 semi-annual dividend; FY17 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  {
+   "id": "S74",
+   "published": "2017-09-28",
+   "title": "Accenture plc Q4/FY17 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737317000386/acn-83120178xkexhibit.htm",
+   "supports": "Q4 and FY17 net revenues by type of work and operating group, bookings, margin and EPS with and without the pension settlement charge, diluted shares, cash; $1.33 semi-annual dividend; FY18 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  {
+   "id": "S79",
+   "published": "2018-09-27",
+   "title": "Accenture plc Q4/FY18 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737318000288/acn-83120188xkexhibit.htm",
+   "supports": "Q4 and FY18 net revenues by type of work and operating group, record bookings, margin, EPS with and without the charges related to tax law changes, diluted shares, cash; $1.46 semi-annual dividend; FY19 and Q1 guidance (Q1 in local currency) under the new revenue, pension and tax accounting standards, with FY18 operating margin revised to 14.4% on that basis; released before the open"
+  },
+  {
+   "id": "S89",
+   "published": "2020-09-24",
+   "title": "Accenture plc Q4/FY20 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737320000336/fy20q4plc8-kexhibit.htm",
+   "supports": "Q4 and FY20 revenues by type of work, geographic market and industry group, record bookings with local-currency growth, margin, EPS with and without gains on an investment, diluted shares, cash; $0.88 quarterly dividend; FY21 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  {
+   "id": "S93",
+   "published": "2021-06-24",
+   "title": "Accenture plc Q3 FY21 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000159/fy21q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY21 revenues by type of work and industry group, bookings (U.S. dollar growth only), margin, cash, diluted shares; $0.88 quarterly dividend; FY21 and Q4 guidance (Q4 in local currency), GAAP and adjusted; released before the open"
+  },
+  {
+   "id": "S96",
+   "published": "2021-12-16",
+   "title": "Accenture plc Q1 FY22 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000295/fy22q1earnings8-kexhibit.htm",
+   "supports": "Q1 FY22 revenues by type of work and industry group, record bookings with local-currency growth, margin, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q2 guidance (Q2 in local currency); released before the open (8:00 a.m. EST call)"
+  },
+  {
+   "id": "S97",
+   "published": "2022-03-17",
+   "title": "Accenture plc Q2 FY22 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000143/fy22q2earnings8-kexhibit.htm",
+   "supports": "Q2 FY22 revenues by type of work and industry group, record bookings with local-currency growth, margin, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q3 guidance (Q3 in local currency); released before the open (8:00 a.m. EDT call)"
+  },
+  {
+   "id": "S98",
+   "published": "2022-06-23",
+   "title": "Accenture plc Q3 FY22 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000199/fy22q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY22 revenues by type of work and industry group, bookings with local-currency growth, margin, EPS including a $0.15 charge for the disposition of the Russia business, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q4 guidance (Q4 in local currency); released before the open"
+  },
+  {
+   "id": "S1",
+   "published": "2022-09-22",
+   "title": "Accenture Q4/FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
+   "supports": "FY22 revenue +26% LC, record $71.7B bookings, FY22 operating margin 15.2%, Q4 consulting +22% LC, FY21 adjusted EPS $8.80, dividend $1.12 (+15%), >= $7.1B FY23 cash return"
+  },
+  {
+   "id": "S12",
+   "published": "2022-10-07",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $259.71, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}

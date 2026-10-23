@@ -135,7 +135,12 @@ How recurring cases are encoded (each was decided the first time it came up, the
   $7.48-7.70 and $7.57-7.70. FY20 enters the history at the company's $7.46 excluding $0.43 of investment gains, and the
   FY21 guide is used ex-gains from the print that first gives that figure (Q1 FY21, $8.02-8.25).
 - **Bookings growth the company states in local currency** is used as stated (ACN from Q3 FY20). A release that gives
-  only dollar growth and no FX impact for bookings keeps the dollar figure, with a note (ACN Q1 FY21: +25%).
+  only dollar growth and no FX impact for bookings keeps the dollar figure, with a note (ACN Q1 FY21: +25%; Q2 FY21
+  +13%; Q3 FY21 +39%).
+- **A one-off without a company-published figure excluding it** stays in. ACN's FY22 guide from Q3 FY22 ($10.61-10.70)
+  includes the $0.15 Russia disposition charge, and FY22 enters the history at GAAP $10.71: no adjusted figure was published.
+- **A 10-K without five-year selected data** (Item 6 reserved from the FY21 10-K) supplies the years in its income
+  statement (FY19-FY21); earlier years keep the latest 10-K that reported them.
 - **A change of segment structure** keeps the segment bridge on the lines the company still reports each quarter. ACN
   manages through three geographic markets from 2020-03-01 but still reports its five industry groups, the same lines
   as the old operating groups, so the bridge keeps them. The split is display only; the bridge total does not change.
@@ -171,8 +176,31 @@ below zero reads `+-2-2% LC` (ACN Q2-Q4 FY20 prints: 39 dates, 2020-03-20 to 202
 into every model, so it is left for an explicit engine revision.
 
 Ratio B is `inf` (printed `infx`) when the price is above the BULL scenario price: there is no upside even in the bull
-case. ACN reached that on 14 dates in 2018 and 59 in 2019-2020. `analysis.json` stores it as `Infinity`,
-which Python's json reads.
+case. ACN reached that on 14 dates in 2018, 59 in 2019-2020 and 38 in 2021-2022. `analysis.json` stores it as
+`Infinity`, which Python's json reads.
+
+### Seam with the 2023 pilot (2022-10-12)
+
+The 2023 series was the pilot of method r2. It was built from its own FY22 history vintage (sources S1, S2), before the
+2008-2022 chain settled the encoding rules above. The 2021-2022 series was added so that the 26 pilot models stay
+byte-identical, which means dates from the FY22 vintage on (2022-10-14 to 2022-12-30) inherit the pilot's conventions:
+
+- **EPS one-offs.** FY13 is the mean of FY12 and FY14 (4.18); FY16 and FY17 are averaged (5.945 each); FY15, FY18 and
+  FY20 are GAAP. The chain uses the company's own adjusted figures (4.21, 5.34, 5.91, 4.82, 6.74, 7.46).
+- **Revenue.** Revenues come from XBRL totals (FY12-FY18 on the old gross basis, e.g. FY18 $41.60B vs $40.99B revised), not the net/revised series.
+- **Buyback window.** Diluted shares are FY18 and FY22 only, so BUYBACK is a 4-year rate (0.48%/yr on 2022-10-14),
+  not the decade rate (1.31% on 2022-10-07).
+- **Theme events.** No OFFSHORE or CLOUD events are recorded for the FY22 10-K, so seven dates (2022-10-14 to
+  2022-11-25) show no disruption theme. GENAI then goes live with ChatGPT (from 2022-12-02).
+- **Dating.** The FY22 10-K was accepted 2022-10-12 21:04 ET, after the close. By the rule above it counts from
+  2022-10-13, but the pilot dates it 2022-10-12. No archived date falls on 2022-10-12, so no close met it early.
+
+Across the seam the class is unchanged on the first pilot date (CHEAP on 2022-10-07 and 2022-10-14). Scenario inputs
+move: BASE 14.6% to 13.8%, XBULL 19.8% to 16.5%. To keep the 2023 models byte-identical, the 2021-2022 work cites the
+pilot's S1 for Q4 FY22 and carries the pilot's values for Q4 consulting (+22% LC) and the dividend line. It also marks
+Q1 FY23 as released before the open; that field is used only by the date rule. Harmonizing the pilot with the chain
+means a new FY22 vintage (and an audit of the Q1-Q3 FY23 prints) and a re-run of 2022-10-14 onward. That changes
+archived models, so it is a decision for the owner.
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
@@ -238,6 +266,7 @@ python3 retro/build_acn.py --weekly 2013-01-07 2014-12-31
 python3 retro/build_acn.py --weekly 2015-01-05 2016-12-31
 python3 retro/build_acn.py --weekly 2017-01-02 2018-12-31
 python3 retro/build_acn.py --weekly 2019-01-07 2020-12-31
+python3 retro/build_acn.py --weekly 2021-01-04 2022-12-31        # joins the 2023 pilot (see "Seam with the 2023 pilot")
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

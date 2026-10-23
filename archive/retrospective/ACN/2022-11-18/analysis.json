@@ -1,0 +1,182 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2022-11-18",
+ "price_date": "2022-11-18",
+ "price": 286.5,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 1.01x; +42% to EPP floor; model-vs-market gap +0.58; conservative 2yr +6%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 1.01,
+  "ratio_b_fmt": "1.01x",
+  "epp": 202.5,
+  "epp_gap_pct": 41.5,
+  "epp_adj": -0.1,
+  "proxy_composite": 3.55,
+  "sca": 0.133,
+  "adj_composite": 3.582,
+  "market_composite": 3.0,
+  "adj_gap": 0.58,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 6.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 11.25,
+    "pe": 17.3,
+    "price": 195,
+    "desc": "Flat EPS (worst year FY12-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 14.56,
+    "pe": 21.5,
+    "price": 313,
+    "desc": "EPS +13.8%/yr (latest guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 14.56,
+    "pe": 25.9,
+    "price": 377,
+    "desc": "EPS +13.8%/yr (FY12-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.27,
+    "pe": 30.2,
+    "price": 461,
+    "desc": "EPS +16.5%/yr (best 2-yr run FY12-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.01,
+   "epp_gap_pct": 41.5,
+   "adj_gap": 0.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 6.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 41.5,
+   "adj_gap": 1.41,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 6.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 3.72,
+   "epp_gap_pct": 41.5,
+   "adj_gap": -0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 6.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 41.5,
+   "adj_gap": 0.79,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 6.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.23,
+   "epp_gap_pct": 41.5,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 6.3,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.01,
+   "epp_gap_pct": 41.5,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 6.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.01,
+   "epp_gap_pct": 21.3,
+   "adj_gap": 0.68,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 6.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.01,
+   "epp_gap_pct": 41.5,
+   "adj_gap": 1.09,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 6.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "ACN (retrospective, 2022-11-18) ◎ ACCUMULATE — Ratio B 1.01x (31.9% downside to Bear $195 / +31.6% upside to Bull $377) | Adj composite 3.58 vs market 3.00: gap +0.58 [UNDERVALUED] | +41% above the EPP floor $202 (18x FY23E $11.25) | Conservative 2-yr case: +6.3% total (+3.1%/yr) | At 25.5x FY23E the 15% hurdle price $379 sits above the BULL case; consulting +22% LC in Q4, Q1 guided +10-14% LC; no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "S1",
+   "published": "2022-09-22",
+   "title": "Accenture Q4/FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
+   "supports": "FY22 revenue +26% LC, record $71.7B bookings, FY22 operating margin 15.2%, Q4 consulting +22% LC, FY21 adjusted EPS $8.80, dividend $1.12 (+15%), >= $7.1B FY23 cash return"
+  },
+  {
+   "id": "S2",
+   "published": "2022-10-12",
+   "title": "SEC XBRL company facts, 10-K filings 2010-10-26 .. 2022-10-12",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001467373.json",
+   "supports": "GAAP diluted EPS, revenue and diluted shares FY2012-FY2022; only facts filed on or before 2022-10-12 used"
+  },
+  {
+   "id": "S12",
+   "published": "2022-11-18",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $286.50, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}

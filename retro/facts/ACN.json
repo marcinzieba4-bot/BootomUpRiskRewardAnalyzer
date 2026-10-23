@@ -502,6 +502,49 @@
    "title": "Accenture plc Q1 FY21 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737320000429/fy21q1earnings8-kexhibit.htm",
    "supports": "Q1 FY21 revenues by type of work, geographic market and industry group, bookings (U.S. dollar growth only), margin, EPS with and without gains on an investment, cash, diluted shares; $0.88 quarterly dividend; FY21 and Q2 guidance (Q2 in local currency), GAAP and adjusted; released before the open (8:00 a.m. EST call)"
+  },
+  "S92": {
+   "published": "2021-03-18",
+   "title": "Accenture plc Q2 FY21 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000104/fy21q2earnings8-kexhibit.htm",
+   "supports": "Q2 FY21 revenues by type of work and industry group, record bookings (U.S. dollar growth only), margin, EPS with and without investment gains, cash, diluted shares; $0.88 quarterly dividend; FY21 and Q3 guidance (Q3 in local currency), GAAP and adjusted; released before the open (8:00 a.m. EDT call)"
+  },
+  "S93": {
+   "published": "2021-06-24",
+   "title": "Accenture plc Q3 FY21 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000159/fy21q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY21 revenues by type of work and industry group, bookings (U.S. dollar growth only), margin, cash, diluted shares; $0.88 quarterly dividend; FY21 and Q4 guidance (Q4 in local currency), GAAP and adjusted; released before the open"
+  },
+  "S94": {
+   "published": "2021-09-23",
+   "title": "Accenture plc Q4/FY21 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000218/fy21q4plc8-kexhibit.htm",
+   "supports": "Q4 and FY21 revenues by type of work and industry group, record bookings with local-currency growth, margin, EPS with and without investment gains, diluted shares, cash; $0.97 quarterly dividend; FY22 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  "S95": {
+   "published": "2021-10-15",
+   "filed": "2021-10-15 10:54 ET, during market hours: public before that day's close",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2021",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000229/acn-20210831.htm",
+   "supports": "income statement FY19-FY21 (revenues, diluted EPS, diluted shares 645.9M in FY21; no five-year selected data, Item 6 reserved); 'off-shore IT service providers in lower-cost locations, particularly in India'; global delivery capability 'concentrated in India and the Philippines', no delivery headcount given; 'Some of these technological developments have reduced and replaced some of our historical services and solutions'"
+  },
+  "S96": {
+   "published": "2021-12-16",
+   "title": "Accenture plc Q1 FY22 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737321000295/fy22q1earnings8-kexhibit.htm",
+   "supports": "Q1 FY22 revenues by type of work and industry group, record bookings with local-currency growth, margin, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q2 guidance (Q2 in local currency); released before the open (8:00 a.m. EST call)"
+  },
+  "S97": {
+   "published": "2022-03-17",
+   "title": "Accenture plc Q2 FY22 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000143/fy22q2earnings8-kexhibit.htm",
+   "supports": "Q2 FY22 revenues by type of work and industry group, record bookings with local-currency growth, margin, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q3 guidance (Q3 in local currency); released before the open (8:00 a.m. EDT call)"
+  },
+  "S98": {
+   "published": "2022-06-23",
+   "title": "Accenture plc Q3 FY22 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000199/fy22q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY22 revenues by type of work and industry group, bookings with local-currency growth, margin, EPS including a $0.15 charge for the disposition of the Russia business, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q4 guidance (Q4 in local currency); released before the open"
   }
  },
  "history_vintages": [
@@ -1568,6 +1611,94 @@
    "margin_signal_name": "Operating margin change",
    "business_line": "Management consulting, technology services and outsourcing",
    "tax_note": "FY21 guide 23-25% (S89)"
+  },
+  {
+   "published": "2021-10-15",
+   "filed": "2021-10-15 10:54 ET, during market hours: public before that day's close",
+   "sources": [
+    "S95",
+    "S94",
+    "S90",
+    "S85",
+    "S80",
+    "S75",
+    "S70",
+    "S65",
+    "S60",
+    "S55",
+    "S50",
+    "S45",
+    "S54",
+    "S64",
+    "S69",
+    "S74",
+    "S79",
+    "S89",
+    "S93"
+   ],
+   "company": "Accenture plc",
+   "fy_label": "FY21",
+   "why": "Accenture: global consulting and outsourcing leader across five industry groups with record bookings ($59.3B in FY21); discretionary consulting demand is cyclical, the franchise is not",
+   "eps_gaap": {
+    "2011": 3.39,
+    "2012": 3.84,
+    "2013": 4.93,
+    "2014": 4.52,
+    "2015": 4.76,
+    "2016": 6.45,
+    "2017": 5.44,
+    "2018": 6.34,
+    "2019": 7.36,
+    "2020": 7.89,
+    "2021": 9.16
+   },
+   "eps_normalized": {
+    "2011": 3.39,
+    "2012": 3.84,
+    "2013": 4.21,
+    "2014": 4.52,
+    "2015": 4.82,
+    "2016": 5.34,
+    "2017": 5.91,
+    "2018": 6.74,
+    "2019": 7.36,
+    "2020": 7.46,
+    "2021": 8.8
+   },
+   "normalization": "the ten fiscal years to FY21: FY19-FY21 from the FY21 10-K (S95; no five-year selected data), FY11-FY18 from earlier 10-Ks (S45, S50, S55, S60, S85, S90); revenues FY15 on are as revised for the new revenue standard (including reimbursements; S85), FY14 and earlier are net revenues as reported, so the FY14-FY15 step mixes the two bases; FY13 = $4.21 excluding $0.72 of reorganization and prior-year tax benefits (S54; GAAP $4.93); FY15 = $4.82 excluding the $0.06 pension settlement charge (S64; GAAP $4.76); FY16 = $5.34 excluding $1.11 of gains on the sale of businesses (S69; GAAP $6.45); FY17 = $5.91 excluding the $0.47 pension settlement charge (S74; GAAP $5.44); FY18 = $6.74 excluding $0.40 of charges related to tax law changes (S79; GAAP $6.34); FY19 = GAAP $7.36 (no adjusted figure published); FY20 = $7.46 excluding $0.43 of gains on an investment (S89; GAAP $7.89); FY21 = $8.80 excluding $0.36 of gains on an investment (S94; GAAP $9.16)",
+   "revenue_usd_b": {
+    "2011": 25.507,
+    "2012": 27.862,
+    "2013": 28.563,
+    "2014": 30.002,
+    "2015": 32.406,
+    "2016": 34.254,
+    "2017": 36.177,
+    "2018": 40.993,
+    "2019": 43.215,
+    "2020": 44.327,
+    "2021": 50.533
+   },
+   "diluted_shares_m": {
+    "2011": 742.185,
+    "2021": 645.909
+   },
+   "pe_window_start": "2002-09-01",
+   "prev_fy_op_margin": 15.1,
+   "prev_fy_revenue_lc_growth": 11,
+   "prev_fy_bookings_b": 59.3,
+   "prev_fy_bookings_record": true,
+   "prev_q_consulting_lc": 16,
+   "prev_q_label": "Q3 FY21",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY21, the first to guide FY22) (S93)",
+   "dividend_annual": 3.88,
+   "dividend_note": "$0.97 quarterly, declared 2021-09-23 (S94)",
+   "tax_rate": 0.24,
+   "cash_return_text": "$5.94B returned to shareholders in FY21",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
+   "tax_note": "FY22 guide 23-25% (S94)"
   },
   {
    "published": "2022-10-12",
@@ -6544,6 +6675,647 @@
    "dividend_note": "$0.88 quarterly, declared 2020-12-17 (S91)"
   },
   {
+   "quarter": "Q2 FY21",
+   "published": "2021-03-18",
+   "source": "S92",
+   "release": "Mar 18",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 12.09,
+   "revenue_lc": 5,
+   "consulting_lc": 1,
+   "managed_lc": 11,
+   "bookings_b": 16.0,
+   "bookings_lc": 13,
+   "bookings_lc_note": "the release states only U.S. dollar growth and no foreign-exchange impact for bookings, so the dollar figure stands (+13% vs Q2 FY20 $14.2B, S87)",
+   "consulting_bookings_b": 8.0,
+   "consulting_revenue_b": 6.44,
+   "margin_label": "op margin",
+   "margin": 13.7,
+   "margin_bp": 30,
+   "groups_basis": "H1 actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     6.547,
+     2
+    ],
+    [
+     "Comms, Media & Tech",
+     4.814,
+     9
+    ],
+    [
+     "Financial Services",
+     4.724,
+     10
+    ],
+    [
+     "Health & Public Service",
+     4.474,
+     14
+    ],
+    [
+     "Resources",
+     3.292,
+     -7
+    ]
+   ],
+   "eps_label": "EPS ex-investment gains",
+   "fy_eps_guide": [
+    8.32,
+    8.5
+   ],
+   "fy_eps_guide_note": "raised from $8.02-8.25; $8.67-8.85 GAAP including $0.35 of FY21 gains on an investment",
+   "fy_rev_guide_lc": [
+    6.5,
+    8.5
+   ],
+   "fy_rev_guide_note": "raised from 4-6%, including about 1 point of lower reimbursable travel revenue",
+   "fy_fx": 3.0,
+   "fy_fx_note": "FY21 outlook continues to assume +3% FX vs FY20",
+   "fy_margin_guide": [
+    15.0,
+    15.1
+   ],
+   "fy_margin_guide_note": "raised from 14.8-15.0%",
+   "next_q": "Q3",
+   "next_q_guide_b": [
+    12.55,
+    12.95
+   ],
+   "next_q_guide_lc": [
+    10,
+    13
+   ],
+   "next_q_guide_note": "on a +4.5% FX assumption",
+   "next_print": "Q3 FY21 print (late June)",
+   "fcf_guide_b": [
+    7.0,
+    7.5
+   ],
+   "cash_b": 9.2,
+   "diluted_shares_m": 646.3,
+   "optimization": "",
+   "tax_rate": 0.24,
+   "cash_return_text": "$5.0B buyback authority",
+   "dividend_annual": 3.52,
+   "dividend_note": "$0.88 quarterly, declared 2021-03-18 (S92)"
+  },
+  {
+   "quarter": "Q3 FY21",
+   "published": "2021-06-24",
+   "source": "S93",
+   "release": "Jun 24",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 13.26,
+   "revenue_lc": 16,
+   "consulting_lc": 16,
+   "managed_lc": 16,
+   "bookings_b": 15.4,
+   "bookings_lc": 39,
+   "bookings_lc_note": "the release states only U.S. dollar growth and no foreign-exchange impact for bookings, so the dollar figure stands (+39% vs Q3 FY20 $11.0B, S88)",
+   "consulting_bookings_b": 8.0,
+   "consulting_revenue_b": 7.26,
+   "margin_label": "op margin",
+   "margin": 16.0,
+   "margin_bp": 40,
+   "groups_basis": "nine-month actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     10.221,
+     17
+    ],
+    [
+     "Comms, Media & Tech",
+     7.518,
+     19
+    ],
+    [
+     "Financial Services",
+     7.321,
+     16
+    ],
+    [
+     "Health & Public Service",
+     6.993,
+     21
+    ],
+    [
+     "Resources",
+     5.06,
+     3
+    ]
+   ],
+   "eps_label": "EPS ex-investment gains",
+   "fy_eps_guide": [
+    8.71,
+    8.8
+   ],
+   "fy_eps_guide_note": "raised from $8.32-8.50; $9.07-9.16 GAAP including $0.36 of FY21 gains on an investment",
+   "fy_rev_guide_lc": [
+    10,
+    11
+   ],
+   "fy_rev_guide_note": "raised from 6.5-8.5%",
+   "fy_fx": 3.5,
+   "fy_fx_note": "FY21 outlook now assumes +3.5% FX vs FY20 (was +3%)",
+   "fy_margin_guide": [
+    15.1,
+    15.1
+   ],
+   "fy_margin_guide_note": "now 15.1% (was 15.0-15.1%)",
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    13.1,
+    13.5
+   ],
+   "next_q_guide_lc": [
+    17,
+    21
+   ],
+   "next_q_guide_note": "on a +4% FX assumption",
+   "next_print": "Q4 FY21 print (late September)",
+   "fcf_guide_b": [
+    8.0,
+    8.5
+   ],
+   "cash_b": 10.0,
+   "diluted_shares_m": 645.5,
+   "optimization": "",
+   "tax_rate": 0.235,
+   "tax_note": "23-24% (was 23-25%)",
+   "cash_return_text": "$4.2B buyback authority",
+   "dividend_annual": 3.52,
+   "dividend_note": "$0.88 quarterly, declared 2021-06-24 (S93)"
+  },
+  {
+   "quarter": "Q4 FY21",
+   "published": "2021-09-23",
+   "source": "S94",
+   "release": "Sep 23",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 13.42,
+   "revenue_lc": 21,
+   "consulting_lc": 25,
+   "managed_lc": 16,
+   "bookings_b": 15.0,
+   "bookings_lc": 5,
+   "bookings_lc_note": "stated in the release (+7% USD)",
+   "consulting_bookings_b": 8.0,
+   "consulting_revenue_b": 7.31,
+   "margin_label": "op margin",
+   "margin": 14.6,
+   "margin_bp": 30,
+   "groups_basis": "FY21 actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     13.954,
+     25
+    ],
+    [
+     "Comms, Media & Tech",
+     10.286,
+     23
+    ],
+    [
+     "Financial Services",
+     9.933,
+     20
+    ],
+    [
+     "Health & Public Service",
+     9.498,
+     18
+    ],
+    [
+     "Resources",
+     6.863,
+     13
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    9.9,
+    10.18
+   ],
+   "fy_eps_guide_note": "first FY22 guide, GAAP; 13-16% above adjusted FY21 EPS",
+   "fy_rev_guide_lc": [
+    12,
+    15
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": -0.5,
+   "fy_fx_note": "FY22 outlook assumes about -0.5% FX vs FY21",
+   "fy_margin_guide": [
+    15.2,
+    15.4
+   ],
+   "fy_margin_guide_note": "10-30bp above the 15.1% FY21 margin",
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    13.9,
+    14.35
+   ],
+   "next_q_guide_lc": [
+    18,
+    22
+   ],
+   "next_q_guide_note": "on a +0.5% FX assumption",
+   "next_print": "Q1 FY22 print (mid-December)",
+   "fcf_guide_b": [
+    7.5,
+    8.0
+   ],
+   "cash_b": 8.2,
+   "diluted_shares_m": 645.3,
+   "optimization": "",
+   "fy_bookings_target_note": "no FY22 bookings target given",
+   "tax_rate": 0.24,
+   "cash_return_text": "$5.94B returned to shareholders in FY21",
+   "dividend_annual": 3.88,
+   "dividend_note": "$0.97 quarterly, declared 2021-09-23 (S94)",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_gaap": 9.16,
+    "eps_normalized": 8.8,
+    "normalization_note": "FY21 = $8.80 excluding $0.36 of gains on an investment (S94; GAAP $9.16)",
+    "revenue_usd_b": 50.533,
+    "diluted_shares_m": 645.909,
+    "op_margin": 15.1,
+    "revenue_lc_growth": 11,
+    "bookings_b": 59.3,
+    "bookings_record": true,
+    "why": "Accenture: global consulting and outsourcing leader across five industry groups with record bookings ($59.3B in FY21); discretionary consulting demand is cyclical, the franchise is not"
+   }
+  },
+  {
+   "quarter": "Q1 FY22",
+   "published": "2021-12-16",
+   "source": "S96",
+   "release": "Dec 16",
+   "release_time": "before the open (8:00 a.m. EST call)",
+   "revenue_b": 14.97,
+   "revenue_lc": 27,
+   "consulting_lc": 32,
+   "managed_lc": 21,
+   "bookings_b": 16.8,
+   "bookings_lc": 30,
+   "bookings_lc_note": "stated in the release (+30% in both U.S. dollars and local currency)",
+   "consulting_bookings_b": 9.4,
+   "consulting_revenue_b": 8.39,
+   "margin_label": "op margin",
+   "margin": 16.3,
+   "margin_bp": 20,
+   "groups_basis": "Q1 actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     4.282,
+     34
+    ],
+    [
+     "Comms, Media & Tech",
+     3.084,
+     32
+    ],
+    [
+     "Financial Services",
+     2.918,
+     24
+    ],
+    [
+     "Health & Public Service",
+     2.73,
+     23
+    ],
+    [
+     "Resources",
+     1.952,
+     17
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    10.32,
+    10.6
+   ],
+   "fy_eps_guide_note": "raised from $9.90-10.18; 17-20% above adjusted FY21 EPS of $8.80",
+   "fy_rev_guide_lc": [
+    19,
+    22
+   ],
+   "fy_rev_guide_note": "raised from 12-15%",
+   "fy_fx": -3.0,
+   "fy_fx_note": "FY22 outlook now assumes about -3% FX vs FY21 (was -0.5%)",
+   "fy_margin_guide": [
+    15.2,
+    15.4
+   ],
+   "next_q": "Q2",
+   "next_q_guide_b": [
+    14.3,
+    14.75
+   ],
+   "next_q_guide_lc": [
+    22,
+    26
+   ],
+   "next_q_guide_note": "on a -4% FX assumption",
+   "next_print": "Q2 FY22 print (late March)",
+   "fcf_guide_b": [
+    7.7,
+    8.2
+   ],
+   "cash_b": 5.6,
+   "diluted_shares_m": 644.9,
+   "optimization": "",
+   "tax_rate": 0.24,
+   "cash_return_text": "$5.6B buyback authority",
+   "dividend_annual": 3.88,
+   "dividend_note": "$0.97 quarterly, declared 2021-12-16 (S96)"
+  },
+  {
+   "quarter": "Q2 FY22",
+   "published": "2022-03-17",
+   "source": "S97",
+   "release": "Mar 17",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 15.05,
+   "revenue_lc": 28,
+   "consulting_lc": 34,
+   "managed_lc": 23,
+   "bookings_b": 19.6,
+   "bookings_lc": 26,
+   "bookings_lc_note": "stated in the release (+22% USD)",
+   "consulting_bookings_b": 10.9,
+   "consulting_revenue_b": 8.32,
+   "margin_label": "op margin",
+   "margin": 13.7,
+   "margin_bp": 0,
+   "groups_basis": "H1 actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     8.611,
+     34
+    ],
+    [
+     "Comms, Media & Tech",
+     6.276,
+     32
+    ],
+    [
+     "Financial Services",
+     5.79,
+     25
+    ],
+    [
+     "Health & Public Service",
+     5.417,
+     21
+    ],
+    [
+     "Resources",
+     3.918,
+     25
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    10.61,
+    10.81
+   ],
+   "fy_eps_guide_note": "raised from $10.32-10.60; 21-23% above adjusted FY21 EPS",
+   "fy_rev_guide_lc": [
+    24,
+    26
+   ],
+   "fy_rev_guide_note": "raised from 19-22%",
+   "fy_fx": -3.0,
+   "fy_fx_note": "FY22 outlook continues to assume about -3% FX vs FY21",
+   "fy_margin_guide": [
+    15.2,
+    15.2
+   ],
+   "fy_margin_guide_note": "now 15.2%, 10bp above FY21 (was 15.2-15.4%)",
+   "next_q": "Q3",
+   "next_q_guide_b": [
+    15.7,
+    16.15
+   ],
+   "next_q_guide_lc": [
+    22,
+    26
+   ],
+   "next_q_guide_note": "on a -4% FX assumption; excludes a significant escalation of the conflict in Ukraine",
+   "next_print": "Q3 FY22 print (late June)",
+   "fcf_guide_b": [
+    8.0,
+    8.5
+   ],
+   "cash_b": 5.5,
+   "diluted_shares_m": 644.1,
+   "optimization": "",
+   "tax_rate": 0.24,
+   "cash_return_text": "$4.6B buyback authority",
+   "dividend_annual": 3.88,
+   "dividend_note": "$0.97 quarterly, declared 2022-03-17 (S97)"
+  },
+  {
+   "quarter": "Q3 FY22",
+   "published": "2022-06-23",
+   "source": "S98",
+   "release": "Jun 23",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 16.16,
+   "revenue_lc": 27,
+   "consulting_lc": 30,
+   "managed_lc": 23,
+   "bookings_b": 17.0,
+   "bookings_lc": 15,
+   "bookings_lc_note": "stated in the release (+10% USD)",
+   "consulting_bookings_b": 9.1,
+   "consulting_revenue_b": 9.03,
+   "margin_label": "op margin",
+   "margin": 16.1,
+   "margin_bp": 10,
+   "groups_basis": "nine-month actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     13.212,
+     31
+    ],
+    [
+     "Comms, Media & Tech",
+     9.704,
+     31
+    ],
+    [
+     "Financial Services",
+     8.869,
+     24
+    ],
+    [
+     "Health & Public Service",
+     8.334,
+     19
+    ],
+    [
+     "Resources",
+     6.052,
+     26
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    10.61,
+    10.7
+   ],
+   "fy_eps_guide_note": "top end lowered from $10.81; GAAP, including the Q3 $0.15 charge for the disposition of the Russia business (no figure excluding it published)",
+   "fy_rev_guide_lc": [
+    25.5,
+    26.5
+   ],
+   "fy_rev_guide_note": "raised from 24-26%",
+   "fy_fx": -4.5,
+   "fy_fx_note": "FY22 outlook now assumes about -4.5% FX vs FY21 (was -3%)",
+   "fy_margin_guide": [
+    15.2,
+    15.2
+   ],
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    15.0,
+    15.5
+   ],
+   "next_q_guide_lc": [
+    20,
+    24
+   ],
+   "next_q_guide_note": "on a -8% FX assumption",
+   "next_print": "Q4 FY22 print (late September)",
+   "fcf_guide_b": [
+    8.0,
+    8.5
+   ],
+   "cash_b": 6.7,
+   "diluted_shares_m": 641.0,
+   "optimization": "",
+   "tax_rate": 0.24,
+   "tax_note": "23.5-24.5% (was 23-25%)",
+   "cash_return_text": "$3.7B buyback authority",
+   "dividend_annual": 3.88,
+   "dividend_note": "$0.97 quarterly, declared 2022-06-23 (S98)"
+  },
+  {
+   "quarter": "Q4 FY22",
+   "published": "2022-09-22",
+   "source": "S1",
+   "release": "Sep 22",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 15.42,
+   "revenue_b_note": "table figure; the review rounds to $15.4 billion",
+   "revenue_lc": 22,
+   "revenue_lc_note": "published as 22.4%; the engine reports whole percentages, so rounded half up",
+   "consulting_lc": 22,
+   "managed_lc": 23,
+   "bookings_b": 18.4,
+   "bookings_lc": 31,
+   "bookings_lc_note": "stated in the release (+22% USD)",
+   "consulting_bookings_b": 8.4,
+   "consulting_revenue_b": 8.33,
+   "margin_label": "op margin",
+   "margin": 14.7,
+   "margin_bp": 10,
+   "groups_basis": "FY22 actuals by industry group",
+   "groups": [
+    [
+     "Products",
+     18.275,
+     25
+    ],
+    [
+     "Comms, Media & Tech",
+     12.2,
+     23
+    ],
+    [
+     "Financial Services",
+     11.811,
+     22
+    ],
+    [
+     "Health & Public Service",
+     11.226,
+     19
+    ],
+    [
+     "Resources",
+     8.082,
+     21
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    11.09,
+    11.41
+   ],
+   "fy_eps_guide_note": "first FY23 guide, 4-7% above FY22 EPS",
+   "fy_rev_guide_lc": [
+    8,
+    11
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": -6.0,
+   "fy_fx_note": "FY23 outlook assumes about -6% FX vs FY22",
+   "fy_margin_guide": [
+    15.3,
+    15.5
+   ],
+   "fy_margin_guide_note": "10-30bp above the 15.2% FY22 margin",
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    15.2,
+    15.75
+   ],
+   "next_q_guide_lc": [
+    10,
+    14
+   ],
+   "next_q_guide_note": "on an approximately -8.5% FX assumption",
+   "next_print": "Q1 FY23 print (mid-December)",
+   "fcf_guide_b": [
+    7.7,
+    8.2
+   ],
+   "cash_b": 7.9,
+   "diluted_shares_m": 640.9,
+   "optimization": "",
+   "fy_bookings_target_note": "no FY23 bookings target given",
+   "tax_rate": 0.24,
+   "cash_return_text": "$6.57B returned to shareholders in FY22",
+   "dividend_annual": 4.48,
+   "dividend_note": "$1.12/quarter (S1)",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_gaap": 10.71,
+    "eps_normalized": 10.71,
+    "normalization_note": "FY22 = GAAP $10.71 (S1; includes the $0.15 Russia disposition charge, no adjusted figure published)",
+    "revenue_usd_b": 61.594,
+    "diluted_shares_m": 642.839,
+    "op_margin": 15.2,
+    "revenue_lc_growth": 26,
+    "bookings_b": 71.7,
+    "bookings_record": true,
+    "why": "Accenture: global consulting and outsourcing leader across five industry groups with record bookings ($71.7B in FY22); discretionary consulting demand is cyclical, the franchise is not"
+   }
+  },
+  {
    "quarter": "Q1 FY23",
    "published": "2022-12-16",
    "source": "S3",
@@ -6620,7 +7392,8 @@
    "cash_b": 5.9,
    "diluted_shares_m": 638.8,
    "optimization": "",
-   "tax_rate": 0.24
+   "tax_rate": 0.24,
+   "release_time": "before the open (8:00 a.m. EST call)"
   },
   {
    "quarter": "Q2 FY23",
@@ -7054,6 +7827,29 @@
    "doc": "FY2020 10-K",
    "risk_quote": "Examples of areas of significant change include digital-, cloud- and security-related offerings, which are continually evolving, as well as developments in areas such as artificial intelligence, augmented reality, automation, blockchain, Internet of Things, quantum and edge computing and as-a-service solutions. ... Some of these technological developments have reduced and replaced some of our historical services and solutions and may continue to do so in the future.",
    "offering": "it reports 'growing demand to assist clients with the operation and maintenance of digital-related services and cloud enablement'"
+  },
+  {
+   "id": "S95",
+   "published": "2021-10-15",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2021 10-K",
+   "doc_short": "10-K FY21",
+   "competitors_quote": "off-shore IT service providers in lower-cost locations, particularly in India",
+   "competitors_short": "Offshore IT providers 'in lower-cost locations, particularly in India'",
+   "warning": "says competitors 'may be willing, at times, to price contracts lower than us' and 'may also offer more aggressive contractual terms', and that its global delivery capability 'is concentrated in India and the Philippines'",
+   "warning_short": "competitors 'may be willing, at times, to price contracts lower than us'",
+   "gdn_clause": "global delivery capability has 'large portions' based in India and the Philippines (no delivery headcount or center count given; the FY2016 10-K counted about 285,000 people)",
+   "gdn_factor": "Global delivery capability: 'large portions' in India and the Philippines, no headcount given since FY16 (about 285,000 people then)"
+  },
+  {
+   "id": "S95",
+   "published": "2021-10-15",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2021 10-K",
+   "risk_quote": "Examples of areas of significant change include digital-, cloud- and security-related offerings, which are continually evolving, as well as developments in areas such as artificial intelligence, augmented reality, automation, blockchain, Internet of Things, quantum and Edge computing, infrastructure and network engineering, intelligent connected products, digital engineering and manufacturing, and as-a-service solutions. ... Some of these technological developments have reduced and replaced some of our historical services and solutions and may continue to do so in the future.",
+   "offering": "it reports 'growing demand to assist clients with application modernization and maintenance, cloud enablement and managed security services'"
   },
   {
    "id": "S13",

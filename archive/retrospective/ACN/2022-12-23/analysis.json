@@ -1,0 +1,204 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2022-12-23",
+ "price_date": "2022-12-23",
+ "price": 266.09,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [
+   {
+    "theme": "GENAI",
+    "status": "live, no read on IT services yet",
+    "reason": "Live since 2022-11-30 (ChatGPT), but there is no sell-side or price read on IT services yet and the stock trades at 23.4x FY23E — near its own median, not an AI discount. Re-file under DISRUPTION_EXPOSED (GENAI) only if dated evidence shows the market pricing AI substitution of IT-services work."
+   }
+  ],
+  "evidence": [
+   "S13"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.70x; +30% to EPP floor; model-vs-market gap +0.39; conservative 2yr +8%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.7,
+  "ratio_b_fmt": "0.70x",
+  "epp": 204.48,
+  "epp_gap_pct": 30.1,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.95,
+  "sca": 0.147,
+  "adj_composite": 3.097,
+  "market_composite": 2.71,
+  "adj_gap": 0.39,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 7.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 11.36,
+    "pe": 17.4,
+    "price": 198,
+    "desc": "Flat EPS (worst year FY12-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 13.69,
+    "pe": 21.6,
+    "price": 296,
+    "desc": "EPS +9.8%/yr (latest guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 13.95,
+    "pe": 26.0,
+    "price": 363,
+    "desc": "EPS +10.8%/yr (FY12-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.42,
+    "pe": 30.2,
+    "price": 466,
+    "desc": "EPS +16.5%/yr (best 2-yr run FY12-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 30.1,
+   "adj_gap": 0.39,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 30.1,
+   "adj_gap": 1.08,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.18,
+   "epp_gap_pct": 30.1,
+   "adj_gap": -0.34,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 7.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.58,
+   "epp_gap_pct": 30.1,
+   "adj_gap": 0.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.86,
+   "epp_gap_pct": 30.1,
+   "adj_gap": 0.2,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 30.1,
+   "adj_gap": 0.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 11.5,
+   "adj_gap": 0.39,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 30.1,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "ACN (retrospective, 2022-12-23) ◉ BUY — Ratio B 0.70x (25.6% downside to Bear $198 / +36.4% upside to Bull $363) | Adj composite 3.10 vs market 2.71: gap +0.39 [MODESTLY UNDERVALUED] | +30% above the EPP floor $204 (18x FY23E $11.36) | Conservative 2-yr case: +7.6% total (+3.8%/yr) | At 23.4x FY23E the 15% hurdle price $352 sits between the BASE and BULL cases; consulting +10% LC in Q1, Q2 guided +6-10% LC; GenAI is live but there is no read yet on what it does to IT services.",
+ "sources": [
+  {
+   "id": "S1",
+   "published": "2022-09-22",
+   "title": "Accenture Q4/FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
+   "supports": "FY22 revenue +26% LC, record $71.7B bookings, FY22 operating margin 15.2%, Q4 consulting +22% LC, FY21 adjusted EPS $8.80, dividend $1.12 (+15%), >= $7.1B FY23 cash return"
+  },
+  {
+   "id": "S2",
+   "published": "2022-10-12",
+   "title": "SEC XBRL company facts, 10-K filings 2010-10-26 .. 2022-10-12",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001467373.json",
+   "supports": "GAAP diluted EPS, revenue and diluted shares FY2012-FY2022; only facts filed on or before 2022-10-12 used"
+  },
+  {
+   "id": "S3",
+   "published": "2022-12-16",
+   "title": "Accenture Q1 FY23 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000369/fy23q1earnings8-kexhibit.htm",
+   "supports": "Q1 revenue by type of work and industry group, bookings, margin, cash; FY23 and Q2 guidance"
+  },
+  {
+   "id": "S13",
+   "published": "2022-11-30",
+   "title": "OpenAI: Introducing ChatGPT",
+   "url": "https://openai.com/blog/chatgpt",
+   "supports": "public release of ChatGPT: the GenAI theme goes live"
+  },
+  {
+   "id": "S12",
+   "published": "2022-12-23",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $266.09, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}
