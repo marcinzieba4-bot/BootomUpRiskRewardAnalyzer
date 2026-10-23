@@ -316,6 +316,68 @@
    "title": "Accenture plc Q1 FY15 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737314000564/fy15q1earnings8-kexhibit.htm",
    "supports": "Q1 FY15 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY15 and Q2 guidance; released before the open"
+  },
+  "S62": {
+   "published": "2015-03-26",
+   "title": "Accenture plc Q2 FY15 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000154/fy15q2earnings8-kexhibit.htm",
+   "supports": "Q2 FY15 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $1.02 semi-annual dividend; FY15 and Q3 guidance with and without the expected pension settlement charge; released before the open (8:00 a.m. EDT call)"
+  },
+  "S63": {
+   "published": "2015-06-25",
+   "title": "Accenture plc Q3 FY15 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000291/fy15q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY15 net revenues by type of work and operating group, bookings, margin with and without the $64M pension settlement charge, cash, diluted shares; FY15 and Q4 guidance with and without the charge; released before the open"
+  },
+  "S64": {
+   "published": "2015-09-24",
+   "title": "Accenture plc Q4/FY15 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000403/acn-83120158xkexhibit.htm",
+   "supports": "Q4 and FY15 net revenues by type of work and operating group, bookings, margin and EPS with and without the pension settlement charge, diluted shares, cash; $1.10 semi-annual dividend; FY16 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  "S65": {
+   "published": "2015-11-02",
+   "filed": "2015-10-30 17:09 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2015",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000457/acn831201510k.htm",
+   "supports": "selected financial data FY11-FY15 (net revenues, diluted EPS), FY15 diluted shares 678.8M; off-shore competitors 'in lower-cost locations, particularly in India'; delivery network 'increasingly concentrated in India and the Philippines'; approximately 257,000 professionals in the network; technologies including cloud-based services 'could reduce and, over time, replace some of our current business'"
+  },
+  "S66": {
+   "published": "2015-12-17",
+   "title": "Accenture plc Q1 FY16 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737315000589/fy16q1earnings8-kexhibit.htm",
+   "supports": "Q1 FY16 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY16 and Q2 guidance; released before the open"
+  },
+  "S67": {
+   "published": "2016-03-24",
+   "title": "Accenture plc Q2 FY16 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316000771/fy16q2earnings8-kexhibit.htm",
+   "supports": "Q2 FY16 net revenues by type of work and operating group, bookings, margin, EPS with and without the gain on the sale of Navitaire, cash, diluted shares; $1.10 semi-annual dividend; FY16 and Q3 guidance (Q3 in local currency) with and without the gain; released before the open (8:00 a.m. EDT call)"
+  },
+  "S68": {
+   "published": "2016-06-23",
+   "title": "Accenture plc Q3 FY16 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316000912/fy16q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY16 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY16 and Q4 guidance (Q4 in local currency) with and without the Navitaire gain; released before the open"
+  },
+  "S69": {
+   "published": "2016-09-29",
+   "title": "Accenture plc Q4/FY16 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316001021/acn-83120168xkexhibit.htm",
+   "supports": "Q4 and FY16 net revenues by type of work and operating group, bookings, margin, EPS with and without gains on the sale of businesses, diluted shares, cash; $1.21 semi-annual dividend; FY17 and Q1 guidance (Q1 in local currency); released before the open"
+  },
+  "S70": {
+   "published": "2016-10-31",
+   "filed": "2016-10-28 21:05 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2016",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316001080/acn831201610k.htm",
+   "supports": "selected financial data FY12-FY16 (net revenues, diluted EPS), FY16 diluted shares 667.8M; off-shore competitors 'in lower-cost locations, particularly in India'; delivery network 'increasingly concentrated in India and the Philippines'; approximately 285,000 professionals in the network; cloud-based services, artificial intelligence and automation 'have reduced and replaced some of our historical services and solutions'"
+  },
+  "S71": {
+   "published": "2016-12-21",
+   "title": "Accenture plc Q1 FY17 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737316001176/fy17q1earnings8-kexhibit.htm",
+   "supports": "Q1 FY17 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY17 and Q2 guidance (Q2 in local currency); released before the open (8:00 a.m. EST call)"
   }
  },
  "history_vintages": [
@@ -866,6 +928,174 @@
    "margin_signal_name": "Operating margin change",
    "business_line": "Management consulting, technology services and outsourcing",
    "tax_note": "FY15 guide 26-27% (S59)"
+  },
+  {
+   "published": "2015-11-02",
+   "filed": "2015-10-30 17:09 ET, after the close: dated the next trading day",
+   "sources": [
+    "S65",
+    "S64",
+    "S60",
+    "S55",
+    "S50",
+    "S45",
+    "S40",
+    "S35",
+    "S29",
+    "S21",
+    "S20",
+    "S34",
+    "S54",
+    "S63"
+   ],
+   "company": "Accenture plc",
+   "fy_label": "FY15",
+   "why": "Accenture: global consulting and outsourcing leader across five operating groups with $34.4B bookings in FY15; discretionary consulting demand is cyclical, the franchise is not",
+   "eps_gaap": {
+    "2005": 1.56,
+    "2006": 1.59,
+    "2007": 1.97,
+    "2008": 2.64,
+    "2009": 2.44,
+    "2010": 2.66,
+    "2011": 3.39,
+    "2012": 3.84,
+    "2013": 4.93,
+    "2014": 4.52,
+    "2015": 4.76
+   },
+   "eps_normalized": {
+    "2005": 1.56,
+    "2006": 1.61,
+    "2007": 1.97,
+    "2008": 2.64,
+    "2009": 2.68,
+    "2010": 2.66,
+    "2011": 3.39,
+    "2012": 3.84,
+    "2013": 4.21,
+    "2014": 4.52,
+    "2015": 4.82
+   },
+   "normalization": "the ten fiscal years to FY15: FY11-FY15 GAAP from the FY15 10-K (S65), FY05-FY10 from earlier 10-Ks (S21, S29, S35, S40, S45, S50, S55, S60); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY13 = $4.21 excluding $0.72 of reorganization and prior-year tax benefits (S54; GAAP $4.93); FY15 = $4.82 excluding the $0.06 pension settlement charge (S64; GAAP $4.76)",
+   "revenue_usd_b": {
+    "2005": 15.547,
+    "2006": 16.646,
+    "2007": 19.696,
+    "2008": 23.387,
+    "2009": 21.577,
+    "2010": 21.551,
+    "2011": 25.507,
+    "2012": 27.862,
+    "2013": 28.563,
+    "2014": 30.002,
+    "2015": 31.048
+   },
+   "diluted_shares_m": {
+    "2005": 961.125,
+    "2015": 678.757
+   },
+   "pe_window_start": "2002-09-01",
+   "prev_fy_op_margin": 14.5,
+   "prev_fy_revenue_lc_growth": 11,
+   "prev_fy_bookings_b": 34.4,
+   "prev_fy_bookings_record": false,
+   "prev_q_consulting_lc": 11,
+   "prev_q_label": "Q3 FY15",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY15, the first to guide FY16) (S63)",
+   "dividend_annual": 2.2,
+   "dividend_note": "$1.10 semi-annual, declared 2015-09-24 (S64)",
+   "tax_rate": 0.255,
+   "cash_return_text": "$3.81B returned to shareholders in FY15",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
+   "tax_note": "FY16 guide 25-26% (S64)"
+  },
+  {
+   "published": "2016-10-31",
+   "filed": "2016-10-28 21:05 ET, after the close: dated the next trading day",
+   "sources": [
+    "S70",
+    "S69",
+    "S65",
+    "S60",
+    "S55",
+    "S50",
+    "S45",
+    "S40",
+    "S35",
+    "S29",
+    "S21",
+    "S20",
+    "S34",
+    "S54",
+    "S64",
+    "S68"
+   ],
+   "company": "Accenture plc",
+   "fy_label": "FY16",
+   "why": "Accenture: global consulting and outsourcing leader across five operating groups with $35.4B bookings in FY16; discretionary consulting demand is cyclical, the franchise is not",
+   "eps_gaap": {
+    "2006": 1.59,
+    "2007": 1.97,
+    "2008": 2.64,
+    "2009": 2.44,
+    "2010": 2.66,
+    "2011": 3.39,
+    "2012": 3.84,
+    "2013": 4.93,
+    "2014": 4.52,
+    "2015": 4.76,
+    "2016": 6.45
+   },
+   "eps_normalized": {
+    "2006": 1.61,
+    "2007": 1.97,
+    "2008": 2.64,
+    "2009": 2.68,
+    "2010": 2.66,
+    "2011": 3.39,
+    "2012": 3.84,
+    "2013": 4.21,
+    "2014": 4.52,
+    "2015": 4.82,
+    "2016": 5.34
+   },
+   "normalization": "the ten fiscal years to FY16: FY12-FY16 GAAP from the FY16 10-K (S70), FY06-FY11 from earlier 10-Ks (S21, S29, S35, S40, S45, S50, S55, S60, S65); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY13 = $4.21 excluding $0.72 of reorganization and prior-year tax benefits (S54; GAAP $4.93); FY15 = $4.82 excluding the $0.06 pension settlement charge (S64; GAAP $4.76); FY16 = $5.34 excluding $1.11 of gains on the sale of businesses (S69; GAAP $6.45)",
+   "revenue_usd_b": {
+    "2006": 16.646,
+    "2007": 19.696,
+    "2008": 23.387,
+    "2009": 21.577,
+    "2010": 21.551,
+    "2011": 25.507,
+    "2012": 27.862,
+    "2013": 28.563,
+    "2014": 30.002,
+    "2015": 31.048,
+    "2016": 32.883
+   },
+   "diluted_shares_m": {
+    "2006": 894.258,
+    "2016": 667.77
+   },
+   "pe_window_start": "2002-09-01",
+   "prev_fy_op_margin": 14.6,
+   "prev_fy_revenue_lc_growth": 10.5,
+   "prev_fy_bookings_b": 35.4,
+   "prev_fy_bookings_record": false,
+   "prev_q_consulting_lc": 14,
+   "prev_q_label": "Q3 FY16",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY16, the first to guide FY17) (S68)",
+   "dividend_annual": 2.42,
+   "dividend_note": "$1.21 semi-annual, declared 2016-09-29 (S69)",
+   "tax_rate": 0.23,
+   "cash_return_text": "$4.04B returned to shareholders in FY16",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
+   "tax_note": "FY17 guide 22-24% (S69)"
   },
   {
    "published": "2022-10-12",
@@ -3597,6 +3827,751 @@
    "cash_return_text": "$4.1B buyback authority"
   },
   {
+   "quarter": "Q2 FY15",
+   "published": "2015-03-26",
+   "source": "S62",
+   "extra_sources": [
+    "S57"
+   ],
+   "release": "Mar 26",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 7.49,
+   "revenue_lc": 12,
+   "consulting_lc": 11,
+   "managed_lc": 13,
+   "bookings_b": 9.4,
+   "bookings_lc": -1,
+   "bookings_lc_note": "derived: -6.9% USD vs Q2 FY14 $10.1B (S57), less the negative 6% foreign-currency impact the release states for Q2 bookings",
+   "consulting_bookings_b": 4.2,
+   "consulting_revenue_b": 3.84,
+   "margin_label": "op margin",
+   "margin": 13.6,
+   "margin_bp": 30,
+   "groups_basis": "H1 actuals",
+   "groups": [
+    [
+     "Products",
+     3.781,
+     13
+    ],
+    [
+     "Financial Services",
+     3.306,
+     9
+    ],
+    [
+     "Comms, Media & Tech",
+     3.098,
+     15
+    ],
+    [
+     "Health & Public Service",
+     2.688,
+     15
+    ],
+    [
+     "Resources",
+     2.507,
+     6
+    ]
+   ],
+   "eps_label": "EPS ex-pension charge",
+   "fy_eps_guide": [
+    4.66,
+    4.76
+   ],
+   "fy_eps_guide_note": "was $4.66-4.80; $4.61-4.71 GAAP including a pension settlement charge of about $0.05 to be recorded in May",
+   "fy_rev_guide_lc": [
+    8,
+    10
+   ],
+   "fy_rev_guide_note": "raised from 5-8%",
+   "fy_fx": -8.0,
+   "fy_fx_note": "FY15 outlook now assumes -8% FX vs FY14 (was -5%)",
+   "fy_margin_guide": [
+    14.4,
+    14.6
+   ],
+   "fy_margin_guide_note": "excluding the settlement charge (14.2-14.4% GAAP)",
+   "next_q": "Q3",
+   "next_q_guide_b": [
+    7.35,
+    7.6
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -11% FX assumption",
+   "next_print": "Q3 FY15 print (late June)",
+   "fcf_guide_b": [
+    3.4,
+    3.7
+   ],
+   "cash_b": 4.1,
+   "diluted_shares_m": 679.2,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    33,
+    35
+   ],
+   "fy_bookings_target_note": "lowered from $34-36B, reflecting the revised FX assumption",
+   "tax_rate": 0.265,
+   "cash_return_text": "$3.7B buyback authority",
+   "dividend_annual": 2.04,
+   "dividend_note": "$1.02 semi-annual, declared 2015-03-26 (S62)"
+  },
+  {
+   "quarter": "Q3 FY15",
+   "published": "2015-06-25",
+   "source": "S63",
+   "extra_sources": [
+    "S58"
+   ],
+   "release": "Jun 25",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 7.77,
+   "revenue_lc": 10,
+   "consulting_lc": 11,
+   "managed_lc": 10,
+   "bookings_b": 8.5,
+   "bookings_lc": 7,
+   "bookings_lc_note": "derived: -3.4% USD vs Q3 FY14 $8.8B (S58), less the negative 10% foreign-currency impact the release states for Q3 bookings",
+   "consulting_bookings_b": 4.5,
+   "consulting_revenue_b": 4.11,
+   "margin_label": "op margin ex-pension charge",
+   "margin": 15.4,
+   "margin_bp": 20,
+   "margin_note": "GAAP 14.6% with the $64M pension settlement charge",
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Products",
+     5.664,
+     8
+    ],
+    [
+     "Financial Services",
+     4.944,
+     10
+    ],
+    [
+     "Comms, Media & Tech",
+     4.711,
+     17
+    ],
+    [
+     "Health & Public Service",
+     4.072,
+     10
+    ],
+    [
+     "Resources",
+     3.755,
+     6
+    ]
+   ],
+   "eps_label": "EPS ex-pension charge",
+   "fy_eps_guide": [
+    4.73,
+    4.78
+   ],
+   "fy_eps_guide_note": "raised from $4.66-4.76; $4.67-4.72 GAAP including the $0.06 Q3 pension settlement charge",
+   "fy_rev_guide_lc": [
+    9,
+    10
+   ],
+   "fy_rev_guide_note": "raised from 8-10%",
+   "fy_fx": -7.5,
+   "fy_fx_note": "FY15 outlook now assumes -7.5% FX vs FY14 (was -8%)",
+   "fy_margin_guide": [
+    14.4,
+    14.6
+   ],
+   "fy_margin_guide_note": "excluding the pension settlement charge (14.2-14.4% GAAP)",
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    7.45,
+    7.7
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -10% FX assumption",
+   "next_print": "Q4 FY15 print (late September)",
+   "fcf_guide_b": [
+    3.4,
+    3.7
+   ],
+   "cash_b": 4.0,
+   "diluted_shares_m": 677.8,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    33,
+    35
+   ],
+   "tax_rate": 0.265,
+   "cash_return_text": "$3.2B buyback authority"
+  },
+  {
+   "quarter": "Q4 FY15",
+   "published": "2015-09-24",
+   "source": "S64",
+   "extra_sources": [
+    "S59"
+   ],
+   "release": "Sep 24",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 7.89,
+   "revenue_lc": 12,
+   "consulting_lc": 14,
+   "managed_lc": 9,
+   "bookings_b": 8.8,
+   "bookings_lc": 19,
+   "bookings_lc_note": "derived: +6.0% USD vs Q4 FY14 $8.3B (S59), less the negative 13% foreign-exchange impact the release states for Q4 bookings",
+   "consulting_bookings_b": 4.1,
+   "consulting_revenue_b": 4.16,
+   "margin_label": "op margin",
+   "margin": 13.9,
+   "margin_bp": 0,
+   "groups_basis": "FY15 actuals",
+   "groups": [
+    [
+     "Products",
+     7.596,
+     10
+    ],
+    [
+     "Financial Services",
+     6.635,
+     14
+    ],
+    [
+     "Comms, Media & Tech",
+     6.349,
+     16
+    ],
+    [
+     "Health & Public Service",
+     5.463,
+     13
+    ],
+    [
+     "Resources",
+     4.989,
+     6
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    5.09,
+    5.24
+   ],
+   "fy_eps_guide_note": "first FY16 guide",
+   "fy_rev_guide_lc": [
+    5,
+    8
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": -4.0,
+   "fy_fx_note": "FY16 outlook assumes -4% FX vs FY15",
+   "fy_margin_guide": [
+    14.6,
+    14.8
+   ],
+   "fy_margin_guide_note": "10-30bp above the 14.5% adjusted FY15 margin",
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    7.7,
+    7.95
+   ],
+   "next_q_guide_lc": [
+    6,
+    9
+   ],
+   "next_q_guide_note": "on a -8.5% FX assumption",
+   "next_print": "Q1 FY16 print (mid-December)",
+   "fcf_guide_b": [
+    3.6,
+    3.9
+   ],
+   "cash_b": 4.4,
+   "diluted_shares_m": 675.7,
+   "optimization": "",
+   "fy_bookings_target_note": "no FY16 bookings target given",
+   "tax_rate": 0.255,
+   "cash_return_text": "$3.81B returned to shareholders in FY15",
+   "dividend_annual": 2.2,
+   "dividend_note": "$1.10 semi-annual, declared 2015-09-24 (S64)",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_gaap": 4.76,
+    "eps_normalized": 4.82,
+    "normalization_note": "FY15 = $4.82 excluding the $0.06 pension settlement charge (S64; GAAP $4.76)",
+    "revenue_usd_b": 31.048,
+    "diluted_shares_m": 678.757,
+    "op_margin": 14.5,
+    "revenue_lc_growth": 11,
+    "bookings_b": 34.4,
+    "bookings_record": false,
+    "why": "Accenture: global consulting and outsourcing leader across five operating groups with $34.4B bookings in FY15; discretionary consulting demand is cyclical, the franchise is not"
+   }
+  },
+  {
+   "quarter": "Q1 FY16",
+   "published": "2015-12-17",
+   "source": "S66",
+   "extra_sources": [
+    "S61"
+   ],
+   "release": "Dec 17",
+   "release_time": "before the open (8:00 a.m. EST call)",
+   "revenue_b": 8.01,
+   "revenue_lc": 10,
+   "consulting_lc": 15,
+   "managed_lc": 5,
+   "bookings_b": 7.7,
+   "bookings_lc": 8,
+   "bookings_lc_note": "derived: 0.0% USD vs Q1 FY15 $7.7B (S61), less the negative 8% foreign-currency impact the release states for Q1 bookings",
+   "consulting_bookings_b": 4.4,
+   "consulting_revenue_b": 4.35,
+   "margin_label": "op margin",
+   "margin": 15.2,
+   "margin_bp": 20,
+   "groups_basis": "Q1 actuals",
+   "groups": [
+    [
+     "Products",
+     1.99,
+     12
+    ],
+    [
+     "Financial Services",
+     1.745,
+     12
+    ],
+    [
+     "Comms, Media & Tech",
+     1.605,
+     12
+    ],
+    [
+     "Health & Public Service",
+     1.424,
+     8
+    ],
+    [
+     "Resources",
+     1.245,
+     6
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    5.09,
+    5.24
+   ],
+   "fy_eps_guide_note": "unchanged",
+   "fy_rev_guide_lc": [
+    6,
+    9
+   ],
+   "fy_rev_guide_note": "raised from 5-8%",
+   "fy_fx": -5.0,
+   "fy_fx_note": "FY16 outlook now assumes -5% FX vs FY15 (was -4%)",
+   "fy_margin_guide": [
+    14.6,
+    14.8
+   ],
+   "next_q": "Q2",
+   "next_q_guide_b": [
+    7.5,
+    7.75
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -6% FX assumption",
+   "next_print": "Q2 FY16 print (late March)",
+   "fcf_guide_b": [
+    3.6,
+    3.9
+   ],
+   "cash_b": 3.1,
+   "diluted_shares_m": 671.3,
+   "optimization": "",
+   "tax_rate": 0.255,
+   "cash_return_text": "$7.0B buyback authority"
+  },
+  {
+   "quarter": "Q2 FY16",
+   "published": "2016-03-24",
+   "source": "S67",
+   "extra_sources": [
+    "S62"
+   ],
+   "release": "Mar 24",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 7.95,
+   "revenue_lc": 12,
+   "consulting_lc": 18,
+   "managed_lc": 6,
+   "bookings_b": 9.5,
+   "bookings_lc": 7,
+   "bookings_lc_note": "derived: +1.1% USD vs Q2 FY15 $9.4B (S62), less the negative 6% foreign-currency impact the release states for Q2 bookings",
+   "consulting_bookings_b": 5.0,
+   "consulting_revenue_b": 4.29,
+   "margin_label": "op margin",
+   "margin": 13.7,
+   "margin_bp": 10,
+   "groups_basis": "H1 actuals",
+   "groups": [
+    [
+     "Products",
+     3.985,
+     14
+    ],
+    [
+     "Financial Services",
+     3.43,
+     13
+    ],
+    [
+     "Comms, Media & Tech",
+     3.211,
+     13
+    ],
+    [
+     "Health & Public Service",
+     2.906,
+     15
+    ],
+    [
+     "Resources",
+     2.419,
+     4
+    ]
+   ],
+   "eps_label": "EPS ex-Navitaire gain",
+   "fy_eps_guide": [
+    5.21,
+    5.32
+   ],
+   "fy_eps_guide_note": "raised from $5.09-5.24; $5.95-6.06 GAAP including the Q2 gain on the sale of Navitaire",
+   "fy_rev_guide_lc": [
+    8,
+    10
+   ],
+   "fy_rev_guide_note": "raised from 6-9%",
+   "fy_fx": -5.0,
+   "fy_fx_note": "FY16 outlook continues to assume -5% FX vs FY15",
+   "fy_margin_guide": [
+    14.6,
+    14.7
+   ],
+   "fy_margin_guide_note": "lowered from 14.6-14.8%",
+   "next_q": "Q3",
+   "next_q_guide_b": [
+    8.1,
+    8.35
+   ],
+   "next_q_guide_lc": [
+    7,
+    10
+   ],
+   "next_q_guide_note": "on a -2.5% FX assumption",
+   "next_print": "Q3 FY16 print (late June)",
+   "fcf_guide_b": [
+    3.6,
+    3.9
+   ],
+   "cash_b": 3.0,
+   "diluted_shares_m": 668.1,
+   "optimization": "",
+   "tax_rate": 0.245,
+   "tax_note": "24-25% excluding the Navitaire gain (22.5-23.5% GAAP)",
+   "cash_return_text": "$6.4B buyback authority",
+   "dividend_annual": 2.2,
+   "dividend_note": "$1.10 semi-annual, declared 2016-03-24 (S67)"
+  },
+  {
+   "quarter": "Q3 FY16",
+   "published": "2016-06-23",
+   "source": "S68",
+   "extra_sources": [
+    "S63"
+   ],
+   "release": "Jun 23",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 8.43,
+   "revenue_lc": 10,
+   "consulting_lc": 14,
+   "managed_lc": 6,
+   "bookings_b": 9.1,
+   "bookings_lc": 9,
+   "bookings_lc_note": "derived: +7.1% USD vs Q3 FY15 $8.5B (S63), less the negative 2% foreign-currency impact the release states for Q3 bookings",
+   "consulting_bookings_b": 4.9,
+   "consulting_revenue_b": 4.62,
+   "margin_label": "op margin",
+   "margin": 15.5,
+   "margin_bp": 10,
+   "margin_note": "vs Q3 FY15 15.4% excluding the pension settlement charge (14.6% GAAP)",
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Products",
+     6.143,
+     16
+    ],
+    [
+     "Financial Services",
+     5.235,
+     12
+    ],
+    [
+     "Comms, Media & Tech",
+     4.919,
+     8
+    ],
+    [
+     "Health & Public Service",
+     4.446,
+     12
+    ],
+    [
+     "Resources",
+     3.64,
+     1
+    ]
+   ],
+   "eps_label": "EPS ex-Navitaire gain",
+   "fy_eps_guide": [
+    5.29,
+    5.33
+   ],
+   "fy_eps_guide_note": "raised from $5.21-5.32; $6.03-6.07 GAAP including the $0.74 Q2 Navitaire gain",
+   "fy_rev_guide_lc": [
+    9.5,
+    10.5
+   ],
+   "fy_rev_guide_note": "raised from 8-10%",
+   "fy_fx": -4.5,
+   "fy_fx_note": "FY16 outlook now assumes -4.5% FX vs FY15 (was -5%)",
+   "fy_margin_guide": [
+    14.6,
+    14.6
+   ],
+   "fy_margin_guide_note": "now 14.6% (was 14.6-14.7%)",
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    8.25,
+    8.5
+   ],
+   "next_q_guide_lc": [
+    6,
+    9
+   ],
+   "next_q_guide_note": "on a -1% FX assumption",
+   "next_print": "Q4 FY16 print (late September)",
+   "fcf_guide_b": [
+    3.6,
+    3.9
+   ],
+   "cash_b": 3.5,
+   "diluted_shares_m": 666.4,
+   "optimization": "",
+   "tax_rate": 0.245,
+   "tax_note": "24-25% excluding the Navitaire gain (22.5-23.5% GAAP)",
+   "cash_return_text": "$5.9B buyback authority"
+  },
+  {
+   "quarter": "Q4 FY16",
+   "published": "2016-09-29",
+   "source": "S69",
+   "extra_sources": [
+    "S64"
+   ],
+   "release": "Sep 29",
+   "release_time": "before the open (8:00 a.m. EDT call)",
+   "revenue_b": 8.49,
+   "revenue_lc": 9,
+   "consulting_lc": 13,
+   "managed_lc": 6,
+   "bookings_b": 9.0,
+   "bookings_lc": 4,
+   "bookings_lc_note": "derived: +2.3% USD vs Q4 FY15 $8.8B (S64), less the negative 2% foreign-exchange impact the release states for Q4 bookings",
+   "consulting_bookings_b": 4.8,
+   "consulting_revenue_b": 4.61,
+   "margin_label": "op margin",
+   "margin": 14.1,
+   "margin_bp": 20,
+   "groups_basis": "FY16 actuals",
+   "groups": [
+    [
+     "Products",
+     8.395,
+     18
+    ],
+    [
+     "Financial Services",
+     7.031,
+     9
+    ],
+    [
+     "Comms, Media & Tech",
+     6.616,
+     5
+    ],
+    [
+     "Health & Public Service",
+     5.987,
+     11
+    ],
+    [
+     "Resources",
+     4.839,
+     0
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    5.75,
+    5.98
+   ],
+   "fy_eps_guide_note": "first FY17 guide, GAAP; includes the tax benefit expected from early adoption of ASU 2016-09",
+   "fy_rev_guide_lc": [
+    5,
+    8
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": 0.0,
+   "fy_fx_note": "FY17 outlook assumes flat FX vs FY16",
+   "fy_margin_guide": [
+    14.7,
+    14.9
+   ],
+   "fy_margin_guide_note": "10-30bp above the 14.6% FY16 margin",
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    8.4,
+    8.65
+   ],
+   "next_q_guide_lc": [
+    5,
+    8
+   ],
+   "next_q_guide_note": "on a flat FX assumption",
+   "next_print": "Q1 FY17 print (mid-December)",
+   "fcf_guide_b": [
+    4.0,
+    4.3
+   ],
+   "cash_b": 4.9,
+   "diluted_shares_m": 665.4,
+   "optimization": "",
+   "fy_bookings_target_note": "no FY17 bookings target given",
+   "tax_rate": 0.23,
+   "tax_note": "22-24%, including an estimated benefit of less than 2 points from early adoption of ASU 2016-09",
+   "cash_return_text": "$4.04B returned to shareholders in FY16",
+   "dividend_annual": 2.42,
+   "dividend_note": "$1.21 semi-annual, declared 2016-09-29 (S69)",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_gaap": 6.45,
+    "eps_normalized": 5.34,
+    "normalization_note": "FY16 = $5.34 excluding $1.11 of gains on the sale of businesses (S69; GAAP $6.45)",
+    "revenue_usd_b": 32.883,
+    "diluted_shares_m": 667.77,
+    "op_margin": 14.6,
+    "revenue_lc_growth": 10.5,
+    "bookings_b": 35.4,
+    "bookings_record": false,
+    "why": "Accenture: global consulting and outsourcing leader across five operating groups with $35.4B bookings in FY16; discretionary consulting demand is cyclical, the franchise is not"
+   }
+  },
+  {
+   "quarter": "Q1 FY17",
+   "published": "2016-12-21",
+   "source": "S71",
+   "extra_sources": [
+    "S66"
+   ],
+   "release": "Dec 21",
+   "release_time": "before the open (8:00 a.m. EST call)",
+   "revenue_b": 8.52,
+   "revenue_lc": 7,
+   "consulting_lc": 7,
+   "managed_lc": 7,
+   "bookings_b": 8.3,
+   "bookings_lc": 9,
+   "bookings_lc_note": "derived: +7.8% USD vs Q1 FY16 $7.7B (S66), less the negative 1% foreign-currency impact the release states for Q1 bookings",
+   "consulting_bookings_b": 4.9,
+   "consulting_revenue_b": 4.59,
+   "margin_label": "op margin",
+   "margin": 15.6,
+   "margin_bp": 40,
+   "groups_basis": "Q1 actuals",
+   "groups": [
+    [
+     "Products",
+     2.32,
+     17
+    ],
+    [
+     "Financial Services",
+     1.81,
+     6
+    ],
+    [
+     "Comms, Media & Tech",
+     1.686,
+     4
+    ],
+    [
+     "Health & Public Service",
+     1.501,
+     5
+    ],
+    [
+     "Resources",
+     1.195,
+     -2
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    5.64,
+    5.87
+   ],
+   "fy_eps_guide_note": "lowered from $5.75-5.98, reflecting the revised FX assumption",
+   "fy_rev_guide_lc": [
+    5,
+    8
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": -2.0,
+   "fy_fx_note": "FY17 outlook now assumes -2% FX vs FY16 (was flat)",
+   "fy_margin_guide": [
+    14.7,
+    14.9
+   ],
+   "next_q": "Q2",
+   "next_q_guide_b": [
+    8.15,
+    8.4
+   ],
+   "next_q_guide_lc": [
+    5,
+    8
+   ],
+   "next_q_guide_note": "on a -2% FX assumption",
+   "next_print": "Q2 FY17 print (late March)",
+   "fcf_guide_b": [
+    4.0,
+    4.3
+   ],
+   "cash_b": 4.1,
+   "diluted_shares_m": 663.8,
+   "optimization": "",
+   "tax_rate": 0.23,
+   "cash_return_text": "$4.9B buyback authority"
+  },
+  {
    "quarter": "Q1 FY23",
    "published": "2022-12-16",
    "source": "S3",
@@ -3969,6 +4944,52 @@
    "doc": "FY2014 10-K",
    "risk_quote": "Current areas of significant change include mobility, cloud-based computing, digital, the processing and analyzing of large amounts of data and SaaS solutions. ... These technologies, and others that may emerge, could reduce and, over time, replace some of our current business.",
    "offering": "it reports 'growing demand for our services in emerging technologies, including digital services (digital marketing, analytics and mobility) and cloud computing'"
+  },
+  {
+   "id": "S65",
+   "published": "2015-11-02",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2015 10-K",
+   "doc_short": "10-K FY15",
+   "competitors_quote": "in lower-cost locations, particularly in India, that offer services globally that are similar to the services and solutions we offer",
+   "competitors_short": "Offshore providers 'in lower-cost locations, particularly in India'",
+   "warning": "says competitors 'may be willing, at times, to price contracts lower than us' and 'may also offer more aggressive contractual terms', and that its own delivery network 'is increasingly concentrated in India and the Philippines'",
+   "warning_short": "competitors 'may be willing, at times, to price contracts lower than us'",
+   "gdn_people": "about 257,000",
+   "gdn_added": "205,000+ a year earlier"
+  },
+  {
+   "id": "S65",
+   "published": "2015-11-02",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2015 10-K",
+   "risk_quote": "Examples of areas of significant change include digital, analytics, mobility, IoT, cloud-based services, as-a-service solutions, security, cognitive computing and information technology automation. ... These technologies, and others that may emerge, could reduce and, over time, replace some of our current business.",
+   "offering": "it reports 'growing demand to assist clients with cloud enablement and operation and maintenance of digital-related services'"
+  },
+  {
+   "id": "S70",
+   "published": "2016-10-31",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2016 10-K",
+   "doc_short": "10-K FY16",
+   "competitors_quote": "in lower-cost locations, particularly in India, that offer services globally that are similar to the services and solutions we offer",
+   "competitors_short": "Offshore providers 'in lower-cost locations, particularly in India'",
+   "warning": "says competitors 'may be willing, at times, to price contracts lower than us' and 'may also offer more aggressive contractual terms', and that its own delivery network 'is increasingly concentrated in India and the Philippines'",
+   "warning_short": "competitors 'may be willing, at times, to price contracts lower than us'",
+   "gdn_people": "about 285,000",
+   "gdn_added": "about 257,000 a year earlier"
+  },
+  {
+   "id": "S70",
+   "published": "2016-10-31",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2016 10-K",
+   "risk_quote": "Examples of areas of significant change include digital-, cloud- and security-related offerings, which are continually evolving as developments such as artificial intelligence, automation, blockchain, Internet of Things and as-a-service solutions are commercialized. ... Some of these technologies, such as cloud-based services, artificial intelligence and automation, and others that may emerge, have reduced and replaced some of our historical services and solutions and may continue to do so in the future.",
+   "offering": "it reports 'growing demand to assist clients with cloud enablement and the operation and maintenance of digital-related services'"
   },
   {
    "id": "S13",

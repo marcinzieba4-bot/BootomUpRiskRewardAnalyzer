@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  ACN  ·  Accenture plc  ·  $88.15  ·  RETROSPECTIVE as of 2015-02-06
+  Signal: ◐ WATCHLIST   Ratio B: 1.42x   Adj gap: -0.81  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2015-02-06; latest print Q1 FY15 (Dec 18)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenue, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Industry group               FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Products                  $     7.4  $   7.4  $   8.7      +0.0      +1.3
+    +10% LC in Q1
+  Financial Services        $     6.6  $   6.6  $   7.7      +0.0      +1.1
+    +11% LC in Q1
+  Comms, Media & Tech       $     6.1  $   6.1  $   7.1      +0.0      +1.0
+    +15% LC in Q1
+  Health & Public Service   $     5.3  $   5.3  $   6.2      +0.0      +0.9
+    +13% LC in Q1
+  Resources                 $     5.0  $   5.0  $   5.8      +0.0      +0.8
+    +2% LC in Q1
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    30.4  $  30.4  $  35.5      +0.0      +5.1
+  FY2015E = FY14 $30.00B × (1 + 6.5% LC guide, -5.0% FX); split pro rata to Q1 actuals
+  Q1 FY15 (Dec 18): revenue $7.90B +10% LC; consulting +7% LC, outsourcing +14% LC; bookings $7.70B -9% LC;
+  op margin 15.0% (+20bp); FY15 guide +5-8% LC (raised from 4-7%), EPS $4.66-4.80 (lowered from $4.74-4.88: higher revenue outlook more than offset by FX); Q2 guide $7.25-7.50B (USD only)
+
+  FY2015E EPS check:  $30.4B × 14.5% × (1−26.5%) ÷ 0.682B  =  $4.75  (guide midpoint $4.73)
+  FY2017E BEAR check: $30.4B × 14.5% ÷ 0.632B  =  $5.13  (scenario $4.66)
+  FY2017E BULL check: $35.5B × 14.9% ÷ 0.632B  =  $6.15  (scenario $6.15)
+  Every 1pp of operating margin ≈ $0.33 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR    BASE≥    BULL≥   XBULL≥       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  New bookings growth (LC)            -5.0%     0.0%     8.0%    15.0%     -9.0%  ⚠ BEAR  █░░░
+  Consulting revenue growth (LC)      -6.0%     2.0%     7.0%    12.0%     +7.0%  ▲ BULL  ███░
+  Outsourcing growth (LC)             +3.0%     5.0%    10.0%    15.0%    +14.0%  ▲ BULL  ███░
+  Total revenue growth (LC)           +0.0%     3.0%     7.0%    11.0%    +10.0%  ▲ BULL  ███░
+  Operating margin change           -40.0bp    0.0bp   20.0bp   50.0bp   +20.0bp  ▲ BULL  ███░
+  Offshore: net effect on services   +1.0/4    2.0/4    3.0/4    4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.45 / 4.00
+  Market composite:   3.13 / 4.00  (back-solved from $88 + 15% hurdle)
+  SCA adjustment:    -0.03  ·  EPP-distance adj -0.10  →  Adj composite 2.32  →  Gap -0.81  [OVERVALUED]
+
+  Structural factors:
+    +  Share-gainer at scale: FY14 revenue +5% LC, record $35.9B bookings; Q1 revenue +10% LC  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.6x FY15E vs a 15.9x 10-yr median (89th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY15 guide +5-8% LC vs a 8.2% 10-yr median  (-0.17 × 20%  =  -0.034)
+    +  Cash $4.5B, FCF guide $3.5-3.8B, $4.1B buyback authority  (+0.30 × 15%  =  +0.045)
+    +  Global Delivery Network: 205,000+ people (182,000+ a year earlier) — Accenture runs the offshore model itself  (+0.20 × 10%  =  +0.020)
+    -  Offshore providers 'particularly in India ... on more aggressive contractual terms'; competitors 'may be willing, at times, to price contracts lower than us'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  New bookings growth (LC)             -9.0%     -5.0%   +4.0%  Clients defer transformation programs…
+  Consulting revenue growth (LC)       +7.0%     -6.0%  -13.0%  Discretionary consulting contracts
+  Outsourcing growth (LC)             +14.0%     +3.0%  -11.0%  Outsourcing renewals repriced lower b…
+  Total revenue growth (LC)           +10.0%     +0.0%  -10.0%  FY15 lands at the bottom of its guide…
+  Operating margin change            +20.0bp   -40.0bp  -60.0bp  Pricing concessions + bench costs rev…
+  Offshore: net effect on services    +2.0/4    +1.0/4  -1.0/4  Offshore pricing pressure accelerates…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$71  (model)  /  $60 (defined)
+  Bear probability (proxy model):  10.2%
+
+  KEY TRIGGER: consulting went from +4% (Q4 FY14) to +7% LC (Q1);
+  the bear case needs that slowdown to reach outsourcing (+14% LC)
+  through repriced renewals. A JOINT event: a demand recession alone hits consulting, accelerating offshore
+  pricing pressure (10-K FY14) alone hits outsourcing margins — the bear needs both.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.73  (FY2015E EPS, guide midpoint)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2005 13.8x, 2006 14.4x, 2007 12.8x, 2008 10.0x, 2009 10.0x, 2010 11.0x, 2011 13.0x, 2012 13.5x, 2013 15.5x, 2014 16.0x, 2015 17.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $61/share
+  Current $88 vs Updated EPP $61:  +43%  ⚠ far above floor — large drawdown room
+  Bear $60 vs Updated EPP $61:  -2%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  New bookings growth (LC)                     0.0       +9.0   BASE floor (vs -9 now)
+  Consulting revenue growth (LC)               2.0       -5.0   BASE floor (vs +7 now)
+  Outsourcing growth (LC)                      5.0       -9.0   BASE floor (vs +14 now)
+  Total revenue growth (LC)                    3.0       -7.0   BASE floor (vs +10 now)
+  Operating margin change                      0.0      -20.0   BASE floor (vs +20 now)
+  Offshore: net effect on services             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.73 × (1+9.7%)² = $5.69
+  At 15x P/E (conservative):  $85/share
+  + Cumul. dividends (2yr):  +$4.20/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $85  (▼3 from $88)
+  Conservative total return:  +2% over 2yr  = +1%/yr
+
+  9.7% EPS growth is what is left once the premium multiple (18.6x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2017E EPS of $5.60,
+  i.e. 8.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $73.98  –  $91.94  (at 79th pct of range)
+  Annual dividend:      $2.04/share  (yield 2.3%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.99
+  1-sigma range (1yr):  $74  –  $102  ($88 ± 16%)
+  2-sigma range (1yr):  $60  –  $117
+  ────────────────────────────────────────────────────────────
+  Bear $60 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  A consulting compounder with a 1.0 beta: the stock is +16% off its October
+  low while consulting growth went from +4% (Q4 FY14) to +7% LC (Q1).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.66  12.9x  $     60    10.2%      4.0%    +6.2pp  Flat EPS (worst year FY04-FY14, capped at 0%); P/E to its 10th pct
+  BASE        5.90  15.9x  $     94    35.5%     14.1%   +21.5pp  EPS +11.7%/yr (latest guide + margin + buyback); P/E at its 10-yr median
+  BULL        6.15  17.6x  $    108    45.6%     49.0%    -3.4pp  EPS +14.0%/yr (FY04-FY14 CAGR); P/E holds its 75th pct
+  XBULL       7.76  18.8x  $    146     8.6%     32.9%   -24.3pp  EPS +28.1%/yr (best 2-yr run FY04-FY14); P/E at its 90th pct
+
+  Proxy EV (2yr): $101  /  Market EV: $117  /  Current: $88
+  Conservative EV (2yr, ④): $85 + $4.20 divs = $90 total value
+  Downside (→ Bear $60): 31.9%   Upside (→ Bull $108): 22.5%   Ratio B 1.42x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $88 the market needs $117 in two years —
+  above the BULL case. That is a market composite of 3.13 against a model
+  read of 2.32: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.42x     +43%    -0.81  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.72x     +43%    -0.35  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     3.47x     +43%    -1.07  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.10x     +43%    -0.68  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.79x     +43%    -0.91  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.42x     +43%    -0.51  OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.42x     +16%    -0.71  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.42x     +43%    -0.38  MODESTLY OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY15 print (late March) — the next read on consulting (+7% LC now) and the guide
+  (2) Consulting book-to-bill — 0.95x in Q1
+  (3) Bookings run-rate vs the $34-36B FY15 target
+  (4) Outsourcing pricing — where offshore pressure would show first
+  (5) Buyback pace at 19x — management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $61  |  ADD below ~$80  |  TRIM above $108
+════════════════════════════════════════════════════════════════════════
+

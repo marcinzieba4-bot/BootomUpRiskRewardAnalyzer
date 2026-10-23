@@ -78,7 +78,8 @@ anything unless all of these pass:
 Fallbacks for facts a company did not publish (decided before any outcome of the affected dates was computed):
 
 - **No next-quarter guide in local currency:** BASE growth and the growth factor use the full-year LC revenue guide.
-  Example: ACN FY08 guided Q2 in dollars only.
+  Example: ACN FY08 guided Q2 in dollars only. The test is per print: ACN guided the next quarter in LC from
+  Q4 FY15 (2015-09-24), not in Q1 FY16 (2015-12-17, dollars only, so the FY16 guide applies), and again from Q2 FY16.
 - **No margin guide:** the guided margin step is 0, and the margin signal uses the latest quarter's year-on-year change.
 - **No FX guide:** FY revenue is LC growth only.
 - **A distorted year with no published adjusted figure:** it is excluded, and the P/E window starts after it.
@@ -106,7 +107,13 @@ How recurring cases are encoded (each was decided the first time it came up, the
   the following quarter's release) is never back-filled into the earlier print.
 - **A one-off charge with a company-published figure without it:** EPS and operating margin use that figure,
   and the note keeps the GAAP number. Example: ACN FY09 restructuring charge (EPS $2.68 vs $2.44 GAAP,
-  margin 13.4% vs 12.3%).
+  margin 13.4% vs 12.3%). The same holds for a guide given with and without an announced item: ACN's FY15 guide
+  excludes the pension settlement charge (from Q2 FY15, before it was booked) and its FY16 guide excludes the
+  Navitaire gain; FY15 is $4.82 (GAAP $4.76) and FY16 $5.34 (GAAP $6.45, gains on business sales).
+  A guide that includes a change in accounting with no published figure without it stays GAAP
+  (ACN FY17: the share-based payment tax benefit of ASU 2016-09).
+- **A figure published to a decimal** is kept as published (ACN FY16 LC revenue growth 10.5%, FY16 guide 9.5-10.5%).
+- **No bookings target** for the year: catalyst (3) reads "Bookings run-rate". ACN gave none for FY16 or FY17.
 - **A filing accepted after the 16:00 ET close** counts from the next trading day, so it never meets a closing price
   that was set before it was public. Example: the FY11 10-K, accepted 2011-10-21 16:06 ET, is dated 2011-10-24.
 - **A release made before the open** may meet the same day's close (ACN moved to pre-market releases in 2013).
@@ -162,7 +169,10 @@ What the gates enforce:
   names Indian providers "often at highly competitive prices". ACN in January 2008
   carries it on the watch list, not AI.
   From its FY2012 10-K (2012-10-30), ACN also carries CLOUD on the watch list: company-acknowledged,
-  no market read. Its earlier 10-Ks mention cloud only as an offering.
+  no market read. Its earlier 10-Ks mention cloud only as an offering. Its FY2016 10-K (2016-10-31) goes
+  further: cloud-based services, artificial intelligence and automation "have reduced and replaced some of our
+  historical services and solutions". That changes the quoted wording, not the status: it is still the company's
+  own statement, and no dated evidence shows the market pricing it for ACN.
 
 ## Workflow
 
@@ -177,6 +187,7 @@ python3 retro/build_acn.py --weekly 2010-01-04 2010-12-31
 python3 retro/build_acn.py --weekly 2011-01-03 2011-12-31
 python3 retro/build_acn.py --weekly 2012-01-02 2012-12-31
 python3 retro/build_acn.py --weekly 2013-01-07 2014-12-31
+python3 retro/build_acn.py --weekly 2015-01-05 2016-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done
