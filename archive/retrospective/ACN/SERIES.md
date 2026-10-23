@@ -9,6 +9,19 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2008-01-18 | $33.77 | Accenture Ltd Q1 FY08 results | 2.85 | +1.55 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.5% | +40.7pp | +1.8% | ✓ |
 | 2008-01-25 | $33.86 | Accenture Ltd Q1 FY08 results | 2.85 | +1.54 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.4% | +41.2pp | +2.1% | ✓ |
 | 2008-01-31 | $34.62 | Accenture Ltd Q1 FY08 results | 2.85 | +1.49 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.0% | +40.3pp | +0.3% | ✓ |
+| 2008-02-08 | $33.95 | Accenture Ltd Q1 FY08 results | 2.85 | +1.53 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.0% | +38.7pp | +2.8% | ✓ |
+| 2008-02-15 | $34.56 | Accenture Ltd Q1 FY08 results | 2.85 | +1.49 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.8% | +37.2pp | +1.5% | ✓ |
+| 2008-02-22 | $34.03 | Accenture Ltd Q1 FY08 results | 2.85 | +1.53 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.3% | +37.7pp | +3.6% | ✓ |
+| 2008-02-29 | $35.25 | Accenture Ltd Q1 FY08 results | 2.85 | +1.44 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +16.9% | +30.5pp | +0.6% | ✓ |
+| 2008-03-07 | $33.75 | Accenture Ltd Q1 FY08 results | 2.85 | +1.55 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.7% | +33.9pp | +5.8% | ✓ |
+| 2008-03-14 | $33.35 | Accenture Ltd Q1 FY08 results | 2.85 | +1.58 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.0% | +37.2pp | +7.8% | ✓ |
+| 2008-03-20 | $34.61 | Accenture Ltd Q1 FY08 results | 2.85 | +1.49 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.1% | +33.7pp | +4.6% | ✓ |
+| 2008-03-28 | $35.32 | Accenture Ltd Q2 FY08 results | 2.70 | +1.45 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.6% | +31.3pp | +3.1% | ✓ |
+| 2008-04-04 | $36.77 | Accenture Ltd Q2 FY08 results | 2.70 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +17.2% | +27.7pp | -0.2% | ✓ |
+| 2008-04-11 | $36.51 | Accenture Ltd Q2 FY08 results | 2.70 | +1.37 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.7% | +27.6pp | +1.2% | ✓ |
+| 2008-04-18 | $39.30 | Accenture Ltd Q2 FY08 results | 2.70 | +1.17 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.9% | +24.3pp | -5.2% | ✓ |
+| 2008-04-25 | $38.94 | Accenture Ltd Q2 FY08 results | 2.70 | +1.20 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.9% | +28.2pp | -3.5% | ✓ |
+| 2008-04-30 | $37.55 | Accenture Ltd Q2 FY08 results | 2.70 | +1.30 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.5% | +31.2pp | +0.7% | ✓ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |
