@@ -14,7 +14,7 @@
    {
     "theme": "GENAI",
     "status": "live, priced as a tailwind",
-    "reason": "Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 24.4x FY23E — near its own median, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth."
+    "reason": "Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 24.4x FY23E — near its own median, not an AI discount. Re-file under DISRUPTION_EXPOSED (GENAI) only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth."
    }
   ],
   "evidence": [

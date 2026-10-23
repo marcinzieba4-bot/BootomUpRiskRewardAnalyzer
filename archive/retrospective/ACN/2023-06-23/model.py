@@ -97,12 +97,12 @@ SOURCES = [
     }
 ]
 
-# Durability as it should have been judged ON AS_OF — not today's AI_EXPOSED profile.
+# Durability as judged on AS_OF from the dated facts and events above.
 PIT_PROFILE = {
     "kind": "DURABLE",
     "risk": 2,
     "why": 'Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not',
-    "theme_watch": [{'theme': 'GENAI', 'status': 'live, priced as a tailwind', 'reason': 'Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 25.8x FY23E — a premium, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth.'}],
+    "theme_watch": [{'theme': 'GENAI', 'status': 'live, priced as a tailwind', 'reason': 'Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 25.8x FY23E — a premium, not an AI discount. Re-file under DISRUPTION_EXPOSED (GENAI) only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth.'}],
     "evidence": ['S13', 'S9', 'S10', 'S11', 'S8'],
 }
 
@@ -111,7 +111,7 @@ CURRENT_PRICE   = 298.43   # USD, NYSE close 2023-06-23
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {'p5': 16.9, 'p10': 17.5, 'p25': 19.1, 'median': 22.5, 'p75': 26.1, 'p90': 30.2, 'max': 38.8}   # current-FY P/E over the window below
-PE_NOW_PCTL     = 74    # share of those daily P/Es at or below today's
+PE_NOW_PCTL     = 74    # share of those daily P/Es at or below the AS_OF one
 WINDOW_LABEL    = '10-yr'   # P/E window: 2013-06-24 .. AS_OF
 YEARLY_MIN_PE   = [('2013', 15.5, '2013-10-09'), ('2014', 15.9, '2014-10-15'), ('2015', 15.5, '2015-09-01'), ('2016', 15.7, '2016-02-09'), ('2017', 19.0, '2017-02-01'), ('2018', 18.2, '2018-12-24'), ('2019', 18.4, '2019-01-03'), ('2020', 18.2, '2020-03-23'), ('2021', 27.5, '2021-01-29'), ('2022', 21.6, '2022-10-12'), ('2023', 21.3, '2023-03-15')]   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = 0.289   # 1-yr realized, daily log returns

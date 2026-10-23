@@ -144,9 +144,9 @@ def build(as_of, facts, acn, spx, engine):
             "sellside": f"Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}",
             "losers": ("Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN "
                        f"was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}"),
-        }[stage] + (" Re-file under AI_EXPOSED only if dated evidence shows the market pricing AI substitution of IT-services work."
+        }[stage] + (" Re-file under DISRUPTION_EXPOSED (GENAI) only if dated evidence shows the market pricing AI substitution of IT-services work."
                     if stage == "chatgpt_only" else
-                    " Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan "
+                    " Re-file under DISRUPTION_EXPOSED (GENAI) only when the multiple starts discounting the legacy-services deflation J.P.Morgan "
                     "describes, or it shows up in managed-services growth.")
         watch = [{"theme": "GENAI", "status": "live, no read on IT services yet" if stage == "chatgpt_only" else "live, priced as a tailwind",
                   "reason": reason}]
@@ -238,7 +238,7 @@ METHODOLOGY = ("house v2 (EPP-distance adjustment), 6-section format; retro meth
                "derived from dated facts by frozen rules (retro/README.md)")
 SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 
-# Durability as it should have been judged ON AS_OF — not today's AI_EXPOSED profile.
+# Durability as judged on AS_OF from the dated facts and events above.
 PIT_PROFILE = {{
     "kind": "DURABLE",
     "risk": 2,
@@ -252,7 +252,7 @@ CURRENT_PRICE   = {close:.2f}   # USD, NYSE close {as_of}
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {R(pctl)}   # current-FY P/E over the window below
-PE_NOW_PCTL     = {pe_now_pctl}    # share of those daily P/Es at or below today's
+PE_NOW_PCTL     = {pe_now_pctl}    # share of those daily P/Es at or below the AS_OF one
 WINDOW_LABEL    = {R(window_label)}   # P/E window: {window[0]} .. AS_OF
 YEARLY_MIN_PE   = {R(yearly)}   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = {vol:.3f}   # 1-yr realized, daily log returns

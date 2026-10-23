@@ -55,7 +55,7 @@ SOURCES = [
     }
 ]
 
-# Durability as it should have been judged ON AS_OF — not today's AI_EXPOSED profile.
+# Durability as judged on AS_OF from the dated facts and events above.
 PIT_PROFILE = {
     "kind": "DURABLE",
     "risk": 2,
@@ -69,7 +69,7 @@ CURRENT_PRICE   = 34.03   # USD, NYSE close 2008-02-22
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {'p5': 14.2, 'p10': 14.7, 'p25': 15.9, 'median': 17.3, 'p75': 19.4, 'p90': 20.4, 'max': 22.9}   # current-FY P/E over the window below
-PE_NOW_PCTL     = 6    # share of those daily P/Es at or below today's
+PE_NOW_PCTL     = 6    # share of those daily P/Es at or below the AS_OF one
 WINDOW_LABEL    = '5.5-yr'   # P/E window: 2002-09-03 .. AS_OF
 YEARLY_MIN_PE   = [('2002', 11.6, '2002-10-04'), ('2003', 13.1, '2003-03-12'), ('2004', 15.1, '2004-10-14'), ('2005', 13.8, '2005-04-27'), ('2006', 14.4, '2006-09-11'), ('2007', 14.2, '2007-11-27'), ('2008', 13.7, '2008-01-11')]   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = 0.275   # 1-yr realized, daily log returns
