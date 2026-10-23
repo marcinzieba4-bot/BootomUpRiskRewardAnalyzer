@@ -359,14 +359,50 @@ def cmd_index():
     return rows
 
 
+def cmd_series(ticker):
+    """Markdown table of every retrospective of one ticker -> archive/retrospective/<T>/SERIES.md."""
+    rows = [r for r in cmd_index() if r["ticker"] == ticker.upper()]
+    if not rows:
+        sys.exit(f"no retrospectives for {ticker}")
+    out = [f"# {ticker.upper()} retrospective series", "",
+           "Point-in-time columns use only information public on the as-of date. The last three columns are "
+           "hindsight (2-year total return incl. dividends, excess vs SPY, whether the price-state call held).", "",
+           "| as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | call |",
+           "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    for r in sorted(rows, key=lambda x: x["as_of"]):
+        with open(os.path.join(ROOT, r["path"], "analysis.json"), encoding="utf-8") as fh:
+            a = json.load(fh)
+        results = [s for s in a["sources"] if " results " in f" {s['title']} "]
+        known = max(results, key=lambda s: s["published"])["title"].split(" (")[0] if results else "-"
+        rob = a.get("robustness") or []
+        same = sum(1 for x in rob if x.get("price_state") == r["price_state"])
+        o = r["outcome"] or {}
+        tr = f"{o['tr_2y']:+.1f}%" if "tr_2y" in o else "-"
+        ex = f"{o['excess_2y']:+.1f}pp" if "excess_2y" in o else "-"
+        hit = {True: "✓", False: "✗"}.get(o.get("call_hit_2y"), "-")
+        out.append(f"| {r['as_of']} | ${r['price']:.2f} | {known} | {a['metrics']['proxy_composite']:.2f} | "
+                   f"{r['adj_gap']:+.2f} | {r['ratio_b']:.2f}x | {r['legacy_tier']} | {r['class']} ({r['price_state']}) | "
+                   f"{same}/{len(rob)} {r['price_state']} | {tr} | {ex} | {hit} |")
+    path = os.path.join(ARCHIVE, ticker.upper(), "SERIES.md")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(out) + "\n")
+    print("\n".join(out))
+    print(f"\n-> {os.path.relpath(path, ROOT)}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["run", "outcome", "lint", "index"])
-    ap.add_argument("folder", nargs="?")
+    ap.add_argument("cmd", choices=["run", "outcome", "lint", "index", "series"])
+    ap.add_argument("folder", nargs="?", help="retrospective folder (series: the ticker)")
     ap.add_argument("--offline", action="store_true", help="skip the as-of price check")
     a = ap.parse_args()
     if a.cmd == "index":
         print(f"{len(cmd_index())} entries -> {os.path.relpath(INDEX, ROOT)}")
+        return
+    if a.cmd == "series":
+        if not a.folder:
+            ap.error("series needs a ticker")
+        cmd_series(a.folder)
         return
     if not a.folder:
         ap.error("folder required")

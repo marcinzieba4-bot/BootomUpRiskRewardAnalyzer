@@ -92,10 +92,24 @@ cp archive/retrospective/ACN/2023-06-30/model.py archive/retrospective/XYZ/2019-
 python3 retro/retro_tool.py lint    archive/retrospective/XYZ/2019-03-29
 python3 retro/retro_tool.py run     archive/retrospective/XYZ/2019-03-29
 python3 retro/retro_tool.py outcome archive/retrospective/XYZ/2019-03-29   # hindsight, last
+python3 retro/retro_tool.py series  XYZ                                     # table -> archive/retrospective/XYZ/SERIES.md
 ```
 
 When copying a model forward, rewrite it. Don't edit only the numbers: the
 lint exists because narrative text is where hindsight leaks first.
+
+**Weekly series: picking the dates.** Use one date per week, normally that
+week's Friday close (or the last trading day if Friday is a holiday). In an
+earnings week, use the first close *after* the release, so the print and the
+market's reaction are both in the information set.
+
+- **Copying across an earnings date.** When you copy a model from after the print
+  to a date before it, remove every fact the print introduced: its sources,
+  quarter figures, the new guidance and the narrative built on them.
+- **Grep before running.** Search the copy for the print's tell-tale numbers before
+  `run`. The lint only sees dates and terms, not numbers.
+- **Example:** `ACN/2023-06-02 … 06-30` runs three pre-print weeks on Q2 FY23 data
+  and the March guide, and two post-print weeks on Q3 FY23.
 
 Data sources that worked from the cloud session:
 

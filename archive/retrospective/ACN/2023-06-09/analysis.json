@@ -1,0 +1,226 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2023-06-09",
+ "price_date": "2023-06-09",
+ "price": 308.72,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; scenario P/E = percentiles of ACN's own 10-yr P/E on current-FY EPS; EPP P/E = median panic trough",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [
+   {
+    "theme": "GENAI",
+    "status": "live, priced as a tailwind",
+    "reason": "Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 26.8x FY23E — a premium, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting deflation or GenAI shows up as shrinking billable hours."
+   }
+  ],
+  "evidence": [
+   "S9",
+   "S10",
+   "S11"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.68x; +49% to EPP floor; model-vs-market gap -0.56; conservative 2yr -6%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.68,
+  "ratio_b_fmt": "1.68x",
+  "epp": 207.36,
+  "epp_gap_pct": 48.9,
+  "epp_adj": -0.1,
+  "proxy_composite": 3.0,
+  "sca": -0.06,
+  "adj_composite": 2.84,
+  "market_composite": 3.4,
+  "adj_gap": -0.56,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -6.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 11.75,
+    "pe": 17.5,
+    "price": 206,
+    "desc": "Consulting recession spreads to managed services; pricing concessions; P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 13.04,
+    "pe": 22.4,
+    "price": 292,
+    "desc": "Mid-single-digit LC growth, 10-20bp/yr margin, buyback; P/E reverts to its 10-yr median"
+   },
+   "BULL": {
+    "eps": 14.24,
+    "pe": 26.0,
+    "price": 370,
+    "desc": "GenAI becomes a cloud-sized services cycle; growth back to 8-10% LC; P/E holds 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.31,
+    "pe": 30.2,
+    "price": 462,
+    "desc": "Re-run of the FY21-22 boom: double-digit growth and a 30x multiple"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.68,
+   "epp_gap_pct": 48.9,
+   "adj_gap": -0.56,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -6.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 0.24,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -6.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 10.67,
+   "epp_gap_pct": 48.9,
+   "adj_gap": -0.93,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -6.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.34,
+   "epp_gap_pct": 48.9,
+   "adj_gap": -0.44,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -6.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.16,
+   "epp_gap_pct": 48.9,
+   "adj_gap": -0.69,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -6.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.68,
+   "epp_gap_pct": 48.9,
+   "adj_gap": -0.26,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -6.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP at 21x (2022-23 trough, no v2 penalty)",
+   "ratio_b": 1.68,
+   "epp_gap_pct": 27.6,
+   "adj_gap": -0.46,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -6.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.68,
+   "epp_gap_pct": 48.9,
+   "adj_gap": -0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -6.5,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "ACN (retrospective, 2023-06-09) ◐ WATCHLIST — Ratio B 1.68x (33.3% downside to Bear $206 / +19.8% upside to Bull $370) | Adj composite 2.84 vs market 3.40: gap -0.56 [OVERVALUED] | +49% above the EPP floor $207 (18x FY23E $11.52) | Conservative 2-yr case: -6.5% total (-3.3%/yr) | At 26.8x FY23E the price needs the bull case while consulting has slowed to +4% LC and Q3 is guided to +3-7% LC; GenAI is a live theme but priced as a tailwind, not a threat.",
+ "sources": [
+  {
+   "id": "S1",
+   "published": "2022-09-22",
+   "title": "Accenture Q4/FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
+   "supports": "FY22 revenue by industry group, record $71.7B bookings, FY21 adjusted EPS $8.80, dividend $1.12 (+15%)"
+  },
+  {
+   "id": "S2",
+   "published": "2022-10-12",
+   "title": "SEC XBRL company facts, 10-K filings 2010-10-26 .. 2022-10-12",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001467373.json",
+   "supports": "GAAP diluted EPS FY2012-FY2022 for the P/E history; only facts filed on or before 2022-10-12 used"
+  },
+  {
+   "id": "S3",
+   "published": "2022-12-16",
+   "title": "Accenture Q1 FY23 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000369/fy23q1earnings8-kexhibit.htm",
+   "supports": "Q1 revenue $15.7B (+15% LC), bookings $16.2B, consulting +10% LC"
+  },
+  {
+   "id": "S4",
+   "published": "2023-03-23",
+   "title": "Accenture Q2 FY23 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737323000123/fy23q2earnings8-kexhibit.htm",
+   "supports": "Q2 and H1 revenue by type of work and industry group, record $22.1B bookings (+17% LC), cash $6.2B, $1.5B business-optimization program, FY23 and Q3 guidance"
+  },
+  {
+   "id": "S9",
+   "published": "2023-02-10",
+   "title": "Reuters via Business Standard: ChatGPT, other AI models to disrupt Indian IT firms (J.P.Morgan)",
+   "url": "https://www.business-standard.com/article/companies/chatgpt-other-ai-models-to-disrupt-indian-it-firms-jp-morgan-analyst-123021000976_1.html",
+   "supports": "GenAI a near-term deflation driver for legacy IT services; Accenture/Deloitte gain share"
+  },
+  {
+   "id": "S10",
+   "published": "2023-05-02",
+   "title": "CNBC: Chegg drops more than 40% after saying ChatGPT is killing its business",
+   "url": "https://www.cnbc.com/2023/05/02/chegg-drops-more-than-40percent-after-saying-chatgpt-is-killing-its-business.html",
+   "supports": "the market had started repricing GenAI losers"
+  },
+  {
+   "id": "S11",
+   "published": "2023-05-02",
+   "title": "The Week (Bloomberg interview): IBM to pause hiring, plans to replace 7,800 jobs with AI",
+   "url": "https://www.theweek.in/news/biz-tech/2023/05/02/ibm-to-pause-hiring-plans-to-replace-7800-jobs-with-ai.amp.html",
+   "supports": "GenAI substitution of back-office/services labour was a live narrative"
+  },
+  {
+   "id": "S12",
+   "published": "2023-06-09",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $308.72, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}

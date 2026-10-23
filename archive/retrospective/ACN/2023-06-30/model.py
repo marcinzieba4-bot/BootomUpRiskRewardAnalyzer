@@ -146,7 +146,7 @@ WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 
 STRUCTURAL_FACTORS = [
     ("Share-gainer at scale: FY22 revenue +26% LC, record $71.7B bookings, 26 clients >$100M in Q3", 0.4, 0.20),
-    ("Premium multiple: 26.7x FY23E vs a 22.6x 10-yr median (77th percentile of its own range)",     -0.5, 0.25),
+    ("Premium multiple: 26.7x FY23E vs a 22.6x 10-yr median (79th percentile of its own range)",     -0.5, 0.25),
     ("Discretionary consulting stall: consulting -1% LC, CMT -8% LC, Q4 guide only +2-6% LC",         -0.4, 0.20),
     ("Net cash $8.5B, FCF guide $8.1-8.6B, >=$7.1B returned; $1.5B optimization defends margin",       0.3, 0.15),
     ("GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k",           0.3, 0.10),
