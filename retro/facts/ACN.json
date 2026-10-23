@@ -7837,8 +7837,8 @@
    "doc_short": "10-K FY21",
    "competitors_quote": "off-shore IT service providers in lower-cost locations, particularly in India",
    "competitors_short": "Offshore IT providers 'in lower-cost locations, particularly in India'",
-   "warning": "says competitors 'may be willing, at times, to price contracts lower than us' and 'may also offer more aggressive contractual terms', and that its global delivery capability 'is concentrated in India and the Philippines'",
-   "warning_short": "competitors 'may be willing, at times, to price contracts lower than us'",
+   "warning": "says competitors 'may be willing, at times, to take on more risk or price contracts lower than us' and 'may also offer more aggressive contractual terms', and that its global delivery capability 'is concentrated in India and the Philippines'",
+   "warning_short": "competitors 'may be willing, at times, to take on more risk or price contracts lower than us'",
    "gdn_clause": "global delivery capability has 'large portions' based in India and the Philippines (no delivery headcount or center count given; the FY2016 10-K counted about 285,000 people)",
    "gdn_factor": "Global delivery capability: 'large portions' in India and the Philippines, no headcount given since FY16 (about 285,000 people then)"
   },
