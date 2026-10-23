@@ -84,6 +84,15 @@ Fallbacks for facts a company did not publish (decided before any outcome of the
 - **A distorted year with no published adjusted figure:** it is excluded, and the P/E window starts after it.
   Example: ACN FY02, with a $321M investment loss.
 
+Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output changes, so still r2):
+
+- **A Q4 print extends the history.** Its full-year actuals (EPS, revenue, diluted shares, operating margin, LC
+  growth, bookings) join the annual history on its release date, and its guide becomes the current fiscal year.
+  The next 10-K vintage replaces them. Example: ACN Q4 FY08 (2008-09-25) moves the base to FY09.
+- **Between year-end and the Q4 print** no EPS exists for the new year, so days past the last guided year keep
+  that year's EPS in the P/E series. Example: ACN on 2008-09-05 to 2008-09-19.
+- **Dividend:** the latest declared rate, from the latest print that states one, else the vintage.
+
 Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
 method version.
@@ -137,6 +146,7 @@ What the gates enforce:
 # 1. add newly published facts to retro/facts/ACN.json (each with source + published date)
 python3 retro/build_acn.py --weekly 2023-01-01 2023-06-30        # dates chosen by rule, models generated
 python3 retro/build_acn.py --weekly 2008-01-01 2008-01-31        # any era with a history vintage in the fact sheet
+python3 retro/build_acn.py --weekly 2008-05-05 2008-09-30        # start a range on a Monday when the prior week is built
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for ACN retrospectives (retro/build_acn.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, and only prints and events published between that vintage and AS_OF. Values are as reported (no restatements). Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for ACN retrospectives (retro/build_acn.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, and only prints and events published between that vintage and AS_OF. Values are as reported (no restatements). Edit only to add newly published facts or fix a transcription error against the cited filing. A Q4 print may carry 'fy_actual': the full-year figures it reports, which extend the annual history from its release until the next 10-K vintage supersedes them.",
  "ticker": "ACN",
  "sources": {
   "S1": {
@@ -97,6 +97,24 @@
    "title": "Accenture Ltd Q2 FY07 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013707004542/c13605exv99w1.htm",
    "supports": "Q2 FY07 new bookings $5.33B (base for Q2 FY08 bookings growth)"
+  },
+  "S26": {
+   "published": "2008-06-26",
+   "title": "Accenture Ltd Q3 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013708008793/c27640exv99w1.htm",
+   "supports": "Q3 FY08 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY08 and Q4 guidance"
+  },
+  "S27": {
+   "published": "2007-06-28",
+   "title": "Accenture Ltd Q3 FY07 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013707009418/c16323exv99w1.htm",
+   "supports": "Q3 FY07 new bookings $6.22B (base for Q3 FY08 bookings growth)"
+  },
+  "S28": {
+   "published": "2008-09-25",
+   "title": "Accenture Ltd Q4/FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013708012016/c35720exv99w1.htm",
+   "supports": "Q4 and FY08 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.50 annual dividend; FY09 and Q1 guidance"
   }
  },
  "history_vintages": [
@@ -384,6 +402,190 @@
    ],
    "tax_rate": 0.29,
    "cash_return_text": "$3.6B buyback authority"
+  },
+  {
+   "quarter": "Q3 FY08",
+   "published": "2008-06-26",
+   "source": "S26",
+   "extra_sources": [
+    "S27"
+   ],
+   "release": "Jun 26",
+   "revenue_b": 6.1,
+   "revenue_lc": 12,
+   "consulting_lc": 12,
+   "managed_lc": 12,
+   "bookings_b": 6.77,
+   "bookings_lc": 2,
+   "bookings_lc_note": "derived: +8.8% USD vs Q3 FY07 $6.22B (S27), less the 7.1% FX effect in Q3 revenue (+20% USD vs +12% LC); the release gives no LC figure",
+   "consulting_bookings_b": 3.98,
+   "consulting_revenue_b": 3.7,
+   "margin_label": "op margin",
+   "margin": 14.1,
+   "margin_bp": 70,
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Products",
+     4.523,
+     19
+    ],
+    [
+     "Communications & High Tech",
+     4.039,
+     7
+    ],
+    [
+     "Financial Services",
+     3.756,
+     8
+    ],
+    [
+     "Resources",
+     2.912,
+     13
+    ],
+    [
+     "Public Service",
+     2.14,
+     13
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.63,
+    2.65
+   ],
+   "fy_eps_guide_note": "raised from $2.55-2.60",
+   "fy_rev_guide_lc": [
+    9,
+    12
+   ],
+   "fy_rev_guide_note": "now 'toward the upper end' of the range",
+   "fy_fx": null,
+   "fy_margin_guide": null,
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    5.9,
+    6.1
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a 7-8% FX uplift",
+   "next_print": "Q4 FY08 print (late September)",
+   "fcf_guide_b": [
+    2.2,
+    2.4
+   ],
+   "cash_b": 3.33,
+   "diluted_shares_m": 816.4,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    25,
+    26
+   ],
+   "tax_rate": 0.29,
+   "cash_return_text": "$3.1B buyback authority"
+  },
+  {
+   "quarter": "Q4 FY08",
+   "published": "2008-09-25",
+   "source": "S28",
+   "extra_sources": [
+    "S20"
+   ],
+   "release": "Sep 25",
+   "revenue_b": 6.0,
+   "revenue_lc": 10,
+   "consulting_lc": 11,
+   "managed_lc": 9,
+   "bookings_b": 7.67,
+   "bookings_lc": 45,
+   "bookings_lc_note": "derived: +56.5% USD vs Q4 FY07 $4.9B (S20), less the 8% foreign-currency lift the release states for Q4 bookings",
+   "consulting_bookings_b": 3.63,
+   "consulting_revenue_b": 3.61,
+   "margin_label": "op margin",
+   "margin": 13.1,
+   "margin_bp": 50,
+   "groups_basis": "FY08 actuals",
+   "groups": [
+    [
+     "Products",
+     6.069,
+     15
+    ],
+    [
+     "Communications & High Tech",
+     5.45,
+     7
+    ],
+    [
+     "Financial Services",
+     5.005,
+     2
+    ],
+    [
+     "Resources",
+     3.963,
+     17
+    ],
+    [
+     "Public Service",
+     2.871,
+     10
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.85,
+    2.93
+   ],
+   "fy_eps_guide_note": "first FY09 guide",
+   "fy_rev_guide_lc": [
+    9,
+    12
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": null,
+   "fy_margin_guide": [
+    13.0,
+    13.3
+   ],
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    6.15,
+    6.35
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -1% to +1% FX assumption",
+   "next_print": "Q1 FY09 print (late December)",
+   "fcf_guide_b": [
+    2.6,
+    2.8
+   ],
+   "cash_b": 3.6,
+   "diluted_shares_m": 809.9,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    26,
+    29
+   ],
+   "tax_rate": 0.31,
+   "cash_return_text": "$2.5B buyback authority",
+   "dividend_annual": 0.5,
+   "dividend_note": "$0.50 annual, declared 2008-09-25 (S28)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_gaap": 2.65,
+    "eps_normalized": 2.65,
+    "normalization_note": "FY08 = GAAP $2.65 (S28; no adjusted figure published)",
+    "revenue_usd_b": 23.387,
+    "diluted_shares_m": 822.372,
+    "op_margin": 12.9,
+    "revenue_lc_growth": 11,
+    "bookings_b": 26.79,
+    "why": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($26.79B in FY08); discretionary consulting demand is cyclical, the franchise is not"
+   }
   },
   {
    "quarter": "Q1 FY23",

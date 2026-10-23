@@ -86,6 +86,20 @@ def build(as_of, facts, acn, spx, engine):
     events = [e for e in facts["events"] if h["published"] <= e["published"] <= as_of]
     if not prints:
         sys.exit(f"{as_of}: no quarterly print since the {h['published']} history vintage")
+    # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
+    h = {**h, "extended": ""}
+    for p in prints:
+        a = p.get("fy_actual")
+        if a:
+            y = str(a["fy"])
+            h.update(fy_label=a["fy_label"], why=a.get("why", h["why"]),
+                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
+                     diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
+                     normalization=f'{h["normalization"]}; {a["normalization_note"]}',
+                     prev_fy_op_margin=a["op_margin"], prev_fy_revenue_lc_growth=a["revenue_lc_growth"],
+                     prev_fy_bookings_b=a["bookings_b"], extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    carried = lambda k: next((p[k] for p in reversed(prints) if k in p), h[k])   # latest print that states it, else the vintage
     latest = prints[-1]
     prev = (prints[-2]["consulting_lc"], prints[-2]["quarter"]) if len(prints) > 1 else (h["prev_q_consulting_lc"], h["prev_q_label"])
     eps_now = round(sum(latest["fy_eps_guide"]) / 2, 3)
@@ -105,7 +119,8 @@ def build(as_of, facts, acn, spx, engine):
     vol = (sum((x - ma) ** 2 for x in ra) / len(ra)) ** 0.5 * 252 ** 0.5
     beta = (sum((x - ma) * (y - mm) for x, y in zip(ra, rm)) / len(ra)) / (sum((y - mm) ** 2 for y in rm) / len(rm))
     eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY guide, for the P/E series
-    fy = lambda d: int(d[:4]) + (1 if int(d[5:7]) >= 9 else 0)
+    # fiscal year of a day (ACN's ends Aug 31); a day past the last guided year, before the Q4 print, keeps that year's EPS
+    fy = lambda d: min(int(d[:4]) + (1 if int(d[5:7]) >= 9 else 0), cur_fy)
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
@@ -262,14 +277,14 @@ VOL_52W_HIGH    = {high52:.2f}
 REF_LOW         = {acn[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
-# ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}) ──
+# ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
 EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}
 REVENUE_HIST  = {R(rev)}   # USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
 PREV_FY_MARGIN = {h["prev_fy_op_margin"]}
 TAX_RATE      = {latest.get("tax_rate", h["tax_rate"])}   # latest tax-rate guide midpoint
-CONS_DIVIDEND = {h["dividend_annual"]:.2f}   # {h["dividend_note"]}
+CONS_DIVIDEND = {carried("dividend_annual"):.2f}   # {carried("dividend_note")}
 VOL_DIVIDEND  = CONS_DIVIDEND
 SERVICE_LINE  = {R(h["service_line"])}
 MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
