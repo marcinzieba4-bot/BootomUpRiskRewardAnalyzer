@@ -8,6 +8,7 @@ retro/
   facts/<TICKER>.json    dated fact sheet: every value carries a source and its publication date
   templates/             the frozen engine appended to every generated model
   build_acn.py           facts + prices truncated at AS_OF -> archive/.../<AS_OF>/model.py
+  build_unp.py           the UNP sibling (railroad signals) -> staging/retrospective/UNP/<AS_OF>/model.py
   retro_tool.py          run / outcome / lint / index / series
   taxonomy_eras.json     era-aware durability themes + anachronism list
 archive/retrospective/
@@ -273,6 +274,77 @@ Judgement calls that could carry hindsight, all made before these dates were sco
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
+
+## UNP (Union Pacific): the second ticker, in staging
+
+The UNP series is built apart from ACN and shares nothing with it but the machinery. It has its own fact sheet
+(`retro/facts/UNP.json`), builder (`retro/build_unp.py`) and engine (`retro/templates/unp_engine.py.tmpl`). The
+method is still r2: rules R1-R5, scoring, robustness and the weekly dates are the same code. No ACN fact, parameter,
+outcome or finding enters a UNP model. Outputs go to `staging/retrospective/UNP/` with their own `index.json` and
+`SERIES.md`. They join the archive later by moving the folder to `archive/retrospective/UNP/` (build with
+`--out archive/retrospective/UNP`) and running `retro_tool.py index`.
+
+```bash
+python3 retro/build_unp.py --weekly 2008-01-01 2008-03-30                   # 13 dates, 2008-01-04 .. 2008-03-28
+for d in staging/retrospective/UNP/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series UNP
+python3 retro/tools/firewall.py 2008-03-31 UNP
+```
+
+Decided on 2026-10-23, before any UNP outcome was computed:
+
+- **Prices as traded.** Yahoo's series is split-adjusted. The builder and `retro_tool.py` undo the later splits
+  (UNP split 2:1 in 2008 and 2014), so a model's price, 52-week range and P/E share one basis with the per-share
+  facts of their day: $120.04 on 2008-01-04, not $30.01. Outcomes run on the same basis. ACN has no splits, and
+  its 982 models rebuild byte-identical.
+- **EPS** is diluted EPS from continuing operations. A company-published figure excluding a one-off replaces GAAP:
+  2004 $2.89 (asbestos charge) and 2005 $3.41 (tax reduction), both from the Q4 2005 release. 2000 and 2002 stay
+  GAAP ($3.22, $4.78): the company's adjusted $3.61 and $4.30 were on the pre-2003 basis that still included
+  trucking. **1998 is excluded** (a $0.41 loss from continuing operations, no adjusted figure), so the history and
+  the P/E window start on 1999-01-01 (the ACN FY02 rule).
+- **Guides are their own dated list.** UNP gives numeric outlooks in the 10-K and in occasional 8-Ks, not in the
+  quarterly releases. The FY2006 10-K (2007-02-26) guides FY07 commodity revenue +6-7%, volume +2-3% and an
+  operating ratio "below 80%". The 8-K of 2007-12-19 cuts FY07 EPS to $6.76-6.86. The FY2007 10-K (filed
+  2008-02-28 after the close, so dated 2008-02-29) gives FY08 EPS $7.75-8.25 and volume -1% to +1%. Each field
+  comes from the latest guide for the current year that states it.
+- **No numeric EPS guide** for the current year: the last full year's EPS stands. This extends the rollover rule
+  (days past the last guided year keep that year's EPS). It applies from the Q4 2007 print (2008-01-24) to the
+  FY2007 10-K: five dates (2008-01-25 to 2008-02-22) use FY07's $6.91, and the Q4 release's "post another record
+  year in 2008" goes in the text.
+- **No numeric revenue guide:** BASE growth and the growth factor use the latest quarter's commodity revenue growth
+  (+6% in Q4 2007). This is the step after ACN's next-quarter, then full-year, fallbacks.
+- **No numeric operating-ratio guide.** Words, or a one-sided bound such as "below 80%", give no margin step, and
+  the signal uses the latest quarter's change (the ACN "no margin guide" rule).
+- **Signals.** Six signals, with ACN's weights:
+  - carloads −6 / −1 / 2 / 4 % YoY
+  - revenue per car −2 / 2 / 4 / 7 %
+  - commodity revenue −8 / 1 / 6 / 11 % (the sum of the first two)
+  - GTMs per employee −6 / 0 / 3 / 6 %
+  - operating ratio +2.0 / 0.0 / −1.0 / −2.5 pt (lower is better)
+  - the theme slot at 2/4
+
+  Values are the latest quarter's published percentages. Thresholds are round numbers around UNP's own dated
+  history (1999-2007 carload growth median about +2%) and its FY07 targets.
+- **Durability.** DURABLE, risk 2, as for ACN. The "why" is the 10-K's own words: largest railroad in North
+  America, 23 western states, BNSF the main rail competitor on parallel routes. No disruption theme in
+  `taxonomy_eras.json` is live for a railroad in 2008 (ENERGY_TRANSITION, which would carry coal, is live from
+  2015-12-12). So the watch list is empty, and the builder refuses events until a theme encoding is decided.
+- **EPS check** in the segment bridge (display only) deducts net interest, since a railroad's interest expense is
+  material.
+
+Seen in the first build (method behaviour, not tuned): BEAR growth is the decade's worst EPS year, capped at 0%.
+For ACN that year was always positive, so BEAR was flat. For UNP it is 2004 (−29%), applied for two years: a BEAR
+EPS about half of today's and Ratio B above 2 on most dates. XBULL is the 2004-2006 recovery (+43%/yr). Both follow
+the frozen rule. Whether a cyclical's bear should use the worst 2-year run instead is a question for a new method
+version, to be tested on other tickers, never fitted to UNP's outcomes.
+
+Judgement calls that could carry hindsight: the signal thresholds; DURABLE rather than CYCLICAL (this changes the
+class label only, not the price state or the tier); dating the FY08 guide from the 10-K, although it may have
+been given on the 2008-01-24 conference call (no transcript is in the filings, and the later date can only lag,
+never leak).
 
 ## Categories change with the era
 

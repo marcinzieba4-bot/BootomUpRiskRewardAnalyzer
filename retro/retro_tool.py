@@ -33,6 +33,8 @@ Usage
   python3 retro/retro_tool.py lint     archive/retrospective/ACN/2023-06-30
   python3 retro/retro_tool.py index
   python3 retro/retro_tool.py series   ACN
+  python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/UNP/2008-01-04
+                                       (a series kept out of the archive until it is added)
 """
 import argparse
 import contextlib
@@ -146,21 +148,40 @@ def pit_checks(g, src, tax):
 # ─────────────────────────────────────────────────────────────────────────────
 # Prices (Yahoo chart API, cached; used for the as-of price check and outcomes)
 # ─────────────────────────────────────────────────────────────────────────────
-def fetch_prices(symbol):
-    """{date: close} and [(ex_date, amount)] for the full history."""
+def chart(symbol):
+    """The cached Yahoo chart result for the full history (from 1990; prices split-adjusted, with dividends and splits)."""
     os.makedirs(CACHE, exist_ok=True)
     fp = os.path.join(CACHE, f"{symbol.replace('^', '_')}.json")
     if not os.path.exists(fp) or (dt.datetime.now().timestamp() - os.path.getmtime(fp)) > 86400:
         url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.request.quote(symbol)}"
-               f"?period1=946684800&period2={int(dt.datetime.now().timestamp())}&interval=1d&events=div")
+               f"?period1=631152000&period2={int(dt.datetime.now().timestamp())}&interval=1d&events=div%7Csplit")
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=30) as r, open(fp, "wb") as fh:
             fh.write(r.read())
     with open(fp, encoding="utf-8") as fh:
-        d = json.load(fh)["chart"]["result"][0]
+        return json.load(fh)["chart"]["result"][0]
+
+
+def split_factor(d, date):
+    """How many of today's shares one share held on `date` became: the product of the splits after it.
+    Yahoo prices are split-adjusted; multiplying by this gives the price as traded on the day (UNP 2008: x4)."""
+    off = d["meta"]["gmtoffset"]
+    f = 1.0
+    for v in d.get("events", {}).get("splits", {}).values():
+        if dt.datetime.fromtimestamp(v["date"] + off, dt.timezone.utc).date().isoformat() > date:
+            f *= v["numerator"] / v["denominator"]
+    return f
+
+
+def fetch_prices(symbol, as_traded=False):
+    """{date: close} and [(ex_date, amount)] for the full history. as_traded undoes later splits, so a close is the
+    price printed that day (point in time); returns are computed on the split-adjusted series."""
+    d = chart(symbol)
     off = d["meta"]["gmtoffset"]
     day = lambda t: dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat()
     closes = {day(t): c for t, c in zip(d["timestamp"], d["indicators"]["quote"][0]["close"]) if c is not None}
+    if as_traded:
+        closes = {k: c * split_factor(d, k) for k, c in closes.items()}
     divs = sorted((day(v["date"]), v["amount"]) for v in d.get("events", {}).get("dividends", {}).values())
     return closes, divs
 
@@ -200,7 +221,7 @@ def cmd_run(folder, offline=False):
     errs, warns = pit_checks(g, src, tax)
     if not offline:
         try:
-            closes, _ = fetch_prices(g.get("YAHOO_SYMBOL", g["TICKER"]))
+            closes, _ = fetch_prices(g.get("YAHOO_SYMBOL", g["TICKER"]), as_traded=True)
             _, actual = close_on_or_before(closes, g["PRICE_DATE"])
             if actual is None or abs(actual / g["CURRENT_PRICE"] - 1) > 0.005:
                 errs.append(f"CURRENT_PRICE {g['CURRENT_PRICE']} != actual close {actual} on {g['PRICE_DATE']}")
@@ -270,6 +291,9 @@ def cmd_outcome(folder):
     closes, divs = fetch_prices(g.get("YAHOO_SYMBOL", a["ticker"]))
     bc, bd = fetch_prices(g.get("BENCHMARK", "SPY"))
     as_of, today = a["as_of"], max(closes)
+    # prices and dividends on the AS_OF share basis, like the model's own price (UNP 2008: x4 for two later 2:1 splits)
+    f = split_factor(chart(g.get("YAHOO_SYMBOL", a["ticker"])), as_of)
+    closes, divs = {d: c * f for d, c in closes.items()}, [(d, v * f) for d, v in divs]
     horizons = {}
     for label, months in (("6m", 6), ("1y", 12), ("2y", 24), ("3y", 36)):
         end = add_months(as_of, months)
@@ -370,6 +394,13 @@ def cmd_index():
     return rows
 
 
+def set_archive(path):
+    """Point index/series at another archive root (staging/retrospective holds series not yet in the archive)."""
+    global ARCHIVE, INDEX
+    ARCHIVE = os.path.abspath(path)
+    INDEX = os.path.join(ARCHIVE, "index.json")
+
+
 def cmd_series(ticker):
     """Markdown table of every retrospective of one ticker -> archive/retrospective/<T>/SERIES.md."""
     rows = [r for r in cmd_index() if r["ticker"] == ticker.upper()]
@@ -408,7 +439,10 @@ def main():
     ap.add_argument("cmd", choices=["run", "outcome", "lint", "index", "series"])
     ap.add_argument("folder", nargs="?", help="retrospective folder (series: the ticker)")
     ap.add_argument("--offline", action="store_true", help="skip the as-of price check")
+    ap.add_argument("--archive", help="archive root for index/series (default archive/retrospective)")
     a = ap.parse_args()
+    if a.archive:
+        set_archive(a.archive)
     if a.cmd == "index":
         print(f"{len(cmd_index())} entries -> {os.path.relpath(INDEX, ROOT)}")
         return

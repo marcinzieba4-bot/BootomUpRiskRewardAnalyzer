@@ -39,17 +39,17 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 
 
 def load_series(symbol):
-    """{date: (open, high, low, close)} from the retro_tool Yahoo cache (full history)."""
-    retro_tool.fetch_prices(symbol)
-    with open(os.path.join(retro_tool.CACHE, f"{symbol.replace('^', '_')}.json"), encoding="utf-8") as fh:
-        d = json.load(fh)["chart"]["result"][0]
+    """{date: (high, low, close)} as traded on each day, from the retro_tool Yahoo cache (full history). Yahoo prices
+    are split-adjusted; undoing the later splits restores the price printed that day (ACN has none, UNP two after 2008)."""
+    d = retro_tool.chart(symbol)
     off, q = d["meta"]["gmtoffset"], d["indicators"]["quote"][0]
     out = {}
     for i, t in enumerate(d["timestamp"]):
         if q["close"][i] is None:
             continue
         day = dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat()
-        out[day] = (q["high"][i], q["low"][i], q["close"][i])
+        f = retro_tool.split_factor(d, day)
+        out[day] = (q["high"][i] * f, q["low"][i] * f, q["close"][i] * f)
     return out
 
 

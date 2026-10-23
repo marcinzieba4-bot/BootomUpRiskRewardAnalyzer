@@ -1,0 +1,489 @@
+{
+ "_doc": "Point-in-time fact sheet for UNP retrospectives (retro/build_unp.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history), the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Union Pacific gives its numeric outlook in the 10-K ('Outlook' in Item 7) and in occasional 8-Ks, not in the quarterly releases, so guides are their own dated list. Values are as reported (no restatements), per share as traded on the day (before the 2008 and 2014 2:1 splits). EPS is diluted EPS from continuing operations; a company-published figure excluding a one-off replaces GAAP for that year. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time). Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "UNP",
+ "sources": {
+  "U1": {
+   "published": "2007-02-26",
+   "filed": "2007-02-23 21:32 ET (after the close)",
+   "title": "Union Pacific Corporation FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507038387/d10k.htm",
+   "supports": "selected financial data 2002-2006 (operating revenue, diluted EPS from continuing operations, operating margin and ratio, carloads); 2006 diluted shares 272.0M, effective tax rate 36.4%, interest expense $477M, other income $118M; competition (BNSF parallel routes); 2007 Outlook: commodity revenue growth target 6% to 7%, volume growth 2% to 3%, earnings growth of 10% to 15% and an operating ratio below 80%; quarterly dividend raised to $0.35 on 2007-01-30; 20M-share repurchase authorized 2007-01-30 through 2009"
+  },
+  "U2": {
+   "published": "2005-02-28",
+   "filed": "2005-02-25 22:05 ET (after the close)",
+   "title": "Union Pacific Corporation FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312505037425/d10k.htm",
+   "supports": "ten-year selected financial data 1995-2004 on the continuing-operations basis (trucking reclassified as discontinued): 1998 loss from continuing operations ($0.41 per diluted share), 1999 $3.05, 2000 $3.22 (includes a $72M after-tax work force reduction charge); operating revenue 1999 $10,175M, 2000 $10,765M"
+  },
+  "U3": {
+   "published": "2006-02-27",
+   "filed": "2006-02-24 16:25 ET (after the close)",
+   "title": "Union Pacific Corporation FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312506038383/d10k.htm",
+   "supports": "selected financial data 2001-2005: 2001 diluted EPS from continuing operations $3.65, operating revenues $10,830M"
+  },
+  "U4": {
+   "published": "2002-03-04",
+   "title": "Union Pacific Corporation FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000095013402001771/d94498e10-k.txt",
+   "supports": "1999 weighted-average diluted shares 269.8M (earnings per share note)"
+  },
+  "U5": {
+   "published": "2006-01-19",
+   "title": "Union Pacific Corporation Q4 2005 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312506008449/dex991.htm",
+   "supports": "company-published EPS excluding one-offs: 2004 $2.89 per diluted share excluding the non-cash asbestos charge ($2.30 reported), 2005 $3.41 excluding the income tax expense reduction ($3.85 reported)"
+  },
+  "U6": {
+   "published": "2007-01-25",
+   "title": "Union Pacific Corporation Q4 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507012430/dex991.htm",
+   "supports": "Q4 2006 carloads grew one percent; 2005 adjusted EPS $3.41 restated"
+  },
+  "U7": {
+   "published": "2007-07-19",
+   "title": "Union Pacific Corporation Q2 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507157740/dex991.htm",
+   "supports": "Q2 2007 revenue detail by commodity group (revenue, carloads, average revenue per car), operating ratio, GTMs per employee, diluted EPS and shares, cash, share repurchases"
+  },
+  "U8": {
+   "published": "2007-10-18",
+   "title": "Union Pacific Corporation Q3 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507220842/dex991.htm",
+   "supports": "Q3 2007 revenue detail by commodity group (revenue, carloads, average revenue per car), operating ratio (76.0%, including a $47M casualty expense reduction), GTMs per employee, diluted EPS and shares, cash, share repurchases (10.2M of 20M), Illinois tax charge ($27M); no numeric outlook in the release"
+  },
+  "U9": {
+   "published": "2007-11-16",
+   "filed": "2007-11-15 20:09 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K: quarterly dividend raised to 44 cents",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507248444/d8k.htm",
+   "supports": "quarterly dividend increased by 9 cents to 44 cents per share, payable 2008-01-02"
+  },
+  "U10": {
+   "published": "2007-12-19",
+   "title": "Union Pacific Corporation 8-K ex.99.1: Union Pacific updates earnings outlook",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507267723/dex991.htm",
+   "supports": "Q4 2007 EPS now $1.70-1.80 (from $1.90-2.00), full-year 2007 $6.76-6.86 per diluted share; diesel fuel and the two-month fuel-surcharge lag; carloadings in the past two weeks about three percent lower than last year"
+  },
+  "U11": {
+   "published": "2008-01-24",
+   "title": "Union Pacific Corporation Q4 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508011058/dex991.htm",
+   "supports": "Q4 and full-year 2007 revenue detail by commodity group (revenue, carloads, average revenue per car), operating ratio, GTMs per employee, diluted EPS ($6.91 for 2007) and shares, effective tax rate, cash, free cash flow, share repurchases (12.6M in 2007, 63% of the 20M program); 2008 outlook in words only ('post another record year in 2008')"
+  },
+  "U12": {
+   "published": "2008-02-29",
+   "filed": "2008-02-28 20:54 ET (after the close)",
+   "title": "Union Pacific Corporation FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508041700/d10k.htm",
+   "supports": "selected financial data 2003-2007; 2007 diluted shares 268.4M, effective tax rate 38.4%, interest expense $482M, other income $116M; 2008 Outlook: earnings of $7.75 to $8.25 per diluted share, volume within a range of 1% higher to 1% lower than 2007, fuel prices 15% to 20% above the 2007 average, record revenue and an improved operating ratio in words; capital investments of about $3.1 billion"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-26",
+   "sources": [
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5"
+   ],
+   "company": "Union Pacific Corporation",
+   "fy_label": "FY06",
+   "why": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not",
+   "eps_gaap": {
+    "1999": 3.05,
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.3,
+    "2005": 3.85,
+    "2006": 5.91
+   },
+   "eps_normalized": {
+    "1999": 3.05,
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.89,
+    "2005": 3.41,
+    "2006": 5.91
+   },
+   "normalization": "diluted EPS from continuing operations; 2004 = $2.89 excluding the asbestos charge and 2005 = $3.41 excluding the income tax expense reduction, as the company published them (U5); 2000 and 2002 stay GAAP (the company's adjusted $3.61 and $4.30 were on the pre-2003 basis that included trucking, restated away in the FY2003 and FY2004 10-Ks); 1998 excluded: a $0.41 loss from continuing operations, no published adjusted figure",
+   "revenue_usd_b": {
+    "1999": 10.175,
+    "2000": 10.765,
+    "2001": 10.83,
+    "2002": 11.159,
+    "2003": 11.551,
+    "2004": 12.215,
+    "2005": 13.578,
+    "2006": 15.578
+   },
+   "diluted_shares_m": {
+    "1999": 269.8,
+    "2006": 272.0
+   },
+   "pe_window_start": "1999-01-01",
+   "prev_fy_op_margin": 18.5,
+   "prev_fy_op_ratio": 81.5,
+   "prev_fy_revenue_growth": 15,
+   "prev_fy_carloads_m": 9.852,
+   "prev_fy_carloads_pct": 3,
+   "net_interest_b": 0.359,
+   "net_interest_note": "2006 interest expense $477M less other income $118M (U1)",
+   "prev_q_carloads_pct": 1,
+   "prev_q_label": "Q4 2006",
+   "prev_q_source": "U6",
+   "dividend_annual": 1.4,
+   "dividend_note": "$0.35 quarterly from 2007-01-30 (U1)",
+   "tax_rate": 0.364,
+   "tax_note": "2006 effective rate; no tax-rate guide (U1)",
+   "cash_return_text": "20M-share buyback authorized 2007-01-30 (through 2009)",
+   "business_line": "Class I railroad: Union Pacific Railroad, 23 states in the western two-thirds of the US",
+   "margin_signal_name": "Operating ratio change",
+   "fcf_b": 0.516,
+   "fcf_label": "FY06"
+  },
+  {
+   "published": "2008-02-29",
+   "sources": [
+    "U12",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5"
+   ],
+   "company": "Union Pacific Corporation",
+   "fy_label": "FY07",
+   "why": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not",
+   "eps_gaap": {
+    "1999": 3.05,
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.3,
+    "2005": 3.85,
+    "2006": 5.91,
+    "2007": 6.91
+   },
+   "eps_normalized": {
+    "1999": 3.05,
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.89,
+    "2005": 3.41,
+    "2006": 5.91,
+    "2007": 6.91
+   },
+   "normalization": "diluted EPS from continuing operations; 2004 = $2.89 excluding the asbestos charge and 2005 = $3.41 excluding the income tax expense reduction, as the company published them (U5); 2000 and 2002 stay GAAP (the company's adjusted $3.61 and $4.30 were on the pre-2003 basis that included trucking, restated away in the FY2003 and FY2004 10-Ks); 1998 excluded: a $0.41 loss from continuing operations, no published adjusted figure",
+   "revenue_usd_b": {
+    "1999": 10.175,
+    "2000": 10.765,
+    "2001": 10.83,
+    "2002": 11.159,
+    "2003": 11.551,
+    "2004": 12.215,
+    "2005": 13.578,
+    "2006": 15.578,
+    "2007": 16.283
+   },
+   "diluted_shares_m": {
+    "1999": 269.8,
+    "2007": 268.4
+   },
+   "pe_window_start": "1999-01-01",
+   "prev_fy_op_margin": 20.7,
+   "prev_fy_op_ratio": 79.3,
+   "prev_fy_revenue_growth": 5,
+   "prev_fy_carloads_m": 9.733,
+   "prev_fy_carloads_pct": -1,
+   "net_interest_b": 0.366,
+   "net_interest_note": "2007 interest expense $482M less other income $116M (U12)",
+   "prev_q_carloads_pct": 1,
+   "prev_q_label": "Q3 2007",
+   "prev_q_source": "U8",
+   "dividend_annual": 1.76,
+   "dividend_note": "$0.44 quarterly from 2007-11-15 (U12)",
+   "tax_rate": 0.384,
+   "tax_note": "2007 effective rate; no tax-rate guide (U12)",
+   "cash_return_text": "20M-share buyback authorized 2007-01-30 (through 2009), about 13M bought in 2007",
+   "business_line": "Class I railroad: Union Pacific Railroad, 23 states in the western two-thirds of the US",
+   "margin_signal_name": "Operating ratio change",
+   "fcf_b": 0.487,
+   "fcf_label": "FY07"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "published": "2007-07-19",
+   "source": "U7",
+   "release": "Jul 19",
+   "revenue_b": 4.046,
+   "revenue_pct": 3,
+   "commodity_revenue_b": 3.865,
+   "commodity_pct": 3,
+   "carloads_k": 2433,
+   "carloads_pct": -3,
+   "arc": 1589,
+   "arc_pct": 7,
+   "gtm_per_employee_pct": -4,
+   "op_ratio": 80.5,
+   "op_ratio_pt": -1.2,
+   "eps_q": 1.65,
+   "eps_q_prior": 1.44,
+   "groups_basis": "six-month actuals",
+   "groups": [
+    [
+     "Industrial Products",
+     1.562,
+     -1
+    ],
+    [
+     "Energy",
+     1.491,
+     4
+    ],
+    [
+     "Intermodal",
+     1.387,
+     3
+    ],
+    [
+     "Agricultural",
+     1.211,
+     7
+    ],
+    [
+     "Chemicals",
+     1.122,
+     8
+    ],
+    [
+     "Automotive",
+     0.744,
+     0
+    ]
+   ],
+   "diluted_shares_m": 270.7,
+   "cash_b": 0.522,
+   "cash_return_text": "5.7M of the 20M-share program bought by Q2",
+   "next_print": "Q3 2007 print (mid-October)",
+   "outlook_words": "Although the economic outlook remains uncertain, our continued focus on yield and productivity improvements should drive better service for our customers and strong financial results for our shareholders in the second half of 2007",
+   "outlook_short": "strong financial results for our shareholders in the second half of 2007"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "published": "2007-10-18",
+   "source": "U8",
+   "release": "Oct 18",
+   "revenue_b": 4.191,
+   "revenue_pct": 5,
+   "commodity_revenue_b": 3.996,
+   "commodity_pct": 5,
+   "carloads_k": 2522,
+   "carloads_pct": 1,
+   "arc": 1584,
+   "arc_pct": 5,
+   "gtm_per_employee_pct": 2,
+   "op_ratio": 76.0,
+   "op_ratio_pt": -5.1,
+   "op_ratio_note": "includes a $47M casualty expense reduction from an actuarial study, 1.1 points of the improvement (U8); no figure without it published",
+   "eps_q": 2.0,
+   "eps_q_prior": 1.54,
+   "eps_q_note": "includes a $27M after-tax Illinois tax charge (U8)",
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Industrial Products",
+     2.357,
+     -4
+    ],
+    [
+     "Energy",
+     2.318,
+     8
+    ],
+    [
+     "Intermodal",
+     2.156,
+     3
+    ],
+    [
+     "Agricultural",
+     1.878,
+     12
+    ],
+    [
+     "Chemicals",
+     1.709,
+     9
+    ],
+    [
+     "Automotive",
+     1.095,
+     7
+    ]
+   ],
+   "diluted_shares_m": 265.7,
+   "cash_b": 1.022,
+   "cash_return_text": "10.2M of the 20M-share program bought by Q3",
+   "next_print": "Q4 2007 print (late January)",
+   "outlook_words": "Near-term, we remain cautious on the economy and see challenges from rapidly increasing diesel fuel prices",
+   "outlook_short": "Near-term, we remain cautious on the economy"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "published": "2008-01-24",
+   "source": "U11",
+   "release": "Jan 24",
+   "revenue_b": 4.197,
+   "revenue_pct": 6,
+   "commodity_revenue_b": 4.003,
+   "commodity_pct": 6,
+   "carloads_k": 2444,
+   "carloads_pct": 0,
+   "carloads_note": "2,444 thousand vs 2,440 (published as '—', flat)",
+   "arc": 1638,
+   "arc_pct": 6,
+   "gtm_per_employee_pct": 3,
+   "op_ratio": 79.4,
+   "op_ratio_pt": -0.2,
+   "eps_q": 1.86,
+   "eps_q_prior": 1.78,
+   "groups_basis": "full-year 2007 actuals",
+   "groups": [
+    [
+     "Energy",
+     3.136,
+     8
+    ],
+    [
+     "Industrial Products",
+     3.11,
+     1
+    ],
+    [
+     "Intermodal",
+     2.911,
+     4
+    ],
+    [
+     "Agricultural",
+     2.597,
+     7
+    ],
+    [
+     "Chemicals",
+     2.293,
+     12
+    ],
+    [
+     "Automotive",
+     1.469,
+     4
+    ]
+   ],
+   "diluted_shares_m": 264.3,
+   "cash_b": 0.878,
+   "fcf_b": 0.487,
+   "cash_return_text": "12.6M shares bought in 2007, 63% of the 20M-share program",
+   "next_print": "Q1 2008 print (late April)",
+   "outlook_words": "Overall, we remain optimistic that our superior franchise will enable us to overcome economic weakness and post another record year in 2008",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 6.91,
+    "revenue_usd_b": 16.283,
+    "diluted_shares_m": 268.4,
+    "op_margin": 20.7,
+    "op_ratio": 79.3,
+    "revenue_growth": 5,
+    "carloads_m": 9.733,
+    "carloads_pct": -1,
+    "net_interest_b": 0.366,
+    "tax_rate": 0.384,
+    "normalization_note": "FY07 $6.91 diluted (U11), no one-off excluded by the company"
+   },
+   "outlook_short": "post another record year in 2008"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-02-26",
+   "source": "U1",
+   "doc": "FY2006 10-K, 2007 Outlook",
+   "rev_guide": [
+    6,
+    7
+   ],
+   "rev_guide_label": "commodity revenue target",
+   "volume_guide": [
+    2,
+    3
+   ],
+   "eps_growth_guide_pct": [
+    10,
+    15
+   ],
+   "op_ratio_guide_text": "an operating ratio below 80%",
+   "note": "a one-sided operating-ratio bound is not a range: no guided margin step"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-12-19",
+   "source": "U10",
+   "doc": "8-K of 2007-12-19",
+   "eps_guide": [
+    6.76,
+    6.86
+   ],
+   "eps_guide_note": "cut on 2007-12-19: Q4 now $1.70-1.80 from $1.90-2.00 (fuel-surcharge lag, weather)"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-02-29",
+   "source": "U12",
+   "doc": "FY2007 10-K, 2008 Outlook",
+   "eps_guide": [
+    7.75,
+    8.25
+   ],
+   "eps_guide_note": "first numeric 2008 guide",
+   "volume_guide": [
+    -1,
+    1
+   ],
+   "fuel_guide_pct": [
+    15,
+    20
+   ],
+   "rev_guide_text": "record revenue",
+   "op_ratio_guide_text": "improve our operating ratio",
+   "note": "revenue and operating ratio guided in words only"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-11-16",
+   "source": "U9",
+   "quarterly": 0.44,
+   "note": "$0.44 quarterly, declared 2007-11-15 (U9)"
+  }
+ ],
+ "events": [],
+ "company_names": []
+}
