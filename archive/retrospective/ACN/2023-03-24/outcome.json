@@ -51,7 +51,8 @@
    "date": "2023-05-09",
    "price": 263.48
   },
-  "max_drawdown_pct": -27.2
+  "max_drawdown_pct": -27.2,
+  "return_to_avg_price_m12_m24_pct": 24.1
  },
  "scenario_landing_2y": "BASE",
  "call_check_2y": {

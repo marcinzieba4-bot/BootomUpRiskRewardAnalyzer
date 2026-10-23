@@ -1,8 +1,264 @@
 {
  "_doc": "Index of point-in-time retrospective analyses (retro/retro_tool.py). 'outcome' is hindsight and is filled in separately.",
  "updated": "2026-10-23",
- "count": 18,
+ "count": 26,
  "entries": [
+  {
+   "ticker": "ACN",
+   "as_of": "2023-01-06",
+   "company": "Accenture plc",
+   "price": 269.21,
+   "class": "COMPOUNDER AT LOW PRICE",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "CHEAP",
+   "legacy_tier": "BUY",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 31.7,
+   "adj_gap": 0.13,
+   "cons_return_2yr": 5.8,
+   "path": "archive/retrospective/ACN/2023-01-06",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.2,
+    "tr_1y": 26.8,
+    "tr_2y": 34.2,
+    "tr_3y": 7.9,
+    "excess_6m": 1.1,
+    "excess_1y": 4.5,
+    "excess_2y": -22.7,
+    "excess_3y": -75.8,
+    "avg_m12_m24": 26.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-01-13",
+   "company": "Accenture plc",
+   "price": 282.14,
+   "class": "QUALITY, NEUTRALLY VALUED",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "FAIR",
+   "legacy_tier": "ACCUMULATE",
+   "ratio_b": 0.97,
+   "epp_gap_pct": 38.0,
+   "adj_gap": -0.14,
+   "cons_return_2yr": 0.9,
+   "path": "archive/retrospective/ACN/2023-01-13",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.5,
+    "tr_1y": 27.5,
+    "tr_2y": 26.9,
+    "tr_3y": 2.8,
+    "excess_6m": -1.1,
+    "excess_1y": 6.3,
+    "excess_2y": -22.4,
+    "excess_3y": -76.5,
+    "avg_m12_m24": 20.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-01-20",
+   "company": "Accenture plc",
+   "price": 280.47,
+   "class": "QUALITY, NEUTRALLY VALUED",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "FAIR",
+   "legacy_tier": "ACCUMULATE",
+   "ratio_b": 0.93,
+   "epp_gap_pct": 37.2,
+   "adj_gap": -0.12,
+   "cons_return_2yr": 1.5,
+   "path": "archive/retrospective/ACN/2023-01-20",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.2,
+    "tr_1y": 31.5,
+    "tr_2y": 29.4,
+    "tr_3y": 2.0,
+    "excess_6m": -2.8,
+    "excess_1y": 7.9,
+    "excess_2y": -25.0,
+    "excess_3y": -74.5,
+    "avg_m12_m24": 21.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-01-27",
+   "company": "Accenture plc",
+   "price": 277.27,
+   "class": "QUALITY, NEUTRALLY VALUED",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "FAIR",
+   "legacy_tier": "ACCUMULATE",
+   "ratio_b": 0.86,
+   "epp_gap_pct": 35.6,
+   "adj_gap": -0.05,
+   "cons_return_2yr": 2.7,
+   "path": "archive/retrospective/ACN/2023-01-27",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.8,
+    "tr_1y": 35.6,
+    "tr_2y": 38.3,
+    "tr_3y": 4.3,
+    "excess_6m": 3.5,
+    "excess_1y": 13.8,
+    "excess_2y": -12.8,
+    "excess_3y": -72.3,
+    "avg_m12_m24": 22.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-02-03",
+   "company": "Accenture plc",
+   "price": 289.22,
+   "class": "QUALITY, NEUTRALLY VALUED",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "FAIR",
+   "legacy_tier": "WATCHLIST",
+   "ratio_b": 1.15,
+   "epp_gap_pct": 41.4,
+   "adj_gap": -0.37,
+   "cons_return_2yr": -1.5,
+   "path": "archive/retrospective/ACN/2023-02-03",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.4,
+    "tr_1y": 30.6,
+    "tr_2y": 36.8,
+    "tr_3y": -12.0,
+    "excess_6m": 0.8,
+    "excess_1y": 9.1,
+    "excess_2y": -11.5,
+    "excess_3y": -84.3,
+    "avg_m12_m24": 17.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-02-10",
+   "company": "Accenture plc",
+   "price": 283.96,
+   "class": "QUALITY, NEUTRALLY VALUED",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "FAIR",
+   "legacy_tier": "ACCUMULATE",
+   "ratio_b": 1.0,
+   "epp_gap_pct": 38.9,
+   "adj_gap": -0.17,
+   "cons_return_2yr": 0.3,
+   "path": "archive/retrospective/ACN/2023-02-10",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.1,
+    "tr_1y": 32.6,
+    "tr_2y": 39.9,
+    "tr_3y": -10.5,
+    "excess_6m": 0.1,
+    "excess_1y": 8.1,
+    "excess_2y": -11.7,
+    "excess_3y": -85.2,
+    "avg_m12_m24": 19.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-02-17",
+   "company": "Accenture plc",
+   "price": 277.05,
+   "class": "COMPOUNDER AT LOW PRICE",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "CHEAP",
+   "legacy_tier": "ACCUMULATE",
+   "ratio_b": 0.84,
+   "epp_gap_pct": 35.5,
+   "adj_gap": -0.04,
+   "cons_return_2yr": 2.8,
+   "path": "archive/retrospective/ACN/2023-02-17",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.1,
+    "tr_1y": 35.1,
+    "tr_2y": 43.8,
+    "tr_3y": -15.8,
+    "excess_6m": 3.2,
+    "excess_1y": 10.8,
+    "excess_2y": -9.3,
+    "excess_3y": -88.6,
+    "avg_m12_m24": 22.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
+  },
+  {
+   "ticker": "ACN",
+   "as_of": "2023-02-24",
+   "company": "Accenture plc",
+   "price": 266.53,
+   "class": "COMPOUNDER AT LOW PRICE",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "CHEAP",
+   "legacy_tier": "BUY",
+   "ratio_b": 0.65,
+   "epp_gap_pct": 30.3,
+   "adj_gap": 0.23,
+   "cons_return_2yr": 6.8,
+   "path": "archive/retrospective/ACN/2023-02-24",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.7,
+    "tr_1y": 43.4,
+    "tr_2y": 40.4,
+    "tr_3y": -21.2,
+    "excess_6m": 7.7,
+    "excess_1y": 13.6,
+    "excess_2y": -13.7,
+    "excess_3y": -99.9,
+    "avg_m12_m24": 27.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
+  },
   {
    "ticker": "ACN",
    "as_of": "2023-03-03",
@@ -30,6 +286,7 @@
     "excess_1y": 14.8,
     "excess_2y": -15.8,
     "excess_3y": -90.6,
+    "avg_m12_m24": 26.5,
     "scenario_landing_2y": "BULL",
     "call_hit_2y": false
    }
@@ -61,6 +318,7 @@
     "excess_1y": 17.1,
     "excess_2y": -12.2,
     "excess_3y": -95.9,
+    "avg_m12_m24": 34.3,
     "scenario_landing_2y": "BULL",
     "call_hit_2y": true
    }
@@ -92,6 +350,7 @@
     "excess_1y": 19.3,
     "excess_2y": -14.1,
     "excess_3y": -92.2,
+    "avg_m12_m24": 35.4,
     "scenario_landing_2y": "BULL",
     "call_hit_2y": true
    }
@@ -123,6 +382,7 @@
     "excess_1y": -7.5,
     "excess_2y": -31.8,
     "excess_3y": -94.4,
+    "avg_m12_m24": 24.1,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -154,6 +414,7 @@
     "excess_1y": -6.5,
     "excess_2y": -29.0,
     "excess_3y": -85.8,
+    "avg_m12_m24": 17.9,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -185,6 +446,7 @@
     "excess_1y": -8.4,
     "excess_2y": -22.0,
     "excess_3y": -90.9,
+    "avg_m12_m24": 19.4,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -216,6 +478,7 @@
     "excess_1y": -10.8,
     "excess_2y": -26.5,
     "excess_3y": -100.4,
+    "avg_m12_m24": 20.1,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -247,6 +510,7 @@
     "excess_1y": -5.3,
     "excess_2y": -23.1,
     "excess_3y": -100.6,
+    "avg_m12_m24": 21.3,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -278,6 +542,7 @@
     "excess_1y": -12.1,
     "excess_2y": -27.3,
     "excess_3y": -107.9,
+    "avg_m12_m24": 19.4,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -309,6 +574,7 @@
     "excess_1y": -9.3,
     "excess_2y": -20.1,
     "excess_3y": -108.0,
+    "avg_m12_m24": 26.0,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -340,6 +606,7 @@
     "excess_1y": -15.9,
     "excess_2y": -25.0,
     "excess_3y": -118.3,
+    "avg_m12_m24": 20.7,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -371,6 +638,7 @@
     "excess_1y": -21.6,
     "excess_2y": -31.5,
     "excess_3y": -114.6,
+    "avg_m12_m24": 15.5,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -402,6 +670,7 @@
     "excess_1y": -26.9,
     "excess_2y": -35.7,
     "excess_3y": -120.9,
+    "avg_m12_m24": 10.4,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": false
    }
@@ -433,6 +702,7 @@
     "excess_1y": -32.6,
     "excess_2y": -37.3,
     "excess_3y": -118.2,
+    "avg_m12_m24": 7.8,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": true
    }
@@ -464,6 +734,7 @@
     "excess_1y": -30.7,
     "excess_2y": -36.7,
     "excess_3y": -115.7,
+    "avg_m12_m24": 8.9,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": true
    }
@@ -495,6 +766,7 @@
     "excess_1y": -33.4,
     "excess_2y": -38.2,
     "excess_3y": -119.1,
+    "avg_m12_m24": 5.4,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": true
    }
@@ -526,6 +798,7 @@
     "excess_1y": -22.1,
     "excess_2y": -39.3,
     "excess_3y": -127.1,
+    "avg_m12_m24": 12.9,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": true
    }
@@ -557,6 +830,7 @@
     "excess_1y": -24.4,
     "excess_2y": -42.2,
     "excess_3y": -128.5,
+    "avg_m12_m24": 9.1,
     "scenario_landing_2y": "BASE",
     "call_hit_2y": true
    }

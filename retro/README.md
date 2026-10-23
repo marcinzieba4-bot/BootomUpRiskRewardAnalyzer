@@ -47,6 +47,11 @@ match what followed) are handled by method, not trust:
   and the reported growth history, cross-checked by the segment bridge.
 - **The ⑦ robustness block** re-runs the verdict with one input moved at a time.
   A class that survives only one set of assumptions is not a call.
+- **Score a single stock on the averaged price.** One stock's 2-year point return depends on
+  where the price happened to be that day. ACN entries from January–February 2023 land on
+  the February 2025 peak; those from April 2023 land after the drop. Judge a series by
+  `return_to_avg_price_m12_m24_pct` (average price over months 12–24) and treat
+  `call_check_2y` as a rough tick.
 - **Outcomes are written after the analysis.** `outcome.json` is produced by a
   separate command and `run` never reads it.
 

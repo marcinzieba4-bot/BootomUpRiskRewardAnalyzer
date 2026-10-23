@@ -289,13 +289,17 @@ def cmd_outcome(folder):
         mdd = min(mdd, p / peak - 1)
     hi = max(window, key=lambda d: closes[d])
     lo = min(window, key=lambda d: closes[d])
+    # a single 2-year endpoint is hostage to that day's price; the average price over
+    # months 12-24 is the endpoint-robust read (price return, dividends excluded)
+    late = [closes[d] for d in window if d > add_months(as_of, 12)]
     out = {"_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
            "ticker": a["ticker"], "as_of": as_of, "computed": dt.date.today().isoformat(),
            "data_source": f"Yahoo Finance daily closes + dividends ({a['ticker']}, benchmark {g.get('BENCHMARK', 'SPY')})",
            "horizons": horizons,
            "within_2y": {"high": {"date": hi, "price": round(closes[hi], 2)},
                          "low": {"date": lo, "price": round(closes[lo], 2)},
-                         "max_drawdown_pct": round(mdd * 100, 1)}}
+                         "max_drawdown_pct": round(mdd * 100, 1),
+                         "return_to_avg_price_m12_m24_pct": round((sum(late) / len(late) / a["price"] - 1) * 100, 1) if late else None}}
     sc = a["metrics"].get("scenarios")
     if sc and "2y" in horizons:
         p2 = horizons["2y"]["price"]
@@ -349,6 +353,7 @@ def cmd_index():
             row["outcome"] = {"hindsight": True,
                               **{f"tr_{k}": v["total_return_pct"] for k, v in o["horizons"].items()},
                               **{f"excess_{k}": v["excess_pct"] for k, v in o["horizons"].items()},
+                              "avg_m12_m24": o["within_2y"].get("return_to_avg_price_m12_m24_pct"),
                               "scenario_landing_2y": o.get("scenario_landing_2y"),
                               "call_hit_2y": (o.get("call_check_2y") or {}).get("hit")}
         rows.append(row)
@@ -367,10 +372,11 @@ def cmd_series(ticker):
     if not rows:
         sys.exit(f"no retrospectives for {ticker}")
     out = [f"# {ticker.upper()} retrospective series", "",
-           "Point-in-time columns use only information public on the as-of date. The last three columns are "
-           "hindsight (2-year total return incl. dividends, excess vs SPY, whether the price-state call held).", "",
-           "| as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | call |",
-           "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+           "Point-in-time columns use only information public on the as-of date. The last four columns are "
+           "hindsight: 2-year total return incl. dividends, its excess vs SPY, the return to the average price over "
+           "months 12-24 (endpoint-robust), and whether the price-state call held.", "",
+           "| as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | m12-24 avg | call |",
+           "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in sorted(rows, key=lambda x: x["as_of"]):
         with open(os.path.join(ROOT, r["path"], "analysis.json"), encoding="utf-8") as fh:
             a = json.load(fh)
@@ -382,9 +388,10 @@ def cmd_series(ticker):
         tr = f"{o['tr_2y']:+.1f}%" if "tr_2y" in o else "-"
         ex = f"{o['excess_2y']:+.1f}pp" if "excess_2y" in o else "-"
         hit = {True: "✓", False: "✗"}.get(o.get("call_hit_2y"), "-")
+        avg = f"{o['avg_m12_m24']:+.1f}%" if o.get("avg_m12_m24") is not None else "-"
         out.append(f"| {r['as_of']} | ${r['price']:.2f} | {known} | {a['metrics']['proxy_composite']:.2f} | "
                    f"{r['adj_gap']:+.2f} | {r['ratio_b']:.2f}x | {r['legacy_tier']} | {r['class']} ({r['price_state']}) | "
-                   f"{same}/{len(rob)} {r['price_state']} | {tr} | {ex} | {hit} |")
+                   f"{same}/{len(rob)} {r['price_state']} | {tr} | {ex} | {avg} | {hit} |")
     path = os.path.join(ARCHIVE, ticker.upper(), "SERIES.md")
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(out) + "\n")
