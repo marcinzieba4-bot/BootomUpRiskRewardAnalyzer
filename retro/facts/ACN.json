@@ -127,6 +127,42 @@
    "title": "Accenture Ltd Q1 FY09 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095012308017845/c48278exv99w1.htm",
    "supports": "Q1 FY09 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; revised FY09 and Q2 guidance"
+  },
+  "S31": {
+   "published": "2009-03-26",
+   "title": "Accenture Ltd Q2 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013709002266/c50241exv99w1.htm",
+   "supports": "Q2 FY09 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; revised FY09 and Q3 guidance"
+  },
+  "S32": {
+   "published": "2009-06-25",
+   "title": "Accenture Ltd Q3 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095012309017292/c52061exv99w1.htm",
+   "supports": "Q3 FY09 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY09 and Q4 guidance"
+  },
+  "S33": {
+   "published": "2009-09-01",
+   "title": "Accenture plc 8-K12B: Accenture plc replaces Accenture Ltd as parent (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509185098/dex991.htm",
+   "supports": "change of place of incorporation to Ireland completed on 2009-09-01; Accenture plc becomes the parent company"
+  },
+  "S34": {
+   "published": "2009-10-01",
+   "title": "Accenture plc Q4/FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509201992/dex991.htm",
+   "supports": "Q4 and FY09 net revenues by type of work and operating group, bookings, margin and EPS with and without the $253M restructuring charge, diluted shares, cash; $0.75 annual dividend; FY10 and Q1 guidance"
+  },
+  "S35": {
+   "published": "2009-10-19",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509209671/d10k.htm",
+   "supports": "selected financial data FY05-FY09 (net revenues, diluted EPS), FY09 diluted shares 785.4M; competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; 'experiencing pricing pressures from some clients'; Global Delivery Network of more than 81,000 people"
+  },
+  "S36": {
+   "published": "2009-12-17",
+   "title": "Accenture plc Q1 FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509254902/dex991.htm",
+   "supports": "Q1 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY10 and Q2 guidance"
   }
  },
  "history_vintages": [
@@ -237,6 +273,69 @@
    "margin_signal_name": "Operating margin change",
    "business_line": "Management consulting, technology services and outsourcing",
    "tax_note": "FY09 guide 30-32% (S28)"
+  },
+  {
+   "published": "2009-10-19",
+   "sources": [
+    "S35",
+    "S34",
+    "S29",
+    "S21",
+    "S20",
+    "S32"
+   ],
+   "company": "Accenture plc",
+   "fy_label": "FY09",
+   "why": "Accenture: global consulting and outsourcing leader across five operating groups with $23.90B bookings in FY09; discretionary consulting demand is cyclical, the franchise is not",
+   "eps_gaap": {
+    "2003": 1.05,
+    "2004": 1.22,
+    "2005": 1.56,
+    "2006": 1.59,
+    "2007": 1.97,
+    "2008": 2.65,
+    "2009": 2.44
+   },
+   "eps_normalized": {
+    "2003": 1.05,
+    "2004": 1.22,
+    "2005": 1.56,
+    "2006": 1.61,
+    "2007": 1.97,
+    "2008": 2.65,
+    "2009": 2.68
+   },
+   "normalization": "FY05-FY09 GAAP from the FY09 10-K (S35), FY03-FY04 from earlier 10-Ks (S21, S29); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY02 excluded: $0.56 GAAP EPS depressed by a $321M investment loss, no published adjusted figure",
+   "revenue_usd_b": {
+    "2003": 11.818,
+    "2004": 13.673,
+    "2005": 15.547,
+    "2006": 16.646,
+    "2007": 19.696,
+    "2008": 23.387,
+    "2009": 21.577
+   },
+   "diluted_shares_m": {
+    "2003": 997.163,
+    "2009": 785.374
+   },
+   "pe_window_start": "2002-09-01",
+   "prev_fy_op_margin": 13.4,
+   "prev_fy_op_margin_note": "ex-restructuring (S34); GAAP 12.3%",
+   "prev_fy_revenue_lc_growth": 0,
+   "prev_fy_bookings_b": 23.9,
+   "prev_fy_bookings_record": false,
+   "prev_q_consulting_lc": -9,
+   "prev_q_label": "Q3 FY09",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY09, the first to guide FY10) (S32)",
+   "dividend_annual": 0.75,
+   "dividend_note": "$0.75 annual, declared 2009-10-01 (S34)",
+   "tax_rate": 0.31,
+   "cash_return_text": "$4.9B buyback authority",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
+   "tax_note": "FY10 guide 30-32% (S34)"
   },
   {
    "published": "2022-10-12",
@@ -744,6 +843,373 @@
    "cash_return_text": "$1.9B buyback authority"
   },
   {
+   "quarter": "Q2 FY09",
+   "published": "2009-03-26",
+   "source": "S31",
+   "extra_sources": [
+    "S24"
+   ],
+   "release": "Mar 26",
+   "revenue_b": 5.27,
+   "revenue_lc": 3,
+   "consulting_lc": -1,
+   "managed_lc": 9,
+   "bookings_b": 5.98,
+   "bookings_lc": 1,
+   "bookings_lc_note": "derived: -7.1% USD vs Q2 FY08 $6.44B (S24), less the negative 8% foreign-currency impact the release states for Q2 bookings",
+   "consulting_bookings_b": 3.14,
+   "consulting_revenue_b": 3.03,
+   "margin_label": "op margin",
+   "margin": 12.9,
+   "margin_bp": 150,
+   "margin_note": "includes 40bp from a reduction in reorganization liabilities",
+   "groups_basis": "H1 actuals",
+   "groups": [
+    [
+     "Products",
+     2.937,
+     5
+    ],
+    [
+     "Communications & High Tech",
+     2.557,
+     -3
+    ],
+    [
+     "Financial Services",
+     2.279,
+     -5
+    ],
+    [
+     "Resources",
+     2.032,
+     14
+    ],
+    [
+     "Public Service",
+     1.463,
+     12
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.6,
+    2.67
+   ],
+   "fy_eps_guide_note": "cut from $2.78-2.85",
+   "fy_rev_guide_lc": [
+    0,
+    4
+   ],
+   "fy_rev_guide_note": "cut from 6-10%",
+   "fy_fx": -9.0,
+   "fy_fx_note": "FY09 outlook assumes a -9% foreign-exchange impact vs FY08",
+   "fy_margin_guide": [
+    13.4,
+    13.7
+   ],
+   "next_q": "Q3",
+   "next_q_guide_b": [
+    5.1,
+    5.3
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -12% FX assumption",
+   "next_print": "Q3 FY09 print (late June)",
+   "fcf_guide_b": [
+    2.25,
+    2.45
+   ],
+   "cash_b": 2.98,
+   "diluted_shares_m": 786.4,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    23,
+    25
+   ],
+   "tax_rate": 0.3,
+   "cash_return_text": "$1.5B buyback authority"
+  },
+  {
+   "quarter": "Q3 FY09",
+   "published": "2009-06-25",
+   "source": "S32",
+   "extra_sources": [
+    "S26",
+    "S31"
+   ],
+   "release": "Jun 25",
+   "revenue_b": 5.15,
+   "revenue_lc": -4,
+   "consulting_lc": -9,
+   "managed_lc": 3,
+   "bookings_b": 6.57,
+   "bookings_lc": 12,
+   "bookings_lc_note": "derived: -3.0% USD vs Q3 FY08 $6.77B (S26), less the negative 13% foreign-currency impact the release states for Q3 bookings",
+   "consulting_bookings_b": 3.21,
+   "consulting_revenue_b": 2.95,
+   "margin_label": "op margin",
+   "margin": 14.2,
+   "margin_bp": 10,
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Products",
+     4.244,
+     -8
+    ],
+    [
+     "Communications & High Tech",
+     3.713,
+     -5
+    ],
+    [
+     "Financial Services",
+     3.306,
+     -9
+    ],
+    [
+     "Resources",
+     2.937,
+     1
+    ],
+    [
+     "Public Service",
+     2.208,
+     8
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.67,
+    2.7
+   ],
+   "fy_eps_guide_note": "raised from $2.60-2.67",
+   "fy_rev_guide_lc": [
+    0,
+    4
+   ],
+   "fy_rev_guide_note": "narrowed in words to 'flat to slightly positive'; the last numeric range stands",
+   "fy_fx": -9.0,
+   "fy_fx_note": "not restated in Q3; the Q2 assumption of -9% stands (S31)",
+   "fy_margin_guide": [
+    13.4,
+    13.7
+   ],
+   "fy_margin_guide_note": "now 'at the lower end' of the range",
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    5.0,
+    5.2
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -8% FX assumption",
+   "next_print": "Q4 FY09 print (late September)",
+   "fcf_guide_b": [
+    2.4,
+    2.6
+   ],
+   "cash_b": 4.0,
+   "diluted_shares_m": 782.8,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    23,
+    25
+   ],
+   "tax_rate": 0.28,
+   "cash_return_text": "$1.3B buyback authority"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "published": "2009-10-01",
+   "source": "S34",
+   "extra_sources": [
+    "S28"
+   ],
+   "release": "Oct 1",
+   "revenue_b": 5.15,
+   "revenue_lc": -7,
+   "consulting_lc": -12,
+   "managed_lc": 1,
+   "bookings_b": 5.54,
+   "bookings_lc": -23,
+   "bookings_lc_note": "derived: -27.8% USD vs Q4 FY08 $7.67B (S28), less the negative 6% foreign-currency impact the release states for Q4 bookings",
+   "consulting_bookings_b": 2.87,
+   "consulting_revenue_b": 2.91,
+   "margin_label": "op margin ex-restructuring",
+   "margin": 13.1,
+   "margin_bp": 0,
+   "margin_note": "GAAP 8.2% with the $253M restructuring charge",
+   "groups_basis": "FY09 actuals",
+   "groups": [
+    [
+     "Products",
+     5.53,
+     -10
+    ],
+    [
+     "Communications & High Tech",
+     4.831,
+     -15
+    ],
+    [
+     "Financial Services",
+     4.323,
+     -10
+    ],
+    [
+     "Resources",
+     3.88,
+     -2
+    ],
+    [
+     "Public Service",
+     2.984,
+     12
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.64,
+    2.72
+   ],
+   "fy_eps_guide_note": "first FY10 guide",
+   "fy_rev_guide_lc": [
+    -3,
+    1
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": null,
+   "fy_margin_guide": [
+    13.4,
+    13.4
+   ],
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    5.3,
+    5.5
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a 0% FX assumption",
+   "next_print": "Q1 FY10 print (mid-December)",
+   "fcf_guide_b": [
+    2.1,
+    2.3
+   ],
+   "cash_b": 4.54,
+   "diluted_shares_m": 778.9,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    23,
+    26
+   ],
+   "tax_rate": 0.31,
+   "cash_return_text": "$4.9B buyback authority",
+   "dividend_annual": 0.75,
+   "dividend_note": "$0.75 annual, declared 2009-10-01 (S34)",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_gaap": 2.44,
+    "eps_normalized": 2.68,
+    "normalization_note": "FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44)",
+    "revenue_usd_b": 21.577,
+    "diluted_shares_m": 785.374,
+    "op_margin": 13.4,
+    "revenue_lc_growth": 0,
+    "bookings_b": 23.9,
+    "bookings_record": false,
+    "why": "Accenture: global consulting and outsourcing leader across five operating groups with $23.90B bookings in FY09; discretionary consulting demand is cyclical, the franchise is not"
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "published": "2009-12-17",
+   "source": "S36",
+   "extra_sources": [
+    "S30"
+   ],
+   "release": "Dec 17",
+   "revenue_b": 5.38,
+   "revenue_lc": -12,
+   "consulting_lc": -16,
+   "managed_lc": -5,
+   "bookings_b": 5.53,
+   "bookings_lc": -7,
+   "bookings_lc_note": "derived: -4.7% USD vs Q1 FY09 $5.80B (S30), less the positive 3% foreign-currency impact the release states for Q1 bookings",
+   "consulting_bookings_b": 3.51,
+   "consulting_revenue_b": 3.12,
+   "margin_label": "op margin",
+   "margin": 13.9,
+   "margin_bp": 40,
+   "groups_basis": "Q1 actuals",
+   "groups": [
+    [
+     "Products",
+     1.204,
+     -14
+    ],
+    [
+     "Communications & High Tech",
+     1.159,
+     -17
+    ],
+    [
+     "Financial Services",
+     1.104,
+     -12
+    ],
+    [
+     "Resources",
+     0.964,
+     -12
+    ],
+    [
+     "Health & Public Service",
+     0.947,
+     0
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.67,
+    2.75
+   ],
+   "fy_eps_guide_note": "raised from $2.64-2.72 on the FX assumption",
+   "fy_rev_guide_lc": [
+    -3,
+    1
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": 5.0,
+   "fy_fx_note": "FY10 outlook assumes a +5% foreign-exchange impact vs FY09",
+   "fy_margin_guide": [
+    13.4,
+    13.4
+   ],
+   "next_q": "Q2",
+   "next_q_guide_b": [
+    5.1,
+    5.3
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a +7% FX assumption",
+   "next_print": "Q2 FY10 print (late March)",
+   "fcf_guide_b": [
+    2.1,
+    2.3
+   ],
+   "cash_b": 4.0,
+   "diluted_shares_m": 773.7,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    23,
+    26
+   ],
+   "tax_rate": 0.31,
+   "cash_return_text": "$4.5B buyback authority"
+  },
+  {
    "quarter": "Q1 FY23",
    "published": "2022-12-16",
    "source": "S3",
@@ -1007,6 +1473,18 @@
    "gdn_added": "11,000+ added in FY08"
   },
   {
+   "id": "S35",
+   "published": "2009-10-19",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2009 10-K",
+   "doc_short": "10-K FY09",
+   "warning": "says it is 'experiencing pricing pressures from some clients' and has 'shifted to lower-cost resources at reduced price levels'",
+   "warning_short": "'experiencing pricing pressures from some clients'",
+   "gdn_people": "81,000+",
+   "gdn_added": "about 83,000 a year earlier"
+  },
+  {
    "id": "S13",
    "published": "2022-11-30",
    "kind": "genai_live",
@@ -1035,6 +1513,13 @@
    "published": "2023-06-14",
    "kind": "company_ai_investment",
    "theme": "GENAI"
+  }
+ ],
+ "company_names": [
+  {
+   "published": "2009-09-01",
+   "name": "Accenture plc",
+   "source": "S33"
   }
  ]
 }

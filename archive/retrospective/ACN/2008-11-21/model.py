@@ -136,6 +136,9 @@ def _median(v):
     v = sorted(v); n = len(v)
     return v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2
 
+def _lc_range(lo, hi):
+    return f"+{lo}-{hi}%" if lo >= 0 else f"{lo:+d}% to {hi:+d}%"     # "+9-12%", "-3% to +1%"
+
 def _ordinal(n):
     return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
 
@@ -177,7 +180,7 @@ STRUCTURAL_FACTORS = [
     (SHARE_GAIN_TEXT, 0.4, 0.20),
     (f"Multiple: {PE_NOW:.1f}x {FY_E_S} vs a {PE_PCTL['median']}x {WINDOW_LABEL} median ({_ordinal(PE_NOW_PCTL)} percentile of its own range)",
      VALUATION_SCORE, 0.25),
-    (f"Growth vs own history: {FWD_GUIDE_LABEL} +{FWD_GUIDE_LC[0]}-{FWD_GUIDE_LC[1]}% LC "
+    (f"Growth vs own history: {FWD_GUIDE_LABEL} {_lc_range(*FWD_GUIDE_LC)} LC "
      f"vs a {REV_MEDIAN_GROWTH*100:.1f}% {len(REV_YOY)}-yr median", GROWTH_SCORE, 0.20),
     (BALANCE_TEXT, 0.3, 0.15),
 ] + [tuple(f) for f in THEME_FACTORS]
@@ -361,10 +364,10 @@ for seg_name, seg_desc, s_now, s_bear, s_bull in SEGMENTS:
 print("  " + "─" * (W-2))
 print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_bull:>6.1f}    "
       f"{tot_bear-tot_now:>+6.1f}    {tot_bull-tot_now:>+6.1f}")
-print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 + {sum(L['fy_rev_guide_lc'])/2:.1f}% LC guide, {FX_TEXT}); split pro rata to {GROUPS_BASIS}")
+print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if sum(L['fy_rev_guide_lc']) >= 0 else '−'} {abs(sum(L['fy_rev_guide_lc']))/2:.1f}% LC guide, {FX_TEXT}); split pro rata to {GROUPS_BASIS}")
 print(f"  {L['quarter']} ({L['release']}): revenue ${L['revenue_b']:.2f}B {L['revenue_lc']:+d}% LC; consulting {L['consulting_lc']:+d}% LC, "
       f"{SERVICE_LINE.lower()} {L['managed_lc']:+d}% LC; bookings ${L['bookings_b']:.2f}B {L['bookings_lc']:+d}% LC;")
-print(f"  {L['margin_label']} {L['margin']}% ({L['margin_bp']:+d}bp); {FY_E_S[:-1]} guide +{L['fy_rev_guide_lc'][0]}-{L['fy_rev_guide_lc'][1]}% LC"
+print(f"  {L['margin_label']} {L['margin']}% ({L['margin_bp']:+d}bp); {FY_E_S[:-1]} guide {_lc_range(*L['fy_rev_guide_lc'])} LC"
       f"{' (' + L['fy_rev_guide_note'] + ')' if L['fy_rev_guide_note'] else ''}, {L['eps_label']} ${L['fy_eps_guide'][0]:.2f}-{L['fy_eps_guide'][1]:.2f}"
       f"{' (' + L['fy_eps_guide_note'] + ')' if L['fy_eps_guide_note'] else ''}; {L['next_q']} guide ${L['next_q_guide_b'][0]:.2f}-{L['next_q_guide_b'][1]:.2f}B"
       f"{', +' + str(L['next_q_guide_lc'][0]) + '-' + str(L['next_q_guide_lc'][1]) + '% LC' if L['next_q_guide_lc'] else ' (USD only)'}")
@@ -530,7 +533,7 @@ summary = (
     f"{epp_gap_pct:+.0f}% above the EPP floor ${epp_updated:,.0f} ({EPP_MIN_PE:.0f}x {FY_E_S} ${EPP_TODAY_EPS:.2f}) | "
     f"Conservative 2-yr case: {cons_total_ret:+.1f}% total ({cons_annual_ret:+.1f}%/yr) | "
     f"At {PE_NOW:.1f}x {FY_E_S} the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; consulting {L['consulting_lc']:+d}% LC "
-    f"in {L['quarter'].split()[0]}, {FWD_PERIOD} guided +{FWD_GUIDE_LC[0]}-{FWD_GUIDE_LC[1]}% LC; {THEME_SUMMARY}."
+    f"in {L['quarter'].split()[0]}, {FWD_PERIOD} guided {_lc_range(*FWD_GUIDE_LC)} LC; {THEME_SUMMARY}."
 )
 RESULT = {
     "ticker":           TICKER,

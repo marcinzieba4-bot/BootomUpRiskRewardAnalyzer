@@ -96,6 +96,19 @@ Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output chang
   The Q4 print stays the latest print, because it is the one guiding the new year. The 10-K replaces its full-year
   actuals. The disruption-theme wording (quotes, delivery-network size) comes from the latest 10-K event in the fact sheet.
 
+How recurring cases are encoded (each was decided the first time it came up, then applied the same way):
+
+- **A guide restated only in words** ("toward the upper end", "at the lower end", "flat to slightly positive"):
+  the last numeric range stands, and the words go in the print's note. First seen in ACN Q3 FY08 (2008-06-26);
+  ACN Q3 FY09 (2009-06-25) keeps the 0-4% FY09 revenue range.
+- **A guide assumption the company states only later** (ACN's FY09 and FY10 FX assumptions, first disclosed in
+  the following quarter's release) is never back-filled into the earlier print.
+- **A one-off charge with a company-published figure without it:** EPS and operating margin use that figure,
+  and the note keeps the GAAP number. Example: ACN FY09 restructuring charge (EPS $2.68 vs $2.44 GAAP,
+  margin 13.4% vs 12.3%).
+- **A change of company name** (`company_names` in the fact sheet) applies from its filing date. Example:
+  Accenture plc replaced Accenture Ltd on 2009-09-01.
+
 Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
 method version.
@@ -151,6 +164,7 @@ python3 retro/build_acn.py --weekly 2023-01-01 2023-06-30        # dates chosen 
 python3 retro/build_acn.py --weekly 2008-01-01 2008-01-31        # any era with a history vintage in the fact sheet
 python3 retro/build_acn.py --weekly 2008-05-05 2008-09-30        # start a range on a Monday when the prior week is built
 python3 retro/build_acn.py --weekly 2008-10-06 2008-12-31
+python3 retro/build_acn.py --weekly 2009-01-05 2009-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done
