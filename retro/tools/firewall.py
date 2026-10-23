@@ -64,6 +64,14 @@ try:
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2],
                                 "rev_guide": [-40, -30], "rev_guide_label": "PLANTED", "volume_guide": [-50, -40]})
         f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
+    if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF
+        with open(CACHE[0]) as fh:
+            r = json.load(fh)["chart"]["result"][0]
+        off = r["meta"]["gmtoffset"]
+        days = sorted(dt.datetime.fromtimestamp(v["date"] + off, dt.timezone.utc).date().isoformat()
+                      for v in r.get("events", {}).get("splits", {}).values())
+        f["splits"] += [{"published": later, "source": last["source"], "effective": d, "ratio": 10, "note": "PLANTED"}
+                        for d in days if d > later][:1]
     v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))
     v.update(published=later, why="PLANTED", company="PLANTED")
     v["eps_normalized"] = {**v["eps_normalized"], "2099": 0.01}
