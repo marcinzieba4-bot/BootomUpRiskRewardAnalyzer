@@ -813,3 +813,176 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2023-06-16 | $319.54 | Accenture plc Q2 FY23 results | 3.00 | -0.43 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +1.7% | -38.2pp | +5.4% | ✓ |
 | 2023-06-23 | $298.43 | Accenture plc Q3 FY23 results | 2.10 | -1.09 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +2.4% | -39.3pp | +12.9% | ✓ |
 | 2023-06-30 | $308.58 | Accenture plc Q3 FY23 results | 2.10 | -1.22 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.3% | -42.2pp | +9.1% | ✓ |
+| 2023-07-07 | $305.76 | Accenture plc Q3 FY23 results | 2.10 | -1.18 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.8% | -42.9pp | +10.1% | ✓ |
+| 2023-07-14 | $315.77 | Accenture plc Q3 FY23 results | 2.10 | -1.30 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.8% | -50.0pp | +6.5% | ✓ |
+| 2023-07-21 | $314.80 | Accenture plc Q3 FY23 results | 2.10 | -1.29 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.8% | -48.9pp | +6.6% | ✓ |
+| 2023-07-28 | $315.55 | Accenture plc Q3 FY23 results | 2.10 | -1.30 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.7% | -51.2pp | +6.0% | ✓ |
+| 2023-08-04 | $312.00 | Accenture plc Q3 FY23 results | 2.10 | -1.24 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.5% | -57.9pp | +6.9% | ✓ |
+| 2023-08-11 | $309.05 | Accenture plc Q3 FY23 results | 2.10 | -1.21 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.2% | -65.0pp | +7.4% | ✓ |
+| 2023-08-18 | $302.94 | Accenture plc Q3 FY23 results | 2.10 | -1.12 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -14.1% | -64.7pp | +9.1% | ✓ |
+| 2023-08-25 | $318.76 | Accenture plc Q3 FY23 results | 2.10 | -1.32 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.2% | -65.4pp | +3.2% | ✓ |
+| 2023-09-01 | $327.74 | Accenture plc Q3 FY23 results | 2.10 | -1.41 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.3% | -63.4pp | -0.1% | ✓ |
+| 2023-09-08 | $325.47 | Accenture plc Q3 FY23 results | 2.10 | -1.39 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.1% | -66.9pp | +0.1% | ✓ |
+| 2023-09-15 | $312.53 | Accenture plc Q3 FY23 results | 2.10 | -1.24 | 1.61x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.3% | -72.2pp | +3.6% | ✓ |
+| 2023-09-22 | $316.09 | Accenture plc Q3 FY23 results | 2.10 | -1.29 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.6% | -78.8pp | +1.8% | ✓ |
+| 2023-09-29 | $307.11 | Accenture plc Q4/FY23 results | 1.90 | -1.27 | 0.99x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.0% | -74.6pp | +4.1% | ✓ |
+| 2023-10-06 | $312.19 | Accenture plc Q4/FY23 results | 1.90 | -1.34 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.0% | -76.6pp | +1.7% | ✓ |
+| 2023-10-13 | $301.83 | Accenture plc Q4/FY23 results | 1.90 | -1.09 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.1% | -73.0pp | +4.4% | ✓ |
+| 2023-10-20 | $297.00 | Accenture plc Q4/FY23 results | 1.90 | -1.00 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -15.2% | -77.9pp | +5.2% | ✓ |
+| 2023-10-27 | $290.04 | Accenture plc Q4/FY23 results | 1.90 | -0.85 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -10.2% | -80.5pp | +6.9% | ✓ |
+| 2023-11-03 | $313.49 | Accenture plc Q4/FY23 results | 1.90 | -1.36 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.6% | -78.1pp | -1.7% | ✓ |
+| 2023-11-10 | $319.69 | Accenture plc Q4/FY23 results | 1.90 | -1.43 | 1.29x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.4% | -78.3pp | -4.3% | ✓ |
+| 2023-11-17 | $327.83 | Accenture plc Q4/FY23 results | 1.90 | -1.53 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.4% | -74.2pp | -7.4% | ✓ |
+| 2023-11-24 | $334.04 | Accenture plc Q4/FY23 results | 1.90 | -1.60 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.1% | -74.1pp | -9.8% | ✓ |
+| 2023-12-01 | $338.06 | Accenture plc Q4/FY23 results | 1.90 | -1.64 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.0% | -72.2pp | -11.4% | ✓ |
+| 2023-12-08 | $337.23 | Accenture plc Q4/FY23 results | 1.90 | -1.62 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.1% | -69.7pp | -11.7% | ✓ |
+| 2023-12-15 | $344.15 | Accenture plc Q4/FY23 results | 1.90 | -1.69 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.3% | -65.0pp | -14.0% | ✓ |
+| 2023-12-20 | $339.50 | Accenture plc Q1 FY24 results | 2.00 | -1.55 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.9% | -65.3pp | -13.3% | ✓ |
+| 2023-12-29 | $350.91 | Accenture plc Q1 FY24 results | 2.00 | -1.65 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.9% | -67.6pp | -16.6% | ✓ |
+| 2024-01-05 | $336.62 | Accenture plc Q1 FY24 results | 2.00 | -1.51 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.7% | -68.7pp | -13.4% | ✓ |
+| 2024-01-12 | $356.33 | Accenture plc Q1 FY24 results | 2.00 | -1.71 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.4% | -67.2pp | -18.6% | ✓ |
+| 2024-01-19 | $363.90 | Accenture plc Q1 FY24 results | 2.00 | -1.79 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.0% | -65.4pp | -20.6% | ✓ |
+| 2024-01-26 | $371.07 | Accenture plc Q1 FY24 results | 2.00 | -1.87 | 4.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.1% | -67.1pp | -22.5% | ✓ |
+| 2024-02-02 | $372.95 | Accenture plc Q1 FY24 results | 2.00 | -1.88 | 5.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.2% | -69.8pp | -23.5% | ✓ |
+| 2024-02-09 | $371.67 | Accenture plc Q1 FY24 results | 2.00 | -1.86 | 4.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -34.0% | -75.3pp | -24.0% | ✓ |
+| 2024-02-16 | $369.48 | Accenture plc Q1 FY24 results | 2.00 | -1.84 | 4.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.0% | -76.4pp | -24.4% | ✓ |
+| 2024-02-23 | $377.32 | Accenture plc Q1 FY24 results | 2.00 | -1.94 | 6.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -44.4% | -81.6pp | -26.7% | ✓ |
+| 2024-03-01 | $380.99 | Accenture plc Q1 FY24 results | 2.00 | -1.97 | 7.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -43.0% | -79.5pp | -28.2% | ✓ |
+| 2024-03-08 | $378.17 | Accenture plc Q1 FY24 results | 2.00 | -1.94 | 6.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -40.9% | -75.1pp | -28.4% | ✓ |
+| 2024-03-15 | $374.60 | Accenture plc Q1 FY24 results | 2.00 | -1.87 | 5.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -45.2% | -77.6pp | -28.3% | ✓ |
+| 2024-03-22 | $337.50 | Accenture plc Q2 FY24 results | 1.30 | -2.19 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -38.2% | -65.5pp | -21.2% | ✓ |
+| 2024-03-28 | $346.61 | Accenture plc Q2 FY24 results | 1.30 | -2.27 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -42.0% | -66.0pp | -23.9% | ✓ |
+| 2024-04-05 | $333.00 | Accenture plc Q2 FY24 results | 1.30 | -2.13 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.0% | -66.3pp | -21.3% | ✓ |
+| 2024-04-12 | $315.40 | Accenture plc Q2 FY24 results | 1.30 | -1.80 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -40.3% | -76.1pp | -17.6% | ✓ |
+| 2024-04-19 | $316.88 | Accenture plc Q2 FY24 results | 1.30 | -1.83 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -34.8% | -81.2pp | -18.5% | ✓ |
+| 2024-04-26 | $308.01 | Accenture plc Q2 FY24 results | 1.30 | -1.70 | 0.87x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -39.2% | -82.6pp | -16.8% | ✓ |
+| 2024-05-03 | $303.71 | Accenture plc Q2 FY24 results | 1.30 | -1.62 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.9% | -81.7pp | -16.4% | ✓ |
+| 2024-05-10 | $306.33 | Accenture plc Q2 FY24 results | 1.30 | -1.66 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -38.2% | -82.6pp | -18.0% | ✓ |
+| 2024-05-17 | $303.59 | Accenture plc Q2 FY24 results | 1.30 | -1.62 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -41.5% | -83.8pp | -18.2% | ✓ |
+| 2024-05-24 | $300.99 | Accenture plc Q2 FY24 results | 1.30 | -1.56 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.5% | -81.1pp | -18.5% | ✓ |
+| 2024-05-31 | $282.29 | Accenture plc Q2 FY24 results | 1.30 | -1.22 | 0.44x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.6% | -76.8pp | -13.8% | ✓ |
+| 2024-06-07 | $288.40 | Accenture plc Q2 FY24 results | 1.30 | -1.31 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -35.1% | -76.0pp | -16.6% | ✓ |
+| 2024-06-14 | $286.71 | Accenture plc Q2 FY24 results | 1.30 | -1.29 | 0.49x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.5% | -76.9pp | -17.1% | ✓ |
+| 2024-06-21 | $308.98 | Accenture plc Q3 FY24 results | 1.90 | -1.06 | 0.91x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -55.7% | -95.6pp | -23.9% | ✓ |
+| 2024-06-28 | $303.41 | Accenture plc Q3 FY24 results | 1.90 | -0.96 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -54.6% | -91.2pp | -23.6% | ✓ |
+| 2024-07-05 | $299.14 | Accenture plc Q3 FY24 results | 1.90 | -0.87 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -51.1% | -88.1pp | -23.4% | ✓ |
+| 2024-07-12 | $310.63 | Accenture plc Q3 FY24 results | 1.90 | -1.09 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -53.5% | -90.9pp | -27.2% | ✓ |
+| 2024-07-19 | $329.19 | Accenture plc Q3 FY24 results | 1.90 | -1.44 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -53.6% | -91.7pp | -32.2% | ✓ |
+| 2024-07-26 | $328.46 | Accenture plc Q3 FY24 results | 1.90 | -1.43 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -52.5% | -90.9pp | -32.9% | ✓ |
+| 2024-08-02 | $323.15 | Accenture plc Q3 FY24 results | 1.90 | -1.34 | 1.21x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -45.8% | -88.8pp | -32.5% | ✓ |
+| 2024-08-09 | $315.83 | Accenture plc Q3 FY24 results | 1.90 | -1.15 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -41.5% | -89.3pp | -31.4% | ✓ |
+| 2024-08-16 | $326.92 | Accenture plc Q3 FY24 results | 1.90 | -1.40 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -43.1% | -85.8pp | -34.1% | ✓ |
+| 2024-08-23 | $333.27 | Accenture plc Q3 FY24 results | 1.90 | -1.48 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -41.7% | -80.5pp | -35.8% | ✓ |
+| 2024-08-30 | $341.95 | Accenture plc Q3 FY24 results | 1.90 | -1.57 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -41.9% | -81.0pp | -37.9% | ✓ |
+| 2024-09-06 | $339.84 | Accenture plc Q3 FY24 results | 1.90 | -1.54 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -42.4% | -87.6pp | -37.8% | ✓ |
+| 2024-09-13 | $349.58 | Accenture plc Q3 FY24 results | 1.90 | -1.64 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -44.8% | -83.4pp | -39.9% | ✓ |
+| 2024-09-20 | $336.22 | Accenture plc Q3 FY24 results | 1.90 | -1.50 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -43.3% | -80.0pp | -37.8% | ✓ |
+| 2024-09-27 | $349.70 | Accenture plc Q4/FY24 results | 2.55 | -0.76 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -47.0% | -84.6pp | -40.5% | ✓ |
+| 2024-10-04 | $362.24 | Accenture plc Q4/FY24 results | 2.55 | -0.90 | 1.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -42.6% | -79.5pp | -42.9% | ✓ |
+| 2024-10-11 | $360.74 | Accenture plc Q4/FY24 results | 2.55 | -0.88 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -39.9% | -76.8pp | -42.9% | ✓ |
+| 2024-10-18 | $376.86 | Accenture plc Q4/FY24 results | 2.55 | -1.03 | 2.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -36.6% | -69.7pp | -45.5% | ✓ |
+| 2024-10-25 | $360.80 | Accenture plc Q4/FY24 results | 2.55 | -0.87 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -43.1% | - |
+| 2024-11-01 | $345.67 | Accenture plc Q4/FY24 results | 2.55 | -0.70 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | -40.9% | - |
+| 2024-11-08 | $355.53 | Accenture plc Q4/FY24 results | 2.55 | -0.81 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | -42.8% | - |
+| 2024-11-15 | $353.57 | Accenture plc Q4/FY24 results | 2.55 | -0.79 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | -42.7% | - |
+| 2024-11-22 | $358.66 | Accenture plc Q4/FY24 results | 2.55 | -0.85 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -43.7% | - |
+| 2024-11-29 | $362.37 | Accenture plc Q4/FY24 results | 2.55 | -0.89 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -44.5% | - |
+| 2024-12-06 | $362.70 | Accenture plc Q4/FY24 results | 2.55 | -0.88 | 1.67x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -45.0% | - |
+| 2024-12-13 | $358.68 | Accenture plc Q4/FY24 results | 2.55 | -0.84 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | -44.8% | - |
+| 2024-12-20 | $366.37 | Accenture plc Q1 FY25 results | 2.45 | -0.97 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -46.5% | - |
+| 2024-12-27 | $356.18 | Accenture plc Q1 FY25 results | 2.45 | -0.87 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -45.4% | - |
+| 2025-01-03 | $353.85 | Accenture plc Q1 FY25 results | 2.45 | -0.84 | 1.45x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | -45.4% | - |
+| 2025-01-10 | $349.79 | Accenture plc Q1 FY25 results | 2.45 | -0.79 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | -45.4% | - |
+| 2025-01-17 | $352.59 | Accenture plc Q1 FY25 results | 2.45 | -0.82 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | -46.5% | - |
+| 2025-01-24 | $362.41 | Accenture plc Q1 FY25 results | 2.45 | -0.93 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -48.5% | - |
+| 2025-01-31 | $384.95 | Accenture plc Q1 FY25 results | 2.45 | -1.16 | 3.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -52.1% | - |
+| 2025-02-07 | $385.98 | Accenture plc Q1 FY25 results | 2.45 | -1.17 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -52.7% | - |
+| 2025-02-14 | $388.00 | Accenture plc Q1 FY25 results | 2.45 | -1.19 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -53.3% | - |
+| 2025-02-21 | $364.26 | Accenture plc Q1 FY25 results | 2.45 | -0.94 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -50.5% | - |
+| 2025-02-28 | $348.50 | Accenture plc Q1 FY25 results | 2.45 | -0.75 | 1.21x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | -48.4% | - |
+| 2025-03-07 | $342.18 | Accenture plc Q1 FY25 results | 2.45 | -0.67 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | -47.7% | - |
+| 2025-03-14 | $318.82 | Accenture plc Q1 FY25 results | 2.45 | -0.12 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -44.1% | - |
+| 2025-03-21 | $305.32 | Accenture plc Q2 FY25 results | 2.30 | -0.08 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -41.9% | - |
+| 2025-03-28 | $304.33 | Accenture plc Q2 FY25 results | 2.30 | -0.07 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -41.9% | - |
+| 2025-04-04 | $285.06 | Accenture plc Q2 FY25 results | 2.30 | +0.24 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | -38.2% | - |
+| 2025-04-11 | $284.34 | Accenture plc Q2 FY25 results | 2.30 | +0.25 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | -38.2% | - |
+| 2025-04-17 | $282.35 | Accenture plc Q2 FY25 results | 2.30 | +0.29 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | -38.0% | - |
+| 2025-04-25 | $293.39 | Accenture plc Q2 FY25 results | 2.30 | +0.11 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -40.5% | - |
+| 2025-05-02 | $305.33 | Accenture plc Q2 FY25 results | 2.30 | -0.08 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -42.9% | - |
+| 2025-05-09 | $307.90 | Accenture plc Q2 FY25 results | 2.30 | -0.13 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -43.5% | - |
+| 2025-05-16 | $317.69 | Accenture plc Q2 FY25 results | 2.30 | -0.30 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | -45.1% | - |
+| 2025-05-23 | $309.58 | Accenture plc Q2 FY25 results | 2.30 | -0.15 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -43.7% | - |
+| 2025-05-30 | $316.82 | Accenture plc Q2 FY25 results | 2.30 | -0.28 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | -45.1% | - |
+| 2025-06-06 | $317.65 | Accenture plc Q2 FY25 results | 2.30 | -0.29 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | -45.4% | - |
+| 2025-06-13 | $311.71 | Accenture plc Q2 FY25 results | 2.30 | -0.18 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -44.3% | - |
+| 2025-06-20 | $285.37 | Accenture plc Q3 FY25 results | 1.95 | -0.17 | 0.18x | BUY | AI-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | -38.8% | - |
+| 2025-06-27 | $295.46 | Accenture plc Q3 FY25 results | 1.95 | -0.31 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -39.9% | - |
+| 2025-07-03 | $304.78 | Accenture plc Q3 FY25 results | 1.95 | -0.44 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | -41.0% | - |
+| 2025-07-11 | $281.06 | Accenture plc Q3 FY25 results | 1.95 | -0.09 | 0.15x | BUY | AI-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | -35.0% | - |
+| 2025-07-18 | $282.44 | Accenture plc Q3 FY25 results | 1.95 | -0.12 | 0.16x | BUY | AI-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | -34.2% | - |
+| 2025-07-25 | $283.15 | Accenture plc Q3 FY25 results | 1.95 | -0.13 | 0.17x | BUY | AI-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | -33.1% | - |
+| 2025-08-01 | $255.37 | Accenture plc Q3 FY25 results | 1.95 | +0.38 | -0.01x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -25.0% | - |
+| 2025-08-08 | $239.20 | Accenture plc Q3 FY25 results | 1.95 | +0.81 | -0.10x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -19.1% | - |
+| 2025-08-15 | $247.01 | Accenture plc Q3 FY25 results | 1.95 | +0.50 | -0.06x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -21.0% | - |
+| 2025-08-22 | $259.22 | Accenture plc Q3 FY25 results | 1.95 | +0.31 | 0.01x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -24.0% | - |
+| 2025-08-29 | $259.97 | Accenture plc Q3 FY25 results | 1.95 | +0.30 | 0.02x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -23.7% | - |
+| 2025-09-05 | $254.95 | Accenture plc Q3 FY25 results | 1.95 | +0.38 | -0.01x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -21.6% | - |
+| 2025-09-12 | $238.54 | Accenture plc Q3 FY25 results | 1.95 | +0.81 | -0.09x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -15.0% | - |
+| 2025-09-19 | $239.70 | Accenture plc Q3 FY25 results | 1.95 | +0.80 | -0.09x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -14.3% | - |
+| 2025-09-26 | $238.97 | Accenture plc Q4/FY25 results | 2.15 | +1.22 | -0.16x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -11.4% | - |
+| 2025-10-03 | $245.32 | Accenture plc Q4/FY25 results | 2.15 | +1.14 | -0.13x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -10.5% | - |
+| 2025-10-10 | $240.94 | Accenture plc Q4/FY25 results | 2.15 | +1.20 | -0.15x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | -4.4% | - |
+| 2025-10-17 | $238.39 | Accenture plc Q4/FY25 results | 2.15 | +1.23 | -0.16x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +2.3% | - |
+| 2025-10-24 | $247.65 | Accenture plc Q4/FY25 results | 2.15 | +1.11 | -0.12x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-10-31 | $250.10 | Accenture plc Q4/FY25 results | 2.15 | +1.08 | -0.11x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-11-07 | $245.76 | Accenture plc Q4/FY25 results | 2.15 | +1.14 | -0.13x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-11-14 | $245.21 | Accenture plc Q4/FY25 results | 2.15 | +1.14 | -0.13x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-11-21 | $251.85 | Accenture plc Q4/FY25 results | 2.15 | +1.06 | -0.10x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-11-28 | $250.00 | Accenture plc Q4/FY25 results | 2.15 | +1.08 | -0.11x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-05 | $266.59 | Accenture plc Q4/FY25 results | 2.15 | +0.67 | -0.03x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-12 | $271.56 | Accenture plc Q4/FY25 results | 2.15 | +0.60 | -0.01x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-19 | $272.25 | Accenture plc Q1 FY26 results | 2.35 | +0.79 | -0.00x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-26 | $271.09 | Accenture plc Q1 FY26 results | 2.35 | +0.81 | -0.01x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-02 | $259.95 | Accenture plc Q1 FY26 results | 2.35 | +1.15 | -0.06x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-09 | $280.67 | Accenture plc Q1 FY26 results | 2.35 | +0.66 | 0.04x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-16 | $286.21 | Accenture plc Q1 FY26 results | 2.35 | +0.56 | 0.07x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-23 | $281.07 | Accenture plc Q1 FY26 results | 2.35 | +0.66 | 0.04x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-30 | $263.64 | Accenture plc Q1 FY26 results | 2.35 | +0.91 | -0.05x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-02-06 | $240.62 | Accenture plc Q1 FY26 results | 2.35 | +1.40 | -0.15x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-02-13 | $224.23 | Accenture plc Q1 FY26 results | 2.35 | +1.75 | -0.21x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-02-20 | $215.35 | Accenture plc Q1 FY26 results | 2.35 | +1.75 | -0.23x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-02-27 | $208.72 | Accenture plc Q1 FY26 results | 2.35 | +1.75 | -0.25x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-03-06 | $215.00 | Accenture plc Q1 FY26 results | 2.35 | +1.75 | -0.24x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-03-13 | $196.65 | Accenture plc Q1 FY26 results | 2.35 | +1.75 | -0.29x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-03-20 | $199.99 | Accenture plc Q2 FY26 results | 2.15 | +1.44 | -0.28x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $192.60 | Accenture plc Q2 FY26 results | 2.15 | +1.44 | -0.30x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-04-02 | $201.33 | Accenture plc Q2 FY26 results | 2.15 | +1.44 | -0.27x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-04-10 | $179.53 | Accenture plc Q2 FY26 results | 2.15 | +1.44 | -0.33x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-04-17 | $197.65 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.28x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-04-24 | $178.36 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.33x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-01 | $179.83 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.32x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-08 | $180.42 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.32x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-15 | $168.82 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.35x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-22 | $179.24 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.32x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-29 | $187.07 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.30x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-05 | $178.25 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.32x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-12 | $170.28 | Accenture plc Q2 FY26 results | 2.15 | +1.55 | -0.34x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-18 | $127.98 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.42x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-26 | $128.98 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.42x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-02 | $137.35 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.40x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-10 | $135.23 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.41x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-17 | $143.57 | Accenture plc Q3 FY26 results | 1.75 | +1.04 | -0.39x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-24 | $146.99 | Accenture plc Q3 FY26 results | 1.75 | +1.04 | -0.38x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-31 | $165.92 | Accenture plc Q3 FY26 results | 1.75 | +1.04 | -0.34x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $175.72 | Accenture plc Q3 FY26 results | 1.75 | +1.04 | -0.32x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-08-14 | $176.89 | Accenture plc Q3 FY26 results | 1.75 | +1.04 | -0.32x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-08-21 | $185.28 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.29x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-08-28 | $189.61 | Accenture plc Q3 FY26 results | 1.75 | +1.04 | -0.28x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-04 | $186.72 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.28x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-11 | $183.90 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.29x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-18 | $181.29 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.29x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $176.11 | Accenture plc Q3 FY26 results | 1.75 | +1.15 | -0.31x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $198.90 | Accenture plc Q4/FY26 results | 2.50 | +1.81 | -0.27x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $209.06 | Accenture plc Q4/FY26 results | 2.50 | +1.81 | -0.24x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $229.68 | Accenture plc Q4/FY26 results | 2.50 | +1.91 | -0.16x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-22 | $258.74 | Accenture plc Q4/FY26 results | 2.50 | +1.45 | -0.06x | BUY | AI-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | - | - |

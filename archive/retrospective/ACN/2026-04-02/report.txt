@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  ACN  ·  Accenture plc  ·  $201.33  ·  RETROSPECTIVE as of 2026-04-02
+  Signal: ◉ BUY   Ratio B: -0.27x   Adj gap: +1.44  [UNDERVALUED]
+  Point-in-time: 26 sources, latest published 2026-04-02; latest print Q2 FY26 (Mar 19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Industry group               FY2026E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Products                  $    22.5  $  22.5  $  26.2      +0.0      +3.7
+    +3% LC in Q2
+  Health & Public Service   $    15.0  $  15.0  $  17.5      +0.0      +2.5
+    -1% LC in Q2
+  Financial Services        $    14.0  $  14.0  $  16.4      +0.0      +2.4
+    +7% LC in Q2
+  Comms, Media & Tech       $    12.4  $  12.4  $  14.5      +0.0      +2.1
+    +10% LC in Q2
+  Resources                 $     9.9  $   9.9  $  11.5      +0.0      +1.6
+    +2% LC in Q2
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    73.8  $  73.8  $  86.1      +0.0     +12.3
+  FY2026E = FY25 $69.67B × (1 + 4.0% LC guide, +2.0% FX); split pro rata to H1 actuals by industry group
+  Q2 FY26 (Mar 19): revenue $18.04B +4% LC; consulting +3% LC, managed services +5% LC; bookings $22.11B +1% LC;
+  op margin 13.8% (+30bp); FY26 guide +3-5% LC (bottom end raised from 2%; about 4-6% excluding an estimated 1 point from the US federal business), EPS ex-optimization costs $13.65-13.90 (bottom end raised from $13.52; $13.25-13.50 GAAP including $0.40 of Q1 business optimization costs); Q3 guide $18.35-19.00B, +1-5% LC
+
+  FY2026E EPS check:  $73.8B × 15.8% × (1−24.5%) ÷ 0.623B  =  $14.14  (guide midpoint $13.78)
+  FY2028E BEAR check: $73.8B × 15.8% ÷ 0.614B  =  $14.34  (scenario $13.78)
+  FY2028E BULL check: $86.1B × 16.2% ÷ 0.614B  =  $17.16  (scenario $16.78)
+  Every 1pp of operating margin ≈ $0.89 EPS ≈ $22/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR    BASE≥    BULL≥   XBULL≥       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  New bookings growth (LC)            -5.0%     0.0%     8.0%    15.0%     +1.0%  ◦ BASE  ██░░
+  Consulting revenue growth (LC)      -6.0%     2.0%     7.0%    12.0%     +3.0%  ◦ BASE  ██░░
+  Managed services growth (LC)        +3.0%     5.0%    10.0%    15.0%     +5.0%  ◦ BASE  ██░░
+  Total revenue growth (LC)           +0.0%     3.0%     7.0%    11.0%     +4.0%  ◦ BASE  ██░░
+  Operating margin change           -40.0bp    0.0bp   20.0bp   50.0bp   +20.0bp  ▲ BULL  ███░
+  GenAI: net effect on services      +1.0/4    2.0/4    3.0/4    4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   1.11 / 4.00  (back-solved from $201 + 15% hurdle)
+  SCA adjustment:    +0.20  ·  EPP-distance adj +0.20  →  Adj composite 2.55  →  Gap +1.44  [UNDERVALUED]
+
+  Structural factors:
+    +  Share-gainer at scale: FY25 revenue +7% LC, $80.62B bookings; Q2 revenue +4% LC  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 14.6x FY26E vs a 24.6x 10-yr median (1st percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q3 guide +1-5% LC vs a 5.7% 10-yr median  (-0.27 × 20%  =  -0.054)
+    +  Cash $9.4B, FCF guide $10.8-11.5B, $4.4B buyback authority  (+0.30 × 15%  =  +0.045)
+    +  GenAI as the next services cycle: advanced AI new bookings of $2.2 billion in the quarter (Q1 FY26)  (+0.20 × 10%  =  +0.020)
+    -  AI substitution of services (10-K FY25): some services and tasks 'have been and will continue to be replaced by automation, including AI-enabled solutions'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  New bookings growth (LC)             +1.0%     -5.0%   -6.0%  Clients defer transformation programs…
+  Consulting revenue growth (LC)       +3.0%     -6.0%   -9.0%  Discretionary consulting contracts
+  Managed services growth (LC)         +5.0%     +3.0%   -2.0%  Outsourcing renewals repriced lower b…
+  Total revenue growth (LC)            +4.0%     +0.0%   -4.0%  Q3 lands at the bottom of its guide a…
+  Operating margin change            +20.0bp   -40.0bp  -60.0bp  Pricing concessions + bench costs rev…
+  GenAI: net effect on services       +2.0/4    +1.0/4  -1.0/4  AI substitution cuts demand faster th…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$310  (model)  /  $274 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: consulting went from +3% (Q1 FY26) to +3% LC (Q2);
+  the bear case needs that slowdown to reach managed services (+5% LC)
+  through repriced renewals. A JOINT event: a demand recession alone hits consulting, AI substitution
+  (10-K FY25) alone hits run/maintain work — the bear needs both.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $13.78  (FY2026E EPS ex-optimization costs, guide midpoint)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2016 18.6x, 2017 19.2x, 2018 18.2x, 2019 18.4x, 2020 19.3x, 2021 27.5x, 2022 21.4x, 2023 21.1x, 2024 23.6x, 2025 16.9x, 2026 13.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $262/share
+  Current $201 vs Updated EPP $262:  -23%  ✓ BELOW panic floor — deep-value zone
+  Bear $274 vs Updated EPP $262:  +5%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  New bookings growth (LC)                     0.0       -1.0   BASE floor (vs +1 now)
+  Consulting revenue growth (LC)               2.0       -1.0   BASE floor (vs +3 now)
+  Managed services growth (LC)                 5.0       +0.0   BASE floor (vs +5 now)
+  Total revenue growth (LC)                    3.0       -1.0   BASE floor (vs +4 now)
+  Operating margin change                      0.0      -20.0   BASE floor (vs +20 now)
+  GenAI: net effect on services                2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $13.78 × (1+3.0%)² = $14.61
+  At 24x P/E (conservative):  $351/share
+  + Cumul. dividends (2yr):  +$13.43/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $351  (▲149 from $201)
+  Conservative total return:  +81% over 2yr  = +40%/yr
+
+  At 14.6x the multiple is already near its 24x median, so the conservative
+  case is a growth question: breakeven at 24x needs FY2028E EPS of $7.83,
+  i.e. -24.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $187.00  –  $325.71  (at 10th pct of range)
+  Annual dividend:      $6.52/share  (yield 3.2%)
+  Realized vol (1yr):   34% annualized
+  Beta vs broad market: 0.84
+  1-sigma range (1yr):  $134  –  $269  ($201 ± 34%)
+  2-sigma range (1yr):  $66  –  $336
+  ────────────────────────────────────────────────────────────
+  Bear $274 requires:  ~-1.1σ price move  (within normal vol range)
+  A consulting compounder with a 0.8 beta: the stock is +5% off its February
+  low while consulting growth went from +3% (Q1 FY26) to +3% LC (Q2).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       13.78  19.9x  $    274    15.5%     72.2%   -56.7pp  Flat EPS (worst year FY15-FY25, capped at 0%); P/E to its 10th pct
+  BASE       15.18  24.6x  $    373    54.1%     20.7%   +33.4pp  EPS +5.0%/yr (latest guide + margin + buyback); P/E at its 10-yr median
+  BULL       16.78  27.9x  $    468    25.6%      5.9%   +19.6pp  EPS +10.4%/yr (FY15-FY25 CAGR); P/E holds its 75th pct
+  XBULL      19.78  31.1x  $    615     4.8%      1.1%    +3.7pp  EPS +19.8%/yr (best 2-yr run FY15-FY25); P/E at its 90th pct
+
+  Proxy EV (2yr): $394  /  Market EV: $310  /  Current: $201
+  Conservative EV (2yr, ④): $351 + $13.43 divs = $364 total value
+  Downside (→ Bear $274): -36.1%   Upside (→ Bull $468): 132.5%   Ratio B -0.27x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $201 the market needs $266 in two years —
+  at or below the BASE case. That is a market composite of 1.11 against a model
+  read of 2.55: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.27x     -23%    +1.44  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.30x     -23%    +1.33  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)    -0.29x     -23%    +1.33  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.29x     -23%    +1.45  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.26x     -23%    +1.55  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.27x     -23%    +1.74  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.27x     -34%    +1.44  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.27x     -23%    +1.44  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY26 print (late June) — the next read on consulting (+3% LC now) and the guide
+  (2) Consulting book-to-bill — 1.28x in Q2
+  (3) GenAI bookings — advanced AI new bookings of $2.2 billion in the quarter (Q1 FY26); does AI work outgrow what it replaces?
+  (4) Managed-services growth — where AI substitution would show first (re-file below 3% LC)
+  (5) Buyback pace at 15x — management's own read of the multiple
+  ◉ BUY  |  EPP floor $262  |  ADD below ~$317  |  TRIM above $468
+════════════════════════════════════════════════════════════════════════
+

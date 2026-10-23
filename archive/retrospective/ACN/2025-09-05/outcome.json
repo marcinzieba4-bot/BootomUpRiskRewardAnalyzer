@@ -1,0 +1,51 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "ACN",
+ "as_of": "2025-09-05",
+ "computed": "2026-10-23",
+ "data_source": "Yahoo Finance daily closes + dividends (ACN, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-03-05",
+   "price": 214.0,
+   "dividends": 0,
+   "total_return_pct": -16.1,
+   "benchmark_total_return_pct": 5.9,
+   "excess_pct": -21.9,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2026-09-04",
+   "price": 186.72,
+   "dividends": 3.26,
+   "total_return_pct": -25.5,
+   "benchmark_total_return_pct": 20.2,
+   "excess_pct": -45.6,
+   "hurdle_pct": 15.0
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-01-14",
+   "price": 288.54
+  },
+  "low": {
+   "date": "2026-06-30",
+   "price": 124.44
+  },
+  "max_drawdown_pct": -56.9,
+  "return_to_avg_price_m12_m24_pct": -21.6
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DISRUPTION_EXPOSED",
+   "risk": 3
+  },
+  "today": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Accenture: GenAI deflates IT-services pricing and billable seats - falling job listings and the Accenture Edge signal point to softening large-enterprise demand - while Accenture is also the delivery partner for the same buildout ($1B/5yr Anthropic partnership)",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

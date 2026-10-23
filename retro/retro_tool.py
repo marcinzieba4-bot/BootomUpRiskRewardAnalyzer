@@ -283,6 +283,9 @@ def cmd_outcome(folder):
                            "excess_pct": round((tr - btr) * 100, 1),
                            "hurdle_pct": round(((1 + REQUIRED_RETURN) ** (months / 12) - 1) * 100, 1)}
     window = sorted(d for d in closes if as_of < d <= add_months(as_of, 24))
+    if not window:       # the newest date: no close after AS_OF yet, so nothing to score
+        print(f"{a['ticker']} @ {as_of}: no close after AS_OF yet; no outcome written")
+        return
     path = [closes[d] for d in window]
     peak, mdd = a["price"], 0.0
     for p in path:

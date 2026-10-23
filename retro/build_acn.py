@@ -86,7 +86,9 @@ def build(as_of, facts, acn, spx, engine):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: 2000 + int(p["quarter"][-2:]) + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    events = [e for e in facts["events"] if h["published"] <= e["published"] <= as_of]
+    # a 10-K's wording (an event with a "doc") is replaced by the next 10-K; market and company-action evidence
+    # (an event without one) stays in scope once public
+    events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
     if not prints:
         sys.exit(f"{as_of}: no quarterly print guiding FY{first_fy} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -156,7 +158,48 @@ def build(as_of, facts, acn, spx, engine):
     # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
     themes = {e["theme"] for e in events}
-    if "GENAI" in themes:
+    kind, pit_risk, why, assigned = "DURABLE", 2, h["why"], None
+    k10 = [e for e in events if e["kind"] == "genai_company_acknowledged"]     # the latest 10-K's own words on AI substitution
+    if k10:
+        # from the first 10-K after GenAI went live (ACN FY23), the company's own words carry the theme; the re-file test is
+        # the one the earlier GenAI text states: the multiple at a discount to its own history (the 30th-percentile line of
+        # val_word) or managed-services growth below 3% LC (the managed-services signal's lowest band)
+        e10 = k10[-1]
+        g = [e for e in events if e["theme"] == "GENAI"]
+        ai_inv = any(e["kind"] == "company_ai_investment" for e in g)
+        note = next(((p["genai_note"], p["quarter"]) for p in reversed(prints) if "genai_note" in p), None)
+        discounted, ms_weak = pe_now_pctl <= 30, latest["managed_lc"] < 3
+        stage = "refiled" if discounted or ms_weak else "company"
+        pe_txt = f"{close / eps_now:.1f}x {fy_e_s} — {val_word}"
+        own = f"Accenture's own {e10['doc']} says '{e10['risk_quote']}'"
+        books = f" It reported {note[0]} ({note[1]})." if note else ""
+        rule = ("Re-file under DISRUPTION_EXPOSED (GENAI) when the multiple falls to a discount to its own history (30th "
+                "percentile or lower) or managed-services growth drops below 3% LC.")
+        if stage == "refiled":
+            why_bits = ([f"the stock trades at {pe_txt} ({pe_now_pctl}th percentile of its {window_label} range)"] if discounted else []) + \
+                       ([f"managed-services growth is {latest['managed_lc']:+d}% LC in {latest['quarter']}"] if ms_weak else [])
+            kind, pit_risk, assigned = "DISRUPTION_EXPOSED", 3, "GENAI"
+            why = (f"{h['why']}; re-filed under GenAI: {' and '.join(why_bits)}, while its own {e10['doc_short']} says "
+                   f"{e10['risk_short']}. Back to DURABLE when the multiple is above the 30th percentile and managed services "
+                   "grow 3% LC or more")
+            watch = []
+            theme_summary = f"GenAI is a live disruption theme the stock is priced for: {' and '.join(why_bits)}"
+        else:
+            watch = [{"theme": "GENAI", "status": "live, company-acknowledged; not discounted",
+                      "reason": f"Live since 2022-11-30. {own}{books} The stock trades at {pe_txt}. {rule}"}]
+            theme_summary = f"GenAI is live and company-acknowledged ({e10['doc_short']}), but the multiple does not discount it"
+        opp = (f"GenAI as the next services cycle: {note[0]} ({note[1]})" if note else
+               "GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k" if ai_inv else
+               "GenAI as a services opportunity: no bookings figure in the prints in scope")
+        factors = [(opp, 0.2, 0.10), (f"AI substitution of services ({e10['doc_short']}): {e10['risk_short']}", -0.2, 0.10)]
+        sig_name = "GenAI: net effect on services"
+        trigger = "AI substitution cuts demand faster than GenAI work replaces it"
+        key_tail = ("A JOINT event: a demand recession alone hits consulting, AI substitution\n"
+                    f"  ({e10['doc_short']}) alone hits run/maintain work — the bear needs both.")
+        cat3 = (f"(3) GenAI bookings — {note[0]} ({note[1]}); does AI work outgrow what it replaces?" if note else
+                "(3) GenAI bookings — no figure in the prints in scope; does AI work outgrow what it replaces?")
+        cat4 = "(4) Managed-services growth — where AI substitution would show first (re-file below 3% LC)"
+    elif "GENAI" in themes:
         g = [e for e in events if e["theme"] == "GENAI"]
         stage = ("losers" if any(e["kind"] == "genai_loser_repricing" for e in g) else
                  "sellside" if any(e["kind"] == "genai_sellside" for e in g) else "chatgpt_only")
@@ -283,9 +326,9 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 
 # Durability as judged on AS_OF from the dated facts and events above.
 PIT_PROFILE = {{
-    "kind": "DURABLE",
-    "risk": 2,
-    "why": {R(h["why"])},
+    "kind": "{kind}",{chr(10) + '    "theme": "' + assigned + '",' if assigned else ""}
+    "risk": {pit_risk},
+    "why": {R(why)},
     "theme_watch": {R(watch)},
     "evidence": {R(list(dict.fromkeys(e["id"] for e in events)))},
 }}
