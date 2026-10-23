@@ -44,8 +44,8 @@
   "epp_gap_pct": 48.1,
   "epp_adj": -0.1,
   "proxy_composite": 2.1,
-  "sca": -0.07,
-  "adj_composite": 1.93,
+  "sca": -0.065,
+  "adj_composite": 1.935,
   "market_composite": 3.37,
   "adj_gap": -1.44,
   "valuation": "OVERVALUED",
@@ -102,7 +102,7 @@
    "variant": "Multiples one band cheaper (p5/p25/med/p75)",
    "ratio_b": 7.6,
    "epp_gap_pct": 48.1,
-   "adj_gap": -1.82,
+   "adj_gap": -1.81,
    "verdict": "OVERVALUED",
    "legacy_tier": "AVOID",
    "cons_return_2yr": -6.0,
@@ -122,7 +122,7 @@
    "variant": "Scenario EPS -1.5pp/yr",
    "ratio_b": 2.03,
    "epp_gap_pct": 48.1,
-   "adj_gap": -1.57,
+   "adj_gap": -1.56,
    "verdict": "OVERVALUED",
    "legacy_tier": "AVOID",
    "cons_return_2yr": -6.0,
@@ -142,7 +142,7 @@
    "variant": "EPP at 21x (2022-23 trough, no v2 penalty)",
    "ratio_b": 1.59,
    "epp_gap_pct": 26.9,
-   "adj_gap": -1.34,
+   "adj_gap": -1.33,
    "verdict": "OVERVALUED",
    "legacy_tier": "WATCHLIST",
    "cons_return_2yr": -6.0,
@@ -162,7 +162,7 @@
  "robustness_price_states": [
   "RICH"
  ],
- "summary": "ACN (retrospective, 2023-06-30) ◐ WATCHLIST — Ratio B 1.59x (33.2% downside to Bear $206 / +20.9% upside to Bull $373) | Adj composite 1.93 vs market 3.37: gap -1.44 [OVERVALUED] | +48% above the EPP floor $208 (18x FY23E $11.57) | Conservative 2-yr case: -6.0% total (-3.0%/yr) | At 26.7x FY23E the price needs the bull case while consulting is -1% LC and the Q4 guide is +2-6% LC; GenAI is a live theme but priced as a tailwind, not a threat.",
+ "summary": "ACN (retrospective, 2023-06-30) ◐ WATCHLIST — Ratio B 1.59x (33.2% downside to Bear $206 / +20.9% upside to Bull $373) | Adj composite 1.94 vs market 3.37: gap -1.44 [OVERVALUED] | +48% above the EPP floor $208 (18x FY23E $11.57) | Conservative 2-yr case: -6.0% total (-3.0%/yr) | At 26.7x FY23E the price needs the bull case while consulting is -1% LC and the Q4 guide is +2-6% LC; GenAI is a live theme but priced as a tailwind, not a threat.",
  "sources": [
   {
    "id": "S1",

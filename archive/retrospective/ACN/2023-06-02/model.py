@@ -136,9 +136,11 @@ SIGNALS = [
 ]
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 
+PE_NOW_PCTL     = 81    # share of the window's daily P/Es at or below today's (S2, S12)
+VALUATION_SCORE = round(max(-0.5, min(0.5, -(PE_NOW_PCTL - 50) / 60)), 2)   # >=80th pct -0.5, median 0, <=20th +0.5
 STRUCTURAL_FACTORS = [
     ("Share-gainer at scale: FY22 revenue +26% LC, record $71.7B bookings; record $22.1B in Q2 (+17% LC)", 0.4, 0.20),
-    ("Premium multiple: 27.0x FY23E vs a 22.4x 10-yr median (81st percentile of its own range)",     -0.5, 0.25),
+    ("Multiple: 27.0x FY23E vs a 22.4x 10-yr median (81st percentile of its own range)", VALUATION_SCORE, 0.25),
     ("Deceleration already guided: Q3 +3-7% LC after +9% in Q2; consulting +4% LC (from +10%); FY range cut to 8-10%", -0.3, 0.20),
     ("Cash $6.2B, FCF guide $8.0-8.5B, >=$7.1B returned; $1.5B optimization defends margin",            0.3, 0.15),
     ("GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first",  0.2, 0.10),

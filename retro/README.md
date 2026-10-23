@@ -40,6 +40,9 @@ match what followed) are handled by method, not trust:
   on current-fiscal-year EPS over the 10 years before `AS_OF`: BEAR = p10,
   BASE = median, BULL = p75, XBULL = p90. The EPP P/E is the median of the
   panic troughs in the same window.
+- **The valuation structural factor is mechanical too.** It is scored from where
+  today's P/E sits in that 10-year distribution: −0.5 at the 80th percentile or
+  above, 0 at the median, +0.5 at the 20th or below (`VALUATION_SCORE`).
 - **Scenario EPS comes from guidance and history.** It starts from company guidance
   and the reported growth history, cross-checked by the segment bridge.
 - **The ⑦ robustness block** re-runs the verdict with one input moved at a time.

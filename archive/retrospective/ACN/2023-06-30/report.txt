@@ -41,11 +41,11 @@
 
   Proxy composite:    2.10 / 4.00
   Market composite:   3.37 / 4.00  (back-solved from $309 + 15% hurdle)
-  SCA adjustment:    -0.07  ·  EPP-distance adj -0.10  →  Adj composite 1.93  →  Gap -1.44  [OVERVALUED]
+  SCA adjustment:    -0.07  ·  EPP-distance adj -0.10  →  Adj composite 1.94  →  Gap -1.44  [OVERVALUED]
 
   Structural factors:
     +  Share-gainer at scale: FY22 revenue +26% LC, record $71.7B bookings, 26 clients >$100M in Q3  (+0.4 × 20%  =  +0.08)
-    -  Premium multiple: 26.7x FY23E vs a 22.6x 10-yr median (79th percentile of its own range)  (-0.5 × 25%  =  -0.12)
+    -  Multiple: 26.7x FY23E vs a 22.6x 10-yr median (79th percentile of its own range)  (-0.5 × 25%  =  -0.12)
     -  Discretionary consulting stall: consulting -1% LC, CMT -8% LC, Q4 guide only +2-6% LC  (-0.4 × 20%  =  -0.08)
     +  Net cash $8.5B, FCF guide $8.1-8.6B, >=$7.1B returned; $1.5B optimization defends margin  (+0.3 × 15%  =  +0.04)
     +  GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k  (+0.3 × 10%  =  +0.03)
@@ -128,18 +128,18 @@
 
   To earn the 15%/yr hurdle from $309 the market needs $408 in two years —
   above the BULL case. That is a market composite of 3.37 against a model
-  read of 1.93: priced for the GenAI-supercycle outcome while consulting shrinks.
+  read of 1.94: priced for the GenAI-supercycle outcome while consulting shrinks.
 
   ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
   ──────────────────────────────────────────────────────────────────────
   Variant                                       Ratio B  EPP gap  Adj gap  Verdict
   Main case                                       1.59x     +48%    -1.44  OVERVALUED / WATCHLIST
   Multiples one band richer (p25/p75/p90/max)     0.68x     +48%    -0.65  OVERVALUED / BUY
-  Multiples one band cheaper (p5/p25/med/p75)     7.60x     +48%    -1.82  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)     7.60x     +48%    -1.81  OVERVALUED / AVOID
   Scenario EPS +1.5pp/yr                          1.25x     +48%    -1.31  OVERVALUED / WATCHLIST
-  Scenario EPS -1.5pp/yr                          2.03x     +48%    -1.57  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.03x     +48%    -1.56  OVERVALUED / AVOID
   Structural read +0.30 (bullish SCA)             1.59x     +48%    -1.14  OVERVALUED / WATCHLIST
-  EPP at 21x (2022-23 trough, no v2 penalty)      1.59x     +27%    -1.34  OVERVALUED / WATCHLIST
+  EPP at 21x (2022-23 trough, no v2 penalty)      1.59x     +27%    -1.33  OVERVALUED / WATCHLIST
   Hurdle 10%/yr instead of 15%                    1.59x     +48%    -1.04  OVERVALUED / WATCHLIST
 
 ════════════════════════════════════════════════════════════════════════

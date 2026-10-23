@@ -1,7 +1,7 @@
 
 ════════════════════════════════════════════════════════════════════════
   ACN  ·  Accenture plc  ·  $298.43  ·  RETROSPECTIVE as of 2023-06-23
-  Signal: ◐ WATCHLIST   Ratio B: 1.24x   Adj gap: -1.30  [OVERVALUED]
+  Signal: ◐ WATCHLIST   Ratio B: 1.24x   Adj gap: -1.27  [OVERVALUED]
   Point-in-time: 12 sources, latest published 2023-06-23
 ════════════════════════════════════════════════════════════════════════
 
@@ -41,11 +41,11 @@
 
   Proxy composite:    2.10 / 4.00
   Market composite:   3.23 / 4.00  (back-solved from $298 + 15% hurdle)
-  SCA adjustment:    -0.07  ·  EPP-distance adj -0.10  →  Adj composite 1.93  →  Gap -1.30  [OVERVALUED]
+  SCA adjustment:    -0.05  ·  EPP-distance adj -0.10  →  Adj composite 1.96  →  Gap -1.27  [OVERVALUED]
 
   Structural factors:
     +  Share-gainer at scale: FY22 revenue +26% LC, record $71.7B bookings, 26 clients >$100M in Q3  (+0.4 × 20%  =  +0.08)
-    -  Premium multiple: 25.8x FY23E vs a 22.5x 10-yr median (74th percentile of its own range)  (-0.5 × 25%  =  -0.12)
+    -  Multiple: 25.8x FY23E vs a 22.5x 10-yr median (74th percentile of its own range)  (-0.4 × 25%  =  -0.10)
     -  Discretionary consulting stall: consulting -1% LC, CMT -8% LC, Q4 guide only +2-6% LC  (-0.4 × 20%  =  -0.08)
     +  Net cash $8.5B, FCF guide $8.1-8.6B, >=$7.1B returned; $1.5B optimization defends margin  (+0.3 × 15%  =  +0.04)
     +  GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k  (+0.3 × 10%  =  +0.03)
@@ -128,19 +128,19 @@
 
   To earn the 15%/yr hurdle from $298 the market needs $395 in two years —
   above the BULL case. That is a market composite of 3.23 against a model
-  read of 1.93: priced for the GenAI-supercycle outcome while consulting shrinks.
+  read of 1.96: priced for the GenAI-supercycle outcome while consulting shrinks.
 
   ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
   ──────────────────────────────────────────────────────────────────────
   Variant                                       Ratio B  EPP gap  Adj gap  Verdict
-  Main case                                       1.24x     +43%    -1.30  OVERVALUED / WATCHLIST
-  Multiples one band richer (p25/p75/p90/max)     0.55x     +43%    -0.53  OVERVALUED / BUY
-  Multiples one band cheaper (p5/p25/med/p75)     4.22x     +43%    -1.82  OVERVALUED / AVOID
-  Scenario EPS +1.5pp/yr                          0.99x     +43%    -1.17  OVERVALUED / ACCUMULATE
-  Scenario EPS -1.5pp/yr                          1.55x     +43%    -1.42  OVERVALUED / WATCHLIST
-  Structural read +0.30 (bullish SCA)             1.24x     +43%    -1.00  OVERVALUED / WATCHLIST
-  EPP at 21x (2022-23 trough, no v2 penalty)      1.24x     +23%    -1.20  OVERVALUED / WATCHLIST
-  Hurdle 10%/yr instead of 15%                    1.24x     +43%    -0.82  OVERVALUED / WATCHLIST
+  Main case                                       1.24x     +43%    -1.27  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.55x     +43%    -0.50  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     4.22x     +43%    -1.79  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.99x     +43%    -1.15  OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.55x     +43%    -1.40  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.24x     +43%    -0.98  OVERVALUED / WATCHLIST
+  EPP at 21x (2022-23 trough, no v2 penalty)      1.24x     +23%    -1.17  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.24x     +43%    -0.79  OVERVALUED / WATCHLIST
 
 ════════════════════════════════════════════════════════════════════════
   Key catalysts to watch (from the as-of date):

@@ -1,0 +1,203 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2023-03-17",
+ "price_date": "2023-03-17",
+ "price": 250.0,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; scenario P/E = percentiles of ACN's own 10-yr P/E on current-FY EPS; EPP P/E = median panic trough",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [
+   {
+    "theme": "GENAI",
+    "status": "live, priced as a tailwind",
+    "reason": "Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 22.0x FY23E — near its own median, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting deflation or GenAI shows up as shrinking billable hours."
+   }
+  ],
+  "evidence": [
+   "S9"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.41x; +22% to EPP floor; model-vs-market gap +0.52; conservative 2yr +14%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.41,
+  "ratio_b_fmt": "0.41x",
+  "epp": 204.48,
+  "epp_gap_pct": 22.3,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.95,
+  "sca": 0.06,
+  "adj_composite": 3.01,
+  "market_composite": 2.49,
+  "adj_gap": 0.52,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 13.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 11.59,
+    "pe": 17.5,
+    "price": 203,
+    "desc": "Consulting recession spreads to managed services; pricing concessions; P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 12.86,
+    "pe": 21.9,
+    "price": 282,
+    "desc": "Mid-single-digit LC growth, 10-20bp/yr margin, buyback; P/E reverts to its 10-yr median"
+   },
+   "BULL": {
+    "eps": 14.05,
+    "pe": 26.0,
+    "price": 365,
+    "desc": "GenAI becomes a cloud-sized services cycle; growth back to 8-10% LC; P/E holds 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.1,
+    "pe": 30.2,
+    "price": 456,
+    "desc": "Re-run of the FY21-22 boom: double-digit growth and a 30x multiple"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.41,
+   "epp_gap_pct": 22.3,
+   "adj_gap": 0.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.17,
+   "epp_gap_pct": 22.3,
+   "adj_gap": 1.11,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.93,
+   "epp_gap_pct": 22.3,
+   "adj_gap": -0.22,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 13.9,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 22.3,
+   "adj_gap": 0.62,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.51,
+   "epp_gap_pct": 22.3,
+   "adj_gap": 0.4,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.41,
+   "epp_gap_pct": 22.3,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP at 21x (near the 2022-23 trough, no v2 penalty)",
+   "ratio_b": 0.41,
+   "epp_gap_pct": 4.8,
+   "adj_gap": 0.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.41,
+   "epp_gap_pct": 22.3,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.9,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "ACN (retrospective, 2023-03-17) ◉ BUY — Ratio B 0.41x (18.8% downside to Bear $203 / +46.0% upside to Bull $365) | Adj composite 3.01 vs market 2.49: gap +0.52 [UNDERVALUED] | +22% above the EPP floor $204 (18x FY23E $11.36) | Conservative 2-yr case: +13.9% total (+7.0%/yr) | At 22.0x FY23E the 15% hurdle price $331 sits between the BASE and BULL cases while consulting has slowed to +10% LC (from +22%) and Q2 is guided to +6-10% LC; GenAI is a live theme but priced as a tailwind, not a threat.",
+ "sources": [
+  {
+   "id": "S1",
+   "published": "2022-09-22",
+   "title": "Accenture Q4/FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
+   "supports": "FY22 revenue by industry group, record $71.7B bookings, Q4 consulting +22% LC, FY21 adjusted EPS $8.80, dividend $1.12 (+15%)"
+  },
+  {
+   "id": "S2",
+   "published": "2022-10-12",
+   "title": "SEC XBRL company facts, 10-K filings 2010-10-26 .. 2022-10-12",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001467373.json",
+   "supports": "GAAP diluted EPS FY2012-FY2022 for the P/E history; only facts filed on or before 2022-10-12 used"
+  },
+  {
+   "id": "S3",
+   "published": "2022-12-16",
+   "title": "Accenture Q1 FY23 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000369/fy23q1earnings8-kexhibit.htm",
+   "supports": "Q1 revenue $15.7B (+15% LC), consulting +10% LC, managed services +20% LC, bookings $16.2B (+6% LC), industry groups, cash $5.9B, FY23 and Q2 guidance"
+  },
+  {
+   "id": "S9",
+   "published": "2023-02-10",
+   "title": "Reuters via Business Standard: ChatGPT, other AI models to disrupt Indian IT firms (J.P.Morgan)",
+   "url": "https://www.business-standard.com/article/companies/chatgpt-other-ai-models-to-disrupt-indian-it-firms-jp-morgan-analyst-123021000976_1.html",
+   "supports": "GenAI a near-term deflation driver for legacy IT services; Accenture/Deloitte gain share"
+  },
+  {
+   "id": "S12",
+   "published": "2023-03-17",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $250.00, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}
