@@ -194,14 +194,17 @@ def build(as_of, facts, acn, spx, engine):
     elif "OFFSHORE" in themes:
         stage = "offshore"
         e = [e for e in events if e["theme"] == "OFFSHORE"][-1]      # the latest 10-K's wording
+        quote = e.get("competitors_quote", "particularly Indian providers ... often at highly competitive prices")
+        rivals = e.get("competitors_short", "Offshore Indian providers 'often at highly competitive prices'")
         watch = [{"theme": "OFFSHORE", "status": "live, company-acknowledged; no market read",
-                  "reason": (f"Live: Accenture's own {e['doc']} names off-shore providers, 'particularly Indian providers ... often at "
-                             f"highly competitive prices', among its competitors and {e['warning']}, while its own Global Delivery "
-                             f"Network grew to {e['gdn_people']} people. The stock trades at "
+                  "reason": (f"Live: Accenture's own {e['doc']} names off-shore providers, "
+                             f"'{quote}', "
+                             f"among its competitors and {e['warning']}, while its own Global Delivery "
+                             f"Network {e.get('gdn_verb', 'grew to')} {e['gdn_people']} people. The stock trades at "
                              f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated "
                              "evidence shows the market pricing offshore substitution for ACN specifically.")}]
         factors = [(f"Global Delivery Network: {e['gdn_people']} people in lower-cost locations ({e['gdn_added']}) — Accenture runs the offshore model itself", 0.2, 0.10),
-                   (f"Offshore Indian providers 'often at highly competitive prices'; {e['warning_short']}", -0.2, 0.10)]
+                   (f"{rivals}; {e['warning_short']}", -0.2, 0.10)]
         sig_name = "Offshore: net effect on services"
         trigger = "Offshore pricing pressure accelerates faster than global-delivery savings"
         key_tail = ("A JOINT event: a demand recession alone hits consulting, accelerating offshore\n"

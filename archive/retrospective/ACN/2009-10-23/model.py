@@ -81,7 +81,7 @@ PIT_PROFILE = {
     "kind": "DURABLE",
     "risk": 2,
     "why": 'Accenture: global consulting and outsourcing leader across five operating groups with $23.90B bookings in FY09; discretionary consulting demand is cyclical, the franchise is not',
-    "theme_watch": [{'theme': 'OFFSHORE', 'status': 'live, company-acknowledged; no market read', 'reason': "Live: Accenture's own FY2009 10-K names off-shore providers, 'particularly Indian providers ... often at highly competitive prices', among its competitors and says it is 'experiencing pricing pressures from some clients' and has 'shifted to lower-cost resources at reduced price levels', while its own Global Delivery Network grew to 81,000+ people. The stock trades at 14.1x FY10E — a discount to its own history. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."}],
+    "theme_watch": [{'theme': 'OFFSHORE', 'status': 'live, company-acknowledged; no market read', 'reason': "Live: Accenture's own FY2009 10-K names off-shore providers, 'particularly Indian providers ... often at highly competitive prices', among its competitors and says it is 'experiencing pricing pressures from some clients' and has 'shifted to lower-cost resources at reduced price levels', while its own Global Delivery Network stood at 81,000+ people. The stock trades at 14.1x FY10E — a discount to its own history. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."}],
     "evidence": ['S35'],
 }
 

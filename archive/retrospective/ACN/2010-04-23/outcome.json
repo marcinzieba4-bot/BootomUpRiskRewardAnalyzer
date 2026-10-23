@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "ACN",
+ "as_of": "2010-04-23",
+ "computed": "2026-10-23",
+ "data_source": "Yahoo Finance daily closes + dividends (ACN, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2010-10-22",
+   "price": 45.64,
+   "dividends": 0.45,
+   "total_return_pct": 3.2,
+   "benchmark_total_return_pct": -1.9,
+   "excess_pct": 5.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2011-04-21",
+   "price": 56.81,
+   "dividends": 0.9,
+   "total_return_pct": 29.2,
+   "benchmark_total_return_pct": 11.7,
+   "excess_pct": 17.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2012-04-23",
+   "price": 63.03,
+   "dividends": 2.25,
+   "total_return_pct": 46.1,
+   "benchmark_total_return_pct": 16.4,
+   "excess_pct": 29.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2013-04-23",
+   "price": 76.3,
+   "dividends": 3.87,
+   "total_return_pct": 79.5,
+   "benchmark_total_return_pct": 36.2,
+   "excess_pct": 43.2,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2012-03-26",
+   "price": 65.89
+  },
+  "low": {
+   "date": "2010-06-08",
+   "price": 36.44
+  },
+  "max_drawdown_pct": -25.2,
+  "return_to_avg_price_m12_m24_pct": 28.1
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "AI_EXPOSED",
+   "risk": 3,
+   "why": "Accenture: GenAI deflates IT-services pricing and billable seats - falling job listings and the Accenture Edge signal point to softening large-enterprise demand - while Accenture is also the delivery partner for the same buildout ($1B/5yr Anthropic partnership)",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

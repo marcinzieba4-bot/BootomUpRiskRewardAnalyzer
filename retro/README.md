@@ -94,7 +94,8 @@ Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output chang
 - **Dividend:** the latest declared rate, from the latest print that states one, else the vintage.
 - **A new 10-K before the next quarter's print** (ACN: the FY08 10-K on 2008-10-20, before Q1 FY09 on 2008-12-18).
   The Q4 print stays the latest print, because it is the one guiding the new year. The 10-K replaces its full-year
-  actuals. The disruption-theme wording (quotes, delivery-network size) comes from the latest 10-K event in the fact sheet.
+  actuals. The disruption-theme wording (competitor quote, pricing warning, delivery-network size and whether it grew)
+  comes from the latest 10-K event in the fact sheet, so it changes when the 10-K's wording changes.
 
 How recurring cases are encoded (each was decided the first time it came up, then applied the same way):
 
@@ -165,6 +166,7 @@ python3 retro/build_acn.py --weekly 2008-01-01 2008-01-31        # any era with 
 python3 retro/build_acn.py --weekly 2008-05-05 2008-09-30        # start a range on a Monday when the prior week is built
 python3 retro/build_acn.py --weekly 2008-10-06 2008-12-31
 python3 retro/build_acn.py --weekly 2009-01-05 2009-12-31
+python3 retro/build_acn.py --weekly 2010-01-04 2010-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

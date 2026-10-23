@@ -109,6 +109,58 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2009-12-18 | $41.37 | Accenture plc Q1 FY10 results | 1.30 | -0.90 | 0.27x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +35.6% | +20.9pp | +32.5% | ✗ |
 | 2009-12-24 | $41.39 | Accenture plc Q1 FY10 results | 1.30 | -0.90 | 0.27x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.5% | +15.8pp | +32.6% | ✗ |
 | 2009-12-31 | $41.50 | Accenture plc Q1 FY10 results | 1.30 | -0.90 | 0.27x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +33.0% | +16.0pp | +32.4% | ✗ |
+| 2010-01-08 | $42.57 | Accenture plc Q1 FY10 results | 1.30 | -0.99 | 0.32x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.3% | +10.6pp | +29.4% | ✗ |
+| 2010-01-15 | $42.81 | Accenture plc Q1 FY10 results | 1.30 | -1.01 | 0.34x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.9% | +11.3pp | +28.8% | ✗ |
+| 2010-01-22 | $42.18 | Accenture plc Q1 FY10 results | 1.30 | -0.95 | 0.30x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.9% | +11.7pp | +30.9% | ✗ |
+| 2010-01-29 | $40.99 | Accenture plc Q1 FY10 results | 1.30 | -0.87 | 0.25x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +42.4% | +15.1pp | +34.9% | ✗ |
+| 2010-02-05 | $40.54 | Accenture plc Q1 FY10 results | 1.30 | -0.83 | 0.23x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +48.6% | +18.0pp | +36.7% | ✗ |
+| 2010-02-12 | $40.49 | Accenture plc Q1 FY10 results | 1.30 | -0.83 | 0.23x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.5% | +16.6pp | +37.1% | ✗ |
+| 2010-02-19 | $40.87 | Accenture plc Q1 FY10 results | 1.30 | -0.85 | 0.24x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.7% | +20.6pp | +36.1% | ✗ |
+| 2010-02-26 | $39.97 | Accenture plc Q1 FY10 results | 1.30 | -0.77 | 0.21x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +54.1% | +26.1pp | +39.4% | ✗ |
+| 2010-03-05 | $41.18 | Accenture plc Q1 FY10 results | 1.30 | -0.89 | 0.27x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.6% | +28.6pp | +35.7% | ✗ |
+| 2010-03-12 | $42.12 | Accenture plc Q1 FY10 results | 1.30 | -0.98 | 0.31x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.8% | +26.5pp | +33.1% | ✗ |
+| 2010-03-19 | $42.06 | Accenture plc Q1 FY10 results | 1.30 | -0.96 | 0.31x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.4% | +29.7pp | +33.9% | ✗ |
+| 2010-03-26 | $42.40 | Accenture plc Q2 FY10 results | 1.50 | -0.86 | 0.38x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.0% | +34.3pp | +33.4% | ✗ |
+| 2010-04-01 | $41.84 | Accenture plc Q2 FY10 results | 1.50 | -0.81 | 0.35x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +58.8% | +35.1pp | +35.6% | ✗ |
+| 2010-04-09 | $42.83 | Accenture plc Q2 FY10 results | 1.50 | -0.89 | 0.41x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.4% | +33.6pp | +33.0% | ✗ |
+| 2010-04-16 | $43.15 | Accenture plc Q2 FY10 results | 1.50 | -0.92 | 0.43x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.6% | +29.6pp | +32.3% | ✗ |
+| 2010-04-23 | $44.67 | Accenture plc Q2 FY10 results | 1.50 | -1.03 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.1% | +29.8pp | +28.1% | ✗ |
+| 2010-04-30 | $43.64 | Accenture plc Q2 FY10 results | 1.50 | -0.96 | 0.46x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.0% | +32.1pp | +31.5% | ✗ |
+| 2010-05-07 | $40.32 | Accenture plc Q2 FY10 results | 1.50 | -0.69 | 0.27x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +54.9% | +27.2pp | +42.7% | ✗ |
+| 2010-05-14 | $38.99 | Accenture plc Q2 FY10 results | 1.50 | -0.57 | 0.21x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +56.6% | +34.5pp | +47.7% | ✗ |
+| 2010-05-21 | $38.14 | Accenture plc Q2 FY10 results | 1.50 | -0.50 | 0.18x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +60.8% | +35.3pp | +51.1% | ✗ |
+| 2010-05-28 | $37.52 | Accenture plc Q2 FY10 results | 1.50 | -0.45 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +59.1% | +33.8pp | +53.7% | ✗ |
+| 2010-06-04 | $36.93 | Accenture plc Q2 FY10 results | 1.50 | -0.39 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +58.1% | +33.5pp | +56.1% | ✓ |
+| 2010-06-11 | $37.64 | Accenture plc Q2 FY10 results | 1.50 | -0.45 | 0.16x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +58.0% | +33.7pp | +53.3% | ✗ |
+| 2010-06-18 | $38.93 | Accenture plc Q2 FY10 results | 1.50 | -0.56 | 0.21x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +57.0% | +32.1pp | +48.3% | ✗ |
+| 2010-06-25 | $40.55 | Accenture plc Q3 FY10 results | 1.65 | -0.53 | 0.29x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +44.8% | +18.3pp | +42.5% | ✗ |
+| 2010-07-02 | $37.94 | Accenture plc Q3 FY10 results | 1.65 | -0.30 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.4% | +26.8pp | +52.2% | ✓ |
+| 2010-07-09 | $39.42 | Accenture plc Q3 FY10 results | 1.65 | -0.44 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +52.4% | +22.3pp | +46.4% | ✓ |
+| 2010-07-16 | $39.00 | Accenture plc Q3 FY10 results | 1.65 | -0.39 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +54.6% | +22.8pp | +47.8% | ✓ |
+| 2010-07-23 | $40.38 | Accenture plc Q3 FY10 results | 1.65 | -0.52 | 0.28x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +48.6% | +21.6pp | +42.6% | ✗ |
+| 2010-07-30 | $39.64 | Accenture plc Q3 FY10 results | 1.65 | -0.45 | 0.24x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +58.0% | +27.6pp | +45.2% | ✗ |
+| 2010-08-06 | $40.27 | Accenture plc Q3 FY10 results | 1.65 | -0.51 | 0.27x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +56.1% | +27.4pp | +43.1% | ✗ |
+| 2010-08-13 | $38.85 | Accenture plc Q3 FY10 results | 1.65 | -0.38 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +64.1% | +29.4pp | +48.7% | ✓ |
+| 2010-08-20 | $38.42 | Accenture plc Q3 FY10 results | 1.65 | -0.34 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +64.1% | +27.1pp | +50.8% | ✓ |
+| 2010-08-27 | $37.20 | Accenture plc Q3 FY10 results | 1.65 | -0.23 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +70.7% | +33.4pp | +56.3% | ✓ |
+| 2010-09-03 | $38.58 | Accenture plc Q3 FY10 results | 1.65 | -0.41 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +65.5% | +33.6pp | +51.1% | ✓ |
+| 2010-09-10 | $38.82 | Accenture plc Q3 FY10 results | 1.65 | -0.42 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +70.7% | +37.4pp | +50.7% | ✓ |
+| 2010-09-17 | $40.56 | Accenture plc Q3 FY10 results | 1.65 | -0.58 | 0.30x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +67.3% | +32.8pp | +44.9% | ✗ |
+| 2010-09-24 | $41.90 | Accenture plc Q3 FY10 results | 1.65 | -0.70 | 0.37x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +62.4% | +30.9pp | +40.9% | ✗ |
+| 2010-10-01 | $44.38 | Accenture plc Q4/FY10 results | 2.75 | +1.01 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.7% | +32.1pp | +33.6% | ✓ |
+| 2010-10-08 | $45.78 | Accenture plc Q4/FY10 results | 2.75 | +0.85 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.1% | +30.6pp | +30.2% | ✓ |
+| 2010-10-15 | $45.29 | Accenture plc Q4/FY10 results | 2.75 | +0.91 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.7% | +33.8pp | +32.2% | ✓ |
+| 2010-10-22 | $45.64 | Accenture plc Q4/FY10 results | 2.75 | +0.87 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.3% | +28.7pp | +31.7% | ✓ |
+| 2010-10-29 | $44.71 | Accenture plc Q4/FY10 results | 2.75 | +0.97 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.9% | +32.2pp | +34.7% | ✓ |
+| 2010-11-05 | $45.67 | Accenture plc Q4/FY10 results | 2.75 | +0.87 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.3% | +34.4pp | +32.2% | ✓ |
+| 2010-11-12 | $43.36 | Accenture plc Q4/FY10 results | 2.75 | +1.10 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.7% | +40.3pp | +39.6% | ✓ |
+| 2010-11-19 | $44.21 | Accenture plc Q4/FY10 results | 2.75 | +1.02 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.6% | +37.5pp | +37.4% | ✓ |
+| 2010-11-26 | $43.84 | Accenture plc Q4/FY10 results | 2.75 | +1.06 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.3% | +37.1pp | +39.0% | ✓ |
+| 2010-12-03 | $44.22 | Accenture plc Q4/FY10 results | 2.75 | +1.02 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.3% | +39.9pp | +38.3% | ✓ |
+| 2010-12-10 | $45.66 | Accenture plc Q4/FY10 results | 2.75 | +0.86 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.0% | +39.2pp | +34.4% | ✓ |
+| 2010-12-17 | $50.32 | Accenture plc Q1 FY11 results | 3.25 | +1.04 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +46.9% | +27.5pp | +22.5% | ✓ |
+| 2010-12-23 | $48.34 | Accenture plc Q1 FY11 results | 3.25 | +1.28 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.9% | +26.7pp | +28.2% | ✓ |
+| 2010-12-31 | $48.49 | Accenture plc Q1 FY11 results | 3.25 | +1.23 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.8% | +24.9pp | +28.2% | ✓ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |
