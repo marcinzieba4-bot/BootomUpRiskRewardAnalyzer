@@ -125,12 +125,29 @@ def build(as_of, facts, acn, spx, engine):
         "sellside": f"Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}",
         "losers": ("Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN "
                    f"was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}"),
-    }[stage] + " Re-file under AI_EXPOSED only when the multiple starts discounting deflation or GenAI shows up as shrinking billable hours."
+    }[stage] + (" Re-file under AI_EXPOSED only if dated evidence shows the market pricing AI substitution of IT-services work."
+                if stage == "chatgpt_only" else
+                " Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan "
+                "describes, or it shows up in managed-services growth.")
     genai_opp = ("GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k" if ai_inv else
                  "GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first" if stage != "chatgpt_only" else
                  "GenAI as a services opportunity: ChatGPT opens an advisory/implementation market; no client data yet")
     genai_risk = ("GenAI as a deflation driver for legacy delivery hours (J.P.Morgan) — not yet in the numbers" if stage != "chatgpt_only" else
-                  "GenAI as a deflation risk for coding/testing hours — untested, not in the numbers")
+                  "GenAI as a risk to delivery hours — no evidence yet, not in the numbers")
+    # every GenAI sentence follows the evidence public on AS_OF: before the J.P.Morgan note (2023-02-10)
+    # nothing dated described a deflation mechanism for IT services, so the text does not either
+    if stage == "chatgpt_only":
+        genai_trigger = "No dated evidence yet on GenAI's net effect on services demand"
+        key_tail = ("A demand recession hits discretionary consulting first; the bear needs it\n"
+                    "  to spread to run/maintain work as well.")
+        cat3 = "(3) Consulting vs managed-services bookings mix — where a slowdown shows first"
+        cat4 = "(4) Managed-services renewal pricing"
+    else:
+        genai_trigger = "Legacy-services pricing deflates faster than GenAI advisory grows"
+        key_tail = ("A JOINT event: a demand recession alone hits consulting, legacy-services\n"
+                    "  deflation (J.P.Morgan's mechanism) alone hits run/maintain work — the bear needs both.")
+        cat3 = "(3) First disclosed GenAI bookings — does the share gain J.P.Morgan expects show up?"
+        cat4 = "(4) Managed-services renewal pricing — where legacy-services deflation would show first"
     genai_summary = ("GenAI is live but there is no read yet on what it does to IT services" if stage == "chatgpt_only" else
                      "GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat")
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
@@ -221,6 +238,10 @@ BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']}B, FCF guide ${latest['fcf_guide_
 GENAI_OPP_TEXT  = {R(genai_opp)}
 GENAI_RISK_TEXT = {R(genai_risk)}
 GENAI_SUMMARY   = {R(genai_summary)}
+GENAI_SIGNAL_TRIGGER = {R(genai_trigger)}
+KEY_TRIGGER_TAIL     = {R(key_tail)}
+CATALYST_3      = {R(cat3)}
+CATALYST_4      = {R(cat4)}
 '''
     os.makedirs(os.path.join(OUT, as_of), exist_ok=True)
     with open(os.path.join(OUT, as_of, "model.py"), "w", encoding="utf-8") as fh:

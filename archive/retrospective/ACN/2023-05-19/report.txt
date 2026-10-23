@@ -38,7 +38,7 @@
   Managed services growth (LC)        +3.0%     5.0%    10.0%    15.0%    +16.0%  ★ XBULL  ████
   Total revenue growth (LC)           +0.0%     3.0%     7.0%    11.0%     +9.0%  ▲ BULL  ███░
   Adj. operating margin change      -40.0bp    0.0bp   20.0bp   50.0bp   +20.0bp  ▲ BULL  ███░
-  GenAI: demand vs deflation         +1.0/4    2.0/4    3.0/4    4.0/4    +2.0/4  ◦ BASE  ██░░
+  GenAI: net effect on services      +1.0/4    2.0/4    3.0/4    4.0/4    +2.0/4  ◦ BASE  ██░░
 
   Proxy composite:    3.00 / 4.00
   Market composite:   3.12 / 4.00  (back-solved from $290 + 15% hurdle)
@@ -60,15 +60,15 @@
   Managed services growth (LC)        +16.0%     +3.0%  -13.0%  Outsourcing renewals repriced lower b…
   Total revenue growth (LC)            +9.0%     +0.0%   -9.0%  Q3 lands at the bottom of its guide a…
   Adj. operating margin change       +20.0bp   -40.0bp  -60.0bp  Pricing concessions + bench costs rev…
-  GenAI: demand vs deflation          +2.0/4    +1.0/4  -1.0/4  Coding/testing hours shrink faster th…
+  GenAI: net effect on services       +2.0/4    +1.0/4  -1.0/4  Legacy-services pricing deflates fast…
 
   Bear composite:  1.00  →  Bear scenario price: ~$234  (model)  /  $202 (defined)
   Bear probability (proxy model):  4.6%
 
   KEY TRIGGER: consulting went from +10% (Q1 FY23) to +4% LC (Q2);
   the bear case needs that slowdown to reach managed services (+16% LC)
-  through repriced renewals. A JOINT event: a demand recession alone hits consulting,
-  GenAI deflation alone hits run/maintain work — the bear needs both at once.
+  through repriced renewals. A JOINT event: a demand recession alone hits consulting, legacy-services
+  deflation (J.P.Morgan's mechanism) alone hits run/maintain work — the bear needs both.
 
   ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
   ──────────────────────────────────────────────────────────────────────
@@ -88,7 +88,7 @@
   Managed services growth (LC)                 5.0      -11.0   BASE floor (vs +16 now)
   Total revenue growth (LC)                    3.0       -6.0   BASE floor (vs +9 now)
   Adj. operating margin change                 0.0      -20.0   BASE floor (vs +20 now)
-  GenAI: demand vs deflation                   2.0       +0.0   BASE floor (vs +2 now)
+  GenAI: net effect on services                2.0       +0.0   BASE floor (vs +2 now)
 
   Conservative 2yr EPS:   $11.52 × (1+4.8%)² = $12.65
   At 22x P/E (conservative):  $278/share
@@ -147,8 +147,8 @@
   Key catalysts to watch (from the as-of date):
   (1) Q3 FY23 print (late June) — the next read on consulting (+4% LC now) and the guide
   (2) Consulting book-to-bill — 1.29x in Q2
-  (3) First disclosed GenAI bookings — tailwind in numbers, or only in narrative?
-  (4) Managed-services renewal pricing — where GenAI deflation would show first
+  (3) First disclosed GenAI bookings — does the share gain J.P.Morgan expects show up?
+  (4) Managed-services renewal pricing — where legacy-services deflation would show first
   (5) Buyback pace at 25x — management's own read of the multiple
   ◐ WATCHLIST  |  EPP floor $207  |  ADD below ~$249  |  TRIM above $366
 ════════════════════════════════════════════════════════════════════════

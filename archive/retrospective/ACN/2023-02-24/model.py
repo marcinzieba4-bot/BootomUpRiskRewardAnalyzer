@@ -68,7 +68,7 @@ PIT_PROFILE = {
     "risk": 2,
     "why": 'Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not',
     "theme_watch": [{"theme": "GENAI", "status": 'live, priced as a tailwind',
-                     "reason": 'Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 23.5x FY23E — near its own median, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting deflation or GenAI shows up as shrinking billable hours.'}],
+                     "reason": 'Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 23.5x FY23E — near its own median, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth.'}],
     "evidence": ['S13', 'S9'],
 }
 
@@ -109,6 +109,10 @@ BALANCE_TEXT    = 'Cash $5.9B, FCF guide $7.7-8.2B, >=$7.1B returned'
 GENAI_OPP_TEXT  = 'GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first'
 GENAI_RISK_TEXT = 'GenAI as a deflation driver for legacy delivery hours (J.P.Morgan) — not yet in the numbers'
 GENAI_SUMMARY   = 'GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat'
+GENAI_SIGNAL_TRIGGER = 'Legacy-services pricing deflates faster than GenAI advisory grows'
+KEY_TRIGGER_TAIL     = "A JOINT event: a demand recession alone hits consulting, legacy-services\n  deflation (J.P.Morgan's mechanism) alone hits run/maintain work — the bear needs both."
+CATALYST_3      = '(3) First disclosed GenAI bookings — does the share gain J.P.Morgan expects show up?'
+CATALYST_4      = '(4) Managed-services renewal pricing — where legacy-services deflation would show first'
 
 # ═════════════════════════════════════════════════════════════════════════════
 # ENGINE — identical in every retrospective; everything above is dated facts.
@@ -186,8 +190,8 @@ SIGNALS = [
      f"{LATEST['next_q']} lands at the bottom of its guide and keeps slowing"),
     ("Adj. operating margin change", "bp YoY", -40.0, 0.0, 20.0, 50.0, round((FY_MARGIN_GUIDE_MID - FY22_MARGIN) * 100, 1), True,
      "Pricing concessions + bench costs reverse the expansion"),
-    ("GenAI: demand vs deflation", "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
-     "Coding/testing hours shrink faster than advisory grows"),
+    ("GenAI: net effect on services", "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
+     GENAI_SIGNAL_TRIGGER),
 ]
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)") for i, s in enumerate(SIGNALS)]
@@ -400,8 +404,7 @@ print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"""
   KEY TRIGGER: consulting went from {PREV_CONSULTING[0]:+d}% ({PREV_CONSULTING[1]}) to {L['consulting_lc']:+d}% LC ({L['quarter'].split()[0]});
   the bear case needs that slowdown to reach managed services ({L['managed_lc']:+d}% LC)
-  through repriced renewals. A JOINT event: a demand recession alone hits consulting,
-  GenAI deflation alone hits run/maintain work — the bear needs both at once.""")
+  through repriced renewals. {KEY_TRIGGER_TAIL}""")
 
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
@@ -505,8 +508,8 @@ print("═" * W)
 print("  Key catalysts to watch (from the as-of date):")
 print(f"  (1) {NEXT_PRINT} — the next read on consulting ({L['consulting_lc']:+d}% LC now) and the guide")
 print(f"  (2) Consulting book-to-bill — {L['consulting_bookings_b']/L['consulting_revenue_b']:.2f}x in {L['quarter'].split()[0]}")
-print("  (3) First disclosed GenAI bookings — tailwind in numbers, or only in narrative?")
-print("  (4) Managed-services renewal pricing — where GenAI deflation would show first")
+print(f"  {CATALYST_3}")
+print(f"  {CATALYST_4}")
 print(f"  (5) Buyback pace at {PE_NOW:.0f}x — management's own read of the multiple")
 print(f"  {signal_full}  |  EPP floor {CUR}{epp_updated:,.0f}  |  ADD below ~{CUR}{SCENARIOS['BASE'][2]*0.85:,.0f}  |  TRIM above {CUR}{SCENARIOS['BULL'][2]:,}")
 print("═" * W)
