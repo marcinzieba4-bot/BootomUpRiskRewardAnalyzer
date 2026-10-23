@@ -1,26 +1,37 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 13 weekly dates from 2008-01-04 to 2008-03-28. They are **labels and
-hypotheses**: never feed them back into the method or the fact sheet. Each was computed after the point-in-time
-build was committed (68cbbb6). Medians of an even count take the upper middle value (`statistics.median_high`).
-Prices are on the as-of share basis (before the 2008 2:1 split).
+Patterns seen in `outcome.json` for the 53 weekly dates from 2008-01-04 to 2008-12-31. They are **labels and
+hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
+point-in-time build was committed: January-March in 68cbbb6, April-December in 0019904. Medians of an even count
+take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
+effective 2008-05-29).
 
 | Group | Dates | Median 2-yr total return | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price |
 |---|---|---|---|---|---|
-| class RICH (tier AVOID) | 7 | +9.9% | 0 | 7 | -11.2% |
-| class FAIR (tier WATCHLIST) | 6 | +22.4% | 0 | 6 | -4.6% |
+| class CHEAP | 13 | +85% | 13 | 13 | +48% |
+| class FAIR | 8 | +22% | 1 | 8 | -5% |
+| class RICH | 32 | +2% | 0 | 32 | -12% |
+| legacy tier BUY | 7 | +100% | 7 | 7 | +60% |
+| legacy tier ACCUMULATE | 5 | +53% | 5 | 5 | +22% |
+| legacy tier WATCHLIST | 9 | +22% | 2 | 9 | -5% |
+| legacy tier AVOID | 32 | +2% | 0 | 32 | -12% |
+| price below the EPP floor | 6 | +102% | 6 | 6 | +62% |
+| CHEAP, above the floor | 7 | +53% | 7 | 7 | +22% |
 
-- **Every call "missed" by its own test**, because UNP beat a falling market by 17-37pp over two years. RICH expects
-  the stock to lag SPY, and FAIR expects it to stay within 15pp of SPY. None of the 13 cleared the hurdle.
-- **The ranking held.** FAIR dates did better than RICH dates: +22% against +10% over two years, -5% against -11% on
-  the m12-24 average price. Over a few months of one stock that mostly says "lower P/E did better", which is a
-  "buy lower" test, not a selection test.
-- **The bear came, but it was the multiple.** From the August 2008 high ($167.80) the stock fell 60% to $67.24
-  (2009-03-09), below every date's EPP floor ($89-104). It stayed above the BEAR scenario ($43-51). All 13 two-year
-  outcomes landed in BASE.
-- **The no-guide fallback mattered.** The five RICH dates from 2008-01-25 to 2008-02-22 use FY07's $6.91, because
-  no numeric 2008 guide had been filed yet. From 2008-02-29 the 10-K's $7.75-8.25 guide turns the same price into
-  FAIR. Whether the trailing-EPS fallback makes these dates read too rich is a question for other tickers with
-  gaps in their guidance, not something to tune here.
-- **The BEAR rule on a cyclical.** UNP's worst EPS year (2004, -29%) repeated for two years makes BEAR the biggest
-  driver of Ratio B (above 2 on most dates). Test the rule on other cyclicals before any method change.
+- **The calls ranked the outcomes in order.** CHEAP did better than FAIR, which did better than RICH, and the tier
+  order was the same: BUY > ACCUMULATE > WATCHLIST > AVOID. All 13 CHEAP dates (2008-10-03 to 2008-12-31, except
+  FAIR on 2008-10-31) cleared the hurdle. None of the 32 RICH dates did.
+- **RICH was right on price, wrong against the market.** RICH dates lost money on the m12-24 average price (-12%) and
+  were flat over two years. Every one still beat SPY, because the market fell further. So every RICH call "missed" its
+  own test, which expects RICH to lag the benchmark. On this stock in 2008, RICH read "don't buy here", not "will
+  underperform".
+- **The turn came with the price, not the numbers.** The class moved from RICH (late September, 18-19x) to CHEAP
+  (2008-10-03, 15.5x) as the stock fell. Q3 carloads were -5%, but revenue per car was +22% and the operating ratio
+  improved. The six dates below the EPP floor (2008-11-21 and 2008-12-05 to 2008-12-31, at 10.7-11.9x) returned +98% to
+  +122%.
+- **The BEAR case never came.** All 53 two-year outcomes landed in BASE or BULL. The worst point (2009-03-09) was
+  still above every date's BEAR price. The BEAR rule (the decade's worst EPS year, 2004 at -29%, repeated for two
+  years) set Ratio B high on most RICH dates. Test it on other cyclicals before any method change.
+- **One stock, one crash.** Nearly all the spread between classes comes from buying before or after the
+  October-December 2008 decline. This mostly tests "buy lower". Testing selection needs many tickers on the same
+  dates.
