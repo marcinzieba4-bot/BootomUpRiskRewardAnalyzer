@@ -21,7 +21,7 @@
     +16% LC in Q2
   ──────────────────────────────────────────────────────────────────────
   TOTAL                     $    64.4  $  64.4  $  74.4      +0.0     +10.0
-  FY2023E = FY22 $61.59B × (1 + 9.0% LC guide -4.5% FX); split pro rata to H1 actuals
+  FY2023E = FY22 $61.59B × (1 + 9.0% LC guide, -4.5% FX); split pro rata to H1 actuals
   Q2 FY23 (Mar 23): revenue $15.81B +9% LC; consulting +4% LC, managed services +16% LC; bookings $22.10B +17% LC;
   adj op margin 13.8% (+10bp); FY23 guide +8-10% LC (from 8-11%), adj EPS $11.41-11.63; Q3 guide $16.10-16.70B, +3-7% LC
 
@@ -118,10 +118,10 @@
   ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
   ──────────────────────────────────────────────────────────────────────
   Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
-  BEAR       11.52  17.5x  $    202     4.6%      2.3%    +2.3pp  Flat EPS (the decade's worst year, capped at 0%); P/E to its 10th pct
+  BEAR       11.52  17.5x  $    202     4.6%      2.3%    +2.3pp  Flat EPS (worst year FY12-FY22, capped at 0%); P/E to its 10th pct
   BASE       13.13  22.5x  $    295    15.9%      8.0%    +7.9pp  EPS +6.8%/yr (latest guide + margin + buyback); P/E at its 10-yr median
-  BULL       14.14  26.0x  $    368    55.5%     27.8%   +27.6pp  EPS +10.8%/yr (decade CAGR); P/E holds its 75th pct
-  XBULL      15.64  30.2x  $    472    24.1%     61.9%   -37.8pp  EPS +16.5%/yr (best 2-yr run of the decade); P/E at its 90th pct
+  BULL       14.14  26.0x  $    368    55.5%     27.8%   +27.6pp  EPS +10.8%/yr (FY12-FY22 CAGR); P/E holds its 75th pct
+  XBULL      15.64  30.2x  $    472    24.1%     61.9%   -37.8pp  EPS +16.5%/yr (best 2-yr run FY12-FY22); P/E at its 90th pct
 
   Proxy EV (2yr): $374  /  Market EV: $423  /  Current: $320
   Conservative EV (2yr, ④): $278 + $9.23 divs = $287 total value

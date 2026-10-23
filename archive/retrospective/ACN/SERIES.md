@@ -4,6 +4,11 @@ Point-in-time columns use only information public on the as-of date. The last fo
 
 | as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | m12-24 avg | call |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2008-01-04 | $34.91 | Accenture Ltd Q1 FY08 results | 2.85 | +1.46 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.1% | +40.4pp | -2.5% | ✓ |
+| 2008-01-11 | $32.79 | Accenture Ltd Q1 FY08 results | 2.85 | +1.62 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.5% | +48.2pp | +4.3% | ✓ |
+| 2008-01-18 | $33.77 | Accenture Ltd Q1 FY08 results | 2.85 | +1.55 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.5% | +40.7pp | +1.8% | ✓ |
+| 2008-01-25 | $33.86 | Accenture Ltd Q1 FY08 results | 2.85 | +1.54 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.4% | +41.2pp | +2.1% | ✓ |
+| 2008-01-31 | $34.62 | Accenture Ltd Q1 FY08 results | 2.85 | +1.49 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.0% | +40.3pp | +0.3% | ✓ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |

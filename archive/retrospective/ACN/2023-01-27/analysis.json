@@ -52,7 +52,7 @@
     "eps": 11.36,
     "pe": 17.4,
     "price": 198,
-    "desc": "Flat EPS (the decade's worst year, capped at 0%); P/E to its 10th pct"
+    "desc": "Flat EPS (worst year FY12-FY22, capped at 0%); P/E to its 10th pct"
    },
    "BASE": {
     "eps": 13.69,
@@ -64,13 +64,13 @@
     "eps": 13.95,
     "pe": 26.0,
     "price": 363,
-    "desc": "EPS +10.8%/yr (decade CAGR); P/E holds its 75th pct"
+    "desc": "EPS +10.8%/yr (FY12-FY22 CAGR); P/E holds its 75th pct"
    },
    "XBULL": {
     "eps": 15.42,
     "pe": 30.2,
     "price": 466,
-    "desc": "EPS +16.5%/yr (best 2-yr run of the decade); P/E at its 90th pct"
+    "desc": "EPS +16.5%/yr (best 2-yr run FY12-FY22); P/E at its 90th pct"
    }
   }
  },

@@ -12,7 +12,7 @@ Format: segment bridge → signal dashboard → bear anatomy → updated EPP →
 
 # ── RETROSPECTIVE FRAME ───────────────────────────────────────────────────────
 TICKER      = "ACN"
-COMPANY     = "Accenture plc"
+COMPANY     = 'Accenture plc'
 AS_OF       = "2023-05-05"
 PRICE_DATE  = "2023-05-05"
 METHODOLOGY = ("house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs "
@@ -88,8 +88,7 @@ PIT_PROFILE = {
     "kind": "DURABLE",
     "risk": 2,
     "why": 'Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not',
-    "theme_watch": [{"theme": "GENAI", "status": 'live, priced as a tailwind',
-                     "reason": 'Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 23.1x FY23E — near its own median, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth.'}],
+    "theme_watch": [{'theme': 'GENAI', 'status': 'live, priced as a tailwind', 'reason': 'Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at 23.1x FY23E — near its own median, not an AI discount. Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up in managed-services growth.'}],
     "evidence": ['S13', 'S9', 'S10', 'S11'],
 }
 
@@ -97,8 +96,9 @@ PIT_PROFILE = {
 CURRENT_PRICE   = 265.65   # USD, NYSE close 2023-05-05
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
-PE_PCTL         = {'p5': 16.9, 'p10': 17.5, 'p25': 19.1, 'median': 22.1, 'p75': 25.9, 'p90': 30.2, 'max': 38.8}   # current-FY P/E, the 10 years to AS_OF
+PE_PCTL         = {'p5': 16.9, 'p10': 17.5, 'p25': 19.1, 'median': 22.1, 'p75': 25.9, 'p90': 30.2, 'max': 38.8}   # current-FY P/E over the window below
 PE_NOW_PCTL     = 54    # share of those daily P/Es at or below today's
+WINDOW_LABEL    = '10-yr'   # P/E window: 2013-05-06 .. AS_OF
 YEARLY_MIN_PE   = [('2013', 15.5, '2013-10-09'), ('2014', 15.9, '2014-10-15'), ('2015', 15.5, '2015-09-01'), ('2016', 15.7, '2016-02-09'), ('2017', 19.0, '2017-02-01'), ('2018', 18.2, '2018-12-24'), ('2019', 18.4, '2019-01-03'), ('2020', 18.2, '2020-03-23'), ('2021', 27.5, '2021-01-29'), ('2022', 21.7, '2022-10-12'), ('2023', 21.4, '2023-03-15')]   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = 0.309   # 1-yr realized, daily log returns
 VOL_BETA        = 1.20    # 1-yr beta vs S&P 500
@@ -107,30 +107,38 @@ VOL_52W_HIGH    = 322.88
 REF_LOW         = 246.17   # lowest close of the last 52 weeks, 2023-03-15
 REF_LOW_LABEL   = 'March'
 
-# ── FACTS: company history (S1, S2) ───────────────────────────────────────────
+# ── FACTS: company history (S1, S2, vintage 2022-10-12) ──
 EPS_NORM      = {2012: 3.84, 2013: 4.18, 2014: 4.52, 2015: 4.76, 2016: 5.945, 2017: 5.945, 2018: 6.34, 2019: 7.36, 2020: 7.89, 2021: 8.8, 2022: 10.71}   # reported, FY13 = mean(FY12, FY14); FY16/FY17 averaged (Navitaire gain / pension charge); FY21 = company-adjusted $8.80 (S1)
 REVENUE_HIST  = {2012: 29.778, 2013: 30.394, 2014: 31.875, 2015: 32.914, 2016: 34.798, 2017: 36.765, 2018: 41.603, 2019: 43.215, 2020: 44.327, 2021: 50.533, 2022: 61.594}   # USD bn
 SHARES_HIST   = {2018: 655.296, 2022: 642.839}   # diluted, millions
-FY22_MARGIN   = 15.2
+FY_E, FY_E_S, FY_H, FY_PREV = 'FY2023E', 'FY23E', 'FY2025E', 'FY22'
+PREV_FY_MARGIN = 15.2
+TAX_RATE      = 0.245
 CONS_DIVIDEND = 4.48   # $1.12/quarter (S1)
 VOL_DIVIDEND  = CONS_DIVIDEND
+SERVICE_LINE  = 'Managed services'
+MARGIN_SIGNAL_NAME = 'Adj. operating margin change'
 
 # ── FACTS: latest print and guide (S4, published 2023-03-23) ──
 LATEST          = {'quarter': 'Q2 FY23', 'release': 'Mar 23', 'revenue_b': 15.81, 'revenue_lc': 9, 'consulting_lc': 4, 'managed_lc': 16, 'bookings_b': 22.1, 'bookings_lc': 17, 'consulting_bookings_b': 10.65, 'consulting_revenue_b': 8.28, 'margin_label': 'adj op margin', 'margin': 13.8, 'margin_bp': 10, 'eps_label': 'adj EPS', 'fy_eps_guide': [11.41, 11.63], 'fy_eps_guide_note': '', 'fy_rev_guide_lc': [8, 10], 'fy_rev_guide_note': 'from 8-11%', 'fy_fx': -4.5, 'next_q': 'Q3', 'next_q_guide_b': [16.1, 16.7], 'next_q_guide_lc': [3, 7]}
 PREV_CONSULTING = (10, 'Q1 FY23')
 EPP_TODAY_EPS   = 11.52   # FY2023E adj EPS, guide midpoint
-FY_MARGIN_GUIDE_MID = 15.4
-FY23E_REVENUE_B = 64.37
+FWD_GUIDE_LC    = (3, 7)   # next-quarter revenue guide, LC
+FWD_GUIDE_LABEL, FWD_PERIOD = 'Q3 guide', 'Q3'
+MARGIN_GUIDED   = True   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
+FY_MARGIN_BASE  = 15.4
+FY_REVENUE_B    = 64.37
+FX_TEXT         = '-4.5% FX'
 SHARES_DIL_B    = 0.6377
 GROUPS          = [('Products', 9.38, 9), ('Health & Public Service', 6.02, 15), ('Financial Services', 5.97, 10), ('Comms, Media & Tech', 5.87, 0), ('Resources', 4.32, 16)]
 GROUPS_BASIS    = 'H1 actuals'
 NEXT_PRINT      = 'Q3 FY23 print (late June)'
 SHARE_GAIN_TEXT = 'Share-gainer at scale: FY22 revenue +26% LC, record $71.7B bookings; Q2 revenue +9% LC'
 BALANCE_TEXT    = 'Cash $6.2B, FCF guide $8.0-8.5B, >=$7.1B returned; $1.5B business-optimization program defends margin'
-GENAI_OPP_TEXT  = 'GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first'
-GENAI_RISK_TEXT = 'GenAI as a deflation driver for legacy delivery hours (J.P.Morgan) — not yet in the numbers'
-GENAI_SUMMARY   = 'GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat'
-GENAI_SIGNAL_TRIGGER = 'Legacy-services pricing deflates faster than GenAI advisory grows'
+THEME_FACTORS   = [('GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first', 0.2, 0.1), ('GenAI as a deflation driver for legacy delivery hours (J.P.Morgan) — not yet in the numbers', -0.2, 0.1)]
+THEME_SIGNAL_NAME    = 'GenAI: net effect on services'
+THEME_SIGNAL_TRIGGER = 'Legacy-services pricing deflates faster than GenAI advisory grows'
+THEME_SUMMARY        = 'GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat'
 KEY_TRIGGER_TAIL     = "A JOINT event: a demand recession alone hits consulting, legacy-services\n  deflation (J.P.Morgan's mechanism) alone hits run/maintain work — the bear needs both."
 CATALYST_3      = '(3) First disclosed GenAI bookings — does the share gain J.P.Morgan expects show up?'
 CATALYST_4      = '(4) Managed-services renewal pricing — where legacy-services deflation would show first'
@@ -155,46 +163,45 @@ def _ordinal(n):
 _FY = sorted(EPS_NORM)
 EPS_YOY           = [EPS_NORM[y] / EPS_NORM[y - 1] - 1 for y in _FY[1:]]
 REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in sorted(REVENUE_HIST)[1:]]
-REV_MEDIAN_GROWTH = _median(REV_YOY)                                                # 10-yr median revenue growth
+REV_MEDIAN_GROWTH = _median(REV_YOY)                                                # median revenue growth over the history
 REV_CAGR_10Y      = _cagr(REVENUE_HIST[min(REVENUE_HIST)], REVENUE_HIST[max(REVENUE_HIST)], max(REVENUE_HIST) - min(REVENUE_HIST))
-MARGIN_CONTRIB    = (FY_MARGIN_GUIDE_MID - FY22_MARGIN) / FY_MARGIN_GUIDE_MID       # guided margin step, as EPS growth
+MARGIN_CONTRIB    = (FY_MARGIN_BASE - PREV_FY_MARGIN) / FY_MARGIN_BASE if MARGIN_GUIDED else 0.0   # guided margin step, as EPS growth
 BUYBACK           = _cagr(SHARES_HIST[max(SHARES_HIST)], SHARES_HIST[min(SHARES_HIST)], max(SHARES_HIST) - min(SHARES_HIST))
-NEXT_Q_MID        = sum(LATEST["next_q_guide_lc"]) / 2 / 100
+FWD_MID           = sum(FWD_GUIDE_LC) / 2 / 100                                      # forward LC revenue guide midpoint
+_SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}"
 
-# R1  scenario EPS growth FY2023E -> FY2025E (per year)
+# R1  scenario EPS growth, current FY -> FY+2 (per year)
 SCENARIO_CAGR = {
-    "BEAR":  min(0.0, min(EPS_YOY)),                                    # worst year of the decade, capped at 0
-    "BASE":  NEXT_Q_MID + MARGIN_CONTRIB + BUYBACK,                     # latest next-quarter guide carried forward
-    "BULL":  _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]),   # decade EPS CAGR
-    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:]),   # best 2-yr run of the decade
+    "BEAR":  min(0.0, min(EPS_YOY)),                                    # worst year of the history, capped at 0
+    "BASE":  FWD_MID + MARGIN_CONTRIB + BUYBACK,                        # latest forward guide carried forward
+    "BULL":  _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]),   # EPS CAGR over the history
+    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:]),   # best 2-yr run of the history
 }
 SCENARIO_CAGR["BULL"]  = max(SCENARIO_CAGR["BULL"], SCENARIO_CAGR["BASE"])
 SCENARIO_CAGR["XBULL"] = max(SCENARIO_CAGR["XBULL"], SCENARIO_CAGR["BULL"])
 SCENARIO_EPS = {k: round(EPP_TODAY_EPS * (1 + g) ** 2, 2) for k, g in SCENARIO_CAGR.items()}
-# R2  scenario P/E = percentile band of the stock's own 10-yr P/E
+# R2  scenario P/E = percentile band of the stock's own P/E over the window (up to 10 yr)
 SCENARIO_PE  = {"BEAR": PE_PCTL["p10"], "BASE": PE_PCTL["median"], "BULL": PE_PCTL["p75"], "XBULL": PE_PCTL["p90"]}
 SCENARIO_TXT = {
-    "BEAR":  "Flat EPS (the decade's worst year, capped at 0%); P/E to its 10th pct",
-    "BASE":  f"EPS +{SCENARIO_CAGR['BASE']*100:.1f}%/yr (latest guide + margin + buyback); P/E at its 10-yr median",
-    "BULL":  f"EPS +{SCENARIO_CAGR['BULL']*100:.1f}%/yr (decade CAGR); P/E holds its 75th pct",
-    "XBULL": f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (best 2-yr run of the decade); P/E at its 90th pct",
+    "BEAR":  f"Flat EPS (worst year {_SPAN}, capped at 0%); P/E to its 10th pct",
+    "BASE":  f"EPS +{SCENARIO_CAGR['BASE']*100:.1f}%/yr (latest guide + margin + buyback); P/E at its {WINDOW_LABEL} median",
+    "BULL":  f"EPS +{SCENARIO_CAGR['BULL']*100:.1f}%/yr ({_SPAN} CAGR); P/E holds its 75th pct",
+    "XBULL": f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (best 2-yr run {_SPAN}); P/E at its 90th pct",
 }
 # R3  EPP floor P/E = median of the calendar-year P/E lows, rounded down
 EPP_MIN_PE = float(math.floor(_median([pe for _, pe, _ in YEARLY_MIN_PE])))
 # R4  structural factors: valuation and growth are mechanical, the rest are constant across dates
 PE_NOW          = CURRENT_PRICE / EPP_TODAY_EPS
 VALUATION_SCORE = round(max(-0.5, min(0.5, -(PE_NOW_PCTL - 50) / 60)), 2)    # >=80th pct -0.5, median 0, <=20th +0.5
-GROWTH_SCORE    = round(max(-0.5, min(0.5, (NEXT_Q_MID - REV_MEDIAN_GROWTH) * 10)), 2)   # 0.1 per pp vs own history
+GROWTH_SCORE    = round(max(-0.5, min(0.5, (FWD_MID - REV_MEDIAN_GROWTH) * 10)), 2)   # 0.1 per pp vs own history
 STRUCTURAL_FACTORS = [
     (SHARE_GAIN_TEXT, 0.4, 0.20),
-    (f"Multiple: {PE_NOW:.1f}x FY23E vs a {PE_PCTL['median']}x 10-yr median ({_ordinal(PE_NOW_PCTL)} percentile of its own range)",
+    (f"Multiple: {PE_NOW:.1f}x {FY_E_S} vs a {PE_PCTL['median']}x {WINDOW_LABEL} median ({_ordinal(PE_NOW_PCTL)} percentile of its own range)",
      VALUATION_SCORE, 0.25),
-    (f"Growth vs own history: {LATEST['next_q']} guide +{LATEST['next_q_guide_lc'][0]}-{LATEST['next_q_guide_lc'][1]}% LC "
-     f"vs a {REV_MEDIAN_GROWTH*100:.1f}% 10-yr median", GROWTH_SCORE, 0.20),
+    (f"Growth vs own history: {FWD_GUIDE_LABEL} +{FWD_GUIDE_LC[0]}-{FWD_GUIDE_LC[1]}% LC "
+     f"vs a {REV_MEDIAN_GROWTH*100:.1f}% {len(REV_YOY)}-yr median", GROWTH_SCORE, 0.20),
     (BALANCE_TEXT, 0.3, 0.15),
-    (GENAI_OPP_TEXT, 0.2, 0.10),
-    (GENAI_RISK_TEXT, -0.2, 0.10),
-]
+] + [tuple(f) for f in THEME_FACTORS]
 # R5  conservative case: base growth minus 2pp, exit at the median P/E (rounded down), signals at their BASE floor
 CONS_EPS_CAGR = max(0.0, SCENARIO_CAGR["BASE"] - 0.02)
 CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
@@ -205,25 +212,25 @@ SIGNALS = [
      "Clients defer transformation programs; bookings fall below revenue"),
     ("Consulting revenue growth (LC)", "% YoY", -6.0, 2.0, 7.0, 12.0, float(LATEST["consulting_lc"]), True,
      "Discretionary consulting contracts"),
-    ("Managed services growth (LC)", "% YoY", 3.0, 5.0, 10.0, 15.0, float(LATEST["managed_lc"]), True,
+    (f"{SERVICE_LINE} growth (LC)", "% YoY", 3.0, 5.0, 10.0, 15.0, float(LATEST["managed_lc"]), True,
      "Outsourcing renewals repriced lower by automation"),
     ("Total revenue growth (LC)", "% YoY", 0.0, 3.0, 7.0, 11.0, float(LATEST["revenue_lc"]), True,
-     f"{LATEST['next_q']} lands at the bottom of its guide and keeps slowing"),
-    ("Adj. operating margin change", "bp YoY", -40.0, 0.0, 20.0, 50.0, round((FY_MARGIN_GUIDE_MID - FY22_MARGIN) * 100, 1), True,
+     f"{FWD_PERIOD} lands at the bottom of its guide and keeps slowing"),
+    (MARGIN_SIGNAL_NAME, "bp YoY", -40.0, 0.0, 20.0, 50.0,
+     round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else float(LATEST["margin_bp"]), True,
      "Pricing concessions + bench costs reverse the expansion"),
-    ("GenAI: net effect on services", "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
-     GENAI_SIGNAL_TRIGGER),
+    (THEME_SIGNAL_NAME, "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
+     THEME_SIGNAL_TRIGGER),
 ]
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)") for i, s in enumerate(SIGNALS)]
 
-# ── SEGMENT BRIDGE (FY2023E split pro rata to the latest actuals; bear flat, bull at the decade revenue CAGR) ──
+# ── SEGMENT BRIDGE (current-FY revenue split pro rata to the latest actuals; bear flat, bull at the historical revenue CAGR) ──
 _basis = sum(v for _, v, _ in GROUPS)
-SEGMENTS = [(n, f"{lc:+d}% LC in {LATEST['quarter'].split()[0]}", round(FY23E_REVENUE_B * v / _basis, 1),
-             round(FY23E_REVENUE_B * v / _basis, 1), round(FY23E_REVENUE_B * v / _basis * (1 + REV_CAGR_10Y) ** 2, 1))
+SEGMENTS = [(n, f"{lc:+d}% LC in {LATEST['quarter'].split()[0]}", round(FY_REVENUE_B * v / _basis, 1),
+             round(FY_REVENUE_B * v / _basis, 1), round(FY_REVENUE_B * v / _basis * (1 + REV_CAGR_10Y) ** 2, 1))
             for n, v, lc in GROUPS]
-OP_MARGIN = {"FY23E": FY_MARGIN_GUIDE_MID / 100, "BEAR": FY_MARGIN_GUIDE_MID / 100, "BULL": FY_MARGIN_GUIDE_MID / 100 + 0.004}
-TAX_RATE  = 0.245
+OP_MARGIN = {"CUR": FY_MARGIN_BASE / 100, "BEAR": FY_MARGIN_BASE / 100, "BULL": FY_MARGIN_BASE / 100 + 0.004}
 SHARES_FY25_B = SHARES_DIL_B * (1 - BUYBACK) ** 2
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
@@ -362,35 +369,35 @@ print(f"  Signal: {signal_full}   Ratio B: {ratio_b:.2f}x   Adj gap: {adj_gap:+.
 print(f"  Point-in-time: {len(SOURCES)} sources, latest published {max(s['published'] for s in SOURCES)}; latest print {L['quarter']} ({L['release']})")
 print("═" * W)
 
-print(f"\n  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)")
+print(f"\n  SEGMENT REVENUE BRIDGE  ({FY_E} revenue, USD bn  →  {FY_H} BEAR / BULL)")
 print("  " + "─" * (W-2))
-print(f"  {'Industry group':<24}  {'FY2023E':>10}  {'Bear':>8}  {'Bull':>8}    Δ Bear    Δ Bull")
+print(f"  {'Industry group':<24}  {FY_E:>10}  {'Bear':>8}  {'Bull':>8}    Δ Bear    Δ Bull")
 print("  " + "─" * (W-2))
 tot_now = tot_bear = tot_bull = 0.0
 for seg_name, seg_desc, s_now, s_bear, s_bull in SEGMENTS:
     tot_now += s_now; tot_bear += s_bear; tot_bull += s_bull
-    print(f"  {seg_name:<24}  {CUR}{s_now:>8.1f}  {CUR}{s_bear:>6.1f}  {CUR}{s_bull:>6.1f}    "
+    print(f"  {seg_name[:24]:<24}  {CUR}{s_now:>8.1f}  {CUR}{s_bear:>6.1f}  {CUR}{s_bull:>6.1f}    "
           f"{s_bear-s_now:>+6.1f}    {s_bull-s_now:>+6.1f}")
     print(f"    {seg_desc}")
 print("  " + "─" * (W-2))
 print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_bull:>6.1f}    "
       f"{tot_bear-tot_now:>+6.1f}    {tot_bull-tot_now:>+6.1f}")
-print(f"  FY2023E = FY22 ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 + {sum(L['fy_rev_guide_lc'])/2:.1f}% LC guide {L['fy_fx']:+.1f}% FX); split pro rata to {GROUPS_BASIS}")
+print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 + {sum(L['fy_rev_guide_lc'])/2:.1f}% LC guide, {FX_TEXT}); split pro rata to {GROUPS_BASIS}")
 print(f"  {L['quarter']} ({L['release']}): revenue ${L['revenue_b']:.2f}B {L['revenue_lc']:+d}% LC; consulting {L['consulting_lc']:+d}% LC, "
-      f"managed services {L['managed_lc']:+d}% LC; bookings ${L['bookings_b']:.2f}B {L['bookings_lc']:+d}% LC;")
-print(f"  {L['margin_label']} {L['margin']}% ({L['margin_bp']:+d}bp); FY23 guide +{L['fy_rev_guide_lc'][0]}-{L['fy_rev_guide_lc'][1]}% LC"
+      f"{SERVICE_LINE.lower()} {L['managed_lc']:+d}% LC; bookings ${L['bookings_b']:.2f}B {L['bookings_lc']:+d}% LC;")
+print(f"  {L['margin_label']} {L['margin']}% ({L['margin_bp']:+d}bp); {FY_E_S[:-1]} guide +{L['fy_rev_guide_lc'][0]}-{L['fy_rev_guide_lc'][1]}% LC"
       f"{' (' + L['fy_rev_guide_note'] + ')' if L['fy_rev_guide_note'] else ''}, {L['eps_label']} ${L['fy_eps_guide'][0]:.2f}-{L['fy_eps_guide'][1]:.2f}"
-      f"{' (' + L['fy_eps_guide_note'] + ')' if L['fy_eps_guide_note'] else ''}; {L['next_q']} guide ${L['next_q_guide_b'][0]:.2f}-{L['next_q_guide_b'][1]:.2f}B, "
-      f"+{L['next_q_guide_lc'][0]}-{L['next_q_guide_lc'][1]}% LC")
+      f"{' (' + L['fy_eps_guide_note'] + ')' if L['fy_eps_guide_note'] else ''}; {L['next_q']} guide ${L['next_q_guide_b'][0]:.2f}-{L['next_q_guide_b'][1]:.2f}B"
+      f"{', +' + str(L['next_q_guide_lc'][0]) + '-' + str(L['next_q_guide_lc'][1]) + '% LC' if L['next_q_guide_lc'] else ' (USD only)'}")
 
-eps_23 = tot_now * OP_MARGIN["FY23E"] * (1 - TAX_RATE) / SHARES_DIL_B
+eps_23 = tot_now * OP_MARGIN["CUR"] * (1 - TAX_RATE) / SHARES_DIL_B
 eps_bear = tot_bear * OP_MARGIN["BEAR"] * (1 - TAX_RATE) / SHARES_FY25_B
 eps_bull = tot_bull * OP_MARGIN["BULL"] * (1 - TAX_RATE) / SHARES_FY25_B
-print(f"\n  FY2023E EPS check:  {CUR}{tot_now:.1f}B × {OP_MARGIN['FY23E']*100:.1f}% × (1−{TAX_RATE*100:.1f}%) ÷ {SHARES_DIL_B:.3f}B"
+print(f"\n  {FY_E} EPS check:  {CUR}{tot_now:.1f}B × {OP_MARGIN['CUR']*100:.1f}% × (1−{TAX_RATE*100:.1f}%) ÷ {SHARES_DIL_B:.3f}B"
       f"  =  {CUR}{eps_23:.2f}  (guide midpoint {CUR}{EPP_TODAY_EPS:.2f})")
-print(f"  FY2025E BEAR check: {CUR}{tot_bear:.1f}B × {OP_MARGIN['BEAR']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bear:.2f}"
+print(f"  {FY_H} BEAR check: {CUR}{tot_bear:.1f}B × {OP_MARGIN['BEAR']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bear:.2f}"
       f"  (scenario {CUR}{SCENARIOS['BEAR'][0]:.2f})")
-print(f"  FY2025E BULL check: {CUR}{tot_bull:.1f}B × {OP_MARGIN['BULL']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bull:.2f}"
+print(f"  {FY_H} BULL check: {CUR}{tot_bull:.1f}B × {OP_MARGIN['BULL']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bull:.2f}"
       f"  (scenario {CUR}{SCENARIOS['BULL'][0]:.2f})")
 print(f"  Every 1pp of operating margin ≈ {CUR}{tot_now*0.01*(1-TAX_RATE)/SHARES_DIL_B:.2f} EPS ≈ {CUR}{tot_now*0.01*(1-TAX_RATE)/SHARES_DIL_B*PE_PCTL['median']:.0f}/share at the median P/E")
 
@@ -424,12 +431,12 @@ print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~{C
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"""
   KEY TRIGGER: consulting went from {PREV_CONSULTING[0]:+d}% ({PREV_CONSULTING[1]}) to {L['consulting_lc']:+d}% LC ({L['quarter'].split()[0]});
-  the bear case needs that slowdown to reach managed services ({L['managed_lc']:+d}% LC)
+  the bear case needs that slowdown to reach {SERVICE_LINE.lower()} ({L['managed_lc']:+d}% LC)
   through repriced renewals. {KEY_TRIGGER_TAIL}""")
 
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
-print(f"  Today's normalized EPS:          {CUR}{EPP_TODAY_EPS:.2f}  (FY2023E {L['eps_label']}, guide midpoint)")
+print(f"  Today's normalized EPS:          {CUR}{EPP_TODAY_EPS:.2f}  ({FY_E} {L['eps_label']}, guide midpoint)")
 print(f"  Min viable P/E at panic:          {EPP_MIN_PE:.0f}x  [median of calendar-year P/E lows: " +
       ", ".join(f"{y} {pe:.1f}x" for y, pe, _ in YEARLY_MIN_PE) + "]")
 print(f"  {'─'*60}")
@@ -457,12 +464,12 @@ _be_g   = ((_be_eps / EPP_TODAY_EPS) ** 0.5 - 1) * 100
 if PE_NOW > CONS_EXIT_PE * 1.10:
     print(f"""
   {CONS_EPS_CAGR*100:.1f}% EPS growth is what is left once the premium multiple ({PE_NOW:.1f}x)
-  mean-reverts to {CONS_EXIT_PE:.0f}x. Breakeven at {CONS_EXIT_PE:.0f}x needs FY2025E EPS of {CUR}{_be_eps:.2f},
+  mean-reverts to {CONS_EXIT_PE:.0f}x. Breakeven at {CONS_EXIT_PE:.0f}x needs {FY_H} EPS of {CUR}{_be_eps:.2f},
   i.e. {_be_g:.1f}%/yr — the multiple, not the business, is the risk.""")
 else:
     print(f"""
   At {PE_NOW:.1f}x the multiple is already near its {CONS_EXIT_PE:.0f}x median, so the conservative
-  case is a growth question: breakeven at {CONS_EXIT_PE:.0f}x needs FY2025E EPS of {CUR}{_be_eps:.2f},
+  case is a growth question: breakeven at {CONS_EXIT_PE:.0f}x needs {FY_H} EPS of {CUR}{_be_eps:.2f},
   i.e. {_be_g:.1f}%/yr — the business, not the multiple, carries the risk.""")
 
 print(f"\n  ⑤ VOLATILITY CONTEXT")
@@ -541,10 +548,10 @@ summary = (
     f"{TICKER} (retrospective, {AS_OF}) {signal_full} — Ratio B {ratio_b:.2f}x ({ev['down']*100:.1f}% downside to Bear "
     f"${SCENARIOS['BEAR'][2]} / +{ev['up']*100:.1f}% upside to Bull ${SCENARIOS['BULL'][2]}) | "
     f"Adj composite {adj_composite:.2f} vs market {mkt_composite:.2f}: gap {adj_gap:+.2f} [{_verdict}] | "
-    f"{epp_gap_pct:+.0f}% above the EPP floor ${epp_updated:,.0f} ({EPP_MIN_PE:.0f}x FY23E ${EPP_TODAY_EPS:.2f}) | "
+    f"{epp_gap_pct:+.0f}% above the EPP floor ${epp_updated:,.0f} ({EPP_MIN_PE:.0f}x {FY_E_S} ${EPP_TODAY_EPS:.2f}) | "
     f"Conservative 2-yr case: {cons_total_ret:+.1f}% total ({cons_annual_ret:+.1f}%/yr) | "
-    f"At {PE_NOW:.1f}x FY23E the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; consulting {L['consulting_lc']:+d}% LC "
-    f"in {L['quarter'].split()[0]}, {L['next_q']} guided +{L['next_q_guide_lc'][0]}-{L['next_q_guide_lc'][1]}% LC; {GENAI_SUMMARY}."
+    f"At {PE_NOW:.1f}x {FY_E_S} the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; consulting {L['consulting_lc']:+d}% LC "
+    f"in {L['quarter'].split()[0]}, {FWD_PERIOD} guided +{FWD_GUIDE_LC[0]}-{FWD_GUIDE_LC[1]}% LC; {THEME_SUMMARY}."
 )
 RESULT = {
     "ticker":           TICKER,

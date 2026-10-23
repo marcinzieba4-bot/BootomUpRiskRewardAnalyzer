@@ -68,7 +68,21 @@ anything unless all of these pass:
 | Other structural factors | Constant across dates (franchise, balance sheet, the GenAI opportunity/risk pair nets to 0) |
 | Conservative case | BASE − 2pp EPS growth, exit at the median P/E rounded down, signals at their BASE floor |
 | Signals | Thresholds frozen; values are the latest reported quarter |
+| History | The latest annual history vintage published by AS_OF; only prints and events published since that vintage are in scope |
 | Segment bridge | FY revenue from the FY guide; groups pro rata to the latest actuals; bear flat, bull at the decade revenue CAGR |
+
+Fallbacks for facts a company did not publish (decided before any outcome of the affected dates was computed):
+
+- **No next-quarter guide in local currency:** BASE growth and the growth factor use the full-year LC revenue guide.
+  Example: ACN FY08 guided Q2 in dollars only.
+- **No margin guide:** the guided margin step is 0, and the margin signal uses the latest quarter's year-on-year change.
+- **No FX guide:** FY revenue is LC growth only.
+- **A distorted year with no published adjusted figure:** it is excluded, and the P/E window starts after it.
+  Example: ACN FY02, with a $321M investment loss.
+
+Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
+periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
+method version.
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
@@ -91,6 +105,7 @@ on its date, and the class names follow the theme:
 | EV | ~2020 | 2020-12-21 (TSLA in S&P) | EV-FEAR BASKET / … |
 | CRYPTO | 2020-10-21 | 2021-04-14 | CRYPTO-FEAR BASKET / … |
 | GLP1 (GLP-1) | 2023-08-08 | 2023-08-08 (SELECT) | GLP-1-FEAR BASKET / … |
+| OFFSHORE | 2004-11-05 (earliest verified 10-K) | not established | OFFSHORE-FEAR BASKET / … |
 
 What the gates enforce:
 
@@ -108,12 +123,16 @@ What the gates enforce:
   by then. For mid-depth dates (2023 to 2024), AI is live but mostly a watch item.
   For deep dates (2016 and earlier), the disruption slot belongs to cloud,
   Amazon, streaming or the energy transition, and `AI_EXPOSED` is illegal.
+  IT services in 2008 had their own live theme: offshore delivery. ACN's FY2007 10-K
+  names Indian providers "often at highly competitive prices". ACN in January 2008
+  carries it on the watch list, not AI.
 
 ## Workflow
 
 ```bash
 # 1. add newly published facts to retro/facts/ACN.json (each with source + published date)
 python3 retro/build_acn.py --weekly 2023-01-01 2023-06-30        # dates chosen by rule, models generated
+python3 retro/build_acn.py --weekly 2008-01-01 2008-01-31        # any era with a history vintage in the fact sheet
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

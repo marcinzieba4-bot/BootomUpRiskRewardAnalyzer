@@ -34,8 +34,6 @@ import retro_tool  # noqa: E402
 FACTS = os.path.join(HERE, "facts", "ACN.json")
 ENGINE = os.path.join(HERE, "templates", "acn_engine.py.tmpl")
 OUT = os.path.join(ROOT, "archive", "retrospective", "ACN")
-WHY = ("Accenture: #1-scale IT-services and consulting franchise that took share through the cloud "
-       "cycle; discretionary consulting demand is cyclical, the franchise is not")
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 
@@ -79,14 +77,21 @@ def ordinal(n):
 def build(as_of, facts, acn, spx, engine):
     if as_of not in acn:
         sys.exit(f"{as_of} is not a trading day")
-    prints = [p for p in facts["prints"] if p["published"] <= as_of]
-    events = [e for e in facts["events"] if e["published"] <= as_of]
-    h = facts["history"]
-    if not prints or h["published"] > as_of:
-        sys.exit(f"{as_of}: no print in the fact sheet is public yet")
+    vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
+    if not vintages:
+        sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
+    h = vintages[-1]                                   # latest annual history public on AS_OF
+    # only prints and events published since that vintage and on or before AS_OF
+    prints = [p for p in facts["prints"] if h["published"] <= p["published"] <= as_of]
+    events = [e for e in facts["events"] if h["published"] <= e["published"] <= as_of]
+    if not prints:
+        sys.exit(f"{as_of}: no quarterly print since the {h['published']} history vintage")
     latest = prints[-1]
-    prev = (prints[-2]["consulting_lc"], prints[-2]["quarter"]) if len(prints) > 1 else (h["q4fy22_consulting_lc"], "Q4 FY22")
+    prev = (prints[-2]["consulting_lc"], prints[-2]["quarter"]) if len(prints) > 1 else (h["prev_q_consulting_lc"], h["prev_q_label"])
     eps_now = round(sum(latest["fy_eps_guide"]) / 2, 3)
+    eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}   # reported history only: the rules use this
+    cur_fy = max(eps_hist) + 1
+    fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
 
     # ── market statistics, prices truncated at AS_OF ──
     days = sorted(d for d in acn if d <= as_of)
@@ -99,10 +104,12 @@ def build(as_of, facts, acn, spx, engine):
     ma, mm = sum(ra) / len(ra), sum(rm) / len(rm)
     vol = (sum((x - ma) ** 2 for x in ra) / len(ra)) ** 0.5 * 252 ** 0.5
     beta = (sum((x - ma) * (y - mm) for x, y in zip(ra, rm)) / len(ra)) / (sum((y - mm) ** 2 for y in rm) / len(rm))
-    eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}   # reported history only: the rules use this
-    eps = {**eps_hist, max(eps_hist) + 1: eps_now}                     # + current-FY guide, for the P/E series
+    eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY guide, for the P/E series
     fy = lambda d: int(d[:4]) + (1 if int(d[5:7]) >= 9 else 0)
-    window = [d for d in days if d > minus_years(as_of, 10)]
+    window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
+    years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
+    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
     pe = {d: acn[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     q = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -114,51 +121,91 @@ def build(as_of, facts, acn, spx, engine):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: acn[d][2])
 
-    # ── era-dependent text, from facts only ──
-    stage = ("losers" if any(e["kind"] == "genai_loser_repricing" for e in events) else
-             "sellside" if any(e["kind"] == "genai_sellside" for e in events) else "chatgpt_only")
-    ai_inv = any(e["kind"] == "company_ai_investment" for e in events)
+    # ── forward guide and margin step (documented fallbacks when the company did not guide them) ──
+    if latest.get("next_q_guide_lc"):
+        fwd, fwd_label, fwd_period = latest["next_q_guide_lc"], f"{latest['next_q']} guide", latest["next_q"]
+    else:                                    # no next-quarter LC guide: use the full-year LC guide
+        fwd, fwd_label, fwd_period = latest["fy_rev_guide_lc"], f"{fy_now} guide", fy_now
+    margin_guided = bool(latest.get("fy_margin_guide"))
+    fy_margin_base = sum(latest["fy_margin_guide"]) / 2 if margin_guided else h["prev_fy_op_margin"]
+    fx = latest.get("fy_fx")
+
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
-    pe_txt = f"{close / eps_now:.1f}x FY23E — {val_word}, not an AI discount."
-    reason = {
-        "chatgpt_only": f"Live since 2022-11-30 (ChatGPT), but there is no sell-side or price read on IT services yet and the stock trades at {pe_txt}",
-        "sellside": f"Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}",
-        "losers": ("Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN "
-                   f"was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}"),
-    }[stage] + (" Re-file under AI_EXPOSED only if dated evidence shows the market pricing AI substitution of IT-services work."
-                if stage == "chatgpt_only" else
-                " Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan "
-                "describes, or it shows up in managed-services growth.")
-    genai_opp = ("GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k" if ai_inv else
-                 "GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first" if stage != "chatgpt_only" else
-                 "GenAI as a services opportunity: ChatGPT opens an advisory/implementation market; no client data yet")
-    genai_risk = ("GenAI as a deflation driver for legacy delivery hours (J.P.Morgan) — not yet in the numbers" if stage != "chatgpt_only" else
-                  "GenAI as a risk to delivery hours — no evidence yet, not in the numbers")
-    # every GenAI sentence follows the evidence public on AS_OF: before the J.P.Morgan note (2023-02-10)
-    # nothing dated described a deflation mechanism for IT services, so the text does not either
-    if stage == "chatgpt_only":
-        genai_trigger = "No dated evidence yet on GenAI's net effect on services demand"
+    themes = {e["theme"] for e in events}
+    if "GENAI" in themes:
+        g = [e for e in events if e["theme"] == "GENAI"]
+        stage = ("losers" if any(e["kind"] == "genai_loser_repricing" for e in g) else
+                 "sellside" if any(e["kind"] == "genai_sellside" for e in g) else "chatgpt_only")
+        ai_inv = any(e["kind"] == "company_ai_investment" for e in g)
+        pe_txt = f"{close / eps_now:.1f}x {fy_e_s} — {val_word}, not an AI discount."
+        reason = {
+            "chatgpt_only": f"Live since 2022-11-30 (ChatGPT), but there is no sell-side or price read on IT services yet and the stock trades at {pe_txt}",
+            "sellside": f"Live since 2022-11-30, but the sell-side read for ACN was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}",
+            "losers": ("Live since 2022-11-30 and already repricing obvious losers (Chegg, 2023-05-02), but the sell-side read for ACN "
+                       f"was share gain (J.P.Morgan, 2023-02-10) and the stock trades at {pe_txt}"),
+        }[stage] + (" Re-file under AI_EXPOSED only if dated evidence shows the market pricing AI substitution of IT-services work."
+                    if stage == "chatgpt_only" else
+                    " Re-file under AI_EXPOSED only when the multiple starts discounting the legacy-services deflation J.P.Morgan "
+                    "describes, or it shows up in managed-services growth.")
+        watch = [{"theme": "GENAI", "status": "live, no read on IT services yet" if stage == "chatgpt_only" else "live, priced as a tailwind",
+                  "reason": reason}]
+        opp = ("GenAI as the next services cycle: $3B Data & AI investment, practitioners 40k -> 80k" if ai_inv else
+               "GenAI as a services opportunity: J.P.Morgan expects global consultancies to gain share first" if stage != "chatgpt_only" else
+               "GenAI as a services opportunity: ChatGPT opens an advisory/implementation market; no client data yet")
+        risk = ("GenAI as a deflation driver for legacy delivery hours (J.P.Morgan) — not yet in the numbers" if stage != "chatgpt_only" else
+                "GenAI as a risk to delivery hours — no evidence yet, not in the numbers")
+        factors = [(opp, 0.2, 0.10), (risk, -0.2, 0.10)]
+        sig_name = "GenAI: net effect on services"
+        # every GenAI sentence follows the evidence public on AS_OF: before the J.P.Morgan note (2023-02-10)
+        # nothing dated described a deflation mechanism for IT services, so the text does not either
+        if stage == "chatgpt_only":
+            trigger = "No dated evidence yet on GenAI's net effect on services demand"
+            key_tail = ("A demand recession hits discretionary consulting first; the bear needs it\n"
+                        "  to spread to run/maintain work as well.")
+            cat3 = "(3) Consulting vs managed-services bookings mix — where a slowdown shows first"
+            cat4 = "(4) Managed-services renewal pricing"
+        else:
+            trigger = "Legacy-services pricing deflates faster than GenAI advisory grows"
+            key_tail = ("A JOINT event: a demand recession alone hits consulting, legacy-services\n"
+                        "  deflation (J.P.Morgan's mechanism) alone hits run/maintain work — the bear needs both.")
+            cat3 = "(3) First disclosed GenAI bookings — does the share gain J.P.Morgan expects show up?"
+            cat4 = "(4) Managed-services renewal pricing — where legacy-services deflation would show first"
+        theme_summary = ("GenAI is live but there is no read yet on what it does to IT services" if stage == "chatgpt_only" else
+                         "GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat")
+    elif "OFFSHORE" in themes:
+        stage = "offshore"
+        watch = [{"theme": "OFFSHORE", "status": "live, company-acknowledged; no market read",
+                  "reason": ("Live: Accenture's own FY2007 10-K names off-shore providers, 'particularly Indian providers ... often at "
+                             "highly competitive prices', among its competitors and warns of margin erosion 'if current pricing pressures "
+                             "accelerate', while its own Global Delivery Network grew to 71,000+ people. The stock trades at "
+                             f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated "
+                             "evidence shows the market pricing offshore substitution for ACN specifically.")}]
+        factors = [("Global Delivery Network: 71,000+ people in lower-cost locations (+23,000 in FY07) — Accenture runs the offshore model itself", 0.2, 0.10),
+                   ("Offshore Indian providers 'often at highly competitive prices'; margin erosion 'if current pricing pressures accelerate'", -0.2, 0.10)]
+        sig_name = "Offshore: net effect on services"
+        trigger = "Offshore pricing pressure accelerates faster than global-delivery savings"
+        key_tail = ("A JOINT event: a demand recession alone hits consulting, accelerating offshore\n"
+                    "  pricing pressure (10-K FY07) alone hits outsourcing margins — the bear needs both.")
+        bt = latest.get("fy_bookings_target_b")
+        cat3 = f"(3) Bookings run-rate vs the ${bt[0]}-{bt[1]}B {fy_now} target" if bt else "(3) Bookings run-rate"
+        cat4 = "(4) Outsourcing pricing — where offshore pressure would show first"
+        theme_summary = "offshore competition is live and company-acknowledged; no dated evidence ties the multiple to it"
+    else:
+        stage, watch, factors = "none", [], []
+        sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
         key_tail = ("A demand recession hits discretionary consulting first; the bear needs it\n"
                     "  to spread to run/maintain work as well.")
-        cat3 = "(3) Consulting vs managed-services bookings mix — where a slowdown shows first"
-        cat4 = "(4) Managed-services renewal pricing"
-    else:
-        genai_trigger = "Legacy-services pricing deflates faster than GenAI advisory grows"
-        key_tail = ("A JOINT event: a demand recession alone hits consulting, legacy-services\n"
-                    "  deflation (J.P.Morgan's mechanism) alone hits run/maintain work — the bear needs both.")
-        cat3 = "(3) First disclosed GenAI bookings — does the share gain J.P.Morgan expects show up?"
-        cat4 = "(4) Managed-services renewal pricing — where legacy-services deflation would show first"
-    genai_summary = ("GenAI is live but there is no read yet on what it does to IT services" if stage == "chatgpt_only" else
-                     "GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat")
+        cat3, cat4 = "(3) Consulting vs outsourcing bookings mix — where a slowdown shows first", "(4) Outsourcing renewal pricing"
+        theme_summary = "no disruption theme has dated evidence"
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
-    tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{latest['next_q']} FY23 print)"
+    tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{latest['next_q']} {fy_now} print)"
 
-    sources = [dict(id="S1", **facts["sources"]["S1"]), dict(id="S2", **facts["sources"]["S2"])]
-    sources += [dict(id=p["source"], **facts["sources"][p["source"]]) for p in prints]
-    sources += [dict(id=e["id"], **facts["sources"][e["id"]]) for e in events]
+    ids = list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + [e["id"] for e in events]
+    sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "S12", "published": as_of, "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/ACN/history",
-                    "supports": f"close ${close:.2f}, 52-week range, realized vol, beta, the 10-yr P/E distribution"})
+                    "supports": f"close ${close:.2f}, 52-week range, realized vol, beta, the {window_label} P/E distribution"})
     for s in sources:
         assert s["published"] <= as_of, (as_of, s["id"])
 
@@ -174,7 +221,7 @@ def build(as_of, facts, acn, spx, engine):
 """
 ACN Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
 ──────────────────────────────────────────────────────────────────────
-Accenture plc (NYSE: ACN)  ·  IT Services & Consulting — Strategy & Consulting, Technology, Operations
+{h["company"]} (NYSE: ACN)  ·  {h["business_line"]}
 Generated by retro/build_acn.py from retro/facts/ACN.json: the constants below are the facts public on
 AS_OF; the engine underneath derives every scenario input from them by frozen rules. Do not edit by hand.
 
@@ -184,7 +231,7 @@ Format: segment bridge → signal dashboard → bear anatomy → updated EPP →
 
 # ── RETROSPECTIVE FRAME ───────────────────────────────────────────────────────
 TICKER      = "ACN"
-COMPANY     = "Accenture plc"
+COMPANY     = {R(h["company"])}
 AS_OF       = "{as_of}"
 PRICE_DATE  = "{as_of}"
 METHODOLOGY = ("house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs "
@@ -195,9 +242,8 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 PIT_PROFILE = {{
     "kind": "DURABLE",
     "risk": 2,
-    "why": {R(WHY)},
-    "theme_watch": [{{"theme": "GENAI", "status": {R("live, no read on IT services yet" if stage == "chatgpt_only" else "live, priced as a tailwind")},
-                     "reason": {R(reason)}}}],
+    "why": {R(h["why"])},
+    "theme_watch": {R(watch)},
     "evidence": {R([e["id"] for e in events])},
 }}
 
@@ -205,8 +251,9 @@ PIT_PROFILE = {{
 CURRENT_PRICE   = {close:.2f}   # USD, NYSE close {as_of}
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
-PE_PCTL         = {R(pctl)}   # current-FY P/E, the 10 years to AS_OF
+PE_PCTL         = {R(pctl)}   # current-FY P/E over the window below
 PE_NOW_PCTL     = {pe_now_pctl}    # share of those daily P/Es at or below today's
+WINDOW_LABEL    = {R(window_label)}   # P/E window: {window[0]} .. AS_OF
 YEARLY_MIN_PE   = {R(yearly)}   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = {vol:.3f}   # 1-yr realized, daily log returns
 VOL_BETA        = {beta:.2f}    # 1-yr beta vs S&P 500
@@ -215,30 +262,38 @@ VOL_52W_HIGH    = {high52:.2f}
 REF_LOW         = {acn[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
-# ── FACTS: company history (S1, S2) ───────────────────────────────────────────
+# ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}) ──
 EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}
 REVENUE_HIST  = {R(rev)}   # USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
-FY22_MARGIN   = {h["fy22_op_margin"]}
-CONS_DIVIDEND = {h["dividend_quarterly"] * 4:.2f}   # ${h["dividend_quarterly"]:.2f}/quarter (S1)
+FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
+PREV_FY_MARGIN = {h["prev_fy_op_margin"]}
+TAX_RATE      = {h["tax_rate"]}
+CONS_DIVIDEND = {h["dividend_annual"]:.2f}   # {h["dividend_note"]}
 VOL_DIVIDEND  = CONS_DIVIDEND
+SERVICE_LINE  = {R(h["service_line"])}
+MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
 
 # ── FACTS: latest print and guide ({latest["source"]}, published {latest["published"]}) ──
-LATEST          = {R({k: latest[k] for k in latest_keys})}
+LATEST          = {R({k: latest.get(k) for k in latest_keys})}
 PREV_CONSULTING = {R(prev)}
-EPP_TODAY_EPS   = {eps_now}   # FY2023E {latest["eps_label"]}, guide midpoint
-FY_MARGIN_GUIDE_MID = {sum(latest["fy_margin_guide"]) / 2}
-FY23E_REVENUE_B = {rev[2022] * (1 + (sum(latest["fy_rev_guide_lc"]) / 2 + latest["fy_fx"]) / 100):.2f}
+EPP_TODAY_EPS   = {eps_now}   # {fy_e} {latest["eps_label"]}, guide midpoint
+FWD_GUIDE_LC    = {R(tuple(fwd))}   # {"next-quarter" if fwd_period == latest["next_q"] else "full-year (no next-quarter LC guide given)"} revenue guide, LC
+FWD_GUIDE_LABEL, FWD_PERIOD = {R(fwd_label)}, {R(fwd_period)}
+MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
+FY_MARGIN_BASE  = {fy_margin_base}
+FY_REVENUE_B    = {rev[max(rev)] * (1 + (sum(latest["fy_rev_guide_lc"]) / 2 + (fx or 0)) / 100):.2f}
+FX_TEXT         = {R(f"{fx:+.1f}% FX" if fx is not None else "FX not guided")}
 SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in latest["groups"]])}
 GROUPS_BASIS    = {R(latest["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Share-gainer at scale: FY22 revenue +{h['fy22_revenue_lc_growth']}% LC, record ${h['fy22_bookings_b']}B bookings; {latest['quarter'].split()[0]} revenue {latest['revenue_lc']:+d}% LC")}
-BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']}B, FCF guide ${latest['fcf_guide_b'][0]}-{latest['fcf_guide_b'][1]}B, >=$7.1B returned{opt}")}
-GENAI_OPP_TEXT  = {R(genai_opp)}
-GENAI_RISK_TEXT = {R(genai_risk)}
-GENAI_SUMMARY   = {R(genai_summary)}
-GENAI_SIGNAL_TRIGGER = {R(genai_trigger)}
+SHARE_GAIN_TEXT = {R(f"Share-gainer at scale: {h['fy_label']} revenue +{h['prev_fy_revenue_lc_growth']}% LC, record ${h['prev_fy_bookings_b']}B bookings; {latest['quarter'].split()[0]} revenue {latest['revenue_lc']:+d}% LC")}
+BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']}B, FCF guide ${latest['fcf_guide_b'][0]}-{latest['fcf_guide_b'][1]}B, {h['cash_return_text']}{opt}")}
+THEME_FACTORS   = {R(factors)}
+THEME_SIGNAL_NAME    = {R(sig_name)}
+THEME_SIGNAL_TRIGGER = {R(trigger)}
+THEME_SUMMARY        = {R(theme_summary)}
 KEY_TRIGGER_TAIL     = {R(key_tail)}
 CATALYST_3      = {R(cat3)}
 CATALYST_4      = {R(cat4)}
@@ -264,7 +319,7 @@ def main():
         dates += weekly_dates(a.weekly[0], a.weekly[1], sorted(acn), facts["prints"])
     for d in sorted(set(dates)):
         tag, q, stage = build(d, facts, acn, spx, engine)
-        print(f"{d}  {tag:<32}  latest print {q:<8}  GenAI evidence: {stage}")
+        print(f"{d}  {tag:<32}  latest print {q:<8}  theme evidence: {stage}")
 
 
 if __name__ == "__main__":
