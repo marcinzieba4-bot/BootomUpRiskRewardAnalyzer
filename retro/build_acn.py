@@ -203,7 +203,7 @@ def build(as_of, facts, acn, spx, engine):
                              f"Network {e.get('gdn_verb', 'grew to')} {e['gdn_people']} people. The stock trades at "
                              f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated "
                              "evidence shows the market pricing offshore substitution for ACN specifically.")}]
-        factors = [(f"Global Delivery Network: {e['gdn_people']} people in lower-cost locations ({e['gdn_added']}) — Accenture runs the offshore model itself", 0.2, 0.10),
+        factors = [(f"Global Delivery Network: {e['gdn_people']} people ({e['gdn_added']}) — Accenture runs the offshore model itself", 0.2, 0.10),
                    (f"{rivals}; {e['warning_short']}", -0.2, 0.10)]
         sig_name = "Offshore: net effect on services"
         trigger = "Offshore pricing pressure accelerates faster than global-delivery savings"

@@ -1,0 +1,244 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2011-10-21",
+ "price_date": "2011-10-21",
+ "price": 58.08,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($28.8B in FY11); discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [
+   {
+    "theme": "OFFSHORE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Accenture's own FY2011 10-K names off-shore providers, 'particularly in India, the Philippines and China ... often at highly competitive prices and on more aggressive contractual terms', among its competitors and says competition from lower-cost locations 'has reduced the prices we can charge for some of our services', while its own Global Delivery Network grew to about 141,000 people. The stock trades at 15.1x FY12E — near its own median. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."
+   }
+  ],
+  "evidence": [
+   "S45"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($28.8B in FY11); discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.30x; +26% to EPP floor; model-vs-market gap +1.51; conservative 2yr +28%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.3,
+  "ratio_b_fmt": "0.30x",
+  "epp": 46.08,
+  "epp_gap_pct": 26.0,
+  "epp_adj": 0.0,
+  "proxy_composite": 3.4,
+  "sca": 0.075,
+  "adj_composite": 3.475,
+  "market_composite": 1.97,
+  "adj_gap": 1.51,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 28.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.78,
+    "pe": 12.7,
+    "price": 48,
+    "desc": "Flat EPS (worst year FY03-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.97,
+    "pe": 15.8,
+    "price": 79,
+    "desc": "EPS +13.7%/yr (latest guide + margin + buyback); P/E at its 9.1-yr median"
+   },
+   "BULL": {
+    "eps": 5.15,
+    "pe": 17.9,
+    "price": 92,
+    "desc": "EPS +15.8%/yr (FY03-FY11 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.3,
+    "pe": 19.9,
+    "price": 125,
+    "desc": "EPS +28.1%/yr (best 2-yr run FY03-FY11); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.51,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.85,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.66,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.0,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.25,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.6,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.36,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.33,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.8,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 0.8,
+   "adj_gap": 1.51,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 26.0,
+   "adj_gap": 1.79,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 28.5,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "ACN (retrospective, 2011-10-21) ◉ BUY — Ratio B 0.30x (17.4% downside to Bear $48 / +58.4% upside to Bull $92) | Adj composite 3.48 vs market 1.97: gap +1.51 [UNDERVALUED] | +26% above the EPP floor $46 (12x FY12E $3.84) | Conservative 2-yr case: +28.5% total (+14.3%/yr) | At 15.1x FY12E the 15% hurdle price $77 sits at or below the BASE case; consulting +16% LC in Q4, FY12 guided +7-10% LC; offshore competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "S45",
+   "published": "2011-10-21",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
+   "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
+  },
+  {
+   "id": "S44",
+   "published": "2011-09-27",
+   "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
+   "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
+  },
+  {
+   "id": "S40",
+   "published": "2010-10-26",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510235847/d10k.htm",
+   "supports": "selected financial data FY06-FY10 (net revenues, diluted EPS; FY08 restated to $2.64), FY10 diluted shares 766.0M; competitors include off-shore providers 'particularly in India or China ... on more aggressive contractual terms'; lower-cost competition 'has put downward pressure on the prices we can charge'; Global Delivery Network of more than 116,000 people"
+  },
+  {
+   "id": "S35",
+   "published": "2009-10-19",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509209671/d10k.htm",
+   "supports": "selected financial data FY05-FY09 (net revenues, diluted EPS), FY09 diluted shares 785.4M; competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; 'experiencing pricing pressures from some clients'; Global Delivery Network of more than 81,000 people"
+  },
+  {
+   "id": "S29",
+   "published": "2008-10-20",
+   "title": "Accenture Ltd annual report on Form 10-K for fiscal 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013708012835/c46977e10vk.htm",
+   "supports": "selected financial data FY04-FY08 (net revenues, diluted EPS), FY08 diluted shares 822.4M; competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; 'the continuation of pricing pressures could result in permanent changes in pricing policies'; Global Delivery Network of approximately 83,000 people (+11,000 in FY08)"
+  },
+  {
+   "id": "S21",
+   "published": "2007-10-23",
+   "title": "Accenture Ltd annual report on Form 10-K for fiscal 2007",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013707015822/c19337e10vk.htm",
+   "supports": "selected financial data FY03-FY07 (net revenues, diluted EPS, diluted shares); competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; margin erosion 'if current pricing pressures accelerate'; Global Delivery Network of 71,000+ people (+23,000 in FY07)"
+  },
+  {
+   "id": "S20",
+   "published": "2007-09-27",
+   "title": "Accenture Ltd Q4/FY07 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013707014753/c18901exv99w1.htm",
+   "supports": "FY07 net revenues $19.70B (+13% LC), operating margin 12.7%, record $22.0B bookings, Q4 consulting +15% LC absent the NHS agreement, FY06 adjusted EPS $1.61, annual dividend $0.42"
+  },
+  {
+   "id": "S34",
+   "published": "2009-10-01",
+   "title": "Accenture plc Q4/FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509201992/dex991.htm",
+   "supports": "Q4 and FY09 net revenues by type of work and operating group, bookings, margin and EPS with and without the $253M restructuring charge, diluted shares, cash; $0.75 annual dividend; FY10 and Q1 guidance"
+  },
+  {
+   "id": "S43",
+   "published": "2011-06-23",
+   "title": "Accenture plc Q3 FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511171855/dex991.htm",
+   "supports": "Q3 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q4 guidance"
+  },
+  {
+   "id": "S39",
+   "published": "2010-09-30",
+   "title": "Accenture plc Q4/FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510221087/dex991.htm",
+   "supports": "Q4 and FY10 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.45 semi-annual dividend; FY11 and Q1 guidance"
+  },
+  {
+   "id": "S12",
+   "published": "2011-10-21",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $58.08, 52-week range, realized vol, beta, the 9.1-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}

@@ -167,6 +167,7 @@ python3 retro/build_acn.py --weekly 2008-05-05 2008-09-30        # start a range
 python3 retro/build_acn.py --weekly 2008-10-06 2008-12-31
 python3 retro/build_acn.py --weekly 2009-01-05 2009-12-31
 python3 retro/build_acn.py --weekly 2010-01-04 2010-12-31
+python3 retro/build_acn.py --weekly 2011-01-03 2011-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

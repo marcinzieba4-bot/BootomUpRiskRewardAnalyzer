@@ -193,6 +193,36 @@
    "title": "Accenture plc Q1 FY11 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510282424/dex991.htm",
    "supports": "Q1 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q2 guidance"
+  },
+  "S42": {
+   "published": "2011-03-24",
+   "title": "Accenture plc Q2 FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511076477/dex991.htm",
+   "supports": "Q2 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $0.45 semi-annual dividend; raised FY11 and Q3 guidance"
+  },
+  "S43": {
+   "published": "2011-06-23",
+   "title": "Accenture plc Q3 FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511171855/dex991.htm",
+   "supports": "Q3 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q4 guidance"
+  },
+  "S44": {
+   "published": "2011-09-27",
+   "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
+   "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
+  },
+  "S45": {
+   "published": "2011-10-21",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
+   "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
+  },
+  "S46": {
+   "published": "2011-12-15",
+   "title": "Accenture plc Q1 FY12 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511342341/d271441dex991.htm",
+   "supports": "Q1 FY12 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY12 and Q2 guidance"
   }
  },
  "history_vintages": [
@@ -433,6 +463,77 @@
    "margin_signal_name": "Operating margin change",
    "business_line": "Management consulting, technology services and outsourcing",
    "tax_note": "FY11 guide 28-29% (S39)"
+  },
+  {
+   "published": "2011-10-21",
+   "sources": [
+    "S45",
+    "S44",
+    "S40",
+    "S35",
+    "S29",
+    "S21",
+    "S20",
+    "S34",
+    "S43"
+   ],
+   "company": "Accenture plc",
+   "fy_label": "FY11",
+   "why": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($28.8B in FY11); discretionary consulting demand is cyclical, the franchise is not",
+   "eps_gaap": {
+    "2003": 1.05,
+    "2004": 1.22,
+    "2005": 1.56,
+    "2006": 1.59,
+    "2007": 1.97,
+    "2008": 2.64,
+    "2009": 2.44,
+    "2010": 2.66,
+    "2011": 3.4
+   },
+   "eps_normalized": {
+    "2003": 1.05,
+    "2004": 1.22,
+    "2005": 1.56,
+    "2006": 1.61,
+    "2007": 1.97,
+    "2008": 2.64,
+    "2009": 2.68,
+    "2010": 2.66,
+    "2011": 3.4
+   },
+   "normalization": "FY07-FY11 GAAP from the FY11 10-K (S45), FY03-FY06 from earlier 10-Ks (S21, S29, S35, S40); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY02 excluded: $0.56 GAAP EPS depressed by a $321M investment loss, no published adjusted figure",
+   "revenue_usd_b": {
+    "2003": 11.818,
+    "2004": 13.673,
+    "2005": 15.547,
+    "2006": 16.646,
+    "2007": 19.696,
+    "2008": 23.387,
+    "2009": 21.577,
+    "2010": 21.551,
+    "2011": 25.507
+   },
+   "diluted_shares_m": {
+    "2003": 997.163,
+    "2011": 742.185
+   },
+   "pe_window_start": "2002-09-01",
+   "prev_fy_op_margin": 13.6,
+   "prev_fy_revenue_lc_growth": 15,
+   "prev_fy_bookings_b": 28.8,
+   "prev_fy_bookings_record": true,
+   "prev_q_consulting_lc": 17,
+   "prev_q_label": "Q3 FY11",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY11, the first to guide FY12) (S43)",
+   "dividend_annual": 1.35,
+   "dividend_note": "$0.675 semi-annual, declared 2011-09-27 (S44)",
+   "tax_rate": 0.275,
+   "cash_return_text": "$6B buyback authority",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
+   "tax_note": "FY12 guide 27-28% (S44)"
   },
   {
    "published": "2022-10-12",
@@ -1677,6 +1778,373 @@
    "cash_return_text": "$2.5B buyback authority"
   },
   {
+   "quarter": "Q2 FY11",
+   "published": "2011-03-24",
+   "source": "S42",
+   "extra_sources": [
+    "S37"
+   ],
+   "release": "Mar 24",
+   "revenue_b": 6.05,
+   "revenue_lc": 18,
+   "consulting_lc": 20,
+   "managed_lc": 15,
+   "bookings_b": 6.98,
+   "bookings_lc": 8,
+   "bookings_lc_note": "derived: +7.1% USD vs Q2 FY10 $6.52B (S37), less the negative 1% foreign-currency impact the release states for Q2 bookings",
+   "consulting_bookings_b": 3.8,
+   "consulting_revenue_b": 3.51,
+   "margin_label": "op margin",
+   "margin": 12.7,
+   "margin_bp": 10,
+   "groups_basis": "H1 actuals",
+   "groups": [
+    [
+     "Products",
+     2.77,
+     15
+    ],
+    [
+     "Financial Services",
+     2.567,
+     20
+    ],
+    [
+     "Communications & High Tech",
+     2.559,
+     16
+    ],
+    [
+     "Resources",
+     2.299,
+     25
+    ],
+    [
+     "Health & Public Service",
+     1.896,
+     14
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    3.22,
+    3.3
+   ],
+   "fy_eps_guide_note": "raised from $3.08-3.16",
+   "fy_rev_guide_lc": [
+    11,
+    14
+   ],
+   "fy_rev_guide_note": "raised from 8-11%",
+   "fy_fx": 2.0,
+   "fy_fx_note": "FY11 outlook now assumes +2% FX vs FY10 (was 0%)",
+   "fy_margin_guide": [
+    13.6,
+    13.7
+   ],
+   "next_q": "Q3",
+   "next_q_guide_b": [
+    6.3,
+    6.5
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a +4% FX assumption",
+   "next_print": "Q3 FY11 print (late June)",
+   "fcf_guide_b": [
+    2.4,
+    2.6
+   ],
+   "cash_b": 4.68,
+   "diluted_shares_m": 742.9,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    25,
+    28
+   ],
+   "tax_rate": 0.285,
+   "cash_return_text": "$2.4B buyback authority",
+   "dividend_annual": 0.9,
+   "dividend_note": "$0.45 semi-annual, declared 2011-03-24 (S42)"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "published": "2011-06-23",
+   "source": "S43",
+   "extra_sources": [
+    "S38"
+   ],
+   "release": "Jun 23",
+   "revenue_b": 6.72,
+   "revenue_lc": 15,
+   "consulting_lc": 17,
+   "managed_lc": 12,
+   "bookings_b": 7.1,
+   "bookings_lc": 4,
+   "bookings_lc_note": "derived: +10.4% USD vs Q3 FY10 $6.43B (S38), less the positive 6% foreign-currency impact the release states for Q3 bookings",
+   "consulting_bookings_b": 3.7,
+   "consulting_revenue_b": 3.97,
+   "margin_label": "op margin",
+   "margin": 14.1,
+   "margin_bp": -30,
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Products",
+     4.345,
+     14
+    ],
+    [
+     "Financial Services",
+     4.008,
+     19
+    ],
+    [
+     "Communications & High Tech",
+     4.002,
+     16
+    ],
+    [
+     "Resources",
+     3.583,
+     22
+    ],
+    [
+     "Health & Public Service",
+     2.867,
+     3
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    3.36,
+    3.4
+   ],
+   "fy_eps_guide_note": "raised from $3.22-3.30",
+   "fy_rev_guide_lc": [
+    14,
+    15
+   ],
+   "fy_rev_guide_note": "raised from 11-14%",
+   "fy_fx": 3.0,
+   "fy_fx_note": "FY11 outlook now assumes +3% FX vs FY10 (was +2%)",
+   "fy_margin_guide": [
+    13.6,
+    13.7
+   ],
+   "next_q": "Q4",
+   "next_q_guide_b": [
+    6.4,
+    6.6
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a +8% FX assumption",
+   "next_print": "Q4 FY11 print (late September)",
+   "fcf_guide_b": [
+    2.5,
+    2.7
+   ],
+   "cash_b": 5.3,
+   "diluted_shares_m": 745.5,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    25,
+    28
+   ],
+   "fy_bookings_target_note": "now 'at the upper end' of the range",
+   "tax_rate": 0.275,
+   "cash_return_text": "$1.7B buyback authority"
+  },
+  {
+   "quarter": "Q4 FY11",
+   "published": "2011-09-27",
+   "source": "S44",
+   "extra_sources": [
+    "S39"
+   ],
+   "release": "Sep 27",
+   "revenue_b": 6.69,
+   "revenue_lc": 14,
+   "consulting_lc": 16,
+   "managed_lc": 13,
+   "bookings_b": 8.4,
+   "bookings_lc": 19,
+   "bookings_lc_note": "derived: +29.2% USD vs Q4 FY10 $6.5B (S39), less the positive 9% foreign-currency impact the release states for Q4 bookings",
+   "consulting_bookings_b": 4.16,
+   "consulting_revenue_b": 3.88,
+   "margin_label": "op margin",
+   "margin": 13.8,
+   "margin_bp": 60,
+   "groups_basis": "FY11 actuals",
+   "groups": [
+    [
+     "Products",
+     5.931,
+     16
+    ],
+    [
+     "Communications & High Tech",
+     5.434,
+     13
+    ],
+    [
+     "Financial Services",
+     5.381,
+     13
+    ],
+    [
+     "Resources",
+     4.882,
+     18
+    ],
+    [
+     "Health & Public Service",
+     3.861,
+     12
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    3.8,
+    3.88
+   ],
+   "fy_eps_guide_note": "first FY12 guide in a filing",
+   "fy_rev_guide_lc": [
+    7,
+    10
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": 0.0,
+   "fy_fx_note": "FY12 outlook assumes 0% FX vs FY11",
+   "fy_margin_guide": [
+    13.7,
+    13.9
+   ],
+   "next_q": "Q1",
+   "next_q_guide_b": [
+    6.8,
+    7.0
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a +3% FX assumption",
+   "next_print": "Q1 FY12 print (mid-December)",
+   "fcf_guide_b": [
+    3.1,
+    3.4
+   ],
+   "cash_b": 5.7,
+   "diluted_shares_m": 738.3,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    28,
+    31
+   ],
+   "tax_rate": 0.275,
+   "cash_return_text": "$6B buyback authority",
+   "dividend_annual": 1.35,
+   "dividend_note": "$0.675 semi-annual, declared 2011-09-27 (S44)",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_gaap": 3.4,
+    "eps_normalized": 3.4,
+    "normalization_note": "FY11 = GAAP $3.40 (S44; no adjusted figure published)",
+    "revenue_usd_b": 25.507,
+    "diluted_shares_m": 742.185,
+    "op_margin": 13.6,
+    "revenue_lc_growth": 15,
+    "bookings_b": 28.8,
+    "bookings_record": true,
+    "why": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($28.8B in FY11); discretionary consulting demand is cyclical, the franchise is not"
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "published": "2011-12-15",
+   "source": "S46",
+   "extra_sources": [
+    "S41"
+   ],
+   "release": "Dec 15",
+   "revenue_b": 7.07,
+   "revenue_lc": 14,
+   "consulting_lc": 11,
+   "managed_lc": 18,
+   "bookings_b": 7.8,
+   "bookings_lc": 20,
+   "bookings_lc_note": "derived: +23.6% USD vs Q1 FY11 $6.31B (S41), less the positive 3% foreign-currency impact the release states for Q1 bookings",
+   "consulting_bookings_b": 4.2,
+   "consulting_revenue_b": 4.08,
+   "margin_label": "op margin",
+   "margin": 13.9,
+   "margin_bp": 20,
+   "groups_basis": "Q1 actuals",
+   "groups": [
+    [
+     "Products",
+     1.67,
+     17
+    ],
+    [
+     "Comms, Media & Tech",
+     1.535,
+     16
+    ],
+    [
+     "Financial Services",
+     1.484,
+     11
+    ],
+    [
+     "Resources",
+     1.327,
+     15
+    ],
+    [
+     "Health & Public Service",
+     1.054,
+     11
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    3.76,
+    3.84
+   ],
+   "fy_eps_guide_note": "lowered by $0.04 on the FX assumption",
+   "fy_rev_guide_lc": [
+    7,
+    10
+   ],
+   "fy_rev_guide_note": "",
+   "fy_fx": -1.0,
+   "fy_fx_note": "FY12 outlook now assumes -1% FX vs FY11 (was 0%)",
+   "fy_margin_guide": [
+    13.7,
+    13.9
+   ],
+   "next_q": "Q2",
+   "next_q_guide_b": [
+    6.5,
+    6.8
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -1% FX assumption",
+   "next_print": "Q2 FY12 print (late March)",
+   "fcf_guide_b": [
+    3.1,
+    3.4
+   ],
+   "cash_b": 5.1,
+   "diluted_shares_m": 730.1,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    28,
+    31
+   ],
+   "tax_rate": 0.275,
+   "cash_return_text": "$5.8B buyback authority"
+  },
+  {
    "quarter": "Q1 FY23",
    "published": "2022-12-16",
    "source": "S3",
@@ -1965,6 +2433,20 @@
    "warning_short": "'downward pressure on the prices we can charge ... likely to continue'",
    "gdn_people": "116,000+",
    "gdn_added": "81,000+ a year earlier"
+  },
+  {
+   "id": "S45",
+   "published": "2011-10-21",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2011 10-K",
+   "doc_short": "10-K FY11",
+   "competitors_quote": "particularly in India, the Philippines and China ... often at highly competitive prices and on more aggressive contractual terms",
+   "competitors_short": "Offshore providers 'particularly in India, the Philippines and China ... on more aggressive contractual terms'",
+   "warning": "says competition from lower-cost locations 'has reduced the prices we can charge for some of our services'",
+   "warning_short": "'has reduced the prices we can charge for some of our services'",
+   "gdn_people": "about 141,000",
+   "gdn_added": "116,000+ a year earlier"
   },
   {
    "id": "S13",
