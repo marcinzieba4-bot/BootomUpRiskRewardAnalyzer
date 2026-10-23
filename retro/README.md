@@ -286,20 +286,22 @@ outcome or finding enters a UNP model. Outputs go to `staging/retrospective/UNP/
 
 ```bash
 python3 retro/build_unp.py --weekly 2008-01-01 2008-03-30                   # 13 dates, 2008-01-04 .. 2008-03-28
+python3 retro/build_unp.py --weekly 2008-03-31 2008-12-31                   # 40 dates, 2008-04-04 .. 2008-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2008-03-31 UNP
+python3 retro/tools/firewall.py 2009-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
 
-- **Prices as traded.** Yahoo's series is split-adjusted. The builder and `retro_tool.py` undo the later splits
-  (UNP split 2:1 in 2008 and 2014), so a model's price, 52-week range and P/E share one basis with the per-share
-  facts of their day: $120.04 on 2008-01-04, not $30.01. Outcomes run on the same basis. ACN has no splits, and
-  its 982 models rebuild byte-identical.
+- **Prices on the as-of share basis.** Yahoo's series is split-adjusted to today's shares. The builder multiplies
+  the whole series by the splits after AS_OF (UNP split 2:1 in 2008 and 2014), so the AS_OF close is the price as
+  traded. Earlier days in the window are adjusted only for splits already public, so price, 52-week range and P/E
+  share one basis with the per-share facts: $120.04 on 2008-01-04, not $30.01. `retro_tool.py` checks the price as
+  traded, and outcomes run on the same basis. ACN has no splits, and its 982 models rebuild byte-identical.
 - **EPS** is diluted EPS from continuing operations. A company-published figure excluding a one-off replaces GAAP:
   2004 $2.89 (asbestos charge) and 2005 $3.41 (tax reduction), both from the Q4 2005 release. 2000 and 2002 stay
   GAAP ($3.22, $4.78): the company's adjusted $3.61 and $4.30 were on the pre-2003 basis that still included
@@ -345,6 +347,38 @@ Judgement calls that could carry hindsight: the signal thresholds; DURABLE rathe
 class label only, not the price state or the tier); dating the FY08 guide from the 10-K, although it may have
 been given on the 2008-01-24 conference call (no transcript is in the filings, and the later date can only lag,
 never leak).
+
+### UNP April to December 2008: the split, a renamed line, quarter guides
+
+Every 8-K, 10-Q and release of the period was read. Encoding rules decided before any of these 40 dates was built
+or scored:
+
+- **A stock split restates per-share facts.** The 2-for-1 split was announced on 2008-05-01 (8-K after the close,
+  dated 2008-05-02), paid 2008-05-28, and the stock trades on the new basis from 2008-05-29. From that date every
+  per-share fact published before it is divided by 2 and every share count doubled: EPS history and guides,
+  print EPS, dividends, diluted shares. Facts published later are already on the new basis. Among them is the
+  Q2 2008 release, whose prior-year figures the company restated. The builder checks that the split's effective
+  date matches the price data. P/E, the scenarios' multiples and Ratio B do not move across the split; prices,
+  EPS and the dividend halve (2008-05-23: $152.16 on $8.00; 2008-05-30: $82.31 on $4.00).
+- **The FY08 EPS guide stands all year.** No release or 10-Q of 2008 gives a new full-year number. The 8-K of
+  2008-09-23 says full-year targets "will change, but the magnitude is somewhat uncertain". That is a guide in words,
+  so the last numeric range ($7.75-8.25, $3.875-4.125 after the split) stands and the words go in the guide line.
+- **Quarter EPS guides are notes.** The 8-Ks of 2008-06-17 (Q2 toward the bottom half of $0.90-0.98) and
+  2008-09-23 (Q3 $1.28-1.33, up from $1.10-1.20) give next-quarter EPS. Method r2 has no input for a quarter's
+  EPS, so each is shown in the guide line until that quarter is reported.
+- **Freight revenue replaces commodity revenue** from the Q1 2008 release, with prior periods reclassified. The ACN
+  renamed-line rule applies: the signal and the bridge take the new name from the first print that uses it.
+- **Adds nothing:** the 8-K/A of 2008-05-06 (dividend record date), the DOJ settlement 8-K of 2008-07-22 (no effect
+  on earnings), the 10-Q/A of 2008-07-31 (cover-page share count), the debt and board 8-Ks, and the 10-Qs (no
+  outlook). The buyback deadline (March 2011) and announced record and payment dates are not quoted as dates.
+  The validator rejects any ISO date after AS_OF, and ACN's fact sheet never quotes scheduled dates either.
+- **Text-only change to January-March:** the guide line now takes each field from the latest guide that states it,
+  as documented above. On 2008-01-04 to 2008-01-18 it now also quotes the FY2006 10-K's "operating ratio below 80%".
+  No number or class changes.
+
+Seen in the build (method behaviour, not tuned): from the Q3 2008 print, BASE growth is that quarter's +16% freight
+revenue, which fuel surcharges inflate. The FY08 EPS guide stays at $4.00, while nine-month actual EPS is already
+$3.24 (the Q3 release) and the company says the full-year target will change.
 
 ## Categories change with the era
 

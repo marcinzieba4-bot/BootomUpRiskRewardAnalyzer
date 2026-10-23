@@ -16,6 +16,8 @@ are a dated list of their own. Fallbacks for what it does not guide (decided bef
   - no numeric revenue guide: BASE growth and the growth factor use the latest quarter's commodity revenue growth,
   - no numeric operating-ratio guide (words, or a one-sided bound such as "below 80%"): no guided margin step, and
     the operating-ratio signal uses the latest quarter's year-on-year change.
+A stock split restates, from its effective date, every per-share fact published before it (divided by the ratio) and
+every share count (multiplied by it); the prices of the whole window are on the AS_OF share basis.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it.
@@ -28,6 +30,7 @@ Usage
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/UNP/<AS_OF>
 """
 import argparse
+import copy
 import datetime as dt
 import json
 import math
@@ -37,6 +40,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, ".."))
 sys.path.insert(0, HERE)
+import retro_tool  # noqa: E402
 from build_acn import MONTHS, load_series, minus_years, weekly_dates  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "UNP.json")
@@ -48,9 +52,55 @@ def pct_range(lo, hi):
     return f"{lo:+g}%" if lo == hi else f"+{lo:g}-{hi:g}%" if lo >= 0 else f"{lo:+g}% to {hi:+g}%"
 
 
-def build(as_of, facts, px, spx, engine, out):
-    if as_of not in px:
+def money(x):
+    """$ amount with two decimals, three when a split leaves a half cent (7.75 / 2 = 3.875)."""
+    t = f"{x:.3f}"
+    return t[:-1] if t.endswith("0") else t
+
+
+def on_basis(facts, as_of):
+    """The fact sheet with every per-share fact on the AS_OF share basis: a split effective on or before AS_OF divides
+    per-share values published before its effective date by its ratio and multiplies share counts by it."""
+    f = copy.deepcopy(facts)
+    splits = [s for s in f.get("splits", []) if s["effective"] <= as_of]
+    k = lambda pub: math.prod(s["ratio"] for s in splits if pub < s["effective"])
+    for v in f["history_vintages"]:
+        r = k(v["published"])
+        if r != 1:
+            v["eps_normalized"] = {y: e / r for y, e in v["eps_normalized"].items()}
+            v["diluted_shares_m"] = {y: n * r for y, n in v["diluted_shares_m"].items()}
+            v["dividend_annual"] /= r
+            v["split_note"] = "; ".join(f"per share ÷{s['ratio']} for the {s['ratio']}-for-1 split effective {s['effective']} ({s['source']})"
+                                        for s in splits if v["published"] < s["effective"])
+    for p in f["prints"]:
+        r = k(p["published"])
+        p["eps_q"], p["eps_q_prior"], p["diluted_shares_m"] = p["eps_q"] / r, p["eps_q_prior"] / r, p["diluted_shares_m"] * r
+        if "fy_actual" in p:
+            p["fy_actual"]["eps_normalized"] /= r
+            p["fy_actual"]["diluted_shares_m"] *= r
+    for g in f["guides"]:
+        r = k(g["published"])
+        if r != 1 and "eps_guide" in g:
+            g["eps_guide_note"] = "; ".join(x for x in (g.get("eps_guide_note"), f"${money(g['eps_guide'][0])}-{money(g['eps_guide'][1])} before the split") if x)
+            g["eps_guide"] = [e / r for e in g["eps_guide"]]
+        if r != 1 and "q_eps_guide" in g:
+            g["q_eps_guide"]["range"] = [e / r for e in g["q_eps_guide"]["range"]]
+    for d in f["dividends"]:
+        d["quarterly"] /= k(d["published"])
+    return f, [s["source"] for s in splits]
+
+
+def build(as_of, facts, raw, spx, engine, out):
+    if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
+    # every price of the window on the AS_OF share basis: Yahoo's split-adjusted series times the splits after AS_OF,
+    # so the AS_OF close is the price as traded and the per-share facts below share its basis
+    fx = retro_tool.split_factor(retro_tool.chart("UNP"), as_of)
+    px = {d: tuple(v * fx for v in hlc) for d, hlc in raw.items()}
+    yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + retro_tool.chart("UNP")["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
+                    for v in retro_tool.chart("UNP").get("events", {}).get("splits", {}).values()}
+    assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
+    facts, split_ids = on_basis(facts, as_of)
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
@@ -84,6 +134,8 @@ def build(as_of, facts, px, spx, engine, out):
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
     latest = prints[-1]
     prev = (prints[-2]["carloads_pct"], prints[-2]["quarter"]) if len(prints) > 1 else (h["prev_q_carloads_pct"], h["prev_q_label"])
+    # a renamed reporting line takes the new name from the first print that uses it, otherwise the vintage's
+    revenue_line = next((p["revenue_line"] for p in reversed(prints) if "revenue_line" in p), h["revenue_line"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}   # reported history only: the rules use this
     cur_fy = max(eps_hist) + 1
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
@@ -99,19 +151,24 @@ def build(as_of, facts, px, spx, engine, out):
         eps_label = f"{fy_e} EPS, guide midpoint"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[cur_fy - 1]
-        eps_label = f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${eps_now:.2f} stands"
+        eps_label = f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
     if gr:
         fwd, fwd_label, fwd_short = gr["rev_guide"], f"{fy_now} {gr['rev_guide_label']}", f"{fy_now} guide"
     else:                                    # no numeric revenue guide: the latest quarter's commodity revenue growth
         fwd = [latest["commodity_pct"]] * 2
-        fwd_label, fwd_short = f"no {fy_now} revenue guide, {latest['quarter']} commodity revenue", f"{latest['quarter']} revenue"
+        fwd_label, fwd_short = f"no {fy_now} revenue guide, {latest['quarter']} {revenue_line.lower()}", f"{latest['quarter']} revenue"
     if guides:
-        bits = ([f"EPS ${ge['eps_guide'][0]:.2f}-{ge['eps_guide'][1]:.2f}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
+        # each field from the latest guide that states it; a quarter's EPS guide while that quarter is unreported
+        later = lambda q: (int(q[3:]), int(q[1])) > (latest["fy"], nq)
+        gq = next((g["q_eps_guide"] for g in reversed(guides) if "q_eps_guide" in g and later(g["q_eps_guide"]["quarter"])), None)
+        bits = ([f"EPS ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
                ([f"{gr['rev_guide_label']} {pct_range(*gr['rev_guide'])}"] if gr else
-                [f"revenue in words ('{g['rev_guide_text']}')" for g in guides[-1:] if "rev_guide_text" in g]) + \
+                [f"revenue in words ('{g['rev_guide_text']}')" for g in [stated("rev_guide_text")] if g]) + \
                ([f"volume {pct_range(*gv['volume_guide'])}"] if gv else []) + \
-               [f"fuel +{g['fuel_guide_pct'][0]}-{g['fuel_guide_pct'][1]}%" for g in guides[-1:] if "fuel_guide_pct" in g] + \
-               [f"operating ratio: '{g['op_ratio_guide_text']}'" for g in guides[-1:] if "op_ratio_guide_text" in g]
+               [f"fuel +{g['fuel_guide_pct'][0]}-{g['fuel_guide_pct'][1]}%" for g in [stated("fuel_guide_pct")] if g] + \
+               [f"operating ratio: '{g['op_ratio_guide_text']}'" for g in [stated("op_ratio_guide_text")] if g] + \
+               ([f"{gq['quarter'][:2]} EPS ${money(gq['range'][0])}-{money(gq['range'][1])} ({gq['note']})"] if gq else []) + \
+               [f"full year in words: '{g['fy_words']}'" for g in [stated("fy_words")] if g]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
         guide_text = f"{fy_now}: no numeric guide yet; the {latest['quarter']} release in words: '{latest['outlook_short']}'"
@@ -158,7 +215,7 @@ def build(as_of, facts, px, spx, engine, out):
     key_tail = ("A demand recession hits carloads first; the bear needs it\n"
                 "  to reach pricing and the operating ratio as well.")
     theme_summary = "no disruption theme has dated evidence"
-    cat3 = (f"(3) {fy_now} EPS guide ${ge['eps_guide'][0]:.2f}-{ge['eps_guide'][1]:.2f}"
+    cat3 = (f"(3) {fy_now} EPS guide ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}"
             + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "") if ge else
             f"(3) A numeric {fy_now} guide — the {latest['quarter']} release gives words only ('{latest['outlook_short']}')")
     cat4 = (f"(4) Operating ratio — {latest['op_ratio']}% in {latest['quarter']} ({latest['op_ratio_pt']:+.1f} pt): "
@@ -173,8 +230,8 @@ def build(as_of, facts, px, spx, engine, out):
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
-    ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
-           + ([dividend_src] if dividend_src else []) + [e["id"] for e in events] + [n["source"] for n in renames])
+    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + [g["source"] for g in guides]
+           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events] + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "U0", "published": as_of, "title": "Yahoo Finance daily prices, UNP and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/UNP/history",
@@ -235,7 +292,7 @@ REF_LOW         = {px[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
-EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}
+EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}{"; " + h["split_note"] if h.get("split_note") else ""}
 REVENUE_HIST  = {R(rev)}   # operating revenue, USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
@@ -245,6 +302,7 @@ NET_INTEREST_B = {h["net_interest_b"]}   # interest expense less other income, {
 CONS_DIVIDEND = {dividend:.2f}   # {dividend_note}
 VOL_DIVIDEND  = CONS_DIVIDEND
 MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
+REVENUE_LINE  = {R(revenue_line)}
 
 # ── FACTS: latest print ({latest["source"]}, published {latest["published"]}) and {fy_now} guide ──
 LATEST          = {R({k: latest.get(k) for k in latest_keys})}
@@ -287,12 +345,12 @@ def main():
         facts = json.load(fh)
     with open(ENGINE, encoding="utf-8") as fh:
         engine = fh.read()
-    px, spx = load_series("UNP"), load_series("^GSPC")
+    raw, spx = load_series("UNP"), load_series("^GSPC")
     dates = list(a.dates)
     if a.weekly:
-        dates += weekly_dates(a.weekly[0], a.weekly[1], sorted(px), facts["prints"])
+        dates += weekly_dates(a.weekly[0], a.weekly[1], sorted(raw), facts["prints"])
     for d in sorted(set(dates)):
-        tag, q, stage = build(d, facts, px, spx, engine, os.path.abspath(a.out))
+        tag, q, stage = build(d, facts, raw, spx, engine, os.path.abspath(a.out))
         print(f"{d}  {tag:<32}  latest print {q:<8}  theme evidence: {stage}")
 
 

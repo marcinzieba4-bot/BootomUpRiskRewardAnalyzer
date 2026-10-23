@@ -115,6 +115,7 @@ NET_INTEREST_B = 0.366   # interest expense less other income, 2007 interest exp
 CONS_DIVIDEND = 1.76   # $0.44 quarterly from 2007-11-15 (U12)
 VOL_DIVIDEND  = CONS_DIVIDEND
 MARGIN_SIGNAL_NAME = 'Operating ratio change'
+REVENUE_LINE  = 'Commodity revenue'
 
 # ── FACTS: latest print (U11, published 2008-01-24) and FY08 guide ──
 LATEST          = {'quarter': 'Q4 2007', 'release': 'Jan 24', 'revenue_b': 4.197, 'revenue_pct': 6, 'commodity_revenue_b': 4.003, 'commodity_pct': 6, 'carloads_k': 2444, 'carloads_pct': 0, 'arc': 1638, 'arc_pct': 6, 'gtm_per_employee_pct': 3, 'op_ratio': 79.4, 'op_ratio_pt': -0.2, 'eps_q': 1.86, 'eps_q_prior': 1.78}
@@ -211,13 +212,13 @@ CONS_EPS_CAGR = max(0.0, SCENARIO_CAGR["BASE"] - 0.02)
 CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
 
 # ── SIGNALS (thresholds frozen; values are the latest reported quarter) ───────
-# commodity revenue's bands are the sum of the carload and revenue-per-car bands; the operating ratio is lower-is-better
+# the revenue line's bands are the sum of the carload and revenue-per-car bands; the operating ratio is lower-is-better
 SIGNALS = [
     ("Revenue carloads growth", "% YoY", -6.0, -1.0, 2.0, 4.0, float(LATEST["carloads_pct"]), True,
      "Recession cuts industrial, intermodal and auto volumes"),
     ("Avg revenue per car growth", "% YoY", -2.0, 2.0, 4.0, 7.0, float(LATEST["arc_pct"]), True,
      "Fuel surcharges reverse and repricing stalls"),
-    ("Commodity revenue growth", "% YoY", -8.0, 1.0, 6.0, 11.0, float(LATEST["commodity_pct"]), True,
+    (f"{REVENUE_LINE} growth", "% YoY", -8.0, 1.0, 6.0, 11.0, float(LATEST["commodity_pct"]), True,
      "Volume and price turn down together"),
     ("GTMs per employee growth", "% YoY", -6.0, 0.0, 3.0, 6.0, float(LATEST["gtm_per_employee_pct"]), True,
      "Volume falls faster than crews are cut"),
@@ -388,8 +389,8 @@ print("  " + "─" * (W-2))
 print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_bull:>6.1f}    "
       f"{tot_bear-tot_now:>+6.1f}    {tot_bull-tot_now:>+6.1f}")
 print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if FWD_MID >= 0 else '−'} {abs(FWD_MID)*100:.1f}%: {FWD_GUIDE_LABEL}); "
-      f"split pro rata to {GROUPS_BASIS} commodity revenue")
-print(f"  {L['quarter']} ({L['release']}): commodity revenue ${L['commodity_revenue_b']:.2f}B {L['commodity_pct']:+d}%; carloads {L['carloads_pct']:+d}%, "
+      f"split pro rata to {GROUPS_BASIS} {REVENUE_LINE.lower()}")
+print(f"  {L['quarter']} ({L['release']}): {REVENUE_LINE.lower()} ${L['commodity_revenue_b']:.2f}B {L['commodity_pct']:+d}%; carloads {L['carloads_pct']:+d}%, "
       f"ARC ${L['arc']:,} {L['arc_pct']:+d}%;")
 print(f"  operating ratio {L['op_ratio']}% ({L['op_ratio_pt']:+.1f} pt); EPS ${L['eps_q']:.2f} vs ${L['eps_q_prior']:.2f}; GTMs/employee {L['gtm_per_employee_pct']:+d}%")
 print(f"  {GUIDE_TEXT}")

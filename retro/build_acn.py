@@ -39,8 +39,9 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 
 
 def load_series(symbol):
-    """{date: (high, low, close)} as traded on each day, from the retro_tool Yahoo cache (full history). Yahoo prices
-    are split-adjusted; undoing the later splits restores the price printed that day (ACN has none, UNP two after 2008)."""
+    """{date: (high, low, close)} from the retro_tool Yahoo cache (full history), split-adjusted to today's shares.
+    ACN has no splits, so this is the price as traded; a builder for a ticker with splits multiplies the whole
+    series by retro_tool.split_factor(chart, AS_OF) to put it on the AS_OF share basis (build_unp.py)."""
     d = retro_tool.chart(symbol)
     off, q = d["meta"]["gmtoffset"], d["indicators"]["quote"][0]
     out = {}
@@ -48,8 +49,7 @@ def load_series(symbol):
         if q["close"][i] is None:
             continue
         day = dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat()
-        f = retro_tool.split_factor(d, day)
-        out[day] = (q["high"][i] * f, q["low"][i] * f, q["close"][i] * f)
+        out[day] = (q["high"][i], q["low"][i], q["close"][i])
     return out
 
 

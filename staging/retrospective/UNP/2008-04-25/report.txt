@@ -1,0 +1,156 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $140.59  ·  RETROSPECTIVE as of 2008-04-25
+  Signal: ✕ AVOID   Ratio B: 2.27x   Adj gap: +0.09  [FAIRLY VALUED]
+  Point-in-time: 9 sources, latest published 2008-04-25; latest print Q1 2008 (Apr 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E operating revenue, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2008E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Energy                    $     3.8  $   3.8  $   4.3      +0.0      +0.5
+    +17% revenue in Q1
+  Industrial Products       $     3.4  $   3.4  $   3.9      +0.0      +0.5
+    +4% revenue in Q1
+  Agricultural              $     3.4  $   3.4  $   3.8      +0.0      +0.4
+    +24% revenue in Q1
+  Intermodal                $     3.1  $   3.1  $   3.5      +0.0      +0.4
+    +5% revenue in Q1
+  Chemicals                 $     2.7  $   2.7  $   3.0      +0.0      +0.3
+    +11% revenue in Q1
+  Automotive                $     1.6  $   1.6  $   1.8      +0.0      +0.2
+    +3% revenue in Q1
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    18.0  $  18.0  $  20.3      +0.0      +2.3
+  FY2008E = FY07 $16.28B × (1 + 11.0%: no FY08 revenue guide, Q1 2008 freight revenue); split pro rata to first-quarter actuals freight revenue
+  Q1 2008 (Apr 24): freight revenue $4.06B +11%; carloads +0%, ARC $1,738 +11%;
+  operating ratio 81.5% (+0.2 pt); EPS $1.70 vs $1.41; GTMs/employee +4%
+  FY08 guide (FY2007 10-K, 2008 Outlook): EPS $7.75-8.25 (first numeric 2008 guide); revenue in words ('record revenue'); volume -1% to +1%; fuel +15-20%; operating ratio: 'improve our operating ratio'
+
+  FY2008E EPS check:  ($18.0B × 20.7% − $0.37B net interest) × (1−38.4%) ÷ 0.261B  =  $7.92  (FY2008E EPS, guide midpoint $8.00)
+  FY2010E BEAR check: ($18.0B × 20.7% − interest) ÷ 0.261B  =  $7.93  (scenario $4.03)
+  FY2010E BULL check: ($20.3B × 21.1% − interest) ÷ 0.261B  =  $9.24  (scenario $9.87)
+  Every 1pp of operating margin ≈ $0.42 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     +0.0%  ◦ BASE  ██░░
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%    +11.0%  ★ XBULL  ████
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%    +11.0%  ★ XBULL  ████
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     +4.0%  ▲ BULL  ███░
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    +0.2pt  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   2.74 / 4.00  (back-solved from $141 + 15% hurdle)
+  SCA adjustment:    +0.13  ·  EPP-distance adj +0.00  →  Adj composite 2.83  →  Gap +0.09  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY07 operating ratio 79.3%, revenue +5% on carloads -1%; Q1 revenue per car +11%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 17.6x FY08E vs a 15.4x 9.3-yr median (73rd percentile of its own range)  (-0.38 × 25%  =  -0.095)
+    +  Growth vs own history: no FY08 revenue guide, Q1 2008 freight revenue +11% vs a 5.1% 8-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash $0.83B, FY07 free cash flow $0.49B, nearly 3.3M shares (pre-split) bought in Q1 2008  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              +0.0%     -6.0%   -6.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth          +11.0%     -2.0%  -13.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth              +11.0%     -8.0%  -19.0%  Volume and price turn down together
+  GTMs per employee growth             +4.0%     -6.0%  -10.0%  Volume falls faster than crews are cut
+  Operating ratio change              +0.2pt    +2.0pt  +1.8pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$83  (model)  /  $51 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: carloads went from +0% (Q4 2007) to +0% (Q1 2008);
+  the bear case needs a volume recession that pricing (revenue per car +11% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.00  (FY2008E EPS, guide midpoint)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 1999 13.3x, 2000 10.9x, 2001 12.3x, 2002 11.5x, 2003 12.6x, 2004 19.1x, 2005 17.2x, 2006 13.3x, 2007 13.0x, 2008 13.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $104/share
+  Current $141 vs Updated EPP $104:  +35%  moderate distance to floor
+  Bear $51 vs Updated EPP $104:  -51%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0       -1.0   BASE floor (vs +0 now)
+  Avg revenue per car growth                   2.0       -9.0   BASE floor (vs +11 now)
+  Freight revenue growth                       1.0      -10.0   BASE floor (vs +11 now)
+  GTMs per employee growth                     0.0       -4.0   BASE floor (vs +4 now)
+  Operating ratio change                       0.0       -0.2   BASE floor (vs +0 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.00 × (1+9.1%)² = $9.52
+  At 15x P/E (conservative):  $143/share
+  + Cumul. dividends (2yr):  +$3.63/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $143  (▲2 from $141)
+  Conservative total return:  +4% over 2yr  = +2%/yr
+
+  9.1% EPS growth is what is left once the premium multiple (17.6x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2010E EPS of $9.13,
+  i.e. 6.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $99.38  –  $141.25  (at 98th pct of range)
+  Annual dividend:      $1.76/share  (yield 1.3%)
+  Realized vol (1yr):   30% annualized
+  Beta vs broad market: 1.12
+  1-sigma range (1yr):  $99  –  $182  ($141 ± 30%)
+  2-sigma range (1yr):  $57  –  $224
+  ────────────────────────────────────────────────────────────
+  Bear $51 requires:  ~2.1σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 1.1 beta: the stock is +34% off its August
+  low while carloads went from +0% (Q4 2007) to +0% (Q1 2008).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.03  12.6x  $     51     6.0%      5.4%    +0.6pp  EPS -29.0%/yr (worst year FY99-FY07, capped at 0%); P/E to its 10th pct
+  BASE        9.87  15.4x  $    152    20.8%     18.9%    +2.0pp  EPS +11.1%/yr (Q1 2008 revenue + margin + buyback); P/E at its 9.3-yr median
+  BULL        9.87  18.2x  $    180    61.6%     63.7%    -2.1pp  EPS +11.1%/yr (FY99-FY07 CAGR); P/E holds its 75th pct
+  XBULL      16.36  20.3x  $    332    11.6%     12.0%    -0.4pp  EPS +43.0%/yr (best 2-yr run FY99-FY07); P/E at its 90th pct
+
+  Proxy EV (2yr): $184  /  Market EV: $186  /  Current: $141
+  Conservative EV (2yr, ④): $143 + $3.63 divs = $146 total value
+  Downside (→ Bear $51): 63.7%   Upside (→ Bull $180): 28.0%   Ratio B 2.27x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $141 the market needs $186 in two years —
+  above the BULL case. That is a market composite of 2.74 against a model
+  read of 2.83: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.27x     +35%    +0.09  FAIRLY VALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.42x     +35%    +0.52  UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     8.03x     +35%    -0.23  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.99x     +35%    +0.20  MODESTLY UNDERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.74x     +35%    -0.01  FAIRLY VALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.27x     +35%    +0.39  MODESTLY UNDERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.27x     +10%    +0.09  FAIRLY VALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.27x     +35%    +0.38  MODESTLY UNDERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2008 print (late July) — the next read on carloads (+0% now) and the guide
+  (2) Revenue per car — +11% in Q1 2008: price and fuel surcharge, what must hold if volume does not
+  (3) FY08 EPS guide $7.75-8.25 (first numeric 2008 guide)
+  (4) Operating ratio — 81.5% in Q1 2008 (+0.2 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 18x — management's own read of the multiple
+  ✕ AVOID  |  EPP floor $104  |  ADD below ~$129  |  TRIM above $180
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,268 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "UNP",
+ "company": "Union Pacific Corporation",
+ "as_of": "2008-10-03",
+ "price_date": "2008-10-03",
+ "price": 61.81,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); railroad signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 1.11x; +19% to EPP floor; model-vs-market gap +0.63; conservative 2yr +23%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.11,
+  "ratio_b_fmt": "1.11x",
+  "epp": 52.0,
+  "epp_gap_pct": 18.9,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.65,
+  "sca": 0.23,
+  "adj_composite": 2.88,
+  "market_composite": 2.25,
+  "adj_gap": 0.63,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 23.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.02,
+    "pe": 12.6,
+    "price": 25,
+    "desc": "EPS -29.0%/yr (worst year FY99-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.11,
+    "pe": 15.5,
+    "price": 79,
+    "desc": "EPS +13.1%/yr (Q2 2008 revenue + margin + buyback); P/E at its 9.7-yr median"
+   },
+   "BULL": {
+    "eps": 5.11,
+    "pe": 18.5,
+    "price": 95,
+    "desc": "EPS +13.1%/yr (FY99-FY07 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 8.18,
+    "pe": 20.3,
+    "price": 166,
+    "desc": "EPS +43.0%/yr (best 2-yr run FY99-FY07); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.11,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 0.63,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.8,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 1.04,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.14,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 0.23,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 23.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.02,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.22,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 0.56,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.11,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 0.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.11,
+   "epp_gap_pct": -3.4,
+   "adj_gap": 0.83,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.11,
+   "epp_gap_pct": 18.9,
+   "adj_gap": 0.89,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 23.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "RICH"
+ ],
+ "summary": "UNP (retrospective, 2008-10-03) ◐ WATCHLIST — Ratio B 1.11x (59.6% downside to Bear $25 / +53.7% upside to Bull $95) | Adj composite 2.88 vs market 2.25: gap +0.63 [UNDERVALUED] | +19% above the EPP floor $52 (13x FY08E $4.00) | Conservative 2-yr case: +23.3% total (+11.7%/yr) | At 15.5x FY08E the 15% hurdle price $82 sits between the BASE and BULL cases; carloads -3% in Q2 2008, forward revenue +13% (no FY08 revenue guide, Q2 2008 freight revenue); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "U12",
+   "published": "2008-02-29",
+   "filed": "2008-02-28 20:54 ET (after the close)",
+   "title": "Union Pacific Corporation FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508041700/d10k.htm",
+   "supports": "selected financial data 2003-2007; 2007 diluted shares 268.4M, effective tax rate 38.4%, interest expense $482M, other income $116M; 2008 Outlook: earnings of $7.75 to $8.25 per diluted share, volume within a range of 1% higher to 1% lower than 2007, fuel prices 15% to 20% above the 2007 average, record revenue and an improved operating ratio in words; capital investments of about $3.1 billion"
+  },
+  {
+   "id": "U1",
+   "published": "2007-02-26",
+   "filed": "2007-02-23 21:32 ET (after the close)",
+   "title": "Union Pacific Corporation FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312507038387/d10k.htm",
+   "supports": "selected financial data 2002-2006 (operating revenue, diluted EPS from continuing operations, operating margin and ratio, carloads); 2006 diluted shares 272.0M, effective tax rate 36.4%, interest expense $477M, other income $118M; competition (BNSF parallel routes); 2007 Outlook: commodity revenue growth target 6% to 7%, volume growth 2% to 3%, earnings growth of 10% to 15% and an operating ratio below 80%; quarterly dividend raised to $0.35 on 2007-01-30; 20M-share repurchase authorized 2007-01-30 through 2009"
+  },
+  {
+   "id": "U2",
+   "published": "2005-02-28",
+   "filed": "2005-02-25 22:05 ET (after the close)",
+   "title": "Union Pacific Corporation FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312505037425/d10k.htm",
+   "supports": "ten-year selected financial data 1995-2004 on the continuing-operations basis (trucking reclassified as discontinued): 1998 loss from continuing operations ($0.41 per diluted share), 1999 $3.05, 2000 $3.22 (includes a $72M after-tax work force reduction charge); operating revenue 1999 $10,175M, 2000 $10,765M"
+  },
+  {
+   "id": "U3",
+   "published": "2006-02-27",
+   "filed": "2006-02-24 16:25 ET (after the close)",
+   "title": "Union Pacific Corporation FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312506038383/d10k.htm",
+   "supports": "selected financial data 2001-2005: 2001 diluted EPS from continuing operations $3.65, operating revenues $10,830M"
+  },
+  {
+   "id": "U4",
+   "published": "2002-03-04",
+   "title": "Union Pacific Corporation FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000095013402001771/d94498e10-k.txt",
+   "supports": "1999 weighted-average diluted shares 269.8M (earnings per share note)"
+  },
+  {
+   "id": "U5",
+   "published": "2006-01-19",
+   "title": "Union Pacific Corporation Q4 2005 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312506008449/dex991.htm",
+   "supports": "company-published EPS excluding one-offs: 2004 $2.89 per diluted share excluding the non-cash asbestos charge ($2.30 reported), 2005 $3.41 excluding the income tax expense reduction ($3.85 reported)"
+  },
+  {
+   "id": "U11",
+   "published": "2008-01-24",
+   "title": "Union Pacific Corporation Q4 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508011058/dex991.htm",
+   "supports": "Q4 and full-year 2007 revenue detail by commodity group (revenue, carloads, average revenue per car), operating ratio, GTMs per employee, diluted EPS ($6.91 for 2007) and shares, effective tax rate, cash, free cash flow, share repurchases (12.6M in 2007, 63% of the 20M program); 2008 outlook in words only ('post another record year in 2008')"
+  },
+  {
+   "id": "U13",
+   "published": "2008-04-24",
+   "title": "Union Pacific Corporation Q1 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508088703/dex991.htm",
+   "supports": "Q1 2008 freight revenue statistics by business group (revenue, carloads, average revenue per car), operating ratio, GTMs per employee, diluted EPS and shares, cash, share repurchases (nearly 3.3M); freight revenue replaces commodity revenue (prior periods reclassified); outlook in words only ('should result in a record 2008')"
+  },
+  {
+   "id": "U17",
+   "published": "2008-07-24",
+   "title": "Union Pacific Corporation Q2 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508156869/dex991.htm",
+   "supports": "Q2 2008 freight revenue statistics by business group, operating ratio, GTMs per employee, diluted EPS and shares (split-adjusted), cash, share repurchases (over 6.3M, post-split); outlook in words only ('achieving a record year')"
+  },
+  {
+   "id": "U16",
+   "published": "2008-06-18",
+   "filed": "2008-06-17 20:02 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K (Item 7.01): Midwest weather and second-quarter earnings",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508135157/d8k.htm",
+   "supports": "weather to reduce Q2 2008 EPS by about $0.05, toward the bottom half of the $0.90-0.98 guidance range (split-adjusted) first given in April"
+  },
+  {
+   "id": "U20",
+   "published": "2008-09-23",
+   "filed": "2008-09-23 13:22 ET (release dated 2008-09-22)",
+   "title": "Union Pacific Corporation 8-K ex.99.1: Union Pacific increases third quarter earnings target",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508199613/dex991.htm",
+   "supports": "Q3 2008 EPS now $1.28-1.33 (from $1.10-1.20); Q3 volumes close to 5 percent lower year-over-year; full-year earnings targets will change, magnitude uncertain"
+  },
+  {
+   "id": "U19",
+   "published": "2008-08-01",
+   "filed": "2008-07-31 16:17 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K: quarterly dividend raised to 27 cents",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508162295/d8k.htm",
+   "supports": "quarterly dividend increased by 5 cents to 27 cents per share"
+  },
+  {
+   "id": "U14",
+   "published": "2008-05-02",
+   "filed": "2008-05-01 20:24 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K ex.99.1: 2-for-1 stock split, additional share repurchase authorization and second quarter dividend",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508099209/dex991.htm",
+   "supports": "two-for-one stock split distributed as a stock dividend; repurchase of a further 20 million shares (40 million post-split) by March 2011; quarterly dividend of 44 cents (22 cents post-split)"
+  },
+  {
+   "id": "U0",
+   "published": "2008-10-03",
+   "title": "Yahoo Finance daily prices, UNP and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/UNP/history",
+   "supports": "close $61.81 as traded on AS_OF, 52-week range, realized vol, beta, the 9.7-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2009, 2011 after 2008 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-10-23"
+}

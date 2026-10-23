@@ -129,6 +129,7 @@ NET_INTEREST_B = 0.359   # interest expense less other income, 2006 interest exp
 CONS_DIVIDEND = 1.76   # $0.44 quarterly, declared 2007-11-15 (U9)
 VOL_DIVIDEND  = CONS_DIVIDEND
 MARGIN_SIGNAL_NAME = 'Operating ratio change'
+REVENUE_LINE  = 'Commodity revenue'
 
 # ── FACTS: latest print (U8, published 2007-10-18) and FY07 guide ──
 LATEST          = {'quarter': 'Q3 2007', 'release': 'Oct 18', 'revenue_b': 4.191, 'revenue_pct': 5, 'commodity_revenue_b': 3.996, 'commodity_pct': 5, 'carloads_k': 2522, 'carloads_pct': 1, 'arc': 1584, 'arc_pct': 5, 'gtm_per_employee_pct': 2, 'op_ratio': 76.0, 'op_ratio_pt': -5.1, 'eps_q': 2.0, 'eps_q_prior': 1.54}
@@ -137,7 +138,7 @@ EPP_TODAY_EPS   = 6.81   # FY2007E EPS, guide midpoint
 EPS_LABEL       = 'FY2007E EPS, guide midpoint'
 FWD_GUIDE       = (6, 7)   # numeric revenue guide
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'FY07 commodity revenue target', 'FY07', 'FY07 guide'
-GUIDE_TEXT      = 'FY07 guide (FY2006 10-K, 2007 Outlook, 8-K of 2007-12-19): EPS $6.76-6.86 (cut on 2007-12-19: Q4 now $1.70-1.80 from $1.90-2.00 (fuel-surcharge lag, weather)); commodity revenue target +6-7%; volume +2-3%'
+GUIDE_TEXT      = "FY07 guide (FY2006 10-K, 2007 Outlook, 8-K of 2007-12-19): EPS $6.76-6.86 (cut on 2007-12-19: Q4 now $1.70-1.80 from $1.90-2.00 (fuel-surcharge lag, weather)); commodity revenue target +6-7%; volume +2-3%; operating ratio: 'an operating ratio below 80%'"
 MARGIN_GUIDED   = False   # False: no numeric operating-ratio guide, so no guided step; the signal uses the latest quarter's change
 FY_MARGIN_BASE  = 18.5
 FY_REVENUE_B    = 16.59
@@ -225,13 +226,13 @@ CONS_EPS_CAGR = max(0.0, SCENARIO_CAGR["BASE"] - 0.02)
 CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
 
 # ── SIGNALS (thresholds frozen; values are the latest reported quarter) ───────
-# commodity revenue's bands are the sum of the carload and revenue-per-car bands; the operating ratio is lower-is-better
+# the revenue line's bands are the sum of the carload and revenue-per-car bands; the operating ratio is lower-is-better
 SIGNALS = [
     ("Revenue carloads growth", "% YoY", -6.0, -1.0, 2.0, 4.0, float(LATEST["carloads_pct"]), True,
      "Recession cuts industrial, intermodal and auto volumes"),
     ("Avg revenue per car growth", "% YoY", -2.0, 2.0, 4.0, 7.0, float(LATEST["arc_pct"]), True,
      "Fuel surcharges reverse and repricing stalls"),
-    ("Commodity revenue growth", "% YoY", -8.0, 1.0, 6.0, 11.0, float(LATEST["commodity_pct"]), True,
+    (f"{REVENUE_LINE} growth", "% YoY", -8.0, 1.0, 6.0, 11.0, float(LATEST["commodity_pct"]), True,
      "Volume and price turn down together"),
     ("GTMs per employee growth", "% YoY", -6.0, 0.0, 3.0, 6.0, float(LATEST["gtm_per_employee_pct"]), True,
      "Volume falls faster than crews are cut"),
@@ -402,8 +403,8 @@ print("  " + "─" * (W-2))
 print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_bull:>6.1f}    "
       f"{tot_bear-tot_now:>+6.1f}    {tot_bull-tot_now:>+6.1f}")
 print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if FWD_MID >= 0 else '−'} {abs(FWD_MID)*100:.1f}%: {FWD_GUIDE_LABEL}); "
-      f"split pro rata to {GROUPS_BASIS} commodity revenue")
-print(f"  {L['quarter']} ({L['release']}): commodity revenue ${L['commodity_revenue_b']:.2f}B {L['commodity_pct']:+d}%; carloads {L['carloads_pct']:+d}%, "
+      f"split pro rata to {GROUPS_BASIS} {REVENUE_LINE.lower()}")
+print(f"  {L['quarter']} ({L['release']}): {REVENUE_LINE.lower()} ${L['commodity_revenue_b']:.2f}B {L['commodity_pct']:+d}%; carloads {L['carloads_pct']:+d}%, "
       f"ARC ${L['arc']:,} {L['arc_pct']:+d}%;")
 print(f"  operating ratio {L['op_ratio']}% ({L['op_ratio_pt']:+.1f} pt); EPS ${L['eps_q']:.2f} vs ${L['eps_q_prior']:.2f}; GTMs/employee {L['gtm_per_employee_pct']:+d}%")
 print(f"  {GUIDE_TEXT}")

@@ -17,3 +17,43 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2008-03-14 | $122.75 | Union Pacific Corporation Q4 2007 results | 2.50 | +0.22 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +22.4% | +29.5pp | -5.9% | ✗ |
 | 2008-03-20 | $122.06 | Union Pacific Corporation Q4 2007 results | 2.50 | +0.24 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +23.5% | +32.1pp | -4.3% | ✗ |
 | 2008-03-28 | $125.02 | Union Pacific Corporation Q4 2007 results | 2.50 | +0.16 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +19.6% | +27.4pp | -5.5% | ✗ |
+| 2008-04-04 | $133.66 | Union Pacific Corporation Q4 2007 results | 2.50 | -0.05 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2008-04-11 | $130.21 | Union Pacific Corporation Q4 2007 results | 2.50 | +0.03 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2008-04-18 | $138.08 | Union Pacific Corporation Q4 2007 results | 2.50 | -0.17 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-04-25 | $140.59 | Union Pacific Corporation Q1 2008 results | 2.70 | +0.09 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2008-05-02 | $146.88 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.14 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-05-09 | $146.28 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.13 | 2.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-05-16 | $153.00 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.26 | 3.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-05-23 | $152.16 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.23 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-05-30 | $82.31 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.40 | 7.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-06-06 | $77.95 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.30 | 4.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-06-13 | $75.57 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.21 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-06-20 | $76.88 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.26 | 3.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-06-27 | $73.83 | Union Pacific Corporation Q1 2008 results | 2.70 | -0.14 | 2.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-07-03 | $70.85 | Union Pacific Corporation Q1 2008 results | 2.70 | +0.09 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-07-11 | $71.92 | Union Pacific Corporation Q1 2008 results | 2.70 | +0.04 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-07-18 | $72.54 | Union Pacific Corporation Q1 2008 results | 2.70 | +0.01 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-07-25 | $77.49 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.28 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-08-01 | $79.44 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.33 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-08-08 | $83.18 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.42 | 4.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-08-15 | $76.87 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.24 | 2.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-08-22 | $79.55 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.32 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-08-29 | $83.90 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.44 | 5.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-09-05 | $75.46 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.18 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-09-12 | $77.80 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.27 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-09-19 | $76.73 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.24 | 2.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2008-09-26 | $73.27 | Union Pacific Corporation Q2 2008 results | 2.65 | -0.07 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2008-10-03 | $61.81 | Union Pacific Corporation Q2 2008 results | 2.65 | +0.63 | 1.11x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2008-10-10 | $58.00 | Union Pacific Corporation Q2 2008 results | 2.65 | +0.88 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2008-10-17 | $55.49 | Union Pacific Corporation Q2 2008 results | 2.65 | +1.04 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2008-10-24 | $58.28 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.00 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2008-10-31 | $66.77 | Union Pacific Corporation Q3 2008 results | 2.65 | +0.49 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2008-11-07 | $60.99 | Union Pacific Corporation Q3 2008 results | 2.65 | +0.83 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2008-11-14 | $57.27 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.07 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-11-21 | $47.50 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.57 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-11-28 | $50.04 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.31 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-12-05 | $47.49 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.57 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-12-12 | $42.81 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.69 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-12-19 | $46.27 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.60 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-12-26 | $46.97 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.58 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2008-12-31 | $47.80 | Union Pacific Corporation Q3 2008 results | 2.65 | +1.56 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
