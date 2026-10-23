@@ -46,6 +46,10 @@ happened next, so the process is designed so that knowledge has no way in:
    knows the future. Prefer filings over narrative, mechanical rules over
    judgement, and record the residual risk.
 
+**Exporting as training data.** Inputs are `model.py`, `report.txt` and
+`analysis.json` without its `generated` stamp (the build date, which is not
+point-in-time) and `_doc`. `outcome.json` is the label and never goes in an input.
+
 `retro_tool.py run` enforces what can be checked mechanically, and refuses to write
 anything unless all of these pass:
 - every `SOURCES` date is on or before `AS_OF`, and so is `PRICE_DATE`
