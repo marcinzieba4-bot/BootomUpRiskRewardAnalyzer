@@ -5,55 +5,73 @@ what was public on that date, then score it against what actually happened.
 
 ```
 retro/
-  retro_tool.py          run / outcome / lint / index
+  facts/<TICKER>.json    dated fact sheet: every value carries a source and its publication date
+  templates/             the frozen engine appended to every generated model
+  build_acn.py           facts + prices truncated at AS_OF -> archive/.../<AS_OF>/model.py
+  retro_tool.py          run / outcome / lint / index / series
   taxonomy_eras.json     era-aware durability themes + anachronism list
 archive/retrospective/
   index.json             one row per retrospective (outcome = hindsight, filled separately)
+  <TICKER>/SERIES.md     table of one ticker's retrospectives
   <TICKER>/<AS_OF>/
-    model.py             the signal model, house 6-section format, methodology v2
+    model.py             generated signal model (house 6-section format, methodology v2, retro method r2)
     report.txt           its printed report
-    analysis.json        point-in-time classification, metrics, robustness, sources
-    outcome.json         HINDSIGHT: +6m/+1y/+2y/+3y vs SPY and the 15%/yr hurdle
+    analysis.json        point-in-time classification, metrics, rules, robustness, sources
+    outcome.json         HINDSIGHT: +6m/+1y/+2y/+3y vs SPY, 15%/yr hurdle, average price m12-m24
 ```
 
-## Point-in-time rules
+## The one rule
 
-`retro_tool.py run` refuses to write anything unless all of these hold:
+**Nothing in a retrospective may depend on information published after its as-of
+date.** That covers facts, and it also covers *parameters, judgement calls and
+conclusions*. The builder of the history (a person or a model) already knows what
+happened next, so the process is designed so that knowledge has no way in:
 
-1. **Sources.** Every number in `model.py` traces to a `SOURCES` entry whose
-   `published` date is on or before `AS_OF`. Use filings (8-K, 10-Q, 10-K, XBRL
-   facts filed by then), the company's own guidance, and dated news. Never use
-   consensus you can't date, restated figures, or "current" pages without a
-   vintage.
-2. **No anachronisms.** No term in `taxonomy_eras.json → anachronisms` whose
-   `first_seen` is after `AS_OF` (for example *agentic*, *DOGE*, *Agentforce* in a 2023
-   analysis), and no ISO date after `AS_OF`. Calendar years after `AS_OF` outside
-   `FY2025`/`FY25E` labels raise a warning.
-3. **An era-legal category** (see below).
-4. **The real price.** `CURRENT_PRICE` must match the actual close on `PRICE_DATE`
-   (Yahoo, ±0.5%).
+1. **Facts enter only through the fact sheet.** Every value in
+   `retro/facts/<TICKER>.json` cites a source with a `published` date. The builder
+   selects prints and events by date and never sees anything later. Prices and every
+   market statistic are computed from data truncated at the as-of date.
+2. **No hand-chosen parameter.** Scenario growth, multiples, the EPP floor, the
+   structural scores and the conservative case all come from frozen rules applied
+   to dated facts (method r2, below). Don't carry a number from a later
+   retrospective back to an earlier one. That was the leak in the first ACN
+   series: June's Q3-informed growth assumptions reused for January.
+3. **Outcomes are labels, never inputs.** `outcome.json` is written by a separate
+   command and `run` never reads it. Patterns found in outcomes (for example "CHEAP
+   calls with a small gap did worse") are hypotheses for the live model. Test them
+   on other tickers or periods; never fold them into the archive that produced them.
+4. **Changing a rule means a new method version.** Bump the version, re-run the
+   whole archive, and say why. Never tune a rule after looking at how it scores.
+5. **Disclose what can't be removed.** A model that writes the fact sheet still
+   knows the future. Prefer filings over narrative, mechanical rules over
+   judgement, and record the residual risk.
 
-Hindsight leaks that a linter can't see (scenario assumptions that happen to
-match what followed) are handled by method, not trust:
+`retro_tool.py run` enforces what can be checked mechanically, and refuses to write
+anything unless all of these pass:
+- every `SOURCES` date is on or before `AS_OF`, and so is `PRICE_DATE`
+- no anachronistic term (`taxonomy_eras.json`) and no ISO date after `AS_OF`
+- an era-legal durability category
+- `CURRENT_PRICE` equals the actual close
 
-- **Scenario multiples are mechanical.** They are percentiles of the stock's own P/E
-  on current-fiscal-year EPS over the 10 years before `AS_OF`: BEAR = p10,
-  BASE = median, BULL = p75, XBULL = p90. The EPP P/E is the median of the
-  panic troughs in the same window.
-- **The valuation structural factor is mechanical too.** It is scored from where
-  today's P/E sits in that 10-year distribution: −0.5 at the 80th percentile or
-  above, 0 at the median, +0.5 at the 20th or below (`VALUATION_SCORE`).
-- **Scenario EPS comes from guidance and history.** It starts from company guidance
-  and the reported growth history, cross-checked by the segment bridge.
-- **The ⑦ robustness block** re-runs the verdict with one input moved at a time.
-  A class that survives only one set of assumptions is not a call.
-- **Score a single stock on the averaged price.** One stock's 2-year point return depends on
-  where the price happened to be that day. ACN entries from January–February 2023 land on
-  the February 2025 peak; those from April 2023 land after the drop. Judge a series by
-  `return_to_avg_price_m12_m24_pct` (average price over months 12–24) and treat
-  `call_check_2y` as a rough tick.
-- **Outcomes are written after the analysis.** `outcome.json` is produced by a
-  separate command and `run` never reads it.
+## Retro method r2 (frozen 2026-10-23)
+
+| Input | Rule (computed inside every `model.py`) |
+|---|---|
+| Scenario P/E | Percentiles of the stock's own current-FY P/E over the 10 years to AS_OF: BEAR p10, BASE median, BULL p75, XBULL p90 |
+| BEAR EPS growth | The decade's worst normalized EPS year, capped at 0% |
+| BASE EPS growth | Latest next-quarter revenue guide midpoint (LC) + guided margin step + historical net buyback |
+| BULL EPS growth | Decade EPS CAGR (at least BASE) |
+| XBULL EPS growth | Best 2-year EPS run of the decade (at least BULL) |
+| EPP floor P/E | Median of the calendar-year P/E lows in the window, rounded down |
+| Valuation factor | −0.5 at the 80th percentile of its own P/E or above, 0 at the median, +0.5 at the 20th or below |
+| Growth factor | +0.1 per point by which the next-quarter guide exceeds the 10-year median revenue growth (±0.5) |
+| Other structural factors | Constant across dates (franchise, balance sheet, the GenAI opportunity/risk pair nets to 0) |
+| Conservative case | BASE − 2pp EPS growth, exit at the median P/E rounded down, signals at their BASE floor |
+| Signals | Thresholds frozen; values are the latest reported quarter |
+| Segment bridge | FY revenue from the FY guide; groups pro rata to the latest actuals; bear flat, bull at the decade revenue CAGR |
+
+The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
+that survives only one set of assumptions is not a call.
 
 ## Categories change with the era
 
@@ -81,8 +99,8 @@ What the gates enforce:
 - **On or after `live_from`.** The theme still needs dated evidence that the
   market was pricing it *for this company* (`PIT_PROFILE.evidence`). A theme that
   is live but where the stock is priced as a beneficiary stays on `theme_watch`.
-  That was ACN in June 2023: AI was live, but ACN traded at a premium, not an AI
-  discount.
+  That was ACN in 2023: AI was live, but ACN traded near or above its own median
+  multiple, not at an AI discount.
 - **Themes that fizzled stay in the registry** (CRYPTO, ENERGY_TRANSITION). A
   registry of only the themes that later mattered would itself be hindsight.
 - **What this means by depth.** For shallow dates (late 2025 on), the categories
@@ -94,36 +112,34 @@ What the gates enforce:
 ## Workflow
 
 ```bash
-mkdir -p archive/retrospective/XYZ/2019-03-29          # pick a trading day
-cp archive/retrospective/ACN/2023-06-30/model.py archive/retrospective/XYZ/2019-03-29/
-# rewrite every constant from point-in-time sources; update SOURCES and PIT_PROFILE
-python3 retro/retro_tool.py lint    archive/retrospective/XYZ/2019-03-29
-python3 retro/retro_tool.py run     archive/retrospective/XYZ/2019-03-29
-python3 retro/retro_tool.py outcome archive/retrospective/XYZ/2019-03-29   # hindsight, last
-python3 retro/retro_tool.py series  XYZ                                     # table -> archive/retrospective/XYZ/SERIES.md
+# 1. add newly published facts to retro/facts/ACN.json (each with source + published date)
+python3 retro/build_acn.py --weekly 2023-01-01 2023-06-30        # dates chosen by rule, models generated
+for d in archive/retrospective/ACN/2023-*/; do
+  python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
+done
+python3 retro/retro_tool.py series ACN                           # -> archive/retrospective/ACN/SERIES.md
 ```
 
-When copying a model forward, rewrite it. Don't edit only the numbers: the
-lint exists because narrative text is where hindsight leaks first.
+**Picking the weekly dates.** The builder uses one date per ISO week: the last
+trading day, except in an earnings week, where it takes the first trading day
+*after* the release. The release and the market's reaction are then both in the
+information set.
 
-**Weekly series: picking the dates.** Use one date per week, normally that
-week's Friday close (or the last trading day if Friday is a holiday). In an
-earnings week, use the first close *after* the release, so the print and the
-market's reaction are both in the information set.
+**Scoring a single stock.** One stock's 2-year point return depends on where the
+price happened to be that day. ACN entries from January–February 2023 land on the
+February 2025 peak; those from April 2023 land after the drop. Judge a series by
+`return_to_avg_price_m12_m24_pct` and treat `call_check_2y` as a rough tick. One
+stock over a few months mostly tests "buy lower". Testing stock selection needs
+many tickers on the same dates.
 
-- **Copying across an earnings date.** When you copy a model from after the print
-  to a date before it, remove every fact the print introduced: its sources,
-  quarter figures, the new guidance and the narrative built on them.
-- **Grep before running.** Search the copy for the print's tell-tale numbers before
-  `run`. The lint only sees dates and terms, not numbers.
-- **Example:** `ACN/2023-06-02 … 06-30` runs three pre-print weeks on Q2 FY23 data
-  and the March guide, and two post-print weeks on Q3 FY23.
+**A new ticker** needs its own fact sheet. The engine is generic except for its
+signal names and thresholds, so give it a sibling template if the business needs
+different signals.
 
 Data sources that worked from the cloud session:
 
-- **Prices and dividends:** the Yahoo chart API (`retro_tool` caches it in
-  `retro/.cache/`).
-- **EPS history with filing dates:** SEC XBRL company facts
+- **Prices and dividends:** the Yahoo chart API (cached in `retro/.cache/`).
+- **EPS, revenue and share history with filing dates:** SEC XBRL company facts
   (`data.sec.gov/api/xbrl/companyfacts/CIK##########.json`). SEC asks for a
   `User-Agent` with a contact. Use a project or role address, not a personal one.
 - **Quarterly detail:** the 8-K earnings exhibits listed in
@@ -134,21 +150,17 @@ Data sources that worked from the cloud session:
 Pricing per million tokens, input / output (cached 2026-10-06): Haiku 5.5
 $0.10 / $0.50, Sonnet 5.5 $2 / $10, Opus 5.5 $4 / $20, Fable 5.1 $10 / $50.
 
-**Recommended: Claude Sonnet 5.5 (`claude-sonnet-5-5`) at effort `high`.** It is
-the cheapest model that reliably does the whole loop: dated web and SEC research,
-a ~500-line model in the house format, and the era judgement. The
-judgement-heavy parts are fenced in by the validator and the mechanical
-multiples, so the extra reasoning of Opus buys little on mid-depth dates. One
-retrospective costs roughly 0.3–0.6M input and 30–50K output tokens, about
-$1–2 on Sonnet 5.5 before caching (an estimate, not a measurement).
+With the builder, the model's job is to **extend fact sheets**: read a filing,
+transcribe dated numbers, cite them. Dates, statistics, scenarios and
+classification are code.
 
-- **Opus 5.5:** use it for deep dates (before ~2018), where choosing the live theme
-  and finding dated evidence is the hard part, and for reviewing a batch of
-  retrospectives. The daily classification routine already uses Opus for the
-  same kind of judgement.
-- **Haiku 5.5:** not for the whole task. It can extract numbers from 8-K exhibits
-  into a fact sheet if you orchestrate sub-agents, but era judgement and keeping
-  hindsight out of narrative and assumptions need a stronger model.
-- **No model is blind.** Every current model knows what happened after 2023.
-  Picking a different model doesn't protect against look-ahead; the source
-  ledger, the lint and the mechanical rules above do.
+- **Sonnet 5.5** (`claude-sonnet-5-5`) at effort `high` is the cheapest model
+  that does this reliably.
+- **Opus 5.5:** use it to set up a new ticker (choosing signals, era themes and
+  evidence) and to review fact sheets.
+- **Haiku 5.5:** can do raw extraction if every number is checked against the
+  filing.
+
+No model is blind: every current model knows what happened after 2023. The
+protection is the dated fact sheet, the frozen rules and the validator, not the
+choice of model.
