@@ -1,0 +1,38 @@
+{
+ "_doc": "Index of point-in-time retrospective analyses (retro/retro_tool.py). 'outcome' is hindsight and is filled in separately.",
+ "updated": "2026-10-23",
+ "count": 1,
+ "entries": [
+  {
+   "ticker": "ACN",
+   "as_of": "2023-06-30",
+   "company": "Accenture plc",
+   "price": 308.58,
+   "class": "QUALITY, PRICED FOR PERFECTION",
+   "kind": "DURABLE",
+   "theme": null,
+   "risk": 2,
+   "price_state": "RICH",
+   "legacy_tier": "WATCHLIST",
+   "ratio_b": 1.59,
+   "epp_gap_pct": 48.1,
+   "adj_gap": -1.44,
+   "cons_return_2yr": -6.0,
+   "path": "archive/retrospective/ACN/2023-06-30",
+   "generated": "2026-10-23",
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.5,
+    "tr_1y": -0.1,
+    "tr_2y": 0.3,
+    "tr_3y": -55.2,
+    "excess_6m": 6.5,
+    "excess_1y": -24.4,
+    "excess_2y": -42.2,
+    "excess_3y": -128.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
+  }
+ ]
+}

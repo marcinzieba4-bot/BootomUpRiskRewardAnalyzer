@@ -1,0 +1,129 @@
+{
+ "_doc": "Era-aware durability taxonomy for retrospective analyses (retro/retro_tool.py). The five base kinds are timeless. The sixth slot, a disruption-exposed franchise, is era-specific: AI_EXPOSED is only the 2023+ instance of a recurring pattern (a franchise that is cheap BECAUSE the market prices a substitution narrative). A retrospective dated D may use a theme only if D >= live_from AND the analysis cites point-in-time evidence that the market was pricing that theme for that company. Fields under 'hindsight_note' record what we know today; retro_tool never reads them.",
+ "base_kinds": {
+  "DURABLE":    "franchise / compounder; low risk the business becomes useless",
+  "CYCLICAL":   "good business whose earnings ARE the cycle",
+  "STRUCTURAL": "secular decline or a live existential threat not covered by a live disruption theme",
+  "TURNAROUND": "franchise not permanently impaired but earnings currently broken",
+  "SPECIAL":    "deal arbitrage, binary legal/legislative outcome, bond"
+ },
+ "disruption_kind": "DISRUPTION_EXPOSED",
+ "themes": {
+  "GENAI": {
+   "label": "AI",
+   "kind_alias": "AI_EXPOSED",
+   "live_from": "2022-11-30",
+   "market_pricing_from": "2023-05-02",
+   "scope": "generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility",
+   "pit_evidence": [
+    {"date": "2022-11-30", "event": "OpenAI releases ChatGPT to the public"},
+    {"date": "2023-02-10", "event": "Reuters: J.P.Morgan says ChatGPT-type models deflate legacy IT-services pricing; global consultancies (Accenture, Deloitte) gain share near term"},
+    {"date": "2023-03-14", "event": "GPT-4 released"},
+    {"date": "2023-05-01", "event": "IBM CEO tells Bloomberg back-office hiring will pause; ~7,800 roles could be replaced by AI over five years"},
+    {"date": "2023-05-02", "event": "Chegg -48% in a session after saying ChatGPT hurts new-customer growth: first large-cap 'AI loser' repricing"}
+   ],
+   "hindsight_note": "Became the dominant software/IT-services derating narrative in 2025-2026 (live coverage files ACN, ADBE, CRM, NOW, INTU, WKL, SAP, IBM, UBER, GOOGL under AI_EXPOSED)."
+  },
+  "CLOUD": {
+   "label": "CLOUD",
+   "live_from": "2013-01-01",
+   "live_from_approx": true,
+   "market_pricing_from": "2015-04-23",
+   "scope": "public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing",
+   "pit_evidence": [
+    {"date": "2006-03-14", "event": "AWS launches S3"},
+    {"date": "2015-04-23", "event": "Amazon discloses AWS as a reporting segment for the first time (profitable, fast-growing)"}
+   ],
+   "hindsight_note": "IBM, Oracle, HP/HPE, NetApp, Teradata derated 2013-2017; Oracle later re-rated as a cloud beneficiary."
+  },
+  "ECOMMERCE": {
+   "label": "AMAZON",
+   "live_from": "2015-01-01",
+   "live_from_approx": true,
+   "market_pricing_from": "2017-06-16",
+   "scope": "e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution",
+   "pit_evidence": [
+    {"date": "2017-06-16", "event": "Amazon agrees to buy Whole Foods; grocers and food retailers sell off the same day"}
+   ],
+   "hindsight_note": "Department stores and mall REITs never recovered; scale omnichannel retailers (WMT, COST, HD, TJX) proved durable."
+  },
+  "STREAMING": {
+   "label": "STREAMING",
+   "live_from": "2015-08-04",
+   "market_pricing_from": "2015-08-04",
+   "scope": "cord-cutting / streaming displaces linear TV networks and pay-TV bundles",
+   "pit_evidence": [
+    {"date": "2015-08-04", "event": "Disney lowers cable-network outlook on ESPN subscriber losses; media stocks sell off"}
+   ],
+   "hindsight_note": "Linear-network owners derated for a decade; cable video moved to STRUCTURAL."
+  },
+  "EV": {
+   "label": "EV",
+   "live_from": "2020-01-01",
+   "live_from_approx": true,
+   "market_pricing_from": "2020-12-21",
+   "scope": "battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail",
+   "pit_evidence": [
+    {"date": "2020-12-21", "event": "Tesla joins the S&P 500 after a ~700% one-year rerating; legacy autos priced as ICE run-off"}
+   ],
+   "hindsight_note": "EV adoption slowed in the West after 2023; Chinese competition, not EVs per se, became the auto disruption."
+  },
+  "GLP1": {
+   "label": "GLP-1",
+   "live_from": "2023-08-08",
+   "market_pricing_from": "2023-08-08",
+   "scope": "GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices",
+   "pit_evidence": [
+    {"date": "2023-08-08", "event": "Novo Nordisk SELECT trial: semaglutide cuts major cardiac events 20%; medtech and snack stocks sell off"}
+   ],
+   "hindsight_note": "The device-side fear (DXCM, RMD, ISRG) faded within a year; the staples-volume debate persisted."
+  },
+  "CRYPTO": {
+   "label": "CRYPTO",
+   "live_from": "2020-10-21",
+   "live_from_approx": false,
+   "market_pricing_from": "2021-04-14",
+   "scope": "crypto / DeFi disintermediates payments networks, banks, exchanges, remittance",
+   "pit_evidence": [
+    {"date": "2020-10-21", "event": "PayPal launches crypto buy/sell for US accounts"},
+    {"date": "2021-04-14", "event": "Coinbase direct listing at a ~$86B valuation"}
+   ],
+   "hindsight_note": "Kept in the registry on purpose: a theme that was live and then fizzled as an incumbent-disruption story. A registry of only the themes that later mattered would itself be hindsight."
+  },
+  "ENERGY_TRANSITION": {
+   "label": "TRANSITION",
+   "live_from": "2015-12-12",
+   "market_pricing_from": "2020-08-31",
+   "scope": "decarbonisation strands oil, gas and coal reserves and refining",
+   "pit_evidence": [
+    {"date": "2015-12-12", "event": "Paris Agreement adopted"},
+    {"date": "2020-08-31", "event": "ExxonMobil removed from the Dow Jones Industrial Average"}
+   ],
+   "hindsight_note": "Kept on purpose: the 2022 energy shock reversed the derating; integrated oils went back to CYCLICAL."
+  }
+ },
+ "anachronisms": {
+  "_doc": "Terms that cannot appear in a retrospective dated before first_seen (whole-word, case-insensitive). retro_tool lints every model.py against this list; a model may whitelist a justified hit in LINT_ALLOW.",
+  "terms": [
+   {"term": "GitHub Copilot",          "first_seen": "2021-06-29"},
+   {"term": "ChatGPT",                 "first_seen": "2022-11-30"},
+   {"term": "GenAI",                   "first_seen": "2022-11-30"},
+   {"term": "GPT-4",                   "first_seen": "2023-03-14"},
+   {"term": "Microsoft 365 Copilot",   "first_seen": "2023-03-16"},
+   {"term": "SELECT trial",            "first_seen": "2023-08-08"},
+   {"term": "Zepbound",                "first_seen": "2023-11-08"},
+   {"term": "Google Gemini",           "first_seen": "2023-12-06"},
+   {"term": "agentic",                 "first_seen": "2024-01-01", "approx": true},
+   {"term": "OpenAI Sora",             "first_seen": "2024-02-15"},
+   {"term": "Blackwell GPU",           "first_seen": "2024-03-18"},
+   {"term": "Agentforce",              "first_seen": "2024-09-12"},
+   {"term": "DOGE",                    "first_seen": "2024-11-12", "note": "Department of Government Efficiency; a crypto (Dogecoin) retrospective whitelists it via LINT_ALLOW"},
+   {"term": "DeepSeek",                "first_seen": "2025-01-20"},
+   {"term": "Stargate",                "first_seen": "2025-01-21"},
+   {"term": "Liberation Day",          "first_seen": "2025-04-02"},
+   {"term": "COVID",                   "first_seen": "2020-01-01", "approx": true},
+   {"term": "Inflation Reduction Act", "first_seen": "2022-08-16"},
+   {"term": "SVB collapse",            "first_seen": "2023-03-10"}
+  ]
+ }
+}

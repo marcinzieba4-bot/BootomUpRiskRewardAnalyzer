@@ -516,10 +516,13 @@ def legacy_tier(entry):
     return ""
 
 
-def classify(entry):
-    """Return the quality dict for one ticker entry (does not mutate)."""
+def classify(entry, profile=None):
+    """Return the quality dict for one ticker entry (does not mutate).
+
+    profile: optional (kind, risk, why) that overrides data/business_profiles.json —
+    retro/retro_tool.py passes the point-in-time profile of a retrospective date."""
     t = entry.get("ticker", "").upper()
-    kind, risk, why = load_profiles().get(t, (D, 3, "no curated profile yet — treated as durable/neutral"))
+    kind, risk, why = profile or load_profiles().get(t, (D, 3, "no curated profile yet — treated as durable/neutral"))
     rb = parse_ratio_b(entry)
     epp = _num(entry.get("epp_gap_pct"))
     adj = parse_adj_gap(entry)
