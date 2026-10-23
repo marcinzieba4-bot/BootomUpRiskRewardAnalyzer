@@ -14,11 +14,11 @@
    {
     "theme": "OFFSHORE",
     "status": "live, company-acknowledged; no market read",
-    "reason": "Live: Accenture's own FY2011 10-K names off-shore providers, 'particularly in India, the Philippines and China ... often at highly competitive prices and on more aggressive contractual terms', among its competitors and says competition from lower-cost locations 'has reduced the prices we can charge for some of our services', while its own Global Delivery Network grew to about 141,000 people. The stock trades at 15.1x FY12E — near its own median. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."
+    "reason": "Live: Accenture's own FY2010 10-K names off-shore providers, 'particularly in India or China ... often at highly competitive prices and on more aggressive contractual terms', among its competitors and says competition from lower-cost locations 'has put downward pressure on the prices we can charge for our services ... and is likely to continue to do so', while its own Global Delivery Network grew to 116,000+ people. The stock trades at 15.1x FY12E — near its own median. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."
    }
   ],
   "evidence": [
-   "S45"
+   "S40"
   ]
  },
  "classification": {
@@ -162,25 +162,18 @@
  "summary": "ACN (retrospective, 2011-10-21) ◉ BUY — Ratio B 0.30x (17.4% downside to Bear $48 / +58.4% upside to Bull $92) | Adj composite 3.48 vs market 1.97: gap +1.51 [UNDERVALUED] | +26% above the EPP floor $46 (12x FY12E $3.84) | Conservative 2-yr case: +28.5% total (+14.3%/yr) | At 15.1x FY12E the 15% hurdle price $77 sits at or below the BASE case; consulting +16% LC in Q4, FY12 guided +7-10% LC; offshore competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
  "sources": [
   {
-   "id": "S45",
-   "published": "2011-10-21",
-   "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
-   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
-   "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
-  },
-  {
-   "id": "S44",
-   "published": "2011-09-27",
-   "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
-   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
-   "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
-  },
-  {
    "id": "S40",
    "published": "2010-10-26",
    "title": "Accenture plc annual report on Form 10-K for fiscal 2010",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510235847/d10k.htm",
    "supports": "selected financial data FY06-FY10 (net revenues, diluted EPS; FY08 restated to $2.64), FY10 diluted shares 766.0M; competitors include off-shore providers 'particularly in India or China ... on more aggressive contractual terms'; lower-cost competition 'has put downward pressure on the prices we can charge'; Global Delivery Network of more than 116,000 people"
+  },
+  {
+   "id": "S39",
+   "published": "2010-09-30",
+   "title": "Accenture plc Q4/FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510221087/dex991.htm",
+   "supports": "Q4 and FY10 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.45 semi-annual dividend; FY11 and Q1 guidance"
   },
   {
    "id": "S35",
@@ -218,6 +211,41 @@
    "supports": "Q4 and FY09 net revenues by type of work and operating group, bookings, margin and EPS with and without the $253M restructuring charge, diluted shares, cash; $0.75 annual dividend; FY10 and Q1 guidance"
   },
   {
+   "id": "S38",
+   "published": "2010-06-24",
+   "title": "Accenture plc Q3 FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510145994/dex991.htm",
+   "supports": "Q3 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY10 and Q4 guidance"
+  },
+  {
+   "id": "S41",
+   "published": "2010-12-16",
+   "title": "Accenture plc Q1 FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510282424/dex991.htm",
+   "supports": "Q1 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q2 guidance"
+  },
+  {
+   "id": "S36",
+   "published": "2009-12-17",
+   "title": "Accenture plc Q1 FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509254902/dex991.htm",
+   "supports": "Q1 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY10 and Q2 guidance"
+  },
+  {
+   "id": "S42",
+   "published": "2011-03-24",
+   "title": "Accenture plc Q2 FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511076477/dex991.htm",
+   "supports": "Q2 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $0.45 semi-annual dividend; raised FY11 and Q3 guidance"
+  },
+  {
+   "id": "S37",
+   "published": "2010-03-25",
+   "title": "Accenture plc Q2 FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510067094/dex991.htm",
+   "supports": "Q2 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $0.375 semi-annual dividend; FY10 and Q3 guidance"
+  },
+  {
    "id": "S43",
    "published": "2011-06-23",
    "title": "Accenture plc Q3 FY11 results (8-K ex.99.1)",
@@ -225,11 +253,11 @@
    "supports": "Q3 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q4 guidance"
   },
   {
-   "id": "S39",
-   "published": "2010-09-30",
-   "title": "Accenture plc Q4/FY10 results (8-K ex.99.1)",
-   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510221087/dex991.htm",
-   "supports": "Q4 and FY10 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.45 semi-annual dividend; FY11 and Q1 guidance"
+   "id": "S44",
+   "published": "2011-09-27",
+   "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
+   "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
   },
   {
    "id": "S12",

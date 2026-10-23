@@ -20,7 +20,8 @@ METHODOLOGY = ("house v2 (EPP-distance adjustment), 6-section format; retro meth
 SOURCES = [
     {
         "id": "S45",
-        "published": "2011-10-21",
+        "published": "2011-10-24",
+        "filed": "2011-10-21 16:06 ET, after the close: dated the next trading day",
         "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
         "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
         "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
@@ -121,7 +122,7 @@ VOL_52W_HIGH    = 63.66
 REF_LOW         = 43.32   # lowest close of the last 52 weeks, 2010-11-30
 REF_LOW_LABEL   = 'November'
 
-# ── FACTS: company history (S45, S44, S40, S35, S29, S21, S20, S34, S43, vintage 2011-10-21) ──
+# ── FACTS: company history (S45, S44, S40, S35, S29, S21, S20, S34, S43, vintage 2011-10-24) ──
 EPS_NORM      = {2003: 1.05, 2004: 1.22, 2005: 1.56, 2006: 1.61, 2007: 1.97, 2008: 2.64, 2009: 2.68, 2010: 2.66, 2011: 3.4}   # reported, FY07-FY11 GAAP from the FY11 10-K (S45), FY03-FY06 from earlier 10-Ks (S21, S29, S35, S40); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY02 excluded: $0.56 GAAP EPS depressed by a $321M investment loss, no published adjusted figure
 REVENUE_HIST  = {2003: 11.818, 2004: 13.673, 2005: 15.547, 2006: 16.646, 2007: 19.696, 2008: 23.387, 2009: 21.577, 2010: 21.551, 2011: 25.507}   # USD bn
 SHARES_HIST   = {2003: 997.163, 2011: 742.185}   # diluted, millions

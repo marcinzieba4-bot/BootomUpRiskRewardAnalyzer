@@ -107,6 +107,8 @@ How recurring cases are encoded (each was decided the first time it came up, the
 - **A one-off charge with a company-published figure without it:** EPS and operating margin use that figure,
   and the note keeps the GAAP number. Example: ACN FY09 restructuring charge (EPS $2.68 vs $2.44 GAAP,
   margin 13.4% vs 12.3%).
+- **A filing accepted after the 16:00 ET close** counts from the next trading day, so it never meets a closing price
+  that was set before it was public. Example: the FY11 10-K, accepted 2011-10-21 16:06 ET, is dated 2011-10-24.
 - **A change of company name** (`company_names` in the fact sheet) applies from its filing date. Example:
   Accenture plc replaced Accenture Ltd on 2009-09-01.
 

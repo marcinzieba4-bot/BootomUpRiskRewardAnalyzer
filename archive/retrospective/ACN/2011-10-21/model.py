@@ -19,25 +19,18 @@ METHODOLOGY = ("house v2 (EPP-distance adjustment), 6-section format; retro meth
                "derived from dated facts by frozen rules (retro/README.md)")
 SOURCES = [
     {
-        "id": "S45",
-        "published": "2011-10-21",
-        "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
-        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
-        "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
-    },
-    {
-        "id": "S44",
-        "published": "2011-09-27",
-        "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
-        "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
-    },
-    {
         "id": "S40",
         "published": "2010-10-26",
         "title": "Accenture plc annual report on Form 10-K for fiscal 2010",
         "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510235847/d10k.htm",
         "supports": "selected financial data FY06-FY10 (net revenues, diluted EPS; FY08 restated to $2.64), FY10 diluted shares 766.0M; competitors include off-shore providers 'particularly in India or China ... on more aggressive contractual terms'; lower-cost competition 'has put downward pressure on the prices we can charge'; Global Delivery Network of more than 116,000 people"
+    },
+    {
+        "id": "S39",
+        "published": "2010-09-30",
+        "title": "Accenture plc Q4/FY10 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510221087/dex991.htm",
+        "supports": "Q4 and FY10 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.45 semi-annual dividend; FY11 and Q1 guidance"
     },
     {
         "id": "S35",
@@ -75,6 +68,41 @@ SOURCES = [
         "supports": "Q4 and FY09 net revenues by type of work and operating group, bookings, margin and EPS with and without the $253M restructuring charge, diluted shares, cash; $0.75 annual dividend; FY10 and Q1 guidance"
     },
     {
+        "id": "S38",
+        "published": "2010-06-24",
+        "title": "Accenture plc Q3 FY10 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510145994/dex991.htm",
+        "supports": "Q3 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY10 and Q4 guidance"
+    },
+    {
+        "id": "S41",
+        "published": "2010-12-16",
+        "title": "Accenture plc Q1 FY11 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510282424/dex991.htm",
+        "supports": "Q1 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q2 guidance"
+    },
+    {
+        "id": "S36",
+        "published": "2009-12-17",
+        "title": "Accenture plc Q1 FY10 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509254902/dex991.htm",
+        "supports": "Q1 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY10 and Q2 guidance"
+    },
+    {
+        "id": "S42",
+        "published": "2011-03-24",
+        "title": "Accenture plc Q2 FY11 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511076477/dex991.htm",
+        "supports": "Q2 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $0.45 semi-annual dividend; raised FY11 and Q3 guidance"
+    },
+    {
+        "id": "S37",
+        "published": "2010-03-25",
+        "title": "Accenture plc Q2 FY10 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510067094/dex991.htm",
+        "supports": "Q2 FY10 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $0.375 semi-annual dividend; FY10 and Q3 guidance"
+    },
+    {
         "id": "S43",
         "published": "2011-06-23",
         "title": "Accenture plc Q3 FY11 results (8-K ex.99.1)",
@@ -82,11 +110,11 @@ SOURCES = [
         "supports": "Q3 FY11 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; raised FY11 and Q4 guidance"
     },
     {
-        "id": "S39",
-        "published": "2010-09-30",
-        "title": "Accenture plc Q4/FY10 results (8-K ex.99.1)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510221087/dex991.htm",
-        "supports": "Q4 and FY10 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.45 semi-annual dividend; FY11 and Q1 guidance"
+        "id": "S44",
+        "published": "2011-09-27",
+        "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
+        "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
     },
     {
         "id": "S12",
@@ -102,8 +130,8 @@ PIT_PROFILE = {
     "kind": "DURABLE",
     "risk": 2,
     "why": 'Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($28.8B in FY11); discretionary consulting demand is cyclical, the franchise is not',
-    "theme_watch": [{'theme': 'OFFSHORE', 'status': 'live, company-acknowledged; no market read', 'reason': "Live: Accenture's own FY2011 10-K names off-shore providers, 'particularly in India, the Philippines and China ... often at highly competitive prices and on more aggressive contractual terms', among its competitors and says competition from lower-cost locations 'has reduced the prices we can charge for some of our services', while its own Global Delivery Network grew to about 141,000 people. The stock trades at 15.1x FY12E — near its own median. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."}],
-    "evidence": ['S45'],
+    "theme_watch": [{'theme': 'OFFSHORE', 'status': 'live, company-acknowledged; no market read', 'reason': "Live: Accenture's own FY2010 10-K names off-shore providers, 'particularly in India or China ... often at highly competitive prices and on more aggressive contractual terms', among its competitors and says competition from lower-cost locations 'has put downward pressure on the prices we can charge for our services ... and is likely to continue to do so', while its own Global Delivery Network grew to 116,000+ people. The stock trades at 15.1x FY12E — near its own median. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."}],
+    "evidence": ['S40'],
 }
 
 # ── FACTS: market (prices truncated at AS_OF) ─────────────────────────────────
@@ -121,10 +149,10 @@ VOL_52W_HIGH    = 63.66
 REF_LOW         = 43.32   # lowest close of the last 52 weeks, 2010-11-30
 REF_LOW_LABEL   = 'November'
 
-# ── FACTS: company history (S45, S44, S40, S35, S29, S21, S20, S34, S43, vintage 2011-10-21) ──
-EPS_NORM      = {2003: 1.05, 2004: 1.22, 2005: 1.56, 2006: 1.61, 2007: 1.97, 2008: 2.64, 2009: 2.68, 2010: 2.66, 2011: 3.4}   # reported, FY07-FY11 GAAP from the FY11 10-K (S45), FY03-FY06 from earlier 10-Ks (S21, S29, S35, S40); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY02 excluded: $0.56 GAAP EPS depressed by a $321M investment loss, no published adjusted figure
+# ── FACTS: company history (S40, S39, S35, S29, S21, S20, S34, S38, vintage 2010-10-26, FY11 from S44 (2011-09-27)) ──
+EPS_NORM      = {2003: 1.05, 2004: 1.22, 2005: 1.56, 2006: 1.61, 2007: 1.97, 2008: 2.64, 2009: 2.68, 2010: 2.66, 2011: 3.4}   # reported, FY06-FY10 GAAP from the FY10 10-K (S40; FY08 restated there to $2.64), FY03-FY05 from earlier 10-Ks (S21, S29, S35); FY06 = company-adjusted $1.61 (S20); FY09 = $2.68 absent the $253M restructuring charge (S34; GAAP $2.44); FY02 excluded: $0.56 GAAP EPS depressed by a $321M investment loss, no published adjusted figure; FY11 = GAAP $3.40 (S44; no adjusted figure published)
 REVENUE_HIST  = {2003: 11.818, 2004: 13.673, 2005: 15.547, 2006: 16.646, 2007: 19.696, 2008: 23.387, 2009: 21.577, 2010: 21.551, 2011: 25.507}   # USD bn
-SHARES_HIST   = {2003: 997.163, 2011: 742.185}   # diluted, millions
+SHARES_HIST   = {2003: 997.163, 2010: 766.048, 2011: 742.185}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = 'FY2012E', 'FY12E', 'FY2014E', 'FY11'
 PREV_FY_MARGIN = 13.6
 TAX_RATE      = 0.275   # latest tax-rate guide midpoint
@@ -149,11 +177,11 @@ GROUPS_BASIS    = 'FY11 actuals'
 NEXT_PRINT      = 'Q1 FY12 print (mid-December)'
 SHARE_GAIN_TEXT = 'Share-gainer at scale: FY11 revenue +15% LC, record $28.8B bookings; Q4 revenue +14% LC'
 BALANCE_TEXT    = 'Cash $5.7B, FCF guide $3.1-3.4B, $6B buyback authority'
-THEME_FACTORS   = [('Global Delivery Network: about 141,000 people (116,000+ a year earlier) — Accenture runs the offshore model itself', 0.2, 0.1), ("Offshore providers 'particularly in India, the Philippines and China ... on more aggressive contractual terms'; 'has reduced the prices we can charge for some of our services'", -0.2, 0.1)]
+THEME_FACTORS   = [('Global Delivery Network: 116,000+ people (81,000+ a year earlier) — Accenture runs the offshore model itself', 0.2, 0.1), ("Offshore providers 'particularly in India or China ... on more aggressive contractual terms'; 'downward pressure on the prices we can charge ... likely to continue'", -0.2, 0.1)]
 THEME_SIGNAL_NAME    = 'Offshore: net effect on services'
 THEME_SIGNAL_TRIGGER = 'Offshore pricing pressure accelerates faster than global-delivery savings'
 THEME_SUMMARY        = 'offshore competition is live and company-acknowledged; no dated evidence ties the multiple to it'
-KEY_TRIGGER_TAIL     = 'A JOINT event: a demand recession alone hits consulting, accelerating offshore\n  pricing pressure (10-K FY11) alone hits outsourcing margins — the bear needs both.'
+KEY_TRIGGER_TAIL     = 'A JOINT event: a demand recession alone hits consulting, accelerating offshore\n  pricing pressure (10-K FY10) alone hits outsourcing margins — the bear needs both.'
 CATALYST_3      = '(3) Bookings run-rate vs the $28-31B FY12 target'
 CATALYST_4      = '(4) Outsourcing pricing — where offshore pressure would show first'
 

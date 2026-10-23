@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for ACN retrospectives (retro/build_acn.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that guide a fiscal year after that history, and the events published between that vintage and AS_OF. Values are as reported (no restatements). Edit only to add newly published facts or fix a transcription error against the cited filing. A Q4 print may carry 'fy_actual': the full-year figures it reports, which extend the annual history from its release until the next 10-K vintage supersedes them.",
+ "_doc": "Point-in-time fact sheet for ACN retrospectives (retro/build_acn.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that guide a fiscal year after that history, and the events published between that vintage and AS_OF. Values are as reported (no restatements). Edit only to add newly published facts or fix a transcription error against the cited filing. A Q4 print may carry 'fy_actual': the full-year figures it reports, which extend the annual history from its release until the next 10-K vintage supersedes them. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time).",
  "ticker": "ACN",
  "sources": {
   "S1": {
@@ -213,7 +213,8 @@
    "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
   },
   "S45": {
-   "published": "2011-10-21",
+   "published": "2011-10-24",
+   "filed": "2011-10-21 16:06 ET, after the close: dated the next trading day",
    "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
    "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
@@ -465,7 +466,8 @@
    "tax_note": "FY11 guide 28-29% (S39)"
   },
   {
-   "published": "2011-10-21",
+   "published": "2011-10-24",
+   "filed": "2011-10-21 16:06 ET, after the close: dated the next trading day",
    "sources": [
     "S45",
     "S44",
@@ -2436,7 +2438,8 @@
   },
   {
    "id": "S45",
-   "published": "2011-10-21",
+   "published": "2011-10-24",
+   "filed": "2011-10-21 16:06 ET, after the close: dated the next trading day",
    "theme": "OFFSHORE",
    "kind": "offshore_company_acknowledged",
    "doc": "FY2011 10-K",
