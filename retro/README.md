@@ -72,7 +72,7 @@ anything unless all of these pass:
 | Other structural factors | Constant across dates (franchise, balance sheet, the GenAI opportunity/risk pair nets to 0) |
 | Conservative case | BASE − 2pp EPS growth, exit at the median P/E rounded down, signals at their BASE floor |
 | Signals | Thresholds frozen; values are the latest reported quarter |
-| History | The latest annual history vintage published by AS_OF; only prints and events published since that vintage are in scope |
+| History | The latest annual history vintage published by AS_OF. Prints in scope: those published by AS_OF that guide a fiscal year after that history (a Q4 print guides the next year). Events in scope: those published since the vintage |
 | Segment bridge | FY revenue from the FY guide; groups pro rata to the latest actuals; bear flat, bull at the decade revenue CAGR |
 
 Fallbacks for facts a company did not publish (decided before any outcome of the affected dates was computed):
@@ -92,6 +92,9 @@ Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output chang
 - **Between year-end and the Q4 print** no EPS exists for the new year, so days past the last guided year keep
   that year's EPS in the P/E series. Example: ACN on 2008-09-05 to 2008-09-19.
 - **Dividend:** the latest declared rate, from the latest print that states one, else the vintage.
+- **A new 10-K before the next quarter's print** (ACN: the FY08 10-K on 2008-10-20, before Q1 FY09 on 2008-12-18).
+  The Q4 print stays the latest print, because it is the one guiding the new year. The 10-K replaces its full-year
+  actuals. The disruption-theme wording (quotes, delivery-network size) comes from the latest 10-K event in the fact sheet.
 
 Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
@@ -147,6 +150,7 @@ What the gates enforce:
 python3 retro/build_acn.py --weekly 2023-01-01 2023-06-30        # dates chosen by rule, models generated
 python3 retro/build_acn.py --weekly 2008-01-01 2008-01-31        # any era with a history vintage in the fact sheet
 python3 retro/build_acn.py --weekly 2008-05-05 2008-09-30        # start a range on a Monday when the prior week is built
+python3 retro/build_acn.py --weekly 2008-10-06 2008-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

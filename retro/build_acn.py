@@ -81,16 +81,19 @@ def build(as_of, facts, acn, spx, engine):
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
-    # only prints and events published since that vintage and on or before AS_OF
-    prints = [p for p in facts["prints"] if h["published"] <= p["published"] <= as_of]
+    # prints published by AS_OF that guide a fiscal year after the history (a Q4 print guides the next year,
+    # so it stays in scope after the 10-K that follows it); events published since the vintage
+    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    guide_fy = lambda p: 2000 + int(p["quarter"][-2:]) + (1 if p["quarter"].startswith("Q4") else 0)
+    prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     events = [e for e in facts["events"] if h["published"] <= e["published"] <= as_of]
     if not prints:
-        sys.exit(f"{as_of}: no quarterly print since the {h['published']} history vintage")
+        sys.exit(f"{as_of}: no quarterly print guiding FY{first_fy} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a:
+        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
             y = str(a["fy"])
             h.update(fy_label=a["fy_label"], why=a.get("why", h["why"]),
                      eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
@@ -190,18 +193,19 @@ def build(as_of, facts, acn, spx, engine):
                          "GenAI is a live theme, read by the sell side as share gain for consultancies, not a threat")
     elif "OFFSHORE" in themes:
         stage = "offshore"
+        e = [e for e in events if e["theme"] == "OFFSHORE"][-1]      # the latest 10-K's wording
         watch = [{"theme": "OFFSHORE", "status": "live, company-acknowledged; no market read",
-                  "reason": ("Live: Accenture's own FY2007 10-K names off-shore providers, 'particularly Indian providers ... often at "
-                             "highly competitive prices', among its competitors and warns of margin erosion 'if current pricing pressures "
-                             "accelerate', while its own Global Delivery Network grew to 71,000+ people. The stock trades at "
+                  "reason": (f"Live: Accenture's own {e['doc']} names off-shore providers, 'particularly Indian providers ... often at "
+                             f"highly competitive prices', among its competitors and {e['warning']}, while its own Global Delivery "
+                             f"Network grew to {e['gdn_people']} people. The stock trades at "
                              f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated "
                              "evidence shows the market pricing offshore substitution for ACN specifically.")}]
-        factors = [("Global Delivery Network: 71,000+ people in lower-cost locations (+23,000 in FY07) — Accenture runs the offshore model itself", 0.2, 0.10),
-                   ("Offshore Indian providers 'often at highly competitive prices'; margin erosion 'if current pricing pressures accelerate'", -0.2, 0.10)]
+        factors = [(f"Global Delivery Network: {e['gdn_people']} people in lower-cost locations ({e['gdn_added']}) — Accenture runs the offshore model itself", 0.2, 0.10),
+                   (f"Offshore Indian providers 'often at highly competitive prices'; {e['warning_short']}", -0.2, 0.10)]
         sig_name = "Offshore: net effect on services"
         trigger = "Offshore pricing pressure accelerates faster than global-delivery savings"
         key_tail = ("A JOINT event: a demand recession alone hits consulting, accelerating offshore\n"
-                    "  pricing pressure (10-K FY07) alone hits outsourcing margins — the bear needs both.")
+                    f"  pricing pressure ({e['doc_short']}) alone hits outsourcing margins — the bear needs both.")
         bt = latest.get("fy_bookings_target_b")
         cat3 = f"(3) Bookings run-rate vs the ${bt[0]}-{bt[1]}B {fy_now} target" if bt else "(3) Bookings run-rate"
         cat4 = "(4) Outsourcing pricing — where offshore pressure would show first"

@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for ACN retrospectives (retro/build_acn.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, and only prints and events published between that vintage and AS_OF. Values are as reported (no restatements). Edit only to add newly published facts or fix a transcription error against the cited filing. A Q4 print may carry 'fy_actual': the full-year figures it reports, which extend the annual history from its release until the next 10-K vintage supersedes them.",
+ "_doc": "Point-in-time fact sheet for ACN retrospectives (retro/build_acn.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that guide a fiscal year after that history, and the events published between that vintage and AS_OF. Values are as reported (no restatements). Edit only to add newly published facts or fix a transcription error against the cited filing. A Q4 print may carry 'fy_actual': the full-year figures it reports, which extend the annual history from its release until the next 10-K vintage supersedes them.",
  "ticker": "ACN",
  "sources": {
   "S1": {
@@ -115,6 +115,18 @@
    "title": "Accenture Ltd Q4/FY08 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013708012016/c35720exv99w1.htm",
    "supports": "Q4 and FY08 net revenues by type of work and operating group, bookings, margin, EPS, diluted shares, cash; $0.50 annual dividend; FY09 and Q1 guidance"
+  },
+  "S29": {
+   "published": "2008-10-20",
+   "title": "Accenture Ltd annual report on Form 10-K for fiscal 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013708012835/c46977e10vk.htm",
+   "supports": "selected financial data FY04-FY08 (net revenues, diluted EPS), FY08 diluted shares 822.4M; competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; 'the continuation of pricing pressures could result in permanent changes in pricing policies'; Global Delivery Network of approximately 83,000 people (+11,000 in FY08)"
+  },
+  "S30": {
+   "published": "2008-12-18",
+   "title": "Accenture Ltd Q1 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095012308017845/c48278exv99w1.htm",
+   "supports": "Q1 FY09 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; revised FY09 and Q2 guidance"
   }
  },
  "history_vintages": [
@@ -168,6 +180,63 @@
    "margin_signal_name": "Operating margin change",
    "business_line": "Management consulting, technology services and outsourcing",
    "tax_note": "FY08 guide 33-35% (S20)"
+  },
+  {
+   "published": "2008-10-20",
+   "sources": [
+    "S29",
+    "S21",
+    "S20",
+    "S28",
+    "S26"
+   ],
+   "company": "Accenture Ltd",
+   "fy_label": "FY08",
+   "why": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($26.79B in FY08); discretionary consulting demand is cyclical, the franchise is not",
+   "eps_gaap": {
+    "2003": 1.05,
+    "2004": 1.22,
+    "2005": 1.56,
+    "2006": 1.59,
+    "2007": 1.97,
+    "2008": 2.65
+   },
+   "eps_normalized": {
+    "2003": 1.05,
+    "2004": 1.22,
+    "2005": 1.56,
+    "2006": 1.61,
+    "2007": 1.97,
+    "2008": 2.65
+   },
+   "normalization": "FY04-FY08 GAAP from the FY08 10-K (S29), FY03 from the FY07 10-K (S21); FY06 = company-adjusted $1.61 (S20); FY02 excluded: $0.56 GAAP EPS depressed by a $321M investment loss, no published adjusted figure; FY08 GAAP, no adjusted figure published",
+   "revenue_usd_b": {
+    "2003": 11.818,
+    "2004": 13.673,
+    "2005": 15.547,
+    "2006": 16.646,
+    "2007": 19.696,
+    "2008": 23.387
+   },
+   "diluted_shares_m": {
+    "2003": 997.163,
+    "2008": 822.372
+   },
+   "pe_window_start": "2002-09-01",
+   "prev_fy_op_margin": 12.9,
+   "prev_fy_revenue_lc_growth": 11,
+   "prev_fy_bookings_b": 26.79,
+   "prev_q_consulting_lc": 12,
+   "prev_q_label": "Q3 FY08",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY08, the first to guide FY09) (S26)",
+   "dividend_annual": 0.5,
+   "dividend_note": "$0.50 annual, declared 2008-09-25 (S28)",
+   "tax_rate": 0.31,
+   "cash_return_text": "$2.5B buyback authority",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
+   "tax_note": "FY09 guide 30-32% (S28)"
   },
   {
    "published": "2022-10-12",
@@ -588,6 +657,93 @@
    }
   },
   {
+   "quarter": "Q1 FY09",
+   "published": "2008-12-18",
+   "source": "S30",
+   "extra_sources": [
+    "S23"
+   ],
+   "release": "Dec 18",
+   "revenue_b": 6.02,
+   "revenue_lc": 9,
+   "consulting_lc": 9,
+   "managed_lc": 9,
+   "bookings_b": 5.8,
+   "bookings_lc": 2,
+   "bookings_lc_note": "derived: -2.0% USD vs Q1 FY08 $5.92B (S23), less the negative 4% foreign-currency impact the release states for Q1 bookings",
+   "consulting_bookings_b": 3.56,
+   "consulting_revenue_b": 3.66,
+   "margin_label": "op margin",
+   "margin": 13.5,
+   "margin_bp": 70,
+   "groups_basis": "Q1 actuals",
+   "groups": [
+    [
+     "Products",
+     1.567,
+     9
+    ],
+    [
+     "Communications & High Tech",
+     1.364,
+     6
+    ],
+    [
+     "Financial Services",
+     1.238,
+     2
+    ],
+    [
+     "Resources",
+     1.079,
+     20
+    ],
+    [
+     "Public Service",
+     0.761,
+     11
+    ]
+   ],
+   "eps_label": "EPS",
+   "fy_eps_guide": [
+    2.78,
+    2.85
+   ],
+   "fy_eps_guide_note": "cut from $2.85-2.93",
+   "fy_rev_guide_lc": [
+    6,
+    10
+   ],
+   "fy_rev_guide_note": "cut from 9-12%",
+   "fy_fx": -9.0,
+   "fy_fx_note": "FY09 outlook assumes a -8% to -10% foreign-exchange impact vs FY08",
+   "fy_margin_guide": [
+    13.4,
+    13.7
+   ],
+   "next_q": "Q2",
+   "next_q_guide_b": [
+    5.45,
+    5.65
+   ],
+   "next_q_guide_lc": null,
+   "next_q_guide_note": "USD only, on a -8% to -10% FX assumption",
+   "next_print": "Q2 FY09 print (late March)",
+   "fcf_guide_b": [
+    2.4,
+    2.6
+   ],
+   "cash_b": 2.78,
+   "diluted_shares_m": 796.9,
+   "optimization": "",
+   "fy_bookings_target_b": [
+    24,
+    27
+   ],
+   "tax_rate": 0.3,
+   "cash_return_text": "$1.9B buyback authority"
+  },
+  {
    "quarter": "Q1 FY23",
    "published": "2022-12-16",
    "source": "S3",
@@ -830,7 +986,25 @@
    "id": "S21",
    "published": "2007-10-23",
    "theme": "OFFSHORE",
-   "kind": "offshore_company_acknowledged"
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2007 10-K",
+   "doc_short": "10-K FY07",
+   "warning": "warns of margin erosion 'if current pricing pressures accelerate'",
+   "warning_short": "margin erosion 'if current pricing pressures accelerate'",
+   "gdn_people": "71,000+",
+   "gdn_added": "+23,000 in FY07"
+  },
+  {
+   "id": "S29",
+   "published": "2008-10-20",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2008 10-K",
+   "doc_short": "10-K FY08",
+   "warning": "warns that 'the continuation of pricing pressures could result in permanent changes in pricing policies'",
+   "warning_short": "'continuation of pricing pressures could result in permanent changes in pricing policies'",
+   "gdn_people": "about 83,000",
+   "gdn_added": "11,000+ added in FY08"
   },
   {
    "id": "S13",
