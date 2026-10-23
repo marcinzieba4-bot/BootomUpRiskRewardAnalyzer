@@ -109,6 +109,9 @@ How recurring cases are encoded (each was decided the first time it came up, the
   margin 13.4% vs 12.3%).
 - **A filing accepted after the 16:00 ET close** counts from the next trading day, so it never meets a closing price
   that was set before it was public. Example: the FY11 10-K, accepted 2011-10-21 16:06 ET, is dated 2011-10-24.
+- **A release made before the open** may meet the same day's close (ACN moved to pre-market releases in 2013).
+  The weekly rule still takes the next trading day unless the week has none (Good Friday, 2013-03-29);
+  then the date is the release day, and the builder refuses a same-day print not marked `release_time` before the open.
 - **A change of company name** (`company_names` in the fact sheet) applies from its filing date. Example:
   Accenture plc replaced Accenture Ltd on 2009-09-01.
 
@@ -173,6 +176,7 @@ python3 retro/build_acn.py --weekly 2009-01-05 2009-12-31
 python3 retro/build_acn.py --weekly 2010-01-04 2010-12-31
 python3 retro/build_acn.py --weekly 2011-01-03 2011-12-31
 python3 retro/build_acn.py --weekly 2012-01-02 2012-12-31
+python3 retro/build_acn.py --weekly 2013-01-07 2014-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done

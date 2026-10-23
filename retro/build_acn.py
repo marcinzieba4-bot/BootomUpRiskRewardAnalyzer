@@ -228,6 +228,10 @@ def build(as_of, facts, acn, spx, engine):
                                  "only if dated evidence shows the market pricing cloud substitution of ACN's outsourcing specifically.")})
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{latest['next_q']} {fy_now} print)"
+    same_day = [p for p in prints if p["published"] == as_of]     # only a release made before the open can meet AS_OF's close
+    if same_day:
+        assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
+        tag = f"(day of the {same_day[-1]['quarter']} print, released before the open)"
 
     # a change of company name filed after the vintage (ACN: Accenture plc replaced Accenture Ltd on 2009-09-01)
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]

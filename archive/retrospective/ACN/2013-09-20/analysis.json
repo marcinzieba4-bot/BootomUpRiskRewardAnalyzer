@@ -1,0 +1,293 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "ACN",
+ "company": "Accenture plc",
+ "as_of": "2013-09-20",
+ "price_date": "2013-09-20",
+ "price": 77.32,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($32.2B in FY12); discretionary consulting demand is cyclical, the franchise is not",
+  "theme_watch": [
+   {
+    "theme": "OFFSHORE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Accenture's own FY2012 10-K names off-shore providers, 'particularly in India, the Philippines and China ... often at highly competitive prices and on more aggressive contractual terms', among its competitors and says competitors 'may be willing, at times, to price contracts lower than us' and that its own delivery network 'is increasingly concentrated in India and the Philippines', while its own Global Delivery Network grew to about 162,000 people. The stock trades at 18.4x FY13E — a premium. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated evidence shows the market pricing offshore substitution for ACN specifically."
+   },
+   {
+    "theme": "CLOUD",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Accenture's own FY2012 10-K says 'Current areas of significant change include mobility, cloud-based computing and the processing and analyzing of large amounts of data. Technological developments such as these may materially affect the cost and use of technology by our clients.' At the same time it sells cloud services itself: 'We provide cloud services in three areas to help clients improve IT efficiency and agility'. The stock trades at 18.4x FY13E — a premium. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market pricing cloud substitution of ACN's outsourcing specifically."
+   }
+  ],
+  "evidence": [
+   "S50"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Accenture: global consulting and outsourcing leader across five operating groups with record bookings ($32.2B in FY12); discretionary consulting demand is cyclical, the franchise is not. durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.07x; +42% to EPP floor; model-vs-market gap -0.81; conservative 2yr -2%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 1.07,
+  "ratio_b_fmt": "1.07x",
+  "epp": 54.6,
+  "epp_gap_pct": 41.6,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.35,
+  "sca": -0.1,
+  "adj_composite": 2.15,
+  "market_composite": 2.96,
+  "adj_gap": -0.81,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -1.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.14,
+    "pe": 12.9,
+    "price": 53,
+    "desc": "Flat EPS (worst year FY03-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.04,
+    "pe": 15.9,
+    "price": 80,
+    "desc": "EPS +9.5%/yr (latest guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 5.6,
+    "pe": 17.9,
+    "price": 100,
+    "desc": "EPS +15.5%/yr (FY03-FY12 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.89,
+    "pe": 19.7,
+    "price": 136,
+    "desc": "EPS +28.1%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.07,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -0.81,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -1.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.53,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -0.31,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -1.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.51,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -1.17,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.87,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -0.66,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -1.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.29,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -0.92,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -1.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.07,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -0.51,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -1.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.07,
+   "epp_gap_pct": 15.1,
+   "adj_gap": -0.71,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -1.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.07,
+   "epp_gap_pct": 41.6,
+   "adj_gap": -0.39,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -1.5,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "ACN (retrospective, 2013-09-20) ◎ ACCUMULATE — Ratio B 1.07x (31.5% downside to Bear $53 / +29.3% upside to Bull $100) | Adj composite 2.15 vs market 2.96: gap -0.81 [OVERVALUED] | +42% above the EPP floor $55 (13x FY13E $4.20) | Conservative 2-yr case: -1.5% total (-0.7%/yr) | At 18.4x FY13E the 15% hurdle price $102 sits above the BULL case; consulting +0% LC in Q3, FY13 guided +3-4% LC; offshore competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "S50",
+   "published": "2012-10-30",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737312000170/acn831201210k.htm",
+   "supports": "selected financial data FY08-FY12 (net revenues, diluted EPS; FY11 restated to $3.39), FY12 diluted shares 726.4M; competitors include off-shore providers 'particularly in India, the Philippines and China'; delivery network 'increasingly concentrated in India and the Philippines'; Global Delivery Network of approximately 162,000 people; 'cloud-based computing' among 'current areas of significant change' that 'may materially affect the cost and use of technology by our clients'"
+  },
+  {
+   "id": "S49",
+   "published": "2012-09-27",
+   "title": "Accenture plc Q4/FY12 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737312000109/acn-83120128xkexhibit.htm",
+   "supports": "Q4 and FY12 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.81 semi-annual dividend; FY13 and Q1 guidance"
+  },
+  {
+   "id": "S45",
+   "published": "2011-10-24",
+   "filed": "2011-10-21 16:06 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511277309/d222389d10k.htm",
+   "supports": "selected financial data FY07-FY11 (net revenues, diluted EPS), FY11 diluted shares 742.2M; competitors include off-shore providers 'particularly in India, the Philippines and China'; lower-cost competition 'has reduced the prices we can charge for some of our services'; Global Delivery Network of approximately 141,000 people"
+  },
+  {
+   "id": "S40",
+   "published": "2010-10-26",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312510235847/d10k.htm",
+   "supports": "selected financial data FY06-FY10 (net revenues, diluted EPS; FY08 restated to $2.64), FY10 diluted shares 766.0M; competitors include off-shore providers 'particularly in India or China ... on more aggressive contractual terms'; lower-cost competition 'has put downward pressure on the prices we can charge'; Global Delivery Network of more than 116,000 people"
+  },
+  {
+   "id": "S35",
+   "published": "2009-10-19",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509209671/d10k.htm",
+   "supports": "selected financial data FY05-FY09 (net revenues, diluted EPS), FY09 diluted shares 785.4M; competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; 'experiencing pricing pressures from some clients'; Global Delivery Network of more than 81,000 people"
+  },
+  {
+   "id": "S29",
+   "published": "2008-10-20",
+   "title": "Accenture Ltd annual report on Form 10-K for fiscal 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013708012835/c46977e10vk.htm",
+   "supports": "selected financial data FY04-FY08 (net revenues, diluted EPS), FY08 diluted shares 822.4M; competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; 'the continuation of pricing pressures could result in permanent changes in pricing policies'; Global Delivery Network of approximately 83,000 people (+11,000 in FY08)"
+  },
+  {
+   "id": "S21",
+   "published": "2007-10-23",
+   "title": "Accenture Ltd annual report on Form 10-K for fiscal 2007",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013707015822/c19337e10vk.htm",
+   "supports": "selected financial data FY03-FY07 (net revenues, diluted EPS, diluted shares); competitors include off-shore providers 'particularly Indian providers ... often at highly competitive prices'; margin erosion 'if current pricing pressures accelerate'; Global Delivery Network of 71,000+ people (+23,000 in FY07)"
+  },
+  {
+   "id": "S20",
+   "published": "2007-09-27",
+   "title": "Accenture Ltd Q4/FY07 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1134538/000095013707014753/c18901exv99w1.htm",
+   "supports": "FY07 net revenues $19.70B (+13% LC), operating margin 12.7%, record $22.0B bookings, Q4 consulting +15% LC absent the NHS agreement, FY06 adjusted EPS $1.61, annual dividend $0.42"
+  },
+  {
+   "id": "S34",
+   "published": "2009-10-01",
+   "title": "Accenture plc Q4/FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312509201992/dex991.htm",
+   "supports": "Q4 and FY09 net revenues by type of work and operating group, bookings, margin and EPS with and without the $253M restructuring charge, diluted shares, cash; $0.75 annual dividend; FY10 and Q1 guidance"
+  },
+  {
+   "id": "S48",
+   "published": "2012-06-28",
+   "title": "Accenture plc Q3 FY12 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737312000007/acn-53120128xkexhibit.htm",
+   "supports": "Q3 FY12 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY12 and Q4 guidance"
+  },
+  {
+   "id": "S44",
+   "published": "2011-09-27",
+   "title": "Accenture plc Q4/FY11 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511257370/d236265dex991.htm",
+   "supports": "Q4 and FY11 net revenues by type of work and operating group, record bookings, margin, EPS, diluted shares, cash; $0.675 semi-annual dividend; FY12 and Q1 guidance"
+  },
+  {
+   "id": "S51",
+   "published": "2012-12-19",
+   "title": "Accenture plc Q1 FY13 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737312000261/fy13q1earnings8-kexhibit.htm",
+   "supports": "Q1 FY13 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY13 and Q2 guidance"
+  },
+  {
+   "id": "S46",
+   "published": "2011-12-15",
+   "title": "Accenture plc Q1 FY12 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312511342341/d271441dex991.htm",
+   "supports": "Q1 FY12 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; FY12 and Q2 guidance"
+  },
+  {
+   "id": "S52",
+   "published": "2013-03-28",
+   "title": "Accenture plc Q2 FY13 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737313000190/fy13q2earnings8-kexhibit.htm",
+   "supports": "Q2 FY13 net revenues by type of work and operating group, bookings, margin with and without reorganization benefits, cash, diluted shares; $0.81 semi-annual dividend; FY13 and Q3 guidance with and without benefits; released before the open (8:00 a.m. EDT call)"
+  },
+  {
+   "id": "S47",
+   "published": "2012-03-22",
+   "title": "Accenture plc Q2 FY12 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000119312512127421/d319983dex991.htm",
+   "supports": "Q2 FY12 net revenues by type of work and operating group, bookings, margin, cash, diluted shares; $0.675 semi-annual dividend; raised FY12 and Q3 guidance"
+  },
+  {
+   "id": "S53",
+   "published": "2013-06-27",
+   "title": "Accenture plc Q3 FY13 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737313000328/fy13q3earnings8-kexhibit.htm",
+   "supports": "Q3 FY13 net revenues by type of work and operating group, bookings, margin with and without reorganization benefits, cash, diluted shares; FY13 and Q4 guidance"
+  },
+  {
+   "id": "S12",
+   "published": "2013-09-20",
+   "title": "Yahoo Finance daily prices, ACN and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/ACN/history",
+   "supports": "close $77.32, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-23"
+}

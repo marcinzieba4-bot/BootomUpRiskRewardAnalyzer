@@ -266,6 +266,110 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2012-12-20 | $69.02 | Accenture plc Q1 FY13 results | 1.90 | -0.49 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +36.5% | -11.5pp | +17.6% | ✓ |
 | 2012-12-28 | $65.66 | Accenture plc Q1 FY13 results | 1.90 | -0.23 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.6% | -9.4pp | +23.8% | ✓ |
 | 2012-12-31 | $66.50 | Accenture plc Q1 FY13 results | 1.90 | -0.30 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.2% | -9.7pp | +22.4% | ✓ |
+| 2013-01-11 | $69.88 | Accenture plc Q1 FY13 results | 1.90 | -0.56 | 0.53x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +33.8% | -10.0pp | +16.7% | ✗ |
+| 2013-01-18 | $70.11 | Accenture plc Q1 FY13 results | 1.90 | -0.57 | 0.54x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +32.0% | -8.7pp | +16.5% | ✓ |
+| 2013-01-25 | $72.21 | Accenture plc Q1 FY13 results | 1.90 | -0.72 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +28.7% | -12.5pp | +13.2% | ✓ |
+| 2013-02-01 | $73.80 | Accenture plc Q1 FY13 results | 1.90 | -0.83 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +18.9% | -17.8pp | +10.9% | ✓ |
+| 2013-02-08 | $73.31 | Accenture plc Q1 FY13 results | 1.90 | -0.78 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +25.3% | -14.9pp | +11.9% | ✓ |
+| 2013-02-15 | $74.16 | Accenture plc Q1 FY13 results | 1.90 | -0.85 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +26.1% | -16.6pp | +10.8% | ✓ |
+| 2013-02-22 | $74.80 | Accenture plc Q1 FY13 results | 1.90 | -0.91 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.9% | -17.9pp | +10.0% | ✓ |
+| 2013-03-01 | $74.82 | Accenture plc Q1 FY13 results | 1.90 | -0.90 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.3% | -18.0pp | +10.2% | ✓ |
+| 2013-03-08 | $78.35 | Accenture plc Q1 FY13 results | 1.90 | -1.25 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.4% | -17.7pp | +5.4% | ✓ |
+| 2013-03-15 | $76.60 | Accenture plc Q1 FY13 results | 1.90 | -1.01 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +19.5% | -16.7pp | +7.9% | ✓ |
+| 2013-03-22 | $73.88 | Accenture plc Q1 FY13 results | 1.90 | -0.78 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +28.8% | -11.2pp | +12.1% | ✓ |
+| 2013-03-28 | $75.97 | Accenture plc Q2 FY13 results | 2.50 | -0.35 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +28.5% | -7.5pp | +9.3% | ✓ |
+| 2013-04-05 | $76.25 | Accenture plc Q2 FY13 results | 2.50 | -0.37 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +28.4% | -9.5pp | +9.2% | ✓ |
+| 2013-04-12 | $77.23 | Accenture plc Q2 FY13 results | 2.50 | -0.45 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +27.7% | -9.3pp | +8.3% | ✓ |
+| 2013-04-19 | $74.74 | Accenture plc Q2 FY13 results | 2.50 | -0.25 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +28.8% | -9.7pp | +12.3% | ✗ |
+| 2013-04-26 | $78.66 | Accenture plc Q2 FY13 results | 2.50 | -0.62 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +23.7% | -14.7pp | +7.0% | ✓ |
+| 2013-05-03 | $79.50 | Accenture plc Q2 FY13 results | 2.50 | -0.67 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +22.3% | -12.8pp | +6.3% | ✓ |
+| 2013-05-10 | $80.48 | Accenture plc Q2 FY13 results | 2.50 | -0.72 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +24.0% | -10.1pp | +5.3% | ✓ |
+| 2013-05-17 | $82.24 | Accenture plc Q2 FY13 results | 2.50 | -0.80 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +22.7% | -9.0pp | +3.5% | ✓ |
+| 2013-05-24 | $82.22 | Accenture plc Q2 FY13 results | 2.50 | -0.79 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +22.0% | -11.4pp | +4.0% | ✓ |
+| 2013-05-31 | $82.11 | Accenture plc Q2 FY13 results | 2.50 | -0.79 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +21.7% | -12.0pp | +4.4% | ✓ |
+| 2013-06-07 | $80.90 | Accenture plc Q2 FY13 results | 2.50 | -0.74 | 1.27x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +22.7% | -9.0pp | +6.3% | ✓ |
+| 2013-06-14 | $80.55 | Accenture plc Q2 FY13 results | 2.50 | -0.72 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +24.1% | -9.1pp | +7.1% | ✓ |
+| 2013-06-21 | $79.40 | Accenture plc Q2 FY13 results | 2.50 | -0.66 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +27.1% | -10.2pp | +9.0% | ✓ |
+| 2013-06-28 | $71.96 | Accenture plc Q3 FY13 results | 2.35 | -0.27 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.0% | +7.5pp | +20.7% | ✓ |
+| 2013-07-05 | $73.64 | Accenture plc Q3 FY13 results | 2.35 | -0.39 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +37.5% | +5.6pp | +18.3% | ✓ |
+| 2013-07-12 | $75.52 | Accenture plc Q3 FY13 results | 2.35 | -0.54 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +36.0% | +7.6pp | +15.8% | ✗ |
+| 2013-07-19 | $75.22 | Accenture plc Q3 FY13 results | 2.35 | -0.52 | 0.86x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +38.8% | +8.7pp | +16.8% | ✗ |
+| 2013-07-26 | $73.12 | Accenture plc Q3 FY13 results | 2.35 | -0.35 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +43.7% | +16.2pp | +20.8% | ✓ |
+| 2013-08-02 | $74.59 | Accenture plc Q3 FY13 results | 2.35 | -0.50 | 0.85x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +43.5% | +15.9pp | +19.0% | ✗ |
+| 2013-08-09 | $73.53 | Accenture plc Q3 FY13 results | 2.35 | -0.41 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +46.4% | +19.1pp | +21.4% | ✓ |
+| 2013-08-16 | $71.65 | Accenture plc Q3 FY13 results | 2.35 | -0.28 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.8% | +18.9pp | +25.2% | ✓ |
+| 2013-08-23 | $74.01 | Accenture plc Q3 FY13 results | 2.35 | -0.45 | 0.81x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +36.5% | +13.2pp | +21.8% | ✓ |
+| 2013-08-30 | $72.25 | Accenture plc Q3 FY13 results | 2.35 | -0.32 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +38.1% | +11.6pp | +25.1% | ✓ |
+| 2013-09-06 | $73.21 | Accenture plc Q3 FY13 results | 2.35 | -0.39 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.3% | +13.8pp | +23.8% | ✓ |
+| 2013-09-13 | $74.50 | Accenture plc Q3 FY13 results | 2.35 | -0.50 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +35.9% | +15.2pp | +22.0% | ✗ |
+| 2013-09-20 | $77.32 | Accenture plc Q3 FY13 results | 2.35 | -0.81 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +31.2% | +12.1pp | +18.0% | ✗ |
+| 2013-09-27 | $74.09 | Accenture plc Q4/FY13 results | 1.95 | -0.59 | 0.55x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +36.1% | +17.3pp | +23.7% | ✗ |
+| 2013-10-04 | $73.26 | Accenture plc Q4/FY13 results | 1.95 | -0.54 | 0.51x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +41.0% | +20.9pp | +25.6% | ✗ |
+| 2013-10-11 | $72.71 | Accenture plc Q4/FY13 results | 1.95 | -0.50 | 0.49x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +48.2% | +25.4pp | +27.2% | ✗ |
+| 2013-10-18 | $72.88 | Accenture plc Q4/FY13 results | 1.95 | -0.51 | 0.49x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +46.9% | +25.9pp | +27.6% | ✗ |
+| 2013-10-25 | $73.61 | Accenture plc Q4/FY13 results | 1.95 | -0.57 | 0.53x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +52.2% | +29.9pp | +27.1% | ✗ |
+| 2013-11-01 | $73.00 | Accenture plc Q4/FY13 results | 1.95 | -0.53 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +52.4% | +30.0pp | +28.9% | ✗ |
+| 2013-11-08 | $75.24 | Accenture plc Q4/FY13 results | 1.95 | -0.67 | 0.61x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +46.3% | +23.4pp | +25.7% | ✗ |
+| 2013-11-15 | $78.02 | Accenture plc Q4/FY13 results | 1.95 | -0.89 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +37.4% | +20.6pp | +21.8% | ✗ |
+| 2013-11-22 | $77.84 | Accenture plc Q4/FY13 results | 1.95 | -0.88 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +43.9% | +23.9pp | +22.6% | ✗ |
+| 2013-11-29 | $77.47 | Accenture plc Q4/FY13 results | 1.95 | -0.84 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +44.0% | +23.9pp | +23.7% | ✗ |
+| 2013-12-06 | $75.53 | Accenture plc Q4/FY13 results | 1.95 | -0.71 | 0.65x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +49.8% | +29.7pp | +27.4% | ✗ |
+| 2013-12-13 | $73.94 | Accenture plc Q4/FY13 results | 1.95 | -0.60 | 0.56x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +47.9% | +30.2pp | +30.8% | ✗ |
+| 2013-12-20 | $80.55 | Accenture plc Q1 FY14 results | 2.35 | -0.66 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +31.6% | +17.0pp | +20.5% | ✗ |
+| 2013-12-27 | $82.51 | Accenture plc Q1 FY14 results | 2.35 | -0.86 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +31.3% | +15.0pp | +17.9% | ✗ |
+| 2014-01-03 | $81.40 | Accenture plc Q1 FY14 results | 2.35 | -0.71 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +33.4% | +17.5pp | +19.8% | ✗ |
+| 2014-01-10 | $83.20 | Accenture plc Q1 FY14 results | 2.35 | -0.90 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +22.9% | +14.3pp | +17.5% | ✗ |
+| 2014-01-17 | $84.43 | Accenture plc Q1 FY14 results | 2.35 | -0.95 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.4% | +15.7pp | +16.1% | ✗ |
+| 2014-01-24 | $81.18 | Accenture plc Q1 FY14 results | 2.35 | -0.71 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +31.0% | +20.0pp | +20.9% | ✗ |
+| 2014-01-31 | $79.88 | Accenture plc Q1 FY14 results | 2.35 | -0.63 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +37.2% | +24.0pp | +23.3% | ✗ |
+| 2014-02-07 | $80.58 | Accenture plc Q1 FY14 results | 2.35 | -0.68 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +27.9% | +18.8pp | +22.6% | ✗ |
+| 2014-02-14 | $82.11 | Accenture plc Q1 FY14 results | 2.35 | -0.85 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +20.3% | +14.5pp | +20.5% | ✗ |
+| 2014-02-21 | $83.80 | Accenture plc Q1 FY14 results | 2.35 | -0.93 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.9% | +14.2pp | +18.2% | ✗ |
+| 2014-02-28 | $83.35 | Accenture plc Q1 FY14 results | 2.35 | -0.91 | 1.28x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.2% | +17.2pp | +19.1% | ✗ |
+| 2014-03-07 | $83.93 | Accenture plc Q1 FY14 results | 2.35 | -0.93 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.9% | +16.0pp | +18.6% | ✗ |
+| 2014-03-14 | $81.38 | Accenture plc Q1 FY14 results | 2.35 | -0.72 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +35.6% | +21.6pp | +22.7% | ✗ |
+| 2014-03-21 | $82.83 | Accenture plc Q1 FY14 results | 2.35 | -0.89 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +35.5% | +21.1pp | +20.9% | ✗ |
+| 2014-03-28 | $78.81 | Accenture plc Q2 FY14 results | 2.15 | -0.67 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +50.0% | +36.0pp | +27.6% | ✗ |
+| 2014-04-04 | $78.14 | Accenture plc Q2 FY14 results | 2.15 | -0.62 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +53.0% | +37.9pp | +29.2% | ✗ |
+| 2014-04-11 | $77.09 | Accenture plc Q2 FY14 results | 2.15 | -0.54 | 0.68x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +50.8% | +33.8pp | +31.4% | ✗ |
+| 2014-04-17 | $78.90 | Accenture plc Q2 FY14 results | 2.15 | -0.68 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +50.9% | +35.0pp | +28.8% | ✗ |
+| 2014-04-25 | $78.43 | Accenture plc Q2 FY14 results | 2.15 | -0.64 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +50.9% | +34.5pp | +30.2% | ✗ |
+| 2014-05-02 | $79.36 | Accenture plc Q2 FY14 results | 2.15 | -0.73 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +49.5% | +34.5pp | +29.2% | ✗ |
+| 2014-05-09 | $78.74 | Accenture plc Q2 FY14 results | 2.15 | -0.67 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.0% | +38.1pp | +30.7% | ✗ |
+| 2014-05-16 | $79.53 | Accenture plc Q2 FY14 results | 2.15 | -0.75 | 0.85x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.6% | +38.3pp | +29.9% | ✗ |
+| 2014-05-23 | $79.79 | Accenture plc Q2 FY14 results | 2.15 | -0.77 | 0.86x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +50.9% | +38.8pp | +30.0% | ✗ |
+| 2014-05-30 | $81.45 | Accenture plc Q2 FY14 results | 2.15 | -0.89 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +51.2% | +37.8pp | +27.8% | ✗ |
+| 2014-06-06 | $83.53 | Accenture plc Q2 FY14 results | 2.15 | -1.09 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.3% | +35.9pp | +25.1% | ✗ |
+| 2014-06-13 | $82.73 | Accenture plc Q2 FY14 results | 2.15 | -0.95 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.6% | +35.0pp | +26.9% | ✗ |
+| 2014-06-20 | $83.13 | Accenture plc Q2 FY14 results | 2.15 | -1.08 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.3% | +37.9pp | +26.8% | ✗ |
+| 2014-06-27 | $81.35 | Accenture plc Q3 FY14 results | 2.15 | -0.94 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.6% | +33.3pp | +30.0% | ✗ |
+| 2014-07-03 | $81.55 | Accenture plc Q3 FY14 results | 2.15 | -0.95 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.4% | +34.2pp | +30.0% | ✗ |
+| 2014-07-11 | $79.77 | Accenture plc Q3 FY14 results | 2.15 | -0.85 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +50.1% | +37.2pp | +33.3% | ✗ |
+| 2014-07-18 | $79.74 | Accenture plc Q3 FY14 results | 2.15 | -0.85 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +48.5% | +34.7pp | +33.7% | ✗ |
+| 2014-07-25 | $80.38 | Accenture plc Q3 FY14 results | 2.15 | -0.90 | 0.99x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +45.9% | +32.1pp | +32.9% | ✗ |
+| 2014-08-01 | $78.70 | Accenture plc Q3 FY14 results | 2.15 | -0.78 | 0.86x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +48.8% | +31.8pp | +36.0% | ✗ |
+| 2014-08-08 | $78.87 | Accenture plc Q3 FY14 results | 2.15 | -0.80 | 0.87x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +49.5% | +32.3pp | +36.0% | ✗ |
+| 2014-08-15 | $79.01 | Accenture plc Q3 FY14 results | 2.15 | -0.81 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +49.1% | +32.9pp | +36.0% | ✗ |
+| 2014-08-22 | $80.51 | Accenture plc Q3 FY14 results | 2.15 | -0.92 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +46.6% | +32.6pp | +33.7% | ✗ |
+| 2014-08-29 | $81.06 | Accenture plc Q3 FY14 results | 2.15 | -0.95 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.9% | +33.9pp | +33.3% | ✗ |
+| 2014-09-05 | $81.83 | Accenture plc Q3 FY14 results | 2.15 | -0.99 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.5% | +33.8pp | +32.6% | ✗ |
+| 2014-09-12 | $80.97 | Accenture plc Q3 FY14 results | 2.15 | -0.94 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.5% | +31.6pp | +34.3% | ✗ |
+| 2014-09-19 | $79.93 | Accenture plc Q3 FY14 results | 2.15 | -0.88 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +43.6% | +33.0pp | +36.4% | ✗ |
+| 2014-09-25 | $78.98 | Accenture plc Q4/FY14 results | 2.25 | -0.28 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +48.6% | +34.2pp | +38.4% | ✓ |
+| 2014-10-03 | $80.32 | Accenture plc Q4/FY14 results | 2.25 | -0.38 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +55.8% | +41.6pp | +36.6% | ✓ |
+| 2014-10-10 | $76.84 | Accenture plc Q4/FY14 results | 2.25 | -0.14 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +58.4% | +40.4pp | +43.2% | ✓ |
+| 2014-10-17 | $76.62 | Accenture plc Q4/FY14 results | 2.25 | -0.11 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.7% | +39.5pp | +44.0% | ✓ |
+| 2014-10-24 | $78.35 | Accenture plc Q4/FY14 results | 2.25 | -0.24 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.5% | +39.7pp | +41.1% | ✓ |
+| 2014-10-31 | $81.12 | Accenture plc Q4/FY14 results | 2.25 | -0.44 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +48.1% | +38.4pp | +36.4% | ✓ |
+| 2014-11-07 | $83.48 | Accenture plc Q4/FY14 results | 2.25 | -0.63 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +49.0% | +40.0pp | +32.9% | ✗ |
+| 2014-11-14 | $84.64 | Accenture plc Q4/FY14 results | 2.25 | -0.72 | 0.97x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +43.8% | +33.5pp | +31.4% | ✗ |
+| 2014-11-21 | $84.08 | Accenture plc Q4/FY14 results | 2.25 | -0.67 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +47.6% | +37.0pp | +32.5% | ✗ |
+| 2014-11-28 | $86.33 | Accenture plc Q4/FY14 results | 2.25 | -0.81 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +45.0% | +34.5pp | +29.3% | ✗ |
+| 2014-12-05 | $86.19 | Accenture plc Q4/FY14 results | 2.25 | -0.81 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +41.7% | +31.4pp | +29.7% | ✗ |
+| 2014-12-12 | $81.90 | Accenture plc Q4/FY14 results | 2.25 | -0.50 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +56.3% | +39.5pp | +36.9% | ✗ |
+| 2014-12-19 | $90.51 | Accenture plc Q1 FY15 results | 2.45 | -0.91 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.5% | +28.1pp | +24.3% | ✗ |
+| 2014-12-26 | $91.26 | Accenture plc Q1 FY15 results | 2.45 | -0.94 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.6% | +21.1pp | +23.5% | ✗ |
+| 2014-12-31 | $89.31 | Accenture plc Q1 FY15 results | 2.45 | -0.87 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +36.1% | +23.1pp | +26.4% | ✗ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |
