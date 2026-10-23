@@ -113,6 +113,8 @@ How recurring cases are encoded (each was decided the first time it came up, the
   A guide that includes a change in accounting with no published figure without it stays GAAP
   (ACN FY17: the share-based payment tax benefit of ASU 2016-09).
   Later cases, same rule: FY17 $5.91 (GAAP $5.44, pension settlement), FY18 $6.74 (GAAP $6.34, US tax-law charges).
+  The FY23 guide from Q2 FY23 excludes business optimization costs and the Duck Creek investment gain
+  ($11.41-11.63 vs $10.84-11.06 GAAP).
 - **A figure published to a decimal** is kept as published (ACN FY16 LC revenue growth 10.5%, FY16 guide 9.5-10.5%).
   The exception is the latest quarter's own LC growth (`revenue_lc`, `consulting_lc`, `managed_lc`), which the frozen
   engine prints as a whole percentage: a decimal there is rounded half up, and the note keeps the published figure.
@@ -155,6 +157,9 @@ How recurring cases are encoded (each was decided the first time it came up, the
   then the date is the release day, and the builder refuses a same-day print not marked `release_time` before the open.
 - **A change of company name** (`company_names` in the fact sheet) applies from its filing date. Example:
   Accenture plc replaced Accenture Ltd on 2009-09-01.
+- **A renamed reporting line** takes the new name from the first print that uses it (`service_line` on the print;
+  otherwise the vintage's). ACN's Q1 FY23 release (2022-12-16) renames outsourcing "managed services (previously
+  referred to as outsourcing)"; the FY22 10-K still says outsourcing, so 2022-10-14 to 2022-12-09 keep it.
 
 Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
@@ -179,28 +184,43 @@ Ratio B is `inf` (printed `infx`) when the price is above the BULL scenario pric
 case. ACN reached that on 14 dates in 2018, 59 in 2019-2020 and 38 in 2021-2022. `analysis.json` stores it as
 `Infinity`, which Python's json reads.
 
-### Seam with the 2023 pilot (2022-10-12)
+### The 2023 pilot, harmonized (2026-10-23)
 
-The 2023 series was the pilot of method r2. It was built from its own FY22 history vintage (sources S1, S2), before the
-2008-2022 chain settled the encoding rules above. The 2021-2022 series was added so that the 26 pilot models stay
-byte-identical, which means dates from the FY22 vintage on (2022-10-14 to 2022-12-30) inherit the pilot's conventions:
+The 2023 series was the pilot of method r2. It was first built from its own FY22 history vintage (the Q4 FY22 release
+plus XBRL company facts), before the 2008-2022 chain settled the encoding rules above. At the owner's request it was
+re-encoded with those rules. The method is still r2, and no outcome was consulted: the rules existed before, the class
+comparison below was computed from point-in-time outputs only, and the outcomes were refreshed afterwards.
 
-- **EPS one-offs.** FY13 is the mean of FY12 and FY14 (4.18); FY16 and FY17 are averaged (5.945 each); FY15, FY18 and
-  FY20 are GAAP. The chain uses the company's own adjusted figures (4.21, 5.34, 5.91, 4.82, 6.74, 7.46).
-- **Revenue.** Revenues come from XBRL totals (FY12-FY18 on the old gross basis, e.g. FY18 $41.60B vs $40.99B revised), not the net/revised series.
-- **Buyback window.** Diluted shares are FY18 and FY22 only, so BUYBACK is a 4-year rate (0.48%/yr on 2022-10-14),
-  not the decade rate (1.31% on 2022-10-07).
-- **Theme events.** No OFFSHORE or CLOUD events are recorded for the FY22 10-K, so seven dates (2022-10-14 to
-  2022-11-25) show no disruption theme. GENAI then goes live with ChatGPT (from 2022-12-02).
-- **Dating.** The FY22 10-K was accepted 2022-10-12 21:04 ET, after the close. By the rule above it counts from
-  2022-10-13, but the pilot dates it 2022-10-12. No archived date falls on 2022-10-12, so no close met it early.
+- **FY22 history vintage** from the FY22 10-K (S99). It was accepted 2022-10-12 21:04 ET, after the close, so it is
+  dated 2022-10-13 (the pilot had 2022-10-12). It now uses company-adjusted EPS (FY13 4.21, FY15 4.82, FY16 5.34,
+  FY17 5.91, FY18 6.74, FY20 7.46) instead of means, averages and GAAP, and net/revised revenues instead of XBRL
+  totals. BUYBACK is again the decade rate (FY12-FY22 diluted shares, not FY18-FY22), and the P/E window starts
+  2002-09-01. The previous quarter is Q3 FY22 (+30% LC), the quarter before the first print in scope.
+- **FY22 10-K theme events.** OFFSHORE and CLOUD are recorded, so 2022-10-14 to 2022-11-25 carry the offshore theme
+  that the pilot left empty. GENAI takes over from 2022-12-02 as before.
+- **Q1-Q3 FY23 prints** re-transcribed from their releases. Groups are year to date, at three decimals, sorted by size.
+  EPS and margin from Q2 FY23 exclude business optimization costs and the Duck Creek investment gain, as the company
+  published them, with the GAAP figures in the notes. Q2 bookings are $22.09B (the pilot had the rounded $22.1B). The
+  prints now carry dividend, buyback-authority, tax and FX notes. The pilot's "business-optimization program defends
+  margin" line is dropped: no chain print uses that field. An 8-K/A on 2022-12-16 corrected only a dividend record
+  date in the Q1 FY23 release.
+- **Q4 FY22** keeps every value; its source text and dividend comment take the chain format. This changes three
+  chain dates (2022-09-23 to 2022-10-07) in text only.
 
-Across the seam the class is unchanged on the first pilot date (CHEAP on 2022-10-07 and 2022-10-14). Scenario inputs
-move: BASE 14.6% to 13.8%, XBULL 19.8% to 16.5%. To keep the 2023 models byte-identical, the 2021-2022 work cites the
-pilot's S1 for Q4 FY22 and carries the pilot's values for Q4 consulting (+22% LC) and the dividend line. It also marks
-Q1 FY23 as released before the open; that field is used only by the date rule. Harmonizing the pilot with the chain
-means a new FY22 vintage (and an audit of the Q1-Q3 FY23 prints) and a re-run of 2022-10-14 onward. That changes
-archived models, so it is a decision for the owner.
+Effect on the 38 dates from 2022-10-14, computed from the point-in-time outputs:
+- **BASE and XBULL rise.** BASE growth is +0.7pp everywhere (decade buyback). XBULL is 19.8% instead of 16.5%,
+  because the best two-year run is now measured on adjusted EPS.
+- **Ratio B and gap move together.** Ratio B falls and the adjusted gap rises on every date.
+- **Five classes change:** FAIR to CHEAP on 2022-11-25, 2022-12-02, 2023-04-14 and 2023-04-28, and RICH to FAIR on
+  2023-06-09.
+- **Four legacy tiers change:** ACCUMULATE to BUY on 2023-01-06 and 2023-03-03, WATCHLIST to ACCUMULATE on 2023-05-19,
+  and AVOID to WATCHLIST on 2023-06-09.
+- **The seam is gone.** BASE is 14.6% on 2022-10-07 and 14.5% on 2022-10-14; the pilot's step to 13.8% no longer
+  exists. All 809 dates now follow one set of rules.
+
+Found while checking every quoted fragment of the 10-K events: the FY21 event had kept the FY15-FY20 wording
+"may be willing, at times, to price contracts lower than us". The FY2021 10-K adds "take on more risk or". That is
+corrected, and 52 dates (2021-10-15 to 2022-10-07) change in text only.
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
@@ -266,7 +286,7 @@ python3 retro/build_acn.py --weekly 2013-01-07 2014-12-31
 python3 retro/build_acn.py --weekly 2015-01-05 2016-12-31
 python3 retro/build_acn.py --weekly 2017-01-02 2018-12-31
 python3 retro/build_acn.py --weekly 2019-01-07 2020-12-31
-python3 retro/build_acn.py --weekly 2021-01-04 2022-12-31        # joins the 2023 pilot (see "Seam with the 2023 pilot")
+python3 retro/build_acn.py --weekly 2021-01-04 2022-12-31        # the 2023 range continues it ("The 2023 pilot, harmonized")
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done
