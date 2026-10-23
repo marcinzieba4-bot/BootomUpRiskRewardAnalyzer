@@ -5,22 +5,23 @@ the method or the fact sheet. Testing one means other tickers or periods, then a
 Regenerate the numbers from `outcome.json` before quoting them; they cover the dates built so far. Medians of an
 even count take the upper middle value (`statistics.median_high`).
 
-Sample: 809 weekly dates, 2008-01-04 to 2023-06-30 (2-year outcomes). One stock, so every pattern is a hypothesis.
+Sample: 877 weekly dates with a 2-year outcome, 2008-01-04 to 2024-10-18. One stock, so every pattern is a hypothesis.
 The 2023 dates are the pilot series re-encoded with the chain's rules (retro/README.md, "The 2023 pilot, harmonized").
+The 105 dates from 2024-10-25 to 2026-10-22 have no 2-year outcome yet and are left out of the table.
 
 | Group | Dates | Median 2-yr total return | Cleared 15%/yr hurdle | Beat SPY |
 |---|---|---|---|---|
 | class CHEAP | 278 | +41% | 66% | 60% |
 | class FAIR | 39 | +28% | 46% | 38% |
-| class RICH | 492 | +40% | 68% | 85% |
-| legacy tier BUY | 310 | +45% | 75% | 69% |
-| legacy tier ACCUMULATE | 85 | +36% | 54% | 55% |
-| legacy tier WATCHLIST | 61 | +27% | 48% | 61% |
-| legacy tier AVOID | 353 | +38% | 65% | 85% |
+| class RICH | 560 | +37% | 60% | 75% |
+| legacy tier BUY | 316 | +45% | 73% | 68% |
+| legacy tier ACCUMULATE | 98 | +31% | 47% | 48% |
+| legacy tier WATCHLIST | 79 | +23% | 37% | 47% |
+| legacy tier AVOID | 384 | +37% | 60% | 78% |
 | CHEAP, gap >= 1.0 | 146 | +43% | 64% | 70% |
 | CHEAP, gap < 0.5 | 53 | +38% | 66% | 43% |
 | price below the EPP floor | 36 | +72% | 100% | 89% |
-| price 15%+ above the floor | 712 | +39% | 65% | 71% |
+| price 15%+ above the floor | 780 | +37% | 60% | 65% |
 
 2015-2016 alone (104 dates): 98 RICH and 6 FAIR, no CHEAP; 89 AVOID. Median 2-year return +40%, 82% cleared the
 hurdle, all 104 beat SPY, and every 2-year outcome landed in the BULL (52) or XBULL (52) scenario. On the as-of
@@ -55,18 +56,31 @@ none). None of the 26 beat SPY. Outcomes landed in BASE 16 times and BULL 10; th
   these outcomes were looked at. The point is that a FAIR/CHEAP boundary this close to the price moves with
   encoding details.
 
+July 2023 to October 2024 (68 dates with a 2-year outcome): all RICH, and RICH was right. Median 2-year return -35%,
+none cleared the hurdle and none beat SPY; outcomes landed in BEAR 50 times and BASE 18. The price started at 1.07x the
+BASE target. This is the second stretch, after the second half of 2021, where RICH called the turn.
+
+From October 2024 there are no 2-year outcomes yet (preliminary, 1-year only):
+- **RICH until 2025-03-07, CHEAP from 2025-03-14 to 2026-10-22.** The GenAI re-file (retro/README.md, "July 2023 to
+  October 2026") turned the CHEAP dates into AI-FEAR BASKET from 2025-07-11 (and on 2025-06-20).
+- **The 2025 CHEAP dates with a 1-year outcome (32, to 2025-10-17) lost a median 36%; none beat SPY.** Those still
+  labelled COMPOUNDER AT LOW PRICE (16, March to July 2025) lost 40%. The AI-FEAR BASKET ones (16, from June 2025)
+  lost 26%.
+
 What these suggest (to test on other tickers, not to apply here):
 
 1. **RICH did not work for ACN until the multiple peaked.** Its multiple re-rated from about 13x to 18x over 2009-2014
    and kept rising to 2021, and a valuation anchored on the stock's own 10-year P/E range kept calling RICH while it
    compounded. 2015-2020 is the clearest case: RICH on 303 of 313 dates, and 299 of them beat SPY over two years.
-   RICH was finally right in the second half of 2021, but a signal that says RICH almost every week for seven years
-   being right once is not evidence of timing skill. Candidate fix for a new method version: value against the
+   RICH was finally right in the second half of 2021 and again from July 2023 to October 2024 (median 2-year return
+   -35%, none beat SPY), but a signal that says RICH almost every week for nine years being right twice is not
+   evidence of timing skill. Candidate fix for a new method version: value against the
    market's multiple or growth-adjusted multiples as well as own history.
 2. **RICH at turning points is a lag artefact:** in late 2009 the signals compare the worst quarter with the
    pre-crisis year. 'Valuation at a discount + bear dashboard' should probably read 'no call', not RICH.
 3. **CHEAP is an absolute-return call more than a relative one:** in 2008, 2012-13 and 2022-23 CHEAP dates made money
-   but lagged a strongly rising S&P 500 (2022-2023: 46 CHEAP dates, median +21%, none beat SPY).
+   but lagged a strongly rising S&P 500 (2022-2023: 46 CHEAP dates, median +21%, none beat SPY). The 2025 CHEAP dates
+   may break even that: a median -36% after one year (preliminary).
 4. **Small-gap CHEAP is close to fair value.** Against SPY, CHEAP with a gap under 0.5 won 43% of the time (53 dates).
    FAIR won 38% and CHEAP with a gap of 1.0 or more won 70%. In 2023, FAIR dates (+27%) did better than CHEAP (+20%).
 5. **Below the EPP floor was the strongest single signal** (all dates there cleared the hurdle), but all 36 cases
@@ -80,4 +94,10 @@ What these suggest (to test on other tickers, not to apply here):
 7. **The scenario band itself sat too low from 2015.** Two-year outcomes landed in BULL or XBULL on 312 of 313 dates
    in 2015-2020. BULL uses the decade EPS CAGR and the 75th-percentile P/E. When the multiple trends up for years,
    the own-history percentiles trail it. Same root cause as item 1. When the multiple fell back (2021-2023 dates),
-   outcomes landed mostly in BASE and BULL.
+   outcomes landed mostly in BASE and BULL, and from July 2023 mostly in BEAR (50 of 68): the band trails on the way
+   down as well.
+8. **A valuation-only CHEAP buys a derating early.** ACN's multiple fell through its own 10-year range from March 2025.
+   The class turned CHEAP at once, and the GenAI re-file followed only when the P/E reached the 30th percentile. The
+   CHEAP dates before the re-file did worst (-40% after one year). Test on other derated franchises: does CHEAP need
+   a check that a live disruption theme is not what the discount prices? Preliminary until the 2-year outcomes
+   arrive (from March 2027).

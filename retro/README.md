@@ -160,6 +160,15 @@ How recurring cases are encoded (each was decided the first time it came up, the
 - **A renamed reporting line** takes the new name from the first print that uses it (`service_line` on the print;
   otherwise the vintage's). ACN's Q1 FY23 release (2022-12-16) renames outsourcing "managed services (previously
   referred to as outsourcing)"; the FY22 10-K still says outsourcing, so 2022-10-14 to 2022-12-09 keep it.
+- **Market and company-action evidence stays in scope once public**; a 10-K's wording is replaced by the next 10-K. An
+  event with a `doc` (10-K wording) expires with the next vintage, an event without one (sell-side read, a loser
+  repricing, a company investment) does not. Added 2026-10-23 for ACN's FY23 10-K (2023-10-12), which would otherwise
+  have dropped the 2022-23 GenAI evidence; no earlier output changes.
+- **A non-earnings 8-K that changes no guided number adds nothing**: ACN's 2024-09-30 segment recast (Middle East and
+  Africa moved to Europe), the 2025-06-20 growth-model change (Reinvention Services), the 2026-06-23 extra $2B of FY26
+  buybacks and the 2026-10-14 investor day (multi-year ambitions, the FY27 guide unchanged), and the debt offerings.
+- **A revenue guide given with and without an item** keeps the published range; the other figure goes in the note
+  (ACN FY26: 2-5% LC, about 3-6% excluding the US federal business).
 
 Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
@@ -173,15 +182,17 @@ The FY19 10-K (2019-10-29) then revises FY15-FY18 to the new basis. Each vintage
 reports it (the same rule as the FY08 and FY11 EPS restatements), so from that date the revenue history is net
 revenues to FY14 and revised revenues from FY15. That seam inflates one year-on-year step (FY15 +8.0% instead of
 +3.5% on the old basis). It moves the median revenue growth that the growth factor uses by 0.14pp (5.66% instead of
-5.52%), a growth score of 0.014 or 0.003 on the composite. The seam leaves the window with the FY24 vintage.
+5.52%), a growth score of 0.014 or 0.003 on the composite. The seam leaves the window with the FY25 vintage
+(2025-10-10), whose ten years start at FY15.
 
 Display quirk: the frozen engine prints the latest print's next-quarter LC guide as `+lo-hi%`, so a range that starts
-below zero reads `+-2-2% LC` (ACN Q2-Q4 FY20 prints: 39 dates, 2020-03-20 to 2020-12-11). The stored values and the
+below zero reads `+-2-2% LC` (ACN Q2-Q4 FY20 prints: 39 dates, 2020-03-20 to 2020-12-11; Q4 FY23-Q2 FY24 prints:
+38 dates, 2023-09-29 to 2024-06-14). The stored values and the
 "Growth vs own history" line (`-2% to +2% LC`) are correct. Fixing the string means editing the engine that is copied
 into every model, so it is left for an explicit engine revision.
 
 Ratio B is `inf` (printed `infx`) when the price is above the BULL scenario price: there is no upside even in the bull
-case. ACN reached that on 14 dates in 2018, 59 in 2019-2020 and 38 in 2021-2022. `analysis.json` stores it as
+case. ACN reached that on 14 dates in 2018, 59 in 2019-2020 and 38 in 2021-2022, and on none from 2023 on. `analysis.json` stores it as
 `Infinity`, which Python's json reads.
 
 ### The 2023 pilot, harmonized (2026-10-23)
@@ -221,6 +232,44 @@ Effect on the 38 dates from 2022-10-14, computed from the point-in-time outputs:
 Found while checking every quoted fragment of the 10-K events: the FY21 event had kept the FY15-FY20 wording
 "may be willing, at times, to price contracts lower than us". The FY2021 10-K adds "take on more risk or". That is
 corrected, and 52 dates (2021-10-15 to 2022-10-07) change in text only.
+
+### July 2023 to October 2026: GenAI evidence after the first post-ChatGPT 10-K
+
+The GenAI text of 2022-23 rests on market evidence (ChatGPT, J.P.Morgan, Chegg, IBM, the $3B investment) and says when
+to re-file ACN: "when the multiple starts discounting the legacy-services deflation J.P.Morgan describes, or it shows up
+in managed-services growth". From the FY23 10-K the builder applies that sentence by rule. The rule was decided on
+2026-10-23, before any date from July 2023 on was built or scored, and no earlier output changes.
+
+- **Company evidence.** Each 10-K from FY23 adds a GENAI event with its own words on AI substitution (`kind`
+  `genai_company_acknowledged`). The wording hardens year by year:
+  - FY23: generative AI is among developments that "have reduced and replaced some of our historical services".
+  - FY24: services "will be replaced by automation, including AI-enabled solutions".
+  - FY25: services "have been and will continue to be replaced".
+  - FY26: AI-enabled automation "has led and may continue to lead to reduced demand for our services".
+- **Bookings.** Prints carry the company's AI bookings figure (`genai_note`) while it gives one; the last is Q1 FY26.
+- **Re-file test, per date.** The theme is re-filed when the P/E is at or below the 30th percentile of its own
+  10-year range, or managed-services growth is below 3% LC. The 30th percentile is the line where the text already
+  says "a discount to its own history"; 3% is the managed-services signal's lowest band. A re-filed date is
+  `DISRUPTION_EXPOSED` (GENAI) with risk 3, one step above DURABLE's 2. Otherwise it stays DURABLE with GENAI on the
+  watch list. The kind changes the class label only (CHEAP reads AI-FEAR BASKET); the price state, the scenarios and
+  the tier do not depend on it.
+- **Result, point in time:**
+  - 2023-07-07 to 2025-06-13: not re-filed.
+  - 2025-06-20: re-filed (P/E at the 30th percentile, the day of the Q3 FY25 print).
+  - 2025-06-27 and 2025-07-03: back to DURABLE (36th and 41st percentiles).
+  - 2025-07-11 to 2026-10-22: re-filed throughout (9th percentile at the end).
+- **Not recorded.** OFFSHORE wording from the FY23-FY26 10-Ks is left out: GENAI has priority from 2022-11-30, so
+  it would be inert. No press coverage was added after 2023. A fixed-outlet search for earnings-day stories was
+  tried and dropped, because the outlet's own stories could not be retrieved reliably. Picking articles by hand
+  would select with hindsight.
+
+The last date is 2026-10-22: the series was built on 2026-10-23 before that day's close. A rebuild after the close
+moves the week's date to 2026-10-23, so delete 2026-10-22 first. The newest date has no outcome yet.
+
+Judgement calls that could carry hindsight, all made before these dates were scored:
+- the 30th-percentile and 3% thresholds, and risk 3 for a re-filed date;
+- treating the 10-K wording as the attribution of a discount to AI, when the company never says its multiple reflects AI;
+- leaving press coverage out after 2023.
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
@@ -287,6 +336,9 @@ python3 retro/build_acn.py --weekly 2015-01-05 2016-12-31
 python3 retro/build_acn.py --weekly 2017-01-02 2018-12-31
 python3 retro/build_acn.py --weekly 2019-01-07 2020-12-31
 python3 retro/build_acn.py --weekly 2021-01-04 2022-12-31        # the 2023 range continues it ("The 2023 pilot, harmonized")
+python3 retro/build_acn.py --weekly 2023-07-03 2026-10-23        # last date 2026-10-22 (see "July 2023 to October 2026")
+python3 retro/build_acn.py 2008-02-08 2008-02-15 2008-02-22 2008-02-29 2008-03-07 2008-03-14 2008-03-20 \
+                           2008-03-28 2008-04-04 2008-04-11 2008-04-18 2008-04-25 2008-04-30   # built by date; include in regressions
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done
