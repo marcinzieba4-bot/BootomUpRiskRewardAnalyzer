@@ -772,44 +772,44 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2022-09-02 | $284.07 | Accenture plc Q3 FY22 results | 3.40 | +1.03 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.8% | -23.3pp | +15.5% | ✗ |
 | 2022-09-09 | $290.55 | Accenture plc Q3 FY22 results | 3.40 | +0.95 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.0% | -16.7pp | +13.0% | ✗ |
 | 2022-09-16 | $272.68 | Accenture plc Q3 FY22 results | 3.40 | +1.21 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.4% | -15.6pp | +20.7% | ✓ |
-| 2022-09-23 | $259.98 | Accenture Q4/FY22 results | 3.55 | +1.37 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.2% | -24.3pp | +26.7% | ✓ |
-| 2022-09-30 | $257.30 | Accenture Q4/FY22 results | 3.55 | +1.42 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -23.3pp | +28.3% | ✓ |
-| 2022-10-07 | $259.71 | Accenture Q4/FY22 results | 3.55 | +1.37 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -19.1pp | +27.5% | ✓ |
-| 2022-10-14 | $252.72 | Accenture Q4/FY22 results | 3.55 | +1.40 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.2% | -18.9pp | +31.5% | ✓ |
-| 2022-10-21 | $269.57 | Accenture Q4/FY22 results | 3.55 | +1.10 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.2% | -16.3pp | +23.8% | ✓ |
-| 2022-10-28 | $287.78 | Accenture Q4/FY22 results | 3.55 | +0.55 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +29.0% | -23.8pp | +16.4% | ✗ |
-| 2022-11-04 | $261.16 | Accenture Q4/FY22 results | 3.55 | +1.26 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.5% | -19.5pp | +28.7% | ✓ |
-| 2022-11-11 | $290.09 | Accenture Q4/FY22 results | 3.55 | +0.50 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +26.6% | -27.0pp | +16.1% | ✗ |
-| 2022-11-18 | $286.50 | Accenture Q4/FY22 results | 3.55 | +0.58 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +26.6% | -25.3pp | +17.8% | ✗ |
-| 2022-11-25 | $296.40 | Accenture Q4/FY22 results | 3.55 | +0.40 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +25.3% | -26.6pp | +14.1% | ✗ |
-| 2022-12-02 | $300.13 | Accenture Q4/FY22 results | 3.55 | +0.33 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.7% | -27.9pp | +12.8% | ✗ |
-| 2022-12-09 | $288.41 | Accenture Q4/FY22 results | 3.55 | +0.56 | 1.03x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +28.1% | -29.1pp | +17.5% | ✗ |
-| 2022-12-16 | $264.48 | Accenture Q1 FY23 results | 2.95 | +0.42 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.8% | -22.6pp | +28.3% | ✓ |
-| 2022-12-23 | $266.09 | Accenture Q1 FY23 results | 2.95 | +0.39 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +38.6% | -20.3pp | +27.6% | ✓ |
-| 2022-12-30 | $266.84 | Accenture Q1 FY23 results | 2.95 | +0.36 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +35.8% | -21.5pp | +27.3% | ✓ |
-| 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
-| 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
-| 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |
-| 2023-01-27 | $277.27 | Accenture Q1 FY23 results | 2.95 | +0.11 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +38.3% | -12.8pp | +22.5% | ✓ |
-| 2023-02-03 | $289.22 | Accenture Q1 FY23 results | 2.95 | -0.20 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +36.8% | -11.5pp | +17.5% | ✓ |
-| 2023-02-10 | $283.96 | Accenture Q1 FY23 results | 2.95 | -0.01 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +39.9% | -11.7pp | +19.9% | ✓ |
-| 2023-02-17 | $277.05 | Accenture Q1 FY23 results | 2.95 | +0.12 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +43.8% | -9.3pp | +22.9% | ✓ |
-| 2023-02-24 | $266.53 | Accenture Q1 FY23 results | 2.95 | +0.39 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +40.4% | -13.7pp | +27.9% | ✓ |
-| 2023-03-03 | $269.20 | Accenture Q1 FY23 results | 2.95 | +0.33 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +32.0% | -15.8pp | +26.5% | ✗ |
-| 2023-03-10 | $252.95 | Accenture Q1 FY23 results | 2.95 | +0.65 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.7% | -12.2pp | +34.3% | ✓ |
-| 2023-03-17 | $250.00 | Accenture Q1 FY23 results | 2.95 | +0.70 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.4% | -14.1pp | +35.4% | ✓ |
-| 2023-03-24 | $272.00 | Accenture Q2 FY23 results | 3.00 | +0.27 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +16.7% | -31.8pp | +24.1% | ✗ |
-| 2023-03-31 | $285.81 | Accenture Q2 FY23 results | 3.00 | -0.02 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +10.1% | -29.0pp | +17.9% | ✗ |
-| 2023-04-06 | $281.70 | Accenture Q2 FY23 results | 3.00 | +0.05 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +4.9% | -22.0pp | +19.4% | ✗ |
-| 2023-04-14 | $279.25 | Accenture Q2 FY23 results | 3.00 | +0.10 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +7.6% | -26.5pp | +20.1% | ✗ |
-| 2023-04-21 | $276.33 | Accenture Q2 FY23 results | 3.00 | +0.17 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.9% | -23.1pp | +21.3% | ✗ |
-| 2023-04-28 | $280.29 | Accenture Q2 FY23 results | 3.00 | +0.08 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +8.4% | -27.3pp | +19.4% | ✗ |
-| 2023-05-05 | $265.65 | Accenture Q2 FY23 results | 3.00 | +0.42 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.9% | -20.1pp | +26.0% | ✗ |
-| 2023-05-12 | $277.19 | Accenture Q2 FY23 results | 3.00 | +0.14 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +20.1% | -25.0pp | +20.7% | ✗ |
-| 2023-05-19 | $289.91 | Accenture Q2 FY23 results | 3.00 | -0.08 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +13.9% | -31.5pp | +15.5% | ✗ |
-| 2023-05-26 | $303.60 | Accenture Q2 FY23 results | 3.00 | -0.39 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +5.5% | -35.7pp | +10.4% | ✗ |
-| 2023-06-02 | $311.39 | Accenture Q2 FY23 results | 3.00 | -0.50 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +4.4% | -37.3pp | +7.8% | ✓ |
-| 2023-06-09 | $308.72 | Accenture Q2 FY23 results | 3.00 | -0.46 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +6.0% | -36.7pp | +8.9% | ✓ |
-| 2023-06-16 | $319.54 | Accenture Q2 FY23 results | 3.00 | -0.60 | 2.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +1.7% | -38.2pp | +5.4% | ✓ |
-| 2023-06-23 | $298.43 | Accenture Q3 FY23 results | 2.10 | -1.21 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +2.4% | -39.3pp | +12.9% | ✓ |
-| 2023-06-30 | $308.58 | Accenture Q3 FY23 results | 2.10 | -1.35 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.3% | -42.2pp | +9.1% | ✓ |
+| 2022-09-23 | $259.98 | Accenture plc Q4/FY22 results | 3.55 | +1.37 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.2% | -24.3pp | +26.7% | ✓ |
+| 2022-09-30 | $257.30 | Accenture plc Q4/FY22 results | 3.55 | +1.42 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -23.3pp | +28.3% | ✓ |
+| 2022-10-07 | $259.71 | Accenture plc Q4/FY22 results | 3.55 | +1.37 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.1% | -19.1pp | +27.5% | ✓ |
+| 2022-10-14 | $252.72 | Accenture plc Q4/FY22 results | 3.55 | +1.48 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.2% | -18.9pp | +31.5% | ✓ |
+| 2022-10-21 | $269.57 | Accenture plc Q4/FY22 results | 3.55 | +1.21 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.2% | -16.3pp | +23.8% | ✓ |
+| 2022-10-28 | $287.78 | Accenture plc Q4/FY22 results | 3.55 | +0.76 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.0% | -23.8pp | +16.4% | ✗ |
+| 2022-11-04 | $261.16 | Accenture plc Q4/FY22 results | 3.55 | +1.36 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.5% | -19.5pp | +28.7% | ✓ |
+| 2022-11-11 | $290.09 | Accenture plc Q4/FY22 results | 3.55 | +0.71 | 0.96x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.6% | -27.0pp | +16.1% | ✗ |
+| 2022-11-18 | $286.50 | Accenture plc Q4/FY22 results | 3.55 | +0.80 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.6% | -25.3pp | +17.8% | ✗ |
+| 2022-11-25 | $296.40 | Accenture plc Q4/FY22 results | 3.55 | +0.58 | 1.10x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +25.3% | -26.6pp | +14.1% | ✗ |
+| 2022-12-02 | $300.13 | Accenture plc Q4/FY22 results | 3.55 | +0.51 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +23.7% | -27.9pp | +12.8% | ✗ |
+| 2022-12-09 | $288.41 | Accenture plc Q4/FY22 results | 3.55 | +0.75 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.1% | -29.1pp | +17.5% | ✗ |
+| 2022-12-16 | $264.48 | Accenture plc Q1 FY23 results | 2.95 | +0.48 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.8% | -22.6pp | +28.3% | ✓ |
+| 2022-12-23 | $266.09 | Accenture plc Q1 FY23 results | 2.95 | +0.45 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.6% | -20.3pp | +27.6% | ✓ |
+| 2022-12-30 | $266.84 | Accenture plc Q1 FY23 results | 2.95 | +0.44 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.8% | -21.5pp | +27.3% | ✓ |
+| 2023-01-06 | $269.21 | Accenture plc Q1 FY23 results | 2.95 | +0.39 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
+| 2023-01-13 | $282.14 | Accenture plc Q1 FY23 results | 2.95 | +0.12 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
+| 2023-01-20 | $280.47 | Accenture plc Q1 FY23 results | 2.95 | +0.15 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |
+| 2023-01-27 | $277.27 | Accenture plc Q1 FY23 results | 2.95 | +0.21 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +38.3% | -12.8pp | +22.5% | ✓ |
+| 2023-02-03 | $289.22 | Accenture plc Q1 FY23 results | 2.95 | -0.10 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +36.8% | -11.5pp | +17.5% | ✓ |
+| 2023-02-10 | $283.96 | Accenture plc Q1 FY23 results | 2.95 | +0.08 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +39.9% | -11.7pp | +19.9% | ✓ |
+| 2023-02-17 | $277.05 | Accenture plc Q1 FY23 results | 2.95 | +0.22 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +43.8% | -9.3pp | +22.9% | ✓ |
+| 2023-02-24 | $266.53 | Accenture plc Q1 FY23 results | 2.95 | +0.45 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.4% | -13.7pp | +27.9% | ✓ |
+| 2023-03-03 | $269.20 | Accenture plc Q1 FY23 results | 2.95 | +0.41 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +32.0% | -15.8pp | +26.5% | ✗ |
+| 2023-03-10 | $252.95 | Accenture plc Q1 FY23 results | 2.95 | +0.70 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.7% | -12.2pp | +34.3% | ✓ |
+| 2023-03-17 | $250.00 | Accenture plc Q1 FY23 results | 2.95 | +0.75 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.4% | -14.1pp | +35.4% | ✓ |
+| 2023-03-24 | $272.00 | Accenture plc Q2 FY23 results | 3.00 | +0.37 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +16.7% | -31.8pp | +24.1% | ✗ |
+| 2023-03-31 | $285.81 | Accenture plc Q2 FY23 results | 3.00 | +0.09 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +10.1% | -29.0pp | +17.9% | ✗ |
+| 2023-04-06 | $281.70 | Accenture plc Q2 FY23 results | 3.00 | +0.15 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +4.9% | -22.0pp | +19.4% | ✗ |
+| 2023-04-14 | $279.25 | Accenture plc Q2 FY23 results | 3.00 | +0.21 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +7.6% | -26.5pp | +20.1% | ✗ |
+| 2023-04-21 | $276.33 | Accenture plc Q2 FY23 results | 3.00 | +0.27 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.9% | -23.1pp | +21.3% | ✗ |
+| 2023-04-28 | $280.29 | Accenture plc Q2 FY23 results | 3.00 | +0.19 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +8.4% | -27.3pp | +19.4% | ✗ |
+| 2023-05-05 | $265.65 | Accenture plc Q2 FY23 results | 3.00 | +0.49 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.9% | -20.1pp | +26.0% | ✗ |
+| 2023-05-12 | $277.19 | Accenture plc Q2 FY23 results | 3.00 | +0.26 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +20.1% | -25.0pp | +20.7% | ✗ |
+| 2023-05-19 | $289.91 | Accenture plc Q2 FY23 results | 3.00 | +0.01 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +13.9% | -31.5pp | +15.5% | ✗ |
+| 2023-05-26 | $303.60 | Accenture plc Q2 FY23 results | 3.00 | -0.27 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +5.5% | -35.7pp | +10.4% | ✗ |
+| 2023-06-02 | $311.39 | Accenture plc Q2 FY23 results | 3.00 | -0.36 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +4.4% | -37.3pp | +7.8% | ✓ |
+| 2023-06-09 | $308.72 | Accenture plc Q2 FY23 results | 3.00 | -0.33 | 1.71x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +6.0% | -36.7pp | +8.9% | ✗ |
+| 2023-06-16 | $319.54 | Accenture plc Q2 FY23 results | 3.00 | -0.43 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +1.7% | -38.2pp | +5.4% | ✓ |
+| 2023-06-23 | $298.43 | Accenture plc Q3 FY23 results | 2.10 | -1.09 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +2.4% | -39.3pp | +12.9% | ✓ |
+| 2023-06-30 | $308.58 | Accenture plc Q3 FY23 results | 2.10 | -1.22 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.3% | -42.2pp | +9.1% | ✓ |

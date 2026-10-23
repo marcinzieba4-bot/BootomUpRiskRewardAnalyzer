@@ -314,7 +314,7 @@ PREV_FY_MARGIN = {prev_margin}
 TAX_RATE      = {latest.get("tax_rate", h["tax_rate"])}   # latest tax-rate guide midpoint
 CONS_DIVIDEND = {carried("dividend_annual"):.2f}   # {carried("dividend_note")}
 VOL_DIVIDEND  = CONS_DIVIDEND
-SERVICE_LINE  = {R(h["service_line"])}
+SERVICE_LINE  = {R(carried("service_line"))}
 MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
 
 # ── FACTS: latest print and guide ({latest["source"]}, published {latest["published"]}) ──

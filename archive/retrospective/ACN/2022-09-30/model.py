@@ -185,9 +185,9 @@ SOURCES = [
     {
         "id": "S1",
         "published": "2022-09-22",
-        "title": "Accenture Q4/FY22 results (8-K ex.99)",
+        "title": "Accenture plc Q4/FY22 results (8-K ex.99)",
         "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
-        "supports": "FY22 revenue +26% LC, record $71.7B bookings, FY22 operating margin 15.2%, Q4 consulting +22% LC, FY21 adjusted EPS $8.80, dividend $1.12 (+15%), >= $7.1B FY23 cash return"
+        "supports": "Q4 and FY22 revenues by type of work and industry group, record bookings with local-currency growth, margin, EPS including the $0.15 charge for the disposition of the Russia business (no adjusted figure published), FY21 adjusted EPS $8.80, diluted shares, cash; $1.12 quarterly dividend (+15%); FY23 and Q1 guidance (Q1 in local currency); released before the open"
     },
     {
         "id": "S12",
@@ -229,7 +229,7 @@ SHARES_HIST   = {2011: 742.185, 2021: 645.909, 2022: 642.839}   # diluted, milli
 FY_E, FY_E_S, FY_H, FY_PREV = 'FY2023E', 'FY23E', 'FY2025E', 'FY22'
 PREV_FY_MARGIN = 15.2
 TAX_RATE      = 0.24   # latest tax-rate guide midpoint
-CONS_DIVIDEND = 4.48   # $1.12/quarter (S1)
+CONS_DIVIDEND = 4.48   # $1.12 quarterly, declared 2022-09-22 (S1)
 VOL_DIVIDEND  = CONS_DIVIDEND
 SERVICE_LINE  = 'Outsourcing'
 MARGIN_SIGNAL_NAME = 'Operating margin change'

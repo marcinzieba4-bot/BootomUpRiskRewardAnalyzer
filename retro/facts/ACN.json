@@ -4,33 +4,27 @@
  "sources": {
   "S1": {
    "published": "2022-09-22",
-   "title": "Accenture Q4/FY22 results (8-K ex.99)",
+   "title": "Accenture plc Q4/FY22 results (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000283/fy22q4plc8-kexhibit.htm",
-   "supports": "FY22 revenue +26% LC, record $71.7B bookings, FY22 operating margin 15.2%, Q4 consulting +22% LC, FY21 adjusted EPS $8.80, dividend $1.12 (+15%), >= $7.1B FY23 cash return"
-  },
-  "S2": {
-   "published": "2022-10-12",
-   "title": "SEC XBRL company facts, 10-K filings 2010-10-26 .. 2022-10-12",
-   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001467373.json",
-   "supports": "GAAP diluted EPS, revenue and diluted shares FY2012-FY2022; only facts filed on or before 2022-10-12 used"
+   "supports": "Q4 and FY22 revenues by type of work and industry group, record bookings with local-currency growth, margin, EPS including the $0.15 charge for the disposition of the Russia business (no adjusted figure published), FY21 adjusted EPS $8.80, diluted shares, cash; $1.12 quarterly dividend (+15%); FY23 and Q1 guidance (Q1 in local currency); released before the open"
   },
   "S3": {
    "published": "2022-12-16",
-   "title": "Accenture Q1 FY23 results (8-K ex.99)",
+   "title": "Accenture plc Q1 FY23 results (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000369/fy23q1earnings8-kexhibit.htm",
-   "supports": "Q1 revenue by type of work and industry group, bookings, margin, cash; FY23 and Q2 guidance"
+   "supports": "Q1 FY23 revenues by type of work and industry group, bookings with local-currency growth, margin, cash, diluted shares; $1.12 quarterly dividend; FY23 and Q2 guidance (Q2 in local currency); outsourcing renamed 'managed services'; released before the open (8:00 a.m. EST call); an 8-K/A filed that evening corrects only the dividend record date"
   },
   "S4": {
    "published": "2023-03-23",
-   "title": "Accenture Q2 FY23 results (8-K ex.99)",
+   "title": "Accenture plc Q2 FY23 results (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737323000123/fy23q2earnings8-kexhibit.htm",
-   "supports": "Q2 and H1 revenue by type of work and industry group, bookings, margin, cash, $1.5B business-optimization program; FY23 and Q3 guidance"
+   "supports": "Q2 FY23 revenues by type of work and industry group, record bookings with local-currency growth, margin and EPS with and without $244M of business optimization costs (about $1.5B expected through FY24), cash, diluted shares; $1.12 quarterly dividend; FY23 and Q3 guidance (Q3 in local currency), GAAP and adjusted; released before the open (8:00 a.m. EDT call)"
   },
   "S5": {
    "published": "2023-06-22",
-   "title": "Accenture Q3 FY23 results (8-K ex.99)",
+   "title": "Accenture plc Q3 FY23 results (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737323000220/fy23q3earnings8-kexhibit.htm",
-   "supports": "Q3 revenue by type of work and industry group, bookings, margin, cash; FY23 and Q4 guidance"
+   "supports": "Q3 FY23 revenues by type of work and industry group, bookings with local-currency growth, margin and EPS with and without business optimization costs and a gain on an investment, cash, diluted shares; $1.12 quarterly dividend; FY23 and Q4 guidance (Q4 in local currency), GAAP and adjusted; released before the open (8:00 a.m. EDT call)"
   },
   "S8": {
    "published": "2023-06-14",
@@ -545,6 +539,13 @@
    "title": "Accenture plc Q3 FY22 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000199/fy22q3earnings8-kexhibit.htm",
    "supports": "Q3 FY22 revenues by type of work and industry group, bookings with local-currency growth, margin, EPS including a $0.15 charge for the disposition of the Russia business, cash, diluted shares; $0.97 quarterly dividend; FY22 and Q4 guidance (Q4 in local currency); released before the open"
+  },
+  "S99": {
+   "published": "2022-10-13",
+   "filed": "2022-10-12 21:04 ET, after the close: dated the next trading day",
+   "title": "Accenture plc annual report on Form 10-K for fiscal 2022",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737322000295/acn-20220831.htm",
+   "supports": "income statement FY20-FY22 (revenues, diluted EPS, diluted shares 642.8M in FY22; no five-year selected data, Item 6 reserved); 'off-shore IT service providers in lower-cost locations, particularly in India'; 'large portions of our delivery capability in India and the Philippines', no delivery headcount given; 'Some of these technological developments have reduced and replaced some of our historical services and solutions'"
   }
  },
  "history_vintages": [
@@ -1701,14 +1702,33 @@
    "tax_note": "FY22 guide 23-25% (S94)"
   },
   {
-   "published": "2022-10-12",
+   "published": "2022-10-13",
+   "filed": "2022-10-12 21:04 ET, after the close: dated the next trading day",
    "sources": [
+    "S99",
     "S1",
-    "S2"
+    "S95",
+    "S90",
+    "S85",
+    "S80",
+    "S75",
+    "S70",
+    "S65",
+    "S60",
+    "S55",
+    "S50",
+    "S54",
+    "S64",
+    "S69",
+    "S74",
+    "S79",
+    "S89",
+    "S94",
+    "S98"
    ],
    "company": "Accenture plc",
    "fy_label": "FY22",
-   "why": "Accenture: #1-scale IT-services and consulting franchise that took share through the cloud cycle; discretionary consulting demand is cyclical, the franchise is not",
+   "why": "Accenture: global consulting and outsourcing leader across five industry groups with record bookings ($71.7B in FY22); discretionary consulting demand is cyclical, the franchise is not",
    "eps_gaap": {
     "2012": 3.84,
     "2013": 4.93,
@@ -1724,48 +1744,50 @@
    },
    "eps_normalized": {
     "2012": 3.84,
-    "2013": 4.18,
+    "2013": 4.21,
     "2014": 4.52,
-    "2015": 4.76,
-    "2016": 5.945,
-    "2017": 5.945,
-    "2018": 6.34,
+    "2015": 4.82,
+    "2016": 5.34,
+    "2017": 5.91,
+    "2018": 6.74,
     "2019": 7.36,
-    "2020": 7.89,
+    "2020": 7.46,
     "2021": 8.8,
     "2022": 10.71
    },
-   "normalization": "FY13 = mean(FY12, FY14); FY16/FY17 averaged (Navitaire gain / pension charge); FY21 = company-adjusted $8.80 (S1)",
+   "normalization": "the ten fiscal years to FY22: FY20-FY22 from the FY22 10-K (S99; no five-year selected data), FY12-FY19 from earlier 10-Ks (S50, S55, S60, S85, S90, S95); revenues FY15 on are as revised for the new revenue standard (including reimbursements; S85), FY14 and earlier are net revenues as reported, so the FY14-FY15 step mixes the two bases; FY13 = $4.21 excluding $0.72 of reorganization and prior-year tax benefits (S54; GAAP $4.93); FY15 = $4.82 excluding the $0.06 pension settlement charge (S64; GAAP $4.76); FY16 = $5.34 excluding $1.11 of gains on the sale of businesses (S69; GAAP $6.45); FY17 = $5.91 excluding the $0.47 pension settlement charge (S74; GAAP $5.44); FY18 = $6.74 excluding $0.40 of charges related to tax law changes (S79; GAAP $6.34); FY19 = GAAP $7.36 (no adjusted figure published); FY20 = $7.46 excluding $0.43 of gains on an investment (S89; GAAP $7.89); FY21 = $8.80 excluding $0.36 of gains on an investment (S94, S99; GAAP $9.16); FY22 = GAAP $10.71 (S1; includes the $0.15 Russia disposition charge, no adjusted figure published)",
    "revenue_usd_b": {
-    "2012": 29.778,
-    "2013": 30.394,
-    "2014": 31.875,
-    "2015": 32.914,
-    "2016": 34.798,
-    "2017": 36.765,
-    "2018": 41.603,
+    "2012": 27.862,
+    "2013": 28.563,
+    "2014": 30.002,
+    "2015": 32.406,
+    "2016": 34.254,
+    "2017": 36.177,
+    "2018": 40.993,
     "2019": 43.215,
     "2020": 44.327,
     "2021": 50.533,
     "2022": 61.594
    },
    "diluted_shares_m": {
-    "2018": 655.296,
+    "2012": 726.416,
     "2022": 642.839
    },
-   "pe_window_start": null,
+   "pe_window_start": "2002-09-01",
    "prev_fy_op_margin": 15.2,
    "prev_fy_revenue_lc_growth": 26,
    "prev_fy_bookings_b": 71.7,
-   "prev_q_consulting_lc": 22,
-   "prev_q_label": "Q4 FY22",
+   "prev_fy_bookings_record": true,
+   "prev_q_consulting_lc": 30,
+   "prev_q_label": "Q3 FY22",
+   "prev_q_note": "the quarter before the first print in scope (Q4 FY22, the first to guide FY23) (S98)",
    "dividend_annual": 4.48,
-   "dividend_note": "$1.12/quarter (S1)",
+   "dividend_note": "$1.12 quarterly, declared 2022-09-22 (S1)",
    "tax_rate": 0.24,
-   "cash_return_text": ">=$7.1B returned",
-   "service_line": "Managed services",
-   "margin_signal_name": "Adj. operating margin change",
-   "business_line": "IT Services & Consulting — Strategy & Consulting, Technology, Operations",
+   "cash_return_text": "$6.57B returned to shareholders in FY22",
+   "service_line": "Outsourcing",
+   "margin_signal_name": "Operating margin change",
+   "business_line": "Management consulting, technology services and outsourcing",
    "tax_note": "FY23 guide 23-25% (S1)"
   }
  ],
@@ -7299,7 +7321,7 @@
    "tax_rate": 0.24,
    "cash_return_text": "$6.57B returned to shareholders in FY22",
    "dividend_annual": 4.48,
-   "dividend_note": "$1.12/quarter (S1)",
+   "dividend_note": "$1.12 quarterly, declared 2022-09-22 (S1)",
    "fy_actual": {
     "fy": 2022,
     "fy_label": "FY22",
@@ -7320,18 +7342,20 @@
    "published": "2022-12-16",
    "source": "S3",
    "release": "Dec 16",
+   "release_time": "before the open (8:00 a.m. EST call)",
    "revenue_b": 15.75,
    "revenue_lc": 15,
    "consulting_lc": 10,
    "managed_lc": 20,
    "bookings_b": 16.22,
    "bookings_lc": 6,
+   "bookings_lc_note": "stated in the release (-3% USD)",
    "consulting_bookings_b": 8.11,
    "consulting_revenue_b": 8.44,
    "margin_label": "op margin",
    "margin": 16.5,
    "margin_bp": 20,
-   "groups_basis": "Q1 actuals",
+   "groups_basis": "Q1 actuals by industry group",
    "groups": [
     [
      "Products",
@@ -7344,14 +7368,14 @@
      15
     ],
     [
-     "Financial Services",
-     2.963,
-     13
-    ],
-    [
      "Comms, Media & Tech",
      2.98,
      11
+    ],
+    [
+     "Financial Services",
+     2.963,
+     13
     ],
     [
      "Resources",
@@ -7364,13 +7388,14 @@
     11.2,
     11.52
    ],
-   "fy_eps_guide_note": "raised from $11.09-11.41",
+   "fy_eps_guide_note": "raised from $11.09-11.41; 5-8% above FY22 EPS",
    "fy_rev_guide_lc": [
     8,
     11
    ],
    "fy_rev_guide_note": "",
    "fy_fx": -5.0,
+   "fy_fx_note": "FY23 outlook now assumes about -5% FX vs FY22 (was -6%)",
    "fy_margin_guide": [
     15.3,
     15.5
@@ -7384,6 +7409,7 @@
     6,
     10
    ],
+   "next_q_guide_note": "on a -5% FX assumption",
    "next_print": "Q2 FY23 print (late March)",
    "fcf_guide_b": [
     7.7,
@@ -7393,68 +7419,77 @@
    "diluted_shares_m": 638.8,
    "optimization": "",
    "tax_rate": 0.24,
-   "release_time": "before the open (8:00 a.m. EST call)"
+   "cash_return_text": "$4.9B buyback authority",
+   "dividend_annual": 4.48,
+   "dividend_note": "$1.12 quarterly, declared 2022-12-16 (S3)",
+   "service_line": "Managed services",
+   "service_line_note": "the release renames the line 'managed services (previously referred to as outsourcing)'"
   },
   {
    "quarter": "Q2 FY23",
    "published": "2023-03-23",
    "source": "S4",
    "release": "Mar 23",
+   "release_time": "before the open (8:00 a.m. EDT call)",
    "revenue_b": 15.81,
    "revenue_lc": 9,
    "consulting_lc": 4,
    "managed_lc": 16,
-   "bookings_b": 22.1,
+   "bookings_b": 22.09,
    "bookings_lc": 17,
+   "bookings_lc_note": "stated in the release (+13% USD)",
    "consulting_bookings_b": 10.65,
    "consulting_revenue_b": 8.28,
-   "margin_label": "adj op margin",
+   "margin_label": "op margin ex-optimization costs",
    "margin": 13.8,
    "margin_bp": 10,
-   "groups_basis": "H1 actuals",
+   "margin_note": "GAAP 12.3% with $244M of business optimization costs",
+   "groups_basis": "H1 actuals by industry group",
    "groups": [
     [
      "Products",
-     9.38,
+     9.384,
      9
     ],
     [
      "Health & Public Service",
-     6.02,
+     6.024,
      15
     ],
     [
      "Financial Services",
-     5.97,
+     5.966,
      10
     ],
     [
      "Comms, Media & Tech",
-     5.87,
+     5.865,
      0
     ],
     [
      "Resources",
-     4.32,
+     4.323,
      16
     ]
    ],
-   "eps_label": "adj EPS",
+   "eps_label": "EPS ex-optimization costs and investment gain",
    "fy_eps_guide": [
     11.41,
     11.63
    ],
-   "fy_eps_guide_note": "",
+   "fy_eps_guide_note": "raised from $11.20-11.52; $10.84-11.06 GAAP including $0.96 of business optimization costs and a $0.39 anticipated gain on an investment",
    "fy_rev_guide_lc": [
     8,
     10
    ],
-   "fy_rev_guide_note": "from 8-11%",
+   "fy_rev_guide_note": "narrowed from 8-11%",
    "fy_fx": -4.5,
+   "fy_fx_note": "FY23 outlook now assumes about -4.5% FX vs FY22 (was -5%)",
    "fy_margin_guide": [
     15.3,
     15.5
    ],
+   "fy_margin_guide_note": "excluding an estimated $800M of business optimization costs (14.1-14.3% GAAP)",
    "next_q": "Q3",
    "next_q_guide_b": [
     16.1,
@@ -7464,6 +7499,7 @@
     3,
     7
    ],
+   "next_q_guide_note": "on a -3.5% FX assumption",
    "next_print": "Q3 FY23 print (late June)",
    "fcf_guide_b": [
     8.0,
@@ -7471,26 +7507,33 @@
    ],
    "cash_b": 6.2,
    "diluted_shares_m": 637.7,
-   "optimization": "$1.5B business-optimization program",
-   "tax_rate": 0.24
+   "optimization": "",
+   "tax_rate": 0.24,
+   "tax_note": "23-25% excluding business optimization costs and the investment gain (22.5-24.5% GAAP)",
+   "cash_return_text": "$4.2B buyback authority",
+   "dividend_annual": 4.48,
+   "dividend_note": "$1.12 quarterly, declared 2023-03-23 (S4)"
   },
   {
    "quarter": "Q3 FY23",
    "published": "2023-06-22",
    "source": "S5",
    "release": "Jun 22",
+   "release_time": "before the open (8:00 a.m. EDT call)",
    "revenue_b": 16.56,
    "revenue_lc": 5,
    "consulting_lc": -1,
    "managed_lc": 13,
    "bookings_b": 17.25,
    "bookings_lc": 4,
+   "bookings_lc_note": "stated in the release (+2% USD)",
    "consulting_bookings_b": 8.93,
    "consulting_revenue_b": 8.69,
-   "margin_label": "adj op margin",
+   "margin_label": "op margin ex-optimization costs",
    "margin": 16.3,
    "margin_bp": 20,
-   "groups_basis": "nine-month actuals (H1 per S4 + Q3)",
+   "margin_note": "GAAP 14.2% with $347M of business optimization costs",
+   "groups_basis": "nine-month actuals by industry group",
    "groups": [
     [
      "Products",
@@ -7518,22 +7561,24 @@
      12
     ]
    ],
-   "eps_label": "adj EPS",
+   "eps_label": "EPS ex-optimization costs and investment gain",
    "fy_eps_guide": [
     11.52,
     11.63
    ],
-   "fy_eps_guide_note": "",
+   "fy_eps_guide_note": "bottom end raised from $11.41; $10.94-11.05 GAAP including $0.96 of business optimization costs and a $0.38 gain on an investment",
    "fy_rev_guide_lc": [
     8,
     9
    ],
-   "fy_rev_guide_note": "from 8-10%",
+   "fy_rev_guide_note": "narrowed from 8-10%",
    "fy_fx": -4.0,
+   "fy_fx_note": "FY23 outlook now assumes about -4% FX vs FY22 (was -4.5%)",
    "fy_margin_guide": [
     15.4,
     15.4
    ],
+   "fy_margin_guide_note": "15.4% excluding an estimated $800M of business optimization costs (14.2% GAAP; was 15.3-15.5%)",
    "next_q": "Q4",
    "next_q_guide_b": [
     15.75,
@@ -7543,15 +7588,20 @@
     2,
     6
    ],
-   "next_print": "Q4 FY23 print and the FY24 guide (late September)",
+   "next_q_guide_note": "on a flat FX assumption",
+   "next_print": "Q4 FY23 print (late September)",
    "fcf_guide_b": [
     8.1,
     8.6
    ],
    "cash_b": 8.5,
    "diluted_shares_m": 638.7,
-   "optimization": "$1.5B business-optimization program",
-   "tax_rate": 0.24
+   "optimization": "",
+   "tax_rate": 0.24,
+   "tax_note": "23.5-24.5% excluding business optimization costs and the investment gain (23-24% GAAP; was 23-25%)",
+   "cash_return_text": "$3.5B buyback authority",
+   "dividend_annual": 4.48,
+   "dividend_note": "$1.12 quarterly, declared 2023-06-22 (S5)"
   }
  ],
  "events": [
@@ -7849,6 +7899,29 @@
    "kind": "cloud_company_acknowledged",
    "doc": "FY2021 10-K",
    "risk_quote": "Examples of areas of significant change include digital-, cloud- and security-related offerings, which are continually evolving, as well as developments in areas such as artificial intelligence, augmented reality, automation, blockchain, Internet of Things, quantum and Edge computing, infrastructure and network engineering, intelligent connected products, digital engineering and manufacturing, and as-a-service solutions. ... Some of these technological developments have reduced and replaced some of our historical services and solutions and may continue to do so in the future.",
+   "offering": "it reports 'growing demand to assist clients with application modernization and maintenance, cloud enablement and managed security services'"
+  },
+  {
+   "id": "S99",
+   "published": "2022-10-13",
+   "theme": "OFFSHORE",
+   "kind": "offshore_company_acknowledged",
+   "doc": "FY2022 10-K",
+   "doc_short": "10-K FY22",
+   "competitors_quote": "off-shore IT service providers in lower-cost locations, particularly in India",
+   "competitors_short": "Offshore IT providers 'in lower-cost locations, particularly in India'",
+   "warning": "says competitors 'may be willing, at times, to take on more risk or price contracts lower than us' and 'may also offer more aggressive pricing or contractual terms'",
+   "warning_short": "competitors 'may be willing, at times, to take on more risk or price contracts lower than us'",
+   "gdn_clause": "global delivery capability has 'large portions' based in India and the Philippines, 'where we have the largest and second largest number of our people located' (no delivery headcount or center count given; the FY2016 10-K counted about 285,000 people)",
+   "gdn_factor": "Global delivery capability: 'large portions' in India and the Philippines, no headcount given since FY16 (about 285,000 people then)"
+  },
+  {
+   "id": "S99",
+   "published": "2022-10-13",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2022 10-K",
+   "risk_quote": "Examples of areas of significant change include digital-, cloud- and security-related offerings, which are continually evolving, as well as developments in areas such as artificial intelligence, augmented and virtual reality, automation, blockchain, Internet of Things, quantum and edge computing, infrastructure and network engineering, intelligent connected products, digital engineering and manufacturing, and robotics solutions. ... Some of these technological developments have reduced and replaced some of our historical services and solutions and may continue to do so in the future.",
    "offering": "it reports 'growing demand to assist clients with application modernization and maintenance, cloud enablement and managed security services'"
   },
   {

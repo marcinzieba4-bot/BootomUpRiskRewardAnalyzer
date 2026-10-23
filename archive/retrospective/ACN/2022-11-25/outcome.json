@@ -56,7 +56,7 @@
  },
  "scenario_landing_2y": "BULL",
  "call_check_2y": {
-  "expectation": "FAIR: should land within +/-15pp of the benchmark",
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
   "hit": false
  },
  "profile_drift": {

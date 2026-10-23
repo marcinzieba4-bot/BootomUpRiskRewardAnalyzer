@@ -56,8 +56,8 @@
  },
  "scenario_landing_2y": "BASE",
  "call_check_2y": {
-  "expectation": "RICH: should miss the hurdle and lag the benchmark",
-  "hit": true
+  "expectation": "FAIR: should land within +/-15pp of the benchmark",
+  "hit": false
  },
  "profile_drift": {
   "then": {

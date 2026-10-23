@@ -54,7 +54,7 @@
   "max_drawdown_pct": -27.2,
   "return_to_avg_price_m12_m24_pct": 17.8
  },
- "scenario_landing_2y": "BULL",
+ "scenario_landing_2y": "BASE",
  "call_check_2y": {
   "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
   "hit": false
