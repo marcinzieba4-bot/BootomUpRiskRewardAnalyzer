@@ -26,8 +26,8 @@ effective 2008-05-29).
   own test, which expects RICH to lag the benchmark. On this stock in 2008, RICH read "don't buy here", not "will
   underperform".
 - **The turn came with the price, not the numbers.** The class moved from RICH (late September, 18-19x) to CHEAP
-  (2008-10-03, 15.5x) as the stock fell. Q3 carloads were -5%, but revenue per car was +22% and the operating ratio
-  improved. The six dates below the EPP floor (2008-11-21 and 2008-12-05 to 2008-12-31, at 10.7-11.9x) returned +98% to
+  (2008-10-03, 15.5x) as the stock fell. The latest print was still Q2 (carloads -3%, revenue per car +16%). The Q3
+  print (2008-10-23: carloads -5%, revenue per car +22%, operating ratio better) kept it CHEAP. The six dates below the EPP floor (2008-11-21 and 2008-12-05 to 2008-12-31, at 10.7-11.9x) returned +98% to
   +122%.
 - **The BEAR case never came.** All 53 two-year outcomes landed in BASE or BULL. The worst point (2009-03-09) was
   still above every date's BEAR price. The BEAR rule (the decade's worst EPS year, 2004 at -29%, repeated for two
