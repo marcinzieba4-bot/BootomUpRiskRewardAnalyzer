@@ -17,5 +17,7 @@ touching either directory.
 - **Before you report a result:** run `retro/retro_tool.py run` (point-in-time
   validation) on every date you built. Grep earlier dates for facts from later
   prints. Say plainly which judgement calls remain and could carry hindsight.
+- **Adding dates:** follow `retro/README.md`, "Adding dates" (tools in `retro/tools/`). Results so far,
+  labelled as hindsight, are in `archive/retrospective/ACN/FINDINGS.md`; they are hypotheses, never inputs.
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

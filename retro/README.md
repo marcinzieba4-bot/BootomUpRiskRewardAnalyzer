@@ -195,6 +195,32 @@ February 2025 peak; those from April 2023 land after the drop. Judge a series by
 stock over a few months mostly tests "buy lower". Testing stock selection needs
 many tickers on the same dates.
 
+### Adding dates (the per-year procedure)
+
+Each step exists because skipping it once let something through. Tools are in `retro/tools/`; downloaded
+filings go in the session scratchpad, not the repo (every source's URL is in the fact sheet).
+
+1. **List the filings** from `data.sec.gov/submissions/CIK##########.json` (older years are in the paginated
+   `filings.files`). Keep `acceptanceDateTime`: it is UTC, and a filing accepted after 16:00 ET counts from the
+   next trading day. Read every 8-K in the period (items 2.02, 7.01, 8.01) for guidance changes, not only earnings.
+2. **Download** with a generic `User-Agent` (never the owner's email), convert with
+   `python3 -I retro/tools/html2rows.py <file.htm>`.
+3. **Note the release time** (the conference-call time in the release): before the open or after the close.
+4. **Transcribe** prints, the history vintage and 10-K theme events into `retro/facts/ACN.json`. Rules that
+   recur: numbers only (a guide restated in words keeps the last numeric range), company figures excluding
+   one-offs when published, bookings growth in local currency derived from the FX impact the release states,
+   group dollar weights year to date with the latest quarter's LC growth, the ten fiscal years to the latest one.
+5. **Check every value word for word** with `python3 -I retro/tools/verbatim.py checklist.json`, each string
+   against its own filing.
+6. **Regression:** rebuild every earlier range; `git status archive` must show nothing.
+7. **Build** the new range (`build_acn.py --weekly START END`; start on the Monday after the last built week),
+   then `retro_tool.py run` and `retro_tool.py outcome` on each new date, `retro_tool.py index` and `series ACN`.
+8. **Firewall:** commit, then `python3 retro/tools/firewall.py <first day after the range>` must report 0 changes.
+   Controls: alter one value of each new print or vintage and check that exactly the dates after its release change.
+9. **Scan** the new outputs for years after the as-of date (other than FY labels, SEC accession numbers and the
+   `generated` stamp), anachronistic vocabulary, and facts from the next print appearing early.
+10. **Commit and push**; report the judgement calls plainly.
+
 **A new ticker** needs its own fact sheet. The engine is generic except for its
 signal names and thresholds, so give it a sibling template if the business needs
 different signals.
