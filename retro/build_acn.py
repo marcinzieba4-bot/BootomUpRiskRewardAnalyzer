@@ -146,6 +146,11 @@ def build(as_of, facts, acn, spx, engine):
         fwd, fwd_label, fwd_period = latest["fy_rev_guide_lc"], f"{fy_now} guide", fy_now
     margin_guided = bool(latest.get("fy_margin_guide"))
     fy_margin_base = sum(latest["fy_margin_guide"]) / 2 if margin_guided else h["prev_fy_op_margin"]
+    # a margin guide measured against a prior year the company restated for an accounting change is stepped from
+    # that restated base, never from the reported one (ACN FY19: +10-30bp from a revised FY18 14.4%, 14.8% reported)
+    restated = latest.get("fy_margin_guide_base") if margin_guided else None
+    prev_margin = (f'{restated}   # {h["fy_label"]} as restated for the {fy_now} margin guide ({h["prev_fy_op_margin"]} as reported)'
+                   if restated is not None else h["prev_fy_op_margin"])
     fx = latest.get("fy_fx")
 
     # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
@@ -196,14 +201,16 @@ def build(as_of, facts, acn, spx, engine):
         e = [e for e in events if e["theme"] == "OFFSHORE"][-1]      # the latest 10-K's wording
         quote = e.get("competitors_quote", "particularly Indian providers ... often at highly competitive prices")
         rivals = e.get("competitors_short", "Offshore Indian providers 'often at highly competitive prices'")
+        # a 10-K that gives no delivery headcount says so in gdn_clause / gdn_factor (ACN from FY17)
+        gdn = e.get("gdn_clause") or f"Global Delivery Network {e.get('gdn_verb', 'grew to')} {e.get('gdn_people')} people"
+        gdn_factor = e.get("gdn_factor") or f"Global Delivery Network: {e.get('gdn_people')} people ({e.get('gdn_added')})"
         watch = [{"theme": "OFFSHORE", "status": "live, company-acknowledged; no market read",
                   "reason": (f"Live: Accenture's own {e['doc']} names off-shore providers, "
                              f"'{quote}', "
-                             f"among its competitors and {e['warning']}, while its own Global Delivery "
-                             f"Network {e.get('gdn_verb', 'grew to')} {e['gdn_people']} people. The stock trades at "
+                             f"among its competitors and {e['warning']}, while its own {gdn}. The stock trades at "
                              f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (OFFSHORE) only if dated "
                              "evidence shows the market pricing offshore substitution for ACN specifically.")}]
-        factors = [(f"Global Delivery Network: {e['gdn_people']} people ({e['gdn_added']}) — Accenture runs the offshore model itself", 0.2, 0.10),
+        factors = [(f"{gdn_factor} — Accenture runs the offshore model itself", 0.2, 0.10),
                    (f"{rivals}; {e['warning_short']}", -0.2, 0.10)]
         sig_name = "Offshore: net effect on services"
         trigger = "Offshore pricing pressure accelerates faster than global-delivery savings"
@@ -303,7 +310,7 @@ EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}
 REVENUE_HIST  = {R(rev)}   # USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
-PREV_FY_MARGIN = {h["prev_fy_op_margin"]}
+PREV_FY_MARGIN = {prev_margin}
 TAX_RATE      = {latest.get("tax_rate", h["tax_rate"])}   # latest tax-rate guide midpoint
 CONS_DIVIDEND = {carried("dividend_annual"):.2f}   # {carried("dividend_note")}
 VOL_DIVIDEND  = CONS_DIVIDEND

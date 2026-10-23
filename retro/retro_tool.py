@@ -217,7 +217,8 @@ def cmd_run(folder, offline=False):
     q = retro_classify(entry, g["PIT_PROFILE"], tax)
     # the classifier re-parses the narrative; it must agree with the model's own numbers
     r = g["RESULT"]
-    assert abs(q["_rb"] - r["ratio_b"]) < 0.01 and abs(q["_adj"] - r["adj_gap"]) < 0.01, (q, r)
+    agree = lambda a, b, tol: a == b or abs(a - b) < tol      # Ratio B is inf when the price is above the BULL case
+    assert agree(q["_rb"], r["ratio_b"], 0.01) and agree(q["_adj"], r["adj_gap"], 0.01), (q, r)
     assert q["_cons"] is not None and abs(q["_cons"] - r["cons_return_2yr"]) < 0.1, (q, r)
 
     robustness = r.get("robustness") or []

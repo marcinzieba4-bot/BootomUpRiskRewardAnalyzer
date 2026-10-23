@@ -474,6 +474,111 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2016-12-16 | $123.00 | Accenture plc Q4/FY16 results | 2.70 | -0.73 | 3.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.8% | +11.3pp | +30.1% | ✗ |
 | 2016-12-22 | $117.79 | Accenture plc Q1 FY17 results | 2.70 | -0.64 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.0% | +9.8pp | +35.8% | ✗ |
 | 2016-12-30 | $117.13 | Accenture plc Q1 FY17 results | 2.70 | -0.63 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.9% | +8.7pp | +36.4% | ✗ |
+| 2017-01-06 | $116.30 | Accenture plc Q1 FY17 results | 2.70 | -0.61 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.9% | +10.4pp | +37.1% | ✗ |
+| 2017-01-13 | $116.95 | Accenture plc Q1 FY17 results | 2.70 | -0.62 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.6% | +11.2pp | +36.1% | ✗ |
+| 2017-01-20 | $115.07 | Accenture plc Q1 FY17 results | 2.70 | -0.57 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +35.4% | +13.5pp | +38.1% | ✗ |
+| 2017-01-27 | $115.35 | Accenture plc Q1 FY17 results | 2.70 | -0.57 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +36.3% | +15.9pp | +37.6% | ✗ |
+| 2017-02-03 | $114.49 | Accenture plc Q1 FY17 results | 2.70 | -0.55 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.8% | +17.7pp | +38.5% | ✗ |
+| 2017-02-10 | $117.60 | Accenture plc Q1 FY17 results | 2.70 | -0.63 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.8% | +15.7pp | +34.9% | ✗ |
+| 2017-02-17 | $121.23 | Accenture plc Q1 FY17 results | 2.70 | -0.72 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +35.7% | +13.5pp | +30.9% | ✗ |
+| 2017-02-24 | $123.43 | Accenture plc Q1 FY17 results | 2.70 | -0.77 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +35.2% | +13.1pp | +28.5% | ✗ |
+| 2017-03-03 | $123.64 | Accenture plc Q1 FY17 results | 2.70 | -0.77 | 3.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +37.1% | +15.3pp | +28.3% | ✗ |
+| 2017-03-10 | $123.93 | Accenture plc Q1 FY17 results | 2.70 | -0.78 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.8% | +15.1pp | +28.1% | ✗ |
+| 2017-03-17 | $125.22 | Accenture plc Q1 FY17 results | 2.70 | -0.80 | 4.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.1% | +14.2pp | +26.8% | ✗ |
+| 2017-03-24 | $118.98 | Accenture plc Q2 FY17 results | 1.95 | -1.38 | 2.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.4% | +19.6pp | +33.6% | ✗ |
+| 2017-03-31 | $119.88 | Accenture plc Q2 FY17 results | 1.95 | -1.41 | 2.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.3% | +27.2pp | +32.9% | ✗ |
+| 2017-04-07 | $117.44 | Accenture plc Q2 FY17 results | 1.95 | -1.34 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.2% | +29.2pp | +36.1% | ✗ |
+| 2017-04-13 | $114.86 | Accenture plc Q2 FY17 results | 1.95 | -1.28 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.4% | +31.2pp | +39.7% | ✗ |
+| 2017-04-21 | $119.23 | Accenture plc Q2 FY17 results | 1.95 | -1.39 | 2.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.5% | +26.5pp | +34.9% | ✗ |
+| 2017-04-28 | $121.30 | Accenture plc Q2 FY17 results | 1.95 | -1.44 | 2.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.7% | +26.2pp | +33.1% | ✗ |
+| 2017-05-05 | $121.52 | Accenture plc Q2 FY17 results | 1.95 | -1.45 | 2.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.2% | +23.3pp | +33.3% | ✗ |
+| 2017-05-12 | $120.96 | Accenture plc Q2 FY17 results | 1.95 | -1.43 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.7% | +23.9pp | +34.3% | ✗ |
+| 2017-05-19 | $120.98 | Accenture plc Q2 FY17 results | 1.95 | -1.42 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.0% | +27.8pp | +34.6% | ✗ |
+| 2017-05-26 | $122.89 | Accenture plc Q2 FY17 results | 1.95 | -1.47 | 3.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | +28.9pp | +32.9% | ✗ |
+| 2017-06-02 | $125.74 | Accenture plc Q2 FY17 results | 1.95 | -1.54 | 4.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.1% | +29.2pp | +30.1% | ✗ |
+| 2017-06-09 | $125.82 | Accenture plc Q2 FY17 results | 1.95 | -1.54 | 4.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.8% | +27.5pp | +30.4% | ✗ |
+| 2017-06-16 | $127.56 | Accenture plc Q2 FY17 results | 1.95 | -1.57 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.4% | +26.5pp | +28.9% | ✗ |
+| 2017-06-23 | $122.74 | Accenture plc Q3 FY17 results | 2.50 | -0.88 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.7% | +30.5pp | +34.4% | ✗ |
+| 2017-06-30 | $123.68 | Accenture plc Q3 FY17 results | 2.50 | -0.90 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +28.4pp | +33.7% | ✗ |
+| 2017-07-07 | $124.21 | Accenture plc Q3 FY17 results | 2.50 | -0.92 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +31.0pp | +33.5% | ✗ |
+| 2017-07-14 | $126.70 | Accenture plc Q3 FY17 results | 2.50 | -0.98 | 3.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.3% | +32.6pp | +31.3% | ✗ |
+| 2017-07-21 | $128.85 | Accenture plc Q3 FY17 results | 2.50 | -1.03 | 4.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.8% | +30.3pp | +29.5% | ✗ |
+| 2017-07-28 | $128.40 | Accenture plc Q3 FY17 results | 2.50 | -1.02 | 4.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.7% | +31.2pp | +30.4% | ✗ |
+| 2017-08-04 | $130.20 | Accenture plc Q3 FY17 results | 2.50 | -1.06 | 5.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +30.1pp | +29.2% | ✗ |
+| 2017-08-11 | $128.20 | Accenture plc Q3 FY17 results | 2.50 | -1.01 | 4.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.7% | +30.0pp | +31.6% | ✗ |
+| 2017-08-18 | $127.44 | Accenture plc Q3 FY17 results | 2.50 | -0.99 | 4.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.0% | +32.7pp | +32.9% | ✗ |
+| 2017-08-25 | $129.39 | Accenture plc Q3 FY17 results | 2.50 | -1.04 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.3% | +32.6pp | +31.3% | ✗ |
+| 2017-09-01 | $130.10 | Accenture plc Q3 FY17 results | 2.50 | -1.06 | 5.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.6% | +34.4pp | +31.1% | ✗ |
+| 2017-09-08 | $133.72 | Accenture plc Q3 FY17 results | 2.50 | -1.14 | 9.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.6% | +29.5pp | +27.9% | ✗ |
+| 2017-09-15 | $135.35 | Accenture plc Q3 FY17 results | 2.50 | -1.18 | 12.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.9% | +23.4pp | +26.6% | ✗ |
+| 2017-09-22 | $137.90 | Accenture plc Q3 FY17 results | 2.50 | -1.24 | 29.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.1% | +20.3pp | +24.6% | ✗ |
+| 2017-09-29 | $135.07 | Accenture plc Q4/FY17 results | 2.70 | -0.67 | 2.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.8% | +24.1pp | +27.5% | ✗ |
+| 2017-10-06 | $136.25 | Accenture plc Q4/FY17 results | 2.70 | -0.69 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +43.3% | +23.4pp | +26.6% | ✗ |
+| 2017-10-13 | $139.20 | Accenture plc Q4/FY17 results | 2.70 | -0.75 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.9% | +16.6pp | +24.3% | ✗ |
+| 2017-10-20 | $139.49 | Accenture plc Q4/FY17 results | 2.70 | -0.75 | 3.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +37.7% | +17.8pp | +24.4% | ✗ |
+| 2017-10-27 | $143.28 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 6.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.3% | +10.2pp | +21.5% | ✗ |
+| 2017-11-03 | $144.04 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 6.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | +11.7pp | +21.3% | ✗ |
+| 2017-11-10 | $143.89 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 6.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.3% | +11.6pp | +21.8% | ✗ |
+| 2017-11-17 | $145.45 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 7.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.8% | +13.8pp | +20.9% | ✗ |
+| 2017-11-24 | $147.63 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 10.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.6% | +13.2pp | +19.6% | ✗ |
+| 2017-12-01 | $146.57 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 8.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.7% | +17.9pp | +20.9% | ✗ |
+| 2017-12-08 | $150.53 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 15.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.9% | +15.4pp | +18.2% | ✗ |
+| 2017-12-15 | $152.66 | Accenture plc Q4/FY17 results | 2.70 | -1.15 | 30.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.7% | +16.2pp | +17.1% | ✗ |
+| 2017-12-22 | $153.89 | Accenture plc Q1 FY18 results | 2.90 | -0.96 | 22.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.5% | +16.6pp | +17.0% | ✗ |
+| 2017-12-29 | $153.09 | Accenture plc Q1 FY18 results | 2.90 | -0.96 | 17.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.9% | +16.9pp | +18.4% | ✗ |
+| 2018-01-05 | $157.67 | Accenture plc Q1 FY18 results | 2.90 | -0.96 | 226.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.3% | +14.4pp | +15.6% | ✗ |
+| 2018-01-12 | $160.11 | Accenture plc Q1 FY18 results | 2.90 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.9% | +11.8pp | +14.6% | ✗ |
+| 2018-01-19 | $161.75 | Accenture plc Q1 FY18 results | 2.90 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.0% | +10.7pp | +14.2% | ✗ |
+| 2018-01-26 | $162.55 | Accenture plc Q1 FY18 results | 2.90 | -0.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | +13.4pp | +14.2% | ✗ |
+| 2018-02-02 | $156.90 | Accenture plc Q1 FY18 results | 2.90 | -0.93 | 34.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.5% | +13.8pp | +19.0% | ✗ |
+| 2018-02-09 | $153.84 | Accenture plc Q1 FY18 results | 2.90 | -0.93 | 13.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.3% | +10.2pp | +22.1% | ✗ |
+| 2018-02-16 | $162.66 | Accenture plc Q1 FY18 results | 2.90 | -1.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | +6.6pp | +16.2% | ✗ |
+| 2018-02-23 | $162.95 | Accenture plc Q1 FY18 results | 2.90 | -1.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.6% | +8.3pp | +16.5% | ✗ |
+| 2018-03-02 | $157.50 | Accenture plc Q1 FY18 results | 2.90 | -1.06 | 29.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.1% | +5.2pp | +20.9% | ✗ |
+| 2018-03-09 | $161.51 | Accenture plc Q1 FY18 results | 2.90 | -0.91 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.2% | +3.1pp | +18.1% | ✗ |
+| 2018-03-16 | $160.89 | Accenture plc Q1 FY18 results | 2.90 | -0.91 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.6% | +7.5pp | +18.5% | ✗ |
+| 2018-03-23 | $147.35 | Accenture plc Q2 FY18 results | 2.35 | -1.46 | 4.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.5% | +10.8pp | +29.2% | ✗ |
+| 2018-03-29 | $153.50 | Accenture plc Q2 FY18 results | 2.35 | -1.46 | 7.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.9% | +9.4pp | +24.0% | ✗ |
+| 2018-04-06 | $147.38 | Accenture plc Q2 FY18 results | 2.35 | -1.46 | 4.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.6% | +10.4pp | +28.9% | ✗ |
+| 2018-04-13 | $150.13 | Accenture plc Q2 FY18 results | 2.35 | -1.46 | 5.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.0% | +9.8pp | +26.5% | ✗ |
+| 2018-04-20 | $152.41 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 6.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.1% | +8.4pp | +24.5% | ✗ |
+| 2018-04-27 | $152.39 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 6.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.2% | +9.4pp | +24.4% | ✗ |
+| 2018-05-04 | $153.44 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 7.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.5% | +9.7pp | +23.6% | ✗ |
+| 2018-05-11 | $157.08 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 14.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.9% | +11.7pp | +20.8% | ✗ |
+| 2018-05-18 | $155.31 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 10.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.5% | +14.7pp | +22.3% | ✗ |
+| 2018-05-25 | $155.99 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 9.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.6% | +15.0pp | +22.0% | ✗ |
+| 2018-06-01 | $158.89 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 17.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.3% | +15.6pp | +20.0% | ✗ |
+| 2018-06-08 | $162.17 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 91.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.6% | +13.4pp | +17.9% | ✗ |
+| 2018-06-15 | $163.48 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.5% | +11.1pp | +17.2% | ✗ |
+| 2018-06-22 | $159.63 | Accenture plc Q2 FY18 results | 2.35 | -1.48 | 21.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.3% | +13.1pp | +20.3% | ✗ |
+| 2018-06-29 | $163.59 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 55.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.3% | +16.9pp | +17.7% | ✗ |
+| 2018-07-06 | $164.51 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 160.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.5% | +16.3pp | +17.2% | ✗ |
+| 2018-07-13 | $168.09 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.5% | +14.9pp | +15.0% | ✗ |
+| 2018-07-20 | $166.52 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.9% | +17.9pp | +16.4% | ✗ |
+| 2018-07-27 | $162.02 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 25.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.6% | +22.8pp | +20.0% | ✗ |
+| 2018-08-03 | $160.37 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 13.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.5% | +25.6pp | +21.6% | ✗ |
+| 2018-08-10 | $160.68 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 14.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.2% | +24.7pp | +21.9% | ✗ |
+| 2018-08-17 | $164.89 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 71.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | +22.3pp | +19.3% | ✗ |
+| 2018-08-24 | $165.88 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | 665.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.0% | +23.9pp | +19.0% | ✗ |
+| 2018-08-31 | $169.07 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +22.7pp | +17.2% | ✗ |
+| 2018-09-07 | $169.07 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.2% | +20.3pp | +17.7% | ✗ |
+| 2018-09-14 | $171.64 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +22.5pp | +16.4% | ✗ |
+| 2018-09-21 | $174.19 | Accenture plc Q3 FY18 results | 3.05 | -0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.8% | +22.0pp | +15.2% | ✗ |
+| 2018-09-28 | $170.20 | Accenture plc Q4/FY18 results | 2.85 | -0.97 | 7.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.5% | +15.7pp | +18.3% | ✗ |
+| 2018-10-05 | $171.23 | Accenture plc Q4/FY18 results | 2.85 | -0.97 | 9.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.1% | +12.2pp | +18.0% | ✗ |
+| 2018-10-12 | $159.44 | Accenture plc Q4/FY18 results | 2.85 | -0.86 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +49.0% | +17.3pp | +27.2% | ✗ |
+| 2018-10-19 | $158.28 | Accenture plc Q4/FY18 results | 2.85 | -0.81 | 2.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.4% | +18.6pp | +28.7% | ✗ |
+| 2018-10-26 | $154.45 | Accenture plc Q4/FY18 results | 2.85 | -0.69 | 2.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.5% | +13.4pp | +32.4% | ✗ |
+| 2018-11-02 | $157.39 | Accenture plc Q4/FY18 results | 2.85 | -0.78 | 2.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +43.4% | +17.9pp | +30.4% | ✗ |
+| 2018-11-09 | $165.15 | Accenture plc Q4/FY18 results | 2.85 | -0.99 | 4.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.8% | +17.1pp | +24.8% | ✗ |
+| 2018-11-16 | $165.00 | Accenture plc Q4/FY18 results | 2.85 | -0.99 | 4.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.8% | +15.3pp | +25.5% | ✗ |
+| 2018-11-23 | $156.93 | Accenture plc Q4/FY18 results | 2.85 | -0.75 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.4% | +20.4pp | +32.5% | ✗ |
+| 2018-11-30 | $164.52 | Accenture plc Q4/FY18 results | 2.85 | -1.12 | 4.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.8% | +19.4pp | +26.9% | ✗ |
+| 2018-12-07 | $157.45 | Accenture plc Q4/FY18 results | 2.85 | -0.75 | 2.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.9% | +17.6pp | +33.2% | ✗ |
+| 2018-12-14 | $155.53 | Accenture plc Q4/FY18 results | 2.85 | -0.67 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.3% | +16.0pp | +35.4% | ✗ |
+| 2018-12-21 | $137.20 | Accenture plc Q1 FY19 results | 2.50 | -0.37 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +94.6% | +37.0pp | +54.2% | ✗ |
+| 2018-12-28 | $139.82 | Accenture plc Q1 FY19 results | 2.50 | -0.48 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +89.7% | +34.9pp | +51.9% | ✗ |
+| 2018-12-31 | $141.01 | Accenture plc Q1 FY19 results | 2.50 | -0.53 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +86.6% | +33.2pp | +50.8% | ✗ |
 | 2023-01-06 | $269.21 | Accenture Q1 FY23 results | 2.95 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.2% | -22.7pp | +26.3% | ✓ |
 | 2023-01-13 | $282.14 | Accenture Q1 FY23 results | 2.95 | +0.02 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.9% | -22.4pp | +20.5% | ✗ |
 | 2023-01-20 | $280.47 | Accenture Q1 FY23 results | 2.95 | +0.05 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.4% | -25.0pp | +21.2% | ✗ |

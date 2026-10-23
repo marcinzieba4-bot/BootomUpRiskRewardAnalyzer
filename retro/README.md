@@ -112,8 +112,23 @@ How recurring cases are encoded (each was decided the first time it came up, the
   Navitaire gain; FY15 is $4.82 (GAAP $4.76) and FY16 $5.34 (GAAP $6.45, gains on business sales).
   A guide that includes a change in accounting with no published figure without it stays GAAP
   (ACN FY17: the share-based payment tax benefit of ASU 2016-09).
+  Later cases, same rule: FY17 $5.91 (GAAP $5.44, pension settlement), FY18 $6.74 (GAAP $6.34, US tax-law charges).
 - **A figure published to a decimal** is kept as published (ACN FY16 LC revenue growth 10.5%, FY16 guide 9.5-10.5%).
+  The exception is the latest quarter's own LC growth (`revenue_lc`, `consulting_lc`, `managed_lc`), which the frozen
+  engine prints as a whole percentage: a decimal there is rounded half up, and the note keeps the published figure.
+  Example: ACN Q1 FY19 revenue +9.5% LC is stored as 10; the 7-11% signal band is the same either way.
 - **No bookings target** for the year: catalyst (3) reads "Bookings run-rate". ACN gave none for FY16 or FY17.
+- **A record the company does not call a record** (`bookings_record`) is derived from the dated history and noted:
+  ACN FY17 bookings of $37.4B beat every earlier year (previous high $35.9B, FY14), though the release does not say so.
+- **A margin guide measured against a restated prior year** (an accounting change) steps from the restated base the
+  company states, never from the reported one (`fy_margin_guide_base` on the print). ACN guided FY19 at 14.5-14.7%,
+  "an expansion of 10 to 30 basis points from operating margin for fiscal 2018 of 14.4 percent" under the new revenue
+  and pension standards (14.8% as reported). Stepping from 14.8% would read that guide as a 20bp cut. Decided before any
+  outcome of the affected dates was computed; it lifts BASE growth from about 9.5% to 12.3% on 2018-09-28 to 2018-12-31
+  and changes the class on two of those 15 dates (2018-12-21 and 2018-12-28: FAIR instead of RICH).
+- **A 10-K that stops giving a headcount** says so in the event's own words (`gdn_clause`, `gdn_factor`). ACN's FY17
+  and FY18 10-Ks give "more than 50 delivery centers" and no delivery headcount, so the last count (about 285,000, FY16)
+  is quoted as such. Total employees (425,000, 459,000) are a different measure and are not used.
 - **A filing accepted after the 16:00 ET close** counts from the next trading day, so it never meets a closing price
   that was set before it was public. Example: the FY11 10-K, accepted 2011-10-21 16:06 ET, is dated 2011-10-24.
 - **A release made before the open** may meet the same day's close (ACN moved to pre-market releases in 2013).
@@ -125,6 +140,15 @@ How recurring cases are encoded (each was decided the first time it came up, the
 Known limitation: the growth factor compares a local-currency guide with dollar revenue history. That penalizes
 periods of a weak dollar, such as ACN in 2004–07. Fixing it needs LC history in the fact sheet and a new
 method version.
+
+Known limitation (from FY19): ACN's revenues include reimbursements from FY19 (new revenue standard), while the annual
+history stays on the net-revenue basis it was reported on. The FY19 LC growth guide is applied to FY18 net revenues in the
+segment bridge, and the guide is compared with the net-revenue growth history. Both are growth rates, so the
+distortion is small. The bridge's dollar base leaves out reimbursements: $2.03B of FY18's $41.60B revenues
+(FY18 10-K), about 5%.
+
+Ratio B is `inf` (printed `infx`) when the price is above the BULL scenario price: there is no upside even in the bull
+case. ACN reached that on 14 dates in 2018. `analysis.json` stores it as `Infinity`, which Python's json reads.
 
 The ⑦ robustness block re-runs the verdict with one input moved at a time; a class
 that survives only one set of assumptions is not a call.
@@ -188,6 +212,7 @@ python3 retro/build_acn.py --weekly 2011-01-03 2011-12-31
 python3 retro/build_acn.py --weekly 2012-01-02 2012-12-31
 python3 retro/build_acn.py --weekly 2013-01-07 2014-12-31
 python3 retro/build_acn.py --weekly 2015-01-05 2016-12-31
+python3 retro/build_acn.py --weekly 2017-01-02 2018-12-31
 for d in archive/retrospective/ACN/2023-*/; do
   python3 retro/retro_tool.py run "$d" && python3 retro/retro_tool.py outcome "$d"
 done
