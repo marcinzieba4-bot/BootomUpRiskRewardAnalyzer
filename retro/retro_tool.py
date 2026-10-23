@@ -14,6 +14,7 @@ public on AS_OF.  This tool never edits model.py; it only judges and files it.
            outcome.json, never read back by `run`
   lint     point-in-time checks only, no classification
   index    rebuild index.json from every analysis.json / outcome.json
+  series   markdown table of one ticker's retrospectives -> archive/retrospective/<T>/SERIES.md
 
 Point-in-time rules enforced by `run` (errors abort, nothing is written):
   1. every SOURCES[i]["published"] <= AS_OF, and PRICE_DATE <= AS_OF
@@ -31,6 +32,7 @@ Usage
   python3 retro/retro_tool.py outcome  archive/retrospective/ACN/2023-06-30
   python3 retro/retro_tool.py lint     archive/retrospective/ACN/2023-06-30
   python3 retro/retro_tool.py index
+  python3 retro/retro_tool.py series   ACN
 """
 import argparse
 import contextlib
