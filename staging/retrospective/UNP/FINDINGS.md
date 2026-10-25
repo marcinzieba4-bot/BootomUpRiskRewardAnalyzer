@@ -1,10 +1,10 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 679 weekly dates from 2008-01-04 to 2020-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 835 weekly dates from 2008-01-04 to 2023-12-29. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
 2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a, 2017-2018 in 50bd487, 2019-2020 in
-d349c70.
+d349c70, 2021-2023 in 78b0995.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -291,20 +291,87 @@ effective 2008-05-29).
   percentile) lost 3%. 19 RICH calls hit, all from 2020-06-05 on.
 - **The BEAR case never came:** every 2020 date's two-year low stayed at least 1.15 times its BEAR price ($92-101).
 
-## Across 2008-2020: the no-guide fallbacks are the open question
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH | 48 | -2% | -12% to +11% | 0 | 6 (-5pp) | -6% |
+| class CHEAP = legacy tier ACCUMULATE (2021-09-10 to 2021-10-01) | 4 | +8% | +6% to +11% | 0 | 4 (+8pp) | +2% |
+| legacy tier WATCHLIST | 9 | +5% | -3% to +11% | 0 | 6 (+4pp) | -6% |
+| legacy tier AVOID | 39 | -4% | -12% to +8% | 0 | 0 (-6pp) | -6% |
+
+- **No date cleared the hurdle.** Two years on, the median date was down 2%; 10 of 52 beat SPY. 42 of the 48 RICH calls hit
+  (24.1-30.8x trailing EPS, the 92nd-100th percentile).
+- **The four CHEAP dates were a fallback artefact, and still the best of the year against SPY** (+8pp), though only +6% to
+  +11% in total. They came from the Q2 2021 rebound quarter (freight revenue +29%) carried into BASE as 37%/yr, at the
+  92nd-94th percentile.
+- **The tier ranked the year:** ACCUMULATE +8%, WATCHLIST +5%, AVOID -4%. Most two-year lows fell in March 2023; the worst
+  date, 2021-10-29 ($241, 29.5x), lost 12%.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class CHEAP | 17 | +12% | +7% to +32% | 0 | 0 (-31pp) | +8% |
+| class FAIR | 13 | +16% | +4% to +26% | 0 | 0 (-35pp) | +14% |
+| class RICH | 22 | +3% | -7% to +19% | 0 | 0 (-21pp) | -12% |
+| legacy tier BUY | 7 | +26% | +12% to +32% | 0 | 0 (-34pp) | +21% |
+| legacy tier ACCUMULATE | 12 | +15% | +7% to +25% | 0 | 0 (-33pp) | +14% |
+| legacy tier WATCHLIST | 12 | +16% | +4% to +24% | 0 | 0 (-25pp) | +10% |
+| legacy tier AVOID | 21 | +2% | -7% to +13% | 0 | 0 (-21pp) | -12% |
+
+- **Every date lagged SPY and missed the hurdle** (median +11%, -25pp). All 22 RICH calls hit; none of the CHEAP or FAIR
+  calls did.
+- **The ranking held in total return.** CHEAP and FAIR beat RICH; BUY (+26%) beat AVOID (+2%). The best entries were the
+  October 2022 lows ($190-199, 19-20x, the 53rd-62nd percentile; 2022-10-14 +32%), the worst the RICH dates of
+  January-March (up to 27.5x; 2022-03-25 -7%).
+- **The CHEAP calls of April-July sat at the 74th-92nd percentile.** They rested on BASE growth of 24.5%/yr: Q1 2022's
+  fuel-surcharge-inflated freight revenue (+17%) and the guided margin step. They returned +7% to +19%, against +22% to
+  +32% for the CHEAP dates of 2022-09-30 to 2022-11-04.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class CHEAP (2023-01-25 to 2023-07-07, with FAIR weeks between) | 22 | +21% | +13% to +32% | 0 | 0 (-24pp) | +19% |
+| class FAIR | 5 | +15% | +11% to +18% | 0 | 0 (-37pp) | +15% |
+| class RICH (from 2023-07-14) | 25 | +6% | -0% to +22% | 0 | 0 (-45pp) | +6% |
+| legacy tier BUY | 29 | +20% | +13% to +32% | 0 | 0 (-25pp) | +18% |
+| legacy tier ACCUMULATE | 10 | +9% | +6% to +17% | 0 | 0 (-41pp) | +9% |
+| legacy tier WATCHLIST | 10 | +5% | +0% to +13% | 0 | 0 (-44pp) | +3% |
+| legacy tier AVOID | 3 | +1% | -0% to +4% | 0 | 0 (-47pp) | -6% |
+
+- **Ranked in order, and every date still lagged SPY** (median -33pp; none cleared the hurdle). CHEAP > FAIR > RICH, and
+  BUY > ACCUMULATE > WATCHLIST > AVOID. All 25 RICH calls hit.
+- **The CHEAP stretch was the low multiple** (16.8-18.8x FY22 EPS, the 18th-47th percentile); the best date, 2023-03-10
+  ($196, 17.5x), returned +32%. From July the price rose and the class turned RICH; those dates returned +6%.
+- **The first BEAR landing in the series:** 2023-04-06's two-year point fell on 2025-04-04, in the April 2025 sell-off.
+  The price there ($213, +13% with dividends) was nearer the BEAR price ($155) than BASE ($273). Every 2023 date's
+  two-year low stayed at least 1.20 times its BEAR price.
+
+## Across 2008-2023: the no-guide fallbacks are the open question
 
 UNP gave no numeric full-year guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands,
 BASE growth takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in
 2009, the trough in 2010, and last year's earnings while margins expanded in 2012. RICH set its line too low from
 2009 to 2012, was right from mid-2013 into 2015, and read RICH through the 2015-2016 trough and the 2017-2018 rise
-as well. 139 of the 555 RICH dates hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014, 36 in 2015, one in
-2018, 15 in 2019, 19 in 2020. In 2019 every RICH date lagged SPY, but most still cleared the hurdle.
+as well. 228 of the 650 RICH dates hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014, 36 in 2015, one in
+2018, 15 in 2019, 19 in 2020, 42 in 2021, 22 in 2022, 25 in 2023. In 2019 every RICH date lagged SPY, but most still
+cleared the hurdle; from 2021 almost none did.
+
+**CHEAP stopped paying in 2021-2023.** All 46 CHEAP dates of 2008-2020 cleared the hurdle; none of the 43 of 2021-2023
+did, and only the four of 2021 beat SPY. The ranking still held (CHEAP or FAIR above RICH in 2022 and 2023), so the class
+ordered the dates, but its line sat too high for a stock that lagged the market for three years. From 2021 UNP gave
+numeric operating-ratio guides, and the guided margin step joined the latest-quarter revenue fallback in BASE. In 2021-2022
+that fallback carried a rebound quarter and fuel-surcharge-inflated quarters, which is what put CHEAP at the 74th-94th
+percentile.
 
 **At the troughs the legacy tier ranked better than the class.** From July 2009 and through 2015-2016 the fallback
 carried the trough quarters' revenue declines into BASE, so the class read RICH. The legacy tier, whose Ratio B keeps
 BULL on the decade CAGR, stayed at BUY or ACCUMULATE on the cheap dates and ranked the dates in order: 2009 BUY +112%
 against ACCUMULATE +55%; 2015 BUY +39% down to AVOID -7%; 2016 BUY +77% down to AVOID +55%; 2020 BUY +103% down to
-AVOID +22%. The class ranked 2020 too, but on one CHEAP and one FAIR date.
+AVOID +22%. The class ranked 2020 too, but on one CHEAP and one FAIR date. The tier ranked 2021-2023 as well: 2021
+ACCUMULATE +8% down to AVOID -4%; 2022 BUY +26% down to AVOID +2%; 2023 BUY +20% down to AVOID +1%.
 
 **A high P/E percentile did not separate 2010 from 2014.** Both read RICH at the top of the stock's own range: in 2010
 at the 99th-100th percentile on trailing FY09 EPS, with a median two-year return of +54%; in 2014 at the 90th-100th
