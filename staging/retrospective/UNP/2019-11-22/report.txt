@@ -1,0 +1,152 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $175.94  ·  RETROSPECTIVE as of 2019-11-22
+  Signal: ✕ AVOID   Ratio B: 2.89x   Adj gap: -1.73  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2019-11-22; latest print Q3 2019 (Oct 17)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E operating revenue, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2019E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Premium                   $     6.5  $   6.5  $   7.3      +0.0      +0.8
+    -9% revenue in Q3
+  Industrial                $     6.1  $   6.1  $   6.7      +0.0      +0.6
+    -1% revenue in Q3
+  Agricultural Products     $     4.6  $   4.6  $   5.1      +0.0      +0.5
+    -1% revenue in Q3
+  Energy                    $     4.0  $   4.0  $   4.5      +0.0      +0.5
+    -20% revenue in Q3
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    21.2  $  21.2  $  23.6      +0.0      +2.4
+  FY2019E = FY18 $22.83B × (1 − 7.0%: no FY19 revenue guide, Q3 2019 freight revenue); split pro rata to nine-month actuals freight revenue
+  Q3 2019 (Oct 17): freight revenue $5.15B -7%; carloads -8%, ARC $2,417 +1%;
+  operating ratio 59.5% (-2.2 pt); EPS $2.22 vs $2.15; GTMs/employee +4%
+  FY19 guide (8-K of 2019-09-04): operating ratio: 'sub-sixty-one percent operating ratio result for full-year 2019'
+
+  FY2019E EPS check:  ($21.2B × 37.3% − $0.78B net interest) × (1−22.9%) ÷ 0.702B  =  $7.83  (FY2019E: no numeric EPS guide yet, FY18's $7.91 stands $7.91)
+  FY2021E BEAR check: ($21.2B × 37.3% − interest) ÷ 0.656B  =  $8.38  (scenario $6.75)
+  FY2021E BULL check: ($23.6B × 37.7% − interest) ÷ 0.656B  =  $9.54  (scenario $10.90)
+  Every 1pp of operating margin ≈ $0.23 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     -8.0%  ⚠ BEAR  █░░░
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%     +1.0%  ⚠ BEAR  █░░░
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%     -7.0%  ⚠ BEAR  █░░░
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     +4.0%  ▲ BULL  ███░
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    -2.2pt  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   3.28 / 4.00  (back-solved from $176 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.10  →  Adj composite 1.55  →  Gap -1.73  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 operating ratio 62.7%, revenue +7% on carloads +4%; Q3 revenue per car +1%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 22.2x FY19E vs a 16.9x 10-yr median (98th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no FY19 revenue guide, Q3 2019 freight revenue -7% vs a 7.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash $1.25B, FY18 free cash flow $2.98B, 6.4M shares repurchased in Q3 2019 ($1.1B), plus 3.2M received to complete an accelerated share repurchase program  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              -8.0%     -6.0%   +2.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth           +1.0%     -2.0%   -3.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth               -7.0%     -8.0%   -1.0%  Volume and price turn down together
+  GTMs per employee growth             +4.0%     -6.0%  -10.0%  Volume falls faster than crews are cut
+  Operating ratio change              -2.2pt    +2.0pt  +4.2pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$108  (model)  /  $92 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: carloads went from -4% (Q2 2019) to -8% (Q3 2019);
+  the bear case needs a volume recession that pricing (revenue per car +1% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.91  (FY2019E: no numeric EPS guide yet, FY18's $7.91 stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2009 16.9x, 2010 11.0x, 2011 11.9x, 2012 12.7x, 2013 13.6x, 2014 14.4x, 2015 13.7x, 2016 13.6x, 2017 17.5x, 2018 15.7x, 2019 16.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $103/share
+  Current $176 vs Updated EPP $103:  +71%  ⚠ far above floor — large drawdown room
+  Bear $92 vs Updated EPP $103:  -11%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0       +7.0   BASE floor (vs -8 now)
+  Avg revenue per car growth                   2.0       +1.0   BASE floor (vs +1 now)
+  Freight revenue growth                       1.0       +8.0   BASE floor (vs -7 now)
+  GTMs per employee growth                     0.0       -4.0   BASE floor (vs +4 now)
+  Operating ratio change                       0.0       +2.2   BASE floor (vs -2 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.91 × (1+0.0%)² = $7.91
+  At 16x P/E (conservative):  $127/share
+  + Cumul. dividends (2yr):  +$7.99/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $127  (▼49 from $176)
+  Conservative total return:  -24% over 2yr  = -12%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (22.2x)
+  mean-reverts to 16x. Breakeven at 16x needs FY2021E EPS of $10.50,
+  i.e. 15.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $128.08  –  $180.54  (at 91th pct of range)
+  Annual dividend:      $3.88/share  (yield 2.2%)
+  Realized vol (1yr):   26% annualized
+  Beta vs broad market: 1.16
+  1-sigma range (1yr):  $130  –  $222  ($176 ± 26%)
+  2-sigma range (1yr):  $85  –  $267
+  ────────────────────────────────────────────────────────────
+  Bear $92 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 1.2 beta: the stock is +37% off its December
+  low while carloads went from -4% (Q2 2019) to -8% (Q3 2019).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        6.75  13.6x  $     92    33.0%      3.3%   +29.6pp  EPS -7.7%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct
+  BASE        7.34  16.9x  $    124    50.0%     11.6%   +38.4pp  EPS +-3.7%/yr (Q3 2019 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       10.90  18.8x  $    205    14.3%     40.4%   -26.1pp  EPS +17.4%/yr (FY09-FY18 CAGR); P/E holds its 75th pct
+  XBULL      14.21  20.8x  $    296     2.7%     44.7%   -42.0pp  EPS +34.0%/yr (best 2-yr run FY09-FY18); P/E at its 90th pct
+
+  Proxy EV (2yr): $130  /  Market EV: $233  /  Current: $176
+  Conservative EV (2yr, ④): $127 + $7.99 divs = $135 total value
+  Downside (→ Bear $92): 47.7%   Upside (→ Bull $205): 16.5%   Ratio B 2.89x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $176 the market needs $233 in two years —
+  above the BULL case. That is a market composite of 3.28 against a model
+  read of 1.55: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.89x     +71%    -1.73  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.49x     +71%    -1.45  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)    10.91x     +71%    -2.01  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.31x     +71%    -1.66  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.77x     +71%    -1.81  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.89x     +71%    -1.43  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.89x     +39%    -1.63  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.89x     +71%    -1.50  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2019 print (late January) — the next read on carloads (-8% now) and the guide
+  (2) Revenue per car — +1% in Q3 2019: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY19 guide — the Q3 2019 release gives words only ('We remain squarely focused on driving long-term shareholder value')
+  (4) Operating ratio — 59.5% in Q3 2019 (-2.2 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 22x — management's own read of the multiple
+  ✕ AVOID  |  EPP floor $103  |  ADD below ~$105  |  TRIM above $205
+════════════════════════════════════════════════════════════════════════
+

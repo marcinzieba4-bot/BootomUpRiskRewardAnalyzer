@@ -297,12 +297,14 @@ python3 retro/build_unp.py --weekly 2015-01-05 2015-12-31                   # 52
 python3 retro/build_unp.py --weekly 2016-01-04 2016-12-31                   # 52 dates, 2016-01-08 .. 2016-12-30
 python3 retro/build_unp.py --weekly 2017-01-02 2017-12-31                   # 52 dates, 2017-01-06 .. 2017-12-29
 python3 retro/build_unp.py --weekly 2018-01-01 2018-12-31                   # 53 dates, 2018-01-05 .. 2018-12-31
+python3 retro/build_unp.py --weekly 2019-01-07 2019-12-31                   # 52 dates, 2019-01-11 .. 2019-12-31
+python3 retro/build_unp.py --weekly 2020-01-06 2020-12-31                   # 52 dates, 2020-01-10 .. 2020-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2019-01-01 UNP
+python3 retro/tools/firewall.py 2021-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -679,6 +681,79 @@ Seen in the build (method behaviour, not tuned):
   27-43% ahead ($1.68, $1.98, $2.15), mostly the lower tax rate. The bridge's EPS check, on FY17's 37.5% tax rate,
   reads about $6.4.
 - **The BEAR price stays at $45-52:** 2009's -17.4% applied twice, the worst year of the window.
+
+### UNP 2019-2020: an operating-ratio bound, a dropped ratio, COVID
+
+Every 8-K, 10-Q and release of 2019 and 2020 was read, the 10-Qs searched in full for forward-looking statements.
+Decided before any 2019 or 2020 date was built or scored:
+
+- **No numeric EPS or revenue guide.** The FY2018 10-K expects volume "to grow in the low single digit range", the FY2019
+  10-K "slightly positive", both in words; the releases give words only. FY18's $7.91 stands as the current-year EPS from
+  2019-01-25, FY19's $8.38 from 2020-01-24. BASE growth follows the latest quarter's freight revenue: +6% (Q4 2018), -2%,
+  -2%, -7%, -10% (Q4 2019), -3%, -24%, -11%.
+- **An operating-ratio bound, not a range.** The CFO's remarks furnished on 2019-09-04 (before the open) "confirmed the
+  Company's expectation of a sub-sixty-one percent operating ratio result for full-year 2019", and the 8-K of 2019-12-04
+  confirms it again. No earlier filing states it (the January call and slides were not filed), so it enters on
+  2019-09-04; that can only lag. A one-sided bound gives no margin step (the FY07 "below 80%" rule), so it is
+  `op_ratio_guide_text`, shown in the guide line. Their half-year and fourth-quarter volume statements have no field.
+- **Release outlooks are not guides.** The Q2 2020 release expects full-year carloads "down around 10 percent or so". As
+  with the 2017-2018 releases' full-year words, a release's outlook is its `outlook_short`, shown while it is the latest
+  print; only 8-K statements become `fy_words` guides, and the 10-K Outlook words are not entered.
+- **GTMs per employee, derived from the release.** From Q1 2019 the releases no longer print GTMs per employee, but they
+  still print gross ton-miles and average employees for both years. The signal keeps its definition: the change is
+  computed from those four published figures and rounded half up (Q1 2019 -3.43% to -3%), with the inputs in
+  `gtm_per_employee_note`. The new "workforce productivity (car miles per employee)" is a different measure and is not
+  used (the ACN headcount rule). From 2020 the label reads "Total employees (average)", with the prior year on the same
+  basis.
+- **Q4 2018 against the adjusted base.** The Q4 2018 release compares with Q4 2017 adjusted and restated for ASU
+  2017-07: EPS $2.12 against $1.53 (+39%), operating ratio 61.6% against 62.7% (-1.1 pt). The fact sheet entered Q4 2017
+  at its adjusted figures, so the signal uses that change, not the +2.8 pt against GAAP 58.8%.
+- **One-offs without an adjusted figure stay in:** the 2019 payroll tax refund ($78.5M and $31.3M of interest; Q1 $42M
+  and $27M, Q2 $32M and $3M), the Q2 2020 Illinois Tollway land sale ($69M, $0.07), and the debt exchange fees. The Q1 and
+  Q2 2020 releases bridge the prior year's operating ratio and EPS by item, but publish no adjusted figure.
+- **A release before Good Friday again.** Q1 2019 was released on Thursday 2019-04-18; its 8-K was accepted at 08:06 ET,
+  before the open, and the call was at 8:45 a.m. No trading day followed in its week, so the week's date is the release
+  day and the print counts from its open (`release_time`), as in 2014.
+- **Commodity groups:** four in 2019 (Agricultural Products, Energy, Industrial, Premium), three from 2020 (Bulk,
+  Industrial, Premium; the 8-K of 2020-02-18 points to the reclassification). The 2020 releases also list each group's
+  components; the bridge takes the three groups. Group names are display only.
+- **Dividends, again without an 8-K:** $0.88 from the Q1 2019 release (2019-04-18) and $0.97 from the Q3 2019 release
+  (2019-10-17), each the first filing that states it. The rate is unchanged through Q3 2020.
+- **Two 10-K vintages,** both accepted during the session and dated that day: the FY2018 10-K (2019-02-08 14:28 ET,
+  2014-2018) and the FY2019 10-K (2020-02-07 15:35 ET, 2015-2019). The history moves to 2009-2018, then 2010-2019. 2017
+  keeps the company's adjusted $5.79, which the FY2018 10-K still states. The FY2018 10-K restates 2014-2017 operating
+  ratios for ASU 2017-07; no rule reads an earlier year's ratio. First-year diluted shares, from the latest filing that
+  reports them, before the 2014 split: 2009's 505.8M from the FY2011 10-K, 2010's 502.9M from the FY2012 10-K (dated by
+  EDGAR's Eastern acceptance times, 2012-02-03 and 2013-02-08; the earlier entries for the same 10-Ks, U46 and U52, carry
+  the one-day lag described above).
+- **No theme encoded.** The FY2019 10-K keeps the climate risk factor; the 8-K of 2020-03-10 pledges science-based
+  emission targets for the company's own operations. ENERGY_TRANSITION's market pricing (from 2020-08-31) is dated for
+  owners of reserves and refining; no filing shows the market pricing it for UNP. EV (live from about 2020) is scoped to
+  ICE powertrains, parts and fuel retail. So the class stays DURABLE with no watch list.
+- **Adds nothing:**
+  - the 8-K of 2019-01-09 (a preliminary FY2018 operating ratio of 62.7%, which the Q4 print reports two weeks later);
+  - the payroll-tax-refund 8-K (2019-03-06), whose amounts are in the Q1 and full-year prints;
+  - the 8-K of 2020-03-31: the earlier 2020 outlook "does not include the potential impact of COVID-19", a caveat with no
+    figure;
+  - the CFO 8-Ks of 2020-05-20 and 2020-06-09, which reaffirm guidance given on the Q1 call without stating it, plus
+    quarter volume and operating-ratio statements;
+  - the conference 8-Ks of 2020-08-11 and 2020-11-17 (a $37M one-time bonus in Q4 2020);
+  - the accelerated share repurchases (2019-02-25, 2020-02-18);
+  - debt offerings, debt exchange offers, and officer, board, vote and 10b5-1 8-Ks;
+  - capex figures and the 10-Qs (no outlook beyond capital spending).
+- **ISO weeks:** 2018-12-31 covered 2019-W01, so the 2019 batch starts on 2019-01-07 and ends on 2019-12-31 (2020-W01).
+  2020 has 53 ISO weeks; its batch covers weeks 2-53 and ends on 2020-12-31. A 2021 batch starts on 2021-01-04.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 102 of the 104 dates.** The exceptions are 2020-03-20, CHEAP at $117.84 (14.1x FY19 EPS, the 14th percentile),
+  and 2020-05-15, FAIR. The legacy tier, which keeps BULL on the decade CAGR, read BUY or ACCUMULATE from 2020-03-13 to
+  2020-04-17 and on 2020-05-15, WATCHLIST on 14 dates, AVOID on 83.
+- **The BEAR price moves with the window.** On 2019-02-08 the FY2018 vintage drops 2008, and with it 2009's -17.4% as a
+  growth year (2009 becomes the base). The worst year becomes 2016 (-7.7%), and the BEAR price moves from $72 to $90.
+- **The fallback carries the COVID quarter.** From the Q2 2020 print, BASE growth is that quarter's -24% freight revenue for
+  two years: the BASE price falls to $92 against a $176 market, and the class reads RICH at the 91st-100th percentile.
+- **EPS anchors on the last full year again.** FY19's $8.38 stands through 2020 while Q2 2020 EPS fell to $1.67 and Q3
+  recovered to $2.01.
 
 ## Categories change with the era
 
