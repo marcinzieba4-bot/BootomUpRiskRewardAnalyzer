@@ -1,8 +1,9 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 105 weekly dates from 2008-01-04 to 2009-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 157 weekly dates from 2008-01-04 to 2010-12-31. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
-point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e.
+point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
+2010 in 3198278.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -63,4 +64,27 @@ effective 2008-05-29).
   growth on the trough, EPS on the peak. Test alternatives (the decade median revenue growth, a
   multi-quarter average) on other companies without guidance before any method change. Never fit them to UNP's
   outcomes.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class FAIR (2010-07-02 to 2010-10-01, with RICH weeks between) | 13 | +65% | +51% to +79% | 13 | 13 | +40% |
+| class RICH | 39 | +54% | +33% to +95% | 39 | 39 | +37% |
+| RICH, January-July | 26 | +62% | +45% to +95% | 26 | 26 | +43% |
+| RICH, October-December | 13 | +40% | +33% to +49% | 13 | 13 | +27% |
+| legacy tier WATCHLIST | 10 | +70% | +59% to +73% | 10 | 10 | +43% |
+| legacy tier AVOID | 42 | +54% | +33% to +95% | 42 | 42 | +37% |
+
+- **No CHEAP date, and every date doubled the hurdle's pace or close to it.** All 52 cleared the hurdle, all beat SPY
+  (median +31pp), and every outcome landed in BULL.
+- **RICH was wrong all year in absolute terms; the ordering still held.** FAIR beat RICH, WATCHLIST beat AVOID, and
+  the late-2010 RICH dates (24-25x on FY09 EPS) returned least. So the class ranked the dates but set its line far
+  too low.
+- **Why the model read RICH.** With no 2010 guide, the P/E ran on trailing FY09 EPS ($3.75, then $3.74). The trough
+  year's earnings put the stock at the top of its own ten-year range while earnings were recovering fast.
+  2010's quarterly EPS ($1.01, $1.40, $1.56) ran well above 2009's. This is the 2009 lesson from the other side:
+  the no-guide fallback anchors EPS on the last full year, the peak in 2009 and the trough in 2010.
+- **The BEAR rule kept Ratio B high** (BEAR near $24, the 2004 year applied twice), so the legacy tier read AVOID on
+  42 dates. Every one of them returned at least +33%.
 
