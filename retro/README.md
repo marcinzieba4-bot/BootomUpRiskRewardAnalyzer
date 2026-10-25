@@ -287,12 +287,13 @@ outcome or finding enters a UNP model. Outputs go to `staging/retrospective/UNP/
 ```bash
 python3 retro/build_unp.py --weekly 2008-01-01 2008-03-30                   # 13 dates, 2008-01-04 .. 2008-03-28
 python3 retro/build_unp.py --weekly 2008-03-31 2008-12-31                   # 40 dates, 2008-04-04 .. 2008-12-31
+python3 retro/build_unp.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2009-01-01 UNP
+python3 retro/tools/firewall.py 2010-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -379,6 +380,37 @@ or scored:
 Seen in the build (method behaviour, not tuned): from the Q3 2008 print, BASE growth is that quarter's +16% freight
 revenue, which fuel surcharges inflate. The FY08 EPS guide stays at $4.00, while nine-month actual EPS is already
 $3.24 (the Q3 release) and the company says the full-year target will change.
+
+### UNP 2009: no numeric guide all year, the FY2008 vintage
+
+Every 8-K, 10-Q and release of 2009 was read. Decided before any 2009 date was built or scored:
+
+- **No numeric 2009 guide anywhere.** The Q4 2008 release ("we expect 2009 will be a difficult year"), the FY2008
+  10-K's 2009 Outlook (pricing, network and productivity in words) and the Q1-Q3 releases give words only. The rule
+  from 2008-01-25 applies all year: FY08's $4.54 stands as the current-year EPS, and BASE growth and the growth
+  factor take the latest quarter's freight revenue growth. That was +2% from the Q4 2008 print, then -20%, -28% and
+  -25% from the Q1, Q2 and Q3 2009 prints.
+- **The FY2008 10-K vintage** (filed 2009-02-06 after the close, dated 2009-02-09) restates 2004-2008 per share for
+  the split. Each year comes from the latest filing that reports it. 1999-2003 come from 10-Ks published before the
+  split, and the company-adjusted 2004 and 2005 from the Q4 2005 release, so those years are halved and 2006-2008
+  are used as the FY2008 10-K restated them (2007: $3.46, not $3.455). `eps_published` and `shares_published` carry
+  each year's own date. The 2008 dates rebuild unchanged.
+- **Q2 2009 EPS** is the company's $0.78 excluding the RTD land sale gain ($0.92 GAAP, in the note). This is display
+  only: no rule reads a quarter's EPS.
+- **Adds nothing:**
+  - the 8-K of 2009-10-23: the CEO's media remark that 2010 volume would be close to flat, which the filing says
+    "should not be viewed as the Company's guidance";
+  - the officer, bylaw, board and debt 8-Ks;
+  - the 10-Qs (no outlook).
+
+Seen in the build (method behaviour, not tuned):
+- **The fallback extrapolates the trough.** From the Q1 2009 print, the latest quarter's -20% to -28% freight
+  revenue becomes BASE growth for two years. The BASE price falls below the market, the adjusted gap drops under
+  -0.5, and the class reads RICH while Ratio B (BULL still on the decade CAGR) keeps the legacy tier at BUY or
+  ACCUMULATE.
+- **The floor stays on FY08's EPS.** The P/E and the EPP floor use FY08's $4.54 all year, while 2009's quarters
+  ran below 2008's.
+- **A harmless warning.** The year check flags the Q3 2009 carload count (2,035 thousand) as a calendar year.
 
 ## Categories change with the era
 

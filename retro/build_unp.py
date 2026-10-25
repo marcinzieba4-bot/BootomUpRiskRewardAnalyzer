@@ -65,13 +65,19 @@ def on_basis(facts, as_of):
     splits = [s for s in f.get("splits", []) if s["effective"] <= as_of]
     k = lambda pub: math.prod(s["ratio"] for s in splits if pub < s["effective"])
     for v in f["history_vintages"]:
-        r = k(v["published"])
-        if r != 1:
-            v["eps_normalized"] = {y: e / r for y, e in v["eps_normalized"].items()}
-            v["diluted_shares_m"] = {y: n * r for y, n in v["diluted_shares_m"].items()}
-            v["dividend_annual"] /= r
-            v["split_note"] = "; ".join(f"per share ÷{s['ratio']} for the {s['ratio']}-for-1 split effective {s['effective']} ({s['source']})"
-                                        for s in splits if v["published"] < s["effective"])
+        # a vintage takes each year from the latest filing that reports it, so a year can predate a split the vintage
+        # follows: eps_published / shares_published give such a year's own publication date (default: the vintage's)
+        ke = {y: k(v.get("eps_published", {}).get(y, v["published"])) for y in v["eps_normalized"]}
+        ks = {y: k(v.get("shares_published", {}).get(y, v["published"])) for y in v["diluted_shares_m"]}
+        v["eps_normalized"] = {y: e / ke[y] for y, e in v["eps_normalized"].items()}
+        v["diluted_shares_m"] = {y: n * ks[y] for y, n in v["diluted_shares_m"].items()}
+        v["dividend_annual"] /= k(v["published"])
+        hit = [s for s in splits if any(v.get("eps_published", {}).get(y, v["published"]) < s["effective"] for y in v["eps_normalized"])]
+        if hit:
+            restated = [y for y in sorted(ke) if ke[y] != 1]
+            span = "" if len(restated) == len(ke) else f" on {restated[0]}-{restated[-1]} (published before it)"
+            v["split_note"] = "; ".join(f"per share ÷{s['ratio']} for the {s['ratio']}-for-1 split effective {s['effective']} ({s['source']}){span}"
+                                        for s in hit)
     for p in f["prints"]:
         r = k(p["published"])
         p["eps_q"], p["eps_q_prior"], p["diluted_shares_m"] = p["eps_q"] / r, p["eps_q_prior"] / r, p["diluted_shares_m"] * r
