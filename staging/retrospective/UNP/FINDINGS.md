@@ -1,9 +1,10 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 575 weekly dates from 2008-01-04 to 2018-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 679 weekly dates from 2008-01-04 to 2020-12-31. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
-2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a, 2017-2018 in 50bd487.
+2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a, 2017-2018 in 50bd487, 2019-2020 in
+d349c70.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -249,19 +250,61 @@ effective 2008-05-29).
 - **The BEAR case never came,** even in March 2020: every 2018 date's two-year low stayed at least 2.19 times its BEAR
   price ($52).
 
-## Across 2008-2018: the no-guide fallbacks are the open question
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH (every date) | 52 | +36% | +24% to +47% | 37 | 0 (-14pp) | +20% |
+| legacy tier WATCHLIST (2019-08-23 to 2019-10-18, with AVOID weeks between) | 6 | +40% | +30% to +45% | 5 | 0 (-13pp) | +32% |
+| legacy tier AVOID | 46 | +34% | +24% to +47% | 32 | 0 (-14pp) | +19% |
+| January-September | 38 | +34% | +24% to +47% | 23 | 0 (-16pp) | +17% |
+| October-December | 14 | +42% | +37% to +47% | 14 | 0 (-11pp) | +24% |
+
+- **Right against the market, wrong on the hurdle.** Every date read RICH (19.8-27.3x trailing EPS, the 85th-100th
+  percentile) and every one lagged SPY over two years, by a median 14pp. But the median return was +36%, and 37 of 52
+  cleared the 15%/yr hurdle, so only 15 RICH calls hit (missed the hurdle as well).
+- **Every two-year window ran through March 2020,** and every date's two-year low was set then (the deepest fall -39%).
+  Even so, each low stayed at least 1.24 times the date's BEAR price ($52-92).
+- **The tier ranked slightly better than the class:** the six WATCHLIST dates (the 85th-90th percentile, after the
+  stock fell to $156-162) returned +40% against AVOID's +34%.
+
+## 2020 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class CHEAP (2020-03-20) | 1 | +129% | +129% | 1 | 1 (+30pp) | +95% |
+| class FAIR (2020-05-15) | 1 | +58% | +58% | 1 | 1 (+14pp) | +54% |
+| class RICH | 50 | +30% | -3% to +103% | 23 | 25 (+0pp) | +25% |
+| legacy tier BUY (2020-03-20 to 2020-04-03) | 3 | +103% | +94% to +129% | 3 | 3 (+20pp) | +67% |
+| legacy tier ACCUMULATE | 4 | +70% | +58% to +88% | 4 | 4 (+14pp) | +56% |
+| legacy tier WATCHLIST | 8 | +55% | +31% to +75% | 7 | 7 (+5pp) | +46% |
+| legacy tier AVOID | 37 | +22% | -3% to +45% | 11 | 13 (-2pp) | +22% |
+| October-December | 14 | +8% | -3% to +17% | 0 | 2 (-5pp) | +13% |
+
+- **The class and the tier both ranked the year in order.** CHEAP beat FAIR, which beat RICH; BUY beat ACCUMULATE, which
+  beat WATCHLIST, which beat AVOID.
+- **The COVID crash was the entry.** The only CHEAP date since 2012, 2020-03-20 ($117.84, 14.1x FY19 EPS, the 14th
+  percentile), returned +129%, the best of the year. The seven BUY or ACCUMULATE dates (2020-03-13 to 2020-04-17 and
+  2020-05-15) all cleared the hurdle and beat SPY.
+- **The late-2020 entries were the expensive ones.** From the Q2 print the class read RICH at the 91st-100th percentile;
+  the October-December dates returned a median +8%, none cleared the hurdle, and 2020-10-16 ($209.85, 25.0x, the 100th
+  percentile) lost 3%. 19 RICH calls hit, all from 2020-06-05 on.
+- **The BEAR case never came:** every 2020 date's two-year low stayed at least 1.15 times its BEAR price ($92-101).
+
+## Across 2008-2020: the no-guide fallbacks are the open question
 
 UNP gave no numeric full-year guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands,
 BASE growth takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in
 2009, the trough in 2010, and last year's earnings while margins expanded in 2012. RICH set its line too low from
 2009 to 2012, was right from mid-2013 into 2015, and read RICH through the 2015-2016 trough and the 2017-2018 rise
-as well. 105 of the 453 RICH dates hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014, 36 in 2015, one in
-2018.
+as well. 139 of the 555 RICH dates hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014, 36 in 2015, one in
+2018, 15 in 2019, 19 in 2020. In 2019 every RICH date lagged SPY, but most still cleared the hurdle.
 
 **At the troughs the legacy tier ranked better than the class.** From July 2009 and through 2015-2016 the fallback
 carried the trough quarters' revenue declines into BASE, so the class read RICH. The legacy tier, whose Ratio B keeps
 BULL on the decade CAGR, stayed at BUY or ACCUMULATE on the cheap dates and ranked the dates in order: 2009 BUY +112%
-against ACCUMULATE +55%; 2015 BUY +39% down to AVOID -7%; 2016 BUY +77% down to AVOID +55%.
+against ACCUMULATE +55%; 2015 BUY +39% down to AVOID -7%; 2016 BUY +77% down to AVOID +55%; 2020 BUY +103% down to
+AVOID +22%. The class ranked 2020 too, but on one CHEAP and one FAIR date.
 
 **A high P/E percentile did not separate 2010 from 2014.** Both read RICH at the top of the stock's own range: in 2010
 at the 99th-100th percentile on trailing FY09 EPS, with a median two-year return of +54%; in 2014 at the 90th-100th
