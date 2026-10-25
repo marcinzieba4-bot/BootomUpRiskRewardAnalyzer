@@ -299,12 +299,15 @@ python3 retro/build_unp.py --weekly 2017-01-02 2017-12-31                   # 52
 python3 retro/build_unp.py --weekly 2018-01-01 2018-12-31                   # 53 dates, 2018-01-05 .. 2018-12-31
 python3 retro/build_unp.py --weekly 2019-01-07 2019-12-31                   # 52 dates, 2019-01-11 .. 2019-12-31
 python3 retro/build_unp.py --weekly 2020-01-06 2020-12-31                   # 52 dates, 2020-01-10 .. 2020-12-31
+python3 retro/build_unp.py --weekly 2021-01-04 2021-12-31                   # 52 dates, 2021-01-08 .. 2021-12-31
+python3 retro/build_unp.py --weekly 2022-01-03 2022-12-31                   # 52 dates, 2022-01-07 .. 2022-12-30
+python3 retro/build_unp.py --weekly 2023-01-02 2023-12-31                   # 52 dates, 2023-01-06 .. 2023-12-29
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2021-01-01 UNP
+python3 retro/tools/firewall.py 2024-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -754,6 +757,84 @@ Seen in the build (method behaviour, not tuned):
   two years: the BASE price falls to $92 against a $176 market, and the class reads RICH at the 91st-100th percentile.
 - **EPS anchors on the last full year again.** FY19's $8.38 stands through 2020 while Q2 2020 EPS fell to $1.67 and Q3
   recovered to $2.01.
+
+### UNP 2021-2023: numeric operating-ratio guides, the first margin step
+
+Every 8-K, 10-Q and release of 2021 to 2023 was read, the 10-Qs searched in full for forward-looking statements.
+Decided before any 2021-2023 date was built or scored:
+
+- **A numeric operating-ratio guide gives the margin step.** Method r2 has always had BASE = revenue guide + guided margin
+  step + buyback; UNP had never guided a number until 2021, so the builder fixed the step at 0. It now reads a numeric guide
+  in either form the company uses: a full-year ratio (`op_ratio_guide`, a range; a point is lo = hi) or an improvement
+  in basis points against a base the company states (`op_ratio_guide_bp`, `op_ratio_guide_base`). The guided margin is 100
+  minus the midpoint, the step is taken from the previous year's margin (from the stated base when it differs from the
+  history: the ACN FY19 rule), and the operating-ratio signal uses the guided step, as in the frozen engine. Words and
+  one-sided bounds still give no step. No earlier guide has these fields, so all 679 earlier models rebuild
+  byte-identical. Each guide line quotes the company's wording beside the encoding (`op_ratio_guide_quote`).
+- **The 2021 guide** is in the transcript of the Q4 2020 call, furnished by 8-K (accepted 2021-01-22 17:21 ET, dated
+  2021-01-25): volume +4% to +6%, and "150 to 200 basis points of operating ratio improvement" against "the 58.5%",
+  2020's adjusted ratio, which is the history's. The FY2020 10-K repeats the volume range. The 8-K of 2021-12-01 lowers
+  both: volume about +4%, the ratio "around 150 basis points" better (the base unrestated, so still 58.5%). The
+  reaffirmations without numbers (8-Ks of 2021-03-02, 03-16, 06-08; the Q1 release) add nothing.
+- **The 2022 guide** starts at the 2021 Investor Day: "a 55.X% operating ratio on a full-year basis in 2022" (8-Ks of
+  2021-05-04 and 2021-05-05), read as the one-decimal values 55.0-55.9; it is a guide for 2022 once 2022 is the current
+  year. The Q1 2022 release gives an "Operating ratio beginning with "55", up from ~55.5%", read as 55.6-55.9 (the values
+  that begin with 55 and are above ~55.5%; the ~55.5% itself was in no earlier filing). The CFO's remarks of 2022-06-07
+  call a "55" ratio "unlikely" but give no new number, so the last numeric range stands until the next one (the FY08 rule,
+  "will change, but the magnitude is somewhat uncertain") and the words go in the guide line. The Q2 2022 release guides
+  "around 58%" and carloads +4% to +5%, the Q3 2022 release "reported operating ratio around 60%" (including the Q3
+  labor-agreement charge) and carloads ~3%.
+- **Releases with a guidance list are guides.** From 2022 the releases carry a bulleted "Guidance" or "Outlook" list; its
+  numbers enter as guides, its volume words as `fy_words`. A release's outlook quote stays its `outlook_short`, as before
+  (the Q2 2020 release's "down around 10 percent or so" was such a sentence). Lists that only maintain the guide (Q1 and Q3
+  2023) add nothing.
+- **2023: words only.** The Q4 2022 release guides "Full year operating ratio improvement" and carloads to "exceed
+  Industrial Production" (its -0.5% forecast is the company's assumption, not a guide); the 8-K of 2023-06-13 says the year's
+  ratio likely "exceeds 2022 levels"; the Q2 2023 release expects volume below Industrial Production. No numeric guide, so
+  no margin step; FY22's $11.21 stands as the current-year EPS from 2023-01-25.
+- **No EPS or revenue guide** in any year (the Investor Day's "low double-digit earnings per share growth CAGR" is a
+  2022-2024 rate, not a current-year range). FY20's adjusted $8.19 stands from 2021-01-22, FY21's $9.95 from 2022-01-21. BASE
+  growth follows the latest quarter's freight revenue: -1% (Q4 2020), -5%, +29%, +12%, +10% (Q4 2021), +17%, +14%, +18%,
+  +9% (Q4 2022), +4%, -5%, -9%. A tax-rate guide (2021: 23-24%, then about 23%) has no input; the tax note says so.
+- **Company-adjusted figures:** Q4 and full-year 2020 exclude the $278M Brazos yard impairment ($2.36 and $8.19, operating
+  ratios 55.6% and 58.5%; GAAP $2.05, $7.88, 61.0%, 59.9%), as published in the Q4 2020 release and again in the Q4 2021
+  release (no 10-K states them). Q3 2022 excludes the $114M labor-agreement charge ($3.19, 58.2%; GAAP $3.05, 59.9%). FY2022
+  has no adjusted figure, so it enters at GAAP $11.21 and 60.1%. Items without an adjusted figure stay in: the 2021 real
+  estate gain and state tax changes, the 2022 Illinois Tollway land sale, the Q1 2023 real estate gain ($107M), the Q2 2023
+  labor expense ($67M) and Nebraska tax benefit ($73M).
+- **The signal takes the change the release publishes,** against the base it names: Q4 2021 against adjusted Q4 2020 (+1.8
+  pt), Q3 2023 against GAAP Q3 2022 (+3.5 pt), the same rule as Q4 2018.
+- **GTMs per employee** stays derived from the published GTMs and "Total employees (average)", as from 2019.
+- **Dividends,** each from the first filing that states it: $1.07 (Q2 2021 release), $1.18 (Q4 2021 release; from 2021 the
+  board declares the fourth-quarter dividend in December, 8-K of 2021-11-12), $1.30 (Q2 2022 release), unchanged through
+  2023.
+- **Three 10-K vintages:** FY2020 (accepted 2021-02-05 16:35 ET, after the close, dated 2021-02-08; selected data
+  2016-2020), FY2021 (2022-02-04 15:59 ET, during the session, dated that day) and FY2022 (2023-02-10 09:42 ET). From FY2021
+  Item 6 is reserved, so each takes its three income-statement years and earlier years from the latest 10-K that reports
+  them (the ACN FY21 rule). First-year diluted shares: 2011's 489.8M (FY2013 10-K, before the 2014 split), 2012's 952.9M
+  (FY2014 10-K), 2013's 931.5M (FY2015 10-K, dated 2016-02-05 by its acceptance time; the earlier U77 entry carries the
+  one-day lag).
+- **A typo in a release:** the Q1 2023 bullet says "first quarter 2022"; its cash flow statement's $575M is Q1 2023. The
+  print's note records it.
+- **No theme encoded.** The 10-Ks keep the climate risk factor; the company's science-based targets (2021-02-10) and net-zero
+  plan (2021-12-06) concern its own emissions. GENAI (live 2022-11-30) and GLP1 (2023-08-08) are scoped to other businesses.
+- **Adds nothing:** the 8-K of 2021-01-08 (preliminary Q4 2020 results, reported two weeks later); the weather and wildfire
+  8-Ks (quarter costs); the accelerated share repurchases; the STB service-recovery filings (2022-06-07, 2022-06-24); the
+  CEO succession 8-Ks (2023-02-27, 2023-07-26: Jim Vena chief executive from 2023-08-14) and the CFO, officer, board, vote,
+  diversity-report and 10b5-1 8-Ks; debt offerings and exchanges; capex figures; the 10-Qs (no outlook beyond capital
+  spending).
+- **ISO weeks:** each year's batch runs from its week 1 (2021-01-04, 2022-01-03, 2023-01-02) to its last trading day in
+  week 52. A 2024 batch starts on 2024-01-01.
+
+Seen in the build (method behaviour, not tuned):
+- **The margin step and the fallback revenue growth together.** BASE growth is the latest quarter's freight revenue plus the
+  guided margin step plus the buyback. In 2021 the Q2 rebound quarter (+29%) set BASE at 37%/yr, so the class read CHEAP
+  from 2021-09-10 to 2021-10-01 at 24.6-25.4x trailing EPS (the 92nd-94th percentile). In 2022 fuel-surcharge-inflated
+  quarters (+14% to +18%) and the guided margin step (+1.75 pt to April, +1.45 pt to July) set BASE at 15-25%/yr: CHEAP
+  on 17 dates and FAIR on 13, even at the 74th-92nd percentile from April to July.
+- **2023 reads CHEAP on the multiple.** With no margin step and BASE at 8.6-13.6%/yr, the class read CHEAP from 2023-01-25
+  to 2023-07-07 (with two FAIR weeks) at 16.8-18.8x, the 18th-47th percentile. It turned RICH on 2023-07-14 as the price rose
+  to $211 (the 48th percentile), and stayed RICH after the Q2 print's -5% freight revenue took BASE to -0.4%/yr.
 
 ## Categories change with the era
 

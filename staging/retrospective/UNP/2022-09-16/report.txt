@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $212.00  ·  RETROSPECTIVE as of 2022-09-16
+  Signal: ◐ WATCHLIST   Ratio B: 1.11x   Adj gap: -0.36  [MODESTLY OVERVALUED]
+  Point-in-time: 16 sources, latest published 2022-09-16; latest print Q2 2022 (Jul 21)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E operating revenue, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Industrial                $     8.8  $   8.8  $   8.9      +0.0      +0.1
+    +12% revenue in Q2
+  Bulk                      $     8.0  $   8.0  $   8.1      +0.0      +0.1
+    +10% revenue in Q2
+  Premium                   $     8.0  $   8.0  $   8.1      +0.0      +0.1
+    +19% revenue in Q2
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    24.8  $  24.8  $  25.1      +0.0      +0.3
+  FY2022E = FY21 $21.80B × (1 + 14.0%: no FY22 revenue guide, Q2 2022 freight revenue); split pro rata to six-month actuals freight revenue
+  Q2 2022 (Jul 21): freight revenue $5.84B +14%; carloads -1%, ARC $2,830 +16%;
+  operating ratio 60.2% (+5.1 pt); EPS $2.93 vs $2.72; GTMs/employee -1%
+  FY22 guide (8-K of 2021-05-04, 8-K of 2021-05-05, Q1 2022 release, 8-K of 2022-06-07, Q2 2022 release): volume +4-5%; operating ratio 58% ('Full year operating ratio around 58%'); operating ratio: 'full year fiscal 2022 operating ratio improvement as compared to full year fiscal 2021 results'; full year in words: 'these same pressures make achievement of the Company's full year operating ratio starting with a '55' unlikely'
+
+  FY2022E EPS check:  ($24.8B × 42.0% − $0.86B net interest) × (1−23.1%) ÷ 0.627B  =  $11.72  (FY2022E: no numeric EPS guide yet, FY21's $9.95 stands $9.95)
+  FY2024E BEAR check: ($24.8B × 42.0% − interest) ÷ 0.575B  =  $12.79  (scenario $8.49)
+  FY2024E BULL check: ($25.1B × 42.4% − interest) ÷ 0.575B  =  $13.09  (scenario $13.47)
+  Every 1pp of operating margin ≈ $0.30 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     -1.0%  ◦ BASE  ██░░
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%    +16.0%  ★ XBULL  ████
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%    +14.0%  ★ XBULL  ████
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     -1.0%  ⚠ BEAR  █░░░
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    +0.8pt  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.40 / 4.00
+  Market composite:   2.77 / 4.00  (back-solved from $212 + 15% hurdle)
+  SCA adjustment:    +0.11  ·  EPP-distance adj -0.10  →  Adj composite 2.41  →  Gap -0.36  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 operating ratio 57.2%, revenue +12% on carloads +4%; Q2 revenue per car +16%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.3x FY22E vs a 18.9x 10-yr median (77th percentile of its own range)  (-0.45 × 25%  =  -0.113)
+    +  Growth vs own history: no FY22 revenue guide, Q2 2022 freight revenue +14% vs a 5.0% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash $0.79B, FY21 free cash flow $3.52B, 3.1M shares repurchased in Q2 2022 ($722M)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              -1.0%     -6.0%   -5.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth          +16.0%     -2.0%  -18.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth              +14.0%     -8.0%  -22.0%  Volume and price turn down together
+  GTMs per employee growth             -1.0%     -6.0%   -5.0%  Volume falls faster than crews are cut
+  Operating ratio change              +0.8pt    +2.0pt  +1.2pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$169  (model)  /  $132 (defined)
+  Bear probability (proxy model):  11.1%
+
+  KEY TRIGGER: carloads went from +4% (Q1 2022) to -1% (Q2 2022);
+  the bear case needs a volume recession that pricing (revenue per car +16% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $9.95  (FY2022E: no numeric EPS guide yet, FY21's $9.95 stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2012 14.2x, 2013 13.6x, 2014 14.4x, 2015 13.7x, 2016 13.6x, 2017 17.5x, 2018 15.7x, 2019 15.8x, 2020 13.9x, 2021 19.5x, 2022 20.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $139/share
+  Current $212 vs Updated EPP $139:  +52%  ⚠ far above floor — large drawdown room
+  Bear $132 vs Updated EPP $139:  -5%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0       +0.0   BASE floor (vs -1 now)
+  Avg revenue per car growth                   2.0      -14.0   BASE floor (vs +16 now)
+  Freight revenue growth                       1.0      -13.0   BASE floor (vs +14 now)
+  GTMs per employee growth                     0.0       +1.0   BASE floor (vs -1 now)
+  Operating ratio change                       0.0       -0.8   BASE floor (vs +1 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $9.95 × (1+14.3%)² = $13.01
+  At 18x P/E (conservative):  $234/share
+  + Cumul. dividends (2yr):  +$10.71/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $234  (▲22 from $212)
+  Conservative total return:  +16% over 2yr  = +8%/yr
+
+  14.3% EPS growth is what is left once the premium multiple (21.3x)
+  mean-reverts to 18x. Breakeven at 18x needs FY2024E EPS of $11.18,
+  i.e. 6.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $195.68  –  $278.94  (at 20th pct of range)
+  Annual dividend:      $5.20/share  (yield 2.5%)
+  Realized vol (1yr):   24% annualized
+  Beta vs broad market: 0.64
+  1-sigma range (1yr):  $162  –  $262  ($212 ± 24%)
+  2-sigma range (1yr):  $111  –  $313
+  ────────────────────────────────────────────────────────────
+  Bear $132 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 0.6 beta: the stock is +8% off its September
+  low while carloads went from +4% (Q1 2022) to -1% (Q2 2022).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        8.49  15.5x  $    132    11.1%      5.2%    +5.9pp  EPS -7.7%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE       13.47  18.9x  $    255    38.8%     18.2%   +20.5pp  EPS +16.3%/yr (Q2 2022 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       13.47  21.1x  $    284    42.1%     63.7%   -21.5pp  EPS +16.3%/yr (FY12-FY21 CAGR); P/E holds its 75th pct
+  XBULL      15.52  23.1x  $    359     8.0%     12.9%    -4.9pp  EPS +24.9%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct
+
+  Proxy EV (2yr): $262  /  Market EV: $280  /  Current: $212
+  Conservative EV (2yr, ④): $234 + $10.71 divs = $245 total value
+  Downside (→ Bear $132): 37.7%   Upside (→ Bull $284): 34.0%   Ratio B 1.11x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $212 the market needs $280 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.77 against a model
+  read of 2.41: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.11x     +52%    -0.36  MODESTLY OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.69x     +52%    +0.19  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.02x     +52%    -0.88  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.94x     +52%    -0.18  FAIRLY VALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.31x     +52%    -0.56  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.11x     +52%    -0.06  FAIRLY VALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.11x     +25%    -0.26  MODESTLY OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.11x     +52%    +0.10  FAIRLY VALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2022 print (late October) — the next read on carloads (-1% now) and the guide
+  (2) Revenue per car — +16% in Q2 2022: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY22 EPS guide — none; the company guides the operating ratio 58% ('Full year operating ratio around 58%')
+  (4) Operating ratio — 60.2% in Q2 2022 (+5.1 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 21x — management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $139  |  ADD below ~$217  |  TRIM above $284
+════════════════════════════════════════════════════════════════════════
+

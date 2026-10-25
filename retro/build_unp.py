@@ -155,6 +155,20 @@ def build(as_of, facts, raw, spx, engine, out):
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
     ge, gr, gv = stated("eps_guide"), stated("rev_guide"), stated("volume_guide")
+    # a numeric operating-ratio guide is one field in either form: a full-year ratio (op_ratio_guide, a range; a point is
+    # lo = hi) or an improvement in basis points against the base the company states (op_ratio_guide_bp, _base)
+    gor = next((g for g in reversed(guides) if "op_ratio_guide" in g or "op_ratio_guide_bp" in g), None)
+    if gor and "op_ratio_guide" in gor:
+        lo, hi = gor["op_ratio_guide"]
+        or_mid = (lo + hi) / 2
+        fmt = "g" if lo == int(lo) and hi == int(hi) else ".1f"
+        or_label = f"operating ratio {lo:{fmt}}%" if lo == hi else f"operating ratio {lo:{fmt}}-{hi:{fmt}}%"
+    elif gor:
+        lo, hi = gor["op_ratio_guide_bp"]
+        or_mid = gor["op_ratio_guide_base"] - (lo + hi) / 2 / 100
+        or_label = f"operating ratio {lo:g}{'' if lo == hi else f'-{hi:g}'} bp better than {gor['op_ratio_guide_base']:g}%"
+    if gor:
+        or_label += f" ('{gor['op_ratio_guide_quote']}')"
     if ge:
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} EPS, guide midpoint"
@@ -175,14 +189,20 @@ def build(as_of, facts, raw, spx, engine, out):
                 [f"revenue in words ('{g['rev_guide_text']}')" for g in [stated("rev_guide_text")] if g]) + \
                ([f"volume {pct_range(*gv['volume_guide'])}"] if gv else []) + \
                [f"fuel +{g['fuel_guide_pct'][0]}-{g['fuel_guide_pct'][1]}%" for g in [stated("fuel_guide_pct")] if g] + \
+               ([or_label] if gor else []) + \
                [f"operating ratio: '{g['op_ratio_guide_text']}'" for g in [stated("op_ratio_guide_text")] if g] + \
                ([f"{gq['quarter'][:2]} EPS ${money(gq['range'][0])}-{money(gq['range'][1])} ({gq['note']})"] if gq else []) + \
                [f"full year in words: '{g['fy_words']}'" for g in [stated("fy_words")] if g]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     if not guides or not bits:               # nothing to quote (a quarter guide whose quarter is reported counts as none)
         guide_text = f"{fy_now}: no numeric guide yet; the {latest['quarter']} release in words: '{latest['outlook_short']}'"
-    # no numeric operating-ratio guide in any UNP guide so far: no margin step (words and one-sided bounds are not ranges)
-    margin_guided, fy_margin_base = False, h["prev_fy_op_margin"]
+    # a numeric operating-ratio guide gives the guided margin step (method r2); words and one-sided bounds give none, and the
+    # signal then uses the latest quarter's change. A basis-point guide steps from the base the company states: when that
+    # base differs from the history's ratio, it is the previous year's margin (the ACN rule for a restated base)
+    margin_guided = bool(gor)
+    fy_margin_base = round(100 - or_mid, 3) if gor else h["prev_fy_op_margin"]
+    or_base = gor.get("op_ratio_guide_base") if gor else None
+    prev_margin = round(100 - or_base, 3) if or_base is not None and or_base != h["prev_fy_op_ratio"] else h["prev_fy_op_margin"]
 
     # ── dividend: the latest declared rate ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
@@ -228,6 +248,7 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme has dated evidence"
     cat3 = (f"(3) {fy_now} EPS guide ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}"
             + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "") if ge else
+            f"(3) A numeric {fy_now} EPS guide — none; the company guides the {or_label}" if gor else
             f"(3) A numeric {fy_now} guide — the {latest['quarter']} release gives words only ('{latest['outlook_short']}')")
     cat4 = (f"(4) Operating ratio — {latest['op_ratio']}% in {latest['quarter']} ({latest['op_ratio_pt']:+.1f} pt): "
             "where the fuel-surcharge lag and fixed costs would show first")
@@ -310,7 +331,7 @@ EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}{"; " + h["split
 REVENUE_HIST  = {R(rev)}   # operating revenue, USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
-PREV_FY_MARGIN = {h["prev_fy_op_margin"]}   # operating margin; operating ratio {h["prev_fy_op_ratio"]}%
+PREV_FY_MARGIN = {prev_margin}   # operating margin; operating ratio {h["prev_fy_op_ratio"]}%{f" (the guide's base {or_base:g}%)" if prev_margin != h["prev_fy_op_margin"] else ""}
 TAX_RATE      = {h["tax_rate"]}   # {h["tax_note"]}
 NET_INTEREST_B = {h["net_interest_b"]}   # interest expense less other income, {h["net_interest_note"]}
 CONS_DIVIDEND = {dividend:.2f}   # {dividend_note}
@@ -326,7 +347,7 @@ EPS_LABEL       = {R(eps_label)}
 FWD_GUIDE       = {R(tuple(fwd))}   # {"numeric revenue guide" if gr else "no numeric revenue guide: the latest quarter's commodity revenue growth"}
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fy_now)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
-MARGIN_GUIDED   = {margin_guided}   # False: no numeric operating-ratio guide, so no guided step; the signal uses the latest quarter's change
+MARGIN_GUIDED   = {margin_guided}   # {"True: numeric operating-ratio guide, so BASE adds the guided margin step and the signal uses it" if margin_guided else "False: no numeric operating-ratio guide, so no guided step; the signal uses the latest quarter's change"}
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {rev[max(rev)] * (1 + sum(fwd) / 2 / 100):.2f}
 SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}

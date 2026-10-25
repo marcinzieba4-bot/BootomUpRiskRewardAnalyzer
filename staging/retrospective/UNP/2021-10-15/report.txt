@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $225.16  ·  RETROSPECTIVE as of 2021-10-15
+  Signal: ◐ WATCHLIST   Ratio B: 1.40x   Adj gap: +0.61  [UNDERVALUED]
+  Point-in-time: 14 sources, latest published 2021-10-15; latest print Q2 2021 (Jul 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E operating revenue, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Industrial                $     9.1  $   9.1  $   9.1      +0.0      +0.0
+    +24% revenue in Q2
+  Bulk                      $     8.1  $   8.1  $   8.1      +0.0      +0.0
+    +19% revenue in Q2
+  Premium                   $     8.0  $   8.0  $   8.0      +0.0      +0.0
+    +50% revenue in Q2
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    25.2  $  25.2  $  25.2      +0.0      +0.0
+  FY2021E = FY20 $19.53B × (1 + 29.0%: no FY21 revenue guide, Q2 2021 freight revenue); split pro rata to six-month actuals freight revenue
+  Q2 2021 (Jul 22): freight revenue $5.13B +29%; carloads +22%, ARC $2,449 +6%;
+  operating ratio 55.1% (-5.9 pt); EPS $2.72 vs $1.67; GTMs/employee +22%
+  FY21 guide (transcript 8-K of 2021-01-22, FY2020 10-K): volume +4-6%; operating ratio 150-200 bp better than 58.5% ('in the range of 150 to 200 basis points of operating ratio improvement in 2021')
+
+  FY2021E EPS check:  ($25.2B × 43.2% − $0.85B net interest) × (1−23.4%) ÷ 0.660B  =  $11.66  (FY2021E: no numeric EPS guide yet, FY20's $8.19 stands $8.19)
+  FY2023E BEAR check: ($25.2B × 43.2% − interest) ÷ 0.606B  =  $12.69  (scenario $6.98)
+  FY2023E BULL check: ($25.2B × 43.6% − interest) ÷ 0.606B  =  $12.82  (scenario $15.42)
+  Every 1pp of operating margin ≈ $0.29 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%    +22.0%  ★ XBULL  ████
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%     +6.0%  ▲ BULL  ███░
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%    +29.0%  ★ XBULL  ████
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%    +22.0%  ★ XBULL  ████
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    -1.8pt  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.35 / 4.00
+  Market composite:   2.64 / 4.00  (back-solved from $225 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 3.25  →  Gap +0.61  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 operating ratio 58.5%, revenue -10% on carloads -7%; Q2 revenue per car +6%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.5x FY21E vs a 18.3x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY21 revenue guide, Q2 2021 freight revenue +29% vs a 5.0% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash $1.11B, FY20 free cash flow $3.24B, 12.2M shares repurchased in Q2 2021 ($2.7B)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth             +22.0%     -6.0%  -28.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth           +6.0%     -2.0%   -8.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth              +29.0%     -8.0%  -37.0%  Volume and price turn down together
+  GTMs per employee growth            +22.0%     -6.0%  -28.0%  Volume falls faster than crews are cut
+  Operating ratio change              -1.8pt    +2.0pt  +3.8pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$155  (model)  /  $102 (defined)
+  Bear probability (proxy model):  3.0%
+
+  KEY TRIGGER: carloads went from -1% (Q1 2021) to +22% (Q2 2021);
+  the bear case needs a volume recession that pricing (revenue per car +6% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.19  (FY2021E: no numeric EPS guide yet, FY20's $8.19 stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2011 13.3x, 2012 12.7x, 2013 13.6x, 2014 14.4x, 2015 13.7x, 2016 13.6x, 2017 17.5x, 2018 15.7x, 2019 15.8x, 2020 13.9x, 2021 23.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $106/share
+  Current $225 vs Updated EPP $106:  +111%  ⚠ far above floor — large drawdown room
+  Bear $102 vs Updated EPP $106:  -4%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0      -23.0   BASE floor (vs +22 now)
+  Avg revenue per car growth                   2.0       -4.0   BASE floor (vs +6 now)
+  Freight revenue growth                       1.0      -28.0   BASE floor (vs +29 now)
+  GTMs per employee growth                     0.0      -22.0   BASE floor (vs +22 now)
+  Operating ratio change                       0.0       +1.8   BASE floor (vs -2 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.19 × (1+35.2%)² = $14.97
+  At 18x P/E (conservative):  $269/share
+  + Cumul. dividends (2yr):  +$8.82/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $269  (▲44 from $225)
+  Conservative total return:  +24% over 2yr  = +12%/yr
+
+  35.2% EPS growth is what is left once the premium multiple (27.5x)
+  mean-reverts to 18x. Breakeven at 18x needs FY2023E EPS of $12.02,
+  i.e. 21.1%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $171.50  –  $231.26  (at 90th pct of range)
+  Annual dividend:      $4.28/share  (yield 1.9%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 0.99
+  1-sigma range (1yr):  $173  –  $277  ($225 ± 23%)
+  2-sigma range (1yr):  $122  –  $329
+  ────────────────────────────────────────────────────────────
+  Bear $102 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 1.0 beta: the stock is +30% off its October
+  low while carloads went from -1% (Q1 2021) to +22% (Q2 2021).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        6.98  14.6x  $    102     3.0%      6.9%    -3.9pp  EPS -7.7%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE       15.42  18.3x  $    282    10.4%     24.0%   -13.7pp  EPS +37.2%/yr (Q2 2021 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       15.42  20.3x  $    313    36.2%     58.1%   -21.9pp  EPS +37.2%/yr (FY11-FY20 CAGR); P/E holds its 75th pct
+  XBULL      15.42  24.1x  $    372    50.5%     11.0%   +39.5pp  EPS +37.2%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct
+
+  Proxy EV (2yr): $333  /  Market EV: $298  /  Current: $225
+  Conservative EV (2yr, ④): $269 + $8.82 divs = $278 total value
+  Downside (→ Bear $102): 54.7%   Upside (→ Bull $313): 39.0%   Ratio B 1.40x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $225 the market needs $298 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.64 against a model
+  read of 3.25: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.40x    +111%    +0.61  UNDERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.76x    +111%    +1.17  UNDERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     2.25x    +111%    -0.33  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.24x    +111%    +0.75  UNDERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.60x    +111%    +0.40  MODESTLY UNDERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.40x    +111%    +0.91  UNDERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.40x     +72%    +0.71  UNDERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.40x    +111%    +1.00  UNDERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2021 print (late October) — the next read on carloads (+22% now) and the guide
+  (2) Revenue per car — +6% in Q2 2021: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY21 EPS guide — none; the company guides the operating ratio 150-200 bp better than 58.5% ('in the range of 150 to 200 basis points of operating ratio improvement in 2021')
+  (4) Operating ratio — 55.1% in Q2 2021 (-5.9 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 27x — management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $106  |  ADD below ~$240  |  TRIM above $313
+════════════════════════════════════════════════════════════════════════
+

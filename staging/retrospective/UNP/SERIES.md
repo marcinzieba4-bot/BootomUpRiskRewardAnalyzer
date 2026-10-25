@@ -683,3 +683,159 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2020-12-18 | $203.60 | Union Pacific Corporation Q3 2020 results | 1.75 | -2.38 | 19.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.8% | +0.8pp | +11.9% | ✗ |
 | 2020-12-24 | $203.39 | Union Pacific Corporation Q3 2020 results | 1.75 | -2.38 | 18.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.8% | +0.8pp | +11.7% | ✗ |
 | 2020-12-31 | $208.22 | Union Pacific Corporation Q3 2020 results | 1.75 | -2.38 | 137.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.9% | -1.6pp | +8.8% | ✓ |
+| 2021-01-08 | $218.82 | Union Pacific Corporation Q3 2020 results | 1.75 | -2.30 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-15 | $216.60 | Union Pacific Corporation Q3 2020 results | 1.75 | -2.20 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-22 | $207.13 | Union Pacific Corporation Q4 2020 results | 2.45 | -1.68 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-29 | $197.47 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.70 | 27.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-05 | $204.20 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-12 | $213.16 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-19 | $209.06 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-26 | $205.96 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-05 | $209.71 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-12 | $214.09 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-19 | $210.80 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-26 | $222.92 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-01 | $220.21 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-09 | $223.24 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-16 | $222.71 | Union Pacific Corporation Q4 2020 results | 2.30 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-23 | $223.54 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-30 | $222.09 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-07 | $229.48 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-14 | $227.86 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-21 | $221.52 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-28 | $224.73 | Union Pacific Corporation Q1 2021 results | 2.10 | -2.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-04 | $226.17 | Union Pacific Corporation Q1 2021 results | 2.10 | -2.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-11 | $221.33 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-18 | $214.81 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-25 | $221.27 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-07-02 | $224.72 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-07-09 | $221.69 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-07-16 | $218.42 | Union Pacific Corporation Q1 2021 results | 2.10 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-07-23 | $220.15 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.63 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-07-30 | $218.76 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.66 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-08-06 | $220.50 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.64 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-08-13 | $227.80 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.42 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-08-20 | $223.71 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.58 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-08-27 | $221.43 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.64 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-09-03 | $214.91 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.78 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-09-10 | $207.76 | Union Pacific Corporation Q2 2021 results | 3.35 | +1.03 | 1.03x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-09-17 | $201.47 | Union Pacific Corporation Q2 2021 results | 3.35 | +1.17 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-09-24 | $203.80 | Union Pacific Corporation Q2 2021 results | 3.35 | +1.13 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-10-01 | $201.74 | Union Pacific Corporation Q2 2021 results | 3.35 | +1.18 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-10-08 | $216.48 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.78 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-10-15 | $225.16 | Union Pacific Corporation Q2 2021 results | 3.35 | +0.61 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-10-22 | $237.59 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.70 | 56.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-29 | $241.40 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-05 | $238.83 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | 63.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-12 | $242.44 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-19 | $241.31 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-26 | $239.79 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | 113.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-03 | $240.43 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-10 | $248.46 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-17 | $242.69 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-23 | $245.64 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-31 | $251.93 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-07 | $254.78 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-14 | $246.27 | Union Pacific Corporation Q3 2021 results | 3.15 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-21 | $246.33 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.02 | 3.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-01-28 | $245.93 | Union Pacific Corporation Q4 2021 results | 2.65 | -0.98 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-02-04 | $242.39 | Union Pacific Corporation Q4 2021 results | 2.65 | -0.88 | 2.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-02-11 | $238.81 | Union Pacific Corporation Q4 2021 results | 2.65 | -0.80 | 2.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-02-18 | $251.19 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.10 | 3.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-25 | $246.41 | Union Pacific Corporation Q4 2021 results | 2.65 | -0.96 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-03-04 | $264.63 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.10 | 6.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-11 | $261.52 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.10 | 5.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-18 | $261.32 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.10 | 5.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-25 | $273.38 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.10 | 10.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-04-01 | $259.96 | Union Pacific Corporation Q4 2021 results | 2.65 | -1.12 | 4.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-04-08 | $241.98 | Union Pacific Corporation Q4 2021 results | 2.65 | -0.82 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-14 | $246.21 | Union Pacific Corporation Q4 2021 results | 2.65 | -0.92 | 2.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-22 | $234.30 | Union Pacific Corporation Q1 2022 results | 3.55 | +0.66 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2022-04-29 | $234.29 | Union Pacific Corporation Q1 2022 results | 3.55 | +0.72 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-05-06 | $229.59 | Union Pacific Corporation Q1 2022 results | 3.55 | +0.90 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-05-13 | $230.76 | Union Pacific Corporation Q1 2022 results | 3.55 | +0.88 | 1.15x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-05-20 | $213.58 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.27 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-05-27 | $222.50 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.07 | 0.97x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-06-03 | $224.00 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.05 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-06-10 | $211.12 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.34 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-06-17 | $206.45 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.47 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-06-24 | $215.78 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.23 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-07-01 | $215.26 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.25 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-07-08 | $209.70 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.39 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-07-15 | $209.13 | Union Pacific Corporation Q1 2022 results | 3.55 | +1.41 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-07-22 | $213.40 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.48 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-07-29 | $227.30 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.80 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-05 | $228.62 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.83 | 1.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-12 | $239.95 | Union Pacific Corporation Q2 2022 results | 2.40 | -1.03 | 2.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-19 | $238.52 | Union Pacific Corporation Q2 2022 results | 2.40 | -1.00 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-26 | $231.27 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.86 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-09-02 | $223.94 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.71 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2022-09-09 | $231.88 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.86 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-09-16 | $212.00 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.36 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-09-23 | $203.97 | Union Pacific Corporation Q2 2022 results | 2.40 | -0.09 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-09-30 | $194.82 | Union Pacific Corporation Q2 2022 results | 2.40 | +0.26 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-07 | $195.62 | Union Pacific Corporation Q2 2022 results | 2.40 | +0.15 | 0.72x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2022-10-14 | $193.79 | Union Pacific Corporation Q2 2022 results | 2.40 | +0.30 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-21 | $190.53 | Union Pacific Corporation Q3 2022 results | 2.75 | +0.66 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-28 | $198.65 | Union Pacific Corporation Q3 2022 results | 2.75 | +0.34 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-11-04 | $196.70 | Union Pacific Corporation Q3 2022 results | 2.75 | +0.41 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-11-11 | $217.50 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.26 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-11-18 | $210.58 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.05 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-11-25 | $213.33 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.14 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-02 | $214.73 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.19 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-09 | $211.35 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.08 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-16 | $210.21 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.02 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-23 | $209.91 | Union Pacific Corporation Q3 2022 results | 2.75 | +0.00 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-30 | $207.07 | Union Pacific Corporation Q3 2022 results | 2.75 | +0.21 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2023-01-06 | $212.01 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.07 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-01-13 | $213.23 | Union Pacific Corporation Q3 2022 results | 2.75 | -0.12 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-01-20 | $208.66 | Union Pacific Corporation Q3 2022 results | 2.75 | +0.16 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2023-01-25 | $200.12 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.40 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-02-03 | $210.29 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.09 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-02-10 | $205.50 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.24 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-02-17 | $201.59 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.36 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-02-24 | $194.02 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.59 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-03-03 | $209.36 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.11 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-03-10 | $196.06 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.55 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-03-17 | $190.01 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.69 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-03-24 | $188.51 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.71 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-03-31 | $201.26 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.37 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-04-06 | $198.64 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.46 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-04-14 | $198.53 | Union Pacific Corporation Q4 2022 results | 2.25 | +0.47 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-04-21 | $198.85 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-04-28 | $195.70 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.22 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-05-05 | $201.23 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.38 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-05-12 | $198.99 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-05-19 | $198.97 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-05-26 | $193.10 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.15 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-06-02 | $198.66 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-06-09 | $199.67 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.33 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-06-16 | $204.67 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.47 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | - | - |
+| 2023-06-23 | $199.89 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.33 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-06-30 | $204.62 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.47 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | - | - |
+| 2023-07-07 | $202.82 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.42 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-07-14 | $210.99 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.67 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2023-07-21 | $216.78 | Union Pacific Corporation Q1 2023 results | 1.90 | -0.87 | 0.92x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2023-07-27 | $232.10 | Union Pacific Corporation Q2 2023 results | 1.15 | -2.09 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-08-04 | $228.53 | Union Pacific Corporation Q2 2023 results | 1.15 | -2.03 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-08-11 | $229.49 | Union Pacific Corporation Q2 2023 results | 1.15 | -2.04 | 1.37x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-08-18 | $225.26 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.96 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-08-25 | $224.18 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.93 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-09-01 | $221.03 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.87 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-09-08 | $211.80 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.64 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-09-15 | $213.32 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.69 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-09-22 | $209.24 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.55 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-09-29 | $203.63 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.41 | 0.60x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-10-06 | $202.46 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.37 | 0.58x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-10-13 | $207.75 | Union Pacific Corporation Q2 2023 results | 1.15 | -1.51 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-10-20 | $211.34 | Union Pacific Corporation Q3 2023 results | 1.15 | -1.67 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-10-27 | $201.72 | Union Pacific Corporation Q3 2023 results | 1.15 | -1.41 | 0.55x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-11-03 | $212.13 | Union Pacific Corporation Q3 2023 results | 1.15 | -1.70 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-11-10 | $211.49 | Union Pacific Corporation Q3 2023 results | 1.15 | -1.68 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-11-17 | $219.21 | Union Pacific Corporation Q3 2023 results | 1.15 | -1.87 | 0.98x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-11-24 | $224.28 | Union Pacific Corporation Q3 2023 results | 1.15 | -1.96 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-01 | $231.37 | Union Pacific Corporation Q3 2023 results | 1.15 | -2.10 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-08 | $229.77 | Union Pacific Corporation Q3 2023 results | 1.15 | -2.07 | 1.37x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-15 | $241.98 | Union Pacific Corporation Q3 2023 results | 1.15 | -2.36 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-22 | $243.58 | Union Pacific Corporation Q3 2023 results | 1.15 | -2.37 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-29 | $245.62 | Union Pacific Corporation Q3 2023 results | 1.15 | -2.39 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
