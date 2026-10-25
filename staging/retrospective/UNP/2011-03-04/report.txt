@@ -1,0 +1,156 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $95.36  ·  RETROSPECTIVE as of 2011-03-04
+  Signal: ◐ WATCHLIST   Ratio B: 1.52x   Adj gap: +1.31  [UNDERVALUED]
+  Point-in-time: 11 sources, latest published 2011-03-04; latest print Q4 2010 (Jan 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2011E operating revenue, USD bn  →  FY2013E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2011E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Energy                    $     4.3  $   4.3  $   4.8      +0.0      +0.5
+    +16% revenue in Q4
+  Intermodal                $     4.0  $   4.0  $   4.4      +0.0      +0.4
+    +25% revenue in Q4
+  Agricultural              $     3.8  $   3.8  $   4.2      +0.0      +0.4
+    +14% revenue in Q4
+  Industrial Products       $     3.3  $   3.3  $   3.6      +0.0      +0.3
+    +27% revenue in Q4
+  Chemicals                 $     3.0  $   3.0  $   3.3      +0.0      +0.3
+    +14% revenue in Q4
+  Automotive                $     1.6  $   1.6  $   1.7      +0.0      +0.1
+    +7% revenue in Q4
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    20.0  $  20.0  $  22.0      +0.0      +2.0
+  FY2011E = FY10 $16.96B × (1 + 18.0%: no FY11 revenue guide, Q4 2010 freight revenue); split pro rata to full-year 2010 actuals freight revenue
+  Q4 2010 (Jan 20): freight revenue $4.17B +18%; carloads +9%, ARC $1,865 +8%;
+  operating ratio 70.2% (-3.2 pt); EPS $1.56 vs $1.08; GTMs/employee +6%
+  FY11: no numeric guide yet; the Q4 2010 release in words: 'we are encouraged by signs of a slowly strengthening economy'
+
+  FY2011E EPS check:  ($20.0B × 29.4% − $0.55B net interest) × (1−37.3%) ÷ 0.496B  =  $6.74  (FY2011E: no numeric EPS guide yet, FY10's $5.53 stands $5.53)
+  FY2013E BEAR check: ($20.0B × 29.4% − interest) ÷ 0.488B  =  $6.86  (scenario $2.79)
+  FY2013E BULL check: ($22.0B × 29.8% − interest) ÷ 0.488B  =  $7.72  (scenario $7.81)
+  Every 1pp of operating margin ≈ $0.25 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     +9.0%  ★ XBULL  ████
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%     +8.0%  ★ XBULL  ████
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%    +18.0%  ★ XBULL  ████
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     +6.0%  ★ XBULL  ████
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    -3.2pt  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.70 / 4.00
+  Market composite:   2.42 / 4.00  (back-solved from $95 + 15% hurdle)
+  SCA adjustment:    +0.12  ·  EPP-distance adj -0.10  →  Adj composite 3.73  →  Gap +1.31  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY10 operating ratio 70.6%, revenue +20% on carloads +13%; Q4 revenue per car +8%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 17.2x FY11E vs a 15.2x 10-yr median (74th percentile of its own range)  (-0.40 × 25%  =  -0.100)
+    +  Growth vs own history: no FY11 revenue guide, Q4 2010 freight revenue +18% vs a 5.7% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash $1.09B, FY10 free cash flow $1.42B, more than 16.6M shares repurchased in 2010 (about $1.25B), more than 2.5M of them in Q4 2010  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              +9.0%     -6.0%  -15.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth           +8.0%     -2.0%  -10.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth              +18.0%     -8.0%  -26.0%  Volume and price turn down together
+  GTMs per employee growth             +6.0%     -6.0%  -12.0%  Volume falls faster than crews are cut
+  Operating ratio change              -3.2pt    +2.0pt  +5.2pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$60  (model)  /  $35 (defined)
+  Bear probability (proxy model):  1.4%
+
+  KEY TRIGGER: carloads went from +14% (Q3 2010) to +9% (Q4 2010);
+  the bear case needs a volume recession that pricing (revenue per car +8% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.53  (FY2011E: no numeric EPS guide yet, FY10's $5.53 stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2001 12.3x, 2002 11.5x, 2003 12.6x, 2004 19.1x, 2005 17.2x, 2006 13.4x, 2007 13.1x, 2008 9.5x, 2009 9.0x, 2010 10.9x, 2011 16.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $66/share
+  Current $95 vs Updated EPP $66:  +44%  ⚠ far above floor — large drawdown room
+  Bear $35 vs Updated EPP $66:  -47%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0      -10.0   BASE floor (vs +9 now)
+  Avg revenue per car growth                   2.0       -6.0   BASE floor (vs +8 now)
+  Freight revenue growth                       1.0      -17.0   BASE floor (vs +18 now)
+  GTMs per employee growth                     0.0       -6.0   BASE floor (vs +6 now)
+  Operating ratio change                       0.0       +3.2   BASE floor (vs -3 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.53 × (1+16.9%)² = $7.55
+  At 15x P/E (conservative):  $113/share
+  + Cumul. dividends (2yr):  +$3.13/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $113  (▲18 from $95)
+  Conservative total return:  +22% over 2yr  = +11%/yr
+
+  16.9% EPS growth is what is left once the premium multiple (17.2x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2013E EPS of $6.15,
+  i.e. 5.4%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $65.99  –  $99.50  (at 88th pct of range)
+  Annual dividend:      $1.52/share  (yield 1.6%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 1.19
+  1-sigma range (1yr):  $71  –  $120  ($95 ± 25%)
+  2-sigma range (1yr):  $47  –  $144
+  ────────────────────────────────────────────────────────────
+  Bear $35 requires:  ~2.5σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 1.2 beta: the stock is +41% off its July
+  low while carloads went from +14% (Q3 2010) to +9% (Q4 2010).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.79  12.4x  $     35     1.4%     10.7%    -9.3pp  EPS -29.0%/yr (worst year FY01-FY10, capped at 0%); P/E to its 10th pct
+  BASE        7.81  15.2x  $    119     4.9%     37.5%   -32.6pp  EPS +18.9%/yr (Q4 2010 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        7.81  17.3x  $    135    17.1%     43.6%   -26.5pp  EPS +18.9%/yr (FY01-FY10 CAGR); P/E holds its 75th pct
+  XBULL      11.25  20.3x  $    228    76.6%      8.2%   +68.4pp  EPS +42.6%/yr (best 2-yr run FY01-FY10); P/E at its 90th pct
+
+  Proxy EV (2yr): $204  /  Market EV: $126  /  Current: $95
+  Conservative EV (2yr, ④): $113 + $3.13 divs = $116 total value
+  Downside (→ Bear $35): 63.3%   Upside (→ Bull $135): 41.6%   Ratio B 1.52x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $95 the market needs $126 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.42 against a model
+  read of 3.73: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.52x     +44%    +1.31  UNDERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.90x     +44%    +1.74  UNDERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     2.64x     +44%    +0.83  UNDERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.36x     +44%    +1.39  UNDERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.72x     +44%    +1.21  UNDERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.52x     +44%    +1.61  UNDERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.52x     +15%    +1.41  UNDERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.52x     +44%    +1.58  UNDERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2011 print (late April) — the next read on carloads (+9% now) and the guide
+  (2) Revenue per car — +8% in Q4 2010: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY11 guide — the Q4 2010 release gives words only ('we are encouraged by signs of a slowly strengthening economy')
+  (4) Operating ratio — 70.2% in Q4 2010 (-3.2 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 17x — management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $66  |  ADD below ~$101  |  TRIM above $135
+════════════════════════════════════════════════════════════════════════
+

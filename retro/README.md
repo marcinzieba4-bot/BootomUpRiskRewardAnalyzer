@@ -289,12 +289,14 @@ python3 retro/build_unp.py --weekly 2008-01-01 2008-03-30                   # 13
 python3 retro/build_unp.py --weekly 2008-03-31 2008-12-31                   # 40 dates, 2008-04-04 .. 2008-12-31
 python3 retro/build_unp.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
 python3 retro/build_unp.py --weekly 2010-01-04 2010-12-31                   # 52 dates, 2010-01-08 .. 2010-12-31
+python3 retro/build_unp.py --weekly 2011-01-03 2011-12-31                   # 52 dates, 2011-01-07 .. 2011-12-30
+python3 retro/build_unp.py --weekly 2012-01-02 2012-12-31                   # 53 dates, 2012-01-06 .. 2012-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2011-01-01 UNP
+python3 retro/tools/firewall.py 2013-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -449,6 +451,53 @@ Seen in the build (method behaviour, not tuned):
 - **The BEAR price stays near $24** (the 2004 year applied twice).
 - **A labelling quirk inherited from the ACN engine.** When BASE exceeds the decade CAGR, BULL takes BASE's value
   but the text still says "CAGR".
+
+### UNP 2011-2012: two 10-K vintages, an after-close release, Energy renamed Coal
+
+Every 8-K, 10-Q and release of 2011 and 2012 was read, the 10-Qs searched in full for forward-looking statements.
+Decided before any 2011 or 2012 date was built or scored:
+
+- **No numeric guide in either year.** The FY2010 10-K's 2011 Outlook ("anticipate volume to increase from 2010
+  levels", operating ratio improvement), the FY2011 10-K's 2012 Outlook (volume growth "that will exceed 2011
+  levels", "earnings that exceed 2011 earnings") and all eight releases give words only. "Exceed 2011 earnings" is a
+  one-sided bound, like FY07's "below 80%", not a range. From each Q4 print the year just reported stands as the
+  current-year EPS: FY10's $5.53 from 2011-01-21, FY11's $6.72 from 2012-01-20. BASE growth and the growth factor
+  follow the latest quarter's freight revenue: +18% (Q4 2010), +13%, +16%, +16%, +16% (Q4 2011), +14%, +7%, +4%.
+- **Two 10-K vintages.** The FY2010 10-K (filed 2011-02-04 after the close, dated 2011-02-07) gives 2006-2010. The
+  FY2011 10-K (filed 2012-02-03 after the close, dated 2012-02-06) gives 2007-2011, with 2006 from the FY2010 10-K.
+  The ten-year history moves to 2001-2010, then 2002-2011. The first year's diluted shares come from the latest
+  10-K that reports them, both before the split: 2001's 271.9M from the FY2003 10-K, 2002's 276.8M from the FY2004
+  10-K. 2004 and 2005 keep the company-adjusted figures, as before.
+- **A release whose 8-K was filed after the close.** The Q1 2011 release is dated April 20, but its 8-K was accepted
+  at 17:13 ET and no filing states an earlier release time. By the after-close rule it is dated 2011-04-21. That was
+  the week's last trading day (Good Friday followed), so the week's date is 2011-04-21 and the print counts from its
+  open (`release_time`). Every other UNP earnings 8-K of 2007-2012 was accepted during market hours.
+- **Energy renamed Coal** in the Q2 2012 release ("Formerly titled Energy"). The bridge shows each print's own group
+  names; no rule reads a group's name.
+- **Carloads published as "-"** (Q2 and Q3 2012, within half a percent) are 0%, as GTMs per employee were in Q4 2009
+  and Q3 2011.
+- **Dividends:** $0.475 (8-K of 2011-05-05, dated 2011-05-06), $0.60 (2011-11-17, dated 2011-11-18), $0.69
+  (2012-11-15, dated 2012-11-16).
+- **Adds nothing:**
+  - the 8-K of 2011-02-03 (the $0.38 dividend kept, a new 40-million-share repurchase authorization);
+  - the debt exchange offers and notes;
+  - the fuel-surcharge antitrust complaint (2011-06-07);
+  - the shareholder-vote, officer and board 8-Ks, including the CEO's medical leave (2012-03-02) and his
+    successor's election to the board;
+  - the 10b5-1 trading plans and a webcast notice;
+  - the capex and positive train control figures (not method inputs);
+  - the 10-Qs (no outlook).
+- **ISO week 2013-W01 starts on 2012-12-31,** so that date is built here, and a 2013 batch starts on 2013-01-07 (as
+  2009 started on 2009-01-05 after 2008-12-31).
+
+Seen in the build (method behaviour, not tuned):
+- **The class follows the price.** FAIR or RICH on most dates. CHEAP on nine: seven from 2011-08-19 to 2011-10-07
+  ($82-90), plus 2012-03-09 and 2012-03-30 ($107-108). RICH again from 2012-07-13 ($118-126).
+- **The tier stays low.** WATCHLIST or AVOID on most dates, ACCUMULATE on four in August-September 2011 (Ratio B
+  0.89-1.05x). On the middle half of the dates Ratio B runs 1.5-2.8x, because the BEAR price applies 2004's -29%
+  twice.
+- **EPS anchors on the last full year** while the quarters run ahead of it: FY11's $6.72 stands through 2012, against
+  2012 quarters of $1.79, $2.10 and $2.19.
 
 ## Categories change with the era
 
