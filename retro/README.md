@@ -291,12 +291,14 @@ python3 retro/build_unp.py --weekly 2009-01-05 2009-12-31                   # 52
 python3 retro/build_unp.py --weekly 2010-01-04 2010-12-31                   # 52 dates, 2010-01-08 .. 2010-12-31
 python3 retro/build_unp.py --weekly 2011-01-03 2011-12-31                   # 52 dates, 2011-01-07 .. 2011-12-30
 python3 retro/build_unp.py --weekly 2012-01-02 2012-12-31                   # 53 dates, 2012-01-06 .. 2012-12-31
+python3 retro/build_unp.py --weekly 2013-01-07 2013-12-31                   # 52 dates, 2013-01-11 .. 2013-12-31
+python3 retro/build_unp.py --weekly 2014-01-06 2014-12-31                   # 52 dates, 2014-01-10 .. 2014-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2013-01-01 UNP
+python3 retro/tools/firewall.py 2015-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -498,6 +500,60 @@ Seen in the build (method behaviour, not tuned):
   twice.
 - **EPS anchors on the last full year** while the quarters run ahead of it: FY11's $6.72 stands through 2012, against
   2012 quarters of $1.79, $2.10 and $2.19.
+
+### UNP 2013-2014: a quarter guide, the 2014 split, a release before Good Friday
+
+Every 8-K, 10-Q and release of 2013 and 2014 was read, the 10-Qs searched in full for forward-looking statements.
+Decided before any 2013 or 2014 date was built or scored:
+
+- **No numeric full-year guide.** The FY2012 10-K's 2013 Outlook says volume "should exceed 2012 levels" if
+  industrial production grows about 2%, and earnings will exceed 2012's even with no volume growth. The FY2013
+  10-K's 2014 Outlook says the same with 3%. All eight releases give words only. From each Q4 print the year just
+  reported stands as the current-year EPS: FY12's $8.27 from 2013-01-25, FY13's $9.42 from 2014-01-24 ($4.71 after
+  the split). BASE growth follows the latest quarter's freight revenue: +2% (Q4 2012), +3%, +5%, +5%, +7% (Q4
+  2013), +6%, +10%, +11%.
+- **A quarter guide.** The 8-K of 2013-10-03 (after the close, dated 2013-10-04) expects Q3 2013 EPS of $2.45-2.48,
+  revenue +4-4.5% and an operating ratio about 1.5 points better. By the 2008 rule it is shown in the guide line
+  until Q3 is reported (2013-10-04 and 2013-10-11) and feeds no input. When a year's only guide is a reported
+  quarter, the guide line now falls back to the release's words; it used to print an empty list. No earlier date
+  changes.
+- **The 2014 split.** The 2-for-1 split was announced on 2014-05-15 (8-K after the close, dated 2014-05-16) and paid
+  2014-06-06, and the stock trades on the new basis from 2014-06-09, as the price data show. As in 2008, from that
+  date every per-share fact published before it is halved and every share count doubled. 2004 and 2005, published
+  before both splits, are quartered. P/E percentiles do not move (2014-06-06: $201.86 on $9.42; 2014-06-13: $100.90
+  on $4.71). The split note now names each split's years on its own; it used one span for all splits. This is text
+  only, and no earlier date changes.
+- **A release before Good Friday.** Q1 2014 was released on Thursday 2014-04-17. Its 8-K was accepted at 12:10 ET,
+  during the session, and no filing states the release time. No trading day followed in its week, so the week's
+  date is the release day. The UNP builder accepted a same-day print only "before the open". It now also accepts one
+  public "before the close" by its 8-K's acceptance time, and tags the date "released during the session". The
+  2014-04-17 model uses a fact that was public about four hours before that close. Leaving the print out instead
+  would only lag it. This is a UNP builder rule; ACN's builder is unchanged.
+- **First-year diluted shares:** 2003's 268.0M from the FY2005 10-K, 2004's 262.2M from the FY2006 10-K.
+- **Dividends:** $0.79 (8-K of 2013-08-01, dated 2013-08-02), $0.91 (2014-02-06, dated 2014-02-07), the split 8-K's
+  $0.91 (45.5 cents post-split, dated 2014-05-16), and $0.50 post-split (2014-07-31, dated 2014-08-01).
+- **Values published as "-"** (carloads in Q3 2013 and for full-year 2012 and 2013, some groups' growth) are 0%.
+- **Adds nothing:**
+  - the debt offerings and exchange offers;
+  - the 8-K of 2013-11-21 (the $0.79 dividend kept, a 60-million-share repurchase authorization);
+  - the vote, officer and board 8-Ks (a new president of the railroad, the CEO elected chairman after the former
+    chairman's death);
+  - the 10b5-1 trading plans;
+  - the capex and positive train control figures, and the dividend payout target of 30-35% (not method inputs);
+  - the 10-Qs (no outlook).
+- **ISO week 2014-W01 starts on 2013-12-30,** so 2013-12-31 covers it and the 2014 batch starts on 2014-01-06.
+  2014-12-31 covers 2015-W01, so a 2015 batch starts on 2015-01-05.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 96 of the 104 dates,** at 16-26x trailing EPS. The rest are FAIR (2014-02-14 to 2014-03-28 and
+  2014-04-11). The tier is WATCHLIST on 20 dates, otherwise AVOID.
+- **The BEAR year changes with the window.** From the FY2013 10-K (2014-02-14) the history runs 2004-2013, so 2004
+  is the first year and no longer a growth year. The worst year becomes 2009 (-17.4%), not 2004's -29%, and the
+  BEAR price moves from $62 to $84 on the pre-split basis.
+- **Ratio B reaches 14-37x in November-December 2014,** when the price nears the BULL price (2014-11-21: upside
+  1.8%).
+- **Print text is not restated for a split.** From 2014-06-13 to 2014-07-18 the latest print's buyback text (Q1 2014,
+  3.8M shares) is on the pre-split share count, as in 2008.
 
 ## Categories change with the era
 

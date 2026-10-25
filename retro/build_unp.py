@@ -72,12 +72,15 @@ def on_basis(facts, as_of):
         v["eps_normalized"] = {y: e / ke[y] for y, e in v["eps_normalized"].items()}
         v["diluted_shares_m"] = {y: n * ks[y] for y, n in v["diluted_shares_m"].items()}
         v["dividend_annual"] /= k(v["published"])
-        hit = [s for s in splits if any(v.get("eps_published", {}).get(y, v["published"]) < s["effective"] for y in v["eps_normalized"])]
-        if hit:
-            restated = [y for y in sorted(ke) if ke[y] != 1]
-            span = "" if len(restated) == len(ke) else f" on {restated[0]}-{restated[-1]} (published before it)"
-            v["split_note"] = "; ".join(f"per share ÷{s['ratio']} for the {s['ratio']}-for-1 split effective {s['effective']} ({s['source']}){span}"
-                                        for s in hit)
+        pub = lambda y: v.get("eps_published", {}).get(y, v["published"])
+        notes = []
+        for s in splits:                     # each split names the years it restates (published before its effective date)
+            restated = [y for y in sorted(ke) if pub(y) < s["effective"]]
+            if restated:
+                span = "" if len(restated) == len(ke) else f" on {restated[0]}-{restated[-1]} (published before it)"
+                notes.append(f"per share ÷{s['ratio']} for the {s['ratio']}-for-1 split effective {s['effective']} ({s['source']}){span}")
+        if notes:
+            v["split_note"] = "; ".join(notes)
     for p in f["prints"]:
         r = k(p["published"])
         p["eps_q"], p["eps_q_prior"], p["diluted_shares_m"] = p["eps_q"] / r, p["eps_q_prior"] / r, p["diluted_shares_m"] * r
@@ -176,7 +179,7 @@ def build(as_of, facts, raw, spx, engine, out):
                ([f"{gq['quarter'][:2]} EPS ${money(gq['range'][0])}-{money(gq['range'][1])} ({gq['note']})"] if gq else []) + \
                [f"full year in words: '{g['fy_words']}'" for g in [stated("fy_words")] if g]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
-    else:
+    if not guides or not bits:               # nothing to quote (a quarter guide whose quarter is reported counts as none)
         guide_text = f"{fy_now}: no numeric guide yet; the {latest['quarter']} release in words: '{latest['outlook_short']}'"
     # no numeric operating-ratio guide in any UNP guide so far: no margin step (words and one-sided bounds are not ranges)
     margin_guided, fy_margin_base = False, h["prev_fy_op_margin"]
@@ -231,10 +234,13 @@ def build(as_of, facts, raw, spx, engine, out):
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
-    same_day = [p for p in prints if p["published"] == as_of]     # only a release made before the open can meet AS_OF's close
+    # a release on AS_OF meets AS_OF's close only if it was public before it: before the open, or (Good Friday 2014,
+    # when no trading day followed the release in its week) by an 8-K accepted during the session
+    same_day = [p for p in prints if p["published"] == as_of]
     if same_day:
-        assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
-        tag = f"(day of the {same_day[-1]['quarter']} print, released before the open)"
+        rt = same_day[-1].get("release_time", "")
+        assert "before the open" in rt or "before the close" in rt, (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the close")
+        tag = f"(day of the {same_day[-1]['quarter']} print, released {'before the open' if 'before the open' in rt else 'during the session'})"
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
