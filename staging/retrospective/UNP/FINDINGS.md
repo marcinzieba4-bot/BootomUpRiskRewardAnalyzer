@@ -1,9 +1,9 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 262 weekly dates from 2008-01-04 to 2012-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 366 weekly dates from 2008-01-04 to 2014-12-31. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
-2010 in 3198278, 2011-2012 in 9e129f3.
+2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -137,14 +137,56 @@ effective 2008-05-29).
 - **The BEAR case never came close.** BEAR prices were $24-44. The lowest price within any 2011-2012 date's two
   years was $79.83 (2011-10-03). Every date's two-year low was at least 2.28 times its BEAR price.
 
-## Across 2008-2012: the no-guide fallbacks are the open question
+## 2013 (52 dates)
 
-UNP gave no numeric guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands, BASE growth
-takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in 2009, the
-trough in 2010, and last year's earnings while margins expanded in 2012. Price level still ranked the dates in
-most years (the CHEAP stretches of late 2008, early 2009 and autumn 2011 were the best entries), but RICH set its
-line too low four years running. Candidates to test on other companies without guidance, never fitted to UNP's
-outcomes:
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH (every date) | 52 | +30% | -3% to +88% | 25 | 27 (+2pp) | +40% |
+| legacy tier WATCHLIST (2013-01-25 to 2013-04-12) | 12 | +80% | +57% to +88% | 12 | 12 (+38pp) | +55% |
+| legacy tier AVOID | 40 | +24% | -3% to +81% | 13 | 15 (-4pp) | +38% |
+| AVOID, 2013-06-28 to 2013-12-31 | 28 | +18% | -3% to +32% | 1 | 4 (-6pp) | +37% |
+
+- **Every date read RICH; the tier did the ranking.** The Q4 2012 print put FY12's $8.27 into the P/E, and the next
+  12 dates read WATCHLIST at 16.1-17.2x. They returned +57% to +88%, and all cleared the hurdle and beat SPY (median
+  +38pp). The 40 AVOID dates (17.6-20.3x, apart from the two January dates on trailing FY11 EPS) returned a median
+  +24%.
+- **RICH turned right during the year.** Returns fell date by date as the two-year windows ran into late 2015. The
+  April-June dates returned +33% to +54%. From 2013-06-28 the median was +18%: 1 of 28 dates cleared the hurdle and 4
+  beat SPY. These are the first RICH calls in the series to hit (miss the hurdle and lag SPY): none of the 152 RICH
+  dates of 2008-2012 did, 24 of 2013's did.
+
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class FAIR = legacy tier WATCHLIST (2014-02-14 to 2014-03-28, 2014-04-11) | 8 | -8% | -10% to -6% | 0 | 0 (-20pp) | -1% |
+| class RICH = legacy tier AVOID | 44 | -9% | -20% to +0% | 0 | 0 (-21pp) | -16% |
+
+- **Every 2014 date lost money over two years** (-20% to 0%). None cleared the hurdle or beat SPY (median -20pp), and
+  every outcome landed in BASE. The deepest fall within two years was -44% (from 2014-01-31). All 44 RICH calls hit.
+- **The prints were the best of the series, and the stock was at the top of its range.** 2014's quarters had
+  carloads +5% to +8%, operating ratios 2.0-2.5 points better and EPS up 17-23%. The model still read RICH: 18.2-25.9x
+  trailing EPS, the 80th-100th percentile of its ten-year range (90th-100th from the Q1 print on).
+- **FAIR did not rank above RICH within the year** (-8% against -9%). Both trailed SPY by about 20pp.
+- **The BEAR case never came.** Even through the 2015-2016 fall, every date's two-year low stayed at least 1.64 times
+  its BEAR price.
+
+## Across 2008-2014: the no-guide fallbacks are the open question
+
+UNP gave no numeric full-year guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands,
+BASE growth takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in
+2009, the trough in 2010, and last year's earnings while margins expanded in 2012. Price level still ranked the dates
+in most years: the CHEAP stretches of late 2008, early 2009 and autumn 2011 were the best entries. RICH set its line
+too low from 2009 to 2012, then was right from mid-2013 through 2014.
+
+**A high P/E percentile did not separate 2010 from 2014.** Both read RICH at the top of the stock's own range: in 2010
+at the 99th-100th percentile on trailing FY09 EPS, with a median two-year return of +54%; in 2014 at the 90th-100th
+percentile on trailing FY13 EPS, with -9%. What was visible at the time: 2010's P/E ran on a trough year (FY09 EPS
+-17%), 2014's on a record year after four years of growth.
+
+Candidates to test on other companies without guidance, never fitted to UNP's outcomes:
 - trailing-four-quarter EPS, which is published by AS_OF and so carries no hindsight;
 - a margin step from the latest quarters' published operating-ratio change;
-- a cyclical BEAR from the worst two-year run rather than the worst year applied twice.
+- a cyclical BEAR from the worst two-year run rather than the worst year applied twice;
+- a P/E on normalized earnings (the ten-year median or trend EPS), which would read a trough year and a record year
+  differently.
