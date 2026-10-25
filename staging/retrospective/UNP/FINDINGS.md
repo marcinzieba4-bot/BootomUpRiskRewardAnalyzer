@@ -1,9 +1,9 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 470 weekly dates from 2008-01-04 to 2016-12-30. They are **labels and
+Patterns seen in `outcome.json` for the 575 weekly dates from 2008-01-04 to 2018-12-31. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
-2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a.
+2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a, 2017-2018 in 50bd487.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -208,12 +208,55 @@ effective 2008-05-29).
   -9%, every signal at BEAR from the Q4 2015 print).
 - **The BEAR case never came.** Every 2015-2016 date's two-year low stayed at least 1.35 times its BEAR price.
 
-## Across 2008-2016: the no-guide fallbacks are the open question
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH = legacy tier AVOID (every date) | 52 | +60% | +38% to +75% | 52 | 52 (+36pp) | +40% |
+| to 2017-10-20 (price below the BULL case) | 42 | +60% | +39% to +75% | 42 | 42 (+37pp) | +41% |
+| from 2017-10-27 (price above the BULL case, Ratio B `inf`) | 10 | +53% | +38% to +58% | 10 | 10 (+30pp) | +39% |
+
+- **Every date made money, cleared the hurdle and beat SPY** (median +36pp). 51 of 52 outcomes landed in XBULL. The
+  class read RICH and the tier AVOID on every date, and none of those calls hit.
+- **Why the model read RICH.** The P/E ran on trailing EPS at the 90th-100th percentile of its ten years (18.8-26.5x):
+  FY15's $5.49 for two dates, then FY16's $5.07, a down year (-8%). The 2017 quarters were published as they came,
+  with EPS up 10% to 24% and carloads up 2% and 5% in the first half. This is the 2010 pattern: the no-guide fallback
+  anchors EPS on a weak last year.
+- **The price passing the BULL case did not mark the top.** From 2017-10-27 the price was above the BULL scenario
+  (the decade EPS CAGR at the 75th-percentile P/E). Those 10 dates returned less, a median +53% against +60%, and still
+  cleared the hurdle by a wide margin.
+- **The BEAR case never came.** Every 2017 date's two-year low stayed at least 2.07 times its BEAR price ($45-49).
+
+## 2018 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH = legacy tier AVOID (every date) | 53 | +30% | -8% to +58% | 22 | 50 (+6pp) | +18% |
+| January-March | 13 | +36% | -8% to +50% | 7 | 13 (+14pp) | +27% |
+| April-June | 13 | +19% | +13% to +31% | 0 | 13 (+6pp) | +17% |
+| July-September | 13 | +28% | +20% to +35% | 3 | 12 (+8pp) | +12% |
+| October-December | 14 | +43% | +26% to +58% | 12 | 12 (+2pp) | +20% |
+
+- **Half the return of 2017, at the same reading.** Every date read RICH and AVOID again, at the 91st-100th percentile
+  (22.0-28.5x: FY16's $5.07 to 2018-01-19, then FY17's adjusted $5.79). The median two-year return was +30%: 22 of 53 dates cleared the hurdle, 50
+  beat SPY, by a median 6pp. One RICH call hit (2018-08-03: under the hurdle and behind SPY).
+- **The two-year point lands in the 2020 crash.** 43 of the 53 dates had their two-year low in March 2020, and the
+  deepest fall within two years was -39%. The one losing date, 2018-03-23 (-8%), ends on 2020-03-23. Judge this year
+  by the m12-24 average (+18%) rather than the point return.
+- **The April-June entries returned least** ($130-147, 22.5-25.4x): +13% to +31%, none cleared the hurdle.
+- **EPS anchored on FY17 while the quarters ran ahead.** The 2018 quarters' EPS was up 27% to 43% ($1.68, $1.98,
+  $2.15), mostly from the lower federal tax rate. The fallback kept FY17's $5.79, so the P/E read 22-28x.
+- **The BEAR case never came,** even in March 2020: every 2018 date's two-year low stayed at least 2.19 times its BEAR
+  price ($52).
+
+## Across 2008-2018: the no-guide fallbacks are the open question
 
 UNP gave no numeric full-year guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands,
 BASE growth takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in
 2009, the trough in 2010, and last year's earnings while margins expanded in 2012. RICH set its line too low from
-2009 to 2012, was right from mid-2013 into 2015, and read RICH through the 2015-2016 trough as well.
+2009 to 2012, was right from mid-2013 into 2015, and read RICH through the 2015-2016 trough and the 2017-2018 rise
+as well. 105 of the 453 RICH dates hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014, 36 in 2015, one in
+2018.
 
 **At the troughs the legacy tier ranked better than the class.** From July 2009 and through 2015-2016 the fallback
 carried the trough quarters' revenue declines into BASE, so the class read RICH. The legacy tier, whose Ratio B keeps
@@ -223,7 +266,8 @@ against ACCUMULATE +55%; 2015 BUY +39% down to AVOID -7%; 2016 BUY +77% down to 
 **A high P/E percentile did not separate 2010 from 2014.** Both read RICH at the top of the stock's own range: in 2010
 at the 99th-100th percentile on trailing FY09 EPS, with a median two-year return of +54%; in 2014 at the 90th-100th
 percentile on trailing FY13 EPS, with -9%. What was visible at the time: 2010's P/E ran on a trough year (FY09 EPS
--17%), 2014's on a record year after four years of growth.
+-17%), 2014's on a record year after four years of growth. 2017 fits the 2010 side (a down year, FY16 -8%: +60%);
+2018 sits between (a record year, but a tax cut published in the quarters: +30%).
 
 Candidates to test on other companies without guidance, never fitted to UNP's outcomes:
 - trailing-four-quarter EPS, which is published by AS_OF and so carries no hindsight;

@@ -15060,7 +15060,20 @@
    "cons_return_2yr": -15.4,
    "path": "staging/retrospective/UNP/2017-01-06",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.6,
+    "tr_1y": 35.7,
+    "tr_2y": 38.9,
+    "tr_3y": 82.8,
+    "excess_6m": -1.2,
+    "excess_1y": 13.2,
+    "excess_2y": 23.5,
+    "excess_3y": 33.6,
+    "avg_m12_m24": 38.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15079,7 +15092,20 @@
    "cons_return_2yr": -17.0,
    "path": "staging/retrospective/UNP/2017-01-13",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.6,
+    "tr_1y": 36.5,
+    "tr_2y": 50.8,
+    "tr_3y": 79.7,
+    "excess_6m": -4.1,
+    "excess_1y": 12.0,
+    "excess_2y": 32.4,
+    "excess_3y": 28.4,
+    "avg_m12_m24": 36.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15098,7 +15124,20 @@
    "cons_return_2yr": -25.4,
    "path": "staging/retrospective/UNP/2017-01-20",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.2,
+    "tr_1y": 32.3,
+    "tr_2y": 50.9,
+    "tr_3y": 79.2,
+    "excess_6m": -11.1,
+    "excess_1y": 6.6,
+    "excess_2y": 29.0,
+    "excess_3y": 25.9,
+    "avg_m12_m24": 32.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15117,7 +15156,20 @@
    "cons_return_2yr": -25.8,
    "path": "staging/retrospective/UNP/2017-01-27",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.0,
+    "tr_1y": 25.2,
+    "tr_2y": 52.5,
+    "tr_3y": 71.9,
+    "excess_6m": -15.0,
+    "excess_1y": -2.1,
+    "excess_2y": 32.1,
+    "excess_3y": 23.8,
+    "avg_m12_m24": 31.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15136,7 +15188,20 @@
    "cons_return_2yr": -25.3,
    "path": "staging/retrospective/UNP/2017-02-03",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.4,
+    "tr_1y": 21.5,
+    "tr_2y": 52.3,
+    "tr_3y": 74.7,
+    "excess_6m": -13.0,
+    "excess_1y": -0.7,
+    "excess_2y": 30.2,
+    "excess_3y": 26.6,
+    "avg_m12_m24": 33.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15155,7 +15220,20 @@
    "cons_return_2yr": -24.9,
    "path": "staging/retrospective/UNP/2017-02-10",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.7,
+    "tr_1y": 20.3,
+    "tr_2y": 55.1,
+    "tr_3y": 79.8,
+    "excess_6m": -9.9,
+    "excess_1y": 5.3,
+    "excess_2y": 34.0,
+    "excess_3y": 28.5,
+    "avg_m12_m24": 34.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15174,7 +15252,20 @@
    "cons_return_2yr": -26.2,
    "path": "staging/retrospective/UNP/2017-02-17",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.9,
+    "tr_1y": 24.5,
+    "tr_2y": 60.1,
+    "tr_3y": 76.0,
+    "excess_6m": -9.3,
+    "excess_1y": 6.3,
+    "excess_2y": 37.9,
+    "excess_3y": 25.8,
+    "avg_m12_m24": 32.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15193,7 +15284,20 @@
    "cons_return_2yr": -24.8,
    "path": "staging/retrospective/UNP/2017-02-24",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.4,
+    "tr_1y": 27.0,
+    "tr_2y": 62.4,
+    "tr_3y": 72.1,
+    "excess_6m": -6.4,
+    "excess_1y": 8.9,
+    "excess_2y": 40.3,
+    "excess_3y": 29.4,
+    "avg_m12_m24": 36.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15212,7 +15316,20 @@
    "cons_return_2yr": -25.7,
    "path": "staging/retrospective/UNP/2017-03-03",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.1,
+    "tr_1y": 20.3,
+    "tr_2y": 58.9,
+    "tr_3y": 53.1,
+    "excess_6m": -7.0,
+    "excess_1y": 5.4,
+    "excess_2y": 37.2,
+    "excess_3y": 20.7,
+    "avg_m12_m24": 35.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15231,7 +15348,20 @@
    "cons_return_2yr": -23.8,
    "path": "staging/retrospective/UNP/2017-03-10",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.0,
+    "tr_1y": 31.6,
+    "tr_2y": 60.1,
+    "tr_3y": 47.2,
+    "excess_6m": -2.7,
+    "excess_1y": 12.3,
+    "excess_2y": 40.4,
+    "excess_3y": 19.3,
+    "avg_m12_m24": 39.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15250,7 +15380,20 @@
    "cons_return_2yr": -23.5,
    "path": "staging/retrospective/UNP/2017-03-17",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.1,
+    "tr_1y": 31.9,
+    "tr_2y": 61.2,
+    "tr_3y": 30.4,
+    "excess_6m": 2.0,
+    "excess_1y": 14.1,
+    "excess_2y": 38.2,
+    "excess_3y": 17.7,
+    "avg_m12_m24": 40.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15269,7 +15412,20 @@
    "cons_return_2yr": -22.1,
    "path": "staging/retrospective/UNP/2017-03-24",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.1,
+    "tr_1y": 29.4,
+    "tr_2y": 60.1,
+    "tr_3y": 33.2,
+    "excess_6m": 4.4,
+    "excess_1y": 17.0,
+    "excess_2y": 36.4,
+    "excess_3y": 22.4,
+    "avg_m12_m24": 43.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15288,7 +15444,20 @@
    "cons_return_2yr": -23.5,
    "path": "staging/retrospective/UNP/2017-03-31",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.6,
+    "tr_1y": 29.4,
+    "tr_2y": 63.3,
+    "tr_3y": 41.4,
+    "excess_6m": 3.0,
+    "excess_1y": 15.7,
+    "excess_2y": 39.2,
+    "excess_3y": 23.7,
+    "avg_m12_m24": 41.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15307,7 +15476,20 @@
    "cons_return_2yr": -24.3,
    "path": "staging/retrospective/UNP/2017-04-07",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.6,
+    "tr_1y": 24.2,
+    "tr_2y": 63.1,
+    "tr_3y": 45.2,
+    "excess_6m": -1.6,
+    "excess_1y": 11.7,
+    "excess_2y": 36.1,
+    "excess_3y": 25.7,
+    "avg_m12_m24": 40.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15326,7 +15508,20 @@
    "cons_return_2yr": -22.7,
    "path": "staging/retrospective/UNP/2017-04-13",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.3,
+    "tr_1y": 30.7,
+    "tr_2y": 67.3,
+    "tr_3y": 49.4,
+    "excess_6m": -2.4,
+    "excess_1y": 14.5,
+    "excess_2y": 38.2,
+    "excess_3y": 24.0,
+    "avg_m12_m24": 44.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15345,7 +15540,20 @@
    "cons_return_2yr": -25.2,
    "path": "staging/retrospective/UNP/2017-04-21",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.5,
+    "tr_1y": 27.7,
+    "tr_2y": 68.5,
+    "tr_3y": 42.2,
+    "excess_6m": -5.2,
+    "excess_1y": 12.0,
+    "excess_2y": 40.6,
+    "excess_3y": 19.1,
+    "avg_m12_m24": 40.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15364,7 +15572,20 @@
    "cons_return_2yr": -18.0,
    "path": "staging/retrospective/UNP/2017-04-28",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.7,
+    "tr_1y": 23.1,
+    "tr_2y": 63.5,
+    "tr_3y": 52.7,
+    "excess_6m": -3.6,
+    "excess_1y": 9.1,
+    "excess_2y": 36.0,
+    "excess_3y": 26.0,
+    "avg_m12_m24": 36.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15383,7 +15604,20 @@
    "cons_return_2yr": -17.1,
    "path": "staging/retrospective/UNP/2017-05-05",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.9,
+    "tr_1y": 23.5,
+    "tr_2y": 67.1,
+    "tr_3y": 49.9,
+    "excess_6m": -1.9,
+    "excess_1y": 10.5,
+    "excess_2y": 40.2,
+    "excess_3y": 23.9,
+    "avg_m12_m24": 38.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15402,7 +15636,20 @@
    "cons_return_2yr": -16.9,
    "path": "staging/retrospective/UNP/2017-05-12",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.7,
+    "tr_1y": 31.2,
+    "tr_2y": 64.5,
+    "tr_3y": 48.1,
+    "excess_6m": -2.3,
+    "excess_1y": 15.0,
+    "excess_2y": 39.7,
+    "excess_3y": 21.5,
+    "avg_m12_m24": 39.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15421,7 +15668,20 @@
    "cons_return_2yr": -14.3,
    "path": "staging/retrospective/UNP/2017-05-19",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.1,
+    "tr_1y": 36.8,
+    "tr_2y": 68.6,
+    "tr_3y": 57.7,
+    "excess_6m": -0.1,
+    "excess_1y": 20.9,
+    "excess_2y": 44.4,
+    "excess_3y": 28.6,
+    "avg_m12_m24": 44.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15440,7 +15700,20 @@
    "cons_return_2yr": -17.0,
    "path": "staging/retrospective/UNP/2017-05-26",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.5,
+    "tr_1y": 33.0,
+    "tr_2y": 60.4,
+    "tr_3y": 61.8,
+    "excess_6m": -1.2,
+    "excess_1y": 18.4,
+    "excess_2y": 39.3,
+    "excess_3y": 31.5,
+    "avg_m12_m24": 40.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15459,7 +15732,20 @@
    "cons_return_2yr": -17.5,
    "path": "staging/retrospective/UNP/2017-06-02",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.2,
+    "tr_1y": 34.6,
+    "tr_2y": 55.5,
+    "tr_3y": 62.7,
+    "excess_6m": 3.9,
+    "excess_1y": 20.5,
+    "excess_2y": 38.6,
+    "excess_3y": 30.0,
+    "avg_m12_m24": 40.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15478,7 +15764,20 @@
    "cons_return_2yr": -16.4,
    "path": "staging/retrospective/UNP/2017-06-09",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.8,
+    "tr_1y": 34.2,
+    "tr_2y": 62.2,
+    "tr_3y": 71.4,
+    "excess_6m": 8.7,
+    "excess_1y": 17.9,
+    "excess_2y": 39.9,
+    "excess_3y": 33.1,
+    "avg_m12_m24": 42.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15497,7 +15796,20 @@
    "cons_return_2yr": -17.6,
    "path": "staging/retrospective/UNP/2017-06-16",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.4,
+    "tr_1y": 34.4,
+    "tr_2y": 55.4,
+    "tr_3y": 62.5,
+    "excess_6m": 7.5,
+    "excess_1y": 18.2,
+    "excess_2y": 32.5,
+    "excess_3y": 27.4,
+    "avg_m12_m24": 40.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15516,7 +15828,20 @@
    "cons_return_2yr": -15.1,
    "path": "staging/retrospective/UNP/2017-06-23",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.6,
+    "tr_1y": 35.7,
+    "tr_2y": 61.9,
+    "tr_3y": 65.9,
+    "excess_6m": 14.5,
+    "excess_1y": 20.7,
+    "excess_2y": 36.7,
+    "excess_3y": 30.9,
+    "avg_m12_m24": 45.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15535,7 +15860,20 @@
    "cons_return_2yr": -15.7,
    "path": "staging/retrospective/UNP/2017-06-30",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.3,
+    "tr_1y": 32.6,
+    "tr_2y": 60.9,
+    "tr_3y": 64.4,
+    "excess_6m": 12.9,
+    "excess_1y": 18.4,
+    "excess_2y": 35.4,
+    "excess_3y": 30.2,
+    "avg_m12_m24": 44.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15554,7 +15892,20 @@
    "cons_return_2yr": -15.3,
    "path": "staging/retrospective/UNP/2017-07-07",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.1,
+    "tr_1y": 34.6,
+    "tr_2y": 62.5,
+    "tr_3y": 65.9,
+    "excess_6m": 14.1,
+    "excess_1y": 18.8,
+    "excess_2y": 35.0,
+    "excess_3y": 29.7,
+    "avg_m12_m24": 46.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15573,7 +15924,20 @@
    "cons_return_2yr": -16.2,
    "path": "staging/retrospective/UNP/2017-07-14",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.0,
+    "tr_1y": 30.3,
+    "tr_2y": 64.5,
+    "tr_3y": 66.0,
+    "excess_6m": 15.8,
+    "excess_1y": 14.4,
+    "excess_2y": 37.8,
+    "excess_3y": 29.6,
+    "avg_m12_m24": 44.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15592,7 +15956,20 @@
    "cons_return_2yr": -4.5,
    "path": "staging/retrospective/UNP/2017-07-21",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.9,
+    "tr_1y": 37.5,
+    "tr_2y": 73.0,
+    "tr_3y": 79.9,
+    "excess_6m": 21.3,
+    "excess_1y": 22.2,
+    "excess_2y": 48.4,
+    "excess_3y": 41.7,
+    "avg_m12_m24": 52.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15611,7 +15988,20 @@
    "cons_return_2yr": -3.1,
    "path": "staging/retrospective/UNP/2017-07-28",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.2,
+    "tr_1y": 46.5,
+    "tr_2y": 74.6,
+    "tr_3y": 78.5,
+    "excess_6m": 14.1,
+    "excess_1y": 30.5,
+    "excess_2y": 48.1,
+    "excess_3y": 41.9,
+    "avg_m12_m24": 54.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15630,7 +16020,20 @@
    "cons_return_2yr": -2.3,
    "path": "staging/retrospective/UNP/2017-08-04",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.5,
+    "tr_1y": 48.8,
+    "tr_2y": 75.3,
+    "tr_3y": 79.2,
+    "excess_6m": 15.1,
+    "excess_1y": 32.2,
+    "excess_2y": 52.8,
+    "excess_3y": 39.3,
+    "avg_m12_m24": 56.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15649,7 +16052,20 @@
    "cons_return_2yr": -3.4,
    "path": "staging/retrospective/UNP/2017-08-11",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.1,
+    "tr_1y": 46.3,
+    "tr_2y": 68.1,
+    "tr_3y": 93.4,
+    "excess_6m": 15.9,
+    "excess_1y": 28.3,
+    "excess_2y": 44.4,
+    "excess_3y": 50.5,
+    "avg_m12_m24": 55.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15668,7 +16084,20 @@
    "cons_return_2yr": -3.7,
    "path": "staging/retrospective/UNP/2017-08-18",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.5,
+    "tr_1y": 46.5,
+    "tr_2y": 65.9,
+    "tr_3y": 93.1,
+    "excess_6m": 16.9,
+    "excess_1y": 27.0,
+    "excess_2y": 42.6,
+    "excess_3y": 47.0,
+    "avg_m12_m24": 55.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15687,7 +16116,20 @@
    "cons_return_2yr": -4.9,
    "path": "staging/retrospective/UNP/2017-08-25",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.4,
+    "tr_1y": 45.2,
+    "tr_2y": 57.8,
+    "tr_3y": 94.7,
+    "excess_6m": 16.1,
+    "excess_1y": 25.7,
+    "excess_2y": 37.1,
+    "excess_3y": 47.4,
+    "avg_m12_m24": 53.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15706,7 +16148,20 @@
    "cons_return_2yr": -5.1,
    "path": "staging/retrospective/UNP/2017-09-01",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.1,
+    "tr_1y": 45.6,
+    "tr_2y": 59.7,
+    "tr_3y": 95.4,
+    "excess_6m": 14.0,
+    "excess_1y": 26.5,
+    "excess_2y": 37.5,
+    "excess_3y": 46.7,
+    "avg_m12_m24": 53.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15725,7 +16180,20 @@
    "cons_return_2yr": -6.6,
    "path": "staging/retrospective/UNP/2017-09-08",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.7,
+    "tr_1y": 47.4,
+    "tr_2y": 59.6,
+    "tr_3y": 85.6,
+    "excess_6m": 12.5,
+    "excess_1y": 28.8,
+    "excess_2y": 34.5,
+    "excess_3y": 44.0,
+    "avg_m12_m24": 51.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15744,7 +16212,20 @@
    "cons_return_2yr": -11.7,
    "path": "staging/retrospective/UNP/2017-09-15",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.4,
+    "tr_1y": 41.4,
+    "tr_2y": 56.9,
+    "tr_3y": 87.6,
+    "excess_6m": 10.5,
+    "excess_1y": 23.2,
+    "excess_2y": 32.4,
+    "excess_3y": 45.1,
+    "avg_m12_m24": 42.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15763,7 +16244,20 @@
    "cons_return_2yr": -13.2,
    "path": "staging/retrospective/UNP/2017-09-22",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.1,
+    "tr_1y": 45.6,
+    "tr_2y": 49.8,
+    "tr_3y": 80.0,
+    "excess_6m": 11.5,
+    "excess_1y": 26.5,
+    "excess_2y": 26.1,
+    "excess_3y": 41.1,
+    "avg_m12_m24": 40.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15782,7 +16276,20 @@
    "cons_return_2yr": -13.7,
    "path": "staging/retrospective/UNP/2017-09-29",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.1,
+    "tr_1y": 42.9,
+    "tr_2y": 45.9,
+    "tr_3y": 79.0,
+    "excess_6m": 11.4,
+    "excess_1y": 25.2,
+    "excess_2y": 24.1,
+    "excess_3y": 40.3,
+    "avg_m12_m24": 39.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15801,7 +16308,20 @@
    "cons_return_2yr": -12.2,
    "path": "staging/retrospective/UNP/2017-10-06",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.6,
+    "tr_1y": 46.3,
+    "tr_2y": 42.8,
+    "tr_3y": 84.1,
+    "excess_6m": 12.5,
+    "excess_1y": 31.2,
+    "excess_2y": 23.0,
+    "excess_3y": 46.0,
+    "avg_m12_m24": 42.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15820,7 +16340,20 @@
    "cons_return_2yr": -10.9,
    "path": "staging/retrospective/UNP/2017-10-13",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.9,
+    "tr_1y": 38.6,
+    "tr_2y": 49.5,
+    "tr_3y": 90.0,
+    "excess_6m": 15.9,
+    "excess_1y": 28.4,
+    "excess_2y": 29.2,
+    "excess_3y": 46.3,
+    "avg_m12_m24": 44.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15839,7 +16372,20 @@
    "cons_return_2yr": -11.4,
    "path": "staging/retrospective/UNP/2017-10-20",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.3,
+    "tr_1y": 34.2,
+    "tr_2y": 48.6,
+    "tr_3y": 92.2,
+    "excess_6m": 16.7,
+    "excess_1y": 24.8,
+    "excess_2y": 28.7,
+    "excess_3y": 52.3,
+    "avg_m12_m24": 43.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15858,7 +16404,20 @@
    "cons_return_2yr": -24.4,
    "path": "staging/retrospective/UNP/2017-10-27",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.7,
+    "tr_1y": 24.4,
+    "tr_2y": 52.7,
+    "tr_3y": 62.2,
+    "excess_6m": 12.3,
+    "excess_1y": 19.5,
+    "excess_2y": 31.6,
+    "excess_3y": 24.7,
+    "avg_m12_m24": 39.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15877,7 +16436,20 @@
    "cons_return_2yr": -24.4,
    "path": "staging/retrospective/UNP/2017-11-03",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.6,
+    "tr_1y": 29.3,
+    "tr_2y": 52.7,
+    "tr_3y": 67.0,
+    "excess_6m": 11.0,
+    "excess_1y": 22.1,
+    "excess_2y": 30.2,
+    "excess_3y": 30.7,
+    "avg_m12_m24": 39.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15896,7 +16468,20 @@
    "cons_return_2yr": -24.1,
    "path": "staging/retrospective/UNP/2017-11-10",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.2,
+    "tr_1y": 31.3,
+    "tr_2y": 56.4,
+    "tr_3y": 81.3,
+    "excess_6m": 15.9,
+    "excess_1y": 21.7,
+    "excess_2y": 32.7,
+    "excess_3y": 37.9,
+    "avg_m12_m24": 40.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15915,7 +16500,20 @@
    "cons_return_2yr": -23.4,
    "path": "staging/retrospective/UNP/2017-11-17",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.4,
+    "tr_1y": 33.5,
+    "tr_2y": 58.0,
+    "tr_3y": 87.0,
+    "excess_6m": 18.0,
+    "excess_1y": 25.4,
+    "excess_2y": 33.0,
+    "excess_3y": 40.8,
+    "avg_m12_m24": 42.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15934,7 +16532,20 @@
    "cons_return_2yr": -25.1,
    "path": "staging/retrospective/UNP/2017-11-24",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.4,
+    "tr_1y": 23.9,
+    "tr_2y": 54.2,
+    "tr_3y": 85.2,
+    "excess_6m": 18.6,
+    "excess_1y": 20.8,
+    "excess_2y": 30.8,
+    "excess_3y": 39.5,
+    "avg_m12_m24": 39.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15953,7 +16564,20 @@
    "cons_return_2yr": -28.9,
    "path": "staging/retrospective/UNP/2017-12-01",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.1,
+    "tr_1y": 25.9,
+    "tr_2y": 46.6,
+    "tr_3y": 71.0,
+    "excess_6m": 14.7,
+    "excess_1y": 19.7,
+    "excess_2y": 23.8,
+    "excess_3y": 26.4,
+    "avg_m12_m24": 32.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15972,7 +16596,20 @@
    "cons_return_2yr": -31.4,
    "path": "staging/retrospective/UNP/2017-12-08",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.1,
+    "tr_1y": 16.6,
+    "tr_2y": 38.5,
+    "tr_3y": 67.2,
+    "excess_6m": 7.4,
+    "excess_1y": 15.4,
+    "excess_2y": 15.9,
+    "excess_3y": 21.7,
+    "avg_m12_m24": 28.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -15991,7 +16628,20 @@
    "cons_return_2yr": -32.2,
    "path": "staging/retrospective/UNP/2017-12-15",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.7,
+    "tr_1y": 11.5,
+    "tr_2y": 40.7,
+    "tr_3y": 61.5,
+    "excess_6m": 8.8,
+    "excess_1y": 12.4,
+    "excess_2y": 18.2,
+    "excess_3y": 17.3,
+    "avg_m12_m24": 27.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16010,7 +16660,20 @@
    "cons_return_2yr": -34.1,
    "path": "staging/retrospective/UNP/2017-12-22",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.1,
+    "tr_1y": 0.8,
+    "tr_2y": 39.2,
+    "tr_3y": 57.8,
+    "excess_6m": 4.6,
+    "excess_1y": 9.0,
+    "excess_2y": 15.3,
+    "excess_3y": 14.4,
+    "avg_m12_m24": 24.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16029,7 +16692,20 @@
    "cons_return_2yr": -34.0,
    "path": "staging/retrospective/UNP/2017-12-29",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.7,
+    "tr_1y": 4.3,
+    "tr_2y": 40.3,
+    "tr_3y": 60.4,
+    "excess_6m": 4.2,
+    "excess_1y": 9.5,
+    "excess_2y": 15.3,
+    "excess_3y": 15.0,
+    "avg_m12_m24": 25.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16048,7 +16724,20 @@
    "cons_return_2yr": -35.6,
    "path": "staging/retrospective/UNP/2018-01-05",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.5,
+    "tr_1y": 2.4,
+    "tr_2y": 36.5,
+    "tr_3y": 57.2,
+    "excess_6m": 3.8,
+    "excess_1y": 8.2,
+    "excess_2y": 14.7,
+    "excess_3y": 15.3,
+    "avg_m12_m24": 22.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16067,7 +16756,20 @@
    "cons_return_2yr": -37.3,
    "path": "staging/retrospective/UNP/2018-01-12",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.4,
+    "tr_1y": 10.7,
+    "tr_2y": 30.8,
+    "tr_3y": 62.4,
+    "excess_6m": -1.0,
+    "excess_1y": 15.7,
+    "excess_2y": 9.8,
+    "excess_3y": 20.2,
+    "avg_m12_m24": 19.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16086,7 +16788,20 @@
    "cons_return_2yr": -37.3,
    "path": "staging/retrospective/UNP/2018-01-19",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.4,
+    "tr_1y": 14.3,
+    "tr_2y": 36.0,
+    "tr_3y": 59.9,
+    "excess_6m": -0.3,
+    "excess_1y": 17.4,
+    "excess_2y": 13.8,
+    "excess_3y": 19.1,
+    "avg_m12_m24": 20.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16105,7 +16820,20 @@
    "cons_return_2yr": -23.3,
    "path": "staging/retrospective/UNP/2018-01-26",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.1,
+    "tr_1y": 22.2,
+    "tr_2y": 43.4,
+    "tr_3y": 57.0,
+    "excess_6m": 11.5,
+    "excess_1y": 27.7,
+    "excess_2y": 24.9,
+    "excess_3y": 17.3,
+    "avg_m12_m24": 26.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16124,7 +16852,20 @@
    "cons_return_2yr": -20.4,
    "path": "staging/retrospective/UNP/2018-02-02",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.0,
+    "tr_1y": 25.8,
+    "tr_2y": 43.9,
+    "tr_3y": 67.4,
+    "excess_6m": 13.7,
+    "excess_1y": 25.9,
+    "excess_2y": 23.2,
+    "excess_3y": 22.9,
+    "avg_m12_m24": 31.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16143,7 +16884,20 @@
    "cons_return_2yr": -18.9,
    "path": "staging/retrospective/UNP/2018-02-09",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.0,
+    "tr_1y": 29.5,
+    "tr_2y": 49.7,
+    "tr_3y": 69.1,
+    "excess_6m": 8.1,
+    "excess_1y": 24.1,
+    "excess_2y": 18.6,
+    "excess_3y": 13.6,
+    "avg_m12_m24": 34.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16162,7 +16916,20 @@
    "cons_return_2yr": -18.3,
    "path": "staging/retrospective/UNP/2018-02-16",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.2,
+    "tr_1y": 29.1,
+    "tr_2y": 42.1,
+    "tr_3y": 67.3,
+    "excess_6m": 7.4,
+    "excess_1y": 25.6,
+    "excess_2y": 14.5,
+    "excess_3y": 17.6,
+    "avg_m12_m24": 27.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16181,7 +16948,20 @@
    "cons_return_2yr": -18.7,
    "path": "staging/retrospective/UNP/2018-02-23",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.4,
+    "tr_1y": 28.3,
+    "tr_2y": 39.6,
+    "tr_3y": 61.2,
+    "excess_6m": 7.5,
+    "excess_1y": 24.8,
+    "excess_2y": 14.4,
+    "excess_3y": 14.2,
+    "avg_m12_m24": 27.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16200,7 +16980,20 @@
    "cons_return_2yr": -14.6,
    "path": "staging/retrospective/UNP/2018-03-02",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.4,
+    "tr_1y": 32.8,
+    "tr_2y": 30.2,
+    "tr_3y": 71.3,
+    "excess_6m": 9.6,
+    "excess_1y": 26.7,
+    "excess_2y": 11.4,
+    "excess_3y": 21.6,
+    "avg_m12_m24": 33.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16219,7 +17012,20 @@
    "cons_return_2yr": -20.0,
    "path": "staging/retrospective/UNP/2018-03-09",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.1,
+    "tr_1y": 22.0,
+    "tr_2y": 4.1,
+    "tr_3y": 62.1,
+    "excess_6m": 10.1,
+    "excess_1y": 21.8,
+    "excess_2y": 1.9,
+    "excess_3y": 17.4,
+    "avg_m12_m24": 24.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16238,7 +17044,20 @@
    "cons_return_2yr": -20.0,
    "path": "staging/retrospective/UNP/2018-03-16",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.9,
+    "tr_1y": 22.6,
+    "tr_2y": -3.7,
+    "tr_3y": 62.3,
+    "excess_6m": 9.3,
+    "excess_1y": 18.1,
+    "excess_2y": 5.3,
+    "excess_3y": 12.3,
+    "avg_m12_m24": 24.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16257,7 +17076,20 @@
    "cons_return_2yr": -16.8,
    "path": "staging/retrospective/UNP/2018-03-23",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.2,
+    "tr_1y": 24.2,
+    "tr_2y": -8.3,
+    "tr_3y": 65.9,
+    "excess_6m": 12.1,
+    "excess_1y": 13.9,
+    "excess_2y": 1.1,
+    "excess_3y": 8.6,
+    "avg_m12_m24": 28.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16276,7 +17108,20 @@
    "cons_return_2yr": -18.4,
    "path": "staging/retrospective/UNP/2018-03-29",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.3,
+    "tr_1y": 26.8,
+    "tr_2y": 8.6,
+    "tr_3y": 74.0,
+    "excess_6m": 10.8,
+    "excess_1y": 17.4,
+    "excess_2y": 8.2,
+    "excess_3y": 17.3,
+    "avg_m12_m24": 25.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16295,7 +17140,20 @@
    "cons_return_2yr": -15.8,
    "path": "staging/retrospective/UNP/2018-04-06",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.9,
+    "tr_1y": 32.0,
+    "tr_2y": 18.9,
+    "tr_3y": 78.1,
+    "excess_6m": 15.1,
+    "excess_1y": 18.8,
+    "excess_2y": 12.6,
+    "excess_3y": 15.3,
+    "avg_m12_m24": 29.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16314,7 +17172,20 @@
    "cons_return_2yr": -18.3,
    "path": "staging/retrospective/UNP/2018-04-13",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.8,
+    "tr_1y": 28.6,
+    "tr_2y": 14.6,
+    "tr_3y": 73.4,
+    "excess_6m": 9.7,
+    "excess_1y": 17.2,
+    "excess_2y": 6.5,
+    "excess_3y": 11.4,
+    "avg_m12_m24": 25.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16333,7 +17204,20 @@
    "cons_return_2yr": -19.1,
    "path": "staging/retrospective/UNP/2018-04-20",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.7,
+    "tr_1y": 32.6,
+    "tr_2y": 13.2,
+    "tr_3y": 70.7,
+    "excess_6m": 6.2,
+    "excess_1y": 21.8,
+    "excess_2y": 3.5,
+    "excess_3y": 9.9,
+    "avg_m12_m24": 23.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16352,7 +17236,20 @@
    "cons_return_2yr": -15.9,
    "path": "staging/retrospective/UNP/2018-04-27",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.7,
+    "tr_1y": 33.5,
+    "tr_2y": 22.8,
+    "tr_3y": 75.0,
+    "excess_6m": 6.2,
+    "excess_1y": 21.4,
+    "excess_2y": 10.9,
+    "excess_3y": 12.2,
+    "avg_m12_m24": 23.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16371,7 +17268,20 @@
    "cons_return_2yr": -15.2,
    "path": "staging/retrospective/UNP/2018-05-04",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.9,
+    "tr_1y": 36.0,
+    "tr_2y": 20.6,
+    "tr_3y": 76.4,
+    "excess_6m": 8.7,
+    "excess_1y": 23.5,
+    "excess_2y": 9.9,
+    "excess_3y": 13.9,
+    "avg_m12_m24": 24.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16390,7 +17300,20 @@
    "cons_return_2yr": -20.1,
    "path": "staging/retrospective/UNP/2018-05-11",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.6,
+    "tr_1y": 25.8,
+    "tr_2y": 15.1,
+    "tr_3y": 66.8,
+    "excess_6m": 3.9,
+    "excess_1y": 18.3,
+    "excess_2y": 3.9,
+    "excess_3y": 8.9,
+    "avg_m12_m24": 17.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16409,7 +17332,20 @@
    "cons_return_2yr": -20.9,
    "path": "staging/retrospective/UNP/2018-05-18",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.4,
+    "tr_1y": 23.7,
+    "tr_2y": 15.5,
+    "tr_3y": 62.3,
+    "excess_6m": 4.5,
+    "excess_1y": 16.4,
+    "excess_2y": 2.7,
+    "excess_3y": 4.3,
+    "avg_m12_m24": 15.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16428,7 +17364,20 @@
    "cons_return_2yr": -21.6,
    "path": "staging/retrospective/UNP/2018-05-25",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.0,
+    "tr_1y": 20.9,
+    "tr_2y": 18.7,
+    "tr_3y": 60.5,
+    "excess_6m": 2.3,
+    "excess_1y": 15.1,
+    "excess_2y": 6.1,
+    "excess_3y": 0.7,
+    "avg_m12_m24": 14.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16447,7 +17396,20 @@
    "cons_return_2yr": -22.6,
    "path": "staging/retrospective/UNP/2018-06-01",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.8,
+    "tr_1y": 15.8,
+    "tr_2y": 20.3,
+    "tr_3y": 60.8,
+    "excess_6m": 4.1,
+    "excess_1y": 13.3,
+    "excess_2y": 4.6,
+    "excess_3y": 1.3,
+    "avg_m12_m24": 13.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16466,7 +17428,20 @@
    "cons_return_2yr": -21.3,
    "path": "staging/retrospective/UNP/2018-06-08",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.1,
+    "tr_1y": 21.3,
+    "tr_2y": 30.7,
+    "tr_3y": 61.3,
+    "excess_6m": 7.5,
+    "excess_1y": 16.0,
+    "excess_2y": 10.6,
+    "excess_3y": 3.5,
+    "avg_m12_m24": 15.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16485,7 +17460,20 @@
    "cons_return_2yr": -22.7,
    "path": "staging/retrospective/UNP/2018-06-15",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.9,
+    "tr_1y": 15.9,
+    "tr_2y": 19.1,
+    "tr_3y": 59.2,
+    "excess_6m": 3.6,
+    "excess_1y": 10.1,
+    "excess_2y": 4.8,
+    "excess_3y": 0.5,
+    "avg_m12_m24": 13.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16504,7 +17492,20 @@
    "cons_return_2yr": -21.0,
    "path": "staging/retrospective/UNP/2018-06-22",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.8,
+    "tr_1y": 19.6,
+    "tr_2y": 21.9,
+    "tr_3y": 59.9,
+    "excess_6m": 4.6,
+    "excess_1y": 10.7,
+    "excess_2y": 4.8,
+    "excess_3y": -0.2,
+    "avg_m12_m24": 15.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16523,7 +17524,20 @@
    "cons_return_2yr": -19.7,
    "path": "staging/retrospective/UNP/2018-06-29",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.3,
+    "tr_1y": 21.7,
+    "tr_2y": 21.9,
+    "tr_3y": 62.2,
+    "excess_6m": 5.3,
+    "excess_1y": 11.7,
+    "excess_2y": 5.6,
+    "excess_3y": -1.6,
+    "avg_m12_m24": 17.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16542,7 +17556,20 @@
    "cons_return_2yr": -20.5,
    "path": "staging/retrospective/UNP/2018-07-06",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.6,
+    "tr_1y": 21.2,
+    "tr_2y": 25.4,
+    "tr_3y": 64.3,
+    "excess_6m": 4.8,
+    "excess_1y": 10.9,
+    "excess_2y": 6.2,
+    "excess_3y": 1.0,
+    "avg_m12_m24": 16.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16561,7 +17588,20 @@
    "cons_return_2yr": -18.7,
    "path": "staging/retrospective/UNP/2018-07-13",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.6,
+    "tr_1y": 26.8,
+    "tr_2y": 26.1,
+    "tr_3y": 64.6,
+    "excess_6m": 17.0,
+    "excess_1y": 17.3,
+    "excess_2y": 9.5,
+    "excess_3y": 2.9,
+    "avg_m12_m24": 18.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16580,7 +17620,20 @@
    "cons_return_2yr": -18.2,
    "path": "staging/retrospective/UNP/2018-07-20",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.1,
+    "tr_1y": 26.3,
+    "tr_2y": 30.6,
+    "tr_3y": 60.3,
+    "excess_6m": 16.8,
+    "excess_1y": 18.1,
+    "excess_2y": 10.6,
+    "excess_3y": 0.2,
+    "avg_m12_m24": 17.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16599,7 +17652,20 @@
    "cons_return_2yr": -22.1,
    "path": "staging/retrospective/UNP/2018-07-27",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.4,
+    "tr_1y": 19.5,
+    "tr_2y": 23.9,
+    "tr_3y": 54.3,
+    "excess_6m": 14.0,
+    "excess_1y": 10.3,
+    "excess_2y": 5.1,
+    "excess_3y": -7.6,
+    "avg_m12_m24": 11.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16618,7 +17684,20 @@
    "cons_return_2yr": -22.7,
    "path": "staging/retrospective/UNP/2018-08-03",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.7,
+    "tr_1y": 18.1,
+    "tr_2y": 19.7,
+    "tr_3y": 54.4,
+    "excess_6m": 11.5,
+    "excess_1y": 13.0,
+    "excess_2y": -0.2,
+    "excess_3y": -7.0,
+    "avg_m12_m24": 11.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNP",
@@ -16637,7 +17716,20 @@
    "cons_return_2yr": -22.2,
    "path": "staging/retrospective/UNP/2018-08-10",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.7,
+    "tr_1y": 15.1,
+    "tr_2y": 30.4,
+    "tr_3y": 56.5,
+    "excess_6m": 13.2,
+    "excess_1y": 10.2,
+    "excess_2y": 8.0,
+    "excess_3y": -5.7,
+    "avg_m12_m24": 11.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16656,7 +17748,20 @@
    "cons_return_2yr": -22.6,
    "path": "staging/retrospective/UNP/2018-08-17",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.0,
+    "tr_1y": 13.5,
+    "tr_2y": 34.6,
+    "tr_3y": 58.6,
+    "excess_6m": 16.7,
+    "excess_1y": 10.2,
+    "excess_2y": 12.1,
+    "excess_3y": -3.0,
+    "avg_m12_m24": 11.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16675,7 +17780,20 @@
    "cons_return_2yr": -22.9,
    "path": "staging/retrospective/UNP/2018-08-24",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.3,
+    "tr_1y": 8.8,
+    "tr_2y": 33.1,
+    "tr_3y": 54.8,
+    "excess_6m": 16.3,
+    "excess_1y": 7.8,
+    "excess_2y": 9.9,
+    "excess_3y": -6.8,
+    "avg_m12_m24": 11.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16694,7 +17812,20 @@
    "cons_return_2yr": -23.2,
    "path": "staging/retrospective/UNP/2018-08-31",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.5,
+    "tr_1y": 9.9,
+    "tr_2y": 34.5,
+    "tr_3y": 53.1,
+    "excess_6m": 15.5,
+    "excess_1y": 7.3,
+    "excess_2y": 9.9,
+    "excess_3y": -8.5,
+    "avg_m12_m24": 11.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16713,7 +17844,20 @@
    "cons_return_2yr": -25.4,
    "path": "staging/retrospective/UNP/2018-09-07",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.4,
+    "tr_1y": 8.4,
+    "tr_2y": 28.0,
+    "tr_3y": 44.7,
+    "excess_6m": 10.8,
+    "excess_1y": 2.9,
+    "excess_2y": 5.0,
+    "excess_3y": -18.1,
+    "avg_m12_m24": 8.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16732,7 +17876,20 @@
    "cons_return_2yr": -26.5,
    "path": "staging/retrospective/UNP/2018-09-14",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.0,
+    "tr_1y": 11.2,
+    "tr_2y": 31.0,
+    "tr_3y": 36.5,
+    "excess_6m": 8.4,
+    "excess_1y": 5.8,
+    "excess_2y": 10.8,
+    "excess_3y": -21.9,
+    "avg_m12_m24": 7.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16751,7 +17908,20 @@
    "cons_return_2yr": -29.9,
    "path": "staging/retrospective/UNP/2018-09-21",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.4,
+    "tr_1y": 3.0,
+    "tr_2y": 22.1,
+    "tr_3y": 26.1,
+    "excess_6m": 1.1,
+    "excess_1y": -1.1,
+    "excess_2y": 6.3,
+    "excess_3y": -28.1,
+    "avg_m12_m24": 2.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16770,7 +17940,20 @@
    "cons_return_2yr": -28.9,
    "path": "staging/retrospective/UNP/2018-09-28",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.5,
+    "tr_1y": 2.1,
+    "tr_2y": 27.0,
+    "tr_3y": 30.6,
+    "excess_6m": 5.0,
+    "excess_1y": -1.4,
+    "excess_2y": 8.2,
+    "excess_3y": -24.4,
+    "avg_m12_m24": 4.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16789,7 +17972,20 @@
    "cons_return_2yr": -29.3,
    "path": "staging/retrospective/UNP/2018-10-05",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.0,
+    "tr_1y": -2.4,
+    "tr_2y": 27.5,
+    "tr_3y": 35.2,
+    "excess_6m": 2.9,
+    "excess_1y": -6.6,
+    "excess_2y": 5.5,
+    "excess_3y": -21.1,
+    "avg_m12_m24": 4.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16808,7 +18004,20 @@
    "cons_return_2yr": -24.2,
    "path": "staging/retrospective/UNP/2018-10-12",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.1,
+    "tr_1y": 8.0,
+    "tr_2y": 40.0,
+    "tr_3y": 47.3,
+    "excess_6m": 6.0,
+    "excess_1y": -1.3,
+    "excess_2y": 8.3,
+    "excess_3y": -15.9,
+    "avg_m12_m24": 12.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16827,7 +18036,20 @@
    "cons_return_2yr": -22.2,
    "path": "staging/retrospective/UNP/2018-10-19",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.9,
+    "tr_1y": 11.0,
+    "tr_2y": 43.3,
+    "tr_3y": 59.5,
+    "excess_6m": 14.0,
+    "excess_1y": 1.1,
+    "excess_2y": 15.4,
+    "excess_3y": -9.7,
+    "avg_m12_m24": 16.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16846,7 +18068,20 @@
    "cons_return_2yr": -15.7,
    "path": "staging/retrospective/UNP/2018-10-26",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.3,
+    "tr_1y": 23.2,
+    "tr_2y": 34.6,
+    "tr_3y": 76.7,
+    "excess_6m": 13.7,
+    "excess_1y": 7.5,
+    "excess_2y": 2.5,
+    "excess_3y": -1.5,
+    "avg_m12_m24": 21.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16865,7 +18100,20 @@
    "cons_return_2yr": -19.0,
    "path": "staging/retrospective/UNP/2018-11-02",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.5,
+    "tr_1y": 18.5,
+    "tr_2y": 25.6,
+    "tr_3y": 69.6,
+    "excess_6m": 11.5,
+    "excess_1y": 3.9,
+    "excess_2y": 0.1,
+    "excess_3y": -6.5,
+    "avg_m12_m24": 17.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16884,7 +18132,20 @@
    "cons_return_2yr": -19.9,
    "path": "staging/retrospective/UNP/2018-11-09",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.0,
+    "tr_1y": 19.6,
+    "tr_2y": 36.7,
+    "tr_3y": 68.0,
+    "excess_6m": 13.8,
+    "excess_1y": 6.4,
+    "excess_2y": 5.0,
+    "excess_3y": -6.3,
+    "avg_m12_m24": 15.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16903,7 +18164,20 @@
    "cons_return_2yr": -20.5,
    "path": "staging/retrospective/UNP/2018-11-16",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.1,
+    "tr_1y": 18.7,
+    "tr_2y": 41.4,
+    "tr_3y": 67.1,
+    "excess_6m": 11.0,
+    "excess_1y": 2.8,
+    "excess_2y": 4.9,
+    "excess_3y": -10.5,
+    "avg_m12_m24": 15.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16922,7 +18196,20 @@
    "cons_return_2yr": -16.1,
    "path": "staging/retrospective/UNP/2018-11-23",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.5,
+    "tr_1y": 25.0,
+    "tr_2y": 49.6,
+    "tr_3y": 80.3,
+    "excess_6m": 13.3,
+    "excess_1y": 4.8,
+    "excess_2y": 9.6,
+    "excess_3y": -3.9,
+    "avg_m12_m24": 22.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16941,7 +18228,20 @@
    "cons_return_2yr": -21.7,
    "path": "staging/retrospective/UNP/2018-11-30",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.4,
+    "tr_1y": 16.8,
+    "tr_2y": 37.6,
+    "tr_3y": 60.2,
+    "excess_6m": 9.2,
+    "excess_1y": 0.8,
+    "excess_2y": 2.2,
+    "excess_3y": -11.2,
+    "avg_m12_m24": 14.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16960,7 +18260,20 @@
    "cons_return_2yr": -18.4,
    "path": "staging/retrospective/UNP/2018-12-07",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.8,
+    "tr_1y": 19.2,
+    "tr_2y": 44.2,
+    "tr_3y": 75.1,
+    "excess_6m": 7.7,
+    "excess_1y": -2.4,
+    "excess_2y": -0.1,
+    "excess_3y": -9.0,
+    "avg_m12_m24": 19.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16979,7 +18292,20 @@
    "cons_return_2yr": -15.6,
    "path": "staging/retrospective/UNP/2018-12-14",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.4,
+    "tr_1y": 26.8,
+    "tr_2y": 44.2,
+    "tr_3y": 79.1,
+    "excess_6m": 6.3,
+    "excess_1y": 2.8,
+    "excess_2y": -0.1,
+    "excess_3y": -5.3,
+    "avg_m12_m24": 24.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -16998,7 +18324,20 @@
    "cons_return_2yr": -9.2,
    "path": "staging/retrospective/UNP/2018-12-21",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.7,
+    "tr_1y": 38.9,
+    "tr_2y": 58.5,
+    "tr_3y": 91.7,
+    "excess_6m": 5.5,
+    "excess_1y": 3.3,
+    "excess_2y": 1.0,
+    "excess_3y": -7.7,
+    "avg_m12_m24": 33.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -17017,7 +18356,20 @@
    "cons_return_2yr": -12.0,
    "path": "staging/retrospective/UNP/2018-12-28",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.9,
+    "tr_1y": 35.3,
+    "tr_2y": 55.9,
+    "tr_3y": 90.9,
+    "excess_6m": 5.6,
+    "excess_1y": 2.7,
+    "excess_2y": 1.1,
+    "excess_3y": -8.5,
+    "avg_m12_m24": 29.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNP",
@@ -17036,7 +18388,20 @@
    "cons_return_2yr": -12.9,
    "path": "staging/retrospective/UNP/2018-12-31",
    "generated": "2026-10-25",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.6,
+    "tr_1y": 33.0,
+    "tr_2y": 54.5,
+    "tr_3y": 89.1,
+    "excess_6m": 5.3,
+    "excess_1y": 2.3,
+    "excess_2y": 1.1,
+    "excess_3y": -8.2,
+    "avg_m12_m24": 28.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   }
  ]
 }
