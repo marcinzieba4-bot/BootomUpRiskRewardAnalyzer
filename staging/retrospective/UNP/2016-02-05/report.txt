@@ -1,0 +1,156 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $75.03  ·  RETROSPECTIVE as of 2016-02-05
+  Signal: ◉ BUY   Ratio B: 0.44x   Adj gap: -1.06  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2016-02-05; latest print Q4 2015 (Jan 21)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2016E operating revenue, USD bn  →  FY2018E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2016E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Intermodal                $     3.7  $   3.7  $   4.0      +0.0      +0.3
+    -14% revenue in Q4
+  Industrial Products       $     3.4  $   3.4  $   3.8      +0.0      +0.4
+    -23% revenue in Q4
+  Agricultural Products     $     3.2  $   3.2  $   3.5      +0.0      +0.3
+    -12% revenue in Q4
+  Chemicals                 $     3.2  $   3.2  $   3.5      +0.0      +0.3
+    -7% revenue in Q4
+  Coal                      $     2.9  $   2.9  $   3.2      +0.0      +0.3
+    -31% revenue in Q4
+  Automotive                $     1.9  $   1.9  $   2.1      +0.0      +0.2
+    +1% revenue in Q4
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    18.3  $  18.3  $  20.1      +0.0      +1.8
+  FY2016E = FY15 $21.81B × (1 − 16.0%: no FY16 revenue guide, Q4 2015 freight revenue); split pro rata to full-year 2015 actuals freight revenue
+  Q4 2015 (Jan 21): freight revenue $4.86B -16%; carloads -9%, ARC $2,208 -8%;
+  operating ratio 63.2% (+1.8 pt); EPS $1.31 vs $1.61; GTMs/employee -8%
+  FY16: no numeric guide yet; the Q4 2015 release in words: 'we are well-positioned to efficiently serve customers in existing markets as they rebound'
+
+  FY2016E EPS check:  ($18.3B × 36.9% − $0.40B net interest) × (1−37.7%) ÷ 0.854B  =  $4.64  (FY2016E: no numeric EPS guide yet, FY15's $5.49 stands $5.49)
+  FY2018E BEAR check: ($18.3B × 36.9% − interest) ÷ 0.819B  =  $4.84  (scenario $3.74)
+  FY2018E BULL check: ($20.1B × 37.3% − interest) ÷ 0.819B  =  $5.40  (scenario $7.97)
+  Every 1pp of operating margin ≈ $0.13 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     -9.0%  ⚠ BEAR  █░░░
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%     -8.0%  ⚠ BEAR  █░░░
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%    -16.0%  ⚠ BEAR  █░░░
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     -8.0%  ⚠ BEAR  █░░░
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    +1.8pt  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.15 / 4.00
+  Market composite:   2.36 / 4.00  (back-solved from $75 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 1.30  →  Gap -1.06  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY15 operating ratio 63.1%, revenue -9% on carloads -6%; Q4 revenue per car -8%  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 13.7x FY16E vs a 15.3x 10-yr median (20th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY16 revenue guide, Q4 2015 freight revenue -16% vs a 8.1% 10-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash $1.39B, FY15 free cash flow $0.52B, 35.3M shares repurchased in 2015 (almost $3.5B), 6.6M of them in Q4 2015  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              -9.0%     -6.0%   +3.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth           -8.0%     -2.0%   +6.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth              -16.0%     -8.0%   +8.0%  Volume and price turn down together
+  GTMs per employee growth             -8.0%     -6.0%   +2.0%  Volume falls faster than crews are cut
+  Operating ratio change              +1.8pt    +2.0pt  +0.2pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$58  (model)  /  $49 (defined)
+  Bear probability (proxy model):  72.2%
+
+  KEY TRIGGER: carloads went from -6% (Q3 2015) to -9% (Q4 2015);
+  the bear case needs a volume recession that pricing (revenue per car -8% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.49  (FY2016E: no numeric EPS guide yet, FY15's $5.49 stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2006 13.4x, 2007 13.1x, 2008 9.5x, 2009 9.0x, 2010 11.0x, 2011 11.9x, 2012 12.7x, 2013 13.6x, 2014 14.4x, 2015 13.7x, 2016 12.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $66/share
+  Current $75 vs Updated EPP $66:  +14%  moderate distance to floor
+  Bear $49 vs Updated EPP $66:  -26%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0       +8.0   BASE floor (vs -9 now)
+  Avg revenue per car growth                   2.0      +10.0   BASE floor (vs -8 now)
+  Freight revenue growth                       1.0      +17.0   BASE floor (vs -16 now)
+  GTMs per employee growth                     0.0       +8.0   BASE floor (vs -8 now)
+  Operating ratio change                       0.0       -1.8   BASE floor (vs +2 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.49 × (1+0.0%)² = $5.49
+  At 15x P/E (conservative):  $82/share
+  + Cumul. dividends (2yr):  +$4.53/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $82  (▲7 from $75)
+  Conservative total return:  +16% over 2yr  = +8%/yr
+
+  At 13.7x the multiple is already near its 15x median, so the conservative
+  case is a growth question: breakeven at 15x needs FY2018E EPS of $4.70,
+  i.e. -7.5%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $67.06  –  $124.52  (at 14th pct of range)
+  Annual dividend:      $2.20/share  (yield 2.9%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 1.00
+  1-sigma range (1yr):  $56  –  $94  ($75 ± 25%)
+  2-sigma range (1yr):  $37  –  $113
+  ────────────────────────────────────────────────────────────
+  Bear $49 requires:  ~1.4σ price move  (within normal vol range)
+  A Class I railroad with a 1.0 beta: the stock is +9% off its January
+  low while carloads went from -6% (Q3 2015) to -9% (Q4 2015).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.74  13.0x  $     49    72.2%     11.9%   +60.4pp  EPS -17.4%/yr (worst year FY05-FY15, capped at 0%); P/E to its 10th pct
+  BASE        4.07  15.3x  $     62    20.7%     41.4%   -20.7pp  EPS +-13.9%/yr (Q4 2015 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        7.97  16.8x  $    134     5.9%     39.3%   -33.4pp  EPS +20.5%/yr (FY05-FY15 CAGR); P/E holds its 75th pct
+  XBULL      11.08  18.2x  $    202     1.1%      7.4%    -6.3pp  EPS +42.0%/yr (best 2-yr run FY05-FY15); P/E at its 90th pct
+
+  Proxy EV (2yr): $58  /  Market EV: $99  /  Current: $75
+  Conservative EV (2yr, ④): $82 + $4.53 divs = $87 total value
+  Downside (→ Bear $49): 34.7%   Upside (→ Bull $134): 78.6%   Ratio B 0.44x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $75 the market needs $99 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.36 against a model
+  read of 1.30: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.44x     +14%    -1.06  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.33x     +14%    -0.92  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.62x     +14%    -1.19  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.40x     +14%    -1.02  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.51x     +14%    -1.10  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.44x     +14%    -0.76  OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.44x      -9%    -0.86  OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.44x     +14%    -0.94  OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2016 print (late April) — the next read on carloads (-9% now) and the guide
+  (2) Revenue per car — -8% in Q4 2015: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY16 guide — the Q4 2015 release gives words only ('we are well-positioned to efficiently serve customers in existing markets as they rebound')
+  (4) Operating ratio — 63.2% in Q4 2015 (+1.8 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 14x — management's own read of the multiple
+  ◉ BUY  |  EPP floor $66  |  ADD below ~$53  |  TRIM above $134
+════════════════════════════════════════════════════════════════════════
+

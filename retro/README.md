@@ -293,12 +293,14 @@ python3 retro/build_unp.py --weekly 2011-01-03 2011-12-31                   # 52
 python3 retro/build_unp.py --weekly 2012-01-02 2012-12-31                   # 53 dates, 2012-01-06 .. 2012-12-31
 python3 retro/build_unp.py --weekly 2013-01-07 2013-12-31                   # 52 dates, 2013-01-11 .. 2013-12-31
 python3 retro/build_unp.py --weekly 2014-01-06 2014-12-31                   # 52 dates, 2014-01-10 .. 2014-12-31
+python3 retro/build_unp.py --weekly 2015-01-05 2015-12-31                   # 52 dates, 2015-01-09 .. 2015-12-31
+python3 retro/build_unp.py --weekly 2016-01-04 2016-12-31                   # 52 dates, 2016-01-08 .. 2016-12-30
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2015-01-01 UNP
+python3 retro/tools/firewall.py 2017-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -554,6 +556,55 @@ Seen in the build (method behaviour, not tuned):
   1.8%).
 - **Print text is not restated for a split.** From 2014-06-13 to 2014-07-18 the latest print's buyback text (Q1 2014,
   3.8M shares) is on the pre-split share count, as in 2008.
+
+### UNP 2015-2016: volume statements in words, a land-sale gain, the energy-transition question
+
+Every 8-K, 10-Q and release of 2015 and 2016 was read, the 10-Qs searched in full for forward-looking statements.
+Decided before any 2015 or 2016 date was built or scored:
+
+- **No numeric guide.** The FY2014 10-K's 2015 Outlook ("positive volume growth", "continued margin improvement") and
+  the FY2015 10-K's 2016 Outlook ("volumes to be down slightly") give words only, as do all eight releases. FY14's
+  $5.75 stands as the current-year EPS from 2015-01-23, FY15's $5.49 from 2016-01-22. BASE growth follows the latest
+  quarter's freight revenue: +9% (Q4 2014), -1%, -10%, -10%, -16% (Q4 2015), -14%, -13%, -7%.
+- **Two full-year volume statements in words.** The CFO's remarks furnished on 2015-03-03 ("continues to expect
+  full-year carload volumes to be positive year-over-year") and 2016-05-17 (full-year volumes "still expected to be
+  down in the mid-single digit range") enter as `fy_words`, the field the 2008-09-23 8-K used. They are shown in the
+  guide line and feed no input; the method has no volume input. Their quarter statements (Q1 2015 volumes flat to
+  slightly down, Q2 2016 down in the low teens) and the quarter-only 8-Ks of 2015-05-20 (coal) and 2016-03-10 (Q1
+  coal and volumes) have no field and add nothing.
+- **The Q2 2015 land-sale gain stays in.** The Fremont sale added 8 cents to Q2 2015 EPS ($1.38) and to FY15 ($5.49).
+  The company published no figure excluding it, so by the normalization rule GAAP stands; the note says so.
+- **Two 10-K vintages on the post-split basis.** The FY2014 10-K (filed 2015-02-06 after the close, dated 2015-02-09)
+  gives 2010-2014 already restated for the 2014 split (2010: $2.76, not $5.53 / 2 = $2.765). The FY2015 10-K (filed
+  2016-02-05 after the close, dated 2016-02-08) gives 2011-2015. Years from filings published before the 2014 split
+  (2005-2009) carry their own `eps_published` dates, so the split halves exactly them, as the FY2008 vintage did for
+  2008. First-year diluted shares: 2005's 266.5M from the FY2007 10-K, 2006's 543.9M from the FY2008 10-K.
+- **Dividends:** $0.55 (8-K of 2015-02-05, dated 2015-02-06) and $0.605 (8-K of 2016-11-17, dated 2016-11-18).
+- **ENERGY_TRANSITION is live from 2015-12-12, but not encoded for UNP.** The taxonomy lets a date use a theme only
+  with point-in-time evidence that the market was pricing it for that company; the theme's scope is the owners of oil,
+  gas and coal reserves and refining. The FY2015 10-K, the first after the theme went live, carries the same
+  climate-change risk factor as the FY2014 10-K ("restrictions on emissions could also affect our customers that (a)
+  use commodities that we carry to produce energy"). The same 10-K ties the coal decline to low natural-gas prices and
+  high inventories. No filing shows the market pricing the theme for UNP. So the builder still has no theme encoding,
+  the theme signal stays "none live" and the class DURABLE. A watch-list line in the ACN style (company-acknowledged,
+  no market read) would change text only, not numbers; it is left for the owner to decide.
+- **Values published as "-"** (Q1 2015 operating revenue, some groups' growth) are 0%. From Q4 2014 the tables name
+  the group "Agricultural Products"; group names are display only.
+- **Adds nothing:** the debt offerings and exchange offers; the officer, board, bylaw and vote 8-Ks (a new CEO in
+  2015, later also chairman); the PTC deadline 8-Ks (embargo plans, then the extension to 2018); the 10b5-1 plan; the
+  repurchase authorization of 2016-11-17 (120 million shares); capex figures; the 10-Qs (no outlook).
+- **ISO weeks:** 2015 has 53, so the 2015 batch covers weeks 2-53 (2014-12-31 covers week 1) and ends on 2015-12-31;
+  the 2016 batch starts on 2016-01-04 and ends on 2016-12-30. A 2017 batch starts on 2017-01-02.
+
+Seen in the build (method behaviour, not tuned):
+- **The 2009 pattern, larger.** From the Q1 2015 print the latest quarter's -1% to -16% freight revenue becomes BASE
+  growth for two years. The BASE price falls well below the market, so the class reads RICH on 100 of 104 dates, even
+  at 12.7x trailing EPS (the 8th percentile, early 2016). Ratio B, with BULL still on the decade CAGR, puts the legacy
+  tier at BUY on 32 dates and ACCUMULATE on 23. The class and the tier disagree for most of the two years.
+- **A stale guide line.** March 2015's "volumes to be positive" stays in the guide line all year, while the releases
+  later say "the volume outlook remains uncertain". Each field comes from the latest guide that states it (the 2008
+  rule: the FY08 EPS guide stood all year too).
+- **A sign quirk:** a negative BASE growth prints as "EPS +-13.5%/yr" (as in 2009).
 
 ## Categories change with the era
 
