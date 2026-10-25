@@ -161,108 +161,108 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2010-12-17 | $91.18 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.28 | 4.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +23.3pp | +27.2% | ✗ |
 | 2010-12-23 | $91.71 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.27 | 5.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.9% | +23.7pp | +26.9% | ✗ |
 | 2010-12-31 | $92.66 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.15 | 5.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.1% | +22.2pp | +25.9% | ✗ |
-| 2011-01-07 | $95.18 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.18 | 7.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-01-14 | $98.66 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.00 | 10.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-01-21 | $94.51 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.32 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-01-28 | $93.54 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.36 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-04 | $94.25 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.33 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-11 | $99.02 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.16 | 1.78x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2011-02-18 | $97.14 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.23 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-25 | $94.03 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.35 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-03-04 | $95.36 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.31 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-03-11 | $94.77 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.32 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-03-18 | $95.02 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.32 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-03-25 | $97.59 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.22 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-04-01 | $98.27 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.20 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-04-08 | $95.66 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.31 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-04-15 | $98.27 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.20 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-04-21 | $96.06 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.46 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2011-04-29 | $103.47 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.21 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-05-06 | $102.34 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.23 | 2.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-05-13 | $100.46 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.29 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-05-20 | $101.99 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.24 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-05-27 | $103.53 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.21 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-06-03 | $101.14 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.29 | 2.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-06-10 | $99.60 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.33 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-06-17 | $100.01 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.32 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-06-24 | $100.04 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.32 | 2.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-07-01 | $106.76 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.15 | 3.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-07-08 | $104.30 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.21 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-07-15 | $100.74 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.31 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-07-22 | $103.80 | Union Pacific Corporation Q2 2011 results | 2.60 | -0.16 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-07-29 | $102.48 | Union Pacific Corporation Q2 2011 results | 2.60 | -0.11 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-08-05 | $92.47 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.40 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-08-12 | $92.72 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.38 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-08-19 | $85.69 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.70 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-08-26 | $89.55 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.52 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-09-02 | $88.27 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.58 | 1.16x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-09-09 | $85.09 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.72 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-09-16 | $91.64 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.44 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2011-09-23 | $83.11 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.83 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-09-30 | $81.67 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.90 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-10-07 | $88.80 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.55 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-10-14 | $91.97 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.42 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2011-10-21 | $96.96 | Union Pacific Corporation Q3 2011 results | 2.55 | +0.18 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2011-10-28 | $102.02 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.13 | 2.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-11-04 | $101.24 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.07 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2011-11-11 | $102.88 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.14 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-11-18 | $102.04 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.11 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-11-25 | $95.16 | Union Pacific Corporation Q3 2011 results | 2.55 | +0.26 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-12-02 | $102.69 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.12 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-12-09 | $101.75 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.07 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2011-12-16 | $99.88 | Union Pacific Corporation Q3 2011 results | 2.55 | +0.10 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2011-12-23 | $105.53 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.21 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-12-30 | $105.94 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.23 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-01-06 | $107.53 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.27 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-01-13 | $109.73 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.34 | 2.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-01-20 | $112.84 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.76 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-01-27 | $114.90 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.59 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-02-03 | $116.11 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.55 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-02-10 | $111.63 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.82 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-02-17 | $110.99 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.83 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-02-24 | $112.62 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.78 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-03-02 | $110.89 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.85 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-03-09 | $107.64 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.95 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2012-03-16 | $113.15 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.68 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-03-23 | $108.89 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.92 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-03-30 | $107.48 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.97 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2012-04-05 | $108.65 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.93 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-04-13 | $108.04 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.94 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-04-20 | $107.26 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.66 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-04-27 | $113.89 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.34 | 1.75x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-05-04 | $113.60 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.36 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-05-11 | $112.18 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.51 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-05-18 | $107.17 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.68 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-05-25 | $111.88 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.51 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-06-01 | $108.11 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.65 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-06-08 | $110.64 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.56 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-06-15 | $114.87 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.31 | 1.82x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-06-22 | $116.48 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.26 | 1.93x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-06-29 | $119.31 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.16 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2012-07-06 | $116.75 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.25 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-07-13 | $118.15 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.20 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2012-07-20 | $119.60 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.51 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-07-27 | $122.48 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.56 | 3.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-03 | $124.54 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.61 | 3.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-10 | $122.01 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.55 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-17 | $125.01 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.62 | 3.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-24 | $123.99 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.59 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-31 | $121.44 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.53 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-09-07 | $122.25 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.55 | 3.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-09-14 | $128.43 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.66 | 4.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-09-21 | $119.37 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.47 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-09-28 | $118.70 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.45 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-10-05 | $122.16 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.53 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-10-12 | $121.05 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.51 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-10-19 | $123.77 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.77 | 3.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-10-26 | $123.61 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.76 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-11-02 | $123.98 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.77 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-11-09 | $120.25 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.67 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-11-16 | $117.56 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.59 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-11-23 | $121.98 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.71 | 2.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-11-30 | $122.78 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.73 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-12-07 | $123.95 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.76 | 2.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-12-14 | $124.28 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.75 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-12-21 | $125.68 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.78 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-12-28 | $123.54 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.74 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-12-31 | $125.72 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.78 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2011-01-07 | $95.18 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.18 | 7.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.5% | +22.2pp | +23.0% | ✗ |
+| 2011-01-14 | $98.66 | Union Pacific Corporation Q3 2010 results | 3.50 | +0.00 | 10.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.6% | +19.5pp | +19.1% | ✗ |
+| 2011-01-21 | $94.51 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.32 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +44.9% | +24.9pp | +24.6% | ✗ |
+| 2011-01-28 | $93.54 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.36 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +46.8% | +24.8pp | +26.4% | ✗ |
+| 2011-02-04 | $94.25 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.33 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +44.7% | +26.4pp | +25.8% | ✗ |
+| 2011-02-11 | $99.02 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.16 | 1.78x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +39.2% | +20.9pp | +20.1% | ✗ |
+| 2011-02-18 | $97.14 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.23 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +45.4% | +28.1pp | +22.9% | ✗ |
+| 2011-02-25 | $94.03 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.35 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +45.9% | +29.0pp | +27.4% | ✗ |
+| 2011-03-04 | $95.36 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.31 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +50.0% | +30.3pp | +26.2% | ✗ |
+| 2011-03-11 | $94.77 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.32 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.4% | +28.8pp | +27.6% | ✗ |
+| 2011-03-18 | $95.02 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.32 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.5% | +26.7pp | +27.9% | ✗ |
+| 2011-03-25 | $97.59 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.22 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +45.4% | +23.0pp | +25.1% | ✗ |
+| 2011-04-01 | $98.27 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.20 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +47.4% | +25.8pp | +24.8% | ✗ |
+| 2011-04-08 | $95.66 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.31 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +50.9% | +28.9pp | +28.8% | ✗ |
+| 2011-04-15 | $98.27 | Union Pacific Corporation Q4 2010 results | 3.70 | +1.20 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +43.0% | +21.1pp | +26.0% | ✗ |
+| 2011-04-21 | $96.06 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.46 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +56.8% | +36.2pp | +29.6% | ✗ |
+| 2011-04-29 | $103.47 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.21 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.0% | +26.0pp | +21.1% | ✗ |
+| 2011-05-06 | $102.34 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.23 | 2.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +52.6% | +27.7pp | +23.1% | ✗ |
+| 2011-05-13 | $100.46 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.29 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.9% | +31.6pp | +26.2% | ✗ |
+| 2011-05-20 | $101.99 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.24 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.2% | +31.9pp | +25.2% | ✗ |
+| 2011-05-27 | $103.53 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.21 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +55.6% | +27.4pp | +24.1% | ✗ |
+| 2011-06-03 | $101.14 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.29 | 2.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +59.0% | +28.5pp | +27.9% | ✗ |
+| 2011-06-10 | $99.60 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.33 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.7% | +29.0pp | +30.8% | ✗ |
+| 2011-06-17 | $100.01 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.32 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.9% | +27.4pp | +31.2% | ✗ |
+| 2011-06-24 | $100.04 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.32 | 2.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.2% | +25.6pp | +31.9% | ✗ |
+| 2011-07-01 | $106.76 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.15 | 3.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +50.2% | +25.2pp | +24.3% | ✗ |
+| 2011-07-08 | $104.30 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.21 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.5% | +28.1pp | +27.8% | ✗ |
+| 2011-07-15 | $100.74 | Union Pacific Corporation Q1 2011 results | 3.10 | +0.31 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +63.5% | +31.3pp | +33.2% | ✗ |
+| 2011-07-22 | $103.80 | Union Pacific Corporation Q2 2011 results | 2.60 | -0.16 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.1% | +31.6pp | +30.0% | ✗ |
+| 2011-07-29 | $102.48 | Union Pacific Corporation Q2 2011 results | 2.60 | -0.11 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +58.2% | +23.2pp | +32.5% | ✗ |
+| 2011-08-05 | $92.47 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.40 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +80.5% | +33.3pp | +47.7% | ✗ |
+| 2011-08-12 | $92.72 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.38 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +77.0% | +28.7pp | +48.1% | ✗ |
+| 2011-08-19 | $85.69 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.70 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +88.4% | +36.7pp | +61.0% | ✓ |
+| 2011-08-26 | $89.55 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.52 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +80.3% | +34.5pp | +54.8% | ✓ |
+| 2011-09-02 | $88.27 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.58 | 1.16x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +79.9% | +35.9pp | +57.7% | ✓ |
+| 2011-09-09 | $85.09 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.72 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +90.3% | +40.4pp | +64.3% | ✓ |
+| 2011-09-16 | $91.64 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.44 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +76.4% | +31.8pp | +53.3% | ✗ |
+| 2011-09-23 | $83.11 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.83 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +97.9% | +42.7pp | +69.8% | ✓ |
+| 2011-09-30 | $81.67 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.90 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +96.6% | +42.6pp | +73.8% | ✓ |
+| 2011-10-07 | $88.80 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.55 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +77.9% | +27.8pp | +60.6% | ✓ |
+| 2011-10-14 | $91.97 | Union Pacific Corporation Q2 2011 results | 2.60 | +0.42 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +76.7% | +32.2pp | +55.8% | ✗ |
+| 2011-10-21 | $96.96 | Union Pacific Corporation Q3 2011 results | 2.55 | +0.18 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +64.2% | +18.4pp | +48.4% | ✗ |
+| 2011-10-28 | $102.02 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.13 | 2.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.2% | +12.3pp | +41.6% | ✗ |
+| 2011-11-04 | $101.24 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.07 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +57.1% | +11.2pp | +43.1% | ✗ |
+| 2011-11-11 | $102.88 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.14 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +56.6% | +11.6pp | +41.5% | ✗ |
+| 2011-11-18 | $102.04 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.11 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.3% | +9.1pp | +43.4% | ✗ |
+| 2011-11-25 | $95.16 | Union Pacific Corporation Q3 2011 results | 2.55 | +0.26 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +75.7% | +15.1pp | +54.5% | ✗ |
+| 2011-12-02 | $102.69 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.12 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +64.6% | +15.0pp | +43.9% | ✗ |
+| 2011-12-09 | $101.75 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.07 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +67.0% | +18.2pp | +46.0% | ✗ |
+| 2011-12-16 | $99.88 | Union Pacific Corporation Q3 2011 results | 2.55 | +0.10 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +67.4% | +15.5pp | +49.4% | ✗ |
+| 2011-12-23 | $105.53 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.21 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.5% | +11.9pp | +42.1% | ✗ |
+| 2011-12-30 | $105.94 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.23 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.9% | +10.3pp | +42.2% | ✗ |
+| 2012-01-06 | $107.53 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.27 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +58.7% | +10.8pp | +40.7% | ✗ |
+| 2012-01-13 | $109.73 | Union Pacific Corporation Q3 2011 results | 2.55 | -0.34 | 2.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +58.1% | +12.1pp | +38.5% | ✗ |
+| 2012-01-20 | $112.84 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.76 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +53.6% | +9.5pp | +35.3% | ✓ |
+| 2012-01-27 | $114.90 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.59 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +53.8% | +13.8pp | +33.4% | ✓ |
+| 2012-02-03 | $116.11 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.55 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.6% | +18.4pp | +32.7% | ✗ |
+| 2012-02-10 | $111.63 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.82 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +61.5% | +22.7pp | +38.8% | ✗ |
+| 2012-02-17 | $110.99 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.83 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +67.2% | +27.6pp | +40.3% | ✗ |
+| 2012-02-24 | $112.62 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.78 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +64.3% | +24.6pp | +39.0% | ✗ |
+| 2012-03-02 | $110.89 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.85 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +67.9% | +27.5pp | +41.8% | ✗ |
+| 2012-03-09 | $107.64 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.95 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +79.6% | +38.1pp | +47.0% | ✓ |
+| 2012-03-16 | $113.15 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.68 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +68.7% | +32.9pp | +40.6% | ✗ |
+| 2012-03-23 | $108.89 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.92 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +77.3% | +39.2pp | +47.0% | ✗ |
+| 2012-03-30 | $107.48 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.97 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +77.3% | +40.8pp | +49.7% | ✓ |
+| 2012-04-05 | $108.65 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.93 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +78.4% | +40.3pp | +49.0% | ✗ |
+| 2012-04-13 | $108.04 | Union Pacific Corporation Q4 2011 results | 3.05 | +0.94 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +72.9% | +35.7pp | +50.6% | ✗ |
+| 2012-04-20 | $107.26 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.66 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +82.1% | +42.2pp | +52.5% | ✗ |
+| 2012-04-27 | $113.89 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.34 | 1.75x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +69.9% | +32.5pp | +44.4% | ✗ |
+| 2012-05-04 | $113.60 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.36 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +70.6% | +28.4pp | +45.5% | ✗ |
+| 2012-05-11 | $112.18 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.51 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +73.9% | +30.4pp | +47.9% | ✗ |
+| 2012-05-18 | $107.17 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.68 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +87.5% | +37.4pp | +55.5% | ✗ |
+| 2012-05-25 | $111.88 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.51 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +80.6% | +31.4pp | +49.6% | ✗ |
+| 2012-06-01 | $108.11 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.65 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +89.1% | +33.6pp | +55.4% | ✗ |
+| 2012-06-08 | $110.64 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.56 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +87.1% | +35.3pp | +52.7% | ✗ |
+| 2012-06-15 | $114.87 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.31 | 1.82x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +81.0% | +31.8pp | +47.9% | ✗ |
+| 2012-06-22 | $116.48 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.26 | 1.93x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +78.8% | +26.8pp | +46.6% | ✗ |
+| 2012-06-29 | $119.31 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.16 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +72.1% | +23.2pp | +43.9% | ✗ |
+| 2012-07-06 | $116.75 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.25 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +78.2% | +26.8pp | +47.7% | ✗ |
+| 2012-07-13 | $118.15 | Union Pacific Corporation Q1 2012 results | 2.85 | +0.20 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +74.9% | +24.9pp | +46.6% | ✗ |
+| 2012-07-20 | $119.60 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.51 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +74.5% | +24.6pp | +45.5% | ✗ |
+| 2012-07-27 | $122.48 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.56 | 3.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +71.0% | +23.4pp | +42.8% | ✗ |
+| 2012-08-03 | $124.54 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.61 | 3.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.1% | +19.0pp | +41.1% | ✗ |
+| 2012-08-10 | $122.01 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.55 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +66.7% | +24.6pp | +44.6% | ✗ |
+| 2012-08-17 | $125.01 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.62 | 3.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +68.0% | +25.5pp | +41.8% | ✗ |
+| 2012-08-24 | $123.99 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.59 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +75.5% | +29.9pp | +43.8% | ✗ |
+| 2012-08-31 | $121.44 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.53 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +78.7% | +31.6pp | +47.8% | ✗ |
+| 2012-09-07 | $122.25 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.55 | 3.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +81.5% | +37.3pp | +47.6% | ✗ |
+| 2012-09-14 | $128.43 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.66 | 4.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.7% | +31.7pp | +41.4% | ✗ |
+| 2012-09-21 | $119.37 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.47 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +88.6% | +46.2pp | +53.1% | ✗ |
+| 2012-09-28 | $118.70 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.45 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +88.4% | +46.0pp | +54.9% | ✗ |
+| 2012-10-05 | $122.16 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.53 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +84.6% | +45.3pp | +51.5% | ✗ |
+| 2012-10-12 | $121.05 | Union Pacific Corporation Q2 2012 results | 2.50 | -0.51 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +72.8% | +34.5pp | +53.8% | ✗ |
+| 2012-10-19 | $123.77 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.77 | 3.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +77.2% | +40.8pp | +51.2% | ✗ |
+| 2012-10-26 | $123.61 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.76 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +90.6% | +46.7pp | +52.5% | ✗ |
+| 2012-11-02 | $123.98 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.77 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +93.1% | +45.6pp | +53.3% | ✗ |
+| 2012-11-09 | $120.25 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.67 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +102.9% | +50.6pp | +59.4% | ✗ |
+| 2012-11-16 | $117.56 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.59 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +110.9% | +55.9pp | +64.5% | ✗ |
+| 2012-11-23 | $121.98 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.71 | 2.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +105.1% | +53.9pp | +59.8% | ✗ |
+| 2012-11-30 | $122.78 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.73 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +95.7% | +45.0pp | +59.8% | ✗ |
+| 2012-12-07 | $123.95 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.76 | 2.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +96.9% | +45.8pp | +59.5% | ✗ |
+| 2012-12-14 | $124.28 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.75 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +86.6% | +40.2pp | +60.2% | ✗ |
+| 2012-12-21 | $125.68 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.78 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +93.9% | +44.3pp | +59.5% | ✗ |
+| 2012-12-28 | $123.54 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.74 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +100.4% | +46.4pp | +63.2% | ✗ |
+| 2012-12-31 | $125.72 | Union Pacific Corporation Q3 2012 results | 2.35 | -0.78 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +96.7% | +45.9pp | +60.7% | ✗ |

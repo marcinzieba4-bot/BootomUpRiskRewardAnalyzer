@@ -1,9 +1,9 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 157 weekly dates from 2008-01-04 to 2010-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 262 weekly dates from 2008-01-04 to 2012-12-31. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
-2010 in 3198278.
+2010 in 3198278, 2011-2012 in 9e129f3.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -88,3 +88,63 @@ effective 2008-05-29).
 - **The BEAR rule kept Ratio B high** (BEAR near $24, the 2004 year applied twice), so the legacy tier read AVOID on
   42 dates. Every one of them returned at least +33%.
 
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class CHEAP (2011-08-19 to 2011-10-07) | 7 | +88% | +78% to +98% | 7 | 7 (+37pp) | +61% |
+| class FAIR | 19 | +50% | +39% to +80% | 19 | 19 (+27pp) | +27% |
+| class RICH | 26 | +58% | +38% to +67% | 26 | 26 (+26pp) | +31% |
+| legacy tier ACCUMULATE | 4 | +97% | +88% to +98% | 4 | 4 (+43pp) | +70% |
+| legacy tier WATCHLIST | 21 | +52% | +43% to +80% | 21 | 21 (+28pp) | +28% |
+| legacy tier AVOID | 27 | +58% | +38% to +67% | 27 | 27 (+25pp) | +31% |
+
+- **Every 2011 date made money and beat the market.** All 52 cleared the hurdle and beat SPY (median +27pp), and
+  every outcome landed in BULL. The worst was 2011-01-14 (+38%), the last date priced on trailing FY09 EPS.
+- **CHEAP was best again, and the August-October sell-off was the entry.** The seven CHEAP dates ($82-90, 14.8-16.2x
+  FY10 EPS) returned +78% to +98%. The four ACCUMULATE dates among them returned +88% to +98%, the best being
+  2011-09-23.
+- **On total return FAIR trailed RICH; on excess return the order held.** FAIR's median is +50% and RICH's +58%.
+  But 13 of the 19 FAIR dates are January-April (16.9-17.9x on FY10 EPS, +39% to +52%). Their two-year windows end
+  in early 2013, the RICH ones of April-July (17.4-19.3x, +47% to +64%) in mid-2013. Against SPY over the same
+  windows the class order holds, if narrowly between FAIR and RICH: CHEAP +37pp, FAIR +27pp, RICH +26pp. The tiers
+  too: ACCUMULATE +43pp, WATCHLIST +28pp, AVOID +25pp. The October-December RICH dates beat SPY by least (median
+  +12pp).
+- **RICH was wrong in absolute terms for the third year running.** All 26 RICH dates cleared the hurdle, 23 of them
+  by more than half again.
+
+## 2012 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class CHEAP (2012-03-09, 2012-03-30) | 2 | +80% | +77% to +80% | 2 | 2 (+41pp) | +50% |
+| class FAIR (2012-01-20 to 2012-07-06) | 22 | +74% | +53% to +89% | 22 | 22 (+31pp) | +47% |
+| class RICH | 29 | +82% | +58% to +111% | 29 | 29 (+40pp) | +52% |
+| RICH from 2012-07-13 | 26 | +87% | +62% to +111% | 26 | 26 (+44pp) | +53% |
+| legacy tier WATCHLIST | 20 | +74% | +53% to +89% | 20 | 20 (+33pp) | +47% |
+| legacy tier AVOID | 33 | +79% | +58% to +111% | 33 | 33 (+35pp) | +48% |
+
+- **Every 2012 date made money and beat the market** (median +33pp). 37 outcomes landed in BULL. 16 of the 18
+  dates from 2012-09-07 on landed in XBULL.
+- **The ordering broke, on total and excess return alike.** RICH beat FAIR and matched the two CHEAP dates, and
+  AVOID beat WATCHLIST. The last 26 dates, RICH at 17.5-19.1x on FY11 EPS, returned the most: +62% to +111%, the best
+  being 2012-11-16.
+- **Why the model read RICH.** With no 2012 guide, the P/E ran all year on FY11's $6.72. Meanwhile each 2012
+  quarter was published as it came: EPS of $1.79, $2.10 and $2.19 (against $1.29, $1.59 and $1.85), and operating
+  ratios 4.2, 4.3 and 2.5 points better. The method has no margin step without a numeric guide, and BASE growth took
+  the slowing freight revenue (+14%, then +7% and +4%). So the model saw 17-19x on last year's earnings and slowing
+  revenue, while earnings grew through the operating ratio.
+- **The BEAR case never came close.** BEAR prices were $24-44. The lowest price within any 2011-2012 date's two
+  years was $79.83 (2011-10-03). Every date's two-year low was at least 2.28 times its BEAR price.
+
+## Across 2008-2012: the no-guide fallbacks are the open question
+
+UNP gave no numeric guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands, BASE growth
+takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in 2009, the
+trough in 2010, and last year's earnings while margins expanded in 2012. Price level still ranked the dates in
+most years (the CHEAP stretches of late 2008, early 2009 and autumn 2011 were the best entries), but RICH set its
+line too low four years running. Candidates to test on other companies without guidance, never fitted to UNP's
+outcomes:
+- trailing-four-quarter EPS, which is published by AS_OF and so carries no hindsight;
+- a margin step from the latest quarters' published operating-ratio change;
+- a cyclical BEAR from the worst two-year run rather than the worst year applied twice.
