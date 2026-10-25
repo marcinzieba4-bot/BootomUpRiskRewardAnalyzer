@@ -1,9 +1,9 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 366 weekly dates from 2008-01-04 to 2014-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 470 weekly dates from 2008-01-04 to 2016-12-30. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
-2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1.
+2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -171,13 +171,54 @@ effective 2008-05-29).
 - **The BEAR case never came.** Even through the 2015-2016 fall, every date's two-year low stayed at least 1.64 times
   its BEAR price.
 
-## Across 2008-2014: the no-guide fallbacks are the open question
+## 2015 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| legacy tier BUY (2015-07-24 to 2015-12-31) | 20 | +39% | +16% to +82% | 12 | 12 (+8pp) | +23% |
+| legacy tier ACCUMULATE | 11 | +16% | +10% to +26% | 0 | 0 (-5pp) | +5% |
+| legacy tier WATCHLIST | 10 | +7% | +0% to +12% | 0 | 0 (-10pp) | -9% |
+| legacy tier AVOID (2015-01-09 to 2015-03-20) | 11 | -7% | -8% to -2% | 0 | 0 (-23pp) | -22% |
+| class RICH | 48 | +17% | -8% to +82% | 12 | 12 (-5pp) | +6% |
+| class FAIR (2015-03-27 to 2015-04-17) | 4 | +2% | +0% to +3% | 0 | 0 (-15pp) | -11% |
+
+- **The legacy tier ranked the dates in order; the class did not.** BUY beat ACCUMULATE, which beat WATCHLIST, which
+  beat AVOID. The AVOID dates (19.9-24.4x trailing EPS, the 92nd-99th percentile) lost money. The BUY dates came
+  as the stock fell to $75-93 (13.1-16.1x), and 12 of the 20 cleared the hurdle. The class read RICH on 48 dates,
+  whose outcomes ran from -8% to +82%.
+- **The first half was the expensive entry.** The 28 dates to 2015-07-17 returned a median +3%; none cleared the
+  hurdle, and they trailed SPY by a median 15pp. 36 RICH calls hit, from 2015-01-09 to 2015-10-23.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH (every date) | 52 | +69% | +31% to +110% | 51 | 52 (+32pp) | +43% |
+| legacy tier BUY (2016-01-08 to 2016-04-08) | 12 | +77% | +66% to +110% | 12 | 12 (+39pp) | +49% |
+| legacy tier ACCUMULATE | 12 | +75% | +61% to +80% | 12 | 12 (+35pp) | +44% |
+| legacy tier WATCHLIST | 17 | +65% | +54% to +81% | 17 | 17 (+31pp) | +39% |
+| legacy tier AVOID (2016-09-30 to 2016-12-30) | 11 | +55% | +31% to +72% | 10 | 11 (+25pp) | +39% |
+
+- **Every date made money and all beat SPY;** 51 of 52 cleared the hurdle, and every outcome landed in BULL or XBULL.
+  The class read RICH on every date, and none of those calls hit.
+- **The tier ranked the dates in order again,** on total and excess return alike: BUY (12.7-14.7x, as low as the
+  8th percentile) +77%, down to AVOID (17.6-19.2x) +55%.
+- **The trough entry.** The 19 dates from 2015-10-30 to 2016-03-04, BUY throughout at $70-89 (12.7-15.5x), returned
+  +35% to +110% and all cleared the hurdle. The prints of those months were the weakest since 2009 (carloads -6% to
+  -9%, every signal at BEAR from the Q4 2015 print).
+- **The BEAR case never came.** Every 2015-2016 date's two-year low stayed at least 1.35 times its BEAR price.
+
+## Across 2008-2016: the no-guide fallbacks are the open question
 
 UNP gave no numeric full-year guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands,
 BASE growth takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in
-2009, the trough in 2010, and last year's earnings while margins expanded in 2012. Price level still ranked the dates
-in most years: the CHEAP stretches of late 2008, early 2009 and autumn 2011 were the best entries. RICH set its line
-too low from 2009 to 2012, then was right from mid-2013 through 2014.
+2009, the trough in 2010, and last year's earnings while margins expanded in 2012. RICH set its line too low from
+2009 to 2012, was right from mid-2013 into 2015, and read RICH through the 2015-2016 trough as well.
+
+**At the troughs the legacy tier ranked better than the class.** From July 2009 and through 2015-2016 the fallback
+carried the trough quarters' revenue declines into BASE, so the class read RICH. The legacy tier, whose Ratio B keeps
+BULL on the decade CAGR, stayed at BUY or ACCUMULATE on the cheap dates and ranked the dates in order: 2009 BUY +112%
+against ACCUMULATE +55%; 2015 BUY +39% down to AVOID -7%; 2016 BUY +77% down to AVOID +55%.
 
 **A high P/E percentile did not separate 2010 from 2014.** Both read RICH at the top of the stock's own range: in 2010
 at the 99th-100th percentile on trailing FY09 EPS, with a median two-year return of +54%; in 2014 at the 90th-100th
@@ -189,4 +230,5 @@ Candidates to test on other companies without guidance, never fitted to UNP's ou
 - a margin step from the latest quarters' published operating-ratio change;
 - a cyclical BEAR from the worst two-year run rather than the worst year applied twice;
 - a P/E on normalized earnings (the ten-year median or trend EPS), which would read a trough year and a record year
-  differently.
+  differently;
+- BASE growth from more than one quarter (or the decade median), so a single trough quarter does not set two years.

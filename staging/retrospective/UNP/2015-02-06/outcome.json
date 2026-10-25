@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "UNP",
+ "as_of": "2015-02-06",
+ "computed": "2026-10-25",
+ "data_source": "Yahoo Finance daily closes + dividends (UNP, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2015-08-06",
+   "price": 93.8,
+   "dividends": 1.1,
+   "total_return_pct": -22.1,
+   "benchmark_total_return_pct": 2.3,
+   "excess_pct": -24.4,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2016-02-05",
+   "price": 75.03,
+   "dividends": 2.2,
+   "total_return_pct": -36.6,
+   "benchmark_total_return_pct": -6.5,
+   "excess_pct": -30.1,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2017-02-06",
+   "price": 107.69,
+   "dividends": 4.46,
+   "total_return_pct": -7.9,
+   "benchmark_total_return_pct": 15.6,
+   "excess_pct": -23.6,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2018-02-06",
+   "price": 131.15,
+   "dividends": 6.94,
+   "total_return_pct": 13.4,
+   "benchmark_total_return_pct": 37.5,
+   "excess_pct": -24.2,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2015-02-12",
+   "price": 123.83
+  },
+  "low": {
+   "date": "2016-01-25",
+   "price": 68.79
+  },
+  "max_drawdown_pct": -44.4,
+  "return_to_avg_price_m12_m24_pct": -24.8
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Union Pacific: railroad duopoly; NS merger pending",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
