@@ -51,8 +51,8 @@ effective 2008-05-29).
 
 - **Every 2009 date made money.** Over two years the worst return was +41%, all 52 cleared the hurdle and beat SPY,
   and every outcome landed in BULL.
-- **CHEAP and the low-P/E dates were the best**, as in 2008. The six weeks around the March low (7.7-8.5x on FY08
-  EPS) did best, up to +180% from 2009-03-06.
+- **CHEAP and the low-P/E dates were the best**, as in 2008. The four dates from 2009-02-27 to 2009-03-20 (7.7-8.5x on FY08
+  EPS) returned +152% to +180%, the best being 2009-03-06.
 - **RICH from July was a wrong call in absolute terms.** The ranking held (CHEAP +119% vs RICH +62%), but RICH
   expects a miss, and all 26 RICH dates more than doubled the hurdle's pace. The cause is the no-revenue-guide
   fallback. From the Q1 2009 print it carries the trough quarter's freight revenue (-20%, then -28% and -25%)
