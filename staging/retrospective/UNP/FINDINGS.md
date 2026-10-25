@@ -77,9 +77,9 @@ effective 2008-05-29).
 | legacy tier AVOID | 42 | +54% | +33% to +95% | 42 | 42 | +37% |
 
 - **No CHEAP date, and every date doubled the hurdle's pace or close to it.** All 52 cleared the hurdle, all beat SPY
-  (median +31pp), and every outcome landed in BULL.
+  (median +32pp), and every outcome landed in BULL.
 - **RICH was wrong all year in absolute terms; the ordering still held.** FAIR beat RICH, WATCHLIST beat AVOID, and
-  the late-2010 RICH dates (24-25x on FY09 EPS) returned least. So the class ranked the dates but set its line far
+  the October-December RICH dates (22.6-25.3x on FY09 EPS) returned least. So the class ranked the dates but set its line far
   too low.
 - **Why the model read RICH.** With no 2010 guide, the P/E ran on trailing FY09 EPS ($3.75, then $3.74). The trough
   year's earnings put the stock at the top of its own ten-year range while earnings were recovering fast.
