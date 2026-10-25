@@ -183,7 +183,9 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── dividend: the latest declared rate ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
-    divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
+    # a vintage's rate is dated by the declaration it reports (dividend_published), so a later re-presentation of an
+    # old 10-K (the 2010-10-25 recast) cannot override a newer declaration
+    divs.append((h.get("dividend_published", h["published"]), h["dividend_annual"], h["dividend_note"], None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
     # ── market statistics, prices truncated at AS_OF ──

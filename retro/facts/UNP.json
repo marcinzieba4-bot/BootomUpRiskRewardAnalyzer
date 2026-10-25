@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for UNP retrospectives (retro/build_unp.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history), the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Union Pacific gives its numeric outlook in the 10-K ('Outlook' in Item 7) and in occasional 8-Ks, not in the quarterly releases, so guides are their own dated list. Values are as reported (no restatements), per share as traded on the day (before the 2008 and 2014 2:1 splits). EPS is diluted EPS from continuing operations; a company-published figure excluding a one-off replaces GAAP for that year. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time). Edit only to add newly published facts or fix a transcription error against the cited filing. A stock split ('splits') restates per-share facts published before its effective date (the first day the shares trade on the new basis) for every as-of date on or after it: per-share values are divided by the ratio and share counts multiplied by it. From Q1 2008 the company reports 'freight revenue' in place of 'commodity revenue' (prior periods reclassified); the fields commodity_revenue_b and commodity_pct hold whichever line the print reports, named by revenue_line. A vintage that follows a split may take years from filings published before it: eps_published and shares_published give those years' own publication dates, so the split restates exactly them.",
+ "_doc": "Point-in-time fact sheet for UNP retrospectives (retro/build_unp.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history), the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Union Pacific gives its numeric outlook in the 10-K ('Outlook' in Item 7) and in occasional 8-Ks, not in the quarterly releases, so guides are their own dated list. Values are as reported (no restatements), per share as traded on the day (before the 2008 and 2014 2:1 splits). EPS is diluted EPS from continuing operations; a company-published figure excluding a one-off replaces GAAP for that year. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time). Edit only to add newly published facts or fix a transcription error against the cited filing. A stock split ('splits') restates per-share facts published before its effective date (the first day the shares trade on the new basis) for every as-of date on or after it: per-share values are divided by the ratio and share counts multiplied by it. From Q1 2008 the company reports 'freight revenue' in place of 'commodity revenue' (prior periods reclassified); the fields commodity_revenue_b and commodity_pct hold whichever line the print reports, named by revenue_line. A vintage that follows a split may take years from filings published before it: eps_published and shares_published give those years' own publication dates, so the split restates exactly them. An 8-K that re-presents the 10-K's financial statements retrospectively (UNP's rail grinding accounting change, 2010-10-25) is a history vintage of its own from its date: it is the latest filing that reports those years.",
  "ticker": "UNP",
  "sources": {
   "U1": {
@@ -155,6 +155,64 @@
    "title": "Union Pacific Corporation Q3 2009 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312509211553/dex991.htm",
    "supports": "Q3 2009 freight revenue statistics by business group, operating ratio, GTMs per employee, diluted EPS and shares, cash; no shares repurchased; outlook in words only"
+  },
+  "U27": {
+   "published": "2003-02-21",
+   "title": "Union Pacific Corporation FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000095013403002918/d03483e10vk.txt",
+   "supports": "2000 weighted-average diluted shares 269.5M (earnings per share note)"
+  },
+  "U28": {
+   "published": "2010-01-21",
+   "title": "Union Pacific Corporation Q4 2009 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510009328/dex991.htm",
+   "supports": "Q4 and full-year 2009 freight revenue statistics by business group (revenue, carloads, average revenue per car), operating ratio, GTMs per employee, diluted EPS ($3.75 for 2009) and shares, effective tax rate, interest expense and other income, cash, free cash flow; 2010 outlook in words only"
+  },
+  "U29": {
+   "published": "2010-02-08",
+   "filed": "2010-02-05 20:30 ET (after the close)",
+   "title": "Union Pacific Corporation FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510023294/d10k.htm",
+   "supports": "selected financial data 2005-2009 (diluted EPS 2009 $3.75, operating ratio 76.0%); 2009 effective tax rate 36.5%, interest expense $600M, other income $195M, free cash flow $515M; no shares repurchased under the program in 2009; 2010 Outlook in words only (volume to increase from 2009 levels); capital investments of about $2.5 billion"
+  },
+  "U30": {
+   "published": "2010-04-22",
+   "title": "Union Pacific Corporation Q1 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510089550/dex991.htm",
+   "supports": "Q1 2010 freight revenue statistics by business group, operating ratio, GTMs per employee, diluted EPS (includes a $45M one-time payment to CSXI) and shares, cash; prior-year figures adjusted for the rail grinding accounting change; outlook in words only"
+  },
+  "U31": {
+   "published": "2010-05-07",
+   "filed": "2010-05-06 20:51 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K: dividend increase, additional growth capital, share repurchases resumed",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510111042/dex991.htm",
+   "supports": "quarterly dividend increased by 22 percent to 33 cents per share; 2010 capital spending raised to $2.6 billion; share repurchases to resume under the existing program (up to 32.6 million shares)"
+  },
+  "U32": {
+   "published": "2010-07-22",
+   "title": "Union Pacific Corporation Q2 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510163363/dex991.htm",
+   "supports": "Q2 2010 freight revenue statistics by business group, operating ratio, GTMs per employee, diluted EPS and shares, cash, share repurchases (nearly 6.5 million); outlook in words only"
+  },
+  "U33": {
+   "published": "2010-10-21",
+   "title": "Union Pacific Corporation Q3 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510233191/dex991.htm",
+   "supports": "Q3 2010 freight revenue statistics by business group, operating ratio, GTMs per employee, diluted EPS and shares, cash, share repurchases (more than 7.6 million); outlook in words only"
+  },
+  "U34": {
+   "published": "2010-10-26",
+   "filed": "2010-10-25 19:43 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K: FY2009 10-K sections as adjusted for the change in accounting for rail grinding",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510235508/dex991.htm",
+   "supports": "selected financial data 2005-2009 as adjusted (diluted EPS 2005 $1.90, 2006 $2.94, 2007 $3.44, 2008 $4.53, 2009 $3.74; 2009 operating ratio 76.1%); 2009 effective tax rate 36.4%; rail grinding costs expensed as incurred from 2010-01-01, prior periods adjusted"
+  },
+  "U35": {
+   "published": "2010-11-19",
+   "filed": "2010-11-18 19:37 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K: quarterly dividend raised to 38 cents",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312510264001/d8k.htm",
+   "supports": "quarterly dividend increased by 5 cents to 38 cents per share"
   }
  },
  "history_vintages": [
@@ -388,6 +446,185 @@
    "business_line": "Class I railroad: Union Pacific Railroad, 23 states in the western two-thirds of the US",
    "margin_signal_name": "Operating ratio change",
    "revenue_line": "Freight revenue"
+  },
+  {
+   "company": "Union Pacific Corporation",
+   "why": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not",
+   "business_line": "Class I railroad: Union Pacific Railroad, 23 states in the western two-thirds of the US",
+   "margin_signal_name": "Operating ratio change",
+   "revenue_line": "Freight revenue",
+   "pe_window_start": "1999-01-01",
+   "fy_label": "FY09",
+   "prev_fy_revenue_growth": -21,
+   "prev_fy_carloads_m": 7.786,
+   "prev_fy_carloads_pct": -16,
+   "fcf_b": 0.515,
+   "fcf_label": "FY09",
+   "prev_q_carloads_pct": -15,
+   "prev_q_label": "Q3 2009",
+   "prev_q_source": "U26",
+   "dividend_annual": 1.08,
+   "cash_return_text": "no shares repurchased under the program in 2009",
+   "revenue_usd_b": {
+    "2000": 10.765,
+    "2001": 10.83,
+    "2002": 11.159,
+    "2003": 11.551,
+    "2004": 12.215,
+    "2005": 13.578,
+    "2006": 15.578,
+    "2007": 16.283,
+    "2008": 17.97,
+    "2009": 14.143
+   },
+   "diluted_shares_m": {
+    "2000": 269.5,
+    "2009": 505.8
+   },
+   "shares_published": {
+    "2000": "2003-02-21"
+   },
+   "eps_published": {
+    "2000": "2005-02-28",
+    "2001": "2006-02-27",
+    "2002": "2007-02-26",
+    "2003": "2008-02-29",
+    "2004": "2006-01-19",
+    "2005": "2006-01-19"
+   },
+   "published": "2010-02-08",
+   "sources": [
+    "U29",
+    "U2",
+    "U3",
+    "U5",
+    "U1",
+    "U12",
+    "U27"
+   ],
+   "eps_gaap": {
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.3,
+    "2005": 1.92,
+    "2006": 2.95,
+    "2007": 3.46,
+    "2008": 4.54,
+    "2009": 3.75
+   },
+   "eps_normalized": {
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.89,
+    "2005": 3.41,
+    "2006": 2.95,
+    "2007": 3.46,
+    "2008": 4.54,
+    "2009": 3.75
+   },
+   "normalization": "diluted EPS (from continuing operations to 2003); 2004 = $2.89 excluding the asbestos charge and 2005 = $3.41 excluding the income tax expense reduction, as the company published them (U5); 2000 and 2002 stay GAAP (the company's adjusted $3.61 and $4.30 were on the pre-2003 basis that included trucking); 2000-2005 as published before the 2008 split; 2006-2009 from the FY2009 10-K (U29); 1998-1999 left the ten-year history",
+   "prev_fy_op_margin": 24.0,
+   "prev_fy_op_ratio": 76.0,
+   "net_interest_b": 0.405,
+   "net_interest_note": "2009 interest expense $600M less other income $195M (U29)",
+   "tax_rate": 0.365,
+   "tax_note": "2009 effective rate; no tax-rate guide (U29)",
+   "dividend_note": "$0.27 quarterly (U29)",
+   "dividend_published": "2008-08-01"
+  },
+  {
+   "company": "Union Pacific Corporation",
+   "why": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not",
+   "business_line": "Class I railroad: Union Pacific Railroad, 23 states in the western two-thirds of the US",
+   "margin_signal_name": "Operating ratio change",
+   "revenue_line": "Freight revenue",
+   "pe_window_start": "1999-01-01",
+   "fy_label": "FY09",
+   "prev_fy_revenue_growth": -21,
+   "prev_fy_carloads_m": 7.786,
+   "prev_fy_carloads_pct": -16,
+   "fcf_b": 0.515,
+   "fcf_label": "FY09",
+   "prev_q_carloads_pct": -15,
+   "prev_q_label": "Q3 2009",
+   "prev_q_source": "U26",
+   "dividend_annual": 1.08,
+   "cash_return_text": "no shares repurchased under the program in 2009",
+   "revenue_usd_b": {
+    "2000": 10.765,
+    "2001": 10.83,
+    "2002": 11.159,
+    "2003": 11.551,
+    "2004": 12.215,
+    "2005": 13.578,
+    "2006": 15.578,
+    "2007": 16.283,
+    "2008": 17.97,
+    "2009": 14.143
+   },
+   "diluted_shares_m": {
+    "2000": 269.5,
+    "2009": 505.8
+   },
+   "shares_published": {
+    "2000": "2003-02-21"
+   },
+   "eps_published": {
+    "2000": "2005-02-28",
+    "2001": "2006-02-27",
+    "2002": "2007-02-26",
+    "2003": "2008-02-29",
+    "2004": "2006-01-19",
+    "2005": "2006-01-19"
+   },
+   "published": "2010-10-26",
+   "sources": [
+    "U34",
+    "U29",
+    "U2",
+    "U3",
+    "U5",
+    "U1",
+    "U12",
+    "U27"
+   ],
+   "eps_gaap": {
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.3,
+    "2005": 1.9,
+    "2006": 2.94,
+    "2007": 3.44,
+    "2008": 4.53,
+    "2009": 3.74
+   },
+   "eps_normalized": {
+    "2000": 3.22,
+    "2001": 3.65,
+    "2002": 4.78,
+    "2003": 4.07,
+    "2004": 2.89,
+    "2005": 3.41,
+    "2006": 2.94,
+    "2007": 3.44,
+    "2008": 4.53,
+    "2009": 3.74
+   },
+   "normalization": "diluted EPS (from continuing operations to 2003); 2004 = $2.89 excluding the asbestos charge and 2005 = $3.41 excluding the income tax expense reduction, as the company published them (U5); 2000 and 2002 stay GAAP (the company's adjusted $3.61 and $4.30 were on the pre-2003 basis that included trucking); 2000-2005 as published before the 2008 split; 2006-2009 as adjusted for the rail grinding accounting change (U34); 2005 keeps the company's adjusted $3.41, published before the change (no adjusted figure on the new basis); 1998-1999 left the ten-year history",
+   "prev_fy_op_margin": 23.9,
+   "prev_fy_op_ratio": 76.1,
+   "net_interest_b": 0.405,
+   "net_interest_note": "2009 interest expense $600M less other income $195M (U34)",
+   "tax_rate": 0.364,
+   "tax_note": "2009 effective rate as adjusted; no tax-rate guide (U34)",
+   "dividend_note": "$0.27 quarterly (U29)",
+   "dividend_published": "2008-08-01"
   }
  ],
  "prints": [
@@ -1031,6 +1268,266 @@
    "next_print": "Q4 2009 print (late January)",
    "outlook_words": "As we enter the final quarter of 2009, business volumes seem to have stabilized, but at very low levels for Union Pacific",
    "outlook_short": "business volumes seem to have stabilized, but at very low levels"
+  },
+  {
+   "quarter": "Q4 2009",
+   "fy": 2009,
+   "published": "2010-01-21",
+   "source": "U28",
+   "release": "Jan 21",
+   "revenue_line": "Freight revenue",
+   "revenue_b": 3.754,
+   "revenue_pct": -12,
+   "commodity_revenue_b": 3.541,
+   "commodity_pct": -13,
+   "carloads_k": 2052,
+   "carloads_pct": -5,
+   "arc": 1726,
+   "arc_pct": -9,
+   "gtm_per_employee_pct": 0,
+   "gtm_note": "5.22 vs 5.20, published as '-'",
+   "op_ratio": 73.3,
+   "op_ratio_pt": -0.1,
+   "eps_q": 1.08,
+   "eps_q_prior": 1.31,
+   "groups_basis": "full-year 2009 actuals",
+   "groups": [
+    [
+     "Energy",
+     3.118,
+     -22
+    ],
+    [
+     "Agricultural",
+     2.666,
+     -7
+    ],
+    [
+     "Intermodal",
+     2.486,
+     -3
+    ],
+    [
+     "Industrial Products",
+     2.147,
+     -28
+    ],
+    [
+     "Chemicals",
+     2.102,
+     -7
+    ],
+    [
+     "Automotive",
+     0.854,
+     -1
+    ]
+   ],
+   "diluted_shares_m": 507.8,
+   "cash_b": 1.85,
+   "fcf_b": 0.515,
+   "cash_return_text": "no shares repurchased under the program in 2009",
+   "next_print": "Q1 2010 print (late April)",
+   "outlook_words": "Although still uncertain, the economic picture for 2010 looks somewhat more favorable than it did a year ago",
+   "outlook_short": "the economic picture for 2010 looks somewhat more favorable than it did a year ago",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 3.75,
+    "revenue_usd_b": 14.143,
+    "diluted_shares_m": 505.8,
+    "op_margin": 24.0,
+    "op_ratio": 76.0,
+    "revenue_growth": -21,
+    "carloads_m": 7.786,
+    "carloads_pct": -16,
+    "net_interest_b": 0.405,
+    "tax_rate": 0.365,
+    "normalization_note": "FY09 $3.75 diluted (U28), no one-off excluded by the company"
+   }
+  },
+  {
+   "quarter": "Q1 2010",
+   "fy": 2010,
+   "published": "2010-04-22",
+   "source": "U30",
+   "release": "Apr 22",
+   "revenue_line": "Freight revenue",
+   "revenue_b": 3.965,
+   "revenue_pct": 16,
+   "commodity_revenue_b": 3.755,
+   "commodity_pct": 16,
+   "carloads_k": 2082,
+   "carloads_pct": 13,
+   "arc": 1804,
+   "arc_pct": 3,
+   "gtm_per_employee_pct": 16,
+   "op_ratio": 75.1,
+   "op_ratio_pt": -5.3,
+   "eps_q": 1.01,
+   "eps_q_prior": 0.72,
+   "eps_q_note": "includes a $45M one-time payment to CSXI, no figure without it published (U30); prior year as adjusted for rail grinding",
+   "groups_basis": "first-quarter actuals",
+   "groups": [
+    [
+     "Energy",
+     0.844,
+     5
+    ],
+    [
+     "Agricultural",
+     0.73,
+     10
+    ],
+    [
+     "Intermodal",
+     0.691,
+     25
+    ],
+    [
+     "Industrial Products",
+     0.598,
+     10
+    ],
+    [
+     "Chemicals",
+     0.587,
+     14
+    ],
+    [
+     "Automotive",
+     0.305,
+     88
+    ]
+   ],
+   "diluted_shares_m": 508.7,
+   "cash_b": 1.753,
+   "cash_return_text": "no repurchase figure in the Q1 2010 release",
+   "next_print": "Q2 2010 print (late July)",
+   "outlook_words": "Although the strength and timing of a sustained economic recovery are still uncertain, we are feeling better about our 2010 growth opportunities",
+   "outlook_short": "we are feeling better about our 2010 growth opportunities"
+  },
+  {
+   "quarter": "Q2 2010",
+   "fy": 2010,
+   "published": "2010-07-22",
+   "source": "U32",
+   "release": "Jul 22",
+   "revenue_line": "Freight revenue",
+   "revenue_b": 4.182,
+   "revenue_pct": 27,
+   "commodity_revenue_b": 3.956,
+   "commodity_pct": 27,
+   "carloads_k": 2180,
+   "carloads_pct": 18,
+   "arc": 1815,
+   "arc_pct": 8,
+   "gtm_per_employee_pct": 17,
+   "op_ratio": 69.4,
+   "op_ratio_pt": -8.0,
+   "eps_q": 1.4,
+   "eps_q_prior": 0.92,
+   "eps_q_note": "prior year $0.92 includes $0.14 from the Colorado land sale (U32)",
+   "groups_basis": "six-month actuals",
+   "groups": [
+    [
+     "Energy",
+     1.68,
+     17
+    ],
+    [
+     "Intermodal",
+     1.495,
+     35
+    ],
+    [
+     "Agricultural",
+     1.428,
+     13
+    ],
+    [
+     "Industrial Products",
+     1.29,
+     30
+    ],
+    [
+     "Chemicals",
+     1.179,
+     19
+    ],
+    [
+     "Automotive",
+     0.639,
+     105
+    ]
+   ],
+   "groups_note": "Automotive Q2 growth published as 'F' in the table and 'up 105 percent' in the text",
+   "diluted_shares_m": 506.5,
+   "cash_b": 1.317,
+   "cash_return_text": "nearly 6.5M shares repurchased in Q2 2010 (about $466M)",
+   "next_print": "Q3 2010 print (late October)",
+   "outlook_words": "we expect and are prepared to handle continued volume growth on our network, both in 2010 and beyond",
+   "outlook_short": "we expect and are prepared to handle continued volume growth"
+  },
+  {
+   "quarter": "Q3 2010",
+   "fy": 2010,
+   "published": "2010-10-21",
+   "source": "U33",
+   "release": "Oct 21",
+   "revenue_line": "Freight revenue",
+   "revenue_b": 4.408,
+   "revenue_pct": 20,
+   "commodity_revenue_b": 4.187,
+   "commodity_pct": 21,
+   "carloads_k": 2316,
+   "carloads_pct": 14,
+   "arc": 1807,
+   "arc_pct": 6,
+   "gtm_per_employee_pct": 9,
+   "op_ratio": 68.2,
+   "op_ratio_pt": -5.6,
+   "eps_q": 1.56,
+   "eps_q_prior": 1.01,
+   "groups_basis": "nine-month actuals",
+   "groups": [
+    [
+     "Energy",
+     2.602,
+     11
+    ],
+    [
+     "Intermodal",
+     2.375,
+     34
+    ],
+    [
+     "Agricultural",
+     2.178,
+     16
+    ],
+    [
+     "Industrial Products",
+     1.987,
+     25
+    ],
+    [
+     "Chemicals",
+     1.808,
+     14
+    ],
+    [
+     "Automotive",
+     0.948,
+     36
+    ]
+   ],
+   "diluted_shares_m": 497.7,
+   "cash_b": 1.358,
+   "cash_return_text": "more than 7.6M shares repurchased in Q3 2010 (about $560M)",
+   "next_print": "Q4 2010 print (late January)",
+   "outlook_words": "As the economy continues to recover, we stand ready to safely and reliably haul more freight",
+   "outlook_short": "As the economy continues to recover, we stand ready to safely and reliably haul more freight"
   }
  ],
  "guides": [
@@ -1136,6 +1633,18 @@
    "source": "U19",
    "quarterly": 0.27,
    "note": "$0.27 quarterly, declared 2008-07-31 (U19)"
+  },
+  {
+   "published": "2010-05-07",
+   "source": "U31",
+   "quarterly": 0.33,
+   "note": "$0.33 quarterly, declared 2010-05-06 (U31)"
+  },
+  {
+   "published": "2010-11-19",
+   "source": "U35",
+   "quarterly": 0.38,
+   "note": "$0.38 quarterly, declared 2010-11-18 (U35)"
   }
  ],
  "events": [],

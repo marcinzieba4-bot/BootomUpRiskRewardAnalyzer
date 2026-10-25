@@ -288,12 +288,13 @@ outcome or finding enters a UNP model. Outputs go to `staging/retrospective/UNP/
 python3 retro/build_unp.py --weekly 2008-01-01 2008-03-30                   # 13 dates, 2008-01-04 .. 2008-03-28
 python3 retro/build_unp.py --weekly 2008-03-31 2008-12-31                   # 40 dates, 2008-04-04 .. 2008-12-31
 python3 retro/build_unp.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
+python3 retro/build_unp.py --weekly 2010-01-04 2010-12-31                   # 52 dates, 2010-01-08 .. 2010-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2010-01-01 UNP
+python3 retro/tools/firewall.py 2011-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -410,7 +411,44 @@ Seen in the build (method behaviour, not tuned):
   ACCUMULATE.
 - **The floor stays on FY08's EPS.** The P/E and the EPP floor use FY08's $4.54 all year, while 2009's quarters
   ran below 2008's.
-- **A harmless warning.** The year check flags the Q3 2009 carload count (2,035 thousand) as a calendar year.
+- **A harmless warning.** The year check flags the Q3 2009 carload count (2,035 thousand) as a calendar year (likewise 2,052 and
+  2,082 in 2010).
+
+### UNP 2010: still no numeric guide, an accounting recast, two dividend increases
+
+Every 8-K, 10-Q and release of 2010 was read, the 10-Qs searched in full for forward-looking statements. Decided
+before any 2010 date was built or scored:
+
+- **No numeric 2010 guide anywhere.** The Q4 2009 release, the FY2009 10-K's 2010 Outlook ("expect volume to increase
+  from 2009 levels") and the Q1-Q3 releases give words only. FY09's EPS stands as the current-year EPS, and BASE
+  growth and the growth factor follow the latest quarter's freight revenue: -13%, then +16%, +27% and +21%.
+- **A filing that re-presents the 10-K is a vintage of its own.** The 8-K of 2010-10-25 (after the close, dated
+  2010-10-26) re-presents the FY2009 10-K's financial statements for a change in accounting for rail grinding, which
+  is now expensed. It is the latest filing that reports 2005-2009, so from that date the history takes 2006-2009 from
+  it (EPS 2009 $3.74 instead of $3.75, operating ratio 76.1%, tax 36.4%). 2005 keeps the company's adjusted $3.41
+  before the split: no adjusted figure was published on the new basis. ACN's 2024 segment recast added nothing
+  because it changed no input; this one changes the EPS history.
+- **The ten-year history moves to 2000-2009** with the FY2009 vintage; 2000's diluted shares (269.5M, before the
+  split) come from the FY2002 10-K, the latest that reports them.
+- **A vintage's dividend is dated by the declaration it reports** (`dividend_published`). Otherwise the October recast,
+  which repeats the 10-K's $0.27, would override the $0.33 declared on 2010-05-06. Only the FY2009 vintages carry the
+  field, so no earlier date changes.
+- **Dividends:** $0.33 from the 8-K of 2010-05-06 (dated 2010-05-07), $0.38 from the 8-K of 2010-11-18 (dated
+  2010-11-19).
+- **Adds nothing:**
+  - the debt exchange offers and notes;
+  - the shareholder-vote and officer 8-Ks;
+  - the 7.01 of 2010-06-10 (a shareholder demand letter about fuel-surcharge litigation);
+  - the capex and positive train control figures (not method inputs);
+  - the 10-Qs (no outlook).
+
+Seen in the build (method behaviour, not tuned):
+- **The P/E runs on trailing FY09 EPS.** As the stock rose from about $64 to $92, it reached the 99th-100th
+  percentile of its own range, so RICH and AVOID most of the year.
+- **BASE growth follows the recovery quarters** (+16% to +27%) from the Q1 2010 print.
+- **The BEAR price stays near $24** (the 2004 year applied twice).
+- **A labelling quirk inherited from the ACN engine.** When BASE exceeds the decade CAGR, BULL takes BASE's value
+  but the text still says "CAGR".
 
 ## Categories change with the era
 
