@@ -295,12 +295,14 @@ python3 retro/build_unp.py --weekly 2013-01-07 2013-12-31                   # 52
 python3 retro/build_unp.py --weekly 2014-01-06 2014-12-31                   # 52 dates, 2014-01-10 .. 2014-12-31
 python3 retro/build_unp.py --weekly 2015-01-05 2015-12-31                   # 52 dates, 2015-01-09 .. 2015-12-31
 python3 retro/build_unp.py --weekly 2016-01-04 2016-12-31                   # 52 dates, 2016-01-08 .. 2016-12-30
+python3 retro/build_unp.py --weekly 2017-01-02 2017-12-31                   # 52 dates, 2017-01-06 .. 2017-12-29
+python3 retro/build_unp.py --weekly 2018-01-01 2018-12-31                   # 53 dates, 2018-01-05 .. 2018-12-31
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2017-01-01 UNP
+python3 retro/tools/firewall.py 2019-01-01 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -605,6 +607,78 @@ Seen in the build (method behaviour, not tuned):
   later say "the volume outlook remains uncertain". Each field comes from the latest guide that states it (the 2008
   rule: the FY08 EPS guide stood all year too).
 - **A sign quirk:** a negative BASE growth prints as "EPS +-13.5%/yr" (as in 2009).
+
+### UNP 2017-2018: tax reform, a pension-cost restatement, the Investor Day targets
+
+Every 8-K, 10-Q and release of 2017 and 2018 was read, the 10-Qs searched in full for forward-looking statements.
+Decided before any 2017 or 2018 date was built or scored:
+
+- **No numeric guide.** The FY2016 and FY2017 10-Ks' Outlooks both expect volume "to grow in the low single digit range"
+  and margin improvement, in words; all eight releases give words only. FY16's $5.07 stands as the current-year EPS
+  from 2017-01-20, FY17's $5.79 from 2018-01-26. BASE growth follows the latest quarter's freight revenue: -1% (Q4
+  2016), +6%, +11%, +4%, +5% (Q4 2017), +7%, +8%, +10%. As in 2015-2016, the 10-K Outlook words are not entered as a
+  guide; only 8-K statements are.
+- **Tax reform: the company's adjusted figures.** The Q4 2017 release (2018-01-25) excludes the Tax Cuts and Jobs Act
+  items (the $5.9B deferred-tax remeasurement and the $212M equity-method affiliates item). By the normalization rule
+  FY17 enters at the adjusted $5.79 (GAAP $13.36) with the adjusted 63.0% operating ratio (GAAP 62.0%), and Q4 2017 at
+  $1.53 and 62.6%, +0.6 pt (GAAP $9.25 and 58.7%). The tax rate (display only, in the bridge's EPS check) is 37.5%:
+  the release gives adjusted income taxes ($2,782M) and adjusted net income ($4,638M), and the FY2017 10-K publishes
+  the same 37.5% as its adjusted effective rate (GAAP (40.4)%). A Q4 print's `fy_actual` may now carry its own
+  `tax_note`; no earlier print has one, so no earlier date changes. The 8-K of 2018-01-09 (the preliminary $5.8B)
+  adds nothing.
+- **Listed items without an adjusted figure stay in** (the Fremont rule). Q3 2017 lists a workforce reduction charge
+  ($0.06, 1.55 pts), Hurricane Harvey ($0.04, 0.75 pts), an Illinois tax adjustment ($0.04), a land sale (+$0.04) and a
+  litigation resolution (+$0.05); Q1 2018 the debt redemption's 8 cents. No figure excluding them was published, so
+  $1.50 / 62.8% and $1.68 / 64.6% stand, with the items in the notes.
+- **ASU 2017-07** (pension cost presentation) restates 2017's quarterly operating ratios in the 2018 releases. The signal
+  uses each release's published change against the restated quarter (-0.6, +1.1 and 0.0 pt), the ACN rule for a
+  restated base. FY17 stays at the 10-K's 63.0%: no filing in range re-presents FY2017.
+- **Four commodity groups from 2018** (Agricultural Products, Energy, Industrial, Premium; the 8-K of 2018-02-13 points
+  to the reclassification). Group names are display only.
+- **The Investor Day 8-K** (2018-05-31, accepted 17:44 ET, dated 2018-06-01) gives "positive annual volume growth over
+  the next three years". That covers 2018, so it enters as `fy_words`, as the 2015 and 2016 CFO remarks did. Its numeric
+  items are not a 2018 guide: a 60% operating ratio "on a full year basis by 2020" is a later year's target, and the
+  method has no input for capex, a buyback plan (about $20B over three years), a payout target (40-45%) or leverage.
+  They are in the guide's note. The Unified Plan 2020 8-K (2018-09-17) says it does not change that guidance: nothing.
+- **Dividends without an 8-K.** Unlike 2015-2016, no 8-K announced the 2017-2018 increases. Each enters from the first
+  filing that states it: $0.665 from the Q4 2017 release (2018-01-25; declared in Q4 2017), $0.73 from the FY2017 10-K
+  (2018-02-09; declared 2018-02-08), $0.80 from the Q3 2018 release (2018-10-25; declared in Q3 2018). This can only lag.
+- **Two 10-K vintages.** The FY2016 10-K (accepted 2017-02-03 16:13 ET, after the close, dated 2017-02-06) gives
+  2012-2016; the FY2017 10-K (accepted 2018-02-09 14:32 ET, during the session, dated that day) gives 2013-2017. The
+  history moves to 2007-2016, then 2008-2017. First-year diluted shares, from the latest filing that reports them,
+  both after the 2008 split and before the 2014 one: 2007's 536.8M from the 8-K of 2010-10-25 (the re-presented FY2009
+  10-K), 2008's 515.0M from the FY2010 10-K.
+- **ENERGY_TRANSITION still not encoded.** Both 10-Ks keep the climate risk factor's wording and tie coal to natural-gas
+  prices and utility inventories (PRB shipments -24% in 2016, +5% in 2017). No filing shows the market pricing the theme
+  for UNP. ECOMMERCE is a retail theme.
+- **The franchise text is unchanged.** The "why" (from the 2008 setup) says "largest railroad in North America"; the
+  FY2016 and FY2017 10-Ks do not use that phrase (nor did the FY2007, FY2014 or FY2015 10-Ks checked). It is a constant
+  of the method, left as it is; rewording it would change text on every date.
+- **Adds nothing:** the weather-cost 8-Ks (2017-03-08, 2017-09-06: quarter EPS effects and the capital plan); the
+  workforce reduction (2017-08-16) and land sale (2017-08-30) 8-Ks, whose effects are in Q3 2017; the debt offerings;
+  the debt redemption 8-K (2018-04-06), whose effect is in Q1 2018; the accelerated share repurchase (2018-06-14); the
+  officer, board, vote, incentive-plan and 10b5-1 8-Ks; the capex figures; the 10-Qs (no outlook beyond the capital plan).
+- **ISO weeks:** 2017-12-31 is a Sunday, so the 2017 batch ends on 2017-12-29; 2018-12-31 covers 2019-W01, so the 2018
+  batch has 53 dates and a 2019 batch starts on 2019-01-07.
+
+Found while dating these filings: the SEC submissions JSON gives `acceptanceDateTime` in UTC, as step 1 below says, but
+the `filed` fields of the earlier UNP sources quote that UTC time labelled "ET" (the FY2015 10-K: "18:24 ET"; EDGAR shows
+13:24 ET). Sixteen filings accepted before or during the session were therefore dated the next trading day (U3, U9, U12,
+U19, U29, U34, U35, U38, U40, U44, U46, U50, U52, U53, U71, U77), and the Q1 2011 and Q1 2014 release-time notes are off
+by the same hours. Every error delays a fact by a day; none makes one visible early. ACN's fact sheet has the same
+labels, and one date there moves (S65, the FY2015 10-K: 13:09 ET on 2015-10-30, dated 2015-11-02). The 2017-2018
+entries use EDGAR's Eastern times. The earlier entries are not changed here: correcting them changes 2008-2016 outputs
+and is left for the owner to decide.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH and AVOID on all 105 dates.** On trailing EPS the P/E sits at the 90th-100th percentile of its own ten years
+  (18.8-28.5x), as the price rose from $102 to $165.
+- **The price passes the BULL case.** BULL is the decade EPS CAGR at the 75th-percentile P/E ($111-138). From 2017-10-27
+  the price is above it on 60 dates (Ratio B `inf`: 10 in 2017, 50 in 2018).
+- **EPS anchors on the last full year again.** Through 2018 the current-year EPS is FY17's $5.79 while the quarters run
+  27-43% ahead ($1.68, $1.98, $2.15), mostly the lower tax rate. The bridge's EPS check, on FY17's 37.5% tax rate,
+  reads about $6.4.
+- **The BEAR price stays at $45-52:** 2009's -17.4% applied twice, the worst year of the window.
 
 ## Categories change with the era
 

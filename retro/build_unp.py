@@ -138,7 +138,7 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_op_margin=a["op_margin"], prev_fy_op_ratio=a["op_ratio"],
                      prev_fy_revenue_growth=a["revenue_growth"], prev_fy_carloads_pct=a["carloads_pct"],
                      net_interest_b=a["net_interest_b"], net_interest_note=f'FY{y[2:]} from {p["source"]}',
-                     tax_rate=a["tax_rate"], tax_note=f'FY{y[2:]} effective rate; no tax-rate guide ({p["source"]})',
+                     tax_rate=a["tax_rate"], tax_note=f'{a.get("tax_note", f"FY{y[2:]} effective rate")}; no tax-rate guide ({p["source"]})',
                      fcf_b=p.get("fcf_b", h.get("fcf_b")), fcf_label=a["fy_label"],
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
     latest = prints[-1]
