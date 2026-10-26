@@ -922,6 +922,114 @@ Seen in the build (method behaviour, not tuned):
   +18.8%/yr. So the class read FAIR on five dates from 2026-09-18 at 23.5-25.1x (the 92nd-98th percentile). This is
   the 2022 pattern again.
 
+## LOW (Lowe's): the third ticker, in staging
+
+The LOW series is built apart from ACN and UNP and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/LOW.json`), builder (`retro/build_low.py`) and engine (`retro/templates/low_engine.py.tmpl`, the UNP engine
+with retail signals). The method is still r2. No ACN or UNP fact, parameter, outcome or finding enters a LOW model.
+Outputs go to `staging/retrospective/LOW/`, beside UNP, with the same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_low.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/LOW/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series LOW
+python3 retro/tools/firewall.py 2008-07-01 LOW
+```
+
+Every 10-K from FY1997 to FY2007 (with the FY2003 and FY2005 10-K/As), every 8-K, 10-Q and earnings release from
+November 2006 to December 2008 was read. Transcription was done by Sonnet 5.5 agents (the cheaper model, per "Which model
+to run it on"), which downloaded the filings and checked 1,487 strings word for word with `verbatim.py`; Opus chose the
+signals and rules, assembled the fact sheet and checked 18 more strings. Decided on 2026-10-26, before any LOW model was
+built or any LOW outcome computed:
+
+- **Fiscal calendar.** Lowe's fiscal year N ends on the Friday nearest January 31 of N+1 (fiscal 2007 ended 2008-02-01).
+  The builder maps each day to its fiscal year by that rule and checks it against the year-end dates the filings state.
+  Days between the year end and the Q4 print keep the last guided year's EPS (the ACN rollover rule).
+- **Prices on the as-of share basis** (the UNP rule). LOW split 2-for-1 effective 1998-06-29, 2001-07-02 and 2006-07-03.
+  In the 2008 vintages only the 2006 split restates facts: EPS of 1997-2000 (from 10-Ks published before it) and the first
+  year's diluted shares, which also take the 2001 split (370.6M for 1997 from the FY1999 10-K becomes 1,482.5M).
+- **History: each year from the latest 10-K that reports it.** FY2006 vintage (2007-04-03): 2002-2006 from the FY2006 10-K,
+  2001 from the FY2005 10-K/A (restated for early payment discounts and the split), 2000 from the FY2004 10-K (restated for
+  lease accounting), 1999 from the FY2003 10-K/A, 1998 from the FY2002 10-K, 1997 from the FY2001 10-K. The FY2007 10-K
+  (accepted 2008-04-01 17:02 ET, dated 2008-04-02) moves the window to 1998-2007. Two seams stay in, as published:
+  1997-1998 still include the Contractor Yards, which are discontinued operations from the FY2003 10-K, and 1997 is on the
+  Eagle Hardware pooling basis (the FY1997 and FY1998 10-Ks are not).
+- **EPS** is diluted EPS from continuing operations where the filing reports the line, else diluted EPS. No year is
+  excluded. 1999 keeps the $0.04 Eagle Hardware merger charge: the company's $1.79 excluding it (FY1999 10-K) is on the
+  earlier basis that included the Contractor Yards (the UNP trucking rule). FY2004 keeps the $0.16 EPS effect of adopting
+  EITF 02-16 (an accounting change with no published EPS excluding it).
+- **Guides are a dated list**, one per release ("Lowe's Business Outlook": the next quarter and the fiscal year) plus 8-Ks.
+  Method r2 maps them as for ACN: current-FY EPS = the EPS guide midpoint; BASE growth and the growth factor = the
+  next-quarter total sales guide (Lowe's is a US retailer, so local currency is dollars); the guided margin step = the
+  fiscal-year margin guide in basis points. Each field comes from the latest guide for the current year that states it.
+- **The margin definition changes with the FY2008 guide.** To the Q3 FY07 release Lowe's guides "operating margin
+  (defined as gross margin less SG&A and depreciation)"; from the Q4 FY07 release (2008-02-25) "EBIT margin", earnings
+  before interest and taxes, which also deducts store opening costs. Each guide steps from the previous year's margin on its
+  own definition (the ACN rule for a restated base): FY07's -130bp from FY06's 11.29% operating margin, FY08's -180bp
+  from FY07's 9.74% EBIT margin. Both previous-year margins are derived from the published percent-of-sales column (EBIT
+  margin = pre-tax + interest). A print carries both margins; the report shows the one the current guide uses. In the EPS
+  check (display only) store opening costs come off the operating margin but not off EBIT margin.
+- **A guide in words keeps the last numeric range.** The 8-K of 2007-09-24 (accepted 17:34 ET, dated 2007-09-25) expects
+  fiscal 2007 EPS "at the low end or slightly below its prior guidance of $1.97 to 2.01": the range stands, the words go in
+  its note. Its 2008-2010 outlook (sales +8-11% a year, EPS growth averaging 12-15%) is a multi-year rate, not a
+  current-year range, and is not entered; on the day fiscal 2008 became the current year the Q4 FY07 release gave a numeric
+  guide.
+- **Adds nothing:** the analyst-conference 8-K of 2008-09-24 (it repeats the FY2008 guide with the same numbers; its first
+  FY2009 outlook matters only from fiscal 2009 and is left for a 2009 batch to decide); the 10-Qs' outlook sections (they
+  repeat the release guides); the FY2007 10-K's outlook paragraph (the same); the bylaw, officer, director, credit-facility
+  and debt-offering 8-Ks.
+- **Dividends,** each from the first filing that states it: $0.08 quarterly from the 8-K of 2007-05-25; $0.085, declared
+  2008-05-30 without an 8-K, from the Q1 2008 10-Q (accepted 2008-06-04 16:59 ET, dated 2008-06-05; this can only lag).
+- **Signals.** Six, with ACN's weights: comparable store sales (% YoY), gross margin change (bp), net sales growth (%),
+  inventory growth less net sales growth (pp, lower is better), the operating-margin change (bp; the guided fiscal-year step,
+  else the latest quarter), and the theme slot at 2/4. Values are the latest release's: the margins and the inventory
+  growth are derived from the published percent-of-sales column and balance sheets (the UNP GTMs-per-employee rule).
+- **Thresholds by rule T,** set because the builder already knows what happened in 2008, so nothing is placed by eye. For
+  each signal, its ten annual values for fiscal 1997-2006 (each year from the latest 10-K published by 2008-01-04 that
+  reports it; a change from the latest filing that reports both years; the inventory gap within one filing): XBULL = the
+  decade's best year, BULL = its median, BASE = its worst year, BEAR = one median-to-worst step below the worst (mirrored
+  for the inventory gap). Rounded to whole percent and points, and to 10 bp. A company-published figure excluding an item
+  replaces the reported one: FY2004 gross margin "flat compared to 2003" excluding EITF 02-16 (+264bp as reported), FY2006
+  sales "approximately 10%" excluding fiscal 2005's extra week (+8.5% as reported).
+
+  | Signal | Decade (FY1997-FY2006) | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | comparable store sales | 4, 6, 6, 1, 2.5, 5.8, 6.7, 6.6, 6.1, 0.0 % | -6 / 0 / 6 / 7 % |
+  | gross margin change | 60, 20, 70, 70, 60, 149, 71, 0, 64, 32 bp | -60 / 0 / 60 / 150 bp |
+  | net sales growth | 18.7, 20.0, 19.3, 18.9, 18.2, 20.3, 18.1, 18.2, 18.6, 10 % | 1 / 10 / 19 / 20 % |
+  | inventory less sales | -11.1, 2.0, -1.4, -1.2, -7.8, -9.9, -2.6, 12.3, -5.2, -2.3 pp | 27 / 12 / -2 / -11 pp |
+  | operating margin change | 20, 40, 90, 20, 50, 132, 27, 4, 62, 20 bp | -30 / 0 / 30 / 130 bp |
+
+- **Durability.** DURABLE, risk 2, as for ACN and UNP. The "why" is the 10-K's own words: "the world's second largest home
+  improvement retailer", and "Sales of many of our product categories and services are driven by housing turnover and
+  activity level of home improvement projects". The 10-Ks name no competitor. No disruption theme in `taxonomy_eras.json`
+  is live for a home-improvement retailer in 2008 (ECOMMERCE from 2015-01-01), so the watch list is empty and the builder
+  refuses events until a theme encoding is decided.
+- **Segment bridge** (display only): the latest 10-K's product categories, 20 in the FY2006 10-K and 19 (recast) in the
+  FY2007 10-K, with each category's growth from the same table.
+
+Seen in the build (method behaviour, not tuned):
+- **The multiple sits at the bottom of its own range.** Over the ten-year window the P/E on each year's EPS ran from
+  about 14x (5th percentile) to 43.5x. On guided EPS the stock traded at 11-17x in 2008 (the 0th-27th percentile), so the
+  valuation score is +0.38 to +0.5, and the EPP floor (17x, then 16x) sits above the price on all 53 dates.
+- **BASE growth is the guided margin step.** Method r2 carries the guided step as EPS growth for two years: FY07's -130bp
+  on an 11.3% margin and FY08's -180bp on 9.7% give BASE -10.6%/yr in January and -21% to -25%/yr from the Q4 FY07 print. The BASE
+  price ($17-32) sits at or below the BEAR price ($20-29, flat EPS then FY07's -6.5% at the 10th-percentile P/E).
+- **Ratio B at most 0.20 on every date** (negative when the price is under the BEAR price), so the legacy tier reads BUY on all
+  53. The proxy composite is 1.30 throughout: comparable sales, gross margin, sales growth and the margin step all fall
+  below the decade's worst year.
+- **The class follows the price:** CHEAP on 30 dates (January to March, late June to early August, October to November,
+  late December), FAIR on 15, RICH on 8 (late April, mid-August to September, at 16-17x).
+- **A display quirk inherited from the UNP engine:** the conservative case says the multiple is "already near its median"
+  whenever it is not above it by 10%, even at 11x against a 21x median.
+
+Judgement calls that could carry hindsight: rule T itself (mechanical, but chosen by a builder who knows 2008); the choice
+of the inventory signal; applying the two published "excluding" figures to the threshold histories; DURABLE rather than
+CYCLICAL (the class label only); EBIT margin taken as pre-tax plus interest.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

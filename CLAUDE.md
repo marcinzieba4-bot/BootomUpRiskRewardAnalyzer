@@ -20,7 +20,7 @@ touching either directory.
 - **Adding dates:** follow `retro/README.md`, "Adding dates" (tools in `retro/tools/`). Results so far,
   labelled as hindsight, are in `archive/retrospective/ACN/FINDINGS.md`; they are hypotheses, never inputs.
 - **Tickers are separate.** Each has its own fact sheet, builder and engine; nothing from one ticker's facts,
-  outcomes or findings enters another's models. UNP (2008-2026 so far) sits in `staging/retrospective/`
-  until the owner adds it to the archive (retro/README.md, "UNP").
+  outcomes or findings enters another's models. UNP (2008-2026 so far) and LOW (2008 so far) sit in
+  `staging/retrospective/` until the owner adds them to the archive (retro/README.md, "UNP", "LOW").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

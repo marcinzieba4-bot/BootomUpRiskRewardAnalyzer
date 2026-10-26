@@ -1,0 +1,1391 @@
+{
+ "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "LOW",
+ "sources": {
+  "L1": {
+   "published": "2007-04-03",
+   "filed": "2007-04-03 15:41 ET (during the session)",
+   "title": "Lowe's Companies FY2006 10-K (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000052/exhibit13.htm",
+   "supports": "selected financial data 2002-2006 (diluted EPS from continuing operations, net sales), income statement 2004-2006 with percent of sales, 2006 diluted shares 1,566M, interest $154M, store opening costs $146M, effective tax rate 37.9%; cash $364M and short-term investments $432M; operating cash flow $4,502M, fixed assets acquired $3,916M; product-category sales 2004-2006; $1.5B repurchase authorization remaining; quarterly dividend increased in 2006 to $.05; 1,385 stores in 49 states, 157 million square feet; sales 'driven by housing turnover and activity level of home improvement projects'"
+  },
+  "L2": {
+   "published": "2006-10-02",
+   "filed": "2006-09-29 16:08 ET (after the close)",
+   "title": "Lowe's Companies FY2005 10-K/A (restated for early payment discounts, split-adjusted)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000141/lowesform10ka02032006.htm",
+   "supports": "selected financial data 2001-2005 restated and adjusted for the 2006 2-for-1 split: 2001 diluted EPS from continuing operations $0.61, net sales $21,714M"
+  },
+  "L3": {
+   "published": "2005-04-14",
+   "filed": "2005-04-13 16:37 ET (after the close)",
+   "title": "Lowe's Companies FY2004 10-K (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066705000099/exhibit13.htm",
+   "supports": "selected financial data 2000-2004 restated for lease accounting: 2000 diluted EPS from continuing operations $1.02 (before the 2006 split), net sales $18,368M"
+  },
+  "L4": {
+   "published": "2004-04-14",
+   "filed": "2004-04-13 16:44 ET (after the close)",
+   "title": "Lowe's Companies FY2003 10-K/A (annual report, exhibit 13; clerical corrections)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066704000192/exhibit13.htm",
+   "supports": "selected financial data 1999-2003 with the Contractor Yards as discontinued operations: 1999 diluted EPS from continuing operations $0.86 (before the 2006 split), net sales $15,445M"
+  },
+  "L5": {
+   "published": "2003-04-16",
+   "filed": "2003-04-15 16:27 ET (after the close)",
+   "title": "Lowe's Companies FY2002 10-K (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066703000006/exhibit13.htm",
+   "supports": "selected financial data 1998-2002: 1998 diluted EPS $0.67 (before the 2006 split), net sales $13,331M"
+  },
+  "L6": {
+   "published": "2002-04-26",
+   "filed": "2002-04-26 (no acceptance time in EDGAR)",
+   "title": "Lowe's Companies FY2001 10-K (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066702000003/ex13e.txt",
+   "supports": "selected financial data 1997-2001 on the Eagle Hardware pooling basis, adjusted for the 2001 split: 1997 diluted EPS $0.52 (before the 2006 split), net sales $11,108M"
+  },
+  "L7": {
+   "published": "2000-04-26",
+   "filed": "2000-04-26 (no acceptance time in EDGAR)",
+   "title": "Lowe's Companies FY1999 10-K405 (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066700000002/0000060667-00-000002.txt",
+   "supports": "1997 weighted average diluted shares 370.6M on the Eagle Hardware pooling basis (before the 2001 and 2006 splits)"
+  },
+  "L8": {
+   "published": "2001-04-13",
+   "filed": "2001-04-13 (no acceptance time in EDGAR)",
+   "title": "Lowe's Companies FY2000 10-K405 (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066701500004/exh13.txt",
+   "supports": "1998 weighted average diluted shares 375.8M (before the 2001 and 2006 splits)"
+  },
+  "L9": {
+   "published": "2008-04-02",
+   "filed": "2008-04-01 17:02 ET (after the close)",
+   "title": "Lowe's Companies FY2007 10-K (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000067/exhibit13.htm",
+   "supports": "selected financial data 2003-2007, income statement 2005-2007 with percent of sales, 2007 diluted shares 1,510M, interest $194M, store opening costs $141M, effective tax rate 37.7%; cash $281M and short-term investments $249M; operating cash flow $4,347M, fixed assets acquired $4,010M; product-category sales 2005-2007; $2.2B repurchase authorization remaining, 2008 outlook assumes no repurchases; quarterly dividend increased in 2007 to $.08; 1,534 stores in 50 states and Canada, 174 million square feet"
+  },
+  "L10": {
+   "published": "2006-11-20",
+   "filed": "2006-11-20 08:08 ET (before the open)",
+   "title": "Lowe's Q3 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000148/exhibit991.htm",
+   "supports": "Q3 2006 comparable store sales -4.0%"
+  },
+  "L11": {
+   "published": "2007-02-23",
+   "filed": "2007-02-23 08:02 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000013/exhibit991.htm",
+   "supports": "Q4 2006 and fiscal 2006 sales, comparable store sales, percent-of-sales income statement, EPS, diluted shares, inventory, cash; outlook for Q1 2007 and fiscal 2007 (sales, comparable store sales, operating margin in bp, store opening costs, EPS)"
+  },
+  "L12": {
+   "published": "2007-05-21",
+   "filed": "2007-05-21 07:56 ET (before the open)",
+   "title": "Lowe's Q1 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000054/exhibit991.htm",
+   "supports": "Q1 2007 results and the Q2 and fiscal 2007 outlook"
+  },
+  "L13": {
+   "published": "2007-05-25",
+   "filed": "2007-05-25 12:43 ET (during the session)",
+   "title": "Lowe's 8-K: share repurchase authorization increased, quarterly dividend raised to $0.08",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000057/lowesform8k5252007.htm",
+   "supports": "$0.08 quarterly dividend (a 60% increase); repurchase authorization increased by $3.0 billion"
+  },
+  "L14": {
+   "published": "2007-08-20",
+   "filed": "2007-08-20 08:16 ET (before the open)",
+   "title": "Lowe's Q2 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000100/exhibit991.htm",
+   "supports": "Q2 2007 results and the Q3 and fiscal 2007 outlook"
+  },
+  "L15": {
+   "published": "2007-09-25",
+   "filed": "2007-09-24 17:34 ET (after the close)",
+   "title": "Lowe's 8-K: analyst conference press release (7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000113/exhibit991.htm",
+   "supports": "fiscal 2007 EPS expected 'at the low end or slightly below its prior guidance of $1.97 to 2.01'; 2008-2010 multi-year outlook in growth rates"
+  },
+  "L16": {
+   "published": "2007-11-19",
+   "filed": "2007-11-19 08:31 ET (before the open)",
+   "title": "Lowe's Q3 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000123/exhibit991.htm",
+   "supports": "Q3 2007 results and the Q4 and fiscal 2007 outlook; $112M self-insurance reduction (about $0.05 of EPS)"
+  },
+  "L17": {
+   "published": "2008-02-25",
+   "filed": "2008-02-25 08:29 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000024/exhibit991.htm",
+   "supports": "Q4 2007 and fiscal 2007 results (EPS $1.86, comparable store sales -5.1%), percent-of-sales income statement, inventory, cash, cash flow; outlook for Q1 2008 and fiscal 2008 (sales, comparable store sales, EBIT margin in bp, store opening costs, EPS)"
+  },
+  "L19": {
+   "published": "2008-05-19",
+   "filed": "2008-05-19 08:33 ET (before the open)",
+   "title": "Lowe's Q1 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000069/exhibit991.htm",
+   "supports": "Q1 2008 results and the Q2 and fiscal 2008 outlook"
+  },
+  "L20": {
+   "published": "2008-06-05",
+   "filed": "2008-06-04 16:59 ET (after the close)",
+   "title": "Lowe's Q1 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000093/lowesform10q05022008.htm",
+   "supports": "'On May 30, 2008, the Board of Directors declared a quarterly cash dividend of $0.085 per share, which represents a 6.3% increase.'"
+  },
+  "L21": {
+   "published": "2008-08-18",
+   "filed": "2008-08-18 08:21 ET (before the open)",
+   "title": "Lowe's Q2 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000107/exhibit991.htm",
+   "supports": "Q2 2008 results and the Q3 and fiscal 2008 outlook"
+  },
+  "L23": {
+   "published": "2008-11-17",
+   "filed": "2008-11-17 08:19 ET (before the open)",
+   "title": "Lowe's Q3 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000152/exhibit991.htm",
+   "supports": "Q3 2008 results and the Q4 and fiscal 2008 outlook"
+  },
+  "L30": {
+   "published": "1998-06-12",
+   "filed": "1998-06-12 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 1998 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066798000009/0000060667-98-000009.txt",
+   "supports": "'On May 29, 1998, the Board of Directors declared a two-for one stock split'"
+  },
+  "L31": {
+   "published": "2001-06-15",
+   "filed": "2001-06-15 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066701500007/form10q101.txt",
+   "supports": "'On May 25, 2001, the Company's Board of Directors approved a two-for-one split'"
+  },
+  "L32": {
+   "published": "2006-06-06",
+   "filed": "2006-06-05 17:07 ET (after the close)",
+   "title": "Lowe's 8-K: two-for-one split and dividend increase approved on May 25, 2006",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000115/lowesform8k05252006.htm",
+   "supports": "two-for-one split of the common shares approved by the Board on May 25, 2006; quarterly dividend $0.05 post-split"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-04-03",
+   "sources": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L10"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY06",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,385 stores in 49 states with 157 million square feet, serving do-it-yourself, do-it-for-me and commercial business customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "1997": "1998-01-30",
+    "1998": "1999-01-29",
+    "1999": "2000-01-28",
+    "2000": "2001-02-02",
+    "2001": "2002-02-01",
+    "2002": "2003-01-31",
+    "2003": "2004-01-30",
+    "2004": "2005-01-28",
+    "2005": "2006-02-03",
+    "2006": "2007-02-02"
+   },
+   "eps_gaap": {
+    "1997": 0.52,
+    "1998": 0.67,
+    "1999": 0.88,
+    "2000": 1.04,
+    "2001": 0.62,
+    "2002": 0.93,
+    "2003": 1.13,
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.99
+   },
+   "eps_normalized": {
+    "1997": 0.52,
+    "1998": 0.67,
+    "1999": 0.86,
+    "2000": 1.02,
+    "2001": 0.61,
+    "2002": 0.92,
+    "2003": 1.12,
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.99
+   },
+   "eps_published": {
+    "1997": "2002-04-26",
+    "1998": "2003-04-16",
+    "1999": "2004-04-14",
+    "2000": "2005-04-14",
+    "2001": "2006-10-02"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded",
+   "revenue_usd_b": {
+    "1997": 11.108,
+    "1998": 13.331,
+    "1999": 15.445,
+    "2000": 18.368,
+    "2001": 21.714,
+    "2002": 26.112,
+    "2003": 30.838,
+    "2004": 36.464,
+    "2005": 43.243,
+    "2006": 46.927
+   },
+   "diluted_shares_m": {
+    "1997": 370.632,
+    "2006": 1566.0
+   },
+   "shares_published": {
+    "1997": "2000-04-26"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 11.29,
+    "EBIT margin": 10.98
+   },
+   "prev_fy_margins_note": "operating margin = gross margin less SG&A and depreciation 34.52 - 20.75 - 2.48 = 11.29%; EBIT margin = pre-tax + interest 10.65 + 0.33 = 10.98% (percent-of-sales column, FY2006 10-K)",
+   "prev_fy_gross_margin": 34.52,
+   "prev_fy_sales_growth": 8.5,
+   "prev_fy_comps": 0.0,
+   "prev_fy_stores": 1385,
+   "net_interest_b": 0.154,
+   "net_interest_note": "FY06 from L1",
+   "store_opening_b": 0.146,
+   "tax_rate": 0.3788,
+   "tax_note": "FY06 effective rate (income tax provision $1,893M / pre-tax $4,998M); no tax-rate guide",
+   "fcf_b": 0.586,
+   "fcf_label": "FY06",
+   "prev_q_comps": -4.0,
+   "prev_q_label": "Q3 FY06",
+   "prev_q_source": "L10",
+   "dividend_annual": 0.2,
+   "dividend_note": "$0.05 quarterly ('increased in 2006 to $.05', FY2006 10-K)",
+   "cash_return_text": "$1.5B repurchase authorization remaining at FY06 year end; $1.74B repurchased in FY06",
+   "business_line": "Home improvement retailer: 1,385 stores in 49 states, 157 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Appliances",
+     4.193,
+     7.2
+    ],
+    [
+     "Lumber",
+     3.69,
+     0.0
+    ],
+    [
+     "Flooring",
+     3.214,
+     11.5
+    ],
+    [
+     "Millwork",
+     3.137,
+     6.9
+    ],
+    [
+     "Paint",
+     3.073,
+     10.8
+    ],
+    [
+     "Building materials",
+     3.002,
+     8.9
+    ],
+    [
+     "Fashion plumbing",
+     2.893,
+     10.6
+    ],
+    [
+     "Lighting",
+     2.573,
+     6.9
+    ],
+    [
+     "Tools",
+     2.563,
+     5.6
+    ],
+    [
+     "Lawn & landscape products",
+     2.356,
+     12.7
+    ],
+    [
+     "Hardware",
+     2.296,
+     8.3
+    ],
+    [
+     "Seasonal living",
+     2.154,
+     11.3
+    ],
+    [
+     "Cabinets & countertops",
+     1.903,
+     10.3
+    ],
+    [
+     "Outdoor power equipment",
+     1.805,
+     -0.1
+    ],
+    [
+     "Rough plumbing",
+     1.664,
+     17.5
+    ],
+    [
+     "Rough electrical",
+     1.479,
+     22.9
+    ],
+    [
+     "Nursery",
+     1.454,
+     12.5
+    ],
+    [
+     "Home environment",
+     1.145,
+     12.6
+    ],
+    [
+     "Walls / windows",
+     1.101,
+     4.5
+    ],
+    [
+     "Home organization",
+     1.001,
+     5.8
+    ],
+    [
+     "Other",
+     0.231,
+     -1.7
+    ]
+   ],
+   "groups_basis": "FY06 product categories (FY2006 10-K)"
+  },
+  {
+   "published": "2008-04-02",
+   "sources": [
+    "L9",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L8",
+    "L16"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY07",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,534 stores in 50 states and Canada with 174 million square feet, serving do-it-yourself, do-it-for-me and commercial business customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "1998": "1999-01-29",
+    "1999": "2000-01-28",
+    "2000": "2001-02-02",
+    "2001": "2002-02-01",
+    "2002": "2003-01-31",
+    "2003": "2004-01-30",
+    "2004": "2005-01-28",
+    "2005": "2006-02-03",
+    "2006": "2007-02-02",
+    "2007": "2008-02-01"
+   },
+   "eps_gaap": {
+    "1998": 0.67,
+    "1999": 0.88,
+    "2000": 1.04,
+    "2001": 0.62,
+    "2002": 0.93,
+    "2003": 1.13,
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.99,
+    "2007": 1.86
+   },
+   "eps_normalized": {
+    "1998": 0.67,
+    "1999": 0.86,
+    "2000": 1.02,
+    "2001": 0.61,
+    "2002": 0.92,
+    "2003": 1.12,
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.99,
+    "2007": 1.86
+   },
+   "eps_published": {
+    "1998": "2003-04-16",
+    "1999": "2004-04-14",
+    "2000": "2005-04-14",
+    "2001": "2006-10-02",
+    "2002": "2007-04-03"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded",
+   "revenue_usd_b": {
+    "1998": 13.331,
+    "1999": 15.445,
+    "2000": 18.368,
+    "2001": 21.714,
+    "2002": 26.112,
+    "2003": 30.838,
+    "2004": 36.464,
+    "2005": 43.243,
+    "2006": 46.927,
+    "2007": 48.283
+   },
+   "diluted_shares_m": {
+    "1998": 375.751,
+    "2007": 1510.0
+   },
+   "shares_published": {
+    "1998": "2001-04-13"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 10.03,
+    "EBIT margin": 9.74
+   },
+   "prev_fy_margins_note": "operating margin = gross margin less SG&A and depreciation 34.64 - 21.78 - 2.83 = 10.03%; EBIT margin = pre-tax + interest 9.34 + 0.40 = 9.74% (percent-of-sales column, FY2007 10-K)",
+   "prev_fy_gross_margin": 34.64,
+   "prev_fy_sales_growth": 2.9,
+   "prev_fy_comps": -5.1,
+   "prev_fy_stores": 1534,
+   "net_interest_b": 0.194,
+   "net_interest_note": "FY07 from L9",
+   "store_opening_b": 0.141,
+   "tax_rate": 0.3773,
+   "tax_note": "FY07 effective rate (income tax provision $1,702M / pre-tax $4,511M); no tax-rate guide",
+   "fcf_b": 0.337,
+   "fcf_label": "FY07",
+   "prev_q_comps": -4.3,
+   "prev_q_label": "Q3 FY07",
+   "prev_q_source": "L16",
+   "dividend_annual": 0.32,
+   "dividend_note": "$0.08 quarterly ('increased in 2007 to $.08', FY2007 10-K)",
+   "cash_return_text": "$2.2B repurchase authorization remaining; the 2008 outlook assumes no repurchases",
+   "business_line": "Home improvement retailer: 1,534 stores in the United States and Canada, 174 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Appliances",
+     4.325,
+     4.5
+    ],
+    [
+     "Lumber",
+     3.646,
+     -1.2
+    ],
+    [
+     "Flooring",
+     3.292,
+     2.5
+    ],
+    [
+     "Paint",
+     3.256,
+     5.8
+    ],
+    [
+     "Millwork",
+     3.25,
+     -0.7
+    ],
+    [
+     "Fashion plumbing",
+     2.764,
+     4.8
+    ],
+    [
+     "Building materials",
+     2.727,
+     -4.7
+    ],
+    [
+     "Lighting",
+     2.705,
+     5.2
+    ],
+    [
+     "Tools",
+     2.597,
+     1.2
+    ],
+    [
+     "Lawn & landscape products",
+     2.446,
+     7.9
+    ],
+    [
+     "Hardware",
+     2.434,
+     6.1
+    ],
+    [
+     "Seasonal living",
+     2.266,
+     1.7
+    ],
+    [
+     "Cabinets & countertops",
+     2.178,
+     1.1
+    ],
+    [
+     "Home style & organization",
+     2.11,
+     0.4
+    ],
+    [
+     "Rough plumbing",
+     1.867,
+     12.1
+    ],
+    [
+     "Outdoor power equipment",
+     1.838,
+     1.8
+    ],
+    [
+     "Nursery",
+     1.583,
+     7.5
+    ],
+    [
+     "Rough electrical",
+     1.49,
+     0.4
+    ],
+    [
+     "Home environment",
+     1.217,
+     1.4
+    ],
+    [
+     "Other",
+     0.292,
+     27.5
+    ]
+   ],
+   "groups_basis": "FY07 product categories (FY2007 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 FY06",
+   "fy": 2006,
+   "q": 4,
+   "published": "2007-02-23",
+   "source": "L11",
+   "release": "Feb 23",
+   "release_time": "'For 7:00 am EST Release', before the open (8-K accepted 08:02 ET)",
+   "period_end": "2007-02-02",
+   "sales_b": 10.406,
+   "sales_pct": -3.7,
+   "comps_pct": -5.3,
+   "gross_margin": 35.44,
+   "gross_margin_bp": 42,
+   "gross_margin_note": "35.44% vs 35.02% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.03,
+     -127
+    ],
+    "EBIT margin": [
+     9.56,
+     -121
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (35.44 - 22.44 - 2.97 = 10.03% vs 11.30%); EBIT margin = pre-tax + interest (9.14 + 0.42 = 9.56% vs 10.77%)",
+   "inventory_pct": 7.7,
+   "inventory_gap_pp": 11.4,
+   "inventory_note": "merchandise inventory $7,144M vs $6,635M a year earlier (+7.7%), against net sales -3.7%",
+   "eps_q": 0.4,
+   "eps_q_prior": 0.43,
+   "diluted_shares_m": 1549.0,
+   "cash_b": 0.796,
+   "stores": 1385,
+   "sq_ft_m": 157.1,
+   "sq_ft_pct": 12.1,
+   "dividend_q": 0.05,
+   "outlook_short": "We are encouraged by indications that our sales trends have bottomed. As a result, we believe our comparable store sales performance will gradually improve throughout 2007.",
+   "next_print": "Q1 FY07 print (mid-May)",
+   "cash_return_text": "repurchases $1.74B year to date (cash flow statement)",
+   "one_off_note": "Adjusting for the comparison to last year’s 14-week fourth quarter and 53-week fiscal year as well as the corresponding calendar shift, total sales increased approximately five percent to last year in the fourth quarter and increased approximately ten percent for the fiscal year.",
+   "fy_actual": {
+    "fy": 2006,
+    "fy_label": "FY06",
+    "eps_normalized": 1.99,
+    "revenue_usd_b": 46.927,
+    "diluted_shares_m": 1566.0,
+    "normalization_note": "FY06 = diluted EPS $1.99 as released; no one-off excluded",
+    "margins": {
+     "operating margin": 11.29,
+     "EBIT margin": 10.98
+    },
+    "margins_note": "FY06 operating margin 34.52 - 20.75 - 2.48 = 11.29%; EBIT margin 10.65 + 0.33 = 10.98% (percent-of-sales column)",
+    "gross_margin": 34.52,
+    "sales_growth": 8.5,
+    "comps_pct": 0.0,
+    "stores": 1385,
+    "net_interest_b": 0.154,
+    "store_opening_b": 0.146,
+    "tax_rate": 0.3788,
+    "tax_note": "FY06 effective rate: income tax provision $1,893M / pre-tax earnings $4,998M; no tax-rate guide",
+    "fcf_b": 0.586
+   }
+  },
+  {
+   "quarter": "Q1 FY07",
+   "fy": 2007,
+   "q": 1,
+   "published": "2007-05-21",
+   "source": "L12",
+   "release": "May 21",
+   "release_time": "'For 7:00 am EDT Release', before the open (8-K accepted 07:56 ET)",
+   "period_end": "2007-05-04",
+   "sales_b": 12.172,
+   "sales_pct": 2.1,
+   "comps_pct": -6.3,
+   "gross_margin": 34.99,
+   "gross_margin_bp": 2,
+   "gross_margin_note": "34.99% vs 34.97% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.28,
+     -170
+    ],
+    "EBIT margin": [
+     10.18,
+     -159
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.99 - 22.06 - 2.65 = 10.28% vs 11.98%); EBIT margin = pre-tax + interest (9.79 + 0.39 = 10.18% vs 11.77%)",
+   "inventory_pct": 8.8,
+   "inventory_gap_pp": 6.7,
+   "inventory_note": "merchandise inventory $8,501M vs $7,817M a year earlier (+8.8%), against net sales +2.1%",
+   "eps_q": 0.48,
+   "eps_q_prior": 0.53,
+   "diluted_shares_m": 1540.0,
+   "cash_b": 1.2,
+   "stores": 1400,
+   "sq_ft_m": 158.7,
+   "sq_ft_pct": 11.2,
+   "dividend_q": 0.05,
+   "outlook_short": "Easier comparisons in the back half of the year give us continued confidence that our sales performance will improve as the year progresses.",
+   "next_print": "Q2 FY07 print (mid-August)",
+   "cash_return_text": "repurchases $0.70B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q2 FY07",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-08-20",
+   "source": "L14",
+   "release": "Aug 20",
+   "release_time": "'For 7:00 am EDT Release', before the open (8-K accepted 08:16 ET)",
+   "period_end": "2007-08-03",
+   "sales_b": 14.167,
+   "sales_pct": 5.8,
+   "comps_pct": -2.6,
+   "gross_margin": 34.47,
+   "gross_margin_bp": 103,
+   "gross_margin_note": "34.47% vs 33.44% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     12.08,
+     29
+    ],
+    "EBIT margin": [
+     11.9,
+     32
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.47 - 20.04 - 2.35 = 12.08% vs 11.79%); EBIT margin = pre-tax + interest (11.55 + 0.35 = 11.90% vs 11.58%)",
+   "inventory_pct": 8.7,
+   "inventory_gap_pp": 2.9,
+   "inventory_note": "merchandise inventory $7,799M vs $7,176M a year earlier (+8.7%), against net sales +5.8%",
+   "eps_q": 0.67,
+   "eps_q_prior": 0.6,
+   "diluted_shares_m": 1518.0,
+   "cash_b": 0.662,
+   "stores": 1424,
+   "sq_ft_m": 161.6,
+   "sq_ft_pct": 11.1,
+   "dividend_q": 0.08,
+   "outlook_short": "As expected, many of the difficult comparisons we faced during the last four quarters are beginning to lessen as we cycle hurricane recovery spending and deflationary price pressures from lumber and plywood.",
+   "next_print": "Q3 FY07 print (mid-November)",
+   "cash_return_text": "repurchases $1.45B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q3 FY07",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-11-19",
+   "source": "L16",
+   "release": "Nov 19",
+   "release_time": "'For 7:00 am EDT Release', before the open (8-K accepted 08:31 ET)",
+   "period_end": "2007-11-02",
+   "sales_b": 11.565,
+   "sales_pct": 3.2,
+   "comps_pct": -4.3,
+   "gross_margin": 34.27,
+   "gross_margin_bp": -20,
+   "gross_margin_note": "34.27% vs 34.47% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     9.7,
+     -142
+    ],
+    "EBIT margin": [
+     9.34,
+     -139
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.27 - 21.63 - 2.94 = 9.70% vs 11.12%); EBIT margin = pre-tax + interest (8.91 + 0.43 = 9.34% vs 10.73%)",
+   "inventory_pct": 7.7,
+   "inventory_gap_pp": 4.5,
+   "inventory_note": "merchandise inventory $7,775M vs $7,219M a year earlier (+7.7%), against net sales +3.2%",
+   "eps_q": 0.43,
+   "eps_q_prior": 0.46,
+   "diluted_shares_m": 1497.0,
+   "cash_b": 0.567,
+   "stores": 1464,
+   "sq_ft_m": 166.1,
+   "sq_ft_pct": 10.1,
+   "dividend_q": 0.08,
+   "outlook_short": "Pressures on our industry are likely to continue well into 2008, but we remain committed to our goal of providing great products and unmatched customer service and capitalizing on opportunities to ensure we gain profitable market share regardless of the level of industry growth.",
+   "next_print": "Q4 FY07 print (late February)",
+   "cash_return_text": "repurchases $1.95B year to date (cash flow statement)",
+   "one_off_note": "Our ongoing commitment to maintain a safe shopping and working environment resulted in improved claims experience which led to a $112 million reduction in self-insurance liabilities for workers compensation and general liability claims. The change increased diluted earnings per share by approximately $0.05."
+  },
+  {
+   "quarter": "Q4 FY07",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-02-25",
+   "source": "L17",
+   "release": "Feb 25",
+   "release_time": "'For 7:00 am EST Release', before the open (8-K accepted 08:29 ET)",
+   "period_end": "2008-02-01",
+   "sales_b": 10.379,
+   "sales_pct": -0.3,
+   "comps_pct": -7.6,
+   "gross_margin": 34.88,
+   "gross_margin_bp": -56,
+   "gross_margin_note": "34.88% vs 35.44% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.34,
+     -269
+    ],
+    "EBIT margin": [
+     6.75,
+     -281
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.88 - 23.97 - 3.57 = 7.34% vs 10.03%); EBIT margin = pre-tax + interest (6.30 + 0.45 = 6.75% vs 9.56%)",
+   "inventory_pct": 6.5,
+   "inventory_gap_pp": 6.8,
+   "inventory_note": "merchandise inventory $7,611M vs $7,144M a year earlier (+6.5%), against net sales -0.3%",
+   "eps_q": 0.28,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 1482.0,
+   "cash_b": 0.53,
+   "stores": 1534,
+   "sq_ft_m": 174.1,
+   "sq_ft_pct": 10.9,
+   "dividend_q": 0.08,
+   "outlook_short": "As the year progresses, the recent Federal Reserve interest rate cuts and the approved fiscal stimulus package are expected to lend support to the broader economy and the consumer.",
+   "next_print": "Q1 FY08 print (mid-May)",
+   "cash_return_text": "repurchases $2.27B year to date (cash flow statement)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 1.86,
+    "revenue_usd_b": 48.283,
+    "diluted_shares_m": 1510.0,
+    "normalization_note": "FY07 = diluted EPS $1.86 as released; no one-off excluded",
+    "margins": {
+     "operating margin": 10.03,
+     "EBIT margin": 9.74
+    },
+    "margins_note": "FY07 operating margin 34.64 - 21.78 - 2.83 = 10.03%; EBIT margin 9.34 + 0.40 = 9.74% (percent-of-sales column)",
+    "gross_margin": 34.64,
+    "sales_growth": 2.9,
+    "comps_pct": -5.1,
+    "stores": 1534,
+    "net_interest_b": 0.194,
+    "store_opening_b": 0.141,
+    "tax_rate": 0.3773,
+    "tax_note": "FY07 effective rate: income tax provision $1,702M / pre-tax earnings $4,511M; no tax-rate guide",
+    "fcf_b": 0.337
+   }
+  },
+  {
+   "quarter": "Q1 FY08",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-05-19",
+   "source": "L19",
+   "release": "May 19",
+   "release_time": "'For 7:00 am EDT Release', before the open (8-K accepted 08:33 ET)",
+   "period_end": "2008-05-02",
+   "sales_b": 12.009,
+   "sales_pct": -1.3,
+   "comps_pct": -8.4,
+   "gross_margin": 34.69,
+   "gross_margin_bp": -30,
+   "gross_margin_note": "34.69% vs 34.99% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     8.88,
+     -140
+    ],
+    "EBIT margin": [
+     8.73,
+     -145
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.69 - 22.69 - 3.12 = 8.88% vs 10.28%); EBIT margin = pre-tax + interest (8.10 + 0.63 = 8.73% vs 10.18%)",
+   "inventory_pct": -0.7,
+   "inventory_gap_pp": 0.6,
+   "inventory_note": "merchandise inventory $8,438M vs $8,501M a year earlier (-0.7%), against net sales -1.3%",
+   "eps_q": 0.41,
+   "eps_q_prior": 0.48,
+   "diluted_shares_m": 1480.0,
+   "cash_b": 1.165,
+   "stores": 1554,
+   "sq_ft_m": 176.4,
+   "sq_ft_pct": 11.1,
+   "dividend_q": 0.08,
+   "outlook_short": "Fiscal 2008 will be a challenging year on many fronts, but we remain focused on what we can control and will continue managing for long-term success and pursuing opportunities as they arise in the current environment.",
+   "next_print": "Q2 FY08 print (mid-August)",
+   "cash_return_text": "no material repurchases year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q2 FY08",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-08-18",
+   "source": "L21",
+   "release": "Aug 18",
+   "release_time": "'For 7:00 am EDT Release', before the open (8-K accepted 08:21 ET)",
+   "period_end": "2008-08-01",
+   "sales_b": 14.509,
+   "sales_pct": 2.4,
+   "comps_pct": -5.3,
+   "gross_margin": 34.34,
+   "gross_margin_bp": -13,
+   "gross_margin_note": "34.34% vs 34.47% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.93,
+     -115
+    ],
+    "EBIT margin": [
+     10.79,
+     -111
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.34 - 20.78 - 2.63 = 10.93% vs 12.08%); EBIT margin = pre-tax + interest (10.32 + 0.47 = 10.79% vs 11.90%)",
+   "inventory_pct": 1.8,
+   "inventory_gap_pp": -0.6,
+   "inventory_note": "merchandise inventory $7,939M vs $7,799M a year earlier (+1.8%), against net sales +2.4%",
+   "eps_q": 0.64,
+   "eps_q_prior": 0.67,
+   "diluted_shares_m": 1473.0,
+   "cash_b": 0.854,
+   "stores": 1577,
+   "sq_ft_m": 178.6,
+   "sq_ft_pct": 10.5,
+   "dividend_q": 0.085,
+   "outlook_short": "the macro economic factors pressuring consumers and the ongoing challenges and uncertainty of the financial markets suggest a cautious sales forecast for the balance of fiscal 2008 is prudent.",
+   "next_print": "Q3 FY08 print (mid-November)",
+   "cash_return_text": "no material repurchases year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q3 FY08",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-11-17",
+   "source": "L23",
+   "release": "Nov 17",
+   "release_time": "'For 7:00 am EST Release', before the open (8-K accepted 08:19 ET)",
+   "period_end": "2008-10-31",
+   "sales_b": 11.728,
+   "sales_pct": 1.4,
+   "comps_pct": -5.9,
+   "gross_margin": 33.98,
+   "gross_margin_bp": -29,
+   "gross_margin_note": "33.98% vs 34.27% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.46,
+     -224
+    ],
+    "EBIT margin": [
+     7.19,
+     -215
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (33.98 - 23.23 - 3.29 = 7.46% vs 9.70%); EBIT margin = pre-tax + interest (6.63 + 0.56 = 7.19% vs 9.34%)",
+   "inventory_pct": 7.1,
+   "inventory_gap_pp": 5.7,
+   "inventory_note": "merchandise inventory $8,327M vs $7,775M a year earlier (+7.1%), against net sales +1.4%",
+   "eps_q": 0.33,
+   "eps_q_prior": 0.43,
+   "diluted_shares_m": 1464.0,
+   "cash_b": 0.767,
+   "stores": 1616,
+   "sq_ft_m": 183.0,
+   "sq_ft_pct": 10.2,
+   "dividend_q": 0.085,
+   "outlook_short": "We expect continued, broad-based external pressures on our industry, as rising unemployment, falling home prices, tight credit and volatile equity markets continue to erode consumer confidence and impact sales,",
+   "next_print": "Q4 FY08 print (late February)",
+   "cash_return_text": "no material repurchases year to date (cash flow statement)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-02-23",
+   "source": "L11",
+   "doc": "Q4 FY06 release",
+   "eps_guide": [
+    2.02,
+    2.09
+   ],
+   "rev_guide": [
+    10,
+    10
+   ],
+   "comps_guide": [
+    0,
+    2
+   ],
+   "op_margin_guide_bp": [
+    -80,
+    -70
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating margin (defined as gross margin less SG&A and depreciation) is expected to decline 70 to 80 basis points",
+   "stores_guide": 150,
+   "store_opening_m": 140,
+   "q_guide": {
+    "quarter": "Q1 FY07",
+    "sales": [
+     5,
+     6
+    ],
+    "comps": [
+     -4,
+     -2
+    ],
+    "eps": [
+     0.49,
+     0.51
+    ],
+    "op_margin_bp": [
+     -150,
+     -150
+    ]
+   }
+  },
+  {
+   "fy": 2007,
+   "published": "2007-05-21",
+   "source": "L12",
+   "doc": "Q1 FY07 release",
+   "eps_guide": [
+    1.99,
+    2.03
+   ],
+   "rev_guide": [
+    7,
+    7
+   ],
+   "comps_guide": [
+    -2,
+    -1
+   ],
+   "op_margin_guide_bp": [
+    -80,
+    -70
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating margin (defined as gross margin less SG&A and depreciation) is expected to decline 70 to 80 basis points",
+   "stores_guide": 150,
+   "store_opening_m": 140,
+   "q_guide": {
+    "quarter": "Q2 FY07",
+    "sales": [
+     6,
+     7
+    ],
+    "comps": [
+     -3,
+     -1
+    ],
+    "eps": [
+     0.62,
+     0.64
+    ],
+    "op_margin_bp": [
+     -40,
+     -40
+    ]
+   },
+   "eps_guide_note": "lowered from $2.02-2.09"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-08-20",
+   "source": "L14",
+   "doc": "Q2 FY07 release",
+   "eps_guide": [
+    1.97,
+    2.01
+   ],
+   "rev_guide": [
+    6,
+    6
+   ],
+   "comps_guide": [
+    -2,
+    -2
+   ],
+   "op_margin_guide_bp": [
+    -80,
+    -70
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating margin (defined as gross margin less SG&A and depreciation) is expected to decline 70 to 80 basis points",
+   "stores_guide": 150,
+   "store_opening_m": 135,
+   "q_guide": {
+    "quarter": "Q3 FY07",
+    "sales": [
+     7,
+     8
+    ],
+    "comps": [
+     0,
+     0
+    ],
+    "eps": [
+     0.43,
+     0.45
+    ],
+    "op_margin_bp": [
+     -140,
+     -140
+    ]
+   },
+   "eps_guide_note": "lowered from $1.99-2.03"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-09-25",
+   "source": "L15",
+   "doc": "8-K of 2007-09-24",
+   "eps_guide": [
+    1.97,
+    2.01
+   ],
+   "eps_guide_note": "the 8-K of 2007-09-24 expects EPS 'at the low end or slightly below its prior guidance of $1.97 to 2.01'"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-11-19",
+   "source": "L16",
+   "doc": "Q3 FY07 release",
+   "eps_guide": [
+    1.83,
+    1.87
+   ],
+   "rev_guide": [
+    3,
+    4
+   ],
+   "comps_guide": [
+    -4,
+    -4
+   ],
+   "op_margin_guide_bp": [
+    -130,
+    -130
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating margin (defined as gross margin less SG&A and depreciation) is expected to decline approximately 130 basis points",
+   "stores_guide": 153,
+   "store_opening_m": 135,
+   "q_guide": {
+    "quarter": "Q4 FY07",
+    "sales": [
+     3,
+     3
+    ],
+    "comps": [
+     -5,
+     -3
+    ],
+    "eps": [
+     0.25,
+     0.29
+    ],
+    "op_margin_bp": [
+     -280,
+     -280
+    ]
+   },
+   "eps_guide_note": "lowered from $1.97-2.01"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-02-25",
+   "source": "L17",
+   "doc": "Q4 FY07 release",
+   "eps_guide": [
+    1.5,
+    1.58
+   ],
+   "rev_guide": [
+    3,
+    3
+   ],
+   "comps_guide": [
+    -6,
+    -5
+   ],
+   "op_margin_guide_bp": [
+    -180,
+    -180
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes (EBIT) margin is expected to decline approximately 180 basis points",
+   "stores_guide": 120,
+   "store_opening_m": 109,
+   "q_guide": {
+    "quarter": "Q1 FY08",
+    "sales": [
+     2,
+     2
+    ],
+    "comps": [
+     -7,
+     -5
+    ],
+    "eps": [
+     0.38,
+     0.42
+    ],
+    "op_margin_bp": [
+     -170,
+     -170
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2008-05-19",
+   "source": "L19",
+   "doc": "Q1 FY08 release",
+   "eps_guide": [
+    1.45,
+    1.55
+   ],
+   "rev_guide": [
+    1,
+    1
+   ],
+   "comps_guide": [
+    -7,
+    -6
+   ],
+   "op_margin_guide_bp": [
+    -180,
+    -180
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes (EBIT) margin is expected to decline approximately 180 basis points",
+   "stores_guide": 120,
+   "store_opening_m": 106,
+   "q_guide": {
+    "quarter": "Q2 FY08",
+    "sales": [
+     1,
+     1
+    ],
+    "comps": [
+     -8,
+     -6
+    ],
+    "eps": [
+     0.54,
+     0.59
+    ],
+    "op_margin_bp": [
+     -190,
+     -190
+    ]
+   },
+   "eps_guide_note": "lowered from $1.50-1.58"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-08-18",
+   "source": "L21",
+   "doc": "Q2 FY08 release",
+   "eps_guide": [
+    1.48,
+    1.56
+   ],
+   "rev_guide": [
+    1,
+    1
+   ],
+   "comps_guide": [
+    -7,
+    -6
+   ],
+   "op_margin_guide_bp": [
+    -180,
+    -180
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) is expected to decline approximately 180 basis points",
+   "stores_guide": 120,
+   "store_opening_m": 97,
+   "q_guide": {
+    "quarter": "Q3 FY08",
+    "sales": [
+     1,
+     2
+    ],
+    "comps": [
+     -7,
+     -5
+    ],
+    "eps": [
+     0.27,
+     0.31
+    ],
+    "op_margin_bp": [
+     -290,
+     -290
+    ]
+   },
+   "eps_guide_note": "raised from $1.45-1.55"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-11-17",
+   "source": "L23",
+   "doc": "Q3 FY08 release",
+   "eps_guide": [
+    1.46,
+    1.54
+   ],
+   "rev_guide": [
+    0,
+    1
+   ],
+   "comps_guide": [
+    -7,
+    -6
+   ],
+   "op_margin_guide_bp": [
+    -190,
+    -190
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) is expected to decline approximately 190 basis points",
+   "stores_guide": 115,
+   "store_opening_m": 100,
+   "q_guide": {
+    "quarter": "Q4 FY08",
+    "sales": [
+     -3,
+     2
+    ],
+    "comps": [
+     -10,
+     -5
+    ],
+    "eps": [
+     0.08,
+     0.16
+    ],
+    "op_margin_bp": [
+     -330,
+     -330
+    ]
+   },
+   "eps_guide_note": "lowered from $1.48-1.56"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-05-25",
+   "source": "L13",
+   "quarterly": 0.08,
+   "note": "$0.08 quarterly declared 2007-05-25 (a 60% increase)"
+  },
+  {
+   "published": "2008-06-05",
+   "source": "L20",
+   "quarterly": 0.085,
+   "note": "$0.085 quarterly declared 2008-05-30, first stated in the Q1 2008 10-Q"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [
+  {
+   "published": "1998-06-12",
+   "source": "L30",
+   "effective": "1998-06-29",
+   "ratio": 2,
+   "note": "2-for-1, declared 1998-05-29"
+  },
+  {
+   "published": "2001-06-15",
+   "source": "L31",
+   "effective": "2001-07-02",
+   "ratio": 2,
+   "note": "2-for-1, approved 2001-05-25"
+  },
+  {
+   "published": "2006-06-06",
+   "source": "L32",
+   "effective": "2006-07-03",
+   "ratio": 2,
+   "note": "2-for-1, approved 2006-05-25"
+  }
+ ]
+}

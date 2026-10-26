@@ -5,9 +5,10 @@ and require byte-identical models. Restores the fact sheet and the price cache a
 
     python3 retro/tools/firewall.py 2015-01-01
     python3 retro/tools/firewall.py 2008-03-31 UNP          # the UNP series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 LOW          # the LOW series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
-dividend), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+dividend; LOW: also a guide with every guided field), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -30,7 +31,7 @@ cutoff = sys.argv[1]
 TICKER = sys.argv[2].upper() if len(sys.argv) > 2 else "ACN"
 FACTS = os.path.join(ROOT, "retro", "facts", f"{TICKER}.json")
 CACHE = [os.path.join(ROOT, "retro", ".cache", n) for n in (f"{TICKER}.json", "_GSPC.json")]
-OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"}[TICKER]
+OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP", "LOW": "staging/retrospective/LOW"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -39,7 +40,15 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      cash_return_text="PLANTED", dividend_annual=9.99, dividend_note="PLANTED"),
          "UNP": dict(quarter="Q1 2099", fy=2099, commodity_pct=-60, carloads_pct=-60, arc_pct=-60, gtm_per_employee_pct=-60,
                      op_ratio=199.0, op_ratio_pt=99.0, groups=[["PLANTED", 1, -99]], cash_return_text="PLANTED",
-                     outlook_short="PLANTED", diluted_shares_m=1.0, cash_b=99.0)}[TICKER]
+                     outlook_short="PLANTED", diluted_shares_m=1.0, cash_b=99.0),
+         "LOW": dict(quarter="Q1 FY99", fy=2099, q=1, sales_b=0.01, sales_pct=-60.0, comps_pct=-60.0, gross_margin=1.0,
+                     gross_margin_bp=-999, op_margin=-50.0, op_margin_bp=-999, inventory_pct=99.0, inventory_gap_pp=99.0,
+                     eps_q=0.01, eps_q_prior=9.99, stores=1, sq_ft_pct=-60.0, cash_return_text="PLANTED",
+                     outlook_short="PLANTED", next_print="PLANTED", diluted_shares_m=1.0, cash_b=99.0)}[TICKER]
+# LOW guides carry more fields than UNP's: plant every one the LOW builder reads
+GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
+                           store_opening_m=9999, fy_words="PLANTED",
+                           q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2]})}.get(TICKER, {})
 
 git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True, check=True).stdout
 if git("status", "--porcelain", "retro/facts", OUTDIR).strip():
@@ -62,7 +71,7 @@ try:
     if "guides" in f:      # a guide for every fiscal year in the fact sheet, and a dividend
         for y in {g["fy"] for g in f["guides"]} | {2099}:
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2],
-                                "rev_guide": [-40, -30], "rev_guide_label": "PLANTED", "volume_guide": [-50, -40]})
+                                "rev_guide": [-40, -30], "rev_guide_label": "PLANTED", "volume_guide": [-50, -40], **GUIDE_PLANT})
         f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
     if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF
         with open(CACHE[0]) as fh:
