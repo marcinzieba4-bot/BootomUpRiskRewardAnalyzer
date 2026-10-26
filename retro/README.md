@@ -1030,6 +1030,67 @@ Judgement calls that could carry hindsight: rule T itself (mechanical, but chose
 of the inventory signal; applying the two published "excluding" figures to the threshold histories; DURABLE rather than
 CYCLICAL (the class label only); EBIT margin taken as pre-tax plus interest.
 
+### LOW 2009-2010: two more vintages, a level-form margin guide, the first margin increase
+
+```bash
+python3 retro/build_low.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
+python3 retro/build_low.py --weekly 2010-01-04 2010-12-31                   # 52 dates, 2010-01-08 .. 2010-12-31
+```
+
+Every 8-K, 10-Q, 10-K, 10-K/A and earnings release of 2009 and 2010 was read by Sonnet 5.5 agents (758 strings checked
+with `verbatim.py`). Thresholds (rule T) and signals are unchanged. Decided before any 2009 or 2010 date was built or scored:
+
+- **Two 10-K vintages.** The FY2008 10-K (accepted 2009-03-31 16:34 ET, dated 2009-04-01) gives 2004-2008, the FY2009 10-K
+  (2010-03-30 17:28 ET, dated 2010-03-31) gives 2005-2009; the history moves to 1999-2008, then 2000-2009, each earlier
+  year from the latest 10-K that reports it. First-year diluted shares: 1999's 767.7M from the FY2001 10-K, 2000's 769M from
+  the FY2002 10-K, both before the 2006 split. The FY2009 10-K adopts two-class EPS retrospectively and prints FY2006
+  diluted EPS as $1.98 ($1.99 in every earlier filing, unexplained); by the vintage rule the FY2009 vintage uses $1.98.
+  Its two 10-K/As add nothing: the first only furnishes the XBRL exhibit, the second corrects exhibit references in Item 15.
+- **A release on a Friday.** The Q4 FY08 release came out on Friday 2009-02-20 (8-K accepted 08:02 ET, "For 7:00 am EST
+  Release", call at 9:00 a.m.). No trading day followed in its week, so the week's date is the release day and the print
+  counts from its open (the ACN rule for Good Friday 2013).
+- **The analyst-conference outlooks are guides for the next year.** The 8-K of 2008-09-24 gives the first fiscal 2009
+  outlook, with EBIT margin as a level, "in the range of 7.2 to 8.1 percent" of sales; the 8-K of 2009-09-22 the first fiscal
+  2010 outlook (EBIT margin "increase approximately 30 basis points"). Each enters as a guide for its year (the UNP Investor
+  Day rule). A level-form margin guide gives the guided margin as its midpoint (the UNP `op_ratio_guide` rule;
+  `op_margin_guide_pct`). Both are replaced field by field on the day their year becomes current, so they show only in the
+  guide's document list and in the next EPS note ("lowered from $1.40-1.65"). Their repetition of the current year's guide
+  adds nothing; so do the 2009 8-K's "not expected to exceed $100 million" of possible impairments (no field) and the
+  2007-09-24 8-K's multi-year rates (unchanged).
+- **Every guide from 2009 is in EBIT margin.** From Q1 FY10 the releases fold store opening costs into SG&A and reclassify
+  the prior year; EBIT margin (pre-tax plus interest) is unaffected, and the derived operating margin then equals it.
+- **One-offs without an adjusted figure stay in** (the Fremont rule): Q2 FY09's $48M charge for store projects no longer
+  pursued, Q3 FY09's $57M charge ("approximately two cents per share") and its one-cent state tax benefit, Q3 FY10's $50M
+  long-lived asset charge ("two cents"). No release or 10-K prints EPS excluding them.
+- **Dividends,** none announced by an 8-K, each from the first filing that states it: $0.09 declared 2009-05-29 (Q1 2009
+  10-Q, accepted 2009-06-01 15:35 ET), $0.11 declared 2010-05-28 (Q1 2010 10-Q, accepted 2010-06-01 18:03 ET, dated
+  2010-06-02).
+- **Adds nothing:** the 10-Qs' outlook sections (they repeat the release guides; from 2010 they add that the outlook does
+  not include share repurchases), the $5 billion repurchase authorization of 2010-01-29 (a cash-return fact shown in the
+  vintage text, no method input), depreciation guides and capex forecasts, the debt offerings, bylaw, director, officer
+  and 401(k) blackout 8-Ks.
+- **Text-only change to 2008:** a store-count guide given as a range now prints as a range. The Q3 FY08 release's "115 to
+  120 stores" printed as "115 stores" on the seven dates from 2008-11-18; the 2007 guides change the same way but no 2008
+  date shows them. Two source descriptions (the FY2001 and FY2002 10-Ks) now also cite the 1999 and 2000 share counts the
+  new vintages use, so every 2008 model's SOURCES text changes. No number, class or tier changes.
+
+Seen in the build (method behaviour, not tuned):
+- **2009 reads RICH on 40 of 52 dates.** From the Q4 FY08 print the guided margin step (-170bp, then -130bp) plus negative
+  guided sales put BASE at -19% to -28%/yr, and the BEAR case applies FY2008's -19.9% EPS year twice. Both prices sit near
+  $11-15 against a market of $13-24, so the adjusted gap reads overvalued. CHEAP only before the Q4 print (to 2009-02-13),
+  on 2009-03-06 and on three dates from 2009-06-19 to 2009-07-10 (10 dates). The multiple climbs from the 1st to the 61st percentile of its
+  own range as guided EPS falls to $1.12-1.18. Ratio B, with BULL still on the decade CAGR, keeps the tier at BUY or
+  ACCUMULATE all year.
+- **2010 turns with the FY2010 guide.** From the Q4 FY09 print (2010-02-23) the guided step is an increase (+40 to +70bp), so
+  BASE is +9% to +15%/yr. The margin step scores BULL, as does gross margin on the Q4 FY09 (+122bp) and Q3 FY10 (+85bp)
+  prints, and the proxy composite rises from 1.50 to 1.80-2.20. The class reads CHEAP on 30 dates (2010-02-23, 2010-03-05
+  and late May to November, at 13.8-17.7x), FAIR on 11, RICH on 11 (January to mid-February on the FY2009 guide, and April to
+  mid-May). The tier spreads out: BUY 29, ACCUMULATE 12, WATCHLIST 10, AVOID 1 (2010-04-23, $28.22 at 20.7x).
+- **The EPP floor drops to 15x, then 14x** (from 2010-07-02) as the window takes in 2008-2010's low multiples.
+
+Judgement calls that could carry hindsight: entering the analyst-conference outlooks as guides (they change only the
+document list and one EPS note); treating the 2009 impairment ceiling and the repurchase authorization as adding nothing.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

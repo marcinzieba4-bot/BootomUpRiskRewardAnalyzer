@@ -64,7 +64,7 @@ SOURCES = [
         "filed": "2003-04-15 16:27 ET (after the close)",
         "title": "Lowe's Companies FY2002 10-K (annual report, exhibit 13)",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066703000006/exhibit13.htm",
-        "supports": "selected financial data 1998-2002: 1998 diluted EPS $0.67 (before the 2006 split), net sales $13,331M"
+        "supports": "selected financial data 1998-2002: 1998 diluted EPS $0.67 (before the 2006 split), net sales $13,331M; 2000 weighted average diluted shares 769M (before the 2006 split)"
     },
     {
         "id": "L8",

@@ -64,7 +64,7 @@ SOURCES = [
         "filed": "2003-04-15 16:27 ET (after the close)",
         "title": "Lowe's Companies FY2002 10-K (annual report, exhibit 13)",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066703000006/exhibit13.htm",
-        "supports": "selected financial data 1998-2002: 1998 diluted EPS $0.67 (before the 2006 split), net sales $13,331M"
+        "supports": "selected financial data 1998-2002: 1998 diluted EPS $0.67 (before the 2006 split), net sales $13,331M; 2000 weighted average diluted shares 769M (before the 2006 split)"
     },
     {
         "id": "L8",
@@ -200,7 +200,7 @@ EPP_TODAY_EPS   = 1.5   # FY2008E EPS, guide midpoint
 EPS_LABEL       = 'FY2008E EPS, guide midpoint'
 FWD_GUIDE       = (-3, 2)   # next-quarter total sales guide
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'Q4 FY08 sales guide', 'Q4 FY08', 'Q4 guide'
-GUIDE_TEXT      = 'FY08 guide (Q4 FY07 release, Q1 FY08 release, Q2 FY08 release, Q3 FY08 release): EPS $1.46-1.54 (lowered from $1.48-1.56); sales +0-1%; comps -7% to -6%; EBIT margin -190bp; 115 stores; Q4 FY08: sales -3% to +2%, comps -10% to -5%, EPS $0.08-0.16'
+GUIDE_TEXT      = 'FY08 guide (Q4 FY07 release, Q1 FY08 release, Q2 FY08 release, Q3 FY08 release): EPS $1.46-1.54 (lowered from $1.48-1.56); sales +0-1%; comps -7% to -6%; EBIT margin -190bp; 115-120 stores; Q4 FY08: sales -3% to +2%, comps -10% to -5%, EPS $0.08-0.16'
 MARGIN_GUIDED   = True   # True: numeric operating-margin guide, so BASE adds the guided margin step and the signal uses it
 FY_MARGIN_BASE  = 7.84
 FY_REVENUE_B    = 48.52
