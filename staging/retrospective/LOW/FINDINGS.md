@@ -1,8 +1,9 @@
 # LOW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 262 weekly dates from 2008-01-04 to 2012-12-31. They are **labels and
+Patterns seen in `outcome.json` for the 366 weekly dates from 2008-01-04 to 2014-12-31. They are **labels and
 hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time
-build was committed: 2008 in 88b0255, 2009-2010 in bfe09e0, 2011-2012 in 0b9b6f8. Prices run to 2026-10-23. Medians of
+build was committed: 2008 in 88b0255, 2009-2010 in bfe09e0, 2011-2012 in 0b9b6f8, 2013-2014 in 7eeed23. Prices run to
+2026-10-23 for the earlier batches and 2026-10-26 for 2013-2014; every horizon used here ends by 2017-12-29. Medians of
 an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle over two years is +32.2%.
 
 ## 2008 (53 dates)
@@ -161,17 +162,71 @@ an even count take the upper middle value (`statistics.median_high`). The 15%/yr
   the XBULL price ($52-53, the best two-year run at the 90th-percentile P/E). The best entry of 2012 was the first of them,
   2012-08-21 at $26.43 (+105%).
 
-## 2008-2012 together (262 dates)
+
+## 2013 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 1 | +107% | +107% | 1 | 1 | +50% | 0 |
+| class RICH | 51 | +67% | +39% to +103% | 51 | 51 | +45% | 0 |
+| legacy tier WATCHLIST | 11 | +96% | +81% to +107% | 11 | 11 | +50% | 0 |
+| legacy tier AVOID | 41 | +60% | +39% to +99% | 41 | 41 | +44% | 0 |
+| to 2013-02-22 (FY2012 guide) | 7 | +88% | +80% to +99% | 7 | 7 | +38% | 0 |
+| 2013-02-26 to 2013-08-16 (FY2013 guide, margin +60bp) | 25 | +75% | +56% to +107% | 25 | 25 | +48% | 0 |
+| from 2013-08-22 (margin +65bp, then +75bp) | 20 | +54% | +39% to +67% | 20 | 20 | +44% | 0 |
+
+- **Every date won, and every one landed at XBULL.** All 52 dates cleared the hurdle and beat SPY (median excess +43pp,
+  lowest +22pp on 2013-11-15). Two years on the stock stood at $66.7-77.3, above the XBULL price on every date ($52-68:
+  the decade's best two-year EPS run at the 90th-percentile P/E, 20.6-21.0x). No CHEAP date existed, and RICH, which
+  expects a miss, held on none of its 51.
+- **The class had nothing to rank.** 51 of 52 dates read RICH. The one FAIR date, 2013-02-26 at $36.59 (the day after the
+  fiscal 2013 guide), was the best entry of the year (+107%).
+- **Ratio B ranked the year, and so did the price alone.** WATCHLIST (Ratio B 1.2-1.7x, late February to June at
+  $36.6-39.6) returned +96%, AVOID +60%. The rank correlation of Ratio B with the two-year return was -0.47, of the price
+  alone -0.88. The return fell as the price rose through the year: +88% before the fiscal 2013 guide, +75% on it, +54% from
+  the Q2 print. The worst entries were September to November at $47.8-51.8 (+39% to +49%).
+- **The anchors capped the cases below where the market went.** BASE grew guided EPS at +15-20%/yr, and BULL could not
+  exceed it (the decade CAGR was lower). Both sat on the window's P/E: the median (17x) for BASE, the 75th percentile
+  (18.8x) for BULL. The ten-year window (from 2003) holds the 11-15x lows of 2007-2012, so the stock's 17.8-24.7x read as
+  its 62nd to 99th percentile. The outcomes priced the earnings path at more than any percentile of that window.
+
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 17 | +74% | +65% to +79% | 17 | 17 | +54% | 0 |
+| class RICH | 35 | +41% | +7% to +68% | 25 | 32 | +41% | 3 |
+| legacy tier ACCUMULATE | 7 | +74% | +66% to +75% | 7 | 7 | +57% | 0 |
+| legacy tier WATCHLIST | 18 | +68% | +40% to +79% | 18 | 18 | +51% | 0 |
+| legacy tier AVOID | 27 | +37% | +7% to +59% | 17 | 24 | +40% | 3 |
+| to 2014-02-21 (FY2013 guide) | 7 | +49% | +41% to +59% | 7 | 7 | +51% | 0 |
+| 2014-02-27 to 2014-08-15 (FY2014 guide, margin +65bp) | 25 | +69% | +40% to +79% | 25 | 25 | +53% | 0 |
+| from 2014-08-21 (sales cut to +4.5%, then margin +70-75bp) | 20 | +32% | +7% to +52% | 10 | 17 | +36% | 3 |
+
+- **Class and tier both ranked in order, for the first time since 2010.** FAIR returned +74%, RICH +41%; ACCUMULATE +74%,
+  WATCHLIST +68%, AVOID +37%. The rank correlations were the strongest of the seven years: -0.89 for Ratio B and +0.92 for
+  the adjusted gap. The price alone gave -0.84. With the same guide all spring and summer, the gap moved mostly with the
+  price.
+- **The FAIR window was April to August at $45-48** (17.3-18.3x guided FY14 EPS, the 56th-73rd percentile). Its July
+  dates at $47.4-47.8 were the best entries of the year (+76% to +79%). All 17 FAIR dates cleared the hurdle and beat SPY.
+- **RICH held, at last, at the top.** The 20 dates from the Q2 print returned +32%: 10 cleared the hurdle and 17 beat
+  SPY. The three December dates at $66.90-68.80 (25-26x, the 100th percentile, Ratio B 20-224x with the price at the BULL
+  case) returned +7% to +12% and lagged SPY by 1-6pp: the RICH call held on these 3, its first hits since 2010.
+- **The robustness column flagged the RICH dates that did best.** The two RICH dates at only 4 of 8 price states
+  (2014-08-08 and 2014-08-15, $49.7-50.0) returned +68% and +67%; the 33 RICH dates at 5/8 or more, a median +40%.
+- **The stock still finished above the bull case.** 31 dates landed nearest XBULL, 21 nearest BULL; none nearest BASE.
+
+## 2008-2014 together (366 dates)
 
 | Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
 |---|---|---|---|---|---|---|---|
 | class CHEAP | 116 | +44% | -11% to +153% | 72 | 88 | +25% | 94 |
-| class FAIR | 42 | +32% | -11% to +60% | 19 | 35 | +15% | 14 |
-| class RICH | 104 | +44% | -17% to +146% | 55 | 50 | +23% | 44 |
+| class FAIR | 60 | +50% | -11% to +107% | 37 | 53 | +20% | 14 |
+| class RICH | 190 | +54% | -17% to +146% | 131 | 133 | +43% | 47 |
 | legacy tier BUY | 169 | +31% | -17% to +153% | 83 | 103 | +20% | 112 |
-| legacy tier ACCUMULATE | 47 | +44% | -12% to +129% | 24 | 29 | +16% | 34 |
-| legacy tier WATCHLIST | 20 | +53% | +16% to +99% | 14 | 16 | +18% | 5 |
-| legacy tier AVOID | 26 | +84% | +14% to +97% | 25 | 25 | +56% | 1 |
+| legacy tier ACCUMULATE | 54 | +47% | -12% to +129% | 31 | 36 | +20% | 34 |
+| legacy tier WATCHLIST | 49 | +69% | +16% to +107% | 43 | 45 | +49% | 5 |
+| legacy tier AVOID | 94 | +59% | +7% to +99% | 83 | 90 | +44% | 4 |
 
 Median 2-year total return by year (dates in brackets):
 
@@ -182,27 +237,46 @@ Median 2-year total return by year (dates in brackets):
 | 2010 | +38% (30) | +32% (11) | +22% (11) | +38% (29) | +26% (23) |
 | 2011 | +77% (27) | +53% (8) | +125% (17) | +107% (31) | +53% (21) |
 | 2012 | +78% (19) | +56% (6) | +85% (28) | +83% (16) | +81% (37) |
+| 2013 | none | +107% (1) | +67% (51) | none | +67% (52) |
+| 2014 | none | +74% (17) | +41% (35) | none | +52% (52) |
 
-- **The class ranked the downturn and inverted in the recovery.** CHEAP beat RICH in 2008, 2009 and 2010, and RICH beat
-  CHEAP in 2011 (+125% against +77%) and 2012 (+85% against +78%). Pooled, CHEAP and RICH tie at +44%. CHEAP held its call
-  on 94 of 116 dates and RICH on 44 of 104. Across the cycle the class did not rank LOW's outcomes.
-- **The tier ranked better.** BUY (Ratio B under 0.75) beat the other tiers' median in every year that had both: 2009
-  (+29% against +8%), 2010 (+38% against +26%) and 2011 (+107% against +53%), with a tie in 2012 (+83% against +81%). The
-  pooled tier rows mix years: every AVOID date falls in the 2010-2012 recovery, which is why AVOID shows +84%.
-- **One mechanism under both failures: the model projects from where the latest regime stands.** In the fact sheet the
-  EBIT margin went from 10.98% (FY06) and 9.74% (FY07) to 6.53-7.29% in FY09-FY11, and EPS from $1.98 to $1.21-1.43.
-  Method r2 projects from that base in three ways:
+Rank correlation (Spearman) with the two-year total return, within each year:
+
+| Year | Ratio B | adjusted gap | price alone |
+|---|---|---|---|
+| 2008 | -0.43 | +0.37 | -0.67 |
+| 2009 | -0.72 | +0.30 | -0.80 |
+| 2010 | -0.44 | +0.69 | -0.45 |
+| 2011 | -0.61 | -0.52 | -0.89 |
+| 2012 | +0.18 | -0.15 | -0.18 |
+| 2013 | -0.47 | +0.03 | -0.88 |
+| 2014 | -0.89 | +0.92 | -0.84 |
+
+- **The class ranked the downturn, inverted in the recovery, and had little to rank after it.** CHEAP beat RICH in
+  2008, 2009 and 2010. RICH beat CHEAP in 2011 (+125% against +77%) and 2012 (+85% against +78%). In 2013 and 2014 no date
+  read CHEAP; FAIR beat RICH in both years (+107% on one date, then +74% against +41%). Pooled, the order is upside down
+  (RICH +54%, FAIR +50%, CHEAP +44%), because RICH dates crowd into the 2011-2014 recovery. Across the cycle the class did
+  not rank LOW's outcomes.
+- **The tier ranked better, but mostly as a price.** A lower Ratio B went with a higher return in six of seven years
+  (Spearman -0.43 to -0.89; 2012 +0.18). The price alone ranked the dates as well or better in six of the seven years,
+  and nearly as well in 2014 (-0.84 against -0.89). Within one stock and one year, Ratio B mostly says "buy lower". The pooled tier rows mix years: AVOID falls only in
+  2010-2014, which is why it shows +59% against BUY's +31%.
+- **One mechanism under the failures: the model projects from where the latest regime stands.** In the fact sheet the
+  EBIT margin went from 10.98% (FY06) and 9.74% (FY07) to 6.53-7.29% in FY09-FY11, then 7.05% (FY12) and 7.77% (FY13), and
+  EPS from $1.98 to $1.21-1.43, then $1.69 and $2.14. Method r2 projects from that base in three ways:
   - it carries the latest guided margin step for two years;
-  - it takes BULL from the decade's EPS CAGR on the latest EPS (21-25% in 2008, 8.5-11% in 2011-2012);
+  - it takes BULL from the decade's EPS CAGR on the latest EPS (21-25% in 2008, 8.5-11% in 2011-2012), and once BASE
+    exceeds that CAGR, BULL can add nothing to BASE (2013-2014);
   - it scores net sales against rule T's BASE line of +10% or more, set from the fiscal 1997-2006 growth decade.
 
-  The net-sales signal read BEAR on 250 of the 262 dates, which held the proxy composite at 1.30-2.35. Any rally then
+  The net-sales signal read BEAR on 341 of the 366 dates, which held the proxy composite at 1.30-2.70. Any rally then
   opened a gap to the market composite and read RICH.
-
-  In 2008 the same anchors pointed the other way: the growth decade's multiple and CAGR made the year read CHEAP while
-  the stock went nowhere. In 2011-2012 the outcomes landed at BULL or XBULL on 104 of the 105 dates: the market priced a
-  recovery from trough earnings that no rule of the method projects. UNP's 2010 (FINDINGS there: the P/E on trough EPS
-  read RICH while earnings recovered) is the same pattern on another ticker.
+- **The P/E window lags a regime change in both directions.** In 2008 the window (1998-2007) held a growth decade's
+  14-43x, so 11-17x read as the 0th-27th percentile: CHEAP, while the stock went nowhere. In 2013-2014 the ten-year
+  window held the crisis's 11-15x, so 17-26x read as the 56th-100th percentile: RICH, while the stock landed nearest the
+  XBULL price on 83 of 104 dates. In 2011-2014 the outcomes landed at BULL or XBULL on 208 of 209 dates: the market
+  priced a recovery from trough earnings, and a re-rating, that no rule of the method projects. UNP's 2010 (FINDINGS
+  there: the P/E on trough EPS read RICH while earnings recovered) is the same pattern on another ticker.
 - **Hypotheses for a new method version.** Test each on other tickers' cycles before any change, and never fit it to
   LOW's outcomes:
   1. When the latest margin sits far below the decade median, show BASE and BULL on mid-cycle (decade-median) margin
@@ -211,8 +285,11 @@ Median 2-year total return by year (dates in brackets):
   3. Re-derive the signal thresholds on a rolling window, so that one growth era does not set the BEAR line for the
      next.
   4. Put the class change on a band, so that a 3% move cannot flip CHEAP and RICH (2011).
+  5. Read the own-history P/E against a longer window or the market's multiple, so that one regime (a growth decade, a
+     crisis) does not set the percentiles for the next (2008 and 2013-2014).
 
   The tier's better ranking is itself an outcome pattern. Treat it as a question for the other tickers, not as a rule.
-- **What 262 dates can and cannot show.** The weekly dates overlap: five years hold about two and a half non-overlapping
-  two-year windows of one stock in one housing cycle. The class and tier patterns above are at best a few independent
-  observations. Testing selection needs many tickers on the same dates.
+- **What 366 dates can and cannot show.** The weekly dates overlap: seven years hold about three and a half
+  non-overlapping two-year windows of one stock in one housing cycle. The class and tier patterns above are at best a few
+  independent observations, and within a year they mostly restate the entry price. Testing selection needs many tickers
+  on the same dates.

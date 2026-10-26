@@ -266,107 +266,107 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2012-12-21 | $35.04 | Lowe's Q3 2012 results | 2.00 | -1.75 | 20.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.2% | +45.5pp | +45.1% | ✗ |
 | 2012-12-28 | $34.98 | Lowe's Q3 2012 results | 2.00 | -1.74 | 19.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.3% | +43.3pp | +46.2% | ✗ |
 | 2012-12-31 | $35.52 | Lowe's Q3 2012 results | 2.00 | -1.80 | 42.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.2% | +46.4pp | +44.4% | ✗ |
-| 2013-01-11 | $35.83 | Lowe's Q3 2012 results | 2.00 | -1.83 | 122.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-01-18 | $36.99 | Lowe's Q3 2012 results | 2.00 | -1.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-01-25 | $38.58 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-02-01 | $38.56 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-02-08 | $39.03 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-02-15 | $39.14 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-02-22 | $37.67 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-02-26 | $36.59 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.46 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2013-03-08 | $39.31 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.04 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2013-03-15 | $38.81 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.96 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2013-03-22 | $37.83 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.77 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2013-03-28 | $37.92 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.78 | 1.45x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2013-04-05 | $38.39 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.77 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2013-04-12 | $38.92 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.89 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2013-04-19 | $38.12 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.73 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2013-04-26 | $37.70 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.65 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2013-05-03 | $39.59 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.01 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2013-05-10 | $42.07 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.29 | 2.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-05-17 | $42.67 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.35 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-05-23 | $42.69 | Lowe's Q1 2013 results | 1.80 | -1.55 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-05-31 | $42.11 | Lowe's Q1 2013 results | 1.80 | -1.50 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-06-07 | $41.60 | Lowe's Q1 2013 results | 1.80 | -1.44 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-06-14 | $41.16 | Lowe's Q1 2013 results | 1.80 | -1.40 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-06-21 | $39.55 | Lowe's Q1 2013 results | 1.80 | -1.20 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-06-28 | $40.90 | Lowe's Q1 2013 results | 1.80 | -1.37 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-07-05 | $42.78 | Lowe's Q1 2013 results | 1.80 | -1.56 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-07-12 | $43.83 | Lowe's Q1 2013 results | 1.80 | -1.66 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-07-19 | $44.27 | Lowe's Q1 2013 results | 1.80 | -1.70 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-07-26 | $43.97 | Lowe's Q1 2013 results | 1.80 | -1.67 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-08-02 | $44.99 | Lowe's Q1 2013 results | 1.80 | -1.77 | 3.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-08-09 | $45.68 | Lowe's Q1 2013 results | 1.80 | -1.84 | 4.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-08-16 | $43.96 | Lowe's Q1 2013 results | 1.80 | -1.67 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-08-22 | $47.39 | Lowe's Q2 2013 results | 2.70 | -1.01 | 4.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-08-30 | $45.82 | Lowe's Q2 2013 results | 2.70 | -0.83 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-09-06 | $45.60 | Lowe's Q2 2013 results | 2.70 | -0.81 | 3.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2013-09-13 | $46.86 | Lowe's Q2 2013 results | 2.70 | -0.94 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-09-20 | $47.84 | Lowe's Q2 2013 results | 2.70 | -1.06 | 4.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-09-27 | $47.77 | Lowe's Q2 2013 results | 2.70 | -1.06 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-10-04 | $48.14 | Lowe's Q2 2013 results | 2.70 | -1.11 | 4.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-10-11 | $48.80 | Lowe's Q2 2013 results | 2.70 | -1.29 | 5.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-10-18 | $47.66 | Lowe's Q2 2013 results | 2.70 | -1.04 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-10-25 | $50.59 | Lowe's Q2 2013 results | 2.70 | -1.29 | 9.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-11-01 | $49.18 | Lowe's Q2 2013 results | 2.70 | -1.29 | 6.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-11-08 | $48.72 | Lowe's Q2 2013 results | 2.70 | -1.29 | 5.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-11-15 | $51.77 | Lowe's Q2 2013 results | 2.70 | -1.29 | 14.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-11-21 | $48.20 | Lowe's Q3 2013 results | 2.20 | -1.44 | 3.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-11-29 | $47.48 | Lowe's Q3 2013 results | 2.20 | -1.35 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-12-06 | $47.98 | Lowe's Q3 2013 results | 2.20 | -1.41 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-12-13 | $47.11 | Lowe's Q3 2013 results | 2.20 | -1.31 | 2.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-12-20 | $47.97 | Lowe's Q3 2013 results | 2.20 | -1.41 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-12-27 | $48.83 | Lowe's Q3 2013 results | 2.20 | -1.53 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2013-12-31 | $49.55 | Lowe's Q3 2013 results | 2.20 | -1.59 | 3.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-10 | $49.68 | Lowe's Q3 2013 results | 2.20 | -1.59 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-17 | $47.61 | Lowe's Q3 2013 results | 2.20 | -1.37 | 2.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-24 | $47.83 | Lowe's Q3 2013 results | 2.20 | -1.39 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-31 | $46.29 | Lowe's Q3 2013 results | 2.20 | -1.21 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-07 | $46.07 | Lowe's Q3 2013 results | 2.20 | -1.15 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2014-02-14 | $47.28 | Lowe's Q3 2013 results | 2.20 | -1.28 | 2.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-21 | $47.06 | Lowe's Q3 2013 results | 2.20 | -1.25 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-27 | $50.82 | Lowe's Q4 and fiscal 2013 results | 2.00 | -1.00 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2014-03-07 | $50.42 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.94 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2014-03-14 | $49.09 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.74 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2014-03-21 | $49.25 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.76 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2014-03-28 | $48.92 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.72 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2014-04-04 | $48.44 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.67 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2014-04-11 | $46.31 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.31 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-04-17 | $46.80 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.37 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2014-04-25 | $46.38 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.32 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-05-02 | $46.98 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.39 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2014-05-09 | $45.71 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.23 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-05-16 | $45.36 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.19 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-05-22 | $46.89 | Lowe's Q1 2014 results | 2.20 | -0.10 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-05-30 | $47.08 | Lowe's Q1 2014 results | 2.20 | -0.13 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-06-06 | $47.77 | Lowe's Q1 2014 results | 2.20 | -0.22 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-06-13 | $45.45 | Lowe's Q1 2014 results | 2.20 | +0.07 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-06-20 | $46.02 | Lowe's Q1 2014 results | 2.20 | -0.03 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-06-27 | $47.42 | Lowe's Q1 2014 results | 2.20 | -0.21 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-07-03 | $48.23 | Lowe's Q1 2014 results | 2.20 | -0.42 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-07-11 | $47.44 | Lowe's Q1 2014 results | 2.20 | -0.21 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-07-18 | $47.81 | Lowe's Q1 2014 results | 2.20 | -0.26 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-07-25 | $47.70 | Lowe's Q1 2014 results | 2.20 | -0.25 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-08-01 | $47.59 | Lowe's Q1 2014 results | 2.20 | -0.23 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2014-08-08 | $49.72 | Lowe's Q1 2014 results | 2.20 | -0.65 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2014-08-15 | $50.00 | Lowe's Q1 2014 results | 2.20 | -0.70 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2014-08-21 | $52.67 | Lowe's Q2 2014 results | 2.15 | -1.10 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2014-08-29 | $52.51 | Lowe's Q2 2014 results | 2.15 | -1.08 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2014-09-05 | $54.11 | Lowe's Q2 2014 results | 2.15 | -1.23 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-12 | $52.97 | Lowe's Q2 2014 results | 2.15 | -1.13 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2014-09-19 | $54.09 | Lowe's Q2 2014 results | 2.15 | -1.23 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-26 | $53.18 | Lowe's Q2 2014 results | 2.15 | -1.14 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2014-10-03 | $53.59 | Lowe's Q2 2014 results | 2.15 | -1.18 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-10 | $53.70 | Lowe's Q2 2014 results | 2.15 | -1.19 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-17 | $52.51 | Lowe's Q2 2014 results | 2.15 | -1.08 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2014-10-24 | $55.33 | Lowe's Q2 2014 results | 2.15 | -1.34 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-31 | $57.20 | Lowe's Q2 2014 results | 2.15 | -1.52 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-07 | $57.69 | Lowe's Q2 2014 results | 2.15 | -1.57 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-14 | $58.58 | Lowe's Q2 2014 results | 2.15 | -1.69 | 4.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-20 | $62.43 | Lowe's Q3 2014 results | 1.95 | -1.91 | 5.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-28 | $63.83 | Lowe's Q3 2014 results | 1.95 | -1.91 | 7.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-05 | $64.86 | Lowe's Q3 2014 results | 1.95 | -1.91 | 9.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-12 | $64.87 | Lowe's Q3 2014 results | 1.95 | -1.91 | 9.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-19 | $66.90 | Lowe's Q3 2014 results | 1.95 | -1.91 | 20.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-26 | $67.50 | Lowe's Q3 2014 results | 1.95 | -1.91 | 29.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-31 | $68.80 | Lowe's Q3 2014 results | 1.95 | -1.91 | 224.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2013-01-11 | $35.83 | Lowe's Q3 2012 results | 2.00 | -1.83 | 122.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.9% | +51.1pp | +44.7% | ✗ |
+| 2013-01-18 | $36.99 | Lowe's Q3 2012 results | 2.00 | -1.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.1% | +47.3pp | +41.2% | ✗ |
+| 2013-01-25 | $38.58 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +84.8% | +43.6pp | +36.2% | ✗ |
+| 2013-02-01 | $38.56 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.8% | +43.2pp | +37.4% | ✗ |
+| 2013-02-08 | $39.03 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.2% | +48.1pp | +37.0% | ✗ |
+| 2013-02-15 | $39.14 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.1% | +45.5pp | +37.9% | ✗ |
+| 2013-02-22 | $37.67 | Lowe's Q3 2012 results | 2.00 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +99.4% | +55.6pp | +44.4% | ✗ |
+| 2013-02-26 | $36.59 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.46 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +106.8% | +61.1pp | +49.7% | ✗ |
+| 2013-03-08 | $39.31 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.04 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +91.0% | +52.9pp | +40.9% | ✗ |
+| 2013-03-15 | $38.81 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.96 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +95.1% | +58.9pp | +43.9% | ✗ |
+| 2013-03-22 | $37.83 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.77 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +103.0% | +63.0pp | +49.0% | ✗ |
+| 2013-03-28 | $37.92 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.78 | 1.45x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +98.4% | +62.4pp | +50.0% | ✗ |
+| 2013-04-05 | $38.39 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.77 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +99.0% | +61.2pp | +49.3% | ✗ |
+| 2013-04-12 | $38.92 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.89 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +96.5% | +59.5pp | +48.7% | ✗ |
+| 2013-04-19 | $38.12 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.73 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +94.4% | +55.9pp | +53.1% | ✗ |
+| 2013-04-26 | $37.70 | Lowe's Q4 and fiscal 2012 results | 2.00 | -0.65 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +98.4% | +60.0pp | +56.2% | ✗ |
+| 2013-05-03 | $39.59 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.01 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +82.7% | +47.5pp | +50.0% | ✗ |
+| 2013-05-10 | $42.07 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.29 | 2.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.0% | +44.0pp | +42.4% | ✗ |
+| 2013-05-17 | $42.67 | Lowe's Q4 and fiscal 2012 results | 2.00 | -1.35 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.1% | +43.4pp | +41.6% | ✗ |
+| 2013-05-23 | $42.69 | Lowe's Q1 2013 results | 1.80 | -1.55 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.7% | +33.5pp | +42.7% | ✗ |
+| 2013-05-31 | $42.11 | Lowe's Q1 2013 results | 1.80 | -1.50 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.1% | +36.4pp | +45.6% | ✗ |
+| 2013-06-07 | $41.60 | Lowe's Q1 2013 results | 1.80 | -1.44 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.7% | +39.9pp | +48.4% | ✗ |
+| 2013-06-14 | $41.16 | Lowe's Q1 2013 results | 1.80 | -1.40 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.7% | +38.4pp | +51.1% | ✗ |
+| 2013-06-21 | $39.55 | Lowe's Q1 2013 results | 1.80 | -1.20 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.1% | +43.8pp | +58.4% | ✗ |
+| 2013-06-28 | $40.90 | Lowe's Q1 2013 results | 1.80 | -1.37 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.8% | +36.2pp | +54.3% | ✗ |
+| 2013-07-05 | $42.78 | Lowe's Q1 2013 results | 1.80 | -1.56 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.7% | +27.9pp | +48.3% | ✗ |
+| 2013-07-12 | $43.83 | Lowe's Q1 2013 results | 1.80 | -1.66 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +30.1pp | +45.6% | ✗ |
+| 2013-07-19 | $44.27 | Lowe's Q1 2013 results | 1.80 | -1.70 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.2% | +26.1pp | +45.1% | ✗ |
+| 2013-07-26 | $43.97 | Lowe's Q1 2013 results | 1.80 | -1.67 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.7% | +29.2pp | +46.9% | ✗ |
+| 2013-08-02 | $44.99 | Lowe's Q1 2013 results | 1.80 | -1.77 | 3.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.0% | +30.4pp | +44.5% | ✗ |
+| 2013-08-09 | $45.68 | Lowe's Q1 2013 results | 1.80 | -1.84 | 4.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.0% | +28.7pp | +43.2% | ✗ |
+| 2013-08-16 | $43.96 | Lowe's Q1 2013 results | 1.80 | -1.67 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.0% | +37.1pp | +49.8% | ✗ |
+| 2013-08-22 | $47.39 | Lowe's Q2 2013 results | 2.70 | -1.01 | 4.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.7% | +30.0pp | +39.8% | ✗ |
+| 2013-08-30 | $45.82 | Lowe's Q2 2013 results | 2.70 | -0.83 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.2% | +26.8pp | +45.3% | ✗ |
+| 2013-09-06 | $45.60 | Lowe's Q2 2013 results | 2.70 | -0.81 | 3.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +52.5% | +31.9pp | +46.5% | ✗ |
+| 2013-09-13 | $46.86 | Lowe's Q2 2013 results | 2.70 | -0.94 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.2% | +29.5pp | +43.2% | ✗ |
+| 2013-09-20 | $47.84 | Lowe's Q2 2013 results | 2.70 | -1.06 | 4.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.2% | +27.1pp | +40.9% | ✗ |
+| 2013-09-27 | $47.77 | Lowe's Q2 2013 results | 2.70 | -1.06 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.4% | +28.6pp | +41.8% | ✗ |
+| 2013-10-04 | $48.14 | Lowe's Q2 2013 results | 2.70 | -1.11 | 4.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.5% | +29.4pp | +41.3% | ✗ |
+| 2013-10-11 | $48.80 | Lowe's Q2 2013 results | 2.70 | -1.29 | 5.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.8% | +31.0pp | +40.2% | ✗ |
+| 2013-10-18 | $47.66 | Lowe's Q2 2013 results | 2.70 | -1.04 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.4% | +35.3pp | +44.4% | ✗ |
+| 2013-10-25 | $50.59 | Lowe's Q2 2013 results | 2.70 | -1.29 | 9.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.0% | +26.6pp | +36.8% | ✗ |
+| 2013-11-01 | $49.18 | Lowe's Q2 2013 results | 2.70 | -1.29 | 6.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +31.4pp | +41.4% | ✗ |
+| 2013-11-08 | $48.72 | Lowe's Q2 2013 results | 2.70 | -1.29 | 5.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +31.0pp | +43.4% | ✗ |
+| 2013-11-15 | $51.77 | Lowe's Q2 2013 results | 2.70 | -1.29 | 14.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.9% | +22.1pp | +35.5% | ✗ |
+| 2013-11-21 | $48.20 | Lowe's Q3 2013 results | 2.20 | -1.44 | 3.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.0% | +40.3pp | +46.1% | ✗ |
+| 2013-11-29 | $47.48 | Lowe's Q3 2013 results | 2.20 | -1.35 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.8% | +46.7pp | +48.7% | ✗ |
+| 2013-12-06 | $47.98 | Lowe's Q3 2013 results | 2.20 | -1.41 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.8% | +43.7pp | +47.7% | ✗ |
+| 2013-12-13 | $47.11 | Lowe's Q3 2013 results | 2.20 | -1.31 | 2.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.1% | +45.4pp | +50.9% | ✗ |
+| 2013-12-20 | $47.97 | Lowe's Q3 2013 results | 2.20 | -1.41 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.9% | +43.3pp | +48.6% | ✗ |
+| 2013-12-27 | $48.83 | Lowe's Q3 2013 results | 2.20 | -1.53 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.0% | +43.7pp | +46.2% | ✗ |
+| 2013-12-31 | $49.55 | Lowe's Q3 2013 results | 2.20 | -1.59 | 3.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.8% | +43.0pp | +44.2% | ✗ |
+| 2014-01-10 | $49.68 | Lowe's Q3 2013 results | 2.20 | -1.59 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.4% | +37.8pp | +44.2% | ✗ |
+| 2014-01-17 | $47.61 | Lowe's Q3 2013 results | 2.20 | -1.37 | 2.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.0% | +42.3pp | +50.6% | ✗ |
+| 2014-01-24 | $47.83 | Lowe's Q3 2013 results | 2.20 | -1.39 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.5% | +40.5pp | +49.9% | ✗ |
+| 2014-01-31 | $46.29 | Lowe's Q3 2013 results | 2.20 | -1.21 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.0% | +45.8pp | +55.0% | ✗ |
+| 2014-02-07 | $46.07 | Lowe's Q3 2013 results | 2.20 | -1.15 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.1% | +38.0pp | +55.6% | ✗ |
+| 2014-02-14 | $47.28 | Lowe's Q3 2013 results | 2.20 | -1.28 | 2.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.3% | +35.5pp | +51.3% | ✗ |
+| 2014-02-21 | $47.06 | Lowe's Q3 2013 results | 2.20 | -1.25 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.7% | +40.9pp | +51.9% | ✗ |
+| 2014-02-27 | $50.82 | Lowe's Q4 and fiscal 2013 results | 2.00 | -1.00 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.8% | +30.5pp | +40.4% | ✗ |
+| 2014-03-07 | $50.42 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.94 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +44.2% | +33.4pp | +41.3% | ✗ |
+| 2014-03-14 | $49.09 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.74 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.1% | +38.1pp | +45.1% | ✗ |
+| 2014-03-21 | $49.25 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.76 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +56.7% | +42.3pp | +44.6% | ✗ |
+| 2014-03-28 | $48.92 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.72 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +57.3% | +43.2pp | +45.5% | ✗ |
+| 2014-04-04 | $48.44 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.67 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +61.3% | +46.2pp | +47.1% | ✗ |
+| 2014-04-11 | $46.31 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.31 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +66.5% | +49.5pp | +53.9% | ✗ |
+| 2014-04-17 | $46.80 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.37 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +69.3% | +53.4pp | +52.3% | ✗ |
+| 2014-04-25 | $46.38 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.32 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +68.7% | +52.3pp | +53.9% | ✗ |
+| 2014-05-02 | $46.98 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.39 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +66.4% | +51.4pp | +52.2% | ✗ |
+| 2014-05-09 | $45.71 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.23 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +70.4% | +56.4pp | +56.6% | ✗ |
+| 2014-05-16 | $45.36 | Lowe's Q4 and fiscal 2013 results | 2.00 | -0.19 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +74.3% | +59.9pp | +57.9% | ✗ |
+| 2014-05-22 | $46.89 | Lowe's Q1 2014 results | 2.20 | -0.10 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +74.6% | +61.8pp | +53.0% | ✗ |
+| 2014-05-30 | $47.08 | Lowe's Q1 2014 results | 2.20 | -0.13 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +75.0% | +61.6pp | +52.8% | ✗ |
+| 2014-06-06 | $47.77 | Lowe's Q1 2014 results | 2.20 | -0.22 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +68.5% | +56.1pp | +51.0% | ✗ |
+| 2014-06-13 | $45.45 | Lowe's Q1 2014 results | 2.20 | +0.07 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +75.0% | +63.4pp | +59.1% | ✗ |
+| 2014-06-20 | $46.02 | Lowe's Q1 2014 results | 2.20 | -0.03 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +75.2% | +64.8pp | +57.5% | ✗ |
+| 2014-06-27 | $47.42 | Lowe's Q1 2014 results | 2.20 | -0.21 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +65.2% | +59.0pp | +53.2% | ✗ |
+| 2014-07-03 | $48.23 | Lowe's Q1 2014 results | 2.20 | -0.42 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +69.3% | +59.1pp | +51.0% | ✗ |
+| 2014-07-11 | $47.44 | Lowe's Q1 2014 results | 2.20 | -0.21 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +78.8% | +66.0pp | +54.1% | ✗ |
+| 2014-07-18 | $47.81 | Lowe's Q1 2014 results | 2.20 | -0.26 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +76.3% | +62.6pp | +53.5% | ✗ |
+| 2014-07-25 | $47.70 | Lowe's Q1 2014 results | 2.20 | -0.25 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +74.3% | +60.5pp | +54.4% | ✗ |
+| 2014-08-01 | $47.59 | Lowe's Q1 2014 results | 2.20 | -0.23 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +77.5% | +60.4pp | +55.3% | ✗ |
+| 2014-08-08 | $49.72 | Lowe's Q1 2014 results | 2.20 | -0.65 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +68.5% | +51.3pp | +49.2% | ✗ |
+| 2014-08-15 | $50.00 | Lowe's Q1 2014 results | 2.20 | -0.70 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +67.4% | +51.2pp | +48.8% | ✗ |
+| 2014-08-21 | $52.67 | Lowe's Q2 2014 results | 2.15 | -1.10 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +51.9% | +38.1pp | +41.4% | ✗ |
+| 2014-08-29 | $52.51 | Lowe's Q2 2014 results | 2.15 | -1.08 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +51.1% | +38.1pp | +42.2% | ✗ |
+| 2014-09-05 | $54.11 | Lowe's Q2 2014 results | 2.15 | -1.23 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.2% | +33.5pp | +38.3% | ✗ |
+| 2014-09-12 | $52.97 | Lowe's Q2 2014 results | 2.15 | -1.13 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.9% | +28.1pp | +41.4% | ✗ |
+| 2014-09-19 | $54.09 | Lowe's Q2 2014 results | 2.15 | -1.23 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.8% | +25.2pp | +38.5% | ✗ |
+| 2014-09-26 | $53.18 | Lowe's Q2 2014 results | 2.15 | -1.14 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +37.2% | +24.6pp | +41.0% | ✗ |
+| 2014-10-03 | $53.59 | Lowe's Q2 2014 results | 2.15 | -1.18 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.7% | +24.6pp | +40.1% | ✗ |
+| 2014-10-10 | $53.70 | Lowe's Q2 2014 results | 2.15 | -1.19 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.2% | +18.2pp | +39.8% | ✗ |
+| 2014-10-17 | $52.51 | Lowe's Q2 2014 results | 2.15 | -1.08 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.0% | +20.8pp | +42.9% | ✗ |
+| 2014-10-24 | $55.33 | Lowe's Q2 2014 results | 2.15 | -1.34 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.4% | +18.7pp | +35.5% | ✗ |
+| 2014-10-31 | $57.20 | Lowe's Q2 2014 results | 2.15 | -1.52 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.2% | +11.5pp | +30.9% | ✗ |
+| 2014-11-07 | $57.69 | Lowe's Q2 2014 results | 2.15 | -1.57 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.5% | +11.5pp | +29.5% | ✗ |
+| 2014-11-14 | $58.58 | Lowe's Q2 2014 results | 2.15 | -1.69 | 4.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.4% | +13.2pp | +27.4% | ✗ |
+| 2014-11-20 | $62.43 | Lowe's Q3 2014 results | 1.95 | -1.91 | 5.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.7% | +4.2pp | +19.4% | ✗ |
+| 2014-11-28 | $63.83 | Lowe's Q3 2014 results | 1.95 | -1.91 | 7.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.1% | +4.6pp | +16.6% | ✗ |
+| 2014-12-05 | $64.86 | Lowe's Q3 2014 results | 1.95 | -1.91 | 9.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.5% | +5.2pp | +14.6% | ✗ |
+| 2014-12-12 | $64.87 | Lowe's Q3 2014 results | 1.95 | -1.91 | 9.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.4% | +1.5pp | +14.6% | ✗ |
+| 2014-12-19 | $66.90 | Lowe's Q3 2014 results | 1.95 | -1.91 | 20.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.4% | -1.0pp | +11.0% | ✓ |
+| 2014-12-26 | $67.50 | Lowe's Q3 2014 results | 1.95 | -1.91 | 29.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.5% | -2.0pp | +10.0% | ✓ |
+| 2014-12-31 | $68.80 | Lowe's Q3 2014 results | 1.95 | -1.91 | 224.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.7% | -6.3pp | +7.8% | ✓ |
