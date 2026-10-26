@@ -43,5 +43,5 @@ build was committed (88b0255). Prices run to 2026-10-23. Medians of an even coun
   year. This is UNP's 2008 lesson from the other side: there the BEAR rule (the decade's worst year) was the stale anchor;
   here, for a company whose decade held no down year, the BULL rule is.
 - **One stock, one crash.** Most of the spread between dates is the entry price: the three lowest closes (2008-10-10,
-  2008-10-24, 2008-11-14, at $17-18) returned +23% to +32%; the September dates at $25-26 lost 5-15%. This mostly tests
+  2008-10-24, 2008-11-14, at $17-18) returned +23% to +32%; the three September dates at $25-26 lost 12-15%. This mostly tests
   "buy lower". Testing selection needs many tickers on the same dates.
