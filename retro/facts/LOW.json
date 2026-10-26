@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing. Events record a 10-K's own words on a live disruption theme (ECOMMERCE from the FY2015 10-K); a guide's fy_margin_guide_base is the prior-year margin its step is measured from when the company states one other than the history's.",
  "ticker": "LOW",
  "sources": {
   "L1": {
@@ -63,7 +63,7 @@
    "filed": "2008-04-01 17:02 ET (after the close)",
    "title": "Lowe's Companies FY2007 10-K (annual report, exhibit 13)",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000067/exhibit13.htm",
-   "supports": "selected financial data 2003-2007, income statement 2005-2007 with percent of sales, 2007 diluted shares 1,510M, interest $194M, store opening costs $141M, effective tax rate 37.7%; cash $281M and short-term investments $249M; operating cash flow $4,347M, fixed assets acquired $4,010M; product-category sales 2005-2007; $2.2B repurchase authorization remaining, 2008 outlook assumes no repurchases; quarterly dividend increased in 2007 to $.08; 1,534 stores in 50 states and Canada, 174 million square feet"
+   "supports": "selected financial data 2003-2007, income statement 2005-2007 with percent of sales, 2007 diluted shares 1,510M, interest $194M, store opening costs $141M, effective tax rate 37.7%; cash $281M and short-term investments $249M; operating cash flow $4,347M, fixed assets acquired $4,010M; product-category sales 2005-2007; $2.2B repurchase authorization remaining, 2008 outlook assumes no repurchases; quarterly dividend increased in 2007 to $.08; 1,534 stores in 50 states and Canada, 174 million square feet; 2005 weighted average diluted shares 1,607M"
   },
   "L10": {
    "published": "2006-11-20",
@@ -224,7 +224,7 @@
    "filed": "2009-03-31 16:34 ET (after the close)",
    "title": "Lowe's Companies FY2008 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066709000036/lowesform10k01302009.htm",
-   "supports": "selected financial data 2004-2008, income statement 2006-2008 with percent of sales, 2008 diluted shares 1,472M, interest $280M, store opening costs $102M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; no repurchases in 2008, $2.2B authorization remaining, 2009 outlook assumes no repurchases; quarterly dividend increased in 2008 to $0.085; 1,649 stores in the U.S. and Canada, 187 million square feet"
+   "supports": "selected financial data 2004-2008, income statement 2006-2008 with percent of sales, 2008 diluted shares 1,472M, interest $280M, store opening costs $102M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; no repurchases in 2008, $2.2B authorization remaining, 2009 outlook assumes no repurchases; quarterly dividend increased in 2008 to $0.085; 1,649 stores in the U.S. and Canada, 187 million square feet; 2006 weighted average diluted shares 1,566M (annual report, exhibit 13)"
   },
   "L51": {
    "published": "2010-03-31",
@@ -442,6 +442,83 @@
    "title": "Lowe's Q3 2014 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000196/exhibit991.htm",
    "supports": "Q3 2014 results and the fiscal 2014 outlook (raised)"
+  },
+  "L86": {
+   "published": "2015-02-25",
+   "filed": "2015-02-25 08:28 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2014 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000025/exhibit991.htm",
+   "supports": "Q4 2014 and fiscal 2014 results (EPS $2.71, comparable sales +4.3%), percent-of-sales income statement, inventory, cash, cash flow; fiscal 2015 outlook (sales, comparable sales, store openings, EBIT margin in bp, tax rate, EPS); no next-quarter outlook"
+  },
+  "L87": {
+   "published": "2015-03-31",
+   "filed": "2015-03-31 15:10 ET (during the session)",
+   "title": "Lowe's Companies FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000057/lowesform10k.htm",
+   "supports": "selected financial data 2010-2014, income statement 2012-2014 with percent of sales, 2014 diluted shares 990M, interest $516M, income tax provision $1,578M on pre-tax $4,276M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.88B repurchased in 2014 under the program, $2.4B remaining, the 2015 guide assumes about $3.8 billion of repurchases; 2014 fourth-quarter dividend $0.23; 1,840 home improvement and hardware stores, approximately 201 million square feet; online retailers among competitors"
+  },
+  "L88": {
+   "published": "2015-05-20",
+   "filed": "2015-05-20 07:50 ET (before the open)",
+   "title": "Lowe's Q1 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000076/exhibit991.htm",
+   "supports": "Q1 2015 results and the fiscal 2015 outlook (unchanged)"
+  },
+  "L89": {
+   "published": "2015-08-19",
+   "filed": "2015-08-19 07:42 ET (before the open)",
+   "title": "Lowe's Q2 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000126/exhibit991.htm",
+   "supports": "Q2 2015 results (cash dividends per share $0.28, up from $0.23) and the fiscal 2015 outlook (reiterated)"
+  },
+  "L90": {
+   "published": "2015-11-18",
+   "filed": "2015-11-18 07:42 ET (before the open)",
+   "title": "Lowe's Q3 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000180/exhibit991.htm",
+   "supports": "Q3 2015 results and the fiscal 2015 outlook (unchanged)"
+  },
+  "L91": {
+   "published": "2016-01-22",
+   "filed": "2016-01-22 11:54 ET (during the session)",
+   "title": "Lowe's 8-K: exit from the Australian joint venture (items 2.06, 9.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000213/form8k01222016.htm",
+   "supports": "notice to Woolworths of the intent to exercise the put option; a non-cash impairment charge expected in the fourth quarter, 'the Company is unable to estimate in good faith the amount or range of amounts of the impairment charge'; net investment in the joint venture approximately $930 million (press release); no new fiscal 2015 range"
+  },
+  "L92": {
+   "published": "2016-02-24",
+   "filed": "2016-02-24 08:42 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000231/exhibit991.htm",
+   "supports": "Q4 2015 and fiscal 2015 results: GAAP EPS $2.73 including a $530M non-cash impairment of the Australian joint venture, adjusted diluted EPS $3.29 (non-GAAP reconciliation, the charge 0.90% of fiscal-year and 4.01% of fourth-quarter sales); percent-of-sales income statement, inventory, cash, cash flow; fiscal 2016 outlook, a 53-week year (sales including the 53rd week, comparable sales, store openings, EBIT margin in bp excluding the impairment, tax rate, EPS); no next-quarter outlook"
+  },
+  "L93": {
+   "published": "2016-03-29",
+   "filed": "2016-03-28 19:07 ET (after the close)",
+   "title": "Lowe's Companies FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000276/lowesform10k.htm",
+   "supports": "selected financial data 2011-2015, income statement 2013-2015 with percent of sales, adjusted EBIT margin 9.31% and adjusted diluted EPS $3.29 excluding the Australian joint venture impairment (GAAP $2.73), 2015 diluted shares 929M, interest $552M, income tax provision $1,873M on pre-tax $4,419M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.81B repurchased in 2015 under the program, $3.6B remaining, the 2016 guide assumes about $3.5 billion of repurchases; 2015 fourth-quarter dividend $0.28; 1,857 home improvement and hardware stores, approximately 202 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3% of 2015 sales"
+  },
+  "L94": {
+   "published": "2016-05-18",
+   "filed": "2016-05-18 09:09 ET (before the open)",
+   "title": "Lowe's Q1 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000304/exhibit991.htm",
+   "supports": "Q1 2016 results (an unrealized foreign currency hedge gain of $160M pre-tax, $0.11 per share) and the fiscal 2016 outlook (EPS raised; excludes the pending RONA acquisition)"
+  },
+  "L95": {
+   "published": "2016-08-17",
+   "filed": "2016-08-17 08:02 ET (before the open)",
+   "title": "Lowe's Q2 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000359/exhibit991.htm",
+   "supports": "Q2 2016 results (a foreign currency hedge loss of $84M pre-tax, $0.06 per share; RONA acquired 2016-05-20; cash dividends per share $0.35, up from $0.28) and the fiscal 2016 outlook updated for RONA"
+  },
+  "L96": {
+   "published": "2016-11-16",
+   "filed": "2016-11-16 08:21 ET (before the open)",
+   "title": "Lowe's Q3 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000404/exhibit991.htm",
+   "supports": "Q3 2016 results: GAAP EPS $0.43 including $462M of non-cash pre-tax charges (Australian joint venture wind-down, project write-offs, Orchard Supply impairments; 2.94% of sales), adjusted diluted EPS $0.88; the fiscal 2016 outlook, now GAAP including those charges and the hedge gain"
   }
  },
  "history_vintages": [
@@ -2048,6 +2125,357 @@
     ]
    ],
    "groups_basis": "FY13 product categories (FY2013 10-K)"
+  },
+  {
+   "published": "2015-03-31",
+   "sources": [
+    "L87",
+    "L81",
+    "L75",
+    "L71",
+    "L70",
+    "L51",
+    "L9",
+    "L85"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY14",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,840 home improvement and hardware stores in the U.S., Canada and Mexico with approximately 201 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2005": "2006-02-03",
+    "2006": "2007-02-02",
+    "2007": "2008-02-01",
+    "2008": "2009-01-30",
+    "2009": "2010-01-29",
+    "2010": "2011-01-28",
+    "2011": "2012-02-03",
+    "2012": "2013-02-01",
+    "2013": "2014-01-31",
+    "2014": "2015-01-30"
+   },
+   "eps_gaap": {
+    "2005": 1.73,
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71
+   },
+   "eps_normalized": {
+    "2005": 1.73,
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71
+   },
+   "eps_published": {
+    "2005": "2010-03-31",
+    "2006": "2011-03-29",
+    "2007": "2012-04-03",
+    "2008": "2013-04-02",
+    "2009": "2014-04-01"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded",
+   "revenue_usd_b": {
+    "2005": 43.243,
+    "2006": 46.927,
+    "2007": 48.283,
+    "2008": 48.23,
+    "2009": 47.22,
+    "2010": 48.815,
+    "2011": 50.208,
+    "2012": 50.521,
+    "2013": 53.417,
+    "2014": 56.223
+   },
+   "diluted_shares_m": {
+    "2005": 1607.0,
+    "2014": 990.0
+   },
+   "shares_published": {
+    "2005": "2008-04-02"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 8.53,
+    "EBIT margin": 8.53
+   },
+   "prev_fy_margins_note": "operating margin = gross margin less SG&A and depreciation 34.79 - 23.62 - 2.64 = 8.53%; EBIT margin = pre-tax + interest 7.61 + 0.92 = 8.53% (percent-of-sales column, FY2014 10-K)",
+   "prev_fy_gross_margin": 34.79,
+   "prev_fy_sales_growth": 5.3,
+   "prev_fy_comps": 4.3,
+   "prev_fy_stores": 1840,
+   "net_interest_b": 0.516,
+   "net_interest_note": "FY14 from L87",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.369,
+   "tax_note": "FY14 effective rate (income tax provision $1,578M / pre-tax $4,276M)",
+   "fcf_b": 4.05,
+   "fcf_label": "FY14",
+   "prev_q_comps": 5.1,
+   "prev_q_label": "Q3 FY14",
+   "prev_q_source": "L85",
+   "dividend_annual": 0.92,
+   "dividend_note": "$0.23 quarterly (the fiscal 2014 fourth-quarter dividend, FY2014 10-K)",
+   "cash_return_text": "$2.4B repurchase authorization remaining; $3.88B repurchased in 2014; the 2015 guide assumes about $3.8B of repurchases",
+   "business_line": "Home improvement retailer: 1,840 home improvement and hardware stores in the United States, Canada and Mexico, approximately 201 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Kitchens & Appliances",
+     8.007,
+     6.4
+    ],
+    [
+     "Lumber & Building Materials",
+     6.884,
+     4.4
+    ],
+    [
+     "Tools & Hardware",
+     6.263,
+     6.6
+    ],
+    [
+     "Fashion Fixtures",
+     5.591,
+     6.1
+    ],
+    [
+     "Rough Plumbing & Electrical",
+     4.928,
+     5.2
+    ],
+    [
+     "Lawn & Garden",
+     4.639,
+     4.9
+    ],
+    [
+     "Seasonal Living",
+     3.717,
+     2.8
+    ],
+    [
+     "Paint",
+     3.614,
+     4.1
+    ],
+    [
+     "Home Fashions, Storage & Cleaning",
+     3.263,
+     2.7
+    ],
+    [
+     "Flooring",
+     3.219,
+     5.0
+    ],
+    [
+     "Millwork",
+     3.135,
+     7.1
+    ],
+    [
+     "Outdoor Power Equipment",
+     2.339,
+     5.2
+    ],
+    [
+     "Other",
+     0.624,
+     10.4
+    ]
+   ],
+   "groups_basis": "FY14 product categories (FY2014 10-K)"
+  },
+  {
+   "published": "2016-03-29",
+   "sources": [
+    "L93",
+    "L87",
+    "L81",
+    "L75",
+    "L71",
+    "L70",
+    "L50",
+    "L90"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY15",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,857 home improvement and hardware stores in the U.S., Canada and Mexico with approximately 202 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2006": "2007-02-02",
+    "2007": "2008-02-01",
+    "2008": "2009-01-30",
+    "2009": "2010-01-29",
+    "2010": "2011-01-28",
+    "2011": "2012-02-03",
+    "2012": "2013-02-01",
+    "2013": "2014-01-31",
+    "2014": "2015-01-30",
+    "2015": "2016-01-29"
+   },
+   "eps_gaap": {
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71,
+    "2015": 2.73
+   },
+   "eps_normalized": {
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71,
+    "2015": 3.29
+   },
+   "eps_published": {
+    "2006": "2011-03-29",
+    "2007": "2012-04-03",
+    "2008": "2013-04-02",
+    "2009": "2014-04-01",
+    "2010": "2015-03-31"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded; 2015 is the company's adjusted $3.29, which excludes the $530M non-cash impairment of the Australian joint venture (GAAP $2.73, FY2015 10-K)",
+   "revenue_usd_b": {
+    "2006": 46.927,
+    "2007": 48.283,
+    "2008": 48.23,
+    "2009": 47.22,
+    "2010": 48.815,
+    "2011": 50.208,
+    "2012": 50.521,
+    "2013": 53.417,
+    "2014": 56.223,
+    "2015": 59.074
+   },
+   "diluted_shares_m": {
+    "2006": 1566.0,
+    "2015": 929.0
+   },
+   "shares_published": {
+    "2006": "2009-04-01"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 9.31,
+    "EBIT margin": 9.31
+   },
+   "prev_fy_margins_note": "adjusted EBIT margin 9.31% as the FY2015 10-K states it, excluding the 90bp of the Australian joint venture impairment (GAAP: 34.82 - 23.90 - 2.51 = 8.41%; 7.48 + 0.93 = 8.41%)",
+   "prev_fy_gross_margin": 34.82,
+   "prev_fy_sales_growth": 5.1,
+   "prev_fy_comps": 4.8,
+   "prev_fy_stores": 1857,
+   "net_interest_b": 0.552,
+   "net_interest_note": "FY15 from L93",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.4239,
+   "tax_note": "FY15 effective rate, GAAP (income tax provision $1,873M / pre-tax $4,419M)",
+   "fcf_b": 3.59,
+   "fcf_label": "FY15",
+   "prev_q_comps": 4.6,
+   "prev_q_label": "Q3 FY15",
+   "prev_q_source": "L90",
+   "dividend_annual": 1.12,
+   "dividend_note": "$0.28 quarterly (the fiscal 2015 fourth-quarter dividend, FY2015 10-K)",
+   "cash_return_text": "$3.6B repurchase authorization remaining; $3.81B repurchased in 2015; the 2016 guide assumes about $3.5B of repurchases",
+   "business_line": "Home improvement retailer: 1,857 home improvement and hardware stores in the United States, Canada and Mexico, approximately 202 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Lumber & Building Materials",
+     7.11,
+     3.4
+    ],
+    [
+     "Tools & Hardware",
+     6.505,
+     5.0
+    ],
+    [
+     "Appliances",
+     6.477,
+     13.4
+    ],
+    [
+     "Fashion Fixtures",
+     5.812,
+     3.8
+    ],
+    [
+     "Rough Plumbing & Electrical",
+     5.218,
+     4.4
+    ],
+    [
+     "Lawn & Garden",
+     4.756,
+     2.9
+    ],
+    [
+     "Seasonal Living",
+     3.953,
+     5.8
+    ],
+    [
+     "Paint",
+     3.716,
+     2.7
+    ],
+    [
+     "Flooring",
+     3.338,
+     3.7
+    ],
+    [
+     "Millwork",
+     3.277,
+     4.3
+    ],
+    [
+     "Kitchens",
+     3.245,
+     3.4
+    ],
+    [
+     "Outdoor Power Equipment",
+     2.499,
+     6.8
+    ],
+    [
+     "Home Fashions",
+     2.47,
+     2.3
+    ],
+    [
+     "Other",
+     0.698,
+     12.6
+    ]
+   ],
+   "groups_basis": "FY15 product categories (FY2015 10-K)"
   }
  ],
  "prints": [
@@ -3555,6 +3983,386 @@
    "outlook_short": "Our employees’ unwavering commitment to serving customers helped us achieve this quarter’s strong results,",
    "next_print": "Q4 FY14 print (late February)",
    "cash_return_text": "repurchases $2.95B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q4 FY14",
+   "fy": 2014,
+   "q": 4,
+   "published": "2015-02-25",
+   "source": "L86",
+   "release": "Feb 25",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:28 ET)",
+   "period_end": "2015-01-30",
+   "sales_b": 12.54,
+   "sales_pct": 7.6,
+   "comps_pct": 7.3,
+   "gross_margin": 34.66,
+   "gross_margin_bp": -1,
+   "gross_margin_note": "34.66% vs 34.67% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     6.53,
+     115
+    ],
+    "EBIT margin": [
+     6.53,
+     115
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.66 - 25.24 - 2.89 = 6.53% vs 5.38%); EBIT margin = pre-tax + interest (5.48 + 1.05 = 6.53% vs 5.38%)",
+   "inventory_pct": -2.4,
+   "inventory_gap_pp": -10.0,
+   "inventory_note": "merchandise inventory $8,911M vs $9,127M a year earlier (-2.4%), against net sales +7.6%",
+   "eps_q": 0.46,
+   "eps_q_prior": 0.29,
+   "diluted_shares_m": 967.0,
+   "cash_b": 0.591,
+   "stores": 1840,
+   "sq_ft_m": 200.9,
+   "sq_ft_pct": null,
+   "dividend_q": 0.23,
+   "outlook_short": "I would like to thank our employees for their hard work and dedication,",
+   "next_print": "Q1 FY15 print (mid-May)",
+   "cash_return_text": "repurchases $3.91B year to date (cash flow statement)",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 2.71,
+    "revenue_usd_b": 56.223,
+    "diluted_shares_m": 990.0,
+    "normalization_note": "FY14 = diluted EPS $2.71 as released; no one-off excluded",
+    "margins": {
+     "operating margin": 8.53,
+     "EBIT margin": 8.53
+    },
+    "margins_note": "FY14 operating margin 34.79 - 23.62 - 2.64 = 8.53%; EBIT margin 7.61 + 0.92 = 8.53% (percent-of-sales column)",
+    "gross_margin": 34.79,
+    "sales_growth": 5.3,
+    "stores": 1840,
+    "comps_pct": 4.3,
+    "comps_note": "For the fiscal year, sales were $56.2 billion, a 5.3 percent increase over the same period a year ago, and comparable sales increased 4.3 percent on a consolidated basis and for the U.S. business.",
+    "net_interest_b": 0.516,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.369,
+    "tax_note": "FY14 effective rate: income tax provision $1,578M / pre-tax earnings $4,276M",
+    "fcf_b": 4.05
+   }
+  },
+  {
+   "quarter": "Q1 FY15",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-05-20",
+   "source": "L88",
+   "release": "May 20",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 07:50 ET)",
+   "period_end": "2015-05-01",
+   "sales_b": 14.129,
+   "sales_pct": 5.4,
+   "comps_pct": 5.2,
+   "gross_margin": 35.47,
+   "gross_margin_bp": -3,
+   "gross_margin_note": "35.47% vs 35.50% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     8.72,
+     76
+    ],
+    "EBIT margin": [
+     8.72,
+     76
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (35.47 - 24.16 - 2.59 = 8.72% vs 7.96%); EBIT margin = pre-tax + interest (7.77 + 0.95 = 8.72% vs 7.96%)",
+   "inventory_pct": 0.9,
+   "inventory_gap_pp": -4.5,
+   "inventory_note": "merchandise inventory $10,614M vs $10,515M a year earlier (+0.9%), against net sales +5.4%",
+   "eps_q": 0.7,
+   "eps_q_prior": 0.61,
+   "diluted_shares_m": 952.0,
+   "cash_b": 1.529,
+   "stores": 1843,
+   "sq_ft_m": 201.2,
+   "sq_ft_pct": null,
+   "dividend_q": 0.23,
+   "outlook_short": "I am pleased that we executed well and delivered another strong quarter,",
+   "next_print": "Q2 FY15 print (mid-August)",
+   "cash_return_text": "repurchases $1.11B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q2 FY15",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-08-19",
+   "source": "L89",
+   "release": "Aug 19",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 07:42 ET)",
+   "period_end": "2015-07-31",
+   "sales_b": 17.348,
+   "sales_pct": 4.5,
+   "comps_pct": 4.3,
+   "gross_margin": 34.47,
+   "gross_margin_bp": -8,
+   "gross_margin_note": "34.47% vs 34.55% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     11.37,
+     41
+    ],
+    "EBIT margin": [
+     11.37,
+     41
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.47 - 20.94 - 2.16 = 11.37% vs 10.96%); EBIT margin = pre-tax + interest (10.60 + 0.77 = 11.37% vs 10.96%)",
+   "inventory_pct": 4.2,
+   "inventory_gap_pp": -0.3,
+   "inventory_note": "merchandise inventory $9,704M vs $9,315M a year earlier (+4.2%), against net sales +4.5%",
+   "eps_q": 1.2,
+   "eps_q_prior": 1.04,
+   "diluted_shares_m": 933.0,
+   "cash_b": 1.089,
+   "stores": 1846,
+   "sq_ft_m": 201.4,
+   "sq_ft_pct": null,
+   "dividend_q": 0.28,
+   "outlook_short": "We posted solid results for the quarter and were able to capitalize on big-ticket market share opportunities with strong growth in categories like appliances and outdoor power equipment,",
+   "next_print": "Q3 FY15 print (mid-November)",
+   "cash_return_text": "repurchases $2.63B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q3 FY15",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-11-18",
+   "source": "L90",
+   "release": "Nov 18",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 07:42 ET)",
+   "period_end": "2015-10-30",
+   "sales_b": 14.36,
+   "sales_pct": 5.0,
+   "comps_pct": 4.6,
+   "gross_margin": 34.75,
+   "gross_margin_bp": 26,
+   "gross_margin_note": "34.75% vs 34.49% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     9.25,
+     130
+    ],
+    "EBIT margin": [
+     9.25,
+     130
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.75 - 22.89 - 2.61 = 9.25% vs 7.95%); EBIT margin = pre-tax + interest (8.27 + 0.98 = 9.25% vs 7.95%)",
+   "inventory_pct": 6.9,
+   "inventory_gap_pp": 1.9,
+   "inventory_note": "merchandise inventory $10,434M vs $9,762M a year earlier (+6.9%), against net sales +5.0%",
+   "eps_q": 0.8,
+   "eps_q_prior": 0.59,
+   "diluted_shares_m": 921.0,
+   "cash_b": 1.385,
+   "stores": 1849,
+   "sq_ft_m": 201.6,
+   "sq_ft_pct": null,
+   "dividend_q": 0.28,
+   "outlook_short": "This is an exciting time for Lowe’s as we continue to execute our strategic priorities alongside a favorable macroeconomic backdrop,",
+   "next_print": "Q4 FY15 print (late February)",
+   "cash_return_text": "repurchases $3.38B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q4 FY15",
+   "fy": 2015,
+   "q": 4,
+   "published": "2016-02-24",
+   "source": "L92",
+   "release": "Feb 24",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:42 ET)",
+   "period_end": "2016-01-29",
+   "sales_b": 13.236,
+   "sales_pct": 5.6,
+   "comps_pct": 5.2,
+   "gross_margin": 34.66,
+   "gross_margin_bp": 0,
+   "gross_margin_note": "34.66% vs 34.66% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.32,
+     79
+    ],
+    "EBIT margin": [
+     7.32,
+     79
+    ]
+   },
+   "margins_note": "adjusted, excluding the $530M non-cash impairment of the Australian joint venture, 4.01% of the quarter's sales (the release's reconciliation): operating margin = gross margin - SG&A - depreciation + 4.01 (34.66 - 28.56 - 2.79 + 4.01 = 7.32% vs 6.53%); EBIT margin = pre-tax + interest + 4.01 (2.23 + 1.08 + 4.01 = 7.32% vs 6.53%); GAAP 3.31% (-322bp)",
+   "inventory_pct": 6.1,
+   "inventory_gap_pp": 0.5,
+   "inventory_note": "merchandise inventory $9,458M vs $8,911M a year earlier (+6.1%), against net sales +5.6%",
+   "eps_q": 0.59,
+   "eps_q_prior": 0.46,
+   "diluted_shares_m": 912.0,
+   "cash_b": 0.712,
+   "stores": 1857,
+   "sq_ft_m": 202.1,
+   "sq_ft_pct": null,
+   "dividend_q": 0.28,
+   "outlook_short": "I am pleased that we delivered another solid quarter, driving increased traffic through competitive offers and creating strong value for customers,",
+   "next_print": "Q1 FY16 print (mid-May)",
+   "cash_return_text": "repurchases $3.93B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $0.59 as the company published it, excluding the impairment (GAAP $0.01)",
+   "one_off_note": "The $530 million non-cash impairment charge, which includes the cumulative impact of the strengthening U.S. dollar over the life of the investment, was based on the Company’s best estimate of the value of its portion of the joint venture, and is subject to possible adjustment based on completion of the valuation process.",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 3.29,
+    "revenue_usd_b": 59.074,
+    "diluted_shares_m": 929.0,
+    "normalization_note": "FY15 = adjusted diluted EPS $3.29 as the company published it, excluding the $530M non-cash impairment of the Australian joint venture (GAAP $2.73)",
+    "margins": {
+     "operating margin": 9.31,
+     "EBIT margin": 9.31
+    },
+    "margins_note": "FY15 adjusted EBIT margin 7.48 + 0.93 + 0.90 = 9.31%, excluding the $530M non-cash impairment of the Australian joint venture (0.90% of sales, the release's reconciliation); operating margin 34.82 - 23.90 - 2.51 + 0.90 = 9.31%; GAAP 8.41%",
+    "gross_margin": 34.82,
+    "sales_growth": 5.1,
+    "stores": 1857,
+    "comps_pct": 4.8,
+    "comps_note": "For the fiscal year, sales were $59.1 billion, a 5.1 percent increase over the same period a year ago, and comparable sales increased 4.8 percent.",
+    "net_interest_b": 0.552,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.4239,
+    "tax_note": "FY15 effective rate: income tax provision $1,873M / pre-tax earnings $4,419M",
+    "fcf_b": 3.59
+   }
+  },
+  {
+   "quarter": "Q1 FY16",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-05-18",
+   "source": "L94",
+   "release": "May 18",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 09:09 ET)",
+   "period_end": "2016-04-29",
+   "sales_b": 15.234,
+   "sales_pct": 7.8,
+   "comps_pct": 7.3,
+   "gross_margin": 35.04,
+   "gross_margin_bp": -43,
+   "gross_margin_note": "35.04% vs 35.47% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.42,
+     170
+    ],
+    "EBIT margin": [
+     10.42,
+     170
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (35.04 - 22.28 - 2.34 = 10.42% vs 8.72%); EBIT margin = pre-tax + interest (9.39 + 1.03 = 10.42% vs 8.72%)",
+   "inventory_pct": 4.2,
+   "inventory_gap_pp": -3.6,
+   "inventory_note": "merchandise inventory $11,055M vs $10,614M a year earlier (+4.2%), against net sales +7.8%",
+   "eps_q": 0.98,
+   "eps_q_prior": 0.7,
+   "diluted_shares_m": 899.0,
+   "cash_b": 4.735,
+   "stores": 1860,
+   "sq_ft_m": 202.3,
+   "sq_ft_pct": null,
+   "dividend_q": 0.28,
+   "outlook_short": "We executed well in the quarter, growing both transaction and average ticket to achieve comparable sales growth that exceeded our expectations,",
+   "next_print": "Q2 FY16 print (mid-August)",
+   "cash_return_text": "repurchases $1.25B year to date (cash flow statement)",
+   "one_off_note": "The first quarter results include an unrealized gain on a foreign currency hedge entered into in advance of the Company’s pending RONA acquisition, which increased pre-tax earnings for the first quarter by $160 million and diluted earnings per share by $0.11."
+  },
+  {
+   "quarter": "Q2 FY16",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-08-17",
+   "source": "L95",
+   "release": "Aug 17",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:02 ET)",
+   "period_end": "2016-07-29",
+   "sales_b": 18.26,
+   "sales_pct": 5.3,
+   "comps_pct": 2.0,
+   "gross_margin": 34.44,
+   "gross_margin_bp": -3,
+   "gross_margin_note": "34.44% vs 34.47% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     11.24,
+     -13
+    ],
+    "EBIT margin": [
+     11.24,
+     -13
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.44 - 21.20 - 2.00 = 11.24% vs 11.37%); EBIT margin = pre-tax + interest (10.33 + 0.91 = 11.24% vs 11.37%)",
+   "inventory_pct": 9.3,
+   "inventory_gap_pp": 4.0,
+   "inventory_note": "merchandise inventory $10,604M vs $9,704M a year earlier (+9.3%), against net sales +5.3%",
+   "eps_q": 1.31,
+   "eps_q_prior": 1.2,
+   "diluted_shares_m": 885.0,
+   "cash_b": 2.156,
+   "stores": 2108,
+   "sq_ft_m": 211.9,
+   "sq_ft_pct": null,
+   "dividend_q": 0.35,
+   "outlook_short": "We delivered solid results for the first half of the year, in line with our expectations,",
+   "next_print": "Q3 FY16 print (mid-November)",
+   "cash_return_text": "repurchases $2.45B year to date (cash flow statement)",
+   "one_off_note": "The second quarter results include a loss on a foreign currency hedge entered into in advance of the company’s acquisition of RONA, inc. (RONA), which decreased pre-tax earnings for the second quarter by $84 million and diluted earnings per share by $0.06."
+  },
+  {
+   "quarter": "Q3 FY16",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-11-16",
+   "source": "L96",
+   "release": "Nov 16",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:21 ET)",
+   "period_end": "2016-10-28",
+   "sales_b": 15.739,
+   "sales_pct": 9.6,
+   "comps_pct": 2.7,
+   "gross_margin": 34.35,
+   "gross_margin_bp": -40,
+   "gross_margin_note": "34.35% vs 34.75% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     8.91,
+     -34
+    ],
+    "EBIT margin": [
+     8.91,
+     -34
+    ]
+   },
+   "margins_note": "adjusted, excluding the $462M of non-cash charges (Australian joint venture wind-down, project write-offs, Orchard Supply impairments), 2.94% of the quarter's sales (the release's reconciliation): operating margin = gross margin - SG&A - depreciation + 2.94 (34.35 - 25.98 - 2.40 + 2.94 = 8.91% vs 9.25%); EBIT margin = pre-tax + interest + 2.94 (4.93 + 1.04 + 2.94 = 8.91% vs 9.25%); GAAP 5.97% (-328bp)",
+   "inventory_pct": 5.3,
+   "inventory_gap_pp": -4.3,
+   "inventory_note": "merchandise inventory $10,990M vs $10,434M a year earlier (+5.3%), against net sales +9.6%",
+   "eps_q": 0.88,
+   "eps_q_prior": 0.8,
+   "diluted_shares_m": 874.0,
+   "cash_b": 1.083,
+   "stores": 2119,
+   "sq_ft_m": 212.8,
+   "sq_ft_pct": null,
+   "dividend_q": 0.35,
+   "outlook_short": "Our third quarter operating results were below our expectations due to slower sales in the first two months of the quarter,",
+   "next_print": "Q4 FY16 print (late February)",
+   "cash_return_text": "repurchases $3.05B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $0.88 as the company published it, excluding the non-cash charges (GAAP $0.43)",
+   "one_off_note": "Lowe’s Companies, Inc. (NYSE: LOW) today reported net earnings of $379 million and diluted earnings per share of $0.43 for the quarter ended October 28, 2016, which includes certain non-cash pre-tax charges of $462 million further described below."
   }
  ],
  "guides": [
@@ -4865,6 +5673,234 @@
    "stores_guide": "6 home improvement and 4 hardware",
    "tax_rate_guide": 37.2,
    "eps_guide_note": "raised from $2.63"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-02-25",
+   "source": "L86",
+   "doc": "Q4 FY14 release",
+   "eps_guide": [
+    3.29,
+    3.29
+   ],
+   "rev_guide": [
+    4.5,
+    5
+   ],
+   "comps_guide": [
+    4,
+    4.5
+   ],
+   "op_margin_guide_bp": [
+    80,
+    100
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 80 to 100 basis points.",
+   "stores_guide": "15-20 home improvement and hardware",
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2015,
+   "published": "2015-05-20",
+   "source": "L88",
+   "doc": "Q1 FY15 release",
+   "eps_guide": [
+    3.29,
+    3.29
+   ],
+   "rev_guide": [
+    4.5,
+    5
+   ],
+   "comps_guide": [
+    4,
+    4.5
+   ],
+   "op_margin_guide_bp": [
+    80,
+    100
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 80 to 100 basis points.",
+   "stores_guide": "15-20 home improvement and hardware",
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2015,
+   "published": "2015-08-19",
+   "source": "L89",
+   "doc": "Q2 FY15 release",
+   "eps_guide": [
+    3.29,
+    3.29
+   ],
+   "rev_guide": [
+    4.5,
+    5
+   ],
+   "comps_guide": [
+    4,
+    4.5
+   ],
+   "op_margin_guide_bp": [
+    80,
+    100
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 80 to 100 basis points.",
+   "stores_guide": "15-20 home improvement and hardware",
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2015,
+   "published": "2015-11-18",
+   "source": "L90",
+   "doc": "Q3 FY15 release",
+   "eps_guide": [
+    3.29,
+    3.29
+   ],
+   "rev_guide": [
+    4.5,
+    5
+   ],
+   "comps_guide": [
+    4,
+    4.5
+   ],
+   "op_margin_guide_bp": [
+    80,
+    100
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 80 to 100 basis points.",
+   "stores_guide": "15-20 home improvement and hardware",
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2015,
+   "published": "2016-01-22",
+   "source": "L91",
+   "doc": "8-K of 2016-01-22",
+   "eps_guide": [
+    3.29,
+    3.29
+   ],
+   "eps_guide_note": "the 8-K of 2016-01-22 expects a fourth-quarter non-cash impairment charge on the exit from the Australian joint venture and says 'the Company is unable to estimate in good faith the amount or range of amounts of the impairment charge'"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-02-24",
+   "source": "L92",
+   "doc": "Q4 FY15 release",
+   "eps_guide": [
+    4.0,
+    4.0
+   ],
+   "rev_guide": [
+    6,
+    6
+   ],
+   "comps_guide": [
+    4,
+    4
+   ],
+   "op_margin_guide_bp": [
+    80,
+    90
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 80 to 90 basis points.",
+   "stores_guide": "45 home improvement and hardware",
+   "tax_rate_guide": 38.1,
+   "rev_guide_note": "including the 53rd week, about +1.5%"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-05-18",
+   "source": "L94",
+   "doc": "Q1 FY16 release",
+   "eps_guide": [
+    4.11,
+    4.11
+   ],
+   "rev_guide": [
+    6,
+    6
+   ],
+   "comps_guide": [
+    4,
+    4
+   ],
+   "op_margin_guide_bp": [
+    80,
+    90
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 80 to 90 basis points.",
+   "stores_guide": "45 home improvement and hardware",
+   "tax_rate_guide": 38.1,
+   "rev_guide_note": "including the 53rd week, about +1.5%",
+   "eps_guide_note": "raised from $4.00; includes the $0.11 first-quarter hedge gain; the outlook excludes the pending RONA acquisition"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-08-17",
+   "source": "L95",
+   "doc": "Q2 FY16 release",
+   "eps_guide": [
+    4.06,
+    4.06
+   ],
+   "rev_guide": [
+    10,
+    10
+   ],
+   "comps_guide": [
+    4,
+    4
+   ],
+   "op_margin_guide_bp": [
+    50,
+    50
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 50 basis points.",
+   "stores_guide": "45 home improvement and hardware",
+   "tax_rate_guide": 38.1,
+   "rev_guide_note": "including the 53rd week, about +1.5%, now with RONA",
+   "eps_guide_note": "lowered from $4.11, now with RONA"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-11-16",
+   "source": "L96",
+   "doc": "Q3 FY16 release",
+   "eps_guide": [
+    3.52,
+    3.52
+   ],
+   "rev_guide": [
+    9,
+    10
+   ],
+   "comps_guide": [
+    3,
+    4
+   ],
+   "op_margin_guide_bp": [
+    65,
+    65
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 65 basis points.",
+   "stores_guide": "40 home improvement and hardware",
+   "tax_rate_guide": 40.1,
+   "rev_guide_note": "including the 53rd week, about +1.5%",
+   "eps_guide_note": "lowered from $4.06; GAAP, including the hedge gain and the non-cash charges",
+   "fy_margin_guide_base": 8.41,
+   "fy_margin_guide_note": "its step includes the fourth-quarter 2015 impairment, so it starts from FY15's GAAP EBIT margin of 8.41%"
   }
  ],
  "dividends": [
@@ -4915,9 +5951,33 @@
    "source": "L83",
    "quarterly": 0.23,
    "note": "$0.23 quarterly declared 2014-05-30, first stated in the Q1 2014 10-Q"
+  },
+  {
+   "published": "2015-08-19",
+   "source": "L89",
+   "quarterly": 0.28,
+   "note": "$0.28 quarterly, first stated in a filing as the Q2 2015 cash dividends per share (Q2 2015 release)"
+  },
+  {
+   "published": "2016-08-17",
+   "source": "L95",
+   "quarterly": 0.35,
+   "note": "$0.35 quarterly, first stated in a filing as the Q2 2016 cash dividends per share (Q2 2016 release)"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "id": "L93",
+   "published": "2016-03-29",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2015 10-K",
+   "risk_quote": "We face growing competition from online and multi-channel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability or price using digital tools.",
+   "risk_short": "'growing competition from online and multi-channel retailers'",
+   "offering": "it sells online itself: 'In 2015, sales through our online selling channels accounted for approximately 3% of our total sales.'",
+   "offering_short": "online channels about 3% of 2015 sales"
+  }
+ ],
  "company_names": [],
  "splits": [
   {

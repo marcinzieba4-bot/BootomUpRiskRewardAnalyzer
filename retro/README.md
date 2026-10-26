@@ -1217,6 +1217,100 @@ Seen in the build (method behaviour, not tuned):
 Judgement calls that could carry hindsight: continuing the comp series across the rename; treating the Orchard
 acquisition as adding nothing beyond the store counts; dating no fact from the SEC correspondence.
 
+### LOW 2015-2016: adjusted EPS, a guide on two margin bases, RONA, e-commerce on the watch list
+
+```bash
+python3 retro/build_low.py --weekly 2015-01-05 2015-12-31                   # 52 dates, 2015-01-09 .. 2015-12-31
+python3 retro/build_low.py --weekly 2016-01-04 2016-12-30                   # 52 dates, 2016-01-08 .. 2016-12-30
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K and earnings release of 2015 and 2016 was read by Opus directly. 121 strings were checked
+with `verbatim.py`, and 251 structured checks read each print's numbers back from its release's tables and each source's
+date from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided before any 2015 or 2016 date was built
+or scored:
+
+- **Two 10-K vintages.** FY2014 (2010-2014) was accepted 2015-03-31 at 15:10 ET, during the session, so it is dated that
+  day. FY2015 (2011-2015) was accepted 2016-03-28 at 19:07 ET, dated 2016-03-29. The history moves to 2005-2014, then
+  2006-2015. First-year diluted shares, both after the 2006 split: 2005's 1,607M from the FY2007 annual report, 2006's
+  1,566M from the FY2008 annual report (the 10-K's exhibit 13).
+- **The first company-adjusted year.** The Q4 FY15 release (2016-02-24) reports EPS of $2.73. That includes a $530M
+  non-cash impairment on leaving the Australian joint venture with Woolworths; the adjusted figure is $3.29. The FY2015
+  10-K also states an adjusted EBIT margin of 9.31% (8.41% GAAP; the charge was 90bp of sales and carried no tax
+  benefit). By the ACN rule (a company-published figure excluding a one-off replaces GAAP for EPS and margin), FY15 enters
+  the history at $3.29 and 9.31%, with the GAAP figures in the notes. Two quarters have a published adjusted EPS: Q4 FY15
+  ($0.59, GAAP $0.01) and Q3 FY16 ($0.88, GAAP $0.43). Their prints show it, and their margins add back the charge at the
+  share of sales the reconciliation states (4.01%, 2.94%). This is display only, like UNP's Q2 2009.
+- **A margin guide on two bases.** The fiscal 2016 guides of the Q4 FY15, Q1 FY16 and Q2 FY16 releases say "Operating
+  margin growth excludes the impact of the non-cash impairment charge", so they step from the adjusted 9.31%. The Q3 FY16
+  guide (+65bp) "Includes ... the impact of non-cash charges associated with the joint venture with Woolworths in
+  Australia (4Q2015 and 3Q2016)", so it steps from the GAAP 8.41%. This is the ACN FY19 restated-base rule. A guide now
+  carries it as `fy_margin_guide_base`, and the model's margin comment gives both figures. The fiscal 2016 margin reads
+  10.16%, then 9.81%, then 9.06%.
+- **Items without an adjusted figure stay in** (the Fremont rule). The RONA foreign-currency hedge (+$0.11 in Q1 FY16,
+  -$0.06 in Q2 FY16) was published only as an effect, so those prints are GAAP. The guides keep whatever the company did
+  not strip out: the Q1 FY16 guide ($4.11) includes the hedge gain, and the Q3 FY16 guide ($3.52) is GAAP, including the
+  hedge gain and the $462M of third-quarter charges. The Q3 FY16 release's adjusted nine-month figures are not
+  back-filled into the earlier prints.
+- **The impairment 8-K of 2016-01-22** (items 2.06 and 9.01, accepted 11:54 ET during the session) expects a
+  fourth-quarter charge but says "the Company is unable to estimate in good faith the amount or range of amounts of the
+  impairment charge". The $3.29 guide stands, with the 8-K's words in its note (the 2011-10-17 rule). The 8-K/A of
+  2016-02-24, filed after the Q4 release, repeats the release's $530M.
+- **RONA.** The acquisition was announced 2016-02-03 (8-K items 1.01 and 7.01, accepted 2016-02-05 at 17:19 ET, dated
+  2016-02-08) and closed 2016-05-20 (8-K of 2016-05-24). No 8-K changes a guided number. The Q1 FY16 outlook "excludes
+  the impact of the pending RONA acquisition"; the Q2 FY16 release adds it (sales +10%, margin +50bp, EPS $4.06). From
+  the Q2 FY16 print, sales, inventory and store counts include RONA, as published.
+- **A 53-week year.** Fiscal 2016 ends 2017-02-03. Every fiscal 2016 sales guide includes the 53rd week ("approximately
+  1.5 percent"); the published figure stands and the week goes in the note (the 2011 rule).
+- **Dividends from the Q2 releases.** From 2015 the Q1 10-Qs no longer report the May declaration, and no 8-K announces
+  it. The first filing that states each increase is the Q2 release's cash dividends per share: $0.28 from 2015-08-19 and
+  $0.35 from 2016-08-17. This can only lag.
+- **ECOMMERCE on the watch list from the FY2015 10-K.** The theme is live from 2015-01-01, its scope (physical retail)
+  covers Lowe's, and its market pricing is dated only from 2017-06-16. The FY2013 and FY2014 10-Ks list online retailers
+  among many competitors in Item 1. The FY2015 10-K's competition risk factor adds "We face growing competition from
+  online and multi-channel retailers who have a similar product or service offering." By the ACN CLOUD rule
+  (company-acknowledged, no market read), the theme joins the watch list from that 10-K (2016-03-29) until the next
+  10-K's wording replaces it.
+  - The class stays DURABLE.
+  - The theme signal stays at 2/4.
+  - Its factor pair (omni-channel +0.2, online competition -0.2, 10% each) nets to zero.
+  - Rebuilding the 40 affected dates without the event changes no number, tier or class.
+
+  The builder encodes this one event kind and still refuses any other.
+- **Adds nothing:**
+  - the 10-Ks' and 10-Qs' outlook sections (they repeat the release guides; the repurchase assumptions go in the
+    cash-return text);
+  - the RONA approval 8-K (2016-05-16);
+  - the officer, director, bylaw and blackout 8-Ks;
+  - the debt offerings;
+  - the 401(k) plan amendments filed with the 10-Ks.
+- **Text-only change to 2008-2014:** two source descriptions (the FY2007 and FY2008 annual reports) now also cite the
+  2005 and 2006 share counts. No number, class or tier changes.
+- **ISO weeks:** 2015 has 53, so the 2015 batch covers weeks 2-53 (2014-12-31 covers week 1) and ends on 2015-12-31. The
+  2016 batch ends on 2016-12-30, and a 2017 batch starts on 2017-01-02.
+
+Controls: altering one value of each new print, guide, vintage, dividend and the theme event changes no date before its
+publication and changes the first weekly date after it (22 of 22).
+
+Seen in the build (method behaviour, not tuned):
+- **2015 reads RICH on all 52 dates** (AVOID on 50) at 20.3-27.4x guided EPS, the 85th to 100th percentile of its own
+  range. BASE grows +18% to +20%/yr: the sales guide (+4.5-5%), the margin step (8.5-9.5% of EPS) and
+  buybacks (4.8%, then 5.5%/yr). The seven January-February dates are still on FY14's guide; four of them have Ratio B
+  `inf`.
+- **2016 turns with the fiscal 2016 guide and the adjusted base.** From the Q4 FY15 print, EPS of $4.00 and a lower
+  price put the multiple at 16.3-21.2x (31st to 81st percentile):
+  - FAIR on 33 dates;
+  - CHEAP on 11: 2016-02-25, and 2016-09-09 to 2016-11-11 at $66-72;
+  - RICH on 8: the seven January-February dates, still on the fiscal 2015 guide, and 2016-12-09.
+
+  The tier reads WATCHLIST 27, ACCUMULATE 16, BUY 5 (October-November) and AVOID 4. BASE grows +19.8% to +22.6%/yr, with
+  the sales guide at +6% to +10% (the 53rd week and RONA) and buybacks at 6.0%/yr.
+- **The BEAR case still applies FY2008's -19.9% twice**, and the EPP floor moves from 13x to 14x on 2016-09-09.
+
+Judgement calls that could carry hindsight:
+- the risk factor as the line for the watch list (Item 1 had listed online retailers among competitors for years);
+- taking the company's adjusted FY15, and the two bases of the fiscal 2016 margin guide;
+- dating the dividend increases from the Q2 releases.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -1261,6 +1355,8 @@ What the gates enforce:
   further: cloud-based services, artificial intelligence and automation "have reduced and replaced some of our
   historical services and solutions". That changes the quoted wording, not the status: it is still the company's
   own statement, and no dated evidence shows the market pricing it for ACN.
+  LOW carries ECOMMERCE on the watch list the same way from its FY2015 10-K (2016-03-29), the first whose risk factors
+  name "growing competition from online and multi-channel retailers" ("LOW 2015-2016").
 
 ## Workflow
 

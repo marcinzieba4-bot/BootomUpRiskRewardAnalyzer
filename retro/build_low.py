@@ -107,8 +107,10 @@ def build(as_of, facts, raw, spx, engine, out):
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    if events:
-        sys.exit(f"{as_of}: the LOW builder has no theme encoding yet; decide one before adding events")
+    # the one theme encoding decided so far: a 10-K whose risk factors name online competition (ECOMMERCE, from the FY2015
+    # 10-K) puts the theme on the watch list; any other kind of event needs its encoding decided first
+    if any(e["kind"] != "ecommerce_company_acknowledged" for e in events):
+        sys.exit(f"{as_of}: the LOW builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -170,7 +172,14 @@ def build(as_of, facts, raw, spx, engine, out):
     # words give no step
     margin_guided = bool(gm)
     mdef = gm["margin_def"] if gm else h["margin_def"]
-    prev_margin = h["prev_fy_margins"][mdef]
+    # a guide whose step is measured from a base other than the history's margin says so (fy_margin_guide_base, the ACN
+    # FY19 rule): LOW's Q3 FY16 guide includes the Q4 FY15 impairment, so it steps from FY15's GAAP margin, not the
+    # adjusted one the history and the earlier FY16 guides use
+    restated = gm.get("fy_margin_guide_base") if gm else None
+    prev_margin = restated if restated is not None else h["prev_fy_margins"][mdef]
+    prev_margin_comment = (f'{h["fy_label"]}: {h["prev_fy_margins_note"]}' if restated is None else
+                           f'{h["fy_label"]} as the {fy_now} guide measures it ({gm["fy_margin_guide_note"]}); '
+                           f'{h["prev_fy_margins"][mdef]} in the history: {h["prev_fy_margins_note"]}')
     fy_margin_base = (round(sum(gm["op_margin_guide_pct"]) / 2, 3) if gm and "op_margin_guide_pct" in gm else
                       round(prev_margin + sum(gm["op_margin_guide_bp"]) / 2 / 100, 3) if gm else prev_margin)
     latest = {**latest, "op_margin": latest["margins"][mdef][0], "op_margin_bp": latest["margins"][mdef][1]}
@@ -233,12 +242,28 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text: no disruption theme has dated evidence for a home-improvement retailer in this fact sheet ──
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("A housing-led demand recession hits comps first; the bear needs it\n"
                 "  to reach gross margin and expense leverage as well.")
     theme_summary = "no disruption theme has dated evidence"
+    for e in [e for e in events if e["kind"] == "ecommerce_company_acknowledged"][-1:]:
+        # ECOMMERCE is live from 2015-01-01; the first 10-K after that whose risk factors name online competition (FY2015)
+        # puts it on the watch list (the ACN CLOUD rule: company-acknowledged, no market read). The factor pair nets to
+        # zero and the theme signal stays at 2/4, so only text changes; re-filing needs dated evidence of market pricing.
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "ecommerce"
+        watch = [{"theme": "ECOMMERCE", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Lowe's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                             f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED "
+                             "(ECOMMERCE) only if dated evidence shows the market pricing online substitution of Lowe's store "
+                             "sales specifically.")}]
+        factors = [(f"Omni-channel: {e['offering_short']} — Lowe's sells online itself", 0.2, 0.10),
+                   (f"Online competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "E-commerce: net effect on store sales"
+        trigger = "Online and multi-channel rivals take share faster than Lowe's own online sales grow"
+        theme_summary = "e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it"
     cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])}"
             + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "") if ge else
             f"(3) A numeric {fy_now} guide — the {latest['quarter']} release gives words only ('{latest['outlook_short']}')")
@@ -320,7 +345,7 @@ EPS_NORM      = {R(eps_hist)}   # reported, {h["normalization"]}{"; " + h["split
 REVENUE_HIST  = {R(rev)}   # net sales, USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
-PREV_FY_MARGIN = {prev_margin}   # {mdef}, {h["fy_label"]}: {h["prev_fy_margins_note"]}
+PREV_FY_MARGIN = {prev_margin}   # {mdef}, {prev_margin_comment}
 TAX_RATE      = {tax_rate}   # {tax_note}
 NET_INTEREST_B = {h["net_interest_b"]}   # interest, net, {h["net_interest_note"]}
 STORE_OPENING_B = {store_opening_b:.3f}   # {so_label}
