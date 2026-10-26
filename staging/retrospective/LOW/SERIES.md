@@ -370,107 +370,107 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2014-12-19 | $66.90 | Lowe's Q3 2014 results | 1.95 | -1.91 | 20.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.4% | -1.0pp | +11.0% | ✓ |
 | 2014-12-26 | $67.50 | Lowe's Q3 2014 results | 1.95 | -1.91 | 29.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.5% | -2.0pp | +10.0% | ✓ |
 | 2014-12-31 | $68.80 | Lowe's Q3 2014 results | 1.95 | -1.91 | 224.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.7% | -6.3pp | +7.8% | ✓ |
-| 2015-01-09 | $68.33 | Lowe's Q3 2014 results | 1.95 | -1.91 | 66.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-16 | $67.99 | Lowe's Q3 2014 results | 1.95 | -1.91 | 43.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-23 | $69.71 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-30 | $67.76 | Lowe's Q3 2014 results | 1.95 | -1.91 | 35.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-06 | $71.90 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-13 | $72.05 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-20 | $73.56 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-26 | $74.10 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.18 | 3.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-06 | $73.51 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.14 | 3.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-13 | $74.16 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.15 | 3.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-20 | $75.23 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.22 | 3.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-27 | $73.67 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.12 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-04-02 | $74.84 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.14 | 3.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-10 | $74.90 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.15 | 3.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-17 | $72.55 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.01 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-04-24 | $73.16 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.03 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-05-01 | $70.70 | Lowe's Q4 and fiscal 2014 results | 2.35 | -0.89 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-05-08 | $73.26 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.03 | 2.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-05-15 | $73.09 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.02 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-05-21 | $68.72 | Lowe's Q1 2015 results | 1.95 | -1.14 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-05-29 | $69.98 | Lowe's Q1 2015 results | 1.95 | -1.22 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-05 | $69.79 | Lowe's Q1 2015 results | 1.95 | -1.21 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-12 | $69.03 | Lowe's Q1 2015 results | 1.95 | -1.16 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-19 | $69.99 | Lowe's Q1 2015 results | 1.95 | -1.22 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-26 | $68.61 | Lowe's Q1 2015 results | 1.95 | -1.10 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-07-02 | $66.70 | Lowe's Q1 2015 results | 1.95 | -0.94 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2015-07-10 | $67.85 | Lowe's Q1 2015 results | 1.95 | -1.04 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-07-17 | $67.53 | Lowe's Q1 2015 results | 1.95 | -1.02 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-07-24 | $67.18 | Lowe's Q1 2015 results | 1.95 | -0.99 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-07-31 | $69.36 | Lowe's Q1 2015 results | 1.95 | -1.16 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-07 | $69.53 | Lowe's Q1 2015 results | 1.95 | -1.17 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-14 | $72.11 | Lowe's Q1 2015 results | 1.95 | -1.33 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-20 | $73.18 | Lowe's Q2 2015 results | 1.80 | -1.52 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-28 | $68.45 | Lowe's Q2 2015 results | 1.80 | -1.23 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-04 | $67.80 | Lowe's Q2 2015 results | 1.80 | -1.18 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-11 | $68.63 | Lowe's Q2 2015 results | 1.80 | -1.24 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-18 | $68.19 | Lowe's Q2 2015 results | 1.80 | -1.21 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-25 | $68.69 | Lowe's Q2 2015 results | 1.80 | -1.25 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-02 | $70.23 | Lowe's Q2 2015 results | 1.80 | -1.35 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-09 | $73.33 | Lowe's Q2 2015 results | 1.80 | -1.53 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-16 | $72.78 | Lowe's Q2 2015 results | 1.80 | -1.50 | 2.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-23 | $73.55 | Lowe's Q2 2015 results | 1.80 | -1.54 | 2.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-30 | $73.83 | Lowe's Q2 2015 results | 1.80 | -1.52 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-06 | $73.14 | Lowe's Q2 2015 results | 1.80 | -1.48 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-13 | $70.09 | Lowe's Q2 2015 results | 1.80 | -1.30 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-19 | $73.39 | Lowe's Q3 2015 results | 2.00 | -1.30 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-27 | $77.34 | Lowe's Q3 2015 results | 2.00 | -1.48 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-04 | $76.76 | Lowe's Q3 2015 results | 2.00 | -1.45 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-11 | $75.01 | Lowe's Q3 2015 results | 2.00 | -1.36 | 3.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-18 | $73.89 | Lowe's Q3 2015 results | 2.00 | -1.31 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-24 | $76.28 | Lowe's Q3 2015 results | 2.00 | -1.43 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-31 | $76.04 | Lowe's Q3 2015 results | 2.00 | -1.42 | 3.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-01-08 | $70.88 | Lowe's Q3 2015 results | 2.00 | -1.14 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-01-15 | $68.99 | Lowe's Q3 2015 results | 2.00 | -1.00 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-01-22 | $70.50 | Lowe's Q3 2015 results | 2.00 | -1.10 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-01-29 | $71.66 | Lowe's Q3 2015 results | 2.00 | -1.17 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-02-05 | $65.84 | Lowe's Q3 2015 results | 2.00 | -0.69 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2016-02-12 | $64.87 | Lowe's Q3 2015 results | 2.00 | -0.61 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2016-02-19 | $68.52 | Lowe's Q3 2015 results | 2.00 | -0.93 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-02-25 | $68.70 | Lowe's Q4 and fiscal 2015 results | 2.00 | +0.17 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2016-03-04 | $70.39 | Lowe's Q4 and fiscal 2015 results | 2.00 | +0.02 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-03-11 | $72.12 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.10 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-03-18 | $74.93 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.39 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-03-24 | $74.77 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.35 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-04-01 | $76.50 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.43 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-04-08 | $75.03 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.34 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-04-15 | $77.31 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.47 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-04-22 | $76.05 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.40 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-04-29 | $76.02 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.40 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-05-06 | $75.54 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.37 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-05-13 | $75.01 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.33 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-05-19 | $79.86 | Lowe's Q1 2016 results | 2.35 | -0.16 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-05-27 | $80.35 | Lowe's Q1 2016 results | 2.35 | -0.19 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-06-03 | $80.01 | Lowe's Q1 2016 results | 2.35 | -0.16 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-06-10 | $78.31 | Lowe's Q1 2016 results | 2.35 | -0.05 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-06-17 | $78.42 | Lowe's Q1 2016 results | 2.35 | -0.06 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-06-24 | $77.06 | Lowe's Q1 2016 results | 2.35 | +0.02 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-07-01 | $79.60 | Lowe's Q1 2016 results | 2.35 | -0.13 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-07-08 | $82.34 | Lowe's Q1 2016 results | 2.35 | -0.27 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-07-15 | $81.67 | Lowe's Q1 2016 results | 2.35 | -0.23 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-07-22 | $80.65 | Lowe's Q1 2016 results | 2.35 | -0.17 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-07-29 | $82.28 | Lowe's Q1 2016 results | 2.35 | -0.26 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-08-05 | $81.72 | Lowe's Q1 2016 results | 2.35 | -0.22 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-08-12 | $81.72 | Lowe's Q1 2016 results | 2.35 | -0.22 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-08-18 | $76.43 | Lowe's Q2 2016 results | 1.80 | -0.42 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-08-26 | $76.90 | Lowe's Q2 2016 results | 1.80 | -0.44 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-09-02 | $76.96 | Lowe's Q2 2016 results | 1.80 | -0.44 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-09-09 | $71.77 | Lowe's Q2 2016 results | 1.80 | +0.03 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2016-09-16 | $70.95 | Lowe's Q2 2016 results | 1.80 | +0.07 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-09-23 | $72.35 | Lowe's Q2 2016 results | 1.80 | +0.00 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2016-09-30 | $72.21 | Lowe's Q2 2016 results | 1.80 | +0.01 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2016-10-07 | $71.30 | Lowe's Q2 2016 results | 1.80 | +0.06 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-10-14 | $71.35 | Lowe's Q2 2016 results | 1.80 | +0.06 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-10-21 | $70.65 | Lowe's Q2 2016 results | 1.80 | +0.10 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-10-28 | $67.03 | Lowe's Q2 2016 results | 1.80 | +0.27 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-11-04 | $66.25 | Lowe's Q2 2016 results | 1.80 | +0.30 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-11-11 | $69.73 | Lowe's Q2 2016 results | 1.80 | +0.15 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-11-17 | $67.95 | Lowe's Q3 2016 results | 1.95 | -0.09 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-11-25 | $72.21 | Lowe's Q3 2016 results | 1.95 | -0.44 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-12-02 | $72.31 | Lowe's Q3 2016 results | 1.95 | -0.44 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-12-09 | $74.69 | Lowe's Q3 2016 results | 1.95 | -0.57 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2016-12-16 | $72.96 | Lowe's Q3 2016 results | 1.95 | -0.47 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-12-23 | $72.30 | Lowe's Q3 2016 results | 1.95 | -0.43 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-12-30 | $71.12 | Lowe's Q3 2016 results | 1.95 | -0.36 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2015-01-09 | $68.33 | Lowe's Q3 2014 results | 1.95 | -1.91 | 66.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.3% | -7.8pp | +8.5% | ✓ |
+| 2015-01-16 | $67.99 | Lowe's Q3 2014 results | 1.95 | -1.91 | 43.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.1% | -7.8pp | +9.0% | ✓ |
+| 2015-01-23 | $69.71 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.6% | -7.0pp | +6.4% | ✓ |
+| 2015-01-30 | $67.76 | Lowe's Q3 2014 results | 1.95 | -1.91 | 35.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.1% | -6.4pp | +9.6% | ✓ |
+| 2015-02-06 | $71.90 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.3% | -11.3pp | +3.3% | ✓ |
+| 2015-02-13 | $72.05 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.9% | -9.2pp | +3.4% | ✓ |
+| 2015-02-20 | $73.56 | Lowe's Q3 2014 results | 1.95 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.6% | -7.8pp | +1.4% | ✓ |
+| 2015-02-26 | $74.10 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.18 | 3.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.9% | -10.2pp | +0.9% | ✓ |
+| 2015-03-06 | $73.51 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.14 | 3.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.5% | -5.3pp | +2.0% | ✓ |
+| 2015-03-13 | $74.16 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.15 | 3.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.2% | -6.5pp | +1.4% | ✓ |
+| 2015-03-20 | $75.23 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.22 | 3.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.7% | -4.1pp | +0.2% | ✓ |
+| 2015-03-27 | $73.67 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.12 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +14.0% | -3.9pp | +2.5% | ✓ |
+| 2015-04-02 | $74.84 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.14 | 3.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.1% | -5.4pp | +1.0% | ✓ |
+| 2015-04-10 | $74.90 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.15 | 3.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.2% | -3.0pp | +1.2% | ✓ |
+| 2015-04-17 | $72.55 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.01 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +16.3% | -0.8pp | +4.5% | ✓ |
+| 2015-04-24 | $73.16 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.03 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +18.5% | +2.3pp | +3.9% | ✗ |
+| 2015-05-01 | $70.70 | Lowe's Q4 and fiscal 2014 results | 2.35 | -0.89 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.9% | +5.5pp | +7.7% | ✗ |
+| 2015-05-08 | $73.26 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.03 | 2.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +20.8% | +3.4pp | +4.2% | ✗ |
+| 2015-05-15 | $73.09 | Lowe's Q4 and fiscal 2014 results | 2.35 | -1.02 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +20.0% | +2.7pp | +4.7% | ✗ |
+| 2015-05-21 | $68.72 | Lowe's Q1 2015 results | 1.95 | -1.14 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.8% | +11.0pp | +11.5% | ✗ |
+| 2015-05-29 | $69.98 | Lowe's Q1 2015 results | 1.95 | -1.22 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.2% | +0.6pp | +9.6% | ✗ |
+| 2015-06-05 | $69.79 | Lowe's Q1 2015 results | 1.95 | -1.21 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.4% | -3.1pp | +9.9% | ✓ |
+| 2015-06-12 | $69.03 | Lowe's Q1 2015 results | 1.95 | -1.16 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.1% | -2.0pp | +11.1% | ✓ |
+| 2015-06-19 | $69.99 | Lowe's Q1 2015 results | 1.95 | -1.22 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.4% | -0.9pp | +9.6% | ✓ |
+| 2015-06-26 | $68.61 | Lowe's Q1 2015 results | 1.95 | -1.10 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +15.5% | -4.8pp | +11.8% | ✓ |
+| 2015-07-02 | $66.70 | Lowe's Q1 2015 results | 1.95 | -0.94 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +20.0% | -1.0pp | +15.0% | ✓ |
+| 2015-07-10 | $67.85 | Lowe's Q1 2015 results | 1.95 | -1.04 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +17.1% | -4.1pp | +13.0% | ✓ |
+| 2015-07-17 | $67.53 | Lowe's Q1 2015 results | 1.95 | -1.02 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +16.9% | -2.9pp | +13.3% | ✓ |
+| 2015-07-24 | $67.18 | Lowe's Q1 2015 results | 1.95 | -0.99 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +14.6% | -8.4pp | +13.7% | ✓ |
+| 2015-07-31 | $69.36 | Lowe's Q1 2015 results | 1.95 | -1.16 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.1% | -7.5pp | +10.0% | ✓ |
+| 2015-08-07 | $69.53 | Lowe's Q1 2015 results | 1.95 | -1.17 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.5% | -7.1pp | +9.6% | ✓ |
+| 2015-08-14 | $72.11 | Lowe's Q1 2015 results | 1.95 | -1.33 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.5% | -10.6pp | +5.6% | ✓ |
+| 2015-08-20 | $73.18 | Lowe's Q2 2015 results | 1.80 | -1.52 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.2% | -19.2pp | +3.9% | ✓ |
+| 2015-08-28 | $68.45 | Lowe's Q2 2015 results | 1.80 | -1.23 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.7% | -15.6pp | +11.0% | ✓ |
+| 2015-09-04 | $67.80 | Lowe's Q2 2015 results | 1.80 | -1.18 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.0% | -19.3pp | +12.0% | ✓ |
+| 2015-09-11 | $68.63 | Lowe's Q2 2015 results | 1.80 | -1.24 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.8% | -14.5pp | +10.7% | ✓ |
+| 2015-09-18 | $68.19 | Lowe's Q2 2015 results | 1.80 | -1.21 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.8% | -14.7pp | +11.6% | ✓ |
+| 2015-09-25 | $68.69 | Lowe's Q2 2015 results | 1.80 | -1.25 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.4% | -14.5pp | +11.0% | ✓ |
+| 2015-10-02 | $70.23 | Lowe's Q2 2015 results | 1.80 | -1.35 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.8% | -15.3pp | +8.8% | ✓ |
+| 2015-10-09 | $73.33 | Lowe's Q2 2015 results | 1.80 | -1.53 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.1% | -15.6pp | +4.5% | ✓ |
+| 2015-10-16 | $72.78 | Lowe's Q2 2015 results | 1.80 | -1.50 | 2.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.2% | -14.9pp | +5.5% | ✓ |
+| 2015-10-23 | $73.55 | Lowe's Q2 2015 results | 1.80 | -1.54 | 2.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.5% | -15.3pp | +4.7% | ✓ |
+| 2015-10-30 | $73.83 | Lowe's Q2 2015 results | 1.80 | -1.52 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.3% | -16.6pp | +4.7% | ✓ |
+| 2015-11-06 | $73.14 | Lowe's Q2 2015 results | 1.80 | -1.48 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.6% | -18.0pp | +6.0% | ✓ |
+| 2015-11-13 | $70.09 | Lowe's Q2 2015 results | 1.80 | -1.30 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.6% | -17.5pp | +10.9% | ✓ |
+| 2015-11-19 | $73.39 | Lowe's Q3 2015 results | 2.00 | -1.30 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.1% | -15.0pp | +6.2% | ✓ |
+| 2015-11-27 | $77.34 | Lowe's Q3 2015 results | 2.00 | -1.48 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.8% | -21.8pp | +0.9% | ✓ |
+| 2015-12-04 | $76.76 | Lowe's Q3 2015 results | 2.00 | -1.45 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.3% | -12.1pp | +2.0% | ✓ |
+| 2015-12-11 | $75.01 | Lowe's Q3 2015 results | 2.00 | -1.36 | 3.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.7% | -18.7pp | +4.7% | ✓ |
+| 2015-12-18 | $73.89 | Lowe's Q3 2015 results | 2.00 | -1.31 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.1% | -16.7pp | +6.6% | ✓ |
+| 2015-12-24 | $76.28 | Lowe's Q3 2015 results | 2.00 | -1.43 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.2% | -11.4pp | +3.6% | ✓ |
+| 2015-12-31 | $76.04 | Lowe's Q3 2015 results | 2.00 | -1.42 | 3.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.9% | -9.6pp | +4.4% | ✓ |
+| 2016-01-08 | $70.88 | Lowe's Q3 2015 results | 2.00 | -1.14 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.1% | -11.5pp | +12.6% | ✗ |
+| 2016-01-15 | $68.99 | Lowe's Q3 2015 results | 2.00 | -1.00 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +49.8% | -3.1pp | +16.3% | ✗ |
+| 2016-01-22 | $70.50 | Lowe's Q3 2015 results | 2.00 | -1.10 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +55.5% | +2.2pp | +14.6% | ✗ |
+| 2016-01-29 | $71.66 | Lowe's Q3 2015 results | 2.00 | -1.17 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.2% | +1.4pp | +13.7% | ✗ |
+| 2016-02-05 | $65.84 | Lowe's Q3 2015 results | 2.00 | -0.69 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.6% | +7.2pp | +24.6% | ✗ |
+| 2016-02-12 | $64.87 | Lowe's Q3 2015 results | 2.00 | -0.61 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +55.2% | +8.0pp | +27.3% | ✗ |
+| 2016-02-19 | $68.52 | Lowe's Q3 2015 results | 2.00 | -0.93 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +44.8% | -2.3pp | +21.0% | ✗ |
+| 2016-02-25 | $68.70 | Lowe's Q4 and fiscal 2015 results | 2.00 | +0.17 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +46.1% | +0.9pp | +21.2% | ✓ |
+| 2016-03-04 | $70.39 | Lowe's Q4 and fiscal 2015 results | 2.00 | +0.02 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +25.4% | -13.5pp | +18.6% | ✓ |
+| 2016-03-11 | $72.12 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.10 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +25.1% | -17.1pp | +15.9% | ✗ |
+| 2016-03-18 | $74.93 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.39 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +20.0% | -18.8pp | +11.7% | ✗ |
+| 2016-03-24 | $74.77 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.35 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +15.9% | -15.7pp | +12.0% | ✗ |
+| 2016-04-01 | $76.50 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.43 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +18.5% | -13.2pp | +9.6% | ✓ |
+| 2016-04-08 | $75.03 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.34 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +21.5% | -10.1pp | +11.9% | ✓ |
+| 2016-04-15 | $77.31 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.47 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +15.3% | -16.8pp | +8.7% | ✗ |
+| 2016-04-22 | $76.05 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.40 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +13.4% | -18.7pp | +10.5% | ✗ |
+| 2016-04-29 | $76.02 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.40 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +14.5% | -19.2pp | +10.5% | ✗ |
+| 2016-05-06 | $75.54 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.37 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +15.5% | -18.3pp | +11.2% | ✗ |
+| 2016-05-13 | $75.01 | Lowe's Q4 and fiscal 2015 results | 2.00 | -0.33 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +20.6% | -17.2pp | +12.0% | ✗ |
+| 2016-05-19 | $79.86 | Lowe's Q1 2016 results | 2.35 | -0.16 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +11.9% | -25.6pp | +5.2% | ✗ |
+| 2016-05-27 | $80.35 | Lowe's Q1 2016 results | 2.35 | -0.19 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +24.1% | -9.8pp | +4.8% | ✓ |
+| 2016-06-03 | $80.01 | Lowe's Q1 2016 results | 2.35 | -0.16 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.6% | -11.0pp | +5.6% | ✓ |
+| 2016-06-10 | $78.31 | Lowe's Q1 2016 results | 2.35 | -0.05 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +31.9% | -5.0pp | +8.4% | ✓ |
+| 2016-06-17 | $78.42 | Lowe's Q1 2016 results | 2.35 | -0.06 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +30.3% | -8.5pp | +8.7% | ✓ |
+| 2016-06-24 | $77.06 | Lowe's Q1 2016 results | 2.35 | +0.02 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +31.4% | -8.5pp | +11.2% | ✓ |
+| 2016-07-01 | $79.60 | Lowe's Q1 2016 results | 2.35 | -0.13 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.9% | -9.9pp | +8.1% | ✓ |
+| 2016-07-08 | $82.34 | Lowe's Q1 2016 results | 2.35 | -0.27 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +20.5% | -13.6pp | +4.9% | ✓ |
+| 2016-07-15 | $81.67 | Lowe's Q1 2016 results | 2.35 | -0.23 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +25.7% | -8.3pp | +6.3% | ✓ |
+| 2016-07-22 | $80.65 | Lowe's Q1 2016 results | 2.35 | -0.17 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +28.1% | -5.0pp | +8.2% | ✓ |
+| 2016-07-29 | $82.28 | Lowe's Q1 2016 results | 2.35 | -0.26 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +23.0% | -11.1pp | +6.7% | ✓ |
+| 2016-08-05 | $81.72 | Lowe's Q1 2016 results | 2.35 | -0.22 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +23.3% | -11.0pp | +7.9% | ✓ |
+| 2016-08-12 | $81.72 | Lowe's Q1 2016 results | 2.35 | -0.22 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +24.2% | -9.8pp | +8.4% | ✓ |
+| 2016-08-18 | $76.43 | Lowe's Q2 2016 results | 1.80 | -0.42 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +32.3% | -2.3pp | +16.5% | ✓ |
+| 2016-08-26 | $76.90 | Lowe's Q2 2016 results | 1.80 | -0.44 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +43.0% | +6.3pp | +16.5% | ✓ |
+| 2016-09-02 | $76.96 | Lowe's Q2 2016 results | 1.80 | -0.44 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +45.4% | +8.1pp | +17.3% | ✓ |
+| 2016-09-09 | $71.77 | Lowe's Q2 2016 results | 1.80 | +0.03 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +57.1% | +17.8pp | +26.5% | ✓ |
+| 2016-09-16 | $70.95 | Lowe's Q2 2016 results | 1.80 | +0.07 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.0% | +24.7pp | +29.0% | ✓ |
+| 2016-09-23 | $72.35 | Lowe's Q2 2016 results | 1.80 | +0.00 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +65.9% | +26.2pp | +27.5% | ✓ |
+| 2016-09-30 | $72.21 | Lowe's Q2 2016 results | 1.80 | +0.01 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +63.4% | +24.5pp | +28.8% | ✓ |
+| 2016-10-07 | $71.30 | Lowe's Q2 2016 results | 1.80 | +0.06 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +58.4% | +20.0pp | +31.3% | ✓ |
+| 2016-10-14 | $71.35 | Lowe's Q2 2016 results | 1.80 | +0.06 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.1% | +18.0pp | +31.9% | ✓ |
+| 2016-10-21 | $70.65 | Lowe's Q2 2016 results | 1.80 | +0.10 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +45.0% | +11.3pp | +33.8% | ✓ |
+| 2016-10-28 | $67.03 | Lowe's Q2 2016 results | 1.80 | +0.27 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.8% | +15.4pp | +41.5% | ✓ |
+| 2016-11-04 | $66.25 | Lowe's Q2 2016 results | 1.80 | +0.30 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.1% | +16.1pp | +43.7% | ✓ |
+| 2016-11-11 | $69.73 | Lowe's Q2 2016 results | 1.80 | +0.15 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.6% | +10.7pp | +37.1% | ✓ |
+| 2016-11-17 | $67.95 | Lowe's Q3 2016 results | 1.95 | -0.09 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +42.1% | +12.6pp | +41.1% | ✓ |
+| 2016-11-25 | $72.21 | Lowe's Q3 2016 results | 1.95 | -0.44 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +26.2% | +2.9pp | +33.0% | ✓ |
+| 2016-12-02 | $72.31 | Lowe's Q3 2016 results | 1.95 | -0.44 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +35.1% | +5.1pp | +33.1% | ✓ |
+| 2016-12-09 | $74.69 | Lowe's Q3 2016 results | 1.95 | -0.57 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +24.1% | +3.4pp | +29.0% | ✗ |
+| 2016-12-16 | $72.96 | Lowe's Q3 2016 results | 1.95 | -0.47 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +32.5% | +13.0pp | +32.2% | ✓ |
+| 2016-12-23 | $72.30 | Lowe's Q3 2016 results | 1.95 | -0.43 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +25.8% | +14.8pp | +33.5% | ✓ |
+| 2016-12-30 | $71.12 | Lowe's Q3 2016 results | 1.95 | -0.36 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +33.8% | +18.6pp | +35.6% | ✗ |
