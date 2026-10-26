@@ -48,7 +48,7 @@ SOURCES = [
         "filed": "2007-04-03 15:41 ET (during the session)",
         "title": "Lowe's Companies FY2006 10-K (annual report, exhibit 13)",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000052/exhibit13.htm",
-        "supports": "selected financial data 2002-2006 (diluted EPS from continuing operations, net sales), income statement 2004-2006 with percent of sales, 2006 diluted shares 1,566M, interest $154M, store opening costs $146M, effective tax rate 37.9%; cash $364M and short-term investments $432M; operating cash flow $4,502M, fixed assets acquired $3,916M; product-category sales 2004-2006; $1.5B repurchase authorization remaining; quarterly dividend increased in 2006 to $.05; 1,385 stores in 49 states, 157 million square feet; sales 'driven by housing turnover and activity level of home improvement projects'"
+        "supports": "selected financial data 2002-2006 (diluted EPS from continuing operations, net sales), income statement 2004-2006 with percent of sales, 2006 diluted shares 1,566M, interest $154M, store opening costs $146M, effective tax rate 37.9%; cash $364M and short-term investments $432M; operating cash flow $4,502M, fixed assets acquired $3,916M; product-category sales 2004-2006; $1.5B repurchase authorization remaining; quarterly dividend increased in 2006 to $.05; 1,385 stores in 49 states, 157 million square feet; sales 'driven by housing turnover and activity level of home improvement projects'; 2004 weighted average diluted shares 1,617M"
     },
     {
         "id": "L2",
@@ -56,7 +56,7 @@ SOURCES = [
         "filed": "2006-09-29 16:08 ET (after the close)",
         "title": "Lowe's Companies FY2005 10-K/A (restated for early payment discounts, split-adjusted)",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000141/lowesform10ka02032006.htm",
-        "supports": "selected financial data 2001-2005 restated and adjusted for the 2006 2-for-1 split: 2001 diluted EPS from continuing operations $0.61, net sales $21,714M"
+        "supports": "selected financial data 2001-2005 restated and adjusted for the 2006 2-for-1 split: 2001 diluted EPS from continuing operations $0.61, net sales $21,714M; 2003 weighted average diluted shares 1,631M (split-adjusted)"
     },
     {
         "id": "L3",

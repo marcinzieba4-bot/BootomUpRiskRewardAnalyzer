@@ -1,0 +1,278 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LOW",
+ "company": "Lowe's Companies, Inc.",
+ "as_of": "2013-07-19",
+ "price_date": "2013-07-19",
+ "price": 44.27,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); home-improvement retail signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Lowe's: the world's second largest home improvement retailer, 1,754 stores in the U.S., Canada and Mexico with 197 million square feet, serving do-it-yourself, do-it-for-me and commercial business customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Lowe's: the world's second largest home improvement retailer, 1,754 stores in the U.S., Canada and Mexico with 197 million square feet, serving do-it-yourself, do-it-for-me and commercial business customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not. durable franchise (obsolescence risk 2/5); price rich; Ratio B 3.27x; +66% to EPP floor; model-vs-market gap -1.70; conservative 2yr +5%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 3.27,
+  "ratio_b_fmt": "3.27x",
+  "epp": 26.65,
+  "epp_gap_pct": 66.1,
+  "epp_adj": -0.1,
+  "proxy_composite": 1.8,
+  "sca": 0.022,
+  "adj_composite": 1.722,
+  "market_composite": 3.42,
+  "adj_gap": -1.7,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 5.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.32,
+    "pe": 14.2,
+    "price": 19,
+    "desc": "EPS -19.9%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.75,
+    "pe": 17.0,
+    "price": 47,
+    "desc": "EPS +15.8%/yr (FY13 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.75,
+    "pe": 18.8,
+    "price": 52,
+    "desc": "EPS +15.8%/yr (FY03-FY12 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 3.17,
+    "pe": 20.8,
+    "price": 66,
+    "desc": "EPS +24.3%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 3.27,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -1.7,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.83,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -1.11,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 9.62,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -2.05,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.89,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -1.6,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 4.58,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -1.85,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 3.27,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -1.4,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 3.27,
+   "epp_gap_pct": 35.0,
+   "adj_gap": -1.6,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 3.27,
+   "epp_gap_pct": 66.1,
+   "adj_gap": -1.33,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.3,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LOW (retrospective, 2013-07-19) ✕ AVOID — Ratio B 3.27x (57.1% downside to Bear $19 / +17.5% upside to Bull $52) | Adj composite 1.72 vs market 3.42: gap -1.70 [OVERVALUED] | +66% above the EPP floor $27 (13x FY13E $2.05) | Conservative 2-yr case: +5.3% total (+2.6%/yr) | At 21.6x FY13E the 15% hurdle price $59 sits above the BULL case; comps -0.7% in Q1 FY13, forward sales +4% (FY13 sales guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "L75",
+   "published": "2013-04-02",
+   "filed": "2013-04-01 18:19 ET (after the close)",
+   "title": "Lowe's Companies FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000045/lowesform10k.htm",
+   "supports": "selected financial data 2008-2012, income statement 2010-2012 with percent of sales, 2012 diluted shares 1,152M, interest $423M, income tax provision $1,178M on pre-tax $3,137M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.35B repurchased in 2012, $5.0B authorization remaining, the 2013 guide assumes about $4 billion of repurchases; 2012 fourth-quarter dividend $0.16; comparable store sales renamed comparable sales (a comparable location open longer than 13 months); 1,754 stores in the U.S., Canada and Mexico, 197 million square feet"
+  },
+  {
+   "id": "L71",
+   "published": "2012-04-03",
+   "filed": "2012-04-02 16:59 ET (after the close)",
+   "title": "Lowe's Companies FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066712000096/lowesform10k02032012.htm",
+   "supports": "selected financial data 2007-2011 (fiscal 2011 has 53 weeks), income statement 2009-2011 with percent of sales, 2011 diluted shares 1,273M, interest $371M, income tax provision $1,067M on pre-tax $2,906M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.9B repurchased in 2011, $4.5B authorization remaining; 2011 fourth-quarter dividend $0.14; 1,745 stores in the U.S., Canada and Mexico, 197 million square feet, 27 stores closed"
+  },
+  {
+   "id": "L70",
+   "published": "2011-03-29",
+   "filed": "2011-03-29 08:26 ET (before the open)",
+   "title": "Lowe's Companies FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066711000061/lowesform10k01282011.htm",
+   "supports": "selected financial data 2006-2010, income statement 2008-2010 with percent of sales (store opening costs now inside SG&A, prior years reclassified), 2010 diluted shares 1,403M, interest $332M, effective tax from income tax provision $1,218M on pre-tax $3,228M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.6B repurchased in 2010; 2010 fourth-quarter dividend $0.110; 1,749 stores in the U.S., Canada and Mexico, 197 million square feet"
+  },
+  {
+   "id": "L51",
+   "published": "2010-03-31",
+   "filed": "2010-03-30 17:28 ET (after the close)",
+   "title": "Lowe's Companies FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066710000059/lowesform10k01292010.htm",
+   "supports": "selected financial data 2005-2009 (two-class EPS adopted retrospectively), income statement 2007-2009 with percent of sales, 2009 diluted shares 1,464M, interest $287M, store opening costs $49M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $500M repurchased in 2009, $5 billion authorization; 2009 fourth-quarter dividend $0.090; 1,710 stores in the U.S. and Canada, 193 million square feet"
+  },
+  {
+   "id": "L50",
+   "published": "2009-04-01",
+   "filed": "2009-03-31 16:34 ET (after the close)",
+   "title": "Lowe's Companies FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066709000036/lowesform10k01302009.htm",
+   "supports": "selected financial data 2004-2008, income statement 2006-2008 with percent of sales, 2008 diluted shares 1,472M, interest $280M, store opening costs $102M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; no repurchases in 2008, $2.2B authorization remaining, 2009 outlook assumes no repurchases; quarterly dividend increased in 2008 to $0.085; 1,649 stores in the U.S. and Canada, 187 million square feet"
+  },
+  {
+   "id": "L9",
+   "published": "2008-04-02",
+   "filed": "2008-04-01 17:02 ET (after the close)",
+   "title": "Lowe's Companies FY2007 10-K (annual report, exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066708000067/exhibit13.htm",
+   "supports": "selected financial data 2003-2007, income statement 2005-2007 with percent of sales, 2007 diluted shares 1,510M, interest $194M, store opening costs $141M, effective tax rate 37.7%; cash $281M and short-term investments $249M; operating cash flow $4,347M, fixed assets acquired $4,010M; product-category sales 2005-2007; $2.2B repurchase authorization remaining, 2008 outlook assumes no repurchases; quarterly dividend increased in 2007 to $.08; 1,534 stores in 50 states and Canada, 174 million square feet"
+  },
+  {
+   "id": "L2",
+   "published": "2006-10-02",
+   "filed": "2006-09-29 16:08 ET (after the close)",
+   "title": "Lowe's Companies FY2005 10-K/A (restated for early payment discounts, split-adjusted)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000141/lowesform10ka02032006.htm",
+   "supports": "selected financial data 2001-2005 restated and adjusted for the 2006 2-for-1 split: 2001 diluted EPS from continuing operations $0.61, net sales $21,714M; 2003 weighted average diluted shares 1,631M (split-adjusted)"
+  },
+  {
+   "id": "L67",
+   "published": "2012-11-19",
+   "filed": "2012-11-19 08:34 ET (before the open)",
+   "title": "Lowe's Q3 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066712000197/exhibit991.htm",
+   "supports": "Q3 2012 results ($85M pre-tax charges, $0.05 per share) and the fiscal 2012 outlook"
+  },
+  {
+   "id": "L74",
+   "published": "2013-02-25",
+   "filed": "2013-02-25 08:18 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000018/exhibit991.htm",
+   "supports": "Q4 2012 (13 weeks) and fiscal 2012 (52 weeks) results (EPS $1.69, comparable store sales +1.4%, the 2011 extra week and the 2012 week shift), percent-of-sales income statement, inventory, cash, cash flow; a new $5 billion repurchase authorization; fiscal 2013 outlook (sales, comparable store sales, EBIT margin in bp, tax rate, EPS); no next-quarter outlook"
+  },
+  {
+   "id": "L76",
+   "published": "2013-05-22",
+   "filed": "2013-05-22 08:26 ET (before the open)",
+   "title": "Lowe's Q1 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000064/exhibit991.htm",
+   "supports": "Q1 2013 results and the fiscal 2013 outlook (unchanged)"
+  },
+  {
+   "id": "L77",
+   "published": "2013-06-05",
+   "filed": "2013-06-04 16:50 ET (after the close)",
+   "title": "Lowe's Q1 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000093/lowesform10q.htm",
+   "supports": "'On May 31, 2013, the Board of Directors declared a quarterly cash dividend of $0.18 per share, which represents a 12.5% increase'"
+  },
+  {
+   "id": "L30",
+   "published": "1998-06-12",
+   "filed": "1998-06-12 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 1998 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066798000009/0000060667-98-000009.txt",
+   "supports": "'On May 29, 1998, the Board of Directors declared a two-for one stock split'"
+  },
+  {
+   "id": "L31",
+   "published": "2001-06-15",
+   "filed": "2001-06-15 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066701500007/form10q101.txt",
+   "supports": "'On May 25, 2001, the Company's Board of Directors approved a two-for-one split'"
+  },
+  {
+   "id": "L32",
+   "published": "2006-06-06",
+   "filed": "2006-06-05 17:07 ET (after the close)",
+   "title": "Lowe's 8-K: two-for-one split and dividend increase approved on May 25, 2006",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000115/lowesform8k05252006.htm",
+   "supports": "two-for-one split of the common shares approved by the Board on May 25, 2006; quarterly dividend $0.05 post-split"
+  },
+  {
+   "id": "L0",
+   "published": "2013-07-19",
+   "title": "Yahoo Finance daily prices, LOW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LOW/history",
+   "supports": "close $44.27 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-26"
+}

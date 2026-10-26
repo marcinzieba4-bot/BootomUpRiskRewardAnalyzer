@@ -1150,6 +1150,73 @@ Seen in the build (method behaviour, not tuned):
 Judgement calls that could carry hindsight: reading "essentially flat" as 0.0; keeping the 14th-week quarter guide as
 published in BASE; treating the RONA proposal as adding nothing.
 
+### LOW 2013-2014: a renamed comp, the Orchard acquisition, an evening 10-K
+
+```bash
+python3 retro/build_low.py --weekly 2013-01-07 2013-12-31                   # 52 dates, 2013-01-11 .. 2013-12-31
+python3 retro/build_low.py --weekly 2014-01-06 2014-12-31                   # 52 dates, 2014-01-10 .. 2014-12-31
+```
+
+Every 8-K, 10-Q, 10-K and earnings release of 2013 and 2014 was read, this time by Opus directly (the eight releases are
+short). 153 strings were checked with `verbatim.py`, and 259 structured checks read each print's numbers back from its
+release's table rows and each source's date from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided
+before any 2013 or 2014 date was built or scored:
+
+- **Two 10-K vintages.** FY2012 (2008-2012) was accepted 2013-04-01 at 18:19 ET, so it is dated 2013-04-02. EDGAR's
+  filing date is also 2013-04-02, because it came in after 17:30; the acceptance time decides, as always. FY2013
+  (2009-2013) was accepted 2014-03-31 at 17:21 ET, dated 2014-04-01. The history moves to 2003-2012, then 2004-2013, each
+  earlier year from the latest 10-K that reports it. First-year diluted shares: 2003's 1,631M from the FY2005 10-K/A and
+  2004's 1,617M from the FY2006 10-K, both already on the post-2006-split basis.
+- **No next-quarter outlook in any release of the period.** BASE growth and the growth factor use the fiscal-year sales
+  guide (the 2012 rule). Fiscal 2013 guides: sales +4%, +5%, +6%; EBIT margin +60, +65, +75bp; EPS $2.05, $2.10, $2.15.
+  Fiscal 2014: sales +5%, +4.5%, +4.5-5%; EBIT margin +65bp, then +70-75bp; EPS $2.60, $2.63, $2.68. A margin guide
+  given as a range steps at its midpoint.
+- **"Comparable store sales" renamed "comparable sales"** (the FY2012 10-K, then every release from Q1 FY13). The
+  definition now reads "location" where it read "store", and the 10-K repeats the earlier years unchanged (2012 +1.4%,
+  2011 0.0%, 2010 +1.3%), so the series continues. The signal's label is part of the frozen engine and stays
+  "Comparable store sales" (the ACN display-quirk rule: no engine edit without an engine revision).
+- **Orchard Supply.** Lowe's acquired most of Orchard Supply Hardware's assets on 2013-08-30: 72 stores, no 8-K. The Q2
+  2013 10-Q calls it "not material" and "not included in our fiscal 2013 outlook". From the Q3 FY13 print, store counts
+  include these "hardware stores", and the fiscal 2014 store guides name both kinds; they print as given ("15 home
+  improvement and 5 hardware stores"). No sales figure is adjusted.
+- **Product categories regrouped twice:** 14 plus Other in the FY2012 10-K, 12 plus Other in the FY2013 10-K, prior years
+  reclassified each time. The bridge (display only) takes each vintage's own categories, with growth from the same table.
+- **One-offs without an adjusted figure stay in** (the Fremont rule): Q4 FY13 impairments ($0.02), Q1 FY14 impairments
+  ($0.01) and the Q1 FY14 tax settlement (+$0.04). The settlement is why the fiscal 2014 EPS guide rose to $2.63.
+- **Dividends:**
+  - $0.18, declared 2013-05-31, from the Q1 2013 10-Q (accepted 2013-06-04 16:50 ET, dated 2013-06-05);
+  - $0.23, declared 2014-05-30, from the Q1 2014 10-Q (accepted 2014-06-03 17:16 ET, dated 2014-06-04).
+- **Adds nothing:**
+  - the 10-Ks' and 10-Qs' outlook sections (they repeat the release guides; the repurchase amounts the guides assume go
+    in the cash-return text, as in 2012);
+  - the $5 billion repurchase authorizations of 2013-02-01 and 2014-01-31 (cash-return text);
+  - the officer and director 8-Ks: 2013-01-24, 2014-03-04, and 2013-11-15, which keeps the $0.18 dividend;
+  - the debt-offering and credit-facility 8-Ks;
+  - the SEC comment-letter correspondence. It is released only after the review ends, so its filing date is not its
+    publication date.
+- **Text-only change to 2008-2012:** two source descriptions (the FY2005 10-K/A and the FY2006 10-K) now also cite the
+  2003 and 2004 share counts the new vintages use. No number, class or tier changes.
+
+Controls: altering one value of each new print, guide, vintage and dividend changes no date before its publication and
+changes the first weekly date after it (20 of 20).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 86 of 104 dates, AVOID on 68.** The multiple sat high in its own range: 17.3x to 25.7x guided EPS, the 56th to
+  100th percentile of a ten-year window that still holds the 11-15x lows of 2007-2012.
+- **BASE equals BULL.** From the Q4 FY12 print, BASE growth is +15.3% to +19.6%/yr. It adds three parts: the
+  fiscal-year sales guide (+4% to +6%), the guided margin step (+60 to +75bp on a 7.05%, then 7.77%, base) and the
+  decade's buybacks (3.9%, then 4.8%/yr). That beats the decade EPS CAGR, so BULL takes BASE's growth (the UNP labelling
+  quirk) at the 75th-percentile P/E (18.5-18.9x). The price was above the BULL price on 6 dates (Ratio B `inf`) and near
+  it on many more (Ratio B 224x on 2014-12-31).
+- **FAIR on 18 dates:** 2013-02-26, the day after the fiscal 2013 guide, and 2014-04-11 to 2014-08-01 ($45-48,
+  17.3-18.3x). The tier reads ACCUMULATE on 7 of them (Ratio B 0.95-1.09x), WATCHLIST on 29 dates in all.
+- **January-February 2013 still runs on the FY2012 guide** ($1.64): RICH and AVOID at 21.8-23.9x, BASE +8.5%/yr, as in
+  late 2012.
+- **The BEAR case applies FY2008's -19.9% twice** in both windows, and the EPP floor stays at 13x.
+
+Judgement calls that could carry hindsight: continuing the comp series across the rename; treating the Orchard
+acquisition as adding nothing beyond the store counts; dating no fact from the SEC correspondence.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

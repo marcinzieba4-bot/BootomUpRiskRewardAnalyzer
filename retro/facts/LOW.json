@@ -7,14 +7,14 @@
    "filed": "2007-04-03 15:41 ET (during the session)",
    "title": "Lowe's Companies FY2006 10-K (annual report, exhibit 13)",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066707000052/exhibit13.htm",
-   "supports": "selected financial data 2002-2006 (diluted EPS from continuing operations, net sales), income statement 2004-2006 with percent of sales, 2006 diluted shares 1,566M, interest $154M, store opening costs $146M, effective tax rate 37.9%; cash $364M and short-term investments $432M; operating cash flow $4,502M, fixed assets acquired $3,916M; product-category sales 2004-2006; $1.5B repurchase authorization remaining; quarterly dividend increased in 2006 to $.05; 1,385 stores in 49 states, 157 million square feet; sales 'driven by housing turnover and activity level of home improvement projects'"
+   "supports": "selected financial data 2002-2006 (diluted EPS from continuing operations, net sales), income statement 2004-2006 with percent of sales, 2006 diluted shares 1,566M, interest $154M, store opening costs $146M, effective tax rate 37.9%; cash $364M and short-term investments $432M; operating cash flow $4,502M, fixed assets acquired $3,916M; product-category sales 2004-2006; $1.5B repurchase authorization remaining; quarterly dividend increased in 2006 to $.05; 1,385 stores in 49 states, 157 million square feet; sales 'driven by housing turnover and activity level of home improvement projects'; 2004 weighted average diluted shares 1,617M"
   },
   "L2": {
    "published": "2006-10-02",
    "filed": "2006-09-29 16:08 ET (after the close)",
    "title": "Lowe's Companies FY2005 10-K/A (restated for early payment discounts, split-adjusted)",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000141/lowesform10ka02032006.htm",
-   "supports": "selected financial data 2001-2005 restated and adjusted for the 2006 2-for-1 split: 2001 diluted EPS from continuing operations $0.61, net sales $21,714M"
+   "supports": "selected financial data 2001-2005 restated and adjusted for the 2006 2-for-1 split: 2001 diluted EPS from continuing operations $0.61, net sales $21,714M; 2003 weighted average diluted shares 1,631M (split-adjusted)"
   },
   "L3": {
    "published": "2005-04-14",
@@ -358,6 +358,90 @@
    "title": "Lowe's 8-K: two-for-one split and dividend increase approved on May 25, 2006",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000115/lowesform8k05252006.htm",
    "supports": "two-for-one split of the common shares approved by the Board on May 25, 2006; quarterly dividend $0.05 post-split"
+  },
+  "L74": {
+   "published": "2013-02-25",
+   "filed": "2013-02-25 08:18 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000018/exhibit991.htm",
+   "supports": "Q4 2012 (13 weeks) and fiscal 2012 (52 weeks) results (EPS $1.69, comparable store sales +1.4%, the 2011 extra week and the 2012 week shift), percent-of-sales income statement, inventory, cash, cash flow; a new $5 billion repurchase authorization; fiscal 2013 outlook (sales, comparable store sales, EBIT margin in bp, tax rate, EPS); no next-quarter outlook"
+  },
+  "L75": {
+   "published": "2013-04-02",
+   "filed": "2013-04-01 18:19 ET (after the close)",
+   "title": "Lowe's Companies FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000045/lowesform10k.htm",
+   "supports": "selected financial data 2008-2012, income statement 2010-2012 with percent of sales, 2012 diluted shares 1,152M, interest $423M, income tax provision $1,178M on pre-tax $3,137M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.35B repurchased in 2012, $5.0B authorization remaining, the 2013 guide assumes about $4 billion of repurchases; 2012 fourth-quarter dividend $0.16; comparable store sales renamed comparable sales (a comparable location open longer than 13 months); 1,754 stores in the U.S., Canada and Mexico, 197 million square feet"
+  },
+  "L76": {
+   "published": "2013-05-22",
+   "filed": "2013-05-22 08:26 ET (before the open)",
+   "title": "Lowe's Q1 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000064/exhibit991.htm",
+   "supports": "Q1 2013 results and the fiscal 2013 outlook (unchanged)"
+  },
+  "L77": {
+   "published": "2013-06-05",
+   "filed": "2013-06-04 16:50 ET (after the close)",
+   "title": "Lowe's Q1 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000093/lowesform10q.htm",
+   "supports": "'On May 31, 2013, the Board of Directors declared a quarterly cash dividend of $0.18 per share, which represents a 12.5% increase'"
+  },
+  "L78": {
+   "published": "2013-08-21",
+   "filed": "2013-08-21 08:21 ET (before the open)",
+   "title": "Lowe's Q2 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000113/exhibit991.htm",
+   "supports": "Q2 2013 results and the fiscal 2013 outlook (raised)"
+  },
+  "L79": {
+   "published": "2013-11-20",
+   "filed": "2013-11-20 08:24 ET (before the open)",
+   "title": "Lowe's Q3 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000160/exhibit991.htm",
+   "supports": "Q3 2013 results (store count including the hardware stores acquired from Orchard Supply) and the fiscal 2013 outlook (raised)"
+  },
+  "L80": {
+   "published": "2014-02-26",
+   "filed": "2014-02-26 08:49 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000019/exhibit991.htm",
+   "supports": "Q4 2013 and fiscal 2013 results (EPS $2.14, comparable sales +4.8%, $32M impairment charges in Q4), percent-of-sales income statement, inventory, cash, cash flow; an additional $5 billion repurchase authorization; fiscal 2014 outlook (sales, comparable sales, home improvement and hardware store openings, EBIT margin in bp, tax rate, EPS); no next-quarter outlook"
+  },
+  "L81": {
+   "published": "2014-04-01",
+   "filed": "2014-03-31 17:21 ET (after the close)",
+   "title": "Lowe's Companies FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000054/lowesform10k.htm",
+   "supports": "selected financial data 2009-2013, income statement 2011-2013 with percent of sales, 2013 diluted shares 1,061M, interest $476M, income tax provision $1,387M on pre-tax $3,673M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $3.7B repurchased in 2013, $6.3B authorization, the 2014 guide assumes about $3.4 billion of repurchases; 2013 fourth-quarter dividend $0.18; 1,832 home improvement and hardware stores (72 Orchard stores acquired 2013-08-30), approximately 200 million square feet"
+  },
+  "L82": {
+   "published": "2014-05-21",
+   "filed": "2014-05-21 09:00 ET (before the open)",
+   "title": "Lowe's Q1 2014 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000082/exhibit991.htm",
+   "supports": "Q1 2014 results (impairment charges $0.01, a tax settlement $0.04) and the fiscal 2014 outlook (EPS raised for the lower tax rate)"
+  },
+  "L83": {
+   "published": "2014-06-04",
+   "filed": "2014-06-03 17:16 ET (after the close)",
+   "title": "Lowe's Q1 2014 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000110/form10q.htm",
+   "supports": "'On May 30, 2014, the Board of Directors declared a quarterly cash dividend of $0.23 per share, which represents a 27.8% increase'"
+  },
+  "L84": {
+   "published": "2014-08-20",
+   "filed": "2014-08-20 08:34 ET (before the open)",
+   "title": "Lowe's Q2 2014 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000138/exhibit991.htm",
+   "supports": "Q2 2014 results and the fiscal 2014 outlook (sales lowered, EPS unchanged)"
+  },
+  "L85": {
+   "published": "2014-11-19",
+   "filed": "2014-11-19 08:13 ET (before the open)",
+   "title": "Lowe's Q3 2014 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000196/exhibit991.htm",
+   "supports": "Q3 2014 results and the fiscal 2014 outlook (raised)"
   }
  },
  "history_vintages": [
@@ -1608,6 +1692,362 @@
     ]
    ],
    "groups_basis": "FY11 product categories (FY2011 10-K)"
+  },
+  {
+   "published": "2013-04-02",
+   "sources": [
+    "L75",
+    "L71",
+    "L70",
+    "L51",
+    "L50",
+    "L9",
+    "L2",
+    "L67"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY12",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,754 stores in the U.S., Canada and Mexico with 197 million square feet, serving do-it-yourself, do-it-for-me and commercial business customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2003": "2004-01-30",
+    "2004": "2005-01-28",
+    "2005": "2006-02-03",
+    "2006": "2007-02-02",
+    "2007": "2008-02-01",
+    "2008": "2009-01-30",
+    "2009": "2010-01-29",
+    "2010": "2011-01-28",
+    "2011": "2012-02-03",
+    "2012": "2013-02-01"
+   },
+   "eps_gaap": {
+    "2003": 1.13,
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69
+   },
+   "eps_normalized": {
+    "2003": 1.12,
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69
+   },
+   "eps_published": {
+    "2003": "2008-04-02",
+    "2004": "2009-04-01",
+    "2005": "2010-03-31",
+    "2006": "2011-03-29",
+    "2007": "2012-04-03"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded",
+   "revenue_usd_b": {
+    "2003": 30.838,
+    "2004": 36.464,
+    "2005": 43.243,
+    "2006": 46.927,
+    "2007": 48.283,
+    "2008": 48.23,
+    "2009": 47.22,
+    "2010": 48.815,
+    "2011": 50.208,
+    "2012": 50.521
+   },
+   "diluted_shares_m": {
+    "2003": 1631.0,
+    "2012": 1152.0
+   },
+   "shares_published": {
+    "2003": "2006-10-02"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 7.05,
+    "EBIT margin": 7.05
+   },
+   "prev_fy_margins_note": "operating margin = gross margin less SG&A and depreciation 34.30 - 24.24 - 3.01 = 7.05%; EBIT margin = pre-tax + interest 6.21 + 0.84 = 7.05% (percent-of-sales column, FY2012 10-K)",
+   "prev_fy_gross_margin": 34.3,
+   "prev_fy_sales_growth": 0.6,
+   "prev_fy_comps": 1.4,
+   "prev_fy_stores": 1754,
+   "net_interest_b": 0.423,
+   "net_interest_note": "FY12 from L75",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.3755,
+   "tax_note": "FY12 effective rate (income tax provision $1,178M / pre-tax $3,137M)",
+   "fcf_b": 2.55,
+   "fcf_label": "FY12",
+   "prev_q_comps": 1.8,
+   "prev_q_label": "Q3 FY12",
+   "prev_q_source": "L67",
+   "dividend_annual": 0.64,
+   "dividend_note": "$0.16 quarterly (the fiscal 2012 fourth-quarter dividend, FY2012 10-K)",
+   "cash_return_text": "$5.0B repurchase authorization remaining; $4.35B repurchased in 2012; the 2013 guide assumes about $4B of repurchases",
+   "business_line": "Home improvement retailer: 1,754 stores in the United States, Canada and Mexico, 197 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Plumbing",
+     5.448,
+     0.9
+    ],
+    [
+     "Appliances",
+     5.21,
+     -2.5
+    ],
+    [
+     "Tools & Outdoor Power Equipment",
+     4.967,
+     4.6
+    ],
+    [
+     "Lawn & Garden",
+     4.39,
+     -0.5
+    ],
+    [
+     "Fashion Electrical",
+     4.049,
+     0.4
+    ],
+    [
+     "Lumber",
+     3.448,
+     5.9
+    ],
+    [
+     "Seasonal Living",
+     3.332,
+     2.9
+    ],
+    [
+     "Paint",
+     3.306,
+     2.7
+    ],
+    [
+     "Home Fashions, Storage & Cleaning",
+     3.026,
+     1.0
+    ],
+    [
+     "Flooring",
+     2.857,
+     0.0
+    ],
+    [
+     "Millwork",
+     2.791,
+     -3.7
+    ],
+    [
+     "Building Materials",
+     2.79,
+     -8.2
+    ],
+    [
+     "Hardware",
+     2.702,
+     0.4
+    ],
+    [
+     "Cabinets & Countertops",
+     1.817,
+     0.4
+    ],
+    [
+     "Other",
+     0.388,
+     45.3
+    ]
+   ],
+   "groups_basis": "FY12 product categories (FY2012 10-K)"
+  },
+  {
+   "published": "2014-04-01",
+   "sources": [
+    "L81",
+    "L75",
+    "L71",
+    "L70",
+    "L51",
+    "L50",
+    "L1",
+    "L79"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY13",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,832 home improvement and hardware stores in the U.S., Canada and Mexico with approximately 200 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2004": "2005-01-28",
+    "2005": "2006-02-03",
+    "2006": "2007-02-02",
+    "2007": "2008-02-01",
+    "2008": "2009-01-30",
+    "2009": "2010-01-29",
+    "2010": "2011-01-28",
+    "2011": "2012-02-03",
+    "2012": "2013-02-01",
+    "2013": "2014-01-31"
+   },
+   "eps_gaap": {
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14
+   },
+   "eps_normalized": {
+    "2004": 1.35,
+    "2005": 1.73,
+    "2006": 1.98,
+    "2007": 1.86,
+    "2008": 1.49,
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14
+   },
+   "eps_published": {
+    "2004": "2009-04-01",
+    "2005": "2010-03-31",
+    "2006": "2011-03-29",
+    "2007": "2012-04-03",
+    "2008": "2013-04-02"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded",
+   "revenue_usd_b": {
+    "2004": 36.464,
+    "2005": 43.243,
+    "2006": 46.927,
+    "2007": 48.283,
+    "2008": 48.23,
+    "2009": 47.22,
+    "2010": 48.815,
+    "2011": 50.208,
+    "2012": 50.521,
+    "2013": 53.417
+   },
+   "diluted_shares_m": {
+    "2004": 1617.0,
+    "2013": 1061.0
+   },
+   "shares_published": {
+    "2004": "2007-04-03"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 7.77,
+    "EBIT margin": 7.77
+   },
+   "prev_fy_margins_note": "operating margin = gross margin less SG&A and depreciation 34.59 - 24.08 - 2.74 = 7.77%; EBIT margin = pre-tax + interest 6.88 + 0.89 = 7.77% (percent-of-sales column, FY2013 10-K)",
+   "prev_fy_gross_margin": 34.59,
+   "prev_fy_sales_growth": 5.7,
+   "prev_fy_comps": 4.8,
+   "prev_fy_stores": 1832,
+   "net_interest_b": 0.476,
+   "net_interest_note": "FY13 from L81",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.3776,
+   "tax_note": "FY13 effective rate (income tax provision $1,387M / pre-tax $3,673M)",
+   "fcf_b": 3.17,
+   "fcf_label": "FY13",
+   "prev_q_comps": 6.2,
+   "prev_q_label": "Q3 FY13",
+   "prev_q_source": "L79",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 quarterly (the fiscal 2013 fourth-quarter dividend, FY2013 10-K)",
+   "cash_return_text": "$6.3B repurchase authorization ($1.3B remaining plus $5.0B added); $3.73B repurchased in 2013; the 2014 guide assumes about $3.4B of repurchases",
+   "business_line": "Home improvement retailer: 1,832 home improvement and hardware stores in the United States, Canada and Mexico, approximately 200 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Kitchens & Appliances",
+     7.57,
+     8.0
+    ],
+    [
+     "Lumber & Building Materials",
+     6.534,
+     4.9
+    ],
+    [
+     "Tools & Hardware",
+     5.865,
+     4.1
+    ],
+    [
+     "Fashion Fixtures",
+     5.27,
+     6.3
+    ],
+    [
+     "Rough Plumbing & Electrical",
+     4.799,
+     7.6
+    ],
+    [
+     "Lawn & Garden",
+     4.478,
+     2.0
+    ],
+    [
+     "Seasonal Living",
+     3.497,
+     5.0
+    ],
+    [
+     "Paint",
+     3.477,
+     5.1
+    ],
+    [
+     "Home Fashions, Storage & Cleaning",
+     3.154,
+     4.0
+    ],
+    [
+     "Flooring",
+     3.06,
+     7.1
+    ],
+    [
+     "Millwork",
+     2.919,
+     4.7
+    ],
+    [
+     "Outdoor Power Equipment",
+     2.224,
+     8.9
+    ],
+    [
+     "Other",
+     0.57,
+     18.0
+    ]
+   ],
+   "groups_basis": "FY13 product categories (FY2013 10-K)"
   }
  ],
  "prints": [
@@ -2738,6 +3178,383 @@
    "next_print": "Q4 FY12 print (late February)",
    "cash_return_text": "repurchases $3.64B year to date (cash flow statement)",
    "one_off_note": "Included in the above reported results are charges related to long-lived asset impairments, discontinued projects, and a change in the discount rate applied to self-insurance claims which, in the aggregate, reduced pre-tax earnings for the third quarter by $85 million and diluted earnings per share by $0.05. For the same period a year ago, reported results included charges related to store closings, long-lived asset impairments, and discontinued projects which, in the aggregate, reduced pre-tax earnings by $368 million and diluted earnings per share by $0.18. The week shift negatively impacted total sales by $62 million or 0.5 percent for the third quarter. For the nine month period, sales were $39.5 billion, a 2.3 percent increase over the same period a year ago. The week shift accounted for $192 million or 0.5 percent of the total sales increase for the nine month period. The week shift had an insignificant impact on diluted earnings per share in the third quarter. For the nine month period, the week shift contributed approximately $0.02 to diluted earnings per share."
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-02-25",
+   "source": "L74",
+   "release": "Feb 25",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:18 ET)",
+   "period_end": "2013-02-01",
+   "sales_b": 11.046,
+   "sales_pct": -5.0,
+   "comps_pct": 1.9,
+   "gross_margin": 34.27,
+   "gross_margin_bp": 5,
+   "gross_margin_note": "34.27% vs 34.22% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     5.11,
+     6
+    ],
+    "EBIT margin": [
+     5.11,
+     6
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.27 - 25.43 - 3.73 = 5.11% vs 5.05%); EBIT margin = pre-tax + interest (4.12 + 0.99 = 5.11% vs 5.05%)",
+   "inventory_pct": 2.9,
+   "inventory_gap_pp": 7.9,
+   "inventory_note": "merchandise inventory $8,600M vs $8,355M a year earlier (+2.9%), against net sales -5.0%",
+   "eps_q": 0.26,
+   "eps_q_prior": 0.26,
+   "diluted_shares_m": 1112.0,
+   "cash_b": 0.666,
+   "stores": 1754,
+   "sq_ft_m": 197.4,
+   "sq_ft_pct": null,
+   "dividend_q": 0.16,
+   "outlook_short": "We delivered solid results in the fourth quarter,",
+   "next_print": "Q1 FY13 print (mid-May)",
+   "cash_return_text": "repurchases $4.39B year to date (cash flow statement)",
+   "one_off_note": "The 53rd week contributed $766 million to sales and approximately $0.05 to diluted earnings per share in fourth quarter and fiscal year 2011. The quarterly comparisons in 2012 were also impacted by a week shift which negatively impacted sales by $119 million and diluted earnings per share by approximately $0.02 in the fourth quarter of 2012. For the fiscal year, the week shift had an insignificant impact on sales and diluted earnings per share.",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 1.69,
+    "revenue_usd_b": 50.521,
+    "diluted_shares_m": 1152.0,
+    "normalization_note": "FY12 = diluted EPS $1.69 as released; no one-off excluded",
+    "margins": {
+     "operating margin": 7.05,
+     "EBIT margin": 7.05
+    },
+    "margins_note": "FY12 operating margin 34.30 - 24.24 - 3.01 = 7.05%; EBIT margin 6.21 + 0.84 = 7.05% (percent-of-sales column)",
+    "gross_margin": 34.3,
+    "sales_growth": 0.6,
+    "stores": 1754,
+    "comps_pct": 1.4,
+    "comps_note": "For the fiscal year, comparable store sales increased 1.4 percent",
+    "net_interest_b": 0.423,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.3755,
+    "tax_note": "FY12 effective rate: income tax provision $1,178M / pre-tax earnings $3,137M",
+    "fcf_b": 2.55
+   }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-05-22",
+   "source": "L76",
+   "release": "May 22",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:26 ET)",
+   "period_end": "2013-05-03",
+   "sales_b": 13.088,
+   "sales_pct": -0.5,
+   "comps_pct": -0.7,
+   "gross_margin": 34.8,
+   "gross_margin_bp": 10,
+   "gross_margin_note": "34.80% vs 34.70% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.49,
+     25
+    ],
+    "EBIT margin": [
+     7.49,
+     25
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.80 - 24.62 - 2.69 = 7.49% vs 7.24%); EBIT margin = pre-tax + interest (6.63 + 0.86 = 7.49% vs 7.24%)",
+   "inventory_pct": 5.0,
+   "inventory_gap_pp": 5.5,
+   "inventory_note": "merchandise inventory $10,274M vs $9,786M a year earlier (+5.0%), against net sales -0.5%",
+   "eps_q": 0.49,
+   "eps_q_prior": 0.43,
+   "diluted_shares_m": 1090.0,
+   "cash_b": 1.199,
+   "stores": 1755,
+   "sq_ft_m": 197.5,
+   "sq_ft_pct": null,
+   "dividend_q": 0.16,
+   "outlook_short": "Results for indoor categories were solid for the quarter,",
+   "next_print": "Q2 FY13 print (mid-August)",
+   "cash_return_text": "repurchases $1.05B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-08-21",
+   "source": "L78",
+   "release": "Aug 21",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:21 ET)",
+   "period_end": "2013-08-02",
+   "sales_b": 15.711,
+   "sales_pct": 10.3,
+   "comps_pct": 9.6,
+   "gross_margin": 34.35,
+   "gross_margin_bp": 42,
+   "gross_margin_note": "34.35% vs 33.93% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.29,
+     121
+    ],
+    "EBIT margin": [
+     10.29,
+     121
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.35 - 21.73 - 2.33 = 10.29% vs 9.08%); EBIT margin = pre-tax + interest (9.59 + 0.70 = 10.29% vs 9.08%)",
+   "inventory_pct": 4.7,
+   "inventory_gap_pp": -5.6,
+   "inventory_note": "merchandise inventory $9,106M vs $8,699M a year earlier (+4.7%), against net sales +10.3%",
+   "eps_q": 0.88,
+   "eps_q_prior": 0.64,
+   "diluted_shares_m": 1068.0,
+   "cash_b": 1.274,
+   "stores": 1758,
+   "sq_ft_m": 197.7,
+   "sq_ft_pct": null,
+   "dividend_q": 0.18,
+   "outlook_short": "Home improvement demand was strong during the quarter,",
+   "next_print": "Q3 FY13 print (mid-November)",
+   "cash_return_text": "repurchases $2.03B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-11-20",
+   "source": "L79",
+   "release": "Nov 20",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:24 ET)",
+   "period_end": "2013-11-01",
+   "sales_b": 12.957,
+   "sales_pct": 7.3,
+   "comps_pct": 6.2,
+   "gross_margin": 34.58,
+   "gross_margin_bp": 26,
+   "gross_margin_note": "34.58% vs 34.32% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.14,
+     93
+    ],
+    "EBIT margin": [
+     7.14,
+     93
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.58 - 24.56 - 2.88 = 7.14% vs 6.21%); EBIT margin = pre-tax + interest (6.17 + 0.97 = 7.14% vs 6.21%)",
+   "inventory_pct": 6.6,
+   "inventory_gap_pp": -0.7,
+   "inventory_note": "merchandise inventory $9,593M vs $8,995M a year earlier (+6.6%), against net sales +7.3%",
+   "eps_q": 0.47,
+   "eps_q_prior": 0.35,
+   "diluted_shares_m": 1049.0,
+   "cash_b": 1.216,
+   "stores": 1831,
+   "sq_ft_m": 200.1,
+   "sq_ft_pct": null,
+   "dividend_q": 0.18,
+   "outlook_short": "I am pleased we delivered another solid quarter driven by balanced performance,",
+   "next_print": "Q4 FY13 print (late February)",
+   "cash_return_text": "repurchases $2.80B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2014-02-26",
+   "source": "L80",
+   "release": "Feb 26",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:49 ET)",
+   "period_end": "2014-01-31",
+   "sales_b": 11.66,
+   "sales_pct": 5.6,
+   "comps_pct": 3.9,
+   "gross_margin": 34.67,
+   "gross_margin_bp": 40,
+   "gross_margin_note": "34.67% vs 34.27% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     5.38,
+     27
+    ],
+    "EBIT margin": [
+     5.38,
+     27
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.67 - 26.12 - 3.17 = 5.38% vs 5.11%); EBIT margin = pre-tax + interest (4.28 + 1.10 = 5.38% vs 5.11%)",
+   "inventory_pct": 6.1,
+   "inventory_gap_pp": 0.5,
+   "inventory_note": "merchandise inventory $9,127M vs $8,600M a year earlier (+6.1%), against net sales +5.6%",
+   "eps_q": 0.29,
+   "eps_q_prior": 0.26,
+   "diluted_shares_m": 1037.0,
+   "cash_b": 0.576,
+   "stores": 1832,
+   "sq_ft_m": 200.1,
+   "sq_ft_pct": null,
+   "dividend_q": 0.18,
+   "outlook_short": "I am pleased with the progress we made throughout 2013,",
+   "next_print": "Q1 FY14 print (mid-May)",
+   "cash_return_text": "repurchases $3.71B year to date (cash flow statement)",
+   "one_off_note": "Included in the above reported results are charges related to long-lived asset impairments which reduced pre-tax earnings for the fourth quarter by $32 million and diluted earnings per share by $0.02. For the same period a year ago, reported results included charges related to long-lived asset impairments and discontinued projects which reduced pre-tax earnings by $8 million and had an insignificant impact on diluted earnings per share.",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 2.14,
+    "revenue_usd_b": 53.417,
+    "diluted_shares_m": 1061.0,
+    "normalization_note": "FY13 = diluted EPS $2.14 as released; no one-off excluded",
+    "margins": {
+     "operating margin": 7.77,
+     "EBIT margin": 7.77
+    },
+    "margins_note": "FY13 operating margin 34.59 - 24.08 - 2.74 = 7.77%; EBIT margin 6.88 + 0.89 = 7.77% (percent-of-sales column)",
+    "gross_margin": 34.59,
+    "sales_growth": 5.7,
+    "stores": 1832,
+    "comps_pct": 4.8,
+    "comps_note": "For the fiscal year, sales were $53.4 billion, a 5.7 percent increase over fiscal year 2012, and comparable sales increased 4.8 percent.",
+    "net_interest_b": 0.476,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.3776,
+    "tax_note": "FY13 effective rate: income tax provision $1,387M / pre-tax earnings $3,673M",
+    "fcf_b": 3.17
+   }
+  },
+  {
+   "quarter": "Q1 FY14",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-05-21",
+   "source": "L82",
+   "release": "May 21",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 09:00 ET)",
+   "period_end": "2014-05-02",
+   "sales_b": 13.403,
+   "sales_pct": 2.4,
+   "comps_pct": 0.9,
+   "gross_margin": 35.5,
+   "gross_margin_bp": 70,
+   "gross_margin_note": "35.50% vs 34.80% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.96,
+     47
+    ],
+    "EBIT margin": [
+     7.96,
+     47
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (35.50 - 24.76 - 2.78 = 7.96% vs 7.49%); EBIT margin = pre-tax + interest (7.03 + 0.93 = 7.96% vs 7.49%)",
+   "inventory_pct": 2.3,
+   "inventory_gap_pp": -0.1,
+   "inventory_note": "merchandise inventory $10,515M vs $10,274M a year earlier (+2.3%), against net sales +2.4%",
+   "eps_q": 0.61,
+   "eps_q_prior": 0.49,
+   "diluted_shares_m": 1017.0,
+   "cash_b": 0.768,
+   "stores": 1836,
+   "sq_ft_m": 200.7,
+   "sq_ft_pct": null,
+   "dividend_q": 0.18,
+   "outlook_short": "We executed well during the quarter, despite an unexpectedly prolonged winter in many areas of the country,",
+   "next_print": "Q2 FY14 print (mid-August)",
+   "cash_return_text": "repurchases $0.91B year to date (cash flow statement)",
+   "one_off_note": "Included in the above reported results are charges related to long-lived asset impairments, which reduced pre-tax earnings for the first quarter by $23 million and diluted earnings per share by $0.01. Also included in the above reported results is the impact of a lower tax rate in the first quarter. The lower tax rate, primarily the result of a settlement of prior year tax matters, contributed $0.04 to diluted earnings per share."
+  },
+  {
+   "quarter": "Q2 FY14",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-08-20",
+   "source": "L84",
+   "release": "Aug 20",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:34 ET)",
+   "period_end": "2014-08-01",
+   "sales_b": 16.599,
+   "sales_pct": 5.7,
+   "comps_pct": 4.4,
+   "gross_margin": 34.55,
+   "gross_margin_bp": 20,
+   "gross_margin_note": "34.55% vs 34.35% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.96,
+     67
+    ],
+    "EBIT margin": [
+     10.96,
+     67
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.55 - 21.33 - 2.26 = 10.96% vs 10.29%); EBIT margin = pre-tax + interest (10.20 + 0.76 = 10.96% vs 10.29%)",
+   "inventory_pct": 2.3,
+   "inventory_gap_pp": -3.4,
+   "inventory_note": "merchandise inventory $9,315M vs $9,106M a year earlier (+2.3%), against net sales +5.7%",
+   "eps_q": 1.04,
+   "eps_q_prior": 0.88,
+   "diluted_shares_m": 996.0,
+   "cash_b": 1.129,
+   "stores": 1837,
+   "sq_ft_m": 200.8,
+   "sq_ft_pct": null,
+   "dividend_q": 0.23,
+   "outlook_short": "We were able to recover most of the outdoor product sales missed in the first quarter due to unfavorable weather conditions,",
+   "next_print": "Q3 FY14 print (mid-November)",
+   "cash_return_text": "repurchases $2.05B year to date (cash flow statement)"
+  },
+  {
+   "quarter": "Q3 FY14",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-11-19",
+   "source": "L85",
+   "release": "Nov 19",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:13 ET)",
+   "period_end": "2014-10-31",
+   "sales_b": 13.681,
+   "sales_pct": 5.6,
+   "comps_pct": 5.1,
+   "gross_margin": 34.49,
+   "gross_margin_bp": -9,
+   "gross_margin_note": "34.49% vs 34.58% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.95,
+     81
+    ],
+    "EBIT margin": [
+     7.95,
+     81
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation (34.49 - 23.80 - 2.74 = 7.95% vs 7.14%); EBIT margin = pre-tax + interest (6.97 + 0.98 = 7.95% vs 7.14%)",
+   "inventory_pct": 1.8,
+   "inventory_gap_pp": -3.8,
+   "inventory_note": "merchandise inventory $9,762M vs $9,593M a year earlier (+1.8%), against net sales +5.6%",
+   "eps_q": 0.59,
+   "eps_q_prior": 0.47,
+   "diluted_shares_m": 980.0,
+   "cash_b": 1.773,
+   "stores": 1836,
+   "sq_ft_m": 200.7,
+   "sq_ft_pct": null,
+   "dividend_q": 0.23,
+   "outlook_short": "Our employees’ unwavering commitment to serving customers helped us achieve this quarter’s strong results,",
+   "next_print": "Q4 FY14 print (late February)",
+   "cash_return_text": "repurchases $2.95B year to date (cash flow statement)"
   }
  ],
  "guides": [
@@ -3836,6 +4653,218 @@
    "stores_guide": 10,
    "rev_guide_note": "about +2% on a 52 versus 52 week basis",
    "tax_rate_guide": 37.7
+  },
+  {
+   "fy": 2013,
+   "published": "2013-02-25",
+   "source": "L74",
+   "doc": "Q4 FY12 release",
+   "eps_guide": [
+    2.05,
+    2.05
+   ],
+   "rev_guide": [
+    4,
+    4
+   ],
+   "comps_guide": [
+    3.5,
+    3.5
+   ],
+   "op_margin_guide_bp": [
+    60,
+    60
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 60 basis points.",
+   "stores_guide": 10,
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2013,
+   "published": "2013-05-22",
+   "source": "L76",
+   "doc": "Q1 FY13 release",
+   "eps_guide": [
+    2.05,
+    2.05
+   ],
+   "rev_guide": [
+    4,
+    4
+   ],
+   "comps_guide": [
+    3.5,
+    3.5
+   ],
+   "op_margin_guide_bp": [
+    60,
+    60
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 60 basis points.",
+   "stores_guide": 10,
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2013,
+   "published": "2013-08-21",
+   "source": "L78",
+   "doc": "Q2 FY13 release",
+   "eps_guide": [
+    2.1,
+    2.1
+   ],
+   "rev_guide": [
+    5,
+    5
+   ],
+   "comps_guide": [
+    4.5,
+    4.5
+   ],
+   "op_margin_guide_bp": [
+    65,
+    65
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 65 basis points.",
+   "stores_guide": 10,
+   "tax_rate_guide": 37.9,
+   "eps_guide_note": "raised from $2.05"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-11-20",
+   "source": "L79",
+   "doc": "Q3 FY13 release",
+   "eps_guide": [
+    2.15,
+    2.15
+   ],
+   "rev_guide": [
+    6,
+    6
+   ],
+   "comps_guide": [
+    5,
+    5
+   ],
+   "op_margin_guide_bp": [
+    75,
+    75
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 75 basis points.",
+   "stores_guide": 9,
+   "tax_rate_guide": 37.8,
+   "eps_guide_note": "raised from $2.10"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-02-26",
+   "source": "L80",
+   "doc": "Q4 FY13 release",
+   "eps_guide": [
+    2.6,
+    2.6
+   ],
+   "rev_guide": [
+    5,
+    5
+   ],
+   "comps_guide": [
+    4,
+    4
+   ],
+   "op_margin_guide_bp": [
+    65,
+    65
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 65 basis points.",
+   "stores_guide": "15 home improvement and 5 hardware",
+   "tax_rate_guide": 38.1
+  },
+  {
+   "fy": 2014,
+   "published": "2014-05-21",
+   "source": "L82",
+   "doc": "Q1 FY14 release",
+   "eps_guide": [
+    2.63,
+    2.63
+   ],
+   "rev_guide": [
+    5,
+    5
+   ],
+   "comps_guide": [
+    4,
+    4
+   ],
+   "op_margin_guide_bp": [
+    65,
+    65
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 65 basis points.",
+   "stores_guide": "10 home improvement and 5 hardware",
+   "tax_rate_guide": 37.2,
+   "eps_guide_note": "raised from $2.60"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-08-20",
+   "source": "L84",
+   "doc": "Q2 FY14 release",
+   "eps_guide": [
+    2.63,
+    2.63
+   ],
+   "rev_guide": [
+    4.5,
+    4.5
+   ],
+   "comps_guide": [
+    3.5,
+    3.5
+   ],
+   "op_margin_guide_bp": [
+    65,
+    65
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase approximately 65 basis points.",
+   "stores_guide": "10 home improvement and 5 hardware",
+   "tax_rate_guide": 37.2
+  },
+  {
+   "fy": 2014,
+   "published": "2014-11-19",
+   "source": "L85",
+   "doc": "Q3 FY14 release",
+   "eps_guide": [
+    2.68,
+    2.68
+   ],
+   "rev_guide": [
+    4.5,
+    5
+   ],
+   "comps_guide": [
+    3.5,
+    4
+   ],
+   "op_margin_guide_bp": [
+    70,
+    75
+   ],
+   "margin_def": "EBIT margin",
+   "op_margin_guide_quote": "Earnings before interest and taxes as a percentage of sales (operating margin) are expected to increase 70 to 75 basis points.",
+   "stores_guide": "6 home improvement and 4 hardware",
+   "tax_rate_guide": 37.2,
+   "eps_guide_note": "raised from $2.63"
   }
  ],
  "dividends": [
@@ -3874,6 +4903,18 @@
    "source": "L73",
    "quarterly": 0.16,
    "note": "$0.16 quarterly declared 2012-06-01, first stated in the Q1 2012 10-Q"
+  },
+  {
+   "published": "2013-06-05",
+   "source": "L77",
+   "quarterly": 0.18,
+   "note": "$0.18 quarterly declared 2013-05-31, first stated in the Q1 2013 10-Q"
+  },
+  {
+   "published": "2014-06-04",
+   "source": "L83",
+   "quarterly": 0.23,
+   "note": "$0.23 quarterly declared 2014-05-30, first stated in the Q1 2014 10-Q"
   }
  ],
  "events": [],
