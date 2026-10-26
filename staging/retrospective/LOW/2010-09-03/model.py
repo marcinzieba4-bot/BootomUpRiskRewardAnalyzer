@@ -64,7 +64,7 @@ SOURCES = [
         "filed": "2005-04-13 16:37 ET (after the close)",
         "title": "Lowe's Companies FY2004 10-K (annual report, exhibit 13)",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066705000099/exhibit13.htm",
-        "supports": "selected financial data 2000-2004 restated for lease accounting: 2000 diluted EPS from continuing operations $1.02 (before the 2006 split), net sales $18,368M"
+        "supports": "selected financial data 2000-2004 restated for lease accounting: 2000 diluted EPS from continuing operations $1.02 (before the 2006 split), net sales $18,368M; 2002 weighted average diluted shares 810M (before the 2006 split)"
     },
     {
         "id": "L5",

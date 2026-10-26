@@ -1091,6 +1091,65 @@ Seen in the build (method behaviour, not tuned):
 Judgement calls that could carry hindsight: entering the analyst-conference outlooks as guides (they change only the
 document list and one EPS note); treating the 2009 impairment ceiling and the repurchase authorization as adding nothing.
 
+### LOW 2011-2012: a 53-week year, store closings, no more quarter guides
+
+```bash
+python3 retro/build_low.py --weekly 2011-01-03 2011-12-31                   # 52 dates, 2011-01-07 .. 2011-12-30
+python3 retro/build_low.py --weekly 2012-01-02 2012-12-31                   # 53 dates, 2012-01-06 .. 2012-12-31
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K, 10-K/A and earnings release of 2011 and 2012 was read by Sonnet 5.5 agents (818 strings
+checked with `verbatim.py`). Thresholds and signals are unchanged. Decided before any 2011 or 2012 date was built or scored:
+
+- **Two 10-K vintages.** FY2010 (accepted 2011-03-29 08:26 ET, before the open, dated that day; 2006-2010) and FY2011
+  (2012-04-02 16:59 ET, dated 2012-04-03; 2007-2011). The history moves to 2001-2010, then 2002-2011. First-year diluted
+  shares: 2001's 795M from the FY2003 10-K/A, 2002's 810M from the FY2004 10-K, both before the 2006 split. From the FY2010
+  10-K store opening costs sit inside SG&A with prior years reclassified; EBIT margin is unchanged by it. The FY2011 10-K/A
+  only corrects one XBRL tag: nothing.
+- **A 53-week year.** Fiscal 2011 ended 2012-02-03 (the Friday-nearest rule gives it). Its sales guides read "including the
+  53rd week", with the week's share in a second bullet: the published range stands and the week goes in the note (the ACN
+  "with and without an item" rule). The Q3 FY11 release guides Q4 sales "+8%, including the 14th week" (about 7 points of
+  it); that is the next-quarter guide, so BASE growth uses 8% on 2011-11-15 to 2012-02-24, as published.
+- **The store-closing 8-K of 2011-10-17** (items 2.05, 2.06, 8.01, accepted 09:13 ET, during the session) closes 20 stores
+  and says the $0.17 to $0.20 per share of charges "was not contemplated in the business outlook for fiscal 2011". It gives
+  no new range, so the August range ($1.48-1.54) stands with the 8-K's words in its note (the 2007-09-24 rule); the Q3 FY11
+  release's range, which includes the charges, replaces it on 2011-11-14. No hand adjustment is made.
+- **One-offs without an adjusted figure stay in** (the Fremont rule): Q2 FY11 $83M ($0.04), Q3 FY11 $336M ($0.17), $0.26 for
+  fiscal 2011, the 2012 headquarters charges ($0.01 a quarter), Q3 FY12 $85M ($0.05). No release or 10-K prints EPS
+  excluding them; the 2011 guides say they include them.
+- **No next-quarter outlook from the Q4 FY11 release (2012-02-27).** By the ACN FY08 fallback, BASE growth and the growth
+  factor use the fiscal-year sales guide. The 2012 guide gives sales as reported (+1-2%, then "approximately flat") and "on a
+  52 versus 52 week basis" (about +3%, +1%, +2%): the reported range stands, the 52-week figure goes in the note.
+- **A tax-rate guide** (2012: about 38.1%, then 37.9%, 37.8%, 37.7%) replaces the last year's rate in the EPS check, display
+  only (the ACN rule: the latest tax-rate guide). The guide line prints a point EPS guide ("approximately $1.64") as one
+  figure.
+- **A full-year comp in words.** The Q4 FY11 release says fiscal 2011 comparable sales "were essentially flat": 0.0, the
+  words in the note, as "flat" guides are encoded; the FY2011 10-K later prints 0.0%.
+- **Dividends,** each from the first filing that states it: $0.14 declared 2011-05-27 (Q1 2011 10-Q, accepted 2011-05-31
+  17:19 ET, dated 2011-06-01), $0.16 declared 2012-06-01 (Q1 2012 10-Q, accepted 2012-06-05 19:09 ET, dated 2012-06-06).
+- **Adds nothing:** the RONA proposal and its withdrawal (8-Ks of 2012-07-31 and 2012-09-17, after the close; no guided number
+  changed, guidance would be updated "if Lowe's moves forward"); the $5 billion repurchase authorization of 2011-08-19 (first
+  stated in a 10-Q) and the repurchase amounts the guides assume (no method input); depreciation and capex guides; the
+  credit facility, debt offering, officer, director and bylaw 8-Ks; the 10-Qs' outlook sections (they repeat the releases).
+- **Text-only change to 2008-2010:** two source descriptions (the FY2003 10-K/A and the FY2004 10-K) now also cite the 2001
+  and 2002 share counts the new vintages use. No number, class or tier changes.
+- **A harmless warning** on 13 dates (2012-05-22 to 2012-08-17): the year check reads `SHARES_DIL_B = 1.2080` as the year 2080.
+
+Seen in the build (method behaviour, not tuned):
+- **2011: CHEAP until the margin guide turned down.** The FY2011 guide's +30bp step put BASE at +7%/yr, gross margin and the
+  inventory gap scored BULL, and the proxy composite reached 2.35: CHEAP on 24 dates from 2011-02-24 to 2011-08-12 (FAIR on
+  2011-04-15). From the Q2 FY11 print the step turned to -30bp, then -80 to -90bp with the store closings: BASE -1% to -4%/yr,
+  RICH on 17 dates (CHEAP again on 2011-09-02, 09-09 and 09-30 at 12.5-12.8x). FAIR on the 7 January-February dates.
+- **2012: the +100bp guide.** From the Q4 FY11 print the FY2012 step (+100bp, then +90bp on a 6.53% base) and buybacks put
+  BASE at +16% to +17.5%/yr: CHEAP on 19 dates to 2012-08-17 (FAIR from 2012-03-30 to 2012-05-04). The Q2 FY12 guide cut the
+  step to +45bp and BASE to +9%/yr. As the price rose from $26 to $36 (16-22x, up to the 95th percentile) the class read RICH
+  on every date from 2012-08-21 and the tier AVOID from 2012-09-14, Ratio B climbing from 1.9x to 43x and `inf` on 2012-11-30
+  (the price above the BULL case). The eight January-February dates, still on the FY2011 guide, read RICH and AVOID as well.
+- **The EPP floor drops to 13x** from 2011-06-10.
+
+Judgement calls that could carry hindsight: reading "essentially flat" as 0.0; keeping the 14th-week quarter guide as
+published in BASE; treating the RONA proposal as adding nothing.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

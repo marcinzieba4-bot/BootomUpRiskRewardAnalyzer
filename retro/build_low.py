@@ -65,6 +65,11 @@ def fiscal_year(day):
     return d.year if d > fiscal_year_end(d.year - 1) else d.year - 1
 
 
+def eps_rng(lo, hi):
+    """an EPS guide: '1.75-1.85', or one figure for a point ('approximately $1.64')"""
+    return money(lo) if lo == hi else f"{money(lo)}-{money(hi)}"
+
+
 def pct_level(lo, hi):
     return f"{lo:g}%" if lo == hi else f"{lo:g}-{hi:g}%"
 
@@ -175,19 +180,24 @@ def build(as_of, facts, raw, spx, engine, out):
     so_label = ("inside EBIT margin" if mdef == "EBIT margin" else
                 f"store opening costs, {fy_now} guide" if gso else f"store opening costs, {h['fy_label']}")
     if guides:
-        bits = ([f"EPS ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
-               ([f"sales {pct_range(*gr['rev_guide'])}"] if gr else []) + \
+        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
+               ([f"sales {pct_range(*gr['rev_guide'])}" + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
                ([f"comps {pct_range(*gc['comps_guide'])}"] if gc else []) + \
                ([f"{gm['margin_def']} {bp_range(*gm['op_margin_guide_bp'])}" if "op_margin_guide_bp" in gm else
                  f"{gm['margin_def']} {pct_level(*gm['op_margin_guide_pct'])} of sales"] if gm else []) + \
                [f"{g['stores_guide']} stores" for g in [stated("stores_guide")] if g] + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"sales {pct_range(*q['sales'])}"] if "sales" in q else []) + ([f"comps {pct_range(*q['comps'])}"] if "comps" in q else []) +
-                   ([f"EPS ${money(q['eps'][0])}-{money(q['eps'][1])}"] if "eps" in q else []))] if q else []) + \
+                   ([f"EPS ${eps_rng(*q['eps'])}"] if "eps" in q else []))] if q else []) + \
                [f"in words: '{g['fy_words']}'" for g in [stated("fy_words")] if g]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     if not guides or not bits:
         guide_text = f"{fy_now}: no numeric guide yet; the {latest['quarter']} release in words: '{latest['outlook_short']}'"
+
+    # tax rate (display only, the EPS check): the latest tax-rate guide for the year (the ACN rule), else the last year's rate
+    gt = stated("tax_rate_guide")
+    tax_rate, tax_note = ((round(gt["tax_rate_guide"] / 100, 4), f"{fy_now} effective tax rate guide ({gt['doc']})") if gt else
+                          (h["tax_rate"], h["tax_note"]))
 
     # ── dividend: the latest declared rate ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
@@ -229,7 +239,7 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("A housing-led demand recession hits comps first; the bear needs it\n"
                 "  to reach gross margin and expense leverage as well.")
     theme_summary = "no disruption theme has dated evidence"
-    cat3 = (f"(3) {fy_now} EPS guide ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}"
+    cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])}"
             + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "") if ge else
             f"(3) A numeric {fy_now} guide — the {latest['quarter']} release gives words only ('{latest['outlook_short']}')")
     cat4 = (f"(4) Operating margin — {latest['op_margin']:.2f}% in {latest['quarter']} ({latest['op_margin_bp']:+d}bp): "
@@ -311,7 +321,7 @@ REVENUE_HIST  = {R(rev)}   # net sales, USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
 PREV_FY_MARGIN = {prev_margin}   # {mdef}, {h["fy_label"]}: {h["prev_fy_margins_note"]}
-TAX_RATE      = {h["tax_rate"]}   # {h["tax_note"]}
+TAX_RATE      = {tax_rate}   # {tax_note}
 NET_INTEREST_B = {h["net_interest_b"]}   # interest, net, {h["net_interest_note"]}
 STORE_OPENING_B = {store_opening_b:.3f}   # {so_label}
 CONS_DIVIDEND = {dividend:.2f}   # {dividend_note}
