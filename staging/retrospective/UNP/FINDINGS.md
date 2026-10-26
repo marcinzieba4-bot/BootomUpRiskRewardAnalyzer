@@ -1,10 +1,11 @@
 # UNP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 835 weekly dates from 2008-01-04 to 2023-12-29. They are **labels and
-hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
-point-in-time build was committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e,
-2010 in 3198278, 2011-2012 in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a, 2017-2018 in 50bd487, 2019-2020 in
-d349c70, 2021-2023 in 78b0995.
+Patterns seen in `outcome.json` for the 982 weekly dates from 2008-01-04 to 2026-10-23. The newest date has no
+outcome yet, and dates after 2024-10-18 have only part of the two-year horizon. They are **labels and hypotheses**:
+never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was
+committed: January-March 2008 in 68cbbb6, April-December 2008 in 0019904, 2009 in 4f3f27e, 2010 in 3198278, 2011-2012
+in 9e129f3, 2013-2014 in ee9a0c1, 2015-2016 in 798651a, 2017-2018 in 50bd487, 2019-2020 in d349c70, 2021-2023 in
+78b0995, 2024-2026 in 620fcfd. Prices run to 2026-10-23.
 
 ## 2008 (53 dates) Medians of an even count
 take the upper middle value (`statistics.median_high`). Prices are on each date's share basis (2-for-1 split
@@ -349,18 +350,56 @@ effective 2008-05-29).
   The price there ($213, +13% with dividends) was nearer the BEAR price ($155) than BASE ($273). Every 2023 date's
   two-year low stayed at least 1.20 times its BEAR price.
 
-## Across 2008-2023: the no-guide fallbacks are the open question
+## 2024 (52 dates; the 42 to 2024-10-18 have a two-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 32%/2-yr hurdle | Beat SPY (median excess) | Median m12-24 avg price |
+|---|---|---|---|---|---|---|
+| class RICH = legacy tier AVOID (one WATCHLIST) | 42 | +18% | -1% to +32% | 1 | 0 (-24pp) | +0% |
+
+- **Every date read RICH, and 41 of the 42 scored calls hit.** All of them lagged SPY, and only 2024-07-26 ($240, +32%)
+  cleared the hurdle. On a one-year horizon all 52 lagged SPY (median -3%, -19pp).
+- **The two-year points landed mostly near BULL from February on.** The stock fell to $208 in the April 2025 sell-off
+  (every date's two-year low, 1.32-1.42 times its BEAR price), then rose to $307-311 in July-August 2026. The best
+  entries were June-August 2024 (+18% to +32%); the worst were January-March 2024 ($238-257, -1% to +10%).
+
+## 2025 (52 dates; one-year horizon to 2025-10-17, no two-year outcome yet)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY (median excess) |
+|---|---|---|---|---|---|
+| class CHEAP (2025-04-04, 2025-04-25, 2025-09-12) | 3 | +28% | +17% to +35% | 3 | 1 (-2pp) |
+| class FAIR | 23 | +25% | +4% to +39% | 22 | 13 (+4pp) |
+| class RICH | 16 | +7% | -6% to +24% | 4 | 2 (-10pp) |
+| legacy tier ACCUMULATE | 16 | +28% | +16% to +39% | 16 | 7 (-2pp) |
+| legacy tier WATCHLIST | 16 | +24% | +3% to +39% | 13 | 9 (+2pp) |
+| legacy tier AVOID | 10 | +4% | -6% to +11% | 0 | 0 (-14pp) |
+
+- **Ranked in order at one year:** CHEAP > FAIR > RICH and ACCUMULATE > WATCHLIST > AVOID. 29 of the 42 dates cleared
+  the one-year hurdle (against one 2024 date at two years). The fourth CHEAP date (2025-10-24, $217) is up 25% at six
+  months.
+- **The cheap stretch was the low multiple again:** 19.2-21.6x FY24 EPS, the 40th-72nd percentile, mostly from the
+  April 2025 sell-off to November. It was not a fallback artefact (BASE +4% to +8%/yr). The RICH dates of January-March
+  (up to 22.4x, the 88th percentile) returned -6% to +11% at one year.
+
+## 2026 (43 dates; six-month horizon to 2026-04-17 only)
+
+- **Too early to score.** The 16 dates with a six-month outcome all rose (+12% to +34%). The three FAIR dates of January
+  (+26% to +34%) did better than the 13 RICH ones (+12% to +30%), but the 6-month window is one rally.
+- **To watch:** the FAIR dates of September-October 2026 sit at the 92nd-98th percentile on BASE growth of 16-19%/yr
+  from fuel-inflated freight revenue. In 2022 the same pattern (CHEAP and FAIR at the 74th-92nd percentile) returned
+  +7% to +19% while lagging SPY.
+
+## Across 2008-2024: the no-guide fallbacks are the open question
 
 UNP gave no numeric full-year guide from 2009 on, so three fallbacks did the work: the last full year's EPS stands,
 BASE growth takes the latest quarter's revenue growth, and there is no margin step. They anchored on the peak in
 2009, the trough in 2010, and last year's earnings while margins expanded in 2012. RICH set its line too low from
 2009 to 2012, was right from mid-2013 into 2015, and read RICH through the 2015-2016 trough and the 2017-2018 rise
-as well. 228 of the 650 RICH dates hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014, 36 in 2015, one in
-2018, 15 in 2019, 19 in 2020, 42 in 2021, 22 in 2022, 25 in 2023. In 2019 every RICH date lagged SPY, but most still
-cleared the hurdle; from 2021 almost none did.
+as well. 269 of the 692 RICH dates scored at two years hit (miss the hurdle and lag SPY): 24 in 2013, 44 in 2014,
+36 in 2015, one in 2018, 15 in 2019, 19 in 2020, 42 in 2021, 22 in 2022, 25 in 2023, 41 in 2024. In 2019 every RICH date
+lagged SPY, but most still cleared the hurdle; from 2021 almost none did.
 
 **CHEAP stopped paying in 2021-2023.** All 46 CHEAP dates of 2008-2020 cleared the hurdle; none of the 43 of 2021-2023
-did, and only the four of 2021 beat SPY. The ranking still held (CHEAP or FAIR above RICH in 2022 and 2023), so the class
+did, and only the four of 2021 beat SPY. The 2025 CHEAP dates cleared the one-year hurdle (two-year outcomes from 2027). The ranking still held (CHEAP or FAIR above RICH in 2022 and 2023), so the class
 ordered the dates, but its line sat too high for a stock that lagged the market for three years. From 2021 UNP gave
 numeric operating-ratio guides, and the guided margin step joined the latest-quarter revenue fallback in BASE. In 2021-2022
 that fallback carried a rebound quarter and fuel-surcharge-inflated quarters, which is what put CHEAP at the 74th-94th

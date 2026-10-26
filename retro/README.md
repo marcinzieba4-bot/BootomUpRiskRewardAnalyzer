@@ -302,12 +302,15 @@ python3 retro/build_unp.py --weekly 2020-01-06 2020-12-31                   # 52
 python3 retro/build_unp.py --weekly 2021-01-04 2021-12-31                   # 52 dates, 2021-01-08 .. 2021-12-31
 python3 retro/build_unp.py --weekly 2022-01-03 2022-12-31                   # 52 dates, 2022-01-07 .. 2022-12-30
 python3 retro/build_unp.py --weekly 2023-01-02 2023-12-31                   # 52 dates, 2023-01-06 .. 2023-12-29
+python3 retro/build_unp.py --weekly 2024-01-01 2024-12-29                   # 52 dates, 2024-01-05 .. 2024-12-27
+python3 retro/build_unp.py --weekly 2024-12-30 2025-12-28                   # 52 dates, 2025-01-03 .. 2025-12-26
+python3 retro/build_unp.py --weekly 2025-12-29 2026-10-25                   # 43 dates, 2026-01-02 .. 2026-10-23
 for d in staging/retrospective/UNP/2008-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series UNP
-python3 retro/tools/firewall.py 2024-01-01 UNP
+python3 retro/tools/firewall.py 2026-10-24 UNP
 ```
 
 Decided on 2026-10-23, before any UNP outcome was computed:
@@ -835,6 +838,89 @@ Seen in the build (method behaviour, not tuned):
 - **2023 reads CHEAP on the multiple.** With no margin step and BASE at 8.6-13.6%/yr, the class read CHEAP from 2023-01-25
   to 2023-07-07 (with two FAIR weeks) at 16.8-18.8x, the 18th-47th percentile. It turned RICH on 2023-07-14 as the price rose
   to $211 (the 48th percentile), and stayed RICH after the Q2 print's -5% freight revenue took BASE to -0.4%/yr.
+
+### UNP 2024-2026: guidance in words, adjusted figures, the Norfolk Southern merger
+
+Every 8-K, 10-Q, 10-K and release from 2024 to 2026-10-23 was read, with the 10-Qs searched in full for forward-looking
+statements. The 88 merger filings under Rule 425 (from 2025-07-29) were read too. Everything below was decided before
+any 2024-2026 date was built or scored:
+
+- **No numeric guide in any year.** The FY2023-FY2025 10-K Outlooks give words only and are not entered, as before. Every
+  release's outlook list is in words.
+  - Under the 2022 rule each item enters by its field. Volume words go to `fy_words` and operating-ratio words to
+    `op_ratio_guide_text`. EPS words go to `eps_guide_text`, a new field that is display only: it is shown in the guide
+    line, and no earlier guide has it.
+  - An item enters when its wording changes. An item repeated word for word adds nothing: the Q1 2025 list, all of
+    2024's later "Affirmed" items, and punctuation-only changes.
+  - Some items have no field. These are items that name no measure ("Profitability outlook gaining momentum"),
+    half-year or quarter statements ("Second half volume outlook", "Fourth quarter results expected to be consistent
+    sequentially"), and pricing, capital, repurchase and dividend items.
+- **EPS growth in words is not a range.** The 2025 list says "consistent with attaining the 3-year CAGR target of
+  high-single to low-double digit". The 2026 lists say "mid-single digit", later "Reported" (2026-04-23), then "increased
+  to high-single digit" (2026-07-23). These are words, not figures (the 2016 rule).
+  - So the last full year's EPS stands: FY23's $10.45 from 2024-01-26, FY24's $11.09 from 2025-01-24, and FY25's adjusted
+    $11.66 from 2026-01-28.
+  - BASE growth follows the latest quarter's freight revenue: +1% (Q4 2023), -1%, +1%, +4%, 0% (Q4 2024), +1%, +4%, +3%,
+    -1% (Q4 2025), +4%, +12%, +15%.
+  - The operating-ratio words ("Industry-leading operating ratio", then "Operating ratio improvement") are one-sided:
+    no margin step.
+- **The 2024 Investor Day** (8-K of 2024-09-19, before the open) gives three-year targets. Its volume statement (revenue
+  excluding fuel surcharge to grow faster than volume excluding coal, which will outpace the markets served) enters as
+  `fy_words` for 2025, its first year, as the 2018 and 2021 ones did. The Q4 2024 list replaces it on the day 2025
+  becomes the current year, so it shows only in the guide's document list. The EPS growth CAGR "in the high single to
+  low double digit range" is a three-year rate, not a current-year range.
+- **Company-adjusted figures from Q2 2025.** The releases exclude the Kansas deferred-tax benefit and crew staffing
+  agreements (Q2 2025: $3.03 and 58.1%, GAAP $3.15 and 59.0%), merger costs (Q3 2025: $3.08 and 58.5%; Q1-Q3 2026: $2.93,
+  $3.41, $3.53) and industrial park land sales (Q4 2025: $2.86 and 60.0%, GAAP $3.11). FY25 enters at the adjusted $11.66
+  and 59.3% (GAAP $11.98 and 59.8%).
+  - Its tax rate (23.2%, from the adjusted income taxes and net income) and net interest are on the same basis: the
+    adjusted other income of $379M excludes the $250M of land sales. This is the FY17 rule, and both are display only.
+- **When an adjusted figure first appears.** The Q4 2024 release names the $40M crew staffing expense but publishes no
+  adjusted figure.
+  - So Q4 2024 enters at GAAP $2.91 and 58.7%, and FY24 at GAAP $11.09.
+  - The adjusted FY24 $11.11 first appears in the Q4 2025 release (2026-01-27). It enters with the FY2025 vintage, the
+    Brazos rule.
+  - The Q2 2024 intermodal equipment sale and remediation order were published only as operating-ratio effects, so Q2
+    2024 stays GAAP.
+- **The signal takes the change the release publishes,** against the base it names, as in 2018 and 2021-2023. Q2 2025 is
+  measured against adjusted Q2 2024 (60.4%: -2.3 pt) and Q4 2025 against adjusted Q4 2024 (58.1%: +1.9 pt). Q2 and Q3
+  2026 are measured against adjusted 2025 (+1.1 pt and +0.3 pt).
+- **Dividends,** each from the first filing that states it, none announced by an 8-K:
+  - $1.34 (Q3 2024 release);
+  - $1.38 (Q3 2025 release; the Q2 2025 release's "dividend increase of 3%" states no rate);
+  - $1.42 (Q3 2026 release).
+- **Three 10-K vintages,** all filed during the session and dated that day: FY2023 (2024-02-09 13:56 ET), FY2024
+  (2025-02-07 12:12 ET) and FY2025 (2026-02-06 10:03 ET). Each year comes from the latest 10-K that reports it.
+  First-year diluted shares: 2014's 901.1M (FY2016 10-K), 2015's 869.4M (FY2017 10-K), 2016's 835.4M (FY2018 10-K).
+- **The Norfolk Southern merger adds nothing to the inputs.** The timeline:
+  - talks confirmed on 2025-07-24;
+  - agreement announced on 2025-07-29;
+  - shareholders approved on 2025-11-14;
+  - the STB application was filed on 2025-12-19;
+  - the Q3 2026 10-Q expects completion in the second half of 2027.
+  - The 425 filings give post-close synergy and accretion targets, and the proxy supplement (8-K of 2025-11-06) gives
+    projections prepared for the boards. Neither is a guide for UNP's current year.
+  - No merger shares are issued before close, so the share history and buyback rate are unchanged. The paused
+    repurchases show in the cash-return text.
+- **Adds nothing:**
+  - the Q3 2025 commentary 8-K (2025-09-10: quarter items and about $50M of merger costs);
+  - the accelerated share repurchase 8-K (2025-02-18);
+  - the President transition (2025-05-09) and CFO retirement (2026-10-16) 8-Ks;
+  - board, vote and debt 8-Ks;
+  - the 10-Qs (capital plan only).
+- **ISO weeks:** each batch runs from week 1 of its ISO year (2024-01-01, 2024-12-30, 2025-12-29) to its last trading day.
+  The last date is 2026-10-23, the day after the Q3 2026 print, built on 2026-10-26. Dates from late 2024 on have only
+  part of the two-year horizon, and the latest have no outcome.
+
+Seen in the build (method behaviour, not tuned):
+- **2024 reads RICH throughout.** All 52 dates were RICH at 21.2-24.6x (the 73rd-98th percentile) with BASE at -4.4% to
+  +8.4%/yr.
+- **2025 dips with the price.** The class went FAIR on 27 dates and CHEAP on 4 (2025-04-04, 2025-04-25, 2025-09-12,
+  2025-10-24), at 19.2-21.6x (the 40th-72nd percentile). It turned RICH again from 2025-11-28.
+- **Fuel-inflated freight revenue lifts BASE in 2026.** The Q4 2025 print's -1% set BASE at +2.8%/yr: RICH from
+  2026-01-28 at the 43rd percentile. The Q2 and Q3 2026 prints' +12% and +15% (high fuel prices) set it at +15.8% and
+  +18.8%/yr. So the class read FAIR on five dates from 2026-09-18 at 23.5-25.1x (the 92nd-98th percentile). This is
+  the 2022 pattern again.
 
 ## Categories change with the era
 
