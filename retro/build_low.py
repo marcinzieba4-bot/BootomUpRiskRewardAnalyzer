@@ -65,6 +65,10 @@ def fiscal_year(day):
     return d.year if d > fiscal_year_end(d.year - 1) else d.year - 1
 
 
+def pct_level(lo, hi):
+    return f"{lo:g}%" if lo == hi else f"{lo:g}-{hi:g}%"
+
+
 def bp_range(lo, hi):
     return f"{lo:+g}bp" if lo == hi else f"{lo:+g} to {hi:+g}bp"
 
@@ -132,7 +136,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
-    ge, gr, gc, gm = stated("eps_guide"), stated("rev_guide"), stated("comps_guide"), stated("op_margin_guide_bp")
+    ge, gr, gc = stated("eps_guide"), stated("rev_guide"), stated("comps_guide")
+    # a numeric margin guide is one field in either form: a change in basis points (op_margin_guide_bp) or a level in
+    # percent of sales (op_margin_guide_pct, a range; a point is lo = hi)
+    gm = next((g for g in reversed(guides) if "op_margin_guide_bp" in g or "op_margin_guide_pct" in g), None)
     # a next-quarter guide counts while its quarter is unreported
     qkey = lambda q: (int(q.split("FY")[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"] % 100, nq)
@@ -159,7 +166,8 @@ def build(as_of, facts, raw, spx, engine, out):
     margin_guided = bool(gm)
     mdef = gm["margin_def"] if gm else h["margin_def"]
     prev_margin = h["prev_fy_margins"][mdef]
-    fy_margin_base = round(prev_margin + sum(gm["op_margin_guide_bp"]) / 2 / 100, 3) if gm else prev_margin
+    fy_margin_base = (round(sum(gm["op_margin_guide_pct"]) / 2, 3) if gm and "op_margin_guide_pct" in gm else
+                      round(prev_margin + sum(gm["op_margin_guide_bp"]) / 2 / 100, 3) if gm else prev_margin)
     latest = {**latest, "op_margin": latest["margins"][mdef][0], "op_margin_bp": latest["margins"][mdef][1]}
     # the operating-margin definition leaves out store opening costs (guided, else last year's); EBIT margin includes them
     gso = stated("store_opening_m")
@@ -170,7 +178,8 @@ def build(as_of, facts, raw, spx, engine, out):
         bits = ([f"EPS ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
                ([f"sales {pct_range(*gr['rev_guide'])}"] if gr else []) + \
                ([f"comps {pct_range(*gc['comps_guide'])}"] if gc else []) + \
-               ([f"{gm['margin_def']} {bp_range(*gm['op_margin_guide_bp'])}"] if gm else []) + \
+               ([f"{gm['margin_def']} {bp_range(*gm['op_margin_guide_bp'])}" if "op_margin_guide_bp" in gm else
+                 f"{gm['margin_def']} {pct_level(*gm['op_margin_guide_pct'])} of sales"] if gm else []) + \
                [f"{g['stores_guide']} stores" for g in [stated("stores_guide")] if g] + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"sales {pct_range(*q['sales'])}"] if "sales" in q else []) + ([f"comps {pct_range(*q['comps'])}"] if "comps" in q else []) +
