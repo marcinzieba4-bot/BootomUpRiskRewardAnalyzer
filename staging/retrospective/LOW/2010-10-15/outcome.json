@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LOW",
+ "as_of": "2010-10-15",
+ "computed": "2026-10-26",
+ "data_source": "Yahoo Finance daily closes + dividends (LOW, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2011-04-15",
+   "price": 27.05,
+   "dividends": 0.22,
+   "total_return_pct": 26.5,
+   "benchmark_total_return_pct": 13.2,
+   "excess_pct": 13.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2011-10-14",
+   "price": 20.93,
+   "dividends": 0.47,
+   "total_return_pct": -0.7,
+   "benchmark_total_return_pct": 6.2,
+   "excess_pct": -7.0,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2012-10-15",
+   "price": 32.2,
+   "dividends": 1.05,
+   "total_return_pct": 54.2,
+   "benchmark_total_return_pct": 26.9,
+   "excess_pct": 27.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2013-10-15",
+   "price": 48.45,
+   "dividends": 1.71,
+   "total_return_pct": 132.7,
+   "benchmark_total_return_pct": 51.6,
+   "excess_pct": 81.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2012-10-15",
+   "price": 32.2
+  },
+  "low": {
+   "date": "2011-08-10",
+   "price": 18.11
+  },
+  "max_drawdown_pct": -33.6,
+  "return_to_avg_price_m12_m24_pct": 26.9
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Lowe's: home-improvement #2; DIY demand trough, guidance cut",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
