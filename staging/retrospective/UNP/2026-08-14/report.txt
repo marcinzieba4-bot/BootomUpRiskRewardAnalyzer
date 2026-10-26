@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $293.68  ·  RETROSPECTIVE as of 2026-08-14
+  Signal: ✕ AVOID   Ratio B: 2.34x   Adj gap: -0.53  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2026-08-14; latest print Q2 2026 (Jul 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E operating revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2026E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Industrial                $    10.1  $  10.1  $  10.6      +0.0      +0.5
+    +8% revenue in Q2
+  Bulk                      $     9.0  $   9.0  $   9.4      +0.0      +0.4
+    +7% revenue in Q2
+  Premium                   $     8.3  $   8.3  $   8.7      +0.0      +0.4
+    +21% revenue in Q2
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    27.4  $  27.4  $  28.7      +0.0      +1.3
+  FY2026E = FY25 $24.51B × (1 + 12.0%: no FY26 revenue guide, Q2 2026 freight revenue); split pro rata to six-month actuals freight revenue
+  Q2 2026 (Jul 23): freight revenue $6.52B +12%; carloads +2%, ARC $3,014 +9%;
+  operating ratio 59.2% (+1.1 pt); EPS $3.41 vs $3.03; GTMs/employee +6%
+  FY26 guide (Q4 2025 release, Q1 2026 release, Q2 2026 release): EPS in words: 'Reported earnings per share growth increased to high-single digit; consistent with attaining 3-year CAGR target of high-single to low-double digit through 2027.'; operating ratio: 'Operating ratio improvement; industry-leading operating ratio and return on invested capital'; full year in words: 'Meeting increased customer demand with strong service; mixed economic forecast.'
+
+  FY2026E EPS check:  ($27.4B × 40.7% − $0.93B net interest) × (1−23.2%) ÷ 0.594B  =  $13.22  (FY2026E: no numeric EPS guide yet, FY25's $11.66 stands $11.66)
+  FY2028E BEAR check: ($27.4B × 40.7% − interest) ÷ 0.549B  =  $14.29  (scenario $10.13)
+  FY2028E BULL check: ($28.7B × 41.1% − interest) ÷ 0.549B  =  $15.19  (scenario $15.64)
+  Every 1pp of operating margin ≈ $0.35 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     +2.0%  ▲ BULL  ███░
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%     +9.0%  ★ XBULL  ████
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%    +12.0%  ★ XBULL  ████
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     +6.0%  ★ XBULL  ████
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    +1.1pt  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.05 / 4.00
+  Market composite:   3.58 / 4.00  (back-solved from $294 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 3.05  →  Gap -0.53  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 operating ratio 59.3%, revenue +1% on carloads +1%; Q2 revenue per car +9%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 25.2x FY26E vs a 20.2x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY26 revenue guide, Q2 2026 freight revenue +12% vs a 1.1% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash $1.61B, FY25 free cash flow $2.29B, $26M of share repurchase programs in the first six months of 2026 (cash flow statement)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              +2.0%     -6.0%   -8.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth           +9.0%     -2.0%  -11.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth              +12.0%     -8.0%  -20.0%  Volume and price turn down together
+  GTMs per employee growth             +6.0%     -6.0%  -12.0%  Volume falls faster than crews are cut
+  Operating ratio change              +1.1pt    +2.0pt  +0.9pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$223  (model)  /  $183 (defined)
+  Bear probability (proxy model):  4.4%
+
+  KEY TRIGGER: carloads went from -1% (Q1 2026) to +2% (Q2 2026);
+  the bear case needs a volume recession that pricing (revenue per car +9% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $11.66  (FY2026E: no numeric EPS guide yet, FY25's $11.66 stands)
+  Min viable P/E at panic:          17x  [median of calendar-year P/E lows: 2016 17.3x, 2017 17.5x, 2018 15.7x, 2019 15.8x, 2020 13.9x, 2021 19.5x, 2022 16.6x, 2023 17.8x, 2024 19.9x, 2025 17.9x, 2026 19.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $198/share
+  Current $294 vs Updated EPP $198:  +48%  ⚠ far above floor — large drawdown room
+  Bear $183 vs Updated EPP $198:  -8%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0       -3.0   BASE floor (vs +2 now)
+  Avg revenue per car growth                   2.0       -7.0   BASE floor (vs +9 now)
+  Freight revenue growth                       1.0      -11.0   BASE floor (vs +12 now)
+  GTMs per employee growth                     0.0       -6.0   BASE floor (vs +6 now)
+  Operating ratio change                       0.0       -1.1   BASE floor (vs +1 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $11.66 × (1+13.8%)² = $15.11
+  At 20x P/E (conservative):  $302/share
+  + Cumul. dividends (2yr):  +$11.37/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $302  (▲8 from $294)
+  Conservative total return:  +7% over 2yr  = +3%/yr
+
+  13.8% EPS growth is what is left once the premium multiple (25.2x)
+  mean-reverts to 20x. Breakeven at 20x needs FY2028E EPS of $14.12,
+  i.e. 10.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $210.84  –  $315.99  (at 79th pct of range)
+  Annual dividend:      $5.52/share  (yield 1.9%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.27
+  1-sigma range (1yr):  $229  –  $358  ($294 ± 22%)
+  2-sigma range (1yr):  $164  –  $423
+  ────────────────────────────────────────────────────────────
+  Bear $183 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 0.3 beta: the stock is +37% off its September
+  low while carloads went from -1% (Q1 2026) to +2% (Q2 2026).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       10.13  18.1x  $    183     4.4%      1.9%    +2.5pp  EPS -6.8%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct
+  BASE       15.64  20.2x  $    316    15.2%      6.6%    +8.7pp  EPS +15.8%/yr (Q2 2026 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       15.64  21.8x  $    341    53.1%     22.9%   +30.3pp  EPS +15.8%/yr (FY16-FY25 CAGR); P/E holds its 75th pct
+  XBULL      18.19  22.9x  $    417    27.3%     68.7%   -41.4pp  EPS +24.9%/yr (best 2-yr run FY16-FY25); P/E at its 90th pct
+
+  Proxy EV (2yr): $351  /  Market EV: $389  /  Current: $294
+  Conservative EV (2yr, ④): $302 + $11.37 divs = $314 total value
+  Downside (→ Bear $183): 37.7%   Upside (→ Bull $341): 16.1%   Ratio B 2.34x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $294 the market needs $388 in two years —
+  above the BULL case. That is a market composite of 3.58 against a model
+  read of 3.05: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.34x     +48%    -0.53  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.58x     +48%    -0.07  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     5.23x     +48%    -0.88  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.83x     +48%    -0.37  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.10x     +48%    -0.72  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.34x     +48%    -0.23  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.34x     +26%    -0.43  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.34x     +48%    -0.07  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2026 print (late October) — the next read on carloads (+2% now) and the guide
+  (2) Revenue per car — +9% in Q2 2026: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY26 guide — the Q2 2026 release gives words only ('Meeting increased customer demand with strong service; mixed economic forecast')
+  (4) Operating ratio — 59.2% in Q2 2026 (+1.1 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 25x — management's own read of the multiple
+  ✕ AVOID  |  EPP floor $198  |  ADD below ~$269  |  TRIM above $341
+════════════════════════════════════════════════════════════════════════
+

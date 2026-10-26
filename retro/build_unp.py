@@ -184,7 +184,8 @@ def build(as_of, facts, raw, spx, engine, out):
         # each field from the latest guide that states it; a quarter's EPS guide while that quarter is unreported
         later = lambda q: (int(q[3:]), int(q[1])) > (latest["fy"], nq)
         gq = next((g["q_eps_guide"] for g in reversed(guides) if "q_eps_guide" in g and later(g["q_eps_guide"]["quarter"])), None)
-        bits = ([f"EPS ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
+        bits = ([f"EPS ${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else
+                [f"EPS in words: '{g['eps_guide_text']}'" for g in [stated("eps_guide_text")] if g]) + \
                ([f"{gr['rev_guide_label']} {pct_range(*gr['rev_guide'])}"] if gr else
                 [f"revenue in words ('{g['rev_guide_text']}')" for g in [stated("rev_guide_text")] if g]) + \
                ([f"volume {pct_range(*gv['volume_guide'])}"] if gv else []) + \

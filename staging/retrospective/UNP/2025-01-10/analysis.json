@@ -1,0 +1,274 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "UNP",
+ "company": "Union Pacific Corporation",
+ "as_of": "2025-01-10",
+ "price_date": "2025-01-10",
+ "price": 225.21,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); railroad signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "Union Pacific: the largest railroad in North America, covering 23 states across the western two-thirds of the US, with BNSF its main rail competitor on parallel routes; carload volume follows the industrial economy, the franchise does not. durable franchise (obsolescence risk 2/5); price fair; Ratio B 1.69x; +35% to EPP floor; model-vs-market gap -0.20; conservative 2yr +5%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.69,
+  "ratio_b_fmt": "1.69x",
+  "epp": 167.2,
+  "epp_gap_pct": 34.7,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.8,
+  "sca": 0.138,
+  "adj_composite": 2.938,
+  "market_composite": 3.14,
+  "adj_gap": -0.2,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 4.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 8.91,
+    "pe": 17.0,
+    "price": 151,
+    "desc": "EPS -7.7%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 12.29,
+    "pe": 19.9,
+    "price": 245,
+    "desc": "EPS +8.4%/yr (Q3 2024 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 12.29,
+    "pe": 21.9,
+    "price": 269,
+    "desc": "EPS +8.4%/yr (FY14-FY23 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 16.3,
+    "pe": 23.3,
+    "price": 380,
+    "desc": "EPS +24.9%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.69,
+   "epp_gap_pct": 34.7,
+   "adj_gap": -0.2,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 4.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.01,
+   "epp_gap_pct": 34.7,
+   "adj_gap": 0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 4.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 4.2,
+   "epp_gap_pct": 34.7,
+   "adj_gap": -0.42,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.34,
+   "epp_gap_pct": 34.7,
+   "adj_gap": -0.1,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 4.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.19,
+   "epp_gap_pct": 34.7,
+   "adj_gap": -0.29,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.69,
+   "epp_gap_pct": 34.7,
+   "adj_gap": 0.1,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 4.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.69,
+   "epp_gap_pct": 13.4,
+   "adj_gap": -0.2,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 4.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.69,
+   "epp_gap_pct": 34.7,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 4.8,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "UNP (retrospective, 2025-01-10) ◐ WATCHLIST — Ratio B 1.69x (33.0% downside to Bear $151 / +19.4% upside to Bull $269) | Adj composite 2.94 vs market 3.14: gap -0.20 [MODESTLY OVERVALUED] | +35% above the EPP floor $167 (16x FY24E $10.45) | Conservative 2-yr case: +4.8% total (+2.4%/yr) | At 21.6x FY24E the 15% hurdle price $298 sits above the BULL case; carloads +6% in Q3 2024, forward revenue +4% (no FY24 revenue guide, Q3 2024 freight revenue); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "U136",
+   "published": "2024-02-09",
+   "filed": "2024-02-09 13:56 ET (during the session)",
+   "title": "Union Pacific Corporation FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774924003599/unp20231231_10k.htm",
+   "supports": "income statement 2021-2023 (Item 6 reserved; diluted EPS 2021 $9.95, 2022 $11.21, 2023 $10.45; 2023 operating ratio 62.3%); 2023 diluted shares 610.2M, effective tax rate 22.5%, interest expense $1,340M, other income $491M, free cash flow $1,539M; 3,657,484 shares repurchased in 2023; competition (BNSF parallel routes); 2024 Outlook in words only"
+  },
+  {
+   "id": "U129",
+   "published": "2023-02-10",
+   "filed": "2023-02-10 09:42 ET (during the session)",
+   "title": "Union Pacific Corporation FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774923002959/unp20221231_10k.htm",
+   "supports": "income statement 2020-2022 (Item 6 reserved; diluted EPS 2020 $7.88, 2021 $9.95, 2022 $11.21; 2022 operating ratio 60.1%); 2022 diluted shares 624.0M, effective tax rate 22.9%, interest expense $1,271M, other income $426M, free cash flow $2,732M; 27,106,890 shares repurchased in 2022; competition (BNSF parallel routes); 2023 Outlook in words only"
+  },
+  {
+   "id": "U122",
+   "published": "2022-02-04",
+   "filed": "2022-02-04 15:59 ET (during the session)",
+   "title": "Union Pacific Corporation FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774922002494/unp20211231_10k.htm",
+   "supports": "income statement 2019-2021 (Item 6 reserved; diluted EPS 2019 $8.38, 2020 $7.88, 2021 $9.95; 2021 operating ratio 57.2%); 2021 diluted shares 655.4M, effective tax rate 23.1%, interest expense $1,157M, other income $297M, free cash flow $3,523M; 33,337,620 shares repurchased in 2021; competition (BNSF parallel routes); 2022 Outlook in words only (volume to outpace industrial production)"
+  },
+  {
+   "id": "U113",
+   "published": "2021-02-08",
+   "filed": "2021-02-05 16:35 ET (after the close)",
+   "title": "Union Pacific Corporation FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088521000068/unp-20201231x10k.htm",
+   "supports": "selected financial data 2016-2020 (diluted EPS 2016 $5.07, 2017 $13.36, 2018 $7.91, 2019 $8.38, 2020 $7.88; 2020 operating ratio 59.9%); 2020 diluted shares 679.1M, effective tax rate 23.4%, interest expense $1,141M, other income $287M, free cash flow $3,238M; 22,132,111 shares repurchased in 2020; competition (BNSF parallel routes); 2021 Outlook: volume up four to as high as six percent"
+  },
+  {
+   "id": "U106",
+   "published": "2020-02-07",
+   "filed": "2020-02-07 15:35 ET (during the session)",
+   "title": "Union Pacific Corporation FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088520000065/unp-20191231x10k.htm",
+   "supports": "selected financial data 2015-2019 (diluted EPS 2015 $5.49, 2016 $5.07, 2017 $13.36 GAAP, 2018 $7.91, 2019 $8.38; 2019 operating ratio 60.6%); 2019 diluted shares 706.1M, effective tax rate 23.6%, interest expense $1,050M, other income $243M, free cash flow $2,576M; 34,994,369 shares repurchased in 2019; competition (BNSF parallel routes); 2020 Outlook in words only (volume slightly positive, continued margin improvement)"
+  },
+  {
+   "id": "U98",
+   "published": "2019-02-08",
+   "filed": "2019-02-08 14:28 ET (during the session)",
+   "title": "Union Pacific Corporation FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088519000060/unp-20181231x10k.htm",
+   "supports": "selected financial data 2014-2018 (diluted EPS 2014 $5.75, 2015 $5.49, 2016 $5.07, 2017 $13.36 GAAP, 2018 $7.91; 2017 adjusted $5.79; operating ratios restated for ASU 2017-07, 2018 62.7%); 2018 diluted shares 754.3M, effective tax rate 22.9%, interest expense $870M, other income $94M, free cash flow $2,976M; 57,219,033 shares repurchased in 2018; competition (BNSF parallel routes); 2019 Outlook in words only (volume to grow in the low single digit range, continued margin improvement)"
+  },
+  {
+   "id": "U137",
+   "published": "2017-02-06",
+   "filed": "2017-02-03 16:13 ET (after the close)",
+   "title": "Union Pacific Corporation FY2016 10-K (earnings per share note)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088517000056/unp-20161231x10k.htm",
+   "supports": "2014 weighted-average diluted shares 901.1M, after the 2014 split (earnings per share note)"
+  },
+  {
+   "id": "U121",
+   "published": "2022-01-20",
+   "title": "Union Pacific Corporation Q4 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774922001269/ex_318217.htm",
+   "supports": "Q4 and full-year 2021 freight revenue statistics by business group, operating ratio, GTMs and average employees, diluted EPS ($9.95 for 2021) and shares, interest expense and other income, effective tax rate, cash, free cash flow ($3,523M), share repurchases (33.3 million in 2021); comparisons with adjusted Q4 and full-year 2020 (EPS $2.36 and $8.19, operating ratio 55.6% and 58.5%, excluding the Brazos yard impairment); Q4 2021 dividend declared $1.18"
+  },
+  {
+   "id": "U135",
+   "published": "2024-01-25",
+   "title": "Union Pacific Corporation Q4 2023 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774924002118/ex_606663.htm",
+   "supports": "Q4 and full-year 2023 freight revenue statistics by business group, operating ratio, GTMs and average employees, diluted EPS ($10.45 for 2023) and shares, interest expense and other income, effective tax rate, cash, free cash flow ($1,539M), share repurchases (3.5 million in 2023); 2024 outlook in words (volume muted, pricing dollars in excess of inflation dollars, no first quarter share repurchases)"
+  },
+  {
+   "id": "U138",
+   "published": "2024-04-25",
+   "title": "Union Pacific Corporation Q1 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774924013124/ex_634346.htm",
+   "supports": "Q1 2024 freight revenue statistics by business group, operating ratio, GTMs and average employees, diluted EPS and shares, cash, share repurchases (none in Q1 2024, cash flow statement); 2024 outlook updated in words (profitability outlook gaining momentum; restarting share repurchases in the second quarter)"
+  },
+  {
+   "id": "U139",
+   "published": "2024-07-25",
+   "title": "Union Pacific Corporation Q2 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774924023420/ex_675061.htm",
+   "supports": "Q2 2024 freight revenue statistics by business group, operating ratio, GTMs and average employees, diluted EPS and shares, cash, share repurchases (cash flow statement); the intermodal equipment sale (aided the operating ratio 70 basis points) and an environmental remediation compliance order (30 basis points); 2024 outlook updated in words (second half volume uncertain; share repurchases of ~$1.5 billion)"
+  },
+  {
+   "id": "U141",
+   "published": "2024-10-24",
+   "title": "Union Pacific Corporation Q3 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000143774924031962/ex_713315.htm",
+   "supports": "Q3 2024 freight revenue statistics by business group, operating ratio, GTMs and average employees, diluted EPS and shares, cash, share repurchases (cash flow statement); Q3 2024 dividend declared $1.34; 2024 outlook updated in words (fourth quarter results consistent sequentially with the third)"
+  },
+  {
+   "id": "U14",
+   "published": "2008-05-02",
+   "filed": "2008-05-01 20:24 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K ex.99.1: 2-for-1 stock split, additional share repurchase authorization and second quarter dividend",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312508099209/dex991.htm",
+   "supports": "two-for-one stock split distributed as a stock dividend; repurchase of a further 20 million shares (40 million post-split) by March 2011; quarterly dividend of 44 cents (22 cents post-split)"
+  },
+  {
+   "id": "U64",
+   "published": "2014-05-16",
+   "filed": "2014-05-15 23:43 ET (after the close)",
+   "title": "Union Pacific Corporation 8-K ex.99.1: 2-for-1 stock split and second quarter dividend",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000119312514201680/d730983dex991.htm",
+   "supports": "two-for-one stock split distributed as a stock dividend; quarterly dividend of 91 cents (45.5 cents post-split); 2014 capital spending plan raised to $4.1 billion"
+  },
+  {
+   "id": "U0",
+   "published": "2025-01-10",
+   "title": "Yahoo Finance daily prices, UNP and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/UNP/history",
+   "supports": "close $225.21 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-26"
+}

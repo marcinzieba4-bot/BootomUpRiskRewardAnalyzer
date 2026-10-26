@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNP  ·  Union Pacific Corporation  ·  $256.09  ·  RETROSPECTIVE as of 2024-08-30
+  Signal: ✕ AVOID   Ratio B: 55.02x   Adj gap: -1.37  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2024-08-30; latest print Q2 2024 (Jul 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E operating revenue, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Commodity group              FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Industrial                $     9.1  $   9.1  $   9.2      +0.0      +0.1
+    +2% revenue in Q2
+  Bulk                      $     7.7  $   7.7  $   7.7      +0.0      +0.0
+    -2% revenue in Q2
+  Premium                   $     7.6  $   7.6  $   7.6      +0.0      +0.0
+    +4% revenue in Q2
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    24.4  $  24.4  $  24.5      +0.0      +0.1
+  FY2024E = FY23 $24.12B × (1 + 1.0%: no FY24 revenue guide, Q2 2024 freight revenue); split pro rata to six-month actuals freight revenue
+  Q2 2024 (Jul 25): freight revenue $5.64B +1%; carloads +0%, ARC $2,768 +1%;
+  operating ratio 60.0% (-3.0 pt); EPS $2.74 vs $2.57; GTMs/employee +5%
+  FY24 guide (Q4 2023 release): full year in words: 'Volume outlook muted by international intermodal business loss, lower coal demand, and soft economic conditions'
+
+  FY2024E EPS check:  ($24.4B × 37.7% − $0.85B net interest) × (1−22.5%) ÷ 0.610B  =  $10.60  (FY2024E: no numeric EPS guide yet, FY23's $10.45 stands $10.45)
+  FY2026E BEAR check: ($24.4B × 37.7% − interest) ÷ 0.557B  =  $11.61  (scenario $8.91)
+  FY2026E BULL check: ($24.5B × 38.1% − interest) ÷ 0.557B  =  $11.80  (scenario $11.93)
+  Every 1pp of operating margin ≈ $0.31 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue carloads growth             -6.0%   ≥-1.0%    ≥2.0%    ≥4.0%     +0.0%  ◦ BASE  ██░░
+  Avg revenue per car growth          -2.0%    ≥2.0%    ≥4.0%    ≥7.0%     +1.0%  ⚠ BEAR  █░░░
+  Freight revenue growth              -8.0%    ≥1.0%    ≥6.0%   ≥11.0%     +1.0%  ◦ BASE  ██░░
+  GTMs per employee growth            -6.0%    ≥0.0%    ≥3.0%    ≥6.0%     +5.0%  ▲ BULL  ███░
+  Operating ratio change             +2.0pt   ≤0.0pt  ≤-1.0pt  ≤-2.5pt    -3.0pt  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.25 / 4.00
+  Market composite:   3.60 / 4.00  (back-solved from $256 + 15% hurdle)
+  SCA adjustment:    +0.08  ·  EPP-distance adj -0.10  →  Adj composite 2.23  →  Gap -1.37  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 operating ratio 62.3%, revenue -3% on carloads -1%; Q2 revenue per car +1%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 24.5x FY24E vs a 19.8x 10-yr median (97th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY24 revenue guide, Q2 2024 freight revenue +1% vs a -3.0% 9-yr median  (+0.40 × 20%  =  +0.080)
+    +  Cash $1.14B, FY23 free cash flow $1.54B, $100M of share repurchase programs in the first six months of 2024 (cash flow statement); share repurchases of ~$1.5 billion in 2024  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Revenue carloads growth              +0.0%     -6.0%   -6.0%  Recession cuts industrial, intermodal…
+  Avg revenue per car growth           +1.0%     -2.0%   -3.0%  Fuel surcharges reverse and repricing…
+  Freight revenue growth               +1.0%     -8.0%   -9.0%  Volume and price turn down together
+  GTMs per employee growth             +5.0%     -6.0%  -11.0%  Volume falls faster than crews are cut
+  Operating ratio change              -3.0pt    +2.0pt  +5.0pt  Fixed costs and the fuel-surcharge la…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$176  (model)  /  $151 (defined)
+  Bear probability (proxy model):  13.8%
+
+  KEY TRIGGER: carloads went from -1% (Q1 2024) to +0% (Q2 2024);
+  the bear case needs a volume recession that pricing (revenue per car +1% now)
+  no longer covers. A demand recession hits carloads first; the bear needs it
+  to reach pricing and the operating ratio as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $10.45  (FY2024E: no numeric EPS guide yet, FY23's $10.45 stands)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2014 17.1x, 2015 13.7x, 2016 13.6x, 2017 17.5x, 2018 15.7x, 2019 15.8x, 2020 13.9x, 2021 19.5x, 2022 16.6x, 2023 17.8x, 2024 21.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $167/share
+  Current $256 vs Updated EPP $167:  +53%  ⚠ far above floor — large drawdown room
+  Bear $151 vs Updated EPP $167:  -10%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Revenue carloads growth                     -1.0       -1.0   BASE floor (vs +0 now)
+  Avg revenue per car growth                   2.0       +1.0   BASE floor (vs +1 now)
+  Freight revenue growth                       1.0       +0.0   BASE floor (vs +1 now)
+  GTMs per employee growth                     0.0       -5.0   BASE floor (vs +5 now)
+  Operating ratio change                       0.0       +3.0   BASE floor (vs -3 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $10.45 × (1+3.4%)² = $11.18
+  At 19x P/E (conservative):  $212/share
+  + Cumul. dividends (2yr):  +$10.71/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $212  (▼44 from $256)
+  Conservative total return:  -13% over 2yr  = -6%/yr
+
+  3.4% EPS growth is what is left once the premium multiple (24.5x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2026E EPS of $12.91,
+  i.e. 11.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $199.33  –  $258.66  (at 96th pct of range)
+  Annual dividend:      $5.20/share  (yield 2.0%)
+  Realized vol (1yr):   18% annualized
+  Beta vs broad market: 0.62
+  1-sigma range (1yr):  $211  –  $301  ($256 ± 18%)
+  2-sigma range (1yr):  $166  –  $346
+  ────────────────────────────────────────────────────────────
+  Bear $151 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  A Class I railroad with a 0.6 beta: the stock is +28% off its October
+  low while carloads went from -1% (Q1 2024) to +0% (Q2 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        8.91  17.0x  $    151    13.8%      1.8%   +12.0pp  EPS -7.7%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE       11.61  19.8x  $    230    48.3%      6.3%   +42.0pp  EPS +5.4%/yr (Q2 2024 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       11.93  21.6x  $    258    31.8%     21.8%   +10.0pp  EPS +6.9%/yr (FY14-FY23 CAGR); P/E holds its 75th pct
+  XBULL      16.30  23.2x  $    378     6.0%     70.1%   -64.1pp  EPS +24.9%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct
+
+  Proxy EV (2yr): $237  /  Market EV: $338  /  Current: $256
+  Conservative EV (2yr, ④): $212 + $10.71 divs = $223 total value
+  Downside (→ Bear $151): 41.0%   Upside (→ Bull $258): 0.7%   Ratio B 55.02x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $256 the market needs $339 in two years —
+  above the BULL case. That is a market composite of 3.60 against a model
+  read of 2.23: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      55.02x     +53%    -1.37  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.40x     +53%    -1.10  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +53%    -1.54  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         11.23x     +53%    -1.27  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +53%    -1.49  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)            55.02x     +53%    -1.07  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                55.02x     +29%    -1.27  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                   55.02x     +53%    -1.10  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2024 print (late October) — the next read on carloads (+0% now) and the guide
+  (2) Revenue per car — +1% in Q2 2024: price and fuel surcharge, what must hold if volume does not
+  (3) A numeric FY24 guide — the Q2 2024 release gives words only ('Second half volume outlook remains uncertain based on continued weak economic indicators and coal demand')
+  (4) Operating ratio — 60.0% in Q2 2024 (-3.0 pt): where the fuel-surcharge lag and fixed costs would show first
+  (5) Buyback pace at 25x — management's own read of the multiple
+  ✕ AVOID  |  EPP floor $167  |  ADD below ~$196  |  TRIM above $258
+════════════════════════════════════════════════════════════════════════
+
