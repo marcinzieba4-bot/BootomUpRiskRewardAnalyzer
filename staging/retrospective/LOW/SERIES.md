@@ -161,108 +161,108 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2010-12-17 | $25.17 | Lowe's Q3 2010 results | 2.20 | -0.15 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +46.8% | +27.4pp | +16.0% | ✗ |
 | 2010-12-23 | $25.52 | Lowe's Q3 2010 results | 2.20 | -0.19 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +41.6% | +23.4pp | +15.1% | ✗ |
 | 2010-12-31 | $25.08 | Lowe's Q3 2010 results | 2.20 | -0.13 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +43.9% | +28.0pp | +17.7% | ✗ |
-| 2011-01-07 | $23.99 | Lowe's Q3 2010 results | 2.20 | +0.02 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-01-14 | $25.00 | Lowe's Q3 2010 results | 2.20 | -0.16 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-01-21 | $25.01 | Lowe's Q3 2010 results | 2.20 | -0.16 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-01-28 | $25.25 | Lowe's Q3 2010 results | 2.20 | -0.19 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-04 | $24.71 | Lowe's Q3 2010 results | 2.20 | -0.11 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-11 | $25.09 | Lowe's Q3 2010 results | 2.20 | -0.18 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-18 | $26.30 | Lowe's Q3 2010 results | 2.20 | -0.34 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-02-24 | $25.11 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.48 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-03-04 | $26.24 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.31 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-03-11 | $26.94 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.23 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-03-18 | $26.20 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.33 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-03-25 | $27.19 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.20 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-04-01 | $26.74 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.23 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-04-08 | $26.82 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.21 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-04-15 | $27.05 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.19 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2011-04-21 | $26.67 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.24 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2011-04-29 | $26.25 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.29 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-05-06 | $25.64 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.38 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-05-13 | $25.76 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.36 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-05-17 | $24.75 | Lowe's Q1 2011 results | 1.65 | -0.30 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-05-27 | $24.25 | Lowe's Q1 2011 results | 1.65 | -0.30 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-06-03 | $23.40 | Lowe's Q1 2011 results | 1.65 | -0.19 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-06-10 | $22.26 | Lowe's Q1 2011 results | 1.65 | -0.05 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-06-17 | $22.83 | Lowe's Q1 2011 results | 1.65 | -0.11 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-06-24 | $23.25 | Lowe's Q1 2011 results | 1.65 | -0.17 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-07-01 | $23.82 | Lowe's Q1 2011 results | 1.65 | -0.25 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-07-08 | $23.61 | Lowe's Q1 2011 results | 1.65 | -0.22 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-07-15 | $22.86 | Lowe's Q1 2011 results | 1.65 | -0.12 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-07-22 | $22.62 | Lowe's Q1 2011 results | 1.65 | -0.09 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-07-29 | $21.58 | Lowe's Q1 2011 results | 1.65 | +0.02 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-08-05 | $20.15 | Lowe's Q1 2011 results | 1.65 | +0.35 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-08-12 | $19.51 | Lowe's Q1 2011 results | 1.65 | +0.40 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-08-16 | $20.09 | Lowe's Q2 2011 results | 1.30 | -0.50 | 0.38x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2011-08-26 | $20.24 | Lowe's Q2 2011 results | 1.30 | -0.52 | 0.40x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2011-09-02 | $18.94 | Lowe's Q2 2011 results | 1.30 | -0.14 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-09-09 | $18.96 | Lowe's Q2 2011 results | 1.30 | -0.20 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-09-16 | $20.38 | Lowe's Q2 2011 results | 1.30 | -0.61 | 0.41x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2011-09-23 | $19.74 | Lowe's Q2 2011 results | 1.30 | -0.52 | 0.35x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2011-09-30 | $19.34 | Lowe's Q2 2011 results | 1.30 | -0.25 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2011-10-07 | $20.34 | Lowe's Q2 2011 results | 1.30 | -0.60 | 0.40x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2011-10-14 | $20.93 | Lowe's Q2 2011 results | 1.30 | -0.67 | 0.46x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2011-10-21 | $22.13 | Lowe's Q2 2011 results | 1.30 | -0.79 | 0.59x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2011-10-28 | $21.37 | Lowe's Q2 2011 results | 1.30 | -0.71 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2011-11-04 | $21.54 | Lowe's Q2 2011 results | 1.30 | -0.73 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2011-11-11 | $23.11 | Lowe's Q2 2011 results | 1.30 | -0.89 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-11-15 | $23.20 | Lowe's Q3 2011 results | 1.50 | -0.90 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-11-25 | $22.68 | Lowe's Q3 2011 results | 1.50 | -0.81 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2011-12-02 | $24.31 | Lowe's Q3 2011 results | 1.50 | -1.06 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-12-09 | $24.97 | Lowe's Q3 2011 results | 1.50 | -1.15 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-12-16 | $25.02 | Lowe's Q3 2011 results | 1.50 | -1.18 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-12-23 | $25.27 | Lowe's Q3 2011 results | 1.50 | -1.31 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2011-12-30 | $25.38 | Lowe's Q3 2011 results | 1.50 | -1.33 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-01-06 | $26.34 | Lowe's Q3 2011 results | 1.50 | -1.46 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-01-13 | $26.32 | Lowe's Q3 2011 results | 1.50 | -1.46 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-01-20 | $26.53 | Lowe's Q3 2011 results | 1.50 | -1.49 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-01-27 | $26.91 | Lowe's Q3 2011 results | 1.50 | -1.54 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-02-03 | $27.20 | Lowe's Q3 2011 results | 1.50 | -1.57 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-02-10 | $27.09 | Lowe's Q3 2011 results | 1.50 | -1.56 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-02-17 | $27.68 | Lowe's Q3 2011 results | 1.50 | -1.64 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-02-24 | $27.16 | Lowe's Q3 2011 results | 1.50 | -1.58 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-02-28 | $27.71 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.43 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-03-09 | $29.77 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.18 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-03-16 | $30.41 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.08 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2012-03-23 | $30.74 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.02 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2012-03-30 | $31.38 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.07 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2012-04-05 | $31.35 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.08 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-04-13 | $31.69 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.15 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-04-20 | $31.65 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.13 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-04-27 | $31.61 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.13 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-05-04 | $31.09 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.05 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2012-05-11 | $29.62 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.23 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-05-18 | $28.48 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.35 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-05-22 | $25.49 | Lowe's Q1 2012 results | 1.95 | +0.42 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-06-01 | $26.36 | Lowe's Q1 2012 results | 1.95 | +0.36 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-06-08 | $27.92 | Lowe's Q1 2012 results | 1.95 | +0.21 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-06-15 | $28.05 | Lowe's Q1 2012 results | 1.95 | +0.19 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-06-22 | $27.31 | Lowe's Q1 2012 results | 1.95 | +0.28 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-06-29 | $28.44 | Lowe's Q1 2012 results | 1.95 | +0.14 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-07-06 | $27.85 | Lowe's Q1 2012 results | 1.95 | +0.22 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-07-13 | $26.72 | Lowe's Q1 2012 results | 1.95 | +0.34 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-07-20 | $25.79 | Lowe's Q1 2012 results | 1.95 | +0.40 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-07-27 | $27.07 | Lowe's Q1 2012 results | 1.95 | +0.31 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-08-03 | $25.49 | Lowe's Q1 2012 results | 1.95 | +0.42 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-08-10 | $26.77 | Lowe's Q1 2012 results | 1.95 | +0.33 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-08-17 | $27.87 | Lowe's Q1 2012 results | 1.95 | +0.20 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2012-08-21 | $26.43 | Lowe's Q2 2012 results | 1.60 | -0.76 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2012-08-31 | $28.48 | Lowe's Q2 2012 results | 1.60 | -1.21 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-09-07 | $28.32 | Lowe's Q2 2012 results | 1.60 | -1.17 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-09-14 | $29.40 | Lowe's Q2 2012 results | 1.60 | -1.37 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-09-21 | $30.19 | Lowe's Q2 2012 results | 1.60 | -1.58 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-09-28 | $30.24 | Lowe's Q2 2012 results | 1.60 | -1.59 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-10-05 | $31.77 | Lowe's Q2 2012 results | 1.60 | -1.79 | 3.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-10-12 | $31.18 | Lowe's Q2 2012 results | 1.60 | -1.72 | 2.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-10-19 | $32.64 | Lowe's Q2 2012 results | 1.60 | -1.86 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-10-26 | $31.36 | Lowe's Q2 2012 results | 1.60 | -1.74 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-11-02 | $33.15 | Lowe's Q2 2012 results | 1.60 | -1.94 | 4.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-11-09 | $31.47 | Lowe's Q2 2012 results | 1.60 | -1.78 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-11-16 | $31.98 | Lowe's Q2 2012 results | 1.60 | -1.83 | 3.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-11-20 | $34.45 | Lowe's Q3 2012 results | 2.00 | -1.69 | 12.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-11-30 | $36.09 | Lowe's Q3 2012 results | 2.00 | -1.86 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-12-07 | $35.11 | Lowe's Q3 2012 results | 2.00 | -1.75 | 22.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-12-14 | $34.46 | Lowe's Q3 2012 results | 2.00 | -1.69 | 12.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-12-21 | $35.04 | Lowe's Q3 2012 results | 2.00 | -1.75 | 20.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-12-28 | $34.98 | Lowe's Q3 2012 results | 2.00 | -1.74 | 19.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-12-31 | $35.52 | Lowe's Q3 2012 results | 2.00 | -1.80 | 42.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2011-01-07 | $23.99 | Lowe's Q3 2010 results | 2.20 | +0.02 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +49.5% | +30.2pp | +23.8% | ✗ |
+| 2011-01-14 | $25.00 | Lowe's Q3 2010 results | 2.20 | -0.16 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +45.5% | +27.4pp | +19.5% | ✗ |
+| 2011-01-21 | $25.01 | Lowe's Q3 2010 results | 2.20 | -0.16 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.5% | +32.5pp | +20.0% | ✗ |
+| 2011-01-28 | $25.25 | Lowe's Q3 2010 results | 2.20 | -0.19 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +56.4% | +34.5pp | +19.8% | ✗ |
+| 2011-02-04 | $24.71 | Lowe's Q3 2010 results | 2.20 | -0.11 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +58.2% | +39.8pp | +23.3% | ✗ |
+| 2011-02-11 | $25.09 | Lowe's Q3 2010 results | 2.20 | -0.18 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +60.3% | +42.0pp | +22.4% | ✗ |
+| 2011-02-18 | $26.30 | Lowe's Q3 2010 results | 2.20 | -0.34 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +53.2% | +35.9pp | +17.6% | ✗ |
+| 2011-02-24 | $25.11 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.48 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +54.6% | +34.3pp | +23.8% | ✓ |
+| 2011-03-04 | $26.24 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.31 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.8% | +31.1pp | +19.3% | ✓ |
+| 2011-03-11 | $26.94 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.23 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +51.5% | +27.9pp | +17.0% | ✓ |
+| 2011-03-18 | $26.20 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.33 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.3% | +26.4pp | +21.0% | ✓ |
+| 2011-03-25 | $27.19 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.20 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +44.4% | +22.0pp | +17.1% | ✓ |
+| 2011-04-01 | $26.74 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.23 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +44.6% | +23.0pp | +19.5% | ✓ |
+| 2011-04-08 | $26.82 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.21 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +49.6% | +27.7pp | +19.7% | ✓ |
+| 2011-04-15 | $27.05 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.19 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +44.4% | +22.5pp | +19.2% | ✗ |
+| 2011-04-21 | $26.67 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.24 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +46.8% | +26.3pp | +21.2% | ✓ |
+| 2011-04-29 | $26.25 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.29 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.3% | +29.3pp | +23.8% | ✓ |
+| 2011-05-06 | $25.64 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.38 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.8% | +39.0pp | +27.3% | ✓ |
+| 2011-05-13 | $25.76 | Lowe's Q4 and fiscal 2010 results | 2.35 | +0.36 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +68.1% | +41.7pp | +27.6% | ✓ |
+| 2011-05-17 | $24.75 | Lowe's Q1 2011 results | 1.65 | -0.30 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +77.3% | +47.5pp | +33.7% | ✓ |
+| 2011-05-27 | $24.25 | Lowe's Q1 2011 results | 1.65 | -0.30 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +80.8% | +52.6pp | +37.9% | ✓ |
+| 2011-06-03 | $23.40 | Lowe's Q1 2011 results | 1.65 | -0.19 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +86.2% | +55.7pp | +44.1% | ✓ |
+| 2011-06-10 | $22.26 | Lowe's Q1 2011 results | 1.65 | -0.05 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.4% | +56.7pp | +52.7% | ✓ |
+| 2011-06-17 | $22.83 | Lowe's Q1 2011 results | 1.65 | -0.11 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +86.5% | +52.9pp | +50.1% | ✓ |
+| 2011-06-24 | $23.25 | Lowe's Q1 2011 results | 1.65 | -0.17 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +74.8% | +46.2pp | +48.4% | ✓ |
+| 2011-07-01 | $23.82 | Lowe's Q1 2011 results | 1.65 | -0.25 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +77.4% | +52.4pp | +46.0% | ✓ |
+| 2011-07-08 | $23.61 | Lowe's Q1 2011 results | 1.65 | -0.22 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +89.3% | +62.9pp | +48.3% | ✓ |
+| 2011-07-15 | $22.86 | Lowe's Q1 2011 results | 1.65 | -0.12 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +96.6% | +64.4pp | +54.6% | ✓ |
+| 2011-07-22 | $22.62 | Lowe's Q1 2011 results | 1.65 | -0.09 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +103.0% | +72.6pp | +57.9% | ✓ |
+| 2011-07-29 | $21.58 | Lowe's Q1 2011 results | 1.65 | +0.02 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +107.0% | +72.0pp | +67.2% | ✓ |
+| 2011-08-05 | $20.15 | Lowe's Q1 2011 results | 1.65 | +0.35 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +131.8% | +84.6pp | +81.0% | ✓ |
+| 2011-08-12 | $19.51 | Lowe's Q1 2011 results | 1.65 | +0.40 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +141.1% | +92.8pp | +88.8% | ✓ |
+| 2011-08-16 | $20.09 | Lowe's Q2 2011 results | 1.30 | -0.50 | 0.38x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +125.0% | +81.3pp | +84.8% | ✗ |
+| 2011-08-26 | $20.24 | Lowe's Q2 2011 results | 1.30 | -0.52 | 0.40x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +138.3% | +92.5pp | +85.7% | ✗ |
+| 2011-09-02 | $18.94 | Lowe's Q2 2011 results | 1.30 | -0.14 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +148.5% | +104.5pp | +100.1% | ✓ |
+| 2011-09-09 | $18.96 | Lowe's Q2 2011 results | 1.30 | -0.20 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +152.5% | +102.7pp | +101.6% | ✓ |
+| 2011-09-16 | $20.38 | Lowe's Q2 2011 results | 1.30 | -0.61 | 0.41x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +135.9% | +91.3pp | +89.3% | ✗ |
+| 2011-09-23 | $19.74 | Lowe's Q2 2011 results | 1.30 | -0.52 | 0.35x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +145.7% | +90.6pp | +97.3% | ✗ |
+| 2011-09-30 | $19.34 | Lowe's Q2 2011 results | 1.30 | -0.25 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +152.6% | +98.6pp | +103.2% | ✓ |
+| 2011-10-07 | $20.34 | Lowe's Q2 2011 results | 1.30 | -0.60 | 0.40x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +138.4% | +88.4pp | +94.9% | ✗ |
+| 2011-10-14 | $20.93 | Lowe's Q2 2011 results | 1.30 | -0.67 | 0.46x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +139.5% | +94.9pp | +91.0% | ✗ |
+| 2011-10-21 | $22.13 | Lowe's Q2 2011 results | 1.30 | -0.79 | 0.59x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +122.8% | +77.1pp | +82.1% | ✗ |
+| 2011-10-28 | $21.37 | Lowe's Q2 2011 results | 1.30 | -0.71 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +140.5% | +98.6pp | +90.2% | ✗ |
+| 2011-11-04 | $21.54 | Lowe's Q2 2011 results | 1.30 | -0.73 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +137.0% | +91.1pp | +90.0% | ✗ |
+| 2011-11-11 | $23.11 | Lowe's Q2 2011 results | 1.30 | -0.89 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +118.0% | +73.1pp | +78.5% | ✗ |
+| 2011-11-15 | $23.20 | Lowe's Q3 2011 results | 1.50 | -0.90 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +128.7% | +80.9pp | +79.2% | ✗ |
+| 2011-11-25 | $22.68 | Lowe's Q3 2011 results | 1.50 | -0.81 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +116.2% | +55.6pp | +84.7% | ✗ |
+| 2011-12-02 | $24.31 | Lowe's Q3 2011 results | 1.50 | -1.06 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.9% | +48.3pp | +73.2% | ✗ |
+| 2011-12-09 | $24.97 | Lowe's Q3 2011 results | 1.50 | -1.15 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.4% | +47.5pp | +69.5% | ✗ |
+| 2011-12-16 | $25.02 | Lowe's Q3 2011 results | 1.50 | -1.18 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +93.5% | +41.6pp | +70.2% | ✗ |
+| 2011-12-23 | $25.27 | Lowe's Q3 2011 results | 1.50 | -1.31 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.6% | +47.1pp | +69.5% | ✗ |
+| 2011-12-30 | $25.38 | Lowe's Q3 2011 results | 1.50 | -1.33 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +99.1% | +47.5pp | +69.6% | ✗ |
+| 2012-01-06 | $26.34 | Lowe's Q3 2011 results | 1.50 | -1.46 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.1% | +40.2pp | +64.2% | ✗ |
+| 2012-01-13 | $26.32 | Lowe's Q3 2011 results | 1.50 | -1.46 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.7% | +43.7pp | +65.4% | ✗ |
+| 2012-01-20 | $26.53 | Lowe's Q3 2011 results | 1.50 | -1.49 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.0% | +40.9pp | +64.9% | ✗ |
+| 2012-01-27 | $26.91 | Lowe's Q3 2011 results | 1.50 | -1.54 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.3% | +43.3pp | +63.2% | ✗ |
+| 2012-02-03 | $27.20 | Lowe's Q3 2011 results | 1.50 | -1.57 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.5% | +38.2pp | +62.1% | ✗ |
+| 2012-02-10 | $27.09 | Lowe's Q3 2011 results | 1.50 | -1.56 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.1% | +36.3pp | +63.3% | ✗ |
+| 2012-02-17 | $27.68 | Lowe's Q3 2011 results | 1.50 | -1.64 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.6% | +35.9pp | +60.3% | ✗ |
+| 2012-02-24 | $27.16 | Lowe's Q3 2011 results | 1.50 | -1.58 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.7% | +39.0pp | +63.9% | ✗ |
+| 2012-02-28 | $27.71 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.43 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.3% | +45.2pp | +61.4% | ✓ |
+| 2012-03-09 | $29.77 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.18 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +73.8% | +32.3pp | +51.0% | ✓ |
+| 2012-03-16 | $30.41 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.08 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +65.8% | +30.0pp | +48.5% | ✓ |
+| 2012-03-23 | $30.74 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.02 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +64.5% | +26.4pp | +47.7% | ✓ |
+| 2012-03-30 | $31.38 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.07 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +60.1% | +23.6pp | +45.2% | ✗ |
+| 2012-04-05 | $31.35 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.08 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +58.7% | +20.6pp | +46.1% | ✗ |
+| 2012-04-13 | $31.69 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.15 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +50.3% | +13.1pp | +45.0% | ✓ |
+| 2012-04-20 | $31.65 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.13 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +52.0% | +12.1pp | +45.7% | ✓ |
+| 2012-04-27 | $31.61 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.13 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +51.0% | +13.6pp | +46.5% | ✓ |
+| 2012-05-04 | $31.09 | Lowe's Q4 and fiscal 2011 results | 2.10 | -0.05 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +55.5% | +13.3pp | +49.4% | ✓ |
+| 2012-05-11 | $29.62 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.23 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +58.9% | +15.4pp | +57.1% | ✓ |
+| 2012-05-18 | $28.48 | Lowe's Q4 and fiscal 2011 results | 2.10 | +0.35 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +64.0% | +14.0pp | +63.6% | ✓ |
+| 2012-05-22 | $25.49 | Lowe's Q1 2012 results | 1.95 | +0.42 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +89.3% | +40.8pp | +82.9% | ✓ |
+| 2012-06-01 | $26.36 | Lowe's Q1 2012 results | 1.95 | +0.36 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +83.8% | +28.2pp | +77.3% | ✓ |
+| 2012-06-08 | $27.92 | Lowe's Q1 2012 results | 1.95 | +0.21 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +76.0% | +24.2pp | +67.8% | ✓ |
+| 2012-06-15 | $28.05 | Lowe's Q1 2012 results | 1.95 | +0.19 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +66.9% | +17.7pp | +67.5% | ✓ |
+| 2012-06-22 | $27.31 | Lowe's Q1 2012 results | 1.95 | +0.28 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +73.5% | +21.5pp | +72.4% | ✓ |
+| 2012-06-29 | $28.44 | Lowe's Q1 2012 results | 1.95 | +0.14 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.5% | +22.6pp | +66.0% | ✓ |
+| 2012-07-06 | $27.85 | Lowe's Q1 2012 results | 1.95 | +0.22 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +78.1% | +26.7pp | +69.8% | ✓ |
+| 2012-07-13 | $26.72 | Lowe's Q1 2012 results | 1.95 | +0.34 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.6% | +32.7pp | +77.3% | ✓ |
+| 2012-07-20 | $25.79 | Lowe's Q1 2012 results | 1.95 | +0.40 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.7% | +40.7pp | +84.0% | ✓ |
+| 2012-07-27 | $27.07 | Lowe's Q1 2012 results | 1.95 | +0.31 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +81.5% | +33.9pp | +75.5% | ✓ |
+| 2012-08-03 | $25.49 | Lowe's Q1 2012 results | 1.95 | +0.42 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +92.3% | +49.2pp | +86.7% | ✓ |
+| 2012-08-10 | $26.77 | Lowe's Q1 2012 results | 1.95 | +0.33 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +91.1% | +49.0pp | +78.0% | ✓ |
+| 2012-08-17 | $27.87 | Lowe's Q1 2012 results | 1.95 | +0.20 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +84.5% | +42.0pp | +71.3% | ✓ |
+| 2012-08-21 | $26.43 | Lowe's Q2 2012 results | 1.60 | -0.76 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +104.7% | +59.1pp | +81.0% | ✗ |
+| 2012-08-31 | $28.48 | Lowe's Q2 2012 results | 1.60 | -1.21 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.4% | +42.3pp | +68.5% | ✗ |
+| 2012-09-07 | $28.32 | Lowe's Q2 2012 results | 1.60 | -1.17 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.1% | +52.0pp | +69.9% | ✗ |
+| 2012-09-14 | $29.40 | Lowe's Q2 2012 results | 1.60 | -1.37 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.0% | +45.1pp | +64.1% | ✗ |
+| 2012-09-21 | $30.19 | Lowe's Q2 2012 results | 1.60 | -1.58 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.9% | +41.5pp | +60.2% | ✗ |
+| 2012-09-28 | $30.24 | Lowe's Q2 2012 results | 1.60 | -1.59 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.6% | +38.2pp | +60.3% | ✗ |
+| 2012-10-05 | $31.77 | Lowe's Q2 2012 results | 1.60 | -1.79 | 3.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.2% | +33.9pp | +52.9% | ✗ |
+| 2012-10-12 | $31.18 | Lowe's Q2 2012 results | 1.60 | -1.72 | 2.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.8% | +38.5pp | +56.2% | ✗ |
+| 2012-10-19 | $32.64 | Lowe's Q2 2012 results | 1.60 | -1.86 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.3% | +28.9pp | +49.4% | ✗ |
+| 2012-10-26 | $31.36 | Lowe's Q2 2012 results | 1.60 | -1.74 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.2% | +37.2pp | +55.8% | ✗ |
+| 2012-11-02 | $33.15 | Lowe's Q2 2012 results | 1.60 | -1.94 | 4.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.1% | +29.6pp | +47.8% | ✗ |
+| 2012-11-09 | $31.47 | Lowe's Q2 2012 results | 1.60 | -1.78 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.1% | +35.8pp | +56.2% | ✗ |
+| 2012-11-16 | $31.98 | Lowe's Q2 2012 results | 1.60 | -1.83 | 3.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.9% | +32.9pp | +54.1% | ✗ |
+| 2012-11-20 | $34.45 | Lowe's Q3 2012 results | 2.00 | -1.69 | 12.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.6% | +32.8pp | +43.6% | ✗ |
+| 2012-11-30 | $36.09 | Lowe's Q3 2012 results | 2.00 | -1.86 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.0% | +30.3pp | +37.9% | ✗ |
+| 2012-12-07 | $35.11 | Lowe's Q3 2012 results | 2.00 | -1.75 | 22.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.0% | +38.0pp | +42.8% | ✗ |
+| 2012-12-14 | $34.46 | Lowe's Q3 2012 results | 2.00 | -1.69 | 12.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.6% | +46.2pp | +46.5% | ✗ |
+| 2012-12-21 | $35.04 | Lowe's Q3 2012 results | 2.00 | -1.75 | 20.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.2% | +45.5pp | +45.1% | ✗ |
+| 2012-12-28 | $34.98 | Lowe's Q3 2012 results | 2.00 | -1.74 | 19.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.3% | +43.3pp | +46.2% | ✗ |
+| 2012-12-31 | $35.52 | Lowe's Q3 2012 results | 2.00 | -1.80 | 42.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.2% | +46.4pp | +44.4% | ✗ |
