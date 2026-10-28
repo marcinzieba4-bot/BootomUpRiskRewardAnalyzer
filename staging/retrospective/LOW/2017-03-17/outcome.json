@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LOW",
+ "as_of": "2017-03-17",
+ "computed": "2026-10-28",
+ "data_source": "Yahoo Finance daily closes + dividends (LOW, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2017-09-15",
+   "price": 77.99,
+   "dividends": 0.76,
+   "total_return_pct": -5.7,
+   "benchmark_total_return_pct": 6.2,
+   "excess_pct": -11.9,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2018-03-16",
+   "price": 87.0,
+   "dividends": 1.58,
+   "total_return_pct": 6.0,
+   "benchmark_total_return_pct": 17.7,
+   "excess_pct": -11.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2019-03-15",
+   "price": 100.14,
+   "dividends": 3.43,
+   "total_return_pct": 24.0,
+   "benchmark_total_return_pct": 22.9,
+   "excess_pct": 1.0,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2020-03-17",
+   "price": 73.79,
+   "dividends": 5.56,
+   "total_return_pct": -5.0,
+   "benchmark_total_return_pct": 12.8,
+   "excess_pct": -17.8,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2018-09-21",
+   "price": 116.84
+  },
+  "low": {
+   "date": "2017-07-20",
+   "price": 72.56
+  },
+  "max_drawdown_pct": -26.4,
+  "return_to_avg_price_m12_m24_pct": 16.1
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Lowe's: home-improvement #2; DIY demand trough, guidance cut",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
