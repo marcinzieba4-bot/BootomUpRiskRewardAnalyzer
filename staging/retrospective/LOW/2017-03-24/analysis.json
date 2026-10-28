@@ -1,0 +1,303 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LOW",
+ "company": "Lowe's Companies, Inc.",
+ "as_of": "2017-03-24",
+ "price_date": "2017-03-24",
+ "price": 82.21,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); home-improvement retail signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Lowe's: the world's second largest home improvement retailer, 1,857 home improvement and hardware stores in the U.S., Canada and Mexico with approximately 202 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+  "theme_watch": [
+   {
+    "theme": "ECOMMERCE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Lowe's own FY2015 10-K says 'We face growing competition from online and multi-channel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability or price using digital tools.' At the same time it sells online itself: 'In 2015, sales through our online selling channels accounted for approximately 3% of our total sales.'. The stock trades at 17.7x FY17E — near its own median. Re-file as DISRUPTION_EXPOSED (ECOMMERCE) only if dated evidence shows the market pricing online substitution of Lowe's store sales specifically."
+   }
+  ],
+  "evidence": [
+   "L93"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Lowe's: the world's second largest home improvement retailer, 1,857 home improvement and hardware stores in the U.S., Canada and Mexico with approximately 202 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.72x; +27% to EPP floor; model-vs-market gap +0.50; conservative 2yr +43%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.72,
+  "ratio_b_fmt": "0.72x",
+  "epp": 64.96,
+  "epp_gap_pct": 26.6,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.25,
+  "sca": 0.156,
+  "adj_composite": 2.405,
+  "market_composite": 1.91,
+  "adj_gap": 0.5,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 43.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.98,
+    "pe": 14.4,
+    "price": 43,
+    "desc": "EPS -19.9%/yr (worst year FY06-FY16, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 6.99,
+    "pe": 17.6,
+    "price": 123,
+    "desc": "EPS +22.7%/yr (FY17 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 6.99,
+    "pe": 19.6,
+    "price": 137,
+    "desc": "EPS +22.7%/yr (FY06-FY16 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 7.44,
+    "pe": 22.1,
+    "price": 164,
+    "desc": "EPS +26.6%/yr (best 2-yr run FY06-FY16); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.72,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.5,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.48,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.7,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.03,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.11,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 43.3,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.65,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.56,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.79,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.72,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.8,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.72,
+   "epp_gap_pct": 4.2,
+   "adj_gap": 0.5,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.72,
+   "epp_gap_pct": 26.6,
+   "adj_gap": 0.66,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 43.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "LOW (retrospective, 2017-03-24) ◉ BUY — Ratio B 0.72x (47.7% downside to Bear $43 / +66.6% upside to Bull $137) | Adj composite 2.41 vs market 1.91: gap +0.50 [MODESTLY UNDERVALUED] | +27% above the EPP floor $65 (14x FY17E $4.64) | Conservative 2-yr case: +43.3% total (+21.6%/yr) | At 17.7x FY17E the 15% hurdle price $109 sits at or below the BASE case; comps +5.1% in Q4 FY16, forward sales +5% (FY17 sales guide); e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "L93",
+   "published": "2016-03-29",
+   "filed": "2016-03-28 19:07 ET (after the close)",
+   "title": "Lowe's Companies FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000276/lowesform10k.htm",
+   "supports": "selected financial data 2011-2015, income statement 2013-2015 with percent of sales, adjusted EBIT margin 9.31% and adjusted diluted EPS $3.29 excluding the Australian joint venture impairment (GAAP $2.73), 2015 diluted shares 929M, interest $552M, income tax provision $1,873M on pre-tax $4,419M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.81B repurchased in 2015 under the program, $3.6B remaining, the 2016 guide assumes about $3.5 billion of repurchases; 2015 fourth-quarter dividend $0.28; 1,857 home improvement and hardware stores, approximately 202 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3% of 2015 sales"
+  },
+  {
+   "id": "L87",
+   "published": "2015-03-31",
+   "filed": "2015-03-31 15:10 ET (during the session)",
+   "title": "Lowe's Companies FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000057/lowesform10k.htm",
+   "supports": "selected financial data 2010-2014, income statement 2012-2014 with percent of sales, 2014 diluted shares 990M, interest $516M, income tax provision $1,578M on pre-tax $4,276M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.88B repurchased in 2014 under the program, $2.4B remaining, the 2015 guide assumes about $3.8 billion of repurchases; 2014 fourth-quarter dividend $0.23; 1,840 home improvement and hardware stores, approximately 201 million square feet; online retailers among competitors"
+  },
+  {
+   "id": "L81",
+   "published": "2014-04-01",
+   "filed": "2014-03-31 17:21 ET (after the close)",
+   "title": "Lowe's Companies FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000054/lowesform10k.htm",
+   "supports": "selected financial data 2009-2013, income statement 2011-2013 with percent of sales, 2013 diluted shares 1,061M, interest $476M, income tax provision $1,387M on pre-tax $3,673M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $3.7B repurchased in 2013, $6.3B authorization, the 2014 guide assumes about $3.4 billion of repurchases; 2013 fourth-quarter dividend $0.18; 1,832 home improvement and hardware stores (72 Orchard stores acquired 2013-08-30), approximately 200 million square feet"
+  },
+  {
+   "id": "L75",
+   "published": "2013-04-02",
+   "filed": "2013-04-01 18:19 ET (after the close)",
+   "title": "Lowe's Companies FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000045/lowesform10k.htm",
+   "supports": "selected financial data 2008-2012, income statement 2010-2012 with percent of sales, 2012 diluted shares 1,152M, interest $423M, income tax provision $1,178M on pre-tax $3,137M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.35B repurchased in 2012, $5.0B authorization remaining, the 2013 guide assumes about $4 billion of repurchases; 2012 fourth-quarter dividend $0.16; comparable store sales renamed comparable sales (a comparable location open longer than 13 months); 1,754 stores in the U.S., Canada and Mexico, 197 million square feet"
+  },
+  {
+   "id": "L71",
+   "published": "2012-04-03",
+   "filed": "2012-04-02 16:59 ET (after the close)",
+   "title": "Lowe's Companies FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066712000096/lowesform10k02032012.htm",
+   "supports": "selected financial data 2007-2011 (fiscal 2011 has 53 weeks), income statement 2009-2011 with percent of sales, 2011 diluted shares 1,273M, interest $371M, income tax provision $1,067M on pre-tax $2,906M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.9B repurchased in 2011, $4.5B authorization remaining; 2011 fourth-quarter dividend $0.14; 1,745 stores in the U.S., Canada and Mexico, 197 million square feet, 27 stores closed"
+  },
+  {
+   "id": "L70",
+   "published": "2011-03-29",
+   "filed": "2011-03-29 08:26 ET (before the open)",
+   "title": "Lowe's Companies FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066711000061/lowesform10k01282011.htm",
+   "supports": "selected financial data 2006-2010, income statement 2008-2010 with percent of sales (store opening costs now inside SG&A, prior years reclassified), 2010 diluted shares 1,403M, interest $332M, effective tax from income tax provision $1,218M on pre-tax $3,228M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.6B repurchased in 2010; 2010 fourth-quarter dividend $0.110; 1,749 stores in the U.S., Canada and Mexico, 197 million square feet; 2008 weighted average diluted shares 1,468M (annual report, exhibit 13)"
+  },
+  {
+   "id": "L50",
+   "published": "2009-04-01",
+   "filed": "2009-03-31 16:34 ET (after the close)",
+   "title": "Lowe's Companies FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066709000036/lowesform10k01302009.htm",
+   "supports": "selected financial data 2004-2008, income statement 2006-2008 with percent of sales, 2008 diluted shares 1,472M, interest $280M, store opening costs $102M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; no repurchases in 2008, $2.2B authorization remaining, 2009 outlook assumes no repurchases; quarterly dividend increased in 2008 to $0.085; 1,649 stores in the U.S. and Canada, 187 million square feet; 2006 weighted average diluted shares 1,566M (annual report, exhibit 13)"
+  },
+  {
+   "id": "L90",
+   "published": "2015-11-18",
+   "filed": "2015-11-18 07:42 ET (before the open)",
+   "title": "Lowe's Q3 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000180/exhibit991.htm",
+   "supports": "Q3 2015 results and the fiscal 2015 outlook (unchanged)"
+  },
+  {
+   "id": "L92",
+   "published": "2016-02-24",
+   "filed": "2016-02-24 08:42 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000231/exhibit991.htm",
+   "supports": "Q4 2015 and fiscal 2015 results: GAAP EPS $2.73 including a $530M non-cash impairment of the Australian joint venture, adjusted diluted EPS $3.29 (non-GAAP reconciliation, the charge 0.90% of fiscal-year and 4.01% of fourth-quarter sales); percent-of-sales income statement, inventory, cash, cash flow; fiscal 2016 outlook, a 53-week year (sales including the 53rd week, comparable sales, store openings, EBIT margin in bp excluding the impairment, tax rate, EPS); no next-quarter outlook"
+  },
+  {
+   "id": "L94",
+   "published": "2016-05-18",
+   "filed": "2016-05-18 09:09 ET (before the open)",
+   "title": "Lowe's Q1 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000304/exhibit991.htm",
+   "supports": "Q1 2016 results (an unrealized foreign currency hedge gain of $160M pre-tax, $0.11 per share) and the fiscal 2016 outlook (EPS raised; excludes the pending RONA acquisition)"
+  },
+  {
+   "id": "L95",
+   "published": "2016-08-17",
+   "filed": "2016-08-17 08:02 ET (before the open)",
+   "title": "Lowe's Q2 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000359/exhibit991.htm",
+   "supports": "Q2 2016 results (a foreign currency hedge loss of $84M pre-tax, $0.06 per share; RONA acquired 2016-05-20; cash dividends per share $0.35, up from $0.28) and the fiscal 2016 outlook updated for RONA"
+  },
+  {
+   "id": "L96",
+   "published": "2016-11-16",
+   "filed": "2016-11-16 08:21 ET (before the open)",
+   "title": "Lowe's Q3 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000404/exhibit991.htm",
+   "supports": "Q3 2016 results: GAAP EPS $0.43 including $462M of non-cash pre-tax charges (Australian joint venture wind-down, project write-offs, Orchard Supply impairments; 2.94% of sales), adjusted diluted EPS $0.88; the fiscal 2016 outlook, now GAAP including those charges and the hedge gain"
+  },
+  {
+   "id": "L97",
+   "published": "2017-03-01",
+   "filed": "2017-03-01 07:59 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066717000032/exhibit991.htm",
+   "supports": "Q4 2016 (14 weeks) and fiscal 2016 (53 weeks) results: GAAP EPS $3.47, adjusted diluted EPS $3.99 (non-GAAP reconciliation, per-share items), comparable sales +4.2%; percent-of-sales income statement, inventory, cash, cash flow; fiscal 2017 outlook (sales, comparable sales, store openings, EBIT margin in bp including the 2016 items, tax rate, GAAP EPS); no next-quarter outlook"
+  },
+  {
+   "id": "L30",
+   "published": "1998-06-12",
+   "filed": "1998-06-12 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 1998 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066798000009/0000060667-98-000009.txt",
+   "supports": "'On May 29, 1998, the Board of Directors declared a two-for one stock split'"
+  },
+  {
+   "id": "L31",
+   "published": "2001-06-15",
+   "filed": "2001-06-15 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066701500007/form10q101.txt",
+   "supports": "'On May 25, 2001, the Company's Board of Directors approved a two-for-one split'"
+  },
+  {
+   "id": "L32",
+   "published": "2006-06-06",
+   "filed": "2006-06-05 17:07 ET (after the close)",
+   "title": "Lowe's 8-K: two-for-one split and dividend increase approved on May 25, 2006",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000115/lowesform8k05252006.htm",
+   "supports": "two-for-one split of the common shares approved by the Board on May 25, 2006; quarterly dividend $0.05 post-split"
+  },
+  {
+   "id": "L0",
+   "published": "2017-03-24",
+   "title": "Yahoo Finance daily prices, LOW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LOW/history",
+   "supports": "close $82.21 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-28"
+}

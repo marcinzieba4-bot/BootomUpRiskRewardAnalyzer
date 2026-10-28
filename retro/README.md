@@ -1311,6 +1311,112 @@ Judgement calls that could carry hindsight:
 - taking the company's adjusted FY15, and the two bases of the fiscal 2016 margin guide;
 - dating the dividend increases from the Q2 releases.
 
+### LOW 2017-2018: tax reform, the Orchard exit, a guide with and without charges
+
+```bash
+python3 retro/build_low.py --weekly 2017-01-02 2017-12-31                   # 52 dates, 2017-01-06 .. 2017-12-29
+python3 retro/build_low.py --weekly 2018-01-01 2018-12-31                   # 53 dates, 2018-01-05 .. 2018-12-31
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K and earnings release of 2017 and 2018 was read by Opus directly. 115 strings were checked
+with `verbatim.py`, and 278 structured checks read each print's numbers back from its release's tables and each source's
+date from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided before any 2017 or 2018 date was built
+or scored:
+
+- **Two 10-K vintages.** FY2016 (2007-2016) was accepted 2017-04-04 at 09:27 ET, before the open, so it is dated that
+  day. FY2017 (2008-2017) was accepted 2018-04-02 at 16:36 ET, dated 2018-04-03. First-year diluted shares: 2007's
+  1,507M from the FY2009 annual report (two-class method) and 2008's 1,468M from the FY2010 annual report (exhibit 13 of
+  each 10-K).
+- **Adjusted EPS, GAAP margins.** The 10-Ks publish adjusted diluted EPS: $3.99 for FY16 (GAAP $3.47) and $4.39 for FY17
+  (GAAP $4.09, excluding the debt loss, the joint venture gain, the Tax Cuts and Jobs Act charge and an hourly bonus). By
+  the ACN rule these replace GAAP in the history. Neither 10-K publishes an adjusted margin, so the margins stay GAAP
+  (the Fremont rule): FY16 8.99% on both definitions; FY17 9.60% operating margin and 8.92% EBIT margin, which carries
+  the 0.68% loss on extinguishment of debt. Each print shows the quarter's adjusted EPS where the release published one,
+  with GAAP in the note.
+- **The margin guide moves back to operating income.** The Q4 FY16 release guides fiscal 2017 "Earnings before interest
+  and taxes as a percentage of sales (operating margin)" (+120bp). From the Q1 FY17 release the guide is "Operating
+  income as a percentage of sales (operating margin)", which leaves out the debt loss below operating income. Each guide
+  steps from FY16's margin on its own definition; both are 8.99%. The fiscal 2018 guides step from FY17's operating
+  margin, 9.60%.
+- **The fiscal 2017 guides are GAAP:** EPS $4.64, then $4.30 (lowered "reflective of the loss on extinguishment of debt
+  and resulting lower interest expense"), then $4.20-4.30 (adding the gain on the Australian joint venture interest); the
+  margin step +120bp, then +80-100bp; sales +5% (52 weeks against fiscal 2016's 53). No adjusted guide was published, so
+  the guide keeps both items (the Fremont rule), against FY16's adjusted $3.99.
+- **Fiscal 2018: tax reform, the revenue standard, Orchard Supply, store closings.**
+  - The Q4 FY17 release (2018-02-28) guides EPS $5.40-5.50 at a 25.5% tax rate, sales +4% and operating margin -30bp.
+  - The Q1 FY18 release reflects the new revenue recognition standard: sales +5%, "approximately 1 percent" of it from
+    the reclassification, and margin -40bp, "approximately 10 basis points" of it from the same; EPS reaffirmed. Fiscal
+    2017 was not restated, so the published figures stand, with the effect in the note (the 2011 rule).
+  - The Q2 FY18 release (2018-08-22, items 2.02, 2.05 and 2.06) announces the exit from Orchard Supply Hardware and lowers
+    the guide to EPS $4.50-4.60 and margin -180bp. It publishes an adjusted quarter ($2.07, GAAP $1.86). The outlook
+    names the Orchard charges in dollars ($230 million recorded, $390 to $475 million to come) but gives no margin or
+    EPS figure without them, so the guide includes them (the Fremont rule: no figure is derived from a published
+    amount).
+  - The 8-K of 2018-11-05 (items 2.05, 2.06 and 7.01, accepted 09:01 ET) closes 20 U.S. stores and 31 Canadian locations:
+    "The expected financial impact of today's announcement of $0.28 to $0.34 per diluted share was not contemplated in
+    the business outlook for fiscal 2018". It gives no new range, so $4.50-4.60 stands with the words in its note (the
+    2011-10-17 rule).
+  - The Q3 FY18 release (2018-11-20) gives the guide with and without the charges: GAAP EPS $4.08-4.24, adjusted
+    $5.08-5.13; operating margin -240 to -255bp "including 135 to 150 basis points from charges", so -105bp without them.
+    By the ACN with-and-without rule the guide takes the adjusted figures from this release on.
+- **Dividends from the Q2 releases** (the 2015 rule): $0.41 from 2017-08-23, $0.48 from 2018-08-22.
+- **ECOMMERCE stays on the watch list.** The FY2016 10-K repeats the risk factor and puts online sales at "approximately
+  3.5% of our total sales". The FY2017 10-K reads "online and omni-channel retailers" and describes Lowes.com orders
+  picked up in store, delivered from a store or shipped. Each 10-K's event replaces the previous one. The theme's market
+  pricing is dated from 2017-06-16, but that evidence is the sell-off of grocers and food retailers on the Whole Foods
+  deal. No filing shows the market pricing the theme for Lowe's, and press coverage is not entered, so the status stays
+  "company-acknowledged; no market read" (the ACN CLOUD rule). Rebuilding the 105 dates without the events changes no
+  number, tier or class.
+- **Adds nothing:**
+  - the 10-Qs, which no longer restate the outlook, and the 10-Ks, which have no outlook section (the cash-return text
+    takes the repurchases and the remaining authorization);
+  - the investor-day 8-K of 2018-12-12, which reiterates the fiscal 2018 ranges. Its first fiscal 2019 guide matters only
+    from fiscal 2019 and is left for a 2019 batch (the 2008 rule);
+  - the management and director 8-Ks (among them a new chief executive, named 2018-05-22), the bylaw changes and the
+    proxy materials;
+  - the debt tender offer and debt 8-Ks of April-May 2017 and the credit agreement of 2018-09-12. They reach the facts only
+    through the published debt loss.
+- **Text-only change to 2008-2016:** two source descriptions (the FY2009 and FY2010 annual reports) now also cite the 2007
+  and 2008 share counts. 353 dates change only in that text.
+- **ISO weeks:** 2018-12-31 covers week 1 of 2019, so a 2019 batch starts on 2019-01-07.
+
+Controls: altering one value of each new print, guide, vintage, dividend and theme event changes no date before its
+publication and changes the first weekly date after it (23 of 23).
+
+Seen in the build (method behaviour, not tuned):
+- **2017 turns CHEAP on the fiscal 2017 guide.**
+  - January-February, still on the fiscal 2016 guide ($3.52, GAAP), reads FAIR on 5 dates and RICH on 3 at 20.2-21.8x (the
+    72nd-86th percentile).
+  - From the Q4 FY16 print, $4.64 and a +120bp margin step (11.8% of EPS) give BASE +22.7%/yr at 17.3-18.5x (46th-65th
+    percentile): CHEAP on all 12 dates to 2017-05-19. After the cut to $4.30, CHEAP on 12 of 13.
+  - From the Q2 FY17 print BASE is +20.2%/yr. As the price rose from $73 to $93 the class went FAIR (from 2017-09-08), then
+    RICH (2017-10-13, and December at 19.8-21.9x).
+
+  In all: CHEAP 26, FAIR 17, RICH 9; BUY 15, ACCUMULATE 25, WATCHLIST 11, AVOID 1.
+- **2018 reads RICH on 47 of 53 dates.**
+  - January-February, still on the fiscal 2017 guide: 22.3-25.3x (the 92nd-100th percentile), RICH and AVOID on all 8.
+  - The fiscal 2018 guide's tax rate lifts EPS to $5.45 and puts the stock at 15.3-16.2x (the 13th-22nd percentile). But
+    its -30bp step takes 3.2% off EPS growth, so BASE is +6.8-7.2%/yr. The tier reads BUY on 8 of 12 dates (Ratio B
+    0.55-0.73) and ACCUMULATE on 4 (0.88-0.92). The class reads CHEAP on 5, FAIR on 1 and RICH on 6, because the adjusted gap stays negative (-0.33 to
+    -0.62).
+  - From the Q1 FY18 print ($96-101, 17.5-18.5x): RICH on all 13.
+  - **The Orchard charges, carried twice.** The Q2 FY18 guide's -180bp step on a 7.8% margin is -23.1% of EPS. Method r2
+    carries it as growth for two years: BASE -12.2%/yr, a BASE price of $64-65 against a stock at $93-117, Ratio B 1.83x
+    to 61x. All 13 dates read RICH and AVOID. The adjusted Q3 FY18 guide (-105bp) brings BASE to -1.9%/yr: RICH on all
+    7, ACCUMULATE 5, WATCHLIST 2.
+  - The 8-K of 2018-11-05 changes no number, only the guide's note.
+- **BULL separates from BASE** for the first time since 2012-02-24. From the Q4 FY17 print BASE sits below the decade
+  EPS CAGR, so BULL takes the CAGR: +9.0%/yr, then +12.8%/yr from the FY2017 vintage.
+- **The BEAR case** applies FY2008's -19.9% until the FY2017 vintage, then FY2009's -18.8% (FY2008's fall needs FY2007,
+  which leaves the window). The EPP floor moves from 14x to 15x on 2018-01-05.
+
+Judgement calls that could carry hindsight:
+- keeping the GAAP guides (fiscal 2017 with the debt loss, the Q2 FY18 guide with the Orchard charges) against adjusted
+  history years, and taking the adjusted guide from the Q3 FY18 release;
+- not converting the Q2 FY18 outlook's dollar charges into a margin step without them;
+- keeping the theme on the watch list after its 2017-06-16 market-pricing date;
+- leaving the fiscal 2019 outlook of 2018-12-12 to the 2019 batch.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -1356,7 +1462,9 @@ What the gates enforce:
   historical services and solutions". That changes the quoted wording, not the status: it is still the company's
   own statement, and no dated evidence shows the market pricing it for ACN.
   LOW carries ECOMMERCE on the watch list the same way from its FY2015 10-K (2016-03-29), the first whose risk factors
-  name "growing competition from online and multi-channel retailers" ("LOW 2015-2016").
+  name "growing competition from online and multi-channel retailers" ("LOW 2015-2016"). It stays there after the
+  theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
+  Lowe's ("LOW 2017-2018").
 
 ## Workflow
 

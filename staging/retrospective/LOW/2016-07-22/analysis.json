@@ -209,7 +209,7 @@
    "filed": "2011-03-29 08:26 ET (before the open)",
    "title": "Lowe's Companies FY2010 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066711000061/lowesform10k01282011.htm",
-   "supports": "selected financial data 2006-2010, income statement 2008-2010 with percent of sales (store opening costs now inside SG&A, prior years reclassified), 2010 diluted shares 1,403M, interest $332M, effective tax from income tax provision $1,218M on pre-tax $3,228M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.6B repurchased in 2010; 2010 fourth-quarter dividend $0.110; 1,749 stores in the U.S., Canada and Mexico, 197 million square feet"
+   "supports": "selected financial data 2006-2010, income statement 2008-2010 with percent of sales (store opening costs now inside SG&A, prior years reclassified), 2010 diluted shares 1,403M, interest $332M, effective tax from income tax provision $1,218M on pre-tax $3,228M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.6B repurchased in 2010; 2010 fourth-quarter dividend $0.110; 1,749 stores in the U.S., Canada and Mexico, 197 million square feet; 2008 weighted average diluted shares 1,468M (annual report, exhibit 13)"
   },
   {
    "id": "L50",
@@ -276,5 +276,5 @@
   }
  ],
  "warnings": [],
- "generated": "2026-10-26"
+ "generated": "2026-10-28"
 }
