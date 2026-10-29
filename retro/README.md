@@ -1537,7 +1537,8 @@ Seen in the build (method behaviour, not tuned):
   In all: CHEAP 25, FAIR 13, RICH 14; BUY 18, ACCUMULATE 13, WATCHLIST 14, AVOID 7.
 - **How far each call moves the classes** (the affected dates rebuilt with one encoding changed; no outcome consulted):
   - keeping the withdrawn February guide would change 26 of the 29 classes from 2020-05-21 to 2020-12-04;
-  - taking the 10-K's adjusted EPS from the Q4 prints would change 3 classes and 5 tiers in early 2019, none in 2020;
+  - taking the 10-K's adjusted EPS from the Q4 prints would change the class on 3 and the tier on 4 of the 5 dates of
+    early 2019, and nothing in 2020;
   - a GAAP gross margin for Q4 FY19 would change none.
 - **The EPP floor stays at 15-16x,** and the P/E median of the window at 18.3-18.8x.
 
