@@ -24,7 +24,7 @@ SOURCES = [
         "filed": "2012-04-02 16:59 ET (after the close)",
         "title": "Lowe's Companies FY2011 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066712000096/lowesform10k02032012.htm",
-        "supports": "selected financial data 2007-2011 (fiscal 2011 has 53 weeks), income statement 2009-2011 with percent of sales, 2011 diluted shares 1,273M, interest $371M, income tax provision $1,067M on pre-tax $2,906M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.9B repurchased in 2011, $4.5B authorization remaining; 2011 fourth-quarter dividend $0.14; 1,745 stores in the U.S., Canada and Mexico, 197 million square feet, 27 stores closed"
+        "supports": "selected financial data 2007-2011 (fiscal 2011 has 53 weeks), income statement 2009-2011 with percent of sales, 2011 diluted shares 1,273M, interest $371M, income tax provision $1,067M on pre-tax $2,906M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.9B repurchased in 2011, $4.5B authorization remaining; 2011 fourth-quarter dividend $0.14; 1,745 stores in the U.S., Canada and Mexico, 197 million square feet, 27 stores closed; 2009 weighted average diluted shares 1,464M"
     },
     {
         "id": "L70",

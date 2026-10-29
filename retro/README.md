@@ -1417,6 +1417,136 @@ Judgement calls that could carry hindsight:
 - keeping the theme on the watch list after its 2017-06-16 market-pricing date;
 - leaving the fiscal 2019 outlook of 2018-12-12 to the 2019 batch.
 
+### LOW 2019-2020: adjusted guides, Q4 releases without a full-year EPS, a withdrawn guide
+
+```bash
+python3 retro/build_low.py --weekly 2019-01-07 2019-12-31                   # 52 dates, 2019-01-11 .. 2019-12-31
+python3 retro/build_low.py --weekly 2020-01-06 2020-12-31                   # 52 dates, 2020-01-10 .. 2020-12-31
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K and earnings release from 2018-12-06 to the end of 2020 was read directly, with the 10-Qs
+searched in full for forward-looking statements. That includes the analyst-conference 8-K of 2018-12-12, which the
+2017-2018 batch left for this one. 166 strings were checked with `verbatim.py`, and 299 structured checks read each
+print's numbers back from its release's tables, each vintage's from its 10-K and each source's date from EDGAR's
+acceptance time. Thresholds and signals are unchanged. Decided before any 2019 or 2020 date was built or scored:
+
+- **Two 10-K vintages.** FY2018 (2014-2018) was accepted 2019-04-01 at 19:26 ET, dated 2019-04-02; FY2019 (2015-2019)
+  2020-03-23 at 17:05 ET, dated 2020-03-24. The history moves to 2009-2018, then 2010-2019. First-year diluted shares:
+  2009's 1,464M from the FY2011 10-K and 2010's 1,403M from the FY2012 10-K. The 10-Ks publish adjusted diluted EPS of
+  $5.11 for FY18 (GAAP $2.84) and $5.74 for FY19 (GAAP $5.49); by the ACN rule these replace GAAP. 2015-2017 keep the
+  adjusted figures of the earlier 10-Ks.
+- **Q4 releases without a full-year adjusted EPS.** The Q4 FY18 (2019-02-27) and Q4 FY19 (2020-02-26) releases publish
+  adjusted EPS for the quarter and an adjusted operating margin for the year (8.56%, 9.13%), but no adjusted EPS and no
+  comparable sales for the year. By the Fremont rule (UNP's "when an adjusted figure first appears"), FY18 enters the
+  history at GAAP $2.84 from its Q4 print until the 10-K, and FY19 at $5.49; nothing is summed from the quarters. The
+  year's adjusted operating margin is published, so the history takes it. The franchise line says the release gives no
+  full-year comp until the 10-K supplies it (a builder change, text only: every earlier Q4 release gave one).
+- **Guides with and without items** (the Q3 FY18 rule). From the Q4 FY18 release every outlook gives the operating
+  margin step on both bases, and from Q1 FY19 both EPS figures. The guide takes the adjusted ones, stepped from the
+  adjusted margin the company states. Fiscal 2019: +85 to +95bp, then +20 to +50bp, then +40 to +60bp from 8.56%; EPS
+  $6.00-6.10 (no adjustment was then expected), $5.45-5.65 (excluding the Mexico tax benefit), $5.63-5.70. Fiscal 2020:
+  +50 to +70bp from 9.13%, EPS $6.45-6.65. The GAAP figures are in the notes.
+- **The conference outlook of 2018-12-12** (accepted 11:35 ET, during the session) is fiscal 2019's first guide (the
+  2009 rule). Its margin step, +235 to +250bp against the fiscal 2018 outlook including 135 to 150bp from the absent 2018
+  charges, is +100bp without them, as in the Q3 FY18 encoding. The Q4 FY18 release replaces every field on the day fiscal
+  2019 becomes current, so the 8-K shows only in the guide's document list.
+- **A withdrawn guide.** The Q1 FY20 release (2020-05-20): "The Company is withdrawing its financial guidance for fiscal
+  year 2020." That is not a guide restated in words, which keeps the last numeric range (the ACN Q3 FY08 rule): it says
+  no range stands. So a guide marked withdrawn voids every earlier guide for its year, and the no-guide rules apply
+  (a builder change; no earlier guide is a withdrawal, so no earlier date changes):
+  - FY19's adjusted $5.74 stands as the current-year EPS;
+  - BASE growth and the growth factor take the latest quarter's sales growth (+10.9%, then +30.1% and +28.3%);
+  - there is no margin step, and the margin signal takes the latest quarter's change.
+
+  The Q2 FY20 release repeats the withdrawal. The Q3 FY20 release (2020-11-18) gives a fourth-quarter outlook only: sales
+  +15 to +20% (BASE growth uses it, the next-quarter rule), comps, EPS $1.10-1.20 (shown in the guide line), and an
+  adjusted margin "essentially flat" (a quarter's margin, no field). The investor-update 8-K of 2020-12-09 (before the
+  open) restores a fiscal 2020 guide: adjusted EPS $8.62-8.72 (GAAP $7.53-7.63), sales about +22%, comps about +23%,
+  adjusted margin +170bp from 9.13%.
+- **Published adjusted quarter margins replace GAAP in the prints.** This is LOW's setup rule (a company-published figure
+  excluding an item replaces the reported one), as in the Q4 FY15 and Q3 FY16 prints. Only the Q4 infographics (exhibit
+  99.2) publish them:
+  - Q4 FY18: adjusted operating margin 6.44% against 7.50% (-106bp; GAAP -1,071bp);
+  - Q4 FY19: adjusted gross margin 31.89% against 31.49% (+40bp; GAAP -22bp) and operating margin 7.15% against 6.45%.
+
+  So the gross-margin signal reads +40bp for Q4 FY19. Every other quarter, and every annual gross margin, comes from the
+  percent-of-sales columns.
+- **Shipping and handling costs move into cost of sales** from the Q4 FY18 release, prior periods recast; operating income
+  is unchanged. Each print's gross margin change is measured against the recast prior-year quarter its release prints
+  (the ACN restated-base rule).
+- **One-offs without an adjusted figure stay in the GAAP lines** (the Fremont rule), and each print shows the quarter's
+  adjusted EPS the release publishes: the Canadian goodwill impairment and the strategic-reassessment charges (Q4 FY18),
+  the Mexico exit (2019), the Canadian restructuring (Q3 FY19 into 2020), and the $1.06B loss on extinguishment of debt
+  (Q3 FY20, which the EBIT margin carries and the operating margin the guides use does not).
+- **Dividends,** each from the first filing that states it: $0.55 from the Q2 2019 release (2019-08-21) and $0.60 from the
+  Q3 2020 release (2020-11-18). The 2020 increase was declared in the third quarter; the Q2 2020 release still shows $0.55.
+- **ECOMMERCE stays on the watch list.** The FY2018 and FY2019 10-Ks keep the risk factor and add a sentence on online and
+  omni-channel retailers' delivery services; the quote now carries the risk factor's three sentences on online rivals.
+  Lowes.com sales growth in 2020 (+80%, +135%, +106% by quarter) is the company's own channel, not evidence that the market
+  prices substitution of its stores. No filing shows that, so the status stays company-acknowledged (the ACN CLOUD rule).
+- **COVID enters only through the prints and the withdrawal.** The FY2019 10-K names it as a risk factor and a subsequent
+  event, with no estimate: a caveat without a figure adds nothing (the UNP 2020 rule). The registry has no COVID theme.
+- **The franchise text is unchanged.** From the FY2018 10-K the sentence reads "driven by the activity level of home
+  improvement projects"; housing turnover moves to the indicators the 10-K says it monitors. The "why" keeps its wording,
+  a constant of the method (the UNP rule), with each vintage's store count, footprint and countries.
+- **Adds nothing:**
+  - the 8-K/A of 2019-11-20 (a column date in the reconciliation);
+  - the 10-Qs (no outlook beyond repurchase plans);
+  - the repurchase authorizations ($10 billion on 2018-12-12, $15 billion on 2020-12-09), the suspension in the first
+    quarter of 2020 and the restart 8-K of 2020-09-29 (cash-return text);
+  - the guides' operating-income growth, leverage-ratio, repurchase and capital-expenditure items (no field);
+  - the long-term targets and 2021 scenarios of the 2020-12-09 webcast (not in the filing);
+  - the officer, director, bylaw and vote 8-Ks, the credit facilities, the debt offerings and the tender offer.
+- **Text-only change to 2008-2018:** two source descriptions (the FY2011 and FY2012 10-Ks) now also cite the 2009 and 2010
+  share counts. 353 dates change only in that text.
+- **ISO weeks:** 2019-12-31 covers week 1 of 2020, so the 2020 batch starts on 2020-01-06; 2020 has 53 ISO weeks and its
+  batch ends on 2020-12-31. A 2021 batch starts on 2021-01-04.
+
+Controls: altering one value of each new print, guide, vintage, dividend and theme event changes no date before its
+publication and changes the first weekly date after it (23 of 23). The conference guide of 2018-12-12 first shows on
+2019-02-28, the first date with fiscal 2019 current.
+
+Seen in the build (method behaviour, not tuned):
+- **2019: the margin guide and FY18's GAAP weeks.**
+  - January-February, still on the adjusted fiscal 2018 guide ($5.105, BASE -1.9%/yr): RICH on all 7 dates, WATCHLIST
+    then AVOID.
+  - From the Q4 FY18 print the +90bp adjusted step and buybacks put BASE at +17.6%/yr. On the five dates to 2019-03-29
+    FY18 sits in the history at GAAP $2.84, so BEAR applies -35.3% twice: FAIR 3, CHEAP 2, all ACCUMULATE.
+  - From the FY2018 vintage the worst year of 2009-2018 is +0.7% (2011), so BEAR is flat EPS on every later date and
+    Ratio B runs 0.08-0.77x: BUY on 37 of the 40 dates from 2019-04-05, ACCUMULATE on the last three (0.75-0.77x).
+    CHEAP on the 7 dates to the Q1 print (17.6-19.2x).
+  - After the Q1 FY19 cut ($5.55, +35bp, BASE +12.7%/yr): CHEAP on 11 of 13 dates to mid-August at 16.8-19.4x. The Q2
+    print (gross margin -85bp, sales +0.5%) lowers the proxy composite from 1.80 to 1.65: RICH from 2019-08-22 to
+    2019-11-15 at 19.4-20.8x (the 66th-80th percentile). The Q3 print (gross margin +156bp) lifts it to 2.40: CHEAP on 3
+    dates, FAIR on 1, then RICH at 21.1-21.2x.
+
+  In all: CHEAP 23, FAIR 5, RICH 24; BUY 37, ACCUMULATE 8, WATCHLIST 5, AVOID 2.
+- **2020: the crash on the February guide, then the fallback.**
+  - January-February, on the raised fiscal 2019 guide ($5.67, BASE +14.3%/yr): RICH on 6 of 7 dates at 21.2-22.1x,
+    CHEAP on 2020-01-31 at 20.5x.
+  - On the fiscal 2020 guide ($6.55, BASE +15.4%, then +15.7%/yr) CHEAP and BUY on all 12 dates from 2020-02-27 to
+    2020-05-15, at 10.1-17.4x; on 2020-03-20 the price ($66.36) is under the BEAR price.
+  - From the withdrawal, FY19's $5.74 and the latest quarter's sales growth set BASE at +17.7%, then +36.9%/yr, while the
+    multiple on that EPS climbs to 21-31x (the 81st-100th percentile). CHEAP on 2020-05-21, then FAIR or RICH on most
+    dates; CHEAP on 7 between 2020-08-20 and 2020-11-13, where the proxy composite (3.70: comps, sales, inventory and both
+    margins at XBULL) and BASE outweigh the multiple.
+  - The fourth-quarter guide (+17.5% sales) brings BASE to +24.3%/yr: FAIR, RICH, FAIR.
+  - The 2020-12-09 guide ($8.67, +170bp) puts the multiple at 18.2-18.8x and BASE at +40.0%/yr, the margin step carried as
+    growth for two years (the 2018 Orchard pattern in reverse): CHEAP and BUY on the last four dates.
+
+  In all: CHEAP 25, FAIR 13, RICH 14; BUY 18, ACCUMULATE 13, WATCHLIST 14, AVOID 7.
+- **How far each call moves the classes** (the affected dates rebuilt with one encoding changed; no outcome consulted):
+  - keeping the withdrawn February guide would change 26 of the 29 classes from 2020-05-21 to 2020-12-04;
+  - taking the 10-K's adjusted EPS from the Q4 prints would change 3 classes and 5 tiers in early 2019, none in 2020;
+  - a GAAP gross margin for Q4 FY19 would change none.
+- **The EPP floor stays at 15-16x,** and the P/E median of the window at 18.3-18.8x.
+
+Judgement calls that could carry hindsight:
+- treating the withdrawal as voiding the earlier guides (the call that moves the most classes);
+- keeping FY18 and FY19 at GAAP between the Q4 print and the 10-K;
+- the published adjusted quarter margins in the prints (no class changes in 2019-2020);
+- extending the online-competition quote to the new delivery sentence (text only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -1464,7 +1594,7 @@ What the gates enforce:
   LOW carries ECOMMERCE on the watch list the same way from its FY2015 10-K (2016-03-29), the first whose risk factors
   name "growing competition from online and multi-channel retailers" ("LOW 2015-2016"). It stays there after the
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
-  Lowe's ("LOW 2017-2018").
+  Lowe's ("LOW 2017-2018", "LOW 2019-2020").
 
 ## Workflow
 

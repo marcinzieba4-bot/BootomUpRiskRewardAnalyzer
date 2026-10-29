@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing. Events record a 10-K's own words on a live disruption theme (ECOMMERCE from the FY2015 10-K); a guide's fy_margin_guide_base is the prior-year margin its step is measured from when the company states one other than the history's.",
+ "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing. Events record a 10-K's own words on a live disruption theme (ECOMMERCE from the FY2015 10-K); a guide's fy_margin_guide_base is the prior-year margin its step is measured from when the company states one other than the history's. A guide marked 'withdrawn' (the Q1 FY20 release) voids every earlier guide for its fiscal year; the no-guide rules apply until the company guides again. A Q4 print's fy_actual has comps_pct null when the release gives no full-year comparable sales.",
  "ticker": "LOW",
  "sources": {
   "L1": {
@@ -259,7 +259,7 @@
    "filed": "2012-04-02 16:59 ET (after the close)",
    "title": "Lowe's Companies FY2011 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066712000096/lowesform10k02032012.htm",
-   "supports": "selected financial data 2007-2011 (fiscal 2011 has 53 weeks), income statement 2009-2011 with percent of sales, 2011 diluted shares 1,273M, interest $371M, income tax provision $1,067M on pre-tax $2,906M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.9B repurchased in 2011, $4.5B authorization remaining; 2011 fourth-quarter dividend $0.14; 1,745 stores in the U.S., Canada and Mexico, 197 million square feet, 27 stores closed"
+   "supports": "selected financial data 2007-2011 (fiscal 2011 has 53 weeks), income statement 2009-2011 with percent of sales, 2011 diluted shares 1,273M, interest $371M, income tax provision $1,067M on pre-tax $2,906M; cash, short-term investments, operating cash flow, fixed assets acquired; product-category sales; $2.9B repurchased in 2011, $4.5B authorization remaining; 2011 fourth-quarter dividend $0.14; 1,745 stores in the U.S., Canada and Mexico, 197 million square feet, 27 stores closed; 2009 weighted average diluted shares 1,464M"
   },
   "L60": {
    "published": "2011-02-23",
@@ -371,7 +371,7 @@
    "filed": "2013-04-01 18:19 ET (after the close)",
    "title": "Lowe's Companies FY2012 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066713000045/lowesform10k.htm",
-   "supports": "selected financial data 2008-2012, income statement 2010-2012 with percent of sales, 2012 diluted shares 1,152M, interest $423M, income tax provision $1,178M on pre-tax $3,137M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.35B repurchased in 2012, $5.0B authorization remaining, the 2013 guide assumes about $4 billion of repurchases; 2012 fourth-quarter dividend $0.16; comparable store sales renamed comparable sales (a comparable location open longer than 13 months); 1,754 stores in the U.S., Canada and Mexico, 197 million square feet"
+   "supports": "selected financial data 2008-2012, income statement 2010-2012 with percent of sales, 2012 diluted shares 1,152M, interest $423M, income tax provision $1,178M on pre-tax $3,137M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.35B repurchased in 2012, $5.0B authorization remaining, the 2013 guide assumes about $4 billion of repurchases; 2012 fourth-quarter dividend $0.16; comparable store sales renamed comparable sales (a comparable location open longer than 13 months); 1,754 stores in the U.S., Canada and Mexico, 197 million square feet; 2010 weighted average diluted shares 1,403M"
   },
   "L76": {
    "published": "2013-05-22",
@@ -596,6 +596,104 @@
    "title": "Lowe's Q3 2018 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000119312518330899/d427785dex991.htm",
    "supports": "Q3 2018 results ($280M of strategic-reassessment charges; adjusted diluted EPS $1.04, GAAP $0.78; exits from Mexico retail, Alacrity and Iris) and the fiscal 2018 outlook with GAAP EPS $4.08-4.24 and adjusted diluted EPS $5.08-5.13, the operating-margin step 'including 135 to 150 basis points from charges'"
+  },
+  "L108": {
+   "published": "2018-12-12",
+   "filed": "2018-12-12 11:35 ET (during the session)",
+   "title": "Lowe's 8-K: 2018 Analyst and Investor Conference (item 7.01, ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066718000205/exhibit991_12122018.htm",
+   "supports": "the fiscal 2018 outlook reiterated; the first fiscal 2019 outlook (comparisons to the fiscal 2018 business outlook): total sales about +2%, comparable sales about +3%, operating margin +235 to +250 basis points including 135 to 150 basis points from the absence of the 2018 strategic-reassessment charges, effective tax rate about 25%, diluted EPS $6.00 to $6.10; a new $10 billion repurchase authorization"
+  },
+  "L109": {
+   "published": "2019-02-27",
+   "filed": "2019-02-27 08:16 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000022/exhibit991_02012019.htm",
+   "supports": "Q4 2018 and fiscal 2018 results: GAAP EPS ($1.03) for the quarter and $2.84 for the year, $1.6 billion of fourth-quarter charges (Canadian goodwill impairment, Orchard, store closings, Mexico, non-core activities), adjusted diluted EPS $0.80 for the quarter (no adjusted EPS for the year), adjusted operating margin 8.56% for the year; comparable sales +1.7% for the quarter (no full-year comparable sales); shipping and handling costs reclassified into cost of sales, prior periods recast; percent-of-sales income statement, inventory, cash, cash flow; the fiscal 2019 outlook reiterated, with operating margin +375 to +385 basis points and adjusted operating margin +85 to +95 basis points, tax rate about 24%, diluted EPS $6.00 to $6.10; no next-quarter outlook"
+  },
+  "L110": {
+   "published": "2019-02-27",
+   "filed": "2019-02-27 08:16 ET (before the open)",
+   "title": "Lowe's Q4 2018 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000022/exhibit992_2012019.htm",
+   "supports": "Q4 2018 adjusted operating margin 6.44% against 7.50% a year earlier (-106 basis points; GAAP (3.63)% and 7.08%)"
+  },
+  "L111": {
+   "published": "2019-04-02",
+   "filed": "2019-04-01 19:26 ET (after the close)",
+   "title": "Lowe's Companies FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000042/form10k_02012019.htm",
+   "supports": "selected financial data 2014-2018, income statement 2016-2018 with percent of sales (shipping and handling recast), adjusted diluted EPS $5.11 and $4.39 (GAAP $2.84, $4.09), comparable sales +2.4%, 2018 diluted shares 812M, interest $624M, income tax provision $1,080M on pre-tax $3,394M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.0B repurchased in 2018 under the program, $13.9B remaining, $6.0 to $7.5 billion of repurchases expected in 2019; the quarterly dividend raised to $0.48 in 2018; 2,015 home improvement and hardware stores, approximately 209 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'"
+  },
+  "L112": {
+   "published": "2019-05-22",
+   "filed": "2019-05-22 08:21 ET (before the open)",
+   "title": "Lowe's Q1 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000074/exhibit991_05032019.htm",
+   "supports": "Q1 2019 results ($82 million tax benefit from the Mexico exit less $12 million of operating costs; adjusted diluted EPS $1.22, GAAP $1.31) and the fiscal 2019 outlook (lowered for gross margin contraction): adjusted operating margin +20 to +50 basis points, adjusted diluted EPS $5.45 to $5.65 (GAAP +310 to +340 basis points and $5.54 to $5.74)"
+  },
+  "L113": {
+   "published": "2019-08-21",
+   "filed": "2019-08-21 07:42 ET (before the open)",
+   "title": "Lowe's Q2 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000134/exhibit991_08022019.htm",
+   "supports": "Q2 2019 results (adjusted diluted EPS $2.15, GAAP $2.14; cash dividends per share $0.55, up from $0.48) and the fiscal 2019 outlook (unchanged)"
+  },
+  "L114": {
+   "published": "2019-11-20",
+   "filed": "2019-11-20 07:36 ET (before the open)",
+   "title": "Lowe's Q3 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000179/exhibit991_11012019.htm",
+   "supports": "Q3 2019 results ($53 million of Canadian impairment; adjusted diluted EPS $1.41, GAAP $1.36), the Canadian restructuring, and the fiscal 2019 outlook: adjusted operating margin +40 to +60 basis points, adjusted diluted EPS $5.63 to $5.70 (GAAP +290 to +320 basis points and $5.35 to $5.47)"
+  },
+  "L115": {
+   "published": "2020-02-26",
+   "filed": "2020-02-26 07:20 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000029/exhibit991_01312020.htm",
+   "supports": "Q4 2019 and fiscal 2019 results: GAAP EPS $0.66 for the quarter and $5.49 for the year, $185 million of Canada and Mexico costs and charges in the quarter, adjusted diluted EPS $0.94 for the quarter (no adjusted EPS for the year), adjusted operating margin 9.13% for the year; comparable sales +2.5% for the quarter (no full-year comparable sales); percent-of-sales income statement, inventory, cash, cash flow; the first fiscal 2020 outlook: total sales +2.5 to +3.0%, comparable sales +3.0 to +3.5%, adjusted operating margin +50 to +70 basis points (GAAP +80 to +100), tax rate about 24.5%, adjusted diluted EPS $6.45 to $6.65 (GAAP $6.38 to $6.58); no next-quarter outlook"
+  },
+  "L116": {
+   "published": "2020-02-26",
+   "filed": "2020-02-26 07:20 ET (before the open)",
+   "title": "Lowe's Q4 2019 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000029/exhibit992_01312020.htm",
+   "supports": "Q4 2019 adjusted gross margin 31.89% against 31.49% (GAAP 31.08% and 31.30%) and adjusted operating margin 7.15% against 6.45% (GAAP 5.98% and (3.63)%)"
+  },
+  "L117": {
+   "published": "2020-03-24",
+   "filed": "2020-03-23 17:05 ET (after the close)",
+   "title": "Lowe's Companies FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000036/form10k01312020.htm",
+   "supports": "selected financial data 2015-2019, income statement 2017-2019 with percent of sales, adjusted diluted EPS $5.74 and $5.11 (GAAP $5.49, $2.84), comparable sales +2.6%, 2019 diluted shares 778M, interest $691M, income tax provision $1,342M on pre-tax $5,623M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.3B repurchased in 2019 under the program, $9.7B remaining, about $5.0 billion of repurchases expected in 2020; the quarterly dividend raised to $0.55 in 2019; 1,977 home improvement and hardware stores, approximately 208 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'; COVID-19 named as a risk and a subsequent event, with no estimate of its effect"
+  },
+  "L118": {
+   "published": "2020-05-20",
+   "filed": "2020-05-20 06:52 ET (before the open)",
+   "title": "Lowe's Q1 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000080/exhibit991_05012020.htm",
+   "supports": "Q1 2020 results (adjusted diluted EPS $1.77, GAAP $1.76; $340 million of COVID-19 support); share repurchases suspended; 'The Company is withdrawing its financial guidance for fiscal year 2020.'"
+  },
+  "L119": {
+   "published": "2020-08-19",
+   "filed": "2020-08-19 08:50 ET (before the open)",
+   "title": "Lowe's Q2 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000134/exhibit991-07312020.htm",
+   "supports": "Q2 2020 results (adjusted diluted EPS $3.75, GAAP $3.74; cash dividends per share $0.55); the fiscal 2020 guidance still withdrawn"
+  },
+  "L120": {
+   "published": "2020-11-18",
+   "filed": "2020-11-18 08:45 ET (before the open)",
+   "title": "Lowe's Q3 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000170/exhibit991-10302020.htm",
+   "supports": "Q3 2020 results ($1.1 billion loss on extinguishment of debt; adjusted diluted EPS $1.98, GAAP $0.91; cash dividends per share $0.60, up from $0.55; repurchases reinstated) and a fourth-quarter 2020 outlook: total and comparable sales +15 to +20%, adjusted operating margin essentially flat, diluted and adjusted diluted EPS $1.10 to $1.20; no fiscal-year guidance"
+  },
+  "L121": {
+   "published": "2020-12-09",
+   "filed": "2020-12-09 08:31 ET (before the open)",
+   "title": "Lowe's 8-K: Investor Update (item 7.01, ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000177/exhibit991-12092020.htm",
+   "supports": "the fourth-quarter 2020 outlook reiterated and a fiscal 2020 outlook: total sales about +22%, comparable sales about +23%, adjusted operating margin +170 basis points (GAAP +200), tax rate about 25%, adjusted diluted EPS $8.62 to $8.72 (GAAP $7.53 to $7.63); a new $15 billion repurchase authorization"
   }
  },
  "history_vintages": [
@@ -2899,6 +2997,352 @@
     ]
    ],
    "groups_basis": "FY17 product categories (FY2017 10-K)"
+  },
+  {
+   "published": "2019-04-02",
+   "sources": [
+    "L111",
+    "L103",
+    "L98",
+    "L93",
+    "L87",
+    "L81",
+    "L71",
+    "L107"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY18",
+   "why": "Lowe's: the world's second largest home improvement retailer, 2,015 home improvement and hardware stores in the U.S., Canada and Mexico with approximately 209 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2009": "2010-01-29",
+    "2010": "2011-01-28",
+    "2011": "2012-02-03",
+    "2012": "2013-02-01",
+    "2013": "2014-01-31",
+    "2014": "2015-01-30",
+    "2015": "2016-01-29",
+    "2016": "2017-02-03",
+    "2017": "2018-02-02",
+    "2018": "2019-02-01"
+   },
+   "eps_gaap": {
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71,
+    "2015": 2.73,
+    "2016": 3.47,
+    "2017": 4.09,
+    "2018": 2.84
+   },
+   "eps_normalized": {
+    "2009": 1.21,
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71,
+    "2015": 3.29,
+    "2016": 3.99,
+    "2017": 4.39,
+    "2018": 5.11
+   },
+   "eps_published": {
+    "2009": "2014-04-01",
+    "2010": "2015-03-31",
+    "2011": "2016-03-29",
+    "2012": "2017-04-04",
+    "2013": "2018-04-03"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded; 2015 is the company's adjusted $3.29, which excludes the $530M non-cash impairment of the Australian joint venture (GAAP $2.73, FY2015 10-K); 2016 is the company's adjusted $3.99 (GAAP $3.47, FY2016 10-K); 2017 is the company's adjusted $4.39 (GAAP $4.09, FY2017 10-K); 2018 is the company's adjusted $5.11 (GAAP $2.84, FY2018 10-K), which excludes the Canadian goodwill impairment and the strategic-reassessment charges",
+   "revenue_usd_b": {
+    "2009": 47.22,
+    "2010": 48.815,
+    "2011": 50.208,
+    "2012": 50.521,
+    "2013": 53.417,
+    "2014": 56.223,
+    "2015": 59.074,
+    "2016": 65.017,
+    "2017": 68.619,
+    "2018": 71.309
+   },
+   "diluted_shares_m": {
+    "2009": 1464.0,
+    "2018": 812.0
+   },
+   "shares_published": {
+    "2009": "2012-04-03"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 8.56,
+    "EBIT margin": 5.64
+   },
+   "prev_fy_margins_note": "adjusted operating margin 8.56% as the Q4 FY18 release publishes it (adjusted operating income $6,105M, excluding the Canadian goodwill impairment and the strategic-reassessment charges; GAAP: 32.12 - 24.41 - 2.07 = 5.64%); EBIT margin = pre-tax + interest 4.76 + 0.88 = 5.64%, GAAP, no adjusted figure published (percent-of-sales column, FY2018 10-K)",
+   "prev_fy_gross_margin": 32.12,
+   "prev_fy_sales_growth": 3.9,
+   "prev_fy_comps": 2.4,
+   "prev_fy_stores": 2015,
+   "net_interest_b": 0.624,
+   "net_interest_note": "FY18 from L111",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.318,
+   "tax_note": "FY18 effective rate, GAAP (income tax provision $1,080M / pre-tax $3,394M)",
+   "fcf_b": 5.02,
+   "fcf_label": "FY18",
+   "prev_q_comps": 1.5,
+   "prev_q_label": "Q3 FY18",
+   "prev_q_source": "L107",
+   "dividend_annual": 1.92,
+   "dividend_note": "$0.48 quarterly (the quarterly dividend as raised in 2018, FY2018 10-K)",
+   "cash_return_text": "$13.9B repurchase authorization remaining; $3.00B repurchased in 2018 under the program; $6.0-7.5B of repurchases expected in 2019",
+   "business_line": "Home improvement retailer: 2,015 home improvement and hardware stores in the United States, Canada and Mexico, approximately 209 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Lumber & Building Materials",
+     9.968,
+     4.7
+    ],
+    [
+     "Appliances",
+     8.391,
+     9.0
+    ],
+    [
+     "Seasonal & Outdoor Living",
+     7.352,
+     2.7
+    ],
+    [
+     "Tools & Hardware",
+     6.906,
+     2.7
+    ],
+    [
+     "Fashion Fixtures",
+     6.351,
+     -1.1
+    ],
+    [
+     "Rough Plumbing & Electrical",
+     6.327,
+     3.0
+    ],
+    [
+     "Lawn & Garden",
+     5.433,
+     4.0
+    ],
+    [
+     "Millwork",
+     5.381,
+     1.4
+    ],
+    [
+     "Paint",
+     5.263,
+     -0.6
+    ],
+    [
+     "Flooring",
+     4.282,
+     -1.9
+    ],
+    [
+     "Kitchens",
+     3.7,
+     1.6
+    ],
+    [
+     "Other",
+     1.955,
+     74.1
+    ]
+   ],
+   "groups_basis": "FY18 product categories (FY2018 10-K)"
+  },
+  {
+   "published": "2020-03-24",
+   "sources": [
+    "L117",
+    "L111",
+    "L103",
+    "L98",
+    "L93",
+    "L87",
+    "L75",
+    "L114"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY19",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,977 home improvement and hardware stores in the U.S. and Canada with approximately 208 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2010": "2011-01-28",
+    "2011": "2012-02-03",
+    "2012": "2013-02-01",
+    "2013": "2014-01-31",
+    "2014": "2015-01-30",
+    "2015": "2016-01-29",
+    "2016": "2017-02-03",
+    "2017": "2018-02-02",
+    "2018": "2019-02-01",
+    "2019": "2020-01-31"
+   },
+   "eps_gaap": {
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71,
+    "2015": 2.73,
+    "2016": 3.47,
+    "2017": 4.09,
+    "2018": 2.84,
+    "2019": 5.49
+   },
+   "eps_normalized": {
+    "2010": 1.42,
+    "2011": 1.43,
+    "2012": 1.69,
+    "2013": 2.14,
+    "2014": 2.71,
+    "2015": 3.29,
+    "2016": 3.99,
+    "2017": 4.39,
+    "2018": 5.11,
+    "2019": 5.74
+   },
+   "eps_published": {
+    "2010": "2015-03-31",
+    "2011": "2016-03-29",
+    "2012": "2017-04-04",
+    "2013": "2018-04-03",
+    "2014": "2019-04-02"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded; 2015 is the company's adjusted $3.29, which excludes the $530M non-cash impairment of the Australian joint venture (GAAP $2.73, FY2015 10-K); 2016 is the company's adjusted $3.99 (GAAP $3.47, FY2016 10-K); 2017 is the company's adjusted $4.39 (GAAP $4.09, FY2017 10-K); 2018 is the company's adjusted $5.11 (GAAP $2.84, FY2018 and FY2019 10-Ks); 2019 is the company's adjusted $5.74 (GAAP $5.49, FY2019 10-K), which excludes the Canada restructuring and Mexico adjustments",
+   "revenue_usd_b": {
+    "2010": 48.815,
+    "2011": 50.208,
+    "2012": 50.521,
+    "2013": 53.417,
+    "2014": 56.223,
+    "2015": 59.074,
+    "2016": 65.017,
+    "2017": 68.619,
+    "2018": 71.309,
+    "2019": 72.148
+   },
+   "diluted_shares_m": {
+    "2010": 1403.0,
+    "2019": 778.0
+   },
+   "shares_published": {
+    "2010": "2013-04-02"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 9.13,
+    "EBIT margin": 8.75
+   },
+   "prev_fy_margins_note": "adjusted operating margin 9.13% as the Q4 FY19 release publishes it (adjusted operating income $6,579M, excluding the Canada restructuring and Mexico adjustments; GAAP: 31.80 - 21.30 - 1.75 = 8.75%); EBIT margin = pre-tax + interest 7.79 + 0.96 = 8.75%, GAAP, no adjusted figure published (percent-of-sales column, FY2019 10-K)",
+   "prev_fy_gross_margin": 31.8,
+   "prev_fy_sales_growth": 1.2,
+   "prev_fy_comps": 2.6,
+   "prev_fy_stores": 1977,
+   "net_interest_b": 0.691,
+   "net_interest_note": "FY19 from L117",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.239,
+   "tax_note": "FY19 effective rate, GAAP (income tax provision $1,342M / pre-tax $5,623M)",
+   "fcf_b": 2.81,
+   "fcf_label": "FY19",
+   "prev_q_comps": 2.2,
+   "prev_q_label": "Q3 FY19",
+   "prev_q_source": "L114",
+   "dividend_annual": 2.2,
+   "dividend_note": "$0.55 quarterly (the quarterly dividend as raised in 2019, FY2019 10-K)",
+   "cash_return_text": "$9.7B repurchase authorization remaining; $4.29B repurchased in 2019 under the program; about $5.0B of repurchases expected in 2020",
+   "business_line": "Home improvement retailer: 1,977 home improvement and hardware stores in the United States and Canada, approximately 208 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Appliances",
+     9.989,
+     5.3
+    ],
+    [
+     "Lumber & Building Materials",
+     9.745,
+     -0.2
+    ],
+    [
+     "Seasonal & Outdoor Living",
+     6.89,
+     3.3
+    ],
+    [
+     "Lawn & Garden",
+     6.459,
+     5.3
+    ],
+    [
+     "Rough Plumbing & Electrical",
+     6.224,
+     1.0
+    ],
+    [
+     "Kitchens & Bath",
+     5.433,
+     -2.7
+    ],
+    [
+     "Tools",
+     4.42,
+     4.8
+    ],
+    [
+     "Millwork",
+     4.192,
+     3.5
+    ],
+    [
+     "Paint",
+     4.125,
+     4.1
+    ],
+    [
+     "Flooring",
+     3.877,
+     -0.5
+    ],
+    [
+     "Hardware",
+     3.467,
+     3.1
+    ],
+    [
+     "Lighting",
+     2.857,
+     -5.1
+    ],
+    [
+     "Décor",
+     2.443,
+     4.7
+    ],
+    [
+     "Other",
+     2.027,
+     -24.2
+    ]
+   ],
+   "groups_basis": "FY19 product categories (FY2019 10-K, prior year reclassified)"
   }
  ],
  "prints": [
@@ -5176,6 +5620,402 @@
    "cash_return_text": "repurchases $2.50B year to date (cash flow statement)",
    "eps_note": "adjusted diluted EPS $1.04 against $1.05, as the company published them (GAAP $0.78 and $1.05)",
    "one_off_note": "Lowe’s Companies, Inc. (NYSE: LOW) today reported net earnings of $629 million and diluted earnings per share of $0.78 for the quarter ended Nov. 2, 2018, which included pre-tax charges of $280 million further described below,"
+  },
+  {
+   "quarter": "Q4 FY18",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-02-27",
+   "source": "L109",
+   "extra_sources": [
+    "L110"
+   ],
+   "release": "Feb 27",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:16 ET)",
+   "period_end": "2019-02-01",
+   "sales_b": 15.647,
+   "sales_pct": 1.0,
+   "comps_pct": 1.7,
+   "gross_margin": 31.3,
+   "gross_margin_bp": -74,
+   "gross_margin_note": "31.30% vs 32.04% of sales a year earlier (the release's percent-of-sales column; the prior year recast for the reclassification of shipping and handling costs into cost of sales)",
+   "margins": {
+    "operating margin": [
+     6.44,
+     -106
+    ],
+    "EBIT margin": [
+     -3.63,
+     -1071
+    ]
+   },
+   "margins_note": "operating margin adjusted, 6.44% vs 7.50%, as the earnings 8-K's infographic publishes them, excluding the Canadian goodwill impairment, the Orchard Supply Hardware, U.S. and Canada closing, Mexico, non-core activities and Project Specialists Interiors charges (GAAP -3.63% vs 7.08%, -1071bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (-4.63 + 1.00 = -3.63% vs 7.08%)",
+   "inventory_pct": 10.3,
+   "inventory_gap_pp": 9.3,
+   "inventory_note": "merchandise inventory $12,561M vs $11,393M a year earlier (+10.3%), against net sales +1.0%",
+   "eps_q": 0.8,
+   "eps_q_prior": 0.74,
+   "diluted_shares_m": 801.0,
+   "cash_b": 0.729,
+   "stores": 2015,
+   "sq_ft_m": 209.5,
+   "sq_ft_pct": null,
+   "dividend_q": 0.48,
+   "outlook_short": "Overall, we are pleased with the progress we are making in our business,",
+   "next_print": "Q1 FY19 print (mid-May)",
+   "cash_return_text": "repurchases $3.04B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $0.80 against an adjusted $0.74, as the company published them (GAAP ($1.03) and $0.67, the quarter's $1.6 billion of charges); 801M diluted shares, the basic count of a loss quarter",
+   "one_off_note": "This reclassification resulted in a decrease in gross margin of $289 million in the fourth quarter.",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 2.84,
+    "revenue_usd_b": 71.309,
+    "diluted_shares_m": 812.0,
+    "normalization_note": "FY18 = GAAP diluted EPS $2.84 from the Q4 FY18 release, which publishes adjusted EPS for the quarter ($0.80) and an adjusted operating margin for the year (8.56%) but no adjusted EPS for the year",
+    "margins": {
+     "operating margin": 8.56,
+     "EBIT margin": 5.64
+    },
+    "margins_note": "FY18 adjusted operating margin 8.56% as the Q4 FY18 release publishes it (adjusted operating income $6,105M, excluding the Canadian goodwill impairment and the strategic-reassessment charges; GAAP 32.12 - 24.41 - 2.07 = 5.64%); EBIT margin GAAP, no adjusted figure published: 4.76 + 0.88 = 5.64% (percent-of-sales column)",
+    "gross_margin": 32.12,
+    "sales_growth": 3.9,
+    "stores": 2015,
+    "comps_pct": null,
+    "comps_note": "the release gives comparable sales for the fourth quarter (+1.7%) but none for the fiscal year",
+    "net_interest_b": 0.624,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.318,
+    "tax_note": "FY18 effective rate: income tax provision $1,080M / pre-tax earnings $3,394M",
+    "fcf_b": 5.02
+   }
+  },
+  {
+   "quarter": "Q1 FY19",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-05-22",
+   "source": "L112",
+   "release": "May 22",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:21 ET)",
+   "period_end": "2019-05-03",
+   "sales_b": 17.741,
+   "sales_pct": 2.2,
+   "comps_pct": 3.5,
+   "gross_margin": 31.46,
+   "gross_margin_bp": -165,
+   "gross_margin_note": "31.46% vs 33.11% of sales a year earlier (the release's percent-of-sales column; the prior year recast for the reclassification of shipping and handling costs into cost of sales)",
+   "margins": {
+    "operating margin": [
+     7.99,
+     -45
+    ],
+    "EBIT margin": [
+     7.99,
+     -45
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (31.46 - 21.77 - 1.70 = 7.99% vs 8.44%, the operating income line); EBIT margin = pre-tax + interest (7.07 + 0.92 = 7.99% vs 8.44%)",
+   "inventory_pct": 13.8,
+   "inventory_gap_pp": 11.6,
+   "inventory_note": "merchandise inventory $15,026M vs $13,204M a year earlier (+13.8%), against net sales +2.2%",
+   "eps_q": 1.22,
+   "eps_q_prior": 1.19,
+   "diluted_shares_m": 797.0,
+   "cash_b": 3.163,
+   "stores": 2002,
+   "sq_ft_m": 208.8,
+   "sq_ft_pct": null,
+   "dividend_q": 0.48,
+   "outlook_short": "Our first quarter comparable sales performance is a clear indication that the consumer is healthy and our focus on retail fundamentals is gaining traction.",
+   "next_print": "Q2 FY19 print (mid-August)",
+   "cash_return_text": "repurchases $0.83B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $1.22 against $1.19, as the company published them, excluding the Mexico tax benefit and operating costs (GAAP $1.31 and $1.19)",
+   "one_off_note": "That decision resulted in an $82 million tax benefit in the quarter."
+  },
+  {
+   "quarter": "Q2 FY19",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-08-21",
+   "source": "L113",
+   "release": "Aug 21",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 07:42 ET)",
+   "period_end": "2019-08-02",
+   "sales_b": 20.992,
+   "sales_pct": 0.5,
+   "comps_pct": 2.3,
+   "gross_margin": 32.11,
+   "gross_margin_bp": -85,
+   "gross_margin_note": "32.11% vs 32.96% of sales a year earlier (the release's percent-of-sales column; the prior year recast for the reclassification of shipping and handling costs into cost of sales)",
+   "margins": {
+    "operating margin": [
+     11.34,
+     98
+    ],
+    "EBIT margin": [
+     11.34,
+     98
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (32.11 - 19.29 - 1.48 = 11.34% vs 10.36%, the operating income line); EBIT margin = pre-tax + interest (10.54 + 0.80 = 11.34% vs 10.36%)",
+   "inventory_pct": 15.5,
+   "inventory_gap_pp": 15.0,
+   "inventory_note": "merchandise inventory $13,730M vs $11,885M a year earlier (+15.5%), against net sales +0.5%",
+   "eps_q": 2.15,
+   "eps_q_prior": 2.07,
+   "diluted_shares_m": 781.0,
+   "cash_b": 2.071,
+   "stores": 2003,
+   "sq_ft_m": 208.8,
+   "sq_ft_pct": null,
+   "dividend_q": 0.55,
+   "outlook_short": "We capitalized on spring demand, strong holiday event execution and growth in Paint and our Pro business to deliver strong second quarter results.",
+   "next_print": "Q3 FY19 print (mid-November)",
+   "cash_return_text": "repurchases $2.77B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $2.15 against an adjusted $2.07, as the company published them (GAAP $2.14 and $1.86)",
+   "one_off_note": "Excluding $14 million of pre-tax operating losses associated with the wind-down of the Company’s Mexico retail operations, adjusted diluted earnings per share1 increased 3.9 percent to $2.15 from adjusted diluted earnings per share1 of $2.07 in the second quarter of 2018."
+  },
+  {
+   "quarter": "Q3 FY19",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-11-20",
+   "source": "L114",
+   "release": "Nov 20",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 07:36 ET)",
+   "period_end": "2019-11-01",
+   "sales_b": 17.388,
+   "sales_pct": -0.2,
+   "comps_pct": 2.2,
+   "gross_margin": 32.44,
+   "gross_margin_bp": 156,
+   "gross_margin_note": "32.44% vs 30.88% of sales a year earlier (the release's percent-of-sales column; the prior year recast for the reclassification of shipping and handling costs into cost of sales)",
+   "margins": {
+    "operating margin": [
+     8.96,
+     346
+    ],
+    "EBIT margin": [
+     8.96,
+     346
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (32.44 - 21.69 - 1.79 = 8.96% vs 5.50%, the operating income line); EBIT margin = pre-tax + interest (7.94 + 1.02 = 8.96% vs 5.50%)",
+   "inventory_pct": 10.9,
+   "inventory_gap_pp": 11.1,
+   "inventory_note": "merchandise inventory $13,716M vs $12,365M a year earlier (+10.9%), against net sales -0.2%",
+   "eps_q": 1.41,
+   "eps_q_prior": 1.04,
+   "diluted_shares_m": 770.0,
+   "cash_b": 0.921,
+   "stores": 2004,
+   "sq_ft_m": 208.9,
+   "sq_ft_pct": null,
+   "dividend_q": 0.55,
+   "outlook_short": "We were pleased with the performance of our U.S. home improvement stores,",
+   "next_print": "Q4 FY19 print (late February)",
+   "cash_return_text": "repurchases $3.65B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $1.41 against an adjusted $1.04, as the company published them (GAAP $1.36 and $0.78); sales -0.2%, derived (the release gives no percentage)",
+   "one_off_note": "The $53 million non-cash pre-tax charges referenced above resulted from the company initiating a strategic review of its Canadian operations during the third quarter."
+  },
+  {
+   "quarter": "Q4 FY19",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-02-26",
+   "source": "L115",
+   "extra_sources": [
+    "L116"
+   ],
+   "release": "Feb 26",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 07:20 ET)",
+   "period_end": "2020-01-31",
+   "sales_b": 16.027,
+   "sales_pct": 2.4,
+   "comps_pct": 2.5,
+   "gross_margin": 31.89,
+   "gross_margin_bp": 40,
+   "gross_margin_note": "adjusted 31.89% vs 31.49%, as the earnings 8-K's infographic publishes them, excluding the Canada restructuring inventory liquidation, the Mexico adjustments and the 2018 non-core activities charges (GAAP 31.08% vs 31.30%, -22bp, the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     7.15,
+     70
+    ],
+    "EBIT margin": [
+     5.98,
+     961
+    ]
+   },
+   "margins_note": "operating margin adjusted, 7.15% vs 6.45%, as the earnings 8-K's infographic publishes them, excluding the Canada restructuring and Mexico adjustments and the 2018 charges (GAAP 5.98% vs -3.63%, +961bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (4.84 + 1.14 = 5.98% vs -3.63%)",
+   "inventory_pct": 4.9,
+   "inventory_gap_pp": 2.5,
+   "inventory_note": "merchandise inventory $13,179M vs $12,561M a year earlier (+4.9%), against net sales +2.4%",
+   "eps_q": 0.94,
+   "eps_q_prior": 0.8,
+   "diluted_shares_m": 764.0,
+   "cash_b": 0.876,
+   "stores": 1977,
+   "sq_ft_m": 208.2,
+   "sq_ft_pct": null,
+   "dividend_q": 0.55,
+   "outlook_short": "In the fourth quarter, we delivered profitability that exceeded our expectations given strong expense management, improving gross margin and enhanced process execution.",
+   "next_print": "Q1 FY20 print (mid-May)",
+   "cash_return_text": "repurchases $4.31B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $0.94 against an adjusted $0.80, as the company published them (GAAP $0.66 and ($1.03)); sales +2.4%, derived (the release gives no percentage)",
+   "one_off_note": "The pre-tax operating costs and charges referenced above resulted from the company’s previously disclosed strategic review of its Canadian operations and closure of its Mexico business, resulting in pre-tax operating costs and charges of $185 million consisting of inventory liquidation, accelerated depreciation and amortization, severance and other costs.",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 5.49,
+    "revenue_usd_b": 72.148,
+    "diluted_shares_m": 778.0,
+    "normalization_note": "FY19 = GAAP diluted EPS $5.49 from the Q4 FY19 release, which publishes adjusted EPS for the quarter ($0.94) and an adjusted operating margin for the year (9.13%) but no adjusted EPS for the year",
+    "margins": {
+     "operating margin": 9.13,
+     "EBIT margin": 8.75
+    },
+    "margins_note": "FY19 adjusted operating margin 9.13% as the Q4 FY19 release publishes it (adjusted operating income $6,579M, excluding the Canada restructuring and Mexico adjustments; GAAP 31.80 - 21.30 - 1.75 = 8.75%); EBIT margin GAAP, no adjusted figure published: 7.79 + 0.96 = 8.75% (percent-of-sales column)",
+    "gross_margin": 31.8,
+    "sales_growth": 1.2,
+    "stores": 1977,
+    "comps_pct": null,
+    "comps_note": "the release gives comparable sales for the fourth quarter (+2.5%) but none for the fiscal year",
+    "net_interest_b": 0.691,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.239,
+    "tax_note": "FY19 effective rate: income tax provision $1,342M / pre-tax earnings $5,623M",
+    "fcf_b": 2.81
+   }
+  },
+  {
+   "quarter": "Q1 FY20",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-05-20",
+   "source": "L118",
+   "release": "May 20",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 06:52 ET)",
+   "period_end": "2020-05-01",
+   "sales_b": 19.675,
+   "sales_pct": 10.9,
+   "comps_pct": 11.2,
+   "gross_margin": 33.1,
+   "gross_margin_bp": 164,
+   "gross_margin_note": "33.10% vs 31.46% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     10.12,
+     213
+    ],
+    "EBIT margin": [
+     10.12,
+     213
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (33.10 - 21.32 - 1.66 = 10.12% vs 7.99%, the operating income line); EBIT margin = pre-tax + interest (9.08 + 1.04 = 10.12% vs 7.99%)",
+   "inventory_pct": -4.9,
+   "inventory_gap_pp": -15.8,
+   "inventory_note": "merchandise inventory $14,283M vs $15,026M a year earlier (-4.9%), against net sales +10.9%",
+   "eps_q": 1.77,
+   "eps_q_prior": 1.22,
+   "diluted_shares_m": 756.0,
+   "cash_b": 6.156,
+   "stores": 1970,
+   "sq_ft_m": 207.8,
+   "sq_ft_pct": null,
+   "dividend_q": 0.55,
+   "outlook_short": "In late February, we shifted our priorities in response to the COVID-19 pandemic,",
+   "next_print": "Q2 FY20 print (mid-August)",
+   "cash_return_text": "repurchases $0.97B year to date (cash flow statement), then suspended for the year",
+   "eps_note": "adjusted diluted EPS $1.77 against an adjusted $1.22, as the company published them (GAAP $1.76 and $1.31); sales +10.9%, derived (the release gives no percentage)",
+   "one_off_note": "During the quarter, the Company also decided to suspend share repurchases, and does not expect to repurchase any more shares this year beyond what was executed in the first quarter."
+  },
+  {
+   "quarter": "Q2 FY20",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-08-19",
+   "source": "L119",
+   "release": "Aug 19",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:50 ET)",
+   "period_end": "2020-07-31",
+   "sales_b": 27.302,
+   "sales_pct": 30.1,
+   "comps_pct": 34.2,
+   "gross_margin": 34.08,
+   "gross_margin_bp": 197,
+   "gross_margin_note": "34.08% vs 32.11% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     14.49,
+     315
+    ],
+    "EBIT margin": [
+     14.49,
+     315
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (34.08 - 18.39 - 1.20 = 14.49% vs 11.34%, the operating income line); EBIT margin = pre-tax + interest (13.69 + 0.80 = 14.49% vs 11.34%)",
+   "inventory_pct": 0.7,
+   "inventory_gap_pp": -29.4,
+   "inventory_note": "merchandise inventory $13,831M vs $13,730M a year earlier (+0.7%), against net sales +30.1%",
+   "eps_q": 3.75,
+   "eps_q_prior": 2.15,
+   "diluted_shares_m": 753.0,
+   "cash_b": 12.726,
+   "stores": 1968,
+   "sq_ft_m": 208.0,
+   "sq_ft_pct": null,
+   "dividend_q": 0.55,
+   "outlook_short": "Our highest priority has always been protecting the health and safety of our associates and customers through a safe store environment and shopping experience.",
+   "next_print": "Q3 FY20 print (mid-November)",
+   "cash_return_text": "repurchases $0.97B year to date (cash flow statement), none since the first quarter",
+   "eps_note": "adjusted diluted EPS $3.75 against an adjusted $2.15, as the company published them (GAAP $3.74 and $2.14); sales +30.1%, derived (the release gives no percentage)",
+   "one_off_note": "In the second quarter, the Company invested $460 million in support of frontline hourly associates, communities and store safety."
+  },
+  {
+   "quarter": "Q3 FY20",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-11-18",
+   "source": "L120",
+   "release": "Nov 18",
+   "release_time": "'For 6:00 am ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2020-10-30",
+   "sales_b": 22.309,
+   "sales_pct": 28.3,
+   "comps_pct": 30.1,
+   "gross_margin": 32.72,
+   "gross_margin_bp": 28,
+   "gross_margin_note": "32.72% vs 32.44% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     9.75,
+     79
+    ],
+    "EBIT margin": [
+     5.0,
+     -396
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (32.72 - 21.38 - 1.59 = 9.75% vs 8.96%, the operating income line); EBIT margin = pre-tax + interest (4.01 + 0.99 = 5.00% vs 8.96%)",
+   "inventory_pct": 14.6,
+   "inventory_gap_pp": -13.7,
+   "inventory_note": "merchandise inventory $15,712M vs $13,716M a year earlier (+14.6%), against net sales +28.3%",
+   "eps_q": 1.98,
+   "eps_q_prior": 1.41,
+   "diluted_shares_m": 754.0,
+   "cash_b": 10.101,
+   "stores": 1969,
+   "sq_ft_m": 208.0,
+   "sq_ft_pct": null,
+   "dividend_q": 0.6,
+   "outlook_short": "Strong execution enabled us to meet continued broad-based demand,",
+   "next_print": "Q4 FY20 print (late February)",
+   "cash_return_text": "repurchases $1.53B year to date (cash flow statement), reinstated in the third quarter",
+   "eps_note": "adjusted diluted EPS $1.98 against an adjusted $1.41, as the company published them, excluding the $1.1 billion loss on extinguishment of debt (GAAP $0.91 and $1.36); sales +28.3%, derived (the release gives no percentage); EBIT margin carries the 4.75% loss on extinguishment of debt",
+   "one_off_note": "which included a $1.1 billion pre-tax loss on extinguishment of debt in connection with the company’s third quarter $3.0 billion cash tender offer,"
   }
  ],
  "guides": [
@@ -6943,6 +7783,227 @@
    "tax_rate_guide": 24.0,
    "eps_guide_note": "adjusted diluted EPS as the company published it (GAAP $4.08-4.24); the margin step excludes the 135-150bp of charges (GAAP -240 to -255bp)",
    "op_margin_guide_note": "including 135 to 150 basis points from charges associated with its strategic reassessment"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-12-12",
+   "source": "L108",
+   "doc": "8-K of 2018-12-12",
+   "eps_guide": [
+    6.0,
+    6.1
+   ],
+   "rev_guide": [
+    2,
+    2
+   ],
+   "comps_guide": [
+    3,
+    3
+   ],
+   "op_margin_guide_bp": [
+    100,
+    100
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating income as a percentage of sales (operating margin) is expected to increase 235 to 250 basis points",
+   "op_margin_guide_note": "measured against the fiscal 2018 business outlook; the step excludes what the absent 2018 charges add (GAAP +235 to +250bp): Includes 135 to 150 basis points positive impact from expected charges associated with the exit of Orchard Supply Hardware (2Q 2018) as well as certain U.S. and Canada store closings (3Q 2018), and the decision to exit the company’s Mexico retail operations and other non-core activities (3Q 2018).",
+   "tax_rate_guide": 25.0
+  },
+  {
+   "fy": 2019,
+   "published": "2019-02-27",
+   "source": "L109",
+   "doc": "Q4 FY18 release",
+   "eps_guide": [
+    6.0,
+    6.1
+   ],
+   "rev_guide": [
+    2,
+    2
+   ],
+   "comps_guide": [
+    3,
+    3
+   ],
+   "op_margin_guide_bp": [
+    85,
+    95
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) is expected to increase 85 to 95 basis points",
+   "op_margin_guide_note": "from fiscal 2018's adjusted operating margin of 8.56%; GAAP: Operating income as a percentage of sales (operating margin) is expected to increase 375 to 385 basis points",
+   "tax_rate_guide": 24.0
+  },
+  {
+   "fy": 2019,
+   "published": "2019-05-22",
+   "source": "L112",
+   "doc": "Q1 FY19 release",
+   "eps_guide": [
+    5.45,
+    5.65
+   ],
+   "rev_guide": [
+    2,
+    2
+   ],
+   "comps_guide": [
+    3,
+    3
+   ],
+   "op_margin_guide_bp": [
+    20,
+    50
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) is expected to increase 20 to 50 basis points",
+   "op_margin_guide_note": "GAAP: Operating income as a percentage of sales (operating margin) is expected to increase 310 to 340 basis points",
+   "tax_rate_guide": 24.0,
+   "eps_guide_note": "lowered from $6.00-6.10; adjusted diluted EPS as the company published it, excluding the Mexico tax benefit and costs (GAAP $5.54-5.74)"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-08-21",
+   "source": "L113",
+   "doc": "Q2 FY19 release",
+   "eps_guide": [
+    5.45,
+    5.65
+   ],
+   "rev_guide": [
+    2,
+    2
+   ],
+   "comps_guide": [
+    3,
+    3
+   ],
+   "op_margin_guide_bp": [
+    20,
+    50
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) is expected to increase 20 to 50 basis points",
+   "op_margin_guide_note": "GAAP: Operating income as a percentage of sales (operating margin) is expected to increase 310 to 340 basis points",
+   "tax_rate_guide": 24.0,
+   "eps_guide_note": "adjusted diluted EPS as the company published it (GAAP $5.54-5.74)"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-11-20",
+   "source": "L114",
+   "doc": "Q3 FY19 release",
+   "eps_guide": [
+    5.63,
+    5.7
+   ],
+   "rev_guide": [
+    2,
+    2
+   ],
+   "comps_guide": [
+    3,
+    3
+   ],
+   "op_margin_guide_bp": [
+    40,
+    60
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin1) is expected to increase 40 to 60 basis points",
+   "op_margin_guide_note": "GAAP: Operating income as a percentage of sales (operating margin) is expected to increase 290 to 320 basis points",
+   "tax_rate_guide": 24.0,
+   "eps_guide_note": "raised from $5.45-5.65; adjusted diluted EPS as the company published it, excluding the Canada restructuring and Mexico adjustments (GAAP $5.35-5.47)"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-02-26",
+   "source": "L115",
+   "doc": "Q4 FY19 release",
+   "eps_guide": [
+    6.45,
+    6.65
+   ],
+   "rev_guide": [
+    2.5,
+    3.0
+   ],
+   "comps_guide": [
+    3.0,
+    3.5
+   ],
+   "op_margin_guide_bp": [
+    50,
+    70
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income1 as a percentage of sales (adjusted operating margin1) increase of approximately 50 to 70 basis points",
+   "op_margin_guide_note": "from fiscal 2019's adjusted operating margin of 9.13%; GAAP: Operating income as a percentage of sales (operating margin) increase of approximately 80 to 100 basis points; operating income growth of approximately 12 to 16 percent and adjusted operating income growth of approximately 8 to 12 percent have no field",
+   "tax_rate_guide": 24.5,
+   "eps_guide_note": "adjusted diluted EPS as the company published it, excluding the 2019 Canada restructuring (GAAP $6.38-6.58)"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-05-20",
+   "source": "L118",
+   "doc": "Q1 FY20 release",
+   "withdrawn": true,
+   "withdrawn_quote": "The Company is withdrawing its financial guidance for fiscal year 2020."
+  },
+  {
+   "fy": 2020,
+   "published": "2020-11-18",
+   "source": "L120",
+   "doc": "Q3 FY20 release",
+   "q_guide": {
+    "quarter": "Q4 FY20",
+    "sales": [
+     15,
+     20
+    ],
+    "comps": [
+     15,
+     20
+    ],
+    "eps": [
+     1.1,
+     1.2
+    ],
+    "op_margin_bp": [
+     0,
+     0
+    ]
+   },
+   "q_guide_note": "Fourth Quarter 2020 Financial Outlook (comparisons to fourth quarter 2019); adjusted operating margin 'expected to be essentially flat to prior-year levels' (a quarter's margin, no field); effective income tax rate of approximately 27% for the quarter (no field); no fiscal-year guidance"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-12-09",
+   "source": "L121",
+   "doc": "8-K of 2020-12-09",
+   "eps_guide": [
+    8.62,
+    8.72
+   ],
+   "rev_guide": [
+    22,
+    22
+   ],
+   "comps_guide": [
+    23,
+    23
+   ],
+   "op_margin_guide_bp": [
+    170,
+    170
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income1 as a percentage of sales (adjusted operating margin1) is expected to increase 170 basis points",
+   "op_margin_guide_note": "from fiscal 2019's adjusted operating margin of 9.13%; GAAP: Operating income as a percentage of sales (operating margin) is expected to increase 200 basis points",
+   "tax_rate_guide": 25.0,
+   "eps_guide_note": "the first fiscal 2020 guide since the withdrawal; adjusted diluted EPS as the company published it, excluding the loss on extinguishment of debt and the Canada restructuring (GAAP $7.53-7.63)"
   }
  ],
  "dividends": [
@@ -7017,6 +8078,18 @@
    "source": "L105",
    "quarterly": 0.48,
    "note": "$0.48 quarterly, first stated in a filing as the Q2 2018 cash dividends per share (Q2 2018 release)"
+  },
+  {
+   "published": "2019-08-21",
+   "source": "L113",
+   "quarterly": 0.55,
+   "note": "$0.55 quarterly, first stated in a filing as the Q2 2019 cash dividends per share (Q2 2019 release)"
+  },
+  {
+   "published": "2020-11-18",
+   "source": "L120",
+   "quarterly": 0.6,
+   "note": "$0.60 quarterly, first stated in a filing as the Q3 2020 cash dividends per share (Q3 2020 release; the Q2 2020 release still shows $0.55)"
   }
  ],
  "events": [
@@ -7049,6 +8122,28 @@
    "kind": "ecommerce_company_acknowledged",
    "doc": "FY2017 10-K",
    "risk_quote": "We face growing competition from online and omni-channel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools.",
+   "risk_short": "'growing competition from online and omni-channel retailers'",
+   "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store, have their purchase delivered from a store, or have their purchase parcel shipped.'",
+   "offering_short": "Lowes.com orders picked up in store, delivered from a store or shipped"
+  },
+  {
+   "id": "L111",
+   "published": "2019-04-02",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2018 10-K",
+   "risk_quote": "We face growing competition from online and omni-channel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. Further, online and omni-channel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times and low-price or free shipping, and we must make investments to keep up with our customers’ evolving shopping preferences.",
+   "risk_short": "'growing competition from online and omni-channel retailers'",
+   "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store, have their purchase delivered from a store, or have their purchase parcel shipped.'",
+   "offering_short": "Lowes.com orders picked up in store, delivered from a store or shipped"
+  },
+  {
+   "id": "L117",
+   "published": "2020-03-24",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2019 10-K",
+   "risk_quote": "We face growing competition from online and omni-channel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. Further, online and omni-channel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times and low-price or free shipping, and we must make investments to keep up with our customers’ evolving shopping preferences.",
    "risk_short": "'growing competition from online and omni-channel retailers'",
    "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store, have their purchase delivered from a store, or have their purchase parcel shipped.'",
    "offering_short": "Lowes.com orders picked up in store, delivered from a store or shipped"

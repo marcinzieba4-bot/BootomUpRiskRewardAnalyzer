@@ -20,6 +20,8 @@ method r2 inputs map as for ACN:
     sales guide; none either: the latest quarter's sales growth),
   - guided margin step: the fiscal-year operating-margin guide in basis points, stepped from the previous year's margin
     on the definition the guide states.
+A guide that withdraws the year's outlook (the Q1 FY20 release) voids the earlier guides for that year; the no-guide rules
+apply until the company guides again.
 A stock split restates, from its effective date, every per-share fact published before it (divided by the ratio) and
 every share count (multiplied by it); the prices of the whole window are on the AS_OF share basis.
 
@@ -142,6 +144,11 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
+    # a withdrawal (the Q1 FY20 release) voids every earlier guide for the year: the no-guide rules below apply until the
+    # company guides again
+    wd = next((g for g in reversed(guides) if g.get("withdrawn")), None)
+    if wd:
+        guides = guides[guides.index(wd) + 1:]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
     ge, gr, gc = stated("eps_guide"), stated("rev_guide"), stated("comps_guide")
     # a numeric margin guide is one field in either form: a change in basis points (op_margin_guide_bp) or a level in
@@ -157,7 +164,8 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_label = f"{fy_e} EPS, guide midpoint"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[cur_fy - 1]
-        eps_label = f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+        eps_label = (f"{fy_e}: the {wd['doc']} withdrew the {fy_now} guide, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands" if wd else
+                     f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands")
     if q and "sales" in q:                   # method r2: the next-quarter revenue guide
         fwd, fwd_label, fwd_short, fwd_period = q["sales"], f"{q['quarter']} sales guide", f"{q['quarter'][:2]} guide", q["quarter"]
     elif gr:                                 # no next-quarter guide: the fiscal-year sales guide
@@ -202,6 +210,9 @@ def build(as_of, facts, raw, spx, engine, out):
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     if not guides or not bits:
         guide_text = f"{fy_now}: no numeric guide yet; the {latest['quarter']} release in words: '{latest['outlook_short']}'"
+    if wd and not ge:                        # withdrawn, with no full-year EPS guide since
+        guide_text = (f"{guide_text}; no full-year guide since the {wd['doc']}" if guides and bits else
+                      f"{fy_now}: no numeric full-year guide; the {wd['doc']} withdrew it") + f": '{wd['withdrawn_quote']}'"
 
     # tax rate (display only, the EPS check): the latest tax-rate guide for the year (the ACN rule), else the last year's rate
     gt = stated("tax_rate_guide")
@@ -266,6 +277,7 @@ def build(as_of, facts, raw, spx, engine, out):
         theme_summary = "e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it"
     cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])}"
             + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "") if ge else
+            f"(3) A numeric {fy_now} guide again — the {wd['doc']} withdrew it" if wd else
             f"(3) A numeric {fy_now} guide — the {latest['quarter']} release gives words only ('{latest['outlook_short']}')")
     cat4 = (f"(4) Operating margin — {latest['op_margin']:.2f}% in {latest['quarter']} ({latest['op_margin_bp']:+d}bp): "
             "where fixed-cost deleverage on falling comps shows first")
@@ -294,6 +306,8 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     fcf = h.get("fcf_b")
     fcf_txt = f", {h.get('fcf_label', h['fy_label'])} free cash flow ${fcf:.2f}B" if fcf is not None else ""
+    # a Q4 release without a full-year comparable sales figure (Q4 FY18, Q4 FY19): the 10-K supplies it later
+    comps_txt = f"on comps {h['prev_fy_comps']:+.1f}%" if h["prev_fy_comps"] is not None else "(no full-year comp in the Q4 release)"
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -370,7 +384,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} sales {h['prev_fy_sales_growth']:+.1f}% on comps {h['prev_fy_comps']:+.1f}%, {h['prev_fy_stores']:,} stores; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+d}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} sales {h['prev_fy_sales_growth']:+.1f}% {comps_txt}, {h['prev_fy_stores']:,} stores; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+d}bp)")}
 BALANCE_TEXT    = {R(f"Cash and short-term investments ${latest['cash_b']:.2f}B{fcf_txt}, {latest.get('cash_return_text', h['cash_return_text'])}")}
 THEME_FACTORS   = {R(factors)}
 THEME_SIGNAL_NAME    = {R(sig_name)}
