@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  AAPL  ·  Apple Inc.  ·  $170.12  ·  RETROSPECTIVE as of 2008-07-03
+  Signal: ◉ BUY   Ratio B: 0.08x   Adj gap: +1.48  [UNDERVALUED]
+  Point-in-time: 17 sources, latest published 2008-07-03; latest print Q2 FY08 (Apr 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E net sales, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Product line                 FY2008E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  iPod                      $    11.1  $  11.1  $  21.7      +0.0     +10.6
+    +8.2% net sales in FY07
+  Portables                 $     8.4  $   8.4  $  16.5      +0.0      +8.1
+    +55.2% net sales in FY07
+  Desktops                  $     5.4  $   5.4  $  10.5      +0.0      +5.1
+    +21.1% net sales in FY07
+  Other music related prod  $     3.3  $   3.3  $   6.5      +0.0      +3.2
+    +32.4% net sales in FY07
+  Software, service, and o  $     2.0  $   2.0  $   3.9      +0.0      +1.9
+    +17.9% net sales in FY07
+  Peripherals and other ha  $     1.7  $   1.7  $   3.3      +0.0      +1.6
+    +14.5% net sales in FY07
+  iPhone and related produ  $     0.2  $   0.2  $   0.3      +0.0      +0.1
+    new in FY07 (no prior year)
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    32.1  $  32.1  $  62.7      +0.0     +30.6
+  FY2008E = FY07 $24.01B × (1 + 33.1%: Q3 FY08 revenue guide, applied to the year (no FY08 revenue guide)); split pro rata to FY07 net sales by product (FY2007 10-K)
+  Q2 FY08 (Apr 23): net sales $7.51B +42.7%; Macs 2,289K +50.9%; iPods 10,644K +0.9%; iPhones 1,703K;
+  gross margin 32.93% (-219bp); operating margin 17.51% (-123bp); EPS $1.16 vs $0.87; net sales other than Macs +34.1%
+  iPhone and Apple TV deferred revenue $1.93B at Q2 FY08 (subscription accounting)
+  FY08 guide (Q4 FY07 release, Q1 FY08 release, Q2 FY08 release): Q3 FY08: revenue about $7.2B (+33.1% on Q3 FY07's $5.41B), EPS about $1.00; no FY08 revenue, EPS or operating-margin guide
+
+  FY2008E EPS check:  ($32.1B × 18.4% + $0.60B other income) × (1−30.2%) ÷ 0.899B  =  $5.04  (FY2008E: no fiscal-year EPS guide, FY07's $3.93 stands $3.93)
+  FY2010E BEAR check: ($32.1B × 18.4% + other income) ÷ 0.992B  =  $4.57  (scenario $3.93)
+  FY2010E BULL check: ($62.7B × 18.8% + other income) ÷ 0.992B  =  $8.70  (scenario $27.55)
+  Every 1pp of operating margin ≈ $0.25 EPS ≈ $8/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Mac unit growth                    -78.0%  ≥-32.0%   ≥13.0%   ≥38.0%    +50.9%  ★ XBULL  ████
+  Gross margin change               -910.0bp  ≥-410.0bp  ≥90.0bp  ≥560.0bp  -219.0bp  ◦ BASE  ██░░
+  Net sales growth                   -82.0%  ≥-33.0%   ≥16.0%   ≥68.0%    +42.7%  ▲ BULL  ███░
+  Net sales other than Macs growth   -67.0%  ≥-23.0%   ≥20.0%  ≥128.0%    +34.1%  ▲ BULL  ███░
+  Operating margin change           -3090.0bp  ≥-1400.0bp  ≥290.0bp  ≥1950.0bp  -123.0bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   1.00 / 4.00  (back-solved from $170 + 15% hurdle)
+  SCA adjustment:    -0.02  ·  EPP-distance adj -0.20  →  Adj composite 2.48  →  Gap +1.48  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 net sales +24.3%, Mac units 7,051K (+33.0%); Q2 gross margin 32.93% (-219bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 43.3x FY08E vs a 32.5x 5.8-yr median (71st percentile of its own range)  (-0.35 × 25%  =  -0.087)
+    -  Growth vs own history: Q3 FY08 revenue guide +33.1% vs a 36.0% 4-yr median  (-0.29 × 20%  =  -0.058)
+    +  Cash and short-term investments $19.45B, FY07 free cash flow $4.74B, no dividend, no repurchases, no debt  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Mac unit growth                     +50.9%    -78.0%  -128.9%  A PC demand recession stalls Mac shar…
+  Gross margin change               -219.0bp  -910.0bp  -691.0bp  Price cuts and component costs compre…
+  Net sales growth                    +42.7%    -82.0%  -124.7%  Consumer spending falls faster than n…
+  Net sales other than Macs growth    +34.1%    -67.0%  -101.1%  The iPod saturates before the iPhone …
+  Operating margin change           -123.0bp  -3090.0bp  -2967.0bp  Operating expenses grow into a sales …
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$260  (model)  /  $86 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: Mac units went from +44.4% (Q1 FY08) to +50.9% (Q2 FY08);
+  the bear case needs a demand recession that gross margin (-219bp now)
+  and the iPod and iPhone no longer cover. A consumer-spending recession hits Mac and iPod demand first; the bear
+  needs it to reach gross margin and the iPhone ramp as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.93  (FY2008E: no fiscal-year EPS guide, FY07's $3.93 stands)
+  Min viable P/E at panic:          21x  [median of calendar-year P/E lows: 2002 84.9x, 2003 29.0x, 2004 12.1x, 2005 20.4x, 2006 18.6x, 2007 21.2x, 2008 30.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $83/share
+  Current $170 vs Updated EPP $83:  +106%  ⚠ far above floor — large drawdown room
+  Bear $86 vs Updated EPP $83:  +4%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Mac unit growth                            -32.0      -82.9   BASE floor (vs +51 now)
+  Gross margin change                       -410.0     -191.0   BASE floor (vs -219 now)
+  Net sales growth                           -33.0      -75.7   BASE floor (vs +43 now)
+  Net sales other than Macs growth           -23.0      -57.1   BASE floor (vs +34 now)
+  Operating margin change                  -1400.0    -1277.0   BASE floor (vs -123 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.93 × (1+26.1%)² = $6.25
+  At 32x P/E (conservative):  $200/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $200  (▲30 from $170)
+  Conservative total return:  +17% over 2yr  = +9%/yr
+
+  26.1% EPS growth is what is left once the premium multiple (43.3x)
+  mean-reverts to 32x. Breakeven at 32x needs FY2010E EPS of $5.32,
+  i.e. 16.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $111.62  –  $202.96  (at 64th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   45% annualized
+  Beta vs broad market: 1.21
+  1-sigma range (1yr):  $94  –  $246  ($170 ± 45%)
+  2-sigma range (1yr):  $18  –  $322
+  ────────────────────────────────────────────────────────────
+  Bear $86 requires:  ~1.1σ price move  (within normal vol range)
+  A computer and consumer-electronics maker with a 1.2 beta: the stock is +45% off its August
+  low while Mac units went from +44.4% (Q1 FY08) to +50.9% (Q2 FY08).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.93  22.0x  $     86     6.0%     72.2%   -66.3pp  Flat EPS (worst year FY03-FY07, capped at 0%); P/E to its 10th pct
+  BASE        6.45  32.5x  $    210    20.8%     20.7%    +0.1pp  EPS +28.1%/yr (Q3 guide + margin + buyback); P/E at its 5.8-yr median
+  BULL       27.55  46.0x  $  1,267    61.6%      5.9%   +55.6pp  EPS +164.7%/yr (FY03-FY07 CAGR); P/E holds its 75th pct
+  XBULL      76.14  93.2x  $  7,096    11.6%      1.1%   +10.5pp  EPS +340.2%/yr (best 2-yr run FY03-FY07); P/E at its 90th pct
+
+  Proxy EV (2yr): $1,654  /  Market EV: $260  /  Current: $170
+  Conservative EV (2yr, ④): $200 + $0.00 divs = $200 total value
+  Downside (→ Bear $86): 49.4%   Upside (→ Bull $1267): 644.8%   Ratio B 0.08x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $170 the market needs $225 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.00 against a model
+  read of 2.48: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.08x    +106%    +1.48  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.03x    +106%    +1.43  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.12x    +106%    +1.09  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.07x    +106%    +1.26  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.08x    +106%    +1.26  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.08x    +106%    +1.78  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.08x     +80%    +1.58  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.08x    +106%    +1.48  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY08 print (late July) — the next read on Mac units (+50.9% now) and the next quarter's guide
+  (2) Gross margin — -219bp in Q2 FY08: pricing, mix and component costs, what must hold if units do not
+  (3) Q3 FY08 guide — revenue about $7.2B, EPS about $1.00; Apple guides one quarter at a time, no FY08 guide
+  (4) iPod and iPhone — iPods +0.9%, 1,703K iPhones in Q2 FY08: net sales other than Macs +34.1%
+  (5) Capital return at 43x — none so far (no dividend, no buyback): management's own read of the multiple
+  ◉ BUY  |  EPP floor $83  |  ADD below ~$178  |  TRIM above $1,267
+════════════════════════════════════════════════════════════════════════
+

@@ -204,8 +204,38 @@
     "note": "redomiciled from Bermuda (Accenture Ltd) to Ireland"
    },
    {
+    "term": "MacBook Air",
+    "first_seen": "2008-01-15"
+   },
+   {
+    "term": "App Store",
+    "first_seen": "2008-03-06",
+    "note": "announced with the iPhone SDK; opened 2008-07-10"
+   },
+   {
     "term": "iPhone 3G",
     "first_seen": "2008-06-09"
+   },
+   {
+    "term": "MobileMe",
+    "first_seen": "2008-06-09"
+   },
+   {
+    "term": "Snow Leopard",
+    "first_seen": "2008-06-09",
+    "approx": true
+   },
+   {
+    "term": "iPhone 3GS",
+    "first_seen": "2009-06-08"
+   },
+   {
+    "term": "iPad",
+    "first_seen": "2010-01-27"
+   },
+   {
+    "term": "iCloud",
+    "first_seen": "2011-05-31"
    },
    {
     "term": "GitHub Copilot",

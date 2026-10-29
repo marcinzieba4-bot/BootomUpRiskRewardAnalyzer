@@ -1865,6 +1865,148 @@ Judgement calls that could carry hindsight:
 - taking each year's comparable sales from the Q4 infographics (text only), and leaving the acquired segment out of the
   segment bridge (display only).
 
+## AAPL (Apple): the fourth ticker, in staging
+
+The AAPL series is built apart from ACN, UNP and LOW and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/AAPL.json`), builder (`retro/build_aapl.py`) and engine (`retro/templates/aapl_engine.py.tmpl`, the LOW engine
+with personal-computer and consumer-electronics signals). The method is still r2. No ACN, UNP or LOW fact, parameter, outcome
+or finding enters an AAPL model. Outputs go to `staging/retrospective/AAPL/`, beside UNP and LOW, with the same `index.json`
+and their own `SERIES.md`.
+
+```bash
+python3 retro/build_aapl.py --weekly 2008-01-01 2008-12-31                  # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/AAPL/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series AAPL
+python3 retro/tools/firewall.py 2008-07-01 AAPL
+```
+
+The 10-Ks from FY1999 to FY2008 (FY2001 a 10-K405) were read for the history and the decade's signal values, and every 8-K of
+2007 and 2008 and the fiscal 2008 10-Qs were read in full, by Opus directly; the 10-Qs and the FY2007 and FY2008 10-Ks were
+searched for forward-looking statements. 246 strings were checked with `verbatim.py` against their own filings (179 for the
+prints, guides and vintages, 67 for the rule T decade), and each source's date comes from EDGAR's acceptance time. Decided on
+2026-10-29, before any AAPL model was built or any AAPL outcome computed:
+
+- **Fiscal calendar.** Apple's fiscal year is "the 52 or 53-week period that ends on the last Saturday of September" (FY2007
+  10-K); fiscal 2006 had 53 weeks. The builder maps each day to its fiscal year by that rule and checks it against the year-ends
+  the filings state.
+- **Prices on the as-of share basis** (the UNP rule). Yahoo's series is adjusted for the 2014 (7-for-1) and 2020 (4-for-1)
+  splits, so 2008 prices are Yahoo's times 28: $180.05 on 2008-01-04. The 2000 and 2005 2-for-1 splits precede every per-share
+  fact in the fact sheet, so they restate nothing; the 2005 split is listed (8-K of 2005-02-11).
+- **Every release came after the close.** Each earnings 8-K was accepted at 16:28-16:40 ET (the webcast at 2:00 p.m. Pacific),
+  so a print is dated the next trading day and the week's date is the trading day after that: 2008-01-24, 2008-04-25,
+  2008-07-23 and 2008-10-23. ACN's releases before 2013 were dated on the release day; the acceptance-time rule of "Adding
+  dates" is stricter, and can only lag.
+- **History: the FY2007 10-K** (accepted 2007-11-15 16:49 ET, dated 2007-11-16) gives FY2003-FY2007, already restated for
+  stock-based compensation by the FY2006 10-K (the option-dating review). The FY2008 10-K (accepted 2008-11-05 06:16 ET, before
+  the open) gives FY2004-FY2008; FY2003 comes from the FY2007 10-K, the latest that reports it.
+- **Two years excluded** (the ACN FY02 rule). FY2001 was a net loss ($(0.04) per diluted share). FY2002's GAAP EPS of $0.06 (as
+  restated; $0.09 first reported) was depressed by items the 10-K lists for the year, a $42 million net loss on non-current
+  investments and $30 million of restructuring charges, together more than the year's $42 million net income, and no adjusted
+  figure was published. So the history and the P/E window start with FY2003 (2002-09-29): a 5.3-year window on 2008-01-04,
+  6.3 years on 2008-12-31. FY2003 is kept: its listed items ($26 million of restructuring against $10 million of investment
+  gains and a $6 million forward-contract gain) are a fraction of its $57 million net income, although it had a $17 million
+  operating loss (interest income made the year profitable).
+- **EPS** is diluted EPS as reported. No year has a company-published figure excluding a one-off; FY2005's $81 million tax
+  benefit is a dollar amount, not an EPS without it, so GAAP stands (no figure is derived from a published amount).
+- **The Q4 FY08 non-GAAP measures stay out.** The 2008-10-21 release adds "Adjusted Sales" ($11.68 billion) and "Adjusted Net
+  Income" ($2.44 billion, $2.69 per share) that remove subscription accounting for iPhone and Apple TV. That is a different
+  revenue-recognition basis, not a one-off, and it is given for the quarter only ("not presented with comparable non-GAAP
+  financial measures for prior periods"). FY08 enters the history at GAAP $5.36; the adjusted quarter is shown in a note.
+- **Apple guides one quarter at a time.** Each release gives the next quarter's revenue (a dollar level, "about $9.2 billion";
+  from the Q4 FY08 release a range, $9.0-10.0 billion) and diluted EPS. No release or filing of the period gives a full-year
+  revenue, EPS or operating-margin guide. Method r2 maps this as for UNP and LOW:
+  - current-FY EPS: no fiscal-year EPS guide, so the last full year's EPS stands: FY07's $3.93 to the Q4 FY08 print, FY08's
+    $5.36 from it. A quarter's EPS guide is shown in the guide line and feeds no input (the UNP 2008 rule);
+  - BASE growth and the growth factor: the next-quarter revenue guide, read as growth against the same quarter a year earlier
+    (the LOW dollar-level rule, applied to a quarter), each year-ago revenue from that quarter's own release, rounded to 0.1:
+    +29.3% (Q1 FY08 on Q1 FY07's $7.115B), +29.2%, +33.1%, +25.5%, then -6.3% to +4.1% (Q1 FY09 on Q1 FY08's $9.608B);
+  - no operating-margin guide, so no margin step, and the margin signal takes the latest quarter's change (the ACN rule).
+- **Gross-margin expectations are display only.** The Q3 FY08 10-Q (accepted 2008-07-23 17:27 ET, dated 2008-07-24) "anticipates
+  gross margin levels of about 31.5% in the fourth quarter of 2008 and about 30% in 2009"; the FY2008 10-K repeats "about 30% in
+  2009". The method's margin is the operating margin, and no figure is derived from another, so each is shown in the guide line
+  (the quarter's while Q4 FY08 is unreported, fiscal 2009's once it is the current year). The words-only statements of the FY2007
+  10-K and the Q1 and Q2 FY08 10-Qs (gross margin to "decline sequentially", to "continue to decrease") add nothing. The quoted
+  "2009" draws the year-check warning on the 23 dates from 2008-08-01; it is the company's forecast, public before each date.
+- **No dividend** ("did not declare or pay cash dividends in either fiscal 2007 or 2006"), so the conservative case carries none.
+  Repurchases were $3 million in FY07 and nil in FY08.
+- **Signals.** Six, with ACN's weights, mirroring LOW's: Mac unit growth (0.20, the release's headline unit), gross margin change
+  (0.20), net sales growth (0.15), growth of net sales other than Macs (0.15: iPod, music, iPhone, peripherals, software; total net
+  sales less the Mac line, 57% of FY07 sales), the operating-margin change (0.15; the guided step, else the latest quarter) and the
+  theme slot at 2/4. Values are the latest release's, derived from its income statement and data sheet. iPod and iPhone units have
+  no ten-year history, so they are shown, not scored.
+- **Thresholds by rule T** (the LOW rule), over the ten years of the FY2007 10-K, the vintage public on 2008-01-04: FY1998-FY2007,
+  each change from the latest 10-K that reports both years. Where a filing publishes "operating income before special charges"
+  for both years of a change (the FY2000 and FY2001 10-Ks, FY1999-FY2001), it replaces the reported figure; FY1998 against FY1997
+  stays as reported (no filing gives FY1997 before its special charges). The values are in the fact sheet (`rule_t`).
+
+  | Signal | Decade (FY1998-FY2007) | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | Mac unit growth | -3.9, 24.8, 32.2, -32.3, 0.5, -2.9, 9.2, 37.8, 17, 33 % | -78 / -32 / 13 / 38 % |
+  | gross margin change | 557.5, 275.4, -51.7, -410.5, 488.9, -36.4, -23.9, 175.3, -3.2, 498.4 bp | -910 / -410 / 90 / 560 bp |
+  | net sales growth | -16.1, 3.2, 30.1, -32.8, 7.1, 8.1, 33.4, 68.3, 38.6, 24.3 % | -82 / -33 / 16 / 68 % |
+  | net sales other than Macs | -23.5, -2.5, 4.4, -12.6, 25.8, 42.1, 95.6, 128.1, 56, 14.7 % | -67 / -23 / 20 / 128 % |
+  | operating margin change | 1950.4, 178.2, 147.4, -1397.6, 671, -6.5, 405.5, 801.3, 90.6, 566.6 bp | -3090 / -1400 / 290 / 1950 bp |
+
+- **Durability.** DURABLE, risk 2, as for ACN, UNP and LOW. The "why" is the 10-K's own words: Apple "designs and develops
+  virtually the entire solution" (FY2008: "nearly"), is the "only maker of hardware using the Mac OS", which "has a minority
+  market share in the personal computer market", and its markets are "highly competitive and characterized by aggressive price
+  cutting, with its resulting downward pressure on gross margins". No disruption theme in `taxonomy_eras.json` is live for a
+  personal-computer and consumer-electronics maker in 2008 (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so the
+  watch list is empty and the builder refuses events until a theme encoding is decided.
+- **Segment bridge and EPS check** (display only): the latest 10-K's product lines with each line's growth (iPhone shown as new
+  in FY07); the EPS check adds other income and expense (mostly interest on $15-25 billion of cash) instead of deducting interest.
+- **Adds nothing:**
+  - the 2008 8-Ks: a director and a principal accounting officer (2008-01-08); Macworld's 4 million iPhones and 5 million Leopard
+    copies to date (2008-01-15, items 2.02 and 8.01); WWDC's 6 million iPhones, the iPhone 3G in 22 countries and its carrier
+    terms (2008-06-09); the bylaws (2008-08-26);
+  - the 2007 8-Ks other than the releases: the name change to Apple Inc. (2007-01-10, before the FY2007 vintage), bylaws, an
+    officer, and the SEC's charges against two former officers (2007-04-24; no action against Apple);
+  - the proxy (2008-01-23) and the 10-Qs beyond the Q3 FY08 gross-margin sentence.
+- **Anachronism list:** Apple-era product names (MacBook Air, App Store, MobileMe, Snow Leopard, iPhone 3GS, iPad, iCloud) join
+  `taxonomy_eras.json` beside "iPhone 3G". No existing model of any ticker contains them, so no output changes.
+
+Controls: altering one value of each print, guide, vintage and the split changes no date before its publication and changes the
+first weekly date after it (17 of 17); a guide for fiscal 2009 first shows on 2008-10-23, the first date with fiscal 2009 current,
+and the split, which restates no fact, changes nothing. Rebuilding the 2008 dates of ACN, UNP and LOW changes nothing.
+
+Seen in the build (method behaviour, not tuned):
+- **BULL and XBULL start from near-zero EPS.** BULL is the FY03-FY07 EPS CAGR, +164.7%/yr ($0.08 to $3.93; FY03-FY08's +131.9%
+  from the Q4 print), at the 75th-percentile P/E: a BULL price of $1,086-1,278 against a stock at $83-189. XBULL is FY03-FY05's
+  +340%/yr ($7,043-9,606). Ratio B runs from -0.03 to 0.10, so the legacy tier reads BUY on all 53 dates.
+- **The market composite sits at the bottom of its grid** (1.00-1.22): even a small XBULL weight lifts the expected price above
+  the hurdle price. The adjusted composite is 2.42-3.05, so the adjusted gap is +1.21 to +2.00 (UNDERVALUED) on every date.
+- **The class follows the EPP floor:** FAIR on the 20 dates where the price stood more than 100% above it ($165-189, 2008-01-04,
+  2008-01-11, 2008-04-25 to 2008-07-23 and 2008-08-08 to 2008-08-29), CHEAP on the other 33. The floor is the median of the
+  calendar-year P/E lows (on 2008-01-04: 2002 85x, 2003 29x, 2004 12x, 2005 20x, 2006 19x, 2007 21x, 2008 46x), 21x times FY07's
+  $3.93 ($83), then 20x times FY08's $5.36 ($107) from the Q4 print.
+- **The P/E window holds FY2003 at 82-144x** (EPS $0.08), so its 90th percentile is 92-95x and its median 31-33x. On FY07 EPS the
+  stock traded at 30-48x (the 43rd-79th percentile) to September and 24.6-24.8x in October (the 20th-21st); on FY08 EPS, from the
+  Q4 print, at 15.4-20.1x (the 1st-5th).
+- **EPS anchors on the last full year:** FY07's $3.93 stands until 2008-10-22, when nine-month FY08 EPS was already $4.10.
+- **BASE growth is the quarter guide less dilution:** diluted shares grew 5.0%/yr over FY03-FY07, so BASE is +24.3%, +24.2%,
+  +28.1% and +20.5%/yr on the four FY08 guides, and -5.4%/yr on the Q1 FY09 range. The growth factor reads -0.5 on 40 dates and
+  -0.29 on the 13 of the Q3 FY08 guide (+33.1% against the FY04-FY07 median of +36.0%).
+- **From the Q4 FY08 print the price sits below the BEAR price:** BEAR is flat FY08 EPS at the 10th-percentile P/E, $112-117,
+  against a stock at $83-108, so Ratio B turns negative and the EPP gap reads -23% to 0%.
+- **A display quirk inherited from the LOW engine:** with no fiscal-year EPS guide the EPS check prints the label and the figure
+  twice ("FY07's $3.93 stands $3.93").
+
+How far each call moves the classes (the 53 dates rebuilt with one encoding changed; no outcome consulted):
+- keeping FY2002 (excluding only the FY2001 loss) would change 20 classes, every FAIR date to CHEAP: the window then starts on
+  2001-09-30 and adds 2001-2002's P/E lows of about 125x, which lifts the EPP floor from 21x to 25x. No tier changes;
+- excluding FY2003 as well would change 3 classes (2008-01-18, 2008-04-18, 2008-09-05: CHEAP to FAIR) and no tier.
+
+Judgement calls that could carry hindsight:
+- excluding FY2002 as distorted (the call that moves the most classes: 20 of 53) and keeping FY2003;
+- the signals, chosen by a builder who knows what Apple became: Mac units and net sales other than Macs (rule T then sets their
+  thresholds mechanically);
+- reading each dollar revenue guide as growth on the year-ago quarter;
+- keeping GAAP over the Q4 FY08 non-GAAP measures, and the gross-margin expectations out of the inputs;
+- DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -1913,6 +2055,8 @@ What the gates enforce:
   name "growing competition from online and multi-channel retailers" ("LOW 2015-2016"). It stays there after the
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
   Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023", "LOW 2024-2026").
+  AAPL in 2008 carries none: no theme in the registry is live for a personal-computer and consumer-electronics maker
+  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL").
 
 ## Workflow
 
