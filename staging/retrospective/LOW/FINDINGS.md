@@ -1,8 +1,8 @@
 # LOW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 982 weekly dates from 2008-01-04 to 2026-10-23. The newest date has no outcome
-yet, and dates after 2024-10-25 have only part of the two-year horizon. They are **labels and hypotheses**: never feed
-them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed:
+Patterns seen in `outcome.json` for the 982 weekly dates from 2008-01-04 to 2026-10-23. The 26 dates from 2026-05-01
+have no outcome yet, and dates after 2024-10-25 have only part of the two-year horizon. They are **labels and
+hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed:
 2008 in 88b0255, 2009-2010 in bfe09e0, 2011-2012 in 0b9b6f8, 2013-2014 in 7eeed23, 2015-2016 in 304d9dc, 2017-2018 in
 fe7f63f, 2019-2020 in bc1e818, 2021-2023 in e9d57e8, 2024-2026 in e36364d (text corrections in 36ef0c0). Prices run to
 2026-10-23 for the earlier batches, 2026-10-26 from 2013 and 2026-10-28 from 2017; every horizon used here ends by
@@ -512,17 +512,17 @@ fe7f63f, 2019-2020 in bc1e818, 2021-2023 in e9d57e8, 2024-2026 in e36364d (text 
 - **Every RICH call held, and no date beat SPY.** SPY returned +24% to +50% over the two years from these dates (median
   +39%), the stock -29% to +36%; the median shortfall was 39 points. One date cleared the hurdle: 2024-01-26 at $211.98
   (CHEAP, +35.5%), two days after the year's lowest close ($210.55). The other CHEAP date, 2024-01-05, returned +19.5%.
-  The six RICH dates of January-February, at 16.8-17.9x (the 31st-50th percentile), returned +22% to +31% and still
-  held: just under the hurdle, and behind SPY.
+  The six RICH dates to 2024-02-23, still on the fiscal 2023 guide, at 16.8-17.9x (the 31st-50th percentile), returned
+  +22% to +31% and still held: below the hurdle (by 1.4-10.2 points) and behind SPY.
 - **The tier ranked the year in order, and so did the gap and the price.** BUY +9%, ACCUMULATE -6%, WATCHLIST -19%,
   AVOID -26%. Ratio B ranked the dates at -0.90, the adjusted gap at +0.92 and the price alone at -0.84; on the m12-24
   average -0.95, +0.94 and -0.99.
-- **The endpoint split the year in three.** The eight January-February dates, still on the fiscal 2023 guide (16.3-17.9x,
+- **The endpoint split the year in three.** The eight dates to 2024-02-23, still on the fiscal 2023 guide (16.3-17.9x,
   the 24th-50th percentile), ended in January-February 2026, as the stock ran from $245 to its 2026-02-13 high
   ($287.39), and returned +20% to +36%. The 25 dates on the fiscal 2024 GAAP guide (17.6-21.3x, the 42nd-89th
   percentile) ended from late February to mid-August 2026 and returned -10% to +15%. The ten on the adjusted guide from
-  2024-08-21 (20.5-23.9x, the 81st-98th percentile) ended in August-October 2026, near the 2026-10-05 low ($179.50), and
-  returned -7% to -29%.
+  2024-08-21 (20.5-23.9x, the 81st-98th percentile) ended from 2026-08-21 to 2026-10-23 at $181-216, around the
+  2026-10-05 low ($179.50), and returned -7% to -29%.
 - **The stock landed on BASE, and BASE was a decline.** BASE carried the guides' falling sales for two years (BASE
   growth -3.5%/yr, then -1.3% to -4.9%/yr), so its price ($194-218) sat at or below the entry price on 40 of the 43
   dates. The stock landed nearest BASE on all 43; BEAR ($155-190), BULL (the decade CAGR, 19.1-23.0%/yr) and XBULL
@@ -559,9 +559,9 @@ fe7f63f, 2019-2020 in bc1e818, 2021-2023 in e9d57e8, 2024-2026 in e36364d (text 
 ## 2026 (43 dates; six-month horizon to 2026-04-24 only)
 
 - **Too early to score.** The 17 dates with a six-month outcome all fell (-7% to -26%) while SPY rose (+7% to +22%). The
-  eight January-February dates, RICH at 20.2-23.5x (the 84th-99th percentile; AVOID on seven), fell -7% to -26%. The
-  nine on the fiscal 2026 guide fell -13% to -23%: the one CHEAP date (2026-03-20, $224.63) least, the three FAIR dates
-  -16% to -21%.
+  eight dates to 2026-02-20, still on the fiscal 2025 guide, RICH at 20.2-23.5x (the 84th-99th percentile; AVOID on
+  seven), fell -7% to -26%. The nine on the fiscal 2026 guide fell -13% to -23%: the one CHEAP date (2026-03-20,
+  $224.63) least, the three FAIR dates -16% to -21%.
 - **To watch: CHEAP on a guide that buys its growth.** From 2026-05-15 the class reads CHEAP on 21 of 24 dates, at
   $181-223 (14.8-17.9x, the 12th-47th percentile). Those reads lean on BASE growth of +9.7%, then +7.4%/yr: the sales
   guide (+7-9%, then +6.6%, with FBM's first full year; comps guided at 0-2%, then flat), a margin step worth -3.5%,
@@ -651,7 +651,7 @@ Rank correlation (Spearman) with the two-year total return, within each year:
   - it takes BULL from the decade's EPS CAGR on the latest EPS (21-25% in 2008, 8.5-11% in 2011-2012), and once BASE
     exceeds that CAGR, BULL can add nothing to BASE (from 2012-02-28 to 2018-02-23);
   - it scores net sales against rule T's BASE line of +10% or more, set from the fiscal 1997-2006 growth decade;
-  - it adds the decade's buyback rate to BASE (5.2-6.0%/yr in 2024-2026) whatever the latest year's repurchases, and
+  - it adds the decade's buyback rate to BASE (5.2-6.2%/yr in 2024-2026) whatever the latest year's repurchases, and
     carries the guide year's sales growth for two more years on top of a guided EPS that already includes it.
 
   The net-sales signal read BEAR on 763 of the 878 dates, which held the proxy composite at 1.30-2.70 until 2020 and at
@@ -683,7 +683,8 @@ Rank correlation (Spearman) with the two-year total return, within each year:
   5. Read the own-history P/E against a longer window or the market's multiple, so that one regime (a growth decade, a
      crisis) does not set the percentiles for the next (2008 and 2013-2014). 2015, January-February 2018 and
      August-October 2024 (the 81st-98th percentile, -7% to -29% over two years) cut the other way: at the window's top
-     percentiles the stock did lag. Any replacement must keep that call.
+     percentiles RICH held on 46 of 52, 4 of 8 and 10 of 10 dates. That too is an outcome pattern: check whether a
+     replacement keeps the call on other tickers' cycles, not as a requirement fitted to LOW.
   6. When a guide states the charges inside its margin step, project growth from the step without them and treat the
      charges as a one-year level change. The Q3 FY18 release gave them in basis points; the Q2 FY18 release gave them
      only in dollars, so this would mean deriving a figure the company did not publish, a change to the Fremont rule.
@@ -698,13 +699,14 @@ Rank correlation (Spearman) with the two-year total return, within each year:
      2022-02-24, while the stock lagged SPY by 14 and 30 points at the median. 2008 was the same (FINDINGS above: no down
      year, BUY all year, the stock ended at BEAR). 2024 shows the other side: once FY23 entered as the window's first
      down year, BEAR applied -5.2%/yr ($155-159), the tier left BUY on 20 of the 35 scored dates from 2024-02-28, and
-     it ranked the year in order (BUY +9% down to AVOID -26%). Test a BEAR case built from the decade's worst margin on
-     the guided sales, beside the worst EPS year, on other tickers with a decade of uninterrupted growth.
+     on those dates it ranked in order (BUY +2% down to AVOID -26%). Test a BEAR case built from the decade's worst
+     margin on the guided sales, beside the worst EPS year, on other tickers with a decade of uninterrupted growth.
   9. BASE, the growth applied for the two years after the guided year's EPS, adds the decade's buyback rate whatever
      the latest repurchases and repeats the guide year's sales growth, so it can run far above the EPS growth the guide
      itself implies. The fiscal 2025 guide implied about +2.4% for the year (its $12.275 midpoint against FY24's
-     $11.99); BASE read +6.4%/yr, 5.6 points of it the buyback term, while repurchases fell to $0.21 billion for the
-     year. The fiscal 2026 sales guide (+7-9%) includes FBM's first full year against comps guided at 0-2%; its EPS
+     $11.99); BASE read +6.4-6.5%/yr, 5.6-5.7 points of it the buyback term, while repurchases fell to $0.11 billion in
+     the first quarter (published 2025-05-21) and $0.21 billion for the year (published 2026-02-25, after those reads).
+     The fiscal 2026 sales guide (+7-9%) includes FBM's first full year against comps guided at 0-2%; its EPS
      guide implied about +2%, and BASE read +9.7%/yr for the two years after it. The CHEAP reads from March 2026 lean
      on that. Test a BASE capped at the guided EPS growth, or built from the comps guide and the latest year's share
      change, on other tickers that buy companies or pause buybacks. This is a mechanism visible at the time, not an
