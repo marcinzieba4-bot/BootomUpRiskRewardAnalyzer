@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for AAPL retrospectives (retro/build_aapl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Apple earnings release of the period came after the close. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, and events published since that vintage. Apple's fiscal year is the 52 or 53-week period that ends on the last Saturday of September. Values are as reported (GAAP), per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Apple guides one quarter at a time: each release gives the next quarter's revenue (a dollar level) and diluted EPS, read as growth against the same quarter a year earlier (prior_sales_b, from that quarter's own release); no release or filing of the period gives a full-year revenue, EPS or operating-margin guide. A 10-Q's or 10-K's gross-margin expectation (gm_pct for a quarter, gm_guide_pct for a fiscal year) is shown in the guide line and feeds no input. A print's margins and growth rates are derived from the published income statement and data sheet (the raw figures are in its notes); non_mac_pct is the growth of net sales less Mac (CPU) net sales. rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for AAPL retrospectives (retro/build_aapl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Apple earnings release of the period came after the close. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, and events published since that vintage. Apple's fiscal year is the 52 or 53-week period that ends on the last Saturday of September. Values are as reported (GAAP), per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Apple guides one quarter at a time: each release gives the next quarter's revenue (a dollar level) and diluted EPS, read as growth against the same quarter a year earlier (prior_sales_b, from that quarter's own release); no release or filing of the period gives a full-year revenue, EPS or operating-margin guide. A 10-Q's or 10-K's gross-margin expectation (gm_pct for a quarter, gm_guide_pct for a fiscal year) is shown in the guide line and feeds no input. A print's margins and growth rates are derived from the published income statement and data sheet (the raw figures are in its notes); non_mac_pct is the growth of net sales less Mac (CPU) net sales. rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing. A filing that re-presents a 10-K is a vintage of its own: the FY2009 10-K/A of 2010-01-26 revises FY2007-FY2009 for the accounting principles Apple adopted retrospectively in Q1 FY10, and amends Items 6-8 only, so its business wording is the FY2009 10-K's. A guide's prior_sales_b is the same quarter a year earlier on the guide's own accounting basis, from the latest filing published by the guide's date that reports it (the revised FY2009 quarters for the guides of fiscal 2010). From FY2009 a print's lt_securities_b holds the long-term marketable securities (display only); from Q1 FY10 a print has no iPhone and Apple TV deferral (deferred_iphone_b null); ipad_units_k from Q3 FY10.",
  "ticker": "AAPL",
  "sources": {
   "A1": {
@@ -141,6 +141,160 @@
    "title": "Apple Inc. FY2008 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312508224958/d10k.htm",
    "supports": "selected financial data FY2004-FY2008 (net sales, diluted EPS, diluted shares 902,139K in FY08); income statement FY2006-FY2008 (gross margin, operating income, other income and expense $620M, effective tax rate 30%); net sales and unit sales by product FY2006-FY2008; cash flow (operating cash flow $9,596M, capital expenditure $1,091M); no dividends in fiscal 2008 or 2007; 247 retail stores; gross margin expectation 'about 30% in 2009'"
+  },
+  "A21": {
+   "published": "2009-01-22",
+   "filed": "2009-01-21 16:29 ET (after the close)",
+   "title": "Apple Q1 FY09 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509009009/dex991.htm",
+   "supports": "Q1 FY09 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet); deferred revenue; non-GAAP 'Adjusted' measures for the quarter; Q2 FY09 outlook: revenue of about $7.6 billion to $8 billion, EPS of about $.90 to $1.00; webcast at 2:00 p.m. PST"
+  },
+  "A22": {
+   "published": "2009-01-23",
+   "filed": "2009-01-22 21:45 ET (after the close)",
+   "title": "Apple Inc. Q1 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509009937/d10q.htm",
+   "supports": "gross margin expectation: 'about 32.5% in the second quarter of 2009 and about 30% in the second half of 2009'"
+  },
+  "A23": {
+   "published": "2009-04-23",
+   "filed": "2009-04-22 16:29 ET (after the close)",
+   "title": "Apple Q2 FY09 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509084599/dex991.htm",
+   "supports": "Q2 FY09 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet); deferred revenue; non-GAAP measures for the quarter; Q3 FY09 outlook: revenue of about $7.7 billion to $7.9 billion, EPS of about $.95 to $1.00; webcast at 2:00 p.m. PDT"
+  },
+  "A24": {
+   "published": "2009-04-24",
+   "filed": "2009-04-23 16:12 ET (after the close)",
+   "title": "Apple Inc. Q2 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509085781/d10q.htm",
+   "supports": "gross margin expectation: 'about 33% in the third quarter of 2009 and about 30% in the fourth quarter of 2009'"
+  },
+  "A25": {
+   "published": "2009-07-22",
+   "filed": "2009-07-21 16:29 ET (after the close)",
+   "title": "Apple Q3 FY09 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509152290/dex991.htm",
+   "supports": "Q3 FY09 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet); deferred revenue; non-GAAP measures for the quarter; Q4 FY09 outlook: revenue of about $8.7 billion to $8.9 billion, EPS of about $1.18 to $1.23; webcast at 2:00 p.m. PDT"
+  },
+  "A26": {
+   "published": "2009-07-23",
+   "filed": "2009-07-22 16:41 ET (after the close)",
+   "title": "Apple Inc. Q3 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509153165/d10q.htm",
+   "supports": "gross margin expectation: 'about 34% in the fourth quarter of 2009'"
+  },
+  "A27": {
+   "published": "2009-10-20",
+   "filed": "2009-10-19 16:29 ET (after the close)",
+   "title": "Apple Q4 FY09 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509209633/dex991.htm",
+   "supports": "Q4 and FY09 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet); deferred revenue; non-GAAP measures for the quarter only; Q1 FY10 outlook: revenue of about $11.3 billion to $11.6 billion, EPS of about $1.70 to $1.78; webcast at 2:00 p.m. PDT"
+  },
+  "A28": {
+   "published": "2009-10-28",
+   "filed": "2009-10-27 16:18 ET (after the close)",
+   "title": "Apple Inc. FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312509214859/d10k.htm",
+   "supports": "selected financial data FY2005-FY2009 (net sales, diluted EPS, diluted shares 907,005K in FY09); income statement FY2007-FY2009; net sales and unit sales by product FY2007-FY2009; cash flow; no dividends in 2009 or 2008; no debt outstanding; 273 retail stores; competition and Mac OS wording; gross margin expectation 'about 34% in the first quarter of 2010'"
+  },
+  "A29": {
+   "published": "2010-01-26",
+   "filed": "2010-01-25 16:27 ET (after the close)",
+   "title": "Apple Q1 FY10 results (8-K ex.99.1 to ex.99.3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510012096/dex991.htm",
+   "supports": "Q1 FY10 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), both years under the accounting principles adopted retrospectively in the quarter; exhibit 99.3 revises every quarter of FY2007-FY2009 (FY2009 quarters: net sales $11,880M, $9,084M, $9,734M, $12,207M); Q2 FY10 outlook: revenue of about $11.0 billion to $11.4 billion, EPS of about $2.06 to $2.18; webcast at 2:00 p.m. PST"
+  },
+  "A30": {
+   "published": "2010-01-26",
+   "filed": "2010-01-25 16:25 ET (after the close)",
+   "title": "Apple Inc. FY2009 10-K/A (retrospective adoption of the new accounting principles)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510012091/d10ka.htm",
+   "supports": "selected financial data FY2005-FY2009 as revised (net sales, diluted EPS: FY09 $9.08, FY08 $6.78, FY07 $3.93); income statement FY2007-FY2009 as revised; net sales by product FY2007-FY2009 as revised; amends Items 6, 7 and 8 only"
+  },
+  "A31": {
+   "published": "2010-01-26",
+   "filed": "2010-01-25 16:23 ET (after the close)",
+   "title": "Apple Inc. Q1 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510012085/d10q.htm",
+   "supports": "gross margin expectation: 'about 39% in the second quarter of 2010'"
+  },
+  "A32": {
+   "published": "2010-04-21",
+   "filed": "2010-04-20 16:30 ET (after the close)",
+   "title": "Apple Q2 FY10 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510087786/dex991.htm",
+   "supports": "Q2 FY10 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet); Q3 FY10 outlook: revenue of about $13.0 billion to $13.4 billion, EPS of about $2.28 to $2.39; webcast at 2:00 p.m. PDT"
+  },
+  "A33": {
+   "published": "2010-04-22",
+   "filed": "2010-04-21 16:39 ET (after the close)",
+   "title": "Apple Inc. Q2 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510088957/d10q.htm",
+   "supports": "gross margin expectation: 'about 36% in the third quarter of 2010'"
+  },
+  "A34": {
+   "published": "2010-07-21",
+   "filed": "2010-07-20 16:33 ET (after the close)",
+   "title": "Apple Q3 FY10 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510161807/dex991.htm",
+   "supports": "Q3 FY10 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), iPad units; Q4 FY10 outlook: revenue of about $18 billion, EPS of about $3.44; webcast at 2:00 p.m. PDT"
+  },
+  "A35": {
+   "published": "2010-07-22",
+   "filed": "2010-07-21 16:37 ET (after the close)",
+   "title": "Apple Inc. Q3 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510162840/d10q.htm",
+   "supports": "gross margin expectation: 'about 35% in the fourth quarter of 2010'"
+  },
+  "A36": {
+   "published": "2010-10-19",
+   "filed": "2010-10-18 16:29 ET (after the close)",
+   "title": "Apple Q4 FY10 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510230992/dex991.htm",
+   "supports": "Q4 and FY10 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), iPad units; Q1 FY11 outlook: revenue of about $23 billion, EPS of about $4.80; webcast at 2:00 p.m. PDT"
+  },
+  "A37": {
+   "published": "2010-10-28",
+   "filed": "2010-10-27 16:36 ET (after the close)",
+   "title": "Apple Inc. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510238044/d10k.htm",
+   "supports": "selected financial data FY2006-FY2010 (net sales, diluted EPS, diluted shares 924,712K in FY10); income statement FY2008-FY2010; net sales and unit sales by product FY2008-FY2010; cash flow; no dividends in 2010 or 2009; no debt outstanding; 317 retail stores; competition and Mac OS wording; gross margin expectation 'about 36% in the first quarter of 2011'"
+  },
+  "A38": {
+   "published": "2011-01-19",
+   "filed": "2011-01-18 16:30 ET (after the close)",
+   "title": "Apple Q1 FY11 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511009392/dex991.htm",
+   "supports": "Q1 FY11 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), iPad units; Q2 FY11 outlook: revenue of about $22 billion, EPS of about $4.90; webcast at 2:00 p.m. PST"
+  },
+  "A39": {
+   "published": "2011-04-21",
+   "filed": "2011-04-20 16:30 ET (after the close)",
+   "title": "Apple Q2 FY11 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511103732/dex991.htm",
+   "supports": "Q2 FY11 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), iPad units; Q3 FY11 outlook: revenue of about $23 billion, EPS of about $5.03; webcast at 2:00 p.m. PDT"
+  },
+  "A40": {
+   "published": "2011-07-20",
+   "filed": "2011-07-19 16:29 ET (after the close)",
+   "title": "Apple Q3 FY11 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511191368/dex991.htm",
+   "supports": "Q3 FY11 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), iPad units; Q4 FY11 outlook: revenue of about $25 billion, EPS of about $5.50; webcast at 2:00 p.m. PDT"
+  },
+  "A41": {
+   "published": "2011-10-19",
+   "filed": "2011-10-18 16:31 ET (after the close)",
+   "title": "Apple Q4 FY11 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511273826/d244527dex991.htm",
+   "supports": "Q4 and FY11 income statement, balance sheet, cash flow; Mac, iPod and iPhone units and product net sales (data sheet), iPad units; Q1 FY12 outlook, a quarter that 'will span 14 weeks rather than 13': revenue of about $37 billion, EPS of about $9.30; webcast at 2:00 p.m. PDT"
+  },
+  "A42": {
+   "published": "2011-10-27",
+   "filed": "2011-10-26 16:35 ET (after the close)",
+   "title": "Apple Inc. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511282113/d220209d10k.htm",
+   "supports": "selected financial data FY2007-FY2011 (net sales, diluted EPS, diluted shares 936,645K in FY11); income statement FY2009-FY2011; net sales and unit sales by product FY2009-FY2011; cash flow; no dividends in 2011 or 2010; no debt outstanding; 357 retail stores; competition and Mac OS X wording"
   }
  },
  "history_vintages": [
@@ -374,6 +528,543 @@
    "shares_published": {
     "2003": "2007-11-16"
    }
+  },
+  {
+   "published": "2009-10-28",
+   "sources": [
+    "A28",
+    "A20",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A25"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY09",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its personal computers, mobile communication devices, and consumer electronics, including the hardware, operating system, numerous software applications, and related services', and is the 'only authorized maker of hardware using the Mac OS', which 'has a minority market share in the personal computer market' (its own FY2009 10-K); 273 retail stores; it 'competes in highly competitive global markets characterized by aggressive price cutting, with resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2003": "2003-09-27",
+    "2004": "2004-09-25",
+    "2005": "2005-09-24",
+    "2006": "2006-09-30",
+    "2007": "2007-09-29",
+    "2008": "2008-09-27",
+    "2009": "2009-09-26"
+   },
+   "eps_gaap": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 5.36,
+    "2009": 6.29
+   },
+   "eps_normalized": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 5.36,
+    "2009": 6.29
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY05-FY09 from the FY2009 10-K, FY04 from the FY2008 10-K, FY03 from the FY2007 10-K; FY03-FY05 as restated for stock-based compensation in the FY2006 10-K); no company-published figure excluding a one-off; FY01 excluded: a net loss ($(0.04) per diluted share, FY2005 10-K), no published adjusted figure; FY02 excluded: $0.06 GAAP EPS (as restated, FY2006 10-K) depressed by items the 10-K lists for the year, a $42M net loss on non-current investments and $30M of restructuring charges, together more than the year's $42M net income, no published adjusted figure; so the history and the P/E window start with FY03 (the ACN FY02 rule)",
+   "revenue_usd_b": {
+    "2003": 6.207,
+    "2004": 8.279,
+    "2005": 13.931,
+    "2006": 19.315,
+    "2007": 24.006,
+    "2008": 32.479,
+    "2009": 36.537
+   },
+   "diluted_shares_m": {
+    "2003": 723.352,
+    "2009": 907.005
+   },
+   "pe_window_start": "2002-09-29",
+   "prev_fy_op_margin": 20.96,
+   "prev_fy_op_margin_note": "FY09 operating income $7,658M / net sales $36,537M (FY2009 10-K)",
+   "prev_fy_gross_margin": 35.96,
+   "prev_fy_sales_growth": 12.5,
+   "prev_fy_mac_units_k": 10396,
+   "prev_fy_mac_units_pct": 7.0,
+   "other_income_b": 0.326,
+   "other_income_note": "FY09 total other income and expense (FY2009 10-K)",
+   "tax_rate": 0.2856,
+   "tax_note": "FY09 effective rate: provision $2,280M / pre-tax income $7,984M (FY2009 10-K); no tax-rate guide",
+   "fcf_b": 9.015,
+   "fcf_label": "FY09",
+   "prev_q_mac_units_pct": 4.3,
+   "prev_q_label": "Q3 FY09",
+   "prev_q_source": "A25",
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'did not declare or pay cash dividends in either 2009 or 2008' (FY2009 10-K)",
+   "cash_return_text": "no dividend, no repurchases, no debt outstanding",
+   "business_line": "Mac personal computers, iPod, iPhone and the iTunes Store; 273 retail stores",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Portables",
+     9.472,
+     9.2
+    ],
+    [
+     "iPod",
+     8.091,
+     -11.6
+    ],
+    [
+     "iPhone and related products and services",
+     6.754,
+     266.3
+    ],
+    [
+     "Desktops",
+     4.308,
+     -23.1
+    ],
+    [
+     "Other music related products and services",
+     4.036,
+     20.8
+    ],
+    [
+     "Software, service and other sales",
+     2.406,
+     9.0
+    ],
+    [
+     "Peripherals and other hardware",
+     1.47,
+     -11.4
+    ]
+   ],
+   "groups_basis": "FY09 net sales by product (FY2009 10-K)",
+   "eps_published": {
+    "2003": "2007-11-16",
+    "2004": "2008-11-05"
+   },
+   "shares_published": {
+    "2003": "2007-11-16"
+   }
+  },
+  {
+   "published": "2010-01-26",
+   "sources": [
+    "A30",
+    "A28",
+    "A20",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A25"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY09",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its personal computers, mobile communication devices, and consumer electronics, including the hardware, operating system, numerous software applications, and related services', and is the 'only authorized maker of hardware using the Mac OS', which 'has a minority market share in the personal computer market' (its own FY2009 10-K); 273 retail stores; it 'competes in highly competitive global markets characterized by aggressive price cutting, with resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2003": "2003-09-27",
+    "2004": "2004-09-25",
+    "2005": "2005-09-24",
+    "2006": "2006-09-30",
+    "2007": "2007-09-29",
+    "2008": "2008-09-27",
+    "2009": "2009-09-26"
+   },
+   "eps_gaap": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08
+   },
+   "eps_normalized": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY05-FY09 from the FY2009 10-K/A, FY04 from the FY2008 10-K, FY03 from the FY2007 10-K; FY03-FY05 as restated for stock-based compensation in the FY2006 10-K; FY07-FY09 as revised in the FY2009 10-K/A for the accounting principles adopted retrospectively in Q1 FY10 (iPhone and Apple TV revenue recognized at sale)); no company-published figure excluding a one-off; FY01 excluded: a net loss ($(0.04) per diluted share, FY2005 10-K), no published adjusted figure; FY02 excluded: $0.06 GAAP EPS (as restated, FY2006 10-K) depressed by items the 10-K lists for the year, a $42M net loss on non-current investments and $30M of restructuring charges, together more than the year's $42M net income, no published adjusted figure; so the history and the P/E window start with FY03 (the ACN FY02 rule)",
+   "revenue_usd_b": {
+    "2003": 6.207,
+    "2004": 8.279,
+    "2005": 13.931,
+    "2006": 19.315,
+    "2007": 24.578,
+    "2008": 37.491,
+    "2009": 42.905
+   },
+   "diluted_shares_m": {
+    "2003": 723.352,
+    "2009": 907.005
+   },
+   "pe_window_start": "2002-09-29",
+   "prev_fy_op_margin": 27.36,
+   "prev_fy_op_margin_note": "FY09 operating income $11,740M / net sales $42,905M as revised (FY2009 10-K/A)",
+   "prev_fy_gross_margin": 40.14,
+   "prev_fy_sales_growth": 14.4,
+   "prev_fy_mac_units_k": 10396,
+   "prev_fy_mac_units_pct": 7.0,
+   "other_income_b": 0.326,
+   "other_income_note": "FY09 total other income and expense (FY2009 10-K/A)",
+   "tax_rate": 0.3175,
+   "tax_note": "FY09 effective rate as revised: provision $3,831M / pre-tax income $12,066M (FY2009 10-K/A); no tax-rate guide",
+   "fcf_b": 9.015,
+   "fcf_label": "FY09",
+   "prev_q_mac_units_pct": 4.3,
+   "prev_q_label": "Q3 FY09",
+   "prev_q_source": "A25",
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'did not declare or pay cash dividends in either 2009 or 2008' (FY2009 10-K)",
+   "cash_return_text": "no dividend, no repurchases, no debt outstanding",
+   "business_line": "Mac personal computers, iPod, iPhone and the iTunes Store; 273 retail stores",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone and related products and services",
+     13.033,
+     93.3
+    ],
+    [
+     "Portables",
+     9.535,
+     9.2
+    ],
+    [
+     "iPod",
+     8.091,
+     -11.6
+    ],
+    [
+     "Desktops",
+     4.324,
+     -23.1
+    ],
+    [
+     "Other music related products and services",
+     4.036,
+     20.8
+    ],
+    [
+     "Software, service and other sales",
+     2.411,
+     9.2
+    ],
+    [
+     "Peripherals and other hardware",
+     1.475,
+     -12.9
+    ]
+   ],
+   "groups_basis": "FY09 net sales by product as revised (FY2009 10-K/A)",
+   "eps_published": {
+    "2003": "2007-11-16",
+    "2004": "2008-11-05"
+   },
+   "shares_published": {
+    "2003": "2007-11-16"
+   }
+  },
+  {
+   "published": "2010-10-28",
+   "sources": [
+    "A37",
+    "A30",
+    "A20",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A34"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY10",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications, and related services', and is the 'only authorized maker of hardware using the Mac OS', which 'has a minority market share in the personal computer market' (its own FY2010 10-K); 317 retail stores; it 'competes in highly competitive global markets characterized by aggressive price cutting, with resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2003": "2003-09-27",
+    "2004": "2004-09-25",
+    "2005": "2005-09-24",
+    "2006": "2006-09-30",
+    "2007": "2007-09-29",
+    "2008": "2008-09-27",
+    "2009": "2009-09-26",
+    "2010": "2010-09-25"
+   },
+   "eps_gaap": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 15.15
+   },
+   "eps_normalized": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 15.15
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY06-FY10 from the FY2010 10-K, FY05 from the FY2009 10-K/A, FY04 from the FY2008 10-K, FY03 from the FY2007 10-K; FY03-FY05 as restated for stock-based compensation in the FY2006 10-K; FY07-FY09 as revised in the FY2009 10-K/A for the accounting principles adopted retrospectively in Q1 FY10 (iPhone and Apple TV revenue recognized at sale)); no company-published figure excluding a one-off; FY01 excluded: a net loss ($(0.04) per diluted share, FY2005 10-K), no published adjusted figure; FY02 excluded: $0.06 GAAP EPS (as restated, FY2006 10-K) depressed by items the 10-K lists for the year, a $42M net loss on non-current investments and $30M of restructuring charges, together more than the year's $42M net income, no published adjusted figure; so the history and the P/E window start with FY03 (the ACN FY02 rule)",
+   "revenue_usd_b": {
+    "2003": 6.207,
+    "2004": 8.279,
+    "2005": 13.931,
+    "2006": 19.315,
+    "2007": 24.578,
+    "2008": 37.491,
+    "2009": 42.905,
+    "2010": 65.225
+   },
+   "diluted_shares_m": {
+    "2003": 723.352,
+    "2010": 924.712
+   },
+   "pe_window_start": "2002-09-29",
+   "prev_fy_op_margin": 28.19,
+   "prev_fy_op_margin_note": "FY10 operating income $18,385M / net sales $65,225M (FY2010 10-K)",
+   "prev_fy_gross_margin": 39.38,
+   "prev_fy_sales_growth": 52.0,
+   "prev_fy_mac_units_k": 13662,
+   "prev_fy_mac_units_pct": 31.4,
+   "other_income_b": 0.155,
+   "other_income_note": "FY10 total other income and expense (FY2010 10-K)",
+   "tax_rate": 0.2442,
+   "tax_note": "FY10 effective rate: provision $4,527M / pre-tax income $18,540M (FY2010 10-K); no tax-rate guide",
+   "fcf_b": 16.59,
+   "fcf_label": "FY10",
+   "prev_q_mac_units_pct": 33.4,
+   "prev_q_label": "Q3 FY10",
+   "prev_q_source": "A34",
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'did not declare or pay cash dividends in either 2010 or 2009' (FY2010 10-K)",
+   "cash_return_text": "no dividend, no repurchases, no debt outstanding",
+   "business_line": "Mac, iPhone, iPad, iPod and the iTunes Store; 317 retail stores",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone and related products and services",
+     25.179,
+     93.2
+    ],
+    [
+     "Portables",
+     11.278,
+     18.3
+    ],
+    [
+     "iPod",
+     8.274,
+     2.3
+    ],
+    [
+     "Desktops",
+     6.201,
+     43.4
+    ],
+    [
+     "iPad and related products and services",
+     4.958,
+     null
+    ],
+    [
+     "Other music related products and services",
+     4.948,
+     22.6
+    ],
+    [
+     "Software, service and other sales",
+     2.573,
+     6.7
+    ],
+    [
+     "Peripherals and other hardware",
+     1.814,
+     23.0
+    ]
+   ],
+   "groups_basis": "FY10 net sales by product (FY2010 10-K)",
+   "eps_published": {
+    "2003": "2007-11-16",
+    "2004": "2008-11-05",
+    "2005": "2010-01-26"
+   },
+   "shares_published": {
+    "2003": "2007-11-16"
+   }
+  },
+  {
+   "published": "2011-10-27",
+   "sources": [
+    "A42",
+    "A37",
+    "A30",
+    "A20",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A40"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY11",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications, and related services', and is 'the only authorized maker of hardware using Mac OS X, which has a minority market share in the personal computer market' (its own FY2011 10-K); 357 retail stores; its products and services 'compete in highly competitive global markets characterized by aggressive price cutting, with resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2003": "2003-09-27",
+    "2004": "2004-09-25",
+    "2005": "2005-09-24",
+    "2006": "2006-09-30",
+    "2007": "2007-09-29",
+    "2008": "2008-09-27",
+    "2009": "2009-09-26",
+    "2010": "2010-09-25",
+    "2011": "2011-09-24"
+   },
+   "eps_gaap": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 15.15,
+    "2011": 27.68
+   },
+   "eps_normalized": {
+    "2003": 0.08,
+    "2004": 0.34,
+    "2005": 1.55,
+    "2006": 2.27,
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 15.15,
+    "2011": 27.68
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY07-FY11 from the FY2011 10-K, FY06 from the FY2010 10-K, FY05 from the FY2009 10-K/A, FY04 from the FY2008 10-K, FY03 from the FY2007 10-K; FY03-FY05 as restated for stock-based compensation in the FY2006 10-K; FY07-FY09 as revised in the FY2009 10-K/A for the accounting principles adopted retrospectively in Q1 FY10 (iPhone and Apple TV revenue recognized at sale)); no company-published figure excluding a one-off; FY02 excluded: $0.06 GAAP EPS (as restated, FY2006 10-K) depressed by items the 10-K lists for the year, a $42M net loss on non-current investments and $30M of restructuring charges, together more than the year's $42M net income, no published adjusted figure; so the history and the P/E window start with FY03 (the ACN FY02 rule)",
+   "revenue_usd_b": {
+    "2003": 6.207,
+    "2004": 8.279,
+    "2005": 13.931,
+    "2006": 19.315,
+    "2007": 24.578,
+    "2008": 37.491,
+    "2009": 42.905,
+    "2010": 65.225,
+    "2011": 108.249
+   },
+   "diluted_shares_m": {
+    "2003": 723.352,
+    "2011": 936.645
+   },
+   "pe_window_start": "2002-09-29",
+   "prev_fy_op_margin": 31.22,
+   "prev_fy_op_margin_note": "FY11 operating income $33,790M / net sales $108,249M (FY2011 10-K)",
+   "prev_fy_gross_margin": 40.48,
+   "prev_fy_sales_growth": 66.0,
+   "prev_fy_mac_units_k": 16735,
+   "prev_fy_mac_units_pct": 22.5,
+   "other_income_b": 0.415,
+   "other_income_note": "FY11 total other income and expense (FY2011 10-K)",
+   "tax_rate": 0.2422,
+   "tax_note": "FY11 effective rate: provision $8,283M / pre-tax income $34,205M (FY2011 10-K); no tax-rate guide",
+   "fcf_b": 33.269,
+   "fcf_label": "FY11",
+   "prev_q_mac_units_pct": 13.7,
+   "prev_q_label": "Q3 FY11",
+   "prev_q_source": "A40",
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'did not declare or pay cash dividends in either 2011 or 2010' (FY2011 10-K)",
+   "cash_return_text": "no dividend, no repurchases, no debt outstanding",
+   "business_line": "Mac, iPhone, iPad, iPod and the iTunes Store; 357 retail stores",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone and related products and services",
+     47.057,
+     86.9
+    ],
+    [
+     "iPad and related products and services",
+     20.358,
+     310.6
+    ],
+    [
+     "Portables",
+     15.344,
+     36.1
+    ],
+    [
+     "iPod",
+     7.453,
+     -9.9
+    ],
+    [
+     "Desktops",
+     6.439,
+     3.8
+    ],
+    [
+     "Other music related products and services",
+     6.314,
+     27.6
+    ],
+    [
+     "Software, service and other sales",
+     2.954,
+     14.8
+    ],
+    [
+     "Peripherals and other hardware",
+     2.33,
+     28.4
+    ]
+   ],
+   "groups_basis": "FY11 net sales by product (FY2011 10-K)",
+   "eps_published": {
+    "2003": "2007-11-16",
+    "2004": "2008-11-05",
+    "2005": "2010-01-26",
+    "2006": "2010-10-28"
+   },
+   "shares_published": {
+    "2003": "2007-11-16"
+   }
   }
  ],
  "prints": [
@@ -597,6 +1288,539 @@
     "fcf_b": 8.505
    },
    "non_gaap_note": "non-GAAP for the quarter only: 'Adjusted Sales' $11,682M and 'Adjusted Net Income' $2,437M, $2.69 per diluted share, which remove subscription accounting for iPhone and Apple TV; GAAP $7,895M, $1,136M, $1.26"
+  },
+  {
+   "quarter": "Q1 FY09",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-01-22",
+   "source": "A21",
+   "release": "Jan 21",
+   "release_time": "after the close: 8-K accepted 16:29 ET; webcast at 2:00 p.m. PST",
+   "period_end": "2008-12-27",
+   "sales_b": 10.167,
+   "sales_pct": 5.8,
+   "gross_margin": 34.74,
+   "gross_margin_bp": 6,
+   "gross_margin_note": "gross margin $3,532M / net sales $10,167M = 34.74% vs $3,332M / $9,608M = 34.68% in Q1 FY08",
+   "op_margin": 20.91,
+   "op_margin_bp": -122,
+   "op_margin_note": "operating income $2,126M / $10,167M = 20.91% vs $2,126M / $9,608M = 22.13%",
+   "mac_units_k": 2524,
+   "mac_units_pct": 8.8,
+   "mac_note": "2,524K Macs vs 2,319K in Q1 FY08 (data sheet)",
+   "mac_sales_b": 3.554,
+   "non_mac_pct": 9.2,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $10,167M - $3,554M = $6,613M vs $9,608M - $3,552M = $6,056M",
+   "ipod_units_k": 22727,
+   "ipod_units_pct": 2.7,
+   "iphone_units_k": 4363,
+   "eps_q": 1.78,
+   "eps_q_prior": 1.76,
+   "diluted_shares_m": 901.494,
+   "cash_b": 25.647,
+   "cash_note": "cash and cash equivalents $7,236M + short-term marketable securities $18,411M",
+   "lt_securities_b": 2.498,
+   "lt_securities_note": "long-term marketable securities $2,498M",
+   "deferred_iphone_b": 7.293,
+   "deferred_note": "deferred revenue for iPhone and Apple TV: current $4,666M + non-current $2,627M",
+   "outlook_short": "Looking ahead to the second fiscal quarter of 2009, we expect revenue in the range of about $7.6 billion to $8 billion and we expect diluted earnings per share in the range of about $.90 to $1.00.",
+   "next_print": "Q2 FY09 print (late April)",
+   "cash_return_text": "no dividend, no repurchases",
+   "non_gaap_note": "non-GAAP for the quarter only: 'Adjusted Sales' $11,799M and 'Adjusted Net Income' $2,304M, $2.56 per diluted share, which remove subscription accounting for iPhone and Apple TV; GAAP $10,167M, $1,605M, $1.78"
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-04-23",
+   "source": "A23",
+   "release": "Apr 22",
+   "release_time": "after the close: 8-K accepted 16:29 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2009-03-28",
+   "sales_b": 8.163,
+   "sales_pct": 8.7,
+   "gross_margin": 36.4,
+   "gross_margin_bp": 346,
+   "gross_margin_note": "gross margin $2,971M / net sales $8,163M = 36.40% vs $2,474M / $7,512M = 32.93% in Q2 FY08",
+   "op_margin": 20.42,
+   "op_margin_bp": 292,
+   "op_margin_note": "operating income $1,667M / $8,163M = 20.42% vs $1,315M / $7,512M = 17.51%",
+   "mac_units_k": 2216,
+   "mac_units_pct": -3.2,
+   "mac_note": "2,216K Macs vs 2,289K in Q2 FY08 (data sheet)",
+   "mac_sales_b": 2.945,
+   "non_mac_pct": 29.9,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $8,163M - $2,945M = $5,218M vs $7,512M - $3,494M = $4,018M",
+   "ipod_units_k": 11013,
+   "ipod_units_pct": 3.5,
+   "iphone_units_k": 3793,
+   "eps_q": 1.33,
+   "eps_q_prior": 1.16,
+   "diluted_shares_m": 902.993,
+   "cash_b": 25.013,
+   "cash_note": "cash and cash equivalents $4,466M + short-term marketable securities $20,547M",
+   "lt_securities_b": 3.865,
+   "lt_securities_note": "long-term marketable securities $3,865M",
+   "deferred_iphone_b": 8.143,
+   "deferred_note": "deferred revenue for iPhone and Apple TV: current $5,467M + non-current $2,676M",
+   "outlook_short": "Looking ahead to the third fiscal quarter of 2009, we expect revenue in the range of about $7.7 billion to $7.9 billion and we expect diluted earnings per share in the range of about $.95 to $1.00.",
+   "next_print": "Q3 FY09 print (late July)",
+   "cash_return_text": "no dividend, no repurchases",
+   "non_gaap_note": "non-GAAP for the quarter only: 'Adjusted Sales' $9,056M and 'Adjusted Net Income' $1,660M, $1.84 per diluted share, which remove subscription accounting for iPhone and Apple TV; GAAP $8,163M, $1,205M, $1.33"
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-07-22",
+   "source": "A25",
+   "release": "Jul 21",
+   "release_time": "after the close: 8-K accepted 16:29 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2009-06-27",
+   "sales_b": 8.337,
+   "sales_pct": 11.7,
+   "gross_margin": 36.26,
+   "gross_margin_bp": 143,
+   "gross_margin_note": "gross margin $3,023M / net sales $8,337M = 36.26% vs $2,600M / $7,464M = 34.83% in Q3 FY08",
+   "op_margin": 20.06,
+   "op_margin_bp": 141,
+   "op_margin_note": "operating income $1,672M / $8,337M = 20.06% vs $1,392M / $7,464M = 18.65%",
+   "mac_units_k": 2603,
+   "mac_units_pct": 4.3,
+   "mac_note": "2,603K Macs vs 2,496K in Q3 FY08 (data sheet)",
+   "mac_sales_b": 3.329,
+   "non_mac_pct": 29.9,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $8,337M - $3,329M = $5,008M vs $7,464M - $3,610M = $3,854M",
+   "ipod_units_k": 10215,
+   "ipod_units_pct": -7.2,
+   "iphone_units_k": 5208,
+   "eps_q": 1.35,
+   "eps_q_prior": 1.19,
+   "diluted_shares_m": 909.16,
+   "cash_b": 24.222,
+   "cash_note": "cash and cash equivalents $5,605M + short-term marketable securities $18,617M",
+   "lt_securities_b": 6.899,
+   "lt_securities_note": "long-term marketable securities $6,899M",
+   "deferred_iphone_b": 9.627,
+   "deferred_note": "deferred revenue for iPhone and Apple TV: current $6,767M + non-current $2,860M",
+   "outlook_short": "Looking ahead to the fourth fiscal quarter of 2009, we expect revenue in the range of about $8.7 billion to $8.9 billion and we expect diluted earnings per share in the range of about $1.18 to $1.23.",
+   "next_print": "Q4 FY09 print (late October)",
+   "cash_return_text": "no dividend, no repurchases",
+   "non_gaap_note": "non-GAAP for the quarter only: 'Adjusted Sales' $9,742M and 'Adjusted Net Income' $1,942M, $2.14 per diluted share, which remove subscription accounting for iPhone and Apple TV; GAAP $8,337M, $1,229M, $1.35"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-10-20",
+   "source": "A27",
+   "release": "Oct 19",
+   "release_time": "after the close: 8-K accepted 16:29 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2009-09-26",
+   "sales_b": 9.87,
+   "sales_pct": 25.0,
+   "gross_margin": 36.62,
+   "gross_margin_bp": 192,
+   "gross_margin_note": "gross margin $3,614M / net sales $9,870M = 36.62% vs $2,739M / $7,895M = 34.69% in Q4 FY08",
+   "op_margin": 22.22,
+   "op_margin_bp": 395,
+   "op_margin_note": "operating income $2,193M / $9,870M = 22.22% vs $1,442M / $7,895M = 18.26%",
+   "mac_units_k": 3053,
+   "mac_units_pct": 16.9,
+   "mac_note": "3,053K Macs vs 2,611K in Q4 FY08 (data sheet)",
+   "mac_sales_b": 3.952,
+   "non_mac_pct": 38.4,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $9,870M - $3,952M = $5,918M vs $7,895M - $3,620M = $4,275M",
+   "ipod_units_k": 10177,
+   "ipod_units_pct": -7.9,
+   "iphone_units_k": 7367,
+   "eps_q": 1.82,
+   "eps_q_prior": 1.26,
+   "diluted_shares_m": 914.374,
+   "cash_b": 23.464,
+   "cash_note": "cash and cash equivalents $5,263M + short-term marketable securities $18,201M",
+   "lt_securities_b": 10.528,
+   "lt_securities_note": "long-term marketable securities $10,528M",
+   "deferred_iphone_b": 12.137,
+   "deferred_note": "deferred revenue for iPhone and Apple TV: current $8,519M + non-current $3,618M",
+   "outlook_short": "Looking ahead to the first fiscal quarter of 2010, we expect revenue in the range of about $11.3 billion to $11.6 billion and we expect diluted earnings per share in the range of about $1.70 to $1.78.",
+   "next_print": "Q1 FY10 print (late January)",
+   "cash_return_text": "no dividend, no repurchases",
+   "non_gaap_note": "non-GAAP for the quarter only: 'Adjusted Sales' $12,253M and 'Adjusted Net Income' $2,849M, $3.12 per diluted share, which remove subscription accounting for iPhone and Apple TV; GAAP $9,870M, $1,665M, $1.82",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 6.29,
+    "revenue_usd_b": 36.537,
+    "diluted_shares_m": 907.005,
+    "normalization_note": "FY09 = diluted EPS $6.29 as released (subscription accounting); the release's non-GAAP 'Adjusted' measures are given for the quarter only and are a different revenue-recognition basis, not a one-off excluded, so GAAP stands",
+    "op_margin": 20.96,
+    "op_margin_note": "FY09 operating income $7,658M / $36,537M (Q4 FY09 release)",
+    "gross_margin": 35.96,
+    "sales_growth": 12.5,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 0.326,
+    "tax_rate": 0.2856,
+    "tax_note": "FY09 effective rate: provision $2,280M / pre-tax income $7,984M; no tax-rate guide",
+    "fcf_b": 9.015
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-01-26",
+   "source": "A29",
+   "release": "Jan 25",
+   "release_time": "after the close: 8-K accepted 16:27 ET; webcast at 2:00 p.m. PST",
+   "period_end": "2009-12-26",
+   "sales_b": 15.683,
+   "sales_pct": 32.0,
+   "gross_margin": 40.88,
+   "gross_margin_bp": 294,
+   "gross_margin_note": "gross margin $6,411M / net sales $15,683M = 40.88% vs $4,507M / $11,880M = 37.94% in Q1 FY09 as revised",
+   "op_margin": 30.13,
+   "op_margin_bp": 403,
+   "op_margin_note": "operating income $4,725M / $15,683M = 30.13% vs $3,101M / $11,880M = 26.10%",
+   "mac_units_k": 3362,
+   "mac_units_pct": 33.2,
+   "mac_note": "3,362K Macs vs 2,524K in Q1 FY09 as revised (data sheet)",
+   "mac_sales_b": 4.45,
+   "non_mac_pct": 35.1,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $15,683M - $4,450M = $11,233M vs $11,880M - $3,565M = $8,315M",
+   "ipod_units_k": 20970,
+   "ipod_units_pct": -7.7,
+   "iphone_units_k": 8737,
+   "eps_q": 3.67,
+   "eps_q_prior": 2.5,
+   "diluted_shares_m": 919.783,
+   "cash_b": 24.796,
+   "cash_note": "cash and cash equivalents $7,609M + short-term marketable securities $17,187M",
+   "lt_securities_b": 15.024,
+   "lt_securities_note": "long-term marketable securities $15,024M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "outlook_short": "Looking ahead to the second fiscal quarter of 2010, we expect revenue in the range of about $11.0 billion to $11.4 billion and we expect diluted earnings per share in the range of about $2.06 to $2.18.",
+   "next_print": "Q2 FY10 print (late April)",
+   "cash_return_text": "no dividend, no repurchases",
+   "accounting_note": "both years under the accounting principles adopted retrospectively in the quarter (ASU 2009-13 and 2009-14): the release compares with Q1 FY09 as revised"
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-04-21",
+   "source": "A32",
+   "release": "Apr 20",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2010-03-27",
+   "sales_b": 13.499,
+   "sales_pct": 48.6,
+   "gross_margin": 41.67,
+   "gross_margin_bp": 174,
+   "gross_margin_note": "gross margin $5,625M / net sales $13,499M = 41.67% vs $3,627M / $9,084M = 39.93% in Q2 FY09 as revised",
+   "op_margin": 29.48,
+   "op_margin_bp": 390,
+   "op_margin_note": "operating income $3,979M / $13,499M = 29.48% vs $2,323M / $9,084M = 25.57%",
+   "mac_units_k": 2943,
+   "mac_units_pct": 32.8,
+   "mac_note": "2,943K Macs vs 2,216K in Q2 FY09 as revised (data sheet)",
+   "mac_sales_b": 3.76,
+   "non_mac_pct": 59.0,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $13,499M - $3,760M = $9,739M vs $9,084M - $2,960M = $6,124M",
+   "ipod_units_k": 10885,
+   "ipod_units_pct": -1.2,
+   "iphone_units_k": 8752,
+   "eps_q": 3.33,
+   "eps_q_prior": 1.79,
+   "diluted_shares_m": 922.878,
+   "cash_b": 23.155,
+   "cash_note": "cash and cash equivalents $10,018M + short-term marketable securities $13,137M",
+   "lt_securities_b": 18.549,
+   "lt_securities_note": "long-term marketable securities $18,549M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "outlook_short": "Looking ahead to the third fiscal quarter of 2010, we expect revenue in the range of about $13.0 billion to $13.4 billion and we expect diluted earnings per share in the range of about $2.28 to $2.39",
+   "next_print": "Q3 FY10 print (late July)",
+   "cash_return_text": "no dividend, no repurchases"
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-07-21",
+   "source": "A34",
+   "release": "Jul 20",
+   "release_time": "after the close: 8-K accepted 16:33 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2010-06-26",
+   "sales_b": 15.7,
+   "sales_pct": 61.3,
+   "gross_margin": 39.08,
+   "gross_margin_bp": -184,
+   "gross_margin_note": "gross margin $6,136M / net sales $15,700M = 39.08% vs $3,983M / $9,734M = 40.92% in Q3 FY09 as revised",
+   "op_margin": 26.97,
+   "op_margin_bp": -7,
+   "op_margin_note": "operating income $4,234M / $15,700M = 26.97% vs $2,632M / $9,734M = 27.04%",
+   "mac_units_k": 3472,
+   "mac_units_pct": 33.4,
+   "mac_note": "3,472K Macs vs 2,603K in Q3 FY09 as revised (data sheet)",
+   "mac_sales_b": 4.399,
+   "non_mac_pct": 77.1,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $15,700M - $4,399M = $11,301M vs $9,734M - $3,354M = $6,380M",
+   "ipod_units_k": 9406,
+   "ipod_units_pct": -7.9,
+   "iphone_units_k": 8398,
+   "eps_q": 3.51,
+   "eps_q_prior": 2.01,
+   "diluted_shares_m": 927.361,
+   "cash_b": 24.288,
+   "cash_note": "cash and cash equivalents $9,705M + short-term marketable securities $14,583M",
+   "lt_securities_b": 21.551,
+   "lt_securities_note": "long-term marketable securities $21,551M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 3270,
+   "outlook_short": "Looking ahead to the fourth fiscal quarter of 2010, we expect revenue of about $18 billion and we expect diluted earnings per share of about $3.44",
+   "next_print": "Q4 FY10 print (late October)",
+   "cash_return_text": "no dividend, no repurchases"
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-10-19",
+   "source": "A36",
+   "release": "Oct 18",
+   "release_time": "after the close: 8-K accepted 16:29 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2010-09-25",
+   "sales_b": 20.343,
+   "sales_pct": 66.7,
+   "gross_margin": 36.93,
+   "gross_margin_bp": -489,
+   "gross_margin_note": "gross margin $7,512M / net sales $20,343M = 36.93% vs $5,105M / $12,207M = 41.82% in Q4 FY09 as revised",
+   "op_margin": 26.78,
+   "op_margin_bp": -340,
+   "op_margin_note": "operating income $5,447M / $20,343M = 26.78% vs $3,684M / $12,207M = 30.18%",
+   "mac_units_k": 3885,
+   "mac_units_pct": 27.3,
+   "mac_note": "3,885K Macs vs 3,053K in Q4 FY09 as revised (data sheet)",
+   "mac_sales_b": 4.87,
+   "non_mac_pct": 88.1,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $20,343M - $4,870M = $15,473M vs $12,207M - $3,980M = $8,227M",
+   "ipod_units_k": 9051,
+   "ipod_units_pct": -11.1,
+   "iphone_units_k": 14102,
+   "eps_q": 4.64,
+   "eps_q_prior": 2.77,
+   "diluted_shares_m": 928.825,
+   "cash_b": 25.62,
+   "cash_note": "cash and cash equivalents $11,261M + short-term marketable securities $14,359M",
+   "lt_securities_b": 25.391,
+   "lt_securities_note": "long-term marketable securities $25,391M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 4188,
+   "outlook_short": "Looking ahead to the first fiscal quarter of 2011, we expect revenue of about $23 billion and we expect diluted earnings per share of about $4.80.",
+   "next_print": "Q1 FY11 print (late January)",
+   "cash_return_text": "no dividend, no repurchases",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 15.15,
+    "revenue_usd_b": 65.225,
+    "diluted_shares_m": 924.712,
+    "normalization_note": "FY10 = diluted EPS $15.15 as released; no one-off excluded",
+    "op_margin": 28.19,
+    "op_margin_note": "FY10 operating income $18,385M / $65,225M (Q4 FY10 release)",
+    "gross_margin": 39.38,
+    "sales_growth": 52.0,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 0.155,
+    "tax_rate": 0.2442,
+    "tax_note": "FY10 effective rate: provision $4,527M / pre-tax income $18,540M; no tax-rate guide",
+    "fcf_b": 16.59
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-01-19",
+   "source": "A38",
+   "release": "Jan 18",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PST",
+   "period_end": "2010-12-25",
+   "sales_b": 26.741,
+   "sales_pct": 70.5,
+   "gross_margin": 38.51,
+   "gross_margin_bp": -237,
+   "gross_margin_note": "gross margin $10,298M / net sales $26,741M = 38.51% vs $6,411M / $15,683M = 40.88% in Q1 FY10",
+   "op_margin": 29.27,
+   "op_margin_bp": -86,
+   "op_margin_note": "operating income $7,827M / $26,741M = 29.27% vs $4,725M / $15,683M = 30.13%",
+   "mac_units_k": 4134,
+   "mac_units_pct": 23.0,
+   "mac_note": "4,134K Macs vs 3,362K in Q1 FY10 (data sheet)",
+   "mac_sales_b": 5.43,
+   "non_mac_pct": 89.7,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $26,741M - $5,430M = $21,311M vs $15,683M - $4,450M = $11,233M",
+   "ipod_units_k": 19446,
+   "ipod_units_pct": -7.3,
+   "iphone_units_k": 16235,
+   "eps_q": 6.43,
+   "eps_q_prior": 3.67,
+   "diluted_shares_m": 933.154,
+   "cash_b": 26.977,
+   "cash_note": "cash and cash equivalents $10,734M + short-term marketable securities $16,243M",
+   "lt_securities_b": 32.73,
+   "lt_securities_note": "long-term marketable securities $32,730M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 7331,
+   "outlook_short": "Looking ahead to the second fiscal quarter of 2011, we expect revenue of about $22 billion and we expect diluted earnings per share of about $4.90.",
+   "next_print": "Q2 FY11 print (late April)",
+   "cash_return_text": "no dividend, no repurchases"
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-04-21",
+   "source": "A39",
+   "release": "Apr 20",
+   "release_time": "after the close on Apr 20: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT; public before the open of the next trading day",
+   "period_end": "2011-03-26",
+   "sales_b": 24.667,
+   "sales_pct": 82.7,
+   "gross_margin": 41.42,
+   "gross_margin_bp": -25,
+   "gross_margin_note": "gross margin $10,218M / net sales $24,667M = 41.42% vs $5,625M / $13,499M = 41.67% in Q2 FY10",
+   "op_margin": 31.92,
+   "op_margin_bp": 244,
+   "op_margin_note": "operating income $7,874M / $24,667M = 31.92% vs $3,979M / $13,499M = 29.48%",
+   "mac_units_k": 3760,
+   "mac_units_pct": 27.8,
+   "mac_note": "3,760K Macs vs 2,943K in Q2 FY10 (data sheet)",
+   "mac_sales_b": 4.976,
+   "non_mac_pct": 102.2,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $24,667M - $4,976M = $19,691M vs $13,499M - $3,760M = $9,739M",
+   "ipod_units_k": 9017,
+   "ipod_units_pct": -17.2,
+   "iphone_units_k": 18647,
+   "eps_q": 6.4,
+   "eps_q_prior": 3.33,
+   "diluted_shares_m": 935.944,
+   "cash_b": 29.234,
+   "cash_note": "cash and cash equivalents $15,978M + short-term marketable securities $13,256M",
+   "lt_securities_b": 36.533,
+   "lt_securities_note": "long-term marketable securities $36,533M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 4694,
+   "outlook_short": "Looking ahead to the third fiscal quarter of 2011, we expect revenue of about $23 billion and we expect diluted earnings per share of about $5.03.",
+   "next_print": "Q3 FY11 print (late July)",
+   "cash_return_text": "no dividend, no repurchases"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-07-20",
+   "source": "A40",
+   "release": "Jul 19",
+   "release_time": "after the close: 8-K accepted 16:29 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2011-06-25",
+   "sales_b": 28.571,
+   "sales_pct": 82.0,
+   "gross_margin": 41.73,
+   "gross_margin_bp": 264,
+   "gross_margin_note": "gross margin $11,922M / net sales $28,571M = 41.73% vs $6,136M / $15,700M = 39.08% in Q3 FY10",
+   "op_margin": 32.83,
+   "op_margin_bp": 586,
+   "op_margin_note": "operating income $9,379M / $28,571M = 32.83% vs $4,234M / $15,700M = 26.97%",
+   "mac_units_k": 3947,
+   "mac_units_pct": 13.7,
+   "mac_note": "3,947K Macs vs 3,472K in Q3 FY10 (data sheet)",
+   "mac_sales_b": 5.105,
+   "non_mac_pct": 107.6,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $28,571M - $5,105M = $23,466M vs $15,700M - $4,399M = $11,301M",
+   "ipod_units_k": 7535,
+   "ipod_units_pct": -19.9,
+   "iphone_units_k": 20338,
+   "eps_q": 7.79,
+   "eps_q_prior": 3.51,
+   "diluted_shares_m": 937.81,
+   "cash_b": 28.395,
+   "cash_note": "cash and cash equivalents $12,091M + short-term marketable securities $16,304M",
+   "lt_securities_b": 47.761,
+   "lt_securities_note": "long-term marketable securities $47,761M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 9246,
+   "outlook_short": "Looking ahead to the fourth fiscal quarter of 2011, we expect revenue of about $25 billion and we expect diluted earnings per share of about $5.50.",
+   "next_print": "Q4 FY11 print (late October)",
+   "cash_return_text": "no dividend, no repurchases"
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-10-19",
+   "source": "A41",
+   "release": "Oct 18",
+   "release_time": "after the close: 8-K accepted 16:31 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2011-09-24",
+   "sales_b": 28.27,
+   "sales_pct": 39.0,
+   "gross_margin": 40.25,
+   "gross_margin_bp": 333,
+   "gross_margin_note": "gross margin $11,380M / net sales $28,270M = 40.25% vs $7,512M / $20,343M = 36.93% in Q4 FY10",
+   "op_margin": 30.81,
+   "op_margin_bp": 403,
+   "op_margin_note": "operating income $8,710M / $28,270M = 30.81% vs $5,447M / $20,343M = 26.78%",
+   "mac_units_k": 4894,
+   "mac_units_pct": 26.0,
+   "mac_note": "4,894K Macs vs 3,885K in Q4 FY10 (data sheet)",
+   "mac_sales_b": 6.272,
+   "non_mac_pct": 42.2,
+   "non_mac_note": "net sales less Mac (CPU) net sales: $28,270M - $6,272M = $21,998M vs $20,343M - $4,870M = $15,473M",
+   "ipod_units_k": 6622,
+   "ipod_units_pct": -26.8,
+   "iphone_units_k": 17073,
+   "eps_q": 7.05,
+   "eps_q_prior": 4.64,
+   "diluted_shares_m": 939.517,
+   "cash_b": 25.952,
+   "cash_note": "cash and cash equivalents $9,815M + short-term marketable securities $16,137M",
+   "lt_securities_b": 55.618,
+   "lt_securities_note": "long-term marketable securities $55,618M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 11123,
+   "outlook_short": "Looking ahead to the first fiscal quarter of 2012, which will span 14 weeks rather than 13, we expect revenue of about $37 billion and we expect diluted earnings per share of about $9.30.",
+   "next_print": "Q1 FY12 print (late January)",
+   "cash_return_text": "no dividend, no repurchases",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 27.68,
+    "revenue_usd_b": 108.249,
+    "diluted_shares_m": 936.645,
+    "normalization_note": "FY11 = diluted EPS $27.68 as released; no one-off excluded",
+    "op_margin": 31.22,
+    "op_margin_note": "FY11 operating income $33,790M / $108,249M (Q4 FY11 release)",
+    "gross_margin": 40.48,
+    "sales_growth": 66.0,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 0.415,
+    "tax_rate": 0.2422,
+    "tax_note": "FY11 effective rate: provision $8,283M / pre-tax income $34,205M; no tax-rate guide",
+    "fcf_b": 33.269
+   }
   }
  ],
  "guides": [
@@ -741,6 +1965,371 @@
     30.0
    ],
    "quote": "anticipates gross margin levels of about 30% in 2009"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-22",
+   "source": "A21",
+   "doc": "Q1 FY09 release",
+   "q_guide": {
+    "quarter": "Q2 FY09",
+    "sales_usd_b": [
+     7.6,
+     8.0
+    ],
+    "eps": [
+     0.9,
+     1.0
+    ],
+    "prior_sales_b": 7.512,
+    "prior_source": "A16",
+    "prior_label": "Q2 FY08"
+   },
+   "quote": "we expect revenue in the range of about $7.6 billion to $8 billion and we expect diluted earnings per share in the range of about $.90 to $1.00"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-23",
+   "source": "A22",
+   "doc": "Q1 FY09 10-Q",
+   "q_guide": {
+    "quarter": "Q2 FY09",
+    "gm_pct": [
+     32.5,
+     32.5
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 32.5% in the second quarter of 2009 and about 30% in the second half of 2009"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-23",
+   "source": "A23",
+   "doc": "Q2 FY09 release",
+   "q_guide": {
+    "quarter": "Q3 FY09",
+    "sales_usd_b": [
+     7.7,
+     7.9
+    ],
+    "eps": [
+     0.95,
+     1.0
+    ],
+    "prior_sales_b": 7.464,
+    "prior_source": "A17",
+    "prior_label": "Q3 FY08"
+   },
+   "quote": "we expect revenue in the range of about $7.7 billion to $7.9 billion and we expect diluted earnings per share in the range of about $.95 to $1.00"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-24",
+   "source": "A24",
+   "doc": "Q2 FY09 10-Q",
+   "q_guide": {
+    "quarter": "Q3 FY09",
+    "gm_pct": [
+     33.0,
+     33.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 33% in the third quarter of 2009 and about 30% in the fourth quarter of 2009"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-22",
+   "source": "A25",
+   "doc": "Q3 FY09 release",
+   "q_guide": {
+    "quarter": "Q4 FY09",
+    "sales_usd_b": [
+     8.7,
+     8.9
+    ],
+    "eps": [
+     1.18,
+     1.23
+    ],
+    "prior_sales_b": 7.895,
+    "prior_source": "A19",
+    "prior_label": "Q4 FY08"
+   },
+   "quote": "we expect revenue in the range of about $8.7 billion to $8.9 billion and we expect diluted earnings per share in the range of about $1.18 to $1.23"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-23",
+   "source": "A26",
+   "doc": "Q3 FY09 10-Q",
+   "q_guide": {
+    "quarter": "Q4 FY09",
+    "gm_pct": [
+     34.0,
+     34.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 34% in the fourth quarter of 2009"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-20",
+   "source": "A27",
+   "doc": "Q4 FY09 release",
+   "q_guide": {
+    "quarter": "Q1 FY10",
+    "sales_usd_b": [
+     11.3,
+     11.6
+    ],
+    "eps": [
+     1.7,
+     1.78
+    ],
+    "prior_sales_b": 10.167,
+    "prior_source": "A21",
+    "prior_label": "Q1 FY09"
+   },
+   "quote": "we expect revenue in the range of about $11.3 billion to $11.6 billion and we expect diluted earnings per share in the range of about $1.70 to $1.78"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-28",
+   "source": "A28",
+   "doc": "FY2009 10-K",
+   "q_guide": {
+    "quarter": "Q1 FY10",
+    "gm_pct": [
+     34.0,
+     34.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 34% in the first quarter of 2010"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-26",
+   "source": "A29",
+   "doc": "Q1 FY10 release",
+   "q_guide": {
+    "quarter": "Q2 FY10",
+    "sales_usd_b": [
+     11.0,
+     11.4
+    ],
+    "eps": [
+     2.06,
+     2.18
+    ],
+    "prior_sales_b": 9.084,
+    "prior_source": "A29",
+    "prior_label": "Q2 FY09 as revised"
+   },
+   "quote": "we expect revenue in the range of about $11.0 billion to $11.4 billion and we expect diluted earnings per share in the range of about $2.06 to $2.18"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-26",
+   "source": "A31",
+   "doc": "Q1 FY10 10-Q",
+   "q_guide": {
+    "quarter": "Q2 FY10",
+    "gm_pct": [
+     39.0,
+     39.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 39% in the second quarter of 2010"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-21",
+   "source": "A32",
+   "doc": "Q2 FY10 release",
+   "q_guide": {
+    "quarter": "Q3 FY10",
+    "sales_usd_b": [
+     13.0,
+     13.4
+    ],
+    "eps": [
+     2.28,
+     2.39
+    ],
+    "prior_sales_b": 9.734,
+    "prior_source": "A29",
+    "prior_label": "Q3 FY09 as revised"
+   },
+   "quote": "we expect revenue in the range of about $13.0 billion to $13.4 billion and we expect diluted earnings per share in the range of about $2.28 to $2.39"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-22",
+   "source": "A33",
+   "doc": "Q2 FY10 10-Q",
+   "q_guide": {
+    "quarter": "Q3 FY10",
+    "gm_pct": [
+     36.0,
+     36.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 36% in the third quarter of 2010"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-07-21",
+   "source": "A34",
+   "doc": "Q3 FY10 release",
+   "q_guide": {
+    "quarter": "Q4 FY10",
+    "sales_usd_b": [
+     18.0,
+     18.0
+    ],
+    "eps": [
+     3.44,
+     3.44
+    ],
+    "prior_sales_b": 12.207,
+    "prior_source": "A29",
+    "prior_label": "Q4 FY09 as revised"
+   },
+   "quote": "we expect revenue of about $18 billion and we expect diluted earnings per share of about $3.44"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-07-22",
+   "source": "A35",
+   "doc": "Q3 FY10 10-Q",
+   "q_guide": {
+    "quarter": "Q4 FY10",
+    "gm_pct": [
+     35.0,
+     35.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 35% in the fourth quarter of 2010"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-10-19",
+   "source": "A36",
+   "doc": "Q4 FY10 release",
+   "q_guide": {
+    "quarter": "Q1 FY11",
+    "sales_usd_b": [
+     23.0,
+     23.0
+    ],
+    "eps": [
+     4.8,
+     4.8
+    ],
+    "prior_sales_b": 15.683,
+    "prior_source": "A29",
+    "prior_label": "Q1 FY10"
+   },
+   "quote": "we expect revenue of about $23 billion and we expect diluted earnings per share of about $4.80"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-10-28",
+   "source": "A37",
+   "doc": "FY2010 10-K",
+   "q_guide": {
+    "quarter": "Q1 FY11",
+    "gm_pct": [
+     36.0,
+     36.0
+    ]
+   },
+   "quote": "anticipates gross margin levels of about 36% in the first quarter of 2011"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-01-19",
+   "source": "A38",
+   "doc": "Q1 FY11 release",
+   "q_guide": {
+    "quarter": "Q2 FY11",
+    "sales_usd_b": [
+     22.0,
+     22.0
+    ],
+    "eps": [
+     4.9,
+     4.9
+    ],
+    "prior_sales_b": 13.499,
+    "prior_source": "A32",
+    "prior_label": "Q2 FY10"
+   },
+   "quote": "we expect revenue of about $22 billion and we expect diluted earnings per share of about $4.90"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-21",
+   "source": "A39",
+   "doc": "Q2 FY11 release",
+   "q_guide": {
+    "quarter": "Q3 FY11",
+    "sales_usd_b": [
+     23.0,
+     23.0
+    ],
+    "eps": [
+     5.03,
+     5.03
+    ],
+    "prior_sales_b": 15.7,
+    "prior_source": "A34",
+    "prior_label": "Q3 FY10"
+   },
+   "quote": "we expect revenue of about $23 billion and we expect diluted earnings per share of about $5.03"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-07-20",
+   "source": "A40",
+   "doc": "Q3 FY11 release",
+   "q_guide": {
+    "quarter": "Q4 FY11",
+    "sales_usd_b": [
+     25.0,
+     25.0
+    ],
+    "eps": [
+     5.5,
+     5.5
+    ],
+    "prior_sales_b": 20.343,
+    "prior_source": "A36",
+    "prior_label": "Q4 FY10"
+   },
+   "quote": "we expect revenue of about $25 billion and we expect diluted earnings per share of about $5.50"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-10-19",
+   "source": "A41",
+   "doc": "Q4 FY11 release",
+   "q_guide": {
+    "quarter": "Q1 FY12",
+    "sales_usd_b": [
+     37.0,
+     37.0
+    ],
+    "eps": [
+     9.3,
+     9.3
+    ],
+    "prior_sales_b": 26.741,
+    "prior_source": "A38",
+    "prior_label": "Q1 FY11"
+   },
+   "quote": "which will span 14 weeks rather than 13, we expect revenue of about $37 billion and we expect diluted earnings per share of about $9.30",
+   "q_guide_note": "the quarter 'will span 14 weeks rather than 13'; Q1 FY11 had 13"
   }
  ],
  "dividends": [],

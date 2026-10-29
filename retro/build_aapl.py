@@ -23,6 +23,9 @@ map as for LOW, with the fallbacks decided before any AAPL date was built or sco
     line and feeds no input: the method's margin is the operating margin, and no figure is derived from another.
 A stock split restates, from its effective date, every per-share fact published before it (divided by the ratio) and
 every share count (multiplied by it); the prices of the whole window are on the AS_OF share basis.
+A filing that re-presents a 10-K is a vintage of its own (the UNP rule): the FY2009 10-K/A of 2010-01-26 revises FY2007-FY2009
+for the accounting principles adopted retrospectively in Q1 FY10. A dollar revenue guide is read against the year-ago quarter on
+the guide's own accounting basis (prior_sales_b: the revised FY2009 quarters for the guides of fiscal 2010).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Apple released after the close, so a print is dated the next
@@ -227,15 +230,20 @@ def build(as_of, facts, raw, spx, engine, out):
                 ([f"revenue {usd_level(*gqs['q_guide']['sales_usd_b'])}"] if gqs else []) + ([f"EPS {rng(*gqe['q_guide']['eps'])}"] if gqe else []))
             + f"; Apple guides one quarter at a time, no {fy_now} guide" if (gqs or gqe) else
             f"(3) A {next_q} guide — the {latest['quarter']} release gives none ('{latest['outlook_short']}')")
+    # iPad units from the Q3 FY10 print
     cat4 = (f"(4) iPod and iPhone — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones in {latest['quarter']}: "
-            f"net sales other than Macs {latest['non_mac_pct']:+.1f}%")
+            f"net sales other than Macs {latest['non_mac_pct']:+.1f}%" if latest.get("ipad_units_k") is None else
+            f"(4) iPod, iPhone and iPad — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones and "
+            f"{latest['ipad_units_k']:,}K iPads in {latest['quarter']}: net sales other than Macs {latest['non_mac_pct']:+.1f}%")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
-    same_day = [p for p in prints if p["published"] == as_of]     # only a release made before the open can meet AS_OF's close
+    # only a print public before the open can meet AS_OF's close: Apple released after the previous day's close, so a print dated
+    # AS_OF occurs only in a week with no trading day after it (the Thursday before Good Friday 2011)
+    same_day = [p for p in prints if p["published"] == as_of]
     if same_day:
         assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
-        tag = f"(day of the {same_day[-1]['quarter']} print, released before the open)"
+        tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
@@ -260,6 +268,11 @@ def build(as_of, facts, raw, spx, engine, out):
     macs_txt = (f"Mac units {h['prev_fy_mac_units_k']:,}K ({h['prev_fy_mac_units_pct']:+.1f}%)" if h["prev_fy_mac_units_k"] is not None
                 else "no full-year Mac units in the Q4 release")
     ng = f"; {latest['quarter']} {latest['non_gaap_note']}" if latest.get("non_gaap_note") else ""
+    # from Q1 FY10 there is no subscription deferral to show (the new accounting principles, adopted retrospectively)
+    deferred_txt = (f"iPhone and Apple TV deferred revenue ${latest['deferred_iphone_b']:.2f}B at {latest['quarter']} (subscription accounting){ng}"
+                    if latest["deferred_iphone_b"] is not None else f"No iPhone or Apple TV subscription deferral at {latest['quarter']}: {latest['deferred_note']}{ng}")
+    # from FY2009 Apple also holds long-term marketable securities
+    lt_txt = f" plus ${latest['lt_securities_b']:.2f}B of long-term marketable securities" if latest.get("lt_securities_b") is not None else ""
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -335,8 +348,8 @@ GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
 SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net sales {h['prev_fy_sales_growth']:+.1f}%, {macs_txt}; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+d}bp)")}
-BALANCE_TEXT    = {R(f"Cash and short-term investments ${latest['cash_b']:.2f}B{fcf_txt}, {latest.get('cash_return_text', h['cash_return_text'])}")}
-DEFERRED_TEXT   = {R(f"iPhone and Apple TV deferred revenue ${latest['deferred_iphone_b']:.2f}B at {latest['quarter']} (subscription accounting){ng}")}
+BALANCE_TEXT    = {R(f"Cash and short-term investments ${latest['cash_b']:.2f}B{lt_txt}{fcf_txt}, {latest.get('cash_return_text', h['cash_return_text'])}")}
+DEFERRED_TEXT   = {R(deferred_txt)}
 THEME_FACTORS   = {R(factors)}
 THEME_SIGNAL_NAME    = {R(sig_name)}
 THEME_SIGNAL_TRIGGER = {R(trigger)}

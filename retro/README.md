@@ -2007,6 +2007,103 @@ Judgement calls that could carry hindsight:
 - keeping GAAP over the Q4 FY08 non-GAAP measures, and the gross-margin expectations out of the inputs;
 - DURABLE rather than CYCLICAL (the class label only).
 
+### AAPL 2009-2011: non-GAAP quarters, the 2010 restatement, the iPad
+
+```bash
+python3 retro/build_aapl.py --weekly 2009-01-05 2011-12-31                  # 156 dates, 2009-01-09 .. 2011-12-30
+```
+
+Every 8-K, 10-Q, 10-Q/A, 10-K, 10-K/A and proxy from 2008-11-06 to the end of 2011 was read by Opus directly, with the 10-Qs and
+10-Ks searched for forward-looking statements. 361 strings were checked with `verbatim.py` against their own filings, and each
+source's date comes from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided before any 2009-2011 date was built
+or scored:
+
+- **Four vintages.**
+  - The FY2009 10-K (accepted 2009-10-27 16:18 ET, dated 2009-10-28) gives FY2005-FY2009; FY2004 comes from the FY2008 10-K and
+    FY2003 from the FY2007 10-K.
+  - The FY2009 10-K/A (accepted 2010-01-25 16:25 ET, dated 2010-01-26) is a vintage of its own (the UNP rule for a filing that
+    re-presents the 10-K). Apple adopted the amended revenue-recognition standards (ASU 2009-13 and 2009-14) retrospectively in Q1
+    FY10: iPhone and Apple TV revenue is now recognized at sale instead of over 24 months, and every quarter of FY2007-FY2009 is
+    revised. FY09 EPS goes from $6.29 to $9.08 and FY08 from $5.36 to $6.78; FY07 stays at $3.93. The 10-K/A amends Items 6-8
+    only, so the business wording stays the FY2009 10-K's.
+  - The FY2010 10-K (accepted 2010-10-27 16:36 ET, dated 2010-10-28) and the FY2011 10-K (2011-10-26 16:35 ET, dated 2011-10-27).
+    Each year comes from the latest 10-K that reports it: FY2005 from the 10-K/A, FY2006 from the FY2010 10-K.
+  - The history runs FY2003-FY2009, then to FY2010 and FY2011. FY2001 and FY2002 stay excluded (from the FY2011 10-K only FY2002
+    is in the decade), and the P/E window starts on 2002-09-29 throughout: 6.3 years on 2009-01-09, 9.2 on 2011-12-30.
+- **FY2009 prints stay GAAP.** Each FY2009 release adds quarterly non-GAAP "Adjusted Sales" and "Adjusted Net Income" that remove
+  subscription accounting; the Q4 FY09 release gives them for the quarter only. By the 2008 rule GAAP stands, and the adjusted
+  figures go in a note. FY09 enters the history at $6.29 from the Q4 print until the 10-K/A revises it.
+- **Year-ago quarters on the guide's own basis.** A dollar revenue guide is read against the same quarter a year earlier on the
+  guide's accounting basis, from the latest filing published by the guide's date. The Q2-Q4 FY10 guides are read against the
+  revised FY2009 quarters in exhibit 99.3 of the Q1 FY10 8-K ($9.084B, $9.734B, $12.207B); every other guide against the year-ago
+  quarter's own release. This states the 2008 rule ("from that quarter's own release") for a restatement, and no 2008 value
+  changes. The Q1 FY10 guide, given in October 2009 before the restatement, is on the old basis, against Q1 FY09's $10.167B.
+- **The guides, as growth on the year-ago quarter:** Q2 FY09 +1.2% to +6.5%, Q3 +3.2% to +5.8%, Q4 +10.2% to +12.7%; Q1 FY10
+  +11.1% to +14.1%, Q2 +21.1% to +25.5%, Q3 +33.6% to +37.7%; from the Q4 FY10 guide the company gives points ("about $18
+  billion"): Q4 FY10 +47.5%, Q1 FY11 +46.7%, Q2 +63.0%, Q3 +46.5%, Q4 +22.9%, Q1 FY12 +38.4%. That last quarter "will span 14
+  weeks rather than 13": the published figure stands and the week goes in the note (the LOW 53rd-week rule).
+- **No fiscal-year guide in any year,** so the last full year's EPS stands: FY08's $5.36 to 2009-10-20, FY09's $6.29 to
+  2010-01-26, FY09's revised $9.08 to 2010-10-19, FY10's $15.15 to 2011-10-19 and FY11's $27.68 after.
+- **Gross-margin expectations stay display only.** The 10-Qs and the FY2009 and FY2010 10-Ks give the next quarter's gross margin
+  ("about 32.5% in the second quarter of 2009" to "about 36% in the first quarter of 2011"), each shown while its quarter is
+  unreported. A statement about a later quarter or a half-year ("about 30% in the second half of 2009") has no field. The 10-K/A
+  drops the sentence, and the FY2011 10-Qs and 10-K give it in words only. The quoted years draw the year-check warning on 20
+  dates; each is the company's forecast, public before the date.
+- **Good Friday 2011.** The Q2 FY11 release came after the close on Wednesday 2011-04-20, so it is dated Thursday 2011-04-21, and
+  no trading day followed in that week. The week's date is 2011-04-21, and the print, public before that day's open, counts (the
+  ACN rule for Good Friday 2013).
+- **Display-only additions,** shown only where the data exists, so every 2008 model rebuilds byte-identical: long-term marketable
+  securities beside cash (from FY2009, when Apple first splits its securities), the absence of an iPhone and Apple TV deferral
+  (from Q1 FY10), and iPad units in catalyst (4) (from Q3 FY10). iPad sales fall inside net sales other than Macs.
+- **No dividend, no repurchases and no debt outstanding** in any year (each 10-K).
+- **Adds nothing:** Steve Jobs's medical leaves (8-Ks of 2009-01-16 and 2011-01-18), his resignation as chief executive and Tim
+  Cook's appointment (2011-08-26), his death (2011-10-06), the auditor change (2009-02-27), the director and officer 8-Ks
+  (2009-08-04, 2010-03-12, 2010-11-17, 2011-06-15, 2011-11-16), bylaws (2009-06-02), vote results (2010-03-01, 2011-02-24), the
+  10-Q/A of 2009-04-27 (vote percentages), the proxies, and the 10-Qs beyond their gross-margin sentence. None changes a guided
+  number (the UNP and LOW rule for officer and board 8-Ks).
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words ("nearly the entire solution", the "only authorized
+  maker of hardware using the Mac OS", "aggressive price cutting, with resulting downward pressure on gross margins"). No theme is
+  live for Apple before CLOUD (2012-10-30).
+- **Anachronism list:** iPhone 4, FaceTime, Retina display, iPad 2, iOS 5, Siri, iPhone 4S, iPhone 5 and iPad mini join it; no
+  existing model contains them.
+
+Controls: altering one value of each new print, Q4 full-year figure, guide and vintage changes no date before its publication and
+changes the first weekly date on or after it (39 of 39). Several 10-Qs were accepted after the close on the eve of a weekly date,
+so they first show on that date; a guide for the next fiscal year first shows on the first date with that year current. The 53
+dates of 2008 rebuild byte-identical.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 154 of 156 dates, BUY on all.** The two FAIR dates, 2009-10-09 and 2009-10-16 ($188-190), are where the conservative
+  case fell to -6.7% and -5.5%.
+- **2009 opens below the BEAR price.** On the anchor EPS the stock traded at 15.4-35.5x in 2009 (the 1st-76th percentile). To
+  2009-03-20 the price sat below the BEAR price (flat EPS at the 10th-percentile multiple), so Ratio B was negative on 11 dates.
+  BASE growth followed the quarter guides less dilution (4.3%/yr, 3.7% from the FY2009 10-K): -5.4%/yr on the Q1 FY09 range in
+  January, then -0.5%, +0.2% and +7.1%/yr, and +8.9%/yr on the Q1 FY10 guide.
+- **The restatement lowered the multiple in a week:** 31.4x FY09's $6.29 on 2010-01-22 (the 58th percentile), 22.9x the revised
+  $9.08 on 2010-01-27 (the 32nd).
+- **The guides carry BASE to +44% and +60%/yr.** BASE growth reached +43.8%/yr on the Q4 FY10 guide and +59.6%/yr on the Q2 FY11
+  guide (+63%), so the BASE price ran to $796 in 2010 and $1,215 in late 2011. The growth factor read +0.5 from 2010-07-22 to
+  2011-07-15, -0.04 on the Q3 FY10 guide and -0.5 on the other dates.
+- **BULL and XBULL still start from FY2003's $0.08:** BULL +107% to +132%/yr ($941-3,832), XBULL +340%/yr ($9,450-47,248). Ratio B
+  ran from -0.03 to 0.15, and the market composite stayed at 1.00-1.22.
+- **The EPP floor stayed at 18-20x until the Q4 FY11 print, then fell to 15x** as the window took in 2009-2011's lower multiples.
+  From that print, at 13.1-14.6x FY11's $27.68 (the 18th-26th percentile), the price sat below the floor (-12% to -3%).
+- **EPS anchors on the last full year:** FY10's $15.15 stood until 2011-10-19, when nine-month FY11 EPS was already $20.63.
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- keeping the FY2009 10-K's old basis until the FY2010 10-K (no 10-K/A vintage) would change 19 classes, CHEAP to FAIR, from
+  2010-04-22 to 2010-10-15, and no tier;
+- reading the Q2-Q4 FY10 guides against the year-ago quarters as first reported would change none;
+- keeping FY2002 would change 2 (the October 2009 FAIR dates to CHEAP), and excluding FY2003 3 (2009-09-18 to 2009-10-02, CHEAP
+  to FAIR); no tier.
+
+Judgement calls that could carry hindsight:
+- treating the 10-K/A as a vintage from its filing date (the call that moves the most classes: 19 of 156);
+- reading the fiscal 2010 guides against the revised year-ago quarters (no class moves);
+- keeping the FY2009 prints, and FY09's first $6.29, on GAAP rather than the non-GAAP measures;
+- treating the chief executive's medical leaves, resignation and death as adding nothing (the method has no input for them);
+- DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
