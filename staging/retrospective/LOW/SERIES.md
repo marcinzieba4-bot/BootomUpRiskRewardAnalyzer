@@ -683,159 +683,159 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2020-12-18 | $163.20 | Lowe's Q3 2020 results | 3.30 | +2.07 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.3% | +23.2pp | +26.3% | ✓ |
 | 2020-12-24 | $162.77 | Lowe's Q3 2020 results | 3.30 | +2.08 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.0% | +21.0pp | +26.2% | ✓ |
 | 2020-12-31 | $160.51 | Lowe's Q3 2020 results | 3.30 | +2.12 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.2% | +22.7pp | +27.4% | ✓ |
-| 2021-01-08 | $165.05 | Lowe's Q3 2020 results | 3.30 | +2.04 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-01-15 | $171.34 | Lowe's Q3 2020 results | 3.30 | +1.94 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-01-22 | $172.40 | Lowe's Q3 2020 results | 3.30 | +1.93 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-01-29 | $166.85 | Lowe's Q3 2020 results | 3.30 | +2.01 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-02-05 | $175.03 | Lowe's Q3 2020 results | 3.30 | +1.89 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-02-12 | $177.16 | Lowe's Q3 2020 results | 3.30 | +1.87 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-02-19 | $177.54 | Lowe's Q3 2020 results | 3.30 | +1.87 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-02-25 | $158.52 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.64 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-03-05 | $158.58 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.63 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-03-12 | $171.55 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.39 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-03-19 | $179.49 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.26 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-03-26 | $191.61 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.09 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-04-01 | $191.32 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.09 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-04-09 | $198.51 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.90 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-04-16 | $208.25 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.69 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2021-04-23 | $200.93 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.87 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-04-30 | $196.25 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.03 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-05-07 | $208.40 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.69 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2021-05-14 | $198.91 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.90 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-05-20 | $193.41 | Lowe's Q1 2021 results | 2.85 | +1.30 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-05-28 | $194.83 | Lowe's Q1 2021 results | 2.85 | +1.30 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-06-04 | $189.91 | Lowe's Q1 2021 results | 2.85 | +1.34 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-06-11 | $190.81 | Lowe's Q1 2021 results | 2.85 | +1.33 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-06-18 | $186.88 | Lowe's Q1 2021 results | 2.85 | +1.37 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-06-25 | $192.66 | Lowe's Q1 2021 results | 2.85 | +1.32 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-07-02 | $195.71 | Lowe's Q1 2021 results | 2.85 | +1.29 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-07-09 | $195.33 | Lowe's Q1 2021 results | 2.85 | +1.30 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-07-16 | $196.14 | Lowe's Q1 2021 results | 2.85 | +1.29 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-07-23 | $200.84 | Lowe's Q1 2021 results | 2.85 | +1.15 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-07-30 | $192.69 | Lowe's Q1 2021 results | 2.85 | +1.32 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-08-06 | $190.16 | Lowe's Q1 2021 results | 2.85 | +1.35 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-08-13 | $190.51 | Lowe's Q1 2021 results | 2.85 | +1.34 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2021-08-19 | $202.59 | Lowe's Q2 2021 results | 1.60 | -1.23 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-08-27 | $205.90 | Lowe's Q2 2021 results | 1.60 | -1.34 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-09-03 | $205.98 | Lowe's Q2 2021 results | 1.60 | -1.34 | 0.89x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-09-10 | $204.33 | Lowe's Q2 2021 results | 1.60 | -1.25 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-09-17 | $209.03 | Lowe's Q2 2021 results | 1.60 | -1.42 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-09-24 | $207.87 | Lowe's Q2 2021 results | 1.60 | -1.38 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-10-01 | $203.70 | Lowe's Q2 2021 results | 1.60 | -1.23 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-10-08 | $206.16 | Lowe's Q2 2021 results | 1.60 | -1.30 | 0.85x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-10-15 | $219.16 | Lowe's Q2 2021 results | 1.60 | -1.68 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-10-22 | $228.77 | Lowe's Q2 2021 results | 1.60 | -1.87 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-10-29 | $233.82 | Lowe's Q2 2021 results | 1.60 | -1.96 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-11-05 | $235.54 | Lowe's Q2 2021 results | 1.60 | -1.99 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-11-12 | $236.32 | Lowe's Q2 2021 results | 1.60 | -2.01 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-11-18 | $247.38 | Lowe's Q3 2021 results | 2.15 | -1.56 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-11-26 | $247.69 | Lowe's Q3 2021 results | 2.15 | -1.57 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-12-03 | $248.69 | Lowe's Q3 2021 results | 2.15 | -1.59 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-12-10 | $261.38 | Lowe's Q3 2021 results | 2.15 | -1.71 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-12-17 | $248.09 | Lowe's Q3 2021 results | 2.15 | -1.58 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-12-23 | $250.09 | Lowe's Q3 2021 results | 2.15 | -1.60 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2021-12-31 | $258.48 | Lowe's Q3 2021 results | 2.15 | -1.69 | 3.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2022-01-07 | $251.09 | Lowe's Q3 2021 results | 2.15 | -1.63 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2022-01-14 | $243.40 | Lowe's Q3 2021 results | 2.15 | -1.41 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2022-01-21 | $225.02 | Lowe's Q3 2021 results | 2.15 | -0.97 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2022-01-28 | $234.99 | Lowe's Q3 2021 results | 2.15 | -1.22 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2022-02-04 | $229.07 | Lowe's Q3 2021 results | 2.15 | -1.08 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2022-02-11 | $225.91 | Lowe's Q3 2021 results | 2.15 | -1.00 | 1.14x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2022-02-18 | $222.69 | Lowe's Q3 2021 results | 2.15 | -0.89 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2022-02-24 | $213.41 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.00 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-03-04 | $224.07 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.67 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-03-11 | $222.21 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.69 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-03-18 | $235.67 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-03-25 | $212.92 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.81 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-04-01 | $202.40 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.94 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-04-08 | $206.66 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.89 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-04-14 | $201.28 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.95 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-04-22 | $197.06 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.21 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-04-29 | $197.73 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.20 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-05-06 | $192.29 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.26 | -0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-05-13 | $194.00 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.23 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-05-19 | $187.86 | Lowe's Q1 2022 results | 1.85 | +0.97 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-05-27 | $199.63 | Lowe's Q1 2022 results | 1.85 | +0.81 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-06-03 | $195.45 | Lowe's Q1 2022 results | 1.85 | +0.86 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-06-10 | $186.33 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-06-17 | $172.47 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-06-24 | $182.84 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-07-01 | $177.36 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-07-08 | $181.63 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-07-15 | $185.00 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-07-22 | $195.58 | Lowe's Q1 2022 results | 1.85 | +0.85 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-07-29 | $191.53 | Lowe's Q1 2022 results | 1.85 | +0.90 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-08-05 | $199.08 | Lowe's Q1 2022 results | 1.85 | +0.81 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-08-12 | $206.47 | Lowe's Q1 2022 results | 1.85 | +0.51 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-08-18 | $216.47 | Lowe's Q2 2022 results | 1.60 | +0.13 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-08-26 | $200.99 | Lowe's Q2 2022 results | 1.60 | +0.52 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-09-02 | $195.51 | Lowe's Q2 2022 results | 1.60 | +0.58 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-09-09 | $205.65 | Lowe's Q2 2022 results | 1.60 | +0.46 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-09-16 | $191.81 | Lowe's Q2 2022 results | 1.60 | +0.62 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-09-23 | $188.13 | Lowe's Q2 2022 results | 1.60 | +0.66 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-09-30 | $187.81 | Lowe's Q2 2022 results | 1.60 | +0.66 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-10-07 | $197.21 | Lowe's Q2 2022 results | 1.60 | +0.55 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-10-14 | $188.96 | Lowe's Q2 2022 results | 1.60 | +0.64 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-10-21 | $182.37 | Lowe's Q2 2022 results | 1.60 | +0.72 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-10-28 | $198.73 | Lowe's Q2 2022 results | 1.60 | +0.52 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-11-04 | $182.15 | Lowe's Q2 2022 results | 1.60 | +0.96 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-11-11 | $209.02 | Lowe's Q2 2022 results | 1.60 | +0.39 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-11-17 | $208.40 | Lowe's Q3 2022 results | 1.85 | +0.69 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-11-25 | $210.97 | Lowe's Q3 2022 results | 1.85 | +0.66 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-12-02 | $214.84 | Lowe's Q3 2022 results | 1.85 | +0.62 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-12-09 | $201.77 | Lowe's Q3 2022 results | 1.85 | +0.76 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-12-16 | $206.14 | Lowe's Q3 2022 results | 1.85 | +0.71 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-12-23 | $201.88 | Lowe's Q3 2022 results | 1.85 | +0.75 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2022-12-30 | $199.24 | Lowe's Q3 2022 results | 1.85 | +0.78 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-01-06 | $200.97 | Lowe's Q3 2022 results | 1.85 | +0.76 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-01-13 | $212.16 | Lowe's Q3 2022 results | 1.85 | +0.44 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-01-20 | $204.53 | Lowe's Q3 2022 results | 1.85 | +0.73 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-01-27 | $202.49 | Lowe's Q3 2022 results | 1.85 | +0.75 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-02-03 | $215.97 | Lowe's Q3 2022 results | 1.85 | +0.39 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-02-10 | $208.78 | Lowe's Q3 2022 results | 1.85 | +0.47 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-02-17 | $212.75 | Lowe's Q3 2022 results | 1.85 | +0.43 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-02-24 | $201.54 | Lowe's Q3 2022 results | 1.85 | +0.75 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-03-02 | $195.10 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.42 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-03-10 | $196.66 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.40 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-03-17 | $197.36 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.39 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-03-24 | $189.46 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.50 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-03-31 | $199.97 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.34 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-04-06 | $198.57 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.36 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-04-14 | $202.18 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.31 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-04-21 | $211.04 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | -0.02 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-04-28 | $207.83 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.03 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-05-05 | $205.81 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.26 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-05-12 | $203.26 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.30 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-05-19 | $206.27 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.25 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-05-24 | $203.63 | Lowe's Q1 2023 results | 1.60 | -0.07 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-06-02 | $209.81 | Lowe's Q1 2023 results | 1.60 | -0.21 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-06-09 | $209.12 | Lowe's Q1 2023 results | 1.60 | -0.21 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-06-16 | $217.08 | Lowe's Q1 2023 results | 1.60 | -0.33 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-06-23 | $215.22 | Lowe's Q1 2023 results | 1.60 | -0.30 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-06-30 | $225.70 | Lowe's Q1 2023 results | 1.60 | -0.43 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2023-07-07 | $221.94 | Lowe's Q1 2023 results | 1.60 | -0.39 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2023-07-14 | $228.74 | Lowe's Q1 2023 results | 1.60 | -0.48 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | - | - | - | - |
-| 2023-07-21 | $233.78 | Lowe's Q1 2023 results | 1.60 | -0.55 | 0.21x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2023-07-28 | $235.09 | Lowe's Q1 2023 results | 1.60 | -0.56 | 0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2023-08-04 | $223.12 | Lowe's Q1 2023 results | 1.60 | -0.40 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2023-08-11 | $223.69 | Lowe's Q1 2023 results | 1.60 | -0.42 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2023-08-18 | $219.35 | Lowe's Q1 2023 results | 1.60 | -0.36 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-08-23 | $227.19 | Lowe's Q2 2023 results | 1.80 | -0.26 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-09-01 | $232.51 | Lowe's Q2 2023 results | 1.80 | -0.34 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-09-08 | $231.29 | Lowe's Q2 2023 results | 1.80 | -0.33 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-09-15 | $220.02 | Lowe's Q2 2023 results | 1.80 | -0.19 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-09-22 | $210.49 | Lowe's Q2 2023 results | 1.80 | -0.07 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-09-29 | $207.84 | Lowe's Q2 2023 results | 1.80 | -0.03 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-10-06 | $199.54 | Lowe's Q2 2023 results | 1.80 | +0.36 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-10-13 | $195.75 | Lowe's Q2 2023 results | 1.80 | +0.43 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-10-20 | $190.50 | Lowe's Q2 2023 results | 1.80 | +0.51 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-10-27 | $183.62 | Lowe's Q2 2023 results | 1.80 | +0.63 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-11-03 | $194.94 | Lowe's Q2 2023 results | 1.80 | +0.43 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-11-10 | $194.60 | Lowe's Q2 2023 results | 1.80 | +0.43 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-11-17 | $203.70 | Lowe's Q2 2023 results | 1.80 | +0.03 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-11-22 | $198.48 | Lowe's Q3 2023 results | 1.65 | -0.26 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2023-12-01 | $203.92 | Lowe's Q3 2023 results | 1.65 | -0.31 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-12-08 | $207.83 | Lowe's Q3 2023 results | 1.65 | -0.35 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-12-15 | $225.59 | Lowe's Q3 2023 results | 1.65 | -0.58 | 0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2023-12-22 | $223.00 | Lowe's Q3 2023 results | 1.65 | -0.55 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2023-12-29 | $222.55 | Lowe's Q3 2023 results | 1.65 | -0.54 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2021-01-08 | $165.05 | Lowe's Q3 2020 results | 3.30 | +2.04 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.7% | +20.8pp | +23.1% | ✓ |
+| 2021-01-15 | $171.34 | Lowe's Q3 2020 results | 3.30 | +1.94 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.6% | +18.3pp | +18.1% | ✓ |
+| 2021-01-22 | $172.40 | Lowe's Q3 2020 results | 3.30 | +1.93 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.1% | +15.5pp | +17.1% | ✓ |
+| 2021-01-29 | $166.85 | Lowe's Q3 2020 results | 3.30 | +2.01 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.5% | +12.7pp | +20.7% | ✓ |
+| 2021-02-05 | $175.03 | Lowe's Q3 2020 results | 3.30 | +1.89 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.4% | +17.9pp | +14.8% | ✓ |
+| 2021-02-12 | $177.16 | Lowe's Q3 2020 results | 3.30 | +1.87 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.8% | +14.8pp | +13.2% | ✓ |
+| 2021-02-19 | $177.54 | Lowe's Q3 2020 results | 3.30 | +1.87 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.7% | +16.2pp | +12.9% | ✓ |
+| 2021-02-25 | $158.52 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.64 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.5% | +24.7pp | +26.3% | ✓ |
+| 2021-03-05 | $158.58 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.63 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.3% | +21.8pp | +25.9% | ✓ |
+| 2021-03-12 | $171.55 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.39 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.7% | +17.7pp | +16.1% | ✓ |
+| 2021-03-19 | $179.49 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.26 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.8% | +10.5pp | +10.6% | ✓ |
+| 2021-03-26 | $191.61 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.09 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +2.5% | -0.5pp | +3.3% | ✗ |
+| 2021-04-01 | $191.32 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.09 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +8.2% | +2.9pp | +3.3% | ✓ |
+| 2021-04-09 | $198.51 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.90 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.5% | +1.1pp | -0.5% | ✓ |
+| 2021-04-16 | $208.25 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.69 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +0.4% | -1.4pp | -5.2% | ✗ |
+| 2021-04-23 | $200.93 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.87 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +8.2% | +6.3pp | -1.6% | ✓ |
+| 2021-04-30 | $196.25 | Lowe's Q4 and fiscal 2020 results | 2.80 | +1.03 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.7% | +7.1pp | +0.8% | ✓ |
+| 2021-05-07 | $208.40 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.69 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +2.3% | +1.7pp | -5.1% | ✓ |
+| 2021-05-14 | $198.91 | Lowe's Q4 and fiscal 2020 results | 2.80 | +0.90 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +5.9% | +4.2pp | -0.4% | ✓ |
+| 2021-05-20 | $193.41 | Lowe's Q1 2021 results | 2.85 | +1.30 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +10.5% | +6.7pp | +2.6% | ✓ |
+| 2021-05-28 | $194.83 | Lowe's Q1 2021 results | 2.85 | +1.30 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.8% | +6.9pp | +2.0% | ✓ |
+| 2021-06-04 | $189.91 | Lowe's Q1 2021 results | 2.85 | +1.34 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +14.4% | +10.2pp | +4.7% | ✓ |
+| 2021-06-11 | $190.81 | Lowe's Q1 2021 results | 2.85 | +1.33 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.5% | +9.3pp | +4.4% | ✓ |
+| 2021-06-18 | $186.88 | Lowe's Q1 2021 results | 2.85 | +1.37 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.1% | +11.2pp | +7.0% | ✓ |
+| 2021-06-25 | $192.66 | Lowe's Q1 2021 results | 2.85 | +1.32 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.6% | +11.1pp | +4.1% | ✓ |
+| 2021-07-02 | $195.71 | Lowe's Q1 2021 results | 2.85 | +1.29 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.1% | +14.0pp | +2.9% | ✓ |
+| 2021-07-09 | $195.33 | Lowe's Q1 2021 results | 2.85 | +1.30 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +17.4% | +13.8pp | +3.5% | ✓ |
+| 2021-07-16 | $196.14 | Lowe's Q1 2021 results | 2.85 | +1.29 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.4% | +13.3pp | +3.6% | ✓ |
+| 2021-07-23 | $200.84 | Lowe's Q1 2021 results | 2.85 | +1.15 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.7% | +14.1pp | +1.5% | ✓ |
+| 2021-07-30 | $192.69 | Lowe's Q1 2021 results | 2.85 | +1.32 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.0% | +18.9pp | +6.3% | ✓ |
+| 2021-08-06 | $190.16 | Lowe's Q1 2021 results | 2.85 | +1.35 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.4% | +17.6pp | +8.1% | ✓ |
+| 2021-08-13 | $190.51 | Lowe's Q1 2021 results | 2.85 | +1.34 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.5% | +18.7pp | +8.1% | ✓ |
+| 2021-08-19 | $202.59 | Lowe's Q2 2021 results | 1.60 | -1.23 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.1% | +10.0pp | +1.7% | ✗ |
+| 2021-08-27 | $205.90 | Lowe's Q2 2021 results | 1.60 | -1.34 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.1% | +11.6pp | +0.2% | ✗ |
+| 2021-09-03 | $205.98 | Lowe's Q2 2021 results | 1.60 | -1.34 | 0.89x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.6% | +14.3pp | +0.5% | ✗ |
+| 2021-09-10 | $204.33 | Lowe's Q2 2021 results | 1.60 | -1.25 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.0% | +14.1pp | +1.5% | ✗ |
+| 2021-09-17 | $209.03 | Lowe's Q2 2021 results | 1.60 | -1.42 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.9% | +5.6pp | -0.4% | ✗ |
+| 2021-09-24 | $207.87 | Lowe's Q2 2021 results | 1.60 | -1.38 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.0% | +5.1pp | +0.4% | ✗ |
+| 2021-10-01 | $203.70 | Lowe's Q2 2021 results | 1.60 | -1.23 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.8% | +4.4pp | +2.6% | ✗ |
+| 2021-10-08 | $206.16 | Lowe's Q2 2021 results | 1.60 | -1.30 | 0.85x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.5% | -0.5pp | +1.4% | ✓ |
+| 2021-10-15 | $219.16 | Lowe's Q2 2021 results | 1.60 | -1.68 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.2% | -6.8pp | -4.5% | ✓ |
+| 2021-10-22 | $228.77 | Lowe's Q2 2021 results | 1.60 | -1.87 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.7% | -9.5pp | -8.5% | ✓ |
+| 2021-10-29 | $233.82 | Lowe's Q2 2021 results | 1.60 | -1.96 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.0% | -10.2pp | -10.5% | ✓ |
+| 2021-11-05 | $235.54 | Lowe's Q2 2021 results | 1.60 | -1.99 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.8% | -9.3pp | -11.1% | ✓ |
+| 2021-11-12 | $236.32 | Lowe's Q2 2021 results | 1.60 | -2.01 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.3% | -11.3pp | -11.4% | ✓ |
+| 2021-11-18 | $247.38 | Lowe's Q3 2021 results | 2.15 | -1.56 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.4% | -13.1pp | -15.5% | ✓ |
+| 2021-11-26 | $247.69 | Lowe's Q3 2021 results | 2.15 | -1.57 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.4% | -18.4pp | -15.6% | ✓ |
+| 2021-12-03 | $248.69 | Lowe's Q3 2021 results | 2.15 | -1.59 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.8% | -18.8pp | -16.1% | ✓ |
+| 2021-12-10 | $261.38 | Lowe's Q3 2021 results | 2.15 | -1.71 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.4% | -17.9pp | -20.1% | ✓ |
+| 2021-12-17 | $248.09 | Lowe's Q3 2021 results | 2.15 | -1.58 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.8% | -10.7pp | -15.8% | ✓ |
+| 2021-12-23 | $250.09 | Lowe's Q3 2021 results | 2.15 | -1.60 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.6% | -11.0pp | -16.3% | ✓ |
+| 2021-12-31 | $258.48 | Lowe's Q3 2021 results | 2.15 | -1.69 | 3.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.8% | -13.6pp | -18.9% | ✓ |
+| 2022-01-07 | $251.09 | Lowe's Q3 2021 results | 2.15 | -1.63 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.2% | -15.4pp | -16.4% | ✓ |
+| 2022-01-14 | $243.40 | Lowe's Q3 2021 results | 2.15 | -1.41 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.8% | -12.1pp | -13.6% | ✓ |
+| 2022-01-21 | $225.02 | Lowe's Q3 2021 results | 2.15 | -0.97 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +1.0% | -12.1pp | -6.5% | ✓ |
+| 2022-01-28 | $234.99 | Lowe's Q3 2021 results | 2.15 | -1.22 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.3% | -19.5pp | -10.4% | ✓ |
+| 2022-02-04 | $229.07 | Lowe's Q3 2021 results | 2.15 | -1.08 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -0.6% | -13.6pp | -8.0% | ✓ |
+| 2022-02-11 | $225.91 | Lowe's Q3 2021 results | 2.15 | -1.00 | 1.14x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.1% | -14.7pp | -6.7% | ✓ |
+| 2022-02-18 | $222.69 | Lowe's Q3 2021 results | 2.15 | -0.89 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +5.6% | -12.4pp | -5.2% | ✓ |
+| 2022-02-24 | $213.41 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.00 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.9% | -8.7pp | -0.9% | ✗ |
+| 2022-03-04 | $224.07 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.67 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +11.8% | -9.8pp | -5.2% | ✗ |
+| 2022-03-11 | $222.21 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.69 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.2% | -12.6pp | -4.0% | ✗ |
+| 2022-03-18 | $235.67 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +6.8% | -11.5pp | -9.1% | ✗ |
+| 2022-03-25 | $212.92 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.81 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.2% | +5.5pp | +1.2% | ✓ |
+| 2022-04-01 | $202.40 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.94 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.3% | +9.1pp | +6.9% | ✓ |
+| 2022-04-08 | $206.66 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.89 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.4% | +2.6pp | +5.1% | ✓ |
+| 2022-04-14 | $201.28 | Lowe's Q4 and fiscal 2021 results | 2.20 | +0.95 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.4% | -0.3pp | +8.2% | ✗ |
+| 2022-04-22 | $197.06 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.21 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.1% | +0.8pp | +10.8% | ✓ |
+| 2022-04-29 | $197.73 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.20 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.1% | -5.9pp | +10.6% | ✗ |
+| 2022-05-06 | $192.29 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.26 | -0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.0% | -3.8pp | +14.0% | ✗ |
+| 2022-05-13 | $194.00 | Lowe's Q4 and fiscal 2021 results | 2.20 | +1.23 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.5% | -8.4pp | +13.3% | ✗ |
+| 2022-05-19 | $187.86 | Lowe's Q1 2022 results | 1.85 | +0.97 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.6% | -11.7pp | +17.3% | ✗ |
+| 2022-05-27 | $199.63 | Lowe's Q1 2022 results | 1.85 | +0.81 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.1% | -18.6pp | +10.6% | ✗ |
+| 2022-06-03 | $195.45 | Lowe's Q1 2022 results | 1.85 | +0.86 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.3% | -16.5pp | +13.0% | ✗ |
+| 2022-06-10 | $186.33 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.7% | -19.1pp | +18.6% | ✗ |
+| 2022-06-17 | $172.47 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +36.5% | -16.2pp | +28.3% | ✓ |
+| 2022-06-24 | $182.84 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.6% | -12.9pp | +21.1% | ✗ |
+| 2022-07-01 | $177.36 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.3% | -21.3pp | +24.8% | ✗ |
+| 2022-07-08 | $181.63 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.3% | -22.0pp | +21.8% | ✗ |
+| 2022-07-15 | $185.00 | Lowe's Q1 2022 results | 1.85 | +1.01 | -0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.1% | -19.1pp | +19.5% | ✗ |
+| 2022-07-22 | $195.58 | Lowe's Q1 2022 results | 1.85 | +0.85 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.7% | -17.1pp | +13.2% | ✗ |
+| 2022-07-29 | $191.53 | Lowe's Q1 2022 results | 1.85 | +0.90 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.7% | -5.7pp | +15.6% | ✗ |
+| 2022-08-05 | $199.08 | Lowe's Q1 2022 results | 1.85 | +0.81 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.4% | -4.9pp | +11.3% | ✗ |
+| 2022-08-12 | $206.47 | Lowe's Q1 2022 results | 1.85 | +0.51 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +16.1% | -11.9pp | +7.5% | ✗ |
+| 2022-08-18 | $216.47 | Lowe's Q2 2022 results | 1.60 | +0.13 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.4% | -17.2pp | +2.6% | ✗ |
+| 2022-08-26 | $200.99 | Lowe's Q2 2022 results | 1.60 | +0.52 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.0% | -12.7pp | +10.8% | ✗ |
+| 2022-09-02 | $195.51 | Lowe's Q2 2022 results | 1.60 | +0.58 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.6% | -15.6pp | +14.0% | ✗ |
+| 2022-09-09 | $205.65 | Lowe's Q2 2022 results | 1.60 | +0.46 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.2% | -14.4pp | +8.6% | ✗ |
+| 2022-09-16 | $191.81 | Lowe's Q2 2022 results | 1.60 | +0.62 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.3% | -10.7pp | +16.6% | ✓ |
+| 2022-09-23 | $188.13 | Lowe's Q2 2022 results | 1.60 | +0.66 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.0% | -14.5pp | +19.4% | ✓ |
+| 2022-09-30 | $187.81 | Lowe's Q2 2022 results | 1.60 | +0.66 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.8% | -15.6pp | +20.2% | ✓ |
+| 2022-10-07 | $197.21 | Lowe's Q2 2022 results | 1.60 | +0.55 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.6% | -19.7pp | +15.2% | ✓ |
+| 2022-10-14 | $188.96 | Lowe's Q2 2022 results | 1.60 | +0.64 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.2% | -14.0pp | +21.0% | ✓ |
+| 2022-10-21 | $182.37 | Lowe's Q2 2022 results | 1.60 | +0.72 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.0% | -3.5pp | +26.3% | ✓ |
+| 2022-10-28 | $198.73 | Lowe's Q2 2022 results | 1.60 | +0.52 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.3% | -13.5pp | +16.8% | ✓ |
+| 2022-11-04 | $182.15 | Lowe's Q2 2022 results | 1.60 | +0.96 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.3% | -4.7pp | +28.2% | ✓ |
+| 2022-11-11 | $209.02 | Lowe's Q2 2022 results | 1.60 | +0.39 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +35.5% | -18.1pp | +12.4% | ✓ |
+| 2022-11-17 | $208.40 | Lowe's Q3 2022 results | 1.85 | +0.69 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.5% | -18.5pp | +13.3% | ✓ |
+| 2022-11-25 | $210.97 | Lowe's Q3 2022 results | 1.85 | +0.66 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.7% | -17.2pp | +12.6% | ✓ |
+| 2022-12-02 | $214.84 | Lowe's Q3 2022 results | 1.85 | +0.62 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.7% | -20.9pp | +11.2% | ✗ |
+| 2022-12-09 | $201.77 | Lowe's Q3 2022 results | 1.85 | +0.76 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.2% | -17.0pp | +19.0% | ✓ |
+| 2022-12-16 | $206.14 | Lowe's Q3 2022 results | 1.85 | +0.71 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.4% | -30.9pp | +16.9% | ✗ |
+| 2022-12-23 | $201.88 | Lowe's Q3 2022 results | 1.85 | +0.75 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.9% | -32.0pp | +19.7% | ✗ |
+| 2022-12-30 | $199.24 | Lowe's Q3 2022 results | 1.85 | +0.78 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.3% | -29.1pp | +21.5% | ✗ |
+| 2023-01-06 | $200.97 | Lowe's Q3 2022 results | 1.85 | +0.76 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.6% | -28.3pp | +20.7% | ✗ |
+| 2023-01-13 | $212.16 | Lowe's Q3 2022 results | 1.85 | +0.44 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.4% | -28.0pp | +14.6% | ✗ |
+| 2023-01-20 | $204.53 | Lowe's Q3 2022 results | 1.85 | +0.73 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.9% | -22.5pp | +19.2% | ✗ |
+| 2023-01-27 | $202.49 | Lowe's Q3 2022 results | 1.85 | +0.75 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.0% | -14.2pp | +20.8% | ✓ |
+| 2023-02-03 | $215.97 | Lowe's Q3 2022 results | 1.85 | +0.39 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.9% | -25.4pp | +13.7% | ✗ |
+| 2023-02-10 | $208.78 | Lowe's Q3 2022 results | 1.85 | +0.47 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.1% | -24.5pp | +18.0% | ✗ |
+| 2023-02-17 | $212.75 | Lowe's Q3 2022 results | 1.85 | +0.43 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.5% | -30.5pp | +16.0% | ✗ |
+| 2023-02-24 | $201.54 | Lowe's Q3 2022 results | 1.85 | +0.75 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.1% | -32.1pp | +22.6% | ✗ |
+| 2023-03-02 | $195.10 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.42 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.0% | -20.8pp | +26.7% | ✗ |
+| 2023-03-10 | $196.66 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.40 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.8% | -21.0pp | +25.7% | ✗ |
+| 2023-03-17 | $197.36 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.39 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.9% | -29.6pp | +25.1% | ✗ |
+| 2023-03-24 | $189.46 | Lowe's Q4 and fiscal 2022 results | 1.60 | +0.50 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.6% | -21.0pp | +30.0% | ✗ |
+| 2023-03-31 | $199.97 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.34 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.7% | -20.4pp | +23.0% | ✗ |
+| 2023-04-06 | $198.57 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.36 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +16.9% | -9.9pp | +23.7% | ✗ |
+| 2023-04-14 | $202.18 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.31 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.3% | -18.8pp | +21.3% | ✗ |
+| 2023-04-21 | $211.04 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | -0.02 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +5.0% | -23.0pp | +16.1% | ✗ |
+| 2023-04-28 | $207.83 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.03 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +10.7% | -25.0pp | +17.8% | ✗ |
+| 2023-05-05 | $205.81 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.26 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.8% | -26.1pp | +18.9% | ✗ |
+| 2023-05-12 | $203.26 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.30 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.0% | -26.1pp | +20.4% | ✗ |
+| 2023-05-19 | $206.27 | Lowe's Q4 and fiscal 2022 results infographic and non-GAAP reconciliation | 1.60 | +0.25 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.0% | -27.4pp | +18.6% | ✗ |
+| 2023-05-24 | $203.63 | Lowe's Q1 2023 results | 1.60 | -0.07 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.0% | -31.3pp | +20.2% | ✗ |
+| 2023-06-02 | $209.81 | Lowe's Q1 2023 results | 1.60 | -0.21 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +11.8% | -30.0pp | +16.7% | ✗ |
+| 2023-06-09 | $209.12 | Lowe's Q1 2023 results | 1.60 | -0.21 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +11.2% | -31.5pp | +17.2% | ✗ |
+| 2023-06-16 | $217.08 | Lowe's Q1 2023 results | 1.60 | -0.33 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.7% | -36.2pp | +12.9% | ✗ |
+| 2023-06-23 | $215.22 | Lowe's Q1 2023 results | 1.60 | -0.30 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +5.7% | -36.0pp | +13.7% | ✗ |
+| 2023-06-30 | $225.70 | Lowe's Q1 2023 results | 1.60 | -0.43 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +2.3% | -40.3pp | +8.4% | ✗ |
+| 2023-07-07 | $221.94 | Lowe's Q1 2023 results | 1.60 | -0.39 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +5.4% | -39.3pp | +10.4% | ✗ |
+| 2023-07-14 | $228.74 | Lowe's Q1 2023 results | 1.60 | -0.48 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +1.2% | -41.0pp | +7.1% | ✗ |
+| 2023-07-21 | $233.78 | Lowe's Q1 2023 results | 1.60 | -0.55 | 0.21x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -1.7% | -43.8pp | +4.6% | ✓ |
+| 2023-07-28 | $235.09 | Lowe's Q1 2023 results | 1.60 | -0.56 | 0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +1.7% | -40.8pp | +4.0% | ✓ |
+| 2023-08-04 | $223.12 | Lowe's Q1 2023 results | 1.60 | -0.40 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +8.9% | -35.5pp | +9.4% | ✗ |
+| 2023-08-11 | $223.69 | Lowe's Q1 2023 results | 1.60 | -0.42 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +11.3% | -34.5pp | +9.2% | ✗ |
+| 2023-08-18 | $219.35 | Lowe's Q1 2023 results | 1.60 | -0.36 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.5% | -32.1pp | +11.5% | ✗ |
+| 2023-08-23 | $227.19 | Lowe's Q2 2023 results | 1.80 | -0.26 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +20.1% | -28.7pp | +7.7% | ✗ |
+| 2023-09-01 | $232.51 | Lowe's Q2 2023 results | 1.80 | -0.34 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.9% | -31.2pp | +5.3% | ✗ |
+| 2023-09-08 | $231.29 | Lowe's Q2 2023 results | 1.80 | -0.33 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +22.0% | -26.8pp | +6.1% | ✗ |
+| 2023-09-15 | $220.02 | Lowe's Q2 2023 results | 1.80 | -0.19 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.8% | -24.1pp | +11.7% | ✗ |
+| 2023-09-22 | $210.49 | Lowe's Q2 2023 results | 1.80 | -0.07 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.0% | -30.2pp | +16.8% | ✗ |
+| 2023-09-29 | $207.84 | Lowe's Q2 2023 results | 1.80 | -0.03 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.3% | -32.3pp | +18.2% | ✗ |
+| 2023-10-06 | $199.54 | Lowe's Q2 2023 results | 1.80 | +0.36 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.7% | -34.0pp | +22.9% | ✗ |
+| 2023-10-13 | $195.75 | Lowe's Q2 2023 results | 1.80 | +0.43 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.4% | -32.5pp | +24.9% | ✗ |
+| 2023-10-20 | $190.50 | Lowe's Q2 2023 results | 1.80 | +0.51 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.0% | -30.8pp | +27.9% | ✗ |
+| 2023-10-27 | $183.62 | Lowe's Q2 2023 results | 1.80 | +0.63 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.7% | -32.6pp | +32.4% | ✓ |
+| 2023-11-03 | $194.94 | Lowe's Q2 2023 results | 1.80 | +0.43 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.6% | -34.9pp | +24.5% | ✗ |
+| 2023-11-10 | $194.60 | Lowe's Q2 2023 results | 1.80 | +0.43 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.5% | -33.4pp | +24.4% | ✗ |
+| 2023-11-17 | $203.70 | Lowe's Q2 2023 results | 1.80 | +0.03 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.0% | -35.9pp | +18.4% | ✗ |
+| 2023-11-22 | $198.48 | Lowe's Q3 2023 results | 1.65 | -0.26 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.7% | -25.3pp | +21.2% | ✗ |
+| 2023-12-01 | $203.92 | Lowe's Q3 2023 results | 1.65 | -0.31 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.3% | -25.9pp | +17.7% | ✗ |
+| 2023-12-08 | $207.83 | Lowe's Q3 2023 results | 1.65 | -0.35 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +22.2% | -29.4pp | +15.2% | ✗ |
+| 2023-12-15 | $225.59 | Lowe's Q3 2023 results | 1.65 | -0.58 | 0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +14.4% | -33.3pp | +6.0% | ✓ |
+| 2023-12-22 | $223.00 | Lowe's Q3 2023 results | 1.65 | -0.55 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +12.7% | -34.9pp | +7.1% | ✓ |
+| 2023-12-29 | $222.55 | Lowe's Q3 2023 results | 1.65 | -0.54 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +13.7% | -34.0pp | +7.3% | ✓ |
