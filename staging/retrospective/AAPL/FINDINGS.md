@@ -1,9 +1,9 @@
 # AAPL retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 53 weekly dates from 2008-01-04 to 2008-12-31. They are **labels and hypotheses**:
-never feed them back into the method or the fact sheet. The batch was scored only after its point-in-time build was committed
-and pushed (e0b1ff4). Prices run to 2026-10-29; every horizon used here ends by 2010-12-30. Medians of an even count take the
-upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+Patterns seen in `outcome.json` for the 209 weekly dates from 2008-01-04 to 2011-12-30. They are **labels and hypotheses**:
+never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed
+and pushed: 2008 in e0b1ff4, 2009-2011 in 72db502. Prices run to 2026-10-29; every horizon used here ends by 2013-12-30. Medians
+of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -49,3 +49,81 @@ upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over 
   "AAPL"). Those dates beat SPY by 35-69pp, so the CHEAP call would have held on them too. That is a fact about one stock in one
   year, not a reason to change the encoding: the call was decided before scoring and stays, and changing a rule means a new
   method version tested elsewhere.
+
+## 2009 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 50 | +140% | +81% to +323% | 50 | 50 | +123% | 50 |
+| class FAIR | 2 | +124% | +94% to +124% | 2 | 2 | +85% | 0 |
+| legacy tier BUY (all dates) | 52 | +139% | +81% to +323% | 52 | 52 | +119% | 50 |
+| January-June | 25 | +197% | +129% to +323% | 25 | 25 | +153% | 25 |
+| July-December | 27 | +115% | +81% to +160% | 27 | 27 | +86% | 25 |
+
+- **Every date cleared the hurdle and beat SPY,** by 68pp to 266pp. Every two-year price landed nearest the BASE case, at 1.6 to
+  2.4 times its price and at most 43% of the BULL price. Drawdowns within two years were 13-19%, and the median one-year return
+  was +77%.
+- **The entry price ranks the outcomes almost perfectly** (Spearman -0.98). The January-June entries ($82-145) returned +129% to
+  +323%, the July-December ones ($139-211) +81% to +160%. The 11 dates priced under the BEAR case, to 2009-03-20 ($82-102), returned
+  +226% to +323%.
+- **FAIR failed again by beating the benchmark.** The two FAIR dates (2009-10-09 and 2009-10-16, $188-190) returned +94% and +124%,
+  82pp and 108pp above SPY, so their call held on neither; the CHEAP call held on all 50.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 52 | +132% | +60% to +181% | 52 | 52 | +79% | 52 |
+| legacy tier BUY (all dates) | 52 | +132% | +60% to +181% | 52 | 52 | +79% | 52 |
+| January-June | 25 | +132% | +99% to +170% | 25 | 25 | +74% | 25 |
+| July-December | 27 | +131% | +60% to +181% | 27 | 27 | +82% | 27 |
+
+- **Every date cleared the hurdle and beat SPY again,** by 44pp to 145pp, from entries at $195-324. Drawdowns were 14-27%. The
+  entry price ranks the outcomes less well (Spearman -0.62).
+- **BASE turned from too low to too high at the Q4 FY10 print.** To 2010-10-15 the two-year price was 1.18 to 1.89 times the BASE
+  price. From 2010-10-20 BASE carried the Q1 FY11 guide's +46.7% (+43.3%/yr after dilution) for two years on FY10's $15.15, and the
+  two-year price was 0.65 to 0.77 times it. Every two-year price still landed nearest BASE.
+- **The restatement call, seen afterwards.** Without the 10-K/A vintage the 19 dates from 2010-04-22 to 2010-10-15 would have read
+  FAIR (retro/README.md, "AAPL 2009-2011"). They returned +103% to +158%, 76pp to 126pp above SPY, so FAIR's call would have failed
+  on them and CHEAP's held. That is a fact about one stock in one year, not a reason to change the encoding.
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 52 | +34% | +13% to +57% | 31 | 22 | +54% | 38 |
+| legacy tier BUY (all dates) | 52 | +34% | +13% to +57% | 31 | 22 | +54% | 38 |
+| January-June | 25 | +34% | +14% to +57% | 15 | 22 | +65% | 22 |
+| July-December | 27 | +34% | +13% to +51% | 16 | 0 | +27% | 16 |
+
+- **The first year the calls were mostly wrong in level.** CHEAP and BUY on all 52 dates, but the median two-year return was +34%:
+  21 dates missed the hurdle and 30 lagged SPY. The CHEAP call held on 38, most of them only by clearing the hurdle.
+- **The two halves split on the benchmark's path.** The January-June entries ($320-360) returned +14% to +57% against SPY's +17% to
+  +34%, and beat it on 22 of 25. The July-December entries ($343-422) returned +13% to +51% against SPY's +25% to +61%, and lagged
+  it on all 27. Their two years held a fall of 44% from the 2012-09-19 high ($702.10).
+- **The two-year price landed nearest the BEAR case on 37 dates,** at 0.42 to 0.96 times the BASE price and at most 23% of the BULL
+  price. BASE carried quarter guides of +23% to +63% for two more years on top of an anchor that had grown 67% (FY10 on FY09)
+  and then 83% (FY11).
+- **The cheapest reading was not the best entry.** From the Q4 FY11 print the stock traded at 13-15x FY11's $27.68, below the EPP
+  floor, the deepest-value reading of the four years. Those 11 dates returned +32% to +51%, just clearing the hurdle, against SPY's
+  +42% to +61%. The entry price no longer ranks the outcomes (Spearman -0.12).
+
+## 2008-2011 together (209 dates)
+
+- **The model never read RICH and always read BUY.** CHEAP on 187 dates, FAIR on 22. The median two-year return was +94%; 184 of
+  209 dates cleared the hurdle and 179 beat SPY. The CHEAP call held on 173 of 187 (median +106%). The FAIR call held on none of
+  its 22 dates, every one of which beat SPY (median +45%).
+- **The verdict carried little information within the stock.** On every date Ratio B was 0.15 or less and the market composite
+  sat at the bottom of its grid, because BULL and XBULL were built on FY2003's $0.08 of EPS. What separated the outcomes was the
+  entry price in 2008-2009 and the year of entry after that. One stock mostly tests timing; testing selection needs many tickers on
+  the same dates.
+- **The two-year price beat the BASE price on every date to 2010-10-15 (146 dates) and fell short of it on every later one.**
+  Quarter-only guidance plus the last-full-year anchor kept BASE too low while growth accelerated (the anchor lagged a year of
+  34-83% EPS growth: FY09 +34% on FY08 as revised, FY10 +67%, FY11 +83%), and too high once BASE carried a single quarter's
+  +46-63% for two years.
+- Hypotheses for the method, to test on other tickers and never to fit to AAPL's outcomes:
+  - when the window's first kept year has near-zero EPS, the decade CAGR and the best two-year run swamp the probability-weighted
+    price and pin Ratio B and the market composite (the 2008 hypothesis, now seen on 209 dates);
+  - for a company that guides one quarter at a time, the last full year's EPS is a stale anchor. A later version could anchor on the
+    trailing four quarters, or on the reported quarters plus the next quarter's guide, and should not carry one quarter's guided
+    growth for two years.

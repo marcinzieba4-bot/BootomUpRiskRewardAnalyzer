@@ -1716,7 +1716,20 @@
    "cons_return_2yr": 77.5,
    "path": "staging/retrospective/AAPL/2009-01-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.5,
+    "tr_1y": 134.0,
+    "tr_2y": 271.1,
+    "tr_3y": 365.6,
+    "excess_6m": 50.4,
+    "excess_1y": 103.0,
+    "excess_2y": 223.4,
+    "excess_3y": 314.0,
+    "avg_m12_m24": 189.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1735,7 +1748,20 @@
    "cons_return_2yr": 95.3,
    "path": "staging/retrospective/AAPL/2009-01-16",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 79.2,
+    "tr_1y": 150.1,
+    "tr_2y": 323.3,
+    "tr_3y": 409.9,
+    "excess_6m": 68.4,
+    "excess_1y": 114.0,
+    "excess_2y": 266.0,
+    "excess_3y": 350.2,
+    "avg_m12_m24": 221.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1754,7 +1780,20 @@
    "cons_return_2yr": 82.0,
    "path": "staging/retrospective/AAPL/2009-01-23",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 78.6,
+    "tr_1y": 123.8,
+    "tr_2y": 269.8,
+    "tr_3y": 383.7,
+    "excess_6m": 59.8,
+    "excess_1y": 89.8,
+    "excess_2y": 210.0,
+    "excess_3y": 316.9,
+    "avg_m12_m24": 202.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1773,7 +1812,20 @@
    "cons_return_2yr": 78.4,
    "path": "staging/retrospective/AAPL/2009-01-30",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 80.6,
+    "tr_1y": 113.1,
+    "tr_2y": 272.9,
+    "tr_3y": 402.6,
+    "excess_6m": 60.2,
+    "excess_1y": 80.8,
+    "excess_2y": 213.3,
+    "excess_3y": 335.5,
+    "avg_m12_m24": 199.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1792,7 +1844,20 @@
    "cons_return_2yr": 61.3,
    "path": "staging/retrospective/AAPL/2009-02-06",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 64.4,
+    "tr_1y": 96.0,
+    "tr_2y": 247.5,
+    "tr_3y": 365.3,
+    "excess_6m": 48.3,
+    "excess_1y": 70.9,
+    "excess_2y": 191.6,
+    "excess_3y": 302.6,
+    "avg_m12_m24": 173.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1811,7 +1876,20 @@
    "cons_return_2yr": 62.2,
    "path": "staging/retrospective/AAPL/2009-02-13",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 69.8,
+    "tr_1y": 102.1,
+    "tr_2y": 259.9,
+    "tr_3y": 406.9,
+    "excess_6m": 45.8,
+    "excess_1y": 68.9,
+    "excess_2y": 193.7,
+    "excess_3y": 334.8,
+    "avg_m12_m24": 178.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1830,7 +1908,20 @@
    "cons_return_2yr": 76.3,
    "path": "staging/retrospective/AAPL/2009-02-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 82.4,
+    "tr_1y": 121.1,
+    "tr_2y": 284.4,
+    "tr_3y": 450.6,
+    "excess_6m": 50.5,
+    "excess_1y": 74.8,
+    "excess_2y": 204.9,
+    "excess_3y": 365.3,
+    "avg_m12_m24": 205.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1849,7 +1940,20 @@
    "cons_return_2yr": 80.0,
    "path": "staging/retrospective/AAPL/2009-02-27",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 89.7,
+    "tr_1y": 129.1,
+    "tr_2y": 289.8,
+    "tr_3y": 488.7,
+    "excess_6m": 48.4,
+    "excess_1y": 76.4,
+    "excess_2y": 204.8,
+    "excess_3y": 393.7,
+    "avg_m12_m24": 214.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1868,7 +1972,20 @@
    "cons_return_2yr": 88.5,
    "path": "staging/retrospective/AAPL/2009-03-06",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 99.7,
+    "tr_1y": 156.7,
+    "tr_2y": 322.0,
+    "tr_3y": 521.6,
+    "excess_6m": 50.0,
+    "excess_1y": 87.8,
+    "excess_2y": 223.4,
+    "excess_3y": 415.9,
+    "avg_m12_m24": 232.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1887,7 +2004,20 @@
    "cons_return_2yr": 67.6,
    "path": "staging/retrospective/AAPL/2009-03-13",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 79.5,
+    "tr_1y": 136.2,
+    "tr_2y": 266.9,
+    "tr_3y": 492.2,
+    "excess_6m": 40.4,
+    "excess_1y": 81.6,
+    "excess_2y": 189.1,
+    "excess_3y": 398.9,
+    "avg_m12_m24": 198.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1906,7 +2036,20 @@
    "cons_return_2yr": 58.3,
    "path": "staging/retrospective/AAPL/2009-03-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 82.1,
+    "tr_1y": 118.8,
+    "tr_2y": 225.5,
+    "tr_3y": 496.5,
+    "excess_6m": 41.7,
+    "excess_1y": 64.9,
+    "excess_2y": 153.2,
+    "excess_3y": 404.2,
+    "avg_m12_m24": 184.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1925,7 +2068,20 @@
    "cons_return_2yr": 50.5,
    "path": "staging/retrospective/AAPL/2009-03-27",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 70.7,
+    "tr_1y": 116.1,
+    "tr_2y": 229.0,
+    "tr_3y": 475.1,
+    "excess_6m": 41.4,
+    "excess_1y": 70.7,
+    "excess_2y": 162.7,
+    "excess_3y": 393.4,
+    "avg_m12_m24": 172.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1944,7 +2100,20 @@
    "cons_return_2yr": 38.6,
    "path": "staging/retrospective/AAPL/2009-04-03",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 59.4,
+    "tr_1y": 103.4,
+    "tr_2y": 197.1,
+    "tr_3y": 442.6,
+    "excess_6m": 36.6,
+    "excess_1y": 61.1,
+    "excess_2y": 133.8,
+    "excess_3y": 366.5,
+    "avg_m12_m24": 152.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1963,7 +2132,20 @@
    "cons_return_2yr": 34.5,
    "path": "staging/retrospective/AAPL/2009-04-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 59.3,
+    "tr_1y": 102.2,
+    "tr_2y": 180.2,
+    "tr_3y": 432.1,
+    "excess_6m": 33.1,
+    "excess_1y": 60.5,
+    "excess_2y": 120.2,
+    "excess_3y": 362.8,
+    "avg_m12_m24": 146.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -1982,7 +2164,20 @@
    "cons_return_2yr": 30.3,
    "path": "staging/retrospective/AAPL/2009-04-17",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 52.4,
+    "tr_1y": 100.5,
+    "tr_2y": 165.3,
+    "tr_3y": 394.0,
+    "excess_6m": 26.1,
+    "excess_1y": 61.0,
+    "excess_2y": 108.6,
+    "excess_3y": 326.2,
+    "avg_m12_m24": 140.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2001,7 +2196,20 @@
    "cons_return_2yr": 29.8,
    "path": "staging/retrospective/AAPL/2009-04-24",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 64.6,
+    "tr_1y": 118.6,
+    "tr_2y": 183.1,
+    "tr_3y": 352.2,
+    "excess_6m": 38.7,
+    "excess_1y": 75.6,
+    "excess_2y": 123.6,
+    "excess_3y": 285.6,
+    "avg_m12_m24": 140.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2020,7 +2228,20 @@
    "cons_return_2yr": 26.4,
    "path": "staging/retrospective/AAPL/2009-05-01",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 48.1,
+    "tr_1y": 105.2,
+    "tr_2y": 175.2,
+    "tr_3y": 357.5,
+    "excess_6m": 29.1,
+    "excess_1y": 67.6,
+    "excess_2y": 114.9,
+    "excess_3y": 289.3,
+    "avg_m12_m24": 135.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2039,7 +2260,20 @@
    "cons_return_2yr": 24.5,
    "path": "staging/retrospective/AAPL/2009-05-08",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.4,
+    "tr_1y": 82.6,
+    "tr_2y": 168.3,
+    "tr_3y": 339.8,
+    "excess_6m": 34.1,
+    "excess_1y": 60.7,
+    "excess_2y": 119.2,
+    "excess_3y": 285.3,
+    "avg_m12_m24": 133.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2058,7 +2292,20 @@
    "cons_return_2yr": 31.4,
    "path": "staging/retrospective/AAPL/2009-05-15",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 67.0,
+    "tr_1y": 107.3,
+    "tr_2y": 178.1,
+    "tr_3y": 351.9,
+    "excess_6m": 42.3,
+    "excess_1y": 76.6,
+    "excess_2y": 122.0,
+    "excess_3y": 293.6,
+    "avg_m12_m24": 148.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2077,7 +2324,20 @@
    "cons_return_2yr": 31.3,
    "path": "staging/retrospective/AAPL/2009-05-22",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 63.2,
+    "tr_1y": 97.8,
+    "tr_2y": 173.6,
+    "tr_3y": 354.7,
+    "excess_6m": 39.1,
+    "excess_1y": 72.9,
+    "excess_2y": 118.6,
+    "excess_3y": 298.2,
+    "avg_m12_m24": 149.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2096,7 +2356,20 @@
    "cons_return_2yr": 18.4,
    "path": "staging/retrospective/AAPL/2009-05-29",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.7,
+    "tr_1y": 89.1,
+    "tr_2y": 148.4,
+    "tr_3y": 321.4,
+    "excess_6m": 28.2,
+    "excess_1y": 68.7,
+    "excess_2y": 99.4,
+    "excess_3y": 269.2,
+    "avg_m12_m24": 126.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2115,7 +2388,20 @@
    "cons_return_2yr": 11.1,
    "path": "staging/retrospective/AAPL/2009-06-05",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.6,
+    "tr_1y": 76.9,
+    "tr_2y": 137.4,
+    "tr_3y": 289.0,
+    "excess_6m": 15.1,
+    "excess_1y": 61.7,
+    "excess_2y": 94.8,
+    "excess_3y": 245.1,
+    "avg_m12_m24": 113.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2134,7 +2420,20 @@
    "cons_return_2yr": 17.4,
    "path": "staging/retrospective/AAPL/2009-06-12",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.1,
+    "tr_1y": 85.1,
+    "tr_2y": 137.9,
+    "tr_3y": 320.6,
+    "excess_6m": 24.2,
+    "excess_1y": 67.5,
+    "excess_2y": 99.1,
+    "excess_3y": 273.4,
+    "avg_m12_m24": 126.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2153,7 +2452,20 @@
    "cons_return_2yr": 15.3,
    "path": "staging/retrospective/AAPL/2009-06-19",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.1,
+    "tr_1y": 96.5,
+    "tr_2y": 129.6,
+    "tr_3y": 321.1,
+    "excess_6m": 19.2,
+    "excess_1y": 72.8,
+    "excess_2y": 86.6,
+    "excess_3y": 265.8,
+    "avg_m12_m24": 123.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2172,7 +2484,20 @@
    "cons_return_2yr": 12.9,
    "path": "staging/retrospective/AAPL/2009-06-26",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.8,
+    "tr_1y": 87.2,
+    "tr_2y": 129.1,
+    "tr_3y": 301.6,
+    "excess_6m": 23.1,
+    "excess_1y": 67.5,
+    "excess_2y": 86.1,
+    "excess_3y": 250.0,
+    "avg_m12_m24": 119.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2191,7 +2516,20 @@
    "cons_return_2yr": 14.8,
    "path": "staging/retrospective/AAPL/2009-07-02",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.5,
+    "tr_1y": 76.4,
+    "tr_2y": 145.2,
+    "tr_3y": 323.2,
+    "excess_6m": 25.2,
+    "excess_1y": 60.2,
+    "excess_2y": 91.0,
+    "excess_3y": 263.1,
+    "avg_m12_m24": 124.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2210,7 +2548,20 @@
    "cons_return_2yr": 16.1,
    "path": "staging/retrospective/AAPL/2009-07-10",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.0,
+    "tr_1y": 87.4,
+    "tr_2y": 159.7,
+    "tr_3y": 339.1,
+    "excess_6m": 21.5,
+    "excess_1y": 62.3,
+    "excess_2y": 101.7,
+    "excess_3y": 278.3,
+    "avg_m12_m24": 127.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2229,7 +2580,20 @@
    "cons_return_2yr": 2.4,
    "path": "staging/retrospective/AAPL/2009-07-17",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.7,
+    "tr_1y": 64.7,
+    "tr_2y": 140.5,
+    "tr_3y": 300.0,
+    "excess_6m": 13.8,
+    "excess_1y": 49.1,
+    "excess_2y": 95.7,
+    "excess_3y": 247.4,
+    "avg_m12_m24": 109.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2248,7 +2612,20 @@
    "cons_return_2yr": 8.9,
    "path": "staging/retrospective/AAPL/2009-07-23",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.3,
+    "tr_1y": 64.7,
+    "tr_2y": 149.2,
+    "tr_3y": 282.6,
+    "excess_6m": 12.3,
+    "excess_1y": 49.5,
+    "excess_2y": 106.7,
+    "excess_3y": 236.9,
+    "avg_m12_m24": 102.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2267,7 +2644,20 @@
    "cons_return_2yr": 5.1,
    "path": "staging/retrospective/AAPL/2009-07-31",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.5,
+    "tr_1y": 57.4,
+    "tr_2y": 139.0,
+    "tr_3y": 264.2,
+    "excess_6m": 7.8,
+    "excess_1y": 43.7,
+    "excess_2y": 103.5,
+    "excess_3y": 216.5,
+    "avg_m12_m24": 97.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2286,7 +2676,20 @@
    "cons_return_2yr": 3.8,
    "path": "staging/retrospective/AAPL/2009-08-07",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.1,
+    "tr_1y": 57.1,
+    "tr_2y": 125.7,
+    "tr_3y": 275.1,
+    "excess_6m": 11.6,
+    "excess_1y": 44.0,
+    "excess_2y": 102.6,
+    "excess_3y": 229.3,
+    "avg_m12_m24": 96.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2305,7 +2708,20 @@
    "cons_return_2yr": 3.0,
    "path": "staging/retrospective/AAPL/2009-08-14",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.1,
+    "tr_1y": 49.4,
+    "tr_2y": 126.0,
+    "tr_3y": 280.3,
+    "excess_6m": 11.9,
+    "excess_1y": 39.8,
+    "excess_2y": 104.3,
+    "excess_3y": 233.5,
+    "avg_m12_m24": 96.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2324,7 +2740,20 @@
    "cons_return_2yr": 5.0,
    "path": "staging/retrospective/AAPL/2009-08-21",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.2,
+    "tr_1y": 47.5,
+    "tr_2y": 110.4,
+    "tr_3y": 289.3,
+    "excess_6m": 10.2,
+    "excess_1y": 41.0,
+    "excess_2y": 96.6,
+    "excess_3y": 244.6,
+    "avg_m12_m24": 95.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2343,7 +2772,20 @@
    "cons_return_2yr": 4.5,
    "path": "staging/retrospective/AAPL/2009-08-28",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.3,
+    "tr_1y": 42.1,
+    "tr_2y": 125.6,
+    "tr_3y": 298.4,
+    "excess_6m": 12.1,
+    "excess_1y": 36.7,
+    "excess_2y": 107.1,
+    "excess_3y": 254.6,
+    "avg_m12_m24": 95.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2362,7 +2804,20 @@
    "cons_return_2yr": 4.3,
    "path": "staging/retrospective/AAPL/2009-09-04",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.7,
+    "tr_1y": 51.9,
+    "tr_2y": 119.6,
+    "tr_3y": 297.9,
+    "excess_6m": 12.3,
+    "excess_1y": 41.2,
+    "excess_2y": 99.7,
+    "excess_3y": 252.6,
+    "avg_m12_m24": 96.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2381,7 +2836,20 @@
    "cons_return_2yr": 3.2,
    "path": "staging/retrospective/AAPL/2009-09-11",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.0,
+    "tr_1y": 53.0,
+    "tr_2y": 119.3,
+    "tr_3y": 285.2,
+    "excess_6m": 19.7,
+    "excess_1y": 44.6,
+    "excess_2y": 104.3,
+    "excess_3y": 241.0,
+    "avg_m12_m24": 95.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2400,7 +2868,20 @@
    "cons_return_2yr": -3.9,
    "path": "staging/retrospective/AAPL/2009-09-18",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.4,
+    "tr_1y": 48.8,
+    "tr_2y": 116.5,
+    "tr_3y": 280.8,
+    "excess_6m": 11.2,
+    "excess_1y": 41.4,
+    "excess_2y": 98.2,
+    "excess_3y": 237.1,
+    "avg_m12_m24": 83.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2419,7 +2900,20 @@
    "cons_return_2yr": -2.6,
    "path": "staging/retrospective/AAPL/2009-09-25",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.3,
+    "tr_1y": 60.3,
+    "tr_2y": 121.7,
+    "tr_3y": 270.8,
+    "excess_6m": 11.6,
+    "excess_1y": 48.3,
+    "excess_2y": 108.5,
+    "excess_3y": 225.6,
+    "avg_m12_m24": 87.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2438,7 +2932,20 @@
    "cons_return_2yr": -3.9,
    "path": "staging/retrospective/AAPL/2009-10-02",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.6,
+    "tr_1y": 52.8,
+    "tr_2y": 106.2,
+    "tr_3y": 259.1,
+    "excess_6m": 11.6,
+    "excess_1y": 38.8,
+    "excess_2y": 91.3,
+    "excess_3y": 210.8,
+    "avg_m12_m24": 86.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2457,7 +2964,20 @@
    "cons_return_2yr": -6.7,
    "path": "staging/retrospective/AAPL/2009-10-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.9,
+    "tr_1y": 54.4,
+    "tr_2y": 94.2,
+    "tr_3y": 235.2,
+    "excess_6m": 14.5,
+    "excess_1y": 43.7,
+    "excess_2y": 81.9,
+    "excess_3y": 193.8,
+    "avg_m12_m24": 81.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -2476,7 +2996,20 @@
    "cons_return_2yr": -5.5,
    "path": "staging/retrospective/AAPL/2009-10-16",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.6,
+    "tr_1y": 67.4,
+    "tr_2y": 124.4,
+    "tr_3y": 247.0,
+    "excess_6m": 21.0,
+    "excess_1y": 57.3,
+    "excess_2y": 107.6,
+    "excess_3y": 206.4,
+    "avg_m12_m24": 85.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -2495,7 +3028,20 @@
    "cons_return_2yr": 1.7,
    "path": "staging/retrospective/AAPL/2009-10-21",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.5,
+    "tr_1y": 51.0,
+    "tr_2y": 91.7,
+    "tr_3y": 198.9,
+    "excess_6m": 14.0,
+    "excess_1y": 39.9,
+    "excess_2y": 72.9,
+    "excess_3y": 159.5,
+    "avg_m12_m24": 70.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2514,7 +3060,20 @@
    "cons_return_2yr": 10.6,
    "path": "staging/retrospective/AAPL/2009-10-30",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.5,
+    "tr_1y": 59.7,
+    "tr_2y": 114.8,
+    "tr_3y": 221.8,
+    "excess_6m": 22.8,
+    "excess_1y": 43.1,
+    "excess_2y": 86.1,
+    "excess_3y": 178.1,
+    "avg_m12_m24": 86.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2533,7 +3092,20 @@
    "cons_return_2yr": 7.3,
    "path": "staging/retrospective/AAPL/2009-11-06",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.7,
+    "tr_1y": 63.2,
+    "tr_2y": 105.9,
+    "tr_3y": 201.3,
+    "excess_6m": 20.3,
+    "excess_1y": 46.6,
+    "excess_2y": 84.5,
+    "excess_3y": 160.8,
+    "avg_m12_m24": 81.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2552,7 +3124,20 @@
    "cons_return_2yr": 2.0,
    "path": "staging/retrospective/AAPL/2009-11-13",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.4,
+    "tr_1y": 50.7,
+    "tr_2y": 88.1,
+    "tr_3y": 168.1,
+    "excess_6m": 19.6,
+    "excess_1y": 39.0,
+    "excess_2y": 68.3,
+    "excess_3y": 135.6,
+    "avg_m12_m24": 73.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2571,7 +3156,20 @@
    "cons_return_2yr": 4.3,
    "path": "staging/retrospective/AAPL/2009-11-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.9,
+    "tr_1y": 53.4,
+    "tr_2y": 87.5,
+    "tr_3y": 183.2,
+    "excess_6m": 19.7,
+    "excess_1y": 41.5,
+    "excess_2y": 71.8,
+    "excess_3y": 149.2,
+    "avg_m12_m24": 78.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2590,7 +3188,20 @@
    "cons_return_2yr": 3.9,
    "path": "staging/retrospective/AAPL/2009-11-27",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.3,
+    "tr_1y": 57.0,
+    "tr_2y": 81.3,
+    "tr_3y": 194.2,
+    "excess_6m": 24.2,
+    "excess_1y": 46.6,
+    "excess_2y": 70.8,
+    "excess_3y": 159.2,
+    "avg_m12_m24": 78.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2609,7 +3220,20 @@
    "cons_return_2yr": 7.8,
    "path": "staging/retrospective/AAPL/2009-12-04",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.4,
+    "tr_1y": 64.2,
+    "tr_2y": 101.6,
+    "tr_3y": 200.6,
+    "excess_6m": 35.2,
+    "excess_1y": 51.5,
+    "excess_2y": 84.9,
+    "excess_3y": 166.6,
+    "avg_m12_m24": 85.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2628,7 +3252,20 @@
    "cons_return_2yr": 7.1,
    "path": "staging/retrospective/AAPL/2009-12-11",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.2,
+    "tr_1y": 64.7,
+    "tr_2y": 102.2,
+    "tr_3y": 180.8,
+    "excess_6m": 30.5,
+    "excess_1y": 50.7,
+    "excess_2y": 84.6,
+    "excess_3y": 145.0,
+    "avg_m12_m24": 85.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2647,7 +3284,20 @@
    "cons_return_2yr": 6.7,
    "path": "staging/retrospective/AAPL/2009-12-18",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.2,
+    "tr_1y": 64.1,
+    "tr_2y": 95.0,
+    "tr_3y": 175.9,
+    "excess_6m": 37.9,
+    "excess_1y": 49.2,
+    "excess_2y": 80.2,
+    "excess_3y": 137.7,
+    "avg_m12_m24": 84.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2666,7 +3316,20 @@
    "cons_return_2yr": -0.3,
    "path": "staging/retrospective/AAPL/2009-12-24",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.7,
+    "tr_1y": 54.8,
+    "tr_2y": 92.9,
+    "tr_3y": 151.4,
+    "excess_6m": 32.3,
+    "excess_1y": 41.1,
+    "excess_2y": 76.3,
+    "excess_3y": 117.8,
+    "avg_m12_m24": 73.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2685,7 +3348,20 @@
    "cons_return_2yr": -1.1,
    "path": "staging/retrospective/AAPL/2009-12-31",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.4,
+    "tr_1y": 53.6,
+    "tr_2y": 92.2,
+    "tr_3y": 144.3,
+    "excess_6m": 25.8,
+    "excess_1y": 38.7,
+    "excess_2y": 75.2,
+    "excess_3y": 111.6,
+    "avg_m12_m24": 72.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2704,7 +3380,20 @@
    "cons_return_2yr": 1.7,
    "path": "staging/retrospective/AAPL/2010-01-08",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.8,
+    "tr_1y": 58.6,
+    "tr_2y": 99.3,
+    "tr_3y": 150.3,
+    "excess_6m": 27.3,
+    "excess_1y": 45.6,
+    "excess_2y": 83.6,
+    "excess_3y": 116.3,
+    "avg_m12_m24": 72.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2723,7 +3412,20 @@
    "cons_return_2yr": 4.7,
    "path": "staging/retrospective/AAPL/2010-01-15",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.1,
+    "tr_1y": 69.2,
+    "tr_2y": 103.9,
+    "tr_3y": 138.5,
+    "excess_6m": 24.7,
+    "excess_1y": 53.4,
+    "excess_2y": 86.2,
+    "excess_3y": 102.1,
+    "avg_m12_m24": 78.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2742,7 +3444,20 @@
    "cons_return_2yr": 9.0,
    "path": "staging/retrospective/AAPL/2010-01-22",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.0,
+    "tr_1y": 65.2,
+    "tr_2y": 112.5,
+    "tr_3y": 157.9,
+    "excess_6m": 29.8,
+    "excess_1y": 45.6,
+    "excess_2y": 87.3,
+    "excess_3y": 114.1,
+    "avg_m12_m24": 86.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2761,7 +3476,20 @@
    "cons_return_2yr": 57.1,
    "path": "staging/retrospective/AAPL/2010-01-27",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.0,
+    "tr_1y": 65.1,
+    "tr_2y": 115.2,
+    "tr_3y": 114.2,
+    "excess_6m": 24.5,
+    "excess_1y": 44.7,
+    "excess_2y": 90.7,
+    "excess_3y": 70.1,
+    "avg_m12_m24": 78.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2780,7 +3508,20 @@
    "cons_return_2yr": 67.0,
    "path": "staging/retrospective/AAPL/2010-02-05",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.9,
+    "tr_1y": 77.3,
+    "tr_2y": 135.2,
+    "tr_3y": 136.9,
+    "excess_6m": 27.1,
+    "excess_1y": 52.2,
+    "excess_2y": 104.5,
+    "excess_3y": 87.9,
+    "avg_m12_m24": 90.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2799,7 +3540,20 @@
    "cons_return_2yr": 62.9,
    "path": "staging/retrospective/AAPL/2010-02-12",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.7,
+    "tr_1y": 78.1,
+    "tr_2y": 146.2,
+    "tr_3y": 137.5,
+    "excess_6m": 24.2,
+    "excess_1y": 52.8,
+    "excess_2y": 117.4,
+    "excess_3y": 89.4,
+    "avg_m12_m24": 87.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2818,7 +3572,20 @@
    "cons_return_2yr": 61.9,
    "path": "staging/retrospective/AAPL/2010-02-19",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.9,
+    "tr_1y": 73.8,
+    "tr_2y": 149.0,
+    "tr_3y": 132.0,
+    "excess_6m": 25.9,
+    "excess_1y": 50.7,
+    "excess_2y": 121.9,
+    "excess_3y": 87.0,
+    "avg_m12_m24": 87.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2837,7 +3604,20 @@
    "cons_return_2yr": 59.6,
    "path": "staging/retrospective/AAPL/2010-02-26",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.4,
+    "tr_1y": 70.1,
+    "tr_2y": 155.3,
+    "tr_3y": 123.3,
+    "excess_6m": 21.5,
+    "excess_1y": 48.6,
+    "excess_2y": 127.3,
+    "excess_3y": 80.7,
+    "avg_m12_m24": 86.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2856,7 +3636,20 @@
    "cons_return_2yr": 49.1,
    "path": "staging/retrospective/AAPL/2010-03-05",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.2,
+    "tr_1y": 64.4,
+    "tr_2y": 143.5,
+    "tr_3y": 100.5,
+    "excess_6m": 20.2,
+    "excess_1y": 46.5,
+    "excess_2y": 119.6,
+    "excess_3y": 58.5,
+    "avg_m12_m24": 75.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2875,7 +3668,20 @@
    "cons_return_2yr": 44.1,
    "path": "staging/retrospective/AAPL/2010-03-12",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.2,
+    "tr_1y": 55.3,
+    "tr_2y": 143.6,
+    "tr_3y": 92.6,
+    "excess_6m": 18.8,
+    "excess_1y": 40.1,
+    "excess_2y": 120.2,
+    "excess_3y": 50.9,
+    "avg_m12_m24": 71.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2894,7 +3700,20 @@
    "cons_return_2yr": 46.9,
    "path": "staging/retrospective/AAPL/2010-03-19",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.9,
+    "tr_1y": 48.8,
+    "tr_2y": 170.5,
+    "tr_3y": 108.1,
+    "excess_6m": 25.9,
+    "excess_1y": 36.6,
+    "excess_2y": 144.7,
+    "excess_3y": 67.7,
+    "avg_m12_m24": 77.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2913,7 +3732,20 @@
    "cons_return_2yr": 41.4,
    "path": "staging/retrospective/AAPL/2010-03-26",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.6,
+    "tr_1y": 52.2,
+    "tr_2y": 162.9,
+    "tr_3y": 103.2,
+    "excess_6m": 27.1,
+    "excess_1y": 37.6,
+    "excess_2y": 137.1,
+    "excess_3y": 62.2,
+    "avg_m12_m24": 72.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2932,7 +3764,20 @@
    "cons_return_2yr": 38.4,
    "path": "staging/retrospective/AAPL/2010-04-01",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.7,
+    "tr_1y": 46.0,
+    "tr_2y": 154.1,
+    "tr_3y": 85.1,
+    "excess_6m": 21.5,
+    "excess_1y": 31.0,
+    "excess_2y": 130.3,
+    "excess_3y": 45.7,
+    "avg_m12_m24": 70.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2951,7 +3796,20 @@
    "cons_return_2yr": 35.0,
    "path": "staging/retrospective/AAPL/2010-04-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.6,
+    "tr_1y": 38.6,
+    "tr_2y": 163.1,
+    "tr_3y": 79.9,
+    "excess_6m": 23.2,
+    "excess_1y": 25.5,
+    "excess_2y": 143.4,
+    "excess_3y": 41.9,
+    "avg_m12_m24": 69.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2970,7 +3828,20 @@
    "cons_return_2yr": 32.0,
    "path": "staging/retrospective/AAPL/2010-04-16",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.2,
+    "tr_1y": 32.4,
+    "tr_2y": 134.5,
+    "tr_3y": 75.5,
+    "excess_6m": 27.7,
+    "excess_1y": 19.8,
+    "excess_2y": 115.5,
+    "excess_3y": 36.8,
+    "avg_m12_m24": 67.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -2989,7 +3860,20 @@
    "cons_return_2yr": 49.6,
    "path": "staging/retrospective/AAPL/2010-04-22",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.4,
+    "tr_1y": 31.6,
+    "tr_2y": 115.0,
+    "tr_3y": 52.6,
+    "excess_6m": 16.7,
+    "excess_1y": 19.1,
+    "excess_2y": 96.9,
+    "excess_3y": 16.8,
+    "avg_m12_m24": 57.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3008,7 +3892,20 @@
    "cons_return_2yr": 52.7,
    "path": "staging/retrospective/AAPL/2010-04-30",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.3,
+    "tr_1y": 34.1,
+    "tr_2y": 123.7,
+    "tr_3y": 72.6,
+    "excess_6m": 14.6,
+    "excess_1y": 17.3,
+    "excess_2y": 101.8,
+    "excess_3y": 31.4,
+    "avg_m12_m24": 62.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3027,7 +3924,20 @@
    "cons_return_2yr": 69.0,
    "path": "staging/retrospective/AAPL/2010-05-07",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.5,
+    "tr_1y": 47.0,
+    "tr_2y": 141.4,
+    "tr_3y": 97.8,
+    "excess_6m": 23.1,
+    "excess_1y": 24.3,
+    "excess_2y": 113.8,
+    "excess_3y": 44.4,
+    "avg_m12_m24": 81.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3046,7 +3956,20 @@
    "cons_return_2yr": 57.1,
    "path": "staging/retrospective/AAPL/2010-05-14",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.4,
+    "tr_1y": 34.2,
+    "tr_2y": 119.9,
+    "tr_3y": 79.2,
+    "excess_6m": 14.8,
+    "excess_1y": 14.4,
+    "excess_2y": 97.8,
+    "excess_3y": 27.0,
+    "avg_m12_m24": 70.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3065,7 +3988,20 @@
    "cons_return_2yr": 64.5,
    "path": "staging/retrospective/AAPL/2010-05-21",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.6,
+    "tr_1y": 38.3,
+    "tr_2y": 131.6,
+    "tr_3y": 86.0,
+    "excess_6m": 15.3,
+    "excess_1y": 13.7,
+    "excess_2y": 106.1,
+    "excess_3y": 25.3,
+    "avg_m12_m24": 80.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3084,7 +4020,20 @@
    "cons_return_2yr": 55.2,
    "path": "staging/retrospective/AAPL/2010-05-28",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.6,
+    "tr_1y": 31.3,
+    "tr_2y": 118.9,
+    "tr_3y": 76.1,
+    "excess_6m": 13.0,
+    "excess_1y": 7.1,
+    "excess_2y": 93.6,
+    "excess_3y": 16.6,
+    "avg_m12_m24": 71.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3103,7 +4052,20 @@
    "cons_return_2yr": 55.8,
    "path": "staging/retrospective/AAPL/2010-06-04",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.0,
+    "tr_1y": 34.2,
+    "tr_2y": 120.5,
+    "tr_3y": 79.8,
+    "excess_6m": 7.9,
+    "excess_1y": 9.9,
+    "excess_2y": 95.9,
+    "excess_3y": 19.1,
+    "avg_m12_m24": 73.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3122,7 +4084,20 @@
    "cons_return_2yr": 57.3,
    "path": "staging/retrospective/AAPL/2010-06-11",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.4,
+    "tr_1y": 28.6,
+    "tr_2y": 125.3,
+    "tr_3y": 77.0,
+    "excess_6m": 11.9,
+    "excess_1y": 10.1,
+    "excess_2y": 101.0,
+    "excess_3y": 20.8,
+    "avg_m12_m24": 77.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3141,7 +4116,20 @@
    "cons_return_2yr": 45.5,
    "path": "staging/retrospective/AAPL/2010-06-18",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.0,
+    "tr_1y": 16.9,
+    "tr_2y": 113.7,
+    "tr_3y": 61.6,
+    "excess_6m": 4.6,
+    "excess_1y": 1.0,
+    "excess_2y": 88.8,
+    "excess_3y": 6.4,
+    "avg_m12_m24": 66.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3160,7 +4148,20 @@
    "cons_return_2yr": 49.5,
    "path": "staging/retrospective/AAPL/2010-06-25",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.3,
+    "tr_1y": 22.4,
+    "tr_2y": 114.0,
+    "tr_3y": 55.1,
+    "excess_6m": 3.7,
+    "excess_1y": 2.5,
+    "excess_2y": 87.5,
+    "excess_3y": 0.2,
+    "avg_m12_m24": 72.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3179,7 +4180,20 @@
    "cons_return_2yr": 61.4,
    "path": "staging/retrospective/AAPL/2010-07-02",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.6,
+    "tr_1y": 39.0,
+    "tr_2y": 139.9,
+    "tr_3y": 73.9,
+    "excess_6m": 6.4,
+    "excess_1y": 5.6,
+    "excess_2y": 101.4,
+    "excess_3y": 7.9,
+    "avg_m12_m24": 88.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3198,7 +4212,20 @@
    "cons_return_2yr": 53.6,
    "path": "staging/retrospective/AAPL/2010-07-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.5,
+    "tr_1y": 38.6,
+    "tr_2y": 136.5,
+    "tr_3y": 66.9,
+    "excess_6m": 10.5,
+    "excess_1y": 11.8,
+    "excess_2y": 106.4,
+    "excess_3y": 6.1,
+    "avg_m12_m24": 80.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3217,7 +4244,20 @@
    "cons_return_2yr": 59.5,
    "path": "staging/retrospective/AAPL/2010-07-16",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.4,
+    "tr_1y": 46.0,
+    "tr_2y": 142.9,
+    "tr_3y": 76.6,
+    "excess_6m": 17.0,
+    "excess_1y": 20.3,
+    "excess_2y": 111.1,
+    "excess_3y": 11.6,
+    "avg_m12_m24": 89.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3236,7 +4276,20 @@
    "cons_return_2yr": 83.3,
    "path": "staging/retrospective/AAPL/2010-07-22",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.1,
+    "tr_1y": 51.8,
+    "tr_2y": 133.3,
+    "tr_3y": 68.8,
+    "excess_6m": 7.7,
+    "excess_1y": 26.7,
+    "excess_2y": 103.9,
+    "excess_3y": 6.2,
+    "avg_m12_m24": 84.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3255,7 +4308,20 @@
    "cons_return_2yr": 84.5,
    "path": "staging/retrospective/AAPL/2010-07-30",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.7,
+    "tr_1y": 51.8,
+    "tr_2y": 131.3,
+    "tr_3y": 80.5,
+    "excess_6m": 13.7,
+    "excess_1y": 32.3,
+    "excess_2y": 100.9,
+    "excess_3y": 19.9,
+    "avg_m12_m24": 87.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3274,7 +4340,20 @@
    "cons_return_2yr": 89.5,
    "path": "staging/retrospective/AAPL/2010-08-06",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.2,
+    "tr_1y": 43.7,
+    "tr_2y": 139.4,
+    "tr_3y": 83.1,
+    "excess_6m": 15.4,
+    "excess_1y": 34.6,
+    "excess_2y": 110.6,
+    "excess_3y": 24.6,
+    "avg_m12_m24": 87.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3293,7 +4372,20 @@
    "cons_return_2yr": 97.9,
    "path": "staging/retrospective/AAPL/2010-08-13",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.3,
+    "tr_1y": 51.3,
+    "tr_2y": 154.0,
+    "tr_3y": 102.2,
+    "excess_6m": 19.2,
+    "excess_1y": 40.0,
+    "excess_2y": 119.3,
+    "excess_3y": 37.8,
+    "avg_m12_m24": 97.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3312,7 +4404,20 @@
    "cons_return_2yr": 97.5,
    "path": "staging/retrospective/AAPL/2010-08-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.4,
+    "tr_1y": 42.6,
+    "tr_2y": 167.5,
+    "tr_3y": 106.3,
+    "excess_6m": 14.1,
+    "excess_1y": 35.6,
+    "excess_2y": 130.5,
+    "excess_3y": 44.5,
+    "avg_m12_m24": 99.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3331,7 +4436,20 @@
    "cons_return_2yr": 104.0,
    "path": "staging/retrospective/AAPL/2010-08-27",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.1,
+    "tr_1y": 58.8,
+    "tr_2y": 180.7,
+    "tr_3y": 108.0,
+    "excess_6m": 19.1,
+    "excess_1y": 46.1,
+    "excess_2y": 143.5,
+    "excess_3y": 47.3,
+    "avg_m12_m24": 108.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3350,7 +4468,20 @@
    "cons_return_2yr": 90.5,
    "path": "staging/retrospective/AAPL/2010-09-03",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.9,
+    "tr_1y": 44.5,
+    "tr_2y": 158.1,
+    "tr_3y": 94.2,
+    "excess_6m": 17.5,
+    "excess_1y": 36.1,
+    "excess_2y": 126.2,
+    "excess_3y": 38.4,
+    "avg_m12_m24": 96.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3369,7 +4500,20 @@
    "cons_return_2yr": 87.1,
    "path": "staging/retrospective/AAPL/2010-09-10",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.6,
+    "tr_1y": 43.3,
+    "tr_2y": 152.6,
+    "tr_3y": 93.1,
+    "excess_6m": 13.9,
+    "excess_1y": 37.1,
+    "excess_2y": 119.3,
+    "excess_3y": 34.0,
+    "avg_m12_m24": 94.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3388,7 +4532,20 @@
    "cons_return_2yr": 79.0,
    "path": "staging/retrospective/AAPL/2010-09-17",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.5,
+    "tr_1y": 45.4,
+    "tr_2y": 155.1,
+    "tr_3y": 70.5,
+    "excess_6m": 7.3,
+    "excess_1y": 35.2,
+    "excess_2y": 120.6,
+    "excess_3y": 11.4,
+    "avg_m12_m24": 88.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3407,7 +4564,20 @@
    "cons_return_2yr": 68.6,
    "path": "staging/retrospective/AAPL/2010-09-24",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.0,
+    "tr_1y": 38.3,
+    "tr_2y": 137.2,
+    "tr_3y": 72.1,
+    "excess_6m": 3.0,
+    "excess_1y": 37.3,
+    "excess_2y": 105.7,
+    "excess_3y": 16.9,
+    "avg_m12_m24": 79.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3426,7 +4596,20 @@
    "cons_return_2yr": 74.5,
    "path": "staging/retrospective/AAPL/2010-10-01",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.0,
+    "tr_1y": 35.0,
+    "tr_2y": 134.3,
+    "tr_3y": 77.7,
+    "excess_6m": 4.7,
+    "excess_1y": 34.1,
+    "excess_2y": 103.8,
+    "excess_3y": 22.3,
+    "avg_m12_m24": 87.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3445,7 +4628,20 @@
    "cons_return_2yr": 67.6,
    "path": "staging/retrospective/AAPL/2010-10-08",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.9,
+    "tr_1y": 25.8,
+    "tr_2y": 117.9,
+    "tr_3y": 68.3,
+    "excess_6m": -1.1,
+    "excess_1y": 24.4,
+    "excess_2y": 88.4,
+    "excess_3y": 18.9,
+    "avg_m12_m24": 82.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3464,7 +4660,20 @@
    "cons_return_2yr": 56.6,
    "path": "staging/retrospective/AAPL/2010-10-15",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.0,
+    "tr_1y": 34.1,
+    "tr_2y": 102.5,
+    "tr_3y": 62.9,
+    "excess_6m": -9.2,
+    "excess_1y": 27.9,
+    "excess_2y": 75.6,
+    "excess_3y": 11.3,
+    "avg_m12_m24": 71.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3483,7 +4692,20 @@
    "cons_return_2yr": 143.4,
    "path": "staging/retrospective/AAPL/2010-10-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.3,
+    "tr_1y": 27.3,
+    "tr_2y": 97.2,
+    "tr_3y": 68.4,
+    "excess_6m": -3.7,
+    "excess_1y": 22.0,
+    "excess_2y": 71.1,
+    "excess_3y": 13.1,
+    "avg_m12_m24": 75.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3502,7 +4724,20 @@
    "cons_return_2yr": 151.1,
    "path": "staging/retrospective/AAPL/2010-10-29",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.3,
+    "tr_1y": 34.5,
+    "tr_2y": 101.6,
+    "tr_3y": 76.3,
+    "excess_6m": 0.2,
+    "excess_1y": 23.9,
+    "excess_2y": 77.8,
+    "excess_3y": 19.5,
+    "avg_m12_m24": 82.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3521,7 +4756,20 @@
    "cons_return_2yr": 138.3,
    "path": "staging/retrospective/AAPL/2010-11-05",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.3,
+    "tr_1y": 26.2,
+    "tr_2y": 85.2,
+    "tr_3y": 70.1,
+    "excess_6m": -0.5,
+    "excess_1y": 22.0,
+    "excess_2y": 65.3,
+    "excess_3y": 19.4,
+    "avg_m12_m24": 74.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3540,7 +4788,20 @@
    "cons_return_2yr": 145.3,
    "path": "staging/retrospective/AAPL/2010-11-12",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.5,
+    "tr_1y": 24.9,
+    "tr_2y": 77.9,
+    "tr_3y": 74.4,
+    "excess_6m": -0.9,
+    "excess_1y": 17.4,
+    "excess_2y": 58.5,
+    "excess_3y": 19.9,
+    "avg_m12_m24": 80.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3559,7 +4820,20 @@
    "cons_return_2yr": 146.4,
    "path": "staging/retrospective/AAPL/2010-11-19",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.0,
+    "tr_1y": 22.2,
+    "tr_2y": 86.2,
+    "tr_3y": 75.0,
+    "excess_6m": -1.9,
+    "excess_1y": 18.8,
+    "excess_2y": 66.1,
+    "excess_3y": 18.9,
+    "avg_m12_m24": 82.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3578,7 +4852,20 @@
    "cons_return_2yr": 139.9,
    "path": "staging/retrospective/AAPL/2010-11-26",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.3,
+    "tr_1y": 15.4,
+    "tr_2y": 88.8,
+    "tr_3y": 74.8,
+    "excess_6m": -6.6,
+    "excess_1y": 15.4,
+    "excess_2y": 65.6,
+    "excess_3y": 15.3,
+    "avg_m12_m24": 78.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3597,7 +4884,20 @@
    "cons_return_2yr": 138.1,
    "path": "staging/retrospective/AAPL/2010-12-03",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.2,
+    "tr_1y": 22.8,
+    "tr_2y": 86.3,
+    "tr_3y": 83.8,
+    "excess_6m": 1.1,
+    "excess_1y": 19.2,
+    "excess_2y": 66.9,
+    "excess_3y": 30.4,
+    "avg_m12_m24": 78.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3616,7 +4916,20 @@
    "cons_return_2yr": 135.7,
    "path": "staging/retrospective/AAPL/2010-12-10",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.7,
+    "tr_1y": 22.8,
+    "tr_2y": 66.9,
+    "tr_3y": 81.8,
+    "excess_6m": -1.8,
+    "excess_1y": 19.6,
+    "excess_2y": 48.2,
+    "excess_3y": 29.6,
+    "avg_m12_m24": 77.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3635,7 +4948,20 @@
    "cons_return_2yr": 135.7,
    "path": "staging/retrospective/AAPL/2010-12-17",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.1,
+    "tr_1y": 18.8,
+    "tr_2y": 63.5,
+    "tr_3y": 78.4,
+    "excess_6m": -3.3,
+    "excess_1y": 19.0,
+    "excess_2y": 44.1,
+    "excess_3y": 28.2,
+    "avg_m12_m24": 78.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3654,7 +4980,20 @@
    "cons_return_2yr": 133.5,
    "path": "staging/retrospective/AAPL/2010-12-23",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.4,
+    "tr_1y": 24.6,
+    "tr_2y": 62.1,
+    "tr_3y": 81.5,
+    "excess_6m": -0.7,
+    "excess_1y": 22.0,
+    "excess_2y": 43.9,
+    "excess_3y": 28.9,
+    "avg_m12_m24": 77.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3673,7 +5012,20 @@
    "cons_return_2yr": 134.3,
    "path": "staging/retrospective/AAPL/2010-12-31",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.1,
+    "tr_1y": 25.6,
+    "tr_2y": 59.6,
+    "tr_3y": 77.2,
+    "excess_6m": -1.8,
+    "excess_1y": 23.7,
+    "excess_2y": 43.8,
+    "excess_3y": 23.9,
+    "avg_m12_m24": 78.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3692,7 +5044,20 @@
    "cons_return_2yr": 124.8,
    "path": "staging/retrospective/AAPL/2011-01-07",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.3,
+    "tr_1y": 25.7,
+    "tr_2y": 57.4,
+    "tr_3y": 65.8,
+    "excess_6m": -1.1,
+    "excess_1y": 23.2,
+    "excess_2y": 38.2,
+    "excess_3y": 14.3,
+    "avg_m12_m24": 71.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3711,7 +5076,20 @@
    "cons_return_2yr": 116.9,
    "path": "staging/retrospective/AAPL/2011-01-14",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.7,
+    "tr_1y": 20.5,
+    "tr_2y": 45.5,
+    "tr_3y": 61.7,
+    "excess_6m": 0.5,
+    "excess_1y": 18.8,
+    "excess_2y": 27.4,
+    "excess_3y": 12.7,
+    "avg_m12_m24": 66.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3730,7 +5108,20 @@
    "cons_return_2yr": 182.6,
    "path": "staging/retrospective/AAPL/2011-01-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.3,
+    "tr_1y": 26.3,
+    "tr_2y": 51.9,
+    "tr_3y": 67.7,
+    "excess_6m": 11.8,
+    "excess_1y": 21.3,
+    "excess_2y": 31.6,
+    "excess_3y": 17.2,
+    "avg_m12_m24": 74.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3749,7 +5140,20 @@
    "cons_return_2yr": 179.7,
    "path": "staging/retrospective/AAPL/2011-01-28",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.6,
+    "tr_1y": 33.1,
+    "tr_2y": 35.4,
+    "tr_3y": 55.8,
+    "excess_6m": 13.7,
+    "excess_1y": 27.9,
+    "excess_2y": 13.5,
+    "excess_3y": 8.5,
+    "avg_m12_m24": 73.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3768,7 +5172,20 @@
    "cons_return_2yr": 171.3,
    "path": "staging/retrospective/AAPL/2011-02-04",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.9,
+    "tr_1y": 32.7,
+    "tr_2y": 29.2,
+    "tr_3y": 51.8,
+    "excess_6m": 16.3,
+    "excess_1y": 28.1,
+    "excess_2y": 10.8,
+    "excess_3y": 11.2,
+    "avg_m12_m24": 67.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3787,7 +5204,20 @@
    "cons_return_2yr": 163.5,
    "path": "staging/retrospective/AAPL/2011-02-11",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.7,
+    "tr_1y": 38.3,
+    "tr_2y": 36.7,
+    "tr_3y": 55.8,
+    "excess_6m": 15.7,
+    "excess_1y": 35.4,
+    "excess_2y": 18.4,
+    "excess_3y": 12.3,
+    "avg_m12_m24": 62.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3806,7 +5236,20 @@
    "cons_return_2yr": 168.2,
    "path": "staging/retrospective/AAPL/2011-02-18",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.4,
+    "tr_1y": 43.2,
+    "tr_2y": 33.5,
+    "tr_3y": 61.5,
+    "excess_6m": 18.4,
+    "excess_1y": 39.9,
+    "excess_2y": 16.2,
+    "excess_3y": 17.8,
+    "avg_m12_m24": 65.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3825,7 +5268,20 @@
    "cons_return_2yr": 170.0,
    "path": "staging/retrospective/AAPL/2011-02-25",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.3,
+    "tr_1y": 50.0,
+    "tr_2y": 29.5,
+    "tr_3y": 55.7,
+    "excess_6m": 18.6,
+    "excess_1y": 44.6,
+    "excess_2y": 12.6,
+    "excess_3y": 9.2,
+    "avg_m12_m24": 66.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3844,7 +5300,20 @@
    "cons_return_2yr": 161.2,
    "path": "staging/retrospective/AAPL/2011-03-04",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.9,
+    "tr_1y": 51.4,
+    "tr_2y": 18.9,
+    "tr_3y": 53.2,
+    "excess_6m": 14.0,
+    "excess_1y": 45.8,
+    "excess_2y": -0.8,
+    "excess_3y": 4.7,
+    "avg_m12_m24": 60.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -3863,7 +5332,20 @@
    "cons_return_2yr": 167.1,
    "path": "staging/retrospective/AAPL/2011-03-11",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.2,
+    "tr_1y": 54.9,
+    "tr_2y": 26.7,
+    "tr_3y": 58.0,
+    "excess_6m": 17.7,
+    "excess_1y": 47.8,
+    "excess_2y": 3.1,
+    "excess_3y": 8.0,
+    "avg_m12_m24": 63.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3882,7 +5364,20 @@
    "cons_return_2yr": 184.3,
    "path": "staging/retrospective/AAPL/2011-03-18",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.1,
+    "tr_1y": 77.1,
+    "tr_2y": 40.2,
+    "tr_3y": 66.8,
+    "excess_6m": 25.0,
+    "excess_1y": 65.2,
+    "excess_2y": 14.4,
+    "excess_3y": 13.3,
+    "avg_m12_m24": 73.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3901,7 +5396,20 @@
    "cons_return_2yr": 156.7,
    "path": "staging/retrospective/AAPL/2011-03-25",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.0,
+    "tr_1y": 69.6,
+    "tr_2y": 34.1,
+    "tr_3y": 60.8,
+    "excess_6m": 27.6,
+    "excess_1y": 61.2,
+    "excess_2y": 11.7,
+    "excess_3y": 11.8,
+    "avg_m12_m24": 62.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3920,7 +5428,20 @@
    "cons_return_2yr": 161.9,
    "path": "staging/retrospective/AAPL/2011-04-01",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.7,
+    "tr_1y": 74.0,
+    "tr_2y": 26.8,
+    "tr_3y": 63.0,
+    "excess_6m": 24.7,
+    "excess_1y": 66.3,
+    "excess_2y": 5.2,
+    "excess_3y": 14.7,
+    "avg_m12_m24": 64.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3939,7 +5460,20 @@
    "cons_return_2yr": 169.4,
    "path": "staging/retrospective/AAPL/2011-04-08",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.4,
+    "tr_1y": 89.1,
+    "tr_2y": 29.6,
+    "tr_3y": 62.2,
+    "excess_6m": 22.3,
+    "excess_1y": 81.9,
+    "excess_2y": 7.6,
+    "excess_3y": 15.9,
+    "avg_m12_m24": 68.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3958,7 +5492,20 @@
    "cons_return_2yr": 175.6,
    "path": "staging/retrospective/AAPL/2011-04-15",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.9,
+    "tr_1y": 84.8,
+    "tr_2y": 30.6,
+    "tr_3y": 64.3,
+    "excess_6m": 35.1,
+    "excess_1y": 79.0,
+    "excess_2y": 8.8,
+    "excess_3y": 17.8,
+    "avg_m12_m24": 70.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -3977,7 +5524,20 @@
    "cons_return_2yr": 106.3,
    "path": "staging/retrospective/AAPL/2011-04-21",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.0,
+    "tr_1y": 63.4,
+    "tr_2y": 13.6,
+    "tr_3y": 57.2,
+    "excess_6m": 18.4,
+    "excess_1y": 58.3,
+    "excess_2y": -6.9,
+    "excess_3y": 10.4,
+    "avg_m12_m24": 58.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -3996,7 +5556,20 @@
    "cons_return_2yr": 106.6,
    "path": "staging/retrospective/AAPL/2011-04-29",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.7,
+    "tr_1y": 72.2,
+    "tr_2y": 25.1,
+    "tr_3y": 74.9,
+    "excess_6m": 20.5,
+    "excess_1y": 67.4,
+    "excess_2y": 4.1,
+    "excess_3y": 30.5,
+    "avg_m12_m24": 57.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4015,7 +5588,20 @@
    "cons_return_2yr": 108.7,
    "path": "staging/retrospective/AAPL/2011-05-06",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.5,
+    "tr_1y": 63.1,
+    "tr_2y": 35.2,
+    "tr_3y": 77.3,
+    "excess_6m": 21.0,
+    "excess_1y": 59.0,
+    "excess_2y": 10.3,
+    "excess_3y": 31.2,
+    "avg_m12_m24": 58.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4034,7 +5620,20 @@
    "cons_return_2yr": 112.5,
    "path": "staging/retrospective/AAPL/2011-05-13",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.0,
+    "tr_1y": 66.4,
+    "tr_2y": 36.8,
+    "tr_3y": 81.3,
+    "excess_6m": 17.5,
+    "excess_1y": 63.3,
+    "excess_2y": 10.4,
+    "excess_3y": 32.6,
+    "avg_m12_m24": 60.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4053,7 +5652,20 @@
    "cons_return_2yr": 115.8,
    "path": "staging/retrospective/AAPL/2011-05-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.8,
+    "tr_1y": 58.2,
+    "tr_2y": 35.4,
+    "tr_3y": 87.4,
+    "excess_6m": 19.6,
+    "excess_1y": 59.1,
+    "excess_2y": 6.1,
+    "excess_3y": 40.1,
+    "avg_m12_m24": 62.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4072,7 +5684,20 @@
    "cons_return_2yr": 114.4,
    "path": "staging/retrospective/AAPL/2011-05-27",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.8,
+    "tr_1y": 66.6,
+    "tr_2y": 35.2,
+    "tr_3y": 92.4,
+    "excess_6m": 19.7,
+    "excess_1y": 65.7,
+    "excess_2y": 7.0,
+    "excess_3y": 42.0,
+    "avg_m12_m24": 60.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4091,7 +5716,20 @@
    "cons_return_2yr": 110.6,
    "path": "staging/retrospective/AAPL/2011-06-03",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.5,
+    "tr_1y": 63.3,
+    "tr_2y": 34.4,
+    "tr_3y": 92.5,
+    "excess_6m": 16.8,
+    "excess_1y": 63.1,
+    "excess_2y": 4.0,
+    "excess_3y": 37.5,
+    "avg_m12_m24": 57.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4110,7 +5748,20 @@
    "cons_return_2yr": 122.0,
    "path": "staging/retrospective/AAPL/2011-06-10",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.8,
+    "tr_1y": 78.1,
+    "tr_2y": 38.0,
+    "tr_3y": 109.6,
+    "excess_6m": 21.0,
+    "excess_1y": 71.7,
+    "excess_2y": 4.3,
+    "excess_3y": 49.1,
+    "avg_m12_m24": 65.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4129,7 +5780,20 @@
    "cons_return_2yr": 125.9,
    "path": "staging/retrospective/AAPL/2011-06-17",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.0,
+    "tr_1y": 79.3,
+    "tr_2y": 38.3,
+    "tr_3y": 108.6,
+    "excess_6m": 22.2,
+    "excess_1y": 71.6,
+    "excess_2y": 4.8,
+    "excess_3y": 48.4,
+    "avg_m12_m24": 67.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4148,7 +5812,20 @@
    "cons_return_2yr": 121.7,
    "path": "staging/retrospective/AAPL/2011-06-24",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.6,
+    "tr_1y": 78.4,
+    "tr_2y": 26.7,
+    "tr_3y": 100.8,
+    "excess_6m": 22.8,
+    "excess_1y": 71.0,
+    "excess_2y": -1.9,
+    "excess_3y": 39.7,
+    "avg_m12_m24": 63.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4167,7 +5844,20 @@
    "cons_return_2yr": 110.7,
    "path": "staging/retrospective/AAPL/2011-07-01",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.0,
+    "tr_1y": 70.1,
+    "tr_2y": 22.4,
+    "tr_3y": 97.5,
+    "excess_6m": 23.2,
+    "excess_1y": 66.5,
+    "excess_2y": -2.6,
+    "excess_3y": 43.2,
+    "avg_m12_m24": 54.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4186,7 +5876,20 @@
    "cons_return_2yr": 101.1,
    "path": "staging/retrospective/AAPL/2011-07-08",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.4,
+    "tr_1y": 68.4,
+    "tr_2y": 18.4,
+    "tr_3y": 92.1,
+    "excess_6m": 21.4,
+    "excess_1y": 65.6,
+    "excess_2y": -8.0,
+    "excess_3y": 38.9,
+    "avg_m12_m24": 46.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4205,7 +5908,20 @@
    "cons_return_2yr": 98.2,
    "path": "staging/retrospective/AAPL/2011-07-15",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.0,
+    "tr_1y": 65.8,
+    "tr_2y": 20.1,
+    "tr_3y": 89.3,
+    "excess_6m": 16.1,
+    "excess_1y": 60.7,
+    "excess_2y": -12.1,
+    "excess_3y": 32.2,
+    "avg_m12_m24": 43.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4224,7 +5940,20 @@
    "cons_return_2yr": 29.5,
    "path": "staging/retrospective/AAPL/2011-07-21",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.5,
+    "tr_1y": 56.0,
+    "tr_2y": 12.6,
+    "tr_3y": 75.8,
+    "excess_6m": 9.4,
+    "excess_1y": 52.6,
+    "excess_2y": -17.7,
+    "excess_3y": 22.0,
+    "avg_m12_m24": 33.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4243,7 +5972,20 @@
    "cons_return_2yr": 28.5,
    "path": "staging/retrospective/AAPL/2011-07-29",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.5,
+    "tr_1y": 49.9,
+    "tr_2y": 17.5,
+    "tr_3y": 82.4,
+    "excess_6m": 11.5,
+    "excess_1y": 40.5,
+    "excess_2y": -17.5,
+    "excess_3y": 22.6,
+    "avg_m12_m24": 32.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4262,7 +6004,20 @@
    "cons_return_2yr": 34.3,
    "path": "staging/retrospective/AAPL/2011-08-05",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.0,
+    "tr_1y": 64.8,
+    "tr_2y": 28.6,
+    "tr_3y": 84.5,
+    "excess_6m": 9.8,
+    "excess_1y": 46.5,
+    "excess_2y": -18.6,
+    "excess_3y": 16.6,
+    "avg_m12_m24": 37.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4281,7 +6036,20 @@
    "cons_return_2yr": 33.1,
    "path": "staging/retrospective/AAPL/2011-08-12",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.9,
+    "tr_1y": 65.6,
+    "tr_2y": 27.7,
+    "tr_3y": 85.3,
+    "excess_6m": 16.0,
+    "excess_1y": 44.1,
+    "excess_2y": -20.6,
+    "excess_3y": 13.3,
+    "avg_m12_m24": 35.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4300,7 +6068,20 @@
    "cons_return_2yr": 40.9,
    "path": "staging/retrospective/AAPL/2011-08-19",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.0,
+    "tr_1y": 82.8,
+    "tr_2y": 46.6,
+    "tr_3y": 105.2,
+    "excess_6m": 18.7,
+    "excess_1y": 54.2,
+    "excess_2y": -5.1,
+    "excess_3y": 20.5,
+    "avg_m12_m24": 42.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4319,7 +6100,20 @@
    "cons_return_2yr": 30.8,
    "path": "staging/retrospective/AAPL/2011-08-26",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.2,
+    "tr_1y": 73.6,
+    "tr_2y": 34.8,
+    "tr_3y": 91.1,
+    "excess_6m": 18.9,
+    "excess_1y": 51.4,
+    "excess_2y": -11.0,
+    "excess_3y": 13.1,
+    "avg_m12_m24": 31.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4338,7 +6132,20 @@
    "cons_return_2yr": 34.1,
    "path": "staging/retrospective/AAPL/2011-09-02",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 45.8,
+    "tr_1y": 78.6,
+    "tr_2y": 34.0,
+    "tr_3y": 100.5,
+    "excess_6m": 28.1,
+    "excess_1y": 56.5,
+    "excess_2y": -10.0,
+    "excess_3y": 22.1,
+    "avg_m12_m24": 33.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4357,7 +6164,20 @@
    "cons_return_2yr": 32.9,
    "path": "staging/retrospective/AAPL/2011-09-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.4,
+    "tr_1y": 81.0,
+    "tr_2y": 37.8,
+    "tr_3y": 88.8,
+    "excess_6m": 24.5,
+    "excess_1y": 54.1,
+    "excess_2y": -12.0,
+    "excess_3y": 8.6,
+    "avg_m12_m24": 31.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4376,7 +6196,20 @@
    "cons_return_2yr": 25.2,
    "path": "staging/retrospective/AAPL/2011-09-16",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.2,
+    "tr_1y": 73.3,
+    "tr_2y": 15.9,
+    "tr_3y": 83.0,
+    "excess_6m": 29.6,
+    "excess_1y": 50.4,
+    "excess_2y": -28.7,
+    "excess_3y": 10.6,
+    "avg_m12_m24": 23.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4395,7 +6228,20 @@
    "cons_return_2yr": 24.1,
    "path": "staging/retrospective/AAPL/2011-09-23",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.4,
+    "tr_1y": 73.8,
+    "tr_2y": 24.8,
+    "tr_3y": 84.3,
+    "excess_6m": 23.2,
+    "excess_1y": 42.8,
+    "excess_2y": -30.3,
+    "excess_3y": 1.2,
+    "avg_m12_m24": 20.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4414,7 +6260,20 @@
    "cons_return_2yr": 31.5,
    "path": "staging/retrospective/AAPL/2011-09-30",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 57.2,
+    "tr_1y": 75.6,
+    "tr_2y": 28.7,
+    "tr_3y": 92.0,
+    "excess_6m": 31.6,
+    "excess_1y": 45.9,
+    "excess_2y": -25.3,
+    "excess_3y": 9.1,
+    "avg_m12_m24": 27.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4433,7 +6292,20 @@
    "cons_return_2yr": 35.6,
    "path": "staging/retrospective/AAPL/2011-10-07",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 71.4,
+    "tr_1y": 77.2,
+    "tr_2y": 35.7,
+    "tr_3y": 94.2,
+    "excess_6m": 49.4,
+    "excess_1y": 48.4,
+    "excess_2y": -14.4,
+    "excess_3y": 18.6,
+    "avg_m12_m24": 30.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4452,7 +6324,20 @@
    "cons_return_2yr": 18.9,
    "path": "staging/retrospective/AAPL/2011-10-14",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.4,
+    "tr_1y": 49.8,
+    "tr_2y": 20.9,
+    "tr_3y": 70.1,
+    "excess_6m": 30.4,
+    "excess_1y": 30.9,
+    "excess_2y": -23.7,
+    "excess_3y": 8.9,
+    "avg_m12_m24": 13.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AAPL",
@@ -4471,7 +6356,20 @@
    "cons_return_2yr": 198.3,
    "path": "staging/retrospective/AAPL/2011-10-20",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.9,
+    "tr_1y": 54.9,
+    "tr_2y": 32.3,
+    "tr_3y": 83.4,
+    "excess_6m": 30.4,
+    "excess_1y": 34.7,
+    "excess_2y": -16.2,
+    "excess_3y": 18.8,
+    "avg_m12_m24": 20.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4490,7 +6388,20 @@
    "cons_return_2yr": 179.0,
    "path": "staging/retrospective/AAPL/2011-10-28",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 48.9,
+    "tr_1y": 49.8,
+    "tr_2y": 34.3,
+    "tr_3y": 91.1,
+    "excess_6m": 38.7,
+    "excess_1y": 37.7,
+    "excess_2y": -7.6,
+    "excess_3y": 29.1,
+    "avg_m12_m24": 16.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4509,7 +6420,20 @@
    "cons_return_2yr": 182.3,
    "path": "staging/retrospective/AAPL/2011-11-04",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.2,
+    "tr_1y": 44.8,
+    "tr_2y": 35.1,
+    "tr_3y": 96.6,
+    "excess_6m": 30.9,
+    "excess_1y": 29.7,
+    "excess_2y": -10.8,
+    "excess_3y": 28.5,
+    "avg_m12_m24": 18.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4528,7 +6452,20 @@
    "cons_return_2yr": 193.8,
    "path": "staging/retrospective/AAPL/2011-11-11",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.3,
+    "tr_1y": 43.6,
+    "tr_2y": 39.4,
+    "tr_3y": 107.5,
+    "excess_6m": 39.2,
+    "excess_1y": 32.3,
+    "excess_2y": -5.5,
+    "excess_3y": 38.4,
+    "avg_m12_m24": 22.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4547,7 +6484,20 @@
    "cons_return_2yr": 201.4,
    "path": "staging/retrospective/AAPL/2011-11-18",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.5,
+    "tr_1y": 42.2,
+    "tr_2y": 42.9,
+    "tr_3y": 123.6,
+    "excess_6m": 34.0,
+    "excess_1y": 28.0,
+    "excess_2y": -9.3,
+    "excess_3y": 46.9,
+    "avg_m12_m24": 25.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4566,7 +6516,20 @@
    "cons_return_2yr": 210.8,
    "path": "staging/retrospective/AAPL/2011-11-25",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 54.7,
+    "tr_1y": 58.6,
+    "tr_2y": 48.8,
+    "tr_3y": 134.7,
+    "excess_6m": 39.9,
+    "excess_1y": 34.7,
+    "excess_2y": -11.9,
+    "excess_3y": 48.1,
+    "avg_m12_m24": 29.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4585,7 +6548,20 @@
    "cons_return_2yr": 189.9,
    "path": "staging/retrospective/AAPL/2011-12-02",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.0,
+    "tr_1y": 51.5,
+    "tr_2y": 45.8,
+    "tr_3y": 113.6,
+    "excess_6m": 40.2,
+    "excess_1y": 35.4,
+    "excess_2y": -3.7,
+    "excess_3y": 39.8,
+    "avg_m12_m24": 20.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4604,7 +6580,20 @@
    "cons_return_2yr": 187.1,
    "path": "staging/retrospective/AAPL/2011-12-09",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.4,
+    "tr_1y": 36.8,
+    "tr_2y": 48.2,
+    "tr_3y": 110.6,
+    "excess_6m": 40.7,
+    "excess_1y": 21.6,
+    "excess_2y": -0.6,
+    "excess_3y": 38.9,
+    "avg_m12_m24": 19.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4623,7 +6612,20 @@
    "cons_return_2yr": 196.5,
    "path": "staging/retrospective/AAPL/2011-12-16",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.7,
+    "tr_1y": 35.2,
+    "tr_2y": 50.8,
+    "tr_3y": 104.0,
+    "excess_6m": 39.3,
+    "excess_1y": 16.6,
+    "excess_2y": -1.1,
+    "excess_3y": 33.7,
+    "avg_m12_m24": 23.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4642,7 +6644,20 @@
    "cons_return_2yr": 180.1,
    "path": "staging/retrospective/AAPL/2011-12-23",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.3,
+    "tr_1y": 30.1,
+    "tr_2y": 45.6,
+    "tr_3y": 102.8,
+    "excess_6m": 37.7,
+    "excess_1y": 14.6,
+    "excess_2y": -3.9,
+    "excess_3y": 30.2,
+    "avg_m12_m24": 17.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AAPL",
@@ -4661,7 +6676,20 @@
    "cons_return_2yr": 179.0,
    "path": "staging/retrospective/AAPL/2011-12-30",
    "generated": "2026-10-29",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.2,
+    "tr_1y": 27.1,
+    "tr_2y": 41.1,
+    "tr_3y": 101.9,
+    "excess_6m": 34.7,
+    "excess_1y": 13.1,
+    "excess_2y": -10.5,
+    "excess_3y": 28.3,
+    "avg_m12_m24": 16.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "LOW",
