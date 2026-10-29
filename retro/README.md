@@ -1548,6 +1548,155 @@ Judgement calls that could carry hindsight:
 - the published adjusted quarter margins in the prints (no class changes in 2019-2020);
 - extending the online-competition quote to the new delivery sentence (text only).
 
+### LOW 2021-2023: sales guides in dollars, a year without an EPS guide, the Canadian sale
+
+```bash
+python3 retro/build_low.py --weekly 2021-01-04 2021-12-31                   # 52 dates, 2021-01-08 .. 2021-12-31
+python3 retro/build_low.py --weekly 2022-01-03 2022-12-31                   # 52 dates, 2022-01-07 .. 2022-12-30
+python3 retro/build_low.py --weekly 2023-01-02 2023-12-31                   # 52 dates, 2023-01-06 .. 2023-12-29
+```
+
+Every 8-K, 10-Q, 10-K and earnings release from 2020-12-10 to the end of 2023 was read directly, with the 10-Qs searched
+in full for forward-looking statements. 253 strings were checked with `verbatim.py`, and 645 structured checks read each
+print's numbers back from its release's tables, each vintage's from its 10-K and each source's date from EDGAR's
+acceptance time. Thresholds and signals are unchanged. Decided before any 2021-2023 date was built or scored:
+
+- **Three 10-K vintages.** FY2020 (accepted 2021-03-22 at 17:06 ET, dated 2021-03-23; five-year selected data 2016-2020),
+  FY2021 (2022-03-21 at 16:47 ET, dated 2022-03-22) and FY2022 (2023-03-27 at 16:46 ET, dated 2023-03-28). From the FY2021
+  10-K Item 6 is reserved, so each vintage takes its three income-statement years and every earlier year from the latest
+  10-K that reports it (the ACN FY21 rule). The history moves to 2011-2020, 2012-2021, then 2013-2022.
+  - First-year diluted shares: 2011's 1,273M (FY2013 10-K), 2012's 1,152M (FY2014 10-K), 2013's 1,061M (FY2015 10-K).
+  - FY20 is the company's adjusted $8.86 (GAAP $7.75, excluding the $1.1 billion loss on extinguishment of debt and the
+    Canada restructuring). FY21 has no adjustment ($12.04). FY22 is the adjusted $13.81 (GAAP $10.17, excluding the
+    Canadian retail business impairment and transaction costs).
+  - The FY2020 10-K recasts comparable sales to a transacted basis (2018 2.2%, 2019 2.6%). Only the latest year's comp is
+    shown, so nothing else moves.
+- **What each Q4 release publishes for its year.**
+  - Q4 FY20: the adjusted EPS ($8.86), so FY20 enters the history at it from the print. No adjusted operating margin for
+    the year, so the margin stays GAAP (10.77%, the Fremont rule), and no full-year comp (the 10-K's 26.1% follows).
+  - Q4 FY21: no adjustments, and the year's comp in the chief executive's quote (6.9%).
+  - Q4 FY22: the adjusted EPS ($13.81) and adjusted operating margin (13.04%) in the 8-K's reconciliation (exhibit 99.2),
+    so FY22 enters at them from the print. No full-year comp and no store count. The franchise line now says when a Q4
+    release gives no store count (a builder change, text only; every earlier Q4 release gave one).
+- **Fiscal 2021: guided in levels, never in EPS.**
+  - The Q4 FY20 release gives words only. It reiterates the 2021 "scenarios" of the December 2020 Investor Update, which
+    no filing states (the 2019-2020 rule), and expects further market share gains and operating margin improvement. So
+    FY20's $8.86 stands as the current-year EPS, BASE growth and the growth factor take the latest quarter's sales growth
+    (+26.7%), and there is no margin step. The guide line shows the release's words; it is the first LOW date to show them.
+  - The Q1 FY21 release expects "the achievement of a 12% operating margin" for the fiscal year. That is a numeric level,
+    so a guide (the 2009 level-form rule; UNP read "a 55.X% operating ratio" the same way). Its sales statement, "tracking
+    ahead of" the Robust Market scenario's $86 billion, is a one-sided bound and gives no sales field, so BASE growth
+    takes the Q1 quarter's +24.1%.
+  - The Q2 and Q3 FY21 releases guide "Revenue of approximately $92 billion", then $95 billion, and an operating margin of
+    12.2%, then 12.4%. No EPS figure all year: FY20's $8.86 stands to the Q4 FY21 print.
+- **A sales guide in dollars** (a builder change). From fiscal 2021 every sales guide is a dollar level (`rev_guide_usd_b`).
+  It is read as growth against the previous fiscal year's net sales in the history, the year the guide compares with,
+  rounded to 0.1: $92 billion is +2.7% on FY20's $89.60B. The guide line shows both. No earlier guide has the field, so
+  no earlier date changes. Catalyst (3) now says when a year is guided in numbers but never in EPS (text only).
+- **Fiscal 2022: a 53-week year and the Canadian sale.**
+  - The first fiscal 2022 outlook is in the 8-K of 2021-12-15 (before the open): sales $94-97 billion, operating margin
+    12.5-12.8%, EPS $12.25-13.00. By the 2009 rule it is a guide for fiscal 2022. The Q4 FY21 release replaces every field
+    on the day fiscal 2022 becomes current, so the 8-K shows only in the guide's document list and the EPS note ("raised
+    from $12.25-13.00"). Its restatement of the fiscal 2021 outlook adds nothing.
+  - The Q4 FY21 release guides sales of $97-99 billion including the 53rd week (about $1.0-1.5 billion, in the note: the
+    2011 rule), comps -1% to +1%, an operating margin of 12.8-13.0%, tax about 25% and EPS $13.10-13.60. The Q1 FY22
+    release affirms it. The Q2 FY22 release keeps the ranges with words ("toward the bottom end" for sales, "toward the top
+    end" for operating income and EPS): the ranges stand and the words go in the notes (the ACN Q3 FY08 rule).
+  - The 8-K of 2022-11-03 (after the close, dated 2022-11-04) announces the sale of the Canadian retail business and a
+    pre-tax impairment of about $2.0 billion. It reaffirms the outlook "exclusive of the asset impairment" with no new
+    figure, so the range stands with its words in the note (the 2011-10-17 rule).
+  - The Q3 FY22 release guides on adjusted measures only, excluding the impairment and transaction costs: sales about
+    $97-98 billion, an adjusted operating margin of 13.0%, adjusted EPS $13.65-13.80. No GAAP figure is published, so the
+    guide takes them (the Q3 FY18 rule). The conference 8-K of 2022-12-07 repeats these ranges and adds nothing; its 2023
+    scenarios are not in the filing.
+- **Fiscal 2023.**
+  - The Q4 FY22 release guides on GAAP: sales about $88-90 billion, comps flat to -2%, an operating margin of 13.6-13.8%,
+    EPS $13.60-14.00.
+  - From Q1 FY23 the guides are adjusted, excluding the gain on the Canadian sale: $87-89 billion, 13.4-13.6%,
+    $13.20-13.60 (affirmed in Q2), then about $86 billion, about 13.3% and about $13.00 (Q3).
+  - The sales levels compare with fiscal 2022 as reported: a 53-week year that still included the Canadian business. So
+    BASE growth reads -7.3% to -11.4% while the comps guides read flat to -5%. The published range stands (the 2011
+    rule); no comparable-basis sales figure was published.
+- **Level-form margin guides step from the history's margin**, as in 2009: fiscal 2021 from FY20's GAAP 10.77% (+123bp to
+  +163bp), fiscal 2022 from FY21's 12.56%, fiscal 2023 from FY22's adjusted 13.04% (the GAAP level of the Q4 FY22 guide
+  included).
+- **Published adjusted quarter margins replace GAAP in the prints** (the LOW setup rule). EBIT margin stays GAAP.
+  - Q4 FY20: gross margin 31.80% (-9bp; GAAP +70bp) and operating margin 7.56% (+41bp; GAAP +152bp).
+  - Q3 FY22: operating margin 12.71% (+54bp; GAAP -824bp).
+  - Q4 FY22: 9.55% (+88bp; GAAP -108bp).
+  - Q1 FY23: 14.43% (+47bp; GAAP +75bp).
+  - Q3 FY23 has no adjustment of its own. Its change is measured against the prior year's adjusted 12.71% (+46bp, as
+    published; GAAP +924bp): the UNP rule for the base a release names.
+- **Dividends,** each from its Q2 release (the 2015 rule; the Q1 10-Qs report only the old rate): $0.80 (2021-08-18), $1.05
+  (2022-08-17), $1.10 (2023-08-22).
+- **ECOMMERCE stays on the watch list.** The FY2020-FY2022 10-Ks keep the risk factor; from FY2021 it reads "online and
+  omnichannel retailers" and its third sentence adds same-day and next-day delivery and pick-up options. No filing shows the
+  market pricing online substitution of Lowe's stores, so the status stays company-acknowledged (the ACN CLOUD rule).
+  GENAI's registry scope does not cover a home-improvement retailer, and these 10-Ks do not mention artificial intelligence.
+- **Adds nothing:**
+  - the CFO-appointment 8-K of 2022-04-08 (after the close), which reaffirms the outlook without numbers (its 35% dividend
+    payout target has no field);
+  - the 10-Qs (capital expenditure and repurchase plans only);
+  - the repurchase authorizations ($13 billion on 2021-12-15, $15 billion on 2022-12-07) and repurchase plans (cash-return
+    text);
+  - the guides' interest-expense, depreciation, ROIC, repurchase and capital-expenditure items, the gross-margin words and
+    the two-year comp stacks (no field);
+  - the debt offerings and credit agreements; the bylaw, officer, director, vote and blackout 8-Ks; the proxy materials;
+  - the SEC comment-letter correspondence (released after the review ends).
+- **Text-only change to 2008-2020:** three source descriptions (the FY2013, FY2014 and FY2015 10-Ks) now also cite the
+  2011-2013 share counts. 353 dates change only in that text.
+- **ISO weeks:** each year's batch runs from its week 1 (2021-01-04, 2022-01-03, 2023-01-02) to its last trading day in
+  week 52. A 2024 batch starts on 2024-01-01.
+
+Controls: altering one value of each new print, guide, vintage, dividend and theme event changes no date before its
+publication and changes the first weekly date after it (34 of 34). The fiscal 2022 outlook of 2021-12-15 first shows on
+2022-02-24, the first date with fiscal 2022 current.
+
+Seen in the build (method behaviour, not tuned):
+- **2021: the fallback, then the EPS anchor.**
+  - January-February, on the restored fiscal 2020 guide ($8.67) and the Q4 FY20 sales guide (+15-20%): CHEAP and BUY on
+    all 7 dates at 19.0-20.5x.
+  - From the Q4 FY20 print FY20's $8.86 stands. The latest quarter's +26.7%, then Q1 FY21's +24.1% with the 12% margin
+    step, put BASE at 32.8%, then 40.4%/yr. CHEAP and BUY on all 25 dates to 2021-08-13, while the price rose from $158.52
+    to $208.40 and the multiple on $8.86 reached the 98th percentile of its own range.
+  - The dollar guides bring BASE to 20.5%, then 25.2%/yr, while the price keeps rising on the same $8.86 (22.9-29.5x, the
+    95th-100th percentile): RICH on all 20 dates from 2021-08-19.
+
+  In all: CHEAP 32, RICH 20; BUY 32, ACCUMULATE 8, WATCHLIST 2, AVOID 10.
+- **2022: CHEAP on the fiscal 2022 guide.**
+  - The seven January-February dates are still on the fiscal 2021 guides and $8.86 (25.1-28.3x): RICH.
+  - From the Q4 FY21 print the guided $13.35 puts the stock at 12.9-17.7x (the 2nd-31st percentile) and BASE at about
+    10%/yr: CHEAP and BUY on all 45 dates.
+  - The BEAR case is flat EPS at the 10th-percentile multiple (no year of the decade's history fell), so the BEAR price
+    ($200-215) sits near the price, and Ratio B runs from -0.15 to 0.11.
+
+  In all: CHEAP 45, RICH 7; BUY 45, WATCHLIST 4, AVOID 2, ACCUMULATE 1.
+- **2023: a sales base with the Canadian business.** The fiscal 2023 sales guides read -8.3%, -9.4% and -11.4% at their
+  midpoints, so BASE runs from +2.7% to -3.5%/yr (a negative BASE prints as "EPS +-3.5%/yr", the old sign quirk). The
+  multiple (13.7-17.5x, the 5th-39th percentile) still keeps the class CHEAP on 46 dates. It reads FAIR on 2023-07-14 and
+  RICH on 2023-07-21, 2023-07-28 and the last three December dates, at 17.1-17.5x. Ratio B stays between -0.06 and 0.22, so
+  the tier reads BUY on all 52.
+
+  In all: CHEAP 46, FAIR 1, RICH 5; BUY 52.
+- **How far each call moves the classes** (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+  - reading the $86 billion scenario as the Q1 FY21 sales guide would change 1 class and 1 tier (2021-07-23: CHEAP to
+    FAIR, BUY to ACCUMULATE);
+  - not reading dollar levels as sales guides (the latest quarter's sales growth instead) would change 2 classes (2023-07-14
+    and 2023-07-21) and 2 tiers (2022-01-28 and 2022-02-18);
+  - not reading the 12% as a guide, stepping the GAAP fiscal 2023 guide from FY22's GAAP margin, keeping FY22 at GAAP from
+    the Q4 print, using GAAP quarter margins, or reading "bottom end" and "top end" as numbers would change none.
+- **The EPP floor is 16x, then 15x.** BULL is the decade EPS CAGR (22.5% to 24.4%/yr), or BASE where that is higher.
+  XBULL is the best two-year run, or BULL where that is higher: 2018-2020 (31.7%/yr), then 2019-2021 (44.8%/yr) from the
+  Q4 FY21 print.
+
+Judgement calls that could carry hindsight:
+- reading "the achievement of a 12% operating margin" as a guide, and "tracking ahead of" the $86 billion scenario as no
+  sales figure;
+- reading dollar sales levels as growth against the previous year's reported sales, including fiscal 2023's comparison
+  with a 53-week year that included the Canadian business;
+- taking FY22's adjusted EPS and margin from the reconciliation exhibit of the Q4 FY22 8-K;
+- showing the chief executive's "Looking ahead to 2021" sentence as the Q4 FY20 release's words (text only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -1595,7 +1744,7 @@ What the gates enforce:
   LOW carries ECOMMERCE on the watch list the same way from its FY2015 10-K (2016-03-29), the first whose risk factors
   name "growing competition from online and multi-channel retailers" ("LOW 2015-2016"). It stays there after the
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
-  Lowe's ("LOW 2017-2018", "LOW 2019-2020").
+  Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023").
 
 ## Workflow
 

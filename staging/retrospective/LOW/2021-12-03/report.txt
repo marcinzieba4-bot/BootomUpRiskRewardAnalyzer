@@ -1,0 +1,178 @@
+
+════════════════════════════════════════════════════════════════════════
+  LOW  ·  Lowe's Companies, Inc.  ·  $248.69  ·  RETROSPECTIVE as of 2021-12-03
+  Signal: ✕ AVOID   Ratio B: 2.29x   Adj gap: -1.59  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2021-12-03; latest print Q3 FY21 (Nov 17)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E net sales, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Product category             FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Appliances                $    12.8  $  12.8  $  14.6      +0.0      +1.8
+    +21.1% sales in FY20
+  Seasonal & Outdoor Livin  $     9.4  $   9.4  $  10.7      +0.0      +1.3
+    +30.0% sales in FY20
+  Lawn & Garden             $     9.4  $   9.4  $  10.7      +0.0      +1.3
+    +36.6% sales in FY20
+  Lumber                    $     8.8  $   8.8  $  10.1      +0.0      +1.3
+    +46.0% sales in FY20
+  Kitchens & Bath           $     6.5  $   6.5  $   7.4      +0.0      +0.9
+    +13.3% sales in FY20
+  Tools                     $     5.7  $   5.7  $   6.5      +0.0      +0.8
+    +27.0% sales in FY20
+  Paint                     $     5.7  $   5.7  $   6.5      +0.0      +0.8
+    +31.8% sales in FY20
+  Millwork                  $     5.3  $   5.3  $   6.0      +0.0      +0.7
+    +18.2% sales in FY20
+  Hardware                  $     5.0  $   5.0  $   5.7      +0.0      +0.7
+    +22.3% sales in FY20
+  Flooring                  $     4.7  $   4.7  $   5.4      +0.0      +0.7
+    +14.5% sales in FY20
+  Rough Plumbing            $     4.6  $   4.6  $   5.2      +0.0      +0.6
+    +15.1% sales in FY20
+  Building Materials        $     4.4  $   4.4  $   5.0      +0.0      +0.6
+    +19.3% sales in FY20
+  Décor                     $     3.7  $   3.7  $   4.2      +0.0      +0.5
+    +22.7% sales in FY20
+  Lighting                  $     3.7  $   3.7  $   4.2      +0.0      +0.5
+    +20.6% sales in FY20
+  Electrical                $     3.1  $   3.1  $   3.6      +0.0      +0.5
+    +21.3% sales in FY20
+  Other                     $     2.2  $   2.2  $   2.5      +0.0      +0.3
+    -2.4% sales in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    95.0  $  95.0  $ 108.3      +0.0     +13.3
+  FY2021E = FY20 $89.60B × (1 + 6.0%: FY21 sales guide); split pro rata to FY20 product categories (FY2020 10-K, prior years reclassified)
+  Q3 FY21 (Nov 17): net sales $22.92B +2.7%; comps +2.2%; gross margin 33.10% (+38bp);
+  operating margin 12.17% (+242bp); EPS $2.73 vs $1.98; inventory +6.2% (+3.5pp vs sales)
+  FY21 guide (Q1 FY21 release, Q2 FY21 release, Q3 FY21 release): sales $95B, +6% on FY20's $89.60B ('representing approximately 33% comparable sales growth on a two-year basis'); operating margin 12.4% of sales
+
+  FY2021E EPS check:  ($95.0B × 12.4% − $0.00B store opening − $0.85B interest) × (1−24.6%) ÷ 0.692B  =  $11.91  (FY2021E: no numeric EPS guide yet, FY20's $8.86 stands $8.86)
+  FY2023E BEAR check: ($95.0B × 12.4% − opening, interest) ÷ 0.611B  =  $13.50  (scenario $8.86)
+  FY2023E BULL check: ($108.3B × 12.8% − opening, interest) ÷ 0.611B  =  $16.07  (scenario $13.89)
+  Every 1pp of operating margin ≈ $1.04 EPS ≈ $20/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Comparable store sales              -6.0%    ≥0.0%    ≥6.0%    ≥7.0%     +2.2%  ◦ BASE  ██░░
+  Gross margin change               -60.0bp   ≥0.0bp  ≥60.0bp  ≥150.0bp   +38.0bp  ◦ BASE  ██░░
+  Net sales growth                    +1.0%   ≥10.0%   ≥19.0%   ≥20.0%     +2.7%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth  +27.0pp  ≤12.0pp  ≤-2.0pp  ≤-11.0pp    +3.5pp  ◦ BASE  ██░░
+  Operating margin change           -30.0bp   ≥0.0bp  ≥30.0bp  ≥130.0bp  +163.0bp  ★ XBULL  ████
+  E-commerce: net effect on store sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.65 / 4.00  (back-solved from $249 + 15% hurdle)
+  SCA adjustment:    +0.01  ·  EPP-distance adj -0.10  →  Adj composite 2.06  →  Gap -1.59  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 sales +24.2% on comps +26.1%, 1,974 stores; Q3 gross margin 33.10% (+38bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 28.1x FY21E vs a 19.0x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY21 sales guide +6% vs a 5.3% 9-yr median  (+0.07 × 20%  =  +0.014)
+    +  Cash and short-term investments $6.67B, FY20 free cash flow $9.26B, repurchases $9.00B year to date (cash flow statement)  (+0.30 × 15%  =  +0.045)
+    +  Omni-channel: Lowes.com orders picked up in store, curbside or from lockers, delivered from a store or shipped — Lowe's sells online itself  (+0.20 × 10%  =  +0.020)
+    -  Online competition (FY2020 10-K): 'growing competition from online and omni-channel retailers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Comparable store sales               +2.2%     -6.0%   -8.2%  Housing turnover and remodeling spend…
+  Gross margin change                +38.0bp   -60.0bp  -98.0bp  Promotions and commodity deflation co…
+  Net sales growth                     +2.7%     +1.0%   -1.7%  Comps fall faster than new stores add
+  Inventory growth less sales growth    +3.5pp   +27.0pp  +23.5pp  Inventory outruns sales; markdowns fo…
+  Operating margin change           +163.0bp   -30.0bp  -193.0bp  Fixed costs deleverage on falling comps
+  E-commerce: net effect on store sales    +2.0/4    +1.0/4  -1.0/4  Online and multi-channel rivals take …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$182  (model)  /  $147 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: comps went from -1.6% (Q2 FY21) to +2.2% (Q3 FY21);
+  the bear case needs a demand recession that gross margin (+38bp now)
+  and new stores no longer cover. A housing-led demand recession hits comps first; the bear needs it
+  to reach gross margin and expense leverage as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.86  (FY2021E: no numeric EPS guide yet, FY20's $8.86 stands)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2011 16.9x, 2012 14.7x, 2013 16.8x, 2014 16.5x, 2015 20.1x, 2016 15.9x, 2017 16.5x, 2018 15.9x, 2019 16.0x, 2020 7.3x, 2021 17.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $142/share
+  Current $249 vs Updated EPP $142:  +75%  ⚠ far above floor — large drawdown room
+  Bear $147 vs Updated EPP $142:  +4%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Comparable store sales                       0.0       -2.2   BASE floor (vs +2 now)
+  Gross margin change                          0.0      -38.0   BASE floor (vs +38 now)
+  Net sales growth                            10.0       +7.3   BASE floor (vs +3 now)
+  Inventory growth less sales growth            12.0       +8.5   BASE floor (vs +4 now)
+  Operating margin change                      0.0     -163.0   BASE floor (vs +163 now)
+  E-commerce: net effect on store sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.86 × (1+23.2%)² = $13.45
+  At 19x P/E (conservative):  $256/share
+  + Cumul. dividends (2yr):  +$6.59/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $256  (▲7 from $249)
+  Conservative total return:  +5% over 2yr  = +3%/yr
+
+  23.2% EPS growth is what is left once the premium multiple (28.1x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2023E EPS of $12.74,
+  i.e. 19.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $149.31  –  $256.39  (at 93th pct of range)
+  Annual dividend:      $3.20/share  (yield 1.3%)
+  Realized vol (1yr):   24% annualized
+  Beta vs broad market: 0.81
+  1-sigma range (1yr):  $188  –  $309  ($249 ± 24%)
+  2-sigma range (1yr):  $128  –  $370
+  ────────────────────────────────────────────────────────────
+  Bear $147 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  A home-improvement retailer with a 0.8 beta: the stock is +66% off its December
+  low while comps went from -1.6% (Q2 FY21) to +2.2% (Q3 FY21).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        8.86  16.6x  $    147    15.5%      1.6%   +13.9pp  Flat EPS (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE       13.89  19.0x  $    264    54.1%      5.5%   +48.6pp  EPS +25.2%/yr (FY21 guide + margin + buyback); P/E at its 10-yr median
+  BULL       13.89  21.1x  $    293    25.6%     19.4%    +6.2pp  EPS +25.2%/yr (FY11-FY20 CAGR); P/E holds its 75th pct
+  XBULL      15.36  22.6x  $    347     4.8%     73.5%   -68.7pp  EPS +31.7%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct
+
+  Proxy EV (2yr): $257  /  Market EV: $329  /  Current: $249
+  Conservative EV (2yr, ④): $256 + $6.59 divs = $262 total value
+  Downside (→ Bear $147): 40.9%   Upside (→ Bull $293): 17.8%   Ratio B 2.29x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $249 the market needs $329 in two years —
+  above the BULL case. That is a market composite of 3.65 against a model
+  read of 2.06: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.29x     +75%    -1.59  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.40x     +75%    -0.88  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     7.36x     +75%    -1.71  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.81x     +75%    -1.40  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.99x     +75%    -1.71  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.29x     +75%    -1.29  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.29x     +48%    -1.59  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.29x     +75%    -1.07  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY21 print (late February) — the next read on comps (+2.2% now) and the guide
+  (2) Gross margin — +38bp in Q3 FY21: promotions, mix and commodity prices, what must hold if comps do not
+  (3) A numeric FY21 EPS guide — the Q3 FY21 release guides sales and the operating margin, not EPS
+  (4) Operating margin — 12.17% in Q3 FY21 (+242bp): where fixed-cost deleverage on falling comps shows first
+  (5) Buyback pace at 28x — management's own read of the multiple
+  ✕ AVOID  |  EPP floor $142  |  ADD below ~$224  |  TRIM above $293
+════════════════════════════════════════════════════════════════════════
+

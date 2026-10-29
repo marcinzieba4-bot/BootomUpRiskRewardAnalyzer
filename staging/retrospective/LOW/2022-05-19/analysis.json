@@ -1,0 +1,286 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LOW",
+ "company": "Lowe's Companies, Inc.",
+ "as_of": "2022-05-19",
+ "price_date": "2022-05-19",
+ "price": 187.86,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); home-improvement retail signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Lowe's: the world's second largest home improvement retailer, 1,971 home improvement and hardware stores in the U.S. and Canada with approximately 208 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+  "theme_watch": [
+   {
+    "theme": "ECOMMERCE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Lowe's own FY2021 10-K says 'We face growing competition from online and omnichannel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. Further, online and omnichannel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times, including same-day and next-day fulfillment, low-price or free shipping, and convenient pick-up options, including curbside pick-up, in-store pick-up, and buy online pick-up in-store (BOPIS) lockers, and we must make investments to keep up with our customers’ evolving shopping preferences.' At the same time it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store at the customer service desk, curbside pick-up, or touchless lockers, or have their purchase delivered to their home or business.'. The stock trades at 14.1x FY22E — a discount to its own history. Re-file as DISRUPTION_EXPOSED (ECOMMERCE) only if dated evidence shows the market pricing online substitution of Lowe's store sales specifically."
+   }
+  ],
+  "evidence": [
+   "L130"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Lowe's: the world's second largest home improvement retailer, 1,971 home improvement and hardware stores in the U.S. and Canada with approximately 208 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not. durable franchise (obsolescence risk 2/5); price cheap; Ratio B -0.10x; -6% to EPP floor; model-vs-market gap +0.97; conservative 2yr +53%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": -0.1,
+  "ratio_b_fmt": "-0.10x",
+  "epp": 200.25,
+  "epp_gap_pct": -6.2,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.85,
+  "sca": 0.176,
+  "adj_composite": 2.226,
+  "market_composite": 1.26,
+  "adj_gap": 0.97,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 53.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 13.35,
+    "pe": 15.9,
+    "price": 212,
+    "desc": "Flat EPS (worst year FY12-FY21, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 16.21,
+    "pe": 18.6,
+    "price": 302,
+    "desc": "EPS +10.2%/yr (FY22 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 20.65,
+    "pe": 20.5,
+    "price": 423,
+    "desc": "EPS +24.4%/yr (FY12-FY21 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 28.0,
+    "pe": 22.2,
+    "price": 622,
+    "desc": "EPS +44.8%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": -0.1,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 0.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.16,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 1.12,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": -0.04,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": -0.13,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 1.01,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": -0.08,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 0.89,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": -0.1,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 1.27,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": -0.1,
+   "epp_gap_pct": -21.8,
+   "adj_gap": 0.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": -0.1,
+   "epp_gap_pct": -6.2,
+   "adj_gap": 1.01,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 53.2,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "LOW (retrospective, 2022-05-19) ◉ BUY — Ratio B -0.10x (-12.8% downside to Bear $212 / +125.2% upside to Bull $423) | Adj composite 2.23 vs market 1.26: gap +0.97 [UNDERVALUED] | -6% above the EPP floor $200 (15x FY22E $13.35) | Conservative 2-yr case: +53.2% total (+26.6%/yr) | At 14.1x FY22E the 15% hurdle price $248 sits at or below the BASE case; comps -4.0% in Q1 FY22, forward sales +0.8-2.9% (FY22 sales guide); e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "L130",
+   "published": "2022-03-22",
+   "filed": "2022-03-21 16:47 ET (after the close)",
+   "title": "Lowe's Companies FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000038/low-20220128.htm",
+   "supports": "income statement 2019-2021 with percent of sales (Item 6 reserved: no five-year selected data), adjusted diluted EPS $8.86 for 2020 (GAAP $7.75; 'There were no non-GAAP adjustments in fiscal 2021'), comparable sales +6.9%, 2021 diluted shares 699M, interest $885M, income tax provision $2,766M on pre-tax $11,208M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $13.1B of common stock repurchased in 2021, $19.7B remaining, about $12.0 billion of repurchases expected in 2022; the quarterly dividend raised to $0.80 in 2021; 1,971 home improvement and hardware stores, approximately 208 million square feet; risk factor: 'We face growing competition from online and omnichannel retailers'"
+  },
+  {
+   "id": "L124",
+   "published": "2021-03-23",
+   "filed": "2021-03-22 17:06 ET (after the close)",
+   "title": "Lowe's Companies FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066721000026/low-20210129.htm",
+   "supports": "selected financial data 2016-2020, income statement 2018-2020 with percent of sales, adjusted diluted EPS $8.86 and $5.74 (GAAP $7.75, $5.49), comparable sales +26.1% (the metric now on a transacted basis, 2018-2019 recast), 2020 diluted shares 750M, interest $848M, income tax provision $1,904M on pre-tax $7,739M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $5.0B of common stock repurchased in 2020, $19.7B remaining, about $9.0 billion of repurchases expected in 2021; the quarterly dividend raised to $0.60 in 2020; 1,974 home improvement and hardware stores, approximately 208 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'"
+  },
+  {
+   "id": "L117",
+   "published": "2020-03-24",
+   "filed": "2020-03-23 17:05 ET (after the close)",
+   "title": "Lowe's Companies FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000036/form10k01312020.htm",
+   "supports": "selected financial data 2015-2019, income statement 2017-2019 with percent of sales, adjusted diluted EPS $5.74 and $5.11 (GAAP $5.49, $2.84), comparable sales +2.6%, 2019 diluted shares 778M, interest $691M, income tax provision $1,342M on pre-tax $5,623M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $4.3B repurchased in 2019 under the program, $9.7B remaining, about $5.0 billion of repurchases expected in 2020; the quarterly dividend raised to $0.55 in 2019; 1,977 home improvement and hardware stores, approximately 208 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'; COVID-19 named as a risk and a subsequent event, with no estimate of its effect"
+  },
+  {
+   "id": "L111",
+   "published": "2019-04-02",
+   "filed": "2019-04-01 19:26 ET (after the close)",
+   "title": "Lowe's Companies FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000042/form10k_02012019.htm",
+   "supports": "selected financial data 2014-2018, income statement 2016-2018 with percent of sales (shipping and handling recast), adjusted diluted EPS $5.11 and $4.39 (GAAP $2.84, $4.09), comparable sales +2.4%, 2018 diluted shares 812M, interest $624M, income tax provision $1,080M on pre-tax $3,394M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.0B repurchased in 2018 under the program, $13.9B remaining, $6.0 to $7.5 billion of repurchases expected in 2019; the quarterly dividend raised to $0.48 in 2018; 2,015 home improvement and hardware stores, approximately 209 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'"
+  },
+  {
+   "id": "L103",
+   "published": "2018-04-03",
+   "filed": "2018-04-02 16:36 ET (after the close)",
+   "title": "Lowe's Companies FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066718000051/form10k_02022018.htm",
+   "supports": "selected financial data 2013-2017, income statement 2015-2017 with percent of sales (operating income, loss on extinguishment of debt), adjusted diluted EPS $4.39, $3.99 and $3.29 (GAAP $4.09, $3.47, $2.73), 2017 diluted shares 840M, interest $633M, income tax provision $2,042M on pre-tax $5,489M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.13B repurchased in 2017 under the program, $6.9B remaining; 2017 fourth-quarter dividend $0.41; 2,152 home improvement and hardware stores, approximately 215 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'"
+  },
+  {
+   "id": "L98",
+   "published": "2017-04-04",
+   "filed": "2017-04-04 09:27 ET (before the open)",
+   "title": "Lowe's Companies FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066717000076/lowesform10k.htm",
+   "supports": "selected financial data 2012-2016, income statement 2014-2016 with percent of sales (operating income line), adjusted diluted EPS $3.99 and $3.29 (GAAP $3.47, $2.73), 2016 diluted shares 881M, interest $645M, income tax provision $2,108M on pre-tax $5,201M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.5B repurchased in 2016 under the program, $5.1B remaining; 2016 fourth-quarter dividend $0.35; 2,129 home improvement and hardware stores, approximately 213 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3.5% of 2016 sales"
+  },
+  {
+   "id": "L87",
+   "published": "2015-03-31",
+   "filed": "2015-03-31 15:10 ET (during the session)",
+   "title": "Lowe's Companies FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000057/lowesform10k.htm",
+   "supports": "selected financial data 2010-2014, income statement 2012-2014 with percent of sales, 2014 diluted shares 990M, interest $516M, income tax provision $1,578M on pre-tax $4,276M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.88B repurchased in 2014 under the program, $2.4B remaining, the 2015 guide assumes about $3.8 billion of repurchases; 2014 fourth-quarter dividend $0.23; 1,840 home improvement and hardware stores, approximately 201 million square feet; online retailers among competitors; 2012 weighted average diluted shares 1,152M"
+  },
+  {
+   "id": "L127",
+   "published": "2021-11-17",
+   "filed": "2021-11-17 08:45 ET (before the open)",
+   "title": "Lowe's Q3 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066721000165/exhibit991-10292021.htm",
+   "supports": "Q3 2021 results (diluted EPS $2.73 against an adjusted $1.98, which excludes the loss on extinguishment of debt) and the Full Year 2021 Financial Outlook: revenue of approximately $95 billion, operating margin of 12.4%, gross margin rate up slightly, total share repurchases of approximately $12 billion; no EPS guide"
+  },
+  {
+   "id": "L129",
+   "published": "2022-02-23",
+   "filed": "2022-02-23 08:45 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000017/exhibit991-01282022.htm",
+   "supports": "Q4 2021 and fiscal 2021 results: diluted EPS $1.78 for the quarter and $12.04 for the year; comparable sales +5.0% for the quarter and +6.9% for the year; percent-of-sales income statement, inventory, cash, cash flow; 1,971 home improvement and hardware stores; the Full Year 2022 Outlook, a 53-week year: total sales of $97 billion to $99 billion including the 53rd week, comparable sales from a decline of 1% to an increase of 1%, operating margin of 12.8% to 13.0%, effective tax rate of approximately 25%, diluted EPS of $13.10 to $13.60"
+  },
+  {
+   "id": "L131",
+   "published": "2022-05-18",
+   "filed": "2022-05-18 08:45 ET (before the open)",
+   "title": "Lowe's Q1 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000075/exhibit991-04292022.htm",
+   "supports": "Q1 2022 results (diluted EPS $3.51) and the Full Year 2022 Outlook affirmed with the same figures"
+  },
+  {
+   "id": "L128",
+   "published": "2021-12-15",
+   "filed": "2021-12-15 07:52 ET (before the open)",
+   "title": "Lowe's 8-K: 2022 Financial Outlook (items 1.01, 2.03, 7.01, ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000119312521357421/d260319dex991.htm",
+   "supports": "the fiscal 2021 outlook reiterated (with a gross margin rate of 33.10% and ROIC over 33%) and the first fiscal 2022 outlook, a 53-week year: total sales of $94 billion to $97 billion including the 53rd week, comparable sales from a decline of 3% to flat, operating margin of 12.5% to 12.8%, effective tax rate of approximately 25%, diluted EPS of $12.25 to $13.00; a new $13 billion repurchase authorization"
+  },
+  {
+   "id": "L30",
+   "published": "1998-06-12",
+   "filed": "1998-06-12 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 1998 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066798000009/0000060667-98-000009.txt",
+   "supports": "'On May 29, 1998, the Board of Directors declared a two-for one stock split'"
+  },
+  {
+   "id": "L31",
+   "published": "2001-06-15",
+   "filed": "2001-06-15 (no acceptance time in EDGAR)",
+   "title": "Lowe's Q1 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066701500007/form10q101.txt",
+   "supports": "'On May 25, 2001, the Company's Board of Directors approved a two-for-one split'"
+  },
+  {
+   "id": "L32",
+   "published": "2006-06-06",
+   "filed": "2006-06-05 17:07 ET (after the close)",
+   "title": "Lowe's 8-K: two-for-one split and dividend increase approved on May 25, 2006",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066706000115/lowesform8k05252006.htm",
+   "supports": "two-for-one split of the common shares approved by the Board on May 25, 2006; quarterly dividend $0.05 post-split"
+  },
+  {
+   "id": "L0",
+   "published": "2022-05-19",
+   "title": "Yahoo Finance daily prices, LOW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LOW/history",
+   "supports": "close $187.86 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-29"
+}

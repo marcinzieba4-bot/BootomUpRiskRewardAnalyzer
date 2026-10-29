@@ -17,7 +17,8 @@ dated list, as for UNP, and each field comes from the latest guide for the curre
 method r2 inputs map as for ACN:
   - current-FY EPS: the fiscal-year EPS guide midpoint (no numeric EPS guide: the last full year's EPS stands),
   - forward revenue growth: the next-quarter total sales guide for a quarter not yet reported (none: the fiscal-year
-    sales guide; none either: the latest quarter's sales growth),
+    sales guide, which from fiscal 2021 is a dollar level, read as growth against the previous fiscal year's net sales;
+    none either: the latest quarter's sales growth),
   - guided margin step: the fiscal-year operating-margin guide in basis points, stepped from the previous year's margin
     on the definition the guide states.
 A guide that withdraws the year's outlook (the Q1 FY20 release) voids the earlier guides for that year; the no-guide rules
@@ -74,6 +75,11 @@ def eps_rng(lo, hi):
 
 def pct_level(lo, hi):
     return f"{lo:g}%" if lo == hi else f"{lo:g}-{hi:g}%"
+
+
+def usd_level(lo, hi):
+    """a sales guide in dollars: '$92B', '$97-99B'"""
+    return f"${lo:g}B" if lo == hi else f"${lo:g}-{hi:g}B"
 
 
 def bp_range(lo, hi):
@@ -150,7 +156,12 @@ def build(as_of, facts, raw, spx, engine, out):
     if wd:
         guides = guides[guides.index(wd) + 1:]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
-    ge, gr, gc = stated("eps_guide"), stated("rev_guide"), stated("comps_guide")
+    ge, gc = stated("eps_guide"), stated("comps_guide")
+    # a numeric sales guide is one field in either form: growth in percent (rev_guide) or a level in dollars
+    # (rev_guide_usd_b, from fiscal 2021), which is growth against the previous fiscal year's net sales in the history
+    gr = next((g for g in reversed(guides) if "rev_guide" in g or "rev_guide_usd_b" in g), None)
+    prev_rev = h["revenue_usd_b"][str(cur_fy - 1)]
+    gr_pct = (gr["rev_guide"] if "rev_guide" in gr else [round((v / prev_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]) if gr else None
     # a numeric margin guide is one field in either form: a change in basis points (op_margin_guide_bp) or a level in
     # percent of sales (op_margin_guide_pct, a range; a point is lo = hi)
     gm = next((g for g in reversed(guides) if "op_margin_guide_bp" in g or "op_margin_guide_pct" in g), None)
@@ -169,11 +180,11 @@ def build(as_of, facts, raw, spx, engine, out):
     if q and "sales" in q:                   # method r2: the next-quarter revenue guide
         fwd, fwd_label, fwd_short, fwd_period = q["sales"], f"{q['quarter']} sales guide", f"{q['quarter'][:2]} guide", q["quarter"]
     elif gr:                                 # no next-quarter guide: the fiscal-year sales guide
-        fwd, fwd_label, fwd_short, fwd_period = gr["rev_guide"], f"{fy_now} sales guide", f"{fy_now} guide", fy_now
+        fwd, fwd_label, fwd_short, fwd_period = gr_pct, f"{fy_now} sales guide", f"{fy_now} guide", fy_now
     else:                                    # no numeric sales guide: the latest quarter's sales growth
         fwd = [latest["sales_pct"]] * 2
         fwd_label, fwd_short, fwd_period = f"no {fy_now} sales guide, {latest['quarter']} sales", f"{latest['quarter']} sales", latest["quarter"]
-    fy_rev = gr["rev_guide"] if gr else fwd
+    fy_rev = gr_pct if gr else fwd
     # the fiscal-year margin guide (bp) is the guided margin step, stepped from the previous year's margin on the definition
     # the guide states (the ACN rule for a restated base): "operating margin" = gross margin less SG&A and depreciation
     # (guides to the Q3 FY07 release), "EBIT margin" = earnings before interest and taxes (from the Q4 FY07 release);
@@ -197,8 +208,10 @@ def build(as_of, facts, raw, spx, engine, out):
     so_label = ("inside EBIT margin" if mdef == "EBIT margin" else
                 f"store opening costs, {fy_now} guide" if gso else f"store opening costs, {h['fy_label']}")
     if guides:
+        sales_bit = (f"sales {pct_range(*gr_pct)}" if "rev_guide" in gr else
+                     f"sales {usd_level(*gr['rev_guide_usd_b'])}, {pct_range(*gr_pct)} on FY{(cur_fy - 1) % 100:02d}'s ${prev_rev:.2f}B") if gr else ""
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
-               ([f"sales {pct_range(*gr['rev_guide'])}" + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
+               ([sales_bit + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
                ([f"comps {pct_range(*gc['comps_guide'])}"] if gc else []) + \
                ([f"{gm['margin_def']} {bp_range(*gm['op_margin_guide_bp'])}" if "op_margin_guide_bp" in gm else
                  f"{gm['margin_def']} {pct_level(*gm['op_margin_guide_pct'])} of sales"] if gm else []) + \
@@ -275,9 +288,12 @@ def build(as_of, facts, raw, spx, engine, out):
         sig_name = "E-commerce: net effect on store sales"
         trigger = "Online and multi-channel rivals take share faster than Lowe's own online sales grow"
         theme_summary = "e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it"
+    # a year guided in numbers but never in EPS (fiscal 2021: sales and operating margin only)
+    named = [n for n, g in (("sales", gr), ("comps", gc), ("the operating margin", gm)) if g]
     cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])}"
             + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "") if ge else
             f"(3) A numeric {fy_now} guide again — the {wd['doc']} withdrew it" if wd else
+            f"(3) A numeric {fy_now} EPS guide — the {guides[-1]['doc']} guides {' and '.join(named)}, not EPS" if named else
             f"(3) A numeric {fy_now} guide — the {latest['quarter']} release gives words only ('{latest['outlook_short']}')")
     cat4 = (f"(4) Operating margin — {latest['op_margin']:.2f}% in {latest['quarter']} ({latest['op_margin_bp']:+d}bp): "
             "where fixed-cost deleverage on falling comps shows first")
@@ -308,6 +324,8 @@ def build(as_of, facts, raw, spx, engine, out):
     fcf_txt = f", {h.get('fcf_label', h['fy_label'])} free cash flow ${fcf:.2f}B" if fcf is not None else ""
     # a Q4 release without a full-year comparable sales figure (Q4 FY18, Q4 FY19): the 10-K supplies it later
     comps_txt = f"on comps {h['prev_fy_comps']:+.1f}%" if h["prev_fy_comps"] is not None else "(no full-year comp in the Q4 release)"
+    # a Q4 release without a year-end store count (Q4 FY22): the 10-K supplies it later
+    stores_txt = f"{h['prev_fy_stores']:,} stores" if h["prev_fy_stores"] is not None else "no year-end store count in the Q4 release"
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -373,7 +391,7 @@ LATEST          = {R({k: latest.get(k) for k in latest_keys})}
 PREV_COMPS      = {R(prev)}
 EPP_TODAY_EPS   = {eps_now}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}
-FWD_GUIDE       = {R(tuple(fwd))}   # {"next-quarter total sales guide" if fwd_period == next_q else "fiscal-year total sales guide (no next-quarter guide)" if gr and fwd == gr["rev_guide"] else "no numeric sales guide: the latest quarter's sales growth"}
+FWD_GUIDE       = {R(tuple(fwd))}   # {"next-quarter total sales guide" if fwd_period == next_q else "fiscal-year total sales guide (no next-quarter guide)" if gr and fwd == gr_pct else "no numeric sales guide: the latest quarter's sales growth"}
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
 MARGIN_GUIDED   = {margin_guided}   # {"True: numeric operating-margin guide, so BASE adds the guided margin step and the signal uses it" if margin_guided else "False: no numeric margin guide, so no guided step; the signal uses the latest quarter's change"}
@@ -384,7 +402,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} sales {h['prev_fy_sales_growth']:+.1f}% {comps_txt}, {h['prev_fy_stores']:,} stores; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+d}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} sales {h['prev_fy_sales_growth']:+.1f}% {comps_txt}, {stores_txt}; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+d}bp)")}
 BALANCE_TEXT    = {R(f"Cash and short-term investments ${latest['cash_b']:.2f}B{fcf_txt}, {latest.get('cash_return_text', h['cash_return_text'])}")}
 THEME_FACTORS   = {R(factors)}
 THEME_SIGNAL_NAME    = {R(sig_name)}

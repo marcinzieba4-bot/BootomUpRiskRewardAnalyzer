@@ -24,7 +24,7 @@ SOURCES = [
         "filed": "2016-03-28 19:07 ET (after the close)",
         "title": "Lowe's Companies FY2015 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066716000276/lowesform10k.htm",
-        "supports": "selected financial data 2011-2015, income statement 2013-2015 with percent of sales, adjusted EBIT margin 9.31% and adjusted diluted EPS $3.29 excluding the Australian joint venture impairment (GAAP $2.73), 2015 diluted shares 929M, interest $552M, income tax provision $1,873M on pre-tax $4,419M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.81B repurchased in 2015 under the program, $3.6B remaining, the 2016 guide assumes about $3.5 billion of repurchases; 2015 fourth-quarter dividend $0.28; 1,857 home improvement and hardware stores, approximately 202 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3% of 2015 sales"
+        "supports": "selected financial data 2011-2015, income statement 2013-2015 with percent of sales, adjusted EBIT margin 9.31% and adjusted diluted EPS $3.29 excluding the Australian joint venture impairment (GAAP $2.73), 2015 diluted shares 929M, interest $552M, income tax provision $1,873M on pre-tax $4,419M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.81B repurchased in 2015 under the program, $3.6B remaining, the 2016 guide assumes about $3.5 billion of repurchases; 2015 fourth-quarter dividend $0.28; 1,857 home improvement and hardware stores, approximately 202 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3% of 2015 sales; 2013 weighted average diluted shares 1,061M"
     },
     {
         "id": "L87",
@@ -32,7 +32,7 @@ SOURCES = [
         "filed": "2015-03-31 15:10 ET (during the session)",
         "title": "Lowe's Companies FY2014 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066715000057/lowesform10k.htm",
-        "supports": "selected financial data 2010-2014, income statement 2012-2014 with percent of sales, 2014 diluted shares 990M, interest $516M, income tax provision $1,578M on pre-tax $4,276M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.88B repurchased in 2014 under the program, $2.4B remaining, the 2015 guide assumes about $3.8 billion of repurchases; 2014 fourth-quarter dividend $0.23; 1,840 home improvement and hardware stores, approximately 201 million square feet; online retailers among competitors"
+        "supports": "selected financial data 2010-2014, income statement 2012-2014 with percent of sales, 2014 diluted shares 990M, interest $516M, income tax provision $1,578M on pre-tax $4,276M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $3.88B repurchased in 2014 under the program, $2.4B remaining, the 2015 guide assumes about $3.8 billion of repurchases; 2014 fourth-quarter dividend $0.23; 1,840 home improvement and hardware stores, approximately 201 million square feet; online retailers among competitors; 2012 weighted average diluted shares 1,152M"
     },
     {
         "id": "L81",
@@ -40,7 +40,7 @@ SOURCES = [
         "filed": "2014-03-31 17:21 ET (after the close)",
         "title": "Lowe's Companies FY2013 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066714000054/lowesform10k.htm",
-        "supports": "selected financial data 2009-2013, income statement 2011-2013 with percent of sales, 2013 diluted shares 1,061M, interest $476M, income tax provision $1,387M on pre-tax $3,673M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $3.7B repurchased in 2013, $6.3B authorization, the 2014 guide assumes about $3.4 billion of repurchases; 2013 fourth-quarter dividend $0.18; 1,832 home improvement and hardware stores (72 Orchard stores acquired 2013-08-30), approximately 200 million square feet"
+        "supports": "selected financial data 2009-2013, income statement 2011-2013 with percent of sales, 2013 diluted shares 1,061M, interest $476M, income tax provision $1,387M on pre-tax $3,673M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (regrouped, prior years reclassified); $3.7B repurchased in 2013, $6.3B authorization, the 2014 guide assumes about $3.4 billion of repurchases; 2013 fourth-quarter dividend $0.18; 1,832 home improvement and hardware stores (72 Orchard stores acquired 2013-08-30), approximately 200 million square feet; 2011 weighted average diluted shares 1,273M"
     },
     {
         "id": "L75",
