@@ -1,0 +1,176 @@
+
+════════════════════════════════════════════════════════════════════════
+  LOW  ·  Lowe's Companies, Inc.  ·  $273.43  ·  RETROSPECTIVE as of 2024-12-06
+  Signal: ✕ AVOID   Ratio B: 1.89x   Adj gap: -1.74  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2024-12-06; latest print Q3 FY24 (Nov 19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E net sales, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Product category             FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Appliances                $    11.9  $  11.9  $  13.1      +0.0      +1.2
+    -8.6% sales in FY23
+  Seasonal & Outdoor Livin  $     7.5  $   7.5  $   8.2      +0.0      +0.7
+    -11.0% sales in FY23
+  Lumber                    $     6.8  $   6.8  $   7.4      +0.0      +0.6
+    -28.1% sales in FY23
+  Lawn & Garden             $     6.5  $   6.5  $   7.1      +0.0      +0.6
+    -2.9% sales in FY23
+  Kitchens & Bath           $     5.9  $   5.9  $   6.5      +0.0      +0.6
+    -11.3% sales in FY23
+  Hardware                  $     5.6  $   5.6  $   6.2      +0.0      +0.6
+    -5.7% sales in FY23
+  Building Materials        $     5.1  $   5.1  $   5.6      +0.0      +0.5
+    +3.6% sales in FY23
+  Millwork                  $     5.0  $   5.0  $   5.5      +0.0      +0.5
+    -10.2% sales in FY23
+  Paint                     $     4.9  $   4.9  $   5.4      +0.0      +0.5
+    -5.3% sales in FY23
+  Rough Plumbing            $     4.8  $   4.8  $   5.3      +0.0      +0.5
+    -6.8% sales in FY23
+  Tools                     $     4.6  $   4.6  $   5.0      +0.0      +0.4
+    -8.9% sales in FY23
+  Electrical                $     4.3  $   4.3  $   4.7      +0.0      +0.4
+    -16.0% sales in FY23
+  Flooring                  $     4.2  $   4.2  $   4.6      +0.0      +0.4
+    -14.2% sales in FY23
+  Décor                     $     4.0  $   4.0  $   4.4      +0.0      +0.4
+    -21.1% sales in FY23
+  Other                     $     2.2  $   2.2  $   2.5      +0.0      +0.3
+    -10.2% sales in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    83.3  $  83.3  $  91.5      +0.0      +8.2
+  FY2024E = FY23 $86.38B × (1 − 3.6%: FY24 sales guide); split pro rata to FY23 product categories (FY2023 10-K, prior years reclassified)
+  Q3 FY24 (Nov 19): net sales $20.17B -1.5%; comps -1.1%; gross margin 33.69% (+3bp);
+  operating margin 12.31% (-86bp); EPS $2.89 vs $3.06; inventory +0.2% (+1.7pp vs sales)
+  FY24 guide (Q4 FY23 release, Q1 FY24 release, Q2 FY24 release, Q3 FY24 release): EPS $11.80-11.90 (previously $11.70-11.90; adjusted diluted EPS as the company published it, excluding the gains associated with the 2022 sale of the Canadian retail business (no GAAP figure published)); sales $83-83.5B, -3.9% to -3.3% on FY23's $86.38B; comps -3.5% to -3%; operating margin 12.3-12.4% of sales
+
+  FY2024E EPS check:  ($83.3B × 12.3% − $0.00B store opening − $1.38B interest) × (1−24.5%) ÷ 0.566B  =  $11.88  (FY2024E EPS, guide midpoint $11.85)
+  FY2026E BEAR check: ($83.3B × 12.3% − opening, interest) ÷ 0.500B  =  $13.46  (scenario $10.65)
+  FY2026E BULL check: ($91.5B × 12.8% − opening, interest) ÷ 0.500B  =  $15.54  (scenario $16.82)
+  Every 1pp of operating margin ≈ $1.11 EPS ≈ $20/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Comparable store sales              -6.0%    ≥0.0%    ≥6.0%    ≥7.0%     -1.1%  ⚠ BEAR  █░░░
+  Gross margin change               -60.0bp   ≥0.0bp  ≥60.0bp  ≥150.0bp    +3.0bp  ◦ BASE  ██░░
+  Net sales growth                    +1.0%   ≥10.0%   ≥19.0%   ≥20.0%     -1.5%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth  +27.0pp  ≤12.0pp  ≤-2.0pp  ≤-11.0pp    +1.7pp  ◦ BASE  ██░░
+  Operating margin change           -30.0bp   ≥0.0bp  ≥30.0bp  ≥130.0bp   -96.0bp  ⚠ BEAR  █░░░
+  E-commerce: net effect on store sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.50 / 4.00
+  Market composite:   3.04 / 4.00  (back-solved from $273 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.10  →  Adj composite 1.30  →  Gap -1.74  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 sales -11.0% on comps -4.7%, 1,746 stores; Q3 gross margin 33.69% (+3bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 23.1x FY24E vs a 18.2x 10-yr median (97th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY24 sales guide -3.9% to -3.3% vs a 5.1% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $3.61B, FY23 free cash flow $6.18B, repurchases $2.68B year to date (cash flow statement)  (+0.30 × 15%  =  +0.045)
+    +  Omni-channel: Lowes.com orders picked up in store, curbside or from lockers, or delivered — Lowe's sells online itself  (+0.20 × 10%  =  +0.020)
+    -  Online competition (FY2023 10-K): 'growing competition from online and omnichannel retailers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Comparable store sales               -1.1%     -6.0%   -4.9%  Housing turnover and remodeling spend…
+  Gross margin change                 +3.0bp   -60.0bp  -63.0bp  Promotions and commodity deflation co…
+  Net sales growth                     -1.5%     +1.0%   +2.5%  Comps fall faster than new stores add
+  Inventory growth less sales growth    +1.7pp   +27.0pp  +25.3pp  Inventory outruns sales; markdowns fo…
+  Operating margin change            -96.0bp   -30.0bp  +66.0bp  Fixed costs deleverage on falling comps
+  E-commerce: net effect on store sales    +2.0/4    +1.0/4  -1.0/4  Online and multi-channel rivals take …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$178  (model)  /  $155 (defined)
+  Bear probability (proxy model):  53.1%
+
+  KEY TRIGGER: comps went from -5.1% (Q2 FY24) to -1.1% (Q3 FY24);
+  the bear case needs a demand recession that gross margin (+3bp now)
+  and new stores no longer cover. A housing-led demand recession hits comps first; the bear needs it
+  to reach gross margin and expense leverage as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $11.85  (FY2024E EPS, guide midpoint)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2014 23.7x, 2015 20.1x, 2016 15.9x, 2017 16.5x, 2018 15.9x, 2019 16.0x, 2020 7.3x, 2021 12.8x, 2022 12.4x, 2023 14.0x, 2024 16.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $178/share
+  Current $273 vs Updated EPP $178:  +54%  ⚠ far above floor — large drawdown room
+  Bear $155 vs Updated EPP $178:  -13%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Comparable store sales                       0.0       +1.1   BASE floor (vs -1 now)
+  Gross margin change                          0.0       -3.0   BASE floor (vs +3 now)
+  Net sales growth                            10.0      +11.5   BASE floor (vs -2 now)
+  Inventory growth less sales growth            12.0      +10.3   BASE floor (vs +2 now)
+  Operating margin change                      0.0      +96.0   BASE floor (vs -96 now)
+  E-commerce: net effect on store sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $11.85 × (1+0.0%)² = $11.85
+  At 18x P/E (conservative):  $213/share
+  + Cumul. dividends (2yr):  +$9.48/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $213  (▼60 from $273)
+  Conservative total return:  -19% over 2yr  = -9%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (23.1x)
+  mean-reverts to 18x. Breakeven at 18x needs FY2026E EPS of $14.66,
+  i.e. 11.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $205.84  –  $287.01  (at 83th pct of range)
+  Annual dividend:      $4.60/share  (yield 1.7%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.77
+  1-sigma range (1yr):  $212  –  $335  ($273 ± 22%)
+  2-sigma range (1yr):  $151  –  $396
+  ────────────────────────────────────────────────────────────
+  Bear $155 requires:  ~1.9σ price move  (unusual — requires fundamental break)
+  A home-improvement retailer with a 0.8 beta: the stock is +33% off its December
+  low while comps went from -5.1% (Q2 FY24) to -1.1% (Q3 FY24).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       10.65  14.6x  $    155    53.1%      4.4%   +48.7pp  EPS -5.2%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE       10.62  18.2x  $    193    35.0%     15.4%   +19.6pp  EPS +-5.3%/yr (FY24 guide + margin + buyback); P/E at its 10-yr median
+  BULL       16.82  20.0x  $    336    10.0%     53.6%   -43.6pp  EPS +19.1%/yr (FY14-FY23 CAGR); P/E holds its 75th pct
+  XBULL      24.86  21.9x  $    544     1.9%     26.6%   -24.7pp  EPS +44.8%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct
+
+  Proxy EV (2yr): $194  /  Market EV: $361  /  Current: $273
+  Conservative EV (2yr, ④): $213 + $9.48 divs = $223 total value
+  Downside (→ Bear $155): 43.3%   Upside (→ Bull $336): 22.9%   Ratio B 1.89x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $273 the market needs $362 in two years —
+  above the BULL case. That is a market composite of 3.04 against a model
+  read of 1.30: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.89x     +54%    -1.74  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.04x     +54%    -1.44  OVERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     3.91x     +54%    -1.93  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.54x     +54%    -1.67  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          2.33x     +54%    -1.81  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.89x     +54%    -1.44  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 1.89x     +28%    -1.64  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    1.89x     +54%    -1.51  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY24 print (late February) — the next read on comps (-1.1% now) and the guide
+  (2) Gross margin — +3bp in Q3 FY24: promotions, mix and commodity prices, what must hold if comps do not
+  (3) FY24 EPS guide $11.80-11.90 (previously $11.70-11.90; adjusted diluted EPS as the company published it, excluding the gains associated with the 2022 sale of the Canadian retail business (no GAAP figure published))
+  (4) Operating margin — 12.31% in Q3 FY24 (-86bp): where fixed-cost deleverage on falling comps shows first
+  (5) Buyback pace at 23x — management's own read of the multiple
+  ✕ AVOID  |  EPP floor $178  |  ADD below ~$164  |  TRIM above $336
+════════════════════════════════════════════════════════════════════════
+

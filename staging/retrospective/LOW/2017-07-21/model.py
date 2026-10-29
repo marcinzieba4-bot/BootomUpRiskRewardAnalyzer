@@ -24,7 +24,7 @@ SOURCES = [
         "filed": "2017-04-04 09:27 ET (before the open)",
         "title": "Lowe's Companies FY2016 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066717000076/lowesform10k.htm",
-        "supports": "selected financial data 2012-2016, income statement 2014-2016 with percent of sales (operating income line), adjusted diluted EPS $3.99 and $3.29 (GAAP $3.47, $2.73), 2016 diluted shares 881M, interest $645M, income tax provision $2,108M on pre-tax $5,201M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.5B repurchased in 2016 under the program, $5.1B remaining; 2016 fourth-quarter dividend $0.35; 2,129 home improvement and hardware stores, approximately 213 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3.5% of 2016 sales"
+        "supports": "selected financial data 2012-2016, income statement 2014-2016 with percent of sales (operating income line), adjusted diluted EPS $3.99 and $3.29 (GAAP $3.47, $2.73), 2016 diluted shares 881M, interest $645M, income tax provision $2,108M on pre-tax $5,201M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.5B repurchased in 2016 under the program, $5.1B remaining; 2016 fourth-quarter dividend $0.35; 2,129 home improvement and hardware stores, approximately 213 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3.5% of 2016 sales; 2014 weighted average diluted shares 990M"
     },
     {
         "id": "L93",

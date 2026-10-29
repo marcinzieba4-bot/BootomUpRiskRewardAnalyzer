@@ -839,3 +839,150 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2023-12-15 | $225.59 | Lowe's Q3 2023 results | 1.65 | -0.58 | 0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +14.4% | -33.3pp | +6.0% | ✓ |
 | 2023-12-22 | $223.00 | Lowe's Q3 2023 results | 1.65 | -0.55 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +12.7% | -34.9pp | +7.1% | ✓ |
 | 2023-12-29 | $222.55 | Lowe's Q3 2023 results | 1.65 | -0.54 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +13.7% | -34.0pp | +7.3% | ✓ |
+| 2024-01-05 | $212.51 | Lowe's Q3 2023 results | 1.65 | -0.41 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2024-01-12 | $218.91 | Lowe's Q3 2023 results | 1.65 | -0.50 | 0.17x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2024-01-19 | $220.01 | Lowe's Q3 2023 results | 1.65 | -0.51 | 0.18x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2024-01-26 | $211.98 | Lowe's Q3 2023 results | 1.65 | -0.41 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2024-02-02 | $219.49 | Lowe's Q3 2023 results | 1.65 | -0.51 | 0.18x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2024-02-09 | $222.26 | Lowe's Q3 2023 results | 1.65 | -0.54 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2024-02-16 | $226.85 | Lowe's Q3 2023 results | 1.65 | -0.61 | 0.23x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2024-02-23 | $232.56 | Lowe's Q3 2023 results | 1.65 | -0.69 | 0.28x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2024-02-28 | $238.80 | Lowe's Q4 and fiscal 2023 results | 1.50 | -1.18 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-03-08 | $241.95 | Lowe's Q4 and fiscal 2023 results | 1.50 | -1.23 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-03-15 | $244.73 | Lowe's Q4 and fiscal 2023 results | 1.50 | -1.27 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-03-22 | $258.50 | Lowe's Q4 and fiscal 2023 results | 1.50 | -1.54 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-03-28 | $254.73 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.42 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-04-05 | $239.32 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.20 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-04-12 | $232.05 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.08 | 0.68x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-04-19 | $230.24 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.05 | 0.65x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-04-26 | $229.87 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.05 | 0.64x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-05-03 | $232.13 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.08 | 0.68x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-05-10 | $235.03 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.13 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-05-17 | $231.11 | Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation | 1.50 | -1.07 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-05-22 | $221.13 | Lowe's Q1 2024 results | 1.45 | -0.97 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-05-31 | $221.29 | Lowe's Q1 2024 results | 1.45 | -0.97 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-06-07 | $216.67 | Lowe's Q1 2024 results | 1.45 | -0.90 | 0.47x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-06-14 | $223.35 | Lowe's Q1 2024 results | 1.45 | -1.00 | 0.55x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-06-21 | $228.59 | Lowe's Q1 2024 results | 1.45 | -1.08 | 0.62x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-06-28 | $220.46 | Lowe's Q1 2024 results | 1.45 | -0.96 | 0.51x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-07-05 | $213.89 | Lowe's Q1 2024 results | 1.45 | -0.86 | 0.44x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-07-12 | $234.08 | Lowe's Q1 2024 results | 1.45 | -1.16 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-07-19 | $238.52 | Lowe's Q1 2024 results | 1.45 | -1.24 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-07-26 | $238.87 | Lowe's Q1 2024 results | 1.45 | -1.24 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-08-02 | $240.42 | Lowe's Q1 2024 results | 1.45 | -1.26 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-08-09 | $235.83 | Lowe's Q1 2024 results | 1.45 | -1.19 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-08-16 | $241.15 | Lowe's Q1 2024 results | 1.45 | -1.27 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-08-21 | $242.37 | Lowe's Q2 2024 results | 1.30 | -1.55 | 0.99x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-08-30 | $248.50 | Lowe's Q2 2024 results | 1.30 | -1.73 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-09-06 | $243.81 | Lowe's Q2 2024 results | 1.30 | -1.57 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-09-13 | $255.41 | Lowe's Q2 2024 results | 1.30 | -1.81 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-09-20 | $260.14 | Lowe's Q2 2024 results | 1.30 | -1.85 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-09-27 | $267.14 | Lowe's Q2 2024 results | 1.30 | -1.92 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-10-04 | $267.76 | Lowe's Q2 2024 results | 1.30 | -1.92 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-10-11 | $275.76 | Lowe's Q2 2024 results | 1.30 | -1.98 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-10-18 | $281.64 | Lowe's Q2 2024 results | 1.30 | -2.02 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-10-25 | $267.64 | Lowe's Q2 2024 results | 1.30 | -1.91 | 1.67x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-11-01 | $261.94 | Lowe's Q2 2024 results | 1.30 | -1.85 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-11-08 | $271.10 | Lowe's Q2 2024 results | 1.30 | -1.93 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-11-15 | $269.40 | Lowe's Q2 2024 results | 1.30 | -1.91 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-11-20 | $263.03 | Lowe's Q3 2024 results | 1.50 | -1.65 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-11-29 | $272.43 | Lowe's Q3 2024 results | 1.50 | -1.73 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-12-06 | $273.43 | Lowe's Q3 2024 results | 1.50 | -1.74 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-12-13 | $262.39 | Lowe's Q3 2024 results | 1.50 | -1.64 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-12-20 | $247.72 | Lowe's Q3 2024 results | 1.50 | -1.38 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-12-27 | $248.34 | Lowe's Q3 2024 results | 1.50 | -1.39 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-03 | $248.48 | Lowe's Q3 2024 results | 1.50 | -1.39 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-10 | $247.90 | Lowe's Q3 2024 results | 1.50 | -1.39 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-17 | $261.06 | Lowe's Q3 2024 results | 1.50 | -1.64 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-24 | $262.20 | Lowe's Q3 2024 results | 1.50 | -1.65 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-31 | $260.04 | Lowe's Q3 2024 results | 1.50 | -1.63 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-07 | $251.94 | Lowe's Q3 2024 results | 1.50 | -1.54 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-14 | $251.79 | Lowe's Q3 2024 results | 1.50 | -1.54 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-21 | $239.17 | Lowe's Q3 2024 results | 1.50 | -1.27 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-27 | $245.50 | Lowe's Q4 and fiscal 2024 results | 1.85 | -0.87 | 1.14x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-03-07 | $242.66 | Lowe's Q4 and fiscal 2024 results | 1.85 | -0.83 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-03-14 | $224.44 | Lowe's Q4 and fiscal 2024 results | 1.85 | -0.52 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2025-03-21 | $227.07 | Lowe's Q4 and fiscal 2024 results | 1.85 | -0.57 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2025-03-28 | $228.42 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.60 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-04-04 | $223.29 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.51 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2025-04-11 | $220.35 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.46 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | - | - | - | - |
+| 2025-04-17 | $219.00 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.43 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2025-04-25 | $220.91 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.48 | 0.70x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | - | - | - | - |
+| 2025-05-02 | $227.19 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.58 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-05-09 | $222.26 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.49 | 0.72x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | - | - |
+| 2025-05-16 | $234.23 | Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation | 1.85 | -0.71 | 0.96x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-05-22 | $223.75 | Lowe's Q1 2025 results | 1.65 | -0.73 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-05-30 | $225.73 | Lowe's Q1 2025 results | 1.65 | -0.77 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-06-06 | $225.27 | Lowe's Q1 2025 results | 1.65 | -0.76 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-06-13 | $217.27 | Lowe's Q1 2025 results | 1.65 | -0.62 | 0.65x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2025-06-20 | $212.75 | Lowe's Q1 2025 results | 1.65 | -0.54 | 0.58x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2025-06-27 | $223.63 | Lowe's Q1 2025 results | 1.65 | -0.73 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-07-03 | $228.31 | Lowe's Q1 2025 results | 1.65 | -0.82 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-07-11 | $224.13 | Lowe's Q1 2025 results | 1.65 | -0.74 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-07-18 | $219.16 | Lowe's Q1 2025 results | 1.65 | -0.66 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2025-07-25 | $226.80 | Lowe's Q1 2025 results | 1.65 | -0.81 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-01 | $226.40 | Lowe's Q1 2025 results | 1.65 | -0.80 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-08 | $241.15 | Lowe's Q1 2025 results | 1.65 | -1.09 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-15 | $252.06 | Lowe's Q1 2025 results | 1.65 | -1.26 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-21 | $255.65 | Lowe's Q2 2025 results | 1.85 | -1.07 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-29 | $258.06 | Lowe's Q2 2025 results | 1.85 | -1.10 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-05 | $269.97 | Lowe's Q2 2025 results | 1.85 | -1.31 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-12 | $271.83 | Lowe's Q2 2025 results | 1.85 | -1.32 | 2.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-19 | $265.20 | Lowe's Q2 2025 results | 1.85 | -1.26 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-26 | $257.12 | Lowe's Q2 2025 results | 1.85 | -1.08 | 1.69x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-03 | $246.35 | Lowe's Q2 2025 results | 1.85 | -0.94 | 1.29x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-10 | $232.22 | Lowe's Q2 2025 results | 1.85 | -0.66 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-10-17 | $244.70 | Lowe's Q2 2025 results | 1.85 | -0.92 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-24 | $242.71 | Lowe's Q2 2025 results | 1.85 | -0.88 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-31 | $238.13 | Lowe's Q2 2025 results | 1.85 | -0.78 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-11-07 | $233.16 | Lowe's Q2 2025 results | 1.85 | -0.68 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-11-14 | $227.85 | Lowe's Q2 2025 results | 1.85 | -0.58 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2025-11-20 | $228.43 | Lowe's Q3 2025 results | 1.85 | -0.59 | 0.88x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-11-28 | $242.48 | Lowe's Q3 2025 results | 1.85 | -0.88 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-05 | $248.47 | Lowe's Q3 2025 results | 1.85 | -0.97 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-12 | $247.29 | Lowe's Q3 2025 results | 1.85 | -0.96 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-19 | $240.44 | Lowe's Q3 2025 results | 1.85 | -0.84 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-26 | $244.49 | Lowe's Q3 2025 results | 1.85 | -0.91 | 1.29x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-02 | $246.89 | Lowe's Q3 2025 results | 1.85 | -0.95 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-09 | $267.21 | Lowe's Q3 2025 results | 1.85 | -1.28 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-16 | $277.55 | Lowe's Q3 2025 results | 1.85 | -1.36 | 3.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-23 | $276.73 | Lowe's Q3 2025 results | 1.85 | -1.36 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-30 | $267.06 | Lowe's Q3 2025 results | 1.85 | -1.28 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-06 | $278.38 | Lowe's Q3 2025 results | 1.85 | -1.37 | 3.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-13 | $287.39 | Lowe's Q3 2025 results | 1.85 | -1.43 | 4.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-20 | $280.36 | Lowe's Q3 2025 results | 1.85 | -1.38 | 3.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-26 | $264.39 | Lowe's Q4 and fiscal 2025 results | 1.95 | -0.90 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-03-06 | $251.89 | Lowe's Q4 and fiscal 2025 results | 1.95 | -0.76 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-03-13 | $237.59 | Lowe's Q4 and fiscal 2025 results | 1.95 | -0.46 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-03-20 | $224.63 | Lowe's Q4 and fiscal 2025 results | 1.95 | -0.19 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $230.31 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.33 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-04-02 | $231.03 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.34 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-04-10 | $244.22 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.64 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-04-17 | $251.72 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.77 | 1.61x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-04-24 | $244.45 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.65 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-05-01 | $233.33 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.39 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2026-05-08 | $229.20 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.30 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-05-15 | $218.42 | Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation | 1.95 | -0.07 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-05-21 | $217.41 | Lowe's Q1 2026 results | 1.80 | -0.21 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-05-29 | $214.36 | Lowe's Q1 2026 results | 1.80 | -0.14 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-06-05 | $210.74 | Lowe's Q1 2026 results | 1.80 | -0.07 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-12 | $220.78 | Lowe's Q1 2026 results | 1.80 | -0.27 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-06-18 | $222.20 | Lowe's Q1 2026 results | 1.80 | -0.30 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-06-26 | $222.48 | Lowe's Q1 2026 results | 1.80 | -0.32 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-07-02 | $227.50 | Lowe's Q1 2026 results | 1.80 | -0.42 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2026-07-10 | $211.63 | Lowe's Q1 2026 results | 1.80 | -0.09 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-07-17 | $208.73 | Lowe's Q1 2026 results | 1.80 | -0.03 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-24 | $207.64 | Lowe's Q1 2026 results | 1.80 | -0.01 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-31 | $207.81 | Lowe's Q1 2026 results | 1.80 | -0.01 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $223.35 | Lowe's Q1 2026 results | 1.80 | -0.34 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-08-14 | $218.47 | Lowe's Q1 2026 results | 1.80 | -0.25 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-20 | $217.34 | Lowe's Q2 2026 results | 1.50 | -0.69 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2026-08-28 | $208.05 | Lowe's Q2 2026 results | 1.50 | -0.51 | 0.60x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-09-04 | $204.45 | Lowe's Q2 2026 results | 1.50 | -0.43 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-09-11 | $196.82 | Lowe's Q2 2026 results | 1.50 | -0.28 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-18 | $192.49 | Lowe's Q2 2026 results | 1.50 | -0.19 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $189.28 | Lowe's Q2 2026 results | 1.50 | -0.12 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $180.80 | Lowe's Q2 2026 results | 1.50 | +0.22 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $186.00 | Lowe's Q2 2026 results | 1.50 | -0.06 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $197.38 | Lowe's Q2 2026 results | 1.50 | -0.30 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-23 | $198.68 | Lowe's Q2 2026 results | 1.50 | -0.33 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |

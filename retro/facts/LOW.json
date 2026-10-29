@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing. Events record a 10-K's own words on a live disruption theme (ECOMMERCE from the FY2015 10-K); a guide's fy_margin_guide_base is the prior-year margin its step is measured from when the company states one other than the history's. A guide marked 'withdrawn' (the Q1 FY20 release) voids every earlier guide for its fiscal year; the no-guide rules apply until the company guides again. A Q4 print's fy_actual has comps_pct null when the release gives no full-year comparable sales, and stores null when it gives no store count (Q4 FY22). A guide's rev_guide_usd_b is a sales level in dollars (from fiscal 2021), read as growth against the previous fiscal year's net sales; op_margin_guide_pct is a margin level in percent of sales.",
+ "_doc": "Point-in-time fact sheet for LOW retrospectives (retro/build_low.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, the latest dividend declaration, and the events published between that vintage and AS_OF. Lowe's fiscal year N ends on the Friday nearest January 31 of N+1. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Guides come from each release's 'Business Outlook' (next quarter and fiscal year) and from 8-Ks; margin_def names the margin a guide steps: 'operating margin' (gross margin less SG&A and depreciation, to the Q3 FY07 release) or 'EBIT margin' (from the Q4 FY07 release). A print's margins and the vintage's prev_fy_margins carry both, derived from the published percent-of-sales column. Edit only to add newly published facts or fix a transcription error against the cited filing. Events record a 10-K's own words on a live disruption theme (ECOMMERCE from the FY2015 10-K); a guide's fy_margin_guide_base is the prior-year margin its step is measured from when the company states one other than the history's. A guide marked 'withdrawn' (the Q1 FY20 release) voids every earlier guide for its fiscal year; the no-guide rules apply until the company guides again. A Q4 print's fy_actual has comps_pct null when the release gives no full-year comparable sales, and stores null when it gives no store count (Q4 FY22). A guide's rev_guide_usd_b is a sales level in dollars (from fiscal 2021), read as growth against the previous fiscal year's net sales, unless the same guide states the growth (rev_guide, fiscal 2026), which then stands; op_margin_guide_pct is a margin level in percent of sales.",
  "ticker": "LOW",
  "sources": {
   "L1": {
@@ -532,7 +532,7 @@
    "filed": "2017-04-04 09:27 ET (before the open)",
    "title": "Lowe's Companies FY2016 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066717000076/lowesform10k.htm",
-   "supports": "selected financial data 2012-2016, income statement 2014-2016 with percent of sales (operating income line), adjusted diluted EPS $3.99 and $3.29 (GAAP $3.47, $2.73), 2016 diluted shares 881M, interest $645M, income tax provision $2,108M on pre-tax $5,201M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.5B repurchased in 2016 under the program, $5.1B remaining; 2016 fourth-quarter dividend $0.35; 2,129 home improvement and hardware stores, approximately 213 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3.5% of 2016 sales"
+   "supports": "selected financial data 2012-2016, income statement 2014-2016 with percent of sales (operating income line), adjusted diluted EPS $3.99 and $3.29 (GAAP $3.47, $2.73), 2016 diluted shares 881M, interest $645M, income tax provision $2,108M on pre-tax $5,201M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.5B repurchased in 2016 under the program, $5.1B remaining; 2016 fourth-quarter dividend $0.35; 2,129 home improvement and hardware stores, approximately 213 million square feet; risk factor: 'We face growing competition from online and multi-channel retailers'; online channels approximately 3.5% of 2016 sales; 2014 weighted average diluted shares 990M"
   },
   "L99": {
    "published": "2017-05-24",
@@ -567,7 +567,7 @@
    "filed": "2018-04-02 16:36 ET (after the close)",
    "title": "Lowe's Companies FY2017 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066718000051/form10k_02022018.htm",
-   "supports": "selected financial data 2013-2017, income statement 2015-2017 with percent of sales (operating income, loss on extinguishment of debt), adjusted diluted EPS $4.39, $3.99 and $3.29 (GAAP $4.09, $3.47, $2.73), 2017 diluted shares 840M, interest $633M, income tax provision $2,042M on pre-tax $5,489M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.13B repurchased in 2017 under the program, $6.9B remaining; 2017 fourth-quarter dividend $0.41; 2,152 home improvement and hardware stores, approximately 215 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'"
+   "supports": "selected financial data 2013-2017, income statement 2015-2017 with percent of sales (operating income, loss on extinguishment of debt), adjusted diluted EPS $4.39, $3.99 and $3.29 (GAAP $4.09, $3.47, $2.73), 2017 diluted shares 840M, interest $633M, income tax provision $2,042M on pre-tax $5,489M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.13B repurchased in 2017 under the program, $6.9B remaining; 2017 fourth-quarter dividend $0.41; 2,152 home improvement and hardware stores, approximately 215 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'; 2015 weighted average diluted shares 929M"
   },
   "L104": {
    "published": "2018-05-23",
@@ -623,7 +623,7 @@
    "filed": "2019-04-01 19:26 ET (after the close)",
    "title": "Lowe's Companies FY2018 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066719000042/form10k_02012019.htm",
-   "supports": "selected financial data 2014-2018, income statement 2016-2018 with percent of sales (shipping and handling recast), adjusted diluted EPS $5.11 and $4.39 (GAAP $2.84, $4.09), comparable sales +2.4%, 2018 diluted shares 812M, interest $624M, income tax provision $1,080M on pre-tax $3,394M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.0B repurchased in 2018 under the program, $13.9B remaining, $6.0 to $7.5 billion of repurchases expected in 2019; the quarterly dividend raised to $0.48 in 2018; 2,015 home improvement and hardware stores, approximately 209 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'"
+   "supports": "selected financial data 2014-2018, income statement 2016-2018 with percent of sales (shipping and handling recast), adjusted diluted EPS $5.11 and $4.39 (GAAP $2.84, $4.09), comparable sales +2.4%, 2018 diluted shares 812M, interest $624M, income tax provision $1,080M on pre-tax $3,394M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales; $3.0B repurchased in 2018 under the program, $13.9B remaining, $6.0 to $7.5 billion of repurchases expected in 2019; the quarterly dividend raised to $0.48 in 2018; 2,015 home improvement and hardware stores, approximately 209 million square feet; risk factor: 'We face growing competition from online and omni-channel retailers'; 2016 weighted average diluted shares 881M"
   },
   "L112": {
    "published": "2019-05-22",
@@ -848,6 +848,181 @@
    "title": "Lowe's Q3 2023 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
    "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000159/exhibit992-11032023.htm",
    "supports": "Q3 2023 operating margin 13.2%, '+924 basis points vs. LY', and '+46 basis points vs. LY Adjusted Operating Margin' (12.71% in Q3 2022, excluding the Canadian retail business impairment)"
+  },
+  "L144": {
+   "published": "2024-02-27",
+   "filed": "2024-02-27 08:45 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2023 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000012/exhibit991-02022024.htm",
+   "supports": "Q4 2023 and fiscal 2023 results: diluted EPS $1.77 for the quarter (against $1.58, which included the Canadian retail business transaction costs) and $13.20 for the year; comparable sales -6.2% for the quarter; percent-of-sales income statement, inventory, cash, cash flow; 1,746 stores, 194.9 million square feet; cash dividends per share $1.10; the Full Year 2024 Outlook: total sales of $84 to $85 billion, comparable sales down 2% to 3%, operating margin of 12.6% to 12.7%, interest expense of approximately $1.4 billion, effective tax rate of approximately 25%, diluted EPS of approximately $12.00 to $12.30, capital expenditures of approximately $2 billion"
+  },
+  "L145": {
+   "published": "2024-02-27",
+   "filed": "2024-02-27 08:45 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2023 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000012/exhibit992-02022024.htm",
+   "supports": "Q4 2023 operating margin 9.1%, '+148 basis points vs. LY' and '-48 basis points vs. LY Adjusted Operating Margin' (9.55% in Q4 2022); Q4 2022 adjusted diluted EPS $2.28; fiscal 2023 comparable sales -4.7%; fiscal 2023 adjusted operating margin 13.31% (GAAP 13.38%) and adjusted diluted EPS $13.09 (GAAP $13.20), excluding the $63 million gain on the Canadian retail business transaction"
+  },
+  "L146": {
+   "published": "2024-03-26",
+   "filed": "2024-03-25 16:18 ET (after the close)",
+   "title": "Lowe's Companies FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000033/low-20240202.htm",
+   "supports": "income statement 2021-2023 with percent of sales (Item 6 reserved), adjusted diluted EPS $13.09 and $13.81 (GAAP $13.20, $10.17), comparable sales -4.7%, 2023 diluted shares 584M, interest $1,382M, income tax provision $2,449M on pre-tax $10,175M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $6.1B paid for share repurchases in 2023, $14.6B remaining; the quarterly dividend increased to $1.10 in the third quarter of 2023; 1,746 home improvement stores and outlets in the United States, approximately 195 million square feet; risk factor: 'We face growing competition from online and omnichannel retailers'"
+  },
+  "L147": {
+   "published": "2024-05-21",
+   "filed": "2024-05-21 08:45 ET (before the open)",
+   "title": "Lowe's Q1 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000081/exhibit991-05032024.htm",
+   "supports": "Q1 2024 results (diluted EPS $3.06 against $3.77, which included a gain associated with the 2022 sale of the Canadian retail business; comparable sales -4.1%; 1,746 stores, 194.9 million square feet) and the Full Year 2024 Outlook affirmed with the same figures"
+  },
+  "L148": {
+   "published": "2024-05-21",
+   "filed": "2024-05-21 08:45 ET (before the open)",
+   "title": "Lowe's Q1 2024 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000081/exhibit992-05032024.htm",
+   "supports": "Q1 2024 operating margin 12.4%, '-229 basis points vs. LY' and '-201 basis points vs. LY Adjusted Operating Margin' (14.43% in Q1 2023); Q1 2023 adjusted diluted EPS $3.67"
+  },
+  "L149": {
+   "published": "2024-08-20",
+   "filed": "2024-08-20 08:45 ET (before the open)",
+   "title": "Lowe's Q2 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000137/exhibit991-08022024.htm",
+   "supports": "Q2 2024 results (diluted EPS $4.17, adjusted $4.10, excluding the $43 million gain associated with the 2022 sale of the Canadian retail business; comparable sales -5.1%; 1,746 stores, 194.9 million square feet; cash dividends per share $1.15, up from $1.10) and the Full Year 2024 Outlook on adjusted measures: total sales of $82.7 to $83.2 billion, comparable sales down 3.5% to 4.0%, adjusted operating margin of 12.4% to 12.5%, net interest expense of approximately $1.4 billion, adjusted effective tax rate of approximately 24.5%, adjusted diluted EPS of approximately $11.70 to $11.90, capital expenditures of approximately $2 billion; no GAAP figure"
+  },
+  "L150": {
+   "published": "2024-08-20",
+   "filed": "2024-08-20 08:45 ET (before the open)",
+   "title": "Lowe's Q2 2024 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000137/exhibit992-08022024.htm",
+   "supports": "Q2 2024 adjusted operating margin 14.43%, '-114 basis points vs. LY' (GAAP 14.61%, '-96 basis points vs. LY'), excluding the $43 million Canadian retail business transaction gain; adjusted diluted EPS $4.10"
+  },
+  "L151": {
+   "published": "2024-11-19",
+   "filed": "2024-11-19 08:45 ET (before the open)",
+   "title": "Lowe's Q3 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000167/exhibit991-11012024.htm",
+   "supports": "Q3 2024 results (diluted EPS $2.99, adjusted $2.89, excluding the $54 million gain associated with the 2022 sale of the Canadian retail business; comparable sales -1.1%; 1,747 stores, 195.0 million square feet) and the Full Year 2024 Outlook on adjusted measures: total sales of $83.0 to $83.5 billion, comparable sales down 3.0% to 3.5%, adjusted operating margin of 12.3% to 12.4%, net interest expense of approximately $1.3 billion, adjusted effective tax rate of approximately 24.5%, adjusted diluted EPS of approximately $11.80 to $11.90, capital expenditures of approximately $2 billion; no GAAP figure"
+  },
+  "L152": {
+   "published": "2024-11-19",
+   "filed": "2024-11-19 08:45 ET (before the open)",
+   "title": "Lowe's Q3 2024 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000167/exhibit992-11012024.htm",
+   "supports": "Q3 2024 adjusted operating margin 12.31%, '-86 basis points vs. LY' (GAAP 12.57%, '-60 basis points vs. LY'), excluding the $54 million Canadian retail business transaction gain; adjusted diluted EPS $2.89"
+  },
+  "L153": {
+   "published": "2025-02-26",
+   "filed": "2025-02-26 08:45 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2024 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000018/exhibit991-01312025.htm",
+   "supports": "Q4 2024 and fiscal 2024 results: diluted EPS $1.99 for the quarter (adjusted $1.93, excluding the $80 million gain on the Canadian retail business transaction) and $12.23 for the year; comparable sales +0.2% for the quarter; percent-of-sales income statement, inventory, cash, cash flow; 1,748 stores, 195.0 million square feet; the Full Year 2025 Outlook: total sales of $83.5 to $84.5 billion, comparable sales flat to up 1%, operating margin of 12.3% to 12.4%, net interest expense of approximately $1.3 billion, depreciation and amortization of approximately $1.8 billion, effective tax rate of approximately 24.5%, diluted EPS of approximately $12.15 to $12.40, capital expenditures of approximately $2.5 billion"
+  },
+  "L154": {
+   "published": "2025-02-26",
+   "filed": "2025-02-26 08:45 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2024 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000018/exhibit992-01312025.htm",
+   "supports": "Q4 2024 adjusted operating margin 9.43%, '+36 basis points vs. LY' (GAAP 9.87%), and adjusted diluted EPS $1.93; fiscal 2024 comparable sales -2.7%, adjusted operating margin 12.30% (GAAP 12.51%) and adjusted diluted EPS $11.99 (GAAP $12.23), excluding the $177 million of gains on the Canadian retail business transaction"
+  },
+  "L155": {
+   "published": "2025-03-25",
+   "filed": "2025-03-24 16:33 ET (after the close)",
+   "title": "Lowe's Companies FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000049/low-20250131.htm",
+   "supports": "income statement 2022-2024 with percent of sales (Item 6 reserved), adjusted diluted EPS $11.99 and $13.09 (GAAP $12.23, $13.20), comparable sales -2.7%, 2024 diluted shares 568M, interest $1,313M, income tax provision $2,196M on pre-tax $9,153M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales (prior years reclassified); $4.1B paid for share repurchases in 2024, $10.8B remaining; the quarterly dividend increased to $1.15 in the third quarter of 2024; 1,748 home improvement stores and outlets in the United States, approximately 195 million square feet; risk factor: 'We face growing competition from online and omnichannel retailers'"
+  },
+  "L156": {
+   "published": "2025-05-21",
+   "filed": "2025-05-21 08:47 ET (before the open)",
+   "title": "Lowe's Q1 2025 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000091/exhibit991-05022025.htm",
+   "supports": "Q1 2025 results (diluted EPS $2.92 against $3.06; comparable sales -1.7%; 1,750 stores, 195.3 million square feet) and the Full Year 2025 Outlook affirmed with the same figures (the 8-K/A of the same day corrects a balance-sheet line only)"
+  },
+  "L157": {
+   "published": "2025-08-20",
+   "filed": "2025-08-20 06:03 ET (before the open)",
+   "title": "Lowe's Q2 2025 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000161/exhibit991-08012025.htm",
+   "supports": "Q2 2025 results (diluted EPS $4.27, adjusted $4.33, excluding $43 million of Artisan Design Group acquisition costs; comparable sales +1.1%; 1,753 stores, 195.5 million square feet; $1.3 billion invested in the acquisition of ADG) and the Full Year 2025 Outlook updated to include ADG: total sales of $84.5 to $85.5 billion, comparable sales flat to up 1%, operating margin of 12.1% to 12.2%, adjusted operating margin of 12.2% to 12.3%, net interest expense of approximately $1.3 billion, effective tax rate of approximately 24.5%, diluted EPS of approximately $12.10 to $12.35, adjusted diluted EPS of approximately $12.20 to $12.45, capital expenditures of approximately $2.5 billion"
+  },
+  "L158": {
+   "published": "2025-08-20",
+   "filed": "2025-08-20 06:03 ET (before the open)",
+   "title": "Lowe's Q2 2025 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000161/exhibit992-08012025.htm",
+   "supports": "Q2 2025 adjusted gross margin 33.84%, '+37 basis points vs. LY', and adjusted operating margin 14.66%, '+23 basis points vs. LY' (14.43% in Q2 2024), excluding the Artisan Design Group acquisition costs (GAAP 33.81% and 14.48%)"
+  },
+  "L159": {
+   "published": "2025-08-29",
+   "filed": "2025-08-28 16:35 ET (after the close)",
+   "title": "Lowe's Q2 2025 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000174/low-20250801.htm",
+   "supports": "'Cash dividends declared, $1.20 per share' in the second quarter of 2025 (statement of shareholders' deficit)"
+  },
+  "L160": {
+   "published": "2025-11-19",
+   "filed": "2025-11-19 08:45 ET (before the open)",
+   "title": "Lowe's Q3 2025 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000203/exhibit991-10312025.htm",
+   "supports": "Q3 2025 results (diluted EPS $2.88, adjusted $3.06, excluding $129 million of ADG and FBM acquisition costs; comparable sales +0.4%; 1,756 stores, 195.8 million square feet; $8.8 billion invested in the acquisition of FBM; cash dividends per share $1.20) and the Full Year 2025 Outlook including FBM, on adjusted margin and EPS: total sales of $86.0 billion, comparable sales flat, adjusted operating margin of 12.1%, net interest expense of approximately $1.4 billion, effective tax rate of approximately 24.0%, adjusted diluted EPS of approximately $12.25, capital expenditures of up to $2.5 billion; no GAAP margin or EPS figure"
+  },
+  "L161": {
+   "published": "2025-11-19",
+   "filed": "2025-11-19 08:45 ET (before the open)",
+   "title": "Lowe's Q3 2025 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000203/exhibit992-10312025.htm",
+   "supports": "Q3 2025 adjusted operating margin 12.41% against 12.31% in Q3 2024 ('+10 basis points vs. LY ADJ. OPERATING MARGIN'; GAAP 11.92%, '-65 basis points vs. LY'), excluding $101 million of acquisition costs within operating income; read from the exhibit's images (exhibit992-10312025001.jpg and 003.jpg): its text layer is glyph-encoded"
+  },
+  "L162": {
+   "published": "2026-02-25",
+   "filed": "2026-02-25 08:44 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2025 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000020/exhibit991-01302026.htm",
+   "supports": "Q4 2025 and fiscal 2025 results: diluted EPS $1.78 for the quarter (adjusted $1.98, excluding $149 million of ADG and FBM acquisition costs) and $11.85 for the year; comparable sales +1.3% for the quarter; percent-of-sales income statement, inventory, cash, cash flow; 1,759 stores, approximately 196 million square feet; the Full Year 2026 Outlook: total sales of $92.0 to $94.0 billion or an increase of approximately 7% to 9%, comparable sales flat to up 2%, operating margin of 11.2% to 11.4%, adjusted operating margin of 11.6% to 11.8%, net interest expense of approximately $1.6 billion, effective tax rate of approximately 24.5%, diluted EPS of approximately $11.75 to $12.25, adjusted diluted EPS of approximately $12.25 to $12.75, capital expenditures of approximately $2.5 billion"
+  },
+  "L163": {
+   "published": "2026-02-25",
+   "filed": "2026-02-25 08:44 ET (before the open)",
+   "title": "Lowe's Q4 and fiscal 2025 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000020/exhibit992-02252026.htm",
+   "supports": "Q4 2025 adjusted gross margin 32.68% ('-18 basis points vs. LY') and adjusted operating margin 9.02% ('-41 basis points vs. LY', 9.43% in Q4 2024); fiscal 2025 comparable sales +0.2%, adjusted gross margin 33.54% (GAAP 33.48%), adjusted operating margin 12.11% (GAAP 11.77%) and adjusted diluted EPS $12.28 (GAAP $11.85), excluding the ADG and FBM acquisition costs"
+  },
+  "L164": {
+   "published": "2026-03-24",
+   "filed": "2026-03-23 16:52 ET (after the close)",
+   "title": "Lowe's Companies FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000029/low-20260130.htm",
+   "supports": "income statement 2023-2025 with percent of sales (Item 6 reserved), adjusted diluted EPS $12.28 and $11.99 (GAAP $11.85, $12.23), comparable sales +0.2%, 2025 diluted shares 560M, interest $1,406M, income tax provision $2,093M on pre-tax $8,747M; cash, short-term investments, operating cash flow, capital expenditures; product-category sales of the Retail Home Improvement segment (prior years reclassified) and $2,208M of other segment net sales (FBM and ADG); $0.1B paid for share repurchases in 2025, the program paused, $10.8B remaining; the quarterly dividend increased to $1.20 in the third quarter of 2025; 1,759 home improvement stores and outlets in the United States, approximately 196 million square feet, and over 540 branch locations in the United States and Canada; risk factor: 'We face growing competition from online and omnichannel retailers'"
+  },
+  "L165": {
+   "published": "2026-05-20",
+   "filed": "2026-05-20 08:45 ET (before the open)",
+   "title": "Lowe's Q1 2026 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000062/exhibit991-05012026.htm",
+   "supports": "Q1 2026 results (diluted EPS $2.90, adjusted $3.03, excluding $96 million of ADG and FBM intangible asset amortization; comparable sales +0.6%; 1,759 stores, 196.0 million square feet) and the Full Year 2026 Outlook affirmed with the same figures"
+  },
+  "L166": {
+   "published": "2026-05-20",
+   "filed": "2026-05-20 08:45 ET (before the open)",
+   "title": "Lowe's Q1 2026 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000062/exhibit992-05202026.htm",
+   "supports": "Q1 2026 adjusted operating margin 11.49%, '-43 basis points vs. LY' (GAAP 11.07%, '-85 basis points vs. LY'); adjusted diluted EPS $3.03"
+  },
+  "L167": {
+   "published": "2026-08-19",
+   "filed": "2026-08-19 08:45 ET (before the open)",
+   "title": "Lowe's Q2 2026 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000113/exhibit991-07312026.htm",
+   "supports": "Q2 2026 results (diluted EPS $4.27, adjusted $4.40, excluding $96 million of ADG and FBM acquisition costs; both include an $0.11 benefit from IEEPA tariff refunds; comparable sales +0.2%; 1,761 stores, 196.0 million square feet; cash dividends per share $1.25, up from $1.20) and the Fiscal Year 2026 Outlook, including the tariff refunds recognized in the second quarter: total sales of $92.0 billion, comparable sales flat, operating margin of 11.2%, adjusted operating margin of 11.6%, net interest expense of approximately $1.6 billion, effective tax rate of approximately 24.5%, diluted EPS of approximately $11.75, adjusted diluted EPS of approximately $12.25, capital expenditures of up to $2.5 billion"
+  },
+  "L168": {
+   "published": "2026-08-19",
+   "filed": "2026-08-19 08:45 ET (before the open)",
+   "title": "Lowe's Q2 2026 results infographic and non-GAAP reconciliation (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000113/exhibit992-081926.htm",
+   "supports": "Q2 2026 gross margin '-77 basis points vs. LY' and '-80 basis points vs. LY ADJ. GROSS MARGIN' (33.84% in Q2 2025); adjusted operating margin 14.04%, '-62 basis points vs. LY' (14.66% in Q2 2025; GAAP 13.67%); adjusted diluted EPS $4.40"
   }
  },
  "history_vintages": [
@@ -4061,6 +4236,564 @@
     ]
    ],
    "groups_basis": "FY22 product categories (FY2022 10-K, prior years reclassified)"
+  },
+  {
+   "published": "2024-03-26",
+   "sources": [
+    "L146",
+    "L138",
+    "L130",
+    "L124",
+    "L117",
+    "L111",
+    "L98",
+    "L145",
+    "L142"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY23",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,746 home improvement stores and outlets in the U.S. with approximately 195 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2014": "2015-01-30",
+    "2015": "2016-01-29",
+    "2016": "2017-02-03",
+    "2017": "2018-02-02",
+    "2018": "2019-02-01",
+    "2019": "2020-01-31",
+    "2020": "2021-01-29",
+    "2021": "2022-01-28",
+    "2022": "2023-02-03",
+    "2023": "2024-02-02"
+   },
+   "eps_gaap": {
+    "2014": 2.71,
+    "2015": 2.73,
+    "2016": 3.47,
+    "2017": 4.09,
+    "2018": 2.84,
+    "2019": 5.49,
+    "2020": 7.75,
+    "2021": 12.04,
+    "2022": 10.17,
+    "2023": 13.2
+   },
+   "eps_normalized": {
+    "2014": 2.71,
+    "2015": 3.29,
+    "2016": 3.99,
+    "2017": 4.39,
+    "2018": 5.11,
+    "2019": 5.74,
+    "2020": 8.86,
+    "2021": 12.04,
+    "2022": 13.81,
+    "2023": 13.09
+   },
+   "eps_published": {
+    "2014": "2019-04-02",
+    "2015": "2020-03-24",
+    "2016": "2021-03-23",
+    "2017": "2021-03-23",
+    "2018": "2021-03-23",
+    "2019": "2022-03-22",
+    "2020": "2023-03-28"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded; 2015 is the company's adjusted $3.29, which excludes the $530M non-cash impairment of the Australian joint venture (GAAP $2.73, FY2015 10-K); 2016 is the company's adjusted $3.99 (GAAP $3.47, FY2016 10-K); 2017 is the company's adjusted $4.39 (GAAP $4.09, FY2017 10-K); 2018 is the company's adjusted $5.11 (GAAP $2.84, FY2018 and FY2019 10-Ks); 2019 is the company's adjusted $5.74 (GAAP $5.49, FY2020 and FY2021 10-Ks), which excludes the Canada restructuring and Mexico adjustments; 2020 is the company's adjusted $8.86 (GAAP $7.75, FY2020 and FY2021 10-Ks), which excludes the loss on extinguishment of debt and the Canada restructuring; 2021 has no adjustment ('There were no non-GAAP adjustments in fiscal 2021', FY2021 10-K); 2022 is the company's adjusted $13.81 (GAAP $10.17, FY2022 and FY2023 10-Ks), which excludes the Canadian retail business impairment and transaction costs; 2023 is the company's adjusted $13.09 (GAAP $13.20, FY2023 10-K), which excludes the $63 million gain on the Canadian retail business transaction; the FY2021-FY2023 10-Ks have no five-year selected data, so 2016-2018 come from the FY2020 10-K, 2019 from the FY2021 10-K and 2020 from the FY2022 10-K",
+   "revenue_usd_b": {
+    "2014": 56.223,
+    "2015": 59.074,
+    "2016": 65.017,
+    "2017": 68.619,
+    "2018": 71.309,
+    "2019": 72.148,
+    "2020": 89.597,
+    "2021": 96.25,
+    "2022": 97.059,
+    "2023": 86.377
+   },
+   "diluted_shares_m": {
+    "2014": 990.0,
+    "2023": 584.0
+   },
+   "shares_published": {
+    "2014": "2017-04-04"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 13.31,
+    "EBIT margin": 13.38
+   },
+   "prev_fy_margins_note": "adjusted operating margin 13.31% as the Q4 FY23 8-K's reconciliation publishes it (adjusted operating income $11,494M, excluding the $63 million gain on the Canadian retail business transaction; GAAP 33.39 - 18.02 - 1.99 = 13.38%); EBIT margin = pre-tax + interest 11.78 + 1.60 = 13.38%, GAAP, no adjusted figure published (percent-of-sales column, FY2023 10-K)",
+   "prev_fy_gross_margin": 33.39,
+   "prev_fy_sales_growth": -11.0,
+   "prev_fy_comps": -4.7,
+   "prev_fy_stores": 1746,
+   "net_interest_b": 1.382,
+   "net_interest_note": "FY23 from L146",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.241,
+   "tax_note": "FY23 effective rate, GAAP (income tax provision $2,449M / pre-tax $10,175M)",
+   "fcf_b": 6.18,
+   "fcf_label": "FY23",
+   "prev_q_comps": -7.4,
+   "prev_q_label": "Q3 FY23",
+   "prev_q_source": "L142",
+   "dividend_annual": 4.4,
+   "dividend_note": "$1.10 quarterly (the quarterly dividend payment as increased in the third quarter of 2023, FY2023 10-K)",
+   "cash_return_text": "$14.6B repurchase authorization remaining; $6.1B paid for share repurchases in 2023",
+   "business_line": "Home improvement retailer: 1,746 home improvement stores and outlets in the United States, approximately 195 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Appliances",
+     12.344,
+     -8.6
+    ],
+    [
+     "Seasonal & Outdoor Living",
+     7.74,
+     -11.0
+    ],
+    [
+     "Lumber",
+     7.02,
+     -28.1
+    ],
+    [
+     "Lawn & Garden",
+     6.729,
+     -2.9
+    ],
+    [
+     "Kitchens & Bath",
+     6.167,
+     -11.3
+    ],
+    [
+     "Hardware",
+     5.828,
+     -5.7
+    ],
+    [
+     "Building Materials",
+     5.245,
+     3.6
+    ],
+    [
+     "Millwork",
+     5.181,
+     -10.2
+    ],
+    [
+     "Paint",
+     5.118,
+     -5.3
+    ],
+    [
+     "Rough Plumbing",
+     4.971,
+     -6.8
+    ],
+    [
+     "Tools",
+     4.723,
+     -8.9
+    ],
+    [
+     "Electrical",
+     4.478,
+     -16.0
+    ],
+    [
+     "Flooring",
+     4.327,
+     -14.2
+    ],
+    [
+     "Décor",
+     4.175,
+     -21.1
+    ],
+    [
+     "Other",
+     2.331,
+     -10.2
+    ]
+   ],
+   "groups_basis": "FY23 product categories (FY2023 10-K, prior years reclassified)"
+  },
+  {
+   "published": "2025-03-25",
+   "sources": [
+    "L155",
+    "L146",
+    "L138",
+    "L130",
+    "L124",
+    "L117",
+    "L103",
+    "L154",
+    "L151"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY24",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,748 home improvement stores and outlets in the U.S. with approximately 195 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2015": "2016-01-29",
+    "2016": "2017-02-03",
+    "2017": "2018-02-02",
+    "2018": "2019-02-01",
+    "2019": "2020-01-31",
+    "2020": "2021-01-29",
+    "2021": "2022-01-28",
+    "2022": "2023-02-03",
+    "2023": "2024-02-02",
+    "2024": "2025-01-31"
+   },
+   "eps_gaap": {
+    "2015": 2.73,
+    "2016": 3.47,
+    "2017": 4.09,
+    "2018": 2.84,
+    "2019": 5.49,
+    "2020": 7.75,
+    "2021": 12.04,
+    "2022": 10.17,
+    "2023": 13.2,
+    "2024": 12.23
+   },
+   "eps_normalized": {
+    "2015": 3.29,
+    "2016": 3.99,
+    "2017": 4.39,
+    "2018": 5.11,
+    "2019": 5.74,
+    "2020": 8.86,
+    "2021": 12.04,
+    "2022": 13.81,
+    "2023": 13.09,
+    "2024": 11.99
+   },
+   "eps_published": {
+    "2015": "2020-03-24",
+    "2016": "2021-03-23",
+    "2017": "2021-03-23",
+    "2018": "2021-03-23",
+    "2019": "2022-03-22",
+    "2020": "2023-03-28",
+    "2021": "2024-03-26"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded; 2015 is the company's adjusted $3.29, which excludes the $530M non-cash impairment of the Australian joint venture (GAAP $2.73, FY2015 10-K); 2016 is the company's adjusted $3.99 (GAAP $3.47, FY2016 10-K); 2017 is the company's adjusted $4.39 (GAAP $4.09, FY2017 10-K); 2018 is the company's adjusted $5.11 (GAAP $2.84, FY2018 and FY2019 10-Ks); 2019 is the company's adjusted $5.74 (GAAP $5.49, FY2020 and FY2021 10-Ks), which excludes the Canada restructuring and Mexico adjustments; 2020 is the company's adjusted $8.86 (GAAP $7.75, FY2020 and FY2021 10-Ks), which excludes the loss on extinguishment of debt and the Canada restructuring; 2021 has no adjustment ('There were no non-GAAP adjustments in fiscal 2021', FY2021 10-K); 2022 is the company's adjusted $13.81 (GAAP $10.17, FY2022 and FY2023 10-Ks), which excludes the Canadian retail business impairment and transaction costs; 2023 is the company's adjusted $13.09 (GAAP $13.20, FY2023 and FY2024 10-Ks), which excludes the gain on the Canadian retail business transaction; 2024 is the company's adjusted $11.99 (GAAP $12.23, FY2024 10-K), which excludes $177 million of gains on the Canadian retail business transaction; the FY2021-FY2024 10-Ks have no five-year selected data, so 2016-2018 come from the FY2020 10-K, 2019 from the FY2021 10-K, 2020 from the FY2022 10-K and 2021 from the FY2023 10-K",
+   "revenue_usd_b": {
+    "2015": 59.074,
+    "2016": 65.017,
+    "2017": 68.619,
+    "2018": 71.309,
+    "2019": 72.148,
+    "2020": 89.597,
+    "2021": 96.25,
+    "2022": 97.059,
+    "2023": 86.377,
+    "2024": 83.674
+   },
+   "diluted_shares_m": {
+    "2015": 929.0,
+    "2024": 568.0
+   },
+   "shares_published": {
+    "2015": "2018-04-03"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 12.3,
+    "EBIT margin": 12.51
+   },
+   "prev_fy_margins_note": "adjusted operating margin 12.30% as the Q4 FY24 8-K's reconciliation publishes it (excluding $177 million of gains on the Canadian retail business transaction; GAAP 33.32 - 18.74 - 2.07 = 12.51%); EBIT margin = pre-tax + interest 10.94 + 1.57 = 12.51%, GAAP, no adjusted figure published (percent-of-sales column, FY2024 10-K)",
+   "prev_fy_gross_margin": 33.32,
+   "prev_fy_sales_growth": -3.1,
+   "prev_fy_comps": -2.7,
+   "prev_fy_stores": 1748,
+   "net_interest_b": 1.313,
+   "net_interest_note": "FY24 from L155",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.24,
+   "tax_note": "FY24 effective rate, GAAP (income tax provision $2,196M / pre-tax $9,153M)",
+   "fcf_b": 7.7,
+   "fcf_label": "FY24",
+   "prev_q_comps": -1.1,
+   "prev_q_label": "Q3 FY24",
+   "prev_q_source": "L151",
+   "dividend_annual": 4.6,
+   "dividend_note": "$1.15 quarterly (the quarterly dividend payment as increased in the third quarter of 2024, FY2024 10-K)",
+   "cash_return_text": "$10.8B repurchase authorization remaining; $4.1B paid for share repurchases in 2024",
+   "business_line": "Home improvement retailer: 1,748 home improvement stores and outlets in the United States, approximately 195 million square feet",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Appliances",
+     12.053,
+     -2.2
+    ],
+    [
+     "Seasonal & Outdoor Living",
+     7.37,
+     -4.1
+    ],
+    [
+     "Lumber",
+     6.747,
+     -3.9
+    ],
+    [
+     "Lawn & Garden",
+     6.526,
+     -2.9
+    ],
+    [
+     "Kitchens & Bath",
+     5.869,
+     -5.0
+    ],
+    [
+     "Hardware",
+     5.821,
+     -0.5
+    ],
+    [
+     "Building Materials",
+     5.419,
+     3.1
+    ],
+    [
+     "Millwork",
+     4.986,
+     -3.7
+    ],
+    [
+     "Paint",
+     4.976,
+     -2.8
+    ],
+    [
+     "Rough Plumbing",
+     4.93,
+     -1.7
+    ],
+    [
+     "Tools",
+     4.539,
+     -3.5
+    ],
+    [
+     "Electrical",
+     4.299,
+     -4.0
+    ],
+    [
+     "Flooring",
+     4.102,
+     -5.9
+    ],
+    [
+     "Décor",
+     3.862,
+     -7.1
+    ],
+    [
+     "Other",
+     2.175,
+     -7.0
+    ]
+   ],
+   "groups_basis": "FY24 product categories (FY2024 10-K, prior years reclassified)"
+  },
+  {
+   "published": "2026-03-24",
+   "sources": [
+    "L164",
+    "L155",
+    "L146",
+    "L138",
+    "L130",
+    "L124",
+    "L111",
+    "L163",
+    "L160"
+   ],
+   "company": "Lowe's Companies, Inc.",
+   "fy_label": "FY25",
+   "why": "Lowe's: the world's second largest home improvement retailer, 1,759 home improvement stores and outlets in the U.S. with approximately 196 million square feet, serving do-it-yourself, do-it-for-me and professional customers; its sales follow housing turnover and the activity level of home improvement projects (its own 10-K), the franchise does not",
+   "fiscal_year_ends": {
+    "2016": "2017-02-03",
+    "2017": "2018-02-02",
+    "2018": "2019-02-01",
+    "2019": "2020-01-31",
+    "2020": "2021-01-29",
+    "2021": "2022-01-28",
+    "2022": "2023-02-03",
+    "2023": "2024-02-02",
+    "2024": "2025-01-31",
+    "2025": "2026-01-30"
+   },
+   "eps_gaap": {
+    "2016": 3.47,
+    "2017": 4.09,
+    "2018": 2.84,
+    "2019": 5.49,
+    "2020": 7.75,
+    "2021": 12.04,
+    "2022": 10.17,
+    "2023": 13.2,
+    "2024": 12.23,
+    "2025": 11.85
+   },
+   "eps_normalized": {
+    "2016": 3.99,
+    "2017": 4.39,
+    "2018": 5.11,
+    "2019": 5.74,
+    "2020": 8.86,
+    "2021": 12.04,
+    "2022": 13.81,
+    "2023": 13.09,
+    "2024": 11.99,
+    "2025": 12.28
+   },
+   "eps_published": {
+    "2016": "2021-03-23",
+    "2017": "2021-03-23",
+    "2018": "2021-03-23",
+    "2019": "2022-03-22",
+    "2020": "2023-03-28",
+    "2021": "2024-03-26",
+    "2022": "2025-03-25"
+   },
+   "normalization": "diluted EPS from continuing operations where the filing reports the line (from the FY2003 10-K: the Contractor Yards are discontinued operations), else diluted EPS; each year from the latest 10-K that reports it, so 1997-1998 still include the Contractor Yards; 1999 keeps the $0.04 Eagle Hardware merger charge (the company's $1.79 excluding it, FY1999 10-K, is on the earlier basis that included the Contractor Yards); no year excluded; 2015 is the company's adjusted $3.29, which excludes the $530M non-cash impairment of the Australian joint venture (GAAP $2.73, FY2015 10-K); 2016 is the company's adjusted $3.99 (GAAP $3.47, FY2016 10-K); 2017 is the company's adjusted $4.39 (GAAP $4.09, FY2017 10-K); 2018 is the company's adjusted $5.11 (GAAP $2.84, FY2018 and FY2019 10-Ks); 2019 is the company's adjusted $5.74 (GAAP $5.49, FY2020 and FY2021 10-Ks), which excludes the Canada restructuring and Mexico adjustments; 2020 is the company's adjusted $8.86 (GAAP $7.75, FY2020 and FY2021 10-Ks), which excludes the loss on extinguishment of debt and the Canada restructuring; 2021 has no adjustment ('There were no non-GAAP adjustments in fiscal 2021', FY2021 10-K); 2022 is the company's adjusted $13.81 (GAAP $10.17, FY2022 and FY2023 10-Ks), which excludes the Canadian retail business impairment and transaction costs; 2023 is the company's adjusted $13.09 (GAAP $13.20, FY2023 and FY2024 10-Ks), which excludes the gain on the Canadian retail business transaction; 2024 is the company's adjusted $11.99 (GAAP $12.23, FY2024 and FY2025 10-Ks), which excludes $177 million of gains on the Canadian retail business transaction; 2025 is the company's adjusted $12.28 (GAAP $11.85, FY2025 10-K), which excludes $321 million of transaction costs and intangible asset amortization of the Artisan Design Group and Foundation Building Materials acquisitions; the FY2021-FY2025 10-Ks have no five-year selected data, so 2016-2018 come from the FY2020 10-K, 2019 from the FY2021 10-K, 2020 from the FY2022 10-K, 2021 from the FY2023 10-K and 2022 from the FY2024 10-K",
+   "revenue_usd_b": {
+    "2016": 65.017,
+    "2017": 68.619,
+    "2018": 71.309,
+    "2019": 72.148,
+    "2020": 89.597,
+    "2021": 96.25,
+    "2022": 97.059,
+    "2023": 86.377,
+    "2024": 83.674,
+    "2025": 86.286
+   },
+   "diluted_shares_m": {
+    "2016": 881.0,
+    "2025": 560.0
+   },
+   "shares_published": {
+    "2016": "2019-04-02"
+   },
+   "pe_window_start": null,
+   "margin_def": "operating margin",
+   "prev_fy_margins": {
+    "operating margin": 12.11,
+    "EBIT margin": 11.77
+   },
+   "prev_fy_margins_note": "adjusted operating margin 12.11% as the Q4 FY25 8-K's reconciliation publishes it (excluding the ADG and FBM acquisition costs; GAAP 33.48 - 19.46 - 2.25 = 11.77%); EBIT margin = pre-tax + interest 10.14 + 1.63 = 11.77%, GAAP, no adjusted figure published (percent-of-sales column, FY2025 10-K)",
+   "prev_fy_gross_margin": 33.54,
+   "prev_fy_sales_growth": 3.1,
+   "prev_fy_comps": 0.2,
+   "prev_fy_stores": 1759,
+   "net_interest_b": 1.406,
+   "net_interest_note": "FY25 from L164",
+   "store_opening_b": 0.0,
+   "tax_rate": 0.239,
+   "tax_note": "FY25 effective rate, GAAP (income tax provision $2,093M / pre-tax $8,747M)",
+   "fcf_b": 7.65,
+   "fcf_label": "FY25",
+   "prev_q_comps": 0.4,
+   "prev_q_label": "Q3 FY25",
+   "prev_q_source": "L160",
+   "dividend_annual": 4.8,
+   "dividend_note": "$1.20 quarterly (the quarterly dividend payment as increased in the third quarter of 2025, FY2025 10-K)",
+   "cash_return_text": "$10.8B repurchase authorization remaining; the share repurchase program paused in fiscal 2025 ($0.1B paid for share repurchases in 2025)",
+   "business_line": "Home improvement retailer: 1,759 home improvement stores and outlets in the United States, approximately 196 million square feet; over 540 branch locations in the United States and Canada (FBM and ADG, acquired in 2025)",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "Appliances",
+     12.891,
+     3.0
+    ],
+    [
+     "Seasonal & Outdoor Living",
+     7.065,
+     -2.3
+    ],
+    [
+     "Lumber",
+     6.68,
+     -0.6
+    ],
+    [
+     "Lawn & Garden",
+     6.577,
+     0.8
+    ],
+    [
+     "Hardware",
+     6.029,
+     -0.3
+    ],
+    [
+     "Kitchens & Bath",
+     5.866,
+     -0.4
+    ],
+    [
+     "Building Materials",
+     5.539,
+     2.3
+    ],
+    [
+     "Rough Plumbing",
+     5.107,
+     3.5
+    ],
+    [
+     "Paint",
+     5.0,
+     0.4
+    ],
+    [
+     "Millwork",
+     4.927,
+     -0.8
+    ],
+    [
+     "Tools",
+     4.514,
+     -0.4
+    ],
+    [
+     "Electrical",
+     4.28,
+     -0.5
+    ],
+    [
+     "Flooring",
+     4.044,
+     -0.6
+    ],
+    [
+     "Decor",
+     3.726,
+     -3.4
+    ],
+    [
+     "Other",
+     1.833,
+     7.8
+    ]
+   ],
+   "groups_basis": "FY25 product categories of the Retail Home Improvement segment, 97.4% of net sales (FY2025 10-K, prior years reclassified); the other segment's $2.208B (FBM and ADG, acquired in 2025) has no prior-year figure and is left out"
   }
  ],
  "prints": [
@@ -7329,6 +8062,577 @@
    "next_print": "Q4 FY23 print (late February)",
    "cash_return_text": "repurchases $5.94B year to date (cash flow statement)",
    "eps_note": "diluted EPS $3.06 against an adjusted $3.27, as the company published them (GAAP $0.25 a year earlier); sales -12.8%, derived (the release gives no percentage); 'Total third quarter sales includes an approximately $115 million headwind related to a timing shift in our fiscal calendar as we cycle over a 53-week year.'"
+  },
+  {
+   "quarter": "Q4 FY23",
+   "fy": 2023,
+   "q": 4,
+   "published": "2024-02-27",
+   "source": "L144",
+   "extra_sources": [
+    "L145"
+   ],
+   "release": "Feb 27",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2024-02-02",
+   "sales_b": 18.602,
+   "sales_pct": -17.1,
+   "comps_pct": -6.2,
+   "gross_margin": 32.4,
+   "gross_margin_bp": 7,
+   "gross_margin_note": "32.40% vs 32.33% of sales a year earlier (the release's percent-of-sales column); a 13-week quarter against 14 weeks",
+   "margins": {
+    "operating margin": [
+     9.07,
+     -48
+    ],
+    "EBIT margin": [
+     9.07,
+     148
+    ]
+   },
+   "margins_note": "operating margin 9.07% (32.40 - 20.95 - 2.38, the operating income line), -48bp against the prior year's adjusted 9.55%, as the earnings 8-K's infographic publishes it ('-48 basis points vs. LY Adjusted Operating Margin'; GAAP +148bp against 7.59%); EBIT margin GAAP: pre-tax + interest (7.20 + 1.87 = 9.07% vs 6.16 + 1.43 = 7.59%)",
+   "inventory_pct": -8.8,
+   "inventory_gap_pp": 8.3,
+   "inventory_note": "merchandise inventory $16,894M vs $18,532M a year earlier (-8.8%), against net sales -17.1%",
+   "eps_q": 1.77,
+   "eps_q_prior": 2.28,
+   "diluted_shares_m": 575.0,
+   "cash_b": 1.228,
+   "stores": 1746,
+   "sq_ft_m": 194.9,
+   "sq_ft_pct": null,
+   "dividend_q": 1.1,
+   "outlook_short": "This quarter we delivered strong operating profit and improved customer satisfaction, despite the continued pullback in DIY spending.",
+   "next_print": "Q1 FY24 print (mid-May)",
+   "cash_return_text": "repurchases $6.14B year to date (cash flow statement)",
+   "eps_note": "diluted EPS $1.77 against an adjusted $2.28 a year earlier, as the company published them (GAAP $1.58 a year earlier); sales -17.1%, derived (the release gives no percentage): the prior-year quarter had 14 weeks and $958 million from the Canadian retail business; 'Total fourth quarter sales includes an approximately $200 million headwind related to a timing shift in our fiscal calendar as we cycle over a 53-week year.'",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": 13.09,
+    "revenue_usd_b": 86.377,
+    "diluted_shares_m": 584.0,
+    "normalization_note": "FY23 = the company's adjusted diluted EPS $13.09, excluding the $63 million gain on the Canadian retail business transaction, as the Q4 FY23 8-K's reconciliation (ex.99.2) publishes it (GAAP $13.20)",
+    "margins": {
+     "operating margin": 13.31,
+     "EBIT margin": 13.38
+    },
+    "margins_note": "FY23 adjusted operating margin 13.31% as the Q4 FY23 8-K's reconciliation publishes it (adjusted operating income $11,494M; GAAP 33.39 - 18.02 - 1.99 = 13.38%); EBIT margin GAAP, no adjusted figure published: 11.78 + 1.60 = 13.38% (percent-of-sales column)",
+    "gross_margin": 33.39,
+    "sales_growth": -11.0,
+    "stores": 1746,
+    "comps_pct": -4.7,
+    "comps_note": "fiscal 2023 comparable sales -4.7%, as the earnings 8-K's infographic (ex.99.2) publishes them in its FY 2023 results ('Comparable sales are calculated based on comparison to weeks 2-53 in fiscal 2022')",
+    "net_interest_b": 1.382,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.241,
+    "tax_note": "FY23 effective rate, GAAP: income tax provision $2,449M / pre-tax earnings $10,175M",
+    "fcf_b": 6.18
+   }
+  },
+  {
+   "quarter": "Q1 FY24",
+   "fy": 2024,
+   "q": 1,
+   "published": "2024-05-21",
+   "source": "L147",
+   "extra_sources": [
+    "L148"
+   ],
+   "release": "May 21",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2024-05-03",
+   "sales_b": 21.364,
+   "sales_pct": -4.4,
+   "comps_pct": -4.1,
+   "gross_margin": 33.19,
+   "gross_margin_bp": -49,
+   "gross_margin_note": "33.19% vs 33.68% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     12.42,
+     -201
+    ],
+    "EBIT margin": [
+     12.42,
+     -229
+    ]
+   },
+   "margins_note": "operating margin 12.42% (33.19 - 18.77 - 2.00, the operating income line), -201bp against the prior year's adjusted 14.43%, as the earnings 8-K's infographic publishes it ('-201 basis points vs. LY Adjusted Operating Margin'; GAAP -229bp against 14.71%); EBIT margin GAAP: pre-tax + interest (10.77 + 1.65 = 12.42% vs 13.15 + 1.56 = 14.71%)",
+   "inventory_pct": -6.6,
+   "inventory_gap_pp": -2.2,
+   "inventory_note": "merchandise inventory $18,224M vs $19,522M a year earlier (-6.6%), against net sales -4.4%",
+   "eps_q": 3.06,
+   "eps_q_prior": 3.67,
+   "diluted_shares_m": 572.0,
+   "cash_b": 3.501,
+   "stores": 1746,
+   "sq_ft_m": 194.9,
+   "sq_ft_pct": null,
+   "dividend_q": 1.1,
+   "outlook_short": "We are pleased with our start to spring, driven by strong execution and enhanced customer service.",
+   "next_print": "Q2 FY24 print (mid-August)",
+   "cash_return_text": "repurchases $0.92B year to date (cash flow statement)",
+   "eps_note": "diluted EPS $3.06 against an adjusted $3.67 a year earlier, as the company published them (GAAP $3.77 a year earlier, which included a gain associated with the 2022 sale of the Canadian retail business); sales -4.4%, derived (the release gives no percentage)"
+  },
+  {
+   "quarter": "Q2 FY24",
+   "fy": 2024,
+   "q": 2,
+   "published": "2024-08-20",
+   "source": "L149",
+   "extra_sources": [
+    "L150"
+   ],
+   "release": "Aug 20",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2024-08-02",
+   "sales_b": 23.586,
+   "sales_pct": -5.5,
+   "comps_pct": -5.1,
+   "gross_margin": 33.47,
+   "gross_margin_bp": -19,
+   "gross_margin_note": "33.47% vs 33.66% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     14.43,
+     -114
+    ],
+    "EBIT margin": [
+     14.61,
+     -96
+    ]
+   },
+   "margins_note": "operating margin adjusted, 14.43% against 15.57% (-114bp), as the earnings 8-K's infographic and reconciliation publish them ('14.4% ADJ. OPERATING MARGIN 1 -114 basis points vs. LY'), excluding the $43 million gain on the Canadian retail business transaction (GAAP 14.61%, -96bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (13.27 + 1.34 = 14.61% vs 14.21 + 1.36 = 15.57%)",
+   "inventory_pct": -3.3,
+   "inventory_gap_pp": 2.2,
+   "inventory_note": "merchandise inventory $16,841M vs $17,422M a year earlier (-3.3%), against net sales -5.5%",
+   "eps_q": 4.1,
+   "eps_q_prior": 4.56,
+   "diluted_shares_m": 570.0,
+   "cash_b": 4.69,
+   "stores": 1746,
+   "sq_ft_m": 194.9,
+   "sq_ft_pct": null,
+   "dividend_q": 1.15,
+   "outlook_short": "The company delivered strong operating performance and improved customer service despite a challenging macroeconomic backdrop, especially for the homeowner.",
+   "next_print": "Q3 FY24 print (mid-November)",
+   "cash_return_text": "repurchases $1.93B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $4.10 against $4.56, as the company published them (GAAP $4.17); sales -5.5%, derived (the release gives no percentage)",
+   "one_off_note": "In the second quarter of fiscal 2024, the Company recognized pre-tax income of $43 million consisting of a realized gain on the contingent consideration associated with the fiscal 2022 sale of the Canadian retail business"
+  },
+  {
+   "quarter": "Q3 FY24",
+   "fy": 2024,
+   "q": 3,
+   "published": "2024-11-19",
+   "source": "L151",
+   "extra_sources": [
+    "L152"
+   ],
+   "release": "Nov 19",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2024-11-01",
+   "sales_b": 20.17,
+   "sales_pct": -1.5,
+   "comps_pct": -1.1,
+   "gross_margin": 33.69,
+   "gross_margin_bp": 3,
+   "gross_margin_note": "33.69% vs 33.66% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     12.31,
+     -86
+    ],
+    "EBIT margin": [
+     12.57,
+     -60
+    ]
+   },
+   "margins_note": "operating margin adjusted, 12.31% against 13.17% (-86bp), as the earnings 8-K's infographic and reconciliation publish them ('12.3% ADJ. OPERATING MARGIN 1 -86 basis points vs. LY'), excluding the $54 million gain on the Canadian retail business transaction (GAAP 12.57%, -60bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (11.00 + 1.57 = 12.57% vs 11.49 + 1.68 = 13.17%)",
+   "inventory_pct": 0.2,
+   "inventory_gap_pp": 1.7,
+   "inventory_note": "merchandise inventory $17,566M vs $17,530M a year earlier (+0.2%), against net sales -1.5%",
+   "eps_q": 2.89,
+   "eps_q_prior": 3.06,
+   "diluted_shares_m": 566.0,
+   "cash_b": 3.606,
+   "stores": 1747,
+   "sq_ft_m": 195.0,
+   "sq_ft_pct": null,
+   "dividend_q": 1.15,
+   "outlook_short": "Our results this quarter were modestly better-than-expected, even excluding storm-related activity, driven by high-single-digit positive comps in Pro, strong online sales and smaller-ticket outdoor DIY projects.",
+   "next_print": "Q4 FY24 print (late February)",
+   "cash_return_text": "repurchases $2.68B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $2.89 against $3.06, as the company published them (GAAP $2.99); sales -1.5%, derived (the release gives no percentage)",
+   "one_off_note": "In the third quarter of fiscal 2024, the Company recognized pre-tax income of $54 million consisting of a realized gain on the contingent consideration associated with the fiscal 2022 sale of the Canadian retail business"
+  },
+  {
+   "quarter": "Q4 FY24",
+   "fy": 2024,
+   "q": 4,
+   "published": "2025-02-26",
+   "source": "L153",
+   "extra_sources": [
+    "L154"
+   ],
+   "release": "Feb 26",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2025-01-31",
+   "sales_b": 18.553,
+   "sales_pct": -0.3,
+   "comps_pct": 0.2,
+   "gross_margin": 32.86,
+   "gross_margin_bp": 46,
+   "gross_margin_note": "32.86% vs 32.40% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     9.43,
+     36
+    ],
+    "EBIT margin": [
+     9.87,
+     80
+    ]
+   },
+   "margins_note": "operating margin adjusted, 9.43% against 9.07% (+36bp), as the earnings 8-K's infographic and reconciliation publish them ('9.4% ADJ. OPERATING MARGIN 1 +36 basis points vs. LY'), excluding the $80 million gain on the Canadian retail business transaction (GAAP 9.87%, +80bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (8.10 + 1.77 = 9.87% vs 7.20 + 1.87 = 9.07%)",
+   "inventory_pct": 3.0,
+   "inventory_gap_pp": 3.3,
+   "inventory_note": "merchandise inventory $17,409M vs $16,894M a year earlier (+3.0%), against net sales -0.3%",
+   "eps_q": 1.93,
+   "eps_q_prior": 1.77,
+   "diluted_shares_m": 563.0,
+   "cash_b": 2.133,
+   "stores": 1748,
+   "sq_ft_m": 195.0,
+   "sq_ft_pct": null,
+   "dividend_q": 1.15,
+   "outlook_short": "Our results this quarter were once again better-than-expected, as we continue to gain traction with our Total Home strategic initiatives.",
+   "next_print": "Q1 FY25 print (mid-May)",
+   "cash_return_text": "repurchases $4.05B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $1.93 against $1.77, as the company published them (GAAP $1.99); sales -0.3%, derived (the release gives no percentage)",
+   "one_off_note": "In the fourth quarter of fiscal 2024, the Company recognized pre-tax income of $80 million consisting of a realized gain on the contingent consideration associated with the fiscal 2022 sale of the Canadian retail business",
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 11.99,
+    "revenue_usd_b": 83.674,
+    "diluted_shares_m": 568.0,
+    "normalization_note": "FY24 = the company's adjusted diluted EPS $11.99, excluding $177 million of gains on the Canadian retail business transaction, as the Q4 FY24 8-K's reconciliation (ex.99.2) publishes it (GAAP $12.23)",
+    "margins": {
+     "operating margin": 12.3,
+     "EBIT margin": 12.51
+    },
+    "margins_note": "FY24 adjusted operating margin 12.30% as the Q4 FY24 8-K's reconciliation publishes it (GAAP 33.32 - 18.74 - 2.07 = 12.51%); EBIT margin GAAP, no adjusted figure published: 10.94 + 1.57 = 12.51% (percent-of-sales column)",
+    "gross_margin": 33.32,
+    "sales_growth": -3.1,
+    "stores": 1748,
+    "comps_pct": -2.7,
+    "comps_note": "fiscal 2024 comparable sales -2.7%, as the earnings 8-K's infographic (ex.99.2) publishes them in its FY 2024 results",
+    "net_interest_b": 1.313,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.24,
+    "tax_note": "FY24 effective rate, GAAP: income tax provision $2,196M / pre-tax earnings $9,153M",
+    "fcf_b": 7.7
+   }
+  },
+  {
+   "quarter": "Q1 FY25",
+   "fy": 2025,
+   "q": 1,
+   "published": "2025-05-21",
+   "source": "L156",
+   "release": "May 21",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:47 ET)",
+   "period_end": "2025-05-02",
+   "sales_b": 20.93,
+   "sales_pct": -2.0,
+   "comps_pct": -1.7,
+   "gross_margin": 33.38,
+   "gross_margin_bp": 19,
+   "gross_margin_note": "33.38% vs 33.19% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     11.92,
+     -50
+    ],
+    "EBIT margin": [
+     11.92,
+     -50
+    ]
+   },
+   "margins_note": "derived from the percent-of-sales column: operating margin = gross margin - SG&A - depreciation and amortization (33.38 - 19.33 - 2.13 = 11.92% vs 12.42%, the operating income line); EBIT margin = pre-tax + interest (10.31 + 1.61 = 11.92% vs 10.77 + 1.65 = 12.42%)",
+   "inventory_pct": 0.6,
+   "inventory_gap_pp": 2.6,
+   "inventory_note": "merchandise inventory $18,335M vs $18,224M a year earlier (+0.6%), against net sales -2.0%",
+   "eps_q": 2.92,
+   "eps_q_prior": 3.06,
+   "diluted_shares_m": 560.0,
+   "cash_b": 3.422,
+   "stores": 1750,
+   "sq_ft_m": 195.3,
+   "sq_ft_pct": null,
+   "dividend_q": 1.15,
+   "outlook_short": "Despite near-term uncertainty and housing market headwinds, our team’s unwavering focus on exceptional customer service has elevated satisfaction scores.",
+   "next_print": "Q2 FY25 print (mid-August)",
+   "cash_return_text": "repurchases $0.11B year to date (cash flow statement)",
+   "eps_note": "sales -2.0%, derived (the release gives no percentage); no adjustment in either quarter"
+  },
+  {
+   "quarter": "Q2 FY25",
+   "fy": 2025,
+   "q": 2,
+   "published": "2025-08-20",
+   "source": "L157",
+   "extra_sources": [
+    "L158"
+   ],
+   "release": "Aug 20",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 06:03 ET)",
+   "period_end": "2025-08-01",
+   "sales_b": 23.959,
+   "sales_pct": 1.6,
+   "comps_pct": 1.1,
+   "gross_margin": 33.84,
+   "gross_margin_bp": 37,
+   "gross_margin_note": "adjusted 33.84%, +37bp, as the earnings 8-K's infographic and reconciliation publish it, excluding the Artisan Design Group acquisition costs (GAAP 33.81% vs 33.47%, +34bp, the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     14.66,
+     23
+    ],
+    "EBIT margin": [
+     14.48,
+     -13
+    ]
+   },
+   "margins_note": "operating margin adjusted, 14.66% against the prior year's adjusted 14.43% (+23bp), as the earnings 8-K's infographic and reconciliation publish them, excluding the Artisan Design Group acquisition costs (GAAP 14.48%, -13bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (13.17 + 1.31 = 14.48% vs 13.27 + 1.34 = 14.61%)",
+   "inventory_pct": -3.0,
+   "inventory_gap_pp": -4.6,
+   "inventory_note": "merchandise inventory $16,342M vs $16,841M a year earlier (-3.0%), against net sales +1.6%",
+   "eps_q": 4.33,
+   "eps_q_prior": 4.1,
+   "diluted_shares_m": 560.0,
+   "cash_b": 5.256,
+   "stores": 1753,
+   "sq_ft_m": 195.5,
+   "sq_ft_pct": null,
+   "dividend_q": 1.15,
+   "dividend_note": "the release's 'Cash dividends per share' row reads 1.15 (and 3.40 for the six months); its 'Cash dividends declared' are $673 million; the 10-Q of 2025-08-28 states 'Cash dividends declared, $1.20 per share' for the quarter",
+   "outlook_short": "This quarter, the company delivered positive comp sales driven by solid performance in both Pro and DIY.",
+   "next_print": "Q3 FY25 print (mid-November)",
+   "cash_return_text": "repurchases $0.11B and the acquisition of ADG $1.31B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $4.33 against an adjusted $4.10, as the company published them (GAAP $4.27 and $4.17); sales +1.6%, derived (the release gives no percentage), including ADG from June",
+   "one_off_note": "In the second quarter of fiscal 2025, the Company recognized pre-tax expenses of $43 million consisting of transaction costs and purchase accounting adjustments related to the acquisition of Artisan Design Group"
+  },
+  {
+   "quarter": "Q3 FY25",
+   "fy": 2025,
+   "q": 3,
+   "published": "2025-11-19",
+   "source": "L160",
+   "extra_sources": [
+    "L161"
+   ],
+   "release": "Nov 19",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2025-10-31",
+   "sales_b": 20.813,
+   "sales_pct": 3.2,
+   "comps_pct": 0.4,
+   "gross_margin": 34.19,
+   "gross_margin_bp": 50,
+   "gross_margin_note": "34.19% vs 33.69% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     12.41,
+     10
+    ],
+    "EBIT margin": [
+     11.92,
+     -65
+    ]
+   },
+   "margins_note": "operating margin adjusted, 12.41% against the prior year's adjusted 12.31% (+10bp), as the earnings 8-K's infographic and reconciliation publish them (read from the exhibit's images), excluding $101 million of ADG and FBM acquisition costs within operating income (GAAP 11.92%, -65bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (10.23 + 1.69 = 11.92% vs 11.00 + 1.57 = 12.57%)",
+   "inventory_pct": -2.2,
+   "inventory_gap_pp": -5.4,
+   "inventory_note": "merchandise inventory $17,183M vs $17,566M a year earlier (-2.2%), against net sales +3.2%",
+   "eps_q": 3.06,
+   "eps_q_prior": 2.89,
+   "diluted_shares_m": 560.0,
+   "cash_b": 1.033,
+   "stores": 1756,
+   "sq_ft_m": 195.8,
+   "sq_ft_pct": null,
+   "dividend_q": 1.2,
+   "outlook_short": "The company delivered another quarter of positive comp sales, and we’re pleased to start November with positive comps as well, despite headwinds related to hurricane activity in the prior year.",
+   "next_print": "Q4 FY25 print (late February)",
+   "cash_return_text": "repurchases $0.21B and acquisitions $10.06B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $3.06 against an adjusted $2.89, as the company published them (GAAP $2.88 and $2.99); sales +3.2%, derived (the release gives no percentage), including FBM from October 9",
+   "one_off_note": "In the third quarter of fiscal 2025, the Company recognized pre-tax expenses of $129 million consisting of transaction costs and intangible asset amortization related to the acquisition of Artisan Design Group and Foundation Building Materials"
+  },
+  {
+   "quarter": "Q4 FY25",
+   "fy": 2025,
+   "q": 4,
+   "published": "2026-02-25",
+   "source": "L162",
+   "extra_sources": [
+    "L163"
+   ],
+   "release": "Feb 25",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:44 ET)",
+   "period_end": "2026-01-30",
+   "sales_b": 20.584,
+   "sales_pct": 10.9,
+   "comps_pct": 1.3,
+   "gross_margin": 32.68,
+   "gross_margin_bp": -18,
+   "gross_margin_note": "adjusted 32.68%, -18bp, as the earnings 8-K's infographic and reconciliation publish it, excluding the acquisition costs (GAAP 32.46% vs 32.86%, -40bp, the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     9.02,
+     -41
+    ],
+    "EBIT margin": [
+     8.3,
+     -157
+    ]
+   },
+   "margins_note": "operating margin adjusted, 9.02% against the prior year's adjusted 9.43% (-41bp), as the earnings 8-K's infographic and reconciliation publish them, excluding the ADG and FBM acquisition costs (GAAP 8.30%, -157bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (6.34 + 1.96 = 8.30% vs 8.10 + 1.77 = 9.87%)",
+   "inventory_pct": -0.6,
+   "inventory_gap_pp": -11.5,
+   "inventory_note": "merchandise inventory $17,300M vs $17,409M a year earlier (-0.6%), against net sales +10.9%",
+   "eps_q": 1.98,
+   "eps_q_prior": 1.93,
+   "diluted_shares_m": 561.0,
+   "cash_b": 1.352,
+   "stores": 1759,
+   "sq_ft_m": 196.0,
+   "sq_ft_pct": null,
+   "dividend_q": 1.2,
+   "outlook_short": "We delivered strong results this quarter, as our Total Home strategy is resonating with both our Pro and DIY customers, which was evident during a great holiday season.",
+   "next_print": "Q1 FY26 print (mid-May)",
+   "cash_return_text": "repurchases $0.21B and acquisitions $10.09B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $1.98 against an adjusted $1.93, as the company published them (GAAP $1.78 and $1.99); sales +10.9%, derived (the release gives no percentage), including FBM and ADG",
+   "stores_note": "'approximately 196 million square feet of retail selling space'",
+   "one_off_note": "In the fourth quarter of fiscal 2025, the Company recognized pre-tax expenses of $149 million consisting of transaction costs and intangible asset amortization related to the acquisitions of Artisan Design Group and Foundation Building Materials",
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 12.28,
+    "revenue_usd_b": 86.286,
+    "diluted_shares_m": 560.0,
+    "normalization_note": "FY25 = the company's adjusted diluted EPS $12.28, excluding the ADG and FBM acquisition costs, as the Q4 FY25 8-K's reconciliation (ex.99.2) publishes it (GAAP $11.85)",
+    "margins": {
+     "operating margin": 12.11,
+     "EBIT margin": 11.77
+    },
+    "margins_note": "FY25 adjusted operating margin 12.11% as the Q4 FY25 8-K's reconciliation publishes it (GAAP 33.48 - 19.46 - 2.25 = 11.77%); EBIT margin GAAP, no adjusted figure published: 10.14 + 1.63 = 11.77% (percent-of-sales column)",
+    "gross_margin": 33.54,
+    "sales_growth": 3.1,
+    "stores": 1759,
+    "comps_pct": 0.2,
+    "comps_note": "fiscal 2025 comparable sales +0.2%, as the earnings 8-K's infographic (ex.99.2) publishes them in its FY 2025 results; the gross margin is the published adjusted 33.54% (GAAP 33.48%)",
+    "net_interest_b": 1.406,
+    "store_opening_b": 0.0,
+    "tax_rate": 0.239,
+    "tax_note": "FY25 effective rate, GAAP: income tax provision $2,093M / pre-tax earnings $8,747M",
+    "fcf_b": 7.65
+   }
+  },
+  {
+   "quarter": "Q1 FY26",
+   "fy": 2026,
+   "q": 1,
+   "published": "2026-05-20",
+   "source": "L165",
+   "extra_sources": [
+    "L166"
+   ],
+   "release": "May 20",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2026-05-01",
+   "sales_b": 23.078,
+   "sales_pct": 10.3,
+   "comps_pct": 0.6,
+   "gross_margin": 32.68,
+   "gross_margin_bp": -70,
+   "gross_margin_note": "32.68% vs 33.38% of sales a year earlier (the release's percent-of-sales column)",
+   "margins": {
+    "operating margin": [
+     11.49,
+     -43
+    ],
+    "EBIT margin": [
+     11.07,
+     -85
+    ]
+   },
+   "margins_note": "operating margin adjusted, 11.49% against 11.92% (-43bp), as the earnings 8-K's infographic and reconciliation publish them, excluding $96 million of ADG and FBM intangible asset amortization (GAAP 11.07%, -85bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (9.34 + 1.73 = 11.07% vs 10.31 + 1.61 = 11.92%)",
+   "inventory_pct": 0.6,
+   "inventory_gap_pp": -9.7,
+   "inventory_note": "merchandise inventory $18,447M vs $18,335M a year earlier (+0.6%), against net sales +10.3%",
+   "eps_q": 3.03,
+   "eps_q_prior": 2.92,
+   "diluted_shares_m": 560.0,
+   "cash_b": 1.244,
+   "stores": 1759,
+   "sq_ft_m": 196.0,
+   "sq_ft_pct": null,
+   "dividend_q": 1.2,
+   "outlook_short": "Strong spring execution and continued momentum in Pro, Appliances, Online, and Home Services supported a solid start to the year as we delivered our fourth consecutive quarter of positive comp sales.",
+   "next_print": "Q2 FY26 print (mid-August)",
+   "cash_return_text": "repurchases $0.36B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $3.03 against $2.92, as the company published them (GAAP $2.90); sales +10.3%, derived (the release gives no percentage), including FBM and ADG",
+   "one_off_note": "In the first quarter of fiscal 2026, the Company recognized pre-tax expenses of $96 million consisting of intangible asset amortization related to the acquisitions of Artisan Design Group and Foundation Building Materials"
+  },
+  {
+   "quarter": "Q2 FY26",
+   "fy": 2026,
+   "q": 2,
+   "published": "2026-08-19",
+   "source": "L167",
+   "extra_sources": [
+    "L168"
+   ],
+   "release": "Aug 19",
+   "release_time": "'For 6:00 a.m. ET Release', before the open (8-K accepted 08:45 ET)",
+   "period_end": "2026-07-31",
+   "sales_b": 25.956,
+   "sales_pct": 8.3,
+   "comps_pct": 0.2,
+   "gross_margin": 33.04,
+   "gross_margin_bp": -80,
+   "gross_margin_note": "33.04% (the release's percent-of-sales column), -80bp against the prior year's adjusted 33.84%, as the earnings 8-K's infographic publishes it ('-80 basis points vs. LY ADJ. GROSS MARGIN'; GAAP -77bp against 33.81%)",
+   "margins": {
+    "operating margin": [
+     14.04,
+     -62
+    ],
+    "EBIT margin": [
+     13.67,
+     -81
+    ]
+   },
+   "margins_note": "operating margin adjusted, 14.04% against the prior year's adjusted 14.66% (-62bp), as the earnings 8-K's infographic and reconciliation publish them, excluding $96 million of ADG and FBM acquisition costs (GAAP 13.67%, -81bp); EBIT margin GAAP, no adjusted figure published: pre-tax + interest (12.23 + 1.44 = 13.67% vs 13.17 + 1.31 = 14.48%)",
+   "inventory_pct": 8.5,
+   "inventory_gap_pp": 0.2,
+   "inventory_note": "merchandise inventory $17,737M vs $16,342M a year earlier (+8.5%), against net sales +8.3%",
+   "eps_q": 4.4,
+   "eps_q_prior": 4.33,
+   "diluted_shares_m": 560.0,
+   "cash_b": 3.407,
+   "stores": 1761,
+   "sq_ft_m": 196.0,
+   "sq_ft_pct": null,
+   "dividend_q": 1.25,
+   "outlook_short": "Sustained growth in Pro, Online and Home Services led to our fifth consecutive quarter of positive comp sales, despite pressure in discretionary DIY spending.",
+   "next_print": "Q3 FY26 print (mid-November)",
+   "cash_return_text": "repurchases $0.37B year to date (cash flow statement)",
+   "eps_note": "adjusted diluted EPS $4.40 against an adjusted $4.33, as the company published them (GAAP $4.27 and $4.27); 'Both diluted EPS and adjusted diluted EPS1 include an $0.11 benefit from IEEPA tariff refunds.'; sales +8.3%, derived (the release gives no percentage), including FBM and ADG",
+   "one_off_note": "the company recognized $96 million in pre-tax expenses associated with the acquisitions of Foundation Building Materials (FBM) and Artisan Design Group (ADG)"
   }
  ],
  "guides": [
@@ -9626,6 +10930,304 @@
    "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) of approximately 13.3%",
    "op_margin_guide_note": "adjusted, excluding the gain associated with the 2022 sale of the Canadian retail business, no GAAP figure; interest expense of approximately $1.4 billion has no field",
    "tax_rate_guide": 25.0
+  },
+  {
+   "fy": 2024,
+   "published": "2024-02-27",
+   "source": "L144",
+   "doc": "Q4 FY23 release",
+   "eps_guide": [
+    12.0,
+    12.3
+   ],
+   "rev_guide_usd_b": [
+    84,
+    85
+   ],
+   "comps_guide": [
+    -3,
+    -2
+   ],
+   "op_margin_guide_pct": [
+    12.6,
+    12.7
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating income as a percentage of sales (operating margin) of 12.6% to 12.7%",
+   "op_margin_guide_note": "GAAP; interest expense of approximately $1.4 billion and capital expenditures of approximately $2 billion have no field",
+   "tax_rate_guide": 25.0
+  },
+  {
+   "fy": 2024,
+   "published": "2024-05-21",
+   "source": "L147",
+   "doc": "Q1 FY24 release",
+   "eps_guide": [
+    12.0,
+    12.3
+   ],
+   "rev_guide_usd_b": [
+    84,
+    85
+   ],
+   "comps_guide": [
+    -3,
+    -2
+   ],
+   "op_margin_guide_pct": [
+    12.6,
+    12.7
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating income as a percentage of sales (operating margin) of 12.6% to 12.7%",
+   "op_margin_guide_note": "affirmed with the same figures",
+   "tax_rate_guide": 25.0
+  },
+  {
+   "fy": 2024,
+   "published": "2024-08-20",
+   "source": "L149",
+   "doc": "Q2 FY24 release",
+   "eps_guide": [
+    11.7,
+    11.9
+   ],
+   "eps_guide_note": "lowered from $12.00-12.30; adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published)",
+   "rev_guide_usd_b": [
+    82.7,
+    83.2
+   ],
+   "comps_guide": [
+    -4.0,
+    -3.5
+   ],
+   "op_margin_guide_pct": [
+    12.4,
+    12.5
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) of 12.4 to 12.5%",
+   "op_margin_guide_note": "adjusted, excluding the gain associated with the 2022 sale of the Canadian retail business recorded in the second quarter, no GAAP figure; net interest expense of approximately $1.4 billion has no field",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2024,
+   "published": "2024-11-19",
+   "source": "L151",
+   "doc": "Q3 FY24 release",
+   "eps_guide": [
+    11.8,
+    11.9
+   ],
+   "eps_guide_note": "previously $11.70-11.90; adjusted diluted EPS as the company published it, excluding the gains associated with the 2022 sale of the Canadian retail business (no GAAP figure published)",
+   "rev_guide_usd_b": [
+    83.0,
+    83.5
+   ],
+   "comps_guide": [
+    -3.5,
+    -3.0
+   ],
+   "op_margin_guide_pct": [
+    12.3,
+    12.4
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) of 12.3 to 12.4%",
+   "op_margin_guide_note": "adjusted, excluding the gains associated with the 2022 sale of the Canadian retail business recorded in the second and third quarter, no GAAP figure; net interest expense of approximately $1.3 billion has no field",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2025,
+   "published": "2025-02-26",
+   "source": "L153",
+   "doc": "Q4 FY24 release",
+   "eps_guide": [
+    12.15,
+    12.4
+   ],
+   "rev_guide_usd_b": [
+    83.5,
+    84.5
+   ],
+   "comps_guide": [
+    0,
+    1
+   ],
+   "op_margin_guide_pct": [
+    12.3,
+    12.4
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating income as a percentage of sales (operating margin) of 12.3% to 12.4%",
+   "op_margin_guide_note": "GAAP; net interest expense, depreciation and amortization and capital expenditures have no field",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2025,
+   "published": "2025-05-21",
+   "source": "L156",
+   "doc": "Q1 FY25 release",
+   "eps_guide": [
+    12.15,
+    12.4
+   ],
+   "rev_guide_usd_b": [
+    83.5,
+    84.5
+   ],
+   "comps_guide": [
+    0,
+    1
+   ],
+   "op_margin_guide_pct": [
+    12.3,
+    12.4
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Operating income as a percentage of sales (operating margin) of 12.3% to 12.4%",
+   "op_margin_guide_note": "affirmed with the same figures",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2025,
+   "published": "2025-08-20",
+   "source": "L157",
+   "doc": "Q2 FY25 release",
+   "eps_guide": [
+    12.2,
+    12.45
+   ],
+   "eps_guide_note": "adjusted diluted EPS, excluding the transaction costs, purchase accounting adjustments and intangible asset amortization of the ADG acquisition (GAAP $12.10-12.35, previously $12.15-12.40); the outlook now includes ADG",
+   "rev_guide_usd_b": [
+    84.5,
+    85.5
+   ],
+   "rev_guide_note": "previously $83.5-84.5 billion; 'updating its outlook for the operating results of full year 2025 to reflect the inclusion of ADG'",
+   "comps_guide": [
+    0,
+    1
+   ],
+   "op_margin_guide_pct": [
+    12.2,
+    12.3
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) of 12.2% to 12.3%",
+   "op_margin_guide_note": "adjusted, excluding the ADG acquisition costs (GAAP 12.1% to 12.2%, previously 12.3% to 12.4%)",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2025,
+   "published": "2025-11-19",
+   "source": "L160",
+   "doc": "Q3 FY25 release",
+   "eps_guide": [
+    12.25,
+    12.25
+   ],
+   "eps_guide_note": "previously $12.20-12.45; adjusted diluted EPS, excluding the transaction costs, purchase accounting adjustments and intangible asset amortization of the FBM and ADG acquisitions (no GAAP figure published); the outlook now includes FBM",
+   "rev_guide_usd_b": [
+    86.0,
+    86.0
+   ],
+   "rev_guide_note": "previously $84.5-85.5 billion; 'The updated outlook also includes expectations for FBM.'",
+   "comps_guide": [
+    0,
+    0
+   ],
+   "op_margin_guide_pct": [
+    12.1,
+    12.1
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted operating income as a percentage of sales (adjusted operating margin) of 12.1%",
+   "op_margin_guide_note": "adjusted, excluding the FBM and ADG acquisition costs, no GAAP figure (previously 12.2% to 12.3%); net interest expense of approximately $1.4 billion has no field",
+   "tax_rate_guide": 24.0
+  },
+  {
+   "fy": 2026,
+   "published": "2026-02-25",
+   "source": "L162",
+   "doc": "Q4 FY25 release",
+   "eps_guide": [
+    12.25,
+    12.75
+   ],
+   "eps_guide_note": "adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP $11.75-12.25)",
+   "rev_guide": [
+    7,
+    9
+   ],
+   "rev_guide_note": "'Total sales of $92.0 to $94.0 billion or an increase of approximately 7% to 9% compared to prior year', the growth as the company states it",
+   "comps_guide": [
+    0,
+    2
+   ],
+   "op_margin_guide_pct": [
+    11.6,
+    11.8
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted1 operating income as a percentage of sales (adjusted operating margin) of 11.6% to 11.8%",
+   "op_margin_guide_note": "adjusted, excluding the FBM and ADG acquisition costs (GAAP 11.2% to 11.4%); net interest expense of approximately $1.6 billion has no field",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2026,
+   "published": "2026-05-20",
+   "source": "L165",
+   "doc": "Q1 FY26 release",
+   "eps_guide": [
+    12.25,
+    12.75
+   ],
+   "eps_guide_note": "adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP $11.75-12.25)",
+   "rev_guide": [
+    7,
+    9
+   ],
+   "rev_guide_note": "'Total sales of $92.0 to 94.0 billion or an increase of approximately 7% to 9% compared to prior year', the growth as the company states it",
+   "comps_guide": [
+    0,
+    2
+   ],
+   "op_margin_guide_pct": [
+    11.6,
+    11.8
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted1 operating income as a percentage of sales (adjusted operating margin) of 11.6% to 11.8%",
+   "op_margin_guide_note": "affirmed with the same figures",
+   "tax_rate_guide": 24.5
+  },
+  {
+   "fy": 2026,
+   "published": "2026-08-19",
+   "source": "L167",
+   "doc": "Q2 FY26 release",
+   "eps_guide": [
+    12.25,
+    12.25
+   ],
+   "eps_guide_note": "previously $12.25-12.75; adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.'",
+   "rev_guide_usd_b": [
+    92.0,
+    92.0
+   ],
+   "rev_guide_note": "previously $92.0 to 94.0 billion; no percentage stated",
+   "comps_guide": [
+    0,
+    0
+   ],
+   "op_margin_guide_pct": [
+    11.6,
+    11.6
+   ],
+   "margin_def": "operating margin",
+   "op_margin_guide_quote": "Adjusted1 operating income as a percentage of sales (adjusted operating margin) of 11.6%",
+   "op_margin_guide_note": "adjusted, excluding the FBM and ADG acquisition costs (GAAP 11.2%, previously 11.2% to 11.4%); includes the tariff refunds recognized in the second quarter",
+   "tax_rate_guide": 24.5
   }
  ],
  "dividends": [
@@ -9730,6 +11332,24 @@
    "source": "L141",
    "quarterly": 1.1,
    "note": "$1.10 quarterly, first stated in a filing as the Q2 2023 cash dividends per share (Q2 2023 release)"
+  },
+  {
+   "published": "2024-08-20",
+   "source": "L149",
+   "quarterly": 1.15,
+   "note": "$1.15 quarterly, first stated in a filing as the Q2 2024 cash dividends per share (Q2 2024 release)"
+  },
+  {
+   "published": "2025-08-29",
+   "source": "L159",
+   "quarterly": 1.2,
+   "note": "$1.20 quarterly, first stated in a filing as 'Cash dividends declared, $1.20 per share' for the second quarter of 2025 (Q2 2025 10-Q; the Q2 2025 release's per-share row reads 1.15)"
+  },
+  {
+   "published": "2026-08-19",
+   "source": "L167",
+   "quarterly": 1.25,
+   "note": "$1.25 quarterly, first stated in a filing as the Q2 2026 cash dividends per share (Q2 2026 release)"
   }
  ],
  "events": [
@@ -9817,6 +11437,39 @@
    "kind": "ecommerce_company_acknowledged",
    "doc": "FY2022 10-K",
    "risk_quote": "We face growing competition from online and omnichannel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. Further, online and omnichannel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times, including same-day and next-day fulfillment, low-price or free shipping, and convenient pick-up options, including curbside pick-up, in-store pick-up, and touchless lockers, and we must make investments to keep up with our customers’ evolving shopping preferences.",
+   "risk_short": "'growing competition from online and omnichannel retailers'",
+   "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store at the customer service desk, curbside, or from touchless lockers, or have their purchase delivered to their home or business.'",
+   "offering_short": "Lowes.com orders picked up in store, curbside or from lockers, or delivered"
+  },
+  {
+   "id": "L146",
+   "published": "2024-03-26",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2023 10-K",
+   "risk_quote": "We face growing competition from online and omnichannel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. We will be at a competitive disadvantage if, over time, our competitors are more effective than us in their utilization and integration of rapidly evolving technologies, including artificial intelligence and machine learning technologies. Further, online and omnichannel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times, including same-day and next-day fulfillment, low-price or free shipping, and convenient pick-up options, and we must make investments to keep up with our customers’ evolving shopping preferences.",
+   "risk_short": "'growing competition from online and omnichannel retailers'",
+   "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store at the customer service desk, curbside, or from touchless lockers, or have their purchase delivered to their home or business.'",
+   "offering_short": "Lowes.com orders picked up in store, curbside or from lockers, or delivered"
+  },
+  {
+   "id": "L155",
+   "published": "2025-03-25",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2024 10-K",
+   "risk_quote": "We face growing competition from online and omnichannel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. We will be at a competitive disadvantage if, over time, our competitors are more effective than us in their utilization and integration of rapidly evolving technologies, including AI and machine learning technologies. Further, online and omnichannel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times, including same-day and next-day fulfillment, low-price or free shipping, and convenient pick-up options, and we must make investments to keep up with our customers’ evolving shopping preferences.",
+   "risk_short": "'growing competition from online and omnichannel retailers'",
+   "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store at the customer service desk, curbside, or from touchless lockers, or have their purchase delivered to their home or business.'",
+   "offering_short": "Lowes.com orders picked up in store, curbside or from lockers, or delivered"
+  },
+  {
+   "id": "L164",
+   "published": "2026-03-24",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2025 10-K",
+   "risk_quote": "We face growing competition from online and omnichannel retailers who have a similar product or service offering. Customers are increasingly able to quickly comparison shop and determine real-time product availability and price using digital tools. We will be at a competitive disadvantage if, over time, our competitors are more effective than us in their utilization and integration of rapidly evolving technologies, including AI and machine learning technologies. Further, online and omnichannel retailers continue to focus on delivery services, as customers are increasingly seeking faster, guaranteed delivery times, including same-day and next-day fulfillment, low-price or free shipping, and convenient pick-up options, and we must make investments to keep up with our customers’ evolving shopping preferences.",
    "risk_short": "'growing competition from online and omnichannel retailers'",
    "offering": "it sells online itself: 'For purchases made on Lowes.com, customers may pick up their purchase in-store at the customer service desk, curbside, or from touchless lockers, or have their purchase delivered to their home or business.'",
    "offering_short": "Lowes.com orders picked up in store, curbside or from lockers, or delivered"

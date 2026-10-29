@@ -1697,6 +1697,161 @@ Judgement calls that could carry hindsight:
 - taking FY22's adjusted EPS and margin from the reconciliation exhibit of the Q4 FY22 8-K;
 - showing the chief executive's "Looking ahead to 2021" sentence as the Q4 FY20 release's words (text only).
 
+### LOW 2024-2026: guides on both bases, the ADG and FBM acquisitions, a year guided in growth
+
+```bash
+python3 retro/build_low.py --weekly 2024-01-01 2024-12-29                   # 52 dates, 2024-01-05 .. 2024-12-27
+python3 retro/build_low.py --weekly 2024-12-30 2025-12-28                   # 52 dates, 2025-01-03 .. 2025-12-26
+python3 retro/build_low.py --weekly 2025-12-29 2026-10-23                   # 43 dates, 2026-01-02 .. 2026-10-23
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K and earnings release from 2023-11-22 to 2026-10-23 was read directly, with the 10-Qs
+searched in full for forward-looking statements. Independent reader agents read the same filings again in four groups,
+each to be re-read by a checker agent. The two groups finished before this commit (the FY2023 close to the FY2024 10-K)
+matched every number; they changed two wordings (the buybacks as paid, the published FY24 adjusted margin changes). Any
+change from the other groups or the checkers is committed separately, before any date is scored. 313 strings were
+checked with `verbatim.py`, and 798 structured checks read each print's numbers back from its release's tables, each
+vintage's from its 10-K and each source's date from EDGAR's acceptance time. Thresholds and signals are unchanged. The
+encodings below were decided before any 2024-2026 date was built; no outcome was computed until the build was committed.
+
+- **Three 10-K vintages.** FY2023 (accepted 2024-03-25 at 16:18 ET, dated 2024-03-26), FY2024 (2025-03-24 at 16:33 ET,
+  dated 2025-03-25) and FY2025 (2026-03-23 at 16:52 ET, dated 2026-03-24). Each takes its three income-statement years and
+  every earlier year from the latest 10-K that reports it. The history moves to 2014-2023, 2015-2024, then 2016-2025.
+  - First-year diluted shares: 2014's 990M (FY2016 10-K), 2015's 929M (FY2017 10-K), 2016's 881M (FY2018 10-K).
+  - FY23 is the company's adjusted $13.09 (GAAP $13.20, excluding the $63 million gain on the Canadian sale), FY24 the
+    adjusted $11.99 (GAAP $12.23, excluding $177 million of such gains) and FY25 the adjusted $12.28 (GAAP $11.85, excluding
+    $321 million of ADG and FBM acquisition costs). FY22 keeps its adjusted $13.81, which the FY2024 10-K no longer
+    reconciles: an adjusted year keeps its figure (the 2019-2020 rule for 2015-2017).
+- **What each Q4 8-K publishes for its year.** The reconciliation in exhibit 99.2 gives the year's adjusted EPS and adjusted
+  operating margin (13.31%, 12.30%, 12.11%), so each year enters the history at them from the print (FY22's rule). The
+  infographic prints the year's comparable sales (-4.7%, -2.7%, +0.2%, the 10-Ks' figures), so they show from the print too
+  (text only; FY22's infographic gave only a U.S. comp, so FY22 waited for the 10-K). Q4 FY25 also publishes the year's
+  adjusted gross margin, 33.54% (display only).
+- **Fiscal 2024 and fiscal 2025: GAAP guides, then adjusted ones.**
+  - The Q4 FY23 release guides fiscal 2024 on GAAP: sales $84-85 billion, comps -2% to -3%, operating margin 12.6-12.7%,
+    EPS $12.00-12.30. The Q1 FY24 release affirms it.
+  - From the Q2 FY24 release the guide excludes the gains on the Canadian sale and gives no GAAP figure, so it takes the
+    adjusted figures (the Q3 FY18 rule): $82.7-83.2 billion, 12.4-12.5%, EPS $11.70-11.90; then $83.0-83.5 billion,
+    12.3-12.4% and $11.80-11.90 (Q3).
+  - The investor-conference 8-K of 2024-12-11 (before the open) affirms the fiscal 2024 ranges. Its fiscal 2025 scenarios
+    and long-term targets are in the presentation, not the filing (the 2020-12-09 and 2022-12-07 rule): it adds nothing.
+  - The Q4 FY24 release guides fiscal 2025 on GAAP: $83.5-84.5 billion, flat to +1%, 12.3-12.4%, $12.15-12.40. The Q1 FY25
+    release affirms it.
+- **Guides on both bases** (the Q3 FY18 with-and-without rule: the guide takes the adjusted figures, GAAP in the notes).
+  - The Q2 FY25 release adds ADG and gives both: EPS $12.20-12.45 adjusted ($12.10-12.35 GAAP), operating margin 12.2-12.3%
+    adjusted (12.1-12.2%).
+  - The Q3 FY25 release, now including FBM, gives adjusted figures only: $86.0 billion, flat comps, 12.1%, $12.25.
+  - The fiscal 2026 guides give both again: $12.25-12.75 and 11.6-11.8% adjusted ($11.75-12.25 and 11.2-11.4% GAAP),
+    affirmed in Q1. The Q2 FY26 release lowers them to $12.25 and 11.6% ($11.75 and 11.2%). Its outlook "includes tariff
+    refunds recognized during the second quarter", and the quarter's EPS includes $0.11 of them on both bases.
+- **A sales guide stated in growth.** The fiscal 2026 releases say "Total sales of $92.0 to $94.0 billion or an increase of
+  approximately 7% to 9% compared to prior year". A guide that states its growth keeps it: the percent form (`rev_guide`)
+  is LOW's original field, the builder already prefers it to a dollar level, and the dollar range goes in the note. The Q2
+  FY26 release states only $92.0 billion: +6.6% on FY25's $86.29 billion. No builder change.
+- **The acquisitions enter only through the guides and prints.** The Q2 FY25 guide includes ADG (closed in June 2025,
+  $1.3 billion), the Q3 FY25 guide FBM (agreed 2025-08-20, closed 2025-10-09, $8.8 billion), and the fiscal 2026 growth
+  both. The FBM 8-K expects the deal to be "accretive to adjusted diluted earnings per share in the first full year,
+  post-closing, excluding synergies": not a current-year figure (the UNP merger rule). The financing 8-Ks (2025-09-19,
+  2025-09-30) reach the facts only through interest. No shares are issued, so the share history and buyback rate are
+  unchanged; the paused repurchases show in the cash-return text.
+- **Level-form margin guides step from the history's margin**, as since 2009: fiscal 2024 from FY23's adjusted 13.31%,
+  fiscal 2025 from FY24's adjusted 12.30%, fiscal 2026 from FY25's adjusted 12.11%.
+- **Published adjusted quarter margins replace GAAP in the prints** (the LOW setup rule), each change against the base the
+  release names (the UNP rule):
+  - Q4 FY23 and Q1 FY24 have no adjustment of their own. Their operating margins (9.07%, 12.42%) change by -48bp and
+    -201bp against the prior year's adjusted 9.55% and 14.43%, as the infographics print them (GAAP +148bp and -229bp).
+  - Q2-Q4 FY24 exclude the Canadian-sale gains: 14.43% (-114bp), 12.31% (-86bp), 9.43% (+36bp).
+  - Q1 FY25 has no adjustment (11.92%, -50bp). Q2 FY25 to Q2 FY26 exclude the acquisition costs: 14.66% (+23bp), 12.41%
+    (+10bp), 9.02% (-41bp), 11.49% (-43bp), 14.04% (-62bp).
+  - Adjusted gross margins: Q2 FY25 33.84% (+37bp) and Q4 FY25 32.68% (-18bp). Q2 FY26's 33.04%, with no adjustment of
+    its own, changes by -80bp against the prior year's adjusted 33.84%, as printed (GAAP -77bp).
+  - The Q3 FY25 infographic is a set of images whose text layer is glyph-encoded. Its 12.41% (+10bp) was read from the
+    images (exhibit992-10312025001.jpg and 003.jpg); the reconciliation page there, $2,481M plus $101M of acquisition costs
+    on $20,813M of sales, agrees with it.
+- **Dividends,** each from the first filing that states it:
+  - $1.15 from the Q2 2024 release (2024-08-20);
+  - $1.20 from the Q2 2025 10-Q (accepted 2025-08-28 at 16:35 ET, dated 2025-08-29: "Cash dividends declared, $1.20 per
+    share"). The Q2 2025 release's per-share row still reads 1.15 (and 3.40 for six months), beside $673 million declared;
+  - $1.25 from the Q2 2026 release (2026-08-19).
+- **ECOMMERCE stays on the watch list.** The FY2023-FY2025 10-Ks keep the risk factor. A new third sentence says Lowe's is
+  at a disadvantage if competitors use rapidly evolving technologies, "including artificial intelligence and machine
+  learning technologies" ("AI" from FY2024), more effectively; the delivery sentence drops its list of pick-up options. The
+  quote carries the four sentences (text only). No filing shows the market pricing online substitution of Lowe's stores.
+- **GENAI is not a LOW theme.** From the FY2023 10-K the filings describe Lowe's own use of predictive and generative AI
+  (pilots, an "AI framework" in the 2024-12-11 8-K, an AI governance committee). The registry's GENAI scope, AI that
+  substitutes the core product, does not cover a home-improvement retailer, so no event is entered.
+- **Two segments from fiscal 2025.** The FY2025 10-K reports FBM and ADG as "Other" ($2.208 billion of fiscal 2025 sales,
+  no prior year). The segment bridge (display only) takes the fifteen Retail Home Improvement categories (97.4% of sales)
+  and says so; the history and the guides use total net sales.
+- **Adds nothing:**
+  - the 8-K/A of 2025-05-21 (one balance-sheet line of the Q1 FY25 release);
+  - the 10-Qs (capital-expenditure guidance and repurchase status only);
+  - the guides' interest, depreciation, capital-expenditure and repurchase items (no field);
+  - one-offs the company does not adjust: the discretionary bonuses ($140 million in Q4 FY23, $80 million in Q4 FY24, $125
+    million in Q4 FY25), the storm effects of late 2024 and the IEEPA tariff refunds in Q2 FY26;
+  - the vote 8-Ks (2024-06-05, 2025-06-05, 2026-06-02) and the officer 8-K of 2026-09-02.
+- **Text-only change to 2017-2023:** three source descriptions (the FY2016, FY2017 and FY2018 10-Ks) now also cite the
+  2014-2016 share counts. 352 dates change only in that text.
+- **ISO weeks:** 2024-01-01 starts the 2024 batch, 2024-12-30 the 2025 batch and 2025-12-29 the 2026 batch. The last date
+  is 2026-10-23, the last full week before the build (2026-10-29); the Q3 FY26 print is not out yet. Dates from late 2024
+  on have only part of the two-year horizon, and the latest have no outcome.
+
+Controls: altering one value of each new print, guide, vintage, dividend and theme event changes no date before its
+publication and changes the first weekly date after it (31 of 31).
+
+Seen in the build (method behaviour, not tuned):
+- **2024: RICH on the fiscal 2024 guides.**
+  - January-February, still on the fiscal 2023 guide ($13.00 adjusted, sales -11.4% against FY22's 53 weeks with Canada,
+    so BASE -3.5%/yr) and with no down year in FY13-FY22 (BEAR flat): BUY on all 8 dates at 16.3-17.9x (the 24th-50th
+    percentile), CHEAP on 2 and RICH on 6.
+  - The Q4 FY23 print puts FY23 at $13.09, below FY22's $13.81: the window's first down year, so BEAR applies -5.2%/yr.
+    The fiscal 2024 guide ($12.15, sales -1.6% to -2.8%, margin 12.65% against 13.31%) puts BASE at -1.3%/yr, and the
+    stock traded at 17.6-21.3x (the 42nd-89th percentile): RICH on all 25 dates to 2024-08-16; BUY 15, ACCUMULATE 8,
+    WATCHLIST 2.
+  - The Q2 and Q3 FY24 guides ($11.80, then $11.85, sales -3.3% to -4.3%) put BASE at -4.9%, then -5.3%/yr, while the
+    price rose to $282 (23.9x, the 98th percentile): RICH on all 19 dates to the year end; WATCHLIST 10, AVOID 5,
+    ACCUMULATE 4.
+
+  In all: RICH 50, CHEAP 2; BUY 23, ACCUMULATE 12, WATCHLIST 12, AVOID 5.
+- **2025: a second down year, a guide for growth, and still RICH.**
+  - January-February, on the fiscal 2024 guide: RICH on all 8; WATCHLIST 5, ACCUMULATE 3.
+  - From the Q4 FY24 print FY24's adjusted $11.99 is a second down year (-8.4%), so BEAR applies -8.4%/yr. The fiscal
+    2025 guide ($12.275, sales -0.2% to +1.0%, margin +5bp) and buybacks put BASE at +6.4%/yr. At 17.3-20.5x (the
+    38th-85th percentile) the class reads RICH on 21 of the 25 dates to 2025-08-15, FAIR on 3 and CHEAP on 2025-04-17
+    (17.8x): the proxy composite (1.65-1.85) sits below the market composite (2.29-2.84) even at the median multiple.
+  - The guides with ADG and FBM (sales +1.0% to +2.2%, then +2.8%) lift BASE to +6.8%/yr while the price rises to $272
+    (22.1x, the 94th percentile): RICH on all 19 dates from 2025-08-21, AVOID on 3 in September.
+
+  In all: RICH 48, FAIR 3, CHEAP 1; ACCUMULATE 21, WATCHLIST 19, BUY 9, AVOID 3.
+- **2026: the growth guide, then CHEAP as the price fell.**
+  - January-February, still on the fiscal 2025 guide, at 20.2-23.5x (the 84th-99th percentile): RICH on all 8, AVOID on
+    7 (Ratio B up to 4.49).
+  - The fiscal 2026 guide ($12.50 adjusted, sales "an increase of approximately 7% to 9%" with FBM) puts BASE at
+    +9.7%/yr. As the price fell from $264 to $208 (21.2x to 16.6x, the 92nd to the 28th percentile) the class moved from
+    RICH to FAIR and CHEAP: of the 25 dates to 2026-08-14, RICH 5 (to mid-April), FAIR 6 and CHEAP 14.
+  - The Q2 FY26 guide ($12.25, sales +6.6%, adjusted margin 11.6%) lowers BASE to +7.4%/yr and the proxy composite to
+    1.50: RICH on 2026-08-20 and 2026-08-28 at 17.0-17.7x (the 33rd-44th percentile), then CHEAP on all 8 dates to
+    2026-10-23 as the price fell to $181-205 (14.8-16.7x, the 12th-28th percentile).
+
+  In all (43 dates): CHEAP 22, RICH 15, FAIR 6; BUY 19, ACCUMULATE 11, AVOID 8, WATCHLIST 5.
+- **How far each call moves the classes** (the 147 dates rebuilt with one encoding changed; no outcome consulted):
+  - the GAAP figures of the guides that give both bases (Q2 FY25 and fiscal 2026) would change 18 classes, all from
+    2026-03-13, and 17 tiers from 2025-08-29. GAAP EPS sits $0.10-0.50 below adjusted: 15 of the 28 CHEAP and FAIR dates
+    of 2026 would read RICH and 3 CHEAP dates FAIR;
+  - FY23-FY25 at GAAP from the Q4 print until the 10-K would change 2 tiers (2025-02-27, 2025-03-21) and no class;
+  - reading the fiscal 2026 sales guides as dollar levels, the Q3 FY25 margin at GAAP, GAAP quarter margins throughout,
+    the $1.20 dividend from the Q3 FY25 release, or no full-year comps from the infographics would change none.
+- **The EPP floor is 15x, 16x from 2026-02-13 to 2026-09-11.** BULL is the decade EPS CAGR: 23.0%, then 19.1-19.9%
+  (FY14-FY23), 15.5-16.0% (FY15-FY24) and 13.3-14.1%/yr (FY16-FY25). XBULL stays the 2019-2021 run (44.8%/yr).
+
+Judgement calls that could carry hindsight:
+- taking the adjusted figures where a guide gives both bases (the call that moves the most classes: 18 of 147);
+- keeping the growth the fiscal 2026 releases state (7-9%) rather than reading their dollar range against FY25's sales;
+- reading the Q3 FY25 adjusted operating margin from the infographic's images;
+- dating the $1.20 dividend from the Q2 FY25 10-Q, because the Q2 FY25 release's per-share row reads 1.15;
+- taking each year's comparable sales from the Q4 infographics (text only), and leaving the acquired segment out of the
+  segment bridge (display only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -1744,7 +1899,7 @@ What the gates enforce:
   LOW carries ECOMMERCE on the watch list the same way from its FY2015 10-K (2016-03-29), the first whose risk factors
   name "growing competition from online and multi-channel retailers" ("LOW 2015-2016"). It stays there after the
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
-  Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023").
+  Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023", "LOW 2024-2026").
 
 ## Workflow
 
