@@ -1,11 +1,13 @@
 # LOW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 835 weekly dates from 2008-01-04 to 2023-12-29. They are **labels and
-hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time
-build was committed: 2008 in 88b0255, 2009-2010 in bfe09e0, 2011-2012 in 0b9b6f8, 2013-2014 in 7eeed23, 2015-2016 in
-304d9dc, 2017-2018 in fe7f63f, 2019-2020 in bc1e818, 2021-2023 in e9d57e8. Prices run to 2026-10-23 for the earlier
-batches, 2026-10-26 from 2013 and 2026-10-28 from 2017; every horizon used here ends by 2025-12-29. Medians of an even
-count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle over two years is +32.2%.
+Patterns seen in `outcome.json` for the 982 weekly dates from 2008-01-04 to 2026-10-23. The newest date has no outcome
+yet, and dates after 2024-10-25 have only part of the two-year horizon. They are **labels and hypotheses**: never feed
+them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed:
+2008 in 88b0255, 2009-2010 in bfe09e0, 2011-2012 in 0b9b6f8, 2013-2014 in 7eeed23, 2015-2016 in 304d9dc, 2017-2018 in
+fe7f63f, 2019-2020 in bc1e818, 2021-2023 in e9d57e8, 2024-2026 in e36364d (text corrections in 36ef0c0). Prices run to
+2026-10-23 for the earlier batches, 2026-10-26 from 2013 and 2026-10-28 from 2017; every horizon used here ends by
+2026-10-27. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is
++32.2% over two years, +15% over one and +7.2% over six months.
 
 ## 2008 (53 dates)
 
@@ -493,17 +495,90 @@ count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle 
 - **Three-year returns** exist for the dates to 2023-10-27. They run from -8% (2023-09-01) to +45% (2023-02-24), and nine
   of the sixteen entries from 2023-07-14 to 2023-10-27 are negative.
 
-## 2008-2023 together (835 dates)
+## 2024 (52 dates; the 43 to 2024-10-25 have a two-year horizon)
 
 | Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
 |---|---|---|---|---|---|---|---|
-| class CHEAP | 329 | +31% | -14% to +263% | 156 | 211 | +22% | 232 |
+| class CHEAP | 2 | +36% | +20% to +36% | 1 | 0 | +13% | 1 |
+| class RICH | 41 | +1% | -29% to +31% | 0 | 0 | +3% | 41 |
+| legacy tier BUY | 23 | +9% | -6% to +36% | 1 | 0 | +8% | 22 |
+| legacy tier ACCUMULATE | 10 | -6% | -12% to +15% | 0 | 0 | +1% | 10 |
+| legacy tier WATCHLIST | 8 | -19% | -29% to -6% | 0 | 0 | -7% | 8 |
+| legacy tier AVOID | 2 | -26% | -29% to -26% | 0 | 0 | -16% | 2 |
+| to 2024-02-23 (FY2023 guide, about $13.00 adjusted) | 8 | +29% | +20% to +36% | 1 | 0 | +9% | 7 |
+| 2024-02-28 to 2024-08-16 (FY2024 guide, $12.00-12.30 GAAP) | 25 | +1% | -10% to +15% | 0 | 0 | +4% | 25 |
+| 2024-08-21 to 2024-10-25 (adjusted guide, $11.70-11.90) | 10 | -22% | -29% to -7% | 0 | 0 | -9% | 10 |
+
+- **Every RICH call held, and no date beat SPY.** SPY returned +24% to +50% over the two years from these dates (median
+  +39%), the stock -29% to +36%; the median shortfall was 39 points. One date cleared the hurdle: 2024-01-26 at $211.98
+  (CHEAP, +35.5%), two days after the year's lowest close ($210.55). The other CHEAP date, 2024-01-05, returned +19.5%.
+  The six RICH dates of January-February, at 16.8-17.9x (the 31st-50th percentile), returned +22% to +31% and still
+  held: just under the hurdle, and behind SPY.
+- **The tier ranked the year in order, and so did the gap and the price.** BUY +9%, ACCUMULATE -6%, WATCHLIST -19%,
+  AVOID -26%. Ratio B ranked the dates at -0.90, the adjusted gap at +0.92 and the price alone at -0.84; on the m12-24
+  average -0.95, +0.94 and -0.99.
+- **The endpoint split the year in three.** The eight January-February dates, still on the fiscal 2023 guide (16.3-17.9x,
+  the 24th-50th percentile), ended in January-February 2026, as the stock ran from $245 to its 2026-02-13 high
+  ($287.39), and returned +20% to +36%. The 25 dates on the fiscal 2024 GAAP guide (17.6-21.3x, the 42nd-89th
+  percentile) ended from late February to mid-August 2026 and returned -10% to +15%. The ten on the adjusted guide from
+  2024-08-21 (20.5-23.9x, the 81st-98th percentile) ended in August-October 2026, near the 2026-10-05 low ($179.50), and
+  returned -7% to -29%.
+- **The stock landed on BASE, and BASE was a decline.** BASE carried the guides' falling sales for two years (BASE
+  growth -3.5%/yr, then -1.3% to -4.9%/yr), so its price ($194-218) sat at or below the entry price on 40 of the 43
+  dates. The stock landed nearest BASE on all 43; BEAR ($155-190), BULL (the decade CAGR, 19.1-23.0%/yr) and XBULL
+  never. From the Q4 FY23 print FY23 was the window's first down year, so BEAR applied -5.2%/yr and the tier left BUY on
+  20 of the 35 scored dates from 2024-02-28 (hypothesis 8 below).
+- **One year on, all 52 dates lagged SPY:** CHEAP +26% (2) and RICH -1% (50) at the median; BUY +4%, ACCUMULATE +0%,
+  WATCHLIST -6%, AVOID -12%.
+
+## 2025 (52 dates; one-year horizon to 2025-10-24, no two-year outcome yet)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY (median excess) |
+|---|---|---|---|---|---|
+| class CHEAP (2025-04-17) | 1 | +17% | +17% | 1 | 0 (-19pp) |
+| class FAIR | 3 | +13% | +5% to +13% | 0 | 0 (-18pp) |
+| class RICH | 39 | -2% | -26% to +19% | 2 | 2 (-24pp) |
+| legacy tier BUY | 9 | +7% | -3% to +17% | 1 | 0 (-20pp) |
+| legacy tier ACCUMULATE | 17 | +1% | -18% to +19% | 1 | 1 (-24pp) |
+| legacy tier WATCHLIST | 14 | -5% | -25% to +16% | 1 | 1 (-28pp) |
+| legacy tier AVOID | 3 | -26% | -26% to -22% | 0 | 0 (-43pp) |
+| to 2025-02-21 (FY2024 guide) | 8 | +10% | +1% to +19% | 2 | 2 (-7pp) |
+| 2025-02-27 to 2025-08-15 (FY2025 guide, $12.15-12.40 GAAP) | 25 | +2% | -11% to +17% | 1 | 0 (-22pp) |
+| 2025-08-21 to 2025-10-24 (with ADG, $12.20-12.45 adjusted) | 10 | -18% | -26% to -14% | 0 | 0 (-38pp) |
+
+- **Ranked in order at one year, and almost nothing beat SPY.** CHEAP +17%, FAIR +13%, RICH -2%; BUY +7%, ACCUMULATE
+  +1%, WATCHLIST -5%, AVOID -26%. SPY returned +13% to +36% over the year from these dates (median +20%). Two dates beat
+  it, 2025-02-14 and 2025-02-21 (by 3pp), and three cleared the 15% hurdle: those two and 2025-04-17.
+- **The cheap dates were the spring sell-off.** CHEAP and FAIR read on four dates from 2025-04-11 to 2025-05-09, at
+  $219-222 (17.8-18.1x, the 45th-50th percentile), and returned +5% to +17%. The other 39 read RICH at 17.3-22.1x (the
+  38th-94th percentile): even near the median multiple the proxy composite (1.50-1.85) sat below the market composite
+  (2.29-3.02).
+- **The dates on the guide with ADG fell most.** The ten from 2025-08-21 ($232-272, 18.8-22.1x, the 64th-94th
+  percentile) returned -14% to -26% at one year; the three AVOID dates of September ($265-272) -22% to -26%.
+
+## 2026 (43 dates; six-month horizon to 2026-04-24 only)
+
+- **Too early to score.** The 17 dates with a six-month outcome all fell (-7% to -26%) while SPY rose (+7% to +22%). The
+  eight January-February dates, RICH at 20.2-23.5x (the 84th-99th percentile; AVOID on seven), fell -7% to -26%. The
+  nine on the fiscal 2026 guide fell -13% to -23%: the one CHEAP date (2026-03-20, $224.63) least, the three FAIR dates
+  -16% to -21%.
+- **To watch: CHEAP on a guide that buys its growth.** From 2026-05-15 the class reads CHEAP on 21 of 24 dates, at
+  $181-223 (14.8-17.9x, the 12th-47th percentile). Those reads lean on BASE growth of +9.7%, then +7.4%/yr: the sales
+  guide (+7-9%, then +6.6%, with FBM's first full year; comps guided at 0-2%, then flat), a margin step worth -3.5%,
+  then -4.4%, and the decade buyback rate (+5.2%/yr). The company's own EPS guide was $12.25-12.75, then $12.25,
+  against FY25's adjusted $12.28 (hypothesis 9 below). Their two-year outcomes arrive from May 2028.
+
+## 2008-2024 together (878 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 331 | +31% | -14% to +263% | 157 | 211 | +21% | 233 |
 | class FAIR | 130 | +37% | -11% to +121% | 75 | 96 | +24% | 47 |
-| class RICH | 376 | +41% | -18% to +146% | 217 | 239 | +24% | 124 |
-| legacy tier BUY | 381 | +30% | -17% to +263% | 170 | 218 | +20% | 230 |
-| legacy tier ACCUMULATE | 139 | +44% | -12% to +129% | 86 | 112 | +26% | 70 |
-| legacy tier WATCHLIST | 124 | +42% | -14% to +107% | 82 | 91 | +28% | 39 |
-| legacy tier AVOID | 191 | +39% | -18% to +99% | 110 | 125 | +31% | 64 |
+| class RICH | 417 | +34% | -29% to +146% | 217 | 239 | +18% | 165 |
+| legacy tier BUY | 404 | +28% | -17% to +263% | 171 | 218 | +20% | 252 |
+| legacy tier ACCUMULATE | 149 | +40% | -12% to +129% | 86 | 112 | +24% | 80 |
+| legacy tier WATCHLIST | 132 | +41% | -29% to +107% | 82 | 91 | +25% | 47 |
+| legacy tier AVOID | 193 | +39% | -29% to +99% | 110 | 125 | +30% | 66 |
 
 Median 2-year total return by year (dates in brackets):
 
@@ -525,6 +600,7 @@ Median 2-year total return by year (dates in brackets):
 | 2021 | +19% (32) | none | -7% (20) | +19% (32) | -7% (20) |
 | 2022 | +27% (45) | none | -1% (7) | +27% (45) | -1% (7) |
 | 2023 | +22% (46) | +1% (1) | +13% (5) | +19% (52) | none |
+| 2024 | +36% (2) | none | +1% (41) | +9% (23) | -10% (20) |
 
 Rank correlation (Spearman) with the two-year total return, within each year:
 
@@ -546,38 +622,44 @@ Rank correlation (Spearman) with the two-year total return, within each year:
 | 2021 | -0.90 | +0.90 | -0.88 |
 | 2022 | -0.46 | +0.22 | -0.64 |
 | 2023 | -0.63 | +0.73 | -0.64 |
+| 2024 | -0.90 | +0.92 | -0.84 |
 
 - **The class ranked some years and not the cycle.** CHEAP beat RICH in 2008-2010, and RICH beat CHEAP in 2011-2012. No
   date read CHEAP in 2013-2015. FAIR beat RICH in 2013-2014; RICH held on 46 of 52 dates in 2015; in 2016 CHEAP and RICH
   tied (+52%, +53%) and FAIR, at the year's high prices, did worst. In 2017 every class beat SPY and CHEAP did worst
   (+35%, against +43% for FAIR and +40% for RICH). In 2018 RICH beat CHEAP (+46% against +18%) on endpoints set by the
   2020 crash. In 2019 every class won (CHEAP +96%, RICH +93%, FAIR +78%); in 2020 CHEAP led (+73%) on the crash dates.
-  In 2021-2023 CHEAP beat RICH every year (+19% against -7%, +27% against -1%, +22% against +13%), but from 2022 it
-  lagged SPY on 87 of 91 dates. Pooled: RICH +41%, FAIR +37%, CHEAP +31%.
-- **The tier ranked better, mostly as a price.** A lower Ratio B went with a higher return in thirteen of sixteen years
-  (2012, 2017 and 2018 the exceptions; 2018 ranks the right way on the m12-24 average). The price alone ranked the dates
-  as well or better in ten of 2008-2020; in 2021-2023 the two ranked about equally (-0.90 and -0.88, -0.46 and -0.64,
-  -0.63 and -0.64). Ratio B clearly beat the price only in 2015, when the guide rollover moved Ratio B without the price,
-  and in 2019, when the endpoints at the 2021 peak made the price rank backwards. The pooled tier rows mix years: 176 of
-  the 191 AVOID dates fall in 2012-2015, 2018 and 2021-2022, and 129 of the 381 BUY dates in 2021-2023, which is why AVOID
-  shows +39% against BUY's +30%.
+  In 2021-2024 CHEAP beat RICH every year (+19% against -7%, +27% against -1%, +22% against +13%, and in 2024 +36% on
+  two dates against +1% on 41), but from 2022 it lagged SPY on 89 of 93 dates. In 2024 every RICH call held (41 of 41).
+  Pooled: FAIR +37%, RICH +34%, CHEAP +31%.
+- **The tier ranked better, mostly as a price.** A lower Ratio B went with a higher return in fourteen of seventeen
+  years (2012, 2017 and 2018 the exceptions; 2018 ranks the right way on the m12-24 average). The price alone ranked the
+  dates as well or better in ten of 2008-2020; in 2021-2024 the two ranked about equally (-0.90 and -0.88, -0.46 and
+  -0.64, -0.63 and -0.64, -0.90 and -0.84; on the m12-24 average the price led in 2024, -0.99 against -0.95). Ratio B
+  clearly beat the price only in 2015, when the guide rollover moved Ratio B without the price, and in 2019, when the
+  endpoints at the 2021 peak made the price rank backwards. The pooled tier rows mix years: 176 of the 193 AVOID dates
+  fall in 2012-2015, 2018 and 2021-2022, and 152 of the 404 BUY dates in 2021-2024, which is why AVOID shows +39%
+  against BUY's +28%.
 - **One mechanism under the failures: the model projects from where the latest regime stands.** In the fact sheet the
   EBIT margin went from 10.98% (FY06) and 9.74% (FY07) to 6.53-7.29% in FY09-FY11. It then recovered: 7.05% (FY12),
-  7.77% (FY13), 8.53% (FY14), 9.31% adjusted (FY15), 8.99% (FY16); the FY17 operating margin was 9.60%, and FY20-FY22's
-  10.77%, 12.56% and 13.04% (adjusted). EPS went from $1.98 to $1.21-1.43, then to $3.29, $3.99 and $4.39 adjusted, and
-  on to $8.86, $12.04 and $13.81 in FY20-FY22. Method r2 projects from that base in three ways:
+  7.77% (FY13), 8.53% (FY14), 9.31% adjusted (FY15), 8.99% (FY16); the FY17 operating margin was 9.60%, FY20-FY22's
+  10.77%, 12.56% and 13.04% (adjusted), and FY23-FY25's 13.31%, 12.30% and 12.11% (adjusted). EPS went from $1.98 to
+  $1.21-1.43, then to $3.29, $3.99 and $4.39 adjusted, on to $8.86, $12.04 and $13.81 in FY20-FY22, and back to $13.09,
+  $11.99 and $12.28 (adjusted) in FY23-FY25. Method r2 projects from that base in four ways:
   - it carries the latest guided margin step for two years, in 2018 a step made mostly of exit charges (-180bp became
     BASE -12.2%/yr);
   - it takes BULL from the decade's EPS CAGR on the latest EPS (21-25% in 2008, 8.5-11% in 2011-2012), and once BASE
     exceeds that CAGR, BULL can add nothing to BASE (from 2012-02-28 to 2018-02-23);
-  - it scores net sales against rule T's BASE line of +10% or more, set from the fiscal 1997-2006 growth decade.
+  - it scores net sales against rule T's BASE line of +10% or more, set from the fiscal 1997-2006 growth decade;
+  - it adds the decade's buyback rate to BASE (5.2-6.0%/yr in 2024-2026) whatever the latest year's repurchases, and
+    carries the guide year's sales growth for two more years on top of a guided EPS that already includes it.
 
-  The net-sales signal read BEAR on 720 of the 835 dates, which held the proxy composite at 1.30-2.70 until 2020 and at
-  1.60-2.20 from August 2021. Any rally then opened a gap to the market composite and read RICH. In 2020 the pandemic
+  The net-sales signal read BEAR on 763 of the 878 dates, which held the proxy composite at 1.30-2.70 until 2020 and at
+  1.30-2.20 from 2021-08-19. Any rally then opened a gap to the market composite and read RICH. In 2020 the pandemic
   quarters (+30.1%, +28.3%) scored XBULL, the proxy composite reached 3.70, and with no guide in force the fallback carried
   those quarters as BASE growth. 2021 repeated it: with no sales guide the fallback carried +26.7%, then +24.1%, for two
   years on 25 CHEAP dates, none of which cleared the hurdle. And from the Q4 FY21 print BULL and XBULL rest on the
-  2019-2021 surge (the decade CAGR 23-24%, the best two-year run 44.8%): no date of 2021-2023 landed nearest either.
+  2019-2021 surge (the decade CAGR 19-24%, the best two-year run 44.8%): no date of 2021-2024 landed nearest either.
 - **The P/E window lags a regime change, but 2015 shows the cost of reading that as a rule.** In 2008 the window
   (1998-2007) held a growth decade's 14-43x, so 11-17x read as the 0th-27th percentile: CHEAP, while the stock went
   nowhere. In 2013-2014 the window held the crisis's 11-15x, so 17-26x read as the 56th-100th percentile: RICH, while the
@@ -587,8 +669,9 @@ Rank correlation (Spearman) with the two-year total return, within each year:
   (BULL or XBULL on 208 of 209 dates) had run its course by 2015; in 2015-2017, 120 of 156 dates landed nearest BASE.
   2021-2023 show both sides again: at the 95th-100th percentile (late 2021, on FY20's EPS) RICH held on 13 of 20 dates,
   and at the 2nd-39th percentile (2022-2023) CHEAP returned +27% and +22% at the median but lagged SPY on 87 of 91 dates.
-  UNP's 2010 (FINDINGS there: the P/E on trough EPS read RICH while earnings recovered) is the same pattern on another
-  ticker.
+  2024 sits on the RICH side: on the fiscal 2024 guides (17.6-23.9x, the 42nd-98th percentile) RICH held on all 35
+  scored dates. UNP's 2010 (FINDINGS there: the P/E on trough EPS read RICH while earnings recovered) is the same
+  pattern on another ticker.
 - **Hypotheses for a new method version.** Test each on other tickers' cycles before any change, and never fit it to
   LOW's outcomes:
   1. When the latest margin sits far below the decade median, show BASE and BULL on mid-cycle (decade-median) margin
@@ -598,8 +681,9 @@ Rank correlation (Spearman) with the two-year total return, within each year:
      next.
   4. Put the class change on a band, so that a 3% move cannot flip CHEAP and RICH (2011).
   5. Read the own-history P/E against a longer window or the market's multiple, so that one regime (a growth decade, a
-     crisis) does not set the percentiles for the next (2008 and 2013-2014). 2015 and January-February 2018 cut the
-     other way: at the same window's top percentiles the stock did lag. Any replacement must keep that call.
+     crisis) does not set the percentiles for the next (2008 and 2013-2014). 2015, January-February 2018 and
+     August-October 2024 (the 81st-98th percentile, -7% to -29% over two years) cut the other way: at the window's top
+     percentiles the stock did lag. Any replacement must keep that call.
   6. When a guide states the charges inside its margin step, project growth from the step without them and treat the
      charges as a one-year level change. The Q3 FY18 release gave them in basis points; the Q2 FY18 release gave them
      only in dollars, so this would mean deriving a figure the company did not publish, a change to the Fremont rule.
@@ -612,14 +696,27 @@ Rank correlation (Spearman) with the two-year total return, within each year:
   8. When the decade's history has no down year, the BEAR case is flat EPS at the 10th-percentile multiple. In 2022-2023
      that BEAR price sat at the market: Ratio B ran from -0.15 to 0.22 and the tier read BUY on all 97 dates from
      2022-02-24, while the stock lagged SPY by 14 and 30 points at the median. 2008 was the same (FINDINGS above: no down
-     year, BUY all year, the stock ended at BEAR). Test a BEAR case built from the decade's worst margin on the guided
-     sales, beside the worst EPS year, on other tickers with a decade of uninterrupted growth.
+     year, BUY all year, the stock ended at BEAR). 2024 shows the other side: once FY23 entered as the window's first
+     down year, BEAR applied -5.2%/yr ($155-159), the tier left BUY on 20 of the 35 scored dates from 2024-02-28, and
+     it ranked the year in order (BUY +9% down to AVOID -26%). Test a BEAR case built from the decade's worst margin on
+     the guided sales, beside the worst EPS year, on other tickers with a decade of uninterrupted growth.
+  9. BASE, the growth applied for the two years after the guided year's EPS, adds the decade's buyback rate whatever
+     the latest repurchases and repeats the guide year's sales growth, so it can run far above the EPS growth the guide
+     itself implies. The fiscal 2025 guide implied about +2.4% for the year (its $12.275 midpoint against FY24's
+     $11.99); BASE read +6.4%/yr, 5.6 points of it the buyback term, while repurchases fell to $0.21 billion for the
+     year. The fiscal 2026 sales guide (+7-9%) includes FBM's first full year against comps guided at 0-2%; its EPS
+     guide implied about +2%, and BASE read +9.7%/yr for the two years after it. The CHEAP reads from March 2026 lean
+     on that. Test a BASE capped at the guided EPS growth, or built from the comps guide and the latest year's share
+     change, on other tickers that buy companies or pause buybacks. This is a mechanism visible at the time, not an
+     outcome pattern: no two-year outcome tests the 2026 reads before 2028.
 
   The tier's better ranking is itself an outcome pattern. Treat it as a question for the other tickers, not as a rule.
-- **What 835 dates can and cannot show.** The weekly dates overlap: sixteen years hold about eight non-overlapping two-year
-  windows of one stock in one housing cycle. The class and tier patterns above are at best a few independent
+- **What 878 dates can and cannot show.** The weekly dates overlap: seventeen years hold about eight non-overlapping
+  two-year windows of one stock in one housing cycle. The class and tier patterns above are at best a few independent
   observations, and within a year they mostly restate the entry price. 2018 adds a warning about the yardstick: one event
   at the horizon (the 2020 crash) reversed a year's ranking, so read the m12-24 average beside the endpoint. 2020 is the
   same event at the entry: the price alone ranked its dates at -0.95. 2022-2023 add the benchmark: the CHEAP call failed
   on 72 of 91 dates that returned +22-27% at the median, because SPY returned +39% and +49% at the median over the same
-  two years. Testing selection needs many tickers on the same dates.
+  two years. 2024 adds the endpoint again: its dates' two-year returns ran from +36% to -29%, mostly by whether the
+  endpoint fell at the February 2026 high or the October 2026 low. Testing selection needs many tickers on the same
+  dates.
