@@ -58,7 +58,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                            q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2]}),
                "AAPL": dict(gm_guide_pct=[1, 2], q_guide_note="PLANTED",
                             q_guide={"quarter": "Q4 FY99", "sales_usd_b": [0.1, 0.2], "eps": [0.1, 0.2], "prior_sales_b": 99.0,
-                                     "prior_source": "A14", "prior_label": "PLANTED", "gm_pct": [1, 2]})}.get(TICKER, {})
+                                     "prior_source": "A14", "prior_label": "PLANTED", "gm_pct": [1, 2], "opex_usd_b": [99.0, 99.0],
+                                     "oie_usd_b": [99.0, 99.0], "tax_pct": [99.0, 99.0]})}.get(TICKER, {})
 
 git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True, check=True).stdout
 if git("status", "--porcelain", "retro/facts", OUTDIR).strip():
@@ -83,6 +84,8 @@ try:
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2],
                                 "rev_guide": [-40, -30], "rev_guide_label": "PLANTED", "volume_guide": [-50, -40], **GUIDE_PLANT})
         f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
+    if "capital_return" in f:      # AAPL: a capital return statement (catalyst 5)
+        f["capital_return"].append({"published": later, "source": last["source"], "doc": "PLANTED", "text": "PLANTED"})
     if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF
         with open(CACHE[0]) as fh:
             r = json.load(fh)["chart"]["result"][0]

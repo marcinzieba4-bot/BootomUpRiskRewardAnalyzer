@@ -159,7 +159,7 @@
    "filed": "2010-10-27 16:36 ET (after the close)",
    "title": "Apple Inc. FY2010 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510238044/d10k.htm",
-   "supports": "selected financial data FY2006-FY2010 (net sales, diluted EPS, diluted shares 924,712K in FY10); income statement FY2008-FY2010; net sales and unit sales by product FY2008-FY2010; cash flow; no dividends in 2010 or 2009; no debt outstanding; 317 retail stores; competition and Mac OS wording; gross margin expectation 'about 36% in the first quarter of 2011'"
+   "supports": "selected financial data FY2006-FY2010 (net sales, diluted EPS, diluted shares 924,712K in FY10 and 877,526K in FY06); income statement FY2008-FY2010; net sales and unit sales by product FY2008-FY2010; cash flow; no dividends in 2010 or 2009; no debt outstanding; 317 retail stores; competition and Mac OS wording; gross margin expectation 'about 36% in the first quarter of 2011'"
   },
   {
    "id": "A30",
@@ -167,7 +167,7 @@
    "filed": "2010-01-25 16:25 ET (after the close)",
    "title": "Apple Inc. FY2009 10-K/A (retrospective adoption of the new accounting principles)",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312510012091/d10ka.htm",
-   "supports": "selected financial data FY2005-FY2009 as revised (net sales, diluted EPS: FY09 $9.08, FY08 $6.78, FY07 $3.93); income statement FY2007-FY2009 as revised; net sales by product FY2007-FY2009 as revised; amends Items 6, 7 and 8 only"
+   "supports": "selected financial data FY2005-FY2009 as revised (net sales, diluted EPS: FY09 $9.08, FY08 $6.78, FY07 $3.93; diluted shares 856,878K in FY05); income statement FY2007-FY2009 as revised; net sales by product FY2007-FY2009 as revised; amends Items 6, 7 and 8 only"
   },
   {
    "id": "A20",
@@ -175,7 +175,7 @@
    "filed": "2008-11-05 06:16 ET (before the open)",
    "title": "Apple Inc. FY2008 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312508224958/d10k.htm",
-   "supports": "selected financial data FY2004-FY2008 (net sales, diluted EPS, diluted shares 902,139K in FY08); income statement FY2006-FY2008 (gross margin, operating income, other income and expense $620M, effective tax rate 30%); net sales and unit sales by product FY2006-FY2008; cash flow (operating cash flow $9,596M, capital expenditure $1,091M); no dividends in fiscal 2008 or 2007; 247 retail stores; gross margin expectation 'about 30% in 2009'"
+   "supports": "selected financial data FY2004-FY2008 (net sales, diluted EPS, diluted shares 902,139K in FY08 and 774,776K in FY04); income statement FY2006-FY2008 (gross margin, operating income, other income and expense $620M, effective tax rate 30%); net sales and unit sales by product FY2006-FY2008; cash flow (operating cash flow $9,596M, capital expenditure $1,091M); no dividends in fiscal 2008 or 2007; 247 retail stores; gross margin expectation 'about 30% in 2009'"
   },
   {
    "id": "A1",

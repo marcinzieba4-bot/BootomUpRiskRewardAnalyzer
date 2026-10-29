@@ -274,6 +274,114 @@
     "first_seen": "2011-05-31"
    },
    {
+    "term": "Mountain Lion",
+    "first_seen": "2012-02-16"
+   },
+   {
+    "term": "iOS 6",
+    "first_seen": "2012-06-11"
+   },
+   {
+    "term": "iOS 7",
+    "first_seen": "2013-06-10"
+   },
+   {
+    "term": "OS X Mavericks",
+    "first_seen": "2013-06-10"
+   },
+   {
+    "term": "iTunes Radio",
+    "first_seen": "2013-06-10"
+   },
+   {
+    "term": "iPhone 5s",
+    "first_seen": "2013-09-10"
+   },
+   {
+    "term": "iPhone 5c",
+    "first_seen": "2013-09-10"
+   },
+   {
+    "term": "Touch ID",
+    "first_seen": "2013-09-10"
+   },
+   {
+    "term": "iPad Air",
+    "first_seen": "2013-10-22"
+   },
+   {
+    "term": "CarPlay",
+    "first_seen": "2014-03-03"
+   },
+   {
+    "term": "iOS 8",
+    "first_seen": "2014-06-02"
+   },
+   {
+    "term": "OS X Yosemite",
+    "first_seen": "2014-06-02"
+   },
+   {
+    "term": "HealthKit",
+    "first_seen": "2014-06-02"
+   },
+   {
+    "term": "iPhone 6",
+    "first_seen": "2014-09-09"
+   },
+   {
+    "term": "Apple Watch",
+    "first_seen": "2014-09-09"
+   },
+   {
+    "term": "Apple Pay",
+    "first_seen": "2014-09-09"
+   },
+   {
+    "term": "Apple Music",
+    "first_seen": "2015-06-08"
+   },
+   {
+    "term": "iOS 9",
+    "first_seen": "2015-06-08"
+   },
+   {
+    "term": "OS X El Capitan",
+    "first_seen": "2015-06-08"
+   },
+   {
+    "term": "watchOS",
+    "first_seen": "2015-06-08"
+   },
+   {
+    "term": "iPhone 6s",
+    "first_seen": "2015-09-09"
+   },
+   {
+    "term": "iPad Pro",
+    "first_seen": "2015-09-09"
+   },
+   {
+    "term": "3D Touch",
+    "first_seen": "2015-09-09"
+   },
+   {
+    "term": "tvOS",
+    "first_seen": "2015-09-09"
+   },
+   {
+    "term": "iPhone SE",
+    "first_seen": "2016-03-21"
+   },
+   {
+    "term": "iPhone 7",
+    "first_seen": "2016-09-07"
+   },
+   {
+    "term": "AirPods",
+    "first_seen": "2016-09-07"
+   },
+   {
     "term": "GitHub Copilot",
     "first_seen": "2021-06-29"
    },

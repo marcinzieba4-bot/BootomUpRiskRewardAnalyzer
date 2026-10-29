@@ -225,6 +225,7 @@ THEME_SUMMARY        = 'no disruption theme has dated evidence'
 KEY_TRIGGER_TAIL     = 'A consumer-spending recession hits Mac and iPod demand first; the bear\n  needs it to reach gross margin and the iPhone ramp as well.'
 CATALYST_3      = '(3) Q1 FY09 guide — revenue $9.0-10.0B, EPS $1.06-1.35; Apple guides one quarter at a time, no FY09 guide'
 CATALYST_4      = '(4) iPod and iPhone — iPods +8.4%, 6,892K iPhones in Q4 FY08: net sales other than Macs +37.3%'
+CAPITAL_RETURN  = 'none so far (no dividend, no buyback)'
 
 # ═════════════════════════════════════════════════════════════════════════════
 # ENGINE — identical in every retrospective; everything above is dated facts.
@@ -478,8 +479,10 @@ print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_
 _fyg = FY_REVENUE_B / REVENUE_HIST[max(REVENUE_HIST)] - 1
 print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if _fyg >= 0 else '−'} {abs(_fyg)*100:.1f}%: {FY_REVENUE_LABEL}); "
       f"split pro rata to {GROUPS_BASIS}")
+# from Q1 FY15 the data sheet gives no iPod units (iPod sales fall in Other Products)
+_ipods = f"iPods {L['ipod_units_k']:,}K {L['ipod_units_pct']:+.1f}%" if L["ipod_units_k"] is not None else "iPod units not reported"
 print(f"  {L['quarter']} ({L['release']}): net sales ${L['sales_b']:.2f}B {L['sales_pct']:+.1f}%; Macs {L['mac_units_k']:,}K {L['mac_units_pct']:+.1f}%; "
-      f"iPods {L['ipod_units_k']:,}K {L['ipod_units_pct']:+.1f}%; iPhones {L['iphone_units_k']:,}K;")
+      f"{_ipods}; iPhones {L['iphone_units_k']:,}K;")
 print(f"  gross margin {L['gross_margin']:.2f}% ({L['gross_margin_bp']:+d}bp); operating margin {L['op_margin']:.2f}% ({L['op_margin_bp']:+d}bp); "
       f"EPS ${L['eps_q']:.2f} vs ${L['eps_q_prior']:.2f}; net sales other than Macs {L['non_mac_pct']:+.1f}%")
 print(f"  {DEFERRED_TEXT}")
@@ -635,7 +638,7 @@ print(f"  (1) {NEXT_PRINT} — the next read on Mac units ({L['mac_units_pct']:+
 print(f"  (2) Gross margin — {L['gross_margin_bp']:+d}bp in {L['quarter']}: pricing, mix and component costs, what must hold if units do not")
 print(f"  {CATALYST_3}")
 print(f"  {CATALYST_4}")
-print(f"  (5) Capital return at {PE_NOW:.0f}x — none so far (no dividend, no buyback): management's own read of the multiple")
+print(f"  (5) Capital return at {PE_NOW:.0f}x — {CAPITAL_RETURN}: management's own read of the multiple")
 print(f"  {signal_full}  |  EPP floor {CUR}{epp_updated:,.0f}  |  ADD below ~{CUR}{SCENARIOS['BASE'][2]*0.85:,.0f}  |  TRIM above {CUR}{SCENARIOS['BULL'][2]:,}")
 print("═" * W)
 print()

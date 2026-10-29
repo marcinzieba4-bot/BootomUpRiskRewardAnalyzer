@@ -2104,6 +2104,147 @@ Judgement calls that could carry hindsight:
 - treating the chief executive's medical leaves, resignation and death as adding nothing (the method has no input for them);
 - DURABLE rather than CYCLICAL (the class label only).
 
+### AAPL 2012-2015: the dividend, guidance lists without EPS, the 7-for-1 split, no iPod units
+
+```bash
+python3 retro/build_aapl.py --weekly 2012-01-02 2015-12-31                  # 209 dates, 2012-01-06 .. 2015-12-31
+```
+
+Every 8-K, 10-Q, 10-K and proxy filed on Apple's CIK from 2012-01-01 to 2015-12-31 was read directly, with the
+third-party solicitations (PX14A6G, DFAN14A) and the 10-Qs and 10-Ks searched for forward-looking statements. 558 strings were
+checked with `verbatim.py` against their own filings. 187 structured checks read each print's statements and each Q4 print's
+full-year figures back from the XBRL of the 10-Q or 10-K filed with it, 45 read the unit sales back from each 10-Q's own table,
+and the four quarters of units and net sales sum to each 10-K's year. Every source's date comes from EDGAR's acceptance time.
+Thresholds and signals are unchanged. Decided before any 2012-2015 date was built or scored:
+
+- **Four vintages, ten years each.** The FY2012 10-K (accepted 2012-10-31 17:07 ET, dated 2012-11-01) gives FY2008-FY2012, the
+  FY2013 10-K (2013-10-29 20:38 ET, dated 2013-10-30) FY2009-FY2013, the FY2014 10-K (2014-10-27 17:11 ET, dated 2014-10-28)
+  FY2010-FY2014 and the FY2015 10-K (2015-10-28 16:31 ET, dated 2015-10-29) FY2011-FY2015. Each earlier year comes from the
+  latest 10-K that reports it. The history moves to FY2003-FY2012, FY2004-FY2013, FY2005-FY2014, then FY2006-FY2015.
+  - First-year diluted shares: FY2003's 723,352K (FY2007 10-K), FY2004's 774,776K (FY2008 10-K), FY2005's 856,878K (FY2009
+    10-K/A), FY2006's 877,526K (FY2010 10-K).
+  - From the FY2012 vintage the decade no longer reaches FY2001-FY2002 (still excluded), and from 2012-09-29 the ten-year P/E
+    window starts after 2002-09-29, so that start stops binding; the vintages from FY2013 carry none.
+  - FY2012 spanned 53 weeks (a 14th week in Q1 FY12). Every year is GAAP: Apple published no figure excluding a one-off.
+- **Two re-presentations add nothing.** The 8-Ks of 2013-04-24 (accepted 17:05 ET) and 2015-01-28 (16:48 ET) re-present the
+  FY2012 and FY2014 10-Ks for new segments and product categories: "There is no change to the Company's previously reported
+  Consolidated Statements of Operations". They change no input, so they add nothing (the ACN 2024 segment recast); the UNP
+  vintage rule is for a re-presentation that changes the history. The bridge (display only) keeps the latest 10-K's lines.
+- **Prints.** Every release came after the close, so each print is dated the next trading day. The Q4 FY12 release came on
+  Thursday 2012-10-25, so its print is dated Friday 2012-10-26 and no trading day follows in the week: the week's date is the
+  print's day and the print, public before that day's open, counts (the Good Friday 2011 rule). Q1 FY12 spanned 14 weeks against
+  13, and Q1 FY13 13 against 14: growth as published, the weeks in the notes (the LOW 53rd-week rule).
+- **Guides, one quarter at a time.** Through the Q4 FY12 release each gives the next quarter's revenue and EPS as points, as
+  before. From the Q1 FY13 release a bulleted list gives revenue and gross margin as ranges, operating expenses,
+  other income/(expense) and a tax rate, and no EPS. Revenue is read against the year-ago quarter's own release, as before (net
+  sales were never restated): Q2 FY12 +31.8%, Q3 +19.0%, Q4 +20.3%, Q1 FY13 +12.2% (against the 14-week quarter), Q2 +4.6% to
+  +9.7%, Q3 -4.3% to +1.4%, Q4 -5.5% to +2.9%, Q1 FY14 +0.9% to +6.4%, Q2 -3.7% to +0.9%, Q3 +1.9% to +7.6%, Q4 -1.3% to +6.7%,
+  Q1 FY15 +10.3% to +15.5%, Q2 +13.9% to +20.5%, Q3 +22.9% to +28.2%, Q4 +16.3% to +21.1%, Q1 FY16 +1.2% to +3.9%.
+  - The operating-expense, other-income and tax-rate items (`opex_usd_b`, `oie_usd_b`, `tax_pct`) are shown in the guide line
+    and feed no input. An operating margin derived from the revenue, gross-margin and expense ranges would be a figure derived
+    from others (the 2008 rule), and a quarter's tax rate is not the year's, so the EPS check keeps the last year's rate (a
+    quarter's EPS guide fed nothing either).
+  - Still no fiscal-year guide, so the last full year's EPS stands: FY11's $27.68 to 2012-10-25, FY12's $44.15 to
+    2013-10-28, FY13's $39.75 ($5.68 after the split) to 2014-10-20, FY14's $6.45 to 2015-10-27, FY15's $9.22 after.
+- **Gross-margin expectations.** The FY2012 10-Qs give words only. The FY2012 10-K's "about 36% during the first quarter of
+  2013" is a quarter's expectation, shown in the guide line until Q1 FY13 is reported. From the Q1 FY13 release the 10-Qs and
+  10-Ks repeat the release's range: nothing.
+- **A guide restated in words.** The 8-K of 2013-09-23 (08:45 ET, before the open) expects Q4 FY13 revenue and gross margin
+  "near the high end of the previously provided range": the ranges stand and the words go in the note (the ACN Q3 FY08 rule).
+- **Dividends: the latest declared rate.** The March 2012 policy had no 8-K. Its first filing is the Q2 FY12 10-Q (accepted
+  2012-04-25 17:01 ET, dated 2012-04-26): Apple "plans to make, subject to subsequent declaration, quarterly dividends of $2.65
+  per share". A plan subject to declaration is not a declared rate, so the conservative case carries no dividend until the first
+  declaration. That can only lag. The rates, each from the first filing that states it:
+  - $2.65, Q3 FY12 release (2012-07-25);
+  - $3.05, the 7.01 8-K of 2013-04-23 (dated 2013-04-24);
+  - $3.29, the 7.01 8-K of 2014-04-23 (dated 2014-04-24), divided by 7 from the split;
+  - $.47, Q3 FY14 release (2014-07-23), the first declaration after the split;
+  - $.52, the 7.01 8-K of 2015-04-27 (dated 2015-04-28).
+- **The capital return program, display only.** Catalyst (5) now shows the latest statement of the program (`capital_return`):
+  the Q2 FY12 10-Q's policy and $10 billion repurchase program from 2012-04-26, then the 7.01 8-Ks' $100 billion (2013-04-24),
+  over $130 billion (2014-04-24) and $200 billion (2015-04-28). The 10-Qs' and 10-Ks' restatements of an unchanged program add
+  nothing. Each print's cash-return text gives the dividends and repurchases paid year to date (cash flow statement) and, from Q3
+  FY13, the debt on its balance sheet.
+- **The 7-for-1 split.** Announced in the 7.01 8-K of 2014-04-23 (dated 2014-04-24); "trading will begin on a split-adjusted
+  basis on June 9, 2014", the price data's split date. From that date every per-share fact published before it is divided by 7
+  and every share count multiplied by 7 (the UNP rule). The FY2014 and FY2015 10-Ks restate FY2010-FY2015 for it, so those years
+  enter as restated ($2.16 for FY10, not $15.15 / 7), and the years from earlier 10-Ks are divided. P/E percentiles do not move
+  (2014-06-06: $645.57 on $39.75; 2014-06-13: $91.28 on $5.68). Print and program text is not restated (the UNP 2014 rule).
+- **No iPod units from Q1 FY15.** The data sheets and 10-Qs report units for iPhone, iPad and Mac only; iPod sales fall in Other
+  Products. Mac units and net sales other than Macs are unaffected.
+- **An engine revision, text only.** Two lines of `aapl_engine.py.tmpl` assumed facts that 2012-2015 changes. Catalyst (5) said
+  "none so far (no dividend, no buyback)"; it now prints `CAPITAL_RETURN`, which keeps those words until the first program
+  statement. The bridge printed iPod units unconditionally; it now says "iPod units not reported" when there are none. No rule
+  changes. The 209 models of 2008-2011 rebuild with the new engine text and one new constant, and every one of their reports
+  rebuilds byte-identical.
+- **No theme.** CLOUD is live from 2012-10-30 but its scope is on-premise enterprise IT. STREAMING (from 2015-08-04) covers
+  linear TV and ECOMMERCE (from 2015-01-01) physical retail. The FY2012-FY2015 10-Ks mention cloud and streaming only as Apple's
+  own services (iCloud, iTunes Radio, Beats Music, Apple Music). So there are no events, the watch list stays empty, and the class
+  is DURABLE, risk 2, with each 10-K's own words ("nearly the entire solution", the "only authorized maker of hardware using OS
+  X", "aggressive price cutting and resulting downward pressure on gross margins") and store count (390, 416, 437, 463).
+- **Adds nothing:**
+  - the officer, director, vote, compensation, bylaw and articles 8-Ks, among them the CFO transition (2014-03-05, 2014-05-30),
+    the chief operating officer (2015-12-17), the split's articles amendment (2014-06-06) and proxy access (2015-12-22);
+  - the debt offerings (8-Ks of 2013-05-03, 2014-05-06, 2014-11-10, 2015-02-09, 2015-05-13, 2015-06-10, 2015-07-31 and
+    2015-09-17) and the description of common stock (2014-07-23); they reach the facts only through the balance sheet;
+  - the 8-K of 2013-09-23's nine million iPhones (units, as Macworld's in 2008);
+  - the proxies and the shareholder solicitations (CalPERS; Greenlight's preferred-stock proposal, 2013; Icahn's repurchase
+    proposal, 2013-2014; the New York City Comptroller), and Apple's own DEFA14A statements, which restate the $45 billion plan
+    with no new figure;
+  - the 10-Qs' and 10-Ks' capital-expenditure, store-opening, debt-plan and Beats statements (no field).
+- **Text-only change to 2008-2011:** besides the engine text, three source descriptions (the FY2008 10-K, the FY2009 10-K/A and
+  the FY2010 10-K) now also cite the FY2004-FY2006 share counts the new vintages use. 165 analyses change only in that text.
+- **Anachronism list:** Apple product and software names from 2012 to 2016 join it (from OS X Mountain Lion and iOS 6 to the
+  iPhone 7 and AirPods). Of all existing models, only "Apple Watch" appears, in the FY2015 vintage's product list from 2015-10-29.
+- **Year-check warnings:** "2013" on the 36 dates from 2012-04-26 to 2012-12-28 (the 10-Q's repurchase program "beginning in
+  2013" and, from 2012-11-02, the 10-K's "first quarter of 2013"): the company's plans, public before each date.
+
+Controls: altering one value of each new print, Q4 full-year figure, guide, vintage, dividend, program statement and the split
+changes no date before its publication and changes the first weekly date on or after it (50 of 52). The other two are the
+Q4 FY13 and Q4 FY15 full-year figures. Their 10-K came out on the next trading day, which is also the first weekly date, so the
+vintage replaces them on every weekly date. Built by date on the print's own day (2013-10-29, 2015-10-28), each changes that
+model. A guide for the next fiscal year first shows on the first date with that year current, and the split from its effective
+date. The 209 dates of 2008-2011 rebuild with byte-identical reports.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 191 of 209 dates, BUY on all.** 2012 and 2013 read CHEAP on all 104. FAIR on 13 dates from 2014-07-11 to
+  2014-10-10 (except 2014-07-18), where the conservative case fell to -5% to -13%: BASE was +2.7%, then +0.7%/yr on the Q3 and Q4
+  FY14 guides, and the stock stood at 16.7-18.1x FY13's $5.68 against a 15.8-15.9x median. FAIR on 5 dates in 2015 (2015-02-20, 04-24, 05-22, 05-29,
+  07-17), where the price stood just over 100% above the EPP floor.
+- **The EPS anchor and the multiple.** On the last full year's EPS the stock traded at 11.5-25.3x in 2012 (the 11th-58th
+  percentile; 25.3x on 2012-09-21 at $700.09), 8.8-14.1x in 2013 (the 1st-39th; 8.8x on 2013-04-19 at $390.53), 12.6-18.4x in
+  2014 and 11.4-20.5x in 2015.
+- **Below the floor and the BEAR price in 2013.** The price sat below the EPP floor on 19 dates from 2012-11-16 to 2013-07-25
+  (as far as -11.5%) and below the BEAR price (Ratio B negative) on 20 dates from 2013-01-25 to 2013-07-19: FY12's $44.15 at the
+  10th-percentile multiple, while BASE fell to +4.2%, then -4.4% and -4.2%/yr on the Q2-Q4 FY13 ranges.
+- **BASE follows the quarter guides less dilution:** +35.2%/yr on the Q1 FY12 guide, then +28.6%, +15.8% and +17.1%; +9.3% (Q1
+  FY13), +4.2%, -4.4% and -4.2%; +1.6% (Q1 FY14), -3.4%, +2.7% and +0.7%; +11.7% (Q1 FY15; +12.7% from the FY2014 vintage),
+  +17.0%, +25.3% and +18.5%; +3.2% on the Q1 FY16 range. The decade's share count turns from dilution (-3.2%/yr FY03-FY11) to a buyback (+0.65%/yr FY06-FY15) only with the
+  FY2015 vintage.
+- **BULL, XBULL and BEAR move with the window.** BULL is the decade EPS CAGR: +107.7% and +101.7%/yr from FY2003's $0.08, +69.7%
+  from FY2004 (the FY2013 vintage; +63.0% with FY14 from the Q4 print), +45.4% from FY2005 and +45.1% from FY2006. XBULL, FY03-FY05's +340%/yr, becomes FY04-FY06's +158% and from the
+  FY2014 vintage FY09-FY11's +74.5%. BEAR, flat while every year grew, applies FY13's -10.0% twice from the FY2013 vintage. Ratio B
+  ran from -0.02 to 0.41.
+- **The EPP floor falls from 14x to 9x** (12x from the Q4 FY12 print, 11x on 2013-01-04 and 2013-01-11, 10x from 2013-01-25, 9x on
+  2015-12-31) as the window takes in 2008-2013's low multiples.
+- **Display quirks:** after the split the EPS check prints FY13's EPS to three decimals ("$5.679", the shared `money` format
+  for a split that leaves a fraction of a cent), and catalyst (5) quotes the program as announced ($3.29 before the split).
+
+How far each call moves the classes (the affected dates rebuilt with one encoding changed; no outcome consulted):
+- an operating-margin step derived from each guide list (revenue and gross-margin midpoints less operating expenses, against the
+  year-ago quarter's margin) would change 2 of the 154 classes from 2013-01-25 (2014-07-03 and 2014-07-18, CHEAP to FAIR) and no
+  tier;
+- carrying the March 2012 policy's $2.65 as a dividend from the Q2 FY12 10-Q would change none of the 13 dates to 2012-07-20;
+- not counting the Q4 FY12 print on its own day (2012-10-26) would change neither class nor tier;
+- the re-presentations as vintages would change only the bridge (display only).
+
+Judgement calls that could carry hindsight:
+- keeping the guide lists' operating-expense and tax items out of the inputs (the call that moves the most classes: 2 of 209);
+- dating the first dividend from its declaration, not from the policy stated in the Q2 FY12 10-Q (no class moves);
+- treating the two segment re-presentations as adding nothing;
+- reading the Q1 FY13 guide against the 14-week Q1 FY12 as published;
+- DURABLE rather than CYCLICAL (the class label only), and CLOUD and STREAMING as outside Apple's scope.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -2153,7 +2294,9 @@ What the gates enforce:
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
   Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023", "LOW 2024-2026").
   AAPL in 2008 carries none: no theme in the registry is live for a personal-computer and consumer-electronics maker
-  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL").
+  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2015:
+  CLOUD's scope is on-premise enterprise IT, and Apple's FY2012-FY2015 10-Ks name cloud and streaming only as its own services
+  ("AAPL 2012-2015").
 
 ## Workflow
 

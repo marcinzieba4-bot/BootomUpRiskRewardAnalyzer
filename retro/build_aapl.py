@@ -26,6 +26,10 @@ every share count (multiplied by it); the prices of the whole window are on the 
 A filing that re-presents a 10-K is a vintage of its own (the UNP rule): the FY2009 10-K/A of 2010-01-26 revises FY2007-FY2009
 for the accounting principles adopted retrospectively in Q1 FY10. A dollar revenue guide is read against the year-ago quarter on
 the guide's own accounting basis (prior_sales_b: the revised FY2009 quarters for the guides of fiscal 2010).
+From the Q1 FY13 release a guide is a list: revenue and gross-margin ranges, operating expenses, other income/(expense) and a
+tax rate, for the next quarter, and no EPS; the last three are shown in the guide line and feed no input (an operating margin
+derived from them would be a figure derived from others; a quarter's tax rate is not the year's). Dividends are the latest
+declared rate; catalyst (5) shows the latest statement of the capital return program (capital_return).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Apple released after the close, so a print is dated the next
@@ -57,7 +61,7 @@ ENGINE = os.path.join(HERE, "templates", "aapl_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "AAPL")
 # the guide fields this builder has an encoding for; any other field needs its encoding decided first
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quote", "q_guide", "q_guide_note", "gm_guide_pct"}
-Q_GUIDE_KEYS = {"quarter", "sales_usd_b", "eps", "prior_sales_b", "prior_source", "prior_label", "gm_pct"}
+Q_GUIDE_KEYS = {"quarter", "sales_usd_b", "eps", "prior_sales_b", "prior_source", "prior_label", "gm_pct", "opex_usd_b", "oie_usd_b", "tax_pct"}
 
 
 def fiscal_year_end(n):
@@ -83,6 +87,10 @@ def usd_level(lo, hi):
 
 def gm_level(lo, hi):
     return f"about {lo:g}%" if lo == hi else f"{lo:g}-{hi:g}%"
+
+
+def opex_level(lo, hi):
+    return f"${lo:.2f}B" if lo == hi else f"${lo:.2f}-{hi:.2f}B"
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -155,6 +163,7 @@ def build(as_of, facts, raw, spx, engine, out):
     later = lambda q: qkey(q) > (latest["fy"] % 100, nq)
     q_field = lambda k: next((g for g in reversed(guides) if k in g.get("q_guide", {}) and later(g["q_guide"]["quarter"])), None)
     gqs, gqe, gqm = q_field("sales_usd_b"), q_field("eps"), q_field("gm_pct")
+    gqo, gqi, gqt = q_field("opex_usd_b"), q_field("oie_usd_b"), q_field("tax_pct")       # from Q1 FY13, display only
     ggm = next((g for g in reversed(guides) if "gm_guide_pct" in g), None)
     eps_now = eps_hist[cur_fy - 1]                 # no fiscal-year EPS guide: the last full year's EPS stands (rollover rule)
     eps_label = f"{fy_e}: no fiscal-year EPS guide, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
@@ -166,14 +175,17 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd = [latest["sales_pct"]] * 2
         fwd_label, fwd_short, fwd_period = f"no {next_q} revenue guide, {latest['quarter']} net sales", f"{latest['quarter']} sales", latest["quarter"]
     bits = []
-    qs = {g["q_guide"]["quarter"] for g in (gqs, gqe, gqm) if g}
+    qs = {g["q_guide"]["quarter"] for g in (gqs, gqe, gqm, gqo, gqi, gqt) if g}
     assert len(qs) <= 1, (as_of, "next-quarter guide fields for different quarters", qs)
     qq = qs.pop() if qs else None
     if qq:
         qb = ([f"revenue {usd_level(*gqs['q_guide']['sales_usd_b'])} ({pct_range(*fwd)} on {gqs['q_guide']['prior_label']}'s "
                f"${gqs['q_guide']['prior_sales_b']:.2f}B)"] if gqs else []) + \
              ([f"EPS {rng(*gqe['q_guide']['eps'])}"] if gqe else []) + \
-             ([f"gross margin {gm_level(*gqm['q_guide']['gm_pct'])} ({gqm['doc']})"] if gqm else [])
+             ([f"gross margin {gm_level(*gqm['q_guide']['gm_pct'])} ({gqm['doc']})"] if gqm else []) + \
+             ([f"operating expenses {opex_level(*gqo['q_guide']['opex_usd_b'])}"] if gqo else []) + \
+             ([f"other income/(expense) ${gqi['q_guide']['oie_usd_b'][0] * 1000:,.0f}M"] if gqi else []) + \
+             ([f"tax rate {gqt['q_guide']['tax_pct'][0]:g}%"] if gqt else [])
         bits.append(f"{qq}: " + ", ".join(qb) + (f" ({gqs['q_guide_note']})" if gqs and gqs.get("q_guide_note") else ""))
     if ggm:
         bits.append(f"{fy_now} gross margin {gm_level(*ggm['gm_guide_pct'])} ({ggm['doc']})")
@@ -186,10 +198,13 @@ def build(as_of, facts, raw, spx, engine, out):
     margin_guided = False
     fy_margin_base = h["prev_fy_op_margin"]
 
-    # ── dividend: the latest declared rate (Apple declared none) ──
+    # ── dividend: the latest declared rate (none before the first declaration, the Q3 FY12 release) ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
     divs.append((h.get("dividend_published", h["published"]), h["dividend_annual"], h["dividend_note"], None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
+    # ── capital return: the latest statement of the program (display only, catalyst (5)) ──
+    crs = [c for c in facts.get("capital_return", []) if c["published"] <= as_of]
+    capital_return = crs[-1]["text"] if crs else "none so far (no dividend, no buyback)"
 
     # ── market statistics, prices truncated at AS_OF ──
     days = sorted(d for d in px if d <= as_of)
@@ -230,11 +245,14 @@ def build(as_of, facts, raw, spx, engine, out):
                 ([f"revenue {usd_level(*gqs['q_guide']['sales_usd_b'])}"] if gqs else []) + ([f"EPS {rng(*gqe['q_guide']['eps'])}"] if gqe else []))
             + f"; Apple guides one quarter at a time, no {fy_now} guide" if (gqs or gqe) else
             f"(3) A {next_q} guide — the {latest['quarter']} release gives none ('{latest['outlook_short']}')")
-    # iPad units from the Q3 FY10 print
+    # iPad units from the Q3 FY10 print; no iPod units from the Q1 FY15 print
     cat4 = (f"(4) iPod and iPhone — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones in {latest['quarter']}: "
             f"net sales other than Macs {latest['non_mac_pct']:+.1f}%" if latest.get("ipad_units_k") is None else
             f"(4) iPod, iPhone and iPad — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones and "
-            f"{latest['ipad_units_k']:,}K iPads in {latest['quarter']}: net sales other than Macs {latest['non_mac_pct']:+.1f}%")
+            f"{latest['ipad_units_k']:,}K iPads in {latest['quarter']}: net sales other than Macs {latest['non_mac_pct']:+.1f}%"
+            if latest["ipod_units_k"] is not None else
+            f"(4) iPhone and iPad — {latest['iphone_units_k']:,}K iPhones and {latest['ipad_units_k']:,}K iPads in {latest['quarter']} "
+            f"(no iPod units reported): net sales other than Macs {latest['non_mac_pct']:+.1f}%")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -249,7 +267,8 @@ def build(as_of, facts, raw, spx, engine, out):
     company = renames[-1]["name"] if renames else h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
            + [x for g in guides for x in [g["source"], g.get("q_guide", {}).get("prior_source")] if x]
-           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events] + [n["source"] for n in renames])
+           + ([dividend_src] if dividend_src else []) + ([crs[-1]["source"]] if crs else [])
+           + split_ids + [e["id"] for e in events] + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, AAPL and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/AAPL/history",
@@ -357,6 +376,7 @@ THEME_SUMMARY        = {R(theme_summary)}
 KEY_TRIGGER_TAIL     = {R(key_tail)}
 CATALYST_3      = {R(cat3)}
 CATALYST_4      = {R(cat4)}
+CAPITAL_RETURN  = {R(capital_return)}
 '''
     os.makedirs(os.path.join(out, as_of), exist_ok=True)
     with open(os.path.join(out, as_of, "model.py"), "w", encoding="utf-8") as fh:
