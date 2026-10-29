@@ -1707,12 +1707,18 @@ python3 retro/build_low.py --weekly 2025-12-29 2026-10-23                   # 43
 
 Every 8-K, 8-K/A, 10-Q, 10-K and earnings release from 2023-11-22 to 2026-10-23 was read directly, with the 10-Qs
 searched in full for forward-looking statements. Independent reader agents read the same filings again in four groups,
-each to be re-read by a checker agent. The two groups finished before this commit (the FY2023 close to the FY2024 10-K)
-matched every number; they changed two wordings (the buybacks as paid, the published FY24 adjusted margin changes). Any
-change from the other groups or the checkers is committed separately, before any date is scored. 313 strings were
-checked with `verbatim.py`, and 798 structured checks read each print's numbers back from its release's tables, each
-vintage's from its 10-K and each source's date from EDGAR's acceptance time. Thresholds and signals are unchanged. The
-encodings below were decided before any 2024-2026 date was built; no outcome was computed until the build was committed.
+and a checker agent re-read each group's filings against its reader. Every number matched. The two groups finished
+before the build commit (the FY2023 close to the FY2024 10-K) changed two wordings (the buybacks as paid, the published
+FY24 adjusted margin changes). The rest changed text only, committed separately before any date was scored: the fiscal
+2026 guide notes name what their adjusted figures exclude (the acquisitions' intangible amortization, not all their
+costs), the Q2 FY24 note calls the guide it lowered GAAP, and the bonuses read as announced. 48 dates (13 in 2024, 35 in
+2026) change only in that text. Two checker claims did not hold: that the FY2023 10-K has no product-category table (it
+has one, the source of the FY23 groups), and that the 10-Ks from FY2023 no longer tie sales to housing turnover (each
+still lists decreasing housing turnover among the factors that may hurt results, as the FY2020-FY2022 10-Ks did, so the
+profile's wording stays). 314 strings were checked with `verbatim.py`, and 799 structured checks read each print's
+numbers back from its release's tables, each vintage's from its 10-K and each source's date from EDGAR's acceptance
+time. Thresholds and signals are unchanged. The encodings below were decided before any 2024-2026 date was built; no
+outcome was computed until the build and these corrections were committed.
 
 - **Three 10-K vintages.** FY2023 (accepted 2024-03-25 at 16:18 ET, dated 2024-03-26), FY2024 (2025-03-24 at 16:33 ET,
   dated 2025-03-25) and FY2025 (2026-03-23 at 16:52 ET, dated 2026-03-24). Each takes its three income-statement years and
@@ -1744,16 +1750,20 @@ encodings below were decided before any 2024-2026 date was built; no outcome was
   - The fiscal 2026 guides give both again: $12.25-12.75 and 11.6-11.8% adjusted ($11.75-12.25 and 11.2-11.4% GAAP),
     affirmed in Q1. The Q2 FY26 release lowers them to $12.25 and 11.6% ($11.75 and 11.2%). Its outlook "includes tariff
     refunds recognized during the second quarter", and the quarter's EPS includes $0.11 of them on both bases.
+  - The fiscal 2026 adjusted figures exclude only the acquisitions' intangible asset amortization ("an expected 40 basis
+    point and $0.50 after tax impact"); FY25's adjusted figures also excluded the transaction costs. The margin step from
+    FY25's 12.11% is taken as published (the level-form rule below).
 - **A sales guide stated in growth.** The fiscal 2026 releases say "Total sales of $92.0 to $94.0 billion or an increase of
   approximately 7% to 9% compared to prior year". A guide that states its growth keeps it: the percent form (`rev_guide`)
   is LOW's original field, the builder already prefers it to a dollar level, and the dollar range goes in the note. The Q2
   FY26 release states only $92.0 billion: +6.6% on FY25's $86.29 billion. No builder change.
 - **The acquisitions enter only through the guides and prints.** The Q2 FY25 guide includes ADG (closed in June 2025,
-  $1.3 billion), the Q3 FY25 guide FBM (agreed 2025-08-20, closed 2025-10-09, $8.8 billion), and the fiscal 2026 growth
-  both. The FBM 8-K expects the deal to be "accretive to adjusted diluted earnings per share in the first full year,
-  post-closing, excluding synergies": not a current-year figure (the UNP merger rule). The financing 8-Ks (2025-09-19,
-  2025-09-30) reach the facts only through interest. No shares are issued, so the share history and buyback rate are
-  unchanged; the paused repurchases show in the cash-return text.
+  $1.3 billion), the Q3 FY25 guide FBM (signed 2025-08-19, announced 2025-08-20, closed 2025-10-09, $8.8 billion), and
+  the fiscal 2026 growth both. Sales growth in the prints and guides includes the acquired businesses, as published. The
+  FBM 8-K expects the deal to be "accretive to adjusted diluted earnings per share in the first full year, post-closing,
+  excluding synergies": not a current-year figure (the UNP merger rule). The financing 8-Ks (2025-09-19, 2025-09-30)
+  reach the facts only through interest. No shares are issued, so the share history and buyback rate are unchanged; the
+  paused repurchases show in the cash-return text.
 - **Level-form margin guides step from the history's margin**, as since 2009: fiscal 2024 from FY23's adjusted 13.31%,
   fiscal 2025 from FY24's adjusted 12.30%, fiscal 2026 from FY25's adjusted 12.11%.
 - **Published adjusted quarter margins replace GAAP in the prints** (the LOW setup rule), each change against the base the
@@ -1767,7 +1777,8 @@ encodings below were decided before any 2024-2026 date was built; no outcome was
     its own, changes by -80bp against the prior year's adjusted 33.84%, as printed (GAAP -77bp).
   - The Q3 FY25 infographic is a set of images whose text layer is glyph-encoded. Its 12.41% (+10bp) was read from the
     images (exhibit992-10312025001.jpg and 003.jpg); the reconciliation page there, $2,481M plus $101M of acquisition costs
-    on $20,813M of sales, agrees with it.
+    on $20,813M of sales, agrees with it. A reader and a checker each decoded the text layer's glyphs independently and
+    got the same figures.
 - **Dividends,** each from the first filing that states it:
   - $1.15 from the Q2 2024 release (2024-08-20);
   - $1.20 from the Q2 2025 10-Q (accepted 2025-08-28 at 16:35 ET, dated 2025-08-29: "Cash dividends declared, $1.20 per
@@ -1785,10 +1796,12 @@ encodings below were decided before any 2024-2026 date was built; no outcome was
   and says so; the history and the guides use total net sales.
 - **Adds nothing:**
   - the 8-K/A of 2025-05-21 (one balance-sheet line of the Q1 FY25 release);
-  - the 10-Qs (capital-expenditure guidance and repurchase status only);
+  - the 10-Qs (capital-expenditure guidance and repurchase status only), and the Retail Home Improvement segment's sales
+    and margins in the 10-Qs and the FY2025 10-K: the history and the prints keep the consolidated figures the releases
+    publish;
   - the guides' interest, depreciation, capital-expenditure and repurchase items (no field);
-  - one-offs the company does not adjust: the discretionary bonuses ($140 million in Q4 FY23, $80 million in Q4 FY24, $125
-    million in Q4 FY25), the storm effects of late 2024 and the IEEPA tariff refunds in Q2 FY26;
+  - one-offs the company does not adjust: the discretionary bonuses the Q4 FY23, FY24 and FY25 releases announce ($140
+    million, $80 million, $125 million), the storm effects of late 2024 and the IEEPA tariff refunds in Q2 FY26;
   - the vote 8-Ks (2024-06-05, 2025-06-05, 2026-06-02) and the officer 8-K of 2026-09-02.
 - **Text-only change to 2017-2023:** three source descriptions (the FY2016, FY2017 and FY2018 10-Ks) now also cite the
   2014-2016 share counts. 352 dates change only in that text.

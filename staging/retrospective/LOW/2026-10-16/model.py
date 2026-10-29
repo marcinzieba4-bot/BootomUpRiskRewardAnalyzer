@@ -208,7 +208,7 @@ EPP_TODAY_EPS   = 12.25   # FY2026E EPS, guide midpoint
 EPS_LABEL       = 'FY2026E EPS, guide midpoint'
 FWD_GUIDE       = (6.6, 6.6)   # fiscal-year total sales guide (no next-quarter guide)
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'FY26 sales guide', 'FY26', 'FY26 guide'
-GUIDE_TEXT      = "FY26 guide (Q4 FY25 release, Q1 FY26 release, Q2 FY26 release): EPS $12.25 (previously $12.25-12.75; adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.'); sales $92B, +6.6% on FY25's $86.29B (previously $92.0 to 94.0 billion; no percentage stated); comps +0%; operating margin 11.6% of sales"
+GUIDE_TEXT      = "FY26 guide (Q4 FY25 release, Q1 FY26 release, Q2 FY26 release): EPS $12.25 (previously $12.25-12.75; adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization, an expected $0.50 after tax (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.'); sales $92B, +6.6% on FY25's $86.29B (previously $92.0 to 94.0 billion; no percentage stated); comps +0%; operating margin 11.6% of sales"
 MARGIN_GUIDED   = True   # True: numeric operating-margin guide, so BASE adds the guided margin step and the signal uses it
 FY_MARGIN_BASE  = 11.6
 FY_REVENUE_B    = 91.98
@@ -224,7 +224,7 @@ THEME_SIGNAL_NAME    = 'E-commerce: net effect on store sales'
 THEME_SIGNAL_TRIGGER = "Online and multi-channel rivals take share faster than Lowe's own online sales grow"
 THEME_SUMMARY        = 'e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it'
 KEY_TRIGGER_TAIL     = 'A housing-led demand recession hits comps first; the bear needs it\n  to reach gross margin and expense leverage as well.'
-CATALYST_3      = "(3) FY26 EPS guide $12.25 (previously $12.25-12.75; adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.')"
+CATALYST_3      = "(3) FY26 EPS guide $12.25 (previously $12.25-12.75; adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization, an expected $0.50 after tax (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.')"
 CATALYST_4      = '(4) Operating margin — 14.04% in Q2 FY26 (-62bp): where fixed-cost deleverage on falling comps shows first'
 
 # ═════════════════════════════════════════════════════════════════════════════

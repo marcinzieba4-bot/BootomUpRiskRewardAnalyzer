@@ -240,7 +240,7 @@ EPP_TODAY_EPS   = 12.5   # FY2026E EPS, guide midpoint
 EPS_LABEL       = 'FY2026E EPS, guide midpoint'
 FWD_GUIDE       = (7, 9)   # fiscal-year total sales guide (no next-quarter guide)
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'FY26 sales guide', 'FY26', 'FY26 guide'
-GUIDE_TEXT      = "FY26 guide (Q4 FY25 release): EPS $12.25-12.75 (adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP $11.75-12.25)); sales +7-9% ('Total sales of $92.0 to $94.0 billion or an increase of approximately 7% to 9% compared to prior year', the growth as the company states it); comps +0-2%; operating margin 11.6-11.8% of sales"
+GUIDE_TEXT      = "FY26 guide (Q4 FY25 release): EPS $12.25-12.75 (adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization: 'guidance for fiscal 2026 excludes an expected 40 basis point and $0.50 after tax impact, respectively, from intangible asset amortization' (GAAP $11.75-12.25)); sales +7-9% ('Total sales of $92.0 to $94.0 billion or an increase of approximately 7% to 9% compared to prior year', the growth as the company states it); comps +0-2%; operating margin 11.6-11.8% of sales"
 MARGIN_GUIDED   = True   # True: numeric operating-margin guide, so BASE adds the guided margin step and the signal uses it
 FY_MARGIN_BASE  = 11.7
 FY_REVENUE_B    = 93.19
@@ -256,7 +256,7 @@ THEME_SIGNAL_NAME    = 'E-commerce: net effect on store sales'
 THEME_SIGNAL_TRIGGER = "Online and multi-channel rivals take share faster than Lowe's own online sales grow"
 THEME_SUMMARY        = 'e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it'
 KEY_TRIGGER_TAIL     = 'A housing-led demand recession hits comps first; the bear needs it\n  to reach gross margin and expense leverage as well.'
-CATALYST_3      = '(3) FY26 EPS guide $12.25-12.75 (adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP $11.75-12.25))'
+CATALYST_3      = "(3) FY26 EPS guide $12.25-12.75 (adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization: 'guidance for fiscal 2026 excludes an expected 40 basis point and $0.50 after tax impact, respectively, from intangible asset amortization' (GAAP $11.75-12.25))"
 CATALYST_4      = '(4) Operating margin — 9.02% in Q4 FY25 (-41bp): where fixed-cost deleverage on falling comps shows first'
 
 # ═════════════════════════════════════════════════════════════════════════════

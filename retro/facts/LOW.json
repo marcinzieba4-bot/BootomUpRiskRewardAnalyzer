@@ -10992,7 +10992,7 @@
     11.7,
     11.9
    ],
-   "eps_guide_note": "lowered from $12.00-12.30; adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published)",
+   "eps_guide_note": "lowered from $12.00-12.30, a GAAP guide (the release says the gain was not contemplated in the fiscal 2024 outlook); adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published)",
    "rev_guide_usd_b": [
     82.7,
     83.2
@@ -11154,7 +11154,7 @@
     12.25,
     12.75
    ],
-   "eps_guide_note": "adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP $11.75-12.25)",
+   "eps_guide_note": "adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization: 'guidance for fiscal 2026 excludes an expected 40 basis point and $0.50 after tax impact, respectively, from intangible asset amortization' (GAAP $11.75-12.25)",
    "rev_guide": [
     7,
     9
@@ -11170,7 +11170,7 @@
    ],
    "margin_def": "operating margin",
    "op_margin_guide_quote": "Adjusted1 operating income as a percentage of sales (adjusted operating margin) of 11.6% to 11.8%",
-   "op_margin_guide_note": "adjusted, excluding the FBM and ADG acquisition costs (GAAP 11.2% to 11.4%); net interest expense of approximately $1.6 billion has no field",
+   "op_margin_guide_note": "adjusted, excluding the ADG and FBM intangible asset amortization, an expected 40 basis points (GAAP 11.2% to 11.4%); FY25's adjusted 12.11% also excluded the transaction costs; net interest expense of approximately $1.6 billion has no field",
    "tax_rate_guide": 24.5
   },
   {
@@ -11182,7 +11182,7 @@
     12.25,
     12.75
    ],
-   "eps_guide_note": "adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP $11.75-12.25)",
+   "eps_guide_note": "adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization, an expected $0.50 after tax (GAAP $11.75-12.25)",
    "rev_guide": [
     7,
     9
@@ -11210,7 +11210,7 @@
     12.25,
     12.25
    ],
-   "eps_guide_note": "previously $12.25-12.75; adjusted diluted EPS, excluding the FBM and ADG acquisition costs (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.'",
+   "eps_guide_note": "previously $12.25-12.75; adjusted diluted EPS, excluding the ADG and FBM intangible asset amortization, an expected $0.50 after tax (GAAP approximately $11.75); 'Fiscal year 2026 outlook also includes tariff refunds recognized during the second quarter and excludes any potential additional tariff refunds in the second half of the year.'",
    "rev_guide_usd_b": [
     92.0,
     92.0
@@ -11226,7 +11226,7 @@
    ],
    "margin_def": "operating margin",
    "op_margin_guide_quote": "Adjusted1 operating income as a percentage of sales (adjusted operating margin) of 11.6%",
-   "op_margin_guide_note": "adjusted, excluding the FBM and ADG acquisition costs (GAAP 11.2%, previously 11.2% to 11.4%); includes the tariff refunds recognized in the second quarter",
+   "op_margin_guide_note": "adjusted, excluding the ADG and FBM intangible asset amortization, an expected 40 basis points (GAAP 11.2%, previously 11.2% to 11.4%); includes the tariff refunds recognized in the second quarter",
    "tax_rate_guide": 24.5
   }
  ],

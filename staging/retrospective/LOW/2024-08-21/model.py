@@ -208,7 +208,7 @@ EPP_TODAY_EPS   = 11.8   # FY2024E EPS, guide midpoint
 EPS_LABEL       = 'FY2024E EPS, guide midpoint'
 FWD_GUIDE       = (-4.3, -3.7)   # fiscal-year total sales guide (no next-quarter guide)
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'FY24 sales guide', 'FY24', 'FY24 guide'
-GUIDE_TEXT      = "FY24 guide (Q4 FY23 release, Q1 FY24 release, Q2 FY24 release): EPS $11.70-11.90 (lowered from $12.00-12.30; adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published)); sales $82.7-83.2B, -4.3% to -3.7% on FY23's $86.38B; comps -4% to -3.5%; operating margin 12.4-12.5% of sales"
+GUIDE_TEXT      = "FY24 guide (Q4 FY23 release, Q1 FY24 release, Q2 FY24 release): EPS $11.70-11.90 (lowered from $12.00-12.30, a GAAP guide (the release says the gain was not contemplated in the fiscal 2024 outlook); adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published)); sales $82.7-83.2B, -4.3% to -3.7% on FY23's $86.38B; comps -4% to -3.5%; operating margin 12.4-12.5% of sales"
 MARGIN_GUIDED   = True   # True: numeric operating-margin guide, so BASE adds the guided margin step and the signal uses it
 FY_MARGIN_BASE  = 12.45
 FY_REVENUE_B    = 82.92
@@ -224,7 +224,7 @@ THEME_SIGNAL_NAME    = 'E-commerce: net effect on store sales'
 THEME_SIGNAL_TRIGGER = "Online and multi-channel rivals take share faster than Lowe's own online sales grow"
 THEME_SUMMARY        = 'e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it'
 KEY_TRIGGER_TAIL     = 'A housing-led demand recession hits comps first; the bear needs it\n  to reach gross margin and expense leverage as well.'
-CATALYST_3      = '(3) FY24 EPS guide $11.70-11.90 (lowered from $12.00-12.30; adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published))'
+CATALYST_3      = '(3) FY24 EPS guide $11.70-11.90 (lowered from $12.00-12.30, a GAAP guide (the release says the gain was not contemplated in the fiscal 2024 outlook); adjusted diluted EPS as the company published it, excluding the gain associated with the 2022 sale of the Canadian retail business (no GAAP figure published))'
 CATALYST_4      = '(4) Operating margin — 14.43% in Q2 FY24 (-114bp): where fixed-cost deleverage on falling comps shows first'
 
 # ═════════════════════════════════════════════════════════════════════════════
