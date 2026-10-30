@@ -422,3 +422,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2015-12-18 | $106.03 | Apple Q4 FY15 results | 2.50 | +1.19 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.8% | +32.1pp | +40.2% | ✓ |
 | 2015-12-24 | $108.03 | Apple Q4 FY15 results | 2.50 | +1.16 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.3% | +31.7pp | +38.6% | ✓ |
 | 2015-12-31 | $105.26 | Apple Q4 FY15 results | 2.50 | +1.20 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.2% | +29.7pp | +43.0% | ✓ |
+| 2016-01-08 | $96.96 | Apple Q4 FY15 results | 2.50 | +1.30 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.7% | +37.1pp | +56.3% | ✓ |
+| 2016-01-15 | $97.13 | Apple Q4 FY15 results | 2.50 | +1.29 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.2% | +34.2pp | +57.1% | ✓ |
+| 2016-01-22 | $101.42 | Apple Q4 FY15 results | 2.50 | +1.23 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.1% | +25.9pp | +51.4% | ✓ |
+| 2016-01-28 | $94.09 | Apple Q1 FY16 results | 2.00 | +0.72 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.3% | +30.8pp | +64.3% | ✓ |
+| 2016-02-05 | $94.02 | Apple Q1 FY16 results | 2.00 | +0.71 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.9% | +25.5pp | +65.2% | ✓ |
+| 2016-02-12 | $93.99 | Apple Q1 FY16 results | 2.00 | +0.71 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.2% | +31.0pp | +65.9% | ✓ |
+| 2016-02-19 | $96.04 | Apple Q1 FY16 results | 2.00 | +0.68 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.5% | +37.4pp | +63.0% | ✓ |
+| 2016-02-26 | $96.91 | Apple Q1 FY16 results | 2.00 | +0.66 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +89.6% | +42.4pp | +62.2% | ✓ |
+| 2016-03-04 | $103.01 | Apple Q1 FY16 results | 2.00 | +0.56 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.7% | +36.8pp | +53.3% | ✓ |
+| 2016-03-11 | $102.26 | Apple Q1 FY16 results | 2.00 | +0.57 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +80.7% | +38.6pp | +55.1% | ✓ |
+| 2016-03-18 | $105.92 | Apple Q1 FY16 results | 2.00 | +0.51 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.6% | +33.8pp | +50.5% | ✓ |
+| 2016-03-24 | $105.67 | Apple Q1 FY16 results | 2.00 | +0.51 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.6% | +29.0pp | +51.4% | ✓ |
+| 2016-04-01 | $109.99 | Apple Q1 FY16 results | 2.00 | +0.41 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.9% | +25.2pp | +45.9% | ✓ |
+| 2016-04-08 | $108.66 | Apple Q1 FY16 results | 2.00 | +0.44 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.4% | +27.8pp | +48.2% | ✓ |
+| 2016-04-15 | $109.85 | Apple Q1 FY16 results | 2.00 | +0.40 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.4% | +31.3pp | +47.1% | ✓ |
+| 2016-04-22 | $105.68 | Apple Q1 FY16 results | 2.00 | +0.50 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.4% | +29.3pp | +53.5% | ✓ |
+| 2016-04-28 | $94.83 | Apple Q2 FY16 results | 2.00 | +0.63 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.2% | +43.2pp | +71.5% | ✓ |
+| 2016-05-06 | $92.72 | Apple Q2 FY16 results | 2.00 | +0.66 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +102.8% | +69.0pp | +75.9% | ✓ |
+| 2016-05-13 | $90.52 | Apple Q2 FY16 results | 2.00 | +0.69 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +113.8% | +76.0pp | +81.0% | ✓ |
+| 2016-05-20 | $95.22 | Apple Q2 FY16 results | 2.00 | +0.60 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +100.9% | +64.3pp | +72.7% | ✓ |
+| 2016-05-27 | $100.35 | Apple Q2 FY16 results | 2.00 | +0.51 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +92.9% | +59.0pp | +64.6% | ✓ |
+| 2016-06-03 | $97.92 | Apple Q2 FY16 results | 2.00 | +0.55 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.3% | +64.8pp | +69.2% | ✓ |
+| 2016-06-10 | $98.83 | Apple Q2 FY16 results | 2.00 | +0.53 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.0% | +62.1pp | +68.5% | ✓ |
+| 2016-06-17 | $95.33 | Apple Q2 FY16 results | 2.00 | +0.58 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.3% | +64.5pp | +75.6% | ✓ |
+| 2016-06-24 | $93.40 | Apple Q2 FY16 results | 2.00 | +0.61 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.3% | +63.4pp | +80.1% | ✓ |
+| 2016-07-01 | $95.89 | Apple Q2 FY16 results | 2.00 | +0.56 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.2% | +64.4pp | +76.2% | ✓ |
+| 2016-07-08 | $96.68 | Apple Q2 FY16 results | 2.00 | +0.55 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.6% | +65.5pp | +75.5% | ✓ |
+| 2016-07-15 | $98.78 | Apple Q2 FY16 results | 2.00 | +0.51 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.7% | +64.7pp | +72.7% | ✓ |
+| 2016-07-22 | $98.66 | Apple Q2 FY16 results | 2.00 | +0.51 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.1% | +65.9pp | +73.7% | ✓ |
+| 2016-07-28 | $104.34 | Apple Q3 FY16 results | 2.00 | +0.48 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.8% | +53.6pp | +65.0% | ✓ |
+| 2016-08-05 | $107.48 | Apple Q3 FY16 results | 2.00 | +0.40 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +97.6% | +63.2pp | +61.1% | ✓ |
+| 2016-08-12 | $108.18 | Apple Q3 FY16 results | 2.00 | +0.37 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +96.6% | +62.6pp | +60.9% | ✓ |
+| 2016-08-19 | $109.36 | Apple Q3 FY16 results | 2.00 | +0.34 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.6% | +68.8pp | +60.1% | ✓ |
+| 2016-08-26 | $106.94 | Apple Q3 FY16 results | 2.00 | +0.40 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +106.9% | +70.2pp | +64.8% | ✓ |
+| 2016-09-02 | $107.73 | Apple Q3 FY16 results | 2.00 | +0.36 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +116.0% | +78.7pp | +64.7% | ✓ |
+| 2016-09-09 | $103.13 | Apple Q3 FY16 results | 2.00 | +0.47 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +119.5% | +80.2pp | +73.0% | ✓ |
+| 2016-09-16 | $114.92 | Apple Q3 FY16 results | 2.00 | +0.15 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.2% | +58.9pp | +56.4% | ✓ |
+| 2016-09-23 | $112.71 | Apple Q3 FY16 results | 2.00 | +0.20 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +97.7% | +57.9pp | +60.5% | ✓ |
+| 2016-09-30 | $113.05 | Apple Q3 FY16 results | 2.00 | +0.19 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +104.2% | +65.3pp | +61.3% | ✓ |
+| 2016-10-07 | $114.06 | Apple Q3 FY16 results | 2.00 | +0.15 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +101.1% | +62.7pp | +61.1% | ✓ |
+| 2016-10-14 | $117.63 | Apple Q3 FY16 results | 2.00 | -0.07 | 0.20x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +93.2% | +59.1pp | +57.3% | ✗ |
+| 2016-10-21 | $116.60 | Apple Q3 FY16 results | 2.00 | -0.05 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +92.5% | +58.8pp | +59.8% | ✗ |
+| 2016-10-27 | $114.48 | Apple Q4 FY16 results | 2.00 | -0.03 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.4% | +64.3pp | +63.8% | ✓ |
+| 2016-11-04 | $108.84 | Apple Q4 FY16 results | 2.00 | +0.14 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.8% | +59.7pp | +73.1% | ✓ |
+| 2016-11-11 | $108.43 | Apple Q4 FY16 results | 2.00 | +0.14 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.4% | +60.6pp | +74.3% | ✓ |
+| 2016-11-18 | $110.06 | Apple Q4 FY16 results | 2.00 | +0.09 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +80.6% | +50.9pp | +72.1% | ✓ |
+| 2016-11-25 | $111.79 | Apple Q4 FY16 results | 2.00 | +0.02 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.8% | +35.6pp | +69.5% | ✓ |
+| 2016-12-02 | $109.90 | Apple Q4 FY16 results | 2.00 | +0.09 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.3% | +37.4pp | +72.6% | ✓ |
+| 2016-12-09 | $113.95 | Apple Q4 FY16 results | 2.00 | -0.04 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.5% | +31.8pp | +66.6% | ✓ |
+| 2016-12-16 | $115.97 | Apple Q4 FY16 results | 2.00 | -0.07 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.2% | +27.7pp | +63.6% | ✓ |
+| 2016-12-23 | $116.52 | Apple Q4 FY16 results | 2.00 | -0.19 | 0.35x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +33.9% | +22.9pp | +62.6% | ✗ |
+| 2016-12-30 | $115.82 | Apple Q4 FY16 results | 2.00 | -0.17 | 0.35x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +39.4% | +24.2pp | +63.3% | ✗ |
+| 2017-01-06 | $117.91 | Apple Q4 FY16 results | 2.00 | -0.21 | 0.37x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +30.2% | +14.8pp | +60.2% | ✓ |
+| 2017-01-13 | $119.04 | Apple Q4 FY16 results | 2.00 | -0.23 | 0.38x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +32.4% | +13.9pp | +58.2% | ✓ |
+| 2017-01-20 | $120.00 | Apple Q4 FY16 results | 2.00 | -0.25 | 0.40x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +35.1% | +13.2pp | +56.5% | ✓ |
+| 2017-01-27 | $121.95 | Apple Q4 FY16 results | 2.00 | -0.28 | 0.43x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +33.7% | +13.3pp | +53.8% | ✓ |
+| 2017-02-02 | $128.53 | Apple Q1 FY17 results | 2.00 | -0.34 | 0.51x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +33.7% | +10.8pp | +45.9% | ✓ |
+| 2017-02-10 | $132.12 | Apple Q1 FY17 results | 2.00 | -0.38 | 0.56x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +33.1% | +12.0pp | +42.1% | ✓ |
+| 2017-02-17 | $135.72 | Apple Q1 FY17 results | 2.00 | -0.42 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +29.6% | +7.4pp | +38.4% | ✓ |
+| 2017-02-24 | $136.66 | Apple Q1 FY17 results | 2.00 | -0.43 | 0.63x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +30.6% | +8.5pp | +37.4% | ✓ |
+| 2017-03-03 | $139.78 | Apple Q1 FY17 results | 2.00 | -0.47 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +29.1% | +7.3pp | +34.3% | ✓ |
+| 2017-03-10 | $139.14 | Apple Q1 FY17 results | 2.00 | -0.47 | 0.68x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +28.2% | +8.5pp | +34.9% | ✓ |
+| 2017-03-17 | $139.99 | Apple Q1 FY17 results | 2.00 | -0.47 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +36.8% | +13.9pp | +34.1% | ✓ |
+| 2017-03-24 | $140.64 | Apple Q1 FY17 results | 2.00 | -0.48 | 0.70x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +39.7% | +16.0pp | +33.8% | ✗ |
+| 2017-03-31 | $143.66 | Apple Q1 FY17 results | 2.00 | -0.50 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.0% | +11.9pp | +31.2% | ✗ |
+| 2017-04-07 | $143.34 | Apple Q1 FY17 results | 2.00 | -0.50 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.2% | +14.2pp | +31.8% | ✗ |
+| 2017-04-13 | $141.05 | Apple Q1 FY17 results | 2.00 | -0.48 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | +15.7pp | +34.3% | ✗ |
+| 2017-04-21 | $142.27 | Apple Q1 FY17 results | 2.00 | -0.49 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.1% | +19.2pp | +33.5% | ✗ |
+| 2017-04-28 | $143.65 | Apple Q1 FY17 results | 2.00 | -0.51 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | +18.5pp | +32.8% | ✗ |
+| 2017-05-04 | $146.53 | Apple Q2 FY17 results | 2.00 | -0.53 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.2% | +20.8pp | +30.7% | ✗ |
+| 2017-05-12 | $156.10 | Apple Q2 FY17 results | 2.00 | -0.61 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.9% | +5.1pp | +22.9% | ✗ |
+| 2017-05-19 | $153.06 | Apple Q2 FY17 results | 2.00 | -0.59 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.1% | +2.9pp | +25.3% | ✗ |
+| 2017-05-26 | $153.61 | Apple Q2 FY17 results | 2.00 | -0.60 | 0.97x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.1% | -1.0pp | +24.8% | ✓ |
+| 2017-06-02 | $155.45 | Apple Q2 FY17 results | 2.00 | -0.62 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.2% | -0.7pp | +23.2% | ✓ |
+| 2017-06-09 | $148.98 | Apple Q2 FY17 results | 2.00 | -0.56 | 0.86x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | +9.1pp | +28.4% | ✗ |
+| 2017-06-16 | $142.27 | Apple Q2 FY17 results | 2.00 | -0.50 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +39.4% | +16.5pp | +34.5% | ✗ |
+| 2017-06-23 | $146.28 | Apple Q2 FY17 results | 2.00 | -0.54 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.7% | +14.5pp | +31.0% | ✗ |
+| 2017-06-30 | $144.02 | Apple Q2 FY17 results | 2.00 | -0.53 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +41.3% | +15.8pp | +33.2% | ✗ |
+| 2017-07-07 | $144.18 | Apple Q2 FY17 results | 2.00 | -0.53 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +45.5% | +18.0pp | +33.3% | ✗ |
+| 2017-07-14 | $149.04 | Apple Q2 FY17 results | 2.00 | -0.59 | 0.86x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.2% | +13.5pp | +29.1% | ✗ |
+| 2017-07-21 | $150.27 | Apple Q2 FY17 results | 2.00 | -0.61 | 0.89x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.5% | +14.0pp | +28.2% | ✗ |
+| 2017-07-28 | $149.50 | Apple Q2 FY17 results | 2.00 | -0.60 | 0.87x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +16.2pp | +29.1% | ✗ |
+| 2017-08-03 | $155.57 | Apple Q3 FY17 results | 2.00 | -0.65 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.7% | +12.0pp | +24.1% | ✗ |
+| 2017-08-11 | $157.48 | Apple Q3 FY17 results | 2.00 | -0.67 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.3% | +7.6pp | +22.5% | ✗ |
+| 2017-08-18 | $157.50 | Apple Q3 FY17 results | 2.00 | -0.68 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.7% | +11.5pp | +22.4% | ✗ |
+| 2017-08-25 | $159.86 | Apple Q3 FY17 results | 2.00 | -0.70 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.3% | +9.6pp | +20.5% | ✗ |
+| 2017-09-01 | $164.05 | Apple Q3 FY17 results | 2.00 | -0.75 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.7% | +8.6pp | +17.3% | ✗ |
+| 2017-09-08 | $158.63 | Apple Q3 FY17 results | 2.00 | -0.69 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.0% | +13.0pp | +21.1% | ✗ |
+| 2017-09-15 | $159.88 | Apple Q3 FY17 results | 2.00 | -0.70 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.4% | +15.9pp | +20.1% | ✗ |
+| 2017-09-22 | $151.89 | Apple Q3 FY17 results | 2.00 | -0.62 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +47.1% | +23.3pp | +26.5% | ✗ |
+| 2017-09-29 | $154.12 | Apple Q3 FY17 results | 2.00 | -0.65 | 0.98x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.7% | +23.9pp | +24.6% | ✗ |
+| 2017-10-06 | $155.30 | Apple Q3 FY17 results | 2.00 | -0.66 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.9% | +30.0pp | +23.6% | ✗ |
+| 2017-10-13 | $156.99 | Apple Q3 FY17 results | 2.00 | -0.68 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.1% | +33.8pp | +22.4% | ✗ |
+| 2017-10-20 | $156.25 | Apple Q3 FY17 results | 2.00 | -0.67 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.0% | +35.0pp | +23.1% | ✗ |
+| 2017-10-27 | $163.05 | Apple Q3 FY17 results | 2.00 | -0.74 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | +33.6pp | +18.3% | ✗ |
+| 2017-11-03 | $172.50 | Apple Q4 FY17 results | 2.00 | -0.80 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +51.6% | +29.1pp | +12.2% | ✗ |
+| 2017-11-10 | $174.67 | Apple Q4 FY17 results | 2.00 | -0.83 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.3% | +28.5pp | +11.4% | ✗ |
+| 2017-11-17 | $170.15 | Apple Q4 FY17 results | 2.00 | -0.77 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +59.6% | +34.6pp | +15.2% | ✗ |
+| 2017-11-24 | $174.97 | Apple Q4 FY17 results | 2.00 | -0.83 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.0% | +29.5pp | +13.0% | ✗ |
+| 2017-12-01 | $171.05 | Apple Q4 FY17 results | 2.00 | -0.78 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +59.7% | +36.8pp | +16.4% | ✗ |
+| 2017-12-08 | $169.37 | Apple Q4 FY17 results | 2.00 | -0.76 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +63.3% | +40.7pp | +18.6% | ✗ |
+| 2017-12-15 | $173.97 | Apple Q4 FY17 results | 2.00 | -0.82 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.5% | +39.0pp | +16.6% | ✗ |
+| 2017-12-22 | $175.01 | Apple Q4 FY17 results | 2.00 | -0.83 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.0% | +39.1pp | +17.3% | ✗ |
+| 2017-12-29 | $169.23 | Apple Q4 FY17 results | 2.00 | -0.76 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +74.7% | +49.7pp | +22.5% | ✗ |
+| 2018-01-05 | $175.00 | Apple Q4 FY17 results | 2.00 | -0.83 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.3% | +51.5pp | +19.8% | ✗ |
+| 2018-01-12 | $177.09 | Apple Q4 FY17 results | 2.00 | -0.86 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.5% | +57.5pp | +20.1% | ✗ |
+| 2018-01-19 | $178.46 | Apple Q4 FY17 results | 2.00 | -0.88 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.9% | +59.7pp | +21.0% | ✗ |
+| 2018-01-26 | $171.51 | Apple Q4 FY17 results | 2.00 | -0.79 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +89.0% | +70.5pp | +27.4% | ✗ |
+| 2018-02-02 | $160.50 | Apple Q1 FY18 results | 2.00 | -0.48 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +96.5% | +75.8pp | +38.1% | ✗ |
+| 2018-02-09 | $156.41 | Apple Q1 FY18 results | 2.00 | -0.44 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +108.4% | +77.3pp | +43.6% | ✗ |
+| 2018-02-16 | $172.43 | Apple Q1 FY18 results | 2.00 | -0.64 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +91.9% | +64.4pp | +32.0% | ✗ |
+| 2018-02-23 | $175.50 | Apple Q1 FY18 results | 2.00 | -0.67 | 1.67x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +81.8% | +56.5pp | +31.0% | ✗ |
+| 2018-03-02 | $176.21 | Apple Q1 FY18 results | 2.00 | -0.68 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +73.0% | +54.1pp | +31.9% | ✗ |
+| 2018-03-09 | $179.98 | Apple Q1 FY18 results | 2.00 | -0.74 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +51.2% | +49.0pp | +30.4% | ✗ |
+| 2018-03-16 | $178.02 | Apple Q1 FY18 results | 2.00 | -0.71 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.4% | +48.4pp | +32.8% | ✗ |
+| 2018-03-23 | $164.94 | Apple Q1 FY18 results | 2.00 | -0.54 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +39.7% | +49.0pp | +43.9% | ✗ |
+| 2018-03-29 | $167.78 | Apple Q1 FY18 results | 2.00 | -0.57 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +51.2% | +50.7pp | +42.1% | ✗ |
+| 2018-04-06 | $168.38 | Apple Q1 FY18 results | 2.00 | -0.58 | 1.37x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +59.4% | +53.2pp | +42.3% | ✗ |
+| 2018-04-13 | $174.73 | Apple Q1 FY18 results | 2.00 | -0.66 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +59.8% | +51.7pp | +37.8% | ✗ |
+| 2018-04-20 | $165.72 | Apple Q1 FY18 results | 2.00 | -0.55 | 1.28x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +70.7% | +61.0pp | +46.2% | ✗ |
+| 2018-04-27 | $162.32 | Apple Q1 FY18 results | 2.00 | -0.51 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +78.1% | +66.3pp | +50.2% | ✗ |
+| 2018-05-03 | $176.89 | Apple Q2 FY18 results | 2.00 | -0.69 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +66.8% | +54.9pp | +38.6% | ✗ |
+| 2018-05-11 | $188.59 | Apple Q2 FY18 results | 2.00 | -0.96 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.3% | +59.0pp | +31.2% | ✗ |
+| 2018-05-18 | $186.31 | Apple Q2 FY18 results | 2.00 | -0.94 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.3% | +59.5pp | +34.1% | ✗ |
+| 2018-05-25 | $188.58 | Apple Q2 FY18 results | 2.00 | -0.96 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.3% | +59.7pp | +33.7% | ✗ |
+| 2018-06-01 | $190.24 | Apple Q2 FY18 results | 2.00 | -0.98 | 2.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.4% | +56.7pp | +33.9% | ✗ |
+| 2018-06-08 | $191.70 | Apple Q2 FY18 results | 2.00 | -1.00 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.1% | +57.0pp | +34.4% | ✗ |
+| 2018-06-15 | $188.84 | Apple Q2 FY18 results | 2.00 | -0.97 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +84.9% | +70.5pp | +38.0% | ✗ |
+| 2018-06-22 | $184.92 | Apple Q2 FY18 results | 2.00 | -0.92 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.4% | +80.2pp | +42.6% | ✗ |
+| 2018-06-29 | $185.11 | Apple Q2 FY18 results | 2.00 | -0.92 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +98.7% | +82.4pp | +44.2% | ✗ |
+| 2018-07-06 | $187.97 | Apple Q2 FY18 results | 2.00 | -0.96 | 2.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.1% | +83.0pp | +43.4% | ✗ |
+| 2018-07-13 | $191.33 | Apple Q2 FY18 results | 2.00 | -0.99 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.8% | +86.2pp | +42.7% | ✗ |
+| 2018-07-20 | $191.44 | Apple Q2 FY18 results | 2.00 | -1.00 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +108.7% | +88.7pp | +44.5% | ✗ |
+| 2018-07-27 | $190.98 | Apple Q2 FY18 results | 2.00 | -0.99 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +101.8% | +82.9pp | +46.7% | ✗ |
+| 2018-08-02 | $207.39 | Apple Q3 FY18 results | 2.30 | -0.83 | 5.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +107.9% | +88.3pp | +36.6% | ✗ |
+| 2018-08-10 | $207.53 | Apple Q3 FY18 results | 2.30 | -0.83 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +120.3% | +97.8pp | +39.2% | ✗ |
+| 2018-08-17 | $217.58 | Apple Q3 FY18 results | 2.30 | -0.90 | 9.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +113.5% | +91.1pp | +35.0% | ✗ |
+| 2018-08-24 | $216.16 | Apple Q3 FY18 results | 2.30 | -0.89 | 8.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +135.8% | +112.6pp | +38.4% | ✗ |
+| 2018-08-31 | $227.63 | Apple Q3 FY18 results | 2.30 | -0.97 | 33.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +122.0% | +97.4pp | +33.6% | ✗ |
+| 2018-09-07 | $221.30 | Apple Q3 FY18 results | 2.30 | -0.93 | 13.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +121.4% | +98.4pp | +39.9% | ✗ |
+| 2018-09-14 | $223.84 | Apple Q3 FY18 results | 2.30 | -0.95 | 17.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +108.9% | +88.7pp | +40.5% | ✗ |
+| 2018-09-21 | $217.66 | Apple Q3 FY18 results | 2.30 | -0.90 | 9.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +105.1% | +89.3pp | +46.5% | ✗ |
+| 2018-09-28 | $225.74 | Apple Q3 FY18 results | 2.30 | -0.96 | 23.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +106.4% | +87.6pp | +43.2% | ✗ |
+| 2018-10-05 | $224.29 | Apple Q3 FY18 results | 2.30 | -0.94 | 14.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +110.5% | +88.6pp | +46.3% | ✗ |
+| 2018-10-12 | $222.11 | Apple Q3 FY18 results | 2.30 | -0.92 | 11.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +126.8% | +95.1pp | +49.8% | ✗ |
+| 2018-10-19 | $219.31 | Apple Q3 FY18 results | 2.30 | -0.90 | 9.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +114.4% | +86.5pp | +53.9% | ✗ |
+| 2018-10-26 | $216.30 | Apple Q3 FY18 results | 2.30 | -0.88 | 7.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +115.6% | +83.5pp | +58.1% | ✗ |
+| 2018-11-02 | $207.48 | Apple Q4 FY18 results | 2.30 | -0.47 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +112.7% | +87.1pp | +66.7% | ✗ |
+| 2018-11-09 | $204.47 | Apple Q4 FY18 results | 2.30 | -0.45 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +130.6% | +99.0pp | +71.2% | ✗ |
+| 2018-11-16 | $193.53 | Apple Q4 FY18 results | 2.30 | -0.35 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +151.9% | +115.3pp | +83.0% | ✗ |
+| 2018-11-23 | $172.29 | Apple Q4 FY18 results | 2.30 | -0.11 | 0.58x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +168.0% | +127.9pp | +108.0% | ✗ |
+| 2018-11-30 | $178.58 | Apple Q4 FY18 results | 2.30 | -0.20 | 0.67x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +170.2% | +134.8pp | +102.4% | ✗ |
+| 2018-12-07 | $168.49 | Apple Q4 FY18 results | 2.30 | -0.05 | 0.52x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +197.5% | +153.2pp | +117.2% | ✗ |
+| 2018-12-14 | $165.48 | Apple Q4 FY18 results | 2.30 | +0.09 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +198.2% | +153.9pp | +123.8% | ✓ |
+| 2018-12-21 | $150.73 | Apple Q4 FY18 results | 2.30 | +0.36 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +244.5% | +186.9pp | +148.8% | ✓ |
+| 2018-12-28 | $156.23 | Apple Q4 FY18 results | 2.30 | +0.25 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +254.0% | +199.2pp | +142.5% | ✓ |
+| 2019-01-04 | $148.26 | Apple Q4 FY18 results | 2.30 | +0.28 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +253.4% | +202.8pp | +158.0% | ✓ |
+| 2019-01-11 | $152.29 | Apple Q4 FY18 results | 2.30 | +0.21 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +242.9% | +192.3pp | +154.0% | ✓ |
+| 2019-01-18 | $156.82 | Apple Q4 FY18 results | 2.30 | +0.13 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +228.3% | +183.1pp | +148.9% | ✓ |
+| 2019-01-25 | $157.76 | Apple Q4 FY18 results | 2.30 | +0.12 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +266.3% | +217.5pp | +150.1% | ✓ |
+| 2019-01-31 | $166.44 | Apple Q1 FY19 results | 2.00 | -0.32 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +220.9% | +179.6pp | +139.3% | ✓ |
+| 2019-02-08 | $170.41 | Apple Q1 FY19 results | 2.00 | -0.47 | 0.53x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +225.1% | +176.5pp | +136.9% | ✗ |
+| 2019-02-15 | $170.42 | Apple Q1 FY19 results | 2.00 | -0.47 | 0.53x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +221.5% | +175.8pp | +139.1% | ✗ |
+| 2019-02-22 | $172.97 | Apple Q1 FY19 results | 2.00 | -0.50 | 0.56x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +195.1% | +152.4pp | +137.6% | ✗ |
+| 2019-03-01 | $174.97 | Apple Q1 FY19 results | 2.00 | -0.53 | 0.58x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +195.8% | +152.8pp | +137.3% | ✗ |
+| 2019-03-08 | $172.91 | Apple Q1 FY19 results | 2.00 | -0.50 | 0.55x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +172.9% | +129.7pp | +142.3% | ✗ |
+| 2019-03-15 | $186.12 | Apple Q1 FY19 results | 2.00 | -0.64 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +169.9% | +125.4pp | +127.4% | ✗ |
+| 2019-03-22 | $191.05 | Apple Q1 FY19 results | 2.00 | -0.68 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +161.7% | +117.0pp | +124.1% | ✗ |
+| 2019-03-29 | $189.95 | Apple Q1 FY19 results | 2.00 | -0.67 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +159.0% | +114.8pp | +127.9% | ✗ |
+| 2019-04-05 | $197.00 | Apple Q1 FY19 results | 2.00 | -0.73 | 0.96x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +158.9% | +114.1pp | +122.1% | ✗ |
+| 2019-04-12 | $198.87 | Apple Q1 FY19 results | 2.00 | -0.74 | 0.98x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +167.2% | +121.4pp | +122.2% | ✗ |
+| 2019-04-18 | $203.86 | Apple Q1 FY19 results | 2.00 | -0.78 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +166.4% | +118.6pp | +119.1% | ✗ |
+| 2019-04-26 | $204.30 | Apple Q1 FY19 results | 2.00 | -0.78 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +166.9% | +120.7pp | +121.3% | ✗ |
+| 2019-05-02 | $209.15 | Apple Q2 FY19 results | 2.00 | -0.78 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +154.5% | +107.2pp | +118.4% | ✗ |
+| 2019-05-10 | $197.18 | Apple Q2 FY19 results | 2.00 | -0.68 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +160.6% | +111.6pp | +133.9% | ✗ |
+| 2019-05-17 | $189.00 | Apple Q2 FY19 results | 2.00 | -0.61 | 0.79x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +170.7% | +121.3pp | +146.1% | ✗ |
+| 2019-05-24 | $178.97 | Apple Q2 FY19 results | 2.00 | -0.50 | 0.62x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +187.7% | +135.4pp | +161.9% | ✗ |
+| 2019-05-31 | $175.07 | Apple Q2 FY19 results | 2.00 | -0.44 | 0.56x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +188.4% | +131.7pp | +169.4% | ✗ |
+| 2019-06-07 | $190.15 | Apple Q2 FY19 results | 2.00 | -0.62 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +168.2% | +117.5pp | +149.9% | ✗ |
+| 2019-06-14 | $192.74 | Apple Q2 FY19 results | 2.00 | -0.64 | 0.85x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +174.1% | +123.2pp | +148.3% | ✗ |
+| 2019-06-21 | $198.78 | Apple Q2 FY19 results | 2.00 | -0.68 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +169.5% | +122.5pp | +142.5% | ✗ |
+| 2019-06-28 | $197.92 | Apple Q2 FY19 results | 2.00 | -0.68 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +175.7% | +125.9pp | +145.3% | ✗ |
+| 2019-07-05 | $204.23 | Apple Q2 FY19 results | 2.00 | -0.73 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +177.3% | +128.2pp | +139.1% | ✗ |
+| 2019-07-12 | $203.30 | Apple Q2 FY19 results | 2.00 | -0.72 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +187.5% | +138.4pp | +142.2% | ✗ |
+| 2019-07-19 | $202.59 | Apple Q2 FY19 results | 2.00 | -0.72 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +184.5% | +137.6pp | +145.0% | ✗ |
+| 2019-07-26 | $207.74 | Apple Q2 FY19 results | 2.00 | -0.76 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +190.0% | +140.2pp | +140.9% | ✗ |
+| 2019-08-01 | $208.43 | Apple Q3 FY19 results | 2.00 | -0.78 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +183.0% | +130.5pp | +141.8% | ✗ |
+| 2019-08-09 | $200.99 | Apple Q3 FY19 results | 2.00 | -0.71 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +194.0% | +138.5pp | +152.3% | ✗ |
+| 2019-08-16 | $206.50 | Apple Q3 FY19 results | 2.00 | -0.76 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +195.9% | +137.3pp | +146.9% | ✗ |
+| 2019-08-23 | $202.64 | Apple Q3 FY19 results | 2.00 | -0.72 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +198.8% | +137.8pp | +152.8% | ✗ |
+| 2019-08-30 | $208.74 | Apple Q3 FY19 results | 2.00 | -0.78 | 1.18x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +196.6% | +138.1pp | +146.3% | ✗ |
+| 2019-09-06 | $213.26 | Apple Q3 FY19 results | 2.00 | -0.82 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +192.5% | +136.7pp | +141.9% | ✗ |
+| 2019-09-13 | $218.75 | Apple Q3 FY19 results | 2.00 | -0.87 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +176.5% | +124.4pp | +137.1% | ✗ |
+| 2019-09-20 | $217.73 | Apple Q3 FY19 results | 2.00 | -0.86 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +165.6% | +116.3pp | +139.5% | ✗ |
+| 2019-09-27 | $218.82 | Apple Q3 FY19 results | 2.00 | -0.87 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +168.7% | +115.1pp | +139.6% | ✗ |
+| 2019-10-04 | $227.01 | Apple Q3 FY19 results | 2.00 | -0.96 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +148.1% | +98.6pp | +131.9% | ✗ |
+| 2019-10-11 | $236.21 | Apple Q3 FY19 results | 2.00 | -1.04 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +144.6% | +94.1pp | +123.8% | ✗ |
+| 2019-10-18 | $236.41 | Apple Q3 FY19 results | 2.00 | -1.04 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +150.7% | +96.9pp | +124.3% | ✗ |
+| 2019-10-25 | $246.58 | Apple Q3 FY19 results | 2.00 | -1.21 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +143.8% | +89.0pp | +116.1% | ✗ |
+| 2019-11-01 | $255.82 | Apple Q4 FY19 results | 2.00 | -1.37 | 18.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +135.5% | +81.5pp | +109.5% | ✗ |
+| 2019-11-08 | $260.14 | Apple Q4 FY19 results | 2.00 | -1.39 | 39.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +133.9% | +78.4pp | +107.1% | ✗ |
+| 2019-11-15 | $265.76 | Apple Q4 FY19 results | 2.00 | -1.41 | 657.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +128.3% | +74.7pp | +103.6% | ✗ |
+| 2019-11-22 | $261.78 | Apple Q4 FY19 results | 2.00 | -1.39 | 36.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +148.6% | +94.6pp | +107.9% | ✗ |
+| 2019-11-29 | $267.25 | Apple Q4 FY19 results | 2.00 | -1.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +142.3% | +90.9pp | +104.7% | ✗ |
+| 2019-12-06 | $270.71 | Apple Q4 FY19 results | 2.00 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +146.7% | +97.4pp | +103.3% | ✗ |
+| 2019-12-13 | $275.15 | Apple Q4 FY19 results | 2.00 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +157.9% | +107.3pp | +101.5% | ✗ |
+| 2019-12-20 | $279.44 | Apple Q4 FY19 results | 2.00 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +145.4% | +100.0pp | +99.8% | ✗ |
+| 2019-12-27 | $289.80 | Apple Q4 FY19 results | 2.00 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +151.2% | +99.9pp | +93.6% | ✗ |
+| 2019-12-31 | $293.65 | Apple Q4 FY19 results | 2.00 | -1.54 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +145.0% | +93.5pp | +91.8% | ✗ |

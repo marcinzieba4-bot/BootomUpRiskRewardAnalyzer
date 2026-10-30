@@ -1,11 +1,12 @@
 # AAPL retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 418 weekly dates from 2008-01-04 to 2015-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the 627 weekly dates from 2008-01-04 to 2019-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed
-and pushed: 2008 in e0b1ff4, 2009-2011 in 72db502, 2012-2015 in 2b6d96e. Prices run to 2026-10-29; every horizon used here ends by
-2017-12-30. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two
-years. Prices are as traded on each date, so entries before 2014-06-09 are on the pre-split basis (seven times the later one);
-rank correlations across the split use split-adjusted entry prices.
+and pushed: 2008 in e0b1ff4, 2009-2011 in 72db502, 2012-2015 in 2b6d96e, 2016-2019 in 5c467dd. Prices run to 2026-10-29; every
+horizon used here ends by 2021-12-31. Medians of an even count take the upper middle value (`statistics.median_high`). The
+15%/yr hurdle is +32.2% over two years. Prices are as traded on each date, so entries before 2014-06-09 are on the pre-split basis
+(seven times the later one) and entries before 2020-08-31 on the basis before the 4-for-1 split; each later price is put on its
+entry's basis. Rank correlations across the 2014 split use split-adjusted entry prices.
 
 ## 2008 (53 dates)
 
@@ -208,3 +209,180 @@ rank correlations across the split use split-adjusted entry prices.
     growth for two years;
   - a FAIR reading from the EPP distance alone (more than 100% above the floor) said nothing about the outcome on this stock: it
     beat SPY by 35-69pp in 2008 and tracked it within 8pp in 2015.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 48 | +93% | +47% to +120% | 48 | 48 | +65% | 48 |
+| class FAIR | 4 | +92% | +34% to +93% | 4 | 4 | +63% | 0 |
+| legacy tier BUY (all dates) | 52 | +93% | +34% to +120% | 52 | 52 | +64% | 48 |
+| January-June | 25 | +84% | +57% to +114% | 25 | 25 | +63% | 25 |
+| July-December | 27 | +97% | +34% to +120% | 27 | 27 | +65% | 23 |
+
+- **Every date cleared the hurdle and beat SPY,** by 23pp to 80pp, from entries at $90.52-117.63 (9.8-14.0x the last full
+  year's EPS, the 5th-63rd percentile of its own range). The CHEAP call held on all 48 and the median one-year return was +48%.
+  Drawdowns within two years were 13-37%: the six entries from 2016-11-25 lost 26-37% at some point, as their windows end in the
+  fall from the 2018-10-03 high ($232.07).
+- **FAIR failed again by beating the benchmark.** The four FAIR dates (2016-10-14, 10-21, 12-23 and 12-30, at $115.82-117.63: the
+  price 40-55% above the EPP floor with the adjusted gap below +0.30) returned +93%, +93%, +34% and +39%, 23pp to 59pp above SPY,
+  so their call held on none. The October two did as well as the CHEAP dates around them; the December two were the year's lowest
+  returns, their windows ending in the late-2018 fall.
+- **BASE was too low on every date, and BULL was never reached.** The two-year price was 1.29 to 2.28 times the BASE price and at
+  most 87% of the BULL price. It landed nearest BASE on 38 dates and nearest BULL on the 14 from 2016-08-19 to 2016-11-18, whose
+  windows end near the 2018 high. BASE carried the Q2-Q4 FY16 guides' -10.5%, -14.6% and -9.1%/yr for two years on FY15's $9.22,
+  then +2.9% on FY16's $8.31; FY16's EPS fell 10%, FY17's rose 11% and FY18's 29%.
+- **The entry price ranks the outcomes only loosely** (Spearman -0.29). The January-June entries ($90.52-109.99) returned +57% to
+  +114%, the July-December ones ($95.89-117.63) +34% to +120%.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 12 | +33% | +28% to +40% | 7 | 12 | +42% | 11 |
+| class RICH | 40 | +45% | +16% to +75% | 32 | 38 | +24% | 2 |
+| legacy tier BUY | 15 | +34% | +28% to +47% | 10 | 15 | +37% | 11 |
+| legacy tier ACCUMULATE | 24 | +40% | +16% to +55% | 18 | 22 | +26% | 2 |
+| legacy tier WATCHLIST | 13 | +55% | +30% to +75% | 11 | 13 | +17% | 0 |
+| January-June | 26 | +34% | +16% to +48% | 16 | 24 | +34% | 13 |
+| July-December | 26 | +50% | +30% to +75% | 23 | 26 | +22% | 0 |
+
+- **FAIR held; the first RICH readings did not.** The 12 FAIR dates (2017-01-06 to 2017-03-24, $117.91-140.64) returned +28% to
+  +40%, 7pp to 16pp above SPY, and the call held on 11 (not on 2017-03-24, +16.0pp). The 40 RICH dates (from 2017-03-31,
+  $141.05-175.01, 17.0-19.7x, the 81st-93rd percentile) returned +16% to +75%: 32 cleared the hurdle and 38 beat SPY, by up to
+  50pp. The RICH call held only on 2017-05-26 and 2017-06-02 (+20.1% and +16.2%, 1.0pp and 0.7pp behind SPY).
+- **On the endpoint the order ran backwards; on the m12-24 average price it held.** RICH's median two-year return (+45%) beat
+  FAIR's (+33%), the tiers ran WATCHLIST +55%, ACCUMULATE +40%, BUY +34%, and the entry price ranks the outcomes the wrong way
+  (Spearman +0.53): the later, dearer entries' windows end in the rise of late 2019, the earlier ones' in the first half of 2019.
+  On the m12-24 average price the order is the expected one: FAIR +42% against RICH +24%, and BUY +37%, ACCUMULATE +26%,
+  WATCHLIST +17%.
+- **Every window held the fall from the 2018-10-03 high ($232.07) to the 2019-01-03 low ($142.19), 38.7%.** The two-year price
+  landed nearest BASE on 12 dates and BULL on 40, and passed the BULL price on the 10 from 2017-10-27; it was 1.27 to 1.94 times
+  the BASE price. BASE carried +2.9% to +9.2%/yr on FY16's $8.31, then +11.2% on FY17's $9.21.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 3 | +244% | +198% to +254% | 3 | 3 | +142% | 3 |
+| class FAIR | 6 | +168% | +96% to +198% | 6 | 6 | +102% | 0 |
+| class RICH | 43 | +92% | +39% to +136% | 43 | 43 | +39% | 0 |
+| legacy tier BUY | 6 | +198% | +168% to +254% | 6 | 6 | +124% | 3 |
+| legacy tier ACCUMULATE | 2 | +152% | +108% to +152% | 2 | 2 | +83% | 0 |
+| legacy tier WATCHLIST | 15 | +73% | +40% to +131% | 15 | 15 | +39% | 0 |
+| legacy tier AVOID | 29 | +103% | +39% to +136% | 29 | 29 | +39% | 0 |
+| January-June | 26 | +73% | +39% to +108% | 26 | 26 | +34% | 0 |
+| July-December | 26 | +120% | +102% to +254% | 26 | 26 | +47% | 3 |
+
+- **Every date cleared the hurdle and beat SPY,** by 48pp to 199pp, so the RICH and FAIR calls held on none and the CHEAP call on
+  all 3. Every window held the 2019-01-03 low ($142.19); drawdowns were 31-39%, and the median one-year return was +7%.
+- **The class ranked the outcomes in order; the tier nearly did.** CHEAP +244%, FAIR +168%, RICH +92% (m12-24 average price +142%,
+  +102%, +39%). The tiers ran BUY +198%, ACCUMULATE +152%, WATCHLIST +73%, AVOID +103%, and on the m12-24 average +124%, +83%,
+  +39%, +39%. The entry price does not rank them (Spearman +0.30): the July-December entries' windows end after the rise of 2020.
+- **AVOID at one year, not at two.** The 13 dates from 2018-08-02 to 2018-10-26 read AVOID at the 98th-100th percentile
+  (22.5-24.7x FY17's $9.21; Ratio B 5.1x to 33.6x, the highest on 2018-08-31). Scored like RICH at one year (missing the 15%
+  hurdle and lagging SPY), the call would have held on 12 of them (-7.0% to +9.2%, 0.7pp to 9.6pp behind SPY) and on 30 of the
+  year's 43 RICH dates. At two years those 13 returned +105% to +136%, 84pp to 113pp above SPY.
+- **The stale anchor deepened the reading but did not make it.** With no fiscal-year guide the anchor stayed FY17's $9.21 until
+  the Q4 FY18 print, while the FY18 quarters ran ahead (Q1 FY18 $3.89 against $3.36). On 2018-08-31 the price was 24.7x that
+  anchor and 20.6x the trailing four quarters' $11.03, both above the window's 90th-percentile P/E (18.1x). The CHEAP dates
+  (2018-12-14 to 12-28, $150.73-165.48) came after the Q4 FY18 print moved the anchor to $11.91, at 12.7-13.9x.
+- **The two-year price passed the BULL price on 51 of 52 dates** (all but 2018-03-23), at 1.35 to 3.11 times the BASE price, and
+  landed nearest BULL on 27 and XBULL on 25. BASE carried +11.2% to +18.1%/yr on FY17's $9.21, then +5.4% to +5.7% on FY18's
+  $11.91; FY19's EPS was flat ($11.89).
+
+## 2019 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 5 | +243% | +221% to +266% | 5 | 5 | +150% | 5 |
+| class FAIR | 3 | +222% | +188% to +225% | 3 | 3 | +139% | 0 |
+| class RICH | 45 | +167% | +128% to +199% | 45 | 45 | +134% | 0 |
+| legacy tier BUY | 12 | +222% | +173% to +266% | 12 | 12 | +149% | 5 |
+| legacy tier ACCUMULATE | 17 | +170% | +159% to +199% | 17 | 17 | +142% | 0 |
+| legacy tier WATCHLIST | 10 | +183% | +154% to +197% | 10 | 10 | +141% | 0 |
+| legacy tier AVOID | 14 | +145% | +128% to +158% | 14 | 14 | +107% | 0 |
+| January-June | 26 | +174% | +154% to +266% | 26 | 26 | +139% | 5 |
+| July-December | 27 | +158% | +128% to +199% | 27 | 27 | +132% | 0 |
+
+- **The best year of the twelve.** Every date cleared the hurdle and beat SPY, by 75pp to 218pp; the median two-year return was
+  +170% and the median one-year return +83%. Every window held the fall from the 2020-02-12 high to the 2020-03-23 low, 31.4%. The
+  RICH and FAIR calls held on none, the CHEAP call on all 5.
+- **The class, the tier and the entry price all ranked the outcomes** (Spearman -0.75): CHEAP +243%, FAIR +222%, RICH +167%; on
+  the m12-24 average price BUY +149%, ACCUMULATE +142%, WATCHLIST +141%, AVOID +107% (on the endpoint WATCHLIST's +183% beat
+  ACCUMULATE's +170%).
+- **The CHEAP readings came around the guidance letter.** The 5 CHEAP dates (2019-01-04 to 2019-01-31, $148.26-166.44,
+  12.4-14.0x FY18's $11.91) follow the letter of 2019-01-02, which cut the quarter's revenue guide to about $84 billion; with
+  2018's last three they returned +198% to +266%. The three FAIR dates after them (2019-02-08, 02-15 and 05-31) returned +188% to
+  +225%.
+- **The price passed the BULL case and kept rising.** Ratio B was `inf` on the 6 dates from 2019-11-29: the price stood above the
+  BULL case's two-year price (22.5-24.7x FY19's $11.89, the 100th percentile, AVOID). They returned +142% to +158%, 91pp to 107pp
+  above SPY. Every two-year price landed nearest XBULL, at 2.95 to 3.88 times the BASE price and 1.60 to 2.70 times the BULL price.
+  XBULL's price comes from EPS rising 71-75%/yr (the window's best two-year run) at the 90th-percentile P/E: the landing says where
+  the price went, not why.
+
+## 2016-2019 together (209 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all dates | 209 | +95% | +16% to +266% | 196 | 207 | +57% | 69 |
+| class CHEAP | 56 | +98% | +47% to +266% | 56 | 56 | +66% | 56 |
+| class FAIR | 25 | +39% | +28% to +225% | 20 | 25 | +57% | 11 |
+| class RICH | 128 | +102% | +16% to +199% | 120 | 126 | +42% | 2 |
+| legacy tier BUY | 85 | +93% | +28% to +266% | 80 | 85 | +65% | 67 |
+| legacy tier ACCUMULATE | 43 | +50% | +16% to +199% | 37 | 41 | +33% | 2 |
+| legacy tier WATCHLIST | 38 | +73% | +30% to +197% | 36 | 38 | +38% | 0 |
+| legacy tier AVOID | 43 | +114% | +39% to +158% | 43 | 43 | +44% | 0 |
+
+- **RICH failed in level on 126 of its 128 dates.** The first RICH readings on this stock (from 2017-03-31) returned a median
+  +102% over two years, against +98% for CHEAP: 120 cleared the hurdle and 126 beat SPY. AVOID, the most negative tier, had the
+  highest median (+114%) and beat SPY on all 43 of its dates, by 48pp to 113pp. The CHEAP call held on all 56 dates, FAIR's on 11
+  of 25 (all in early 2017).
+- **Within a year the class mostly ranked; the year set the level.** In 2018 and 2019 CHEAP beat FAIR and FAIR beat RICH on both
+  the two-year return and the m12-24 average price; in 2017 FAIR beat RICH on the m12-24 average, not on the endpoint; in 2016
+  CHEAP and FAIR were level. The median two-year return by year of entry was +93%, +40%, +102% and +170%.
+- **What made RICH was the scenario band, not the signals.** On 124 of the 128 RICH dates the adjusted gap read OVERVALUED (-0.50
+  or less), and on 125 the BASE case (the quarter guide carried for two years, at the decade's median P/E) priced the stock below
+  its entry price. The signal proxy sat at 2.00 (every signal BASE against the FY1998-FY2007 thresholds) on 180 of the 209 dates,
+  2.30 on 26 and 2.50 on 3.
+- **The scenarios were too low on every date.** The two-year price never fell below the BASE price (1.27 to 3.88 times it) and
+  never landed nearest BEAR; it landed nearest BASE on 50 dates, BULL on 81 and XBULL on 78, and passed the BULL price on 114. In
+  2008-2015 it had landed nearest BEAR on 69 dates and BASE on 349, and never passed the BULL price.
+- **Every window from 2017 held a fall of 31% or more, whatever the class:** the 38.7% of 2018-10-03 to 2019-01-03 or the 31.4% of
+  2020-02-12 to 2020-03-23. The 2017 FAIR dates fell as far as the RICH dates beside them, and the CHEAP dates of 2018-2019 as far
+  as the RICH dates after them.
+
+## 2008-2019 together (627 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all dates | 627 | +63% | -13% to +323% | 479 | 504 | +52% | 376 |
+| class CHEAP | 434 | +62% | -13% to +323% | 320 | 323 | +60% | 345 |
+| class FAIR | 65 | +35% | +6% to +225% | 39 | 55 | +25% | 29 |
+| class RICH | 128 | +102% | +16% to +199% | 120 | 126 | +42% | 2 |
+| legacy tier BUY | 503 | +56% | -13% to +323% | 363 | 382 | +56% | 374 |
+| legacy tier ACCUMULATE | 43 | +50% | +16% to +199% | 37 | 41 | +33% | 2 |
+| legacy tier WATCHLIST | 38 | +73% | +30% to +197% | 36 | 38 | +38% | 0 |
+| legacy tier AVOID | 43 | +114% | +39% to +158% | 43 | 43 | +44% | 0 |
+
+- **CHEAP held on 345 of 434 dates, FAIR on 29 of 65, RICH on 2 of 128.** CHEAP's is the only call that held as a level on this
+  stock. FAIR's held in 2014-2015 and early 2017; on the 36 others (2008-2009, 2016, 2017-03-24, 2018-2019) the stock beat SPY by
+  more than 15pp. RICH was read only from 2017-03-31.
+- **The two-year price beat the BASE price on 461 of 627 dates:** all but the 131 from 2010-10-20 to 2013-04-19 and 35 of the 141
+  after, to 2015-12-31. Every date from 2016 beat it.
+- **The landing moved up the scenarios.** BEAR 69, BASE 399, BULL 81, XBULL 78: no BULL or XBULL landing before 2016, no BEAR
+  landing after.
+- Hypotheses for the method, to test on other tickers and never to fit to AAPL's outcomes:
+  - the scenario multiples come only from the stock's own decade (BEAR at its 10th percentile P/E, BASE at the median, BULL at the
+    75th, XBULL at the 90th), so a lasting re-rating reads as RICH: the BASE case priced a de-rating on 125 of the 128 RICH dates,
+    and the call held on 2. A later version could set the multiple against the market's, or ask for a second, non-multiple reason
+    before RICH. Test it where a top-percentile multiple did precede a fall as well as where it did not;
+  - for a company that guides one quarter at a time, the last full year's EPS is a stale anchor in both directions (the 2008-2015
+    hypothesis). By 2018-08-31 the trailing four quarters ran 20% ahead of FY17's $9.21 (20.6x against 24.7x), and a BASE case
+    carrying one quarter's guide for two years was too low on every date of 2016-2019;
+  - signal thresholds measured on a company's growth decade (FY1998-FY2007 here) stop moving in its mature phase: every signal read
+    BASE on 180 of the 209 dates of 2016-2019. A later version could measure them on a trailing window, point in time;
+  - the class carried rank information within a year more than level information across years (the entry price in 2008-2009 and
+    2013, the class in 2018-2019, the m12-24 average in 2017). Testing selection needs many tickers on the same dates;
+  - at the top of its range the RICH reading may have a shorter horizon than two years: scored at one year it would have held on
+    30 of the 43 RICH dates of 2018, at two years on none.
