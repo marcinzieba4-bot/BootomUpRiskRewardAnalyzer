@@ -1,12 +1,14 @@
 # AAPL retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 835 weekly dates from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
-never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed
-and pushed: 2008 in e0b1ff4, 2009-2011 in 72db502, 2012-2015 in 2b6d96e, 2016-2019 in 5c467dd, 2020-2023 in 0324b88. Prices run to
-2026-10-29; every horizon used here ends by 2025-12-29. Medians of an even count take the upper middle value
-(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. Prices are as traded on each date, so entries before
-2014-06-09 are on the pre-split basis (seven times the later one) and entries before 2020-08-31 on the basis before the 4-for-1
-split; each later price is put on its entry's basis. Rank correlations across a split use split-adjusted entry prices.
+Patterns seen in `outcome.json` for the 982 weekly dates from 2008-01-04 to 2026-10-23. The 26 dates from 2026-05-01 have no
+outcome yet, and dates after 2024-10-25 have only part of the two-year horizon. They are **labels and hypotheses**: never feed
+them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed:
+2008 in e0b1ff4, 2009-2011 in 72db502, 2012-2015 in 2b6d96e, 2016-2019 in 5c467dd, 2020-2023 in 0324b88, 2024-2026 in 0a119cb.
+Prices run to 2026-10-29; every horizon used here ends by 2026-10-23. Medians of an even count take the upper middle value
+(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years, +15% over one and +7.2% over six months. Prices are as
+traded on each date, so entries before 2014-06-09 are on the pre-split basis (seven times the later one) and entries before
+2020-08-31 on the basis before the 4-for-1 split; each later price is put on its entry's basis. Rank correlations across a split
+use split-adjusted entry prices.
 
 ## 2008 (53 dates)
 
@@ -507,3 +509,88 @@ split; each later price is put on its entry's basis. Rank correlations across a 
     dates, at two years on 45;
   - within a year, the entry price and the tier carried rank information (the 2008-2019 hypothesis, again in all four years);
     testing selection needs many tickers on the same dates.
+
+## 2024 (52 dates; the 43 to 2024-10-25 have a two-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 43 | +47% | +34% to +65% | 43 | 33 | +26% | 0 |
+| legacy tier AVOID (all dates) | 43 | +47% | +34% to +65% | 43 | 33 | +26% | 0 |
+| January-June | 26 | +48% | +34% to +65% | 26 | 20 | +31% | 0 |
+| July-October | 17 | +47% | +36% to +54% | 17 | 13 | +23% | 0 |
+
+- **RICH and AVOID on every date; the call held on none.** Every date cleared the hurdle (+34% to +65%, median +47%) and 33
+  beat SPY, which returned +24% to +50% (median +39%). The ten that lagged it did so by 0.9pp to 11.9pp: the four January
+  entries (2024-01-05 to 2024-01-26, $181-192, Ratio B 6.8-17.3x), whose windows end in January 2026 at $255-267; 2024-06-14
+  and 2024-06-28; and four August entries (2024-08-02 to 2024-08-23).
+- **The cheapest readings returned most, loosely.** The year's lowest price and Ratio B, on 2024-04-19 ($165.00, 26.9x, the
+  83rd percentile, Ratio B 2.71x), returned +65%, and 2024-04-26 ($169.30) +61%. The entry price ranks the year loosely
+  (Spearman -0.30; Ratio B -0.40, its `inf` dates tied at the top) and not at all from July (-0.01), when every Ratio B was
+  `inf`.
+- **Every window held the fall from the 2024-12-26 high ($259.02) to the 2025-04-08 low ($172.42), 33.4%.** The two-year
+  price landed nearest XBULL on 32 dates and BULL on 11, at 2.03 to 2.98 times the BASE price and 1.23 to 1.62 times the BULL
+  price, and below the XBULL price on all 43.
+- **At one year the call held on 28 of the 52 dates.** The median one-year return was +13%, against SPY's +16%. The
+  July-December entries ($216-256) returned -8% to +22% and held on 20 of 26; of the 43 two-year dates, 25 held at one year
+  and none at two. At six months the call held on 21, all from July.
+
+## 2025 (52 dates; one-year horizon to 2025-10-24, no two-year outcome yet)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY (median excess) | Call held |
+|---|---|---|---|---|---|---|
+| class RICH (all dates) | 43 | +36% | +5% to +59% | 32 | 30 (+14pp) | 11 |
+| January-June | 26 | +30% | +5% to +59% | 15 | 13 (+1pp) | 11 |
+| July-October | 17 | +37% | +30% to +58% | 17 | 17 (+19pp) | 0 |
+
+- **One year on, the stock beat SPY on 30 of the 43 dates.** SPY returned +13% to +36% (median +20%), the stock +5% to +59%
+  (median +36%). The RICH call held on 11, all January-March entries ($218-246, 32.3-36.4x, the 92nd-99th percentile), whose
+  years ended from 2026-01-02 to 2026-03-27 at $248-271 (+5% to +15%).
+- **The tariff sell-off gave the year's lowest readings, and they paid.** The 13 entries from 2025-04-04 ($188.38, 27.9x, the
+  81st percentile, Ratio B 2.99x, the year's lowest) to 2025-06-27 ($188-211) returned +30% to +59%, 12 of them ahead of
+  SPY; the 17 July-October entries ($202-263) returned +30% to +58%, all ahead of it. The entry price ranks the year (Spearman
+  -0.56; Ratio B -0.69).
+- **The nine dates from the Q4 FY25 print** (2025-10-31 to 2025-12-26, $268-279, 36.0-37.4x) have six months: +0.6% to
+  +12.5%, behind SPY on seven. The call held on three.
+
+## 2026 (43 dates; six-month horizon to 2026-04-24 only)
+
+- **Too early to score.** The 17 dates with a six-month outcome (2026-01-02 to 2026-04-24, $248-278, 33.2-37.3x, the
+  92nd-99th percentile) all rose, by +12% to +37% (median +28%): each cleared the six-month hurdle and beat SPY (+7% to +22%),
+  by 0.7pp to 22.3pp. The call held on none. The year's lowest Ratio B, 2.76x on 2026-03-20 and 2026-03-27 ($248-249),
+  returned +36% and +37%.
+- **To watch: the batch's highest multiples.** The 26 dates from 2026-05-01 ($280-348) read RICH at 37.6-46.6x FY25's $7.46
+  (the 98th-100th percentile), Ratio B `inf` on 14, while Q1-Q3 FY26 EPS ran 22% ahead of the year before ($6.87 against
+  $5.62; hypothesis below). Their six-month outcomes arrive from November 2026, the two-year ones from May 2028.
+
+## 2008-2024 together (878 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all dates | 878 | +51% | -13% to +323% | 634 | 671 | +36% | 421 |
+| class CHEAP | 434 | +62% | -13% to +323% | 320 | 323 | +60% | 345 |
+| class FAIR | 65 | +35% | +6% to +225% | 39 | 55 | +25% | 29 |
+| class RICH | 379 | +48% | -1% to +199% | 275 | 293 | +30% | 47 |
+| legacy tier BUY | 503 | +56% | -13% to +323% | 363 | 382 | +56% | 374 |
+| legacy tier ACCUMULATE | 43 | +50% | +16% to +199% | 37 | 41 | +33% | 2 |
+| legacy tier WATCHLIST | 44 | +75% | +30% to +197% | 42 | 44 | +42% | 0 |
+| legacy tier AVOID | 288 | +44% | -1% to +192% | 192 | 204 | +28% | 45 |
+
+- **CHEAP held on 345 of 434 dates, FAIR on 29 of 65, RICH on 47 of 379.** 2024 adds 43 RICH dates and no held call. RICH's
+  median two-year return of +48% cleared the hurdle, and its m12-24 average of +30% is half of CHEAP's +60%.
+- **The two-year price beat the BASE price on 712 of 878 dates, every date from 2016.** It landed nearest BEAR on 69 dates and
+  BASE on 349 to 2015; from 2016 nearest BASE on 50, BULL on 175 and XBULL on 235, and never BEAR.
+- Hypotheses for the method, to test on other tickers and never to fit to AAPL's outcomes:
+  - the own-decade P/E band reads a lasting re-rating as RICH (the 2016-2019 hypothesis): RICH on all 355 dates of 2020-2026,
+    at the 72nd-100th percentile of the stock's own range; of the 251 with a two-year outcome the call held on 45, none of them
+    in 2024;
+  - with no guidance, the last full year's EPS is the anchor while the year in progress runs ahead (FY20's $3.28 through 2021;
+    FY25's $7.46 in 2026, with Q1-Q3 FY26 EPS 22% above the year before), and the fallback carries one quarter's net sales
+    growth for two years (BASE +0.7% to +20.9%/yr in 2024-2026; the two-year price 2.03 to 2.98 times the BASE price on every
+    2024 date). Anchoring on the trailing four quarters (the 2008-2015 anchor hypothesis) is one candidate; test it where a
+    company stopped guiding;
+  - the horizon is not a rule: at one year the RICH call held on 25 of 2024's 43 two-year dates and at two years on none, while
+    in 2020-2023 it held on 32 of 208 at one year and 45 at two (the 2016-2019 hypothesis of a shorter horizon holds in some
+    years and reverses in others);
+  - within a year, the entry price and Ratio B carried rank information (Spearman -0.30 and -0.40 for 2024 at two years, -0.56
+    and -0.69 for 2025 at one year), weaker than in 2020-2022: a ranking, not a level. Testing selection needs many tickers on
+    the same dates.
