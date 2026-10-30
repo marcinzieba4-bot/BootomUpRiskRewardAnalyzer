@@ -7,9 +7,10 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-03-31 UNP          # the UNP series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 LOW          # the LOW series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 AAPL         # the AAPL series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 NKE          # the NKE series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
-dividend; LOW and AAPL: also a guide with every guided field), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -33,7 +34,7 @@ TICKER = sys.argv[2].upper() if len(sys.argv) > 2 else "ACN"
 FACTS = os.path.join(ROOT, "retro", "facts", f"{TICKER}.json")
 CACHE = [os.path.join(ROOT, "retro", ".cache", n) for n in (f"{TICKER}.json", "_GSPC.json")]
 OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP", "LOW": "staging/retrospective/LOW",
-          "AAPL": "staging/retrospective/AAPL"}[TICKER]
+          "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -51,15 +52,22 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       op_margin=-50.0, op_margin_bp=-999, mac_units_k=1, mac_units_pct=-60.0, non_mac_pct=-60.0, ipod_units_k=1,
                       ipod_units_pct=-60.0, iphone_units_k=1, eps_q=0.01, eps_q_prior=9.99, deferred_iphone_b=99.0,
                       non_gaap_note="PLANTED", cash_return_text="PLANTED", outlook_short="PLANTED", next_print="PLANTED",
-                      diluted_shares_m=1.0, cash_b=99.0, mac_sales_pct=-60.0, iphone_sales_pct=-60.0)}[TICKER]
-# LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads
+                      diluted_shares_m=1.0, cash_b=99.0, mac_sales_pct=-60.0, iphone_sales_pct=-60.0),
+         "NKE": dict(quarter="Q1 FY99", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, lc_pct=-60.0,
+                     lc_note="PLANTED", futures_pct=-60.0, futures_fx_pp=-99.0, futures_b=0.01, futures_note="PLANTED",
+                     futures_fx_note="PLANTED", gross_margin=1.0, gross_margin_bp=-999.0, pretax_margin=-50.0,
+                     pretax_margin_bp=-999.0, inventory_b=99.0, inventory_pct=99.0, inventory_gap_pp=99.0, eps_q=0.01,
+                     eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, next_print="PLANTED",
+                     cash_return_text="PLANTED")}[TICKER]
+# LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
                            q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2]}),
                "AAPL": dict(gm_guide_pct=[1, 2], q_guide_note="PLANTED",
                             q_guide={"quarter": "Q4 FY99", "sales_usd_b": [0.1, 0.2], "eps": [0.1, 0.2], "prior_sales_b": 99.0,
                                      "prior_source": "A14", "prior_label": "PLANTED", "gm_pct": [1, 2], "opex_usd_b": [99.0, 99.0],
-                                     "oie_usd_b": [99.0, 99.0], "tax_pct": [99.0, 99.0]})}.get(TICKER, {})
+                                     "oie_usd_b": [99.0, 99.0], "tax_pct": [99.0, 99.0]}),
+               "NKE": dict(words=["PLANTED"])}.get(TICKER, {})
 
 git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True, check=True).stdout
 if git("status", "--porcelain", "retro/facts", OUTDIR).strip():

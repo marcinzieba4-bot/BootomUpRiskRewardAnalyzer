@@ -1,0 +1,951 @@
+{
+ "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. NIKE gave no revenue, EPS or margin guide in numbers in any filing of the period: the outlook on its calls is in words ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states. rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "NKE",
+ "sources": {
+  "N1": {
+   "published": "2007-07-30",
+   "filed": "2007-07-27 16:16 ET (after the close)",
+   "title": "NIKE, Inc. FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312507164166/d10k.htm",
+   "supports": "selected financial data FY2003-FY2007 (revenues, gross margin, diluted EPS before cumulative effect of accounting change, diluted shares 535.2M in FY03 and 509.9M in FY07, inventories), restated for the 2-for-1 split distributed 2007-04-02; reconciliation of diluted EPS excluding the Converse arbitration and stock-based compensation ($3.10 FY07, $2.70 FY06); income statement FY2005-FY2007 (income before income taxes, income taxes); revenues and pre-tax income by operating segment; futures and advance orders 'nearly 12% higher'; cash flow (operations $1,878.7M, additions to PP&E $313.5M, repurchases $985.2M); quarterly dividends declared; fiscal year ends May 31; business, competition and pre-tax income segment measure wording"
+  },
+  "N2": {
+   "published": "2006-07-31",
+   "filed": "2006-07-28 17:04 ET (after the close)",
+   "title": "NIKE, Inc. FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312506156152/d10k.htm",
+   "supports": "selected financial data FY2002-FY2006 (FY02 revenues, diluted EPS before cumulative effect $2.46, gross margin, inventories); income statement FY2004-FY2006 (income before income taxes); futures and advance orders '5.0% higher'"
+  },
+  "N3": {
+   "published": "2005-08-01",
+   "filed": "2005-07-29 17:12 ET (after the close)",
+   "title": "NIKE, Inc. FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000095012405004551/v10583e10vk.htm",
+   "supports": "selected financial data FY2001-FY2005 (FY01 revenues, diluted EPS $2.16, gross margin, inventories); income statement FY2003-FY2005 (income before income taxes); futures and advance orders '9.5% higher'"
+  },
+  "N4": {
+   "published": "2004-08-02",
+   "filed": "2004-07-30 17:04 ET (after the close)",
+   "title": "NIKE, Inc. FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312504128270/d10k.htm",
+   "supports": "selected financial data FY2000-FY2004 (FY00 revenues, diluted EPS $2.07, gross margin, inventories); income statement FY2002-FY2004 (income before income taxes); futures and advance orders '11.3% higher'"
+  },
+  "N5": {
+   "published": "2003-08-08",
+   "filed": "2003-08-07 17:13 ET (after the close)",
+   "title": "NIKE, Inc. FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312503031022/d10k.htm",
+   "supports": "selected financial data FY1999-FY2003 (FY99 revenues, diluted EPS $1.57, diluted shares 288.3M, gross margin, inventories); income statement FY2001-FY2003 (income before income taxes); futures and advance orders '5.0% higher'"
+  },
+  "N6": {
+   "published": "2002-08-14",
+   "filed": "2002-08-14 15:37 ET (during market hours)",
+   "title": "NIKE, Inc. FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000089102002001248/v83383ore10vk.htm",
+   "supports": "eleven-year financial history FY1992-FY2002 (FY97-FY99 revenues, gross margin, inventories; FY98 diluted EPS $1.35 and diluted shares 295.0M); income statement FY2000-FY2002 (income before income taxes); futures orders '6.3% higher'"
+  },
+  "N7": {
+   "published": "2001-08-09",
+   "filed": "2001-08-09 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000109581101503828/v74223e10-k.txt",
+   "supports": "income statement FY1999-FY2001 (revenues, income before income taxes); futures and advance orders '3% higher'"
+  },
+  "N8": {
+   "published": "2000-08-29",
+   "filed": "2000-08-29 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY2000 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000091205700039514/a10-k405.txt",
+   "supports": "income statement FY1998-FY2000 (revenues, income before income taxes); futures and advance orders '3% higher'"
+  },
+  "N9": {
+   "published": "1999-08-26",
+   "filed": "1999-08-26 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018799000010/0000320187-99-000010.txt",
+   "supports": "income statement FY1997-FY1999 (revenues, income before income taxes); FY99 restructuring charge '$0.10 per diluted share'; futures and advance orders '4% higher'"
+  },
+  "N10": {
+   "published": "1998-08-26",
+   "filed": "1998-08-26 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY1998 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018798000018/0000320187-98-000018.txt",
+   "supports": "FY98 restructuring charge '$0.27 per diluted share'; futures and advance orders '13% lower'"
+  },
+  "N11": {
+   "published": "2007-02-20",
+   "filed": "2007-02-16 18:04 ET (after the close; 2007-02-19 was a market holiday)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000022/f8k070215.txt",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable April 2, 2007 to holders of record March 12, 2007; split-adjusted trading from April 3, 2007 (ex.99.1)"
+  },
+  "N12": {
+   "published": "2007-03-23",
+   "filed": "2007-03-22 16:28 ET (after the close)",
+   "title": "NIKE Q3 FY07 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000031/exhibit99er.txt",
+   "supports": "Q3 FY07 worldwide futures orders 9 percent higher"
+  },
+  "N13": {
+   "published": "2007-06-27",
+   "filed": "2007-06-26 16:24 ET (after the close)",
+   "title": "NIKE Q4 FY07 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000057/exhibit_99er.txt",
+   "supports": "Q4 FY07 and FY07 income statement, balance sheet, divisional revenues; futures 12 percent higher; FY07 EPS excluding stock options and the Converse arbitration $3.10 vs $2.70"
+  },
+  "N14": {
+   "published": "2007-07-02",
+   "filed": "2007-07-02 13:37 ET (during market hours)",
+   "title": "NIKE Q4 FY07 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000061/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2008 outlook in words"
+  },
+  "N15": {
+   "published": "2007-09-21",
+   "filed": "2007-09-20 16:37 ET (after the close)",
+   "title": "NIKE Q1 FY08 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000205/exhibit99er.txt",
+   "supports": "Q1 FY08 income statement and balance sheet; futures 11.5 percent higher; one-time tax benefit of $0.20 per diluted share"
+  },
+  "N16": {
+   "published": "2007-09-26",
+   "filed": "2007-09-25 19:04 ET (after the close)",
+   "title": "NIKE Q1 FY08 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000207/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2008 outlook in words"
+  },
+  "N17": {
+   "published": "2007-12-20",
+   "filed": "2007-12-19 16:30 ET (after the close)",
+   "title": "NIKE Q2 FY08 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000240/exhibit99.txt",
+   "supports": "Q2 FY08 income statement and balance sheet; futures 13 percent higher; dividend declared $0.23 (was $0.185)"
+  },
+  "N18": {
+   "published": "2007-12-21",
+   "filed": "2007-12-21 14:56 ET (during market hours)",
+   "title": "NIKE Q2 FY08 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000244/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2008 outlook in words"
+  },
+  "N19": {
+   "published": "2008-03-20",
+   "filed": "2008-03-19 16:16 ET (after the close)",
+   "title": "NIKE Q3 FY08 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000014/exhibit99er.txt",
+   "supports": "Q3 FY08 income statement and balance sheet; futures 11 percent higher; Starter sale gain of $29 million"
+  },
+  "N20": {
+   "published": "2008-03-25",
+   "filed": "2008-03-24 16:21 ET (after the close)",
+   "title": "NIKE Q3 FY08 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000016/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2008 and fiscal 2009 outlook in words"
+  },
+  "N21": {
+   "published": "2008-06-26",
+   "filed": "2008-06-25 16:18 ET (after the close)",
+   "title": "NIKE Q4 FY08 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000040/exhibit_99er.txt",
+   "supports": "Q4 FY08 and FY08 income statement and balance sheet; futures 11 percent higher; FY08 one-time tax benefit of $0.21 per diluted share; Starter and Bauer sale gains"
+  },
+  "N22": {
+   "published": "2008-06-30",
+   "filed": "2008-06-30 13:54 ET (during market hours)",
+   "title": "NIKE Q4 FY08 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000043/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2009 outlook in words"
+  },
+  "N23": {
+   "published": "2008-07-29",
+   "filed": "2008-07-28 16:08 ET (after the close)",
+   "title": "NIKE, Inc. FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312508159004/d10k.htm",
+   "supports": "selected financial data FY2004-FY2008 (revenues, gross margin, diluted EPS, diluted shares 504.1M in FY08, inventories); income statement FY2006-FY2008; revenues by operating segment; futures and advance orders 'more than 11% higher'; cash flow (operations $1,936.3M, additions to PP&E $449.2M, repurchases $1,248.0M); quarterly dividends declared; business and competition wording"
+  },
+  "N24": {
+   "published": "2008-09-25",
+   "filed": "2008-09-24 16:28 ET (after the close)",
+   "title": "NIKE Q1 FY09 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000110/exhibit99.htm",
+   "supports": "Q1 FY09 income statement and balance sheet; futures 10 percent higher; the new four-year $5 billion repurchase program"
+  },
+  "N25": {
+   "published": "2008-09-29",
+   "filed": "2008-09-29 13:33 ET (during market hours)",
+   "title": "NIKE Q1 FY09 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000118/exhibit99.htm",
+   "supports": "the CFO's fiscal 2009 outlook in words"
+  },
+  "N26": {
+   "published": "2008-12-18",
+   "filed": "2008-12-17 16:17 ET (after the close)",
+   "title": "NIKE Q2 FY09 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000131/exhibit99.htm",
+   "supports": "Q2 FY09 income statement and balance sheet; futures 1 percent lower, 6 percent higher excluding currency changes; dividend declared $0.25 (was $0.23)"
+  },
+  "N27": {
+   "published": "2008-12-24",
+   "filed": "2008-12-23 17:00 ET (after the close)",
+   "title": "NIKE Q2 FY09 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000114036108028593/ex99.htm",
+   "supports": "the CFO's fiscal 2009 outlook in words"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-07-30",
+   "sources": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N12"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY07",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2007 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2003": "2003-05-31",
+    "2004": "2004-05-31",
+    "2005": "2005-05-31",
+    "2006": "2006-05-31",
+    "2007": "2007-05-31"
+   },
+   "eps_gaap": {
+    "1998": 1.35,
+    "1999": 1.57,
+    "2000": 2.07,
+    "2001": 2.16,
+    "2002": 2.44,
+    "2003": 0.89,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93
+   },
+   "eps_normalized": {
+    "1998": 1.35,
+    "1999": 1.57,
+    "2000": 2.07,
+    "2001": 2.16,
+    "2002": 2.46,
+    "2003": 1.38,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93
+   },
+   "eps_published": {
+    "1998": "2002-08-14",
+    "1999": "2003-08-08",
+    "2000": "2004-08-02",
+    "2001": "2005-08-01",
+    "2002": "2006-07-31"
+   },
+   "revenue_usd_b": {
+    "1998": 9.5531,
+    "1999": 8.7769,
+    "2000": 8.9951,
+    "2001": 9.4888,
+    "2002": 9.893,
+    "2003": 10.697,
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.9549,
+    "2007": 16.3259
+   },
+   "diluted_shares_m": {
+    "1998": 295.0,
+    "2007": 509.9
+   },
+   "shares_published": {
+    "1998": "2002-08-14"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.47,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes $2,199.9M / revenues $16,325.9M (FY2007 10-K)",
+   "prev_fy_gross_margin": 43.86,
+   "prev_fy_sales_growth": 9.2,
+   "prev_fy_futures_pct": 12.0,
+   "prev_fy_futures_note": "the FY2007 10-K: 'nearly 12% higher'",
+   "tax_rate": 0.322,
+   "tax_note": "FY07 effective rate: income taxes $708.4M / pre-tax income $2,199.9M ('32.2%', FY2007 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 1.565,
+   "fcf_label": "FY07",
+   "prev_q_futures_pct": 9.0,
+   "prev_q_label": "Q3 FY07",
+   "prev_q_source": "N12",
+   "dividend_annual": 0.74,
+   "dividend_note": "$0.185 quarterly, declared in each of Q2-Q4 FY07 (FY2007 10-K)",
+   "cash_return_text": "$985.2M of share repurchases in FY07, long-term debt $409.9M",
+   "business_line": "NIKE brand footwear, apparel and equipment; Cole Haan, Converse, Exeter Brands Group, Hurley, NIKE Bauer Hockey and NIKE Golf",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY02, FY03), each year from the latest 10-K that reports it; FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY98 and FY99 keep their restructuring charges ($0.27 and $0.10 per diluted share, no published EPS excluding them); no year excluded",
+   "groups": [
+    [
+     "U.S. Region",
+     6.1071,
+     6.7
+    ],
+    [
+     "EMEA Region",
+     4.7233,
+     9.2
+    ],
+    [
+     "Asia Pacific Region",
+     2.2834,
+     11.2
+    ],
+    [
+     "Americas Region",
+     0.9525,
+     5.3
+    ],
+    [
+     "Other",
+     2.2596,
+     16.0
+    ]
+   ],
+   "groups_basis": "FY07 revenues by operating segment (FY2007 10-K)"
+  },
+  {
+   "published": "2008-07-29",
+   "sources": [
+    "N23",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N19"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY08",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2008 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2004": "2004-05-31",
+    "2005": "2005-05-31",
+    "2006": "2006-05-31",
+    "2007": "2007-05-31",
+    "2008": "2008-05-31"
+   },
+   "eps_gaap": {
+    "1999": 1.57,
+    "2000": 2.07,
+    "2001": 2.16,
+    "2002": 2.44,
+    "2003": 0.89,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74
+   },
+   "eps_normalized": {
+    "1999": 1.57,
+    "2000": 2.07,
+    "2001": 2.16,
+    "2002": 2.46,
+    "2003": 1.38,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.74
+   },
+   "eps_published": {
+    "1999": "2003-08-08",
+    "2000": "2004-08-02",
+    "2001": "2005-08-01",
+    "2002": "2006-07-31",
+    "2003": "2007-07-30",
+    "2006": "2007-07-30"
+   },
+   "revenue_usd_b": {
+    "1999": 8.7769,
+    "2000": 8.9951,
+    "2001": 9.4888,
+    "2002": 9.893,
+    "2003": 10.697,
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.9549,
+    "2007": 16.3259,
+    "2008": 18.627
+   },
+   "diluted_shares_m": {
+    "1999": 288.3,
+    "2008": 504.1
+   },
+   "shares_published": {
+    "1999": "2003-08-08"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.44,
+   "prev_fy_pretax_margin_note": "FY08 income before income taxes $2,502.9M / revenues $18,627.0M (FY2008 10-K)",
+   "prev_fy_gross_margin": 45.03,
+   "prev_fy_sales_growth": 14.1,
+   "prev_fy_futures_pct": 11.0,
+   "prev_fy_futures_note": "the FY2008 10-K: 'more than 11% higher'",
+   "tax_rate": 0.2475,
+   "tax_note": "FY08 effective rate: income taxes $619.5M / pre-tax income $2,502.9M ('24.8%', FY2008 10-K), with the one-time benefit from past foreign losses; a tax-rate estimate on a call feeds no input",
+   "fcf_b": 1.487,
+   "fcf_label": "FY08",
+   "prev_q_futures_pct": 11.0,
+   "prev_q_label": "Q3 FY08",
+   "prev_q_source": "N19",
+   "dividend_annual": 0.92,
+   "dividend_note": "$0.23 quarterly, declared in each of Q2-Q4 FY08 (FY2008 10-K)",
+   "cash_return_text": "$1,248.0M of share repurchases in FY08, long-term debt $441.1M",
+   "business_line": "NIKE brand footwear, apparel and equipment; Cole Haan, Converse, Hurley, NIKE Golf and Umbro (acquired in FY08; Starter and NIKE Bauer Hockey sold)",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY02, FY03), each year from the latest 10-K that reports it; FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY99 keeps its restructuring charge ($0.10 per diluted share, no published EPS excluding it); FY08 = GAAP $3.74 (FY2008 10-K): its one-time tax benefit ($0.21 per diluted share) and the Starter and Bauer sale gains have no published EPS excluding them; no year excluded",
+   "groups": [
+    [
+     "U.S. Region",
+     6.378,
+     4.4
+    ],
+    [
+     "EMEA Region",
+     5.6204,
+     19.0
+    ],
+    [
+     "Asia Pacific Region",
+     2.8817,
+     26.2
+    ],
+    [
+     "Americas Region",
+     1.1541,
+     21.2
+    ],
+    [
+     "Other",
+     2.5928,
+     14.7
+    ]
+   ],
+   "groups_basis": "FY08 revenues by operating segment (FY2008 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 FY07",
+   "fy": 2007,
+   "q": 4,
+   "published": "2007-06-27",
+   "source": "N13",
+   "release": "Jun 26",
+   "release_time": "after the close on Jun 26: 8-K accepted 16:24 ET; public before the open of the next trading day",
+   "period_end": "2007-05-31",
+   "sales_b": 4.3832,
+   "sales_pct": 9.4,
+   "sales_note": "revenues $4,383.2M vs $4,005.4M",
+   "lc_pct": 7.0,
+   "lc_note": "revenue grew 9 percent; currency changes increased revenue growth by 2 percentage points",
+   "futures_pct": 12.0,
+   "futures_fx_pp": 1.0,
+   "futures_b": 7.7,
+   "futures_note": "worldwide futures orders for delivery June-November 2007, $7.7B",
+   "gross_margin": 43.78,
+   "gross_margin_bp": 0.5,
+   "gross_margin_note": "gross margin $1,919.0M / $4,383.2M vs $1,753.4M / $4,005.4M",
+   "pretax_margin": 15.03,
+   "pretax_margin_bp": 226.7,
+   "pretax_note": "income before income taxes $658.8M / $4,383.2M vs $511.2M / $4,005.4M",
+   "inventory_b": 2.1219,
+   "inventory_pct": 2.2,
+   "inventory_gap_pp": -7.3,
+   "inventory_note": "inventories $2,121.9M vs $2,076.7M a year earlier",
+   "eps_q": 0.86,
+   "eps_q_prior": 0.64,
+   "diluted_shares_m": 510.2,
+   "cash_b": 2.847,
+   "cash_note": "cash and equivalents $1,856.7M + short-term investments $990.3M",
+   "next_print": "Q1 FY08 print (late September)",
+   "cash_return_text": "$281.2M of repurchases in Q4 FY07 under the four-year $3 billion program approved in June 2006",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 2.93,
+    "revenue_usd_b": 16.3259,
+    "diluted_shares_m": 509.9,
+    "normalization_note": "FY07 = diluted EPS $2.93 as released; the release's $3.10 also excludes the expensing of stock options, a recurring expense, so GAAP stands",
+    "pretax_margin": 13.47,
+    "pretax_margin_note": "FY07 income before income taxes $2,199.9M / $16,325.9M (Q4 FY07 release)",
+    "gross_margin": 43.86,
+    "sales_growth": 9.2,
+    "futures_pct": 12.0,
+    "tax_rate": 0.322,
+    "tax_note": "FY07 effective rate: income taxes $708.4M / pre-tax income $2,199.9M"
+   }
+  },
+  {
+   "quarter": "Q1 FY08",
+   "fy": 2008,
+   "q": 1,
+   "published": "2007-09-21",
+   "source": "N15",
+   "release": "Sep 20",
+   "release_time": "after the close on Sep 20: 8-K accepted 16:37 ET; public before the open of the next trading day",
+   "period_end": "2007-08-31",
+   "sales_b": 4.6551,
+   "sales_pct": 11.0,
+   "sales_note": "revenues $4,655.1M vs $4,194.1M",
+   "lc_pct": 8.0,
+   "lc_note": "revenue grew 11 percent; currency changes increased revenue growth by 3 percentage points",
+   "futures_pct": 11.5,
+   "futures_fx_pp": 1.0,
+   "futures_b": 5.9,
+   "futures_note": "worldwide futures orders for delivery September 2007-January 2008, $5.9B",
+   "gross_margin": 44.83,
+   "gross_margin_bp": 74.2,
+   "gross_margin_note": "gross margin $2,087.0M / $4,655.1M vs $1,849.2M / $4,194.1M",
+   "pretax_margin": 14.4,
+   "pretax_margin_bp": 67.0,
+   "pretax_note": "income before income taxes $670.3M / $4,655.1M vs $575.8M / $4,194.1M",
+   "inventory_b": 2.1549,
+   "inventory_pct": 1.0,
+   "inventory_gap_pp": -10.0,
+   "inventory_note": "inventories $2,154.9M vs $2,134.3M a year earlier",
+   "eps_q": 1.12,
+   "eps_q_prior": 0.74,
+   "diluted_shares_m": 507.3,
+   "cash_b": 2.7913,
+   "cash_note": "cash and equivalents $1,973.9M + short-term investments $817.4M",
+   "next_print": "Q2 FY08 print (late December)",
+   "cash_return_text": "$321.5M of repurchases in Q1 FY08 under the four-year $3 billion program approved in June 2006",
+   "eps_note": "Q1 FY08 EPS includes a one-time tax benefit of $0.20 per diluted share (utilization of past foreign losses)"
+  },
+  {
+   "quarter": "Q2 FY08",
+   "fy": 2008,
+   "q": 2,
+   "published": "2007-12-20",
+   "source": "N17",
+   "release": "Dec 19",
+   "release_time": "after the close on Dec 19: 8-K accepted 16:30 ET; public before the open of the next trading day",
+   "period_end": "2007-11-30",
+   "sales_b": 4.3395,
+   "sales_pct": 13.5,
+   "sales_note": "revenues $4,339.5M vs $3,821.7M",
+   "lc_pct": 10.0,
+   "lc_note": "revenue grew 14 percent; currency changes increased revenue growth by 4 percentage points",
+   "futures_pct": 13.0,
+   "futures_fx_pp": 3.0,
+   "futures_b": 6.5,
+   "futures_note": "worldwide futures orders for delivery December 2007-April 2008, $6.5B",
+   "gross_margin": 44.27,
+   "gross_margin_bp": 91.0,
+   "gross_margin_note": "gross margin $1,921.1M / $4,339.5M vs $1,657.1M / $3,821.7M",
+   "pretax_margin": 11.88,
+   "pretax_margin_bp": 17.7,
+   "pretax_note": "income before income taxes $515.6M / $4,339.5M vs $447.3M / $3,821.7M",
+   "inventory_b": 2.2237,
+   "inventory_pct": 2.6,
+   "inventory_gap_pp": -10.9,
+   "inventory_note": "inventories $2,223.7M vs $2,167.2M a year earlier",
+   "eps_q": 0.71,
+   "eps_q_prior": 0.64,
+   "diluted_shares_m": 506.2,
+   "cash_b": 3.0715,
+   "cash_note": "cash and equivalents $2,470.5M + short-term investments $601.0M",
+   "next_print": "Q3 FY08 print (late March)",
+   "cash_return_text": "$292.8M of repurchases in Q2 FY08 ($1.4B to date of the four-year $3 billion program approved in June 2006)"
+  },
+  {
+   "quarter": "Q3 FY08",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-03-20",
+   "source": "N19",
+   "release": "Mar 19",
+   "release_time": "after the close on Mar 19: 8-K accepted 16:16 ET; public before the open of the next trading day",
+   "period_end": "2008-02-29",
+   "sales_b": 4.5444,
+   "sales_pct": 15.7,
+   "sales_note": "revenues $4,544.4M vs $3,926.9M",
+   "lc_pct": 10.0,
+   "lc_note": "revenue grew 16 percent; currency changes increased revenue growth by 6 percentage points",
+   "futures_pct": 11.0,
+   "futures_fx_pp": 2.0,
+   "futures_b": 6.9,
+   "futures_note": "worldwide futures orders for delivery March-July 2008, $6.9B",
+   "gross_margin": 45.06,
+   "gross_margin_bp": 87.7,
+   "gross_margin_note": "gross margin $2,047.9M / $4,544.4M vs $1,735.2M / $3,926.9M",
+   "pretax_margin": 14.71,
+   "pretax_margin_bp": 152.4,
+   "pretax_note": "income before income taxes $668.7M / $4,544.4M vs $518.0M / $3,926.9M",
+   "inventory_b": 2.3909,
+   "inventory_pct": 10.3,
+   "inventory_gap_pp": -5.4,
+   "inventory_note": "inventories $2,390.9M vs $2,167.8M a year earlier",
+   "eps_q": 0.92,
+   "eps_q_prior": 0.68,
+   "diluted_shares_m": 502.5,
+   "cash_b": 2.9266,
+   "cash_note": "cash and equivalents $2,242.4M + short-term investments $684.2M",
+   "next_print": "Q4 FY08 print (late June)",
+   "cash_return_text": "$343.9M of repurchases in Q3 FY08 ($1.8B to date of the four-year $3 billion program approved in June 2006)",
+   "eps_note": "Q3 FY08 other income includes the $29 million gain on the sale of the Starter brand"
+  },
+  {
+   "quarter": "Q4 FY08",
+   "fy": 2008,
+   "q": 4,
+   "published": "2008-06-26",
+   "source": "N21",
+   "release": "Jun 25",
+   "release_time": "after the close on Jun 25: 8-K accepted 16:18 ET; public before the open of the next trading day",
+   "period_end": "2008-05-31",
+   "sales_b": 5.088,
+   "sales_pct": 16.1,
+   "sales_note": "revenues $5,088.0M vs $4,383.2M",
+   "lc_pct": 9.0,
+   "lc_note": "revenue grew 16 percent; currency changes increased revenue growth by 7 percentage points",
+   "futures_pct": 11.0,
+   "futures_fx_pp": 3.0,
+   "futures_b": 8.8,
+   "futures_note": "worldwide futures orders for delivery June-November 2008, $8.8B",
+   "gross_margin": 45.82,
+   "gross_margin_bp": 204.1,
+   "gross_margin_note": "gross margin $2,331.4M / $5,088.0M vs $1,919.0M / $4,383.2M",
+   "pretax_margin": 12.74,
+   "pretax_margin_bp": -228.8,
+   "pretax_note": "income before income taxes $648.3M / $5,088.0M vs $658.8M / $4,383.2M",
+   "inventory_b": 2.4384,
+   "inventory_pct": 14.9,
+   "inventory_gap_pp": -1.2,
+   "inventory_note": "inventories $2,438.4M vs $2,121.9M a year earlier",
+   "eps_q": 0.98,
+   "eps_q_prior": 0.86,
+   "diluted_shares_m": 500.1,
+   "cash_b": 2.7761,
+   "cash_note": "cash and equivalents $2,133.9M + short-term investments $642.2M",
+   "next_print": "Q1 FY09 print (late September)",
+   "cash_return_text": "$290M of repurchases in Q4 FY08 ($2.1B to date of the four-year $3 billion program approved in June 2006)",
+   "eps_note": "Q4 FY08 other income includes the $32 million gain on the sale of NIKE Bauer Hockey",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 3.74,
+    "revenue_usd_b": 18.627,
+    "diluted_shares_m": 504.1,
+    "normalization_note": "FY08 = diluted EPS $3.74 as released; its one-time tax benefit ($0.21 per diluted share) and the Starter and Bauer sale gains have no published EPS excluding them, so GAAP stands",
+    "pretax_margin": 13.44,
+    "pretax_margin_note": "FY08 income before income taxes $2,502.9M / $18,627.0M (Q4 FY08 release)",
+    "gross_margin": 45.03,
+    "sales_growth": 14.1,
+    "futures_pct": 11.0,
+    "tax_rate": 0.2475,
+    "tax_note": "FY08 effective rate: income taxes $619.5M / pre-tax income $2,502.9M, with the one-time tax benefit"
+   }
+  },
+  {
+   "quarter": "Q1 FY09",
+   "fy": 2009,
+   "q": 1,
+   "published": "2008-09-25",
+   "source": "N24",
+   "release": "Sep 24",
+   "release_time": "after the close on Sep 24: 8-K accepted 16:28 ET; public before the open of the next trading day",
+   "period_end": "2008-08-31",
+   "sales_b": 5.4322,
+   "sales_pct": 16.7,
+   "sales_note": "revenues $5,432.2M vs $4,655.1M",
+   "lc_pct": 10.0,
+   "lc_note": "revenue grew 17 percent; currency changes increased revenue growth by 7 percentage points",
+   "futures_pct": 10.0,
+   "futures_fx_pp": 1.0,
+   "futures_b": 6.8,
+   "futures_note": "worldwide futures orders for delivery September 2008-January 2009, $6.8B",
+   "gross_margin": 47.17,
+   "gross_margin_bp": 233.3,
+   "gross_margin_note": "gross margin $2,562.1M / $5,432.2M vs $2,087.0M / $4,655.1M",
+   "pretax_margin": 13.15,
+   "pretax_margin_bp": -125.2,
+   "pretax_note": "income before income taxes $714.2M / $5,432.2M vs $670.3M / $4,655.1M",
+   "inventory_b": 2.4539,
+   "inventory_pct": 13.9,
+   "inventory_gap_pp": -2.8,
+   "inventory_note": "inventories $2,453.9M vs $2,154.9M a year earlier",
+   "eps_q": 1.03,
+   "eps_q_prior": 1.12,
+   "diluted_shares_m": 494.9,
+   "cash_b": 2.5917,
+   "cash_note": "cash and equivalents $1,625.6M + short-term investments $966.1M",
+   "next_print": "Q2 FY09 print (late December)",
+   "cash_return_text": "$429.8M of repurchases in Q1 FY09 ($2.5B to date of the four-year $3 billion program); a new four-year $5 billion program announced on September 22",
+   "eps_note": "the prior-year Q1 EPS of $1.12 included a one-time tax benefit of $0.20 per diluted share"
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2008-12-18",
+   "source": "N26",
+   "release": "Dec 17",
+   "release_time": "after the close on Dec 17: 8-K accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2008-11-30",
+   "sales_b": 4.5901,
+   "sales_pct": 5.8,
+   "sales_note": "revenues $4,590.1M vs $4,339.5M",
+   "lc_pct": 5.0,
+   "lc_note": "revenue grew 6 percent; currency changes increased revenue growth by 1 percentage point",
+   "futures_pct": -1.0,
+   "futures_fx_pp": -7.0,
+   "futures_b": 6.7,
+   "futures_note": "worldwide futures orders for delivery December 2008-April 2009, $6.7B",
+   "gross_margin": 44.66,
+   "gross_margin_bp": 39.1,
+   "gross_margin_note": "gross margin $2,050.0M / $4,590.1M vs $1,921.1M / $4,339.5M",
+   "pretax_margin": 11.34,
+   "pretax_margin_bp": -54.0,
+   "pretax_note": "income before income taxes $520.6M / $4,590.1M vs $515.6M / $4,339.5M",
+   "inventory_b": 2.4191,
+   "inventory_pct": 8.8,
+   "inventory_gap_pp": 3.0,
+   "inventory_note": "inventories $2,419.1M vs $2,223.7M a year earlier",
+   "eps_q": 0.8,
+   "eps_q_prior": 0.71,
+   "diluted_shares_m": 489.8,
+   "cash_b": 2.7295,
+   "cash_note": "cash and equivalents $1,721.5M + short-term investments $1,008.0M",
+   "next_print": "Q3 FY09 print (late March)",
+   "cash_return_text": "$209.3M of repurchases in Q2 FY09 ($2.7B to date of the four-year $3 billion program; the $5 billion program follows it)",
+   "eps_note": "the Q2 FY09 tax rate reflects the extended R&D tax credit and a one-time foreign tax refund",
+   "futures_fx_note": "the release states 'Excluding the effect of changes in foreign currency exchange rates, reported orders grew 6 percent'"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2008,
+   "published": "2007-07-02",
+   "source": "N14",
+   "doc": "Q4 FY07 call",
+   "words": [
+    "For fiscal 2008, we expect revenue growth toward the top end of our high-single digit target range and modest growth in gross margins"
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2007-09-26",
+   "source": "N16",
+   "doc": "Q1 FY08 call",
+   "words": [
+    "For fiscal 2008, we expect high single- to low double-digit revenue growth",
+    "We're forecasting moderate growth in gross margins"
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2007-12-21",
+   "source": "N18",
+   "doc": "Q2 FY08 call",
+   "words": [
+    "Our goals for the full fiscal year remain largely unchanged excluding anticipated gains on the sale of the Starter and Bauer businesses",
+    "For the second half of fiscal 2008, we now expect low double digit revenue growth",
+    "we're forecasting gross margin growth roughly in line with our year-to-date results"
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2008-03-25",
+   "source": "N20",
+   "doc": "Q3 FY08 call",
+   "words": [
+    "our expectation for the full year remain largely unchanged",
+    "For the fourth quarter we project low double digit revenue growth",
+    "we're forecasting acceleration in gross margin growth"
+   ]
+  },
+  {
+   "fy": 2009,
+   "published": "2008-03-25",
+   "source": "N20",
+   "doc": "Q3 FY08 call",
+   "words": [
+    "For fiscal 2009 as a whole, we're targeting high single digit revenue growth and continued EPS leverage"
+   ]
+  },
+  {
+   "fy": 2009,
+   "published": "2008-06-30",
+   "source": "N22",
+   "doc": "Q4 FY08 call",
+   "words": [
+    "For the year we expect revenue to fall within our targeted high single digit growth range, with modest improvement in gross margins"
+   ]
+  },
+  {
+   "fy": 2009,
+   "published": "2008-09-29",
+   "source": "N25",
+   "doc": "Q1 FY09 call",
+   "words": [
+    "For the full year, we expect high single digit revenue growth within our long-term target range",
+    "now believe gross margins for the full year could be 100 basis points above the prior year"
+   ]
+  },
+  {
+   "fy": 2009,
+   "published": "2008-12-24",
+   "source": "N27",
+   "doc": "Q2 FY09 call",
+   "words": [
+    "For the second half of the year, we expect revenue to grow at a low to mid single-digit rate on a currency neutral basis",
+    "We anticipate the gross margin for the full year will be essentially in line with prior year levels"
+   ]
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-12-20",
+   "source": "N17",
+   "quarterly": 0.23,
+   "note": "$0.23 quarterly, declared in Q2 FY08, up from $0.185 (Q2 FY08 release)"
+  },
+  {
+   "published": "2008-12-18",
+   "source": "N26",
+   "quarterly": 0.25,
+   "note": "$0.25 quarterly, declared in Q2 FY09, up from $0.23 (Q2 FY09 release)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [
+  {
+   "published": "2007-02-20",
+   "source": "N11",
+   "effective": "2007-04-03",
+   "ratio": 2,
+   "note": "2-for-1, a 100 percent stock dividend payable April 2, 2007; split-adjusted trading from April 3, 2007"
+  }
+ ],
+ "rule_t": {
+  "_doc": "Rule T (retro/README.md, LOW, AAPL and NKE): for each signal its ten annual values FY1998-FY2007, each change from the latest 10-K published by 2008-01-04 that reports both years (the FY2002 10-K's eleven-year history covers FY1997-FY1999); year-end futures growth from each year's own 10-K, the only filing that reports it; reported figures, since no filing publishes gross margin or pre-tax income excluding the FY1998-FY1999 restructuring charges; XBULL = the best year, BULL = the median, BASE = the worst year, BEAR = one median-to-worst step below the worst (above, for the inventory gap, where lower is better); rounded half up to whole percent or 10 bp",
+  "futures": {
+   "measure": "futures orders growth, % (reported, worldwide futures and advance orders at fiscal year end)",
+   "values": {
+    "1998": -13.0,
+    "1999": 4.0,
+    "2000": 3.0,
+    "2001": 3.0,
+    "2002": 6.3,
+    "2003": 5.0,
+    "2004": 11.3,
+    "2005": 9.5,
+    "2006": 5.0,
+    "2007": 12.0
+   },
+   "thresholds": {
+    "BEAR": -31,
+    "BASE": -13,
+    "BULL": 5,
+    "XBULL": 12
+   }
+  },
+  "gross_margin": {
+   "measure": "gross margin change, bp",
+   "values": {
+    "1998": -358.9,
+    "1999": 90.2,
+    "2000": 251.6,
+    "2001": -89.1,
+    "2002": 26.9,
+    "2003": 167.4,
+    "2004": 188.2,
+    "2005": 164.9,
+    "2006": -46.3,
+    "2007": -18.6
+   },
+   "thresholds": {
+    "BEAR": -780,
+    "BASE": -360,
+    "BULL": 60,
+    "XBULL": 250
+   }
+  },
+  "revenue": {
+   "measure": "revenue growth, %",
+   "values": {
+    "1998": 4.0,
+    "1999": -8.1,
+    "2000": 2.5,
+    "2001": 5.5,
+    "2002": 4.3,
+    "2003": 8.1,
+    "2004": 14.5,
+    "2005": 12.1,
+    "2006": 8.8,
+    "2007": 9.2
+   },
+   "thresholds": {
+    "BEAR": -23,
+    "BASE": -8,
+    "BULL": 7,
+    "XBULL": 15
+   }
+  },
+  "inventory_gap": {
+   "measure": "year-end inventory growth less revenue growth, pp (lower is better)",
+   "values": {
+    "1998": 0.3,
+    "1999": -8.1,
+    "2000": 21.0,
+    "2001": -7.0,
+    "2002": -7.8,
+    "2003": 2.1,
+    "2004": -5.6,
+    "2005": -2.4,
+    "2006": 5.8,
+    "2007": -7.0
+   },
+   "thresholds": {
+    "BEAR": 46,
+    "BASE": 21,
+    "BULL": -4,
+    "XBULL": -8
+   }
+  },
+  "pretax_margin": {
+   "measure": "pre-tax margin change, bp (income before income taxes / revenues)",
+   "values": {
+    "1998": -726.3,
+    "1999": 166.5,
+    "2000": 171.8,
+    "2001": -50.9,
+    "2002": 57.3,
+    "2003": 21.5,
+    "2004": 133.5,
+    "2005": 170.2,
+    "2006": 78.4,
+    "2007": -84.5
+   },
+   "thresholds": {
+    "BEAR": -1520,
+    "BASE": -730,
+    "BULL": 70,
+    "XBULL": 170
+   }
+  }
+ }
+}

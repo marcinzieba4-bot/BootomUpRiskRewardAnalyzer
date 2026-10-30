@@ -729,6 +729,28 @@
     "note": "first in a filing: the Q3 FY26 release (introduced at WWDC26)"
    },
    {
+    "term": "FuelBand",
+    "first_seen": "2012-01-19",
+    "note": "NIKE+ FuelBand, announced that day"
+   },
+   {
+    "term": "Flyknit",
+    "first_seen": "2012-02-21",
+    "approx": true,
+    "note": "NIKE Flyknit, unveiled for the 2012 Olympics"
+   },
+   {
+    "term": "Consumer Direct Offense",
+    "first_seen": "2017-06-15",
+    "note": "NIKE's strategy announced with its Q4 FY17 results"
+   },
+   {
+    "term": "Consumer Direct Acceleration",
+    "first_seen": "2020-06-25",
+    "approx": true,
+    "note": "NIKE's strategy announced with its Q4 FY20 results"
+   },
+   {
     "term": "GitHub Copilot",
     "first_seen": "2021-06-29"
    },

@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  NKE  ·  NIKE, Inc.  ·  $58.82  ·  RETROSPECTIVE as of 2008-09-05
+  Signal: ◉ BUY   Ratio B: 0.06x   Adj gap: +1.28  [UNDERVALUED]
+  Point-in-time: 17 sources, latest published 2008-09-05; latest print Q4 FY08 (Jun 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E revenues, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2009E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  U.S. Region               $     7.0  $   7.0  $   8.2      +0.0      +1.2
+    +4.4% revenues in FY08
+  EMEA Region               $     6.1  $   6.1  $   7.2      +0.0      +1.1
+    +19.0% revenues in FY08
+  Asia Pacific Region       $     3.1  $   3.1  $   3.7      +0.0      +0.6
+    +26.2% revenues in FY08
+  Americas Region           $     1.3  $   1.3  $   1.5      +0.0      +0.2
+    +21.2% revenues in FY08
+  Other                     $     2.8  $   2.8  $   3.3      +0.0      +0.5
+    +14.7% revenues in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    20.3  $  20.3  $  23.9      +0.0      +3.6
+  FY2009E = FY08 $18.63B × (1 + 9.0%: Q4 FY08 revenue ex-currency, applied to the year (no FY09 revenue guide in numbers)); split pro rata to FY08 revenues by operating segment (FY2008 10-K)
+  Q4 FY08 (Jun 25): revenues $5.09B +16.1% (+9% ex-currency); futures orders +11.0%; inventories +14.9%;
+  gross margin 45.82% (+204.1bp); pre-tax margin 12.74% (-228.8bp); EPS $0.98 vs $0.86
+  Futures: worldwide futures orders for delivery June-November 2008, $8.8B, +11.0% reported (+3pp from currency); revenue +16.1% reported, +9% excluding currency (revenue grew 16 percent; currency changes increased revenue growth by 7 percentage points); Q4 FY08 other income includes the $32 million gain on the sale of NIKE Bauer Hockey
+  FY09 outlook in words (Q4 FY08 call, display only): 'For the year we expect revenue to fall within our targeted high single digit growth range, with modest improvement in gross margins'; no FY09 revenue, EPS or margin guide in numbers
+
+  FY2009E EPS check:  $20.3B × 13.4% pre-tax × (1−24.8%) ÷ 0.500B  =  $4.11  (FY2009E: no EPS guide in numbers, FY08's $3.74 stands)
+  FY2011E BEAR check: $20.3B × 13.4% ÷ 0.485B  =  $4.23  (scenario $3.74)
+  FY2011E BULL check: $23.9B × 13.8% ÷ 0.485B  =  $5.13  (scenario $5.29)
+  Every 1pp of pre-tax margin ≈ $0.31 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Futures orders growth              -31.0%  ≥-13.0%    ≥5.0%   ≥12.0%    +11.0%  ▲ BULL  ███░
+  Gross margin change               -780.0bp  ≥-360.0bp  ≥60.0bp  ≥250.0bp  +204.1bp  ▲ BULL  ███░
+  Revenue growth                     -23.0%   ≥-8.0%    ≥7.0%   ≥15.0%    +16.1%  ★ XBULL  ████
+  Inventory growth less revenue     +46.0pp  ≤21.0pp  ≤-4.0pp  ≤-8.0pp    -1.2pp  ◦ BASE  ██░░
+  Pre-tax margin change             -1520.0bp  ≥-730.0bp  ≥70.0bp  ≥170.0bp  -228.8bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   1.67 / 4.00  (back-solved from $59 + 15% hurdle)
+  SCA adjustment:    +0.25  ·  EPP-distance adj +0.00  →  Adj composite 2.95  →  Gap +1.28  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 revenues +14.1%, year-end futures orders +11% (the FY2008 10-K: 'more than 11% higher'); Q4 gross margin 45.82% (+204bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 15.7x FY09E vs a 18.1x 10-yr median (18th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: Q4 FY08 revenue ex-currency +9% vs a 8.8% 9-yr median  (+0.02 × 20%  =  +0.004)
+    +  Cash and short-term investments $2.78B, FY08 free cash flow $1.49B, dividend $0.92 a year, $1,248.0M of share repurchases in FY08, long-term debt $441.1M  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Futures orders growth               +11.0%    -31.0%  -42.0%  Retailers cut orders ahead of a consu…
+  Gross margin change               +204.1bp  -780.0bp  -984.1bp  Discounting and product costs compres…
+  Revenue growth                      +16.1%    -23.0%  -39.1%  Consumer spending falls faster than n…
+  Inventory growth less revenue       -1.2pp   +46.0pp  +47.2pp  Inventory builds ahead of demand: clo…
+  Pre-tax margin change             -228.8bp  -1520.0bp  -1291.2bp  Demand creation and overhead grow int…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$66  (model)  /  $56 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: futures orders went from +11.0% (Q3 FY08) to +11.0% (Q4 FY08);
+  the bear case needs a demand recession that gross margin (+204.1bp now)
+  and inventories (-1.2pp against revenue) no longer absorb. A consumer-spending recession shows up in futures orders first; the bear
+  needs it to reach gross margin and inventories as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.74  (FY2009E: no EPS guide in numbers, FY08's $3.74 stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 1998 20.9x, 1999 19.4x, 2000 12.8x, 2001 16.6x, 2002 14.2x, 2003 14.2x, 2004 15.5x, 2005 14.3x, 2006 13.0x, 2007 14.2x, 2008 14.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $52/share
+  Current $59 vs Updated EPP $52:  +12%  moderate distance to floor
+  Bear $56 vs Updated EPP $52:  +7%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Futures orders growth                      -13.0      -24.0   BASE floor (vs +11 now)
+  Gross margin change                       -360.0     -564.1   BASE floor (vs +204 now)
+  Revenue growth                              -8.0      -24.1   BASE floor (vs +16 now)
+  Inventory growth less revenue               21.0      +22.2   BASE floor (vs -1 now)
+  Pre-tax margin change                     -730.0     -501.2   BASE floor (vs -229 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.74 × (1+8.5%)² = $4.40
+  At 18x P/E (conservative):  $79/share
+  + Cumul. dividends (2yr):  +$1.90/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $79  (▲20 from $59)
+  Conservative total return:  +38% over 2yr  = +19%/yr
+
+  At 15.7x the multiple is already near its 18x median, so the conservative
+  case is a growth question: breakeven at 18x needs FY2011E EPS of $3.16,
+  i.e. -8.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $51.50  –  $70.60  (at 38th pct of range)
+  Annual dividend:      $0.92/share  (yield 1.6%)
+  Realized vol (1yr):   29% annualized
+  Beta vs broad market: 0.96
+  1-sigma range (1yr):  $42  –  $76  ($59 ± 29%)
+  2-sigma range (1yr):  $24  –  $93
+  ────────────────────────────────────────────────────────────
+  Bear $56 requires:  ~0.2σ price move  (within normal vol range)
+  An athletic footwear and apparel brand with a 1.0 beta: the stock is +8% off its September
+  low while futures orders went from +11.0% (Q3 FY08) to +11.0% (Q4 FY08).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.74  15.1x  $     56     6.0%     39.1%   -33.1pp  Flat EPS (worst year FY99-FY08, capped at 0%); P/E to its 10th pct
+  BASE        4.57  18.1x  $     83    20.8%     45.4%   -24.6pp  EPS +10.5%/yr (Q4 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        5.29  20.8x  $    110    61.6%     13.0%   +48.5pp  EPS +18.9%/yr (FY99-FY08 CAGR); P/E holds its 75th pct
+  XBULL       6.07  25.4x  $    154    11.6%      2.5%    +9.2pp  EPS +27.4%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $106  /  Market EV: $78  /  Current: $59
+  Conservative EV (2yr, ④): $79 + $1.90 divs = $81 total value
+  Downside (→ Bear $56): 4.8%   Upside (→ Bull $110): 87.0%   Ratio B 0.06x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $59 the market needs $78 in two years —
+  at or below the BASE case. That is a market composite of 1.67 against a model
+  read of 2.95: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.06x     +12%    +1.28  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.02x     +12%    +1.59  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.13x     +12%    +0.83  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.02x     +12%    +1.35  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.08x     +12%    +1.19  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.06x     +12%    +1.58  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.06x      -7%    +1.48  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.06x     +12%    +1.50  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY09 print (late September) — the next read on futures orders (+11.0% now) and the outlook on the call
+  (2) Gross margin — +204.1bp in Q4 FY08: pricing, product costs and currency, what must hold if orders do not
+  (3) The outlook in words — Q4 FY08 call: 'For the year we expect revenue to fall within our targeted high single digit growth range, with modest improvement in gross margins'; no FY09 guide in numbers
+  (4) Inventories — +14.9% against revenue +16.1% in Q4 FY08 (-1.2pp): discounting follows if orders slow
+  (5) Capital return at 16x — $290M of repurchases in Q4 FY08 ($2.1B to date of the four-year $3 billion program approved in June 2006): management's own read of the multiple
+  ◉ BUY  |  EPP floor $52  |  ADD below ~$71  |  TRIM above $110
+════════════════════════════════════════════════════════════════════════
+

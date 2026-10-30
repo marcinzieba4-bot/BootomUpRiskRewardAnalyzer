@@ -2653,6 +2653,149 @@ Judgement calls that could carry hindsight:
 - DURABLE rather than CYCLICAL (the class label only), and GENAI as outside Apple's scope (AI named only as Apple's own features
   and their risks).
 
+## NKE (NIKE): the fifth ticker, in staging
+
+The NKE series is built apart from ACN, UNP, LOW and AAPL and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/NKE.json`), builder (`retro/build_nke.py`) and engine (`retro/templates/nke_engine.py.tmpl`, the AAPL engine with
+athletic footwear and apparel signals). The method is still r2. No ACN, UNP, LOW or AAPL fact, parameter, outcome or finding enters
+an NKE model, and neither does the repository's live `nke_signal_model.py` (a 2026 analysis). Outputs go to
+`staging/retrospective/NKE/`, beside the others, with the same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_nke.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/NKE/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series NKE
+python3 retro/tools/firewall.py 2008-07-01 NKE
+```
+
+The 10-Ks from FY1997 to FY2008 (FY1998 and FY2000 10-K405s) were read for the history and the decade's signal values, and every
+8-K and 10-Q from June 2006 to December 2008 (46 filings) was read in full, with no delegated transcription, including the seven
+call transcripts NIKE furnished by 8-K a few days after each release. 242 strings were checked with `verbatim.py` against their own filings, and
+each source's date comes from EDGAR's acceptance time. Decided on 2026-10-30, before any NKE model was built or any NKE outcome
+computed:
+
+- **Fiscal calendar.** NIKE's fiscal year ends on May 31 (fiscal 2008 runs from 2007-06-01 to 2008-05-31). The builder maps each
+  day to its fiscal year by that rule and checks it against the year-ends the vintages state. Days between May 31 and the Q4 print
+  keep the last year's EPS (the ACN rollover rule): 2008-06-06 to 2008-06-20.
+- **Prices on the as-of share basis** (the UNP rule). Yahoo's series is adjusted for the 2012 and 2015 2-for-1 splits, so 2008
+  prices are Yahoo's times 4: $61.74 on 2008-01-04. The 2007 2-for-1 split (8-K accepted 2007-02-16 18:04 ET, dated 2007-02-20
+  after the Presidents' Day holiday; split-adjusted trading from 2007-04-03, Yahoo's date) restates the per-share facts published
+  before it: EPS of FY1998-FY2002 (from the 10-Ks of 2002-2006) and the first year's diluted shares. The 1995 and 1996 splits
+  precede every per-share fact in the fact sheet.
+- **Every release came after the close.** Each earnings 8-K was accepted at 16:16-16:37 ET, so a print is dated the next trading
+  day and the week's date is the trading day after that: 2008-06-27, 2008-09-26 and 2008-12-19. The Q3 FY08 release (accepted
+  2008-03-19 16:16 ET) is dated Thursday 2008-03-20 and Good Friday followed, so that day is the week's date and the print meets
+  its close, public before the open (the AAPL 2011 rule). Each call transcript is dated by its own 8-K, two to six days after the
+  call, which can only lag.
+- **History: each year from the latest 10-K that reports it.** The FY2007 10-K (accepted 2007-07-27 16:16 ET, dated 2007-07-30)
+  gives FY2003-FY2007; FY2002 comes from the FY2006 10-K, FY2001 from FY2005, FY2000 from FY2004, FY1999 from FY2003 and FY1998
+  from the FY2002 10-K's eleven-year history. The Q4 FY08 release extends it with FY08 from 2008-06-26, and the FY2008 10-K
+  (accepted 2008-07-28 16:08 ET, dated 2008-07-29) moves the window to FY1999-FY2008.
+- **EPS** is diluted EPS before the cumulative effect of accounting changes, the line the 10-Ks report for FY2002 ($2.46, net
+  $2.44) and FY2003 ($1.38 after the split, net $0.89). A company-published figure excluding a one-off replaces it: FY2006 enters at
+  $2.70 excluding the Converse arbitration charge (FY2007 10-K and Q4 FY07 release; GAAP $2.64).
+  - **FY2007 stays GAAP $2.93.** The company's $3.10 excludes the Converse settlement and stock-based compensation, expensed from
+    fiscal 2007 under FAS 123R. That expense recurs, so a figure without it is not a figure excluding a one-off (the AAPL Q4 FY08
+    non-GAAP rule), and no figure excluding the settlement alone was published.
+  - **Per-share effects stay in** when no EPS excluding them was published (no figure is derived): the FY1998 restructuring charge
+    ($0.27 per diluted share), FY1999's ($0.10), and FY2008's one-time tax benefit ($0.21) and Starter and Bauer sale gains ($29
+    million and $32 million). FY08 enters at GAAP $3.74.
+  - **No year is excluded.** FY1998's charge ($79.5 million after tax) is a fraction of the year's $399.6 million net income (the
+    AAPL FY2003 test).
+- **No guide in numbers.** No release, call transcript, 10-Q or 10-K of the period gives a revenue, EPS or margin guide in numbers.
+  The CFO's outlook on each call is in words ("high single- to low double-digit revenue growth", "moderate growth in gross margins";
+  for fiscal 2009 "high single digit revenue growth"), and words are not figures (the UNP 2016 rule). So:
+  - current-FY EPS: the last full year's EPS stands: FY07's $2.93 to the Q4 FY08 print, FY08's $3.74 from it;
+  - BASE growth and the growth factor: the latest quarter's revenue growth excluding currency changes, method r2's local-currency
+    basis. The releases state the currency effect, so it is the release's growth less those points (the ACN bookings derivation):
+    +10% (Q2 FY08: 14 less 4), +10% (Q3 FY08), +9% (Q4 FY08), +10% (Q1 FY09), +5% (Q2 FY09: 6 less 1);
+  - no margin step: the margin signal takes the latest quarter's change.
+  - Each call's outlook for the rest of the current fiscal year (its revenue and gross-margin words) is shown in the guide line and
+    feeds no input. The latest call's words replace the earlier ones, and a statement for the next fiscal year shows once that year is
+    current (the Q3 FY08 call's fiscal 2009 words from 2008-06-27). Tax-rate estimates and the SG&A, interest and other-income
+    statements have no field. The multi-year targets (the long-term model of "high-single-digit revenue growth, mid-teens earnings per
+    share growth"; "$23 billion in revenue by fiscal year 2011") are not current-year ranges and are not entered (the LOW rule).
+- **Dividends:** the latest declared rate: $0.185 a quarter (FY2007 10-K), $0.23 from the Q2 FY08 release (2007-12-20; declared in
+  November 2007 without an 8-K), $0.25 from the Q2 FY09 release (2008-12-18).
+- **Signals.** Six, with ACN's weights, mirroring LOW's: futures orders growth (0.20, the release's headline: worldwide orders for
+  delivery over the next five to six months, as reported), gross margin change (0.20), revenue growth (0.15, as reported), inventory
+  growth less revenue growth (0.15, lower is better), the pre-tax margin change (0.15; NIKE "evaluates performance of individual
+  operating segments based on pre-tax income") and the theme slot at 2/4. Values are the latest release's, derived from its income
+  statement and balance sheet; futures as published.
+- **Thresholds by rule T** (the LOW rule), over the ten years of the FY2007 10-K, the vintage public on 2008-01-04: FY1998-FY2007, each
+  change from the latest 10-K published by 2008-01-04 that reports both years (the FY2002 10-K's eleven-year history covers
+  FY1997-FY1999); year-end futures growth from each year's own 10-K, the only filing that reports it. The reported figures stand: no
+  filing publishes gross margin or pre-tax income excluding the FY1998-FY1999 restructuring charges. The values are in the fact sheet
+  (`rule_t`); the builder recomputes the thresholds from them and refuses to build if the engine's differ.
+
+  | Signal | Decade (FY1998-FY2007) | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | futures orders growth | -13, 4, 3, 3, 6.3, 5, 11.3, 9.5, 5, 12 % | -31 / -13 / 5 / 12 % |
+  | gross margin change | -358.9, 90.2, 251.6, -89.1, 26.9, 167.4, 188.2, 164.9, -46.3, -18.6 bp | -780 / -360 / 60 / 250 bp |
+  | revenue growth | 4, -8.1, 2.5, 5.5, 4.3, 8.1, 14.5, 12.1, 8.8, 9.2 % | -23 / -8 / 7 / 15 % |
+  | inventory less revenue | 0.3, -8.1, 21, -7, -7.8, 2.1, -5.6, -2.4, 5.8, -7 pp | 46 / 21 / -4 / -8 pp |
+  | pre-tax margin change | -726.3, 166.5, 171.8, -50.9, 57.3, 21.5, 133.5, 170.2, 78.4, -84.5 bp | -1520 / -730 / 70 / 170 bp |
+
+- **Durability.** DURABLE, risk 2, as for the other four. The "why" is the 10-K's own words: "NIKE is the largest seller of athletic
+  footwear and athletic apparel in the world", "Virtually all of our products are manufactured by independent contractors", the
+  industry "is keenly competitive", "including Adidas, Puma, and others", and demand follows "the relative popularity of various
+  sports and fitness activities and changing design trends". No disruption theme in `taxonomy_eras.json` is live for an athletic
+  footwear and apparel brand in 2008 (ECOMMERCE from 2015-01-01, scoped to physical retail; OFFSHORE to IT services), so the watch
+  list is empty and the builder refuses events until a theme encoding is decided.
+- **Segment bridge and EPS check** (display only): the 10-K's operating segments (the U.S., EMEA, Asia Pacific and Americas regions
+  and Other) with each one's growth; the EPS check runs on the pre-tax margin, which already carries net interest income.
+- **Adds nothing:** the officer, director and employment-agreement 8-Ks, the annual meeting results (2007-09-19 and 2008-09-25), the
+  Umbro offer 8-K and its call ("You're seeking guidance we're not prepared to give"), the Umbro share purchase 8-K, and the 10-Qs
+  (SG&A words and tax-rate estimates).
+- **Anachronism list:** NIKE names from after 2008 (FuelBand, Flyknit, Consumer Direct Offense, Consumer Direct Acceleration) join
+  `taxonomy_eras.json`. No existing model of any ticker contains them, so no output changes.
+
+Controls: altering one value of each print, vintage, guide, dividend and the split changes no date before its publication and changes
+the first weekly date after it (20 of 20; the Q4 FY07 print and the fiscal 2008 words of the Q4 FY07 and Q1 FY08 calls show on no 2008
+date and change nothing). The Q3 FY08 call's fiscal 2009 words, public on 2008-03-25, first show on 2008-06-27, the first date with
+fiscal 2009 current. Rebuilding the 2008 dates of ACN, UNP, LOW and AAPL changes nothing.
+
+Seen in the build (method behaviour, not tuned):
+- **BEAR is flat on every date.** EPS rose in every year of the history (FY1999-FY2008); FY1998's fall from FY1997 is not a change
+  within the ten years. BEAR is flat EPS at the 10th-percentile P/E (15.0-15.3x): $45 on FY07's $2.93, $56-57 on FY08's $3.74.
+- **BULL and XBULL** are the FY98-FY07 EPS CAGR (+17.7%/yr; +18.7% FY98-FY08 from the Q4 print, +18.9% FY99-FY08 from the FY2008
+  10-K) and the FY03-FY05 run (+27.4%/yr), at the 75th and 90th percentile P/E: BULL prices of $90-91 to June and $107-112 after.
+- **BASE is the quarter's revenue growth excluding currency plus the buyback** (diluted shares fell 1.6%/yr over FY98-FY07, 1.5% over
+  FY99-FY08): +11.6%/yr to June, +10.6% from the Q4 FY08 print (+10.5% once the FY2008 10-K moves the history to FY99-FY08),
+  +11.5% on Q1 FY09, +6.5% on Q2 FY09. The growth factor reads +0.19, +0.05, +0.02, +0.12 and -0.38 against the history's median
+  revenue growth of 8.1-8.8%.
+- **The class follows the EPS anchor.** On FY07's $2.93 the stock traded at 19.1-21.3x (the 51st-69th percentile) to 2008-03-14:
+  CHEAP and BUY on all 11 dates, with Ratio B 0.31-0.61 and the proxy composite at 3.05 (futures +13% and the inventory gap
+  -10.9pp at XBULL). From the Q3 FY08 print the stock stood at $65-69, 22.1-23.5x the same $2.93 (75th-82nd percentile): FAIR on 12
+  of the 14 dates to 2008-06-20 (CHEAP on 2008-05-09 and 2008-05-23), tier ACCUMULATE (WATCHLIST on 2008-04-25 and 2008-06-13). From
+  the Q4 FY08 print FY08's $3.74 is the anchor: 12.4-18.1x (0th-51st percentile), CHEAP and BUY on all 28 dates.
+- **EPS anchors on the last full year:** FY07's $2.93 stands until 2008-06-25, when nine-month FY08 EPS was already $2.76 (the Q3 FY08
+  release), so the March-June multiple of 22-23.5x is on a year already passed (the AAPL 2008 pattern).
+- **From October the price sits below the BEAR price** on 11 of the 14 dates (Ratio B -0.15 to -0.03; also 2008-07-11 at -0.01), and
+  below the EPP floor (14x FY08's $3.74, $52) on 8.
+- **The Q2 FY09 print turns every signal to BASE** (futures -1%, revenue +5.8%, gross margin +39bp, the inventory gap +3.0pp, pre-tax
+  margin -54bp): the proxy composite falls from 2.70 to 2.00 and BASE growth to +6.5%/yr; the class stays CHEAP, below the floor.
+- **Robustness:** all eight variants agree on every date from the Q4 FY08 print; on the FAIR dates three to six of eight.
+
+How far each call moves the classes (the 53 dates rebuilt with one encoding changed; no outcome consulted):
+- FY07 at the company's $3.10 instead of GAAP $2.93 would change 11 classes (FAIR to CHEAP on 11 of the 12 FAIR dates, 2008-03-20 to
+  2008-06-20) and 8 tiers;
+- BASE and the growth factor on reported revenue growth instead of growth excluding currency would change no class and no tier;
+- FY06 at GAAP $2.64 instead of $2.70 would change nothing;
+- excluding FY1998 (the history and the P/E window from FY1999) would change no class and one tier (2008-04-04, ACCUMULATE to
+  WATCHLIST).
+
+Judgement calls that could carry hindsight:
+- FY07 at GAAP $2.93 rather than the company's $3.10 (the call that moves the most classes: 11 of 53);
+- the signals, chosen by a builder who knows what 2008 and 2009 brought: futures orders and the inventory gap (rule T then sets their
+  thresholds mechanically);
+- revenue growth excluding currency changes for BASE (it moves nothing on these dates), and keeping FY1998;
+- DURABLE rather than CYCLICAL (the class label only);
+- dating each call's words from its transcript's 8-K (can only lag).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -2707,6 +2850,8 @@ What the gates enforce:
   10-Ks name cloud and streaming only as its own services ("AAPL 2012-2015", "AAPL 2016-2019"); GENAI's scope (from 2022-11-30),
   EV's, CRYPTO's and GLP1's name none of Apple's products ("AAPL 2020-2023"), and the FY2024 and FY2025 10-Ks name artificial
   intelligence only as Apple's own features and their risks ("AAPL 2024-2026").
+  NKE in 2008 carries none either: no theme in the registry is live for an athletic footwear and apparel brand (ECOMMERCE from
+  2015-01-01, scoped to physical retail; OFFSHORE to IT services), so its watch list is empty ("NKE").
 
 ## Workflow
 
