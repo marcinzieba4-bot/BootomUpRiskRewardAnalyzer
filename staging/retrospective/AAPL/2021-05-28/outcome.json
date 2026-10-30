@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "AAPL",
+ "as_of": "2021-05-28",
+ "computed": "2026-10-30",
+ "data_source": "Yahoo Finance daily closes + dividends (AAPL, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2021-11-26",
+   "price": 156.81,
+   "dividends": 0.44,
+   "total_return_pct": 26.2,
+   "benchmark_total_return_pct": 9.9,
+   "excess_pct": 16.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2022-05-27",
+   "price": 149.64,
+   "dividends": 0.89,
+   "total_return_pct": 20.8,
+   "benchmark_total_return_pct": 0.2,
+   "excess_pct": 20.6,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2023-05-26",
+   "price": 175.43,
+   "dividends": 1.82,
+   "total_return_pct": 42.2,
+   "benchmark_total_return_pct": 2.9,
+   "excess_pct": 39.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2024-05-28",
+   "price": 189.99,
+   "dividends": 2.79,
+   "total_return_pct": 54.7,
+   "benchmark_total_return_pct": 30.7,
+   "excess_pct": 24.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2022-01-03",
+   "price": 182.01
+  },
+  "low": {
+   "date": "2021-06-03",
+   "price": 123.54
+  },
+  "max_drawdown_pct": -31.3,
+  "return_to_avg_price_m12_m24_pct": 21.5
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Apple ecosystem; memory-cost margin question is cyclical, not structural",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

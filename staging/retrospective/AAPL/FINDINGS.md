@@ -1,12 +1,12 @@
 # AAPL retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 627 weekly dates from 2008-01-04 to 2019-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the 835 weekly dates from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed
-and pushed: 2008 in e0b1ff4, 2009-2011 in 72db502, 2012-2015 in 2b6d96e, 2016-2019 in 5c467dd. Prices run to 2026-10-29; every
-horizon used here ends by 2021-12-31. Medians of an even count take the upper middle value (`statistics.median_high`). The
-15%/yr hurdle is +32.2% over two years. Prices are as traded on each date, so entries before 2014-06-09 are on the pre-split basis
-(seven times the later one) and entries before 2020-08-31 on the basis before the 4-for-1 split; each later price is put on its
-entry's basis. Rank correlations across the 2014 split use split-adjusted entry prices.
+and pushed: 2008 in e0b1ff4, 2009-2011 in 72db502, 2012-2015 in 2b6d96e, 2016-2019 in 5c467dd, 2020-2023 in 0324b88. Prices run to
+2026-10-29; every horizon used here ends by 2025-12-29. Medians of an even count take the upper middle value
+(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. Prices are as traded on each date, so entries before
+2014-06-09 are on the pre-split basis (seven times the later one) and entries before 2020-08-31 on the basis before the 4-for-1
+split; each later price is put on its entry's basis. Rank correlations across a split use split-adjusted entry prices.
 
 ## 2008 (53 dates)
 
@@ -386,3 +386,124 @@ entry's basis. Rank correlations across the 2014 split use split-adjusted entry 
     2013, the class in 2018-2019, the m12-24 average in 2017). Testing selection needs many tickers on the same dates;
   - at the top of its range the RICH reading may have a shorter horizon than two years: scored at one year it would have held on
     30 of the 43 RICH dates of 2018, at two years on none.
+
+## 2020 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 52 | +58% | -1% to +192% | 38 | 50 | +72% | 2 |
+| legacy tier AVOID (all dates) | 52 | +58% | -1% to +192% | 38 | 50 | +72% | 2 |
+| January-June | 25 | +117% | +52% to +192% | 25 | 25 | +95% | 0 |
+| July-December | 27 | +30% | -1% to +68% | 13 | 25 | +36% | 2 |
+
+- **RICH and AVOID on every date; the call held on two.** RICH expects the stock to miss the hurdle and lag SPY. 38 dates cleared
+  the hurdle and 50 beat SPY, by up to 105pp. The call held only on the last two entries (2020-12-24 and 2020-12-31: +1.3% and
+  -0.7%, 5.8pp and 6.2pp behind SPY), whose windows end in the last week of 2022.
+- **The entry price ranks the outcomes almost perfectly** (Spearman -0.96 on split-adjusted prices). The January-June entries
+  ($57.31-88.41 on the post-split basis) returned +52% to +192%: the ten from the update of 2020-02-17 to 2020-04-24, around the
+  2020-03-23 low, +116% to +192%. The July-December entries ($91.03-132.69) returned -1% to +68%. Every window held the
+  2022-01-03 high; drawdowns were 20-31%, and the median one-year return was +52%.
+- **Every two-year price landed nearest XBULL,** at 2.60 to 3.72 times the BASE price and 1.91 to 2.58 times the BULL price.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 52 | +24% | -0.5% to +45% | 13 | 48 | +11% | 4 |
+| legacy tier AVOID (all dates) | 52 | +24% | -0.5% to +45% | 13 | 48 | +11% | 4 |
+| January-June | 25 | +26% | -0.5% to +45% | 10 | 21 | +18% | 4 |
+| July-December | 27 | +21% | +10% to +40% | 3 | 27 | +8% | 0 |
+
+- **The stock beat SPY while missing the hurdle.** 39 dates missed the hurdle, but 48 beat SPY, which returned -8% to +13% over
+  the same two years; the RICH call held on four, the January entries from 2021-01-08 to 2021-01-29 (-0.5% to +11.9%, 0.9pp to
+  6.1pp behind SPY). Every window held the fall from the 2022-01-03 high ($182.01) to the 2023-01-05 low ($125.02), 31.3%. The
+  median one-year return was +11%.
+- **The fallback's highest BASE was not a signal either way.** On the 13 dates after the Q2 FY21 print, BASE carried +53.6% of
+  sales growth for two years (+58.2%/yr, BULL and XBULL lifted to it); they returned +30% to +45%, and the two-year price still
+  stood 1.25 to 1.40 times that BULL price.
+- **The two-year price landed nearest XBULL on 40 dates and BULL on 12,** above the BULL price on all but 2021-10-29 (0.96 times
+  it). The entry price ranks the outcomes loosely (Spearman -0.49).
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 52 | +40% | -1% to +96% | 30 | 26 | +22% | 18 |
+| legacy tier WATCHLIST | 3 | +95% | +88% to +96% | 3 | 3 | +56% | 0 |
+| legacy tier AVOID | 49 | +36% | -1% to +75% | 27 | 23 | +22% | 18 |
+| January-June | 25 | +12% | -1% to +66% | 5 | 9 | +10% | 16 |
+| July-December | 27 | +56% | +28% to +96% | 25 | 17 | +33% | 2 |
+
+- **The RICH call held on 18 dates,** from 2022-02-04 to 2022-08-12 (-1% to +28%, 0.5pp to 19.6pp behind SPY): the first year in
+  which it held on more than a handful. Every window held the 2023-01-05 low ($125.02); drawdowns were 17-30%.
+- **The tier ranked the outcomes, and so did the entry price** (Spearman -0.84). The three WATCHLIST dates (2022-12-16 to
+  2022-12-30, $129.93-134.51, Ratio B 1.28-1.49x), the cheapest of the year, returned +88% to +96%, 27pp to 38pp above SPY,
+  against AVOID's median +36% (m12-24 average price +56% against +22%).
+- **The two-year price landed nearest BULL on 33 dates and XBULL on 19,** at 1.25 to 2.46 times the BASE price.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 52 | +39% | +7% to +90% | 31 | 10 | +27% | 21 |
+| legacy tier WATCHLIST | 3 | +75% | +68% to +90% | 3 | 3 | +55% | 0 |
+| legacy tier AVOID | 49 | +36% | +7% to +70% | 28 | 7 | +27% | 21 |
+| January-June | 26 | +33% | +7% to +90% | 13 | 10 | +34% | 13 |
+| July-December | 26 | +41% | +10% to +61% | 18 | 0 | +22% | 8 |
+
+- **The RICH call held most often this year, on 21 of 52.** 42 dates lagged SPY, every July-December entry among them, as SPY
+  returned +42% to +70% over their two years. The 21 that also missed the hurdle run from 2023-04-06 to 2023-09-01 (+7% to +29%,
+  9.8pp to 35.7pp behind SPY).
+- **WATCHLIST again marked the cheapest entries:** 2023-01-06 to 2023-01-20 ($129.62-137.87, Ratio B 1.27-1.63x) returned +68% to
+  +90%, 14pp to 34pp above SPY. The entry price ranks the outcomes (Spearman -0.55).
+- **Every July-December window held the fall from the 2024-12-26 high ($259.02) to the 2025-04-08 low ($172.42), 33.4%;**
+  drawdowns were 17-33% across the year. The two-year price landed nearest BULL on 38 dates and XBULL on 14, at 1.90 to 2.63
+  times the BASE price.
+
+## 2020-2023 together (208 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH (all dates) | 208 | +35% | -1% to +192% | 112 | 134 | +25% | 45 |
+| legacy tier WATCHLIST | 6 | +90% | +68% to +96% | 6 | 6 | +56% | 0 |
+| legacy tier AVOID | 202 | +34% | -1% to +192% | 106 | 128 | +24% | 45 |
+
+- **RICH on every date; the call held on 45.** The median two-year return was +35%: 112 dates cleared the hurdle and 134 beat
+  SPY. The call held on 2 dates in 2020, 4 in 2021, 18 in 2022 and 21 in 2023. Where it held, the stock lagged SPY rather than
+  fell: those 45 dates returned -1% to +29%. In 2022-2023 the stock lagged SPY on 67 of 104 dates.
+- **Rank, not level, again.** The entry price ranks the outcomes within each year (Spearman -0.96, -0.49, -0.84 and -0.55 on
+  split-adjusted prices; -0.51 pooled), and so does the tier where it varies: the six WATCHLIST dates, at the 2022-2023 year-end
+  low, returned +68% to +96% against AVOID's median +34%. The year of entry set the level: medians +58%, +24%, +40% and +39%.
+- **The scenarios were too low on every date.** The two-year price stood above the BASE price on all 208 dates (1.17 to 3.72 times
+  it) and above the BULL price on 206; it landed nearest XBULL on 125 and BULL on 83, never BASE or BEAR.
+- **No shorter horizon this time.** Scored at one year (missing the 15% hurdle and lagging SPY) the RICH call would have held on 32
+  of the 208 dates; at two years it held on 45.
+
+## 2008-2023 together (835 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all dates | 835 | +52% | -13% to +323% | 591 | 638 | +38% | 421 |
+| class CHEAP | 434 | +62% | -13% to +323% | 320 | 323 | +60% | 345 |
+| class FAIR | 65 | +35% | +6% to +225% | 39 | 55 | +25% | 29 |
+| class RICH | 336 | +48% | -1% to +199% | 232 | 260 | +31% | 47 |
+| legacy tier BUY | 503 | +56% | -13% to +323% | 363 | 382 | +56% | 374 |
+| legacy tier ACCUMULATE | 43 | +50% | +16% to +199% | 37 | 41 | +33% | 2 |
+| legacy tier WATCHLIST | 44 | +75% | +30% to +197% | 42 | 44 | +42% | 0 |
+| legacy tier AVOID | 245 | +42% | -1% to +192% | 149 | 171 | +28% | 45 |
+
+- **CHEAP held on 345 of 434 dates, FAIR on 29 of 65, RICH on 47 of 336.** The pooled classes come from different years (CHEAP
+  mostly 2008-2016, RICH 2017-2023), so the table compares eras as much as readings: RICH's median of +48% cleared the hurdle,
+  and its m12-24 average of +31% stands about half of CHEAP's +60%.
+- **The two-year price beat the BASE price on 669 of 835 dates, every date from 2016.** It landed nearest BEAR on 69 dates and
+  BASE on 349 to 2015; from 2016 nearest BASE on 50, BULL on 164 and XBULL on 203, and never BEAR.
+- Hypotheses for the method, to test on other tickers and never to fit to AAPL's outcomes:
+  - the own-decade P/E band reads a lasting re-rating as RICH (the 2016-2019 hypothesis): RICH on all 208 dates of 2020-2023, at
+    the 72nd-100th percentile of the stock's own range, and the call held on 45;
+  - with no guidance, the fallback carries one quarter's net sales growth for two years. BASE swung from -0.2% to +58.2%/yr, set
+    BULL's rate for 65 weeks, and still stood below the two-year price on every date. Applying the trailing four quarters' growth
+    instead (the 2008-2015 anchor hypothesis applied to growth) is one candidate; test it where a company stopped guiding;
+  - the 2016-2019 hypothesis that RICH has a shorter horizon than two years does not repeat: at one year it held on 32 of 208
+    dates, at two years on 45;
+  - within a year, the entry price and the tier carried rank information (the 2008-2019 hypothesis, again in all four years);
+    testing selection needs many tickers on the same dates.
