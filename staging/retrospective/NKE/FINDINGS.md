@@ -1,9 +1,11 @@
 # NKE retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the 53 weekly dates from 2008-01-04 to 2008-12-31. They are **labels and hypotheses**:
-never feed them back into the method or the fact sheet. The batch was scored only after its point-in-time build was committed
-and pushed (70934e9). Prices run to 2026-10-30; every two-year horizon used here ends by 2010-12-30 (three-year: 2011-12-30).
-Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31 and 156 from 2009-01-09 to
+2011-12-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored
+only after its point-in-time build was committed and pushed (2008: 70934e9; 2009-2011: 056235e). Prices run to 2026-10-30; the
+2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (three-year:
+2014-12-30). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
+two years.
 
 ## 2008 (53 dates)
 
@@ -50,3 +52,54 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   decided before scoring and stays, and changing a rule means a new method version tested elsewhere.
 - **Revenue growth excluding currency moved nothing** (retro/README.md, "NKE"): BASE on reported growth gives the same 53 classes
   and tiers, so the choice of basis did not shape these outcomes.
+
+## 2009-2011 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 73 | +55% | +31% to +130% | 72 | 66 | +42% | 73 |
+| class FAIR | 22 | +50% | +15% to +74% | 16 | 16 | +26% | 7 |
+| class RICH | 61 | +52% | +12% to +79% | 43 | 53 | +26% | 8 |
+| legacy tier BUY | 76 | +56% | +31% to +130% | 75 | 69 | +42% | 65 |
+| legacy tier ACCUMULATE | 22 | +51% | +30% to +74% | 21 | 21 | +31% | 10 |
+| legacy tier WATCHLIST | 29 | +51% | +15% to +79% | 23 | 23 | +26% | 6 |
+| legacy tier AVOID | 29 | +30% | +12% to +67% | 12 | 22 | +20% | 7 |
+| January to the Q4 FY09 print (FY08 $3.74 anchor), all CHEAP | 24 | +73% | +42% to +130% | 24 | 18 | +57% | 24 |
+| FY09 $3.81 anchor (2009-06-26 to 2010-06-18) | 52 | +54% | +39% to +86% | 52 | 52 | +34% | 33 |
+| - of which CHEAP / FAIR / RICH | 32 / 15 / 5 | +57% / +50% / +60% | | 32 / 15 / 5 | 32 / 15 / 5 | +42% / +29% / +32% | 32 / 1 / 0 |
+| FY10 $3.86 anchor (2010-06-25 to 2011-06-24) | 53 | +33% | +12% to +62% | 28 | 38 | +25% | 26 |
+| - of which CHEAP / FAIR / RICH | 12 / 6 / 35 | +38% / +22% / +31% | | 11 / 0 / 17 | 11 / 0 / 27 | +40% / +25% / +22% | 12 / 6 / 8 |
+| FY11 $4.39 anchor (2011-06-29 to 2011-12-30) | 27 | +63% | +40% to +79% | 27 | 27 | +30% | 5 |
+| - of which CHEAP / FAIR / RICH | 5 / 1 / 21 | +62% / +74% / +64% | | 5 / 1 / 21 | 5 / 1 / 21 | +34% / +35% / +28% | 5 / 0 / 0 |
+
+- **A rising tide.** The two-year total return ran from +12% to +130% (median +53%) while SPY returned +10% to +99%; 131 of 156
+  dates cleared the hurdle and 135 beat SPY. Within two years every date saw a drawdown of 14-23%. The median one-year return was
+  +36% for the 2009 dates, +17% for 2010 and +19% for 2011; over three years every date beat SPY.
+- **The class ranked the m12-24 average more than the two-year endpoint.** On the endpoint CHEAP (median +55%), FAIR (+50%) and
+  RICH (+52%) were close; on the m12-24 average CHEAP led (+42% against +26% and +26%), and at one year too (+33% against +15% and
+  +18%). Within the FY10 anchor CHEAP led on both (+38% and +40%, against +31% and +22% for RICH and +22% and +25% for FAIR);
+  within the FY09 and FY11 anchors RICH beat CHEAP on the endpoint (+60% against +57%, +64% against +62%).
+- **The CHEAP call held on all 73;** 72 cleared the hurdle (2010-07-23, +31%, did not) and 7 lagged SPY (April-June 2009 and
+  2010-07-02), when SPY returned +39% to +63%.
+- **The RICH call held only in late 2010:** on 8 of 61 dates, 2010-10-08 and 2010-11-05 to 2010-12-17 ($82-90), with two-year
+  returns of +12% to +19%, 3.5-10.5pp behind SPY. The 46 RICH dates of 2011 all beat SPY (by 4-37pp) and 38 cleared the hurdle.
+  The FAIR call held on 7 of 22 (2010-06-18 and 2010-09-17 to 2010-10-29, within -9pp to +14pp of SPY); the other 15 beat SPY by
+  more than 15pp, as in 2008.
+- **BULL, not BASE, was the nearest anchor.** The two-year price landed nearest the BULL price on 92 dates, XBULL on 36 (all in
+  2011) and BASE on 28 (all in 2009). It was 1.08-1.77 times the BASE price on every date; on every 2011 date it was 1.08-1.44
+  times BULL (0.80-1.09 times XBULL). The path went below the BEAR price on all 24 dates of January to June 2009 (lows of
+  $38.57 on 2009-03-09 to $50.84 on 2009-06-26) and on 34 of the 52 dates of 2009, on none after.
+- **The floor distance ranked the m12-24 average; the endpoint less.** The EPP gap ranks the two-year returns at Spearman -0.49
+  (-0.80 within 2009 and within 2010, -0.31 within 2011) and the m12-24 averages at -0.90; Ratio B at -0.50 and -0.90, the
+  conservative return at +0.54 and +0.84, the entry price alone at -0.35 and -0.83. As in 2008, much of this is "buy lower".
+- **The proxy composite ranked the outcomes backwards again,** at -0.53 on the two-year return and -0.58 on the m12-24 average,
+  but not step by step: the lowest medians followed 2.85 (after the Q1 FY11 print, +16%) and 2.70 (after Q2 FY11 and Q2 FY12,
+  +30%); the 3.20 and 3.35 of March-September 2010 were followed by +51% and +35%, and the 1.85-2.15 of 2009 and early 2010 by
+  +52% to +61%. Within each year it ranks them weakly (+0.12, -0.20, -0.27). This is a second, weaker reading on the same stock
+  of the 2008 hypothesis (trailing signals lean pro-cyclical); it still needs other tickers before any method change.
+- **The FY09 call, seen afterwards.** FY09 at GAAP $3.03 instead of the company's $3.81 would have turned 47 CHEAP or FAIR dates
+  RICH, 10 CHEAP dates FAIR and 1 RICH date FAIR (retro/README.md, "NKE 2009-2011"). The stock beat SPY on 53 of those 58 dates,
+  so the call held on 43 of them as built and would have held on 14: 59 of 156 overall against 88. BASE on reported revenue
+  growth would have held on 94 (+6), FY08 at GAAP on 87 (-1). These are facts about one stock in three years, not reasons to
+  change an encoding: the calls were decided before scoring and stay, and a rule change means a new method version tested
+  elsewhere.

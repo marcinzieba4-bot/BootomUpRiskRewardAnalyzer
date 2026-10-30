@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "NKE",
+ "as_of": "2009-08-07",
+ "computed": "2026-10-30",
+ "data_source": "Yahoo Finance daily closes + dividends (NKE, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2010-02-05",
+   "price": 61.7,
+   "dividends": 0.52,
+   "total_return_pct": 7.1,
+   "benchmark_total_return_pct": 6.5,
+   "excess_pct": 0.7,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2010-08-06",
+   "price": 73.96,
+   "dividends": 1.06,
+   "total_return_pct": 29.2,
+   "benchmark_total_return_pct": 13.1,
+   "excess_pct": 16.0,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2011-08-05",
+   "price": 83.87,
+   "dividends": 2.26,
+   "total_return_pct": 48.3,
+   "benchmark_total_return_pct": 23.1,
+   "excess_pct": 25.2,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2012-08-07",
+   "price": 96.17,
+   "dividends": 3.65,
+   "total_return_pct": 71.9,
+   "benchmark_total_return_pct": 45.8,
+   "excess_pct": 26.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2011-07-07",
+   "price": 93.66
+  },
+  "low": {
+   "date": "2009-09-02",
+   "price": 53.31
+  },
+  "max_drawdown_pct": -18.3,
+  "return_to_avg_price_m12_m24_pct": 42.4
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "TURNAROUND",
+   "risk": 3,
+   "why": "Nike: brand still huge, but earnings collapsed; new management, China malaise",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
