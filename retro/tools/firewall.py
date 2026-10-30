@@ -84,6 +84,11 @@ try:
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2],
                                 "rev_guide": [-40, -30], "rev_guide_label": "PLANTED", "volume_guide": [-50, -40], **GUIDE_PLANT})
         f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
+    if TICKER == "AAPL":   # a later withdrawal of every field of every guided quarter (the update of 2020-02-17 rule)
+        for g in [g for g in f["guides"] if g["published"] < cutoff and "sales_usd_b" in g.get("q_guide", {})]:
+            f["guides"].append({"fy": g["fy"], "published": later, "source": last["source"], "doc": "PLANTED", "quote": "PLANTED",
+                                "q_guide": {"quarter": g["q_guide"]["quarter"],
+                                            "withdrawn": ["sales_usd_b", "eps", "gm_pct", "opex_usd_b", "oie_usd_b", "tax_pct"]}})
     if "capital_return" in f:      # AAPL: a capital return statement (catalyst 5)
         f["capital_return"].append({"published": later, "source": last["source"], "doc": "PLANTED", "text": "PLANTED"})
     if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF

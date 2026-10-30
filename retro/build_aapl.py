@@ -32,7 +32,10 @@ derived from them would be a figure derived from others; a quarter's tax rate is
 declared rate; catalyst (5) shows the latest statement of the capital return program (capital_return).
 From Q1 FY19 Apple reports net sales by category only, with no unit sales: the Mac unit signal has no value and scores BASE (the
 engine), and Mac and iPhone net sales growth (mac_sales_pct, iphone_sales_pct) are shown instead. A filing that revises a quarter's
-guide with new numbers (the letter of 2019-01-02) is a guide of its own: each field it states replaces the earlier one.
+guide with new numbers (the letter of 2019-01-02) is a guide of its own: each field it states replaces the earlier one. A filing that
+says a field will not hold and gives no number (the update of 2020-02-17: "we do not expect to meet the revenue guidance") withdraws
+it: the field is void in every earlier guide for that quarter, and the no-guide rule applies to it (the LOW withdrawal rule). From the
+Q2 FY20 release Apple gives no outlook at all, so the no-guide rules hold to the end of 2023.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Apple released after the close, so a print is dated the next
@@ -64,7 +67,8 @@ ENGINE = os.path.join(HERE, "templates", "aapl_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "AAPL")
 # the guide fields this builder has an encoding for; any other field needs its encoding decided first
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quote", "q_guide", "q_guide_note", "gm_guide_pct"}
-Q_GUIDE_KEYS = {"quarter", "sales_usd_b", "eps", "prior_sales_b", "prior_source", "prior_label", "gm_pct", "opex_usd_b", "oie_usd_b", "tax_pct"}
+Q_GUIDE_KEYS = {"quarter", "sales_usd_b", "eps", "prior_sales_b", "prior_source", "prior_label", "gm_pct", "opex_usd_b", "oie_usd_b", "tax_pct",
+                "withdrawn"}
 
 
 def fiscal_year_end(n):
@@ -164,7 +168,12 @@ def build(as_of, facts, raw, spx, engine, out):
     # a next-quarter guide counts while its quarter is unreported; each of its fields from the latest guide that states it
     qkey = lambda q: (int(q.split("FY")[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"] % 100, nq)
-    q_field = lambda k: next((g for g in reversed(guides) if k in g.get("q_guide", {}) and later(g["q_guide"]["quarter"])), None)
+    # a guide that withdraws fields of its quarter (the update of 2020-02-17: "we do not expect to meet the revenue guidance")
+    # voids them in every earlier guide for that quarter, and the no-guide rule applies to them (the LOW withdrawal rule)
+    void = lambda g, k: any(w.get("q_guide", {}).get("quarter") == g["q_guide"]["quarter"] and k in w["q_guide"].get("withdrawn", [])
+                            for w in guides[guides.index(g) + 1:])
+    q_field = lambda k: next((g for g in reversed(guides) if k in g.get("q_guide", {}) and later(g["q_guide"]["quarter"]) and not void(g, k)), None)
+    gqw = next((g for g in reversed(guides) if "sales_usd_b" in g.get("q_guide", {}).get("withdrawn", []) and later(g["q_guide"]["quarter"])), None)
     gqs, gqe, gqm = q_field("sales_usd_b"), q_field("eps"), q_field("gm_pct")
     gqo, gqi, gqt = q_field("opex_usd_b"), q_field("oie_usd_b"), q_field("tax_pct")       # from Q1 FY13, display only
     ggm = next((g for g in reversed(guides) if "gm_guide_pct" in g), None)
@@ -178,12 +187,14 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd = [latest["sales_pct"]] * 2
         fwd_label, fwd_short, fwd_period = f"no {next_q} revenue guide, {latest['quarter']} net sales", f"{latest['quarter']} sales", latest["quarter"]
     bits = []
-    qs = {g["q_guide"]["quarter"] for g in (gqs, gqe, gqm, gqo, gqi, gqt) if g}
+    gqw = None if gqs else gqw                     # a revenue guide restated after a withdrawal would stand
+    qs = {g["q_guide"]["quarter"] for g in (gqs, gqe, gqm, gqo, gqi, gqt, gqw) if g}
     assert len(qs) <= 1, (as_of, "next-quarter guide fields for different quarters", qs)
     qq = qs.pop() if qs else None
     if qq:
         qb = ([f"revenue {usd_level(*gqs['q_guide']['sales_usd_b'])} ({pct_range(*fwd)} on {gqs['q_guide']['prior_label']}'s "
-               f"${gqs['q_guide']['prior_sales_b']:.2f}B)"] if gqs else []) + \
+               f"${gqs['q_guide']['prior_sales_b']:.2f}B)"] if gqs else
+              [f"no revenue guide: the {gqw['doc']} withdrew it ('{gqw['quote']}')"] if gqw else []) + \
              ([f"EPS {rng(*gqe['q_guide']['eps'])}"] if gqe else []) + \
              ([f"gross margin {gm_level(*gqm['q_guide']['gm_pct'])} ({gqm['doc']})"] if gqm else []) + \
              ([f"operating expenses {opex_level(*gqo['q_guide']['opex_usd_b'])}"] if gqo else []) + \
@@ -195,15 +206,21 @@ def build(as_of, facts, raw, spx, engine, out):
     if guides and bits:
         guide_text = (f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
                       + f"; no {fy_now} revenue, EPS or operating-margin guide")
-    else:
+    elif latest.get("outlook_short"):
         guide_text = f"{fy_now}: no guide in scope yet; the {latest['quarter']} release in words: '{latest['outlook_short']}'"
+    else:                                          # from the Q2 FY20 release Apple gives no outlook, in numbers or in words
+        guide_text = f"{fy_now}: no guide in scope; the {latest['quarter']} release gives none"
     # no operating-margin guide in any filing of the period: no guided step, and the margin signal uses the latest quarter
     margin_guided = False
     fy_margin_base = h["prev_fy_op_margin"]
 
     # ── dividend: the latest declared rate (none before the first declaration, the Q3 FY12 release) ──
-    divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
-    divs.append((h.get("dividend_published", h["published"]), h["dividend_annual"], h["dividend_note"], None))
+    # a rate declared before a split was announced is divided from the split's effective date (on_basis): the note says so
+    # then, never earlier (the $0.82 of 2020-04-30 predates the 4-for-1 split announced on 2020-07-30)
+    split_txt = lambda pub: "".join(f", divided by {s['ratio']} for the {s['ratio']}-for-1 split effective {s['effective']}"
+                                    for s in facts["splits"] if pub < s["published"] and s["effective"] <= as_of)
+    divs = [(d["published"], d["quarterly"] * 4, d["note"] + split_txt(d["published"]), d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
+    divs.append((h.get("dividend_published", h["published"]), h["dividend_annual"], h["dividend_note"] + split_txt(h.get("dividend_published", h["published"])), None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
     # ── capital return: the latest statement of the program (display only, catalyst (5)) ──
     crs = [c for c in facts.get("capital_return", []) if c["published"] <= as_of]
@@ -247,7 +264,9 @@ def build(as_of, facts, raw, spx, engine, out):
     cat3 = (f"(3) {qq} guide — " + ", ".join(
                 ([f"revenue {usd_level(*gqs['q_guide']['sales_usd_b'])}"] if gqs else []) + ([f"EPS {rng(*gqe['q_guide']['eps'])}"] if gqe else []))
             + f"; Apple guides one quarter at a time, no {fy_now} guide" if (gqs or gqe) else
-            f"(3) A {next_q} guide — the {latest['quarter']} release gives none ('{latest['outlook_short']}')")
+            f"(3) {qq} guide — revenue withdrawn by the {gqw['doc']} ('{gqw['quote']}'); no {fy_now} guide" if gqw else
+            f"(3) A {next_q} guide — the {latest['quarter']} release gives none ('{latest['outlook_short']}')" if latest.get("outlook_short") else
+            f"(3) A {next_q} guide — the {latest['quarter']} release gives none")
     # iPad units from the Q3 FY10 print; no iPod units from the Q1 FY15 print; no unit sales at all from the Q1 FY19 print
     cat4 = (f"(4) iPhone and iPad — no unit sales reported in {latest['quarter']}: iPhone net sales {latest['iphone_sales_pct']:+.1f}%, "
             f"net sales other than Macs {latest['non_mac_pct']:+.1f}%" if latest["iphone_units_k"] is None else

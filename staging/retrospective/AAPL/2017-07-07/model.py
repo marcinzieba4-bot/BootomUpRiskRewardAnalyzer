@@ -24,7 +24,7 @@ SOURCES = [
         "filed": "2016-10-26 16:42 ET (after the close)",
         "title": "Apple Inc. FY2016 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828016020309/a201610-k9242016.htm",
-        "supports": "selected financial data FY2012-FY2016 (net sales, diluted EPS, diluted shares 5,500,281K in FY16, commercial paper $8,105M, total term debt $78,927M); income statement FY2014-FY2016; net sales and unit sales by product FY2014-FY2016; cash flow; competition and macOS wording, no store count; quarterly dividends of $0.57 expected"
+        "supports": "selected financial data FY2012-FY2016 (net sales, diluted EPS, diluted shares 5,500,281K in FY16 and 6,617,483K in FY12, commercial paper $8,105M, total term debt $78,927M); income statement FY2014-FY2016; net sales and unit sales by product FY2014-FY2016; cash flow; competition and macOS wording, no store count; quarterly dividends of $0.57 expected"
     },
     {
         "id": "A67",
@@ -32,7 +32,7 @@ SOURCES = [
         "filed": "2015-10-28 16:31 ET (after the close)",
         "title": "Apple Inc. FY2015 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312515356351/d17062d10k.htm",
-        "supports": "selected financial data FY2011-FY2015 (net sales, diluted EPS, diluted shares 5,793,069K in FY15, commercial paper $8,499M, total term debt $55,963M); income statement FY2013-FY2015; net sales and unit sales by product FY2013-FY2015; cash flow; 463 retail stores; competition and OS X wording; quarterly dividends of $0.52 expected"
+        "supports": "selected financial data FY2011-FY2015 (net sales, diluted EPS, diluted shares 5,793,069K in FY15 and 6,556,514K in FY11, commercial paper $8,499M, total term debt $55,963M); income statement FY2013-FY2015; net sales and unit sales by product FY2013-FY2015; cash flow; 463 retail stores; competition and OS X wording; quarterly dividends of $0.52 expected"
     },
     {
         "id": "A61",

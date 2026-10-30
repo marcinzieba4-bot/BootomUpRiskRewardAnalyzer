@@ -536,6 +536,175 @@
     "first_seen": "2020-11-10"
    },
    {
+    "term": "AirTag",
+    "first_seen": "2021-04-20"
+   },
+   {
+    "term": "iOS 15",
+    "first_seen": "2021-06-07"
+   },
+   {
+    "term": "macOS Monterey",
+    "first_seen": "2021-06-07"
+   },
+   {
+    "term": "SharePlay",
+    "first_seen": "2021-06-07"
+   },
+   {
+    "term": "iPhone 13",
+    "first_seen": "2021-09-14"
+   },
+   {
+    "term": "Apple Watch Series 7",
+    "first_seen": "2021-09-14"
+   },
+   {
+    "term": "M1 Pro",
+    "first_seen": "2021-10-18"
+   },
+   {
+    "term": "M1 Max",
+    "first_seen": "2021-10-18"
+   },
+   {
+    "term": "Omicron",
+    "first_seen": "2021-11-26",
+    "note": "the WHO names the variant"
+   },
+   {
+    "term": "M1 Ultra",
+    "first_seen": "2022-03-08"
+   },
+   {
+    "term": "Mac Studio",
+    "first_seen": "2022-03-08"
+   },
+   {
+    "term": "Studio Display",
+    "first_seen": "2022-03-08"
+   },
+   {
+    "term": "M2",
+    "first_seen": "2022-06-06",
+    "note": "the M2 chip, announced at WWDC"
+   },
+   {
+    "term": "iOS 16",
+    "first_seen": "2022-06-06"
+   },
+   {
+    "term": "macOS Ventura",
+    "first_seen": "2022-06-06"
+   },
+   {
+    "term": "Apple Pay Later",
+    "first_seen": "2022-06-06"
+   },
+   {
+    "term": "iPhone 14",
+    "first_seen": "2022-09-07"
+   },
+   {
+    "term": "Dynamic Island",
+    "first_seen": "2022-09-07"
+   },
+   {
+    "term": "Apple Watch Ultra",
+    "first_seen": "2022-09-07"
+   },
+   {
+    "term": "Apple Watch Series 8",
+    "first_seen": "2022-09-07"
+   },
+   {
+    "term": "Vision Pro",
+    "first_seen": "2023-06-05"
+   },
+   {
+    "term": "visionOS",
+    "first_seen": "2023-06-05"
+   },
+   {
+    "term": "iOS 17",
+    "first_seen": "2023-06-05"
+   },
+   {
+    "term": "macOS Sonoma",
+    "first_seen": "2023-06-05"
+   },
+   {
+    "term": "iPhone 15",
+    "first_seen": "2023-09-12"
+   },
+   {
+    "term": "Apple Watch Series 9",
+    "first_seen": "2023-09-12"
+   },
+   {
+    "term": "M3",
+    "first_seen": "2023-10-30",
+    "note": "the M3 chips"
+   },
+   {
+    "term": "M4",
+    "first_seen": "2024-05-07",
+    "note": "the M4 chip"
+   },
+   {
+    "term": "Apple Intelligence",
+    "first_seen": "2024-06-10"
+   },
+   {
+    "term": "iOS 18",
+    "first_seen": "2024-06-10"
+   },
+   {
+    "term": "macOS Sequoia",
+    "first_seen": "2024-06-10"
+   },
+   {
+    "term": "Private Cloud Compute",
+    "first_seen": "2024-06-10"
+   },
+   {
+    "term": "iPhone 16",
+    "first_seen": "2024-09-09"
+   },
+   {
+    "term": "Apple Watch Series 10",
+    "first_seen": "2024-09-09"
+   },
+   {
+    "term": "iPhone 16e",
+    "first_seen": "2025-02-19"
+   },
+   {
+    "term": "Liquid Glass",
+    "first_seen": "2025-06-09"
+   },
+   {
+    "term": "iOS 26",
+    "first_seen": "2025-06-09"
+   },
+   {
+    "term": "macOS Tahoe",
+    "first_seen": "2025-06-09"
+   },
+   {
+    "term": "iPhone 17",
+    "first_seen": "2025-09-09"
+   },
+   {
+    "term": "iPhone Air",
+    "first_seen": "2025-09-09"
+   },
+   {
+    "term": "M5",
+    "first_seen": "2025-10-15",
+    "note": "the M5 chip"
+   },
+   {
     "term": "GitHub Copilot",
     "first_seen": "2021-06-29"
    },

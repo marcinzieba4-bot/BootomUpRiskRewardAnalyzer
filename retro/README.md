@@ -2394,6 +2394,137 @@ Judgement calls that could carry hindsight:
 - noting the 14th week only from the first filing that states it, and leaving growth as published (no class moves);
 - DURABLE rather than CYCLICAL (the class label only), and CLOUD, STREAMING and ECOMMERCE as outside Apple's scope.
 
+### AAPL 2020-2023: no guidance, a withdrawn revenue range, the 4-for-1 split, a second 53-week year
+
+```bash
+python3 retro/build_aapl.py --weekly 2020-01-06 2023-12-31                  # 208 dates, 2020-01-10 .. 2023-12-29
+```
+
+Every 8-K, 10-Q, 10-K and proxy filed on Apple's CIK from 2020-01-01 to 2023-12-31 was read directly (74 filings with the
+third-party solicitations, the IRANNOTICEs and the 2021 shelf), and the 10-Qs and 10-Ks were searched for forward-looking
+statements. 557 strings were checked with `verbatim.py` against their own filings. 229 structured checks read each print's
+statements and each Q4 print's full-year figures back from the XBRL of the 10-Q or 10-K filed with it, and all match. Two of them
+are Q2 and Q3 FY20's "commercial paper and repurchase agreement(s)", tagged as other short-term borrowings. Six are Q4 FY21-FY23
+net sales and gross margin: the FY2021-FY2023 10-Ks give no quarterly figures, so each is the year less the Q3 10-Q's nine
+months. Those three Q4 EPS figures have no XBRL counterpart and rest on the verbatim check. 144 more read each quarter's net sales
+by category back from its 10-Q, and sum the four quarters (total and each category) to each 10-K's year. Every source's date comes
+from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided before any 2020-2023 date was built or scored:
+
+- **Four vintages, ten years each.** The FY2020 10-K (accepted 2020-10-29 18:06 ET, dated 2020-10-30) gives FY2016-FY2020 in its
+  selected financial data, restated for the split. The FY2021 (2021-10-28 18:04 ET, dated 2021-10-29), FY2022 (2022-10-27 18:01
+  ET, dated 2022-10-28) and FY2023 (2023-11-02 18:08 ET, dated 2023-11-03) 10-Ks reserve Item 6, so each supplies the three years
+  of its income statement (the ACN FY21 rule), and the earlier years keep the latest 10-K that reported them. The history moves to
+  FY2011-FY2020, FY2012-FY2021, FY2013-FY2022, then FY2014-FY2023. Each 10-K came the evening of its Q4 release and is dated the
+  same day as the Q4 print, so the release's full-year figures never show (as in FY2017 and FY2019).
+  - First-year diluted shares: FY2011's 6,556,514K (FY2015 10-K), FY2012's 6,617,483K (FY2016 10-K), FY2013's 6,521,634K (FY2017
+    10-K) and FY2014's 6,122,663K (FY2018 10-K), all on the 7-for-1 basis.
+  - Every year is GAAP. FY20 includes "a one-time adjustment of U.S. foreign tax credits" that lowered its tax rate (the Q1 FY20
+    10-Q, the FY2020 10-K); Apple published no figure without it (the Fremont rule).
+- **The 4-for-1 split.** Approved in the Q3 FY20 release (accepted 2020-07-30 18:55 ET, dated 2020-07-31): "trading will begin
+  on a split-adjusted basis on August 31, 2020", the price data's split date. From that date every per-share fact published before
+  it is divided by 4 and every share count multiplied by 4 (the UNP rule): FY19's $11.89 stands as $2.9725 from 2020-08-31 to
+  2020-10-29. The FY2020 10-K restates FY2016-FY2019, so those years enter as restated ($2.08, $2.30, $2.98, $2.97; not $8.31 / 4
+  and so on), and FY2011-FY2015 from the earlier 10-Ks are divided. Print and program text is not restated (the UNP 2014 rule). The
+  8-K of 2020-08-07 (the articles amended for the split) adds nothing.
+- **Dividends,** each from the first filing that states the rate: $0.82 (Q2 FY20 release, 2020-05-01, "an increase of 6
+  percent"), divided by 4 from the split; $0.205 (Q4 FY20 release, 2020-10-30, the first declaration after it, as in 2014); $0.22,
+  $0.23 and $0.24 (the Q2 FY21-FY23 releases). A builder change, text only: a rate declared before a split was announced says
+  "divided by 4 for the 4-for-1 split effective 2020-08-31" from that date on. A note written into the fact would have shown the
+  split, announced on 2020-07-30, on the dates from 2020-05-01; the 2014 rate came in the same 8-K as its split, so no earlier note
+  changes. Catalyst (5) shows the programs: $50 billion more (2020), $90 billion more (2021, 2022), then a new $90 billion program
+  (2023).
+- **One guide, then none.** The Q1 FY20 release (accepted 2020-01-28 16:30 ET, dated 2020-01-29) gives Q2 FY20 as before: revenue
+  $63.0-67.0 billion (+8.6% to +15.5% on Q2 FY19's $58.015B), gross margin 38-39%, operating expenses $9.6-9.7 billion, other
+  income $250 million, a 16.5% tax rate. From the Q2 FY20 release (2020-04-30) to the end of 2023 no release, 10-Q or 10-K gives any
+  guidance or outlook, in numbers or in words (the conference calls are not filings). The builder's no-guide rule applies (UNP
+  2009, LOW 2020): the last full year's EPS stands, BASE growth and the growth factor take the latest quarter's net sales growth,
+  and there is no margin step. A builder change, text only: a print without outlook words says its release "gives none", with no
+  quote (no earlier print lacks them).
+- **The update of 2020-02-17.** An 8-K (item 7.01, accepted 2020-02-18 06:24 ET, before the open; 2020-02-17 was a market
+  holiday): "we do not expect to meet the revenue guidance we provided for the March quarter", with no new number. That is not a
+  guide restated in words, which keeps the last range (the 8-K of 2013-09-23 put revenue "near the high end of the previously
+  provided range"): it says the range will not hold. As with LOW's withdrawn guide, the field it names is void and the no-guide
+  rule applies to it. From 2020-02-21, BASE takes Q1 FY20's +8.9% instead of the range's +12.1% midpoint. The other fields (gross
+  margin, operating expenses, other income, tax rate) are display only and not mentioned, so they stand. A builder change
+  (`q_guide.withdrawn`): a guide may withdraw named fields of its quarter, which voids them in every earlier guide for that
+  quarter. No earlier guide withdraws anything, so no earlier date changes.
+- **Prints.** Every release came after the close, so each print is dated the next trading day. Twelve came on Thursdays (Q2-Q4
+  FY20, Q4 FY21, Q1-Q4 FY22, Q1-Q4 FY23): the print is dated Friday and counts on its own day (the Q4 FY12 rule). No unit sales, as
+  from Q1 FY19: the Mac unit slot scores BASE, and Mac and iPhone net sales growth are display only. Q2 and Q3 FY20's balance sheets
+  name the line "commercial paper and repurchase agreement(s)", and the cash-return text uses that name.
+- **The second 53-week year.** Fiscal 2023 had 53 weeks, a 14th in Q1 FY23. Growth is as published (-5.5% against the 13 weeks of
+  Q1 FY22), and the week is noted where a filing public by then states it (the LOW 53rd-week rule): the FY2022 10-K ("which will
+  occur in the first quarter of the Company's fiscal year ending September 30, 2023"), the Q1 FY23 10-Q (dated the print's day) and
+  the FY2023 vintage.
+- **No theme.** GENAI (live from 2022-11-30) is scoped to software seats, IT services and BPO hours, professional information,
+  search, education content and mobility; EV to combustion powertrains, parts and fuel; CRYPTO to payments networks, banks and
+  exchanges; GLP1 to snacks, beverages and medical devices; CLOUD, STREAMING, ECOMMERCE and ENERGY_TRANSITION as before. None
+  names Apple's products. The watch list stays empty, DURABLE, risk 2.
+- **The franchise text follows each 10-K.** The FY2020-FY2023 10-Ks keep the three quoted phrases word for word ("designs and
+  develops nearly the entire solution", "a minority market share in the global smartphone, personal computer and tablet markets",
+  "highly competitive global markets characterized by aggressive price competition"), and give no store count.
+- **Adds nothing:**
+  - the update of 2022-11-06 (8-K of 2022-11-07, before the open), which expects lower shipments of two iPhone models "than we
+    previously anticipated": words, and no guide in force (the ACN non-earnings 8-K rule);
+  - the debt offerings (item 8.01) and the 2021 shelf registration;
+  - the officer, director, bylaw and vote 8-Ks, among them the articles amendment of 2020-08-07;
+  - the proxies, the shareholder solicitations and the IRANNOTICEs;
+  - the 10-Qs' and 10-Ks' expectations without a field (deferred revenue realization, unrecognized tax benefits, hedges, the EU
+    State Aid escrow and the timing of the ECJ's decision);
+  - COVID-19 beyond the prints and the update (the UNP 2020 rule: a caveat without a figure adds nothing).
+- **Text-only change to 2015-2019:** four source descriptions (the FY2015-FY2018 10-Ks) now also cite the FY2011-FY2014 share
+  counts the new vintages use. 219 models and analyses change only in that text, and every report rebuilds byte-identical.
+- **Anachronism list:** Apple product and software names first seen from 2021 to 2025 join it (from AirTag and iOS 15 to the
+  iPhone 17 and the M5 chip, with M2, M3, Vision Pro and Apple Intelligence), and "Omicron" (2021-11-26). None of the 3,573
+  existing models of any ticker contains one.
+- **ISO weeks:** the batch runs from 2020-W02 to 2023-W52; a 2024 batch starts on 2024-01-01.
+
+Controls: altering one value of each new print, Q4 full-year figure, guide, the withdrawal, the split, each vintage, dividend and
+program statement changes no date before its publication (36 of 36) and changes the first weekly date on or after it (32 of 36).
+The other four are the Q4 full-year figures, which the 10-K replaces on the same day. The withdrawal first shows on 2020-02-21, and
+the split on 2020-09-04, the first weekly date after its effective date. The 627 dates of 2008-2019 rebuild with byte-identical
+reports, and the 2008 dates of ACN, UNP and LOW rebuild unchanged. A scan of all 835 AAPL models for 76 values of the new prints,
+guide, withdrawal, vintages, split, dividends and programs finds none before its publication. The firewall, which now also plants
+a later withdrawal of every guided field, changes none of the 835, 722 and 635 models before 2024-01-01, 2021-11-01 and
+2020-03-01.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on every date.** All 208 dates read RICH; the tier reads AVOID on 202 and WATCHLIST on 6 (2022-12-16 to 2023-01-20, Ratio
+  B 1.27-1.63x). The multiple stands at the 95th-100th percentile of its own decade in 2020-2021 and at the 72nd-98th in
+  2022-2023: 19.3-42.0x in 2020 (the lowest 19.3x on 2020-03-20, at $229.24), 26.7-47.0x in 2021, 21.3-31.1x in 2022 and
+  21.2-32.2x in 2023.
+- **The last full year's EPS is the anchor all along:** FY19's $11.89 ($2.973 after the split) to 2020-10-29, FY20's $3.28 to
+  2021-10-28, FY21's $5.61 to 2022-10-27, FY22's $6.11 to 2023-11-02, FY23's $6.13 after. Through 2021 the stock trades at
+  26.7-47.0x FY20's $3.28 while the FY21 quarters run ahead (Q1 FY21 $1.68 against $1.25).
+- **BASE follows each quarter's net sales growth plus the buyback:** +7.5%/yr on the Q1 FY20 guide and +15.8% on Q2 FY20's, +12.6%
+  after the update withdrew its revenue range, then +4.2% (Q2 FY20's +0.5%), +14.6%, +5.6%, +26.0% (Q1 FY21's +21.4%), +58.2% (Q2
+  FY21's +53.6%), +41.0%, +33.9%, +16.3%, +13.7%, +7.0%, +13.4%, -0.2% (Q1 FY23's -5.5%), +2.8%, +3.9% and +4.3%. The decade's
+  buyback rises from 3.75%/yr (FY10-FY19) to 4.58%, 5.14%, 5.35%, then 4.98%/yr. As with UNP in 2009 and LOW in 2020, the
+  fallback carries one quarter's growth for two years. BASE lifts BULL to its own rate (the rule's floor) on the 65 dates from
+  2021-01-29 to 2022-04-22, and XBULL too on the 26 from 2021-04-30 to 2021-10-22.
+- **BULL, XBULL and BEAR move with the window.** BULL is the decade EPS CAGR: +20.9%/yr (FY10-FY19), +14.3% (FY11-FY20), +15.1%
+  (FY12-FY21), +17.6% (FY13-FY22), +16.0% (FY14-FY23). XBULL is FY10-FY12's +70.9%/yr, then FY13-FY15's +27.4% (FY2020 vintage) and
+  FY19-FY21's +37.4% (from the FY2021 vintage). BEAR applies FY13's -10.0% twice through the FY2021 vintage, then FY16's -9.8%.
+- **Ratio B is `inf` on 106 dates,** the last on 2022-09-09: the price stands above the BULL case.
+- **The proxy composite leaves 2.00 from the Q1 FY21 print.** Against the FY1998-FY2007 thresholds the gross-margin change reads
+  BULL from Q1 FY21 to Q2 FY22 and from Q3 FY23, net sales and other net sales from Q1 FY21 to Q4 FY21, and the operating-margin
+  change from Q2 FY21 to Q1 FY22: 2.50 on 13 dates, 2.65 on 39, 2.35 on 13, 2.20 on 35, and 2.00 on the other 108. The unreported
+  Mac slot changes none of it.
+
+How far each call moves the classes (the affected dates rebuilt with one encoding changed; no outcome consulted):
+- reading the update of 2020-02-17 as words only (the $63.0-67.0 billion range standing to the Q2 FY20 print) would change none of
+  the 10 dates;
+- re-weighting the other five signals instead of scoring the unreported Mac slot BASE would change none of the 208 classes or
+  tiers;
+- Q1 FY23's net sales growth on 13 weeks (-12.2%, a figure derived from others) would change none of the 13 dates.
+
+Judgement calls that could carry hindsight:
+- treating the update of 2020-02-17 as withdrawing the revenue range (no class moves);
+- scoring the unreported Mac slot at BASE, as from Q1 FY19 (no class moves);
+- leaving the 14-week Q1 FY23 as published (no class moves);
+- keeping GAAP through the one-time adjustment of U.S. foreign tax credits (no figure without it was published; not rebuilt);
+- DURABLE rather than CYCLICAL (the class label only), and GENAI, EV and CRYPTO as outside Apple's scope.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -2443,9 +2574,10 @@ What the gates enforce:
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
   Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023", "LOW 2024-2026").
   AAPL in 2008 carries none: no theme in the registry is live for a personal-computer and consumer-electronics maker
-  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2019:
+  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2023:
   CLOUD's scope is on-premise enterprise IT, STREAMING's linear TV and ECOMMERCE's physical retail, and Apple's FY2012-FY2019
-  10-Ks name cloud and streaming only as its own services ("AAPL 2012-2015", "AAPL 2016-2019").
+  10-Ks name cloud and streaming only as its own services ("AAPL 2012-2015", "AAPL 2016-2019"); GENAI's scope (from 2022-11-30),
+  EV's, CRYPTO's and GLP1's name none of Apple's products ("AAPL 2020-2023").
 
 ## Workflow
 

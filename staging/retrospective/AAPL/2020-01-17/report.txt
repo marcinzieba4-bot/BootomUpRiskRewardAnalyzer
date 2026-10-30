@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  AAPL  ·  Apple Inc.  ·  $318.73  ·  RETROSPECTIVE as of 2020-01-17
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.64  [OVERVALUED]
+  Point-in-time: 22 sources, latest published 2020-01-17; latest print Q4 FY19 (Oct 30)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E net sales, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Product line                 FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  iPhone                    $   147.8  $ 147.8  $ 201.0      +0.0     +53.2
+    -13.6% net sales in FY19
+  Services                  $    48.0  $  48.0  $  65.3      +0.0     +17.3
+    +16.5% net sales in FY19
+  Mac                       $    26.7  $  26.7  $  36.3      +0.0      +9.6
+    +2.2% net sales in FY19
+  Wearables, Home and Acce  $    25.4  $  25.4  $  34.6      +0.0      +9.2
+    +40.9% net sales in FY19
+  iPad                      $    22.1  $  22.1  $  30.0      +0.0      +7.9
+    +15.8% net sales in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   270.0  $ 270.0  $ 367.2      +0.0     +97.2
+  FY2020E = FY19 $260.17B × (1 + 3.8%: Q1 FY20 revenue guide, applied to the year (no FY20 revenue guide)); split pro rata to FY19 net sales by category (FY2019 10-K, FY18 recast)
+  Q4 FY19 (Oct 30): net sales $64.04B +1.8%; no unit sales reported (Mac net sales -4.8%, iPhone net sales -9.2%);
+  gross margin 37.97% (-32bp); operating margin 24.40% (-123bp); EPS $3.03 vs $2.91; net sales other than Macs +2.7%
+  No iPhone or Apple TV subscription deferral at Q4 FY19: none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale
+  FY20 guide (Q4 FY19 release): Q1 FY20: revenue $85.5-89.5B (+1.4-6.2% on Q1 FY19's $84.31B), gross margin 37.5-38.5% (Q4 FY19 release), operating expenses $9.60-9.80B, other income/(expense) $200M, tax rate 16.5%; no FY20 revenue, EPS or operating-margin guide
+
+  FY2020E EPS check:  ($270.0B × 24.6% + $1.81B other income) × (1−15.9%) ÷ 4.520B  =  $12.67  (FY2020E: no fiscal-year EPS guide, FY19's $11.89 stands $11.89)
+  FY2022E BEAR check: ($270.0B × 24.6% + other income) ÷ 4.188B  =  $13.68  (scenario $9.63)
+  FY2022E BULL check: ($367.2B × 25.0% + other income) ÷ 4.188B  =  $18.77  (scenario $17.37)
+  Every 1pp of operating margin ≈ $0.50 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Mac unit growth                    -78.0%  ≥-32.0%   ≥13.0%   ≥38.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -910.0bp  ≥-410.0bp  ≥90.0bp  ≥560.0bp   -32.0bp  ◦ BASE  ██░░
+  Net sales growth                   -82.0%  ≥-33.0%   ≥16.0%   ≥68.0%     +1.8%  ◦ BASE  ██░░
+  Net sales other than Macs growth   -67.0%  ≥-23.0%   ≥20.0%  ≥128.0%     +2.7%  ◦ BASE  ██░░
+  Operating margin change           -3090.0bp  ≥-1400.0bp  ≥290.0bp  ≥1950.0bp  -123.0bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   3.34 / 4.00  (back-solved from $319 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 1.70  →  Gap -1.64  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 net sales -2.0%, no Mac units: from Q1 FY19 Apple reports net sales by category only (FY2019 10-K); Q4 gross margin 37.97% (-32bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 26.8x FY20E vs a 13.5x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q1 FY20 revenue guide +1.4-6.2% vs a 9.2% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $100.56B plus $105.34B of long-term marketable securities, FY19 free cash flow $58.90B, $14.12B of dividends and $66.90B of repurchases in FY19 (cash flow statement); $102.07B of term debt ($10.26B current) and $5.98B of commercial paper  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Mac unit growth                        n/r    -78.0%     n/r  A PC demand recession stalls Mac shar…
+  Gross margin change                -32.0bp  -910.0bp  -878.0bp  Price cuts and component costs compre…
+  Net sales growth                     +1.8%    -82.0%  -83.8%  Consumer spending falls faster than n…
+  Net sales other than Macs growth     +2.7%    -67.0%  -69.7%  The iPod saturates before the iPhone …
+  Operating margin change           -123.0bp  -3090.0bp  -2967.0bp  Operating expenses grow into a sales …
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$139  (model)  /  $108 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: Mac units are not reported; Mac net sales -4.8% (Q4 FY19);
+  the bear case needs a demand recession that gross margin (-32bp now)
+  and the iPod and iPhone no longer cover. A consumer-spending recession hits Mac and iPod demand first; the bear
+  needs it to reach gross margin and the iPhone ramp as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $11.89  (FY2020E: no fiscal-year EPS guide, FY19's $11.89 stands)
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2010 10.1x, 2011 8.2x, 2012 9.3x, 2013 9.8x, 2014 10.4x, 2015 11.2x, 2016 10.9x, 2017 12.6x, 2018 12.3x, 2019 12.0x, 2020 25.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $119/share
+  Current $319 vs Updated EPP $119:  +168%  ⚠ far above floor — large drawdown room
+  Bear $108 vs Updated EPP $119:  -9%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Mac unit growth                            -32.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -410.0     -378.0   BASE floor (vs -32 now)
+  Net sales growth                           -33.0      -34.8   BASE floor (vs +2 now)
+  Net sales other than Macs growth           -23.0      -25.7   BASE floor (vs +3 now)
+  Operating margin change                  -1400.0    -1277.0   BASE floor (vs -123 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $11.89 × (1+5.5%)² = $13.25
+  At 13x P/E (conservative):  $172/share
+  + Cumul. dividends (2yr):  +$6.34/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $172  (▼147 from $319)
+  Conservative total return:  -44% over 2yr  = -22%/yr
+
+  5.5% EPS growth is what is left once the premium multiple (26.8x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2022E EPS of $24.03,
+  i.e. 42.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $151.70  –  $318.74  (at 100th pct of range)
+  Annual dividend:      $3.08/share  (yield 1.0%)
+  Realized vol (1yr):   24% annualized
+  Beta vs broad market: 1.50
+  1-sigma range (1yr):  $243  –  $395  ($319 ± 24%)
+  2-sigma range (1yr):  $167  –  $470
+  ────────────────────────────────────────────────────────────
+  Bear $108 requires:  ~2.8σ price move  (unusual — requires fundamental break)
+  A computer and consumer-electronics maker with a 1.5 beta: the stock is +109% off its January
+  low while Mac units are not reported; Mac net sales -4.8% (Q4 FY19).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        9.63  11.2x  $    108    17.6%      3.0%   +14.6pp  EPS -10.0%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE       13.75  13.5x  $    186    61.5%     10.5%   +50.9pp  EPS +7.5%/yr (Q1 guide + margin + buyback); P/E at its 10-yr median
+  BULL       17.37  15.5x  $    269    17.6%     36.8%   -19.2pp  EPS +20.9%/yr (FY10-FY19 CAGR); P/E holds its 75th pct
+  XBULL      34.73  17.3x  $    601     3.3%     49.7%   -46.3pp  EPS +70.9%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $201  /  Market EV: $420  /  Current: $319
+  Conservative EV (2yr, ④): $172 + $6.34 divs = $179 total value
+  Downside (→ Bear $108): 66.1%   Upside (→ Bull $269): -15.6%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $319 the market needs $422 in two years —
+  above the BULL case. That is a market composite of 3.34 against a model
+  read of 1.70: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +168%    -1.64  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx    +168%    -1.28  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +168%    -1.82  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +168%    -1.60  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +168%    -1.69  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +168%    -1.34  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +106%    -1.64  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +168%    -1.52  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY20 print (late January) — the next read on Mac net sales (-4.8% now; units not reported) and the next quarter's guide
+  (2) Gross margin — -32bp in Q4 FY19: pricing, mix and component costs, what must hold if units do not
+  (3) Q1 FY20 guide — revenue $85.5-89.5B; Apple guides one quarter at a time, no FY20 guide
+  (4) iPhone and iPad — no unit sales reported in Q4 FY19: iPhone net sales -9.2%, net sales other than Macs +2.7%
+  (5) Capital return at 27x — an additional $75 billion repurchase authorization, dividend raised 5% to $0.77 (Q2 FY19 release): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $119  |  ADD below ~$158  |  TRIM above $269
+════════════════════════════════════════════════════════════════════════
+
