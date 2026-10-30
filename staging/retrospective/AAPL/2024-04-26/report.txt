@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  AAPL  ·  Apple Inc.  ·  $169.30  ·  RETROSPECTIVE as of 2024-04-26
+  Signal: ✕ AVOID   Ratio B: 3.18x   Adj gap: -1.02  [OVERVALUED]
+  Point-in-time: 24 sources, latest published 2024-04-26; latest print Q1 FY24 (Feb 1)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E net sales, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Product line                 FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  iPhone                    $   204.8  $ 204.8  $ 241.4      +0.0     +36.6
+    -2.4% net sales in FY23
+  Services                  $    87.0  $  87.0  $ 102.5      +0.0     +15.5
+    +9.1% net sales in FY23
+  Wearables, Home and Acce  $    40.7  $  40.7  $  48.0      +0.0      +7.3
+    -3.4% net sales in FY23
+  Mac                       $    30.0  $  30.0  $  35.3      +0.0      +5.3
+    -26.9% net sales in FY23
+  iPad                      $    28.9  $  28.9  $  34.1      +0.0      +5.2
+    -3.4% net sales in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   391.4  $ 391.4  $ 461.3      +0.0     +69.9
+  FY2024E = FY23 $383.29B × (1 + 2.1%: no Q2 FY24 revenue guide, Q1 FY24 net sales, applied to the year (no FY24 revenue guide)); split pro rata to FY23 net sales by category (FY2023 10-K)
+  Q1 FY24 (Feb 1): net sales $119.58B +2.1%; no unit sales reported (Mac net sales +0.6%, iPhone net sales +6.0%);
+  gross margin 45.87% (+291bp); operating margin 33.76% (+302bp); EPS $2.18 vs $1.88; net sales other than Macs +2.2%
+  No iPhone or Apple TV subscription deferral at Q1 FY24: none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale
+  FY24: no guide in scope; the Q1 FY24 release gives none
+
+  FY2024E EPS check:  ($391.4B × 29.8% + $-0.56B other income) × (1−14.7%) ÷ 15.577B  =  $6.36  (FY2024E: no fiscal-year EPS guide, FY23's $6.13 stands $6.13)
+  FY2026E BEAR check: ($391.4B × 29.8% + other income) ÷ 14.063B  =  $7.04  (scenario $4.99)
+  FY2026E BULL check: ($461.3B × 30.2% + other income) ÷ 14.063B  =  $8.42  (scenario $8.25)
+  Every 1pp of operating margin ≈ $0.21 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Mac unit growth                    -78.0%  ≥-32.0%   ≥13.0%   ≥38.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -910.0bp  ≥-410.0bp  ≥90.0bp  ≥560.0bp  +291.0bp  ▲ BULL  ███░
+  Net sales growth                   -82.0%  ≥-33.0%   ≥16.0%   ≥68.0%     +2.1%  ◦ BASE  ██░░
+  Net sales other than Macs growth   -67.0%  ≥-23.0%   ≥20.0%  ≥128.0%     +2.2%  ◦ BASE  ██░░
+  Operating margin change           -3090.0bp  ≥-1400.0bp  ≥290.0bp  ≥1950.0bp  +302.0bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   3.09 / 4.00  (back-solved from $169 + 15% hurdle)
+  SCA adjustment:    -0.08  ·  EPP-distance adj -0.20  →  Adj composite 2.07  →  Gap -1.02  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 net sales -2.8%, no Mac units: from Q1 FY19 Apple reports net sales by category only (FY2023 10-K); Q1 gross margin 45.87% (+291bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.6x FY24E vs a 17.4x 10-yr median (86th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no Q2 FY24 revenue guide, Q1 FY24 net sales +2.1% vs a 6.3% 9-yr median  (-0.42 × 20%  =  -0.084)
+    +  Cash and short-term investments $73.10B plus $99.47B of long-term marketable securities, FY23 free cash flow $99.58B, $3.83B of dividends and $20.14B of repurchases in Q1 FY24 (cash flow statement); $106.04B of term debt ($10.95B current) and $2.00B of commercial paper  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Mac unit growth                        n/r    -78.0%     n/r  A PC demand recession stalls Mac shar…
+  Gross margin change               +291.0bp  -910.0bp  -1201.0bp  Price cuts and component costs compre…
+  Net sales growth                     +2.1%    -82.0%  -84.1%  Consumer spending falls faster than n…
+  Net sales other than Macs growth     +2.2%    -67.0%  -69.2%  The iPod saturates before the iPhone …
+  Operating margin change           +302.0bp  -3090.0bp  -3392.0bp  Operating expenses grow into a sales …
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$86  (model)  /  $62 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: Mac units are not reported; Mac net sales +0.6% (Q1 FY24);
+  the bear case needs a demand recession that gross margin (+291bp now)
+  and the iPod and iPhone no longer cover. A consumer-spending recession hits Mac and iPod demand first; the bear
+  needs it to reach gross margin and the iPhone ramp as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.13  (FY2024E: no fiscal-year EPS guide, FY23's $6.13 stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2014 10.4x, 2015 11.2x, 2016 10.9x, 2017 12.6x, 2018 12.4x, 2019 12.0x, 2020 17.1x, 2021 20.7x, 2022 20.6x, 2023 20.4x, 2024 26.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $74/share
+  Current $169 vs Updated EPP $74:  +130%  ⚠ far above floor — large drawdown room
+  Bear $62 vs Updated EPP $74:  -16%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Mac unit growth                            -32.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -410.0     -701.0   BASE floor (vs +291 now)
+  Net sales growth                           -33.0      -35.1   BASE floor (vs +2 now)
+  Net sales other than Macs growth           -23.0      -25.2   BASE floor (vs +2 now)
+  Operating margin change                  -1400.0    -1702.0   BASE floor (vs +302 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.13 × (1+5.1%)² = $6.77
+  At 17x P/E (conservative):  $115/share
+  + Cumul. dividends (2yr):  +$1.98/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $115  (▼54 from $169)
+  Conservative total return:  -31% over 2yr  = -15%/yr
+
+  5.1% EPS growth is what is left once the premium multiple (27.6x)
+  mean-reverts to 17x. Breakeven at 17x needs FY2026E EPS of $9.84,
+  i.e. 26.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $164.08  –  $199.62  (at 15th pct of range)
+  Annual dividend:      $0.96/share  (yield 0.6%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 1.01
+  1-sigma range (1yr):  $136  –  $202  ($169 ± 20%)
+  2-sigma range (1yr):  $103  –  $235
+  ────────────────────────────────────────────────────────────
+  Bear $62 requires:  ~3.3σ price move  (unusual — requires fundamental break)
+  A computer and consumer-electronics maker with a 1.0 beta: the stock is +3% off its April
+  low while Mac units are not reported; Mac net sales +0.6% (Q1 FY24).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.99  12.4x  $     62    12.0%      4.2%    +7.8pp  EPS -9.8%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE        7.03  17.4x  $    122    42.0%     14.7%   +27.4pp  EPS +7.1%/yr (Q1 FY24 sales + margin + buyback); P/E at its 10-yr median
+  BULL        8.25  24.6x  $    203    38.7%     51.1%   -12.5pp  EPS +16.0%/yr (FY14-FY23 CAGR); P/E holds its 75th pct
+  XBULL      11.58  28.6x  $    331     7.3%     30.0%   -22.7pp  EPS +37.4%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct
+
+  Proxy EV (2yr): $161  /  Market EV: $224  /  Current: $169
+  Conservative EV (2yr, ④): $115 + $1.98 divs = $117 total value
+  Downside (→ Bear $62): 63.4%   Upside (→ Bull $203): 19.9%   Ratio B 3.18x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $169 the market needs $224 in two years —
+  above the BULL case. That is a market composite of 3.09 against a model
+  read of 2.07: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.18x    +130%    -1.02  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.49x    +130%    -0.45  MODESTLY OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +130%    -1.41  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.65x    +130%    -0.96  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.95x    +130%    -1.08  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.18x    +130%    -0.72  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.18x     +84%    -0.92  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.18x    +130%    -0.81  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY24 print (late April) — the next read on Mac net sales (+0.6% now; units not reported) and the next quarter's guide
+  (2) Gross margin — +291bp in Q1 FY24: pricing, mix and component costs, what must hold if units do not
+  (3) A Q2 FY24 guide — the Q1 FY24 release gives none
+  (4) iPhone and iPad — no unit sales reported in Q1 FY24: iPhone net sales +6.0%, net sales other than Macs +2.2%
+  (5) Capital return at 28x — an additional program to repurchase up to $90 billion, dividend raised 4% to $0.24 (Q2 FY23 release): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $74  |  ADD below ~$104  |  TRIM above $203
+════════════════════════════════════════════════════════════════════════
+

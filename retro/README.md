@@ -2525,6 +2525,134 @@ Judgement calls that could carry hindsight:
 - keeping GAAP through the one-time adjustment of U.S. foreign tax credits (no figure without it was published; not rebuilt);
 - DURABLE rather than CYCLICAL (the class label only), and GENAI, EV and CRYPTO as outside Apple's scope.
 
+### AAPL 2024-2026: still no guidance, the State Aid tax charge, tariff refunds, a 13-week first quarter
+
+```bash
+python3 retro/build_aapl.py --weekly 2024-01-01 2026-10-25                  # 147 dates, 2024-01-05 .. 2026-10-23
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K and proxy filed on Apple's CIK from 2024-01-01 to 2026-10-29 was read directly (55 filings with
+the third-party solicitations and the 2024 shelf), and the 10-Qs and 10-Ks were searched for forward-looking statements. 368
+strings were checked with `verbatim.py` against their own filings. 149 structured checks read each print's statements back from
+the XBRL of the 10-Q or 10-K filed with it, and all match. The FY2024 and FY2025 10-Ks give no quarterly figures, so four more
+checks take Q4 FY24 and Q4 FY25 net sales and gross margin as the year less the Q3 10-Q's nine months; both Q4 EPS figures rest
+on the verbatim check. 102 more read each quarter's net sales by category back from its 10-Q, and sum the four quarters (total
+and each category) to each 10-K's year. Every source's date comes from EDGAR's acceptance time. Thresholds and signals are
+unchanged, and no code changed. Decided before any 2024-2026 date was built or scored:
+
+- **Two vintages, ten years each.** The FY2024 10-K (accepted 2024-11-01 06:01 ET, before the open; dated 2024-11-01) and the
+  FY2025 10-K (2025-10-31 06:01 ET; dated 2025-10-31) reserve Item 6, so each supplies the three years of its income statement
+  and the earlier years keep the latest 10-K that reported them. The history moves to FY2015-FY2024, then FY2016-FY2025.
+  - First-year diluted shares: FY2015's 5,793,069K (FY2019 10-K, on the 7-for-1 basis) and FY2016's 22,001,126K (FY2020 10-K).
+  - Each 10-K came before the open the morning after its Q4 release and is dated the same day as the Q4 print, so the
+    release's full-year figures never show (as in 2020-2023).
+- **FY24 excludes the State Aid tax charge** (the ACN rule: a company-published figure excluding a one-off replaces GAAP).
+  - The Q4 FY24 release (accepted 2024-10-31 16:30 ET, dated 2024-11-01) reconciles the quarter and the year "when excluding
+    the one-time charge recognized during the fourth quarter of 2024 related to the impact of the reversal of the European
+    General Court's State Aid decision": diluted EPS $1.64 for the quarter (GAAP $0.97) and $6.75 for the twelve months (GAAP
+    $6.08). The FY2024 10-K calls it "a one-time income tax charge of $10.2 billion, net". FY24 enters at $6.75, with the
+    tax rate excluding the charge, 15.79% ($19,503M on $123,485M; GAAP 24.09% in the note).
+  - The FY2025 vintage keeps FY24 at $6.75 (an adjusted year keeps its figure, the LOW rule); the Q4 FY25 release reconciles it
+    again. Q4 FY24's print shows $1.64, and Q4 FY25's $1.85 compares with it, as the release does ("up 13 percent year over
+    year on an adjusted basis"; display only). Every other year is GAAP.
+  - The 8-K of 2024-09-10 (item 7.01, accepted 09:06 ET, before the open) expects a one-time charge "of up to approximately $10
+    billion": a dollar amount with no guide in force, so it adds nothing, and FY23's $6.13 stands to the Q4 FY24 print.
+- **Tariff refunds in Q3 FY26.** The Q3 FY26 release gives gross margin 50.1% "including a favorable impact of approximately 2
+  percentage points from tariff refunds", and EPS $2.02 that "included a favorable impact of $0.11 from tariff refunds". These
+  are impacts, not figures excluding the refunds, so GAAP stands and nothing is derived (the Fremont rule; LOW's Q2 FY26
+  refunds the same).
+- **Still no guidance.** No release, 10-Q or 10-K from 2024-01-01 to 2026-10-23 gives any guidance or outlook, in numbers or in
+  words. The no-guide rule applies on every date: the last full year's EPS stands, BASE growth and the growth factor take the
+  latest quarter's net sales growth, and there is no margin step.
+- **Prints.** All eleven releases (Q1 FY24 to Q3 FY26) came on Thursdays after the close (8-Ks accepted at 16:30 ET): each print
+  is dated Friday and counts on its own day (the Q4 FY12 rule). The 10-Qs followed the same evening through Q3 FY24 (18:03-18:04
+  ET) and before the next open from Q1 FY25 (06:00-06:01 ET); each is dated the print's day. No unit sales: the Mac unit slot
+  scores BASE, and Mac and iPhone net sales growth are display only.
+- **A 13-week first quarter.** Q1 FY24 had 13 weeks against Q1 FY23's 14. Growth is as published (+2.1%). The Q1 FY24 10-Q,
+  dated the print's day, states it ("The Company's fiscal years 2024 and 2023 span 52 and 53 weeks, respectively."), and its
+  source text carries it (the LOW 53rd-week rule).
+- **Dividends,** each "an increase of 4 percent" from the Q2 release that declares it: $0.25 (2024-05-03), $0.26 (2025-05-02)
+  and $0.27 (2026-05-01). Catalyst (5) shows the programs, each "an additional program to repurchase up to": $110 billion
+  (2024), then $100 billion (2025 and 2026).
+- **No theme.** The FY2024 and FY2025 10-Ks name artificial intelligence as features Apple introduces (safety and privacy
+  risks), as an area of regulation, and from FY2025 as a source of intellectual-property claims. They name the revenue from
+  the search licensing arrangements with Google as exposed to litigation against Google. GENAI's scope, AI that
+  substitutes the core product, names none of Apple's products. The watch list stays empty: DURABLE, risk 2.
+- **The franchise text follows each 10-K.** The FY2024 10-K keeps the three quoted phrases word for word. From the FY2025
+  10-K (2025-10-31) the profile quotes "a minority market share in the global smartphone, personal computer, tablet and
+  wearables markets" and markets that "are highly competitive and are characterized by aggressive price competition, downward
+  pressure on gross margins".
+- **Adds nothing:**
+  - the chief executive transition: Tim Cook to executive chair and John Ternus chief executive from 2026-09-01 (8-K of
+    2026-04-20; the 8-K/A of 2026-09-01 gives their pay), as Steve Jobs's resignation and Tim Cook's appointment in 2011;
+  - the other officer 8-Ks (chief financial officer 2024-08-26 and 2025-01-03, chief operating officer 2025-07-08 and
+    2025-07-25, general counsel 2025-12-05, principal accounting officer 2026-01-02), the bylaw 8-K of 2024-08-23 and the vote
+    8-Ks;
+  - the derivative-settlement notice (8-K of 2024-05-03, item 7.01), the debt offering (8-K of 2025-05-12) and the 2024 shelf
+    registration;
+  - the proxies and the shareholder solicitations;
+  - the 10-Qs' tariff wording without a figure, and their expectations without a field.
+- **Text-only change to 2019-2023:** two source descriptions (the FY2019 and FY2020 10-Ks) now also cite the FY2015 and FY2016
+  share counts the new vintages use. 218 models and analyses (2019-11-01 to 2023-12-29) change only in that text, and every
+  report rebuilds byte-identical.
+- **Anachronism list:** Apple names first seen in 2026 filings join it, each dated by its filing (approx): iPhone 17e, MacBook
+  Neo and AirPods Max 2 (the Q2 FY26 10-Q, 2026-05-01) and Siri AI (the Q3 FY26 release, 2026-07-31). None of the 3,928 models
+  of any ticker contains one.
+- **ISO weeks:** the batch runs from 2024-W01 to 2026-W43. The last date is 2026-10-23, the last full week before the build
+  (2026-10-30; prices to 2026-10-29), and no Q4 FY26 print or FY2026 10-K is in the facts. A later batch starts on 2026-10-26.
+  Dates from late 2024 on have only part of the two-year horizon, and the latest have no outcome.
+
+Controls: altering one value of each new print, Q4 full-year figure, vintage, dividend and program statement changes no date
+before its publication (21 of 21) and changes the first weekly date on or after it (19 of 21). The other two are the Q4 FY24 and
+Q4 FY25 full-year figures, which the 10-K replaces on the same day. The 835 dates of 2008-2023 rebuild with byte-identical
+reports. A scan of all 982 AAPL models for 57 values and notes of the new sources, prints, vintages, dividends and programs finds
+none before its publication. The firewall changes none of the 982, 930 and 878 models before 2026-10-24, 2025-10-31 and
+2024-11-01.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH and AVOID on every date.** All 147 dates read RICH, and the tier reads AVOID on all of them. The multiple stands at the
+  81st-100th percentile of its own decade: 26.9-38.3x in 2024 (the lowest 26.9x on 2024-04-19, at $165.00), 27.9-38.9x in 2025
+  (27.9x on 2025-04-04, at $188.38) and 33.2-46.6x in 2026 (46.6x on 2026-10-23, at $347.73).
+- **The last full year's EPS is the anchor all along:** FY23's $6.13 to 2024-10-25, FY24's $6.75 to 2025-10-24, FY25's $7.46
+  after. In 2026 the stock trades at 33.2-46.6x FY25's $7.46 while the FY26 quarters run ahead ($6.87 for Q1-Q3 FY26 against
+  $5.62).
+- **BASE follows each quarter's net sales growth plus the buyback:** +4.3%/yr (Q4 FY23's -0.7%), +7.1%, +0.7% (Q2 FY24's -4.3%),
+  +9.9%, +10.7%, +8.6%, +9.7%, +14.2% (Q3 FY25's +9.6%), +12.2%, +20.0% (Q1 FY26's +15.7%), +20.9% and +20.7%. The decade's
+  buyback falls from 4.98%/yr (FY14-FY23) to 4.64%, then 4.34%. BASE lifts BULL to its own rate on 52 dates: 2025-08-01 to
+  2025-10-24, and from 2026-01-30.
+- **BULL, XBULL and BEAR move with the window.** BULL is the decade EPS CAGR: +16.0%/yr (FY14-FY23), +12.7% (FY15-FY24),
+  +15.2% (FY16-FY25). XBULL stays FY19-FY21's +37.4%/yr. BEAR applies FY16's -9.8% through the FY2024 vintage, then FY19's
+  -0.3% (FY2025 vintage: $2.97 against $2.98).
+- **The EPP floor rises as the cheap years leave the window.** It is the median of the calendar-year P/E lows: 12x through 2024
+  (six lows of 10.9-12.6x in 2014-2019), 17x from 2025-01-03 (2014 out: 2020's 17.1x) and 20x from 2026-01-02 (2015 out:
+  2023's 20.4x). The price stands 124-220% above it in 2024, 64-129% in 2025 and 66-133% in 2026.
+- **Ratio B is `inf` on 61 dates** (29 in 2024, 18 in 2025, 14 in 2026; from 2024-06-14): the price stands above the BULL case.
+  The lowest finite reading is 2.71x (2024-04-19), far above WATCHLIST's 1.75x.
+- **The proxy composite reads 2.20 on 82 dates, 2.35 on 39 and 2.00 on 26.** Against the FY1998-FY2007 thresholds the
+  gross-margin change reads BULL (+90bp or more) on every print but Q2 and Q3 FY25 (+47bp, +23bp). The operating-margin change
+  also reads BULL in Q1 FY24 (+302bp), and net sales from Q2 FY26 (+16.6%, +16.4%). The unreported Mac slot changes none of it.
+
+How far each call moves the classes (the affected dates rebuilt with one encoding changed; no outcome consulted):
+- FY24 at GAAP ($6.08, the 24.09% tax rate, Q4 FY24's $0.97) instead of the company's figures excluding the State Aid charge
+  would change none of the 104 dates from 2024-11-01. Ratio B and the gaps move (on 2025-06-06 Ratio B 23.18x instead of 4.95x,
+  the EPP gap +97% instead of +78%), all toward AVOID;
+- re-weighting the other five signals instead of scoring the unreported Mac slot BASE would change none of the 147 classes or
+  tiers;
+- Q1 FY24's net sales growth against 13 weeks of Q1 FY23 (+9.9%, a figure derived from others) would change none of the 13
+  dates;
+- Q3 FY26 without the tariff refunds (gross margin about 2 points and EPS $0.11 lower, figures derived from the stated impacts)
+  would change none of the 13 dates.
+
+Judgement calls that could carry hindsight:
+- taking FY24 at the company's $6.75 excluding the State Aid charge, with its adjusted tax rate (no class moves at GAAP);
+- keeping GAAP through Q3 FY26's tariff refunds (no figure without them was published; no class moves when derived);
+- leaving the 13-week Q1 FY24 as published (no class moves);
+- scoring the unreported Mac slot at BASE, as from Q1 FY19 (no class moves);
+- reading the State Aid 8-K of 2024-09-10 as adding nothing (a charge expected before the year closed, with no guide in force);
+- treating the chief executive transition as adding nothing (the method has no input for it);
+- DURABLE rather than CYCLICAL (the class label only), and GENAI as outside Apple's scope (AI named only as Apple's own features
+  and their risks).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -2574,10 +2702,11 @@ What the gates enforce:
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
   Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023", "LOW 2024-2026").
   AAPL in 2008 carries none: no theme in the registry is live for a personal-computer and consumer-electronics maker
-  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2023:
+  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2026:
   CLOUD's scope is on-premise enterprise IT, STREAMING's linear TV and ECOMMERCE's physical retail, and Apple's FY2012-FY2019
   10-Ks name cloud and streaming only as its own services ("AAPL 2012-2015", "AAPL 2016-2019"); GENAI's scope (from 2022-11-30),
-  EV's, CRYPTO's and GLP1's name none of Apple's products ("AAPL 2020-2023").
+  EV's, CRYPTO's and GLP1's name none of Apple's products ("AAPL 2020-2023"), and the FY2024 and FY2025 10-Ks name artificial
+  intelligence only as Apple's own features and their risks ("AAPL 2024-2026").
 
 ## Workflow
 

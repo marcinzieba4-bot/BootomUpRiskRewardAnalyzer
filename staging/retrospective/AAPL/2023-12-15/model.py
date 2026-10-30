@@ -48,7 +48,7 @@ SOURCES = [
         "filed": "2020-10-29 18:06 ET (after the close)",
         "title": "Apple Inc. FY2020 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019320000096/aapl-20200926.htm",
-        "supports": "selected financial data FY2016-FY2020 restated for the four-for-one split (total net sales, diluted EPS, diluted shares 17,528,214K in FY20); income statement FY2018-FY2020; net sales by category FY2018-FY2020; cash flow; commercial paper $4,996M and term debt $8,773M current, $98,667M non-current; a one-time adjustment of U.S. foreign tax credits lowered the 2020 effective tax rate; competition and minority-market-share wording, no store count; quarterly dividend raised from $0.1925 to $0.205"
+        "supports": "selected financial data FY2016-FY2020 restated for the four-for-one split (total net sales, diluted EPS, diluted shares 17,528,214K in FY20 and 22,001,126K in FY16); income statement FY2018-FY2020; net sales by category FY2018-FY2020; cash flow; commercial paper $4,996M and term debt $8,773M current, $98,667M non-current; a one-time adjustment of U.S. foreign tax credits lowered the 2020 effective tax rate; competition and minority-market-share wording, no store count; quarterly dividend raised from $0.1925 to $0.205"
     },
     {
         "id": "A89",
@@ -56,7 +56,7 @@ SOURCES = [
         "filed": "2019-10-30 18:12 ET (after the close)",
         "title": "Apple Inc. FY2019 10-K",
         "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000119/a10-k20199282019.htm",
-        "supports": "selected financial data FY2015-FY2019 (total net sales, diluted EPS, diluted shares 4,648,913K in FY19, commercial paper $5,980M, total term debt $102,067M); income statement FY2017-FY2019; net sales by category FY2017-FY2019 (recast; no unit sales); cash flow; competition and minority-market-share wording, no store count; quarterly dividend raised to $0.77"
+        "supports": "selected financial data FY2015-FY2019 (total net sales, diluted EPS, diluted shares 4,648,913K in FY19 and 5,793,069K in FY15, commercial paper $5,980M, total term debt $102,067M); income statement FY2017-FY2019; net sales by category FY2017-FY2019 (recast; no unit sales); cash flow; competition and minority-market-share wording, no store count; quarterly dividend raised to $0.77"
     },
     {
         "id": "A83",

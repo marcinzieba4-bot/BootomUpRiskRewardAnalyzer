@@ -705,6 +705,30 @@
     "note": "the M5 chip"
    },
    {
+    "term": "iPhone 17e",
+    "first_seen": "2026-05-01",
+    "approx": true,
+    "note": "first in a filing: the Q2 FY26 10-Q (announced during that quarter)"
+   },
+   {
+    "term": "MacBook Neo",
+    "first_seen": "2026-05-01",
+    "approx": true,
+    "note": "first in a filing: the Q2 FY26 10-Q (announced during that quarter)"
+   },
+   {
+    "term": "AirPods Max 2",
+    "first_seen": "2026-05-01",
+    "approx": true,
+    "note": "first in a filing: the Q2 FY26 10-Q (announced during that quarter)"
+   },
+   {
+    "term": "Siri AI",
+    "first_seen": "2026-07-31",
+    "approx": true,
+    "note": "first in a filing: the Q3 FY26 release (introduced at WWDC26)"
+   },
+   {
     "term": "GitHub Copilot",
     "first_seen": "2021-06-29"
    },
