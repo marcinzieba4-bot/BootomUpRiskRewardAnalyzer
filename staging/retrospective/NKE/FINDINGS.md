@@ -1,11 +1,11 @@
 # NKE retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31 and 156 from 2009-01-09 to
-2011-12-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored
-only after its point-in-time build was committed and pushed (2008: 70934e9; 2009-2011: 056235e). Prices run to 2026-10-30; the
-2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (three-year:
-2014-12-30). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
-two years.
+Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31, 156 from 2009-01-09 to
+2011-12-30 and 157 from 2012-01-06 to 2014-12-31. They are **labels and hypotheses**: never feed them back into the method or
+the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008: 70934e9; 2009-2011:
+056235e; 2012-2014: 6a53de0). Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30 (three-year:
+2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29). Medians of
+an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -103,3 +103,54 @@ two years.
   growth would have held on 94 (+6), FY08 at GAAP on 87 (-1). These are facts about one stock in three years, not reasons to
   change an encoding: the calls were decided before scoring and stay, and a rule change means a new method version tested
   elsewhere.
+
+## 2012-2014 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 5 | +103% | +76% to +110% | 5 | 5 | +70% | 5 |
+| class FAIR | 2 | +100% | +88% to +100% | 2 | 2 | +65% | 0 |
+| class RICH | 150 | +64% | +5% to +107% | 135 | 132 | +46% | 8 |
+| legacy tier BUY | 2 | +103% | +81% to +103% | 2 | 2 | +70% | 2 |
+| legacy tier ACCUMULATE | 12 | +88% | +66% to +110% | 12 | 12 | +61% | 3 |
+| legacy tier WATCHLIST | 11 | +73% | +64% to +107% | 11 | 11 | +57% | 0 |
+| legacy tier AVOID | 132 | +60% | +5% to +94% | 117 | 114 | +45% | 8 |
+| FY11 $4.39 anchor (2012-01-06 to 2012-06-22), all RICH | 25 | +44% | +34% to +61% | 25 | 15 | +29% | 0 |
+| FY12 anchor, Q4 FY12 print to the split 8-K (2012-06-29 to 2012-11-16) | 21 | +73% | +64% to +110% | 21 | 21 | +58% | 5 |
+| - of which CHEAP / FAIR / RICH | 5 / 2 / 14 | +103% / +100% / +69% | | 5 / 2 / 14 | 5 / 2 / 14 | +70% / +65% / +57% | 5 / 0 / 0 |
+| FY12 anchor after the split 8-K (2012-11-23 to 2013-06-21), all RICH | 31 | +75% | +59% to +107% | 31 | 31 | +52% | 0 |
+| FY13 $2.69 anchor (2013-06-28 to 2014-06-20), all RICH | 52 | +69% | +46% to +84% | 52 | 52 | +49% | 0 |
+| FY14 $2.97 anchor (2014-06-27 to 2014-09-26), all RICH | 14 | +48% | +24% to +52% | 13 | 14 | +54% | 0 |
+| FY15E $3.56 from the EPS guide (2014-10-03 to 2014-12-31), all RICH | 14 | +10% | +5% to +22% | 0 | 6 | +21% | 8 |
+
+- **The stock kept compounding through a RICH call.** The model called NKE RICH on 150 of 157 dates, at 19.7-30.1x a
+  last-full-year anchor (the 87th-100th percentile of its own ten-year range). The two-year total return then ran from +5% to
+  +110% (median +65%) while SPY returned +6% to +56%; 142 dates cleared the hurdle and 139 beat SPY, and over three years 144
+  beat SPY (median +81%). Within two years every date saw a drawdown of 11-26%.
+- **The RICH call held on 8 of 150 dates,** the last ones, 2014-11-14 to 2014-12-31 ($94.84-99.33), where the two-year
+  return was +5% to +10%, 2.6-7.1pp behind SPY. On the other 142 the stock beat the hurdle or SPY. Even the 69 dates priced
+  above the BULL price returned a median +63% (65 cleared the hurdle). The two-year price was 0.99-2.0 times the BULL price
+  and 1.1-2.4 times BASE; it landed nearest XBULL on 145 dates and BULL on 12.
+- **Where the class varied, it ranked the outcomes.** In 2012, the only year with CHEAP and FAIR dates (all between the Q4
+  FY12 print and the split 8-K), CHEAP (median +103%) and FAIR (+100%) beat RICH (+55%), and the EPP gap ranks 2012's two-year
+  returns at Spearman -0.92 (-0.95 on the m12-24 average); at one year the batch's CHEAP, FAIR and RICH medians were +68%,
+  +63% and +28%. The FAIR call failed on both FAIR dates by beating SPY by 50-53pp. Across the batch the EPP gap ranks the
+  two-year returns at -0.51 (-0.67 within 2013, +0.25 within 2014), the entry price alone at -0.49.
+- **The EPS-guide dates fared worst** (2014-10-03 to 2014-12-31: median +10%, none cleared the hurdle, 6 of 14 beat SPY), but
+  they were also the batch's highest prices ($87.18-99.33), and within 2014 the entry price ranks the two-year returns at
+  -0.87. The guide moved the anchor, not the class (retro/README.md, "NKE 2012-2014"): one quarter of one stock says nothing
+  about reading growth guides as EPS.
+- **The proxy composite ranked the outcomes backwards again within 2012** (Spearman -0.87: 2.70 on the 25 dates to June
+  2012, median +44%; 2.35 from the Q4 FY12 print, +81% over its 38 dates to March 2013), and weakly across the batch (-0.34 on
+  the two-year return, -0.56 on the m12-24 average). A third reading on the same stock of the 2008 hypothesis (trailing
+  signals lean pro-cyclical); it still needs other tickers before any method change.
+- **The calls, seen afterwards.** BASE on reported revenue growth would have turned the 4 CHEAP and 2 FAIR dates of July to
+  November 2012 RICH; they returned +76% to +110%, so the call held on 4 of them as built and would have held on none. FY08 at
+  GAAP would have turned the 2 FAIR dates RICH (+88%, +100%), failing either way. These are facts about one stock in three
+  years, not reasons to change an encoding: the calls were decided before scoring and stay.
+- **What the three batches suggest together (hypotheses only).** On NKE the class worked where it marked cheap entries (CHEAP
+  held on 41 of 41 in 2008, 73 of 73 in 2009-2011 and 5 of 5 here) and failed where it marked RICH on a business that kept
+  growing (RICH held on 8 of 61 in 2009-2011 and 8 of 150 here). The anchor is the last full year's EPS, which trails a growing
+  company by up to a year (retro/README.md, "NKE 2012-2014": each spring nine-month EPS was already over four-fifths of the
+  anchor), and the method has no trend term for a multiple that rerates. Both are hypotheses to test on other tickers and
+  years, under a new method version, never fitted to NKE's outcomes.
