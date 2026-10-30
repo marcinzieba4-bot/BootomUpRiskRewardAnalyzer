@@ -2914,6 +2914,125 @@ Judgement calls that could carry hindsight:
 - the signals and the reported basis for futures, chosen by a builder who knows how 2009-2011 went;
 - DURABLE rather than CYCLICAL (the class label only); dating each call's words from its transcript's 8-K (can only lag).
 
+### NKE 2012-2014: continuing operations, the 2012 split, the first EPS guide in numbers
+
+```bash
+python3 retro/build_nke.py --weekly 2012-01-02 2014-12-31                   # 157 dates, 2012-01-06 .. 2014-12-31
+for c in 2012-12-26 2013-07-01 2014-07-01 2015-01-01; do python3 retro/tools/firewall.py $c NKE; done
+```
+
+All 44 filings published from 2012-01-07 to 2014-12-31 (33 8-Ks, 8 10-Qs and the FY2012-FY2014 10-Ks) were read in full, with
+no delegated transcription: twelve releases, twelve call transcripts, the split and dividend 8-K, the April 2013 notes offering,
+and the officer, director, bylaw and meeting 8-Ks. 324 strings were checked with `verbatim.py` against their own filings (the
+call words read from the fact sheet itself), and every print's raw figures were cross-checked against its own release. Each
+source's date comes from EDGAR's acceptance time. Thresholds, signals and the engine are unchanged; the builder gains two
+fact fields (below). Decided before any 2012-2014 date was built or scored:
+
+- **Continuing operations.** NIKE announced on 2012-05-31 its intention to divest Cole Haan and Umbro; from the Q2 FY13
+  release (2012-12-21) they are discontinued operations (Umbro sold on 2012-11-30, Cole Haan on 2013-02-01). EPS is diluted
+  EPS from continuing operations where the filing reports the line, else diluted EPS (the LOW and UNP rule). The Q1 FY13
+  release is still consolidated: GAAP $1.23 stands, and its pro forma $1.27 "excluding the results of the Businesses to be
+  Divested" removes ongoing operations rather than a one-off (the AAPL 2008 non-GAAP rule), so it goes in the note.
+- **Three vintages.**
+  - The FY2012 10-K (accepted 2012-07-24 16:16 ET, dated 2012-07-25) gives FY2008-FY2012 on the old basis; FY08's $3.45
+    and FY09's $3.81 (company figures from the FY2009 and FY2010 10-Ks) stay (the LOW rule). Window FY2003-FY2012.
+  - The FY2013 10-K (2013-07-23 16:32 ET, dated 2013-07-24) restates FY2009-FY2013 for continuing operations, after the
+    split: $1.79, $1.95, $2.24, $2.42, $2.69. FY09's $3.81 was on the basis that included Umbro and Cole Haan, so the
+    restated $1.79 stands (the UNP trucking rule); it already leaves out the Umbro impairment, now in discontinued
+    operations, and keeps the restructuring charge. No later 10-K restates FY2004-FY2008, so they stay as published, a seam
+    (the LOW Contractor Yards rule): FY08's $3.45 ($1.725 after the split) beside FY09's continuing $1.79, revenues of
+    $18.627 billion beside $18.528 billion. Window FY2004-FY2013.
+  - The FY2014 10-K (Friday 2014-07-25 16:22 ET, dated Monday 2014-07-28) gives FY2010-FY2014, revised to expense internally
+    developed patent and trademark costs ($1.94, $2.23, $2.40, $2.68, $2.97); FY09 comes from the FY2013 10-K. Window
+    FY2005-FY2014.
+- **Q4 prints and restated years.** The Q4 prints extend the history with FY12's $4.73 (2012-06-29), FY13's continuing $2.69
+  (2013-06-28) and FY14's $2.97 (2014-06-27). A prior year first restated in a later Q4 release (FY12's continuing $2.42,
+  FY13's revised $2.68) enters with the next 10-K (the UNP Brazos rule).
+- **The 2012 split.** 2-for-1, announced in the 8-K accepted 2012-11-15 16:19 ET (dated 2012-11-16); NIKE "expects its common
+  stock to begin trading at the split-adjusted price on December 26, 2012", the price data's date. From that date per-share
+  facts published before it are divided by 2 and share counts multiplied by 2 (the UNP rule): $105.10 on 2012-12-21, $50.99
+  on 2012-12-28, and FY12's $4.73 becomes $2.365. Later 10-Ks enter as restated; print text is not restated.
+- **A dividend declared on the post-split basis.** The split 8-K declares "$0.21 per share, on a post-split basis", a 17
+  percent increase over the "split-adjusted quarterly rate of $0.18". It enters on the 8-K's date with its basis recorded
+  (`basis` = 2012-12-26): $0.42 a share until the split, $0.21 from it; the Q2 FY13 release, published before the split,
+  confirms 0.42. The builder converts such a dividend itself, since `on_basis` assumes a fact is on the share basis of its
+  publication date. Later rates first appear in the Q2 releases: $0.24 (2013-12-20) and $0.28 (2014-12-19).
+- **The first EPS guide in numbers.** On the Q1 FY15 call (furnished on 2014-09-30 during market hours) the CFO expects
+  "earnings per share to grow at a high-teens rate for Q2 and about 20% for the full year". Method r2 takes the current-FY EPS
+  from the EPS guide; a guide stated as growth keeps its growth (the LOW growth-form rule) and applies it to the year it is
+  stated on: FY15E = FY14's $2.97 x 1.20 = $3.56 from 2014-10-03 (`eps_growth`, a new guide field). The Q2 FY15 call's
+  words ("full year results largely in line with the expectations we shared 90 days ago") keep it (the LOW rule: a guide in
+  words keeps the last numeric one). Everything else on the calls stays display only: revenue in words ("low double digits"),
+  gross margin in basis points (the AAPL rule; NIKE gave no pre-tax margin guide), quarter EPS words, tax-rate estimates. The
+  multi-year targets ("$28 billion to $30 billion in revenue by FY '15"; the October 2013 investor meeting, not furnished by
+  8-K) are not entered (the LOW rule).
+- **Futures and growth excluding currency** as each release states them. Four releases give no dollar amount for futures (Q4
+  FY12, Q1 FY14, Q1 FY15, Q2 FY15), so the note omits it; Q3 FY12 states the currency effect in points ("reduced reported
+  futures orders by 3 percentage points"); where currency "did not have a significant impact" (Q4 FY13 futures, Q1 FY14
+  revenue) the table's figure stands.
+- **Restated prior-year columns** (patent and trademark costs, inventories held at third parties) in the FY14 and FY15
+  releases: each print's change comes from its own release's two columns, as published.
+- **Segments** (display): six geographies, Global Brand Divisions and Other Businesses in the FY2012 and FY2013 10-Ks; from
+  the FY2014 10-K Converse is its own segment and NIKE Golf and Hurley sit in the geographies. Corporate stays out of the
+  split.
+- **Durability:** DURABLE, risk 2, each vintage quoting its own 10-K. The FY2013 and FY2014 10-Ks rewrote the competition
+  sentences ("is highly competitive in the United States and on a worldwide basis", then "is highly competitive on a worldwide
+  basis"; "including adidas, V.F. Corp., Puma, Li Ning and Under Armour, among others"). No theme in the registry is live for
+  NIKE in 2012-2014 (ECOMMERCE from 2015, scoped to physical retail).
+- **Calendar.** Every release came after Thursday's close (16:18-16:27 ET), so each print is dated a Friday, the week's last
+  trading day, and meets that close, public before the open (the 2008 Good Friday rule). 2014-12-31 covers ISO week
+  2015-W01, so a 2015 batch starts on 2015-01-05.
+- **Builder changes, data-driven only:** the two fields above, and catalyst (3) naming the EPS guide while one is in force.
+  No earlier fact carries either field, and the 209 models of 2008-2011 rebuild byte-identical.
+- **Adds nothing:** the officer and director 8-Ks (2012-05-23, 2013-06-21, 2014-04-21, 2014-06-23), the annual meetings
+  (2012-09-27, 2013-09-24, 2014-09-23), the bylaw amendments, the $1 billion notes offering (2013-04-29; long-term debt
+  enters through the FY2013 10-K), and the 10-Qs (tax-rate estimates, China words, gross-margin words).
+
+Controls: altering one value of each print, vintage, guide, dividend and split changes no date before it can be shown and
+changes the first weekly date on or after it (86 of 86). A guide for the next fiscal year first shows on the first date with
+that year current (2012-06-29, 2013-06-28, 2014-06-27); altering the 2012 split's ratio changes the dates from its
+announcement (2012-11-16), through the dividend declared on its basis. No string of any print, vintage, guide or dividend
+appears in a model dated before it (62,093 checks over the 366 NKE models; the scan skips a string an earlier item already
+carries, alone or inside a longer string). The firewall at 2012-12-26, 2013-07-01, 2014-07-01 and 2015-01-01 changes no model
+before its cutoff. The 209 dates of 2008-2011 rebuild byte-identical, and no file shared with another ticker changed.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 150 of 157 dates** (45 of 52 in 2012, all 52 in 2013, all 53 in 2014); tier AVOID on 132. On the RICH dates the
+  stock traded at 19.7-30.1x its anchor EPS, the 87th-100th percentile of its own ten-year P/E range, and from 2013-04-12
+  above the BULL price on 69 dates (Ratio B infinite). The exceptions: CHEAP on 5 dates and FAIR on 2, from the Q4 FY12 print
+  to the split announcement (2012-06-29 to 2012-11-16), when FY12's $4.73 became the anchor and the price was $87.78-94.54
+  (18.6-20.0x, the 70th-87th percentile).
+- **The anchor lags a growing company:** FY11's $4.39 stood until 2012-06-28, when nine-month FY12 EPS was $3.56; FY12's
+  $2.365 (after the split) until 2013-06-27, nine-month FY13 EPS from continuing operations $1.93; FY13's $2.69 until
+  2014-06-26, nine-month FY14 EPS $2.20.
+- **The EPS guide moved the anchor, not the class:** on 2014-10-03 FY15E's $3.56 replaced FY14's $2.97, and the multiple fell
+  from 30.1x (2014-09-26) to 25.4x, the 97th percentile; the class stayed RICH and the tier AVOID.
+- **BEAR is flat on every date.** BASE is the quarter's currency-neutral growth plus the buyback (1.3-2.0%/yr): +17.3%/yr on
+  Q2-Q3 FY12, +15.5% on Q4 FY12, +16.5% on Q1 FY13, +11.5% on Q2-Q3 FY13, +10.6-10.8% on Q4 FY13, +9.8% on Q1 FY14, +10.8% on
+  Q2 FY14, +15.8% on Q3 FY14, +14.8-15.0% on Q4 FY14, +17.0% on Q1 FY15 and +20.0% on Q2 FY15. BASE above the window's EPS
+  CAGR lifts BULL to it on 92 dates (to 2012-12-14 and from 2014-03-21); between them BULL is that CAGR, 13.3-14.7%/yr. From
+  the FY2014 10-K XBULL is lifted too: the best two-year run of FY05-FY14 is 14.4%/yr.
+- **The EPP floor P/E moved from 14x to 15x on 2012-10-12** as the window's calendar-year lows rose.
+- **The proxy composite stayed at 2.35-2.85,** with futures +6% to +15% and revenue growth at BULL or above on every print
+  (+7.4% to +18.4%).
+- **Robustness:** all eight variants agree on 125 of the 150 RICH dates, four to seven on the rest; on the seven CHEAP and
+  FAIR dates four to seven of eight.
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed; no outcome consulted):
+- BASE and the growth factor on reported revenue growth instead of growth excluding currency would change 6 classes (CHEAP to
+  RICH on 4, FAIR to RICH on 2, all from 2012-07-06 to 2012-11-16) and 13 dates' class or tier;
+- FY08 at GAAP $3.74 in the 2012-2014 vintages would change 2 classes (FAIR to RICH on 2012-10-12 and 2012-11-02);
+- the Q1 FY15 call's "about 20%" kept as words (FY14's $2.97 standing), FY09 at the earlier-basis $3.81 instead of the
+  restated $1.79, and the split dividend entering with the Q2 FY13 release instead of the 8-K would change none.
+
+Judgement calls that could carry hindsight:
+- BASE on growth excluding currency changes (the call that moves the most classes: 6 of 157), as in 2008-2011;
+- FY08 at the company's $3.45 (2 classes), and the seam between FY08 on the old basis and FY09-FY14 from continuing
+  operations;
+- the Q1 FY15 call's "about 20%" read as an EPS guide in numbers (no class moves);
+- the post-split dividend put on the pre-split basis for six weeks (no class moves);
+- the signals, chosen by a builder who knows how 2012-2014 went; DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -2968,8 +3087,9 @@ What the gates enforce:
   10-Ks name cloud and streaming only as its own services ("AAPL 2012-2015", "AAPL 2016-2019"); GENAI's scope (from 2022-11-30),
   EV's, CRYPTO's and GLP1's name none of Apple's products ("AAPL 2020-2023"), and the FY2024 and FY2025 10-Ks name artificial
   intelligence only as Apple's own features and their risks ("AAPL 2024-2026").
-  NKE in 2008-2011 carries none either: no theme in the registry is live for an athletic footwear and apparel brand (ECOMMERCE
-  from 2015-01-01, scoped to physical retail; OFFSHORE to IT services), so its watch list is empty ("NKE", "NKE 2009-2011").
+  NKE in 2008-2014 carries none either: no theme in the registry is live for an athletic footwear and apparel brand (ECOMMERCE
+  from 2015-01-01, scoped to physical retail; OFFSHORE to IT services), so its watch list is empty ("NKE", "NKE 2009-2011",
+  "NKE 2012-2014").
 
 ## Workflow
 

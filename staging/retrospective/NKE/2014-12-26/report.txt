@@ -1,0 +1,161 @@
+
+════════════════════════════════════════════════════════════════════════
+  NKE  ·  NIKE, Inc.  ·  $96.83  ·  RETROSPECTIVE as of 2014-12-26
+  Signal: ✕ AVOID   Ratio B: 7.27x   Adj gap: -1.23  [OVERVALUED]
+  Point-in-time: 27 sources, latest published 2014-12-26; latest print Q2 FY15 (Dec 18)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America             $    14.5  $  14.5  $  17.0      +0.0      +2.5
+    +10.2% revenues in FY14
+  Western Europe            $     5.9  $   5.9  $   6.9      +0.0      +1.0
+    +18.7% revenues in FY14
+  Central & Eastern Europe  $     1.6  $   1.6  $   1.9      +0.0      +0.3
+    +12.9% revenues in FY14
+  Greater China             $     3.1  $   3.1  $   3.6      +0.0      +0.5
+    +5.0% revenues in FY14
+  Japan                     $     0.9  $   0.9  $   1.1      +0.0      +0.2
+    -12.0% revenues in FY14
+  Emerging Markets          $     4.7  $   4.7  $   5.4      +0.0      +0.7
+    +3.1% revenues in FY14
+  Global Brand Divisions    $     0.1  $   0.1  $   0.2      +0.0      +0.1
+    +8.7% revenues in FY14
+  Converse                  $     2.0  $   2.0  $   2.3      +0.0      +0.3
+    +16.2% revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    32.8  $  32.8  $  38.4      +0.0      +5.6
+  FY2015E = FY14 $27.80B × (1 + 18.0%: Q2 FY15 revenue ex-currency, applied to the year (no FY15 revenue guide in numbers)); split pro rata to FY14 revenues by operating segment (FY2014 10-K, FY13 as restated there; Corporate's +$3M left out)
+  Q2 FY15 (Dec 18): revenues $7.38B +14.8% (+18% ex-currency); futures orders +7.0%; inventories +10.9%;
+  gross margin 45.08% (+113.8bp); pre-tax margin 11.90% (+79.5bp); EPS $0.74 vs $0.59
+  Futures: worldwide futures orders for delivery December 2014-April 2015, +7.0% reported (-4pp from currency; the release: 'Excluding currency changes, reported orders would have increased 11 percent', no dollar amount stated); revenue +14.8% reported, +18% excluding currency (the release's revenue table: +18% excluding currency changes)
+  FY15 outlook in words (Q2 FY15 call, display only): 'will net together to deliver full year results largely in line with the expectations we shared 90 days ago' ... 'For the full year, we expect constant dollar revenue growth in the low double digits, with reported revenue growth 2 to 3 points lower' ... 'For the full year, we now expect gross margin expansion of 100 to 125 basis points'; FY15 EPS guide in numbers: +20% (Q1 FY15 call); no FY15 revenue or margin guide in numbers
+
+  FY2015E EPS check:  $32.8B × 12.8% pre-tax × (1−24.0%) ÷ 0.885B  =  $3.59  (FY2015E: FY14's $2.97 + 20%, the EPS growth guide of the Q1 FY15 call ('about 20% for the full year'))
+  FY2017E BEAR check: $32.8B × 12.8% ÷ 0.850B  =  $3.74  (scenario $3.56)
+  FY2017E BULL check: $38.4B × 13.2% ÷ 0.850B  =  $4.51  (scenario $5.13)
+  Every 1pp of pre-tax margin ≈ $0.28 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Futures orders growth              -31.0%  ≥-13.0%    ≥5.0%   ≥12.0%     +7.0%  ▲ BULL  ███░
+  Gross margin change               -780.0bp  ≥-360.0bp  ≥60.0bp  ≥250.0bp  +113.8bp  ▲ BULL  ███░
+  Revenue growth                     -23.0%   ≥-8.0%    ≥7.0%   ≥15.0%    +14.8%  ▲ BULL  ███░
+  Inventory growth less revenue     +46.0pp  ≤21.0pp  ≤-4.0pp  ≤-8.0pp    -3.9pp  ◦ BASE  ██░░
+  Pre-tax margin change             -1520.0bp  ≥-730.0bp  ≥70.0bp  ≥170.0bp   +79.5bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   3.93 / 4.00  (back-solved from $97 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.70  →  Gap -1.23  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenues +9.8%, year-end futures orders +11% (the FY2014 10-K: '11% higher', 12% excluding currency changes); Q2 gross margin 45.08% (+114bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.2x FY15E vs a 18.0x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q2 FY15 revenue ex-currency +18% vs a 9.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $4.71B, FY14 free cash flow $2.12B, dividend $1.12 a year, $2,628M of share repurchases in FY14, long-term debt $1,199M  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Futures orders growth                +7.0%    -31.0%  -38.0%  Retailers cut orders ahead of a consu…
+  Gross margin change               +113.8bp  -780.0bp  -893.8bp  Discounting and product costs compres…
+  Revenue growth                      +14.8%    -23.0%  -37.8%  Consumer spending falls faster than n…
+  Inventory growth less revenue       -3.9pp   +46.0pp  +49.9pp  Inventory builds ahead of demand: clo…
+  Pre-tax margin change              +79.5bp  -1520.0bp  -1599.5bp  Demand creation and overhead grow int…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$64  (model)  /  $52 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: futures orders went from +11.0% (Q1 FY15) to +7.0% (Q2 FY15);
+  the bear case needs a demand recession that gross margin (+113.8bp now)
+  and inventories (-3.9pp against revenue) no longer absorb. A consumer-spending recession shows up in futures orders first; the bear
+  needs it to reach gross margin and inventories as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.56  (FY2015E: FY14's $2.97 + 20%, the EPS growth guide of the Q1 FY15 call ('about 20% for the full year'))
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2004 20.2x, 2005 14.3x, 2006 13.0x, 2007 15.3x, 2008 12.2x, 2009 10.8x, 2010 15.1x, 2011 16.4x, 2012 16.4x, 2013 19.3x, 2014 20.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $53/share
+  Current $97 vs Updated EPP $53:  +81%  ⚠ far above floor — large drawdown room
+  Bear $52 vs Updated EPP $53:  -3%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Futures orders growth                      -13.0      -20.0   BASE floor (vs +7 now)
+  Gross margin change                       -360.0     -473.8   BASE floor (vs +114 now)
+  Revenue growth                              -8.0      -22.8   BASE floor (vs +15 now)
+  Inventory growth less revenue               21.0      +24.9   BASE floor (vs -4 now)
+  Pre-tax margin change                     -730.0     -809.5   BASE floor (vs +80 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.56 × (1+18.0%)² = $4.96
+  At 18x P/E (conservative):  $89/share
+  + Cumul. dividends (2yr):  +$2.31/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $89  (▼8 from $97)
+  Conservative total return:  -5% over 2yr  = -3%/yr
+
+  18.0% EPS growth is what is left once the premium multiple (27.2x)
+  mean-reverts to 18x. Breakeven at 18x needs FY2017E EPS of $5.25,
+  i.e. 21.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $69.85  –  $99.76  (at 90th pct of range)
+  Annual dividend:      $1.12/share  (yield 1.2%)
+  Realized vol (1yr):   21% annualized
+  Beta vs broad market: 1.06
+  1-sigma range (1yr):  $77  –  $117  ($97 ± 21%)
+  2-sigma range (1yr):  $56  –  $137
+  ────────────────────────────────────────────────────────────
+  Bear $52 requires:  ~2.2σ price move  (unusual — requires fundamental break)
+  An athletic footwear and apparel brand with a 1.1 beta: the stock is +37% off its February
+  low while futures orders went from +11.0% (Q1 FY15) to +7.0% (Q2 FY15).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.56  14.6x  $     52     6.0%      1.2%    +4.7pp  Flat EPS (worst year FY05-FY14, capped at 0%); P/E to its 10th pct
+  BASE        5.13  18.0x  $     92    20.8%      4.3%   +16.5pp  EPS +20.0%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        5.13  20.0x  $    103    61.6%     15.0%   +46.6pp  EPS +20.0%/yr (FY05-FY14 CAGR); P/E holds its 75th pct
+  XBULL       5.13  23.6x  $    121    11.6%     79.5%   -67.8pp  EPS +20.0%/yr (best 2-yr run FY05-FY14); P/E at its 90th pct
+
+  Proxy EV (2yr): $100  /  Market EV: $116  /  Current: $97
+  Conservative EV (2yr, ④): $89 + $2.31 divs = $92 total value
+  Downside (→ Bear $52): 46.3%   Upside (→ Bull $103): 6.4%   Ratio B 7.27x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $97 the market needs $128 in two years —
+  above the BULL case. That is a market composite of 3.93 against a model
+  read of 2.70: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       7.27x     +81%    -1.23  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.65x     +81%    -0.64  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +81%    -1.07  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          4.67x     +81%    -1.07  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         14.77x     +81%    -1.23  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             7.27x     +81%    -0.93  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 7.27x     +51%    -1.23  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    7.27x     +81%    -1.23  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY15 print (late March) — the next read on futures orders (+7.0% now) and the outlook on the call
+  (2) Gross margin — +113.8bp in Q2 FY15: pricing, product costs and currency, what must hold if orders do not
+  (3) The outlook — Q2 FY15 call: 'will net together to deliver full year results largely in line with the expectations we shared 90 days ago'; the FY15 EPS guide in numbers +20% (Q1 FY15 call)
+  (4) Inventories — +10.9% against revenue +14.8% in Q2 FY15 (-3.9pp): discounting follows if orders slow
+  (5) Capital return at 27x — $425M of repurchases in Q2 FY15 ($4.7B to date of the four-year $8 billion program approved in September 2012): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $53  |  ADD below ~$78  |  TRIM above $103
+════════════════════════════════════════════════════════════════════════
+

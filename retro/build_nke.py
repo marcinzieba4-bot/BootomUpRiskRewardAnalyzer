@@ -10,11 +10,13 @@ builder
      split-adjusted series with the later splits undone), so the price and the per-share facts share one basis,
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
-NIKE's fiscal year ends on May 31. NIKE gave no revenue, EPS or pre-tax margin guide in numbers in any filing of 2007-2011:
-the outlook on its calls (transcripts furnished by 8-K) is in words, and words are not figures (the UNP 2016 rule); its
-gross-margin statements in basis points are display only (the AAPL rule). The method r2 inputs map with the fallbacks
-decided before any NKE date was built or scored:
-  - current-FY EPS: no EPS guide in numbers, so the last full year's EPS stands (the rollover rule),
+NIKE's fiscal year ends on May 31. NIKE gave no revenue or pre-tax margin guide in numbers in any filing of 2007-2014, and
+no EPS guide in numbers until the Q1 FY15 call's growth of "about 20% for the full year": the outlook on its calls
+(transcripts furnished by 8-K) is otherwise in words, and words are not figures (the UNP 2016 rule); its gross-margin
+statements in basis points are display only (the AAPL rule). The method r2 inputs map with the fallbacks decided before any
+NKE date was built or scored:
+  - current-FY EPS: an EPS guide in numbers when the latest call for the year states one (stated as growth, it applies to the
+    last full year, the LOW growth-form rule); otherwise the last full year's EPS stands (the rollover rule),
   - forward revenue growth: no revenue guide in numbers, so the latest quarter's revenue growth excluding currency changes
     (lc_pct: the release's growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes
     it states; the method's local-currency basis),
@@ -22,7 +24,9 @@ decided before any NKE date was built or scored:
     segments on pre-tax income).
 The latest call's outlook words for the current fiscal year are shown in the guide line and feed no input.
 A stock split restates, from its effective date, every per-share fact published before it (divided by the ratio) and
-every share count (multiplied by it); the prices of the whole window are on the AS_OF share basis.
+every share count (multiplied by it); the prices of the whole window are on the AS_OF share basis. A dividend declared on the
+basis of a split not yet effective carries that basis and is converted to AS_OF's (the 2012 split's "$0.21 per share, on a
+post-split basis": $0.42 a share until the split).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. NIKE released after the close, so a print is dated the next
@@ -33,6 +37,7 @@ Output goes to staging/retrospective/NKE until the series is added to the archiv
 Usage
   python3 retro/build_nke.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_nke.py --weekly 2009-01-05 2011-12-31
+  python3 retro/build_nke.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_nke.py 2008-06-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NKE/<AS_OF>
 """
@@ -54,7 +59,8 @@ FACTS = os.path.join(HERE, "facts", "NKE.json")
 ENGINE = os.path.join(HERE, "templates", "nke_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "NKE")
 # the guide fields this builder has an encoding for; any other field (a number) needs its encoding decided first
-GUIDE_KEYS = {"fy", "published", "source", "doc", "words"}
+# (eps_growth: an EPS guide stated as growth on the last full year, from the Q1 FY15 call)
+GUIDE_KEYS = {"fy", "published", "source", "doc", "words", "eps_growth", "eps_growth_note"}
 # rule T, the engine's signal thresholds: (rule_t key, BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"futures": (-31, -13, 5, 12), "gross_margin": (-780, -360, 60, 250), "revenue": (-23, -8, 7, 15),
                      "inventory_gap": (46, 21, -4, -8), "pretax_margin": (-1520, -730, 70, 170)}
@@ -105,7 +111,17 @@ def build(as_of, facts, raw, spx, engine, out):
     for g in [g for g in facts["guides"] if g["published"] <= as_of]:      # a guide public on AS_OF may carry only encoded fields
         assert set(g) <= GUIDE_KEYS, (g["doc"], "a guide field with no encoding yet; decide one first")
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
+    # a dividend declared on the basis of a split not yet effective ('basis': that split's effective date, as in the 2012
+    # split 8-K's "$0.21 per share, on a post-split basis") is put on the AS_OF share basis here; on_basis assumes a fact is
+    # on the share basis of its publication date
+    later_basis = [d for d in facts["dividends"] if "basis" in d]
+    facts = {**facts, "dividends": [d for d in facts["dividends"] if "basis" not in d]}
     facts, split_ids = on_basis(facts, as_of)
+    live_splits = [s for s in facts.get("splits", []) if s["published"] <= as_of]
+    for d in later_basis:
+        r = math.prod(s["ratio"] for s in live_splits if as_of < s["effective"] <= d["basis"])
+        r /= math.prod(s["ratio"] for s in live_splits if d["basis"] < s["effective"] <= as_of)
+        facts["dividends"].append({**d, "quarterly": d["quarterly"] * r})
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
@@ -148,15 +164,25 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year: words only, the latest call's replace the earlier ones; no input ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    eps_now = eps_hist[cur_fy - 1]                 # no EPS guide in numbers: the last full year's EPS stands (rollover rule)
-    eps_label = f"{fy_e}: no EPS guide in numbers, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+    # an EPS guide in numbers: the latest call for the current year that states one; stated as growth, it keeps its growth
+    # and applies it to the year it is stated on (the LOW growth-form rule); later words keep it (the LOW words rule)
+    eps_guides = [g for g in guides if "eps_growth" in g]
+    if eps_guides:
+        eg = eps_guides[-1]
+        eps_now = round(eps_hist[cur_fy - 1] * (1 + eg["eps_growth"] / 100), 2)
+        eps_label = (f"{fy_e}: FY{(cur_fy - 1) % 100:02d}'s ${money(eps_hist[cur_fy - 1])} + {eg['eps_growth']:g}%, the EPS growth "
+                     f"guide of the {eg['doc']} ('{eg['eps_growth_note']}')")
+    else:
+        eps_now = eps_hist[cur_fy - 1]             # no EPS guide in numbers: the last full year's EPS stands (rollover rule)
+        eps_label = f"{fy_e}: no EPS guide in numbers, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
     # no revenue guide in numbers: the latest quarter's revenue growth excluding currency changes (method r2's LC basis)
     fwd = [latest["lc_pct"]] * 2
     fwd_label, fwd_short, fwd_period = f"{latest['quarter']} revenue ex-currency", f"{latest['quarter'].split()[0]} rev ex-FX", latest["quarter"]
     if guides:
         g = guides[-1]
-        guide_text = (f"{fy_now} outlook in words ({g['doc']}, display only): " + " ... ".join(f"'{w}'" for w in g["words"])
-                      + f"; no {fy_now} revenue, EPS or margin guide in numbers")
+        tail = (f"; {fy_now} EPS guide in numbers: {eps_guides[-1]['eps_growth']:+g}% ({eps_guides[-1]['doc']}); no {fy_now} revenue "
+                f"or margin guide in numbers" if eps_guides else f"; no {fy_now} revenue, EPS or margin guide in numbers")
+        guide_text = (f"{fy_now} outlook in words ({g['doc']}, display only): " + " ... ".join(f"'{w}'" for w in g["words"]) + tail)
     else:
         guide_text = f"{fy_now}: no outlook in scope yet; no {fy_now} revenue, EPS or margin guide in numbers"
     # no margin guide in any filing of the period: no guided step, and the margin signal uses the latest quarter
@@ -203,7 +229,9 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("A consumer-spending recession shows up in futures orders first; the bear\n"
                 "  needs it to reach gross margin and inventories as well.")
     theme_summary = "no disruption theme has dated evidence"
-    cat3 = (f"(3) The outlook in words — {guides[-1]['doc']}: '{guides[-1]['words'][0]}'; no {fy_now} guide in numbers" if guides else
+    cat3 = (f"(3) The outlook — {guides[-1]['doc']}: '{guides[-1]['words'][0]}'; the {fy_now} EPS guide in numbers "
+            f"{eps_guides[-1]['eps_growth']:+g}% ({eps_guides[-1]['doc']})" if eps_guides else
+            f"(3) The outlook in words — {guides[-1]['doc']}: '{guides[-1]['words'][0]}'; no {fy_now} guide in numbers" if guides else
             f"(3) A {fy_now} outlook — none in scope yet, and no {fy_now} guide in numbers")
     cat4 = (f"(4) Inventories — {latest['inventory_pct']:+.1f}% against revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['inventory_gap_pp']:+.1f}pp): discounting follows if orders slow")

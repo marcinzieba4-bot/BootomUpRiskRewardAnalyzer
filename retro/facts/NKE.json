@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. NIKE gave no revenue, EPS or pre-tax margin guide in numbers in any filing of the period: the outlook on its calls is in words, gross-margin changes at times in basis points ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes it states; eps_q is diluted EPS, excluding non-comparable items where the release publishes that figure (GAAP in the note). rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date; a dividend declared on the basis of a split not yet effective carries that basis ('basis', the split's effective date). NIKE gave no revenue or pre-tax margin guide in numbers in any filing of the period, and no EPS guide in numbers until the Q1 FY15 call's growth of 'about 20% for the full year' ('eps_growth'): the outlook on its calls is otherwise in words, gross-margin changes at times in basis points ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes it states; eps_q is diluted EPS (from continuing operations once the release reports them, from Q2 FY13), excluding non-comparable items where the release publishes that figure (GAAP in the note). rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "NKE",
  "sources": {
   "N1": {
@@ -372,6 +372,202 @@
    "title": "NIKE Q2 FY12 earnings call transcript (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000181/exhibit991ercc.htm",
    "supports": "the CFO's fiscal 2012 outlook in words"
+  },
+  "N54": {
+   "published": "2012-03-23",
+   "filed": "2012-03-22 16:19 ET (after the close)",
+   "title": "NIKE Q3 FY12 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000025/exhibit991er.htm",
+   "supports": "Q3 FY12 income statement and balance sheet in whole millions ('Gross profit'); revenues up 16 percent excluding currency changes; futures 15 percent higher, currency reducing them by 3 percentage points"
+  },
+  "N55": {
+   "published": "2012-03-27",
+   "filed": "2012-03-26 18:36 ET (after the close)",
+   "title": "NIKE Q3 FY12 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000027/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2012 fourth-quarter outlook and initial fiscal 2013 thoughts in words"
+  },
+  "N56": {
+   "published": "2012-06-29",
+   "filed": "2012-06-28 16:19 ET (after the close)",
+   "title": "NIKE Q4 FY12 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000063/exhibit99er.htm",
+   "supports": "Q4 FY12 and FY12 income statement and balance sheet; NIKE Brand futures up 7 percent, 12 percent excluding currency changes; the intention to divest Cole Haan and Umbro announced on May 31, 2012"
+  },
+  "N57": {
+   "published": "2012-07-03",
+   "filed": "2012-07-02 19:10 ET (after the close)",
+   "title": "NIKE Q4 FY12 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000065/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2013 outlook for the ongoing businesses in words"
+  },
+  "N58": {
+   "published": "2012-07-25",
+   "filed": "2012-07-24 16:16 ET (after the close)",
+   "title": "NIKE, Inc. FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312512312306/d341264d10k.htm",
+   "supports": "selected financial data FY2008-FY2012 (revenues, gross profit, diluted EPS, diluted shares 469.8M in FY12, inventories, long-term debt); income statement FY2010-FY2012; revenues by operating segment; futures orders '7% higher'; cash flow (operations $1,899M, additions to PP&E $597M, repurchases $1,814M); quarterly dividends declared; business and competition wording"
+  },
+  "N59": {
+   "published": "2012-09-28",
+   "filed": "2012-09-27 16:26 ET (after the close)",
+   "title": "NIKE Q1 FY13 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000148/exhibit99er.htm",
+   "supports": "Q1 FY13 income statement and balance sheet, Cole Haan and Umbro (the Businesses to be Divested) still consolidated; pro forma EPS excluding them; futures $8.9 billion, 6 percent higher; the new four-year $8 billion repurchase program"
+  },
+  "N60": {
+   "published": "2012-10-02",
+   "filed": "2012-10-02 14:19 ET (during market hours)",
+   "title": "NIKE Q1 FY13 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000150/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2013 outlook in words"
+  },
+  "N61": {
+   "published": "2012-11-16",
+   "filed": "2012-11-15 16:19 ET (after the close)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split and dividend increase",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000158/exhibit991.htm",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable December 24, 2012, trading at the split-adjusted price from December 26, 2012; quarterly dividend of $0.21 per share on a post-split basis, up 17 percent from $0.18 split-adjusted (ex.99.1)"
+  },
+  "N62": {
+   "published": "2012-12-21",
+   "filed": "2012-12-20 16:27 ET (after the close)",
+   "title": "NIKE Q2 FY13 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000164/exhibit991.htm",
+   "supports": "Q2 FY13 income statement from continuing operations (Cole Haan and Umbro discontinued) and balance sheet, per share before the split; dividends declared $0.42 (was $0.36); futures $9.3 billion, 6 percent higher"
+  },
+  "N63": {
+   "published": "2012-12-28",
+   "filed": "2012-12-27 16:07 ET (after the close)",
+   "title": "NIKE Q2 FY13 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000166/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2013 outlook for continuing operations in words"
+  },
+  "N64": {
+   "published": "2013-03-22",
+   "filed": "2013-03-21 16:19 ET (after the close)",
+   "title": "NIKE Q3 FY13 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000019/exhibit991er.htm",
+   "supports": "Q3 FY13 income statement from continuing operations and balance sheet, per share after the split; futures $9.9 billion, 6 percent higher; the sale of Cole Haan"
+  },
+  "N65": {
+   "published": "2013-03-26",
+   "filed": "2013-03-25 18:02 ET (after the close)",
+   "title": "NIKE Q3 FY13 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000021/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2013 fourth-quarter outlook and initial fiscal 2014 thoughts in words"
+  },
+  "N66": {
+   "published": "2013-06-28",
+   "filed": "2013-06-27 16:23 ET (after the close)",
+   "title": "NIKE Q4 FY13 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000057/exhibit991er.htm",
+   "supports": "Q4 FY13 and FY13 income statement from continuing operations and balance sheet; FY12 restated for continuing operations; futures $12.1 billion, 8 percent higher"
+  },
+  "N67": {
+   "published": "2013-07-03",
+   "filed": "2013-07-02 17:17 ET (after the close)",
+   "title": "NIKE Q4 FY13 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000060/exhibit91ercc.htm",
+   "supports": "the CFO's fiscal 2014 outlook in words"
+  },
+  "N68": {
+   "published": "2013-07-24",
+   "filed": "2013-07-23 16:32 ET (after the close)",
+   "title": "NIKE, Inc. FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000092/nke-5312013x10k.htm",
+   "supports": "selected financial data FY2009-FY2013 from continuing operations, per share after the 2012 split (revenues, gross profit, diluted EPS, diluted shares 916.4M in FY13, long-term debt); income statement FY2011-FY2013; revenues by operating segment; futures orders '8% higher'; cash flow (operations $3,027M, additions to PP&E $636M, repurchases $1,674M); quarterly dividends declared; business and competition wording"
+  },
+  "N69": {
+   "published": "2013-09-27",
+   "filed": "2013-09-26 16:21 ET (after the close)",
+   "title": "NIKE Q1 FY14 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000154/exhibit991er.htm",
+   "supports": "Q1 FY14 income statement and balance sheet; Converse a reportable segment; futures 8 percent higher, 10 percent excluding currency changes"
+  },
+  "N70": {
+   "published": "2013-09-30",
+   "filed": "2013-09-30 14:58 ET (during market hours)",
+   "title": "NIKE Q1 FY14 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000156/nikeincq114earningsrelease.htm",
+   "supports": "the CFO's fiscal 2014 outlook in words"
+  },
+  "N71": {
+   "published": "2013-12-20",
+   "filed": "2013-12-19 16:21 ET (after the close)",
+   "title": "NIKE Q2 FY14 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000208/exhibit991erq22014.htm",
+   "supports": "Q2 FY14 income statement and balance sheet; futures $10.4 billion, 12 percent higher; dividends declared $0.24 (was $0.21)"
+  },
+  "N72": {
+   "published": "2013-12-23",
+   "filed": "2013-12-20 17:44 ET (after the close)",
+   "title": "NIKE Q2 FY14 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000210/a8-kq2fy14erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2014 outlook in words"
+  },
+  "N73": {
+   "published": "2014-03-21",
+   "filed": "2014-03-20 16:19 ET (after the close)",
+   "title": "NIKE Q3 FY14 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000019/exhibit991erq32014.htm",
+   "supports": "Q3 FY14 income statement and balance sheet; futures $10.9 billion, 12 percent higher"
+  },
+  "N74": {
+   "published": "2014-03-25",
+   "filed": "2014-03-25 12:07 ET (during market hours)",
+   "title": "NIKE Q3 FY14 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000023/a8-kq3fy14erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2014 fourth-quarter outlook and initial fiscal 2015 thoughts in words"
+  },
+  "N75": {
+   "published": "2014-06-27",
+   "filed": "2014-06-26 16:25 ET (after the close)",
+   "title": "NIKE Q4 FY14 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000052/exhibit991erq42014.htm",
+   "supports": "Q4 FY14 and FY14 income statement and balance sheet, FY13 revised; futures $13.3 billion, 11 percent higher"
+  },
+  "N76": {
+   "published": "2014-06-30",
+   "filed": "2014-06-30 12:39 ET (during market hours)",
+   "title": "NIKE Q4 FY14 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000054/nke-6302014xexhibit991.htm",
+   "supports": "the CFO's fiscal 2015 outlook in words"
+  },
+  "N77": {
+   "published": "2014-07-28",
+   "filed": "2014-07-25 16:22 ET (after the close)",
+   "title": "NIKE, Inc. FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000097/nke-5312014x10k.htm",
+   "supports": "selected financial data FY2010-FY2014 from continuing operations, FY2010-FY2013 revised (revenues, gross profit, diluted EPS, diluted shares 905.8M in FY14, long-term debt); income statement FY2012-FY2014; revenues by operating segment, Converse separate; futures orders '11% higher'; cash flow (operations $3,003M, additions to PP&E $880M, repurchases $2,628M); quarterly dividends declared; business and competition wording"
+  },
+  "N78": {
+   "published": "2014-09-26",
+   "filed": "2014-09-25 16:18 ET (after the close)",
+   "title": "NIKE Q1 FY15 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000139/exhibit991erq12015.htm",
+   "supports": "Q1 FY15 income statement and balance sheet; futures 11 percent higher, 14 percent excluding currency changes"
+  },
+  "N79": {
+   "published": "2014-09-30",
+   "filed": "2014-09-30 15:55 ET (during market hours)",
+   "title": "NIKE Q1 FY15 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000146/a8-kq1fy15erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2015 outlook: revenue and gross margin in words and basis points, EPS growth of 'about 20% for the full year'"
+  },
+  "N80": {
+   "published": "2014-12-19",
+   "filed": "2014-12-18 16:18 ET (after the close)",
+   "title": "NIKE Q2 FY15 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000172/exhibit991erq22015.htm",
+   "supports": "Q2 FY15 income statement and balance sheet; futures 7 percent higher, 11 percent excluding currency changes; dividends declared $0.28 (was $0.24)"
+  },
+  "N81": {
+   "published": "2014-12-22",
+   "filed": "2014-12-22 14:56 ET (during market hours)",
+   "title": "NIKE Q2 FY15 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000174/a8-kq2fy15erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2015 outlook in words"
   }
  },
  "history_vintages": [
@@ -1040,6 +1236,442 @@
     ]
    ],
    "groups_basis": "FY11 revenues by operating segment (FY2011 10-K, FY10 as restated there; Corporate's +$11M left out)"
+  },
+  {
+   "published": "2012-07-25",
+   "sources": [
+    "N58",
+    "N49",
+    "N41",
+    "N32",
+    "N23",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N54"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY12",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2012 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2008": "2008-05-31",
+    "2009": "2009-05-31",
+    "2010": "2010-05-31",
+    "2011": "2011-05-31",
+    "2012": "2012-05-31"
+   },
+   "eps_gaap": {
+    "2003": 0.89,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 3.03,
+    "2010": 3.86,
+    "2011": 4.39,
+    "2012": 4.73
+   },
+   "eps_normalized": {
+    "2003": 1.38,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 3.81,
+    "2010": 3.86,
+    "2011": 4.39,
+    "2012": 4.73
+   },
+   "eps_published": {
+    "2003": "2007-07-30",
+    "2004": "2008-07-29",
+    "2005": "2009-07-28",
+    "2006": "2007-07-30",
+    "2007": "2011-07-25",
+    "2008": "2009-07-28",
+    "2009": "2010-07-21"
+   },
+   "revenue_usd_b": {
+    "2003": 10.697,
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.955,
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 19.176,
+    "2010": 19.014,
+    "2011": 20.862,
+    "2012": 24.128
+   },
+   "diluted_shares_m": {
+    "2003": 535.2,
+    "2012": 469.8
+   },
+   "shares_published": {
+    "2003": "2007-07-30"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 12.36,
+   "prev_fy_pretax_margin_note": "FY12 income before income taxes $2,983M / revenues $24,128M (FY2012 10-K)",
+   "prev_fy_gross_margin": 43.4,
+   "prev_fy_sales_growth": 15.7,
+   "prev_fy_futures_pct": 7.0,
+   "prev_fy_futures_note": "the FY2012 10-K: '7% higher', 12% excluding currency changes",
+   "tax_rate": 0.2548,
+   "tax_note": "FY12 effective rate: income tax expense $760M / pre-tax income $2,983M ('25.5%', FY2012 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 1.302,
+   "fcf_label": "FY12",
+   "prev_q_futures_pct": 15.0,
+   "prev_q_label": "Q3 FY12",
+   "prev_q_source": "N54",
+   "dividend_annual": 1.44,
+   "dividend_note": "$0.36 quarterly, declared in each of Q2-Q4 FY12 (FY2012 10-K)",
+   "cash_return_text": "$1,814M of share repurchases in FY12, long-term debt $228M",
+   "business_line": "NIKE Brand footwear, apparel and equipment; affiliate brands Cole Haan, Converse, Hurley and Umbro; NIKE Golf (Cole Haan and Umbro to be divested)",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY03), each year from the latest 10-K that reports it; FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 excluding non-comparable items, the company's figure (FY2009 10-K; GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each); FY09 = $3.81 excluding non-comparable items, the company's figure (FY2010 10-K; GAAP $3.03, after the Umbro impairment, $0.49, and restructuring charges, $0.29); FY10 $3.86, FY11 $4.39 and FY12 $4.73 have no such items (FY12 keeps a $24 million Western Europe restructuring charge, with no figure excluding it); no year excluded",
+   "groups": [
+    [
+     "North America",
+     8.839,
+     16.6
+    ],
+    [
+     "Western Europe",
+     4.144,
+     7.1
+    ],
+    [
+     "Central & Eastern Europe",
+     1.2,
+     15.4
+    ],
+    [
+     "Greater China",
+     2.539,
+     23.3
+    ],
+    [
+     "Japan",
+     0.829,
+     8.2
+    ],
+    [
+     "Emerging Markets",
+     3.41,
+     24.6
+    ],
+    [
+     "Global Brand Divisions",
+     0.111,
+     15.6
+    ],
+    [
+     "Other Businesses",
+     3.095,
+     11.1
+    ]
+   ],
+   "groups_basis": "FY12 revenues by operating segment (FY2012 10-K, FY11 as restated there; Corporate's -$39M left out)"
+  },
+  {
+   "published": "2013-07-24",
+   "sources": [
+    "N68",
+    "N58",
+    "N49",
+    "N41",
+    "N32",
+    "N23",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N64"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY13",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2013 10-K); the industry 'is highly competitive in the United States and on a worldwide basis', 'including adidas, V.F. Corp., Puma, Li Ning and Under Armour, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2009": "2009-05-31",
+    "2010": "2010-05-31",
+    "2011": "2011-05-31",
+    "2012": "2012-05-31",
+    "2013": "2013-05-31"
+   },
+   "eps_gaap": {
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 1.79,
+    "2010": 1.95,
+    "2011": 2.24,
+    "2012": 2.42,
+    "2013": 2.69
+   },
+   "eps_normalized": {
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 1.79,
+    "2010": 1.95,
+    "2011": 2.24,
+    "2012": 2.42,
+    "2013": 2.69
+   },
+   "eps_published": {
+    "2004": "2008-07-29",
+    "2005": "2009-07-28",
+    "2006": "2007-07-30",
+    "2007": "2011-07-25",
+    "2008": "2009-07-28"
+   },
+   "revenue_usd_b": {
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.955,
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 18.528,
+    "2010": 18.324,
+    "2011": 20.117,
+    "2012": 23.331,
+    "2013": 25.313
+   },
+   "diluted_shares_m": {
+    "2004": 539.4,
+    "2013": 916.4
+   },
+   "shares_published": {
+    "2004": "2008-07-29"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 12.93,
+   "prev_fy_pretax_margin_note": "FY13 income before income taxes $3,272M / revenues $25,313M (FY2013 10-K; continuing operations)",
+   "prev_fy_gross_margin": 43.59,
+   "prev_fy_sales_growth": 8.5,
+   "prev_fy_futures_pct": 8.0,
+   "prev_fy_futures_note": "the FY2013 10-K: '8% higher', also 8% excluding currency changes",
+   "tax_rate": 0.2469,
+   "tax_note": "FY13 effective rate: income tax expense $808M / pre-tax income $3,272M ('24.7%', FY2013 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 2.391,
+   "fcf_label": "FY13",
+   "prev_q_futures_pct": 6.0,
+   "prev_q_label": "Q3 FY13",
+   "prev_q_source": "N64",
+   "dividend_annual": 0.84,
+   "dividend_note": "$0.21 quarterly, declared in each of Q2-Q4 FY13 (FY2013 10-K, after the split)",
+   "cash_return_text": "$1,674M of share repurchases in FY13, long-term debt $1,210M",
+   "business_line": "NIKE Brand footwear, apparel and equipment; Converse, Hurley and NIKE Golf (Cole Haan and Umbro sold in FY13)",
+   "normalization": "each year from the latest 10-K that reports it: FY09-FY13 diluted EPS from continuing operations (FY2013 10-K; Cole Haan and Umbro are discontinued operations), after the 2012 split; FY04-FY08 on the earlier basis that included them, as no later 10-K restates those years: FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 excluding non-comparable items, the company's figure (FY2009 10-K; GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each); FY09's $3.81 excluding non-comparable items was on the basis that included Umbro and Cole Haan, so the restated $1.79 from continuing operations stands (the UNP trucking rule); no year excluded",
+   "groups": [
+    [
+     "North America",
+     10.387,
+     17.5
+    ],
+    [
+     "Western Europe",
+     4.128,
+     -0.4
+    ],
+    [
+     "Central & Eastern Europe",
+     1.287,
+     7.3
+    ],
+    [
+     "Greater China",
+     2.453,
+     -3.4
+    ],
+    [
+     "Japan",
+     0.791,
+     -5.3
+    ],
+    [
+     "Emerging Markets",
+     3.718,
+     9.0
+    ],
+    [
+     "Global Brand Divisions",
+     0.117,
+     5.4
+    ],
+    [
+     "Other Businesses",
+     2.5,
+     8.8
+    ]
+   ],
+   "groups_basis": "FY13 revenues by operating segment (FY2013 10-K, continuing operations, FY12 as restated there; Corporate's -$68M left out)"
+  },
+  {
+   "published": "2014-07-28",
+   "sources": [
+    "N77",
+    "N68",
+    "N58",
+    "N49",
+    "N41",
+    "N32",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N73"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY14",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2014 10-K); the industry 'is highly competitive on a worldwide basis', 'including adidas, V.F. Corp., Puma, Li Ning, and Under Armour, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2010": "2010-05-31",
+    "2011": "2011-05-31",
+    "2012": "2012-05-31",
+    "2013": "2013-05-31",
+    "2014": "2014-05-31"
+   },
+   "eps_gaap": {
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 2.4,
+    "2013": 2.68,
+    "2014": 2.97
+   },
+   "eps_normalized": {
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 2.4,
+    "2013": 2.68,
+    "2014": 2.97
+   },
+   "eps_published": {
+    "2005": "2009-07-28",
+    "2006": "2007-07-30",
+    "2007": "2011-07-25",
+    "2008": "2009-07-28",
+    "2009": "2013-07-24"
+   },
+   "revenue_usd_b": {
+    "2005": 13.7397,
+    "2006": 14.955,
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 18.528,
+    "2010": 18.324,
+    "2011": 20.117,
+    "2012": 23.331,
+    "2013": 25.313,
+    "2014": 27.799
+   },
+   "diluted_shares_m": {
+    "2005": 540.6,
+    "2014": 905.8
+   },
+   "shares_published": {
+    "2005": "2009-07-28"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 12.75,
+   "prev_fy_pretax_margin_note": "FY14 income before income taxes $3,544M / revenues $27,799M (FY2014 10-K)",
+   "prev_fy_gross_margin": 44.77,
+   "prev_fy_sales_growth": 9.8,
+   "prev_fy_futures_pct": 11.0,
+   "prev_fy_futures_note": "the FY2014 10-K: '11% higher', 12% excluding currency changes",
+   "tax_rate": 0.2401,
+   "tax_note": "FY14 effective rate: income tax expense $851M / pre-tax income $3,544M ('24.0%', FY2014 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 2.123,
+   "fcf_label": "FY14",
+   "prev_q_futures_pct": 12.0,
+   "prev_q_label": "Q3 FY14",
+   "prev_q_source": "N73",
+   "dividend_annual": 0.96,
+   "dividend_note": "$0.24 quarterly, declared in each of Q2-Q4 FY14 (FY2014 10-K)",
+   "cash_return_text": "$2,628M of share repurchases in FY14, long-term debt $1,199M",
+   "business_line": "NIKE Brand footwear, apparel and equipment (NIKE Golf and Hurley within it from FY14); Converse",
+   "normalization": "each year from the latest 10-K that reports it: FY10-FY14 diluted EPS from continuing operations (FY2014 10-K, revised to expense internally developed patent and trademark costs), FY09 from continuing operations (FY2013 10-K), after the 2012 split; FY05-FY08 on the earlier basis that included Cole Haan and Umbro, as no later 10-K restates those years: FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 excluding non-comparable items, the company's figure (FY2009 10-K; GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each); FY09's $3.81 excluding non-comparable items was on that earlier basis, so the restated $1.79 stands (the UNP trucking rule); no year excluded",
+   "groups": [
+    [
+     "North America",
+     12.299,
+     10.2
+    ],
+    [
+     "Western Europe",
+     4.979,
+     18.7
+    ],
+    [
+     "Central & Eastern Europe",
+     1.387,
+     12.9
+    ],
+    [
+     "Greater China",
+     2.602,
+     5.0
+    ],
+    [
+     "Japan",
+     0.771,
+     -12.0
+    ],
+    [
+     "Emerging Markets",
+     3.949,
+     3.1
+    ],
+    [
+     "Global Brand Divisions",
+     0.125,
+     8.7
+    ],
+    [
+     "Converse",
+     1.684,
+     16.2
+    ]
+   ],
+   "groups_basis": "FY14 revenues by operating segment (FY2014 10-K, FY13 as restated there; Corporate's +$3M left out)"
   }
  ],
  "prints": [
@@ -1823,6 +2455,502 @@
    "next_print": "Q3 FY12 print (late March)",
    "cash_return_text": "$672M of repurchases in Q2 FY12 ($3.6B to date of the four-year $5 billion program approved in September 2008)",
    "futures_fx_note": "the release: 'Changes in foreign currency exchange rates did not have a significant impact on reported' futures; its table: +13% excluding currency changes"
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-03-23",
+   "source": "N54",
+   "release": "Mar 22",
+   "release_time": "after the close on Mar 22: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2012-02-29",
+   "sales_b": 5.846,
+   "sales_pct": 15.1,
+   "sales_note": "revenues $5,846M vs $5,079M",
+   "lc_pct": 16.0,
+   "lc_note": "the release: 'up 16 percent excluding currency changes'",
+   "futures_pct": 15.0,
+   "futures_fx_pp": -3.0,
+   "futures_b": 9.4,
+   "futures_note": "worldwide futures orders for delivery March-July 2012, $9.4B",
+   "gross_margin": 43.81,
+   "gross_margin_bp": -200.8,
+   "gross_margin_note": "gross profit $2,561M / $5,846M vs $2,327M / $5,079M",
+   "pretax_margin": 13.17,
+   "pretax_margin_bp": -74.9,
+   "pretax_note": "income before income taxes $770M / $5,846M vs $707M / $5,079M",
+   "inventory_b": 3.356,
+   "inventory_pct": 32.3,
+   "inventory_gap_pp": 17.2,
+   "inventory_note": "inventories $3,356M vs $2,536M a year earlier",
+   "eps_q": 1.2,
+   "eps_q_prior": 1.08,
+   "diluted_shares_m": 467.3,
+   "cash_b": 3.197,
+   "cash_note": "cash and equivalents $2,021M + short-term investments $1,176M",
+   "next_print": "Q4 FY12 print (late June)",
+   "cash_return_text": "$239M of repurchases in Q3 FY12 ($3.9B to date of the four-year $5 billion program approved in September 2008)",
+   "futures_fx_note": "the release: 'Changes in foreign currency exchange rates reduced reported futures orders by 3 percentage points'"
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-06-29",
+   "source": "N56",
+   "release": "Jun 28",
+   "release_time": "after the close on Jun 28: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2012-05-31",
+   "sales_b": 6.47,
+   "sales_pct": 12.2,
+   "sales_note": "revenues $6,470M vs $5,766M",
+   "lc_pct": 14.0,
+   "lc_note": "the release: 'up 14 percent excluding currency changes'",
+   "futures_pct": 7.0,
+   "futures_fx_pp": -5.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery June-November 2012",
+   "gross_margin": 42.77,
+   "gross_margin_bp": -152.8,
+   "gross_margin_note": "gross profit $2,767M / $6,470M vs $2,554M / $5,766M",
+   "pretax_margin": 11.48,
+   "pretax_margin_bp": -192.2,
+   "pretax_note": "income before income taxes $743M / $6,470M vs $773M / $5,766M",
+   "inventory_b": 3.35,
+   "inventory_pct": 23.4,
+   "inventory_gap_pp": 11.2,
+   "inventory_note": "inventories $3,350M vs $2,715M a year earlier",
+   "eps_q": 1.17,
+   "eps_q_prior": 1.24,
+   "diluted_shares_m": 468.1,
+   "cash_b": 3.757,
+   "cash_note": "cash and equivalents $2,317M + short-term investments $1,440M",
+   "next_print": "Q1 FY13 print (late September)",
+   "cash_return_text": "$245M of repurchases in Q4 FY12 ($4.1B to date of the four-year $5 billion program approved in September 2008)",
+   "eps_note": "other expense includes a $24 million charge for the NIKE Brand's Western Europe restructuring and gross margin an unanticipated customs assessment in an Emerging Markets territory, with no EPS published excluding them; NIKE announced on May 31, 2012 its intention to divest Cole Haan and Umbro",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 4.73,
+    "revenue_usd_b": 24.128,
+    "diluted_shares_m": 469.8,
+    "normalization_note": "FY12 = diluted EPS $4.73 as released (Cole Haan and Umbro included), with no figure excluding non-comparable items",
+    "pretax_margin": 12.36,
+    "pretax_margin_note": "FY12 income before income taxes $2,983M / $24,128M (Q4 FY12 release)",
+    "gross_margin": 43.4,
+    "sales_growth": 15.7,
+    "futures_pct": 7.0,
+    "tax_rate": 0.2548,
+    "tax_note": "FY12 effective rate: income taxes $760M / pre-tax income $2,983M"
+   },
+   "futures_fx_note": "the release: 'NIKE Brand futures orders up 7 percent, up 12 percent excluding currency changes', no dollar amount stated"
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2012-09-28",
+   "source": "N59",
+   "release": "Sep 27",
+   "release_time": "after the close on Sep 27: 8-K accepted 16:26 ET; public before the open of the next trading day",
+   "period_end": "2012-08-31",
+   "sales_b": 6.669,
+   "sales_pct": 9.7,
+   "sales_note": "revenues $6,669M vs $6,081M",
+   "lc_pct": 15.0,
+   "lc_note": "the release: 'up 15 percent excluding currency changes'",
+   "futures_pct": 6.0,
+   "futures_fx_pp": -2.0,
+   "futures_b": 8.9,
+   "futures_note": "worldwide futures orders for delivery September 2012-January 2013, $8.9B",
+   "gross_margin": 43.53,
+   "gross_margin_bp": -75.6,
+   "gross_margin_note": "gross profit $2,903M / $6,669M vs $2,693M / $6,081M",
+   "pretax_margin": 11.73,
+   "pretax_margin_bp": -228.5,
+   "pretax_note": "income before income taxes $782M / $6,669M vs $852M / $6,081M",
+   "inventory_b": 3.411,
+   "inventory_pct": 9.8,
+   "inventory_gap_pp": 0.1,
+   "inventory_note": "inventories $3,411M vs $3,107M a year earlier",
+   "eps_q": 1.23,
+   "eps_q_prior": 1.36,
+   "diluted_shares_m": 461.4,
+   "cash_b": 3.267,
+   "cash_note": "cash and equivalents $2,165M + short-term investments $1,102M",
+   "next_print": "Q2 FY13 print (late December)",
+   "cash_return_text": "$779M of repurchases in Q1 FY13 ($4.9B to date of the four-year $5 billion program approved in September 2008); a new four-year $8 billion program approved in September 2012",
+   "eps_note": "Cole Haan and Umbro, the Businesses to be Divested, still consolidated; the release's pro forma diluted EPS excluding them, approximately $1.27, removes ongoing operations rather than a one-off, so GAAP stands",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 8 percent'"
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2012-12-21",
+   "source": "N62",
+   "release": "Dec 20",
+   "release_time": "after the close on Dec 20: 8-K accepted 16:27 ET; public before the open of the next trading day",
+   "period_end": "2012-11-30",
+   "sales_b": 5.955,
+   "sales_pct": 7.4,
+   "sales_note": "revenues $5,955M vs $5,546M",
+   "lc_pct": 10.0,
+   "lc_note": "the release: 'up 10 percent excluding currency changes'",
+   "futures_pct": 6.0,
+   "futures_fx_pp": -1.0,
+   "futures_b": 9.3,
+   "futures_note": "worldwide futures orders for delivery December 2012-April 2013, $9.3B",
+   "gross_margin": 42.49,
+   "gross_margin_bp": -35.6,
+   "gross_margin_note": "gross profit $2,530M / $5,955M vs $2,376M / $5,546M",
+   "pretax_margin": 11.96,
+   "pretax_margin_bp": 56.1,
+   "pretax_note": "income before income taxes $712M / $5,955M vs $632M / $5,546M",
+   "inventory_b": 3.318,
+   "inventory_pct": 9.3,
+   "inventory_gap_pp": 1.9,
+   "inventory_note": "inventories $3,318M vs $3,035M a year earlier",
+   "eps_q": 1.14,
+   "eps_q_prior": 1.03,
+   "diluted_shares_m": 456.6,
+   "cash_b": 3.525,
+   "cash_note": "cash and equivalents $2,291M + short-term investments $1,234M",
+   "next_print": "Q3 FY13 print (late March)",
+   "cash_return_text": "$384M of repurchases in Q2 FY13, concluding the four-year $5 billion program approved in September 2008; $294M of it under the four-year $8 billion program approved in September 2012",
+   "eps_note": "continuing operations from Q2 FY13, the prior year restated: Cole Haan and Umbro are discontinued operations, whose net loss of $137 million includes a $107 million loss on the sale of Umbro; per share before the split",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 7 percent'"
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-03-22",
+   "source": "N64",
+   "release": "Mar 21",
+   "release_time": "after the close on Mar 21: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2013-02-28",
+   "sales_b": 6.187,
+   "sales_pct": 9.4,
+   "sales_note": "revenues $6,187M vs $5,656M",
+   "lc_pct": 10.0,
+   "lc_note": "the release: 'up 10 percent excluding currency changes'",
+   "futures_pct": 6.0,
+   "futures_fx_pp": -1.0,
+   "futures_b": 9.9,
+   "futures_note": "worldwide futures orders for delivery March-July 2013, $9.9B",
+   "gross_margin": 44.22,
+   "gross_margin_bp": 28.6,
+   "gross_margin_note": "gross profit $2,736M / $6,187M vs $2,485M / $5,656M",
+   "pretax_margin": 13.87,
+   "pretax_margin_bp": -4.7,
+   "pretax_note": "income before income taxes $858M / $6,187M vs $787M / $5,656M",
+   "inventory_b": 3.329,
+   "inventory_pct": 3.8,
+   "inventory_gap_pp": -5.6,
+   "inventory_note": "inventories $3,329M vs $3,206M a year earlier",
+   "eps_q": 0.73,
+   "eps_q_prior": 0.61,
+   "diluted_shares_m": 911.7,
+   "cash_b": 4.042,
+   "cash_note": "cash and equivalents $2,557M + short-term investments $1,485M",
+   "next_print": "Q4 FY13 print (late June)",
+   "cash_return_text": "$253M of repurchases in Q3 FY13 ($548M to date of the four-year $8 billion program approved in September 2012)",
+   "eps_note": "continuing operations, per share after the split; the $231 million gain on the sale of Cole Haan falls in discontinued operations",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 7 percent'"
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2013-06-28",
+   "source": "N66",
+   "release": "Jun 27",
+   "release_time": "after the close on Jun 27: 8-K accepted 16:23 ET; public before the open of the next trading day",
+   "period_end": "2013-05-31",
+   "sales_b": 6.697,
+   "sales_pct": 7.4,
+   "sales_note": "revenues $6,697M vs $6,236M",
+   "lc_pct": 9.0,
+   "lc_note": "the release: 'up 9 percent excluding currency changes'",
+   "futures_pct": 8.0,
+   "futures_fx_pp": 0.0,
+   "futures_b": 12.1,
+   "futures_note": "worldwide futures orders for delivery June-November 2013, $12.1B",
+   "gross_margin": 43.9,
+   "gross_margin_bp": 110.0,
+   "gross_margin_note": "gross profit $2,940M / $6,697M vs $2,669M / $6,236M",
+   "pretax_margin": 13.47,
+   "pretax_margin_bp": 168.2,
+   "pretax_note": "income before income taxes $902M / $6,697M vs $735M / $6,236M",
+   "inventory_b": 3.434,
+   "inventory_pct": 6.6,
+   "inventory_gap_pp": -0.8,
+   "inventory_note": "inventories $3,434M vs $3,222M a year earlier",
+   "eps_q": 0.76,
+   "eps_q_prior": 0.6,
+   "diluted_shares_m": 913.4,
+   "cash_b": 5.965,
+   "cash_note": "cash and equivalents $3,337M + short-term investments $2,628M",
+   "next_print": "Q1 FY14 print (late September)",
+   "cash_return_text": "$242M of repurchases in Q4 FY13 ($1.7B in FY13 under the $5 billion and $8 billion programs)",
+   "eps_note": "full-year diluted EPS from continuing operations $2.69 against a restated $2.42 for FY12",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 2.69,
+    "revenue_usd_b": 25.313,
+    "diluted_shares_m": 916.4,
+    "normalization_note": "FY13 = diluted EPS from continuing operations $2.69 as released (Cole Haan and Umbro discontinued); FY12 keeps the FY2012 10-K's figure until the FY2013 10-K, which brings the restated $2.42 first published in this release",
+    "pretax_margin": 12.93,
+    "pretax_margin_note": "FY13 income before income taxes $3,272M / $25,313M (Q4 FY13 release; continuing operations)",
+    "gross_margin": 43.59,
+    "sales_growth": 8.5,
+    "futures_pct": 8.0,
+    "tax_rate": 0.2469,
+    "tax_note": "FY13 effective rate: income taxes $808M / pre-tax income $3,272M"
+   },
+   "futures_fx_note": "the release: 'Changes in foreign currency exchange rates did not have a significant impact on total reported futures orders growth'"
+  },
+  {
+   "quarter": "Q1 FY14",
+   "fy": 2014,
+   "q": 1,
+   "published": "2013-09-27",
+   "source": "N69",
+   "release": "Sep 26",
+   "release_time": "after the close on Sep 26: 8-K accepted 16:21 ET; public before the open of the next trading day",
+   "period_end": "2013-08-31",
+   "sales_b": 6.971,
+   "sales_pct": 7.7,
+   "sales_note": "revenues $6,971M vs $6,474M",
+   "lc_pct": 8.0,
+   "lc_note": "the release: 'Changes in foreign currency exchange rates did not have a significant impact on total reported revenue growth'",
+   "futures_pct": 8.0,
+   "futures_fx_pp": -2.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery September 2013-January 2014",
+   "gross_margin": 44.93,
+   "gross_margin_bp": 124.7,
+   "gross_margin_note": "gross profit $3,132M / $6,971M vs $2,828M / $6,474M",
+   "pretax_margin": 14.92,
+   "pretax_margin_bp": 256.2,
+   "pretax_note": "income before income taxes $1,040M / $6,971M vs $800M / $6,474M",
+   "inventory_b": 3.472,
+   "inventory_pct": 6.4,
+   "inventory_gap_pp": -1.3,
+   "inventory_note": "inventories $3,472M vs $3,263M a year earlier",
+   "eps_q": 0.86,
+   "eps_q_prior": 0.63,
+   "diluted_shares_m": 910.7,
+   "cash_b": 5.578,
+   "cash_note": "cash and equivalents $2,936M + short-term investments $2,642M",
+   "next_print": "Q2 FY14 print (late December)",
+   "cash_return_text": "$526M of repurchases in Q1 FY14 ($1.3B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 10 percent', no dollar amount stated"
+  },
+  {
+   "quarter": "Q2 FY14",
+   "fy": 2014,
+   "q": 2,
+   "published": "2013-12-20",
+   "source": "N71",
+   "release": "Dec 19",
+   "release_time": "after the close on Dec 19: 8-K accepted 16:21 ET; public before the open of the next trading day",
+   "period_end": "2013-11-30",
+   "sales_b": 6.431,
+   "sales_pct": 8.0,
+   "sales_note": "revenues $6,431M vs $5,955M",
+   "lc_pct": 9.0,
+   "lc_note": "the release's revenue table: +9% excluding currency changes",
+   "futures_pct": 12.0,
+   "futures_fx_pp": -1.0,
+   "futures_b": 10.4,
+   "futures_note": "worldwide futures orders for delivery December 2013-April 2014, $10.4B",
+   "gross_margin": 43.94,
+   "gross_margin_bp": 145.8,
+   "gross_margin_note": "gross profit $2,826M / $6,431M vs $2,530M / $5,955M",
+   "pretax_margin": 11.15,
+   "pretax_margin_bp": -80.7,
+   "pretax_note": "income before income taxes $717M / $6,431M vs $712M / $5,955M",
+   "inventory_b": 3.695,
+   "inventory_pct": 11.4,
+   "inventory_gap_pp": 3.4,
+   "inventory_note": "inventories $3,695M vs $3,318M a year earlier",
+   "eps_q": 0.59,
+   "eps_q_prior": 0.57,
+   "diluted_shares_m": 910.6,
+   "cash_b": 5.187,
+   "cash_note": "cash and equivalents $2,086M + short-term investments $3,101M",
+   "next_print": "Q3 FY14 print (late March)",
+   "cash_return_text": "$402M of repurchases in Q2 FY14 ($1.7B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: '13 percent higher on a currency neutral basis'"
+  },
+  {
+   "quarter": "Q3 FY14",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-03-21",
+   "source": "N73",
+   "release": "Mar 20",
+   "release_time": "after the close on Mar 20: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2014-02-28",
+   "sales_b": 6.972,
+   "sales_pct": 12.7,
+   "sales_note": "revenues $6,972M vs $6,187M",
+   "lc_pct": 14.0,
+   "lc_note": "the release's revenue table: +14% excluding currency changes",
+   "futures_pct": 12.0,
+   "futures_fx_pp": -2.0,
+   "futures_b": 10.9,
+   "futures_note": "worldwide futures orders for delivery March-July 2014, $10.9B",
+   "gross_margin": 44.51,
+   "gross_margin_bp": 28.5,
+   "gross_margin_note": "gross profit $3,103M / $6,972M vs $2,736M / $6,187M",
+   "pretax_margin": 12.66,
+   "pretax_margin_bp": -120.3,
+   "pretax_note": "income before income taxes $883M / $6,972M vs $858M / $6,187M",
+   "inventory_b": 3.825,
+   "inventory_pct": 11.7,
+   "inventory_gap_pp": -1.0,
+   "inventory_note": "inventories $3,825M vs $3,424M a year earlier",
+   "eps_q": 0.76,
+   "eps_q_prior": 0.73,
+   "diluted_shares_m": 904.8,
+   "cash_b": 5.029,
+   "cash_note": "cash and equivalents $1,864M + short-term investments $3,165M",
+   "next_print": "Q4 FY14 print (late June)",
+   "cash_return_text": "$788M of repurchases in Q3 FY14 ($2.5B to date of the four-year $8 billion program approved in September 2012)",
+   "eps_note": "prior-year inventories revised to recognize certain inventories held at third parties",
+   "futures_fx_note": "the release: '14 percent higher on a currency neutral basis'"
+  },
+  {
+   "quarter": "Q4 FY14",
+   "fy": 2014,
+   "q": 4,
+   "published": "2014-06-27",
+   "source": "N75",
+   "release": "Jun 26",
+   "release_time": "after the close on Jun 26: 8-K accepted 16:25 ET; public before the open of the next trading day",
+   "period_end": "2014-05-31",
+   "sales_b": 7.425,
+   "sales_pct": 10.9,
+   "sales_note": "revenues $7,425M vs $6,697M",
+   "lc_pct": 13.0,
+   "lc_note": "the release's revenue table: +13% excluding currency changes",
+   "futures_pct": 11.0,
+   "futures_fx_pp": -1.0,
+   "futures_b": 13.3,
+   "futures_note": "worldwide futures orders for delivery June-November 2014, $13.3B",
+   "gross_margin": 45.59,
+   "gross_margin_bp": 168.9,
+   "gross_margin_note": "gross profit $3,385M / $7,425M vs $2,940M / $6,697M",
+   "pretax_margin": 12.28,
+   "pretax_margin_bp": -108.1,
+   "pretax_note": "income before income taxes $912M / $7,425M vs $895M / $6,697M",
+   "inventory_b": 3.947,
+   "inventory_pct": 13.3,
+   "inventory_gap_pp": 2.4,
+   "inventory_note": "inventories $3,947M vs $3,484M a year earlier",
+   "eps_q": 0.78,
+   "eps_q_prior": 0.76,
+   "diluted_shares_m": 895.2,
+   "cash_b": 5.142,
+   "cash_note": "cash and equivalents $2,220M + short-term investments $2,922M",
+   "next_print": "Q1 FY15 print (late September)",
+   "cash_return_text": "$912M of repurchases in Q4 FY14 ($3.4B to date of the four-year $8 billion program approved in September 2012)",
+   "eps_note": "prior-year amounts revised to expense internally developed patent and trademark costs as incurred",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 2.97,
+    "revenue_usd_b": 27.799,
+    "diluted_shares_m": 905.8,
+    "normalization_note": "FY14 = diluted EPS from continuing operations $2.97 as released, with no non-comparable items; FY13 keeps the FY2013 10-K's $2.69 until the FY2014 10-K, which brings the revised $2.68 first published in this release",
+    "pretax_margin": 12.75,
+    "pretax_margin_note": "FY14 income before income taxes $3,544M / $27,799M (Q4 FY14 release)",
+    "gross_margin": 44.77,
+    "sales_growth": 9.8,
+    "futures_pct": 11.0,
+    "tax_rate": 0.2401,
+    "tax_note": "FY14 effective rate: income taxes $851M / pre-tax income $3,544M"
+   },
+   "futures_fx_note": "the release: '12 percent higher on a currency neutral basis'"
+  },
+  {
+   "quarter": "Q1 FY15",
+   "fy": 2015,
+   "q": 1,
+   "published": "2014-09-26",
+   "source": "N78",
+   "release": "Sep 25",
+   "release_time": "after the close on Sep 25: 8-K accepted 16:18 ET; public before the open of the next trading day",
+   "period_end": "2014-08-31",
+   "sales_b": 7.982,
+   "sales_pct": 14.5,
+   "sales_note": "revenues $7,982M vs $6,971M",
+   "lc_pct": 15.0,
+   "lc_note": "the release's revenue table: +15% excluding currency changes",
+   "futures_pct": 11.0,
+   "futures_fx_pp": -3.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery September 2014-January 2015",
+   "gross_margin": 46.62,
+   "gross_margin_bp": 168.8,
+   "gross_margin_note": "gross profit $3,721M / $7,982M vs $3,132M / $6,971M",
+   "pretax_margin": 15.4,
+   "pretax_margin_bp": 50.7,
+   "pretax_note": "income before income taxes $1,229M / $7,982M vs $1,038M / $6,971M",
+   "inventory_b": 4.03,
+   "inventory_pct": 14.5,
+   "inventory_gap_pp": -0.0,
+   "inventory_note": "inventories $4,030M vs $3,521M a year earlier",
+   "eps_q": 1.09,
+   "eps_q_prior": 0.86,
+   "diluted_shares_m": 886.2,
+   "cash_b": 4.579,
+   "cash_note": "cash and equivalents $2,303M + short-term investments $2,276M",
+   "next_print": "Q2 FY15 print (late December)",
+   "cash_return_text": "$819M of repurchases in Q1 FY15 ($4.2B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 14 percent', no dollar amount stated"
+  },
+  {
+   "quarter": "Q2 FY15",
+   "fy": 2015,
+   "q": 2,
+   "published": "2014-12-19",
+   "source": "N80",
+   "release": "Dec 18",
+   "release_time": "after the close on Dec 18: 8-K accepted 16:18 ET; public before the open of the next trading day",
+   "period_end": "2014-11-30",
+   "sales_b": 7.38,
+   "sales_pct": 14.8,
+   "sales_note": "revenues $7,380M vs $6,431M",
+   "lc_pct": 18.0,
+   "lc_note": "the release's revenue table: +18% excluding currency changes",
+   "futures_pct": 7.0,
+   "futures_fx_pp": -4.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery December 2014-April 2015",
+   "gross_margin": 45.08,
+   "gross_margin_bp": 113.8,
+   "gross_margin_note": "gross profit $3,327M / $7,380M vs $2,826M / $6,431M",
+   "pretax_margin": 11.9,
+   "pretax_margin_bp": 79.5,
+   "pretax_note": "income before income taxes $878M / $7,380M vs $714M / $6,431M",
+   "inventory_b": 4.15,
+   "inventory_pct": 10.9,
+   "inventory_gap_pp": -3.9,
+   "inventory_note": "inventories $4,150M vs $3,742M a year earlier",
+   "eps_q": 0.74,
+   "eps_q_prior": 0.59,
+   "diluted_shares_m": 884.8,
+   "cash_b": 4.713,
+   "cash_note": "cash and equivalents $2,273M + short-term investments $2,440M",
+   "next_print": "Q3 FY15 print (late March)",
+   "cash_return_text": "$425M of repurchases in Q2 FY15 ($4.7B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 11 percent', no dollar amount stated"
   }
  ],
  "guides": [
@@ -2043,6 +3171,162 @@
     "we now expect mid-teens revenue growth for the full year",
     "we now expect full-year gross margin will be down at least 160 basis points"
    ]
+  },
+  {
+   "fy": 2012,
+   "published": "2012-03-27",
+   "source": "N55",
+   "doc": "Q3 FY12 call",
+   "words": [
+    "On a reported basis, we expect low double-digit revenue growth for Q4 resulting in mid-teens growth for the full year",
+    "we now expect Q4 gross margin will decline about 100 basis points resulting in full year gross margin roughly 200 basis points below the prior year"
+   ]
+  },
+  {
+   "fy": 2013,
+   "published": "2012-03-27",
+   "source": "N55",
+   "doc": "Q3 FY12 call",
+   "words": [
+    "We expect to see full year revenue growth at or slightly above our high single-digit target range",
+    "Gross margin should improve as we expect to benefit from higher prices and some easing of material costs",
+    "we're targeting full year EPS growth approaching our mid-teens long-term goal"
+   ]
+  },
+  {
+   "fy": 2013,
+   "published": "2012-07-03",
+   "source": "N57",
+   "doc": "Q4 FY12 call",
+   "words": [
+    "For our ongoing businesses, we expect FY '13 constant-currency revenue growth at or slightly above our high single-digit target range",
+    "on a reported basis, we now expect mid-to-high single-digit revenue growth",
+    "we expect our ongoing operations, excluding Cole Haan, Umbro and the associated divestiture impacts, to deliver high single-digit EPS growth in FY '13"
+   ]
+  },
+  {
+   "fy": 2013,
+   "published": "2012-10-02",
+   "source": "N60",
+   "doc": "Q1 FY13 call",
+   "words": [
+    "We expect Q2 and FY13 constant currency Revenue growth at a high-single to low-double-digit rate",
+    "we continue to expect sequential gross margin improvement quarter-on-quarter, with margins essentially flat for the full year"
+   ]
+  },
+  {
+   "fy": 2013,
+   "published": "2012-12-28",
+   "source": "N63",
+   "doc": "Q2 FY13 call",
+   "words": [
+    "For the full year, we continue to expect high-single to low-double-digit revenue growth on a constant currency basis, with reported revenue expected to grow mid- to high-single-digits",
+    "we continue to expect full year gross margin will be essentially flat"
+   ]
+  },
+  {
+   "fy": 2013,
+   "published": "2013-03-26",
+   "source": "N65",
+   "doc": "Q3 FY13 call",
+   "words": [
+    "we continue to expect full year reported revenue to grow at a mid-to-high single digit rate",
+    "For Gross Margin, we continue to expect Fiscal 2013 will be roughly in line with the prior year"
+   ]
+  },
+  {
+   "fy": 2014,
+   "published": "2013-03-26",
+   "source": "N65",
+   "doc": "Q3 FY13 call",
+   "words": [
+    "we expect to see full year revenue growth at or slightly above our high-single-digit target range and EPS growth approaching our long-term mid-teens target"
+   ]
+  },
+  {
+   "fy": 2014,
+   "published": "2013-07-03",
+   "source": "N67",
+   "doc": "Q4 FY13 call",
+   "words": [
+    "Full year revenue growth should be near the upper end of our high single-digit target range",
+    "For the fiscal year, we expect Gross Margin expansion of approximately 25 basis points",
+    "we expect FY14 EPS to grow at a low double-digit rate"
+   ]
+  },
+  {
+   "fy": 2014,
+   "published": "2013-09-30",
+   "source": "N70",
+   "doc": "Q1 FY14 call",
+   "words": [
+    "We expect Revenue for the second quarter and full fiscal year to grow at a high single-digit rate, reflecting FX headwinds",
+    "For the fiscal year, we also expect Gross Margin expansion of approximately 50 basis points"
+   ]
+  },
+  {
+   "fy": 2014,
+   "published": "2013-12-23",
+   "source": "N72",
+   "doc": "Q2 FY14 call",
+   "words": [
+    "For the full year, we expect revenue to grow at a high-single to low-double digit rate",
+    "For full year FY14, we now expect gross margin expansion of approximately 75 basis points"
+   ]
+  },
+  {
+   "fy": 2014,
+   "published": "2014-03-25",
+   "source": "N74",
+   "doc": "Q3 FY14 call",
+   "words": [
+    "For the full year, we now expect revenue growth at the top end of our high single-digit target range",
+    "For the full year, we expect gross margin expansion of about 90 basis points"
+   ]
+  },
+  {
+   "fy": 2015,
+   "published": "2014-03-25",
+   "source": "N74",
+   "doc": "Q3 FY14 call",
+   "words": [
+    "anticipate currency-neutral revenue growth for FY '15 at or slightly above our high single-digit target range",
+    "we expect FY '15 EPS growth will be somewhat below our mid-teens target range"
+   ]
+  },
+  {
+   "fy": 2015,
+   "published": "2014-06-30",
+   "source": "N76",
+   "doc": "Q4 FY14 call",
+   "words": [
+    "for the year, we expect reported Revenue to grow at a high single-digit rate, reflecting low double-digit currency-neutral growth",
+    "We expect Gross Margin for Q1 and the full year to expand by about 75 basis points"
+   ]
+  },
+  {
+   "fy": 2015,
+   "published": "2014-09-30",
+   "source": "N79",
+   "doc": "Q1 FY15 call",
+   "words": [
+    "For revenue, we now expect constant dollar growth for Q2 and full year in the low double digits",
+    "For the full year, we now expect gross margin expansion of about 125 basis points",
+    "we expect earnings per share to grow at a high-teens rate for Q2 and about 20% for the full year"
+   ],
+   "eps_growth": 20.0,
+   "eps_growth_note": "about 20% for the full year"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-12-22",
+   "source": "N81",
+   "doc": "Q2 FY15 call",
+   "words": [
+    "will net together to deliver full year results largely in line with the expectations we shared 90 days ago",
+    "For the full year, we expect constant dollar revenue growth in the low double digits, with reported revenue growth 2 to 3 points lower",
+    "For the full year, we now expect gross margin expansion of 100 to 125 basis points"
+   ]
   }
  ],
  "dividends": [
@@ -2075,6 +3359,25 @@
    "source": "N52",
    "quarterly": 0.36,
    "note": "$0.36 quarterly, declared in Q2 FY12, up from $0.31 (Q2 FY12 release)"
+  },
+  {
+   "published": "2012-11-16",
+   "source": "N61",
+   "quarterly": 0.21,
+   "basis": "2012-12-26",
+   "note": "$0.21 quarterly on the post-split basis ($0.42 a share before the split), declared in Q2 FY13, up 17 percent from $0.18 split-adjusted (8-K of 2012-11-16)"
+  },
+  {
+   "published": "2013-12-20",
+   "source": "N71",
+   "quarterly": 0.24,
+   "note": "$0.24 quarterly, declared in Q2 FY14, up from $0.21 (Q2 FY14 release)"
+  },
+  {
+   "published": "2014-12-19",
+   "source": "N80",
+   "quarterly": 0.28,
+   "note": "$0.28 quarterly, declared in Q2 FY15, up from $0.24 (Q2 FY15 release)"
   }
  ],
  "events": [],
@@ -2086,6 +3389,13 @@
    "effective": "2007-04-03",
    "ratio": 2,
    "note": "2-for-1, a 100 percent stock dividend payable April 2, 2007; split-adjusted trading from April 3, 2007"
+  },
+  {
+   "published": "2012-11-16",
+   "source": "N61",
+   "effective": "2012-12-26",
+   "ratio": 2,
+   "note": "2-for-1, a 100 percent stock dividend payable December 24, 2012; trading at the split-adjusted price from December 26, 2012"
   }
  ],
  "rule_t": {
