@@ -2245,6 +2245,155 @@ Judgement calls that could carry hindsight:
 - reading the Q1 FY13 guide against the 14-week Q1 FY12 as published;
 - DURABLE rather than CYCLICAL (the class label only), and CLOUD and STREAMING as outside Apple's scope.
 
+### AAPL 2016-2019: unit sales end, a guidance letter, tax reform, a 53-week year
+
+```bash
+python3 retro/build_aapl.py --weekly 2016-01-04 2019-12-31                  # 209 dates, 2016-01-08 .. 2019-12-31
+```
+
+Every 8-K, 8-K/A, 10-Q, 10-K and proxy filed on Apple's CIK from 2016-01-01 to 2019-12-31 was read directly (74 filings with
+the shelf registrations and note listings), with the third-party solicitations (PX14A6G) and the 10-Qs and 10-Ks searched for
+forward-looking statements. 655 strings were checked with `verbatim.py` against their own filings. 232 structured checks read
+each print's statements and each Q4 print's full-year figures back from the XBRL of the 10-Q or 10-K filed with it: 226 match,
+and the other six are dividends paid, which the XBRL tags without dividend equivalents (each 10-Q's own cash flow statement
+prints the release's figure). 141 more read the units and the product or category net sales back from each 10-Q's own table
+and the four quarters' units back to each 10-K's year; the four quarters' net sales and Mac net sales also sum to each 10-K's.
+Every source's date comes from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided before any 2016-2019 date
+was built or scored:
+
+- **Four vintages, ten years each.** The FY2016 10-K (accepted 2016-10-26 16:42 ET, dated 2016-10-27) gives FY2012-FY2016, the
+  FY2017 10-K (2017-11-03 08:01 ET, before the open, dated that day) FY2013-FY2017, the FY2018 10-K (2018-11-05 08:01 ET, dated
+  that day) FY2014-FY2018 and the FY2019 10-K (2019-10-30 18:12 ET, dated 2019-10-31) FY2015-FY2019. Each earlier year comes
+  from the latest 10-K that reports it. The history moves to FY2007-FY2016, FY2008-FY2017, FY2009-FY2018, then FY2010-FY2019.
+  - First-year diluted shares: FY2007's 889,292K (FY2011 10-K), FY2008's 902,139K (FY2012 10-K) and FY2009's 907,005K (FY2013
+    10-K), all before the split, and FY2010's 6,472,983K (FY2014 10-K).
+  - Every year is GAAP: Apple published no figure excluding a one-off. The FY2018 10-K gives the Tax Cuts and Jobs Act's effect
+    as a dollar amount ("increased the Company's provision for income taxes by $1.5 billion during 2018"), not as an EPS without
+    it, so FY18 stays at $11.91 (the FY2005 rule: no figure is derived from a published amount).
+- **The new revenue standard restates nothing.** Apple adopted it in Q1 FY19, full retrospective, but "did not restate total net
+  sales in the prior periods presented". It moved the amortization of Maps, Siri and free iCloud services from Products to
+  Services and recast the Q1 FY18 split (Mac $6,824M; $6,895M in the Q1 FY18 data sheet). No new vintage; each print's growth is
+  against its own release's year-ago column (the restated-base rule).
+- **Prints.** Every release came after the close, so each print is dated the next trading day. Q4 FY17, Q1 FY18 and Q4 FY18 came
+  on Thursdays: the print is dated Friday, no trading day follows in its week, and it counts on its own day (the Q4 FY12 rule).
+  The FY2017 10-K came out before the open on that Friday, so on 2017-11-03 it replaces the Q4 print's full-year figures, and
+  the FY2019 10-K was filed on the evening of the Q4 FY19 release, so both are dated 2019-10-31.
+- **Guides, one quarter at a time, as lists.** Each release gives the next quarter's revenue and gross-margin ranges, operating
+  expenses, other income/(expense) and a tax rate. Revenue is read against the year-ago quarter's own release: Q2 FY16 -13.8% to
+  -8.6%, Q3 -17.3% to -13.3%, Q4 -11.7% to -7.8%, Q1 FY17 +0.2% to +2.8%, Q2 +1.9% to +5.8%, Q3 +2.7% to +7.4%, Q4 +4.6% to
+  +11.0%, Q1 FY18 +7.2% to +11.0%, Q2 +13.4% to +17.2%, Q3 +13.4% to +17.8%, Q4 +14.1% to +17.9%, Q1 FY19 +0.8% to +5.3% (then
+  -4.9%, below), Q2 -10.0% to -3.5%, Q3 -1.4% to +2.3%, Q4 -3.0% to +1.7%, Q1 FY20 +1.4% to +6.2%.
+  - Still no fiscal-year guide, so the last full year's EPS stands: FY15's $9.22 to 2016-10-25, FY16's $8.31 to 2017-11-02,
+    FY17's $9.21 to 2018-11-01, FY18's $11.91 to 2019-10-30, FY19's $11.89 after.
+  - The tax-rate items ("approximately 15 percent", from 2018 "before discrete items") stay display only, as does the Q1 FY18
+    10-Q's rate "for the remainder of 2018" (a part of the year, the 2009 half-year rule).
+- **The letter of 2019-01-02.** An 8-K (item 2.02, accepted 16:30 ET, dated 2019-01-03) revised the Q1 FY19 guide after the
+  quarter had ended and before it was reported: revenue "approximately $84 billion" (from $89-93 billion), gross margin about
+  38%, operating expenses about $8.7 billion, other income about $550 million, tax rate about 16.5% before discrete items. New
+  numbers, not words, so it is a guide of its own and each field it states replaces the release's (the 8-K of 2013-09-23 restated
+  its ranges in words, which kept them): -4.9% on Q1 FY18's $88.293B from 2019-01-04 to 2019-01-25. Its share count
+  ("approximately 4.77 billion"), net cash and EPS words have no field.
+- **The 53-week year.** Fiscal 2017 had 53 weeks, a 14th in Q1 FY17. Growth is as published, and the week is noted only where a
+  filing public by that date states it (the LOW 53rd-week rule): the Q1 FY18 guide (the FY2017 10-K) and the Q1 FY18 print (its
+  10-Q, before the open on the print's day). The Q4 FY16 release, the FY2016 10-K and the Q1 FY17 release do not mention it; the
+  Q1 FY17 10-Q, the first that does, is dated the next trading day. Nothing is back-filled.
+- **One-time items stay in** (no figure excluding them was published): Q1 FY16 Services include $548 million received from Samsung
+  (the supplemental material gives Services "excluding" it); Q4 FY17 Services a favorable one-time adjustment of $640 million and
+  Q3 FY18 Services a one-time item of $236 million (each quarter's own data sheet); Q1 FY18 the tax act's $2.6 billion provisional
+  charge (the 10-Q). From Q1 FY16 a release may carry a supplemental exhibit (non-GAAP constant-currency growth, installed-base
+  purchases): display material, no input.
+- **No unit sales from Q1 FY19.** From that release Apple reports net sales by category only, with no data sheet.
+  - Mac units cannot be derived from what is published, and Mac net sales is a different measure (the ACN headcount and UNP GTM
+    rules). So the Mac unit signal keeps its name, thresholds and weight and, with no value, scores BASE (2/4), the engine's value
+    for a slot without information (the theme slot with no live theme). It shows "n/r".
+  - The text shows Mac and iPhone net sales growth from the category table instead (`mac_sales_pct`, `iphone_sales_pct`, display
+    only); catalyst (4) has no units, and the FY2019 vintage has no full-year Mac units.
+- **Dividends and the capital return program come from the Q2 releases** (no separate 8-K in these years): $.57 (2016-04-27),
+  $0.63 (2017-05-03), $0.73 (2018-05-02), $0.77 (2019-05-01), each from the first filing that states the rate. Catalyst (5) shows
+  the $250 billion and $300 billion programs (2016, 2017), then a new $100 billion repurchase authorization (2018) and an
+  additional $75 billion (2019). The programs' end dates are left out, as before.
+- **No theme.** CLOUD (on-premise enterprise IT), STREAMING (linear TV), ECOMMERCE (physical retail) and ENERGY_TRANSITION are
+  outside Apple's scope; the 10-Ks name iCloud, Apple Music and, in FY2019, Apple TV+ as Apple's own services. The watch list stays
+  empty, DURABLE, risk 2.
+- **The franchise text follows each 10-K.** From FY2016 "macOS" replaces "OS X", from FY2017 "aggressive price competition"
+  replaces "price cutting", and from FY2018 the "only authorized maker of hardware" sentence is gone: the 10-K's "minority market
+  share in the global smartphone, tablet and personal computer markets" takes its place. From the FY2016 10-K no store count is
+  given, so the text quotes the last one (463, FY2015 10-K) as such (the ACN headcount rule).
+- **Adds nothing:**
+  - the debt offerings and note listings (among them the euro notes moved from NYSE to Nasdaq, 2019-03-14) and the shelf
+    registrations;
+  - the vote, officer and director 8-Ks (a new general counsel, 2017-10-12; the head of retail, 2019-02-06; a director,
+    2019-09-13), the bylaw amendments (proxy access, 2016-12-15) and the e-book derivative settlement notice (8-K and 8-K/A of
+    2018-05-07);
+  - the proxies, whose executive cash-incentive goals are for years already finished, and the shareholder solicitations (a
+    greenhouse-gas report, board diversity, proxy access);
+  - the 10-Qs' and 10-Ks' gross-margin sentences (they repeat the release ranges) and their capital-expenditure, lease,
+    deferred-tax and manufacturing-commitment estimates (no field);
+  - the EU State Aid decision (2016-08-30) and the escrow funded from 2018 (a contingency on the balance sheet, no field);
+  - the Q4 FY18 release's Services growth excluding the $640 million (the signals use total net sales).
+- **An engine revision for the missing units, text only for earlier dates.** `score_signal` scores a value of `None` as BASE, and
+  every line that prints Mac, iPhone or iPad units has a branch for a print without them (dashboard, bear anatomy, conservative
+  case, key trigger, volatility text, catalysts (1) and (4), summary). The builder adds the two category growth rates to `LATEST`
+  only where a print has them. All 418 reports of 2008-2015 rebuild byte-identical.
+- **Text-only change to 2008-2015:** besides the engine text, four source descriptions (the FY2011-FY2014 10-Ks) now also cite the
+  FY2007-FY2010 share counts the new vintages use. 219 analyses change only in that text.
+- **Anachronism list:** Apple product and software names from 2016 to 2020 join it (from macOS and iOS 10 to the iPhone 12 and the
+  M1 chip), and "Tax Cuts and Jobs Act" (2017-11-02). Of the 3,364 existing models of all tickers only that name appears, in UNP
+  models from 2018-01-26 and LOW models from 2018-03-01, after it.
+- **ISO weeks:** the batch runs from 2016-W01 to 2020-W01; 2019-12-31 covers 2020-W01, so a 2020 batch starts on 2020-01-06.
+
+Controls: altering one value of each new print, Q4 full-year figure, guide, vintage, dividend and program statement changes no
+date before its publication (49 of 49) and changes the first weekly date on or after it (46 of 49). The other three are Q4
+full-year figures that the 10-K replaces by then: Q4 FY16's 10-K came out on the next trading day, the first weekly date (built by
+date on the print's own day, the figure changes that model), and the FY2017 and FY2019 10-Ks are dated the same day as their Q4
+print, so those figures never show. The letter of 2019-01-02 first shows on 2019-01-04, a guide for the next fiscal year on the
+first date with that year current. The 418 dates of 2008-2015 rebuild with byte-identical reports, and the 2008 dates of ACN, UNP
+and LOW rebuild unchanged. A scan of all 627 AAPL models for 79 values of the new prints, guides and vintages finds none before
+its publication, and the firewall at 2020-01-01, 2018-11-03 and 2017-02-01 changes none of the 627, 566 and 474 earlier models.
+
+Seen in the build (method behaviour, not tuned):
+- **AAPL reads RICH for the first time.** CHEAP on 56 of the 209 dates, FAIR on 25, RICH on 128 (2008-2015 had no RICH date). The
+  tier reads BUY 85, ACCUMULATE 43, WATCHLIST 38, AVOID 43.
+  - 2016: CHEAP on 48 dates, FAIR on 4 (2016-10-14, 10-21, 12-23, 12-30), BUY on all. On FY15's $9.22 the stock traded at
+    9.8-12.8x (the 5th-46th percentile of its own range).
+  - 2017: FAIR from 2017-01-06 to 2017-03-24 (12 dates), RICH from 2017-03-31 (40), as the price rose from $118 to $175 at
+    14.2-19.7x (the 66th-93rd percentile).
+  - 2018: RICH on 43 dates, AVOID on 29. From the Q4 FY17 print to 2018-11-01 the anchor is FY17's $9.21 while the FY18 quarters
+    run ahead (Q1 FY18 $3.89 against $3.36): 17.0-24.7x, the 85th-100th percentile. FAIR on 2018-02-02, 02-09 and from 2018-11-16
+    to 12-07; CHEAP from 2018-12-14 to 12-28 at 12.7-13.9x FY18's $11.91.
+  - 2019: CHEAP on the 5 dates from 2019-01-04 to 2019-01-31 (12.4-14.0x), FAIR on 2019-02-08, 02-15 and 05-31, RICH on 45 as the
+    price rose from $148 to $294; at the 100th percentile of its own range from 2019-10-04.
+- **BASE follows the quarter guides plus the buyback:** -10.5%, -14.6% and -9.1%/yr on the Q2-Q4 FY16 guides; +2.9% (Q1 FY17),
+  +5.2%, +6.4% and +9.2%; +11.2% (Q1 FY18), +17.4%, +17.7% and +18.1%; +5.4% (Q1 FY19; +5.7% from the FY2018 vintage), -2.2% on
+  the letter, then -4.1%, +3.1% and +2.0%; +7.5% on the Q1 FY20 guide. The decade's buyback rises from 0.65%/yr (FY06-FY15) to
+  1.38%, 2.07%, 2.69% and 3.75%/yr (FY10-FY19).
+- **BULL, XBULL and BEAR move with the window.** BULL is the decade EPS CAGR: +45.1%/yr (FY06-FY15), then +34.9% (FY07-FY16),
+  +28.4% (FY08-FY17), +27.9% (FY09-FY18) and +20.9% (FY10-FY19). XBULL is FY09-FY11's +74.5%/yr, then FY10-FY12's +70.9% from the
+  FY2019 vintage. BEAR applies FY13's -10.0% twice throughout.
+- **The price passes the BULL case in late 2019.** Ratio B reaches 33.6x on 2018-08-31 and 657x on 2019-11-15, and is `inf` on
+  the 6 dates from 2019-11-29. No date sits below the EPP floor (9-10x) or the BEAR price; the closest is 2016-05-06, 0.6% above
+  the floor.
+- **The proxy composite sits at 2.00 on most dates:** against the FY1998-FY2007 thresholds every signal reads BASE. It is 2.50 on
+  the three January 2016 dates (Q4 FY15's +189bp gross margin) and 2.30 from the Q3 FY18 print to the Q1 FY19 print (net sales
+  and net sales other than Macs at BULL). The unreported Mac slot changes none of it.
+- **Display quirks:** a negative BASE growth prints as "EPS +-4.1%/yr" (as in 2009); Q3 FY19's net sales other than Macs prints as
+  -0.0% (a 0.04% decline, kept with its sign).
+
+How far each call moves the classes (the affected dates rebuilt with one encoding changed; no outcome consulted):
+- re-weighting the other five signals instead of scoring the unreported Mac slot BASE would change none of the 49 classes or tiers
+  from 2019-01-31 (every other signal also reads BASE);
+- carrying Q4 FY18's -1.6% Mac unit growth instead would change none (it also scores BASE);
+- not treating the letter of 2019-01-02 as a guide (the $89-93 billion range standing to the Q1 FY19 print) would change none of
+  the 4 dates;
+- reading the Q1 FY18 guide against Q1 FY17 scaled to 13 weeks (a figure derived from others) would change none of the 13 dates.
+
+Judgement calls that could carry hindsight:
+- scoring a measure the company stopped publishing at BASE, with no substitute and no re-weighting (no class moves);
+- treating the letter as a guide (no class moves);
+- keeping GAAP through the tax act and the one-time Services items;
+- noting the 14th week only from the first filing that states it, and leaving growth as published (no class moves);
+- DURABLE rather than CYCLICAL (the class label only), and CLOUD, STREAMING and ECOMMERCE as outside Apple's scope.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -2294,9 +2443,9 @@ What the gates enforce:
   theme's market-pricing date (2017-06-16, a grocers' sell-off): no dated evidence shows the market pricing it for
   Lowe's ("LOW 2017-2018", "LOW 2019-2020", "LOW 2021-2023", "LOW 2024-2026").
   AAPL in 2008 carries none: no theme in the registry is live for a personal-computer and consumer-electronics maker
-  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2015:
-  CLOUD's scope is on-premise enterprise IT, and Apple's FY2012-FY2015 10-Ks name cloud and streaming only as its own services
-  ("AAPL 2012-2015").
+  (CLOUD from 2012-10-30; OFFSHORE is scoped to IT services), so its watch list is empty ("AAPL"). It stays empty through 2019:
+  CLOUD's scope is on-premise enterprise IT, STREAMING's linear TV and ECOMMERCE's physical retail, and Apple's FY2012-FY2019
+  10-Ks name cloud and streaming only as its own services ("AAPL 2012-2015", "AAPL 2016-2019").
 
 ## Workflow
 

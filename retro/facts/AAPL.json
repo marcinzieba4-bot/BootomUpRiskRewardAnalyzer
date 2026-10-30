@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for AAPL retrospectives (retro/build_aapl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Apple earnings release of the period came after the close. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, and events published since that vintage. Apple's fiscal year is the 52 or 53-week period that ends on the last Saturday of September. Values are as reported (GAAP), per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Apple guides one quarter at a time: each release gives the next quarter's revenue (a dollar level) and diluted EPS, read as growth against the same quarter a year earlier (prior_sales_b, from that quarter's own release); no release or filing of the period gives a full-year revenue, EPS or operating-margin guide. A 10-Q's or 10-K's gross-margin expectation (gm_pct for a quarter, gm_guide_pct for a fiscal year) is shown in the guide line and feeds no input. A print's margins and growth rates are derived from the published income statement and data sheet (the raw figures are in its notes); non_mac_pct is the growth of net sales less Mac (CPU) net sales. rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing. A filing that re-presents a 10-K is a vintage of its own: the FY2009 10-K/A of 2010-01-26 revises FY2007-FY2009 for the accounting principles Apple adopted retrospectively in Q1 FY10, and amends Items 6-8 only, so its business wording is the FY2009 10-K's. A guide's prior_sales_b is the same quarter a year earlier on the guide's own accounting basis, from the latest filing published by the guide's date that reports it (the revised FY2009 quarters for the guides of fiscal 2010). From FY2009 a print's lt_securities_b holds the long-term marketable securities (display only); from Q1 FY10 a print has no iPhone and Apple TV deferral (deferred_iphone_b null); ipad_units_k from Q3 FY10. From the Q1 FY13 release a guide is a bulleted list: revenue and gross margin ranges, operating expenses (opex_usd_b), other income/(expense) (oie_usd_b) and a tax rate (tax_pct), all for the next quarter and display only; no EPS guide. 'dividends' holds each declared quarterly rate from the first filing that states it; 'capital_return' holds each statement of the capital return program (shown in catalyst (5)). From Q1 FY15 the data sheet gives no iPod units (ipod_units_k null). The 7-for-1 split effective 2014-06-09 restates per-share facts published before it ('splits').",
+ "_doc": "Point-in-time fact sheet for AAPL retrospectives (retro/build_aapl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Apple earnings release of the period came after the close. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), each field of the latest guide for the current fiscal year published by AS_OF, and events published since that vintage. Apple's fiscal year is the 52 or 53-week period that ends on the last Saturday of September. Values are as reported (GAAP), per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. Apple guides one quarter at a time: each release gives the next quarter's revenue (a dollar level) and diluted EPS, read as growth against the same quarter a year earlier (prior_sales_b, from that quarter's own release); no release or filing of the period gives a full-year revenue, EPS or operating-margin guide. A 10-Q's or 10-K's gross-margin expectation (gm_pct for a quarter, gm_guide_pct for a fiscal year) is shown in the guide line and feeds no input. A print's margins and growth rates are derived from the published income statement and data sheet (the raw figures are in its notes); non_mac_pct is the growth of net sales less Mac (CPU) net sales. rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing. A filing that re-presents a 10-K is a vintage of its own: the FY2009 10-K/A of 2010-01-26 revises FY2007-FY2009 for the accounting principles Apple adopted retrospectively in Q1 FY10, and amends Items 6-8 only, so its business wording is the FY2009 10-K's. A guide's prior_sales_b is the same quarter a year earlier on the guide's own accounting basis, from the latest filing published by the guide's date that reports it (the revised FY2009 quarters for the guides of fiscal 2010). From FY2009 a print's lt_securities_b holds the long-term marketable securities (display only); from Q1 FY10 a print has no iPhone and Apple TV deferral (deferred_iphone_b null); ipad_units_k from Q3 FY10. From the Q1 FY13 release a guide is a bulleted list: revenue and gross margin ranges, operating expenses (opex_usd_b), other income/(expense) (oie_usd_b) and a tax rate (tax_pct), all for the next quarter and display only; no EPS guide. 'dividends' holds each declared quarterly rate from the first filing that states it; 'capital_return' holds each statement of the capital return program (shown in catalyst (5)). From Q1 FY15 the data sheet gives no iPod units (ipod_units_k null). The 7-for-1 split effective 2014-06-09 restates per-share facts published before it ('splits'). From Q1 FY16 a release may carry a supplemental exhibit (non-GAAP constant-currency growth, installed-base purchases): display material, no input. Fiscal 2017 had 53 weeks (a 14th week in Q1 FY17), first stated in the Q1 FY17 10-Q; a week is noted only where a filing public by that date states it. From Q1 FY19 Apple reports net sales by category only: no unit sales and no data sheet (mac_units_k, iphone_units_k and ipad_units_k null; mac_sales_pct and iphone_sales_pct, from the release's category table against its own year-ago column, display only), and the Mac unit signal, with no published value, scores BASE. A filing that revises a quarter's guide with new numbers (the letter of 2019-01-02) is a guide of its own, each field it states replacing the earlier one. From the FY2016 10-K no store count is given (463 in the FY2015 10-K).",
  "ticker": "AAPL",
  "sources": {
   "A1": {
@@ -294,7 +294,7 @@
    "filed": "2011-10-26 16:35 ET (after the close)",
    "title": "Apple Inc. FY2011 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511282113/d220209d10k.htm",
-   "supports": "selected financial data FY2007-FY2011 (net sales, diluted EPS, diluted shares 936,645K in FY11); income statement FY2009-FY2011; net sales and unit sales by product FY2009-FY2011; cash flow; no dividends in 2011 or 2010; no debt outstanding; 357 retail stores; competition and Mac OS X wording"
+   "supports": "selected financial data FY2007-FY2011 (net sales, diluted EPS, diluted shares 936,645K in FY11 and 889,292K in FY07); income statement FY2009-FY2011; net sales and unit sales by product FY2009-FY2011; cash flow; no dividends in 2011 or 2010; no debt outstanding; 357 retail stores; competition and Mac OS X wording"
   },
   "A43": {
    "published": "2012-01-25",
@@ -336,7 +336,7 @@
    "filed": "2012-10-31 17:07 ET (after the close)",
    "title": "Apple Inc. FY2012 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312512444068/d411355d10k.htm",
-   "supports": "selected financial data FY2008-FY2012 (net sales, diluted EPS, diluted shares 945,355K in FY12, a $2.65 dividend declared in Q4 FY12, no long-term debt); income statement FY2010-FY2012; net sales and unit sales by product FY2010-FY2012; cash flow; 390 retail stores; competition and OS X wording; gross margin expectation 'about 36% during the first quarter of 2013'"
+   "supports": "selected financial data FY2008-FY2012 (net sales, diluted EPS, diluted shares 945,355K in FY12 and 902,139K in FY08, a $2.65 dividend declared in Q4 FY12, no long-term debt); income statement FY2010-FY2012; net sales and unit sales by product FY2010-FY2012; cash flow; 390 retail stores; competition and OS X wording; gross margin expectation 'about 36% during the first quarter of 2013'"
   },
   "A49": {
    "published": "2013-01-24",
@@ -385,7 +385,7 @@
    "filed": "2013-10-29 20:38 ET (after the close)",
    "title": "Apple Inc. FY2013 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312513416534/d590790d10k.htm",
-   "supports": "selected financial data FY2009-FY2013 (net sales, diluted EPS, diluted shares 931,662K in FY13, long-term debt $16,960M); income statement FY2011-FY2013; net sales and unit sales by product FY2011-FY2013; cash flow; 416 retail stores; competition and OS X wording; quarterly dividends of $3.05 expected"
+   "supports": "selected financial data FY2009-FY2013 (net sales, diluted EPS, diluted shares 931,662K in FY13 and 907,005K in FY09, long-term debt $16,960M); income statement FY2011-FY2013; net sales and unit sales by product FY2011-FY2013; cash flow; 416 retail stores; competition and OS X wording; quarterly dividends of $3.05 expected"
   },
   "A56": {
    "published": "2014-01-28",
@@ -427,7 +427,7 @@
    "filed": "2014-10-27 17:11 ET (after the close)",
    "title": "Apple Inc. FY2014 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312514383437/d783162d10k.htm",
-   "supports": "selected financial data FY2010-FY2014 restated for the 7-for-1 split (net sales, diluted EPS, diluted shares 6,122,663K in FY14, commercial paper $6,308M, long-term debt $28,987M); income statement FY2012-FY2014; net sales and unit sales by product FY2012-FY2014; cash flow; 437 retail stores; competition and OS X wording; quarterly dividends of $0.47 expected"
+   "supports": "selected financial data FY2010-FY2014 restated for the 7-for-1 split (net sales, diluted EPS, diluted shares 6,122,663K in FY14 and 6,472,983K in FY10, commercial paper $6,308M, long-term debt $28,987M); income statement FY2012-FY2014; net sales and unit sales by product FY2012-FY2014; cash flow; 437 retail stores; competition and OS X wording; quarterly dividends of $0.47 expected"
   },
   "A62": {
    "published": "2015-01-28",
@@ -470,6 +470,160 @@
    "title": "Apple Inc. FY2015 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312515356351/d17062d10k.htm",
    "supports": "selected financial data FY2011-FY2015 (net sales, diluted EPS, diluted shares 5,793,069K in FY15, commercial paper $8,499M, total term debt $55,963M); income statement FY2013-FY2015; net sales and unit sales by product FY2013-FY2015; cash flow; 463 retail stores; competition and OS X wording; quarterly dividends of $0.52 expected"
+  },
+  "A68": {
+   "published": "2016-01-27",
+   "filed": "2016-01-26 16:31 ET (after the close)",
+   "title": "Apple Q1 FY16 results (8-K ex.99.1 to ex.99.3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312516438421/d22806dex991.htm",
+   "supports": "Q1 FY16 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Services include $548 million received from a patent infringement lawsuit (supplemental material, ex.99.3); Q2 FY16 guidance: revenue between $50 billion and $53 billion, gross margin between 39 percent and 39.5 percent, operating expenses between $6 billion and $6.1 billion, other income/(expense) of $325 million, tax rate of 25.5 percent; dividend of $.52 declared; webcast at 2:00 p.m. PST"
+  },
+  "A69": {
+   "published": "2016-04-27",
+   "filed": "2016-04-26 16:31 ET (after the close)",
+   "title": "Apple Q2 FY16 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312516556520/d325078dex991.htm",
+   "supports": "Q2 FY16 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q3 FY16 guidance: revenue between $41 billion and $43 billion, gross margin between 37.5 percent and 38 percent, operating expenses between $6 billion and $6.1 billion, other income/(expense) of $300 million, tax rate of 25.5 percent; capital return program raised to $250 billion; repurchase authorization raised to $175 billion; a 10 percent dividend increase, $.57 per share declared; webcast at 2:00 p.m. PDT"
+  },
+  "A70": {
+   "published": "2016-07-27",
+   "filed": "2016-07-26 16:30 ET (after the close)",
+   "title": "Apple Q3 FY16 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828016017762/a8-kexhibit991q320166252016.htm",
+   "supports": "Q3 FY16 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q4 FY16 guidance: revenue between $45.5 billion and $47.5 billion, gross margin between 37.5 percent and 38 percent, operating expenses between $6.05 billion and $6.15 billion, other income/(expense) of $350 million, tax rate of 25.5 percent; dividend of $.57 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A71": {
+   "published": "2016-10-26",
+   "filed": "2016-10-25 16:32 ET (after the close)",
+   "title": "Apple Q4 FY16 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828016020258/a8-kexhibit991q420169242016.htm",
+   "supports": "Q4 FY16 income statement, balance sheet, cash flow; Q4 FY16 and FY16 statements; iPhone, iPad and Mac units and product net sales (data sheet); Q1 FY17 guidance: revenue between $76 billion and $78 billion, gross margin between 38 percent and 38.5 percent, operating expenses between $6.9 billion and $7 billion, other income/(expense) of $400 million, tax rate of 26 percent; dividend of $0.57 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A72": {
+   "published": "2016-10-27",
+   "filed": "2016-10-26 16:42 ET (after the close)",
+   "title": "Apple Inc. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828016020309/a201610-k9242016.htm",
+   "supports": "selected financial data FY2012-FY2016 (net sales, diluted EPS, diluted shares 5,500,281K in FY16, commercial paper $8,105M, total term debt $78,927M); income statement FY2014-FY2016; net sales and unit sales by product FY2014-FY2016; cash flow; competition and macOS wording, no store count; quarterly dividends of $0.57 expected"
+  },
+  "A73": {
+   "published": "2017-02-01",
+   "filed": "2017-01-31 16:31 ET (after the close)",
+   "title": "Apple Q1 FY17 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828017000663/a8-kexhibit991q12017123120.htm",
+   "supports": "Q1 FY17 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q2 FY17 guidance: revenue between $51.5 billion and $53.5 billion, gross margin between 38 percent and 39 percent, operating expenses between $6.5 billion and $6.6 billion, other income/(expense) of $400 million, tax rate of 26 percent; dividend of $0.57 declared; webcast at 2:00 p.m. PST"
+  },
+  "A74": {
+   "published": "2017-05-03",
+   "filed": "2017-05-02 16:31 ET (after the close)",
+   "title": "Apple Q2 FY17 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828017004663/a8-kexhibit991q22017412017.htm",
+   "supports": "Q2 FY17 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q3 FY17 guidance: revenue between $43.5 billion and $45.5 billion, gross margin between 37.5 percent and 38.5 percent, operating expenses between $6.6 billion and $6.7 billion, other income/(expense) of $450 million, tax rate of 25.5 percent; capital return program raised to $300 billion; repurchase authorization raised to $210 billion; a 10.5% dividend increase, $0.63 per share declared; webcast at 2:00 p.m. PDT"
+  },
+  "A75": {
+   "published": "2017-08-02",
+   "filed": "2017-08-01 16:30 ET (after the close)",
+   "title": "Apple Q3 FY17 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019317000006/a8-kexhibit991q32017712017.htm",
+   "supports": "Q3 FY17 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q4 FY17 guidance: revenue between $49 billion and $52 billion, gross margin between 37.5 percent and 38 percent, operating expenses between $6.7 billion and $6.8 billion, other income/(expense) of $500 million, tax rate of 25.5 percent; dividend of $0.63 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A76": {
+   "published": "2017-11-03",
+   "filed": "2017-11-02 16:30 ET (after the close)",
+   "title": "Apple Q4 FY17 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019317000067/a8-kexhibit991q420179302017.htm",
+   "supports": "Q4 FY17 income statement, balance sheet, cash flow; Q4 FY17 and FY17 statements; iPhone, iPad and Mac units and product net sales (data sheet); Services include a favorable one-time adjustment of $640 million (data sheet); Q1 FY18 guidance: revenue between $84 billion and $87 billion, gross margin between 38 percent and 38.5 percent, operating expenses between $7.65 billion and $7.75 billion, other income/(expense) of $600 million, tax rate of 25.5 percent; dividend of $0.63 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A77": {
+   "published": "2017-11-03",
+   "filed": "2017-11-03 08:01 ET (before the open)",
+   "title": "Apple Inc. FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019317000070/a10-k20179302017.htm",
+   "supports": "selected financial data FY2013-FY2017 (net sales, diluted EPS, diluted shares 5,251,692K in FY17, commercial paper $11,977M, total term debt $103,703M); income statement FY2015-FY2017; net sales and unit sales by product FY2015-FY2017; cash flow; fiscal 2017 included 53 weeks, a 14th week in its first quarter; competition and macOS wording, no store count; quarterly dividends of $0.63 expected"
+  },
+  "A78": {
+   "published": "2018-02-02",
+   "filed": "2018-02-01 16:30 ET (after the close)",
+   "title": "Apple Q1 FY18 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000005/a8-kexhibit991q12018123020.htm",
+   "supports": "Q1 FY18 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q2 FY18 guidance: revenue between $60 billion and $62 billion, gross margin between 38 percent and 38.5 percent, operating expenses between $7.6 billion and $7.7 billion, other income/(expense) of $300 million, tax rate of approximately 15 percent; dividend of $0.63 declared; webcast at 2:00 p.m. PST"
+  },
+  "A79": {
+   "published": "2018-02-02",
+   "filed": "2018-02-02 08:01 ET (before the open)",
+   "title": "Apple Inc. Q1 FY18 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000007/a10-qq1201812302017.htm",
+   "supports": "the first quarter of 2018 spanned 13 weeks against the 14 of the first quarter of 2017; the Tax Cuts and Jobs Act: a provision for income taxes of $7.0 billion, of which $2.6 billion provisional ($1.8 billion remeasurement of deferred tax balances, approximately $800 million net deemed repatriation tax)"
+  },
+  "A80": {
+   "published": "2018-05-02",
+   "filed": "2018-05-01 16:30 ET (after the close)",
+   "title": "Apple Q2 FY18 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000067/a8-kexhibit991q220183312018.htm",
+   "supports": "Q2 FY18 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Q3 FY18 guidance: revenue between $51.5 billion and $53.5 billion, gross margin between 38 percent and 38.5 percent, operating expenses between $7.7 billion and $7.8 billion, other income/(expense) of $400 million, tax rate of approximately 14.5 percent; a new $100 billion share repurchase authorization; a 16 percent dividend increase, $0.73 per share declared; webcast at 2:00 p.m. PDT"
+  },
+  "A81": {
+   "published": "2018-08-01",
+   "filed": "2018-07-31 16:30 ET (after the close)",
+   "title": "Apple Q3 FY18 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000098/a8-kexhibit991q320186302018.htm",
+   "supports": "Q3 FY18 income statement, balance sheet, cash flow; iPhone, iPad and Mac units and product net sales (data sheet); Services include a favorable one-time item of $236 million (data sheet); Q4 FY18 guidance: revenue between $60 billion and $62 billion, gross margin between 38 percent and 38.5 percent, operating expenses between $7.95 billion and $8.05 billion, other income/(expense) of $300 million, tax rate of approximately 15 percent before discrete items; dividend of $0.73 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A82": {
+   "published": "2018-11-02",
+   "filed": "2018-11-01 16:30 ET (after the close)",
+   "title": "Apple Q4 FY18 results (8-K ex.99.1 and ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000142/a8-kexhibit991q420189292018.htm",
+   "supports": "Q4 FY18 income statement, balance sheet, cash flow; Q4 FY18 and FY18 statements; iPhone, iPad and Mac units and product net sales (data sheet); Q1 FY19 guidance: revenue between $89 billion and $93 billion, gross margin between 38 percent and 38.5 percent, operating expenses between $8.7 billion and $8.8 billion, other income/(expense) of $300 million, tax rate of approximately 16.5 percent before discrete items; dividend of $0.73 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A83": {
+   "published": "2018-11-05",
+   "filed": "2018-11-05 08:01 ET (before the open)",
+   "title": "Apple Inc. FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000145/a10-k20189292018.htm",
+   "supports": "selected financial data FY2014-FY2018 (net sales, diluted EPS, diluted shares 5,000,109K in FY18, commercial paper $11,964M, total term debt $102,519M); income statement FY2016-FY2018; net sales and unit sales by product FY2016-FY2018; cash flow; the Act increased the provision for income taxes by $1.5 billion in 2018; competition and minority-market-share wording, no store count; quarterly dividend raised to $0.73"
+  },
+  "A84": {
+   "published": "2019-01-03",
+   "filed": "2019-01-02 16:30 ET (after the close)",
+   "title": "Apple 8-K of 2019-01-02 (item 2.02, ex.99.1: letter to investors)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000002/a8-kexhibit991122019.htm",
+   "supports": "Q1 FY19 guidance revised: revenue of approximately $84 billion, gross margin of approximately 38 percent, operating expenses of approximately $8.7 billion, other income/(expense) of approximately $550 million, tax rate of approximately 16.5 percent before discrete items; diluted shares approximately 4.77 billion"
+  },
+  "A85": {
+   "published": "2019-01-30",
+   "filed": "2019-01-29 16:30 ET (after the close)",
+   "title": "Apple Q1 FY19 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000007/a8-kexhibit991q12019122920.htm",
+   "supports": "Q1 FY19 income statement, balance sheet, cash flow; net sales by category (no unit sales, no data sheet), the year-ago column recast; Q2 FY19 guidance: revenue between $55 billion and $59 billion, gross margin between 37 percent and 38 percent, operating expenses between $8.5 billion and $8.6 billion, other income/(expense) of $300 million, tax rate of approximately 17 percent; dividend of $0.73 declared; webcast at 2:00 p.m. PST"
+  },
+  "A86": {
+   "published": "2019-05-01",
+   "filed": "2019-04-30 16:30 ET (after the close)",
+   "title": "Apple Q2 FY19 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000063/a8-kexhibit991q220193302019.htm",
+   "supports": "Q2 FY19 income statement, balance sheet, cash flow; net sales by category (no unit sales, no data sheet); Q3 FY19 guidance: revenue between $52.5 billion and $54.5 billion, gross margin between 37 percent and 38 percent, operating expenses between $8.7 billion and $8.8 billion, other income/(expense) of $250 million, tax rate of approximately 16.5 percent; an additional $75 billion for share repurchases; a 5 percent dividend increase, $0.77 per share declared; webcast at 2:00 p.m. PDT"
+  },
+  "A87": {
+   "published": "2019-07-31",
+   "filed": "2019-07-30 16:30 ET (after the close)",
+   "title": "Apple Q3 FY19 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000073/a8-kexhibit991q320196292019.htm",
+   "supports": "Q3 FY19 income statement, balance sheet, cash flow; net sales by category (no unit sales, no data sheet); Q4 FY19 guidance: revenue between $61 billion and $64 billion, gross margin between 37.5 percent and 38.5 percent, operating expenses between $8.7 billion and $8.8 billion, other income/(expense) of $200 million, tax rate of approximately 16.5 percent; dividend of $0.77 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A88": {
+   "published": "2019-10-31",
+   "filed": "2019-10-30 16:30 ET (after the close)",
+   "title": "Apple Q4 FY19 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000117/a8-kexhibit991q4201992.htm",
+   "supports": "Q4 FY19 income statement, balance sheet, cash flow; Q4 FY19 and FY19 statements; net sales by category (no unit sales, no data sheet); Q1 FY20 guidance: revenue between $85.5 billion and $89.5 billion, gross margin between 37.5 percent and 38.5 percent, operating expenses between $9.6 billion and $9.8 billion, other income/(expense) of $200 million, tax rate of approximately 16.5 percent; dividend of $0.77 declared; webcast at 2:00 p.m. PDT"
+  },
+  "A89": {
+   "published": "2019-10-31",
+   "filed": "2019-10-30 18:12 ET (after the close)",
+   "title": "Apple Inc. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000119/a10-k20199282019.htm",
+   "supports": "selected financial data FY2015-FY2019 (total net sales, diluted EPS, diluted shares 4,648,913K in FY19, commercial paper $5,980M, total term debt $102,067M); income statement FY2017-FY2019; net sales by category FY2017-FY2019 (recast; no unit sales); cash flow; competition and minority-market-share wording, no store count; quarterly dividend raised to $0.77"
   }
  },
  "history_vintages": [
@@ -1808,6 +1962,551 @@
    "shares_published": {
     "2006": "2010-10-28"
    }
+  },
+  {
+   "published": "2016-10-27",
+   "sources": [
+    "A72",
+    "A67",
+    "A61",
+    "A55",
+    "A48",
+    "A42",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A70"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY16",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications and related services', and is 'the only authorized maker of hardware using macOS, which has a minority market share in the personal computer market' (its own FY2016 10-K, which gives no store count: 463 in the FY2015 10-K); its products and services 'compete in highly competitive global markets characterized by aggressive price cutting and resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2007": "2007-09-29",
+    "2008": "2008-09-27",
+    "2009": "2009-09-26",
+    "2010": "2010-09-25",
+    "2011": "2011-09-24",
+    "2012": "2012-09-29",
+    "2013": "2013-09-28",
+    "2014": "2014-09-27",
+    "2015": "2015-09-26",
+    "2016": "2016-09-24"
+   },
+   "eps_gaap": {
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31
+   },
+   "eps_normalized": {
+    "2007": 3.93,
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY12-FY16 from the FY2016 10-K, FY11 from the FY2015 10-K and FY10 from the FY2014 10-K, all on the 7-for-1 split basis; FY09 from the FY2013 10-K, FY08 from the FY2012 10-K, FY07 from the FY2011 10-K; FY07-FY09 as revised in the FY2009 10-K/A for the accounting principles adopted retrospectively in Q1 FY10 (iPhone and Apple TV revenue recognized at sale)); no company-published figure excluding a one-off",
+   "revenue_usd_b": {
+    "2007": 24.578,
+    "2008": 37.491,
+    "2009": 42.905,
+    "2010": 65.225,
+    "2011": 108.249,
+    "2012": 156.508,
+    "2013": 170.91,
+    "2014": 182.795,
+    "2015": 233.715,
+    "2016": 215.639
+   },
+   "diluted_shares_m": {
+    "2007": 889.292,
+    "2016": 5500.281
+   },
+   "pe_window_start": null,
+   "prev_fy_op_margin": 27.84,
+   "prev_fy_op_margin_note": "FY16 operating income $60,024M / net sales $215,639M (FY2016 10-K)",
+   "prev_fy_gross_margin": 39.08,
+   "prev_fy_sales_growth": -7.7,
+   "prev_fy_mac_units_k": 18484,
+   "prev_fy_mac_units_pct": -10.2,
+   "other_income_b": 1.348,
+   "other_income_note": "FY16 total other income/(expense), net (FY2016 10-K)",
+   "tax_rate": 0.2556,
+   "tax_note": "FY16 effective rate: provision $15,685M / pre-tax income $61,372M (FY2016 10-K); no fiscal-year tax-rate guide",
+   "fcf_b": 53.09,
+   "fcf_label": "FY16",
+   "prev_q_mac_units_pct": -11.3,
+   "prev_q_label": "Q3 FY16",
+   "prev_q_source": "A70",
+   "dividend_annual": 2.28,
+   "dividend_note": "$0.57 a quarter: 'expects to pay quarterly dividends of $0.57 per common share each quarter, subject to declaration by the Board of Directors' (FY2016 10-K)",
+   "cash_return_text": "$12.15B of dividends and $29.72B of repurchases in FY16, $78.93B of term debt and $8.11B of commercial paper (FY2016 10-K)",
+   "business_line": "iPhone, iPad, Mac, iPod, Apple Watch, Apple TV and Internet Services; no store count since FY15 (463)",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone",
+     136.7,
+     -11.8
+    ],
+    [
+     "Services",
+     24.348,
+     22.3
+    ],
+    [
+     "Mac",
+     22.831,
+     -10.4
+    ],
+    [
+     "iPad",
+     20.628,
+     -11.2
+    ],
+    [
+     "Other Products",
+     11.132,
+     10.6
+    ]
+   ],
+   "groups_basis": "FY16 net sales by product (FY2016 10-K)",
+   "eps_published": {
+    "2007": "2011-10-27",
+    "2008": "2012-11-01",
+    "2009": "2013-10-30",
+    "2010": "2014-10-28",
+    "2011": "2015-10-29"
+   },
+   "shares_published": {
+    "2007": "2011-10-27"
+   }
+  },
+  {
+   "published": "2017-11-03",
+   "sources": [
+    "A77",
+    "A72",
+    "A67",
+    "A61",
+    "A55",
+    "A48",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A75"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY17",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications and related services', and is 'the only authorized maker of hardware using macOS, which has a minority market share in the personal computer market' (its own FY2017 10-K, which gives no store count: 463 in the FY2015 10-K); its products and services 'compete in highly competitive global markets characterized by aggressive price competition and resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2008": "2008-09-27",
+    "2009": "2009-09-26",
+    "2010": "2010-09-25",
+    "2011": "2011-09-24",
+    "2012": "2012-09-29",
+    "2013": "2013-09-28",
+    "2014": "2014-09-27",
+    "2015": "2015-09-26",
+    "2016": "2016-09-24",
+    "2017": "2017-09-30"
+   },
+   "eps_gaap": {
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31,
+    "2017": 9.21
+   },
+   "eps_normalized": {
+    "2008": 6.78,
+    "2009": 9.08,
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31,
+    "2017": 9.21
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY13-FY17 from the FY2017 10-K, FY12 from the FY2016 10-K, FY11 from the FY2015 10-K and FY10 from the FY2014 10-K, all on the 7-for-1 split basis; FY09 from the FY2013 10-K, FY08 from the FY2012 10-K; FY08-FY09 as revised in the FY2009 10-K/A for the accounting principles adopted retrospectively in Q1 FY10 (iPhone and Apple TV revenue recognized at sale)); no company-published figure excluding a one-off; FY17 had 53 weeks (a 14th week in Q1 FY17), as published",
+   "revenue_usd_b": {
+    "2008": 37.491,
+    "2009": 42.905,
+    "2010": 65.225,
+    "2011": 108.249,
+    "2012": 156.508,
+    "2013": 170.91,
+    "2014": 182.795,
+    "2015": 233.715,
+    "2016": 215.639,
+    "2017": 229.234
+   },
+   "diluted_shares_m": {
+    "2008": 902.139,
+    "2017": 5251.692
+   },
+   "pe_window_start": null,
+   "prev_fy_op_margin": 26.76,
+   "prev_fy_op_margin_note": "FY17 operating income $61,344M / net sales $229,234M (FY2017 10-K)",
+   "prev_fy_gross_margin": 38.47,
+   "prev_fy_sales_growth": 6.3,
+   "prev_fy_mac_units_k": 19251,
+   "prev_fy_mac_units_pct": 4.1,
+   "other_income_b": 2.745,
+   "other_income_note": "FY17 total other income/(expense), net (FY2017 10-K)",
+   "tax_rate": 0.2456,
+   "tax_note": "FY17 effective rate: provision $15,738M / pre-tax income $64,089M (FY2017 10-K); no fiscal-year tax-rate guide",
+   "fcf_b": 51.147,
+   "fcf_label": "FY17",
+   "prev_q_mac_units_pct": 0.9,
+   "prev_q_label": "Q3 FY17",
+   "prev_q_source": "A75",
+   "dividend_annual": 2.52,
+   "dividend_note": "$0.63 a quarter: 'expects to pay quarterly dividends of $0.63 per common share each quarter, subject to declaration by the Board of Directors' (FY2017 10-K)",
+   "cash_return_text": "$12.77B of dividends and $32.90B of repurchases in FY17, $103.70B of term debt and $11.98B of commercial paper (FY2017 10-K)",
+   "business_line": "iPhone, iPad, Mac, Apple Watch, Apple TV and Digital Content and Services; no store count since FY15 (463)",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone",
+     141.319,
+     3.4
+    ],
+    [
+     "Services",
+     29.98,
+     23.1
+    ],
+    [
+     "Mac",
+     25.85,
+     13.2
+    ],
+    [
+     "iPad",
+     19.222,
+     -6.8
+    ],
+    [
+     "Other Products",
+     12.863,
+     15.5
+    ]
+   ],
+   "groups_basis": "FY17 net sales by product (FY2017 10-K)",
+   "eps_published": {
+    "2008": "2012-11-01",
+    "2009": "2013-10-30",
+    "2010": "2014-10-28",
+    "2011": "2015-10-29",
+    "2012": "2016-10-27"
+   },
+   "shares_published": {
+    "2008": "2012-11-01"
+   }
+  },
+  {
+   "published": "2018-11-05",
+   "sources": [
+    "A83",
+    "A77",
+    "A72",
+    "A67",
+    "A61",
+    "A55",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A81"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY18",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications and related services', and has 'a minority market share in the global smartphone, tablet and personal computer markets' (its own FY2018 10-K, which gives no store count: 463 in the FY2015 10-K); its products and services 'are offered in highly competitive global markets characterized by aggressive price competition and resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2009": "2009-09-26",
+    "2010": "2010-09-25",
+    "2011": "2011-09-24",
+    "2012": "2012-09-29",
+    "2013": "2013-09-28",
+    "2014": "2014-09-27",
+    "2015": "2015-09-26",
+    "2016": "2016-09-24",
+    "2017": "2017-09-30",
+    "2018": "2018-09-29"
+   },
+   "eps_gaap": {
+    "2009": 9.08,
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31,
+    "2017": 9.21,
+    "2018": 11.91
+   },
+   "eps_normalized": {
+    "2009": 9.08,
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31,
+    "2017": 9.21,
+    "2018": 11.91
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY14-FY18 from the FY2018 10-K, FY13 from the FY2017 10-K, FY12 from the FY2016 10-K, FY11 from the FY2015 10-K and FY10 from the FY2014 10-K, all on the 7-for-1 split basis; FY09 from the FY2013 10-K, as revised in the FY2009 10-K/A for the accounting principles adopted retrospectively in Q1 FY10 (iPhone and Apple TV revenue recognized at sale)); no company-published figure excluding a one-off: FY18 includes the Tax Cuts and Jobs Act, which 'increased the Company’s provision for income taxes by $1.5 billion during 2018'; FY17 had 53 weeks",
+   "revenue_usd_b": {
+    "2009": 42.905,
+    "2010": 65.225,
+    "2011": 108.249,
+    "2012": 156.508,
+    "2013": 170.91,
+    "2014": 182.795,
+    "2015": 233.715,
+    "2016": 215.639,
+    "2017": 229.234,
+    "2018": 265.595
+   },
+   "diluted_shares_m": {
+    "2009": 907.005,
+    "2018": 5000.109
+   },
+   "pe_window_start": null,
+   "prev_fy_op_margin": 26.69,
+   "prev_fy_op_margin_note": "FY18 operating income $70,898M / net sales $265,595M (FY2018 10-K)",
+   "prev_fy_gross_margin": 38.34,
+   "prev_fy_sales_growth": 15.9,
+   "prev_fy_mac_units_k": 18209,
+   "prev_fy_mac_units_pct": -5.4,
+   "other_income_b": 2.005,
+   "other_income_note": "FY18 total other income/(expense), net (FY2018 10-K)",
+   "tax_rate": 0.1834,
+   "tax_note": "FY18 effective rate: provision $13,372M / pre-tax income $72,903M (FY2018 10-K); no fiscal-year tax-rate guide",
+   "fcf_b": 64.121,
+   "fcf_label": "FY18",
+   "prev_q_mac_units_pct": -13.3,
+   "prev_q_label": "Q3 FY18",
+   "prev_q_source": "A81",
+   "dividend_annual": 2.92,
+   "dividend_note": "$0.73 a quarter: 'raised its quarterly dividend from $0.63 to $0.73 per share beginning in May 2018' (FY2018 10-K)",
+   "cash_return_text": "$13.71B of dividends and $72.74B of repurchases in FY18, $102.52B of term debt and $11.96B of commercial paper (FY2018 10-K)",
+   "business_line": "iPhone, iPad, Mac, Apple Watch, AirPods, Apple TV, HomePod and Digital Content and Services; no store count since FY15 (463)",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone",
+     166.699,
+     18.0
+    ],
+    [
+     "Services",
+     37.19,
+     24.0
+    ],
+    [
+     "Mac",
+     25.484,
+     -1.4
+    ],
+    [
+     "iPad",
+     18.805,
+     -2.2
+    ],
+    [
+     "Other Products",
+     17.417,
+     35.4
+    ]
+   ],
+   "groups_basis": "FY18 net sales by product (FY2018 10-K)",
+   "eps_published": {
+    "2009": "2013-10-30",
+    "2010": "2014-10-28",
+    "2011": "2015-10-29",
+    "2012": "2016-10-27",
+    "2013": "2017-11-03"
+   },
+   "shares_published": {
+    "2009": "2013-10-30"
+   }
+  },
+  {
+   "published": "2019-10-31",
+   "sources": [
+    "A89",
+    "A83",
+    "A77",
+    "A72",
+    "A67",
+    "A61",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A87"
+   ],
+   "company": "Apple Inc.",
+   "fy_label": "FY19",
+   "why": "Apple: it 'designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications and related services', and has 'a minority market share in the global smartphone, personal computer and tablet markets' (its own FY2019 10-K, which gives no store count: 463 in the FY2015 10-K); its products and services 'are offered in highly competitive global markets characterized by aggressive price competition and resulting downward pressure on gross margins': a margin risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2010": "2010-09-25",
+    "2011": "2011-09-24",
+    "2012": "2012-09-29",
+    "2013": "2013-09-28",
+    "2014": "2014-09-27",
+    "2015": "2015-09-26",
+    "2016": "2016-09-24",
+    "2017": "2017-09-30",
+    "2018": "2018-09-29",
+    "2019": "2019-09-28"
+   },
+   "eps_gaap": {
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31,
+    "2017": 9.21,
+    "2018": 11.91,
+    "2019": 11.89
+   },
+   "eps_normalized": {
+    "2010": 2.16,
+    "2011": 3.95,
+    "2012": 6.31,
+    "2013": 5.68,
+    "2014": 6.45,
+    "2015": 9.22,
+    "2016": 8.31,
+    "2017": 9.21,
+    "2018": 11.91,
+    "2019": 11.89
+   },
+   "normalization": "diluted EPS as reported, each year from the latest 10-K that reports it (FY15-FY19 from the FY2019 10-K, FY14 from the FY2018 10-K, FY13 from the FY2017 10-K, FY12 from the FY2016 10-K, FY11 from the FY2015 10-K and FY10 from the FY2014 10-K, all on the 7-for-1 split basis); no company-published figure excluding a one-off: FY18 includes the Tax Cuts and Jobs Act; FY17 had 53 weeks; total net sales were not restated for the new revenue standard (adopted in Q1 FY19)",
+   "revenue_usd_b": {
+    "2010": 65.225,
+    "2011": 108.249,
+    "2012": 156.508,
+    "2013": 170.91,
+    "2014": 182.795,
+    "2015": 233.715,
+    "2016": 215.639,
+    "2017": 229.234,
+    "2018": 265.595,
+    "2019": 260.174
+   },
+   "diluted_shares_m": {
+    "2010": 6472.983,
+    "2019": 4648.913
+   },
+   "pe_window_start": null,
+   "prev_fy_op_margin": 24.57,
+   "prev_fy_op_margin_note": "FY19 operating income $63,930M / net sales $260,174M (FY2019 10-K)",
+   "prev_fy_gross_margin": 37.82,
+   "prev_fy_sales_growth": -2.0,
+   "prev_fy_mac_units_k": null,
+   "prev_fy_mac_units_pct": null,
+   "other_income_b": 1.807,
+   "other_income_note": "FY19 total other income/(expense), net (FY2019 10-K)",
+   "tax_rate": 0.1594,
+   "tax_note": "FY19 effective rate: provision $10,481M / pre-tax income $65,737M (FY2019 10-K); no fiscal-year tax-rate guide",
+   "fcf_b": 58.896,
+   "fcf_label": "FY19",
+   "prev_q_mac_units_pct": null,
+   "prev_q_label": "Q3 FY19",
+   "prev_q_source": "A87",
+   "dividend_annual": 3.08,
+   "dividend_note": "$0.77 a quarter: 'raised its quarterly dividend from $0.73 to $0.77 per share beginning in May 2019' (FY2019 10-K)",
+   "cash_return_text": "$14.12B of dividends and $66.90B of repurchases in FY19, $102.07B of term debt and $5.98B of commercial paper (FY2019 10-K)",
+   "business_line": "iPhone, Mac, iPad, Wearables, Home and Accessories, and Services; no store count since FY15 (463)",
+   "margin_signal_name": "Operating margin change",
+   "groups": [
+    [
+     "iPhone",
+     142.381,
+     -13.6
+    ],
+    [
+     "Services",
+     46.291,
+     16.5
+    ],
+    [
+     "Mac",
+     25.74,
+     2.2
+    ],
+    [
+     "Wearables, Home and Accessories",
+     24.482,
+     40.9
+    ],
+    [
+     "iPad",
+     21.28,
+     15.8
+    ]
+   ],
+   "groups_basis": "FY19 net sales by category (FY2019 10-K, FY18 recast)",
+   "eps_published": {
+    "2010": "2014-10-28",
+    "2011": "2015-10-29",
+    "2012": "2016-10-27",
+    "2013": "2017-11-03",
+    "2014": "2018-11-05"
+   },
+   "shares_published": {
+    "2010": "2014-10-28"
+   },
+   "mac_units_note": "no Mac units: from Q1 FY19 Apple reports net sales by category only (FY2019 10-K)"
   }
  ],
  "prints": [
@@ -3282,6 +3981,755 @@
     "tax_note": "FY15 effective rate: provision $19,121M / pre-tax income $72,515M; no fiscal-year tax-rate guide",
     "fcf_b": 70.019
    }
+  },
+  {
+   "quarter": "Q1 FY16",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-01-27",
+   "source": "A68",
+   "release": "Jan 26",
+   "release_time": "after the close: 8-K accepted 16:31 ET; webcast at 2:00 p.m. PST",
+   "period_end": "2015-12-26",
+   "sales_b": 75.872,
+   "sales_pct": 1.7,
+   "gross_margin": 40.1,
+   "gross_margin_bp": 23,
+   "gross_margin_note": "gross margin $30,423M / net sales $75,872M = 40.10% vs $29,741M / $74,599M = 39.87% in Q1 FY15",
+   "op_margin": 31.86,
+   "op_margin_bp": -64,
+   "op_margin_note": "operating income $24,171M / $75,872M = 31.86% vs $24,246M / $74,599M = 32.50%",
+   "mac_units_k": 5312,
+   "mac_units_pct": -3.8,
+   "mac_note": "5,312K Macs vs 5,519K in Q1 FY15 (data sheet)",
+   "mac_sales_b": 6.746,
+   "non_mac_pct": 2.2,
+   "non_mac_note": "net sales less Mac net sales: $75,872M - $6,746M = $69,126M vs $74,599M - $6,944M = $67,655M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 74779,
+   "eps_q": 3.28,
+   "eps_q_prior": 3.06,
+   "diluted_shares_m": 5594.127,
+   "cash_b": 38.074,
+   "cash_note": "cash and cash equivalents $16,689M + short-term marketable securities $21,385M",
+   "lt_securities_b": 177.665,
+   "lt_securities_note": "long-term marketable securities $177,665M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 16122,
+   "next_print": "Q2 FY16 print (late April)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2016 second quarter: revenue between $50 billion and $53 billion",
+   "cash_return_text": "$2.97B of dividends and $6.86B of repurchases in Q1 FY16 (cash flow statement); $55.70B of long-term debt ($2.50B current) and $7.26B of commercial paper",
+   "services_note": "Services include $548 million received from a patent infringement lawsuit (the supplemental material, ex.99.3, gives Services 'excluding' it); no EPS or margin excluding it was published: GAAP stands"
+  },
+  {
+   "quarter": "Q2 FY16",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-04-27",
+   "source": "A69",
+   "release": "Apr 26",
+   "release_time": "after the close: 8-K accepted 16:31 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2016-03-26",
+   "sales_b": 50.557,
+   "sales_pct": -12.8,
+   "gross_margin": 39.4,
+   "gross_margin_bp": -138,
+   "gross_margin_note": "gross margin $19,921M / net sales $50,557M = 39.40% vs $23,656M / $58,010M = 40.78% in Q2 FY15",
+   "op_margin": 27.67,
+   "op_margin_bp": -384,
+   "op_margin_note": "operating income $13,987M / $50,557M = 27.67% vs $18,278M / $58,010M = 31.51%",
+   "mac_units_k": 4034,
+   "mac_units_pct": -11.6,
+   "mac_note": "4,034K Macs vs 4,563K in Q2 FY15 (data sheet)",
+   "mac_sales_b": 5.107,
+   "non_mac_pct": -13.3,
+   "non_mac_note": "net sales less Mac net sales: $50,557M - $5,107M = $45,450M vs $58,010M - $5,615M = $52,395M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 51193,
+   "eps_q": 1.9,
+   "eps_q_prior": 2.33,
+   "diluted_shares_m": 5540.886,
+   "cash_b": 55.283,
+   "cash_note": "cash and cash equivalents $21,514M + short-term marketable securities $33,769M",
+   "lt_securities_b": 177.645,
+   "lt_securities_note": "long-term marketable securities $177,645M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 10251,
+   "next_print": "Q3 FY16 print (late July)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2016 third quarter: revenue between $41 billion and $43 billion",
+   "cash_return_text": "$5.87B of dividends and $13.53B of repurchases in the first half of FY16 (cash flow statement); $71.87B of long-term debt ($2.50B current) and $8.00B of commercial paper"
+  },
+  {
+   "quarter": "Q3 FY16",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-07-27",
+   "source": "A70",
+   "release": "Jul 26",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2016-06-25",
+   "sales_b": 42.358,
+   "sales_pct": -14.6,
+   "gross_margin": 38.02,
+   "gross_margin_bp": -165,
+   "gross_margin_note": "gross margin $16,106M / net sales $42,358M = 38.02% vs $19,681M / $49,605M = 39.68% in Q3 FY15",
+   "op_margin": 23.86,
+   "op_margin_bp": -453,
+   "op_margin_note": "operating income $10,105M / $42,358M = 23.86% vs $14,083M / $49,605M = 28.39%",
+   "mac_units_k": 4252,
+   "mac_units_pct": -11.3,
+   "mac_note": "4,252K Macs vs 4,796K in Q3 FY15 (data sheet)",
+   "mac_sales_b": 5.239,
+   "non_mac_pct": -14.8,
+   "non_mac_note": "net sales less Mac net sales: $42,358M - $5,239M = $37,119M vs $49,605M - $6,030M = $43,575M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 40399,
+   "eps_q": 1.42,
+   "eps_q_prior": 1.85,
+   "diluted_shares_m": 5472.781,
+   "cash_b": 61.756,
+   "cash_note": "cash and cash equivalents $18,237M + short-term marketable securities $43,519M",
+   "lt_securities_b": 169.764,
+   "lt_securities_note": "long-term marketable securities $169,764M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 9950,
+   "next_print": "Q4 FY16 print (late October)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2016 fourth quarter: revenue between $45.5 billion and $47.5 billion",
+   "cash_return_text": "$9.06B of dividends and $23.70B of repurchases in the first nine months of FY16 (cash flow statement); $72.44B of long-term debt ($3.50B current) and $12.50B of commercial paper"
+  },
+  {
+   "quarter": "Q4 FY16",
+   "fy": 2016,
+   "q": 4,
+   "published": "2016-10-26",
+   "source": "A71",
+   "release": "Oct 25",
+   "release_time": "after the close: 8-K accepted 16:32 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2016-09-24",
+   "sales_b": 46.852,
+   "sales_pct": -9.0,
+   "gross_margin": 38.02,
+   "gross_margin_bp": -188,
+   "gross_margin_note": "gross margin $17,813M / net sales $46,852M = 38.02% vs $20,548M / $51,501M = 39.90% in Q4 FY15",
+   "op_margin": 25.1,
+   "op_margin_bp": -329,
+   "op_margin_note": "operating income $11,761M / $46,852M = 25.10% vs $14,623M / $51,501M = 28.39%",
+   "mac_units_k": 4886,
+   "mac_units_pct": -14.4,
+   "mac_note": "4,886K Macs vs 5,709K in Q4 FY15 (data sheet)",
+   "mac_sales_b": 5.739,
+   "non_mac_pct": -7.9,
+   "non_mac_note": "net sales less Mac net sales: $46,852M - $5,739M = $41,113M vs $51,501M - $6,882M = $44,619M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 45513,
+   "eps_q": 1.67,
+   "eps_q_prior": 1.96,
+   "diluted_shares_m": 5393.333,
+   "cash_b": 67.155,
+   "cash_note": "cash and cash equivalents $20,484M + short-term marketable securities $46,671M",
+   "lt_securities_b": 170.43,
+   "lt_securities_note": "long-term marketable securities $170,430M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 9267,
+   "next_print": "Q1 FY17 print (late January)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2017 first quarter: revenue between $76 billion and $78 billion",
+   "cash_return_text": "$12.15B of dividends and $29.72B of repurchases in FY16 (cash flow statement); $78.93B of long-term debt ($3.50B current) and $8.11B of commercial paper",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 8.31,
+    "revenue_usd_b": 215.639,
+    "diluted_shares_m": 5500.281,
+    "normalization_note": "FY16 = diluted EPS $8.31 as released; no one-off excluded",
+    "op_margin": 27.84,
+    "op_margin_note": "FY16 operating income $60,024M / $215,639M (Q4 FY16 release)",
+    "gross_margin": 39.08,
+    "sales_growth": -7.7,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 1.348,
+    "tax_rate": 0.2556,
+    "tax_note": "FY16 effective rate: provision $15,685M / pre-tax income $61,372M; no fiscal-year tax-rate guide",
+    "fcf_b": 53.09
+   }
+  },
+  {
+   "quarter": "Q1 FY17",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-02-01",
+   "source": "A73",
+   "release": "Jan 31",
+   "release_time": "after the close: 8-K accepted 16:31 ET; webcast at 2:00 p.m. PST",
+   "period_end": "2016-12-31",
+   "sales_b": 78.351,
+   "sales_pct": 3.3,
+   "gross_margin": 38.51,
+   "gross_margin_bp": -158,
+   "gross_margin_note": "gross margin $30,176M / net sales $78,351M = 38.51% vs $30,423M / $75,872M = 40.10% in Q1 FY16",
+   "op_margin": 29.81,
+   "op_margin_bp": -204,
+   "op_margin_note": "operating income $23,359M / $78,351M = 29.81% vs $24,171M / $75,872M = 31.86%",
+   "mac_units_k": 5374,
+   "mac_units_pct": 1.2,
+   "mac_note": "5,374K Macs vs 5,312K in Q1 FY16 (data sheet)",
+   "mac_sales_b": 7.244,
+   "non_mac_pct": 2.9,
+   "non_mac_note": "net sales less Mac net sales: $78,351M - $7,244M = $71,107M vs $75,872M - $6,746M = $69,126M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 78290,
+   "eps_q": 3.36,
+   "eps_q_prior": 3.28,
+   "diluted_shares_m": 5327.995,
+   "cash_b": 60.452,
+   "cash_note": "cash and cash equivalents $16,371M + short-term marketable securities $44,081M",
+   "lt_securities_b": 185.638,
+   "lt_securities_note": "long-term marketable securities $185,638M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 13081,
+   "next_print": "Q2 FY17 print (late April)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2017 second quarter: revenue between $51.5 billion and $53.5 billion",
+   "cash_return_text": "$3.13B of dividends and $10.85B of repurchases in Q1 FY17 (cash flow statement); $77.06B of long-term debt ($3.50B current) and $10.49B of commercial paper"
+  },
+  {
+   "quarter": "Q2 FY17",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-05-03",
+   "source": "A74",
+   "release": "May 2",
+   "release_time": "after the close: 8-K accepted 16:31 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2017-04-01",
+   "sales_b": 52.896,
+   "sales_pct": 4.6,
+   "gross_margin": 38.93,
+   "gross_margin_bp": -48,
+   "gross_margin_note": "gross margin $20,591M / net sales $52,896M = 38.93% vs $19,921M / $50,557M = 39.40% in Q2 FY16",
+   "op_margin": 26.65,
+   "op_margin_bp": -102,
+   "op_margin_note": "operating income $14,097M / $52,896M = 26.65% vs $13,987M / $50,557M = 27.67%",
+   "mac_units_k": 4199,
+   "mac_units_pct": 4.1,
+   "mac_note": "4,199K Macs vs 4,034K in Q2 FY16 (data sheet)",
+   "mac_sales_b": 5.844,
+   "non_mac_pct": 3.5,
+   "non_mac_note": "net sales less Mac net sales: $52,896M - $5,844M = $47,052M vs $50,557M - $5,107M = $45,450M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 50763,
+   "eps_q": 2.1,
+   "eps_q_prior": 1.9,
+   "diluted_shares_m": 5261.688,
+   "cash_b": 67.101,
+   "cash_note": "cash and cash equivalents $15,157M + short-term marketable securities $51,944M",
+   "lt_securities_b": 189.74,
+   "lt_securities_note": "long-term marketable securities $189,740M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 8922,
+   "next_print": "Q3 FY17 print (late July)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2017 third quarter: revenue between $43.5 billion and $45.5 billion",
+   "cash_return_text": "$6.13B of dividends and $18.01B of repurchases in the first half of FY17 (cash flow statement); $88.53B of long-term debt ($4.00B current) and $9.99B of commercial paper"
+  },
+  {
+   "quarter": "Q3 FY17",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-08-02",
+   "source": "A75",
+   "release": "Aug 1",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2017-07-01",
+   "sales_b": 45.408,
+   "sales_pct": 7.2,
+   "gross_margin": 38.51,
+   "gross_margin_bp": 49,
+   "gross_margin_note": "gross margin $17,488M / net sales $45,408M = 38.51% vs $16,106M / $42,358M = 38.02% in Q3 FY16",
+   "op_margin": 23.71,
+   "op_margin_bp": -14,
+   "op_margin_note": "operating income $10,768M / $45,408M = 23.71% vs $10,105M / $42,358M = 23.86%",
+   "mac_units_k": 4292,
+   "mac_units_pct": 0.9,
+   "mac_note": "4,292K Macs vs 4,252K in Q3 FY16 (data sheet)",
+   "mac_sales_b": 5.592,
+   "non_mac_pct": 7.3,
+   "non_mac_note": "net sales less Mac net sales: $45,408M - $5,592M = $39,816M vs $42,358M - $5,239M = $37,119M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 41026,
+   "eps_q": 1.67,
+   "eps_q_prior": 1.42,
+   "diluted_shares_m": 5233.499,
+   "cash_b": 76.759,
+   "cash_note": "cash and cash equivalents $18,571M + short-term marketable securities $58,188M",
+   "lt_securities_b": 184.757,
+   "lt_securities_note": "long-term marketable securities $184,757M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 11424,
+   "next_print": "Q4 FY17 print (late October)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2017 fourth quarter: revenue between $49 billion and $52 billion",
+   "cash_return_text": "$9.50B of dividends and $25.11B of repurchases in the first nine months of FY17 (cash flow statement); $96.36B of long-term debt ($6.50B current) and $11.98B of commercial paper"
+  },
+  {
+   "quarter": "Q4 FY17",
+   "fy": 2017,
+   "q": 4,
+   "published": "2017-11-03",
+   "source": "A76",
+   "release": "Nov 2",
+   "release_time": "after the close on Nov 2: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT; public before the open of the next trading day",
+   "period_end": "2017-09-30",
+   "sales_b": 52.579,
+   "sales_pct": 12.2,
+   "gross_margin": 37.91,
+   "gross_margin_bp": -11,
+   "gross_margin_note": "gross margin $19,931M / net sales $52,579M = 37.91% vs $17,813M / $46,852M = 38.02% in Q4 FY16",
+   "op_margin": 24.95,
+   "op_margin_bp": -15,
+   "op_margin_note": "operating income $13,120M / $52,579M = 24.95% vs $11,761M / $46,852M = 25.10%",
+   "mac_units_k": 5386,
+   "mac_units_pct": 10.2,
+   "mac_note": "5,386K Macs vs 4,886K in Q4 FY16 (data sheet)",
+   "mac_sales_b": 7.17,
+   "non_mac_pct": 10.4,
+   "non_mac_note": "net sales less Mac net sales: $52,579M - $7,170M = $45,409M vs $46,852M - $5,739M = $41,113M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 46677,
+   "eps_q": 2.07,
+   "eps_q_prior": 1.67,
+   "diluted_shares_m": 5183.585,
+   "cash_b": 74.181,
+   "cash_note": "cash and cash equivalents $20,289M + short-term marketable securities $53,892M",
+   "lt_securities_b": 194.714,
+   "lt_securities_note": "long-term marketable securities $194,714M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 10326,
+   "next_print": "Q1 FY18 print (late January)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2018 first quarter: revenue between $84 billion and $87 billion",
+   "cash_return_text": "$12.77B of dividends and $32.90B of repurchases in FY17 (cash flow statement); $103.70B of long-term debt ($6.50B current) and $11.98B of commercial paper",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 9.21,
+    "revenue_usd_b": 229.234,
+    "diluted_shares_m": 5251.692,
+    "normalization_note": "FY17 = diluted EPS $9.21 as released; no one-off excluded",
+    "op_margin": 26.76,
+    "op_margin_note": "FY17 operating income $61,344M / $229,234M (Q4 FY17 release)",
+    "gross_margin": 38.47,
+    "sales_growth": 6.3,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 2.745,
+    "tax_rate": 0.2456,
+    "tax_note": "FY17 effective rate: provision $15,738M / pre-tax income $64,089M; no fiscal-year tax-rate guide",
+    "fcf_b": 51.147
+   },
+   "services_note": "'Services revenue in the fourth quarter of 2017 included a favorable one-time adjustment of $640 million' (data sheet); no EPS or margin excluding it was published: GAAP stands"
+  },
+  {
+   "quarter": "Q1 FY18",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-02-02",
+   "source": "A78",
+   "release": "Feb 1",
+   "release_time": "after the close on Feb 1: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PST; public before the open of the next trading day",
+   "period_end": "2017-12-30",
+   "sales_b": 88.293,
+   "sales_pct": 12.7,
+   "gross_margin": 38.41,
+   "gross_margin_bp": -11,
+   "gross_margin_note": "gross margin $33,912M / net sales $88,293M = 38.41% vs $30,176M / $78,351M = 38.51% in Q1 FY17",
+   "op_margin": 29.76,
+   "op_margin_bp": -6,
+   "op_margin_note": "operating income $26,274M / $88,293M = 29.76% vs $23,359M / $78,351M = 29.81%",
+   "mac_units_k": 5112,
+   "mac_units_pct": -4.9,
+   "mac_note": "5,112K Macs vs 5,374K in Q1 FY17 (data sheet)",
+   "mac_sales_b": 6.895,
+   "non_mac_pct": 14.5,
+   "non_mac_note": "net sales less Mac net sales: $88,293M - $6,895M = $81,398M vs $78,351M - $7,244M = $71,107M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 77316,
+   "eps_q": 3.89,
+   "eps_q_prior": 3.36,
+   "diluted_shares_m": 5157.787,
+   "cash_b": 77.153,
+   "cash_note": "cash and cash equivalents $27,491M + short-term marketable securities $49,662M",
+   "lt_securities_b": 207.944,
+   "lt_securities_note": "long-term marketable securities $207,944M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 13170,
+   "next_print": "Q2 FY18 print (late April)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2018 second quarter: revenue between $60 billion and $62 billion",
+   "cash_return_text": "$3.34B of dividends and $10.10B of repurchases in Q1 FY18 (cash flow statement); $110.42B of long-term debt ($6.50B current) and $11.98B of commercial paper",
+   "extra_sources": [
+    "A79"
+   ],
+   "weeks_note": "'The first quarter of 2018 spanned 13 weeks, whereas a 14th week was added to the first fiscal quarter of 2017' (Q1 FY18 10-Q): growth as published",
+   "tax_note_q": "EPS $3.89 includes the Tax Cuts and Jobs Act: a provision of $7.0 billion, 'of which $2.6 billion was considered a provisional estimate' (Q1 FY18 10-Q); no figure excluding it was published: GAAP stands"
+  },
+  {
+   "quarter": "Q2 FY18",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-05-02",
+   "source": "A80",
+   "release": "May 1",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2018-03-31",
+   "sales_b": 61.137,
+   "sales_pct": 15.6,
+   "gross_margin": 38.31,
+   "gross_margin_bp": -62,
+   "gross_margin_note": "gross margin $23,422M / net sales $61,137M = 38.31% vs $20,591M / $52,896M = 38.93% in Q2 FY17",
+   "op_margin": 26.0,
+   "op_margin_bp": -65,
+   "op_margin_note": "operating income $15,894M / $61,137M = 26.00% vs $14,097M / $52,896M = 26.65%",
+   "mac_units_k": 4078,
+   "mac_units_pct": -2.9,
+   "mac_note": "4,078K Macs vs 4,199K in Q2 FY17 (data sheet)",
+   "mac_sales_b": 5.848,
+   "non_mac_pct": 17.5,
+   "non_mac_note": "net sales less Mac net sales: $61,137M - $5,848M = $55,289M vs $52,896M - $5,844M = $47,052M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 52217,
+   "eps_q": 2.73,
+   "eps_q_prior": 2.1,
+   "diluted_shares_m": 5068.493,
+   "cash_b": 87.94,
+   "cash_note": "cash and cash equivalents $45,059M + short-term marketable securities $42,881M",
+   "lt_securities_b": 179.286,
+   "lt_securities_note": "long-term marketable securities $179,286M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 9113,
+   "next_print": "Q3 FY18 print (late July)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2018 third quarter: revenue between $51.5 billion and $53.5 billion",
+   "cash_return_text": "$6.53B of dividends and $32.85B of repurchases in the first half of FY18 (cash flow statement); $109.86B of long-term debt ($8.50B current) and $11.98B of commercial paper"
+  },
+  {
+   "quarter": "Q3 FY18",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-08-01",
+   "source": "A81",
+   "release": "Jul 31",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2018-06-30",
+   "sales_b": 53.265,
+   "sales_pct": 17.3,
+   "gross_margin": 38.34,
+   "gross_margin_bp": -17,
+   "gross_margin_note": "gross margin $20,421M / net sales $53,265M = 38.34% vs $17,488M / $45,408M = 38.51% in Q3 FY17",
+   "op_margin": 23.68,
+   "op_margin_bp": -4,
+   "op_margin_note": "operating income $12,612M / $53,265M = 23.68% vs $10,768M / $45,408M = 23.71%",
+   "mac_units_k": 3720,
+   "mac_units_pct": -13.3,
+   "mac_note": "3,720K Macs vs 4,292K in Q3 FY17 (data sheet)",
+   "mac_sales_b": 5.33,
+   "non_mac_pct": 20.4,
+   "non_mac_note": "net sales less Mac net sales: $53,265M - $5,330M = $47,935M vs $45,408M - $5,592M = $39,816M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 41300,
+   "eps_q": 2.34,
+   "eps_q_prior": 1.67,
+   "diluted_shares_m": 4926.609,
+   "cash_b": 70.97,
+   "cash_note": "cash and cash equivalents $31,971M + short-term marketable securities $38,999M",
+   "lt_securities_b": 172.773,
+   "lt_securities_note": "long-term marketable securities $172,773M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 11553,
+   "next_print": "Q4 FY18 print (late October)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2018 fourth quarter: revenue between $60 billion and $62 billion",
+   "cash_return_text": "$10.18B of dividends and $53.63B of repurchases in the first nine months of FY18 (cash flow statement); $102.63B of long-term debt ($5.50B current) and $11.97B of commercial paper",
+   "services_note": "'Services revenue in the third quarter of 2018 included a favorable one-time item of $236 million' (data sheet); no EPS or margin excluding it was published: GAAP stands"
+  },
+  {
+   "quarter": "Q4 FY18",
+   "fy": 2018,
+   "q": 4,
+   "published": "2018-11-02",
+   "source": "A82",
+   "release": "Nov 1",
+   "release_time": "after the close on Nov 1: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT; public before the open of the next trading day",
+   "period_end": "2018-09-29",
+   "sales_b": 62.9,
+   "sales_pct": 19.6,
+   "gross_margin": 38.29,
+   "gross_margin_bp": 38,
+   "gross_margin_note": "gross margin $24,084M / net sales $62,900M = 38.29% vs $19,931M / $52,579M = 37.91% in Q4 FY17",
+   "op_margin": 25.62,
+   "op_margin_bp": 67,
+   "op_margin_note": "operating income $16,118M / $62,900M = 25.62% vs $13,120M / $52,579M = 24.95%",
+   "mac_units_k": 5299,
+   "mac_units_pct": -1.6,
+   "mac_note": "5,299K Macs vs 5,386K in Q4 FY17 (data sheet)",
+   "mac_sales_b": 7.411,
+   "non_mac_pct": 22.2,
+   "non_mac_note": "net sales less Mac net sales: $62,900M - $7,411M = $55,489M vs $52,579M - $7,170M = $45,409M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": 46889,
+   "eps_q": 2.91,
+   "eps_q_prior": 2.07,
+   "diluted_shares_m": 4847.547,
+   "cash_b": 66.301,
+   "cash_note": "cash and cash equivalents $25,913M + current marketable securities $40,388M",
+   "lt_securities_b": 170.799,
+   "lt_securities_note": "non-current marketable securities $170,799M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": 9699,
+   "next_print": "Q1 FY19 print (late January)",
+   "ipod_note": "no iPod units: from Q1 FY15 the data sheet reports units for iPhone, iPad and Mac only; iPod sales fall in Other Products",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2019 first quarter: revenue between $89 billion and $93 billion",
+   "cash_return_text": "$13.71B of dividends and $72.74B of repurchases in FY18 (cash flow statement); $102.52B of term debt ($8.78B current) and $11.96B of commercial paper",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 11.91,
+    "revenue_usd_b": 265.595,
+    "diluted_shares_m": 5000.109,
+    "normalization_note": "FY18 = diluted EPS $11.91 as released; no one-off excluded (no figure excluding the Tax Cuts and Jobs Act effects was published)",
+    "op_margin": 26.69,
+    "op_margin_note": "FY18 operating income $70,898M / $265,595M (Q4 FY18 release)",
+    "gross_margin": 38.34,
+    "sales_growth": 15.9,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 2.005,
+    "tax_rate": 0.1834,
+    "tax_note": "FY18 effective rate: provision $13,372M / pre-tax income $72,903M; no fiscal-year tax-rate guide",
+    "fcf_b": 64.121
+   }
+  },
+  {
+   "quarter": "Q1 FY19",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-01-30",
+   "source": "A85",
+   "release": "Jan 29",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PST",
+   "period_end": "2018-12-29",
+   "sales_b": 84.31,
+   "sales_pct": -4.5,
+   "gross_margin": 37.99,
+   "gross_margin_bp": -42,
+   "gross_margin_note": "gross margin $32,031M / net sales $84,310M = 37.99% vs $33,912M / $88,293M = 38.41% in Q1 FY18",
+   "op_margin": 27.69,
+   "op_margin_bp": -207,
+   "op_margin_note": "operating income $23,346M / $84,310M = 27.69% vs $26,274M / $88,293M = 29.76%",
+   "mac_units_k": null,
+   "mac_units_pct": null,
+   "mac_note": "no Mac units: from Q1 FY19 the release reports net sales by category only",
+   "mac_sales_b": 7.416,
+   "non_mac_pct": -5.6,
+   "non_mac_note": "net sales less Mac net sales: $84,310M - $7,416M = $76,894M vs $88,293M - $6,824M = $81,469M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": null,
+   "eps_q": 4.18,
+   "eps_q_prior": 3.89,
+   "diluted_shares_m": 4773.252,
+   "cash_b": 86.427,
+   "cash_note": "cash and cash equivalents $44,771M + current marketable securities $41,656M",
+   "lt_securities_b": 158.608,
+   "lt_securities_note": "non-current marketable securities $158,608M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": null,
+   "mac_sales_pct": 8.7,
+   "iphone_sales_pct": -14.9,
+   "units_note": "no unit sales: Mac net sales $7,416M vs $6,824M, iPhone $51,982M vs $61,104M (net sales by category)",
+   "next_print": "Q2 FY19 print (late April)",
+   "ipod_note": "no unit sales: from Q1 FY19 the release reports net sales by category only (no data sheet)",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2019 second quarter: revenue between $55 billion and $59 billion",
+   "cash_return_text": "$3.57B of dividends and $8.80B of repurchases in Q1 FY19 (cash flow statement); $102.76B of term debt ($9.77B current) and $11.97B of commercial paper",
+   "accounting_note": "from Q1 FY19 the release splits net sales into Products and Services and reports net sales by category only; its Q1 FY18 column is recast (Mac $6,824M, $6,895M in the Q1 FY18 data sheet; total $88,293M unchanged): growth against the release's own column"
+  },
+  {
+   "quarter": "Q2 FY19",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-05-01",
+   "source": "A86",
+   "release": "Apr 30",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2019-03-30",
+   "sales_b": 58.015,
+   "sales_pct": -5.1,
+   "gross_margin": 37.61,
+   "gross_margin_bp": -70,
+   "gross_margin_note": "gross margin $21,821M / net sales $58,015M = 37.61% vs $23,422M / $61,137M = 38.31% in Q2 FY18",
+   "op_margin": 23.12,
+   "op_margin_bp": -287,
+   "op_margin_note": "operating income $13,415M / $58,015M = 23.12% vs $15,894M / $61,137M = 26.00%",
+   "mac_units_k": null,
+   "mac_units_pct": null,
+   "mac_note": "no Mac units: from Q1 FY19 the release reports net sales by category only",
+   "mac_sales_b": 5.513,
+   "non_mac_pct": -5.2,
+   "non_mac_note": "net sales less Mac net sales: $58,015M - $5,513M = $52,502M vs $61,137M - $5,776M = $55,361M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": null,
+   "eps_q": 2.46,
+   "eps_q_prior": 2.73,
+   "diluted_shares_m": 4700.646,
+   "cash_b": 80.092,
+   "cash_note": "cash and cash equivalents $37,988M + current marketable securities $42,104M",
+   "lt_securities_b": 145.319,
+   "lt_securities_note": "non-current marketable securities $145,319M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": null,
+   "mac_sales_pct": -4.6,
+   "iphone_sales_pct": -17.3,
+   "units_note": "no unit sales: Mac net sales $5,513M vs $5,776M, iPhone $31,051M vs $37,559M (net sales by category)",
+   "next_print": "Q3 FY19 print (late July)",
+   "ipod_note": "no unit sales: from Q1 FY19 the release reports net sales by category only (no data sheet)",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2019 third quarter: revenue between $52.5 billion and $54.5 billion",
+   "cash_return_text": "$7.01B of dividends and $32.50B of repurchases in the first half of FY19 (cash flow statement); $100.71B of term debt ($10.51B current) and $11.92B of commercial paper"
+  },
+  {
+   "quarter": "Q3 FY19",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-07-31",
+   "source": "A87",
+   "release": "Jul 30",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2019-06-29",
+   "sales_b": 53.809,
+   "sales_pct": 1.0,
+   "gross_margin": 37.59,
+   "gross_margin_bp": -75,
+   "gross_margin_note": "gross margin $20,227M / net sales $53,809M = 37.59% vs $20,421M / $53,265M = 38.34% in Q3 FY18",
+   "op_margin": 21.45,
+   "op_margin_bp": -222,
+   "op_margin_note": "operating income $11,544M / $53,809M = 21.45% vs $12,612M / $53,265M = 23.68%",
+   "mac_units_k": null,
+   "mac_units_pct": null,
+   "mac_note": "no Mac units: from Q1 FY19 the release reports net sales by category only",
+   "mac_sales_b": 5.82,
+   "non_mac_pct": -0.0,
+   "non_mac_note": "net sales less Mac net sales: $53,809M - $5,820M = $47,989M vs $53,265M - $5,258M = $48,007M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": null,
+   "eps_q": 2.18,
+   "eps_q_prior": 2.34,
+   "diluted_shares_m": 4601.38,
+   "cash_b": 94.614,
+   "cash_note": "cash and cash equivalents $50,530M + current marketable securities $44,084M",
+   "lt_securities_b": 115.996,
+   "lt_securities_note": "non-current marketable securities $115,996M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": null,
+   "mac_sales_pct": 10.7,
+   "iphone_sales_pct": -11.8,
+   "units_note": "no unit sales: Mac net sales $5,820M vs $5,258M, iPhone $25,986M vs $29,470M (net sales by category)",
+   "next_print": "Q4 FY19 print (late October)",
+   "ipod_note": "no unit sales: from Q1 FY19 the release reports net sales by category only (no data sheet)",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2019 fourth quarter: revenue between $61 billion and $64 billion",
+   "cash_return_text": "$10.64B of dividends and $49.45B of repurchases in the first nine months of FY19 (cash flow statement); $98.47B of term debt ($13.53B current) and $9.95B of commercial paper"
+  },
+  {
+   "quarter": "Q4 FY19",
+   "fy": 2019,
+   "q": 4,
+   "published": "2019-10-31",
+   "source": "A88",
+   "release": "Oct 30",
+   "release_time": "after the close: 8-K accepted 16:30 ET; webcast at 2:00 p.m. PDT",
+   "period_end": "2019-09-28",
+   "sales_b": 64.04,
+   "sales_pct": 1.8,
+   "gross_margin": 37.97,
+   "gross_margin_bp": -32,
+   "gross_margin_note": "gross margin $24,313M / net sales $64,040M = 37.97% vs $24,084M / $62,900M = 38.29% in Q4 FY18",
+   "op_margin": 24.4,
+   "op_margin_bp": -123,
+   "op_margin_note": "operating income $15,625M / $64,040M = 24.40% vs $16,118M / $62,900M = 25.62%",
+   "mac_units_k": null,
+   "mac_units_pct": null,
+   "mac_note": "no Mac units: from Q1 FY19 the release reports net sales by category only",
+   "mac_sales_b": 6.991,
+   "non_mac_pct": 2.7,
+   "non_mac_note": "net sales less Mac net sales: $64,040M - $6,991M = $57,049M vs $62,900M - $7,340M = $55,560M",
+   "ipod_units_k": null,
+   "ipod_units_pct": null,
+   "iphone_units_k": null,
+   "eps_q": 3.03,
+   "eps_q_prior": 2.91,
+   "diluted_shares_m": 4520.373,
+   "cash_b": 100.557,
+   "cash_note": "cash and cash equivalents $48,844M + current marketable securities $51,713M",
+   "lt_securities_b": 105.341,
+   "lt_securities_note": "non-current marketable securities $105,341M",
+   "deferred_iphone_b": null,
+   "deferred_note": "none: under the accounting principles adopted retrospectively in Q1 FY10, iPhone and Apple TV revenue is recognized at sale",
+   "ipad_units_k": null,
+   "mac_sales_pct": -4.8,
+   "iphone_sales_pct": -9.2,
+   "units_note": "no unit sales: Mac net sales $6,991M vs $7,340M, iPhone $33,362M vs $36,755M (net sales by category)",
+   "next_print": "Q1 FY20 print (late January)",
+   "ipod_note": "no unit sales: from Q1 FY19 the release reports net sales by category only (no data sheet)",
+   "outlook_short": "Apple is providing the following guidance for its fiscal 2020 first quarter: revenue between $85.5 billion and $89.5 billion",
+   "cash_return_text": "$14.12B of dividends and $66.90B of repurchases in FY19 (cash flow statement); $102.07B of term debt ($10.26B current) and $5.98B of commercial paper",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 11.89,
+    "revenue_usd_b": 260.174,
+    "diluted_shares_m": 4648.913,
+    "normalization_note": "FY19 = diluted EPS $11.89 as released; no one-off excluded",
+    "op_margin": 24.57,
+    "op_margin_note": "FY19 operating income $63,930M / $260,174M (Q4 FY19 release)",
+    "gross_margin": 37.82,
+    "sales_growth": -2.0,
+    "mac_units_k": null,
+    "mac_units_pct": null,
+    "other_income_b": 1.807,
+    "tax_rate": 0.1594,
+    "tax_note": "FY19 effective rate: provision $10,481M / pre-tax income $65,737M; no fiscal-year tax-rate guide",
+    "fcf_b": 58.896
+   }
   }
  ],
  "guides": [
@@ -4309,6 +5757,569 @@
     "prior_source": "A62",
     "prior_label": "Q1 FY15"
    }
+  },
+  {
+   "fy": 2016,
+   "published": "2016-01-27",
+   "source": "A68",
+   "doc": "Q1 FY16 release",
+   "quote": "revenue between $50 billion and $53 billion; gross margin between 39 percent and 39.5 percent; operating expenses between $6 billion and $6.1 billion; other income/(expense) of $325 million; tax rate of 25.5 percent",
+   "q_guide": {
+    "quarter": "Q2 FY16",
+    "sales_usd_b": [
+     50.0,
+     53.0
+    ],
+    "gm_pct": [
+     39.0,
+     39.5
+    ],
+    "opex_usd_b": [
+     6.0,
+     6.1
+    ],
+    "oie_usd_b": [
+     0.325,
+     0.325
+    ],
+    "tax_pct": [
+     25.5,
+     25.5
+    ],
+    "prior_sales_b": 58.01,
+    "prior_source": "A63",
+    "prior_label": "Q2 FY15"
+   }
+  },
+  {
+   "fy": 2016,
+   "published": "2016-04-27",
+   "source": "A69",
+   "doc": "Q2 FY16 release",
+   "quote": "revenue between $41 billion and $43 billion; gross margin between 37.5 percent and 38 percent; operating expenses between $6 billion and $6.1 billion; other income/(expense) of $300 million; tax rate of 25.5 percent",
+   "q_guide": {
+    "quarter": "Q3 FY16",
+    "sales_usd_b": [
+     41.0,
+     43.0
+    ],
+    "gm_pct": [
+     37.5,
+     38.0
+    ],
+    "opex_usd_b": [
+     6.0,
+     6.1
+    ],
+    "oie_usd_b": [
+     0.3,
+     0.3
+    ],
+    "tax_pct": [
+     25.5,
+     25.5
+    ],
+    "prior_sales_b": 49.605,
+    "prior_source": "A65",
+    "prior_label": "Q3 FY15"
+   }
+  },
+  {
+   "fy": 2016,
+   "published": "2016-07-27",
+   "source": "A70",
+   "doc": "Q3 FY16 release",
+   "quote": "revenue between $45.5 billion and $47.5 billion; gross margin between 37.5 percent and 38 percent; operating expenses between $6.05 billion and $6.15 billion; other income/(expense) of $350 million; tax rate of 25.5 percent",
+   "q_guide": {
+    "quarter": "Q4 FY16",
+    "sales_usd_b": [
+     45.5,
+     47.5
+    ],
+    "gm_pct": [
+     37.5,
+     38.0
+    ],
+    "opex_usd_b": [
+     6.05,
+     6.15
+    ],
+    "oie_usd_b": [
+     0.35,
+     0.35
+    ],
+    "tax_pct": [
+     25.5,
+     25.5
+    ],
+    "prior_sales_b": 51.501,
+    "prior_source": "A66",
+    "prior_label": "Q4 FY15"
+   }
+  },
+  {
+   "fy": 2017,
+   "published": "2016-10-26",
+   "source": "A71",
+   "doc": "Q4 FY16 release",
+   "quote": "revenue between $76 billion and $78 billion; gross margin between 38 percent and 38.5 percent; operating expenses between $6.9 billion and $7 billion; other income/(expense) of $400 million; tax rate of 26 percent",
+   "q_guide": {
+    "quarter": "Q1 FY17",
+    "sales_usd_b": [
+     76.0,
+     78.0
+    ],
+    "gm_pct": [
+     38.0,
+     38.5
+    ],
+    "opex_usd_b": [
+     6.9,
+     7.0
+    ],
+    "oie_usd_b": [
+     0.4,
+     0.4
+    ],
+    "tax_pct": [
+     26.0,
+     26.0
+    ],
+    "prior_sales_b": 75.872,
+    "prior_source": "A68",
+    "prior_label": "Q1 FY16"
+   }
+  },
+  {
+   "fy": 2017,
+   "published": "2017-02-01",
+   "source": "A73",
+   "doc": "Q1 FY17 release",
+   "quote": "revenue between $51.5 billion and $53.5 billion; gross margin between 38 percent and 39 percent; operating expenses between $6.5 billion and $6.6 billion; other income/(expense) of $400 million; tax rate of 26 percent",
+   "q_guide": {
+    "quarter": "Q2 FY17",
+    "sales_usd_b": [
+     51.5,
+     53.5
+    ],
+    "gm_pct": [
+     38.0,
+     39.0
+    ],
+    "opex_usd_b": [
+     6.5,
+     6.6
+    ],
+    "oie_usd_b": [
+     0.4,
+     0.4
+    ],
+    "tax_pct": [
+     26.0,
+     26.0
+    ],
+    "prior_sales_b": 50.557,
+    "prior_source": "A69",
+    "prior_label": "Q2 FY16"
+   }
+  },
+  {
+   "fy": 2017,
+   "published": "2017-05-03",
+   "source": "A74",
+   "doc": "Q2 FY17 release",
+   "quote": "revenue between $43.5 billion and $45.5 billion; gross margin between 37.5 percent and 38.5 percent; operating expenses between $6.6 billion and $6.7 billion; other income/(expense) of $450 million; tax rate of 25.5 percent",
+   "q_guide": {
+    "quarter": "Q3 FY17",
+    "sales_usd_b": [
+     43.5,
+     45.5
+    ],
+    "gm_pct": [
+     37.5,
+     38.5
+    ],
+    "opex_usd_b": [
+     6.6,
+     6.7
+    ],
+    "oie_usd_b": [
+     0.45,
+     0.45
+    ],
+    "tax_pct": [
+     25.5,
+     25.5
+    ],
+    "prior_sales_b": 42.358,
+    "prior_source": "A70",
+    "prior_label": "Q3 FY16"
+   }
+  },
+  {
+   "fy": 2017,
+   "published": "2017-08-02",
+   "source": "A75",
+   "doc": "Q3 FY17 release",
+   "quote": "revenue between $49 billion and $52 billion; gross margin between 37.5 percent and 38 percent; operating expenses between $6.7 billion and $6.8 billion; other income/(expense) of $500 million; tax rate of 25.5 percent",
+   "q_guide": {
+    "quarter": "Q4 FY17",
+    "sales_usd_b": [
+     49.0,
+     52.0
+    ],
+    "gm_pct": [
+     37.5,
+     38.0
+    ],
+    "opex_usd_b": [
+     6.7,
+     6.8
+    ],
+    "oie_usd_b": [
+     0.5,
+     0.5
+    ],
+    "tax_pct": [
+     25.5,
+     25.5
+    ],
+    "prior_sales_b": 46.852,
+    "prior_source": "A71",
+    "prior_label": "Q4 FY16"
+   }
+  },
+  {
+   "fy": 2018,
+   "published": "2017-11-03",
+   "source": "A76",
+   "doc": "Q4 FY17 release",
+   "quote": "revenue between $84 billion and $87 billion; gross margin between 38 percent and 38.5 percent; operating expenses between $7.65 billion and $7.75 billion; other income/(expense) of $600 million; tax rate of 25.5 percent",
+   "q_guide": {
+    "quarter": "Q1 FY18",
+    "sales_usd_b": [
+     84.0,
+     87.0
+    ],
+    "gm_pct": [
+     38.0,
+     38.5
+    ],
+    "opex_usd_b": [
+     7.65,
+     7.75
+    ],
+    "oie_usd_b": [
+     0.6,
+     0.6
+    ],
+    "tax_pct": [
+     25.5,
+     25.5
+    ],
+    "prior_sales_b": 78.351,
+    "prior_source": "A73",
+    "prior_label": "Q1 FY17"
+   },
+   "q_guide_note": "Q1 FY17, the year-ago quarter, included 'a 14th week' (FY2017 10-K)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-02-02",
+   "source": "A78",
+   "doc": "Q1 FY18 release",
+   "quote": "revenue between $60 billion and $62 billion; gross margin between 38 percent and 38.5 percent; operating expenses between $7.6 billion and $7.7 billion; other income/(expense) of $300 million; tax rate of approximately 15 percent",
+   "q_guide": {
+    "quarter": "Q2 FY18",
+    "sales_usd_b": [
+     60.0,
+     62.0
+    ],
+    "gm_pct": [
+     38.0,
+     38.5
+    ],
+    "opex_usd_b": [
+     7.6,
+     7.7
+    ],
+    "oie_usd_b": [
+     0.3,
+     0.3
+    ],
+    "tax_pct": [
+     15.0,
+     15.0
+    ],
+    "prior_sales_b": 52.896,
+    "prior_source": "A74",
+    "prior_label": "Q2 FY17"
+   }
+  },
+  {
+   "fy": 2018,
+   "published": "2018-05-02",
+   "source": "A80",
+   "doc": "Q2 FY18 release",
+   "quote": "revenue between $51.5 billion and $53.5 billion; gross margin between 38 percent and 38.5 percent; operating expenses between $7.7 billion and $7.8 billion; other income/(expense) of $400 million; tax rate of approximately 14.5 percent",
+   "q_guide": {
+    "quarter": "Q3 FY18",
+    "sales_usd_b": [
+     51.5,
+     53.5
+    ],
+    "gm_pct": [
+     38.0,
+     38.5
+    ],
+    "opex_usd_b": [
+     7.7,
+     7.8
+    ],
+    "oie_usd_b": [
+     0.4,
+     0.4
+    ],
+    "tax_pct": [
+     14.5,
+     14.5
+    ],
+    "prior_sales_b": 45.408,
+    "prior_source": "A75",
+    "prior_label": "Q3 FY17"
+   }
+  },
+  {
+   "fy": 2018,
+   "published": "2018-08-01",
+   "source": "A81",
+   "doc": "Q3 FY18 release",
+   "quote": "revenue between $60 billion and $62 billion; gross margin between 38 percent and 38.5 percent; operating expenses between $7.95 billion and $8.05 billion; other income/(expense) of $300 million; tax rate of approximately 15 percent before discrete items",
+   "q_guide": {
+    "quarter": "Q4 FY18",
+    "sales_usd_b": [
+     60.0,
+     62.0
+    ],
+    "gm_pct": [
+     38.0,
+     38.5
+    ],
+    "opex_usd_b": [
+     7.95,
+     8.05
+    ],
+    "oie_usd_b": [
+     0.3,
+     0.3
+    ],
+    "tax_pct": [
+     15.0,
+     15.0
+    ],
+    "prior_sales_b": 52.579,
+    "prior_source": "A76",
+    "prior_label": "Q4 FY17"
+   }
+  },
+  {
+   "fy": 2019,
+   "published": "2018-11-02",
+   "source": "A82",
+   "doc": "Q4 FY18 release",
+   "quote": "revenue between $89 billion and $93 billion; gross margin between 38 percent and 38.5 percent; operating expenses between $8.7 billion and $8.8 billion; other income/(expense) of $300 million; tax rate of approximately 16.5 percent before discrete items",
+   "q_guide": {
+    "quarter": "Q1 FY19",
+    "sales_usd_b": [
+     89.0,
+     93.0
+    ],
+    "gm_pct": [
+     38.0,
+     38.5
+    ],
+    "opex_usd_b": [
+     8.7,
+     8.8
+    ],
+    "oie_usd_b": [
+     0.3,
+     0.3
+    ],
+    "tax_pct": [
+     16.5,
+     16.5
+    ],
+    "prior_sales_b": 88.293,
+    "prior_source": "A78",
+    "prior_label": "Q1 FY18"
+   }
+  },
+  {
+   "fy": 2019,
+   "published": "2019-01-03",
+   "source": "A84",
+   "doc": "8-K of 2019-01-02",
+   "quote": "Revenue of approximately $84 billion; Gross margin of approximately 38 percent; Operating expenses of approximately $8.7 billion; Other income/(expense) of approximately $550 million; Tax rate of approximately 16.5 percent before discrete items",
+   "q_guide": {
+    "quarter": "Q1 FY19",
+    "sales_usd_b": [
+     84.0,
+     84.0
+    ],
+    "gm_pct": [
+     38.0,
+     38.0
+    ],
+    "opex_usd_b": [
+     8.7,
+     8.7
+    ],
+    "oie_usd_b": [
+     0.55,
+     0.55
+    ],
+    "tax_pct": [
+     16.5,
+     16.5
+    ],
+    "prior_sales_b": 88.293,
+    "prior_source": "A78",
+    "prior_label": "Q1 FY18"
+   },
+   "q_guide_note": "revised from $89-93B by the letter of 2019-01-02: 'our revenue will be lower than our original guidance for the quarter'"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-01-30",
+   "source": "A85",
+   "doc": "Q1 FY19 release",
+   "quote": "revenue between $55 billion and $59 billion; gross margin between 37 percent and 38 percent; operating expenses between $8.5 billion and $8.6 billion; other income/(expense) of $300 million; tax rate of approximately 17 percent",
+   "q_guide": {
+    "quarter": "Q2 FY19",
+    "sales_usd_b": [
+     55.0,
+     59.0
+    ],
+    "gm_pct": [
+     37.0,
+     38.0
+    ],
+    "opex_usd_b": [
+     8.5,
+     8.6
+    ],
+    "oie_usd_b": [
+     0.3,
+     0.3
+    ],
+    "tax_pct": [
+     17.0,
+     17.0
+    ],
+    "prior_sales_b": 61.137,
+    "prior_source": "A80",
+    "prior_label": "Q2 FY18"
+   }
+  },
+  {
+   "fy": 2019,
+   "published": "2019-05-01",
+   "source": "A86",
+   "doc": "Q2 FY19 release",
+   "quote": "revenue between $52.5 billion and $54.5 billion; gross margin between 37 percent and 38 percent; operating expenses between $8.7 billion and $8.8 billion; other income/(expense) of $250 million; tax rate of approximately 16.5 percent",
+   "q_guide": {
+    "quarter": "Q3 FY19",
+    "sales_usd_b": [
+     52.5,
+     54.5
+    ],
+    "gm_pct": [
+     37.0,
+     38.0
+    ],
+    "opex_usd_b": [
+     8.7,
+     8.8
+    ],
+    "oie_usd_b": [
+     0.25,
+     0.25
+    ],
+    "tax_pct": [
+     16.5,
+     16.5
+    ],
+    "prior_sales_b": 53.265,
+    "prior_source": "A81",
+    "prior_label": "Q3 FY18"
+   }
+  },
+  {
+   "fy": 2019,
+   "published": "2019-07-31",
+   "source": "A87",
+   "doc": "Q3 FY19 release",
+   "quote": "revenue between $61 billion and $64 billion; gross margin between 37.5 percent and 38.5 percent; operating expenses between $8.7 billion and $8.8 billion; other income/(expense) of $200 million; tax rate of approximately 16.5 percent",
+   "q_guide": {
+    "quarter": "Q4 FY19",
+    "sales_usd_b": [
+     61.0,
+     64.0
+    ],
+    "gm_pct": [
+     37.5,
+     38.5
+    ],
+    "opex_usd_b": [
+     8.7,
+     8.8
+    ],
+    "oie_usd_b": [
+     0.2,
+     0.2
+    ],
+    "tax_pct": [
+     16.5,
+     16.5
+    ],
+    "prior_sales_b": 62.9,
+    "prior_source": "A82",
+    "prior_label": "Q4 FY18"
+   }
+  },
+  {
+   "fy": 2020,
+   "published": "2019-10-31",
+   "source": "A88",
+   "doc": "Q4 FY19 release",
+   "quote": "revenue between $85.5 billion and $89.5 billion; gross margin between 37.5 percent and 38.5 percent; operating expenses between $9.6 billion and $9.8 billion; other income/(expense) of $200 million; tax rate of approximately 16.5 percent",
+   "q_guide": {
+    "quarter": "Q1 FY20",
+    "sales_usd_b": [
+     85.5,
+     89.5
+    ],
+    "gm_pct": [
+     37.5,
+     38.5
+    ],
+    "opex_usd_b": [
+     9.6,
+     9.8
+    ],
+    "oie_usd_b": [
+     0.2,
+     0.2
+    ],
+    "tax_pct": [
+     16.5,
+     16.5
+    ],
+    "prior_sales_b": 84.31,
+    "prior_source": "A85",
+    "prior_label": "Q1 FY19"
+   }
   }
  ],
  "dividends": [
@@ -4341,6 +6352,30 @@
    "source": "A64",
    "quarterly": 0.52,
    "note": "$.52 a quarter: 'an increase of 11 percent' (8-K of 2015-04-27)"
+  },
+  {
+   "published": "2016-04-27",
+   "source": "A69",
+   "quarterly": 0.57,
+   "note": "$.57 a quarter: 'an increase of 10 percent to the Company’s quarterly dividend' (Q2 FY16 release)"
+  },
+  {
+   "published": "2017-05-03",
+   "source": "A74",
+   "quarterly": 0.63,
+   "note": "$0.63 a quarter: 'a 10.5% increase to the Company’s quarterly dividend' (Q2 FY17 release)"
+  },
+  {
+   "published": "2018-05-02",
+   "source": "A80",
+   "quarterly": 0.73,
+   "note": "$0.73 a quarter: 'a 16 percent increase in our quarterly dividend' (Q2 FY18 release)"
+  },
+  {
+   "published": "2019-05-01",
+   "source": "A86",
+   "quarterly": 0.77,
+   "note": "$0.77 a quarter: 'a cash dividend of $0.77 per share of the Company’s common stock, an increase of 5 percent' (Q2 FY19 release)"
   }
  ],
  "capital_return": [
@@ -4367,6 +6402,30 @@
    "source": "A64",
    "doc": "8-K of 2015-04-27",
    "text": "a $200 billion program: repurchase authorization raised to $140 billion, dividend raised 11% to $.52 (8-K of 2015-04-27)"
+  },
+  {
+   "published": "2016-04-27",
+   "source": "A69",
+   "doc": "Q2 FY16 release",
+   "text": "a $250 billion program: repurchase authorization raised to $175 billion, dividend raised 10% to $.57 (Q2 FY16 release)"
+  },
+  {
+   "published": "2017-05-03",
+   "source": "A74",
+   "doc": "Q2 FY17 release",
+   "text": "a $300 billion program: repurchase authorization raised to $210 billion, dividend raised 10.5% to $0.63 (Q2 FY17 release)"
+  },
+  {
+   "published": "2018-05-02",
+   "source": "A80",
+   "doc": "Q2 FY18 release",
+   "text": "a new $100 billion repurchase authorization after the $210 billion one, dividend raised 16% to $0.73 (Q2 FY18 release)"
+  },
+  {
+   "published": "2019-05-01",
+   "source": "A86",
+   "doc": "Q2 FY19 release",
+   "text": "an additional $75 billion repurchase authorization, dividend raised 5% to $0.77 (Q2 FY19 release)"
   }
  ],
  "events": [],

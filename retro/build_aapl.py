@@ -30,6 +30,9 @@ From the Q1 FY13 release a guide is a list: revenue and gross-margin ranges, ope
 tax rate, for the next quarter, and no EPS; the last three are shown in the guide line and feed no input (an operating margin
 derived from them would be a figure derived from others; a quarter's tax rate is not the year's). Dividends are the latest
 declared rate; catalyst (5) shows the latest statement of the capital return program (capital_return).
+From Q1 FY19 Apple reports net sales by category only, with no unit sales: the Mac unit signal has no value and scores BASE (the
+engine), and Mac and iPhone net sales growth (mac_sales_pct, iphone_sales_pct) are shown instead. A filing that revises a quarter's
+guide with new numbers (the letter of 2019-01-02) is a guide of its own: each field it states replaces the earlier one.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Apple released after the close, so a print is dated the next
@@ -245,8 +248,10 @@ def build(as_of, facts, raw, spx, engine, out):
                 ([f"revenue {usd_level(*gqs['q_guide']['sales_usd_b'])}"] if gqs else []) + ([f"EPS {rng(*gqe['q_guide']['eps'])}"] if gqe else []))
             + f"; Apple guides one quarter at a time, no {fy_now} guide" if (gqs or gqe) else
             f"(3) A {next_q} guide — the {latest['quarter']} release gives none ('{latest['outlook_short']}')")
-    # iPad units from the Q3 FY10 print; no iPod units from the Q1 FY15 print
-    cat4 = (f"(4) iPod and iPhone — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones in {latest['quarter']}: "
+    # iPad units from the Q3 FY10 print; no iPod units from the Q1 FY15 print; no unit sales at all from the Q1 FY19 print
+    cat4 = (f"(4) iPhone and iPad — no unit sales reported in {latest['quarter']}: iPhone net sales {latest['iphone_sales_pct']:+.1f}%, "
+            f"net sales other than Macs {latest['non_mac_pct']:+.1f}%" if latest["iphone_units_k"] is None else
+            f"(4) iPod and iPhone — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones in {latest['quarter']}: "
             f"net sales other than Macs {latest['non_mac_pct']:+.1f}%" if latest.get("ipad_units_k") is None else
             f"(4) iPod, iPhone and iPad — iPods {latest['ipod_units_pct']:+.1f}%, {latest['iphone_units_k']:,}K iPhones and "
             f"{latest['ipad_units_k']:,}K iPads in {latest['quarter']}: net sales other than Macs {latest['non_mac_pct']:+.1f}%"
@@ -285,7 +290,7 @@ def build(as_of, facts, raw, spx, engine, out):
     fcf_txt = f", {h.get('fcf_label', h['fy_label'])} free cash flow ${fcf:.2f}B" if fcf is not None else ""
     # a Q4 release gives no full-year Mac units (its data sheet is the quarter's): the 10-K supplies them later
     macs_txt = (f"Mac units {h['prev_fy_mac_units_k']:,}K ({h['prev_fy_mac_units_pct']:+.1f}%)" if h["prev_fy_mac_units_k"] is not None
-                else "no full-year Mac units in the Q4 release")
+                else h.get("mac_units_note", "no full-year Mac units in the Q4 release"))
     ng = f"; {latest['quarter']} {latest['non_gaap_note']}" if latest.get("non_gaap_note") else ""
     # from Q1 FY10 there is no subscription deferral to show (the new accounting principles, adopted retrospectively)
     deferred_txt = (f"iPhone and Apple TV deferred revenue ${latest['deferred_iphone_b']:.2f}B at {latest['quarter']} (subscription accounting){ng}"
@@ -351,7 +356,7 @@ VOL_DIVIDEND  = CONS_DIVIDEND
 MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
 
 # ── FACTS: latest print ({latest["source"]}, published {latest["published"]}) and {fy_now} guide ──
-LATEST          = {R({k: latest.get(k) for k in latest_keys})}
+LATEST          = {R({**{k: latest.get(k) for k in latest_keys}, **{k: latest[k] for k in ('mac_sales_pct', 'iphone_sales_pct') if k in latest}})}
 PREV_MAC_UNITS  = {R(prev)}
 EPP_TODAY_EPS   = {eps_now}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}

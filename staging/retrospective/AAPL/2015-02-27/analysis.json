@@ -160,7 +160,7 @@
    "filed": "2014-10-27 17:11 ET (after the close)",
    "title": "Apple Inc. FY2014 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312514383437/d783162d10k.htm",
-   "supports": "selected financial data FY2010-FY2014 restated for the 7-for-1 split (net sales, diluted EPS, diluted shares 6,122,663K in FY14, commercial paper $6,308M, long-term debt $28,987M); income statement FY2012-FY2014; net sales and unit sales by product FY2012-FY2014; cash flow; 437 retail stores; competition and OS X wording; quarterly dividends of $0.47 expected"
+   "supports": "selected financial data FY2010-FY2014 restated for the 7-for-1 split (net sales, diluted EPS, diluted shares 6,122,663K in FY14 and 6,472,983K in FY10, commercial paper $6,308M, long-term debt $28,987M); income statement FY2012-FY2014; net sales and unit sales by product FY2012-FY2014; cash flow; 437 retail stores; competition and OS X wording; quarterly dividends of $0.47 expected"
   },
   {
    "id": "A55",
@@ -168,7 +168,7 @@
    "filed": "2013-10-29 20:38 ET (after the close)",
    "title": "Apple Inc. FY2013 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312513416534/d590790d10k.htm",
-   "supports": "selected financial data FY2009-FY2013 (net sales, diluted EPS, diluted shares 931,662K in FY13, long-term debt $16,960M); income statement FY2011-FY2013; net sales and unit sales by product FY2011-FY2013; cash flow; 416 retail stores; competition and OS X wording; quarterly dividends of $3.05 expected"
+   "supports": "selected financial data FY2009-FY2013 (net sales, diluted EPS, diluted shares 931,662K in FY13 and 907,005K in FY09, long-term debt $16,960M); income statement FY2011-FY2013; net sales and unit sales by product FY2011-FY2013; cash flow; 416 retail stores; competition and OS X wording; quarterly dividends of $3.05 expected"
   },
   {
    "id": "A48",
@@ -176,7 +176,7 @@
    "filed": "2012-10-31 17:07 ET (after the close)",
    "title": "Apple Inc. FY2012 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312512444068/d411355d10k.htm",
-   "supports": "selected financial data FY2008-FY2012 (net sales, diluted EPS, diluted shares 945,355K in FY12, a $2.65 dividend declared in Q4 FY12, no long-term debt); income statement FY2010-FY2012; net sales and unit sales by product FY2010-FY2012; cash flow; 390 retail stores; competition and OS X wording; gross margin expectation 'about 36% during the first quarter of 2013'"
+   "supports": "selected financial data FY2008-FY2012 (net sales, diluted EPS, diluted shares 945,355K in FY12 and 902,139K in FY08, a $2.65 dividend declared in Q4 FY12, no long-term debt); income statement FY2010-FY2012; net sales and unit sales by product FY2010-FY2012; cash flow; 390 retail stores; competition and OS X wording; gross margin expectation 'about 36% during the first quarter of 2013'"
   },
   {
    "id": "A42",
@@ -184,7 +184,7 @@
    "filed": "2011-10-26 16:35 ET (after the close)",
    "title": "Apple Inc. FY2011 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/320193/000119312511282113/d220209d10k.htm",
-   "supports": "selected financial data FY2007-FY2011 (net sales, diluted EPS, diluted shares 936,645K in FY11); income statement FY2009-FY2011; net sales and unit sales by product FY2009-FY2011; cash flow; no dividends in 2011 or 2010; no debt outstanding; 357 retail stores; competition and Mac OS X wording"
+   "supports": "selected financial data FY2007-FY2011 (net sales, diluted EPS, diluted shares 936,645K in FY11 and 889,292K in FY07); income statement FY2009-FY2011; net sales and unit sales by product FY2009-FY2011; cash flow; no dividends in 2011 or 2010; no debt outstanding; 357 retail stores; competition and Mac OS X wording"
   },
   {
    "id": "A37",
@@ -339,5 +339,5 @@
   }
  ],
  "warnings": [],
- "generated": "2026-10-29"
+ "generated": "2026-10-30"
 }

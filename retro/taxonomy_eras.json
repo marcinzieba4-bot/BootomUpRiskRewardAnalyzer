@@ -382,6 +382,160 @@
     "first_seen": "2016-09-07"
    },
    {
+    "term": "macOS",
+    "first_seen": "2016-06-13",
+    "note": "macOS Sierra announced at WWDC; earlier filings say OS X"
+   },
+   {
+    "term": "iOS 10",
+    "first_seen": "2016-06-13"
+   },
+   {
+    "term": "Apple Watch Series 2",
+    "first_seen": "2016-09-07"
+   },
+   {
+    "term": "Touch Bar",
+    "first_seen": "2016-10-27"
+   },
+   {
+    "term": "HomePod",
+    "first_seen": "2017-06-05"
+   },
+   {
+    "term": "iMac Pro",
+    "first_seen": "2017-06-05"
+   },
+   {
+    "term": "ARKit",
+    "first_seen": "2017-06-05"
+   },
+   {
+    "term": "iOS 11",
+    "first_seen": "2017-06-05"
+   },
+   {
+    "term": "High Sierra",
+    "first_seen": "2017-06-05"
+   },
+   {
+    "term": "iPhone 8",
+    "first_seen": "2017-09-12"
+   },
+   {
+    "term": "iPhone X",
+    "first_seen": "2017-09-12"
+   },
+   {
+    "term": "Face ID",
+    "first_seen": "2017-09-12"
+   },
+   {
+    "term": "Animoji",
+    "first_seen": "2017-09-12"
+   },
+   {
+    "term": "Apple Watch Series 3",
+    "first_seen": "2017-09-12"
+   },
+   {
+    "term": "Apple TV 4K",
+    "first_seen": "2017-09-12"
+   },
+   {
+    "term": "Tax Cuts and Jobs Act",
+    "first_seen": "2017-11-02",
+    "note": "the bill introduced in the House; enacted 2017-12-22"
+   },
+   {
+    "term": "iOS 12",
+    "first_seen": "2018-06-04"
+   },
+   {
+    "term": "Mojave",
+    "first_seen": "2018-06-04"
+   },
+   {
+    "term": "Memoji",
+    "first_seen": "2018-06-04"
+   },
+   {
+    "term": "iPhone XS",
+    "first_seen": "2018-09-12"
+   },
+   {
+    "term": "iPhone XR",
+    "first_seen": "2018-09-12"
+   },
+   {
+    "term": "Apple Watch Series 4",
+    "first_seen": "2018-09-12"
+   },
+   {
+    "term": "Apple Card",
+    "first_seen": "2019-03-25"
+   },
+   {
+    "term": "Apple Arcade",
+    "first_seen": "2019-03-25"
+   },
+   {
+    "term": "Apple TV+",
+    "first_seen": "2019-03-25"
+   },
+   {
+    "term": "Apple News+",
+    "first_seen": "2019-03-25"
+   },
+   {
+    "term": "iOS 13",
+    "first_seen": "2019-06-03"
+   },
+   {
+    "term": "iPadOS",
+    "first_seen": "2019-06-03"
+   },
+   {
+    "term": "macOS Catalina",
+    "first_seen": "2019-06-03"
+   },
+   {
+    "term": "iPhone 11",
+    "first_seen": "2019-09-10"
+   },
+   {
+    "term": "Apple Watch Series 5",
+    "first_seen": "2019-09-10"
+   },
+   {
+    "term": "AirPods Pro",
+    "first_seen": "2019-10-28"
+   },
+   {
+    "term": "Apple Silicon",
+    "first_seen": "2020-06-22"
+   },
+   {
+    "term": "macOS Big Sur",
+    "first_seen": "2020-06-22"
+   },
+   {
+    "term": "iOS 14",
+    "first_seen": "2020-06-22"
+   },
+   {
+    "term": "Apple Fitness+",
+    "first_seen": "2020-09-15"
+   },
+   {
+    "term": "iPhone 12",
+    "first_seen": "2020-10-13"
+   },
+   {
+    "term": "M1 chip",
+    "first_seen": "2020-11-10"
+   },
+   {
     "term": "GitHub Copilot",
     "first_seen": "2021-06-29"
    },

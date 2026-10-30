@@ -51,7 +51,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       op_margin=-50.0, op_margin_bp=-999, mac_units_k=1, mac_units_pct=-60.0, non_mac_pct=-60.0, ipod_units_k=1,
                       ipod_units_pct=-60.0, iphone_units_k=1, eps_q=0.01, eps_q_prior=9.99, deferred_iphone_b=99.0,
                       non_gaap_note="PLANTED", cash_return_text="PLANTED", outlook_short="PLANTED", next_print="PLANTED",
-                      diluted_shares_m=1.0, cash_b=99.0)}[TICKER]
+                      diluted_shares_m=1.0, cash_b=99.0, mac_sales_pct=-60.0, iphone_sales_pct=-60.0)}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
