@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. NIKE gave no revenue, EPS or margin guide in numbers in any filing of the period: the outlook on its calls is in words ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states. rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date. NIKE gave no revenue, EPS or pre-tax margin guide in numbers in any filing of the period: the outlook on its calls is in words, gross-margin changes at times in basis points ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes it states; eps_q is diluted EPS, excluding non-comparable items where the release publishes that figure (GAAP in the note). rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "NKE",
  "sources": {
   "N1": {
@@ -190,6 +190,188 @@
    "title": "NIKE Q2 FY09 earnings call transcript (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/320187/000114036108028593/ex99.htm",
    "supports": "the CFO's fiscal 2009 outlook in words"
+  },
+  "N28": {
+   "published": "2009-03-19",
+   "filed": "2009-03-18 16:20 ET (after the close)",
+   "title": "NIKE Q3 FY09 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000035/exhibit991.htm",
+   "supports": "Q3 FY09 income statement and balance sheet; revenue up 2 percent and futures orders down 2 percent excluding changes in currency; EPS excluding the Umbro impairment $0.99 vs $0.88; expected restructuring charges of $175-225 million"
+  },
+  "N29": {
+   "published": "2009-03-24",
+   "filed": "2009-03-24 15:09 ET (during market hours)",
+   "title": "NIKE Q3 FY09 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000037/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2009 fourth-quarter and initial fiscal 2010 outlook in words"
+  },
+  "N30": {
+   "published": "2009-06-25",
+   "filed": "2009-06-24 16:19 ET (after the close)",
+   "title": "NIKE Q4 FY09 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000049/exhibit99er.htm",
+   "supports": "Q4 FY09 and FY09 income statement and balance sheet; futures 12 percent lower, 5 percent lower excluding currency changes; diluted EPS excluding non-comparable items $0.99 vs $0.94 (Q4) and $3.81 vs $3.45 (FY09 vs FY08)"
+  },
+  "N31": {
+   "published": "2009-07-02",
+   "filed": "2009-07-01 19:07 ET (after the close)",
+   "title": "NIKE Q4 FY09 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000051/exhibit99ercc.htm",
+   "supports": "the CFO's fiscal 2010 outlook in words"
+  },
+  "N32": {
+   "published": "2009-07-28",
+   "filed": "2009-07-27 17:27 ET (after the close)",
+   "title": "NIKE, Inc. FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312509155951/d10k.htm",
+   "supports": "selected financial data FY2005-FY2009 (revenues, gross margin, diluted EPS, diluted shares 490.7M in FY09, inventories, long-term debt); reconciliation of diluted EPS excluding non-comparable items ($3.81 FY09, $3.45 FY08); income statement FY2007-FY2009; revenues by operating segment (four regions and Other); futures and advance orders 'declined 12%'; cash flow (operations $1,736.1M, additions to PP&E $455.7M, repurchases $649.2M); quarterly dividends declared; business and competition wording"
+  },
+  "N33": {
+   "published": "2009-09-30",
+   "filed": "2009-09-29 16:17 ET (after the close)",
+   "title": "NIKE Q1 FY10 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000113/exhibit991er.htm",
+   "supports": "Q1 FY10 income statement and balance sheet; revenues down 7 percent and futures down 4 percent excluding currency changes"
+  },
+  "N34": {
+   "published": "2009-10-02",
+   "filed": "2009-10-01 18:40 ET (after the close)",
+   "title": "NIKE Q1 FY10 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000115/exhibit911ercc.htm",
+   "supports": "the CFO's fiscal 2010 outlook in words"
+  },
+  "N35": {
+   "published": "2009-12-18",
+   "filed": "2009-12-17 16:18 ET (after the close)",
+   "title": "NIKE Q2 FY10 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000161/exhibit99er.htm",
+   "supports": "Q2 FY10 income statement and balance sheet; revenues down 4 percent excluding currency changes; futures down 1 percent excluding currency changes; dividend declared $0.27 (was $0.25)"
+  },
+  "N36": {
+   "published": "2009-12-22",
+   "filed": "2009-12-21 19:06 ET (after the close)",
+   "title": "NIKE Q2 FY10 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000163/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2010 outlook in words"
+  },
+  "N37": {
+   "published": "2010-03-18",
+   "filed": "2010-03-17 16:19 ET (after the close)",
+   "title": "NIKE Q3 FY10 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000029/exhibit99er.htm",
+   "supports": "Q3 FY10 income statement and balance sheet; revenues up 2 percent and futures up 6 percent excluding currency changes; prior-year EPS excluding the Umbro impairment $0.99"
+  },
+  "N38": {
+   "published": "2010-03-23",
+   "filed": "2010-03-23 13:14 ET (during market hours)",
+   "title": "NIKE Q3 FY10 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000036/exhibit99ercc.htm",
+   "supports": "the CFO's fiscal 2010 fourth-quarter outlook and fiscal 2011 planning in words"
+  },
+  "N39": {
+   "published": "2010-06-24",
+   "filed": "2010-06-23 16:19 ET (after the close)",
+   "title": "NIKE Q4 FY10 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000062/exhibit991.htm",
+   "supports": "Q4 FY10 and FY10 income statement and balance sheet; revenues up 4 percent and futures up 10 percent excluding currency changes; prior-year EPS excluding non-comparable items $0.99 (Q4) and $3.81 (FY09)"
+  },
+  "N40": {
+   "published": "2010-06-29",
+   "filed": "2010-06-28 19:37 ET (after the close)",
+   "title": "NIKE Q4 FY10 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000064/exhibit991.htm",
+   "supports": "the CFO's fiscal 2011 outlook in words"
+  },
+  "N41": {
+   "published": "2010-07-21",
+   "filed": "2010-07-20 17:18 ET (after the close)",
+   "title": "NIKE, Inc. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312510161874/d10k.htm",
+   "supports": "selected financial data FY2006-FY2010 in whole millions (revenues, gross margin, diluted EPS, diluted shares 493.9M in FY10, inventories); reconciliation of diluted EPS excluding non-comparable items ($3.86 FY10, $3.81 FY09); income statement FY2008-FY2010; revenues by operating segment (six geographies, Global Brand Divisions, Other Businesses, Corporate); futures orders 7% higher at forecasted exchange rates, 10% at prior-year rates; cash flow (operations $3,164.2M, additions to PP&E $335.1M, repurchases $741.2M); quarterly dividends declared; EBIT as the segment measure from June 1, 2009; business and competition wording"
+  },
+  "N42": {
+   "published": "2010-09-24",
+   "filed": "2010-09-23 16:18 ET (after the close)",
+   "title": "NIKE Q1 FY11 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000135/exhibit99.htm",
+   "supports": "Q1 FY11 income statement and balance sheet in whole millions; revenues up 10 percent and futures up 13 percent excluding currency changes"
+  },
+  "N43": {
+   "published": "2010-09-27",
+   "filed": "2010-09-27 14:50 ET (during market hours)",
+   "title": "NIKE Q1 FY11 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000139/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2011 outlook in words"
+  },
+  "N44": {
+   "published": "2010-12-22",
+   "filed": "2010-12-21 16:22 ET (after the close)",
+   "title": "NIKE Q2 FY11 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000194/exhibit991.htm",
+   "supports": "Q2 FY11 income statement and balance sheet; revenues up 11 percent excluding currency changes; NIKE Brand futures up 11 percent, reported and excluding currency changes; dividend declared $0.31 (was $0.27)"
+  },
+  "N45": {
+   "published": "2010-12-28",
+   "filed": "2010-12-28 13:24 ET (during market hours)",
+   "title": "NIKE Q2 FY11 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018710000200/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2011 outlook in words"
+  },
+  "N46": {
+   "published": "2011-03-18",
+   "filed": "2011-03-17 16:19 ET (after the close)",
+   "title": "NIKE Q3 FY11 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000021/exhibit991er.htm",
+   "supports": "Q3 FY11 income statement and balance sheet; revenues up 8 percent and futures up 9 percent excluding currency changes"
+  },
+  "N47": {
+   "published": "2011-03-22",
+   "filed": "2011-03-21 18:43 ET (after the close)",
+   "title": "NIKE Q3 FY11 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000023/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2011 fourth-quarter outlook and initial fiscal 2012 thinking in words"
+  },
+  "N48": {
+   "published": "2011-06-28",
+   "filed": "2011-06-27 16:22 ET (after the close)",
+   "title": "NIKE Q4 FY11 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000054/exhibit991er.htm",
+   "supports": "Q4 FY11 and FY11 income statement and balance sheet; revenues up 11 percent and futures up 12 percent excluding currency changes"
+  },
+  "N49": {
+   "published": "2011-07-25",
+   "filed": "2011-07-22 16:16 ET (after the close)",
+   "title": "NIKE, Inc. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312511194791/d10k.htm",
+   "supports": "selected financial data FY2007-FY2011 in whole millions (revenues, gross margin, diluted EPS, diluted shares 485.7M in FY11, inventories); income statement FY2009-FY2011; revenues by operating segment; futures and advance orders '15% higher'; cash flow (operations $1,812M, additions to PP&E $432M, repurchases $1,859M); quarterly dividends declared; business and competition wording"
+  },
+  "N50": {
+   "published": "2011-09-23",
+   "filed": "2011-09-22 16:17 ET (after the close)",
+   "title": "NIKE Q1 FY12 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000135/exhibit991.htm",
+   "supports": "Q1 FY12 income statement and balance sheet; revenues up 11 percent and futures up 13 percent excluding currency changes"
+  },
+  "N51": {
+   "published": "2011-09-26",
+   "filed": "2011-09-23 17:50 ET (after the close)",
+   "title": "NIKE Q1 FY12 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000140/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2012 outlook in words"
+  },
+  "N52": {
+   "published": "2011-12-21",
+   "filed": "2011-12-20 16:19 ET (after the close)",
+   "title": "NIKE Q2 FY12 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000179/exhibit991.htm",
+   "supports": "Q2 FY12 income statement ('Gross profit') and balance sheet; revenues up 16 percent excluding currency changes; futures up 13 percent, reported and excluding currency changes; dividend declared $0.36 (was $0.31)"
+  },
+  "N53": {
+   "published": "2011-12-23",
+   "filed": "2011-12-22 17:44 ET (after the close)",
+   "title": "NIKE Q2 FY12 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018711000181/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2012 outlook in words"
   }
  },
  "history_vintages": [
@@ -442,6 +624,422 @@
     ]
    ],
    "groups_basis": "FY08 revenues by operating segment (FY2008 10-K)"
+  },
+  {
+   "published": "2009-07-28",
+   "sources": [
+    "N32",
+    "N23",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N28"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY09",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2009 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2005": "2005-05-31",
+    "2006": "2006-05-31",
+    "2007": "2007-05-31",
+    "2008": "2008-05-31",
+    "2009": "2009-05-31"
+   },
+   "eps_gaap": {
+    "2000": 2.07,
+    "2001": 2.16,
+    "2002": 2.44,
+    "2003": 0.89,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 3.03
+   },
+   "eps_normalized": {
+    "2000": 2.07,
+    "2001": 2.16,
+    "2002": 2.46,
+    "2003": 1.38,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 3.81
+   },
+   "eps_published": {
+    "2000": "2004-08-02",
+    "2001": "2005-08-01",
+    "2002": "2006-07-31",
+    "2003": "2007-07-30",
+    "2004": "2008-07-29",
+    "2006": "2007-07-30"
+   },
+   "revenue_usd_b": {
+    "2000": 8.9951,
+    "2001": 9.4888,
+    "2002": 9.893,
+    "2003": 10.697,
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.9549,
+    "2007": 16.3259,
+    "2008": 18.627,
+    "2009": 19.1761
+   },
+   "diluted_shares_m": {
+    "2000": 279.4,
+    "2009": 490.7
+   },
+   "shares_published": {
+    "2000": "2004-08-02"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 10.2,
+   "prev_fy_pretax_margin_note": "FY09 income before income taxes $1,956.5M / revenues $19,176.1M (FY2009 10-K; GAAP, after the Umbro impairment and restructuring charges)",
+   "prev_fy_gross_margin": 44.87,
+   "prev_fy_sales_growth": 2.9,
+   "prev_fy_futures_pct": -12.0,
+   "prev_fy_futures_note": "the FY2009 10-K: 'declined 12%'",
+   "tax_rate": 0.2401,
+   "tax_note": "FY09 effective rate: income taxes $469.8M / pre-tax income $1,956.5M ('24.0%', FY2009 10-K), with the tax benefit of the Umbro impairment; a tax-rate estimate on a call feeds no input",
+   "fcf_b": 1.28,
+   "fcf_label": "FY09",
+   "prev_q_futures_pct": -10.0,
+   "prev_q_label": "Q3 FY09",
+   "prev_q_source": "N28",
+   "dividend_annual": 1.0,
+   "dividend_note": "$0.25 quarterly, declared in each of Q2-Q4 FY09 (FY2009 10-K)",
+   "cash_return_text": "$649.2M of share repurchases in FY09, long-term debt $437.2M",
+   "business_line": "NIKE brand footwear, apparel and equipment; Cole Haan, Converse, Hurley, NIKE Golf and Umbro",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY02, FY03), each year from the latest 10-K that reports it; FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 and FY09 = $3.81 excluding non-comparable items, the company's figures (GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each; GAAP $3.03, after the Umbro impairment, $0.49, and restructuring charges, $0.29) (FY2009 10-K); no year excluded",
+   "groups": [
+    [
+     "U.S. Region",
+     6.5429,
+     2.0
+    ],
+    [
+     "EMEA Region",
+     5.5122,
+     -2.1
+    ],
+    [
+     "Asia Pacific Region",
+     3.322,
+     15.0
+    ],
+    [
+     "Americas Region",
+     1.2847,
+     10.3
+    ],
+    [
+     "Other",
+     2.5143,
+     -0.7
+    ]
+   ],
+   "groups_basis": "FY09 revenues by operating segment (FY2009 10-K, FY08 as restated there)"
+  },
+  {
+   "published": "2010-07-21",
+   "sources": [
+    "N41",
+    "N32",
+    "N23",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N37"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY10",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2010 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2006": "2006-05-31",
+    "2007": "2007-05-31",
+    "2008": "2008-05-31",
+    "2009": "2009-05-31",
+    "2010": "2010-05-31"
+   },
+   "eps_gaap": {
+    "2001": 2.16,
+    "2002": 2.44,
+    "2003": 0.89,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 3.03,
+    "2010": 3.86
+   },
+   "eps_normalized": {
+    "2001": 2.16,
+    "2002": 2.46,
+    "2003": 1.38,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 3.81,
+    "2010": 3.86
+   },
+   "eps_published": {
+    "2001": "2005-08-01",
+    "2002": "2006-07-31",
+    "2003": "2007-07-30",
+    "2004": "2008-07-29",
+    "2005": "2009-07-28",
+    "2006": "2007-07-30",
+    "2008": "2009-07-28"
+   },
+   "revenue_usd_b": {
+    "2001": 9.4888,
+    "2002": 9.893,
+    "2003": 10.697,
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.955,
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 19.176,
+    "2010": 19.014
+   },
+   "diluted_shares_m": {
+    "2001": 273.3,
+    "2010": 493.9
+   },
+   "shares_published": {
+    "2001": "2005-08-01"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.24,
+   "prev_fy_pretax_margin_note": "FY10 income before income taxes $2,516.9M / revenues $19,014.0M (FY2010 10-K)",
+   "prev_fy_gross_margin": 46.28,
+   "prev_fy_sales_growth": -0.8,
+   "prev_fy_futures_pct": 7.0,
+   "prev_fy_futures_note": "the FY2010 10-K: 'increased 7% when translated at forecasted exchange rates', 10% at prior-year rates",
+   "tax_rate": 0.2424,
+   "tax_note": "FY10 effective rate: income taxes $610.2M / pre-tax income $2,516.9M ('24.2%', FY2010 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 2.829,
+   "fcf_label": "FY10",
+   "prev_q_futures_pct": 9.0,
+   "prev_q_label": "Q3 FY10",
+   "prev_q_source": "N37",
+   "dividend_annual": 1.08,
+   "dividend_note": "$0.27 quarterly, declared in each of Q2-Q4 FY10 (FY2010 10-K)",
+   "cash_return_text": "$741.2M of share repurchases in FY10, long-term debt $445.8M",
+   "business_line": "NIKE Brand footwear, apparel and equipment; Cole Haan, Converse, Hurley, NIKE Golf and Umbro",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY02, FY03), each year from the latest 10-K that reports it; FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 and FY09 = $3.81 excluding non-comparable items, the company's figures (GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each; GAAP $3.03, after the Umbro impairment, $0.49, and restructuring charges, $0.29) (FY2009 and FY2010 10-Ks); FY10 $3.86 has no such items; no year excluded",
+   "groups": [
+    [
+     "North America",
+     6.696,
+     -1.2
+    ],
+    [
+     "Western Europe",
+     3.892,
+     -6.0
+    ],
+    [
+     "Central and Eastern Europe",
+     1.15,
+     -16.2
+    ],
+    [
+     "Greater China",
+     1.742,
+     -0.1
+    ],
+    [
+     "Japan",
+     0.882,
+     -4.8
+    ],
+    [
+     "Emerging Markets",
+     2.042,
+     20.0
+    ],
+    [
+     "Global Brand Divisions",
+     0.105,
+     9.4
+    ],
+    [
+     "Other Businesses",
+     2.529,
+     4.5
+    ]
+   ],
+   "groups_basis": "FY10 revenues by operating segment (FY2010 10-K, whole millions; Corporate's -$24M left out)"
+  },
+  {
+   "published": "2011-07-25",
+   "sources": [
+    "N49",
+    "N41",
+    "N32",
+    "N23",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N46"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY11",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2011 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2007": "2007-05-31",
+    "2008": "2008-05-31",
+    "2009": "2009-05-31",
+    "2010": "2010-05-31",
+    "2011": "2011-05-31"
+   },
+   "eps_gaap": {
+    "2002": 2.44,
+    "2003": 0.89,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 3.03,
+    "2010": 3.86,
+    "2011": 4.39
+   },
+   "eps_normalized": {
+    "2002": 2.46,
+    "2003": 1.38,
+    "2004": 1.75,
+    "2005": 2.24,
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 3.81,
+    "2010": 3.86,
+    "2011": 4.39
+   },
+   "eps_published": {
+    "2002": "2006-07-31",
+    "2003": "2007-07-30",
+    "2004": "2008-07-29",
+    "2005": "2009-07-28",
+    "2006": "2007-07-30",
+    "2008": "2009-07-28",
+    "2009": "2010-07-21"
+   },
+   "revenue_usd_b": {
+    "2002": 9.893,
+    "2003": 10.697,
+    "2004": 12.2531,
+    "2005": 13.7397,
+    "2006": 14.955,
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 19.176,
+    "2010": 19.014,
+    "2011": 20.862
+   },
+   "diluted_shares_m": {
+    "2002": 272.2,
+    "2011": 485.7
+   },
+   "shares_published": {
+    "2002": "2006-07-31"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.63,
+   "prev_fy_pretax_margin_note": "FY11 income before income taxes $2,844M / revenues $20,862M (FY2011 10-K)",
+   "prev_fy_gross_margin": 45.58,
+   "prev_fy_sales_growth": 9.7,
+   "prev_fy_futures_pct": 15.0,
+   "prev_fy_futures_note": "the FY2011 10-K: '15% higher'",
+   "tax_rate": 0.25,
+   "tax_note": "FY11 effective rate: income taxes $711M / pre-tax income $2,844M ('25.0%', FY2011 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 1.38,
+   "fcf_label": "FY11",
+   "prev_q_futures_pct": 11.0,
+   "prev_q_label": "Q3 FY11",
+   "prev_q_source": "N46",
+   "dividend_annual": 1.24,
+   "dividend_note": "$0.31 quarterly, declared in each of Q2-Q4 FY11 (FY2011 10-K)",
+   "cash_return_text": "$1,859M of share repurchases in FY11, long-term debt $276M",
+   "business_line": "NIKE Brand footwear, apparel and equipment; affiliate brands Cole Haan, Converse, Hurley and Umbro; NIKE Golf",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY02, FY03), each year from the latest 10-K that reports it; FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 and FY09 = $3.81 excluding non-comparable items, the company's figures (GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each; GAAP $3.03, after the Umbro impairment, $0.49, and restructuring charges, $0.29) (FY2009 and FY2010 10-Ks); FY10 $3.86 and FY11 $4.39 have no such items; no year excluded",
+   "groups": [
+    [
+     "North America",
+     7.578,
+     13.2
+    ],
+    [
+     "Western Europe",
+     3.81,
+     -2.1
+    ],
+    [
+     "Central & Eastern Europe",
+     1.031,
+     3.8
+    ],
+    [
+     "Greater China",
+     2.06,
+     18.3
+    ],
+    [
+     "Japan",
+     0.766,
+     -13.2
+    ],
+    [
+     "Emerging Markets",
+     2.736,
+     24.4
+    ],
+    [
+     "Global Brand Divisions",
+     0.123,
+     17.1
+    ],
+    [
+     "Other Businesses",
+     2.747,
+     8.6
+    ]
+   ],
+   "groups_basis": "FY11 revenues by operating segment (FY2011 10-K, FY10 as restated there; Corporate's +$11M left out)"
   }
  ],
  "prints": [
@@ -732,6 +1330,499 @@
    "cash_return_text": "$209.3M of repurchases in Q2 FY09 ($2.7B to date of the four-year $3 billion program; the $5 billion program follows it)",
    "eps_note": "the Q2 FY09 tax rate reflects the extended R&D tax credit and a one-time foreign tax refund",
    "futures_fx_note": "the release states 'Excluding the effect of changes in foreign currency exchange rates, reported orders grew 6 percent'"
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-03-19",
+   "source": "N28",
+   "release": "Mar 18",
+   "release_time": "after the close on Mar 18: 8-K accepted 16:20 ET; public before the open of the next trading day",
+   "period_end": "2009-02-28",
+   "sales_b": 4.4408,
+   "sales_pct": -2.3,
+   "sales_note": "revenues $4,440.8M vs $4,544.4M",
+   "lc_pct": 2.0,
+   "lc_note": "the release: 'up 2 percent excluding changes in currency'",
+   "futures_pct": -10.0,
+   "futures_fx_pp": -8.0,
+   "futures_b": 6.5,
+   "futures_note": "worldwide futures orders for delivery March-July 2009, $6.5B",
+   "gross_margin": 43.88,
+   "gross_margin_bp": -118.7,
+   "gross_margin_note": "gross margin $1,948.5M / $4,440.8M vs $2,047.9M / $4,544.4M",
+   "pretax_margin": 5.3,
+   "pretax_margin_bp": -941.4,
+   "pretax_note": "income before income taxes $235.4M / $4,440.8M vs $668.7M / $4,544.4M",
+   "inventory_b": 2.4666,
+   "inventory_pct": 3.2,
+   "inventory_gap_pp": 5.4,
+   "inventory_note": "inventories $2,466.6M vs $2,390.9M a year earlier",
+   "eps_q": 0.99,
+   "eps_q_prior": 0.88,
+   "diluted_shares_m": 488.1,
+   "cash_b": 2.6042,
+   "cash_note": "cash and equivalents $1,892.1M + short-term investments $712.1M",
+   "next_print": "Q4 FY09 print (late June)",
+   "cash_return_text": "no repurchases in Q3 FY09 ($2.7B to date of the four-year $3 billion program approved in June 2006)",
+   "eps_note": "EPS excluding non-comparable items, the company's figures: Q3 FY09 $0.99 excludes the Umbro impairment ($0.49; GAAP $0.50), Q3 FY08 $0.88 the Starter sale gain (GAAP $0.92); pre-tax income is after the $401.3M impairment; restructuring charges of $175-225 million expected, mostly in Q4 FY09",
+   "futures_fx_note": "the release: 'down 2 percent excluding changes in currency'"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-06-25",
+   "source": "N30",
+   "release": "Jun 24",
+   "release_time": "after the close on Jun 24: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2009-05-31",
+   "sales_b": 4.713,
+   "sales_pct": -7.4,
+   "sales_note": "revenues $4,713.0M vs $5,088.0M",
+   "lc_pct": 0.0,
+   "lc_note": "the release: 'flat with the prior year excluding currency changes'",
+   "futures_pct": -12.0,
+   "futures_fx_pp": -7.0,
+   "futures_b": 7.8,
+   "futures_note": "worldwide futures orders for delivery June-November 2009, $7.8B",
+   "gross_margin": 43.37,
+   "gross_margin_bp": -245.6,
+   "gross_margin_note": "gross margin $2,043.8M / $4,713.0M vs $2,331.4M / $5,088.0M",
+   "pretax_margin": 10.32,
+   "pretax_margin_bp": -242.3,
+   "pretax_note": "income before income taxes $486.3M / $4,713.0M vs $648.3M / $5,088.0M",
+   "inventory_b": 2.357,
+   "inventory_pct": -3.3,
+   "inventory_gap_pp": 4.0,
+   "inventory_note": "inventories $2,357.0M vs $2,438.4M a year earlier",
+   "eps_q": 0.99,
+   "eps_q_prior": 0.94,
+   "diluted_shares_m": 489.4,
+   "cash_b": 3.4551,
+   "cash_note": "cash and equivalents $2,291.1M + short-term investments $1,164.0M",
+   "next_print": "Q1 FY10 print (late September)",
+   "cash_return_text": "no repurchases in Q4 FY09 ($2.7B to date of the four-year $3 billion program approved in June 2006)",
+   "eps_note": "EPS excluding non-comparable items, the company's figures: Q4 FY09 $0.99 excludes the restructuring charge ($0.29; GAAP $0.70), Q4 FY08 $0.94 the Bauer Hockey sale gain (GAAP $0.98); pre-tax income is after the $195.0M restructuring charge",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 3.81,
+    "revenue_usd_b": 19.1761,
+    "diluted_shares_m": 490.7,
+    "normalization_note": "FY09 = $3.81 excluding non-comparable items, the company's figure (Q4 FY09 release; GAAP $3.03, after the Umbro impairment, $0.49, and restructuring charges, $0.29); FY08 stays at GAAP $3.74 until the next 10-K vintage: its $3.45, first published in this release, enters with the FY2009 10-K",
+    "pretax_margin": 10.2,
+    "pretax_margin_note": "FY09 income before income taxes $1,956.5M / $19,176.1M (Q4 FY09 release; GAAP, after the Umbro impairment and restructuring charges)",
+    "gross_margin": 44.87,
+    "sales_growth": 2.9,
+    "futures_pct": -12.0,
+    "tax_rate": 0.2401,
+    "tax_note": "FY09 effective rate: income taxes $469.8M / pre-tax income $1,956.5M, with the tax benefit of the Umbro impairment"
+   },
+   "futures_fx_note": "the release: 'down 5 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2009-09-30",
+   "source": "N33",
+   "release": "Sep 29",
+   "release_time": "after the close on Sep 29: 8-K accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2009-08-31",
+   "sales_b": 4.7985,
+   "sales_pct": -11.7,
+   "sales_note": "revenues $4,798.5M vs $5,432.2M",
+   "lc_pct": -7.0,
+   "lc_note": "the release: 'down 12 percent versus prior year or down 7 percent excluding currency changes'",
+   "futures_pct": -6.0,
+   "futures_fx_pp": -2.0,
+   "futures_b": 6.2,
+   "futures_note": "worldwide futures orders for delivery September 2009-January 2010, $6.2B",
+   "gross_margin": 46.17,
+   "gross_margin_bp": -99.4,
+   "gross_margin_note": "gross margin $2,215.5M / $4,798.5M vs $2,562.1M / $5,432.2M",
+   "pretax_margin": 14.2,
+   "pretax_margin_bp": 104.9,
+   "pretax_note": "income before income taxes $681.2M / $4,798.5M vs $714.2M / $5,432.2M",
+   "inventory_b": 2.2884,
+   "inventory_pct": -6.7,
+   "inventory_gap_pp": 4.9,
+   "inventory_note": "inventories $2,288.4M vs $2,453.9M a year earlier",
+   "eps_q": 1.04,
+   "eps_q_prior": 1.03,
+   "diluted_shares_m": 491.6,
+   "cash_b": 3.6298,
+   "cash_note": "cash and equivalents $2,260.6M + short-term investments $1,369.2M",
+   "next_print": "Q2 FY10 print (late December)",
+   "cash_return_text": "$15M of repurchases in Q1 FY10 ($2.7B to date of the four-year $3 billion program approved in June 2006)",
+   "futures_fx_note": "the release: 'down 4 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2009-12-18",
+   "source": "N35",
+   "release": "Dec 17",
+   "release_time": "after the close on Dec 17: 8-K accepted 16:18 ET; public before the open of the next trading day",
+   "period_end": "2009-11-30",
+   "sales_b": 4.4056,
+   "sales_pct": -4.0,
+   "sales_note": "revenues $4,405.6M vs $4,590.1M",
+   "lc_pct": -4.0,
+   "lc_note": "the release: changes in currency exchange rates 'had a minimal impact on reported revenue results'; its divisional table: -4% excluding currency changes",
+   "futures_pct": 4.0,
+   "futures_fx_pp": 5.0,
+   "futures_b": 7.0,
+   "futures_note": "worldwide futures orders for delivery December 2009-April 2010, $7.0B",
+   "gross_margin": 44.5,
+   "gross_margin_bp": -15.7,
+   "gross_margin_note": "gross margin $1,960.7M / $4,405.6M vs $2,050.0M / $4,590.1M",
+   "pretax_margin": 11.14,
+   "pretax_margin_bp": -19.7,
+   "pretax_note": "income before income taxes $491.0M / $4,405.6M vs $520.6M / $4,590.1M",
+   "inventory_b": 2.1763,
+   "inventory_pct": -10.0,
+   "inventory_gap_pp": -6.0,
+   "inventory_note": "inventories $2,176.3M vs $2,419.1M a year earlier",
+   "eps_q": 0.76,
+   "eps_q_prior": 0.8,
+   "diluted_shares_m": 494.5,
+   "cash_b": 4.01,
+   "cash_note": "cash and equivalents $2,035.2M + short-term investments $1,974.8M",
+   "next_print": "Q3 FY10 print (late March)",
+   "cash_return_text": "$194M of repurchases in Q2 FY10 ($2.9B to date of the four-year $3 billion program; the four-year $5 billion program approved in September 2008 follows it)",
+   "futures_fx_note": "the release: 'down 1 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-03-18",
+   "source": "N37",
+   "release": "Mar 17",
+   "release_time": "after the close on Mar 17: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2010-02-28",
+   "sales_b": 4.733,
+   "sales_pct": 6.6,
+   "sales_note": "revenues $4,733.0M vs $4,440.8M",
+   "lc_pct": 2.0,
+   "lc_note": "the release: 'Excluding changes in currency exchange rates, net revenue was up 2 percent'",
+   "futures_pct": 9.0,
+   "futures_fx_pp": 3.0,
+   "futures_b": 7.1,
+   "futures_note": "worldwide futures orders for delivery March-July 2010, $7.1B",
+   "gross_margin": 46.86,
+   "gross_margin_bp": 298.5,
+   "gross_margin_note": "gross margin $2,218.0M / $4,733.0M vs $1,948.5M / $4,440.8M",
+   "pretax_margin": 13.98,
+   "pretax_margin_bp": 868.4,
+   "pretax_note": "income before income taxes $661.9M / $4,733.0M vs $235.4M / $4,440.8M",
+   "inventory_b": 2.1503,
+   "inventory_pct": -12.8,
+   "inventory_gap_pp": -19.4,
+   "inventory_note": "inventories $2,150.3M vs $2,466.6M a year earlier",
+   "eps_q": 1.01,
+   "eps_q_prior": 0.99,
+   "diluted_shares_m": 492.3,
+   "cash_b": 4.0389,
+   "cash_note": "cash and equivalents $2,225.2M + short-term investments $1,813.7M",
+   "next_print": "Q4 FY10 print (late June)",
+   "cash_return_text": "$329M of repurchases in Q3 FY10, completing the four-year $3 billion program approved in June 2006; repurchases under the four-year $5 billion program approved in September 2008 began",
+   "eps_note": "the prior-year Q3 EPS of $0.99 excludes the Umbro impairment (GAAP $0.50), the company's figure; the prior-year pre-tax income is after the $401.3M impairment",
+   "futures_fx_note": "the release: 'up 6 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-06-24",
+   "source": "N39",
+   "release": "Jun 23",
+   "release_time": "after the close on Jun 23: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2010-05-31",
+   "sales_b": 5.0769,
+   "sales_pct": 7.7,
+   "sales_note": "revenues $5,076.9M vs $4,713.0M",
+   "lc_pct": 4.0,
+   "lc_note": "the release: 'up 4 percent excluding currency changes'",
+   "futures_pct": 7.0,
+   "futures_fx_pp": -3.0,
+   "futures_b": 8.8,
+   "futures_note": "worldwide futures orders for delivery June-November 2010, $8.8B",
+   "gross_margin": 47.4,
+   "gross_margin_bp": 403.0,
+   "gross_margin_note": "gross margin $2,406.2M / $5,076.9M vs $2,043.8M / $4,713.0M",
+   "pretax_margin": 13.45,
+   "pretax_margin_bp": 313.1,
+   "pretax_note": "income before income taxes $682.8M / $5,076.9M vs $486.3M / $4,713.0M",
+   "inventory_b": 2.0408,
+   "inventory_pct": -13.4,
+   "inventory_gap_pp": -21.1,
+   "inventory_note": "inventories $2,040.8M vs $2,357.0M a year earlier",
+   "eps_q": 1.06,
+   "eps_q_prior": 0.99,
+   "diluted_shares_m": 493.9,
+   "cash_b": 5.1459,
+   "cash_note": "cash and equivalents $3,079.1M + short-term investments $2,066.8M",
+   "next_print": "Q1 FY11 print (late September)",
+   "cash_return_text": "$216M of repurchases in Q4 FY10 under the four-year $5 billion program approved in September 2008 ($754M in FY10)",
+   "eps_note": "the prior-year Q4 EPS of $0.99 excludes the restructuring charge (GAAP $0.70), the company's figure; the prior-year pre-tax income is after the $195.0M restructuring charge",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 3.86,
+    "revenue_usd_b": 19.014,
+    "diluted_shares_m": 493.9,
+    "normalization_note": "FY10 = diluted EPS $3.86 as released, with no non-comparable items",
+    "pretax_margin": 13.24,
+    "pretax_margin_note": "FY10 income before income taxes $2,516.9M / $19,014.0M (Q4 FY10 release)",
+    "gross_margin": 46.28,
+    "sales_growth": -0.8,
+    "futures_pct": 7.0,
+    "tax_rate": 0.2424,
+    "tax_note": "FY10 effective rate: income taxes $610.2M / pre-tax income $2,516.9M"
+   },
+   "futures_fx_note": "the release: 'up 10 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2010-09-24",
+   "source": "N42",
+   "release": "Sep 23",
+   "release_time": "after the close on Sep 23: 8-K accepted 16:18 ET; public before the open of the next trading day",
+   "period_end": "2010-08-31",
+   "sales_b": 5.175,
+   "sales_pct": 7.8,
+   "sales_note": "revenues $5,175M vs $4,799M",
+   "lc_pct": 10.0,
+   "lc_note": "the release: 'up 8 percent versus prior year or up 10 percent excluding currency changes'",
+   "futures_pct": 10.0,
+   "futures_fx_pp": -3.0,
+   "futures_b": 7.1,
+   "futures_note": "worldwide futures orders for delivery September 2010-January 2011, $7.1B",
+   "gross_margin": 47.03,
+   "gross_margin_bp": 85.8,
+   "gross_margin_note": "gross margin $2,434M / $5,175M vs $2,216M / $4,799M",
+   "pretax_margin": 14.59,
+   "pretax_margin_bp": 39.9,
+   "pretax_note": "income before income taxes $755M / $5,175M vs $681M / $4,799M",
+   "inventory_b": 2.21,
+   "inventory_pct": -3.4,
+   "inventory_gap_pp": -11.2,
+   "inventory_note": "inventories $2,210M vs $2,288M a year earlier",
+   "eps_q": 1.14,
+   "eps_q_prior": 1.04,
+   "diluted_shares_m": 488.6,
+   "cash_b": 4.688,
+   "cash_note": "cash and equivalents $2,010M + short-term investments $2,678M",
+   "next_print": "Q2 FY11 print (late December)",
+   "cash_return_text": "$517M of repurchases in Q1 FY11 ($971M to date of the four-year $5 billion program approved in September 2008)",
+   "futures_fx_note": "the release: 'up 13 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2010-12-22",
+   "source": "N44",
+   "release": "Dec 21",
+   "release_time": "after the close on Dec 21: 8-K accepted 16:22 ET; public before the open of the next trading day",
+   "period_end": "2010-11-30",
+   "sales_b": 4.842,
+   "sales_pct": 9.9,
+   "sales_note": "revenues $4,842M vs $4,405M",
+   "lc_pct": 11.0,
+   "lc_note": "the release: 'up 10 percent versus prior year or up 11 percent excluding currency changes'",
+   "futures_pct": 11.0,
+   "futures_fx_pp": 0.0,
+   "futures_b": 7.7,
+   "futures_note": "worldwide futures orders for delivery December 2010-April 2011, $7.7B",
+   "gross_margin": 45.29,
+   "gross_margin_bp": 79.6,
+   "gross_margin_note": "gross margin $2,193M / $4,842M vs $1,960M / $4,405M",
+   "pretax_margin": 12.58,
+   "pretax_margin_bp": 143.1,
+   "pretax_note": "income before income taxes $609M / $4,842M vs $491M / $4,405M",
+   "inventory_b": 2.348,
+   "inventory_pct": 7.9,
+   "inventory_gap_pp": -2.0,
+   "inventory_note": "inventories $2,348M vs $2,176M a year earlier",
+   "eps_q": 0.94,
+   "eps_q_prior": 0.76,
+   "diluted_shares_m": 487.6,
+   "cash_b": 4.789,
+   "cash_note": "cash and equivalents $1,768M + short-term investments $3,021M",
+   "next_print": "Q3 FY11 print (late March)",
+   "cash_return_text": "$280M of repurchases in Q2 FY11 ($1.3B to date of the four-year $5 billion program approved in September 2008)",
+   "futures_fx_note": "the release: 'with minimal impact from changes in foreign currency exchange rates'; its table: +11% excluding currency changes"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-03-18",
+   "source": "N46",
+   "release": "Mar 17",
+   "release_time": "after the close on Mar 17: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2011-02-28",
+   "sales_b": 5.079,
+   "sales_pct": 7.3,
+   "sales_note": "revenues $5,079M vs $4,733M",
+   "lc_pct": 8.0,
+   "lc_note": "the release: 'up 7 percent versus prior year or up 8 percent excluding currency changes'",
+   "futures_pct": 11.0,
+   "futures_fx_pp": 2.0,
+   "futures_b": 7.9,
+   "futures_note": "worldwide futures orders for delivery March-July 2011, $7.9B",
+   "gross_margin": 45.82,
+   "gross_margin_bp": -104.6,
+   "gross_margin_note": "gross margin $2,327M / $5,079M vs $2,218M / $4,733M",
+   "pretax_margin": 13.92,
+   "pretax_margin_bp": -6.7,
+   "pretax_note": "income before income taxes $707M / $5,079M vs $662M / $4,733M",
+   "inventory_b": 2.536,
+   "inventory_pct": 18.0,
+   "inventory_gap_pp": 10.6,
+   "inventory_note": "inventories $2,536M vs $2,150M a year earlier",
+   "eps_q": 1.08,
+   "eps_q_prior": 1.01,
+   "diluted_shares_m": 485.5,
+   "cash_b": 4.465,
+   "cash_note": "cash and equivalents $2,132M + short-term investments $2,333M",
+   "next_print": "Q4 FY11 print (late June)",
+   "cash_return_text": "$468M of repurchases in Q3 FY11 ($1.7B to date of the four-year $5 billion program approved in September 2008)",
+   "futures_fx_note": "the release: 'up 11 percent or up 9 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-06-28",
+   "source": "N48",
+   "release": "Jun 27",
+   "release_time": "after the close on Jun 27: 8-K accepted 16:22 ET; public before the open of the next trading day",
+   "period_end": "2011-05-31",
+   "sales_b": 5.766,
+   "sales_pct": 13.6,
+   "sales_note": "revenues $5,766M vs $5,077M",
+   "lc_pct": 11.0,
+   "lc_note": "the release: 'up 11 percent excluding currency changes'",
+   "futures_pct": 15.0,
+   "futures_fx_pp": 3.0,
+   "futures_b": 10.3,
+   "futures_note": "worldwide futures orders for delivery June-November 2011, $10.3B",
+   "gross_margin": 44.29,
+   "gross_margin_bp": -309.6,
+   "gross_margin_note": "gross margin $2,554M / $5,766M vs $2,406M / $5,077M",
+   "pretax_margin": 13.41,
+   "pretax_margin_bp": -4.7,
+   "pretax_note": "income before income taxes $773M / $5,766M vs $683M / $5,077M",
+   "inventory_b": 2.715,
+   "inventory_pct": 33.0,
+   "inventory_gap_pp": 19.5,
+   "inventory_note": "inventories $2,715M vs $2,041M a year earlier",
+   "eps_q": 1.24,
+   "eps_q_prior": 1.06,
+   "diluted_shares_m": 478.7,
+   "cash_b": 4.538,
+   "cash_note": "cash and equivalents $1,955M + short-term investments $2,583M",
+   "next_print": "Q1 FY12 print (late September)",
+   "cash_return_text": "$607M of repurchases in Q4 FY11 ($2.3B to date of the four-year $5 billion program approved in September 2008)",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 4.39,
+    "revenue_usd_b": 20.862,
+    "diluted_shares_m": 485.7,
+    "normalization_note": "FY11 = diluted EPS $4.39 as released, with no non-comparable items",
+    "pretax_margin": 13.63,
+    "pretax_margin_note": "FY11 income before income taxes $2,844M / $20,862M (Q4 FY11 release)",
+    "gross_margin": 45.58,
+    "sales_growth": 9.7,
+    "futures_pct": 15.0,
+    "tax_rate": 0.25,
+    "tax_note": "FY11 effective rate: income taxes $711M / pre-tax income $2,844M"
+   },
+   "futures_fx_note": "the release: 'up 12 percent excluding currency changes'"
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2011-09-23",
+   "source": "N50",
+   "release": "Sep 22",
+   "release_time": "after the close on Sep 22: 8-K accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2011-08-31",
+   "sales_b": 6.081,
+   "sales_pct": 17.5,
+   "sales_note": "revenues $6,081M vs $5,175M",
+   "lc_pct": 11.0,
+   "lc_note": "the release: 'up 11 percent excluding currency changes'",
+   "futures_pct": 16.0,
+   "futures_fx_pp": 3.0,
+   "futures_b": 8.5,
+   "futures_note": "worldwide futures orders for delivery September 2011-January 2012, $8.5B",
+   "gross_margin": 44.29,
+   "gross_margin_bp": -274.8,
+   "gross_margin_note": "gross margin $2,693M / $6,081M vs $2,434M / $5,175M",
+   "pretax_margin": 14.01,
+   "pretax_margin_bp": -57.9,
+   "pretax_note": "income before income taxes $852M / $6,081M vs $755M / $5,175M",
+   "inventory_b": 3.107,
+   "inventory_pct": 40.6,
+   "inventory_gap_pp": 23.1,
+   "inventory_note": "inventories $3,107M vs $2,210M a year earlier",
+   "eps_q": 1.36,
+   "eps_q_prior": 1.14,
+   "diluted_shares_m": 474.3,
+   "cash_b": 3.7,
+   "cash_note": "cash and equivalents $1,608M + short-term investments $2,092M",
+   "next_print": "Q2 FY12 print (late December)",
+   "cash_return_text": "$649M of repurchases in Q1 FY12 ($3.0B to date of the four-year $5 billion program approved in September 2008)",
+   "futures_fx_note": "the release: '13 percent growth excluding currency changes'"
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2011-12-21",
+   "source": "N52",
+   "release": "Dec 20",
+   "release_time": "after the close on Dec 20: 8-K accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2011-11-30",
+   "sales_b": 5.731,
+   "sales_pct": 18.4,
+   "sales_note": "revenues $5,731M vs $4,842M",
+   "lc_pct": 16.0,
+   "lc_note": "the release: 'up 16 percent excluding currency changes'",
+   "futures_pct": 13.0,
+   "futures_fx_pp": 0.0,
+   "futures_b": 8.9,
+   "futures_note": "worldwide futures orders for delivery December 2011-April 2012, $8.9B",
+   "gross_margin": 42.75,
+   "gross_margin_bp": -254.1,
+   "gross_margin_note": "gross profit $2,450M / $5,731M vs $2,193M / $4,842M",
+   "pretax_margin": 10.78,
+   "pretax_margin_bp": -179.4,
+   "pretax_note": "income before income taxes $618M / $5,731M vs $609M / $4,842M",
+   "inventory_b": 3.164,
+   "inventory_pct": 34.8,
+   "inventory_gap_pp": 16.4,
+   "inventory_note": "inventories $3,164M vs $2,348M a year earlier",
+   "eps_q": 1.0,
+   "eps_q_prior": 0.94,
+   "diluted_shares_m": 468.5,
+   "cash_b": 3.365,
+   "cash_note": "cash and equivalents $1,929M + short-term investments $1,436M",
+   "next_print": "Q3 FY12 print (late March)",
+   "cash_return_text": "$672M of repurchases in Q2 FY12 ($3.6B to date of the four-year $5 billion program approved in September 2008)",
+   "futures_fx_note": "the release: 'Changes in foreign currency exchange rates did not have a significant impact on reported' futures; its table: +13% excluding currency changes"
   }
  ],
  "guides": [
@@ -813,6 +1904,145 @@
     "For the second half of the year, we expect revenue to grow at a low to mid single-digit rate on a currency neutral basis",
     "We anticipate the gross margin for the full year will be essentially in line with prior year levels"
    ]
+  },
+  {
+   "fy": 2009,
+   "published": "2009-03-24",
+   "source": "N29",
+   "doc": "Q3 FY09 call",
+   "words": [
+    "We expect currency neutral revenues for the fourth quarter to be roughly in line with the prior year",
+    "Fourth quarter gross margins will likely be well below prior year levels"
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2009-03-24",
+   "source": "N29",
+   "doc": "Q3 FY09 call",
+   "words": [
+    "we expect reported revenues for the first two quarters of fiscal 2010 will most likely be below prior year levels",
+    "we hope to see a return to top line growth in the second half of our fiscal year"
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2009-07-02",
+   "source": "N31",
+   "doc": "Q4 FY09 call",
+   "words": [
+    "We are planning revenue for fiscal 2010 to be flat to slightly down on a currency neutral basis",
+    "we expect fiscal 2010 gross margins may be about 1 point below FY '09"
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-02",
+   "source": "N34",
+   "doc": "Q1 FY10 call",
+   "words": [
+    "we anticipate full year Revenue to be down slightly on a currency neutral basis",
+    "resulting in gross margins down by no more than 50 basis points for the full year"
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2009-12-22",
+   "source": "N36",
+   "doc": "Q2 FY10 call",
+   "words": [
+    "we expect to report mid-single digit revenue growth over the next few quarters, yielding a modest decline in revenue for the full year",
+    "we now expect full-year gross margins to be about flat to FY '09"
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2010-03-23",
+   "source": "N38",
+   "doc": "Q3 FY10 call",
+   "words": [
+    "For the fourth quarter we expect to report mid to high single digit revenue growth, bringing full-year revenue only slightly below prior-year levels",
+    "Fourth-quarter gross margins should be well above last year's fourth quarter"
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-03-23",
+   "source": "N38",
+   "doc": "Q3 FY10 call",
+   "words": [
+    "We have begun planning for fiscal 2011 and are confident that we will deliver growth in revenue and profitability"
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-06-29",
+   "source": "N40",
+   "doc": "Q4 FY10 call",
+   "words": [
+    "On a currency-neutral basis, we expect fiscal 2011 revenue to grow at a high-single-digit rate",
+    "we expect fiscal 2011 gross margins could be as much as 1 point below fiscal 2010"
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-09-27",
+   "source": "N43",
+   "doc": "Q1 FY11 call",
+   "words": [
+    "On a currency-neutral basis we expect FY11 revenue growth at the top end of our high-single-digit target range",
+    "we now expect full-year FY11 gross margin about 50 basis points below FY10"
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-12-28",
+   "source": "N45",
+   "doc": "Q2 FY11 call",
+   "words": [
+    "we are well positioned to deliver our goals for the full year, which have not changed",
+    "we continue to expect full-year FY 2011 Gross Margin to be at least 50 basis points below FY 2010"
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2011-03-22",
+   "source": "N47",
+   "doc": "Q3 FY11 call",
+   "words": [
+    "for the fourth quarter of FY11, we expect reported Revenue to grow at a high single-digit rate",
+    "For the full year FY11, we continue to expect Gross Margin will be at least 50 basis points below the prior year"
+   ]
+  },
+  {
+   "fy": 2012,
+   "published": "2011-03-22",
+   "source": "N47",
+   "doc": "Q3 FY11 call",
+   "words": [
+    "We expect to see full-year revenue growth at or slightly above our high-single-digit target range",
+    "higher input and air freight costs, as well as FX headwinds, will continue to drive gross margins lower on a year-over-year basis"
+   ]
+  },
+  {
+   "fy": 2012,
+   "published": "2011-09-26",
+   "source": "N51",
+   "doc": "Q1 FY12 call",
+   "words": [
+    "For the full fiscal year, we now expect reported revenue growth in the low to mid teens",
+    "For the full year, we continue to expect Gross Margin will be down at least 100 basis points"
+   ]
+  },
+  {
+   "fy": 2012,
+   "published": "2011-12-23",
+   "source": "N53",
+   "doc": "Q2 FY12 call",
+   "words": [
+    "we now expect mid-teens revenue growth for the full year",
+    "we now expect full-year gross margin will be down at least 160 basis points"
+   ]
   }
  ],
  "dividends": [
@@ -827,6 +2057,24 @@
    "source": "N26",
    "quarterly": 0.25,
    "note": "$0.25 quarterly, declared in Q2 FY09, up from $0.23 (Q2 FY09 release)"
+  },
+  {
+   "published": "2009-12-18",
+   "source": "N35",
+   "quarterly": 0.27,
+   "note": "$0.27 quarterly, declared in Q2 FY10, up from $0.25 (Q2 FY10 release)"
+  },
+  {
+   "published": "2010-12-22",
+   "source": "N44",
+   "quarterly": 0.31,
+   "note": "$0.31 quarterly, declared in Q2 FY11, up from $0.27 (Q2 FY11 release)"
+  },
+  {
+   "published": "2011-12-21",
+   "source": "N52",
+   "quarterly": 0.36,
+   "note": "$0.36 quarterly, declared in Q2 FY12, up from $0.31 (Q2 FY12 release)"
   }
  ],
  "events": [],

@@ -10,12 +10,14 @@ builder
      split-adjusted series with the later splits undone), so the price and the per-share facts share one basis,
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
-NIKE's fiscal year ends on May 31. NIKE gave no revenue, EPS or margin guide in numbers in any filing of 2007-2008: the
-outlook on its calls (transcripts furnished by 8-K) is in words, and words are not figures (the UNP 2016 rule). The method
-r2 inputs map with the fallbacks decided before any NKE date was built or scored:
+NIKE's fiscal year ends on May 31. NIKE gave no revenue, EPS or pre-tax margin guide in numbers in any filing of 2007-2011:
+the outlook on its calls (transcripts furnished by 8-K) is in words, and words are not figures (the UNP 2016 rule); its
+gross-margin statements in basis points are display only (the AAPL rule). The method r2 inputs map with the fallbacks
+decided before any NKE date was built or scored:
   - current-FY EPS: no EPS guide in numbers, so the last full year's EPS stands (the rollover rule),
   - forward revenue growth: no revenue guide in numbers, so the latest quarter's revenue growth excluding currency changes
-    (lc_pct: the release's growth less the currency effect it states; the method's local-currency basis),
+    (lc_pct: the release's growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes
+    it states; the method's local-currency basis),
   - guided margin step: none; the margin signal uses the latest quarter's change in pre-tax margin (NIKE evaluates its
     segments on pre-tax income).
 The latest call's outlook words for the current fiscal year are shown in the guide line and feed no input.
@@ -30,6 +32,7 @@ Output goes to staging/retrospective/NKE until the series is added to the archiv
 
 Usage
   python3 retro/build_nke.py --weekly 2008-01-01 2008-12-31
+  python3 retro/build_nke.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_nke.py 2008-06-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NKE/<AS_OF>
 """
@@ -113,7 +116,7 @@ def build(as_of, facts, raw, spx, engine, out):
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    # no disruption theme in taxonomy_eras.json is live for an athletic footwear and apparel brand in 2008 (ECOMMERCE is
+    # no disruption theme in taxonomy_eras.json is live for an athletic footwear and apparel brand in 2008-2011 (ECOMMERCE is
     # live from 2015 and scoped to physical retail, OFFSHORE to IT services): any event needs its encoding decided first
     if events:
         sys.exit(f"{as_of}: the NKE builder has no theme encoding yet; decide one before adding events")

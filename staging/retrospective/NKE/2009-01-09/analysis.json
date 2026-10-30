@@ -1,0 +1,326 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NKE",
+ "company": "NIKE, Inc.",
+ "as_of": "2009-01-09",
+ "price_date": "2009-01-09",
+ "price": 49.61,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); athletic footwear and apparel signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2008 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "NIKE: 'NIKE is the largest seller of athletic footwear and athletic apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2008 10-K); the industry 'is keenly competitive in the United States and on a worldwide basis', 'including Adidas, Puma, and others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price cheap; Ratio B -0.11x; -5% to EPP floor; model-vs-market gap +1.04; conservative 2yr +44%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": -0.11,
+  "ratio_b_fmt": "-0.11x",
+  "epp": 52.36,
+  "epp_gap_pct": -5.3,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.0,
+  "sca": 0.174,
+  "adj_composite": 2.374,
+  "market_composite": 1.33,
+  "adj_gap": 1.04,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 44.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.74,
+    "pe": 15.0,
+    "price": 56,
+    "desc": "Flat EPS (worst year FY99-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.24,
+    "pe": 17.8,
+    "price": 75,
+    "desc": "EPS +6.5%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 5.29,
+    "pe": 20.2,
+    "price": 107,
+    "desc": "EPS +18.9%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.07,
+    "pe": 24.4,
+    "price": 148,
+    "desc": "EPS +27.4%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": -0.11,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 1.04,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.12,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 1.15,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": -0.08,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 0.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": -0.14,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 1.15,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": -0.08,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 0.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": -0.11,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 1.34,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": -0.11,
+   "epp_gap_pct": -22.0,
+   "adj_gap": 1.04,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": -0.11,
+   "epp_gap_pct": -5.3,
+   "adj_gap": 1.27,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.1,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "NKE (retrospective, 2009-01-09) ◉ BUY — Ratio B -0.11x (-12.9% downside to Bear $56 / +115.7% upside to Bull $107) | Adj composite 2.37 vs market 1.33: gap +1.04 [UNDERVALUED] | -5% above the EPP floor $52 (14x FY09E $3.74) | Conservative 2-yr case: +44.1% total (+22.1%/yr) | At 13.3x FY09E the 15% hurdle price $66 sits at or below the BASE case; futures orders -1.0% in Q2 FY09, forward revenues +5% (Q2 FY09 revenue ex-currency); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "N23",
+   "published": "2008-07-29",
+   "filed": "2008-07-28 16:08 ET (after the close)",
+   "title": "NIKE, Inc. FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312508159004/d10k.htm",
+   "supports": "selected financial data FY2004-FY2008 (revenues, gross margin, diluted EPS, diluted shares 504.1M in FY08, inventories); income statement FY2006-FY2008; revenues by operating segment; futures and advance orders 'more than 11% higher'; cash flow (operations $1,936.3M, additions to PP&E $449.2M, repurchases $1,248.0M); quarterly dividends declared; business and competition wording"
+  },
+  {
+   "id": "N1",
+   "published": "2007-07-30",
+   "filed": "2007-07-27 16:16 ET (after the close)",
+   "title": "NIKE, Inc. FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312507164166/d10k.htm",
+   "supports": "selected financial data FY2003-FY2007 (revenues, gross margin, diluted EPS before cumulative effect of accounting change, diluted shares 535.2M in FY03 and 509.9M in FY07, inventories), restated for the 2-for-1 split distributed 2007-04-02; reconciliation of diluted EPS excluding the Converse arbitration and stock-based compensation ($3.10 FY07, $2.70 FY06); income statement FY2005-FY2007 (income before income taxes, income taxes); revenues and pre-tax income by operating segment; futures and advance orders 'nearly 12% higher'; cash flow (operations $1,878.7M, additions to PP&E $313.5M, repurchases $985.2M); quarterly dividends declared; fiscal year ends May 31; business, competition and pre-tax income segment measure wording"
+  },
+  {
+   "id": "N2",
+   "published": "2006-07-31",
+   "filed": "2006-07-28 17:04 ET (after the close)",
+   "title": "NIKE, Inc. FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312506156152/d10k.htm",
+   "supports": "selected financial data FY2002-FY2006 (FY02 revenues, diluted EPS before cumulative effect $2.46, gross margin, inventories); income statement FY2004-FY2006 (income before income taxes); futures and advance orders '5.0% higher'"
+  },
+  {
+   "id": "N3",
+   "published": "2005-08-01",
+   "filed": "2005-07-29 17:12 ET (after the close)",
+   "title": "NIKE, Inc. FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000095012405004551/v10583e10vk.htm",
+   "supports": "selected financial data FY2001-FY2005 (FY01 revenues, diluted EPS $2.16, gross margin, inventories); income statement FY2003-FY2005 (income before income taxes); futures and advance orders '9.5% higher'"
+  },
+  {
+   "id": "N4",
+   "published": "2004-08-02",
+   "filed": "2004-07-30 17:04 ET (after the close)",
+   "title": "NIKE, Inc. FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312504128270/d10k.htm",
+   "supports": "selected financial data FY2000-FY2004 (FY00 revenues, diluted EPS $2.07, gross margin, inventories); income statement FY2002-FY2004 (income before income taxes); futures and advance orders '11.3% higher'"
+  },
+  {
+   "id": "N5",
+   "published": "2003-08-08",
+   "filed": "2003-08-07 17:13 ET (after the close)",
+   "title": "NIKE, Inc. FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312503031022/d10k.htm",
+   "supports": "selected financial data FY1999-FY2003 (FY99 revenues, diluted EPS $1.57, diluted shares 288.3M, gross margin, inventories); income statement FY2001-FY2003 (income before income taxes); futures and advance orders '5.0% higher'"
+  },
+  {
+   "id": "N6",
+   "published": "2002-08-14",
+   "filed": "2002-08-14 15:37 ET (during market hours)",
+   "title": "NIKE, Inc. FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000089102002001248/v83383ore10vk.htm",
+   "supports": "eleven-year financial history FY1992-FY2002 (FY97-FY99 revenues, gross margin, inventories; FY98 diluted EPS $1.35 and diluted shares 295.0M); income statement FY2000-FY2002 (income before income taxes); futures orders '6.3% higher'"
+  },
+  {
+   "id": "N7",
+   "published": "2001-08-09",
+   "filed": "2001-08-09 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000109581101503828/v74223e10-k.txt",
+   "supports": "income statement FY1999-FY2001 (revenues, income before income taxes); futures and advance orders '3% higher'"
+  },
+  {
+   "id": "N8",
+   "published": "2000-08-29",
+   "filed": "2000-08-29 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY2000 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000091205700039514/a10-k405.txt",
+   "supports": "income statement FY1998-FY2000 (revenues, income before income taxes); futures and advance orders '3% higher'"
+  },
+  {
+   "id": "N9",
+   "published": "1999-08-26",
+   "filed": "1999-08-26 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018799000010/0000320187-99-000010.txt",
+   "supports": "income statement FY1997-FY1999 (revenues, income before income taxes); FY99 restructuring charge '$0.10 per diluted share'; futures and advance orders '4% higher'"
+  },
+  {
+   "id": "N10",
+   "published": "1998-08-26",
+   "filed": "1998-08-26 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY1998 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018798000018/0000320187-98-000018.txt",
+   "supports": "FY98 restructuring charge '$0.27 per diluted share'; futures and advance orders '13% lower'"
+  },
+  {
+   "id": "N19",
+   "published": "2008-03-20",
+   "filed": "2008-03-19 16:16 ET (after the close)",
+   "title": "NIKE Q3 FY08 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000014/exhibit99er.txt",
+   "supports": "Q3 FY08 income statement and balance sheet; futures 11 percent higher; Starter sale gain of $29 million"
+  },
+  {
+   "id": "N21",
+   "published": "2008-06-26",
+   "filed": "2008-06-25 16:18 ET (after the close)",
+   "title": "NIKE Q4 FY08 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000040/exhibit_99er.txt",
+   "supports": "Q4 FY08 and FY08 income statement and balance sheet; futures 11 percent higher; FY08 one-time tax benefit of $0.21 per diluted share; Starter and Bauer sale gains"
+  },
+  {
+   "id": "N24",
+   "published": "2008-09-25",
+   "filed": "2008-09-24 16:28 ET (after the close)",
+   "title": "NIKE Q1 FY09 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000110/exhibit99.htm",
+   "supports": "Q1 FY09 income statement and balance sheet; futures 10 percent higher; the new four-year $5 billion repurchase program"
+  },
+  {
+   "id": "N26",
+   "published": "2008-12-18",
+   "filed": "2008-12-17 16:17 ET (after the close)",
+   "title": "NIKE Q2 FY09 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000131/exhibit99.htm",
+   "supports": "Q2 FY09 income statement and balance sheet; futures 1 percent lower, 6 percent higher excluding currency changes; dividend declared $0.25 (was $0.23)"
+  },
+  {
+   "id": "N20",
+   "published": "2008-03-25",
+   "filed": "2008-03-24 16:21 ET (after the close)",
+   "title": "NIKE Q3 FY08 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000016/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2008 and fiscal 2009 outlook in words"
+  },
+  {
+   "id": "N22",
+   "published": "2008-06-30",
+   "filed": "2008-06-30 13:54 ET (during market hours)",
+   "title": "NIKE Q4 FY08 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000043/exhibit99ercc.txt",
+   "supports": "the CFO's fiscal 2009 outlook in words"
+  },
+  {
+   "id": "N25",
+   "published": "2008-09-29",
+   "filed": "2008-09-29 13:33 ET (during market hours)",
+   "title": "NIKE Q1 FY09 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018708000118/exhibit99.htm",
+   "supports": "the CFO's fiscal 2009 outlook in words"
+  },
+  {
+   "id": "N27",
+   "published": "2008-12-24",
+   "filed": "2008-12-23 17:00 ET (after the close)",
+   "title": "NIKE Q2 FY09 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000114036108028593/ex99.htm",
+   "supports": "the CFO's fiscal 2009 outlook in words"
+  },
+  {
+   "id": "N11",
+   "published": "2007-02-20",
+   "filed": "2007-02-16 18:04 ET (after the close; 2007-02-19 was a market holiday)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000022/f8k070215.txt",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable April 2, 2007 to holders of record March 12, 2007; split-adjusted trading from April 3, 2007 (ex.99.1)"
+  },
+  {
+   "id": "A0",
+   "published": "2009-01-09",
+   "title": "Yahoo Finance daily prices, NKE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NKE/history",
+   "supports": "close $49.61 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-30"
+}
