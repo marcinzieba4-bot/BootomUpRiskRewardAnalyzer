@@ -1,14 +1,16 @@
 # NKE retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31, 156 from 2009-01-09 to 2011-12-30,
-157 from 2012-01-06 to 2014-12-31, 156 from 2015-01-09 to 2017-12-29, 157 from 2018-01-05 to 2020-12-31 and 156 from 2021-01-08
-to 2023-12-29. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored
-only after its point-in-time build was committed and pushed (2008: 70934e9; 2009-2011: 056235e; 2012-2014: 6a53de0; 2015-2017:
-faa87f2; 2018-2020: 8d1b0e8; 2021-2023: 76a6b51). Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30
-(three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29),
-the 2015-2017 batch's by 2019-12-27 (2020-12-29), the 2018-2020 batch's by 2022-12-30 (2023-12-29), the 2021-2023 batch's by
-2025-12-29 (three-year horizons only to 2023-10-27, the last date with three years of prices). Medians of an even count take the
-upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+157 from 2012-01-06 to 2014-12-31, 156 from 2015-01-09 to 2017-12-29, 157 from 2018-01-05 to 2020-12-31, 156 from 2021-01-08
+to 2023-12-29 and 148 from 2024-01-05 to 2026-10-30. They are **labels and hypotheses**: never feed them back into the method
+or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008: 70934e9;
+2009-2011: 056235e; 2012-2014: 6a53de0; 2015-2017: faa87f2; 2018-2020: 8d1b0e8; 2021-2023: 76a6b51; 2024-2026: 97cf27a).
+Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's
+by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27
+(2020-12-29), the 2018-2020 batch's by 2022-12-30 (2023-12-29), the 2021-2023 batch's by 2025-12-29 (three-year horizons only
+to 2023-10-27, the last date with three years of prices); the 2024-2026 batch has two-year horizons only to 2024-10-25, one-year
+to 2025-10-31 and six-month to 2026-04-24. Medians of an even count take the upper middle value (`statistics.median_high`).
+The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -321,3 +323,71 @@ upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over 
   least badly. A class built on the stock's own multiple and a trailing anchor does not see a de-rating driven by the next years'
   earnings; whether a forward measure (consensus or guidance, which NIKE stopped filing) would, is a question for other tickers
   and a new method version, never fitted to NKE's outcomes.
+
+## 2024-2026 (148 dates)
+
+Prices end on 2026-10-30, so only the 43 dates to 2024-10-25 have two years, the 96 to 2025-10-31 one year and the 121 to
+2026-04-24 six months; 2026-10-30 has no outcome. No RICH date has two years of prices yet.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 18 | -48% | -56% to -35% | 0 | 0 | -32% | 0 |
+| class FAIR | 25 | -43% | -52% to -34% | 0 | 0 | -33% | 0 |
+| legacy tier BUY | 18 | -48% | -56% to -35% | 0 | 0 | -32% | 0 |
+| legacy tier ACCUMULATE | 1 | -47% | -47% to -47% | 0 | 0 | -27% | 0 |
+| legacy tier WATCHLIST | 19 | -48% | -52% to -34% | 0 | 0 | -33% | 0 |
+| legacy tier AVOID | 5 | -36% | -37% to -34% | 0 | 0 | -35% | 0 |
+| FY23 $3.23 anchor (2024-01-05 to 2024-06-21), all FAIR | 25 | -43% | -52% to -34% | 0 | 0 | -33% | 0 |
+| FY24 $3.95 anchor (2024-06-28 to 2024-10-25), all CHEAP | 18 | -48% | -56% to -35% | 0 | 0 | -32% | 0 |
+
+| Group (one year) | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | Median price change to 2026-10-30 |
+|---|---|---|---|---|---|---|
+| class CHEAP | 52 | -15% | -31% to +7% | 0 | 0 | -48% |
+| class FAIR | 25 | -31% | -39% to -19% | 0 | 0 | -60% |
+| class RICH | 19 | -44% | -52% to -37% | 0 | 0 | -47% |
+| FY23 $3.23 anchor (2024-01-05 to 2024-06-21), all FAIR | 25 | -31% | -39% to -19% | 0 | 0 | -60% |
+| FY24 $3.95 anchor (2024-06-28 to 2025-06-20), all CHEAP | 52 | -15% | -31% to +7% | 0 | 0 | -48% |
+| FY25 $2.16 anchor, RICH dates with a year (2025-06-27 to 2025-10-31) | 19 | -44% | -52% to -37% | 0 | 0 | -47% |
+
+- **Every scored horizon lost against SPY.** Over two years the 43 dates returned -56% to -34% (median -47%) while SPY returned
+  +24% to +50%: none cleared the hurdle and none beat SPY, by 66pp to 94pp. Over one year the 96 dates returned -52% to +7%
+  (median -22%) and none beat SPY; over six months one of 121 did (2025-02-07, CHEAP, +9.4%, by 3.6pp). The lowest close of the
+  period was $33.87 on 2026-10-02, and drawdowns within the windows reached 60%.
+- **So the CHEAP and FAIR calls failed on every scored date.** CHEAP "should clear the hurdle or beat the benchmark"; its 18
+  two-year dates (the Q4 FY24 print to 2024-10-25, BUY throughout) returned -56% to -35%. FAIR "should land within +/-15pp of
+  the benchmark"; its 25 (the FY23 anchor) lagged by 66pp to 94pp. The tiers did not separate them: BUY median -48%,
+  WATCHLIST -48%, AVOID -36%.
+- **On one year and six months the classes ranked in order:** CHEAP (52, all on FY24's $3.95) median -15%, FAIR (25) -31%, RICH
+  (19, from the Q4 FY25 print) -44%; over six months -1.8%, -17.9% and -29.0%. Within the 96 one-year dates the method's own
+  measures ranked the outcomes the right way round, unlike 2021-2023: the adjusted gap +0.87, Ratio B -0.73, the multiple on
+  the anchor -0.71, the EPP gap -0.69 and the conservative return +0.67. On the 43 two-year dates the signs flip (+0.29 to
+  +0.30): the June-October 2024 CHEAP entries ($73-89) ended two years later at 2026's lows ($34-44), the January-June FAIR
+  ones ($89-106) at $42-66.
+- **The trailing anchor overstated the next years' earnings, beyond BEAR.** The 52 CHEAP dates sat on FY24's $3.95 (the
+  company's figure; GAAP $3.73) at 13.8-22.6x. NIKE then reported $2.16 for FY25 and $2.10 for FY26 and guided $1.15-1.35 for
+  FY27, below the BEAR case's own path from $3.95 at -35.7%/yr ($2.54 a year out, $1.63 two). The two-year price landed nearest
+  BEAR on all 43 dates (0.94-2.26 times BEAR, 0.19-0.45 times BULL), and the path went below the BEAR price ($34-36) on the 35
+  dates from 2024-09-20 to 2025-05-16, the first NKE dates since 2009 to do so; the two-year endpoints of 2024-09-20 to
+  2024-10-11 ($33.87-35.75) ended below it. What kept the price above BEAR was the multiple: 27-31x on the FY27 range in
+  October 2026.
+- **The RICH dates of 2025-2026 were RICH by the scenarios, not the multiple.** The 35 on FY25's $2.16 (2025-06-27 to
+  2026-02-27) sat at 28-36x, the 29th-67th percentile, with BEAR at -45.3%/yr and BULL near 0%. The 19 with a year of prices
+  returned -52% to -37% (lagging SPY by 50pp to 69pp), and all 35 stood 36.5-50.7% lower on 2026-10-30. Their two-year call is not
+  scored yet.
+- **The latest dates are too recent to read:** the 13 CHEAP dates on FY26's $2.10 (2026-07-02 to 2026-09-25) stood -13% to +9%
+  on 2026-10-30 and the five RICH dates on the FY27 range 0% to +14%, weeks rather than horizons. Neither the FY27-range call
+  (5 classes) nor the IEEPA test (10 classes, July-September 2026) can be judged.
+- **The proxy composite ranked the one-year outcomes positively** (+0.44; +0.61 on the 43 two-year dates): its lowest reading,
+  1.50 on Q4 FY25 (the RICH summer of 2025), preceded the worst one-year median (-43%), and 2.80 on Q2 and Q4 FY24 -16%. In this
+  batch it moved with the class; in 2021 it had ranked them backwards.
+- **The calls, seen afterwards.** FY24 at the company's $3.95 rather than GAAP would have moved no class; FY18 at GAAP 8 (FAIR
+  to CHEAP on 2024-04-05, RICH to FAIR on six dates from 2025-11-07 to 2026-02-27 and on 2026-10-02) and FY20 excluded 4. None
+  changes the direction of the scored outcomes: every scored date lost against SPY. These are facts about one stock, not
+  reasons to change an encoding: the calls were decided before scoring and stay.
+- **What the seven batches suggest together (hypotheses only).** The CHEAP call held on every CHEAP date of 2008-2014 (119) and
+  on none of 2021-2023 (15) or of the 18 two-year dates here; the RICH call, from 2015 on, on 66 of 155, 34 of 156 and 76 of 76,
+  with none here scored yet. In 2021-2023 the multiple fell while earnings held ($3.23-3.75); in 2024-2026 the earnings fell
+  too, below a BEAR case built on the decade's worst year. A class built on the stock's own multiple and a trailing anchor
+  does not see that; the one forward figure NIKE filed in the period, the FY27 range, moved the class at once (CHEAP to RICH on
+  2026-10-02, on a lower price). Whether forward figures should weigh more, or BEAR reach below the decade's worst year, is a
+  question for other tickers and a new method version, never fitted to NKE's outcomes.
