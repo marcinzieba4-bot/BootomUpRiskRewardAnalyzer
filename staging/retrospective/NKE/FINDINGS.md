@@ -1,12 +1,13 @@
 # NKE retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31, 156 from 2009-01-09 to
-2011-12-30, 157 from 2012-01-06 to 2014-12-31 and 156 from 2015-01-09 to 2017-12-29. They are **labels and hypotheses**: never
-feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 70934e9; 2009-2011: 056235e; 2012-2014: 6a53de0; 2015-2017: faa87f2). Prices run to 2026-10-30; the 2008 batch's
-two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014
-batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29). Medians of an even count take the upper
-middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31, 156 from 2009-01-09 to 2011-12-30,
+157 from 2012-01-06 to 2014-12-31, 156 from 2015-01-09 to 2017-12-29 and 157 from 2018-01-05 to 2020-12-31. They are **labels
+and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time
+build was committed and pushed (2008: 70934e9; 2009-2011: 056235e; 2012-2014: 6a53de0; 2015-2017: faa87f2; 2018-2020: 8d1b0e8).
+Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's
+by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29),
+the 2018-2020 batch's by 2022-12-30 (2023-12-29). Medians of an even count take the upper middle value
+(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -212,3 +213,57 @@ middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two ye
   class did. Hypotheses to test on other tickers and years, under a new method version and never fitted to NKE's outcomes: that a
   RICH label carries information only near the top of the stock's own range, and, as in every NKE batch so far, that the
   trailing operating signals in the proxy composite lean pro-cyclical.
+
+## 2018-2020 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 1 | +98% | +98% | 1 | 0 | +124% | 1 |
+| class RICH | 156 | +51% | -32% to +117% | 107 | 115 | +38% | 34 |
+| legacy tier ACCUMULATE | 1 | +98% | +98% | 1 | 0 | +124% | 1 |
+| legacy tier AVOID | 156 | +51% | -32% to +117% | 107 | 115 | +38% | 34 |
+| FY17 $2.51 for FY18E, the rollover rule (2018-01-05 to 2018-06-22), all RICH | 25 | +36% | -0.1% to +62% | 15 | 25 | +32% | 0 |
+| FY17 $2.51 for FY19E, FY18 excluded (2018-06-29 to 2019-06-21), all RICH | 52 | +63% | +23% to +102% | 47 | 52 | +34% | 0 |
+| FY19 $2.49 anchor (2019-06-28 to 2020-06-19), 51 RICH and 1 FAIR | 52 | +65% | +14% to +117% | 46 | 38 | +58% | 7 |
+| FY20 $1.60 anchor (2020-06-26 to 2020-12-31), all RICH | 28 | -16% | -32% to +23% | 0 | 0 | +7% | 28 |
+
+- **A RICH call that failed until the COVID-19 rally, then held.** The model called NKE RICH on 156 of 157 dates and CHEAP on
+  none. The two-year total return ran from -32% to +117% (median +51%) while SPY returned -9% to +99%; 107 RICH dates cleared the
+  hurdle and 115 beat SPY. The RICH call ("should miss the hurdle and lag the benchmark") failed on all 122 RICH dates from
+  2018-01-05 to 2020-05-15, except 2020-05-08: the seven that lagged SPY (2020-03-26 to 2020-05-15) still returned +32% to +72%.
+  It held on 34, 2020-05-08 and every date from 2020-05-22 on, which returned -32% to +29%, 8-43pp behind SPY. Within two years
+  every date saw a drawdown of 21-53% (the 2018 and 2019 dates through the March 2020 low, the 2020 dates from the November 2021
+  high into 2022). The median one-year return was +21% for 2018, +25% for 2019 and +43% for 2020; over three years 68 of 157
+  beat SPY (median +44%): all 52 of 2018, 9 of 2019 and 7 of 2020.
+- **The multiple's percentile no longer ranked the outcomes.** At the 95th-100th percentile of its own range (118 RICH dates) the
+  median two-year return was +48.5% (-32% to +101%) and the call held on 34, all from May 2020; at the 85th-94th (35) +58%, held on
+  none; at the 67th-84th (3) +62%. Across all dates Ratio B ranks the two-year returns at Spearman -0.26 (+0.04 on the m12-24
+  average), the EPP gap at -0.36, the multiple on the anchor at -0.38, the entry price at -0.38 and the conservative return at
+  +0.66 (+0.30); in 2015-2017 the first four were -0.81 to -0.91. Within 2020 alone the multiple ranks them at -0.90 and Ratio B
+  at -0.55: the rally lifted the price far faster than the anchor.
+- **Above the BULL case did not mean a poor outcome:** the 85 dates with Ratio B infinite (from 2018-06-29) returned a median
+  +44.7%; 50 cleared the hurdle and 48 beat SPY. The 72 others returned a median +61%. (2015-2017: +6.7%; 2012-2014: +63%.)
+- **The FY18 exclusion, afterwards.** The 52 dates anchored on FY17's $2.51 for FY19E traded at 25.5-35.5x and returned +23% to
+  +102% (median +63%), every one ahead of SPY; FY19's reported EPS was $2.49. At GAAP $1.17 the same dates would have been RICH at
+  61-76x, so the call failed either way; the exclusion moved the numbers, not the class. It was decided by the r2 rule before
+  scoring and is not evaluated by this outcome.
+- **COVID-19.** The FAIR date, 2020-03-20 ($67.45, the low week), returned +98% against SPY's +99%, within the FAIR band, so the
+  call held. From the Q4 FY20 print the anchor fell to FY20's $1.60 (58.5-89.0x) while the price rose to $94-142: those 28 dates
+  returned -32% to +23%, none cleared the hurdle or beat SPY, and the RICH call held on all of them.
+- **XBULL, not BASE, was the nearest anchor again:** the two-year price landed nearest XBULL on 146 dates, BULL on 9 and BASE on 2;
+  it was 0.82-2.28 times the BULL price and 1.6-9.8 times BEAR. No path went below its BEAR price.
+- **The proxy composite ranked the outcomes forward this time,** at +0.51 on the two-year return but -0.03 on the m12-24 average,
+  and only across years (within 2018 +0.10, 2019 -0.25, 2020 +0.15): its lowest readings, 1.35 on the Q4 FY20 dates and 2.15 on
+  Q1 FY21, preceded medians of +11% and -20%, because the COVID-19 quarters coincided with high prices on a depressed anchor; 2.60-2.65
+  preceded +68% to +74%. The pro-cyclical-lean hypothesis of the earlier batches is not confirmed here, and not refuted.
+- **The calls, seen afterwards.** FY18 at GAAP would have moved 2020-03-20 from ACCUMULATE to WATCHLIST, and BASE on reported
+  revenue growth would have made it RICH; it returned +98%, level with SPY but over the hurdle, so a RICH call there would have
+  failed. The other variants (the exclusion from the FY2018 10-K, FY20 excluded as well, no ECOMMERCE watch, the futures slot
+  re-weighted) moved nothing. These are facts about one stock in three years, not reasons to change an encoding: the calls were
+  decided before scoring and stay.
+- **What the five batches suggest together (hypotheses only).** The RICH call held on 8 of 61 (2009-2011), 8 of 150 (2012-2014),
+  66 of 155 (2015-2017) and 34 of 156 here. The 2015-2017 hypothesis that a RICH label carries information only near the top of
+  the stock's own range weakens: at the 95th-100th percentile the call held on 62 of 69 there and on 34 of 118 here, and the 34
+  came only after the anchor dropped to a depressed year. The anchor's lag is the recurring thread (in 2018-2019 the price ran
+  ahead of an anchor that later proved close, in late 2020 the anchor sat below the earnings already in hand). Hypotheses to
+  test on other tickers and years, under a new method version and never fitted to NKE's outcomes.
