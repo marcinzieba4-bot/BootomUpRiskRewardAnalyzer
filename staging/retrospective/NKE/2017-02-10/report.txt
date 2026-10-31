@@ -1,0 +1,161 @@
+
+════════════════════════════════════════════════════════════════════════
+  NKE  ·  NIKE, Inc.  ·  $56.22  ·  RETROSPECTIVE as of 2017-02-10
+  Signal: ✕ AVOID   Ratio B: 2.15x   Adj gap: -1.45  [OVERVALUED]
+  Point-in-time: 29 sources, latest published 2017-02-10; latest print Q2 FY17 (Dec 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E revenues, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2017E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America             $    15.9  $  15.9  $  18.5      +0.0      +2.6
+    +7.5% revenues in FY16
+  Western Europe            $     6.3  $   6.3  $   7.4      +0.0      +1.1
+    +3.1% revenues in FY16
+  Central & Eastern Europe  $     1.5  $   1.5  $   1.8      +0.0      +0.3
+    +0.7% revenues in FY16
+  Greater China             $     4.1  $   4.1  $   4.7      +0.0      +0.6
+    +23.4% revenues in FY16
+  Japan                     $     0.9  $   0.9  $   1.1      +0.0      +0.2
+    +15.1% revenues in FY16
+  Emerging Markets          $     4.0  $   4.0  $   4.6      +0.0      +0.6
+    -5.1% revenues in FY16
+  Global Brand Divisions    $     0.1  $   0.1  $   0.1      +0.0      +0.0
+    -36.5% revenues in FY16
+  Converse                  $     2.1  $   2.1  $   2.5      +0.0      +0.4
+    -1.4% revenues in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    34.9  $  34.9  $  40.7      +0.0      +5.8
+  FY2017E = FY16 $32.38B × (1 + 8.0%: Q2 FY17 revenue ex-currency, applied to the year (no FY17 revenue guide in numbers)); split pro rata to FY16 revenues by operating segment (FY2016 10-K, FY15 as restated there; Corporate's -$86M left out)
+  Q2 FY17 (Dec 20): revenues $8.18B +6.4% (+8% ex-currency); futures orders +0.0%; inventories +9.4%;
+  gross margin 44.21% (-134.5bp); pre-tax margin 13.62% (+99.8bp); EPS $0.50 vs $0.45
+  Futures: NIKE Brand futures orders, first stated on the Q2 FY17 call (not in the release), +0.0% reported (-2pp from currency; the call: 'Futures orders are flat versus prior year on a reported basis' and 'currency-neutral futures orders are growing 2%'); revenue +6.4% reported, +8% excluding currency (the release's revenue table: +8% excluding currency changes)
+  FY17 outlook in words (Q2 FY17 call, display only): 'for the full year, we continue to expect reported revenue growth in the high single-digit range' ... 'For the second half of the fiscal year, we expect less contraction than we experienced in the first half as we see stronger, full-price sell-through to consumers'; no FY17 revenue, EPS or margin guide in numbers
+
+  FY2017E EPS check:  $34.9B × 14.3% pre-tax × (1−18.7%) ÷ 1.693B  =  $2.39  (FY2017E: no EPS guide in numbers, FY16's $2.16 stands)
+  FY2019E BEAR check: $34.9B × 14.3% ÷ 1.634B  =  $2.48  (scenario $2.16)
+  FY2019E BULL check: $40.7B × 14.7% ÷ 1.634B  =  $2.97  (scenario $2.75)
+  Every 1pp of pre-tax margin ≈ $0.17 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Futures orders growth              -31.0%  ≥-13.0%    ≥5.0%   ≥12.0%     +0.0%  ◦ BASE  ██░░
+  Gross margin change               -780.0bp  ≥-360.0bp  ≥60.0bp  ≥250.0bp  -134.5bp  ◦ BASE  ██░░
+  Revenue growth                     -23.0%   ≥-8.0%    ≥7.0%   ≥15.0%     +6.4%  ◦ BASE  ██░░
+  Inventory growth less revenue     +46.0pp  ≤21.0pp  ≤-4.0pp  ≤-8.0pp    +3.0pp  ◦ BASE  ██░░
+  Pre-tax margin change             -1520.0bp  ≥-730.0bp  ≥70.0bp  ≥170.0bp   +99.8bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.46 / 4.00  (back-solved from $56 + 15% hurdle)
+  SCA adjustment:    -0.04  ·  EPP-distance adj -0.10  →  Adj composite 2.01  →  Gap -1.45  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 revenues +5.8%, year-end futures orders +8% (the FY2016 10-K: '8% higher', 11% excluding currency changes); Q2 gross margin 44.21% (-134bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 26.0x FY17E vs a 19.5x 10-yr median (86th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q2 FY17 revenue ex-currency +8% vs a 9.8% 9-yr median  (-0.18 × 20%  =  -0.036)
+    +  Cash and short-term investments $5.94B, FY16 free cash flow $1.95B, dividend $0.72 a year, $3,238M of share repurchases in FY16, long-term debt $2,010M  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Futures orders growth                +0.0%    -31.0%  -31.0%  Retailers cut orders ahead of a consu…
+  Gross margin change               -134.5bp  -780.0bp  -645.5bp  Discounting and product costs compres…
+  Revenue growth                       +6.4%    -23.0%  -29.4%  Consumer spending falls faster than n…
+  Inventory growth less revenue       +3.0pp   +46.0pp  +43.0pp  Inventory builds ahead of demand: clo…
+  Pre-tax margin change              +99.8bp  -1520.0bp  -1619.8bp  Demand creation and overhead grow int…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$39  (model)  /  $33 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: futures orders went from +5.0% (Q1 FY17) to +0.0% (Q2 FY17);
+  the bear case needs a demand recession that gross margin (-134.5bp now)
+  and inventories (+3.0pp against revenue) no longer absorb. A consumer-spending recession shows up in futures orders first; the bear
+  needs it to reach gross margin and inventories as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.16  (FY2017E: no EPS guide in numbers, FY16's $2.16 stands)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2007 15.3x, 2008 12.2x, 2009 10.8x, 2010 15.1x, 2011 16.4x, 2012 16.4x, 2013 19.3x, 2014 20.1x, 2015 23.5x, 2016 23.0x, 2017 24.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $35/share
+  Current $56 vs Updated EPP $35:  +63%  ⚠ far above floor — large drawdown room
+  Bear $33 vs Updated EPP $35:  -5%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Futures orders growth                      -13.0      -13.0   BASE floor (vs +0 now)
+  Gross margin change                       -360.0     -225.5   BASE floor (vs -134 now)
+  Revenue growth                              -8.0      -14.4   BASE floor (vs +6 now)
+  Inventory growth less revenue               21.0      +18.0   BASE floor (vs +3 now)
+  Pre-tax margin change                     -730.0     -829.8   BASE floor (vs +100 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.16 × (1+7.8%)² = $2.51
+  At 19x P/E (conservative):  $48/share
+  + Cumul. dividends (2yr):  +$1.48/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $48  (▼9 from $56)
+  Conservative total return:  -13% over 2yr  = -6%/yr
+
+  7.8% EPS growth is what is left once the premium multiple (26.0x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2019E EPS of $2.88,
+  i.e. 15.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $49.01  –  $65.44  (at 44th pct of range)
+  Annual dividend:      $0.72/share  (yield 1.3%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 0.86
+  1-sigma range (1yr):  $45  –  $68  ($56 ± 20%)
+  2-sigma range (1yr):  $34  –  $79
+  ────────────────────────────────────────────────────────────
+  Bear $33 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  An athletic footwear and apparel brand with a 0.9 beta: the stock is +13% off its November
+  low while futures orders went from +5.0% (Q1 FY17) to +0.0% (Q2 FY17).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.16  15.5x  $     33    15.5%      2.4%   +13.1pp  Flat EPS (worst year FY07-FY16, capped at 0%); P/E to its 10th pct
+  BASE        2.60  19.5x  $     51    54.1%      8.5%   +45.6pp  EPS +9.8%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        2.75  24.4x  $     67    25.6%     29.6%    -4.0pp  EPS +12.8%/yr (FY07-FY16 CAGR); P/E holds its 75th pct
+  XBULL       3.13  26.6x  $     83     4.8%     59.5%   -54.7pp  EPS +20.4%/yr (best 2-yr run FY07-FY16); P/E at its 90th pct
+
+  Proxy EV (2yr): $54  /  Market EV: $74  /  Current: $56
+  Conservative EV (2yr, ④): $48 + $1.48 divs = $49 total value
+  Downside (→ Bear $33): 41.3%   Upside (→ Bull $67): 19.2%   Ratio B 2.15x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $56 the market needs $74 in two years —
+  above the BULL case. That is a market composite of 3.46 against a model
+  read of 2.01: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.15x     +63%    -1.45  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.15x     +63%    -0.92  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +63%    -1.74  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.74x     +63%    -1.32  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          2.76x     +63%    -1.57  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.15x     +63%    -1.15  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.15x     +37%    -1.35  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.15x     +63%    -1.08  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY17 print (late March) — the next read on futures orders (+0.0% now) and the outlook on the call
+  (2) Gross margin — -134.5bp in Q2 FY17: pricing, product costs and currency, what must hold if orders do not
+  (3) The outlook in words — Q2 FY17 call: 'for the full year, we continue to expect reported revenue growth in the high single-digit range'; no FY17 guide in numbers
+  (4) Inventories — +9.4% against revenue +6.4% in Q2 FY17 (+3.0pp): discounting follows if orders slow
+  (5) Capital return at 26x — $900M of repurchases in Q2 FY17 ($3.1B to date of the four-year $12 billion program approved in November 2015): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $35  |  ADD below ~$43  |  TRIM above $67
+════════════════════════════════════════════════════════════════════════
+

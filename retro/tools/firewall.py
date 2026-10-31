@@ -10,7 +10,8 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 NKE          # the NKE series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
-dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
+CUTOFF that a filing after it states, the 'futures_later' rule), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -97,6 +98,11 @@ try:
             f["guides"].append({"fy": g["fy"], "published": later, "source": last["source"], "doc": "PLANTED", "quote": "PLANTED",
                                 "q_guide": {"quarter": g["q_guide"]["quarter"],
                                             "withdrawn": ["sales_usd_b", "eps", "gm_pct", "opex_usd_b", "oie_usd_b", "tax_pct"]}})
+    if TICKER == "NKE":    # futures orders that a filing after CUTOFF first states, on the last print before it
+        p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
+        if p0.get("futures_later", {}).get("published", cutoff) >= cutoff:     # a real one public before CUTOFF stays
+            p0["futures_later"] = {"published": later, "source": p0["source"], "futures_pct": -60.0, "futures_fx_pp": -99.0,
+                                   "futures_b": 0.01, "futures_note": "PLANTED", "futures_fx_note": "PLANTED"}
     if "capital_return" in f:      # AAPL: a capital return statement (catalyst 5)
         f["capital_return"].append({"published": later, "source": last["source"], "doc": "PLANTED", "text": "PLANTED"})
     if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF

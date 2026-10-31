@@ -10,8 +10,8 @@ builder
      split-adjusted series with the later splits undone), so the price and the per-share facts share one basis,
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
-NIKE's fiscal year ends on May 31. NIKE gave no revenue or pre-tax margin guide in numbers in any filing of 2007-2014, and
-no EPS guide in numbers until the Q1 FY15 call's growth of "about 20% for the full year": the outlook on its calls
+NIKE's fiscal year ends on May 31. NIKE gave no revenue or pre-tax margin guide in numbers in any filing of 2007-2017, and
+no EPS guide in numbers other than the Q1 FY15 call's growth of "about 20% for the full year": the outlook on its calls
 (transcripts furnished by 8-K) is otherwise in words, and words are not figures (the UNP 2016 rule); its gross-margin
 statements in basis points are display only (the AAPL rule). The method r2 inputs map with the fallbacks decided before any
 NKE date was built or scored:
@@ -23,6 +23,11 @@ NKE date was built or scored:
   - guided margin step: none; the margin signal uses the latest quarter's change in pre-tax margin (NIKE evaluates its
     segments on pre-tax income).
 The latest call's outlook words for the current fiscal year are shown in the guide line and feed no input.
+Futures orders: from Q2 FY17 the releases no longer state them, so a print's futures enter from the first filing that does
+('futures_later': the call transcript or the 10-K, with its own date); until then, and from Q1 FY18, when NIKE stopped
+reporting them, the signal has no value and scores BASE (the AAPL rule).
+ECOMMERCE: from the FY2017 10-K, the first whose risk factors name the rising trend of digital commerce as a risk to NIKE's
+own business, the theme is on the watch list (the LOW rule: company-acknowledged, no market read); only text changes.
 A stock split restates, from its effective date, every per-share fact published before it (divided by the ratio) and
 every share count (multiplied by it); the prices of the whole window are on the AS_OF share basis. A dividend declared on the
 basis of a split not yet effective carries that basis and is converted to AS_OF's (the 2012 split's "$0.21 per share, on a
@@ -38,6 +43,7 @@ Usage
   python3 retro/build_nke.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_nke.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_nke.py --weekly 2012-01-02 2014-12-31
+  python3 retro/build_nke.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_nke.py 2008-06-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NKE/<AS_OF>
 """
@@ -131,11 +137,22 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
+    # futures orders that a release no longer states (from Q2 FY17) enter from the first filing that states them, on that
+    # filing's own date ('futures_later': the call transcript or the 10-K); before it the print has none and the signal scores
+    # BASE. The prints are on_basis's copies, so the update stays within this AS_OF
+    later_ids = []
+    for p in prints:
+        fl = p.get("futures_later")
+        if fl and fl["published"] <= as_of:
+            p.update({k: fl[k] for k in ("futures_pct", "futures_fx_pp", "futures_b", "futures_note", "futures_fx_note")})
+            later_ids.append(fl["source"])
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    # no disruption theme in taxonomy_eras.json is live for an athletic footwear and apparel brand in 2008-2011 (ECOMMERCE is
-    # live from 2015 and scoped to physical retail, OFFSHORE to IT services): any event needs its encoding decided first
-    if events:
-        sys.exit(f"{as_of}: the NKE builder has no theme encoding yet; decide one before adding events")
+    # the one theme encoding decided so far: a 10-K whose risk factors name the rising trend of digital commerce as a risk to
+    # NIKE's own business (ECOMMERCE, from the FY2017 10-K) puts the theme on the watch list. No other theme in
+    # taxonomy_eras.json is live for an athletic footwear and apparel brand in 2008-2017 (OFFSHORE is scoped to IT services,
+    # CLOUD, STREAMING and ENERGY_TRANSITION to other industries): any other kind of event needs its encoding decided first
+    if any(e["kind"] != "ecommerce_company_acknowledged" for e in events):
+        sys.exit(f"{as_of}: the NKE builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -223,12 +240,29 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text, from facts only: no disruption theme has dated evidence on AS_OF ──
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("A consumer-spending recession shows up in futures orders first; the bear\n"
                 "  needs it to reach gross margin and inventories as well.")
     theme_summary = "no disruption theme has dated evidence"
+    for e in [e for e in events if e["kind"] == "ecommerce_company_acknowledged"][-1:]:
+        # ECOMMERCE is live from 2015-01-01; the first NIKE 10-K whose risk factors name the rising trend of digital commerce
+        # as a risk to its own business (FY2017; the FY2015 and FY2016 10-Ks name e-commerce only as NIKE's own channel) puts
+        # it on the watch list (the LOW and ACN CLOUD rule: company-acknowledged, no market read). The factor pair nets to
+        # zero and the theme signal stays at 2/4, so only text changes; re-filing needs dated evidence of market pricing
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "ecommerce"
+        watch = [{"theme": "ECOMMERCE", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: NIKE's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                             f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED "
+                             "(ECOMMERCE) only if dated evidence shows the market pricing the shift away from physical retail "
+                             "into NIKE's own sales specifically.")}]
+        factors = [(f"Digital commerce: {e['offering_short']} — NIKE sells online itself", 0.2, 0.10),
+                   (f"Shift to digital commerce ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "E-commerce: net effect on wholesale and store sales"
+        trigger = "Shoppers leave physical retail faster than NIKE's own digital sales grow"
+        theme_summary = "e-commerce is live and company-acknowledged; no dated evidence ties the multiple to it"
     cat3 = (f"(3) The outlook — {guides[-1]['doc']}: '{guides[-1]['words'][0]}'; the {fy_now} EPS guide in numbers "
             f"{eps_guides[-1]['eps_growth']:+g}% ({eps_guides[-1]['doc']})" if eps_guides else
             f"(3) The outlook in words — {guides[-1]['doc']}: '{guides[-1]['words'][0]}'; no {fy_now} guide in numbers" if guides else
@@ -247,7 +281,7 @@ def build(as_of, facts, raw, spx, engine, out):
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
-    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
+    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + later_ids
            + [g["source"] for g in guides] + ([dividend_src] if dividend_src else [])
            + split_ids + [e["id"] for e in events] + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
@@ -263,6 +297,14 @@ def build(as_of, facts, raw, spx, engine, out):
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = f"; {latest['eps_note']}" if latest.get("eps_note") else ""
+    # futures orders with no value (none in the filings public on AS_OF) read as such; the Q4 FY17 release gave no year-end
+    # futures, so FY17 carries none until the FY2017 10-K
+    rev_text = f"revenue {latest['sales_pct']:+.1f}% reported, {latest['lc_pct']:+.0f}% excluding currency ({latest['lc_note']}){eps_note}"
+    fut_text = (f"Futures: {latest['futures_note']}, {latest['futures_pct']:+.1f}% reported ({latest['futures_fx_pp']:+.0f}pp from currency"
+                f"{'; ' + latest['futures_fx_note'] if latest.get('futures_fx_note') else ''}); {rev_text}"
+                if latest["futures_pct"] is not None else f"Futures: {latest['futures_note']}; {rev_text}")
+    yef_text = (f"year-end futures orders {h['prev_fy_futures_pct']:+.0f}% ({h['prev_fy_futures_note']})" if h["prev_fy_futures_pct"] is not None
+                else f"year-end futures orders not in the {h['prev_fy_futures_note']}")
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -336,9 +378,9 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, year-end futures orders {h['prev_fy_futures_pct']:+.0f}% ({h['prev_fy_futures_note']}); {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.0f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, {yef_text}; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.0f}bp)")}
 BALANCE_TEXT    = {R(f"Cash and short-term investments ${latest['cash_b']:.2f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
-FUTURES_TEXT    = {R(f"Futures: {latest['futures_note']}, {latest['futures_pct']:+.1f}% reported ({latest['futures_fx_pp']:+.0f}pp from currency{'; ' + latest['futures_fx_note'] if latest.get('futures_fx_note') else ''}); revenue {latest['sales_pct']:+.1f}% reported, {latest['lc_pct']:+.0f}% excluding currency ({latest['lc_note']}){eps_note}")}
+FUTURES_TEXT    = {R(fut_text)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}
 THEME_FACTORS   = {R(factors)}
 THEME_SIGNAL_NAME    = {R(sig_name)}

@@ -3033,6 +3033,155 @@ Judgement calls that could carry hindsight:
 - the post-split dividend put on the pre-split basis for six weeks (no class moves);
 - the signals, chosen by a builder who knows how 2012-2014 went; DURABLE rather than CYCLICAL (the class label only).
 
+### NKE 2015-2017: the 2015 split, futures off the release and then discontinued, e-commerce on the watch list
+
+```bash
+python3 retro/build_nke.py --weekly 2015-01-05 2017-12-31                   # 156 dates, 2015-01-09 .. 2017-12-29
+for c in 2015-07-01 2015-12-24 2016-07-01 2016-12-23 2017-03-24 2017-07-21 2017-09-26 2018-01-01; do python3 retro/tools/firewall.py $c NKE; done
+```
+
+All 54 filings published from 2015-01-01 to 2017-12-31 (40 8-Ks, 2 8-K/As, 9 10-Qs and the FY2015-FY2017 10-Ks) were read,
+with no delegated transcription: the twelve releases and the split and segment-recast 8-Ks with their exhibits in full, and the
+items of the officer, director, credit, notes, bylaw and meeting 8-Ks (not their legal exhibits: the credit agreement,
+indentures, bylaws and plans); the twelve call transcripts' prepared remarks in full, with each Q&A searched for figures (none
+gives an EPS, revenue or margin number); the 10-Ks' business, risk-factor, selected-data, futures, segment and cash-flow sections; and the
+10-Qs searched for outlook statements (tax-rate estimates only). 374 strings were checked with `verbatim.py` against their own
+filings, among them every print's income-statement, balance-sheet and futures rows, every call's words and every vintage's
+rows. Each source's date comes from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided before any 2015-2017
+date was built or scored:
+
+- **Three vintages.**
+  - The FY2015 10-K (accepted 2015-07-23 17:26 ET, dated 2015-07-24) gives FY2011-FY2015 from continuing operations. Window
+    FY2006-FY2015; FY2006's diluted shares (527.6M) from the FY2010 10-K, the latest that reports them.
+  - The FY2016 10-K (2016-07-21 16:11 ET, dated 2016-07-22) gives FY2012-FY2016 after the 2012 and 2015 splits. Window
+    FY2007-FY2016; FY2007's shares (509.9M) from the FY2011 10-K.
+  - The FY2017 10-K (2017-07-20 16:18 ET, dated 2017-07-21) gives FY2013-FY2017. Window FY2008-FY2017; FY2008's shares
+    (504.1M) from the FY2012 10-K.
+  - Every earlier year comes from the latest 10-K that reports it, and FY08's $3.45 on the old basis stays until it leaves the
+    window (the seam of "NKE 2012-2014"). A first year's share count is recorded by `shares_published`; no older source text
+    changes.
+- **EPS as released.** FY15 $3.70, FY16 $2.16 and FY17 $2.51 have no company figure excluding an item. FY17 includes the Q1 FY17
+  one-time tax benefit ("a one-time benefit related to the resolution with the U.S. Internal Revenue Service of a foreign tax
+  credit matter", a 2.5 percent Q1 rate): no figure without it was published, so GAAP stands (the ACN Russia rule; FY08's tax
+  benefit stayed in until the company published $3.45). The same holds for the ASU 2016-09 tax benefit in Q1 FY18.
+- **The 2015 split.** 2-for-1, announced in the 8-K accepted 2015-11-19 16:19 ET (dated 2015-11-20); NIKE "expects its common
+  stock to begin trading at the split-adjusted price on December 24, 2015", the price data's date. From that date per-share
+  facts published before it are divided by 2 (the UNP rule): $128.71 on 2015-12-23, $63.18 on 2015-12-24, and FY15's $3.70
+  becomes $1.85. The Q2 FY16 release, dated 2015-12-23, is "presented on a pre-split basis"; its weekly date is 2015-12-24, the
+  split's first day, so its EPS shows halved. Unlike 2012 the split 8-K declares the dividend on the pre-split basis ("$0.32 per
+  share, on a pre-split basis", up 14 percent), so it needs no `basis`: $0.16 from the split. The same 8-K approves a new
+  four-year $12 billion repurchase program.
+- **Still one EPS guide in numbers.** The Q1 FY15 call's "about 20%" keeps FY15E at $3.56 to the Q4 FY15 print: the Q3 FY15
+  call gives fiscal 2015 revenue and gross-margin words and no EPS statement (the LOW words rule). Every later EPS statement is
+  in words: fiscal 2016 "EPS growth in the high-single to low-double digit range" (Q3 FY15 call), fiscal 2017 "EPS to grow at a
+  low teens rate" (Q3 FY16 call), fiscal 2018 "earnings growth consistent with our long-term financial model" (Q3 FY17 call).
+  So the last full year stands: FY15's $3.70 ($1.85 after the split) for FY16, FY16's $2.16 for FY17 and FY17's $2.51 for FY18.
+  Revenue outlooks are in words and gross-margin outlooks in basis points, display only (the AAPL rule); a Q3 call that gives
+  only fourth-quarter words for the current year is shown with them (as the Q3 FY09 and Q3 FY11 calls were). The CEO's
+  restricted stock units in the 8-K of 2015-06-30 vest on 9% revenue and 13% EPS compound growth over FY16-FY20 at the maximum:
+  a compensation target, not a guide (the LOW multi-year rule). The October 2015 and October 2017 investor days were not
+  furnished by 8-K.
+- **Futures orders leave the release, then end.**
+  - From Q2 FY17 the releases no longer state futures orders ("Worldwide futures orders for the NIKE Brand will be referenced on
+    our earnings conference calls as deemed appropriate"; the Q4 FY17 release does not mention them). A print's futures enter
+    from the first filing that states them, on that filing's own date, as any fact does (the UNP 2019 rule; that can only lag):
+    Q2 FY17 "flat versus prior year on a reported basis", +2% currency-neutral (the call's 8-K, 2016-12-23); Q3 FY17 down 4%
+    reported, down 1% currency-neutral (2017-03-24); Q4 FY17 $14.7 billion, "2% lower", 0% excluding currency (the FY2017 10-K,
+    2017-07-21). The investor-relations website posts are not filings, and the 10-Qs repeat the calls' figures later. New print
+    field `futures_later`.
+  - Until then the slot has no value, and from Q1 FY18 NIKE no longer reports futures (8-K accepted 2017-09-25 16:41 ET, dated
+    2017-09-26: NIKE "will discontinue reporting Futures Orders in its financial disclosures"). The AAPL Mac-unit rule applies:
+    the signal keeps its name, thresholds and weight, scores BASE with no value (shown "n/r"), and no other measure replaces it.
+    The Q4 FY17 release gives no year-end futures, so the franchise line says so until the FY2017 10-K.
+  - The Q3 FY16 release first states that reported futures include internal orders from NIKE's own in-line stores and
+    e-commerce; its 10-Q says "Consistent with prior periods", so the measure did not change.
+- **ECOMMERCE on the watch list from the FY2017 10-K.** ECOMMERCE is live from 2015-01-01 and scoped to e-commerce displacing
+  physical retail. The FY2015 and FY2016 10-Ks name e-commerce only as NIKE's own channel (its systems, and "diversion of sales
+  from our and our retailers' brick and mortar stores" by its own e-commerce): no theme, as for Apple's own services (the AAPL
+  rule). The FY2017 10-K is the first whose risk factors name the shift as a risk to NIKE's own business: "the competitive nature
+  of retail including shifts in the ways in which consumers are shopping, and the rising trend of digital commerce, constitutes
+  a risk factor implicating our DTC and wholesale operations", with "a shift in consumer behavior away from brick-and-mortar
+  retail" for its stores. So the LOW and ACN CLOUD rule: from 2017-07-21 ECOMMERCE is on the watch list, company-acknowledged,
+  no market read; DURABLE, risk 2. The factor pair (NIKE's own digital commerce, $2.2 billion in fiscal 2017, against the shift)
+  nets to zero and the theme signal stays at 2/4, so only text changes. Re-filing needs dated evidence that the market priced it
+  for NIKE; no press coverage is added. The Q4 FY17 call's Amazon pilot is NIKE selling through another channel and adds nothing.
+- **Calendar.** Every release came after the close (16:16-16:26 ET). Q2 FY16 to Q3 FY17 and Q1 FY18 came on a Tuesday, so the
+  print is dated Wednesday and the week's date is Thursday. Q3 FY15, Q4 FY15, Q1 FY16, Q4 FY17 and Q2 FY18 came on a Thursday,
+  so the print is dated Friday, the week's last trading day, and meets that close, public before the open (the 2008 Good Friday
+  rule). The Q3 FY16 call's 8-K was accepted on Good Friday 2016-03-25 (15:34 ET, market closed) and is dated 2016-03-28; the
+  Q4 FY17 call's at 16:00:17 ET, after the close, and is dated 2017-07-06. 2017-12-29 closes 2017-W52, so a 2018 batch starts on
+  2018-01-01.
+- **Segments** (display): six geographies, Global Brand Divisions and Converse in all three vintages. NIKE reports four NIKE
+  Brand geographies from fiscal 2018 (the recast 8-K and the Q1 FY18 release); the bridge keeps the FY2017 10-K's lines until
+  the FY2018 10-K (the 2009 recast rule).
+- **Dividends:** $0.32 on the pre-split basis from the split 8-K ($0.16 after the split), $0.18 from the Q2 FY17 release
+  (2016-12-21) and $0.20 from the Q2 FY18 release (2017-12-22); the vintages carry $0.28, $0.16 and $0.18.
+- **An engine revision, text only for earlier dates.** A signal with no value scores BASE, and every line that prints futures
+  has a branch for a print without them (dashboard, bear anatomy, conservative case, key trigger, volatility text, catalyst (1)
+  and summary), as in the AAPL 2016-2019 revision. The builder gains `futures_later`, the ECOMMERCE encoding (LOW's, with
+  NIKE's wording) and a franchise line without year-end futures. The 366 reports of 2008-2014 rebuild byte-identical; their
+  models change only in the engine text. The firewall also plants, for NKE, futures that a filing after the cutoff first states
+  on the last print before it.
+- **Adds nothing:** the officer and director 8-Ks (the CFO succession of 2015-02-12, 2015-06-18, 2015-06-30, 2015-07-06,
+  2016-04-21, and Philip Knight's retirement as chairman on 2016-07-01), the annual meetings (2015-09-23, 2016-09-30 and its 8-K/A
+  of 2016-10-13, 2017-09-22 and the 8-K/A of 2017-11-22), the credit agreement (2015-09-02), the notes offerings (2015-10-29,
+  2016-10-21; long-term debt enters through the 10-Ks), the bylaw amendments (2017-04-21, 2017-11-17), and the 10-Qs (tax-rate
+  estimates; the Q1 FY18 10-Q's retail-landscape words are 10-Q wording, not a 10-K event).
+
+Controls: altering one value of each new print, later-stated futures, Q4 full-year figure, vintage, guide, dividend, the split
+and the event changes no date before it can be shown and changes the first weekly date on or after it (41 of 41). A guide for
+the next fiscal year first shows on the first date with that year current and only until the next call: the Q3 FY15 call's
+fiscal 2016 words on 2015-06-26, the Q3 FY16 call's fiscal 2017 words on 2016-06-30 and the Q3 FY17 call's fiscal 2018 words on
+2017-06-30. The split changes the 106 dates from its effective date. No string of any print, vintage, guide, dividend, split,
+event or source appears in a model dated before it (132,612 checks over the 522 NKE models). The firewall at the eight cutoffs
+above changes no model before its cutoff. The 366 dates of 2008-2014 rebuild with byte-identical reports, and the 2008 dates
+of ACN, UNP, LOW and AAPL rebuild unchanged.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 155 of 156 dates** (all 52 in 2015, all 52 in 2016, 51 of 52 in 2017), FAIR on 2017-09-08 (20.8x FY17's $2.51,
+  the 56th percentile), no CHEAP date. Tiers: AVOID 104 (all 52 of 2015), WATCHLIST 35, ACCUMULATE 8, BUY 9.
+- **2015 traded at the top of its own range.** On FY15E's $3.56 (the "about 20%" guide) to 2015-06-19 the stock stood at
+  25.8-29.9x, the 95th-100th percentile; on FY15's $3.70 from the Q4 FY15 print to 2015-12-18 at 28.9-36.3x (98th-100th); after
+  the split, on $1.85, at 28.4-34.2x (90th-98th) to 2016-06-24. The price was above the BULL case on 61 dates, 2015-03-20 to
+  2016-05-13 (Ratio B infinite).
+- **From the Q4 FY16 print the anchor rose and the price fell.** On FY16's $2.16 (2016-06-30 to 2017-06-23) the stock traded at
+  23.1-27.3x (67th-94th): RICH throughout, tier AVOID on 24 dates, WATCHLIST on 24, ACCUMULATE on 4. On FY17's $2.51 from
+  2017-06-30 it traded at 20.3-25.8x (50th-85th): RICH on 26 of 27, BUY on 9 (2017-08-25 to 2017-10-20).
+- **The anchor lags:** FY15's $3.70 ($1.85) stood until 2016-06-28, when nine-month FY16 EPS was $1.67; FY16's $2.16 until
+  2017-06-29, nine-month FY17 EPS $1.91.
+- **BEAR is flat on every date:** EPS rose in every year of each window. BASE is the quarter's currency-neutral growth plus the
+  buyback (1.8-2.0%/yr): +20.0%/yr on Q2 FY15, +15.0% on Q3 and Q4 FY15, +16.0% on Q1 FY16, +14.0% on Q2 FY16, +16.0% on Q3
+  FY16, +10.8-10.9% on Q4 FY16, +11.8% on Q1 FY17, +9.8% on Q2 FY17, +8.8% on Q3 FY17, +8.9-9.0% on Q4 FY17, +2.0% on Q1 FY18
+  (flat revenue) and +5.0% on Q2 FY18. BASE lifts BULL to it to 2016-06-24; from the Q4 FY16 print BULL is the window's EPS
+  CAGR, 12.3-13.1%/yr. XBULL is lifted to BASE to 2015-06-19, then FY13-FY15's +17.5%/yr, then FY14-FY16's +20.4-20.6%/yr.
+- **The growth factor turned negative:** +0.22 to +0.5 to 2016-06-24 against the window's median revenue growth of 9.2-9.8%,
+  -0.08 to +0.02 on Q4 FY16 and Q1 FY17, -0.15 to -0.5 from Q2 FY17.
+- **The EPP floor P/E rose from 15x to 16x (from 2016-01-08), 17x (2017-09-28) and 18x (2017-10-13)** as low-multiple years
+  left the window; no date sat below the floor (the closest, 12.8% above it).
+- **The proxy composite drifted down:** 2.70 on Q2 FY15 and Q1 FY16, 2.50 on Q3 FY15, 2.15 on Q4 FY15, 2.55 on Q2-Q3 FY16, 2.20
+  on Q4 FY16, 2.35 on Q1 FY17, 2.15 on Q2-Q3 FY17 and 2.00 from Q4 FY17 (every signal at BASE).
+- **Robustness:** all eight variants agree on 122 of the 155 RICH dates and three to seven on the rest; on the FAIR date two of
+  eight.
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- BASE and the growth factor on reported revenue growth instead of growth excluding currency would change 1 class (FAIR to RICH
+  on 2017-09-08) and no tier;
+- FY17 at a derived $2.40 excluding the Q1 FY17 tax benefit (Q1 taxed at the rest of the year's rate; no such figure was
+  published, so a test only) would change 1 class (the same date) and 12 tiers;
+- FY08 at GAAP $3.74 in the 2015-2017 vintages would change no class and 20 tiers (FY09's step becomes a fall, so BEAR is no
+  longer flat);
+- futures from the releases only (no value for Q2-Q4 FY17), the unreported futures slot re-weighted across the other signals
+  instead of scored BASE, no ECOMMERCE watch, and the Q1 FY15 call's "about 20%" kept as words would change none.
+
+Judgement calls that could carry hindsight:
+- FY17 at GAAP $2.51 with the one-time tax benefit (a derived figure without it moves 1 class and 12 tiers);
+- BASE on growth excluding currency changes (1 class), as in 2008-2014;
+- FY08 at the company's $3.45 (20 tiers), and the seam between FY08 on the old basis and FY09-FY17 from continuing operations;
+- ECOMMERCE on the watch list from the FY2017 10-K, on its own risk-factor words, for a brand rather than a physical retailer
+  (text only);
+- futures from the first filing that states them, and BASE with no value from Q1 FY18 (no class moves either way);
+- the signals, chosen by a builder who knows how 2015-2017 went; DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3089,7 +3238,10 @@ What the gates enforce:
   intelligence only as Apple's own features and their risks ("AAPL 2024-2026").
   NKE in 2008-2014 carries none either: no theme in the registry is live for an athletic footwear and apparel brand (ECOMMERCE
   from 2015-01-01, scoped to physical retail; OFFSHORE to IT services), so its watch list is empty ("NKE", "NKE 2009-2011",
-  "NKE 2012-2014").
+  "NKE 2012-2014"). Its FY2015 and FY2016 10-Ks name e-commerce only as NIKE's own channel, so the list stays empty; from its
+  FY2017 10-K (2017-07-21), the first whose risk factors name "the rising trend of digital commerce" as "a risk factor
+  implicating our DTC and wholesale operations", NKE carries ECOMMERCE on the watch list, company-acknowledged, with no market
+  read ("NKE 2015-2017").
 
 ## Workflow
 

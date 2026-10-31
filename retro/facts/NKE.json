@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date; a dividend declared on the basis of a split not yet effective carries that basis ('basis', the split's effective date). NIKE gave no revenue or pre-tax margin guide in numbers in any filing of the period, and no EPS guide in numbers until the Q1 FY15 call's growth of 'about 20% for the full year' ('eps_growth'): the outlook on its calls is otherwise in words, gross-margin changes at times in basis points ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes it states; eps_q is diluted EPS (from continuing operations once the release reports them, from Q2 FY13), excluding non-comparable items where the release publishes that figure (GAAP in the note). rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for NKE retrospectives (retro/build_nke.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every NIKE earnings release of the period came after the close, and each call transcript was furnished by its own 8-K a few days later. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest call's outlook words for the current fiscal year published by AS_OF, and events published since that vintage. NIKE's fiscal year ends May 31. Values are as reported, per share on the basis of the filing that published them; a vintage takes each year from the latest 10-K that reports it, and eps_published / shares_published give such a year's own publication date, so a stock split ('splits') restates exactly the per-share facts published before its effective date; a dividend declared on the basis of a split not yet effective carries that basis ('basis', the split's effective date). NIKE gave no revenue or pre-tax margin guide in numbers in any filing of 2007-2017, and no EPS guide in numbers other than the Q1 FY15 call's growth of 'about 20% for the full year' ('eps_growth'): the outlook on its calls is otherwise in words, gross-margin changes at times in basis points ('guides' hold them, display only). A print's margins and growth rates are derived from the published income statement and balance sheet (the raw figures are in its notes); lc_pct is the release's revenue growth less the currency effect it states, or from Q3 FY09 the growth excluding currency changes it states; eps_q is diluted EPS (from continuing operations once the release reports them, from Q2 FY13), excluding non-comparable items where the release publishes that figure (GAAP in the note). From Q2 FY17 the releases no longer state futures orders: a print's 'futures_later' holds them from the first filing that does (the call transcript or the 10-K), with that filing's own date, and before it, as from Q1 FY18 when NIKE stopped reporting them, the print has none (the signal scores BASE). 'events' hold 10-K wording that puts a disruption theme on the watch list (ECOMMERCE from the FY2017 10-K). rule_t holds the ten annual values (FY1998-FY2007) behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "NKE",
  "sources": {
   "N1": {
@@ -568,6 +568,209 @@
    "title": "NIKE Q2 FY15 earnings call transcript (8-K ex.99)",
    "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018714000174/a8-kq2fy15erccexhibit991.htm",
    "supports": "the CFO's fiscal 2015 outlook in words"
+  },
+  "N82": {
+   "published": "2015-03-20",
+   "filed": "2015-03-19 16:17 ET (after the close)",
+   "title": "NIKE Q3 FY15 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000031/exhibit991erq32015.htm",
+   "supports": "Q3 FY15 income statement and balance sheet; futures 2 percent higher, 11 percent excluding currency changes"
+  },
+  "N83": {
+   "published": "2015-03-24",
+   "filed": "2015-03-24 12:04 ET (during market hours)",
+   "title": "NIKE Q3 FY15 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000035/a8kq3fy15erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2015 full-year outlook and initial fiscal 2016 thoughts in words"
+  },
+  "N84": {
+   "published": "2015-06-26",
+   "filed": "2015-06-25 16:21 ET (after the close)",
+   "title": "NIKE Q4 FY15 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000066/exhibit991erq42015.htm",
+   "supports": "Q4 FY15 and FY15 income statement and balance sheet; futures $13.5 billion, 2 percent higher, 13 percent on a currency neutral basis"
+  },
+  "N85": {
+   "published": "2015-06-29",
+   "filed": "2015-06-29 14:35 ET (during market hours)",
+   "title": "NIKE Q4 FY15 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000068/a8-kq4fy15erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2016 outlook in words"
+  },
+  "N86": {
+   "published": "2015-07-24",
+   "filed": "2015-07-23 17:26 ET (after the close)",
+   "title": "NIKE, Inc. FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000113/nke-5312015x10k.htm",
+   "supports": "selected financial data FY2011-FY2015 from continuing operations (revenues, gross profit, diluted EPS, diluted shares 884.4M in FY15, long-term debt); income statement FY2013-FY2015; revenues by operating segment; futures orders '2% higher'; cash flow (operations $4,680M, additions to PP&E $963M, repurchases $2,534M); quarterly dividends declared; business, competition and risk-factor wording"
+  },
+  "N87": {
+   "published": "2015-09-25",
+   "filed": "2015-09-24 16:20 ET (after the close)",
+   "title": "NIKE Q1 FY16 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000188/exhibit991erq12016.htm",
+   "supports": "Q1 FY16 income statement and balance sheet; futures 9 percent higher, 17 percent on a currency-neutral basis"
+  },
+  "N88": {
+   "published": "2015-09-29",
+   "filed": "2015-09-29 15:28 ET (during market hours)",
+   "title": "NIKE Q1 FY16 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000194/exhibit991ercc.htm",
+   "supports": "the CFO's fiscal 2016 outlook in words"
+  },
+  "N89": {
+   "published": "2015-11-20",
+   "filed": "2015-11-19 16:19 ET (after the close)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split, dividend increase and $12 billion repurchase program",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000226/nov15stocksplitdividendrep.htm",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable December 23, 2015, trading at the split-adjusted price from December 24, 2015; quarterly dividend of $0.32 per share on a pre-split basis, up 14 percent from $0.28; a new four-year $12 billion repurchase program (ex.99.1)"
+  },
+  "N90": {
+   "published": "2015-12-23",
+   "filed": "2015-12-22 16:18 ET (after the close)",
+   "title": "NIKE Q2 FY16 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000229/exhibit991erq22016.htm",
+   "supports": "Q2 FY16 income statement and balance sheet, per share before the split; dividends declared $0.32 (was $0.28); futures 15 percent higher, 20 percent excluding currency changes"
+  },
+  "N91": {
+   "published": "2015-12-29",
+   "filed": "2015-12-29 15:11 ET (during market hours)",
+   "title": "NIKE Q2 FY16 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000231/a8-kq2fy16erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2016 outlook in words"
+  },
+  "N92": {
+   "published": "2016-03-23",
+   "filed": "2016-03-22 16:26 ET (after the close)",
+   "title": "NIKE Q3 FY16 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000257/exhibit991erq32016.htm",
+   "supports": "Q3 FY16 income statement and balance sheet, per share after the split; futures 12 percent higher, 17 percent excluding currency changes"
+  },
+  "N93": {
+   "published": "2016-03-28",
+   "filed": "2016-03-25 15:34 ET (market closed: Friday 2016-03-25 was not a trading day)",
+   "title": "NIKE Q3 FY16 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000259/a8-kq3fy16erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2016 fourth-quarter and full-year outlook and initial fiscal 2017 thoughts in words"
+  },
+  "N94": {
+   "published": "2016-06-29",
+   "filed": "2016-06-28 16:17 ET (after the close)",
+   "title": "NIKE Q4 FY16 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000302/exhibit991erq42016.htm",
+   "supports": "Q4 FY16 and FY16 income statement and balance sheet; futures $14.9 billion, 8 percent higher, 11 percent on a currency neutral basis"
+  },
+  "N95": {
+   "published": "2016-07-05",
+   "filed": "2016-07-05 14:44 ET (during market hours)",
+   "title": "NIKE Q4 FY16 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000314/q4fy16ercctranscript.htm",
+   "supports": "the CFO's fiscal 2017 outlook in words"
+  },
+  "N96": {
+   "published": "2016-07-22",
+   "filed": "2016-07-21 16:11 ET (after the close)",
+   "title": "NIKE, Inc. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000336/nke-5312016x10k.htm",
+   "supports": "selected financial data FY2012-FY2016 from continuing operations, per share after the 2012 and 2015 splits (revenues, gross profit, diluted EPS, diluted shares 1,742.5M in FY16, long-term debt); income statement FY2014-FY2016; revenues by operating segment, FY15 as restated; futures orders '8% higher'; cash flow (operations $3,096M, additions to PP&E $1,143M, repurchases $3,238M); quarterly dividends declared; business, competition and risk-factor wording"
+  },
+  "N97": {
+   "published": "2016-09-28",
+   "filed": "2016-09-27 16:21 ET (after the close)",
+   "title": "NIKE Q1 FY17 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000372/exhibit991erq12017.htm",
+   "supports": "Q1 FY17 income statement and balance sheet; futures $12.3 billion, 5 percent higher, 7 percent on a currency-neutral basis; a one-time tax benefit"
+  },
+  "N98": {
+   "published": "2016-10-03",
+   "filed": "2016-09-30 16:45 ET (after the close)",
+   "title": "NIKE Q1 FY17 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000376/a8-kq1fy17erccexhibit9911.htm",
+   "supports": "the CFO's fiscal 2017 outlook in words; futures orders to be referenced on the call rather than in the release"
+  },
+  "N99": {
+   "published": "2016-12-21",
+   "filed": "2016-12-20 16:20 ET (after the close)",
+   "title": "NIKE Q2 FY17 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000390/exhibit991erq22017.htm",
+   "supports": "Q2 FY17 income statement and balance sheet; dividends declared $0.18 (was $0.16); no futures orders (referenced on the call)"
+  },
+  "N100": {
+   "published": "2016-12-23",
+   "filed": "2016-12-22 18:26 ET (after the close)",
+   "title": "NIKE Q2 FY17 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000392/a8-kq2fy17erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2017 outlook in words; futures orders flat on a reported basis, 2 percent higher on a currency-neutral basis"
+  },
+  "N101": {
+   "published": "2017-03-22",
+   "filed": "2017-03-21 16:20 ET (after the close)",
+   "title": "NIKE Q3 FY17 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000020/exhibit991erq32017.htm",
+   "supports": "Q3 FY17 income statement and balance sheet; no futures orders (referenced on the call)"
+  },
+  "N102": {
+   "published": "2017-03-24",
+   "filed": "2017-03-23 16:56 ET (after the close)",
+   "title": "NIKE Q3 FY17 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000022/a8-kq3fy17erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2017 fourth-quarter outlook and preliminary fiscal 2018 thoughts in words; futures orders down 4 percent on a reported basis, down 1 percent on a currency-neutral basis"
+  },
+  "N103": {
+   "published": "2017-06-30",
+   "filed": "2017-06-29 16:22 ET (after the close)",
+   "title": "NIKE Q4 FY17 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000056/exhibit991erq42017.htm",
+   "supports": "Q4 FY17 and FY17 income statement and balance sheet; no futures orders"
+  },
+  "N104": {
+   "published": "2017-07-06",
+   "filed": "2017-07-05 16:00:17 ET (after the close)",
+   "title": "NIKE Q4 FY17 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000059/q4fy17erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2018 outlook in words"
+  },
+  "N105": {
+   "published": "2017-07-21",
+   "filed": "2017-07-20 16:18 ET (after the close)",
+   "title": "NIKE, Inc. FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000090/nke-5312017x10k.htm",
+   "supports": "selected financial data FY2013-FY2017 from continuing operations (revenues, gross profit, diluted EPS, diluted shares 1,692.0M in FY17, long-term debt); income statement FY2015-FY2017; revenues by operating segment; futures orders $14.7 billion, '2% lower', 0% excluding currency changes; cash flow (operations $3,640M, additions to PP&E $1,105M, repurchases $3,223M); quarterly dividends declared; business, competition and risk-factor wording, including the rising trend of digital commerce"
+  },
+  "N106": {
+   "published": "2017-09-26",
+   "filed": "2017-09-25 16:41 ET (after the close)",
+   "title": "NIKE, Inc. 8-K: recast NIKE Brand operating segments; futures orders discontinued",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000154/form8k.htm",
+   "supports": "four NIKE Brand geographies from fiscal 2018; NIKE 'will discontinue reporting Futures Orders in its financial disclosures' beginning with the first quarter of fiscal 2018"
+  },
+  "N107": {
+   "published": "2017-09-27",
+   "filed": "2017-09-26 16:21 ET (after the close)",
+   "title": "NIKE Q1 FY18 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000176/exhibit991erq1fy18.htm",
+   "supports": "Q1 FY18 income statement and balance sheet; the NIKE Brand reported in four geographies; no futures orders"
+  },
+  "N108": {
+   "published": "2017-10-02",
+   "filed": "2017-09-29 16:59 ET (after the close)",
+   "title": "NIKE Q1 FY18 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000180/q1fy18erccex991.htm",
+   "supports": "the CFO's fiscal 2018 outlook in words"
+  },
+  "N109": {
+   "published": "2017-12-22",
+   "filed": "2017-12-21 16:16 ET (after the close)",
+   "title": "NIKE Q2 FY18 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000202/exhibit991erq2fy18.htm",
+   "supports": "Q2 FY18 income statement and balance sheet; dividends declared $0.20 (was $0.18)"
+  },
+  "N110": {
+   "published": "2017-12-28",
+   "filed": "2017-12-27 16:17 ET (after the close)",
+   "title": "NIKE Q2 FY18 earnings call transcript (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000204/q2fy18erccexhibit991.htm",
+   "supports": "the CFO's fiscal 2018 outlook in words"
   }
  },
  "history_vintages": [
@@ -1672,6 +1875,444 @@
     ]
    ],
    "groups_basis": "FY14 revenues by operating segment (FY2014 10-K, FY13 as restated there; Corporate's +$3M left out)"
+  },
+  {
+   "published": "2015-07-24",
+   "sources": [
+    "N86",
+    "N77",
+    "N68",
+    "N58",
+    "N49",
+    "N41",
+    "N32",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N82"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY15",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2015 10-K); the industry 'is highly competitive on a worldwide basis', 'including adidas, Li Ning, lululemon athletica, Puma, V.F. Corp., Under Armour and UNIQLO, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2011": "2011-05-31",
+    "2012": "2012-05-31",
+    "2013": "2013-05-31",
+    "2014": "2014-05-31",
+    "2015": "2015-05-31"
+   },
+   "eps_gaap": {
+    "2006": 2.64,
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 2.4,
+    "2013": 2.68,
+    "2014": 2.97,
+    "2015": 3.7
+   },
+   "eps_normalized": {
+    "2006": 2.7,
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 2.4,
+    "2013": 2.68,
+    "2014": 2.97,
+    "2015": 3.7
+   },
+   "eps_published": {
+    "2006": "2007-07-30",
+    "2007": "2011-07-25",
+    "2008": "2009-07-28",
+    "2009": "2013-07-24",
+    "2010": "2014-07-28"
+   },
+   "revenue_usd_b": {
+    "2006": 14.955,
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 18.528,
+    "2010": 18.324,
+    "2011": 20.117,
+    "2012": 23.331,
+    "2013": 25.313,
+    "2014": 27.799,
+    "2015": 30.601
+   },
+   "diluted_shares_m": {
+    "2006": 527.6,
+    "2015": 884.4
+   },
+   "shares_published": {
+    "2006": "2010-07-21"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.74,
+   "prev_fy_pretax_margin_note": "FY15 income before income taxes $4,205M / revenues $30,601M (FY2015 10-K)",
+   "prev_fy_gross_margin": 45.97,
+   "prev_fy_sales_growth": 10.1,
+   "prev_fy_futures_pct": 2.0,
+   "prev_fy_futures_note": "the FY2015 10-K: '2% higher', 13% excluding currency changes",
+   "tax_rate": 0.2216,
+   "tax_note": "FY15 effective rate: income tax expense $932M / pre-tax income $4,205M ('22.2%', FY2015 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 3.717,
+   "fcf_label": "FY15",
+   "prev_q_futures_pct": 2.0,
+   "prev_q_label": "Q3 FY15",
+   "prev_q_source": "N82",
+   "dividend_annual": 1.12,
+   "dividend_note": "$0.28 quarterly, declared in each of Q2-Q4 FY15 (FY2015 10-K)",
+   "cash_return_text": "$2,534M of share repurchases in FY15, long-term debt $1,079M",
+   "business_line": "NIKE Brand footwear, apparel and equipment (NIKE Golf and Hurley within it from FY14); Converse",
+   "normalization": "each year from the latest 10-K that reports it: FY11-FY15 diluted EPS from continuing operations (FY2015 10-K), FY10 (FY2014 10-K, revised to expense internally developed patent and trademark costs) and FY09 (FY2013 10-K) from continuing operations, after the 2012 split; FY06-FY08 on the earlier basis that included Cole Haan and Umbro, as no later 10-K restates those years: FY06 = $2.70 excluding the Converse arbitration charge, the company's figure (FY2007 10-K; GAAP $2.64); FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 excluding non-comparable items, the company's figure (FY2009 10-K; GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each); FY09's $3.81 excluding non-comparable items was on that earlier basis, so the restated $1.79 stands (the UNP trucking rule); no year excluded",
+   "groups": [
+    [
+     "North America",
+     13.74,
+     11.7
+    ],
+    [
+     "Western Europe",
+     5.709,
+     14.7
+    ],
+    [
+     "Central & Eastern Europe",
+     1.417,
+     2.2
+    ],
+    [
+     "Greater China",
+     3.067,
+     17.9
+    ],
+    [
+     "Japan",
+     0.755,
+     -2.1
+    ],
+    [
+     "Emerging Markets",
+     3.898,
+     -1.3
+    ],
+    [
+     "Global Brand Divisions",
+     0.115,
+     -8.0
+    ],
+    [
+     "Converse",
+     1.982,
+     17.7
+    ]
+   ],
+   "groups_basis": "FY15 revenues by operating segment (FY2015 10-K; Corporate's -$82M left out)"
+  },
+  {
+   "published": "2016-07-22",
+   "sources": [
+    "N96",
+    "N86",
+    "N77",
+    "N68",
+    "N58",
+    "N49",
+    "N32",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N92"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY16",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2016 10-K); the industry 'is highly competitive on a worldwide basis', 'including adidas, ASICS, Li Ning, lululemon athletica, Puma, V.F. Corporation and Under Armour, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2012": "2012-05-31",
+    "2013": "2013-05-31",
+    "2014": "2014-05-31",
+    "2015": "2015-05-31",
+    "2016": "2016-05-31"
+   },
+   "eps_gaap": {
+    "2007": 2.93,
+    "2008": 3.74,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 1.2,
+    "2013": 1.34,
+    "2014": 1.49,
+    "2015": 1.85,
+    "2016": 2.16
+   },
+   "eps_normalized": {
+    "2007": 2.93,
+    "2008": 3.45,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 1.2,
+    "2013": 1.34,
+    "2014": 1.49,
+    "2015": 1.85,
+    "2016": 2.16
+   },
+   "eps_published": {
+    "2007": "2011-07-25",
+    "2008": "2009-07-28",
+    "2009": "2013-07-24",
+    "2010": "2014-07-28",
+    "2011": "2015-07-24"
+   },
+   "revenue_usd_b": {
+    "2007": 16.326,
+    "2008": 18.627,
+    "2009": 18.528,
+    "2010": 18.324,
+    "2011": 20.117,
+    "2012": 23.331,
+    "2013": 25.313,
+    "2014": 27.799,
+    "2015": 30.601,
+    "2016": 32.376
+   },
+   "diluted_shares_m": {
+    "2007": 509.9,
+    "2016": 1742.5
+   },
+   "shares_published": {
+    "2007": "2011-07-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 14.28,
+   "prev_fy_pretax_margin_note": "FY16 income before income taxes $4,623M / revenues $32,376M (FY2016 10-K)",
+   "prev_fy_gross_margin": 46.24,
+   "prev_fy_sales_growth": 5.8,
+   "prev_fy_futures_pct": 8.0,
+   "prev_fy_futures_note": "the FY2016 10-K: '8% higher', 11% excluding currency changes",
+   "tax_rate": 0.1867,
+   "tax_note": "FY16 effective rate: income tax expense $863M / pre-tax income $4,623M ('18.7%', FY2016 10-K); a tax-rate estimate on a call feeds no input",
+   "fcf_b": 1.953,
+   "fcf_label": "FY16",
+   "prev_q_futures_pct": 12.0,
+   "prev_q_label": "Q3 FY16",
+   "prev_q_source": "N92",
+   "dividend_annual": 0.64,
+   "dividend_note": "$0.16 quarterly, declared in each of Q2-Q4 FY16 (FY2016 10-K)",
+   "cash_return_text": "$3,238M of share repurchases in FY16, long-term debt $2,010M",
+   "business_line": "NIKE Brand footwear, apparel and equipment (NIKE Golf and Hurley within it from FY14); Converse",
+   "normalization": "each year from the latest 10-K that reports it: FY12-FY16 diluted EPS from continuing operations (FY2016 10-K), after the 2012 and 2015 splits; FY11 (FY2015 10-K), FY10 (FY2014 10-K, revised to expense internally developed patent and trademark costs) and FY09 (FY2013 10-K) from continuing operations, after the 2012 split; FY07-FY08 on the earlier basis that included Cole Haan and Umbro, as no later 10-K restates those years: FY07 = GAAP $2.93: the company's $3.10 also excludes stock-based compensation, expensed from FY07 under FAS 123R (recurring, not a one-off); FY08 = $3.45 excluding non-comparable items, the company's figure (FY2009 10-K; GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each); FY09's $3.81 excluding non-comparable items was on that earlier basis, so the restated $1.79 stands (the UNP trucking rule); no year excluded",
+   "groups": [
+    [
+     "North America",
+     14.764,
+     7.5
+    ],
+    [
+     "Western Europe",
+     5.884,
+     3.1
+    ],
+    [
+     "Central & Eastern Europe",
+     1.431,
+     0.7
+    ],
+    [
+     "Greater China",
+     3.785,
+     23.4
+    ],
+    [
+     "Japan",
+     0.869,
+     15.1
+    ],
+    [
+     "Emerging Markets",
+     3.701,
+     -5.1
+    ],
+    [
+     "Global Brand Divisions",
+     0.073,
+     -36.5
+    ],
+    [
+     "Converse",
+     1.955,
+     -1.4
+    ]
+   ],
+   "groups_basis": "FY16 revenues by operating segment (FY2016 10-K, FY15 as restated there; Corporate's -$86M left out)"
+  },
+  {
+   "published": "2017-07-21",
+   "sources": [
+    "N105",
+    "N96",
+    "N86",
+    "N77",
+    "N68",
+    "N58",
+    "N32",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "N102"
+   ],
+   "company": "NIKE, Inc.",
+   "fy_label": "FY17",
+   "why": "NIKE: 'NIKE is the largest seller of athletic footwear and apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2017 10-K); the industry 'is highly competitive on a worldwide basis', 'including adidas, ASICS, Li Ning, lululemon athletica, Puma, Under Armour and V.F. Corporation, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2013": "2013-05-31",
+    "2014": "2014-05-31",
+    "2015": "2015-05-31",
+    "2016": "2016-05-31",
+    "2017": "2017-05-31"
+   },
+   "eps_gaap": {
+    "2008": 3.74,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 1.2,
+    "2013": 1.34,
+    "2014": 1.49,
+    "2015": 1.85,
+    "2016": 2.16,
+    "2017": 2.51
+   },
+   "eps_normalized": {
+    "2008": 3.45,
+    "2009": 1.79,
+    "2010": 1.94,
+    "2011": 2.23,
+    "2012": 1.2,
+    "2013": 1.34,
+    "2014": 1.49,
+    "2015": 1.85,
+    "2016": 2.16,
+    "2017": 2.51
+   },
+   "eps_published": {
+    "2008": "2009-07-28",
+    "2009": "2013-07-24",
+    "2010": "2014-07-28",
+    "2011": "2015-07-24",
+    "2012": "2016-07-22"
+   },
+   "revenue_usd_b": {
+    "2008": 18.627,
+    "2009": 18.528,
+    "2010": 18.324,
+    "2011": 20.117,
+    "2012": 23.331,
+    "2013": 25.313,
+    "2014": 27.799,
+    "2015": 30.601,
+    "2016": 32.376,
+    "2017": 34.35
+   },
+   "diluted_shares_m": {
+    "2008": 504.1,
+    "2017": 1692.0
+   },
+   "shares_published": {
+    "2008": "2012-07-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 14.22,
+   "prev_fy_pretax_margin_note": "FY17 income before income taxes $4,886M / revenues $34,350M (FY2017 10-K)",
+   "prev_fy_gross_margin": 44.58,
+   "prev_fy_sales_growth": 6.1,
+   "prev_fy_futures_pct": -2.0,
+   "prev_fy_futures_note": "the FY2017 10-K: '2% lower', 0% excluding currency changes",
+   "tax_rate": 0.1322,
+   "tax_note": "FY17 effective rate: income tax expense $646M / pre-tax income $4,886M ('13.2%', FY2017 10-K), including the Q1 FY17 one-time tax benefit; a tax-rate estimate on a call feeds no input",
+   "fcf_b": 2.535,
+   "fcf_label": "FY17",
+   "prev_q_futures_pct": -4.0,
+   "prev_q_label": "Q3 FY17",
+   "prev_q_source": "N102",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 quarterly, declared in each of Q2-Q4 FY17 (FY2017 10-K)",
+   "cash_return_text": "$3,223M of share repurchases in FY17, long-term debt $3,471M",
+   "business_line": "NIKE Brand footwear, apparel and equipment (NIKE Golf and Hurley within it from FY14); Converse",
+   "normalization": "each year from the latest 10-K that reports it: FY13-FY17 diluted EPS from continuing operations (FY2017 10-K; FY17 includes the Q1 FY17 one-time tax benefit, as no figure excluding it was published) and FY12 (FY2016 10-K), after the 2012 and 2015 splits; FY11 (FY2015 10-K), FY10 (FY2014 10-K, revised to expense internally developed patent and trademark costs) and FY09 (FY2013 10-K) from continuing operations, after the 2012 split; FY08 on the earlier basis that included Cole Haan and Umbro, as no later 10-K restates it: FY08 = $3.45 excluding non-comparable items, the company's figure (FY2009 10-K; GAAP $3.74, with a one-time tax benefit of $0.21 and the Starter and Bauer sale gains of $0.04 each); FY09's $3.81 excluding non-comparable items was on that earlier basis, so the restated $1.79 stands (the UNP trucking rule); no year excluded",
+   "groups": [
+    [
+     "North America",
+     15.216,
+     3.1
+    ],
+    [
+     "Western Europe",
+     6.211,
+     5.6
+    ],
+    [
+     "Central & Eastern Europe",
+     1.487,
+     3.9
+    ],
+    [
+     "Greater China",
+     4.237,
+     11.9
+    ],
+    [
+     "Japan",
+     1.014,
+     16.7
+    ],
+    [
+     "Emerging Markets",
+     3.995,
+     7.9
+    ],
+    [
+     "Global Brand Divisions",
+     0.073,
+     0.0
+    ],
+    [
+     "Converse",
+     2.042,
+     4.5
+    ]
+   ],
+   "groups_basis": "FY17 revenues by operating segment (FY2017 10-K; Corporate's +$75M left out)"
   }
  ],
  "prints": [
@@ -2951,6 +3592,525 @@
    "next_print": "Q3 FY15 print (late March)",
    "cash_return_text": "$425M of repurchases in Q2 FY15 ($4.7B to date of the four-year $8 billion program approved in September 2012)",
    "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 11 percent', no dollar amount stated"
+  },
+  {
+   "quarter": "Q3 FY15",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-03-20",
+   "source": "N82",
+   "release": "Mar 19",
+   "release_time": "after the close on Mar 19: 8-K accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2015-02-28",
+   "sales_b": 7.46,
+   "sales_pct": 7.0,
+   "sales_note": "revenues $7,460M vs $6,972M",
+   "lc_pct": 13.0,
+   "lc_note": "the release's revenue table: +13% excluding currency changes",
+   "futures_pct": 2.0,
+   "futures_fx_pp": -9.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery March-July 2015",
+   "gross_margin": 45.92,
+   "gross_margin_bp": 141.8,
+   "gross_margin_note": "gross profit $3,426M / $7,460M vs $3,103M / $6,972M",
+   "pretax_margin": 14.02,
+   "pretax_margin_bp": 140.0,
+   "pretax_note": "income before income taxes $1,046M / $7,460M vs $880M / $6,972M",
+   "inventory_b": 4.246,
+   "inventory_pct": 12.2,
+   "inventory_gap_pp": 5.2,
+   "inventory_note": "inventories $4,246M vs $3,785M a year earlier",
+   "eps_q": 0.89,
+   "eps_q_prior": 0.75,
+   "diluted_shares_m": 883.8,
+   "cash_b": 5.361,
+   "cash_note": "cash and equivalents $3,015M + short-term investments $2,346M",
+   "next_print": "Q4 FY15 print (late June)",
+   "cash_return_text": "$612M of repurchases in Q3 FY15 ($5.3B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: 'Excluding currency changes, reported orders would have increased 11 percent', no dollar amount stated"
+  },
+  {
+   "quarter": "Q4 FY15",
+   "fy": 2015,
+   "q": 4,
+   "published": "2015-06-26",
+   "source": "N84",
+   "release": "Jun 25",
+   "release_time": "after the close on Jun 25: 8-K accepted 16:21 ET; public before the open of the next trading day",
+   "period_end": "2015-05-31",
+   "sales_b": 7.779,
+   "sales_pct": 4.8,
+   "sales_note": "revenues $7,779M vs $7,425M",
+   "lc_pct": 13.0,
+   "lc_note": "the release's revenue table: +13% excluding currency changes",
+   "futures_pct": 2.0,
+   "futures_fx_pp": -11.0,
+   "futures_b": 13.5,
+   "futures_note": "worldwide futures orders for delivery June-November 2015, $13.5B",
+   "gross_margin": 46.19,
+   "gross_margin_bp": 59.9,
+   "gross_margin_note": "gross profit $3,593M / $7,779M vs $3,385M / $7,425M",
+   "pretax_margin": 13.52,
+   "pretax_margin_bp": 124.1,
+   "pretax_note": "income before income taxes $1,052M / $7,779M vs $912M / $7,425M",
+   "inventory_b": 4.337,
+   "inventory_pct": 9.9,
+   "inventory_gap_pp": 5.1,
+   "inventory_note": "inventories $4,337M vs $3,947M a year earlier",
+   "eps_q": 0.98,
+   "eps_q_prior": 0.78,
+   "diluted_shares_m": 879.8,
+   "cash_b": 5.924,
+   "cash_note": "cash and equivalents $3,852M + short-term investments $2,072M",
+   "next_print": "Q1 FY16 print (late September)",
+   "cash_return_text": "$678M of repurchases in Q4 FY15 ($6.0B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: '13 percent higher on a currency neutral basis'",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 3.7,
+    "revenue_usd_b": 30.601,
+    "diluted_shares_m": 884.4,
+    "normalization_note": "FY15 = diluted EPS $3.70 as released, with no non-comparable items",
+    "pretax_margin": 13.74,
+    "pretax_margin_note": "FY15 income before income taxes $4,205M / $30,601M (Q4 FY15 release)",
+    "gross_margin": 45.97,
+    "sales_growth": 10.1,
+    "futures_pct": 2.0,
+    "tax_rate": 0.2216,
+    "tax_note": "FY15 effective rate: income taxes $932M / pre-tax income $4,205M"
+   }
+  },
+  {
+   "quarter": "Q1 FY16",
+   "fy": 2016,
+   "q": 1,
+   "published": "2015-09-25",
+   "source": "N87",
+   "release": "Sep 24",
+   "release_time": "after the close on Sep 24: 8-K accepted 16:20 ET; public before the open of the next trading day",
+   "period_end": "2015-08-31",
+   "sales_b": 8.414,
+   "sales_pct": 5.4,
+   "sales_note": "revenues $8,414M vs $7,982M",
+   "lc_pct": 14.0,
+   "lc_note": "the release's revenue table: +14% excluding currency changes",
+   "futures_pct": 9.0,
+   "futures_fx_pp": -8.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery September 2015-January 2016",
+   "gross_margin": 47.48,
+   "gross_margin_bp": 86.3,
+   "gross_margin_note": "gross profit $3,995M / $8,414M vs $3,721M / $7,982M",
+   "pretax_margin": 17.17,
+   "pretax_margin_bp": 177.7,
+   "pretax_note": "income before income taxes $1,445M / $8,414M vs $1,229M / $7,982M",
+   "inventory_b": 4.414,
+   "inventory_pct": 9.5,
+   "inventory_gap_pp": 4.1,
+   "inventory_note": "inventories $4,414M vs $4,030M a year earlier",
+   "eps_q": 1.34,
+   "eps_q_prior": 1.09,
+   "diluted_shares_m": 877.3,
+   "cash_b": 5.408,
+   "cash_note": "cash and equivalents $3,246M + short-term investments $2,162M",
+   "next_print": "Q2 FY16 print (late December)",
+   "cash_return_text": "$588M of repurchases in Q1 FY16 ($6.5B to date of the four-year $8 billion program approved in September 2012)",
+   "futures_fx_note": "the release: '17 percent higher on a currency-neutral basis', no dollar amount stated"
+  },
+  {
+   "quarter": "Q2 FY16",
+   "fy": 2016,
+   "q": 2,
+   "published": "2015-12-23",
+   "source": "N90",
+   "release": "Dec 22",
+   "release_time": "after the close on Dec 22: 8-K accepted 16:18 ET; public before the open of the next trading day",
+   "period_end": "2015-11-30",
+   "sales_b": 7.686,
+   "sales_pct": 4.1,
+   "sales_note": "revenues $7,686M vs $7,380M",
+   "lc_pct": 12.0,
+   "lc_note": "the release's revenue table: +12% excluding currency changes",
+   "futures_pct": 15.0,
+   "futures_fx_pp": -5.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery December 2015-April 2016",
+   "gross_margin": 45.55,
+   "gross_margin_bp": 46.9,
+   "gross_margin_note": "gross profit $3,501M / $7,686M vs $3,327M / $7,380M",
+   "pretax_margin": 12.62,
+   "pretax_margin_bp": 72.3,
+   "pretax_note": "income before income taxes $970M / $7,686M vs $878M / $7,380M",
+   "inventory_b": 4.6,
+   "inventory_pct": 10.8,
+   "inventory_gap_pp": 6.7,
+   "inventory_note": "inventories $4,600M vs $4,150M a year earlier",
+   "eps_q": 0.9,
+   "eps_q_prior": 0.74,
+   "diluted_shares_m": 875.7,
+   "cash_b": 6.116,
+   "cash_note": "cash and equivalents $3,851M + short-term investments $2,265M",
+   "next_print": "Q3 FY16 print (late March)",
+   "cash_return_text": "$652M of repurchases in Q2 FY16 ($7.2B to date of the four-year $8 billion program approved in September 2012); a new four-year $12 billion program approved in November 2015",
+   "eps_note": "per share before the split",
+   "futures_fx_note": "the release: 'Excluding currency changes, futures orders would have increased 20 percent', no dollar amount stated"
+  },
+  {
+   "quarter": "Q3 FY16",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-03-23",
+   "source": "N92",
+   "release": "Mar 22",
+   "release_time": "after the close on Mar 22: 8-K accepted 16:26 ET; public before the open of the next trading day",
+   "period_end": "2016-02-29",
+   "sales_b": 8.032,
+   "sales_pct": 7.7,
+   "sales_note": "revenues $8,032M vs $7,460M",
+   "lc_pct": 14.0,
+   "lc_note": "the release's revenue table: +14% excluding currency changes",
+   "futures_pct": 12.0,
+   "futures_fx_pp": -5.0,
+   "futures_b": null,
+   "futures_note": "worldwide futures orders for delivery March-July 2016 (the release first states that reported futures include internal orders from NIKE's in-line stores and e-commerce)",
+   "gross_margin": 45.93,
+   "gross_margin_bp": 0.4,
+   "gross_margin_note": "gross profit $3,689M / $8,032M vs $3,426M / $7,460M",
+   "pretax_margin": 14.13,
+   "pretax_margin_bp": 11.0,
+   "pretax_note": "income before income taxes $1,135M / $8,032M vs $1,046M / $7,460M",
+   "inventory_b": 4.59,
+   "inventory_pct": 8.1,
+   "inventory_gap_pp": 0.4,
+   "inventory_note": "inventories $4,590M vs $4,246M a year earlier",
+   "eps_q": 0.55,
+   "eps_q_prior": 0.45,
+   "diluted_shares_m": 1737.3,
+   "cash_b": 5.106,
+   "cash_note": "cash and equivalents $3,044M + short-term investments $2,062M",
+   "next_print": "Q4 FY16 print (late June)",
+   "cash_return_text": "$1.5B of repurchases in Q3 FY16, concluding the four-year $8 billion program approved in September 2012; $649M of it under the four-year $12 billion program approved in November 2015",
+   "eps_note": "per share after the split",
+   "futures_fx_note": "the release: 'Excluding currency changes, futures orders would have increased 17 percent', no dollar amount stated"
+  },
+  {
+   "quarter": "Q4 FY16",
+   "fy": 2016,
+   "q": 4,
+   "published": "2016-06-29",
+   "source": "N94",
+   "release": "Jun 28",
+   "release_time": "after the close on Jun 28: 8-K accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2016-05-31",
+   "sales_b": 8.244,
+   "sales_pct": 6.0,
+   "sales_note": "revenues $8,244M vs $7,779M",
+   "lc_pct": 9.0,
+   "lc_note": "the release's revenue table: +9% excluding currency changes",
+   "futures_pct": 8.0,
+   "futures_fx_pp": -3.0,
+   "futures_b": 14.9,
+   "futures_note": "worldwide futures orders for delivery June-November 2016, $14.9B",
+   "gross_margin": 45.92,
+   "gross_margin_bp": -26.4,
+   "gross_margin_note": "gross profit $3,786M / $8,244M vs $3,593M / $7,779M",
+   "pretax_margin": 13.02,
+   "pretax_margin_bp": -50.8,
+   "pretax_note": "income before income taxes $1,073M / $8,244M vs $1,052M / $7,779M",
+   "inventory_b": 4.838,
+   "inventory_pct": 11.6,
+   "inventory_gap_pp": 5.6,
+   "inventory_note": "inventories $4,838M vs $4,337M a year earlier",
+   "eps_q": 0.49,
+   "eps_q_prior": 0.49,
+   "diluted_shares_m": 1723.1,
+   "cash_b": 5.457,
+   "cash_note": "cash and equivalents $3,138M + short-term investments $2,319M",
+   "next_print": "Q1 FY17 print (late September)",
+   "cash_return_text": "$540M of repurchases in Q4 FY16 ($1.2B to date of the four-year $12 billion program approved in November 2015)",
+   "futures_fx_note": "the release: '11 percent higher on a currency neutral basis'",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 2.16,
+    "revenue_usd_b": 32.376,
+    "diluted_shares_m": 1742.5,
+    "normalization_note": "FY16 = diluted EPS $2.16 as released, with no non-comparable items",
+    "pretax_margin": 14.28,
+    "pretax_margin_note": "FY16 income before income taxes $4,623M / $32,376M (Q4 FY16 release)",
+    "gross_margin": 46.24,
+    "sales_growth": 5.8,
+    "futures_pct": 8.0,
+    "tax_rate": 0.1867,
+    "tax_note": "FY16 effective rate: income taxes $863M / pre-tax income $4,623M"
+   }
+  },
+  {
+   "quarter": "Q1 FY17",
+   "fy": 2017,
+   "q": 1,
+   "published": "2016-09-28",
+   "source": "N97",
+   "release": "Sep 27",
+   "release_time": "after the close on Sep 27: 8-K accepted 16:21 ET; public before the open of the next trading day",
+   "period_end": "2016-08-31",
+   "sales_b": 9.061,
+   "sales_pct": 7.7,
+   "sales_note": "revenues $9,061M vs $8,414M",
+   "lc_pct": 10.0,
+   "lc_note": "the release's revenue table: +10% excluding currency changes",
+   "futures_pct": 5.0,
+   "futures_fx_pp": -2.0,
+   "futures_b": 12.3,
+   "futures_note": "worldwide futures orders for delivery September 2016-January 2017, $12.3B",
+   "gross_margin": 45.5,
+   "gross_margin_bp": -197.8,
+   "gross_margin_note": "gross profit $4,123M / $9,061M vs $3,995M / $8,414M",
+   "pretax_margin": 14.14,
+   "pretax_margin_bp": -303.6,
+   "pretax_note": "income before income taxes $1,281M / $9,061M vs $1,445M / $8,414M",
+   "inventory_b": 4.896,
+   "inventory_pct": 10.9,
+   "inventory_gap_pp": 3.2,
+   "inventory_note": "inventories $4,896M vs $4,414M a year earlier",
+   "eps_q": 0.73,
+   "eps_q_prior": 0.67,
+   "diluted_shares_m": 1708.9,
+   "cash_b": 4.787,
+   "cash_note": "cash and equivalents $2,659M + short-term investments $2,128M",
+   "next_print": "Q2 FY17 print (late December)",
+   "cash_return_text": "$1.1B of repurchases in Q1 FY17 ($2.2B to date of the four-year $12 billion program approved in November 2015)",
+   "eps_note": "includes a one-time tax benefit from the resolution with the IRS of a foreign tax credit matter (effective tax rate 2.5 percent); no figure excluding it was published",
+   "futures_fx_note": "the release: '7 percent higher on a currency-neutral basis'"
+  },
+  {
+   "quarter": "Q2 FY17",
+   "fy": 2017,
+   "q": 2,
+   "published": "2016-12-21",
+   "source": "N99",
+   "release": "Dec 20",
+   "release_time": "after the close on Dec 20: 8-K accepted 16:20 ET; public before the open of the next trading day",
+   "period_end": "2016-11-30",
+   "sales_b": 8.18,
+   "sales_pct": 6.4,
+   "sales_note": "revenues $8,180M vs $7,686M",
+   "lc_pct": 8.0,
+   "lc_note": "the release's revenue table: +8% excluding currency changes",
+   "futures_pct": null,
+   "futures_fx_pp": null,
+   "futures_b": null,
+   "futures_note": "not in the release ('Worldwide futures orders for the NIKE Brand will be referenced on our earnings conference calls as deemed appropriate')",
+   "gross_margin": 44.21,
+   "gross_margin_bp": -134.5,
+   "gross_margin_note": "gross profit $3,616M / $8,180M vs $3,501M / $7,686M",
+   "pretax_margin": 13.62,
+   "pretax_margin_bp": 99.8,
+   "pretax_note": "income before income taxes $1,114M / $8,180M vs $970M / $7,686M",
+   "inventory_b": 5.033,
+   "inventory_pct": 9.4,
+   "inventory_gap_pp": 3.0,
+   "inventory_note": "inventories $5,033M vs $4,600M a year earlier",
+   "eps_q": 0.5,
+   "eps_q_prior": 0.45,
+   "diluted_shares_m": 1693.2,
+   "cash_b": 5.943,
+   "cash_note": "cash and equivalents $4,339M + short-term investments $1,604M",
+   "next_print": "Q3 FY17 print (late March)",
+   "cash_return_text": "$900M of repurchases in Q2 FY17 ($3.1B to date of the four-year $12 billion program approved in November 2015)",
+   "futures_later": {
+    "published": "2016-12-23",
+    "source": "N100",
+    "futures_pct": 0.0,
+    "futures_fx_pp": -2.0,
+    "futures_b": null,
+    "futures_note": "NIKE Brand futures orders, first stated on the Q2 FY17 call (not in the release)",
+    "futures_fx_note": "the call: 'Futures orders are flat versus prior year on a reported basis' and 'currency-neutral futures orders are growing 2%'"
+   }
+  },
+  {
+   "quarter": "Q3 FY17",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-03-22",
+   "source": "N101",
+   "release": "Mar 21",
+   "release_time": "after the close on Mar 21: 8-K accepted 16:20 ET; public before the open of the next trading day",
+   "period_end": "2017-02-28",
+   "sales_b": 8.432,
+   "sales_pct": 5.0,
+   "sales_note": "revenues $8,432M vs $8,032M",
+   "lc_pct": 7.0,
+   "lc_note": "the release's revenue table: +7% excluding currency changes",
+   "futures_pct": null,
+   "futures_fx_pp": null,
+   "futures_b": null,
+   "futures_note": "not in the release ('Worldwide futures orders for the NIKE Brand will be referenced on our earnings conference calls as deemed appropriate')",
+   "gross_margin": 44.47,
+   "gross_margin_bp": -145.5,
+   "gross_margin_note": "gross profit $3,750M / $8,432M vs $3,689M / $8,032M",
+   "pretax_margin": 15.69,
+   "pretax_margin_bp": 155.9,
+   "pretax_note": "income before income taxes $1,323M / $8,432M vs $1,135M / $8,032M",
+   "inventory_b": 4.932,
+   "inventory_pct": 7.5,
+   "inventory_gap_pp": 2.5,
+   "inventory_note": "inventories $4,932M vs $4,590M a year earlier",
+   "eps_q": 0.68,
+   "eps_q_prior": 0.55,
+   "diluted_shares_m": 1686.3,
+   "cash_b": 6.16,
+   "cash_note": "cash and equivalents $4,021M + short-term investments $2,139M",
+   "next_print": "Q4 FY17 print (late June)",
+   "cash_return_text": "$475M of repurchases in Q3 FY17 ($3.6B to date of the four-year $12 billion program approved in November 2015)",
+   "futures_later": {
+    "published": "2017-03-24",
+    "source": "N102",
+    "futures_pct": -4.0,
+    "futures_fx_pp": -3.0,
+    "futures_b": null,
+    "futures_note": "NIKE Brand futures orders, first stated on the Q3 FY17 call (not in the release)",
+    "futures_fx_note": "the call: 'NIKE Brand Futures Orders are down 4% on a reported basis versus prior year and down 1% on a currency-neutral basis'"
+   }
+  },
+  {
+   "quarter": "Q4 FY17",
+   "fy": 2017,
+   "q": 4,
+   "published": "2017-06-30",
+   "source": "N103",
+   "release": "Jun 29",
+   "release_time": "after the close on Jun 29: 8-K accepted 16:22 ET; public before the open of the next trading day",
+   "period_end": "2017-05-31",
+   "sales_b": 8.677,
+   "sales_pct": 5.3,
+   "sales_note": "revenues $8,677M vs $8,244M",
+   "lc_pct": 7.0,
+   "lc_note": "the release's revenue table: +7% excluding currency changes",
+   "futures_pct": null,
+   "futures_fx_pp": null,
+   "futures_b": null,
+   "futures_note": "not in the release, which no longer mentions futures orders",
+   "gross_margin": 44.06,
+   "gross_margin_bp": -186.5,
+   "gross_margin_note": "gross profit $3,823M / $8,677M vs $3,786M / $8,244M",
+   "pretax_margin": 13.46,
+   "pretax_margin_bp": 44.5,
+   "pretax_note": "income before income taxes $1,168M / $8,677M vs $1,073M / $8,244M",
+   "inventory_b": 5.055,
+   "inventory_pct": 4.5,
+   "inventory_gap_pp": -0.8,
+   "inventory_note": "inventories $5,055M vs $4,838M a year earlier",
+   "eps_q": 0.6,
+   "eps_q_prior": 0.49,
+   "diluted_shares_m": 1678.6,
+   "cash_b": 6.179,
+   "cash_note": "cash and equivalents $3,808M + short-term investments $2,371M",
+   "next_print": "Q1 FY18 print (late September)",
+   "cash_return_text": "$820M of repurchases in Q4 FY17 ($4.4B to date of the four-year $12 billion program approved in November 2015)",
+   "eps_note": "full-year diluted EPS $2.51, including the Q1 FY17 one-time tax benefit; no figure excluding it was published",
+   "futures_later": {
+    "published": "2017-07-21",
+    "source": "N105",
+    "futures_pct": -2.0,
+    "futures_fx_pp": -2.0,
+    "futures_b": 14.7,
+    "futures_note": "worldwide futures orders for delivery June-November 2017, $14.7B, first stated in the FY2017 10-K (not in the release)",
+    "futures_fx_note": "the FY2017 10-K: '2% lower', 0% excluding currency changes"
+   },
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 2.51,
+    "revenue_usd_b": 34.35,
+    "diluted_shares_m": 1692.0,
+    "normalization_note": "FY17 = diluted EPS $2.51 as released, including the Q1 FY17 one-time tax benefit (no figure excluding it was published)",
+    "pretax_margin": 14.22,
+    "pretax_margin_note": "FY17 income before income taxes $4,886M / $34,350M (Q4 FY17 release)",
+    "gross_margin": 44.58,
+    "sales_growth": 6.1,
+    "futures_pct": null,
+    "tax_rate": 0.1322,
+    "tax_note": "FY17 effective rate: income taxes $646M / pre-tax income $4,886M"
+   }
+  },
+  {
+   "quarter": "Q1 FY18",
+   "fy": 2018,
+   "q": 1,
+   "published": "2017-09-27",
+   "source": "N107",
+   "release": "Sep 26",
+   "release_time": "after the close on Sep 26: 8-K accepted 16:21 ET; public before the open of the next trading day",
+   "period_end": "2017-08-31",
+   "sales_b": 9.07,
+   "sales_pct": 0.1,
+   "sales_note": "revenues $9,070M vs $9,061M",
+   "lc_pct": 0.0,
+   "lc_note": "the release's revenue table: 0% excluding currency changes ('flat to prior year on both a reported and currency-neutral basis')",
+   "futures_pct": null,
+   "futures_fx_pp": null,
+   "futures_b": null,
+   "futures_note": "no longer reported: NIKE 'will discontinue reporting Futures Orders in its financial disclosures' from the first quarter of fiscal 2018 (8-K of 2017-09-26)",
+   "gross_margin": 43.68,
+   "gross_margin_bp": -182.0,
+   "gross_margin_note": "gross profit $3,962M / $9,070M vs $4,123M / $9,061M",
+   "pretax_margin": 11.82,
+   "pretax_margin_bp": -231.8,
+   "pretax_note": "income before income taxes $1,072M / $9,070M vs $1,281M / $9,061M",
+   "inventory_b": 5.211,
+   "inventory_pct": 6.4,
+   "inventory_gap_pp": 6.3,
+   "inventory_note": "inventories $5,211M vs $4,896M a year earlier",
+   "eps_q": 0.57,
+   "eps_q_prior": 0.73,
+   "diluted_shares_m": 1676.9,
+   "cash_b": 5.519,
+   "cash_note": "cash and equivalents $3,413M + short-term investments $2,106M",
+   "next_print": "Q2 FY18 print (late December)",
+   "cash_return_text": "$849M of repurchases in Q1 FY18 ($5.3B to date of the four-year $12 billion program approved in November 2015)",
+   "eps_note": "includes the tax benefit from stock-based compensation under Accounting Standards Update 2016-09, adopted this year; no figure excluding it was published",
+   "extra_sources": [
+    "N106"
+   ]
+  },
+  {
+   "quarter": "Q2 FY18",
+   "fy": 2018,
+   "q": 2,
+   "published": "2017-12-22",
+   "source": "N109",
+   "release": "Dec 21",
+   "release_time": "after the close on Dec 21: 8-K accepted 16:16 ET; public before the open of the next trading day",
+   "period_end": "2017-11-30",
+   "sales_b": 8.554,
+   "sales_pct": 4.6,
+   "sales_note": "revenues $8,554M vs $8,180M",
+   "lc_pct": 3.0,
+   "lc_note": "the release's revenue table: +3% excluding currency changes",
+   "futures_pct": null,
+   "futures_fx_pp": null,
+   "futures_b": null,
+   "futures_note": "no longer reported: NIKE 'will discontinue reporting Futures Orders in its financial disclosures' from the first quarter of fiscal 2018 (8-K of 2017-09-26)",
+   "gross_margin": 43.0,
+   "gross_margin_bp": -120.8,
+   "gross_margin_note": "gross profit $3,678M / $8,554M vs $3,616M / $8,180M",
+   "pretax_margin": 10.28,
+   "pretax_margin_bp": -334.3,
+   "pretax_note": "income before income taxes $879M / $8,554M vs $1,114M / $8,180M",
+   "inventory_b": 5.326,
+   "inventory_pct": 5.8,
+   "inventory_gap_pp": 1.2,
+   "inventory_note": "inventories $5,326M vs $5,033M a year earlier",
+   "eps_q": 0.46,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 1660.9,
+   "cash_b": 6.389,
+   "cash_note": "cash and equivalents $4,304M + short-term investments $2,085M",
+   "next_print": "Q3 FY18 print (late March)",
+   "cash_return_text": "$902M of repurchases in Q2 FY18 ($6.2B to date of the four-year $12 billion program approved in November 2015)"
   }
  ],
  "guides": [
@@ -3327,6 +4487,163 @@
     "For the full year, we expect constant dollar revenue growth in the low double digits, with reported revenue growth 2 to 3 points lower",
     "For the full year, we now expect gross margin expansion of 100 to 125 basis points"
    ]
+  },
+  {
+   "fy": 2015,
+   "published": "2015-03-24",
+   "source": "N83",
+   "doc": "Q3 FY15 call",
+   "words": [
+    "For the full year, we expect constant dollar revenue growth in the low-teens, with reported revenue growth 4 to 5 points lower",
+    "For the full year, we now expect gross margin expansion of about 100 basis points"
+   ]
+  },
+  {
+   "fy": 2016,
+   "published": "2015-03-24",
+   "source": "N83",
+   "doc": "Q3 FY15 call",
+   "words": [
+    "anticipate currency-neutral revenue growth for FY '16, slightly above our high-single digit target range",
+    "we expect FY '16 reported revenue growth in the mid-single digits and EPS growth in the high-single to low-double digit range"
+   ]
+  },
+  {
+   "fy": 2016,
+   "published": "2015-06-29",
+   "source": "N85",
+   "doc": "Q4 FY15 call",
+   "words": [
+    "our growth rate expectations for FY '16 are largely unchanged from what we shared last quarter",
+    "for FY '16, we expect reported revenue growth at a mid-single-digit rate, reflecting low-double digit growth on a currency-neutral basis, partially offset by the impact of the stronger dollar",
+    "We expect gross margin for Q1 and the full year to expand by about 50 basis points"
+   ]
+  },
+  {
+   "fy": 2016,
+   "published": "2015-09-29",
+   "source": "N88",
+   "doc": "Q1 FY16 call",
+   "words": [
+    "For the full year, our outlook has slightly improved but we continue to expect that reported revenue growth will be squarely within the mid-single-digit range",
+    "For the full year, we continue to expect gross margin to expand by about 50 basis points"
+   ]
+  },
+  {
+   "fy": 2016,
+   "published": "2015-12-29",
+   "source": "N91",
+   "doc": "Q2 FY16 call",
+   "words": [
+    "our outlook for the full year remains consistent",
+    "For the full year, we continue to expect reported revenue growth will be in the mid-single-digit range",
+    "For the full year, we continue to expect gross margin to expand by about 50 basis points"
+   ]
+  },
+  {
+   "fy": 2016,
+   "published": "2016-03-28",
+   "source": "N93",
+   "doc": "Q3 FY16 call",
+   "words": [
+    "For the full year fiscal year 2016, we continue to expect financial performance in line with the expectations that we shared with you 90 days ago",
+    "for both Q4 and the full year, we continue to expect reported revenue to grow at a mid-single-digit rate, roughly in line with our year-to-date rate of growth",
+    "For gross margin, we continue to expect expansion of about 50 basis points for the full year"
+   ]
+  },
+  {
+   "fy": 2017,
+   "published": "2016-03-28",
+   "source": "N93",
+   "doc": "Q3 FY16 call",
+   "words": [
+    "we anticipate currency-neutral revenue to grow in the high single to low double-digit range in fiscal year 2017, and we expect reported revenue to grow at a high single-digit rate due to continued strength of the U.S. dollar",
+    "We currently expect EPS to grow at a low teens rate, reflecting continued strong operational performance, partially offset by unfavorable FX related impacts"
+   ]
+  },
+  {
+   "fy": 2017,
+   "published": "2016-07-05",
+   "source": "N95",
+   "doc": "Q4 FY16 call",
+   "words": [
+    "our outlook for fiscal year '17 is largely in line with the high-level guidance that we shared last quarter",
+    "Specifically for fiscal year '17, we expect reported revenue to grow at a high single-digit rate, reflecting high single-digit to low double-digit growth on a currency-neutral basis",
+    "We expect Gross Margin for the full year to expand by 30 to 50 basis points, in line with our long-term financial model guardrails"
+   ]
+  },
+  {
+   "fy": 2017,
+   "published": "2016-10-03",
+   "source": "N98",
+   "doc": "Q1 FY17 call",
+   "words": [
+    "our outlook for fiscal year '17 remains largely unchanged in terms of growth and the profitability of our business",
+    "Specifically, for the full year, our revenue expectations remain in line with prior guidance, high single-digit reported revenue growth, and high single to low double-digit currency-neutral revenue growth",
+    "Turning to gross margin, we now expect the full year rate to contract"
+   ]
+  },
+  {
+   "fy": 2017,
+   "published": "2016-12-23",
+   "source": "N100",
+   "doc": "Q2 FY17 call",
+   "words": [
+    "for the full year, we continue to expect reported revenue growth in the high single-digit range",
+    "For the second half of the fiscal year, we expect less contraction than we experienced in the first half as we see stronger, full-price sell-through to consumers"
+   ]
+  },
+  {
+   "fy": 2017,
+   "published": "2017-03-24",
+   "source": "N102",
+   "doc": "Q3 FY17 call",
+   "words": [
+    "in Q4, we expect reported revenue to grow in the mid-single-digit range, slightly below our Q3 reported rate of growth",
+    "we are now targeting 150 to 175 basis points of gross margin contraction in Q4 versus prior year, with the year-over-year variance largely driven by FX"
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2017-03-24",
+   "source": "N102",
+   "doc": "Q3 FY17 call",
+   "words": [
+    "we are targeting continued revenue growth across all geographies in fiscal year '18, led by strong growth internationally",
+    "We also project significant operating leverage and expanding profitability which, on a currency-neutral basis, would result in earnings growth consistent with our long-term financial model"
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2017-07-06",
+   "source": "N104",
+   "doc": "Q4 FY17 call",
+   "words": [
+    "For the full year, we expect to deliver currency-neutral revenue growth in the mid- to high single-digit range",
+    "we expect fiscal year '18 reported revenue to grow in the mid-single digits",
+    "As for gross margin, we anticipate modest contraction by as much as 50 basis points, with FX having a more pronounced impact on the first half of the fiscal year"
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2017-10-02",
+   "source": "N108",
+   "doc": "Q1 FY18 call",
+   "words": [
+    "For the full year, we continue to expect reported revenue growth in the mid-single-digit range",
+    "For the full year, we now believe the challenging dynamics in the U.S. retail landscape could result in our gross margin contracting between 50 and 100 basis points versus prior year"
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2017-12-28",
+   "source": "N110",
+   "doc": "Q2 FY18 call",
+   "words": [
+    "Our full year guidance for fiscal year 2018 remains consistent with the guidance that we provided 90 days ago",
+    "For the full year, we continued to expect reported revenue growth in the mid-single-digit range",
+    "As for gross margin, for the full year, we continued to expect contraction of 50 to as much as 100 basis points"
+   ]
   }
  ],
  "dividends": [
@@ -3378,9 +4695,39 @@
    "source": "N80",
    "quarterly": 0.28,
    "note": "$0.28 quarterly, declared in Q2 FY15, up from $0.24 (Q2 FY15 release)"
+  },
+  {
+   "published": "2015-11-20",
+   "source": "N89",
+   "quarterly": 0.32,
+   "note": "$0.32 quarterly on the pre-split basis ($0.16 a share after the split), declared in Q2 FY16, up 14 percent from $0.28 (8-K of 2015-11-20)"
+  },
+  {
+   "published": "2016-12-21",
+   "source": "N99",
+   "quarterly": 0.18,
+   "note": "$0.18 quarterly, declared in Q2 FY17, up from $0.16 (Q2 FY17 release)"
+  },
+  {
+   "published": "2017-12-22",
+   "source": "N109",
+   "quarterly": 0.2,
+   "note": "$0.20 quarterly, declared in Q2 FY18, up from $0.18 (Q2 FY18 release)"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "id": "N105",
+   "published": "2017-07-21",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2017 10-K",
+   "risk_quote": "In addition, the competitive nature of retail including shifts in the ways in which consumers are shopping, and the rising trend of digital commerce, constitutes a risk factor implicating our DTC and wholesale operations.",
+   "risk_short": "'the rising trend of digital commerce' a risk factor 'implicating our DTC and wholesale operations'",
+   "offering": "it sells online itself: 'digital commerce sales through NIKE-owned websites and mobile applications, which are not included in comparable store sales, were $2.2 billion for fiscal 2017'",
+   "offering_short": "NIKE-owned digital commerce $2.2 billion in fiscal 2017"
+  }
+ ],
  "company_names": [],
  "splits": [
   {
@@ -3396,6 +4743,13 @@
    "effective": "2012-12-26",
    "ratio": 2,
    "note": "2-for-1, a 100 percent stock dividend payable December 24, 2012; trading at the split-adjusted price from December 26, 2012"
+  },
+  {
+   "published": "2015-11-20",
+   "source": "N89",
+   "effective": "2015-12-24",
+   "ratio": 2,
+   "note": "2-for-1, a 100 percent stock dividend payable December 23, 2015; trading at the split-adjusted price from December 24, 2015"
   }
  ],
  "rule_t": {

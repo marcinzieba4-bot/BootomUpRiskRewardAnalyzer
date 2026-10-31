@@ -273,6 +273,9 @@ def _pct_range(lo, hi):
 def _ordinal(n):
     return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
 
+def _now(v, u):
+    return "n/r" if v is None else f"{v:+.1f}{u}"   # n/r: not reported (no futures orders in the filings public on AS_OF)
+
 _FY = sorted(EPS_NORM)
 EPS_YOY           = [EPS_NORM[y] / EPS_NORM[y - 1] - 1 for y in _FY[1:]]
 REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in sorted(REVENUE_HIST)[1:]]
@@ -324,8 +327,12 @@ CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
 # thresholds by rule T (retro/README.md, NKE; retro/facts/NKE.json, rule_t): BULL = the FY1998-FY2007 median,
 # XBULL = its best year, BASE = its worst year, BEAR = one median-to-worst step beyond the worst (the inventory gap,
 # where lower is better, mirrored); retro/build_nke.py checks these numbers against the fact sheet
+# a print whose futures orders no filing public on AS_OF states (Q2-Q4 FY17 before the call or 10-Q that states them; none
+# from Q1 FY18, when NIKE stopped reporting them) has no value: the slot scores BASE, as the theme slot does with no live
+# theme; no other measure replaces it and the weights do not change (the AAPL Mac-unit rule)
 SIGNALS = [
-    ("Futures orders growth", "% YoY", -31.0, -13.0, 5.0, 12.0, float(LATEST["futures_pct"]), True,
+    ("Futures orders growth", "% YoY", -31.0, -13.0, 5.0, 12.0,
+     float(LATEST["futures_pct"]) if LATEST["futures_pct"] is not None else None, True,
      "Retailers cut orders ahead of a consumer slowdown"),
     ("Gross margin change", "bp YoY", -780.0, -360.0, 60.0, 250.0, float(LATEST["gross_margin_bp"]), True,
      "Discounting and product costs compress the margin"),
@@ -340,7 +347,8 @@ SIGNALS = [
      THEME_SIGNAL_TRIGGER),
 ]
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
-CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)") for i, s in enumerate(SIGNALS)]
+CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)" if s[6] is not None else "BASE floor (not reported now)")
+                for i, s in enumerate(SIGNALS)]
 
 # ── SEGMENT BRIDGE (current-FY revenues split pro rata to the latest annual actuals; bear flat, bull at the historical revenue CAGR) ──
 _basis = sum(v for _, v, _ in GROUPS)
@@ -353,6 +361,8 @@ SHARES_FY25_B = SHARES_DIL_B * (1 - BUYBACK) ** 2
 
 # ── SCORING ───────────────────────────────────────────────────────────────────
 def score_signal(val, base_f, bull_f, xbull_f, hib):
+    if val is None:                       # no published value: BASE
+        return 2
     if hib:
         if val >= xbull_f: return 4
         if val >= bull_f:  return 3
@@ -478,6 +488,14 @@ _verdict = ev["verdict"]
 ratio_b  = ev["rb"]
 signal_short, signal_full = legacy_tier(ratio_b)
 L = LATEST
+# futures orders in the text: a print with none public on AS_OF reads as not reported (the dashboard shows n/r)
+_fut_txt = f"{L['futures_pct']:+.1f}%" if L["futures_pct"] is not None else "not reported"
+if L["futures_pct"] is not None:
+    _fut_move = f"futures orders went from {_now(PREV_FUTURES[0], '%')} ({PREV_FUTURES[1]}) to {L['futures_pct']:+.1f}% ({L['quarter']})"
+elif PREV_FUTURES[0] is not None:
+    _fut_move = f"futures orders are not reported for {L['quarter']} ({PREV_FUTURES[0]:+.1f}% in {PREV_FUTURES[1]})"
+else:
+    _fut_move = f"futures orders are not reported for {L['quarter']} or {PREV_FUTURES[1]}"
 
 # ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
@@ -504,7 +522,7 @@ _fyg = FY_REVENUE_B / REVENUE_HIST[max(REVENUE_HIST)] - 1
 print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if _fyg >= 0 else '−'} {abs(_fyg)*100:.1f}%: {FY_REVENUE_LABEL}); "
       f"split pro rata to {GROUPS_BASIS}")
 print(f"  {L['quarter']} ({L['release']}): revenues ${L['sales_b']:.2f}B {L['sales_pct']:+.1f}% ({L['lc_pct']:+.0f}% ex-currency); "
-      f"futures orders {L['futures_pct']:+.1f}%; inventories {L['inventory_pct']:+.1f}%;")
+      f"futures orders {_fut_txt}; inventories {L['inventory_pct']:+.1f}%;")
 print(f"  gross margin {L['gross_margin']:.2f}% ({L['gross_margin_bp']:+.1f}bp); pre-tax margin {L['pretax_margin']:.2f}% ({L['pretax_margin_bp']:+.1f}bp); "
       f"EPS ${L['eps_q']:.2f} vs ${L['eps_q_prior']:.2f}")
 print(f"  {FUTURES_TEXT}")
@@ -530,7 +548,7 @@ for name_, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
     op = "≥" if hib else "≤"                           # the inventory gap is the one lower-is-better signal
     bv_s  = f"{bv:+.1f}{u}"
     bar   = "█" * s + "░" * (4 - s)
-    print(f"  {name_:<32}  {bv_s:>7}  {f'{op}{bf:.1f}{u}':>7}  {f'{op}{blf:.1f}{u}':>7}  {f'{op}{xf:.1f}{u}':>7}  {f'{cv:+.1f}{u}':>8}  {ICONS[s]}  {bar}")
+    print(f"  {name_:<32}  {bv_s:>7}  {f'{op}{bf:.1f}{u}':>7}  {f'{op}{blf:.1f}{u}':>7}  {f'{op}{xf:.1f}{u}':>7}  {_now(cv, u):>8}  {ICONS[s]}  {bar}")
 
 print(f"\n  Proxy composite:    {proxy_composite:.2f} / 4.00")
 print(f"  Market composite:   {mkt_composite:.2f} / 4.00  (back-solved from {CUR}{CURRENT_PRICE:,.0f} + {REQUIRED_RETURN*100:.0f}% hurdle)")
@@ -547,12 +565,12 @@ print(f"  {'Signal':<32}  {'Current':>8}  {'Bear val':>8}  Move    Trigger")
 for name_, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
     u = unit.split()[0] if unit else ""
     trigger = narr[:40] if len(narr) <= 40 else narr[:37] + "…"
-    print(f"  {name_:<32}  {f'{cv:+.1f}{u}':>8}  {f'{bv:+.1f}{u}':>8}  {f'{bv-cv:+.1f}{u}':>6}  {trigger}")
+    print(f"  {name_:<32}  {_now(cv, u):>8}  {f'{bv:+.1f}{u}':>8}  {(_now(bv - cv, u) if cv is not None else 'n/r'):>6}  {trigger}")
 
 print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~{CUR}{expected_price(bear_probs, SCENARIOS):,.0f}  (model)  /  {CUR}{SCENARIOS['BEAR'][2]:,} (defined)")
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"""
-  KEY TRIGGER: futures orders went from {PREV_FUTURES[0]:+.1f}% ({PREV_FUTURES[1]}) to {L['futures_pct']:+.1f}% ({L['quarter']});
+  KEY TRIGGER: {_fut_move};
   the bear case needs a demand recession that gross margin ({L['gross_margin_bp']:+.1f}bp now)
   and inventories ({L['inventory_gap_pp']:+.1f}pp against revenue) no longer absorb. {KEY_TRIGGER_TAIL}""")
 
@@ -573,7 +591,7 @@ print("  " + "─" * (W-2))
 print(f"  {'Signal':<32}  {'Conservative':>14}  vs Current  Rationale")
 for idx, sval, srat in CONS_SIGNALS:
     sig = SIGNALS[idx]
-    print(f"  {sig[0]:<32}  {sval:>14.1f}  {sval-sig[6]:>+9.1f}   {srat[:34]}")
+    print(f"  {sig[0]:<32}  {sval:>14.1f}  {(f'{sval-sig[6]:+.1f}' if sig[6] is not None else 'n/r'):>9}   {srat[:34]}")
 
 print(f"\n  Conservative 2yr EPS:   {CUR}{EPP_TODAY_EPS:.2f} × (1+{CONS_EPS_CAGR*100:.1f}%)² = {CUR}{cons_eps_2yr:.2f}")
 print(f"  At {CONS_EXIT_PE:.0f}x P/E (conservative):  {CUR}{cons_price_2yr:,.0f}/share")
@@ -605,7 +623,7 @@ print(f"  2-sigma range (1yr):  {CUR}{CURRENT_PRICE - 2*sigma_1yr:,.0f}  –  {C
 print(f"  {'─'*60}")
 print(f"  Bear {CUR}{SCENARIOS['BEAR'][2]:,} requires:  ~{sigma_needed_bear:.1f}σ price move  {'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal vol range)'}")
 print(f"""  An athletic footwear and apparel brand with a {VOL_BETA:.1f} beta: the stock is {(CURRENT_PRICE/REF_LOW-1)*100:+.0f}% off its {REF_LOW_LABEL}
-  low while futures orders went from {PREV_FUTURES[0]:+.1f}% ({PREV_FUTURES[1]}) to {L['futures_pct']:+.1f}% ({L['quarter']}).
+  low while {_fut_move}.
   {'The rally is in the multiple, not the numbers.' if CURRENT_PRICE / REF_LOW > 1.10 else 'Near the low: the multiple has de-rated alongside the numbers.'}""")
 
 print(f"\n  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)")
@@ -656,7 +674,9 @@ for name_, kw in VARIANTS:
 print()
 print("═" * W)
 print("  Key catalysts to watch (from the as-of date):")
-print(f"  (1) {NEXT_PRINT} — the next read on futures orders ({L['futures_pct']:+.1f}% now) and the outlook on the call")
+print(f"  (1) {NEXT_PRINT} — the next read on futures orders ({L['futures_pct']:+.1f}% now) and the outlook on the call"
+      if L["futures_pct"] is not None else
+      f"  (1) {NEXT_PRINT} — revenue against the outlook on the call; futures orders are not reported for {L['quarter']}")
 print(f"  (2) Gross margin — {L['gross_margin_bp']:+.1f}bp in {L['quarter']}: pricing, product costs and currency, what must hold if orders do not")
 print(f"  {CATALYST_3}")
 print(f"  {CATALYST_4}")
@@ -672,8 +692,10 @@ summary = (
     f"Adj composite {adj_composite:.2f} vs market {mkt_composite:.2f}: gap {adj_gap:+.2f} [{_verdict}] | "
     f"{epp_gap_pct:+.0f}% above the EPP floor ${epp_updated:,.0f} ({EPP_MIN_PE:.0f}x {FY_E_S} ${EPP_TODAY_EPS:.2f}) | "
     f"Conservative 2-yr case: {cons_total_ret:+.1f}% total ({cons_annual_ret:+.1f}%/yr) | "
-    f"At {PE_NOW:.1f}x {FY_E_S} the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; futures orders {L['futures_pct']:+.1f}% "
-    f"in {L['quarter']}, forward revenues {_pct_range(*FWD_GUIDE)} ({FWD_GUIDE_LABEL}); {THEME_SUMMARY}."
+    f"At {PE_NOW:.1f}x {FY_E_S} the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; "
+    + (f"futures orders {L['futures_pct']:+.1f}% in {L['quarter']}" if L["futures_pct"] is not None else
+       f"futures orders not reported for {L['quarter']}")
+    + f", forward revenues {_pct_range(*FWD_GUIDE)} ({FWD_GUIDE_LABEL}); {THEME_SUMMARY}."
 )
 RESULT = {
     "ticker":           TICKER,
