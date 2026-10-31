@@ -3423,6 +3423,130 @@ Judgement calls that could carry hindsight:
 - the releases' outlook quotes kept out of the guide line (display only), and dividends from the releases (no class moves);
 - the signals, chosen by a builder who knows how 2021-2023 went; DURABLE rather than CYCLICAL (the class label only).
 
+### NKE 2024-2026: an adjusted FY24, two GAAP years with one-off items, the first EPS range
+
+```bash
+python3 retro/build_nke.py --weekly 2024-01-01 2026-10-30                   # 148 dates, 2024-01-05 .. 2026-10-30
+for c in 2024-03-22 2024-06-28 2024-07-26 2025-06-27 2025-07-18 2026-04-01 2026-07-01 2026-07-16 2026-10-02 2026-10-31; do python3 retro/tools/firewall.py $c NKE; done
+```
+
+All 42 filings published from 2024-01-01 to 2026-10-30 (30 8-Ks, 9 10-Qs and the FY2024-FY2026 10-Ks) were read, with no
+delegated transcription: the eleven releases in full; the items of every other 8-K (officer, director, meeting, bylaw and credit
+8-Ks, the cost realignment under Item 2.05 dated 2026-03-06, and the purchase-obligation correction of 2025-07-28) with their
+press-release exhibits, not their legal exhibits; the 10-Ks' business, risk-factor, income-statement, tax, segment, cash-flow
+and equity sections; and the 10-Qs searched for outlook statements (words only). 282 strings were checked with `verbatim.py`
+against their own filings, among them every print's income-statement and balance-sheet rows and every vintage's rows. Each
+source's date comes from EDGAR's acceptance time. Thresholds, signals and the engine are unchanged. Decided on 2026-10-31,
+before any 2024-2026 date was built or scored:
+
+- **FY24 at the company's $3.95.** The Q4 FY24 release (dated 2024-06-28) gives diluted EPS excluding restructuring charges, $3.95
+  for fiscal 2024 against GAAP $3.73, and $1.01 for the quarter against $0.99; the Q3 FY24 release gives "Excluding these charges,
+  Diluted earnings per share would have been $0.98" (GAAP $0.77). The charges were announced with the Q2 FY24 release (Item 2.05,
+  dated 2023-12-22), so the ACN rule applies, as for FY09 ("NKE 2009-2011"): the prints show the company's figures with GAAP in
+  the note, FY24 enters the history at $3.95 from the Q4 FY24 print, and every later vintage keeps it although the 10-Ks state
+  GAAP only (an adjusted year keeps its figure, the LOW rule). Q3 and Q4 FY25 compare with $0.98 and $1.01, as their releases
+  reconcile them again. Margins stay GAAP.
+- **FY25 and FY26 at GAAP, $2.16 and $2.10.** FY25 includes "a one-time, non-cash deferred tax benefit" (Q3 FY25); FY26
+  includes "a $0.52 benefit related to the expected recovery of the IEEPA tariffs" (Q4 FY26, $986 million, about 900 basis
+  points of the quarter's gross margin) and employee severance costs (about $300 million for the nine months, the Item 2.05
+  8-K dated 2026-03-06). Each is an
+  impact with no figure excluding it, so GAAP stands (the Fremont rule, as for AAPL's and LOW's tariff items), and each is a
+  fraction of the year's net income, so no year is excluded. FY18 stays excluded: all three windows hold it.
+- **The first EPS range: FY27E is its midpoint.** The Q1 FY27 release (dated 2026-10-02) has an Outlook section: "Revenues are
+  expected to decline high-single digits in fiscal 2027", a tax rate "in the mid-20 percent range", and adjusted diluted EPS
+  "expected to be in the range of $1.15 to $1.35, which excludes approximately $0.15 of restructuring expenses related to Pace
+  for fiscal 2027". The range is a guide in numbers, given excluding an announced item (Pace, under Item 2.05 of the same
+  8-K), so FY27E is its midpoint, $1.25, on the company's basis (the ACN rule; nothing is derived). The revenue and tax words
+  are display only: BASE stays on the quarter's growth excluding currency. The builder gains two guide fields for it,
+  `eps_guide` and `eps_guide_note` (no earlier guide has them), and its usage line.
+- **Three vintages, three-year 10-Ks.** The FY2024 10-K (accepted 2024-07-25 16:16 ET, dated 2024-07-26), the FY2025 10-K
+  (2025-07-17 16:25 ET, dated 2025-07-18) and the FY2026 10-K (2026-07-15 16:43 ET, dated 2026-07-16) each report three years.
+  Each year comes from the latest 10-K that reports it. Windows FY2015-FY2024, FY2016-FY2025 and FY2017-FY2026; the first year's
+  diluted shares FY2015's 1,768.8M (FY2019 10-K), FY2016's 1,742.5M and FY2017's 1,692.0M (FY2020 10-K).
+- **No other guide.** The Q1 FY25 release says NIKE "will address its approach to guidance on the conference call" and
+  postpones its Investor Day; the Q4 FY24 release's "update our Fiscal '25 outlook" and the June 2026 8-K's words on tariff
+  refunds "not contemplated in the company's previously provided guidance" give no number. Executives' quotes stay out of the
+  guide line, as in 2008-2023. So the last full year stands until the range: FY23's $3.23 for FY24, FY24's $3.95 for FY25,
+  FY25's $2.16 for FY26 and FY26's $2.10 for FY27 until 2026-10-02.
+- **Dividends from the releases:** $0.40 a quarter from the Q2 FY25 release (2024-12-20) and $0.41 from Q2 FY26 (2025-12-19);
+  the 10-Ks give only the year's total ($1.450, $1.570 and $1.63 a share), so each vintage carries the latest release's rate
+  with its date.
+- **ECOMMERCE stays on the watch list,** a judgement call. The FY2024-FY2026 10-Ks drop "the continued proliferation of
+  digital commerce" but say NIKE Direct competes "with digital commerce platforms", and keep "shifts in the ways in which
+  consumers shop" as a risk factor for the NIKE Direct and wholesale operations. Text only, with each 10-K's digital figure:
+  NIKE Brand Digital $12.1 billion in fiscal 2024, $9.6 billion in 2025 and $8.6 billion in 2026. The FY2025 and FY2026 10-Ks
+  name artificial intelligence among the changes in technology and competition; GENAI's scope, AI that substitutes the core
+  product, names nothing NIKE sells, so no theme.
+- **Calendar.** Every release came after the close (16:15-16:18 ET). Q3-Q4 FY24, Q2-Q4 FY25, Q2 FY26 and Q1 FY27 came on a
+  Thursday, dated Friday and meeting that close; Q1 FY25, Q1 FY26, Q3 FY26 and Q4 FY26 on a Tuesday, dated Wednesday, the
+  week's date Thursday (for Q3 FY26 2026-04-02, before Good Friday; for Q4 FY26 2026-07-02, before the Independence Day holiday
+  of 2026-07-03). No filing came on an early-close day. The last date is 2026-10-30, the last full week before the build
+  (prices to 2026-10-30); a later batch starts on 2026-11-02.
+- **Segments** (display): the four NIKE Brand geographies, Global Brand Divisions and Converse in all three vintages. The move
+  to three geographies announced with Pace is not yet reported.
+- **Adds nothing:** the officer and director 8-Ks (2024-06-05, 2024-09-19, 2025-05-05, 2025-06-18, 2025-06-25, 2025-12-02,
+  2026-06-18, 2026-08-10, 2026-09-16), the bylaw amendment (2024-09-20), the annual meetings (2024-09-13, 2025-09-11,
+  2026-09-10), the credit agreements (2024-03-11, 2025-03-10, 2026-03-09), the purchase-obligation correction (2025-07-28), the
+  June 2026 8-K's words ("generally in line with previously provided guidance", excluding the tariff refunds), and the 10-Qs
+  (outlook words only).
+
+Controls: altering one value of each new print, Q4 full-year figure, vintage, dividend, event and the FY27 range, and putting
+FY18 back at GAAP in each vintage, changes no date before it can be shown and changes the first weekly date on or after it (27
+of 27). No string of any new print, vintage, guide, dividend, event or source appears in a model dated before it, nor do 20
+distinctive figures and words ($3.95, IEEPA, Pace, $1.15-1.35 and others) (157,237 checks over the 983 NKE models). The firewall
+at the ten cutoffs above changes no model before its cutoff. The 835 dates of 2008-2023 rebuild byte-identical.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP returns:** CHEAP on 80 of 148 dates, RICH on 40 and FAIR on 28 (2024: 27 CHEAP and 25 FAIR; 2025: 25 CHEAP, 26 RICH
+  and 1 FAIR; 2026: 28 CHEAP, 14 RICH and 2 FAIR). Tiers: BUY 63, AVOID 45, WATCHLIST 23, ACCUMULATE 17.
+- **The anchors:** FY23's $3.23 to 2024-06-21 (25 dates) at 27.5-32.7x, the 30th-54th percentile, FAIR throughout (WATCHLIST 19,
+  AVOID 5, ACCUMULATE 1); FY24's $3.95 from the Q4 FY24 print to 2025-06-20 (52) at 13.8-22.6x (0th-12th), CHEAP and BUY
+  throughout; FY25's $2.16 from 2025-06-27 to 2026-06-26 (53) at 18.9-36.3x (0th-67th), RICH and AVOID on 35 of the 36 dates to
+  2026-02-27 (FAIR on 2025-12-19), then CHEAP on 15 of the last 17; FY26's $2.10 from 2026-07-02 to 2026-09-25 (13) at 16.9-21.1x
+  (0th-6th), CHEAP throughout (BUY 7, ACCUMULATE 6); the FY27 range's $1.25 from 2026-10-02 (5) at 27.1-30.9x (19th-37th), RICH
+  and AVOID.
+- **RICH at an average multiple.** The RICH dates sit at 27.1-36.3x, the 19th-67th percentile: what makes them RICH is the
+  scenarios, not the multiple. From the Q4 FY25 print BEAR is FY24-FY25's -45.3%/yr (to $15 on FY25's $2.16, $9 on the
+  range's $1.25), while BULL, the window's EPS CAGR or BASE where higher, is 0.0-1.8%/yr and then -2.0% (FY16's $2.16 to
+  FY25's $2.16 is 0.0%; FY17-FY26 is -2.0%). Ratio B is 1.83-13.72 on the 35 RICH dates to 2026-02-27 and 2.05-4.05 on the
+  five of October 2026.
+- **The floor.** 79 dates sat below the EPP floor: all 52 on FY24's $3.95 (the deepest 2025-04-11, 40.1% below it at $54.39,
+  13.8x), and all 27 from 2026-03-27 to 2026-09-25 (2026-03-13 sat at it). The floor P/E (the median of calendar-year lows) was
+  23-26x. No date sat below the BEAR price or above the BULL price.
+- **BEAR** is -35.7%/yr (FY19 to FY20) to 2025-06-20 and -45.3%/yr (FY24 to FY25) after. **BASE** is the quarter's growth
+  excluding currency plus the buyback: +0.6%/yr on Q2 FY24, +1.6-1.7% on Q3-Q4 FY24, -7.4% on Q1-Q2 FY25, -5.4% on Q3 FY25,
+  -9.2 to -9.3% on Q4 FY25, +0.8% on Q1 FY26, +1.8% on Q2 FY26, -1.2% on Q3 FY26, -2.4 to -2.5% on Q4 FY26 and -3.5% on Q1 FY27.
+  BULL is 9.0%/yr to the Q4 FY24 print and 8.8-10.2% to the Q4 FY25 print, then 1.6%, 0.0% (BASE's +0.8% and +1.8% where
+  higher), -0.3% from the Q4 FY26 print and -2.0% from the FY2026 10-K. XBULL is FY20-FY22's +53.1%/yr throughout.
+- **The growth factor is -0.5 on every date:** no quarter's growth excluding currency (-11% to 0%) came near the window's
+  median (4.9-6.1%).
+- **The proxy composite:** 2.80 on Q2 and Q4 FY24, 2.50 on Q3 FY24, 2.05 on Q1 FY25, 2.00 on Q2 FY25, 1.85 on Q3 FY25, 1.50 on
+  Q4 FY25, 2.00 on Q1-Q3 FY26, 2.70 on Q4 FY26 (the tariff recovery's gross margin) and 2.20 on Q1 FY27.
+- **Robustness:** all eight variants agree on 79 of the 80 CHEAP dates (seven on the other), on 14 of the 40 RICH dates (six or
+  seven on the rest), and on none of the 28 FAIR dates (two to six).
+
+How far each call moves the classes (the 148 dates rebuilt with one encoding changed; no outcome consulted):
+- FY26 without the IEEPA recovery ($1.58, a derived figure, so a test only) would change 10 classes and 13 tiers, all from
+  2026-07-02 to 2026-09-25 (CHEAP to RICH or FAIR);
+- FY18 at GAAP $1.17 instead of excluded would change 8 classes and 21 tiers;
+- the FY27 range not used (FY26's $2.10 standing) would change 5 classes and 5 tiers: the five dates from 2026-10-02, RICH and
+  AVOID to CHEAP and BUY;
+- FY20 excluded as well (a test) would change 4 classes and 23 tiers;
+- BASE and the growth factor on reported revenue growth would change 1 class and 10 tiers;
+- the unreported futures slot re-weighted instead of scored BASE would change 6 classes (spring 2024, FAIR to CHEAP) and no tier;
+- FY24 at GAAP $3.73 would change no class and 4 tiers; the range less the Pace charges ($1.10, a test) and no ECOMMERCE watch
+  none.
+
+Judgement calls that could carry hindsight:
+- the FY27 range taken at its midpoint on the company's adjusted basis, through new guide fields encoded by a builder who knows
+  the year (5 classes): the guide rule NKE has used since its first EPS guide in numbers, but the only range in the fact sheet;
+- FY26 kept at GAAP with the IEEPA recovery inside it (the Fremont rule; 10 classes as a test), and FY25 with its tax benefit;
+- FY24 at the company's $3.95 rather than GAAP (no class, 4 tiers);
+- FY18 excluded (8 classes, 21 tiers) and FY20 kept (4 classes, 23 tiers as a test);
+- BASE on growth excluding currency (1 class, 10 tiers);
+- ECOMMERCE kept on the watch list on the FY2024-FY2026 wording (no class moves);
+- the signals, chosen by a builder who knows how 2024-2026 went; DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3484,7 +3608,9 @@ What the gates enforce:
   implicating our DTC and wholesale operations", NKE carries ECOMMERCE on the watch list, company-acknowledged, with no market
   read ("NKE 2015-2017"). The FY2018 and FY2019 10-Ks repeat the sentence (for "our NIKE Direct and wholesale operations") and
   the FY2020-FY2023 10-Ks name "the continued proliferation of digital commerce", so it stays there through 2023 ("NKE 2018-2020",
-  "NKE 2021-2023").
+  "NKE 2021-2023"). The FY2024-FY2026 10-Ks drop that phrase but say NIKE Direct competes "with digital commerce platforms" and
+  keep "shifts in the ways in which consumers shop" as a risk factor, so it stays there through 2026, a judgement call
+  ("NKE 2024-2026").
 
 ## Workflow
 
