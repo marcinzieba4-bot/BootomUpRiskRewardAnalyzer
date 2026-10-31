@@ -244,22 +244,23 @@ def _ordinal(n):
 def _now(v, u):
     return "n/r" if v is None else f"{v:+.1f}{u}"   # n/r: not reported (no futures orders in the filings public on AS_OF)
 
-_FY = sorted(EPS_NORM)
-EPS_YOY           = [EPS_NORM[y] / EPS_NORM[y - 1] - 1 for y in _FY[1:]]
+_FY = sorted(EPS_NORM)     # a year excluded from the history (a distorted year, method r2) leaves a gap: growth is measured
+                            # only between years in it (one-year changes between consecutive years, two-year runs between two)
+EPS_YOY           = [EPS_NORM[y] / EPS_NORM[y - 1] - 1 for y in _FY[1:] if y - 1 in EPS_NORM]
 REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in sorted(REVENUE_HIST)[1:]]
 REV_MEDIAN_GROWTH = _median(REV_YOY)                                                # median revenue growth over the history
 REV_CAGR_10Y      = _cagr(REVENUE_HIST[min(REVENUE_HIST)], REVENUE_HIST[max(REVENUE_HIST)], max(REVENUE_HIST) - min(REVENUE_HIST))
 MARGIN_CONTRIB    = (FY_MARGIN_BASE - PREV_FY_MARGIN) / FY_MARGIN_BASE if MARGIN_GUIDED else 0.0   # guided margin step, as EPS growth
 BUYBACK           = _cagr(SHARES_HIST[max(SHARES_HIST)], SHARES_HIST[min(SHARES_HIST)], max(SHARES_HIST) - min(SHARES_HIST))
 FWD_MID           = sum(FWD_GUIDE) / 2 / 100                                         # forward revenue growth (guide, else latest quarter)
-_SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}"
+_SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}" + "".join(f" ex-FY{y % 100:02d}" for y in range(_FY[0], _FY[-1]) if y not in EPS_NORM)
 
 # R1  scenario EPS growth, current FY -> FY+2 (per year)
 SCENARIO_CAGR = {
     "BEAR":  min(0.0, min(EPS_YOY)),                                    # worst year of the history, capped at 0
     "BASE":  FWD_MID + MARGIN_CONTRIB + BUYBACK,                        # latest forward guide carried forward
     "BULL":  _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]),   # EPS CAGR over the history
-    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:]),   # best 2-yr run of the history
+    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:] if y - 2 in EPS_NORM),   # best 2-yr run of the history
 }
 SCENARIO_CAGR["BULL"]  = max(SCENARIO_CAGR["BULL"], SCENARIO_CAGR["BASE"])
 SCENARIO_CAGR["XBULL"] = max(SCENARIO_CAGR["XBULL"], SCENARIO_CAGR["BULL"])

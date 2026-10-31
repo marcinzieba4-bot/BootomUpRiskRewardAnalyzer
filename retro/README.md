@@ -85,6 +85,12 @@ Fallbacks for facts a company did not publish (decided before any outcome of the
 - **No FX guide:** FY revenue is LC growth only.
 - **A distorted year with no published adjusted figure:** it is excluded, and the P/E window starts after it.
   Example: ACN FY02, with a $321M investment loss.
+  A distorted latest year (added 2026-10-31 for NKE FY2018; no earlier output changes, so still r2): starting the history and
+  the window after it would leave neither, so only the year itself leaves them. Its own days leave the P/E window (labelled
+  "10-yr ex-FY18"); EPS growth is measured only between years in the history (BEAR over one-year changes between consecutive
+  years, XBULL over two-year runs whose ends are both in it, BULL from the first year to the last); and the rollover rule's last
+  full year is the last year in the history. Example: NKE FY2018, whose Tax Act charges ($1,875M and $158M) exceeded the year's
+  $1,933M net income.
 
 Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output changes, so still r2):
 
@@ -3182,6 +3188,141 @@ Judgement calls that could carry hindsight:
 - futures from the first filing that states them, and BASE with no value from Q1 FY18 (no class moves either way);
 - the signals, chosen by a builder who knows how 2015-2017 went; DURABLE rather than CYCLICAL (the class label only).
 
+### NKE 2018-2020: the Tax Act year excluded, no more call transcripts, COVID
+
+```bash
+python3 retro/build_nke.py --weekly 2018-01-01 2020-12-31                   # 157 dates, 2018-01-05 .. 2020-12-31
+for c in 2018-03-23 2018-06-29 2018-07-25 2019-06-28 2019-07-24 2020-03-25 2020-06-26 2020-07-27 2021-01-01; do python3 retro/tools/firewall.py $c NKE; done
+```
+
+All 45 filings published from 2018-01-01 to 2020-12-31 (33 8-Ks, 9 10-Qs and the FY2018-FY2020 10-Ks) were read, with no
+delegated transcription: the twelve releases in full; the two call transcripts' prepared remarks in full, with each Q&A searched
+for figures (none gives an EPS, revenue or margin number); the items of every other 8-K and the exhibits of its Item 7.01 and 8.01
+releases (the COVID-19 updates of 2020-02-04 and 2020-05-14, the South America transition of 2020-02-06, the CEO succession
+and leadership changes, and the 2020-03-25 reprint of the Q3 FY20 results for the notes offering), not their legal exhibits;
+the 10-Ks' business, risk-factor, selected-data, tax, segment and cash-flow sections; and the 10-Qs searched for outlook
+statements (none in numbers). 316 strings were checked with `verbatim.py` against their own filings, among them every print's
+income-statement and balance-sheet rows, every call's words and every vintage's rows; the FY2013 and FY2014 10-Ks were fetched
+again for two first-year share counts. Each source's date comes from EDGAR's acceptance time. Thresholds and signals are
+unchanged. Decided before any 2018-2020 date was built or scored:
+
+- **Three vintages.** The FY2018 10-K (accepted 2018-07-24 18:22 ET, dated 2018-07-25) gives FY2014-FY2018, the FY2019 10-K
+  (2019-07-23 16:13 ET, dated 2019-07-24) FY2015-FY2019 and the FY2020 10-K (Friday 2020-07-24 16:07 ET, dated Monday
+  2020-07-27) FY2016-FY2020. Windows FY2009-FY2018, FY2010-FY2019 and FY2011-FY2020; every earlier year from the latest 10-K
+  that reports it, and the first year's diluted shares from the same 10-K: FY2009's 981.4M (FY2013 10-K), FY2010's 987.8M (FY2014
+  10-K) and FY2011's 971.3M (FY2015 10-K), all before the 2015 split. FY08's $3.45 on the old basis leaves the window with the
+  FY2018 10-K, and with it the seam of "NKE 2012-2014".
+- **FY18 is excluded (a distorted year, the r2 rule).** The Q3 FY18 release (dated 2018-03-23) reports a diluted net loss of
+  $0.57 after "additional income tax expense of $2.0 billion" from the Tax Cuts and Jobs Act, whose "one-time provisional charges
+  ... reduced diluted earnings per share by $1.25". FY18's diluted EPS is $1.17 (Q4 FY18 release, 2018-06-29), with net income
+  of $1,933M; the FY2018 10-K lists the charges as "provisional expense of $1,875 million for the one-time transition tax ... and
+  $158 million resulting from the remeasurement of deferred tax assets and liabilities", and the FY2019 10-K made no adjustment
+  to them. The items exceed the year's net income (the AAPL FY2002 test), and no EPS excluding them was published: the "$1.25"
+  is a per-share effect, not an EPS without it, and no figure is derived from it (the NKE 2008 rule). Both facts of the test are
+  public with the Q4 FY18 print, so the exclusion starts there. The rule's "the P/E window starts after it" assumes a first
+  year: for the latest year it would leave no history and no window, so the method gains a note for a distorted latest year
+  (see "Retro method r2"; no earlier output changes, so still r2):
+  - FY18 leaves the EPS history (vintages: `eps_excluded`; the Q4 print: a `fy_actual` with no EPS). Its revenue, shares and
+    margins stay; its 55.3% tax rate stays as the fact, so the display-only EPS check reads $1.27 until the FY2019 10-K.
+  - FY18's own days leave the P/E window ("10-yr ex-FY18", about nine years of days).
+  - BEAR takes one-year changes between consecutive years only, so FY17-FY19 is not a BEAR year; XBULL takes two-year runs whose
+    ends are both in the history, so FY17-FY19 counts; BULL runs from the first year to the last ("FY09-FY19 ex-FY18").
+  - The rollover rule's last full year is the last year in the history: FY17's $2.51 stands for FY19E from 2018-06-29 to the
+    Q4 FY19 print, and the EPS label says why ("FY18 is excluded: GAAP $1.17 after the Tax Act's one-time charges ...").
+  The builder works around the shared split helper for a year with no EPS (it refuses a split after an excluded year until
+  that is decided). FY17 keeps its one-time tax benefit and FY20 its South America charge: each is a fraction of the year's net
+  income, so neither year is excluded (the AAPL FY2003 test).
+- **No guide in numbers, and from FY20 no words.** The Q3 FY18 call's fiscal 2018 words ("excluding the one-time impact of
+  U.S. Tax Reforms", Q4 revenue "in the high single- digit range", as transcribed) replace the Q2 FY18 call's; its fiscal 2019
+  words ("mid-to high-single-digit") show from 2018-06-29, the first date with fiscal 2019 current, and the Q4 FY18 call's
+  ("entering the high-single-digit range", gross margin "roughly 50-basis points or slightly greater") from 2018-07-06. The Q4
+  FY18 call is the last transcript NIKE furnished by 8-K; no release, 10-Q, 10-K or 8-K of 2018-2020 states an outlook in
+  numbers (the 2020-02-04 update says COVID-19 "was not contemplated at the time we provided Q3 guidance during our Q2 fiscal
+  year 2020 earnings call", a call not filed), so FY20 and FY21 show no outlook and the last full year stands: FY17's $2.51
+  for FY19, FY19's $2.49 for FY20, FY20's $1.60 for FY21.
+- **One-offs and COVID as reported.** Q3 FY20 and FY20 include the South America distributor-transition charge ("a $0.25
+  non-recurring, non-cash charge"; $400 million in Q3) and Q2 FY21 restructuring costs in gross margin: no figure without them
+  was published, so GAAP stands, and margins are GAAP throughout (the 2009 rule). The COVID-19 quarters enter as released: Q4
+  FY20 revenue -38% (-36% excluding currency), gross margin -822bp, a pre-tax loss (-2,494bp) and inventories +31% (a +69pp gap),
+  with no new field. The loss quarters' diluted share counts are the basic ones, as published (Q3 FY18, Q4 FY20).
+- **Accounting changes:** the revenue standard (Topic 606, fiscal 2019, modified retrospective; "did not have a material effect"
+  on the income statement) and the lease standard (Topic 842, fiscal 2020, balance sheet only) restate nothing.
+- **ECOMMERCE stays on the watch list.** Each 10-K replaces the last (the 2015-2017 encoding): the FY2018 and FY2019 10-Ks name
+  "the rising trend of digital commerce" as "a risk factor implicating our NIKE Direct and wholesale operations" (the FY2017 10-K
+  said "DTC"), and the FY2020 10-K "the continued proliferation of digital commerce"; NIKE's own digital commerce was $2.8 billion
+  in fiscal 2018, $3.8 billion in 2019 and $5.5 billion in 2020. Company-acknowledged, no market read; text only. No other theme
+  is live for NIKE (EV and CRYPTO from 2020 are scoped to other industries).
+- **Calendar.** Every release came after the close (16:16-17:09 ET). Q1 FY19, Q1 FY20, Q3 FY20 and Q1 FY21 came on a Tuesday, so
+  the week's date is Thursday; the others on a Thursday, dated Friday and meeting that close, except Q2 FY21 (Friday
+  2020-12-18, dated Monday 2020-12-21, the week's date 2020-12-22). The Q4 FY18 call's 8-K was accepted 2018-07-03 at 14:31 ET,
+  after that day's 13:00 early close before Independence Day, so it is dated 2018-07-05 (the first early close in a fact
+  sheet; it moves no weekly date). 2020-12-31 closes 2020-W53.
+- **Segments** (display): from the FY2018 vintage the four NIKE Brand geographies (North America; Europe, Middle East & Africa;
+  Greater China; Asia Pacific & Latin America), Global Brand Divisions and Converse; Corporate left out. Hurley, sold on
+  December 6, 2019, leaves the FY2020 vintage's business line.
+- **Dividends:** $0.22 a quarter from the Q2 FY19 release (2018-12-21), $0.245 from Q2 FY20 (2019-12-20) and $0.275 from Q2 FY21
+  (2020-12-21); the vintages carry $0.20, $0.22 and $0.245. Repurchases: the $12 billion program completed in Q3 FY19 and the
+  $15 billion program of June 2018 began; NIKE suspended repurchases in March 2020.
+- **An engine revision, text only for earlier dates:** EPS growth over a gap in the history (above) and the span label. The 522
+  reports of 2008-2017 rebuild byte-identical; their models change only in the engine text.
+- **Adds nothing:** the officer and director 8-Ks (2018-02-21, 2018-03-15 with Trevor Edwards' resignation, 2018-07-12,
+  2018-11-19, 2019-04-23, the CEO succession of 2019-10-22, 2019-11-14, 2020-02-18, 2020-05-27), the annual meetings
+  (2018-09-21, 2019-09-23, 2020-09-18), the credit agreement (2019-08-20), the $6 billion notes (2020-03-27; long-term debt enters
+  through the 10-Ks), the bylaw and plan amendments (2020-06-19), the COVID-19 updates and the South America announcement
+  (words and an expected charge, no outlook), and the 10-Qs (tax estimates, accounting notes and the Q1 FY21 10-Q's expected
+  restructuring charge of about $315 million).
+
+Controls: altering one value of each new print, Q4 full-year figure, vintage, guide, dividend and event, and putting FY18 back at
+GAAP in the Q4 FY18 print and in each vintage, changes no date before it can be shown and changes the first weekly date on or
+after it (31 of 31). The Q3 FY18 call's fiscal 2019 words first show on 2018-06-29 and only that week. No string
+of any new print, vintage, guide, dividend, event or source appears in a model dated before it (108,236 checks over the 679 NKE
+models). The firewall at the nine cutoffs above changes no model before its cutoff. The 522 dates of 2008-2017 rebuild with
+byte-identical reports.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 156 of 157 dates** (all 52 in 2018, all 52 in 2019, 52 of 53 in 2020), FAIR on 2020-03-20 (the COVID-19 low: $67.45,
+  27.1x FY19's $2.49, the 72nd percentile; tier ACCUMULATE). Tier AVOID on the other 156. No CHEAP date.
+- **The anchors:** FY17's $2.51 to 2019-06-21 (77 dates; for FY18E by the rollover rule to 2018-06-22, then for FY19E with FY18
+  excluded) at 25.5-35.5x, the 83rd-100th percentile; FY19's $2.49 to 2020-06-19 at 27.1-42.0x (72nd-100th); FY20's $1.60 from
+  2020-06-26 at 58.5-89.0x (96th-100th). The price was above the BULL case on 85 dates (Ratio B infinite), from 2018-06-29.
+- **The anchor lags:** FY17's $2.51 stood until 2019-06-27, when nine-month FY19 EPS was already $1.87; FY19's $2.49 until
+  2020-06-25 (nine-month FY20 $2.09); FY20's $1.60, a year with a COVID-19 fourth quarter, stands through 2020 while Q1 FY21
+  alone earned $0.95 and the first half $1.73 (2020-12-21).
+- **BEAR is flat to 2020-06-19** (with FY18 out, EPS rose in every pair of consecutive years), then -35.7%/yr from the Q4 FY20 print
+  (FY19 to FY20). **BASE** is the quarter's currency-neutral growth plus the buyback (1.9-2.2%/yr): +5.0%/yr on Q2 and Q3 FY18,
+  +9.9-10.0% on Q4 FY18, +10.9% on Q1 FY19, +15.9% on Q2 FY19, +12.9% on Q3 FY19, +11.9-12.2% on Q4 FY19 and Q1 FY20, +15.2% on
+  Q2 FY20, +9.2% on Q3 FY20, -33.8% on Q4 FY20, +2.2% on Q1 FY21 and +9.2% on Q2 FY21. BULL is the window's EPS CAGR (12.6-13.8%/yr
+  to the Q4 FY19 print, 10.8-11.0% to the Q4 FY20 print, 4.1-5.1% after it) or BASE where higher; XBULL is FY14-FY16's +20.4%/yr
+  throughout.
+- **The window's multiples rose:** the median P/E from 20.5x to 24.8x and the 90th percentile from 26.5x to 33.7x before the Q4
+  FY20 print, then 52.1-58.3x once FY20's and FY21's days sit on $1.60. The EPP floor P/E is 19x to 2019-12-27 and 20x from
+  2020-01-03; no date came within 34% of it, and none sat below the BEAR price.
+- **The growth factor** against the window's median revenue growth (7.3-8.5%): -0.5 on Q2-Q3 FY18 (+3%), about 0 on Q4 FY18 and
+  Q1 FY19, +0.5 on Q2 FY19 (+14%), +0.15 to +0.45 to Q2 FY20, -0.15 on Q3 FY20, -0.5 on Q4 FY20 and Q1 FY21, -0.05 on Q2 FY21.
+- **The proxy composite:** 2.00 on Q2-Q3 FY18, 2.50-2.65 from Q4 FY18 to Q3 FY19, 2.20 on Q4 FY19, 2.65 on Q1 FY20, 2.30 on Q2
+  FY20, 2.00 on Q3 FY20, 1.35 on Q4 FY20 (revenue, gross margin, pre-tax margin and the inventory gap all at BEAR), 2.15 on Q1 FY21
+  and 2.60 on Q2 FY21.
+- **Robustness:** all eight variants agree on 150 of the 156 RICH dates and seven on the rest; on the FAIR date five of eight.
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed; no outcome consulted):
+- FY18 at GAAP $1.17 instead of excluded would change no class and 1 tier (2020-03-20, ACCUMULATE to WATCHLIST): the stock is RICH
+  either way, but the numbers differ: FY19E $1.17 at 61-76x from 2018-06-29 to the Q4 FY19 print, BEAR -53.4%/yr on every date
+  from 2018-06-29, and the window's 90th percentile 45-62x instead of 27-30x to the Q4 FY19 print and 36-42x instead of 30-34x to
+  the Q4 FY20 print;
+- BASE and the growth factor on reported revenue growth instead of growth excluding currency would change 1 class (FAIR to RICH
+  on 2020-03-20) and 1 tier;
+- the exclusion from the FY2018 10-K instead of the Q4 FY18 print, FY20 excluded as well (a test: it is not a distorted year), no
+  ECOMMERCE watch, and the unreported futures slot re-weighted instead of scored BASE would change none.
+
+Judgement calls that could carry hindsight:
+- FY18 excluded rather than at GAAP, and the mechanics of a distorted latest year (FY17's $2.51 as the FY19 anchor, the window
+  without FY18's days, growth over the gap): no class moves either way, but the scenario numbers do;
+- FY20 kept at GAAP $1.60 although COVID-19 hit its fourth quarter (the test is listed items against net income, and a
+  pandemic is not an item); it drives BEAR (-35.7%/yr) and the 52-58x upper percentiles of late 2020;
+- BASE on growth excluding currency (1 class), as in 2008-2017;
+- dating the Q4 FY18 call after the 2018-07-03 early close (moves no weekly date);
+- the signals, chosen by a builder who knows how 2018-2020 went; DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3241,7 +3382,8 @@ What the gates enforce:
   "NKE 2012-2014"). Its FY2015 and FY2016 10-Ks name e-commerce only as NIKE's own channel, so the list stays empty; from its
   FY2017 10-K (2017-07-21), the first whose risk factors name "the rising trend of digital commerce" as "a risk factor
   implicating our DTC and wholesale operations", NKE carries ECOMMERCE on the watch list, company-acknowledged, with no market
-  read ("NKE 2015-2017").
+  read ("NKE 2015-2017"). The FY2018 and FY2019 10-Ks repeat the sentence (for "our NIKE Direct and wholesale operations") and
+  the FY2020 10-K names "the continued proliferation of digital commerce", so it stays there through 2020 ("NKE 2018-2020").
 
 ## Workflow
 

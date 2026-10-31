@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  NKE  ·  NIKE, Inc.  ·  $96.28  ·  RETROSPECTIVE as of 2020-07-17
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -2.85  [OVERVALUED]
+  Point-in-time: 26 sources, latest published 2020-07-17; latest print Q4 FY20 (Jun 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America             $     9.7  $   9.7  $  11.2      +0.0      +1.5
+    +7.0% revenues in FY19
+  Europe, Middle East & Af  $     6.0  $   6.0  $   6.9      +0.0      +0.9
+    +6.2% revenues in FY19
+  Greater China             $     3.8  $   3.8  $   4.4      +0.0      +0.6
+    +20.9% revenues in FY19
+  Asia Pacific & Latin Ame  $     3.2  $   3.2  $   3.7      +0.0      +0.5
+    +1.7% revenues in FY19
+  Global Brand Divisions    $     0.0  $   0.0  $   0.0      +0.0      +0.0
+    -52.3% revenues in FY19
+  Converse                  $     1.2  $   1.2  $   1.3      +0.0      +0.1
+    +1.1% revenues in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    23.9  $  23.9  $  27.5      +0.0      +3.6
+  FY2021E = FY20 $37.40B × (1 − 36.0%: Q4 FY20 revenue ex-currency, applied to the year (no FY21 revenue guide in numbers)); split pro rata to FY19 revenues by operating segment (FY2019 10-K; Corporate's -$7M left out)
+  Q4 FY20 (Jun 25): revenues $6.31B -38.0% (-36% ex-currency); futures orders not reported; inventories +31.0%;
+  gross margin 37.27% (-822.1bp); pre-tax margin -12.74% (-2494.1bp); EPS $-0.51 vs $0.62
+  Futures: no longer reported: NIKE 'will discontinue reporting Futures Orders in its financial disclosures' from the first quarter of fiscal 2018 (8-K of 2017-09-26); revenue -38.0% reported, -36% excluding currency (the release's revenue table: -36% excluding currency changes); a diluted net loss in the COVID-19 store closures; full-year diluted EPS $1.60 including the South America charge, which 'reduced earnings per share by $0.25'; no figure excluding it was published
+  FY21: no outlook in scope yet; no FY21 revenue, EPS or margin guide in numbers
+
+  FY2021E EPS check:  $23.9B × 7.7% pre-tax × (1−12.0%) ÷ 1.556B  =  $1.04  (FY2021E: no EPS guide in numbers, FY20's $1.60 stands)
+  FY2023E BEAR check: $23.9B × 7.7% ÷ 1.488B  =  $1.09  (scenario $0.66)
+  FY2023E BULL check: $27.5B × 8.1% ÷ 1.488B  =  $1.32  (scenario $1.77)
+  Every 1pp of pre-tax margin ≈ $0.14 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Futures orders growth              -31.0%  ≥-13.0%    ≥5.0%   ≥12.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -780.0bp  ≥-360.0bp  ≥60.0bp  ≥250.0bp  -822.1bp  ⚠ BEAR  █░░░
+  Revenue growth                     -23.0%   ≥-8.0%    ≥7.0%   ≥15.0%    -38.0%  ⚠ BEAR  █░░░
+  Inventory growth less revenue     +46.0pp  ≤21.0pp  ≤-4.0pp  ≤-8.0pp   +69.0pp  ⚠ BEAR  █░░░
+  Pre-tax margin change             -1520.0bp  ≥-730.0bp  ≥70.0bp  ≥170.0bp  -2494.1bp  ⚠ BEAR  █░░░
+  E-commerce: net effect on wholesale and store sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.35 / 4.00
+  Market composite:   3.80 / 4.00  (back-solved from $96 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.30  →  Adj composite 0.95  →  Gap -2.85  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenues -4.4%, year-end futures orders not in the Q4 FY20 release; Q4 gross margin 37.27% (-822bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 60.2x FY21E vs a 23.6x 10-yr ex-FY18 median (96th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q4 FY20 revenue ex-currency -36% vs a 8.0% 10-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $8.79B, FY19 free cash flow $4.78B, dividend $0.98 a year, $4,286M of share repurchases in FY19, long-term debt $3,464M  (+0.30 × 15%  =  +0.045)
+    +  Digital commerce: NIKE Direct digital commerce $3.8 billion in fiscal 2019 — NIKE sells online itself  (+0.20 × 10%  =  +0.020)
+    -  Shift to digital commerce (FY2019 10-K): 'the rising trend of digital commerce' a risk factor 'implicating our NIKE Direct and wholesale operations'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Futures orders growth                  n/r    -31.0%     n/r  Retailers cut orders ahead of a consu…
+  Gross margin change               -822.1bp  -780.0bp  +42.1bp  Discounting and product costs compres…
+  Revenue growth                      -38.0%    -23.0%  +15.0%  Consumer spending falls faster than n…
+  Inventory growth less revenue      +69.0pp   +46.0pp  -23.0pp  Inventory builds ahead of demand: clo…
+  Pre-tax margin change             -2494.1bp  -1520.0bp  +974.1bp  Demand creation and overhead grow int…
+  E-commerce: net effect on wholesale and store sales    +2.0/4    +1.0/4  -1.0/4  Shoppers leave physical retail faster…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$17  (model)  /  $12 (defined)
+  Bear probability (proxy model):  65.1%
+
+  KEY TRIGGER: futures orders are not reported for Q4 FY20 or Q3 FY20;
+  the bear case needs a demand recession that gross margin (-822.1bp now)
+  and inventories (+69.0pp against revenue) no longer absorb. A consumer-spending recession shows up in futures orders first; the bear
+  needs it to reach gross margin and inventories as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.60  (FY2021E: no EPS guide in numbers, FY20's $1.60 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2010 15.4x, 2011 16.4x, 2012 16.4x, 2013 19.3x, 2014 20.1x, 2015 23.5x, 2016 19.8x, 2017 20.5x, 2018 27.1x, 2019 29.2x, 2020 39.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $32/share
+  Current $96 vs Updated EPP $32:  +201%  ⚠ far above floor — large drawdown room
+  Bear $12 vs Updated EPP $32:  -62%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Futures orders growth                      -13.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -360.0     +462.1   BASE floor (vs -822 now)
+  Revenue growth                              -8.0      +30.0   BASE floor (vs -38 now)
+  Inventory growth less revenue               21.0      -48.0   BASE floor (vs +69 now)
+  Pre-tax margin change                     -730.0    +1764.1   BASE floor (vs -2494 now)
+  E-commerce: net effect on wholesale and store sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.60 × (1+0.0%)² = $1.60
+  At 23x P/E (conservative):  $37/share
+  + Cumul. dividends (2yr):  +$2.02/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $37  (▼59 from $96)
+  Conservative total return:  -60% over 2yr  = -30%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (60.2x)
+  mean-reverts to 23x. Breakeven at 23x needs FY2023E EPS of $4.10,
+  i.e. 60.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $60.00  –  $105.62  (at 80th pct of range)
+  Annual dividend:      $0.98/share  (yield 1.0%)
+  Realized vol (1yr):   40% annualized
+  Beta vs broad market: 1.00
+  1-sigma range (1yr):  $57  –  $135  ($96 ± 40%)
+  2-sigma range (1yr):  $19  –  $174
+  ────────────────────────────────────────────────────────────
+  Bear $12 requires:  ~2.2σ price move  (unusual — requires fundamental break)
+  An athletic footwear and apparel brand with a 1.0 beta: the stock is +53% off its March
+  low while futures orders are not reported for Q4 FY20 or Q3 FY20.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.66  18.2x  $     12    65.1%      1.2%   +63.9pp  EPS -35.7%/yr (worst year FY10-FY20 ex-FY18, capped at 0%); P/E to its 10th pct
+  BASE        0.70  23.6x  $     17    26.0%      4.3%   +21.7pp  EPS +-33.8%/yr (Q4 rev ex-FX + margin + buyback); P/E at its 10-yr ex-FY18 median
+  BULL        1.77  29.2x  $     52     7.5%     15.0%    -7.6pp  EPS +5.1%/yr (FY10-FY20 ex-FY18 CAGR); P/E holds its 75th pct
+  XBULL       2.32  52.8x  $    122     1.4%     79.5%   -78.1pp  EPS +20.4%/yr (best 2-yr run FY10-FY20 ex-FY18); P/E at its 90th pct
+
+  Proxy EV (2yr): $18  /  Market EV: $106  /  Current: $96
+  Conservative EV (2yr, ④): $37 + $2.02 divs = $39 total value
+  Downside (→ Bear $12): 87.5%   Upside (→ Bull $52): -46.0%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $96 the market needs $127 in two years —
+  above the BULL case. That is a market composite of 3.80 against a model
+  read of 0.95: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +201%    -2.85  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx    +201%    -2.63  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +201%    -2.85  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +201%    -2.98  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +201%    -2.82  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +201%    -2.55  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +162%    -2.75  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +201%    -2.85  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY21 print (late September) — revenue against the outlook on the call; futures orders are not reported for Q4 FY20
+  (2) Gross margin — -822.1bp in Q4 FY20: pricing, product costs and currency, what must hold if orders do not
+  (3) A FY21 outlook — none in scope yet, and no FY21 guide in numbers
+  (4) Inventories — +31.0% against revenue -38.0% in Q4 FY20 (+69.0pp): discounting follows if orders slow
+  (5) Capital return at 60x — $159M of repurchases in Q4 FY20 before NIKE suspended them in March ($4.0B to date of the four-year $15 billion program approved in June 2018): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $32  |  ADD below ~$14  |  TRIM above $52
+════════════════════════════════════════════════════════════════════════
+
