@@ -1,11 +1,12 @@
 # NKE retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the NKE weekly dates: 53 from 2008-01-04 to 2008-12-31, 156 from 2009-01-09 to
-2011-12-30 and 157 from 2012-01-06 to 2014-12-31. They are **labels and hypotheses**: never feed them back into the method or
-the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008: 70934e9; 2009-2011:
-056235e; 2012-2014: 6a53de0). Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30 (three-year:
-2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29). Medians of
-an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+2011-12-30, 157 from 2012-01-06 to 2014-12-31 and 156 from 2015-01-09 to 2017-12-29. They are **labels and hypotheses**: never
+feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
+pushed (2008: 70934e9; 2009-2011: 056235e; 2012-2014: 6a53de0; 2015-2017: faa87f2). Prices run to 2026-10-30; the 2008 batch's
+two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014
+batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29). Medians of an even count take the upper
+middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -154,3 +155,60 @@ an even count take the upper middle value (`statistics.median_high`). The 15%/yr
   company by up to a year (retro/README.md, "NKE 2012-2014": each spring nine-month EPS was already over four-fifths of the
   anchor), and the method has no trend term for a multiple that rerates. Both are hypotheses to test on other tickers and
   years, under a new method version, never fitted to NKE's outcomes.
+
+## 2015-2017 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 1 | +73% | +73% | 1 | 1 | +56% | 0 |
+| class RICH | 155 | +38% | -19% to +87% | 82 | 89 | +15% | 66 |
+| legacy tier BUY | 9 | +73% | +52% to +87% | 9 | 9 | +55% | 0 |
+| legacy tier ACCUMULATE | 8 | +63% | +49% to +66% | 8 | 8 | +48% | 0 |
+| legacy tier WATCHLIST | 35 | +53% | +38% to +66% | 35 | 35 | +40% | 0 |
+| legacy tier AVOID | 104 | +15% | -19% to +65% | 31 | 38 | +6% | 66 |
+| FY15E $3.56 from the EPS guide (2015-01-09 to 2015-06-19), all RICH | 24 | +14% | +0% to +25% | 0 | 7 | +10% | 17 |
+| FY15 $3.70 anchor (2015-06-26 to 2015-12-18), all RICH | 26 | -2% | -19% to +10% | 0 | 0 | -6% | 26 |
+| FY15 anchor after the split, $1.85 (2015-12-24 to 2016-06-24), all RICH | 27 | +15% | +2% to +44% | 4 | 4 | -1% | 23 |
+| FY16 $2.16 anchor (2016-06-30 to 2017-06-23), all RICH | 52 | +52% | +36% to +66% | 52 | 52 | +38% | 0 |
+| FY17 $2.51 anchor (2017-06-30 to 2017-12-29) | 27 | +61% | +38% to +87% | 27 | 27 | +42% | 0 |
+| - of which FAIR / RICH | 1 / 26 | +73% / +61% | | 1 / 26 | 1 / 26 | +56% / +42% | 0 / 0 |
+
+- **A RICH call that held, then failed.** The model called NKE RICH on 155 of 156 dates and CHEAP on none. The two-year total
+  return ran from -19% to +87% (median +39%) while SPY returned +11% to +53%; 83 dates cleared the hurdle and 90 beat SPY. The
+  RICH call held on 66: every date from 2015-01-09 to 2016-05-27 except 2015-02-06 to 2015-03-20, where the stock returned +18%
+  to +25%, 0.9-9.4pp ahead of SPY but short of the hurdle. It failed on all 82 RICH dates from 2016-06-03, every one of which
+  cleared the hurdle and beat SPY. Within two years every date saw a drawdown of 16-26%. The median one-year return was +6% for
+  the 2015 dates, -2% for 2016 and +30% for 2017; over three years 116 of 156 beat SPY (median +54%).
+- **Within RICH, the multiple's own percentile ranked the outcomes.** At the 95th-100th percentile of its ten-year range (69
+  dates, 2015-01-09 to 2016-04-29) the median two-year return was +8.5% (-19% to +25%) and the call held on 62; at the 85th-94th
+  (23 dates) +42%, held on 4; at the 67th-84th (54) +55%, and below the 67th (9, August to October 2017) +66%, held on none.
+  Ratio B ranks the two-year returns at Spearman -0.89 (-0.94 on the m12-24 average), the EPP gap at -0.91 (-0.95), the multiple
+  on the anchor at -0.86 (-0.96), the conservative return at +0.74 (+0.88) and the entry price alone at -0.81 (-0.79). The tiers
+  sorted cleanly: AVOID median +15%, WATCHLIST +53%, ACCUMULATE +63%, BUY +73%.
+- **Above the BULL case meant something this time.** The 61 dates priced above the BULL price (Ratio B infinite, 2015-03-20 to
+  2016-05-13) returned a median +6.7%; none cleared the hurdle and one beat SPY. In 2012-2014 the 69 such dates returned a median
+  +63%.
+- **The FY15 anchor dates fared worst:** on FY15's $3.70, at 28.9-36.3x (2015-06-26 to 2015-12-18), the stock returned -19% to
+  +10% and none beat SPY; on the FY15E guide, at 25.8-29.9x, +0% to +25%.
+- **The FAIR date failed by beating the benchmark,** as in 2008: 2017-09-08 returned +73%, 48pp ahead of SPY. The nine BUY
+  dates (2017-08-25 to 2017-10-20) returned +52% to +87%, 31-67pp ahead.
+- **XBULL, not BASE, was the nearest anchor.** The two-year price landed nearest the XBULL price on 109 dates and BULL on 47; it
+  was 1.13-1.84 times the BASE price and 0.96-1.35 times BULL. No path went below its BEAR price (the two-year price was 1.9-2.8
+  times BEAR).
+- **The proxy composite ranked the outcomes backwards again,** at -0.67 on the two-year return and -0.69 on the m12-24 average:
+  its 2.70 on 23 dates of 2015 preceded a median +0.3%, 2.50-2.55 +12% to +15%, and 2.15 on the Q4 FY15 dates +4%, while 2.00-2.35
+  from 2016-06-30 preceded +44% to +61%. A fourth reading on the same stock of the 2008 hypothesis (trailing signals lean
+  pro-cyclical); it still needs other tickers before any method change.
+- **The calls, seen afterwards.** BASE on reported revenue growth, or FY17 at a derived $2.40 without the one-time tax benefit,
+  would have turned the one FAIR date RICH; it returned +73%, so the call fails either way. The derived FY17 would also have moved
+  6 of the 9 BUY dates to ACCUMULATE and 6 other dates a tier lower, and FY08 at GAAP 20 dates a tier lower, 8 of them BUY dates
+  that returned +52% to +84%. The futures encodings and the ECOMMERCE watch moved nothing; the 24 watch-list dates from
+  2017-07-21 returned +38% to +87%, which says nothing about the theme, since the watch list changes text only. These are facts
+  about one stock in three years, not reasons to change an encoding: the calls were decided before scoring and stay.
+- **What the four batches suggest together (hypotheses only).** The CHEAP call held on every CHEAP date of 2008-2014 (41, 73
+  and 5); there was none here. The RICH call held on 8 of 61 (2009-2011), 8 of 150 (2012-2014) and 66 of 155 here, and here
+  almost only at the 95th-100th percentile of the stock's own range (62 of 69), where the multiple then fell back, and on none of
+  the 63 RICH dates below the 85th. Within this batch the multiple's percentile and Ratio B ranked the outcomes better than the
+  class did. Hypotheses to test on other tickers and years, under a new method version and never fitted to NKE's outcomes: that a
+  RICH label carries information only near the top of the stock's own range, and, as in every NKE batch so far, that the
+  trailing operating signals in the proxy composite lean pro-cyclical.
