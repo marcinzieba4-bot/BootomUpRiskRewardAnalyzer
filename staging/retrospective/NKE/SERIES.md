@@ -683,3 +683,159 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2020-12-18 | $137.28 | NIKE Q1 FY21 results | 2.15 | -2.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.1% | -28.2pp | -13.7% | ✓ |
 | 2020-12-22 | $142.45 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.4% | -23.3pp | -17.3% | ✓ |
 | 2020-12-31 | $141.47 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.6% | -21.1pp | -17.4% | ✓ |
+| 2021-01-08 | $146.35 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-15 | $140.72 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-22 | $139.35 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-29 | $133.59 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-05 | $145.11 | NIKE Q2 FY21 results | 2.60 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-12 | $142.12 | NIKE Q2 FY21 results | 2.60 | -1.64 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-19 | $142.02 | NIKE Q2 FY21 results | 2.60 | -1.64 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-02-26 | $134.78 | NIKE Q2 FY21 results | 2.60 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-05 | $133.35 | NIKE Q2 FY21 results | 2.60 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-12 | $140.45 | NIKE Q2 FY21 results | 2.60 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-19 | $137.49 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-03-26 | $132.99 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-01 | $132.53 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-09 | $135.45 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-16 | $134.31 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-23 | $130.19 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-04-30 | $132.62 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-07 | $137.81 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-14 | $135.93 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-21 | $132.66 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-05-28 | $136.46 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-04 | $133.74 | NIKE Q3 FY21 results | 2.50 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-11 | $131.94 | NIKE Q3 FY21 results | 2.50 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-18 | $128.41 | NIKE Q3 FY21 results | 2.50 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-06-25 | $154.35 | NIKE Q4 FY21 results | 3.30 | +1.63 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-07-02 | $159.74 | NIKE Q4 FY21 results | 3.30 | +1.61 | 0.51x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-07-09 | $161.00 | NIKE Q4 FY21 results | 3.30 | +1.60 | 0.51x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-07-16 | $159.85 | NIKE Q4 FY21 results | 3.30 | +1.61 | 0.50x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-07-23 | $166.36 | NIKE Q4 FY21 results | 3.30 | +1.58 | 0.54x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-07-30 | $167.51 | NIKE Q4 FY21 results | 3.30 | +1.58 | 0.54x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-08-06 | $172.80 | NIKE Q4 FY21 results | 3.30 | +1.55 | 0.57x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-08-13 | $171.69 | NIKE Q4 FY21 results | 3.30 | +1.56 | 0.56x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-08-20 | $167.79 | NIKE Q4 FY21 results | 3.30 | +1.58 | 0.54x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-08-27 | $167.58 | NIKE Q4 FY21 results | 3.30 | +1.58 | 0.53x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-09-03 | $163.29 | NIKE Q4 FY21 results | 3.30 | +1.60 | 0.51x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-09-10 | $163.59 | NIKE Q4 FY21 results | 3.30 | +1.60 | 0.51x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-09-17 | $156.42 | NIKE Q4 FY21 results | 3.30 | +1.64 | 0.46x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-09-24 | $149.59 | NIKE Q1 FY22 results | 2.95 | -0.47 | 18.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-01 | $147.06 | NIKE Q1 FY22 results | 2.95 | -0.43 | 13.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-08 | $152.48 | NIKE Q1 FY22 results | 2.95 | -0.50 | 27.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-15 | $158.01 | NIKE Q1 FY22 results | 2.95 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-22 | $163.48 | NIKE Q1 FY22 results | 2.95 | -0.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-29 | $167.29 | NIKE Q1 FY22 results | 2.95 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-05 | $177.51 | NIKE Q1 FY22 results | 2.95 | -0.87 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-12 | $169.09 | NIKE Q1 FY22 results | 2.95 | -0.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-19 | $174.88 | NIKE Q1 FY22 results | 2.95 | -0.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-26 | $168.02 | NIKE Q1 FY22 results | 2.95 | -0.71 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-03 | $170.24 | NIKE Q1 FY22 results | 2.95 | -0.74 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-10 | $169.06 | NIKE Q1 FY22 results | 2.95 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-17 | $161.36 | NIKE Q1 FY22 results | 2.95 | -0.60 | 205.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-22 | $165.44 | NIKE Q2 FY22 results | 2.40 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-31 | $166.67 | NIKE Q2 FY22 results | 2.40 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-07 | $156.97 | NIKE Q2 FY22 results | 2.40 | -1.21 | 31.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-14 | $148.18 | NIKE Q2 FY22 results | 2.40 | -1.09 | 8.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-21 | $142.95 | NIKE Q2 FY22 results | 2.40 | -1.02 | 5.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-28 | $145.91 | NIKE Q2 FY22 results | 2.40 | -1.06 | 6.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-04 | $145.39 | NIKE Q2 FY22 results | 2.40 | -1.04 | 6.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-11 | $140.18 | NIKE Q2 FY22 results | 2.40 | -0.97 | 4.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-18 | $142.95 | NIKE Q2 FY22 results | 2.40 | -1.01 | 5.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-25 | $138.80 | NIKE Q2 FY22 results | 2.40 | -0.95 | 4.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-04 | $131.18 | NIKE Q2 FY22 results | 2.40 | -0.80 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-11 | $122.63 | NIKE Q2 FY22 results | 2.40 | -0.61 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-18 | $131.24 | NIKE Q2 FY22 results | 2.40 | -0.79 | 2.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-23 | $133.00 | NIKE Q3 FY22 results | 2.20 | -0.87 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-01 | $133.52 | NIKE Q3 FY22 results | 2.20 | -0.88 | 3.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-08 | $128.15 | NIKE Q3 FY22 results | 2.20 | -0.75 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-14 | $133.46 | NIKE Q3 FY22 results | 2.20 | -0.88 | 3.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-22 | $129.07 | NIKE Q3 FY22 results | 2.20 | -0.77 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-29 | $124.70 | NIKE Q3 FY22 results | 2.20 | -0.65 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-05-06 | $114.49 | NIKE Q3 FY22 results | 2.20 | -0.29 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2022-05-13 | $113.01 | NIKE Q3 FY22 results | 2.20 | -0.25 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-05-20 | $108.00 | NIKE Q3 FY22 results | 2.20 | -0.14 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-05-27 | $115.99 | NIKE Q3 FY22 results | 2.20 | -0.42 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-06-03 | $120.95 | NIKE Q3 FY22 results | 2.20 | -0.53 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2022-06-10 | $114.73 | NIKE Q3 FY22 results | 2.20 | -0.39 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-06-17 | $107.34 | NIKE Q3 FY22 results | 2.20 | -0.12 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-06-24 | $112.91 | NIKE Q3 FY22 results | 2.20 | -0.24 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-06-29 | $103.25 | NIKE Q4 FY22 results | 1.85 | -0.31 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-07-08 | $107.93 | NIKE Q4 FY22 results | 1.85 | -0.40 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-07-15 | $104.70 | NIKE Q4 FY22 results | 1.85 | -0.34 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-07-22 | $109.12 | NIKE Q4 FY22 results | 1.85 | -0.40 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-07-29 | $114.92 | NIKE Q4 FY22 results | 1.85 | -0.50 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2022-08-05 | $113.87 | NIKE Q4 FY22 results | 1.85 | -0.48 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2022-08-12 | $116.07 | NIKE Q4 FY22 results | 1.85 | -0.52 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2022-08-19 | $113.16 | NIKE Q4 FY22 results | 1.85 | -0.46 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2022-08-26 | $108.28 | NIKE Q4 FY22 results | 1.85 | -0.38 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-09-02 | $105.74 | NIKE Q4 FY22 results | 1.85 | -0.32 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-09-09 | $110.97 | NIKE Q4 FY22 results | 1.85 | -0.42 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-09-16 | $104.12 | NIKE Q4 FY22 results | 1.85 | -0.29 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-09-23 | $97.02 | NIKE Q4 FY22 results | 1.85 | -0.13 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2022-09-30 | $83.12 | NIKE Q1 FY23 results | 1.85 | +0.46 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-07 | $87.16 | NIKE Q1 FY23 results | 1.85 | +0.38 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-14 | $87.55 | NIKE Q1 FY23 results | 1.85 | +0.37 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-21 | $88.50 | NIKE Q1 FY23 results | 1.85 | +0.36 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-28 | $93.83 | NIKE Q1 FY23 results | 1.85 | +0.24 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-11-04 | $95.79 | NIKE Q1 FY23 results | 1.85 | +0.19 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-11-11 | $106.09 | NIKE Q1 FY23 results | 1.85 | -0.09 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-11-18 | $105.42 | NIKE Q1 FY23 results | 1.85 | -0.07 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-11-25 | $105.96 | NIKE Q1 FY23 results | 1.85 | -0.08 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-02 | $112.20 | NIKE Q1 FY23 results | 1.85 | -0.22 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-09 | $109.42 | NIKE Q1 FY23 results | 1.85 | -0.16 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-16 | $105.95 | NIKE Q1 FY23 results | 1.85 | -0.08 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2022-12-22 | $116.71 | NIKE Q2 FY23 results | 2.15 | +0.37 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-12-30 | $117.01 | NIKE Q2 FY23 results | 2.15 | +0.37 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-01-06 | $124.53 | NIKE Q2 FY23 results | 2.15 | +0.24 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-01-13 | $128.85 | NIKE Q2 FY23 results | 2.15 | +0.16 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-01-20 | $126.62 | NIKE Q2 FY23 results | 2.15 | +0.20 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-01-27 | $127.53 | NIKE Q2 FY23 results | 2.15 | +0.19 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-02-03 | $127.61 | NIKE Q2 FY23 results | 2.15 | +0.19 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-02-10 | $122.23 | NIKE Q2 FY23 results | 2.15 | +0.29 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-02-17 | $124.84 | NIKE Q2 FY23 results | 2.15 | +0.25 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-02-24 | $118.04 | NIKE Q2 FY23 results | 2.15 | +0.46 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-03-03 | $120.94 | NIKE Q2 FY23 results | 2.15 | +0.33 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-03-10 | $117.49 | NIKE Q2 FY23 results | 2.15 | +0.48 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-03-17 | $120.39 | NIKE Q2 FY23 results | 2.15 | +0.43 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-03-23 | $120.97 | NIKE Q3 FY23 results | 2.15 | +0.10 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-03-31 | $122.64 | NIKE Q3 FY23 results | 2.15 | +0.06 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-04-06 | $120.22 | NIKE Q3 FY23 results | 2.15 | +0.21 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-04-14 | $125.95 | NIKE Q3 FY23 results | 2.15 | -0.00 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-04-21 | $125.53 | NIKE Q3 FY23 results | 2.15 | +0.01 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-04-28 | $126.72 | NIKE Q3 FY23 results | 2.15 | -0.01 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-05-05 | $126.59 | NIKE Q3 FY23 results | 2.15 | -0.01 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-05-12 | $120.21 | NIKE Q3 FY23 results | 2.15 | +0.23 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-05-19 | $114.76 | NIKE Q3 FY23 results | 2.15 | +0.37 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2023-05-26 | $107.51 | NIKE Q3 FY23 results | 2.15 | +0.52 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-06-02 | $107.78 | NIKE Q3 FY23 results | 2.15 | +0.52 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-06-09 | $105.86 | NIKE Q3 FY23 results | 2.15 | +0.55 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-06-16 | $113.59 | NIKE Q3 FY23 results | 2.15 | +0.40 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2023-06-23 | $109.52 | NIKE Q3 FY23 results | 2.15 | +0.48 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2023-06-30 | $110.37 | NIKE Q4 FY23 results | 2.15 | -0.23 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-07-07 | $104.46 | NIKE Q4 FY23 results | 2.15 | -0.09 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2023-07-14 | $107.95 | NIKE Q4 FY23 results | 2.15 | -0.16 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-07-21 | $109.06 | NIKE Q4 FY23 results | 2.15 | -0.17 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-07-28 | $108.62 | NIKE Q4 FY23 results | 2.15 | -0.16 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-08-04 | $108.81 | NIKE Q4 FY23 results | 2.15 | -0.16 | 2.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-08-11 | $108.09 | NIKE Q4 FY23 results | 2.15 | -0.15 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-08-18 | $104.81 | NIKE Q4 FY23 results | 2.15 | -0.07 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2023-08-25 | $98.84 | NIKE Q4 FY23 results | 2.15 | +0.08 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-09-01 | $102.36 | NIKE Q4 FY23 results | 2.15 | -0.00 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-09-08 | $97.67 | NIKE Q4 FY23 results | 2.15 | +0.11 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-09-15 | $96.26 | NIKE Q4 FY23 results | 2.15 | +0.15 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-09-22 | $90.85 | NIKE Q4 FY23 results | 2.15 | +0.30 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-09-29 | $95.62 | NIKE Q1 FY24 results | 2.30 | +0.09 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-10-06 | $97.11 | NIKE Q1 FY24 results | 2.30 | +0.06 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-10-13 | $99.91 | NIKE Q1 FY24 results | 2.30 | -0.00 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-10-20 | $102.67 | NIKE Q1 FY24 results | 2.30 | -0.06 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-10-27 | $97.98 | NIKE Q1 FY24 results | 2.30 | +0.05 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-11-03 | $107.06 | NIKE Q1 FY24 results | 2.30 | -0.15 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-11-10 | $106.11 | NIKE Q1 FY24 results | 2.30 | -0.12 | 1.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-11-17 | $105.96 | NIKE Q1 FY24 results | 2.30 | -0.12 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-11-24 | $107.64 | NIKE Q1 FY24 results | 2.30 | -0.16 | 2.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-12-01 | $113.48 | NIKE Q1 FY24 results | 2.30 | -0.41 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-12-08 | $115.91 | NIKE Q1 FY24 results | 2.30 | -0.46 | 2.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-12-15 | $121.55 | NIKE Q1 FY24 results | 2.30 | -0.60 | 3.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-12-22 | $108.04 | NIKE Q2 FY24 results | 2.80 | +0.29 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2023-12-29 | $108.57 | NIKE Q2 FY24 results | 2.80 | +0.28 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |

@@ -1,0 +1,358 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NKE",
+ "company": "NIKE, Inc.",
+ "as_of": "2021-12-22",
+ "price_date": "2021-12-22",
+ "price": 165.44,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); athletic footwear and apparel signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "NIKE: 'NIKE is the largest seller of athletic footwear and apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2021 10-K); the industry 'is highly competitive on a worldwide basis', 'including adidas, Anta, ASICS, Li Ning, lululemon athletica, Puma, Under Armour and V.F. Corporation, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one",
+  "theme_watch": [
+   {
+    "theme": "ECOMMERCE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: NIKE's own FY2021 10-K says 'In addition, the competitive nature of retail, including shifts in the ways in which consumers shop, and the continued proliferation of digital commerce, constitutes a risk factor implicating our NIKE Direct and wholesale operations.' At the same time it sells online itself: 'Digital commerce sales were $9.1 billion for fiscal 2021 compared to $5.5 billion for fiscal 2020'. The stock trades at 46.5x FY22E — a premium. Re-file as DISRUPTION_EXPOSED (ECOMMERCE) only if dated evidence shows the market pricing the shift away from physical retail into NIKE's own sales specifically."
+   }
+  ],
+  "evidence": [
+   "N130"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "NIKE: 'NIKE is the largest seller of athletic footwear and apparel in the world', and 'Virtually all of our products are manufactured by independent contractors' (its own FY2021 10-K); the industry 'is highly competitive on a worldwide basis', 'including adidas, Anta, ASICS, Li Ning, lululemon athletica, Puma, Under Armour and V.F. Corporation, among others', and 'the relative popularity of various sports and fitness activities and changing design trends affect the demand for our products': a demand and fashion risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price rich; +132% to EPP floor; model-vs-market gap -1.43; conservative 2yr -42%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 71.2,
+  "epp_gap_pct": 132.4,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.4,
+  "sca": -0.1,
+  "adj_composite": 2.1,
+  "market_composite": 3.53,
+  "adj_gap": -1.43,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -42.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.47,
+    "pe": 20.4,
+    "price": 30,
+    "desc": "EPS -35.7%/yr (worst year FY12-FY21 ex-FY18, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.68,
+    "pe": 26.6,
+    "price": 98,
+    "desc": "EPS +1.7%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr ex-FY18 median"
+   },
+   "BULL": {
+    "eps": 4.53,
+    "pe": 35.3,
+    "price": 160,
+    "desc": "EPS +12.8%/yr (FY12-FY21 ex-FY18 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.16,
+    "pe": 50.8,
+    "price": 262,
+    "desc": "EPS +20.4%/yr (best 2-yr run FY12-FY21 ex-FY18); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -1.43,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.05,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -0.73,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -1.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -1.36,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -1.5,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -1.13,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 102.1,
+   "adj_gap": -1.43,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 132.4,
+   "adj_gap": -1.24,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "NKE (retrospective, 2021-12-22) ✕ AVOID — Ratio B infx (81.9% downside to Bear $30 / +-3.3% upside to Bull $160) | Adj composite 2.10 vs market 3.53: gap -1.43 [OVERVALUED] | +132% above the EPP floor $71 (20x FY22E $3.56) | Conservative 2-yr case: -42.5% total (-21.3%/yr) | At 46.5x FY22E the 15% hurdle price $219 sits above the BULL case; futures orders not reported for Q2 FY22, forward revenues +0% (Q2 FY22 revenue ex-currency); e-commerce is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "N130",
+   "published": "2021-07-21",
+   "filed": "2021-07-20 16:11 ET (after the close)",
+   "title": "NIKE, Inc. FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018721000028/nke-20210531.htm",
+   "supports": "income statement FY2019-FY2021 (no selected financial data: revenues, gross profit, diluted EPS, diluted shares 1,609.4M in FY21); revenues by operating segment; cash flow (operations $6,657M, additions to PP&E $695M, repurchases $608M); long-term debt; dividends of $1.070 a share; restructuring charges of $294 million; business, competition and risk-factor wording, including the continued proliferation of digital commerce"
+  },
+  {
+   "id": "N125",
+   "published": "2020-07-27",
+   "filed": "2020-07-24 16:07 ET (after the close)",
+   "title": "NIKE, Inc. FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018720000047/nke-531202010k.htm",
+   "supports": "selected financial data FY2016-FY2020 (revenues, gross profit, diluted EPS, diluted shares 1,591.6M in FY20, long-term debt); income statement FY2018-FY2020; revenues by operating segment; cash flow (operations $2,485M, additions to PP&E $1,086M, repurchases $3,067M); quarterly dividends declared; business, competition and risk-factor wording, including the continued proliferation of digital commerce"
+  },
+  {
+   "id": "N120",
+   "published": "2019-07-24",
+   "filed": "2019-07-23 16:13 ET (after the close)",
+   "title": "NIKE, Inc. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018719000051/nke-531201910k.htm",
+   "supports": "selected financial data FY2015-FY2019 (revenues, gross profit, diluted EPS, diluted shares 1,618.4M in FY19, long-term debt); income statement FY2017-FY2019; revenues by operating segment; cash flow (operations $5,903M, additions to PP&E $1,119M, repurchases $4,286M); quarterly dividends declared; business, competition and risk-factor wording, including the rising trend of digital commerce"
+  },
+  {
+   "id": "N115",
+   "published": "2018-07-25",
+   "filed": "2018-07-24 18:22 ET (after the close)",
+   "title": "NIKE, Inc. FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018718000142/nke-5312018x10k.htm",
+   "supports": "selected financial data FY2014-FY2018 (revenues, gross profit, net income, diluted EPS, diluted shares 1,659.1M in FY18, long-term debt); the Tax Act's provisional expense of $1,875 million (transition tax) and $158 million (remeasurement of deferred taxes); income statement FY2016-FY2018; revenues by operating segment (four NIKE Brand geographies); cash flow (operations $4,955M, additions to PP&E $1,028M, repurchases $4,254M); quarterly dividends declared; business, competition and risk-factor wording, including the rising trend of digital commerce"
+  },
+  {
+   "id": "N105",
+   "published": "2017-07-21",
+   "filed": "2017-07-20 16:18 ET (after the close)",
+   "title": "NIKE, Inc. FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018717000090/nke-5312017x10k.htm",
+   "supports": "selected financial data FY2013-FY2017 from continuing operations (revenues, gross profit, diluted EPS, diluted shares 1,692.0M in FY17, long-term debt); income statement FY2015-FY2017; revenues by operating segment; futures orders $14.7 billion, '2% lower', 0% excluding currency changes; cash flow (operations $3,640M, additions to PP&E $1,105M, repurchases $3,223M); quarterly dividends declared; business, competition and risk-factor wording, including the rising trend of digital commerce"
+  },
+  {
+   "id": "N96",
+   "published": "2016-07-22",
+   "filed": "2016-07-21 16:11 ET (after the close)",
+   "title": "NIKE, Inc. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018716000336/nke-5312016x10k.htm",
+   "supports": "selected financial data FY2012-FY2016 from continuing operations, per share after the 2012 and 2015 splits (revenues, gross profit, diluted EPS, diluted shares 1,742.5M in FY16, long-term debt); income statement FY2014-FY2016; revenues by operating segment, FY15 as restated; futures orders '8% higher'; cash flow (operations $3,096M, additions to PP&E $1,143M, repurchases $3,238M); quarterly dividends declared; business, competition and risk-factor wording"
+  },
+  {
+   "id": "N1",
+   "published": "2007-07-30",
+   "filed": "2007-07-27 16:16 ET (after the close)",
+   "title": "NIKE, Inc. FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312507164166/d10k.htm",
+   "supports": "selected financial data FY2003-FY2007 (revenues, gross margin, diluted EPS before cumulative effect of accounting change, diluted shares 535.2M in FY03 and 509.9M in FY07, inventories), restated for the 2-for-1 split distributed 2007-04-02; reconciliation of diluted EPS excluding the Converse arbitration and stock-based compensation ($3.10 FY07, $2.70 FY06); income statement FY2005-FY2007 (income before income taxes, income taxes); revenues and pre-tax income by operating segment; futures and advance orders 'nearly 12% higher'; cash flow (operations $1,878.7M, additions to PP&E $313.5M, repurchases $985.2M); quarterly dividends declared; fiscal year ends May 31; business, competition and pre-tax income segment measure wording"
+  },
+  {
+   "id": "N2",
+   "published": "2006-07-31",
+   "filed": "2006-07-28 17:04 ET (after the close)",
+   "title": "NIKE, Inc. FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312506156152/d10k.htm",
+   "supports": "selected financial data FY2002-FY2006 (FY02 revenues, diluted EPS before cumulative effect $2.46, gross margin, inventories); income statement FY2004-FY2006 (income before income taxes); futures and advance orders '5.0% higher'"
+  },
+  {
+   "id": "N3",
+   "published": "2005-08-01",
+   "filed": "2005-07-29 17:12 ET (after the close)",
+   "title": "NIKE, Inc. FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000095012405004551/v10583e10vk.htm",
+   "supports": "selected financial data FY2001-FY2005 (FY01 revenues, diluted EPS $2.16, gross margin, inventories); income statement FY2003-FY2005 (income before income taxes); futures and advance orders '9.5% higher'"
+  },
+  {
+   "id": "N4",
+   "published": "2004-08-02",
+   "filed": "2004-07-30 17:04 ET (after the close)",
+   "title": "NIKE, Inc. FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312504128270/d10k.htm",
+   "supports": "selected financial data FY2000-FY2004 (FY00 revenues, diluted EPS $2.07, gross margin, inventories); income statement FY2002-FY2004 (income before income taxes); futures and advance orders '11.3% higher'"
+  },
+  {
+   "id": "N5",
+   "published": "2003-08-08",
+   "filed": "2003-08-07 17:13 ET (after the close)",
+   "title": "NIKE, Inc. FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000119312503031022/d10k.htm",
+   "supports": "selected financial data FY1999-FY2003 (FY99 revenues, diluted EPS $1.57, diluted shares 288.3M, gross margin, inventories); income statement FY2001-FY2003 (income before income taxes); futures and advance orders '5.0% higher'"
+  },
+  {
+   "id": "N6",
+   "published": "2002-08-14",
+   "filed": "2002-08-14 15:37 ET (during market hours)",
+   "title": "NIKE, Inc. FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000089102002001248/v83383ore10vk.htm",
+   "supports": "eleven-year financial history FY1992-FY2002 (FY97-FY99 revenues, gross margin, inventories; FY98 diluted EPS $1.35 and diluted shares 295.0M); income statement FY2000-FY2002 (income before income taxes); futures orders '6.3% higher'"
+  },
+  {
+   "id": "N7",
+   "published": "2001-08-09",
+   "filed": "2001-08-09 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000109581101503828/v74223e10-k.txt",
+   "supports": "income statement FY1999-FY2001 (revenues, income before income taxes); futures and advance orders '3% higher'"
+  },
+  {
+   "id": "N8",
+   "published": "2000-08-29",
+   "filed": "2000-08-29 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY2000 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000091205700039514/a10-k405.txt",
+   "supports": "income statement FY1998-FY2000 (revenues, income before income taxes); futures and advance orders '3% higher'"
+  },
+  {
+   "id": "N9",
+   "published": "1999-08-26",
+   "filed": "1999-08-26 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018799000010/0000320187-99-000010.txt",
+   "supports": "income statement FY1997-FY1999 (revenues, income before income taxes); FY99 restructuring charge '$0.10 per diluted share'; futures and advance orders '4% higher'"
+  },
+  {
+   "id": "N10",
+   "published": "1998-08-26",
+   "filed": "1998-08-26 (no acceptance time in EDGAR)",
+   "title": "NIKE, Inc. FY1998 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018798000018/0000320187-98-000018.txt",
+   "supports": "FY98 restructuring charge '$0.27 per diluted share'; futures and advance orders '13% lower'"
+  },
+  {
+   "id": "N128",
+   "published": "2021-03-19",
+   "filed": "2021-03-18 16:18 ET (after the close)",
+   "title": "NIKE Q3 FY21 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018721000009/q3fy21exhibit991er.htm",
+   "supports": "Q3 FY21 income statement and balance sheet; repurchases suspended since March 2020, to resume in the fourth quarter of fiscal 2021"
+  },
+  {
+   "id": "N129",
+   "published": "2021-06-25",
+   "filed": "2021-06-24 16:17 ET (after the close)",
+   "title": "NIKE Q4 FY21 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018721000025/q4fy21exhibit991er.htm",
+   "supports": "Q4 FY21 and FY21 income statement and balance sheet; about $260 million of restructuring-related costs in fiscal 2021; repurchases resumed"
+  },
+  {
+   "id": "N131",
+   "published": "2021-09-24",
+   "filed": "2021-09-23 16:17 ET (after the close)",
+   "title": "NIKE Q1 FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018721000041/q1fy22exhibit991er.htm",
+   "supports": "Q1 FY22 income statement and balance sheet"
+  },
+  {
+   "id": "N132",
+   "published": "2021-12-21",
+   "filed": "2021-12-20 16:16 ET (after the close)",
+   "title": "NIKE Q2 FY22 results (8-K ex.99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018721000055/q2fy22exhibit991er.htm",
+   "supports": "Q2 FY22 income statement and balance sheet; dividends declared $0.305 (was $0.275)"
+  },
+  {
+   "id": "N11",
+   "published": "2007-02-20",
+   "filed": "2007-02-16 18:04 ET (after the close; 2007-02-19 was a market holiday)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018707000022/f8k070215.txt",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable April 2, 2007 to holders of record March 12, 2007; split-adjusted trading from April 3, 2007 (ex.99.1)"
+  },
+  {
+   "id": "N61",
+   "published": "2012-11-16",
+   "filed": "2012-11-15 16:19 ET (after the close)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split and dividend increase",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000158/exhibit991.htm",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable December 24, 2012, trading at the split-adjusted price from December 26, 2012; quarterly dividend of $0.21 per share on a post-split basis, up 17 percent from $0.18 split-adjusted (ex.99.1)"
+  },
+  {
+   "id": "N89",
+   "published": "2015-11-20",
+   "filed": "2015-11-19 16:19 ET (after the close)",
+   "title": "NIKE, Inc. 8-K: two-for-one stock split, dividend increase and $12 billion repurchase program",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000226/nov15stocksplitdividendrep.htm",
+   "supports": "two-for-one split of Class A and Class B shares, a 100 percent stock dividend payable December 23, 2015, trading at the split-adjusted price from December 24, 2015; quarterly dividend of $0.32 per share on a pre-split basis, up 14 percent from $0.28; a new four-year $12 billion repurchase program (ex.99.1)"
+  },
+  {
+   "id": "A0",
+   "published": "2021-12-22",
+   "title": "Yahoo Finance daily prices, NKE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NKE/history",
+   "supports": "close $165.44 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY18 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-10-31"
+}

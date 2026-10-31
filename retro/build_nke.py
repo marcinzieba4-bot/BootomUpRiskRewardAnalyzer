@@ -10,7 +10,7 @@ builder
      split-adjusted series with the later splits undone), so the price and the per-share facts share one basis,
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
-NIKE's fiscal year ends on May 31. NIKE gave no revenue or pre-tax margin guide in numbers in any filing of 2007-2020, and
+NIKE's fiscal year ends on May 31. NIKE gave no revenue or pre-tax margin guide in numbers in any filing of 2007-2023, and
 no EPS guide in numbers other than the Q1 FY15 call's growth of "about 20% for the full year": the outlook on its calls
 (transcripts furnished by 8-K) is otherwise in words, and words are not figures (the UNP 2016 rule); its gross-margin
 statements in basis points are display only (the AAPL rule). The method r2 inputs map with the fallbacks decided before any
@@ -49,6 +49,7 @@ Usage
   python3 retro/build_nke.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_nke.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_nke.py --weekly 2018-01-01 2020-12-31
+  python3 retro/build_nke.py --weekly 2021-01-01 2023-12-31
   python3 retro/build_nke.py 2008-06-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NKE/<AS_OF>
 """

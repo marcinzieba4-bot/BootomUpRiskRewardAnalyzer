@@ -3323,6 +3323,106 @@ Judgement calls that could carry hindsight:
 - dating the Q4 FY18 call after the 2018-07-03 early close (moves no weekly date);
 - the signals, chosen by a builder who knows how 2018-2020 went; DURABLE rather than CYCLICAL (the class label only).
 
+### NKE 2021-2023: three-year 10-Ks, the post-COVID anchors, an inventory cycle
+
+```bash
+python3 retro/build_nke.py --weekly 2021-01-01 2023-12-31                   # 156 dates, 2021-01-08 .. 2023-12-29
+for c in 2021-03-19 2021-06-25 2021-07-21 2022-06-28 2022-07-22 2022-09-30 2023-06-30 2023-07-21 2023-12-22 2024-01-01; do python3 retro/tools/firewall.py $c NKE; done
+```
+
+All 36 filings published from 2021-01-01 to 2023-12-31 (24 8-Ks, 9 10-Qs and the FY2021-FY2023 10-Ks) were read, with no
+delegated transcription: the twelve releases in full; the items of every other 8-K (officer, director, meeting and credit
+8-Ks, and the Q2 FY24 restructuring under Item 2.05) with their press-release exhibits, not their legal exhibits; the 10-Ks'
+business, risk-factor, income-statement, tax, segment, cash-flow and equity sections; and the 10-Qs searched for outlook
+statements (words only). 295 strings were checked with `verbatim.py` against their own filings, among them every print's
+income-statement and balance-sheet rows and every vintage's rows. Each source's date comes from EDGAR's acceptance time.
+Thresholds, signals and the engine are unchanged; the builder gains only its usage line. Decided before any 2021-2023
+date was built or scored:
+
+- **Three vintages from 10-Ks without selected financial data.** The FY2021 10-K (accepted 2021-07-20 16:11 ET, dated
+  2021-07-21) and the FY2022 10-K (2022-07-21 16:05 ET, dated 2022-07-22) answer Item 6 "Not applicable", and the FY2023 10-K
+  (2023-07-20 16:20 ET, dated 2023-07-21) "[RESERVED]": each reports three years, in its income statement. Each year still comes
+  from the latest 10-K that reports it: in the FY2021 vintage FY19-FY21 from the FY2021 10-K, FY16-FY18 from the FY2020 10-K,
+  FY15 from FY2019's, FY14 from FY2018's, FY13 from FY2017's and FY12 from FY2016's. Windows FY2012-FY2021, FY2013-FY2022 and
+  FY2014-FY2023; the first year's diluted shares FY2012's 1,879.2M (FY2016 10-K), FY2013's 1,832.9M (FY2017 10-K) and FY2014's
+  1,811.6M (FY2018 10-K).
+- **No year excluded, and FY18 stays out.** FY21's restructuring charges ($294 million pre-tax), and FY22's Russia
+  deconsolidation charge ($96 million), fourth-quarter charges ("approximately $150 million") and one-time onshoring tax benefit
+  (4.7 points of the rate), are each a fraction of the year's net income ($5,727M, $6,046M), and no figure without them was
+  published: GAAP stands, $3.56, $3.75 and $3.23 for FY21-FY23. FY18 stays excluded in every vintage (all three windows hold it),
+  and FY20 stays at $1.60.
+- **Still no guide.** No call transcript was furnished, and no release, 10-Q, 10-K or 8-K states an outlook in numbers. The FY2021
+  10-K's long-term targets (high-single to low-double-digit revenue growth, a gross margin in the high 40s and an EBIT margin in
+  the high teens by fiscal 2025, mid-to-high-teens EPS growth) are multi-year and not entered (the LOW rule). Executives' quotes
+  in the releases are not guides, as in 2008-2020: the Q2 FY24 release's "softer second-half revenue outlook" and "Revised
+  guidance will be provided on the conference call" are noted here, not entered. So the last full year stands: FY20's $1.60 for
+  FY21 to the Q4 FY21 print, then FY21's $3.56, FY22's $3.75 and FY23's $3.23.
+- **Dividends from the releases.** $0.305 a quarter from the Q2 FY22 release (2021-12-21), $0.34 from Q2 FY23 (2022-12-21) and
+  $0.37 from Q2 FY24 (2023-12-22). The 10-Ks now give only the year's total ($1.070, $1.190 and $1.325 a share), so each vintage
+  carries the latest release's quarterly rate with that release's date (`dividend_published`); no figure is derived.
+- **ECOMMERCE stays on the watch list,** each 10-K replacing the last with the same sentence ("the continued proliferation of
+  digital commerce") and its own digital figure: digital commerce sales of $9.1 billion in fiscal 2021, NIKE Brand Digital $10.7
+  billion in 2022 and $12.6 billion in 2023. Text only. No other theme is live for NIKE (GENAI from 2022-11-30 and CRYPTO are
+  scoped to other industries).
+- **Calendar.** Every release came after the close (16:12-16:18 ET). Q3-Q4 FY21, Q1 FY22, Q1 FY23, Q4 FY23 and Q1-Q2 FY24 came on
+  a Thursday, dated Friday and meeting that close; Q2-Q4 FY22 on a Monday (dated Tuesday, the week's date Wednesday); Q2 and Q3
+  FY23 on a Tuesday (the week's date Thursday). No filing came on an early-close day.
+- **Q4 FY21 is compared with the COVID-19 quarter:** revenue +96%, gross margin +854bp, pre-tax margin +2,776bp and an
+  inventory gap of -102pp, all past their XBULL thresholds, and BASE +89.9%/yr (the quarter's +88% excluding currency plus the
+  buyback): as released, with no new field.
+- **Segments** (display): the four NIKE Brand geographies, Global Brand Divisions and Converse in all three vintages; the
+  business line names "the NIKE and Jordan brands".
+- **Adds nothing:** the officer and director 8-Ks (the performance-award form of 2021-06-17, 2021-11-01, 2022-05-05, 2022-06-10,
+  2022-09-20, 2023-05-09, the leadership changes of 2023-05-24), the annual meetings (2021-10-08, 2022-09-14, 2023-09-15), the
+  credit agreements (2021-03-18, 2022-03-14, 2023-03-13), and the 10-Qs (supply-chain, promotion and gross-margin words, no
+  numbers).
+
+Controls: altering one value of each new print, Q4 full-year figure, vintage, dividend and event, and putting FY18 back at GAAP
+in each vintage, changes no date before it can be shown and changes the first weekly date on or after it (27 of 27). No string
+of any new print, vintage, dividend, event or source appears in a model dated before it (119,837 checks over the 835 NKE
+models). The firewall at the ten cutoffs above changes no model before its cutoff. The 679 dates of 2008-2020 rebuild
+byte-identical.
+
+Seen in the build (method behaviour, not tuned):
+- **The classes spread out:** RICH on 76 of 156 dates, FAIR on 65 and CHEAP on 15, the first CHEAP NKE dates since 2014 (2021: 39
+  RICH and 13 FAIR; 2022: 20, 24 and 8; 2023: 17, 28 and 7). Tiers: AVOID 74, WATCHLIST 41, ACCUMULATE 24, BUY 17.
+- **The anchors:** FY20's $1.60 to 2021-06-18 (24 dates) at 80.3-91.5x, the 93rd-100th percentile, RICH and AVOID throughout;
+  FY21's $3.56 from the Q4 FY21 print to 2022-06-24 (53) at 30.2-49.9x (59th-90th), FAIR and BUY on the 13 dates to 2021-09-17,
+  then mostly RICH; FY22's $3.75 from 2022-06-29 to 2023-06-23 (52) at 22.2-34.4x (20th-71st), FAIR on 35, CHEAP on 15 and RICH
+  on 2; FY23's $3.23 from 2023-06-30 (27) at 28.1-37.6x (39th-75th), RICH on 17 and FAIR on 10. The price was above the BULL case
+  on 35 dates, all in 2021 (Ratio B infinite).
+- **The window carries FY20.** FY20's own days, on its $1.60, sit at about 38-66x, so the window's 90th percentile is 58.5-61.4x to
+  the Q4 FY21 print (FY21's days were on $1.60 too) and 50.8x after it, and its median rose from 24.9x to 31.6x. So 40-50x on
+  FY21's $3.56 read as the 59th-90th percentile, and the EPP floor P/E (the median of calendar-year lows) rose from 20x to 26x.
+  No date sat below the floor or the BEAR price; the closest, 2022-09-30, 0.8% above the floor ($83.12, 22.2x).
+- **BEAR is -35.7%/yr on every date** (FY19 to FY20). **BASE** is the quarter's currency-neutral growth plus the buyback
+  (1.45-2.24%/yr): +9.2%/yr on Q2 FY21, +1.2% on Q3 FY21, +89.9% on Q4 FY21, +13.7% on Q1 FY22, +1.7% on Q2 FY22, +9.7% on Q3
+  FY22, +4.4-4.6% on Q4 FY22, +11.4% on Q1 FY23, +28.4% on Q2 FY23, +20.4% on Q3 FY23, +9.6% on Q4 FY23, +3.6% on Q1 FY24 and
+  +0.6% on Q2 FY24. BULL is the window's EPS CAGR (4.1%/yr to the Q4 FY21 print, 12.1-12.8% to the Q4 FY23 print, 9.0-9.2% after)
+  or BASE where higher; XBULL is FY14-FY16's +20.4%/yr, lifted to BASE on Q4 FY21, and FY20-FY22's +53.1%/yr from the Q4 FY22 print.
+- **The growth factor,** against the window's median revenue growth (6.1-8.0%): -0.5 on Q3 FY21, Q2 FY22 and Q2 FY24; +0.5 on Q4
+  FY21 and Q2-Q3 FY23; +0.45 on Q1 FY22, +0.39 on Q1 FY23, -0.31 to -0.38 on Q4 FY22, -0.41 on Q1 FY24, and -0.05 to +0.19 on the rest.
+- **The proxy composite:** 2.60 on Q2 FY21, 2.50 on Q3 FY21, 3.30 on Q4 FY21, 2.95 on Q1 FY22, 2.40 on Q2 FY22, 2.20 on Q3 FY22,
+  1.85 on Q4 FY22 and Q1 FY23 (inventories +23% and +44%), 2.15 on Q2-Q4 FY23, 2.30 on Q1 FY24 and 2.80 on Q2 FY24.
+- **Robustness:** all eight variants agree on 50 of the 76 RICH dates (four to eight on the rest), on 6 of the 65 FAIR dates
+  (four to eight), and on none of the CHEAP dates (six or seven of eight).
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- FY20 excluded as well (a test: by the test of listed items against net income it is not a distorted year) would change 32
+  classes and 55 tiers, the largest of the batch;
+- FY18 at GAAP $1.17 instead of excluded would change 13 classes and 21 tiers;
+- BASE and the growth factor on reported revenue growth instead of growth excluding currency would change 13 classes and 15 tiers;
+- the unreported futures slot re-weighted instead of scored BASE would change 3 classes and no tier, and no ECOMMERCE watch none.
+
+Judgement calls that could carry hindsight:
+- FY20 kept at GAAP $1.60, a year with a COVID-19 fourth quarter (the test is listed items against net income): it sets BEAR at
+  -35.7%/yr on every date, the FY21E anchor to the Q4 FY21 print (80-91x) and the window's high percentiles, against which 40-50x
+  reads as average (32 classes and 55 tiers as a test);
+- FY18 excluded (13 classes, 21 tiers);
+- BASE on growth excluding currency (13 classes), as in 2008-2020;
+- the releases' outlook quotes kept out of the guide line (display only), and dividends from the releases (no class moves);
+- the signals, chosen by a builder who knows how 2021-2023 went; DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3383,7 +3483,8 @@ What the gates enforce:
   FY2017 10-K (2017-07-21), the first whose risk factors name "the rising trend of digital commerce" as "a risk factor
   implicating our DTC and wholesale operations", NKE carries ECOMMERCE on the watch list, company-acknowledged, with no market
   read ("NKE 2015-2017"). The FY2018 and FY2019 10-Ks repeat the sentence (for "our NIKE Direct and wholesale operations") and
-  the FY2020 10-K names "the continued proliferation of digital commerce", so it stays there through 2020 ("NKE 2018-2020").
+  the FY2020-FY2023 10-Ks name "the continued proliferation of digital commerce", so it stays there through 2023 ("NKE 2018-2020",
+  "NKE 2021-2023").
 
 ## Workflow
 
