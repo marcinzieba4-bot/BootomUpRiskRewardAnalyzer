@@ -1,11 +1,12 @@
 # AVGO retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the AVGO weekly dates: 22 from 2009-08-07 to 2009-12-31, the first weeks after the
-2009-08-06 listing (no AVGO price exists before it; retro/README.md, "AVGO"), and 157 from 2010-01-08 to 2012-12-31. They are
-**labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
-point-in-time build was committed and pushed (2009: b3106d7; 2010-2012: 04c4511). Prices run to 2026-10-30; the 2009 batch's
-two-year horizons end by 2011-12-30 (three-year: 2012-12-28), the 2010-2012 batch's by 2014-12-30 (2015-12-30). Medians of an even
-count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+2009-08-06 listing (no AVGO price exists before it; retro/README.md, "AVGO"), 157 from 2010-01-08 to 2012-12-31 and 208 from
+2013-01-11 to 2016-12-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was
+scored only after its point-in-time build was committed and pushed (2009: b3106d7; 2010-2012: 04c4511; 2013-2016: 06ece35). Prices
+run to 2026-10-30; the 2009 batch's two-year horizons end by 2011-12-30 (three-year: 2012-12-28), the 2010-2012 batch's by
+2014-12-30 (2015-12-30), the 2013-2016 batch's by 2018-12-28 (2019-12-30). Medians of an even count take the upper middle value
+(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2009 (22 dates)
 
@@ -114,3 +115,53 @@ count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle 
 - **The other calls, seen afterwards.** FY2010 at $1.58 instead of GAAP $1.69 would have moved 14 classes; BASE on the latest
   quarter instead of the guides 10; the engine revision and the dollar-level guide none. None of those comparisons is a reason to
   change an encoding.
+
+## 2013-2016 (208 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 20 | +235% | +176% to +297% | 20 | 20 | +175% | 20 |
+| class FAIR | 102 | +112% | +26% to +298% | 99 | 97 | +85% | 16 |
+| class RICH | 86 | +94% | +63% to +171% | 86 | 86 | +64% | 0 |
+| legacy tier BUY | 109 | +133% | +26% to +298% | 106 | 104 | +93% | 36 |
+| legacy tier ACCUMULATE | 34 | +100% | +63% to +183% | 34 | 34 | +75% | 0 |
+| legacy tier WATCHLIST | 21 | +92% | +80% to +171% | 21 | 21 | +63% | 0 |
+| legacy tier AVOID | 44 | +100% | +66% to +144% | 44 | 44 | +66% | 0 |
+| 2013 to the Q4 FY13 print (FY12's $2.25) | 47 | +240% | +169% to +298% | 47 | 47 | +169% | 20 |
+| Q4 FY13 to Q4 FY14 print (FY13's $2.19 for FY14E) | 52 | +128% | +88% to +222% | 52 | 52 | +97% | 0 |
+| Q4 FY14 to Q4 FY15 print (FY13's $2.19 for FY15E, FY14 excluded) | 52 | +90% | +63% to +131% | 52 | 52 | +53% | 0 |
+| Q4 FY15 to Q4 FY16 print (FY15's $4.95) | 53 | +66% | +26% to +126% | 50 | 48 | +60% | 16 |
+| from the Q4 FY16 print (FY15's $4.95, FY16 excluded) | 4 | +50% | +36% to +53% | 4 | 4 | +34% | 0 |
+
+- **CHEAP held again on every date; RICH failed on every date.** The 20 CHEAP dates (all in 2013) returned a median +235% over two
+  years and beat SPY by 153-262pp. Across the two batches since 2010, CHEAP held on 81 of 81 dates. The 86 RICH dates (January 2014
+  to February 2016) returned +63% to +171% and beat SPY by 37-154pp. Not one held.
+- **The RICH calls came from a GAAP multiple measured on a pre-acquisition EPS anchor.** From December 2013 to November 2015 the
+  anchor was FY13's $2.19: for FY14E, then for FY15E once FY2014 was excluded. The RICH dates sat at the 87th-100th percentile of the
+  stock's own P/E range (45-68x through 2015), while the guides already carried LSI and Emulex (BASE +104% to +126%/yr on many of
+  them). The FAIR call (within 15pp of SPY) held on 16 of 102 dates, all from July to November 2016. The other 86 FAIR dates beat SPY
+  by more than 15pp (median +107pp).
+- **Every date beat SPY over three years** (+67% to +396%, by 28-356pp) and over one year (by at least 3pp). At two years only five
+  dates of July-September 2016 lagged, by 0.1-11.2pp. The worst drawdown within two years of any date was -28.9%.
+- **The entry price ranked the outcomes, and the signal composite did not.** Across the 208 dates:
+  - the entry price ranks the two-year returns at Spearman -0.94 (-0.87 on the m12-24 average): the stock compounded, so earlier
+    entries earned more. Within each year it reads -0.35 to -0.89;
+  - the EPP gap ranks them at -0.60 (-0.77). The conservative case ranks them backwards at -0.46: it was highest when the
+    acquisition guides inflated BASE (mid-2014, 2016), not when returns were highest (2013);
+  - the adjusted gap ranks them at -0.36, Ratio B at -0.28, and the proxy composite at about 0 (-0.04). The pro-cyclical lean
+    recorded for 2010-2012 does not show here, where the signals swung with the acquisitions rather than the cycle.
+- **BULL was the nearest anchor at two years** on 162 dates, BASE on 43 and BEAR on 3:
+  - BULL compounded FY08's $0.26: +71.5%/yr in 2013 (to FY12), then +53.1% and +52.3% (to FY13, to FY15), or took BASE's
+    acquisition-swollen rate (+104% to +126%/yr);
+  - in 2016 BASE compounded FY15's pre-BRCM $4.95 at +112% to +123%/yr, so the two-year price fell short of it. It landed nearest
+    BEAR on 3 dates of July-November 2016.
+- **The calls, seen afterwards.**
+  - Keeping FY2014 at GAAP $1.16 would have turned 9 RICH dates FAIR. Neither call would have held on them (0 of 9 either way).
+  - BASE on the latest quarter's growth instead of the guides would have changed 46 classes, mostly to RICH. The built classes
+    held on 8 of them, the alternatives on none.
+  - Neither comparison is a reason to change an encoding: the calls were decided before scoring and stay, and changing a rule
+    means a new method version tested elsewhere.
+- **Hypothesis for the live model, not an input:** for a serial acquirer whose GAAP EPS lags its acquired earnings (amortization,
+  inventory step-up and restructuring, a distorted or loss year left out), a GAAP multiple measured against its own history reads
+  RICH while the business compounds. Here that call failed on 86 of 86 dates. Test it on other acquirers and periods before any
+  method change; never fit it to AVGO's outcomes.

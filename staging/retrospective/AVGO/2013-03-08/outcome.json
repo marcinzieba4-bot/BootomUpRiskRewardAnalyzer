@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "AVGO",
+ "as_of": "2013-03-08",
+ "computed": "2026-11-01",
+ "data_source": "Yahoo Finance daily closes + dividends (AVGO, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2013-09-06",
+   "price": 38.56,
+   "dividends": 0.4,
+   "total_return_pct": 10.5,
+   "benchmark_total_return_pct": 7.8,
+   "excess_pct": 2.7,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2014-03-07",
+   "price": 62.75,
+   "dividends": 0.88,
+   "total_return_pct": 80.4,
+   "benchmark_total_return_pct": 23.3,
+   "excess_pct": 57.1,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2015-03-06",
+   "price": 127.89,
+   "dividends": 2.11,
+   "total_return_pct": 268.6,
+   "benchmark_total_return_pct": 38.1,
+   "excess_pct": 230.5,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2016-03-08",
+   "price": 139.63,
+   "dividends": 3.75,
+   "total_return_pct": 306.5,
+   "benchmark_total_return_pct": 35.0,
+   "excess_pct": 271.6,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2015-03-05",
+   "price": 130.57
+  },
+  "low": {
+   "date": "2013-04-19",
+   "price": 31.26
+  },
+  "max_drawdown_pct": -22.9,
+  "return_to_avg_price_m12_m24_pct": 134.6
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "FAIR: should land within +/-15pp of the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Broadcom: custom AI silicon + VMware software; semi cycle exposure",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
