@@ -26,160 +26,160 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2009-12-18 | $16.39 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.21 | 0.24x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +78.6% | +63.9pp | +97.6% | ✗ |
 | 2009-12-24 | $16.78 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.48 | 0.33x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +77.9% | +61.3pp | +93.0% | ✗ |
 | 2009-12-31 | $18.29 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.30 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.4% | +43.4pp | +77.1% | ✗ |
-| 2010-01-08 | $19.17 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.35 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2010-01-15 | $18.24 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.32 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2010-01-22 | $17.56 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.72 | 0.41x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2010-01-29 | $17.38 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.50 | 0.36x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2010-02-05 | $17.20 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.39 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2010-02-12 | $17.36 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.61 | 0.35x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
-| 2010-02-19 | $17.53 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.83 | 0.39x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2010-02-26 | $18.15 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.93 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-03-05 | $19.36 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.86 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-03-12 | $19.65 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.84 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-03-19 | $20.11 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.82 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-03-26 | $19.91 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.84 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-04-01 | $20.50 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.81 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-04-09 | $20.01 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.84 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-04-16 | $21.88 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.63 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-04-23 | $21.49 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.83 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-04-30 | $20.51 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.89 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-05-07 | $19.29 | Avago Technologies Limited Q1 FY10 results | 3.20 | +2.03 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-05-14 | $20.23 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.92 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-05-21 | $19.81 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.99 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-05-28 | $20.65 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.33 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-06-04 | $20.81 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.32 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-06-11 | $21.93 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.18 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-06-18 | $23.04 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.12 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-06-25 | $21.47 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.32 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-07-02 | $21.57 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.32 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-07-09 | $22.01 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.20 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-07-16 | $21.99 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.20 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-07-23 | $22.88 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.16 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-07-30 | $21.76 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.33 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-08-06 | $22.59 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.19 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-08-13 | $19.99 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.57 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-08-20 | $20.43 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.51 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-08-26 | $20.60 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.07 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-09-03 | $20.98 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.02 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-09-10 | $18.65 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.35 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-09-17 | $20.04 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.17 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-09-24 | $21.58 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.94 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-10-01 | $22.63 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.76 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-10-08 | $22.20 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.80 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-10-15 | $22.69 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.76 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-10-22 | $22.48 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.78 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-10-29 | $24.68 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.59 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-11-05 | $25.37 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.51 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-11-12 | $25.72 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.44 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-11-19 | $25.27 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.53 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-11-26 | $27.01 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.16 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-12-03 | $26.55 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.71 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-12-10 | $26.40 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.72 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2010-12-17 | $28.17 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.66 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2010-12-23 | $28.13 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.66 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2010-12-31 | $28.41 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.65 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-01-07 | $28.28 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.66 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-01-14 | $29.01 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.64 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-01-21 | $27.77 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.69 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-01-28 | $28.05 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.68 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-02-04 | $31.20 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.47 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-02-11 | $33.29 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.39 | 0.14x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-02-18 | $33.85 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.37 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-02-25 | $34.36 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.77 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-03-04 | $32.79 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.88 | 0.13x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-03-11 | $31.23 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.95 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-03-18 | $30.32 | Avago Technologies Limited Q1 FY11 results | 2.90 | +1.09 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-03-25 | $30.85 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.99 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-04-01 | $31.52 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.98 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-04-08 | $32.57 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.95 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-04-15 | $31.74 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.99 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-04-21 | $32.60 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.96 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-04-29 | $33.46 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.94 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-05-06 | $34.91 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.91 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-05-13 | $34.89 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.92 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-05-20 | $34.39 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.94 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-05-26 | $34.71 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.58 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-06-03 | $33.89 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.62 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-06-10 | $33.77 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.63 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-06-17 | $32.50 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.67 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-06-24 | $35.52 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.58 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-07-01 | $38.66 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.48 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2011-07-08 | $37.96 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.51 | 0.14x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2011-07-15 | $35.51 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.63 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-07-22 | $37.07 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.58 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-07-29 | $33.63 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.69 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-08-05 | $29.34 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.95 | 0.07x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-08-12 | $31.04 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.79 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-08-19 | $28.29 | Avago Technologies Limited Q2 FY11 results | 2.55 | +1.02 | 0.06x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-08-25 | $30.88 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.81 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-09-02 | $31.13 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.79 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-09-09 | $32.30 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.74 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-09-16 | $36.49 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.62 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-09-23 | $34.80 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.67 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-09-30 | $32.77 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.73 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-10-07 | $32.88 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.73 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-10-14 | $35.70 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.66 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-10-21 | $33.84 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.72 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-10-28 | $33.59 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.73 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-11-04 | $34.38 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.72 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-11-11 | $34.29 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.72 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2011-11-18 | $29.86 | Avago Technologies Limited Q3 FY11 results | 2.55 | +1.02 | 0.07x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-11-25 | $28.44 | Avago Technologies Limited Q3 FY11 results | 2.55 | +1.08 | 0.06x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-12-02 | $31.16 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.96 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2011-12-09 | $30.61 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.01 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-12-16 | $28.80 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.15 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-12-23 | $29.39 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.09 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2011-12-30 | $28.86 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.13 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-01-06 | $28.31 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.29 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-01-13 | $31.57 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.03 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-01-20 | $33.81 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.79 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-01-27 | $33.98 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.78 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-02-03 | $35.13 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.73 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-02-10 | $34.49 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.76 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-02-17 | $35.24 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.73 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-02-24 | $36.32 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.01 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-03-02 | $36.60 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.00 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-03-09 | $36.77 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.00 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-03-16 | $37.90 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.06 | 0.15x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-03-23 | $38.10 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.07 | 0.15x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-03-30 | $38.97 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.11 | 0.16x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-04-05 | $37.61 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.04 | 0.15x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-04-13 | $37.28 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.01 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2012-04-20 | $34.28 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.14 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-04-27 | $34.60 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.12 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-05-04 | $31.63 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.43 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-05-11 | $30.94 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.48 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-05-18 | $30.02 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.52 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-05-24 | $32.51 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.64 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-06-01 | $30.98 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.76 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-06-08 | $33.84 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.45 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-06-15 | $34.07 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.43 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-06-22 | $34.80 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.40 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-06-29 | $35.90 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.35 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2012-07-06 | $34.48 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.42 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-07-13 | $33.15 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.62 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-07-20 | $35.28 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.38 | 0.11x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2012-07-27 | $36.13 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.34 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-03 | $37.11 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.30 | 0.13x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-10 | $37.15 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.30 | 0.13x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-17 | $36.84 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.31 | 0.13x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2012-08-24 | $36.05 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.35 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2012-08-31 | $36.57 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.33 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-09-07 | $36.20 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.35 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-09-14 | $35.06 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.41 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-09-21 | $35.51 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.39 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-09-28 | $34.87 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.42 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-10-05 | $34.44 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.46 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-10-12 | $32.98 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.68 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-10-19 | $33.19 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.66 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-10-26 | $33.83 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.51 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-11-02 | $33.97 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.50 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-11-09 | $33.48 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.64 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-11-16 | $31.94 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.76 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-11-23 | $33.55 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.64 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-11-30 | $35.10 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.28 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2012-12-07 | $34.25 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.49 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-12-14 | $31.14 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.76 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-12-21 | $31.36 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.75 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-12-28 | $31.15 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.76 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2012-12-31 | $31.65 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.72 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-01-08 | $19.17 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.35 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.1% | +34.4pp | +69.2% | ✗ |
+| 2010-01-15 | $18.24 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -1.32 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +75.7% | +58.0pp | +78.1% | ✗ |
+| 2010-01-22 | $17.56 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.72 | 0.41x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +95.2% | +70.0pp | +85.5% | ✗ |
+| 2010-01-29 | $17.38 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.50 | 0.36x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +98.2% | +71.0pp | +88.0% | ✗ |
+| 2010-02-05 | $17.20 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.39 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +107.0% | +76.3pp | +90.6% | ✓ |
+| 2010-02-12 | $17.36 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.61 | 0.35x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +101.4% | +72.5pp | +89.1% | ✗ |
+| 2010-02-19 | $17.53 | Avago Technologies Limited Q4 and FY2009 results | 2.35 | -0.83 | 0.39x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +103.7% | +76.6pp | +87.4% | ✗ |
+| 2010-02-26 | $18.15 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.93 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +102.7% | +74.7pp | +81.3% | ✓ |
+| 2010-03-05 | $19.36 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.86 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.5% | +61.6pp | +70.4% | ✓ |
+| 2010-03-12 | $19.65 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.84 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +88.7% | +65.3pp | +68.4% | ✓ |
+| 2010-03-19 | $20.11 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.82 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +92.2% | +66.5pp | +65.3% | ✓ |
+| 2010-03-26 | $19.91 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.84 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.1% | +72.4pp | +67.6% | ✓ |
+| 2010-04-01 | $20.50 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.81 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.0% | +69.3pp | +63.4% | ✓ |
+| 2010-04-09 | $20.01 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.84 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.8% | +71.0pp | +68.0% | ✓ |
+| 2010-04-16 | $21.88 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.63 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.1% | +53.1pp | +54.2% | ✓ |
+| 2010-04-23 | $21.49 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.83 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.4% | +41.0pp | +57.3% | ✓ |
+| 2010-04-30 | $20.51 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.89 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.0% | +49.1pp | +64.9% | ✓ |
+| 2010-05-07 | $19.29 | Avago Technologies Limited Q1 FY10 results | 3.20 | +2.03 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.4% | +37.7pp | +75.4% | ✓ |
+| 2010-05-14 | $20.23 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.92 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.8% | +34.7pp | +66.8% | ✓ |
+| 2010-05-21 | $19.81 | Avago Technologies Limited Q1 FY10 results | 3.20 | +1.99 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.1% | +33.5pp | +69.9% | ✓ |
+| 2010-05-28 | $20.65 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.33 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.4% | +38.1pp | +63.0% | ✓ |
+| 2010-06-04 | $20.81 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.32 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +49.6% | +25.0pp | +61.6% | ✓ |
+| 2010-06-11 | $21.93 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.18 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.3% | +30.0pp | +53.2% | ✓ |
+| 2010-06-18 | $23.04 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.12 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.1% | +29.2pp | +45.9% | ✓ |
+| 2010-06-25 | $21.47 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.32 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.8% | +36.3pp | +56.6% | ✓ |
+| 2010-07-02 | $21.57 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.32 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.0% | +29.4pp | +55.6% | ✓ |
+| 2010-07-09 | $22.01 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.20 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.7% | +24.6pp | +52.2% | ✓ |
+| 2010-07-16 | $21.99 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.20 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.3% | +20.5pp | +52.1% | ✓ |
+| 2010-07-23 | $22.88 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.16 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.0% | +27.0pp | +46.1% | ✓ |
+| 2010-07-30 | $21.76 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.33 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.7% | +38.3pp | +53.6% | ✓ |
+| 2010-08-06 | $22.59 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.19 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.4% | +38.6pp | +48.4% | ✓ |
+| 2010-08-13 | $19.99 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.57 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.2% | +50.5pp | +68.5% | ✓ |
+| 2010-08-20 | $20.43 | Avago Technologies Limited Q2 FY10 results | 3.70 | +2.51 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.7% | +42.7pp | +65.5% | ✓ |
+| 2010-08-26 | $20.60 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.07 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.6% | +39.3pp | +64.6% | ✓ |
+| 2010-09-03 | $20.98 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.02 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.9% | +46.0pp | +62.0% | ✓ |
+| 2010-09-10 | $18.65 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.35 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +91.7% | +58.4pp | +82.6% | ✓ |
+| 2010-09-17 | $20.04 | Avago Technologies Limited Q3 FY10 results | 3.50 | +2.17 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.8% | +45.3pp | +69.9% | ✓ |
+| 2010-09-24 | $21.58 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.94 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.6% | +33.1pp | +57.7% | ✓ |
+| 2010-10-01 | $22.63 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.76 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.3% | +26.7pp | +50.4% | ✓ |
+| 2010-10-08 | $22.20 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.80 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.7% | +27.2pp | +53.5% | ✓ |
+| 2010-10-15 | $22.69 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.76 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.3% | +23.4pp | +50.1% | ✓ |
+| 2010-10-22 | $22.48 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.78 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.6% | +27.0pp | +51.4% | ✓ |
+| 2010-10-29 | $24.68 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.59 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.8% | +17.0pp | +37.9% | ✓ |
+| 2010-11-05 | $25.37 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.51 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.9% | +18.9pp | +34.1% | ✓ |
+| 2010-11-12 | $25.72 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.44 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.2% | +14.8pp | +32.3% | ✓ |
+| 2010-11-19 | $25.27 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.53 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.2% | +13.1pp | +34.7% | ✓ |
+| 2010-11-26 | $27.01 | Avago Technologies Limited Q3 FY10 results | 3.50 | +1.16 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.4% | +6.2pp | +26.3% | ✓ |
+| 2010-12-03 | $26.55 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.71 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.5% | +15.1pp | +28.9% | ✓ |
+| 2010-12-10 | $26.40 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.72 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.9% | +15.2pp | +29.9% | ✓ |
+| 2010-12-17 | $28.17 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.66 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +17.1% | -2.3pp | +22.0% | ✓ |
+| 2010-12-23 | $28.13 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.66 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +15.1% | -3.1pp | +22.5% | ✓ |
+| 2010-12-31 | $28.41 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.65 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +13.2% | -2.7pp | +21.4% | ✓ |
+| 2011-01-07 | $28.28 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.66 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +17.9% | -1.4pp | +22.1% | ✓ |
+| 2011-01-14 | $29.01 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.64 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +22.6% | +4.6pp | +19.2% | ✓ |
+| 2011-01-21 | $27.77 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.69 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +27.7% | +7.7pp | +24.6% | ✓ |
+| 2011-01-28 | $28.05 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.68 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +26.5% | +4.6pp | +23.4% | ✓ |
+| 2011-02-04 | $31.20 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.47 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +16.0% | -2.4pp | +11.0% | ✓ |
+| 2011-02-11 | $33.29 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.39 | 0.14x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +9.4% | -8.9pp | +4.1% | ✓ |
+| 2011-02-18 | $33.85 | Avago Technologies Limited Q4 and FY2010 results | 3.20 | +1.37 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +6.8% | -10.5pp | +2.4% | ✓ |
+| 2011-02-25 | $34.36 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.77 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -1.2% | -18.1pp | +0.7% | ✗ |
+| 2011-03-04 | $32.79 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.88 | 0.13x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +5.4% | -14.4pp | +5.3% | ✓ |
+| 2011-03-11 | $31.23 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.95 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +16.1% | -7.5pp | +10.5% | ✓ |
+| 2011-03-18 | $30.32 | Avago Technologies Limited Q1 FY11 results | 2.90 | +1.09 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +19.4% | -6.5pp | +13.8% | ✓ |
+| 2011-03-25 | $30.85 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.99 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +18.8% | -3.7pp | +11.6% | ✓ |
+| 2011-04-01 | $31.52 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.98 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +15.7% | -5.9pp | +9.1% | ✓ |
+| 2011-04-08 | $32.57 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.95 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +9.9% | -12.1pp | +5.4% | ✓ |
+| 2011-04-15 | $31.74 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.99 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +10.0% | -11.9pp | +8.0% | ✓ |
+| 2011-04-21 | $32.60 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.96 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -0.7% | -21.2pp | +4.9% | ✗ |
+| 2011-04-29 | $33.46 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.94 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +0.6% | -20.5pp | +2.1% | ✗ |
+| 2011-05-06 | $34.91 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.91 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -2.8% | -27.7pp | -2.3% | ✗ |
+| 2011-05-13 | $34.89 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.92 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -0.4% | -26.8pp | -2.1% | ✗ |
+| 2011-05-20 | $34.39 | Avago Technologies Limited Q1 FY11 results | 2.90 | +0.94 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +3.4% | -25.9pp | -0.4% | ✗ |
+| 2011-05-26 | $34.71 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.58 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +1.5% | -27.2pp | -1.2% | ✗ |
+| 2011-06-03 | $33.89 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.62 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +13.4% | -17.1pp | +1.3% | ✗ |
+| 2011-06-10 | $33.77 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.63 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +12.4% | -21.3pp | +2.0% | ✗ |
+| 2011-06-17 | $32.50 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.67 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +21.0% | -12.5pp | +6.2% | ✓ |
+| 2011-06-24 | $35.52 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.58 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +6.8% | -21.8pp | -2.7% | ✗ |
+| 2011-07-01 | $38.66 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.48 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +0.5% | -24.5pp | -10.5% | ✓ |
+| 2011-07-08 | $37.96 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.51 | 0.14x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +1.4% | -25.0pp | -8.7% | ✗ |
+| 2011-07-15 | $35.51 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.63 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +10.5% | -21.7pp | -2.1% | ✗ |
+| 2011-07-22 | $37.07 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.58 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +5.3% | -25.1pp | -6.0% | ✗ |
+| 2011-07-29 | $33.63 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.69 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +12.5% | -22.5pp | +3.7% | ✗ |
+| 2011-08-05 | $29.34 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.95 | 0.07x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +30.4% | -16.8pp | +18.9% | ✗ |
+| 2011-08-12 | $31.04 | Avago Technologies Limited Q2 FY11 results | 2.55 | +0.79 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +25.5% | -22.8pp | +12.4% | ✗ |
+| 2011-08-19 | $28.29 | Avago Technologies Limited Q2 FY11 results | 2.55 | +1.02 | 0.06x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +32.5% | -19.1pp | +23.4% | ✗ |
+| 2011-08-25 | $30.88 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.81 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +23.0% | -25.5pp | +13.0% | ✗ |
+| 2011-09-02 | $31.13 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.79 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +27.7% | -16.3pp | +12.2% | ✗ |
+| 2011-09-09 | $32.30 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.74 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +23.9% | -25.9pp | +8.3% | ✗ |
+| 2011-09-16 | $36.49 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.62 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +10.7% | -33.9pp | -3.9% | ✗ |
+| 2011-09-23 | $34.80 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.67 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +24.2% | -30.9pp | +1.2% | ✗ |
+| 2011-09-30 | $32.77 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.73 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +35.6% | -18.4pp | +7.9% | ✗ |
+| 2011-10-07 | $32.88 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.73 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +34.9% | -15.2pp | +8.1% | ✗ |
+| 2011-10-14 | $35.70 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.66 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +27.7% | -16.9pp | +0.1% | ✗ |
+| 2011-10-21 | $33.84 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.72 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +43.1% | -2.7pp | +6.3% | ✓ |
+| 2011-10-28 | $33.59 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.73 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +39.5% | -2.4pp | +7.8% | ✓ |
+| 2011-11-04 | $34.38 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.72 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +35.0% | -10.9pp | +6.0% | ✓ |
+| 2011-11-11 | $34.29 | Avago Technologies Limited Q3 FY11 results | 2.55 | +0.72 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +32.9% | -12.0pp | +6.8% | ✓ |
+| 2011-11-18 | $29.86 | Avago Technologies Limited Q3 FY11 results | 2.55 | +1.02 | 0.07x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +51.8% | -0.4pp | +23.5% | ✓ |
+| 2011-11-25 | $28.44 | Avago Technologies Limited Q3 FY11 results | 2.55 | +1.08 | 0.06x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +58.5% | -2.2pp | +30.3% | ✓ |
+| 2011-12-02 | $31.16 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.96 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +48.8% | -0.8pp | +19.4% | ✓ |
+| 2011-12-09 | $30.61 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.01 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.2% | +10.3pp | +22.3% | ✓ |
+| 2011-12-16 | $28.80 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.15 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.3% | +26.4pp | +30.9% | ✓ |
+| 2011-12-23 | $29.39 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.09 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.2% | +32.7pp | +29.7% | ✓ |
+| 2011-12-30 | $28.86 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.13 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.8% | +36.2pp | +33.3% | ✓ |
+| 2012-01-06 | $28.31 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.29 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.7% | +42.8pp | +37.0% | ✓ |
+| 2012-01-13 | $31.57 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +1.03 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +71.5% | +25.4pp | +24.1% | ✗ |
+| 2012-01-20 | $33.81 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.79 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +70.5% | +26.4pp | +17.0% | ✗ |
+| 2012-01-27 | $33.98 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.78 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +64.6% | +24.7pp | +17.6% | ✗ |
+| 2012-02-03 | $35.13 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.73 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +55.8% | +21.6pp | +14.8% | ✗ |
+| 2012-02-10 | $34.49 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.76 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +67.6% | +28.8pp | +18.1% | ✗ |
+| 2012-02-17 | $35.24 | Avago Technologies Limited Q4 and FY2011 results | 2.70 | +0.73 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +69.0% | +29.4pp | +16.7% | ✗ |
+| 2012-02-24 | $36.32 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.01 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.1% | +28.4pp | +14.4% | ✗ |
+| 2012-03-02 | $36.60 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.00 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.7% | +32.3pp | +14.9% | ✗ |
+| 2012-03-09 | $36.77 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.00 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +74.7% | +33.2pp | +15.9% | ✗ |
+| 2012-03-16 | $37.90 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.06 | 0.15x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.0% | +33.2pp | +13.8% | ✗ |
+| 2012-03-23 | $38.10 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.07 | 0.15x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.0% | +33.9pp | +14.7% | ✗ |
+| 2012-03-30 | $38.97 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.11 | 0.16x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.7% | +32.2pp | +13.5% | ✗ |
+| 2012-04-05 | $37.61 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.04 | 0.15x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.7% | +30.5pp | +19.1% | ✗ |
+| 2012-04-13 | $37.28 | Avago Technologies Limited Q1 FY12 results | 2.00 | -0.01 | 0.14x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.4% | +24.2pp | +21.5% | ✗ |
+| 2012-04-20 | $34.28 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.14 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +82.4% | +42.4pp | +33.5% | ✗ |
+| 2012-04-27 | $34.60 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.12 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +84.9% | +47.4pp | +34.1% | ✗ |
+| 2012-05-04 | $31.63 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.43 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +108.3% | +66.2pp | +48.6% | ✗ |
+| 2012-05-11 | $30.94 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.48 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +123.1% | +79.6pp | +54.1% | ✓ |
+| 2012-05-18 | $30.02 | Avago Technologies Limited Q1 FY12 results | 2.00 | +0.52 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +133.5% | +83.5pp | +61.1% | ✓ |
+| 2012-05-24 | $32.51 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.64 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +122.0% | +73.4pp | +50.9% | ✗ |
+| 2012-06-01 | $30.98 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.76 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +133.4% | +77.8pp | +60.1% | ✓ |
+| 2012-06-08 | $33.84 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.45 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +116.5% | +64.7pp | +48.6% | ✗ |
+| 2012-06-15 | $34.07 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.43 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +114.0% | +64.8pp | +49.6% | ✗ |
+| 2012-06-22 | $34.80 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.40 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +110.7% | +58.8pp | +48.4% | ✗ |
+| 2012-06-29 | $35.90 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.35 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +102.5% | +53.6pp | +45.7% | ✗ |
+| 2012-07-06 | $34.48 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.42 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +123.2% | +71.8pp | +53.4% | ✗ |
+| 2012-07-13 | $33.15 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.62 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +126.2% | +76.2pp | +61.7% | ✗ |
+| 2012-07-20 | $35.28 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.38 | 0.11x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +117.6% | +67.7pp | +53.9% | ✗ |
+| 2012-07-27 | $36.13 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.34 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +98.4% | +50.9pp | +52.3% | ✗ |
+| 2012-08-03 | $37.11 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.30 | 0.13x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +94.6% | +51.5pp | +50.0% | ✗ |
+| 2012-08-10 | $37.15 | Avago Technologies Limited Q2 FY12 results | 2.30 | +0.30 | 0.13x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +94.3% | +52.2pp | +51.7% | ✗ |
+| 2012-08-17 | $36.84 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.31 | 0.13x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +107.8% | +65.3pp | +54.9% | ✗ |
+| 2012-08-24 | $36.05 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.35 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +116.3% | +70.7pp | +60.4% | ✗ |
+| 2012-08-31 | $36.57 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.33 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +129.3% | +82.2pp | +60.3% | ✗ |
+| 2012-09-07 | $36.20 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.35 | 0.12x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +147.7% | +103.5pp | +64.0% | ✗ |
+| 2012-09-14 | $35.06 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.41 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +155.6% | +115.7pp | +72.2% | ✗ |
+| 2012-09-21 | $35.51 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.39 | 0.11x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +156.4% | +113.9pp | +72.6% | ✗ |
+| 2012-09-28 | $34.87 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.42 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +156.5% | +114.1pp | +78.4% | ✗ |
+| 2012-10-05 | $34.44 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.46 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +148.0% | +108.7pp | +83.1% | ✗ |
+| 2012-10-12 | $32.98 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.68 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +122.2% | +83.9pp | +93.4% | ✓ |
+| 2012-10-19 | $33.19 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.66 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +138.3% | +101.9pp | +93.9% | ✓ |
+| 2012-10-26 | $33.83 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.51 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +147.7% | +103.7pp | +92.3% | ✗ |
+| 2012-11-02 | $33.97 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.50 | 0.09x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +159.6% | +112.1pp | +93.7% | ✗ |
+| 2012-11-09 | $33.48 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.64 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +159.8% | +107.5pp | +99.0% | ✓ |
+| 2012-11-16 | $31.94 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.76 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +184.8% | +129.8pp | +111.3% | ✓ |
+| 2012-11-23 | $33.55 | Avago Technologies Limited Q3 FY12 results | 2.30 | +0.64 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +174.6% | +123.4pp | +103.9% | ✓ |
+| 2012-11-30 | $35.10 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.28 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +171.6% | +120.9pp | +97.1% | ✗ |
+| 2012-12-07 | $34.25 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.49 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +209.3% | +158.2pp | +105.0% | ✓ |
+| 2012-12-14 | $31.14 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.76 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +224.2% | +177.9pp | +128.9% | ✓ |
+| 2012-12-21 | $31.36 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.75 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +226.1% | +176.4pp | +130.3% | ✓ |
+| 2012-12-28 | $31.15 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.76 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +229.8% | +175.8pp | +134.3% | ✓ |
+| 2012-12-31 | $31.65 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.72 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +225.3% | +174.5pp | +131.6% | ✓ |
