@@ -3723,6 +3723,104 @@ Judgement calls that could carry hindsight:
 - GAAP over the company's non-GAAP EPS, and excluding the three loss years (no class moves on the dates where both were public);
 - DURABLE rather than CYCLICAL, although the company calls its industry "highly cyclical" (the class label only).
 
+### AVGO 2010-2012: FY2008 across the FY2009 gap, guides off the trough, the first dividends
+
+```bash
+python3 retro/build_avgo.py --weekly 2010-01-04 2012-12-31                  # 157 dates, 2010-01-08 .. 2012-12-31
+```
+
+Every 8-K of 2010-2012 was read in full: the earnings releases, two mid-quarter guide updates, the dividend and buyback
+announcements, the sponsors' secondary offerings (with the "recent developments" of their prospectus supplements), the
+redemption of the last notes, the credit agreements, officers, board and votes. The 10-Qs and the FY2010-FY2012 10-Ks were read
+for the history, the dividend declarations and forward-looking statements, with the 10-K/A of 2010-01-15 and the proxies. 307 more
+strings were checked with `verbatim.py` (428 in all), each source dated by EDGAR's acceptance time. Thresholds and signals are
+unchanged. Decided on 2026-11-01, before any 2010-2012 date was built or scored:
+
+- **Three vintages:** the FY2010 10-K (accepted 2010-12-15 17:01 ET, dated 2010-12-16), the FY2011 10-K (2011-12-15 18:03 ET,
+  dated 2011-12-16) and the FY2012 10-K (2012-12-17 16:31 ET, dated 2012-12-18). Each Q4 print extends the history with its year
+  until the 10-K. The 10-K/A of 2010-01-15 adds Part III and Item 9B only.
+- **FY2008 stays in the history across the FY2009 gap.** FY2009 stays excluded. Once FY2010 is in, FY2009 is a year inside the
+  history: its own days leave the P/E window, and EPS growth is measured only between years in the history (the NKE FY2018 rule,
+  which kept NIKE's earlier years when FY2019 followed its excluded FY2018). The history is FY2008 and FY2010 from the Q4 FY10 print,
+  then FY2011 and FY2012. BEAR stays flat (the one-year changes, FY10 to FY11 +29.6% and FY11 to FY12 +2.7%, are positive). BULL
+  runs from FY2008's $0.26: +155.0%/yr to FY2010's $1.69, +103.5%/yr to FY2011's $2.19, +71.5%/yr to FY2012's $2.25.
+- **An engine revision, text only for earlier dates.** XBULL takes every two-year run "whose ends are both in" the history (the r2
+  wording of the NKE FY2018 rule). The engine copied from NKE looked only at runs ending in the history's third year or later,
+  which skips FY2008 to FY2010 across the gap. XBULL is +155.0%/yr from the Q4 FY11 print. The 22 reports of 2009 rebuild
+  byte-identical; their models change only in that line.
+- **EPS: GAAP.** FY2010's $1.69 includes the fourth quarter's $28.7M discrete tax benefit from the notes redemption; the release
+  gives its per-share effect ($0.11) but no EPS excluding it, so GAAP stands (the NKE FY2008 rule). FY2011 $2.19, FY2012 $2.25.
+- **Guides.** Each release guides the next quarter's revenue as sequential growth, read against the same quarter a year earlier
+  (the 2009 rule): Q2 FY10 up 6% to 9% (+48.7% to +52.9%), Q3 FY10 up 4% to 7% (+47.5% to +51.8%), Q4 FY10 up 3% to 6% (+32.4% to
+  +36.2%), Q1 FY11 down 3% to 6% (+17.9% to +21.7%), Q2 FY11 down 1% to up 2% (+5.7% to +8.9%), Q3 FY11 up 5% to 8% (+6.9% to
+  +10.0%), Q4 FY11 up 2% to 5% (+7.5% to +10.7%), Q1 FY12 down 10% to 14% (-2.6% to +1.9%), Q2 FY12 up 1% to 4% (+1.5% to +4.6%),
+  Q3 FY12 up 3% to 6% (-1.4% to +1.4%), Q4 FY12 up 0% to 3% (-2.7% to +0.2%), Q1 FY13 down 5% to 9% (-0.1% to +4.3%).
+  - **Two 8-Ks update a quarter's guide**, and the latest guide for a quarter wins. The 8-K of 2010-04-19 (dated 2010-04-20) has
+    Q2 FY10 "up 11% to 13% sequentially" (+55.7% to +58.5%). The 8-K of 2010-08-10 (dated 2010-08-11) has Q3 FY10 "approximately
+    $550 million", on preliminary results for the quarter just ended.
+  - **A guide stated as a dollar level** is read against the year-ago quarter directly (the AAPL rule): +51.5% on Q3 FY09's $363M.
+- **Year-ago inventory.** From FY2010 the releases' balance sheets carry only the quarter end and the last fiscal year end, so a
+  print's year-ago inventory comes from that quarter's own release (an extra source of the print).
+- **Dividends,** the latest declared rate from the first filing that states it:
+  - $0.07 a quarter, the first, with the Q4 FY10 results (2010-12-03);
+  - $0.08 (Q1 FY11 10-Q, accepted before the open on 2011-03-10), $0.09 (2011-06-10), $0.11 (2011-09-09);
+  - $0.12 (8-K of 2011-12-09, accepted in market hours), $0.13 (2012-03-09), $0.15 (2012-06-11), $0.16 (2012-08-31);
+  - $0.17 (the secondary-offering prospectus supplement of 2012-12-07, accepted the evening before).
+- **Release timing.** Every release came after the close, and each print is dated by its 8-K's acceptance. The Q3 FY11 release
+  went out after the close on 2011-08-23 and its 8-K was accepted at 06:12 ET the next morning: dated 2011-08-24, with the week's
+  date 2011-08-25. Four prints fall on a Friday, the week's last trading day (2010-12-03, 2011-12-02, 2012-08-17, 2012-11-30), and
+  meet that day's close, public before the open.
+- **Adds nothing:**
+  - the sponsors' secondary offerings and their prospectus supplements (the "recent developments" repeat released results) and
+    the offering withdrawn on 2010-08-11;
+  - the analyst day (8-K of 2010-09-16; the presentations were not filed);
+  - the redemption of the remaining notes (8-K of 2010-10-25) and the credit agreements (2010-07-02, 2011-04-01, 2012-08-10);
+  - the buyback programs (2011-06-09, 2012-04-05; diluted share counts carry their effect);
+  - officers, board, bonuses, AGM votes, 10b5-1 plans and the proxies.
+- **Durability unchanged:** DURABLE, risk 2, in each 10-K's words (the FY2012 10-K: "We serve three primary target markets"). The
+  FY2012 10-K comes after CLOUD's live_from (2012-10-30), but it names cloud only for Avago's own "cloud-based" IT service
+  providers (a security risk), not as a substitute for its products. The watch list stays empty (the AAPL rule).
+
+Controls: altering one value of each print, Q4 full-year figure, guide, vintage and dividend changes no date before its publication
+and changes the first weekly date on or after it (41 of 41). No fact appears in a model dated before its publication, and no later
+year appears in any model's text. The 2008 dates of ACN and the 2008-2009 dates of UNP, LOW, AAPL and NKE rebuild unchanged.
+
+Seen in the build (method behaviour, not tuned):
+- **Classes:** CHEAP on 61 dates, FAIR on 74, RICH on 22. The tier is BUY on 155 (WATCHLIST on 2010-01-08, ACCUMULATE on
+  2010-11-26). All eight robustness variants agree on 126 dates, three to seven on 31.
+- **2010, on FY08's $0.26 (47 dates to the Q4 FY10 print).** The stock traded at 66-104x. With FY2008 alone in the history, the
+  bounds rule sets BULL to BASE, the guide's growth on the year-ago quarter:
+  - +14.6%/yr in January and February, so the 15% hurdle asks for more than BASE at the window's multiples: RICH on 6 of the 7
+    dates to 2010-02-19 (adjusted gap -0.50 to -1.35; CHEAP on 2010-02-05 at -0.39), Ratio B 1.38 (WATCHLIST) on 2010-01-08;
+  - +49.6% to +57.1%/yr from the Q1 FY10 print to August, and +34.3%/yr on the Q4 FY10 guide. The comparisons are 2009's trough
+    quarters (the UNP 2009 extrapolation, in reverse).
+  - CHEAP on 41 dates (Ratio B 0.13 to 0.83, the EPP floor at 60-64x).
+- **From the Q4 FY10 print** the anchor is FY10's $1.69 (15.6-22.9x). The window's P/Es are recomputed on it (FY2010's days now on
+  its actual EPS), and the stock stays at the 59th-100th percentile of its own range.
+  - BULL at +155%/yr puts Ratio B at 0.06-0.15 (BUY).
+  - The EPP floor at 9x (the calendar-year lows of 2009-2011) puts the price 74-154% above it: FAIR on 49 of the 52 dates,
+    CHEAP on 2010-12-03 and 2010-12-10, RICH on 2011-07-01 (the conservative case at -40%).
+- **From the Q4 FY11 print** the anchor is FY11's $2.19 (12.9-17.8x). The guides turn flat, and the net buyback is negative
+  (diluted shares 219M in FY08, 252M in FY11: -4.6%/yr), so BASE is -5.8% to -1.5%/yr. When the multiple sits above its median, the
+  conservative case loses 16-24%: RICH on 15 dates (2012-02-24 to 2012-04-13, 2012-06-29, 2012-07-20 to 2012-08-24), CHEAP on 13,
+  FAIR on 24.
+- **From the Q4 FY12 print** the anchor is FY12's $2.25 (13.8-15.6x), with BULL at +71.5%/yr: CHEAP on 5 of 6 dates.
+- **The proxy composite** is 3.2-3.7 on the FY10 prints, 2.55-2.9 on FY11's and 2.0-2.3 on FY12's.
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed; no outcome consulted):
+- restarting the history after FY2009 from the FY2010 10-K (FY2008 out) would change 57 classes and 57 tiers: FAIR to RICH and
+  BUY to AVOID on most dates from 2010-12-17 to 2011-11-25, and some in 2012;
+- FY2010 at $1.58 (GAAP less the published $0.11 per-share tax benefit, a derived figure, as a test) would change 14 classes and
+  no tier;
+- BASE on the latest quarter's revenue growth instead of the guides would change 10 classes and 2 tiers;
+- the engine revision (XBULL across the gap) and leaving out the dollar-level guide of 2010-08-11 would change none.
+
+Judgement calls that could carry hindsight:
+- keeping FY2008 across the FY2009 gap (the NKE precedent; 57 classes): BULL then starts from an LBO-era $0.26;
+- FY2010 at GAAP with the discrete tax benefit (14 classes);
+- reading each sequential guide against the year-ago quarter (10 classes against the latest quarter's growth);
+- the signals, unchanged from 2009, chosen by a builder who knows these years; DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3787,8 +3885,9 @@ What the gates enforce:
   "NKE 2021-2023"). The FY2024-FY2026 10-Ks drop that phrase but say NIKE Direct competes "with digital commerce platforms" and
   keep "shifts in the ways in which consumers shop" as a risk factor, so it stays there through 2026, a judgement call
   ("NKE 2024-2026").
-  AVGO in 2009 carries none: no theme in the registry is live for an analog semiconductor maker (CLOUD from 2012-10-30, scoped to
-  on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30), so its watch list is empty ("AVGO").
+  AVGO in 2009-2012 carries none: no theme in the registry is live for an analog semiconductor maker (CLOUD from 2012-10-30, scoped
+  to on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30), and its FY2012 10-K names cloud only for its own IT service
+  providers, so its watch list is empty ("AVGO", "AVGO 2010-2012").
 
 ## Workflow
 

@@ -45,7 +45,7 @@ BUYBACK           = _cagr(SHARES_HIST[_SY[-1]], SHARES_HIST[_SY[0]], _SY[-1] - _
 FWD_MID           = sum(FWD_GUIDE) / 2 / 100                                         # forward revenue growth (guide, else latest quarter)
 _SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}" + "".join(f" ex-FY{y % 100:02d}" for y in range(_FY[0], _FY[-1]) if y not in EPS_NORM)
 _CAGR_ALL         = _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]) if len(_FY) > 1 else None
-_RUNS             = [_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:] if y - 2 in EPS_NORM]
+_RUNS             = [_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[1:] if y - 2 in EPS_NORM]   # runs whose ends are both in it
 
 # R1  scenario EPS growth, current FY -> FY+2 (per year)
 SCENARIO_CAGR = {

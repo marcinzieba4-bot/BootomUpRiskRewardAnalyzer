@@ -37,6 +37,7 @@ Output goes to staging/retrospective/AVGO until the series is added to the archi
 
 Usage
   python3 retro/build_avgo.py --weekly 2009-08-03 2009-12-31
+  python3 retro/build_avgo.py --weekly 2010-01-04 2012-12-31
   python3 retro/build_avgo.py 2009-09-04
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/AVGO/<AS_OF>
 """
@@ -58,8 +59,9 @@ FACTS = os.path.join(HERE, "facts", "AVGO.json")
 ENGINE = os.path.join(HERE, "templates", "avgo_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "AVGO")
 # the guide fields this builder has an encoding for; any other field (a number) needs its encoding decided first
+# (level_stated: a guide stated as a dollar level, read against the year-ago quarter directly, from the 8-K of 2010-08-10)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "seq_pct", "base_quarter", "base_sales_m", "level_m", "prior_label",
-              "prior_sales_m", "prior_source", "yoy_pct", "quote", "display"}
+              "prior_sales_m", "prior_source", "yoy_pct", "quote", "display", "level_stated"}
 # rule T, the engine's signal thresholds: (rule_t key, BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"revenue": (-39, -18, 4, 11), "gross_margin": (-1080, -560, -30, 1480), "opex_gap": (31, 16, 2, -18),
                      "inventory_gap": (54, 23, -8, -18), "op_margin": (-1540, -820, -100, 1630)}
@@ -120,8 +122,8 @@ def check_print(p):
 
 
 def check_guide(g):
-    lv = [round(g["base_sales_m"] * (1 + s / 100), 2) for s in g["seq_pct"]]
-    assert lv == g["level_m"], (g["doc"], lv)
+    lv = g["level_m"] if g.get("level_stated") else [round(g["base_sales_m"] * (1 + s / 100), 2) for s in g["seq_pct"]]
+    assert lv == g["level_m"] and lv[0] <= lv[1], (g["doc"], lv)
     assert [round((x / g["prior_sales_m"] - 1) * 100 + 0.0, 1) for x in lv] == g["yoy_pct"], (g["doc"], "yoy")
 
 
@@ -214,18 +216,24 @@ def build(as_of, facts, raw, spx, engine, out):
     if qg:
         g = qg[-1]
         fwd = list(g["yoy_pct"])
-        sg = lambda x: f"{x:+g}%" if x else "0%"
-        seq = sg(g["seq_pct"][0]) if g["seq_pct"][0] == g["seq_pct"][1] else f"{sg(g['seq_pct'][0])} to {sg(g['seq_pct'][1])}"
         lvl = (f"${g['level_m'][0]:,.1f}M" if g["level_m"][0] == g["level_m"][1] else
                f"${g['level_m'][0]:,.1f}M-${g['level_m'][1]:,.1f}M")
         fwd_label = f"{next_q} revenue guide ({g['doc']})"
         fwd_short, fwd_period = f"{next_q} guide YoY", next_q
-        guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']}M ('{g['quote']}'), "
-                      f"i.e. {lvl} against {g['prior_label']}'s ${g['prior_sales_m']}M: {_range(fwd)} YoY; display only: {g['display']}; "
-                      f"no fiscal-year revenue, EPS or margin guide")
+        if g.get("level_stated"):     # a dollar level: read against the year-ago quarter directly (the AAPL rule)
+            seq = f"about {lvl}"
+            guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {lvl} ('{g['quote']}') against {g['prior_label']}'s "
+                          f"${g['prior_sales_m']}M: {_range(fwd)} YoY; display only: {g['display']}; no fiscal-year revenue, EPS or margin guide")
+            cat3 = (f"(3) The {next_q} guide — {seq} ({_range(fwd)} YoY): Avago guides one quarter at a time, in revenue only")
+        else:
+            sg = lambda x: f"{x:+g}%" if x else "0%"
+            seq = sg(g["seq_pct"][0]) if g["seq_pct"][0] == g["seq_pct"][1] else f"{sg(g['seq_pct'][0])} to {sg(g['seq_pct'][1])}"
+            guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']}M ('{g['quote']}'), "
+                          f"i.e. {lvl} against {g['prior_label']}'s ${g['prior_sales_m']}M: {_range(fwd)} YoY; display only: {g['display']}; "
+                          f"no fiscal-year revenue, EPS or margin guide")
+            cat3 = (f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): Avago guides one quarter at a time, "
+                    f"in revenue only")
         guide_ids = [g["source"], g["prior_source"]]
-        cat3 = (f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): Avago guides one quarter at a time, "
-                f"in revenue only")
     else:
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide in scope)"
@@ -396,7 +404,7 @@ GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
 SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net revenue {h['prev_fy_sales_growth']:+.1f}%, gross margin {h['prev_fy_gross_margin']:.1f}%; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.0f}bp YoY)")}
-BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']:.3f}B, long-term debt ${latest['ltd_b']:.3f}B ({latest['quarter']}), {h['fcf_label']} free cash flow ${h['fcf_b']:.3f}B ({h['fcf_note']}), no dividend")}
+BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']:.3f}B, " + (f"long-term debt ${latest['ltd_b']:.3f}B" if latest['ltd_b'] else "no long-term debt") + f" ({latest['quarter']}), {h['fcf_label']} free cash flow ${h['fcf_b']:.3f}B ({h['fcf_note']}), " + (f"dividend ${dividend:.2f} a year" if dividend else "no dividend"))}
 REVENUE_TEXT    = {R(rev_text)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}
 THEME_FACTORS   = {R(factors)}

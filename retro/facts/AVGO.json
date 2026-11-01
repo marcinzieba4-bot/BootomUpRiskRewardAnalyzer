@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for AVGO retrospectives (retro/build_avgo.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Avago release of the period came after the close. Avago Technologies Limited listed on the Nasdaq Global Select Market on 2009-08-06 (its first trading day in the price data); before that it filed only as the issuer of notes (Avago Technologies Finance Pte. Ltd.: 20-F and 6-K), so the series starts at the listing and the P/E window runs from it. The builder uses the latest history vintage published by AS_OF (the IPO prospectus, then the FY2009 10-K), the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest next-quarter revenue guide for the quarter after the latest print, and events published since that vintage. Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31. Values are as reported, per share on the basis of the filing that published them. A print keeps its raw published figures ('raw', $M) and the margins, growth and gaps derived from them; the builder re-derives and checks them. 'eps_first_excluded' holds the first years left out of the history (losses); 'eps_excluded' a latest year left out (a loss). Each guide states the next quarter's revenue as growth on the quarter just reported ('seq_pct'); 'level_m' is that growth applied to the reported quarter and 'yoy_pct' the level against the same quarter a year earlier from its own release (the input); its other lines ('display') feed nothing. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for AVGO retrospectives (retro/build_avgo.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Avago release of the period came after the close. Avago Technologies Limited listed on the Nasdaq Global Select Market on 2009-08-06 (its first trading day in the price data); before that it filed only as the issuer of notes (Avago Technologies Finance Pte. Ltd.: 20-F and 6-K), so the series starts at the listing and the P/E window runs from it. The builder uses the latest history vintage published by AS_OF (the IPO prospectus, then the FY2009 10-K), the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest next-quarter revenue guide for the quarter after the latest print, and events published since that vintage. Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31. Values are as reported, per share on the basis of the filing that published them. A print keeps its raw published figures ('raw', $M) and the margins, growth and gaps derived from them; the builder re-derives and checks them. 'eps_first_excluded' holds the first years left out of the history (losses); 'eps_excluded' a latest year left out (a loss). Each guide states the next quarter's revenue as growth on the quarter just reported ('seq_pct'); 'level_m' is that growth applied to the reported quarter and 'yoy_pct' the level against the same quarter a year earlier from its own release (the input); a guide stated as a dollar level ('level_stated', the 8-K of 2010-08-10) is read against that quarter directly; its other lines ('display') feed nothing. From FY2010 the releases' balance sheets no longer carry the year-ago quarter, so a print's year-ago inventory comes from that quarter's own release ('extra_sources'). 'dividends' hold each declared quarterly rate from the first filing that states it (the first, $0.07, with the Q4 FY10 results). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "AVGO",
  "listing": {
   "first_trading_day": "2009-08-06",
@@ -76,6 +76,181 @@
    "title": "Avago Technologies Limited FY2009 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312509253349/d10k.htm",
    "supports": "selected financial data FY2005-FY2009; statements of operations FY2007-FY2009 with diluted EPS from continuing operations and diluted shares; FY2008-FY2009 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
+  },
+  "V11": {
+   "published": "2010-02-25",
+   "filed": "2010-02-24 16:25 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY10 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312510038906/dex991.htm",
+   "supports": "Q1 FY10 (quarter ended January 31, 2010) statement of operations with Q1 FY09, balance sheet (inventory, cash, long-term debt), diluted EPS and shares; the second-quarter outlook (net revenue up 6% to 9% sequentially; GAAP gross margin, operating expenses, interest and other, taxes, share count)"
+  },
+  "V12": {
+   "published": "2010-04-20",
+   "filed": "2010-04-19 16:33 ET (after the close)",
+   "title": "Avago Technologies Limited updates second quarter fiscal 2010 guidance (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312510086689/dex991.htm",
+   "supports": "second-quarter net revenue now expected up 11% to 13% sequentially (previously 6% to 9%); GAAP gross margin and operating expenses"
+  },
+  "V13": {
+   "published": "2010-05-27",
+   "filed": "2010-05-26 16:11 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY10 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312510129401/dex991.htm",
+   "supports": "Q2 FY10 (quarter ended May 2, 2010) statement of operations with Q2 FY09, balance sheet, diluted EPS and shares; the third-quarter outlook (net revenue up 4% to 7% sequentially)"
+  },
+  "V14": {
+   "published": "2010-08-11",
+   "filed": "2010-08-10 16:57 ET (after the close)",
+   "title": "Avago Technologies Limited updates third quarter fiscal 2010 guidance (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312510184909/dex991.htm",
+   "supports": "third-quarter revenue now expected to be approximately $550 million (previously up 4-7% sequentially), on preliminary results; GAAP gross margin and operating expenses"
+  },
+  "V15": {
+   "published": "2010-08-25",
+   "filed": "2010-08-24 16:38 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY10 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312510195835/dex991.htm",
+   "supports": "Q3 FY10 (quarter ended August 1, 2010) statement of operations with Q3 FY09, balance sheet, diluted EPS and shares; the fourth-quarter outlook (net revenue up 3% to 6% sequentially)"
+  },
+  "V16": {
+   "published": "2010-12-03",
+   "filed": "2010-12-02 16:25 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2010 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012310110427/f57498exv99w1.htm",
+   "supports": "Q4 FY10 (quarter ended October 31, 2010) and FY2010 statements of operations, balance sheet, diluted EPS and shares; the $28.7 million discrete tax benefit; the first interim dividend of $0.07; the first-quarter outlook (net revenue down 3% to 6% sequentially)"
+  },
+  "V17": {
+   "published": "2010-12-16",
+   "filed": "2010-12-15 17:01 ET (after the close)",
+   "title": "Avago Technologies Limited FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012310113875/f57578e10vk.htm",
+   "supports": "statements of operations FY2008-FY2010 with diluted EPS and shares; FY2009-FY2010 net revenue by target market; cash flows; the first interim dividend; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
+  },
+  "V18": {
+   "published": "2011-02-24",
+   "filed": "2011-02-23 16:14 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY11 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012311017130/f58450exv99w1.htm",
+   "supports": "Q1 FY11 (quarter ended January 30, 2011) statement of operations with Q1 FY10, balance sheet, diluted EPS and shares; the notes redemption and the first dividend payment; the second-quarter outlook (net revenue down 1% to up 2% sequentially)"
+  },
+  "V19": {
+   "published": "2011-03-10",
+   "filed": "2011-03-10 06:12 ET (before the open)",
+   "title": "Avago Technologies Limited Q1 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012311023882/f57455e10vq.htm",
+   "supports": "the interim dividend of $0.08 declared on March 9, 2011"
+  },
+  "V20": {
+   "published": "2011-05-25",
+   "filed": "2011-05-24 16:09 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY11 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012311053516/f59300exv99w1.htm",
+   "supports": "Q2 FY11 (quarter ended May 1, 2011) statement of operations with Q2 FY10, balance sheet, diluted EPS and shares; the third-quarter outlook (net revenue up 5% to 8% sequentially)"
+  },
+  "V21": {
+   "published": "2011-06-10",
+   "filed": "2011-06-09 16:03 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY11 10-Q (with exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012311057877/f58704e10vq.htm",
+   "supports": "the interim dividend of $0.09 declared on June 8, 2011; exhibit 99.1: the share repurchase program of up to 15 million shares"
+  },
+  "V22": {
+   "published": "2011-08-24",
+   "filed": "2011-08-24 06:12 ET (before the open)",
+   "title": "Avago Technologies Limited Q3 FY11 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312511229625/dex991.htm",
+   "supports": "Q3 FY11 (quarter ended July 31, 2011) statement of operations with Q3 FY10, balance sheet, diluted EPS and shares; repurchases and the dividend paid; the fourth-quarter outlook (net revenue up 2% to 5% sequentially); released after the close on August 23"
+  },
+  "V23": {
+   "published": "2011-09-09",
+   "filed": "2011-09-08 16:55 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000095012311083475/f59676e10vq.htm",
+   "supports": "the interim dividend of $0.11 declared on September 7, 2011"
+  },
+  "V24": {
+   "published": "2011-12-02",
+   "filed": "2011-12-01 16:10 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2011 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312511327488/d263802dex991.htm",
+   "supports": "Q4 FY11 (quarter ended October 30, 2011) and FY2011 statements of operations, balance sheet, diluted EPS and shares; repurchases and the dividend paid; the first-quarter outlook (net revenue down 10% to 14% sequentially)"
+  },
+  "V25": {
+   "published": "2011-12-09",
+   "filed": "2011-12-09 14:06 ET (market hours)",
+   "title": "Avago Technologies Limited announces a $0.12 interim dividend (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312511336351/d267782dex991.htm",
+   "supports": "the quarterly interim dividend of $0.12"
+  },
+  "V26": {
+   "published": "2011-12-16",
+   "filed": "2011-12-15 18:03 ET (after the close)",
+   "title": "Avago Technologies Limited FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144530511003592/avgo-103011x10k.htm",
+   "supports": "selected financial data FY2007-FY2011 with diluted EPS and shares; statements of operations FY2009-FY2011; FY2010-FY2011 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
+  },
+  "V27": {
+   "published": "2012-02-23",
+   "filed": "2012-02-22 16:09 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY12 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512072738/d304320dex991.htm",
+   "supports": "Q1 FY12 (quarter ended January 29, 2012) statement of operations with Q1 FY11, balance sheet, diluted EPS and shares; repurchases and the dividend paid; the second-quarter outlook (net revenue up 1% to 4% sequentially)"
+  },
+  "V28": {
+   "published": "2012-03-09",
+   "filed": "2012-03-08 16:05 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144530512000606/avgo-1292012x10q.htm",
+   "supports": "the interim dividend of $0.13 declared on March 7, 2012"
+  },
+  "V29": {
+   "published": "2012-05-23",
+   "filed": "2012-05-22 16:09 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY12 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512243453/d357278dex991.htm",
+   "supports": "Q2 FY12 (quarter ended April 29, 2012) statement of operations with Q2 FY11, balance sheet, diluted EPS and shares; the new repurchase program and the dividend paid; the third-quarter outlook (net revenue up 3% to 6% sequentially)"
+  },
+  "V30": {
+   "published": "2012-06-11",
+   "filed": "2012-06-08 16:02 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163412000004/avgo-4292012x10q.htm",
+   "supports": "the interim dividend of $0.15 declared on June 6, 2012"
+  },
+  "V31": {
+   "published": "2012-08-17",
+   "filed": "2012-08-16 16:11 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY12 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512359081/d397741dex991.htm",
+   "supports": "Q3 FY12 (quarter ended July 29, 2012) statement of operations with Q3 FY11, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook (net revenue up 0% to 3% sequentially)"
+  },
+  "V32": {
+   "published": "2012-08-31",
+   "filed": "2012-08-30 16:04 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163412000007/avgo-7292012x10q.htm",
+   "supports": "the interim dividend of $0.16 declared on August 29, 2012"
+  },
+  "V33": {
+   "published": "2012-11-30",
+   "filed": "2012-11-29 16:07 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2012 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512485680/d446540dex991.htm",
+   "supports": "Q4 FY12 (quarter ended October 28, 2012) and FY2012 statements of operations, balance sheet, diluted EPS and shares; the dividend paid; the Q1 FY13 outlook (net revenue down 5% to 9% sequentially)"
+  },
+  "V34": {
+   "published": "2012-12-07",
+   "filed": "2012-12-06 21:09 ET (after the close)",
+   "title": "Avago Technologies Limited prospectus supplement for a secondary offering (424B3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512494182/d449508d424b3.htm",
+   "supports": "the interim dividend of $0.17 declared on December 6, 2012"
+  },
+  "V35": {
+   "published": "2012-12-18",
+   "filed": "2012-12-17 16:31 ET (after the close)",
+   "title": "Avago Technologies Limited FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163412000010/avgo-102812x10k.htm",
+   "supports": "selected financial data FY2008-FY2012 with diluted EPS and shares; statements of operations FY2010-FY2012; FY2011-FY2012 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
   }
  },
  "history_vintages": [
@@ -244,6 +419,261 @@
     ]
    ],
    "groups_basis": "FY09 net revenue by target market (FY2009 10-K)"
+  },
+  {
+   "published": "2010-12-16",
+   "sources": [
+    "V17",
+    "V1",
+    "V2",
+    "V3",
+    "V15"
+   ],
+   "company": "Avago Technologies Limited",
+   "fy_label": "FY10",
+   "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based products', 'We offer products in four primary target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2010 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2008": "2008-11-02",
+    "2009": "2009-11-01",
+    "2010": "2010-10-31"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 22.26,
+   "prev_fy_op_margin_note": "FY10 income from operations $466M / net revenue $2,093M (FY2010 10-K)",
+   "prev_fy_pretax_margin": 19.4,
+   "prev_fy_pretax_margin_note": "FY10 income before income taxes $406M / $2,093M (FY2010 10-K)",
+   "prev_fy_gross_margin": 46.15,
+   "prev_fy_sales_growth": 41.0,
+   "tax_rate": -0.022,
+   "tax_note": "FY10 provision for (benefit from) income taxes $(9)M / income before income taxes $406M (FY2010 10-K)",
+   "fcf_b": 0.431,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $510M less purchases of property, plant and equipment $79M",
+   "prev_q_sales_pct": 51.5,
+   "prev_q_label": "Q3 FY10",
+   "prev_q_source": "V15",
+   "dividend_annual": 0.28,
+   "dividend_note": "$0.07 quarterly, the first interim dividend, declared on December 1, 2010 (FY2010 10-K)",
+   "business_line": "analog semiconductor devices for wireless communications, wired infrastructure, industrial and automotive electronics, and consumer and computing peripherals",
+   "normalization": "diluted EPS (from continuing operations; Avago has none discontinued from FY2009); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands",
+   "groups": [
+    [
+     "Wireless communications",
+     0.796,
+     28.0
+    ],
+    [
+     "Industrial and automotive electronics",
+     0.605,
+     82.2
+    ],
+    [
+     "Wired infrastructure",
+     0.509,
+     32.6
+    ],
+    [
+     "Consumer and computing peripherals",
+     0.183,
+     25.3
+    ]
+   ],
+   "groups_basis": "FY10 net revenue by target market (FY2010 10-K)"
+  },
+  {
+   "published": "2011-12-16",
+   "sources": [
+    "V26",
+    "V1",
+    "V2",
+    "V3",
+    "V22"
+   ],
+   "company": "Avago Technologies Limited",
+   "fy_label": "FY11",
+   "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based products', 'We offer products in four primary target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2011 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2009": "2009-11-01",
+    "2010": "2010-10-31",
+    "2011": "2011-10-30"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 25.0,
+   "prev_fy_op_margin_note": "FY11 income from operations $584M / net revenue $2,336M (FY2011 10-K)",
+   "prev_fy_pretax_margin": 24.02,
+   "prev_fy_pretax_margin_note": "FY11 income before income taxes $561M / $2,336M (FY2011 10-K)",
+   "prev_fy_gross_margin": 49.1,
+   "prev_fy_sales_growth": 11.6,
+   "tax_rate": 0.016,
+   "tax_note": "FY11 provision for (benefit from) income taxes $9M / income before income taxes $561M (FY2011 10-K)",
+   "fcf_b": 0.614,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $726M less purchases of property, plant and equipment $112M",
+   "prev_q_sales_pct": 9.6,
+   "prev_q_label": "Q3 FY11",
+   "prev_q_source": "V22",
+   "dividend_annual": 0.48,
+   "dividend_note": "$0.12 quarterly, the interim dividend declared on December 8, 2011 (FY2011 10-K)",
+   "business_line": "analog semiconductor devices for wireless communications, wired infrastructure, industrial and automotive electronics, and consumer and computing peripherals",
+   "normalization": "diluted EPS (from continuing operations; Avago has none discontinued from FY2009); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands",
+   "groups": [
+    [
+     "Wireless communications",
+     0.887,
+     11.4
+    ],
+    [
+     "Industrial and automotive electronics",
+     0.672,
+     11.1
+    ],
+    [
+     "Wired infrastructure",
+     0.659,
+     29.5
+    ],
+    [
+     "Consumer and computing peripherals",
+     0.118,
+     -35.5
+    ]
+   ],
+   "groups_basis": "FY11 net revenue by target market (FY2011 10-K)"
+  },
+  {
+   "published": "2012-12-18",
+   "sources": [
+    "V35",
+    "V1",
+    "V2",
+    "V3",
+    "V31"
+   ],
+   "company": "Avago Technologies Limited",
+   "fy_label": "FY12",
+   "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based products', 'We serve three primary target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2012 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2010": "2010-10-31",
+    "2011": "2011-10-30",
+    "2012": "2012-10-28"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252,
+    "2012": 250
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 24.62,
+   "prev_fy_op_margin_note": "FY12 income from operations $582M / net revenue $2,364M (FY2012 10-K)",
+   "prev_fy_pretax_margin": 24.75,
+   "prev_fy_pretax_margin_note": "FY12 income before income taxes $585M / $2,364M (FY2012 10-K)",
+   "prev_fy_gross_margin": 48.31,
+   "prev_fy_sales_growth": 1.2,
+   "tax_rate": 0.038,
+   "tax_note": "FY12 provision for (benefit from) income taxes $22M / income before income taxes $585M (FY2012 10-K)",
+   "fcf_b": 0.452,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $693M less purchases of property, plant and equipment $241M",
+   "prev_q_sales_pct": 0.5,
+   "prev_q_label": "Q3 FY12",
+   "prev_q_source": "V31",
+   "dividend_annual": 0.68,
+   "dividend_note": "$0.17 quarterly, the interim dividend declared on December 6, 2012 (FY2012 10-K)",
+   "business_line": "analog semiconductor devices for wireless communications, wired infrastructure, industrial and automotive electronics, and consumer and computing peripherals",
+   "normalization": "diluted EPS (from continuing operations; Avago has none discontinued from FY2009); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands",
+   "groups": [
+    [
+     "Wireless communications",
+     1.064,
+     20.0
+    ],
+    [
+     "Wired infrastructure",
+     0.662,
+     0.5
+    ],
+    [
+     "Industrial and automotive electronics",
+     0.518,
+     -22.9
+    ],
+    [
+     "Consumer and computing peripherals",
+     0.12,
+     1.7
+    ]
+   ],
+   "groups_basis": "FY12 net revenue by target market (FY2012 10-K)"
   }
  ],
  "prints": [
@@ -408,6 +838,651 @@
     "sales_growth": -12.7,
     "normalization_note": "FY09 from the Q4 FY09 release: a loss of $(0.20) per diluted share, excluded (it leaves the EPS history and its own days leave the P/E window)"
    }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-02-25",
+   "source": "V11",
+   "release": "Feb 24",
+   "release_time": "after the close on Feb 24: accepted 16:25 ET; public before the open of the next trading day",
+   "period_end": "2010-01-31",
+   "raw": {
+    "sales_m": 456,
+    "sales_prior_m": 368,
+    "sales_prev_q_m": 428,
+    "cogs_m": 262,
+    "cogs_prior_m": 225,
+    "rd_m": 64,
+    "rd_prior_m": 62,
+    "sga_m": 46,
+    "sga_prior_m": 40,
+    "op_income_m": 78,
+    "op_income_prior_m": 30,
+    "inventory_m": 166,
+    "inventory_prior_m": 178
+   },
+   "sales_b": 0.456,
+   "sales_pct": 23.9,
+   "seq_pct": 6.5,
+   "gross_margin": 42.54,
+   "gross_margin_bp": 368.5,
+   "op_margin": 17.11,
+   "op_margin_bp": 895.3,
+   "opex_pct": 7.8,
+   "opex_gap_pp": -16.1,
+   "inventory_b": 0.166,
+   "inventory_pct": -6.7,
+   "inventory_gap_pp": -30.7,
+   "inventory_note": "inventory $166M (January 31, 2010) vs $178M (February 1, 2009, the Q1 FY09 release)",
+   "eps_q": 0.16,
+   "eps_q_prior": 0.03,
+   "diluted_shares_m": 244,
+   "cash_b": 0.144,
+   "ltd_b": 0.23,
+   "extra_sources": [
+    "V5"
+   ],
+   "sales_note": "net revenue $456M vs $368M: 'up 24 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.16, with a $24 million loss on extinguishment of debt, vs $0.03",
+   "shares_note": "diluted shares 244M in Q1 FY10",
+   "next_print": "Q2 FY10 print",
+   "cash_return_text": "no dividend; $364 million used in December 2009 to redeem most of the notes; long-term debt $230M at January 31, 2010"
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-05-27",
+   "source": "V13",
+   "release": "May 26",
+   "release_time": "after the close on May 26: accepted 16:11 ET; public before the open of the next trading day",
+   "period_end": "2010-05-02",
+   "raw": {
+    "sales_m": 515,
+    "sales_prior_m": 325,
+    "sales_prev_q_m": 456,
+    "cogs_m": 282,
+    "cogs_prior_m": 227,
+    "rd_m": 70,
+    "rd_prior_m": 59,
+    "sga_m": 48,
+    "sga_prior_m": 42,
+    "op_income_m": 108,
+    "op_income_prior_m": -11,
+    "inventory_m": 178,
+    "inventory_prior_m": 151
+   },
+   "sales_b": 0.515,
+   "sales_pct": 58.5,
+   "seq_pct": 12.9,
+   "gross_margin": 45.24,
+   "gross_margin_bp": 1508.9,
+   "op_margin": 20.97,
+   "op_margin_bp": 2435.5,
+   "opex_pct": 16.8,
+   "opex_gap_pp": -41.6,
+   "inventory_b": 0.178,
+   "inventory_pct": 17.9,
+   "inventory_gap_pp": -40.6,
+   "inventory_note": "inventory $178M (May 2, 2010) vs $151M (May 3, 2009, the Q2 FY09 release)",
+   "eps_q": 0.37,
+   "eps_q_prior": -0.14,
+   "diluted_shares_m": 246,
+   "cash_b": 0.256,
+   "ltd_b": 0.23,
+   "extra_sources": [
+    "V6"
+   ],
+   "sales_note": "net revenue $515M vs $325M: 'up 58 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.37 vs $(0.14)",
+   "shares_note": "diluted shares 246M in Q2 FY10",
+   "next_print": "Q3 FY10 print",
+   "cash_return_text": "no dividend; long-term debt $230M at May 2, 2010"
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-08-25",
+   "source": "V15",
+   "release": "Aug 24",
+   "release_time": "after the close on Aug 24: accepted 16:38 ET; public before the open of the next trading day",
+   "period_end": "2010-08-01",
+   "raw": {
+    "sales_m": 550,
+    "sales_prior_m": 363,
+    "sales_prev_q_m": 515,
+    "cogs_m": 287,
+    "cogs_prior_m": 222,
+    "rd_m": 71,
+    "rd_prior_m": 59,
+    "sga_m": 51,
+    "sga_prior_m": 40,
+    "op_income_m": 135,
+    "op_income_prior_m": 24,
+    "inventory_m": 185,
+    "inventory_prior_m": 153
+   },
+   "sales_b": 0.55,
+   "sales_pct": 51.5,
+   "seq_pct": 6.8,
+   "gross_margin": 47.82,
+   "gross_margin_bp": 897.5,
+   "op_margin": 24.55,
+   "op_margin_bp": 1793.4,
+   "opex_pct": 23.2,
+   "opex_gap_pp": -28.3,
+   "inventory_b": 0.185,
+   "inventory_pct": 20.9,
+   "inventory_gap_pp": -30.6,
+   "inventory_note": "inventory $185M (August 1, 2010) vs $153M (August 2, 2009, the Q3 FY09 release)",
+   "eps_q": 0.5,
+   "eps_q_prior": 0.01,
+   "diluted_shares_m": 247,
+   "cash_b": 0.367,
+   "ltd_b": 0.23,
+   "extra_sources": [
+    "V7"
+   ],
+   "sales_note": "net revenue $550M vs $363M: 'up 52 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.50 vs $0.01",
+   "shares_note": "diluted shares 247M in Q3 FY10",
+   "next_print": "Q4 FY10 print",
+   "cash_return_text": "no dividend; long-term debt $230M at August 1, 2010"
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-12-03",
+   "source": "V16",
+   "release": "Dec 2",
+   "release_time": "after the close on Dec 2: accepted 16:25 ET; public before the open of the next trading day",
+   "period_end": "2010-10-31",
+   "raw": {
+    "sales_m": 572,
+    "sales_prior_m": 428,
+    "sales_prev_q_m": 550,
+    "cogs_m": 296,
+    "cogs_prior_m": 250,
+    "rd_m": 75,
+    "rd_prior_m": 65,
+    "sga_m": 51,
+    "sga_prior_m": 43,
+    "op_income_m": 145,
+    "op_income_prior_m": 5,
+    "inventory_m": 189,
+    "inventory_prior_m": 162
+   },
+   "sales_b": 0.572,
+   "sales_pct": 33.6,
+   "seq_pct": 4.0,
+   "gross_margin": 48.25,
+   "gross_margin_bp": 666.3,
+   "op_margin": 25.35,
+   "op_margin_bp": 2418.1,
+   "opex_pct": 16.7,
+   "opex_gap_pp": -17.0,
+   "inventory_b": 0.189,
+   "inventory_pct": 16.7,
+   "inventory_gap_pp": -17.0,
+   "inventory_note": "inventory $189M (October 31, 2010) vs $162M (November 1, 2009)",
+   "eps_q": 0.66,
+   "eps_q_prior": -0.09,
+   "diluted_shares_m": 248,
+   "cash_b": 0.561,
+   "ltd_b": 0.0,
+   "sales_note": "net revenue $572M vs $428M: 'up 34 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.66, with a $28.7 million discrete tax benefit ($0.11 per diluted share, the company's figure), vs $(0.09)",
+   "shares_note": "diluted shares 248M in Q4 FY10",
+   "next_print": "Q1 FY11 print",
+   "cash_return_text": "the first interim dividend, $0.07 a share, declared; no long-term debt at October 31, 2010 (the senior subordinated notes called for redemption)",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 1.69,
+    "revenue_usd_b": 2.093,
+    "diluted_shares_m": 246,
+    "op_margin": 22.26,
+    "op_margin_note": "FY10 income from operations $466M / net revenue $2,093M (Q4 FY10 release)",
+    "pretax_margin": 19.4,
+    "pretax_margin_note": "FY10 income before income taxes $406M / $2,093M (Q4 FY10 release)",
+    "gross_margin": 46.15,
+    "sales_growth": 41.0,
+    "normalization_note": "FY10 from the Q4 FY10 release: GAAP $1.69 with the $28.7M discrete tax benefit (no EPS excluding it published)"
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-02-24",
+   "source": "V18",
+   "release": "Feb 23",
+   "release_time": "after the close on Feb 23: accepted 16:14 ET; public before the open of the next trading day",
+   "period_end": "2011-01-30",
+   "raw": {
+    "sales_m": 550,
+    "sales_prior_m": 456,
+    "sales_prev_q_m": 572,
+    "cogs_m": 279,
+    "cogs_prior_m": 262,
+    "rd_m": 73,
+    "rd_prior_m": 64,
+    "sga_m": 50,
+    "sga_prior_m": 46,
+    "op_income_m": 142,
+    "op_income_prior_m": 78,
+    "inventory_m": 203,
+    "inventory_prior_m": 166
+   },
+   "sales_b": 0.55,
+   "sales_pct": 20.6,
+   "seq_pct": -3.8,
+   "gross_margin": 49.27,
+   "gross_margin_bp": 672.9,
+   "op_margin": 25.82,
+   "op_margin_bp": 871.3,
+   "opex_pct": 11.8,
+   "opex_gap_pp": -8.8,
+   "inventory_b": 0.203,
+   "inventory_pct": 22.3,
+   "inventory_gap_pp": 1.7,
+   "inventory_note": "inventory $203M (January 30, 2011) vs $166M (January 31, 2010, the Q1 FY10 release)",
+   "eps_q": 0.48,
+   "eps_q_prior": 0.16,
+   "diluted_shares_m": 250,
+   "cash_b": 0.363,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V11"
+   ],
+   "sales_note": "net revenue $550M vs $456M: 'up 21 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.48 vs $0.16",
+   "shares_note": "diluted shares 250M in Q1 FY11",
+   "next_print": "Q2 FY11 print",
+   "cash_return_text": "the first interim dividend, $0.07 a share, paid on December 30, 2010 (about $17 million); the senior subordinated debt redeemed in December 2010; no long-term debt"
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-05-25",
+   "source": "V20",
+   "release": "May 24",
+   "release_time": "after the close on May 24: accepted 16:09 ET; public before the open of the next trading day",
+   "period_end": "2011-05-01",
+   "raw": {
+    "sales_m": 560,
+    "sales_prior_m": 515,
+    "sales_prev_q_m": 550,
+    "cogs_m": 285,
+    "cogs_prior_m": 282,
+    "rd_m": 76,
+    "rd_prior_m": 70,
+    "sga_m": 55,
+    "sga_prior_m": 48,
+    "op_income_m": 138,
+    "op_income_prior_m": 108,
+    "inventory_m": 194,
+    "inventory_prior_m": 178
+   },
+   "sales_b": 0.56,
+   "sales_pct": 8.7,
+   "seq_pct": 1.8,
+   "gross_margin": 49.11,
+   "gross_margin_bp": 386.4,
+   "op_margin": 24.64,
+   "op_margin_bp": 367.2,
+   "opex_pct": 11.0,
+   "opex_gap_pp": 2.3,
+   "inventory_b": 0.194,
+   "inventory_pct": 9.0,
+   "inventory_gap_pp": 0.3,
+   "inventory_note": "inventory $194M (May 1, 2011) vs $178M (May 2, 2010, the Q2 FY10 release)",
+   "eps_q": 0.54,
+   "eps_q_prior": 0.37,
+   "diluted_shares_m": 252,
+   "cash_b": 0.596,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V13"
+   ],
+   "sales_note": "net revenue $560M vs $515M: 'up 9 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.54 vs $0.37",
+   "shares_note": "diluted shares 252M in Q2 FY11",
+   "next_print": "Q3 FY11 print",
+   "cash_return_text": "an interim dividend of $0.08 a share paid on March 30, 2011 (about $20 million); no long-term debt"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-08-24",
+   "source": "V22",
+   "release": "Aug 23",
+   "release_time": "after the close on Aug 23 (conference call at 2:00 p.m. Pacific): 8-K accepted 06:12 ET on Aug 24, before the open",
+   "period_end": "2011-07-31",
+   "raw": {
+    "sales_m": 603,
+    "sales_prior_m": 550,
+    "sales_prev_q_m": 560,
+    "cogs_m": 306,
+    "cogs_prior_m": 287,
+    "rd_m": 85,
+    "rd_prior_m": 71,
+    "sga_m": 60,
+    "sga_prior_m": 51,
+    "op_income_m": 145,
+    "op_income_prior_m": 135,
+    "inventory_m": 200,
+    "inventory_prior_m": 185
+   },
+   "sales_b": 0.603,
+   "sales_pct": 9.6,
+   "seq_pct": 7.7,
+   "gross_margin": 49.25,
+   "gross_margin_bp": 143.6,
+   "op_margin": 24.05,
+   "op_margin_bp": -49.9,
+   "opex_pct": 18.9,
+   "opex_gap_pp": 9.2,
+   "inventory_b": 0.2,
+   "inventory_pct": 8.1,
+   "inventory_gap_pp": -1.5,
+   "inventory_note": "inventory $200M (July 31, 2011) vs $185M (August 1, 2010, the Q3 FY10 release)",
+   "eps_q": 0.57,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 253,
+   "cash_b": 0.704,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V15"
+   ],
+   "sales_note": "net revenue $603M vs $550M: 'up 10 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.57 vs $0.50",
+   "shares_note": "diluted shares 253M in Q3 FY11",
+   "next_print": "Q4 FY11 print",
+   "cash_return_text": "about 1.9 million shares repurchased and cancelled for $68 million; $0.09 a share paid on June 30, 2011 (about $22 million); no long-term debt"
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-12-02",
+   "source": "V24",
+   "release": "Dec 1",
+   "release_time": "after the close on Dec 1: accepted 16:10 ET; public before the open of the next trading day",
+   "period_end": "2011-10-30",
+   "raw": {
+    "sales_m": 623,
+    "sales_prior_m": 572,
+    "sales_prev_q_m": 603,
+    "cogs_m": 319,
+    "cogs_prior_m": 296,
+    "rd_m": 83,
+    "rd_prior_m": 75,
+    "sga_m": 55,
+    "sga_prior_m": 51,
+    "op_income_m": 159,
+    "op_income_prior_m": 145,
+    "inventory_m": 194,
+    "inventory_prior_m": 189
+   },
+   "sales_b": 0.623,
+   "sales_pct": 8.9,
+   "seq_pct": 3.3,
+   "gross_margin": 48.8,
+   "gross_margin_bp": 54.4,
+   "op_margin": 25.52,
+   "op_margin_bp": 17.2,
+   "opex_pct": 9.5,
+   "opex_gap_pp": 0.6,
+   "inventory_b": 0.194,
+   "inventory_pct": 2.6,
+   "inventory_gap_pp": -6.3,
+   "inventory_note": "inventory $194M (October 30, 2011) vs $189M (October 31, 2010)",
+   "eps_q": 0.61,
+   "eps_q_prior": 0.66,
+   "diluted_shares_m": 252,
+   "cash_b": 0.829,
+   "ltd_b": 0.0,
+   "sales_note": "net revenue $623M vs $572M: 'up 9 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.61 vs $0.66 (which had the $28.7 million discrete tax benefit)",
+   "shares_note": "diluted shares 252M in Q4 FY11",
+   "next_print": "Q1 FY12 print",
+   "cash_return_text": "about 750,000 shares repurchased and cancelled for $25 million; $0.11 a share paid on September 30, 2011 (about $27 million); no long-term debt",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 2.19,
+    "revenue_usd_b": 2.336,
+    "diluted_shares_m": 252,
+    "op_margin": 25.0,
+    "op_margin_note": "FY11 income from operations $584M / net revenue $2,336M (Q4 FY11 release)",
+    "pretax_margin": 24.02,
+    "pretax_margin_note": "FY11 income before income taxes $561M / $2,336M (Q4 FY11 release)",
+    "gross_margin": 49.1,
+    "sales_growth": 11.6,
+    "normalization_note": "FY11 from the Q4 FY11 release: GAAP $2.19"
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-02-23",
+   "source": "V27",
+   "release": "Feb 22",
+   "release_time": "after the close on Feb 22: accepted 16:09 ET; public before the open of the next trading day",
+   "period_end": "2012-01-29",
+   "raw": {
+    "sales_m": 563,
+    "sales_prior_m": 550,
+    "sales_prev_q_m": 623,
+    "cogs_m": 293,
+    "cogs_prior_m": 279,
+    "rd_m": 82,
+    "rd_prior_m": 73,
+    "sga_m": 50,
+    "sga_prior_m": 50,
+    "op_income_m": 132,
+    "op_income_prior_m": 142,
+    "inventory_m": 193,
+    "inventory_prior_m": 203
+   },
+   "sales_b": 0.563,
+   "sales_pct": 2.4,
+   "seq_pct": -9.6,
+   "gross_margin": 47.96,
+   "gross_margin_bp": -131.5,
+   "op_margin": 23.45,
+   "op_margin_bp": -237.2,
+   "opex_pct": 7.3,
+   "opex_gap_pp": 5.0,
+   "inventory_b": 0.193,
+   "inventory_pct": -4.9,
+   "inventory_gap_pp": -7.3,
+   "inventory_note": "inventory $193M (January 29, 2012) vs $203M (January 30, 2011, the Q1 FY11 release)",
+   "eps_q": 0.5,
+   "eps_q_prior": 0.48,
+   "diluted_shares_m": 250,
+   "cash_b": 0.819,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V18"
+   ],
+   "sales_note": "net revenue $563M vs $550M: 'up 2 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.50 vs $0.48",
+   "shares_note": "diluted shares 250M in Q1 FY12",
+   "next_print": "Q2 FY12 print",
+   "cash_return_text": "about 2.6 million shares repurchased and cancelled for $79 million; $0.12 a share paid on December 30, 2011 (about $29 million); no long-term debt"
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-05-23",
+   "source": "V29",
+   "release": "May 22",
+   "release_time": "after the close on May 22: accepted 16:09 ET; public before the open of the next trading day",
+   "period_end": "2012-04-29",
+   "raw": {
+    "sales_m": 577,
+    "sales_prior_m": 560,
+    "sales_prev_q_m": 563,
+    "cogs_m": 299,
+    "cogs_prior_m": 285,
+    "rd_m": 84,
+    "rd_prior_m": 76,
+    "sga_m": 51,
+    "sga_prior_m": 55,
+    "op_income_m": 137,
+    "op_income_prior_m": 138,
+    "inventory_m": 218,
+    "inventory_prior_m": 194
+   },
+   "sales_b": 0.577,
+   "sales_pct": 3.0,
+   "seq_pct": 2.5,
+   "gross_margin": 48.18,
+   "gross_margin_bp": -92.7,
+   "op_margin": 23.74,
+   "op_margin_bp": -89.9,
+   "opex_pct": 3.1,
+   "opex_gap_pp": 0.0,
+   "inventory_b": 0.218,
+   "inventory_pct": 12.4,
+   "inventory_gap_pp": 9.3,
+   "inventory_note": "inventory $218M (April 29, 2012) vs $194M (May 1, 2011, the Q2 FY11 release)",
+   "eps_q": 0.54,
+   "eps_q_prior": 0.54,
+   "diluted_shares_m": 250,
+   "cash_b": 0.954,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V20"
+   ],
+   "sales_note": "net revenue $577M vs $560M: '3.0 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.54 vs $0.54",
+   "shares_note": "diluted shares 250M in Q2 FY12",
+   "next_print": "Q3 FY12 print",
+   "cash_return_text": "$0.13 a share paid on March 30, 2012 (about $32 million); $6 million of shares repurchased and cancelled; a new program for up to 15 million shares; no long-term debt"
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-08-17",
+   "source": "V31",
+   "release": "Aug 16",
+   "release_time": "after the close on Aug 16: accepted 16:11 ET; public before the open of the next trading day",
+   "period_end": "2012-07-29",
+   "raw": {
+    "sales_m": 606,
+    "sales_prior_m": 603,
+    "sales_prev_q_m": 577,
+    "cogs_m": 311,
+    "cogs_prior_m": 306,
+    "rd_m": 89,
+    "rd_prior_m": 85,
+    "sga_m": 49,
+    "sga_prior_m": 60,
+    "op_income_m": 149,
+    "op_income_prior_m": 145,
+    "inventory_m": 216,
+    "inventory_prior_m": 200
+   },
+   "sales_b": 0.606,
+   "sales_pct": 0.5,
+   "seq_pct": 5.0,
+   "gross_margin": 48.68,
+   "gross_margin_bp": -57.4,
+   "op_margin": 24.59,
+   "op_margin_bp": 54.1,
+   "opex_pct": -4.8,
+   "opex_gap_pp": -5.3,
+   "inventory_b": 0.216,
+   "inventory_pct": 8.0,
+   "inventory_gap_pp": 7.5,
+   "inventory_note": "inventory $216M (July 29, 2012) vs $200M (July 31, 2011, the Q3 FY11 release)",
+   "eps_q": 0.58,
+   "eps_q_prior": 0.57,
+   "diluted_shares_m": 250,
+   "cash_b": 0.973,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V22"
+   ],
+   "sales_note": "net revenue $606M vs $603M: '0.5 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.58 vs $0.57",
+   "shares_note": "diluted shares 250M in Q3 FY12",
+   "next_print": "Q4 FY12 print",
+   "cash_return_text": "$0.15 a share paid on June 29, 2012 (about $37 million); no long-term debt"
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-11-30",
+   "source": "V33",
+   "release": "Nov 29",
+   "release_time": "after the close on Nov 29: accepted 16:07 ET; public before the open of the next trading day",
+   "period_end": "2012-10-28",
+   "raw": {
+    "sales_m": 618,
+    "sales_prior_m": 623,
+    "sales_prev_q_m": 606,
+    "cogs_m": 319,
+    "cogs_prior_m": 319,
+    "rd_m": 80,
+    "rd_prior_m": 83,
+    "sga_m": 49,
+    "sga_prior_m": 55,
+    "op_income_m": 164,
+    "op_income_prior_m": 159,
+    "inventory_m": 194,
+    "inventory_prior_m": 194
+   },
+   "sales_b": 0.618,
+   "sales_pct": -0.8,
+   "seq_pct": 2.0,
+   "gross_margin": 48.38,
+   "gross_margin_bp": -41.4,
+   "op_margin": 26.54,
+   "op_margin_bp": 101.6,
+   "opex_pct": -6.5,
+   "opex_gap_pp": -5.7,
+   "inventory_b": 0.194,
+   "inventory_pct": 0.0,
+   "inventory_gap_pp": 0.8,
+   "inventory_note": "inventory $194M (October 28, 2012) vs $194M (October 30, 2011)",
+   "eps_q": 0.64,
+   "eps_q_prior": 0.61,
+   "diluted_shares_m": 250,
+   "cash_b": 1.084,
+   "ltd_b": 0.0,
+   "sales_note": "net revenue $618M vs $623M: 'a decrease of 1 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.64 vs $0.61",
+   "shares_note": "diluted shares 250M in Q4 FY12",
+   "next_print": "Q1 FY13 print",
+   "cash_return_text": "$0.16 a share paid on October 1, 2012 (about $39 million); no long-term debt",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 2.25,
+    "revenue_usd_b": 2.364,
+    "diluted_shares_m": 250,
+    "op_margin": 24.62,
+    "op_margin_note": "FY12 income from operations $582M / net revenue $2,364M (Q4 FY12 release)",
+    "pretax_margin": 24.75,
+    "pretax_margin_note": "FY12 income before income taxes $585M / $2,364M (Q4 FY12 release)",
+    "gross_margin": 48.31,
+    "sales_growth": 1.2,
+    "normalization_note": "FY12 from the Q4 FY12 release: GAAP $2.25"
+   }
   }
  ],
  "guides": [
@@ -488,9 +1563,423 @@
    ],
    "quote": "Net Revenue | Flat to Down 3%",
    "display": "GAAP gross margin 40.5% plus/minus 1 point; operating expenses ~$116M; interest and other $34M, including a $24 million loss on the extinguishment of debt; taxes $3M to $4M; diluted share count 243M"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-02-25",
+   "source": "V11",
+   "doc": "Q1 FY10 release",
+   "quarter": "Q2 FY10",
+   "seq_pct": [
+    6,
+    9
+   ],
+   "base_quarter": "Q1 FY10",
+   "base_sales_m": 456,
+   "level_m": [
+    483.36,
+    497.04
+   ],
+   "prior_label": "Q2 FY09",
+   "prior_sales_m": 325,
+   "prior_source": "V6",
+   "yoy_pct": [
+    48.7,
+    52.9
+   ],
+   "quote": "Net Revenue | Up 6% to 9%",
+   "display": "GAAP gross margin 43.0% plus/minus 1 point; operating expenses $122M; interest and other $8M; taxes $9M; diluted share count 244M"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-20",
+   "source": "V12",
+   "doc": "guidance update 8-K",
+   "quarter": "Q2 FY10",
+   "seq_pct": [
+    11,
+    13
+   ],
+   "base_quarter": "Q1 FY10",
+   "base_sales_m": 456,
+   "level_m": [
+    506.16,
+    515.28
+   ],
+   "prior_label": "Q2 FY09",
+   "prior_sales_m": 325,
+   "prior_source": "V6",
+   "yoy_pct": [
+    55.7,
+    58.5
+   ],
+   "quote": "now expects net revenue in the fiscal quarter ending May 2, 2010 to be up 11% to 13% sequentially from the first fiscal quarter of 2010",
+   "display": "GAAP gross margin 44.5% plus/minus 50 basis points; operating expenses $127M; the other lines of the Q1 FY10 release unchanged"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-05-27",
+   "source": "V13",
+   "doc": "Q2 FY10 release",
+   "quarter": "Q3 FY10",
+   "seq_pct": [
+    4,
+    7
+   ],
+   "base_quarter": "Q2 FY10",
+   "base_sales_m": 515,
+   "level_m": [
+    535.6,
+    551.05
+   ],
+   "prior_label": "Q3 FY09",
+   "prior_sales_m": 363,
+   "prior_source": "V7",
+   "yoy_pct": [
+    47.5,
+    51.8
+   ],
+   "quote": "Net Revenue | Up 4% to 7%",
+   "display": "GAAP gross margin 46.0% plus/minus 1 point; operating expenses $127M; interest and other $8M; taxes $4M; diluted share count 247M"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-08-11",
+   "source": "V14",
+   "doc": "guidance update 8-K",
+   "quarter": "Q3 FY10",
+   "level_stated": true,
+   "level_m": [
+    550,
+    550
+   ],
+   "prior_label": "Q3 FY09",
+   "prior_sales_m": 363,
+   "prior_source": "V7",
+   "yoy_pct": [
+    51.5,
+    51.5
+   ],
+   "quote": "it now expects revenue in the third fiscal quarter ended August 1, 2010 to be approximately $550 million",
+   "display": "on preliminary results for the quarter just ended; GAAP gross margin about 48%; operating expenses about $128M"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-08-25",
+   "source": "V15",
+   "doc": "Q3 FY10 release",
+   "quarter": "Q4 FY10",
+   "seq_pct": [
+    3,
+    6
+   ],
+   "base_quarter": "Q3 FY10",
+   "base_sales_m": 550,
+   "level_m": [
+    566.5,
+    583.0
+   ],
+   "prior_label": "Q4 FY09",
+   "prior_sales_m": 428,
+   "prior_source": "V9",
+   "yoy_pct": [
+    32.4,
+    36.2
+   ],
+   "quote": "Net Revenue | Up 3% to 6%",
+   "display": "GAAP gross margin 48.0% plus/minus 1 point; operating expenses $131M; interest and other $8M; taxes $5M; diluted share count 248M"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-12-03",
+   "source": "V16",
+   "doc": "Q4 FY10 release",
+   "quarter": "Q1 FY11",
+   "seq_pct": [
+    -6,
+    -3
+   ],
+   "base_quarter": "Q4 FY10",
+   "base_sales_m": 572,
+   "level_m": [
+    537.68,
+    554.84
+   ],
+   "prior_label": "Q1 FY10",
+   "prior_sales_m": 456,
+   "prior_source": "V11",
+   "yoy_pct": [
+    17.9,
+    21.7
+   ],
+   "quote": "Net Revenue | Down 3% to 6%",
+   "display": "GAAP gross margin 47.5% plus/minus 75 basis points; operating expenses $132M; interest and other $22M, mostly the premium and costs of redeeming the notes; taxes $4M; diluted share count 252M"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-02-24",
+   "source": "V18",
+   "doc": "Q1 FY11 release",
+   "quarter": "Q2 FY11",
+   "seq_pct": [
+    -1,
+    2
+   ],
+   "base_quarter": "Q1 FY11",
+   "base_sales_m": 550,
+   "level_m": [
+    544.5,
+    561.0
+   ],
+   "prior_label": "Q2 FY10",
+   "prior_sales_m": 515,
+   "prior_source": "V13",
+   "yoy_pct": [
+    5.7,
+    8.9
+   ],
+   "quote": "Net Revenue | Down 1% to Up 2%",
+   "display": "GAAP gross margin 49.3% plus/minus 1 point; operating expenses $137M; interest and other ($1M); taxes $4M; diluted share count 253M"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-05-25",
+   "source": "V20",
+   "doc": "Q2 FY11 release",
+   "quarter": "Q3 FY11",
+   "seq_pct": [
+    5,
+    8
+   ],
+   "base_quarter": "Q2 FY11",
+   "base_sales_m": 560,
+   "level_m": [
+    588.0,
+    604.8
+   ],
+   "prior_label": "Q3 FY10",
+   "prior_sales_m": 550,
+   "prior_source": "V15",
+   "yoy_pct": [
+    6.9,
+    10.0
+   ],
+   "quote": "Net Revenue | Up 5% to 8%",
+   "display": "GAAP gross margin 49.25% plus/minus 75 basis points; operating expenses $151M; interest and other $0M; taxes $4M; diluted share count 253M"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-08-24",
+   "source": "V22",
+   "doc": "Q3 FY11 release",
+   "quarter": "Q4 FY11",
+   "seq_pct": [
+    2,
+    5
+   ],
+   "base_quarter": "Q3 FY11",
+   "base_sales_m": 603,
+   "level_m": [
+    615.06,
+    633.15
+   ],
+   "prior_label": "Q4 FY10",
+   "prior_sales_m": 572,
+   "prior_source": "V16",
+   "yoy_pct": [
+    7.5,
+    10.7
+   ],
+   "quote": "Sequential Change in Net Revenue | Up 2% to 5%",
+   "display": "GAAP gross margin 49.0% plus/minus 75 basis points; operating expenses $151M; interest and other $0M; taxes $4M; diluted share count 253M"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-12-02",
+   "source": "V24",
+   "doc": "Q4 FY11 release",
+   "quarter": "Q1 FY12",
+   "seq_pct": [
+    -14,
+    -10
+   ],
+   "base_quarter": "Q4 FY11",
+   "base_sales_m": 623,
+   "level_m": [
+    535.78,
+    560.7
+   ],
+   "prior_label": "Q1 FY11",
+   "prior_sales_m": 550,
+   "prior_source": "V18",
+   "yoy_pct": [
+    -2.6,
+    1.9
+   ],
+   "quote": "Sequential Change in Net Revenue | Down 10% to 14%",
+   "display": "GAAP gross margin 47.5% plus/minus 1 point; operating expenses $142M; interest and other -$1M; taxes $4M; diluted share count 251M"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-02-23",
+   "source": "V27",
+   "doc": "Q1 FY12 release",
+   "quarter": "Q2 FY12",
+   "seq_pct": [
+    1,
+    4
+   ],
+   "base_quarter": "Q1 FY12",
+   "base_sales_m": 563,
+   "level_m": [
+    568.63,
+    585.52
+   ],
+   "prior_label": "Q2 FY11",
+   "prior_sales_m": 560,
+   "prior_source": "V20",
+   "yoy_pct": [
+    1.5,
+    4.6
+   ],
+   "quote": "Sequential Change in Net Revenue | Up 1% to 4%",
+   "display": "GAAP gross margin 47.5% plus/minus 75 basis points; operating expenses $142M; interest and other $0M; taxes $7M; diluted share count 251M"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-05-23",
+   "source": "V29",
+   "doc": "Q2 FY12 release",
+   "quarter": "Q3 FY12",
+   "seq_pct": [
+    3,
+    6
+   ],
+   "base_quarter": "Q2 FY12",
+   "base_sales_m": 577,
+   "level_m": [
+    594.31,
+    611.62
+   ],
+   "prior_label": "Q3 FY11",
+   "prior_sales_m": 603,
+   "prior_source": "V22",
+   "yoy_pct": [
+    -1.4,
+    1.4
+   ],
+   "quote": "Sequential Change in Net Revenue | Up 3% to 6%",
+   "display": "GAAP gross margin 48.50% plus/minus 75 basis points; operating expenses $152M; interest and other $1M; taxes $7M; diluted share count 251M"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-08-17",
+   "source": "V31",
+   "doc": "Q3 FY12 release",
+   "quarter": "Q4 FY12",
+   "seq_pct": [
+    0,
+    3
+   ],
+   "base_quarter": "Q3 FY12",
+   "base_sales_m": 606,
+   "level_m": [
+    606.0,
+    624.18
+   ],
+   "prior_label": "Q4 FY11",
+   "prior_sales_m": 623,
+   "prior_source": "V24",
+   "yoy_pct": [
+    -2.7,
+    0.2
+   ],
+   "quote": "Sequential Change in Net Revenue | Up 0% to 3%",
+   "display": "GAAP gross margin 48.50% plus/minus 75 basis points; operating expenses $143M; interest and other $1M; taxes $8M; diluted share count 251M"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-11-30",
+   "source": "V33",
+   "doc": "Q4 FY12 release",
+   "quarter": "Q1 FY13",
+   "seq_pct": [
+    -9,
+    -5
+   ],
+   "base_quarter": "Q4 FY12",
+   "base_sales_m": 618,
+   "level_m": [
+    562.38,
+    587.1
+   ],
+   "prior_label": "Q1 FY12",
+   "prior_sales_m": 563,
+   "prior_source": "V27",
+   "yoy_pct": [
+    -0.1,
+    4.3
+   ],
+   "quote": "Sequential Change in Net Revenue | Down 5% to 9%",
+   "display": "GAAP gross margin 47.5% plus/minus 1 point; operating expenses $151M; interest and other $1M; taxes $7M; diluted share count 251M"
   }
  ],
- "dividends": [],
+ "dividends": [
+  {
+   "published": "2010-12-03",
+   "source": "V16",
+   "quarterly": 0.07,
+   "note": "$0.07 quarterly, the first interim dividend, declared with the Q4 FY10 results"
+  },
+  {
+   "published": "2011-03-10",
+   "source": "V19",
+   "quarterly": 0.08,
+   "note": "$0.08 quarterly, declared on March 9, 2011 (Q1 FY11 10-Q)"
+  },
+  {
+   "published": "2011-06-10",
+   "source": "V21",
+   "quarterly": 0.09,
+   "note": "$0.09 quarterly, declared on June 8, 2011 (Q2 FY11 10-Q)"
+  },
+  {
+   "published": "2011-09-09",
+   "source": "V23",
+   "quarterly": 0.11,
+   "note": "$0.11 quarterly, declared on September 7, 2011 (Q3 FY11 10-Q)"
+  },
+  {
+   "published": "2011-12-09",
+   "source": "V25",
+   "quarterly": 0.12,
+   "note": "$0.12 quarterly, declared on December 8, 2011 (8-K)"
+  },
+  {
+   "published": "2012-03-09",
+   "source": "V28",
+   "quarterly": 0.13,
+   "note": "$0.13 quarterly, declared on March 7, 2012 (Q1 FY12 10-Q)"
+  },
+  {
+   "published": "2012-06-11",
+   "source": "V30",
+   "quarterly": 0.15,
+   "note": "$0.15 quarterly, declared on June 6, 2012 (Q2 FY12 10-Q)"
+  },
+  {
+   "published": "2012-08-31",
+   "source": "V32",
+   "quarterly": 0.16,
+   "note": "$0.16 quarterly, declared on August 29, 2012 (Q3 FY12 10-Q)"
+  },
+  {
+   "published": "2012-12-07",
+   "source": "V34",
+   "quarterly": 0.17,
+   "note": "$0.17 quarterly, declared on December 6, 2012 (secondary offering prospectus)"
+  }
+ ],
  "events": [],
  "company_names": [],
  "splits": [],
