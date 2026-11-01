@@ -751,6 +751,16 @@
     "note": "NIKE's strategy announced with its Q4 FY20 results"
    },
    {
+    "term": "Broadcom Limited",
+    "first_seen": "2015-05-28",
+    "note": "the name Avago Technologies announced for the company combined with Broadcom Corporation (Broadcom Corporation's 425 filings of that day); a few earlier fund holdings lists (2002) misname Broadcom Corporation so, and an analysis citing one whitelists it via LINT_ALLOW"
+   },
+   {
+    "term": "Broadcom Inc.",
+    "first_seen": "2017-11-09",
+    "note": "first EDGAR full-text hit, a third-party 10-Q; the company's own first use is the redomiciliation S-4 of 2018-02-06"
+   },
+   {
     "term": "GitHub Copilot",
     "first_seen": "2021-06-29"
    },

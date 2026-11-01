@@ -91,6 +91,14 @@ Fallbacks for facts a company did not publish (decided before any outcome of the
   years, XBULL over two-year runs whose ends are both in it, BULL from the first year to the last); and the rollover rule's last
   full year is the last year in the history. Example: NKE FY2018, whose Tax Act charges ($1,875M and $158M) exceeded the year's
   $1,933M net income.
+- **A listing inside the window** (added 2026-11-01 for AVGO; no earlier output changes, so still r2): a stock's own P/E exists
+  only from its first trading day, so the window runs from the listing, up to ten years, and its label counts trading days below
+  a year ("22-trading-day"). Example: AVGO, listed 2009-08-06.
+- **A history too short to measure a rule** (added 2026-11-01 for AVGO; no earlier output changes, so still r2): the rule's own
+  bound stands. No EPS change between two years in the history: BEAR is the 0% cap. No EPS CAGR: BULL is BASE's rate (its "at
+  least BASE" floor). No two-year run: XBULL is BULL's rate. One diluted share count: no net buyback. No revenue change: the
+  growth factor is 0 and the segment bridge's bull is flat. Rule T takes the annual values the filings report, however few
+  (at least two). Example: AVGO in 2009, whose history is FY08 alone (FY06, FY07 and FY09 were losses).
 
 Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output changes, so still r2):
 
@@ -3547,6 +3555,174 @@ Judgement calls that could carry hindsight:
 - ECOMMERCE kept on the watch list on the FY2024-FY2026 wording (no class moves);
 - the signals, chosen by a builder who knows how 2024-2026 went; DURABLE rather than CYCLICAL (the class label only).
 
+## AVGO (Avago Technologies): the sixth ticker, in staging, from its 2009 listing
+
+The AVGO series is built apart from ACN, UNP, LOW, AAPL and NKE and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/AVGO.json`), builder (`retro/build_avgo.py`) and engine (`retro/templates/avgo_engine.py.tmpl`, the NKE engine with
+analog semiconductor signals and the two rules below for a new listing). The method is still r2. No ACN, UNP, LOW, AAPL or NKE fact,
+parameter, outcome or finding enters an AVGO model, and neither do the repository's live `avgo_signal_model.py`,
+`avgo_proxy_model.py` and `avgo_tracker.py` (2026 analyses). Outputs go to `staging/retrospective/AVGO/`, beside the others, with the
+same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_avgo.py --weekly 2009-08-03 2009-12-31                  # 22 dates, 2009-08-07 .. 2009-12-31
+for d in staging/retrospective/AVGO/2009-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series AVGO
+python3 retro/tools/firewall.py 2009-10-01 AVGO
+```
+
+**Why it starts in August 2009.** The owner asked for 2008, as for the other tickers. AVGO did not trade in 2008: Avago
+Technologies was owned by its sponsors (KKR and Silver Lake) from its purchase of Agilent's Semiconductor Products Group on
+2005-12-01 until its IPO, and filed with the SEC only as the issuer of notes (Avago Technologies Finance Pte. Ltd., a foreign
+private issuer: 20-F and 6-K). It first filed to register its shares on 2008-08-21 (S-1), and the shares first traded on the
+Nasdaq Global Select Market on 2009-08-06, the first day of Yahoo's AVGO series. Method r2 needs a closing price and the stock's own
+P/E on every date, so no 2008 date can be built. Broadcom Corporation (BRCM), which traded in 2008, is another company; choosing it
+because Avago took its name in 2016 would itself use hindsight, and Yahoo no longer serves its prices. On 2026-11-01 the owner chose
+to start at the listing, with rules for a short history fixed before any outcome was computed.
+
+Every 8-K of Avago Technologies Limited to the end of 2009 was read in full, and its prospectus, 10-Q and 10-K for the history,
+the prints and forward-looking statements; for the time before the listing, the finance subsidiary's results 6-Ks from Q3 FY08 to
+Q2 FY09, its other 2009 6-Ks, its FY2007 and FY2008 20-Fs (with the 20-F/As) and its January 2007 exchange-offer prospectus. All
+were read directly, with no delegated transcription. 121 strings were checked with `verbatim.py` against their own filings, and each source's date comes from
+EDGAR's acceptance time. Decided on 2026-11-01, before any AVGO model was built or any AVGO outcome computed:
+
+- **Fiscal calendar.** Avago's fiscal year ended on October 31 to FY2007 and "commencing with the 2008 fiscal year, is the Sunday that
+  is the closest to October 31" (prospectus): FY2008 ended 2008-11-02, FY2009 2009-11-01. The builder maps each day by that rule and
+  checks it against the year-ends the vintages state.
+- **Prices on the as-of share basis** (the UNP rule). Yahoo's series is adjusted for the 2024 10-for-1 split, so 2009 prices are
+  Yahoo's times 10: $16.43 on 2009-08-07 (the IPO priced at $15.00). No split restates a 2009 fact.
+- **Every release came after the close.** The Q3 FY09 release (8-K accepted 2009-09-03 16:12 ET) and the Q4 FY09 release (2009-12-03
+  16:07 ET) are dated the next trading day, a Friday each time, the week's last trading day: 2009-09-04 and 2009-12-04 carry the print,
+  public before the open (the AAPL 2011 and NKE Good Friday rule). The guidance update 8-K (2009-10-14 17:30 ET) is dated 2009-10-15.
+  The Q2 FY09 release came from the finance subsidiary (6-K, 2009-06-04 16:06 ET, dated 2009-06-05); the prospectus was accepted on
+  2009-08-06 at 06:42 ET, before the open of the first trading day.
+- **History: two vintages.** The prospectus (2009-08-06) gives FY2004-FY2008, FY2004-FY2005 being the Predecessor (Agilent's
+  Semiconductor Products Group, a segment with no per-share figures), and the FY2009 10-K (accepted 2009-12-15 17:28 ET, dated
+  2009-12-16) gives FY2005-FY2009. Each year comes from the latest filing that reports it. The Q4 FY09 print extends the prospectus
+  history with FY2009 from 2009-12-04 to the 10-K.
+- **EPS** is diluted EPS from continuing operations (the UNP and LOW rule): FY08 $0.26 (net $0.38 with the discontinued operations'
+  earn-outs).
+  - **Three loss years are excluded** (the ACN FY02 and AAPL FY2001 rule: a loss with no published adjusted figure). FY2006 lost
+    $(1.07) per diluted share (eleven months after the acquisition), FY2007 $(1.03) (the $158M asset impairment and $51M of
+    restructuring) and FY2009 $(0.20) (the $54M advisory agreement termination fee paid to the sponsors on the IPO). The first two
+    are the first years, so the history starts with FY2008. FY2009 is the latest year: it leaves the EPS history, its revenue and
+    shares stay, and its own days leave the P/E window (the NKE FY2018 rule). The history is FY2008 alone all year.
+  - **The company's non-GAAP EPS stays out.** From the Q3 FY09 release Avago publishes non-GAAP EPS (FY2008 $0.81 and FY2009
+    $0.66, first in the Q4 FY09 release). It removes amortization of acquisition-related intangibles and share-based compensation,
+    which recur, as well as restructuring and the sponsor fee, so it is not a figure excluding a one-off (the NKE FY2007 and AAPL
+    rule), and GAAP stands. No figure excluding only the sponsor fee was published.
+  - **FY2008 is kept.** Its listed items, $12M of restructuring and a $10M loss on extinguishing debt, are under its $57M income
+    from continuing operations (the AAPL FY2003 test).
+- **The listing rule** (method r2, "A listing inside the window"): the P/E window runs from 2009-08-06, from 2 trading days on the
+  first date to 80 on 2009-11-27; from the Q4 FY09 print FY2009's own days leave it, so it restarts on 2009-11-02 (24 to 42 trading
+  days, labelled "ex-FY09").
+- **The bounds rule** (method r2, "A history too short to measure a rule"): with FY2008 alone there is no EPS change, CAGR or
+  two-year run, so BEAR is flat EPS (the 0% cap), BULL and XBULL take BASE's rate, the net buyback is 0 (FY2008 and FY2009 both had
+  219M diluted shares), and the growth factor is 0 until FY2009's revenue makes a revenue change (from 2009-12-04).
+- **Current-FY EPS:** no release, 10-Q or 10-K of the period gives a fiscal-year EPS guide, so FY08's $0.26 stands all year (the
+  rollover rule; with FY2009 excluded, FY2008 is the last full year in the history).
+- **Avago guides one quarter at a time, in revenue only.** Each release from the Q3 FY09 release guides the next quarter's revenue
+  as growth on the quarter just reported. Method r2's input is the next-quarter revenue guide as growth on the same quarter a year
+  earlier, so the guide is read as a dollar level on the reported quarter and then against the year-ago quarter from its own release
+  (the AAPL dollar-level rule), rounded to 0.1:
+  - Q4 FY09: "Projected revenue growth of 7 percent to 10 percent above the third quarter" on Q3's $363M, i.e. $388.4M-$399.3M
+    against Q4 FY08's $447M (its own 6-K): -13.1% to -10.7%;
+  - the 8-K of 2009-10-14, "now expects fourth fiscal quarter revenue to be up 15% from the third quarter": $417.4M, -6.6%;
+  - Q1 FY10: "Flat to Down 3%" on Q4's $428M against Q1 FY09's $368M (its own 6-K): +12.8% to +16.3%.
+  - Before the first guide (2009-08-07 to 2009-08-28) no revenue guide is in scope (the finance subsidiary's releases gave no
+    outlook), so BASE takes the latest quarter's revenue growth, Q2 FY09's -20.9% (the UNP rule).
+  - The outlook tables' other lines (GAAP gross margin, operating expenses, interest, taxes, diluted share count) are display only
+    (the UNP 2008 rule for a quarter's figures; the AAPL rule for gross margin).
+- **No fiscal-year margin guide**, so no margin step; the margin signal takes the latest quarter's operating-margin change.
+- **No dividend:** "We currently do not plan to declare dividends on our ordinary shares in the foreseeable future" (prospectus).
+- **Signals.** Six, with ACN's weights: net revenue growth (0.20, the release's headline), GAAP gross margin change (0.20), growth of
+  R&D and SG&A less net revenue growth (0.15, lower is better: the "highly variable, low-cost operating model" the prospectus
+  describes), inventory growth less net revenue growth (0.15, lower is better: the distributor and inventory cycle of 2008-2009), the
+  operating-margin change (0.15; the guided step, else the latest quarter) and the theme slot at 2/4. Values are the latest release's,
+  derived from its income statement and balance sheets, which carry the year-ago quarter; the fact sheet keeps the raw figures and the
+  builder re-derives each value.
+- **Thresholds by rule T over the years the filings report** (method r2, the bounds rule): FY2005-FY2008 for four signals and
+  FY2006-FY2008 for the inventory gap, not ten years. Each change comes from the latest filing published by 2009-08-07 that reports
+  both years: the prospectus for the statement of operations (FY2004-FY2005 the Predecessor; FY2006 the company's published combined
+  year, one Predecessor month and eleven Company months, $1,513M), and for year-end inventories the prospectus (FY2008), the FY2007 20-F
+  (FY2007) and the exchange-offer prospectus of 2007-01-09 (FY2006, with revenue on that filing's basis). GAAP as reported: no filing
+  publishes gross or operating margin excluding only the FY2007 impairment, and FY2004-FY2005 keep the Camera Module Business sold in
+  2005. The values are in the fact sheet (`rule_t`); the builder recomputes the thresholds from them and refuses to build if the
+  engine's differ.
+
+  | Signal | Annual values | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | net revenue growth | FY05-FY08: -17.7, 7.3, 0.9, 11.3 % | -39 / -18 / 4 / 11 % |
+  | gross margin change | 353.3, -412.5, -557.3, 1484.5 bp | -1080 / -560 / -30 / 1480 bp |
+  | opex growth less revenue | 16.4, -0.4, -17.8, 4.6 pp | 31 / 16 / 2 / -18 pp |
+  | inventory less revenue | FY06-FY08: -7.9, -18.1, 23.0 pp | 54 / 23 / -8 / -18 pp |
+  | operating margin change | -288.7, -822.9, 85.7, 1629.4 bp | -1540 / -820 / -100 / 1630 bp |
+
+- **Durability.** DURABLE, risk 2, as for the other five. The "why" is the prospectus's own words (the FY2009 10-K's from 2009-12-16):
+  "a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based
+  products", about 6,500 products (7,000) "in four primary target markets", "a primarily outsourced manufacturing business model",
+  "The global semiconductor market is highly competitive", and "We operate in the highly cyclical semiconductor industry, which is
+  subject to significant downturns". No disruption theme in `taxonomy_eras.json` is live for an analog semiconductor maker in 2009
+  (CLOUD from 2012-10-30, scoped to on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30), so the watch list is empty and the
+  builder refuses events until a theme encoding is decided.
+- **Segment bridge and EPS check** (display only): the vintage's four target markets (FY2008, then FY2009) with each one's growth;
+  the EPS check runs on the pre-tax margin, which carries the interest on the notes (material for this company: $86M in FY2008).
+- **Volatility and beta** come from the daily returns since the listing; with fewer than two (2009-08-07) they read n/a.
+- **Adds nothing:** the 8-Ks of 2009-08-14 (the IPO's closing: 21,500,000 new shares at $15.00, the articles), 2009-09-18, 2009-10-02
+  and 2009-10-28 (the debt tender offer and the redemption of the remaining senior and floating rate notes), 2009-09-24 and 2009-12-07
+  (an officer, the board, bonuses, the code of ethics); the finance subsidiary's 6-Ks on officers and directors (2009-01-07, 2009-01-21,
+  2009-04-10) and workforce reductions (2009-01-09, 2009-05-15); the 10-Q and 10-K beyond their financial statements (restructuring
+  cost estimates only); the 20-F/As of 2008-02-27 and 2009-06-16 (directors, shareholders and exhibits). None changes a guided
+  number.
+- **Anachronism list:** "Broadcom Limited" (2015-05-28, the name announced for the company combined with Broadcom Corporation) and
+  "Broadcom Inc." (2017-11-09) join `taxonomy_eras.json`. No existing model of any ticker contains them, so no output changes.
+
+Controls: altering one value of each print, guide and vintage, the Q4 print's FY2009 revenue and the listing changes no date before
+its publication and changes the first weekly date on or after it (10 of 10). Rebuilding the 2008 dates of ACN and the 2008-2009
+dates of UNP, LOW, AAPL and NKE changes nothing.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on all 22 dates; tier AVOID on 15, BUY on 6, ACCUMULATE on 1.** Robustness agrees on every date except four in December
+  (six or seven of eight variants RICH).
+- **The multiple is measured against itself.** On FY08's $0.26 the stock traded at 57.7-71.0x. With one EPS anchor for every day of a
+  window shorter than a fiscal year, every P/E in it scales together: the scenario prices, the EPP gap and the class do not depend on
+  the EPS level (the company's non-GAAP $0.81 would change no class on the December dates). What moves them is the window's own range
+  and the growth inputs.
+- **To 2009-11-27 BASE growth is negative** (-20.9%, -11.9%, -6.6%/yr) and the bounds rule sets BULL and XBULL to it while BEAR stays
+  flat, so the BEAR price sits above the BULL price (as LOW's did in 2008). Ratio B is infinite (no upside even in the bull case) on
+  15 dates, and the class is RICH.
+- **A flat expected-price curve.** With every scenario price below the hurdle price, the market composite is the one with the highest
+  expected price, and BEAR and XBULL are within a few cents: it reads 1.24 to 2009-10-23 and 3.68-3.93 after, so the adjusted gap turns
+  from +1.18 to +1.36 into -1.17 to -1.33 on a price move from $16.05 to $15.00. Ratio B is negative (-2.00) on 2009-10-30, when the
+  price fell below the BEAR price, and 0.00 on 2009-11-06: BUY on both, RICH on both.
+- **From the Q4 FY09 print the guide turns positive:** the Q1 FY10 range is +12.8% to +16.3% on the year-ago quarter, so BASE, BULL
+  and XBULL are +14.6%/yr and Ratio B falls to 0.24-0.84 (BUY, then ACCUMULATE on 2009-12-31). The 15% hurdle still asks for more than
+  BASE's rate at the window's multiples, so the adjusted gap is -1.21 to -1.48 and the class stays RICH.
+- **The proxy composite** is 1.45 on the Q2 FY09 print (revenue -20.9%, gross margin -853bp and operating margin -1,336bp all at
+  BEAR) and 2.35 from the Q3 FY09 print (gross margin and the opex gap at BULL). The Q4 FY09 operating-margin change, -845bp, scores
+  BEAR because the $54M sponsor fee sits in operating expenses; the inventory gap moves to BULL.
+- **The EPP floor** follows the lowest P/E since the listing (62x, then 60x, 57x and 55x) and the price stays 1-28% above it.
+
+How far each call moves the classes (the 22 dates rebuilt with one encoding changed; no outcome consulted):
+- FY08 at net EPS $0.38 instead of $0.26 from continuing operations would change 1 class (2009-10-30, RICH to CHEAP) and 1 tier
+  (2009-11-06, BUY to AVOID), through rounding at the two knife-edge dates;
+- the company's non-GAAP FY08 EPS of $0.81 (on the 5 dates after its first publication) would change nothing;
+- BASE on the latest quarter's revenue growth instead of the sequential guide read against the year-ago quarter would change no
+  class and 7 tiers (BUY or ACCUMULATE to AVOID from 2009-10-30);
+- BEAR bounded by BASE where no EPS change is measurable would change no class and 2 tiers (2009-10-30 and 2009-11-06, BUY to AVOID).
+
+Judgement calls that could carry hindsight:
+- starting at the listing, and the listing and bounds rules themselves (mechanical, but decided by a builder who knows what AVGO
+  became; no class moves under the alternatives tried above);
+- the signals, chosen by a builder who knows the 2009 recovery: the opex and inventory gaps (rule T then sets the thresholds
+  mechanically, from four and three annual values);
+- reading the sequential guide against the year-ago quarter (7 tiers, no class);
+- GAAP over the company's non-GAAP EPS, and excluding the three loss years (no class moves on the dates where both were public);
+- DURABLE rather than CYCLICAL, although the company calls its industry "highly cyclical" (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3611,6 +3787,8 @@ What the gates enforce:
   "NKE 2021-2023"). The FY2024-FY2026 10-Ks drop that phrase but say NIKE Direct competes "with digital commerce platforms" and
   keep "shifts in the ways in which consumers shop" as a risk factor, so it stays there through 2026, a judgement call
   ("NKE 2024-2026").
+  AVGO in 2009 carries none: no theme in the registry is live for an analog semiconductor maker (CLOUD from 2012-10-30, scoped to
+  on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30), so its watch list is empty ("AVGO").
 
 ## Workflow
 

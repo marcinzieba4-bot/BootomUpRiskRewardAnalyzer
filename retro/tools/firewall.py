@@ -8,10 +8,11 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 LOW          # the LOW series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 AAPL         # the AAPL series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 NKE          # the NKE series in staging/retrospective
+    python3 retro/tools/firewall.py 2009-10-01 AVGO         # the AVGO series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
-CUTOFF that a filing after it states, the 'futures_later' rule), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -35,7 +36,7 @@ TICKER = sys.argv[2].upper() if len(sys.argv) > 2 else "ACN"
 FACTS = os.path.join(ROOT, "retro", "facts", f"{TICKER}.json")
 CACHE = [os.path.join(ROOT, "retro", ".cache", n) for n in (f"{TICKER}.json", "_GSPC.json")]
 OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP", "LOW": "staging/retrospective/LOW",
-          "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE"}[TICKER]
+          "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE", "AVGO": "staging/retrospective/AVGO"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -59,7 +60,14 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      futures_fx_note="PLANTED", gross_margin=1.0, gross_margin_bp=-999.0, pretax_margin=-50.0,
                      pretax_margin_bp=-999.0, inventory_b=99.0, inventory_pct=99.0, inventory_gap_pp=99.0, eps_q=0.01,
                      eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, next_print="PLANTED",
-                     cash_return_text="PLANTED")}[TICKER]
+                     cash_return_text="PLANTED"),
+         "AVGO": dict(quarter="Q1 FY99", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, seq_pct=-60.0,
+                      sales_note="PLANTED", gross_margin=1.0, gross_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0,
+                      opex_pct=99.0, opex_gap_pp=99.0, inventory_b=99.0, inventory_pct=99.0, inventory_gap_pp=99.0,
+                      inventory_note="PLANTED", eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", shares_note="PLANTED",
+                      diluted_shares_m=1.0, cash_b=99.0, ltd_b=99.0, next_print="PLANTED", cash_return_text="PLANTED",
+                      raw=dict(sales_m=1, sales_prior_m=99, sales_prev_q_m=99, cogs_m=1, cogs_prior_m=1, rd_m=99, rd_prior_m=1,
+                               sga_m=99, sga_prior_m=1, op_income_m=-99, op_income_prior_m=99, inventory_m=99, inventory_prior_m=1))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -68,7 +76,10 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             q_guide={"quarter": "Q4 FY99", "sales_usd_b": [0.1, 0.2], "eps": [0.1, 0.2], "prior_sales_b": 99.0,
                                      "prior_source": "A14", "prior_label": "PLANTED", "gm_pct": [1, 2], "opex_usd_b": [99.0, 99.0],
                                      "oie_usd_b": [99.0, 99.0], "tax_pct": [99.0, 99.0]}),
-               "NKE": dict(words=["PLANTED"])}.get(TICKER, {})
+               "NKE": dict(words=["PLANTED"]),
+               "AVGO": dict(quarter="Q9 FY99", seq_pct=[-50, -40], base_quarter="PLANTED", base_sales_m=1, level_m=[0.5, 0.6],
+                            prior_label="PLANTED", prior_sales_m=1, prior_source="V1", yoy_pct=[-50, -40], quote="PLANTED",
+                            display="PLANTED")}.get(TICKER, {})
 
 git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True, check=True).stdout
 if git("status", "--porcelain", "retro/facts", OUTDIR).strip():
@@ -103,6 +114,10 @@ try:
         if p0.get("futures_later", {}).get("published", cutoff) >= cutoff:     # a real one public before CUTOFF stays
             p0["futures_later"] = {"published": later, "source": p0["source"], "futures_pct": -60.0, "futures_fx_pp": -99.0,
                                    "futures_b": 0.01, "futures_note": "PLANTED", "futures_fx_note": "PLANTED"}
+    if TICKER == "AVGO":   # a later guide for every quarter guided before CUTOFF, with absurd values (the latest guide for a quarter wins)
+        for g in [g for g in f["guides"] if g["published"] < cutoff]:
+            f["guides"].append({**copy.deepcopy(g), "published": later, "doc": "PLANTED", "seq_pct": [-50, -40], "level_m": [0.5, 0.6],
+                                "yoy_pct": [-99, -98], "quote": "PLANTED", "display": "PLANTED"})
     if "capital_return" in f:      # AAPL: a capital return statement (catalyst 5)
         f["capital_return"].append({"published": later, "source": last["source"], "doc": "PLANTED", "text": "PLANTED"})
     if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF
