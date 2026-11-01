@@ -3821,6 +3821,142 @@ Judgement calls that could carry hindsight:
 - reading each sequential guide against the year-ago quarter (10 classes against the latest quarter's growth);
 - the signals, unchanged from 2009, chosen by a builder who knows these years; DURABLE rather than CYCLICAL (the class label only).
 
+### AVGO 2013-2016: LSI and Broadcom, two more excluded years, the first theme
+
+```bash
+python3 retro/build_avgo.py --weekly 2013-01-07 2016-12-31                  # 208 dates, 2013-01-11 .. 2016-12-30
+```
+
+Every 8-K and 8-K/A of 2013-2016 was checked for a guided number: Avago's, and from 2016-02-02 those of Broadcom Limited, its
+successor issuer (CIK 1649338, with the 8-K12B and 8-K12B/A). The items of each 8-K were skimmed and the headline of every exhibit
+99 listed; the earnings releases and the two guidance updates were read in full, and the deal releases, presentations and call
+scripts (CyOptics, LSI, PLX, Emulex, Broadcom Corporation, Brocade) were searched for outlooks: they state accretion only. The 10-Qs
+were searched for dividend declarations and revenue expectations, the joint proxy statement/prospectus for projections, and the
+FY2013-FY2016 10-Ks read for the history, the business wording and the risk factors. A first pass over the 8-K bodies missed one
+guidance update (2016-11-02); a sweep of every exhibit's headline found it before any 2013-2016 outcome was computed. 430 more
+strings were checked with `verbatim.py` (858 in all), each source dated by EDGAR's acceptance time. Thresholds and signals are
+unchanged. Decided on 2026-11-01, before any 2013-2016 date was built or scored:
+
+- **Four vintages:** the FY2013 10-K (accepted 2013-12-20 16:56 ET, dated 2013-12-23), FY2014 (2014-12-29 17:23 ET, dated
+  2014-12-30), FY2015 (2015-12-17 16:25 ET, dated 2015-12-18) and Broadcom Limited's FY2016 10-K (2016-12-23 08:20 ET, before the
+  open). Each year comes from the latest 10-K that reports it (FY2008 still from the FY2012 10-K).
+- **EPS: GAAP diluted EPS from continuing operations,** as since 2009: FY13 $2.19, FY14 $1.16 (net $0.99; LSI's Flash and Axxia
+  businesses are discontinued operations), FY15 $4.95 (net $4.85), FY16 $(4.57) (net $(4.86)).
+- **FY2014 excluded, a distorted year (the AAPL FY2002 test).** The items the 10-K lists for the year ($210M of inventory step-up
+  charges, $162M of restructuring and $74M of acquisition-related costs, for LSI, PLX and CyOptics: $446M) exceed its $309M income
+  from continuing operations. No EPS excluding only them was published (the non-GAAP $4.90 also removes amortization and share-based
+  compensation, which recur: the 2009 rule). Both facts are in the Q4 FY14 release, so the exclusion starts with that print
+  (2014-12-04). The NKE FY2018 rule then applies: FY2014's own days leave the P/E window ("ex-FY14"), growth is measured only
+  between years in the history, and FY13's $2.19 stands for FY15E until the Q4 FY15 print. FY2013 ($26M of such items against $552M)
+  and FY2015 ($248M against $1,391M) are kept (the AAPL FY2003 test).
+- **FY2016 excluded, a loss** (the FY2009 rule): $(4.57) per diluted share from continuing operations in the year Broadcom
+  Corporation was acquired. From the Q4 FY16 print (2016-12-09) its days leave the window and FY15's $4.95 stands for FY17E. The
+  display-only EPS check then runs on FY16's pre-tax loss margin (-8.4%) and reads a loss, as NKE's did after FY18.
+- **The anchors:** FY12's $2.25 to the Q4 FY13 print (2013-12-05), FY13's $2.19 for FY14E and then FY15E, FY15's $4.95 from the Q4
+  FY15 print (2015-12-03) for FY16E and then FY17E.
+- **Guides,** the GAAP column, read against the same quarter a year earlier from its own release (the 2009 rule):
+  - sequential: Q2 FY13 down 2% to 5% (-5.2% to -2.2%), Q3 FY13 up 6% to 9% (-1.7% to +1.1%), Q4 FY13 up 12% to 15% (+16.7% to
+    +19.8%), Q1 FY14 down 3% to 6% (+20.4% to +24.3%), Q2 FY14 down 3% to 6% (+18.6% to +22.4%), Q4 FY14 up 18% to 22% (+102.9%
+    to +109.8%), Q1 FY15 flat to up 4% (+124.3% to +133.2%), Q2 FY15 down 4% to flat (+123.9% to +133.2%);
+  - dollar levels, read directly (the AAPL rule), as ranges: Q3 FY14 $1.3B-$1.4B (+101.9% to +117.4%), Q3 FY15 $1,729M plus/minus
+    $25M (+34.3% to +38.2%), Q4 FY15 $1,838M (+14.0% to +17.2%), Q1 FY16 $1,768M (+6.6% to +9.7%), Q2 FY16 $3,533M plus/minus $75M
+    (+114.3% to +123.5%), Q3 FY16 $3,740M (+111.2% to +119.9%), Q4 FY16 $4,090M (+118.2% to +126.4%), Q1 FY17 $4,065M (+125.3% to
+    +133.8%).
+  - **The 8-K of 2016-11-02** (before the open, filed with the Brocade merger agreement) tightens the Q4 FY16 GAAP guide to
+    $4,090M-$4,165M "based on current business trends and conditions" and affirms the rest: the latest guide for a quarter wins
+    (the 2010 rule), +122.3% to +126.4% from 2016-11-04 to the Q4 FY16 print.
+  - **The acquisitions enter only through the guides and prints, as published** (the LOW 2025 rule): LSI from the Q3 FY14 guide,
+    PLX from Q4 FY14, Emulex from Q3 FY15, Broadcom Corporation from Q2 FY16. No deal filing changes a guided number:
+    "immediately accretive to non-GAAP EPS" is not a current-year figure (the UNP merger rule), and the joint proxy statement's
+    management projections were "not prepared with a view toward public disclosure".
+  - **The CyOptics 8-K of 2013-07-15** (before the open) affirms the Q3 FY13 guide and adds a non-GAAP outlook for CyOptics alone
+    from June 29 ($18M plus/minus 10%), "in addition to" the standalone guide. It is not a guide for the quarter's net revenue and
+    no total is derived from two published figures (the NKE 2008 rule): the affirmed guide stands, as a record with the same
+    numbers, and the CyOptics outlook is display only.
+  - **Q2 FY15:** the 8-K accepted 2015-05-28 at 07:24 ET (before the open, with the Broadcom announcement) carried the release
+    without its financial statements; the 8-K/A accepted at 19:20 ET carried the full release, with the GAAP gross margin guide
+    corrected from 52.75% to 49.5%. The print and the Q3 FY15 guide are dated by the 8-K/A (2015-05-29, the week's date either way).
+- **Dividends,** the latest declared rate from the first filing that states it: $0.19 (Q1 FY13 10-Q, 2013-03-15), $0.21
+  (2013-06-10), $0.23 (an 8-K before the open, 2013-09-05), $0.25 (2013-12-13), $0.27 (2014-03-06), $0.29 (Q2 FY14 10-Q,
+  2014-06-11), $0.32 (2014-09-04), $0.35 (2014-12-11), $0.38 (2015-03-05), $0.40 (2015-06-05), $0.42 (2015-09-04), $0.44
+  (2015-12-09), then with each release of 2016: $0.49, $0.50, $0.51 and $1.02 (2016-12-09).
+- **Broadcom Limited from 2016-02-02** (`company_names`, the 8-K12B accepted 08:26 ET, before the open): Pavonia Limited, renamed,
+  is the successor issuer, and the AVGO ticker continues. Diluted shares are taken as reported: FY2016's 383M includes 17M
+  restricted exchangeable partnership units (if-converted), so the net buyback over FY2008-FY2016 is -6.8%/yr.
+- **The first theme: CLOUD on the watch list from the FY2016 10-K.** Its risk factors are the first to name cloud as a risk to the
+  company's own products: "the shift to cloud-based IT solutions and services, such as hyperscale computing, may adversely affect
+  both our wired infrastructure and enterprise storage segments" (the FY2013-FY2015 10-Ks name cloud only for their own IT service
+  providers). CLOUD is live from 2012-10-30 and scoped to on-premise hardware and storage, so the ACN rule applies, as for LOW and
+  NKE: company-acknowledged, no market read. The factor pair nets to zero and the theme signal stays at 2/4, so only text changes
+  (2016-12-23 and 2016-12-30). The builder now accepts this one event kind.
+- **Business line, segments and wording** follow each 10-K: three target markets in FY2013, four segments from FY2014 (enterprise
+  storage, new with LSI, shows as "new in FY14" in the segment bridge); DURABLE, risk 2 throughout ("highly competitive", "highly
+  cyclical"). FY2016's tax rate is FY15's (a pre-tax loss: the FY09 rule).
+- **An engine revision, text only for earlier dates.** The segment bridge printed every segment's growth as a number; a segment
+  with no prior-year revenue now reads "new in FYxx, no prior-year revenue". The 179 reports and analyses of 2009-2012 rebuild
+  byte-identical; their models change only in that line. The builder prints guide and quarter dollars with thousands separators,
+  and a guide range without "about"; no earlier output changes.
+- **Adds nothing:**
+  - the deal filings (CyOptics, LSI, PLX, Emulex, Broadcom Corporation, Brocade), their 425s, DEFA14As, tender-offer filings and
+    the joint proxy statement/prospectus;
+  - Broadcom Corporation's own Q4 2015 results in the 8-K12B (item 2.02: the acquired company's, not a print of this company), and
+    the pro forma statements (8-K/A of 2014-07-08, 8-K12B/A of 2016-03-02);
+  - credit agreements and amendments, the convertible notes and their conversion, the restructuring (item 2.05) estimates, and the
+    Axxia, Flash, Endace, fiber optics and wireless IoT sales;
+  - the investor presentations of 2016-03-10 (it repeats the Q2 FY16 guide and gives a long-term non-GAAP model) and 2016-11-02
+    (Brocade; it repeats the tightened Q4 FY16 range);
+  - shelves, 13Ds, officers, board, bonuses, AGM and court-meeting votes, the code of ethics and the proxies.
+
+Controls: altering one value of each print, Q4 full-year figure, excluded-year note, guide, vintage, dividend, the event and the
+company name changes no date before its publication and changes the first weekly date on or after it (62 of 62). No fact appears
+in a model dated before its publication, and no later year appears in any model's text. The 2008 dates of ACN and the 2008-2009
+dates of UNP, LOW, AAPL and NKE rebuild unchanged. The firewall (a planted later print, vintage, guides, dividend, event and company
+name, and 10x prices after the cutoff) changes no earlier model at 13 cutoffs from 2013-01-07 to 2017-01-01.
+
+Seen in the build (method behaviour, not tuned):
+- **Classes:** CHEAP on 20 dates, FAIR on 102, RICH on 86. Tiers: BUY on 109, ACCUMULATE on 34, WATCHLIST on 21, AVOID on 44. All
+  eight robustness variants agree on 119 dates, two classes split the other 89.
+- **2013, on FY12's $2.25 (47 dates to the Q4 FY13 print).** The stock traded at 13.9-20.5x. The guides read flat to down against
+  2012 and the net buyback is -3.3%/yr (219M diluted shares in FY08, 250M in FY12), so BASE is -7.0% to -1.2%/yr until the Q4 FY13
+  guide (+15.0%). BULL runs from FY08 at +71.5%/yr. CHEAP on 20 dates, FAIR on 27, BUY throughout (Ratio B 0.08-0.35).
+- **From the Q4 FY13 print, on FY13's $2.19.** BEAR takes FY12 to FY13 (-2.7%) and BULL falls to +53.1%/yr. To 2014-05-23 the
+  price rose to 20.8-32.2x (97th-100th percentile), 74-168% above the EPP floor (12x): RICH on 20 of 25 dates.
+- **The LSI guide** (from 2014-05-30): Q3 FY14 revenue of $1.3-1.4 billion against Q3 FY13's $644M puts BASE at +106.9%/yr (BULL
+  takes BASE's rate), then +103.6% on the Q4 FY14 guide with PLX. FAIR on 20 of 27 dates to the Q4 FY14 print, the conservative
+  case +46% to +101%.
+- **From the Q4 FY14 print, with FY2014 excluded,** FY13's $2.19 anchors FY15E at 45-68x, 278-463% above the floor: RICH on all 52
+  dates to 2015-11-27. BASE is +125.5% and +125.3% on the Q1 and Q2 FY15 guides. From 2015-05-29 the Emulex-era guides (+34% to
+  +38%, then +14% to +17%) bring BASE down to +33.0% and +12.4%, under BULL's +53.1%, and the price stands above the BULL price:
+  Ratio B is infinite and the tier AVOID on 27 dates.
+- **From the Q4 FY15 print, on FY15's $4.95** (24-30x): BASE +4.7% on the Q1 FY16 guide; RICH on 7 and FAIR on 6 of 13 dates. The
+  floor is 13x from 2016-01-08.
+- **From the Q1 FY16 print,** the guides for the combined Avago and BRCM businesses (+111% to +134% on Avago's year-ago quarters) put
+  BASE at +112.1% to +122.8%/yr: FAIR and BUY on all 44 dates to 2016-12-30 (118-183% above the floor, the conservative case +87%
+  to +144%).
+- **The proxy composite** reads 2.05-2.3 in 2013, 2.2-3.05 in 2014, 3.05-3.7 in 2015 and 1.75-3.05 in 2016 (1.75-1.95 on the BRCM
+  quarters from June 2016, whose inventory step-up and operating expenses weigh on the margin, opex and inventory signals).
+
+How far each call moves the classes (the 208 dates rebuilt with one encoding changed; no outcome consulted):
+- keeping FY2014 at GAAP $1.16 instead of excluding it would change 9 classes and 35 tiers: FY14's $1.16 becomes the FY15E anchor
+  and BEAR takes FY13 to FY14 (-47.0%); RICH turns FAIR on 2015-05-08, 2015-05-15 and seven dates from 2015-12-04 to 2016-02-26,
+  and the tier moves on most dates from 2014-12-05 to 2016-02-26;
+- BASE on the latest quarter's revenue growth instead of the guides would change 46 classes and 52 tiers, mostly to RICH in
+  September-November 2013, May-November 2014 and March-May 2016, when the guides ran ahead of the quarter just reported (the Q4
+  FY13 ramp, then LSI and BRCM);
+- adding the CyOptics outlook to the affirmed Q3 FY13 guide (a derived total, +1.0% to +4.4% YoY instead of -1.7% to +1.1%) and
+  leaving out the FY2016 10-K's cloud wording would change none.
+
+Judgement calls that could carry hindsight:
+- excluding FY2014 as a distorted year (the AAPL FY2002 test on the listed acquisition items; 9 classes and 35 tiers): the
+  anchor then stays on FY13 through FY2015;
+- the GAAP basis through the acquisitions (FY14, FY16), where the company's non-GAAP EPS removes the acquisition accounting as well
+  as recurring costs;
+- reading the acquisition-swollen guides against the year-ago quarter as published (the LOW rule), which puts BASE above +100%/yr
+  on most dates from mid-2014 and from March 2016;
+- the CyOptics outlook left out of the Q3 FY13 guide (no class or tier moves either way);
+- the signals, unchanged since 2009, and DURABLE rather than CYCLICAL (the class label only); CLOUD on the watch list from the
+  FY2016 10-K (text only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -3885,9 +4021,12 @@ What the gates enforce:
   "NKE 2021-2023"). The FY2024-FY2026 10-Ks drop that phrase but say NIKE Direct competes "with digital commerce platforms" and
   keep "shifts in the ways in which consumers shop" as a risk factor, so it stays there through 2026, a judgement call
   ("NKE 2024-2026").
-  AVGO in 2009-2012 carries none: no theme in the registry is live for an analog semiconductor maker (CLOUD from 2012-10-30, scoped
-  to on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30), and its FY2012 10-K names cloud only for its own IT service
-  providers, so its watch list is empty ("AVGO", "AVGO 2010-2012").
+  AVGO in 2009-2015 carries none: no theme in the registry is live for an analog semiconductor maker (CLOUD from 2012-10-30, scoped
+  to on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30), and its FY2012-FY2015 10-Ks name cloud only for their own IT
+  service providers, so its watch list is empty ("AVGO", "AVGO 2010-2012"). From the FY2016 10-K of Broadcom Limited (2016-12-23),
+  the first whose risk factors name "the shift to cloud-based IT solutions and services, such as hyperscale computing" as a risk to
+  its wired infrastructure and enterprise storage segments, AVGO carries CLOUD on the watch list, company-acknowledged, with no
+  market read ("AVGO 2013-2016").
 
 ## Workflow
 

@@ -1,0 +1,262 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "AVGO",
+ "company": "Avago Technologies Limited",
+ "as_of": "2013-11-15",
+ "price_date": "2013-11-15",
+ "price": 44.61,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); analog semiconductor signals; the listing and short-history bounds rules (AVGO)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based products', 'We serve three primary target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2012 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "Avago: 'We are a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based products', 'We serve three primary target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2012 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price fair; Ratio B 0.32x; +65% to EPP floor; model-vs-market gap +0.03; conservative 2yr -6%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.32,
+  "ratio_b_fmt": "0.32x",
+  "epp": 27.0,
+  "epp_gap_pct": 65.2,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.05,
+  "sca": 0.1,
+  "adj_composite": 2.05,
+  "market_composite": 2.02,
+  "adj_gap": 0.03,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": -5.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.25,
+    "pe": 11.4,
+    "price": 25.65,
+    "desc": "EPS +0.0%/yr (worst year FY08-FY12 ex-FY09, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.98,
+    "pe": 14.8,
+    "price": 44.1,
+    "desc": "EPS +15.0%/yr (Q4 FY13 guide YoY + margin + buyback); P/E at its 4.0-yr ex-FY09 median"
+   },
+   "BULL": {
+    "eps": 6.62,
+    "pe": 15.8,
+    "price": 104.6,
+    "desc": "EPS +71.5%/yr (FY08-FY12 ex-FY09 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 14.62,
+    "pe": 16.8,
+    "price": 245.62,
+    "desc": "EPS +155.0%/yr (best 2-yr run FY08-FY12 ex-FY09, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.32,
+   "epp_gap_pct": 65.2,
+   "adj_gap": 0.03,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.23,
+   "epp_gap_pct": 65.2,
+   "adj_gap": 0.24,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.4,
+   "epp_gap_pct": 65.2,
+   "adj_gap": -0.07,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.29,
+   "epp_gap_pct": 65.2,
+   "adj_gap": 0.1,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 65.2,
+   "adj_gap": 0.0,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.32,
+   "epp_gap_pct": 65.2,
+   "adj_gap": 0.33,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.32,
+   "epp_gap_pct": 32.2,
+   "adj_gap": 0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.32,
+   "epp_gap_pct": 65.2,
+   "adj_gap": 0.23,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -5.6,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR"
+ ],
+ "summary": "AVGO (retrospective, 2013-11-15) ◉ BUY — Ratio B 0.32x (42.5% downside to Bear $25.65 / +134.5% upside to Bull $104.60) | Adj composite 2.05 vs market 2.02: gap +0.03 [FAIRLY VALUED] | +65% above the EPP floor $27.00 (12x FY13E $2.25) | Conservative 2-yr case: -5.6% total (-2.8%/yr) | At 19.8x FY13E the 15% hurdle price $59.00 sits between the BASE and BULL cases; net revenue +6.3% YoY in Q3 FY13, forward revenues +16.7-19.8% (Q4 FY13 revenue guide (Q3 FY13 release)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "V35",
+   "published": "2012-12-18",
+   "filed": "2012-12-17 16:31 ET (after the close)",
+   "title": "Avago Technologies Limited FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163412000010/avgo-102812x10k.htm",
+   "supports": "selected financial data FY2008-FY2012 with diluted EPS and shares; statements of operations FY2010-FY2012; FY2011-FY2012 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
+  },
+  {
+   "id": "V1",
+   "published": "2009-08-06",
+   "filed": "2009-08-06 06:42 ET (before the open)",
+   "title": "Avago Technologies Limited IPO prospectus (424B4)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312509166258/d424b4.htm",
+   "supports": "selected financial data FY2004-FY2008 (FY2004-FY2005 the Predecessor, Agilent's Semiconductor Products Group) and the six months to May 3, 2009; the combined FY2006 statement of operations; diluted EPS from continuing operations and diluted shares FY2006-FY2008; quarterly results for the eight quarters to May 3, 2009 (diluted EPS from continuing operations); balance sheets at October 31, 2007, November 2, 2008 and May 3, 2009 (inventory); FY2007-FY2008 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; dividend policy; business, competition and cyclicality wording; listing on the Nasdaq Global Select Market as AVGO"
+  },
+  {
+   "id": "V2",
+   "published": "2007-12-13",
+   "filed": "2007-12-12 20:46 ET (after the close)",
+   "title": "Avago Technologies Finance Pte. Ltd. FY2007 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/1376403/000095013407025301/f36404e20vf.htm",
+   "supports": "balance sheets at October 31, 2006 and 2007 (inventory $169M, $140M); FY2007 against the combined FY2006 net revenue ($1,527M, $1,513M): the FY2007 inventory change for rule T"
+  },
+  {
+   "id": "V3",
+   "published": "2007-01-09",
+   "filed": "2007-01-09 15:00 ET (market hours)",
+   "title": "Avago Technologies Finance Pte. Ltd. exchange offer prospectus (424B3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1376403/000095013407000320/f23597b3e424b3.htm",
+   "supports": "balance sheets at October 31, 2005 (Predecessor) and 2006 (inventory $178M, $169M); the combined FY2006 and FY2005 net revenue on that filing's basis ($1,603M, $1,559M): the FY2006 inventory change for rule T"
+  },
+  {
+   "id": "V31",
+   "published": "2012-08-17",
+   "filed": "2012-08-16 16:11 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY12 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512359081/d397741dex991.htm",
+   "supports": "Q3 FY12 (quarter ended July 29, 2012) statement of operations with Q3 FY11, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook (net revenue up 0% to 3% sequentially)"
+  },
+  {
+   "id": "V33",
+   "published": "2012-11-30",
+   "filed": "2012-11-29 16:07 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2012 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512485680/d446540dex991.htm",
+   "supports": "Q4 FY12 (quarter ended October 28, 2012) and FY2012 statements of operations, balance sheet, diluted EPS and shares; the dividend paid; the Q1 FY13 outlook (net revenue down 5% to 9% sequentially)"
+  },
+  {
+   "id": "V36",
+   "published": "2013-02-27",
+   "filed": "2013-02-26 16:16 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY13 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513076900/d491552dex991.htm",
+   "supports": "Q1 FY13 (quarter ended February 3, 2013) statement of operations with Q1 FY12, balance sheet (inventory, cash), diluted EPS and shares; the dividend paid; the second-quarter outlook (net revenue down 2% to 5% sequentially; GAAP gross margin, operating expenses, interest and other, taxes, share count)"
+  },
+  {
+   "id": "V27",
+   "published": "2012-02-23",
+   "filed": "2012-02-22 16:09 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY12 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512072738/d304320dex991.htm",
+   "supports": "Q1 FY12 (quarter ended January 29, 2012) statement of operations with Q1 FY11, balance sheet, diluted EPS and shares; repurchases and the dividend paid; the second-quarter outlook (net revenue up 1% to 4% sequentially)"
+  },
+  {
+   "id": "V38",
+   "published": "2013-05-30",
+   "filed": "2013-05-29 16:14 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY13 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513239469/d545789dex991.htm",
+   "supports": "Q2 FY13 (quarter ended May 5, 2013) statement of operations with Q2 FY12, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook (net revenue up 6% to 9% sequentially, excluding the pending CyOptics acquisition)"
+  },
+  {
+   "id": "V29",
+   "published": "2012-05-23",
+   "filed": "2012-05-22 16:09 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY12 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312512243453/d357278dex991.htm",
+   "supports": "Q2 FY12 (quarter ended April 29, 2012) statement of operations with Q2 FY11, balance sheet, diluted EPS and shares; the new repurchase program and the dividend paid; the third-quarter outlook (net revenue up 3% to 6% sequentially)"
+  },
+  {
+   "id": "V41",
+   "published": "2013-08-28",
+   "filed": "2013-08-27 16:12 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY13 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513348271/d590070dex991.htm",
+   "supports": "Q3 FY13 (quarter ended August 4, 2013) statement of operations with Q3 FY12, balance sheet, diluted EPS and shares; CyOptics' contribution; the dividend paid; the fourth-quarter outlook (net revenue up 12% to 15% sequentially)"
+  },
+  {
+   "id": "V42",
+   "published": "2013-09-05",
+   "filed": "2013-09-05 08:53 ET (before the open)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513357786/d593309d8k.htm",
+   "supports": "the interim dividend of $0.23 announced on September 5, 2013"
+  },
+  {
+   "id": "A0",
+   "published": "2013-11-15",
+   "title": "Yahoo Finance daily prices, AVGO and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/AVGO/history",
+   "supports": "close $44.61 as traded on AS_OF, the range since the listing on 2009-08-06, realized vol, beta, the 4.0-yr ex-FY09 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-01"
+}

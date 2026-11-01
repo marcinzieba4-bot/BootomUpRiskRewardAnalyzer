@@ -183,3 +183,211 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2012-12-21 | $31.36 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.75 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +226.1% | +176.4pp | +130.3% | ✓ |
 | 2012-12-28 | $31.15 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.76 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +229.8% | +175.8pp | +134.3% | ✓ |
 | 2012-12-31 | $31.65 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.72 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +225.3% | +174.5pp | +131.6% | ✓ |
+| 2013-01-11 | $34.34 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.48 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-01-18 | $34.44 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.46 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-01-25 | $34.16 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.50 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-02-01 | $36.26 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.31 | 0.17x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-02-08 | $35.32 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.37 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-02-15 | $35.14 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.39 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-02-22 | $34.09 | Avago Technologies Limited Q4 and FY2012 results | 2.30 | +0.51 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-02-28 | $34.22 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.28 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-03-08 | $35.27 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.15 | 0.15x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-03-15 | $36.00 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.10 | 0.16x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-03-22 | $35.80 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.11 | 0.16x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-03-28 | $35.92 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.10 | 0.16x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-04-05 | $34.33 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.28 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-04-12 | $34.91 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.20 | 0.14x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-04-19 | $31.26 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.60 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-04-26 | $32.11 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.53 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-05-03 | $31.88 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.55 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-05-10 | $34.06 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.32 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-05-17 | $34.43 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.28 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-05-24 | $34.10 | Avago Technologies Limited Q1 FY13 results | 2.20 | +0.32 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-05-31 | $37.73 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.08 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-06-07 | $37.29 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.09 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-06-14 | $37.59 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.09 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-06-21 | $37.38 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.09 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-06-28 | $37.38 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.09 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-07-05 | $38.81 | Avago Technologies Limited Q2 FY13 results | 2.20 | -0.04 | 0.21x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-07-12 | $38.95 | Avago Technologies Limited Q2 FY13 results | 2.20 | -0.04 | 0.21x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-07-19 | $37.85 | Avago Technologies Limited Q2 FY13 results | 2.20 | -0.01 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-07-26 | $36.78 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.15 | 0.17x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-08-02 | $37.49 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.10 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-08-09 | $36.83 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.15 | 0.17x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-08-16 | $36.25 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.20 | 0.16x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-08-23 | $36.74 | Avago Technologies Limited Q2 FY13 results | 2.20 | +0.16 | 0.17x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-08-29 | $38.95 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.30 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-09-06 | $38.56 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.32 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-09-13 | $38.99 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.30 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-09-20 | $41.62 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.17 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-09-27 | $42.70 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.12 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-04 | $43.50 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.06 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-11 | $43.29 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.08 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-18 | $46.06 | Avago Technologies Limited Q3 FY13 results | 2.05 | -0.01 | 0.35x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-10-25 | $45.63 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.00 | 0.34x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-11-01 | $44.72 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.03 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-11-08 | $44.35 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.04 | 0.31x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-11-15 | $44.61 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.03 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-11-22 | $43.30 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.10 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-11-29 | $44.73 | Avago Technologies Limited Q3 FY13 results | 2.05 | +0.03 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-12-06 | $46.96 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | +0.09 | 0.66x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-12-13 | $45.65 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | +0.14 | 0.59x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2013-12-20 | $51.65 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.02 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2013-12-27 | $52.78 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.15 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-01-03 | $52.85 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.15 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-01-10 | $53.30 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.16 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-01-17 | $56.14 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.22 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-01-24 | $54.49 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.18 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-01-31 | $54.64 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.18 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-02-07 | $56.57 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.23 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-02-14 | $58.08 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.26 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-02-21 | $58.55 | Avago Technologies Limited Q4 and FY2013 results | 2.25 | -0.26 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-02-27 | $61.38 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.19 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-03-07 | $62.75 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.16 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-03-14 | $62.68 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.17 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-03-21 | $63.90 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.15 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-03-28 | $64.11 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.15 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-04-04 | $61.80 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.20 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-04-11 | $58.53 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.28 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-04-17 | $60.89 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.23 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-04-25 | $62.34 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.20 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-05-02 | $64.27 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.17 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-05-09 | $67.41 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.10 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-05-16 | $68.48 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.08 | 2.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-05-23 | $70.55 | Avago Technologies Limited Q1 FY14 results | 2.75 | +0.05 | 3.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-05-30 | $70.67 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.21 | 0.55x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-06-06 | $71.63 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.21 | 0.56x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-06-13 | $71.42 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.21 | 0.56x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-06-20 | $71.57 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.21 | 0.56x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-06-27 | $70.94 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.22 | 0.55x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-07-03 | $75.18 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.17 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-07-11 | $73.20 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.20 | 0.58x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-07-18 | $75.00 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.17 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-07-25 | $69.92 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.24 | 0.52x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-08-01 | $70.44 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.23 | 0.53x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-08-08 | $70.43 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.24 | 0.53x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-08-15 | $74.79 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.18 | 0.61x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-08-22 | $76.21 | Avago Technologies Limited Q2 FY14 results | 2.90 | +1.17 | 0.63x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-08-29 | $82.09 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.27 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-09-05 | $87.88 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.19 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-09-12 | $87.85 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.19 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-09-19 | $89.10 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.18 | 0.98x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-09-26 | $87.50 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.20 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-10-03 | $83.47 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.26 | 0.81x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-10-10 | $71.36 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.52 | 0.55x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-10-17 | $77.15 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.45 | 0.66x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2014-10-24 | $81.85 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.29 | 0.76x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-10-31 | $86.25 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.23 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-11-07 | $85.04 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.25 | 0.83x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-11-14 | $89.02 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.20 | 0.91x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-11-21 | $90.21 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.19 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2014-11-28 | $93.40 | Avago Technologies Limited Q3 FY14 results | 2.20 | +0.14 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-12-05 | $103.99 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.95 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-12-12 | $99.20 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +1.03 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-12-19 | $100.15 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +1.02 | 0.96x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-12-26 | $100.62 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +1.01 | 0.98x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-01-02 | $100.09 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +1.02 | 0.96x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2015-01-09 | $104.90 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.95 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-01-16 | $103.82 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.97 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-01-23 | $106.98 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.92 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-01-30 | $102.88 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.98 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-02-06 | $104.74 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.96 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-02-13 | $110.15 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.87 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-02-20 | $112.06 | Avago Technologies Limited Q4 and FY2014 results | 3.05 | +0.83 | 1.27x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-02-27 | $127.62 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.69 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-03-06 | $127.89 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.69 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-03-13 | $125.00 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.77 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-03-20 | $133.29 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.57 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-03-27 | $128.21 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.72 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-04-02 | $125.02 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.80 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-04-10 | $126.82 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.76 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-04-17 | $121.85 | Avago Technologies Limited Q1 FY15 results | 3.35 | +1.10 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-04-24 | $119.50 | Avago Technologies Limited Q1 FY15 results | 3.35 | +1.16 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-05-01 | $122.80 | Avago Technologies Limited Q1 FY15 results | 3.35 | +1.10 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-05-08 | $123.33 | Avago Technologies Limited Q1 FY15 results | 3.35 | +1.10 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-05-15 | $127.87 | Avago Technologies Limited Q1 FY15 results | 3.35 | +1.03 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-05-22 | $132.64 | Avago Technologies Limited Q1 FY15 results | 3.35 | +0.97 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-05-29 | $148.07 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.20 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-06-05 | $143.81 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.23 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-06-12 | $140.47 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.24 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-06-19 | $142.89 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.23 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-06-26 | $135.15 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-07-02 | $137.64 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-07-10 | $129.84 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-07-17 | $133.66 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2015-07-24 | $128.48 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-07-31 | $125.14 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-08-07 | $122.55 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-08-14 | $121.96 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-08-21 | $111.45 | Avago Technologies Limited Q2 FY15 results | 3.35 | +0.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-08-28 | $127.62 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-09-04 | $121.15 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-09-11 | $131.08 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-09-18 | $127.59 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-09-25 | $126.74 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-10-02 | $123.33 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-10-09 | $116.91 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.83 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-10-16 | $121.07 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-10-23 | $129.58 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-10-30 | $123.13 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-11-06 | $129.67 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-11-13 | $117.54 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.83 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-11-20 | $126.40 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.74 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-11-27 | $130.04 | Avago Technologies Limited Q3 FY15 results | 3.70 | +0.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-12-04 | $147.56 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.34 | 1.69x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-12-11 | $144.42 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.37 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-12-18 | $140.20 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.40 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2015-12-24 | $146.32 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.36 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2015-12-31 | $145.15 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.37 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2016-01-08 | $128.20 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.59 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-01-15 | $119.97 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.65 | 0.75x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-01-22 | $124.51 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.62 | 0.83x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-01-29 | $133.71 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.46 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2016-02-05 | $128.36 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.61 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-02-12 | $121.66 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.66 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-02-19 | $128.67 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.62 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-02-26 | $133.11 | Avago Technologies Limited Q4 and FY2015 results | 3.05 | +0.49 | 0.87x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2016-03-04 | $146.06 | Broadcom Limited Q1 FY16 results | 2.85 | +1.33 | 0.30x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-03-11 | $148.82 | Broadcom Limited Q1 FY16 results | 2.85 | +1.32 | 0.30x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-03-18 | $152.49 | Broadcom Limited Q1 FY16 results | 2.85 | +1.30 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-03-24 | $153.00 | Broadcom Limited Q1 FY16 results | 2.85 | +1.30 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-04-01 | $157.80 | Broadcom Limited Q1 FY16 results | 2.85 | +1.28 | 0.34x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-04-08 | $156.15 | Broadcom Limited Q1 FY16 results | 2.85 | +1.29 | 0.33x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-04-15 | $155.49 | Broadcom Limited Q1 FY16 results | 2.85 | +1.29 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-04-22 | $150.33 | Broadcom Limited Q1 FY16 results | 2.85 | +1.32 | 0.30x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-04-29 | $145.75 | Broadcom Limited Q1 FY16 results | 2.85 | +1.34 | 0.28x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-05-06 | $141.89 | Broadcom Limited Q1 FY16 results | 2.85 | +1.36 | 0.26x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-05-13 | $140.05 | Broadcom Limited Q1 FY16 results | 2.85 | +1.37 | 0.25x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-05-20 | $146.73 | Broadcom Limited Q1 FY16 results | 2.85 | +1.34 | 0.28x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-05-27 | $153.30 | Broadcom Limited Q1 FY16 results | 2.85 | +1.31 | 0.30x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-06-03 | $162.56 | Broadcom Limited Q2 FY16 results | 1.75 | +0.15 | 0.36x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-06-10 | $160.82 | Broadcom Limited Q2 FY16 results | 1.75 | +0.16 | 0.34x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-06-17 | $156.00 | Broadcom Limited Q2 FY16 results | 1.75 | +0.18 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-06-24 | $148.72 | Broadcom Limited Q2 FY16 results | 1.75 | +0.22 | 0.29x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-07-01 | $154.22 | Broadcom Limited Q2 FY16 results | 1.75 | +0.19 | 0.31x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-07-08 | $155.14 | Broadcom Limited Q2 FY16 results | 1.75 | +0.19 | 0.31x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2016-07-15 | $161.16 | Broadcom Limited Q2 FY16 results | 1.75 | +0.17 | 0.33x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-07-22 | $159.67 | Broadcom Limited Q2 FY16 results | 1.75 | +0.18 | 0.31x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-07-29 | $161.98 | Broadcom Limited Q2 FY16 results | 1.75 | +0.17 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-08-05 | $170.12 | Broadcom Limited Q2 FY16 results | 1.75 | +0.14 | 0.34x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-08-12 | $172.47 | Broadcom Limited Q2 FY16 results | 1.75 | +0.13 | 0.33x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-08-19 | $174.93 | Broadcom Limited Q2 FY16 results | 1.75 | +0.12 | 0.34x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-08-26 | $177.16 | Broadcom Limited Q2 FY16 results | 1.75 | +0.11 | 0.35x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-09-02 | $173.11 | Broadcom Limited Q3 FY16 results | 1.95 | +0.37 | 0.30x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-09-09 | $160.78 | Broadcom Limited Q3 FY16 results | 1.95 | +0.42 | 0.26x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-09-16 | $171.24 | Broadcom Limited Q3 FY16 results | 1.95 | +0.38 | 0.29x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-09-23 | $166.65 | Broadcom Limited Q3 FY16 results | 1.95 | +0.40 | 0.27x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-09-30 | $172.52 | Broadcom Limited Q3 FY16 results | 1.95 | +0.38 | 0.29x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-10-07 | $174.21 | Broadcom Limited Q3 FY16 results | 1.95 | +0.37 | 0.29x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-10-14 | $170.09 | Broadcom Limited Q3 FY16 results | 1.95 | +0.39 | 0.28x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-10-21 | $172.92 | Broadcom Limited Q3 FY16 results | 1.95 | +0.38 | 0.29x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-10-28 | $169.35 | Broadcom Limited Q3 FY16 results | 1.95 | +0.40 | 0.27x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-11-04 | $172.17 | Broadcom Limited Q3 FY16 results | 1.95 | +0.40 | 0.27x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-11-11 | $167.54 | Broadcom Limited Q3 FY16 results | 1.95 | +0.42 | 0.26x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-11-18 | $168.16 | Broadcom Limited Q3 FY16 results | 1.95 | +0.41 | 0.26x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-11-25 | $176.75 | Broadcom Limited Q3 FY16 results | 1.95 | +0.38 | 0.28x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-12-02 | $164.22 | Broadcom Limited Q3 FY16 results | 1.95 | +0.43 | 0.25x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-12-09 | $179.09 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.30 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-12-16 | $178.42 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.30 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-12-23 | $181.94 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.29 | 0.50x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2016-12-30 | $176.77 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.31 | 0.47x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |

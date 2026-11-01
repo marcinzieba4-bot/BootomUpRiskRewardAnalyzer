@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for AVGO retrospectives (retro/build_avgo.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every Avago release of the period came after the close. Avago Technologies Limited listed on the Nasdaq Global Select Market on 2009-08-06 (its first trading day in the price data); before that it filed only as the issuer of notes (Avago Technologies Finance Pte. Ltd.: 20-F and 6-K), so the series starts at the listing and the P/E window runs from it. The builder uses the latest history vintage published by AS_OF (the IPO prospectus, then the FY2009 10-K), the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest next-quarter revenue guide for the quarter after the latest print, and events published since that vintage. Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31. Values are as reported, per share on the basis of the filing that published them. A print keeps its raw published figures ('raw', $M) and the margins, growth and gaps derived from them; the builder re-derives and checks them. 'eps_first_excluded' holds the first years left out of the history (losses); 'eps_excluded' a latest year left out (a loss). Each guide states the next quarter's revenue as growth on the quarter just reported ('seq_pct'); 'level_m' is that growth applied to the reported quarter and 'yoy_pct' the level against the same quarter a year earlier from its own release (the input); a guide stated as a dollar level ('level_stated', the 8-K of 2010-08-10) is read against that quarter directly; its other lines ('display') feed nothing. From FY2010 the releases' balance sheets no longer carry the year-ago quarter, so a print's year-ago inventory comes from that quarter's own release ('extra_sources'). 'dividends' hold each declared quarterly rate from the first filing that states it (the first, $0.07, with the Q4 FY10 results). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for AVGO retrospectives (retro/build_avgo.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every release came after the close except Q2 FY15's (before the open; its full text, with the financial statements, in an 8-K/A after the close that day). Avago Technologies Limited listed on the Nasdaq Global Select Market on 2009-08-06 (its first trading day in the price data); before that it filed only as the issuer of notes (Avago Technologies Finance Pte. Ltd.: 20-F and 6-K), so the series starts at the listing and the P/E window runs from it; from 2016-02-02 the listed company is Broadcom Limited, its successor issuer ('company_names'). The builder uses the latest history vintage published by AS_OF (the IPO prospectus, then each 10-K), the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest next-quarter revenue guide for the quarter after the latest print, and events published since that vintage. Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31. Values are as reported, per share on the basis of the filing that published them. A print keeps its raw published figures ('raw', $M) and the margins, growth and gaps derived from them; the builder re-derives and checks them. 'eps_first_excluded' holds the first years left out of the history (losses); 'eps_excluded' later years left out (losses, or a distorted year whose listed one-off items exceed its income: FY2014). Each guide states the next quarter's revenue as growth on the quarter just reported ('seq_pct'); 'level_m' is that growth applied to the reported quarter and 'yoy_pct' the level against the same quarter a year earlier from its own release (the input); a guide stated as a dollar level or range ('level_stated': the 8-K of 2010-08-10, and the releases from Q2 FY14) is read against that quarter directly; its other lines ('display') feed nothing. From FY2010 the releases' balance sheets no longer carry the year-ago quarter, so a print's year-ago inventory comes from that quarter's own release ('extra_sources'). 'dividends' hold each declared quarterly rate from the first filing that states it (the first, $0.07, with the Q4 FY10 results). 'events' hold dated theme evidence (CLOUD, company-acknowledged in the FY2016 10-K). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "AVGO",
  "listing": {
   "first_trading_day": "2009-08-06",
@@ -251,6 +251,251 @@
    "title": "Avago Technologies Limited FY2012 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163412000010/avgo-102812x10k.htm",
    "supports": "selected financial data FY2008-FY2012 with diluted EPS and shares; statements of operations FY2010-FY2012; FY2011-FY2012 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
+  },
+  "V36": {
+   "published": "2013-02-27",
+   "filed": "2013-02-26 16:16 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY13 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513076900/d491552dex991.htm",
+   "supports": "Q1 FY13 (quarter ended February 3, 2013) statement of operations with Q1 FY12, balance sheet (inventory, cash), diluted EPS and shares; the dividend paid; the second-quarter outlook (net revenue down 2% to 5% sequentially; GAAP gross margin, operating expenses, interest and other, taxes, share count)"
+  },
+  "V37": {
+   "published": "2013-03-15",
+   "filed": "2013-03-14 16:02 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163413000003/avgo-02032013x10q.htm",
+   "supports": "the interim dividend of $0.19 declared on March 13, 2013"
+  },
+  "V38": {
+   "published": "2013-05-30",
+   "filed": "2013-05-29 16:14 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY13 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513239469/d545789dex991.htm",
+   "supports": "Q2 FY13 (quarter ended May 5, 2013) statement of operations with Q2 FY12, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook (net revenue up 6% to 9% sequentially, excluding the pending CyOptics acquisition)"
+  },
+  "V39": {
+   "published": "2013-06-10",
+   "filed": "2013-06-07 16:11 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163413000005/avgo-05052013x10q.htm",
+   "supports": "the interim dividend of $0.21 declared on June 5, 2013"
+  },
+  "V40": {
+   "published": "2013-07-15",
+   "filed": "2013-07-15 08:00 ET (before the open)",
+   "title": "Avago Technologies Limited third-quarter guidance 8-K (CyOptics)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513290035/d567183d8k.htm",
+   "supports": "the third-quarter guidance of May 29, 2013 affirmed; a non-GAAP outlook for the CyOptics business alone from June 29 to August 4, 2013 (net revenue $18M plus/minus 10%), 'in addition to' the standalone guide"
+  },
+  "V41": {
+   "published": "2013-08-28",
+   "filed": "2013-08-27 16:12 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY13 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513348271/d590070dex991.htm",
+   "supports": "Q3 FY13 (quarter ended August 4, 2013) statement of operations with Q3 FY12, balance sheet, diluted EPS and shares; CyOptics' contribution; the dividend paid; the fourth-quarter outlook (net revenue up 12% to 15% sequentially)"
+  },
+  "V42": {
+   "published": "2013-09-05",
+   "filed": "2013-09-05 08:53 ET (before the open)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513357786/d593309d8k.htm",
+   "supports": "the interim dividend of $0.23 announced on September 5, 2013"
+  },
+  "V43": {
+   "published": "2013-12-05",
+   "filed": "2013-12-04 16:07 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2013 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513462098/d638924dex991.htm",
+   "supports": "Q4 FY13 (quarter ended November 3, 2013) and FY2013 statements of operations, balance sheet, diluted EPS and shares; the dividend paid; the first-quarter outlook (net revenue down 3% to 6% sequentially)"
+  },
+  "V44": {
+   "published": "2013-12-13",
+   "filed": "2013-12-12 16:02 ET (after the close)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312513471745/d644640d8k.htm",
+   "supports": "the interim dividend of $0.25 announced on December 11, 2013"
+  },
+  "V45": {
+   "published": "2013-12-23",
+   "filed": "2013-12-20 16:56 ET (after the close)",
+   "title": "Avago Technologies Limited FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163413000013/avgo-110313x10k.htm",
+   "supports": "selected financial data FY2009-FY2013 with diluted EPS and shares; FY2012-FY2013 net revenue by target market; cash flows; the listed acquisition-related and restructuring costs; fiscal year ends on the Sunday closest to October 31 (FY2013 a 53-week year); the interim dividend declared on December 10, 2013; business, competition and cyclicality wording"
+  },
+  "V46": {
+   "published": "2014-02-26",
+   "filed": "2014-02-25 16:32 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY14 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514067352/d681942dex991.htm",
+   "supports": "Q1 FY14 (quarter ended February 2, 2014) statement of operations with Q1 FY13, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook (net revenue down 3% to 6% sequentially)"
+  },
+  "V47": {
+   "published": "2014-03-06",
+   "filed": "2014-03-05 17:14 ET (after the close)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514084745/d688753d8k.htm",
+   "supports": "the interim dividend of $0.27 announced on March 5, 2014"
+  },
+  "V48": {
+   "published": "2014-05-30",
+   "filed": "2014-05-29 16:12 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY14 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514217232/d735435dex991.htm",
+   "supports": "Q2 FY14 (quarter ended May 4, 2014) statement of operations with Q2 FY13, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook including LSI (revenue $1.3B to $1.4B)"
+  },
+  "V49": {
+   "published": "2014-06-11",
+   "filed": "2014-06-10 16:12 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY14 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163414000045/avgo-05042014x10q.htm",
+   "supports": "the interim dividend of $0.29 declared on June 4, 2014"
+  },
+  "V50": {
+   "published": "2014-08-29",
+   "filed": "2014-08-28 16:08 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY14 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514325339/d782347dex991.htm",
+   "supports": "Q3 FY14 (quarter ended August 3, 2014) statement of operations with Q3 FY13 (continuing operations, LSI from May 6, 2014), balance sheet (inventory, cash, long-term debt), diluted EPS and shares; the dividend paid; the fourth-quarter outlook (revenue up 18% to 22% sequentially, including PLX)"
+  },
+  "V51": {
+   "published": "2014-09-04",
+   "filed": "2014-09-04 09:09 ET (before the open)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.32",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514331443/d784130d8k.htm",
+   "supports": "the interim dividend of $0.32 announced on September 4, 2014"
+  },
+  "V52": {
+   "published": "2014-12-04",
+   "filed": "2014-12-03 16:31 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2014 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514432272/d833200dex991.htm",
+   "supports": "Q4 FY14 (quarter ended November 2, 2014) and FY2014 statements of operations (continuing operations), the GAAP to non-GAAP reconciliation (inventory step-up, restructuring, acquisition-related costs), balance sheet, diluted EPS and shares; the dividend paid; the first-quarter outlook (net revenue flat to up 4% sequentially)"
+  },
+  "V53": {
+   "published": "2014-12-11",
+   "filed": "2014-12-10 17:20 ET (after the close)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.35",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312514439102/d835037d8k.htm",
+   "supports": "the interim dividend of $0.35 announced on December 8, 2014"
+  },
+  "V54": {
+   "published": "2014-12-30",
+   "filed": "2014-12-29 17:23 ET (after the close)",
+   "title": "Avago Technologies Limited FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163414000049/avgo-110214x10k.htm",
+   "supports": "selected financial data FY2010-FY2014 with diluted EPS from continuing operations and shares; FY2013-FY2014 net revenue by segment; cash flows; the listed acquisition-related costs, inventory step-up and restructuring; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 8, 2014; business, competition and cyclicality wording"
+  },
+  "V55": {
+   "published": "2015-02-26",
+   "filed": "2015-02-25 16:23 ET (after the close)",
+   "title": "Avago Technologies Limited Q1 FY15 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515062590/d880780dex991.htm",
+   "supports": "Q1 FY15 (quarter ended February 1, 2015) statement of operations with Q1 FY14, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook (net revenue down 4% to flat sequentially)"
+  },
+  "V56": {
+   "published": "2015-03-05",
+   "filed": "2015-03-05 08:55 ET (before the open)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.38",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515077857/d882462d8k.htm",
+   "supports": "the interim dividend of $0.38 announced on March 5, 2015"
+  },
+  "V57": {
+   "published": "2015-05-29",
+   "filed": "2015-05-28 19:20 ET (after the close)",
+   "title": "Avago Technologies Limited Q2 FY15 results (8-K/A, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515204602/d933912dex991.htm",
+   "supports": "the full Q2 FY15 release (quarter ended May 3, 2015): statement of operations with Q2 FY14, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook including Emulex ($1,729M plus/minus $25M) with the corrected GAAP gross margin; the 8-K of 07:24 ET that morning carried the release without its financial statements"
+  },
+  "V58": {
+   "published": "2015-06-05",
+   "filed": "2015-06-04 16:43 ET (after the close)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.40",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515213431/d937883d8k.htm",
+   "supports": "the interim dividend of $0.40 announced on June 4, 2015"
+  },
+  "V59": {
+   "published": "2015-08-27",
+   "filed": "2015-08-26 16:20 ET (after the close)",
+   "title": "Avago Technologies Limited Q3 FY15 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515303298/d81424dex991.htm",
+   "supports": "Q3 FY15 (quarter ended August 2, 2015) statement of operations with Q3 FY14, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook ($1,838M plus/minus $25M)"
+  },
+  "V60": {
+   "published": "2015-09-04",
+   "filed": "2015-09-03 17:23 ET (after the close)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.42",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515311988/d73642d8k.htm",
+   "supports": "the interim dividend of $0.42 announced on September 3, 2015"
+  },
+  "V61": {
+   "published": "2015-12-03",
+   "filed": "2015-12-02 16:05 ET (after the close)",
+   "title": "Avago Technologies Limited Q4 and FY2015 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515393209/d14324dex991.htm",
+   "supports": "Q4 FY15 (quarter ended November 1, 2015) and FY2015 statements of operations, balance sheet, diluted EPS and shares; the dividend paid; the first-quarter outlook ($1,768M plus/minus $25M)"
+  },
+  "V62": {
+   "published": "2015-12-09",
+   "filed": "2015-12-08 21:29 ET (after the close)",
+   "title": "Avago Technologies Limited 8-K: interim dividend of $0.44",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312515398050/d96668d8k.htm",
+   "supports": "the interim dividend of $0.44 announced on December 8, 2015"
+  },
+  "V63": {
+   "published": "2015-12-18",
+   "filed": "2015-12-17 16:25 ET (after the close)",
+   "title": "Avago Technologies Limited FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163415000089/avgo-110115x10k.htm",
+   "supports": "selected financial data FY2011-FY2015 with diluted EPS from continuing operations and shares; FY2014-FY2015 net revenue by segment; cash flows; the listed acquisition-related costs, inventory step-up and restructuring; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 7, 2015; business, competition and cyclicality wording"
+  },
+  "V64": {
+   "published": "2016-02-02",
+   "filed": "2016-02-02 08:26 ET (before the open)",
+   "title": "Broadcom Limited 8-K12B: successor issuer to Avago",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516446865/d47106d8k12b.htm",
+   "supports": "the Avago and Broadcom Corporation transactions completed on February 1, 2016; Pavonia Limited renamed Broadcom Limited, the successor issuer to Avago"
+  },
+  "V65": {
+   "published": "2016-03-04",
+   "filed": "2016-03-03 16:07 ET (after the close)",
+   "title": "Broadcom Limited Q1 FY16 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516491591/d154373dex991.htm",
+   "supports": "Q1 FY16 (quarter ended January 31, 2016, Avago before the BRCM closing) statement of operations with Q1 FY15, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook of the combined businesses ($3,533M plus/minus $75M); the 8-K: the interim dividend of $0.49"
+  },
+  "V66": {
+   "published": "2016-06-03",
+   "filed": "2016-06-02 16:07 ET (after the close)",
+   "title": "Broadcom Limited Q2 FY16 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516611172/d193831dex991.htm",
+   "supports": "Q2 FY16 (quarter ended May 1, 2016, BRCM from February 1) statement of operations with Q2 FY15, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook ($3,740M plus/minus $75M); the 8-K: the interim dividend of $0.50"
+  },
+  "V67": {
+   "published": "2016-09-02",
+   "filed": "2016-09-01 16:10 ET (after the close)",
+   "title": "Broadcom Limited Q3 FY16 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516699619/d223587dex991.htm",
+   "supports": "Q3 FY16 (quarter ended July 31, 2016) statement of operations with Q3 FY15, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook ($4,090M plus/minus $75M); the 8-K: the interim dividend of $0.51"
+  },
+  "V68": {
+   "published": "2016-12-09",
+   "filed": "2016-12-08 16:17 ET (after the close)",
+   "title": "Broadcom Limited Q4 and FY2016 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516788497/d310141dex991.htm",
+   "supports": "Q4 FY16 (quarter ended October 30, 2016) and FY2016 statements of operations, balance sheet, diluted EPS and shares; the dividend paid and the interim dividend doubled to $1.02; the first-quarter outlook ($4,065M plus/minus $75M)"
+  },
+  "V70": {
+   "published": "2016-11-02",
+   "filed": "2016-11-02 08:00 ET (before the open)",
+   "title": "Broadcom Limited affirms Q4 FY16 guidance and tightens revenue (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516756230/d284447dex991.htm",
+   "supports": "fourth-quarter GAAP net revenue now expected between $4,090 million and $4,165 million (previously $4,015 million to $4,165 million); the other fourth-quarter guidance affirmed; filed with the Brocade merger agreement"
+  },
+  "V69": {
+   "published": "2016-12-23",
+   "filed": "2016-12-23 08:20 ET (before the open)",
+   "title": "Broadcom Limited FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000164933816000151/avgo-10302016x10k.htm",
+   "supports": "selected financial data FY2012-FY2016 with diluted EPS from continuing operations; FY2014-FY2016 statements of operations with diluted shares; FY2015-FY2016 net revenue by segment; cash flows; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 6, 2016; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk to the wired infrastructure and enterprise storage segments"
   }
  },
  "history_vintages": [
@@ -674,6 +919,393 @@
     ]
    ],
    "groups_basis": "FY12 net revenue by target market (FY2012 10-K)"
+  },
+  {
+   "published": "2013-12-23",
+   "sources": [
+    "V45",
+    "V35",
+    "V1",
+    "V2",
+    "V3",
+    "V41"
+   ],
+   "company": "Avago Technologies Limited",
+   "fy_label": "FY13",
+   "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of analog semiconductor devices with a focus on III-V based products', 'We serve three primary target markets: wireless communications, wired infrastructure and industrial & other', and 'We operate a primarily outsourced manufacturing business model' (its own FY2013 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2011": "2011-10-30",
+    "2012": "2012-10-28",
+    "2013": "2013-11-03"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 21.9,
+   "prev_fy_op_margin_note": "FY13 operating income $552M / net revenue $2,520M (FY2013 10-K)",
+   "prev_fy_pretax_margin": 22.54,
+   "prev_fy_pretax_margin_note": "FY13 income before income taxes $568M / $2,520M (FY2013 10-K)",
+   "prev_fy_gross_margin": 47.54,
+   "prev_fy_sales_growth": 6.6,
+   "tax_rate": 0.028,
+   "tax_note": "FY13 provision for income taxes $16M / income before income taxes $568M (FY2013 10-K)",
+   "fcf_b": 0.486,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $722M less purchases of property, plant and equipment $236M",
+   "prev_q_sales_pct": 6.3,
+   "prev_q_label": "Q3 FY13",
+   "prev_q_source": "V41",
+   "dividend_annual": 1.0,
+   "dividend_note": "$0.25 quarterly, the interim dividend declared on December 10, 2013 (FY2013 10-K)",
+   "business_line": "analog semiconductor devices for wireless communications, wired infrastructure, and industrial & other markets",
+   "normalization": "diluted EPS (from continuing operations; Avago has none discontinued from FY2009); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test)",
+   "groups": [
+    [
+     "Wireless communications",
+     1.219,
+     14.6
+    ],
+    [
+     "Wired infrastructure",
+     0.744,
+     12.4
+    ],
+    [
+     "Industrial & other",
+     0.557,
+     -12.7
+    ]
+   ],
+   "groups_basis": "FY13 net revenue by target market (FY2013 10-K)"
+  },
+  {
+   "published": "2014-12-30",
+   "sources": [
+    "V54",
+    "V45",
+    "V35",
+    "V1",
+    "V2",
+    "V3",
+    "V50"
+   ],
+   "company": "Avago Technologies Limited",
+   "fy_label": "FY14",
+   "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of semiconductor devices with a focus on analog III-V based products and complex digital and mixed signal complementary metal oxide semiconductor based devices', 'We have four reportable segments: wireless communications, wired infrastructure, enterprise storage and industrial & other, which align with our principal target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2014 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2012": "2012-10-28",
+    "2013": "2013-11-03",
+    "2014": "2014-11-02"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items",
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 10.26,
+   "prev_fy_op_margin_note": "FY14 operating income $438M / net revenue $4,269M (FY2014 10-K)",
+   "prev_fy_pretax_margin": 8.01,
+   "prev_fy_pretax_margin_note": "FY14 income before income taxes $342M / $4,269M (FY2014 10-K)",
+   "prev_fy_gross_margin": 43.97,
+   "prev_fy_sales_growth": 69.4,
+   "tax_rate": 0.096,
+   "tax_note": "FY14 provision for income taxes $33M / income before income taxes $342M (FY2014 10-K)",
+   "fcf_b": 0.766,
+   "fcf_label": "FY14",
+   "fcf_note": "net cash provided by operating activities $1,175M less purchases of property, plant and equipment $409M",
+   "prev_q_sales_pct": 97.0,
+   "prev_q_label": "Q3 FY14",
+   "prev_q_source": "V50",
+   "dividend_annual": 1.4,
+   "dividend_note": "$0.35 quarterly, the interim dividend declared on December 8, 2014 (FY2014 10-K)",
+   "business_line": "analog III-V and digital and mixed signal CMOS semiconductor devices for wireless communications, wired infrastructure, enterprise storage, and industrial & other markets",
+   "normalization": "diluted EPS (from continuing operations; none discontinued from FY2009 to FY2013, and LSI's Flash and Axxia businesses from FY2014); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window",
+   "groups": [
+    [
+     "Wireless communications",
+     1.689,
+     38.6
+    ],
+    [
+     "Wired infrastructure",
+     1.151,
+     54.7
+    ],
+    [
+     "Enterprise storage",
+     0.867,
+     null
+    ],
+    [
+     "Industrial & other",
+     0.562,
+     0.9
+    ]
+   ],
+   "groups_basis": "FY14 net revenue by segment (FY2014 10-K)"
+  },
+  {
+   "published": "2015-12-18",
+   "sources": [
+    "V63",
+    "V54",
+    "V45",
+    "V35",
+    "V1",
+    "V2",
+    "V3",
+    "V59"
+   ],
+   "company": "Avago Technologies Limited",
+   "fy_label": "FY15",
+   "why": "Avago: 'We are a leading designer, developer and global supplier of a broad range of semiconductor devices with a focus on analog III-V based products and complex digital and mixed signal complementary metal oxide semiconductor based devices', 'We have four reportable segments: wireless communications, enterprise storage, wired infrastructure and industrial & other, which align with our principal target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2015 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2013": "2013-11-03",
+    "2014": "2014-11-02",
+    "2015": "2015-11-01"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19,
+    "2015": 4.95
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items",
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269,
+    "2015": 6.824
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267,
+    "2015": 281
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 23.92,
+   "prev_fy_op_margin_note": "FY15 operating income $1,632M / net revenue $6,824M (FY2015 10-K)",
+   "prev_fy_pretax_margin": 21.5,
+   "prev_fy_pretax_margin_note": "FY15 income before income taxes $1,467M / $6,824M (FY2015 10-K)",
+   "prev_fy_gross_margin": 52.07,
+   "prev_fy_sales_growth": 59.9,
+   "tax_rate": 0.052,
+   "tax_note": "FY15 provision for income taxes $76M / income before income taxes $1,467M (FY2015 10-K)",
+   "fcf_b": 1.725,
+   "fcf_label": "FY15",
+   "fcf_note": "net cash provided by operating activities $2,318M less purchases of property, plant and equipment $593M",
+   "prev_q_sales_pct": 36.7,
+   "prev_q_label": "Q3 FY15",
+   "prev_q_source": "V59",
+   "dividend_annual": 1.76,
+   "dividend_note": "$0.44 quarterly, the interim dividend declared on December 7, 2015 (FY2015 10-K)",
+   "business_line": "analog III-V and digital and mixed signal CMOS semiconductor devices for wireless communications, wired infrastructure, enterprise storage, and industrial & other markets",
+   "normalization": "diluted EPS (from continuing operations; none discontinued from FY2009 to FY2013, and LSI's Flash and Axxia businesses from FY2014); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window; FY15 = GAAP $4.95 from continuing operations (net $4.85; its listed items, $30M of inventory step-up charges, $144M of restructuring and asset impairment and $74M of acquisition-related costs, are under its $1,391M income from continuing operations: the AAPL FY2003 test)",
+   "groups": [
+    [
+     "Wireless communications",
+     2.536,
+     50.1
+    ],
+    [
+     "Enterprise storage",
+     2.18,
+     151.4
+    ],
+    [
+     "Wired infrastructure",
+     1.479,
+     28.5
+    ],
+    [
+     "Industrial & other",
+     0.629,
+     11.9
+    ]
+   ],
+   "groups_basis": "FY15 net revenue by segment (FY2015 10-K)"
+  },
+  {
+   "published": "2016-12-23",
+   "sources": [
+    "V69",
+    "V63",
+    "V54",
+    "V45",
+    "V35",
+    "V1",
+    "V2",
+    "V3",
+    "V67"
+   ],
+   "company": "Broadcom Limited",
+   "fy_label": "FY16",
+   "why": "Broadcom: 'We are a leading designer, developer and global supplier of a broad range of semiconductor devices with a focus on complex digital and mixed signal complementary metal oxide semiconductor, or CMOS, based devices and analog III-V based products', 'We have four reportable segments: wired infrastructure, wireless communications, enterprise storage and industrial & other, which align with our principal target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2016 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2014": "2014-11-02",
+    "2015": "2015-11-01",
+    "2016": "2016-10-30"
+   },
+   "eps_first_excluded": {
+    "2006": "a loss of $(1.07) per diluted share from continuing operations (eleven months after the SPG Acquisition of December 1, 2005)",
+    "2007": "a loss of $(1.03) per diluted share from continuing operations (including the $158M asset impairment and $51M of restructuring)"
+   },
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19,
+    "2015": 4.95
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items",
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them",
+    "2016": "FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269,
+    "2015": 6.824,
+    "2016": 13.24
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267,
+    "2015": 281,
+    "2016": 383
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -3.09,
+   "prev_fy_op_margin_note": "FY16 operating income $(409)M / net revenue $13,240M (FY2016 10-K)",
+   "prev_fy_pretax_margin": -8.36,
+   "prev_fy_pretax_margin_note": "FY16 income before income taxes $(1,107)M / $13,240M (FY2016 10-K)",
+   "prev_fy_gross_margin": 44.86,
+   "prev_fy_sales_growth": 94.0,
+   "tax_rate": 0.052,
+   "tax_note": "FY16 had a pre-tax loss ($642M provision on $(1,107)M), so FY15's rate stands: $76M / $1,467M (FY2016 10-K)",
+   "fcf_b": 2.688,
+   "fcf_label": "FY16",
+   "fcf_note": "net cash provided by operating activities $3,411M less purchases of property, plant and equipment $723M",
+   "prev_q_sales_pct": 118.6,
+   "prev_q_label": "Q3 FY16",
+   "prev_q_source": "V67",
+   "dividend_annual": 4.08,
+   "dividend_note": "$1.02 quarterly, the interim dividend declared on December 6, 2016 (FY2016 10-K)",
+   "business_line": "digital and mixed signal CMOS and analog III-V semiconductor devices for wired infrastructure, wireless communications, enterprise storage, and industrial & other markets",
+   "normalization": "diluted EPS (from continuing operations; none discontinued from FY2009 to FY2013, and LSI's Flash and Axxia businesses from FY2014); the Predecessor (FY2004-FY2005) reports no per-share figures; FY06 ($(1.07)) and FY07 ($(1.03)) are losses with no published adjusted figure and are excluded, so the history starts with FY08 (the ACN FY02 and AAPL FY2001 rule); FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window; FY15 = GAAP $4.95 from continuing operations (net $4.85; its listed items, $30M of inventory step-up charges, $144M of restructuring and asset impairment and $74M of acquisition-related costs, are under its $1,391M income from continuing operations: the AAPL FY2003 test); FY16 ($(4.57) from continuing operations, net $(4.86)) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window",
+   "groups": [
+    [
+     "Wired infrastructure",
+     6.582,
+     345.0
+    ],
+    [
+     "Wireless communications",
+     3.724,
+     46.8
+    ],
+    [
+     "Enterprise storage",
+     2.291,
+     5.1
+    ],
+    [
+     "Industrial & other",
+     0.643,
+     2.2
+    ]
+   ],
+   "groups_basis": "FY16 net revenue by segment (FY2016 10-K)"
   }
  ],
  "prints": [
@@ -1483,6 +2115,868 @@
     "sales_growth": 1.2,
     "normalization_note": "FY12 from the Q4 FY12 release: GAAP $2.25"
    }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-02-27",
+   "source": "V36",
+   "release": "Feb 26",
+   "release_time": "after the close on Feb 26: accepted 16:16 ET; public before the open of the next trading day",
+   "period_end": "2013-02-03",
+   "raw": {
+    "sales_m": 576,
+    "sales_prior_m": 563,
+    "sales_prev_q_m": 618,
+    "cogs_m": 300,
+    "cogs_prior_m": 293,
+    "rd_m": 93,
+    "rd_prior_m": 82,
+    "sga_m": 53,
+    "sga_prior_m": 50,
+    "op_income_m": 124,
+    "op_income_prior_m": 132,
+    "inventory_m": 208,
+    "inventory_prior_m": 193
+   },
+   "sales_b": 0.576,
+   "sales_pct": 2.3,
+   "seq_pct": -6.8,
+   "gross_margin": 47.92,
+   "gross_margin_bp": -4.1,
+   "op_margin": 21.53,
+   "op_margin_bp": -191.8,
+   "opex_pct": 10.6,
+   "opex_gap_pp": 8.3,
+   "inventory_b": 0.208,
+   "inventory_pct": 7.8,
+   "inventory_gap_pp": 5.5,
+   "inventory_note": "inventory $208M (February 3, 2013) vs $193M (January 29, 2012, the Q1 FY12 release)",
+   "eps_q": 0.5,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 251,
+   "cash_b": 1.151,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V27"
+   ],
+   "sales_note": "net revenue $576M vs $563M: 'an increase of 2 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.50 vs $0.50",
+   "shares_note": "diluted shares 251M in Q1 FY13 (a 14-week quarter)",
+   "next_print": "Q2 FY13 print",
+   "cash_return_text": "$0.17 a share paid on December 28, 2012 (about $42 million); no long-term debt"
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-05-30",
+   "source": "V38",
+   "release": "May 29",
+   "release_time": "after the close on May 29: accepted 16:14 ET; public before the open of the next trading day",
+   "period_end": "2013-05-05",
+   "raw": {
+    "sales_m": 562,
+    "sales_prior_m": 577,
+    "sales_prev_q_m": 576,
+    "cogs_m": 290,
+    "cogs_prior_m": 299,
+    "rd_m": 95,
+    "rd_prior_m": 84,
+    "sga_m": 52,
+    "sga_prior_m": 51,
+    "op_income_m": 118,
+    "op_income_prior_m": 137,
+    "inventory_m": 229,
+    "inventory_prior_m": 218
+   },
+   "sales_b": 0.562,
+   "sales_pct": -2.6,
+   "seq_pct": -2.4,
+   "gross_margin": 48.4,
+   "gross_margin_bp": 21.8,
+   "op_margin": 21.0,
+   "op_margin_bp": -274.7,
+   "opex_pct": 8.9,
+   "opex_gap_pp": 11.5,
+   "inventory_b": 0.229,
+   "inventory_pct": 5.0,
+   "inventory_gap_pp": 7.6,
+   "inventory_note": "inventory $229M (May 5, 2013) vs $218M (April 29, 2012, the Q2 FY12 release)",
+   "eps_q": 0.45,
+   "eps_q_prior": 0.54,
+   "diluted_shares_m": 251,
+   "cash_b": 1.219,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V29"
+   ],
+   "sales_note": "net revenue $562M vs $577M: 'a decrease of 3 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.45 vs $0.54",
+   "shares_note": "diluted shares 251M in Q2 FY13",
+   "next_print": "Q3 FY13 print",
+   "cash_return_text": "$0.19 a share paid on April 4, 2013 (about $47 million); an acquisition closed for about $37 million in cash; no long-term debt"
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-08-28",
+   "source": "V41",
+   "release": "Aug 27",
+   "release_time": "after the close on Aug 27: accepted 16:12 ET; public before the open of the next trading day",
+   "period_end": "2013-08-04",
+   "raw": {
+    "sales_m": 644,
+    "sales_prior_m": 606,
+    "sales_prev_q_m": 562,
+    "cogs_m": 340,
+    "cogs_prior_m": 311,
+    "rd_m": 101,
+    "rd_prior_m": 89,
+    "sga_m": 57,
+    "sga_prior_m": 49,
+    "op_income_m": 140,
+    "op_income_prior_m": 149,
+    "inventory_m": 284,
+    "inventory_prior_m": 216
+   },
+   "sales_b": 0.644,
+   "sales_pct": 6.3,
+   "seq_pct": 14.6,
+   "gross_margin": 47.2,
+   "gross_margin_bp": -147.5,
+   "op_margin": 21.74,
+   "op_margin_bp": -284.8,
+   "opex_pct": 14.5,
+   "opex_gap_pp": 8.2,
+   "inventory_b": 0.284,
+   "inventory_pct": 31.5,
+   "inventory_gap_pp": 25.2,
+   "inventory_note": "inventory $284M (August 4, 2013) vs $216M (July 29, 2012, the Q3 FY12 release)",
+   "eps_q": 0.56,
+   "eps_q_prior": 0.58,
+   "diluted_shares_m": 252,
+   "cash_b": 0.863,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V31"
+   ],
+   "sales_note": "net revenue $644M vs $606M: 'an increase of 6 percent from the same quarter last year', with $21 million from CyOptics (acquired June 28, 2013)",
+   "eps_note": "diluted EPS $0.56 vs $0.58",
+   "shares_note": "diluted shares 252M in Q3 FY13",
+   "next_print": "Q4 FY13 print",
+   "cash_return_text": "$0.21 a share paid on June 28, 2013 (about $52 million); about $400 million in cash paid on closing the CyOptics acquisition; no long-term debt"
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2013-12-05",
+   "source": "V43",
+   "release": "Dec 4",
+   "release_time": "after the close on Dec 4: accepted 16:07 ET; public before the open of the next trading day",
+   "period_end": "2013-11-03",
+   "raw": {
+    "sales_m": 738,
+    "sales_prior_m": 618,
+    "sales_prev_q_m": 644,
+    "cogs_m": 393,
+    "cogs_prior_m": 319,
+    "rd_m": 108,
+    "rd_prior_m": 80,
+    "sga_m": 60,
+    "sga_prior_m": 49,
+    "op_income_m": 170,
+    "op_income_prior_m": 164,
+    "inventory_m": 285,
+    "inventory_prior_m": 194
+   },
+   "sales_b": 0.738,
+   "sales_pct": 19.4,
+   "seq_pct": 14.6,
+   "gross_margin": 46.75,
+   "gross_margin_bp": -163.4,
+   "op_margin": 23.04,
+   "op_margin_bp": -350.2,
+   "opex_pct": 30.2,
+   "opex_gap_pp": 10.8,
+   "inventory_b": 0.285,
+   "inventory_pct": 46.9,
+   "inventory_gap_pp": 27.5,
+   "inventory_note": "inventory $285M (November 3, 2013) vs $194M (October 28, 2012)",
+   "eps_q": 0.68,
+   "eps_q_prior": 0.64,
+   "diluted_shares_m": 253,
+   "cash_b": 0.985,
+   "ltd_b": 0.0,
+   "sales_note": "net revenue $738M vs $618M: 'an increase of 19 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.68 vs $0.64",
+   "shares_note": "diluted shares 253M in Q4 FY13",
+   "next_print": "Q1 FY14 print",
+   "cash_return_text": "$0.23 a share paid on September 30, 2013 (about $57 million); no long-term debt",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 2.19,
+    "revenue_usd_b": 2.52,
+    "diluted_shares_m": 252,
+    "op_margin": 21.9,
+    "op_margin_note": "FY13 income from operations $552M / net revenue $2,520M (Q4 FY13 release)",
+    "pretax_margin": 22.54,
+    "pretax_margin_note": "FY13 income before income taxes $568M / $2,520M (Q4 FY13 release)",
+    "gross_margin": 47.5,
+    "sales_growth": 6.6,
+    "normalization_note": "FY13 from the Q4 FY13 release: GAAP $2.19 (a 53-week year)"
+   }
+  },
+  {
+   "quarter": "Q1 FY14",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-02-26",
+   "source": "V46",
+   "release": "Feb 25",
+   "release_time": "after the close on Feb 25: accepted 16:32 ET; public before the open of the next trading day",
+   "period_end": "2014-02-02",
+   "raw": {
+    "sales_m": 709,
+    "sales_prior_m": 576,
+    "sales_prev_q_m": 738,
+    "cogs_m": 370,
+    "cogs_prior_m": 300,
+    "rd_m": 107,
+    "rd_prior_m": 93,
+    "sga_m": 74,
+    "sga_prior_m": 53,
+    "op_income_m": 139,
+    "op_income_prior_m": 124,
+    "inventory_m": 286,
+    "inventory_prior_m": 208
+   },
+   "sales_b": 0.709,
+   "sales_pct": 23.1,
+   "seq_pct": -3.9,
+   "gross_margin": 47.81,
+   "gross_margin_bp": -10.3,
+   "op_margin": 19.61,
+   "op_margin_bp": -192.3,
+   "opex_pct": 24.0,
+   "opex_gap_pp": 0.9,
+   "inventory_b": 0.286,
+   "inventory_pct": 37.5,
+   "inventory_gap_pp": 14.4,
+   "inventory_note": "inventory $286M (February 2, 2014) vs $208M (February 3, 2013, the Q1 FY13 release)",
+   "eps_q": 0.53,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 255,
+   "cash_b": 1.112,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V36"
+   ],
+   "sales_note": "net revenue $709M vs $576M: 'an increase of 23 percent from the same quarter last year' (a 13-week quarter against 14)",
+   "eps_note": "diluted EPS $0.53 vs $0.50",
+   "shares_note": "diluted shares 255M in Q1 FY14",
+   "next_print": "Q2 FY14 print",
+   "cash_return_text": "$0.25 a share paid on December 31, 2013 (about $62 million); no long-term debt"
+  },
+  {
+   "quarter": "Q2 FY14",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-05-30",
+   "source": "V48",
+   "release": "May 29",
+   "release_time": "after the close on May 29: accepted 16:12 ET; public before the open of the next trading day",
+   "period_end": "2014-05-04",
+   "raw": {
+    "sales_m": 701,
+    "sales_prior_m": 562,
+    "sales_prev_q_m": 709,
+    "cogs_m": 344,
+    "cogs_prior_m": 290,
+    "rd_m": 114,
+    "rd_prior_m": 95,
+    "sga_m": 67,
+    "sga_prior_m": 52,
+    "op_income_m": 160,
+    "op_income_prior_m": 118,
+    "inventory_m": 301,
+    "inventory_prior_m": 229
+   },
+   "sales_b": 0.701,
+   "sales_pct": 24.7,
+   "seq_pct": -1.1,
+   "gross_margin": 50.93,
+   "gross_margin_bp": 252.9,
+   "op_margin": 22.82,
+   "op_margin_bp": 182.8,
+   "opex_pct": 23.1,
+   "opex_gap_pp": -1.6,
+   "inventory_b": 0.301,
+   "inventory_pct": 31.4,
+   "inventory_gap_pp": 6.7,
+   "inventory_note": "inventory $301M (May 4, 2014) vs $229M (May 5, 2013, the Q2 FY13 release)",
+   "eps_q": 0.61,
+   "eps_q_prior": 0.45,
+   "diluted_shares_m": 258,
+   "cash_b": 1.278,
+   "ltd_b": 0.0,
+   "extra_sources": [
+    "V38"
+   ],
+   "sales_note": "net revenue $701M vs $562M: 'an increase of 25 percent from the same quarter last year'",
+   "eps_note": "diluted EPS $0.61 vs $0.45",
+   "shares_note": "diluted shares 258M in Q2 FY14",
+   "next_print": "Q3 FY14 print",
+   "cash_return_text": "$0.27 a share paid on March 31, 2014 (about $68 million); no long-term debt at May 4, 2014"
+  },
+  {
+   "quarter": "Q3 FY14",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-08-29",
+   "source": "V50",
+   "release": "Aug 28",
+   "release_time": "after the close on Aug 28: accepted 16:08 ET; public before the open of the next trading day",
+   "period_end": "2014-08-03",
+   "raw": {
+    "sales_m": 1269,
+    "sales_prior_m": 644,
+    "sales_prev_q_m": 701,
+    "cogs_m": 876,
+    "cogs_prior_m": 340,
+    "rd_m": 240,
+    "rd_prior_m": 101,
+    "sga_m": 137,
+    "sga_prior_m": 57,
+    "op_income_m": -162,
+    "op_income_prior_m": 140,
+    "inventory_m": 482,
+    "inventory_prior_m": 284
+   },
+   "sales_b": 1.269,
+   "sales_pct": 97.0,
+   "seq_pct": 81.0,
+   "gross_margin": 30.97,
+   "gross_margin_bp": -1623.6,
+   "op_margin": -12.77,
+   "op_margin_bp": -3450.5,
+   "opex_pct": 138.6,
+   "opex_gap_pp": 41.6,
+   "inventory_b": 0.482,
+   "inventory_pct": 69.7,
+   "inventory_gap_pp": -27.3,
+   "inventory_note": "inventory $482M (August 3, 2014) vs $284M (August 4, 2013, the Q3 FY13 release)",
+   "eps_q": -0.48,
+   "eps_q_prior": 0.56,
+   "diluted_shares_m": 252,
+   "cash_b": 1.277,
+   "ltd_b": 5.472,
+   "extra_sources": [
+    "V41"
+   ],
+   "sales_note": "net revenue from continuing operations $1,269M vs $644M: 'an increase of 97 percent from the same quarter last year', with LSI from May 6, 2014",
+   "eps_note": "diluted EPS from continuing operations $(0.48) vs $0.56 (net $(0.65) with discontinued operations)",
+   "shares_note": "diluted shares 252M in Q3 FY14",
+   "next_print": "Q4 FY14 print",
+   "cash_return_text": "$0.29 a share paid on June 30, 2014 (about $73 million); long-term debt $5,472M at August 3, 2014, less the current portion"
+  },
+  {
+   "quarter": "Q4 FY14",
+   "fy": 2014,
+   "q": 4,
+   "published": "2014-12-04",
+   "source": "V52",
+   "release": "Dec 3",
+   "release_time": "after the close on Dec 3: accepted 16:31 ET; public before the open of the next trading day",
+   "period_end": "2014-11-02",
+   "raw": {
+    "sales_m": 1590,
+    "sales_prior_m": 738,
+    "sales_prev_q_m": 1269,
+    "cogs_m": 802,
+    "cogs_prior_m": 392,
+    "rd_m": 234,
+    "rd_prior_m": 109,
+    "sga_m": 129,
+    "sga_prior_m": 60,
+    "op_income_m": 301,
+    "op_income_prior_m": 170,
+    "inventory_m": 519,
+    "inventory_prior_m": 285
+   },
+   "sales_b": 1.59,
+   "sales_pct": 115.4,
+   "seq_pct": 25.3,
+   "gross_margin": 49.56,
+   "gross_margin_bp": 267.6,
+   "op_margin": 18.93,
+   "op_margin_bp": -410.4,
+   "opex_pct": 114.8,
+   "opex_gap_pp": -0.7,
+   "inventory_b": 0.519,
+   "inventory_pct": 82.1,
+   "inventory_gap_pp": -33.3,
+   "inventory_note": "inventory $519M (November 2, 2014) vs $285M (November 3, 2013)",
+   "eps_q": 0.5,
+   "eps_q_prior": 0.68,
+   "diluted_shares_m": 272,
+   "cash_b": 1.604,
+   "ltd_b": 5.463,
+   "sales_note": "net revenue from continuing operations $1,590M vs $738M: 'an increase of 115 percent from $738 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $0.50 vs $0.68",
+   "shares_note": "diluted shares 272M in Q4 FY14",
+   "next_print": "Q1 FY15 print",
+   "cash_return_text": "$0.32 a share paid on September 30, 2014 (about $81 million); long-term debt $5,463M at November 2, 2014, less the current portion",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": null,
+    "excluded_note": "$1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs (the LSI, PLX and CyOptics acquisitions), together more than its $309M income from continuing operations; no published EPS excluding only them",
+    "revenue_usd_b": 4.269,
+    "diluted_shares_m": 267,
+    "op_margin": 10.26,
+    "op_margin_note": "FY14 operating income $438M / net revenue $4,269M (Q4 FY14 release)",
+    "pretax_margin": 8.01,
+    "pretax_margin_note": "FY14 income from continuing operations before income taxes $342M / $4,269M (Q4 FY14 release)",
+    "gross_margin": 43.97,
+    "sales_growth": 69.4,
+    "normalization_note": "FY14 from the Q4 FY14 release: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs (the LSI, PLX and CyOptics acquisitions), together more than its $309M income from continuing operations; no published EPS excluding only them; excluded as a distorted year (the AAPL FY2002 test): it leaves the EPS history and its own days leave the P/E window"
+   }
+  },
+  {
+   "quarter": "Q1 FY15",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-02-26",
+   "source": "V55",
+   "release": "Feb 25",
+   "release_time": "after the close on Feb 25: accepted 16:23 ET; public before the open of the next trading day",
+   "period_end": "2015-02-01",
+   "raw": {
+    "sales_m": 1635,
+    "sales_prior_m": 709,
+    "sales_prev_q_m": 1590,
+    "cogs_m": 809,
+    "cogs_prior_m": 370,
+    "rd_m": 235,
+    "rd_prior_m": 107,
+    "sga_m": 117,
+    "sga_prior_m": 74,
+    "op_income_m": 401,
+    "op_income_prior_m": 139,
+    "inventory_m": 500,
+    "inventory_prior_m": 286
+   },
+   "sales_b": 1.635,
+   "sales_pct": 130.6,
+   "seq_pct": 2.8,
+   "gross_margin": 50.52,
+   "gross_margin_bp": 270.6,
+   "op_margin": 24.53,
+   "op_margin_bp": 492.1,
+   "opex_pct": 94.5,
+   "opex_gap_pp": -36.1,
+   "inventory_b": 0.5,
+   "inventory_pct": 74.8,
+   "inventory_gap_pp": -55.8,
+   "inventory_note": "inventory $500M (February 1, 2015) vs $286M (February 2, 2014, the Q1 FY14 release)",
+   "eps_q": 1.22,
+   "eps_q_prior": 0.53,
+   "diluted_shares_m": 278,
+   "cash_b": 2.569,
+   "ltd_b": 4.531,
+   "extra_sources": [
+    "V46"
+   ],
+   "sales_note": "net revenue $1,635M vs $709M: 'an increase of 131 percent from $709 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.22 vs $0.53",
+   "shares_note": "diluted shares 278M in Q1 FY15",
+   "next_print": "Q2 FY15 print",
+   "cash_return_text": "$0.35 a share paid on December 31, 2014 (about $89 million); long-term debt $4,531M at February 1, 2015"
+  },
+  {
+   "quarter": "Q2 FY15",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-05-29",
+   "source": "V57",
+   "release": "May 28",
+   "release_time": "before the open on May 28 (the 8-K accepted 07:24 ET carried the release without its financial statements); the full release, with a corrected GAAP gross margin guide, in the 8-K/A accepted 19:20 ET, after the close: public before the open of the next trading day",
+   "period_end": "2015-05-03",
+   "raw": {
+    "sales_m": 1614,
+    "sales_prior_m": 701,
+    "sales_prev_q_m": 1635,
+    "cogs_m": 768,
+    "cogs_prior_m": 344,
+    "rd_m": 251,
+    "rd_prior_m": 114,
+    "sga_m": 108,
+    "sga_prior_m": 67,
+    "op_income_m": 418,
+    "op_income_prior_m": 160,
+    "inventory_m": 490,
+    "inventory_prior_m": 301
+   },
+   "sales_b": 1.614,
+   "sales_pct": 130.2,
+   "seq_pct": -1.3,
+   "gross_margin": 52.42,
+   "gross_margin_bp": 148.9,
+   "op_margin": 25.9,
+   "op_margin_bp": 307.4,
+   "opex_pct": 98.3,
+   "opex_gap_pp": -31.9,
+   "inventory_b": 0.49,
+   "inventory_pct": 62.8,
+   "inventory_gap_pp": -67.5,
+   "inventory_note": "inventory $490M (May 3, 2015) vs $301M (May 4, 2014, the Q2 FY14 release)",
+   "eps_q": 1.19,
+   "eps_q_prior": 0.61,
+   "diluted_shares_m": 284,
+   "cash_b": 2.508,
+   "ltd_b": 3.926,
+   "extra_sources": [
+    "V48"
+   ],
+   "sales_note": "net revenue $1,614M vs $701M: 'an increase of 130 percent from $701 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.19 vs $0.61",
+   "shares_note": "diluted shares 284M in Q2 FY15",
+   "next_print": "Q3 FY15 print",
+   "cash_return_text": "$0.38 a share paid on March 31, 2015 (about $99 million); long-term debt $3,926M at May 3, 2015"
+  },
+  {
+   "quarter": "Q3 FY15",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-08-27",
+   "source": "V59",
+   "release": "Aug 26",
+   "release_time": "after the close on Aug 26: accepted 16:20 ET; public before the open of the next trading day",
+   "period_end": "2015-08-02",
+   "raw": {
+    "sales_m": 1735,
+    "sales_prior_m": 1269,
+    "sales_prev_q_m": 1614,
+    "cogs_m": 851,
+    "cogs_prior_m": 876,
+    "rd_m": 276,
+    "rd_prior_m": 240,
+    "sga_m": 143,
+    "sga_prior_m": 137,
+    "op_income_m": 299,
+    "op_income_prior_m": -162,
+    "inventory_m": 507,
+    "inventory_prior_m": 482
+   },
+   "sales_b": 1.735,
+   "sales_pct": 36.7,
+   "seq_pct": 7.5,
+   "gross_margin": 50.95,
+   "gross_margin_bp": 1998.2,
+   "op_margin": 17.23,
+   "op_margin_bp": 2999.9,
+   "opex_pct": 11.1,
+   "opex_gap_pp": -25.6,
+   "inventory_b": 0.507,
+   "inventory_pct": 5.2,
+   "inventory_gap_pp": -31.5,
+   "inventory_note": "inventory $507M (August 2, 2015) vs $482M (August 3, 2014, the Q3 FY14 release)",
+   "eps_q": 0.85,
+   "eps_q_prior": -0.48,
+   "diluted_shares_m": 287,
+   "cash_b": 1.354,
+   "ltd_b": 3.915,
+   "extra_sources": [
+    "V50"
+   ],
+   "sales_note": "net revenue $1,735M vs $1,269M: 'an increase of 37 percent from $1,269 million in the same quarter last year', with Emulex from May 5, 2015",
+   "eps_note": "diluted EPS from continuing operations $0.85 vs $(0.48)",
+   "shares_note": "diluted shares 287M in Q3 FY15",
+   "next_print": "Q4 FY15 print",
+   "cash_return_text": "$0.40 a share paid on June 30, 2015 ($104 million); long-term debt $3,915M at August 2, 2015"
+  },
+  {
+   "quarter": "Q4 FY15",
+   "fy": 2015,
+   "q": 4,
+   "published": "2015-12-03",
+   "source": "V61",
+   "release": "Dec 2",
+   "release_time": "after the close on Dec 2: accepted 16:05 ET; public before the open of the next trading day",
+   "period_end": "2015-11-01",
+   "raw": {
+    "sales_m": 1840,
+    "sales_prior_m": 1590,
+    "sales_prev_q_m": 1735,
+    "cogs_m": 843,
+    "cogs_prior_m": 802,
+    "rd_m": 287,
+    "rd_prior_m": 234,
+    "sga_m": 118,
+    "sga_prior_m": 129,
+    "op_income_m": 514,
+    "op_income_prior_m": 301,
+    "inventory_m": 524,
+    "inventory_prior_m": 519
+   },
+   "sales_b": 1.84,
+   "sales_pct": 15.7,
+   "seq_pct": 6.1,
+   "gross_margin": 54.18,
+   "gross_margin_bp": 462.5,
+   "op_margin": 27.93,
+   "op_margin_bp": 900.4,
+   "opex_pct": 11.6,
+   "opex_gap_pp": -4.2,
+   "inventory_b": 0.524,
+   "inventory_pct": 1.0,
+   "inventory_gap_pp": -14.8,
+   "inventory_note": "inventory $524M (November 1, 2015) vs $519M (November 2, 2014)",
+   "eps_q": 1.64,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 287,
+   "cash_b": 1.822,
+   "ltd_b": 3.903,
+   "sales_note": "net revenue $1,840M vs $1,590M: 'an increase of 16 percent from $1,590 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.64 vs $0.50",
+   "shares_note": "diluted shares 287M in Q4 FY15",
+   "next_print": "Q1 FY16 print",
+   "cash_return_text": "$0.42 a share paid on September 30, 2015 ($116 million); long-term debt $3,903M at November 1, 2015",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 4.95,
+    "revenue_usd_b": 6.824,
+    "diluted_shares_m": 281,
+    "op_margin": 23.92,
+    "op_margin_note": "FY15 income from operations $1632M / net revenue $6,824M (Q4 FY15 release)",
+    "pretax_margin": 21.5,
+    "pretax_margin_note": "FY15 income before income taxes $1467M / $6,824M (Q4 FY15 release)",
+    "gross_margin": 52.07,
+    "sales_growth": 59.9,
+    "normalization_note": "FY15 from the Q4 FY15 release: GAAP $4.95 from continuing operations (net $4.85)"
+   }
+  },
+  {
+   "quarter": "Q1 FY16",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-03-04",
+   "source": "V65",
+   "release": "Mar 3",
+   "release_time": "after the close on Mar 3: accepted 16:07 ET; public before the open of the next trading day",
+   "period_end": "2016-01-31",
+   "raw": {
+    "sales_m": 1771,
+    "sales_prior_m": 1635,
+    "sales_prev_q_m": 1840,
+    "cogs_m": 830,
+    "cogs_prior_m": 809,
+    "rd_m": 267,
+    "rd_prior_m": 235,
+    "sga_m": 114,
+    "sga_prior_m": 117,
+    "op_income_m": 475,
+    "op_income_prior_m": 401,
+    "inventory_m": 490,
+    "inventory_prior_m": 500
+   },
+   "sales_b": 1.771,
+   "sales_pct": 8.3,
+   "seq_pct": -3.7,
+   "gross_margin": 53.13,
+   "gross_margin_bp": 261.4,
+   "op_margin": 26.82,
+   "op_margin_bp": 229.5,
+   "opex_pct": 8.2,
+   "opex_gap_pp": -0.1,
+   "inventory_b": 0.49,
+   "inventory_pct": -2.0,
+   "inventory_gap_pp": -10.3,
+   "inventory_note": "inventory $490M (January 31, 2016) vs $500M (February 1, 2015, the Q1 FY15 release)",
+   "eps_q": 1.3,
+   "eps_q_prior": 1.22,
+   "diluted_shares_m": 289,
+   "cash_b": 2.169,
+   "ltd_b": 3.892,
+   "extra_sources": [
+    "V55"
+   ],
+   "sales_note": "net revenue $1,771M vs $1,635M: 'an increase of 8 percent from $1,635 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.30 vs $1.22",
+   "shares_note": "diluted shares 289M in Q1 FY16",
+   "next_print": "Q2 FY16 print",
+   "cash_return_text": "$0.44 a share paid on December 30, 2015 ($122 million); long-term debt $3,892M at January 31, 2016 (before the BRCM financing)"
+  },
+  {
+   "quarter": "Q2 FY16",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-06-03",
+   "source": "V66",
+   "release": "Jun 2",
+   "release_time": "after the close on Jun 2: accepted 16:07 ET; public before the open of the next trading day",
+   "period_end": "2016-05-01",
+   "raw": {
+    "sales_m": 3541,
+    "sales_prior_m": 1614,
+    "sales_prev_q_m": 1771,
+    "cogs_m": 2495,
+    "cogs_prior_m": 768,
+    "rd_m": 787,
+    "rd_prior_m": 251,
+    "sga_m": 238,
+    "sga_prior_m": 108,
+    "op_income_m": -1001,
+    "op_income_prior_m": 418,
+    "inventory_m": 1467,
+    "inventory_prior_m": 490
+   },
+   "sales_b": 3.541,
+   "sales_pct": 119.4,
+   "seq_pct": 99.9,
+   "gross_margin": 29.54,
+   "gross_margin_bp": -2287.7,
+   "op_margin": -28.27,
+   "op_margin_bp": -5416.7,
+   "opex_pct": 185.5,
+   "opex_gap_pp": 66.1,
+   "inventory_b": 1.467,
+   "inventory_pct": 199.4,
+   "inventory_gap_pp": 80.0,
+   "inventory_note": "inventory $1,467M (May 1, 2016) vs $490M (May 3, 2015, the Q2 FY15 release)",
+   "eps_q": -2.93,
+   "eps_q_prior": 1.19,
+   "diluted_shares_m": 415,
+   "cash_b": 2.041,
+   "ltd_b": 14.664,
+   "extra_sources": [
+    "V57"
+   ],
+   "sales_note": "net revenue $3,541M vs $1,614M: 'an increase of 119 percent from $1,614 million in the same quarter last year', with BRCM from February 1, 2016",
+   "eps_note": "diluted EPS from continuing operations $(2.93) vs $1.19",
+   "shares_note": "diluted shares 415M in Q2 FY16",
+   "next_print": "Q3 FY16 print",
+   "cash_return_text": "$0.49 a share paid on March 31, 2016 ($193 million), and the same per restricted exchangeable partnership unit ($11 million); long-term debt $14,664M at May 1, 2016"
+  },
+  {
+   "quarter": "Q3 FY16",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-09-02",
+   "source": "V67",
+   "release": "Sep 1",
+   "release_time": "after the close on Sep 1: accepted 16:10 ET; public before the open of the next trading day",
+   "period_end": "2016-07-31",
+   "raw": {
+    "sales_m": 3792,
+    "sales_prior_m": 1735,
+    "sales_prev_q_m": 3541,
+    "cogs_m": 2010,
+    "cogs_prior_m": 851,
+    "rd_m": 814,
+    "rd_prior_m": 276,
+    "sga_m": 230,
+    "sga_prior_m": 143,
+    "op_income_m": -264,
+    "op_income_prior_m": 299,
+    "inventory_m": 1306,
+    "inventory_prior_m": 507
+   },
+   "sales_b": 3.792,
+   "sales_pct": 118.6,
+   "seq_pct": 7.1,
+   "gross_margin": 46.99,
+   "gross_margin_bp": -395.7,
+   "op_margin": -6.96,
+   "op_margin_bp": -2419.5,
+   "opex_pct": 149.2,
+   "opex_gap_pp": 30.6,
+   "inventory_b": 1.306,
+   "inventory_pct": 157.6,
+   "inventory_gap_pp": 39.0,
+   "inventory_note": "inventory $1,306M (July 31, 2016) vs $507M (August 2, 2015, the Q3 FY15 release)",
+   "eps_q": -0.72,
+   "eps_q_prior": 0.85,
+   "diluted_shares_m": 419,
+   "cash_b": 1.961,
+   "ltd_b": 13.381,
+   "extra_sources": [
+    "V59"
+   ],
+   "sales_note": "net revenue $3,792M vs $1,735M: 'an increase of 119 percent from $1,735 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $(0.72) vs $0.85",
+   "shares_note": "diluted shares 419M in Q3 FY16",
+   "next_print": "Q4 FY16 print",
+   "cash_return_text": "$0.50 a share paid on June 30, 2016 ($199 million), and the same per restricted exchangeable partnership unit ($12 million); long-term debt $13,381M at July 31, 2016"
+  },
+  {
+   "quarter": "Q4 FY16",
+   "fy": 2016,
+   "q": 4,
+   "published": "2016-12-09",
+   "source": "V68",
+   "release": "Dec 8",
+   "release_time": "after the close on Dec 8: accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2016-10-30",
+   "raw": {
+    "sales_m": 4136,
+    "sales_prior_m": 1840,
+    "sales_prev_q_m": 3792,
+    "cogs_m": 1965,
+    "cogs_prior_m": 843,
+    "rd_m": 806,
+    "rd_prior_m": 287,
+    "sga_m": 224,
+    "sga_prior_m": 118,
+    "op_income_m": 381,
+    "op_income_prior_m": 514,
+    "inventory_m": 1400,
+    "inventory_prior_m": 524
+   },
+   "sales_b": 4.136,
+   "sales_pct": 124.8,
+   "seq_pct": 9.1,
+   "gross_margin": 52.49,
+   "gross_margin_bp": -169.4,
+   "op_margin": 9.21,
+   "op_margin_bp": -1872.3,
+   "opex_pct": 154.3,
+   "opex_gap_pp": 29.5,
+   "inventory_b": 1.4,
+   "inventory_pct": 167.2,
+   "inventory_gap_pp": 42.4,
+   "inventory_note": "inventory $1,400M (October 30, 2016) vs $524M (November 1, 2015)",
+   "eps_q": -1.44,
+   "eps_q_prior": 1.64,
+   "diluted_shares_m": 421,
+   "cash_b": 3.097,
+   "ltd_b": 13.188,
+   "sales_note": "net revenue $4,136M vs $1,840M: 'an increase of 125 percent from $1,840 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $(1.44) vs $1.64",
+   "shares_note": "diluted shares 421M in Q4 FY16",
+   "next_print": "Q1 FY17 print",
+   "cash_return_text": "$0.51 a share paid on September 30, 2016 ($202 million), and the same per restricted exchangeable partnership unit ($11 million); the interim dividend doubled to $1.02; long-term debt $13,188M at October 30, 2016",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": null,
+    "excluded_note": "a loss of $(4.57) per diluted share from continuing operations, the year of the BRCM acquisition ($1,185M of inventory step-up charges, $996M of restructuring, impairment and disposal charges); no published EPS excluding only one-off items",
+    "revenue_usd_b": 13.24,
+    "diluted_shares_m": 383,
+    "op_margin": -3.09,
+    "op_margin_note": "FY16 operating income $(409)M / net revenue $13,240M (Q4 FY16 release)",
+    "pretax_margin": -8.36,
+    "pretax_margin_note": "FY16 income from continuing operations before income taxes $(1,107)M / $13,240M (Q4 FY16 release)",
+    "gross_margin": 44.86,
+    "sales_growth": 94.0,
+    "normalization_note": "FY16 from the Q4 FY16 release: a loss of $(4.57) per diluted share from continuing operations, the year of the BRCM acquisition ($1,185M of inventory step-up charges, $996M of restructuring, impairment and disposal charges); no published EPS excluding only one-off items; excluded: it leaves the EPS history and its own days leave the P/E window"
+   }
   }
  ],
  "guides": [
@@ -1922,6 +3416,429 @@
    ],
    "quote": "Sequential Change in Net Revenue | Down 5% to 9%",
    "display": "GAAP gross margin 47.5% plus/minus 1 point; operating expenses $151M; interest and other $1M; taxes $7M; diluted share count 251M"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-02-27",
+   "source": "V36",
+   "doc": "Q1 FY13 release",
+   "quarter": "Q2 FY13",
+   "seq_pct": [
+    -5,
+    -2
+   ],
+   "base_quarter": "Q1 FY13",
+   "base_sales_m": 576,
+   "level_m": [
+    547.2,
+    564.48
+   ],
+   "prior_label": "Q2 FY12",
+   "prior_sales_m": 577,
+   "prior_source": "V29",
+   "yoy_pct": [
+    -5.2,
+    -2.2
+   ],
+   "quote": "Sequential Change in Net Revenue | Down 2% to 5% | Down 2% to 5%",
+   "display": "GAAP gross margin 47.5% plus/minus 1%; operating expenses $153M; interest and other $1M; taxes $6M; diluted share count 252M"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-05-30",
+   "source": "V38",
+   "doc": "Q2 FY13 release",
+   "quarter": "Q3 FY13",
+   "seq_pct": [
+    6,
+    9
+   ],
+   "base_quarter": "Q2 FY13",
+   "base_sales_m": 562,
+   "level_m": [
+    595.72,
+    612.58
+   ],
+   "prior_label": "Q3 FY12",
+   "prior_sales_m": 606,
+   "prior_source": "V31",
+   "yoy_pct": [
+    -1.7,
+    1.1
+   ],
+   "quote": "Sequential Change in Net Revenue | Up 6% to 9% | Up 6% to 9%",
+   "display": "GAAP gross margin 48.0% plus/minus 1%; operating expenses $156M; interest and other $1M; taxes $6M; diluted share count 251M; excludes the pending CyOptics acquisition"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-15",
+   "source": "V40",
+   "doc": "guidance 8-K",
+   "quarter": "Q3 FY13",
+   "seq_pct": [
+    6,
+    9
+   ],
+   "base_quarter": "Q2 FY13",
+   "base_sales_m": 562,
+   "level_m": [
+    595.72,
+    612.58
+   ],
+   "prior_label": "Q3 FY12",
+   "prior_sales_m": 606,
+   "prior_source": "V31",
+   "yoy_pct": [
+    -1.7,
+    1.1
+   ],
+   "quote": "the Company also affirmed third quarter fiscal year guidance originally provided on May 29, 2013",
+   "display": "the Q2 FY13 release's standalone guide affirmed; a non-GAAP outlook for CyOptics alone from June 29 to August 4, 'in addition to' it: net revenue $18M plus/minus 10%, gross margin 32% plus/minus 2%, operating expenses $3M to $4M (no total is derived)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-08-28",
+   "source": "V41",
+   "doc": "Q3 FY13 release",
+   "quarter": "Q4 FY13",
+   "seq_pct": [
+    12,
+    15
+   ],
+   "base_quarter": "Q3 FY13",
+   "base_sales_m": 644,
+   "level_m": [
+    721.28,
+    740.6
+   ],
+   "prior_label": "Q4 FY12",
+   "prior_sales_m": 618,
+   "prior_source": "V33",
+   "yoy_pct": [
+    16.7,
+    19.8
+   ],
+   "quote": "Sequential Change in Net Revenue | Up 12% to 15% | Up 12% to 15%",
+   "display": "GAAP gross margin 46.0% plus/minus 1%; operating expenses $178M; taxes $6M; diluted share count 253M"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-12-05",
+   "source": "V43",
+   "doc": "Q4 FY13 release",
+   "quarter": "Q1 FY14",
+   "seq_pct": [
+    -6,
+    -3
+   ],
+   "base_quarter": "Q4 FY13",
+   "base_sales_m": 738,
+   "level_m": [
+    693.72,
+    715.86
+   ],
+   "prior_label": "Q1 FY13",
+   "prior_sales_m": 576,
+   "prior_source": "V36",
+   "yoy_pct": [
+    20.4,
+    24.3
+   ],
+   "quote": "Sequential Change in Net Revenue | Down 3% to 6% | Down 3% to 6%",
+   "display": "GAAP gross margin 47.0% plus/minus 1%; operating expenses $181M; taxes $12M; diluted share count 255M"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-02-26",
+   "source": "V46",
+   "doc": "Q1 FY14 release",
+   "quarter": "Q2 FY14",
+   "seq_pct": [
+    -6,
+    -3
+   ],
+   "base_quarter": "Q1 FY14",
+   "base_sales_m": 709,
+   "level_m": [
+    666.46,
+    687.73
+   ],
+   "prior_label": "Q2 FY13",
+   "prior_sales_m": 562,
+   "prior_source": "V38",
+   "yoy_pct": [
+    18.6,
+    22.4
+   ],
+   "quote": "Sequential Change in Net Revenue | Down 3% to 6% | Down 3% to 6%",
+   "display": "GAAP gross margin 48.5% plus/minus 1%; operating expenses $201M; taxes $9M; diluted share count 258M"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-05-30",
+   "source": "V48",
+   "doc": "Q2 FY14 release",
+   "quarter": "Q3 FY14",
+   "level_stated": true,
+   "level_m": [
+    1300,
+    1400
+   ],
+   "prior_label": "Q3 FY13",
+   "prior_sales_m": 644,
+   "prior_source": "V41",
+   "yoy_pct": [
+    101.9,
+    117.4
+   ],
+   "quote": "Revenue Range | $1.3B - $1.4B | $19M | $1.3B - $1.4B",
+   "display": "including LSI; GAAP gross margin 24.0% plus/minus 1% (with $210 million of LSI inventory step-up); operating expenses $691M; interest and other $54M; taxes -$50M; diluted share count 268M"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-08-29",
+   "source": "V50",
+   "doc": "Q3 FY14 release",
+   "quarter": "Q4 FY14",
+   "seq_pct": [
+    18,
+    22
+   ],
+   "base_quarter": "Q3 FY14",
+   "base_sales_m": 1269,
+   "level_m": [
+    1497.42,
+    1548.18
+   ],
+   "prior_label": "Q4 FY13",
+   "prior_sales_m": 738,
+   "prior_source": "V43",
+   "yoy_pct": [
+    102.9,
+    109.8
+   ],
+   "quote": "Revenue Range | Up 18% to 22% | $20M | Up 18% to 22%",
+   "display": "continuing operations, including PLX; GAAP gross margin 46.5% plus/minus 1%; operating expenses $479M; interest and other $53M; taxes -$55M; diluted share count 271M"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-12-04",
+   "source": "V52",
+   "doc": "Q4 FY14 release",
+   "quarter": "Q1 FY15",
+   "seq_pct": [
+    0,
+    4
+   ],
+   "base_quarter": "Q4 FY14",
+   "base_sales_m": 1590,
+   "level_m": [
+    1590.0,
+    1653.6
+   ],
+   "prior_label": "Q1 FY14",
+   "prior_sales_m": 709,
+   "prior_source": "V46",
+   "yoy_pct": [
+    124.3,
+    133.2
+   ],
+   "quote": "Sequential Change in Net Revenue | Flat to up 4% | $21M | Flat to up 4%",
+   "display": "continuing operations; GAAP gross margin 48% plus/minus 1%; operating expenses $432M; interest and other $56M; taxes $34M; diluted share count 276M"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-02-26",
+   "source": "V55",
+   "doc": "Q1 FY15 release",
+   "quarter": "Q2 FY15",
+   "seq_pct": [
+    -4,
+    0
+   ],
+   "base_quarter": "Q1 FY15",
+   "base_sales_m": 1635,
+   "level_m": [
+    1569.6,
+    1635.0
+   ],
+   "prior_label": "Q2 FY14",
+   "prior_sales_m": 701,
+   "prior_source": "V48",
+   "yoy_pct": [
+    123.9,
+    133.2
+   ],
+   "quote": "Sequential Change in Net Revenue | down 4% to flat | $33M | down 3% to up 1%",
+   "display": "continuing operations; GAAP gross margin 50.0% plus/minus 1%; operating expenses $422M; interest and other $49M; taxes $30M; diluted share count 282M"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-05-29",
+   "source": "V57",
+   "doc": "Q2 FY15 release (8-K/A)",
+   "quarter": "Q3 FY15",
+   "level_stated": true,
+   "level_m": [
+    1704,
+    1754
+   ],
+   "prior_label": "Q3 FY14",
+   "prior_sales_m": 1269,
+   "prior_source": "V50",
+   "yoy_pct": [
+    34.3,
+    38.2
+   ],
+   "quote": "Sequential Change in Net Revenue | 1,729M +/-$25M | 11M | 1,740M +/-$25M",
+   "display": "$1,729M plus/minus $25M, including Emulex; GAAP gross margin 49.5% plus/minus 1% (corrected from 52.75% in the 8-K of that morning); operating expenses $513M; interest and other $42M; taxes $15M; diluted share count 287M"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-08-27",
+   "source": "V59",
+   "doc": "Q3 FY15 release",
+   "quarter": "Q4 FY15",
+   "level_stated": true,
+   "level_m": [
+    1813,
+    1863
+   ],
+   "prior_label": "Q4 FY14",
+   "prior_sales_m": 1590,
+   "prior_source": "V52",
+   "yoy_pct": [
+    14.0,
+    17.2
+   ],
+   "quote": "Net Revenue | 1,838M +/- $25M | 12M | 1,850M +/- $25M",
+   "display": "$1,838M plus/minus $25M; GAAP gross margin 52.75% plus/minus 1%; operating expenses $485M; interest and other $38M; taxes $29M; diluted share count 289M"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-12-03",
+   "source": "V61",
+   "doc": "Q4 FY15 release",
+   "quarter": "Q1 FY16",
+   "level_stated": true,
+   "level_m": [
+    1743,
+    1793
+   ],
+   "prior_label": "Q1 FY15",
+   "prior_sales_m": 1635,
+   "prior_source": "V55",
+   "yoy_pct": [
+    6.6,
+    9.7
+   ],
+   "quote": "Net Revenue | $1,768M +/-$25M | $12M | $1,780 +/-$25M",
+   "display": "$1,768M plus/minus $25M; GAAP gross margin 52.75% plus/minus 1%; operating expenses $472M; interest and other $84M; taxes $30M; diluted share count 289M"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-03-04",
+   "source": "V65",
+   "doc": "Q1 FY16 release",
+   "quarter": "Q2 FY16",
+   "level_stated": true,
+   "level_m": [
+    3458,
+    3608
+   ],
+   "prior_label": "Q2 FY15",
+   "prior_sales_m": 1614,
+   "prior_source": "V57",
+   "yoy_pct": [
+    114.3,
+    123.5
+   ],
+   "quote": "Net Revenue | $3,533M +/- $75M | $17M | $3,550 +/- $75M",
+   "display": "$3,533M plus/minus $75M, the combined Avago and BRCM businesses; GAAP gross margin 30.75% plus/minus 1%; operating expenses $2,147M; interest and other $302M; taxes $(120)M; diluted share count 428M"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-06-03",
+   "source": "V66",
+   "doc": "Q2 FY16 release",
+   "quarter": "Q3 FY16",
+   "level_stated": true,
+   "level_m": [
+    3665,
+    3815
+   ],
+   "prior_label": "Q3 FY15",
+   "prior_sales_m": 1735,
+   "prior_source": "V59",
+   "yoy_pct": [
+    111.2,
+    119.9
+   ],
+   "quote": "Net revenue | $3,740M +/- $75M | $10M | $3,750M +/- $75M",
+   "display": "$3,740M plus/minus $75M; GAAP gross margin 43.75% plus/minus 1%; operating expenses $1,812M; interest and other $161M; taxes $(88)M; diluted share count 419M"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-09-02",
+   "source": "V67",
+   "doc": "Q3 FY16 release",
+   "quarter": "Q4 FY16",
+   "level_stated": true,
+   "level_m": [
+    4015,
+    4165
+   ],
+   "prior_label": "Q4 FY15",
+   "prior_sales_m": 1840,
+   "prior_source": "V61",
+   "yoy_pct": [
+    118.2,
+    126.4
+   ],
+   "quote": "Net revenue | $4,090M +/- $75M | $10M | $4,100M +/- $75M",
+   "display": "$4,090M plus/minus $75M; GAAP gross margin 52.25% plus/minus 1%; operating expenses $1,450M; interest expense and other $153M; taxes $(295)M; diluted share count 434M"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-11-02",
+   "source": "V70",
+   "doc": "guidance update 8-K",
+   "quarter": "Q4 FY16",
+   "level_stated": true,
+   "level_m": [
+    4090,
+    4165
+   ],
+   "prior_label": "Q4 FY15",
+   "prior_sales_m": 1840,
+   "prior_source": "V61",
+   "yoy_pct": [
+    122.3,
+    126.4
+   ],
+   "quote": "GAAP net revenue for the fourth quarter fiscal year 2016 is expected to be between $4,090 to $4,165 million, compared to the prior range of $4,015 million to $4,165 million",
+   "display": "tightened to the upper end of the Q3 FY16 release's range 'based on current business trends and conditions'; the fourth-quarter non-GAAP guidance affirmed"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-12-09",
+   "source": "V68",
+   "doc": "Q4 FY16 release",
+   "quarter": "Q1 FY17",
+   "level_stated": true,
+   "level_m": [
+    3990,
+    4140
+   ],
+   "prior_label": "Q1 FY16",
+   "prior_sales_m": 1771,
+   "prior_source": "V65",
+   "yoy_pct": [
+    125.3,
+    133.8
+   ],
+   "quote": "Net revenue | 4,065M +/- $75M | 10M | 4,075M +/- $75M",
+   "display": "$4,065M plus/minus $75M; GAAP gross margin 47.0% plus/minus 1%; operating expenses $1,473M; interest expense and other $101M; taxes $113M; diluted share count 437M"
   }
  ],
  "dividends": [
@@ -1978,10 +3895,124 @@
    "source": "V34",
    "quarterly": 0.17,
    "note": "$0.17 quarterly, declared on December 6, 2012 (secondary offering prospectus)"
+  },
+  {
+   "published": "2013-03-15",
+   "source": "V37",
+   "quarterly": 0.19,
+   "note": "$0.19 quarterly, declared on March 13, 2013 (Q1 FY13 10-Q)"
+  },
+  {
+   "published": "2013-06-10",
+   "source": "V39",
+   "quarterly": 0.21,
+   "note": "$0.21 quarterly, declared on June 5, 2013 (Q2 FY13 10-Q)"
+  },
+  {
+   "published": "2013-09-05",
+   "source": "V42",
+   "quarterly": 0.23,
+   "note": "$0.23 quarterly, announced on September 5, 2013 (8-K)"
+  },
+  {
+   "published": "2013-12-13",
+   "source": "V44",
+   "quarterly": 0.25,
+   "note": "$0.25 quarterly, announced on December 11, 2013 (8-K)"
+  },
+  {
+   "published": "2014-03-06",
+   "source": "V47",
+   "quarterly": 0.27,
+   "note": "$0.27 quarterly, announced on March 5, 2014 (8-K)"
+  },
+  {
+   "published": "2014-06-11",
+   "source": "V49",
+   "quarterly": 0.29,
+   "note": "$0.29 quarterly, declared on June 4, 2014 (Q2 FY14 10-Q)"
+  },
+  {
+   "published": "2014-09-04",
+   "source": "V51",
+   "quarterly": 0.32,
+   "note": "$0.32 quarterly, announced on September 4, 2014 (8-K)"
+  },
+  {
+   "published": "2014-12-11",
+   "source": "V53",
+   "quarterly": 0.35,
+   "note": "$0.35 quarterly, announced on December 8, 2014 (8-K)"
+  },
+  {
+   "published": "2015-03-05",
+   "source": "V56",
+   "quarterly": 0.38,
+   "note": "$0.38 quarterly, announced on March 5, 2015 (8-K)"
+  },
+  {
+   "published": "2015-06-05",
+   "source": "V58",
+   "quarterly": 0.4,
+   "note": "$0.40 quarterly, announced on June 4, 2015 (8-K)"
+  },
+  {
+   "published": "2015-09-04",
+   "source": "V60",
+   "quarterly": 0.42,
+   "note": "$0.42 quarterly, announced on September 3, 2015 (8-K)"
+  },
+  {
+   "published": "2015-12-09",
+   "source": "V62",
+   "quarterly": 0.44,
+   "note": "$0.44 quarterly, announced on December 8, 2015 (8-K)"
+  },
+  {
+   "published": "2016-03-04",
+   "source": "V65",
+   "quarterly": 0.49,
+   "note": "$0.49 quarterly, announced on March 3, 2016 with the Q1 FY16 results (8-K)"
+  },
+  {
+   "published": "2016-06-03",
+   "source": "V66",
+   "quarterly": 0.5,
+   "note": "$0.50 quarterly, announced on June 2, 2016 with the Q2 FY16 results (8-K)"
+  },
+  {
+   "published": "2016-09-02",
+   "source": "V67",
+   "quarterly": 0.51,
+   "note": "$0.51 quarterly, announced on September 1, 2016 with the Q3 FY16 results (8-K)"
+  },
+  {
+   "published": "2016-12-09",
+   "source": "V68",
+   "quarterly": 1.02,
+   "note": "$1.02 quarterly, doubled, announced on December 8, 2016 with the Q4 FY16 results (8-K)"
   }
  ],
- "events": [],
- "company_names": [],
+ "events": [
+  {
+   "id": "V69",
+   "published": "2016-12-23",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2016 10-K",
+   "risk_quote": "In addition, the shift to cloud-based IT solutions and services, such as hyperscale computing, may adversely affect both our wired infrastructure and enterprise storage segments.",
+   "risk_short": "'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its wired infrastructure and enterprise storage segments",
+   "offering": "it sells into data centers itself: 'In the data center market, our high capacity, low latency, switching silicon supports advanced protocols around virtualization and multi-pathing'",
+   "offering_short": "data-center switching silicon"
+  }
+ ],
+ "company_names": [
+  {
+   "name": "Broadcom Limited",
+   "published": "2016-02-02",
+   "source": "V64"
+  }
+ ],
  "splits": [],
  "rule_t": {
   "_doc": "Rule T over the years the filings report: AVGO listed on 2009-08-06, and its filings published by then report FY2004-FY2008 (FY2004-FY2005 the Predecessor) for the statement of operations and three year-end inventory changes, so each signal has four annual values (three for the inventory gap), not ten. The formula is the LOW/NKE one: XBULL = the best year, BULL = the median, BASE = the worst year, BEAR = one median-to-worst step beyond the worst (mirrored where lower is better); rounded half up to whole percent or points and to 10 bp. Each change comes from the latest filing published by 2009-08-07 that reports both years; FY2006 is the company's published combined year (one Predecessor month and eleven Company months, $1,513M). GAAP as reported: no filing publishes gross or operating margin excluding only the FY2007 asset impairment, and the FY2004 and FY2005 revenue keep the Camera Module Business ($296M and $69M) as published.",

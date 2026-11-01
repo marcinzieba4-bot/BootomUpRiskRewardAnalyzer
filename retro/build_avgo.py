@@ -33,11 +33,17 @@ release, where it is the first trading day after it. Avago released after the cl
 day (its 8-K's acceptance time); in 2009 that day was a Friday, the week's last trading day, so the print meets its close
 (public before the open).
 
+From 2016-02-02 the listed company is Broadcom Limited, the successor issuer to Avago (company_names in the fact sheet). The one
+theme encoding decided so far: the FY2016 10-K names the shift to cloud-based IT as a risk to its own segments (CLOUD, live from
+2012-10-30), so CLOUD joins the watch list (company-acknowledged, no market read); the factor pair nets to zero and the theme signal
+stays at 2/4, so only text changes.
+
 Output goes to staging/retrospective/AVGO until the series is added to the archive (--out archive/retrospective/AVGO).
 
 Usage
   python3 retro/build_avgo.py --weekly 2009-08-03 2009-12-31
   python3 retro/build_avgo.py --weekly 2010-01-04 2012-12-31
+  python3 retro/build_avgo.py --weekly 2013-01-07 2016-12-31
   python3 retro/build_avgo.py 2009-09-04
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/AVGO/<AS_OF>
 """
@@ -173,9 +179,11 @@ def build(as_of, facts, raw, spx, engine, out):
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    # no theme in taxonomy_eras.json is live for an analog semiconductor maker in 2009 (CLOUD from 2012-10-30 is scoped to
-    # on-premise IT, OFFSHORE to IT services, GENAI from 2022-11-30): any event needs its encoding decided first
-    if events:
+    # the one theme encoding decided so far: a 10-K whose risk factors name the shift to cloud-based IT as a risk to the company's
+    # own segments (CLOUD, from the FY2016 10-K; the FY2009-FY2015 10-Ks name cloud only for their own IT service providers) puts
+    # the theme on the watch list. No other theme in taxonomy_eras.json is live for this semiconductor maker in 2009-2016
+    # (OFFSHORE is scoped to IT services, GENAI is live from 2022-11-30): any other kind of event needs its encoding decided first
+    if any(e["kind"] != "cloud_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the AVGO builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
@@ -218,18 +226,19 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd = list(g["yoy_pct"])
         lvl = (f"${g['level_m'][0]:,.1f}M" if g["level_m"][0] == g["level_m"][1] else
                f"${g['level_m'][0]:,.1f}M-${g['level_m'][1]:,.1f}M")
+        prior = f"{g['prior_label']}'s ${g['prior_sales_m']:,}M"
         fwd_label = f"{next_q} revenue guide ({g['doc']})"
         fwd_short, fwd_period = f"{next_q} guide YoY", next_q
-        if g.get("level_stated"):     # a dollar level: read against the year-ago quarter directly (the AAPL rule)
-            seq = f"about {lvl}"
-            guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {lvl} ('{g['quote']}') against {g['prior_label']}'s "
-                          f"${g['prior_sales_m']}M: {_range(fwd)} YoY; display only: {g['display']}; no fiscal-year revenue, EPS or margin guide")
+        if g.get("level_stated"):     # a dollar level or range: read against the year-ago quarter directly (the AAPL rule)
+            seq = f"about {lvl}" if g["level_m"][0] == g["level_m"][1] else lvl
+            guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {lvl} ('{g['quote']}') against {prior}: {_range(fwd)} YoY; "
+                          f"display only: {g['display']}; no fiscal-year revenue, EPS or margin guide")
             cat3 = (f"(3) The {next_q} guide — {seq} ({_range(fwd)} YoY): Avago guides one quarter at a time, in revenue only")
         else:
             sg = lambda x: f"{x:+g}%" if x else "0%"
             seq = sg(g["seq_pct"][0]) if g["seq_pct"][0] == g["seq_pct"][1] else f"{sg(g['seq_pct'][0])} to {sg(g['seq_pct'][1])}"
-            guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']}M ('{g['quote']}'), "
-                          f"i.e. {lvl} against {g['prior_label']}'s ${g['prior_sales_m']}M: {_range(fwd)} YoY; display only: {g['display']}; "
+            guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']:,}M ('{g['quote']}'), "
+                          f"i.e. {lvl} against {prior}: {_range(fwd)} YoY; display only: {g['display']}; "
                           f"no fiscal-year revenue, EPS or margin guide")
             cat3 = (f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): Avago guides one quarter at a time, "
                     f"in revenue only")
@@ -289,12 +298,29 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text: no disruption theme is live for an analog semiconductor maker in 2009 ──
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("A semiconductor downturn shows up in distributor inventories and the\n"
                 "  next-quarter guide first; the bear needs it in gross margin as well.")
     theme_summary = "no disruption theme has dated evidence"
+    for e in [e for e in events if e["kind"] == "cloud_company_acknowledged"][-1:]:
+        # CLOUD is live from 2012-10-30 and scoped to on-premise hardware and storage; the first 10-K whose risk factors name the
+        # shift to cloud-based IT as a risk to the company's own segments (FY2016) puts it on the watch list (the ACN CLOUD rule,
+        # as for LOW and NKE: company-acknowledged, no market read). The factor pair nets to zero and the theme signal stays at
+        # 2/4, so only text changes; re-filing needs dated evidence of market pricing
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "cloud"
+        watch = [{"theme": "CLOUD", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: the company's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                             f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CLOUD) "
+                             "only if dated evidence shows the market pricing cloud substitution of its enterprise storage and "
+                             "networking specifically.")}]
+        factors = [(f"Cloud data centers: {e['offering_short']} — it sells to them as well", 0.2, 0.10),
+                   (f"Shift to cloud-based IT ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "Cloud: net effect on enterprise storage and networking"
+        trigger = "Enterprise data centers move to the cloud faster than its cloud data-center sales grow"
+        theme_summary = "cloud is live and company-acknowledged; no dated evidence ties the multiple to it"
     cat4 = (f"(4) Inventories — {latest['inventory_pct']:+.1f}% against net revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['inventory_gap_pp']:+.1f}pp): write-downs follow if orders slow")
 

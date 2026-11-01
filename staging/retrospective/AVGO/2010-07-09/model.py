@@ -290,7 +290,8 @@ CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)") for i, s in enumer
 
 # ── SEGMENT BRIDGE (current-FY revenues split pro rata to the latest annual actuals; bear flat, bull at the historical revenue CAGR) ──
 _basis = sum(v for _, v, _ in GROUPS)
-SEGMENTS = [(n, f"{lc:+.1f}% net revenue in {GROUPS_BASIS.split()[0]}",
+SEGMENTS = [(n, (f"{lc:+.1f}% net revenue in {GROUPS_BASIS.split()[0]}" if lc is not None else      # a segment new that year:
+                 f"new in {GROUPS_BASIS.split()[0]}, no prior-year revenue"),                       # no growth to show
              round(FY_REVENUE_B * v / _basis, 2),
              round(FY_REVENUE_B * v / _basis, 2), round(FY_REVENUE_B * v / _basis * (1 + REV_CAGR_10Y) ** 2, 2))
             for n, v, lc in GROUPS]
