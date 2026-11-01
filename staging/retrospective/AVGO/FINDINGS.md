@@ -1,11 +1,12 @@
 # AVGO retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the AVGO weekly dates: 22 from 2009-08-07 to 2009-12-31, the first weeks after the
-2009-08-06 listing (no AVGO price exists before it; retro/README.md, "AVGO"), 157 from 2010-01-08 to 2012-12-31 and 208 from
-2013-01-11 to 2016-12-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was
-scored only after its point-in-time build was committed and pushed (2009: b3106d7; 2010-2012: 04c4511; 2013-2016: 06ece35). Prices
-run to 2026-10-30; the 2009 batch's two-year horizons end by 2011-12-30 (three-year: 2012-12-28), the 2010-2012 batch's by
-2014-12-30 (2015-12-30), the 2013-2016 batch's by 2018-12-28 (2019-12-30). Medians of an even count take the upper middle value
+2009-08-06 listing (no AVGO price exists before it; retro/README.md, "AVGO"), 157 from 2010-01-08 to 2012-12-31, 208 from
+2013-01-11 to 2016-12-30 and 209 from 2017-01-06 to 2020-12-31. They are **labels and hypotheses**: never feed them back into the
+method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2009: b3106d7;
+2010-2012: 04c4511; 2013-2016: 06ece35; 2017-2020: 97ab0d1). Prices run to 2026-10-30; the 2009 batch's two-year horizons end by
+2011-12-30 (three-year: 2012-12-28), the 2010-2012 batch's by 2014-12-30 (2015-12-30), the 2013-2016 batch's by 2018-12-28
+(2019-12-30), the 2017-2020 batch's by 2022-12-30 (2023-12-29). Medians of an even count take the upper middle value
 (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2009 (22 dates)
@@ -165,3 +166,55 @@ run to 2026-10-30; the 2009 batch's two-year horizons end by 2011-12-30 (three-y
   inventory step-up and restructuring, a distorted or loss year left out), a GAAP multiple measured against its own history reads
   RICH while the business compounds. Here that call failed on 86 of 86 dates. Test it on other acquirers and periods before any
   method change; never fit it to AVGO's outcomes.
+
+## 2017-2020 (209 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 6 | +41% | +37% to +48% | 6 | 6 | +25% | 0 |
+| class RICH | 203 | +61% | -18% to +231% | 144 | 183 | +30% | 19 |
+| legacy tier BUY | 9 | +41% | +37% to +231% | 9 | 9 | +16% | 0 |
+| legacy tier ACCUMULATE | 2 | +185% | +81% to +185% | 2 | 2 | +127% | 0 |
+| legacy tier WATCHLIST | 21 | +74% | +58% to +180% | 21 | 21 | +40% | 0 |
+| legacy tier AVOID | 177 | +51% | -18% to +132% | 118 | 157 | +26% | 19 |
+| 2017 to the Q1 FY17 print (FY15's $4.95; BASE +122.8%/yr) | 8 | +41% | +37% to +48% | 8 | 8 | +16% | 0 |
+| Q1 FY17 to Q4 FY17 print (FY15's $4.95 for FY17E) | 40 | +24% | +6% to +58% | 10 | 22 | +8% | 17 |
+| Q4 FY17 to Q4 FY18 print (FY17's $4.28, then $4.03, for FY18E) | 52 | +37% | -18% to +81% | 27 | 50 | +22% | 2 |
+| Q4 FY18 to Q4 FY19 print (FY17's $4.03 for FY19E, FY18 excluded) | 53 | +81% | +51% to +98% | 53 | 53 | +45% | 0 |
+| Q4 FY19 to Q4 FY20 print (FY19's $6.46) | 52 | +87% | +21% to +231% | 48 | 52 | +69% | 0 |
+| from the Q4 FY20 print (FY20's $6.33) | 4 | +35% | +34% to +42% | 4 | 4 | +26% | 0 |
+
+- **RICH failed on 184 of its 203 dates, and every call it held came from 2017-2018.** The RICH dates returned a median +61% over
+  two years, cleared the hurdle on 144 and beat SPY on 183. The 19 that held are 17 dates from 2017-05-26 to 2017-11-24, which
+  returned +6% to +26% over two years and lagged SPY by 1-11pp, and 2018-03-16 and 2018-03-23 (-17.5% and -11.0%, two years that
+  ended in the fall of March 2020). The six FAIR dates of January-February 2017 beat SPY by 15-29pp, so FAIR's call (within 15pp)
+  held on none. No date read CHEAP.
+- **The RICH calls rested on a GAAP anchor from an earlier fiscal year.** FY15's $4.95 stood for FY17E, FY17's $4.03 for FY18E and,
+  with FY2018 excluded, for FY19E; the multiple on it sat at the 77th-100th percentile of the stock's own range (42-79x) from March
+  2017 to December 2019. In 2019 the FY2019 GAAP margin guides, which carry CA's amortization, also cut BASE to -12% to -66%/yr.
+  From those 53 FY19E dates the stock returned +51% to +98% over two years and beat SPY by 3-50pp.
+- **The FY2018 call, seen afterwards.** Keeping FY2018 at GAAP $28.48 (the literal AAPL FY2002 test, which a benefit cannot meet)
+  would have turned all 53 dates from 2018-12-07 to 2019-12-06 CHEAP (retro/README.md, "AVGO 2017-2020"). CHEAP would have held on
+  all 53; the RICH calls as built held on none of them. It is the costliest encoding call of the batch, and its rule (the mirror
+  of the test for one-off benefits) was added for this case. That is a fact about one stock in one year, not a reason to change the
+  encoding: the call was decided before scoring and stays, and changing a rule means a new method version tested elsewhere. BASE on
+  the latest quarter's growth would have moved 13 tiers of March-May 2017 from AVOID to BUY and no class; those dates returned a
+  median +42% over two years and beat SPY on 12 of 13.
+- **Every date but nine beat SPY over three years** (+2% to +257%; the nine are spring and summer 2017 entries that lagged by
+  0.1-10.6pp). Over one year 145 of the 209 beat it; 39 of the 52 dates of 2017 lagged. The deepest fall within two years was
+  -48.8%, from the February 2020 high to the March 2020 low, seen from every date between 2018-03-23 and 2019-12-06.
+- **The signal composite ranked the outcomes backwards, and the price did not rank them across years.** Across the 209 dates:
+  - the proxy composite ranks the two-year returns at Spearman -0.54 (-0.53 on the m12-24 average): it read 3.05-3.55 on the
+    FY17-FY18 prints, whose 65 dates returned a median +25%, and 2.35-2.55 on the FY19-FY20 prints, whose 77 dates returned +86%.
+    That is the pro-cyclical lean recorded for 2010-2012, absent in 2013-2016 and back here, still a hypothesis;
+  - the adjusted gap ranks them at -0.48 (-0.41), the EPP gap at -0.23 (-0.41), Ratio B at -0.21 (-0.28) and the conservative
+    case at about 0 (+0.25);
+  - the entry price ranks them at +0.25 (+0.43): the later entries earned more, because 2019 and 2020 were followed by stronger
+    years than 2017. Within each year it ranks them at -0.23 to -0.93, the "buy lower" read of the earlier batches.
+- **BULL was the nearest anchor at two years** on 130 dates, XBULL on 71 and BASE on 8; BEAR on none. The two-year price was 4.1-12.0
+  times the BEAR price and 0.53-3.66 times the BULL price.
+- **Hypothesis for the live model, not an input:** the 2013-2016 hypothesis (a GAAP multiple measured against its own history reads
+  RICH while a serial acquirer compounds) held up again: RICH failed on 184 of 203 dates here and on 270 of 289 since 2013. The two
+  encodings that the method's GAAP basis forces on such a company, an anchor year left out for one-off items and a GAAP margin guide
+  carried as growth, decide the class through them. Test it on other acquirers and periods before any method change; never fit it
+  to AVGO's outcomes.

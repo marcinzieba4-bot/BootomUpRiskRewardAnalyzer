@@ -391,212 +391,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2016-12-16 | $178.42 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.30 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +50.4% | +30.9pp | +34.3% | ✗ |
 | 2016-12-23 | $181.94 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.29 | 0.50x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +43.5% | +32.5pp | +31.6% | ✗ |
 | 2016-12-30 | $176.77 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.31 | 0.47x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +52.6% | +37.4pp | +35.3% | ✗ |
-| 2017-01-06 | $176.59 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.31 | 0.46x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2017-01-13 | $180.45 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.30 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2017-01-20 | $191.08 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.25 | 0.54x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2017-01-27 | $205.71 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.19 | 0.61x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2017-02-03 | $206.16 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.19 | 0.60x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2017-02-10 | $205.52 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.20 | 0.58x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
-| 2017-02-17 | $210.41 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.08 | 0.59x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2017-02-24 | $210.37 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.08 | 0.59x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2017-03-03 | $218.32 | Broadcom Limited Q1 FY17 results | 1.95 | -1.29 | 28.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-03-10 | $226.35 | Broadcom Limited Q1 FY17 results | 1.95 | -1.31 | 148.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-03-17 | $221.18 | Broadcom Limited Q1 FY17 results | 1.95 | -1.29 | 26.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-03-24 | $218.97 | Broadcom Limited Q1 FY17 results | 1.95 | -1.27 | 16.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-03-31 | $218.96 | Broadcom Limited Q1 FY17 results | 1.95 | -1.27 | 15.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-04-07 | $218.25 | Broadcom Limited Q1 FY17 results | 1.95 | -1.25 | 11.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-04-13 | $211.32 | Broadcom Limited Q1 FY17 results | 1.95 | -1.21 | 7.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-04-21 | $217.66 | Broadcom Limited Q1 FY17 results | 1.95 | -1.23 | 10.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-04-28 | $220.81 | Broadcom Limited Q1 FY17 results | 1.95 | -1.24 | 11.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-05-05 | $226.45 | Broadcom Limited Q1 FY17 results | 1.95 | -1.26 | 18.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-05-12 | $235.96 | Broadcom Limited Q1 FY17 results | 1.95 | -1.29 | 95.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-05-19 | $234.10 | Broadcom Limited Q1 FY17 results | 1.95 | -1.27 | 47.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-05-26 | $241.21 | Broadcom Limited Q1 FY17 results | 1.95 | -1.25 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-02 | $254.53 | Broadcom Limited Q2 FY17 results | 3.55 | +0.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-09 | $243.34 | Broadcom Limited Q2 FY17 results | 3.55 | +0.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-16 | $236.25 | Broadcom Limited Q2 FY17 results | 3.55 | +0.40 | 24.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-23 | $245.26 | Broadcom Limited Q2 FY17 results | 3.55 | +0.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-30 | $233.05 | Broadcom Limited Q2 FY17 results | 3.55 | +0.45 | 13.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-07 | $239.62 | Broadcom Limited Q2 FY17 results | 3.55 | +0.41 | 24.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-14 | $250.29 | Broadcom Limited Q2 FY17 results | 3.55 | +0.37 | 1023.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-21 | $253.11 | Broadcom Limited Q2 FY17 results | 3.55 | +0.37 | 100.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-28 | $250.37 | Broadcom Limited Q2 FY17 results | 3.55 | +0.39 | 27.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-04 | $249.17 | Broadcom Limited Q2 FY17 results | 3.55 | +0.41 | 15.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-11 | $244.17 | Broadcom Limited Q2 FY17 results | 3.55 | +0.47 | 7.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-18 | $249.37 | Broadcom Limited Q2 FY17 results | 3.55 | +0.47 | 8.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-25 | $245.59 | Broadcom Limited Q3 FY17 results | 3.35 | +0.33 | 7.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-09-01 | $252.73 | Broadcom Limited Q3 FY17 results | 3.35 | +0.31 | 8.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-09-08 | $244.11 | Broadcom Limited Q3 FY17 results | 3.35 | +0.35 | 5.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-09-15 | $250.55 | Broadcom Limited Q3 FY17 results | 3.35 | +0.33 | 6.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-09-22 | $239.24 | Broadcom Limited Q3 FY17 results | 3.35 | +0.40 | 4.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-09-29 | $242.54 | Broadcom Limited Q3 FY17 results | 3.35 | +0.39 | 4.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-06 | $245.74 | Broadcom Limited Q3 FY17 results | 3.35 | +0.38 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-13 | $247.96 | Broadcom Limited Q3 FY17 results | 3.35 | +0.38 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-20 | $244.24 | Broadcom Limited Q3 FY17 results | 3.35 | +0.40 | 4.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-27 | $252.90 | Broadcom Limited Q3 FY17 results | 3.35 | +0.36 | 5.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-11-03 | $273.63 | Broadcom Limited Q3 FY17 results | 3.35 | +0.26 | 17.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-11-10 | $264.96 | Broadcom Limited Q3 FY17 results | 3.35 | +0.31 | 8.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-11-17 | $271.86 | Broadcom Limited Q3 FY17 results | 3.35 | +0.28 | 13.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-11-24 | $282.38 | Broadcom Limited Q3 FY17 results | 3.35 | +0.23 | 31.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-01 | $271.56 | Broadcom Limited Q3 FY17 results | 3.35 | +0.29 | 11.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-12-08 | $259.91 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-15 | $265.73 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-22 | $262.35 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-29 | $256.90 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-01-05 | $271.62 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-01-12 | $264.29 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-01-19 | $266.39 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-01-26 | $250.79 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.30 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-02-02 | $235.48 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-02-09 | $235.50 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-02-16 | $248.89 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-02-23 | $253.71 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-03-02 | $250.87 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-03-09 | $253.78 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-03-16 | $254.87 | Broadcom Limited Q1 FY18 results | 3.20 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-03-23 | $242.48 | Broadcom Limited Q1 FY18 results | 3.20 | +0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-03-29 | $235.65 | Broadcom Limited Q1 FY18 results | 3.20 | +0.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-04-06 | $228.87 | Broadcom Limited Q1 FY18 results | 3.20 | +0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-04-13 | $246.94 | Broadcom Limited Q1 FY18 results | 3.20 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-04-20 | $237.12 | Broadcom Limited Q1 FY18 results | 3.20 | +0.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-04-27 | $232.78 | Broadcom Limited Q1 FY18 results | 3.20 | +0.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-05-04 | $230.52 | Broadcom Limited Q1 FY18 results | 3.20 | +0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-05-11 | $243.38 | Broadcom Limited Q1 FY18 results | 3.20 | +0.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-05-18 | $235.99 | Broadcom Limited Q1 FY18 results | 3.20 | +0.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-05-25 | $250.03 | Broadcom Limited Q1 FY18 results | 3.20 | +0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-06-01 | $256.34 | Broadcom Limited Q1 FY18 results | 3.20 | +0.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-06-08 | $257.97 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-06-15 | $270.23 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-06-22 | $259.71 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-06-29 | $242.64 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-07-06 | $247.68 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.29 | 3.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-07-13 | $202.46 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.47 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-07-20 | $210.33 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.45 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-07-27 | $221.05 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.40 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-08-03 | $217.81 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.42 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-08-10 | $212.23 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.45 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-08-17 | $209.27 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.47 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-08-24 | $209.00 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.47 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-08-31 | $219.03 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.42 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-09-07 | $232.58 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.23 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-09-14 | $236.34 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.22 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-09-21 | $248.10 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.18 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-09-28 | $246.73 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.18 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-10-05 | $244.23 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.20 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-10-12 | $232.95 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.24 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-10-19 | $228.28 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.28 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-10-26 | $213.15 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.35 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-11-02 | $220.77 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.32 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-11-09 | $238.99 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.26 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-11-16 | $237.61 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.27 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-11-23 | $229.90 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.29 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-11-30 | $237.41 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.27 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2018-12-07 | $228.56 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.23 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-12-14 | $254.83 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-12-21 | $244.91 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2018-12-28 | $253.59 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-01-04 | $233.23 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.83 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-01-11 | $250.57 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-01-18 | $260.82 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-01-25 | $267.94 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-02-01 | $266.81 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.94 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-02-08 | $274.06 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-02-15 | $281.93 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-02-22 | $276.50 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-03-01 | $272.75 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-03-08 | $264.19 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.91 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-03-15 | $290.29 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-03-22 | $292.65 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-03-29 | $300.71 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.40 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-04-05 | $304.28 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-04-12 | $317.03 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-04-18 | $318.62 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-04-26 | $310.41 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-05-03 | $315.71 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-05-10 | $303.96 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-05-17 | $289.89 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-05-24 | $255.94 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.21 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-05-31 | $251.64 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-06-07 | $274.87 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-06-14 | $265.93 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-06-21 | $273.99 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-06-28 | $287.86 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-07-05 | $282.66 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-07-12 | $285.39 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-07-19 | $290.00 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-07-26 | $300.92 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-08-02 | $278.53 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-08-09 | $275.73 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-08-16 | $273.78 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-08-23 | $272.13 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-08-30 | $282.64 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-09-06 | $291.91 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-09-13 | $290.32 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-09-20 | $284.26 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-09-27 | $274.14 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-10-04 | $281.43 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-10-11 | $280.91 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-10-18 | $286.73 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-10-25 | $289.82 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-11-01 | $296.59 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-11-08 | $313.41 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-11-15 | $312.91 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-11-22 | $314.92 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-11-29 | $316.21 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-12-06 | $316.05 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-12-13 | $315.42 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.94 | 5.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-12-20 | $319.00 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.95 | 5.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2019-12-27 | $316.53 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.94 | 4.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-01-03 | $314.19 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.93 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-01-10 | $299.22 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.85 | 3.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-01-17 | $308.79 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.90 | 3.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-01-24 | $324.00 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.96 | 5.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-01-31 | $305.16 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.88 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-02-07 | $315.23 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.92 | 4.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-02-14 | $317.77 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.93 | 4.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-02-21 | $304.50 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.87 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-02-28 | $272.62 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.64 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-03-06 | $269.45 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.61 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-03-13 | $234.22 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.34 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-03-20 | $192.22 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.14 | 0.63x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-03-27 | $230.69 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.33 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-04-03 | $234.26 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.34 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-04-09 | $254.30 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.57 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-04-17 | $265.88 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.64 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-04-24 | $264.81 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.63 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-05-01 | $259.70 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.60 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-05-08 | $275.03 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.72 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-05-15 | $260.41 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.60 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-05-22 | $276.65 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.73 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-05-29 | $291.27 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.84 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-06-05 | $317.08 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.97 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-06-12 | $300.25 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.88 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-06-19 | $302.77 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.89 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-06-26 | $307.41 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.91 | 3.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-07-02 | $315.47 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.95 | 3.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-07-10 | $319.44 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.97 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-07-17 | $312.71 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.93 | 3.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-07-24 | $305.79 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.89 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-07-31 | $316.75 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.95 | 3.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-08-07 | $325.93 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.99 | 4.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-08-14 | $327.82 | Broadcom Inc. Q2 FY20 results | 2.35 | -1.00 | 4.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-08-21 | $330.02 | Broadcom Inc. Q2 FY20 results | 2.35 | -1.00 | 4.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-08-28 | $344.82 | Broadcom Inc. Q2 FY20 results | 2.35 | -1.06 | 6.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-09-04 | $362.95 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.76 | 11.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-09-11 | $359.70 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.74 | 9.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-09-18 | $359.73 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.73 | 9.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-09-25 | $356.80 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.71 | 8.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-10-02 | $356.83 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.71 | 8.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-10-09 | $376.70 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.88 | 20.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-10-16 | $378.65 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.89 | 24.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-10-23 | $372.72 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.86 | 14.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-10-30 | $349.63 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.66 | 6.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-11-06 | $380.62 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.88 | 21.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-11-13 | $373.50 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.85 | 12.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-11-20 | $383.33 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.88 | 18.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-11-27 | $394.95 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.91 | 58.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-12-04 | $411.68 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-12-11 | $405.82 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-12-18 | $434.56 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.79 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-12-24 | $431.46 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.84 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2020-12-31 | $437.85 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.86 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2017-01-06 | $176.59 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.31 | 0.46x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +41.3% | +25.8pp | +35.2% | ✗ |
+| 2017-01-13 | $180.45 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.30 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +47.8% | +29.4pp | +32.0% | ✗ |
+| 2017-01-20 | $191.08 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.25 | 0.54x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +45.0% | +23.1pp | +24.6% | ✗ |
+| 2017-01-27 | $205.71 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.19 | 0.61x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +38.1% | +17.7pp | +15.8% | ✗ |
+| 2017-02-03 | $206.16 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.19 | 0.60x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +37.3% | +15.2pp | +15.8% | ✗ |
+| 2017-02-10 | $205.52 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.20 | 0.58x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +41.2% | +20.1pp | +16.5% | ✗ |
+| 2017-02-17 | $210.41 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.08 | 0.59x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +41.7% | +19.5pp | +14.1% | ✗ |
+| 2017-02-24 | $210.37 | Broadcom Limited Q4 and FY2016 results | 1.95 | +0.08 | 0.59x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +39.1% | +17.0pp | +14.4% | ✗ |
+| 2017-03-03 | $218.32 | Broadcom Limited Q1 FY17 results | 1.95 | -1.29 | 28.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.4% | +10.6pp | +10.4% | ✗ |
+| 2017-03-10 | $226.35 | Broadcom Limited Q1 FY17 results | 1.95 | -1.31 | 148.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.9% | +4.2pp | +6.7% | ✗ |
+| 2017-03-17 | $221.18 | Broadcom Limited Q1 FY17 results | 1.95 | -1.29 | 26.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.1% | +15.2pp | +9.3% | ✗ |
+| 2017-03-24 | $218.97 | Broadcom Limited Q1 FY17 results | 1.95 | -1.27 | 16.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.8% | +18.1pp | +10.9% | ✗ |
+| 2017-03-31 | $218.96 | Broadcom Limited Q1 FY17 results | 1.95 | -1.27 | 15.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.5% | +21.4pp | +11.4% | ✗ |
+| 2017-04-07 | $218.25 | Broadcom Limited Q1 FY17 results | 1.95 | -1.25 | 11.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.6% | +20.6pp | +12.4% | ✗ |
+| 2017-04-13 | $211.32 | Broadcom Limited Q1 FY17 results | 1.95 | -1.21 | 7.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +29.3pp | +16.7% | ✗ |
+| 2017-04-21 | $217.66 | Broadcom Limited Q1 FY17 results | 1.95 | -1.23 | 10.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.6% | +26.6pp | +13.9% | ✗ |
+| 2017-04-28 | $220.81 | Broadcom Limited Q1 FY17 results | 1.95 | -1.24 | 11.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.7% | +21.2pp | +13.0% | ✗ |
+| 2017-05-05 | $226.45 | Broadcom Limited Q1 FY17 results | 1.95 | -1.26 | 18.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +20.4pp | +10.9% | ✗ |
+| 2017-05-12 | $235.96 | Broadcom Limited Q1 FY17 results | 1.95 | -1.29 | 95.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.4% | +11.6pp | +7.0% | ✗ |
+| 2017-05-19 | $234.10 | Broadcom Limited Q1 FY17 results | 1.95 | -1.27 | 47.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.5% | +7.3pp | +8.4% | ✗ |
+| 2017-05-26 | $241.21 | Broadcom Limited Q1 FY17 results | 1.95 | -1.25 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.5% | -7.7pp | +5.4% | ✓ |
+| 2017-06-02 | $254.53 | Broadcom Limited Q2 FY17 results | 3.55 | +0.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.9% | -11.0pp | -0.1% | ✓ |
+| 2017-06-09 | $243.34 | Broadcom Limited Q2 FY17 results | 3.55 | +0.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.3% | -2.0pp | +4.5% | ✓ |
+| 2017-06-16 | $236.25 | Broadcom Limited Q2 FY17 results | 3.55 | +0.40 | 24.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.7% | -3.2pp | +7.8% | ✓ |
+| 2017-06-23 | $245.26 | Broadcom Limited Q2 FY17 results | 3.55 | +0.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.7% | -5.5pp | +3.9% | ✓ |
+| 2017-06-30 | $233.05 | Broadcom Limited Q2 FY17 results | 3.55 | +0.45 | 13.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | +6.4pp | +9.7% | ✗ |
+| 2017-07-07 | $239.62 | Broadcom Limited Q2 FY17 results | 3.55 | +0.41 | 24.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.1% | -1.5pp | +7.0% | ✓ |
+| 2017-07-14 | $250.29 | Broadcom Limited Q2 FY17 results | 3.55 | +0.37 | 1023.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.8% | -4.8pp | +2.8% | ✓ |
+| 2017-07-21 | $253.11 | Broadcom Limited Q2 FY17 results | 3.55 | +0.37 | 100.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.3% | -2.3pp | +2.3% | ✓ |
+| 2017-07-28 | $250.37 | Broadcom Limited Q2 FY17 results | 3.55 | +0.39 | 27.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.0% | +1.5pp | +4.0% | ✗ |
+| 2017-08-04 | $249.17 | Broadcom Limited Q2 FY17 results | 3.55 | +0.41 | 15.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.6% | -2.9pp | +5.1% | ✓ |
+| 2017-08-11 | $244.17 | Broadcom Limited Q2 FY17 results | 3.55 | +0.47 | 7.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.9% | -2.8pp | +7.7% | ✓ |
+| 2017-08-18 | $249.37 | Broadcom Limited Q2 FY17 results | 3.55 | +0.47 | 8.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.6% | -5.7pp | +6.0% | ✓ |
+| 2017-08-25 | $245.59 | Broadcom Limited Q3 FY17 results | 3.35 | +0.33 | 7.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +18.7% | -2.0pp | +8.2% | ✓ |
+| 2017-09-01 | $252.73 | Broadcom Limited Q3 FY17 results | 3.35 | +0.31 | 8.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +19.5% | -2.6pp | +5.6% | ✓ |
+| 2017-09-08 | $244.11 | Broadcom Limited Q3 FY17 results | 3.35 | +0.35 | 5.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +27.6% | +2.5pp | +9.8% | ✗ |
+| 2017-09-15 | $250.55 | Broadcom Limited Q3 FY17 results | 3.35 | +0.33 | 6.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.6% | -0.8pp | +7.4% | ✓ |
+| 2017-09-22 | $239.24 | Broadcom Limited Q3 FY17 results | 3.35 | +0.40 | 4.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +27.6% | +3.8pp | +12.9% | ✗ |
+| 2017-09-29 | $242.54 | Broadcom Limited Q3 FY17 results | 3.35 | +0.39 | 4.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.7% | -0.0pp | +11.6% | ✗ |
+| 2017-10-06 | $245.74 | Broadcom Limited Q3 FY17 results | 3.35 | +0.38 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.1% | +3.3pp | +10.4% | ✗ |
+| 2017-10-13 | $247.96 | Broadcom Limited Q3 FY17 results | 3.35 | +0.38 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.8% | +1.5pp | +9.7% | ✗ |
+| 2017-10-20 | $244.24 | Broadcom Limited Q3 FY17 results | 3.35 | +0.40 | 4.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.0% | +6.1pp | +11.8% | ✗ |
+| 2017-10-27 | $252.90 | Broadcom Limited Q3 FY17 results | 3.35 | +0.36 | 5.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.9% | +1.8pp | +8.5% | ✗ |
+| 2017-11-03 | $273.63 | Broadcom Limited Q3 FY17 results | 3.35 | +0.26 | 17.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +16.1% | -6.4pp | +0.8% | ✓ |
+| 2017-11-10 | $264.96 | Broadcom Limited Q3 FY17 results | 3.35 | +0.31 | 8.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.2% | +2.5pp | +4.7% | ✗ |
+| 2017-11-17 | $271.86 | Broadcom Limited Q3 FY17 results | 3.35 | +0.28 | 13.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.9% | -2.1pp | +2.7% | ✓ |
+| 2017-11-24 | $282.38 | Broadcom Limited Q3 FY17 results | 3.35 | +0.23 | 31.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.0% | -4.5pp | -0.6% | ✓ |
+| 2017-12-01 | $271.56 | Broadcom Limited Q3 FY17 results | 3.35 | +0.29 | 11.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.2% | +1.4pp | +3.9% | ✗ |
+| 2017-12-08 | $259.91 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.7% | +7.2pp | +9.0% | ✗ |
+| 2017-12-15 | $265.73 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.6% | +4.1pp | +7.2% | ✗ |
+| 2017-12-22 | $262.35 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.2% | +6.3pp | +9.1% | ✗ |
+| 2017-12-29 | $256.90 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.0% | +7.0pp | +11.9% | ✗ |
+| 2018-01-05 | $271.62 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.0% | +2.2pp | +6.3% | ✗ |
+| 2018-01-12 | $264.29 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.8% | +0.7pp | +9.7% | ✗ |
+| 2018-01-19 | $266.39 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.4% | +2.2pp | +9.2% | ✗ |
+| 2018-01-26 | $250.79 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.30 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.2% | +19.7pp | +16.3% | ✗ |
+| 2018-02-02 | $235.48 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.2% | +18.5pp | +24.3% | ✗ |
+| 2018-02-09 | $235.50 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.5% | +12.3pp | +24.6% | ✗ |
+| 2018-02-16 | $248.89 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.8% | +9.2pp | +18.2% | ✗ |
+| 2018-02-23 | $253.71 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.9% | +3.6pp | +16.2% | ✗ |
+| 2018-03-02 | $250.87 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.6% | +3.7pp | +17.5% | ✗ |
+| 2018-03-09 | $253.78 | Broadcom Limited Q4 and FY2017 results | 2.85 | -0.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.5% | +4.3pp | +16.2% | ✗ |
+| 2018-03-16 | $254.87 | Broadcom Limited Q1 FY18 results | 3.20 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.5% | -8.5pp | +15.3% | ✓ |
+| 2018-03-23 | $242.48 | Broadcom Limited Q1 FY18 results | 3.20 | +0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.0% | -1.7pp | +20.4% | ✓ |
+| 2018-03-29 | $235.65 | Broadcom Limited Q1 FY18 results | 3.20 | +0.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +7.4% | +6.9pp | +23.4% | ✗ |
+| 2018-04-06 | $228.87 | Broadcom Limited Q1 FY18 results | 3.20 | +0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +20.1% | +13.8pp | +26.4% | ✗ |
+| 2018-04-13 | $246.94 | Broadcom Limited Q1 FY18 results | 3.20 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.3% | +6.2pp | +16.8% | ✗ |
+| 2018-04-20 | $237.12 | Broadcom Limited Q1 FY18 results | 3.20 | +0.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +18.3% | +8.6pp | +21.2% | ✗ |
+| 2018-04-27 | $232.78 | Broadcom Limited Q1 FY18 results | 3.20 | +0.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.9% | +13.1pp | +23.0% | ✗ |
+| 2018-05-04 | $230.52 | Broadcom Limited Q1 FY18 results | 3.20 | +0.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.5% | +12.7pp | +23.8% | ✗ |
+| 2018-05-11 | $243.38 | Broadcom Limited Q1 FY18 results | 3.20 | +0.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.3% | +11.1pp | +16.9% | ✗ |
+| 2018-05-18 | $235.99 | Broadcom Limited Q1 FY18 results | 3.20 | +0.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.4% | +12.6pp | +20.3% | ✗ |
+| 2018-05-25 | $250.03 | Broadcom Limited Q1 FY18 results | 3.20 | +0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.6% | +7.0pp | +13.6% | ✗ |
+| 2018-06-01 | $256.34 | Broadcom Limited Q1 FY18 results | 3.20 | +0.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.8% | +6.1pp | +11.1% | ✗ |
+| 2018-06-08 | $257.97 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.7% | +11.6pp | +10.7% | ✗ |
+| 2018-06-15 | $270.23 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.8% | +6.5pp | +5.9% | ✗ |
+| 2018-06-22 | $259.71 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.2% | +12.1pp | +10.4% | ✗ |
+| 2018-06-29 | $242.64 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.8% | +20.4pp | +18.4% | ✗ |
+| 2018-07-06 | $247.68 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.29 | 3.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.6% | +18.5pp | +16.2% | ✗ |
+| 2018-07-13 | $202.46 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.47 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +64.7% | +48.1pp | +42.5% | ✗ |
+| 2018-07-20 | $210.33 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.45 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.3% | +41.3pp | +37.4% | ✗ |
+| 2018-07-27 | $221.05 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.40 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +51.4% | +32.6pp | +30.9% | ✗ |
+| 2018-08-03 | $217.81 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.42 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.6% | +37.8pp | +33.0% | ✗ |
+| 2018-08-10 | $212.23 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.45 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +64.7% | +42.2pp | +37.0% | ✗ |
+| 2018-08-17 | $209.27 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.47 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +68.4% | +46.0pp | +39.5% | ✗ |
+| 2018-08-24 | $209.00 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.47 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +70.4% | +47.2pp | +40.1% | ✗ |
+| 2018-08-31 | $219.03 | Broadcom Inc. Q2 FY18 results | 3.20 | +0.42 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +67.5% | +42.9pp | +34.2% | ✗ |
+| 2018-09-07 | $232.58 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.23 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +65.6% | +42.6pp | +27.0% | ✗ |
+| 2018-09-14 | $236.34 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.22 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.6% | +42.4pp | +25.5% | ✗ |
+| 2018-09-21 | $248.10 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.18 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.3% | +35.5pp | +20.1% | ✗ |
+| 2018-09-28 | $246.73 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.18 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.4% | +39.6pp | +21.5% | ✗ |
+| 2018-10-05 | $244.23 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.20 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.6% | +37.6pp | +23.4% | ✗ |
+| 2018-10-12 | $232.95 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.24 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +74.3% | +42.5pp | +30.2% | ✗ |
+| 2018-10-19 | $228.28 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.28 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +74.9% | +47.1pp | +33.7% | ✗ |
+| 2018-10-26 | $213.15 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.35 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +81.4% | +49.3pp | +44.0% | ✗ |
+| 2018-11-02 | $220.77 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.32 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +69.8% | +44.2pp | +39.5% | ✗ |
+| 2018-11-09 | $238.99 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.26 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +67.0% | +35.3pp | +29.4% | ✗ |
+| 2018-11-16 | $237.61 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.27 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +70.2% | +33.7pp | +30.7% | ✗ |
+| 2018-11-23 | $229.90 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.29 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +78.6% | +38.6pp | +35.6% | ✗ |
+| 2018-11-30 | $237.41 | Broadcom Inc. Q3 FY18 results | 3.05 | +0.27 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +79.1% | +43.7pp | +31.9% | ✗ |
+| 2018-12-07 | $228.56 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.23 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.5% | +50.2pp | +37.8% | ✗ |
+| 2018-12-14 | $254.83 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.9% | +26.6pp | +24.3% | ✗ |
+| 2018-12-21 | $244.91 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.1% | +27.6pp | +30.2% | ✗ |
+| 2018-12-28 | $253.59 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.0% | +25.2pp | +26.5% | ✗ |
+| 2019-01-04 | $233.23 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.83 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.8% | +42.2pp | +38.3% | ✗ |
+| 2019-01-11 | $250.57 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.7% | +37.1pp | +29.7% | ✗ |
+| 2019-01-18 | $260.82 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.4% | +35.1pp | +25.5% | ✗ |
+| 2019-01-25 | $267.94 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +82.6% | +33.7pp | +23.3% | ✗ |
+| 2019-02-01 | $266.81 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.94 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +84.1% | +40.6pp | +24.9% | ✗ |
+| 2019-02-08 | $274.06 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.4% | +32.9pp | +22.7% | ✗ |
+| 2019-02-15 | $281.93 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.2% | +35.6pp | +20.2% | ✗ |
+| 2019-02-22 | $276.50 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.2% | +38.5pp | +23.8% | ✗ |
+| 2019-03-01 | $272.75 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.5% | +45.5pp | +26.9% | ✗ |
+| 2019-03-08 | $264.19 | Broadcom Inc. Q4 and FY2018 results | 2.90 | -0.91 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.7% | +25.5pp | +32.3% | ✗ |
+| 2019-03-15 | $290.29 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.6% | +26.1pp | +21.8% | ✗ |
+| 2019-03-22 | $292.65 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.1% | +26.5pp | +22.8% | ✗ |
+| 2019-03-29 | $300.71 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.40 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.6% | +21.5pp | +21.1% | ✗ |
+| 2019-04-05 | $304.28 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.9% | +24.2pp | +21.1% | ✗ |
+| 2019-04-12 | $317.03 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.6% | +14.8pp | +17.5% | ✗ |
+| 2019-04-18 | $318.62 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.3% | +10.5pp | +18.2% | ✗ |
+| 2019-04-26 | $310.41 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.2% | +14.0pp | +22.7% | ✗ |
+| 2019-05-03 | $315.71 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.7% | +4.6pp | +21.9% | ✗ |
+| 2019-05-10 | $303.96 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.9% | +2.9pp | +27.7% | ✗ |
+| 2019-05-17 | $289.89 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.6% | +11.2pp | +35.1% | ✗ |
+| 2019-05-24 | $255.94 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.21 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.4% | +37.1pp | +54.3% | ✗ |
+| 2019-05-31 | $251.64 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.8% | +41.1pp | +58.1% | ✗ |
+| 2019-06-07 | $274.87 | Broadcom Inc. Q1 FY19 results | 2.55 | -1.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.0% | +27.3pp | +45.9% | ✗ |
+| 2019-06-14 | $265.93 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.5% | +37.6pp | +52.0% | ✗ |
+| 2019-06-21 | $273.99 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.2% | +32.2pp | +48.7% | ✗ |
+| 2019-06-28 | $287.86 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.4% | +23.7pp | +42.6% | ✗ |
+| 2019-07-05 | $282.66 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.0% | +25.9pp | +46.1% | ✗ |
+| 2019-07-12 | $285.39 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.5% | +30.3pp | +45.8% | ✗ |
+| 2019-07-19 | $290.00 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.7% | +22.9pp | +44.6% | ✗ |
+| 2019-07-26 | $300.92 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.0% | +19.3pp | +40.5% | ✗ |
+| 2019-08-02 | $278.53 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.5% | +30.1pp | +53.0% | ✗ |
+| 2019-08-09 | $275.73 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.4% | +29.9pp | +55.7% | ✗ |
+| 2019-08-16 | $273.78 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.0% | +29.3pp | +57.9% | ✗ |
+| 2019-08-23 | $272.13 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.0% | +26.0pp | +59.9% | ✗ |
+| 2019-08-30 | $282.64 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.9% | +27.4pp | +55.1% | ✗ |
+| 2019-09-06 | $291.91 | Broadcom Inc. Q2 FY19 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.6% | +23.7pp | +51.0% | ✗ |
+| 2019-09-13 | $290.32 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.0% | +28.9pp | +52.6% | ✗ |
+| 2019-09-20 | $284.26 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +82.4% | +33.1pp | +56.9% | ✗ |
+| 2019-09-27 | $274.14 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.2% | +40.5pp | +63.7% | ✗ |
+| 2019-10-04 | $281.43 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.9% | +29.4pp | +60.3% | ✗ |
+| 2019-10-11 | $280.91 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.31 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.0% | +34.5pp | +61.5% | ✗ |
+| 2019-10-18 | $286.73 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.1% | +31.2pp | +59.0% | ✗ |
+| 2019-10-25 | $289.82 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.6% | +34.8pp | +58.3% | ✗ |
+| 2019-11-01 | $296.59 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.3% | +33.3pp | +55.8% | ✗ |
+| 2019-11-08 | $313.41 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.1% | +31.6pp | +48.6% | ✗ |
+| 2019-11-15 | $312.91 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.6% | +36.0pp | +50.0% | ✗ |
+| 2019-11-22 | $314.92 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +84.4% | +30.4pp | +50.2% | ✗ |
+| 2019-11-29 | $316.21 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.1% | +35.7pp | +50.5% | ✗ |
+| 2019-12-06 | $316.05 | Broadcom Inc. Q3 FY19 results | 2.40 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.4% | +38.1pp | +51.5% | ✗ |
+| 2019-12-13 | $315.42 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.94 | 5.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +105.8% | +55.2pp | +53.0% | ✗ |
+| 2019-12-20 | $319.00 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.95 | 5.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +109.8% | +64.4pp | +52.6% | ✗ |
+| 2019-12-27 | $316.53 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.94 | 4.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +121.9% | +70.6pp | +54.9% | ✗ |
+| 2020-01-03 | $314.19 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.93 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +120.1% | +68.4pp | +57.5% | ✗ |
+| 2020-01-10 | $299.22 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.85 | 3.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +117.0% | +70.6pp | +66.7% | ✗ |
+| 2020-01-17 | $308.79 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.90 | 3.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.3% | +58.8pp | +62.4% | ✗ |
+| 2020-01-24 | $324.00 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.96 | 5.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.9% | +38.6pp | +55.3% | ✗ |
+| 2020-01-31 | $305.16 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.88 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.8% | +51.9pp | +65.4% | ✗ |
+| 2020-02-07 | $315.23 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.92 | 4.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.4% | +57.3pp | +61.0% | ✗ |
+| 2020-02-14 | $317.77 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.93 | 4.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +91.0% | +57.5pp | +60.4% | ✗ |
+| 2020-02-21 | $304.50 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.87 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +99.8% | +66.1pp | +68.0% | ✗ |
+| 2020-02-28 | $272.62 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.64 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +125.8% | +74.6pp | +88.4% | ✗ |
+| 2020-03-06 | $269.45 | Broadcom Inc. Q4 and FY2019 results | 2.40 | -0.61 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +131.7% | +82.6pp | +91.4% | ✗ |
+| 2020-03-13 | $234.22 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.34 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +158.8% | +98.6pp | +121.3% | ✗ |
+| 2020-03-20 | $192.22 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.14 | 0.63x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +230.6% | +131.3pp | +170.9% | ✗ |
+| 2020-03-27 | $230.69 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.33 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +185.2% | +102.1pp | +127.0% | ✗ |
+| 2020-04-03 | $234.26 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.34 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +180.1% | +93.0pp | +124.9% | ✗ |
+| 2020-04-09 | $254.30 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.57 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +142.3% | +77.3pp | +108.1% | ✗ |
+| 2020-04-17 | $265.88 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.64 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +126.8% | +70.1pp | +99.7% | ✗ |
+| 2020-04-24 | $264.81 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.63 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +132.6% | +78.1pp | +101.5% | ✗ |
+| 2020-05-01 | $259.70 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.60 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +124.7% | +75.0pp | +106.3% | ✗ |
+| 2020-05-08 | $275.03 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.72 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +121.5% | +77.0pp | +95.8% | ✗ |
+| 2020-05-15 | $260.41 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.60 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +137.1% | +92.8pp | +107.8% | ✗ |
+| 2020-05-22 | $276.65 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.73 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +106.9% | +71.1pp | +96.5% | ✗ |
+| 2020-05-29 | $291.27 | Broadcom Inc. Q1 FY20 results | 2.35 | -0.84 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +110.2% | +70.1pp | +87.2% | ✗ |
+| 2020-06-05 | $317.08 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.97 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +86.8% | +54.7pp | +72.5% | ✗ |
+| 2020-06-12 | $300.25 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.88 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +90.0% | +58.1pp | +82.8% | ✗ |
+| 2020-06-19 | $302.77 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.89 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.2% | +50.9pp | +81.5% | ✗ |
+| 2020-06-26 | $307.41 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.91 | 3.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.3% | +41.5pp | +79.1% | ✗ |
+| 2020-07-02 | $315.47 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.95 | 3.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.0% | +35.2pp | +74.6% | ✗ |
+| 2020-07-10 | $319.44 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.97 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.5% | +39.5pp | +72.5% | ✗ |
+| 2020-07-17 | $312.71 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.93 | 3.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.7% | +44.4pp | +76.3% | ✗ |
+| 2020-07-24 | $305.79 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.89 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.4% | +50.7pp | +80.5% | ✗ |
+| 2020-07-31 | $316.75 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.95 | 3.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.5% | +48.8pp | +74.5% | ✗ |
+| 2020-08-07 | $325.93 | Broadcom Inc. Q2 FY20 results | 2.35 | -0.99 | 4.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.4% | +51.3pp | +69.9% | ✗ |
+| 2020-08-14 | $327.82 | Broadcom Inc. Q2 FY20 results | 2.35 | -1.00 | 4.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.4% | +49.2pp | +69.3% | ✗ |
+| 2020-08-21 | $330.02 | Broadcom Inc. Q2 FY20 results | 2.35 | -1.00 | 4.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.3% | +47.5pp | +68.7% | ✗ |
+| 2020-08-28 | $344.82 | Broadcom Inc. Q2 FY20 results | 2.35 | -1.06 | 6.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.7% | +40.8pp | +61.7% | ✗ |
+| 2020-09-04 | $362.95 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.76 | 11.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.1% | +28.2pp | +53.6% | ✗ |
+| 2020-09-11 | $359.70 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.74 | 9.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.6% | +28.4pp | +55.1% | ✗ |
+| 2020-09-18 | $359.73 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.73 | 9.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.0% | +27.8pp | +55.1% | ✗ |
+| 2020-09-25 | $356.80 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.71 | 8.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.0% | +24.5pp | +56.3% | ✗ |
+| 2020-10-02 | $356.83 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.71 | 8.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.1% | +22.5pp | +56.1% | ✗ |
+| 2020-10-09 | $376.70 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.88 | 20.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.4% | +22.4pp | +47.8% | ✗ |
+| 2020-10-16 | $378.65 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.89 | 24.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.9% | +14.5pp | +46.7% | ✗ |
+| 2020-10-23 | $372.72 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.86 | 14.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.9% | +17.3pp | +48.6% | ✗ |
+| 2020-10-30 | $349.63 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.66 | 6.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.1% | +21.3pp | +58.1% | ✗ |
+| 2020-11-06 | $380.62 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.88 | 21.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.3% | +19.5pp | +44.8% | ✗ |
+| 2020-11-13 | $373.50 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.85 | 12.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.0% | +32.4pp | +47.2% | ✗ |
+| 2020-11-20 | $383.33 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.88 | 18.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.4% | +27.6pp | +43.1% | ✗ |
+| 2020-11-27 | $394.95 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.91 | 58.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.0% | +28.1pp | +38.8% | ✗ |
+| 2020-12-04 | $411.68 | Broadcom Inc. Q3 FY20 results | 2.70 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.8% | +25.6pp | +33.1% | ✗ |
+| 2020-12-11 | $405.82 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.8% | +31.2pp | +34.7% | ✗ |
+| 2020-12-18 | $434.56 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.79 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | +27.1pp | +25.5% | ✗ |
+| 2020-12-24 | $431.46 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.84 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.4% | +28.4pp | +26.0% | ✗ |
+| 2020-12-31 | $437.85 | Broadcom Inc. Q4 and FY2020 results | 2.90 | -0.86 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.0% | +29.5pp | +23.8% | ✗ |
