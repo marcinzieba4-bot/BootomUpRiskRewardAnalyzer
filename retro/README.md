@@ -99,6 +99,15 @@ Fallbacks for facts a company did not publish (decided before any outcome of the
   least BASE" floor). No two-year run: XBULL is BULL's rate. One diluted share count: no net buyback. No revenue change: the
   growth factor is 0 and the segment bridge's bull is flat. Rule T takes the annual values the filings report, however few
   (at least two). Example: AVGO in 2009, whose history is FY08 alone (FY06, FY07 and FY09 were losses).
+- **A year distorted by one-off benefits** (added 2026-11-01 for AVGO FY2018; no earlier output changes, so still r2): the
+  AAPL FY2002 test (listed one-off items larger than the year's net income, so reported EPS is under half the year's EPS
+  without them) is written for items that depress a year, and a benefit can never meet it. Its mirror: listed one-off benefits
+  larger than the year's income without them (reported EPS more than double the year's EPS without them). Such a year with no
+  published figure excluding only them is excluded like a depressed one. Checked before any affected date was built: no year of
+  any ticker kept at GAAP has listed one-off benefits over half its net income (UNP 2017 and ACN FY13 use company-adjusted
+  figures; the benefits of NKE FY08, FY17, FY22 and FY25, AAPL FY05, UNP 2008 and 2023 and AVGO FY10 are small fractions).
+  Example: AVGO FY2018, whose Tax Act and redomiciliation benefits ($8,273M in its 10-K) exceed its $12,629M income from
+  continuing operations without them ($4,356M).
 
 Fiscal-year rollover (added 2026-10-23 for ACN Sep 2008; no earlier output changes, so still r2):
 
@@ -3957,6 +3966,170 @@ Judgement calls that could carry hindsight:
 - the signals, unchanged since 2009, and DURABLE rather than CYCLICAL (the class label only); CLOUD on the watch list from the
   FY2016 10-K (text only).
 
+### AVGO 2017-2020: tax reform and the redomiciliation, fiscal-year guides with a GAAP margin, a withdrawn guide
+
+```bash
+python3 retro/build_avgo.py --weekly 2017-01-02 2020-12-31                  # 209 dates, 2017-01-06 .. 2020-12-31
+for c in 2017-01-01 2017-03-01 2017-11-01 2017-12-20 2018-01-30 2018-04-04 2018-12-01 2019-06-01 2019-08-08 2019-12-10 \
+         2020-03-10 2020-09-01 2021-01-01; do python3 retro/tools/firewall.py $c AVGO; done
+```
+
+Every 8-K of Broadcom Limited (CIK 1649338) to its redomiciliation and of Broadcom Inc. (CIK 1730168, from 2018-04-04) to the end of
+2020 was checked for a guided number: the items of each, the headline of every exhibit 99, and a sweep of every non-earnings exhibit
+for "affirm", "guidance" and "outlook"; the three guidance-update 8-Ks were read in full, and the sixteen releases' headlines,
+statements, outlooks and dividend and repurchase statements. The Qualcomm bid's 425s, DFAN14As and proxy materials, the
+redomiciliation S-4 and the deal releases and presentations (Brocade, CA, Symantec's enterprise security business) were searched for
+Broadcom's own outlook: they use the guides already published, state accretion, run-rate and long-term models, and, once, reaffirm a
+guide (below). The FY2017-FY2020 10-Ks were read for the history, the tax items, the fiscal calendar, the business wording and the
+risk factors, and the Q1-Q3 FY18 10-Qs for the tax benefits. 291 more strings were checked with `verbatim.py` (1,149 in all), 299
+structured checks read every print's income-statement and balance-sheet figures back from its own release (and each year-ago
+inventory from that quarter's release), and each of the 26 new sources' dates comes from EDGAR's acceptance time. Thresholds and
+signals are unchanged. Decided on 2026-11-01, before any 2017-2020 date was built or scored:
+
+- **Four vintages:** the FY2017 10-K (accepted 2017-12-21 17:10 ET, dated 2017-12-22), FY2018 (Broadcom Inc.'s, 2018-12-21 17:17 ET,
+  dated 2018-12-24), FY2019 (2019-12-20 16:10 ET, dated 2019-12-23) and FY2020 (2020-12-18 17:07 ET, dated 2020-12-21). Each holds
+  the ten fiscal years to its latest one (the ACN and NKE rule): FY2008-FY2017, then FY2009-FY2018, where FY2009 is the first year
+  and a loss, so the history and the P/E window start with FY2010 (the ACN FY02 rule), then FY2010-FY2019 and FY2011-FY2020. Each
+  year comes from the latest 10-K that reports it.
+- **EPS: GAAP diluted EPS from continuing operations,** as since 2009, attributable to common stock after the preferred dividends
+  from FY2019. FY17 is $4.28 in the Q4 FY17 release and $4.03 in the FY2017 10-K, which records a $110M fourth-quarter litigation
+  settlement the release did not include: the print carries $4.28 until the 10-K replaces it (the rollover rule). FY19 $6.46, FY20
+  $6.33. FY2017, FY2019 and FY2020 are kept: their listed items are fractions of their income (FY17 $1,790M, FY19 $2,736M, FY20
+  $2,961M; the FY19 and FY20 tax benefits, $510M and $518M, included).
+- **FY2018 excluded, a year distorted by one-off benefits** (the mirror of the AAPL FY2002 test; see "Retro method r2"). GAAP EPS
+  from continuing operations was $28.48 (net $28.44). The Q3 FY18 10-Q (dated 2018-09-14) lists the 2017 Tax Reform Act's
+  provisional benefit of $7,303M and the redomiciliation's tax benefits of $1,162M less an $84M provision, and the Q4 FY18 release
+  gives the year's $12,629M income from continuing operations: the items exceed the income without them. Both facts are public
+  with the Q4 FY18 print (2018-12-07), so the exclusion starts there; the FY2018 10-K's figures ($7,278M, $1,162M less $167M) say
+  the same. No EPS excluding only them was published (non-GAAP also removes amortization and stock-based compensation: the 2009
+  rule). The NKE FY2018 rule then applies: FY2018's own days leave the P/E window ("ex-FY18"), growth is measured only between
+  years in the history, and FY17's $4.03 stands for FY19E until the Q4 FY19 print. Its revenue, shares and margins stay; its
+  effective tax rate (-177.9%, a benefit) stays as the fact in the display-only EPS check, as NKE's 55.3% did.
+- **The fiscal calendar.** The FY2017 10-K states the year end as "the Sunday closest to October 31 in a 52-week year and the first
+  Sunday in November in a 53-week year"; the Q4 FY17 release (2017-12-07) first says fiscal 2018 has the extra week (its first
+  quarter "ending February 4, 2018"). So FY2018 ends on 2018-11-04, not on the closest Sunday (2018-10-28). The builder's calendar
+  takes 53-week years from the fact sheet (`fiscal_calendar`) and refuses one published after the first day it moves.
+- **Guides.**
+  - Quarter guides, FY2017-FY2018: the GAAP column, as ranges read against the year-ago quarter from its own release (the 2009
+    rule): Q2 FY17 $4,090M plus/minus $75M (+13.4% to +17.6%), Q3 FY17 $4,445M (+15.2% to +19.2%), Q4 FY17 $4,796M (+14.1% to
+    +17.8%), Q1 FY18 $5,296M (+26.1% to +29.8%: a 14-week quarter with the Brocade FC SAN business, as published, the 2011
+    rule), Q2 FY18 $4,997M (+17.5% to +21.1%), Q3 FY18 $5,047M (+11.4% to +14.8%), Q4 FY18 $5,397M (+9.9% to +13.0%).
+  - **Two 8-Ks narrow a quarter on a non-GAAP basis only:** Q1 FY18 to $5,300-5,350M (2018-01-31, before the open) and Q2 FY18 to
+    $5,000M plus/minus $25M (2018-04-30, after the close, dated 2018-05-01). The published range is the latest guide for its
+    quarter (the LOW Q3 FY18 rule: only the adjusted figure is published, so the guide takes it); the difference is the de minimis
+    licensing revenue the release reconciles ($3-4M). Each 8-K also gives a preliminary guide for the quarter after next; the next
+    release guides that quarter the day it becomes the next one, so neither preliminary range ever applies.
+  - **A guide restated in words:** the 8-K of 2017-11-02 (before the open) expects Q4 FY17 revenue "at the higher end" of the
+    outlook: the range stands, as a record with the same numbers and the words (the ACN Q3 FY08 rule, the CyOptics record).
+  - **Fiscal-year guides from the Q4 FY18 release** (CA closed on 2018-11-05): Broadcom guided the fiscal year, not the quarter.
+    With no next-quarter guide in scope, method r2 takes the fiscal-year revenue guide; it is a dollar level, read against the
+    previous year's net revenue in the history (the LOW 2021 rule): FY2019 $24,500M on FY18's 53-week $20,848M (+17.5%, as published),
+    cut to $22,500M (+7.9%) on 2019-06-14; FY2020 $25 billion plus or minus $500 million on FY19's $22,597M (+8.4% to +12.8%).
+  - **The FY2019 GAAP operating margin guide** is a level (20%, then 17.6%, 14.75% and 14.75%), so it gives the guided margin
+    step from FY18's 24.63% (the LOW level-form rule): -463bp, -703bp, -988bp. The non-GAAP margin, interest, taxes and capital
+    expenditures are display only, and so is the FY2020 and 2020 quarters' Adjusted EBITDA, a non-GAAP figure (the 2009 rule).
+  - **A reaffirmation in numbers:** the Symantec enterprise security release (8-K accepted 2019-08-09 06:10 ET, before the open)
+    "reaffirmed its fiscal year 2019 revenue guidance of $22.5 billion": a record with the same numbers (the CyOptics rule);
+    the Q2 FY19 release's margin stands.
+  - **The withdrawal.** The Q1 FY20 release (2020-03-13) is "withdrawing its prior annual guidance for fiscal year 2020, and
+    providing guidance for its second fiscal quarter": the withdrawal voids the FY2020 guide (the LOW 2020 rule), and the
+    next-quarter guide, r2's primary input, applies: Q2 FY20 $5.7 billion plus or minus $150 million (+0.6% to +6.0%), Q3 FY20
+    $5.75 billion (+1.5% to +7.0%), Q4 FY20 $6.4 billion (+8.2% to +13.4%), Q1 FY21 "approximately $6.6 billion" (+12.7%).
+  - The acquisitions enter only through the guides and prints, as published (the LOW 2025 rule): Brocade from Q1 FY18, CA from
+    FY2019, the Symantec enterprise security business from FY2020.
+- **Dividends,** the latest declared rate from the first filing that states it: $1.75 (2017-12-07), $2.65 (2018-12-07), $3.25
+  (2019-12-13), $3.60 (2020-12-11); the $20.00 dividend on the mandatory convertible preferred stock (from 2019-12-13) is not a
+  common dividend and shows only in the cash-return text.
+- **Broadcom Inc. from 2018-04-05** (`company_names`, the 8-K12B accepted 2018-04-04 16:34 ET, after the close): the redomiciliation
+  to Delaware, completed after the close of trading on April 4, the shares exchanged one-for-one; the AVGO ticker continues.
+- **Durability unchanged:** DURABLE, risk 2, in each 10-K's words ("highly competitive", "highly cyclical"; the FY2019 and FY2020
+  10-Ks: "The markets in which we participate are highly competitive"). CLOUD stays on the watch list in each 10-K's own wording:
+  the FY2017 10-K repeats FY2016's sentence ("may adversely affect both our wired infrastructure and enterprise storage
+  segments"), the FY2018-FY2020 10-Ks name "the shift to cloud-based IT solutions and services, such as hyperscale computing" as
+  affecting sales "for use in traditional enterprise data centers". Company-acknowledged, no market read; text only. No other
+  theme is live for the company (EV from 2020 is scoped to powertrains and fuel, CRYPTO from 2020-10-21 to payments and banks).
+- **Segments and wording** follow each 10-K: four segments in FY2017 and FY2018, three in FY2019 (semiconductor solutions,
+  infrastructure software, IP licensing), two in FY2020. The tax rate is each year's published effective rate, negative from
+  FY2018 (benefits); the FY09 rule takes the prior year's rate only for a pre-tax loss. The text constant "An analog
+  semiconductor maker" in the engine's volatility section stays (the UNP franchise-text rule).
+- **A builder change, no earlier output changes.** The fiscal-year guide (`period`), its margin level (`op_margin_guide_pct`), the
+  withdrawal (`withdrawn`), the 53-week calendar and a risk quote without a final period are new encodings; the 387 dates of
+  2009-2016 rebuild byte-identical. The firewall now also plants absurd later margins and a later withdrawal of every fiscal year
+  guided before its cutoff.
+- **Adds nothing:**
+  - the Regulation FD reconciliation of 2017-01-09; the 2018-09-07 company overview (it repeats the Q4 FY18 guide); the long-term
+    target model in the Q4 FY17 release ("should not be interpreted as guidance") and the CA presentation's long-term models;
+  - the Qualcomm bid (2017-11-06 to its withdrawal on 2018-03-14): its 8-Ks, 425s, DFAN14As and proxy materials use the Q4 FY17
+    guide already published;
+  - the redomiciliation's filings (S-4, scheme, court and vote 8-Ks), the deal filings (Brocade, CA, Symantec's enterprise security
+    business: accretion, run-rate revenue and synergy estimates are not current-year figures) and the pro forma statements;
+  - the 8-K of 2020-06-26, which recasts the FY2019 10-K for the new segments (no EPS, revenue or share count changes);
+  - the Apple supply agreements (2019-06-10, 2020-01-23: multi-year estimates), the European Commission proceedings
+    (2019-06-26), the preferred stock offering (2019-09-30), the $12 billion buyback authorization (2018-04-12; diluted share counts
+    carry the repurchases), the debt offerings, tender and exchange offers and credit agreements;
+  - officers, board, bonuses, votes, the 10b5-1 plan of 2020-01-09 and the proxies.
+
+Controls: altering one value of each print, Q4 full-year figure, excluded-year note, guide, vintage, dividend, event and the company
+name changes no date before its publication and changes the first weekly date on or after it (55 of 57). The two exceptions are the
+preliminary guides for the quarter after next (2018-01-31 for Q2 FY18, 2018-04-30 for Q3 FY18), which change no date at all: each is
+superseded the day its quarter becomes the next one. No new fact appears in a model dated before its earliest publication (82,809
+checks over the 596 AVGO models), and no later calendar year appears in any report or analysis. The 2008 dates of ACN and the
+2008-2009 dates of UNP, LOW, AAPL and NKE rebuild unchanged. The firewall (a planted later print, vintage, guides with absurd margins,
+withdrawals, dividend, event and company name, and 10x prices after the cutoff) changes no earlier model at the 13 cutoffs above.
+
+Seen in the build (method behaviour, not tuned):
+- **Classes:** RICH on 203 dates, FAIR on 6 (2017-01-06 to 2017-02-10), no CHEAP. Tiers: AVOID on 177, WATCHLIST on 21, BUY on 9,
+  ACCUMULATE on 2. All eight robustness variants agree on 169 dates, seven on 38, five on 2. Ratio B is infinite (the price above
+  the BULL price) on 92 dates.
+- **January-February 2017, on FY15's $4.95 for FY17E** (FY2016 excluded): 35.7-42.5x, the 98th-100th percentile. The Q1 FY17 guide
+  reads +125.3% to +133.8% against Q1 FY16, Avago's last quarter before BRCM, so BASE is +122.8%/yr and BULL takes BASE's rate:
+  FAIR on 6 dates and RICH on 2, BUY on all 8 (Ratio B 0.46-0.61).
+- **From the Q1 FY17 print** the year-ago quarters include BRCM: the Q2-Q4 FY17 guides put BASE at +8.8% to +10.5%/yr (net
+  buyback -6.7%/yr: 219M diluted shares in FY08, 383M in FY16). On FY15's $4.95 the stock traded at 42.7-57.0x (95th-100th
+  percentile), 205-308% above the EPP floor (14x): RICH and AVOID on all 40 dates to 2017-12-01.
+- **From the Q4 FY17 print** the anchor is FY17's $4.28, then the 10-K's $4.03 (for FY18E): 56.8-67.4x to June 2018. The Q1 FY18
+  guides (the 14-week quarter with Brocade) put BASE at +20.9% and +21.7%/yr, the Q2-Q4 FY18 guides at +12.3%, +6.1% and +4.4%.
+  After the CA announcement (2018-07-12) the price fell to $202-248 and Ratio B to 1.0-2.5: WATCHLIST on 14 dates, ACCUMULATE on
+  2018-10-26. RICH on all 52 dates of 2018 at 50.2-67.4x (the 77th-100th percentile).
+- **From the Q4 FY18 print, FY2018 excluded,** FY17's $4.03 stands for FY19E at 56.7-79.1x (the 91st-100th percentile). The FY2019
+  margin guides cut BASE to -12.2% and -12.4%/yr (revenue +17.5%, margin -463bp: -23.1% of EPS), -29.2%/yr (-703bp: -39.9%)
+  and -65.9%/yr (revenue +7.9%, -988bp: -67.0%): the CA amortization in the GAAP margin, carried as growth for two years (the
+  LOW Orchard pattern). BEAR stays at -2.7%/yr (FY12 to FY13), so the BEAR price sits above the BASE price. RICH and AVOID on
+  all 53 dates to 2019-12-06, every variant agreeing; the conservative case -62% to -73%.
+- **The FY2018 vintage drops FY2008:** BULL falls from +35.6%/yr (FY08's $0.26 to FY17's $4.03) to +13.2%/yr (FY10's $1.69 to
+  FY17) and XBULL from +155.0%/yr (FY08 to FY10) to +50.3%/yr (FY13 to FY15, across the excluded FY14).
+- **From the Q4 FY19 print,** FY19's $6.46 at 41.7-50.2x (the 72nd-89th percentile) and BASE +4.9%/yr on the FY2020 guide. From the
+  withdrawal the Q2-Q4 FY20 guides put BASE at -2.4%, -1.5% and +5.1%/yr. At the COVID-19 low (2020-03-20, $192.22) the stock
+  traded at 29.8x (the 66th percentile), 57% above the floor (19x): Ratio B 0.63 (BUY), still RICH (adjusted gap -0.14,
+  conservative case -29%). From late November it traded at 61-69x (the 97th-100th percentile), on FY19's $6.46 and from the Q4
+  FY20 print on FY20's $6.33. RICH on all 53 dates of 2020.
+- **The window's multiples rose** as the FY17 days on $4.03 filled it: the median from 15.5x to 25.6x, the 90th percentile from
+  25.7x to 57.5x. The EPP floor was 14x in 2017, 15x in 2018, 17x in 2019, 19x in 2020 and 22x on 2020-12-31.
+- **The proxy composite:** 1.95 on the Q1 FY17 print (operating margin -1,460bp and the opex and inventory gaps at BEAR against
+  Avago's Q1 FY16), 3.55 and 3.35 on Q2-Q3 FY17, 2.85 on Q4 FY17, 3.20 on Q1-Q2 FY18, 3.05 on Q3 FY18, 2.90 on Q4 FY18, 2.55 on Q1
+  FY19, 2.40 on Q2-Q4 FY19 (the opex gap and the guided margin step at BEAR), 2.35 on Q1-Q2 FY20, 2.70 on Q3 FY20 and 2.90 on Q4
+  FY20.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed; no outcome consulted):
+- FY2018 at GAAP $28.48 (the literal AAPL FY2002 test, which a benefit cannot meet) would change 53 classes and 62 tiers: every date
+  from 2018-12-07 to 2019-12-06 turns CHEAP and BUY (FY19E at 8.0-11.1x, the 3rd-28th percentile, below the 12x floor), and from the
+  Q4 FY19 print BEAR becomes FY18 to FY19's -77.3%/yr, which moves nine tiers of March-May 2020 toward AVOID;
+- BASE on the latest quarter's revenue growth instead of the guides would change no class and 13 tiers (2017-03-03 to 2017-05-26,
+  AVOID to BUY on Q1 FY17's +133.7%);
+- the FY2019 margin guides as display only, the two non-GAAP quarter updates left out, and FY2018 ending on 2018-10-28 would change
+  none.
+
+Judgement calls that could carry hindsight:
+- excluding FY2018 by the mirrored test (53 classes and 62 tiers): FY17's $4.03 then anchors FY19E at 57-79x where GAAP $28.48
+  would have put it at 8-11x; the test was added for this case, by a builder who knows what followed;
+- the FY2019 GAAP operating margin level as a guided margin step, carried for two years (no class moves; it drives BASE to -66%/yr);
+- the GAAP basis through CA and Symantec's enterprise security business, whose amortization the non-GAAP figures remove (the 2009
+  rule, as for LSI and BRCM);
+- reading the fiscal-year guide against FY2018's 53-week revenue as published, and the non-GAAP 8-K ranges as the latest quarter
+  guides (no class moves);
+- the signals, unchanged since 2009, for a company with a software segment from FY2019 (28% of FY2020 revenue); DURABLE rather than
+  CYCLICAL (the class label only); CLOUD on the watch list (text only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -4026,7 +4199,9 @@ What the gates enforce:
   service providers, so its watch list is empty ("AVGO", "AVGO 2010-2012"). From the FY2016 10-K of Broadcom Limited (2016-12-23),
   the first whose risk factors name "the shift to cloud-based IT solutions and services, such as hyperscale computing" as a risk to
   its wired infrastructure and enterprise storage segments, AVGO carries CLOUD on the watch list, company-acknowledged, with no
-  market read ("AVGO 2013-2016").
+  market read ("AVGO 2013-2016"). The FY2017 10-K repeats that sentence and the FY2018-FY2020 10-Ks of Broadcom Inc. name the shift
+  as affecting sales "for use in traditional enterprise data centers", so it stays there through 2020; EV and CRYPTO, live from
+  2020, are scoped to other industries ("AVGO 2017-2020").
 
 ## Workflow
 

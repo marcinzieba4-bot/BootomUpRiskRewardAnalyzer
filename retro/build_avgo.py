@@ -33,10 +33,20 @@ release, where it is the first trading day after it. Avago released after the cl
 day (its 8-K's acceptance time); in 2009 that day was a Friday, the week's last trading day, so the print meets its close
 (public before the open).
 
-From 2016-02-02 the listed company is Broadcom Limited, the successor issuer to Avago (company_names in the fact sheet). The one
-theme encoding decided so far: the FY2016 10-K names the shift to cloud-based IT as a risk to its own segments (CLOUD, live from
-2012-10-30), so CLOUD joins the watch list (company-acknowledged, no market read); the factor pair nets to zero and the theme signal
-stays at 2/4, so only text changes.
+From 2016-02-02 the listed company is Broadcom Limited, the successor issuer to Avago, and from 2018-04-05 Broadcom Inc.
+(company_names in the fact sheet). The one theme encoding decided so far: the FY2016 10-K names the shift to cloud-based IT as a
+risk to its own segments (CLOUD, live from 2012-10-30), so CLOUD joins the watch list (company-acknowledged, no market read); each
+later 10-K's wording replaces it; the factor pair nets to zero and the theme signal stays at 2/4, so only text changes.
+
+From 2017 on (decided on 2026-11-01 before any 2017-2020 date was built or scored; retro/README.md, "AVGO 2017-2020"):
+  - from the Q4 FY18 release Broadcom guided the fiscal year: with no next-quarter guide in scope, forward revenue growth is the
+    current fiscal year's revenue guide, a dollar level read against the previous year's net revenue (method r2's fallback, the
+    LOW dollar rule); its GAAP operating margin, stated as a level (FY2019), gives the guided margin step (the LOW level-form
+    rule); a withdrawal (FY2020, 2020-03-13) voids every earlier guide for its year (the LOW 2020 rule);
+  - FY2018 is excluded as a distorted year by the mirror of the AAPL FY2002 test: its listed one-off tax benefits exceed its
+    income without them (a fact-sheet encoding, as every exclusion);
+  - the fiscal year ends on the first Sunday in November in a 53-week year whose closest Sunday falls before October 31
+    (FY2018: 2018-11-04; the fiscal_calendar facts, each public before the days it moves).
 
 Output goes to staging/retrospective/AVGO until the series is added to the archive (--out archive/retrospective/AVGO).
 
@@ -44,6 +54,7 @@ Usage
   python3 retro/build_avgo.py --weekly 2009-08-03 2009-12-31
   python3 retro/build_avgo.py --weekly 2010-01-04 2012-12-31
   python3 retro/build_avgo.py --weekly 2013-01-07 2016-12-31
+  python3 retro/build_avgo.py --weekly 2017-01-02 2020-12-31
   python3 retro/build_avgo.py 2009-09-04
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/AVGO/<AS_OF>
 """
@@ -65,9 +76,14 @@ FACTS = os.path.join(HERE, "facts", "AVGO.json")
 ENGINE = os.path.join(HERE, "templates", "avgo_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "AVGO")
 # the guide fields this builder has an encoding for; any other field (a number) needs its encoding decided first
-# (level_stated: a guide stated as a dollar level, read against the year-ago quarter directly, from the 8-K of 2010-08-10)
+# (level_stated: a guide stated as a dollar level, read against the year-ago quarter directly, from the 8-K of 2010-08-10;
+# period: a fiscal-year guide, read against the previous fiscal year's net revenue, from the Q4 FY18 release; op_margin_guide_pct:
+# its GAAP operating margin as a level; withdrawn: a fiscal-year guide withdrawn, from the Q1 FY20 release)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "seq_pct", "base_quarter", "base_sales_m", "level_m", "prior_label",
-              "prior_sales_m", "prior_source", "yoy_pct", "quote", "display", "level_stated"}
+              "prior_sales_m", "prior_source", "yoy_pct", "quote", "display", "level_stated", "period", "op_margin_guide_pct",
+              "margin_quote", "withdrawn"}
+# 53-week years whose year end differs from the Sunday closest to October 31 (the fact sheet's fiscal_calendar; set in main)
+WEEKS_53 = {}
 # rule T, the engine's signal thresholds: (rule_t key, BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"revenue": (-39, -18, 4, 11), "gross_margin": (-1080, -560, -30, 1480), "opex_gap": (31, 16, 2, -18),
                      "inventory_gap": (54, 23, -8, -18), "op_margin": (-1540, -820, -100, 1630)}
@@ -76,12 +92,29 @@ RULE_T_KEYS = {"revenue": (1, False), "gross_margin": (10, False), "opex_gap": (
 
 
 def fiscal_year_end(n):
-    """Avago's fiscal year n ends on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31."""
+    """Avago's fiscal year n ends on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31; the FY2017 10-K
+    states it as that Sunday in a 52-week year and the first Sunday in November in a 53-week year, which differs only for a
+    53-week year whose closest Sunday falls before October 31 (FY2018: November 4, not October 28; the fiscal_calendar facts)."""
     d = dt.date(n, 10, 31)
     if n <= 2007:
         return d
+    if n in WEEKS_53:
+        return dt.date(n, 11, 1) + dt.timedelta((6 - dt.date(n, 11, 1).weekday()) % 7)
     back, fwd = (d.weekday() - 6) % 7, (6 - d.weekday()) % 7
     return d - dt.timedelta(back) if back <= fwd else d + dt.timedelta(fwd)
+
+
+def set_calendar(facts):
+    """Load the 53-week years from the fact sheet; each must be public before the first day it moves (the day after the Sunday
+    closest to October 31), so no model dated before its publication can be affected by it."""
+    WEEKS_53.clear()
+    for w in facts.get("fiscal_calendar", {}).get("weeks_53", []):
+        WEEKS_53[w["fy"]] = w
+        d = dt.date(w["fy"], 10, 31)
+        back, fwd = (d.weekday() - 6) % 7, (6 - d.weekday()) % 7
+        closest = d - dt.timedelta(back) if back <= fwd else d + dt.timedelta(fwd)
+        assert fiscal_year_end(w["fy"]).isoformat() == w["end"], (w["fy"], "the stated year end differs from the rule")
+        assert w["published"] <= (closest + dt.timedelta(1)).isoformat(), (w["fy"], "published after the first day it moves")
 
 
 def fiscal_year(day):
@@ -128,6 +161,9 @@ def check_print(p):
 
 
 def check_guide(g):
+    if g.get("withdrawn"):        # a withdrawal carries no number
+        assert "level_m" not in g and "period" in g, (g["doc"], "a withdrawal names its fiscal year and carries no number")
+        return
     lv = g["level_m"] if g.get("level_stated") else [round(g["base_sales_m"] * (1 + s / 100), 2) for s in g["seq_pct"]]
     assert lv == g["level_m"] and lv[0] <= lv[1], (g["doc"], lv)
     assert [round((x / g["prior_sales_m"] - 1) * 100 + 0.0, 1) for x in lv] == g["yoy_pct"], (g["doc"], "yoy")
@@ -136,6 +172,7 @@ def check_guide(g):
 def build(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
+    set_calendar(facts)
     listing = facts["listing"]["first_trading_day"]
     assert min(raw) == listing, ("the price data must start on the listing day", min(raw), listing)
     # every price of the window on the AS_OF share basis: Yahoo's split-adjusted series times the splits after AS_OF,
@@ -181,8 +218,9 @@ def build(as_of, facts, raw, spx, engine, out):
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
     # the one theme encoding decided so far: a 10-K whose risk factors name the shift to cloud-based IT as a risk to the company's
     # own segments (CLOUD, from the FY2016 10-K; the FY2009-FY2015 10-Ks name cloud only for their own IT service providers) puts
-    # the theme on the watch list. No other theme in taxonomy_eras.json is live for this semiconductor maker in 2009-2016
-    # (OFFSHORE is scoped to IT services, GENAI is live from 2022-11-30): any other kind of event needs its encoding decided first
+    # the theme on the watch list. No other theme in taxonomy_eras.json is live for this semiconductor and infrastructure software
+    # maker in 2009-2020 (OFFSHORE is scoped to IT services, EV from 2020 to powertrains and fuel, CRYPTO from 2020-10-21 to payments
+    # and banks, GENAI is live from 2022-11-30): any other kind of event needs its encoding decided first
     if any(e["kind"] != "cloud_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the AVGO builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:
@@ -219,8 +257,25 @@ def build(as_of, facts, raw, spx, engine, out):
     eps_now = eps_hist[last_fy]
     eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
         f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
-    # ── forward revenue growth: the latest guide for the quarter after the latest print, as growth on the year-ago quarter ──
-    qg = [g for g in facts["guides"] if g["published"] <= as_of and g["quarter"] == next_q]
+    # ── forward revenue growth: the latest guide for the quarter after the latest print, as growth on the year-ago quarter;
+    # with none in scope, the current fiscal year's revenue guide against the previous year (method r2's fallback, from the Q4
+    # FY18 release); a withdrawal voids every earlier guide for its year (the LOW 2020 rule, from the Q1 FY20 release) ──
+    live = [g for g in facts["guides"] if g["published"] <= as_of]
+    qg = [g for g in live if g.get("quarter") == next_q]
+    fy_recs = [g for g in live if g.get("period") == fy_now]
+    cut = max((i for i, g in enumerate(fy_recs) if g.get("withdrawn")), default=-1)
+    fy_live, wd = fy_recs[cut + 1:], (fy_recs[cut] if cut >= 0 else None)
+    no_fy = (f"the {fy_now} guide withdrawn ({wd['doc']}: '{wd['quote']}')" if wd else
+             "no fiscal-year revenue, EPS or margin guide")
+    mg = next((g for g in reversed(fy_live) if "op_margin_guide_pct" in g), None)
+    # a fiscal-year GAAP operating margin guide stated as a level steps from the history's margin (the LOW level-form rule)
+    lv_text = lambda m: f"{m[0]:g}%" if m[0] == m[1] else f"{m[0]:g}-{m[1]:g}%"
+    m_text = (f"GAAP operating margin {lv_text(mg['op_margin_guide_pct'])} ({mg['doc']}: '{mg['margin_quote']}') against "
+              f"{h['fy_label']}'s {h['prev_fy_op_margin']:.2f}%: "
+              f"{(sum(mg['op_margin_guide_pct']) / 2 - h['prev_fy_op_margin']) * 100:+.0f}bp" if mg else "")
+    q_tail = ("it withdrew its fiscal-year guide and guides one quarter at a time" if wd else
+              "Avago guides one quarter at a time, in revenue only")
+    fy_rev_label = None
     if qg:
         g = qg[-1]
         fwd = list(g["yoy_pct"])
@@ -232,27 +287,45 @@ def build(as_of, facts, raw, spx, engine, out):
         if g.get("level_stated"):     # a dollar level or range: read against the year-ago quarter directly (the AAPL rule)
             seq = f"about {lvl}" if g["level_m"][0] == g["level_m"][1] else lvl
             guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {lvl} ('{g['quote']}') against {prior}: {_range(fwd)} YoY; "
-                          f"display only: {g['display']}; no fiscal-year revenue, EPS or margin guide")
-            cat3 = (f"(3) The {next_q} guide — {seq} ({_range(fwd)} YoY): Avago guides one quarter at a time, in revenue only")
+                          f"display only: {g['display']}; {m_text + '; ' if mg else ''}{no_fy}")
+            cat3 = (f"(3) The {next_q} guide — {seq} ({_range(fwd)} YoY): {q_tail}")
         else:
             sg = lambda x: f"{x:+g}%" if x else "0%"
             seq = sg(g["seq_pct"][0]) if g["seq_pct"][0] == g["seq_pct"][1] else f"{sg(g['seq_pct'][0])} to {sg(g['seq_pct'][1])}"
             guide_text = (f"{next_q} outlook ({g['doc']}): net revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']:,}M ('{g['quote']}'), "
                           f"i.e. {lvl} against {prior}: {_range(fwd)} YoY; display only: {g['display']}; "
-                          f"no fiscal-year revenue, EPS or margin guide")
-            cat3 = (f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): Avago guides one quarter at a time, "
-                    f"in revenue only")
+                          f"{m_text + '; ' if mg else ''}{no_fy}")
+            cat3 = (f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): {q_tail}")
         guide_ids = [g["source"], g["prior_source"]]
+    elif fy_live:                     # no next-quarter guide: the fiscal-year revenue guide, a dollar level on the previous year
+        g = fy_live[-1]
+        fwd = list(g["yoy_pct"])
+        lvl = (f"${g['level_m'][0]:,.1f}M" if g["level_m"][0] == g["level_m"][1] else
+               f"${g['level_m'][0]:,.1f}M-${g['level_m'][1]:,.1f}M")
+        prior = f"{g['prior_label']}'s ${g['prior_sales_m']:,}M"
+        fwd_label = f"{fy_now} revenue guide ({g['doc']})"
+        fwd_short, fwd_period = f"{fy_now} guide on {g['prior_label']}", fy_now
+        fy_rev_label = f"the {fwd_label} on {g['prior_label']}'s net revenue"
+        guide_text = (f"{fy_now} outlook ({g['doc']}): net revenue {lvl} ('{g['quote']}') against {prior}: {_range(fwd)}; "
+                      f"{m_text + ' (the guided margin step)' if mg else 'no GAAP margin guide'}; display only: {g['display']}; "
+                      f"no {next_q} guide, so method r2 takes the fiscal-year revenue guide; no EPS guide")
+        cat3 = (f"(3) The {fy_now} guide — net revenue {lvl} ({_range(fwd)} on {g['prior_label']})"
+                f"{', GAAP operating margin ' + lv_text(mg['op_margin_guide_pct']) if mg else ''}: Broadcom guides the fiscal year, "
+                f"not the quarter")
+        guide_ids = [g["source"], g["prior_source"]] + ([mg["source"]] if mg else [])
     else:
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide in scope)"
         fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
-        guide_text = f"{next_q}: no revenue guide in scope yet; no fiscal-year revenue, EPS or margin guide"
+        guide_text = f"{next_q}: no revenue guide in scope yet; {m_text + '; ' if mg else ''}{no_fy}"
         guide_ids = []
-        cat3 = f"(3) A {next_q} guide — none in scope yet: Avago guides one quarter at a time, in revenue only"
-    # no margin guide in any filing of the period: no guided step, and the margin signal uses the latest quarter
-    margin_guided = False
-    fy_margin_base = h["prev_fy_op_margin"]
+        cat3 = f"(3) A {next_q} guide — none in scope yet: {q_tail}"
+    if wd:
+        guide_ids.append(wd["source"])
+    # a numeric fiscal-year margin guide (FY2019) gives the guided step and the margin signal; otherwise none, and the signal
+    # uses the latest quarter's change
+    margin_guided = bool(mg)
+    fy_margin_base = round(sum(mg["op_margin_guide_pct"]) / 2, 3) if mg else h["prev_fy_op_margin"]
 
     # ── dividend: none declared ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
@@ -312,7 +385,8 @@ def build(as_of, facts, raw, spx, engine, out):
         val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
         stage = "cloud"
         watch = [{"theme": "CLOUD", "status": "live, company-acknowledged; no market read",
-                  "reason": (f"Live: the company's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                  "reason": (f"Live: the company's own {e['doc']} says '{e['risk_quote']}'"
+                             f"{' ' if e['risk_quote'].endswith('.') else '. '}At the same time {e['offering']}. "
                              f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CLOUD) "
                              "only if dated evidence shows the market pricing cloud substitution of its enterprise storage and "
                              "networking specifically.")}]
@@ -421,10 +495,10 @@ EPS_LABEL       = {R(eps_label)}
 FWD_GUIDE       = {R(tuple(fwd))}   # the next-quarter revenue guide as growth on the year-ago quarter (else the latest quarter's growth)
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
-MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
+MARGIN_GUIDED   = {margin_guided}   # {"True: a fiscal-year GAAP operating margin guide (a level), so BASE adds the guided step and the signal uses it" if margin_guided else "False: no margin guide, so no guided step; the signal uses the latest quarter's change"}
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {rev[max(rev)] * (1 + sum(fwd) / 2 / 100):.4f}
-FY_REVENUE_LABEL = {R(f"the {fwd_label}, YoY, applied to the year (no {fy_now} revenue guide)")}
+FY_REVENUE_LABEL = {R(fy_rev_label or f"the {fwd_label}, YoY, applied to the year (no {fy_now} revenue guide)")}
 SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}

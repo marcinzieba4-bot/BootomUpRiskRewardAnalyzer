@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  AVGO  ·  Broadcom Inc.  ·  $228.56  ·  RETROSPECTIVE as of 2018-12-07
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -0.23  [MODESTLY OVERVALUED]
+  Point-in-time: 20 sources, latest published 2018-12-07; latest print Q4 FY18 (Dec 6)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E net revenue, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Target market                  FY2019E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Wired infrastructure          $ 11.87  $11.87  $19.61    +0.00    +7.74
+    +29.9% net revenue in FY17
+  Wireless communications       $  7.51  $ 7.51  $12.39    +0.00    +4.88
+    +45.1% net revenue in FY17
+  Enterprise storage            $  3.89  $ 3.89  $ 6.42    +0.00    +2.53
+    +22.2% net revenue in FY17
+  Industrial & other            $  1.23  $ 1.23  $ 2.03    +0.00    +0.80
+    +37.5% net revenue in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 24.50  $24.50  $40.45    +0.00   +15.95
+  FY2019E = FY18 $20.848B × (1 + 17.5%: the FY19 revenue guide (Q4 FY18 release) on FY18's net revenue); split pro rata to FY17 net revenue by segment (FY2017 10-K)
+  Q4 FY18 (Dec 6): net revenue $5.444B +12.4% YoY (+7.5% QoQ); inventories -22.3%; R&D + SG&A +15.9%;
+  gross margin 53.91% (+471.8bp); operating margin 30.35% (+1475.9bp); EPS $2.64 vs $1.24
+  Net revenue: net revenue $5,444M vs $4,844M: 'an increase of 12 percent from $4,844 million in the same quarter last year'; inventory $1,124M (November 4, 2018) vs $1,447M (October 29, 2017); diluted EPS from continuing operations $2.64 vs $1.24 (Q4 FY17 as this release restates it, after a $110M litigation settlement); diluted shares 423M in Q4 FY18
+  FY19 outlook (Q4 FY18 release): net revenue $24,500.0M ('Net revenue | 24,500M | — | 24,500M') against FY18's $20,848M: +17.5%; GAAP operating margin 20% (Q4 FY18 release: 'Operating margin | 20% | 7,580M | 51%') against FY18's 24.63%: -463bp (the guided margin step); display only: FY2019 with CA; GAAP operating margin 20% (non-GAAP 51%, excluding $4,700M of amortization of acquisition-related intangible assets, $2,100M of stock-based compensation, $570M of restructuring charges and $210M of acquisition-related costs); net interest expense and other $1,250M; taxes 13%; no Q1 FY19 guide, so method r2 takes the fiscal-year revenue guide; no EPS guide
+
+  FY2019E EPS check:  $24.500B × 21.8% pre-tax × (1−1.9%) ÷ 0.423B  =  $12.39  (FY2019E: no EPS guide in numbers, FY17's $4.03 stands (FY18 is excluded: GAAP $28.48 per diluted share from continuing operations, inflated by one-off tax benefits: the benefit from income taxes ($8,084M for the year) carries the one-off items the Q3 FY18 10-Q lists: the 2017 Tax Reform Act's provisional benefit of $7,303M and the redomiciliation's tax benefits of $1,162M less an $84M provision ($8,381M), more than the year's $12,629M income from continuing operations without them ($4,248M); no published EPS excluding only them))
+  FY2021E BEAR check: $24.500B × 21.8% ÷ 0.480B  =  $10.91  (scenario $3.82)
+  FY2021E BULL check: $40.450B × 22.2% ÷ 0.480B  =  $18.35  (scenario $7.41)
+  Every 1pp of pre-tax margin ≈ $0.568 EPS ≈ $9.09/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -39.0%   ≥-18.0%     ≥4.0%    ≥11.0%    +12.4%  ★ XBULL  ████
+  Gross margin change                 -1080.0bp  ≥-560.0bp  ≥-30.0bp  ≥1480.0bp  +471.8bp  ▲ BULL  ███░
+  Opex growth less net revenue         +31.0pp   ≤16.0pp    ≤2.0pp  ≤-18.0pp    +3.6pp  ◦ BASE  ██░░
+  Inventory growth less net revenue    +54.0pp   ≤23.0pp   ≤-8.0pp  ≤-18.0pp   -34.7pp  ★ XBULL  ████
+  Operating margin change             -1540.0bp  ≥-820.0bp  ≥-100.0bp  ≥1630.0bp  -463.0bp  ◦ BASE  ██░░
+  Cloud: net effect on enterprise storage and networking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.90 / 4.00
+  Market composite:   2.73 / 4.00  (back-solved from $228.56 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.50  →  Gap -0.23  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 net revenue +18.2%, gross margin 51.5%; Q4 gross margin 53.91% (+472bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 56.7x FY19E vs a 16.0x 9.1-yr ex-FY09 ex-FY14 ex-FY16 ex-FY18 median (91st percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY19 revenue guide (Q4 FY18 release) +17.5% vs a 25.7% 10-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash $4.292B, long-term debt $17.493B (Q4 FY18), FY17 free cash flow $5.482B (net cash provided by operating activities $6,551M less purchases of property, plant and equipment $1,069M), dividend $10.60 a year  (+0.30 × 15%  =  +0.045)
+    +  Cloud data centers: sales to cloud-based data center providers — it sells to them as well  (+0.20 × 10%  =  +0.020)
+    -  Shift to cloud-based IT (FY2017 10-K): 'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its wired infrastructure and enterprise storage segments  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +12.4%    -39.0%  -51.4%  End demand and distributor destocking…
+  Gross margin change                 +471.8bp  -1080.0bp  -1551.8bp  Fab under-utilization and price erosi…
+  Opex growth less net revenue          +3.6pp   +31.0pp  +27.4pp  R&D and SG&A do not come down with re…
+  Inventory growth less net revenue    -34.7pp   +54.0pp  +88.7pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -463.0bp  -1540.0bp  -1077.0bp  Operating leverage works in reverse
+  Cloud: net effect on enterprise storage and networking    +2.0/4    +1.0/4  -1.0/4  Enterprise data centers move to the c…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$70.69  (model)  /  $45.84 (defined)
+  Bear probability (proxy model):  4.9%
+
+  KEY TRIGGER: net revenue went from +13.4% (Q3 FY18) to +12.4% YoY (Q4 FY18), +7.5% on the quarter before;
+  the bear case needs the downturn to resume with gross margin (+471.8bp now)
+  and inventories (-34.7pp against revenue) giving way. A semiconductor downturn shows up in distributor inventories and the
+  next-quarter guide first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.03  (FY2019E: no EPS guide in numbers, FY17's $4.03 stands (FY18 is excluded: GAAP $28.48 per diluted share from continuing operations, inflated by one-off tax benefits: the benefit from income taxes ($8,084M for the year) carries the one-off items the Q3 FY18 10-Q lists: the 2017 Tax Reform Act's provisional benefit of $7,303M and the redomiciliation's tax benefits of $1,162M less an $84M provision ($8,381M), more than the year's $12,629M income from continuing operations without them ($4,248M); no published EPS excluding only them))
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2009 8.6x, 2010 9.9x, 2011 12.2x, 2012 12.6x, 2013 14.3x, 2014 17.2x, 2015 19.4x, 2016 40.4x, 2017 43.2x, 2018 54.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $60.45/share
+  Current $228.56 vs Updated EPP $60.45:  +278%  ⚠ far above floor — large drawdown room
+  Bear $45.84 vs Updated EPP $60.45:  -24%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -18.0      -30.4   BASE floor (vs +12 now)
+  Gross margin change                         -560.0    -1031.8   BASE floor (vs +472 now)
+  Opex growth less net revenue                  16.0      +12.4   BASE floor (vs +4 now)
+  Inventory growth less net revenue             23.0      +57.7   BASE floor (vs -35 now)
+  Operating margin change                     -820.0     -357.0   BASE floor (vs -463 now)
+  Cloud: net effect on enterprise storage and networking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.03 × (1+0.0%)² = $4.03
+  At 16x P/E (conservative):  $64.48/share
+  + Cumul. dividends (2yr):  +$21.84/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $64.48  (▼164.08 from $228.56)
+  Conservative total return:  -62% over 2yr  = -31%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (56.7x)
+  mean-reverts to 16x. Breakeven at 16x needs FY2021E EPS of $12.92,
+  i.e. 79.1%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (prices since the listing on 2009-08-06)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $197.46  –  $274.26  (at 40th pct of range)
+  Annual dividend:      $10.60/share  (yield 4.6%)
+  Realized vol:         34% annualized (250 daily returns since the listing)
+  Beta vs broad market: 1.12
+  1-sigma range (1yr):  $150.16  –  $306.96  ($228.56 ± 34%)
+  2-sigma range (1yr):  $71.77  –  $385.35
+  ────────────────────────────────────────────────────────────
+  Bear $45.84 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  An analog semiconductor maker listed on 2009-08-06: the stock is +13% off its July
+  low while net revenue went from +13.4% (Q3 FY18) to +12.4% YoY (Q4 FY18), +7.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        3.82   12.0x  $  45.84     4.9%      5.5%    -0.7pp  EPS -2.7%/yr (worst year FY08-FY17 ex-FY09 ex-FY14 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        3.11   16.0x  $  49.76    17.1%     19.3%    -2.3pp  EPS -12.2%/yr (FY19 guide on FY18 + margin + buyback); P/E at its 9.1-yr ex-FY09 ex-FY14 ex-FY16 ex-FY18 median
+  BULL        7.41   25.2x  $ 186.73    59.5%     63.2%    -3.7pp  EPS +35.6%/yr (FY08-FY17 ex-FY09 ex-FY14 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      26.19   55.2x  $1,445.69    18.5%     11.9%    +6.6pp  EPS +155.0%/yr (best 2-yr run FY08-FY17 ex-FY09 ex-FY14 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $389.85  /  Market EV: $302.64  /  Current: $228.56
+  Conservative EV (2yr, ④): $64.48 + $21.84 divs = $86.32 total value
+  Downside (→ Bear $45.84): 79.9%   Upside (→ Bull $186.73): -18.3%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $228.56 the market needs $302.27 in two years —
+  above the BULL case. That is a market composite of 2.73 against a model
+  read of 2.50: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +278%    -0.23  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     0.97x    +278%    +0.19  FAIRLY VALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +278%    -0.68  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +278%    -0.19  FAIRLY VALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +278%    -0.26  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +278%    +0.07  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +215%    -0.23  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +278%    -0.12  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY19 print — net revenue against the FY19 revenue guide (Q4 FY18 release): +17.5% YoY
+  (2) Gross margin — +471.8bp in Q4 FY18: utilization and price erosion, what must hold if revenue does not
+  (3) The FY19 guide — net revenue $24,500.0M (+17.5% on FY18), GAAP operating margin 20%: Broadcom guides the fiscal year, not the quarter
+  (4) Inventories — -22.3% against net revenue +12.4% in Q4 FY18 (-34.7pp): write-downs follow if orders slow
+  (5) Capital structure at 57x — $1.75 a share paid on September 28, 2018 ($723 million); the dividend raised by 51 percent to $2.65; repurchased 31.9 million shares in the fiscal year for $7,258 million; long-term debt $17,493M at November 4, 2018
+  ✕ AVOID  |  EPP floor $60.45  |  ADD below ~$42.30  |  TRIM above $186.73
+════════════════════════════════════════════════════════════════════════
+

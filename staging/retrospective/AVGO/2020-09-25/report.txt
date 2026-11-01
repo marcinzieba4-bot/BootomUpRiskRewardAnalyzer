@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  AVGO  ·  Broadcom Inc.  ·  $356.80  ·  RETROSPECTIVE as of 2020-09-25
+  Signal: ✕ AVOID   Ratio B: 8.41x   Adj gap: -0.71  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2020-09-25; latest print Q3 FY20 (Sep 3)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E net revenue, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Target market                  FY2020E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Semiconductor solutions       $ 19.24  $19.24  $32.65    +0.00   +13.41
+    -8.3% net revenue in FY19
+  Infrastructure software       $  5.71  $ 5.71  $ 9.69    +0.00    +3.98
+    +189.7% net revenue in FY19
+  IP licensing                  $  0.08  $ 0.08  $ 0.14    +0.00    +0.06
+    -45.5% net revenue in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 25.03  $25.03  $42.48    +0.00   +17.45
+  FY2020E = FY19 $22.597B × (1 + 10.8%: the Q4 FY20 revenue guide (Q3 FY20 release), YoY, applied to the year (no FY20 revenue guide)); split pro rata to FY19 net revenue by segment (FY2019 10-K, FY18 recast to the new segments)
+  Q3 FY20 (Sep 3): net revenue $5.821B +5.5% YoY (+1.4% QoQ); inventories -0.9%; R&D + SG&A +0.7%;
+  gross margin 56.97% (+195.3bp); operating margin 17.32% (+163.2bp); EPS $1.46 vs $1.71
+  Net revenue: net revenue $5,821M vs $5,515M: 'Net revenue | 5,821 | 5,742 | 5,515 | 17,421 | 16,821'; inventory $1,081M (August 2, 2020) vs $1,091M (August 4, 2019, the Q3 FY19 release); diluted EPS from continuing operations $1.46 vs $1.71; diluted shares 422M in Q3 FY20
+  Q4 FY20 outlook (Q3 FY20 release): net revenue $6,250.0M-$6,550.0M ('Fourth quarter revenue guidance of $6.4 billion plus or minus $150 million') against Q4 FY19's $5,776M: +8.2% to +13.4% YoY; display only: $6.4 billion plus or minus $150 million; Adjusted EBITDA $3,744 million plus or minus $75 million (non-GAAP); the FY20 guide withdrawn (Q1 FY20 release: 'In light of the uncertainties in the global business environment arising from the effects of COVID-19, the Company is withdrawing its prior annual guidance for fiscal year 2020, and providing guidance for its second fiscal quarter.')
+
+  FY2020E EPS check:  $25.030B × 9.8% pre-tax × (1−-22.9%) ÷ 0.422B  =  $7.18  (FY2020E: no EPS guide in numbers, FY19's $6.46 stands)
+  FY2022E BEAR check: $25.030B × 9.8% ÷ 0.472B  =  $6.42  (scenario $6.12)
+  FY2022E BULL check: $42.480B × 10.2% ÷ 0.472B  =  $11.34  (scenario $8.70)
+  Every 1pp of pre-tax margin ≈ $0.729 EPS ≈ $17.57/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -39.0%   ≥-18.0%     ≥4.0%    ≥11.0%     +5.5%  ▲ BULL  ███░
+  Gross margin change                 -1080.0bp  ≥-560.0bp  ≥-30.0bp  ≥1480.0bp  +195.3bp  ▲ BULL  ███░
+  Opex growth less net revenue         +31.0pp   ≤16.0pp    ≤2.0pp  ≤-18.0pp    -4.9pp  ▲ BULL  ███░
+  Inventory growth less net revenue    +54.0pp   ≤23.0pp   ≤-8.0pp  ≤-18.0pp    -6.5pp  ◦ BASE  ██░░
+  Operating margin change             -1540.0bp  ≥-820.0bp  ≥-100.0bp  ≥1630.0bp  +163.2bp  ▲ BULL  ███░
+  Cloud: net effect on enterprise storage and networking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   3.11 / 4.00  (back-solved from $356.80 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.40  →  Gap -0.71  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 net revenue +8.4%, gross margin 55.2%; Q3 gross margin 56.97% (+195bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 55.2x FY20E vs a 24.1x 10-yr ex-FY14 ex-FY16 ex-FY18 median (92nd percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q4 FY20 revenue guide (Q3 FY20 release) +8.2-13.4% vs a 18.2% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash $8.857B, long-term debt $43.201B (Q3 FY20), FY19 free cash flow $9.265B (net cash provided by operating activities $9,697M less purchases of property, plant and equipment $432M), dividend $13.00 a year  (+0.30 × 15%  =  +0.045)
+    +  Cloud data centers: data-center Ethernet switching and routing — it sells to them as well  (+0.20 × 10%  =  +0.020)
+    -  Shift to cloud-based IT (FY2019 10-K): 'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its sales into traditional enterprise data centers  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     +5.5%    -39.0%  -44.5%  End demand and distributor destocking…
+  Gross margin change                 +195.3bp  -1080.0bp  -1275.3bp  Fab under-utilization and price erosi…
+  Opex growth less net revenue          -4.9pp   +31.0pp  +35.9pp  R&D and SG&A do not come down with re…
+  Inventory growth less net revenue     -6.5pp   +54.0pp  +60.5pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +163.2bp  -1540.0bp  -1703.2bp  Operating leverage works in reverse
+  Cloud: net effect on enterprise storage and networking    +2.0/4    +1.0/4  -1.0/4  Enterprise data centers move to the c…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$130.25  (model)  /  $86.90 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: net revenue went from +4.1% (Q2 FY20) to +5.5% YoY (Q3 FY20), +1.4% on the quarter before;
+  the bear case needs the downturn to resume with gross margin (+195.3bp now)
+  and inventories (-6.5pp against revenue) giving way. A semiconductor downturn shows up in distributor inventories and the
+  next-quarter guide first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.46  (FY2020E: no EPS guide in numbers, FY19's $6.46 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2010 10.9x, 2011 12.2x, 2012 12.6x, 2013 14.3x, 2014 17.2x, 2015 19.4x, 2016 40.4x, 2017 43.2x, 2018 34.1x, 2019 35.8x, 2020 26.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $122.74/share
+  Current $356.80 vs Updated EPP $122.74:  +191%  ⚠ far above floor — large drawdown room
+  Bear $86.90 vs Updated EPP $122.74:  -29%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -18.0      -23.5   BASE floor (vs +6 now)
+  Gross margin change                         -560.0     -755.3   BASE floor (vs +195 now)
+  Opex growth less net revenue                  16.0      +20.9   BASE floor (vs -5 now)
+  Inventory growth less net revenue             23.0      +29.5   BASE floor (vs -6 now)
+  Operating margin change                     -820.0     -983.2   BASE floor (vs +163 now)
+  Cloud: net effect on enterprise storage and networking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.46 × (1+3.1%)² = $6.86
+  At 24x P/E (conservative):  $164.66/share
+  + Cumul. dividends (2yr):  +$26.78/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $164.66  (▼192.14 from $356.80)
+  Conservative total return:  -46% over 2yr  = -23%/yr
+
+  3.1% EPS growth is what is left once the premium multiple (55.2x)
+  mean-reverts to 24x. Breakeven at 24x needs FY2022E EPS of $13.75,
+  i.e. 45.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (prices since the listing on 2009-08-06)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $155.67  –  $378.96  (at 90th pct of range)
+  Annual dividend:      $13.00/share  (yield 3.6%)
+  Realized vol:         52% annualized (252 daily returns since the listing)
+  Beta vs broad market: 1.28
+  1-sigma range (1yr):  $171.26  –  $542.34  ($356.80 ± 52%)
+  2-sigma range (1yr):  $-14.27  –  $727.87
+  ────────────────────────────────────────────────────────────
+  Bear $86.90 requires:  ~1.5σ price move  (within normal vol range)
+  An analog semiconductor maker listed on 2009-08-06: the stock is +113% off its March
+  low while net revenue went from +4.1% (Q2 FY20) to +5.5% YoY (Q3 FY20), +1.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        6.12   14.2x  $  86.90     6.0%      4.1%    +1.9pp  EPS -2.7%/yr (worst year FY10-FY19 ex-FY14 ex-FY16 ex-FY18, capped at 0%); P/E to its 10th pct
+  BASE        7.13   24.1x  $ 171.83    20.8%     14.4%    +6.5pp  EPS +5.1%/yr (Q4 FY20 guide YoY + margin + buyback); P/E at its 10-yr ex-FY14 ex-FY16 ex-FY18 median
+  BULL        8.70   44.7x  $ 388.89    61.6%     50.1%   +11.5pp  EPS +16.1%/yr (FY10-FY19 ex-FY14 ex-FY16 ex-FY18 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      14.60   54.0x  $ 788.40    11.6%     31.4%   -19.8pp  EPS +50.3%/yr (best 2-yr run FY10-FY19 ex-FY14 ex-FY16 ex-FY18, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $372.09  /  Market EV: $470.84  /  Current: $356.80
+  Conservative EV (2yr, ④): $164.66 + $26.78 divs = $191.44 total value
+  Downside (→ Bear $86.90): 75.6%   Upside (→ Bull $388.89): 9.0%   Ratio B 8.41x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $356.80 the market needs $471.87 in two years —
+  above the BULL case. That is a market composite of 3.11 against a model
+  read of 2.40: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       8.41x    +191%    -0.71  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.31x    +191%    -0.31  MODESTLY OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +191%    -1.09  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          6.10x    +191%    -0.67  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         13.29x    +191%    -0.76  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             8.41x    +191%    -0.41  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 8.41x    +151%    -0.71  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    8.41x    +191%    -0.58  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY20 print — net revenue against the Q4 FY20 revenue guide (Q3 FY20 release): +8.2-13.4% YoY
+  (2) Gross margin — +195.3bp in Q3 FY20: utilization and price erosion, what must hold if revenue does not
+  (3) The Q4 FY20 guide — $6,250.0M-$6,550.0M (+8.2% to +13.4% YoY): it withdrew its fiscal-year guide and guides one quarter at a time
+  (4) Inventories — -0.9% against net revenue +5.5% in Q3 FY20 (-6.5pp): write-downs follow if orders slow
+  (5) Capital structure at 55x — $3.25 a share paid on June 30, 2020 ($1,312 million), and $20.00 per share of mandatory convertible preferred stock ($74 million); long-term debt $43,201M at August 2, 2020
+  ✕ AVOID  |  EPP floor $122.74  |  ADD below ~$146.06  |  TRIM above $388.89
+════════════════════════════════════════════════════════════════════════
+

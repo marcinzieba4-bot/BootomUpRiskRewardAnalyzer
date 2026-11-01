@@ -1,0 +1,295 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "AVGO",
+ "company": "Broadcom Limited",
+ "as_of": "2017-08-25",
+ "price_date": "2017-08-25",
+ "price": 245.59,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); analog semiconductor signals; the listing and short-history bounds rules (AVGO)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Broadcom: 'We are a leading designer, developer and global supplier of a broad range of semiconductor devices with a focus on complex digital and mixed signal complementary metal oxide semiconductor, or CMOS, based devices and analog III-V based products', 'We have four reportable segments: wired infrastructure, wireless communications, enterprise storage and industrial & other, which align with our principal target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2016 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+  "theme_watch": [
+   {
+    "theme": "CLOUD",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: the company's own FY2016 10-K says 'In addition, the shift to cloud-based IT solutions and services, such as hyperscale computing, may adversely affect both our wired infrastructure and enterprise storage segments.' At the same time it sells into data centers itself: 'In the data center market, our high capacity, low latency, switching silicon supports advanced protocols around virtualization and multi-pathing'. The stock trades at 49.6x FY17E — a premium. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market pricing cloud substitution of its enterprise storage and networking specifically."
+   }
+  ],
+  "evidence": [
+   "V69"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Broadcom: 'We are a leading designer, developer and global supplier of a broad range of semiconductor devices with a focus on complex digital and mixed signal complementary metal oxide semiconductor, or CMOS, based devices and analog III-V based products', 'We have four reportable segments: wired infrastructure, wireless communications, enterprise storage and industrial & other, which align with our principal target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2016 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price rich; Ratio B 7.08x; +254% to EPP floor; model-vs-market gap +0.33; conservative 2yr -62%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 7.08,
+  "ratio_b_fmt": "7.08x",
+  "epp": 69.3,
+  "epp_gap_pct": 254.4,
+  "epp_adj": -0.3,
+  "proxy_composite": 3.35,
+  "sca": -0.1,
+  "adj_composite": 2.95,
+  "market_composite": 2.62,
+  "adj_gap": 0.33,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": -61.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.69,
+    "pe": 12.0,
+    "price": 56.28,
+    "desc": "EPS -2.7%/yr (worst year FY08-FY15 ex-FY09 ex-FY14, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.9,
+    "pe": 15.8,
+    "price": 93.22,
+    "desc": "EPS +9.2%/yr (Q4 FY17 guide YoY + margin + buyback); P/E at its 7.8-yr ex-FY09 ex-FY14 ex-FY16 median"
+   },
+   "BULL": {
+    "eps": 11.49,
+    "pe": 23.7,
+    "price": 272.31,
+    "desc": "EPS +52.3%/yr (FY08-FY15 ex-FY09 ex-FY14 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 32.17,
+    "pe": 40.9,
+    "price": 1315.75,
+    "desc": "EPS +155.0%/yr (best 2-yr run FY08-FY15 ex-FY09 ex-FY14, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 7.08,
+   "epp_gap_pct": 254.4,
+   "adj_gap": 0.33,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.81,
+   "epp_gap_pct": 254.4,
+   "adj_gap": 0.7,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -61.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 254.4,
+   "adj_gap": -0.11,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 5.37,
+   "epp_gap_pct": 254.4,
+   "adj_gap": 0.36,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 10.26,
+   "epp_gap_pct": 254.4,
+   "adj_gap": 0.29,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 7.08,
+   "epp_gap_pct": 254.4,
+   "adj_gap": 0.63,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 7.08,
+   "epp_gap_pct": 191.8,
+   "adj_gap": 0.43,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 7.08,
+   "epp_gap_pct": 254.4,
+   "adj_gap": 0.43,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -61.8,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "AVGO (retrospective, 2017-08-25) ✕ AVOID — Ratio B 7.08x (77.1% downside to Bear $56.28 / +10.9% upside to Bull $272.31) | Adj composite 2.95 vs market 2.62: gap +0.33 [MODESTLY UNDERVALUED] | +254% above the EPP floor $69.30 (14x FY17E $4.95) | Conservative 2-yr case: -61.8% total (-30.9%/yr) | At 49.6x FY17E the 15% hurdle price $324.79 sits above the BULL case; net revenue +17.7% YoY in Q3 FY17, forward revenues +14.1-17.8% (Q4 FY17 revenue guide (Q3 FY17 release)); cloud is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "V69",
+   "published": "2016-12-23",
+   "filed": "2016-12-23 08:20 ET (before the open)",
+   "title": "Broadcom Limited FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000164933816000151/avgo-10302016x10k.htm",
+   "supports": "selected financial data FY2012-FY2016 with diluted EPS from continuing operations; FY2014-FY2016 statements of operations with diluted shares; FY2015-FY2016 net revenue by segment; cash flows; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 6, 2016; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk to the wired infrastructure and enterprise storage segments"
+  },
+  {
+   "id": "V63",
+   "published": "2015-12-18",
+   "filed": "2015-12-17 16:25 ET (after the close)",
+   "title": "Avago Technologies Limited FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163415000089/avgo-110115x10k.htm",
+   "supports": "selected financial data FY2011-FY2015 with diluted EPS from continuing operations and shares; FY2014-FY2015 net revenue by segment; cash flows; the listed acquisition-related costs, inventory step-up and restructuring; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 7, 2015; business, competition and cyclicality wording"
+  },
+  {
+   "id": "V54",
+   "published": "2014-12-30",
+   "filed": "2014-12-29 17:23 ET (after the close)",
+   "title": "Avago Technologies Limited FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163414000049/avgo-110214x10k.htm",
+   "supports": "selected financial data FY2010-FY2014 with diluted EPS from continuing operations and shares; FY2013-FY2014 net revenue by segment; cash flows; the listed acquisition-related costs, inventory step-up and restructuring; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 8, 2014; business, competition and cyclicality wording"
+  },
+  {
+   "id": "V45",
+   "published": "2013-12-23",
+   "filed": "2013-12-20 16:56 ET (after the close)",
+   "title": "Avago Technologies Limited FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163413000013/avgo-110313x10k.htm",
+   "supports": "selected financial data FY2009-FY2013 with diluted EPS and shares; FY2012-FY2013 net revenue by target market; cash flows; the listed acquisition-related and restructuring costs; fiscal year ends on the Sunday closest to October 31 (FY2013 a 53-week year); the interim dividend declared on December 10, 2013; business, competition and cyclicality wording"
+  },
+  {
+   "id": "V35",
+   "published": "2012-12-18",
+   "filed": "2012-12-17 16:31 ET (after the close)",
+   "title": "Avago Technologies Limited FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000144163412000010/avgo-102812x10k.htm",
+   "supports": "selected financial data FY2008-FY2012 with diluted EPS and shares; statements of operations FY2010-FY2012; FY2011-FY2012 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; business, competition and cyclicality wording"
+  },
+  {
+   "id": "V1",
+   "published": "2009-08-06",
+   "filed": "2009-08-06 06:42 ET (before the open)",
+   "title": "Avago Technologies Limited IPO prospectus (424B4)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312509166258/d424b4.htm",
+   "supports": "selected financial data FY2004-FY2008 (FY2004-FY2005 the Predecessor, Agilent's Semiconductor Products Group) and the six months to May 3, 2009; the combined FY2006 statement of operations; diluted EPS from continuing operations and diluted shares FY2006-FY2008; quarterly results for the eight quarters to May 3, 2009 (diluted EPS from continuing operations); balance sheets at October 31, 2007, November 2, 2008 and May 3, 2009 (inventory); FY2007-FY2008 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; dividend policy; business, competition and cyclicality wording; listing on the Nasdaq Global Select Market as AVGO"
+  },
+  {
+   "id": "V2",
+   "published": "2007-12-13",
+   "filed": "2007-12-12 20:46 ET (after the close)",
+   "title": "Avago Technologies Finance Pte. Ltd. FY2007 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/1376403/000095013407025301/f36404e20vf.htm",
+   "supports": "balance sheets at October 31, 2006 and 2007 (inventory $169M, $140M); FY2007 against the combined FY2006 net revenue ($1,527M, $1,513M): the FY2007 inventory change for rule T"
+  },
+  {
+   "id": "V3",
+   "published": "2007-01-09",
+   "filed": "2007-01-09 15:00 ET (market hours)",
+   "title": "Avago Technologies Finance Pte. Ltd. exchange offer prospectus (424B3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1376403/000095013407000320/f23597b3e424b3.htm",
+   "supports": "balance sheets at October 31, 2005 (Predecessor) and 2006 (inventory $178M, $169M); the combined FY2006 and FY2005 net revenue on that filing's basis ($1,603M, $1,559M): the FY2006 inventory change for rule T"
+  },
+  {
+   "id": "V67",
+   "published": "2016-09-02",
+   "filed": "2016-09-01 16:10 ET (after the close)",
+   "title": "Broadcom Limited Q3 FY16 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516699619/d223587dex991.htm",
+   "supports": "Q3 FY16 (quarter ended July 31, 2016) statement of operations with Q3 FY15, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook ($4,090M plus/minus $75M); the 8-K: the interim dividend of $0.51"
+  },
+  {
+   "id": "V68",
+   "published": "2016-12-09",
+   "filed": "2016-12-08 16:17 ET (after the close)",
+   "title": "Broadcom Limited Q4 and FY2016 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516788497/d310141dex991.htm",
+   "supports": "Q4 FY16 (quarter ended October 30, 2016) and FY2016 statements of operations, balance sheet, diluted EPS and shares; the dividend paid and the interim dividend doubled to $1.02; the first-quarter outlook ($4,065M plus/minus $75M)"
+  },
+  {
+   "id": "V71",
+   "published": "2017-03-02",
+   "filed": "2017-03-01 16:11 ET (after the close)",
+   "title": "Broadcom Limited Q1 FY17 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517065723/d351392dex991.htm",
+   "supports": "Q1 FY17 (quarter ended January 29, 2017) statement of operations with Q1 FY16, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook ($4,090M plus/minus $75M); the 8-K: the interim dividend of $1.02"
+  },
+  {
+   "id": "V65",
+   "published": "2016-03-04",
+   "filed": "2016-03-03 16:07 ET (after the close)",
+   "title": "Broadcom Limited Q1 FY16 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516491591/d154373dex991.htm",
+   "supports": "Q1 FY16 (quarter ended January 31, 2016, Avago before the BRCM closing) statement of operations with Q1 FY15, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook of the combined businesses ($3,533M plus/minus $75M); the 8-K: the interim dividend of $0.49"
+  },
+  {
+   "id": "V72",
+   "published": "2017-06-02",
+   "filed": "2017-06-01 16:12 ET (after the close)",
+   "title": "Broadcom Limited Q2 FY17 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517191183/d392782dex991.htm",
+   "supports": "Q2 FY17 (quarter ended April 30, 2017) statement of operations with Q2 FY16, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook ($4,445M plus/minus $75M)"
+  },
+  {
+   "id": "V66",
+   "published": "2016-06-03",
+   "filed": "2016-06-02 16:07 ET (after the close)",
+   "title": "Broadcom Limited Q2 FY16 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312516611172/d193831dex991.htm",
+   "supports": "Q2 FY16 (quarter ended May 1, 2016, BRCM from February 1) statement of operations with Q2 FY15, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook ($3,740M plus/minus $75M); the 8-K: the interim dividend of $0.50"
+  },
+  {
+   "id": "V73",
+   "published": "2017-08-25",
+   "filed": "2017-08-24 16:08 ET (after the close)",
+   "title": "Broadcom Limited Q3 FY17 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517266828/d438731dex991.htm",
+   "supports": "Q3 FY17 (quarter ended July 30, 2017) statement of operations with Q3 FY16, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook ($4,796M plus/minus $75M)"
+  },
+  {
+   "id": "A0",
+   "published": "2017-08-25",
+   "title": "Yahoo Finance daily prices, AVGO and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/AVGO/history",
+   "supports": "close $245.59 as traded on AS_OF, the range since the listing on 2009-08-06, realized vol, beta, the 7.8-yr ex-FY09 ex-FY14 ex-FY16 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-01"
+}

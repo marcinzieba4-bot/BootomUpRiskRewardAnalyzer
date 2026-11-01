@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for AVGO retrospectives (retro/build_avgo.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every release came after the close except Q2 FY15's (before the open; its full text, with the financial statements, in an 8-K/A after the close that day). Avago Technologies Limited listed on the Nasdaq Global Select Market on 2009-08-06 (its first trading day in the price data); before that it filed only as the issuer of notes (Avago Technologies Finance Pte. Ltd.: 20-F and 6-K), so the series starts at the listing and the P/E window runs from it; from 2016-02-02 the listed company is Broadcom Limited, its successor issuer ('company_names'). The builder uses the latest history vintage published by AS_OF (the IPO prospectus, then each 10-K), the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest next-quarter revenue guide for the quarter after the latest print, and events published since that vintage. Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31. Values are as reported, per share on the basis of the filing that published them. A print keeps its raw published figures ('raw', $M) and the margins, growth and gaps derived from them; the builder re-derives and checks them. 'eps_first_excluded' holds the first years left out of the history (losses); 'eps_excluded' later years left out (losses, or a distorted year whose listed one-off items exceed its income: FY2014). Each guide states the next quarter's revenue as growth on the quarter just reported ('seq_pct'); 'level_m' is that growth applied to the reported quarter and 'yoy_pct' the level against the same quarter a year earlier from its own release (the input); a guide stated as a dollar level or range ('level_stated': the 8-K of 2010-08-10, and the releases from Q2 FY14) is read against that quarter directly; its other lines ('display') feed nothing. From FY2010 the releases' balance sheets no longer carry the year-ago quarter, so a print's year-ago inventory comes from that quarter's own release ('extra_sources'). 'dividends' hold each declared quarterly rate from the first filing that states it (the first, $0.07, with the Q4 FY10 results). 'events' hold dated theme evidence (CLOUD, company-acknowledged in the FY2016 10-K). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for AVGO retrospectives (retro/build_avgo.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern); every release came after the close except Q2 FY15's (before the open; its full text, with the financial statements, in an 8-K/A after the close that day). Avago Technologies Limited listed on the Nasdaq Global Select Market on 2009-08-06 (its first trading day in the price data); before that it filed only as the issuer of notes (Avago Technologies Finance Pte. Ltd.: 20-F and 6-K), so the series starts at the listing and the P/E window runs from it; from 2016-02-02 the listed company is Broadcom Limited, its successor issuer, and from 2018-04-05 Broadcom Inc., redomiciled in Delaware ('company_names'). The builder uses the latest history vintage published by AS_OF (the IPO prospectus, then each 10-K), the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest next-quarter revenue guide for the quarter after the latest print, and events published since that vintage. Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31. Values are as reported, per share on the basis of the filing that published them. A print keeps its raw published figures ('raw', $M) and the margins, growth and gaps derived from them; the builder re-derives and checks them. 'eps_first_excluded' holds the first years left out of the history (losses); 'eps_excluded' later years left out (losses, or a distorted year whose listed one-off items exceed its income: FY2014; or whose listed one-off benefits exceed its income without them, the mirror test: FY2018). Each guide states the next quarter's revenue as growth on the quarter just reported ('seq_pct'); 'level_m' is that growth applied to the reported quarter and 'yoy_pct' the level against the same quarter a year earlier from its own release (the input); a guide stated as a dollar level or range ('level_stated': the 8-K of 2010-08-10, and the releases from Q2 FY14) is read against that quarter directly; its other lines ('display') feed nothing. From the Q4 FY18 release Broadcom guided the fiscal year: a guide with 'period' is a dollar level read against the previous fiscal year's net revenue, used when no next-quarter guide is in scope (method r2's fallback), and 'op_margin_guide_pct' is its GAAP operating margin as a level (FY2019), the guided margin step; 'withdrawn' voids every earlier guide for its year (FY2020, 2020-03-13). Quarter guides that 8-Ks gave only as non-GAAP net revenue (2018-01-31, 2018-04-30) are taken as published, the latest guide for a quarter winning; a guide restated only in words keeps the last numeric range in a record of its own (2017-11-02). From FY2010 the releases' balance sheets no longer carry the year-ago quarter, so a print's year-ago inventory comes from that quarter's own release ('extra_sources'). 'dividends' hold each declared quarterly rate from the first filing that states it (the first, $0.07, with the Q4 FY10 results). 'events' hold dated theme evidence (CLOUD, company-acknowledged in each 10-K from FY2016). 'fiscal_calendar' lists the 53-week years whose year end differs from the Sunday closest to October 31 (FY2018, ended November 4, 2018). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "AVGO",
  "listing": {
   "first_trading_day": "2009-08-06",
@@ -496,6 +496,188 @@
    "title": "Broadcom Limited FY2016 10-K",
    "url": "https://www.sec.gov/Archives/edgar/data/1649338/000164933816000151/avgo-10302016x10k.htm",
    "supports": "selected financial data FY2012-FY2016 with diluted EPS from continuing operations; FY2014-FY2016 statements of operations with diluted shares; FY2015-FY2016 net revenue by segment; cash flows; fiscal year ends on the Sunday closest to October 31; the interim dividend declared on December 6, 2016; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk to the wired infrastructure and enterprise storage segments"
+  },
+  "V71": {
+   "published": "2017-03-02",
+   "filed": "2017-03-01 16:11 ET (after the close)",
+   "title": "Broadcom Limited Q1 FY17 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517065723/d351392dex991.htm",
+   "supports": "Q1 FY17 (quarter ended January 29, 2017) statement of operations with Q1 FY16, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook ($4,090M plus/minus $75M); the 8-K: the interim dividend of $1.02"
+  },
+  "V72": {
+   "published": "2017-06-02",
+   "filed": "2017-06-01 16:12 ET (after the close)",
+   "title": "Broadcom Limited Q2 FY17 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517191183/d392782dex991.htm",
+   "supports": "Q2 FY17 (quarter ended April 30, 2017) statement of operations with Q2 FY16, balance sheet, diluted EPS and shares; the dividend paid; the third-quarter outlook ($4,445M plus/minus $75M)"
+  },
+  "V73": {
+   "published": "2017-08-25",
+   "filed": "2017-08-24 16:08 ET (after the close)",
+   "title": "Broadcom Limited Q3 FY17 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517266828/d438731dex991.htm",
+   "supports": "Q3 FY17 (quarter ended July 30, 2017) statement of operations with Q3 FY16, balance sheet, diluted EPS and shares; the dividend paid; the fourth-quarter outlook ($4,796M plus/minus $75M)"
+  },
+  "V74": {
+   "published": "2017-11-02",
+   "filed": "2017-11-02 09:25 ET (before the open)",
+   "title": "Broadcom Limited updates its Q4 FY17 revenue outlook (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517330365/d486684dex991.htm",
+   "supports": "fourth-quarter revenue expected at the higher end of the outlook of August 24, 2017 (words, no new number)"
+  },
+  "V75": {
+   "published": "2017-12-07",
+   "filed": "2017-12-06 16:10 ET (after the close)",
+   "title": "Broadcom Limited Q4 and FY2017 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312517362829/d506851dex991.htm",
+   "supports": "Q4 FY17 (quarter ended October 29, 2017) and FY2017 statements of operations, balance sheet, diluted EPS and shares; the dividend paid and the interim dividend raised to $1.75; the first-quarter outlook ($5,296M plus/minus $75M, a 14-week quarter with the Brocade FC SAN business: FY2018 includes an extra week)"
+  },
+  "V76": {
+   "published": "2017-12-22",
+   "filed": "2017-12-21 17:10 ET (after the close)",
+   "title": "Broadcom Limited FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000164933817000158/avgo-10292017x10k.htm",
+   "supports": "selected financial data FY2013-FY2017 with diluted EPS from continuing operations (FY2017 $4.03, after a $110M fourth-quarter litigation settlement the release did not include); FY2015-FY2017 statements of operations with diluted shares; FY2016-FY2017 net revenue by segment; cash flows; the fiscal year ends on the Sunday closest to October 31 in a 52-week year and the first Sunday in November in a 53-week year; the interim dividend declared on December 4, 2017; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk to the wired infrastructure and enterprise storage segments"
+  },
+  "V77": {
+   "published": "2018-01-31",
+   "filed": "2018-01-31 08:25 ET (before the open)",
+   "title": "Broadcom Limited narrows its Q1 FY18 revenue guidance and gives a preliminary Q2 FY18 guide (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312518026500/d496455dex991.htm",
+   "supports": "first-quarter (14-week) non-GAAP net revenue now expected at $5,300M to $5,350M; second-quarter non-GAAP net revenue $5,000M plus/minus $75M (preliminary)"
+  },
+  "V78": {
+   "published": "2018-03-16",
+   "filed": "2018-03-15 16:08 ET (after the close)",
+   "title": "Broadcom Limited Q1 FY18 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1649338/000119312518084031/d552102dex991.htm",
+   "supports": "Q1 FY18 (14-week quarter ended February 4, 2018) statement of operations with Q1 FY17, balance sheet, diluted EPS and shares; the dividend paid; the second-quarter outlook ($4,997M plus/minus $75M)"
+  },
+  "V79": {
+   "published": "2018-04-05",
+   "filed": "2018-04-04 16:34 ET (after the close)",
+   "title": "Broadcom Inc. 8-K12B: successor issuer to Broadcom Limited",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312518107559/d562806d8k12b.htm",
+   "supports": "the redomiciliation completed after the close of trading on April 4, 2018: Broadcom Inc., a Delaware corporation, the successor issuer to Broadcom Limited; the shares exchanged one-for-one"
+  },
+  "V80": {
+   "published": "2018-05-01",
+   "filed": "2018-04-30 16:44 ET (after the close)",
+   "title": "Broadcom Inc. affirms its Q2 FY18 guidance, narrows revenue and gives a preliminary Q3 FY18 guide (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312518143404/d544654dex991.htm",
+   "supports": "second-quarter non-GAAP net revenue now expected at $5,000M plus/minus $25M, the other second-quarter guidance affirmed; third-quarter non-GAAP net revenue $5,050M plus/minus $75M (preliminary)"
+  },
+  "V81": {
+   "published": "2018-06-08",
+   "filed": "2018-06-07 16:05 ET (after the close)",
+   "title": "Broadcom Inc. Q2 FY18 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312518186769/d589424dex991.htm",
+   "supports": "Q2 FY18 (quarter ended May 6, 2018) statement of operations with Q2 FY17, balance sheet, diluted EPS and shares; the dividend paid and repurchases; the third-quarter outlook ($5,047M plus/minus $75M)"
+  },
+  "V82": {
+   "published": "2018-09-07",
+   "filed": "2018-09-06 16:22 ET (after the close)",
+   "title": "Broadcom Inc. Q3 FY18 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016818000036/avgo-08052018x8kxex99.htm",
+   "supports": "Q3 FY18 (quarter ended August 5, 2018) statement of operations with Q3 FY17, balance sheet, diluted EPS and shares; the dividend paid and repurchases; the fourth-quarter outlook ($5,397M plus/minus $75M)"
+  },
+  "V83": {
+   "published": "2018-09-14",
+   "filed": "2018-09-13 16:08 ET (after the close)",
+   "title": "Broadcom Inc. Q3 FY18 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016818000039/avgo-08052018x10q.htm",
+   "supports": "the year-to-date benefit from income taxes ($8,391M): the 2017 Tax Reform Act's provisional benefit of $7,303M and the redomiciliation's tax benefits of $1,162M less an $84M provision"
+  },
+  "V84": {
+   "published": "2018-12-07",
+   "filed": "2018-12-06 16:23 ET (after the close)",
+   "title": "Broadcom Inc. Q4 and FY2018 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312518343743/d665420dex991.htm",
+   "supports": "Q4 FY18 (quarter ended November 4, 2018) and FY2018 statements of operations, balance sheet, diluted EPS and shares; the dividend paid and raised to $2.65; repurchases; the FY2019 outlook with CA (net revenue $24,500M, GAAP operating margin 20%)"
+  },
+  "V85": {
+   "published": "2018-12-24",
+   "filed": "2018-12-21 17:17 ET (after the close)",
+   "title": "Broadcom Inc. FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016818000084/avgo-11042018x10k.htm",
+   "supports": "selected financial data FY2014-FY2018 with diluted EPS from continuing operations; FY2016-FY2018 statements of operations with diluted shares; FY2017-FY2018 net revenue by segment; cash flows; FY2018 a 53-week year ended November 4, 2018; the FY2018 benefit from income taxes ($8,084M: the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision); the dividend declared on December 6, 2018; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  "V86": {
+   "published": "2019-03-15",
+   "filed": "2019-03-14 16:23 ET (after the close)",
+   "title": "Broadcom Inc. Q1 FY19 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312519074832/d642515dex991.htm",
+   "supports": "Q1 FY19 (quarter ended February 3, 2019, CA from November 5, 2018) statement of operations with Q1 FY18, balance sheet, diluted EPS and shares; the dividend paid; the FY2019 outlook (net revenue $24,500M, GAAP operating margin 17.6%)"
+  },
+  "V87": {
+   "published": "2019-06-14",
+   "filed": "2019-06-13 16:23 ET (after the close)",
+   "title": "Broadcom Inc. Q2 FY19 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312519172516/d763344dex991.htm",
+   "supports": "Q2 FY19 (quarter ended May 5, 2019) statement of operations with Q2 FY18, balance sheet, diluted EPS and shares; the dividend paid; the updated FY2019 outlook (net revenue $22,500M, GAAP operating margin 14.75%)"
+  },
+  "V88": {
+   "published": "2019-09-13",
+   "filed": "2019-09-12 16:25 ET (after the close)",
+   "title": "Broadcom Inc. Q3 FY19 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312519243919/d800073dex991.htm",
+   "supports": "Q3 FY19 (quarter ended August 4, 2019) statement of operations with Q3 FY18, balance sheet, diluted EPS and shares; the dividend paid; the FY2019 outlook maintained (net revenue $22,500M, GAAP operating margin 14.75%)"
+  },
+  "V89": {
+   "published": "2019-12-13",
+   "filed": "2019-12-12 16:39 ET (after the close)",
+   "title": "Broadcom Inc. Q4 and FY2019 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312519312797/d845915dex991.htm",
+   "supports": "Q4 FY19 (quarter ended November 3, 2019) and FY2019 statements of operations, balance sheet, diluted EPS and shares; the dividend paid and raised to $3.25; the FY2020 outlook with the Symantec enterprise security business (revenue $25 billion plus or minus $500 million; Adjusted EBITDA)"
+  },
+  "V90": {
+   "published": "2019-12-23",
+   "filed": "2019-12-20 16:10 ET (after the close)",
+   "title": "Broadcom Inc. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016819000144/avgo-11032019x10k.htm",
+   "supports": "selected financial data FY2015-FY2019 with diluted EPS from continuing operations; FY2017-FY2019 statements of operations with diluted shares; FY2018-FY2019 net revenue by segment; cash flows; the FY2019 benefit from income taxes ($510M); the dividend declared on December 10, 2019; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  "V91": {
+   "published": "2020-03-13",
+   "filed": "2020-03-12 16:23 ET (after the close)",
+   "title": "Broadcom Inc. Q1 FY20 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312520071608/d859221dex991.htm",
+   "supports": "Q1 FY20 (quarter ended February 2, 2020, the Symantec enterprise security business from November 4, 2019) statement of operations with Q1 FY19, balance sheet, diluted EPS and shares; the dividends paid; the FY2020 guidance withdrawn; the second-quarter outlook (revenue $5.7 billion plus or minus $150 million)"
+  },
+  "V92": {
+   "published": "2020-06-05",
+   "filed": "2020-06-04 16:29 ET (after the close)",
+   "title": "Broadcom Inc. Q2 FY20 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000099/avgo-05032020x8kxex99.htm",
+   "supports": "Q2 FY20 (quarter ended May 3, 2020) statement of operations with Q2 FY19, balance sheet, diluted EPS and shares; the dividends paid; the third-quarter outlook (revenue $5.75 billion plus or minus $150 million)"
+  },
+  "V93": {
+   "published": "2020-09-04",
+   "filed": "2020-09-03 16:17 ET (after the close)",
+   "title": "Broadcom Inc. Q3 FY20 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000154/avgo-08022020x8kxex99.htm",
+   "supports": "Q3 FY20 (quarter ended August 2, 2020) statement of operations with Q3 FY19, balance sheet, diluted EPS and shares; the dividends paid; the fourth-quarter outlook (revenue $6.4 billion plus or minus $150 million)"
+  },
+  "V94": {
+   "published": "2020-12-11",
+   "filed": "2020-12-10 16:19 ET (after the close)",
+   "title": "Broadcom Inc. Q4 and FY2020 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000201/avgo-11012020x8kxex99.htm",
+   "supports": "Q4 FY20 (quarter ended November 1, 2020) and FY2020 statements of operations, balance sheet, diluted EPS and shares; the dividends paid and the common dividend raised to $3.60; the first-quarter outlook (revenue of approximately $6.6 billion)"
+  },
+  "V95": {
+   "published": "2020-12-21",
+   "filed": "2020-12-18 17:07 ET (after the close)",
+   "title": "Broadcom Inc. FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000226/avgo-20201101.htm",
+   "supports": "selected financial data FY2016-FY2020 with diluted EPS from continuing operations; FY2018-FY2020 statements of operations with diluted shares; FY2019-FY2020 net revenue by segment; cash flows; the FY2020 benefit from income taxes ($518M); the dividend declared on December 8, 2020; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  "V96": {
+   "published": "2019-08-09",
+   "filed": "2019-08-09 06:10 ET (before the open)",
+   "title": "Broadcom Inc. agrees to acquire the Symantec enterprise security business and reaffirms its FY2019 revenue guidance (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312519217369/d790567dex991.htm",
+   "supports": "the FY2019 revenue guidance of $22.5 billion reaffirmed 'as last provided in its second quarter fiscal year 2019 earnings release on June 13, 2019' (the release went out after the close on August 8, its 8-K before the open on August 9); the Symantec enterprise security purchase agreement"
   }
  },
  "history_vintages": [
@@ -1306,6 +1488,410 @@
     ]
    ],
    "groups_basis": "FY16 net revenue by segment (FY2016 10-K)"
+  },
+  {
+   "published": "2017-12-22",
+   "sources": [
+    "V76",
+    "V69",
+    "V63",
+    "V54",
+    "V45",
+    "V35",
+    "V1",
+    "V2",
+    "V3",
+    "V73"
+   ],
+   "company": "Broadcom Limited",
+   "fy_label": "FY17",
+   "why": "Broadcom: 'We are a leading designer, developer and global supplier of a broad range of semiconductor devices with a focus on complex digital and mixed signal complementary metal oxide semiconductor, or CMOS, based devices and analog III-V based products', 'We have four reportable segments: wired infrastructure, wireless communications, enterprise storage, and industrial & other, which align with our principal target markets', and 'We operate a primarily outsourced manufacturing business model' (its own FY2017 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2015": "2015-11-01",
+    "2016": "2016-10-30",
+    "2017": "2017-10-29"
+   },
+   "eps_first_excluded": {},
+   "eps_normalized": {
+    "2008": 0.26,
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19,
+    "2015": 4.95,
+    "2017": 4.03
+   },
+   "eps_excluded": {
+    "2009": "FY09: a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO); no published EPS excluding only one-off items",
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them",
+    "2016": "FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items"
+   },
+   "revenue_usd_b": {
+    "2008": 1.699,
+    "2009": 1.484,
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269,
+    "2015": 6.824,
+    "2016": 13.24,
+    "2017": 17.636
+   },
+   "diluted_shares_m": {
+    "2008": 219,
+    "2009": 219,
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267,
+    "2015": 281,
+    "2016": 383,
+    "2017": 421
+   },
+   "pe_window_start": "2007-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 13.51,
+   "prev_fy_op_margin_note": "FY17 operating income $2,383M / net revenue $17,636M (FY2017 10-K)",
+   "prev_fy_pretax_margin": 10.35,
+   "prev_fy_pretax_margin_note": "FY17 income from continuing operations before income taxes $1,825M / $17,636M (FY2017 10-K)",
+   "prev_fy_gross_margin": 48.25,
+   "prev_fy_sales_growth": 33.2,
+   "tax_rate": 0.019,
+   "tax_note": "FY17 provision for income taxes $35M / income from continuing operations before income taxes $1,825M (FY2017 10-K)",
+   "fcf_b": 5.482,
+   "fcf_label": "FY17",
+   "fcf_note": "net cash provided by operating activities $6,551M less purchases of property, plant and equipment $1,069M",
+   "prev_q_sales_pct": 17.7,
+   "prev_q_label": "Q3 FY17",
+   "prev_q_source": "V73",
+   "dividend_annual": 7.0,
+   "dividend_note": "$1.75 quarterly, the interim dividend declared on December 4, 2017 (FY2017 10-K)",
+   "business_line": "digital and mixed signal CMOS and analog III-V semiconductor devices for wired infrastructure, wireless communications, enterprise storage, and industrial & other markets",
+   "normalization": "diluted EPS from continuing operations (LSI's Flash and Axxia businesses discontinued from FY2014); the ten years FY08-FY17, every year from the latest 10-K that reports it; FY08 = GAAP $0.26 from continuing operations; FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window (the NKE FY2018 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window; FY15 = GAAP $4.95 from continuing operations (net $4.85; its listed items, $30M of inventory step-up charges, $144M of restructuring and asset impairment and $74M of acquisition-related costs, are under its $1,391M income from continuing operations: the AAPL FY2003 test); FY16 ($(4.57) from continuing operations, net $(4.86)) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window; FY17 = GAAP $4.03 from continuing operations (net $4.02), the 10-K's figure after a $110M fourth-quarter litigation settlement the Q4 FY17 release did not include ($4.28 there); its listed items, a $166M loss on debt extinguishment, $180M of restructuring, impairment and disposal charges, $122M of litigation settlements and $4M of inventory step-up, are a fraction of its $1,790M income from continuing operations (the AAPL FY2003 test)",
+   "groups": [
+    [
+     "Wired infrastructure",
+     8.549,
+     29.9
+    ],
+    [
+     "Wireless communications",
+     5.404,
+     45.1
+    ],
+    [
+     "Enterprise storage",
+     2.799,
+     22.2
+    ],
+    [
+     "Industrial & other",
+     0.884,
+     37.5
+    ]
+   ],
+   "groups_basis": "FY17 net revenue by segment (FY2017 10-K)"
+  },
+  {
+   "published": "2018-12-24",
+   "sources": [
+    "V85",
+    "V76",
+    "V69",
+    "V63",
+    "V54",
+    "V45",
+    "V1",
+    "V2",
+    "V3",
+    "V82"
+   ],
+   "company": "Broadcom Inc.",
+   "fy_label": "FY18",
+   "why": "Broadcom: 'We are a global technology leader that designs, develops and supplies a broad range of semiconductor and infrastructure software solutions', 'Through our fiscal year ended November 4, 2018, or fiscal year 2018, we had four reportable segments: wired infrastructure, wireless communications, enterprise storage, and industrial & other', and 'We operate a primarily outsourced manufacturing business model' (its own FY2018 10-K); 'The global semiconductor market is highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2016": "2016-10-30",
+    "2017": "2017-10-29",
+    "2018": "2018-11-04"
+   },
+   "eps_first_excluded": {
+    "2009": "a loss of $(0.20) per diluted share (with the $54M advisory agreement termination fee paid to the sponsors on the IPO)"
+   },
+   "eps_normalized": {
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19,
+    "2015": 4.95,
+    "2017": 4.03
+   },
+   "eps_excluded": {
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them",
+    "2016": "FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items",
+    "2018": "FY18: $28.48 per diluted share from continuing operations, inflated by one-off tax benefits the FY2018 10-K lists: the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision ($8,273M), more than the year's $12,629M income from continuing operations without them ($4,356M); no published EPS excluding only them"
+   },
+   "revenue_usd_b": {
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269,
+    "2015": 6.824,
+    "2016": 13.24,
+    "2017": 17.636,
+    "2018": 20.848
+   },
+   "diluted_shares_m": {
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267,
+    "2015": 281,
+    "2016": 383,
+    "2017": 421,
+    "2018": 431
+   },
+   "pe_window_start": "2009-11-02",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 24.63,
+   "prev_fy_op_margin_note": "FY18 operating income $5,135M / net revenue $20,848M (FY2018 10-K)",
+   "prev_fy_pretax_margin": 21.8,
+   "prev_fy_pretax_margin_note": "FY18 income from continuing operations before income taxes $4,545M / $20,848M (FY2018 10-K)",
+   "prev_fy_gross_margin": 51.48,
+   "prev_fy_sales_growth": 18.2,
+   "tax_rate": -1.779,
+   "tax_note": "FY18 benefit from income taxes $8,084M / income from continuing operations before income taxes $4,545M (FY2018 10-K): a negative rate, as published (display only; the FY09 rule takes the prior year's rate only for a pre-tax loss)",
+   "fcf_b": 8.245,
+   "fcf_label": "FY18",
+   "fcf_note": "net cash provided by operating activities $8,880M less purchases of property, plant and equipment $635M",
+   "prev_q_sales_pct": 13.4,
+   "prev_q_label": "Q3 FY18",
+   "prev_q_source": "V82",
+   "dividend_annual": 10.6,
+   "dividend_note": "$2.65 quarterly, declared on December 6, 2018 (FY2018 10-K)",
+   "business_line": "semiconductor and infrastructure software solutions: through fiscal 2018 wired infrastructure, wireless communications, enterprise storage, and industrial & other; CA's mainframe and enterprise software from November 5, 2018",
+   "normalization": "diluted EPS from continuing operations (LSI's Flash and Axxia businesses discontinued from FY2014); the ten years FY09-FY18, every year from the latest 10-K that reports it; FY09 ($(0.20), with the $54M sponsor fee) is a loss with no published adjusted figure and the first of the ten, so the history and the P/E window start with FY10 (the ACN FY02 rule); FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window; FY15 = GAAP $4.95 from continuing operations (net $4.85; its listed items, $30M of inventory step-up charges, $144M of restructuring and asset impairment and $74M of acquisition-related costs, are under its $1,391M income from continuing operations: the AAPL FY2003 test); FY16 ($(4.57) from continuing operations, net $(4.86)) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window; FY17 = GAAP $4.03 from continuing operations (net $4.02), the 10-K's figure after a $110M fourth-quarter litigation settlement the Q4 FY17 release did not include ($4.28 there); its listed items, a $166M loss on debt extinguishment, $180M of restructuring, impairment and disposal charges, $122M of litigation settlements and $4M of inventory step-up, are a fraction of its $1,790M income from continuing operations (the AAPL FY2003 test); FY18 ($28.48 from continuing operations, net $28.44) is a distorted year: one-off tax benefits the FY2018 10-K lists, the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision ($8,273M), exceed the year's $12,629M income from continuing operations without them ($4,356M) (the AAPL FY2002 test, mirrored for one-off benefits); no published EPS excluding only them: it leaves the EPS history and its own days leave the P/E window",
+   "groups": [
+    [
+     "Wired infrastructure",
+     8.674,
+     1.5
+    ],
+    [
+     "Wireless communications",
+     6.49,
+     20.1
+    ],
+    [
+     "Enterprise storage",
+     4.673,
+     67.0
+    ],
+    [
+     "Industrial & other",
+     1.011,
+     14.4
+    ]
+   ],
+   "groups_basis": "FY18 net revenue by segment (FY2018 10-K)"
+  },
+  {
+   "published": "2019-12-23",
+   "sources": [
+    "V90",
+    "V85",
+    "V76",
+    "V69",
+    "V63",
+    "V54",
+    "V1",
+    "V2",
+    "V3",
+    "V88"
+   ],
+   "company": "Broadcom Inc.",
+   "fy_label": "FY19",
+   "why": "Broadcom: 'We are a global technology leader that designs, develops and supplies a broad range of semiconductor and infrastructure software solutions', 'We updated our organizational structure for the fiscal year ended November 3, 2019 (\u201cfiscal year 2019\u201d), resulting in three reportable segments: semiconductor solutions, infrastructure software and IP licensing', and 'We operate a primarily outsourced manufacturing business model' (its own FY2019 10-K); 'The markets in which we participate are highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2017": "2017-10-29",
+    "2018": "2018-11-04",
+    "2019": "2019-11-03"
+   },
+   "eps_first_excluded": {},
+   "eps_normalized": {
+    "2010": 1.69,
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19,
+    "2015": 4.95,
+    "2017": 4.03,
+    "2019": 6.46
+   },
+   "eps_excluded": {
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them",
+    "2016": "FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items",
+    "2018": "FY18: $28.48 per diluted share from continuing operations, inflated by one-off tax benefits the FY2018 10-K lists: the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision ($8,273M), more than the year's $12,629M income from continuing operations without them ($4,356M); no published EPS excluding only them"
+   },
+   "revenue_usd_b": {
+    "2010": 2.093,
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269,
+    "2015": 6.824,
+    "2016": 13.24,
+    "2017": 17.636,
+    "2018": 20.848,
+    "2019": 22.597
+   },
+   "diluted_shares_m": {
+    "2010": 246,
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267,
+    "2015": 281,
+    "2016": 383,
+    "2017": 421,
+    "2018": 431,
+    "2019": 419
+   },
+   "pe_window_start": "2009-11-02",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 15.24,
+   "prev_fy_op_margin_note": "FY19 operating income $3,444M / net revenue $22,597M (FY2019 10-K)",
+   "prev_fy_pretax_margin": 9.85,
+   "prev_fy_pretax_margin_note": "FY19 income from continuing operations before income taxes $2,226M / $22,597M (FY2019 10-K)",
+   "prev_fy_gross_margin": 55.24,
+   "prev_fy_sales_growth": 8.4,
+   "tax_rate": -0.229,
+   "tax_note": "FY19 benefit from income taxes $510M / income from continuing operations before income taxes $2,226M (FY2019 10-K): a negative rate, as published (display only; the FY09 rule takes the prior year's rate only for a pre-tax loss)",
+   "fcf_b": 9.265,
+   "fcf_label": "FY19",
+   "fcf_note": "net cash provided by operating activities $9,697M less purchases of property, plant and equipment $432M",
+   "prev_q_sales_pct": 8.9,
+   "prev_q_label": "Q3 FY19",
+   "prev_q_source": "V88",
+   "dividend_annual": 13.0,
+   "dividend_note": "$3.25 quarterly, declared on December 10, 2019 (FY2019 10-K)",
+   "business_line": "semiconductor and infrastructure software solutions: semiconductor solutions, infrastructure software (CA from November 5, 2018) and IP licensing segments",
+   "normalization": "diluted EPS from continuing operations (LSI's Flash and Axxia businesses discontinued from FY2014); the ten years FY10-FY19, every year from the latest 10-K that reports it; FY10 = GAAP $1.69 with the $28.7M discrete tax benefit of its fourth quarter (the company published its per-share effect, $0.11, but no EPS excluding it: the NKE FY2008 rule); the company's non-GAAP EPS also removes amortization of acquisition-related intangibles and share-based compensation, which recur, so GAAP stands; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window; FY15 = GAAP $4.95 from continuing operations (net $4.85; its listed items, $30M of inventory step-up charges, $144M of restructuring and asset impairment and $74M of acquisition-related costs, are under its $1,391M income from continuing operations: the AAPL FY2003 test); FY16 ($(4.57) from continuing operations, net $(4.86)) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window; FY17 = GAAP $4.03 from continuing operations (net $4.02), the 10-K's figure after a $110M fourth-quarter litigation settlement the Q4 FY17 release did not include ($4.28 there); its listed items, a $166M loss on debt extinguishment, $180M of restructuring, impairment and disposal charges, $122M of litigation settlements and $4M of inventory step-up, are a fraction of its $1,790M income from continuing operations (the AAPL FY2003 test); FY18 ($28.48 from continuing operations, net $28.44) is a distorted year: one-off tax benefits the FY2018 10-K lists, the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision ($8,273M), exceed the year's $12,629M income from continuing operations without them ($4,356M) (the AAPL FY2002 test, mirrored for one-off benefits); no published EPS excluding only them: it leaves the EPS history and its own days leave the P/E window; FY19 = GAAP $6.46 from continuing operations (net $6.43), attributable to common stock after $29M of preferred dividends; its listed items (restructuring and acquisition-related costs with CA, a $510M benefit from income taxes) are a fraction of its $2,736M income from continuing operations",
+   "groups": [
+    [
+     "Semiconductor solutions",
+     17.368,
+     -8.3
+    ],
+    [
+     "Infrastructure software",
+     5.156,
+     189.7
+    ],
+    [
+     "IP licensing",
+     0.073,
+     -45.5
+    ]
+   ],
+   "groups_basis": "FY19 net revenue by segment (FY2019 10-K, FY18 recast to the new segments)"
+  },
+  {
+   "published": "2020-12-21",
+   "sources": [
+    "V95",
+    "V90",
+    "V85",
+    "V76",
+    "V69",
+    "V63",
+    "V1",
+    "V2",
+    "V3",
+    "V93"
+   ],
+   "company": "Broadcom Inc.",
+   "fy_label": "FY20",
+   "why": "Broadcom: 'We are a global technology leader that designs, develops and supplies a broad range of semiconductor and infrastructure software solutions', 'We updated our organizational structure during the fiscal year ended November 1, 2020 (\u201cfiscal year 2020\u201d), resulting in two reportable segments: semiconductor solutions and infrastructure software', and 'We operate a primarily outsourced manufacturing business model' (its own FY2020 10-K); 'The markets in which we participate are highly competitive', and 'We operate in the highly cyclical semiconductor industry, which is subject to significant downturns': a cyclical and competitive risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2018": "2018-11-04",
+    "2019": "2019-11-03",
+    "2020": "2020-11-01"
+   },
+   "eps_first_excluded": {},
+   "eps_normalized": {
+    "2011": 2.19,
+    "2012": 2.25,
+    "2013": 2.19,
+    "2015": 4.95,
+    "2017": 4.03,
+    "2019": 6.46,
+    "2020": 6.33
+   },
+   "eps_excluded": {
+    "2014": "FY14: $1.16 per diluted share from continuing operations after $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, together more than its $309M income from continuing operations; no published EPS excluding only them",
+    "2016": "FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items",
+    "2018": "FY18: $28.48 per diluted share from continuing operations, inflated by one-off tax benefits the FY2018 10-K lists: the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision ($8,273M), more than the year's $12,629M income from continuing operations without them ($4,356M); no published EPS excluding only them"
+   },
+   "revenue_usd_b": {
+    "2011": 2.336,
+    "2012": 2.364,
+    "2013": 2.52,
+    "2014": 4.269,
+    "2015": 6.824,
+    "2016": 13.24,
+    "2017": 17.636,
+    "2018": 20.848,
+    "2019": 22.597,
+    "2020": 23.888
+   },
+   "diluted_shares_m": {
+    "2011": 252,
+    "2012": 250,
+    "2013": 252,
+    "2014": 267,
+    "2015": 281,
+    "2016": 383,
+    "2017": 421,
+    "2018": 431,
+    "2019": 419,
+    "2020": 421
+   },
+   "pe_window_start": "2010-11-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 16.8,
+   "prev_fy_op_margin_note": "FY20 operating income $4,014M / net revenue $23,888M (FY2020 10-K)",
+   "prev_fy_pretax_margin": 10.23,
+   "prev_fy_pretax_margin_note": "FY20 income from continuing operations before income taxes $2,443M / $23,888M (FY2020 10-K)",
+   "prev_fy_gross_margin": 56.58,
+   "prev_fy_sales_growth": 5.7,
+   "tax_rate": -0.212,
+   "tax_note": "FY20 benefit from income taxes $518M / income from continuing operations before income taxes $2,443M (FY2020 10-K): a negative rate, as published (display only; the FY09 rule takes the prior year's rate only for a pre-tax loss)",
+   "fcf_b": 11.598,
+   "fcf_label": "FY20",
+   "fcf_note": "net cash provided by operating activities $12,061M less purchases of property, plant and equipment $463M",
+   "prev_q_sales_pct": 5.5,
+   "prev_q_label": "Q3 FY20",
+   "prev_q_source": "V93",
+   "dividend_annual": 14.4,
+   "dividend_note": "$3.60 quarterly, declared on December 8, 2020 (FY2020 10-K)",
+   "business_line": "semiconductor and infrastructure software solutions: semiconductor solutions and infrastructure software (CA from November 5, 2018, the Symantec enterprise security business from November 4, 2019) segments",
+   "normalization": "diluted EPS from continuing operations (LSI's Flash and Axxia businesses discontinued from FY2014); the ten years FY11-FY20, every year from the latest 10-K that reports it; FY11 = GAAP $2.19; FY13 = GAAP $2.19 (its listed items, $23M of acquisition-related costs and $3M of restructuring, are a fraction of its $552M net income: the AAPL FY2003 test); FY14 ($1.16 from continuing operations, net $0.99) is a distorted year with no published adjusted figure: its listed items, $210M of inventory step-up charges, $162M of restructuring and $74M of acquisition-related costs, exceed its $309M income from continuing operations (the AAPL FY2002 test), so it leaves the EPS history and its own days leave the P/E window; FY15 = GAAP $4.95 from continuing operations (net $4.85; its listed items, $30M of inventory step-up charges, $144M of restructuring and asset impairment and $74M of acquisition-related costs, are under its $1,391M income from continuing operations: the AAPL FY2003 test); FY16 ($(4.57) from continuing operations, net $(4.86)) is a loss with no published adjusted figure: it leaves the EPS history and its own days leave the P/E window; FY17 = GAAP $4.03 from continuing operations (net $4.02), the 10-K's figure after a $110M fourth-quarter litigation settlement the Q4 FY17 release did not include ($4.28 there); its listed items, a $166M loss on debt extinguishment, $180M of restructuring, impairment and disposal charges, $122M of litigation settlements and $4M of inventory step-up, are a fraction of its $1,790M income from continuing operations (the AAPL FY2003 test); FY18 ($28.48 from continuing operations, net $28.44) is a distorted year: one-off tax benefits the FY2018 10-K lists, the 2017 Tax Reform Act's provisional benefit of $7,278M and the redomiciliation's tax benefits of $1,162M less a $167M provision ($8,273M), exceed the year's $12,629M income from continuing operations without them ($4,356M) (the AAPL FY2002 test, mirrored for one-off benefits); no published EPS excluding only them: it leaves the EPS history and its own days leave the P/E window; FY19 = GAAP $6.46 from continuing operations (net $6.43), attributable to common stock after $29M of preferred dividends; its listed items (restructuring and acquisition-related costs with CA, a $510M benefit from income taxes) are a fraction of its $2,736M income from continuing operations; FY20 = GAAP $6.33 from continuing operations, attributable to common stock after $297M of preferred dividends; its listed items (restructuring with the Symantec enterprise security business, a $518M benefit from income taxes) are a fraction of its $2,961M income from continuing operations",
+   "groups": [
+    [
+     "Semiconductor solutions",
+     17.267,
+     -1.0
+    ],
+    [
+     "Infrastructure software",
+     6.621,
+     28.4
+    ]
+   ],
+   "groups_basis": "FY20 net revenue by segment (FY2020 10-K, FY19 recast to the new segments)"
   }
  ],
  "prints": [
@@ -2977,6 +3563,870 @@
     "sales_growth": 94.0,
     "normalization_note": "FY16 from the Q4 FY16 release: a loss of $(4.57) per diluted share from continuing operations, the year of the BRCM acquisition ($1,185M of inventory step-up charges, $996M of restructuring, impairment and disposal charges); no published EPS excluding only one-off items; excluded: it leaves the EPS history and its own days leave the P/E window"
    }
+  },
+  {
+   "quarter": "Q1 FY17",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-03-02",
+   "source": "V71",
+   "release": "Mar 1",
+   "release_time": "after the close on Mar 1: accepted 16:11 ET; public before the open of the next trading day",
+   "period_end": "2017-01-29",
+   "raw": {
+    "sales_m": 4139,
+    "sales_prior_m": 1771,
+    "sales_prev_q_m": 4136,
+    "cogs_m": 2138,
+    "cogs_prior_m": 830,
+    "rd_m": 808,
+    "rd_prior_m": 267,
+    "sga_m": 201,
+    "sga_prior_m": 114,
+    "op_income_m": 506,
+    "op_income_prior_m": 475,
+    "inventory_m": 1336,
+    "inventory_prior_m": 490
+   },
+   "sales_b": 4.139,
+   "sales_pct": 133.7,
+   "seq_pct": 0.1,
+   "gross_margin": 48.35,
+   "gross_margin_bp": -478.9,
+   "op_margin": 12.23,
+   "op_margin_bp": -1459.6,
+   "opex_pct": 164.8,
+   "opex_gap_pp": 31.1,
+   "inventory_b": 1.336,
+   "inventory_pct": 172.7,
+   "inventory_gap_pp": 38.9,
+   "inventory_note": "inventory $1,336M (January 29, 2017) vs $490M (January 31, 2016, the Q1 FY16 release)",
+   "eps_q": 0.58,
+   "eps_q_prior": 1.3,
+   "diluted_shares_m": 439,
+   "cash_b": 3.536,
+   "ltd_b": 13.562,
+   "extra_sources": [
+    "V65"
+   ],
+   "sales_note": "net revenue $4,139M vs $1,771M: 'an increase of 134 percent from $1,771 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $0.58 vs $1.30",
+   "shares_note": "diluted shares 439M in Q1 FY17",
+   "next_print": "Q2 FY17 print",
+   "cash_return_text": "$1.02 a share paid on December 30, 2016 ($408 million), and the same per restricted exchangeable partnership unit ($23 million); long-term debt $13,562M at January 29, 2017"
+  },
+  {
+   "quarter": "Q2 FY17",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-06-02",
+   "source": "V72",
+   "release": "Jun 1",
+   "release_time": "after the close on Jun 1: accepted 16:12 ET; public before the open of the next trading day",
+   "period_end": "2017-04-30",
+   "raw": {
+    "sales_m": 4190,
+    "sales_prior_m": 3541,
+    "sales_prev_q_m": 4139,
+    "cogs_m": 2214,
+    "cogs_prior_m": 2495,
+    "rd_m": 829,
+    "rd_prior_m": 787,
+    "sga_m": 204,
+    "sga_prior_m": 238,
+    "op_income_m": 474,
+    "op_income_prior_m": -1001,
+    "inventory_m": 1311,
+    "inventory_prior_m": 1467
+   },
+   "sales_b": 4.19,
+   "sales_pct": 18.3,
+   "seq_pct": 1.2,
+   "gross_margin": 47.16,
+   "gross_margin_bp": 1762.0,
+   "op_margin": 11.31,
+   "op_margin_bp": 3958.1,
+   "opex_pct": 0.8,
+   "opex_gap_pp": -17.5,
+   "inventory_b": 1.311,
+   "inventory_pct": -10.6,
+   "inventory_gap_pp": -29.0,
+   "inventory_note": "inventory $1,311M (April 30, 2017) vs $1,467M (May 1, 2016, the Q2 FY16 release)",
+   "eps_q": 1.06,
+   "eps_q_prior": -2.93,
+   "diluted_shares_m": 442,
+   "cash_b": 4.254,
+   "ltd_b": 13.567,
+   "extra_sources": [
+    "V66"
+   ],
+   "sales_note": "net revenue $4,190M vs $3,541M: 'an increase of 18 percent from $3,541 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.06 vs $(2.93)",
+   "shares_note": "diluted shares 442M in Q2 FY17",
+   "next_print": "Q3 FY17 print",
+   "cash_return_text": "$1.02 a share paid on March 31, 2017 ($414 million), and the same per restricted exchangeable partnership unit ($23 million); long-term debt $13,567M at April 30, 2017"
+  },
+  {
+   "quarter": "Q3 FY17",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-08-25",
+   "source": "V73",
+   "release": "Aug 24",
+   "release_time": "after the close on Aug 24: accepted 16:08 ET; public before the open of the next trading day",
+   "period_end": "2017-07-30",
+   "raw": {
+    "sales_m": 4463,
+    "sales_prior_m": 3792,
+    "sales_prev_q_m": 4190,
+    "cogs_m": 2314,
+    "cogs_prior_m": 2010,
+    "rd_m": 827,
+    "rd_prior_m": 814,
+    "sga_m": 200,
+    "sga_prior_m": 230,
+    "op_income_m": 648,
+    "op_income_prior_m": -264,
+    "inventory_m": 1431,
+    "inventory_prior_m": 1306
+   },
+   "sales_b": 4.463,
+   "sales_pct": 17.7,
+   "seq_pct": 6.5,
+   "gross_margin": 48.15,
+   "gross_margin_bp": 115.8,
+   "op_margin": 14.52,
+   "op_margin_bp": 2148.1,
+   "opex_pct": -1.6,
+   "opex_gap_pp": -19.3,
+   "inventory_b": 1.431,
+   "inventory_pct": 9.6,
+   "inventory_gap_pp": -8.1,
+   "inventory_note": "inventory $1,431M (July 30, 2017) vs $1,306M (July 31, 2016, the Q3 FY16 release)",
+   "eps_q": 1.14,
+   "eps_q_prior": -0.72,
+   "diluted_shares_m": 445,
+   "cash_b": 5.249,
+   "ltd_b": 13.572,
+   "extra_sources": [
+    "V67"
+   ],
+   "sales_note": "net revenue $4,463M vs $3,792M: 'an increase of 18 percent from $3,792 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.14 vs $(0.72)",
+   "shares_note": "diluted shares 445M in Q3 FY17",
+   "next_print": "Q4 FY17 print",
+   "cash_return_text": "$1.02 a share paid on June 30, 2017 ($415 million), and the same per restricted exchangeable partnership unit ($23 million); long-term debt $13,572M at July 30, 2017"
+  },
+  {
+   "quarter": "Q4 FY17",
+   "fy": 2017,
+   "q": 4,
+   "published": "2017-12-07",
+   "source": "V75",
+   "release": "Dec 6",
+   "release_time": "after the close on Dec 6: accepted 16:10 ET; public before the open of the next trading day",
+   "period_end": "2017-10-29",
+   "raw": {
+    "sales_m": 4844,
+    "sales_prior_m": 4136,
+    "sales_prev_q_m": 4463,
+    "cogs_m": 2461,
+    "cogs_prior_m": 1965,
+    "rd_m": 828,
+    "rd_prior_m": 806,
+    "sga_m": 194,
+    "sga_prior_m": 224,
+    "op_income_m": 865,
+    "op_income_prior_m": 381,
+    "inventory_m": 1447,
+    "inventory_prior_m": 1400
+   },
+   "sales_b": 4.844,
+   "sales_pct": 17.1,
+   "seq_pct": 8.5,
+   "gross_margin": 49.19,
+   "gross_margin_bp": -329.5,
+   "op_margin": 17.86,
+   "op_margin_bp": 864.5,
+   "opex_pct": -0.8,
+   "opex_gap_pp": -17.9,
+   "inventory_b": 1.447,
+   "inventory_pct": 3.4,
+   "inventory_gap_pp": -13.8,
+   "inventory_note": "inventory $1,447M (October 29, 2017) vs $1,400M (October 30, 2016)",
+   "eps_q": 1.49,
+   "eps_q_prior": -1.44,
+   "diluted_shares_m": 424,
+   "cash_b": 11.204,
+   "ltd_b": 17.431,
+   "sales_note": "net revenue $4,844M vs $4,136M: 'an increase of 17 percent from $4,136 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.49 vs $(1.44)",
+   "shares_note": "diluted shares 424M in Q4 FY17",
+   "next_print": "Q1 FY18 print",
+   "cash_return_text": "$1.02 a share paid on September 29, 2017 ($416 million), and the same per restricted exchangeable partnership unit ($23 million); the interim dividend raised by 72 percent to $1.75; long-term debt $17,431M at October 29, 2017",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 4.28,
+    "revenue_usd_b": 17.636,
+    "diluted_shares_m": 421,
+    "op_margin": 14.14,
+    "op_margin_note": "FY17 operating income $2,493M / net revenue $17,636M (Q4 FY17 release)",
+    "pretax_margin": 10.97,
+    "pretax_margin_note": "FY17 income from continuing operations before income taxes $1,935M / $17,636M (Q4 FY17 release)",
+    "gross_margin": 48.25,
+    "sales_growth": 33.2,
+    "normalization_note": "FY17 from the Q4 FY17 release: GAAP $4.28 from continuing operations (net $4.27); its listed items, a $166M loss on debt extinguishment, $180M of restructuring, impairment and disposal charges and $4M of inventory step-up, are a fraction of its $1,900M income from continuing operations (the AAPL FY2003 test)"
+   }
+  },
+  {
+   "quarter": "Q1 FY18",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-03-16",
+   "source": "V78",
+   "release": "Mar 15",
+   "release_time": "after the close on Mar 15: accepted 16:08 ET; public before the open of the next trading day",
+   "period_end": "2018-02-04",
+   "raw": {
+    "sales_m": 5327,
+    "sales_prior_m": 4139,
+    "sales_prev_q_m": 4844,
+    "cogs_m": 2699,
+    "cogs_prior_m": 2138,
+    "rd_m": 925,
+    "rd_prior_m": 808,
+    "sga_m": 291,
+    "sga_prior_m": 201,
+    "op_income_m": 943,
+    "op_income_prior_m": 506,
+    "inventory_m": 1291,
+    "inventory_prior_m": 1336
+   },
+   "sales_b": 5.327,
+   "sales_pct": 28.7,
+   "seq_pct": 10.0,
+   "gross_margin": 49.33,
+   "gross_margin_bp": 98.9,
+   "op_margin": 17.7,
+   "op_margin_bp": 547.7,
+   "opex_pct": 20.5,
+   "opex_gap_pp": -8.2,
+   "inventory_b": 1.291,
+   "inventory_pct": -3.4,
+   "inventory_gap_pp": -32.1,
+   "inventory_note": "inventory $1,291M (February 4, 2018) vs $1,336M (January 29, 2017, the Q1 FY17 release)",
+   "eps_q": 14.66,
+   "eps_q_prior": 0.58,
+   "diluted_shares_m": 426,
+   "cash_b": 7.076,
+   "ltd_b": 17.475,
+   "extra_sources": [
+    "V71"
+   ],
+   "sales_note": "net revenue $5,327M vs $4,139M: 'an increase of 29 percent from $4,139 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $14.66 vs $0.58 ('First quarter fiscal year 2018 net income reflects the significant impact of provisional income tax benefits realized from the enactment of the U.S. Tax Cuts and Jobs Act.'); a 14-week quarter",
+   "shares_note": "diluted shares 426M in Q1 FY18",
+   "next_print": "Q2 FY18 print",
+   "cash_return_text": "$1.75 a share paid on December 29, 2017 ($717 million), and the same per LP Unit ($38 million); long-term debt $17,475M at February 4, 2018"
+  },
+  {
+   "quarter": "Q2 FY18",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-06-08",
+   "source": "V81",
+   "release": "Jun 7",
+   "release_time": "after the close on Jun 7: accepted 16:05 ET; public before the open of the next trading day",
+   "period_end": "2018-05-06",
+   "raw": {
+    "sales_m": 5014,
+    "sales_prior_m": 4190,
+    "sales_prev_q_m": 5327,
+    "cogs_m": 2463,
+    "cogs_prior_m": 2214,
+    "rd_m": 936,
+    "rd_prior_m": 829,
+    "sga_m": 294,
+    "sga_prior_m": 204,
+    "op_income_m": 1201,
+    "op_income_prior_m": 474,
+    "inventory_m": 1235,
+    "inventory_prior_m": 1311
+   },
+   "sales_b": 5.014,
+   "sales_pct": 19.7,
+   "seq_pct": -5.9,
+   "gross_margin": 50.88,
+   "gross_margin_bp": 371.8,
+   "op_margin": 23.95,
+   "op_margin_bp": 1264.0,
+   "opex_pct": 19.1,
+   "opex_gap_pp": -0.6,
+   "inventory_b": 1.235,
+   "inventory_pct": -5.8,
+   "inventory_gap_pp": -25.5,
+   "inventory_note": "inventory $1,235M (May 6, 2018) vs $1,311M (April 30, 2017, the Q2 FY17 release)",
+   "eps_q": 8.34,
+   "eps_q_prior": 1.06,
+   "diluted_shares_m": 448,
+   "cash_b": 8.187,
+   "ltd_b": 17.481,
+   "extra_sources": [
+    "V72"
+   ],
+   "sales_note": "net revenue $5,014M vs $4,190M: 'an increase of 20 percent from $4,190 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $8.34 vs $1.06 (with a $2,637M benefit from income taxes in the quarter)",
+   "shares_note": "diluted shares 448M in Q2 FY18",
+   "next_print": "Q3 FY18 print",
+   "cash_return_text": "$1.75 a share paid on March 29, 2018 ($727 million), and the same per LP Unit ($39 million); $1.5 billion in aggregate repurchases of 6.4 million shares in the six weeks ended June 1, 2018; long-term debt $17,481M at May 6, 2018"
+  },
+  {
+   "quarter": "Q3 FY18",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-09-07",
+   "source": "V82",
+   "release": "Sep 6",
+   "release_time": "after the close on Sep 6: accepted 16:22 ET; public before the open of the next trading day",
+   "period_end": "2018-08-05",
+   "raw": {
+    "sales_m": 5063,
+    "sales_prior_m": 4463,
+    "sales_prev_q_m": 5014,
+    "cogs_m": 2444,
+    "cogs_prior_m": 2314,
+    "rd_m": 959,
+    "rd_prior_m": 827,
+    "sga_m": 234,
+    "sga_prior_m": 200,
+    "op_income_m": 1339,
+    "op_income_prior_m": 648,
+    "inventory_m": 1216,
+    "inventory_prior_m": 1431
+   },
+   "sales_b": 5.063,
+   "sales_pct": 13.4,
+   "seq_pct": 1.0,
+   "gross_margin": 51.73,
+   "gross_margin_bp": 357.7,
+   "op_margin": 26.45,
+   "op_margin_bp": 1192.7,
+   "opex_pct": 16.2,
+   "opex_gap_pp": 2.7,
+   "inventory_b": 1.216,
+   "inventory_pct": -15.0,
+   "inventory_gap_pp": -28.5,
+   "inventory_note": "inventory $1,216M (August 5, 2018) vs $1,431M (July 30, 2017, the Q3 FY17 release)",
+   "eps_q": 2.71,
+   "eps_q_prior": 1.14,
+   "diluted_shares_m": 441,
+   "cash_b": 4.136,
+   "ltd_b": 17.487,
+   "extra_sources": [
+    "V73"
+   ],
+   "sales_note": "net revenue $5,063M vs $4,463M: 'an increase of 13 percent from $4,463 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $2.71 vs $1.14",
+   "shares_note": "diluted shares 441M in Q3 FY18",
+   "next_print": "Q4 FY18 print",
+   "cash_return_text": "$1.75 a share paid on June 29, 2018 ($754 million); repurchased 24 million shares for $5,378 million, $6,275 million remaining under share repurchase authorization; long-term debt $17,487M at August 5, 2018"
+  },
+  {
+   "quarter": "Q4 FY18",
+   "fy": 2018,
+   "q": 4,
+   "published": "2018-12-07",
+   "source": "V84",
+   "release": "Dec 6",
+   "release_time": "after the close on Dec 6: accepted 16:23 ET; public before the open of the next trading day",
+   "period_end": "2018-11-04",
+   "raw": {
+    "sales_m": 5444,
+    "sales_prior_m": 4844,
+    "sales_prev_q_m": 5063,
+    "cogs_m": 2509,
+    "cogs_prior_m": 2461,
+    "rd_m": 948,
+    "rd_prior_m": 828,
+    "sga_m": 237,
+    "sga_prior_m": 194,
+    "op_income_m": 1652,
+    "op_income_prior_m": 755,
+    "inventory_m": 1124,
+    "inventory_prior_m": 1447
+   },
+   "sales_b": 5.444,
+   "sales_pct": 12.4,
+   "seq_pct": 7.5,
+   "gross_margin": 53.91,
+   "gross_margin_bp": 471.8,
+   "op_margin": 30.35,
+   "op_margin_bp": 1475.9,
+   "opex_pct": 15.9,
+   "opex_gap_pp": 3.6,
+   "inventory_b": 1.124,
+   "inventory_pct": -22.3,
+   "inventory_gap_pp": -34.7,
+   "inventory_note": "inventory $1,124M (November 4, 2018) vs $1,447M (October 29, 2017)",
+   "eps_q": 2.64,
+   "eps_q_prior": 1.24,
+   "diluted_shares_m": 423,
+   "cash_b": 4.292,
+   "ltd_b": 17.493,
+   "extra_sources": [
+    "V83"
+   ],
+   "sales_note": "net revenue $5,444M vs $4,844M: 'an increase of 12 percent from $4,844 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $2.64 vs $1.24 (Q4 FY17 as this release restates it, after a $110M litigation settlement)",
+   "shares_note": "diluted shares 423M in Q4 FY18",
+   "next_print": "Q1 FY19 print",
+   "cash_return_text": "$1.75 a share paid on September 28, 2018 ($723 million); the dividend raised by 51 percent to $2.65; repurchased 31.9 million shares in the fiscal year for $7,258 million; long-term debt $17,493M at November 4, 2018",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": null,
+    "excluded_note": "GAAP $28.48 per diluted share from continuing operations, inflated by one-off tax benefits: the benefit from income taxes ($8,084M for the year) carries the one-off items the Q3 FY18 10-Q lists: the 2017 Tax Reform Act's provisional benefit of $7,303M and the redomiciliation's tax benefits of $1,162M less an $84M provision ($8,381M), more than the year's $12,629M income from continuing operations without them ($4,248M); no published EPS excluding only them",
+    "revenue_usd_b": 20.848,
+    "diluted_shares_m": 431,
+    "op_margin": 24.63,
+    "op_margin_note": "FY18 operating income $5,135M / net revenue $20,848M (Q4 FY18 release)",
+    "pretax_margin": 21.8,
+    "pretax_margin_note": "FY18 income from continuing operations before income taxes $4,545M / $20,848M (Q4 FY18 release)",
+    "gross_margin": 51.48,
+    "sales_growth": 18.2,
+    "normalization_note": "FY18 from the Q4 FY18 release: GAAP $28.48 from continuing operations (net $28.44); the benefit from income taxes ($8,084M for the year) carries the one-off items the Q3 FY18 10-Q lists: the 2017 Tax Reform Act's provisional benefit of $7,303M and the redomiciliation's tax benefits of $1,162M less an $84M provision ($8,381M), more than the year's $12,629M income from continuing operations without them ($4,248M); no published EPS excluding only them; excluded: it leaves the EPS history and its own days leave the P/E window (the distorted-year rule, its mirror for one-off benefits)"
+   }
+  },
+  {
+   "quarter": "Q1 FY19",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-03-15",
+   "source": "V86",
+   "release": "Mar 14",
+   "release_time": "after the close on Mar 14: accepted 16:23 ET; public before the open of the next trading day",
+   "period_end": "2019-02-03",
+   "raw": {
+    "sales_m": 5789,
+    "sales_prior_m": 5327,
+    "sales_prev_q_m": 5444,
+    "cogs_m": 2581,
+    "cogs_prior_m": 2699,
+    "rd_m": 1133,
+    "rd_prior_m": 925,
+    "sga_m": 471,
+    "sga_prior_m": 291,
+    "op_income_m": 555,
+    "op_income_prior_m": 943,
+    "inventory_m": 1074,
+    "inventory_prior_m": 1291
+   },
+   "sales_b": 5.789,
+   "sales_pct": 8.7,
+   "seq_pct": 6.3,
+   "gross_margin": 55.42,
+   "gross_margin_bp": 608.2,
+   "op_margin": 9.59,
+   "op_margin_bp": -811.5,
+   "opex_pct": 31.9,
+   "opex_gap_pp": 23.2,
+   "inventory_b": 1.074,
+   "inventory_pct": -16.8,
+   "inventory_gap_pp": -25.5,
+   "inventory_note": "inventory $1,074M (February 3, 2019) vs $1,291M (February 4, 2018, the Q1 FY18 release)",
+   "eps_q": 1.15,
+   "eps_q_prior": 14.66,
+   "diluted_shares_m": 419,
+   "cash_b": 5.093,
+   "ltd_b": 34.104,
+   "extra_sources": [
+    "V78"
+   ],
+   "sales_note": "net revenue $5,789M vs $5,327M: 'an increase of 8.7 percent from $5,327 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.15 vs $14.66; CA from November 5, 2018 (13 weeks against Q1 FY18's 14)",
+   "shares_note": "diluted shares 419M in Q1 FY19",
+   "next_print": "Q2 FY19 print",
+   "cash_return_text": "$2.65 a share paid on December 28, 2018 ($1,067 million); long-term debt $34,104M at February 3, 2019"
+  },
+  {
+   "quarter": "Q2 FY19",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-06-14",
+   "source": "V87",
+   "release": "Jun 13",
+   "release_time": "after the close on Jun 13: accepted 16:23 ET; public before the open of the next trading day",
+   "period_end": "2019-05-05",
+   "raw": {
+    "sales_m": 5517,
+    "sales_prior_m": 5014,
+    "sales_prev_q_m": 5789,
+    "cogs_m": 2428,
+    "cogs_prior_m": 2463,
+    "rd_m": 1151,
+    "rd_prior_m": 936,
+    "sga_m": 419,
+    "sga_prior_m": 294,
+    "op_income_m": 970,
+    "op_income_prior_m": 1201,
+    "inventory_m": 1034,
+    "inventory_prior_m": 1235
+   },
+   "sales_b": 5.517,
+   "sales_pct": 10.0,
+   "seq_pct": -4.7,
+   "gross_margin": 55.99,
+   "gross_margin_bp": 511.3,
+   "op_margin": 17.58,
+   "op_margin_bp": -637.1,
+   "opex_pct": 27.6,
+   "opex_gap_pp": 17.6,
+   "inventory_b": 1.034,
+   "inventory_pct": -16.3,
+   "inventory_gap_pp": -26.3,
+   "inventory_note": "inventory $1,034M (May 5, 2019) vs $1,235M (May 6, 2018, the Q2 FY18 release)",
+   "eps_q": 1.64,
+   "eps_q_prior": 8.34,
+   "diluted_shares_m": 422,
+   "cash_b": 5.328,
+   "ltd_b": 34.011,
+   "extra_sources": [
+    "V81"
+   ],
+   "sales_note": "net revenue $5,517M vs $5,014M: 'an increase of 10.0 percent from $5,014 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.64 vs $8.34",
+   "shares_note": "diluted shares 422M in Q2 FY19",
+   "next_print": "Q3 FY19 print",
+   "cash_return_text": "$2.65 a share paid on March 29, 2019 ($1,057 million); long-term debt $34,011M at May 5, 2019"
+  },
+  {
+   "quarter": "Q3 FY19",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-09-13",
+   "source": "V88",
+   "release": "Sep 12",
+   "release_time": "after the close on Sep 12: accepted 16:25 ET; public before the open of the next trading day",
+   "period_end": "2019-08-04",
+   "raw": {
+    "sales_m": 5515,
+    "sales_prior_m": 5063,
+    "sales_prev_q_m": 5517,
+    "cogs_m": 2481,
+    "cogs_prior_m": 2444,
+    "rd_m": 1235,
+    "rd_prior_m": 959,
+    "sga_m": 410,
+    "sga_prior_m": 234,
+    "op_income_m": 865,
+    "op_income_prior_m": 1339,
+    "inventory_m": 1091,
+    "inventory_prior_m": 1216
+   },
+   "sales_b": 5.515,
+   "sales_pct": 8.9,
+   "seq_pct": -0.0,
+   "gross_margin": 55.01,
+   "gross_margin_bp": 328.5,
+   "op_margin": 15.68,
+   "op_margin_bp": -1076.2,
+   "opex_pct": 37.9,
+   "opex_gap_pp": 29.0,
+   "inventory_b": 1.091,
+   "inventory_pct": -10.3,
+   "inventory_gap_pp": -19.2,
+   "inventory_note": "inventory $1,091M (August 4, 2019) vs $1,216M (August 5, 2018, the Q3 FY18 release)",
+   "eps_q": 1.71,
+   "eps_q_prior": 2.71,
+   "diluted_shares_m": 418,
+   "cash_b": 5.462,
+   "ltd_b": 34.028,
+   "extra_sources": [
+    "V82"
+   ],
+   "sales_note": "net revenue $5,515M vs $5,063M: '8.9 percent higher than $5,063 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.71 vs $2.71",
+   "shares_note": "diluted shares 418M in Q3 FY19",
+   "next_print": "Q4 FY19 print",
+   "cash_return_text": "$2.65 a share paid on July 2, 2019 ($1,057 million); long-term debt $34,028M at August 4, 2019"
+  },
+  {
+   "quarter": "Q4 FY19",
+   "fy": 2019,
+   "q": 4,
+   "published": "2019-12-13",
+   "source": "V89",
+   "release": "Dec 12",
+   "release_time": "after the close on Dec 12: accepted 16:39 ET; public before the open of the next trading day",
+   "period_end": "2019-11-03",
+   "raw": {
+    "sales_m": 5776,
+    "sales_prior_m": 5444,
+    "sales_prev_q_m": 5515,
+    "cogs_m": 2624,
+    "cogs_prior_m": 2509,
+    "rd_m": 1177,
+    "rd_prior_m": 948,
+    "sga_m": 409,
+    "sga_prior_m": 237,
+    "op_income_m": 1054,
+    "op_income_prior_m": 1652,
+    "inventory_m": 874,
+    "inventory_prior_m": 1124
+   },
+   "sales_b": 5.776,
+   "sales_pct": 6.1,
+   "seq_pct": 4.7,
+   "gross_margin": 54.57,
+   "gross_margin_bp": 65.8,
+   "op_margin": 18.25,
+   "op_margin_bp": -1209.7,
+   "opex_pct": 33.8,
+   "opex_gap_pp": 27.7,
+   "inventory_b": 0.874,
+   "inventory_pct": -22.2,
+   "inventory_gap_pp": -28.3,
+   "inventory_note": "inventory $874M (November 3, 2019) vs $1,124M (November 4, 2018)",
+   "eps_q": 1.97,
+   "eps_q_prior": 2.64,
+   "diluted_shares_m": 416,
+   "cash_b": 5.055,
+   "ltd_b": 30.011,
+   "sales_note": "net revenue $5,776M vs $5,444M: '6.1 percent higher than $5,444 million in the same quarter last year'",
+   "eps_note": "diluted EPS from continuing operations $1.97 vs $2.64 (attributable to common stock, after $29M of preferred dividends)",
+   "shares_note": "diluted shares 416M in Q4 FY19",
+   "next_print": "Q1 FY20 print",
+   "cash_return_text": "$2.65 a share paid on October 1, 2019 ($1,054 million); the common dividend raised to $3.25 and a $20.00 dividend on the 8.00% Mandatory Convertible Preferred Stock; long-term debt $30,011M at November 3, 2019",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 6.46,
+    "revenue_usd_b": 22.597,
+    "diluted_shares_m": 419,
+    "op_margin": 15.24,
+    "op_margin_note": "FY19 operating income $3,444M / net revenue $22,597M (Q4 FY19 release)",
+    "pretax_margin": 9.85,
+    "pretax_margin_note": "FY19 income from continuing operations before income taxes $2,226M / $22,597M (Q4 FY19 release)",
+    "gross_margin": 55.24,
+    "sales_growth": 8.4,
+    "normalization_note": "FY19 from the Q4 FY19 release: GAAP $6.46 from continuing operations (net $6.43), attributable to common stock after $29M of preferred dividends; its listed items (restructuring and acquisition costs with CA, a $510M benefit from income taxes) are a fraction of its $2,736M income from continuing operations (the AAPL FY2003 test and its mirror)"
+   }
+  },
+  {
+   "quarter": "Q1 FY20",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-03-13",
+   "source": "V91",
+   "release": "Mar 12",
+   "release_time": "after the close on Mar 12: accepted 16:23 ET; public before the open of the next trading day",
+   "period_end": "2020-02-02",
+   "raw": {
+    "sales_m": 5858,
+    "sales_prior_m": 5789,
+    "sales_prev_q_m": 5776,
+    "cogs_m": 2594,
+    "cogs_prior_m": 2581,
+    "rd_m": 1289,
+    "rd_prior_m": 1133,
+    "sga_m": 601,
+    "sga_prior_m": 471,
+    "op_income_m": 714,
+    "op_income_prior_m": 555,
+    "inventory_m": 944,
+    "inventory_prior_m": 1074
+   },
+   "sales_b": 5.858,
+   "sales_pct": 1.2,
+   "seq_pct": 1.4,
+   "gross_margin": 55.72,
+   "gross_margin_bp": 30.3,
+   "op_margin": 12.19,
+   "op_margin_bp": 260.1,
+   "opex_pct": 17.8,
+   "opex_gap_pp": 16.6,
+   "inventory_b": 0.944,
+   "inventory_pct": -12.1,
+   "inventory_gap_pp": -13.3,
+   "inventory_note": "inventory $944M (February 2, 2020) vs $1,074M (February 3, 2019, the Q1 FY19 release)",
+   "eps_q": 0.73,
+   "eps_q_prior": 1.15,
+   "diluted_shares_m": 420,
+   "cash_b": 6.444,
+   "ltd_b": 42.407,
+   "extra_sources": [
+    "V86"
+   ],
+   "sales_note": "net revenue $5,858M vs $5,789M: 'Net revenue | 5,858 | 5,776 | 5,789'",
+   "eps_note": "diluted EPS from continuing operations $0.73 vs $1.15 (attributable to common stock, after the preferred dividends); the Symantec enterprise security business from November 4, 2019",
+   "shares_note": "diluted shares 420M in Q1 FY20",
+   "next_print": "Q2 FY20 print",
+   "cash_return_text": "$3.25 a share paid on December 31, 2019 ($1,297 million), and $20.00 per share of mandatory convertible preferred stock ($75 million); long-term debt $42,407M at February 2, 2020"
+  },
+  {
+   "quarter": "Q2 FY20",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-06-05",
+   "source": "V92",
+   "release": "Jun 4",
+   "release_time": "after the close on Jun 4: accepted 16:29 ET; public before the open of the next trading day",
+   "period_end": "2020-05-03",
+   "raw": {
+    "sales_m": 5742,
+    "sales_prior_m": 5517,
+    "sales_prev_q_m": 5858,
+    "cogs_m": 2553,
+    "cogs_prior_m": 2428,
+    "rd_m": 1269,
+    "rd_prior_m": 1151,
+    "sga_m": 501,
+    "sga_prior_m": 419,
+    "op_income_m": 766,
+    "op_income_prior_m": 970,
+    "inventory_m": 953,
+    "inventory_prior_m": 1034
+   },
+   "sales_b": 5.742,
+   "sales_pct": 4.1,
+   "seq_pct": -2.0,
+   "gross_margin": 55.54,
+   "gross_margin_bp": -45.2,
+   "op_margin": 13.34,
+   "op_margin_bp": -424.2,
+   "opex_pct": 12.7,
+   "opex_gap_pp": 8.7,
+   "inventory_b": 0.953,
+   "inventory_pct": -7.8,
+   "inventory_gap_pp": -11.9,
+   "inventory_note": "inventory $953M (May 3, 2020) vs $1,034M (May 5, 2019, the Q2 FY19 release)",
+   "eps_q": 1.18,
+   "eps_q_prior": 1.64,
+   "diluted_shares_m": 417,
+   "cash_b": 9.207,
+   "ltd_b": 45.044,
+   "extra_sources": [
+    "V87"
+   ],
+   "sales_note": "net revenue $5,742M vs $5,517M: 'Net revenue | 5,742 | 5,858 | 5,517 | 11,600 | 11,306'",
+   "eps_note": "diluted EPS from continuing operations $1.18 vs $1.64",
+   "shares_note": "diluted shares 417M in Q2 FY20",
+   "next_print": "Q3 FY20 print",
+   "cash_return_text": "$3.25 a share paid on March 31, 2020 ($1,306 million), and $20.00 per share of mandatory convertible preferred stock ($75 million); long-term debt $45,044M at May 3, 2020"
+  },
+  {
+   "quarter": "Q3 FY20",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-09-04",
+   "source": "V93",
+   "release": "Sep 3",
+   "release_time": "after the close on Sep 3: accepted 16:17 ET; public before the open of the next trading day",
+   "period_end": "2020-08-02",
+   "raw": {
+    "sales_m": 5821,
+    "sales_prior_m": 5515,
+    "sales_prev_q_m": 5742,
+    "cogs_m": 2505,
+    "cogs_prior_m": 2481,
+    "rd_m": 1228,
+    "rd_prior_m": 1235,
+    "sga_m": 428,
+    "sga_prior_m": 410,
+    "op_income_m": 1008,
+    "op_income_prior_m": 865,
+    "inventory_m": 1081,
+    "inventory_prior_m": 1091
+   },
+   "sales_b": 5.821,
+   "sales_pct": 5.5,
+   "seq_pct": 1.4,
+   "gross_margin": 56.97,
+   "gross_margin_bp": 195.3,
+   "op_margin": 17.32,
+   "op_margin_bp": 163.2,
+   "opex_pct": 0.7,
+   "opex_gap_pp": -4.9,
+   "inventory_b": 1.081,
+   "inventory_pct": -0.9,
+   "inventory_gap_pp": -6.5,
+   "inventory_note": "inventory $1,081M (August 2, 2020) vs $1,091M (August 4, 2019, the Q3 FY19 release)",
+   "eps_q": 1.46,
+   "eps_q_prior": 1.71,
+   "diluted_shares_m": 422,
+   "cash_b": 8.857,
+   "ltd_b": 43.201,
+   "extra_sources": [
+    "V88"
+   ],
+   "sales_note": "net revenue $5,821M vs $5,515M: 'Net revenue | 5,821 | 5,742 | 5,515 | 17,421 | 16,821'",
+   "eps_note": "diluted EPS from continuing operations $1.46 vs $1.71",
+   "shares_note": "diluted shares 422M in Q3 FY20",
+   "next_print": "Q4 FY20 print",
+   "cash_return_text": "$3.25 a share paid on June 30, 2020 ($1,312 million), and $20.00 per share of mandatory convertible preferred stock ($74 million); long-term debt $43,201M at August 2, 2020"
+  },
+  {
+   "quarter": "Q4 FY20",
+   "fy": 2020,
+   "q": 4,
+   "published": "2020-12-11",
+   "source": "V94",
+   "release": "Dec 10",
+   "release_time": "after the close on Dec 10: accepted 16:19 ET; public before the open of the next trading day",
+   "period_end": "2020-11-01",
+   "raw": {
+    "sales_m": 6467,
+    "sales_prior_m": 5776,
+    "sales_prev_q_m": 5821,
+    "cogs_m": 2720,
+    "cogs_prior_m": 2624,
+    "rd_m": 1182,
+    "rd_prior_m": 1177,
+    "sga_m": 405,
+    "sga_prior_m": 409,
+    "op_income_m": 1526,
+    "op_income_prior_m": 1054,
+    "inventory_m": 1003,
+    "inventory_prior_m": 874
+   },
+   "sales_b": 6.467,
+   "sales_pct": 12.0,
+   "seq_pct": 11.1,
+   "gross_margin": 57.94,
+   "gross_margin_bp": 337.0,
+   "op_margin": 23.6,
+   "op_margin_bp": 534.9,
+   "opex_pct": 0.1,
+   "opex_gap_pp": -11.9,
+   "inventory_b": 1.003,
+   "inventory_pct": 14.8,
+   "inventory_gap_pp": 2.8,
+   "inventory_note": "inventory $1,003M (November 1, 2020) vs $874M (November 3, 2019)",
+   "eps_q": 2.93,
+   "eps_q_prior": 1.97,
+   "diluted_shares_m": 426,
+   "cash_b": 7.618,
+   "ltd_b": 40.235,
+   "sales_note": "net revenue $6,467M vs $5,776M: 'Revenue of $6,467 million for the fourth quarter, up 12 percent from the prior year period'",
+   "eps_note": "diluted EPS from continuing operations $2.93 vs $1.97",
+   "shares_note": "diluted shares 426M in Q4 FY20",
+   "next_print": "Q1 FY21 print",
+   "cash_return_text": "$3.25 a share paid on September 30, 2020 ($1,320 million), and $20.00 per share of mandatory convertible preferred stock ($75 million); the common dividend raised by 11 percent to $3.60; long-term debt $40,235M at November 1, 2020",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 6.33,
+    "revenue_usd_b": 23.888,
+    "diluted_shares_m": 421,
+    "op_margin": 16.8,
+    "op_margin_note": "FY20 operating income $4,014M / net revenue $23,888M (Q4 FY20 release)",
+    "pretax_margin": 10.23,
+    "pretax_margin_note": "FY20 income from continuing operations before income taxes $2,443M / $23,888M (Q4 FY20 release)",
+    "gross_margin": 56.58,
+    "sales_growth": 5.7,
+    "normalization_note": "FY20 from the Q4 FY20 release: GAAP $6.33 from continuing operations, attributable to common stock after $297M of preferred dividends; its listed items (restructuring with the Symantec enterprise security business, a $518M benefit from income taxes) are a fraction of its $2,961M income from continuing operations (the AAPL FY2003 test and its mirror)"
+   }
   }
  ],
  "guides": [
@@ -3839,6 +5289,498 @@
    ],
    "quote": "Net revenue | 4,065M +/- $75M | 10M | 4,075M +/- $75M",
    "display": "$4,065M plus/minus $75M; GAAP gross margin 47.0% plus/minus 1%; operating expenses $1,473M; interest expense and other $101M; taxes $113M; diluted share count 437M"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-03-02",
+   "source": "V71",
+   "doc": "Q1 FY17 release",
+   "quarter": "Q2 FY17",
+   "level_stated": true,
+   "level_m": [
+    4015.0,
+    4165.0
+   ],
+   "prior_label": "Q2 FY16",
+   "prior_sales_m": 3541,
+   "prior_source": "V66",
+   "yoy_pct": [
+    13.4,
+    17.6
+   ],
+   "quote": "Net revenue | 4,090M +/- $75M | 10M | 4,100M +/- $75M",
+   "display": "$4,090M plus/minus $75M; GAAP gross margin 46.0% plus/minus 1%; operating expenses $1,465M; interest expense and other $106M; taxes $70M; diluted share count 442M"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-06-02",
+   "source": "V72",
+   "doc": "Q2 FY17 release",
+   "quarter": "Q3 FY17",
+   "level_stated": true,
+   "level_m": [
+    4370.0,
+    4520.0
+   ],
+   "prior_label": "Q3 FY16",
+   "prior_sales_m": 3792,
+   "prior_source": "V67",
+   "yoy_pct": [
+    15.2,
+    19.2
+   ],
+   "quote": "Net revenue | 4,445M +/- $75M | 5M | 4,450M +/- $75M",
+   "display": "$4,445M plus/minus $75M; GAAP gross margin 48.0% plus/minus 1%; operating expenses $1,497M; interest expense and other $100M; taxes $78M; diluted share count 444M"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-08-25",
+   "source": "V73",
+   "doc": "Q3 FY17 release",
+   "quarter": "Q4 FY17",
+   "level_stated": true,
+   "level_m": [
+    4721.0,
+    4871.0
+   ],
+   "prior_label": "Q4 FY16",
+   "prior_sales_m": 4136,
+   "prior_source": "V68",
+   "yoy_pct": [
+    14.1,
+    17.8
+   ],
+   "quote": "Net revenue | 4,796M +/- $75M | 4M | 4,800M +/- $75M",
+   "display": "$4,796M plus/minus $75M; GAAP gross margin 48.75% plus/minus 1%; operating expenses $1,490M; interest expense and other $100M; taxes $92M; diluted share count 425M"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-11-02",
+   "source": "V74",
+   "doc": "revenue outlook update 8-K",
+   "quarter": "Q4 FY17",
+   "level_stated": true,
+   "level_m": [
+    4721.0,
+    4871.0
+   ],
+   "prior_label": "Q4 FY16",
+   "prior_sales_m": 4136,
+   "prior_source": "V68",
+   "yoy_pct": [
+    14.1,
+    17.8
+   ],
+   "quote": "For the fourth quarter of fiscal year 2017, the Company expects revenue will be at the higher end of the business outlook provided during its earnings announcement on August 24, 2017.",
+   "display": "words only: the Q3 FY17 release's range ($4,796M plus/minus $75M) stands, at its higher end in words"
+  },
+  {
+   "fy": 2018,
+   "published": "2017-12-07",
+   "source": "V75",
+   "doc": "Q4 FY17 release",
+   "quarter": "Q1 FY18",
+   "level_stated": true,
+   "level_m": [
+    5221.0,
+    5371.0
+   ],
+   "prior_label": "Q1 FY17",
+   "prior_sales_m": 4139,
+   "prior_source": "V71",
+   "yoy_pct": [
+    26.1,
+    29.8
+   ],
+   "quote": "Net revenue | 5,296M +/-$75M | 4M | 5,300M +/-$75M",
+   "display": "$5,296M plus/minus $75M, a 14-week quarter with the Brocade FC SAN business from November 17, 2017; GAAP gross margin 47.75% plus/minus 1%; operating expenses $1,760M; interest expense and other $161M; taxes $22M; diluted share count 427M"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-01-31",
+   "source": "V77",
+   "doc": "guidance update 8-K",
+   "quarter": "Q1 FY18",
+   "level_stated": true,
+   "level_m": [
+    5300.0,
+    5350.0
+   ],
+   "prior_label": "Q1 FY17",
+   "prior_sales_m": 4139,
+   "prior_source": "V71",
+   "yoy_pct": [
+    28.1,
+    29.3
+   ],
+   "quote": "For the first quarter of fiscal year 2018, which is a 14-week quarter, the Company expects non-GAAP net revenue in the range of $5,300 million to $5,350 million.",
+   "display": "narrowed from $5,296M plus/minus $75M (GAAP); non-GAAP net revenue (it includes de minimis licensing revenue that GAAP revenue excludes: the release's only revenue figure); non-GAAP diluted EPS about $5.10"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-01-31",
+   "source": "V77",
+   "doc": "guidance update 8-K",
+   "quarter": "Q2 FY18",
+   "level_stated": true,
+   "level_m": [
+    4925.0,
+    5075.0
+   ],
+   "prior_label": "Q2 FY17",
+   "prior_sales_m": 4190,
+   "prior_source": "V72",
+   "yoy_pct": [
+    17.5,
+    21.1
+   ],
+   "quote": "For the second quarter of fiscal year 2018, which is a typical 13-week quarter, the Company expects non-GAAP net revenue in the range of $5,000 million, plus or minus $75 million.",
+   "display": "preliminary, before the Q1 FY18 print; non-GAAP net revenue (it includes de minimis licensing revenue that GAAP revenue excludes: the release's only revenue figure)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-03-16",
+   "source": "V78",
+   "doc": "Q1 FY18 release",
+   "quarter": "Q2 FY18",
+   "level_stated": true,
+   "level_m": [
+    4922.0,
+    5072.0
+   ],
+   "prior_label": "Q2 FY17",
+   "prior_sales_m": 4190,
+   "prior_source": "V72",
+   "yoy_pct": [
+    17.5,
+    21.1
+   ],
+   "quote": "Net revenue | 4,997M +/-$75M | 3M | 5,000M +/-$75M",
+   "display": "$4,997M plus/minus $75M; GAAP gross margin 50.0% plus/minus 1%; operating expenses $1,375M; interest expense and other $114M; taxes $56M; diluted share count 427M"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-05-01",
+   "source": "V80",
+   "doc": "guidance update 8-K",
+   "quarter": "Q2 FY18",
+   "level_stated": true,
+   "level_m": [
+    4975.0,
+    5025.0
+   ],
+   "prior_label": "Q2 FY17",
+   "prior_sales_m": 4190,
+   "prior_source": "V72",
+   "yoy_pct": [
+    18.7,
+    19.9
+   ],
+   "quote": "For the second quarter of fiscal year 2018, the Company expects non-GAAP net revenue in the range of $5,000 million plus or minus $25 million.",
+   "display": "narrowed from $4,997M plus/minus $75M (GAAP); non-GAAP net revenue (it includes de minimis licensing revenue that GAAP revenue excludes: the release's only revenue figure); the other second-quarter guidance affirmed"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-05-01",
+   "source": "V80",
+   "doc": "guidance update 8-K",
+   "quarter": "Q3 FY18",
+   "level_stated": true,
+   "level_m": [
+    4975.0,
+    5125.0
+   ],
+   "prior_label": "Q3 FY17",
+   "prior_sales_m": 4463,
+   "prior_source": "V73",
+   "yoy_pct": [
+    11.5,
+    14.8
+   ],
+   "quote": "For the third quarter of fiscal year 2018, the Company expects non-GAAP net revenue in the range of $5,050 million, plus or minus $75 million.",
+   "display": "preliminary, before the Q2 FY18 print; non-GAAP net revenue (it includes de minimis licensing revenue that GAAP revenue excludes: the release's only revenue figure)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-06-08",
+   "source": "V81",
+   "doc": "Q2 FY18 release",
+   "quarter": "Q3 FY18",
+   "level_stated": true,
+   "level_m": [
+    4972.0,
+    5122.0
+   ],
+   "prior_label": "Q3 FY17",
+   "prior_sales_m": 4463,
+   "prior_source": "V73",
+   "yoy_pct": [
+    11.4,
+    14.8
+   ],
+   "quote": "Net revenue | 5,047M +/- $75M | 3M | 5,050M +/- $75M",
+   "display": "$5,047M plus/minus $75M; GAAP gross margin 50.75% plus/minus 1%; operating expenses $1,272M; interest expense and other $115M; taxes $39M; diluted share count 444M"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-09-07",
+   "source": "V82",
+   "doc": "Q3 FY18 release",
+   "quarter": "Q4 FY18",
+   "level_stated": true,
+   "level_m": [
+    5322.0,
+    5472.0
+   ],
+   "prior_label": "Q4 FY17",
+   "prior_sales_m": 4844,
+   "prior_source": "V75",
+   "yoy_pct": [
+    9.9,
+    13.0
+   ],
+   "quote": "Net revenue | $5,397M +/- $75M | $3M | $5,400M +/- $75M",
+   "display": "$5,397M plus/minus $75M; GAAP gross margin 52.3% plus/minus 1%; operating expenses $1,259M; interest expense and other $125M; taxes 4%; diluted share count 424M"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-12-07",
+   "source": "V84",
+   "doc": "Q4 FY18 release",
+   "period": "FY19",
+   "level_stated": true,
+   "level_m": [
+    24500.0,
+    24500.0
+   ],
+   "prior_label": "FY18",
+   "prior_sales_m": 20848,
+   "prior_source": "V84",
+   "yoy_pct": [
+    17.5,
+    17.5
+   ],
+   "quote": "Net revenue | 24,500M | \u2014 | 24,500M",
+   "display": "FY2019 with CA; GAAP operating margin 20% (non-GAAP 51%, excluding $4,700M of amortization of acquisition-related intangible assets, $2,100M of stock-based compensation, $570M of restructuring charges and $210M of acquisition-related costs); net interest expense and other $1,250M; taxes 13%",
+   "op_margin_guide_pct": [
+    20.0,
+    20.0
+   ],
+   "margin_quote": "Operating margin | 20% | 7,580M | 51%"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-03-15",
+   "source": "V86",
+   "doc": "Q1 FY19 release",
+   "period": "FY19",
+   "level_stated": true,
+   "level_m": [
+    24500.0,
+    24500.0
+   ],
+   "prior_label": "FY18",
+   "prior_sales_m": 20848,
+   "prior_source": "V86",
+   "yoy_pct": [
+    17.5,
+    17.5
+   ],
+   "quote": "Net revenue | 24,500M | \u2014 | 24,500M",
+   "display": "FY2019 with CA; GAAP operating margin 17.6% (non-GAAP 51.0%, excluding an expected $5,210M of amortization, $2.0 billion of stock-based compensation, $750M of restructuring charges and $220M of acquisition-related costs); net interest expense and other $1,250M; taxes 3%",
+   "op_margin_guide_pct": [
+    17.6,
+    17.6
+   ],
+   "margin_quote": "Operating margin | 17.6% | 8,180M | 51.0%"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-06-14",
+   "source": "V87",
+   "doc": "Q2 FY19 release",
+   "period": "FY19",
+   "level_stated": true,
+   "level_m": [
+    22500.0,
+    22500.0
+   ],
+   "prior_label": "FY18",
+   "prior_sales_m": 20848,
+   "prior_source": "V87",
+   "yoy_pct": [
+    7.9,
+    7.9
+   ],
+   "quote": "Net revenue | 22,500M | \u2014 | 22,500M",
+   "display": "updated: $17.5 billion from semiconductor solutions and $5 billion from infrastructure software; GAAP operating margin 14.75% (non-GAAP 52.50%); net interest expense and other $1,300M; taxes -9%",
+   "op_margin_guide_pct": [
+    14.75,
+    14.75
+   ],
+   "margin_quote": "Operating margin | 14.75% | 8,470M | 52.50%"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-08-09",
+   "source": "V96",
+   "doc": "Symantec acquisition 8-K",
+   "period": "FY19",
+   "level_stated": true,
+   "level_m": [
+    22500.0,
+    22500.0
+   ],
+   "prior_label": "FY18",
+   "prior_sales_m": 20848,
+   "prior_source": "V84",
+   "yoy_pct": [
+    7.9,
+    7.9
+   ],
+   "quote": "Broadcom today also reaffirmed its fiscal year 2019 revenue guidance of $22.5 billion, with $17.5 billion from semiconductor solutions and $5 billion from infrastructure software, as last provided in its second quarter fiscal year 2019 earnings release on June 13, 2019.",
+   "display": "revenue reaffirmed with the Symantec enterprise security agreement, the same number: the Q2 FY19 release's margin and other lines stand (the CyOptics rule: an affirmed guide, a record with the same numbers)"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-09-13",
+   "source": "V88",
+   "doc": "Q3 FY19 release",
+   "period": "FY19",
+   "level_stated": true,
+   "level_m": [
+    22500.0,
+    22500.0
+   ],
+   "prior_label": "FY18",
+   "prior_sales_m": 20848,
+   "prior_source": "V88",
+   "yoy_pct": [
+    7.9,
+    7.9
+   ],
+   "quote": "Net revenue | 22,500M | \u2014 | 22,500M",
+   "display": "maintained: GAAP operating margin 14.75% (non-GAAP 52.50%); net interest expense and other $1,300M; taxes -17.75%",
+   "op_margin_guide_pct": [
+    14.75,
+    14.75
+   ],
+   "margin_quote": "Operating margin | 14.75% | 8,470M | 52.50%"
+  },
+  {
+   "fy": 2020,
+   "published": "2019-12-13",
+   "source": "V89",
+   "doc": "Q4 FY19 release",
+   "period": "FY20",
+   "level_stated": true,
+   "level_m": [
+    24500.0,
+    25500.0
+   ],
+   "prior_label": "FY19",
+   "prior_sales_m": 22597,
+   "prior_source": "V89",
+   "yoy_pct": [
+    8.4,
+    12.8
+   ],
+   "quote": "Revenue is expected to be $25 billion plus or minus $500 million.",
+   "display": "FY2020 with the Symantec enterprise security business; Adjusted EBITDA $13.75 billion plus or minus $250 million (non-GAAP; no GAAP margin guide)"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-03-13",
+   "source": "V91",
+   "doc": "Q1 FY20 release",
+   "period": "FY20",
+   "withdrawn": true,
+   "quote": "In light of the uncertainties in the global business environment arising from the effects of COVID-19, the Company is withdrawing its prior annual guidance for fiscal year 2020, and providing guidance for its second fiscal quarter.",
+   "display": "the FY2020 guide withdrawn; next-quarter guides from this release"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-03-13",
+   "source": "V91",
+   "doc": "Q1 FY20 release",
+   "quarter": "Q2 FY20",
+   "level_stated": true,
+   "level_m": [
+    5550.0,
+    5850.0
+   ],
+   "prior_label": "Q2 FY19",
+   "prior_sales_m": 5517,
+   "prior_source": "V87",
+   "yoy_pct": [
+    0.6,
+    6.0
+   ],
+   "quote": "Second quarter revenue guidance of $5.7 billion plus or minus $150 million",
+   "display": "$5.7 billion plus or minus $150 million; Adjusted EBITDA $3,135 million plus or minus $75 million (non-GAAP)"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-06-05",
+   "source": "V92",
+   "doc": "Q2 FY20 release",
+   "quarter": "Q3 FY20",
+   "level_stated": true,
+   "level_m": [
+    5600.0,
+    5900.0
+   ],
+   "prior_label": "Q3 FY19",
+   "prior_sales_m": 5515,
+   "prior_source": "V88",
+   "yoy_pct": [
+    1.5,
+    7.0
+   ],
+   "quote": "Third quarter revenue guidance of $5.75 billion plus or minus $150 million",
+   "display": "$5.75 billion plus or minus $150 million; Adjusted EBITDA $3,220 million plus or minus $75 million (non-GAAP)"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-09-04",
+   "source": "V93",
+   "doc": "Q3 FY20 release",
+   "quarter": "Q4 FY20",
+   "level_stated": true,
+   "level_m": [
+    6250.0,
+    6550.0
+   ],
+   "prior_label": "Q4 FY19",
+   "prior_sales_m": 5776,
+   "prior_source": "V89",
+   "yoy_pct": [
+    8.2,
+    13.4
+   ],
+   "quote": "Fourth quarter revenue guidance of $6.4 billion plus or minus $150 million",
+   "display": "$6.4 billion plus or minus $150 million; Adjusted EBITDA $3,744 million plus or minus $75 million (non-GAAP)"
+  },
+  {
+   "fy": 2021,
+   "published": "2020-12-11",
+   "source": "V94",
+   "doc": "Q4 FY20 release",
+   "quarter": "Q1 FY21",
+   "level_stated": true,
+   "level_m": [
+    6600.0,
+    6600.0
+   ],
+   "prior_label": "Q1 FY20",
+   "prior_sales_m": 5858,
+   "prior_source": "V91",
+   "yoy_pct": [
+    12.7,
+    12.7
+   ],
+   "quote": "First quarter revenue guidance of approximately $6.6 billion",
+   "display": "approximately $6.6 billion, 'an expected increase of 13 percent from the prior year period'; Adjusted EBITDA approximately $3.9 billion (non-GAAP)"
   }
  ],
  "dividends": [
@@ -3991,6 +5933,30 @@
    "source": "V68",
    "quarterly": 1.02,
    "note": "$1.02 quarterly, doubled, announced on December 8, 2016 with the Q4 FY16 results (8-K)"
+  },
+  {
+   "published": "2017-12-07",
+   "source": "V75",
+   "quarterly": 1.75,
+   "note": "$1.75 quarterly, raised by 72 percent, announced on December 6, 2017 with the Q4 FY17 results (8-K)"
+  },
+  {
+   "published": "2018-12-07",
+   "source": "V84",
+   "quarterly": 2.65,
+   "note": "$2.65 quarterly, raised by 51 percent, announced on December 6, 2018 with the Q4 FY18 results (8-K)"
+  },
+  {
+   "published": "2019-12-13",
+   "source": "V89",
+   "quarterly": 3.25,
+   "note": "$3.25 quarterly, announced on December 12, 2019 with the Q4 FY19 results (8-K)"
+  },
+  {
+   "published": "2020-12-11",
+   "source": "V94",
+   "quarterly": 3.6,
+   "note": "$3.60 quarterly, raised by 11 percent, announced on December 10, 2020 with the Q4 FY20 results (8-K)"
   }
  ],
  "events": [
@@ -4004,6 +5970,50 @@
    "risk_short": "'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its wired infrastructure and enterprise storage segments",
    "offering": "it sells into data centers itself: 'In the data center market, our high capacity, low latency, switching silicon supports advanced protocols around virtualization and multi-pathing'",
    "offering_short": "data-center switching silicon"
+  },
+  {
+   "id": "V76",
+   "published": "2017-12-22",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2017 10-K",
+   "risk_quote": "In addition, the shift to cloud-based IT solutions and services, such as hyperscale computing, may adversely affect both our wired infrastructure and enterprise storage segments.",
+   "risk_short": "'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its wired infrastructure and enterprise storage segments",
+   "offering": "it sells to cloud data-center providers as well: 'As cloud-based IT solutions become more prevalent, our results of operations will suffer if we are unable to increase sales of our products to cloud-based data center providers'",
+   "offering_short": "sales to cloud-based data center providers"
+  },
+  {
+   "id": "V85",
+   "published": "2018-12-24",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2018 10-K",
+   "risk_quote": "the shift to cloud-based IT solutions and services, such as hyperscale computing, which may adversely affect the timing and volume of sales of our products for use in traditional enterprise data centers",
+   "risk_short": "'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its sales into traditional enterprise data centers",
+   "offering": "it sells into data centers itself: 'We offer a broad set of Ethernet switching and routing products that are optimized for data center implementations'",
+   "offering_short": "data-center Ethernet switching and routing"
+  },
+  {
+   "id": "V90",
+   "published": "2019-12-23",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2019 10-K",
+   "risk_quote": "the shift to cloud-based IT solutions and services, such as hyperscale computing, which may adversely affect the timing and volume of sales of our products for use in traditional enterprise data centers",
+   "risk_short": "'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its sales into traditional enterprise data centers",
+   "offering": "it sells into data centers itself: 'We offer a broad set of Ethernet switching and routing products that are optimized for data center, service provider network, enterprise network'",
+   "offering_short": "data-center Ethernet switching and routing"
+  },
+  {
+   "id": "V95",
+   "published": "2020-12-21",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2020 10-K",
+   "risk_quote": "the shift to cloud-based IT solutions and services, such as hyperscale computing, which may adversely affect the timing and volume of sales of our products for use in traditional enterprise data centers",
+   "risk_short": "'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its sales into traditional enterprise data centers",
+   "offering": "it sells into data centers itself: 'We offer a broad set of Ethernet switching and routing products that are optimized for data center, service provider network, enterprise network'",
+   "offering_short": "data-center Ethernet switching and routing"
   }
  ],
  "company_names": [
@@ -4011,6 +6021,11 @@
    "name": "Broadcom Limited",
    "published": "2016-02-02",
    "source": "V64"
+  },
+  {
+   "name": "Broadcom Inc.",
+   "published": "2018-04-05",
+   "source": "V79"
   }
  ],
  "splits": [],
@@ -4110,5 +6125,18 @@
     "XBULL": 1630
    }
   }
+ },
+ "fiscal_calendar": {
+  "_doc": "Avago's fiscal year ended on October 31 to FY2007 and from FY2008 on the Sunday closest to October 31 (prospectus). The FY2017 10-K states the rule as 'the Sunday closest to October 31 in a 52-week year and the first Sunday in November in a 53-week year'; the two readings differ only for a 53-week year whose closest Sunday falls before October 31. Each such year is listed with the first filing that states it; the builder's calendar applies it.",
+  "weeks_53": [
+   {
+    "fy": 2018,
+    "end": "2018-11-04",
+    "published": "2017-12-07",
+    "source": "V75",
+    "quote": "Due to the Company\u2019s 52/53 week reporting cycle, fiscal year 2018 will include an extra week, compared to fiscal year 2017, which will fall in the first quarter of fiscal year 2018.",
+    "note": "with the first quarter 'ending February 4, 2018' (14 weeks), fiscal 2018 ends on Sunday 2018-11-04, the first Sunday in November; the Sunday closest to October 31 would be 2018-10-28"
+   }
+  ]
  }
 }

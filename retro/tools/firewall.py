@@ -114,10 +114,15 @@ try:
         if p0.get("futures_later", {}).get("published", cutoff) >= cutoff:     # a real one public before CUTOFF stays
             p0["futures_later"] = {"published": later, "source": p0["source"], "futures_pct": -60.0, "futures_fx_pp": -99.0,
                                    "futures_b": 0.01, "futures_note": "PLANTED", "futures_fx_note": "PLANTED"}
-    if TICKER == "AVGO":   # a later guide for every quarter guided before CUTOFF, with absurd values (the latest guide for a quarter wins)
+    if TICKER == "AVGO":   # a later guide for every quarter or fiscal year guided before CUTOFF, with absurd values (the latest guide
+                           # for a quarter or year wins), absurd margin levels, and a later withdrawal of every fiscal year guided before it
         for g in [g for g in f["guides"] if g["published"] < cutoff]:
             f["guides"].append({**copy.deepcopy(g), "published": later, "doc": "PLANTED", "seq_pct": [-50, -40], "level_m": [0.5, 0.6],
-                                "yoy_pct": [-99, -98], "quote": "PLANTED", "display": "PLANTED"})
+                                "yoy_pct": [-99, -98], "quote": "PLANTED", "display": "PLANTED",
+                                **({"op_margin_guide_pct": [1.0, 2.0], "margin_quote": "PLANTED"} if "op_margin_guide_pct" in g else {})})
+        for y in sorted({(g["fy"], g["period"]) for g in f["guides"] if g.get("period") and g["published"] < cutoff}):
+            f["guides"].append({"fy": y[0], "published": later, "source": last["source"], "doc": "PLANTED", "period": y[1],
+                                "withdrawn": True, "quote": "PLANTED", "display": "PLANTED"})
     if "capital_return" in f:      # AAPL: a capital return statement (catalyst 5)
         f["capital_return"].append({"published": later, "source": last["source"], "doc": "PLANTED", "text": "PLANTED"})
     if "splits" in f:      # a split announced after CUTOFF, on a split date of the price data after CUTOFF

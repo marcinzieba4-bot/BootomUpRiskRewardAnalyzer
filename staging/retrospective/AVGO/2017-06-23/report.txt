@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  AVGO  ·  Broadcom Limited  ·  $245.26  ·  RETROSPECTIVE as of 2017-06-23
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: +0.37  [MODESTLY UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2017-06-23; latest print Q2 FY17 (Jun 1)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E net revenue, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Target market                  FY2017E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Wired infrastructure          $  7.71  $ 7.71  $12.89    +0.00    +5.18
+    +345.0% net revenue in FY16
+  Wireless communications       $  4.36  $ 4.36  $ 7.29    +0.00    +2.93
+    +46.8% net revenue in FY16
+  Enterprise storage            $  2.69  $ 2.69  $ 4.49    +0.00    +1.80
+    +5.1% net revenue in FY16
+  Industrial & other            $  0.75  $ 0.75  $ 1.26    +0.00    +0.51
+    +2.2% net revenue in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 15.51  $15.51  $25.93    +0.00   +10.42
+  FY2017E = FY16 $13.240B × (1 + 17.2%: the Q3 FY17 revenue guide (Q2 FY17 release), YoY, applied to the year (no FY17 revenue guide)); split pro rata to FY16 net revenue by segment (FY2016 10-K)
+  Q2 FY17 (Jun 1): net revenue $4.190B +18.3% YoY (+1.2% QoQ); inventories -10.6%; R&D + SG&A +0.8%;
+  gross margin 47.16% (+1762.0bp); operating margin 11.31% (+3958.1bp); EPS $1.06 vs $(2.93)
+  Net revenue: net revenue $4,190M vs $3,541M: 'an increase of 18 percent from $3,541 million in the same quarter last year'; inventory $1,311M (April 30, 2017) vs $1,467M (May 1, 2016, the Q2 FY16 release); diluted EPS from continuing operations $1.06 vs $(2.93); diluted shares 442M in Q2 FY17
+  Q3 FY17 outlook (Q2 FY17 release): net revenue $4,370.0M-$4,520.0M ('Net revenue | 4,445M +/- $75M | 5M | 4,450M +/- $75M') against Q3 FY16's $3,792M: +15.2% to +19.2% YoY; display only: $4,445M plus/minus $75M; GAAP gross margin 48.0% plus/minus 1%; operating expenses $1,497M; interest expense and other $100M; taxes $78M; diluted share count 444M; no fiscal-year revenue, EPS or margin guide
+
+  FY2017E EPS check:  $15.510B × -8.4% pre-tax × (1−5.2%) ÷ 0.442B  =  $-2.78  (FY2017E: no EPS guide in numbers, FY15's $4.95 stands (FY16 is excluded: FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items))
+  FY2019E BEAR check: $15.510B × -8.4% ÷ 0.504B  =  $-2.44  (scenario $4.69)
+  FY2019E BULL check: $25.930B × -8.0% ÷ 0.504B  =  $-3.88  (scenario $11.49)
+  Every 1pp of pre-tax margin ≈ $0.333 EPS ≈ $5.22/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -39.0%   ≥-18.0%     ≥4.0%    ≥11.0%    +18.3%  ★ XBULL  ████
+  Gross margin change                 -1080.0bp  ≥-560.0bp  ≥-30.0bp  ≥1480.0bp  +1762.0bp  ★ XBULL  ████
+  Opex growth less net revenue         +31.0pp   ≤16.0pp    ≤2.0pp  ≤-18.0pp   -17.5pp  ▲ BULL  ███░
+  Inventory growth less net revenue    +54.0pp   ≤23.0pp   ≤-8.0pp  ≤-18.0pp   -29.0pp  ★ XBULL  ████
+  Operating margin change             -1540.0bp  ≥-820.0bp  ≥-100.0bp  ≥1630.0bp  +3958.1bp  ★ XBULL  ████
+  Cloud: net effect on enterprise storage and networking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.55 / 4.00
+  Market composite:   2.78 / 4.00  (back-solved from $245.26 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.30  →  Adj composite 3.15  →  Gap +0.37  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 net revenue +94.0%, gross margin 44.9%; Q2 gross margin 47.16% (+1762bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 49.5x FY17E vs a 15.7x 7.6-yr ex-FY09 ex-FY14 ex-FY16 median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q3 FY17 revenue guide (Q2 FY17 release) +15.2-19.2% vs a 26.3% 8-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash $4.254B, long-term debt $13.567B (Q2 FY17), FY16 free cash flow $2.688B (net cash provided by operating activities $3,411M less purchases of property, plant and equipment $723M), dividend $4.08 a year  (+0.30 × 15%  =  +0.045)
+    +  Cloud data centers: data-center switching silicon — it sells to them as well  (+0.20 × 10%  =  +0.020)
+    -  Shift to cloud-based IT (FY2016 10-K): 'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its wired infrastructure and enterprise storage segments  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +18.3%    -39.0%  -57.3%  End demand and distributor destocking…
+  Gross margin change                 +1762.0bp  -1080.0bp  -2842.0bp  Fab under-utilization and price erosi…
+  Opex growth less net revenue         -17.5pp   +31.0pp  +48.5pp  R&D and SG&A do not come down with re…
+  Inventory growth less net revenue    -29.0pp   +54.0pp  +83.0pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +3958.1bp  -1540.0bp  -5498.1bp  Operating leverage works in reverse
+  Cloud: net effect on enterprise storage and networking    +2.0/4    +1.0/4  -1.0/4  Enterprise data centers move to the c…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$86.97  (model)  /  $55.81 (defined)
+  Bear probability (proxy model):  2.0%
+
+  KEY TRIGGER: net revenue went from +133.7% (Q1 FY17) to +18.3% YoY (Q2 FY17), +1.2% on the quarter before;
+  the bear case needs the downturn to resume with gross margin (+1762.0bp now)
+  and inventories (-29.0pp against revenue) giving way. A semiconductor downturn shows up in distributor inventories and the
+  next-quarter guide first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.95  (FY2017E: no EPS guide in numbers, FY15's $4.95 stands (FY16 is excluded: FY16: a loss of $(4.57) per diluted share from continuing operations (the year of the BRCM acquisition); no published EPS excluding only one-off items))
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2009 8.6x, 2010 9.9x, 2011 12.2x, 2012 12.6x, 2013 14.3x, 2014 17.2x, 2015 19.4x, 2016 32.9x, 2017 35.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $69.30/share
+  Current $245.26 vs Updated EPP $69.30:  +254%  ⚠ far above floor — large drawdown room
+  Bear $55.81 vs Updated EPP $69.30:  -19%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -18.0      -36.3   BASE floor (vs +18 now)
+  Gross margin change                         -560.0    -2322.0   BASE floor (vs +1762 now)
+  Opex growth less net revenue                  16.0      +33.5   BASE floor (vs -18 now)
+  Inventory growth less net revenue             23.0      +52.0   BASE floor (vs -29 now)
+  Operating margin change                     -820.0    -4778.1   BASE floor (vs +3958 now)
+  Cloud: net effect on enterprise storage and networking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.95 × (1+8.5%)² = $5.82
+  At 15x P/E (conservative):  $87.33/share
+  + Cumul. dividends (2yr):  +$8.40/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $87.33  (▼157.93 from $245.26)
+  Conservative total return:  -61% over 2yr  = -30%/yr
+
+  8.5% EPS growth is what is left once the premium multiple (49.5x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2019E EPS of $15.79,
+  i.e. 78.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (prices since the listing on 2009-08-06)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $142.27  –  $256.78  (at 90th pct of range)
+  Annual dividend:      $4.08/share  (yield 1.7%)
+  Realized vol:         24% annualized (251 daily returns since the listing)
+  Beta vs broad market: 1.48
+  1-sigma range (1yr):  $185.91  –  $304.61  ($245.26 ± 24%)
+  2-sigma range (1yr):  $126.55  –  $363.97
+  ────────────────────────────────────────────────────────────
+  Bear $55.81 requires:  ~3.2σ price move  (unusual — requires fundamental break)
+  An analog semiconductor maker listed on 2009-08-06: the stock is +71% off its June
+  low while net revenue went from +133.7% (Q1 FY17) to +18.3% YoY (Q2 FY17), +1.2% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.69   11.9x  $  55.81     2.0%      5.2%    -3.2pp  EPS -2.7%/yr (worst year FY08-FY15 ex-FY09 ex-FY14, capped at 0%); P/E to its 10th pct
+  BASE        6.04   15.7x  $  94.83     7.0%     18.2%   -11.2pp  EPS +10.5%/yr (Q3 FY17 guide YoY + margin + buyback); P/E at its 7.6-yr ex-FY09 ex-FY14 ex-FY16 median
+  BULL       11.49   21.2x  $ 243.59    24.5%     63.4%   -38.9pp  EPS +52.3%/yr (FY08-FY15 ex-FY09 ex-FY14 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      32.17   34.9x  $1,122.73    66.5%     13.2%   +53.3pp  EPS +155.0%/yr (best 2-yr run FY08-FY15 ex-FY09 ex-FY14, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $814.13  /  Market EV: $323.14  /  Current: $245.26
+  Conservative EV (2yr, ④): $87.33 + $8.40 divs = $95.74 total value
+  Downside (→ Bear $55.81): 77.2%   Upside (→ Bull $243.59): -0.7%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $245.26 the market needs $324.36 in two years —
+  above the BULL case. That is a market composite of 2.78 against a model
+  read of 3.15: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +254%    +0.37  MODESTLY UNDERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.17x    +254%    +0.83  UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +254%    +0.02  FAIRLY VALUED / AVOID
+  Scenario EPS +1.5pp/yr                         33.00x    +254%    +0.39  MODESTLY UNDERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +254%    +0.34  MODESTLY UNDERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +254%    +0.67  UNDERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +191%    +0.47  MODESTLY UNDERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +254%    +0.48  MODESTLY UNDERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY17 print — net revenue against the Q3 FY17 revenue guide (Q2 FY17 release): +15.2-19.2% YoY
+  (2) Gross margin — +1762.0bp in Q2 FY17: utilization and price erosion, what must hold if revenue does not
+  (3) The Q3 FY17 guide — $4,370.0M-$4,520.0M (+15.2% to +19.2% YoY): Avago guides one quarter at a time, in revenue only
+  (4) Inventories — -10.6% against net revenue +18.3% in Q2 FY17 (-29.0pp): write-downs follow if orders slow
+  (5) Capital structure at 50x — $1.02 a share paid on March 31, 2017 ($414 million), and the same per restricted exchangeable partnership unit ($23 million); long-term debt $13,567M at April 30, 2017
+  ✕ AVOID  |  EPP floor $69.30  |  ADD below ~$80.61  |  TRIM above $243.59
+════════════════════════════════════════════════════════════════════════
+
