@@ -4387,6 +4387,170 @@ Judgement calls that could carry hindsight:
 - the builder had read the 2017-2020 and 2021-2023 hindsight findings before this range was built. Every 2024-2026 encoding above
   applies a rule that existed before (the split encodings follow the AAPL builder), and none was tuned on an outcome.
 
+## PEP (PepsiCo): the seventh ticker, in staging
+
+The PEP series is built apart from ACN, UNP, LOW, AAPL, NKE and AVGO and shares nothing with them but the machinery: its own
+fact sheet (`retro/facts/PEP.json`), builder (`retro/build_pep.py`) and engine (`retro/templates/pep_engine.py.tmpl`, the NKE
+engine with beverage and convenient-food signals and the AVGO engine's pre-tax EPS check). The method is still r2. No ACN, UNP,
+LOW, AAPL, NKE or AVGO fact, parameter, outcome or finding enters a PEP model. Outputs go to `staging/retrospective/PEP/`, beside
+the others, with the same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_pep.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/PEP/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series PEP
+python3 retro/tools/firewall.py 2009-01-01 PEP
+```
+
+The 10-Ks from FY1997 to FY2007 (with the FY1999 and FY2002 10-K/As, which carry no figures) were read for the history and the
+decade's signal values; Sonnet 5.5 agents transcribed them and checked 2,206 strings word for word with `verbatim.py` against their
+own filings. Every 8-K and 10-Q from October 2006 to December 2008 was read by Opus directly, with the Q4 releases of 2001-2006 for
+the figures they publish excluding one-offs; 90 more strings were checked. Each source's date comes from EDGAR's acceptance time
+(converted from UTC; before 2003 EDGAR gives the filing date only). Decided on 2026-11-02, before any PEP model was built or any
+PEP outcome computed:
+
+- **Fiscal calendar.** PepsiCo's fiscal year "ends on the last Saturday of each December, resulting in an additional week of
+  results every five or six years" (FY2006 10-K); quarters of 12, 12, 12 and 16 weeks (17 in 2005). The builder maps each day to
+  its fiscal year by that rule and checks it against the year-ends the vintages state.
+- **Prices as traded.** PepsiCo last split in 1996, before every fact in the fact sheet: Yahoo's series is the price as traded,
+  no fact is restated, and the builder refuses a split factor other than 1.
+- **Every release came during the session.** Each earnings 8-K of 2007-2008 was accepted between 09:39 and 10:34 ET on its
+  release day (the conference call at 11 a.m. ET), so a print is dated its release day and the week's date is the next trading
+  day: 2008-02-08, 2008-04-25, 2008-07-24 and 2008-10-15. The 10-Qs, accepted after the close, count from the next trading day.
+- **History: each year from the latest 10-K that reports it.** The FY2006 10-K (accepted 2007-02-20 16:57 ET, dated 2007-02-21)
+  gives 2002-2006; 2001 comes from the FY2005 10-K, 2000 from the FY2004 10-K, 1999 from the FY2003 10-K and 1998 from the FY2002
+  10-K. The Q4 2007 print extends it with FY2007 from 2008-02-07, and the FY2007 10-K (accepted 2008-02-15 15:27 ET, during the
+  session) moves the window to 1998-2007. Three seams stay in, as published (the LOW rule):
+  - the Quaker Oats pooling of 2001 restated 1997-2000 in the FY2001 10-K, but the only filings that report 1998's diluted shares
+    are the earlier ones (1,519M, FY2000 10-K), so the buyback runs from a pre-pooling first year to pooled later years: -1.3%/yr
+    over 1998-2006, -1.0%/yr over 1998-2007, where the pooled share count fell;
+  - the stock-option restatement of 2001-2003 in the FY2003 10-K ("Fiscal years 2000 and 1999 have not been restated"), so 2001
+    carries option expense and 2000 does not;
+  - the EITF 01-9 reclassifications (net revenue from the FY2002 10-K) and the 2005 move of warehouse and freight costs from cost
+    of sales to SG&A (the FY2005 10-K), each year's revenue and margins on the basis of its source 10-K.
+- **EPS** is diluted EPS from continuing operations (diluted EPS where none were discontinued). A company figure excluding
+  one-offs only replaces it (the ACN rule), from any filing on the same basis: 1999 $1.23 and 2000 $1.46, the FY2001 10-K's
+  "comparable" figures (excluding the 1999 bottling gain, the fifty-third week of 2000, impairment and restructuring charges,
+  Quaker one-time items and tax items; GAAP $1.38 and $1.42); 2004 $2.32 (Q4 2004 release), 2005 $2.66 (Q4 2005 release; the
+  AJCA tax charge, the extra week and restructuring), 2006 $3.00 and 2007 $3.38 (tax items and restructuring). 1998 ($1.23),
+  2001 ($1.33) and 2002 ($1.68) stay GAAP: the comparable $1.66 for 2001 and $1.96 for 2002 were published before the
+  restatement, on the earlier basis (the UNP trucking rule). 2003 is $2.05 either way.
+  - **1997 is excluded.** On the pooled basis of the FY2001 10-K, the latest that reports it, 1997's $0.30 from continuing
+    operations is under half of the $1.05 without its listed items (a $1.1 billion after-tax loss on a business divestiture,
+    $0.61 a share, and $0.14 of impairment and restructuring), and no adjusted figure was published on that basis (the ACN FY02
+    and AAPL FY2002 rule). The history starts with fiscal 1998 and so does the P/E window (`pe_window_start` 1997-12-28; the
+    ten-year window of every 2008 date starts later anyway).
+- **The 2008 core rule.** From the Q2 2008 release PepsiCo's "core" figures and guides also exclude "the commodity
+  mark-to-market net impact included in corporate unallocated expenses". That item recurs in every period ($19 million of gains in
+  2007, $346 million of losses in 2008) and its gains and losses "are subsequently reflected in division results when the divisions
+  take delivery of the underlying commodity": a timing basis, not a one-off (the AAPL Q4 FY08 subscription-accounting and NKE
+  FY2007 rule). So a core figure does not replace GAAP, and a core guide gives no field. Nothing is derived from the per-share
+  effects the reconciliations list.
+- **No EPS guide gives a field.** Every 2007-2008 EPS guide is a one-sided bound: fiscal 2007 "at least $3.30", then $3.35, then
+  "at least $3.39" reported and "at least $3.35" core; fiscal 2008 "EPS of at least $3.72" (the Q4 2007 release, the CAGNY 8-K of
+  2008-02-20, the Q1 2008 release, the 8-Ks of 2008-06-10 and 2008-06-16), "excluding the impact of any mark-to-market
+  gains/losses" from the Q2 2008 release. A one-sided bound gives no field (the UNP "below 80%" and LOW "tracking ahead of" rule).
+  The Q3 2008 release's "core 2008 earnings per share in the range of $3.67 — $3.68 (excluding any commodity mark-to-market
+  impact and Productivity for Growth costs)" is a range on the core basis (the rule above). So the last full year's EPS stands
+  all year (the rollover rule): FY06's $3.00 to the Q4 2007 print, FY07's $3.38 from it. Each guide is shown in the guide line
+  with the reason it gives no field.
+- **Revenue and volume guides are words or volume.** "mid-to-high single digit", "high-single-digit" and "low-double-digit net
+  revenue growth (including acquisitions and foreign exchange)" are words (the UNP 2016 rule), and the "3% to 5% volume growth"
+  is not revenue, so BASE growth and the growth factor take the latest quarter's net revenue growth excluding currency: the growth
+  the release states less the currency effect the release or the quarter's 10-Q states (the NKE rule): Q3 2007 +8% (11 less the
+  10-Q's "nearly 3"), Q1 2008 +10% (13 less 3), Q2 2008 +10% (14 less 4), Q3 2008 +8% (11 less 3). No filing states the
+  currency effect on the fourth quarter of 2007 (the release gives PepsiCo International's "over 7 percentage points" and the
+  year's "about 2 points"), so its reported +17% stands.
+- **No operating-margin guide**, so no margin step; the margin signal takes the latest quarter's change.
+- **Dividends,** each from the first filing that states the rate: $0.30 a quarter (FY2006 10-K), $0.375 from the Q2 2007 10-Q
+  (dated 2007-07-25), $0.425 from the Q2 2008 10-Q (accepted 2008-07-23 16:33 ET, dated 2008-07-24: "a 13% dividend increase from
+  $1.50 to $1.70 per share"). The releases state no dividend.
+- **Signals.** Six, with ACN's weights: volume (servings) growth (0.20, the releases' headline unit, "Volume (Servings)" in each
+  summary table), gross margin change (0.20), net revenue growth (0.15, as reported), inventory growth less net revenue growth
+  (0.15, lower is better; the year-ago quarter's inventories from its own release, since a release's balance sheet compares with
+  the prior year-end), the operating-margin change (0.15; the guided step, else the latest quarter) and the theme slot at 2/4.
+  Values are each release's, derived from its income statement and balance sheet (the fact sheet keeps the raw figures and the
+  builder re-derives them). An operating profit on a comparable basis that excludes one-offs only replaces GAAP (Q4 2007:
+  $1,832M vs $1,656M excluding restructuring); a core statement that also excludes the mark-to-market item does not (2008).
+- **Thresholds by rule T** over the ten years of the FY2006 10-K, the vintage public on 2008-01-04: FY1997-FY2006, each change
+  from the latest 10-K published by then that reports both years (income statements for the margins, five-year summaries for net
+  revenue), the inventory gap within each year's own 10-K, seams included. Total servings growth was first stated for 2000 (FY2001
+  10-K), so that signal has seven values (the AVGO rule: the years the filings report). A company figure excluding one-offs
+  replaces the reported one where it was published for both years on the same basis: 1997 and 1998 operating margins on the FY1998
+  10-K's ongoing operating profit (excluding unusual items); 2005 and 2006 net revenue excluding the 53rd week of 2005 ($32,144M);
+  the 2005 gross margin and the 2006 gross and operating margins on the Q4 2006 release's comparable basis. The values are in the
+  fact sheet (`rule_t`); the builder recomputes the thresholds and refuses to build if the engine's differ.
+
+  | Signal | Annual values | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | volume (servings) growth | 2000-2006: 5, 4, 4, 5, 6, 7, 5.5 % | 3 / 4 / 5 / 7 % |
+  | gross margin change | 80.3, -99.2, 149.7, 101.6, 5.9, -6.2, -11.5, 3.3, -23.7, -130.8 bp | -260 / -130 / 0 / 150 bp |
+  | net revenue growth | 2.85, 4.85, -9.84, 0.69, 5.26, 6.81, 7.4, 8.49, 9.85, 9.31 % | -26 / -10 / 6 / 10 % |
+  | inventory less net revenue | -17.0, 32.0, -2.7, 0.3, 4.2, -4.4, -2.2, 0.6, -1.4, 5.9 pp | 65 / 32 / -1 / -17 pp |
+  | operating margin change | 125.0, -126.2, 227.4, 110.5, 0.9, 163.9, 62.3, 24.6, 21.4, 6.8 bp | -300 / -130 / 40 / 230 bp |
+
+- **Durability.** DURABLE, risk 2, as for the other six. The "why" is the 10-K's own words: "We are a leading global snack and
+  beverage company", "Our businesses operate in highly competitive markets", The Coca-Cola Company as "our chief beverage
+  competitor" (the FY2006 10-K: "a slightly larger share of carbonated soft drink (CSD) consumption in the U.S."; the FY2007 10-K:
+  "a similar share of CSD"), and "Our success depends on our ability to respond to consumer trends, such as consumer health
+  concerns about obesity, product attributes and ingredients". No disruption theme in `taxonomy_eras.json` is live for a beverage
+  and convenient-food company in 2008 (GLP1, whose scope names snacks and beverages, from 2023-08-08; ECOMMERCE is scoped to
+  physical retail, OFFSHORE to IT services); no theme covers the obesity risk, so it stays in the "why". The watch list is empty
+  and the builder refuses events until a theme encoding is decided.
+- **Segment bridge and EPS check** (display only): the vintage's four divisions (FLNA, PBNA, PI, QFNA), each with its growth. The
+  2008 reorganization into six segments is recast by the 8-Ks of 2008-03-24 and 2008-04-07, which "do not revise or restate" the
+  consolidated statements: a segment recast adds nothing (the ACN 2024-09-30 rule), so the bridge keeps the FY2007 10-K's four
+  divisions until the next 10-K. The EPS check runs on the pre-tax margin, which carries bottling equity income and net interest.
+- **Adds nothing:** the 8-Ks on officers, directors and compensation, the debt offerings (2007-11-29, 2008-10-24, 2008-05-21), the
+  Lebedyansky agreement (2008-03-20, no guided number), the XBRL test filings furnished after each 10-Q and 10-K, the segment
+  recasts, and the 10-Qs beyond their currency effects and dividends.
+- **Anachronism list:** PepsiCo names first seen after the start of 2008 (Lebedyansky, Productivity for Growth, PureVia, Trop50,
+  Pepsi Refresh, Wimm-Bill-Dann) join `taxonomy_eras.json`, dated from the first PepsiCo filing that uses them. No existing model of
+  any ticker contains them, so no output changes.
+
+Controls: altering one value of each print, vintage, guide and dividend changes no date before its publication and changes the
+first weekly date on or after it (19 of 19; the Q3 2007 release's fiscal 2007 guide is superseded by the 8-K of 2007-11-14 on every
+2008 date and changes nothing). Rebuilding the 2008 dates of ACN, UNP, LOW, AAPL and NKE and the 2009 dates of AVGO changes nothing.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on all 53 dates; tier BUY on 52** and ACCUMULATE on 2008-01-11 (Ratio B 0.77). Robustness agrees on 6-8 of 8 variants.
+- **EPS anchors on the last full year.** FY06's $3.00 stands to 2008-02-07, when nine-month 2007 EPS was already $2.64 ($2.57
+  excluding the tax item): the stock traded at 22.9-25.9x it (the 44th-59th percentile). From the Q4 2007 print FY07's $3.38 is
+  the anchor: 20.3-21.2x to April (the 17th-30th percentile), 15.2-17.1x from 2008-10-10 (the 0th-2nd).
+- **BEAR is the restatement seam.** The worst year in the history is 2001 (-8.9%: 2000's $1.46 before option expensing, 2001's
+  $1.33 after it), so BEAR is -8.9%/yr on every date, at the 10th-percentile P/E: $50 on FY06's EPS, $55 on FY07's.
+- **BULL and XBULL** are the 1998-2006 EPS CAGR (+11.8%/yr; +11.9% over 1998-2007) and the 2001-2003 run (+24.2%/yr), the latter
+  also lifted by the seam.
+- **BASE is the quarter's growth excluding currency less the pooling seam:** +6.7%/yr on Q3 2007 (8% less 1.3%), +16.0% on Q4
+  2007 (the reported 17%, no currency effect stated), +9.0% on Q1 and Q2 2008, +7.0% on Q3 2008. The growth factor reads +0.09,
+  +0.50, +0.26, +0.26 and +0.06 against the history's median revenue growth (7.1%, then 7.4% with FY2007).
+- **The proxy composite** is 2.30 on Q3 2007 (net revenue +11.4% at XBULL, the rest at BASE), 2.50 on Q4 2007 and Q2 2008
+  (servings +5% at BULL), 2.10 on Q1 2008 (gross margin -132bp, below the decade's worst year) and 1.75 on Q3 2008 (servings +2%,
+  gross margin -136bp and operating margin -263bp at BEAR).
+- **From the market's fall the price sits at the BEAR price:** $51-57 from 2008-10-15 against BEAR's $55, so Ratio B is -0.05 to
+  0.03, and the price is 10-20% below the EPP floor (19x FY07's $3.38, $64; 20x FY06's $3.00 before) from 2008-10-10.
+
+How far each call moves the classes (the 53 dates rebuilt with one encoding changed; no outcome consulted):
+- "at least" read as a point (fiscal 2007 core $3.35, fiscal 2008 $3.72) would change no class and 1 tier (2008-01-11, ACCUMULATE
+  to BUY);
+- the Q3 2008 core range used ($3.675 from 2008-10-14) would change nothing;
+- the buyback measured from 1999's pooled 1,817M diluted shares, without the pooling seam, would change nothing;
+- Q4 2007 growth excluding the year's 2 points of currency (15% instead of 17%) would change nothing;
+- 1999 and 2000 at GAAP ($1.38, $1.42) would change nothing;
+- FY1997 kept at the pooled $0.30 would change no class and 1 tier (2008-01-11).
+
+Judgement calls that could carry hindsight:
+- the signals, chosen by a builder who knows what 2008 brought: servings and the inventory gap (rule T then sets the thresholds
+  mechanically);
+- the 2008 core rule (it moves nothing in 2008; it decides FY2008's entry into the history from the Q4 2008 print);
+- reading "at least" as a one-sided bound, and the core range as no field (1 tier);
+- keeping the three seams, which set BEAR (-8.9%/yr) and the buyback (-1.0% to -1.3%/yr);
+- excluding FY1997, and the Q4 2007 print's reported growth for want of a stated currency effect;
+- DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -4464,6 +4628,10 @@ What the gates enforce:
   The FY2024 and FY2025 10-Ks keep the cloud risk (sales "for use in traditional enterprise data centers", then "for use in enterprise
   data centers"), so CLOUD stays through 2026; they name AI as Broadcom's own market, a possibly unsustainable upturn, a source of
   cyber attacks and a reason for new business models, never as a substitute, so GENAI stays off ("AVGO 2024-2026").
+  PEP in 2008 carries none: no theme in the registry is live for a beverage and convenient-food company (GLP1, whose scope names
+  snacks and beverages, from 2023-08-08; ECOMMERCE is scoped to physical retail, OFFSHORE to IT services), so its watch list is
+  empty ("PEP"). Its FY2006 and FY2007 10-Ks name "consumer health concerns about obesity" as a risk, which no theme in the registry
+  covers before GLP1; the wording stays in the durability "why".
 
 ## Workflow
 

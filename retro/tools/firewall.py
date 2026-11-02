@@ -9,10 +9,11 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 AAPL         # the AAPL series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 NKE          # the NKE series in staging/retrospective
     python3 retro/tools/firewall.py 2009-10-01 AVGO         # the AVGO series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 PEP          # the PEP series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
-CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter; PEP: a display-only guide), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -36,7 +37,8 @@ TICKER = sys.argv[2].upper() if len(sys.argv) > 2 else "ACN"
 FACTS = os.path.join(ROOT, "retro", "facts", f"{TICKER}.json")
 CACHE = [os.path.join(ROOT, "retro", ".cache", n) for n in (f"{TICKER}.json", "_GSPC.json")]
 OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP", "LOW": "staging/retrospective/LOW",
-          "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE", "AVGO": "staging/retrospective/AVGO"}[TICKER]
+          "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE", "AVGO": "staging/retrospective/AVGO",
+          "PEP": "staging/retrospective/PEP"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -67,7 +69,13 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       inventory_note="PLANTED", eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", shares_note="PLANTED",
                       diluted_shares_m=1.0, cash_b=99.0, ltd_b=99.0, next_print="PLANTED", cash_return_text="PLANTED",
                       raw=dict(sales_m=1, sales_prior_m=99, sales_prev_q_m=99, cogs_m=1, cogs_prior_m=1, rd_m=99, rd_prior_m=1,
-                               sga_m=99, sga_prior_m=1, op_income_m=-99, op_income_prior_m=99, inventory_m=99, inventory_prior_m=1))}[TICKER]
+                               sga_m=99, sga_prior_m=1, op_income_m=-99, op_income_prior_m=99, inventory_m=99, inventory_prior_m=1)),
+         "PEP": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, lc_pct=-60.0, lc_note="PLANTED",
+                     servings_pct=-60.0, servings_note="PLANTED", gross_margin=1.0, gross_margin_bp=-999.0, op_margin=-50.0,
+                     op_margin_bp=-999.0, inventory_b=99.0, inventory_pct=99.0, inventory_gap_pp=99.0, eps_q=0.01, eps_q_prior=9.99,
+                     eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, next_print="PLANTED", cash_return_text="PLANTED",
+                     raw=dict(sales_m=1, sales_prior_m=99, cogs_m=1, cogs_prior_m=1, op_m=-99, op_prior_m=99, inventory_m=99,
+                              inventory_prior_m=1))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -79,7 +87,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "NKE": dict(words=["PLANTED"]),
                "AVGO": dict(quarter="Q9 FY99", seq_pct=[-50, -40], base_quarter="PLANTED", base_sales_m=1, level_m=[0.5, 0.6],
                             prior_label="PLANTED", prior_sales_m=1, prior_source="V1", yoy_pct=[-50, -40], quote="PLANTED",
-                            display="PLANTED")}.get(TICKER, {})
+                            display="PLANTED"),
+               "PEP": dict(display="PLANTED", unused="PLANTED")}.get(TICKER, {})
 
 git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True, check=True).stdout
 if git("status", "--porcelain", "retro/facts", OUTDIR).strip():

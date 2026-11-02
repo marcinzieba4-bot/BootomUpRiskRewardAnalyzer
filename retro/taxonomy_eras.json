@@ -838,6 +838,39 @@
    {
     "term": "SVB collapse",
     "first_seen": "2023-03-10"
+   },
+   {
+    "term": "Lebedyansky",
+    "first_seen": "2008-03-20",
+    "note": "PepsiCo and PBG agree to buy the Russian juice company (PepsiCo 8-K of that day)"
+   },
+   {
+    "term": "Productivity for Growth",
+    "first_seen": "2008-10-14",
+    "note": "PepsiCo's restructuring program, announced with its Q3 2008 results"
+   },
+   {
+    "term": "PureVia",
+    "first_seen": "2009-02-13",
+    "approx": true,
+    "note": "PepsiCo's stevia-based sweetener; first in a PepsiCo filing in its Q4 2008 release"
+   },
+   {
+    "term": "Trop50",
+    "first_seen": "2009-04-20",
+    "approx": true,
+    "note": "Tropicana's reduced-sugar juice; first in a PepsiCo filing in its Q1 2009 release"
+   },
+   {
+    "term": "Pepsi Refresh",
+    "first_seen": "2010-02-11",
+    "approx": true,
+    "note": "the Pepsi Refresh Project; first in a PepsiCo filing in its Q4 2009 release"
+   },
+   {
+    "term": "Wimm-Bill-Dann",
+    "first_seen": "2010-12-02",
+    "note": "PepsiCo's agreement to acquire the Russian dairy and juice company (PepsiCo 8-K of that day)"
    }
   ]
  }

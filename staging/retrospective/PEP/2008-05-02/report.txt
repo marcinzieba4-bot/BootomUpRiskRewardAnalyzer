@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  PEP  ·  PepsiCo, Inc.  ·  $69.10  ·  RETROSPECTIVE as of 2008-05-02
+  Signal: ◉ BUY   Ratio B: 0.24x   Adj gap: +0.51  [UNDERVALUED]
+  Point-in-time: 20 sources, latest published 2008-05-02; latest print Q1 2008 (Apr 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E revenues, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2008E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Frito-Lay North America   $    12.7  $  12.7  $  14.2      +0.0      +1.5
+    +6.8% revenues in FY07
+  PepsiCo Beverages North   $    11.3  $  11.3  $  12.5      +0.0      +1.2
+    +7.0% revenues in FY07
+  PepsiCo International     $    17.4  $  17.4  $  19.3      +0.0      +1.9
+    +21.9% revenues in FY07
+  Quaker Foods North Ameri  $     2.0  $   2.0  $   2.3      +0.0      +0.3
+    +5.1% revenues in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    43.4  $  43.4  $  48.3      +0.0      +4.9
+  FY2008E = FY07 $39.47B × (1 + 10.0%: Q1 2008 net revenue ex-currency, applied to the year (no FY08 revenue guide in numbers)); split pro rata to FY07 net revenue by division (FY2007 10-K)
+  Q1 2008 (Apr 24): revenues $8.33B +13.4% (+10% ex-currency); servings +4.0%; inventories +20.2%;
+  gross margin 53.99% (-131.6bp); operating margin 18.64% (-66.9bp); EPS $0.70 vs $0.65
+  Volume: servings +4.0% (Volume (Servings) +4%); net revenue +13.4% reported, +10.0% excluding currency (the release's revenue growth of 13% less 'For the Company in total, foreign exchange contributed 3 points to revenue')
+  FY08 outlook (Q1 2008 release, display only): '3% to 5% volume growth, high-single-digit net revenue growth and EPS of at least $3.72' — a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands
+
+  FY2008E EPS check:  $43.4B × 19.6% pre-tax × (1−27.6%) ÷ 1.632B  =  $3.77  (FY2008E: no EPS guide in numbers on a usable basis, FY07's $3.38 stands)
+  FY2010E BEAR check: $43.4B × 19.6% ÷ 1.664B  =  $3.70  (scenario $2.80)
+  FY2010E BULL check: $48.3B × 20.0% ÷ 1.664B  =  $4.20  (scenario $4.23)
+  Every 1pp of pre-tax margin ≈ $0.19 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Volume (servings) growth            +3.0%    ≥4.0%    ≥5.0%    ≥7.0%     +4.0%  ◦ BASE  ██░░
+  Gross margin change               -260.0bp  ≥-130.0bp   ≥0.0bp  ≥150.0bp  -131.6bp  ⚠ BEAR  █░░░
+  Net revenue growth                 -26.0%  ≥-10.0%    ≥6.0%   ≥10.0%    +13.4%  ★ XBULL  ████
+  Inventory growth less net revenue  +65.0pp  ≤32.0pp  ≤-1.0pp  ≤-17.0pp    +6.8pp  ◦ BASE  ██░░
+  Operating margin change           -300.0bp  ≥-130.0bp  ≥40.0bp  ≥230.0bp   -66.9bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.10 / 4.00
+  Market composite:   1.89 / 4.00  (back-solved from $69 + 15% hurdle)
+  SCA adjustment:    +0.30  ·  EPP-distance adj +0.00  →  Adj composite 2.40  →  Gap +0.51  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 net revenue +12.3%, servings +4.0% (the FY2007 10-K); Q1 gross margin 53.99% (-132bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 20.4x FY08E vs a 22.9x 10-yr median (19th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: Q1 2008 net revenue ex-currency +10% vs a 7.4% 9-yr median  (+0.26 × 20%  =  +0.052)
+    +  Cash and short-term investments $2.60B, FY07 free cash flow $4.55B, dividend $1.50 a year, $4,300M of share repurchases and $2,204M of dividends paid in FY07  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Volume (servings) growth             +4.0%     +3.0%   -1.0%  Consumers trade down and buy fewer se…
+  Gross margin change               -131.6bp  -260.0bp  -128.4bp  Commodity costs outrun pricing and pr…
+  Net revenue growth                  +13.4%    -26.0%  -39.4%  Volume and pricing stall together
+  Inventory growth less net revenue    +6.8pp   +65.0pp  +58.2pp  Inventory builds ahead of demand: wri…
+  Operating margin change            -66.9bp  -300.0bp  -233.1bp  Marketing and overhead do not come do…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$68  (model)  /  $55 (defined)
+  Bear probability (proxy model):  16.3%
+
+  KEY TRIGGER: servings went from +5.0% (Q4 2007) to +4.0% (Q1 2008);
+  the bear case needs a volume recession that gross margin (-131.6bp now)
+  and inventories (+6.8pp against revenue) no longer absorb. Commodity inflation shows up in gross margin first; the bear needs
+  servings to fall as pricing rises.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.38  (FY2008E: no EPS guide in numbers on a usable basis, FY07's $3.38 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 1998 22.7x, 1999 24.1x, 2000 20.9x, 2001 29.0x, 2002 20.5x, 2003 18.2x, 2004 19.5x, 2005 19.4x, 2006 18.9x, 2007 18.4x, 2008 19.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $64/share
+  Current $69 vs Updated EPP $64:  +8%  moderate distance to floor
+  Bear $55 vs Updated EPP $64:  -14%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Volume (servings) growth                     4.0       +0.0   BASE floor (vs +4 now)
+  Gross margin change                       -130.0       +1.6   BASE floor (vs -132 now)
+  Net revenue growth                         -10.0      -23.4   BASE floor (vs +13 now)
+  Inventory growth less net revenue            32.0      +25.2   BASE floor (vs +7 now)
+  Operating margin change                   -130.0      -63.1   BASE floor (vs -67 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.38 × (1+7.0%)² = $3.87
+  At 22x P/E (conservative):  $85/share
+  + Cumul. dividends (2yr):  +$3.09/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $85  (▲16 from $69)
+  Conservative total return:  +28% over 2yr  = +14%/yr
+
+  At 20.4x the multiple is already near its 22x median, so the conservative
+  case is a growth question: breakeven at 22x needs FY2010E EPS of $3.00,
+  i.e. -5.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $64.25  –  $79.79  (at 31th pct of range)
+  Annual dividend:      $1.50/share  (yield 2.2%)
+  Realized vol (1yr):   17% annualized
+  Beta vs broad market: 0.49
+  1-sigma range (1yr):  $57  –  $81  ($69 ± 17%)
+  2-sigma range (1yr):  $46  –  $93
+  ────────────────────────────────────────────────────────────
+  Bear $55 requires:  ~1.2σ price move  (within normal vol range)
+  A beverage and convenient-food company with a 0.5 beta: the stock is +7% off its June
+  low while servings went from +5.0% (Q4 2007) to +4.0% (Q1 2008).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.80  19.7x  $     55    16.3%     23.6%    -7.3pp  EPS -8.9%/yr (worst year FY98-FY07, capped at 0%); P/E to its 10th pct
+  BASE        4.02  22.9x  $     92    56.8%     57.0%    -0.3pp  EPS +9.0%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        4.23  30.1x  $    127    22.7%     16.3%    +6.4pp  EPS +11.9%/yr (FY98-FY07 CAGR); P/E holds its 75th pct
+  XBULL       5.21  33.1x  $    172     4.3%      3.1%    +1.2pp  EPS +24.2%/yr (best 2-yr run FY98-FY07); P/E at its 90th pct
+
+  Proxy EV (2yr): $97  /  Market EV: $91  /  Current: $69
+  Conservative EV (2yr, ④): $85 + $3.09 divs = $88 total value
+  Downside (→ Bear $55): 20.4%   Upside (→ Bull $127): 83.8%   Ratio B 0.24x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $69 the market needs $91 in two years —
+  at or below the BASE case. That is a market composite of 1.89 against a model
+  read of 2.40: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.24x      +8%    +0.51  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.14x      +8%    +0.90  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.54x      +8%    +0.02  FAIRLY VALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.20x      +8%    +0.61  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.28x      +8%    +0.41  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.24x      +8%    +0.81  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.24x      -7%    +0.71  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.24x      +8%    +0.74  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2008 print (late July) — the next read on servings (+4.0% now) and the full-year outlook
+  (2) Gross margin — -131.6bp in Q1 2008: pricing against commodity costs, what must hold if volume does not
+  (3) The outlook — Q1 2008 release: '3% to 5% volume growth, high-single-digit net revenue growth and EPS of at least $3.72' (display only)
+  (4) Inventories — +20.2% against net revenue +13.4% in Q1 2008 (+6.8pp): commodity costs and acquisitions sit in them
+  (5) Capital return at 20x — $1,460M of share repurchases in the quarter; it intends to repurchase approximately $4.3 billion in 2008: management's own read of the multiple
+  ◉ BUY  |  EPP floor $64  |  ADD below ~$78  |  TRIM above $127
+════════════════════════════════════════════════════════════════════════
+

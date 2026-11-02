@@ -1,0 +1,913 @@
+{
+ "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); every PepsiCo earnings 8-K of the period was accepted during the session on its release day. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only: every PepsiCo EPS guide of 2007-2008 is a one-sided bound, words or a range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December. Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth the release states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states it). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "PEP",
+ "sources": {
+  "P1": {
+   "published": "2002-03-20",
+   "filed": "2002-03-20 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747602000024/k01b.htm",
+   "supports": "restated for the Quaker Oats pooling of interests: five-year summary 1997-2001 (1997 income per common share from continuing operations $0.30 after the $1.1 billion after-tax loss on a business divestiture, $0.61 a share, and impairment and restructuring charges, $0.14); comparable diluted net income per common share 2001 $1.66, 2000 $1.46, 1999 $1.23 (excluding merger costs, the fifty-third week of 2000, impairment and restructuring charges and Quaker one-time items, the 1999 bottling gain and tax items); 1997-1998 and 1999-2001 net sales; income statements 1999-2001; inventories 2000-2001; total servings growth 2000 and 2001"
+  },
+  "P2": {
+   "published": "2003-03-07",
+   "filed": "2003-03-07 08:20 ET (before the open)",
+   "title": "PepsiCo FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095013003001850/d10k.htm",
+   "supports": "five-year summary 1998-2002 (1998 diluted EPS $1.23 and net revenue $24,605M, after the EITF 01-9 reclassifications); income statements 2000-2002; inventories 2001-2002; total servings growth 2001 and 2002"
+  },
+  "P3": {
+   "published": "2004-03-04",
+   "filed": "2004-03-03 21:48 ET (after the close)",
+   "title": "PepsiCo FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312504034074/d10k.htm",
+   "supports": "stock compensation restatement of 2001-2003 ('Fiscal years 2000 and 1999 have not been restated'); five-year summary 1999-2003 (1999 diluted EPS $1.38, net revenue $22,183M); income statements 2001-2003; inventories 2002-2003; total servings growth 2002 and 2003"
+  },
+  "P4": {
+   "published": "2005-02-28",
+   "filed": "2005-02-28 06:56 ET (before the open)",
+   "title": "PepsiCo FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312505037811/d10k.htm",
+   "supports": "five-year summary 2000-2004 (2000 diluted EPS $1.42, net revenue $22,337M; 'Fiscal year 2000 was not restated'); income statements 2002-2004; inventories 2003-2004; total servings growth 2003 and 2004"
+  },
+  "P5": {
+   "published": "2006-02-27",
+   "filed": "2006-02-27 15:59 ET (during the session)",
+   "title": "PepsiCo FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312506039968/d10k.htm",
+   "supports": "five-year summary 2001-2005 (2001 diluted EPS $1.33, net revenue $23,512M); income statements 2003-2005 (cost of sales after the reclassification of warehouse and freight costs to SG&A); inventories 2004-2005; total servings growth 2004 and 2005"
+  },
+  "P6": {
+   "published": "2007-02-21",
+   "filed": "2007-02-20 16:57 ET (after the close)",
+   "title": "PepsiCo FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312507035201/d10k.htm",
+   "supports": "five-year summary 2002-2006 (diluted EPS, continuing operations from 2004; net revenue); income statement 2004-2006; inventories 2005-2006; division net revenue 2004-2006; total servings growth 2005 and 2006; cash flow (operating activities $6,084M, capital spending $2,068M, sales of PP&E $49M, repurchases $3,000M, dividends $1,854M); quarterly dividends declared ($0.30 in the fourth quarter); fiscal year ends on the last Saturday of each December; business, competition and risk-factor wording"
+  },
+  "P7": {
+   "published": "2001-03-15",
+   "filed": "2001-03-15 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747601500016/k2000.htm",
+   "supports": "before the Quaker pooling: income statements 1998-2000 (1998 weighted average diluted shares 1,519M, the latest filing that reports them); five-year summary 1996-2000; inventories 1999-2000"
+  },
+  "P8": {
+   "published": "1998-03-24",
+   "filed": "1998-03-24 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY1997 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747698000014/0000077476-98-000014.txt",
+   "supports": "income statements 1995-1997; inventories 1996-1997"
+  },
+  "P9": {
+   "published": "1999-03-24",
+   "filed": "1999-03-24 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747699000013/0000077476-99-000013.txt",
+   "supports": "income statements 1996-1998; ongoing operating profit (excluding unusual items) 1996 $2,616M, 1997 $2,952M and 1998 $2,872M; inventories 1997-1998"
+  },
+  "P10": {
+   "published": "2000-03-21",
+   "filed": "2000-03-21 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747600000006/0000077476-00-000006.txt",
+   "supports": "income statements 1997-1999; inventories 1998-1999"
+  },
+  "P11": {
+   "published": "2005-02-03",
+   "filed": "2005-02-03 10:22 ET (during the session)",
+   "title": "PepsiCo Q4 2004 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312505018174/dex991.htm",
+   "supports": "diluted EPS excluding tax benefits and restructuring and impairment charges: 2004 $2.32 (reported $2.44), 2003 $2.05 (reported $2.05)"
+  },
+  "P12": {
+   "published": "2006-02-08",
+   "filed": "2006-02-08 09:41 ET (during the session)",
+   "title": "PepsiCo Q4 2005 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312506023153/dex991.htm",
+   "supports": "diluted EPS excluding the AJCA tax charge, the extra week and restructuring: 2005 $2.66, 2004 $2.32; net revenue excluding the 53rd week $32,144M"
+  },
+  "P13": {
+   "published": "2007-02-08",
+   "filed": "2007-02-08 10:24 ET (during the session)",
+   "title": "PepsiCo Q4 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307001554/y30168exv99w1.htm",
+   "supports": "diluted EPS excluding tax items, restructuring and the extra week: 2006 $3.00, 2005 $2.66; comparable-basis income statement 2006 and 2005 (net revenue $35,137M and $32,144M, cost of sales $15,762M and $13,999M, operating profit $6,506M and $5,930M, income before income taxes $7,035M and $6,383M, taxes $1,970M and $1,847M)"
+  },
+  "P14": {
+   "published": "2006-10-12",
+   "filed": "2006-10-12 09:44 ET (during the session)",
+   "title": "PepsiCo Q3 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012306012498/y25877exv99w1.htm",
+   "supports": "balance sheet inventories $1,962M at 9/9/06"
+  },
+  "P15": {
+   "published": "2007-04-25",
+   "filed": "2007-04-25 10:34 ET (during the session)",
+   "title": "PepsiCo Q1 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307005944/y33897exv99w1.htm",
+   "supports": "balance sheet inventories $2,074M at 3/24/07"
+  },
+  "P16": {
+   "published": "2007-07-24",
+   "filed": "2007-07-24 10:29 ET (during the session)",
+   "title": "PepsiCo Q2 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307010198/y37437exv99w1.htm",
+   "supports": "Q2 2007 volume (servings) +4%; balance sheet inventories $2,510M at 6/16/07"
+  },
+  "P17": {
+   "published": "2007-07-25",
+   "filed": "2007-07-24 17:39 ET (after the close)",
+   "title": "PepsiCo Q2 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312507160846/d10q.htm",
+   "supports": "cash dividends declared per common share $0.375 in the second quarter of 2007"
+  },
+  "P18": {
+   "published": "2007-10-11",
+   "filed": "2007-10-11 09:39 ET (during the session)",
+   "title": "PepsiCo Q3 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307013727/y40769exv99w1.htm",
+   "supports": "Q3 2007 income statement, balance sheet, volume (servings) +4%, EPS $1.06 and $0.99 excluding the tax item; 2007 guidance"
+  },
+  "P19": {
+   "published": "2007-10-12",
+   "filed": "2007-10-11 17:12 ET (after the close)",
+   "title": "PepsiCo Q3 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312507217000/d10q.htm",
+   "supports": "Q3 2007: 'foreign currency contributed nearly 3 percentage points to net revenue growth'"
+  },
+  "P20": {
+   "published": "2007-11-14",
+   "filed": "2007-11-14 11:10 ET (during the session)",
+   "title": "PepsiCo 8-K of 2007-11-14 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307015469/y42689exv99w1.htm",
+   "supports": "2007 reported EPS of at least $3.39 and core EPS of at least $3.35"
+  },
+  "P21": {
+   "published": "2008-02-07",
+   "filed": "2008-02-07 09:54 ET (during the session)",
+   "title": "PepsiCo Q4 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308001224/y48196exv99w1.htm",
+   "supports": "Q4 2007 and 2007 income statements, comparable basis (excluding restructuring and impairment charges and tax items): 2007 EPS $3.38, operating profit $7,272M, income before income taxes $7,733M, tax rate 27.6%; Q4 operating profit $1,832M vs $1,656M; balance sheet; volume (servings) +5% (quarter) and +4% (year); 2008 guidance"
+  },
+  "P22": {
+   "published": "2008-02-15",
+   "filed": "2008-02-15 15:27 ET (during the session)",
+   "title": "PepsiCo FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312508032441/d10k.htm",
+   "supports": "five-year summary 2003-2007; income statement 2005-2007 (2005-2006 operating profit reclassified for certain international bottling interests); inventories 2006-2007; division net revenue 2005-2007; total servings growth 2006 and 2007; cash flow (operating activities $6,934M, capital spending $2,430M, sales of PP&E $47M, repurchases $4,300M, dividends $2,204M); quarterly dividends declared ($0.375 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  "P23": {
+   "published": "2008-02-20",
+   "filed": "2008-02-20 08:36 ET (before the open)",
+   "title": "PepsiCo 8-K of 2008-02-20 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000129993308000892/exhibit1.htm",
+   "supports": "2008 EPS of at least $3.72, unchanged"
+  },
+  "P24": {
+   "published": "2008-04-24",
+   "filed": "2008-04-24 10:12 ET (during the session)",
+   "title": "PepsiCo Q1 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308004554/y48234exv99w1.htm",
+   "supports": "Q1 2008 income statement, balance sheet, volume (servings) +4%, foreign exchange 3 points of revenue growth; 2008 guidance"
+  },
+  "P25": {
+   "published": "2008-06-10",
+   "filed": "2008-06-10 10:46 ET (during the session)",
+   "title": "PepsiCo 8-K of 2008-06-10 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308006723/y60358exv99w1.htm",
+   "supports": "2008 EPS of at least $3.72, unchanged"
+  },
+  "P26": {
+   "published": "2008-06-17",
+   "filed": "2008-06-16 17:51 ET (after the close)",
+   "title": "PepsiCo 8-K of 2008-06-16 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000129993308003023/exhibit1.htm",
+   "supports": "2008 EPS of at least $3.72, unchanged; the Cedar Rapids flood"
+  },
+  "P27": {
+   "published": "2008-07-23",
+   "filed": "2008-07-23 09:43 ET (during the session)",
+   "title": "PepsiCo Q2 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308008194/y63785exv99w1.htm",
+   "supports": "Q2 2008 income statement, balance sheet, volume (servings) +5%, foreign exchange 4 percentage points of revenue growth; 2008 guidance"
+  },
+  "P28": {
+   "published": "2008-07-24",
+   "filed": "2008-07-23 16:33 ET (after the close)",
+   "title": "PepsiCo Q2 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312508156305/d10q.htm",
+   "supports": "cash dividends declared per common share $0.425 in the second quarter of 2008; 'a 13% dividend increase from $1.50 to $1.70 per share'"
+  },
+  "P29": {
+   "published": "2008-10-14",
+   "filed": "2008-10-14 09:50 ET (during the session)",
+   "title": "PepsiCo Q3 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308012720/y71807exv99w1.htm",
+   "supports": "Q3 2008 income statement, balance sheet, volume (servings) +2%, foreign exchange 3 percentage points of revenue growth; 2008 core EPS guidance $3.67-3.68; the Productivity for Growth program"
+  },
+  "P30": {
+   "published": "2008-11-20",
+   "filed": "2008-11-20 11:31 ET (during the session)",
+   "title": "PepsiCo 8-K of 2008-11-20 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308015810/y72752exv99w1.htm",
+   "supports": "reaffirms the 2008 core EPS guidance"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-21",
+   "sources": [
+    "P6",
+    "P5",
+    "P4",
+    "P3",
+    "P2",
+    "P1",
+    "P7",
+    "P8",
+    "P9",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P16"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY06",
+   "why": "PepsiCo: 'We are a leading global snack and beverage company'; 'Our businesses operate in highly competitive markets', 'our chief beverage competitor, The Coca-Cola Company, has a slightly larger share of carbonated soft drink (CSD) consumption in the U.S., while we have a larger share of chilled juices and isotonics', and 'Our success depends on our ability to respond to consumer trends, such as consumer health concerns about obesity, product attributes and ingredients' (its own FY2006 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2004": "2004-12-25",
+    "2005": "2005-12-31",
+    "2006": "2006-12-30"
+   },
+   "eps_gaap": {
+    "1998": 1.23,
+    "1999": 1.38,
+    "2000": 1.42,
+    "2001": 1.33,
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.41,
+    "2005": 2.39,
+    "2006": 3.34
+   },
+   "eps_normalized": {
+    "1998": 1.23,
+    "1999": 1.23,
+    "2000": 1.46,
+    "2001": 1.33,
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.32,
+    "2005": 2.66,
+    "2006": 3.0
+   },
+   "revenue_usd_b": {
+    "1998": 24.605,
+    "1999": 22.183,
+    "2000": 22.337,
+    "2001": 23.512,
+    "2002": 25.112,
+    "2003": 26.971,
+    "2004": 29.261,
+    "2005": 32.562,
+    "2006": 35.137
+   },
+   "diluted_shares_m": {
+    "1998": 1519.0,
+    "2006": 1687.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 18.52,
+   "prev_fy_op_margin_note": "FY06 operating profit $6,506M on the comparable basis, excluding restructuring and impairment charges (GAAP $6,439M) / net revenue $35,137M (Q4 2006 release)",
+   "prev_fy_pretax_margin": 20.02,
+   "prev_fy_pretax_margin_note": "FY06 income before income taxes $7,035M on the comparable basis / $35,137M (Q4 2006 release)",
+   "prev_fy_gross_margin": 55.14,
+   "prev_fy_sales_growth": 7.9,
+   "prev_fy_servings_pct": 5.5,
+   "prev_fy_servings_note": "the FY2006 10-K",
+   "tax_rate": 0.28,
+   "tax_note": "FY06 comparable effective rate: taxes $1,970M / pre-tax income $7,035M (Q4 2006 release)",
+   "fcf_b": 4.065,
+   "fcf_label": "FY06",
+   "prev_q_servings_pct": 4.0,
+   "prev_q_label": "Q2 2007",
+   "prev_q_source": "P16",
+   "dividend_annual": 1.2,
+   "dividend_note": "$0.30 quarterly, declared in each of the second to fourth quarters of 2006 (FY2006 10-K)",
+   "cash_return_text": "$3,000M of share repurchases and $1,854M of dividends paid in FY06",
+   "business_line": "Frito-Lay North America, PepsiCo Beverages North America, PepsiCo International and Quaker Foods North America",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where no discontinued operations), each year from the latest 10-K that reports it; 1998-2000 on the basis before the stock-option restatement of 2001-2003 ('Fiscal years 2000 and 1999 have not been restated', FY2003 10-K) and 1998 also before the EITF 01-9 reclassifications, as published; a company figure excluding one-offs only replaces it: 1999 $1.23 and 2000 $1.46 (comparable, FY2001 10-K: excluding the 1999 bottling gain, the fifty-third week of 2000, impairment and restructuring charges, Quaker one-time items and tax items; GAAP $1.38, $1.42), 2004 $2.32 (excluding tax benefits and restructuring; GAAP $2.41 continuing operations), 2005 $2.66 (excluding the AJCA tax charge, the extra week and restructuring; GAAP $2.39), 2006 $3.00 (excluding tax items and restructuring; GAAP $3.34); 1998 $1.23, 2001 $1.33 and 2002 $1.68 stay GAAP (no figure excluding their items was published on their basis; the comparable $1.66 for 2001 and $1.96 for 2002 are on the basis before the restatement); 2003 $2.05 (the company's figure excluding tax benefits and restructuring is also $2.05); 1997 is excluded: on the pooled basis its $0.30 from continuing operations is under half of the $1.05 without the listed $0.61 divestiture loss and $0.14 of restructuring charges (FY2001 10-K), and no adjusted figure was published on that basis, so the history and the P/E window start with fiscal 1998 (the ACN FY02 and AAPL FY2002 rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     10.844,
+     5.1
+    ],
+    [
+     "PepsiCo Beverages North America",
+     9.565,
+     4.6
+    ],
+    [
+     "PepsiCo International",
+     12.959,
+     13.9
+    ],
+    [
+     "Quaker Foods North America",
+     1.769,
+     3.0
+    ]
+   ],
+   "groups_basis": "FY06 net revenue by division (FY2006 10-K)"
+  },
+  {
+   "published": "2008-02-15",
+   "sources": [
+    "P22",
+    "P6",
+    "P5",
+    "P4",
+    "P3",
+    "P2",
+    "P1",
+    "P7",
+    "P8",
+    "P9",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P21",
+    "P16"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY07",
+   "why": "PepsiCo: 'We are a leading global snack and beverage company'; 'Our businesses operate in highly competitive markets', 'In U.S. measured channels, we have a similar share of CSD (carbonated soft drinks) consumption and a larger share of liquid refreshment beverages consumption, as compared to our chief beverage competitor, The Coca-Cola Company', and 'Our success depends on our ability to respond to consumer trends, such as consumer health concerns about obesity, product attributes and ingredients' (its own FY2007 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-30",
+    "2007": "2007-12-29"
+   },
+   "eps_gaap": {
+    "1998": 1.23,
+    "1999": 1.38,
+    "2000": 1.42,
+    "2001": 1.33,
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.41,
+    "2005": 2.39,
+    "2006": 3.34,
+    "2007": 3.41
+   },
+   "eps_normalized": {
+    "1998": 1.23,
+    "1999": 1.23,
+    "2000": 1.46,
+    "2001": 1.33,
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.32,
+    "2005": 2.66,
+    "2006": 3.0,
+    "2007": 3.38
+   },
+   "revenue_usd_b": {
+    "1998": 24.605,
+    "1999": 22.183,
+    "2000": 22.337,
+    "2001": 23.512,
+    "2002": 25.112,
+    "2003": 26.971,
+    "2004": 29.261,
+    "2005": 32.562,
+    "2006": 35.137,
+    "2007": 39.474
+   },
+   "diluted_shares_m": {
+    "1998": 1519.0,
+    "2007": 1658.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 18.42,
+   "prev_fy_op_margin_note": "FY07 operating profit $7,272M on the comparable basis, excluding restructuring and impairment charges (GAAP $7,170M) / net revenue $39,474M (Q4 2007 release)",
+   "prev_fy_pretax_margin": 19.59,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes $7,733M on the comparable basis / $39,474M (Q4 2007 release)",
+   "prev_fy_gross_margin": 54.3,
+   "prev_fy_sales_growth": 12.3,
+   "prev_fy_servings_pct": 4.0,
+   "prev_fy_servings_note": "the FY2007 10-K",
+   "tax_rate": 0.276,
+   "tax_note": "FY07 comparable effective rate: taxes $2,134M / pre-tax income $7,733M ('27.6%', Q4 2007 release)",
+   "fcf_b": 4.551,
+   "fcf_label": "FY07",
+   "prev_q_servings_pct": 4.0,
+   "prev_q_label": "Q2 2007",
+   "prev_q_source": "P16",
+   "dividend_annual": 1.5,
+   "dividend_note": "$0.375 quarterly, declared in each of the second to fourth quarters of 2007 (FY2007 10-K)",
+   "cash_return_text": "$4,300M of share repurchases and $2,204M of dividends paid in FY07",
+   "business_line": "Frito-Lay North America, PepsiCo Beverages North America, PepsiCo International and Quaker Foods North America",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where no discontinued operations), each year from the latest 10-K that reports it; 1998-2000 on the basis before the stock-option restatement of 2001-2003 ('Fiscal years 2000 and 1999 have not been restated', FY2003 10-K) and 1998 also before the EITF 01-9 reclassifications, as published; a company figure excluding one-offs only replaces it: 1999 $1.23 and 2000 $1.46 (comparable, FY2001 10-K: excluding the 1999 bottling gain, the fifty-third week of 2000, impairment and restructuring charges, Quaker one-time items and tax items; GAAP $1.38, $1.42), 2004 $2.32 (excluding tax benefits and restructuring; GAAP $2.41 continuing operations), 2005 $2.66 (excluding the AJCA tax charge, the extra week and restructuring; GAAP $2.39), 2006 $3.00 (excluding tax items and restructuring; GAAP $3.34); 1998 $1.23, 2001 $1.33 and 2002 $1.68 stay GAAP (no figure excluding their items was published on their basis; the comparable $1.66 for 2001 and $1.96 for 2002 are on the basis before the restatement); 2003 $2.05 (the company's figure excluding tax benefits and restructuring is also $2.05); 1997 is excluded: on the pooled basis its $0.30 from continuing operations is under half of the $1.05 without the listed $0.61 divestiture loss and $0.14 of restructuring charges (FY2001 10-K), and no adjusted figure was published on that basis, so the history and the P/E window start with fiscal 1998 (the ACN FY02 and AAPL FY2002 rule); 2007 $3.38 (excluding restructuring and impairment charges and tax items, the company's figure; GAAP $3.41)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     11.586,
+     6.8
+    ],
+    [
+     "PepsiCo Beverages North America",
+     10.23,
+     7.0
+    ],
+    [
+     "PepsiCo International",
+     15.798,
+     21.9
+    ],
+    [
+     "Quaker Foods North America",
+     1.86,
+     5.1
+    ]
+   ],
+   "groups_basis": "FY07 net revenue by division (FY2007 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-11",
+   "source": "P18",
+   "extra_sources": [
+    "P19",
+    "P14"
+   ],
+   "release": "Oct 11",
+   "release_time": "during the session on Oct 11: 8-K accepted 09:39 ET; conference call at 11 a.m. ET",
+   "period_end": "2007-09-08",
+   "raw": {
+    "sales_m": 10171,
+    "sales_prior_m": 9134,
+    "cogs_m": 4627,
+    "cogs_prior_m": 4108,
+    "op_m": 2062,
+    "op_prior_m": 1856,
+    "inventory_m": 2283,
+    "inventory_prior_m": 1962
+   },
+   "sales_note": "net revenue $10,171M vs $9,134M (12 weeks)",
+   "lc_pct": 8.0,
+   "lc_note": "the release's 'Net revenue increased 11%' less the 10-Q's 'foreign currency contributed nearly 3 percentage points to net revenue growth' (Q3 2007 10-Q)",
+   "servings_pct": 4.0,
+   "servings_note": "Volume (Servings) +4% in the quarter",
+   "gross_margin_note": "cost of sales $4,627M vs $4,108M",
+   "op_margin_note": "operating profit $2,062M vs $1,856M",
+   "inventory_note": "inventories $2,283M at 9/8/07 vs $1,962M at 9/9/06 (the Q3 2006 release's balance sheet)",
+   "eps_q": 0.99,
+   "eps_q_prior": 0.89,
+   "eps_note": "EPS $0.99 excluding the $0.07 tax benefit from the resolution of certain foreign tax matters, the company's figure (GAAP $1.06)",
+   "diluted_shares_m": 1651,
+   "cash_b": 2.238,
+   "cash_note": "cash and equivalents $1,035M + short-term investments $1,203M",
+   "next_print": "Q4 2007 print (early February)",
+   "cash_return_text": "share repurchases in the quarter reduced shares outstanding by 2.2%; $1.6 billion of dividends and $3.1 billion of repurchases to date in 2007",
+   "sales_b": 10.171,
+   "sales_pct": 11.4,
+   "gross_margin": 54.51,
+   "gross_margin_bp": -51.7,
+   "op_margin": 20.27,
+   "op_margin_bp": -4.6,
+   "inventory_b": 2.283,
+   "inventory_pct": 16.4,
+   "inventory_gap_pp": 5.0
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-02-07",
+   "source": "P21",
+   "extra_sources": [],
+   "release": "Feb 7",
+   "release_time": "during the session on Feb 7: 8-K accepted 09:54 ET; conference call at 11 a.m. ET",
+   "period_end": "2007-12-29",
+   "raw": {
+    "sales_m": 12346,
+    "sales_prior_m": 10570,
+    "cogs_m": 5784,
+    "cogs_prior_m": 4830,
+    "op_m": 1832,
+    "op_prior_m": 1656,
+    "inventory_m": 2290,
+    "inventory_prior_m": 1926
+   },
+   "sales_note": "net revenue $12,346M vs $10,570M (16 weeks)",
+   "lc_pct": 17.0,
+   "lc_note": "the release's 'Net revenue increased 17% in the quarter'; no filing states the quarter's currency effect on total net revenue (PepsiCo International: 'over 7 percentage points'), so the reported growth stands",
+   "servings_pct": 5.0,
+   "servings_note": "Volume (Servings) +5% in the quarter",
+   "gross_margin_note": "cost of sales $5,784M vs $4,830M",
+   "op_margin_note": "operating profit $1,832M vs $1,656M on the release's comparable basis, excluding restructuring and impairment charges (GAAP $1,730M vs $1,589M)",
+   "inventory_note": "inventories $2,290M at 12/29/07 vs $1,926M at 12/30/06",
+   "eps_q": 0.8,
+   "eps_q_prior": 0.74,
+   "eps_note": "EPS $0.80 excluding restructuring and impairment charges and tax items, the company's figure (GAAP $0.77 vs $1.09)",
+   "diluted_shares_m": 1645,
+   "cash_b": 2.481,
+   "cash_note": "cash and equivalents $910M + short-term investments $1,571M",
+   "next_print": "Q1 2008 print (late April)",
+   "cash_return_text": "$4.3 billion of share repurchases and $2.2 billion of dividends in 2007; it intends to repurchase approximately $4.3 billion in 2008",
+   "sales_b": 12.346,
+   "sales_pct": 16.8,
+   "gross_margin": 53.15,
+   "gross_margin_bp": -115.4,
+   "op_margin": 14.84,
+   "op_margin_bp": -82.8,
+   "inventory_b": 2.29,
+   "inventory_pct": 18.9,
+   "inventory_gap_pp": 2.1,
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 3.38,
+    "revenue_usd_b": 39.474,
+    "diluted_shares_m": 1658.0,
+    "normalization_note": "FY07 = $3.38 excluding restructuring and impairment charges and tax items, the company's figure (GAAP $3.41)",
+    "op_margin": 18.42,
+    "op_margin_note": "FY07 operating profit $7,272M on the comparable basis (GAAP $7,170M) / net revenue $39,474M (Q4 2007 release)",
+    "pretax_margin": 19.59,
+    "pretax_margin_note": "FY07 income before income taxes $7,733M on the comparable basis / $39,474M (Q4 2007 release)",
+    "gross_margin": 54.3,
+    "sales_growth": 12.3,
+    "servings_pct": 4.0,
+    "tax_rate": 0.276,
+    "tax_note": "FY07 comparable effective rate: taxes $2,134M / pre-tax income $7,733M ('27.6%')"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-24",
+   "source": "P24",
+   "extra_sources": [
+    "P15"
+   ],
+   "release": "Apr 24",
+   "release_time": "during the session on Apr 24: 8-K accepted 10:12 ET; conference call at 11 a.m. ET",
+   "period_end": "2008-03-22",
+   "raw": {
+    "sales_m": 8333,
+    "sales_prior_m": 7350,
+    "cogs_m": 3834,
+    "cogs_prior_m": 3285,
+    "op_m": 1553,
+    "op_prior_m": 1419,
+    "inventory_m": 2492,
+    "inventory_prior_m": 2074
+   },
+   "sales_note": "net revenue $8,333M vs $7,350M (12 weeks)",
+   "lc_pct": 10.0,
+   "lc_note": "the release's revenue growth of 13% less 'For the Company in total, foreign exchange contributed 3 points to revenue'",
+   "servings_pct": 4.0,
+   "servings_note": "Volume (Servings) +4%",
+   "gross_margin_note": "cost of sales $3,834M vs $3,285M",
+   "op_margin_note": "operating profit $1,553M vs $1,419M",
+   "inventory_note": "inventories $2,492M at 3/22/08 vs $2,074M at 3/24/07 (the Q1 2007 release's balance sheet)",
+   "eps_q": 0.7,
+   "eps_q_prior": 0.65,
+   "eps_note": "",
+   "diluted_shares_m": 1632,
+   "cash_b": 2.597,
+   "cash_note": "cash and equivalents $1,604M + short-term investments $993M",
+   "next_print": "Q2 2008 print (late July)",
+   "cash_return_text": "$1,460M of share repurchases in the quarter; it intends to repurchase approximately $4.3 billion in 2008",
+   "sales_b": 8.333,
+   "sales_pct": 13.4,
+   "gross_margin": 53.99,
+   "gross_margin_bp": -131.6,
+   "op_margin": 18.64,
+   "op_margin_bp": -66.9,
+   "inventory_b": 2.492,
+   "inventory_pct": 20.2,
+   "inventory_gap_pp": 6.8
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-23",
+   "source": "P27",
+   "extra_sources": [
+    "P16"
+   ],
+   "release": "Jul 23",
+   "release_time": "during the session on Jul 23: 8-K accepted 09:43 ET; conference call at 11 a.m. ET",
+   "period_end": "2008-06-14",
+   "raw": {
+    "sales_m": 10945,
+    "sales_prior_m": 9607,
+    "cogs_m": 5078,
+    "cogs_prior_m": 4342,
+    "op_m": 2185,
+    "op_prior_m": 1959,
+    "inventory_m": 2935,
+    "inventory_prior_m": 2510
+   },
+   "sales_note": "net revenue $10,945M vs $9,607M (12 weeks)",
+   "lc_pct": 10.0,
+   "lc_note": "the release's revenue growth of 14% less 'For the Company in total, foreign exchange contributed 4 percentage points to revenue growth'",
+   "servings_pct": 5.0,
+   "servings_note": "Volume (Servings) +5% in the quarter",
+   "gross_margin_note": "cost of sales $5,078M vs $4,342M",
+   "op_margin_note": "operating profit $2,185M vs $1,959M",
+   "inventory_note": "inventories $2,935M at 6/14/08 vs $2,510M at 6/16/07 (the Q2 2007 release's balance sheet)",
+   "eps_q": 1.05,
+   "eps_q_prior": 0.94,
+   "eps_note": "GAAP; the release's $1.03 also excludes mark-to-market gains on commodity positions, a recurring item, so it is shown only here",
+   "diluted_shares_m": 1612,
+   "cash_b": 2.073,
+   "cash_note": "cash and equivalents $1,768M + short-term investments $305M",
+   "next_print": "Q3 2008 print (mid-October)",
+   "cash_return_text": "$2.9 billion spent repurchasing shares in 2008 to the end of the quarter; it intends to repurchase at least $5.3 billion in 2008",
+   "sales_b": 10.945,
+   "sales_pct": 13.9,
+   "gross_margin": 53.6,
+   "gross_margin_bp": -119.9,
+   "op_margin": 19.96,
+   "op_margin_bp": -42.8,
+   "inventory_b": 2.935,
+   "inventory_pct": 16.9,
+   "inventory_gap_pp": 3.0
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-14",
+   "source": "P29",
+   "extra_sources": [
+    "P18"
+   ],
+   "release": "Oct 14",
+   "release_time": "during the session on Oct 14: 8-K accepted 09:50 ET; conference call at 11 a.m. ET",
+   "period_end": "2008-09-06",
+   "raw": {
+    "sales_m": 11244,
+    "sales_prior_m": 10171,
+    "cogs_m": 5268,
+    "cogs_prior_m": 4627,
+    "op_m": 1984,
+    "op_prior_m": 2062,
+    "inventory_m": 2804,
+    "inventory_prior_m": 2283
+   },
+   "sales_note": "net revenue $11,244M vs $10,171M (12 weeks)",
+   "lc_pct": 8.0,
+   "lc_note": "the release's net revenue growth of 11% less 'For PepsiCo, foreign exchange added 3 percentage points to revenue growth'",
+   "servings_pct": 2.0,
+   "servings_note": "Volume (Servings) +2% in the quarter",
+   "gross_margin_note": "cost of sales $5,268M vs $4,627M",
+   "op_margin_note": "operating profit $1,984M vs $2,062M",
+   "inventory_note": "inventories $2,804M at 9/6/08 vs $2,283M at 9/8/07 (the Q3 2007 release's balance sheet)",
+   "eps_q": 0.99,
+   "eps_q_prior": 1.06,
+   "eps_note": "GAAP; the release's core $1.06 vs $1.00 also excludes the commodity mark-to-market impact, a recurring item, so it is shown only here",
+   "diluted_shares_m": 1593,
+   "cash_b": 1.859,
+   "cash_note": "cash and equivalents $1,517M + short-term investments $342M",
+   "next_print": "Q4 2008 print (mid-February)",
+   "cash_return_text": "$4.2 billion spent repurchasing shares in 2008 to the end of the quarter; further repurchases 'will depend upon the company's assessment of market conditions'",
+   "sales_b": 11.244,
+   "sales_pct": 10.5,
+   "gross_margin": 53.15,
+   "gross_margin_bp": -136.0,
+   "op_margin": 17.64,
+   "op_margin_bp": -262.8,
+   "inventory_b": 2.804,
+   "inventory_pct": 22.8,
+   "inventory_gap_pp": 12.3
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-10-11",
+   "source": "P18",
+   "doc": "Q3 2007 release",
+   "display": "'Full Year 2007 Reported Earnings Guidance of at least $3.39 per share. Core earnings unchanged, at least $3.35 per share'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-11-14",
+   "source": "P20",
+   "doc": "8-K of 2007-11-14",
+   "display": "'2007 reported earnings per share of at least $3.39 and core earnings per share of at least $3.35'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-02-07",
+   "source": "P21",
+   "doc": "Q4 2007 release",
+   "display": "'3% to 5% volume growth, mid-to-high single digit net revenue growth and EPS of at least $3.72'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-02-20",
+   "source": "P23",
+   "doc": "8-K of 2008-02-20",
+   "display": "'2008 earnings per share of at least $3.72 – unchanged from its previous guidance'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-24",
+   "source": "P24",
+   "doc": "Q1 2008 release",
+   "display": "'3% to 5% volume growth, high-single-digit net revenue growth and EPS of at least $3.72'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-06-10",
+   "source": "P25",
+   "doc": "8-K of 2008-06-10",
+   "display": "'2008 earnings per share of at least $3.72 — unchanged from its previous guidance'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-06-17",
+   "source": "P26",
+   "doc": "8-K of 2008-06-16",
+   "display": "'2008 earnings per share of at least $3.72 — unchanged from its previous guidance'",
+   "unused": "a one-sided bound (the UNP and LOW rule) and words: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-23",
+   "source": "P27",
+   "doc": "Q2 2008 release",
+   "display": "'three to five percent volume growth, low-double-digit net revenue growth (including acquisitions and foreign exchange) and EPS of at least $3.72 excluding the impact of any mark-to-market gains/losses'",
+   "unused": "a one-sided bound (the UNP and LOW rule), words, and the core basis: no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-14",
+   "source": "P29",
+   "doc": "Q3 2008 release",
+   "display": "'full-year core 2008 earnings per share in the range of $3.67 — $3.68 (excluding any commodity mark-to-market impact and Productivity for Growth costs)'; '3 percent to 5 percent volume growth and low-double-digit net revenue growth'",
+   "unused": "a range on the core basis, which also removes the commodity mark-to-market net impact, a recurring item (the 2008 core rule): no field, so the last full year's EPS stands"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-11-20",
+   "source": "P30",
+   "doc": "8-K of 2008-11-20",
+   "display": "'reaffirm its previously announced full-year 2008 core EPS guidance', which 'excludes commodity mark-to-market impact, Productivity for Growth costs and PepsiCo’s share of The Pepsi Bottling Group’s (PBG) restructuring initiative and impairment charge'",
+   "unused": "the core basis, which also removes the commodity mark-to-market net impact, a recurring item (the 2008 core rule): no field, so the last full year's EPS stands"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-07-25",
+   "source": "P17",
+   "quarterly": 0.375,
+   "note": "$0.375 quarterly, declared in the second quarter of 2007 (Q2 2007 10-Q)"
+  },
+  {
+   "published": "2008-07-24",
+   "source": "P28",
+   "quarterly": 0.425,
+   "note": "$0.425 quarterly: 'a 13% dividend increase from $1.50 to $1.70 per share' in the second quarter of 2008 (Q2 2008 10-Q)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'PEP'): the ten annual values FY1997-FY2006 (the decade of the FY2006 10-K, the vintage public on 2008-01-04), each change from the latest 10-K published by then that reports both years (income statements for the margins, the five-year summary for net revenue), the inventory gap within each year's own 10-K; total servings growth from the latest 10-K that states it, first stated for 2000 (FY2001 10-K), so seven values (the AVGO rule: the years the filings report). A company figure excluding one-offs replaces the reported one where the company published it for both years on the same basis: 1997 and 1998 operating margin on ongoing operating profit (FY1998 10-K, excluding unusual items); 2005 and 2006 net revenue excluding the 53rd week of 2005 ($32,144M, Q4 2005 and Q4 2006 releases); 2005 gross margin and 2006 gross and operating margins on the Q4 2006 release's comparable basis. Everything else as reported, seams included (the 1999 bottling deconsolidation, the 2001 Quaker pooling, the EITF 01-9 and 2005 cost reclassifications).",
+  "servings": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2000": 5,
+    "2001": 4,
+    "2002": 4,
+    "2003": 5,
+    "2004": 6,
+    "2005": 7,
+    "2006": 5.5
+   },
+   "sources": "P1 (2000), P2 (2001), P3 (2002), P4 (2003), P5 (2004), P6 (2005, 2006)",
+   "thresholds": {
+    "BEAR": 3,
+    "BASE": 4,
+    "BULL": 5,
+    "XBULL": 7
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 80.3,
+    "1998": -99.2,
+    "1999": 149.7,
+    "2000": 101.6,
+    "2001": 5.9,
+    "2002": -6.2,
+    "2003": -11.5,
+    "2004": 3.3,
+    "2005": -23.7,
+    "2006": -130.8
+   },
+   "sources": "P9 (1997), P10 (1998), P7 (1999), P1 (2000), P2 (2001), P3 (2002), P4 (2003), P5 (2004), P6 and P13 (2005, 2006)",
+   "thresholds": {
+    "BEAR": -260,
+    "BASE": -130,
+    "BULL": 0,
+    "XBULL": 150
+   }
+  },
+  "revenue": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 2.85,
+    "1998": 4.85,
+    "1999": -9.84,
+    "2000": 0.69,
+    "2001": 5.26,
+    "2002": 6.81,
+    "2003": 7.4,
+    "2004": 8.49,
+    "2005": 9.85,
+    "2006": 9.31
+   },
+   "sources": "P7 (1997), P1 (1998), P2 (1999), P3 (2000), P4 (2001), P5 (2002), P6 (2003, 2004), P6, P12 and P13 (2005, 2006)",
+   "thresholds": {
+    "BEAR": -26,
+    "BASE": -10,
+    "BULL": 6,
+    "XBULL": 10
+   }
+  },
+  "inventory_gap": {
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "1997": -17.0,
+    "1998": 32.0,
+    "1999": -2.7,
+    "2000": 0.3,
+    "2001": 4.2,
+    "2002": -4.4,
+    "2003": -2.2,
+    "2004": 0.6,
+    "2005": -1.4,
+    "2006": 5.9
+   },
+   "sources": "each year's own 10-K: P8 (1997), P9 (1998), P10 (1999), P7 (2000), P1 (2001), P2 (2002), P3 (2003), P4 (2004), P5 (2005), P6 (2006)",
+   "thresholds": {
+    "BEAR": 65,
+    "BASE": 32,
+    "BULL": -1,
+    "XBULL": -17
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 125.0,
+    "1998": -126.2,
+    "1999": 227.4,
+    "2000": 110.5,
+    "2001": 0.9,
+    "2002": 163.9,
+    "2003": 62.3,
+    "2004": 24.6,
+    "2005": 21.4,
+    "2006": 6.8
+   },
+   "sources": "P9 (1997, 1998: ongoing), P7 (1999), P1 (2000), P2 (2001), P3 (2002), P4 (2003), P5 (2004), P6 (2005), P13 (2006)",
+   "thresholds": {
+    "BEAR": -300,
+    "BASE": -130,
+    "BULL": 40,
+    "XBULL": 230
+   }
+  }
+ }
+}

@@ -1,0 +1,302 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PEP",
+ "company": "PepsiCo, Inc.",
+ "as_of": "2008-03-28",
+ "price_date": "2008-03-28",
+ "price": 71.56,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); beverage and convenient-food signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "PepsiCo: 'We are a leading global snack and beverage company'; 'Our businesses operate in highly competitive markets', 'In U.S. measured channels, we have a similar share of CSD (carbonated soft drinks) consumption and a larger share of liquid refreshment beverages consumption, as compared to our chief beverage competitor, The Coca-Cola Company', and 'Our success depends on our ability to respond to consumer trends, such as consumer health concerns about obesity, product attributes and ingredients' (its own FY2007 10-K): a competition and consumer-taste risk, not an obsolescence one",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "PepsiCo: 'We are a leading global snack and beverage company'; 'Our businesses operate in highly competitive markets', 'In U.S. measured channels, we have a similar share of CSD (carbonated soft drinks) consumption and a larger share of liquid refreshment beverages consumption, as compared to our chief beverage competitor, The Coca-Cola Company', and 'Our success depends on our ability to respond to consumer trends, such as consumer health concerns about obesity, product attributes and ingredients' (its own FY2007 10-K): a competition and consumer-taste risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.25x; +11% to EPP floor; model-vs-market gap +1.07; conservative 2yr +46%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.25,
+  "ratio_b_fmt": "0.25x",
+  "epp": 64.22,
+  "epp_gap_pct": 11.4,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.5,
+  "sca": 0.307,
+  "adj_composite": 2.808,
+  "market_composite": 1.74,
+  "adj_gap": 1.07,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 45.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.8,
+    "pe": 19.7,
+    "price": 55,
+    "desc": "EPS -8.9%/yr (worst year FY98-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.55,
+    "pe": 23.1,
+    "price": 105,
+    "desc": "EPS +16.0%/yr (Q4 rev ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 4.55,
+    "pe": 30.3,
+    "price": 138,
+    "desc": "EPS +16.0%/yr (FY98-FY07 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.21,
+    "pe": 33.3,
+    "price": 173,
+    "desc": "EPS +24.2%/yr (best 2-yr run FY98-FY07); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.25,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 1.07,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 1.37,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.53,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 0.64,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.21,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 1.13,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.28,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 1.01,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.25,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 1.37,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.25,
+   "epp_gap_pct": -3.8,
+   "adj_gap": 1.27,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.25,
+   "epp_gap_pct": 11.4,
+   "adj_gap": 1.24,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "PEP (retrospective, 2008-03-28) ◉ BUY — Ratio B 0.25x (23.1% downside to Bear $55 / +92.8% upside to Bull $138) | Adj composite 2.81 vs market 1.74: gap +1.07 [UNDERVALUED] | +11% above the EPP floor $64 (19x FY08E $3.38) | Conservative 2-yr case: +45.6% total (+22.8%/yr) | At 21.2x FY08E the 15% hurdle price $95 sits at or below the BASE case; servings +5.0% in Q4 2007, forward revenues +17% (Q4 2007 net revenue ex-currency); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "P22",
+   "published": "2008-02-15",
+   "filed": "2008-02-15 15:27 ET (during the session)",
+   "title": "PepsiCo FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312508032441/d10k.htm",
+   "supports": "five-year summary 2003-2007; income statement 2005-2007 (2005-2006 operating profit reclassified for certain international bottling interests); inventories 2006-2007; division net revenue 2005-2007; total servings growth 2006 and 2007; cash flow (operating activities $6,934M, capital spending $2,430M, sales of PP&E $47M, repurchases $4,300M, dividends $2,204M); quarterly dividends declared ($0.375 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  {
+   "id": "P6",
+   "published": "2007-02-21",
+   "filed": "2007-02-20 16:57 ET (after the close)",
+   "title": "PepsiCo FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312507035201/d10k.htm",
+   "supports": "five-year summary 2002-2006 (diluted EPS, continuing operations from 2004; net revenue); income statement 2004-2006; inventories 2005-2006; division net revenue 2004-2006; total servings growth 2005 and 2006; cash flow (operating activities $6,084M, capital spending $2,068M, sales of PP&E $49M, repurchases $3,000M, dividends $1,854M); quarterly dividends declared ($0.30 in the fourth quarter); fiscal year ends on the last Saturday of each December; business, competition and risk-factor wording"
+  },
+  {
+   "id": "P5",
+   "published": "2006-02-27",
+   "filed": "2006-02-27 15:59 ET (during the session)",
+   "title": "PepsiCo FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312506039968/d10k.htm",
+   "supports": "five-year summary 2001-2005 (2001 diluted EPS $1.33, net revenue $23,512M); income statements 2003-2005 (cost of sales after the reclassification of warehouse and freight costs to SG&A); inventories 2004-2005; total servings growth 2004 and 2005"
+  },
+  {
+   "id": "P4",
+   "published": "2005-02-28",
+   "filed": "2005-02-28 06:56 ET (before the open)",
+   "title": "PepsiCo FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312505037811/d10k.htm",
+   "supports": "five-year summary 2000-2004 (2000 diluted EPS $1.42, net revenue $22,337M; 'Fiscal year 2000 was not restated'); income statements 2002-2004; inventories 2003-2004; total servings growth 2003 and 2004"
+  },
+  {
+   "id": "P3",
+   "published": "2004-03-04",
+   "filed": "2004-03-03 21:48 ET (after the close)",
+   "title": "PepsiCo FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312504034074/d10k.htm",
+   "supports": "stock compensation restatement of 2001-2003 ('Fiscal years 2000 and 1999 have not been restated'); five-year summary 1999-2003 (1999 diluted EPS $1.38, net revenue $22,183M); income statements 2001-2003; inventories 2002-2003; total servings growth 2002 and 2003"
+  },
+  {
+   "id": "P2",
+   "published": "2003-03-07",
+   "filed": "2003-03-07 08:20 ET (before the open)",
+   "title": "PepsiCo FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095013003001850/d10k.htm",
+   "supports": "five-year summary 1998-2002 (1998 diluted EPS $1.23 and net revenue $24,605M, after the EITF 01-9 reclassifications); income statements 2000-2002; inventories 2001-2002; total servings growth 2001 and 2002"
+  },
+  {
+   "id": "P1",
+   "published": "2002-03-20",
+   "filed": "2002-03-20 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747602000024/k01b.htm",
+   "supports": "restated for the Quaker Oats pooling of interests: five-year summary 1997-2001 (1997 income per common share from continuing operations $0.30 after the $1.1 billion after-tax loss on a business divestiture, $0.61 a share, and impairment and restructuring charges, $0.14); comparable diluted net income per common share 2001 $1.66, 2000 $1.46, 1999 $1.23 (excluding merger costs, the fifty-third week of 2000, impairment and restructuring charges and Quaker one-time items, the 1999 bottling gain and tax items); 1997-1998 and 1999-2001 net sales; income statements 1999-2001; inventories 2000-2001; total servings growth 2000 and 2001"
+  },
+  {
+   "id": "P7",
+   "published": "2001-03-15",
+   "filed": "2001-03-15 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747601500016/k2000.htm",
+   "supports": "before the Quaker pooling: income statements 1998-2000 (1998 weighted average diluted shares 1,519M, the latest filing that reports them); five-year summary 1996-2000; inventories 1999-2000"
+  },
+  {
+   "id": "P8",
+   "published": "1998-03-24",
+   "filed": "1998-03-24 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY1997 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747698000014/0000077476-98-000014.txt",
+   "supports": "income statements 1995-1997; inventories 1996-1997"
+  },
+  {
+   "id": "P9",
+   "published": "1999-03-24",
+   "filed": "1999-03-24 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747699000013/0000077476-99-000013.txt",
+   "supports": "income statements 1996-1998; ongoing operating profit (excluding unusual items) 1996 $2,616M, 1997 $2,952M and 1998 $2,872M; inventories 1997-1998"
+  },
+  {
+   "id": "P10",
+   "published": "2000-03-21",
+   "filed": "2000-03-21 (EDGAR gives the filing date only)",
+   "title": "PepsiCo FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747600000006/0000077476-00-000006.txt",
+   "supports": "income statements 1997-1999; inventories 1998-1999"
+  },
+  {
+   "id": "P11",
+   "published": "2005-02-03",
+   "filed": "2005-02-03 10:22 ET (during the session)",
+   "title": "PepsiCo Q4 2004 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312505018174/dex991.htm",
+   "supports": "diluted EPS excluding tax benefits and restructuring and impairment charges: 2004 $2.32 (reported $2.44), 2003 $2.05 (reported $2.05)"
+  },
+  {
+   "id": "P12",
+   "published": "2006-02-08",
+   "filed": "2006-02-08 09:41 ET (during the session)",
+   "title": "PepsiCo Q4 2005 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312506023153/dex991.htm",
+   "supports": "diluted EPS excluding the AJCA tax charge, the extra week and restructuring: 2005 $2.66, 2004 $2.32; net revenue excluding the 53rd week $32,144M"
+  },
+  {
+   "id": "P13",
+   "published": "2007-02-08",
+   "filed": "2007-02-08 10:24 ET (during the session)",
+   "title": "PepsiCo Q4 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307001554/y30168exv99w1.htm",
+   "supports": "diluted EPS excluding tax items, restructuring and the extra week: 2006 $3.00, 2005 $2.66; comparable-basis income statement 2006 and 2005 (net revenue $35,137M and $32,144M, cost of sales $15,762M and $13,999M, operating profit $6,506M and $5,930M, income before income taxes $7,035M and $6,383M, taxes $1,970M and $1,847M)"
+  },
+  {
+   "id": "P21",
+   "published": "2008-02-07",
+   "filed": "2008-02-07 09:54 ET (during the session)",
+   "title": "PepsiCo Q4 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012308001224/y48196exv99w1.htm",
+   "supports": "Q4 2007 and 2007 income statements, comparable basis (excluding restructuring and impairment charges and tax items): 2007 EPS $3.38, operating profit $7,272M, income before income taxes $7,733M, tax rate 27.6%; Q4 operating profit $1,832M vs $1,656M; balance sheet; volume (servings) +5% (quarter) and +4% (year); 2008 guidance"
+  },
+  {
+   "id": "P16",
+   "published": "2007-07-24",
+   "filed": "2007-07-24 10:29 ET (during the session)",
+   "title": "PepsiCo Q2 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012307010198/y37437exv99w1.htm",
+   "supports": "Q2 2007 volume (servings) +4%; balance sheet inventories $2,510M at 6/16/07"
+  },
+  {
+   "id": "P23",
+   "published": "2008-02-20",
+   "filed": "2008-02-20 08:36 ET (before the open)",
+   "title": "PepsiCo 8-K of 2008-02-20 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000129993308000892/exhibit1.htm",
+   "supports": "2008 EPS of at least $3.72, unchanged"
+  },
+  {
+   "id": "A0",
+   "published": "2008-03-28",
+   "title": "Yahoo Finance daily prices, PEP and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PEP/history",
+   "supports": "close $71.56 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-02"
+}
