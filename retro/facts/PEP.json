@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); every PepsiCo earnings 8-K of the period was accepted during the session on its release day. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only: every PepsiCo EPS guide of 2007-2008 is a one-sided bound, words or a range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December. Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth the release states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states it). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted during the session on their release days, and from 2009 most came before the open (each print's release_time says which). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only, except a fiscal-year net revenue guide in constant currency in numbers, 'rev_guide': every PepsiCo EPS guide of 2007-2013 is a one-sided bound, words, or a figure or range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December (53 weeks in 2011). Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth excluding currency that the release states, else the reported growth it states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states one); acquisitions, divestitures and the extra week stay in, as published. A print whose release states no total servings takes them from the first later filing that does ('servings_later'), on that filing's own date. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "PEP",
  "sources": {
   "P1": {
@@ -330,6 +330,230 @@
    "title": "PepsiCo Q3 2010 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012310091921/y86966exv99w1.htm",
    "supports": "Q3 2010 income statement and balance sheet; volume (servings) +8%; core constant currency net revenue +41%; EPS $1.19; 2010 guidance"
+  },
+  "P48": {
+   "published": "2011-02-10",
+   "filed": "2011-02-10 07:48 ET (before the open)",
+   "title": "PepsiCo Q4 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311011411/y89588exv99w1.htm",
+   "supports": "Q4 2010 and 2010 income statements and balance sheet; volume (servings) +9% (quarter) and +7% (year); core constant currency net revenue +37% (quarter, with PBG and PAS); EPS $0.85 and $3.91 (core $1.05 and $4.13, also excluding the commodity mark-to-market net impact); 2011 guidance"
+  },
+  "P49": {
+   "published": "2011-02-22",
+   "filed": "2011-02-18 16:57 ET (after the close)",
+   "title": "PepsiCo FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312511040427/d10k.htm",
+   "supports": "five-year summary 2006-2010; income statement 2008-2010; inventories 2009-2010; net revenue by segment 2008-2010; total servings +7% in 2010; cash flow (operating activities $8,448M, capital spending $3,253M, sales of PP&E $81M, repurchases $4,978M, dividends $2,978M); quarterly dividends declared ($0.48 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  "P50": {
+   "published": "2011-02-24",
+   "filed": "2011-02-24 08:44 ET (before the open)",
+   "title": "PepsiCo 8-K of 2011-02-24 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311017533/y89882e8vk.htm",
+   "supports": "2011 guidance reiterated at the CAGNY conference; organic net revenue growth in words"
+  },
+  "P51": {
+   "published": "2011-03-30",
+   "filed": "2011-03-30 09:18 ET (before the open)",
+   "title": "PepsiCo 8-K of 2011-03-30 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311030498/y90550e8vk.htm",
+   "supports": "2011 guidance reiterated at the CAGE conference; organic net revenue growth in words"
+  },
+  "P52": {
+   "published": "2011-04-28",
+   "filed": "2011-04-28 07:41 ET (before the open)",
+   "title": "PepsiCo Q1 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311040514/y90977exv99w1.htm",
+   "supports": "Q1 2011 income statement and balance sheet; volume (servings) +9%; core constant currency net revenue +26% (with the bottlers and WBD); EPS $0.71 (core $0.74); 2011 guidance affirmed"
+  },
+  "P53": {
+   "published": "2011-05-10",
+   "filed": "2011-05-09 17:21 ET (after the close)",
+   "title": "PepsiCo 8-K of 2011-05-09 (Item 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311047532/y91180e8vk.htm",
+   "supports": "'declared a seven percent increase in the company’s annual dividend, from the current annual rate of $1.92 to $2.06 per share' ($0.515 a quarter)"
+  },
+  "P54": {
+   "published": "2011-07-21",
+   "filed": "2011-07-21 07:44 ET (before the open)",
+   "title": "PepsiCo Q2 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311067009/y92009exv99w1.htm",
+   "supports": "Q2 2011 income statement and balance sheet; volume (servings) +6%; core constant currency net revenue +11%; EPS $1.17 (core $1.21); 2011 guidance changed to high-single-digit core EPS growth"
+  },
+  "P55": {
+   "published": "2011-09-21",
+   "filed": "2011-09-21 06:01 ET (before the open)",
+   "title": "PepsiCo 8-K of 2011-09-21 (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311085606/y92770exv99w1.htm",
+   "supports": "2011 guidance reaffirmed"
+  },
+  "P56": {
+   "published": "2011-10-12",
+   "filed": "2011-10-12 08:01 ET (before the open)",
+   "title": "PepsiCo Q3 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095012311089568/y92994exv99w1.htm",
+   "supports": "Q3 2011 income statement and balance sheet; volume (servings) +4.5%; core constant currency net revenue +10%; EPS $1.25 (core $1.31); 2011 guidance reaffirmed"
+  },
+  "P57": {
+   "published": "2012-02-09",
+   "filed": "2012-02-09 07:42 ET (before the open)",
+   "title": "PepsiCo Q4 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512047883/d296323dex991.htm",
+   "supports": "Q4 2011 (17 weeks) and 2011 (53 weeks) income statements and balance sheet; volume (servings) +7% reported, +4% excluding the extra week (quarter); core constant currency net revenue +9% (quarter, excluding the extra week); EPS $0.89 and $4.03 (core $1.15 and $4.40, also excluding the commodity mark-to-market net impact and the extra week)"
+  },
+  "P58": {
+   "published": "2012-02-09",
+   "filed": "2012-02-09 07:42 ET (before the open)",
+   "title": "PepsiCo 2012 outlook (8-K of 2012-02-09, ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512047883/d296323dex992.htm",
+   "supports": "2012 guidance: mid-single-digit core constant currency net revenue growth and a core constant currency EPS decline of about 5 percent; a 4 percent dividend increase announced for the June 2012 payment"
+  },
+  "P59": {
+   "published": "2012-02-23",
+   "filed": "2012-02-23 08:46 ET (before the open)",
+   "title": "PepsiCo 8-K of 2012-02-23 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512074106/d304490d8k.htm",
+   "supports": "2012 guidance reiterated at the CAGNY conference"
+  },
+  "P60": {
+   "published": "2012-02-28",
+   "filed": "2012-02-27 16:50 ET (after the close)",
+   "title": "PepsiCo FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512081822/d269581d10k.htm",
+   "supports": "five-year summary 2007-2011; income statement 2009-2011 (2011: 53 weeks); inventories 2010-2011; net revenue by segment 2009-2011; total servings +6% in 2011 (+5% excluding the extra week); cash flow (operating activities $8,944M, capital spending $3,339M, sales of PP&E $84M, repurchases $2,489M, dividends $3,157M); quarterly dividends declared ($0.515 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  "P61": {
+   "published": "2012-04-26",
+   "filed": "2012-04-26 07:55 ET (before the open)",
+   "title": "PepsiCo Q1 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512183942/d339358dex991.htm",
+   "supports": "Q1 2012 income statement and balance sheet; volume (servings) +2%; core constant currency net revenue +5%; EPS $0.71 (core $0.69); 2012 guidance"
+  },
+  "P62": {
+   "published": "2012-05-07",
+   "filed": "2012-05-04 17:07 ET (after the close)",
+   "title": "PepsiCo 8-K of 2012-05-04 (Item 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512212273/d347165d8k.htm",
+   "supports": "'the Board of Directors of PepsiCo declared a quarterly dividend of $0.5375 payable June 29, 2012'"
+  },
+  "P63": {
+   "published": "2012-05-10",
+   "filed": "2012-05-10 07:39 ET (before the open)",
+   "title": "PepsiCo 8-K of 2012-05-10 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512223683/d349959d8k.htm",
+   "supports": "2012 guidance reiterated"
+  },
+  "P64": {
+   "published": "2012-06-20",
+   "filed": "2012-06-19 16:46 ET (after the close)",
+   "title": "PepsiCo 8-K of 2012-06-19 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512275448/d365941d8k.htm",
+   "supports": "2012 guidance reiterated"
+  },
+  "P65": {
+   "published": "2012-07-25",
+   "filed": "2012-07-25 07:47 ET (before the open)",
+   "title": "PepsiCo Q2 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512313401/d383194dex991.htm",
+   "supports": "Q2 2012 income statement and balance sheet; volume (servings) +2%; core constant currency net revenue +1% (organic +5%); EPS $0.94 (core $1.12); 2012 guidance reaffirmed"
+  },
+  "P66": {
+   "published": "2012-09-05",
+   "filed": "2012-09-04 16:19 ET (after the close)",
+   "title": "PepsiCo 8-K of 2012-09-04 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512379164/d404542d8k.htm",
+   "supports": "2012 guidance reaffirmed"
+  },
+  "P67": {
+   "published": "2012-10-17",
+   "filed": "2012-10-17 07:45 ET (before the open)",
+   "title": "PepsiCo Q3 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312512425311/d424556dex991.htm",
+   "supports": "Q3 2012 income statement and balance sheet; snack and beverage volume only (no total servings); core constant currency net revenue printed '—' (organic +5%); EPS $1.21 (core $1.20); 2012 guidance reaffirmed"
+  },
+  "P68": {
+   "published": "2012-10-18",
+   "filed": "2012-10-17 17:09 ET (after the close)",
+   "title": "PepsiCo Q3 2012 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000144530512003144/pepsicoq3-10xq982012.htm",
+   "supports": "'In the 12 weeks and 36 weeks ended September 8, 2012, total servings increased 4% and 3%, respectively.'"
+  },
+  "P69": {
+   "published": "2013-02-14",
+   "filed": "2013-02-14 07:55 ET (before the open)",
+   "title": "PepsiCo Q4 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513057536/d483403dex991.htm",
+   "supports": "Q4 2012 (16 weeks, against 17) and 2012 income statements and balance sheet; no total servings; reported net revenue -1%, foreign exchange 0.5 points (organic +5%); EPS $1.06 and $3.92 (core $1.09 and $4.10); 2013 guidance; a 5.6 percent dividend increase announced for the June 2013 payment"
+  },
+  "P70": {
+   "published": "2013-02-22",
+   "filed": "2013-02-21 16:46 ET (after the close)",
+   "title": "PepsiCo FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000144530513000278/pepsico201210-k.htm",
+   "supports": "five-year summary 2008-2012; income statement 2010-2012; inventories 2011-2012; net revenue by segment 2010-2012; total servings +3% in 2012; cash flow (operating activities $8,479M, capital spending $2,714M, sales of PP&E $95M, repurchases $3,219M, dividends $3,305M); quarterly dividends declared ($0.5375 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  "P71": {
+   "published": "2013-04-18",
+   "filed": "2013-04-18 07:47 ET (before the open)",
+   "title": "PepsiCo Q1 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513159932/d521990dex991.htm",
+   "supports": "Q1 2013 income statement and balance sheet; no total servings; reported net revenue +1%, foreign exchange 0.5 points (organic +4%); EPS $0.69 (core $0.77); 2013 guidance reaffirmed"
+  },
+  "P72": {
+   "published": "2013-04-22",
+   "filed": "2013-04-19 16:17 ET (after the close)",
+   "title": "PepsiCo Q1 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747613000008/pepsicoq1-10xq3232013.htm",
+   "supports": "'In the 12 weeks ended March 23, 2013, total servings increased 3%.'"
+  },
+  "P73": {
+   "published": "2013-05-07",
+   "filed": "2013-05-06 16:45 ET (after the close)",
+   "title": "PepsiCo 8-K of 2013-05-06 (Item 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513201759/d532345d8k.htm",
+   "supports": "'the Board of Directors of PepsiCo declared a quarterly dividend of $0.5675 per share payable on June 28, 2013'"
+  },
+  "P74": {
+   "published": "2013-05-29",
+   "filed": "2013-05-29 07:01 ET (before the open)",
+   "title": "PepsiCo 8-K of 2013-05-29 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513238362/d544787d8k.htm",
+   "supports": "2013 guidance reiterated"
+  },
+  "P75": {
+   "published": "2013-07-24",
+   "filed": "2013-07-24 07:36 ET (before the open)",
+   "title": "PepsiCo Q2 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513299684/d571979dex991.htm",
+   "supports": "Q2 2013 income statement and balance sheet; no total servings; reported net revenue +2%, foreign exchange 1.5 points (organic +4%); EPS $1.28 (core $1.31); 2013 guidance reaffirmed"
+  },
+  "P76": {
+   "published": "2013-07-24",
+   "filed": "2013-07-24 10:52 ET (during the session)",
+   "title": "PepsiCo 8-K of 2013-07-24, 10:52 ET (ex.99.1, prepared remarks)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000129993313001335/exhibit1.htm",
+   "supports": "'Our overall servings increased 4 percent, with snacks volume growth of 3 percent.'; 2013 guidance reiterated"
+  },
+  "P77": {
+   "published": "2013-09-04",
+   "filed": "2013-09-04 06:10 ET (before the open)",
+   "title": "PepsiCo 8-K of 2013-09-04 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513356119/d591527d8k.htm",
+   "supports": "2013 guidance reiterated"
+  },
+  "P78": {
+   "published": "2013-10-16",
+   "filed": "2013-10-16 07:37 ET (before the open)",
+   "title": "PepsiCo Q3 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312513400530/d610609dex991.htm",
+   "supports": "Q3 2013 income statement and balance sheet; no total servings; reported net revenue +1.5%, foreign exchange 1 point (organic +3%); EPS $1.23 (core $1.24); 2013 guidance reaffirmed"
+  },
+  "P79": {
+   "published": "2013-10-17",
+   "filed": "2013-10-16 16:24 ET (after the close)",
+   "title": "PepsiCo Q3 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747613000027/pepsicoq3-10xq972013.htm",
+   "supports": "'For the 12 and 36 weeks ended September 7, 2013, total servings increased 1% and 3%, respectively.'"
   }
  },
  "history_vintages": [
@@ -907,6 +1131,357 @@
     ]
    ],
    "groups_basis": "FY09 net revenue by segment (FY2009 10-K)"
+  },
+  {
+   "published": "2011-02-22",
+   "sources": [
+    "P49",
+    "P41",
+    "P33",
+    "P22",
+    "P6",
+    "P5",
+    "P4",
+    "P3",
+    "P11",
+    "P12",
+    "P13",
+    "P21"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY10",
+   "why": "PepsiCo: 'We are a leading global food, snack and beverage company'; 'Our businesses operate in highly competitive markets', 'In U.S. measured channels, our chief beverage competitor, The Coca-Cola Company, has a larger share of CSD (carbonated soft drinks) consumption' (a page break) 'while we have a larger share of liquid refreshment beverages consumption', and 'In addition, The Coca-Cola Company has a significant CSD share advantage in many markets outside the United States' (its own FY2010 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2008": "2008-12-27",
+    "2009": "2009-12-26",
+    "2010": "2010-12-25"
+   },
+   "eps_gaap": {
+    "2001": 1.33,
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.41,
+    "2005": 2.39,
+    "2006": 3.34,
+    "2007": 3.41,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91
+   },
+   "eps_normalized": {
+    "2001": 1.33,
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.32,
+    "2005": 2.66,
+    "2006": 3.0,
+    "2007": 3.38,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91
+   },
+   "revenue_usd_b": {
+    "2001": 23.512,
+    "2002": 25.112,
+    "2003": 26.971,
+    "2004": 29.261,
+    "2005": 32.562,
+    "2006": 35.137,
+    "2007": 39.474,
+    "2008": 43.251,
+    "2009": 43.232,
+    "2010": 57.838
+   },
+   "diluted_shares_m": {
+    "2001": 1805.0,
+    "2010": 1614.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.41,
+   "prev_fy_op_margin_note": "FY10 operating profit $8,332M / net revenue $57,838M (FY2010 10-K; GAAP: the core figure also excludes the mark-to-market net impact)",
+   "prev_fy_pretax_margin": 14.23,
+   "prev_fy_pretax_margin_note": "FY10 income before income taxes $8,232M / $57,838M (FY2010 10-K)",
+   "prev_fy_gross_margin": 54.05,
+   "prev_fy_sales_growth": 33.8,
+   "prev_fy_servings_pct": 7.0,
+   "prev_fy_servings_note": "the FY2010 10-K",
+   "tax_rate": 0.23,
+   "tax_note": "FY10 effective rate: taxes $1,894M / pre-tax income $8,232M (FY2010 10-K)",
+   "fcf_b": 5.276,
+   "fcf_label": "FY10",
+   "dividend_annual": 1.92,
+   "dividend_note": "$0.48 quarterly, declared in each of the second to fourth quarters of 2010 (FY2010 10-K)",
+   "cash_return_text": "$4,978M of share repurchases and $2,978M of dividends paid in FY10",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, Latin America Foods, PepsiCo Americas Beverages, Europe and Asia, Middle East & Africa",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it: 2004 $2.32 (GAAP $2.41 continuing operations), 2005 $2.66 (GAAP $2.39), 2006 $3.00 (GAAP $3.34), 2007 $3.38 (GAAP $3.41); 2001 $1.33, 2002 $1.68 and 2003 $2.05 GAAP; 2008 $3.21 GAAP: the company's core $3.68 also excludes the commodity mark-to-market net impact, a recurring item (the 2008 core rule), and no figure excluding only the Productivity for Growth charges and PepsiCo's share of PBG's charges was published; 2009 $3.77 GAAP: the company's core $3.71 also excludes the commodity mark-to-market net impact (the 2008 core rule); 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     13.397,
+     1.3
+    ],
+    [
+     "Quaker Foods North America",
+     1.832,
+     -2.8
+    ],
+    [
+     "Latin America Foods",
+     6.315,
+     10.7
+    ],
+    [
+     "PepsiCo Americas Beverages",
+     20.401,
+     101.7
+    ],
+    [
+     "Europe",
+     9.254,
+     37.6
+    ],
+    [
+     "Asia, Middle East & Africa",
+     6.639,
+     19.0
+    ]
+   ],
+   "groups_basis": "FY10 net revenue by segment (FY2010 10-K)"
+  },
+  {
+   "published": "2012-02-28",
+   "sources": [
+    "P60",
+    "P49",
+    "P41",
+    "P33",
+    "P22",
+    "P6",
+    "P5",
+    "P4",
+    "P11",
+    "P12",
+    "P13",
+    "P21"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY11",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with hundreds of brands that are respected household names throughout the world'; 'Our businesses operate in highly competitive markets', 'In U.S. measured channels, our chief beverage competitor, The Coca-Cola Company, has a larger share of carbonated soft drinks (CSD) consumption, while we have a larger share of liquid refreshment beverages consumption', and 'In addition, The Coca-Cola Company has a significant CSD share advantage in many markets outside the United States' (its own FY2011 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2009": "2009-12-26",
+    "2010": "2010-12-25",
+    "2011": "2011-12-31"
+   },
+   "eps_gaap": {
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.41,
+    "2005": 2.39,
+    "2006": 3.34,
+    "2007": 3.41,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03
+   },
+   "eps_normalized": {
+    "2002": 1.68,
+    "2003": 2.05,
+    "2004": 2.32,
+    "2005": 2.66,
+    "2006": 3.0,
+    "2007": 3.38,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03
+   },
+   "revenue_usd_b": {
+    "2002": 25.112,
+    "2003": 26.971,
+    "2004": 29.261,
+    "2005": 32.562,
+    "2006": 35.137,
+    "2007": 39.474,
+    "2008": 43.251,
+    "2009": 43.232,
+    "2010": 57.838,
+    "2011": 66.504
+   },
+   "diluted_shares_m": {
+    "2002": 1782.0,
+    "2011": 1597.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.48,
+   "prev_fy_op_margin_note": "FY11 operating profit $9,633M / net revenue $66,504M (FY2011 10-K, 53 weeks; GAAP: the core figure also excludes the mark-to-market net impact)",
+   "prev_fy_pretax_margin": 13.28,
+   "prev_fy_pretax_margin_note": "FY11 income before income taxes $8,834M / $66,504M (FY2011 10-K)",
+   "prev_fy_gross_margin": 52.49,
+   "prev_fy_sales_growth": 15.0,
+   "prev_fy_servings_pct": 6.0,
+   "prev_fy_servings_note": "the FY2011 10-K; 5% excluding the extra week",
+   "tax_rate": 0.269,
+   "tax_note": "FY11 effective rate: taxes $2,372M / pre-tax income $8,834M (FY2011 10-K)",
+   "fcf_b": 5.689,
+   "fcf_label": "FY11",
+   "dividend_annual": 2.06,
+   "dividend_note": "$0.515 quarterly, declared in each of the second to fourth quarters of 2011 (FY2011 10-K)",
+   "cash_return_text": "$2,489M of share repurchases and $3,157M of dividends paid in FY11",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, Latin America Foods, PepsiCo Americas Beverages, Europe and Asia, Middle East & Africa",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it: 2004 $2.32 (GAAP $2.41 continuing operations), 2005 $2.66 (GAAP $2.39), 2006 $3.00 (GAAP $3.34), 2007 $3.38 (GAAP $3.41); 2002 $1.68 and 2003 $2.05 GAAP; 2008 $3.21 GAAP: the company's core $3.68 also excludes the commodity mark-to-market net impact, a recurring item (the 2008 core rule), and no figure excluding only the Productivity for Growth charges and PepsiCo's share of PBG's charges was published; 2009 $3.77 GAAP: the company's core $3.71 also excludes the commodity mark-to-market net impact (the 2008 core rule); 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     13.322,
+     6.0
+    ],
+    [
+     "Quaker Foods North America",
+     2.656,
+     0.0
+    ],
+    [
+     "Latin America Foods",
+     7.156,
+     13.3
+    ],
+    [
+     "PepsiCo Americas Beverages",
+     22.418,
+     9.9
+    ],
+    [
+     "Europe",
+     13.56,
+     41.2
+    ],
+    [
+     "Asia, Middle East & Africa",
+     7.392,
+     17.5
+    ]
+   ],
+   "groups_basis": "FY11 net revenue by segment (FY2011 10-K; FY10 recast for the 2011 realignment)"
+  },
+  {
+   "published": "2013-02-22",
+   "sources": [
+    "P70",
+    "P60",
+    "P49",
+    "P41",
+    "P33",
+    "P22",
+    "P6",
+    "P5",
+    "P11",
+    "P12",
+    "P13",
+    "P21"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY12",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with brands that are respected household names throughout the world'; 'Our businesses operate in highly competitive markets', 'In many countries in which we do business, The Coca-Cola Company is our primary beverage competitor', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2012 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2010": "2010-12-25",
+    "2011": "2011-12-31",
+    "2012": "2012-12-29"
+   },
+   "eps_gaap": {
+    "2003": 2.05,
+    "2004": 2.41,
+    "2005": 2.39,
+    "2006": 3.34,
+    "2007": 3.41,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92
+   },
+   "eps_normalized": {
+    "2003": 2.05,
+    "2004": 2.32,
+    "2005": 2.66,
+    "2006": 3.0,
+    "2007": 3.38,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92
+   },
+   "revenue_usd_b": {
+    "2003": 26.971,
+    "2004": 29.261,
+    "2005": 32.562,
+    "2006": 35.137,
+    "2007": 39.474,
+    "2008": 43.251,
+    "2009": 43.232,
+    "2010": 57.838,
+    "2011": 66.504,
+    "2012": 65.492
+   },
+   "diluted_shares_m": {
+    "2003": 1739.0,
+    "2012": 1575.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 13.91,
+   "prev_fy_op_margin_note": "FY12 operating profit $9,112M / net revenue $65,492M (FY2012 10-K; GAAP: the core figure also excludes the mark-to-market net impact)",
+   "prev_fy_pretax_margin": 12.68,
+   "prev_fy_pretax_margin_note": "FY12 income before income taxes $8,304M / $65,492M (FY2012 10-K)",
+   "prev_fy_gross_margin": 52.22,
+   "prev_fy_sales_growth": -1.5,
+   "prev_fy_servings_pct": 3.0,
+   "prev_fy_servings_note": "the FY2012 10-K; also 3% excluding the prior year's extra week",
+   "tax_rate": 0.252,
+   "tax_note": "FY12 effective rate: taxes $2,090M / pre-tax income $8,304M (FY2012 10-K)",
+   "fcf_b": 5.86,
+   "fcf_label": "FY12",
+   "dividend_annual": 2.15,
+   "dividend_note": "$0.5375 quarterly, declared in each of the second to fourth quarters of 2012 (FY2012 10-K)",
+   "cash_return_text": "$3,219M of share repurchases and $3,305M of dividends paid in FY12",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, Latin America Foods, PepsiCo Americas Beverages, Europe and Asia, Middle East & Africa",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it: 2004 $2.32 (GAAP $2.41 continuing operations), 2005 $2.66 (GAAP $2.39), 2006 $3.00 (GAAP $3.34), 2007 $3.38 (GAAP $3.41); 2003 $2.05 GAAP; 2008 $3.21 GAAP: the company's core $3.68 also excludes the commodity mark-to-market net impact, a recurring item (the 2008 core rule), and no figure excluding only the Productivity for Growth charges and PepsiCo's share of PBG's charges was published; 2009 $3.77 GAAP: the company's core $3.71 also excludes the commodity mark-to-market net impact (the 2008 core rule); 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     13.574,
+     1.9
+    ],
+    [
+     "Quaker Foods North America",
+     2.636,
+     -0.8
+    ],
+    [
+     "Latin America Foods",
+     7.78,
+     8.7
+    ],
+    [
+     "PepsiCo Americas Beverages",
+     21.408,
+     -4.5
+    ],
+    [
+     "Europe",
+     13.441,
+     -0.9
+    ],
+    [
+     "Asia, Middle East & Africa",
+     6.653,
+     -10.0
+    ]
+   ],
+   "groups_basis": "FY12 net revenue by segment (FY2012 10-K)"
   }
  ],
  "prints": [
@@ -1579,6 +2154,653 @@
    "sales_note": "net revenue $15,514M vs $11,080M (12 weeks)",
    "gross_margin_note": "cost of sales $7,008M vs $5,181M",
    "op_margin_note": "operating profit $2,800M vs $2,232M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q4 2010",
+   "fy": 2010,
+   "q": 4,
+   "published": "2011-02-10",
+   "source": "P48",
+   "extra_sources": [],
+   "release": "Feb 10",
+   "release_time": "before the open on Feb 10: 8-K accepted 07:48 ET; conference call at 8 a.m. ET",
+   "period_end": "2010-12-25",
+   "raw": {
+    "sales_m": 18155,
+    "sales_prior_m": 13297,
+    "cogs_m": 8359,
+    "cogs_prior_m": 6293,
+    "op_m": 2231,
+    "op_prior_m": 2034,
+    "inventory_m": 3372,
+    "inventory_prior_m": 2618
+   },
+   "lc_pct": 37.0,
+   "lc_note": "the release's core constant currency net revenue growth of 37% in the quarter (with PBG and PAS)",
+   "servings_pct": 9.0,
+   "servings_note": "Volume (Servings) +9% in the quarter (with PBG and PAS)",
+   "inventory_note": "inventories $3,372M at 12/25/10 vs $2,618M at 12/26/09",
+   "eps_q": 0.85,
+   "eps_q_prior": 0.9,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($1.05 vs $0.90)",
+   "diluted_shares_m": 1607,
+   "cash_b": 6.369,
+   "cash_note": "cash and equivalents $5,943M + short-term investments $426M",
+   "next_print": "Q1 2011 print (late April)",
+   "cash_return_text": "'The company returned $8 billion of cash to shareholders in 2010 through share repurchases of $5 billion and dividends of $3 billion'",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 3.91,
+    "revenue_usd_b": 57.838,
+    "diluted_shares_m": 1614.0,
+    "normalization_note": "FY10 = GAAP $3.91: the company's core $4.13 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 14.41,
+    "op_margin_note": "FY10 operating profit $8,332M / net revenue $57,838M (Q4 2010 release; GAAP)",
+    "pretax_margin": 14.23,
+    "pretax_margin_note": "FY10 income before income taxes $8,232M / $57,838M (Q4 2010 release)",
+    "gross_margin": 54.05,
+    "sales_growth": 33.8,
+    "servings_pct": 7.0,
+    "tax_rate": 0.23,
+    "tax_note": "FY10 effective rate: taxes $1,894M / pre-tax income $8,232M"
+   },
+   "sales_b": 18.155,
+   "sales_pct": 36.5,
+   "gross_margin": 53.96,
+   "gross_margin_bp": 128.4,
+   "op_margin": 12.29,
+   "op_margin_bp": -300.8,
+   "inventory_b": 3.372,
+   "inventory_pct": 28.8,
+   "inventory_gap_pp": -7.7,
+   "sales_note": "net revenue $18,155M vs $13,297M (16 weeks)",
+   "gross_margin_note": "cost of sales $8,359M vs $6,293M",
+   "op_margin_note": "operating profit $2,231M vs $2,034M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q1 2011",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-04-28",
+   "source": "P52",
+   "extra_sources": [
+    "P44"
+   ],
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 07:41 ET; conference call at 8 a.m. ET",
+   "period_end": "2011-03-19",
+   "raw": {
+    "sales_m": 11937,
+    "sales_prior_m": 9368,
+    "cogs_m": 5447,
+    "cogs_prior_m": 4463,
+    "op_m": 1726,
+    "op_prior_m": 840,
+    "inventory_m": 3831,
+    "inventory_prior_m": 3283
+   },
+   "lc_pct": 26.0,
+   "lc_note": "the release's core constant currency net revenue growth of 26% (the bottlers for the whole quarter, and WBD, as published)",
+   "servings_pct": 9.0,
+   "servings_note": "Volume (Servings) +9%",
+   "inventory_note": "inventories $3,831M at 3/19/11 vs $3,283M at 3/20/10 (the Q1 2010 release's balance sheet)",
+   "eps_q": 0.71,
+   "eps_q_prior": 0.89,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($0.74 vs $0.76)",
+   "diluted_shares_m": 1605,
+   "cash_b": 4.029,
+   "cash_note": "cash and equivalents $3,662M + short-term investments $367M",
+   "next_print": "Q2 2011 print (late July)",
+   "cash_return_text": "'The company anticipates share repurchases of approximately $2.5 billion in 2011.'",
+   "sales_b": 11.937,
+   "sales_pct": 27.4,
+   "gross_margin": 54.37,
+   "gross_margin_bp": 201.0,
+   "op_margin": 14.46,
+   "op_margin_bp": 549.3,
+   "inventory_b": 3.831,
+   "inventory_pct": 16.7,
+   "inventory_gap_pp": -10.7,
+   "sales_note": "net revenue $11,937M vs $9,368M (12 weeks)",
+   "gross_margin_note": "cost of sales $5,447M vs $4,463M",
+   "op_margin_note": "operating profit $1,726M vs $840M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q2 2011",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-07-21",
+   "source": "P54",
+   "extra_sources": [
+    "P45"
+   ],
+   "release": "Jul 21",
+   "release_time": "before the open on Jul 21: 8-K accepted 07:44 ET; conference call at 8 a.m. ET",
+   "period_end": "2011-06-11",
+   "raw": {
+    "sales_m": 16827,
+    "sales_prior_m": 14801,
+    "cogs_m": 7963,
+    "cogs_prior_m": 6745,
+    "op_m": 2754,
+    "op_prior_m": 2461,
+    "inventory_m": 4539,
+    "inventory_prior_m": 3530
+   },
+   "lc_pct": 11.0,
+   "lc_note": "the release's core constant currency net revenue growth of 11% in the quarter (with WBD)",
+   "servings_pct": 6.0,
+   "servings_note": "Volume (Servings) +6% in the quarter",
+   "inventory_note": "inventories $4,539M at 6/11/11 vs $3,530M at 6/12/10 (the Q2 2010 release's balance sheet)",
+   "eps_q": 1.17,
+   "eps_q_prior": 0.98,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($1.21 vs $1.10)",
+   "diluted_shares_m": 1605,
+   "cash_b": 3.344,
+   "cash_note": "cash and equivalents $2,913M + short-term investments $431M",
+   "next_print": "Q3 2011 print (mid-October)",
+   "cash_return_text": "'The company anticipates share repurchases of approximately $2.5 billion in 2011.'",
+   "sales_b": 16.827,
+   "sales_pct": 13.7,
+   "gross_margin": 52.68,
+   "gross_margin_bp": -175.2,
+   "op_margin": 16.37,
+   "op_margin_bp": -26.1,
+   "inventory_b": 4.539,
+   "inventory_pct": 28.6,
+   "inventory_gap_pp": 14.9,
+   "sales_note": "net revenue $16,827M vs $14,801M (12 weeks)",
+   "gross_margin_note": "cost of sales $7,963M vs $6,745M",
+   "op_margin_note": "operating profit $2,754M vs $2,461M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q3 2011",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-10-12",
+   "source": "P56",
+   "extra_sources": [
+    "P47"
+   ],
+   "release": "Oct 12",
+   "release_time": "before the open on Oct 12: 8-K accepted 08:01 ET; conference call at 8 a.m. ET",
+   "period_end": "2011-09-03",
+   "raw": {
+    "sales_m": 17582,
+    "sales_prior_m": 15514,
+    "cogs_m": 8452,
+    "cogs_prior_m": 7008,
+    "op_m": 2906,
+    "op_prior_m": 2800,
+    "inventory_m": 4205,
+    "inventory_prior_m": 3359
+   },
+   "lc_pct": 10.0,
+   "lc_note": "the release's core constant currency net revenue growth of 10% in the quarter (with WBD)",
+   "servings_pct": 4.5,
+   "servings_note": "Volume (Servings) +4.5% in the quarter",
+   "inventory_note": "inventories $4,205M at 9/3/11 vs $3,359M at 9/4/10 (the Q3 2010 release's balance sheet)",
+   "eps_q": 1.25,
+   "eps_q_prior": 1.19,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($1.31 vs $1.22)",
+   "diluted_shares_m": 1599,
+   "cash_b": 3.535,
+   "cash_note": "cash and equivalents $3,083M + short-term investments $452M",
+   "next_print": "Q4 2011 print (early February)",
+   "cash_return_text": "'The company anticipates share repurchases of approximately $2.5 billion in 2011.'",
+   "sales_b": 17.582,
+   "sales_pct": 13.3,
+   "gross_margin": 51.93,
+   "gross_margin_bp": -290.0,
+   "op_margin": 16.53,
+   "op_margin_bp": -152.0,
+   "inventory_b": 4.205,
+   "inventory_pct": 25.2,
+   "inventory_gap_pp": 11.9,
+   "sales_note": "net revenue $17,582M vs $15,514M (12 weeks)",
+   "gross_margin_note": "cost of sales $8,452M vs $7,008M",
+   "op_margin_note": "operating profit $2,906M vs $2,800M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q4 2011",
+   "fy": 2011,
+   "q": 4,
+   "published": "2012-02-09",
+   "source": "P57",
+   "extra_sources": [],
+   "release": "Feb 9",
+   "release_time": "before the open on Feb 9: 8-K accepted 07:42 ET; investor meeting at 8 a.m. ET",
+   "period_end": "2011-12-31",
+   "raw": {
+    "sales_m": 20158,
+    "sales_prior_m": 18155,
+    "cogs_m": 9731,
+    "cogs_prior_m": 8359,
+    "op_m": 2247,
+    "op_prior_m": 2231,
+    "inventory_m": 3827,
+    "inventory_prior_m": 3372
+   },
+   "lc_pct": 9.0,
+   "lc_note": "the release's core constant currency net revenue growth of 9% in the quarter, which also excludes the extra (53rd) week ('an extra reporting week increased reported net revenue by 3 percentage points')",
+   "servings_pct": 7.0,
+   "servings_note": "Volume (Servings) +7% reported in the 17-week quarter (+4% core, excluding the extra week)",
+   "inventory_note": "inventories $3,827M at 12/31/11 vs $3,372M at 12/25/10",
+   "eps_q": 0.89,
+   "eps_q_prior": 0.85,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item and the extra week ($1.15 vs $1.05)",
+   "diluted_shares_m": 1584,
+   "cash_b": 4.425,
+   "cash_note": "cash and equivalents $4,067M + short-term investments $358M",
+   "next_print": "Q1 2012 print (late April)",
+   "cash_return_text": "'The company returned $5.6 billion of cash to shareholders in 2011 through share repurchases of $2.5 billion and dividends of $3.2 billion.'",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 4.03,
+    "revenue_usd_b": 66.504,
+    "diluted_shares_m": 1597.0,
+    "normalization_note": "FY11 = GAAP $4.03, a 53-week year as published (the extra week added $0.04): the company's core $4.40 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 14.48,
+    "op_margin_note": "FY11 operating profit $9,633M / net revenue $66,504M (Q4 2011 release; GAAP, 53 weeks)",
+    "pretax_margin": 13.28,
+    "pretax_margin_note": "FY11 income before income taxes $8,834M / $66,504M (Q4 2011 release)",
+    "gross_margin": 52.49,
+    "sales_growth": 15.0,
+    "servings_pct": 6.0,
+    "servings_note": "Q4 2011 release, reported; +5% excluding the extra week",
+    "tax_rate": 0.269,
+    "tax_note": "FY11 effective rate: taxes $2,372M / pre-tax income $8,834M"
+   },
+   "sales_b": 20.158,
+   "sales_pct": 11.0,
+   "gross_margin": 51.73,
+   "gross_margin_bp": -223.1,
+   "op_margin": 11.15,
+   "op_margin_bp": -114.2,
+   "inventory_b": 3.827,
+   "inventory_pct": 13.5,
+   "inventory_gap_pp": 2.5,
+   "sales_note": "net revenue $20,158M vs $18,155M (17 against 16 weeks)",
+   "gross_margin_note": "cost of sales $9,731M vs $8,359M",
+   "op_margin_note": "operating profit $2,247M vs $2,231M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q1 2012",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-04-26",
+   "source": "P61",
+   "extra_sources": [
+    "P52"
+   ],
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 07:55 ET; conference call at 8 a.m. ET",
+   "period_end": "2012-03-24",
+   "raw": {
+    "sales_m": 12428,
+    "sales_prior_m": 11937,
+    "cogs_m": 5889,
+    "cogs_prior_m": 5447,
+    "op_m": 1722,
+    "op_prior_m": 1726,
+    "inventory_m": 4214,
+    "inventory_prior_m": 3831
+   },
+   "lc_pct": 5.0,
+   "lc_note": "the release's core constant currency net revenue growth of 5%",
+   "servings_pct": 2.0,
+   "servings_note": "Volume (Servings) +2%",
+   "inventory_note": "inventories $4,214M at 3/24/12 vs $3,831M at 3/19/11 (the Q1 2011 release's balance sheet)",
+   "eps_q": 0.71,
+   "eps_q_prior": 0.71,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($0.69 vs $0.74)",
+   "diluted_shares_m": 1584,
+   "cash_b": 3.813,
+   "cash_note": "cash and equivalents $3,485M + short-term investments $328M",
+   "next_print": "Q2 2012 print (late July)",
+   "cash_return_text": "'Reflecting its commitment to return capital to shareholders, the company anticipates more than $3 billion in share repurchases for 2012, and expects to pay $3.3 billion in dividends.'",
+   "sales_b": 12.428,
+   "sales_pct": 4.1,
+   "gross_margin": 52.62,
+   "gross_margin_bp": -175.4,
+   "op_margin": 13.86,
+   "op_margin_bp": -60.3,
+   "inventory_b": 4.214,
+   "inventory_pct": 10.0,
+   "inventory_gap_pp": 5.9,
+   "sales_note": "net revenue $12,428M vs $11,937M (12 weeks)",
+   "gross_margin_note": "cost of sales $5,889M vs $5,447M",
+   "op_margin_note": "operating profit $1,722M vs $1,726M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q2 2012",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-07-25",
+   "source": "P65",
+   "extra_sources": [
+    "P54"
+   ],
+   "release": "Jul 25",
+   "release_time": "before the open on Jul 25: 8-K accepted 07:47 ET; conference call at 8 a.m. ET",
+   "period_end": "2012-06-16",
+   "raw": {
+    "sales_m": 16458,
+    "sales_prior_m": 16827,
+    "cogs_m": 7915,
+    "cogs_prior_m": 7963,
+    "op_m": 2377,
+    "op_prior_m": 2754,
+    "inventory_m": 4274,
+    "inventory_prior_m": 4539
+   },
+   "lc_pct": 1.0,
+   "lc_note": "the release's core constant currency net revenue growth of 1% in the quarter (the refranchisings in China and Mexico in it, as published; organic +5%)",
+   "servings_pct": 2.0,
+   "servings_note": "Volume (Servings) +2% in the quarter",
+   "inventory_note": "inventories $4,274M at 6/16/12 vs $4,539M at 6/11/11 (the Q2 2011 release's balance sheet)",
+   "eps_q": 0.94,
+   "eps_q_prior": 1.17,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($1.12 vs $1.21)",
+   "diluted_shares_m": 1581,
+   "cash_b": 4.193,
+   "cash_note": "cash and equivalents $3,863M + short-term investments $330M",
+   "next_print": "Q3 2012 print (mid-October)",
+   "cash_return_text": "'Reflecting its commitment to return capital to shareholders, the company anticipates more than $3 billion in share repurchases for 2012, and expects to pay $3.3 billion in dividends.'",
+   "sales_b": 16.458,
+   "sales_pct": -2.2,
+   "gross_margin": 51.91,
+   "gross_margin_bp": -76.9,
+   "op_margin": 14.44,
+   "op_margin_bp": -192.4,
+   "inventory_b": 4.274,
+   "inventory_pct": -5.8,
+   "inventory_gap_pp": -3.6,
+   "sales_note": "net revenue $16,458M vs $16,827M (12 weeks)",
+   "gross_margin_note": "cost of sales $7,915M vs $7,963M",
+   "op_margin_note": "operating profit $2,377M vs $2,754M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-10-17",
+   "source": "P67",
+   "extra_sources": [
+    "P56"
+   ],
+   "release": "Oct 17",
+   "release_time": "before the open on Oct 17: 8-K accepted 07:45 ET; conference call at 8 a.m. ET",
+   "period_end": "2012-09-08",
+   "raw": {
+    "sales_m": 16652,
+    "sales_prior_m": 17582,
+    "cogs_m": 7833,
+    "cogs_prior_m": 8452,
+    "op_m": 2800,
+    "op_prior_m": 2906,
+    "inventory_m": 3905,
+    "inventory_prior_m": 4205
+   },
+   "lc_pct": 0.0,
+   "lc_note": "the release's core constant currency net revenue growth, printed '—' (zero; the refranchisings in it, as published; organic +5%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 4.0,
+    "published": "2012-10-18",
+    "source": "P68",
+    "note": "'In the 12 weeks and 36 weeks ended September 8, 2012, total servings increased 4% and 3%, respectively.' (Q3 2012 10-Q)"
+   },
+   "inventory_note": "inventories $3,905M at 9/8/12 vs $4,205M at 9/3/11 (the Q3 2011 release's balance sheet)",
+   "eps_q": 1.21,
+   "eps_q_prior": 1.25,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item ($1.20 vs $1.31)",
+   "diluted_shares_m": 1575,
+   "cash_b": 5.711,
+   "cash_note": "cash and equivalents $5,309M + short-term investments $402M",
+   "next_print": "Q4 2012 print (mid-February)",
+   "cash_return_text": "'Reflecting its commitment to return capital to shareholders, the company anticipates more than $3 billion in share repurchases for 2012, and expects to pay $3.3 billion in dividends.'",
+   "sales_b": 16.652,
+   "sales_pct": -5.3,
+   "gross_margin": 52.96,
+   "gross_margin_bp": 103.2,
+   "op_margin": 16.81,
+   "op_margin_bp": 28.7,
+   "inventory_b": 3.905,
+   "inventory_pct": -7.1,
+   "inventory_gap_pp": -1.8,
+   "sales_note": "net revenue $16,652M vs $17,582M (12 weeks)",
+   "gross_margin_note": "cost of sales $7,833M vs $8,452M",
+   "op_margin_note": "operating profit $2,800M vs $2,906M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-02-14",
+   "source": "P69",
+   "extra_sources": [],
+   "release": "Feb 14",
+   "release_time": "before the open on Feb 14: 8-K accepted 07:55 ET; conference call at 8 a.m. ET",
+   "period_end": "2012-12-29",
+   "raw": {
+    "sales_m": 19954,
+    "sales_prior_m": 20158,
+    "cogs_m": 9654,
+    "cogs_prior_m": 9731,
+    "op_m": 2213,
+    "op_prior_m": 2247,
+    "inventory_m": 3581,
+    "inventory_prior_m": 3827
+   },
+   "lc_pct": -0.5,
+   "lc_note": "the release's reported net revenue growth of -1% less its stated currency effect ('less than a 1 percent unfavorable impact', 0.5 points in its organic table); the refranchisings (3 points) and the prior year's extra week (3 points) stay in, as published (organic +5%)",
+   "servings_pct": null,
+   "servings_note": "no filing states total servings for the quarter (the FY2012 10-K gives +3% for the year)",
+   "inventory_note": "inventories $3,581M at 12/29/12 vs $3,827M at 12/31/11",
+   "eps_q": 1.06,
+   "eps_q_prior": 0.89,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.09)",
+   "diluted_shares_m": 1564,
+   "cash_b": 6.619,
+   "cash_note": "cash and equivalents $6,297M + short-term investments $322M",
+   "next_print": "Q1 2013 print (mid-April)",
+   "cash_return_text": "'Company expects to return approximately $6.4 billion to shareholders through dividends and share repurchases in 2013'",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 3.92,
+    "revenue_usd_b": 65.492,
+    "diluted_shares_m": 1575.0,
+    "normalization_note": "FY12 = GAAP $3.92: the company's core $4.10 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 13.91,
+    "op_margin_note": "FY12 operating profit $9,112M / net revenue $65,492M (Q4 2012 release; GAAP)",
+    "pretax_margin": 12.68,
+    "pretax_margin_note": "FY12 income before income taxes $8,304M / $65,492M (Q4 2012 release)",
+    "gross_margin": 52.22,
+    "sales_growth": -1.5,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2012 release (the FY2012 10-K gives +3%)",
+    "tax_rate": 0.252,
+    "tax_note": "FY12 effective rate: taxes $2,090M / pre-tax income $8,304M"
+   },
+   "sales_b": 19.954,
+   "sales_pct": -1.0,
+   "gross_margin": 51.62,
+   "gross_margin_bp": -10.8,
+   "op_margin": 11.09,
+   "op_margin_bp": -5.6,
+   "inventory_b": 3.581,
+   "inventory_pct": -6.4,
+   "inventory_gap_pp": -5.4,
+   "sales_note": "net revenue $19,954M vs $20,158M (16 against 17 weeks)",
+   "gross_margin_note": "cost of sales $9,654M vs $9,731M",
+   "op_margin_note": "operating profit $2,213M vs $2,247M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-18",
+   "source": "P71",
+   "extra_sources": [
+    "P61"
+   ],
+   "release": "Apr 18",
+   "release_time": "before the open on Apr 18: 8-K accepted 07:47 ET; conference call at 8 a.m. ET",
+   "period_end": "2013-03-23",
+   "raw": {
+    "sales_m": 12581,
+    "sales_prior_m": 12428,
+    "cogs_m": 5834,
+    "cogs_prior_m": 5889,
+    "op_m": 1658,
+    "op_prior_m": 1722,
+    "inventory_m": 3920,
+    "inventory_prior_m": 4214
+   },
+   "lc_pct": 1.5,
+   "lc_note": "the release's reported net revenue growth of 1% less its stated 0.5-point unfavorable currency effect; the refranchising in China (3 points) stays in, as published (organic +4%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 3.0,
+    "published": "2013-04-22",
+    "source": "P72",
+    "note": "'In the 12 weeks ended March 23, 2013, total servings increased 3%.' (Q1 2013 10-Q)"
+   },
+   "inventory_note": "inventories $3,920M at 3/23/13 vs $4,214M at 3/24/12 (the Q1 2012 release's balance sheet)",
+   "eps_q": 0.69,
+   "eps_q_prior": 0.71,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $0.77)",
+   "diluted_shares_m": 1563,
+   "cash_b": 7.011,
+   "cash_note": "cash and equivalents $6,715M + short-term investments $296M",
+   "next_print": "Q2 2013 print (late July)",
+   "cash_return_text": "'On track to return a total of $6.4 billion to shareholders in 2013 through approximately $3.4 billion in dividends and approximately $3.0 billion in share repurchases.'",
+   "sales_b": 12.581,
+   "sales_pct": 1.2,
+   "gross_margin": 53.63,
+   "gross_margin_bp": 101.3,
+   "op_margin": 13.18,
+   "op_margin_bp": -67.7,
+   "inventory_b": 3.92,
+   "inventory_pct": -7.0,
+   "inventory_gap_pp": -8.2,
+   "sales_note": "net revenue $12,581M vs $12,428M (12 weeks)",
+   "gross_margin_note": "cost of sales $5,834M vs $5,889M",
+   "op_margin_note": "operating profit $1,658M vs $1,722M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-24",
+   "source": "P75",
+   "extra_sources": [
+    "P65"
+   ],
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 07:36 ET; conference call at 9 a.m. ET (moved from 8 a.m. by an 8-K accepted 08:44 ET)",
+   "period_end": "2013-06-15",
+   "raw": {
+    "sales_m": 16807,
+    "sales_prior_m": 16458,
+    "cogs_m": 7898,
+    "cogs_prior_m": 7915,
+    "op_m": 2869,
+    "op_prior_m": 2377,
+    "inventory_m": 4131,
+    "inventory_prior_m": 4274
+   },
+   "lc_pct": 3.5,
+   "lc_note": "the release's reported net revenue growth of 2% less its stated 1.5-point unfavorable currency effect; the refranchisings in Vietnam and China (nearly 1 point) stay in, as published (organic +4%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 4.0,
+    "published": "2013-07-24",
+    "source": "P76",
+    "note": "'Our overall servings increased 4 percent, with snacks volume growth of 3 percent.' (prepared remarks, 8-K of 2013-07-24, 10:52 ET)"
+   },
+   "inventory_note": "inventories $4,131M at 6/15/13 vs $4,274M at 6/16/12 (the Q2 2012 release's balance sheet)",
+   "eps_q": 1.28,
+   "eps_q_prior": 0.94,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.31, including a $0.09 Vietnam refranchising gain)",
+   "diluted_shares_m": 1567,
+   "cash_b": 8.139,
+   "cash_note": "cash and equivalents $7,793M + short-term investments $346M",
+   "next_print": "Q3 2013 print (mid-October)",
+   "cash_return_text": "'On track to return a total of $6.4 billion to shareholders in 2013 through approximately $3.4 billion in dividends and approximately $3.0 billion in share repurchases.'",
+   "sales_b": 16.807,
+   "sales_pct": 2.1,
+   "gross_margin": 53.01,
+   "gross_margin_bp": 110.0,
+   "op_margin": 17.07,
+   "op_margin_bp": 262.7,
+   "inventory_b": 4.131,
+   "inventory_pct": -3.3,
+   "inventory_gap_pp": -5.5,
+   "sales_note": "net revenue $16,807M vs $16,458M (12 weeks)",
+   "gross_margin_note": "cost of sales $7,898M vs $7,915M",
+   "op_margin_note": "operating profit $2,869M vs $2,377M (GAAP; the core figures also exclude the mark-to-market net impact)"
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-16",
+   "source": "P78",
+   "extra_sources": [
+    "P67"
+   ],
+   "release": "Oct 16",
+   "release_time": "before the open on Oct 16: 8-K accepted 07:37 ET; conference call at 8 a.m. ET",
+   "period_end": "2013-09-07",
+   "raw": {
+    "sales_m": 16909,
+    "sales_prior_m": 16652,
+    "cogs_m": 7946,
+    "cogs_prior_m": 7833,
+    "op_m": 2780,
+    "op_prior_m": 2800,
+    "inventory_m": 3738,
+    "inventory_prior_m": 3905
+   },
+   "lc_pct": 2.5,
+   "lc_note": "the release's reported net revenue growth of 1.5% less the 1-point unfavorable currency effect in its organic table ('more than 1-percentage-point' in its text); the Vietnam refranchising stays in, as published (organic +3%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 1.0,
+    "published": "2013-10-17",
+    "source": "P79",
+    "note": "'For the 12 and 36 weeks ended September 7, 2013, total servings increased 1% and 3%, respectively.' (Q3 2013 10-Q)"
+   },
+   "inventory_note": "inventories $3,738M at 9/7/13 vs $3,905M at 9/8/12 (the Q3 2012 release's balance sheet)",
+   "eps_q": 1.23,
+   "eps_q_prior": 1.21,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.24)",
+   "diluted_shares_m": 1561,
+   "cash_b": 9.559,
+   "cash_note": "cash and equivalents $9,204M + short-term investments $355M",
+   "next_print": "Q4 2013 print (mid-February)",
+   "cash_return_text": "'On track to return a total of $6.4 billion to shareholders in 2013 through approximately $3.4 billion in dividends and approximately $3.0 billion in share repurchases.'",
+   "sales_b": 16.909,
+   "sales_pct": 1.5,
+   "gross_margin": 53.01,
+   "gross_margin_bp": 4.7,
+   "op_margin": 16.44,
+   "op_margin_bp": -37.4,
+   "inventory_b": 3.738,
+   "inventory_pct": -4.3,
+   "inventory_gap_pp": -5.8,
+   "sales_note": "net revenue $16,909M vs $16,652M (12 weeks)",
+   "gross_margin_note": "cost of sales $7,946M vs $7,833M",
+   "op_margin_note": "operating profit $2,780M vs $2,800M (GAAP; the core figures also exclude the mark-to-market net impact)"
   }
  ],
  "guides": [
@@ -1762,6 +2984,182 @@
    "display": "'targeting an 11 to 12 percent growth rate for core constant currency EPS'; 'growth in core EPS for the year is expected to be in the 10 to 11 percent range'",
    "unused": "a range on the core basis (the 2008 core rule): no EPS field, so the last full year's EPS stands",
    "published": "2010-10-07"
+  },
+  {
+   "fy": 2011,
+   "source": "P48",
+   "doc": "Q4 2010 release",
+   "display": "'For 2011, the company is targeting earnings per share growth of 7 to 8 percent on a 52-week, core constant currency basis from its fiscal 2010 core EPS of $4.13'",
+   "unused": "a range on the core basis (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2011-02-10"
+  },
+  {
+   "fy": 2011,
+   "source": "P50",
+   "doc": "8-K of 2011-02-24",
+   "display": "'it expects earnings per share growth of 7 to 8 percent on a 52-week, core constant currency basis in 2011 from its fiscal 2010 core EPS of $4.13'; organic net revenue growth 'in line with its long-term goal of mid-single-digit core constant currency net revenue growth'",
+   "unused": "a range on the core basis (the 2008 core rule) and revenue growth in words, which are not figures: no field, so the last full year's EPS stands",
+   "published": "2011-02-24"
+  },
+  {
+   "fy": 2011,
+   "source": "P51",
+   "doc": "8-K of 2011-03-30",
+   "display": "'it expects earnings per share growth of 7 to 8 percent on a 52-week, core constant currency basis in 2011 from its fiscal 2010 core EPS of $4.13'; organic net revenue growth 'in line with its long-term goal of mid-single-digit core constant currency net revenue growth'",
+   "unused": "a range on the core basis (the 2008 core rule) and revenue growth in words, which are not figures: no field, so the last full year's EPS stands",
+   "published": "2011-03-30"
+  },
+  {
+   "fy": 2011,
+   "source": "P52",
+   "doc": "Q1 2011 release",
+   "display": "'The company affirmed its full-year earnings outlook of 7-8 percent core, constant currency EPS growth.'",
+   "unused": "a range on the core basis (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2011-04-28"
+  },
+  {
+   "fy": 2011,
+   "source": "P54",
+   "doc": "Q2 2011 release",
+   "display": "'For 2011, the company is targeting high-single-digit earnings per share growth on a core, 52-week basis, including an estimated foreign exchange translation benefit of approximately 2 percentage points, from its fiscal 2010 core EPS of $4.13'",
+   "unused": "words and the core basis, which also removes the commodity mark-to-market net impact (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2011-07-21"
+  },
+  {
+   "fy": 2011,
+   "source": "P55",
+   "doc": "8-K of 2011-09-21",
+   "display": "'The company continues to target high-single-digit earnings per share growth on a core, 52-week, basis for fiscal 2011, consistent with the outlook provided on July 21, 2011.'",
+   "unused": "words and the core basis, which also removes the commodity mark-to-market net impact (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2011-09-21"
+  },
+  {
+   "fy": 2011,
+   "source": "P56",
+   "doc": "Q3 2011 release",
+   "display": "'For 2011, the company is targeting high-single-digit earnings per share growth on a core, 52-week basis, including an estimated foreign exchange translation benefit of approximately 1 percentage point, from its fiscal 2010 core EPS of $4.13'",
+   "unused": "words and the core basis, which also removes the commodity mark-to-market net impact (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2011-10-12"
+  },
+  {
+   "fy": 2012,
+   "source": "P58",
+   "doc": "2012 outlook (8-K of 2012-02-09, ex.99.2)",
+   "display": "'For 2012, the Company is targeting mid-single-digit core constant currency net revenue growth, in-line with its long-term target. It expects a decline in core constant currency EPS of approximately 5 percent from its fiscal 2011 core EPS of $4.40'",
+   "unused": "revenue growth in words, which are not figures, and EPS growth on the core basis (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2012-02-09"
+  },
+  {
+   "fy": 2012,
+   "source": "P59",
+   "doc": "8-K of 2012-02-23",
+   "display": "'it expects core constant currency earnings per share to decrease by 5 percent in 2012 from its fiscal 2011 core earnings per share of $4.40'; 'its long-term target of mid-single-digit constant currency net revenue growth'",
+   "unused": "revenue growth in words, which are not figures, and EPS growth on the core basis (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2012-02-23"
+  },
+  {
+   "fy": 2012,
+   "source": "P61",
+   "doc": "Q1 2012 release",
+   "display": "'the company expects a decline in core constant currency EPS of approximately 5 percent from its fiscal 2011 core EPS of $4.40'; 'The company expects core constant currency net revenue growth of low-single-digits reflecting the impact of structural changes'",
+   "unused": "revenue growth in words, which are not figures, and EPS growth on the core basis (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2012-04-26"
+  },
+  {
+   "fy": 2012,
+   "source": "P63",
+   "doc": "8-K of 2012-05-10",
+   "display": "'it expects core constant currency earnings per share to decrease by 5 percent in 2012 from its fiscal 2011 core earnings per share of $4.40'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2012-05-10"
+  },
+  {
+   "fy": 2012,
+   "source": "P64",
+   "doc": "8-K of 2012-06-19",
+   "display": "'it expects core constant currency earnings per share to decrease by 5 percent in 2012 from its fiscal 2011 core earnings per share of $4.40'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2012-06-20"
+  },
+  {
+   "fy": 2012,
+   "source": "P65",
+   "doc": "Q2 2012 release",
+   "display": "'Consistent with its previous guidance for 2012, the company expects a decline in core constant currency EPS of approximately 5 percent from its fiscal 2011 core EPS of $4.40.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2012-07-25"
+  },
+  {
+   "fy": 2012,
+   "source": "P66",
+   "doc": "8-K of 2012-09-04",
+   "display": "'PepsiCo expects a decline in core constant currency earnings per share of approximately 5 percent from its fiscal 2011 core earnings per share of $4.40'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2012-09-05"
+  },
+  {
+   "fy": 2012,
+   "source": "P67",
+   "doc": "Q3 2012 release",
+   "display": "'Consistent with its previous guidance for 2012, the company expects a decline in core constant currency EPS of approximately 5 percent from its fiscal 2011 core EPS of $4.40.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2012-10-17"
+  },
+  {
+   "fy": 2013,
+   "source": "P69",
+   "doc": "Q4 2012 release",
+   "display": "'For 2013, the company expects 7 percent core constant currency EPS growth versus its fiscal 2012 core EPS of $4.10.'; 'organic revenue is expected to grow mid-single-digits'",
+   "unused": "revenue growth in words, which are not figures, and EPS growth on the core basis (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2013-02-14"
+  },
+  {
+   "fy": 2013,
+   "source": "P71",
+   "doc": "Q1 2013 release",
+   "display": "'Consistent with its previous guidance for 2013, the company expects 7 percent core constant currency EPS growth versus its fiscal 2012 core EPS of $4.10.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2013-04-18"
+  },
+  {
+   "fy": 2013,
+   "source": "P74",
+   "doc": "8-K of 2013-05-29",
+   "display": "'The Company expects 7 percent core constant currency EPS growth versus its fiscal 2012 core EPS of $4.10.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2013-05-29"
+  },
+  {
+   "fy": 2013,
+   "source": "P75",
+   "doc": "Q2 2013 release",
+   "display": "'Consistent with its previous guidance for 2013, the company expects 7 percent core constant currency EPS growth versus its fiscal 2012 core EPS of $4.10.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2013-07-24"
+  },
+  {
+   "fy": 2013,
+   "source": "P76",
+   "doc": "8-K of 2013-07-24, 10:52 ET (prepared remarks)",
+   "display": "'For 2013, we expect core, constant currency EPS growth of 7 percent off a core 2012 base of $4.10.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2013-07-24"
+  },
+  {
+   "fy": 2013,
+   "source": "P77",
+   "doc": "8-K of 2013-09-04",
+   "display": "'PepsiCo expects core constant currency EPS growth of 7 percent versus its fiscal 2012 core EPS of $4.10'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2013-09-04"
+  },
+  {
+   "fy": 2013,
+   "source": "P78",
+   "doc": "Q3 2013 release",
+   "display": "'Consistent with its previous guidance for 2013, the company expects 7 percent core constant currency EPS growth versus its fiscal 2012 core EPS of $4.10.'",
+   "unused": "a core-basis EPS growth figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2013-10-16"
   }
  ],
  "dividends": [
@@ -1788,6 +3186,24 @@
    "source": "P46",
    "quarterly": 0.48,
    "note": "$0.48 quarterly, declared in the second quarter of 2010 (Q2 2010 10-Q)"
+  },
+  {
+   "published": "2011-05-10",
+   "source": "P53",
+   "quarterly": 0.515,
+   "note": "$0.515 quarterly: 'declared a seven percent increase in the company’s annual dividend, from the current annual rate of $1.92 to $2.06 per share' (8-K of 2011-05-09)"
+  },
+  {
+   "published": "2012-05-07",
+   "source": "P62",
+   "quarterly": 0.5375,
+   "note": "$0.5375 quarterly: 'On May 1, 2012, the Board of Directors of PepsiCo declared a quarterly dividend of $0.5375 payable June 29, 2012' (8-K of 2012-05-04)"
+  },
+  {
+   "published": "2013-05-07",
+   "source": "P73",
+   "quarterly": 0.5675,
+   "note": "$0.5675 quarterly: 'On April 30, 2013, the Board of Directors of PepsiCo declared a quarterly dividend of $0.5675 per share payable on June 28, 2013' (8-K of 2013-05-06)"
   }
  ],
  "events": [],

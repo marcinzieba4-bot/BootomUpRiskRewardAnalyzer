@@ -110,6 +110,19 @@ def check_print(p):
             "inventory_gap_pp": round(inv - sales, 1)}
     for k, v in want.items():
         assert abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+    sl = p.get("servings_later")        # servings absent from the release: the first later filing that states them, on its own date
+    if sl is not None:
+        assert p["servings_pct"] is None and set(sl) == {"pct", "published", "source", "note"} and sl["published"] >= p["published"], p["quarter"]
+
+
+def servings(p, as_of):
+    """A print's servings growth on AS_OF: its release's; else, once public, the first later filing's that states it (the NKE
+    futures rule: a measure that leaves the release enters on that filing's own date, which can only lag); else no value (the
+    AAPL Mac-unit rule: the slot scores BASE). Returns (value, note, source id of the later filing or None)."""
+    sl = p.get("servings_later")
+    if p["servings_pct"] is None and sl and sl["published"] <= as_of:
+        return sl["pct"], sl["note"], sl["source"]
+    return p["servings_pct"], p["servings_note"], None
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -137,7 +150,7 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a beverage and convenient-food company in 2008-2010 (GLP1 from
+    # no disruption theme in taxonomy_eras.json is live for a beverage and convenient-food company in 2008-2013 (GLP1 from
     # 2023-08-08; OFFSHORE is scoped to IT services, ECOMMERCE to physical retail, the others to other industries): any event
     # needs its encoding decided first
     events = [e for e in facts["events"] if e["published"] <= as_of]
@@ -159,7 +172,7 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_op_margin=a["op_margin"], prev_fy_op_margin_note=a["op_margin_note"],
                      prev_fy_pretax_margin=a["pretax_margin"], prev_fy_pretax_margin_note=a["pretax_margin_note"],
                      prev_fy_gross_margin=a["gross_margin"], prev_fy_sales_growth=a["sales_growth"],
-                     prev_fy_servings_pct=a["servings_pct"], prev_fy_servings_note=f'{p["quarter"]} release',
+                     prev_fy_servings_pct=a["servings_pct"], prev_fy_servings_note=a.get("servings_note", f'{p["quarter"]} release'),
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
     latest = prints[-1]
@@ -167,7 +180,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # first print in the fact sheet, the vintage names it
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     i = public.index(latest)
-    prev = (public[i - 1]["servings_pct"], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_servings_pct"], h["prev_q_label"])
+    prev = (servings(public[i - 1], as_of)[0], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_servings_pct"], h["prev_q_label"])
+    srv_ids = [x for x in (servings(latest, as_of)[2], servings(public[i - 1], as_of)[2] if i > 0 else None) if x]
+    s_pct, s_note, _ = servings(latest, as_of)
+    latest = {**latest, "servings_pct": s_pct, "servings_note": s_note}
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
     cur_fy = max(eps_hist) + 1
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
@@ -250,7 +266,7 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company = h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids)
+           + srv_ids + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids)
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, PEP and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/PEP/history",
