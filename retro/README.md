@@ -4677,6 +4677,138 @@ Judgement calls that could carry hindsight:
   approval as not yet declared (none moves a class);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2009-2010 went; DURABLE (the class label only).
 
+### PEP 2011-2013: a 53-week year, servings leave the release, the refranchisings, the first RICH dates
+
+```bash
+python3 retro/build_pep.py --weekly 2011-01-03 2013-12-31                   # 157 dates, 2011-01-07 .. 2013-12-31
+for c in 2012-01-01 2013-01-01 2014-01-01; do python3 retro/tools/firewall.py $c PEP; done
+```
+
+The 66 8-Ks, nine 10-Qs and the FY2010-FY2012 10-Ks filed from January 2011 to December 2013 were transcribed by Sonnet 5.5 agents
+to a written spec (as for LOW 2011-2012): every figure with the row it comes from, and every guidance, dividend, volume and
+53rd-week sentence. 4,648 strings were checked word for word with `verbatim.py` against their own filings (574, 572 and 577 in the
+three 10-Ks; 1,222, 639 and 1,064 in each year's releases, 8-Ks and 10-Qs), and 69 more that the fact sheet quotes. The assembler
+asserts each print's raw figures against the transcription of its own release and the year-ago quarter's inventories against that
+quarter's print, and each vintage against its 10-K; the builder re-derives every signal value. Each source's date comes from EDGAR's
+acceptance time. Thresholds, signals and the engine are unchanged; the builder gained one print field (`servings_later`, below).
+Decided before any 2011-2013 outcome was computed:
+
+- **Three vintages.** The FY2010 10-K (accepted Friday 2011-02-18 16:57 ET, dated Tuesday 2011-02-22 after Presidents' Day) gives
+  2006-2010: the history runs 2001-2010. The FY2011 10-K (2012-02-27 16:50 ET, dated 2012-02-28) gives 2007-2011 and the history
+  2002-2011; the FY2012 10-K (2013-02-21 16:46 ET, dated 2013-02-22) gives 2008-2012 and the history 2003-2012. First-year diluted
+  shares come from the latest 10-K that reports them: 2001's 1,805M (FY2003), 2002's 1,782M (FY2004), 2003's 1,739M (FY2005). The
+  8-Ks of 2011-03-18 and 2011-03-31 recast the 2010 segment data and parts of the FY2010 10-K for the 2011 realignment without
+  restating the consolidated statements: a segment recast adds nothing (the ACN 2024-09-30 rule), and the bridge takes the FY2011
+  10-K's recast FY10 from that 10-K's date.
+- **The option seam leaves the window.** With 2001 as the first year, 2000-2001 (-8.9%, before and after option expensing) is out,
+  so from the FY2010 10-K BEAR is 2008's -5.0% ($3.38 to $3.21). XBULL stays the 2001-2003 run (+24.2%/yr) to the FY2011 10-K, then
+  2002-2004 (+17.5%/yr), then 2003-2005 (+13.9%/yr) from the FY2012 10-K.
+- **FY2010-FY2012 at GAAP (the 2008 core rule):** $3.91, $4.03 and $3.92 from the Q4 prints. Each 10-K's EPS "excluding above items"
+  ($4.13, $4.40, $4.10, the releases' core figures) also removes the commodity mark-to-market net impact, so none replaces GAAP.
+  GAAP 2010 carries a $0.60 gain on the previously held bottler stakes against $0.61 of merger and inventory charges, GAAP 2011 the
+  extra week, GAAP 2012 the productivity-plan charges: all as published.
+- **A 53-week year.** Fiscal 2011 ended 2011-12-31 (the last-Saturday rule; the builder's calendar check passes), with a 17-week Q4.
+  The extra week stays in the GAAP figures, as published (the LOW and AAPL rule): FY11 EPS $4.03 (the week added $0.04), the Q4 2011
+  statements (net revenue +11.0% against 16 weeks) and servings (+7% reported; the release's +4% excluding the week goes in the
+  note). The Q4 2011 release's core statement removes the week from net revenue ($19,535M against $20,158M), but a core statement
+  does not replace GAAP even where, as for net revenue, the week is its only adjustment (the 2009-2010 margins rule). Growth
+  excluding currency is stated only on that basis, so `lc_pct` takes it: 9% ("an extra reporting week increased reported net revenue
+  by 3 percentage points"). The Q4 2012 print compares 16 weeks with 17, as published.
+- **No guide gives a field.** 2011: "7 to 8 percent on a 52-week, core constant currency basis" from core $4.13, then
+  "high-single-digit" core EPS growth from the Q2 2011 release; 2012: a core constant currency EPS decline "of approximately 5
+  percent from its fiscal 2011 core EPS of $4.40"; 2013: "7 percent core constant currency EPS growth versus its fiscal 2012 core
+  EPS of $4.10". All are on the core basis (the 2008 core rule). The revenue outlooks are words ("mid-single-digit",
+  "low-single-digits", organic "mid-single-digits"), so no `rev_guide` this time. Each reiteration 8-K (CAGNY, CAGE, Goldman Sachs,
+  Deutsche Bank, Barclays, Bernstein, the July 2013 prepared remarks) shows as the latest guide from its date. The last full year's
+  EPS stands (the rollover rule): FY09's $3.77 to 2011-02-04, FY10's $3.91 from the Q4 2010 print, FY11's $4.03 from 2012-02-10,
+  FY12's $3.92 from 2013-02-15.
+- **Growth excluding currency: the stated figure, else reported less the stated currency effect** (the NKE rule). Core constant
+  currency +37% (Q4 2010), +26%, +11% and +10% (2011), +9% (Q4 2011), +5%, +1% and "—" (zero) in Q1-Q3 2012. From Q4 2012 the
+  releases state only reported and organic growth, so `lc_pct` is reported growth less the currency effect the release states, as
+  for Q4 2008: -0.5% (Q4 2012: -1% and "less than a 1 percent unfavorable impact", 0.5 points in its organic table), +1.5%, +3.5%
+  and +2.5% (Q1-Q3 2013). Acquisitions (the bottlers' first two months in Q1 2011, Wimm-Bill-Dann from February 2011), the
+  refranchisings in China, Mexico and Vietnam (2012-2013) and the prior year's extra week stay in, as published (the AVGO rule, as
+  in 2010). Organic growth, which removes them, is not used.
+- **Servings leave the release.** From Q3 2012 the releases give snack and beverage volume but no total servings. A measure that
+  leaves the release enters from the first filing that states it, on that filing's own date (the NKE futures rule; it can only lag),
+  through a new print field, `servings_later`: Q3 2012 +4% (the 10-Q, accepted 2012-10-17 17:09 ET, dated 2012-10-18), Q1 2013 +3%
+  (the 10-Q, 2013-04-19 16:17 ET, dated 2013-04-22), Q2 2013 +4% (the prepared remarks furnished by an 8-K at 10:52 ET on the
+  release day, 2013-07-24: "Our overall servings increased 4 percent"), Q3 2013 +1% (the 10-Q, dated 2013-10-17). Until then the
+  slot has no value (the AAPL Mac-unit rule): on 2013-04-19 for Q1 2013. No filing states Q4 2012's total servings, so that slot
+  stays empty, and the franchise line shows the FY2012 10-K's +3% for the year from its date.
+- **Dividends,** the latest declared rate: $0.515 a quarter from the 8-K of 2011-05-09 (17:21 ET, dated 2011-05-10: "declared a
+  seven percent increase in the company’s annual dividend, from the current annual rate of $1.92 to $2.06 per share"), $0.5375 from
+  the 8-K of 2012-05-04 (dated 2012-05-07; declared May 1), $0.5675 from the 8-K of 2013-05-06 (dated 2013-05-07; declared April
+  30). The increases announced with the Q4 2011 and Q4 2012 results (to $2.15 and $2.27, "effective with the dividend payable in
+  June") were announcements, not declarations (the AAPL 2012 rule, as for March 2010).
+- **Calendar.** Every release came before the open (07:36-08:01 ET), so the weeks' dates are the next trading days: 2011-02-11,
+  2011-04-29, 2011-07-22, 2011-10-13, 2012-02-10, 2012-04-27, 2012-07-26, 2012-10-18, 2013-02-15, 2013-04-19, 2013-07-25 and
+  2013-10-17. An 8-K at 08:44 ET on 2013-07-24 moved that day's call to 9 a.m.
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words (FY2011: "a leading global food and beverage company with
+  hundreds of brands that are respected household names throughout the world"; FY2012: "In many countries in which we do business,
+  The Coca-Cola Company is our primary beverage competitor"). No theme in the registry is live for PepsiCo in 2011-2013.
+- **Adds nothing:** the Wimm-Bill-Dann 8-Ks (2011-01-27, 2011-02-04, 2011-03-10, 2011-06-06), the 2011 segment recasts, the officer,
+  director, by-law and annual-meeting 8-Ks, the note offerings and credit agreements, the Tingyi alliance (2011-11-04, completed
+  2012-04-02), the 2012 productivity plan (item 2.05 of 2012-02-09: charges and savings, no guided EPS or revenue figure), the FDA
+  clarification (2013-02-14), the call-time 8-K (2013-07-24, 08:44 ET), the redemption notice (2013-07-25), the CEO statement of
+  2013-08-19, and the 10-Qs beyond their servings.
+
+Controls: altering one value of each print, vintage, guide, dividend and `servings_later` published from 2010-12-01 changes no date
+before its publication and changes the first weekly date on or after it (44 of 44). No string of any print, vintage, guide,
+dividend, `servings_later` or source appears in a model dated before it (53,167 checks over the 314 PEP models). The firewall at
+2012-01-01, 2013-01-01 and 2014-01-01 changes no model before its cutoff (209, 261 and 314 dates). The 157 dates of 2008-2010
+rebuild byte-identical, and no file shared with another ticker changed.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 107 of 157 dates, RICH on 50;** BUY on 111, AVOID on 26, WATCHLIST on 18, ACCUMULATE on 2. By year: CHEAP and BUY on
+  all 52 dates of 2011; CHEAP on 49 of 2012 and RICH on 3 (2012-08-03, 2012-08-17 and 2012-08-24, still BUY); in 2013 CHEAP on the 6
+  dates to 2013-02-08 and RICH on the 47 from 2013-02-15. The tier agrees on 5 to 8 of the 8 robustness variants (5 or 6 on 34
+  dates, all in 2013), the valuation verdict on 3 to 8.
+- **EPS anchors on the last full year:** FY09's $3.77 to 2011-02-04 (16.9-17.7x, the 14th-22nd percentile), FY10's $3.91 to
+  2012-02-03 (15.3-18.2x, the 7th-29th), FY11's $4.03 to 2013-02-08 (15.5-18.2x, the 9th-42nd) and FY12's $3.92 from 2013-02-15
+  (18.8-22.0x, the 45th-87th, at $73.68-86.41): FY12's EPS fell 2.7% while the price rose.
+- **The EPP floor fell with the window:** 18x to the end of 2012 ($67.86 on FY09's EPS, $70.38 on FY10's, $72.54 on FY11's), 17x
+  from 2013-01-04 ($68.51, then $66.64 on FY12's) and 16x on 2013-12-31 ($62.72), as the 2008-2012 lows (12.2-15.9x) filled the ten
+  calendar years. The price was above the floor on 58 dates, every date from 2013-02-15 (by 10.6% to 32.2%).
+- **BEAR** is -8.9%/yr to 2011-02-18 and -5.0%/yr from the FY2010 10-K. **BULL** is the window's EPS CAGR: +12.7%/yr (2001-2010),
+  +11.7% (2001-2011, from the Q4 2011 print), +10.2% (2002-2011), +8.8% (2002-2012, from the Q4 2012 print) and +7.5% (2003-2012),
+  floored at BASE to Q1 2011.
+- **BASE followed the quarter's growth plus the buyback** (+1.0% to +1.3%/yr): +42.4% and +38.0-38.3%/yr with the bottlers (Q3 and
+  Q4 2010), +27.3% (Q1 2011), +12.3% and +11.3% (Q2, Q3 2011), +10.2% (Q4 2011), then +6.2%, +2.2% and +1.2% (Q1-Q3 2012, the
+  refranchisings in them), +0.7% and +0.6% (Q4 2012, before and after the FY2012 10-K), and +2.6%, +4.6% and +3.6% (2013). The
+  adjusted gap went from +2.1 to +2.6 (to July 2011) to +0.6 to +1.3 (to April 2012), -0.7 to +0.3 (the rest of 2012) and -1.7 to
+  -0.7 (2013).
+- **The proxy composite** was 3.10 on Q3 2010, 2.90 on Q4 2010 and 3.55 on Q1 2011 (servings +9%, net revenue +27-37% with the
+  acquisitions), 2.30 and 1.95 on Q2 and Q3 2011 (gross margin -175bp and -290bp), 2.50 on Q4 2011 (servings +7% with the extra
+  week), 1.60 and 1.80 on Q1 and Q2 2012 (servings +2%), 2.35 on Q3 2012 (servings +4% from the 10-Q, gross margin +103bp), 2.15 on
+  Q4 2012 (no servings), 2.35 then 2.15 on Q1 2013 (the 10-Q's +3% scores BEAR: an empty slot scores BASE), 2.65 on Q2 2013
+  (operating margin +263bp) and 2.15 on Q3 2013 (servings +1%).
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed; no outcome consulted):
+- FY11 without the extra week ($3.99, the stated $0.04 taken out: a derived figure, as a test only) would change 3 classes (CHEAP to
+  RICH on 2012-08-10, 2012-08-31 and 2012-09-07) and no tier;
+- Q4 2011 growth with the extra week in (reported 11% less the 1.5-point currency effect, 12.5%) would change nothing;
+- Q4 2011 servings without the extra week (the release's core +4%) would change nothing;
+- the stated organic growth from Q2 2012 (the refranchisings out: 5%, 5%, 5%, 4%, 4% and 3%) would change nothing;
+- servings from the releases only (no `servings_later`) would change nothing;
+- the dividends dated from the announcements (2012-02-09, 2013-02-14) would change nothing;
+- the core figures in the history (FY10 $4.13, FY11 $4.40, FY12 $4.10) would change 4 classes (RICH to CHEAP on 2012-08-03,
+  2012-08-17, 2012-08-24 and 2013-02-15) and 13 tiers in 2013 (AVOID to WATCHLIST, WATCHLIST to ACCUMULATE);
+- those and the core EPS guides read as points (FY11 $4.44, FY12 $4.18, FY13 $4.39) would change 17 classes (RICH to CHEAP or FAIR:
+  the three August 2012 dates, 2013-02-15 to 2013-03-15 and 2013-08-16 to 2013-10-11) and 46 tiers (every date from 2013-02-22:
+  AVOID to WATCHLIST or ACCUMULATE, WATCHLIST to ACCUMULATE or BUY, ACCUMULATE to BUY).
+
+Judgement calls that could carry hindsight:
+- the 2008 core rule, which keeps FY10-FY12 at GAAP (4 classes and 13 tiers, 17 and 46 with the core guides as points: the call that
+  moves the most in this range);
+- the extra week: in the GAAP figures and servings as published, out of `lc_pct` because the release states it so; FY11 at $4.03 (3
+  classes if the week were taken out of FY11);
+- keeping the refranchisings in growth, which puts BASE at +0.6% to +2.2%/yr from mid-2012 against organic growth of 4-5% (no class
+  moves);
+- `servings_later` (a new field, from the NKE rule) and Q4 2012's empty slot (no class moves);
+- dating dividends from their declarations (no class moves);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2011-2013 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
