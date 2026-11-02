@@ -21,7 +21,7 @@ touching either directory.
   labelled as hindsight, are in `archive/retrospective/ACN/FINDINGS.md`; they are hypotheses, never inputs.
 - **Tickers are separate.** Each has its own fact sheet, builder and engine; nothing from one ticker's facts,
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
-  NKE (2008-2026 so far) and AVGO (from its 2009-08-06 listing to 2020-12-31 so far) sit in `staging/retrospective/` until the
+  NKE (2008-2026 so far) and AVGO (from its 2009-08-06 listing to 2023-12-31 so far) sit in `staging/retrospective/` until the
   owner adds them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO"). The live `nke_signal_model.py` and
   `avgo_*.py` files are 2026 analyses: never inputs to a retrospective. AVGO did not trade before its IPO, so its series starts
   at the listing (the listing and bounds rules of method r2).

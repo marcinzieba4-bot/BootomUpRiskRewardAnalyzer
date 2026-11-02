@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  AVGO  ·  Broadcom Inc.  ·  $804.62  ·  RETROSPECTIVE as of 2023-06-09
+  Signal: ◉ BUY   Ratio B: 0.24x   Adj gap: +0.83  [UNDERVALUED]
+  Point-in-time: 16 sources, latest published 2023-06-09; latest print Q2 FY23 (Jun 1)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E net revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Target market                  FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Semiconductor solutions       $ 27.01  $27.01  $47.90    +0.00   +20.89
+    +26.7% net revenue in FY22
+  Infrastructure software       $  7.72  $ 7.72  $13.70    +0.00    +5.98
+    +4.5% net revenue in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 34.73  $34.73  $61.60    +0.00   +26.87
+  FY2023E = FY22 $33.203B × (1 + 4.6%: the Q3 FY23 revenue guide (Q2 FY23 release), YoY, applied to the year (no FY23 revenue guide)); split pro rata to FY22 net revenue by segment (FY2022 10-K)
+  Q2 FY23 (Jun 1): net revenue $8.733B +7.8% YoY (-2.0% QoQ); inventories +13.1%; R&D + SG&A +7.4%;
+  gross margin 70.02% (+289.8bp); operating margin 45.89% (+400.9bp); EPS $8.15 vs $5.93
+  Net revenue: net revenue $8,733M vs $8,103M: 'Revenue of $8,733 million for the second quarter, up 8 percent from the prior year period'; inventory $1,886M (April 30, 2023) vs $1,668M (May 1, 2022, the Q2 FY22 release); diluted EPS $8.15 vs $5.93 (net income per share attributable to common stock; no discontinued operations); diluted shares 427M in Q2 FY23
+  Q3 FY23 outlook (Q2 FY23 release): net revenue $8,850.0M ('Third quarter revenue guidance of approximately $8.85 billion') against Q3 FY22's $8,464M: +4.6% YoY; display only: approximately $8.85 billion, 'an increase of 5 percent from the prior year period'; Adjusted EBITDA approximately 65 percent of projected revenue (non-GAAP); no fiscal-year revenue, EPS or margin guide
+
+  FY2023E EPS check:  $34.730B × 37.5% pre-tax × (1−7.6%) ÷ 0.427B  =  $28.14  (FY2023E: no EPS guide in numbers, FY22's $26.53 stands)
+  FY2025E BEAR check: $34.730B × 37.5% ÷ 0.476B  =  $25.24  (scenario $25.47)
+  FY2025E BULL check: $61.600B × 37.9% ÷ 0.476B  =  $45.25  (scenario $46.18)
+  Every 1pp of pre-tax margin ≈ $0.752 EPS ≈ $23.45/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -39.0%   ≥-18.0%     ≥4.0%    ≥11.0%     +7.8%  ▲ BULL  ███░
+  Gross margin change                 -1080.0bp  ≥-560.0bp  ≥-30.0bp  ≥1480.0bp  +289.8bp  ▲ BULL  ███░
+  Opex growth less net revenue         +31.0pp   ≤16.0pp    ≤2.0pp  ≤-18.0pp    -0.3pp  ▲ BULL  ███░
+  Inventory growth less net revenue    +54.0pp   ≤23.0pp   ≤-8.0pp  ≤-18.0pp    +5.3pp  ◦ BASE  ██░░
+  Operating margin change             -1540.0bp  ≥-820.0bp  ≥-100.0bp  ≥1630.0bp  +400.9bp  ▲ BULL  ███░
+  Cloud: net effect on enterprise storage and networking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   1.81 / 4.00  (back-solved from $804.62 + 15% hurdle)
+  SCA adjustment:    +0.04  ·  EPP-distance adj -0.10  →  Adj composite 2.64  →  Gap +0.83  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 net revenue +21.0%, gross margin 66.5%; Q2 gross margin 70.02% (+290bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 30.3x FY23E vs a 31.2x 10-yr ex-FY14 ex-FY16 ex-FY18 median (47th percentile of its own range)  (+0.05 × 25%  =  +0.013)
+    -  Growth vs own history: Q3 FY23 revenue guide (Q2 FY23 release) +4.6% vs a 21.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash $11.553B, long-term debt $38.194B (Q2 FY23), FY22 free cash flow $16.312B (net cash provided by operating activities $16,736M less purchases of property, plant and equipment $424M), dividend $18.40 a year  (+0.30 × 15%  =  +0.045)
+    +  Cloud data centers: data-center Ethernet switching and routing — it sells to them as well  (+0.20 × 10%  =  +0.020)
+    -  Shift to cloud-based IT (FY2022 10-K): 'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its sales into traditional enterprise data centers  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     +7.8%    -39.0%  -46.8%  End demand and distributor destocking…
+  Gross margin change                 +289.8bp  -1080.0bp  -1369.8bp  Fab under-utilization and price erosi…
+  Opex growth less net revenue          -0.3pp   +31.0pp  +31.3pp  R&D and SG&A do not come down with re…
+  Inventory growth less net revenue     +5.3pp   +54.0pp  +48.7pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +400.9bp  -1540.0bp  -1940.9bp  Operating leverage works in reverse
+  Cloud: net effect on enterprise storage and networking    +2.0/4    +1.0/4  -1.0/4  Enterprise data centers move to the c…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$715.43  (model)  /  $491.57 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: net revenue went from +15.7% (Q1 FY23) to +7.8% YoY (Q2 FY23), -2.0% on the quarter before;
+  the bear case needs the downturn to resume with gross margin (+289.8bp now)
+  and inventories (+5.3pp against revenue) giving way. A semiconductor downturn shows up in distributor inventories and the
+  next-quarter guide first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $26.53  (FY2023E: no EPS guide in numbers, FY22's $26.53 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2013 16.4x, 2014 17.2x, 2015 19.4x, 2016 40.4x, 2017 43.2x, 2018 34.1x, 2019 35.8x, 2020 23.4x, 2021 19.9x, 2022 16.1x, 2023 20.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $530.60/share
+  Current $804.62 vs Updated EPP $530.60:  +52%  ⚠ far above floor — large drawdown room
+  Bear $491.57 vs Updated EPP $530.60:  -7%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -18.0      -25.8   BASE floor (vs +8 now)
+  Gross margin change                         -560.0     -849.8   BASE floor (vs +290 now)
+  Opex growth less net revenue                  16.0      +16.3   BASE floor (vs -0 now)
+  Inventory growth less net revenue             23.0      +17.7   BASE floor (vs +5 now)
+  Operating margin change                     -820.0    -1220.9   BASE floor (vs +401 now)
+  Cloud: net effect on enterprise storage and networking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $26.53 × (1+0.0%)² = $26.53
+  At 31x P/E (conservative):  $822.43/share
+  + Cumul. dividends (2yr):  +$37.90/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $822.43  (▲17.81 from $804.62)
+  Conservative total return:  +7% over 2yr  = +3%/yr
+
+  At 30.3x the multiple is already near its 31x median, so the conservative
+  case is a growth question: breakeven at 31x needs FY2025E EPS of $24.73,
+  i.e. -3.4%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (prices since the listing on 2009-08-06)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $415.07  –  $921.78  (at 77th pct of range)
+  Annual dividend:      $18.40/share  (yield 2.3%)
+  Realized vol:         33% annualized (250 daily returns since the listing)
+  Beta vs broad market: 1.27
+  1-sigma range (1yr):  $536.68  –  $1,072.56  ($804.62 ± 33%)
+  2-sigma range (1yr):  $268.74  –  $1,340.50
+  ────────────────────────────────────────────────────────────
+  Bear $491.57 requires:  ~1.2σ price move  (within normal vol range)
+  An analog semiconductor maker listed on 2009-08-06: the stock is +88% off its October
+  low while net revenue went from +15.7% (Q1 FY23) to +7.8% YoY (Q2 FY23), -2.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       25.47   19.3x  $ 491.57     6.0%     28.7%   -22.7pp  EPS -2.0%/yr (worst year FY13-FY22 ex-FY14 ex-FY16 ex-FY18, capped at 0%); P/E to its 10th pct
+  BASE       26.01   31.2x  $ 811.51    20.8%     53.2%   -32.3pp  EPS -1.0%/yr (Q3 FY23 guide YoY + margin + buyback); P/E at its 10-yr ex-FY14 ex-FY16 ex-FY18 median
+  BULL       46.18   45.2x  $2,087.34    61.6%     15.2%   +46.3pp  EPS +31.9%/yr (FY13-FY22 ex-FY14 ex-FY16 ex-FY18 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL     111.19   55.0x  $6,115.45    11.6%      2.9%    +8.8pp  EPS +104.7%/yr (best 2-yr run FY13-FY22 ex-FY14 ex-FY16 ex-FY18, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $2,194.61  /  Market EV: $1,066.71  /  Current: $804.62
+  Conservative EV (2yr, ④): $822.43 + $37.90 divs = $860.33 total value
+  Downside (→ Bear $491.57): 38.9%   Upside (→ Bull $2087.34): 159.4%   Ratio B 0.24x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $804.62 the market needs $1,064.11 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.81 against a model
+  read of 2.64: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.24x     +52%    +0.83  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.14x     +52%    +1.18  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.56x     +52%    +0.43  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.22x     +52%    +0.89  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.27x     +52%    +0.77  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.24x     +52%    +1.13  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.24x     +32%    +0.93  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.24x     +52%    +0.98  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY23 print — net revenue against the Q3 FY23 revenue guide (Q2 FY23 release): +4.6% YoY
+  (2) Gross margin — +289.8bp in Q2 FY23: utilization and price erosion, what must hold if revenue does not
+  (3) The Q3 FY23 guide — about $8,850.0M (+4.6% YoY): Avago guides one quarter at a time, in revenue only
+  (4) Inventories — +13.1% against net revenue +7.8% in Q2 FY23 (+5.3pp): write-downs follow if orders slow
+  (5) Capital structure at 30x — $4.60 a share paid on March 31, 2023 ($1,914 million); repurchased and eliminated 5.6 million shares for $3,420 million; long-term debt $38,194M at April 30, 2023
+  ◉ BUY  |  EPP floor $530.60  |  ADD below ~$689.78  |  TRIM above $2,087.34
+════════════════════════════════════════════════════════════════════════
+

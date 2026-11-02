@@ -55,6 +55,7 @@ Usage
   python3 retro/build_avgo.py --weekly 2010-01-04 2012-12-31
   python3 retro/build_avgo.py --weekly 2013-01-07 2016-12-31
   python3 retro/build_avgo.py --weekly 2017-01-02 2020-12-31
+  python3 retro/build_avgo.py --weekly 2021-01-04 2023-12-31
   python3 retro/build_avgo.py 2009-09-04
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/AVGO/<AS_OF>
 """
@@ -219,8 +220,9 @@ def build(as_of, facts, raw, spx, engine, out):
     # the one theme encoding decided so far: a 10-K whose risk factors name the shift to cloud-based IT as a risk to the company's
     # own segments (CLOUD, from the FY2016 10-K; the FY2009-FY2015 10-Ks name cloud only for their own IT service providers) puts
     # the theme on the watch list. No other theme in taxonomy_eras.json is live for this semiconductor and infrastructure software
-    # maker in 2009-2020 (OFFSHORE is scoped to IT services, EV from 2020 to powertrains and fuel, CRYPTO from 2020-10-21 to payments
-    # and banks, GENAI is live from 2022-11-30): any other kind of event needs its encoding decided first
+    # maker in 2009-2023 (OFFSHORE is scoped to IT services, EV from 2020 to powertrains and fuel, CRYPTO from 2020-10-21 to payments
+    # and banks; GENAI, live from 2022-11-30, is scoped to products generative AI substitutes, and the FY2022 and FY2023 10-Ks name AI
+    # only as features of the company's own products and in a regulatory risk): any other kind of event needs its encoding decided first
     if any(e["kind"] != "cloud_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the AVGO builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:

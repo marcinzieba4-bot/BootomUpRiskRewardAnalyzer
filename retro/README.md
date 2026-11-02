@@ -4130,6 +4130,132 @@ Judgement calls that could carry hindsight:
 - the signals, unchanged since 2009, for a company with a software segment from FY2019 (28% of FY2020 revenue); DURABLE rather than
   CYCLICAL (the class label only); CLOUD on the watch list (text only).
 
+### AVGO 2021-2023: quarter guides in dollars, the preferred stock converted, VMware and a fiscal-year guide
+
+```bash
+python3 retro/build_avgo.py --weekly 2021-01-04 2023-12-31                  # 156 dates, 2021-01-08 .. 2023-12-29
+for c in 2021-01-01 2021-03-01 2021-06-01 2021-09-01 2021-12-15 2022-01-01 2022-05-26 2022-09-01 2022-12-15 2023-03-01 \
+         2023-09-01 2023-12-10 2024-01-01; do python3 retro/tools/firewall.py $c AVGO; done
+```
+
+Every 8-K of Broadcom Inc. (CIK 1730168) from the Q4 FY20 release to the end of 2023 was checked for a guided number: the items of
+each, the headline of every exhibit 99 and a sweep of every exhibit for "guidance", "outlook", "affirm" and revenue expectations. The
+twelve releases were read in full (headlines, statements, outlooks, dividend and repurchase statements), and so were the FY2021-FY2023
+10-Ks for the history, the tax items, the fiscal calendar, the business wording and the risk factors. The nine 10-Qs were searched for
+dividend declarations and revenue expectations, the 56 425s and six DEFA14As (the VMware merger, the equity-plan vote) for Broadcom's
+own outlook, and the VMware proxy statement/prospectus (S-4, S-4/As, 424B3) for projections. 177 more strings were checked with
+`verbatim.py` (1,326 in all), 263 structured checks read every print's income-statement and balance-sheet figures back from its own
+release (each year-ago inventory and each guide's year-ago revenue from that quarter's own release) and every vintage's from its 10-K,
+and each of the 15 new sources' dates comes from EDGAR's acceptance time. Thresholds and signals are unchanged. Decided on 2026-11-02,
+before any 2021-2023 date was built or scored:
+
+- **Three vintages:** the FY2021 10-K (accepted 2021-12-17 16:42 ET, dated 2021-12-20), FY2022 (2022-12-16 16:21 ET, dated
+  2022-12-19) and FY2023 (2023-12-14 16:54 ET, dated 2023-12-15). Item 6 is reserved from the FY2021 10-K, so each 10-K supplies the
+  three years of its statements of operations and earlier years keep the latest 10-K that reported them (the ACN FY21 rule): FY2019
+  from the FY2021 10-K, FY2020 from the FY2022 10-K, FY2016-FY2018 still from the FY2020 10-K. Each vintage holds the ten fiscal years
+  to its latest one: FY2012-FY2021, FY2013-FY2022 and FY2014-FY2023. In the last, FY2014 is the first year and excluded (a distorted
+  year), so the history and the P/E window start with FY2015 (the ACN FY02 rule, as for FY2009 in the FY2018 vintage).
+- **EPS: GAAP diluted EPS,** as since 2009, attributable to common stock after the preferred dividends: FY21 $15.00 from continuing
+  operations ($299M of preferred dividends), FY22 $26.53 ($272M; the mandatory convertible preferred stock converted into common
+  stock in the fourth quarter), FY23 $32.98. The statements carry no discontinued operations from FY2021. All three years are kept:
+  their listed items (restructuring, acquisition-related costs, a loss on debt extinguishment, gains and losses on investments) are
+  fractions of their income, and FY21's $29M tax provision (0.4% of pre-tax income) comes from recurring items: excess tax benefits
+  from stock awards, foreign derived intangible income and lapsed statutes (the AAPL FY2003 test and its mirror). FY2014, FY2016 and
+  FY2018 stay excluded while they are among the ten years.
+- **Guides.** Each release from Q4 FY20 to Q3 FY23 guides the next quarter's revenue as a dollar level ("approximately $6.5
+  billion"), read against the same quarter a year earlier from its own release (the 2009 and AAPL rules): Q2 FY21 $6.5B (+13.2%),
+  Q3 FY21 $6.75B (+16.0%), Q4 FY21 $7.35B (+13.7%), Q1 FY22 $7.6B (+14.2%), Q2 FY22 $7.9B (+19.5%), Q3 FY22 $8.4B (+23.9%), Q4
+  FY22 $8.9B (+20.2%), Q1 FY23 $8.9B (+15.5%), Q2 FY23 $8.7B (+7.4%), Q3 FY23 $8.85B (+4.6%), Q4 FY23 $9.27B (+3.8%). The Adjusted
+  EBITDA percentage beside each is non-GAAP and display only (the 2009 rule). No release gives a GAAP margin guide, so there is no
+  margin step.
+  - **The fiscal-year guide again.** The Q4 FY23 release guides fiscal year 2024 only, "including contributions from VMware"
+    (acquired on 2023-11-22, after the year end): revenue of approximately $50.0 billion against FY23's $35,819M, +39.6% (method r2's
+    fallback with no next-quarter guide, the LOW 2021 rule, as for FY2019 and FY2020). The acquisition enters only through the guide,
+    as published (the LOW 2025 rule).
+  - No 8-K between releases changes a guided number.
+- **The Q2 FY22 release came before the open,** with the VMware announcement (8-K accepted 2022-05-26 07:28 ET; conference call at
+  8:00 a.m. Eastern Time): dated 2022-05-26, the week's date 2022-05-27, the first trading day after it. Every other release came
+  after the close and is dated the next trading day, a Friday each time and the week's last trading day: those prints meet that
+  day's close, public before the open.
+- **Dividends,** the latest declared rate from the first filing that states it: $4.10 (2021-12-10), $4.60 (2022-12-09) and $5.25
+  (2023-12-08), each with the Q4 release. The $20.00 dividend on the preferred stock (to its conversion) shows only in the
+  cash-return text.
+- **The fiscal calendar.** FY2021-FY2023 are 52-week years ending on the Sunday closest to October 31, as each 10-K states. FY2024
+  has 53 weeks and ends on 2024-11-03 (the Q4 FY23 release), which is also the Sunday closest to October 31, so it needs no
+  `fiscal_calendar` entry.
+- **Durability unchanged:** DURABLE, risk 2, in each 10-K's words. CLOUD stays on the watch list: the FY2021-FY2023 10-Ks repeat the
+  FY2018-FY2020 sentence naming "the shift to cloud-based IT solutions and services, such as hyperscale computing" as affecting sales
+  "for use in traditional enterprise data centers" (the FY2023 10-K's data-center Ethernet sentence changes and is quoted as
+  written). GENAI is live from 2022-11-30 but stays off the watch list. Its scope (generative AI substituting software seats, IT
+  services and BPO hours, professional information, search, education content, mobility) names none of Broadcom's products. The
+  FY2022 and FY2023 10-Ks name AI only as features of Broadcom's own products and, once, in a regulatory risk ("particularly in cloud
+  computing, artificial intelligence and our own data management practices"), never as a substitute for them (the AAPL rule).
+- **Adds nothing:**
+  - the VMware merger's filings: the 425s, the merger and voting agreements, the S-4, S-4/As and the 424B3 (its "VMware-Approved
+    Broadcom Financial Projections" rest on analyst consensus and "were not prepared with a view toward public disclosure"), the
+    expected-closing and regulatory updates (2023-08-21, 2023-10-18, 2023-10-30) and the completion (2023-11-22); the announcement's
+    "$8.5 billion of pro forma EBITDA" within three years of closing (a run-rate, not a current-year figure); the VMware restructuring
+    estimate in the Q4 FY23 8-K (item 2.05);
+  - the share repurchase programs (2021-12-09, 2022-05-26; diluted share counts carry them), the debt offerings, exchange and tender
+    offers, and the credit and term loan agreements;
+  - the Apple statements of work (2023-05-23: multi-year), the investor presentation of 2021-01-06 (the equity-plan vote), officers,
+    board, AGM votes and the proxies.
+- **A display quirk, left as it is** so no earlier output changes: the builder's catalyst text reads "Avago guides one quarter at a
+  time, in revenue only" on every quarter-guided date (491 dates to 2020-12-31 and 152 of 2021-2023), though the company has been
+  Broadcom since 2016. Like the engine's "An analog semiconductor maker", it is fixed text.
+
+Controls: altering one value of each print, Q4 full-year figure, guide, vintage, dividend and event changes no date before its
+publication and changes the first weekly date on or after it (36 of 36). No new fact appears in a model dated before its publication
+(89,955 checks over the 752 AVGO models), and no later calendar year appears in any model, report or analysis of 2021-2023. The 596
+dates of 2009-2020 rebuild byte-identical, and so do the 2008 dates of ACN and the 2008-2009 dates of UNP, LOW, AAPL and NKE. The
+firewall (a planted later print, vintage, guides with absurd values, withdrawals, dividend, event and company name, and 10x prices
+after the cutoff) changes no earlier model at the 13 cutoffs above.
+
+Seen in the build (method behaviour, not tuned):
+- **Classes:** CHEAP on 96 dates, FAIR on 10, RICH on 50. Tiers: BUY on 87, AVOID on 48, ACCUMULATE on 17, WATCHLIST on 4. All
+  eight robustness variants agree on 117 dates, seven on 30 and six on 5; four or fewer on 2022-01-14 and 2022-03-18 to 2022-04-01.
+  Ratio B is infinite (the price above the BULL price) on 48 dates.
+- **2021, on FY20's $6.33 (48 dates to the Q4 FY21 print).** The stock traded at 69.8-89.8x, the 95th-100th percentile of its own
+  range, 168-246% above the EPP floor (26x): RICH and AVOID on all 48 dates, every variant agreeing, Ratio B infinite. The guides'
+  +12.7% to +16.0% less the net buyback (-5.5%/yr: 252M diluted shares in FY11, 421M in FY20) put BASE at +7.2% to +10.5%/yr; BULL
+  is +12.5%/yr (FY11 to FY20) and XBULL +50.3%/yr (FY13 to FY15). The window's median rose from 25.7x to 42.2x as the FY21 days, on
+  FY20's EPS, filled it.
+- **From the Q4 FY21 print, on FY21's $15.00** (28.5-44.4x). FAIR and WATCHLIST on 2021-12-10 and 2021-12-17 (Ratio B 1.13-1.15),
+  then RICH on 2021-12-23 and 2021-12-31 under the FY2021 vintage (the 72nd percentile; BULL +23.5%/yr from FY12's $2.25). In 2022
+  the price fell to $427-629 (the 31st-64th percentile): CHEAP on 43 of 48 dates, FAIR on 5; BUY on 31, ACCUMULATE on 17. The Q1-Q4
+  FY22 guides put BASE at +8.4% to +18.1%/yr, and the EPP floor was 28x.
+- **From the Q4 FY22 print, on FY22's $26.53** (20.5-36.9x, the 22nd-60th percentile): CHEAP on 49 of 52 dates and BUY on all (Ratio
+  B 0.07-0.41), FAIR on 2023-11-10 to 2023-11-24. The FY2023 guides read +7.4%, +4.6% and +3.8% against FY2022's quarters, so BASE
+  falls to +1.8%, -1.0% and -1.8%/yr; the class rests on BULL (+28.0%, then +31.9%/yr from FY13) and XBULL (+104.7%/yr, FY20 to
+  FY22) at the window's multiples. The floor fell to 19x as FY2022's days were recomputed on its actual EPS, then rose to 20x and 22x.
+- **From the Q4 FY23 print, on FY23's $32.98** (28.6-34.3x) with the FY2024 guide (+39.6%; BASE and BULL +34.5%/yr): CHEAP and BUY
+  on all 4 dates.
+- **The proxy composite:** 2.9 on Q4 FY20, 3.2 on Q1 FY21, 3.35 on Q2 FY21, 3.2 on Q3 FY21, 2.9 on Q4 FY21, 2.75 on Q1 FY22, 2.9 on
+  Q2 FY22 to Q1 FY23 (the inventory gap at BEAR on the four FY22 prints, +28 to +44pp), 2.7 on Q2 FY23 and 2.55 on Q3-Q4 FY23
+  (revenue growth at +4-5% and the opex gap turned positive).
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- FY2018 at GAAP $28.48 (the literal AAPL FY2002 test, which a benefit cannot meet; the exclusion was decided in 2017-2020) would
+  change 37 classes and 62 tiers, all toward a richer reading: FAIR to RICH on 7 dates (2021-12-10 to 2022-04-01), CHEAP to RICH on
+  12 (2022-02-04 to 2022-05-27), CHEAP to FAIR on 18 (2022-01-28 to 2023-12-01). FY2018's own days return to the window at 7-9x,
+  which lowers the 10th percentile (15.7x to 9.2x on 2022-03-04) and the EPP floor (28x to 19x), and BEAR becomes FY18 to FY19's
+  -77.3%/yr;
+- BASE on the latest quarter's revenue growth instead of the guides would change 2 classes (CHEAP to FAIR on 2023-12-15 and
+  2023-12-22, where the FY2024 guide with VMware reads +39.6% against Q4 FY23's +4.1%) and no tier;
+- FY2014 as an interior gap in the FY2023 vintage (its revenue and shares kept, the window from its first day) would change none.
+
+Judgement calls that could carry hindsight:
+- the FY2018 exclusion, carried from 2017-2020, which moves 37 classes and 62 tiers here: FY17's $4.03 stays a BULL and window anchor
+  where GAAP $28.48 would put FY2018's days in the window at 7-9x;
+- reading the FY2024 guide, swollen by VMware, against FY23 as published (2 classes against the quarter's growth);
+- GENAI kept off the watch list (text only: the factor pair nets to zero and no class depends on it), a reading of the scope and the
+  10-K wording by a builder who knows how AI demand later moved this stock;
+- the FY2014 first-year exclusion in the FY2023 vintage (no class moves);
+- the signals, unchanged since 2009, for a company whose software segment was 21-26% of revenue; DURABLE rather than CYCLICAL (the
+  class label only); CLOUD on the watch list (text only);
+- the builder had read the 2017-2020 hindsight summary (the commit message of its outcomes) before this range was built. Every
+  2021-2023 encoding above applies a rule that existed before, and none was tuned on an outcome.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -4201,7 +4327,9 @@ What the gates enforce:
   its wired infrastructure and enterprise storage segments, AVGO carries CLOUD on the watch list, company-acknowledged, with no
   market read ("AVGO 2013-2016"). The FY2017 10-K repeats that sentence and the FY2018-FY2020 10-Ks of Broadcom Inc. name the shift
   as affecting sales "for use in traditional enterprise data centers", so it stays there through 2020; EV and CRYPTO, live from
-  2020, are scoped to other industries ("AVGO 2017-2020").
+  2020, are scoped to other industries ("AVGO 2017-2020"). The FY2021-FY2023 10-Ks repeat that sentence, so it stays there through
+  2023. GENAI, live from 2022-11-30, stays off the list: its scope names none of Broadcom's products, and the FY2022 and FY2023 10-Ks
+  name AI only as features of its own products and in one regulatory risk, never as a substitute for them ("AVGO 2021-2023").
 
 ## Workflow
 
