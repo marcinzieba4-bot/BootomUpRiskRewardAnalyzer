@@ -2,13 +2,15 @@
 
 Patterns seen in `outcome.json` for the AVGO weekly dates: 22 from 2009-08-07 to 2009-12-31, the first weeks after the
 2009-08-06 listing (no AVGO price exists before it; retro/README.md, "AVGO"), 157 from 2010-01-08 to 2012-12-31, 208 from
-2013-01-11 to 2016-12-30, 209 from 2017-01-06 to 2020-12-31 and 156 from 2021-01-08 to 2023-12-29. They are **labels and
-hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was
-committed and pushed (2009: b3106d7; 2010-2012: 04c4511; 2013-2016: 06ece35; 2017-2020: 97ab0d1; 2021-2023: 1cae53c). Prices run to
-2026-10-30; the 2009 batch's two-year horizons end by 2011-12-30 (three-year: 2012-12-28), the 2010-2012 batch's by 2014-12-30
-(2015-12-30), the 2013-2016 batch's by 2018-12-28 (2019-12-30), the 2017-2020 batch's by 2022-12-30 (2023-12-29) and the 2021-2023
-batch's by 2025-12-29 (three-year: 2026-10-27, for the 147 dates to 2023-10-27; the nine later dates have none yet). Medians of an
-even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+2013-01-11 to 2016-12-30, 209 from 2017-01-06 to 2020-12-31, 156 from 2021-01-08 to 2023-12-29 and 148 from 2024-01-05 to
+2026-10-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only
+after its point-in-time build was committed and pushed (2009: b3106d7; 2010-2012: 04c4511; 2013-2016: 06ece35; 2017-2020: 97ab0d1;
+2021-2023: 1cae53c; 2024-2026: 621bf93). Prices run to 2026-10-30; the 2009 batch's two-year horizons end by 2011-12-30 (three-year:
+2012-12-28), the 2010-2012 batch's by 2014-12-30 (2015-12-30), the 2013-2016 batch's by 2018-12-28 (2019-12-30), the 2017-2020
+batch's by 2022-12-30 (2023-12-29) and the 2021-2023 batch's by 2025-12-29 (three-year: 2026-10-27, for the 147 dates to 2023-10-27;
+the nine later dates have none yet). The 2024-2026 batch is mostly unscored: 43 dates (to 2024-10-25) have a two-year outcome, 53
+more a one-year one (to 2025-10-31), 25 a six-month one (to 2026-04-24), 26 none yet, and 2026-10-30 has no outcome file. Medians of
+an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2009 (22 dates)
 
@@ -275,3 +277,60 @@ even count take the upper middle value (`statistics.median_high`). The 15%/yr hu
   adds a variant without a new acquisition: when GAAP EPS steps up as earlier acquisitions' amortization runs off, the rollover
   rule's anchor (the last full year, with no EPS guide) lags by a year and the multiple on it reads high. Test it on other companies
   whose GAAP EPS steps up before any method change; never fit it to AVGO's outcomes.
+
+## 2024-2026 (148 dates; 43 with a two-year outcome)
+
+Two-year outcomes (the 43 dates from 2024-01-05 to 2024-10-25):
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 26 | +178% | +130% to +241% | 26 | 26 | +136% | 26 |
+| class FAIR | 14 | +124% | +86% to +155% | 14 | 14 | +117% | 0 |
+| class RICH | 3 | +123% | +114% to +138% | 3 | 3 | +105% | 0 |
+| legacy tier BUY | 28 | +174% | +119% to +241% | 28 | 28 | +136% | 26 |
+| legacy tier ACCUMULATE | 15 | +123% | +86% to +151% | 15 | 15 | +112% | 0 |
+| 2024 to the Q2 FY24 print (FY23's EPS; the FY2024 guide) | 23 | +178% | +130% to +241% | 23 | 23 | +134% | 23 |
+| Q2 FY24 to Q3 FY24 print (the raised FY2024 guide) | 12 | +139% | +114% to +192% | 12 | 12 | +118% | 2 |
+| Q3 FY24 print to 2024-10-25 (the Q4 FY24 guide) | 8 | +107% | +86% to +165% | 8 | 8 | +112% | 1 |
+
+One-year outcomes (the 96 dates from 2024-01-05 to 2025-10-31; a partial horizon, no call is scored on it):
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% | Beat SPY |
+|---|---|---|---|---|---|
+| class CHEAP | 27 | +70% | +11% to +146% | 26 | 27 |
+| class FAIR | 25 | +95% | +52% to +150% | 25 | 25 |
+| class RICH | 44 | +47% | -11% to +108% | 35 | 35 |
+| to the Q4 FY24 print | 49 | +82% | +11% to +150% | 48 | 49 |
+| Q4 FY24 to Q4 FY25 print (FY2024 excluded, FY23's EPS for FY25E) | 47 | +49% | -11% to +139% | 38 | 38 |
+
+- **Where two years have passed, CHEAP held on all 26 dates; FAIR and RICH held on none.** The CHEAP dates (January to September
+  2024) returned +130% to +241% and beat SPY by 95-195pp; since the listing, CHEAP has held on 203 of 203 scored dates. The 14 FAIR
+  dates beat SPY by 52-117pp, far outside FAIR's 15pp band, and the three RICH dates (2024-06-14, 2024-07-05, 2024-07-12) returned
+  +114% to +138%. Every one of the 43 cleared the hurdle and beat SPY, which itself returned +24% to +50%.
+- **The RICH stretch of 2025 is not scored yet.** From the Q4 FY24 print, with FY2024 excluded, FY23's $3.30 anchored FY25E at
+  44-122x, and 46 of 52 dates read RICH. At one year, 32 of the 41 RICH dates with a one-year price beat SPY. The nine that lagged it
+  are the entries of 2025-09-05 to 2025-10-31 (by 8-23pp), when the stock traded at 98-112x FY23's EPS. Their two-year outcomes fall
+  due from September 2027.
+- **The 2026 dates are too recent to read.** At six months, 12 of the 22 RICH dates from 2025-11-07 to 2026-04-24 lagged SPY (by
+  1-31pp), and the three CHEAP dates of March-April 2026 returned +13% to +18% but lagged SPY by 2-5pp. The dates from 2026-05-01 have
+  no horizon yet.
+- **The method's valuation measures ranked the two-year outcomes the right way round, as in 2021-2023; the signal composite carried
+  no information.** Across the 43 dates the EPP gap ranks the two-year returns at Spearman -0.78 (-0.74 on the m12-24 average),
+  Ratio B at -0.70 (-0.75), the conservative case at +0.68 (+0.76) and the adjusted gap at +0.63 (+0.64). The proxy composite ranks
+  them at -0.09 (-0.10) and the entry price at +0.14 (-0.18). On the 96 one-year outcomes the four read -0.47 to +0.63, the right
+  way round, and the entry price -0.54 (the "buy lower" read).
+- **BULL was the nearest anchor at two years on all 43 dates**: the two-year price was 1.00-1.68 times the BULL price, 0.40-0.60
+  times the XBULL price and 5.0-7.4 times the BEAR price. The deepest fall within two years was -41.5%, from the 2024-12-16 high to
+  the 2025-04-04 low.
+- **The calls, seen afterwards (two-year dates only).**
+  - Keeping FY2018 at GAAP $28.48 would have moved 33 of the 43 scored dates toward RICH: 19 CHEAP calls that held would have read
+    FAIR or RICH and failed, and 14 FAIR dates would have read RICH and failed either way. Across the three batches since the Q4
+    FY18 print, the exclusion cost all 53 calls of 2018-2019 and kept 30 in 2021-2023 and 19 here. The encoding stays: it was
+    decided before scoring, and changing a rule means a new method version tested elsewhere.
+  - Excluding FY2024 moved six dates of March-April 2025 from RICH to FAIR (5) and CHEAP (2025-04-04). No two-year outcome exists for
+    them yet; at one year they returned +63% to +139% and beat SPY by 47-103pp.
+- **Hypothesis for the live model, not an input:** the two earlier hypotheses held where outcomes exist. CHEAP has held on every
+  scored date since the listing, and a GAAP anchor from an earlier year read RICH or FAIR while the stock compounded (RICH and FAIR
+  held on none of the 17 two-year dates here). The FY2024 exclusion repeats the FY2014 and FY2018 pattern: one-off items in an
+  acquisition year leave an earlier year's EPS as the anchor. Whether the RICH reading of 2025 was right is not known until 2027.
+  Test the hypotheses on other acquirers before any method change; never fit them to AVGO's outcomes.
