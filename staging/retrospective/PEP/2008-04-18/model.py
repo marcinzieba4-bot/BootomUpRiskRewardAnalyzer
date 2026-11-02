@@ -201,7 +201,7 @@ MARGIN_SIGNAL_NAME = 'Operating margin change'
 
 # ── FACTS: latest print (P21, published 2008-02-07) and FY08 outlook ──
 LATEST          = {'quarter': 'Q4 2007', 'release': 'Feb 7', 'sales_b': 12.346, 'sales_pct': 16.8, 'lc_pct': 17.0, 'servings_pct': 5.0, 'gross_margin': 53.15, 'gross_margin_bp': -115.4, 'op_margin': 14.84, 'op_margin_bp': -82.8, 'inventory_b': 2.29, 'inventory_pct': 18.9, 'inventory_gap_pp': 2.1, 'eps_q': 0.8, 'eps_q_prior': 0.74}
-PREV_SERVINGS   = (4.0, 'Q2 2007')
+PREV_SERVINGS   = (4.0, 'Q3 2007')
 EPP_TODAY_EPS   = 3.38   # FY2008E: no EPS guide in numbers on a usable basis, FY07's $3.38 stands
 EPS_LABEL       = "FY2008E: no EPS guide in numbers on a usable basis, FY07's $3.38 stands"
 FWD_GUIDE       = (17.0, 17.0)   # no revenue guide in numbers: the latest quarter's net revenue growth excluding currency

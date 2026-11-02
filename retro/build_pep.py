@@ -56,9 +56,10 @@ from build_unp import money, on_basis  # noqa: E402
 FACTS = os.path.join(HERE, "facts", "PEP.json")
 ENGINE = os.path.join(HERE, "templates", "pep_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "PEP")
-# the guide fields this builder has an encoding for: every PepsiCo guide of the period is display only ('display': the figures
-# as published, 'unused': why no input takes them); any other field (a number an input would read) needs its encoding first
-GUIDE_KEYS = {"fy", "published", "source", "doc", "display", "unused"}
+# the guide fields this builder has an encoding for: a guide is shown as published ('display') with the reason no EPS input takes
+# it ('unused'); 'rev_guide' is a fiscal-year net revenue guide in constant currency (a range; a point is lo = hi), the only guide
+# field an input reads (BASE and the growth factor, method r2's full-year fallback). Any other field needs its encoding first
+GUIDE_KEYS = {"fy", "published", "source", "doc", "display", "unused", "rev_guide", "rev_guide_note"}
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"servings": (3, 4, 5, 7), "gross_margin": (-260, -130, 0, 150), "revenue": (-26, -10, 6, 10), "inventory_gap": (65, 32, -1, -17), "op_margin": (-300, -130, 40, 230)}
 RULE_T_KEYS = {"servings": (1, False), "gross_margin": (10, False), "revenue": (1, False), "inventory_gap": (1, True),
@@ -162,7 +163,11 @@ def build(as_of, facts, raw, spx, engine, out):
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
     latest = prints[-1]
-    prev = (prints[-2]["servings_pct"], prints[-2]["quarter"]) if len(prints) > 1 else (h["prev_q_servings_pct"], h["prev_q_label"])
+    # the previous quarter is the print published just before the latest one (in or out of the history's scope); before the
+    # first print in the fact sheet, the vintage names it
+    public = [p for p in facts["prints"] if p["published"] <= as_of]
+    i = public.index(latest)
+    prev = (public[i - 1]["servings_pct"], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_servings_pct"], h["prev_q_label"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
     cur_fy = max(eps_hist) + 1
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
@@ -178,10 +183,16 @@ def build(as_of, facts, raw, spx, engine, out):
         guide_text = f"{fy_now} outlook ({g['doc']}, display only): {g['display']} — {g['unused']}"
     else:
         guide_text = f"{fy_now}: no outlook in scope yet"
-    # no revenue guide in numbers: the latest quarter's net revenue growth excluding currency (method r2's LC basis)
-    fwd = [latest["lc_pct"]] * 2
-    fwd_label, fwd_short, fwd_period = (f"{latest['quarter']} net revenue ex-currency", f"{latest['quarter'].split()[0]} rev ex-FX",
-                                        latest["quarter"])
+    # forward revenue growth (method r2): no next-quarter guide, so the fiscal-year net revenue guide in constant currency when the
+    # latest guide for the year that states one does (the 8-K of 2009-12-08); otherwise the latest quarter's growth excluding currency
+    gr = next((g for g in reversed(guides) if "rev_guide" in g), None)
+    if gr:
+        fwd = list(gr["rev_guide"])
+        fwd_label, fwd_short, fwd_period = f"{fy_now} net revenue guide (constant currency)", f"{fy_now} rev guide", fy_now
+    else:
+        fwd = [latest["lc_pct"]] * 2
+        fwd_label, fwd_short, fwd_period = (f"{latest['quarter']} net revenue ex-currency", f"{latest['quarter'].split()[0]} rev ex-FX",
+                                            latest["quarter"])
     margin_guided = False                          # no operating-margin guide in numbers: no guided step
     fy_margin_base = h["prev_fy_op_margin"]
 
@@ -252,7 +263,9 @@ def build(as_of, facts, raw, spx, engine, out):
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = f"; {latest['eps_note']}" if latest.get("eps_note") else ""
-    vol_text = (f"Volume: servings {latest['servings_pct']:+.1f}% ({latest['servings_note']}); net revenue {latest['sales_pct']:+.1f}% "
+    srv_text = (f"servings {latest['servings_pct']:+.1f}% ({latest['servings_note']})" if latest["servings_pct"] is not None
+                else f"servings not reported ({latest['servings_note']})")
+    vol_text = (f"Volume: {srv_text}; net revenue {latest['sales_pct']:+.1f}% "
                 f"reported, {latest['lc_pct']:+.1f}% excluding currency ({latest['lc_note']}){eps_note}")
     R = repr
     head = f'''#!/usr/bin/env python3
@@ -317,18 +330,18 @@ LATEST          = {R({k: latest.get(k) for k in latest_keys})}
 PREV_SERVINGS   = {R(prev)}
 EPP_TODAY_EPS   = {eps_now}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}
-FWD_GUIDE       = {R(tuple(fwd))}   # no revenue guide in numbers: the latest quarter's net revenue growth excluding currency
+FWD_GUIDE       = {R(tuple(fwd))}   # {"the fiscal-year net revenue guide in constant currency" if gr else "no revenue guide in numbers: the latest quarter's net revenue growth excluding currency"}
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
 MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {rev[max(rev)] * (1 + sum(fwd) / 2 / 100):.2f}
-FY_REVENUE_LABEL = {R(f"{fwd_label}, applied to the year (no {fy_now} revenue guide in numbers)")}
+FY_REVENUE_LABEL = {R(f"{fwd_label}, applied to the year" + ("" if gr else f" (no {fy_now} revenue guide in numbers)"))}
 SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net revenue {h['prev_fy_sales_growth']:+.1f}%, servings {h['prev_fy_servings_pct']:+.1f}% ({h['prev_fy_servings_note']}); {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.0f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net revenue {h['prev_fy_sales_growth']:+.1f}%, servings " + (f"{h['prev_fy_servings_pct']:+.1f}% ({h['prev_fy_servings_note']})" if h['prev_fy_servings_pct'] is not None else h['prev_fy_servings_note']) + f"; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.0f}bp)")}
 BALANCE_TEXT    = {R(f"Cash and short-term investments ${latest['cash_b']:.2f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUME_TEXT     = {R(vol_text)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}

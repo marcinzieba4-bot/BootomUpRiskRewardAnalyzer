@@ -164,11 +164,11 @@ SOURCES = [
     },
     {
         "id": "P17",
-        "published": "2007-07-25",
-        "filed": "2007-07-24 17:39 ET (after the close)",
-        "title": "PepsiCo Q2 2007 10-Q",
-        "url": "https://www.sec.gov/Archives/edgar/data/77476/000119312507160846/d10q.htm",
-        "supports": "cash dividends declared per common share $0.375 in the second quarter of 2007"
+        "published": "2007-05-02",
+        "filed": "2007-05-02 09:27 ET (before the open)",
+        "title": "PepsiCo 8-K of 2007-05-02 (ex.99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/77476/000129993307002673/exhibit1.htm",
+        "supports": "'a 25% increase in the annual dividend, raising it to $1.50 per share from $1.20 per share' ($0.375 a quarter)"
     },
     {
         "id": "A0",
@@ -211,7 +211,7 @@ FY_E, FY_E_S, FY_H, FY_PREV = 'FY2007E', 'FY07E', 'FY2009E', 'FY06'
 PREV_FY_MARGIN = 18.52   # operating margin, FY06 operating profit $6,506M on the comparable basis, excluding restructuring and impairment charges (GAAP $6,439M) / net revenue $35,137M (Q4 2006 release)
 CHECK_PRETAX_MARGIN = 20.02   # pre-tax margin, FY06 income before income taxes $7,035M on the comparable basis / $35,137M (Q4 2006 release) (the EPS check only)
 TAX_RATE      = 0.28   # FY06 comparable effective rate: taxes $1,970M / pre-tax income $7,035M (Q4 2006 release)
-CONS_DIVIDEND = 1.50   # $0.375 quarterly, declared in the second quarter of 2007 (Q2 2007 10-Q)
+CONS_DIVIDEND = 1.50   # $0.375 quarterly: 'a 25% increase in the annual dividend, raising it to $1.50 per share from $1.20 per share' (8-K of 2007-05-02)
 VOL_DIVIDEND  = CONS_DIVIDEND
 MARGIN_SIGNAL_NAME = 'Operating margin change'
 
