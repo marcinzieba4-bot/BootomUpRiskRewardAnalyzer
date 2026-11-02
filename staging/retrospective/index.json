@@ -49840,7 +49840,20 @@
    "cons_return_2yr": -54.1,
    "path": "staging/retrospective/AVGO/2021-01-08",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.2,
+    "tr_1y": 42.3,
+    "tr_2y": 39.2,
+    "tr_3y": 152.6,
+    "excess_6m": -6.5,
+    "excess_1y": 18.5,
+    "excess_2y": 34.2,
+    "excess_3y": 123.2,
+    "avg_m12_m24": 21.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49859,7 +49872,20 @@
    "cons_return_2yr": -54.1,
    "path": "staging/retrospective/AVGO/2021-01-15",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.7,
+    "tr_1y": 37.1,
+    "tr_2y": 37.0,
+    "tr_3y": 159.8,
+    "excess_6m": -7.7,
+    "excess_1y": 11.9,
+    "excess_2y": 27.7,
+    "excess_3y": 128.0,
+    "avg_m12_m24": 20.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49878,7 +49904,20 @@
    "cons_return_2yr": -56.0,
    "path": "staging/retrospective/AVGO/2021-01-22",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.0,
+    "tr_1y": 17.9,
+    "tr_2y": 29.6,
+    "tr_3y": 173.4,
+    "excess_6m": -10.4,
+    "excess_1y": 2.0,
+    "excess_2y": 23.0,
+    "excess_3y": 142.3,
+    "avg_m12_m24": 16.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49897,7 +49936,20 @@
    "cons_return_2yr": -53.0,
    "path": "staging/retrospective/AVGO/2021-01-29",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.1,
+    "tr_1y": 27.6,
+    "tr_2y": 38.2,
+    "tr_3y": 181.6,
+    "excess_6m": -10.7,
+    "excess_1y": 6.7,
+    "excess_2y": 25.4,
+    "excess_3y": 143.8,
+    "avg_m12_m24": 19.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49916,7 +49968,20 @@
    "cons_return_2yr": -54.6,
    "path": "staging/retrospective/AVGO/2021-02-05",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.2,
+    "tr_1y": 29.8,
+    "tr_2y": 35.1,
+    "tr_3y": 177.7,
+    "excess_6m": -8.4,
+    "excess_1y": 12.6,
+    "excess_2y": 25.6,
+    "excess_3y": 145.8,
+    "avg_m12_m24": 15.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49935,7 +50000,20 @@
    "cons_return_2yr": -56.5,
    "path": "staging/retrospective/AVGO/2021-02-12",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.1,
+    "tr_1y": 21.0,
+    "tr_2y": 28.5,
+    "tr_3y": 170.6,
+    "excess_6m": -13.0,
+    "excess_1y": 7.3,
+    "excess_2y": 21.5,
+    "excess_3y": 138.2,
+    "avg_m12_m24": 11.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49954,7 +50032,20 @@
    "cons_return_2yr": -56.8,
    "path": "staging/retrospective/AVGO/2021-02-19",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.9,
+    "tr_1y": 21.4,
+    "tr_2y": 28.0,
+    "tr_3y": 164.6,
+    "excess_6m": -15.3,
+    "excess_1y": 8.6,
+    "excess_2y": 20.5,
+    "excess_3y": 131.7,
+    "avg_m12_m24": 10.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49973,7 +50064,20 @@
    "cons_return_2yr": -55.0,
    "path": "staging/retrospective/AVGO/2021-02-26",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.9,
+    "tr_1y": 28.3,
+    "tr_2y": 29.7,
+    "tr_3y": 189.4,
+    "excess_6m": -13.1,
+    "excess_1y": 11.7,
+    "excess_2y": 22.4,
+    "excess_3y": 151.5,
+    "avg_m12_m24": 15.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -49992,7 +50096,20 @@
    "cons_return_2yr": -52.6,
    "path": "staging/retrospective/AVGO/2021-03-05",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.2,
+    "tr_1y": 35.7,
+    "tr_2y": 47.6,
+    "tr_3y": 209.6,
+    "excess_6m": -6.6,
+    "excess_1y": 21.6,
+    "excess_2y": 39.1,
+    "excess_3y": 172.5,
+    "avg_m12_m24": 20.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50011,7 +50128,20 @@
    "cons_return_2yr": -52.7,
    "path": "staging/retrospective/AVGO/2021-03-12",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.0,
+    "tr_1y": 31.4,
+    "tr_2y": 43.3,
+    "tr_3y": 197.6,
+    "excess_6m": -1.7,
+    "excess_1y": 23.3,
+    "excess_2y": 42.3,
+    "excess_3y": 161.7,
+    "avg_m12_m24": 20.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50030,7 +50160,20 @@
    "cons_return_2yr": -55.0,
    "path": "staging/retrospective/AVGO/2021-03-19",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.4,
+    "tr_1y": 31.0,
+    "tr_2y": 38.9,
+    "tr_3y": 170.9,
+    "excess_6m": -6.6,
+    "excess_1y": 15.4,
+    "excess_2y": 35.7,
+    "excess_3y": 133.6,
+    "avg_m12_m24": 14.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50049,7 +50192,20 @@
    "cons_return_2yr": -54.3,
    "path": "staging/retrospective/AVGO/2021-03-26",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.2,
+    "tr_1y": 33.7,
+    "tr_2y": 38.8,
+    "tr_3y": 187.1,
+    "excess_6m": -6.6,
+    "excess_1y": 17.9,
+    "excess_2y": 35.7,
+    "excess_3y": 151.3,
+    "avg_m12_m24": 12.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50068,7 +50224,20 @@
    "cons_return_2yr": -53.7,
    "path": "staging/retrospective/AVGO/2021-04-01",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.9,
+    "tr_1y": 35.0,
+    "tr_2y": 41.7,
+    "tr_3y": 194.7,
+    "excess_6m": -5.2,
+    "excess_1y": 20.5,
+    "excess_2y": 36.4,
+    "excess_3y": 159.6,
+    "avg_m12_m24": 14.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50087,7 +50256,20 @@
    "cons_return_2yr": -53.1,
    "path": "staging/retrospective/AVGO/2021-04-09",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.1,
+    "tr_1y": 24.2,
+    "tr_2y": 35.1,
+    "tr_3y": 185.8,
+    "excess_6m": -4.0,
+    "excess_1y": 14.0,
+    "excess_2y": 32.7,
+    "excess_3y": 155.0,
+    "avg_m12_m24": 12.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50106,7 +50288,20 @@
    "cons_return_2yr": -52.5,
    "path": "staging/retrospective/AVGO/2021-04-16",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.6,
+    "tr_1y": 23.1,
+    "tr_2y": 36.2,
+    "tr_3y": 188.6,
+    "excess_6m": -0.9,
+    "excess_1y": 16.8,
+    "excess_2y": 34.5,
+    "excess_3y": 163.3,
+    "avg_m12_m24": 13.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50125,7 +50320,20 @@
    "cons_return_2yr": -51.2,
    "path": "staging/retrospective/AVGO/2021-04-23",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.1,
+    "tr_1y": 29.2,
+    "tr_2y": 42.8,
+    "tr_3y": 179.3,
+    "excess_6m": 2.7,
+    "excess_1y": 25.6,
+    "excess_2y": 41.0,
+    "excess_3y": 153.4,
+    "avg_m12_m24": 16.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50144,7 +50352,20 @@
    "cons_return_2yr": -50.1,
    "path": "staging/retrospective/AVGO/2021-04-30",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.1,
+    "tr_1y": 24.9,
+    "tr_2y": 44.5,
+    "tr_3y": 196.5,
+    "excess_6m": 7.4,
+    "excess_1y": 24.8,
+    "excess_2y": 41.9,
+    "excess_3y": 171.7,
+    "avg_m12_m24": 19.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50163,7 +50384,20 @@
    "cons_return_2yr": -48.2,
    "path": "staging/retrospective/AVGO/2021-05-07",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.1,
+    "tr_1y": 31.6,
+    "tr_2y": 46.5,
+    "tr_3y": 199.5,
+    "excess_6m": 13.4,
+    "excess_1y": 32.8,
+    "excess_2y": 45.8,
+    "excess_3y": 172.5,
+    "avg_m12_m24": 20.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50182,7 +50416,20 @@
    "cons_return_2yr": -40.5,
    "path": "staging/retrospective/AVGO/2021-05-14",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.2,
+    "tr_1y": 36.7,
+    "tr_2y": 50.3,
+    "tr_3y": 224.4,
+    "excess_6m": 16.3,
+    "excess_1y": 38.9,
+    "excess_2y": 48.6,
+    "excess_3y": 194.2,
+    "avg_m12_m24": 24.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50201,7 +50448,20 @@
    "cons_return_2yr": -40.2,
    "path": "staging/retrospective/AVGO/2021-05-21",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.6,
+    "tr_1y": 23.8,
+    "tr_2y": 58.5,
+    "tr_3y": 221.7,
+    "excess_6m": 14.0,
+    "excess_1y": 28.5,
+    "excess_2y": 54.6,
+    "excess_3y": 189.1,
+    "avg_m12_m24": 21.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50220,7 +50480,20 @@
    "cons_return_2yr": -41.4,
    "path": "staging/retrospective/AVGO/2021-05-28",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.2,
+    "tr_1y": 26.8,
+    "tr_2y": 79.0,
+    "tr_3y": 210.2,
+    "excess_6m": 7.3,
+    "excess_1y": 26.5,
+    "excess_2y": 76.1,
+    "excess_3y": 179.5,
+    "avg_m12_m24": 17.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50239,7 +50512,20 @@
    "cons_return_2yr": -38.9,
    "path": "staging/retrospective/AVGO/2021-06-04",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.0,
+    "tr_1y": 21.8,
+    "tr_2y": 77.9,
+    "tr_3y": 191.2,
+    "excess_6m": 11.1,
+    "excess_1y": 23.3,
+    "excess_2y": 73.7,
+    "excess_3y": 161.7,
+    "avg_m12_m24": 17.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50258,7 +50544,20 @@
    "cons_return_2yr": -36.7,
    "path": "staging/retrospective/AVGO/2021-06-11",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.7,
+    "tr_1y": 18.3,
+    "tr_2y": 77.9,
+    "tr_3y": 221.5,
+    "excess_6m": 24.1,
+    "excess_1y": 25.0,
+    "excess_2y": 73.7,
+    "excess_3y": 190.5,
+    "avg_m12_m24": 19.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50277,7 +50576,20 @@
    "cons_return_2yr": -35.8,
    "path": "staging/retrospective/AVGO/2021-06-18",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.5,
+    "tr_1y": 10.9,
+    "tr_2y": 94.4,
+    "tr_3y": 300.2,
+    "excess_6m": 27.0,
+    "excess_1y": 21.3,
+    "excess_2y": 85.4,
+    "excess_3y": 263.8,
+    "avg_m12_m24": 22.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50296,7 +50608,20 @@
    "cons_return_2yr": -35.6,
    "path": "staging/retrospective/AVGO/2021-06-25",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 45.5,
+    "tr_1y": 13.6,
+    "tr_2y": 85.2,
+    "tr_3y": 253.7,
+    "excess_6m": 34.5,
+    "excess_1y": 20.7,
+    "excess_2y": 80.7,
+    "excess_3y": 221.5,
+    "avg_m12_m24": 24.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50315,7 +50640,20 @@
    "cons_return_2yr": -34.8,
    "path": "staging/retrospective/AVGO/2021-07-02",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.8,
+    "tr_1y": 5.5,
+    "tr_2y": 92.5,
+    "tr_3y": 265.6,
+    "excess_6m": 33.6,
+    "excess_1y": 16.2,
+    "excess_2y": 87.4,
+    "excess_3y": 234.6,
+    "avg_m12_m24": 24.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50334,7 +50672,20 @@
    "cons_return_2yr": -36.4,
    "path": "staging/retrospective/AVGO/2021-07-09",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.5,
+    "tr_1y": 7.2,
+    "tr_2y": 83.4,
+    "tr_3y": 272.2,
+    "excess_6m": 22.8,
+    "excess_1y": 16.5,
+    "excess_2y": 79.8,
+    "excess_3y": 240.2,
+    "avg_m12_m24": 22.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50353,7 +50704,20 @@
    "cons_return_2yr": -33.2,
    "path": "staging/retrospective/AVGO/2021-07-16",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.1,
+    "tr_1y": 9.0,
+    "tr_2y": 97.1,
+    "tr_3y": 273.4,
+    "excess_6m": 20.6,
+    "excess_1y": 18.4,
+    "excess_2y": 90.0,
+    "excess_3y": 238.0,
+    "avg_m12_m24": 27.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50372,7 +50736,20 @@
    "cons_return_2yr": -35.3,
    "path": "staging/retrospective/AVGO/2021-07-23",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.0,
+    "tr_1y": 9.4,
+    "tr_2y": 92.6,
+    "tr_3y": 250.2,
+    "excess_6m": 11.7,
+    "excess_1y": 18.2,
+    "excess_2y": 87.0,
+    "excess_3y": 219.9,
+    "avg_m12_m24": 24.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50391,7 +50768,20 @@
    "cons_return_2yr": -34.1,
    "path": "staging/retrospective/AVGO/2021-07-30",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.0,
+    "tr_1y": 13.6,
+    "tr_2y": 92.3,
+    "tr_3y": 206.8,
+    "excess_6m": 15.5,
+    "excess_1y": 18.3,
+    "excess_2y": 85.3,
+    "excess_3y": 178.8,
+    "avg_m12_m24": 25.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50410,7 +50800,20 @@
    "cons_return_2yr": -34.1,
    "path": "staging/retrospective/AVGO/2021-08-06",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.2,
+    "tr_1y": 16.9,
+    "tr_2y": 88.6,
+    "tr_3y": 207.6,
+    "excess_6m": 21.1,
+    "excess_1y": 22.1,
+    "excess_2y": 84.8,
+    "excess_3y": 185.3,
+    "avg_m12_m24": 27.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50429,7 +50832,20 @@
    "cons_return_2yr": -34.2,
    "path": "staging/retrospective/AVGO/2021-08-13",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.5,
+    "tr_1y": 18.1,
+    "tr_2y": 77.6,
+    "tr_3y": 232.3,
+    "excess_6m": 20.1,
+    "excess_1y": 21.0,
+    "excess_2y": 74.9,
+    "excess_3y": 206.5,
+    "avg_m12_m24": 28.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50448,7 +50864,20 @@
    "cons_return_2yr": -32.6,
    "path": "staging/retrospective/AVGO/2021-08-20",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.7,
+    "tr_1y": 18.8,
+    "tr_2y": 80.9,
+    "tr_3y": 260.6,
+    "excess_6m": 25.0,
+    "excess_1y": 22.2,
+    "excess_2y": 79.6,
+    "excess_3y": 230.3,
+    "avg_m12_m24": 32.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50467,7 +50896,20 @@
    "cons_return_2yr": -34.0,
    "path": "staging/retrospective/AVGO/2021-08-27",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.1,
+    "tr_1y": 8.2,
+    "tr_2y": 78.6,
+    "tr_3y": 236.3,
+    "excess_6m": 22.2,
+    "excess_1y": 16.9,
+    "excess_2y": 78.1,
+    "excess_3y": 207.3,
+    "avg_m12_m24": 28.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50486,7 +50928,20 @@
    "cons_return_2yr": -36.7,
    "path": "staging/retrospective/AVGO/2021-09-03",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.8,
+    "tr_1y": 3.7,
+    "tr_2y": 82.1,
+    "tr_3y": 217.9,
+    "excess_6m": 21.0,
+    "excess_1y": 15.8,
+    "excess_2y": 79.8,
+    "excess_3y": 191.8,
+    "avg_m12_m24": 29.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50505,7 +50960,20 @@
    "cons_return_2yr": -36.8,
    "path": "staging/retrospective/AVGO/2021-09-10",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.5,
+    "tr_1y": 8.1,
+    "tr_2y": 78.9,
+    "tr_3y": 208.4,
+    "excess_6m": 23.3,
+    "excess_1y": 15.4,
+    "excess_2y": 76.1,
+    "excess_3y": 180.8,
+    "avg_m12_m24": 30.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50524,7 +50992,20 @@
    "cons_return_2yr": -36.3,
    "path": "staging/retrospective/AVGO/2021-09-17",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.6,
+    "tr_1y": 2.5,
+    "tr_2y": 75.0,
+    "tr_3y": 231.8,
+    "excess_6m": 20.3,
+    "excess_1y": 13.7,
+    "excess_2y": 71.7,
+    "excess_3y": 200.2,
+    "avg_m12_m24": 29.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50543,7 +51024,20 @@
    "cons_return_2yr": -36.2,
    "path": "staging/retrospective/AVGO/2021-09-24",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.7,
+    "tr_1y": -3.9,
+    "tr_2y": 71.1,
+    "tr_3y": 257.3,
+    "excess_6m": 23.5,
+    "excess_1y": 11.8,
+    "excess_2y": 71.3,
+    "excess_3y": 224.2,
+    "avg_m12_m24": 31.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50562,7 +51056,20 @@
    "cons_return_2yr": -33.9,
    "path": "staging/retrospective/AVGO/2021-10-01",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.3,
+    "tr_1y": -5.5,
+    "tr_2y": 77.6,
+    "tr_3y": 255.1,
+    "excess_6m": 25.3,
+    "excess_1y": 10.8,
+    "excess_2y": 76.2,
+    "excess_3y": 219.6,
+    "avg_m12_m24": 37.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50581,7 +51088,20 @@
    "cons_return_2yr": -34.6,
    "path": "staging/retrospective/AVGO/2021-10-08",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.8,
+    "tr_1y": -3.2,
+    "tr_2y": 78.6,
+    "tr_3y": 278.0,
+    "excess_6m": 17.9,
+    "excess_1y": 12.5,
+    "excess_2y": 77.6,
+    "excess_3y": 242.6,
+    "avg_m12_m24": 37.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50600,7 +51120,20 @@
    "cons_return_2yr": -36.0,
    "path": "staging/retrospective/AVGO/2021-10-15",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.7,
+    "tr_1y": -11.9,
+    "tr_2y": 82.4,
+    "tr_3y": 260.8,
+    "excess_6m": 16.8,
+    "excess_1y": 6.5,
+    "excess_2y": 82.8,
+    "excess_3y": 226.3,
+    "avg_m12_m24": 36.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50619,7 +51152,20 @@
    "cons_return_2yr": -37.5,
    "path": "staging/retrospective/AVGO/2021-10-22",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.5,
+    "tr_1y": -9.6,
+    "tr_2y": 72.4,
+    "tr_3y": 258.9,
+    "excess_6m": 20.8,
+    "excess_1y": 6.5,
+    "excess_2y": 76.6,
+    "excess_3y": 225.8,
+    "avg_m12_m24": 35.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50638,7 +51184,20 @@
    "cons_return_2yr": -39.4,
    "path": "staging/retrospective/AVGO/2021-10-29",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.8,
+    "tr_1y": -8.0,
+    "tr_2y": 64.2,
+    "tr_3y": 247.6,
+    "excess_6m": 15.5,
+    "excess_1y": 6.0,
+    "excess_2y": 72.0,
+    "excess_3y": 216.7,
+    "avg_m12_m24": 32.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50657,7 +51216,20 @@
    "cons_return_2yr": -42.4,
    "path": "staging/retrospective/AVGO/2021-11-05",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.2,
+    "tr_1y": -13.8,
+    "tr_2y": 64.2,
+    "tr_3y": 221.1,
+    "excess_6m": 16.3,
+    "excess_1y": 4.5,
+    "excess_2y": 68.7,
+    "excess_3y": 193.8,
+    "avg_m12_m24": 27.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50676,7 +51248,20 @@
    "cons_return_2yr": -42.8,
    "path": "staging/retrospective/AVGO/2021-11-12",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.9,
+    "tr_1y": -5.1,
+    "tr_2y": 76.2,
+    "tr_3y": 222.8,
+    "excess_6m": 18.3,
+    "excess_1y": 8.3,
+    "excess_2y": 79.2,
+    "excess_3y": 190.8,
+    "avg_m12_m24": 27.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50695,7 +51280,20 @@
    "cons_return_2yr": -42.1,
    "path": "staging/retrospective/AVGO/2021-11-19",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.5,
+    "tr_1y": -6.5,
+    "tr_2y": 78.0,
+    "tr_3y": 200.6,
+    "excess_6m": 13.8,
+    "excess_1y": 7.7,
+    "excess_2y": 79.2,
+    "excess_3y": 170.5,
+    "avg_m12_m24": 28.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50714,7 +51312,20 @@
    "cons_return_2yr": -39.8,
    "path": "staging/retrospective/AVGO/2021-11-26",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.2,
+    "tr_1y": -0.1,
+    "tr_2y": 85.5,
+    "tr_3y": 211.6,
+    "excess_6m": 13.3,
+    "excess_1y": 10.9,
+    "excess_2y": 83.5,
+    "excess_3y": 176.5,
+    "avg_m12_m24": 34.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50733,7 +51344,20 @@
    "cons_return_2yr": -41.0,
    "path": "staging/retrospective/AVGO/2021-12-03",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.4,
+    "tr_1y": -0.2,
+    "tr_2y": 72.9,
+    "tr_3y": 211.3,
+    "excess_6m": 11.2,
+    "excess_1y": 8.7,
+    "excess_2y": 68.8,
+    "excess_3y": 173.8,
+    "avg_m12_m24": 33.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50752,7 +51376,20 @@
    "cons_return_2yr": -10.3,
    "path": "staging/retrospective/AVGO/2021-12-10",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.0,
+    "tr_1y": -11.2,
+    "tr_2y": 55.0,
+    "tr_3y": 180.8,
+    "excess_6m": 3.5,
+    "excess_1y": 4.0,
+    "excess_2y": 54.5,
+    "excess_3y": 148.6,
+    "avg_m12_m24": 19.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50771,7 +51408,20 @@
    "cons_return_2yr": -10.8,
    "path": "staging/retrospective/AVGO/2021-12-17",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.2,
+    "tr_1y": -9.9,
+    "tr_2y": 83.4,
+    "tr_3y": 287.1,
+    "excess_6m": -0.4,
+    "excess_1y": 5.4,
+    "excess_2y": 78.5,
+    "excess_3y": 251.8,
+    "avg_m12_m24": 20.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50790,7 +51440,20 @@
    "cons_return_2yr": -15.8,
    "path": "staging/retrospective/AVGO/2021-12-23",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.1,
+    "tr_1y": -14.4,
+    "tr_2y": 74.2,
+    "tr_3y": 258.2,
+    "excess_6m": -5.0,
+    "excess_1y": 2.9,
+    "excess_2y": 70.8,
+    "excess_3y": 227.6,
+    "avg_m12_m24": 16.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50809,7 +51472,20 @@
    "cons_return_2yr": -15.8,
    "path": "staging/retrospective/AVGO/2021-12-31",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -25.8,
+    "tr_1y": -13.4,
+    "tr_2y": 73.2,
+    "tr_3y": 262.7,
+    "excess_6m": -5.8,
+    "excess_1y": 4.7,
+    "excess_2y": 70.4,
+    "excess_3y": 234.6,
+    "avg_m12_m24": 17.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50828,7 +51504,20 @@
    "cons_return_2yr": -9.6,
    "path": "staging/retrospective/AVGO/2022-01-07",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.2,
+    "tr_1y": -2.2,
+    "tr_2y": 75.3,
+    "tr_3y": 278.6,
+    "excess_6m": -2.2,
+    "excess_1y": 13.1,
+    "excess_2y": 72.1,
+    "excess_3y": 248.0,
+    "avg_m12_m24": 27.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50847,7 +51536,20 @@
    "cons_return_2yr": -3.3,
    "path": "staging/retrospective/AVGO/2022-01-14",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.4,
+    "tr_1y": -0.1,
+    "tr_2y": 91.8,
+    "tr_3y": 286.4,
+    "excess_6m": 0.7,
+    "excess_1y": 12.8,
+    "excess_2y": 86.4,
+    "excess_3y": 256.9,
+    "avg_m12_m24": 34.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -50866,7 +51568,20 @@
    "cons_return_2yr": 8.2,
    "path": "staging/retrospective/AVGO/2022-01-21",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.4,
+    "tr_1y": 10.2,
+    "tr_2y": 133.9,
+    "tr_3y": 361.5,
+    "excess_6m": 6.9,
+    "excess_1y": 18.4,
+    "excess_2y": 120.8,
+    "excess_3y": 319.2,
+    "avg_m12_m24": 52.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50885,7 +51600,20 @@
    "cons_return_2yr": 3.0,
    "path": "staging/retrospective/AVGO/2022-01-28",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.3,
+    "tr_1y": 8.5,
+    "tr_2y": 121.5,
+    "tr_3y": 280.5,
+    "excess_6m": 4.2,
+    "excess_1y": 15.3,
+    "excess_2y": 108.3,
+    "excess_3y": 239.2,
+    "avg_m12_m24": 47.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50904,7 +51632,20 @@
    "cons_return_2yr": -2.2,
    "path": "staging/retrospective/AVGO/2022-02-04",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.9,
+    "tr_1y": 4.1,
+    "tr_2y": 113.6,
+    "tr_3y": 286.7,
+    "excess_6m": 2.1,
+    "excess_1y": 10.8,
+    "excess_2y": 100.5,
+    "excess_3y": 248.1,
+    "avg_m12_m24": 41.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50923,7 +51664,20 @@
    "cons_return_2yr": 0.6,
    "path": "staging/retrospective/AVGO/2022-02-11",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.5,
+    "tr_1y": 6.4,
+    "tr_2y": 130.1,
+    "tr_3y": 319.9,
+    "excess_6m": 0.5,
+    "excess_1y": 12.3,
+    "excess_2y": 113.4,
+    "excess_3y": 278.0,
+    "avg_m12_m24": 48.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50942,7 +51696,20 @@
    "cons_return_2yr": -0.5,
    "path": "staging/retrospective/AVGO/2022-02-18",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.3,
+    "tr_1y": 5.6,
+    "tr_2y": 120.9,
+    "tr_3y": 304.0,
+    "excess_6m": -1.5,
+    "excess_1y": 10.4,
+    "excess_2y": 102.9,
+    "excess_3y": 258.5,
+    "avg_m12_m24": 48.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50961,7 +51728,20 @@
    "cons_return_2yr": -1.9,
    "path": "staging/retrospective/AVGO/2022-02-25",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.0,
+    "tr_1y": 1.1,
+    "tr_2y": 126.6,
+    "tr_3y": 254.3,
+    "excess_6m": -1.6,
+    "excess_1y": 9.1,
+    "excess_2y": 107.6,
+    "excess_3y": 213.9,
+    "avg_m12_m24": 48.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50980,7 +51760,20 @@
    "cons_return_2yr": 6.1,
    "path": "staging/retrospective/AVGO/2022-03-04",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.7,
+    "tr_1y": 9.0,
+    "tr_2y": 141.3,
+    "tr_3y": 224.2,
+    "excess_6m": -6.1,
+    "excess_1y": 14.0,
+    "excess_2y": 119.8,
+    "excess_3y": 186.1,
+    "avg_m12_m24": 49.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -50999,7 +51792,20 @@
    "cons_return_2yr": 9.4,
    "path": "staging/retrospective/AVGO/2022-03-11",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.2,
+    "tr_1y": 9.3,
+    "tr_2y": 130.0,
+    "tr_3y": 238.9,
+    "excess_6m": -5.7,
+    "excess_1y": 16.0,
+    "excess_2y": 105.2,
+    "excess_3y": 201.8,
+    "avg_m12_m24": 56.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51018,7 +51824,20 @@
    "cons_return_2yr": 3.6,
    "path": "staging/retrospective/AVGO/2022-03-18",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.3,
+    "tr_1y": 6.1,
+    "tr_2y": 108.6,
+    "tr_3y": 218.5,
+    "excess_6m": -3.8,
+    "excess_1y": 17.0,
+    "excess_2y": 90.2,
+    "excess_3y": 188.1,
+    "avg_m12_m24": 50.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -51037,7 +51856,20 @@
    "cons_return_2yr": 0.6,
    "path": "staging/retrospective/AVGO/2022-03-25",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.2,
+    "tr_1y": 3.9,
+    "tr_2y": 120.8,
+    "tr_3y": 208.8,
+    "excess_6m": -6.2,
+    "excess_1y": 15.1,
+    "excess_2y": 103.1,
+    "excess_3y": 177.2,
+    "avg_m12_m24": 47.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -51056,7 +51888,20 @@
    "cons_return_2yr": 3.9,
    "path": "staging/retrospective/AVGO/2022-04-01",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -27.9,
+    "tr_1y": 5.1,
+    "tr_2y": 121.3,
+    "tr_3y": 178.3,
+    "excess_6m": -7.4,
+    "excess_1y": 13.3,
+    "excess_2y": 103.1,
+    "excess_3y": 149.9,
+    "avg_m12_m24": 50.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -51075,7 +51920,20 @@
    "cons_return_2yr": 10.9,
    "path": "staging/retrospective/AVGO/2022-04-08",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.2,
+    "tr_1y": 9.0,
+    "tr_2y": 133.9,
+    "tr_3y": 175.9,
+    "excess_6m": -1.9,
+    "excess_1y": 16.2,
+    "excess_2y": 115.1,
+    "excess_3y": 160.5,
+    "avg_m12_m24": 62.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51094,7 +51952,20 @@
    "cons_return_2yr": 13.5,
    "path": "staging/retrospective/AVGO/2022-04-14",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.1,
+    "tr_1y": 11.0,
+    "tr_2y": 140.7,
+    "tr_3y": 221.2,
+    "excess_6m": -6.6,
+    "excess_1y": 15.3,
+    "excess_2y": 121.0,
+    "excess_3y": 193.4,
+    "avg_m12_m24": 68.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51113,7 +51984,20 @@
    "cons_return_2yr": 10.9,
    "path": "staging/retrospective/AVGO/2022-04-22",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.0,
+    "tr_1y": 10.8,
+    "tr_2y": 114.9,
+    "tr_3y": 199.0,
+    "excess_6m": -10.6,
+    "excess_1y": 12.5,
+    "excess_2y": 94.5,
+    "excess_3y": 170.5,
+    "avg_m12_m24": 67.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51132,7 +52016,20 @@
    "cons_return_2yr": 17.4,
    "path": "staging/retrospective/AVGO/2022-04-29",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.2,
+    "tr_1y": 16.1,
+    "tr_2y": 148.2,
+    "tr_3y": 255.6,
+    "excess_6m": -8.4,
+    "excess_1y": 13.6,
+    "excess_2y": 121.1,
+    "excess_3y": 216.1,
+    "avg_m12_m24": 79.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51151,7 +52048,20 @@
    "cons_return_2yr": 15.5,
    "path": "staging/retrospective/AVGO/2022-05-06",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.4,
+    "tr_1y": 11.6,
+    "tr_2y": 132.3,
+    "tr_3y": 255.2,
+    "excess_6m": -10.6,
+    "excess_1y": 9.7,
+    "excess_2y": 103.5,
+    "excess_3y": 214.4,
+    "avg_m12_m24": 73.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51170,7 +52080,20 @@
    "cons_return_2yr": 13.9,
    "path": "staging/retrospective/AVGO/2022-05-13",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.5,
+    "tr_1y": 10.3,
+    "tr_2y": 133.7,
+    "tr_3y": 305.2,
+    "excess_6m": -10.5,
+    "excess_1y": 6.2,
+    "excess_2y": 100.7,
+    "excess_3y": 254.1,
+    "avg_m12_m24": 73.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51189,7 +52112,20 @@
    "cons_return_2yr": 26.8,
    "path": "staging/retrospective/AVGO/2022-05-20",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.7,
+    "tr_1y": 28.8,
+    "tr_2y": 167.1,
+    "tr_3y": 337.5,
+    "excess_6m": -6.1,
+    "excess_1y": 19.7,
+    "excess_2y": 127.7,
+    "excess_3y": 280.1,
+    "avg_m12_m24": 90.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51208,7 +52144,20 @@
    "cons_return_2yr": 27.1,
    "path": "staging/retrospective/AVGO/2022-05-27",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.7,
+    "tr_1y": 42.3,
+    "tr_2y": 147.7,
+    "tr_3y": 314.2,
+    "excess_6m": -5.4,
+    "excess_1y": 39.6,
+    "excess_2y": 117.1,
+    "excess_3y": 266.9,
+    "avg_m12_m24": 79.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51227,7 +52176,20 @@
    "cons_return_2yr": 31.6,
    "path": "staging/retrospective/AVGO/2022-06-03",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.5,
+    "tr_1y": 47.2,
+    "tr_2y": 141.2,
+    "tr_3y": 366.5,
+    "excess_6m": -2.4,
+    "excess_1y": 41.4,
+    "excess_2y": 109.5,
+    "excess_3y": 316.4,
+    "avg_m12_m24": 88.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51246,7 +52208,20 @@
    "cons_return_2yr": 36.9,
    "path": "staging/retrospective/AVGO/2022-06-10",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.2,
+    "tr_1y": 51.9,
+    "tr_2y": 173.0,
+    "tr_3y": 362.9,
+    "excess_6m": 0.4,
+    "excess_1y": 39.9,
+    "excess_2y": 132.2,
+    "excess_3y": 303.0,
+    "avg_m12_m24": 97.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51265,7 +52240,20 @@
    "cons_return_2yr": 48.6,
    "path": "staging/retrospective/AVGO/2022-06-17",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.1,
+    "tr_1y": 77.6,
+    "tr_2y": 274.2,
+    "tr_3y": 412.0,
+    "excess_6m": 7.4,
+    "excess_1y": 55.7,
+    "excess_2y": 221.5,
+    "excess_3y": 343.6,
+    "avg_m12_m24": 117.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51284,7 +52272,20 @@
    "cons_return_2yr": 45.6,
    "path": "staging/retrospective/AVGO/2022-06-24",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.2,
+    "tr_1y": 65.0,
+    "tr_2y": 220.3,
+    "tr_3y": 430.2,
+    "excess_6m": 11.2,
+    "excess_1y": 52.3,
+    "excess_2y": 177.7,
+    "excess_3y": 369.3,
+    "avg_m12_m24": 116.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51303,7 +52304,20 @@
    "cons_return_2yr": 55.1,
    "path": "staging/retrospective/AVGO/2022-07-01",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.8,
+    "tr_1y": 85.3,
+    "tr_2y": 251.4,
+    "tr_3y": 466.9,
+    "excess_6m": 17.6,
+    "excess_1y": 67.3,
+    "excess_2y": 204.8,
+    "excess_3y": 399.5,
+    "avg_m12_m24": 133.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51322,7 +52336,20 @@
    "cons_return_2yr": 48.6,
    "path": "staging/retrospective/AVGO/2022-07-08",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.7,
+    "tr_1y": 73.4,
+    "tr_2y": 257.8,
+    "tr_3y": 457.3,
+    "excess_6m": 19.0,
+    "excess_1y": 58.9,
+    "excess_2y": 211.5,
+    "excess_3y": 392.4,
+    "avg_m12_m24": 126.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51341,7 +52368,20 @@
    "cons_return_2yr": 49.9,
    "path": "staging/retrospective/AVGO/2022-07-15",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.9,
+    "tr_1y": 83.3,
+    "tr_2y": 254.4,
+    "tr_3y": 480.6,
+    "excess_6m": 14.5,
+    "excess_1y": 65.0,
+    "excess_2y": 205.1,
+    "excess_3y": 413.7,
+    "avg_m12_m24": 131.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51360,7 +52400,20 @@
    "cons_return_2yr": 44.6,
    "path": "staging/retrospective/AVGO/2022-07-22",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.1,
+    "tr_1y": 78.5,
+    "tr_2y": 221.7,
+    "tr_3y": 455.5,
+    "excess_6m": 12.0,
+    "excess_1y": 62.4,
+    "excess_2y": 177.9,
+    "excess_3y": 391.2,
+    "avg_m12_m24": 126.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51379,7 +52432,20 @@
    "cons_return_2yr": 38.4,
    "path": "staging/retrospective/AVGO/2022-07-29",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.0,
+    "tr_1y": 71.4,
+    "tr_2y": 187.7,
+    "tr_3y": 466.9,
+    "excess_6m": 12.7,
+    "excess_1y": 58.9,
+    "excess_2y": 152.2,
+    "excess_3y": 407.7,
+    "avg_m12_m24": 118.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51398,7 +52464,20 @@
    "cons_return_2yr": 34.4,
    "path": "staging/retrospective/AVGO/2022-08-05",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.0,
+    "tr_1y": 63.1,
+    "tr_2y": 164.6,
+    "tr_3y": 442.3,
+    "excess_6m": 9.4,
+    "excess_1y": 53.5,
+    "excess_2y": 136.2,
+    "excess_3y": 385.5,
+    "avg_m12_m24": 114.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51417,7 +52496,20 @@
    "cons_return_2yr": 36.4,
    "path": "staging/retrospective/AVGO/2022-08-12",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.8,
+    "tr_1y": 51.8,
+    "tr_2y": 173.1,
+    "tr_3y": 471.4,
+    "excess_6m": 11.5,
+    "excess_1y": 46.0,
+    "excess_2y": 145.1,
+    "excess_3y": 416.1,
+    "avg_m12_m24": 114.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51436,7 +52528,20 @@
    "cons_return_2yr": 38.8,
    "path": "staging/retrospective/AVGO/2022-08-19",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.2,
+    "tr_1y": 53.8,
+    "tr_2y": 212.8,
+    "tr_3y": 448.9,
+    "excess_6m": 12.9,
+    "excess_1y": 48.9,
+    "excess_2y": 177.0,
+    "excess_3y": 392.5,
+    "avg_m12_m24": 120.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51455,7 +52560,20 @@
    "cons_return_2yr": 46.2,
    "path": "staging/retrospective/AVGO/2022-08-26",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.6,
+    "tr_1y": 67.0,
+    "tr_2y": 213.8,
+    "tr_3y": 483.9,
+    "excess_6m": 14.0,
+    "excess_1y": 56.8,
+    "excess_2y": 172.1,
+    "excess_3y": 419.7,
+    "avg_m12_m24": 135.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51474,7 +52592,20 @@
    "cons_return_2yr": 43.1,
    "path": "staging/retrospective/AVGO/2022-09-02",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.4,
+    "tr_1y": 78.0,
+    "tr_2y": 233.1,
+    "tr_3y": 508.5,
+    "excess_6m": 19.1,
+    "excess_1y": 61.3,
+    "excess_2y": 186.0,
+    "excess_3y": 440.0,
+    "avg_m12_m24": 147.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51493,7 +52624,20 @@
    "cons_return_2yr": 37.0,
    "path": "staging/retrospective/AVGO/2022-09-09",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.8,
+    "tr_1y": 67.6,
+    "tr_2y": 176.9,
+    "tr_3y": 556.2,
+    "excess_6m": 23.7,
+    "excess_1y": 56.4,
+    "excess_2y": 139.2,
+    "excess_3y": 491.2,
+    "avg_m12_m24": 139.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51512,7 +52656,20 @@
    "cons_return_2yr": 42.4,
    "path": "staging/retrospective/AVGO/2022-09-16",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.4,
+    "tr_1y": 73.1,
+    "tr_2y": 234.0,
+    "tr_3y": 628.6,
+    "excess_6m": 25.2,
+    "excess_1y": 56.4,
+    "excess_2y": 185.0,
+    "excess_3y": 552.5,
+    "avg_m12_m24": 151.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51531,7 +52688,20 @@
    "cons_return_2yr": 52.7,
    "path": "staging/retrospective/AVGO/2022-09-23",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.4,
+    "tr_1y": 80.8,
+    "tr_2y": 277.4,
+    "tr_3y": 636.6,
+    "excess_6m": 30.6,
+    "excess_1y": 62.1,
+    "excess_2y": 218.9,
+    "excess_3y": 550.7,
+    "avg_m12_m24": 173.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51550,7 +52720,20 @@
    "cons_return_2yr": 61.2,
    "path": "staging/retrospective/AVGO/2022-09-30",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.8,
+    "tr_1y": 91.2,
+    "tr_2y": 297.4,
+    "tr_3y": 657.2,
+    "excess_6m": 30.9,
+    "excess_1y": 69.7,
+    "excess_2y": 233.0,
+    "excess_3y": 564.9,
+    "avg_m12_m24": 192.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51569,7 +52752,20 @@
    "cons_return_2yr": 55.4,
    "path": "staging/retrospective/AVGO/2022-10-07",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.2,
+    "tr_1y": 87.6,
+    "tr_2y": 288.8,
+    "tr_3y": 644.3,
+    "excess_6m": 23.5,
+    "excess_1y": 67.4,
+    "excess_2y": 228.5,
+    "excess_3y": 554.1,
+    "avg_m12_m24": 186.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51588,7 +52784,20 @@
    "cons_return_2yr": 67.6,
    "path": "staging/retrospective/AVGO/2022-10-14",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.2,
+    "tr_1y": 111.1,
+    "tr_2y": 336.1,
+    "tr_3y": 720.5,
+    "excess_6m": 31.0,
+    "excess_1y": 88.6,
+    "excess_2y": 268.9,
+    "excess_3y": 629.5,
+    "avg_m12_m24": 212.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51607,7 +52816,20 @@
    "cons_return_2yr": 59.1,
    "path": "staging/retrospective/AVGO/2022-10-21",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.8,
+    "tr_1y": 93.9,
+    "tr_2y": 309.0,
+    "tr_3y": 675.9,
+    "excess_6m": 31.8,
+    "excess_1y": 79.6,
+    "excess_2y": 249.4,
+    "excess_3y": 591.0,
+    "avg_m12_m24": 201.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51626,7 +52848,20 @@
    "cons_return_2yr": 51.3,
    "path": "staging/retrospective/AVGO/2022-10-28",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.4,
+    "tr_1y": 81.2,
+    "tr_2y": 272.1,
+    "tr_3y": 702.0,
+    "excess_6m": 26.7,
+    "excess_1y": 73.9,
+    "excess_2y": 219.3,
+    "excess_3y": 620.1,
+    "avg_m12_m24": 190.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51645,7 +52880,20 @@
    "cons_return_2yr": 53.8,
    "path": "staging/retrospective/AVGO/2022-11-04",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.1,
+    "tr_1y": 93.7,
+    "tr_2y": 270.7,
+    "tr_3y": 669.9,
+    "excess_6m": 24.6,
+    "excess_1y": 76.4,
+    "excess_2y": 215.7,
+    "excess_3y": 585.0,
+    "avg_m12_m24": 198.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51664,7 +52912,20 @@
    "cons_return_2yr": 38.1,
    "path": "staging/retrospective/AVGO/2022-11-11",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.9,
+    "tr_1y": 88.4,
+    "tr_2y": 252.9,
+    "tr_3y": 591.5,
+    "excess_6m": 18.7,
+    "excess_1y": 76.2,
+    "excess_2y": 199.3,
+    "excess_3y": 514.9,
+    "avg_m12_m24": 171.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51683,7 +52944,20 @@
    "cons_return_2yr": 38.9,
    "path": "staging/retrospective/AVGO/2022-11-18",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.4,
+    "tr_1y": 93.4,
+    "tr_2y": 229.2,
+    "tr_3y": 573.2,
+    "excess_6m": 26.7,
+    "excess_1y": 77.9,
+    "excess_2y": 177.3,
+    "excess_3y": 501.3,
+    "avg_m12_m24": 176.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51702,7 +52976,20 @@
    "cons_return_2yr": 35.1,
    "path": "staging/retrospective/AVGO/2022-11-25",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.3,
+    "tr_1y": 88.2,
+    "tr_2y": 218.5,
+    "tr_3y": 638.5,
+    "excess_6m": 35.4,
+    "excess_1y": 73.4,
+    "excess_2y": 166.6,
+    "excess_3y": 565.6,
+    "avg_m12_m24": 170.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51721,7 +53008,20 @@
    "cons_return_2yr": 32.3,
    "path": "staging/retrospective/AVGO/2022-12-02",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 51.8,
+    "tr_1y": 75.4,
+    "tr_2y": 215.2,
+    "tr_3y": 617.2,
+    "excess_6m": 45.9,
+    "excess_1y": 60.9,
+    "excess_2y": 163.5,
+    "excess_3y": 544.6,
+    "avg_m12_m24": 167.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51740,7 +53040,20 @@
    "cons_return_2yr": 84.3,
    "path": "staging/retrospective/AVGO/2022-12-09",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 49.4,
+    "tr_1y": 76.7,
+    "tr_2y": 235.7,
+    "tr_3y": 657.4,
+    "excess_6m": 39.3,
+    "excess_1y": 58.1,
+    "excess_2y": 178.6,
+    "excess_3y": 578.5,
+    "avg_m12_m24": 168.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51759,7 +53072,20 @@
    "cons_return_2yr": 80.6,
    "path": "staging/retrospective/AVGO/2022-12-16",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 57.8,
+    "tr_1y": 106.5,
+    "tr_2y": 356.8,
+    "tr_3y": 525.3,
+    "excess_6m": 42.3,
+    "excess_1y": 82.3,
+    "excess_2y": 295.4,
+    "excess_3y": 443.2,
+    "avg_m12_m24": 166.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51778,7 +53104,20 @@
    "cons_return_2yr": 80.2,
    "path": "staging/retrospective/AVGO/2022-12-23",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.5,
+    "tr_1y": 106.5,
+    "tr_2y": 328.0,
+    "tr_3y": 544.1,
+    "excess_6m": 36.5,
+    "excess_1y": 81.1,
+    "excess_2y": 269.1,
+    "excess_3y": 458.9,
+    "avg_m12_m24": 172.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51797,7 +53136,20 @@
    "cons_return_2yr": 78.1,
    "path": "staging/retrospective/AVGO/2022-12-30",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 56.8,
+    "tr_1y": 103.0,
+    "tr_2y": 328.6,
+    "tr_3y": 537.3,
+    "excess_6m": 40.1,
+    "excess_1y": 77.0,
+    "excess_2y": 271.2,
+    "excess_3y": 452.2,
+    "avg_m12_m24": 172.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51816,7 +53168,20 @@
    "cons_return_2yr": 69.2,
    "path": "staging/retrospective/AVGO/2023-01-06",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 45.7,
+    "tr_1y": 81.6,
+    "tr_2y": 308.7,
+    "tr_3y": 495.3,
+    "excess_6m": 31.6,
+    "excess_1y": 59.3,
+    "excess_2y": 251.7,
+    "excess_3y": 411.6,
+    "avg_m12_m24": 162.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51835,7 +53200,20 @@
    "cons_return_2yr": 71.9,
    "path": "staging/retrospective/AVGO/2023-01-13",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 55.4,
+    "tr_1y": 94.6,
+    "tr_2y": 296.1,
+    "tr_3y": 523.7,
+    "excess_6m": 41.8,
+    "excess_1y": 73.3,
+    "excess_2y": 246.8,
+    "excess_3y": 444.3,
+    "avg_m12_m24": 170.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51854,7 +53232,20 @@
    "cons_return_2yr": 74.4,
    "path": "staging/retrospective/AVGO/2023-01-20",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 57.2,
+    "tr_1y": 115.5,
+    "tr_2y": 323.1,
+    "tr_3y": 494.1,
+    "excess_6m": 42.2,
+    "excess_1y": 92.0,
+    "excess_2y": 268.7,
+    "excess_3y": 417.6,
+    "avg_m12_m24": 177.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51873,7 +53264,20 @@
    "cons_return_2yr": 68.5,
    "path": "staging/retrospective/AVGO/2023-01-27",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 52.7,
+    "tr_1y": 107.1,
+    "tr_2y": 248.9,
+    "tr_3y": 474.1,
+    "excess_6m": 40.4,
+    "excess_1y": 85.3,
+    "excess_2y": 197.8,
+    "excess_3y": 397.5,
+    "avg_m12_m24": 171.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51892,7 +53296,20 @@
    "cons_return_2yr": 66.6,
    "path": "staging/retrospective/AVGO/2023-02-03",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 49.6,
+    "tr_1y": 108.1,
+    "tr_2y": 271.1,
+    "tr_3y": 446.9,
+    "excess_6m": 40.0,
+    "excess_1y": 86.6,
+    "excess_2y": 222.9,
+    "excess_3y": 374.6,
+    "avg_m12_m24": 171.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51911,7 +53328,20 @@
    "cons_return_2yr": 67.8,
    "path": "staging/retrospective/AVGO/2023-02-10",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.6,
+    "tr_1y": 119.6,
+    "tr_2y": 303.1,
+    "tr_3y": 484.8,
+    "excess_6m": 33.6,
+    "excess_1y": 95.1,
+    "excess_2y": 251.5,
+    "excess_3y": 410.0,
+    "avg_m12_m24": 177.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51930,7 +53360,20 @@
    "cons_return_2yr": 67.2,
    "path": "staging/retrospective/AVGO/2023-02-17",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.4,
+    "tr_1y": 112.3,
+    "tr_2y": 298.1,
+    "tr_3y": 469.2,
+    "excess_6m": 32.5,
+    "excess_1y": 88.0,
+    "excess_2y": 245.0,
+    "excess_3y": 396.4,
+    "avg_m12_m24": 179.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51949,7 +53392,20 @@
    "cons_return_2yr": 72.3,
    "path": "staging/retrospective/AVGO/2023-02-24",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 49.5,
+    "tr_1y": 127.7,
+    "tr_2y": 266.9,
+    "tr_3y": 474.6,
+    "excess_6m": 38.5,
+    "excess_1y": 97.9,
+    "excess_2y": 212.8,
+    "excess_3y": 395.9,
+    "avg_m12_m24": 191.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51968,7 +53424,20 @@
    "cons_return_2yr": 36.0,
    "path": "staging/retrospective/AVGO/2023-03-03",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.3,
+    "tr_1y": 124.1,
+    "tr_2y": 202.6,
+    "tr_3y": 406.3,
+    "excess_6m": 26.9,
+    "excess_1y": 95.6,
+    "excess_2y": 154.7,
+    "excess_3y": 332.7,
+    "avg_m12_m24": 167.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -51987,7 +53456,20 @@
    "cons_return_2yr": 39.9,
    "path": "staging/retrospective/AVGO/2023-03-10",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.0,
+    "tr_1y": 116.0,
+    "tr_2y": 206.6,
+    "tr_3y": 467.8,
+    "excess_6m": 24.7,
+    "excess_1y": 81.6,
+    "excess_2y": 157.8,
+    "excess_3y": 386.8,
+    "avg_m12_m24": 177.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52006,7 +53488,20 @@
    "cons_return_2yr": 36.4,
    "path": "staging/retrospective/AVGO/2023-03-17",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.4,
+    "tr_1y": 98.8,
+    "tr_2y": 214.7,
+    "tr_3y": 419.5,
+    "excess_6m": 21.9,
+    "excess_1y": 66.4,
+    "excess_2y": 166.2,
+    "excess_3y": 342.5,
+    "avg_m12_m24": 172.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52025,7 +53520,20 @@
    "cons_return_2yr": 35.2,
    "path": "staging/retrospective/AVGO/2023-03-24",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.8,
+    "tr_1y": 115.8,
+    "tr_2y": 207.2,
+    "tr_3y": 410.8,
+    "excess_6m": 22.2,
+    "excess_1y": 82.4,
+    "excess_2y": 158.7,
+    "excess_3y": 340.4,
+    "avg_m12_m24": 172.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52044,7 +53552,20 @@
    "cons_return_2yr": 34.1,
    "path": "staging/retrospective/AVGO/2023-03-31",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.9,
+    "tr_1y": 109.7,
+    "tr_2y": 170.2,
+    "tr_3y": 367.8,
+    "excess_6m": 25.7,
+    "excess_1y": 80.3,
+    "excess_2y": 131.0,
+    "excess_3y": 308.2,
+    "avg_m12_m24": 171.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52063,7 +53584,20 @@
    "cons_return_2yr": 38.2,
    "path": "staging/retrospective/AVGO/2023-04-06",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.2,
+    "tr_1y": 118.3,
+    "tr_2y": 141.7,
+    "tr_3y": 415.7,
+    "excess_6m": 31.5,
+    "excess_1y": 89.9,
+    "excess_2y": 114.8,
+    "excess_3y": 349.5,
+    "avg_m12_m24": 180.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52082,7 +53616,20 @@
    "cons_return_2yr": 38.9,
    "path": "staging/retrospective/AVGO/2023-04-14",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.0,
+    "tr_1y": 120.1,
+    "tr_2y": 194.7,
+    "tr_3y": 525.4,
+    "excess_6m": 38.6,
+    "excess_1y": 94.6,
+    "excess_2y": 160.6,
+    "excess_3y": 451.9,
+    "avg_m12_m24": 182.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52101,7 +53648,20 @@
    "cons_return_2yr": 35.9,
    "path": "staging/retrospective/AVGO/2023-04-21",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.3,
+    "tr_1y": 93.5,
+    "tr_2y": 169.3,
+    "tr_3y": 546.0,
+    "excess_6m": 33.4,
+    "excess_1y": 71.7,
+    "excess_2y": 141.2,
+    "excess_3y": 470.0,
+    "avg_m12_m24": 178.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52120,7 +53680,20 @@
    "cons_return_2yr": 37.3,
    "path": "staging/retrospective/AVGO/2023-04-28",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.3,
+    "tr_1y": 117.7,
+    "tr_2y": 213.9,
+    "tr_3y": 548.9,
+    "excess_6m": 35.8,
+    "excess_1y": 93.9,
+    "excess_2y": 178.1,
+    "excess_3y": 472.6,
+    "avg_m12_m24": 182.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52139,7 +53712,20 @@
    "cons_return_2yr": 36.5,
    "path": "staging/retrospective/AVGO/2023-05-05",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.5,
+    "tr_1y": 106.0,
+    "tr_2y": 225.2,
+    "tr_3y": 588.8,
+    "excess_6m": 35.4,
+    "excess_1y": 80.4,
+    "excess_2y": 185.3,
+    "excess_3y": 508.3,
+    "avg_m12_m24": 183.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52158,7 +53744,20 @@
    "cons_return_2yr": 36.3,
    "path": "staging/retrospective/AVGO/2023-05-12",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.2,
+    "tr_1y": 114.3,
+    "tr_2y": 257.7,
+    "tr_3y": 574.9,
+    "excess_6m": 45.3,
+    "excess_1y": 86.1,
+    "excess_2y": 212.7,
+    "excess_3y": 490.4,
+    "avg_m12_m24": 185.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52177,7 +53776,20 @@
    "cons_return_2yr": 26.1,
    "path": "staging/retrospective/AVGO/2023-05-19",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.7,
+    "tr_1y": 107.4,
+    "tr_2y": 244.2,
+    "tr_3y": 512.3,
+    "excess_6m": 36.2,
+    "excess_1y": 79.3,
+    "excess_2y": 198.8,
+    "excess_3y": 432.0,
+    "avg_m12_m24": 166.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52196,7 +53808,20 @@
    "cons_return_2yr": 5.9,
    "path": "staging/retrospective/AVGO/2023-05-26",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.6,
+    "tr_1y": 75.6,
+    "tr_2y": 186.6,
+    "tr_3y": 427.5,
+    "excess_6m": 12.4,
+    "excess_1y": 48.0,
+    "excess_2y": 145.4,
+    "excess_3y": 343.7,
+    "avg_m12_m24": 125.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52215,7 +53840,20 @@
    "cons_return_2yr": 6.0,
    "path": "staging/retrospective/AVGO/2023-06-02",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.7,
+    "tr_1y": 66.0,
+    "tr_2y": 211.5,
+    "tr_3y": 501.3,
+    "excess_6m": 7.6,
+    "excess_1y": 41.2,
+    "excess_2y": 169.7,
+    "excess_3y": 418.8,
+    "avg_m12_m24": 128.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52234,7 +53872,20 @@
    "cons_return_2yr": 6.9,
    "path": "staging/retrospective/AVGO/2023-06-09",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.5,
+    "tr_1y": 77.3,
+    "tr_2y": 208.8,
+    "tr_3y": 395.7,
+    "excess_6m": 10.7,
+    "excess_1y": 51.5,
+    "excess_2y": 166.1,
+    "excess_3y": 319.3,
+    "avg_m12_m24": 133.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52253,7 +53904,20 @@
    "cons_return_2yr": -0.9,
    "path": "staging/retrospective/AVGO/2023-06-16",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.2,
+    "tr_1y": 102.1,
+    "tr_2y": 195.2,
+    "tr_3y": 341.6,
+    "excess_6m": 23.6,
+    "excess_1y": 77.5,
+    "excess_2y": 155.3,
+    "excess_3y": 266.4,
+    "avg_m12_m24": 118.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52272,7 +53936,20 @@
    "cons_return_2yr": 4.6,
    "path": "staging/retrospective/AVGO/2023-06-23",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.7,
+    "tr_1y": 103.6,
+    "tr_2y": 213.9,
+    "tr_3y": 370.7,
+    "excess_6m": 27.5,
+    "excess_1y": 76.3,
+    "excess_2y": 172.2,
+    "excess_3y": 296.4,
+    "avg_m12_m24": 132.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52291,7 +53968,20 @@
    "cons_return_2yr": -0.8,
    "path": "staging/retrospective/AVGO/2023-06-30",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.8,
+    "tr_1y": 87.4,
+    "tr_2y": 222.8,
+    "tr_3y": 343.4,
+    "excess_6m": 21.8,
+    "excess_1y": 63.1,
+    "excess_2y": 180.2,
+    "excess_3y": 270.1,
+    "avg_m12_m24": 122.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52310,7 +54000,20 @@
    "cons_return_2yr": 1.6,
    "path": "staging/retrospective/AVGO/2023-07-07",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.1,
+    "tr_1y": 103.6,
+    "tr_2y": 228.9,
+    "tr_3y": 346.0,
+    "excess_6m": 17.6,
+    "excess_1y": 75.5,
+    "excess_2y": 184.2,
+    "excess_3y": 270.6,
+    "avg_m12_m24": 129.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52329,7 +54032,20 @@
    "cons_return_2yr": -3.2,
    "path": "staging/retrospective/AVGO/2023-07-14",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.8,
+    "tr_1y": 93.7,
+    "tr_2y": 215.0,
+    "tr_3y": 345.6,
+    "excess_6m": 18.9,
+    "excess_1y": 67.5,
+    "excess_2y": 172.8,
+    "excess_3y": 273.5,
+    "avg_m12_m24": 121.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52348,7 +54064,20 @@
    "cons_return_2yr": -4.1,
    "path": "staging/retrospective/AVGO/2023-07-21",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.2,
+    "tr_1y": 77.7,
+    "tr_2y": 226.2,
+    "tr_3y": 338.7,
+    "excess_6m": 28.7,
+    "excess_1y": 54.8,
+    "excess_2y": 184.1,
+    "excess_3y": 268.4,
+    "avg_m12_m24": 122.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52367,7 +54096,20 @@
    "cons_return_2yr": -4.4,
    "path": "staging/retrospective/AVGO/2023-07-28",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.0,
+    "tr_1y": 70.8,
+    "tr_2y": 231.9,
+    "tr_3y": 331.0,
+    "excess_6m": 27.6,
+    "excess_1y": 50.1,
+    "excess_2y": 189.4,
+    "excess_3y": 264.1,
+    "avg_m12_m24": 124.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52386,7 +54128,20 @@
    "cons_return_2yr": -2.4,
    "path": "staging/retrospective/AVGO/2023-08-04",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.0,
+    "tr_1y": 65.4,
+    "tr_2y": 242.6,
+    "tr_3y": 382.1,
+    "excess_6m": 28.6,
+    "excess_1y": 44.6,
+    "excess_2y": 198.2,
+    "excess_3y": 304.6,
+    "avg_m12_m24": 132.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52405,7 +54160,20 @@
    "cons_return_2yr": 3.7,
    "path": "staging/retrospective/AVGO/2023-08-11",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 55.9,
+    "tr_1y": 81.1,
+    "tr_2y": 271.5,
+    "tr_3y": 409.7,
+    "excess_6m": 42.6,
+    "excess_1y": 60.0,
+    "excess_2y": 225.6,
+    "excess_3y": 332.0,
+    "avg_m12_m24": 150.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52424,7 +54192,20 @@
    "cons_return_2yr": 4.2,
    "path": "staging/retrospective/AVGO/2023-08-18",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 52.0,
+    "tr_1y": 103.1,
+    "tr_2y": 275.5,
+    "tr_3y": 368.5,
+    "excess_6m": 36.8,
+    "excess_1y": 74.6,
+    "excess_2y": 224.9,
+    "excess_3y": 287.7,
+    "avg_m12_m24": 155.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52443,7 +54224,20 @@
    "cons_return_2yr": 1.0,
    "path": "staging/retrospective/AVGO/2023-08-25",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.3,
+    "tr_1y": 97.7,
+    "tr_2y": 250.5,
+    "tr_3y": 326.9,
+    "excess_6m": 37.1,
+    "excess_1y": 68.4,
+    "excess_2y": 201.3,
+    "excess_3y": 247.9,
+    "avg_m12_m24": 150.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52462,7 +54256,20 @@
    "cons_return_2yr": -1.4,
    "path": "staging/retrospective/AVGO/2023-09-01",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 61.5,
+    "tr_1y": 88.9,
+    "tr_2y": 245.8,
+    "tr_3y": 331.6,
+    "excess_6m": 47.0,
+    "excess_1y": 62.5,
+    "excess_2y": 199.7,
+    "excess_3y": 258.0,
+    "avg_m12_m24": 147.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52481,7 +54288,20 @@
    "cons_return_2yr": 3.4,
    "path": "staging/retrospective/AVGO/2023-09-08",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.8,
+    "tr_1y": 62.1,
+    "tr_2y": 308.1,
+    "tr_3y": 337.8,
+    "excess_6m": 38.1,
+    "excess_1y": 39.3,
+    "excess_2y": 259.3,
+    "excess_3y": 261.0,
+    "avg_m12_m24": 155.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52500,7 +54320,20 @@
    "cons_return_2yr": 4.1,
    "path": "staging/retrospective/AVGO/2023-09-15",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.2,
+    "tr_1y": 99.3,
+    "tr_2y": 332.6,
+    "tr_3y": 306.4,
+    "excess_6m": 30.4,
+    "excess_1y": 71.3,
+    "excess_2y": 280.7,
+    "excess_3y": 231.1,
+    "avg_m12_m24": 161.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52519,7 +54352,20 @@
    "cons_return_2yr": 7.0,
    "path": "staging/retrospective/AVGO/2023-09-22",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 64.5,
+    "tr_1y": 108.9,
+    "tr_2y": 314.0,
+    "tr_3y": 348.2,
+    "excess_6m": 42.6,
+    "excess_1y": 75.3,
+    "excess_2y": 255.8,
+    "excess_3y": 263.5,
+    "avg_m12_m24": 173.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52538,7 +54384,20 @@
    "cons_return_2yr": 6.8,
    "path": "staging/retrospective/AVGO/2023-09-29",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 60.8,
+    "tr_1y": 110.4,
+    "tr_2y": 300.2,
+    "tr_3y": 336.0,
+    "excess_6m": 37.7,
+    "excess_1y": 75.1,
+    "excess_2y": 241.6,
+    "excess_3y": 252.2,
+    "avg_m12_m24": 176.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52557,7 +54416,20 @@
    "cons_return_2yr": 4.9,
    "path": "staging/retrospective/AVGO/2023-10-06",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 59.7,
+    "tr_1y": 111.5,
+    "tr_2y": 302.2,
+    "tr_3y": 353.0,
+    "excess_6m": 38.2,
+    "excess_1y": 76.4,
+    "excess_2y": 242.5,
+    "excess_3y": 266.5,
+    "avg_m12_m24": 175.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52576,7 +54448,20 @@
    "cons_return_2yr": 0.4,
    "path": "staging/retrospective/AVGO/2023-10-13",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.4,
+    "tr_1y": 107.9,
+    "tr_2y": 308.9,
+    "tr_3y": 312.6,
+    "excess_6m": 34.2,
+    "excess_1y": 71.9,
+    "excess_2y": 252.0,
+    "excess_3y": 227.2,
+    "avg_m12_m24": 167.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52595,7 +54480,20 @@
    "cons_return_2yr": 3.9,
    "path": "staging/retrospective/AVGO/2023-10-20",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.4,
+    "tr_1y": 113.2,
+    "tr_2y": 314.4,
+    "tr_3y": 300.0,
+    "excess_6m": 24.0,
+    "excess_1y": 72.7,
+    "excess_2y": 251.6,
+    "excess_3y": 212.2,
+    "avg_m12_m24": 180.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52614,7 +54512,20 @@
    "cons_return_2yr": 5.8,
    "path": "staging/retrospective/AVGO/2023-10-27",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 61.6,
+    "tr_1y": 108.9,
+    "tr_2y": 337.2,
+    "tr_3y": 316.8,
+    "excess_6m": 37.0,
+    "excess_1y": 66.2,
+    "excess_2y": 266.9,
+    "excess_3y": 224.0,
+    "avg_m12_m24": 190.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52633,7 +54544,18 @@
    "cons_return_2yr": 0.5,
    "path": "staging/retrospective/AVGO/2023-11-03",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.0,
+    "tr_1y": 93.8,
+    "tr_2y": 315.8,
+    "excess_6m": 27.6,
+    "excess_1y": 60.8,
+    "excess_2y": 255.3,
+    "avg_m12_m24": 180.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52652,7 +54574,18 @@
    "cons_return_2yr": -7.4,
    "path": "staging/retrospective/AVGO/2023-11-10",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.3,
+    "tr_1y": 94.0,
+    "tr_2y": 279.0,
+    "excess_6m": 21.3,
+    "excess_1y": 56.6,
+    "excess_2y": 221.1,
+    "avg_m12_m24": 161.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -52671,7 +54604,18 @@
    "cons_return_2yr": -9.3,
    "path": "staging/retrospective/AVGO/2023-11-17",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.8,
+    "tr_1y": 70.7,
+    "tr_2y": 255.0,
+    "excess_6m": 25.6,
+    "excess_1y": 39.3,
+    "excess_2y": 204.2,
+    "avg_m12_m24": 160.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -52690,7 +54634,18 @@
    "cons_return_2yr": -9.4,
    "path": "staging/retrospective/AVGO/2023-11-24",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.9,
+    "tr_1y": 69.9,
+    "tr_2y": 290.7,
+    "excess_6m": 27.8,
+    "excess_1y": 37.6,
+    "excess_2y": 240.7,
+    "avg_m12_m24": 163.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "AVGO",
@@ -52709,7 +54664,18 @@
    "cons_return_2yr": -4.6,
    "path": "staging/retrospective/AVGO/2023-12-01",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.0,
+    "tr_1y": 76.5,
+    "tr_2y": 319.9,
+    "excess_6m": 28.4,
+    "excess_1y": 43.8,
+    "excess_2y": 268.7,
+    "avg_m12_m24": 181.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52728,7 +54694,18 @@
    "cons_return_2yr": 94.6,
    "path": "staging/retrospective/AVGO/2023-12-08",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.1,
+    "tr_1y": 92.3,
+    "tr_2y": 329.5,
+    "excess_6m": 33.3,
+    "excess_1y": 58.8,
+    "excess_2y": 277.8,
+    "avg_m12_m24": 181.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52747,7 +54724,18 @@
    "cons_return_2yr": 62.7,
    "path": "staging/retrospective/AVGO/2023-12-15",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 54.5,
+    "tr_1y": 100.8,
+    "tr_2y": 204.7,
+    "excess_6m": 38.5,
+    "excess_1y": 71.0,
+    "excess_2y": 157.1,
+    "avg_m12_m24": 138.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52766,7 +54754,18 @@
    "cons_return_2yr": 63.8,
    "path": "staging/retrospective/AVGO/2023-12-22",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 48.3,
+    "tr_1y": 98.2,
+    "tr_2y": 208.4,
+    "excess_6m": 32.6,
+    "excess_1y": 71.9,
+    "excess_2y": 160.8,
+    "avg_m12_m24": 142.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "AVGO",
@@ -52785,7 +54784,18 @@
    "cons_return_2yr": 64.7,
    "path": "staging/retrospective/AVGO/2023-12-29",
    "generated": "2026-11-02",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.8,
+    "tr_1y": 118.5,
+    "tr_2y": 217.1,
+    "excess_6m": 29.6,
+    "excess_1y": 91.8,
+    "excess_2y": 169.4,
+    "avg_m12_m24": 145.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "LOW",

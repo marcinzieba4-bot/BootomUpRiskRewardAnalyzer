@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "AVGO",
+ "as_of": "2021-05-21",
+ "computed": "2026-11-02",
+ "data_source": "Yahoo Finance daily closes + dividends (AVGO, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2021-11-19",
+   "price": 568.72,
+   "dividends": 7.2,
+   "total_return_pct": 27.6,
+   "benchmark_total_return_pct": 13.7,
+   "excess_pct": 14.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2022-05-20",
+   "price": 543.19,
+   "dividends": 15.4,
+   "total_return_pct": 23.8,
+   "benchmark_total_return_pct": -4.7,
+   "excess_pct": 28.5,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2023-05-19",
+   "price": 682.25,
+   "dividends": 32.8,
+   "total_return_pct": 58.5,
+   "benchmark_total_return_pct": 3.8,
+   "excess_pct": 54.6,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2024-05-21",
+   "price": 1399.2,
+   "dividends": 52.5,
+   "total_return_pct": 221.7,
+   "benchmark_total_return_pct": 32.6,
+   "excess_pct": 189.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2023-05-19",
+   "price": 682.25
+  },
+  "low": {
+   "date": "2022-10-14",
+   "price": 427.1
+  },
+  "max_drawdown_pct": -36.7,
+  "return_to_avg_price_m12_m24_pct": 21.8
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Broadcom: custom AI silicon + VMware software; semi cycle exposure",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
