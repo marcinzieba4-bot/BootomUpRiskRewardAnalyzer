@@ -4256,6 +4256,137 @@ Judgement calls that could carry hindsight:
 - the builder had read the 2017-2020 hindsight summary (the commit message of its outcomes) before this range was built. Every
   2021-2023 encoding above applies a rule that existed before, and none was tuned on an outcome.
 
+### AVGO 2024-2026: VMware, the 10-for-1 split, FY2024 excluded, quarter guides again
+
+```bash
+python3 retro/build_avgo.py --weekly 2024-01-01 2026-10-31                  # 148 dates, 2024-01-05 .. 2026-10-30
+for c in 2024-01-01 2024-03-01 2024-06-13 2024-07-15 2024-09-01 2024-12-15 2025-03-01 2025-06-01 2025-09-01 2025-12-15 \
+         2026-03-01 2026-06-01 2026-09-01 2026-11-01; do python3 retro/tools/firewall.py $c AVGO; done
+```
+
+Every 8-K and 8-K/A of Broadcom Inc. from the Q4 FY23 release to 2026-11-02 was checked for a guided number: the items of each
+and the headline of every exhibit 99. The eleven releases were read in full (headlines, statements, outlooks, dividend, split and
+repurchase statements), and so were the FY2024 and FY2025 10-Ks for the history, the tax items, the fiscal calendar, the business
+wording and the risk factors. The nine 10-Qs were searched for dividend declarations, revenue expectations and recent developments;
+the DEFA14As, the exchange-offer S-4s and 424B3s and the debt prospectuses (424B5, 424B2, FWP) for Broadcom's own outlook. 149 more
+strings were checked with `verbatim.py` (1,475 in all). 245 structured checks read every print's income-statement and balance-sheet
+figures back from its own release (each year-ago inventory and each guide's year-ago revenue from that quarter's own release, the
+previous quarter's per-share column across the split) and every vintage's from its 10-K. Each of the 13 new sources' dates comes from
+EDGAR's acceptance time. Thresholds and signals are unchanged. Decided on 2026-11-02, before any 2024-2026 date was built or scored:
+
+- **Two vintages:** the FY2024 10-K (accepted 2024-12-20 17:26 ET, dated 2024-12-23) and FY2025 (2025-12-18 16:04 ET, dated
+  2025-12-19). Each holds the ten fiscal years to its latest one, every year from the latest 10-K that reports it: FY2015-FY2024 and
+  FY2016-FY2025. In the second, FY2016 (a loss) is the first year, so the history and the P/E window start with FY2017 (the ACN FY02
+  rule, as for FY2009 and FY2014). No FY2026 10-K is out yet.
+- **The 10-for-1 split** (`splits`): announced in the Q2 FY24 release (dated 2024-06-13), trading split-adjusted from 2024-07-15,
+  Yahoo's split date. From that day every per-share fact published before it is divided by 10 and every share count multiplied (the
+  shared `on_basis`, the UNP and AAPL rule), and prices are on the as-of share basis throughout ($1,700.67 on 2024-07-12, $157.35 on
+  2024-07-19). The FY2024 and FY2025 10-Ks report FY2022 onward after the split; the earlier years of those vintages keep the
+  publication date of the 10-K they come from (`eps_published`, `shares_published`), so on_basis divides them. FY22's $2.65 and FY23's
+  $3.30 in the FY2024 10-K replace $26.53 and $32.98 divided by 10 (rounding only).
+- **Builder changes for the split, no earlier output changes.** The check that refused a split after an excluded year now applies
+  to the prints in scope (no excluded year's figure is shown on another share basis). As in the AAPL builder, the EPS history's
+  comment carries on_basis's split note and a dividend declared before the split says "divided by 10 from the 10-for-1 split". The
+  latest print's per-share words (EPS, shares, the cash return), when published before the split, say "(per share before the 10-for-1
+  split effective 2024-07-15)": seven dates, 2024-07-19 to 2024-08-30. The 752 dates of 2009-2023 rebuild byte-identical.
+- **EPS: GAAP diluted EPS from continuing operations,** as since 2009: FY24 $1.29 (net $1.23, after the split, with the discontinued
+  operations VMware brought), FY25 $4.77. From FY2026 the statements carry no discontinued operations.
+- **FY2024 excluded, a distorted year (the AAPL FY2002 test, as for FY2014).** Its listed one-off items exceed its $6,168M income
+  from continuing operations: the Q3 FY24 release's "one-time discrete non-cash tax provision of $4.5 billion" from an intra-group
+  transfer of IP rights, plus the Q4 FY24 release's $1,787M of restructuring and other charges, $549M of acquisition-related costs and
+  $157M loss on debt extinguishment (VMware): $6,993M. The FY2024 10-K puts the transfer at 39.6 points of the year's 37.8% effective
+  tax rate (about $3.9B on $9,916M of pre-tax income), and with that figure the items (about $6.4B) still exceed the income. No EPS
+  excluding only them was published (the non-GAAP $4.87 also removes amortization and stock-based compensation: the 2009 rule).
+  Both facts are public with the Q4 FY24 print (2024-12-13), so the exclusion starts there. The NKE FY2018 rule then applies:
+  FY2024's own days leave the P/E window ("ex-FY24"), growth is measured only between years in the history, and FY23's EPS stands for
+  FY25E until the Q4 FY25 print. FY2025 is kept: its listed items, including a one-time discrete non-cash tax benefit of $2.1 billion
+  from lapses of statutes of limitations, are fractions of its $23,126M income (the AAPL FY2003 test and its mirror).
+- **Guides.**
+  - Fiscal 2024: the Q4 FY23 release's $50.0 billion (+39.6% on FY23) is reiterated in the Q1 FY24 release (a record with the same
+    numbers, the CyOptics rule) and raised to $51.0 billion (+42.4%) in the Q2 FY24 release. With no quarter guide in scope, r2's
+    fiscal-year fallback applies until the Q3 FY24 release.
+  - From the Q3 FY24 release each release guides the next quarter's revenue as a dollar level, read against the same quarter a year
+    earlier from its own release: Q4 FY24 $14.0B (+50.6%), Q1 FY25 $14.6B (+22.1%, against the 14-week Q1 FY24, as published: the
+    2011 rule), Q2 FY25 $14.9B (+19.3%), Q3 FY25 $15.8B (+20.9%), Q4 FY25 $17.4B (+23.8%), Q1 FY26 $19.1B (+28.1%), Q2 FY26 $22.0B
+    (+46.6%), Q3 FY26 $29.4B (+84.3%), Q4 FY26 $34.8B (+93.2%).
+  - The Adjusted EBITDA percentages and, from the Q2 FY26 release, a non-GAAP operating income margin are display only (the 2009
+    rule). No release gives a GAAP margin guide, so there is no margin step.
+- **Dividends,** the latest declared rate from the first filing that states it: $5.25 (2023-12-08), divided by 10 from 2024-07-15;
+  $0.53 (2024-09-06, the first rate declared after the split), $0.59 (2024-12-13) and $0.65 (2025-12-12).
+- **Release timing.** Every release came after the close. Through FY2025 each was a Thursday, dated the Friday, the week's last
+  trading day: those prints meet that day's close, public before the open. The Q2 FY24 release and the three FY2026 releases came on
+  a Wednesday: dated the Thursday, with the week's date the Friday after.
+- **The fiscal calendar.** FY2024 has 53 weeks (its first quarter 14) and ends on 2024-11-03, which is also the Sunday closest to
+  October 31, so it needs no `fiscal_calendar` entry. FY2025 ends on 2025-11-02. The 10-Ks now state the rule as "the Sunday closest
+  to October 31".
+- **Durability unchanged:** DURABLE, risk 2, in each 10-K's words; the FY2025 10-K: "We operate in a highly cyclical semiconductor
+  industry that is undergoing profound change due to AI". CLOUD stays on the watch list in each 10-K's wording: sales "of our
+  semiconductor products for use in traditional enterprise data centers" (FY2024), "for use in enterprise data centers" (FY2025);
+  the data-center Ethernet sentence now reads "AI data center" (FY2024) and "enterprise and AI data center" (FY2025). GENAI stays
+  off the list. The FY2024 and FY2025 10-Ks name AI as Broadcom's own market and products (AI networking, custom accelerators,
+  VMware's Private AI), as an upturn "which may not be sustainable", as a source of cyber attacks and as a reason for new business
+  models (AI racks), never as a substitute for its products. The FY2024 10-K mentions "software seat licenses" among what it sells;
+  no filing ties them to AI substitution.
+- **Adds nothing:**
+  - the VMware pro formas (8-K/A of 2024-02-08, 8-Ks of 2024-07-08 and 2025-09-10) and the split's charter amendment (2024-07-12);
+  - the debt offerings (424B5, 424B2, FWP), the exchange offers (S-4, 424B3), the tender offers (2026-06-11, 2026-06-18), the credit
+    agreements and repayments, and the share repurchase programs (diluted share counts carry them);
+  - the Google TPU and Anthropic capacity agreement (2026-04-06) and the Apple custom ASIC agreements (2026-07-06), multi-year;
+  - the AI XPV platform and its backstop (8-K of 2026-10-27; the Q3 FY26 10-Q's recent developments: a contingent liability of up to
+    about $29 billion, no guided number);
+  - officers, board, AGM votes, the CEO's performance award (2025-09-09) and the proxies.
+- **The last date is 2026-10-30,** a complete week: the series was built on 2026-11-02 before the open. The newest dates have no
+  two-year outcome yet.
+
+Controls: altering one value of each print, Q4 full-year figure (the excluded FY2024's revenue), guide, vintage, dividend and event
+changes no date before its publication and changes the first weekly date on or after it, and the split changes none before its
+effective date (32 of 32). No new fact appears in a model dated before its publication (91,759 checks over the 900 AVGO models), and no
+later calendar year appears in any model, report or analysis of 2024-2026. The 752 dates of 2009-2023 rebuild byte-identical, and so do
+the 2008 dates of ACN and the 2008-2009 dates of UNP, LOW, AAPL and NKE. The firewall changes no earlier model at the 14 cutoffs above.
+
+Seen in the build (method behaviour, not tuned):
+- **Classes:** RICH on 71 dates, FAIR on 47, CHEAP on 30. Tiers: AVOID on 68, BUY on 52, ACCUMULATE on 21, WATCHLIST on 7. All eight
+  robustness variants agree on 74 dates, seven on 51, six on 20, five or fewer on 3. Ratio B is infinite on 24 dates.
+- **2024 to the Q2 FY24 print** (FY23's $32.98, $3.298 after the split; the FY2024 guide +39.6%, BASE and BULL +34.5%/yr): CHEAP and BUY
+  on all 23 dates (31.8-42.7x, the 53rd-70th percentile, Ratio B 0.27-0.64).
+- **The raised FY2024 guide and the Q4 FY24 guide** (BASE +37.3%, then +45.5%/yr; 41.5-55.7x, the 64th-92nd percentile): FAIR on 20
+  of 26 dates, CHEAP on 3, RICH on 3 (2024-06-14, 2024-07-05 and 2024-07-12); BUY on 9, ACCUMULATE on 17.
+- **From the Q4 FY24 print, FY2024 excluded,** FY23's $3.30 stands for FY25E at 44.3-122.1x (the 66th-100th percentile). The EPP floor
+  rose from 23x to 34x on 2025-01-03, when 2014 left the ten-year window and 2025 (about 70x) joined its calendar-year lows; with
+  FY2024's own days out of the window, 2024's low was already 48.4x. RICH on 46 of 52 dates and AVOID on 48; FAIR on 2025-03-21 to
+  2025-04-25 and CHEAP on 2025-04-04, at the April low (44.3x). The guides' +19.3% to +23.8% less the net buyback (-5.7%/yr: 2,810M
+  diluted shares in FY15 after the split, 4,778M in FY24) put BASE at +13.6% to +18.1%/yr, and BULL is +26.8%/yr (FY15 to FY23). From
+  2025-06-27 the price stood above the BULL price: Ratio B infinite on 24 dates.
+- **From the Q4 FY25 print, on FY25's $4.77** (63.0-93.7x, the 87th-100th percentile; the floor 32-33x): RICH and AVOID on all 12
+  dates to 2026-02-27 (BASE +22.8%, then +26.3%/yr with the FY2025 vintage's -1.8%/yr buyback). The Q2 FY26 guide (BASE +44.8%):
+  RICH on 10 of 13 dates, CHEAP on 2026-03-20 to 2026-04-02. The Q3 and Q4 FY26 guides read +84.3% and +93.2% against FY2025's
+  quarters (BASE +82.5% and +91.4%/yr): FAIR on all 22 dates to 2026-10-30, BUY on 20, the conservative case +54% to +125%.
+- **The proxy composite:** 2.55 on Q4 FY23, 2.2 on Q1-Q2 FY24 (VMware's operating expenses and the margin change at BEAR), 2.4 on
+  Q3-Q4 FY24, 3.5 on Q1 FY25, 3.05 on Q2 FY25, 2.9 on Q3-Q4 FY25, 2.75 on Q1 FY26, 2.9 on Q2 FY26 and 3.2 on Q3 FY26.
+
+How far each call moves the classes (the 148 dates rebuilt with one encoding changed; no outcome consulted):
+- FY2024 at GAAP $1.29 instead of excluded would change 6 classes (FAIR to RICH on 5 dates of 2025-03-21 to 2025-04-25, CHEAP to RICH
+  on 2025-04-04) and 14 tiers. FY24's $1.29 would anchor FY25E (113x on 2025-04-04, the 90th percentile) and BEAR would become FY23
+  to FY24's -60.9%/yr; most dates of 2025 read RICH either way;
+- FY2018 at GAAP $28.48 (the exclusion decided in 2017-2020) would change 55 classes and 66 tiers, all toward a richer reading: CHEAP
+  to FAIR on 5 dates, CHEAP to RICH on 18 and FAIR to RICH on 32;
+- BASE on the latest quarter's revenue growth instead of the guides would change 33 classes and 29 tiers, both ways: 26 toward a
+  richer reading (13 of them from 2026-06-05, where the guides ran far above the quarter just reported) and 7 toward a cheaper one
+  (2024-07-05 to 2025-02-28);
+- FY2016 as an interior gap in the FY2025 vintage would change none.
+
+Judgement calls that could carry hindsight:
+- excluding FY2024 by the AAPL FY2002 test (6 classes, 14 tiers), with the one-time tax provision counted as a listed item, as the
+  FY2018 tax benefits were, by a builder who knows what FY2025 and FY2026 earned;
+- the FY2018 exclusion, carried from 2017-2020, which moves 55 classes and 66 tiers here;
+- BASE on the guides (33 classes against the quarter's growth): the 2026 guides read +84% and +93% against FY2025's quarters;
+- GENAI kept off the watch list (text only), and the reading of "software seat licenses";
+- the split encoding (`eps_published`: rounding only) and the display marker for pre-split words;
+- the signals, unchanged since 2009, for a company whose software segment was 42% of FY2025 revenue; DURABLE rather than CYCLICAL
+  (the class label only), though the FY2025 10-K calls the industry "highly cyclical" and "undergoing profound change due to AI";
+- the builder had read the 2017-2020 and 2021-2023 hindsight findings before this range was built. Every 2024-2026 encoding above
+  applies a rule that existed before (the split encodings follow the AAPL builder), and none was tuned on an outcome.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -4330,6 +4461,9 @@ What the gates enforce:
   2020, are scoped to other industries ("AVGO 2017-2020"). The FY2021-FY2023 10-Ks repeat that sentence, so it stays there through
   2023. GENAI, live from 2022-11-30, stays off the list: its scope names none of Broadcom's products, and the FY2022 and FY2023 10-Ks
   name AI only as features of its own products and in one regulatory risk, never as a substitute for them ("AVGO 2021-2023").
+  The FY2024 and FY2025 10-Ks keep the cloud risk (sales "for use in traditional enterprise data centers", then "for use in enterprise
+  data centers"), so CLOUD stays through 2026; they name AI as Broadcom's own market, a possibly unsustainable upturn, a source of
+  cyber attacks and a reason for new business models, never as a substitute, so GENAI stays off ("AVGO 2024-2026").
 
 ## Workflow
 

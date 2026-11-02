@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  AVGO  ·  Broadcom Inc.  ·  $168.92  ·  RETROSPECTIVE as of 2024-11-01
+  Signal: ◉ BUY   Ratio B: 0.71x   Adj gap: +0.38  [MODESTLY UNDERVALUED]
+  Point-in-time: 17 sources, latest published 2024-11-01; latest print Q3 FY24 (Sep 5)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E net revenue, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Target market                  FY2024E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Semiconductor solutions       $ 42.44  $42.44  $64.24    +0.00   +21.80
+    +9.2% net revenue in FY23
+  Infrastructure software       $ 11.50  $11.50  $17.41    +0.00    +5.91
+    +3.4% net revenue in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 53.94  $53.94  $81.65    +0.00   +27.71
+  FY2024E = FY23 $35.819B × (1 + 50.6%: the Q4 FY24 revenue guide (Q3 FY24 release), YoY, applied to the year (no FY24 revenue guide)); split pro rata to FY23 net revenue by segment (FY2023 10-K)
+  Q3 FY24 (Sep 5): net revenue $13.072B +47.3% YoY (+4.7% QoQ); inventories +2.8%; R&D + SG&A +97.8%;
+  gross margin 63.92% (-552.3bp); operating margin 28.98% (-1446.5bp); EPS $(0.31) vs $0.77
+  Net revenue: net revenue $13,072M vs $8,876M: 'Revenue of $13,072 million for the third quarter, up 47 percent from the prior year period'; inventory $1,894M (August 4, 2024) vs $1,842M (July 30, 2023, the Q3 FY23 release); diluted loss per share from continuing operations $(0.31) vs $0.77, after the 10-for-1 split (net loss $(0.40)): 'a one-time discrete non-cash tax provision of $4.5 billion from the impact of an intra-group transfer of certain IP rights to the United States'; diluted shares 4,663M in Q3 FY24
+  Q4 FY24 outlook (Q3 FY24 release): net revenue $14,000.0M ('Fourth quarter revenue guidance of approximately $14.0 billion') against Q4 FY23's $9,295M: +50.6% YoY; display only: approximately $14.0 billion, 'an increase of 51 percent from the prior year period'; Adjusted EBITDA approximately 64 percent of projected revenue (non-GAAP); no fiscal-year revenue, EPS or margin guide
+
+  FY2024E EPS check:  $53.940B × 42.1% pre-tax × (1−6.7%) ÷ 4.663B  =  $4.55  (FY2024E: no EPS guide in numbers, FY23's $3.298 stands)
+  FY2026E BEAR check: $53.940B × 42.1% ÷ 5.150B  =  $4.12  (scenario $3.17)
+  FY2026E BULL check: $81.650B × 42.5% ÷ 5.150B  =  $6.29  (scenario $6.98)
+  Every 1pp of pre-tax margin ≈ $0.108 EPS ≈ $3.52/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -39.0%   ≥-18.0%     ≥4.0%    ≥11.0%    +47.3%  ★ XBULL  ████
+  Gross margin change                 -1080.0bp  ≥-560.0bp  ≥-30.0bp  ≥1480.0bp  -552.3bp  ◦ BASE  ██░░
+  Opex growth less net revenue         +31.0pp   ≤16.0pp    ≤2.0pp  ≤-18.0pp   +50.5pp  ⚠ BEAR  █░░░
+  Inventory growth less net revenue    +54.0pp   ≤23.0pp   ≤-8.0pp  ≤-18.0pp   -44.5pp  ★ XBULL  ████
+  Operating margin change             -1540.0bp  ≥-820.0bp  ≥-100.0bp  ≥1630.0bp  -1446.5bp  ⚠ BEAR  █░░░
+  Cloud: net effect on enterprise storage and networking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.40 / 4.00
+  Market composite:   1.92 / 4.00  (back-solved from $168.92 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.30  →  Gap +0.38  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 net revenue +7.9%, gross margin 68.9%; Q3 gross margin 63.92% (-552bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 51.2x FY24E vs a 32.6x 10-yr ex-FY16 ex-FY18 median (86th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q4 FY24 revenue guide (Q3 FY24 release) +50.6% vs a 16.6% 8-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash $9.952B, long-term debt $66.798B (Q3 FY24), FY23 free cash flow $17.633B (net cash provided by operating activities $18,085M less purchases of property, plant and equipment $452M), dividend $2.12 a year  (+0.30 × 15%  =  +0.045)
+    +  Cloud data centers: data-center Ethernet switching and routing — it sells to them as well  (+0.20 × 10%  =  +0.020)
+    -  Shift to cloud-based IT (FY2023 10-K): 'the shift to cloud-based IT solutions and services, such as hyperscale computing' may hurt its sales into traditional enterprise data centers  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +47.3%    -39.0%  -86.3%  End demand and distributor destocking…
+  Gross margin change                 -552.3bp  -1080.0bp  -527.7bp  Fab under-utilization and price erosi…
+  Opex growth less net revenue         +50.5pp   +31.0pp  -19.5pp  R&D and SG&A do not come down with re…
+  Inventory growth less net revenue    -44.5pp   +54.0pp  +98.5pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -1446.5bp  -1540.0bp  -93.5bp  Operating leverage works in reverse
+  Cloud: net effect on enterprise storage and networking    +2.0/4    +1.0/4  -1.0/4  Enterprise data centers move to the c…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$118.58  (model)  /  $60.86 (defined)
+  Bear probability (proxy model):  11.1%
+
+  KEY TRIGGER: net revenue went from +43.0% (Q2 FY24) to +47.3% YoY (Q3 FY24), +4.7% on the quarter before;
+  the bear case needs the downturn to resume with gross margin (-552.3bp now)
+  and inventories (-44.5pp against revenue) giving way. A semiconductor downturn shows up in distributor inventories and the
+  next-quarter guide first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.30  (FY2024E: no EPS guide in numbers, FY23's $3.298 stands)
+  Min viable P/E at panic:          23x  [median of calendar-year P/E lows: 2014 17.2x, 2015 19.4x, 2016 40.4x, 2017 43.2x, 2018 34.1x, 2019 35.8x, 2020 23.4x, 2021 19.9x, 2022 13.5x, 2023 16.8x, 2024 31.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $75.85/share
+  Current $168.92 vs Updated EPP $75.85:  +123%  ⚠ far above floor — large drawdown room
+  Bear $60.86 vs Updated EPP $75.85:  -20%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -18.0      -65.3   BASE floor (vs +47 now)
+  Gross margin change                         -560.0       -7.7   BASE floor (vs -552 now)
+  Opex growth less net revenue                  16.0      -34.5   BASE floor (vs +50 now)
+  Inventory growth less net revenue             23.0      +67.5   BASE floor (vs -44 now)
+  Operating margin change                     -820.0     +626.5   BASE floor (vs -1446 now)
+  Cloud: net effect on enterprise storage and networking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.30 × (1+43.5%)² = $6.79
+  At 32x P/E (conservative):  $217.33/share
+  + Cumul. dividends (2yr):  +$4.37/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $217.33  (▲48.41 from $168.92)
+  Conservative total return:  +31% over 2yr  = +16%/yr
+
+  43.5% EPS growth is what is left once the premium multiple (51.2x)
+  mean-reverts to 32x. Breakeven at 32x needs FY2026E EPS of $5.14,
+  i.e. 24.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (prices since the listing on 2009-08-06)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $86.00  –  $186.42  (at 83th pct of range)
+  Annual dividend:      $2.12/share  (yield 1.3%)
+  Realized vol:         46% annualized (251 daily returns since the listing)
+  Beta vs broad market: 2.56
+  1-sigma range (1yr):  $92.06  –  $245.78  ($168.92 ± 46%)
+  2-sigma range (1yr):  $15.20  –  $322.64
+  ────────────────────────────────────────────────────────────
+  Bear $60.86 requires:  ~1.4σ price move  (within normal vol range)
+  An analog semiconductor maker listed on 2009-08-06: the stock is +94% off its November
+  low while net revenue went from +43.0% (Q2 FY24) to +47.3% YoY (Q3 FY24), +4.7% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        3.17   19.2x  $  60.86    11.1%     21.8%   -10.7pp  EPS -2.0%/yr (worst year FY15-FY23 ex-FY16 ex-FY18, capped at 0%); P/E to its 10th pct
+  BASE        6.98   32.6x  $ 227.55    38.8%     58.3%   -19.5pp  EPS +45.5%/yr (Q4 FY24 guide YoY + margin + buyback); P/E at its 10-yr ex-FY16 ex-FY18 median
+  BULL        6.98   46.1x  $ 321.78    42.1%     16.7%   +25.4pp  EPS +45.5%/yr (FY15-FY23 ex-FY16 ex-FY18 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      13.82   54.4x  $ 751.81     8.0%      3.2%    +4.8pp  EPS +104.7%/yr (best 2-yr run FY15-FY23 ex-FY16 ex-FY18, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $290.48  /  Market EV: $223.48  /  Current: $168.92
+  Conservative EV (2yr, ④): $217.33 + $4.37 divs = $221.70 total value
+  Downside (→ Bear $60.86): 64.0%   Upside (→ Bull $321.78): 90.5%   Ratio B 0.71x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $168.92 the market needs $223.40 in two years —
+  at or below the BASE case. That is a market composite of 1.92 against a model
+  read of 2.30: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.71x    +123%    +0.38  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.43x    +123%    +0.74  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.91x    +123%    -0.13  FAIRLY VALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.65x    +123%    +0.43  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.77x    +123%    +0.32  MODESTLY UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.71x    +123%    +0.68  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.71x     +97%    +0.48  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.71x    +123%    +0.52  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY24 print — net revenue against the Q4 FY24 revenue guide (Q3 FY24 release): +50.6% YoY
+  (2) Gross margin — -552.3bp in Q3 FY24: utilization and price erosion, what must hold if revenue does not
+  (3) The Q4 FY24 guide — about $14,000.0M (+50.6% YoY): Avago guides one quarter at a time, in revenue only
+  (4) Inventories — +2.8% against net revenue +47.3% in Q3 FY24 (-44.5pp): write-downs follow if orders slow
+  (5) Capital structure at 51x — $0.525 a share paid on June 28, 2024, on a split-adjusted basis ($2,452 million); the ten-for-one forward stock split completed on July 12, 2024; long-term debt $66,798M at August 4, 2024
+  ◉ BUY  |  EPP floor $75.85  |  ADD below ~$193.42  |  TRIM above $321.78
+════════════════════════════════════════════════════════════════════════
+

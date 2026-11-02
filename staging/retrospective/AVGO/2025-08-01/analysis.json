@@ -1,0 +1,294 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "AVGO",
+ "company": "Broadcom Inc.",
+ "as_of": "2025-08-01",
+ "price_date": "2025-08-01",
+ "price": 288.64,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); analog semiconductor signals; the listing and short-history bounds rules (AVGO)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Broadcom: 'We are a global technology leader that designs, develops and supplies a broad range of semiconductor and infrastructure software solutions', 'We have two reportable segments: semiconductor solutions and infrastructure software', and 'We operate a primarily outsourced manufacturing business model' (its own FY2024 10-K); 'The markets in which we participate are highly competitive', and 'We operate in the highly cyclical semiconductor industry': a cyclical and competitive risk, not an obsolescence one",
+  "theme_watch": [
+   {
+    "theme": "CLOUD",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: the company's own FY2024 10-K says 'the shift to cloud-based IT solutions and services, such as hyperscale computing, which may adversely affect the timing and volume of sales of our semiconductor products for use in traditional enterprise data centers'. At the same time it sells into data centers itself: 'We offer a broad set of Ethernet switching and routing products that are optimized for AI data center, service provider and enterprise networks'. The stock trades at 87.5x FY25E — a premium. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market pricing cloud substitution of its enterprise storage and networking specifically."
+   }
+  ],
+  "evidence": [
+   "V116"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Broadcom: 'We are a global technology leader that designs, develops and supplies a broad range of semiconductor and infrastructure software solutions', 'We have two reportable segments: semiconductor solutions and infrastructure software', and 'We operate a primarily outsourced manufacturing business model' (its own FY2024 10-K); 'The markets in which we participate are highly competitive', and 'We operate in the highly cyclical semiconductor industry': a cyclical and competitive risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price rich; +157% to EPP floor; model-vs-market gap -0.10; conservative 2yr -41%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 112.2,
+  "epp_gap_pct": 157.3,
+  "epp_adj": -0.2,
+  "proxy_composite": 3.05,
+  "sca": 0.054,
+  "adj_composite": 2.904,
+  "market_composite": 3.0,
+  "adj_gap": -0.1,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": -41.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.17,
+    "pe": 19.2,
+    "price": 60.86,
+    "desc": "EPS -2.0%/yr (worst year FY15-FY23 ex-FY16 ex-FY18, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.38,
+    "pe": 39.1,
+    "price": 171.26,
+    "desc": "EPS +15.2%/yr (Q3 FY25 guide YoY + margin + buyback); P/E at its 10-yr ex-FY16 ex-FY18 ex-FY24 median"
+   },
+   "BULL": {
+    "eps": 5.3,
+    "pe": 50.5,
+    "price": 267.65,
+    "desc": "EPS +26.8%/yr (FY15-FY23 ex-FY16 ex-FY18 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 13.82,
+    "pe": 60.6,
+    "price": 837.49,
+    "desc": "EPS +104.6%/yr (best 2-yr run FY15-FY23 ex-FY16 ex-FY18, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 157.3,
+   "adj_gap": -0.1,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 6.44,
+   "epp_gap_pct": 157.3,
+   "adj_gap": 0.27,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 157.3,
+   "adj_gap": -0.31,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 157.3,
+   "adj_gap": -0.07,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 157.3,
+   "adj_gap": -0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 157.3,
+   "adj_gap": 0.2,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 136.4,
+   "adj_gap": -0.1,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 157.3,
+   "adj_gap": -0.01,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.2,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "AVGO (retrospective, 2025-08-01) ✕ AVOID — Ratio B infx (78.9% downside to Bear $60.86 / -7.3% upside to Bull $267.65) | Adj composite 2.90 vs market 3.00: gap -0.10 [FAIRLY VALUED] | +157% above the EPP floor $112.20 (34x FY25E $3.30) | Conservative 2-yr case: -41.2% total (-20.6%/yr) | At 87.5x FY25E the 15% hurdle price $381.73 sits above the BULL case; net revenue +20.2% YoY in Q2 FY25, forward revenues +20.9% (Q3 FY25 revenue guide (Q2 FY25 release)); cloud is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "V116",
+   "published": "2024-12-23",
+   "filed": "2024-12-20 17:26 ET (after the close)",
+   "title": "Broadcom Inc. FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000139/avgo-20241103.htm",
+   "supports": "FY2022-FY2024 statements of operations with diluted EPS from continuing operations and diluted shares, on the basis of the 10-for-1 split (Item 6 reserved); FY2023-FY2024 net revenue by segment; cash flows; the FY2024 provision for income taxes ($3,748M) and the non-recurring intra-group transfer of certain IP rights (39.6 points of the effective rate); the dividend declared on December 10, 2024; FY2024 a 53-week year; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  {
+   "id": "V111",
+   "published": "2023-12-15",
+   "filed": "2023-12-14 16:54 ET (after the close)",
+   "title": "Broadcom Inc. FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000096/avgo-20231029.htm",
+   "supports": "FY2021-FY2023 statements of operations with diluted EPS and diluted shares (Item 6 reserved: no five-year selected data); FY2022-FY2023 net revenue by segment; cash flows; the FY2023 provision for income taxes ($1,015M); the dividend declared on December 5, 2023; fiscal years 2023, 2022 and 2021 of 52 weeks; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk; the VMware merger completed on November 22, 2023"
+  },
+  {
+   "id": "V106",
+   "published": "2022-12-19",
+   "filed": "2022-12-16 16:21 ET (after the close)",
+   "title": "Broadcom Inc. FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016822000118/avgo-20221030.htm",
+   "supports": "FY2020-FY2022 statements of operations with diluted EPS and diluted shares (Item 6 reserved: no five-year selected data); FY2021-FY2022 net revenue by segment; cash flows; the FY2022 provision for income taxes ($939M); the dividend declared on December 6, 2022; fiscal years 2022, 2021 and 2020 of 52 weeks; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk; the pending VMware merger"
+  },
+  {
+   "id": "V101",
+   "published": "2021-12-20",
+   "filed": "2021-12-17 16:42 ET (after the close)",
+   "title": "Broadcom Inc. FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016821000153/avgo-20211031.htm",
+   "supports": "FY2019-FY2021 statements of operations with diluted EPS from continuing operations and diluted shares (Item 6 reserved: no five-year selected data); FY2020-FY2021 net revenue by segment; cash flows; the FY2021 provision for income taxes ($29M); the dividend declared on December 7, 2021; fiscal years 2021, 2020 and 2019 of 52 weeks; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  {
+   "id": "V95",
+   "published": "2020-12-21",
+   "filed": "2020-12-18 17:07 ET (after the close)",
+   "title": "Broadcom Inc. FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016820000226/avgo-20201101.htm",
+   "supports": "selected financial data FY2016-FY2020 with diluted EPS from continuing operations; FY2018-FY2020 statements of operations with diluted shares; FY2019-FY2020 net revenue by segment; cash flows; the FY2020 benefit from income taxes ($518M); the dividend declared on December 8, 2020; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  {
+   "id": "V90",
+   "published": "2019-12-23",
+   "filed": "2019-12-20 16:10 ET (after the close)",
+   "title": "Broadcom Inc. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016819000144/avgo-11032019x10k.htm",
+   "supports": "selected financial data FY2015-FY2019 with diluted EPS from continuing operations; FY2017-FY2019 statements of operations with diluted shares; FY2018-FY2019 net revenue by segment; cash flows; the FY2019 benefit from income taxes ($510M); the dividend declared on December 10, 2019; business, competition and cyclicality wording; the shift to cloud-based IT named as a risk"
+  },
+  {
+   "id": "V1",
+   "published": "2009-08-06",
+   "filed": "2009-08-06 06:42 ET (before the open)",
+   "title": "Avago Technologies Limited IPO prospectus (424B4)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441634/000119312509166258/d424b4.htm",
+   "supports": "selected financial data FY2004-FY2008 (FY2004-FY2005 the Predecessor, Agilent's Semiconductor Products Group) and the six months to May 3, 2009; the combined FY2006 statement of operations; diluted EPS from continuing operations and diluted shares FY2006-FY2008; quarterly results for the eight quarters to May 3, 2009 (diluted EPS from continuing operations); balance sheets at October 31, 2007, November 2, 2008 and May 3, 2009 (inventory); FY2007-FY2008 net revenue by target market; cash flows; fiscal year ends on the Sunday closest to October 31; dividend policy; business, competition and cyclicality wording; listing on the Nasdaq Global Select Market as AVGO"
+  },
+  {
+   "id": "V2",
+   "published": "2007-12-13",
+   "filed": "2007-12-12 20:46 ET (after the close)",
+   "title": "Avago Technologies Finance Pte. Ltd. FY2007 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/1376403/000095013407025301/f36404e20vf.htm",
+   "supports": "balance sheets at October 31, 2006 and 2007 (inventory $169M, $140M); FY2007 against the combined FY2006 net revenue ($1,527M, $1,513M): the FY2007 inventory change for rule T"
+  },
+  {
+   "id": "V3",
+   "published": "2007-01-09",
+   "filed": "2007-01-09 15:00 ET (market hours)",
+   "title": "Avago Technologies Finance Pte. Ltd. exchange offer prospectus (424B3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1376403/000095013407000320/f23597b3e424b3.htm",
+   "supports": "balance sheets at October 31, 2005 (Predecessor) and 2006 (inventory $178M, $169M); the combined FY2006 and FY2005 net revenue on that filing's basis ($1,603M, $1,559M): the FY2006 inventory change for rule T"
+  },
+  {
+   "id": "V114",
+   "published": "2024-09-06",
+   "filed": "2024-09-05 16:21 ET (after the close)",
+   "title": "Broadcom Inc. Q3 FY24 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000095/avgo-08042024x8kxex99.htm",
+   "supports": "Q3 FY24 (quarter ended August 4, 2024) statement of operations with Q3 FY23, balance sheet, diluted EPS and shares; the dividends paid, and the $0.53 quarterly dividend; the one-time discrete non-cash tax provision of $4.5 billion; the split completed on July 12, 2024, per-share amounts restated; the fourth-quarter outlook (revenue of approximately $14.0 billion)"
+  },
+  {
+   "id": "V115",
+   "published": "2024-12-13",
+   "filed": "2024-12-12 16:23 ET (after the close)",
+   "title": "Broadcom Inc. Q4 FY24 and FY2024 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm",
+   "supports": "Q4 FY24 (quarter ended November 3, 2024) and FY2024 statements of operations, balance sheet, diluted EPS and shares; the dividends paid and the common dividend raised to $0.59; the FY2024 restructuring, acquisition-related costs and loss on debt extinguishment (reconciliation); the first-quarter outlook (revenue of approximately $14.6 billion)"
+  },
+  {
+   "id": "V117",
+   "published": "2025-03-07",
+   "filed": "2025-03-06 16:19 ET (after the close)",
+   "title": "Broadcom Inc. Q1 FY25 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000009/avgo-02022025x8kxex99.htm",
+   "supports": "Q1 FY25 (quarter ended February 2, 2025) statement of operations with Q1 FY24, balance sheet, diluted EPS and shares; the dividends paid; the second-quarter outlook (revenue of approximately $14.9 billion)"
+  },
+  {
+   "id": "V112",
+   "published": "2024-03-08",
+   "filed": "2024-03-07 16:18 ET (after the close)",
+   "title": "Broadcom Inc. Q1 FY24 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000012/avgo-02042024x8kxex99.htm",
+   "supports": "Q1 FY24 (quarter ended February 4, 2024) statement of operations with Q1 FY23, balance sheet, diluted EPS and shares; the dividends paid and the shares repurchased; VMware from November 22, 2023; the FY2024 outlook reiterated (revenue of approximately $50.0 billion)"
+  },
+  {
+   "id": "V118",
+   "published": "2025-06-06",
+   "filed": "2025-06-05 16:27 ET (after the close)",
+   "title": "Broadcom Inc. Q2 FY25 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm",
+   "supports": "Q2 FY25 (quarter ended May 4, 2025) statement of operations with Q2 FY24, balance sheet, diluted EPS and shares; the dividends paid and the shares repurchased; the third-quarter outlook (revenue of approximately $15.8 billion)"
+  },
+  {
+   "id": "V113",
+   "published": "2024-06-13",
+   "filed": "2024-06-12 16:19 ET (after the close)",
+   "title": "Broadcom Inc. Q2 FY24 results (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000077/avgo-05052024x8kxex99.htm",
+   "supports": "Q2 FY24 (quarter ended May 5, 2024) statement of operations with Q2 FY23, balance sheet, diluted EPS and shares; the dividends paid; the FY2024 outlook raised (revenue of approximately $51.0 billion); the ten-for-one forward stock split, trading on a split-adjusted basis expected from July 15, 2024"
+  },
+  {
+   "id": "A0",
+   "published": "2025-08-01",
+   "title": "Yahoo Finance daily prices, AVGO and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/AVGO/history",
+   "supports": "close $288.64 as traded on AS_OF, the range since the listing on 2009-08-06, realized vol, beta, the 10-yr ex-FY16 ex-FY18 ex-FY24 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-02"
+}

@@ -756,3 +756,151 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2023-12-15 | $1129.74 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +1.06 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +204.7% | +157.1pp | +138.9% | ✓ |
 | 2023-12-22 | $1121.98 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +1.07 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +208.4% | +160.8pp | +142.5% | ✓ |
 | 2023-12-29 | $1116.25 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +1.07 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +217.1% | +169.4pp | +145.3% | ✓ |
+| 2024-01-05 | $1049.28 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +1.26 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2024-01-12 | $1107.68 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +1.08 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2024-01-19 | $1211.20 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.97 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2024-01-26 | $1204.88 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.98 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2024-02-02 | $1224.34 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.96 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-02-09 | $1283.44 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.90 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-02-16 | $1245.48 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.94 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-02-23 | $1296.37 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.88 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-03-01 | $1399.17 | Broadcom Inc. Q4 and FY2023 results | 2.55 | +0.74 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-03-08 | $1308.72 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.52 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-03-15 | $1235.50 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.60 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-03-22 | $1353.47 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.47 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-03-28 | $1325.41 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.50 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-04-05 | $1339.43 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.48 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-04-12 | $1344.07 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.48 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-04-19 | $1204.71 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.65 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-04-26 | $1344.07 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.48 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-05-03 | $1278.11 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.56 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-05-10 | $1332.80 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.50 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-05-17 | $1395.29 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.40 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-05-24 | $1407.84 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.38 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-05-31 | $1328.55 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.50 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-06-07 | $1406.64 | Broadcom Inc. Q1 FY24 results | 2.20 | +0.39 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-06-14 | $1735.04 | Broadcom Inc. Q2 FY24 results | 2.20 | -0.09 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2024-06-21 | $1658.63 | Broadcom Inc. Q2 FY24 results | 2.20 | -0.01 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-06-28 | $1605.53 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.05 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-07-05 | $1703.31 | Broadcom Inc. Q2 FY24 results | 2.20 | -0.05 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2024-07-12 | $1700.67 | Broadcom Inc. Q2 FY24 results | 2.20 | -0.05 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2024-07-19 | $157.35 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.10 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-07-26 | $151.63 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.29 | 0.71x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2024-08-02 | $143.82 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.41 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-08-09 | $148.26 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.34 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2024-08-16 | $165.72 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.00 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-08-23 | $166.36 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.00 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-08-30 | $162.82 | Broadcom Inc. Q2 FY24 results | 2.20 | +0.04 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-09-06 | $137.00 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.83 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2024-09-13 | $167.69 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.38 | 0.72x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-09-20 | $171.10 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.34 | 0.76x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-09-27 | $172.69 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.32 | 0.78x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-10-04 | $176.64 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.28 | 0.82x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-10-11 | $181.48 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.23 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-10-18 | $179.89 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.24 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-10-25 | $173.00 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.33 | 0.76x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-11-01 | $168.92 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.38 | 0.71x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-11-08 | $183.64 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.22 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-11-15 | $164.84 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.44 | 0.65x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-11-22 | $164.23 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.45 | 0.64x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-11-29 | $162.08 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.47 | 0.61x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2024-12-06 | $179.53 | Broadcom Inc. Q3 FY24 results | 2.40 | +0.29 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2024-12-13 | $224.80 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.55 | 7.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-12-20 | $220.79 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.52 | 5.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2024-12-27 | $241.75 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.72 | 22.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-03 | $232.55 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.58 | 10.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-10 | $224.31 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.43 | 6.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-17 | $237.44 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.59 | 11.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-24 | $244.70 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.62 | 18.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-01-31 | $221.27 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.38 | 4.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-07 | $224.87 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.50 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-14 | $233.04 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.54 | 7.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-21 | $218.66 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.34 | 4.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-02-28 | $199.43 | Broadcom Inc. Q4 FY24 and FY2024 results | 2.40 | -0.18 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-03-07 | $194.96 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.89 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-03-14 | $195.54 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.89 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-03-21 | $191.66 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.92 | 1.91x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2025-03-28 | $169.12 | Broadcom Inc. Q1 FY25 results | 3.50 | +1.08 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-04-04 | $146.29 | Broadcom Inc. Q1 FY25 results | 3.50 | +1.42 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2025-04-11 | $181.94 | Broadcom Inc. Q1 FY25 results | 3.50 | +1.00 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-04-17 | $170.99 | Broadcom Inc. Q1 FY25 results | 3.50 | +1.08 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-04-25 | $192.31 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.93 | 1.89x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2025-05-02 | $203.64 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.85 | 2.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-05-09 | $208.20 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.82 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-05-16 | $228.61 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.55 | 4.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-05-23 | $228.72 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.56 | 4.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-05-30 | $242.07 | Broadcom Inc. Q1 FY25 results | 3.50 | +0.48 | 8.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-06-06 | $246.93 | Broadcom Inc. Q2 FY25 results | 3.05 | +0.05 | 10.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-06-13 | $248.70 | Broadcom Inc. Q2 FY25 results | 3.05 | +0.04 | 12.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-06-20 | $249.99 | Broadcom Inc. Q2 FY25 results | 3.05 | +0.04 | 13.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-06-27 | $269.35 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-07-03 | $275.18 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-07-11 | $274.38 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-07-18 | $283.34 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-07-25 | $290.18 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-01 | $288.64 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-08 | $304.97 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-15 | $306.34 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-22 | $294.00 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-08-29 | $297.39 | Broadcom Inc. Q2 FY25 results | 3.05 | -0.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-05 | $334.89 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.33 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-12 | $359.87 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-19 | $344.94 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-09-26 | $334.53 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-03 | $338.37 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-10 | $324.63 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-17 | $349.33 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-24 | $354.13 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-10-31 | $369.63 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-11-07 | $349.43 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-11-14 | $342.46 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-11-21 | $340.20 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-11-28 | $402.96 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.54 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-05 | $390.24 | Broadcom Inc. Q3 FY25 results | 2.90 | -0.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-12 | $359.93 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | -0.04 | 20.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-19 | $340.36 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.24 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-26 | $352.13 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.18 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-02 | $347.62 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.20 | 2.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-09 | $344.97 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.22 | 2.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-16 | $351.71 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.19 | 2.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-23 | $320.05 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.36 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-01-30 | $331.30 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.31 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-06 | $332.92 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.30 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-13 | $325.17 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.35 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-02-20 | $332.65 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.31 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-27 | $319.55 | Broadcom Inc. Q4 FY25 and FY2025 results | 2.90 | +0.38 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-03-06 | $330.48 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.44 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-03-13 | $322.16 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.50 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-03-20 | $310.51 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.69 | 1.11x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $300.68 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.76 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-02 | $314.55 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.66 | 1.14x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-10 | $371.55 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.23 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-04-17 | $406.54 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.03 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-04-24 | $422.76 | Broadcom Inc. Q1 FY26 results | 2.75 | -0.08 | 3.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-01 | $421.28 | Broadcom Inc. Q1 FY26 results | 2.75 | -0.05 | 3.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-08 | $430.00 | Broadcom Inc. Q1 FY26 results | 2.75 | -0.11 | 3.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-15 | $425.19 | Broadcom Inc. Q1 FY26 results | 2.75 | -0.07 | 3.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-22 | $414.14 | Broadcom Inc. Q1 FY26 results | 2.75 | +0.01 | 3.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-29 | $446.77 | Broadcom Inc. Q1 FY26 results | 2.75 | -0.16 | 4.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-06-05 | $385.73 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.06 | 0.67x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-06-12 | $382.07 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.07 | 0.65x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-06-18 | $411.35 | Broadcom Inc. Q2 FY26 results | 2.90 | +0.99 | 0.77x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-06-26 | $365.02 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.12 | 0.58x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-07-02 | $360.45 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.13 | 0.57x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-07-10 | $399.97 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.03 | 0.70x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-07-17 | $370.83 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.11 | 0.59x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-07-24 | $381.92 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.08 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-07-31 | $389.28 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.07 | 0.64x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-08-07 | $427.76 | Broadcom Inc. Q2 FY26 results | 2.90 | +0.96 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-08-14 | $392.99 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.06 | 0.65x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-08-21 | $368.45 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.13 | 0.57x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-08-28 | $368.79 | Broadcom Inc. Q2 FY26 results | 2.90 | +1.13 | 0.57x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-09-04 | $357.90 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.53 | 0.45x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-09-11 | $361.99 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.52 | 0.46x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-09-18 | $357.61 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.53 | 0.45x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-09-25 | $352.81 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.54 | 0.43x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-10-02 | $355.14 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.54 | 0.44x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-10-09 | $361.54 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.52 | 0.45x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-10-16 | $328.75 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.60 | 0.37x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-10-23 | $321.68 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.61 | 0.36x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-10-30 | $326.08 | Broadcom Inc. Q3 FY26 results | 3.20 | +1.60 | 0.36x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |

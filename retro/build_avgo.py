@@ -48,6 +48,13 @@ From 2017 on (decided on 2026-11-01 before any 2017-2020 date was built or score
   - the fiscal year ends on the first Sunday in November in a 53-week year whose closest Sunday falls before October 31
     (FY2018: 2018-11-04; the fiscal_calendar facts, each public before the days it moves).
 
+From 2024 on (decided on 2026-11-02 before any 2024-2026 date was built or scored; retro/README.md, "AVGO 2024-2026"):
+  - the 10-for-1 split effective 2024-07-15 restates every per-share fact published before it (the shared on_basis); a vintage's
+    year from a 10-K published before the split keeps that 10-K's date (eps_published, shares_published), and the words that quote
+    pre-split figures say so (the EPS history's split note, a dividend "divided by 10", the latest print's per-share words);
+  - FY2024 is excluded as a distorted year (the AAPL FY2002 test: its one-time tax provision, restructuring, acquisition costs and
+    debt extinguishment exceed its income from continuing operations), a fact-sheet encoding as for FY2014.
+
 Output goes to staging/retrospective/AVGO until the series is added to the archive (--out archive/retrospective/AVGO).
 
 Usage
@@ -56,6 +63,7 @@ Usage
   python3 retro/build_avgo.py --weekly 2013-01-07 2016-12-31
   python3 retro/build_avgo.py --weekly 2017-01-02 2020-12-31
   python3 retro/build_avgo.py --weekly 2021-01-04 2023-12-31
+  python3 retro/build_avgo.py --weekly 2024-01-01 2026-10-31
   python3 retro/build_avgo.py 2009-09-04
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/AVGO/<AS_OF>
 """
@@ -194,7 +202,8 @@ def build(as_of, facts, raw, spx, engine, out):
         check_print(p)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     # on_basis (the shared split helper) divides every Q4 print's full-year EPS; an excluded year has none, so a NaN stands in
-    # for it there and None comes back after (no split follows a distorted year in the fact sheet, so nothing else changes)
+    # for it there and None comes back after. An excluded year's GAAP figure lives only in its note's words, as published: a
+    # print in scope (below) may not predate an effective split, so no such note is ever shown on another share basis
     held = {p["quarter"] for p in facts["prints"] if "fy_actual" in p and p["fy_actual"]["eps_normalized"] is None}
     facts = {**facts, "prints": [{**p, "fy_actual": {**p["fy_actual"], "eps_normalized": math.nan}} if p["quarter"] in held else p
                                  for p in facts["prints"]]}
@@ -202,8 +211,10 @@ def build(as_of, facts, raw, spx, engine, out):
     for p in facts["prints"]:
         if p["quarter"] in held:
             p["fy_actual"]["eps_normalized"] = None
-            assert not any(p["published"] < sp["effective"] <= as_of for sp in facts.get("splits", [])), \
-                (as_of, "a split after an excluded year: decide how its GAAP figure is restated first")
+    # a split restates per-share facts published before its effective date (on_basis); their words keep the basis they were
+    # published on, so the text that quotes them says so (the 10-for-1 split effective 2024-07-15; the AAPL rule)
+    live_splits = [s for s in facts.get("splits", []) if s["effective"] <= as_of]
+    split_txt = lambda pub, fmt: "".join(fmt.format(r=s["ratio"], e=s["effective"]) for s in live_splits if pub < s["effective"])
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
@@ -216,6 +227,8 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
+    for p in [p for p in prints if p["quarter"] in held]:
+        assert not split_txt(p["published"], "x"), (as_of, p["quarter"], "a split after an excluded year in scope: decide how its GAAP figure is restated first")
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
     # the one theme encoding decided so far: a 10-K whose risk factors name the shift to cloud-based IT as a risk to the company's
     # own segments (CLOUD, from the FY2016 10-K; the FY2009-FY2015 10-Ks name cloud only for their own IT service providers) puts
@@ -329,9 +342,13 @@ def build(as_of, facts, raw, spx, engine, out):
     margin_guided = bool(mg)
     fy_margin_base = round(sum(mg["op_margin_guide_pct"]) / 2, 3) if mg else h["prev_fy_op_margin"]
 
-    # ── dividend: none declared ──
-    divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
-    divs.append((h.get("dividend_published", h["published"]), h["dividend_annual"], h["dividend_note"], None))
+    # ── dividend: the latest declared rate (none before the first, with the Q4 FY10 results); a rate declared before a split is
+    # divided from its effective date (on_basis), and the note says so then ──
+    div_split = ", divided by {r} from the {r}-for-1 split effective {e}"
+    divs = [(d["published"], d["quarterly"] * 4, d["note"] + split_txt(d["published"], div_split), d["source"])
+            for d in facts["dividends"] if d["published"] <= as_of]
+    h_div_pub = h.get("dividend_published", h["published"])
+    divs.append((h_div_pub, h["dividend_annual"], h["dividend_note"] + split_txt(h_div_pub, div_split), None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
     # ── market statistics, prices truncated at AS_OF (all from the listing on) ──
@@ -426,7 +443,12 @@ def build(as_of, facts, raw, spx, engine, out):
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     first_excl = "; ".join(f"FY{int(y) % 100:02d} {t}" for y, t in sorted(h.get("eps_first_excluded", {}).items()))
-    rev_text = (f"Net revenue: {latest['sales_note']}; {latest['inventory_note']}; {latest['eps_note']}; {latest['shares_note']}")
+    # the latest print's per-share words, published before an effective split, keep their basis and say so
+    pre_split = split_txt(latest["published"], " (per share before the {r}-for-1 split effective {e})")
+    rev_text = (f"Net revenue: {latest['sales_note']}; {latest['inventory_note']}; {latest['eps_note']}{pre_split}; "
+                f"{latest['shares_note']}{pre_split}")
+    cash_return = latest["cash_return_text"].replace("; long-term debt", pre_split + "; long-term debt", 1)
+    assert not pre_split or cash_return != latest["cash_return_text"], (as_of, "a pre-split note needs the cash-return text's debt clause")
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -477,7 +499,7 @@ REF_LOW         = {px[ref][2]:.2f}   # lowest close since the listing, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
-EPS_NORM      = {R(eps_hist)}   # {h["normalization"]}
+EPS_NORM      = {R(eps_hist)}   # {h["normalization"]}{"; " + h["split_note"] if h.get("split_note") else ""}
 EPS_FIRST_EXCLUDED = {R(first_excl)}
 REVENUE_HIST  = {R(rev)}   # net revenue, USD bn
 SHARES_HIST   = {R(shares)}   # diluted, millions
@@ -508,7 +530,7 @@ NEXT_PRINT      = {R(latest["next_print"])}
 SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net revenue {h['prev_fy_sales_growth']:+.1f}%, gross margin {h['prev_fy_gross_margin']:.1f}%; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.0f}bp YoY)")}
 BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']:.3f}B, " + (f"long-term debt ${latest['ltd_b']:.3f}B" if latest['ltd_b'] else "no long-term debt") + f" ({latest['quarter']}), {h['fcf_label']} free cash flow ${h['fcf_b']:.3f}B ({h['fcf_note']}), " + (f"dividend ${dividend:.2f} a year" if dividend else "no dividend"))}
 REVENUE_TEXT    = {R(rev_text)}
-CAPITAL_RETURN  = {R(latest["cash_return_text"])}
+CAPITAL_RETURN  = {R(cash_return)}
 THEME_FACTORS   = {R(factors)}
 THEME_SIGNAL_NAME    = {R(sig_name)}
 THEME_SIGNAL_TRIGGER = {R(trigger)}
