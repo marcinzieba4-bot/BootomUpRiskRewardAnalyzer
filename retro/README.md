@@ -4465,8 +4465,10 @@ PEP outcome computed:
   currency effect on the fourth quarter of 2007 (the release gives PepsiCo International's "over 7 percentage points" and the
   year's "about 2 points"), so its reported +17% stands.
 - **No operating-margin guide**, so no margin step; the margin signal takes the latest quarter's change.
-- **Dividends,** each from the first filing that states the rate: $0.30 a quarter (FY2006 10-K), $0.375 from the Q2 2007 10-Q
-  (dated 2007-07-25), $0.425 from the Q2 2008 10-Q (accepted 2008-07-23 16:33 ET, dated 2008-07-24: "a 13% dividend increase from
+- **Dividends,** each from the first filing that states the rate: $0.30 a quarter (FY2006 10-K), $0.375 from the 8-K of
+  2007-05-02 ("a 25% increase in the annual dividend, raising it to $1.50 per share from $1.20 per share"; first entered from the
+  Q2 2007 10-Q and corrected in the 2009-2010 batch, a source change only), $0.425 from the Q2 2008 10-Q (accepted 2008-07-23
+  16:33 ET, dated 2008-07-24: "a 13% dividend increase from
   $1.50 to $1.70 per share"). The releases state no dividend.
 - **Signals.** Six, with ACN's weights: volume (servings) growth (0.20, the releases' headline unit, "Volume (Servings)" in each
   summary table), gross margin change (0.20), net revenue growth (0.15, as reported), inventory growth less net revenue growth
@@ -4550,6 +4552,130 @@ Judgement calls that could carry hindsight:
 - keeping the three seams, which set BEAR (-8.9%/yr) and the buyback (-1.0% to -1.3%/yr);
 - excluding FY1997, and the Q4 2007 print's reported growth for want of a stated currency effect;
 - DURABLE (the class label only).
+
+### PEP 2009-2010: two GAAP years under the core rule, a revenue guide in numbers, the bottler acquisitions
+
+```bash
+python3 retro/build_pep.py --weekly 2009-01-05 2010-12-31                   # 104 dates, 2009-01-09 .. 2010-12-31
+for c in 2010-01-01 2011-01-01; do python3 retro/tools/firewall.py $c PEP; done
+```
+
+All 52 8-Ks, the 8-K/A, the six 10-Qs and the FY2008 and FY2009 10-Ks filed from December 2008 to December 2010 were checked:
+the eight releases, the four guidance 8-Ks, the dividend 8-Ks and the SFAS 160 re-presentation read in full, and every other 8-K
+read for guides, figures and dividend rates. 129 strings from the releases and 8-Ks, and 361 and 409 from the two 10-Ks
+(transcribed as the earlier ones were), were checked word for word with `verbatim.py` against their own filings; the builder
+re-derives every print's signal values from its raw figures. Each source's date comes from EDGAR's acceptance time. Thresholds,
+signals and the engine are unchanged; the builder gained an encoding for a fiscal-year revenue guide (`rev_guide`, below).
+Decided before any 2009-2010 outcome was computed:
+
+- **Three vintages.** The FY2008 10-K (accepted 2009-02-19 16:40 ET, dated 2009-02-20) gives 2004-2008, and each earlier year
+  comes from the latest 10-K that reports it: the history runs 1999-2008. The 8-K of 2009-08-27 (16:41 ET, dated 2009-08-28)
+  re-presents the FY2006-FY2008 statements for SFAS 160 (noncontrolling interests): a re-presentation of the 10-K's financial
+  statements is a vintage (the UNP 2010-10-25 rule). It moves FY08 operating profit to $6,959M ($6,935M in the 10-K) and pre-tax
+  income to $7,045M, leaves diluted EPS at $3.21, and names the Europe and Asia, Middle East & Africa segments. The FY2009 10-K
+  (2010-02-22 16:19 ET, dated 2010-02-23) gives 2005-2009: the history runs 2000-2009.
+- **The pooling seam leaves the buyback.** With 1999 as the first year, the first-year diluted shares are the pooled 1,817M (FY2001
+  10-K, the latest that reports them), then 2000's 1,791M (FY2002 10-K): the buyback is +1.4%/yr over 1999-2008 (to 1,602M) and
+  2000-2009 (to 1,577M), against -1.0% to -1.3%/yr in 2008. On 2009-02-13, between the Q4 2008 print and the 10-K, the history is
+  1998-2008 and the seam still runs (-0.5%/yr). The option-restatement seam (2000 before option expense, 2001 after) stays in
+  both windows, so BEAR stays -8.9%/yr.
+- **FY2008 and FY2009 at GAAP (the 2008 core rule).** FY08 enters at $3.21 from the Q4 2008 print (released Friday 2009-02-13, 08:24
+  ET, before the open): the company's core $3.68 also excludes the commodity mark-to-market net impact, and no figure excluding only
+  the Productivity for Growth charges and PepsiCo's share of PBG's charges was published. FY09 enters at $3.77 from the Q4 2009
+  print (2010-02-11, 09:44 ET, during the session): the core $3.71 also excludes the mark-to-market impact. The prints show GAAP
+  quarterly EPS with the core figure in the note, and the margins stay GAAP for the same reason.
+- **One revenue guide in numbers.** The 2009 guidance for net revenue and core EPS is in words, "mid- to high-single-digit growth on
+  a constant currency" basis (the Q4 2008 release, the 8-K of 2009-02-13 and the Q1-Q3 2009 releases): words are not figures (the
+  UNP 2016 rule), and the EPS half is on the core basis. The 8-K of 2009-12-08 (16:53 ET, dated 2009-12-09) expects "constant
+  currency net revenue to be up about five percent": a point (the LOW "approximately" rule) and a fiscal-year revenue guide, which
+  method r2 prefers to the latest quarter's growth, so it feeds BASE and the growth factor from 2009-12-11 to the Q4 2009 print.
+  It equals the Q3 2009 quarter's 5%, so nothing moves. Its "about five to six percent" core EPS growth gives no field.
+- **No EPS guide gives a field.** Every 2010 EPS guide is a core growth range: "an 11 to 13 percent growth rate for core constant
+  currency EPS off of its fiscal 2009 core EPS of $3.71" (the Q4 2009 release, reiterated by the 8-Ks of 2010-03-01 and
+  2010-03-22 and the Q1 2010 release), then core EPS growth "in the 10 to 12 percent range" (Q2 2010) and "in the 10 to 11 percent
+  range" (Q3 2010). So the last full year's EPS stands (the rollover rule): FY07's $3.38 to 2009-02-06, FY08's $3.21 from the Q4
+  2008 print, FY09's $3.77 from the Q4 2009 print.
+- **Growth excluding currency as each release states it** (the NKE rule): Q4 2008 +8.5% (the reported 3% and "Foreign exchange
+  adversely impacted net revenue growth in the quarter by 5.5 percentage points"), then the stated constant-currency growth: +6%,
+  +5.5%, +5% and +3% in 2009, and the stated core constant-currency growth of +11%, +37% and +41% in 2010.
+- **The bottler acquisitions stay in growth (the AVGO rule).** PepsiCo consolidated The Pepsi Bottling Group and PepsiAmericas from
+  2010-02-26 (the 8-K of 2010-03-01), and the 2010 releases' growth includes them, as published. BASE takes it, so from Q1 2010
+  BASE passes BULL and from Q2 2010 XBULL too: both are floored at BASE. The merger 8-K of 2009-08-04 expects "annual pre-tax
+  synergies of $300 million by 2012" and accretion "by about 15 cents per share when synergies are fully realized in 2012":
+  later years' targets with no input in the method (the UNP 2018 rule). The 2010 margin and inventory signals carry the
+  acquisitions as reported, with the GAAP charges (merger and integration costs and the fair-value step-up of acquired inventory).
+- **A dash is zero.** The Q4 2009 and Q1 2010 releases print "—" in the Volume (Servings) row, read as 0% (the UNP carloads rule).
+  The FY2009 10-K says total servings "increased slightly" in 2009, with no figure: the franchise line shows the words.
+- **Dividends,** from the first filing that states each declared rate: $0.45 a quarter from the 8-K of 2009-05-05 (18:48 ET, dated
+  2009-05-06: "a 6 percent increase in the annual dividend, from the current $1.70 to $1.80 per share"), $0.48 from the Q2 2010
+  10-Q (17:05 ET, dated 2010-07-21). The 8-K of 2010-03-15 says the board "approved a 7 percent increase in the annual dividend"
+  to $1.92, which "will take effect when the Board declares the next quarterly common stock dividend". A rate that still has to be
+  declared is not a declared rate (the AAPL 2012 rule), and no filing states the declaration before the Q2 2010 10-Q. This can
+  only lag.
+- **Calendar.** Every 2009-2010 release came before the open (07:36-08:50 ET) except Q4 2009 (09:44 ET, during the session). The
+  Q4 2008 release came on a Friday, the week's last trading day, so the print meets that day's close (the NKE rule). The weeks'
+  dates after the other releases are the next trading days: 2009-04-21, 2009-07-23, 2009-10-09, 2010-02-12, 2010-04-23, 2010-07-21
+  and 2010-10-08.
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words ("a leading global beverage, snack and food company" in
+  FY2008, "food, snack and beverage" in FY2009, which adds "The Coca-Cola Company has a significant CSD share advantage in many
+  markets outside the United States"). No theme in the registry is live for PepsiCo in 2009-2010.
+- **Adds nothing:** the officer and director 8-Ks, the bylaw amendments (2009-09-18, 2010-02-05, 2010-09-28), the 2010 annual
+  meeting (2010-05-11), the XBRL exhibit (2009-02-19), the subsidiary financial statements (2009-02-20), the note offerings, a
+  credit agreement's termination and a debt guarantee (2009-02-27, 2010-01-13, 2010-06-17, 2010-10-05, 2010-10-25), the bottler
+  proposals, litigation, antitrust and merger filings from 2009-04-20 to the closing 8-Ks of 2010-02-26 and 2010-03-01 (with the
+  8-K/A of 2010-04-22 incorporating PBG's and PAS's statements), the second 8-K of 2010-02-11 (a summary of that day's release), the
+  segment recast of 2009-03-25 (Turkey and some Central Asian markets moved within PepsiCo International: the ACN 2024-09-30 rule),
+  the clarification of 2010-08-24 (R&D spending), the Gatorade distribution release of 2010-09-01, the Wimm-Bill-Dann agreement
+  (2010-12-02), and the 10-Qs beyond their dividends.
+
+Corrections to 2008, found while extending the series and applied before any 2009-2010 outcome: the $0.375 dividend's source is the
+8-K of 2007-05-02, the first filing that states it (it had been the Q2 2007 10-Q; the rate was public before 2008 either way), and
+the servings line's previous quarter is the print published before the latest one (Q3 2007 on the ten dates from 2008-02-15 to
+2008-04-18, which had shown the vintage's Q2 2007). Both change text only, on 16 dates: no metric, class, tier or 2008 outcome
+moves.
+
+Controls: altering one value of each print, vintage, guide and dividend published from 2008-12-01 changes no date before its
+publication and changes the first weekly date on or after it (25 of 25). No string of any print, vintage, guide, dividend or source
+appears in a model dated before it (12,766 checks over the 157 PEP models). The firewall at 2010-01-01 and 2011-01-01 changes no
+model before its cutoff. The 53 dates of 2008 rebuild identical apart from the two corrections, and no file shared with another
+ticker changed.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP and BUY on all 104 dates.** The tier agrees on 7 or 8 of the 8 robustness variants on every date; the valuation verdict
+  on 2 to 8 (2 on 2009-12-04, 4 on five dates from 2009-02-13 to 2009-04-17).
+- **EPS anchors on the last full year:** FY07's $3.38 to 2009-02-06 (14.9-15.8x, the 0th-2nd percentile of its own range), FY08's
+  $3.21 from 2009-02-13 to 2010-02-05 (14.7-19.9x, the 0th-24th) and FY09's $3.77 from 2010-02-12 (16.1-17.8x, the 9th-20th).
+- **The price sat at the floors.** Below the BEAR price on 14 dates from 2009-01-09 to 2009-05-15 (Ratio B -0.07 to -0.01; BEAR
+  $51-55). At or below the EPP floor on 91 dates: 19x to the end of 2009 ($64 on FY07's EPS, $61 on FY08's), 18x from 2010-01-08
+  ($58, then $68 on FY09's $3.77). Above it on 13 dates from 2009-10-16 to 2010-02-05, by up to 7.8%; the highest Ratio B was 0.41
+  on 2009-12-04 ($63.85).
+- **BEAR is -8.9%/yr on every date** (the 2001 seam). BULL is the window's EPS CAGR: +11.9%/yr (1998-2007) to 2009-02-06, +10.1% on
+  2009-02-13 (1998-2008, with FY08 at GAAP), +11.2% (1999-2008) from the FY2008 10-K, +11.9% (1999-2009) from the Q4 2009 print and
+  +11.1% (2000-2009) from the FY2009 10-K. XBULL is the 2001-2003 run (+24.2%/yr) to Q1 2010.
+- **BASE followed the quarter's constant-currency growth plus the buyback:** +7.0%/yr on Q3 2008, +8.0% on 2009-02-13 (8.5% less
+  the seam's 0.5%), +9.9% from the FY2008 10-K (8.5% plus 1.4%), +7.4%, +6.9% and +6.4% on Q1-Q3 2009 (the about-5% guide kept
+  +6.4%), +4.4% on Q4 2009, then +12.4%, +38.4% and +42.4% on the 2010 quarters with the bottlers. The BASE price went from $78-88
+  to $101-102 on Q1 2010 and $153-161 from Q2 2010, and the adjusted gap from 0.44-1.21 to 2.25-2.39. From Q2 2010 BASE is
+  acquired revenue compounded for two years, not a forecast of the business PepsiCo owned before.
+- **The proxy composite** was 1.75 on Q3 2008, 1.45 on Q4 2008 (servings +1%, gross margin -163bp, operating margin -448bp), 2.15
+  on Q1 and Q2 2009, 2.45 on Q3 2009 (operating margin +244bp), 2.30 on Q4 2009 (+571bp, servings flat), 1.75 on Q1 2010 (gross
+  margin -233bp and operating margin -1,025bp with the acquisition charges, inventories +27%), then 3.05 and 3.10 on Q2 and Q3 2010
+  (servings +7% and +8%, net revenue +40%, the inventory gap -20pp and -16pp): the acquired volume and revenue.
+
+How far each call moves the classes (the 104 dates rebuilt with one encoding changed; no outcome consulted):
+- the core figures in the history (FY08 $3.68, FY09 $3.71) would change nothing;
+- those and the core EPS guides read as points (FY09 $3.88 from 2009-12-09; FY10 $4.16, then $4.12 and $4.10) would change nothing;
+- 2010 growth without the acquisitions (3%, the last quarter before them) would change nothing;
+- the servings dash read as not reported (scored BASE) would change nothing;
+- the SFAS 160 re-presentation not taken as a vintage would change nothing;
+- the $0.48 dividend dated from the 8-K of 2010-03-15 would change nothing.
+
+Judgement calls that could carry hindsight:
+- the 2008 core rule, which puts FY08 and FY09 in at GAAP (no class moves either way);
+- keeping the bottler acquisitions in growth, which makes BASE +38-42%/yr from Q2 2010 (no class moves at 3%);
+- reading the SFAS 160 8-K as a vintage, a dash as zero and "increased slightly" as no figure, and the March 2010 dividend
+  approval as not yet declared (none moves a class);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2009-2010 went; DURABLE (the class label only).
 
 ## Categories change with the era
 
