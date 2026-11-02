@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "PEP",
+ "as_of": "2008-02-29",
+ "computed": "2026-11-02",
+ "data_source": "Yahoo Finance daily closes + dividends (PEP, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2008-08-29",
+   "price": 68.48,
+   "dividends": 0.8,
+   "total_return_pct": -0.4,
+   "benchmark_total_return_pct": -2.8,
+   "excess_pct": 2.4,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2009-02-27",
+   "price": 48.14,
+   "dividends": 1.65,
+   "total_return_pct": -28.4,
+   "benchmark_total_return_pct": -42.7,
+   "excess_pct": 14.3,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2010-02-26",
+   "price": 62.47,
+   "dividends": 3.42,
+   "total_return_pct": -5.3,
+   "benchmark_total_return_pct": -13.6,
+   "excess_pct": 8.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2011-02-28",
+   "price": 63.42,
+   "dividends": 5.31,
+   "total_return_pct": -1.2,
+   "benchmark_total_return_pct": 4.9,
+   "excess_pct": -6.0,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2008-09-18",
+   "price": 73.23
+  },
+  "low": {
+   "date": "2009-03-09",
+   "price": 45.81
+  },
+  "max_drawdown_pct": -37.4,
+  "return_to_avg_price_m12_m24_pct": -18.3
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "PepsiCo: snacks + beverages; Elliott-driven cost program, 4.2% yield",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
