@@ -1,11 +1,11 @@
 # PEP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31 and 104 from 2009-01-09 to 2010-12-31.
-They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
-point-in-time build was committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in 55a6818). Prices run to 2026-10-30;
-the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (three-year:
-2013-12-30). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two
-years.
+Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31 and
+157 from 2011-01-07 to 2013-12-31. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each
+batch was scored only after its point-in-time build was committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in
+55a6818; 2011-2013: 29c50f2, documented in b02f4d4). Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30
+(three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30 (2016-12-30).
+Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -88,3 +88,64 @@ years.
   or below the BEAR price. Test it on other tickers before any method change.
 - **The encoding calls, seen afterwards.** None of the six alternatives in retro/README.md ("PEP 2009-2010") changes a 2009-2010
   class or tier, so the outcomes say nothing about them. The calls were decided before scoring and stay.
+
+## 2011-2013 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 107 | +34% | +11% to +50% | 64 | 19 | +22% | 78 |
+| class RICH | 50 | +25% | +18% to +41% | 3 | 17 | +16% | 30 |
+| legacy tier BUY | 111 | +34% | +11% to +50% | 65 | 19 | +21% | 81 |
+| legacy tier ACCUMULATE | 2 | +37% | +36% to +37% | 2 | 0 | +20% | 0 |
+| legacy tier WATCHLIST | 18 | +27% | +20% to +31% | 0 | 6 | +19% | 12 |
+| legacy tier AVOID | 26 | +22% | +18% to +29% | 0 | 11 | +14% | 15 |
+| FY09 anchor (to the Q4 2010 print) | 5 | +16% | +11% to +20% | 0 | 1 | +4% | 1 |
+| FY10 anchor, Q4 2010 print | 11 | +27% | +20% to +29% | 0 | 11 | +8% | 11 |
+| Q1 2011 print | 12 | +24% | +22% to +30% | 0 | 2 | +6% | 2 |
+| Q2 2011 print | 12 | +38% | +32% to +41% | 11 | 2 | +22% | 11 |
+| Q3 2011 print | 17 | +35% | +24% to +44% | 11 | 0 | +23% | 11 |
+| FY11 anchor, Q4 2011 print | 11 | +33% | +32% to +36% | 7 | 0 | +27% | 7 |
+| Q1 2012 print | 13 | +35% | +32% to +37% | 10 | 0 | +21% | 10 |
+| Q2 2012 print | 12 | +35% | +27% to +42% | 8 | 1 | +18% | 11 |
+| Q3 2012 print | 17 | +44% | +36% to +50% | 17 | 2 | +25% | 17 |
+| FY12 anchor, Q4 2012 print | 9 | +29% | +26% to +41% | 3 | 0 | +19% | 6 |
+| Q1 2013 print | 14 | +22% | +18% to +25% | 0 | 0 | +14% | 14 |
+| Q2 2013 print | 12 | +24% | +18% to +30% | 0 | 6 | +19% | 6 |
+| Q3 2013 print | 12 | +27% | +20% to +29% | 0 | 11 | +16% | 1 |
+| 2011 | 52 | +29% | +11% to +44% | 20 | 16 | +10% | 34 |
+| 2012 | 52 | +35% | +24% to +50% | 38 | 2 | +23% | 41 |
+| 2013 | 53 | +25% | +18% to +43% | 9 | 18 | +17% | 33 |
+| above the EPP floor | 58 | +26% | +18% to +43% | 9 | 18 | +17% | 36 |
+
+- **CHEAP on 107 dates; the call held on 78, mostly by clearing the hurdle** (64 cleared it, 19 beat SPY; median two-year return
+  +34%). In 2011 it held on 34 of 52: the 11 dates from the Q4 2010 print to April beat SPY (+20% to +29% against +17% to +26%) and
+  22 of the 29 from 2011-07-22 to 2012-02-03 cleared the hurdle, while January 2011 (+11% to +19%) and mid-May to mid-July 2011
+  (+22% to +30%, SPY +21% to +34%) missed both. In 2012 it held on 38 of 49, every one by clearing the hurdle: PEP returned +24% to
+  +50%, SPY +34% to +56%, and PEP beat it on 2. The 6 CHEAP dates of January-February 2013 all held (+36% to +43%).
+- **RICH, new in this range, on 50 dates: the call held on 30.** RICH expects the stock to miss the hurdle and lag SPY. It held on
+  the three August 2012 dates (+27% to +32% against SPY's +42% to +46%) and on 27 of the 47 dates from 2013-02-15. It failed on
+  2013-02-15 to 2013-03-01, which cleared the hurdle (+36% to +41%), and on the 17 dates from 2013-08-23 whose two-year windows
+  ended in late 2015, when SPY returned +15% to +23% and PEP +20% to +29%. The RICH dates still returned +18% to +41% (median +25%)
+  and a median +38% over three years, ahead of SPY on 39 of 50: RICH marked a lower return, not a loss.
+- **The floor distance ranked 2011 and 2013, not 2012.** Across the 157 dates the EPP gap ranks the two-year returns at Spearman
+  -0.53, the entry price at -0.43, Ratio B at -0.26, the adjusted gap at +0.16 and the proxy composite at -0.38. Within 2011 the EPP
+  gap reads -0.72, within 2013 -0.65, within 2012 +0.10: that year the price stayed between $62.52 and $73.39 and every entry did
+  well. By distance: entries 10-20% below the floor returned a median +36.5% (20 of 24 cleared the hurdle), 0-10% below +32.5% (38
+  of 75), 0-10% above +35.6% (6 of 11), more than 10% above +24.7% (3 of 47). The batch again mostly tests "buy lower".
+- **The proxy composite ranked 2011 backwards again** (-0.78): 3.10, 2.90 and 3.55 with the acquired servings and revenue (to July
+  2011) came with +11% to +30%, 2.30 and 1.95 (Q2 and Q3 2011, gross margin -175bp and -290bp) with +24% to +44%. Within 2012 and
+  2013 it ranks nothing (+0.06, -0.09). The 2008-2010 hypotheses stand untested elsewhere: trailing operating signals lag the price,
+  and acquired growth lifts them without saying anything about the business owned before.
+- **Two-year prices landed nearest BASE on 65 dates, BULL on 64 and BEAR on 28.** The BEAR landings are the dates to July 2011, when
+  BASE and BULL compounded the acquired growth ($131-161): the two-year price ($69-85) was 0.43-0.65 times BASE. From the Q2 2012
+  print BASE was too low (+1% to +5%/yr, the refranchisings in it): the two-year price ($88-102) was 1.06-1.29 times BASE, nearest
+  BULL from the Q3 2012 print. No two-year path went below its BEAR price, the first range since 2008 where none did.
+- **Across 2008-2013 (314 dates) CHEAP held on 139 of 264 and RICH on 30 of 50.** CHEAP held by losing less than a falling market in
+  2008 and by clearing the hurdle from low entries in 2009 and 2011-2013; it beat SPY on 59 of 264. Hypothesis, not a rule: for PEP
+  the method worked as a "buy lower" filter against an absolute hurdle, and lagged the market in every rising stretch. Test it on
+  other tickers and years before any method change; never fit it to PEP's outcomes.
+- **The encoding calls, seen afterwards.** The core basis would have made 4 RICH dates CHEAP (2012-08-03, 2012-08-17, 2012-08-24 and
+  2013-02-15), and FY11 without the extra week would have made 3 CHEAP dates RICH (2012-08-10, 2012-08-31 and 2012-09-07). Those
+  dates returned +27% to +41% against the 32.2% hurdle and SPY's +42% to +47%, so each alternative trades holds for misses at the
+  margin: facts about seven dates, not reasons to change an encoding. The calls were decided before scoring and stay; changing a
+  rule means a new method version tested elsewhere.
