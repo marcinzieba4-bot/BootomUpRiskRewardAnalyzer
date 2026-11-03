@@ -5143,6 +5143,161 @@ Judgement calls that could carry hindsight:
   recast basis (not tested: the releases state no other basis for both years);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2017-2020 went; DURABLE (the class label only).
 
+### PEP 2021-2023: three-year 10-Ks, servings leave every filing, the Juice Transaction at GAAP, GLP-1 off the watch list, RICH on 155 of 156 dates
+
+```bash
+python3 retro/build_pep.py --weekly 2021-01-04 2023-12-31                   # 156 dates, 2021-01-08 .. 2023-12-29
+for c in 2021-02-20 2022-01-01 2022-02-20 2023-01-01 2023-02-20 2024-01-01; do python3 retro/tools/firewall.py $c PEP; done
+```
+
+The 36 8-Ks (one an 8-K/A), nine 10-Qs and three 10-Ks filed from January 2021 to December 2023 were listed from EDGAR with their
+acceptance times, and the 8-Ks of October-November 2020 were read again; every 8-K's items were read for guides, figures and dividend
+rates, and the twelve releases, the 10-Qs' dividend notes and the FY2020-FY2022 10-Ks were transcribed by Opus directly, each figure
+typed and then asserted by script against the parsed row of its own filing, and each acceptance time against EDGAR's submissions data.
+353 strings were checked word for word with `verbatim.py` against their own filings. Thresholds, signals, the engine and the builder's
+code are unchanged (its comments record the GLP-1 decision below); "Juice Transaction" (first in a PepsiCo filing on 2021-10-05) and
+"Russia-Ukraine conflict" (2022-02-24) join the anachronism list (no earlier model of any ticker contains either). Decided before any
+2021-2023 outcome was computed:
+
+- **Three vintages, three years each.** The FY2020 10-K (accepted 2021-02-10 17:41 ET, dated 2021-02-11), the FY2021 10-K (2022-02-09
+  18:03 ET, dated 2022-02-10) and the FY2022 10-K (2023-02-08 18:06 ET, dated 2023-02-09) have no Item 6, so no five-year summary: each
+  supplies the three years of its income statement, and earlier years keep the latest 10-K that reported them (the ACN FY21 rule). The
+  histories run 2011-2020 (2015-2017 from the FY2019 10-K, 2014 from the FY2018 10-K, 2013, 2012 and 2011 from the FY2017, FY2016 and
+  FY2015 10-Ks), 2012-2021 and 2013-2022. First-year diluted shares come from the latest 10-K that reports them: 2011's 1,597M (FY2013),
+  2012's 1,575M (FY2014), 2013's 1,560M (FY2015). No 10-K restates an earlier year's EPS or net revenue. Each 10-K came minutes before
+  its Q4 release, so no Q4 print's full year extends a history (as for Q4 2019).
+- **FY2020-FY2022 at GAAP (the 2008 core rule):** $5.12, $5.49 and $6.42. Each 10-K's core figure ($5.52, $6.26, $6.79: "Core net income
+  attributable to PepsiCo per common share – diluted") also removes the commodity mark-to-market net impact, so none replaces GAAP. GAAP
+  2021 carries the charge related to cash tender offers ($0.49 a share); GAAP 2022 is a 53-week year (the 10-K states the extra week's
+  1 point of net revenue growth and no per-share figure) and carries the gain associated with the Juice Transaction ($2.08), impairment
+  and other charges ($2.12) and a tax benefit related to the IRS audit ($0.23), all as published. Neither test of method r2 for a
+  distorted year is met: the listed benefits ($3.2 billion) are smaller than the year's income without them ($5.7 billion), and the
+  listed charges ($3.7 billion) smaller than its net income ($8.9 billion). FY2018's tax benefits stay in all three histories, so BEAR is
+  2019's -40.8% ($8.78 to $5.20) and XBULL 2016-2018's +41.9%/yr on every date.
+- **No guide gives a field.** 2021: "A mid-single digit increase in organic revenue" and "A high-single digit increase in core constant
+  currency EPS" (words), then 6 percent organic growth and core EPS of "approximately $6.20" (Q2 2021) and approximately 8 percent and
+  "at least $6.20" (Q3 2021); 2022: 6 percent and core EPS of $6.67, then 8 percent and $6.63, 10 percent and $6.63, and 12 percent and
+  approximately $6.73; 2023: 6 percent and $7.20, then 8 percent and $7.27, 10 percent and $7.47, and 10 percent and $7.54. The EPS figures
+  are on the core basis (the 2008 core rule) and the revenue figures organic, which removes acquisitions, divestitures, currency and the
+  extra week: display only, as for 2016-2020. The Q3 2023 release's fiscal 2024 sentence ("results towards the upper end of our long-term
+  target ranges") is words about a later year (the UNP 2018 rule). No reiteration 8-K was filed. The last full year's EPS stands (the
+  rollover rule): FY19's $5.20 to 2021-02-05, FY20's $5.12 from 2021-02-12, FY21's $5.49 from 2022-02-11, FY22's $6.42 from 2023-02-10.
+- **Growth excluding currency: reported growth less the stated currency effect** (the NKE rule, as from Q4 2012), both from the table
+  that opens each release; a "—%" is 0%. +10.8% (Q4 2020: +8.8% and 2 points unfavorable), +7.3%, +17.5% and +9.6% (2021: +6.8% with 0.5
+  points unfavorable, +20.5% and +11.6% with 3 and 2 points favorable), +12.4% (Q4 2021, "—%"), +10.3%, +8.2% and +11.8% (2022: +9.3%,
+  +5.2% and +8.8% against 1, 3 and 3 points), +13.9% (Q4 2022: +10.9% against 3 points; 17 weeks against 16), +12.7%, +12.9% and +8.7%
+  (2023: +10.2%, +10.4% and +6.7% against 2.5, 2.5 and 2 points). The 2020 acquisitions (5 to 0.5 points a quarter, to Q4 2021), the
+  Juice Transaction (2 to 5 points a quarter, Q1 2022 to Q1 2023: "Acquisitions and divestitures primarily reflect the Juice
+  Transaction") and the 53rd week (4 points in Q4 2022) stay in, as published (the AVGO rule). Organic growth (+2.4% to +16.0%), which
+  removes them, is not used.
+- **Servings leave every filing.** The last filing that states total servings is the Q3 2020 10-Q (+13%). No release, 10-Q or 10-K of
+  2021-2023 states them (each was searched; the releases give food/snack, later convenient-food, and beverage unit volume). So every print
+  of the range has an empty slot, and the AAPL Mac-unit rule applies, as for NIKE's futures orders: the servings signal keeps its name,
+  thresholds and weight, scores BASE with no value (shown "n/r"), and no other measure replaces it (the divisions' unit volumes are a
+  different measure: the ACN headcount and UNP GTM rules). The franchise line says each 10-K states none.
+- **One-offs in the operating margin, as published.** The Q1 2022 operating profit carries the $3,322M gain associated with the Juice
+  Transaction (operating margin +1,691bp), Q2 2022 $1,165M of Russia-Ukraine conflict charges (-601bp), Q4 2022 $1,741M of impairment and
+  other charges (-724bp), and Q1 and Q2 2023 compare with those quarters (-1,778bp, +612bp). A core statement also removes the
+  mark-to-market item, so none replaces GAAP (the 2008 core rule, as for the Venezuela charges of Q3 2015).
+- **Dividends,** the latest declared rate: $1.0225 a quarter from the FY2020 10-K ("On February 4, 2021, the Board of Directors declared a
+  quarterly dividend of $1.0225 payable March 31, 2021"), $1.075 from the Q2 2021 10-Q (2021-07-13), $1.15 from the Q2 2022 10-Q
+  (2022-07-12) and $1.265 from the Q2 2023 10-Q (2023-07-13), each "Cash dividends declared per common share" in a 10-Q filed after the
+  close on the evening before its release's date; each 10-K restates the rate in force. No release of 2021-2023 states a dividend per
+  share and no 8-K states a declaration. The increases announced with each year's Q4 results (to $4.30, $4.60 and $5.06 annualized,
+  "effective with the dividend expected to be paid in June") were announcements (the AAPL 2012 rule, as for 2010-2020).
+- **E-commerce stays on the watch list.** The FY2020 10-K's risk-factor heading no longer names e-commerce ("Changes in the retail
+  landscape or in sales to any key customer can adversely affect our business."), but its body does: "Our business can be adversely
+  affected if e-commerce channels and hard discounters take significant additional market share away from traditional retailers or we
+  fail to find ways to create more powerful digital tools and capabilities for our retail customers to enable them to grow their
+  businesses." The FY2021 and FY2022 10-Ks keep the sentence ("increasingly better digital tools"). The rule reads the risk factors, not
+  their headings, so ECOMMERCE stays on the list, company-acknowledged, with no market read, each 10-K's wording replacing the last.
+- **GLP-1 stays off the watch list.** GLP1 is live from 2023-08-08 and its scope names snacks and beverages, but its dated evidence in
+  `taxonomy_eras.json` is a sector-wide sell-off ("medtech and snack stocks sell off") that names no company. PepsiCo's filings to the Q3
+  2023 10-Q (2023-10-10) never name GLP-1 drugs or weight-loss medication: the 10-Ks' only obesity wording is a reputational risk
+  ("concerns regarding whether certain of our products contribute to obesity or an increase in public health costs"), and the 2023
+  releases and 10-Qs say nothing. A theme enters PEP's watch list from a PepsiCo 10-K that names it as a risk (the NKE and LOW rule), as
+  ECOMMERCE did: that theme's own sector sell-off (2017-06-16, grocers) left PEP's list empty until the FY2017 10-K. So GLP1 stays off
+  through 2023; the FY2023 10-K, after this range, is where the same rule looks again. Picking press coverage of the debate by hand would
+  select with hindsight (the ACN rule). Text only by construction: the factor pair nets to zero and the theme signal stays at 2/4.
+- **A 53-week year.** Fiscal 2022 ended on 2022-12-31 (the last-Saturday rule; the builder's calendar check passes): "PepsiCo’s fourth
+  quarter 2022 includes 17 weeks of results and its 2022 fiscal year includes 53 weeks of results." The extra week stays in the GAAP
+  figures and in growth, as published (the LOW and AAPL rule, as for 2011 and 2016).
+- **Calendar.** From Q4 2020 to Q2 2023 each release's 8-K, and its 10-Q or 10-K, was accepted after the close (17:37-18:12 ET) on the
+  evening before the release's date, so each counts from that date (the Q3 2020 rule); the Q3 2023 8-K and 10-Q came before the open
+  (06:05 and 06:03 ET). Question-and-answer calls at 8:15 a.m. ET. No release fell on the week's last trading day, so the weeks' dates
+  are the next trading days: 2021-02-12, 2021-04-16, 2021-07-14, 2021-10-06, 2022-02-11, 2022-04-27, 2022-07-13, 2022-10-13, 2023-02-10,
+  2023-04-26, 2023-07-14 and 2023-10-11.
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words (FY2020: "a leading global food and beverage company"; from
+  FY2021: "a leading global beverage and convenient food company with a complementary portfolio of brands, including Lays, Doritos,
+  Cheetos, Gatorade, Pepsi-Cola, Mountain Dew, Quaker and SodaStream", "Lay’s" from FY2022; the U.S. liquid refreshment beverage shares of
+  PepsiCo and The Coca-Cola Company were 22% and 20% in 2020, 22% and 19% in 2021, and 20% and 21% in 2022). EV and CRYPTO are scoped to
+  other industries; GENAI, live from 2022-11-30, names none of PepsiCo's products.
+- **Adds nothing:** the officer, director and annual-meeting 8-Ks; the credit agreements (2021-05-28, 2022-05-27, 2023-05-30); the note
+  offerings, cash tender offers, redemptions and defeasance (2021-08-05 to 2023-11-13); and the 10-Qs beyond their dividends. No 8-K of the
+  range carries a guide, a figure or a dividend rate, and none reports the Juice Transaction: the Q3 2021 10-Q is the first filing that
+  names it ("On August 2, 2021, we entered into an agreement with PAI Partners to sell Tropicana, Naked and other select juice brands").
+
+Controls: altering one value of each print, vintage, guide, dividend and event published from 2020-12-01 changes no date before its
+publication and changes the first weekly date on or after it (33 of 33). No string of any dated fact appears in a model dated before it
+(790,383 checks over the 835 PEP models), and no model names a 10-K or 10-Q filed after it (7,712 mentions). The firewall at 2021-02-20,
+2022-01-01, 2022-02-20, 2023-01-01, 2023-02-20 and 2024-01-01 changes no model before its cutoff (686, 731, 738, 783, 790 and 835
+dates); the `servings_later` plant fires at every cutoff, since no print of the range states total servings. The 679 dates of 2008-2020
+rebuild byte-identical. Beyond the 156 new entries in the index, the only file shared with other tickers that changed is the anachronism
+list.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH and AVOID on 155 of 156 dates; FAIR and WATCHLIST on 2023-10-06** (25.0x FY22's $6.42, the 39th percentile; Ratio B 1.71,
+  adjusted gap +0.75), the last date before the Q3 2023 print. By year: RICH on all 52 dates of 2021 and all 52 of 2022, and on 51 of
+  2023. The tier agrees on 6 to 8 of the 8 robustness variants (8 on 126 dates; 6 only on 2023-10-06), the valuation verdict on 3 to 8
+  (8 on 62).
+- **EPS anchors on the last full year:** FY19's $5.20 to 2021-02-05 (26.3-27.7x, the 78th-88th percentile), FY20's $5.12 to 2022-02-04
+  (25.2-34.3x, the 65th-97th, at $129.19-175.64), FY21's $5.49 to 2023-02-03 (28.0-33.8x, the 81st-96th, at $153.73-185.69) and FY22's
+  $6.42 from 2023-02-10 (24.9-30.5x, the 38th-90th, at $159.62-196.12).
+- **The EPP floor:** 20x on FY19's, FY20's and FY21's EPS ($104, $102, $110), 21x from 2023-01-06 ($115, then $135 on FY22's $6.42). The
+  price was above the floor on every date, by 18.4% (2023-10-27) to 71.5% (2022-01-14).
+- **BEAR is -40.8%/yr on every date** (2019, from FY2018's tax benefits), at the 10th-percentile P/E: $27-41. **BULL** is floored at BASE
+  on every date: the window's EPS CAGR is +3.2%/yr (2010-2019), +2.7% (2011-2020), +3.8% (2012-2021) and +4.5% (2013-2022), below BASE
+  throughout. **XBULL** is +41.9%/yr (2016-2018) on every date ($296-394). The price stood above the BULL value on seven dates (Ratio B
+  `inf`: 2021-12-31 to 2022-02-04 and 2022-08-19); on the other RICH dates Ratio B was 2.12 to 639.91.
+- **BASE followed the quarter's growth plus the buyback** (+1.3 to +1.5 points): +8.8%/yr (Q3 2020) to 2021-02-05, +12.3% (Q4 2020),
+  +8.8%, +19.0% and +11.1% (Q1-Q3 2021), +13.8% (Q4 2021), +11.7%, +9.6% and +13.2% (Q1-Q3 2022), +15.2% (Q4 2022), +14.0%, +14.2% and
+  +10.0% (Q1-Q3 2023). The BASE price was $137-171 in 2021, $154-180 in 2022 and $180-219 in 2023; the adjusted gap was -1.35 to +0.49
+  on the RICH dates.
+- **The proxy composite** was 2.40 on Q3 2020 (servings +13% at XBULL), 2.15 on Q4 2020 (the servings slot empty from here on, scoring
+  BASE), 2.30 on Q1 2021 (operating margin +174bp), 2.40 on Q2 2021 (net revenue +20.5% at XBULL, gross margin -176bp at BEAR), 2.25 on Q3
+  2021, 2.10 on Q4 2021 (gross margin -161bp and operating margin -244bp at BEAR), 2.60 on Q1 2022 (operating margin +1,691bp at XBULL
+  with the Juice Transaction gain), 1.85 on Q2 2022 (operating margin -601bp with the Russia-Ukraine conflict charges), 2.15 on Q3 2022,
+  2.35 on Q4 2022 and Q1 2023 (net revenue at XBULL, operating margin at BEAR with the impairments, then against the year-ago gain), 2.80
+  on Q2 2023 (operating margin +612bp against the charges) and 2.50 on Q3 2023.
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- the core figures for FY20-FY22 in the history ($5.52, $6.26, $6.79) would change 1 class (RICH to FAIR on 2023-09-29) and no tier;
+- the core figures for every year of the window (FY11-FY22, from each 10-K's figure excluding above items) would change 1 class (FAIR to
+  CHEAP on 2023-10-06) and 31 tiers (AVOID to WATCHLIST or ACCUMULATE on 30 dates from 2022-03-11, WATCHLIST to BUY on 2023-10-06);
+- those and the core EPS guides read as points (FY21 $6.20 from 2021-07-13; FY22 $6.67, $6.63, $6.63, $6.73; FY23 $7.20, $7.27, $7.47,
+  $7.54) would change 16 classes (RICH to CHEAP or FAIR, FAIR to CHEAP, 2023-08-18 to 2023-12-15) and 69 tiers (AVOID to WATCHLIST,
+  ACCUMULATE or BUY from 2021-07-14, WATCHLIST to BUY);
+- the stated organic growth for every print (+2.4% to +16.0%: the acquisitions, the Juice Transaction, the extra week and currency out)
+  would change nothing;
+- the organic revenue guides read as fiscal-year revenue guides (6 and about 8 percent for 2021 from 2021-07-13; 6, 8, 10 and 12 for 2022;
+  6, 8, 10 and 10 for 2023) would change 1 class and 1 tier (FAIR to RICH and WATCHLIST to AVOID on 2023-10-06);
+- the dividends dated from the announcements (2021-02-11, 2022-02-10, 2023-02-09) would change nothing;
+- the empty servings slot scored below BEAR, or at XBULL, on every print would change nothing either way;
+- each print's operating margin change on the core operating profit of its release's reconciliation (a derived figure, as a test only)
+  would change nothing;
+- GLP1 on the watch list from 2023-08-08 would change nothing (text only, by construction).
+
+Judgement calls that could carry hindsight:
+- the 2008 core rule, which keeps FY20-FY22 and the window's earlier years at GAAP, so that FY2018's tax benefits set BEAR (-40.8%/yr)
+  and XBULL (+41.9%/yr) on every date (31 tiers with the core history; 16 classes and 69 tiers with the core guides as points: the call
+  that moves the most in this range, as in every PEP range since 2011);
+- GLP1 off the watch list from August to December 2023, for want of a PepsiCo filing that names it, although the registry dates the
+  theme's market pricing for snacks from 2023-08-08: a reader could argue for the watch list from that date (text only either way);
+- the empty servings slot scored BASE for three years (no class moves at either bound);
+- keeping the acquisitions, the Juice Transaction and the extra week in growth, and the one-offs in the operating margin (no class moves);
+- the Q2 10-Qs as the first statements of each declared dividend (no class moves);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2021-2023 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -5228,6 +5383,11 @@ What the gates enforce:
   "disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel" as a risk to its business,
   PEP carries ECOMMERCE on the watch list, company-acknowledged, with no market read (the NKE and LOW rule); the FY2018 and FY2019 10-Ks
   keep the heading, so it stays there through 2020. EV and CRYPTO, live from 2020, are scoped to other industries ("PEP 2017-2020").
+  The FY2020-FY2022 10-Ks move the risk into the body of a risk factor on the retail landscape ("Our business can be adversely affected if
+  e-commerce channels and hard discounters take significant additional market share away from traditional retailers"), so it stays
+  there through 2023. GLP1, live from 2023-08-08 and scoped to snacks and beverages, stays off the list: no PepsiCo filing to the Q3 2023
+  10-Q names GLP-1 drugs, and the theme's dated evidence is a sector-wide sell-off that names no company, as ECOMMERCE's grocers' sell-off
+  of 2017-06-16 left PEP's list empty until its FY2017 10-K; GENAI names none of PepsiCo's products ("PEP 2021-2023").
 
 ## Workflow
 
