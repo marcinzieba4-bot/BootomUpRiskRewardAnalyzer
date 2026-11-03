@@ -1,0 +1,302 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PEP",
+ "company": "PepsiCo, Inc.",
+ "as_of": "2021-08-13",
+ "price_date": "2021-08-13",
+ "price": 156.52,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); beverage and convenient-food signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2020, we and The Coca-Cola Company represented approximately 22% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2020 10-K): a competition and consumer-taste risk, not an obsolescence one",
+  "theme_watch": [
+   {
+    "theme": "ECOMMERCE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: PepsiCo's own FY2020 10-K says 'Our business can be adversely affected if e-commerce channels and hard discounters take significant additional market share away from traditional retailers or we fail to find ways to create more powerful digital tools and capabilities for our retail customers to enable them to grow their businesses.' At the same time it sells through e-commerce itself: 'Our products are also available and sold directly to consumers on a growing number of company-owned and third-party e-commerce websites and mobile commerce applications.'. The stock trades at 30.6x FY21E — a premium. Re-file as DISRUPTION_EXPOSED (ECOMMERCE) only if dated evidence shows the market pricing the shift away from physical retail into PepsiCo's own sales specifically."
+   }
+  ],
+  "evidence": [
+   "P141"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2020, we and The Coca-Cola Company represented approximately 22% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2020 10-K): a competition and consumer-taste risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price rich; Ratio B 3.65x; +53% to EPP floor; model-vs-market gap -0.56; conservative 2yr +9%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 3.65,
+  "ratio_b_fmt": "3.65x",
+  "epp": 102.4,
+  "epp_gap_pct": 52.9,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.4,
+  "sca": 0.1,
+  "adj_composite": 2.4,
+  "market_composite": 2.96,
+  "adj_gap": -0.56,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 8.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.8,
+    "pe": 14.9,
+    "price": 27,
+    "desc": "EPS -40.8%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 7.26,
+    "pe": 23.4,
+    "price": 170,
+    "desc": "EPS +19.0%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 7.26,
+    "pe": 26.5,
+    "price": 192,
+    "desc": "EPS +19.0%/yr (FY11-FY20 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 10.31,
+    "pe": 30.5,
+    "price": 314,
+    "desc": "EPS +41.9%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 3.65,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.56,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.92,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 9.91,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.88,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 3.1,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.47,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 4.28,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.63,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 3.65,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.26,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 3.65,
+   "epp_gap_pct": 32.9,
+   "adj_gap": -0.46,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 3.65,
+   "epp_gap_pct": 52.9,
+   "adj_gap": -0.25,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 8.7,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "PEP (retrospective, 2021-08-13) ✕ AVOID — Ratio B 3.65x (82.7% downside to Bear $27 / +22.7% upside to Bull $192) | Adj composite 2.40 vs market 2.96: gap -0.56 [OVERVALUED] | +53% above the EPP floor $102 (20x FY21E $5.12) | Conservative 2-yr case: +8.7% total (+4.4%/yr) | At 30.6x FY21E the 15% hurdle price $207 sits above the BULL case; servings not reported for Q2 2021, forward revenues +17.5% (Q2 2021 net revenue ex-currency); e-commerce is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "P141",
+   "published": "2021-02-11",
+   "filed": "2021-02-10 17:41 ET (after the close)",
+   "title": "PepsiCo FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000007/pep-20201226.htm",
+   "supports": "income statement 2018-2020 (no five-year summary: the 10-K has no Item 6); net revenue by segment 2018-2020; no total servings; core net income attributable to PepsiCo per common share – diluted $5.52; cash flow (operating activities $10,613M, capital spending $4,240M, sales of PP&E $55M, repurchases $2,000M, dividends $5,509M); the $1.0225 dividend declared in February 2021; business, competition and risk-factor wording"
+  },
+  {
+   "id": "P133",
+   "published": "2020-02-13",
+   "filed": "2020-02-13 06:09 ET (before the open)",
+   "title": "PepsiCo FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000015/pepsico201910-k.htm",
+   "supports": "five-year summary 2015-2019; income statement 2017-2019; net revenue by segment 2017-2019 (the seven segments of the fourth quarter of 2019); total servings +4% in 2019; EPS excluding above items $5.53; cash flow (operating activities $9,649M, capital spending $4,232M, sales of PP&E $170M, repurchases $3,000M, dividends $5,304M); the $0.955 dividend declared on February 10, 2020; business, competition and risk-factor wording"
+  },
+  {
+   "id": "P126",
+   "published": "2019-02-19",
+   "filed": "2019-02-15 16:23 ET (after the close; Monday 2019-02-18 was Presidents' Day)",
+   "title": "PepsiCo FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000017/pepsico201810-k.htm",
+   "supports": "five-year summary 2014-2018 (operating profit before 2018 recast for the non-service pension cost); income statement 2016-2018 (2018 with the other net tax benefits); net revenue by segment 2016-2018; total servings +1% in 2018; EPS excluding above items $5.66; items affecting comparability (other net tax benefits $5,064M, $3.55 a share); cash flow (operating activities $9,415M, capital spending $3,282M, sales of PP&E $134M, repurchases $2,000M, dividends $4,930M); quarterly dividends declared ($0.9275 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  {
+   "id": "P118",
+   "published": "2018-02-14",
+   "filed": "2018-02-13 16:32 ET (after the close)",
+   "title": "PepsiCo FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000012/pepsico201710-k.htm",
+   "supports": "five-year summary 2013-2017; income statement 2015-2017 (2017 with the provisional net tax expense of the TCJ Act); net revenue by segment 2015-2017; total servings -1% in 2017 (even excluding the 53rd week of 2016); EPS excluding above items $5.23; cash flow (operating activities $9,994M, capital spending $2,969M, sales of PP&E $180M, repurchases $2,000M, dividends $4,472M); quarterly dividends declared ($0.805 in the fourth quarter); business, competition and risk-factor wording (the e-commerce channel in a risk-factor heading)"
+  },
+  {
+   "id": "P109",
+   "published": "2017-02-16",
+   "filed": "2017-02-15 16:35 ET (after the close)",
+   "title": "PepsiCo FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000010/pepsico201610-k.htm",
+   "supports": "five-year summary 2012-2016; income statement 2014-2016 (2016: 53 weeks); net revenue by segment 2014-2016; total servings +3% in 2016 (+2% excluding the 53rd week); EPS excluding above items $4.85; the 53rd week's $0.04 a share; cash flow (operating activities $10,404M, capital spending $3,040M, sales of PP&E $99M, repurchases $3,000M, dividends $4,227M); quarterly dividends declared ($0.7525 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  {
+   "id": "P100",
+   "published": "2016-02-12",
+   "filed": "2016-02-11 16:40 ET (after the close)",
+   "title": "PepsiCo FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747616000066/pepsico201510-k.htm",
+   "supports": "five-year summary 2011-2015; income statement 2013-2015 (2015 with the Venezuela impairment charges); inventories 2014-2015; net revenue by segment 2013-2015 (the new segments); total servings +1% in 2015; cash flow (operating activities $10,580M, capital spending $2,758M, sales of PP&E $86M, repurchases $5,000M, dividends $4,040M); quarterly dividends declared ($0.7025 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  {
+   "id": "P91",
+   "published": "2015-02-13",
+   "filed": "2015-02-12 17:01 ET (after the close)",
+   "title": "PepsiCo FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747615000012/pepsico201410-k.htm",
+   "supports": "five-year summary 2010-2014; income statement 2012-2014; inventories 2013-2014; net revenue by segment 2012-2014; total servings +1% in 2014; cash flow (operating activities $10,506M, capital spending $2,859M, sales of PP&E $115M, repurchases $5,012M, dividends $3,730M); quarterly dividends declared ($0.655 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  {
+   "id": "P81",
+   "published": "2014-02-18",
+   "filed": "2014-02-14 16:26 ET (after the close)",
+   "title": "PepsiCo FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747614000007/pepsico201310-k.htm",
+   "supports": "five-year summary 2009-2013; income statement 2011-2013; inventories 2012-2013; net revenue by segment 2011-2013; total servings +2% in 2013; cash flow (operating activities $9,688M, capital spending $2,795M, sales of PP&E $109M, repurchases $3,001M, dividends $3,434M); quarterly dividends declared ($0.5675 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  {
+   "id": "P142",
+   "published": "2021-02-11",
+   "filed": "2021-02-10 17:47 ET (after the close; the release is dated February 11, 2021)",
+   "title": "PepsiCo Q4 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000009/q420208-kxexhibit991.htm",
+   "supports": "Q4 2020 and 2020 income statements and balance sheet; no total servings; reported net revenue +8.8% in the quarter, foreign exchange 2 points unfavorable, acquisitions 5 points favorable (organic +5.7%); EPS $1.33 and $5.12 (core $1.47 and $5.52); 2021 guidance; a dividend increase announced for the June 2021 payment"
+  },
+  {
+   "id": "P134",
+   "published": "2020-02-13",
+   "filed": "2020-02-13 06:11 ET (before the open)",
+   "title": "PepsiCo Q4 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000016/q420198-kxexhibit991.htm",
+   "supports": "Q4 2019 and 2019 income statements and balance sheet; no total servings; reported net revenue +5.7% in the quarter, no foreign exchange impact, structural changes 1.5 points favorable (organic +4.3%); EPS $1.26 and $5.20 (core $1.45 and $5.53); 2020 guidance; a dividend increase announced for the June 2020 payment"
+  },
+  {
+   "id": "P143",
+   "published": "2021-04-15",
+   "filed": "2021-04-14 17:45 ET (after the close; the release is dated April 15, 2021)",
+   "title": "PepsiCo Q1 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000021/q120218-kxexhibit991.htm",
+   "supports": "Q1 2021 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +6.8%, foreign exchange 0.5 points unfavorable, acquisitions 5 points favorable (organic +2.4%); EPS $1.24 (core $1.21); 2021 guidance reaffirmed"
+  },
+  {
+   "id": "P136",
+   "published": "2020-04-28",
+   "filed": "2020-04-28 06:06 ET (before the open)",
+   "title": "PepsiCo Q1 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000042/q120208-kxexhibit991.htm",
+   "supports": "Q1 2020 income statement and balance sheet; no total servings; reported net revenue +7.7%, no foreign exchange impact (organic +7.9%); EPS $0.96 (core $1.07); the 2020 outlook 'no longer applicable'"
+  },
+  {
+   "id": "P145",
+   "published": "2021-07-13",
+   "filed": "2021-07-12 17:41 ET (after the close; the release is dated July 13, 2021)",
+   "title": "PepsiCo Q2 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000041/q220218-kxexhibit991.htm",
+   "supports": "Q2 2021 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +20.5%, foreign exchange 3 points favorable, acquisitions 4 points favorable (organic +12.8%); EPS $1.70 (core $1.72); the 2021 outlook raised"
+  },
+  {
+   "id": "P138",
+   "published": "2020-07-13",
+   "filed": "2020-07-13 06:05 ET (before the open)",
+   "title": "PepsiCo Q2 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000061/q220208-kxexhibit991.htm",
+   "supports": "Q2 2020 income statement and balance sheet; no total servings and no dividend per share; reported net revenue -3.1%, foreign exchange 4 points unfavorable, structural changes 1 point favorable (organic -0.3%); EPS $1.18 (core $1.32); no 2020 outlook"
+  },
+  {
+   "id": "P144",
+   "published": "2021-07-13",
+   "filed": "2021-07-12 17:37 ET (after the close)",
+   "title": "PepsiCo Q2 2021 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000039/pep-20210612.htm",
+   "supports": "'Cash dividends declared per common share were $1.075 and $1.0225 for the 12 weeks ended June 12, 2021 and June 13, 2020, respectively'"
+  },
+  {
+   "id": "P116",
+   "published": "2017-12-11",
+   "filed": "2017-12-08 16:35 ET (after the close)",
+   "title": "PepsiCo 8-K of 2017-12-08 (Items 3.01 and 7.01; ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095010317012290/dp83934_ex9901.htm",
+   "supports": "the transfer of the common stock's listing from the New York Stock Exchange to the Nasdaq Global Select Market, effective December 19, 2017 after market close; trading as a Nasdaq-listed security from December 20, 2017"
+  },
+  {
+   "id": "A0",
+   "published": "2021-08-13",
+   "title": "Yahoo Finance daily prices, PEP and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PEP/history",
+   "supports": "close $156.52 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-03"
+}

@@ -25,6 +25,9 @@ have 12 weeks and the fourth 16 (17). The method r2 inputs map with the rules de
 Added for 2017-2020 (retro/README.md, "PEP 2017-2020"; no earlier output changes): the ECOMMERCE watch list from the FY2017 10-K,
 the first whose risk factors name the growth of the e-commerce channel as a risk to PepsiCo's business (text only, the NKE and LOW
 rule), and the exchange from the dated listing facts (the stock moved from the NYSE to Nasdaq on 2017-12-20).
+For 2021-2023 (retro/README.md, "PEP 2021-2023"; no code path changes): GLP1, live from 2023-08-08 and scoped to snacks and beverages,
+stays off the watch list, because a theme enters PEP's list only from a PepsiCo 10-K that names it (the NKE and LOW rule) and no PepsiCo
+filing to the Q3 2023 10-Q names GLP-1 drugs; no filing from the FY2020 10-K states total servings, so those prints have none.
 EPS is diluted EPS from continuing operations, each year from the latest 10-K that reports it, and a company-published figure
 excluding one-offs only replaces it (the ACN rule). PepsiCo's "core" figures from 2008 also exclude the mark-to-market net
 impact on commodity hedges, which recurs in every period and is "subsequently reflected in division results" (a timing basis,
@@ -157,8 +160,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # the first PepsiCo 10-K whose risk factors name the growth of the e-commerce channel as a risk to its business: the FY2017 10-K
     # (the FY2014-FY2016 10-Ks name e-commerce only as a channel larger retailers might use). A 10-K's wording (an event with a
     # 'doc') is replaced by the next 10-K's. No other theme in taxonomy_eras.json is live for a beverage and convenient-food company
-    # to 2020 (GLP1 from 2023-08-08; OFFSHORE is scoped to IT services, the others to other industries): any other event kind needs
-    # its encoding decided first
+    # to 2020 (GLP1 from 2023-08-08; OFFSHORE is scoped to IT services, the others to other industries). GLP1's registry evidence is a
+    # sector-wide sell-off that names no company; as ECOMMERCE's grocers' sell-off of 2017-06-16 left PEP's list empty until its FY2017
+    # 10-K, GLP1 enters only from a PepsiCo filing that names GLP-1 drugs, and none to the Q3 2023 10-Q does: any other event kind
+    # needs its encoding decided first
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
     if any(e["kind"] != "ecommerce_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the PEP builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")

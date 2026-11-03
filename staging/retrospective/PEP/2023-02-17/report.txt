@@ -1,0 +1,161 @@
+
+════════════════════════════════════════════════════════════════════════
+  PEP  ·  PepsiCo, Inc.  ·  $176.28  ·  RETROSPECTIVE as of 2023-02-17
+  Signal: ✕ AVOID   Ratio B: 2.56x   Adj gap: -0.22  [MODESTLY OVERVALUED]
+  Point-in-time: 12 sources, latest published 2023-02-17; latest print Q4 2022 (Feb 9)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenues, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2023E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Frito-Lay North America   $    26.5  $  26.5  $  28.1      +0.0      +1.6
+    +18.8% revenues in FY22
+  Quaker Foods North Ameri  $     3.6  $   3.6  $   3.8      +0.0      +0.2
+    +14.9% revenues in FY22
+  PepsiCo Beverages North   $    29.9  $  29.9  $  31.7      +0.0      +1.8
+    +3.7% revenues in FY22
+  Latin America             $    11.1  $  11.1  $  11.8      +0.0      +0.7
+    +20.6% revenues in FY22
+  Europe                    $    14.5  $  14.5  $  15.4      +0.0      +0.9
+    -2.4% revenues in FY22
+  Africa, Middle East and   $     7.3  $   7.3  $   7.8      +0.0      +0.5
+    +5.9% revenues in FY22
+  Asia Pacific, Australia   $     5.5  $   5.5  $   5.8      +0.0      +0.3
+    +3.7% revenues in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    98.4  $  98.4  $ 104.4      +0.0      +6.0
+  FY2023E = FY22 $86.39B × (1 + 13.9%: Q4 2022 net revenue ex-currency, applied to the year (no FY23 revenue guide in numbers)); split pro rata to FY22 net revenue by segment (FY2022 10-K)
+  Q4 2022 (Feb 9): revenues $28.00B +10.9% (+14% ex-currency); servings not reported; inventories +20.1%;
+  gross margin 52.06% (+10.8bp); operating margin 2.91% (-723.6bp); EPS $0.37 vs $0.95
+  Volume: servings not reported (the release gives food and beverage unit volume only, and the FY2022 10-K states no total servings: no filing states them for the quarter); net revenue +10.9% reported, +13.9% excluding currency (the release's reported net revenue growth of +10.9% less its stated 3-point unfavorable currency effect; the Juice Transaction divestiture (4 points unfavorable) and the 53rd week (4 points favorable) stay in, as published (organic +14.6%)); GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.67); with impairment and other charges ($1.03 a share)
+  FY23 outlook (Q4 2022 release, display only): 'A 6 percent increase in organic revenue;'; 'An 8 percent increase in core constant currency EPS;'; 'This assumption and the guidance above imply 2023 core EPS of $7.20, a 6 percent increase compared to 2022 core EPS of $6.79.' — organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands
+
+  FY2023E EPS check:  $98.4B × 12.4% pre-tax × (1−16.1%) ÷ 1.385B  =  $7.39  (FY2023E: no EPS guide in numbers on a usable basis, FY22's $6.42 stands)
+  FY2025E BEAR check: $98.4B × 12.4% ÷ 1.349B  =  $7.58  (scenario $2.25)
+  FY2025E BULL check: $104.4B × 12.8% ÷ 1.349B  =  $8.31  (scenario $8.52)
+  Every 1pp of pre-tax margin ≈ $0.60 EPS ≈ $15/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Volume (servings) growth            +3.0%    ≥4.0%    ≥5.0%    ≥7.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -260.0bp  ≥-130.0bp   ≥0.0bp  ≥150.0bp   +10.8bp  ▲ BULL  ███░
+  Net revenue growth                 -26.0%  ≥-10.0%    ≥6.0%   ≥10.0%    +10.9%  ★ XBULL  ████
+  Inventory growth less net revenue  +65.0pp  ≤32.0pp  ≤-1.0pp  ≤-17.0pp    +9.2pp  ◦ BASE  ██░░
+  Operating margin change           -300.0bp  ≥-130.0bp  ≥40.0bp  ≥230.0bp  -723.6bp  ⚠ BEAR  █░░░
+  E-commerce: net effect on store and direct-store-delivery sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   2.67 / 4.00  (back-solved from $176 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj +0.00  →  Adj composite 2.45  →  Gap -0.22  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 net revenue +8.7%, servings not stated in the FY2022 10-K; Q4 gross margin 52.06% (+11bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.5x FY23E vs a 25.5x 10-yr median (80th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q4 2022 net revenue ex-currency +13.9% vs a 1.8% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $5.35B, FY22 free cash flow $5.86B, dividend $4.60 a year, $1,500M of share repurchases and $6,172M of dividends paid in FY22  (+0.30 × 15%  =  +0.045)
+    +  E-commerce: its products sold on 'a growing number of company-owned and third-party e-commerce websites' — PepsiCo sells online through retailers and its own sites  (+0.20 × 10%  =  +0.020)
+    -  Shift to e-commerce (FY2022 10-K): 'e-commerce channels and hard discounters' taking 'significant additional market share away from traditional retailers' named as a risk to its business  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Volume (servings) growth               n/r     +3.0%     n/r  Consumers trade down and buy fewer se…
+  Gross margin change                +10.8bp  -260.0bp  -270.8bp  Commodity costs outrun pricing and pr…
+  Net revenue growth                  +10.9%    -26.0%  -36.9%  Volume and pricing stall together
+  Inventory growth less net revenue    +9.2pp   +65.0pp  +55.8pp  Inventory builds ahead of demand: wri…
+  Operating margin change           -723.6bp  -300.0bp  +423.6bp  Marketing and overhead do not come do…
+  E-commerce: net effect on store and direct-store-delivery sales    +2.0/4    +1.0/4  -1.0/4  Shoppers leave physical retail faster…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$91  (model)  /  $39 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: servings are not reported for Q4 2022 (n/r in Q3 2022);
+  the bear case needs a volume recession that gross margin (+10.8bp now)
+  and inventories (+9.2pp against revenue) no longer absorb. Commodity inflation shows up in gross margin first; the bear needs
+  servings to fall as pricing rises.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.42  (FY2023E: no EPS guide in numbers on a usable basis, FY22's $6.42 stands)
+  Min viable P/E at panic:          21x  [median of calendar-year P/E lows: 2013 17.4x, 2014 18.1x, 2015 22.9x, 2016 21.5x, 2017 30.0x, 2018 11.0x, 2019 20.6x, 2020 20.3x, 2021 23.5x, 2022 23.9x, 2023 26.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $135/share
+  Current $176 vs Updated EPP $135:  +31%  moderate distance to floor
+  Bear $39 vs Updated EPP $135:  -71%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Volume (servings) growth                     4.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -130.0     -140.8   BASE floor (vs +11 now)
+  Net revenue growth                         -10.0      -20.9   BASE floor (vs +11 now)
+  Inventory growth less net revenue            32.0      +22.8   BASE floor (vs +9 now)
+  Operating margin change                   -130.0     +593.6   BASE floor (vs -724 now)
+  E-commerce: net effect on store and direct-store-delivery sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.42 × (1+13.2%)² = $8.23
+  At 25x P/E (conservative):  $206/share
+  + Cumul. dividends (2yr):  +$9.48/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $206  (▲29 from $176)
+  Conservative total return:  +22% over 2yr  = +11%/yr
+
+  At 27.5x the multiple is already near its 25x median, so the conservative
+  case is a growth question: breakeven at 25x needs FY2025E EPS of $6.67,
+  i.e. 1.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $153.37  –  $186.84  (at 68th pct of range)
+  Annual dividend:      $4.60/share  (yield 2.6%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 0.50
+  1-sigma range (1yr):  $142  –  $211  ($176 ± 20%)
+  2-sigma range (1yr):  $107  –  $246
+  ────────────────────────────────────────────────────────────
+  Bear $39 requires:  ~4.0σ price move  (unusual — requires fundamental break)
+  A beverage and convenient-food company with a 0.5 beta: the stock is +15% off its March
+  low while servings are not reported for Q4 2022 (n/r in Q3 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.25  17.4x  $     39    12.0%      6.4%    +5.6pp  EPS -40.8%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE        8.52  25.5x  $    217    42.0%     22.4%   +19.6pp  EPS +15.2%/yr (Q4 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        8.52  27.0x  $    230    38.7%     59.9%   -21.2pp  EPS +15.2%/yr (FY13-FY22 CAGR); P/E holds its 75th pct
+  XBULL      12.93  30.5x  $    394     7.3%     11.3%    -4.0pp  EPS +41.9%/yr (best 2-yr run FY13-FY22); P/E at its 90th pct
+
+  Proxy EV (2yr): $214  /  Market EV: $233  /  Current: $176
+  Conservative EV (2yr, ④): $206 + $9.48 divs = $215 total value
+  Downside (→ Bear $39): 77.9%   Upside (→ Bull $230): 30.5%   Ratio B 2.56x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $176 the market needs $233 in two years —
+  above the BULL case. That is a market composite of 2.67 against a model
+  read of 2.45: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.56x     +31%    -0.22  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.54x     +31%    +0.14  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     3.62x     +31%    -0.54  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.24x     +31%    -0.10  FAIRLY VALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.96x     +31%    -0.34  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.56x     +31%    +0.08  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.56x     +14%    -0.22  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.56x     +31%    +0.10  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2023 print (late April) — revenue against the full-year outlook; servings are not reported for Q4 2022
+  (2) Gross margin — +10.8bp in Q4 2022: pricing against commodity costs, what must hold if volume does not
+  (3) The outlook — Q4 2022 release: 'A 6 percent increase in organic revenue;'; 'An 8 percent increase in core constant currency EPS;'; 'This assumption and the guidance above imply 2023 core EPS of $7.20, a 6 percent increase compared to 2022 core EPS of $6.79.' (display only)
+  (4) Inventories — +20.1% against net revenue +10.9% in Q4 2022 (+9.2pp): commodity costs and acquisitions sit in them
+  (5) Capital return at 27x — 'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.7 billion and share repurchases of $1.0 billion.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $135  |  ADD below ~$184  |  TRIM above $230
+════════════════════════════════════════════════════════════════════════
+

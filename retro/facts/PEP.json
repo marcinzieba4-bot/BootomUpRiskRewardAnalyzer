@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted during the session on their release days, and from 2009 most came before the open (each print's release_time says which). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only, except a fiscal-year net revenue guide in constant currency in numbers, 'rev_guide': every PepsiCo EPS guide of 2007-2020 is a one-sided bound, words, or a figure or range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December (53 weeks in 2011 and 2016). Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth excluding currency that the release states, else the reported growth it states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states one); acquisitions, divestitures (the Venezuela deconsolidation among them) and the extra week stay in, as published, and organic growth, which removes them, is not used. A print whose release states no total servings takes them from the first filing that does ('servings_later'), on that filing's own date (from 2019 the 10-Q came minutes before the release, on the same day). Events: from the FY2017 10-K, each 10-K whose risk factors name the growth of the e-commerce channel as a risk to PepsiCo's business ('ecommerce_company_acknowledged': ECOMMERCE on the watch list, company-acknowledged, text only), replaced by the next 10-K's wording. Listings: the exchange, once a filing has announced it and it is effective (Nasdaq from 2017-12-20, the NYSE before). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted during the session on their release days, and from 2009 most came before the open (each print's release_time says which). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only, except a fiscal-year net revenue guide in constant currency in numbers, 'rev_guide': every PepsiCo EPS guide of 2007-2023 is a one-sided bound, words, or a figure or range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December (53 weeks in 2011, 2016 and 2022). Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth excluding currency that the release states, else the reported growth it states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states one); acquisitions, divestitures (the Venezuela deconsolidation among them) and the extra week stay in, as published, and organic growth, which removes them, is not used. A print whose release states no total servings takes them from the first filing that does ('servings_later'), on that filing's own date (from 2019 the 10-Q came minutes before the release, on the same day); no release, 10-Q or 10-K from the FY2020 10-K to the Q3 2023 10-Q states total servings, so those prints have none and the slot scores BASE (the AAPL Mac-unit rule). Events: from the FY2017 10-K, each 10-K whose risk factors name the growth of the e-commerce channel as a risk to PepsiCo's business ('ecommerce_company_acknowledged': ECOMMERCE on the watch list, company-acknowledged, text only), replaced by the next 10-K's wording. Listings: the exchange, once a filing has announced it and it is effective (Nasdaq from 2017-12-20, the NYSE before). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "PEP",
  "sources": {
   "P1": {
@@ -981,6 +981,132 @@
    "title": "PepsiCo Q3 2020 results (8-K ex.99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000072/q320208-kxexhibit991.htm",
    "supports": "Q3 2020 income statement and balance sheet; no total servings; reported net revenue +5.3%, foreign exchange 2 points unfavorable, structural changes 3 points favorable (organic +4.2%); EPS $1.65 (core $1.66); an updated 2020 outlook"
+  },
+  "P141": {
+   "published": "2021-02-11",
+   "filed": "2021-02-10 17:41 ET (after the close)",
+   "title": "PepsiCo FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000007/pep-20201226.htm",
+   "supports": "income statement 2018-2020 (no five-year summary: the 10-K has no Item 6); net revenue by segment 2018-2020; no total servings; core net income attributable to PepsiCo per common share – diluted $5.52; cash flow (operating activities $10,613M, capital spending $4,240M, sales of PP&E $55M, repurchases $2,000M, dividends $5,509M); the $1.0225 dividend declared in February 2021; business, competition and risk-factor wording"
+  },
+  "P142": {
+   "published": "2021-02-11",
+   "filed": "2021-02-10 17:47 ET (after the close; the release is dated February 11, 2021)",
+   "title": "PepsiCo Q4 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000009/q420208-kxexhibit991.htm",
+   "supports": "Q4 2020 and 2020 income statements and balance sheet; no total servings; reported net revenue +8.8% in the quarter, foreign exchange 2 points unfavorable, acquisitions 5 points favorable (organic +5.7%); EPS $1.33 and $5.12 (core $1.47 and $5.52); 2021 guidance; a dividend increase announced for the June 2021 payment"
+  },
+  "P143": {
+   "published": "2021-04-15",
+   "filed": "2021-04-14 17:45 ET (after the close; the release is dated April 15, 2021)",
+   "title": "PepsiCo Q1 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000021/q120218-kxexhibit991.htm",
+   "supports": "Q1 2021 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +6.8%, foreign exchange 0.5 points unfavorable, acquisitions 5 points favorable (organic +2.4%); EPS $1.24 (core $1.21); 2021 guidance reaffirmed"
+  },
+  "P144": {
+   "published": "2021-07-13",
+   "filed": "2021-07-12 17:37 ET (after the close)",
+   "title": "PepsiCo Q2 2021 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000039/pep-20210612.htm",
+   "supports": "'Cash dividends declared per common share were $1.075 and $1.0225 for the 12 weeks ended June 12, 2021 and June 13, 2020, respectively'"
+  },
+  "P145": {
+   "published": "2021-07-13",
+   "filed": "2021-07-12 17:41 ET (after the close; the release is dated July 13, 2021)",
+   "title": "PepsiCo Q2 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000041/q220218-kxexhibit991.htm",
+   "supports": "Q2 2021 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +20.5%, foreign exchange 3 points favorable, acquisitions 4 points favorable (organic +12.8%); EPS $1.70 (core $1.72); the 2021 outlook raised"
+  },
+  "P146": {
+   "published": "2021-10-05",
+   "filed": "2021-10-04 17:42 ET (after the close; the release is dated October 5, 2021)",
+   "title": "PepsiCo Q3 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747621000051/q320218-kxexhibit991.htm",
+   "supports": "Q3 2021 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +11.6%, foreign exchange 2 points favorable, acquisitions 1 point favorable (organic +9.0%); EPS $1.60 (core $1.79); the 2021 outlook raised"
+  },
+  "P147": {
+   "published": "2022-02-10",
+   "filed": "2022-02-09 18:03 ET (after the close)",
+   "title": "PepsiCo FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm",
+   "supports": "income statement 2019-2021 (no five-year summary: the 10-K has no Item 6); net revenue by segment 2019-2021; no total servings; core net income attributable to PepsiCo per common share – diluted $6.26; cash flow (operating activities $11,616M, capital spending $4,625M, sales of PP&E $166M, repurchases $106M, dividends $5,815M); the $1.075 dividend declared in February 2022; business, competition and risk-factor wording"
+  },
+  "P148": {
+   "published": "2022-02-10",
+   "filed": "2022-02-09 18:06 ET (after the close; the release is dated February 10, 2022)",
+   "title": "PepsiCo Q4 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000011/q420218-kxexhibit991.htm",
+   "supports": "Q4 2021 and 2021 income statements and balance sheet; no total servings; reported net revenue +12.4% in the quarter, no foreign exchange impact, acquisitions 0.5 points favorable (organic +11.9%); EPS $0.95 and $5.49 (core $1.53 and $6.26); 2022 guidance; a dividend increase announced for the June 2022 payment"
+  },
+  "P149": {
+   "published": "2022-04-26",
+   "filed": "2022-04-25 17:54 ET (after the close; the release is dated April 26, 2022)",
+   "title": "PepsiCo Q1 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000021/q120228-kxexhibit991.htm",
+   "supports": "Q1 2022 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +9.3%, foreign exchange 1 point unfavorable, the Juice Transaction 3 points unfavorable (organic +13.7%); EPS $3.06 (core $1.29); the 2022 organic revenue outlook raised"
+  },
+  "P150": {
+   "published": "2022-07-12",
+   "filed": "2022-07-11 17:56 ET (after the close)",
+   "title": "PepsiCo Q2 2022 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000043/pep-20220611.htm",
+   "supports": "'Cash dividends declared per common share were $1.15 and $1.075 for the 12 weeks ended June 11, 2022 and June 12, 2021, respectively'"
+  },
+  "P151": {
+   "published": "2022-07-12",
+   "filed": "2022-07-11 18:02 ET (after the close; the release is dated July 12, 2022)",
+   "title": "PepsiCo Q2 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000045/q220228-kxexhibit991.htm",
+   "supports": "Q2 2022 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +5.2%, foreign exchange 3 points unfavorable, the Juice Transaction 5 points unfavorable (organic +13.0%); EPS $1.03 (core $1.86); the 2022 organic revenue outlook raised"
+  },
+  "P152": {
+   "published": "2022-10-12",
+   "filed": "2022-10-11 18:01 ET (after the close; the release is dated October 12, 2022)",
+   "title": "PepsiCo Q3 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000054/q320228-kxexhibit991.htm",
+   "supports": "Q3 2022 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +8.8%, foreign exchange 3 points unfavorable, the Juice Transaction 4 points unfavorable (organic +16.0%); EPS $1.95 (core $1.97); the 2022 outlook raised"
+  },
+  "P153": {
+   "published": "2023-02-09",
+   "filed": "2023-02-08 18:06 ET (after the close)",
+   "title": "PepsiCo FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm",
+   "supports": "income statement 2020-2022 (no five-year summary: the 10-K has no Item 6); net revenue by segment 2020-2022; no total servings; core net income attributable to PepsiCo per common share – diluted $6.79; cash flow (operating activities $10,811M, capital spending $5,207M, sales of PP&E $251M, repurchases $1,500M, dividends $6,172M); the $1.15 dividend declared in February 2023; business, competition and risk-factor wording"
+  },
+  "P154": {
+   "published": "2023-02-09",
+   "filed": "2023-02-08 18:10 ET (after the close; the release is dated February 9, 2023)",
+   "title": "PepsiCo Q4 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000009/q420228-kxexhibit991.htm",
+   "supports": "Q4 2022 and 2022 income statements and balance sheet; no total servings; reported net revenue +10.9% in the quarter, foreign exchange 3 points unfavorable, the Juice Transaction 4 points unfavorable, the 53rd week 4 points favorable (organic +14.6%); EPS $0.37 and $6.42 (core $1.67 and $6.79); 2023 guidance; a dividend increase announced for the June 2023 payment"
+  },
+  "P155": {
+   "published": "2023-04-25",
+   "filed": "2023-04-24 18:00 ET (after the close; the release is dated April 25, 2023)",
+   "title": "PepsiCo Q1 2023 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000025/q120238-kxexhibit991.htm",
+   "supports": "Q1 2023 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +10.2%, foreign exchange 2.5 points unfavorable, the Juice Transaction 2 points unfavorable (organic +14.3%); EPS $1.40 (core $1.50); the 2023 outlook raised"
+  },
+  "P156": {
+   "published": "2023-07-13",
+   "filed": "2023-07-12 18:08 ET (after the close)",
+   "title": "PepsiCo Q2 2023 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000046/pep-20230617.htm",
+   "supports": "'Cash dividends declared per common share were $1.265 and $1.15 for the 12 weeks ended June 17, 2023 and June 11, 2022, respectively'"
+  },
+  "P157": {
+   "published": "2023-07-13",
+   "filed": "2023-07-12 18:12 ET (after the close; the release is dated July 13, 2023)",
+   "title": "PepsiCo Q2 2023 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000048/q220238-kxexhibit991.htm",
+   "supports": "Q2 2023 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +10.4%, foreign exchange 2.5 points unfavorable (organic +13.0%); EPS $1.99 (core $2.09); the 2023 outlook raised"
+  },
+  "P158": {
+   "published": "2023-10-10",
+   "filed": "2023-10-10 06:05 ET (before the open)",
+   "title": "PepsiCo Q3 2023 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000060/q320238-kxexhibit991.htm",
+   "supports": "Q3 2023 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +6.7%, foreign exchange 2 points unfavorable (organic +8.8%); EPS $2.24 (core $2.25); the 2023 core EPS outlook raised"
   }
  },
  "history_vintages": [
@@ -2716,6 +2842,360 @@
     ]
    ],
    "groups_basis": "FY19 net revenue by segment (FY2019 10-K; the seven segments realigned in the fourth quarter of 2019)"
+  },
+  {
+   "published": "2021-02-11",
+   "sources": [
+    "P141",
+    "P133",
+    "P126",
+    "P118",
+    "P109",
+    "P100",
+    "P91",
+    "P81"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY20",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2020, we and The Coca-Cola Company represented approximately 22% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2020 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2018": "2018-12-29",
+    "2019": "2019-12-28",
+    "2020": "2020-12-26"
+   },
+   "eps_gaap": {
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2,
+    "2020": 5.12
+   },
+   "eps_normalized": {
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2,
+    "2020": 5.12
+   },
+   "revenue_usd_b": {
+    "2011": 66.504,
+    "2012": 65.492,
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799,
+    "2017": 63.525,
+    "2018": 64.661,
+    "2019": 67.161,
+    "2020": 70.372
+   },
+   "diluted_shares_m": {
+    "2011": 1597.0,
+    "2020": 1392.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.32,
+   "prev_fy_op_margin_note": "FY20 operating profit $10,080M / net revenue $70,372M (FY2020 10-K; GAAP)",
+   "prev_fy_pretax_margin": 12.89,
+   "prev_fy_pretax_margin_note": "FY20 income before income taxes $9,069M / $70,372M (FY2020 10-K)",
+   "prev_fy_gross_margin": 54.82,
+   "prev_fy_sales_growth": 4.8,
+   "prev_fy_servings_pct": null,
+   "prev_fy_servings_note": "not stated in the FY2020 10-K",
+   "tax_rate": 0.209,
+   "tax_note": "FY20 effective rate: taxes $1,894M / pre-tax income $9,069M (FY2020 10-K)",
+   "fcf_b": 6.428,
+   "fcf_label": "FY20",
+   "dividend_annual": 4.09,
+   "dividend_note": "$1.0225 quarterly: 'On February 4, 2021, the Board of Directors declared a quarterly dividend of $1.0225 payable March 31, 2021' (FY2020 10-K)",
+   "cash_return_text": "$2,000M of share repurchases and $5,509M of dividends paid in FY20",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, PepsiCo Beverages North America, Latin America, Europe, Africa, Middle East and South Asia, and Asia Pacific, Australia and New Zealand and China region",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it (none does in this window): 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2017 $3.38 GAAP, with the provisional net tax expense of the TCJ Act ($2,451 million, $1.70 a share) as published: the company's core $5.23 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2018 $8.78 GAAP, with the other net tax benefits ($5,064 million, $3.55 a share) and the TCJ Act's net tax benefit ($0.02) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $5.66 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2019 $5.20 GAAP: the company's core $5.53 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2020 $5.12 GAAP: the company's core $5.52 (the 10-K's core net income attributable to PepsiCo per common share – diluted) also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     18.189,
+     6.5
+    ],
+    [
+     "Quaker Foods North America",
+     2.742,
+     10.5
+    ],
+    [
+     "PepsiCo Beverages North America",
+     22.559,
+     3.8
+    ],
+    [
+     "Latin America",
+     6.942,
+     -8.3
+    ],
+    [
+     "Europe",
+     11.922,
+     1.7
+    ],
+    [
+     "Africa, Middle East and South Asia",
+     4.573,
+     25.3
+    ],
+    [
+     "Asia Pacific, Australia and New Zealand and China region",
+     3.445,
+     18.0
+    ]
+   ],
+   "groups_basis": "FY20 net revenue by segment (FY2020 10-K)"
+  },
+  {
+   "published": "2022-02-10",
+   "sources": [
+    "P147",
+    "P141",
+    "P133",
+    "P126",
+    "P118",
+    "P109",
+    "P100",
+    "P91"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY21",
+   "why": "PepsiCo: 'We are a leading global beverage and convenient food company with a complementary portfolio of brands, including Lays, Doritos, Cheetos, Gatorade, Pepsi-Cola, Mountain Dew, Quaker and SodaStream'; 'Our beverage and convenient food products are in highly competitive categories and markets', 'In 2021, we and The Coca-Cola Company represented approximately 22% and 19%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2021 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2019": "2019-12-28",
+    "2020": "2020-12-26",
+    "2021": "2021-12-25"
+   },
+   "eps_gaap": {
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2,
+    "2020": 5.12,
+    "2021": 5.49
+   },
+   "eps_normalized": {
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2,
+    "2020": 5.12,
+    "2021": 5.49
+   },
+   "revenue_usd_b": {
+    "2012": 65.492,
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799,
+    "2017": 63.525,
+    "2018": 64.661,
+    "2019": 67.161,
+    "2020": 70.372,
+    "2021": 79.474
+   },
+   "diluted_shares_m": {
+    "2012": 1575.0,
+    "2021": 1389.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.04,
+   "prev_fy_op_margin_note": "FY21 operating profit $11,162M / net revenue $79,474M (FY2021 10-K; GAAP)",
+   "prev_fy_pretax_margin": 12.36,
+   "prev_fy_pretax_margin_note": "FY21 income before income taxes $9,821M / $79,474M (FY2021 10-K)",
+   "prev_fy_gross_margin": 53.35,
+   "prev_fy_sales_growth": 12.9,
+   "prev_fy_servings_pct": null,
+   "prev_fy_servings_note": "not stated in the FY2021 10-K",
+   "tax_rate": 0.218,
+   "tax_note": "FY21 effective rate: taxes $2,142M / pre-tax income $9,821M (FY2021 10-K)",
+   "fcf_b": 7.157,
+   "fcf_label": "FY21",
+   "dividend_annual": 4.3,
+   "dividend_note": "$1.075 quarterly: 'On February 2, 2022, the Board of Directors declared a quarterly dividend of $1.075 per share payable March 31, 2022' (FY2021 10-K)",
+   "cash_return_text": "$106M of share repurchases and $5,815M of dividends paid in FY21",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, PepsiCo Beverages North America, Latin America, Europe, Africa, Middle East and South Asia, and Asia Pacific, Australia and New Zealand and China region",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it (none does in this window): 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2017 $3.38 GAAP, with the provisional net tax expense of the TCJ Act ($2,451 million, $1.70 a share) as published: the company's core $5.23 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2018 $8.78 GAAP, with the other net tax benefits ($5,064 million, $3.55 a share) and the TCJ Act's net tax benefit ($0.02) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $5.66 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2019 $5.20 GAAP: the company's core $5.53 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2020 $5.12 GAAP: the company's core $5.52 (the 10-K's core net income attributable to PepsiCo per common share – diluted) also excludes the commodity mark-to-market net impact (the 2008 core rule); 2021 $5.49 GAAP, with the charge related to cash tender offers ($0.49 a share) as published: the company's core $6.26 (the 10-K's core net income attributable to PepsiCo per common share – diluted) also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     19.608,
+     7.8
+    ],
+    [
+     "Quaker Foods North America",
+     2.751,
+     0.3
+    ],
+    [
+     "PepsiCo Beverages North America",
+     25.276,
+     12.0
+    ],
+    [
+     "Latin America",
+     8.108,
+     16.8
+    ],
+    [
+     "Europe",
+     13.038,
+     9.4
+    ],
+    [
+     "Africa, Middle East and South Asia",
+     6.078,
+     32.9
+    ],
+    [
+     "Asia Pacific, Australia and New Zealand and China region",
+     4.615,
+     34.0
+    ]
+   ],
+   "groups_basis": "FY21 net revenue by segment (FY2021 10-K)"
+  },
+  {
+   "published": "2023-02-09",
+   "sources": [
+    "P153",
+    "P147",
+    "P141",
+    "P133",
+    "P126",
+    "P118",
+    "P109",
+    "P100"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY22",
+   "why": "PepsiCo: 'We are a leading global beverage and convenient food company with a complementary portfolio of brands, including Lay’s, Doritos, Cheetos, Gatorade, Pepsi-Cola, Mountain Dew, Quaker and SodaStream'; 'Our beverage and convenient food products are in highly competitive categories and markets', 'In 2022, we and The Coca-Cola Company represented approximately 20% and 21%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2022 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2020": "2020-12-26",
+    "2021": "2021-12-25",
+    "2022": "2022-12-31"
+   },
+   "eps_gaap": {
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2,
+    "2020": 5.12,
+    "2021": 5.49,
+    "2022": 6.42
+   },
+   "eps_normalized": {
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2,
+    "2020": 5.12,
+    "2021": 5.49,
+    "2022": 6.42
+   },
+   "revenue_usd_b": {
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799,
+    "2017": 63.525,
+    "2018": 64.661,
+    "2019": 67.161,
+    "2020": 70.372,
+    "2021": 79.474,
+    "2022": 86.392
+   },
+   "diluted_shares_m": {
+    "2013": 1560.0,
+    "2022": 1387.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 13.33,
+   "prev_fy_op_margin_note": "FY22 operating profit $11,512M / net revenue $86,392M (FY2022 10-K; GAAP)",
+   "prev_fy_pretax_margin": 12.39,
+   "prev_fy_pretax_margin_note": "FY22 income before income taxes $10,705M / $86,392M (FY2022 10-K)",
+   "prev_fy_gross_margin": 53.03,
+   "prev_fy_sales_growth": 8.7,
+   "prev_fy_servings_pct": null,
+   "prev_fy_servings_note": "not stated in the FY2022 10-K",
+   "tax_rate": 0.161,
+   "tax_note": "FY22 effective rate: taxes $1,727M / pre-tax income $10,705M (FY2022 10-K)",
+   "fcf_b": 5.855,
+   "fcf_label": "FY22",
+   "dividend_annual": 4.6,
+   "dividend_note": "$1.15 quarterly: 'On February 1, 2023, the Board declared a quarterly dividend of $1.15 per share payable March 31, 2023' (FY2022 10-K)",
+   "cash_return_text": "$1,500M of share repurchases and $6,172M of dividends paid in FY22",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, PepsiCo Beverages North America, Latin America, Europe, Africa, Middle East and South Asia, and Asia Pacific, Australia and New Zealand and China region",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it (none does in this window): 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2017 $3.38 GAAP, with the provisional net tax expense of the TCJ Act ($2,451 million, $1.70 a share) as published: the company's core $5.23 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2018 $8.78 GAAP, with the other net tax benefits ($5,064 million, $3.55 a share) and the TCJ Act's net tax benefit ($0.02) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $5.66 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2019 $5.20 GAAP: the company's core $5.53 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2020 $5.12 GAAP: the company's core $5.52 (the 10-K's core net income attributable to PepsiCo per common share – diluted) also excludes the commodity mark-to-market net impact (the 2008 core rule); 2021 $5.49 GAAP, with the charge related to cash tender offers ($0.49 a share) as published: the company's core $6.26 (the 10-K's core net income attributable to PepsiCo per common share – diluted) also excludes the commodity mark-to-market net impact (the 2008 core rule); 2022 $6.42 GAAP, a 53-week year as published, with the gain associated with the Juice Transaction ($2.08 a share), impairment and other charges ($2.12) and a tax benefit related to the IRS audit ($0.23) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $6.79 (the 10-K's core net income attributable to PepsiCo per common share – diluted) also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     23.291,
+     18.8
+    ],
+    [
+     "Quaker Foods North America",
+     3.16,
+     14.9
+    ],
+    [
+     "PepsiCo Beverages North America",
+     26.213,
+     3.7
+    ],
+    [
+     "Latin America",
+     9.779,
+     20.6
+    ],
+    [
+     "Europe",
+     12.724,
+     -2.4
+    ],
+    [
+     "Africa, Middle East and South Asia",
+     6.438,
+     5.9
+    ],
+    [
+     "Asia Pacific, Australia and New Zealand and China region",
+     4.787,
+     3.7
+    ]
+   ],
+   "groups_basis": "FY22 net revenue by segment (FY2022 10-K)"
   }
  ],
  "prints": [
@@ -5625,6 +6105,636 @@
    "inventory_pct": 12.8,
    "inventory_gap_pp": 7.5,
    "sales_note": "net revenue $18,091M vs $17,188M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-02-11",
+   "source": "P142",
+   "extra_sources": [
+    "P134"
+   ],
+   "release": "Feb 11",
+   "release_time": "after the close on Feb 10: 8-K accepted 17:47 ET (the 10-K at 17:41 ET), the release dated February 11 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2020-12-26",
+   "raw": {
+    "sales_m": 22455,
+    "sales_prior_m": 20640,
+    "cogs_m": 10426,
+    "cogs_prior_m": 9346,
+    "op_m": 2826,
+    "op_prior_m": 2699,
+    "inventory_m": 4172,
+    "inventory_prior_m": 3338
+   },
+   "lc_pct": 10.8,
+   "lc_note": "the release's reported net revenue growth of +8.8% less its stated 2-point unfavorable currency effect; structural changes (5 points favorable) stays in, as published (organic +5.7%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the FY2020 10-K states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $4,172M at 12/26/20 vs $3,338M at 12/28/19 (the Q4 2019 release's balance sheet)",
+   "gross_margin_note": "cost of sales $10,426M vs $9,346M",
+   "op_margin_note": "operating profit $2,826M vs $2,699M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.33,
+   "eps_q_prior": 1.26,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.47)",
+   "diluted_shares_m": 1388,
+   "cash_b": 9.551,
+   "cash_note": "cash and equivalents $8,185M + short-term investments $1,366M",
+   "next_print": "Q1 2021 print (late April)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $5.9 billion, comprised of dividends of approximately $5.8 billion and share repurchases of approximately $100 million.'",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 5.12,
+    "revenue_usd_b": 70.372,
+    "diluted_shares_m": 1392.0,
+    "normalization_note": "FY20 = GAAP $5.12: the company's core $5.52 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 14.32,
+    "op_margin_note": "FY20 operating profit $10,080M / net revenue $70,372M (Q4 2020 release; GAAP)",
+    "pretax_margin": 12.89,
+    "pretax_margin_note": "FY20 income before income taxes $9,069M / $70,372M (Q4 2020 release)",
+    "gross_margin": 54.82,
+    "sales_growth": 4.8,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2020 release",
+    "tax_rate": 0.209,
+    "tax_note": "FY20 effective rate: taxes $1,894M / pre-tax income $9,069M"
+   },
+   "sales_b": 22.455,
+   "sales_pct": 8.8,
+   "gross_margin": 53.57,
+   "gross_margin_bp": -115.0,
+   "op_margin": 12.59,
+   "op_margin_bp": -49.1,
+   "inventory_b": 4.172,
+   "inventory_pct": 25.0,
+   "inventory_gap_pp": 16.2,
+   "sales_note": "net revenue $22,455M vs $20,640M (16 weeks)"
+  },
+  {
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-04-15",
+   "source": "P143",
+   "extra_sources": [
+    "P136"
+   ],
+   "release": "Apr 15",
+   "release_time": "after the close on Apr 14: 8-K accepted 17:45 ET (the 10-Q at 17:37 ET), the release dated April 15 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2021-03-20",
+   "raw": {
+    "sales_m": 14820,
+    "sales_prior_m": 13881,
+    "cogs_m": 6671,
+    "cogs_prior_m": 6127,
+    "op_m": 2312,
+    "op_prior_m": 1924,
+    "inventory_m": 4556,
+    "inventory_prior_m": 3600
+   },
+   "lc_pct": 7.3,
+   "lc_note": "the release's reported net revenue growth of +6.8% less its stated 0.5-point unfavorable currency effect; structural changes (5 points favorable) stays in, as published (organic +2.4%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $4,556M at 3/20/21 vs $3,600M at 3/21/20 (the Q1 2020 release's balance sheet)",
+   "gross_margin_note": "cost of sales $6,671M vs $6,127M",
+   "op_margin_note": "operating profit $2,312M vs $1,924M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.24,
+   "eps_q_prior": 0.96,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.21)",
+   "diluted_shares_m": 1387,
+   "cash_b": 6.625,
+   "cash_note": "cash and equivalents $5,661M + short-term investments $964M",
+   "next_print": "Q2 2021 print (mid-July)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $5.9 billion, comprised of dividends of approximately $5.8 billion and share repurchases of $106 million.'",
+   "sales_b": 14.82,
+   "sales_pct": 6.8,
+   "gross_margin": 54.99,
+   "gross_margin_bp": -87.4,
+   "op_margin": 15.6,
+   "op_margin_bp": 174.0,
+   "inventory_b": 4.556,
+   "inventory_pct": 26.6,
+   "inventory_gap_pp": 19.8,
+   "sales_note": "net revenue $14,820M vs $13,881M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-07-13",
+   "source": "P145",
+   "extra_sources": [
+    "P138"
+   ],
+   "release": "Jul 13",
+   "release_time": "after the close on Jul 12: 8-K accepted 17:41 ET (the 10-Q at 17:37 ET), the release dated July 13 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2021-06-12",
+   "raw": {
+    "sales_m": 19217,
+    "sales_prior_m": 15945,
+    "cogs_m": 8880,
+    "cogs_prior_m": 7088,
+    "op_m": 3129,
+    "op_prior_m": 2319,
+    "inventory_m": 5006,
+    "inventory_prior_m": 4314
+   },
+   "lc_pct": 17.5,
+   "lc_note": "the release's reported net revenue growth of +20.5% less its stated 3-point favorable currency effect; structural changes (4 points favorable) stays in, as published (organic +12.8%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,006M at 6/12/21 vs $4,314M at 6/13/20 (the Q2 2020 release's balance sheet)",
+   "gross_margin_note": "cost of sales $8,880M vs $7,088M",
+   "op_margin_note": "operating profit $3,129M vs $2,319M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.7,
+   "eps_q_prior": 1.18,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.72)",
+   "diluted_shares_m": 1388,
+   "cash_b": 5.777,
+   "cash_note": "cash and equivalents $5,449M + short-term investments $328M",
+   "next_print": "Q3 2021 print (early October)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $5.9 billion, comprised of dividends of approximately $5.8 billion and share repurchases of $106 million.'",
+   "sales_b": 19.217,
+   "sales_pct": 20.5,
+   "gross_margin": 53.79,
+   "gross_margin_bp": -175.6,
+   "op_margin": 16.28,
+   "op_margin_bp": 173.9,
+   "inventory_b": 5.006,
+   "inventory_pct": 16.0,
+   "inventory_gap_pp": -4.5,
+   "sales_note": "net revenue $19,217M vs $15,945M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-10-05",
+   "source": "P146",
+   "extra_sources": [
+    "P140"
+   ],
+   "release": "Oct 5",
+   "release_time": "after the close on Oct 4: 8-K accepted 17:42 ET (the 10-Q at 17:41 ET), the release dated October 5 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2021-09-04",
+   "raw": {
+    "sales_m": 20189,
+    "sales_prior_m": 18091,
+    "cogs_m": 9394,
+    "cogs_prior_m": 8156,
+    "op_m": 3159,
+    "op_prior_m": 3011,
+    "inventory_m": 4364,
+    "inventory_prior_m": 4135
+   },
+   "lc_pct": 9.6,
+   "lc_note": "the release's reported net revenue growth of +11.6% less its stated 2-point favorable currency effect; structural changes (1 point favorable) stays in, as published (organic +9.0%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $4,364M at 9/4/21 vs $4,135M at 9/5/20 (the Q3 2020 release's balance sheet)",
+   "gross_margin_note": "cost of sales $9,394M vs $8,156M",
+   "op_margin_note": "operating profit $3,159M vs $3,011M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.6,
+   "eps_q_prior": 1.65,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.79); with the TCJ Act tax expense ($0.14 a share)",
+   "diluted_shares_m": 1389,
+   "cash_b": 6.85,
+   "cash_note": "cash and equivalents $6,506M + short-term investments $344M",
+   "next_print": "Q4 2021 print (mid-February)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $5.9 billion, comprised of dividends of approximately $5.8 billion and share repurchases of $106 million.'",
+   "sales_b": 20.189,
+   "sales_pct": 11.6,
+   "gross_margin": 53.47,
+   "gross_margin_bp": -144.7,
+   "op_margin": 15.65,
+   "op_margin_bp": -99.7,
+   "inventory_b": 4.364,
+   "inventory_pct": 5.5,
+   "inventory_gap_pp": -6.1,
+   "sales_note": "net revenue $20,189M vs $18,091M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-02-10",
+   "source": "P148",
+   "extra_sources": [
+    "P142"
+   ],
+   "release": "Feb 10",
+   "release_time": "after the close on Feb 9: 8-K accepted 18:06 ET (the 10-K at 18:03 ET), the release dated February 10 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2021-12-25",
+   "raw": {
+    "sales_m": 25248,
+    "sales_prior_m": 22455,
+    "cogs_m": 12130,
+    "cogs_prior_m": 10426,
+    "op_m": 2562,
+    "op_prior_m": 2826,
+    "inventory_m": 4347,
+    "inventory_prior_m": 4172
+   },
+   "lc_pct": 12.4,
+   "lc_note": "the release's reported net revenue growth of +12.4% with no currency effect stated for the quarter ('—%'); structural changes (0.5 points favorable) stays in, as published (organic +11.9%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the FY2021 10-K states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $4,347M at 12/25/21 vs $4,172M at 12/26/20 (the Q4 2020 release's balance sheet)",
+   "gross_margin_note": "cost of sales $12,130M vs $10,426M",
+   "op_margin_note": "operating profit $2,562M vs $2,826M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 0.95,
+   "eps_q_prior": 1.33,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.53); with the charge related to cash tender offers ($0.49 a share)",
+   "diluted_shares_m": 1390,
+   "cash_b": 5.988,
+   "cash_note": "cash and equivalents $5,596M + short-term investments $392M",
+   "next_print": "Q1 2022 print (mid-April)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.2 billion and share repurchases of $1.5 billion.'",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": 5.49,
+    "revenue_usd_b": 79.474,
+    "diluted_shares_m": 1389.0,
+    "normalization_note": "FY21 = GAAP $5.49, with the charge related to cash tender offers ($0.49 a share) as published: the company's core $6.26 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 14.04,
+    "op_margin_note": "FY21 operating profit $11,162M / net revenue $79,474M (Q4 2021 release; GAAP)",
+    "pretax_margin": 12.36,
+    "pretax_margin_note": "FY21 income before income taxes $9,821M / $79,474M (Q4 2021 release)",
+    "gross_margin": 53.35,
+    "sales_growth": 12.9,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2021 release",
+    "tax_rate": 0.218,
+    "tax_note": "FY21 effective rate: taxes $2,142M / pre-tax income $9,821M"
+   },
+   "sales_b": 25.248,
+   "sales_pct": 12.4,
+   "gross_margin": 51.96,
+   "gross_margin_bp": -161.3,
+   "op_margin": 10.15,
+   "op_margin_bp": -243.8,
+   "inventory_b": 4.347,
+   "inventory_pct": 4.2,
+   "inventory_gap_pp": -8.2,
+   "sales_note": "net revenue $25,248M vs $22,455M (16 weeks)"
+  },
+  {
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-04-26",
+   "source": "P149",
+   "extra_sources": [
+    "P143"
+   ],
+   "release": "Apr 26",
+   "release_time": "after the close on Apr 25: 8-K accepted 17:54 ET (the 10-Q at 17:51 ET), the release dated April 26 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2022-03-19",
+   "raw": {
+    "sales_m": 16200,
+    "sales_prior_m": 14820,
+    "cogs_m": 7433,
+    "cogs_prior_m": 6671,
+    "op_m": 5267,
+    "op_prior_m": 2312,
+    "inventory_m": 4762,
+    "inventory_prior_m": 4556
+   },
+   "lc_pct": 10.3,
+   "lc_note": "the release's reported net revenue growth of +9.3% less its stated 1-point unfavorable currency effect; the Juice Transaction divestiture (3 points unfavorable) stays in, as published (organic +13.7%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $4,762M at 3/19/22 vs $4,556M at 3/20/21 (the Q1 2021 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,433M vs $6,671M",
+   "op_margin_note": "operating profit $5,267M vs $2,312M (GAAP, with the $3,322M gain associated with the Juice Transaction; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 3.06,
+   "eps_q_prior": 1.24,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.29); with the gain associated with the Juice Transaction ($2.06 a share) and the Russia-Ukraine conflict charges ($0.17)",
+   "diluted_shares_m": 1391,
+   "cash_b": 6.904,
+   "cash_note": "cash and equivalents $6,561M + short-term investments $343M",
+   "next_print": "Q2 2022 print (mid-July)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.2 billion and share repurchases of $1.5 billion.'",
+   "sales_b": 16.2,
+   "sales_pct": 9.3,
+   "gross_margin": 54.12,
+   "gross_margin_bp": -86.9,
+   "op_margin": 32.51,
+   "op_margin_bp": 1691.2,
+   "inventory_b": 4.762,
+   "inventory_pct": 4.5,
+   "inventory_gap_pp": -4.8,
+   "sales_note": "net revenue $16,200M vs $14,820M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-07-12",
+   "source": "P151",
+   "extra_sources": [
+    "P145"
+   ],
+   "release": "Jul 12",
+   "release_time": "after the close on Jul 11: 8-K accepted 18:02 ET (the 10-Q at 17:56 ET), the release dated July 12 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2022-06-11",
+   "raw": {
+    "sales_m": 20225,
+    "sales_prior_m": 19217,
+    "cogs_m": 9415,
+    "cogs_prior_m": 8880,
+    "op_m": 2077,
+    "op_prior_m": 3129,
+    "inventory_m": 5287,
+    "inventory_prior_m": 5006
+   },
+   "lc_pct": 8.2,
+   "lc_note": "the release's reported net revenue growth of +5.2% less its stated 3-point unfavorable currency effect; the Juice Transaction divestiture (5 points unfavorable) stays in, as published (organic +13.0%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,287M at 6/11/22 vs $5,006M at 6/12/21 (the Q2 2021 release's balance sheet)",
+   "gross_margin_note": "cost of sales $9,415M vs $8,880M",
+   "op_margin_note": "operating profit $2,077M vs $3,129M (GAAP, with $1,165M of Russia-Ukraine conflict charges; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.03,
+   "eps_q_prior": 1.7,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.86); with the Russia-Ukraine conflict charges ($0.67 a share)",
+   "diluted_shares_m": 1389,
+   "cash_b": 5.692,
+   "cash_note": "cash and equivalents $5,405M + short-term investments $287M",
+   "next_print": "Q3 2022 print (early October)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.2 billion and share repurchases of $1.5 billion.'",
+   "sales_b": 20.225,
+   "sales_pct": 5.2,
+   "gross_margin": 53.45,
+   "gross_margin_bp": -34.2,
+   "op_margin": 10.27,
+   "op_margin_bp": -601.3,
+   "inventory_b": 5.287,
+   "inventory_pct": 5.6,
+   "inventory_gap_pp": 0.4,
+   "sales_note": "net revenue $20,225M vs $19,217M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-10-12",
+   "source": "P152",
+   "extra_sources": [
+    "P146"
+   ],
+   "release": "Oct 12",
+   "release_time": "after the close on Oct 11: 8-K accepted 18:01 ET (the 10-Q at 17:56 ET), the release dated October 12 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2022-09-03",
+   "raw": {
+    "sales_m": 21971,
+    "sales_prior_m": 20189,
+    "cogs_m": 10308,
+    "cogs_prior_m": 9394,
+    "op_m": 3353,
+    "op_prior_m": 3159,
+    "inventory_m": 5019,
+    "inventory_prior_m": 4364
+   },
+   "lc_pct": 11.8,
+   "lc_note": "the release's reported net revenue growth of +8.8% less its stated 3-point unfavorable currency effect; the Juice Transaction divestiture (4 points unfavorable) stays in, as published (organic +16.0%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,019M at 9/3/22 vs $4,364M at 9/4/21 (the Q3 2021 release's balance sheet)",
+   "gross_margin_note": "cost of sales $10,308M vs $9,394M",
+   "op_margin_note": "operating profit $3,353M vs $3,159M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.95,
+   "eps_q_prior": 1.6,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.97); with a tax benefit related to the IRS audit ($0.20 a share)",
+   "diluted_shares_m": 1387,
+   "cash_b": 6.742,
+   "cash_note": "cash and equivalents $6,415M + short-term investments $327M",
+   "next_print": "Q4 2022 print (early February)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.2 billion and share repurchases of $1.5 billion.'",
+   "sales_b": 21.971,
+   "sales_pct": 8.8,
+   "gross_margin": 53.08,
+   "gross_margin_bp": -38.6,
+   "op_margin": 15.26,
+   "op_margin_bp": -38.6,
+   "inventory_b": 5.019,
+   "inventory_pct": 15.0,
+   "inventory_gap_pp": 6.2,
+   "sales_note": "net revenue $21,971M vs $20,189M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-02-09",
+   "source": "P154",
+   "extra_sources": [
+    "P148"
+   ],
+   "release": "Feb 9",
+   "release_time": "after the close on Feb 8: 8-K accepted 18:10 ET (the 10-K at 18:06 ET), the release dated February 9 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2022-12-31",
+   "raw": {
+    "sales_m": 27996,
+    "sales_prior_m": 25248,
+    "cogs_m": 13420,
+    "cogs_prior_m": 12130,
+    "op_m": 815,
+    "op_prior_m": 2562,
+    "inventory_m": 5222,
+    "inventory_prior_m": 4347
+   },
+   "lc_pct": 13.9,
+   "lc_note": "the release's reported net revenue growth of +10.9% less its stated 3-point unfavorable currency effect; the Juice Transaction divestiture (4 points unfavorable) and the 53rd week (4 points favorable) stay in, as published (organic +14.6%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the FY2022 10-K states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,222M at 12/31/22 vs $4,347M at 12/25/21 (the Q4 2021 release's balance sheet)",
+   "gross_margin_note": "cost of sales $13,420M vs $12,130M",
+   "op_margin_note": "operating profit $815M vs $2,562M (GAAP, with $1,741M of impairment and other charges; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 0.37,
+   "eps_q_prior": 0.95,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.67); with impairment and other charges ($1.03 a share)",
+   "diluted_shares_m": 1385,
+   "cash_b": 5.348,
+   "cash_note": "cash and equivalents $4,954M + short-term investments $394M",
+   "next_print": "Q1 2023 print (late April)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.7 billion and share repurchases of $1.0 billion.'",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 6.42,
+    "revenue_usd_b": 86.392,
+    "diluted_shares_m": 1387.0,
+    "normalization_note": "FY22 = GAAP $6.42, a 53-week year, with the gain associated with the Juice Transaction ($2.08 a share), impairment and other charges ($2.12) and a tax benefit related to the IRS audit ($0.23) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $6.79 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 13.33,
+    "op_margin_note": "FY22 operating profit $11,512M / net revenue $86,392M (Q4 2022 release; GAAP)",
+    "pretax_margin": 12.39,
+    "pretax_margin_note": "FY22 income before income taxes $10,705M / $86,392M (Q4 2022 release)",
+    "gross_margin": 53.03,
+    "sales_growth": 8.7,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2022 release",
+    "tax_rate": 0.161,
+    "tax_note": "FY22 effective rate: taxes $1,727M / pre-tax income $10,705M"
+   },
+   "sales_b": 27.996,
+   "sales_pct": 10.9,
+   "gross_margin": 52.06,
+   "gross_margin_bp": 10.8,
+   "op_margin": 2.91,
+   "op_margin_bp": -723.6,
+   "inventory_b": 5.222,
+   "inventory_pct": 20.1,
+   "inventory_gap_pp": 9.2,
+   "sales_note": "net revenue $27,996M vs $25,248M (17 weeks vs 16)"
+  },
+  {
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-04-25",
+   "source": "P155",
+   "extra_sources": [
+    "P149"
+   ],
+   "release": "Apr 25",
+   "release_time": "after the close on Apr 24: 8-K accepted 18:00 ET (the 10-Q at 17:57 ET), the release dated April 25 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2023-03-25",
+   "raw": {
+    "sales_m": 17846,
+    "sales_prior_m": 16200,
+    "cogs_m": 7988,
+    "cogs_prior_m": 7433,
+    "op_m": 2629,
+    "op_prior_m": 5267,
+    "inventory_m": 5697,
+    "inventory_prior_m": 4762
+   },
+   "lc_pct": 12.7,
+   "lc_note": "the release's reported net revenue growth of +10.2% less its stated 2.5-point unfavorable currency effect; the Juice Transaction divestiture (2 points unfavorable) stays in, as published (organic +14.3%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,697M at 3/25/23 vs $4,762M at 3/19/22 (the Q1 2022 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,988M vs $7,433M",
+   "op_margin_note": "operating profit $2,629M vs $5,267M (GAAP; the core figures also exclude the mark-to-market net impact; the year-ago quarter with the Juice Transaction gain)",
+   "eps_q": 1.4,
+   "eps_q_prior": 3.06,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.50)",
+   "diluted_shares_m": 1384,
+   "cash_b": 5.204,
+   "cash_note": "cash and equivalents $4,770M + short-term investments $434M",
+   "next_print": "Q2 2023 print (mid-July)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.7 billion and share repurchases of $1.0 billion.'",
+   "sales_b": 17.846,
+   "sales_pct": 10.2,
+   "gross_margin": 55.24,
+   "gross_margin_bp": 112.2,
+   "op_margin": 14.73,
+   "op_margin_bp": -1778.1,
+   "inventory_b": 5.697,
+   "inventory_pct": 19.6,
+   "inventory_gap_pp": 9.5,
+   "sales_note": "net revenue $17,846M vs $16,200M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-07-13",
+   "source": "P157",
+   "extra_sources": [
+    "P151"
+   ],
+   "release": "Jul 13",
+   "release_time": "after the close on Jul 12: 8-K accepted 18:12 ET (the 10-Q at 18:08 ET), the release dated July 13 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2023-06-17",
+   "raw": {
+    "sales_m": 22322,
+    "sales_prior_m": 20225,
+    "cogs_m": 10121,
+    "cogs_prior_m": 9415,
+    "op_m": 3659,
+    "op_prior_m": 2077,
+    "inventory_m": 5969,
+    "inventory_prior_m": 5287
+   },
+   "lc_pct": 12.9,
+   "lc_note": "the release's reported net revenue growth of +10.4% less its stated 2.5-point unfavorable currency effect (organic +13.0%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,969M at 6/17/23 vs $5,287M at 6/11/22 (the Q2 2022 release's balance sheet)",
+   "gross_margin_note": "cost of sales $10,121M vs $9,415M",
+   "op_margin_note": "operating profit $3,659M vs $2,077M (GAAP; the core figures also exclude the mark-to-market net impact; the year-ago quarter with the Russia-Ukraine conflict charges)",
+   "eps_q": 1.99,
+   "eps_q_prior": 1.03,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $2.09)",
+   "diluted_shares_m": 1384,
+   "cash_b": 6.454,
+   "cash_note": "cash and equivalents $6,116M + short-term investments $338M",
+   "next_print": "Q3 2023 print (mid-October)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.7 billion and share repurchases of $1.0 billion.'",
+   "sales_b": 22.322,
+   "sales_pct": 10.4,
+   "gross_margin": 54.66,
+   "gross_margin_bp": 121.0,
+   "op_margin": 16.39,
+   "op_margin_bp": 612.2,
+   "inventory_b": 5.969,
+   "inventory_pct": 12.9,
+   "inventory_gap_pp": 2.5,
+   "sales_note": "net revenue $22,322M vs $20,225M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-10-10",
+   "source": "P158",
+   "extra_sources": [
+    "P152"
+   ],
+   "release": "Oct 10",
+   "release_time": "before the open on Oct 10: 8-K accepted 06:05 ET (the 10-Q at 06:03 ET); question-and-answer call at 8:15 a.m. ET",
+   "period_end": "2023-09-09",
+   "raw": {
+    "sales_m": 23453,
+    "sales_prior_m": 21971,
+    "cogs_m": 10675,
+    "cogs_prior_m": 10308,
+    "op_m": 4015,
+    "op_prior_m": 3353,
+    "inventory_m": 5558,
+    "inventory_prior_m": 5019
+   },
+   "lc_pct": 8.7,
+   "lc_note": "the release's reported net revenue growth of +6.7% less its stated 2-point unfavorable currency effect (organic +8.8%)",
+   "servings_pct": null,
+   "servings_note": "the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter",
+   "inventory_note": "inventories $5,558M at 9/9/23 vs $5,019M at 9/3/22 (the Q3 2022 release's balance sheet)",
+   "gross_margin_note": "cost of sales $10,675M vs $10,308M",
+   "op_margin_note": "operating profit $4,015M vs $3,353M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 2.24,
+   "eps_q_prior": 1.95,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $2.25)",
+   "diluted_shares_m": 1383,
+   "cash_b": 10.283,
+   "cash_note": "cash and equivalents $10,017M + short-term investments $266M",
+   "next_print": "Q4 2023 print (early February)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.7 billion, comprised of dividends of $6.7 billion and share repurchases of $1.0 billion.'",
+   "sales_b": 23.453,
+   "sales_pct": 6.7,
+   "gross_margin": 54.48,
+   "gross_margin_bp": 140.0,
+   "op_margin": 17.12,
+   "op_margin_bp": 185.8,
+   "inventory_b": 5.558,
+   "inventory_pct": 10.7,
+   "inventory_gap_pp": 4.0,
+   "sales_note": "net revenue $23,453M vs $21,971M (12 weeks)"
   }
  ],
  "guides": [
@@ -6232,6 +7342,102 @@
    "display": "'Full-year organic revenue growth to be approximately 4 percent;'; 'Full-year core earnings per share of $5.50 compared to 2019 core earnings per share of $5.53;'",
    "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
    "published": "2020-10-01"
+  },
+  {
+   "fy": 2021,
+   "source": "P142",
+   "doc": "Q4 2020 release",
+   "display": "'A mid-single digit increase in organic revenue;'; 'A high-single digit increase in core constant currency EPS;'",
+   "unused": "organic revenue growth in words, which also removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and core EPS growth in words (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2021-02-11"
+  },
+  {
+   "fy": 2021,
+   "source": "P143",
+   "doc": "Q1 2021 release",
+   "display": "'A mid-single-digit increase in organic revenue;'; 'A high-single-digit increase in core constant currency EPS;'",
+   "unused": "organic revenue growth in words, which also removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and core EPS growth in words (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2021-04-15"
+  },
+  {
+   "fy": 2021,
+   "source": "P145",
+   "doc": "Q2 2021 release",
+   "display": "'The Company now expects to deliver 6 percent organic revenue growth (versus our previous guidance of mid-single-digit growth) and 11 percent core constant currency EPS growth for fiscal year 2021 (versus our previous guidance of high-single-digit growth).'; 'This assumption and the guidance above imply 2021 core EPS of approximately $6.20, a 12 percent increase compared to 2020 core EPS of $5.52.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2021-07-13"
+  },
+  {
+   "fy": 2021,
+   "source": "P146",
+   "doc": "Q3 2021 release",
+   "display": "'For fiscal year 2021, the Company now expects to deliver approximately 8 percent organic revenue growth (versus our previous guidance of 6 percent), at least 11 percent core constant currency EPS growth (versus our previous guidance of 11 percent), and at least 12 percent core EPS growth (versus our previous guidance of 12 percent).'; 'This assumption and the guidance above imply 2021 core EPS of at least $6.20, compared to 2020 core EPS of $5.52.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a one-sided bound on core EPS (the 2008 core rule; a bound gives no field either, the UNP and LOW rule): no field, so the last full year's EPS stands",
+   "published": "2021-10-05"
+  },
+  {
+   "fy": 2022,
+   "source": "P148",
+   "doc": "Q4 2021 release",
+   "display": "'A 6 percent increase in organic revenue;'; 'An 8 percent increase in core constant currency EPS;'; 'This assumption and the guidance above imply 2022 core earnings per share of $6.67, a 6.5 percent increase compared to 2021 core earnings per share of $6.26.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2022-02-10"
+  },
+  {
+   "fy": 2022,
+   "source": "P149",
+   "doc": "Q1 2022 release",
+   "display": "'The Company now expects to deliver 8 percent organic revenue growth (versus our previous guidance of 6 percent) for fiscal year 2022.'; 'This assumption and the guidance above now imply 2022 core EPS of $6.63, a 6 percent increase compared to 2021 core EPS of $6.26.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2022-04-26"
+  },
+  {
+   "fy": 2022,
+   "source": "P151",
+   "doc": "Q2 2022 release",
+   "display": "'The Company now expects to deliver 10 percent organic revenue growth (versus our previous guidance of 8 percent) for fiscal year 2022.'; 'This assumption and the guidance above imply 2022 core EPS of $6.63, a 6 percent increase compared to 2021 core EPS of $6.26.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2022-07-12"
+  },
+  {
+   "fy": 2022,
+   "source": "P152",
+   "doc": "Q3 2022 release",
+   "display": "'For fiscal year 2022, the Company now expects to deliver 12 percent organic revenue growth (previously 10 percent), and 10 percent core constant currency EPS growth (previously 8 percent).'; 'This assumption and the guidance above imply 2022 core EPS of approximately $6.73 (previously $6.63), an approximately 7.5 percent increase (previously 6 percent) compared to 2021 core EPS of $6.26.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2022-10-12"
+  },
+  {
+   "fy": 2023,
+   "source": "P154",
+   "doc": "Q4 2022 release",
+   "display": "'A 6 percent increase in organic revenue;'; 'An 8 percent increase in core constant currency EPS;'; 'This assumption and the guidance above imply 2023 core EPS of $7.20, a 6 percent increase compared to 2022 core EPS of $6.79.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2023-02-09"
+  },
+  {
+   "fy": 2023,
+   "source": "P155",
+   "doc": "Q1 2023 release",
+   "display": "'For fiscal year 2023, the Company now expects to deliver 8 percent organic revenue growth (previously 6 percent), and 9 percent core constant currency EPS growth (previously 8 percent).'; 'This assumption and the guidance above imply 2023 core EPS of $7.27 (previously $7.20), a 7 percent increase (previously 6 percent) compared to 2022 core EPS of $6.79.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2023-04-25"
+  },
+  {
+   "fy": 2023,
+   "source": "P157",
+   "doc": "Q2 2023 release",
+   "display": "'For fiscal year 2023, the Company now expects to deliver 10 percent organic revenue growth (previously 8 percent), and 12 percent core constant currency EPS growth (previously 9 percent).'; 'This assumption and the guidance above imply 2023 core EPS of $7.47 (previously $7.27), a 10 percent increase (previously 7 percent) compared to 2022 core EPS of $6.79.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2023-07-13"
+  },
+  {
+   "fy": 2023,
+   "source": "P158",
+   "doc": "Q3 2023 release",
+   "display": "'For fiscal year 2023, the Company now expects to deliver 13 percent core constant currency EPS growth (previously 12 percent).'; '10 percent organic revenue growth;'; 'This assumption and the guidance above imply 2023 core EPS of $7.54 (previously $7.47), an 11 percent increase (previously 10 percent) compared to 2022 core EPS of $6.79.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands; the fiscal 2024 statement in the same release ('results towards the upper end of our long-term target ranges') is words about a later year on those bases, with no input in the method (the UNP 2018 rule)",
+   "published": "2023-10-10"
   }
  ],
  "dividends": [
@@ -6318,6 +7524,24 @@
    "source": "P137",
    "quarterly": 1.0225,
    "note": "$1.0225 quarterly, first stated as declared in the Q2 2020 10-Q, filed before that morning's release ('Cash dividends declared per common share were $1.0225 and $0.955 for the 12 weeks ended June 13, 2020 and June 15, 2019, respectively'); the releases of 2020 state no dividend per share, no 8-K states the declaration, and the increase announced with the Q4 2019 results was an announcement"
+  },
+  {
+   "published": "2021-07-13",
+   "source": "P144",
+   "quarterly": 1.075,
+   "note": "$1.075 quarterly, first stated as declared in the Q2 2021 10-Q, filed after the close the evening before the release's date ('Cash dividends declared per common share were $1.075 and $1.0225 for the 12 weeks ended June 12, 2021 and June 13, 2020, respectively'); the releases of 2021 state no dividend per share, no 8-K states the declaration, and the increase announced with the Q4 2020 results was an announcement"
+  },
+  {
+   "published": "2022-07-12",
+   "source": "P150",
+   "quarterly": 1.15,
+   "note": "$1.15 quarterly, first stated as declared in the Q2 2022 10-Q, filed after the close the evening before the release's date ('Cash dividends declared per common share were $1.15 and $1.075 for the 12 weeks ended June 11, 2022 and June 12, 2021, respectively'); the releases of 2022 state no dividend per share, no 8-K states the declaration, and the increase announced with the Q4 2021 results was an announcement"
+  },
+  {
+   "published": "2023-07-13",
+   "source": "P156",
+   "quarterly": 1.265,
+   "note": "$1.265 quarterly, first stated as declared in the Q2 2023 10-Q, filed after the close the evening before the release's date ('Cash dividends declared per common share were $1.265 and $1.15 for the 12 weeks ended June 17, 2023 and June 11, 2022, respectively'); the releases of 2023 state no dividend per share, no 8-K states the declaration, and the increase announced with the Q4 2022 results was an announcement"
   }
  ],
  "events": [
@@ -6351,6 +7575,39 @@
    "doc": "FY2019 10-K",
    "risk_quote": "Disruption in the retail landscape, including rapid growth in the e-commerce channel and hard discounters, can adversely affect our business, financial condition or results of operations.",
    "risk_short": "'disruption in the retail landscape, including rapid growth in the e-commerce channel and hard discounters' named as a risk to its business",
+   "offering": "it sells through e-commerce itself: 'Our products are also available and sold directly to consumers on a growing number of company-owned and third-party e-commerce websites and mobile commerce applications.'",
+   "offering_short": "its products sold on 'a growing number of company-owned and third-party e-commerce websites'"
+  },
+  {
+   "id": "P141",
+   "published": "2021-02-11",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2020 10-K",
+   "risk_quote": "Our business can be adversely affected if e-commerce channels and hard discounters take significant additional market share away from traditional retailers or we fail to find ways to create more powerful digital tools and capabilities for our retail customers to enable them to grow their businesses.",
+   "risk_short": "'e-commerce channels and hard discounters' taking 'significant additional market share away from traditional retailers' named as a risk to its business",
+   "offering": "it sells through e-commerce itself: 'Our products are also available and sold directly to consumers on a growing number of company-owned and third-party e-commerce websites and mobile commerce applications.'",
+   "offering_short": "its products sold on 'a growing number of company-owned and third-party e-commerce websites'"
+  },
+  {
+   "id": "P147",
+   "published": "2022-02-10",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2021 10-K",
+   "risk_quote": "Our business can be adversely affected if e-commerce channels and hard discounters take significant additional market share away from traditional retailers or we fail to find ways to create increasingly better digital tools and capabilities for our retail customers to enable them to grow their businesses.",
+   "risk_short": "'e-commerce channels and hard discounters' taking 'significant additional market share away from traditional retailers' named as a risk to its business",
+   "offering": "it sells through e-commerce itself: 'Our products are also available and sold directly to consumers on a growing number of company-owned and third-party e-commerce websites and mobile commerce applications.'",
+   "offering_short": "its products sold on 'a growing number of company-owned and third-party e-commerce websites'"
+  },
+  {
+   "id": "P153",
+   "published": "2023-02-09",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2022 10-K",
+   "risk_quote": "Our business can be adversely affected if e-commerce channels and hard discounters take significant additional market share away from traditional retailers or we fail to find ways to create increasingly better digital tools and capabilities for our retail customers to enable them to grow their businesses.",
+   "risk_short": "'e-commerce channels and hard discounters' taking 'significant additional market share away from traditional retailers' named as a risk to its business",
    "offering": "it sells through e-commerce itself: 'Our products are also available and sold directly to consumers on a growing number of company-owned and third-party e-commerce websites and mobile commerce applications.'",
    "offering_short": "its products sold on 'a growing number of company-owned and third-party e-commerce websites'"
   }

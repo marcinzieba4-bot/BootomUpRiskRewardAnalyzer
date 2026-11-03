@@ -1,0 +1,161 @@
+
+════════════════════════════════════════════════════════════════════════
+  PEP  ·  PepsiCo, Inc.  ·  $145.42  ·  RETROSPECTIVE as of 2021-06-18
+  Signal: ✕ AVOID   Ratio B: 8.12x   Adj gap: -0.78  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2021-06-18; latest print Q1 2021 (Apr 15)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Frito-Lay North America   $    19.5  $  19.5  $  19.8      +0.0      +0.3
+    +6.5% revenues in FY20
+  Quaker Foods North Ameri  $     2.9  $   2.9  $   3.0      +0.0      +0.1
+    +10.5% revenues in FY20
+  PepsiCo Beverages North   $    24.2  $  24.2  $  24.5      +0.0      +0.3
+    +3.8% revenues in FY20
+  Latin America             $     7.4  $   7.4  $   7.5      +0.0      +0.1
+    -8.3% revenues in FY20
+  Europe                    $    12.8  $  12.8  $  13.0      +0.0      +0.2
+    +1.7% revenues in FY20
+  Africa, Middle East and   $     4.9  $   4.9  $   5.0      +0.0      +0.1
+    +25.3% revenues in FY20
+  Asia Pacific, Australia   $     3.7  $   3.7  $   3.7      +0.0      +0.0
+    +18.0% revenues in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    75.4  $  75.4  $  76.5      +0.0      +1.1
+  FY2021E = FY20 $70.37B × (1 + 7.3%: Q1 2021 net revenue ex-currency, applied to the year (no FY21 revenue guide in numbers)); split pro rata to FY20 net revenue by segment (FY2020 10-K)
+  Q1 2021 (Apr 15): revenues $14.82B +6.8% (+7% ex-currency); servings not reported; inventories +26.6%;
+  gross margin 54.99% (-87.4bp); operating margin 15.60% (+174.0bp); EPS $1.24 vs $0.96
+  Volume: servings not reported (the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter); net revenue +6.8% reported, +7.3% excluding currency (the release's reported net revenue growth of +6.8% less its stated 0.5-point unfavorable currency effect; structural changes (5 points favorable) stays in, as published (organic +2.4%)); GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.21)
+  FY21 outlook (Q1 2021 release, display only): 'A mid-single-digit increase in organic revenue;'; 'A high-single-digit increase in core constant currency EPS;' — organic revenue growth in words, which also removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and core EPS growth in words (the 2008 core rule): no field, so the last full year's EPS stands
+
+  FY2021E EPS check:  $75.4B × 12.9% pre-tax × (1−20.9%) ÷ 1.387B  =  $5.54  (FY2021E: no EPS guide in numbers on a usable basis, FY20's $5.12 stands)
+  FY2023E BEAR check: $75.4B × 12.9% ÷ 1.345B  =  $5.72  (scenario $1.80)
+  FY2023E BULL check: $76.5B × 13.3% ÷ 1.345B  =  $5.98  (scenario $6.07)
+  Every 1pp of pre-tax margin ≈ $0.43 EPS ≈ $10/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Volume (servings) growth            +3.0%    ≥4.0%    ≥5.0%    ≥7.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -260.0bp  ≥-130.0bp   ≥0.0bp  ≥150.0bp   -87.4bp  ◦ BASE  ██░░
+  Net revenue growth                 -26.0%  ≥-10.0%    ≥6.0%   ≥10.0%     +6.8%  ▲ BULL  ███░
+  Inventory growth less net revenue  +65.0pp  ≤32.0pp  ≤-1.0pp  ≤-17.0pp   +19.8pp  ◦ BASE  ██░░
+  Operating margin change           -300.0bp  ≥-130.0bp  ≥40.0bp  ≥230.0bp  +174.0bp  ▲ BULL  ███░
+  E-commerce: net effect on store and direct-store-delivery sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   3.08 / 4.00  (back-solved from $145 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.30  →  Gap -0.78  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 net revenue +4.8%, servings not stated in the FY2020 10-K; Q1 gross margin 54.99% (-87bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 28.4x FY21E vs a 23.2x 10-yr median (88th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 2021 net revenue ex-currency +7.3% vs a 1.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $6.62B, FY20 free cash flow $6.43B, dividend $4.09 a year, $2,000M of share repurchases and $5,509M of dividends paid in FY20  (+0.30 × 15%  =  +0.045)
+    +  E-commerce: its products sold on 'a growing number of company-owned and third-party e-commerce websites' — PepsiCo sells online through retailers and its own sites  (+0.20 × 10%  =  +0.020)
+    -  Shift to e-commerce (FY2020 10-K): 'e-commerce channels and hard discounters' taking 'significant additional market share away from traditional retailers' named as a risk to its business  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Volume (servings) growth               n/r     +3.0%     n/r  Consumers trade down and buy fewer se…
+  Gross margin change                -87.4bp  -260.0bp  -172.6bp  Commodity costs outrun pricing and pr…
+  Net revenue growth                   +6.8%    -26.0%  -32.8%  Volume and pricing stall together
+  Inventory growth less net revenue   +19.8pp   +65.0pp  +45.2pp  Inventory builds ahead of demand: wri…
+  Operating margin change           +174.0bp  -300.0bp  -474.0bp  Marketing and overhead do not come do…
+  E-commerce: net effect on store and direct-store-delivery sales    +2.0/4    +1.0/4  -1.0/4  Shoppers leave physical retail faster…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$62  (model)  /  $27 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: servings are not reported for Q1 2021 (n/r in Q4 2020);
+  the bear case needs a volume recession that gross margin (-87.4bp now)
+  and inventories (+19.8pp against revenue) no longer absorb. Commodity inflation shows up in gross margin first; the bear needs
+  servings to fall as pricing rises.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.12  (FY2021E: no EPS guide in numbers on a usable basis, FY20's $5.12 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2011 14.9x, 2012 15.8x, 2013 16.0x, 2014 18.1x, 2015 22.9x, 2016 21.5x, 2017 30.0x, 2018 11.0x, 2019 20.6x, 2020 20.3x, 2021 25.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $102/share
+  Current $145 vs Updated EPP $102:  +42%  ⚠ far above floor — large drawdown room
+  Bear $27 vs Updated EPP $102:  -74%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Volume (servings) growth                     4.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -130.0      -42.6   BASE floor (vs -87 now)
+  Net revenue growth                         -10.0      -16.8   BASE floor (vs +7 now)
+  Inventory growth less net revenue            32.0      +12.2   BASE floor (vs +20 now)
+  Operating margin change                   -130.0     -304.0   BASE floor (vs +174 now)
+  E-commerce: net effect on store and direct-store-delivery sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.12 × (1+6.8%)² = $5.84
+  At 23x P/E (conservative):  $134/share
+  + Cumul. dividends (2yr):  +$8.43/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $134  (▼11 from $145)
+  Conservative total return:  -2% over 2yr  = -1%/yr
+
+  6.8% EPS growth is what is left once the premium multiple (28.4x)
+  mean-reverts to 23x. Breakeven at 23x needs FY2023E EPS of $5.96,
+  i.e. 7.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $128.05  –  $149.27  (at 82th pct of range)
+  Annual dividend:      $4.09/share  (yield 2.8%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.67
+  1-sigma range (1yr):  $122  –  $169  ($145 ± 16%)
+  2-sigma range (1yr):  $98  –  $193
+  ────────────────────────────────────────────────────────────
+  Bear $27 requires:  ~5.0σ price move  (unusual — requires fundamental break)
+  A beverage and convenient-food company with a 0.7 beta: the stock is +13% off its March
+  low while servings are not reported for Q1 2021 (n/r in Q4 2020).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.80  14.9x  $     27    12.9%      4.2%    +8.7pp  EPS -40.8%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE        6.07  23.2x  $    141    45.2%     14.8%   +30.4pp  EPS +8.8%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        6.07  26.4x  $    160    35.2%     51.7%   -16.5pp  EPS +8.8%/yr (FY11-FY20 CAGR); P/E holds its 75th pct
+  XBULL      10.31  29.0x  $    299     6.6%     29.3%   -22.7pp  EPS +41.9%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct
+
+  Proxy EV (2yr): $143  /  Market EV: $192  /  Current: $145
+  Conservative EV (2yr, ④): $134 + $8.43 divs = $143 total value
+  Downside (→ Bear $27): 81.4%   Upside (→ Bull $160): 10.0%   Ratio B 8.12x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $145 the market needs $192 in two years —
+  above the BULL case. That is a market composite of 3.08 against a model
+  read of 2.30: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       8.12x     +42%    -0.78  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     3.71x     +42%    -0.50  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +42%    -0.98  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          6.00x     +42%    -0.72  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         12.47x     +42%    -0.84  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             8.12x     +42%    -0.48  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 8.12x     +23%    -0.68  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    8.12x     +42%    -0.60  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2021 print (mid-July) — revenue against the full-year outlook; servings are not reported for Q1 2021
+  (2) Gross margin — -87.4bp in Q1 2021: pricing against commodity costs, what must hold if volume does not
+  (3) The outlook — Q1 2021 release: 'A mid-single-digit increase in organic revenue;'; 'A high-single-digit increase in core constant currency EPS;' (display only)
+  (4) Inventories — +26.6% against net revenue +6.8% in Q1 2021 (+19.8pp): commodity costs and acquisitions sit in them
+  (5) Capital return at 28x — 'Total cash returns to shareholders of approximately $5.9 billion, comprised of dividends of approximately $5.8 billion and share repurchases of $106 million.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $102  |  ADD below ~$120  |  TRIM above $160
+════════════════════════════════════════════════════════════════════════
+
