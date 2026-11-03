@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  PEP  ·  PepsiCo, Inc.  ·  $142.02  ·  RETROSPECTIVE as of 2026-06-18
+  Signal: ✕ AVOID   Ratio B: 2.68x   Adj gap: -0.09  [FAIRLY VALUED]
+  Point-in-time: 15 sources, latest published 2026-06-18; latest print Q1 2026 (Apr 16)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenues, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2026E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  PepsiCo Foods North Amer  $    28.6  $  28.6  $  31.3      +0.0      +2.7
+    +0.4% revenues in FY25
+  PepsiCo Beverages North   $    29.3  $  29.3  $  32.1      +0.0      +2.8
+    +1.5% revenues in FY25
+  International Beverages   $     5.2  $   5.2  $   5.7      +0.0      +0.5
+    +2.4% revenues in FY25
+  Europe, Middle East and   $    18.7  $  18.7  $  20.5      +0.0      +1.8
+    +8.2% revenues in FY25
+  Latin America Foods       $    11.0  $  11.0  $  12.0      +0.0      +1.0
+    -0.2% revenues in FY25
+  Asia Pacific Foods        $     4.8  $   4.8  $   5.3      +0.0      +0.5
+    +1.8% revenues in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    97.6  $  97.6  $ 106.9      +0.0      +9.3
+  FY2026E = FY25 $93.92B × (1 + 4.0%: FY26 net revenue guide (constant currency), applied to the year); split pro rata to FY25 net revenue by segment (FY2025 10-K; the six segments of the 2025 realignment)
+  Q1 2026 (Apr 16): revenues $19.44B +8.5% (+5% ex-currency); servings not reported; inventories +9.7%;
+  gross margin 55.19% (-57.6bp); operating margin 16.53% (+211.0bp); EPS $1.70 vs $1.33
+  Volume: servings not reported (the release gives food and beverage unit volume only, and the quarter's 10-Q states no total servings: no filing states them for the quarter); net revenue +8.5% reported, +5.1% excluding currency (the release's reported net revenue growth of +8.5% less the 3.4-point favorable currency effect its results discussion states; acquisitions and divestitures (2.5 points net favorable) stay in, as published (organic +2.6%)); GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.61)
+  FY26 outlook (Q1 2026 release, display only): 'Organic revenue to increase between 2 and 4 percent;'; 'Core constant currency EPS to increase between 4 and 6 percent;'; 'foreign exchange translation tailwind of approximately 1 percentage point to benefit reported net revenue and core EPS growth, based on current foreign exchange rates.'; 'The assumptions and the guidance above imply net revenue growth within a range of 4 to 6 percent and core EPS growth of approximately 5 to 7 percent in fiscal 2026, which includes the anticipated impact of global minimum tax regulations.' — the net revenue figure is a guide in numbers: the reported growth it states less the currency effect stated with it is growth in constant currency with acquisitions and divestitures in, the measure of the prints, so it feeds BASE and the growth factor (the 2009 rule); the organic and core figures give no field (not the measure; the 2008 core rule), so the last full year's EPS stands
+
+  FY2026E EPS check:  $97.6B × 10.9% pre-tax × (1−19.0%) ÷ 1.371B  =  $6.29  (FY2026E: no EPS guide in numbers on a usable basis, FY25's $6.00 stands)
+  FY2028E BEAR check: $97.6B × 10.9% ÷ 1.354B  =  $6.37  (scenario $2.10)
+  FY2028E BULL check: $106.9B × 11.3% ÷ 1.354B  =  $7.23  (scenario $6.57)
+  Every 1pp of pre-tax margin ≈ $0.58 EPS ≈ $15/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Volume (servings) growth            +3.0%    ≥4.0%    ≥5.0%    ≥7.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -260.0bp  ≥-130.0bp   ≥0.0bp  ≥150.0bp   -57.6bp  ◦ BASE  ██░░
+  Net revenue growth                 -26.0%  ≥-10.0%    ≥6.0%   ≥10.0%     +8.5%  ▲ BULL  ███░
+  Inventory growth less net revenue  +65.0pp  ≤32.0pp  ≤-1.0pp  ≤-17.0pp    +1.2pp  ◦ BASE  ██░░
+  Operating margin change           -300.0bp  ≥-130.0bp  ≥40.0bp  ≥230.0bp  +211.0bp  ▲ BULL  ███░
+  E-commerce: net effect on store and direct-store-delivery sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   2.64 / 4.00  (back-solved from $142 + 15% hurdle)
+  SCA adjustment:    +0.25  ·  EPP-distance adj +0.00  →  Adj composite 2.55  →  Gap -0.09  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY25 net revenue +2.3%, servings not stated in the FY2025 10-K; Q1 gross margin 55.19% (-58bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 23.7x FY26E vs a 25.6x 10-yr median (20th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: FY26 net revenue guide (constant currency) +3-5% vs a 3.9% 9-yr median  (+0.01 × 20%  =  +0.002)
+    +  Cash and short-term investments $10.83B, FY25 free cash flow $8.20B, dividend $5.69 a year, $1,000M of share repurchases and $7,638M of dividends paid in FY25  (+0.30 × 15%  =  +0.045)
+    +  E-commerce: its products sold on 'a growing number of company-owned and third-party e-commerce websites' — PepsiCo sells online through retailers and its own sites  (+0.20 × 10%  =  +0.020)
+    -  Shift to e-commerce (FY2025 10-K): 'e-commerce channels and hard discounters' taking 'significant additional market share away from traditional retailers' named as a risk to its business  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Volume (servings) growth               n/r     +3.0%     n/r  Consumers trade down and buy fewer se…
+  Gross margin change                -57.6bp  -260.0bp  -202.4bp  Commodity costs outrun pricing and pr…
+  Net revenue growth                   +8.5%    -26.0%  -34.5%  Volume and pricing stall together
+  Inventory growth less net revenue    +1.2pp   +65.0pp  +63.8pp  Inventory builds ahead of demand: wri…
+  Operating margin change           +211.0bp  -300.0bp  -511.0bp  Marketing and overhead do not come do…
+  E-commerce: net effect on store and direct-store-delivery sales    +2.0/4    +1.0/4  -1.0/4  Shoppers leave physical retail faster…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$81  (model)  /  $43 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: servings are not reported for Q1 2026 (n/r in Q4 2025);
+  the bear case needs a volume recession that gross margin (-57.6bp now)
+  and inventories (+1.2pp against revenue) no longer absorb. Commodity inflation shows up in gross margin first; the bear needs
+  servings to fall as pricing rises.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.00  (FY2026E: no EPS guide in numbers on a usable basis, FY25's $6.00 stands)
+  Min viable P/E at panic:          22x  [median of calendar-year P/E lows: 2016 22.7x, 2017 30.0x, 2018 11.0x, 2019 20.6x, 2020 20.3x, 2021 23.5x, 2022 23.9x, 2023 24.1x, 2024 21.8x, 2025 21.3x, 2026 22.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $132/share
+  Current $142 vs Updated EPP $132:  +8%  moderate distance to floor
+  Bear $43 vs Updated EPP $132:  -67%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Volume (servings) growth                     4.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -130.0      -72.4   BASE floor (vs -58 now)
+  Net revenue growth                         -10.0      -18.5   BASE floor (vs +8 now)
+  Inventory growth less net revenue            32.0      +30.8   BASE floor (vs +1 now)
+  Operating margin change                   -130.0     -341.0   BASE floor (vs +211 now)
+  E-commerce: net effect on store and direct-store-delivery sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.00 × (1+2.6%)² = $6.32
+  At 25x P/E (conservative):  $158/share
+  + Cumul. dividends (2yr):  +$11.72/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $158  (▲16 from $142)
+  Conservative total return:  +19% over 2yr  = +10%/yr
+
+  At 23.7x the multiple is already near its 25x median, so the conservative
+  case is a growth question: breakeven at 25x needs FY2028E EPS of $5.21,
+  i.e. -6.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $127.60  –  $171.48  (at 33th pct of range)
+  Annual dividend:      $5.69/share  (yield 4.0%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: -0.08
+  1-sigma range (1yr):  $111  –  $173  ($142 ± 22%)
+  2-sigma range (1yr):  $80  –  $204
+  ────────────────────────────────────────────────────────────
+  Bear $43 requires:  ~3.2σ price move  (unusual — requires fundamental break)
+  A beverage and convenient-food company with a -0.1 beta: the stock is +11% off its June
+  low while servings are not reported for Q1 2026 (n/r in Q4 2025).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.10  20.5x  $     43    12.9%      6.9%    +6.1pp  EPS -40.8%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct
+  BASE        6.57  25.6x  $    168    45.2%     24.0%   +21.2pp  EPS +4.6%/yr (FY26 rev guide + margin + buyback); P/E at its 10-yr median
+  BULL        6.57  27.3x  $    179    35.2%     58.1%   -22.9pp  EPS +4.6%/yr (FY16-FY25 CAGR); P/E holds its 75th pct
+  XBULL      12.08  30.5x  $    368     6.6%     11.0%    -4.3pp  EPS +41.9%/yr (best 2-yr run FY16-FY25); P/E at its 90th pct
+
+  Proxy EV (2yr): $169  /  Market EV: $188  /  Current: $142
+  Conservative EV (2yr, ④): $158 + $11.72 divs = $170 total value
+  Downside (→ Bear $43): 69.7%   Upside (→ Bull $179): 26.0%   Ratio B 2.68x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $142 the market needs $188 in two years —
+  above the BULL case. That is a market composite of 2.64 against a model
+  read of 2.55: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.68x      +8%    -0.09  FAIRLY VALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.57x      +8%    +0.23  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     4.43x      +8%    -0.33  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.28x      +8%    +0.02  FAIRLY VALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.13x      +8%    -0.21  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.68x      +8%    +0.21  MODESTLY UNDERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.68x      -5%    +0.11  FAIRLY VALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.68x      +8%    +0.20  MODESTLY UNDERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2026 print (mid-July) — revenue against the full-year outlook; servings are not reported for Q1 2026
+  (2) Gross margin — -57.6bp in Q1 2026: pricing against commodity costs, what must hold if volume does not
+  (3) The outlook — Q1 2026 release: 'Organic revenue to increase between 2 and 4 percent;'; 'Core constant currency EPS to increase between 4 and 6 percent;'; 'foreign exchange translation tailwind of approximately 1 percentage point to benefit reported net revenue and core EPS growth, based on current foreign exchange rates.'; 'The assumptions and the guidance above imply net revenue growth within a range of 4 to 6 percent and core EPS growth of approximately 5 to 7 percent in fiscal 2026, which includes the anticipated impact of global minimum tax regulations.' (display only)
+  (4) Inventories — +9.7% against net revenue +8.5% in Q1 2026 (+1.2pp): commodity costs and acquisitions sit in them
+  (5) Capital return at 24x — 'Total cash returns to shareholders of approximately $8.9 billion, comprised of dividends of $7.9 billion and share repurchases of $1.0 billion.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $132  |  ADD below ~$143  |  TRIM above $179
+════════════════════════════════════════════════════════════════════════
+

@@ -28,6 +28,10 @@ rule), and the exchange from the dated listing facts (the stock moved from the N
 For 2021-2023 (retro/README.md, "PEP 2021-2023"; no code path changes): GLP1, live from 2023-08-08 and scoped to snacks and beverages,
 stays off the watch list, because a theme enters PEP's list only from a PepsiCo 10-K that names it (the NKE and LOW rule) and no PepsiCo
 filing to the Q3 2023 10-Q names GLP-1 drugs; no filing from the FY2020 10-K states total servings, so those prints have none.
+For 2024-2026 (retro/README.md, "PEP 2024-2026"): GLP1 joins the watch list from the FY2023 10-K, the first whose risk factors name
+weight-loss drugs among the shifts in diet that can reduce demand for PepsiCo's products (glp1_company_acknowledged: text only, the
+theme signal and factors stay with ECOMMERCE, the ACN CLOUD rule); the fiscal 2026 outlook states net revenue growth in numbers with
+its currency assumption, so it is a fiscal-year net revenue guide in constant currency ('rev_guide', as in 2009).
 EPS is diluted EPS from continuing operations, each year from the latest 10-K that reports it, and a company-published figure
 excluding one-offs only replaces it (the ACN rule). PepsiCo's "core" figures from 2008 also exclude the mark-to-market net
 impact on commodity hedges, which recurs in every period and is "subsequently reflected in division results" (a timing basis,
@@ -162,10 +166,12 @@ def build(as_of, facts, raw, spx, engine, out):
     # 'doc') is replaced by the next 10-K's. No other theme in taxonomy_eras.json is live for a beverage and convenient-food company
     # to 2020 (GLP1 from 2023-08-08; OFFSHORE is scoped to IT services, the others to other industries). GLP1's registry evidence is a
     # sector-wide sell-off that names no company; as ECOMMERCE's grocers' sell-off of 2017-06-16 left PEP's list empty until its FY2017
-    # 10-K, GLP1 enters only from a PepsiCo filing that names GLP-1 drugs, and none to the Q3 2023 10-Q does: any other event kind
-    # needs its encoding decided first
+    # 10-K, GLP1 enters only from a PepsiCo filing that names GLP-1 drugs, and none to the Q3 2023 10-Q does. From the FY2023 10-K
+    # (2024-02-09), the first whose risk factors name weight-loss drugs among the shifts in diet that can reduce demand for PepsiCo's
+    # products, GLP1 joins the watch list (glp1_company_acknowledged; retro/README.md, "PEP 2024-2026"). Any other event kind needs
+    # its encoding decided first
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    if any(e["kind"] != "ecommerce_company_acknowledged" for e in events):
+    if any(e["kind"] not in ("ecommerce_company_acknowledged", "glp1_company_acknowledged") for e in events):
         sys.exit(f"{as_of}: the PEP builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
@@ -277,6 +283,16 @@ def build(as_of, facts, raw, spx, engine, out):
         sig_name = "E-commerce: net effect on store and direct-store-delivery sales"
         trigger = "Shoppers leave physical retail faster than PepsiCo's e-commerce sales grow"
         theme_summary = "e-commerce is live and company-acknowledged; no dated evidence ties the multiple to it"
+    # another live theme with company evidence joins the watch list; the theme signal and factors stay with the first (the ACN
+    # CLOUD rule). GLP1 (live from 2023-08-08; GLP-1 obesity drugs reduce demand for snacks and beverages): company-acknowledged,
+    # no market read (the NKE and LOW rule), so text only; re-filing needs dated evidence of market pricing for PepsiCo
+    for e in [e for e in events if e["kind"] == "glp1_company_acknowledged"][-1:]:
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        watch.append({"theme": "GLP1", "status": "live, company-acknowledged; no market read",
+                      "reason": (f"Live: PepsiCo's own {e['doc']}, under '{e['heading']}', names among the shifts in consumer "
+                                 f"preferences that can reduce demand for its products '{e['risk_quote']}'. The stock trades at "
+                                 f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (GLP1) only if dated "
+                                 "evidence shows the market pricing lower demand from weight-loss drugs into PepsiCo's own multiple.")})
     cat3 = (f"(3) The outlook — {guides[-1]['doc']}: {guides[-1]['display']} (display only)" if guides else
             f"(3) A {fy_now} outlook — none in scope yet")
     cat4 = (f"(4) Inventories — {latest['inventory_pct']:+.1f}% against net revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
