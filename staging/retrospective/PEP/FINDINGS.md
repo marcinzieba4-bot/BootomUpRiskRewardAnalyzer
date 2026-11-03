@@ -1,11 +1,12 @@
 # PEP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31 and
-157 from 2011-01-07 to 2013-12-31. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each
-batch was scored only after its point-in-time build was committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in
-55a6818; 2011-2013: 29c50f2, documented in b02f4d4). Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30
-(three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30 (2016-12-30).
-Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31, 157
+from 2011-01-07 to 2013-12-31 and 156 from 2014-01-10 to 2016-12-30. They are **labels and hypotheses**: never feed them back into
+the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008: 4b429b6;
+2009-2010: 88ba341, documented in 55a6818; 2011-2013: 29c50f2, documented in b02f4d4; 2014-2016: bc27375, documented in 03bc69c).
+Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by
+2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30 (2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30). Medians
+of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -149,3 +150,68 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   dates returned +27% to +41% against the 32.2% hurdle and SPY's +42% to +47%, so each alternative trades holds for misses at the
   margin: facts about seven dates, not reasons to change an encoding. The calls were decided before scoring and stay; changing a
   rule means a new method version tested elsewhere.
+
+## 2014-2016 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 2 | +34% | +33% to +34% | 2 | 2 | +24% | 2 |
+| class RICH | 154 | +22% | -0% to +34% | 5 | 73 | +11% | 80 |
+| legacy tier BUY | 2 | +34% | +33% to +34% | 2 | 2 | +24% | 2 |
+| legacy tier ACCUMULATE | 6 | +30% | +28% to +32% | 1 | 6 | +19% | 0 |
+| legacy tier WATCHLIST | 9 | +27% | +23% to +32% | 0 | 9 | +15% | 0 |
+| legacy tier AVOID | 139 | +20% | -0% to +34% | 4 | 58 | +10% | 80 |
+| FY12 anchor (to the Q4 2013 print) | 5 | +24% | +21% to +30% | 0 | 5 | +19% | 0 |
+| FY13 anchor, Q4 2013 print | 9 | +31% | +28% to +34% | 3 | 9 | +19% | 2 |
+| Q1 2014 print | 14 | +27% | +21% to +28% | 0 | 14 | +13% | 0 |
+| Q2 2014 print | 11 | +24% | +19% to +30% | 0 | 11 | +10% | 0 |
+| Q3 2014 print | 18 | +16% | +8% to +23% | 0 | 8 | +7% | 10 |
+| FY14 anchor, Q4 2014 print | 10 | +22% | +12% to +24% | 0 | 7 | +10% | 3 |
+| Q1 2015 print | 11 | +28% | +22% to +33% | 1 | 11 | +12% | 0 |
+| Q2 2015 print | 13 | +27% | +22% to +34% | 2 | 10 | +14% | 3 |
+| Q3 2015 print | 18 | +24% | +13% to +33% | 1 | 0 | +13% | 17 |
+| FY15 anchor, Q4 2015 print | 10 | +16% | +10% to +20% | 0 | 0 | +14% | 10 |
+| Q1 2016 print | 11 | +5% | -0% to +12% | 0 | 0 | +10% | 11 |
+| Q2 2016 print | 12 | +12% | +7% to +15% | 0 | 0 | +3% | 12 |
+| Q3 2016 print | 14 | +12% | +5% to +27% | 0 | 0 | +6% | 14 |
+| 2014 | 51 | +24% | +8% to +34% | 3 | 46 | +12% | 7 |
+| 2015 | 53 | +23% | +10% to +34% | 3 | 29 | +11% | 24 |
+| 2016 | 52 | +12% | -0% to +33% | 1 | 0 | +9% | 51 |
+
+- **RICH on 154 dates; the call held on 80, and which ones held followed the market, not PEP.** RICH expects the stock to miss the
+  hurdle and lag SPY. PEP missed the hurdle on 149 of the 154 (two-year returns -0.5% to +34%, median +22%), so the call turned on
+  SPY. It failed on all 42 RICH dates to 2014-11-07, whose two-year windows ended in 2016, when SPY returned +6% to +18% and PEP
+  +16% to +32%; held on 13 of the 16 from 2014-11-14 to 2015-02-27 (PEP +8% to +17%, SPY +10% to +19%); failed on all 28 from
+  2015-03-06 to 2015-09-11 (PEP +20% to +34%, SPY +16% to +33%); and held on 20 of the 21 from 2015-09-18 to 2016-02-05 and on all
+  47 from 2016-02-12, as SPY returned +11% to +53% (median +34%) and PEP -0.5% to +33%. 2016-01-22 failed by clearing the hurdle
+  (+33.2%) while lagging SPY by 20pp.
+- **RICH marked a lower return, not a loss.** The RICH dates' largest drawdown within two years was -9.9% to -21.0% (median
+  -10.7%); their one-year returns had a median of +10.8%, their three-year returns ran from +7.8% to +48% (median +31%), ahead of
+  SPY on 35 of 154. The two CHEAP dates, 2014-02-14 and 2014-02-21 ($78.09 and $78.22, the weeks after FY13's EPS came in), returned
+  +33% and +34%, cleared the hurdle and beat SPY (+6% and +9%): both held, and returned +48% and +50% over three years.
+- **The floor distance and the entry price ranked the outcomes again, step by step.** Across the 156 dates the EPP gap ranks the
+  two-year returns at Spearman -0.73, the entry price at -0.76, Ratio B at -0.72, the adjusted gap at +0.08 and the proxy composite
+  at -0.06. Within 2014 the EPP gap reads -0.87, within 2015 -0.45, within 2016 -0.51. By distance above the floor: 0-20% (7 dates)
+  returned a median +31.0%, 20-30% (19) +26.6%, 30-40% (39) +23.7%, 40-50% (43) +22.3% and more than 50% (48: every date from
+  2016-02-12, when FY15's GAAP EPS put the floor at $58.72, and 2015-12-31) +11.3%, none of those 48 clearing the hurdle or beating
+  SPY. The worst entries were in May 2016 at 27-29x GAAP EPS: 2016-05-13 ($104.18) returned -0.5%, 2016-05-06 +0.2%.
+- **The proxy composite ranked the right way within 2014 (+0.54) and 2015 (+0.59), the first years it did in PEP's batches** (2010's
+  +0.10 and 2012's +0.06 ranked nothing), and the adjusted gap within them too (+0.76 and +0.62, as in 2009); within 2016 both read
+  -0.19. But their best readings came with the lowest prices: the composite's 2.50 (February to April 2014) with +28% to +34%, its
+  2.70 (Q4 2015: margins up, no servings) with +10% to +20%. Across the batch neither ranks anything. The earlier hypothesis
+  stands untested elsewhere: trailing operating signals lag the price.
+- **Two-year prices landed nearest XBULL on 85 dates and BULL on 71, never nearest BASE or BEAR.** The two-year prices
+  ($93.93-121.94) were 1.09-1.67 times BASE and 0.94-1.43 times BULL. From the Q4 2015 print BASE ($72-74) and BULL ($82-85) started
+  from FY15's GAAP $3.67, with the Venezuela charges, and grew it at +2.1% to +2.9%/yr with the deconsolidation in the growth: the
+  two-year prices ($97-122) were 1.32-1.67 times BASE. No two-year path went below its BEAR price.
+- **Across 2008-2016 (470 dates) CHEAP held on 141 of 266 and RICH on 110 of 204.** RICH's absolute half nearly always came true:
+  PEP missed the 32.2% hurdle on 196 of the 204 RICH dates, but beat SPY on 90 of them, so RICH held only when the market outran
+  PEP. CHEAP cleared the hurdle on 88 of 266 (RICH on 8 of 204) and beat SPY on 61, though the medians were close (+23.9% and
+  +22.5%: CHEAP includes 2008's entries). Hypothesis, not a rule: for PEP the price state said more about the absolute two-year
+  return than about the return against the market, which followed the market's own path. Test it on other tickers and years before
+  any method change; never fit it to PEP's outcomes.
+- **The encoding calls, seen afterwards.** The core figures in the history alone move no class here, and FY15 without the Venezuela
+  charges moves nothing. With the core guides also read as points, the 7 RICH dates from 2014-02-28 to 2014-04-11 would have been
+  CHEAP: they returned +28% to +32% against SPY's +9% to +17%, so as CHEAP they would have held (one, 2014-04-04 at +32.3%, also
+  cleared the hurdle) where as RICH they failed. Facts about seven dates, not reasons to change an encoding: the calls were decided
+  before scoring and stay; changing a rule means a new method version tested elsewhere.
