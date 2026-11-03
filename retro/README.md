@@ -4809,6 +4809,150 @@ Judgement calls that could carry hindsight:
 - dating dividends from their declarations (no class moves);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2011-2013 went; DURABLE (the class label only).
 
+### PEP 2014-2016: the Venezuela charges at GAAP, servings only in the 10-Qs, new segments, RICH on 154 of 156 dates
+
+```bash
+python3 retro/build_pep.py --weekly 2014-01-06 2016-12-31                   # 156 dates, 2014-01-10 .. 2016-12-30
+for c in 2015-01-01 2016-01-01 2016-02-15 2017-01-01; do python3 retro/tools/firewall.py $c PEP; done
+```
+
+The 51 8-Ks, nine 10-Qs and the FY2013-FY2015 10-Ks filed from January 2014 to December 2016 were transcribed by agents on the
+cheaper model (see "Which model to run it on") to the written spec of 2011-2013: every figure with the row it comes from, and every
+guidance, dividend, servings, Venezuela and productivity sentence. 4,762 strings were checked word for word with `verbatim.py`
+against their own filings (229, 194 and 282 in the three 10-Ks; 1,378, 1,412 and 1,267 in each year's releases, 8-Ks and 10-Qs),
+and 63 more that the fact sheet quotes. The assembler asserts each print's raw figures against the transcription of its own release
+and the year-ago quarter's inventories against that quarter's print, and each vintage against its 10-K; the builder re-derives every
+signal value. Each source's date comes from EDGAR's acceptance time. Thresholds, signals, the builder and the engine are unchanged;
+the firewall's PEP branch also plants a later `servings_later` (below). Decided before any 2014-2016 outcome was computed:
+
+- **Three vintages.** The FY2013 10-K (accepted Friday 2014-02-14 16:26 ET, dated Tuesday 2014-02-18 after Presidents' Day) gives
+  2009-2013 and the history 2004-2013; the FY2014 10-K (2015-02-12 17:01 ET, dated 2015-02-13) gives 2010-2014 and the history
+  2005-2014; the FY2015 10-K (2016-02-11 16:40 ET, dated 2016-02-12) gives 2011-2015 and the history 2006-2015. First-year diluted
+  shares come from the latest 10-K that reports them: 2004's 1,729M (FY2006), 2005's 1,706M (FY2007), 2006's 1,687M (FY2008).
+- **FY2013-FY2015 at GAAP (the 2008 core rule):** $4.32, $4.27 and $3.67 from the Q4 prints. Each year's core figure ($4.37, $4.63,
+  $4.57: the 10-Ks' EPS "excluding above items") also removes the commodity mark-to-market net impact, so none replaces GAAP. GAAP
+  2015 carries the Venezuela impairment charges ($1.4 billion, $0.91 a share, in Q3 2015, when PepsiCo deconsolidated its Venezuelan
+  subsidiaries "effective as of the end of the third quarter of 2015"), as published, as GAAP 2014 carries the productivity-plan
+  charges, a Venezuela remeasurement ($0.07 a share) and a pension settlement ($0.06). So BEAR, the window's worst year, is 2008's
+  -5.0% to 2016-02-05 and 2015's -14.1% ($4.27 to $3.67) from the Q4 2015 print.
+- **No guide gives a field.** 2014: "7 percent core constant currency EPS growth in 2014 versus its fiscal 2013 core EPS of $4.37",
+  raised to 8 percent (Q2 2014) and 9 percent (Q3 2014); 2015: 7 percent "versus its fiscal 2014 core EPS of $4.63", raised to 8
+  and 9 percent; 2016: "core earnings per share of $4.66", then $4.71 (Q2 2016) and $4.78 (Q3 2016). All are on the core basis (the
+  2008 core rule). The revenue outlooks for 2014 and 2015 are words (organic "mid-single digits"). 2016's is a figure, "organic
+  revenue growth of approximately 4 percent, excluding the impact of the 53rd week", but organic growth removes acquisitions,
+  divestitures, currency and the extra week, so it is not the measure the method uses (as for the prints, below): display only. The
+  Barclays reiteration 8-Ks (2014-09-02, 2015-09-08, 2016-09-06, each after the close) show as the latest guide from the next day.
+  The last full year's EPS stands (the rollover rule): FY12's $3.92 to 2014-02-07, FY13's $4.32 from 2014-02-14, FY14's $4.27 from
+  2015-02-12, FY15's $3.67 from 2016-02-12.
+- **Growth excluding currency: reported growth less the stated currency effect** (the NKE rule, as from Q4 2012: no release states
+  constant currency growth). +4% (Q4 2013: +1% and 3 points), +3%, +3.5% and +3% (Q1-Q3 2014: "even", +0.5% and +2% against 3, 3
+  and 1 points), +5% (Q4 2014: -1% and 6), +5%, +4% and +7% (Q1-Q3 2015: -3%, -6% and -5% against 8, 10 and 12 points), +1% (Q4
+  2015: -7% and 8), +1.5%, +0.7% and +1.1% (Q1-Q3 2016: -3%, -3.3% and -1.9% against 4.5, 4 and 3 points). The Vietnam
+  refranchising (Q4 2013), the structural changes and divestitures of 2014-2015 and the Venezuela deconsolidation (2 to 3 points a
+  quarter from Q4 2015) stay in, as published (the AVGO rule, as in 2010-2013). Organic growth (+3% to +7.4%), which removes them,
+  is not used.
+- **Servings only in the 10-Qs.** No release of 2014-2016 states total servings. Each 10-Q does, on the evening of its release day
+  (16:09-16:25 ET), so `servings_later` takes it from the next trading day (the NKE futures rule): +1% for Q1, Q2 and Q3 2014,
+  Q1 and Q3 2015, +2% for Q1 and Q2 2016, +3% for Q3 2016 ("increased 3% and 2.5%, respectively": the quarter's figure). The Q2
+  2015 10-Q says "total servings increased slightly": words, which are not figures, so that slot stays empty (the AAPL Mac-unit
+  rule: an empty slot scores BASE). No filing states a fourth quarter's total servings, so those slots stay empty too, and the
+  franchise line shows each 10-K's figure for the year from its date (+2% for 2013, +1% for 2014 and 2015).
+- **Dividends,** the latest declared rate: $0.5675 a quarter to 2014-05-12; $0.655 from the 8-K of 2014-05-12 (16:40 ET, dated
+  2014-05-13: "On May 6, 2014 the Board of Directors of PepsiCo declared a quarterly dividend of $0.655 per share payable on June
+  30, 2014"); $0.7025 from the Q2 2015 release (2015-07-09: "Cash dividends declared per common share | 0.7025 | 0.655") and
+  $0.7525 from the Q2 2016 release (2016-07-07), as no 8-K of 2015 or 2016 states a declaration. The increases announced with each
+  year's Q4 results ("annualized dividend raised 15 percent to $2.62 per share" on 2014-02-13, then 2015-02-11 and 2016-02-11)
+  were announcements, not declarations (the AAPL 2012 rule, as for 2010-2013). The 8-K of 2014-02-07 declares the existing $0.5675.
+- **New segments, a reclassified cost of sales.** From Q3 2015 PepsiCo reports North America Beverages, Latin America, Europe
+  Sub-Saharan Africa and Asia, Middle East and North Africa in place of PepsiCo Americas Beverages, Latin America Foods, Europe and
+  Asia, Middle East & Africa (announced 2015-07-08). The 8-K of 2015-08-06 (recast segment schedules) and the 8-K of 2015-10-07 (the
+  FY2014 10-K's business, MD&A and statements re-filed with the segment notes revised; the consolidated statements "as previously
+  reported") add nothing (a segment recast, the ACN 2024-09-30 rule); the FY2015 10-K's business line and groups use the new
+  segments from its date. From Q1 2016 the releases move "certain functional support costs associated with the manufacturing and
+  production of our products" from selling, general and administrative expenses into cost of sales and restate the prior year to
+  match, so each print's gross margin change compares the two years as that release states them (FY15's own gross margin stays as
+  the Q4 2015 release states it).
+- **A 53-week year ahead.** Fiscal 2016 ends on 2016-12-31 with 53 weeks (the last-Saturday rule); its fourth quarter, with the
+  extra week, is printed in February 2017, after this range. Here the extra week shows only in the 2016 guide's words.
+- **Calendar.** Every release came before the open (06:35-07:31 ET), so the weeks' dates are the next trading days: 2014-02-14,
+  2014-07-24, 2014-10-10, 2015-02-12, 2015-04-24, 2015-07-10, 2015-10-07, 2016-02-12, 2016-04-19, 2016-07-08 and 2016-09-30. The
+  Q1 2014 release came on Thursday 2014-04-17, before Good Friday, so that week's date is the release day itself (it counts from the
+  open), and the 10-Q filed that evening counts from Monday 2014-04-21: its +1% enters on 2014-04-25.
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words (FY2013: "a leading global food and beverage company with
+  brands that are respected household names throughout the world"; FY2014 and FY2015: "with a complementary portfolio of enjoyable
+  brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana"; FY2015: "In 2015, we and The Coca-Cola Company
+  represented approximately 24% and 20%, respectively, of the U.S. liquid refreshment beverage category"). No theme in the registry
+  is live for PepsiCo in 2014-2016.
+- **Adds nothing:** the letter to Trian Partners rejecting a separation of the snacks and beverage businesses (7.01 of 2014-02-27:
+  no figure), the 2014 Productivity Plan (2.05 and 2.06 of 2014-02-13: about $990 million of charges, no guided EPS or revenue
+  figure), the officer, director, compensation, by-law (proxy access, 2016-01-11) and annual-meeting 8-Ks, the note offerings and
+  the 2016 redemption, the credit agreements, the leadership changes and the segment realignment (2015-07-08, 2016-03-30), the
+  segment recasts (2015-08-06, 2015-10-07), and the 10-Qs beyond their servings.
+
+Controls: altering one value of each print, vintage, guide, dividend and `servings_later` published from 2013-12-01 changes no date
+before its publication and changes the first weekly date on or after it (42 of 42). No string of any print, vintage, guide,
+dividend, `servings_later` or source appears in a model dated before it (124,652 checks over the 470 PEP models). The firewall at
+2015-01-01, 2016-01-01, 2016-02-15 and 2017-01-01 changes no model before its cutoff (365, 418, 424 and 470 dates); the extra
+2016-02-15 cutoff is the one where the new `servings_later` plant fires (the last print before it, Q4 2015, has no total servings;
+at the year-end cutoffs a 10-Q had already stated the last print's). The 314 dates of 2008-2013 rebuild byte-identical. Beyond the
+156 new entries in the index, the only file shared with another ticker that changed is the firewall (the PEP plant, and
+`servings_later` dropped from its planted print, a field no other ticker has).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 154 of 156 dates, CHEAP on 2;** AVOID on 139, WATCHLIST on 9, ACCUMULATE on 6, BUY on 2. CHEAP and BUY only on
+  2014-02-14 and 2014-02-21, the two weeks after FY13's $4.32 replaced FY12's $3.92 (18.1x, the 43rd percentile); ACCUMULATE from
+  2014-02-28 to 2014-04-04; WATCHLIST on 2014-01-31, 2014-02-07 and from 2014-04-11 to 2014-05-23; AVOID on the first three dates
+  and every date from 2014-05-30. By year: 49 RICH and 2 CHEAP in 2014, RICH on all 53 dates of 2015 and all 52 of 2016. The tier
+  agrees on 4 to 8 of the 8 robustness variants (8 on 121 dates), the valuation verdict on 1 to 8 (8 on 147).
+- **EPS anchors on the last full year:** FY12's $3.92 to 2014-02-07 (20.5-21.3x, the 63rd-79th percentile), FY13's $4.32 to
+  2015-02-06 (18.1-23.2x, the 43rd-99th, at $78.09-100.10), FY14's $4.27 to 2016-02-05 (21.3-24.0x, the 78th-100th) and FY15's
+  $3.67 from 2016-02-12 (26.8-29.9x, the 92nd-100th, at $98.36-109.66): GAAP EPS fell 14.1% with the Venezuela charges while the
+  price rose.
+- **The EPP floor:** 17x on FY12's EPS ($66.64) to 2014-02-07 and 16x from 2014-02-14 ($69.12 on FY13's, $68.32 on FY14's, $58.72
+  on FY15's), with 15x on the last date of 2015 and of 2016 ($64.05, $55.05), when the window holds ten full calendar years and the
+  median falls between two lows. The price was above the floor on every date, by 13.0% (2014-02-14) to 90.1% (2016-12-30).
+- **BULL** is the window's EPS CAGR: +7.5%/yr (2003-2012) to 2014-02-07, +7.7% (2003-2013, from the Q4 2013 print), +7.2%
+  (2004-2013, from the FY2013 10-K), +6.3% (2004-2014, from the Q4 2014 print), +5.4% (2005-2014, from the FY2014 10-K) and +2.3%
+  (2006-2015, from the FY2015 10-K), floored at BASE on 74 dates (2015-02-12 to 2015-07-02, 2015-10-07 to 2016-07-01, and from
+  2016-09-30). **XBULL** is +13.9%/yr (2003-2005) to 2014-02-14, +13.7% (2004-2006) from the FY2013 10-K, +12.7% (2005-2007) from
+  the FY2014 10-K and +10.4% (2008-2010) from the FY2015 10-K. The price stood above the BULL value ($82-85) on every date from
+  2016-02-12, and on 2015-02-12.
+- **BASE followed the quarter's growth plus the buyback** (+1.1 to +1.4 points): +3.6%/yr (Q3 2013) to 2014-02-07, +5.1% (Q4
+  2013), +4.1%, +4.6% and +4.1% (Q1-Q3 2014), +6.3% and +6.2% (Q4 2014, before and after the FY2014 10-K), +6.2%, +5.2% and +8.2%
+  (Q1-Q3 2015), +2.4% (Q4 2015), and +2.9%, +2.1% and +2.5% (Q1-Q3 2016), the Venezuela deconsolidation in each 2016 figure. The
+  adjusted gap was -1.51 to -1.72 to 2014-02-07, -0.29 to -0.85 from 2014-02-14 to 2014-04-11, -1.04 to -2.05 from then to
+  2016-02-05, and -1.18 to -1.58 from 2016-02-12.
+- **The proxy composite** was 2.15 on Q3 2013, 2.50 on Q4 2013 and the Q1 2014 release (gross margin +84bp, operating margin +83bp
+  and +114bp, the servings slot empty), 2.30 from 2014-04-25 (the 10-Q's servings +1%), 2.00 on Q2 and Q3 2014 (servings +1%), 2.20
+  on Q4 2014 (operating margin -174bp, no servings), 2.15 on Q1 2015 (servings +1%), 2.35 on Q2 2015 (servings "slightly": an empty
+  slot), 2.00 on Q3 2015 (operating margin -786bp with the Venezuela charges), 2.70 on Q4 2015 (gross margin +185bp, operating
+  margin +187bp, no servings), 2.35 on Q1 2016 (servings +2%) and 2.30 on Q2 and Q3 2016 (servings +2% and +3%; operating margin
+  +104bp and +893bp, the latter against the charges).
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- FY15 without the Venezuela charges ($4.58: $3.67 plus the stated $0.91, a derived figure, as a test only) would change nothing;
+- the 2016 organic revenue guide (about 4%) as a fiscal-year revenue guide would change nothing;
+- the stated organic growth for every print (+3% to +7.4%: the Venezuela deconsolidation, refranchisings and divestitures out) would
+  change nothing;
+- servings from the releases only (no `servings_later`) would change nothing;
+- the dividends dated from the announcements (2014-02-13, 2015-02-11, 2016-02-11) would change nothing;
+- the core figures in the history (FY13 $4.37, FY14 $4.63, FY15 $4.57) would change no class and 8 tiers (AVOID to WATCHLIST,
+  WATCHLIST to ACCUMULATE, on 2014-04-11, 2014-05-30 to 2014-06-13, 2014-08-01, 2015-09-04, 2015-09-11 and 2016-01-15);
+- those and the core EPS guides read as points (FY14 $4.68-4.76, FY15 $4.95-5.05, FY16 $4.66-4.78) would change 7 classes (RICH to
+  CHEAP, 2014-02-28 to 2014-04-11) and 79 tiers, all before 2016-02-12 (AVOID to WATCHLIST or ACCUMULATE, WATCHLIST to ACCUMULATE
+  or BUY, ACCUMULATE to BUY); no date from 2016-02-12 moves.
+
+Judgement calls that could carry hindsight:
+- the 2008 core rule, which keeps FY13-FY15 at GAAP, the Venezuela charges in FY15 (8 tiers with the core history; 7 classes and 79
+  tiers with the core guides as points: the call that moves the most in this range);
+- keeping the Venezuela deconsolidation, refranchisings and divestitures in growth, which puts BASE at +2.1% to +2.9%/yr in 2016
+  against organic growth of 3.3-4.2% (no class moves), and the 2016 organic revenue guide as display only (no class moves);
+- `servings_later` from the 10-Qs, Q2 2015's "slightly" as an empty slot, and the empty fourth quarters (no class moves);
+- dating dividends from their declarations (no class moves);
+- the segment recasts adding nothing, and each 2016 print's gross margin change on its release's reclassified basis (not tested: the
+  release states no other basis for both years);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2014-2016 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
