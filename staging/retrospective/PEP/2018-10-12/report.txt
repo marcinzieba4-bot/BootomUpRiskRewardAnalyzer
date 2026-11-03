@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  PEP  ·  PepsiCo, Inc.  ·  $105.28  ·  RETROSPECTIVE as of 2018-10-12
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.86  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2018-10-12; latest print Q3 2018 (Oct 2)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenues, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Frito-Lay North America   $    16.4  $  16.4  $  17.8      +0.0      +1.4
+    +1.6% revenues in FY17
+  Quaker Foods North Ameri  $     2.6  $   2.6  $   2.8      +0.0      +0.2
+    -2.4% revenues in FY17
+  North America Beverages   $    21.7  $  21.7  $  23.6      +0.0      +1.9
+    -1.8% revenues in FY17
+  Latin America             $     7.5  $   7.5  $   8.1      +0.0      +0.6
+    +5.7% revenues in FY17
+  Europe Sub-Saharan Afric  $    11.4  $  11.4  $  12.5      +0.0      +1.1
+    +8.2% revenues in FY17
+  Asia, Middle East and No  $     6.2  $   6.2  $   6.8      +0.0      +0.6
+    -4.9% revenues in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    65.8  $  65.8  $  71.6      +0.0      +5.8
+  FY2018E = FY17 $63.52B × (1 + 3.5%: Q3 2018 net revenue ex-currency, applied to the year (no FY18 revenue guide in numbers)); split pro rata to FY17 net revenue by segment (FY2017 10-K)
+  Q3 2018 (Oct 2): revenues $16.48B +1.5% (+4% ex-currency); servings +3.0%; inventories -3.4%;
+  gross margin 54.34% (-29.0bp); operating margin 17.25% (-75.3bp); EPS $1.75 vs $1.49
+  Volume: servings +3.0% ('For the 12 and 36 weeks ended September 8, 2018, total servings increased 3% and 2%, respectively.' (Q3 2018 10-Q)); net revenue +1.5% reported, +3.5% excluding currency (the release's reported net revenue growth of +1.5% less its stated 2-point unfavorable currency effect; structural changes (1 point unfavorable) stay in, as published (organic +4.9%)); GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.59); with a non-cash tax benefit
+  FY18 outlook (Q3 2018 release, display only): 'Full year organic revenue growth to be at least 3 percent.'; 'Core earnings per share of $5.65, an 8 percent increase compared to 2017 core earnings per share of $5.23' — organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands
+
+  FY2018E EPS check:  $65.8B × 15.1% pre-tax × (1−48.9%) ÷ 1.424B  =  $3.57  (FY2018E: no EPS guide in numbers on a usable basis, FY17's $3.38 stands)
+  FY2020E BEAR check: $65.8B × 15.1% ÷ 1.390B  =  $3.66  (scenario $2.03)
+  FY2020E BULL check: $71.6B × 15.5% ÷ 1.390B  =  $4.09  (scenario $3.71)
+  Every 1pp of pre-tax margin ≈ $0.24 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Volume (servings) growth            +3.0%    ≥4.0%    ≥5.0%    ≥7.0%     +3.0%  ⚠ BEAR  █░░░
+  Gross margin change               -260.0bp  ≥-130.0bp   ≥0.0bp  ≥150.0bp   -29.0bp  ◦ BASE  ██░░
+  Net revenue growth                 -26.0%  ≥-10.0%    ≥6.0%   ≥10.0%     +1.5%  ◦ BASE  ██░░
+  Inventory growth less net revenue  +65.0pp  ≤32.0pp  ≤-1.0pp  ≤-17.0pp    -4.9pp  ▲ BULL  ███░
+  Operating margin change           -300.0bp  ≥-130.0bp  ≥40.0bp  ≥230.0bp   -75.3bp  ◦ BASE  ██░░
+  E-commerce: net effect on store and direct-store-delivery sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.95 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $105 + 15% hurdle)
+  SCA adjustment:    +0.06  ·  EPP-distance adj -0.10  →  Adj composite 1.91  →  Gap -1.86  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 net revenue +1.2%, servings -1.0% (the FY2017 10-K (even with 2016 excluding the 53rd week)); Q3 gross margin 54.34% (-29bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 31.1x FY18E vs a 19.1x 10-yr median (85th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q3 2018 net revenue ex-currency +3.5% vs a 0.4% 9-yr median  (+0.31 × 20%  =  +0.062)
+    +  Cash and short-term investments $13.90B, FY17 free cash flow $7.21B, dividend $3.71 a year, $2,000M of share repurchases and $4,472M of dividends paid in FY17  (+0.30 × 15%  =  +0.045)
+    +  E-commerce: its products sold on 'a growing number of e-commerce websites' — PepsiCo sells online through retailers and its own sites  (+0.20 × 10%  =  +0.020)
+    -  Shift to e-commerce (FY2017 10-K): 'disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel' named as a risk to its business  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Volume (servings) growth             +3.0%     +3.0%   +0.0%  Consumers trade down and buy fewer se…
+  Gross margin change                -29.0bp  -260.0bp  -231.0bp  Commodity costs outrun pricing and pr…
+  Net revenue growth                   +1.5%    -26.0%  -27.5%  Volume and pricing stall together
+  Inventory growth less net revenue    -4.9pp   +65.0pp  +69.9pp  Inventory builds ahead of demand: wri…
+  Operating margin change            -75.3bp  -300.0bp  -224.7bp  Marketing and overhead do not come do…
+  E-commerce: net effect on store and direct-store-delivery sales    +2.0/4    +1.0/4  -1.0/4  Shoppers leave physical retail faster…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$45  (model)  /  $32 (defined)
+  Bear probability (proxy model):  20.2%
+
+  KEY TRIGGER: servings went from +1.0% (Q2 2018) to +3.0% (Q3 2018);
+  the bear case needs a volume recession that gross margin (-29.0bp now)
+  and inventories (-4.9pp against revenue) no longer absorb. Commodity inflation shows up in gross margin first; the bear needs
+  servings to fall as pricing rises.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.38  (FY2018E: no EPS guide in numbers on a usable basis, FY17's $3.38 stands)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2008 14.3x, 2009 12.2x, 2010 15.1x, 2011 14.9x, 2012 15.8x, 2013 16.0x, 2014 18.1x, 2015 22.9x, 2016 21.5x, 2017 30.0x, 2018 28.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $54/share
+  Current $105 vs Updated EPP $54:  +95%  ⚠ far above floor — large drawdown room
+  Bear $32 vs Updated EPP $54:  -41%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Volume (servings) growth                     4.0       +1.0   BASE floor (vs +3 now)
+  Gross margin change                       -130.0     -101.0   BASE floor (vs -29 now)
+  Net revenue growth                         -10.0      -11.5   BASE floor (vs +2 now)
+  Inventory growth less net revenue            32.0      +36.9   BASE floor (vs -5 now)
+  Operating margin change                   -130.0      -54.7   BASE floor (vs -75 now)
+  E-commerce: net effect on store and direct-store-delivery sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.38 × (1+2.7%)² = $3.57
+  At 19x P/E (conservative):  $68/share
+  + Cumul. dividends (2yr):  +$7.64/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $68  (▼38 from $105)
+  Conservative total return:  -28% over 2yr  = -14%/yr
+
+  2.7% EPS growth is what is left once the premium multiple (31.1x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2020E EPS of $5.14,
+  i.e. 23.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $95.94  –  $122.51  (at 35th pct of range)
+  Annual dividend:      $3.71/share  (yield 3.5%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.49
+  1-sigma range (1yr):  $88  –  $122  ($105 ± 16%)
+  2-sigma range (1yr):  $71  –  $139
+  ────────────────────────────────────────────────────────────
+  Bear $32 requires:  ~4.3σ price move  (unusual — requires fundamental break)
+  A beverage and convenient-food company with a 0.5 beta: the stock is +9% off its May
+  low while servings went from +1.0% (Q2 2018) to +3.0% (Q3 2018).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.03  15.6x  $     32    20.2%      1.2%   +18.9pp  EPS -22.5%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE        3.71  19.1x  $     71    59.6%      4.3%   +55.3pp  EPS +4.7%/yr (Q3 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        3.71  26.0x  $     96    17.1%     15.0%    +2.1pp  EPS +4.7%/yr (FY08-FY17 CAGR); P/E holds its 75th pct
+  XBULL       4.12  33.1x  $    136     3.2%     79.5%   -76.2pp  EPS +10.4%/yr (best 2-yr run FY08-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $69  /  Market EV: $126  /  Current: $105
+  Conservative EV (2yr, ④): $68 + $7.64 divs = $75 total value
+  Downside (→ Bear $32): 69.6%   Upside (→ Bull $96): -8.8%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $105 the market needs $139 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 1.91: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +95%    -1.86  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.02x     +95%    -1.77  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +95%    -1.89  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +95%    -1.84  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +95%    -2.02  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +95%    -1.56  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +64%    -1.86  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +95%    -1.86  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2018 print (mid-February) — the next read on servings (+3.0% now) and the full-year outlook
+  (2) Gross margin — -29.0bp in Q3 2018: pricing against commodity costs, what must hold if volume does not
+  (3) The outlook — Q3 2018 release: 'Full year organic revenue growth to be at least 3 percent.'; 'Core earnings per share of $5.65, an 8 percent increase compared to 2017 core earnings per share of $5.23' (display only)
+  (4) Inventories — -3.4% against net revenue +1.5% in Q3 2018 (-4.9pp): commodity costs and acquisitions sit in them
+  (5) Capital return at 31x — 'Total cash returns to shareholders of approximately $7 billion, total dividends to shareholders of approximately $5 billion and share repurchases of approximately $2 billion.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $54  |  ADD below ~$60  |  TRIM above $96
+════════════════════════════════════════════════════════════════════════
+

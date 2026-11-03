@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted during the session on their release days, and from 2009 most came before the open (each print's release_time says which). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only, except a fiscal-year net revenue guide in constant currency in numbers, 'rev_guide': every PepsiCo EPS guide of 2007-2016 is a one-sided bound, words, or a figure or range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December (53 weeks in 2011 and 2016). Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth excluding currency that the release states, else the reported growth it states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states one); acquisitions, divestitures (the Venezuela deconsolidation among them) and the extra week stay in, as published, and organic growth, which removes them, is not used. A print whose release states no total servings takes them from the first later filing that does ('servings_later'), on that filing's own date. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for PEP retrospectives (retro/build_pep.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted during the session on their release days, and from 2009 most came before the open (each print's release_time says which). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest guide for the current fiscal year (display only, except a fiscal-year net revenue guide in constant currency in numbers, 'rev_guide': every PepsiCo EPS guide of 2007-2020 is a one-sided bound, words, or a figure or range on the core basis, which removes the recurring commodity mark-to-market impact), and the latest declared dividend. PepsiCo's fiscal year ends on the last Saturday of December (53 weeks in 2011 and 2016). Values are as reported; a vintage takes each year from the latest 10-K that reports it, and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago inventories come from the year-ago quarter's own release, an operating profit on a comparable basis that excludes one-offs only replaces GAAP, and lc_pct is the net revenue growth excluding currency that the release states, else the reported growth it states less the currency effect the release or the quarter's 10-Q states (the reported growth where no filing states one); acquisitions, divestitures (the Venezuela deconsolidation among them) and the extra week stay in, as published, and organic growth, which removes them, is not used. A print whose release states no total servings takes them from the first filing that does ('servings_later'), on that filing's own date (from 2019 the 10-Q came minutes before the release, on the same day). Events: from the FY2017 10-K, each 10-K whose risk factors name the growth of the e-commerce channel as a risk to PepsiCo's business ('ecommerce_company_acknowledged': ECOMMERCE on the watch list, company-acknowledged, text only), replaced by the next 10-K's wording. Listings: the exchange, once a filing has announced it and it is effective (Nasdaq from 2017-12-20, the NYSE before). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "PEP",
  "sources": {
   "P1": {
@@ -750,6 +750,237 @@
    "title": "PepsiCo Q3 2016 10-Q",
    "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747616000107/pepsicoq3-10xq932016.htm",
    "supports": "'For the 12 and 36 weeks ended September 3, 2016, total servings increased 3% and 2.5%, respectively.'"
+  },
+  "P108": {
+   "published": "2017-02-15",
+   "filed": "2017-02-15 06:33 ET (before the open)",
+   "title": "PepsiCo Q4 2016 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000005/q420168-kxexhibit991.htm",
+   "supports": "Q4 2016 and 2016 income statements (a 17-week quarter and a 53-week year; 2015 cost of sales reclassified) and balance sheet; no total servings; reported net revenue +5.0% in the quarter, foreign exchange 2 points unfavorable, the 53rd week 3.5 points favorable (organic +3.7%); EPS $0.97 and $4.36 (core $1.20 and $4.85); 2017 guidance; a dividend increase announced for the June 2017 payment"
+  },
+  "P109": {
+   "published": "2017-02-16",
+   "filed": "2017-02-15 16:35 ET (after the close)",
+   "title": "PepsiCo FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000010/pepsico201610-k.htm",
+   "supports": "five-year summary 2012-2016; income statement 2014-2016 (2016: 53 weeks); net revenue by segment 2014-2016; total servings +3% in 2016 (+2% excluding the 53rd week); EPS excluding above items $4.85; the 53rd week's $0.04 a share; cash flow (operating activities $10,404M, capital spending $3,040M, sales of PP&E $99M, repurchases $3,000M, dividends $4,227M); quarterly dividends declared ($0.7525 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  "P110": {
+   "published": "2017-04-26",
+   "filed": "2017-04-26 06:09 ET (before the open)",
+   "title": "PepsiCo Q1 2017 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000014/q120178-kxexhibit991.htm",
+   "supports": "Q1 2017 income statement and balance sheet; no total servings; reported net revenue +1.6%, foreign exchange 1 point unfavorable (organic +2.1%); EPS $0.91 (core $0.94); 2017 guidance reaffirmed"
+  },
+  "P111": {
+   "published": "2017-04-27",
+   "filed": "2017-04-26 16:24 ET (after the close)",
+   "title": "PepsiCo Q1 2017 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000017/pepsicoq1-10xq3252017.htm",
+   "supports": "'For the 12 weeks ended March 25, 2017, total servings increased 0.5%.'"
+  },
+  "P112": {
+   "published": "2017-07-11",
+   "filed": "2017-07-11 06:00 ET (before the open)",
+   "title": "PepsiCo Q2 2017 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000030/q220178-kxexhibit991.htm",
+   "supports": "Q2 2017 income statement and balance sheet; no total servings; reported net revenue +2.0%, foreign exchange 1.5 points unfavorable (organic +3.1%); EPS $1.46 (core $1.50); cash dividends declared $0.805 a share in the quarter; 2017 guidance raised"
+  },
+  "P113": {
+   "published": "2017-07-12",
+   "filed": "2017-07-11 16:19 ET (after the close)",
+   "title": "PepsiCo Q2 2017 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000033/pepsicoq2-10xq6172017.htm",
+   "supports": "'For each of the 12 and 24 weeks ended June 17, 2017, total servings was even with the prior year.'"
+  },
+  "P114": {
+   "published": "2017-10-04",
+   "filed": "2017-10-04 06:02 ET (before the open)",
+   "title": "PepsiCo Q3 2017 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000044/q320178-kxexhibit991.htm",
+   "supports": "Q3 2017 income statement and balance sheet; no total servings; reported net revenue +1.3%, foreign exchange 1 point unfavorable (organic +1.7%); EPS $1.49 (core $1.48); 2017 guidance updated"
+  },
+  "P115": {
+   "published": "2017-10-05",
+   "filed": "2017-10-04 16:26 ET (after the close)",
+   "title": "PepsiCo Q3 2017 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000048/pepsicoq3-10xq992017.htm",
+   "supports": "'For each of the 12 and 36 weeks ended September 9, 2017, total servings was even with the prior year.'"
+  },
+  "P116": {
+   "published": "2017-12-11",
+   "filed": "2017-12-08 16:35 ET (after the close)",
+   "title": "PepsiCo 8-K of 2017-12-08 (Items 3.01 and 7.01; ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000095010317012290/dp83934_ex9901.htm",
+   "supports": "the transfer of the common stock's listing from the New York Stock Exchange to the Nasdaq Global Select Market, effective December 19, 2017 after market close; trading as a Nasdaq-listed security from December 20, 2017"
+  },
+  "P117": {
+   "published": "2018-02-13",
+   "filed": "2018-02-13 06:04 ET (before the open)",
+   "title": "PepsiCo Q4 2017 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000007/q420178-kxexhibit991.htm",
+   "supports": "Q4 2017 and 2017 income statements (a 16-week quarter against 17; the $2.5 billion provisional net tax expense of the TCJ Act, $1.73 a share) and balance sheet; no total servings; reported net revenue even with the prior year in the quarter, foreign exchange 1 point favorable, the prior year's 53rd week 3.5 points (organic +2.3%); EPS $(0.50) and $3.38 (core $1.31 and $5.23); 2018 guidance; a dividend increase announced for the June 2018 payment"
+  },
+  "P118": {
+   "published": "2018-02-14",
+   "filed": "2018-02-13 16:32 ET (after the close)",
+   "title": "PepsiCo FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000012/pepsico201710-k.htm",
+   "supports": "five-year summary 2013-2017; income statement 2015-2017 (2017 with the provisional net tax expense of the TCJ Act); net revenue by segment 2015-2017; total servings -1% in 2017 (even excluding the 53rd week of 2016); EPS excluding above items $5.23; cash flow (operating activities $9,994M, capital spending $2,969M, sales of PP&E $180M, repurchases $2,000M, dividends $4,472M); quarterly dividends declared ($0.805 in the fourth quarter); business, competition and risk-factor wording (the e-commerce channel in a risk-factor heading)"
+  },
+  "P119": {
+   "published": "2018-04-26",
+   "filed": "2018-04-26 06:06 ET (before the open)",
+   "title": "PepsiCo Q1 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000027/q120188-kxexhibit991.htm",
+   "supports": "Q1 2018 income statement (the 2017 quarter recast for the non-service pension cost) and balance sheet; no total servings; reported net revenue +4.3%, foreign exchange 2 points favorable (organic +2.3%); EPS $0.94 (core $0.96); 2018 guidance reaffirmed"
+  },
+  "P120": {
+   "published": "2018-04-27",
+   "filed": "2018-04-26 16:22 ET (after the close)",
+   "title": "PepsiCo Q1 2018 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000032/pepsicoq1-10xq3242018.htm",
+   "supports": "'For the 12 weeks ended March 24, 2018, total servings increased 1%.'"
+  },
+  "P121": {
+   "published": "2018-07-10",
+   "filed": "2018-07-10 06:05 ET (before the open)",
+   "title": "PepsiCo Q2 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000051/q220188-kxexhibit991.htm",
+   "supports": "Q2 2018 income statement and balance sheet; no total servings; reported net revenue +2.4%, foreign exchange 1 point favorable, structural changes 1 point unfavorable (organic +2.6%); EPS $1.28 (core $1.61); cash dividends declared $0.9275 a share in the quarter; 2018 guidance reaffirmed"
+  },
+  "P122": {
+   "published": "2018-07-11",
+   "filed": "2018-07-10 16:17 ET (after the close)",
+   "title": "PepsiCo Q2 2018 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000055/pepsicoq2-10xq6162018.htm",
+   "supports": "'For each of the 12 and 24 weeks ended June 16, 2018, total servings increased 1%.'"
+  },
+  "P123": {
+   "published": "2018-10-02",
+   "filed": "2018-10-02 06:07 ET (before the open)",
+   "title": "PepsiCo Q3 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000072/q320188-kxexhibit991.htm",
+   "supports": "Q3 2018 income statement and balance sheet; no total servings; reported net revenue +1.5%, foreign exchange 2 points unfavorable, structural changes 1 point unfavorable (organic +4.9%); EPS $1.75 (core $1.59); 2018 guidance updated"
+  },
+  "P124": {
+   "published": "2018-10-03",
+   "filed": "2018-10-02 16:20 ET (after the close)",
+   "title": "PepsiCo Q3 2018 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747618000076/pepsicoq3-10xq982018.htm",
+   "supports": "'For the 12 and 36 weeks ended September 8, 2018, total servings increased 3% and 2%, respectively.'"
+  },
+  "P125": {
+   "published": "2019-02-15",
+   "filed": "2019-02-15 06:03 ET (before the open)",
+   "title": "PepsiCo Q4 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000013/q420188-kxexhibit991.htm",
+   "supports": "Q4 2018 and 2018 income statements (net tax benefits of $3.71 a share in the quarter; 2017 recast for the non-service pension cost) and balance sheet; no total servings; reported net revenue even with the prior year in the quarter, foreign exchange 4 points unfavorable, acquisitions and divestitures 1 point unfavorable (organic +4.6%); EPS $4.83 and $8.78 (core $1.49 and $5.66); 2019 guidance and long-term targets; a dividend increase announced for the June 2019 payment"
+  },
+  "P126": {
+   "published": "2019-02-19",
+   "filed": "2019-02-15 16:23 ET (after the close; Monday 2019-02-18 was Presidents' Day)",
+   "title": "PepsiCo FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000017/pepsico201810-k.htm",
+   "supports": "five-year summary 2014-2018 (operating profit before 2018 recast for the non-service pension cost); income statement 2016-2018 (2018 with the other net tax benefits); net revenue by segment 2016-2018; total servings +1% in 2018; EPS excluding above items $5.66; items affecting comparability (other net tax benefits $5,064M, $3.55 a share); cash flow (operating activities $9,415M, capital spending $3,282M, sales of PP&E $134M, repurchases $2,000M, dividends $4,930M); quarterly dividends declared ($0.9275 in the fourth quarter); business, competition and risk-factor wording"
+  },
+  "P127": {
+   "published": "2019-04-17",
+   "filed": "2019-04-17 06:03 ET (before the open)",
+   "title": "PepsiCo Q1 2019 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000038/pepsicoq1-10xq2019.htm",
+   "supports": "'For the 12 weeks ended March 23, 2019, total servings increased 4%.'"
+  },
+  "P128": {
+   "published": "2019-04-17",
+   "filed": "2019-04-17 06:05 ET (before the open)",
+   "title": "PepsiCo Q1 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000039/q120198-kxexhibit991.htm",
+   "supports": "Q1 2019 income statement and balance sheet; no total servings; reported net revenue +2.6%, foreign exchange 3 points unfavorable (organic +5.2%); EPS $1.00 (core $0.97); 2019 guidance reaffirmed"
+  },
+  "P129": {
+   "published": "2019-07-09",
+   "filed": "2019-07-09 06:07 ET (before the open)",
+   "title": "PepsiCo Q2 2019 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000070/pepsicoq2-10xq2019.htm",
+   "supports": "'For the 12 and 24 weeks ended June 15, 2019, total servings increased 3% and 3.5%, respectively.'; cash dividends declared $0.955 a share in the quarter"
+  },
+  "P130": {
+   "published": "2019-07-09",
+   "filed": "2019-07-09 06:12 ET (before the open)",
+   "title": "PepsiCo Q2 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000072/q220198-kxexhibit991.htm",
+   "supports": "Q2 2019 income statement and balance sheet; no total servings and no dividend per share; reported net revenue +2.2%, foreign exchange 3 points unfavorable, structural changes 1 point favorable (organic +4.5%); EPS $1.44 (core $1.54); 2019 guidance reaffirmed"
+  },
+  "P131": {
+   "published": "2019-10-03",
+   "filed": "2019-10-03 06:03 ET (before the open)",
+   "title": "PepsiCo Q3 2019 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000093/pepsicoq3-10xq2019.htm",
+   "supports": "'For the 12 and 36 weeks ended September 7, 2019, total servings increased 4%.'"
+  },
+  "P132": {
+   "published": "2019-10-03",
+   "filed": "2019-10-03 06:08 ET (before the open)",
+   "title": "PepsiCo Q3 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747619000095/q320198-kxexhibit991.htm",
+   "supports": "Q3 2019 income statement and balance sheet; no total servings; reported net revenue +4.3%, foreign exchange 1 point unfavorable, structural changes 1 point favorable (organic +4.3%); EPS $1.49 (core $1.56); the 2019 organic revenue target raised"
+  },
+  "P133": {
+   "published": "2020-02-13",
+   "filed": "2020-02-13 06:09 ET (before the open)",
+   "title": "PepsiCo FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000015/pepsico201910-k.htm",
+   "supports": "five-year summary 2015-2019; income statement 2017-2019; net revenue by segment 2017-2019 (the seven segments of the fourth quarter of 2019); total servings +4% in 2019; EPS excluding above items $5.53; cash flow (operating activities $9,649M, capital spending $4,232M, sales of PP&E $170M, repurchases $3,000M, dividends $5,304M); the $0.955 dividend declared on February 10, 2020; business, competition and risk-factor wording"
+  },
+  "P134": {
+   "published": "2020-02-13",
+   "filed": "2020-02-13 06:11 ET (before the open)",
+   "title": "PepsiCo Q4 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000016/q420198-kxexhibit991.htm",
+   "supports": "Q4 2019 and 2019 income statements and balance sheet; no total servings; reported net revenue +5.7% in the quarter, no foreign exchange impact, structural changes 1.5 points favorable (organic +4.3%); EPS $1.26 and $5.20 (core $1.45 and $5.53); 2020 guidance; a dividend increase announced for the June 2020 payment"
+  },
+  "P135": {
+   "published": "2020-04-28",
+   "filed": "2020-04-28 06:03 ET (before the open)",
+   "title": "PepsiCo Q1 2020 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000041/pepsicoq1-10xq2020.htm",
+   "supports": "'For the 12 weeks ended March 21, 2020, total servings increased 6%, which reflects the impact of the revised guidelines on our prior-year servings.'"
+  },
+  "P136": {
+   "published": "2020-04-28",
+   "filed": "2020-04-28 06:06 ET (before the open)",
+   "title": "PepsiCo Q1 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000042/q120208-kxexhibit991.htm",
+   "supports": "Q1 2020 income statement and balance sheet; no total servings; reported net revenue +7.7%, no foreign exchange impact (organic +7.9%); EPS $0.96 (core $1.07); the 2020 outlook 'no longer applicable'"
+  },
+  "P137": {
+   "published": "2020-07-13",
+   "filed": "2020-07-13 06:03 ET (before the open)",
+   "title": "PepsiCo Q2 2020 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000060/pepsicoq2-10xq2020.htm",
+   "supports": "'For the 12 and 24 weeks ended June 13, 2020, total servings increased 1% and 3.5%, respectively, which reflects the impact of the revised guidelines on our prior-year servings.'; cash dividends declared $1.0225 a share in the quarter"
+  },
+  "P138": {
+   "published": "2020-07-13",
+   "filed": "2020-07-13 06:05 ET (before the open)",
+   "title": "PepsiCo Q2 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000061/q220208-kxexhibit991.htm",
+   "supports": "Q2 2020 income statement and balance sheet; no total servings and no dividend per share; reported net revenue -3.1%, foreign exchange 4 points unfavorable, structural changes 1 point favorable (organic -0.3%); EPS $1.18 (core $1.32); no 2020 outlook"
+  },
+  "P139": {
+   "published": "2020-10-01",
+   "filed": "2020-09-30 17:42 ET (after the close)",
+   "title": "PepsiCo Q3 2020 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000068/pep-20200905.htm",
+   "supports": "'For the 12 and 36 weeks ended September 5, 2020, total servings increased 13% and 7%, respectively, primarily reflecting the contributions from our recent acquisitions.'"
+  },
+  "P140": {
+   "published": "2020-10-01",
+   "filed": "2020-09-30 17:56 ET (after the close; the release is dated October 1, 2020)",
+   "title": "PepsiCo Q3 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747620000072/q320208-kxexhibit991.htm",
+   "supports": "Q3 2020 income statement and balance sheet; no total servings; reported net revenue +5.3%, foreign exchange 2 points unfavorable, structural changes 3 points favorable (organic +4.2%); EPS $1.65 (core $1.66); an updated 2020 outlook"
   }
  },
  "history_vintages": [
@@ -2027,6 +2258,464 @@
     ]
    ],
    "groups_basis": "FY15 net revenue by segment (FY2015 10-K; the segments from the third quarter of 2015)"
+  },
+  {
+   "published": "2017-02-16",
+   "sources": [
+    "P109",
+    "P100",
+    "P91",
+    "P81",
+    "P70",
+    "P60",
+    "P49",
+    "P41",
+    "P21"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY16",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of enjoyable brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2016, we and The Coca-Cola Company represented approximately 24% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2016 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2014": "2014-12-27",
+    "2015": "2015-12-26",
+    "2016": "2016-12-31"
+   },
+   "eps_gaap": {
+    "2007": 3.41,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36
+   },
+   "eps_normalized": {
+    "2007": 3.38,
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36
+   },
+   "revenue_usd_b": {
+    "2007": 39.474,
+    "2008": 43.251,
+    "2009": 43.232,
+    "2010": 57.838,
+    "2011": 66.504,
+    "2012": 65.492,
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799
+   },
+   "diluted_shares_m": {
+    "2007": 1658.0,
+    "2016": 1452.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 15.58,
+   "prev_fy_op_margin_note": "FY16 operating profit $9,785M / net revenue $62,799M (FY2016 10-K; GAAP)",
+   "prev_fy_pretax_margin": 13.62,
+   "prev_fy_pretax_margin_note": "FY16 income before income taxes $8,553M / $62,799M (FY2016 10-K)",
+   "prev_fy_gross_margin": 55.08,
+   "prev_fy_sales_growth": -0.4,
+   "prev_fy_servings_pct": 3.0,
+   "prev_fy_servings_note": "the FY2016 10-K, a 53-week year (+2% excluding the extra week)",
+   "tax_rate": 0.254,
+   "tax_note": "FY16 effective rate: taxes $2,174M / pre-tax income $8,553M (FY2016 10-K)",
+   "fcf_b": 7.463,
+   "fcf_label": "FY16",
+   "dividend_annual": 3.01,
+   "dividend_note": "$0.7525 quarterly, declared in each of the second to fourth quarters of 2016 (FY2016 10-K)",
+   "cash_return_text": "$3,000M of share repurchases and $4,227M of dividends paid in FY16",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, North America Beverages, Latin America, Europe Sub-Saharan Africa and Asia, Middle East and North Africa",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it: 2007 $3.38 (GAAP $3.41); 2008 $3.21 GAAP: the company's core $3.68 also excludes the commodity mark-to-market net impact, a recurring item (the 2008 core rule), and no figure excluding only the Productivity for Growth charges and PepsiCo's share of PBG's charges was published; 2009 $3.77 GAAP: the company's core $3.71 also excludes the commodity mark-to-market net impact (the 2008 core rule); 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     15.549,
+     5.2
+    ],
+    [
+     "Quaker Foods North America",
+     2.564,
+     0.8
+    ],
+    [
+     "North America Beverages",
+     21.312,
+     3.4
+    ],
+    [
+     "Latin America",
+     6.82,
+     -17.1
+    ],
+    [
+     "Europe Sub-Saharan Africa",
+     10.216,
+     -2.8
+    ],
+    [
+     "Asia, Middle East and North Africa",
+     6.338,
+     -0.6
+    ]
+   ],
+   "groups_basis": "FY16 net revenue by segment (FY2016 10-K)"
+  },
+  {
+   "published": "2018-02-14",
+   "sources": [
+    "P118",
+    "P109",
+    "P100",
+    "P91",
+    "P81",
+    "P70",
+    "P60",
+    "P49"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY17",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of enjoyable brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2017, we and The Coca-Cola Company represented approximately 23% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2017 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2015": "2015-12-26",
+    "2016": "2016-12-31",
+    "2017": "2017-12-30"
+   },
+   "eps_gaap": {
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38
+   },
+   "eps_normalized": {
+    "2008": 3.21,
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38
+   },
+   "revenue_usd_b": {
+    "2008": 43.251,
+    "2009": 43.232,
+    "2010": 57.838,
+    "2011": 66.504,
+    "2012": 65.492,
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799,
+    "2017": 63.525
+   },
+   "diluted_shares_m": {
+    "2008": 1602.0,
+    "2017": 1438.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 16.54,
+   "prev_fy_op_margin_note": "FY17 operating profit $10,509M / net revenue $63,525M (FY2017 10-K; GAAP)",
+   "prev_fy_pretax_margin": 15.12,
+   "prev_fy_pretax_margin_note": "FY17 income before income taxes $9,602M / $63,525M (FY2017 10-K)",
+   "prev_fy_gross_margin": 54.69,
+   "prev_fy_sales_growth": 1.2,
+   "prev_fy_servings_pct": -1.0,
+   "prev_fy_servings_note": "the FY2017 10-K (even with 2016 excluding the 53rd week)",
+   "tax_rate": 0.489,
+   "tax_note": "FY17 effective rate: taxes $4,694M / pre-tax income $9,602M (FY2017 10-K)",
+   "fcf_b": 7.205,
+   "fcf_label": "FY17",
+   "dividend_annual": 3.22,
+   "dividend_note": "$0.805 quarterly, declared in each of the second to fourth quarters of 2017 (FY2017 10-K)",
+   "cash_return_text": "$2,000M of share repurchases and $4,472M of dividends paid in FY17",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, North America Beverages, Latin America, Europe Sub-Saharan Africa and Asia, Middle East and North Africa",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it (none does in this window): 2008 $3.21 GAAP: the company's core $3.68 also excludes the commodity mark-to-market net impact, a recurring item (the 2008 core rule), and no figure excluding only the Productivity for Growth charges and PepsiCo's share of PBG's charges was published; 2009 $3.77 GAAP: the company's core $3.71 also excludes the commodity mark-to-market net impact (the 2008 core rule); 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2017 $3.38 GAAP, with the provisional net tax expense of the TCJ Act ($2,451 million, $1.70 a share) as published: the company's core $5.23 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     15.798,
+     1.6
+    ],
+    [
+     "Quaker Foods North America",
+     2.503,
+     -2.4
+    ],
+    [
+     "North America Beverages",
+     20.936,
+     -1.8
+    ],
+    [
+     "Latin America",
+     7.208,
+     5.7
+    ],
+    [
+     "Europe Sub-Saharan Africa",
+     11.05,
+     8.2
+    ],
+    [
+     "Asia, Middle East and North Africa",
+     6.03,
+     -4.9
+    ]
+   ],
+   "groups_basis": "FY17 net revenue by segment (FY2017 10-K)"
+  },
+  {
+   "published": "2019-02-19",
+   "sources": [
+    "P126",
+    "P118",
+    "P109",
+    "P100",
+    "P91",
+    "P81",
+    "P70",
+    "P60"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY18",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2018, we and The Coca-Cola Company represented approximately 22% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2018 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2016": "2016-12-31",
+    "2017": "2017-12-30",
+    "2018": "2018-12-29"
+   },
+   "eps_gaap": {
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78
+   },
+   "eps_normalized": {
+    "2009": 3.77,
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78
+   },
+   "revenue_usd_b": {
+    "2009": 43.232,
+    "2010": 57.838,
+    "2011": 66.504,
+    "2012": 65.492,
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799,
+    "2017": 63.525,
+    "2018": 64.661
+   },
+   "diluted_shares_m": {
+    "2009": 1577.0,
+    "2018": 1425.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 15.64,
+   "prev_fy_op_margin_note": "FY18 operating profit $10,110M / net revenue $64,661M (FY2018 10-K; GAAP)",
+   "prev_fy_pretax_margin": 14.21,
+   "prev_fy_pretax_margin_note": "FY18 income before income taxes $9,189M / $64,661M (FY2018 10-K)",
+   "prev_fy_gross_margin": 54.56,
+   "prev_fy_sales_growth": 1.8,
+   "prev_fy_servings_pct": 1.0,
+   "prev_fy_servings_note": "the FY2018 10-K",
+   "tax_rate": -0.367,
+   "tax_note": "FY18 effective rate: a tax benefit of $3,370M on pre-tax income of $9,189M, with the other net tax benefits of the reorganization of its international operations (FY2018 10-K)",
+   "fcf_b": 6.267,
+   "fcf_label": "FY18",
+   "dividend_annual": 3.71,
+   "dividend_note": "$0.9275 quarterly, declared in each of the second to fourth quarters of 2018 (FY2018 10-K)",
+   "cash_return_text": "$2,000M of share repurchases and $4,930M of dividends paid in FY18",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, North America Beverages, Latin America, Europe Sub-Saharan Africa and Asia, Middle East and North Africa",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it (none does in this window): 2009 $3.77 GAAP: the company's core $3.71 also excludes the commodity mark-to-market net impact (the 2008 core rule); 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2017 $3.38 GAAP, with the provisional net tax expense of the TCJ Act ($2,451 million, $1.70 a share) as published: the company's core $5.23 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2018 $8.78 GAAP, with the other net tax benefits ($5,064 million, $3.55 a share) and the TCJ Act's net tax benefit ($0.02) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $5.66 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     16.346,
+     3.5
+    ],
+    [
+     "Quaker Foods North America",
+     2.465,
+     -1.5
+    ],
+    [
+     "North America Beverages",
+     21.072,
+     0.6
+    ],
+    [
+     "Latin America",
+     7.354,
+     2.0
+    ],
+    [
+     "Europe Sub-Saharan Africa",
+     11.523,
+     4.3
+    ],
+    [
+     "Asia, Middle East and North Africa",
+     5.901,
+     -2.1
+    ]
+   ],
+   "groups_basis": "FY18 net revenue by segment (FY2018 10-K)"
+  },
+  {
+   "published": "2020-02-13",
+   "sources": [
+    "P133",
+    "P126",
+    "P118",
+    "P109",
+    "P100",
+    "P91",
+    "P81",
+    "P70"
+   ],
+   "company": "PepsiCo, Inc.",
+   "fy_label": "FY19",
+   "why": "PepsiCo: 'We are a leading global food and beverage company with a complementary portfolio of brands, including Frito-Lay, Gatorade, Pepsi-Cola, Quaker and Tropicana'; 'Our beverage, food and snack products are in highly competitive categories and markets', 'In 2019, we and The Coca-Cola Company represented approximately 22% and 20%, respectively, of the U.S. liquid refreshment beverage category by estimated retail sales in measured channels', and 'However, The Coca-Cola Company has significant carbonated soft drink (CSD) share advantage in many markets outside the United States' (its own FY2019 10-K): a competition and consumer-taste risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2017": "2017-12-30",
+    "2018": "2018-12-29",
+    "2019": "2019-12-28"
+   },
+   "eps_gaap": {
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2
+   },
+   "eps_normalized": {
+    "2010": 3.91,
+    "2011": 4.03,
+    "2012": 3.92,
+    "2013": 4.32,
+    "2014": 4.27,
+    "2015": 3.67,
+    "2016": 4.36,
+    "2017": 3.38,
+    "2018": 8.78,
+    "2019": 5.2
+   },
+   "revenue_usd_b": {
+    "2010": 57.838,
+    "2011": 66.504,
+    "2012": 65.492,
+    "2013": 66.415,
+    "2014": 66.683,
+    "2015": 63.056,
+    "2016": 62.799,
+    "2017": 63.525,
+    "2018": 64.661,
+    "2019": 67.161
+   },
+   "diluted_shares_m": {
+    "2010": 1614.0,
+    "2019": 1407.0
+   },
+   "pe_window_start": "1997-12-28",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 15.32,
+   "prev_fy_op_margin_note": "FY19 operating profit $10,291M / net revenue $67,161M (FY2019 10-K; GAAP)",
+   "prev_fy_pretax_margin": 13.87,
+   "prev_fy_pretax_margin_note": "FY19 income before income taxes $9,312M / $67,161M (FY2019 10-K)",
+   "prev_fy_gross_margin": 55.13,
+   "prev_fy_sales_growth": 3.9,
+   "prev_fy_servings_pct": 4.0,
+   "prev_fy_servings_note": "the FY2019 10-K ('primarily reflecting our acquisition of SodaStream')",
+   "tax_rate": 0.21,
+   "tax_note": "FY19 effective rate: taxes $1,959M / pre-tax income $9,312M (FY2019 10-K)",
+   "fcf_b": 5.587,
+   "fcf_label": "FY19",
+   "dividend_annual": 3.82,
+   "dividend_note": "$0.955 quarterly: 'On February 10, 2020, the Board of Directors declared a quarterly dividend of $0.955 payable March 31, 2020' (FY2019 10-K)",
+   "cash_return_text": "$3,000M of share repurchases and $5,304M of dividends paid in FY19",
+   "business_line": "Frito-Lay North America, Quaker Foods North America, PepsiCo Beverages North America, Latin America, Europe, Africa, Middle East and South Asia, and Asia Pacific, Australia and New Zealand and China region",
+   "normalization": "diluted EPS from continuing operations (diluted EPS where none were discontinued; from FY2009 the line 'attributable to PepsiCo'), each year from the latest 10-K that reports it; a company figure excluding one-offs only replaces it (none does in this window): 2010 $3.91 GAAP: the company's core $4.13 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2011 $4.03 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.40 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2012 $3.92 GAAP: the company's core $4.10 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2013 $4.32 GAAP: the company's core $4.37 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2014 $4.27 GAAP: the company's core $4.63 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2015 $3.67 GAAP, with the Venezuela impairment charges ($1.4 billion, $0.91 a share) as published: the company's core $4.57 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2016 $4.36 GAAP, a 53-week year as published (the extra week added $0.04): the company's core $4.85 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2017 $3.38 GAAP, with the provisional net tax expense of the TCJ Act ($2,451 million, $1.70 a share) as published: the company's core $5.23 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2018 $8.78 GAAP, with the other net tax benefits ($5,064 million, $3.55 a share) and the TCJ Act's net tax benefit ($0.02) as published: the listed one-off benefits are smaller than the year's income without them (method r2's test for a year distorted by benefits), and the company's core $5.66 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule); 2019 $5.20 GAAP: the company's core $5.53 (the 10-K's EPS 'excluding above items') also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+   "groups": [
+    [
+     "Frito-Lay North America",
+     17.078,
+     4.5
+    ],
+    [
+     "Quaker Foods North America",
+     2.482,
+     0.7
+    ],
+    [
+     "PepsiCo Beverages North America",
+     21.73,
+     3.1
+    ],
+    [
+     "Latin America",
+     7.573,
+     3.0
+    ],
+    [
+     "Europe",
+     11.728,
+     6.9
+    ],
+    [
+     "Africa, Middle East and South Asia",
+     3.651,
+     -0.2
+    ],
+    [
+     "Asia Pacific, Australia and New Zealand and China region",
+     2.919,
+     4.5
+    ]
+   ],
+   "groups_basis": "FY19 net revenue by segment (FY2019 10-K; the seven segments realigned in the fourth quarter of 2019)"
   }
  ],
  "prints": [
@@ -3144,7 +3833,7 @@
    "lc_pct": -0.5,
    "lc_note": "the release's reported net revenue growth of -1% less its stated currency effect ('less than a 1 percent unfavorable impact', 0.5 points in its organic table); the refranchisings (3 points) and the prior year's extra week (3 points) stay in, as published (organic +5%)",
    "servings_pct": null,
-   "servings_note": "no filing states total servings for the quarter (the FY2012 10-K gives +3% for the year)",
+   "servings_note": "no filing states total servings for the quarter",
    "inventory_note": "inventories $3,581M at 12/29/12 vs $3,827M at 12/31/11",
    "eps_q": 1.06,
    "eps_q_prior": 0.89,
@@ -3168,7 +3857,7 @@
     "gross_margin": 52.22,
     "sales_growth": -1.5,
     "servings_pct": null,
-    "servings_note": "not stated in the Q4 2012 release (the FY2012 10-K gives +3%)",
+    "servings_note": "not stated in the Q4 2012 release",
     "tax_rate": 0.252,
     "tax_note": "FY12 effective rate: taxes $2,090M / pre-tax income $8,304M"
    },
@@ -3370,7 +4059,7 @@
    "lc_pct": 4.0,
    "lc_note": "the release's reported net revenue growth of 1% less its stated 3-point unfavorable currency effect; the Vietnam refranchising (1 point) stays in, as published (organic +4%)",
    "servings_pct": null,
-   "servings_note": "no filing states total servings for the quarter (the FY2013 10-K gives +2% for the year)",
+   "servings_note": "no filing states total servings for the quarter",
    "inventory_note": "inventories $3,409M at 12/28/13 vs $3,581M at 12/29/12",
    "eps_q": 1.12,
    "eps_q_prior": 1.06,
@@ -3394,7 +4083,7 @@
     "gross_margin": 52.96,
     "sales_growth": 1.4,
     "servings_pct": null,
-    "servings_note": "not stated in the Q4 2013 release (the FY2013 10-K gives +2%)",
+    "servings_note": "not stated in the Q4 2013 release",
     "tax_rate": 0.237,
     "tax_note": "FY13 effective rate: taxes $2,104M / pre-tax income $8,891M"
    },
@@ -3596,7 +4285,7 @@
    "lc_pct": 5.0,
    "lc_note": "the release's reported net revenue growth of -1% less its stated 6-point unfavorable currency effect (organic +5%)",
    "servings_pct": null,
-   "servings_note": "no filing states total servings for the quarter (the FY2014 10-K gives +1% for the year)",
+   "servings_note": "no filing states total servings for the quarter",
    "inventory_note": "inventories $3,143M at 12/27/14 vs $3,409M at 12/28/13",
    "eps_q": 0.87,
    "eps_q_prior": 1.12,
@@ -3620,7 +4309,7 @@
     "gross_margin": 53.69,
     "sales_growth": 0.4,
     "servings_pct": null,
-    "servings_note": "not stated in the Q4 2014 release (the FY2014 10-K gives +1%)",
+    "servings_note": "not stated in the Q4 2014 release",
     "tax_rate": 0.251,
     "tax_note": "FY14 effective rate: taxes $2,199M / pre-tax income $8,757M"
    },
@@ -3822,7 +4511,7 @@
    "lc_pct": 1.0,
    "lc_note": "the release's reported net revenue growth of -7% less its stated 8-point unfavorable currency effect; the Venezuela deconsolidation (2 points) stays in, as published (organic +4%)",
    "servings_pct": null,
-   "servings_note": "no filing states total servings for the quarter (the FY2015 10-K gives +1% for the year)",
+   "servings_note": "no filing states total servings for the quarter",
    "inventory_note": "inventories $2,720M at 12/26/15 vs $3,143M at 12/27/14",
    "eps_q": 1.17,
    "eps_q_prior": 0.87,
@@ -3846,7 +4535,7 @@
     "gross_margin": 54.99,
     "sales_growth": -5.4,
     "servings_pct": null,
-    "servings_note": "not stated in the Q4 2015 release (the FY2015 10-K gives +1%)",
+    "servings_note": "not stated in the Q4 2015 release",
     "tax_rate": 0.261,
     "tax_note": "FY15 effective rate: taxes $1,941M / pre-tax income $7,442M"
    },
@@ -4024,6 +4713,918 @@
    "inventory_pct": -0.1,
    "inventory_gap_pp": 1.7,
    "sales_note": "net revenue $16,027M vs $16,331M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2016",
+   "fy": 2016,
+   "q": 4,
+   "published": "2017-02-15",
+   "source": "P108",
+   "extra_sources": [
+    "P99"
+   ],
+   "release": "Feb 15",
+   "release_time": "before the open on Feb 15: 8-K accepted 06:33 ET; conference call at 8 a.m. ET",
+   "period_end": "2016-12-31",
+   "raw": {
+    "sales_m": 19515,
+    "sales_prior_m": 18585,
+    "cogs_m": 8944,
+    "cogs_prior_m": 8487,
+    "op_m": 2381,
+    "op_prior_m": 2240,
+    "inventory_m": 2723,
+    "inventory_prior_m": 2720
+   },
+   "lc_pct": 7.0,
+   "lc_note": "the release's reported net revenue growth of +5.0% less its stated 2-point unfavorable currency effect; the 53rd week (3.5 points) stays in, as published (organic +3.7%)",
+   "servings_pct": null,
+   "servings_note": "no filing states total servings for the quarter",
+   "inventory_note": "inventories $2,723M at 12/31/16 vs $2,720M at 12/26/15 (the Q4 2015 release's balance sheet)",
+   "gross_margin_note": "cost of sales $8,944M vs $8,487M (the prior year as reclassified in this release)",
+   "op_margin_note": "operating profit $2,381M vs $2,240M (GAAP; the core figures also exclude the mark-to-market net impact; the prior year as reclassified in this release)",
+   "eps_q": 0.97,
+   "eps_q_prior": 1.17,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.20)",
+   "diluted_shares_m": 1444,
+   "cash_b": 16.125,
+   "cash_note": "cash and equivalents $9,158M + short-term investments $6,967M",
+   "next_print": "Q1 2017 print (mid-April)",
+   "cash_return_text": "'Total dividends to shareholders are expected to be approximately $4.5 billion in 2017. In addition, the Company anticipates share repurchases of approximately $2 billion, resulting in expected total cash returned to shareholders of approximately $6.5 billion in 2017.'",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 4.36,
+    "revenue_usd_b": 62.799,
+    "diluted_shares_m": 1452.0,
+    "normalization_note": "FY16 = GAAP $4.36, a 53-week year as published: the company's core $4.85 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 15.58,
+    "op_margin_note": "FY16 operating profit $9,785M / net revenue $62,799M (Q4 2016 release; GAAP)",
+    "pretax_margin": 13.62,
+    "pretax_margin_note": "FY16 income before income taxes $8,553M / $62,799M (Q4 2016 release)",
+    "gross_margin": 55.08,
+    "sales_growth": -0.4,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2016 release",
+    "tax_rate": 0.254,
+    "tax_note": "FY16 effective rate: taxes $2,174M / pre-tax income $8,553M"
+   },
+   "sales_b": 19.515,
+   "sales_pct": 5.0,
+   "gross_margin": 54.17,
+   "gross_margin_bp": -16.6,
+   "op_margin": 12.2,
+   "op_margin_bp": 14.8,
+   "inventory_b": 2.723,
+   "inventory_pct": 0.1,
+   "inventory_gap_pp": -4.9,
+   "sales_note": "net revenue $19,515M vs $18,585M (17 weeks vs 16)"
+  },
+  {
+   "quarter": "Q1 2017",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-04-26",
+   "source": "P110",
+   "extra_sources": [
+    "P101"
+   ],
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 06:09 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2017-03-25",
+   "raw": {
+    "sales_m": 12049,
+    "sales_prior_m": 11862,
+    "cogs_m": 5286,
+    "cogs_prior_m": 5151,
+    "op_m": 1933,
+    "op_prior_m": 1619,
+    "inventory_m": 3282,
+    "inventory_prior_m": 3219
+   },
+   "lc_pct": 2.6,
+   "lc_note": "the release's reported net revenue growth of +1.6% less its stated 1-point unfavorable currency effect (organic +2.1%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 0.5,
+    "published": "2017-04-27",
+    "source": "P111",
+    "note": "'For the 12 weeks ended March 25, 2017, total servings increased 0.5%.' (Q1 2017 10-Q)"
+   },
+   "inventory_note": "inventories $3,282M at 3/25/17 vs $3,219M at 3/19/16 (the Q1 2016 release's balance sheet)",
+   "gross_margin_note": "cost of sales $5,286M vs $5,151M",
+   "op_margin_note": "operating profit $1,933M vs $1,619M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 0.91,
+   "eps_q_prior": 0.64,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $0.94)",
+   "diluted_shares_m": 1440,
+   "cash_b": 15.989,
+   "cash_note": "cash and equivalents $9,528M + short-term investments $6,461M",
+   "next_print": "Q2 2017 print (early July)",
+   "cash_return_text": "'Dividend payments of approximately $4.5 billion; and' 'Share repurchases of approximately $2 billion.'",
+   "sales_b": 12.049,
+   "sales_pct": 1.6,
+   "gross_margin": 56.13,
+   "gross_margin_bp": -44.6,
+   "op_margin": 16.04,
+   "op_margin_bp": 239.4,
+   "inventory_b": 3.282,
+   "inventory_pct": 2.0,
+   "inventory_gap_pp": 0.4,
+   "sales_note": "net revenue $12,049M vs $11,862M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2017",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-07-11",
+   "source": "P112",
+   "extra_sources": [
+    "P103"
+   ],
+   "release": "Jul 11",
+   "release_time": "before the open on Jul 11: 8-K accepted 06:00 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2017-06-17",
+   "raw": {
+    "sales_m": 15710,
+    "sales_prior_m": 15395,
+    "cogs_m": 7056,
+    "cogs_prior_m": 6830,
+    "op_m": 2990,
+    "op_prior_m": 2964,
+    "inventory_m": 3612,
+    "inventory_prior_m": 3487
+   },
+   "lc_pct": 3.5,
+   "lc_note": "the release's reported net revenue growth of +2.0% less its stated 1.5-point unfavorable currency effect (organic +3.1%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 0.0,
+    "published": "2017-07-12",
+    "source": "P113",
+    "note": "'For each of the 12 and 24 weeks ended June 17, 2017, total servings was even with the prior year.' (Q2 2017 10-Q; 'even' read as 0%, the Q1 2014 rule)"
+   },
+   "inventory_note": "inventories $3,612M at 6/17/17 vs $3,487M at 6/11/16 (the Q2 2016 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,056M vs $6,830M",
+   "op_margin_note": "operating profit $2,990M vs $2,964M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.46,
+   "eps_q_prior": 1.38,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.50)",
+   "diluted_shares_m": 1441,
+   "cash_b": 17.16,
+   "cash_note": "cash and equivalents $10,282M + short-term investments $6,878M",
+   "next_print": "Q3 2017 print (late September)",
+   "cash_return_text": "'Dividend payments of approximately $4.5 billion; and' 'Share repurchases of approximately $2 billion.'",
+   "sales_b": 15.71,
+   "sales_pct": 2.0,
+   "gross_margin": 55.09,
+   "gross_margin_bp": -54.9,
+   "op_margin": 19.03,
+   "op_margin_bp": -22.1,
+   "inventory_b": 3.612,
+   "inventory_pct": 3.6,
+   "inventory_gap_pp": 1.5,
+   "sales_note": "net revenue $15,710M vs $15,395M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2017",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-10-04",
+   "source": "P114",
+   "extra_sources": [
+    "P106"
+   ],
+   "release": "Oct 4",
+   "release_time": "before the open on Oct 4: 8-K accepted 06:02 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2017-09-09",
+   "raw": {
+    "sales_m": 16240,
+    "sales_prior_m": 16027,
+    "cogs_m": 7366,
+    "cogs_prior_m": 7284,
+    "op_m": 2993,
+    "op_prior_m": 2821,
+    "inventory_m": 3251,
+    "inventory_prior_m": 3120
+   },
+   "lc_pct": 2.3,
+   "lc_note": "the release's reported net revenue growth of +1.3% less its stated 1-point unfavorable currency effect (organic +1.7%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 0.0,
+    "published": "2017-10-05",
+    "source": "P115",
+    "note": "'For each of the 12 and 36 weeks ended September 9, 2017, total servings was even with the prior year.' (Q3 2017 10-Q; 'even' read as 0%, the Q1 2014 rule)"
+   },
+   "inventory_note": "inventories $3,251M at 9/9/17 vs $3,120M at 9/3/16 (the Q3 2016 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,366M vs $7,284M",
+   "op_margin_note": "operating profit $2,993M vs $2,821M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.49,
+   "eps_q_prior": 1.37,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.48)",
+   "diluted_shares_m": 1438,
+   "cash_b": 18.278,
+   "cash_note": "cash and equivalents $10,243M + short-term investments $8,035M",
+   "next_print": "Q4 2017 print (mid-February)",
+   "cash_return_text": "'Dividend payments of approximately $4.5 billion; and' 'Share repurchases of approximately $2 billion.'",
+   "sales_b": 16.24,
+   "sales_pct": 1.3,
+   "gross_margin": 54.64,
+   "gross_margin_bp": 9.1,
+   "op_margin": 18.43,
+   "op_margin_bp": 82.8,
+   "inventory_b": 3.251,
+   "inventory_pct": 4.2,
+   "inventory_gap_pp": 2.9,
+   "sales_note": "net revenue $16,240M vs $16,027M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2017",
+   "fy": 2017,
+   "q": 4,
+   "published": "2018-02-13",
+   "source": "P117",
+   "extra_sources": [
+    "P108"
+   ],
+   "release": "Feb 13",
+   "release_time": "before the open on Feb 13: 8-K accepted 06:04 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2017-12-30",
+   "raw": {
+    "sales_m": 19526,
+    "sales_prior_m": 19515,
+    "cogs_m": 9077,
+    "cogs_prior_m": 8944,
+    "op_m": 2593,
+    "op_prior_m": 2381,
+    "inventory_m": 2947,
+    "inventory_prior_m": 2723
+   },
+   "lc_pct": -1.0,
+   "lc_note": "the release's reported net revenue, even with the prior year ('—%'), less its stated 1-point favorable currency effect; the prior year's 53rd week (3.5 points) stays in, as published (organic +2.3%)",
+   "servings_pct": null,
+   "servings_note": "no filing states total servings for the quarter",
+   "inventory_note": "inventories $2,947M at 12/30/17 vs $2,723M at 12/31/16 (the Q4 2016 release's balance sheet)",
+   "gross_margin_note": "cost of sales $9,077M vs $8,944M",
+   "op_margin_note": "operating profit $2,593M vs $2,381M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": -0.5,
+   "eps_q_prior": 0.97,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.31); a loss with the $2.5 billion provisional net tax expense of the TCJ Act ($1.73 a share)",
+   "diluted_shares_m": 1421,
+   "cash_b": 19.51,
+   "cash_note": "cash and equivalents $10,610M + short-term investments $8,900M",
+   "next_print": "Q1 2018 print (late April)",
+   "cash_return_text": "'Total dividends to shareholders are expected to be approximately $5 billion and share repurchases are expected to be approximately $2 billion.'",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 3.38,
+    "revenue_usd_b": 63.525,
+    "diluted_shares_m": 1438.0,
+    "normalization_note": "FY17 = GAAP $3.38, with the $2.5 billion provisional net tax expense of the TCJ Act ($1.73 a share in the fourth quarter) as published: the company's core $5.23 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 16.54,
+    "op_margin_note": "FY17 operating profit $10,509M / net revenue $63,525M (Q4 2017 release; GAAP)",
+    "pretax_margin": 15.12,
+    "pretax_margin_note": "FY17 income before income taxes $9,602M / $63,525M (Q4 2017 release)",
+    "gross_margin": 54.69,
+    "sales_growth": 1.2,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2017 release",
+    "tax_rate": 0.489,
+    "tax_note": "FY17 effective rate: taxes $4,694M / pre-tax income $9,602M, with the provisional net tax expense of the TCJ Act"
+   },
+   "sales_b": 19.526,
+   "sales_pct": 0.1,
+   "gross_margin": 53.51,
+   "gross_margin_bp": -65.5,
+   "op_margin": 13.28,
+   "op_margin_bp": 107.9,
+   "inventory_b": 2.947,
+   "inventory_pct": 8.2,
+   "inventory_gap_pp": 8.2,
+   "sales_note": "net revenue $19,526M vs $19,515M (16 weeks vs 17)"
+  },
+  {
+   "quarter": "Q1 2018",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-04-26",
+   "source": "P119",
+   "extra_sources": [
+    "P110"
+   ],
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 06:06 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2018-03-24",
+   "raw": {
+    "sales_m": 12562,
+    "sales_prior_m": 12049,
+    "cogs_m": 5655,
+    "cogs_prior_m": 5290,
+    "op_m": 1807,
+    "op_prior_m": 1863,
+    "inventory_m": 3335,
+    "inventory_prior_m": 3282
+   },
+   "lc_pct": 2.3,
+   "lc_note": "the release's reported net revenue growth of +4.3% less its stated 2-point favorable currency effect (organic +2.3%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 1.0,
+    "published": "2018-04-27",
+    "source": "P120",
+    "note": "'For the 12 weeks ended March 24, 2018, total servings increased 1%.' (Q1 2018 10-Q)"
+   },
+   "inventory_note": "inventories $3,335M at 3/24/18 vs $3,282M at 3/25/17 (the Q1 2017 release's balance sheet)",
+   "gross_margin_note": "cost of sales $5,655M vs $5,290M (the prior year as recast in this release for the non-service pension cost)",
+   "op_margin_note": "operating profit $1,807M vs $1,863M (GAAP; the core figures also exclude the mark-to-market net impact; the prior year as recast in this release for the non-service pension cost)",
+   "eps_q": 0.94,
+   "eps_q_prior": 0.91,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $0.96)",
+   "diluted_shares_m": 1430,
+   "cash_b": 20.61,
+   "cash_note": "cash and equivalents $13,443M + short-term investments $7,167M",
+   "next_print": "Q2 2018 print (mid-July)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7 billion. Total dividends to shareholders are expected to be approximately $5 billion and share repurchases are expected to be approximately $2 billion.'",
+   "sales_b": 12.562,
+   "sales_pct": 4.3,
+   "gross_margin": 54.98,
+   "gross_margin_bp": -111.3,
+   "op_margin": 14.38,
+   "op_margin_bp": -107.7,
+   "inventory_b": 3.335,
+   "inventory_pct": 1.6,
+   "inventory_gap_pp": -2.6,
+   "sales_note": "net revenue $12,562M vs $12,049M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2018",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-07-10",
+   "source": "P121",
+   "extra_sources": [
+    "P112"
+   ],
+   "release": "Jul 10",
+   "release_time": "before the open on Jul 10: 8-K accepted 06:05 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2018-06-16",
+   "raw": {
+    "sales_m": 16090,
+    "sales_prior_m": 15710,
+    "cogs_m": 7263,
+    "cogs_prior_m": 7059,
+    "op_m": 3028,
+    "op_prior_m": 2919,
+    "inventory_m": 3491,
+    "inventory_prior_m": 3612
+   },
+   "lc_pct": 1.4,
+   "lc_note": "the release's reported net revenue growth of +2.4% less its stated 1-point favorable currency effect; structural changes (1 point unfavorable) stay in, as published (organic +2.6%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 1.0,
+    "published": "2018-07-11",
+    "source": "P122",
+    "note": "'For each of the 12 and 24 weeks ended June 16, 2018, total servings increased 1%.' (Q2 2018 10-Q)"
+   },
+   "inventory_note": "inventories $3,491M at 6/16/18 vs $3,612M at 6/17/17 (the Q2 2017 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,263M vs $7,059M (the prior year as recast in this release for the non-service pension cost)",
+   "op_margin_note": "operating profit $3,028M vs $2,919M (GAAP; the core figures also exclude the mark-to-market net impact; the prior year as recast in this release for the non-service pension cost)",
+   "eps_q": 1.28,
+   "eps_q_prior": 1.46,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.61); with a provisional transition tax expense of the TCJ Act",
+   "diluted_shares_m": 1426,
+   "cash_b": 18.129,
+   "cash_note": "cash and equivalents $13,858M + short-term investments $4,271M",
+   "next_print": "Q3 2018 print (early October)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7 billion. Total dividends to shareholders are expected to be approximately $5 billion and share repurchases are expected to be approximately $2 billion.'",
+   "sales_b": 16.09,
+   "sales_pct": 2.4,
+   "gross_margin": 54.86,
+   "gross_margin_bp": -20.7,
+   "op_margin": 18.82,
+   "op_margin_bp": 23.9,
+   "inventory_b": 3.491,
+   "inventory_pct": -3.3,
+   "inventory_gap_pp": -5.8,
+   "sales_note": "net revenue $16,090M vs $15,710M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2018",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-10-02",
+   "source": "P123",
+   "extra_sources": [
+    "P114"
+   ],
+   "release": "Oct 2",
+   "release_time": "before the open on Oct 2: 8-K accepted 06:07 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2018-09-08",
+   "raw": {
+    "sales_m": 16485,
+    "sales_prior_m": 16240,
+    "cogs_m": 7527,
+    "cogs_prior_m": 7368,
+    "op_m": 2844,
+    "op_prior_m": 2924,
+    "inventory_m": 3142,
+    "inventory_prior_m": 3251
+   },
+   "lc_pct": 3.5,
+   "lc_note": "the release's reported net revenue growth of +1.5% less its stated 2-point unfavorable currency effect; structural changes (1 point unfavorable) stay in, as published (organic +4.9%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 3.0,
+    "published": "2018-10-03",
+    "source": "P124",
+    "note": "'For the 12 and 36 weeks ended September 8, 2018, total servings increased 3% and 2%, respectively.' (Q3 2018 10-Q)"
+   },
+   "inventory_note": "inventories $3,142M at 9/8/18 vs $3,251M at 9/9/17 (the Q3 2017 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,527M vs $7,368M (the prior year as recast in this release for the non-service pension cost)",
+   "op_margin_note": "operating profit $2,844M vs $2,924M (GAAP; the core figures also exclude the mark-to-market net impact; the prior year as recast in this release for the non-service pension cost)",
+   "eps_q": 1.75,
+   "eps_q_prior": 1.49,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.59); with a non-cash tax benefit",
+   "diluted_shares_m": 1424,
+   "cash_b": 13.898,
+   "cash_note": "cash and equivalents $11,991M + short-term investments $1,907M",
+   "next_print": "Q4 2018 print (mid-February)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7 billion, total dividends to shareholders of approximately $5 billion and share repurchases of approximately $2 billion.'",
+   "sales_b": 16.485,
+   "sales_pct": 1.5,
+   "gross_margin": 54.34,
+   "gross_margin_bp": -29.0,
+   "op_margin": 17.25,
+   "op_margin_bp": -75.3,
+   "inventory_b": 3.142,
+   "inventory_pct": -3.4,
+   "inventory_gap_pp": -4.9,
+   "sales_note": "net revenue $16,485M vs $16,240M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2018",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-02-15",
+   "source": "P125",
+   "extra_sources": [
+    "P117"
+   ],
+   "release": "Feb 15",
+   "release_time": "before the open on Feb 15: 8-K accepted 06:03 ET; conference call at 7:45 a.m. ET",
+   "period_end": "2018-12-29",
+   "raw": {
+    "sales_m": 19524,
+    "sales_prior_m": 19526,
+    "cogs_m": 8936,
+    "cogs_prior_m": 9079,
+    "op_m": 2431,
+    "op_prior_m": 2570,
+    "inventory_m": 3128,
+    "inventory_prior_m": 2947
+   },
+   "lc_pct": 4.0,
+   "lc_note": "the release's reported net revenue, even with the prior year ('—%'), less its stated 4-point unfavorable currency effect; acquisitions and divestitures (1 point unfavorable) stay in, as published (organic +4.6%)",
+   "servings_pct": null,
+   "servings_note": "no filing states total servings for the quarter",
+   "inventory_note": "inventories $3,128M at 12/29/18 vs $2,947M at 12/30/17 (the Q4 2017 release's balance sheet)",
+   "gross_margin_note": "cost of sales $8,936M vs $9,079M (the prior year as recast in this release for the non-service pension cost)",
+   "op_margin_note": "operating profit $2,431M vs $2,570M (GAAP; the core figures also exclude the mark-to-market net impact; the prior year as recast in this release for the non-service pension cost)",
+   "eps_q": 4.83,
+   "eps_q_prior": -0.5,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.49); with net tax benefits of $3.71 a share",
+   "diluted_shares_m": 1420,
+   "cash_b": 8.993,
+   "cash_note": "cash and equivalents $8,721M + short-term investments $272M",
+   "next_print": "Q1 2019 print (late April)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $8 billion, comprised of dividends of approximately $5 billion and share repurchases of approximately $3 billion.'",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 8.78,
+    "revenue_usd_b": 64.661,
+    "diluted_shares_m": 1425.0,
+    "normalization_note": "FY18 = GAAP $8.78, with net tax benefits ($3.71 a share in the fourth quarter) as published: the company's core $5.66 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 15.64,
+    "op_margin_note": "FY18 operating profit $10,110M / net revenue $64,661M (Q4 2018 release; GAAP)",
+    "pretax_margin": 14.21,
+    "pretax_margin_note": "FY18 income before income taxes $9,189M / $64,661M (Q4 2018 release)",
+    "gross_margin": 54.56,
+    "sales_growth": 1.8,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2018 release",
+    "tax_rate": -0.367,
+    "tax_note": "FY18 effective rate: a tax benefit of $3,370M on pre-tax income of $9,189M, with the net tax benefits of the reorganization of its international operations"
+   },
+   "sales_b": 19.524,
+   "sales_pct": 0.0,
+   "gross_margin": 54.23,
+   "gross_margin_bp": 72.8,
+   "op_margin": 12.45,
+   "op_margin_bp": -71.1,
+   "inventory_b": 3.128,
+   "inventory_pct": 6.1,
+   "inventory_gap_pp": 6.2,
+   "sales_note": "net revenue $19,524M vs $19,526M (16 weeks)"
+  },
+  {
+   "quarter": "Q1 2019",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-04-17",
+   "source": "P128",
+   "extra_sources": [
+    "P119"
+   ],
+   "release": "Apr 17",
+   "release_time": "before the open on Apr 17: 8-K accepted 06:05 ET (the 10-Q at 06:03 ET); conference call at 7:45 a.m. ET",
+   "period_end": "2019-03-23",
+   "raw": {
+    "sales_m": 12884,
+    "sales_prior_m": 12562,
+    "cogs_m": 5688,
+    "cogs_prior_m": 5655,
+    "op_m": 2008,
+    "op_prior_m": 1807,
+    "inventory_m": 3554,
+    "inventory_prior_m": 3335
+   },
+   "lc_pct": 5.6,
+   "lc_note": "the release's reported net revenue growth of +2.6% less its stated 3-point unfavorable currency effect (organic +5.2%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 4.0,
+    "published": "2019-04-17",
+    "source": "P127",
+    "note": "'For the 12 weeks ended March 23, 2019, total servings increased 4%.' (Q1 2019 10-Q, filed before the release)"
+   },
+   "inventory_note": "inventories $3,554M at 3/23/19 vs $3,335M at 3/24/18 (the Q1 2018 release's balance sheet)",
+   "gross_margin_note": "cost of sales $5,688M vs $5,655M",
+   "op_margin_note": "operating profit $2,008M vs $1,807M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.0,
+   "eps_q_prior": 0.94,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $0.97)",
+   "diluted_shares_m": 1413,
+   "cash_b": 5.361,
+   "cash_note": "cash and equivalents $5,072M + short-term investments $289M",
+   "next_print": "Q2 2019 print (early July)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $8 billion, comprised of dividends of approximately $5 billion and share repurchases of approximately $3 billion.'",
+   "sales_b": 12.884,
+   "sales_pct": 2.6,
+   "gross_margin": 55.85,
+   "gross_margin_bp": 86.9,
+   "op_margin": 15.59,
+   "op_margin_bp": 120.1,
+   "inventory_b": 3.554,
+   "inventory_pct": 6.6,
+   "inventory_gap_pp": 4.0,
+   "sales_note": "net revenue $12,884M vs $12,562M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2019",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-07-09",
+   "source": "P130",
+   "extra_sources": [
+    "P121"
+   ],
+   "release": "Jul 9",
+   "release_time": "before the open on Jul 9: 8-K accepted 06:12 ET (the 10-Q at 06:07 ET); conference call at 7:45 a.m. ET",
+   "period_end": "2019-06-15",
+   "raw": {
+    "sales_m": 16449,
+    "sales_prior_m": 16090,
+    "cogs_m": 7404,
+    "cogs_prior_m": 7263,
+    "op_m": 2729,
+    "op_prior_m": 3028,
+    "inventory_m": 3988,
+    "inventory_prior_m": 3491
+   },
+   "lc_pct": 5.2,
+   "lc_note": "the release's reported net revenue growth of +2.2% less its stated 3-point unfavorable currency effect; structural changes (1 point favorable) stay in, as published (organic +4.5%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 3.0,
+    "published": "2019-07-09",
+    "source": "P129",
+    "note": "'For the 12 and 24 weeks ended June 15, 2019, total servings increased 3% and 3.5%, respectively.' (Q2 2019 10-Q, filed before the release)"
+   },
+   "inventory_note": "inventories $3,988M at 6/15/19 vs $3,491M at 6/16/18 (the Q2 2018 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,404M vs $7,263M",
+   "op_margin_note": "operating profit $2,729M vs $3,028M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.44,
+   "eps_q_prior": 1.28,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.54)",
+   "diluted_shares_m": 1409,
+   "cash_b": 3.584,
+   "cash_note": "cash and equivalents $3,293M + short-term investments $291M",
+   "next_print": "Q3 2019 print (early October)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $8 billion, comprised of dividends of approximately $5 billion and share repurchases of approximately $3 billion.'",
+   "sales_b": 16.449,
+   "sales_pct": 2.2,
+   "gross_margin": 54.99,
+   "gross_margin_bp": 12.8,
+   "op_margin": 16.59,
+   "op_margin_bp": -222.8,
+   "inventory_b": 3.988,
+   "inventory_pct": 14.2,
+   "inventory_gap_pp": 12.0,
+   "sales_note": "net revenue $16,449M vs $16,090M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2019",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-10-03",
+   "source": "P132",
+   "extra_sources": [
+    "P123"
+   ],
+   "release": "Oct 3",
+   "release_time": "before the open on Oct 3: 8-K accepted 06:08 ET (the 10-Q at 06:03 ET); conference call at 7:45 a.m. ET",
+   "period_end": "2019-09-07",
+   "raw": {
+    "sales_m": 17188,
+    "sales_prior_m": 16485,
+    "cogs_m": 7694,
+    "cogs_prior_m": 7527,
+    "op_m": 2855,
+    "op_prior_m": 2844,
+    "inventory_m": 3667,
+    "inventory_prior_m": 3142
+   },
+   "lc_pct": 5.3,
+   "lc_note": "the release's reported net revenue growth of +4.3% less its stated 1-point unfavorable currency effect; structural changes (1 point favorable) stay in, as published (organic +4.3%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 4.0,
+    "published": "2019-10-03",
+    "source": "P131",
+    "note": "'For the 12 and 36 weeks ended September 7, 2019, total servings increased 4%.' (Q3 2019 10-Q, filed before the release)"
+   },
+   "inventory_note": "inventories $3,667M at 9/7/19 vs $3,142M at 9/8/18 (the Q3 2018 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,694M vs $7,527M",
+   "op_margin_note": "operating profit $2,855M vs $2,844M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.49,
+   "eps_q_prior": 1.75,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.56)",
+   "diluted_shares_m": 1405,
+   "cash_b": 5.781,
+   "cash_note": "cash and equivalents $5,494M + short-term investments $287M",
+   "next_print": "Q4 2019 print (mid-February)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $8 billion, comprised of dividends of approximately $5 billion and share repurchases of approximately $3 billion.'",
+   "sales_b": 17.188,
+   "sales_pct": 4.3,
+   "gross_margin": 55.24,
+   "gross_margin_bp": 89.6,
+   "op_margin": 16.61,
+   "op_margin_bp": -64.2,
+   "inventory_b": 3.667,
+   "inventory_pct": 16.7,
+   "inventory_gap_pp": 12.4,
+   "sales_note": "net revenue $17,188M vs $16,485M (12 weeks)"
+  },
+  {
+   "quarter": "Q4 2019",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-02-13",
+   "source": "P134",
+   "extra_sources": [
+    "P125"
+   ],
+   "release": "Feb 13",
+   "release_time": "before the open on Feb 13: 8-K accepted 06:11 ET (the 10-K at 06:09 ET); conference call at 7:45 a.m. ET",
+   "period_end": "2019-12-28",
+   "raw": {
+    "sales_m": 20640,
+    "sales_prior_m": 19524,
+    "cogs_m": 9346,
+    "cogs_prior_m": 8936,
+    "op_m": 2699,
+    "op_prior_m": 2431,
+    "inventory_m": 3338,
+    "inventory_prior_m": 3128
+   },
+   "lc_pct": 5.7,
+   "lc_note": "the release's reported net revenue growth of +5.7%, with no currency effect stated for the quarter ('—%'); structural changes (1.5 points favorable) stay in, as published (organic +4.3%)",
+   "servings_pct": null,
+   "servings_note": "no filing states total servings for the quarter",
+   "inventory_note": "inventories $3,338M at 12/28/19 vs $3,128M at 12/29/18 (the Q4 2018 release's balance sheet)",
+   "gross_margin_note": "cost of sales $9,346M vs $8,936M",
+   "op_margin_note": "operating profit $2,699M vs $2,431M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.26,
+   "eps_q_prior": 4.83,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.45)",
+   "diluted_shares_m": 1401,
+   "cash_b": 5.738,
+   "cash_note": "cash and equivalents $5,509M + short-term investments $229M",
+   "next_print": "Q1 2020 print (mid-April)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.5 billion, comprised of dividends of $5.5 billion and share repurchases of $2 billion.'",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 5.2,
+    "revenue_usd_b": 67.161,
+    "diluted_shares_m": 1407.0,
+    "normalization_note": "FY19 = GAAP $5.20: the company's core $5.53 also excludes the commodity mark-to-market net impact (the 2008 core rule)",
+    "op_margin": 15.32,
+    "op_margin_note": "FY19 operating profit $10,291M / net revenue $67,161M (Q4 2019 release; GAAP)",
+    "pretax_margin": 13.87,
+    "pretax_margin_note": "FY19 income before income taxes $9,312M / $67,161M (Q4 2019 release)",
+    "gross_margin": 55.13,
+    "sales_growth": 3.9,
+    "servings_pct": null,
+    "servings_note": "not stated in the Q4 2019 release",
+    "tax_rate": 0.21,
+    "tax_note": "FY19 effective rate: taxes $1,959M / pre-tax income $9,312M"
+   },
+   "sales_b": 20.64,
+   "sales_pct": 5.7,
+   "gross_margin": 54.72,
+   "gross_margin_bp": 48.8,
+   "op_margin": 13.08,
+   "op_margin_bp": 62.5,
+   "inventory_b": 3.338,
+   "inventory_pct": 6.7,
+   "inventory_gap_pp": 1.0,
+   "sales_note": "net revenue $20,640M vs $19,524M (16 weeks)"
+  },
+  {
+   "quarter": "Q1 2020",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-04-28",
+   "source": "P136",
+   "extra_sources": [
+    "P128"
+   ],
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 06:06 ET (the 10-Q at 06:03 ET); question-and-answer call at 8:15 a.m. ET",
+   "period_end": "2020-03-21",
+   "raw": {
+    "sales_m": 13881,
+    "sales_prior_m": 12884,
+    "cogs_m": 6127,
+    "cogs_prior_m": 5688,
+    "op_m": 1924,
+    "op_prior_m": 2008,
+    "inventory_m": 3600,
+    "inventory_prior_m": 3554
+   },
+   "lc_pct": 7.7,
+   "lc_note": "the release's reported net revenue growth of +7.7%, with no currency effect stated for the quarter ('—%') (organic +7.9%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 6.0,
+    "published": "2020-04-28",
+    "source": "P135",
+    "note": "'For the 12 weeks ended March 21, 2020, total servings increased 6%, which reflects the impact of the revised guidelines on our prior-year servings.' (Q1 2020 10-Q, filed before the release)"
+   },
+   "inventory_note": "inventories $3,600M at 3/21/20 vs $3,554M at 3/23/19 (the Q1 2019 release's balance sheet)",
+   "gross_margin_note": "cost of sales $6,127M vs $5,688M",
+   "op_margin_note": "operating profit $1,924M vs $2,008M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 0.96,
+   "eps_q_prior": 1.0,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.07)",
+   "diluted_shares_m": 1396,
+   "cash_b": 11.247,
+   "cash_note": "cash and equivalents $11,089M + short-term investments $158M",
+   "next_print": "Q2 2020 print (early July)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.5 billion, comprised of dividends of $5.5 billion and share repurchases of $2 billion.'",
+   "sales_b": 13.881,
+   "sales_pct": 7.7,
+   "gross_margin": 55.86,
+   "gross_margin_bp": 0.8,
+   "op_margin": 13.86,
+   "op_margin_bp": -172.5,
+   "inventory_b": 3.6,
+   "inventory_pct": 1.3,
+   "inventory_gap_pp": -6.4,
+   "sales_note": "net revenue $13,881M vs $12,884M (12 weeks)"
+  },
+  {
+   "quarter": "Q2 2020",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-07-13",
+   "source": "P138",
+   "extra_sources": [
+    "P130"
+   ],
+   "release": "Jul 13",
+   "release_time": "before the open on Jul 13: 8-K accepted 06:05 ET (the 10-Q at 06:03 ET); question-and-answer call at 8:15 a.m. ET",
+   "period_end": "2020-06-13",
+   "raw": {
+    "sales_m": 15945,
+    "sales_prior_m": 16449,
+    "cogs_m": 7088,
+    "cogs_prior_m": 7404,
+    "op_m": 2319,
+    "op_prior_m": 2729,
+    "inventory_m": 4314,
+    "inventory_prior_m": 3988
+   },
+   "lc_pct": 0.9,
+   "lc_note": "the release's reported net revenue performance of -3.1% less its stated 4-point unfavorable currency effect; structural changes (1 point favorable) stay in, as published (organic -0.3%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 1.0,
+    "published": "2020-07-13",
+    "source": "P137",
+    "note": "'For the 12 and 24 weeks ended June 13, 2020, total servings increased 1% and 3.5%, respectively, which reflects the impact of the revised guidelines on our prior-year servings.' (Q2 2020 10-Q, filed before the release)"
+   },
+   "inventory_note": "inventories $4,314M at 6/13/20 vs $3,988M at 6/15/19 (the Q2 2019 release's balance sheet)",
+   "gross_margin_note": "cost of sales $7,088M vs $7,404M",
+   "op_margin_note": "operating profit $2,319M vs $2,729M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.18,
+   "eps_q_prior": 1.44,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.32)",
+   "diluted_shares_m": 1393,
+   "cash_b": 9.123,
+   "cash_note": "cash and equivalents $8,927M + short-term investments $196M",
+   "next_print": "Q3 2020 print (early October)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.5 billion, comprised of dividends of $5.5 billion and share repurchases of $2 billion.'",
+   "sales_b": 15.945,
+   "sales_pct": -3.1,
+   "gross_margin": 55.55,
+   "gross_margin_bp": 55.9,
+   "op_margin": 14.54,
+   "op_margin_bp": -204.7,
+   "inventory_b": 4.314,
+   "inventory_pct": 8.2,
+   "inventory_gap_pp": 11.2,
+   "sales_note": "net revenue $15,945M vs $16,449M (12 weeks)"
+  },
+  {
+   "quarter": "Q3 2020",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-10-01",
+   "source": "P140",
+   "extra_sources": [
+    "P132"
+   ],
+   "release": "Oct 1",
+   "release_time": "after the close on Sep 30: 8-K accepted 17:56 ET (the 10-Q at 17:42 ET), the release dated October 1 and its question-and-answer call at 8:15 a.m. ET that day; dated the next trading day",
+   "period_end": "2020-09-05",
+   "raw": {
+    "sales_m": 18091,
+    "sales_prior_m": 17188,
+    "cogs_m": 8156,
+    "cogs_prior_m": 7694,
+    "op_m": 3011,
+    "op_prior_m": 2855,
+    "inventory_m": 4135,
+    "inventory_prior_m": 3667
+   },
+   "lc_pct": 7.3,
+   "lc_note": "the release's reported net revenue growth of +5.3% less its stated 2-point unfavorable currency effect; structural changes (3 points favorable) stay in, as published (organic +4.2%)",
+   "servings_pct": null,
+   "servings_note": "the release gives snack and beverage volume only, no total servings",
+   "servings_later": {
+    "pct": 13.0,
+    "published": "2020-10-01",
+    "source": "P139",
+    "note": "'For the 12 and 36 weeks ended September 5, 2020, total servings increased 13% and 7%, respectively, primarily reflecting the contributions from our recent acquisitions.' (Q3 2020 10-Q, filed after the close the evening before the release's date)"
+   },
+   "inventory_note": "inventories $4,135M at 9/5/20 vs $3,667M at 9/7/19 (the Q3 2019 release's balance sheet)",
+   "gross_margin_note": "cost of sales $8,156M vs $7,694M",
+   "op_margin_note": "operating profit $3,011M vs $2,855M (GAAP; the core figures also exclude the mark-to-market net impact)",
+   "eps_q": 1.65,
+   "eps_q_prior": 1.49,
+   "eps_note": "GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.66)",
+   "diluted_shares_m": 1390,
+   "cash_b": 9.705,
+   "cash_note": "cash and equivalents $9,094M + short-term investments $611M",
+   "next_print": "Q4 2020 print (mid-February)",
+   "cash_return_text": "'Total cash returns to shareholders of approximately $7.5 billion, comprised of dividends of approximately $5.5 billion and share repurchases of approximately $2 billion.'",
+   "sales_b": 18.091,
+   "sales_pct": 5.3,
+   "gross_margin": 54.92,
+   "gross_margin_bp": -31.9,
+   "op_margin": 16.64,
+   "op_margin_bp": 3.3,
+   "inventory_b": 4.135,
+   "inventory_pct": 12.8,
+   "inventory_gap_pp": 7.5,
+   "sales_note": "net revenue $18,091M vs $17,188M (12 weeks)"
   }
  ],
  "guides": [
@@ -4503,6 +6104,134 @@
    "display": "'2016 core earnings per share of $4.78'",
    "unused": "a core EPS figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
    "published": "2016-09-29"
+  },
+  {
+   "fy": 2017,
+   "source": "P108",
+   "doc": "Q4 2016 release",
+   "display": "'The Company expects 2017 organic revenue growth of at least 3 percent.'; 'The Company expects 2017 core earnings per share of $5.09'",
+   "unused": "organic revenue growth as a one-sided bound, which also removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2017-02-15"
+  },
+  {
+   "fy": 2017,
+   "source": "P110",
+   "doc": "Q1 2017 release",
+   "display": "'Consistent with its previous guidance for 2017, the Company expects core earnings per share of $5.09'",
+   "unused": "a core EPS figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2017-04-26"
+  },
+  {
+   "fy": 2017,
+   "source": "P112",
+   "doc": "Q2 2017 release",
+   "display": "'As a result, the Company now expects core earnings per share of $5.13'",
+   "unused": "a core EPS figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2017-07-11"
+  },
+  {
+   "fy": 2017,
+   "source": "P114",
+   "doc": "Q3 2017 release",
+   "display": "'The Company now expects full-year organic revenue growth to approximate our year-to-date growth rate (previously at least 3 percent).'; 'As a result, the Company now expects core earnings per share of $5.23'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2017-10-04"
+  },
+  {
+   "fy": 2018,
+   "source": "P117",
+   "doc": "Q4 2017 release",
+   "display": "'Full-year organic revenue growth to be at least in line with the 2017 growth rate.'; 'Core earnings per share of $5.70, a 9 percent increase compared to 2017 core earnings per share of $5.23.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2018-02-13"
+  },
+  {
+   "fy": 2018,
+   "source": "P119",
+   "doc": "Q1 2018 release",
+   "display": "'Core earnings per share of $5.70, a 9 percent increase compared to 2017 core earnings per share of $5.23.'",
+   "unused": "a core EPS figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2018-04-26"
+  },
+  {
+   "fy": 2018,
+   "source": "P121",
+   "doc": "Q2 2018 release",
+   "display": "'Core earnings per share of $5.70, a 9 percent increase compared to 2017 core earnings per share of $5.23.'",
+   "unused": "a core EPS figure (the 2008 core rule): no EPS field, so the last full year's EPS stands",
+   "published": "2018-07-10"
+  },
+  {
+   "fy": 2018,
+   "source": "P123",
+   "doc": "Q3 2018 release",
+   "display": "'Full year organic revenue growth to be at least 3 percent.'; 'Core earnings per share of $5.65, an 8 percent increase compared to 2017 core earnings per share of $5.23'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2018-10-02"
+  },
+  {
+   "fy": 2019,
+   "source": "P125",
+   "doc": "Q4 2018 release",
+   "display": "'Full-year organic revenue growth to be 4 percent.'; 'This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands; the long-term targets in the same release (organic revenue growth of 4 to 6 percent, core operating margin expansion of 20 to 30 basis points) are later years' targets on those bases, with no input in the method (the UNP 2018 rule)",
+   "published": "2019-02-15"
+  },
+  {
+   "fy": 2019,
+   "source": "P128",
+   "doc": "Q1 2019 release",
+   "display": "'Full-year organic revenue growth to be 4 percent.'; 'This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2019-04-17"
+  },
+  {
+   "fy": 2019,
+   "source": "P130",
+   "doc": "Q2 2019 release",
+   "display": "'Full-year organic revenue growth to be 4 percent.'; 'This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2019-07-09"
+  },
+  {
+   "fy": 2019,
+   "source": "P132",
+   "doc": "Q3 2019 release",
+   "display": "'The Company now expects to meet or exceed its full-year organic revenue growth target of 4 percent.'; 'This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2019-10-03"
+  },
+  {
+   "fy": 2020,
+   "source": "P134",
+   "doc": "Q4 2019 release",
+   "display": "'Full-year organic revenue growth to be 4 percent.'; 'This assumption and the guidance above imply 2020 core earnings per share of $5.88, a 6 percent increase compared to 2019 core earnings per share of $5.53.'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2020-02-13"
+  },
+  {
+   "fy": 2020,
+   "source": "P136",
+   "doc": "Q1 2020 release",
+   "display": "'Given the uncertainties associated with the magnitude and duration of the COVID-19 pandemic on our business, the Company’s previous financial outlook regarding fiscal year 2020 is no longer applicable.'",
+   "unused": "the withdrawal of an outlook that gave no field (organic revenue growth and a core EPS figure): nothing changes, the last full year's EPS stands",
+   "published": "2020-04-28"
+  },
+  {
+   "fy": 2020,
+   "source": "P138",
+   "doc": "Q2 2020 release",
+   "display": "'As previously disclosed, the Company’s financial outlook regarding fiscal year 2020 is no longer applicable given the continued uncertainties associated with the magnitude and duration of the COVID-19 pandemic on its business.'",
+   "unused": "no outlook (withdrawn with the Q1 2020 release): the last full year's EPS stands",
+   "published": "2020-07-13"
+  },
+  {
+   "fy": 2020,
+   "source": "P140",
+   "doc": "Q3 2020 release",
+   "display": "'Full-year organic revenue growth to be approximately 4 percent;'; 'Full-year core earnings per share of $5.50 compared to 2019 core earnings per share of $5.53;'",
+   "unused": "organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands",
+   "published": "2020-10-01"
   }
  ],
  "dividends": [
@@ -4565,9 +6294,67 @@
    "source": "P103",
    "quarterly": 0.7525,
    "note": "$0.7525 quarterly, first stated as declared in the Q2 2016 release ('Cash dividends declared per common share | 0.7525 | 0.7025'); no 8-K states the declaration, and the increase announced with the Q4 2015 results was an announcement"
+  },
+  {
+   "published": "2017-07-11",
+   "source": "P112",
+   "quarterly": 0.805,
+   "note": "$0.805 quarterly, first stated as declared in the Q2 2017 release ('Cash dividends declared per common share | 0.805 | 0.7525'); no 8-K states the declaration, and the increase announced with the Q4 2016 results was an announcement"
+  },
+  {
+   "published": "2018-07-10",
+   "source": "P121",
+   "quarterly": 0.9275,
+   "note": "$0.9275 quarterly, first stated as declared in the Q2 2018 release ('Cash dividends declared per common share | 0.9275 | 0.805'); no 8-K states the declaration, and the increase announced with the Q4 2017 results was an announcement"
+  },
+  {
+   "published": "2019-07-09",
+   "source": "P129",
+   "quarterly": 0.955,
+   "note": "$0.955 quarterly, first stated as declared in the Q2 2019 10-Q, filed before that morning's release ('Cash dividends declared per common share were $0.955 and $0.9275 for the 12 weeks ended June 15, 2019 and June 16, 2018, respectively'); the releases of 2019 state no dividend per share, no 8-K states the declaration, and the increase announced with the Q4 2018 results was an announcement"
+  },
+  {
+   "published": "2020-07-13",
+   "source": "P137",
+   "quarterly": 1.0225,
+   "note": "$1.0225 quarterly, first stated as declared in the Q2 2020 10-Q, filed before that morning's release ('Cash dividends declared per common share were $1.0225 and $0.955 for the 12 weeks ended June 13, 2020 and June 15, 2019, respectively'); the releases of 2020 state no dividend per share, no 8-K states the declaration, and the increase announced with the Q4 2019 results was an announcement"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "id": "P118",
+   "published": "2018-02-14",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2017 10-K",
+   "risk_quote": "The loss of, or a significant reduction in sales to, any key customer or disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel, could adversely affect our business, financial condition or results of operations.",
+   "risk_short": "'disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel' named as a risk to its business",
+   "offering": "it sells through e-commerce itself: 'Our products are also available on a growing number of e-commerce websites and mobile commerce applications as consumer consumption patterns continue to change and retail increasingly expands online.'",
+   "offering_short": "its products sold on 'a growing number of e-commerce websites'"
+  },
+  {
+   "id": "P126",
+   "published": "2019-02-19",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2018 10-K",
+   "risk_quote": "Disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel, could adversely affect our business, financial condition or results of operations.",
+   "risk_short": "'disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel' named as a risk to its business",
+   "offering": "it sells through e-commerce itself: 'Our products are also available on a growing number of e-commerce websites and mobile commerce applications as consumer consumption patterns continue to change and retail increasingly expands online.'",
+   "offering_short": "its products sold on 'a growing number of e-commerce websites'"
+  },
+  {
+   "id": "P133",
+   "published": "2020-02-13",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2019 10-K",
+   "risk_quote": "Disruption in the retail landscape, including rapid growth in the e-commerce channel and hard discounters, can adversely affect our business, financial condition or results of operations.",
+   "risk_short": "'disruption in the retail landscape, including rapid growth in the e-commerce channel and hard discounters' named as a risk to its business",
+   "offering": "it sells through e-commerce itself: 'Our products are also available and sold directly to consumers on a growing number of company-owned and third-party e-commerce websites and mobile commerce applications.'",
+   "offering_short": "its products sold on 'a growing number of company-owned and third-party e-commerce websites'"
+  }
+ ],
  "company_names": [],
  "splits": [],
  "rule_t": {
@@ -4684,5 +6471,14 @@
     "XBULL": 230
    }
   }
- }
+ },
+ "listings": [
+  {
+   "published": "2017-12-11",
+   "effective": "2017-12-20",
+   "exchange": "Nasdaq",
+   "source": "P116",
+   "note": "'PepsiCo shares are expected to begin trading as a Nasdaq-listed security on December 20, 2017' (8-K of 2017-12-08, ex.99.1)"
+  }
+ ]
 }

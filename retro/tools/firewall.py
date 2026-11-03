@@ -14,7 +14,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
 CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter; PEP: a display-only guide, and total servings that a filing after CUTOFF
-first states on the last print before it, the 'servings_later' rule), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -148,6 +148,8 @@ try:
                       for v in r.get("events", {}).get("splits", {}).values())
         f["splits"] += [{"published": later, "source": last["source"], "effective": d, "ratio": 10, "note": "PLANTED"}
                         for d in days if d > later][:1]
+    if "listings" in f:    # PEP: an exchange change announced and effective after CUTOFF
+        f["listings"].append({"published": later, "effective": later, "exchange": "PLANTED", "source": last["source"], "note": "PLANTED"})
     v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))
     v.update(published=later, why="PLANTED", company="PLANTED")
     v["eps_normalized"] = {**v["eps_normalized"], "2099": 0.01}

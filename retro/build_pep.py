@@ -22,6 +22,9 @@ have 12 weeks and the fourth 16 (17). The method r2 inputs map with the rules de
     (lc_pct: the growth the release states less the currency effect the release or the quarter's 10-Q states, or the growth on
     a constant-currency basis the release states; the reported growth where no filing states the quarter's currency effect),
   - guided margin step: none (no operating-margin guide in numbers); the margin signal uses the latest quarter's change.
+Added for 2017-2020 (retro/README.md, "PEP 2017-2020"; no earlier output changes): the ECOMMERCE watch list from the FY2017 10-K,
+the first whose risk factors name the growth of the e-commerce channel as a risk to PepsiCo's business (text only, the NKE and LOW
+rule), and the exchange from the dated listing facts (the stock moved from the NYSE to Nasdaq on 2017-12-20).
 EPS is diluted EPS from continuing operations, each year from the latest 10-K that reports it, and a company-published figure
 excluding one-offs only replaces it (the ACN rule). PepsiCo's "core" figures from 2008 also exclude the mark-to-market net
 impact on commodity hedges, which recurs in every period and is "subsequently reflected in division results" (a timing basis,
@@ -150,11 +153,14 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a beverage and convenient-food company in 2008-2013 (GLP1 from
-    # 2023-08-08; OFFSHORE is scoped to IT services, ECOMMERCE to physical retail, the others to other industries): any event
-    # needs its encoding decided first
-    events = [e for e in facts["events"] if e["published"] <= as_of]
-    if events:
+    # ECOMMERCE (live from 2015-01-01; e-commerce displaces physical retail, grocery and distribution) goes on the watch list from
+    # the first PepsiCo 10-K whose risk factors name the growth of the e-commerce channel as a risk to its business: the FY2017 10-K
+    # (the FY2014-FY2016 10-Ks name e-commerce only as a channel larger retailers might use). A 10-K's wording (an event with a
+    # 'doc') is replaced by the next 10-K's. No other theme in taxonomy_eras.json is live for a beverage and convenient-food company
+    # to 2020 (GLP1 from 2023-08-08; OFFSHORE is scoped to IT services, the others to other industries): any other event kind needs
+    # its encoding decided first
+    events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
+    if any(e["kind"] != "ecommerce_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the PEP builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
@@ -245,12 +251,27 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text: no disruption theme is live for this business on any date of the period ──
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("Commodity inflation shows up in gross margin first; the bear needs\n"
                 "  servings to fall as pricing rises.")
     theme_summary = "no disruption theme has dated evidence"
+    for e in [e for e in events if e["kind"] == "ecommerce_company_acknowledged"][-1:]:
+        # the NKE and LOW rule: company-acknowledged, no market read, so the watch list; the factor pair nets to zero and the theme
+        # signal stays at 2/4, so only text changes; re-filing needs dated evidence of market pricing
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "ecommerce"
+        watch = [{"theme": "ECOMMERCE", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: PepsiCo's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                             f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED "
+                             "(ECOMMERCE) only if dated evidence shows the market pricing the shift away from physical retail "
+                             "into PepsiCo's own sales specifically.")}]
+        factors = [(f"E-commerce: {e['offering_short']} — PepsiCo sells online through retailers and its own sites", 0.2, 0.10),
+                   (f"Shift to e-commerce ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "E-commerce: net effect on store and direct-store-delivery sales"
+        trigger = "Shoppers leave physical retail faster than PepsiCo's e-commerce sales grow"
+        theme_summary = "e-commerce is live and company-acknowledged; no dated evidence ties the multiple to it"
     cat3 = (f"(3) The outlook — {guides[-1]['doc']}: {guides[-1]['display']} (display only)" if guides else
             f"(3) A {fy_now} outlook — none in scope yet")
     cat4 = (f"(4) Inventories — {latest['inventory_pct']:+.1f}% against net revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
@@ -265,8 +286,11 @@ def build(as_of, facts, raw, spx, engine, out):
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
     company = h["company"]
+    listing = [x for x in facts.get("listings", []) if x["published"] <= as_of and x["effective"] <= as_of]
+    exchange = listing[-1]["exchange"] if listing else "NYSE"
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + srv_ids + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids)
+           + srv_ids + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids
+           + [e["id"] for e in events] + [x["source"] for x in listing])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, PEP and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/PEP/history",
@@ -288,7 +312,7 @@ def build(as_of, facts, raw, spx, engine, out):
 """
 PEP Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
 ──────────────────────────────────────────────────────────────────────
-{company} (NYSE: PEP)  ·  {h["business_line"]}
+{company} ({exchange}: PEP)  ·  {h["business_line"]}
 Generated by retro/build_pep.py from retro/facts/PEP.json: the constants below are the facts public on
 AS_OF; the engine underneath derives every scenario input from them by frozen rules. Do not edit by hand.
 
@@ -311,11 +335,11 @@ PIT_PROFILE = {{
     "risk": 2,
     "why": {R(h["why"])},
     "theme_watch": {R(watch)},
-    "evidence": [],
+    "evidence": {R(list(dict.fromkeys(e["id"] for e in events)))},
 }}
 
 # ── FACTS: market (prices truncated at AS_OF, as traded on each day) ──────────
-CURRENT_PRICE   = {close:.2f}   # USD, NYSE close {as_of}
+CURRENT_PRICE   = {close:.2f}   # USD, {exchange} close {as_of}
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {R(pctl)}   # current-FY P/E over the window below
