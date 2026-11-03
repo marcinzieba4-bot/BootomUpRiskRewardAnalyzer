@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  PEP  ·  PepsiCo, Inc.  ·  $100.68  ·  RETROSPECTIVE as of 2016-03-24
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.18  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2016-03-24; latest print Q4 2015 (Feb 11)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2016E revenues, USD bn  →  FY2018E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2016E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Frito-Lay North America   $    14.9  $  14.9  $  17.0      +0.0      +2.1
+    +1.9% revenues in FY15
+  Quaker Foods North Ameri  $     2.6  $   2.6  $   2.9      +0.0      +0.3
+    -1.0% revenues in FY15
+  North America Beverages   $    20.8  $  20.8  $  23.7      +0.0      +2.9
+    +2.2% revenues in FY15
+  Latin America             $     8.3  $   8.3  $   9.5      +0.0      +1.2
+    -12.7% revenues in FY15
+  Europe Sub-Saharan Afric  $    10.6  $  10.6  $  12.1      +0.0      +1.5
+    -21.6% revenues in FY15
+  Asia, Middle East and No  $     6.4  $   6.4  $   7.3      +0.0      +0.9
+    -3.7% revenues in FY15
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    63.6  $  63.6  $  72.5      +0.0      +8.9
+  FY2016E = FY15 $63.06B × (1 + 1.0%: Q4 2015 net revenue ex-currency, applied to the year (no FY16 revenue guide in numbers)); split pro rata to FY15 net revenue by segment (FY2015 10-K; the segments from the third quarter of 2015)
+  Q4 2015 (Feb 11): revenues $18.59B -6.8% (+1% ex-currency); servings not reported; inventories -13.5%;
+  gross margin 54.91% (+185.2bp); operating margin 12.05% (+187.1bp); EPS $1.17 vs $0.87
+  Volume: servings not reported (no filing states total servings for the quarter (the FY2015 10-K gives +1% for the year)); net revenue -6.8% reported, +1.0% excluding currency (the release's reported net revenue growth of -7% less its stated 8-point unfavorable currency effect; the Venezuela deconsolidation (2 points) stays in, as published (organic +4%)); GAAP; the release's core figure also excludes the commodity mark-to-market net impact, a recurring item (core $1.06)
+  FY16 outlook (Q4 2015 release, display only): 'The Company expects 2016 organic revenue growth of approximately 4 percent, excluding the impact of the 53rd week.'; 'The Company expects 2016 core earnings per share of $4.66' — organic revenue growth, which removes acquisitions, divestitures, currency and the extra week (not the measure the method uses, as for the prints), and a core EPS figure (the 2008 core rule): no field, so the last full year's EPS stands
+
+  FY2016E EPS check:  $63.6B × 11.8% pre-tax × (1−26.1%) ÷ 1.470B  =  $3.77  (FY2016E: no EPS guide in numbers on a usable basis, FY15's $3.67 stands)
+  FY2018E BEAR check: $63.6B × 11.8% ÷ 1.428B  =  $3.88  (scenario $2.71)
+  FY2018E BULL check: $72.5B × 12.2% ÷ 1.428B  =  $4.58  (scenario $3.85)
+  Every 1pp of pre-tax margin ≈ $0.32 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Volume (servings) growth            +3.0%    ≥4.0%    ≥5.0%    ≥7.0%       n/r  ◦ BASE  ██░░
+  Gross margin change               -260.0bp  ≥-130.0bp   ≥0.0bp  ≥150.0bp  +185.2bp  ★ XBULL  ████
+  Net revenue growth                 -26.0%  ≥-10.0%    ≥6.0%   ≥10.0%     -6.8%  ◦ BASE  ██░░
+  Inventory growth less net revenue  +65.0pp  ≤32.0pp  ≤-1.0pp  ≤-17.0pp    -6.6pp  ▲ BULL  ███░
+  Operating margin change           -300.0bp  ≥-130.0bp  ≥40.0bp  ≥230.0bp  +187.1bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $101 + 15% hurdle)
+  SCA adjustment:    -0.01  ·  EPP-distance adj -0.10  →  Adj composite 2.59  →  Gap -1.18  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY15 net revenue -5.4%, servings +1.0% (the FY2015 10-K); Q4 gross margin 54.91% (+185bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.4x FY16E vs a 18.9x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q4 2015 net revenue ex-currency +1% vs a 1.4% 9-yr median  (-0.04 × 20%  =  -0.008)
+    +  Cash and short-term investments $12.01B, FY15 free cash flow $7.91B, dividend $2.81 a year, $5,000M of share repurchases and $4,040M of dividends paid in FY15  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Volume (servings) growth               n/r     +3.0%     n/r  Consumers trade down and buy fewer se…
+  Gross margin change               +185.2bp  -260.0bp  -445.2bp  Commodity costs outrun pricing and pr…
+  Net revenue growth                   -6.8%    -26.0%  -19.2%  Volume and pricing stall together
+  Inventory growth less net revenue    -6.6pp   +65.0pp  +71.6pp  Inventory builds ahead of demand: wri…
+  Operating margin change           +187.1bp  -300.0bp  -487.1bp  Marketing and overhead do not come do…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$52  (model)  /  $42 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: servings are not reported for Q4 2015 (+1.0% in Q3 2015);
+  the bear case needs a volume recession that gross margin (+185.2bp now)
+  and inventories (-6.6pp against revenue) no longer absorb. Commodity inflation shows up in gross margin first; the bear needs
+  servings to fall as pricing rises.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.67  (FY2016E: no EPS guide in numbers on a usable basis, FY15's $3.67 stands)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2006 19.1x, 2007 18.4x, 2008 14.3x, 2009 12.2x, 2010 15.1x, 2011 14.9x, 2012 15.8x, 2013 16.0x, 2014 18.1x, 2015 24.4x, 2016 25.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $59/share
+  Current $101 vs Updated EPP $59:  +71%  ⚠ far above floor — large drawdown room
+  Bear $42 vs Updated EPP $59:  -28%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Volume (servings) growth                     4.0        n/r   BASE floor (not reported now)
+  Gross margin change                       -130.0     -315.2   BASE floor (vs +185 now)
+  Net revenue growth                         -10.0       -3.2   BASE floor (vs -7 now)
+  Inventory growth less net revenue            32.0      +38.6   BASE floor (vs -7 now)
+  Operating margin change                   -130.0     -317.1   BASE floor (vs +187 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.67 × (1+0.4%)² = $3.70
+  At 18x P/E (conservative):  $67/share
+  + Cumul. dividends (2yr):  +$5.79/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $67  (▼34 from $101)
+  Conservative total return:  -28% over 2yr  = -14%/yr
+
+  0.4% EPS growth is what is left once the premium multiple (27.4x)
+  mean-reverts to 18x. Breakeven at 18x needs FY2018E EPS of $5.27,
+  i.e. 19.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $76.48  –  $103.44  (at 90th pct of range)
+  Annual dividend:      $2.81/share  (yield 2.8%)
+  Realized vol (1yr):   15% annualized
+  Beta vs broad market: 0.66
+  1-sigma range (1yr):  $86  –  $116  ($101 ± 15%)
+  2-sigma range (1yr):  $70  –  $131
+  ────────────────────────────────────────────────────────────
+  Bear $42 requires:  ~3.9σ price move  (unusual — requires fundamental break)
+  A beverage and convenient-food company with a 0.7 beta: the stock is +12% off its August
+  low while servings are not reported for Q4 2015 (+1.0% in Q3 2015).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.71  15.6x  $     42     6.0%      1.2%    +4.7pp  EPS -14.1%/yr (worst year FY06-FY15, capped at 0%); P/E to its 10th pct
+  BASE        3.85  18.9x  $     73    20.8%      4.3%   +16.5pp  EPS +2.4%/yr (Q4 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        3.85  21.3x  $     82    61.6%     15.0%   +46.6pp  EPS +2.4%/yr (FY06-FY15 CAGR); P/E holds its 75th pct
+  XBULL       4.47  25.8x  $    115    11.6%     79.5%   -67.8pp  EPS +10.4%/yr (best 2-yr run FY06-FY15); P/E at its 90th pct
+
+  Proxy EV (2yr): $82  /  Market EV: $107  /  Current: $101
+  Conservative EV (2yr, ④): $67 + $5.79 divs = $72 total value
+  Downside (→ Bear $42): 58.3%   Upside (→ Bull $82): -18.6%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $101 the market needs $133 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.59: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +71%    -1.18  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx     +71%    -1.18  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +71%    -1.16  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +71%    -1.18  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +71%    -1.18  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +71%    -0.88  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +44%    -1.18  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +71%    -1.18  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2016 print (mid-April) — revenue against the full-year outlook; servings are not reported for Q4 2015
+  (2) Gross margin — +185.2bp in Q4 2015: pricing against commodity costs, what must hold if volume does not
+  (3) The outlook — Q4 2015 release: 'The Company expects 2016 organic revenue growth of approximately 4 percent, excluding the impact of the 53rd week.'; 'The Company expects 2016 core earnings per share of $4.66' (display only)
+  (4) Inventories — -13.5% against net revenue -6.8% in Q4 2015 (-6.6pp): commodity costs and acquisitions sit in them
+  (5) Capital return at 27x — 'In 2015 we returned more than $9 billion to shareholders in the form of dividends and share repurchases': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $59  |  ADD below ~$62  |  TRIM above $82
+════════════════════════════════════════════════════════════════════════
+
