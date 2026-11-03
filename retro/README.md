@@ -5298,6 +5298,172 @@ Judgement calls that could carry hindsight:
 - the Q2 10-Qs as the first statements of each declared dividend (no class moves);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2021-2023 went; DURABLE (the class label only).
 
+### PEP 2024-2026: GLP-1 on the watch list, a 2026 revenue guide in constant currency, impairments at GAAP, a borderline 2025
+
+```bash
+python3 retro/build_pep.py --weekly 2024-01-01 2026-10-30                   # 148 dates, 2024-01-05 .. 2026-10-30
+for c in 2024-01-01 2024-02-20 2025-01-01 2025-02-20 2026-01-01 2026-02-20 2026-11-01; do python3 retro/tools/firewall.py $c PEP; done
+```
+
+The 33 8-Ks (one an 8-K/A), nine 10-Qs and three 10-Ks filed from January 2024 to October 2026 were listed from EDGAR with their
+acceptance times; every 8-K's items were read for guides, figures and dividend rates, and the twelve releases, the 8-K of 2025-12-08,
+the 10-Qs' dividend notes and the FY2023-FY2025 10-Ks were transcribed by Opus directly, each figure typed and then asserted by script
+against the parsed row of its own filing, and each acceptance time against EDGAR's submissions data. 388 strings were checked word for
+word with `verbatim.py` against their own filings. Thresholds, signals and the engine are unchanged; the builder gained one event kind
+(`glp1_company_acknowledged`, below), which changes no earlier output. "International Beverages Franchise" (first in a PepsiCo filing on
+2025-02-04) and "Asia Pacific Foods" (2025-04-24) join the anachronism list (no earlier model of any ticker contains either; the other
+2025 segment names are older). Decided before any 2024-2026 outcome was computed:
+
+- **Three vintages, three years each.** The FY2023 10-K (accepted 2024-02-08 17:58 ET, dated 2024-02-09), the FY2024 10-K (2025-02-03
+  18:22 ET, dated 2025-02-04) and the FY2025 10-K (2026-02-02 18:07 ET, dated 2026-02-03), each with its income statement's three
+  years, earlier years from the latest 10-K that reported them (the ACN FY21 rule): the histories run 2014-2023, 2015-2024 and
+  2016-2025. First-year diluted shares: 2014's 1,527M (FY2016), 2015's 1,485M (FY2017), 2016's 1,452M (FY2018). Each 10-K came minutes
+  before its Q4 release, so no Q4 print's full year extends a history.
+- **FY2023-FY2025 at GAAP (the 2008 core rule):** $6.56, $6.95 and $6.00; the core figures ($7.62, $8.16, $8.14) also remove the
+  commodity mark-to-market net impact, so none replaces GAAP. GAAP 2023 carries impairment and other charges ($0.68 a share) and the
+  product recall-related impact ($0.07); GAAP 2024 restructuring and impairment charges ($0.41), impairment and other charges ($0.38), an
+  indirect tax impact ($0.16), a pension and retiree medical-related impact ($0.16) and the recall ($0.10); GAAP 2025 impairment and other
+  charges ($1.09, mostly the Rockstar and Be & Cheery brands in Q2 2025), restructuring ($0.58), acquisition and divestiture-related
+  charges ($0.25), pension ($0.14) and tax ($0.08), all as published. Neither distortion test of method r2 is met (GAAP is 86%, 85% and
+  74% of EPS without the listed items). The mark-to-market item itself was only $0.02, -$0.01 and nil a share in these years, so here
+  GAAP and core differ almost only by the one-offs (see the judgement calls). FY2018's tax benefits stay in all three histories: BEAR
+  stays 2019's -40.8% and XBULL 2016-2018's +41.9%/yr on every date.
+- **No EPS guide gives a field.** 2024: "At least 4 percent increase in organic revenue" and core EPS "of at least $8.15", then
+  "Approximately 4 percent" (Q2 2024) and "A low-single-digit increase in organic revenue" (Q3 2024); 2025: low-single-digit organic
+  growth and mid-single-digit core constant currency EPS growth, then core EPS "approximately even" with the implied core declines of 3,
+  1.5 and 0.5 percent. The 8-K of 2025-12-08 (16:34 ET, dated 2025-12-09), which followed "constructive engagement" with Elliott
+  Investment Management, affirms the 2025 outlook (the latest 2025 guide from its date) and gives a preliminary 2026 outlook, a later
+  year (the UNP 2018 rule) that the Q4 2025 release supersedes on the day 2026 becomes current. All are organic or core: display only.
+- **A revenue guide in numbers for 2026** (the first since 2009). From the Q4 2025 release the fiscal 2026 outlook states reported net
+  revenue growth with its currency assumption: "The assumptions and the guidance above imply net revenue growth within a range of 4 to 6
+  percent", with "a foreign exchange translation tailwind of approximately 1 percentage point to benefit reported net revenue" (Q4 2025,
+  Q1 and Q2 2026 releases); the Q3 2026 release's outlook table gives Net Revenue "Approximately +6%" and Foreign Exchange Translation
+  "Approximately +1.5% to net revenue and core EPS growth". Reported growth less the stated currency effect is growth in constant
+  currency with acquisitions and divestitures in, the measure of the prints (the NKE rule), so the guide is a fiscal-year net revenue
+  guide in constant currency (`rev_guide`): 3-5% from 2026-02-03 and 4.5% (a point: the LOW "approximately" rule) from 2026-10-08. As
+  for the 8-K of 2009-12-08, method r2's full-year fallback prefers it to the latest quarter's growth, so it feeds BASE and the growth
+  factor (the LOW rule: a guide that states its growth keeps it). The field existed; no builder change.
+- **Growth excluding currency: reported growth less the stated currency effect** (the NKE rule, as from Q4 2012): +1.0% (Q4 2023: -0.5%
+  against 1.5 points unfavorable; 16 weeks against 17, the prior year's 53rd week's 3 points in, as published), +2.8%, +1.8% and +1.4%
+  (2024: +2.3%, +0.8% and -0.6% against 0.5, 1 and 2 points), +1.8% (Q4 2024: -0.2% against 2), +1.2%, +2.5% and +2.1% (2025: -1.8% and
+  +1.0% against 3 and 1.5 points unfavorable, +2.6% with 0.5 favorable), +3.6% (Q4 2025: +5.6% with 2 favorable), +5.1%, +4.2% and +4.9%
+  (2026). From Q1 2026 the table that opens each release gives net revenue and its change but no currency row; the results discussion
+  states the effect to a decimal ("a 3.4-percentage-point benefit from foreign exchange translation", then 2.2 and 0.7 points), kept as
+  published (the summary table rounds it). Acquisitions and divestitures (1 to 2.5 points net favorable from Q3 2025) stay in, as
+  published (the AVGO rule). Organic growth (+1.2% to +4.5%), which removes them, is not used.
+- **Servings still absent:** no release, 10-Q or 10-K of 2024-2026 states total servings, so the slot stays empty and scores BASE (the
+  AAPL Mac-unit rule, as since Q4 2020).
+- **One-offs in the operating margin, as published:** Q4 2023 against Q4 2022's $1,741M of impairment charges (+313bp), Q4 2024 with
+  $704M of impairment and other charges and a $218M indirect tax impact, Q2 2025 with $1,860M of impairment of intangible assets
+  (-1,012bp), and Q4 2025 and Q2 2026 against those quarters (+402bp, +877bp). GAAP throughout (the 2008 core rule).
+- **Dividends,** the latest declared rate: $1.265 a quarter from the FY2023 10-K ("On February 7, 2024, the Board declared a quarterly
+  dividend of $1.265 per share payable April 1, 2024"), $1.355 from the Q2 2024 10-Q (2024-07-11), $1.4225 from the Q2 2025 10-Q
+  (2025-07-17) and $1.48 from the Q2 2026 10-Q (2026-07-09). The FY2024 and FY2025 10-Ks state only the year's total ("Cash dividends
+  declared per common share were $5.3300", then $5.6225), so those vintages carry the rate in force, dated from the 10-Q that first
+  stated it (`dividend_published`, the NKE FY2021 rule). The increases announced with each Q4 release (to $5.42, $5.69 and $5.92
+  annualized) were announcements (the AAPL 2012 rule).
+- **GLP-1 on the watch list from the FY2023 10-K.** GLP1 (live from 2023-08-08; GLP-1 obesity drugs reduce demand for snacks and
+  beverages) needed a PepsiCo filing that names it ("PEP 2021-2023"). The FY2023 10-K is the first: under "Reduction in future demand for
+  our products would adversely affect our business.", consumer preferences evolve with "diet (whether due to changes in consumer behavior
+  and eating habits, the use of weight-loss drugs or other factors)"; the FY2024 10-K says "increasing use of weight-loss drugs" and the
+  FY2025 10-K "increasing use of weight-loss drugs, such as GLP-1 medications". So GLP1 joins the watch list from 2024-02-09,
+  company-acknowledged, with no market read (the NKE and LOW rule), each 10-K's wording replacing the last. ECOMMERCE keeps the theme
+  signal and factor pair (the ACN CLOUD rule: another live theme with company evidence joins the watch list). No dated evidence ties
+  PepsiCo's own multiple to it, so no date is re-filed: text only (`glp1_company_acknowledged`, a new event kind).
+- **E-commerce stays on the watch list:** the FY2023-FY2025 10-Ks keep the sentence of the FY2021 10-K. **GENAI stays off:** the FY2025
+  10-K adds "use of artificial intelligence shopping agents that autonomously select products that may not be ours" among channel
+  preferences, a channel rather than a substitute for PepsiCo's products, which GENAI's scope does not name (as for AAPL and AVGO).
+- **New segments from 2025.** From Q1 2025 PepsiCo reports six segments: PepsiCo Foods North America (FLNA and QFNA together), PepsiCo
+  Beverages North America, International Beverages Franchise, Europe, Middle East and Africa, Latin America Foods and Asia Pacific Foods.
+  The 8-K of 2025-07-16 recasts the FY2023 segment data and the FY2024 10-K's segment discussion and "does not revise nor restate
+  PepsiCo's previously reported consolidated financial statements": it adds nothing (the ACN 2024-09-30 rule). The FY2024 vintage keeps
+  its 10-K's seven divisions; the FY2025 10-K's six take over from its date.
+- **Calendar.** Every release's 8-K, and its 10-Q or 10-K, was accepted after the close (17:46-19:16 ET) on the evening before the
+  release's date, so each counts from that date (the Q3 2020 rule). The Q4 2023 release fell on Friday 2024-02-09, the week's last trading
+  day; public before that day's open, it meets that day's close (the Q4 2008 and Q4 2018 rule), so that week's date is the release day.
+  The other weeks' dates are the next trading days: 2024-04-24, 2024-07-12, 2024-10-09, 2025-02-05, 2025-04-25, 2025-07-18, 2025-10-10,
+  2026-02-04, 2026-04-17, 2026-07-10 and 2026-10-09.
+- **The last date is 2026-10-30,** the last complete week: the series was built on 2026-11-03 before the open (AVGO ends there too). A
+  rebuild after the close of 2026-11-06 adds the week of 2026-11-02. The newest dates have no two-year outcome yet.
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words ("a leading global beverage and convenient food company with a
+  complementary portfolio of brands, including Lay’s, Doritos, Cheetos, Gatorade, Pepsi-Cola, Mountain Dew, Quaker and SodaStream"; the
+  U.S. liquid refreshment beverage shares of PepsiCo and The Coca-Cola Company were 19% and 20% in 2023, 18% and 21% in 2024, and 16% and
+  20% in 2025).
+- **Adds nothing:** the officer, director and annual-meeting 8-Ks (among them the CFO change and the North America leadership change),
+  the by-law amendment (2024-09-20), the credit agreements (2024-05-24, 2025-05-23, 2026-05-22), the note offerings (2024-02-16 to
+  2026-10-16), the segment recast (2025-07-16), and the 10-Qs beyond their dividends.
+
+Controls: altering one value of each print, vintage, guide (display, and each `rev_guide`), dividend and event published from
+2023-12-01 changes no date before its publication and changes the first weekly date on or after it (41 of 41). No string of any dated
+fact appears in a model dated before it (1,107,006 checks over the 983 PEP models), and no model names a 10-K or 10-Q filed after it
+(9,022 mentions). The firewall at 2024-01-01, 2024-02-20, 2025-01-01, 2025-02-20, 2026-01-01, 2026-02-20 and 2026-11-01 changes no
+model before its cutoff (835, 842, 887, 894, 939, 946 and 983 dates). The 835 dates of 2008-2023 rebuild byte-identical, and all 983
+PEP dates lint clean against the extended anachronism list. Beyond the 148 new entries in the index, the only file shared with other
+tickers that changed is the anachronism list.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH and AVOID on all 52 dates of 2024; a borderline 2025; RICH again in 2026.** Over the 148 dates RICH on 92, CHEAP on 35 and FAIR
+  on 21; AVOID on 92, WATCHLIST on 44 and ACCUMULATE on 12 (2025-04-25 to 2025-07-11). In 2025 CHEAP on 30, FAIR on 17 and RICH on 5,
+  alternating week to week (CHEAP at 18.6-21.7x FY24's $6.95, the 10th-16th percentile, Ratio B 0.93-1.73; FAIR at 21.0-22.2x, the
+  11th-19th, Ratio B 1.33-1.79); in 2026 RICH on 35, CHEAP on 5 and FAIR on 4 (January, and from 2026-09-18). The price state agrees on
+  only 3 to 6 of the 8 robustness variants on the FAIR dates, the tier on 5 to 8 (8 on 59 dates), the valuation verdict on 3 to 8 (8 on
+  5): in 2025 the class is not a call.
+- **EPS anchors on the last full year:** FY22's $6.42 to 2024-02-02 (25.8-26.6x, the 46th-62nd percentile), FY23's $6.56 to 2025-01-31
+  (21.7-27.8x, the 11th-78th, at $142.64-182.19), FY24's $6.95 to 2026-01-30 (18.6-22.2x, the 10th-22nd, at $129.07-154.44) and FY25's
+  $6.00 from 2026-02-04 (21.0-28.3x, the 10th-83rd, at $125.89-169.74): GAAP EPS fell 13.7% with the 2025 impairments, so the multiple
+  rose without the price.
+- **The EPP floor:** 22x on FY22's and FY23's EPS ($141, $144; 23x and $151 on 2024-12-27), 21x on FY24's $6.95 ($146) from
+  2025-02-05, 22x on FY25's $6.00 ($132) from 2026-02-04 and 21x ($126) from 2026-09-18. The price was below the floor on 34 dates
+  (2025-01-10 to 2026-10-02), by up to 11.6% (2025-06-20).
+- **BEAR is -40.8%/yr on every date** ($41-50). **BULL** is the window's EPS CAGR where it beats BASE: +4.9%/yr (2014-2023) from
+  2024-02-09 and +7.4% (2015-2024) from 2025-02-05; floored at BASE before (Q3 2023's +10.0%) and from 2026-02-04 (the 2016-2025 CAGR is
+  +3.6%). **XBULL** is +41.9%/yr (2016-2018) on every date ($368-427). Ratio B was 0.93 to 13.69, never `inf`.
+- **BASE followed the quarter's growth plus the buyback, then the 2026 guide:** +10.0%/yr (Q3 2023) to 2024-02-02, +2.1% (Q4 2023), +3.9%,
+  +2.9% and +2.5% (Q1-Q3 2024), +2.6% (Q4 2024), +2.0%, +3.3% and +2.9% (Q1-Q3 2025), then the fiscal 2026 revenue guide: +4.6% (3-5%,
+  plus 0.6 points of buyback) from 2026-02-04 and +5.1% (4.5%) from 2026-10-09. The buyback shrank to 1.1, 0.8 and 0.6 points a year.
+  The BASE price was $168-203.
+- **The proxy composite** was 2.50 on Q3 and Q4 2023 (Q4: gross margin +91bp, operating margin +313bp at XBULL against the year-ago
+  impairments), 2.15 on Q1 2024, 2.50 on Q2 2024 (gross margin +126bp, operating margin +160bp), 2.20 on Q3 2024, 2.15 on Q4 2024, 2.20 on
+  Q1 2025, 1.85 on Q2 2025 (operating margin -1,012bp at BEAR with the impairment), 1.65 on Q3 2025 (gross margin -184bp and operating
+  margin -170bp at BEAR), 2.50 on Q4 2025 (operating margin +402bp at XBULL against the year-ago charges), 2.30 on Q1 2026 (net revenue
+  +8.5% at BULL), 2.60 on Q2 2026 (operating margin +877bp against the impairment) and 2.35 on Q3 2026. The servings slot scored BASE
+  throughout.
+
+How far each call moves the classes (the 148 dates rebuilt with one encoding changed; no outcome consulted):
+- the core figures for FY23-FY25 in the history ($7.62, $8.16, $8.14) would change 91 classes (RICH to CHEAP on 41, RICH to FAIR on 29,
+  FAIR to CHEAP on 21, from 2024-02-09) and 115 tiers;
+- the core figures for every year of the window (FY14-FY25) would change 63 classes (RICH to CHEAP on 42, FAIR to CHEAP on 21, from
+  2024-12-20) and all 148 tiers (to WATCHLIST, ACCUMULATE or BUY);
+- those and the core EPS guides read as points (FY24 $8.15; FY25 $7.92, $8.04 and $8.12 from the implied declines on $8.16; FY26 $8.63,
+  then $8.38, at the implied midpoints on $8.14) would change 83 classes and all 148 tiers (BUY on 142);
+- the stated organic growth for every print (+1.2% to +4.5%) would change 2 classes (FAIR to RICH on 2025-10-24 and 2025-12-12) and no
+  tier;
+- the fiscal 2026 revenue guide read from the organic figures (2-4%, then about 3%) would change 1 class (FAIR to RICH on 2026-10-16) and
+  1 tier (WATCHLIST to AVOID on 2026-09-25); no 2026 revenue guide at all (the latest quarter's growth) would change no class and 1 tier
+  (AVOID to WATCHLIST on 2026-09-18);
+- the dividends dated from the announcements (2024-02-09, 2025-02-04, 2026-02-03) would change nothing;
+- the empty servings slot scored below BEAR on every print would change 9 classes (FAIR to RICH, 2025-10-10 to 2026-10-16), at XBULL 2
+  classes (RICH to FAIR on 2025-10-17 and 2026-01-30), and no tier either way;
+- each print's operating margin change on the core operating profit of its release (a derived figure, as a test only) would change 3
+  classes (RICH to FAIR on 2025-10-17 and 2026-01-30, FAIR to RICH on 2026-10-16) and no tier;
+- GLP1 off the watch list would change nothing (text only, by construction).
+
+Judgement calls that could carry hindsight:
+- the 2008 core rule, which keeps FY23-FY25 at GAAP with the 2023-2025 impairment and restructuring charges (91 classes and 115 tiers
+  with the core figures; 83 classes and every tier with the core guides as points): by far the call that moves the most in this range.
+  Its premise is that the core figures also remove a recurring timing item, but that item was $0.02, -$0.01 and nil a share in FY23-FY25,
+  so here the rule mostly decides whether the impairments count. It was frozen before PEP was built and is applied as written; whether it
+  should yield when the recurring item is immaterial is a question for a new method version, tested on other tickers;
+- GLP1 on the watch list from the FY2023 10-K, which names "weight-loss drugs" rather than GLP-1 (the FY2025 10-K first names GLP-1
+  medications), and ECOMMERCE keeping the theme slot (text only);
+- the fiscal 2026 net revenue guide read in constant currency, reported growth less the stated currency tailwind, a new reading for PEP
+  (1 class and 1 tier with the organic figures instead; 1 tier without the guide);
+- the empty servings slot scored BASE for a fourth year (9 classes at the BEAR bound, 2 at XBULL: in this borderline range the slot
+  matters at the margin);
+- from Q1 2026 the currency effect from the results discussion's sentence, and the vintages' dividends dated from the Q2 10-Qs (no class
+  moves);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2024-2026 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -5388,6 +5554,10 @@ What the gates enforce:
   there through 2023. GLP1, live from 2023-08-08 and scoped to snacks and beverages, stays off the list: no PepsiCo filing to the Q3 2023
   10-Q names GLP-1 drugs, and the theme's dated evidence is a sector-wide sell-off that names no company, as ECOMMERCE's grocers' sell-off
   of 2017-06-16 left PEP's list empty until its FY2017 10-K; GENAI names none of PepsiCo's products ("PEP 2021-2023").
+  From the FY2023 10-K (2024-02-09), whose risk factors name "the use of weight-loss drugs" among the shifts in diet that can reduce
+  demand for PepsiCo's products ("such as GLP-1 medications" from the FY2025 10-K), PEP also carries GLP1 on the watch list,
+  company-acknowledged, with no market read; the theme signal stays with ECOMMERCE (the ACN CLOUD rule). The FY2025 10-K's "artificial
+  intelligence shopping agents" are a channel, not a substitute for PepsiCo's products, so GENAI stays off ("PEP 2024-2026").
 
 ## Workflow
 
