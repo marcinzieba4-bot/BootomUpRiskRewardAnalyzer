@@ -56,9 +56,11 @@ ENGINE = os.path.join(HERE, "templates", "msft_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "MSFT")
 # the guide fields this builder has an encoding for: 'eps_guide' (a fiscal-year diluted EPS range: the current-FY EPS input),
 # 'q_guide' (the next quarter's ranges: its 'sales_usd_b' against 'prior_sales_b' is BASE and the growth factor), the fiscal-year
-# revenue range (the segment bridge's total, display only) and the operating income ranges (display only). Any other field needs
-# its encoding first
-GUIDE_KEYS = {"fy", "published", "source", "doc", "eps_guide", "rev_guide_usd_b", "op_income_guide_usd_b", "q_guide", "note"}
+# revenue range (the segment bridge's total, display only), the operating income ranges (display only), the fiscal-year operating
+# expense ranges of 2009-2011 ('opex_guide_usd_b', display only) and a withdrawal ('withdrawn' with its 'quote': it voids every earlier
+# guide for its fiscal year, and the no-guide rules apply; the LOW 2020 rule). Any other field needs its encoding first
+GUIDE_KEYS = {"fy", "published", "source", "doc", "eps_guide", "rev_guide_usd_b", "op_income_guide_usd_b", "q_guide", "note",
+              "opex_guide_usd_b", "withdrawn", "quote"}
 Q_GUIDE_KEYS = {"quarter", "sales_usd_b", "op_income_usd_b", "eps", "eps_words", "prior_sales_b", "prior_source", "prior_label"}
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"unearned": (-35, -9, 17, 104), "gross_margin": (-1020, -460, 90, 270), "revenue": (2, 8, 14, 29),
@@ -189,13 +191,20 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year: each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
+    # a withdrawal voids every earlier guide for its year (the Q2 FY09 release: "no longer able to offer quantitative revenue and EPS
+    # guidance for the balance of this fiscal year"): only the guides from the latest withdrawal on count
+    gw = next((i for i in range(len(guides) - 1, -1, -1) if guides[i].get("withdrawn")), None)
+    if gw is not None:
+        guides = guides[gw:]
+    gw = guides[0] if gw is not None else None
     ge = next((g for g in reversed(guides) if "eps_guide" in g), None)
     if ge:                                         # the ACN rule: the midpoint of the latest fiscal-year EPS range
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} guide midpoint (${money(ge['eps_guide'][0])}-{money(ge['eps_guide'][1])}, {ge['doc']})"
-    else:                                          # no range for the year yet: the last full year's EPS stands (rollover rule)
+    else:                                          # no range for the year: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[cur_fy - 1]
-        eps_label = f"{fy_e}: no EPS guide in scope yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+        eps_label = (f"{fy_e}: no EPS guide in numbers" + (f" (the {gw['doc']} withdrew it)" if gw else "") +
+                     f", FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands")
     # a next-quarter guide counts while its quarter is unreported
     qkey = lambda q: (int(q.split("FY")[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"] % 100, nq)
@@ -204,9 +213,12 @@ def build(as_of, facts, raw, spx, engine, out):
         q = gq["q_guide"]
         fwd = [round((v / q["prior_sales_b"] - 1) * 100, 1) for v in q["sales_usd_b"]]
         fwd_label, fwd_short, fwd_period = f"{q['quarter']} revenue guide", f"{q['quarter'][:2]} guide", q["quarter"]
-    else:                                          # no next-quarter revenue guide: the latest quarter's revenue growth
-        fwd = [latest["sales_pct"]] * 2
-        fwd_label, fwd_short, fwd_period = f"no {next_q} revenue guide, {latest['quarter']} revenue", f"{latest['quarter'][:2]} revenue", latest["quarter"]
+    else:                                          # no next-quarter revenue guide: the latest quarter's revenue growth excluding
+        # currency, method r2's local-currency basis (the NKE and PEP rule): the growth the release states less the currency effect
+        # the release or the quarter's 10-Q states, the reported growth where no filing states it (lc_pct; from the Q2 FY09 print)
+        fwd = [latest["lc_pct"]] * 2
+        fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue ex-currency",
+                                            f"{latest['quarter'][:2]} rev ex-FX", latest["quarter"])
     gr = next((g for g in reversed(guides) if "rev_guide_usd_b" in g), None)
     go = next((g for g in reversed(guides) if "op_income_guide_usd_b" in g), None)
     bits = []
@@ -221,7 +233,15 @@ def build(as_of, facts, raw, spx, engine, out):
         bits.append(f"{q['quarter']} ({gq['doc']}): revenue {usd(*q['sales_usd_b'])} ({pct_range(*fwd)} on {q['prior_label']}'s "
                     f"${q['prior_sales_b']:.3f}B), operating income {usd(*q['op_income_usd_b'])}, EPS {eq}"
                     + (f" ({gq['note']})" if gq.get("note") and gq is not ge else ""))
-    guide_text = ("Guide: " + "; ".join(bits) + "; operating income ranges are display only (no margin guide)") if bits else \
+    gx = next((g for g in reversed(guides) if "opex_guide_usd_b" in g), None)
+    if gx:                                         # 2009-2011: operating expense ranges only, display only
+        bits.append(f"{fy_now} operating expenses {usd(*gx['opex_guide_usd_b'])} ({gx['doc']}" + (f"; {gx['note']}" if gx.get("note") else "") + ")")
+    if gw:
+        bits.append(f"no {fy_now} revenue or EPS guide in numbers: the {gw['doc']} withdrew it ('{gw['quote']}')")
+    elif gx and not ge:
+        bits.append(f"no {fy_now} revenue or EPS guide in numbers")
+    guide_text = ("Guide: " + "; ".join(bits) + ("; operating income ranges are display only (no margin guide)" if not gx else
+                                                  "; operating expense ranges are display only (no margin guide)")) if bits else \
                  f"{fy_now}: no guide in scope yet"
     margin_guided = False                          # no operating-margin guide in numbers: no guided step
     fy_margin_base = h["prev_fy_op_margin"]
@@ -265,7 +285,9 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("A demand recession hits PC shipments and consumer sales first; the bear needs\n"
                 "  it to spread to enterprise licensing renewals as well.")
     theme_summary = "no disruption theme has dated evidence"
-    cat3 = (f"(3) The {fy_now} guide — " + bits[0] if ge else f"(3) A {fy_now} guide — none in scope yet")
+    cat3 = (f"(3) The {fy_now} guide — " + bits[0] if ge else
+            f"(3) The {fy_now} guide — operating expenses {usd(*gx['opex_guide_usd_b'])} only ({gx['doc']}); no revenue or EPS guide in numbers"
+            if gx else f"(3) A {fy_now} guide — none in scope yet")
     cat4 = (f"(4) Receivables — {latest['receivables_pct']:+.1f}% against revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['receivables_gap_pp']:+.1f}pp): volume licensing is billed ahead, collected later")
 
@@ -295,7 +317,9 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = f"; {latest['eps_note']}" if latest.get("eps_note") else ""
     billings = (f"Billings: unearned revenue {latest['unearned_pct']:+.1f}% ({latest['unearned_note']}); revenue "
-                f"{latest['sales_pct']:+.1f}% as reported ({latest['sales_note']}); '{latest['fx_note']}'{eps_note}")
+                f"{latest['sales_pct']:+.1f}% as reported ({latest['sales_note']}); "
+                + (f"'{latest['fx_note']}'" if latest["fx_note"] is not None else "no filing states the quarter's currency effect")
+                + (f"; ex-currency {latest['lc_pct']:+.0f}% ({latest['lc_note']})" if not gq else "") + eps_note)
     fy_rev = sum(gr["rev_guide_usd_b"]) / 2 if gr else rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = (f"the {fy_now} revenue guide midpoint ({usd(*gr['rev_guide_usd_b'])}, {gr['doc']})" if gr else
                     f"{fwd_label}, applied to the year (no {fy_now} revenue guide in scope)")
@@ -362,7 +386,7 @@ LATEST          = {R({k: latest.get(k) for k in latest_keys})}
 PREV_UNEARNED   = {R(prev)}
 EPP_TODAY_EPS   = {eps_now}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}
-FWD_GUIDE       = {R(tuple(fwd))}   # {"next-quarter revenue guide, growth on the year-ago quarter" if gq else "no next-quarter revenue guide: the latest quarter's revenue growth"}
+FWD_GUIDE       = {R(tuple(fwd))}   # {"next-quarter revenue guide, growth on the year-ago quarter" if gq else "no next-quarter revenue guide: the latest quarter's revenue growth excluding currency"}
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
 MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step; the signal uses the latest quarter's change

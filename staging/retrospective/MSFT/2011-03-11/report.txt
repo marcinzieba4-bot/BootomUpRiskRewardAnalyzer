@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MSFT  ·  Microsoft Corporation  ·  $25.68  ·  RETROSPECTIVE as of 2011-03-11
+  Signal: ◉ BUY   Ratio B: 0.20x   Adj gap: +0.72  [UNDERVALUED]
+  Point-in-time: 19 sources, latest published 2011-03-11; latest print Q2 FY11 (Jan 27)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2011E revenues, USD bn  →  FY2013E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2011E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Windows & Windows Live D  $    18.9  $  18.9  $  23.1      +0.0      +4.2
+    +21.1% revenues in FY10
+  Server and Tools          $    15.8  $  15.8  $  19.3      +0.0      +3.5
+    +4.2% revenues in FY10
+  Online Services Division  $     2.3  $   2.3  $   2.8      +0.0      +0.5
+    +4.2% revenues in FY10
+  Microsoft Business Divis  $    20.0  $  20.0  $  24.5      +0.0      +4.5
+    +0.2% revenues in FY10
+  Entertainment and Device  $     8.6  $   8.6  $  10.5      +0.0      +1.9
+    +1.0% revenues in FY10
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    65.6  $  65.6  $  80.2      +0.0     +14.6
+  FY2011E = FY10 $62.48B × (1 + 5.0%: no Q3 FY11 revenue guide, Q2 FY11 revenue ex-currency, applied to the year (no FY11 revenue guide in scope)); split pro rata to FY10 revenue by segment (FY2010 10-K)
+  Q2 FY11 (Jan 27): revenues $19.95B +4.9%; unearned revenue $13.42B +7.1%; receivables +15.0%;
+  gross margin 75.78% (-514.9bp); operating margin 40.92% (-383.2bp); EPS $0.77 vs $0.74
+  Billings: unearned revenue +7.1% (unearned revenue $12,063M + $1,354M long-term vs $11,361M + $1,167M a year earlier (the Q2 FY10 release)); revenue +4.9% as reported (revenue $19,953M vs $19,022M, a year-ago quarter that recognized $1.71 billion of deferred revenue (as reported; 15% 'Without the deferred recognition in the prior year')); no filing states the quarter's currency effect; ex-currency +5% (the release's revenue growth of 5%: the release states no currency effect)
+  Guide: FY11 operating expenses $26.9-27.3B (Q2 FY11 release; reaffirmed); no FY11 revenue or EPS guide in numbers; operating expense ranges are display only (no margin guide)
+
+  FY2011E EPS check:  $65.6B × 40.0% pre-tax × (1−25.0%) ÷ 8.570B  =  $2.30  (FY2011E: no EPS guide in numbers, FY10's $2.10 stands)
+  FY2013E BEAR check: $65.6B × 40.0% ÷ 8.147B  =  $2.42  (scenario $1.02)
+  FY2013E BULL check: $80.2B × 40.4% ÷ 8.147B  =  $2.98  (scenario $2.69)
+  Every 1pp of pre-tax margin ≈ $0.06 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Unearned revenue growth            -35.0%   ≥-9.0%   ≥17.0%  ≥104.0%     +7.1%  ◦ BASE  ██░░
+  Gross margin change               -1020.0bp  ≥-460.0bp  ≥90.0bp  ≥270.0bp  -514.9bp  ⚠ BEAR  █░░░
+  Revenue growth                      +2.0%    ≥8.0%   ≥14.0%   ≥29.0%     +4.9%  ⚠ BEAR  █░░░
+  Receivables growth less revenue   +41.0pp  ≤29.0pp  ≤16.0pp  ≤-12.0pp   +10.1pp  ▲ BULL  ███░
+  Operating margin change           -1000.0bp  ≥-510.0bp  ≥-30.0bp  ≥1210.0bp  -383.2bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   1.43 / 4.00  (back-solved from $26 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.15  →  Gap +0.72  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY10 revenue +6.9%, unearned revenue +3.8% (unearned revenue $14,830M at June 30, 2010 vs $14,284M (FY2010 10-K)); Q2 gross margin 75.78% (-515bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.2x FY11E vs a 20.6x 10-yr median (10th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no Q3 FY11 revenue guide, Q2 FY11 revenue ex-currency +5% vs a 12.1% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $41.25B, FY10 free cash flow $22.10B, dividend $0.64 a year, $11,269M of share repurchases and $4,578M of dividends paid in FY10  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Unearned revenue growth              +7.1%    -35.0%  -42.1%  Multi-year licensing renewals slow: b…
+  Gross margin change               -514.9bp  -1020.0bp  -505.1bp  Hardware and services mix dilutes sof…
+  Revenue growth                       +4.9%     +2.0%   -2.9%  PC shipments and IT budgets stall tog…
+  Receivables growth less revenue    +10.1pp   +41.0pp  +30.9pp  Receivables build ahead of revenue: c…
+  Operating margin change           -383.2bp  -1000.0bp  -616.8bp  Operating costs keep growing into a s…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$27  (model)  /  $12 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: unearned revenue went from -5.7% (Q1 FY11) to +7.1% (Q2 FY11);
+  the bear case needs a licensing recession that gross margin (-514.9bp now)
+  and receivables (+10.1pp against revenue) no longer absorb. A demand recession hits PC shipments and consumer sales first; the bear needs
+  it to spread to enterprise licensing renewals as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.10  (FY2011E: no EPS guide in numbers, FY10's $2.10 stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2001 36.3x, 2002 31.0x, 2003 33.0x, 2004 23.7x, 2005 19.1x, 2006 14.9x, 2007 14.9x, 2008 10.8x, 2009 9.4x, 2010 11.0x, 2011 12.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $29/share
+  Current $26 vs Updated EPP $29:  -13%  ✓ BELOW panic floor — deep-value zone
+  Bear $12 vs Updated EPP $29:  -59%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Unearned revenue growth                     -9.0      -16.1   BASE floor (vs +7 now)
+  Gross margin change                       -460.0      +54.9   BASE floor (vs -515 now)
+  Revenue growth                               8.0       +3.1   BASE floor (vs +5 now)
+  Receivables growth less revenue             29.0      +18.9   BASE floor (vs +10 now)
+  Operating margin change                   -510.0     -126.8   BASE floor (vs -383 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.10 × (1+5.5%)² = $2.34
+  At 20x P/E (conservative):  $47/share
+  + Cumul. dividends (2yr):  +$1.32/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $47  (▲21 from $26)
+  Conservative total return:  +87% over 2yr  = +44%/yr
+
+  At 12.2x the multiple is already near its 20x median, so the conservative
+  case is a growth question: breakeven at 20x needs FY2013E EPS of $1.22,
+  i.e. -23.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $22.73  –  $31.58  (at 33th pct of range)
+  Annual dividend:      $0.64/share  (yield 2.5%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.88
+  1-sigma range (1yr):  $20  –  $31  ($26 ± 22%)
+  2-sigma range (1yr):  $15  –  $37
+  ────────────────────────────────────────────────────────────
+  Bear $12 requires:  ~2.5σ price move  (unusual — requires fundamental break)
+  A software company with a 0.9 beta: the stock is +12% off its June
+  low while unearned revenue went from -5.7% (Q1 FY11) to +7.1% (Q2 FY11).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.02  12.2x  $     12    29.4%     58.8%   -29.4pp  EPS -30.4%/yr (worst year FY01-FY10, capped at 0%); P/E to its 10th pct
+  BASE        2.43  20.6x  $     50    52.7%     30.7%   +22.0pp  EPS +7.5%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        2.69  35.4x  $     95    15.1%      8.8%    +6.3pp  EPS +13.2%/yr (FY01-FY10 CAGR); P/E holds its 75th pct
+  XBULL       3.56  51.8x  $    184     2.9%      1.7%    +1.2pp  EPS +30.1%/yr (best 2-yr run FY01-FY10); P/E at its 90th pct
+
+  Proxy EV (2yr): $49  /  Market EV: $34  /  Current: $26
+  Conservative EV (2yr, ④): $47 + $1.32 divs = $48 total value
+  Downside (→ Bear $12): 53.3%   Upside (→ Bull $95): 269.9%   Ratio B 0.20x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $26 the market needs $34 in two years —
+  at or below the BASE case. That is a market composite of 1.43 against a model
+  read of 2.15: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.20x     -13%    +0.72  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.09x     -13%    +1.15  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.47x     -13%    +0.37  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.18x     -13%    +0.75  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.21x     -13%    +0.70  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.20x     -13%    +1.02  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.20x     -28%    +0.72  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.20x     -13%    +0.79  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY11 print (late April) — the next read on unearned revenue (+7.1% now) and the full-year guide
+  (2) Gross margin — -514.9bp in Q2 FY11: software against the hardware and online mix
+  (3) The FY11 guide — operating expenses $26.9-27.3B only (Q2 FY11 release); no revenue or EPS guide in numbers
+  (4) Receivables — +15.0% against revenue +4.9% in Q2 FY11 (+10.1pp): volume licensing is billed ahead, collected later
+  (5) Capital return at 12x — $5,052M of share repurchases and $1,363M of dividends in the quarter: management's own read of the multiple
+  ◉ BUY  |  EPP floor $29  |  ADD below ~$42  |  TRIM above $95
+════════════════════════════════════════════════════════════════════════
+

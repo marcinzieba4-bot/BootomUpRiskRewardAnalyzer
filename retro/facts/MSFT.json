@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for MSFT retrospectives (retro/build_msft.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every Microsoft earnings 8-K of the period was accepted after the close, with the 10-Q minutes apart. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest fiscal-year EPS range for the current year (its midpoint), the latest next-quarter revenue range (as growth on the year-ago quarter's revenue from its own filing), and the latest declared dividend. Microsoft's fiscal year ends on June 30. Values are as reported; a vintage takes each year from the latest 10-K that reports it, per share as published (the February 2003 two-for-one split restates the years published before it: 'eps_published', 'shares_published'), and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release or the 10-Q filed with it ('raw'; the builder re-derives and checks them): the year-ago balance sheet comes from the year-ago quarter's own 10-Q or release, unearned revenue is short- plus long-term, and a comparable operating income replaces GAAP only when the release gives it for both quarters and it excludes only one-offs. Guides start with the Q4 FY07 release (the Q3 FY07 release's preliminary fiscal 2008 range is superseded before any built date). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for MSFT retrospectives (retro/build_msft.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every Microsoft earnings 8-K of the period was accepted after the close, with the 10-Q minutes apart. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest fiscal-year EPS range for the current year (its midpoint), the latest next-quarter revenue range (as growth on the year-ago quarter's revenue from its own filing), and the latest declared dividend. Microsoft's fiscal year ends on June 30. Values are as reported; a vintage takes each year from the latest 10-K that reports it, per share as published (the February 2003 two-for-one split restates the years published before it: 'eps_published', 'shares_published'), and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release or the 10-Q filed with it ('raw'; the builder re-derives and checks them): the year-ago balance sheet comes from the year-ago quarter's own 10-Q or release, unearned revenue is short- plus long-term, and a comparable operating income replaces GAAP only when the release gives it for both quarters and it excludes only one-offs; lc_pct (from the Q2 FY09 print, the first without a next-quarter guide) is the revenue growth the release states less the currency effect the release or the 10-Q filed with it states, the reported growth where none is stated. From the Q2 FY09 release Microsoft gives no revenue or EPS guide in numbers: that release withdraws the fiscal 2009 guide ('withdrawn' voids every earlier guide for its year), and the fiscal 2009-2012 operating expense ranges ('opex_guide_usd_b') are display only. Guides start with the Q4 FY07 release (the Q3 FY07 release's preliminary fiscal 2008 range is superseded before any built date). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "MSFT",
  "sources": {
   "MS1": {
@@ -204,6 +204,153 @@
    "title": "Microsoft Q2 FY03 10-Q",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000103221003000121/d10q.htm",
    "supports": "'On January 16, 2003, the Company’s Board of Directors approved a two-for-one split on Microsoft’s common stock, payable to shareholders of record on January 27, 2003'"
+  },
+  "MS30": {
+   "published": "2009-07-30",
+   "filed": "2009-07-30 06:05 ET (before the open)",
+   "title": "Microsoft FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509158735/d10k.htm",
+   "supports": "five-year summary FY2005-FY2009 (diluted EPS $1.12, $1.20, $1.42, $1.87, $1.62; revenue $39,788M-$58,437M); income statements FY2007-FY2009 (FY2009 diluted shares 8,996M); balance sheets June 30, 2008 and 2009; segment revenue FY2008-FY2009; cash flows; dividends declared ($0.13 on June 10, 2009); risk factors (business model, competition)"
+  },
+  "MS31": {
+   "published": "2010-07-30",
+   "filed": "2010-07-30 11:30 ET (during the session)",
+   "title": "Microsoft FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312510171791/d10k.htm",
+   "supports": "five-year summary FY2006-FY2010 (diluted EPS $1.20, $1.42, $1.87, $1.62, $2.10; revenue $44,282M-$62,484M); income statements FY2008-FY2010 (FY2010 diluted shares 8,927M); balance sheets June 30, 2009 and 2010; segment revenue FY2009-FY2010; cash flows; dividends declared ($0.13 on June 16, 2010); risk factors (cloud-based computing, business models, competition)"
+  },
+  "MS32": {
+   "published": "2011-07-28",
+   "filed": "2011-07-28 14:59 ET (during the session)",
+   "title": "Microsoft FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511200680/d10k.htm",
+   "supports": "five-year summary FY2007-FY2011 (diluted EPS $1.42, $1.87, $1.62, $2.10, $2.69; revenue $51,122M-$69,943M); income statements FY2009-FY2011 (FY2011 diluted shares 8,593M); balance sheets June 30, 2010 and 2011; segment revenue FY2010-FY2011; cash flows; dividends declared ($0.16 on June 15, 2011); risk factors (cloud-based computing, business models, competition)"
+  },
+  "MS33": {
+   "published": "2009-01-22",
+   "filed": "2009-01-22 09:04 ET (before the open)",
+   "title": "Microsoft Q2 FY09 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509009388/dex991.htm",
+   "supports": "Q2 FY09 income statement, balance sheet and cash flows (Q2 FY08 operating income as recast, $6,453M); the withdrawal of the fiscal 2009 revenue and EPS guidance; operating expense guidance for FY2009"
+  },
+  "MS34": {
+   "published": "2009-01-22",
+   "filed": "2009-01-22 09:02 ET (before the open)",
+   "title": "Microsoft Q2 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509009386/d10q.htm",
+   "supports": "currency effect on Q2 FY09 revenue"
+  },
+  "MS35": {
+   "published": "2009-04-24",
+   "filed": "2009-04-23 16:13 ET (after the close)",
+   "title": "Microsoft Q3 FY09 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509085785/dex991.htm",
+   "supports": "Q3 FY09 income statement, balance sheet and cash flows (Q3 FY08 operating income as recast, $4,290M); severance charges and impairments; operating expense guidance for FY2009"
+  },
+  "MS36": {
+   "published": "2009-04-24",
+   "filed": "2009-04-23 16:12 ET (after the close)",
+   "title": "Microsoft Q3 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509085779/d10q.htm",
+   "supports": "currency effect on Q3 FY09 revenue"
+  },
+  "MS37": {
+   "published": "2009-07-24",
+   "filed": "2009-07-23 16:13 ET (after the close)",
+   "title": "Microsoft Q4 FY09 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509154028/dex991.htm",
+   "supports": "Q4 FY09 and FY09 income statements, balance sheets and cash flows (Q4 FY08 operating income as recast, $5,679M); the Windows 7 Upgrade Option deferral; currency effect; operating expense guidance for FY2010"
+  },
+  "MS38": {
+   "published": "2009-10-23",
+   "filed": "2009-10-23 08:32 ET (before the open)",
+   "title": "Microsoft Q1 FY10 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509212453/dex991.htm",
+   "supports": "Q1 FY10 income statement, balance sheet and cash flows; the Windows 7 deferral and the adjusted figures; operating expense guidance for FY2010"
+  },
+  "MS39": {
+   "published": "2009-10-23",
+   "filed": "2009-10-23 08:34 ET (before the open)",
+   "title": "Microsoft Q1 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509212454/d10q.htm",
+   "supports": "currency effect on Q1 FY10 revenue"
+  },
+  "MS40": {
+   "published": "2010-01-29",
+   "filed": "2010-01-28 16:08 ET (after the close)",
+   "title": "Microsoft Q2 FY10 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312510015589/dex991.htm",
+   "supports": "Q2 FY10 income statement, balance sheet and cash flows; the recognition of the Windows 7 deferral and the adjusted figures; operating expense guidance for FY2010"
+  },
+  "MS42": {
+   "published": "2010-04-23",
+   "filed": "2010-04-22 16:16 ET (after the close)",
+   "title": "Microsoft Q3 FY10 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312510090109/dex991.htm",
+   "supports": "Q3 FY10 income statement, balance sheet and cash flows; the Office 2010 Technology Guarantee deferral; operating expense guidance for FY2010"
+  },
+  "MS43": {
+   "published": "2010-07-23",
+   "filed": "2010-07-22 16:19 ET (after the close)",
+   "title": "Microsoft Q4 FY10 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312510163839/dex991.htm",
+   "supports": "Q4 FY10 and FY10 income statements, balance sheets and cash flows; operating expense guidance for FY2011"
+  },
+  "MS44": {
+   "published": "2010-10-29",
+   "filed": "2010-10-28 16:28 ET (after the close)",
+   "title": "Microsoft Q1 FY11 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312510239800/dex991.htm",
+   "supports": "Q1 FY11 income statement, balance sheet and cash flows; growth without the prior year's deferral; operating expense guidance for FY2011"
+  },
+  "MS45": {
+   "published": "2010-10-29",
+   "filed": "2010-10-28 16:36 ET (after the close)",
+   "title": "Microsoft Q1 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312510239825/d10q.htm",
+   "supports": "currency effect on Q1 FY11 revenue; dividend of $0.16 declared on September 21, 2010"
+  },
+  "MS46": {
+   "published": "2011-01-27",
+   "filed": "2011-01-27 15:57 ET (during the session)",
+   "title": "Microsoft Q2 FY11 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511015944/dex991.htm",
+   "supports": "Q2 FY11 income statement, balance sheet and cash flows; growth without the prior year's deferred recognition; operating expense guidance for FY2011"
+  },
+  "MS48": {
+   "published": "2011-04-29",
+   "filed": "2011-04-28 16:06 ET (after the close)",
+   "title": "Microsoft Q3 FY11 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511115162/dex991.htm",
+   "supports": "Q3 FY11 income statement, balance sheet and cash flows; the tax benefit; operating expense guidance for FY2011 and preliminary FY2012"
+  },
+  "MS49": {
+   "published": "2011-04-29",
+   "filed": "2011-04-28 16:09 ET (after the close)",
+   "title": "Microsoft Q3 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511115186/d10q.htm",
+   "supports": "currency effect on Q3 FY11 revenue"
+  },
+  "MS50": {
+   "published": "2011-07-22",
+   "filed": "2011-07-21 16:06 ET (after the close)",
+   "title": "Microsoft Q4 FY11 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511193631/dex991.htm",
+   "supports": "Q4 FY11 and FY11 income statements, balance sheets and cash flows; currency effect; operating expense guidance for FY2012"
+  },
+  "MS51": {
+   "published": "2011-10-21",
+   "filed": "2011-10-20 16:05 ET (after the close)",
+   "title": "Microsoft Q1 FY12 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511276018/d245653dex991.htm",
+   "supports": "Q1 FY12 income statement, balance sheet and cash flows; operating expense guidance for FY2012 including Skype"
+  },
+  "MS52": {
+   "published": "2011-10-21",
+   "filed": "2011-10-20 16:08 ET (after the close)",
+   "title": "Microsoft Q1 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511276022/d230161d10q.htm",
+   "supports": "dividend of $0.20 declared on September 20, 2011"
   }
  },
  "history_vintages": [
@@ -456,6 +603,380 @@
     ]
    ],
    "groups_basis": "FY08 revenue by segment (FY2008 10-K)"
+  },
+  {
+   "published": "2009-07-30",
+   "sources": [
+    "MS30",
+    "MS26",
+    "MS10",
+    "MS9",
+    "MS8",
+    "MS7",
+    "MS5",
+    "MS18",
+    "MS11",
+    "MS12",
+    "MS13"
+   ],
+   "company": "Microsoft Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY09",
+   "why": "Microsoft: 'We generate revenue by developing, manufacturing, licensing, and supporting a wide range of software products and services for many different types of computing devices'; 'Challenges to our business model may reduce our revenues and operating margins': 'Certain “open source” software business models challenge our license-based software model', and 'Another development is the business model under which companies provide content, and software in the form of applications, data, and related services, over the Internet in exchange for revenues primarily from advertising or subscriptions'; 'We face intense competition' (its own FY2009 10-K): a competition and business-model risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2007": "2007-06-30",
+    "2008": "2008-06-30",
+    "2009": "2009-06-30"
+   },
+   "eps_gaap": {
+    "2000": 0.85,
+    "2001": 0.66,
+    "2002": 0.48,
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.2,
+    "2007": 1.42,
+    "2008": 1.87,
+    "2009": 1.62
+   },
+   "eps_normalized": {
+    "2000": 0.85,
+    "2001": 0.69,
+    "2002": 0.48,
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.27,
+    "2007": 1.49,
+    "2008": 1.87,
+    "2009": 1.62
+   },
+   "eps_published": {
+    "2000": "2004-09-02",
+    "2001": "2005-08-26",
+    "2002": "2006-08-28",
+    "2003": "2007-08-06",
+    "2004": "2008-08-01"
+   },
+   "revenue_usd_b": {
+    "2000": 22.956,
+    "2001": 25.296,
+    "2002": 28.365,
+    "2003": 32.187,
+    "2004": 36.835,
+    "2005": 39.788,
+    "2006": 44.282,
+    "2007": 51.122,
+    "2008": 60.42,
+    "2009": 58.437
+   },
+   "diluted_shares_m": {
+    "2000": 5536.0,
+    "2009": 8996.0
+   },
+   "shares_published": {
+    "2000": "2002-09-06"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 34.85,
+   "prev_fy_op_margin_note": "FY09 operating income $20,363M / revenue $58,437M (FY2009 10-K; GAAP)",
+   "prev_fy_pretax_margin": 33.92,
+   "prev_fy_pretax_margin_note": "FY09 income before income taxes $19,821M / $58,437M (FY2009 10-K)",
+   "prev_fy_gross_margin": 79.2,
+   "prev_fy_sales_growth": -3.3,
+   "prev_fy_unearned_pct": -6.6,
+   "prev_fy_unearned_note": "unearned revenue $14,284M at June 30, 2009 vs $15,297M (FY2009 10-K)",
+   "tax_rate": 0.265,
+   "tax_note": "FY09 effective rate: provision $5,252M / income before income taxes $19,821M (FY2009 10-K)",
+   "fcf_b": 15.918,
+   "fcf_label": "FY09",
+   "prev_q_unearned_pct": 1.4,
+   "prev_q_label": "Q3 FY09",
+   "prev_q_source": "MS35",
+   "dividend_annual": 0.52,
+   "dividend_note": "$0.13 quarterly, declared on June 10, 2009 (FY2009 10-K)",
+   "cash_return_text": "$9,353M of share repurchases and $4,468M of dividends paid in FY09",
+   "business_line": "Client, Server and Tools, Online Services Business, Microsoft Business Division and Entertainment and Devices Division",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY2001: $0.69, $0.66 after the SFAS 133 adoption), each year from the latest 10-K that reports it; FY2000-FY2001 without stock-based compensation expense and FY2002 on with it, as published (the FY2004 10-K restated fiscal 2002 and 2003 under SFAS 123: 'The information presented for 2000 and 2001 has not been restated'); a company figure excluding one-offs only replaces it: FY2006 $1.27 and FY2007 $1.49 'as adjusted' (Q4 FY07 release: excluding the Xbox 360 warranty charges, legal charges and tax benefits; GAAP $1.20, $1.42); FY2003 $0.69, FY2004 $0.75 and FY2005 $1.12 stay GAAP (their releases list the per-share effects of stock-based compensation, impairments, legal charges and tax benefits but publish no EPS without them; nothing is derived); no year excluded (the largest listed items, FY2001's $4.80B and FY2002's $4.32B of pre-tax investment impairments, are under each year's net income); FY2008 GAAP $1.87 (no adjusted figure published; the European Commission fine and the tax benefit of the IRS settlement offset) and FY2009 GAAP $1.62 (no figure excluding the severance charges and impairments published)",
+   "groups": [
+    [
+     "Client",
+     14.414,
+     -12.5
+    ],
+    [
+     "Server and Tools",
+     14.135,
+     7.7
+    ],
+    [
+     "Online Services Business",
+     3.088,
+     -3.2
+    ],
+    [
+     "Microsoft Business Division",
+     18.902,
+     -0.2
+    ],
+    [
+     "Entertainment and Devices Division",
+     7.753,
+     -5.6
+    ]
+   ],
+   "groups_basis": "FY09 revenue by segment (FY2009 10-K)"
+  },
+  {
+   "published": "2010-07-30",
+   "sources": [
+    "MS31",
+    "MS30",
+    "MS26",
+    "MS10",
+    "MS9",
+    "MS8",
+    "MS6",
+    "MS18",
+    "MS11",
+    "MS12",
+    "MS13"
+   ],
+   "company": "Microsoft Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY10",
+   "why": "Microsoft: 'We generate revenue by developing, manufacturing, licensing, and supporting a wide range of software products and services for many different types of computing devices'; 'The cloud-based computing model presents execution and competitive risks': 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Challenges to our business models may reduce our revenues or operating margins': 'Certain “open source” software business models challenge our license-based software model'; 'We face intense competition' (its own FY2010 10-K): a competition and business-model risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2008": "2008-06-30",
+    "2009": "2009-06-30",
+    "2010": "2010-06-30"
+   },
+   "eps_gaap": {
+    "2001": 0.66,
+    "2002": 0.48,
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.2,
+    "2007": 1.42,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1
+   },
+   "eps_normalized": {
+    "2001": 0.69,
+    "2002": 0.48,
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.27,
+    "2007": 1.49,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1
+   },
+   "eps_published": {
+    "2001": "2005-08-26",
+    "2002": "2006-08-28",
+    "2003": "2007-08-06",
+    "2004": "2008-08-01",
+    "2005": "2009-07-30"
+   },
+   "revenue_usd_b": {
+    "2001": 25.296,
+    "2002": 28.365,
+    "2003": 32.187,
+    "2004": 36.835,
+    "2005": 39.788,
+    "2006": 44.282,
+    "2007": 51.122,
+    "2008": 60.42,
+    "2009": 58.437,
+    "2010": 62.484
+   },
+   "diluted_shares_m": {
+    "2001": 11148.0,
+    "2010": 8927.0
+   },
+   "shares_published": {
+    "2001": "2003-09-05"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 38.57,
+   "prev_fy_op_margin_note": "FY10 operating income $24,098M / revenue $62,484M (FY2010 10-K; GAAP)",
+   "prev_fy_pretax_margin": 40.03,
+   "prev_fy_pretax_margin_note": "FY10 income before income taxes $25,013M / $62,484M (FY2010 10-K)",
+   "prev_fy_gross_margin": 80.16,
+   "prev_fy_sales_growth": 6.9,
+   "prev_fy_unearned_pct": 3.8,
+   "prev_fy_unearned_note": "unearned revenue $14,830M at June 30, 2010 vs $14,284M (FY2010 10-K)",
+   "tax_rate": 0.25,
+   "tax_note": "FY10 effective rate: provision $6,253M / income before income taxes $25,013M (FY2010 10-K)",
+   "fcf_b": 22.096,
+   "fcf_label": "FY10",
+   "prev_q_unearned_pct": -0.4,
+   "prev_q_label": "Q3 FY10",
+   "prev_q_source": "MS42",
+   "dividend_annual": 0.52,
+   "dividend_note": "$0.13 quarterly, declared on June 16, 2010 (FY2010 10-K)",
+   "cash_return_text": "$11,269M of share repurchases and $4,578M of dividends paid in FY10",
+   "business_line": "Windows & Windows Live Division, Server and Tools, Online Services Division, Microsoft Business Division and Entertainment and Devices Division",
+   "normalization": "diluted EPS before the cumulative effect of accounting changes (FY2001: $0.69, $0.66 after the SFAS 133 adoption), each year from the latest 10-K that reports it; FY2001 without stock-based compensation expense and FY2002 on with it, as published (the FY2004 10-K restated fiscal 2002 and 2003 under SFAS 123: 'The information presented for 2000 and 2001 has not been restated'); a company figure excluding one-offs only replaces it: FY2006 $1.27 and FY2007 $1.49 'as adjusted' (Q4 FY07 release: excluding the Xbox 360 warranty charges, legal charges and tax benefits; GAAP $1.20, $1.42); FY2003 $0.69, FY2004 $0.75 and FY2005 $1.12 stay GAAP (their releases list the per-share effects of stock-based compensation, impairments, legal charges and tax benefits but publish no EPS without them; nothing is derived); no year excluded (the largest listed items, FY2001's $4.80B and FY2002's $4.32B of pre-tax investment impairments, are under each year's net income); FY2008 GAAP $1.87 (no adjusted figure published; the European Commission fine and the tax benefit of the IRS settlement offset) and FY2009 GAAP $1.62 (no figure excluding the severance charges and impairments published); FY2010 GAAP $2.10",
+   "groups": [
+    [
+     "Windows & Windows Live Division",
+     17.788,
+     21.1
+    ],
+    [
+     "Server and Tools",
+     14.878,
+     4.2
+    ],
+    [
+     "Online Services Division",
+     2.198,
+     4.2
+    ],
+    [
+     "Microsoft Business Division",
+     18.909,
+     0.2
+    ],
+    [
+     "Entertainment and Devices Division",
+     8.114,
+     1.0
+    ]
+   ],
+   "groups_basis": "FY10 revenue by segment (FY2010 10-K)"
+  },
+  {
+   "published": "2011-07-28",
+   "sources": [
+    "MS32",
+    "MS31",
+    "MS30",
+    "MS26",
+    "MS10",
+    "MS9",
+    "MS7",
+    "MS18",
+    "MS11",
+    "MS12"
+   ],
+   "company": "Microsoft Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY11",
+   "why": "Microsoft: 'We generate revenue by developing, licensing, and supporting a wide range of software products and services, by designing and selling hardware, and by delivering relevant online advertising to a global customer audience'; 'The cloud-based computing model presents execution and competitive risks': 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Challenges to our business models may reduce our revenue or operating margins': 'Certain “open source” software business models challenge our license-based software model'; 'We face intense competition' (its own FY2011 10-K): a competition and business-model risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2009": "2009-06-30",
+    "2010": "2010-06-30",
+    "2011": "2011-06-30"
+   },
+   "eps_gaap": {
+    "2002": 0.48,
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.2,
+    "2007": 1.42,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.69
+   },
+   "eps_normalized": {
+    "2002": 0.48,
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.27,
+    "2007": 1.49,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.69
+   },
+   "eps_published": {
+    "2002": "2006-08-28",
+    "2003": "2007-08-06",
+    "2004": "2008-08-01",
+    "2005": "2009-07-30",
+    "2006": "2010-07-30"
+   },
+   "revenue_usd_b": {
+    "2002": 28.365,
+    "2003": 32.187,
+    "2004": 36.835,
+    "2005": 39.788,
+    "2006": 44.282,
+    "2007": 51.122,
+    "2008": 60.42,
+    "2009": 58.437,
+    "2010": 62.484,
+    "2011": 69.943
+   },
+   "diluted_shares_m": {
+    "2002": 11106.0,
+    "2011": 8593.0
+   },
+   "shares_published": {
+    "2002": "2004-09-02"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 38.83,
+   "prev_fy_op_margin_note": "FY11 operating income $27,161M / revenue $69,943M (FY2011 10-K; GAAP)",
+   "prev_fy_pretax_margin": 40.13,
+   "prev_fy_pretax_margin_note": "FY11 income before income taxes $28,071M / $69,943M (FY2011 10-K)",
+   "prev_fy_gross_margin": 77.73,
+   "prev_fy_sales_growth": 11.9,
+   "prev_fy_unearned_pct": 15.4,
+   "prev_fy_unearned_note": "unearned revenue $17,120M at June 30, 2011 vs $14,830M (FY2011 10-K)",
+   "tax_rate": 0.175,
+   "tax_note": "FY11 effective rate: provision $4,921M / income before income taxes $28,071M (FY2011 10-K)",
+   "fcf_b": 24.639,
+   "fcf_label": "FY11",
+   "prev_q_unearned_pct": 6.2,
+   "prev_q_label": "Q3 FY11",
+   "prev_q_source": "MS48",
+   "dividend_annual": 0.64,
+   "dividend_note": "$0.16 quarterly, declared on June 15, 2011 (FY2011 10-K)",
+   "cash_return_text": "$11,555M of share repurchases and $5,180M of dividends paid in FY11",
+   "business_line": "Windows & Windows Live Division, Server and Tools, Online Services Division, Microsoft Business Division and Entertainment and Devices Division",
+   "normalization": "diluted EPS, each year from the latest 10-K that reports it, all with stock-based compensation expense; a company figure excluding one-offs only replaces it: FY2006 $1.27 and FY2007 $1.49 'as adjusted' (Q4 FY07 release: excluding the Xbox 360 warranty charges, legal charges and tax benefits; GAAP $1.20, $1.42); FY2003 $0.69, FY2004 $0.75 and FY2005 $1.12 stay GAAP (their releases list the per-share effects of stock-based compensation, impairments, legal charges and tax benefits but publish no EPS without them; nothing is derived); FY2008 GAAP $1.87, FY2009 $1.62, FY2010 $2.10 and FY2011 $2.69 (no adjusted figure published); no year excluded",
+   "groups": [
+    [
+     "Windows & Windows Live Division",
+     18.778,
+     -0.1
+    ],
+    [
+     "Server and Tools",
+     17.107,
+     11.2
+    ],
+    [
+     "Online Services Division",
+     2.528,
+     14.9
+    ],
+    [
+     "Microsoft Business Division",
+     21.986,
+     13.7
+    ],
+    [
+     "Entertainment and Devices Division",
+     8.716,
+     40.0
+    ]
+   ],
+   "groups_basis": "FY11 revenue by segment (FY2011 10-K)"
   }
  ],
  "prints": [
@@ -793,6 +1314,681 @@
    "receivables_b": 9.535,
    "receivables_pct": 6.2,
    "receivables_gap_pp": -3.3
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-01-22",
+   "source": "MS33",
+   "extra_sources": [
+    "MS34",
+    "MS21"
+   ],
+   "release": "Jan 22",
+   "release_time": "before the open on Jan 22: 8-K accepted 09:04 ET, 10-Q 09:02 ET; conference call at 8 a.m. PST (11 a.m. EST)",
+   "period_end": "2008-12-31",
+   "raw": {
+    "sales_m": 16629,
+    "sales_prior_m": 16367,
+    "cogs_m": 3907,
+    "cogs_prior_m": 3543,
+    "op_m": 5939,
+    "op_prior_m": 6453,
+    "ar_m": 10953,
+    "ar_prior_m": 11621,
+    "unearned_m": 13066,
+    "unearned_prior_m": 12178
+   },
+   "sales_note": "revenue $16,629M vs $16,367M",
+   "gross_margin_note": "cost of revenue $3,907M vs $3,543M",
+   "op_margin_note": "operating income $5,939M vs $6,453M, the year-ago quarter as the release shows it after the change in the presentation of foreign currency remeasurement gains and losses ($6,481M as first reported)",
+   "receivables_note": "accounts receivable $10,953M at December 31, 2008 vs $11,621M at December 31, 2007 (the Q2 FY08 release)",
+   "unearned_note": "unearned revenue $11,532M + $1,534M long-term vs $10,221M + $1,957M a year earlier (the Q2 FY08 release)",
+   "lc_pct": 1.0,
+   "lc_note": "the release's revenue growth of 2% less 'Revenue growth included a favorable impact from foreign currency exchange rates of $222 million or one percentage point' (the 10-Q)",
+   "eps_q": 0.47,
+   "eps_q_prior": 0.5,
+   "eps_note": "",
+   "diluted_shares_m": 8914,
+   "cash_b": 20.715,
+   "cash_note": "cash, cash equivalents, and short-term investments $20,715M",
+   "fx_note": "Revenue growth included a favorable impact from foreign currency exchange rates of $222 million or one percentage point",
+   "next_print": "Q3 FY09 print (late April)",
+   "cash_return_text": "$2,820M of share repurchases and $1,157M of dividends in the quarter",
+   "sales_b": 16.629,
+   "sales_pct": 1.6,
+   "gross_margin": 76.5,
+   "gross_margin_bp": -184.8,
+   "op_margin": 35.71,
+   "op_margin_bp": -371.2,
+   "unearned_b": 13.066,
+   "unearned_pct": 7.3,
+   "receivables_b": 10.953,
+   "receivables_pct": -5.7,
+   "receivables_gap_pp": -7.3
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-04-24",
+   "source": "MS35",
+   "extra_sources": [
+    "MS36",
+    "MS23"
+   ],
+   "release": "Apr 23",
+   "release_time": "after the close on Apr 23: 8-K accepted 16:13 ET, 10-Q 16:12 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2009-03-31",
+   "raw": {
+    "sales_m": 13648,
+    "sales_prior_m": 14454,
+    "cogs_m": 2814,
+    "cogs_prior_m": 2514,
+    "op_m": 4438,
+    "op_prior_m": 4290,
+    "ar_m": 9182,
+    "ar_prior_m": 9871,
+    "unearned_m": 12312,
+    "unearned_prior_m": 12139
+   },
+   "sales_note": "revenue $13,648M vs $14,454M",
+   "gross_margin_note": "cost of revenue $2,814M vs $2,514M",
+   "op_margin_note": "operating income $4,438M vs $4,290M, the year-ago quarter as recast for the presentation of foreign currency remeasurement gains and losses ($4,409M as first reported, with the European Commission fine)",
+   "receivables_note": "accounts receivable $9,182M at March 31, 2009 vs $9,871M at March 31, 2008 (the Q3 FY08 release)",
+   "unearned_note": "unearned revenue $10,924M + $1,388M long-term vs $10,385M + $1,754M a year earlier (the Q3 FY08 release)",
+   "lc_pct": -6.0,
+   "lc_note": "the release's revenue decline of 6%: the 10-Q states 'Foreign currency exchange rates did not have a significant impact on revenue'",
+   "eps_q": 0.33,
+   "eps_q_prior": 0.47,
+   "eps_note": "Q3 FY09 EPS $0.33 includes '$290 million of severance charges' and '$420 million of impairments to investments', together $0.06",
+   "diluted_shares_m": 8904,
+   "cash_b": 25.34,
+   "cash_note": "cash, cash equivalents, and short-term investments $25,340M",
+   "fx_note": "Foreign currency exchange rates did not have a significant impact on revenue",
+   "next_print": "Q4 FY09 print (late July)",
+   "cash_return_text": "$18M of share repurchases and $1,155M of dividends in the quarter",
+   "sales_b": 13.648,
+   "sales_pct": -5.6,
+   "gross_margin": 79.38,
+   "gross_margin_bp": -322.5,
+   "op_margin": 32.52,
+   "op_margin_bp": 283.7,
+   "unearned_b": 12.312,
+   "unearned_pct": 1.4,
+   "receivables_b": 9.182,
+   "receivables_pct": -7.0,
+   "receivables_gap_pp": -1.4
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-07-24",
+   "source": "MS37",
+   "extra_sources": [],
+   "release": "Jul 23",
+   "release_time": "after the close on Jul 23: 8-K accepted 16:13 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2009-06-30",
+   "raw": {
+    "sales_m": 13099,
+    "sales_prior_m": 15837,
+    "cogs_m": 2586,
+    "cogs_prior_m": 2866,
+    "op_m": 3987,
+    "op_prior_m": 5679,
+    "ar_m": 11192,
+    "ar_prior_m": 13589,
+    "unearned_m": 14284,
+    "unearned_prior_m": 15297
+   },
+   "sales_note": "revenue $13,099M vs $15,837M, after 'the deferral of $276 million of revenue related to the Windows 7 Upgrade Option program' (revenue recognition: as reported)",
+   "gross_margin_note": "cost of revenue $2,586M vs $2,866M",
+   "op_margin_note": "operating income $3,987M vs $5,679M, the year-ago quarter as recast for the presentation of foreign currency remeasurement gains and losses ($5,684M as first reported)",
+   "receivables_note": "accounts receivable $11,192M at June 30, 2009 vs $13,589M at June 30, 2008",
+   "unearned_note": "unearned revenue $13,003M + $1,281M long-term vs $13,397M + $1,900M a year earlier",
+   "lc_pct": -16.0,
+   "lc_note": "the release's revenue decline of 17% less 'Foreign currency exchange rates accounted for a $219 million or one percentage point decrease in revenue'",
+   "eps_q": 0.34,
+   "eps_q_prior": 0.46,
+   "eps_note": "Q4 FY09 EPS $0.34 after the deferral, which 'reduced earnings per share by $0.02'",
+   "diluted_shares_m": 8928,
+   "cash_b": 31.447,
+   "cash_note": "cash, cash equivalents, and short-term investments $31,447M",
+   "fx_note": "Foreign currency exchange rates accounted for a $219 million or one percentage point decrease in revenue",
+   "next_print": "Q1 FY10 print (late October)",
+   "cash_return_text": "$22M of share repurchases and $1,158M of dividends in the quarter",
+   "sales_b": 13.099,
+   "sales_pct": -17.3,
+   "gross_margin": 80.26,
+   "gross_margin_bp": -164.5,
+   "op_margin": 30.44,
+   "op_margin_bp": -542.2,
+   "unearned_b": 14.284,
+   "unearned_pct": -6.6,
+   "receivables_b": 11.192,
+   "receivables_pct": -17.6,
+   "receivables_gap_pp": -0.4,
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 1.62,
+    "revenue_usd_b": 58.437,
+    "diluted_shares_m": 8996.0,
+    "normalization_note": "FY09 = GAAP $1.62: no figure excluding one-offs published (the releases give the severance charges and impairments as a per-share effect only)",
+    "op_margin": 34.85,
+    "op_margin_note": "FY09 operating income $20,363M / revenue $58,437M (Q4 FY09 release; GAAP)",
+    "pretax_margin": 33.92,
+    "pretax_margin_note": "FY09 income before income taxes $19,821M / $58,437M",
+    "gross_margin": 79.2,
+    "sales_growth": -3.3,
+    "unearned_pct": -6.6,
+    "tax_rate": 0.265,
+    "tax_note": "FY09 effective rate: provision $5,252M / income before income taxes $19,821M"
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2009-10-23",
+   "source": "MS38",
+   "extra_sources": [
+    "MS39",
+    "MS27"
+   ],
+   "release": "Oct 23",
+   "release_time": "before the open on Oct 23: 8-K accepted 08:32 ET, 10-Q 08:34 ET; webcast at 7:30 a.m. PDT (10:30 a.m. EDT)",
+   "period_end": "2009-09-30",
+   "raw": {
+    "sales_m": 12920,
+    "sales_prior_m": 15061,
+    "cogs_m": 2842,
+    "cogs_prior_m": 2848,
+    "op_m": 4482,
+    "op_prior_m": 5999,
+    "ar_m": 8587,
+    "ar_prior_m": 9535,
+    "unearned_m": 14768,
+    "unearned_prior_m": 13477
+   },
+   "sales_note": "revenue $12,920M vs $15,061M after 'the deferral of $1.47 billion of revenue' for the Windows 7 Upgrade Option program and pre-sales (as reported; 'Adding back the deferred revenue, revenue totaled $14.39 billion, a 4% year-over-year decline')",
+   "gross_margin_note": "cost of revenue $2,842M vs $2,848M",
+   "op_margin_note": "operating income $4,482M vs $5,999M",
+   "receivables_note": "accounts receivable $8,587M at September 30, 2009 vs $9,535M at September 30, 2008 (the Q1 FY09 release)",
+   "unearned_note": "unearned revenue $13,567M + $1,201M long-term vs $11,815M + $1,662M a year earlier (the Q1 FY09 release)",
+   "lc_pct": -12.0,
+   "lc_note": "the release's revenue decline of 14% less 'Changes in foreign currency exchange rates accounted for a $233 million or 2 percentage point decrease in revenue' (the 10-Q)",
+   "eps_q": 0.4,
+   "eps_q_prior": 0.48,
+   "eps_note": "Q1 FY10 EPS $0.40 after the deferral's $0.12 ($0.52 with the deferred revenue added back)",
+   "diluted_shares_m": 8983,
+   "cash_b": 36.728,
+   "cash_note": "cash, cash equivalents, and short-term investments $36,728M",
+   "fx_note": "Changes in foreign currency exchange rates accounted for a $233 million or 2 percentage point decrease in revenue",
+   "next_print": "Q2 FY10 print (late January)",
+   "cash_return_text": "$1,540M of share repurchases and $1,157M of dividends in the quarter",
+   "sales_b": 12.92,
+   "sales_pct": -14.2,
+   "gross_margin": 78.0,
+   "gross_margin_bp": -308.7,
+   "op_margin": 34.69,
+   "op_margin_bp": -514.1,
+   "unearned_b": 14.768,
+   "unearned_pct": 9.6,
+   "receivables_b": 8.587,
+   "receivables_pct": -9.9,
+   "receivables_gap_pp": 4.3
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-01-29",
+   "source": "MS40",
+   "extra_sources": [
+    "MS33"
+   ],
+   "release": "Jan 28",
+   "release_time": "after the close on Jan 28: 8-K accepted 16:08 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EST); public before the open of the next trading day",
+   "period_end": "2009-12-31",
+   "raw": {
+    "sales_m": 19022,
+    "sales_prior_m": 16629,
+    "cogs_m": 3628,
+    "cogs_prior_m": 3907,
+    "op_m": 8513,
+    "op_prior_m": 5939,
+    "ar_m": 11196,
+    "ar_prior_m": 10953,
+    "unearned_m": 12528,
+    "unearned_prior_m": 13066
+   },
+   "sales_note": "revenue $19,022M vs $16,629M including 'the recognition of $1.71 billion of deferred revenue' (as reported; 'Adjusting for the deferred revenue recognition, second-quarter revenue totaled $17.31 billion')",
+   "gross_margin_note": "cost of revenue $3,628M vs $3,907M",
+   "op_margin_note": "operating income $8,513M vs $5,939M",
+   "receivables_note": "accounts receivable $11,196M at December 31, 2009 vs $10,953M at December 31, 2008 (the Q2 FY09 release)",
+   "unearned_note": "unearned revenue $11,361M + $1,167M long-term vs $11,532M + $1,534M a year earlier (the Q2 FY09 release)",
+   "lc_pct": 14.0,
+   "lc_note": "the release's revenue growth of 14%: no filing states the quarter's currency effect",
+   "eps_q": 0.74,
+   "eps_q_prior": 0.47,
+   "eps_note": "Q2 FY10 EPS $0.74 includes the recognition's $0.14 ($0.60 adjusted)",
+   "diluted_shares_m": 8951,
+   "cash_b": 36.099,
+   "cash_note": "cash, cash equivalents, and short-term investments $36,099M",
+   "fx_note": null,
+   "next_print": "Q3 FY10 print (late April)",
+   "cash_return_text": "$3,867M of share repurchases and $1,152M of dividends in the quarter",
+   "sales_b": 19.022,
+   "sales_pct": 14.4,
+   "gross_margin": 80.93,
+   "gross_margin_bp": 442.2,
+   "op_margin": 44.75,
+   "op_margin_bp": 903.9,
+   "unearned_b": 12.528,
+   "unearned_pct": -4.1,
+   "receivables_b": 11.196,
+   "receivables_pct": 2.2,
+   "receivables_gap_pp": -12.2
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-04-23",
+   "source": "MS42",
+   "extra_sources": [
+    "MS35"
+   ],
+   "release": "Apr 22",
+   "release_time": "after the close on Apr 22: 8-K accepted 16:16 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2010-03-31",
+   "raw": {
+    "sales_m": 14503,
+    "sales_prior_m": 13648,
+    "cogs_m": 2755,
+    "cogs_prior_m": 2814,
+    "op_m": 5173,
+    "op_prior_m": 4438,
+    "ar_m": 9137,
+    "ar_prior_m": 9182,
+    "unearned_m": 12260,
+    "unearned_prior_m": 12312
+   },
+   "sales_note": "revenue $14,503M vs $13,648M after 'the deferral of $305 million of revenue relating to the Microsoft Office 2010 Technology Guarantee program' (as reported)",
+   "gross_margin_note": "cost of revenue $2,755M vs $2,814M",
+   "op_margin_note": "operating income $5,173M vs $4,438M",
+   "receivables_note": "accounts receivable $9,137M at March 31, 2010 vs $9,182M at March 31, 2009 (the Q3 FY09 release)",
+   "unearned_note": "unearned revenue $11,171M + $1,089M long-term vs $10,924M + $1,388M a year earlier (the Q3 FY09 release)",
+   "lc_pct": 6.0,
+   "lc_note": "the release's revenue growth of 6%: no filing states the quarter's currency effect",
+   "eps_q": 0.45,
+   "eps_q_prior": 0.33,
+   "eps_note": "",
+   "diluted_shares_m": 8876,
+   "cash_b": 39.666,
+   "cash_note": "cash, cash equivalents, and short-term investments $39,666M",
+   "fx_note": null,
+   "next_print": "Q4 FY10 print (late July)",
+   "cash_return_text": "$2,023M of share repurchases and $1,139M of dividends in the quarter",
+   "sales_b": 14.503,
+   "sales_pct": 6.3,
+   "gross_margin": 81.0,
+   "gross_margin_bp": 162.2,
+   "op_margin": 35.67,
+   "op_margin_bp": 315.1,
+   "unearned_b": 12.26,
+   "unearned_pct": -0.4,
+   "receivables_b": 9.137,
+   "receivables_pct": -0.5,
+   "receivables_gap_pp": -6.8
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-07-23",
+   "source": "MS43",
+   "extra_sources": [],
+   "release": "Jul 22",
+   "release_time": "after the close on Jul 22: 8-K accepted 16:19 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2010-06-30",
+   "raw": {
+    "sales_m": 16039,
+    "sales_prior_m": 13099,
+    "cogs_m": 3170,
+    "cogs_prior_m": 2586,
+    "op_m": 5930,
+    "op_prior_m": 3987,
+    "ar_m": 13014,
+    "ar_prior_m": 11192,
+    "unearned_m": 14830,
+    "unearned_prior_m": 14284
+   },
+   "sales_note": "revenue $16,039M vs $13,099M (as reported; the year-ago quarter carries the $276 million Windows 7 deferral)",
+   "gross_margin_note": "cost of revenue $3,170M vs $2,586M",
+   "op_margin_note": "operating income $5,930M vs $3,987M",
+   "receivables_note": "accounts receivable $13,014M at June 30, 2010 vs $11,192M at June 30, 2009",
+   "unearned_note": "unearned revenue $13,652M + $1,178M long-term vs $13,003M + $1,281M a year earlier",
+   "lc_pct": 22.0,
+   "lc_note": "the release's revenue growth of 22%: no filing states the quarter's currency effect on total revenue",
+   "eps_q": 0.51,
+   "eps_q_prior": 0.34,
+   "eps_note": "",
+   "diluted_shares_m": 8821,
+   "cash_b": 36.788,
+   "cash_note": "cash, cash equivalents, and short-term investments $36,788M",
+   "fx_note": null,
+   "next_print": "Q1 FY11 print (late October)",
+   "cash_return_text": "$3,839M of share repurchases and $1,130M of dividends in the quarter",
+   "sales_b": 16.039,
+   "sales_pct": 22.4,
+   "gross_margin": 80.24,
+   "gross_margin_bp": -2.2,
+   "op_margin": 36.97,
+   "op_margin_bp": 653.5,
+   "unearned_b": 14.83,
+   "unearned_pct": 3.8,
+   "receivables_b": 13.014,
+   "receivables_pct": 16.3,
+   "receivables_gap_pp": -6.2,
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 2.1,
+    "revenue_usd_b": 62.484,
+    "diluted_shares_m": 8927.0,
+    "normalization_note": "FY10 = GAAP $2.10: no figure excluding one-offs published",
+    "op_margin": 38.57,
+    "op_margin_note": "FY10 operating income $24,098M / revenue $62,484M (Q4 FY10 release; GAAP)",
+    "pretax_margin": 40.03,
+    "pretax_margin_note": "FY10 income before income taxes $25,013M / $62,484M",
+    "gross_margin": 80.16,
+    "sales_growth": 6.9,
+    "unearned_pct": 3.8,
+    "tax_rate": 0.25,
+    "tax_note": "FY10 effective rate: provision $6,253M / income before income taxes $25,013M"
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2010-10-29",
+   "source": "MS44",
+   "extra_sources": [
+    "MS45",
+    "MS38"
+   ],
+   "release": "Oct 28",
+   "release_time": "after the close on Oct 28: 8-K accepted 16:28 ET, 10-Q 16:36 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2010-09-30",
+   "raw": {
+    "sales_m": 16195,
+    "sales_prior_m": 12920,
+    "cogs_m": 3139,
+    "cogs_prior_m": 2842,
+    "op_m": 7116,
+    "op_prior_m": 4482,
+    "ar_m": 9646,
+    "ar_prior_m": 8587,
+    "unearned_m": 13919,
+    "unearned_prior_m": 14768
+   },
+   "sales_note": "revenue $16,195M vs $12,920M, a year-ago quarter that deferred $1.47 billion (as reported; 'Without the deferral in the prior year, first quarter growth rates for revenue and operating income were 13% and 20%')",
+   "gross_margin_note": "cost of revenue $3,139M vs $2,842M",
+   "op_margin_note": "operating income $7,116M vs $4,482M",
+   "receivables_note": "accounts receivable $9,646M at September 30, 2010 vs $8,587M at September 30, 2009 (the Q1 FY10 release)",
+   "unearned_note": "unearned revenue $12,767M + $1,152M long-term vs $13,567M + $1,201M a year earlier (the Q1 FY10 release)",
+   "lc_pct": 25.0,
+   "lc_note": "the release's revenue growth of 25%: the 10-Q states 'Changes in foreign currency exchange rates had an insignificant impact on revenue'",
+   "eps_q": 0.62,
+   "eps_q_prior": 0.4,
+   "eps_note": "",
+   "diluted_shares_m": 8695,
+   "cash_b": 44.173,
+   "cash_note": "cash, cash equivalents, and short-term investments $44,173M",
+   "fx_note": "Changes in foreign currency exchange rates had an insignificant impact on revenue",
+   "next_print": "Q2 FY11 print (late January)",
+   "cash_return_text": "$4,399M of share repurchases and $1,118M of dividends in the quarter",
+   "sales_b": 16.195,
+   "sales_pct": 25.3,
+   "gross_margin": 80.62,
+   "gross_margin_bp": 261.4,
+   "op_margin": 43.94,
+   "op_margin_bp": 924.9,
+   "unearned_b": 13.919,
+   "unearned_pct": -5.7,
+   "receivables_b": 9.646,
+   "receivables_pct": 12.3,
+   "receivables_gap_pp": -13.0
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-01-27",
+   "source": "MS46",
+   "extra_sources": [
+    "MS40"
+   ],
+   "release": "Jan 27",
+   "release_time": "during the session on Jan 27: 8-K accepted 15:57 ET (the 10-Q at 16:00 ET); webcast at 2:30 p.m. Pacific (5:30 p.m. EST)",
+   "period_end": "2010-12-31",
+   "raw": {
+    "sales_m": 19953,
+    "sales_prior_m": 19022,
+    "cogs_m": 4833,
+    "cogs_prior_m": 3628,
+    "op_m": 8165,
+    "op_prior_m": 8513,
+    "ar_m": 12874,
+    "ar_prior_m": 11196,
+    "unearned_m": 13417,
+    "unearned_prior_m": 12528
+   },
+   "sales_note": "revenue $19,953M vs $19,022M, a year-ago quarter that recognized $1.71 billion of deferred revenue (as reported; 15% 'Without the deferred recognition in the prior year')",
+   "gross_margin_note": "cost of revenue $4,833M vs $3,628M",
+   "op_margin_note": "operating income $8,165M vs $8,513M",
+   "receivables_note": "accounts receivable $12,874M at December 31, 2010 vs $11,196M at December 31, 2009 (the Q2 FY10 release)",
+   "unearned_note": "unearned revenue $12,063M + $1,354M long-term vs $11,361M + $1,167M a year earlier (the Q2 FY10 release)",
+   "lc_pct": 5.0,
+   "lc_note": "the release's revenue growth of 5%: the release states no currency effect",
+   "eps_q": 0.77,
+   "eps_q_prior": 0.74,
+   "eps_note": "",
+   "diluted_shares_m": 8570,
+   "cash_b": 41.252,
+   "cash_note": "cash, cash equivalents, and short-term investments $41,252M",
+   "fx_note": null,
+   "next_print": "Q3 FY11 print (late April)",
+   "cash_return_text": "$5,052M of share repurchases and $1,363M of dividends in the quarter",
+   "sales_b": 19.953,
+   "sales_pct": 4.9,
+   "gross_margin": 75.78,
+   "gross_margin_bp": -514.9,
+   "op_margin": 40.92,
+   "op_margin_bp": -383.2,
+   "unearned_b": 13.417,
+   "unearned_pct": 7.1,
+   "receivables_b": 12.874,
+   "receivables_pct": 15.0,
+   "receivables_gap_pp": 10.1
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-04-29",
+   "source": "MS48",
+   "extra_sources": [
+    "MS49",
+    "MS42"
+   ],
+   "release": "Apr 28",
+   "release_time": "after the close on Apr 28: 8-K accepted 16:06 ET, 10-Q 16:09 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2011-03-31",
+   "raw": {
+    "sales_m": 16428,
+    "sales_prior_m": 14503,
+    "cogs_m": 3897,
+    "cogs_prior_m": 2755,
+    "op_m": 5709,
+    "op_prior_m": 5173,
+    "ar_m": 10033,
+    "ar_prior_m": 9137,
+    "unearned_m": 13019,
+    "unearned_prior_m": 12260
+   },
+   "sales_note": "revenue $16,428M vs $14,503M",
+   "gross_margin_note": "cost of revenue $3,897M vs $2,755M",
+   "op_margin_note": "operating income $5,709M vs $5,173M",
+   "receivables_note": "accounts receivable $10,033M at March 31, 2011 vs $9,137M at March 31, 2010 (the Q3 FY10 release)",
+   "unearned_note": "unearned revenue $11,887M + $1,132M long-term vs $11,171M + $1,089M a year earlier (the Q3 FY10 release)",
+   "lc_pct": 13.0,
+   "lc_note": "the release's revenue growth of 13%: the 10-Q states 'Changes in foreign currency exchange rates had an insignificant impact on revenue'",
+   "eps_q": 0.61,
+   "eps_q_prior": 0.45,
+   "eps_note": "Q3 FY11 EPS $0.61 'included a $0.05 tax benefit'",
+   "diluted_shares_m": 8510,
+   "cash_b": 50.15,
+   "cash_note": "cash, cash equivalents, and short-term investments $50,150M",
+   "fx_note": "Changes in foreign currency exchange rates had an insignificant impact on revenue",
+   "next_print": "Q4 FY11 print (late July)",
+   "cash_return_text": "$848M of share repurchases and $1,349M of dividends in the quarter",
+   "sales_b": 16.428,
+   "sales_pct": 13.3,
+   "gross_margin": 76.28,
+   "gross_margin_bp": -472.6,
+   "op_margin": 34.75,
+   "op_margin_bp": -91.7,
+   "unearned_b": 13.019,
+   "unearned_pct": 6.2,
+   "receivables_b": 10.033,
+   "receivables_pct": 9.8,
+   "receivables_gap_pp": -3.5
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-07-22",
+   "source": "MS50",
+   "extra_sources": [],
+   "release": "Jul 21",
+   "release_time": "after the close on Jul 21: 8-K accepted 16:06 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2011-06-30",
+   "raw": {
+    "sales_m": 17367,
+    "sales_prior_m": 16039,
+    "cogs_m": 3708,
+    "cogs_prior_m": 3170,
+    "op_m": 6171,
+    "op_prior_m": 5930,
+    "ar_m": 14987,
+    "ar_prior_m": 13014,
+    "unearned_m": 17120,
+    "unearned_prior_m": 14830
+   },
+   "sales_note": "revenue $17,367M vs $16,039M",
+   "gross_margin_note": "cost of revenue $3,708M vs $3,170M",
+   "op_margin_note": "operating income $6,171M vs $5,930M",
+   "receivables_note": "accounts receivable $14,987M at June 30, 2011 vs $13,014M at June 30, 2010",
+   "unearned_note": "unearned revenue $15,722M + $1,398M long-term vs $13,652M + $1,178M a year earlier",
+   "lc_pct": 8.0,
+   "lc_note": "the release's revenue growth of 8%: it states 'Changes in foreign currency exchange rates had an insignificant impact on revenue'",
+   "eps_q": 0.69,
+   "eps_q_prior": 0.51,
+   "eps_note": "",
+   "diluted_shares_m": 8521,
+   "cash_b": 52.772,
+   "cash_note": "cash, cash equivalents, and short-term investments $52,772M",
+   "fx_note": "Changes in foreign currency exchange rates had an insignificant impact on revenue",
+   "next_print": "Q1 FY12 print (late October)",
+   "cash_return_text": "$1,256M of share repurchases and $1,350M of dividends in the quarter",
+   "sales_b": 17.367,
+   "sales_pct": 8.3,
+   "gross_margin": 78.65,
+   "gross_margin_bp": -158.7,
+   "op_margin": 35.53,
+   "op_margin_bp": -143.9,
+   "unearned_b": 17.12,
+   "unearned_pct": 15.4,
+   "receivables_b": 14.987,
+   "receivables_pct": 15.2,
+   "receivables_gap_pp": 6.9,
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 2.69,
+    "revenue_usd_b": 69.943,
+    "diluted_shares_m": 8593.0,
+    "normalization_note": "FY11 = GAAP $2.69: no figure excluding one-offs published (Q3 FY11 states its $0.05 tax benefit only)",
+    "op_margin": 38.83,
+    "op_margin_note": "FY11 operating income $27,161M / revenue $69,943M (Q4 FY11 release; GAAP)",
+    "pretax_margin": 40.13,
+    "pretax_margin_note": "FY11 income before income taxes $28,071M / $69,943M",
+    "gross_margin": 77.73,
+    "sales_growth": 11.9,
+    "unearned_pct": 15.4,
+    "tax_rate": 0.175,
+    "tax_note": "FY11 effective rate: provision $4,921M / income before income taxes $28,071M"
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2011-10-21",
+   "source": "MS51",
+   "extra_sources": [
+    "MS52",
+    "MS44"
+   ],
+   "release": "Oct 20",
+   "release_time": "after the close on Oct 20: 8-K accepted 16:05 ET, 10-Q 16:08 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2011-09-30",
+   "raw": {
+    "sales_m": 17372,
+    "sales_prior_m": 16195,
+    "cogs_m": 3777,
+    "cogs_prior_m": 3139,
+    "op_m": 7203,
+    "op_prior_m": 7116,
+    "ar_m": 10153,
+    "ar_prior_m": 9646,
+    "unearned_m": 15658,
+    "unearned_prior_m": 13919
+   },
+   "sales_note": "revenue $17,372M vs $16,195M",
+   "gross_margin_note": "cost of revenue $3,777M vs $3,139M",
+   "op_margin_note": "operating income $7,203M vs $7,116M",
+   "receivables_note": "accounts receivable $10,153M at September 30, 2011 vs $9,646M at September 30, 2010 (the Q1 FY11 release)",
+   "unearned_note": "unearned revenue $14,345M + $1,313M long-term vs $12,767M + $1,152M a year earlier (the Q1 FY11 release)",
+   "lc_pct": 7.0,
+   "lc_note": "the release's revenue growth of 7%: no filing states the quarter's currency effect",
+   "eps_q": 0.68,
+   "eps_q_prior": 0.62,
+   "eps_note": "",
+   "diluted_shares_m": 8490,
+   "cash_b": 57.403,
+   "cash_note": "cash, cash equivalents, and short-term investments $57,403M",
+   "fx_note": null,
+   "next_print": "Q2 FY12 print (late January)",
+   "cash_return_text": "$1,934M of share repurchases and $1,341M of dividends in the quarter",
+   "sales_b": 17.372,
+   "sales_pct": 7.3,
+   "gross_margin": 78.26,
+   "gross_margin_bp": -235.9,
+   "op_margin": 41.46,
+   "op_margin_bp": -247.6,
+   "unearned_b": 15.658,
+   "unearned_pct": 12.5,
+   "receivables_b": 10.153,
+   "receivables_pct": 5.3,
+   "receivables_gap_pp": -2.0
   }
  ],
  "guides": [
@@ -1023,6 +2219,147 @@
     "prior_source": "MS21",
     "prior_label": "Q2 FY08"
    }
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-22",
+   "source": "MS33",
+   "doc": "Q2 FY09 release",
+   "opex_guide_usd_b": [
+    27.4,
+    27.4
+   ],
+   "note": "'approximately $27.4 billion'",
+   "withdrawn": true,
+   "quote": "Due to the volatility of market conditions going forward, Microsoft is no longer able to offer quantitative revenue and EPS guidance for the balance of this fiscal year."
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-24",
+   "source": "MS35",
+   "doc": "Q3 FY09 release",
+   "opex_guide_usd_b": [
+    26.7,
+    26.9
+   ],
+   "note": "'including severance charges'"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-07-24",
+   "source": "MS37",
+   "doc": "Q4 FY09 release",
+   "opex_guide_usd_b": [
+    26.6,
+    27.0
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-23",
+   "source": "MS38",
+   "doc": "Q1 FY10 release",
+   "opex_guide_usd_b": [
+    26.2,
+    26.5
+   ],
+   "note": "'reducing operating expense guidance'"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-29",
+   "source": "MS40",
+   "doc": "Q2 FY10 release",
+   "opex_guide_usd_b": [
+    26.2,
+    26.5
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-23",
+   "source": "MS42",
+   "doc": "Q3 FY10 release",
+   "opex_guide_usd_b": [
+    26.1,
+    26.3
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-07-23",
+   "source": "MS43",
+   "doc": "Q4 FY10 release",
+   "opex_guide_usd_b": [
+    26.9,
+    27.3
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-10-29",
+   "source": "MS44",
+   "doc": "Q1 FY11 release",
+   "opex_guide_usd_b": [
+    26.9,
+    27.3
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-01-27",
+   "source": "MS46",
+   "doc": "Q2 FY11 release",
+   "opex_guide_usd_b": [
+    26.9,
+    27.3
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-29",
+   "source": "MS48",
+   "doc": "Q3 FY11 release",
+   "opex_guide_usd_b": [
+    26.9,
+    27.3
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-04-29",
+   "source": "MS48",
+   "doc": "Q3 FY11 release (preliminary)",
+   "opex_guide_usd_b": [
+    28.0,
+    28.6
+   ],
+   "note": "'3% to 5% growth from the mid-point of fiscal year 2011 guidance'"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-07-22",
+   "source": "MS50",
+   "doc": "Q4 FY11 release",
+   "opex_guide_usd_b": [
+    28.0,
+    28.6
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-10-21",
+   "source": "MS51",
+   "doc": "Q1 FY12 release",
+   "opex_guide_usd_b": [
+    28.6,
+    29.2
+   ],
+   "note": "'including Skype and the associated acquisition-related expenses'"
   }
  ],
  "dividends": [
@@ -1037,6 +2374,18 @@
    "source": "MS28",
    "quarterly": 0.13,
    "note": "$0.13 quarterly, declared on September 22, 2008 (Q1 FY09 10-Q)"
+  },
+  {
+   "published": "2010-10-29",
+   "source": "MS45",
+   "quarterly": 0.16,
+   "note": "$0.16 quarterly, declared on September 21, 2010 (Q1 FY11 10-Q)"
+  },
+  {
+   "published": "2011-10-21",
+   "source": "MS52",
+   "quarterly": 0.2,
+   "note": "$0.20 quarterly, declared on September 20, 2011 (Q1 FY12 10-Q)"
   }
  ],
  "events": [],

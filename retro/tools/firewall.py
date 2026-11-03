@@ -15,8 +15,8 @@ and require byte-identical models. Restores the fact sheet and the price cache a
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
 CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter; PEP: a display-only guide, and total servings that a filing after CUTOFF
-first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange; MSFT: a guide with every guided field, and a later
-range for every quarter the fact sheet guides), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
+first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange; MSFT: a guide with every guided field, a later
+range for every quarter the fact sheet guides and a later withdrawal of every guided year), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
 
@@ -83,7 +83,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       receivables_b=99.0, receivables_pct=99.0, receivables_gap_pp=99.0, gross_margin=1.0, gross_margin_bp=-999.0,
                       op_margin=-50.0, op_margin_bp=-999.0, eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0,
                       cash_b=99.0, next_print="PLANTED", cash_return_text="PLANTED", fx_note="PLANTED", sales_note="PLANTED",
-                      unearned_note="PLANTED", receivables_note="PLANTED",
+                      unearned_note="PLANTED", receivables_note="PLANTED", lc_pct=-60.0, lc_note="PLANTED",
                       raw=dict(sales_m=1, sales_prior_m=99, cogs_m=1, cogs_prior_m=1, op_m=-99, op_prior_m=99, ar_m=99, ar_prior_m=1,
                                unearned_m=1, unearned_prior_m=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
@@ -99,7 +99,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             prior_label="PLANTED", prior_sales_m=1, prior_source="V1", yoy_pct=[-50, -40], quote="PLANTED",
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
-               "MSFT": dict(rev_guide_usd_b=[0.1, 0.2], op_income_guide_usd_b=[0.1, 0.2], note="PLANTED",
+               "MSFT": dict(rev_guide_usd_b=[0.1, 0.2], op_income_guide_usd_b=[0.1, 0.2], note="PLANTED", opex_guide_usd_b=[0.1, 0.2],
                             q_guide={"quarter": "Q4 FY99", "sales_usd_b": [0.1, 0.2], "op_income_usd_b": [0.1, 0.2], "eps": [0.1, 0.2],
                                      "eps_words": "PLANTED", "prior_sales_b": 99.0, "prior_source": "MS1", "prior_label": "PLANTED"})}.get(TICKER, {})
 
@@ -165,6 +165,9 @@ try:
         for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):
             f["guides"].append({"fy": 2000 + int(q.split("FY")[1]), "published": later, "source": last["source"], "doc": "PLANTED",
                                 "eps_guide": [0.1, 0.2], "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
+        for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):   # and a later withdrawal of every guided year
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "withdrawn": True,
+                                "quote": "PLANTED", "opex_guide_usd_b": [0.1, 0.2]})
     if "listings" in f:    # PEP: an exchange change announced and effective after CUTOFF
         f["listings"].append({"published": later, "effective": later, "exchange": "PLANTED", "source": last["source"], "note": "PLANTED"})
     v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))

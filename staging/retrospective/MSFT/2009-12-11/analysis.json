@@ -1,0 +1,294 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MSFT",
+ "company": "Microsoft Corporation",
+ "as_of": "2009-12-11",
+ "price_date": "2009-12-11",
+ "price": 29.85,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); software signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Microsoft: 'We generate revenue by developing, manufacturing, licensing, and supporting a wide range of software products and services for many different types of computing devices'; 'Challenges to our business model may reduce our revenues and operating margins': 'Certain “open source” software business models challenge our license-based software model', and 'Another development is the business model under which companies provide content, and software in the form of applications, data, and related services, over the Internet in exchange for revenues primarily from advertising or subscriptions'; 'We face intense competition' (its own FY2009 10-K): a competition and business-model risk, not an obsolescence one",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Microsoft: 'We generate revenue by developing, manufacturing, licensing, and supporting a wide range of software products and services for many different types of computing devices'; 'Challenges to our business model may reduce our revenues and operating margins': 'Certain “open source” software business models challenge our license-based software model', and 'Another development is the business model under which companies provide content, and software in the form of applications, data, and related services, over the Internet in exchange for revenues primarily from advertising or subscriptions'; 'We face intense competition' (its own FY2009 10-K): a competition and business-model risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.41x; -20% to EPP floor; model-vs-market gap +0.19; conservative 2yr +34%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.41,
+  "ratio_b_fmt": "0.41x",
+  "epp": 37.26,
+  "epp_gap_pct": -19.9,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.85,
+  "sca": 0.12,
+  "adj_composite": 2.17,
+  "market_composite": 1.98,
+  "adj_gap": 0.19,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 33.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.78,
+    "pe": 15.1,
+    "price": 12,
+    "desc": "EPS -30.4%/yr (worst year FY00-FY09, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.32,
+    "pe": 24.0,
+    "price": 32,
+    "desc": "EPS +-9.7%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 1.87,
+    "pe": 39.3,
+    "price": 73,
+    "desc": "EPS +7.4%/yr (FY00-FY09 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.74,
+    "pe": 57.6,
+    "price": 158,
+    "desc": "EPS +30.1%/yr (best 2-yr run FY00-FY09); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.41,
+   "epp_gap_pct": -19.9,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.2,
+   "epp_gap_pct": -19.9,
+   "adj_gap": 0.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.31,
+   "epp_gap_pct": -19.9,
+   "adj_gap": -0.28,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.39,
+   "epp_gap_pct": -19.9,
+   "adj_gap": 0.26,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.46,
+   "epp_gap_pct": -19.9,
+   "adj_gap": 0.14,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.41,
+   "epp_gap_pct": -19.9,
+   "adj_gap": 0.49,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.41,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.41,
+   "epp_gap_pct": -19.9,
+   "adj_gap": 0.36,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.8,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "MSFT (retrospective, 2009-12-11) ◉ BUY — Ratio B 0.41x (59.8% downside to Bear $12 / +144.6% upside to Bull $73) | Adj composite 2.17 vs market 1.98: gap +0.19 [FAIRLY VALUED] | -20% above the EPP floor $37 (23x FY10E $1.62) | Conservative 2-yr case: +33.8% total (+16.9%/yr) | At 18.4x FY10E the 15% hurdle price $39 sits between the BASE and BULL cases; unearned revenue +9.6% in Q1 FY10, forward revenues -12% (no Q2 FY10 revenue guide, Q1 FY10 revenue ex-currency); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MS30",
+   "published": "2009-07-30",
+   "filed": "2009-07-30 06:05 ET (before the open)",
+   "title": "Microsoft FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509158735/d10k.htm",
+   "supports": "five-year summary FY2005-FY2009 (diluted EPS $1.12, $1.20, $1.42, $1.87, $1.62; revenue $39,788M-$58,437M); income statements FY2007-FY2009 (FY2009 diluted shares 8,996M); balance sheets June 30, 2008 and 2009; segment revenue FY2008-FY2009; cash flows; dividends declared ($0.13 on June 10, 2009); risk factors (business model, competition)"
+  },
+  {
+   "id": "MS26",
+   "published": "2008-08-01",
+   "filed": "2008-07-31 17:23 ET (after the close)",
+   "title": "Microsoft FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312508162768/d10k.htm",
+   "supports": "five-year summary FY2004-FY2008 (diluted EPS $0.75, $1.12, $1.20, $1.42, $1.87; revenue $36,835M-$60,420M); income statements FY2006-FY2008 (FY2008 diluted shares 9,470M); segment revenue FY2007-FY2008; cash flows; dividends declared ($0.11 on June 11, 2008); risk factors (business model, competition)"
+  },
+  {
+   "id": "MS10",
+   "published": "2007-08-06",
+   "filed": "2007-08-03 17:13 ET (after the close)",
+   "title": "Microsoft FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312507170817/d10k.htm",
+   "supports": "five-year summary FY2003-FY2007 (diluted EPS $0.69, $0.75, $1.12, $1.20, $1.42; revenue $32,187M-$51,122M); income statements FY2005-FY2007 (FY2007 diluted shares 9,886M; cost of revenue $6,031M, $7,650M, $10,693M; operating income $14,561M, $16,472M, $18,524M); balance sheets June 30, 2006 and 2007; segment revenue FY2006-FY2007; cash flows; dividends declared ($0.10 on June 27, 2007); risk factors (business model, competition)"
+  },
+  {
+   "id": "MS9",
+   "published": "2006-08-28",
+   "filed": "2006-08-25 17:13 ET (after the close)",
+   "title": "Microsoft FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312506180008/d10k.htm",
+   "supports": "five-year summary FY2002-FY2006 (FY2002 diluted EPS $0.48, revenue $28,365M; FY2003 revenue $32,187M); income statements FY2004-FY2006 (revenue $36,835M, $39,788M; cost of revenue $6,596M, $6,031M; operating income $9,034M, $14,561M); balance sheets June 30, 2005 and 2006 (accounts receivable $7,180M and $9,316M; unearned revenue $7,502M + $1,665M and $9,138M + $1,764M)"
+  },
+  {
+   "id": "MS8",
+   "published": "2005-08-26",
+   "filed": "2005-08-25 19:59 ET (after the close)",
+   "title": "Microsoft FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312505174825/d10k.htm",
+   "supports": "five-year summary FY2001-FY2005 (FY2001 diluted EPS before accounting change $0.69, $0.66 after it, without stock-based compensation expense; revenue $25,296M; FY2002 revenue $28,365M); income statements FY2003-FY2005 (revenue $32,187M, $36,835M; cost of revenue $6,059M, $6,716M; operating income $9,545M, $9,034M); balance sheets June 30, 2004 and 2005 (accounts receivable $5,890M and $7,180M; unearned revenue $6,514M + $1,663M and $7,502M + $1,665M)"
+  },
+  {
+   "id": "MS7",
+   "published": "2004-09-02",
+   "filed": "2004-09-01 17:03 ET (after the close)",
+   "title": "Microsoft FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312504150689/d10k.htm",
+   "supports": "the SFAS 123 restatement of fiscal 2002 and 2003 ('The information presented for 2000 and 2001 has not been restated'); five-year summary FY2000-FY2004 (FY2000 diluted EPS $0.85, revenue $22,956M; FY2001 revenue $25,296M); income statements FY2002-FY2004 as restated (revenue $28,365M, $32,187M; cost of revenue $5,699M, $6,059M; operating income $8,272M, $9,545M); balance sheets June 30, 2003 (restated) and 2004 (accounts receivable $5,196M and $5,890M; unearned revenue $7,225M + $1,790M and $6,514M + $1,663M)"
+  },
+  {
+   "id": "MS5",
+   "published": "2002-09-06",
+   "filed": "2002-09-05 20:20 ET (after the close)",
+   "title": "Microsoft FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000103221002001351/d10k.htm",
+   "supports": "five-year summary FY1998-FY2002 (FY1998 diluted EPS $0.84 before the 2003 split, revenue $15,262M; FY1999 revenue $19,747M); income statements FY2000-FY2002 (cost of revenue $3,002M, $3,455M, $5,191M; operating income $11,006M, $11,720M, $11,910M); balance sheets June 30, 2001 and 2002 (accounts receivable $3,671M and $5,129M; short-term and long-term unearned revenue $4,395M + $1,219M and $5,920M + $1,823M)"
+  },
+  {
+   "id": "MS18",
+   "published": "2007-07-20",
+   "filed": "2007-07-19 16:26 ET (after the close)",
+   "title": "Microsoft Q4 FY07 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312507158174/dex991.htm",
+   "supports": "Q4 FY07 and FY07 income statements, balance sheets and cash flows; adjusted results (FY07 $1.49 and FY06 $1.27 diluted EPS, operating income $19,735M and $17,581M; Q4 FY07 $5,046M and Q4 FY06 $4,232M); guidance for Q1 FY08 and FY2008"
+  },
+  {
+   "id": "MS11",
+   "published": "2004-07-23",
+   "filed": "2004-07-22 16:28 ET (after the close)",
+   "title": "Microsoft Q4 FY04 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312504122829/dex991.htm",
+   "supports": "FY2004 diluted EPS $0.75 'which included after-tax charges for stock-based compensation expense of $0.35, charges of $0.17 related to the Sun Microsystems settlement and a fine imposed by the European Commission, and a tax benefit of $0.02'; FY2003 $0.69 likewise; no EPS excluding them"
+  },
+  {
+   "id": "MS12",
+   "published": "2005-07-22",
+   "filed": "2005-07-21 16:17 ET (after the close)",
+   "title": "Microsoft Q4 FY05 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312505146318/dex991.htm",
+   "supports": "FY2005 diluted EPS $1.12 'which included legal charges of $0.13 and tax benefits of $0.09'; no EPS excluding them"
+  },
+  {
+   "id": "MS13",
+   "published": "2006-07-21",
+   "filed": "2006-07-20 17:31 ET (after the close)",
+   "title": "Microsoft Q4 FY06 results (8-K exhibit 99.3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312506150261/dex993.htm",
+   "supports": "FY2006 diluted EPS $1.20 'which included $0.08 of certain legal charges and $0.01 of tax benefits'; no EPS excluding them in this release"
+  },
+  {
+   "id": "MS37",
+   "published": "2009-07-24",
+   "filed": "2009-07-23 16:13 ET (after the close)",
+   "title": "Microsoft Q4 FY09 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509154028/dex991.htm",
+   "supports": "Q4 FY09 and FY09 income statements, balance sheets and cash flows (Q4 FY08 operating income as recast, $5,679M); the Windows 7 Upgrade Option deferral; currency effect; operating expense guidance for FY2010"
+  },
+  {
+   "id": "MS38",
+   "published": "2009-10-23",
+   "filed": "2009-10-23 08:32 ET (before the open)",
+   "title": "Microsoft Q1 FY10 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509212453/dex991.htm",
+   "supports": "Q1 FY10 income statement, balance sheet and cash flows; the Windows 7 deferral and the adjusted figures; operating expense guidance for FY2010"
+  },
+  {
+   "id": "MS39",
+   "published": "2009-10-23",
+   "filed": "2009-10-23 08:34 ET (before the open)",
+   "title": "Microsoft Q1 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312509212454/d10q.htm",
+   "supports": "currency effect on Q1 FY10 revenue"
+  },
+  {
+   "id": "MS27",
+   "published": "2008-10-24",
+   "filed": "2008-10-23 16:13 ET (after the close)",
+   "title": "Microsoft Q1 FY09 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312508215209/dex991.htm",
+   "supports": "Q1 FY09 income statement (Q1 FY08 operating income as recast, $5,849M), balance sheet and cash flows; guidance for Q2 FY09 and FY2009"
+  },
+  {
+   "id": "MS29",
+   "published": "2003-02-03",
+   "filed": "2003-01-31 17:23 ET (after the close)",
+   "title": "Microsoft Q2 FY03 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000103221003000121/d10q.htm",
+   "supports": "'On January 16, 2003, the Company’s Board of Directors approved a two-for-one split on Microsoft’s common stock, payable to shareholders of record on January 27, 2003'"
+  },
+  {
+   "id": "A0",
+   "published": "2009-12-11",
+   "title": "Yahoo Finance daily prices, MSFT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MSFT/history",
+   "supports": "close $29.85 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-03"
+}
