@@ -839,3 +839,151 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2023-12-15 | $167.00 | PepsiCo Q3 2023 results | 2.50 | +0.04 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -2.9% | -50.6pp | -14.0% | ✓ |
 | 2023-12-22 | $167.68 | PepsiCo Q3 2023 results | 2.50 | +0.03 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -5.8% | -53.4pp | -14.4% | ✓ |
 | 2023-12-29 | $169.84 | PepsiCo Q3 2023 results | 2.50 | -0.07 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -8.6% | -56.4pp | -15.6% | ✓ |
+| 2024-01-05 | $168.94 | PepsiCo Q3 2023 results | 2.50 | -0.04 | 2.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -10.7% | -60.7pp | -15.2% | ✓ |
+| 2024-01-12 | $167.27 | PepsiCo Q3 2023 results | 2.50 | +0.04 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -8.9% | -57.8pp | -14.4% | ✓ |
+| 2024-01-19 | $165.78 | PepsiCo Q3 2023 results | 2.50 | +0.10 | 2.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -5.1% | -51.5pp | -13.7% | ✓ |
+| 2024-01-26 | $167.86 | PepsiCo Q3 2023 results | 2.50 | +0.03 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -6.6% | -51.6pp | -14.8% | ✓ |
+| 2024-02-02 | $170.97 | PepsiCo Q3 2023 results | 2.50 | -0.10 | 3.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -2.8% | -46.4pp | -16.3% | ✓ |
+| 2024-02-09 | $167.67 | PepsiCo Q4 2023 results | 2.50 | -0.28 | 4.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.8% | -35.5pp | -14.4% | ✓ |
+| 2024-02-16 | $166.32 | PepsiCo Q4 2023 results | 2.50 | -0.25 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.4% | -33.0pp | -13.5% | ✓ |
+| 2024-02-23 | $169.60 | PepsiCo Q4 2023 results | 2.50 | -0.33 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.7% | -31.5pp | -15.0% | ✓ |
+| 2024-03-01 | $164.59 | PepsiCo Q4 2023 results | 2.50 | -0.21 | 3.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.0% | -27.5pp | -12.3% | ✓ |
+| 2024-03-08 | $163.05 | PepsiCo Q4 2023 results | 2.50 | -0.18 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.6% | -29.6pp | -11.3% | ✓ |
+| 2024-03-15 | $164.66 | PepsiCo Q4 2023 results | 2.50 | -0.21 | 3.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.8% | -28.6pp | -12.1% | ✓ |
+| 2024-03-22 | $172.02 | PepsiCo Q4 2023 results | 2.50 | -0.38 | 5.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.3% | -33.5pp | -15.8% | ✓ |
+| 2024-03-28 | $175.01 | PepsiCo Q4 2023 results | 2.50 | -0.45 | 5.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.2% | -30.2pp | -17.2% | ✓ |
+| 2024-04-05 | $169.14 | PepsiCo Q4 2023 results | 2.50 | -0.31 | 4.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.6% | -29.9pp | -14.2% | ✓ |
+| 2024-04-12 | $168.10 | PepsiCo Q4 2023 results | 2.50 | -0.28 | 4.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.0% | -35.8pp | -13.6% | ✓ |
+| 2024-04-19 | $174.13 | PepsiCo Q4 2023 results | 2.50 | -0.43 | 5.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.1% | -49.4pp | -16.4% | ✓ |
+| 2024-04-24 | $177.41 | PepsiCo Q1 2024 results | 2.15 | -0.81 | 6.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.1% | -50.3pp | -17.8% | ✓ |
+| 2024-05-03 | $176.15 | PepsiCo Q1 2024 results | 2.15 | -0.78 | 6.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.3% | -48.1pp | -16.9% | ✓ |
+| 2024-05-10 | $179.79 | PepsiCo Q1 2024 results | 2.15 | -0.85 | 7.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.8% | -52.2pp | -18.4% | ✓ |
+| 2024-05-17 | $182.19 | PepsiCo Q1 2024 results | 2.15 | -0.88 | 8.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.1% | -54.4pp | -19.2% | ✓ |
+| 2024-05-24 | $177.99 | PepsiCo Q1 2024 results | 2.15 | -0.82 | 6.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -9.2% | -52.7pp | -17.1% | ✓ |
+| 2024-05-31 | $172.90 | PepsiCo Q1 2024 results | 2.15 | -0.70 | 5.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.2% | -56.4pp | -14.5% | ✓ |
+| 2024-06-07 | $171.04 | PepsiCo Q1 2024 results | 2.15 | -0.65 | 4.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.5% | -51.3pp | -13.5% | ✓ |
+| 2024-06-14 | $163.81 | PepsiCo Q1 2024 results | 2.15 | -0.48 | 3.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.1% | -44.4pp | -9.5% | ✓ |
+| 2024-06-21 | $167.28 | PepsiCo Q1 2024 results | 2.15 | -0.55 | 3.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.4% | -48.2pp | -11.2% | ✓ |
+| 2024-06-28 | $164.93 | PepsiCo Q1 2024 results | 2.15 | -0.50 | 3.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.5% | -44.1pp | -9.8% | ✓ |
+| 2024-07-05 | $164.39 | PepsiCo Q1 2024 results | 2.15 | -0.49 | 3.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.4% | -42.4pp | -9.5% | ✓ |
+| 2024-07-12 | $166.38 | PepsiCo Q2 2024 results | 2.50 | -0.20 | 3.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.7% | -48.1pp | -10.5% | ✓ |
+| 2024-07-19 | $169.36 | PepsiCo Q2 2024 results | 2.50 | -0.28 | 4.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.4% | -50.5pp | -12.1% | ✓ |
+| 2024-07-26 | $172.75 | PepsiCo Q2 2024 results | 2.50 | -0.37 | 4.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.4% | -52.8pp | -13.9% | ✓ |
+| 2024-08-02 | $178.04 | PepsiCo Q2 2024 results | 2.50 | -0.49 | 6.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.3% | -58.2pp | -16.5% | ✓ |
+| 2024-08-09 | $172.39 | PepsiCo Q2 2024 results | 2.50 | -0.36 | 4.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.8% | -60.7pp | -13.8% | ✓ |
+| 2024-08-16 | $172.62 | PepsiCo Q2 2024 results | 2.50 | -0.36 | 4.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.9% | -54.6pp | -14.0% | ✓ |
+| 2024-08-23 | $175.87 | PepsiCo Q2 2024 results | 2.50 | -0.44 | 5.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.0% | -50.9pp | -15.7% | ✓ |
+| 2024-08-30 | $172.88 | PepsiCo Q2 2024 results | 2.50 | -0.38 | 5.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.9% | -51.0pp | -14.3% | ✓ |
+| 2024-09-06 | $177.34 | PepsiCo Q2 2024 results | 2.50 | -0.47 | 6.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.0% | -61.2pp | -16.5% | ✓ |
+| 2024-09-13 | $177.36 | PepsiCo Q2 2024 results | 2.50 | -0.47 | 6.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.7% | -55.3pp | -16.6% | ✓ |
+| 2024-09-20 | $171.18 | PepsiCo Q2 2024 results | 2.50 | -0.32 | 4.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.6% | -54.2pp | -13.7% | ✓ |
+| 2024-09-27 | $170.00 | PepsiCo Q2 2024 results | 2.50 | -0.29 | 4.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.7% | -55.2pp | -13.2% | ✓ |
+| 2024-10-04 | $167.97 | PepsiCo Q2 2024 results | 2.50 | -0.24 | 4.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.3% | -55.2pp | -12.3% | ✓ |
+| 2024-10-09 | $172.54 | PepsiCo Q3 2024 results | 2.20 | -0.66 | 4.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.4% | -57.9pp | -14.8% | ✓ |
+| 2024-10-18 | $175.06 | PepsiCo Q3 2024 results | 2.20 | -0.73 | 5.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.4% | -51.5pp | -16.3% | ✓ |
+| 2024-10-25 | $171.79 | PepsiCo Q3 2024 results | 2.20 | -0.64 | 4.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.4% | -48.2pp | -14.9% | ✓ |
+| 2024-11-01 | $165.59 | PepsiCo Q3 2024 results | 2.20 | -0.49 | 3.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.2% | -45.1pp | -11.9% | ✓ |
+| 2024-11-08 | $165.11 | PepsiCo Q3 2024 results | 2.20 | -0.47 | 3.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -11.6% | - |
+| 2024-11-15 | $158.62 | PepsiCo Q3 2024 results | 2.20 | -0.32 | 2.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -8.0% | - |
+| 2024-11-22 | $162.00 | PepsiCo Q3 2024 results | 2.20 | -0.40 | 3.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -9.9% | - |
+| 2024-11-29 | $163.45 | PepsiCo Q3 2024 results | 2.20 | -0.45 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -10.8% | - |
+| 2024-12-06 | $157.79 | PepsiCo Q3 2024 results | 2.20 | -0.29 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -7.6% | - |
+| 2024-12-13 | $157.97 | PepsiCo Q3 2024 results | 2.20 | -0.30 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -7.7% | - |
+| 2024-12-20 | $152.79 | PepsiCo Q3 2024 results | 2.20 | -0.18 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -4.6% | - |
+| 2024-12-27 | $152.89 | PepsiCo Q3 2024 results | 2.20 | -0.18 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -4.7% | - |
+| 2025-01-03 | $149.65 | PepsiCo Q3 2024 results | 2.20 | -0.11 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -2.6% | - |
+| 2025-01-10 | $142.64 | PepsiCo Q3 2024 results | 2.20 | +0.23 | 1.73x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | +2.3% | - |
+| 2025-01-17 | $148.25 | PepsiCo Q3 2024 results | 2.20 | -0.08 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -1.5% | - |
+| 2025-01-24 | $149.12 | PepsiCo Q3 2024 results | 2.20 | -0.10 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -2.1% | - |
+| 2025-01-31 | $150.69 | PepsiCo Q3 2024 results | 2.20 | -0.13 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -3.2% | - |
+| 2025-02-05 | $145.66 | PepsiCo Q4 2024 results | 2.15 | +0.33 | 1.30x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -0.1% | - |
+| 2025-02-14 | $143.39 | PepsiCo Q4 2024 results | 2.15 | +0.37 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +1.0% | - |
+| 2025-02-21 | $153.50 | PepsiCo Q4 2024 results | 2.15 | -0.01 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | -6.0% | - |
+| 2025-02-28 | $153.47 | PepsiCo Q4 2024 results | 2.15 | -0.01 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | -6.4% | - |
+| 2025-03-07 | $154.44 | PepsiCo Q4 2024 results | 2.15 | -0.02 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | -7.4% | - |
+| 2025-03-14 | $148.59 | PepsiCo Q4 2024 results | 2.15 | +0.08 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -4.1% | - |
+| 2025-03-21 | $145.45 | PepsiCo Q4 2024 results | 2.15 | +0.33 | 1.30x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -2.3% | - |
+| 2025-03-28 | $149.27 | PepsiCo Q4 2024 results | 2.15 | +0.06 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -5.0% | - |
+| 2025-04-04 | $146.61 | PepsiCo Q4 2024 results | 2.15 | +0.11 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -3.5% | - |
+| 2025-04-11 | $144.43 | PepsiCo Q4 2024 results | 2.15 | +0.35 | 1.27x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -2.4% | - |
+| 2025-04-17 | $142.84 | PepsiCo Q4 2024 results | 2.15 | +0.37 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | -1.7% | - |
+| 2025-04-25 | $133.38 | PepsiCo Q1 2025 results | 2.20 | +0.60 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.8% | - |
+| 2025-05-02 | $133.75 | PepsiCo Q1 2025 results | 2.20 | +0.58 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.0% | - |
+| 2025-05-09 | $130.44 | PepsiCo Q1 2025 results | 2.20 | +0.64 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +6.2% | - |
+| 2025-05-16 | $131.98 | PepsiCo Q1 2025 results | 2.20 | +0.62 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.5% | - |
+| 2025-05-23 | $129.34 | PepsiCo Q1 2025 results | 2.20 | +0.66 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +6.3% | - |
+| 2025-05-30 | $131.45 | PepsiCo Q1 2025 results | 2.20 | +0.62 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.3% | - |
+| 2025-06-06 | $130.03 | PepsiCo Q1 2025 results | 2.20 | +0.65 | 0.96x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +5.3% | - |
+| 2025-06-13 | $130.85 | PepsiCo Q1 2025 results | 2.20 | +0.63 | 0.97x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.4% | - |
+| 2025-06-20 | $129.07 | PepsiCo Q1 2025 results | 2.20 | +0.66 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +5.6% | - |
+| 2025-06-27 | $131.04 | PepsiCo Q1 2025 results | 2.20 | +0.62 | 0.98x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +3.8% | - |
+| 2025-07-03 | $135.38 | PepsiCo Q1 2025 results | 2.20 | +0.53 | 1.08x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +0.3% | - |
+| 2025-07-11 | $135.26 | PepsiCo Q1 2025 results | 2.20 | +0.53 | 1.08x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +0.2% | - |
+| 2025-07-18 | $143.24 | PepsiCo Q2 2025 results | 1.85 | +0.08 | 1.30x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -5.5% | - |
+| 2025-07-25 | $143.45 | PepsiCo Q2 2025 results | 1.85 | +0.08 | 1.30x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -5.6% | - |
+| 2025-08-01 | $139.28 | PepsiCo Q2 2025 results | 1.85 | +0.16 | 1.18x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | -3.1% | - |
+| 2025-08-08 | $145.21 | PepsiCo Q2 2025 results | 1.85 | +0.05 | 1.36x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -7.3% | - |
+| 2025-08-15 | $150.40 | PepsiCo Q2 2025 results | 1.85 | -0.25 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -10.8% | - |
+| 2025-08-22 | $149.64 | PepsiCo Q2 2025 results | 1.85 | -0.24 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -10.8% | - |
+| 2025-08-29 | $148.65 | PepsiCo Q2 2025 results | 1.85 | -0.22 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -10.9% | - |
+| 2025-09-05 | $146.39 | PepsiCo Q2 2025 results | 1.85 | -0.18 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -10.1% | - |
+| 2025-09-12 | $143.53 | PepsiCo Q2 2025 results | 1.85 | +0.07 | 1.31x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -8.7% | - |
+| 2025-09-19 | $141.76 | PepsiCo Q2 2025 results | 1.85 | +0.10 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -7.9% | - |
+| 2025-09-26 | $140.44 | PepsiCo Q2 2025 results | 1.85 | +0.13 | 1.21x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | -6.9% | - |
+| 2025-10-03 | $141.98 | PepsiCo Q2 2025 results | 1.85 | +0.10 | 1.26x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | -7.3% | - |
+| 2025-10-10 | $150.08 | PepsiCo Q3 2025 results | 1.65 | -0.47 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | -11.2% | - |
+| 2025-10-17 | $153.71 | PepsiCo Q3 2025 results | 1.65 | -0.53 | 1.67x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | -11.9% | - |
+| 2025-10-24 | $151.55 | PepsiCo Q3 2025 results | 1.65 | -0.49 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | -10.6% | - |
+| 2025-10-31 | $146.09 | PepsiCo Q3 2025 results | 1.65 | -0.40 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -3.9% | - |
+| 2025-11-07 | $142.95 | PepsiCo Q3 2025 results | 1.65 | -0.14 | 1.29x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2025-11-14 | $145.85 | PepsiCo Q3 2025 results | 1.65 | -0.20 | 1.38x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2025-11-21 | $146.33 | PepsiCo Q3 2025 results | 1.65 | -0.40 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2025-11-28 | $148.74 | PepsiCo Q3 2025 results | 1.65 | -0.45 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-05 | $145.02 | PepsiCo Q3 2025 results | 1.65 | -0.18 | 1.35x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2025-12-12 | $150.65 | PepsiCo Q3 2025 results | 1.65 | -0.48 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-19 | $148.16 | PepsiCo Q3 2025 results | 1.65 | -0.44 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-26 | $143.78 | PepsiCo Q3 2025 results | 1.65 | -0.16 | 1.31x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-01-02 | $142.23 | PepsiCo Q3 2025 results | 1.65 | -0.13 | 1.27x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-01-09 | $139.91 | PepsiCo Q3 2025 results | 1.65 | -0.09 | 1.20x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-16 | $146.32 | PepsiCo Q3 2025 results | 1.65 | -0.40 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-01-23 | $144.58 | PepsiCo Q3 2025 results | 1.65 | -0.17 | 1.34x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-01-30 | $153.63 | PepsiCo Q3 2025 results | 1.65 | -0.53 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-02-04 | $166.18 | PepsiCo Q4 2025 results | 2.50 | -0.52 | 9.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-13 | $165.94 | PepsiCo Q4 2025 results | 2.50 | -0.51 | 9.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-20 | $164.94 | PepsiCo Q4 2025 results | 2.50 | -0.49 | 8.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-27 | $169.74 | PepsiCo Q4 2025 results | 2.50 | -0.56 | 13.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-03-06 | $159.43 | PepsiCo Q4 2025 results | 2.50 | -0.39 | 5.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-03-13 | $159.88 | PepsiCo Q4 2025 results | 2.50 | -0.40 | 6.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-03-20 | $150.04 | PepsiCo Q4 2025 results | 2.50 | -0.16 | 3.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-03-27 | $153.04 | PepsiCo Q4 2025 results | 2.50 | -0.24 | 4.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-04-02 | $157.01 | PepsiCo Q4 2025 results | 2.50 | -0.33 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-04-10 | $157.06 | PepsiCo Q4 2025 results | 2.50 | -0.33 | 5.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-04-17 | $157.67 | PepsiCo Q1 2026 results | 2.30 | -0.55 | 5.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-04-24 | $155.44 | PepsiCo Q1 2026 results | 2.30 | -0.49 | 4.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-01 | $157.41 | PepsiCo Q1 2026 results | 2.30 | -0.55 | 5.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-08 | $154.62 | PepsiCo Q1 2026 results | 2.30 | -0.47 | 4.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-15 | $149.12 | PepsiCo Q1 2026 results | 2.30 | -0.33 | 3.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-22 | $150.57 | PepsiCo Q1 2026 results | 2.30 | -0.37 | 3.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-29 | $144.19 | PepsiCo Q1 2026 results | 2.30 | -0.17 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-05 | $141.92 | PepsiCo Q1 2026 results | 2.30 | -0.09 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-12 | $144.27 | PepsiCo Q1 2026 results | 2.30 | -0.18 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-18 | $142.02 | PepsiCo Q1 2026 results | 2.30 | -0.09 | 2.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-26 | $141.39 | PepsiCo Q1 2026 results | 2.30 | -0.07 | 2.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-02 | $144.22 | PepsiCo Q1 2026 results | 2.30 | -0.17 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-10 | $137.38 | PepsiCo Q2 2026 results | 2.60 | +0.33 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-07-17 | $137.12 | PepsiCo Q2 2026 results | 2.60 | +0.33 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-07-24 | $136.64 | PepsiCo Q2 2026 results | 2.60 | +0.34 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-07-31 | $139.56 | PepsiCo Q2 2026 results | 2.60 | +0.27 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-07 | $139.02 | PepsiCo Q2 2026 results | 2.60 | +0.29 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-14 | $140.79 | PepsiCo Q2 2026 results | 2.60 | +0.24 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-21 | $143.48 | PepsiCo Q2 2026 results | 2.60 | +0.15 | 2.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-28 | $141.07 | PepsiCo Q2 2026 results | 2.60 | +0.23 | 2.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-04 | $137.63 | PepsiCo Q2 2026 results | 2.60 | +0.32 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-09-11 | $136.32 | PepsiCo Q2 2026 results | 2.60 | +0.35 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-09-18 | $129.75 | PepsiCo Q2 2026 results | 2.60 | +0.50 | 1.76x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-09-25 | $128.63 | PepsiCo Q2 2026 results | 2.60 | +0.53 | 1.70x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-10-02 | $125.89 | PepsiCo Q2 2026 results | 2.60 | +0.80 | 1.56x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $125.97 | PepsiCo Q3 2026 results | 2.35 | +0.58 | 1.51x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $131.49 | PepsiCo Q3 2026 results | 2.35 | +0.25 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-10-23 | $135.77 | PepsiCo Q3 2026 results | 2.35 | +0.15 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-10-30 | $137.34 | PepsiCo Q3 2026 results | 2.35 | +0.12 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |

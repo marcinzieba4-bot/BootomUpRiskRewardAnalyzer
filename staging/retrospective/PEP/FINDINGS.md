@@ -1,15 +1,16 @@
 # PEP retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31, 157
-from 2011-01-07 to 2013-12-31, 156 from 2014-01-10 to 2016-12-30, 209 from 2017-01-06 to 2020-12-31 and 156 from 2021-01-08 to
-2023-12-29. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only
-after its point-in-time build was committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in 55a6818; 2011-2013: 29c50f2,
-documented in b02f4d4; 2014-2016: bc27375, documented in 03bc69c; 2017-2020: 53e0347, documented in b1ed84f; 2021-2023: e58b7d3,
-documented in 17258fc). Prices run to 2026-10-30 (2017-2020 and 2021-2023: 2026-11-02); the 2008 batch's two-year horizons end by
-2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30
-(2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30), the 2017-2020 batch's by 2022-12-30 (2023-12-29), the 2021-2023
-batch's by 2025-12-29 (three-year horizons only for the 147 dates to 2023-10-27, ending by 2026-10-27). Medians of an even count take
-the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31, 157 from
+2011-01-07 to 2013-12-31, 156 from 2014-01-10 to 2016-12-30, 209 from 2017-01-06 to 2020-12-31, 156 from 2021-01-08 to 2023-12-29 and
+148 from 2024-01-05 to 2026-10-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each
+batch was scored only after its point-in-time build was committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in 55a6818;
+2011-2013: 29c50f2, documented in b02f4d4; 2014-2016: bc27375, documented in 03bc69c; 2017-2020: 53e0347, documented in b1ed84f;
+2021-2023: e58b7d3, documented in 17258fc; 2024-2026: 39d760a, documented in d83f541). Prices run to 2026-10-30 (2017-2020, 2021-2023
+and 2024-2026: 2026-11-02); the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by
+2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30 (2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30), the
+2017-2020 batch's by 2022-12-30 (2023-12-29), the 2021-2023 batch's by 2025-12-29 (three-year horizons only for the 147 dates to
+2023-10-27, ending by 2026-10-27) and the 2024-2026 batch's, only for the 44 dates to 2024-11-01, by 2026-10-30. Medians of an even
+count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -363,3 +364,70 @@ the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% o
   2022 to Q3 2023, beverages 3%, flat, +1%, -1% and flat. Whether a company's segment unit volumes should stand in for a headline volume
   measure it stops reporting is a question for other tickers and years, with the change made as a new method version; never fit it to
   PEP's outcomes.
+
+## 2024-2026 (148 dates)
+
+Prices end on 2026-11-02, so only the 44 dates to 2024-11-01 have two years, the 96 to 2025-10-31 one year and the 122 to 2026-05-01
+six months; the 26 dates from 2026-05-08 have no outcome yet. Every date with two years is a 2024 date, RICH and AVOID.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 44 | -9% | -20% to +9% | 0 | 0 | -14% | 44 |
+| legacy tier AVOID | 44 | -9% | -20% to +9% | 0 | 0 | -14% | 44 |
+| FY22 $6.42 anchor (2024-01-05 to 2024-02-02) | 5 | -7% | -11% to -3% | 0 | 0 | -15% | 5 |
+| FY23 $6.56 anchor (2024-02-09 to 2024-11-01) | 39 | -10% | -20% to +9% | 0 | 0 | -14% | 39 |
+
+| Group (one year) | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | Median price change to 2026-10-30 |
+|---|---|---|---|---|---|---|
+| class CHEAP | 26 | +13% | -7% to +23% | 7 | 2 | -1% |
+| class FAIR | 13 | -0% | -12% to +14% | 0 | 0 | -8% |
+| class RICH | 57 | -11% | -25% to +6% | 0 | 0 | -18% |
+| legacy tier ACCUMULATE | 12 | +15% | +6% to +23% | 5 | 0 | +5% |
+| legacy tier WATCHLIST | 28 | -0% | -12% to +20% | 2 | 2 | -6% |
+| legacy tier AVOID | 56 | -11% | -25% to +6% | 0 | 0 | -18% |
+| FY22 $6.42 anchor | 5 | -8% | -12% to -7% | 0 | 0 | -18% |
+| FY23 $6.56 anchor (2024-02-09 to 2025-01-31) | 52 | -11% | -25% to +6% | 0 | 0 | -18% |
+| FY24 $6.95 anchor, dates with a year (2025-02-05 to 2025-10-31) | 39 | +7% | -12% to +23% | 7 | 2 | -4% |
+| 2024 | 52 | -12% | -25% to +1% | 0 | 0 | -19% |
+| 2025, dates with a year | 44 | +6% | -12% to +23% | 7 | 2 | -4% |
+
+- **RICH on every 2024 date, and every two-year call held.** The 44 dates with two years of prices (2024-01-05 to 2024-11-01) returned
+  -20.4% to +9.0% (median -8.9%) while SPY returned +24.0% to +50.0% (median +39.1%): none cleared the hurdle and each lagged SPY, by
+  27.5pp to 61.2pp, so RICH ("should miss the hurdle and lag the benchmark") held on all 44. Every two-year price landed nearest BASE,
+  at 0.69-0.95 times the BASE price; drawdowns within two years were 27.3% to 30.1%, and 39 of the 44 windows bottomed at the
+  2025-06-25 close ($128.02), the five from 2024-10-04 in October 2026 ($125.60 on 2026-10-01, $123.73 on 2026-10-07).
+- **Over one year the price states ranked the outcomes in order.** Across the 96 dates with a year, CHEAP (26 dates, all in 2025)
+  returned a median +12.7% (-7.2% to +22.9%), FAIR (13) -0.3% and RICH (57) -10.8%; the 12 ACCUMULATE dates (2025-04-25 to 2025-07-11)
+  a median +14.6%, 5 clearing 15%. But only 2 of the 96 beat SPY (2025-02-05 and 2025-02-14, CHEAP, +18.9% and +19.6% against +13.4%
+  and +13.0%): SPY returned +11.9% to +36.3% over the 2025 dates' years. Over six months (122 dates) the medians were +9.6% (CHEAP),
+  +0.3% (FAIR) and -10.9% (RICH); across the 147 dates before 2026-10-30 the price to that date changed by a median -3.1% (CHEAP, 35
+  dates), -7.6% (FAIR, 21) and -16.6% (RICH, 91). The one-year order is not a call check: those dates' two-year calls are not scored
+  yet.
+- **The floor distance, the entry price and Ratio B ranked the one-year returns; the composite did not.** Over the 96 one-year dates
+  the EPP gap ranks the returns at Spearman -0.86, the entry price at -0.87, Ratio B at -0.87 and the adjusted gap at +0.86; the proxy
+  composite at -0.25. Over the 44 two-year dates, all RICH, the same measures rank them at -0.43, -0.47, -0.36, +0.30 and +0.04. In
+  2017-2020 none of them ranked the batch's two-year returns, and in 2021-2023 only the entry price did (-0.90). Here every CHEAP date
+  sat below the floor and every date below it was CHEAP: 35 dates from 2025-01-10 to 2026-10-09, all after the 2024 losses (32 on
+  FY24's GAAP $6.95; 2025-01-10 on FY23's $6.56; 2026-10-02 and 2026-10-09 on FY25's $6.00, by under 0.1%). The 26 of them with a year
+  returned a median +12.7%, the 70 dates at or above the floor -9.7%.
+- **From 2026-02-04 the dates sit on the batch's lowest anchor.** FY25's GAAP $6.00, after $2.14 a share of listed charges, puts them
+  at 21.0-28.3x: 34 of the 39 RICH, 3 FAIR (2026-09-18, 2026-09-25 and 2026-10-16) and 2 CHEAP (2026-10-02 and 2026-10-09). The 13 with
+  six months (2026-02-04 to 2026-05-01, all RICH and AVOID) returned -17.9% to -10.8% against SPY's +5.4% to +22.2%; the 26 from
+  2026-05-08 have no outcome yet.
+- **Across 2008-2026 (879 two-year-scored dates) CHEAP held on 143 of 318, RICH on 314 of 559 and FAIR on 0 of 2.** CHEAP cleared the
+  hurdle on 90 and beat SPY on 61 (median two-year return +23.4%); RICH cleared it on 74 and beat SPY on 224 (median +20.5%). No
+  2024-2026 date has a scored CHEAP or FAIR call yet.
+- **The encoding calls, seen afterwards.** The core figures for FY23-FY25 would have turned 22 of the 44 two-year dates FAIR
+  (2024-02-09 to 2024-11-01): all 22 held as RICH and none would have held as FAIR (PEP lagged SPY by 27.5pp or more). The core figures
+  for every year of the window change no two-year class; with the core EPS guides also read as points they turn 15 (12 CHEAP, 3 FAIR,
+  2024-02-09 to 2024-10-04), all failing where all held as RICH. All three variants turn the same 18 dates of 2025 with a year CHEAP
+  (13 FAIR and 5 RICH point in time): those returned a median +0.7% over one year (-12.2% to +14.3%, none beating SPY), against +12.7%
+  on the 26 dates that were CHEAP point in time. Facts about these dates, not reasons to change an encoding: the 2008 core rule was
+  frozen before PEP was built and applied before scoring, and it stays.
+- **GLP-1, seen afterwards.** GLP1 sat on the watch list from 2024-02-09 as text only; the classes and tiers are the same without it,
+  and re-filing would change only the class label. The outcomes cannot say what share of the 2024-2025 losses it explains.
+- **Hypothesis for the method, not a rule:** the one-year order (CHEAP above FAIR above RICH) came from PEP's own path, down from
+  $183.11 (2024-05-16) to $128.02 (2025-06-25), up to $170.49 (2026-02-06) and down to $123.73 (2026-10-07), with SPY up over every
+  two-year window and all but one of the 96 one-year windows (2024-04-05, -1.2%): as in 2008, one stock over three years mostly tests
+  "buy lower". Whether the price state ranks returns when GAAP sits far below core (as in 2024-2025) is a question for other tickers
+  and years, with any change made as a new method version; never fit it to PEP's outcomes.
