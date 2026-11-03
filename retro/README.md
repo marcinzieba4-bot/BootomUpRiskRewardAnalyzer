@@ -5464,6 +5464,185 @@ Judgement calls that could carry hindsight:
   moves);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2024-2026 went; DURABLE (the class label only).
 
+## MSFT (Microsoft): the eighth ticker, in staging
+
+The MSFT series is built apart from ACN, UNP, LOW, AAPL, NKE, AVGO and PEP and shares nothing with them but the machinery: its own
+fact sheet (`retro/facts/MSFT.json`), builder (`retro/build_msft.py`) and engine (`retro/templates/msft_engine.py.tmpl`, the PEP engine
+with software signals). The method is still r2. No fact, parameter, outcome or finding of another ticker enters an MSFT model, and
+neither does the repository's live `msft_signal_model.py` (a 2026 analysis). Outputs go to `staging/retrospective/MSFT/`, beside the
+others, with the same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_msft.py --weekly 2008-01-01 2008-12-31                  # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/MSFT/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series MSFT
+python3 retro/tools/firewall.py 2008-07-01 MSFT
+python3 retro/tools/firewall.py 2009-01-01 MSFT
+```
+
+The 10-Ks from FY1998 to FY2008 were read for the history and the decade's signal values (the FY1998-FY2001 10-Ks are plain-text
+filings), with the Q4 releases of FY2004-FY2006 for the figures they publish excluding one-offs; every 8-K of July 2007 to November 2008
+and the 10-Qs from Q1 FY07 to Q1 FY09 were read, by Opus directly. 289 strings were checked with `verbatim.py` against their own filings,
+and every number of the prints, guides and vintages was matched to the text of its cited source. Each source's date comes from EDGAR's
+acceptance time (converted from UTC; before 2002 EDGAR gives the filing date only). Decided on 2026-11-03, before any MSFT model was built
+or any MSFT outcome computed:
+
+- **Fiscal calendar.** Microsoft's fiscal year ends on June 30 (fiscal 2008 runs from 2007-07-01 to 2008-06-30). The builder maps each
+  day to its fiscal year by that rule and checks it against the year-ends the vintages state. Days between June 30 and the Q4 print keep
+  the last guided year's EPS (the ACN rollover rule): 2008-07-03 and 2008-07-11.
+- **Prices on the as-of share basis** (the UNP rule). Microsoft last split on 2003-02-18 (two-for-one, first stated in the Q2 FY03 10-Q,
+  accepted 2003-01-31 17:23 ET and dated 2003-02-03), so for every 2008 date Yahoo's series is the price as traded: $34.38 on 2008-01-04.
+  The split restates the per-share facts published before it: FY1998 EPS (the FY2002 10-K, $0.84 → $0.42) and the first year's diluted
+  shares (the FY2000 10-K's 5,362M for FY1998 and the FY2001 10-K's 5,482M for FY1999, doubled). The 1998 and 1999 splits precede every
+  per-share fact in the fact sheet.
+- **Every release came after the close.** Each earnings 8-K from Q4 FY07 to Q1 FY09 was accepted at 16:13-16:26 ET (the webcast at 2:30 p.m.
+  Pacific), with the 10-Q filed minutes apart, so a print is dated the next trading day, a Friday each time: 2008-01-25, 2008-04-25,
+  2008-07-18 and 2008-10-24 are the week's dates, and those prints meet that day's close, public before the open (the AAPL 2011 and AVGO
+  2021-2023 rules). The Q1 FY08 release (2007-10-25) gives no statements; its 10-Q, accepted three minutes earlier, supplies the print.
+- **History: each year from the latest 10-K that reports it.** The FY2007 10-K (accepted 2007-08-03 17:13 ET, dated 2007-08-06) gives
+  FY2003-FY2007; FY2002 comes from the FY2006 10-K, FY2001 from the FY2005 10-K, FY2000 from the FY2004 10-K, FY1999 from the FY2003 10-K
+  and FY1998 from the FY2002 10-K. The Q4 FY08 release extends it with FY08 from 2008-07-18, and the FY2008 10-K (accepted 2008-07-31
+  17:23 ET, dated 2008-08-01) moves the window to FY1999-FY2008. Two seams stay in, as published (the LOW and PEP rule):
+  - the SFAS 123 restatement in the FY2004 10-K, which restated fiscal 2002 and 2003 for stock-based compensation ("The information
+    presented for 2000 and 2001 has not been restated"; the FY2005 10-K's summary "reflects stock-based compensation expense except
+    fiscal year 2001"), so FY1998-FY2001 carry no option expense and FY2002 on carry it. The FY2004 10-K gives what FY2000 and FY2001 net
+    income would have been, but no EPS, and nothing is derived;
+  - the FY1999 10-K's restatement of FY1997-FY1998 revenue and cost of revenue (operating income unchanged), which the FY2002 10-K's
+    FY1998 already reflects.
+- **EPS** is diluted EPS before the cumulative effect of accounting changes (the NKE rule): FY2001 $0.69 ($0.66 after the SFAS 133
+  adoption). A company figure excluding one-offs only replaces it (the ACN rule): FY2006 $1.27 and FY2007 $1.49 "as adjusted" in the
+  Q4 FY07 release, excluding the Xbox 360 warranty charges, legal charges and tax benefits (GAAP $1.20 and $1.42). FY2003 $0.69, FY2004
+  $0.75 and FY2005 $1.12 stay GAAP: their releases list the per-share effects of stock-based compensation, impairments, legal charges
+  and tax benefits ("which included after-tax charges ... of $0.35, charges of $0.17 ...") but publish no EPS without them (no figure is
+  derived, the NKE rule). FY2008 enters at GAAP $1.87: the Q4 FY08 release publishes no adjusted figure (the European Commission fine and
+  the tax benefit of the IRS settlement, $0.15 a share each, offset). **No year is excluded:** the largest listed items, FY2001's $4.80
+  billion and FY2002's $4.32 billion of pre-tax investment impairments, are under each year's net income (the AAPL FY2003 test).
+- **Guides in numbers.** Every release guides the next quarter and the fiscal year: revenue, operating income and diluted EPS ranges, in
+  dollars. Method r2 maps them as follows:
+  - current-FY EPS: the midpoint of the latest fiscal-year EPS range for the current year (the ACN rule): FY08 $1.795 from the Q1 FY08
+    release ($1.78-1.81, including about $0.01 of aQuantive integration costs) and $1.865 from the Q2 FY08 release ($1.85-1.88); the Q3
+    FY08 release guides only the fourth quarter and, in words, "double-digit revenue, operating income and earnings per share growth for
+    this fiscal year", so the January range stands to 2008-07-17 (the ACN Q3 FY08 rule); FY09 $2.15 from the Q4 FY08 release ($2.12-2.18)
+    and $2.05 from the Q1 FY09 release ($2.00-2.10). The Q3 FY08 release's "preliminary guidance" for fiscal 2009 ($2.13-2.19) is
+    superseded the day fiscal 2009 becomes current;
+  - BASE growth and the growth factor: the next-quarter revenue range, read as growth on the same quarter a year earlier from its own
+    filing, rounded to 0.1, as published (the AAPL rule; the 2011 rule): Q2 FY08 $15.6-16.1B on Q2 FY07's $12.542B (+24.4% to +28.4%),
+    Q3 FY08 $14.3-14.6B on $14.398B (-0.7% to +1.4%), Q4 FY08 $15.5-15.8B on $13.371B (+15.9% to +18.2%), Q1 FY09 $14.7-14.9B on $13.762B
+    (+6.8% to +8.3%), Q2 FY09 $17.3-17.8B on $16.367B (+5.7% to +8.8%);
+  - no margin step: the operating income ranges are dollar levels, display only (no margin is derived from two guided figures, the AAPL
+    and AVGO rule for an outlook's other lines), so the margin signal takes the latest quarter's change; the fiscal-year revenue range
+    sets the segment bridge's total (display only) and the quarter's EPS range is shown in the guide line.
+- **The technology-guarantee deferral is revenue recognition, not a one-off** (the AAPL Q4 FY08 rule). Fiscal 2007 deferred $1.64
+  billion of revenue from its second quarter (the Express Upgrade to Windows Vista and Office Technology Guarantee programs and
+  pre-shipments) and recognized $1.67 billion in its third; no fiscal year changes, and Microsoft defers upgrade-right revenue as a matter
+  of course (the FY2005 release's "decline in earned revenue from Upgrade Advantage"). So the Q2 and Q3 FY08 prints and the guides read
+  against those quarters stay as reported (Q2 FY08 revenue +30.5%, Q3 FY08 +0.4%), with the company's "as adjusted" figures in the notes
+  (Q2 FY07 $14,179M; Q3 FY07 $12,729M). A comparable operating income replaces GAAP only when the release gives it for both quarters and
+  it excludes only one-offs (the PEP Q4 2007 and Q4 2008 rule): the Q4 FY07 release's pair (the Xbox 360 charges, $1,057M, and Q4 FY06's
+  legal charges, $351M). The Q3 FY08 release's pair also removes the technology-guarantee revenue from Q3 FY07, so that print stays GAAP
+  and keeps the $1.42 billion fine; the Q4 FY08 release gives no adjusted figures, so Q4 FY07 there is GAAP with its Xbox charge.
+- **A recast year-ago quarter** is taken as the release shows it: the Q1 FY09 release presents Q1 FY08 operating income at $5,849M ($5,918M
+  first reported) after the change in the presentation of foreign currency remeasurement gains and losses. The 8-K of 2008-11-20 that recasts
+  FY2004-FY2008 the same way changes no EPS or revenue and no guided number, so the FY2008 vintage keeps its 10-K's figures (the PEP
+  segment-recast rule; operating margins are display only without a margin guide).
+- **Dividends,** each from the first filing that states the rate: $0.10 a quarter (FY2007 10-K, declared June 27, 2007), $0.11 from the
+  Q1 FY08 10-Q (declared September 12, 2007; dated 2007-10-26), $0.11 again in the FY2008 10-K, $0.13 from the Q1 FY09 10-Q (declared
+  September 22, 2008; dated 2008-10-24).
+- **Signals.** Six, with ACN's weights, in the PEP and NKE layout: unearned revenue growth (0.20: short- plus long-term unearned revenue
+  at the quarter's end against the year-ago quarter's end, the multi-year licensing billed ahead of recognition), gross margin change
+  (0.20), revenue growth (0.15, as reported), receivables growth less revenue growth (0.15, lower is better: volume licensing billed ahead
+  of collection), the operating-margin change (0.15; the guided step, else the latest quarter) and the theme slot at 2/4. Values are each
+  release's or its 10-Q's, derived from the income statement and balance sheets; the year-ago balance sheet comes from that quarter's own
+  10-Q or release (the fact sheet keeps the raw figures and the builder re-derives each value).
+- **Thresholds by rule T** over the ten years of the FY2007 10-K, the vintage public on 2008-01-04: FY1998-FY2007. Revenue growth from the
+  five-year summary of the latest 10-K published by then that reports both years, the margins from the income statements of the latest
+  10-K that reports both years, unearned revenue and the receivables gap within each year's own 10-K. A company figure excluding one-offs
+  replaces the reported one where it was published for both years on the same basis: FY2006 and FY2007 operating income as adjusted
+  ($17,581M and $19,735M). The values are in the fact sheet (`rule_t`); the builder recomputes the thresholds and refuses to build if the
+  engine's differ.
+
+  | Signal | Decade (FY1998-FY2007) | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | unearned revenue growth | 103.67, 46.78, 13.61, 16.57, 37.92, 16.43, -9.3, 12.11, 18.93, 16.0 % | -35 / -9 / 17 / 104 % |
+  | gross margin change | 206.2, 186.8, 117.3, -58.1, -464.2, 126.7, 59.2, 274.9, -211.8, -364.1 bp | -1020 / -460 / 90 / 270 bp |
+  | revenue growth | 27.87, 29.39, 16.25, 10.19, 12.13, 13.47, 14.44, 8.02, 11.29, 15.45 % | 2 / 8 / 14 / 29 % |
+  | receivables less revenue | 21.5, 24.4, 28.5, 2.8, 27.6, -12.2, -1.1, 13.9, 18.5, 6.3 pp | 41 / 29 / 16 / -12 pp |
+  | operating margin change | 121.7, 825.0, -274.7, -161.2, -434.3, 49.2, -512.9, 1207.1, 60.1, -109.9 bp | -1000 / -510 / -30 / 1210 bp |
+
+- **Durability.** DURABLE, risk 2, as for the other seven. The "why" is the 10-K's own words: "We generate revenue by developing,
+  manufacturing, licensing, and supporting a wide range of software products for many computing devices", "Challenges to our business
+  model may reduce our revenues and operating margins", with open source ("the popularization of the open source software model continues
+  to pose a significant challenge to our business model"; FY2008: "Certain “open source” software business models challenge our
+  license-based software model") and "the software-as-a-service business model" (FY2008: the model of "revenues primarily from
+  advertising or subscriptions"), and "We face intense competition". No disruption theme in `taxonomy_eras.json` is live for a software
+  maker in 2008 (CLOUD from 2012-10-30, scoped to on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30); no live theme covers
+  the open-source and software-as-a-service risks, so the wording stays in the "why" (the PEP obesity rule). The watch list is empty and
+  the builder refuses events until a theme encoding is decided.
+- **Segment bridge and EPS check** (display only): the vintage's five segments (Client, Server and Tools, Online Services Business,
+  Microsoft Business Division, Entertainment and Devices Division) with each one's growth, the total from the fiscal-year revenue range's
+  midpoint; the EPS check runs on the pre-tax margin, which carries investment income ($1.6 billion in FY2007).
+- **Adds nothing:** the Xbox 360 warranty 8-K (2007-07-05, booked in the Q4 FY07 print), the aQuantive closing (2007-08-13: "not expected
+  to have a significant impact on previously issued fiscal 2008 guidance", words), the XBRL exhibits furnished after each 10-Q and 10-K,
+  the officer and director 8-Ks (2008-01-11, 2008-06-17, 2008-07-25, 2008-09-25), the Yahoo! proposal and its sequels (2008-02-01,
+  2008-02-11, 2008-04-07, 2008-05-05, 2008-05-19: no guided number), the debt program (2008-09-22), the FX-presentation recast
+  (2008-11-20), and the 10-Qs beyond their statements, currency effects and dividends.
+- **Anachronism list:** Microsoft names first seen after the start of 2008 (Windows 7, Windows Azure, Bing, Windows Phone 7, Kinect, Office
+  365, Windows 8, Surface Pro, Xbox One, Nokia Devices and Services, Windows 10, HoloLens, Dynamics 365, Microsoft Teams) join
+  `taxonomy_eras.json`, each dated from the first Microsoft filing that uses it (EDGAR full-text search). No existing model of any ticker
+  contains them, so no output changes. MSFT's source ids are `MS1`-`MS29`: plain `M3`-`M5` are Apple chip names on the list.
+
+Controls: altering one value of each print, vintage, guide, dividend and the split changes no date before its publication and changes the
+first weekly date on or after it (22 of 22; the Q4 FY07 print's FY07 actuals and the Q4 FY07 release's fiscal 2008 guide are superseded
+before 2008-01-04, and the Q3 FY08 release's preliminary fiscal 2009 guide on the day fiscal 2009 becomes current, so those three change
+nothing). Rebuilding the 2008 dates of ACN, UNP, LOW, AAPL, NKE and PEP and the 2009 dates of AVGO changes nothing.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP and BUY on all 53 dates**, robustness 8 of 8 on every date.
+- **The EPP floor is the bubble years' multiple.** The median of the calendar-year P/E lows (on 2008-01-04: 1998 32.1x, 1999 48.1x, 2000
+  30.1x, 2001 31.4x, 2002 31.0x, 2003 33.0x, 2004 23.7x, 2005 19.1x, 2006 14.9x, 2007 15.5x, 2008 19.2x) is 30x, 26x on 2008-12-31
+  when 1998 leaves the window, so the floor is $53-65 against a stock at $19-34: 36-69% below it on every date (+0.20 EPP adjustment).
+  The window's median P/E is 35-37x and its 75th percentile 50-51x, so the stock's 9.3-19.2x is at the 0th-10th percentile.
+- **BEAR is the restatement seam.** The worst year in the history is FY2002 (-30.4%: FY2001's $0.69 without option expense, FY2002's
+  $0.48 with it), so BEAR is -30.4%/yr on every date, at the 10th-percentile P/E: $15-18.
+- **BASE follows the quarter guide, and the deferral swings it:** +27.3%/yr to 2008-01-18 (the Q2 FY08 range against a Q2 FY07 that had
+  deferred $1.64 billion, plus 0.9%/yr of buyback), +1.3%/yr from 2008-01-25 (the Q3 FY08 range against a Q3 FY07 that recognized it),
+  +18.0%/yr from 2008-04-25, +8.8%/yr from the Q4 FY08 print (+9.2% once the FY2008 10-K moves the buyback to FY99-FY08's 1.6%/yr) and
+  +8.9%/yr from 2008-10-24. The growth factor reads +0.50, -0.50, +0.36, -0.50 and -0.50 against the history's median revenue growth
+  (13.5%; 14.0% with FY2008 from the Q4 print, 13.5% again over FY1999-FY2008).
+- **BULL and XBULL** are the FY98-FY07 EPS CAGR (+15.1%/yr; BASE's +27.3% and +18.0% where higher; +16.1% over FY98-FY08 from the Q4
+  print) and the FY98-FY00 run (+42.3%/yr); from the FY2008 10-K, FY99-FY08's +11.4%/yr and FY04-FY06's +30.1%/yr.
+- **The market composite sits at the bottom of its grid** (1.00-1.38, as for AAPL): the hurdle price lies below the BASE case on every
+  date. The adjusted gap is +1.32 to +2.44 and Ratio B 0.03-0.17.
+- **The proxy composite** is 2.45 on Q1 FY08, 3.15 on Q2 FY08 (revenue +30.5%, gross margin +722bp and the receivables gap -13.1pp at
+  XBULL, all lifted by the year-ago deferral), 1.90 on Q3 FY08 (revenue +0.4% and the operating margin -1,526bp at BEAR: the year-ago
+  recognition and the fine), 3.05 on Q4 FY08 (gross margin +611bp at XBULL against a year-ago quarter with the Xbox charge in cost of
+  revenue) and 2.15 on Q1 FY09.
+
+How far each call moves the classes (the 53 dates rebuilt with one encoding changed; no outcome consulted):
+- the technology-guarantee deferral taken out of the guide reads (Q2 FY07 at $14,179M, Q3 FY07 at $12,729M), out of the Q2 and Q3 FY08
+  prints (the company's "as adjusted" pairs), or out of both, would change no class and no tier (BASE +12.7% instead of +27.3% to
+  2008-01-18, +14.4% instead of +1.3% from 2008-01-25);
+- FY2006 and FY2007 at GAAP ($1.20, $1.42) would change nothing;
+- the history and the P/E window from FY2002, the first year on the restated basis (no seam, none of the bubble years), would change no
+  class and no tier: BEAR becomes flat, the floor 21x and the EPP gap -9% to -55%;
+- FY2001 at net EPS ($0.66) and Q1 FY08 operating income as first reported would change nothing.
+
+Judgement calls that could carry hindsight:
+- the signals, chosen by a builder who knows what 2008 and 2009 brought: unearned revenue and the receivables gap (rule T then sets the
+  thresholds mechanically);
+- the technology-guarantee deferral read as revenue recognition rather than a one-off (it swings BASE between +27% and +1%, and four
+  signals on two prints; no class moves);
+- keeping the SFAS 123 seam, which sets BEAR at -30.4%/yr, and the ten-year window, whose bubble-era multiples set the floor (no class
+  moves without either);
+- FY2006 and FY2007 at the company's adjusted figures, legal charges counted as one-offs (no class moves);
+- the January FY08 range standing after the Q3 FY08 release, which predates the fine and the offsetting tax benefit;
+- leaving the open-source and software-as-a-service risks in the "why" rather than reading them as an early CLOUD theme (the registry's
+  live date stands; text only either way);
+- DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -5558,6 +5737,10 @@ What the gates enforce:
   demand for PepsiCo's products ("such as GLP-1 medications" from the FY2025 10-K), PEP also carries GLP1 on the watch list,
   company-acknowledged, with no market read; the theme signal stays with ECOMMERCE (the ACN CLOUD rule). The FY2025 10-K's "artificial
   intelligence shopping agents" are a channel, not a substitute for PepsiCo's products, so GENAI stays off ("PEP 2024-2026").
+  MSFT in 2008 carries none: no theme in the registry is live for a software maker (CLOUD from 2012-10-30, scoped to on-premise IT;
+  OFFSHORE to IT services; GENAI from 2022-11-30), so its watch list is empty ("MSFT"). Its FY2007 and FY2008 10-Ks name open source and
+  "the software-as-a-service business model" (FY2008: revenues "primarily from advertising or subscriptions") as challenges to its
+  license-based model, which no live theme covers; the wording stays in the durability "why" (the PEP obesity rule).
 
 ## Workflow
 
