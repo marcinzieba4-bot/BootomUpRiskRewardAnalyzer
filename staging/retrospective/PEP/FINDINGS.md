@@ -1,14 +1,15 @@
 # PEP retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31, 157
-from 2011-01-07 to 2013-12-31, 156 from 2014-01-10 to 2016-12-30 and 209 from 2017-01-06 to 2020-12-31. They are **labels and
-hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was
-committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in 55a6818; 2011-2013: 29c50f2, documented in b02f4d4; 2014-2016:
-bc27375, documented in 03bc69c; 2017-2020: 53e0347, documented in b1ed84f). Prices run to 2026-10-30 (2017-2020: 2026-11-02); the 2008
-batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (2013-12-30), the 2011-2013
-batch's by 2015-12-30 (2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30), the 2017-2020 batch's by 2022-12-30
-(2023-12-29). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two
-years.
+from 2011-01-07 to 2013-12-31, 156 from 2014-01-10 to 2016-12-30, 209 from 2017-01-06 to 2020-12-31 and 156 from 2021-01-08 to
+2023-12-29. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only
+after its point-in-time build was committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in 55a6818; 2011-2013: 29c50f2,
+documented in b02f4d4; 2014-2016: bc27375, documented in 03bc69c; 2017-2020: 53e0347, documented in b1ed84f; 2021-2023: e58b7d3,
+documented in 17258fc). Prices run to 2026-10-30 (2017-2020 and 2021-2023: 2026-11-02); the 2008 batch's two-year horizons end by
+2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30
+(2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30), the 2017-2020 batch's by 2022-12-30 (2023-12-29), the 2021-2023
+batch's by 2025-12-29 (three-year horizons only for the 147 dates to 2023-10-27, ending by 2026-10-27). Medians of an even count take
+the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -295,3 +296,70 @@ years.
   only removes one-offs larger than the year's income without them. Whether a lower bound, or a company-adjusted figure where its only
   other exclusion is a recurring timing item (PEP's commodity mark-to-market), predicts better is a question for other tickers and
   years, with the change made as a new method version; never fit it to PEP's outcomes.
+
+## 2021-2023 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 1 | -6% | -6% | 0 | 0 | -8% | 0 |
+| class RICH | 155 | +5% | -28% to +43% | 16 | 51 | +1% | 103 |
+| legacy tier WATCHLIST | 1 | -6% | -6% | 0 | 0 | -8% | 0 |
+| legacy tier AVOID | 155 | +5% | -28% to +43% | 16 | 51 | +1% | 103 |
+| FY19 anchor (to the Q4 2020 print) | 5 | +30% | +26% to +32% | 0 | 5 | +22% | 0 |
+| FY20 anchor, Q4 2020 print | 9 | +37% | +32% to +43% | 8 | 9 | +29% | 0 |
+| Q1 2021 print | 13 | +33% | +29% to +40% | 8 | 13 | +20% | 0 |
+| Q2 2021 print | 12 | +23% | +18% to +28% | 0 | 12 | +16% | 0 |
+| Q3 2021 print | 18 | +5% | +1% to +11% | 0 | 12 | +8% | 5 |
+| FY21 anchor, Q4 2021 print | 11 | +6% | +3% to +13% | 0 | 0 | +5% | 11 |
+| Q1 2022 print | 11 | +9% | +0% to +17% | 0 | 0 | +2% | 11 |
+| Q2 2022 print | 13 | +6% | +2% to +12% | 0 | 0 | -0% | 13 |
+| Q3 2022 print | 17 | -7% | -14% to +7% | 0 | 0 | -6% | 17 |
+| FY22 anchor, Q4 2022 print | 11 | -12% | -18% to -3% | 0 | 0 | -6% | 11 |
+| Q1 2023 print | 11 | -24% | -28% to -21% | 0 | 0 | -16% | 11 |
+| Q2 2023 print | 13 | -14% | -22% to -6% | 0 | 0 | -16% | 12 |
+| Q3 2023 print | 12 | -6% | -9% to +3% | 0 | 0 | -13% | 12 |
+| 2021 | 52 | +29% | +3% to +43% | 16 | 51 | +19% | 0 |
+| 2022 | 52 | +5% | -11% to +17% | 0 | 0 | +1% | 52 |
+| 2023 | 52 | -12% | -28% to +3% | 0 | 0 | -14% | 51 |
+
+- **RICH on 155 dates; the call held on 103, and the year decided which.** None of the 52 RICH dates of 2021 held: PEP returned
+  +3.2% to +43.0% over two years (median +28.6%) while SPY returned -7.8% to +12.9% (median +3.3%) over windows that ran through the
+  market's 2022 fall, so PEP beat SPY on 51 (2021-12-17 tied at +4.9%) and cleared the hurdle on 16 (2021-02-12 to 2021-06-25). All 52
+  of 2022 and all 51 RICH dates of 2023 held: PEP returned -11.4% to +17.1% (median +5.4%) and -27.5% to +2.8% (median -12.2%) while SPY
+  returned +3.2% to +64.4% and +26.9% to +70.3%. As in 2014-2020, the call turned on the market's path: RICH's relative half failed
+  whenever the market fell, while its absolute half (missing the hurdle) held on 139 of 155.
+- **The FAIR date lost money.** 2023-10-06 ($160.29, 25.0x FY22's $6.42, the 39th percentile; the last date before the Q3 2023 print)
+  returned -6.1% against SPY's +59.7%: 65.8pp outside FAIR's ±15pp band. The RICH dates either side, 2023-09-29 (-10.9%) and 2023-10-11
+  (-1.1%), held.
+- **The entry price ranked the outcomes; the signals did not.** Across the 156 dates the entry price ranks the two-year returns at
+  Spearman -0.90 (-0.87 on the m12-24 average) and within each year at -0.81 to -0.92. The EPP gap ranks them at -0.66 to -0.89 within
+  years but +0.12 across the batch, because the floor rose with the anchor (20x FY21's $5.49 = $110, then 21x FY22's $6.42 = $135 from
+  2023-02-10) while the price fell. Ratio B ranks them at +0.27, the adjusted gap at -0.29 and the proxy composite at -0.24. One stock over
+  three years mostly tests "buy lower" again.
+- **2023's dates were the worst, on the highest anchor.** From 2023-02-10 every date was anchored on FY22's $6.42 (GAAP, with the Juice
+  Transaction gain of $2.08 a share and the impairment and other charges of $2.12 nearly offsetting), at 24.9-30.5x. Their two-year returns ran from -27.5%
+  (2023-05-12) to +2.8% (median -12.2%), with drawdowns of 25.4% to 33.5% within two years (median 30.1%); the 27 windows from 2023-06-30
+  held the 2025-06-25 close ($128.02). One-year returns had a median of -1.7%; three-year returns (to 2023-10-27, 43 dates) ran from
+  -20.4% to +5.7%, behind SPY on all 43.
+- **Two-year prices landed nearest BULL on 59 dates and BASE on 97, never nearest BEAR or XBULL.** BULL was BASE on every date (+8.8% to
+  +19.0%/yr); the 2021 dates landed nearest it (45 of 52), the 2023 dates nearest BASE (all 52) but far below it (BASE prices of
+  $180-219, at +10.0% to +15.2%/yr). BEAR (-40.8%/yr from FY2018's tax benefits: $27-41) was never approached: the lowest close inside any
+  window was $128.02.
+- **Across 2008-2023 (835 dates) CHEAP held on 143 of 318, RICH on 270 of 515 and FAIR on 0 of 2.** CHEAP cleared the hurdle on 90 and
+  beat SPY on 61 (median two-year return +23.4%); RICH cleared it on 74 and beat SPY on 224 (median +21.8%). No 2021-2023 date was CHEAP.
+- **The encoding calls, seen afterwards.** The core figures with the core guides read as points would have turned 15 RICH dates of
+  August-December 2023 CHEAP or FAIR and 2023-10-06 CHEAP: all 16 would have failed (PEP -15.8% to +2.8% over two years against SPY's
+  +46.1% to +70.3%), where 15 held as RICH. Their 69 tier upgrades (AVOID to WATCHLIST, ACCUMULATE or BUY from 2021-07-14) fell on dates
+  with a median two-year return of -6.7%, none clearing the hurdle and 11 beating SPY. The core figures alone make 2023-09-29 FAIR (which
+  fails; it held as RICH) and, for every year of the window, 2023-10-06 CHEAP (which fails, as FAIR did) with 31 tier upgrades on dates
+  that returned a median -7.7%; the organic revenue guides read as revenue guides make 2023-10-06 RICH, which would have held. Facts about
+  these dates, not reasons to change an encoding: the 2008 core rule was frozen before PEP was built and applied before scoring, and it
+  stays.
+- **GLP-1, seen afterwards.** GLP1 stayed off the watch list in August-December 2023 because no PepsiCo filing named it. The outcomes
+  cannot say what the 2023 losses reflected: re-filing a date under the theme changes its class label only, and the 2023 RICH calls held
+  either way.
+- **Hypothesis for the method, not a rule:** the servings slot was empty for all three years and scored BASE (the AAPL Mac-unit rule),
+  while the releases' own unit volume, which no rule reads, turned negative: convenient foods -1.5%, -2%, -3%, -3% and -1.5% from Q3
+  2022 to Q3 2023, beverages 3%, flat, +1%, -1% and flat. Whether a company's segment unit volumes should stand in for a headline volume
+  measure it stops reporting is a question for other tickers and years, with the change made as a new method version; never fit it to
+  PEP's outcomes.
