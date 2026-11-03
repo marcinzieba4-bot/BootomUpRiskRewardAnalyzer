@@ -4953,6 +4953,196 @@ Judgement calls that could carry hindsight:
   release states no other basis for both years);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2014-2016 went; DURABLE (the class label only).
 
+### PEP 2017-2020: the Tax Act years at GAAP, servings from the 10-Qs, Nasdaq, e-commerce on the watch list, a CHEAP year from FY2018's tax benefits
+
+```bash
+python3 retro/build_pep.py --weekly 2017-01-02 2020-12-31                   # 209 dates, 2017-01-06 .. 2020-12-31
+for c in 2017-02-20 2018-01-01 2018-02-20 2019-01-01 2019-02-20 2020-01-01 2020-02-20 2021-01-01; do python3 retro/tools/firewall.py $c PEP; done
+```
+
+The 62 8-Ks (one an 8-K/A), twelve 10-Qs and four 10-Ks filed from October 2016 to December 2020 were listed from EDGAR with their
+acceptance times; every 8-K's items were read for guides, figures and dividend rates, and the sixteen releases, the 10-Qs' servings
+and dividend notes and the FY2016-FY2019 10-Ks were transcribed by Opus directly, each figure typed and then asserted by script against
+the parsed table of its own filing (the print's quarter, the Q4 releases' full year, each 10-K's statements, segments and cash flow).
+366 strings were checked word for word with `verbatim.py` against their own filings. Each source's date comes from EDGAR's acceptance
+time. Thresholds, signals and the engine are unchanged; the builder gained two encodings that change no earlier output (the e-commerce
+watch list and the listing, below), the firewall's PEP branch also plants a later listing, and SodaStream joins the anachronism list
+(no model of any ticker names it before 2020-02-14). Decided before any 2017-2020 outcome was computed:
+
+- **Four vintages.** The FY2016 10-K (accepted 2017-02-15 16:35 ET, dated 2017-02-16) gives 2012-2016 and the history 2007-2016; the
+  FY2017 10-K (2018-02-13 16:32 ET, dated 2018-02-14) gives 2013-2017 and the history 2008-2017; the FY2018 10-K (Friday 2019-02-15
+  16:23 ET, dated Tuesday 2019-02-19 after Presidents' Day) gives 2014-2018 and the history 2009-2018; the FY2019 10-K (2020-02-13 06:09
+  ET, before the open and two minutes before the Q4 2019 release) gives 2015-2019 and the history 2010-2019, so the Q4 2019 print's
+  full year never extends a history. First-year diluted shares come from the latest 10-K that reports them: 2007's 1,658M (FY2009),
+  2008's 1,602M (FY2010), 2009's 1,577M (FY2011), 2010's 1,614M (FY2012). No 10-K restates an earlier year's EPS or net revenue.
+- **FY2016-FY2019 at GAAP (the 2008 core rule):** $4.36, $3.38, $8.78 and $5.20 from the Q4 prints. Each 10-K's EPS "excluding above
+  items" ($4.85, $5.23, $5.66, $5.53, the releases' core figures) also removes the commodity mark-to-market net impact, so none
+  replaces GAAP. GAAP 2016 is a 53-week year as published (the extra week added $0.04, FY2016 10-K). GAAP 2017 carries the provisional
+  net tax expense of the TCJ Act ($2,451 million, $1.70 a share; $1.73 on the fourth quarter's shares): the AAPL FY2002 test is not met
+  ($2.7 billion of listed charges against $4.9 billion of net income). GAAP 2018 carries "other net tax benefits" of $5,064 million
+  ($3.55 a share, the reorganization of the international operations) and the TCJ Act's $28 million: the mirror test of method r2
+  (listed one-off benefits larger than the year's income without them) is not met ($5.3 billion of listed benefits, with the
+  refranchising and asset-sale gains, against $7.2 billion), so the year stays in, at GAAP. So BEAR, the window's worst year, is 2015's
+  -14.1% to 2018-02-09, 2017's -22.5% ($4.36 to $3.38) from the Q4 2017 print and 2019's -40.8% ($8.78 to $5.20) from the Q4 2019
+  print, and XBULL is 2016-2018's +41.9%/yr from the Q4 2018 print. The vintages' tax rates are as published (FY17 48.9%, FY18 -36.7%):
+  they reach only the display-only EPS check.
+- **No guide gives a field.** 2017: "The Company expects 2017 organic revenue growth of at least 3 percent" and "core earnings per
+  share of $5.09", then $5.13 (Q2 2017) and $5.23 (Q3 2017, with organic growth "to approximate our year-to-date growth rate"); 2018:
+  core EPS of $5.70, then $5.65 (Q3 2018), with organic growth "at least in line with the 2017 growth rate", then "at least 3 percent";
+  2019: organic growth "to be 4 percent" and an implied core EPS of $5.50, the Q3 2019 release expecting "to meet or exceed" the 4
+  percent; 2020: organic growth of 4 percent and an implied core EPS of $5.88. The EPS figures are on the core basis (the 2008 core
+  rule); the revenue figures are organic, which removes acquisitions, divestitures, currency and the extra week, so they are not the
+  measure the method uses (as for the prints, and the 2016 guide): display only. The Q4 2018 release's long-term targets (4 to 6
+  percent organic revenue growth, core operating margin expansion of 20 to 30 basis points) are later years' targets on those bases,
+  with no input (the UNP 2018 rule). The Q1 2020 release: "the Company's previous financial outlook regarding fiscal year 2020 is no
+  longer applicable"; the Q2 2020 release repeats it; the Q3 2020 release (dated 2020-10-01) expects organic growth of "approximately 4
+  percent" and core EPS of $5.50. A withdrawal of guides that gave no field changes no input. No reiteration 8-K was filed in these
+  years. The last full year's EPS stands (the rollover rule): FY15's $3.67 to 2017-02-10, FY16's $4.36 from 2017-02-16, FY17's $3.38
+  from 2018-02-14, FY18's $8.78 from 2019-02-15, FY19's $5.20 from 2020-02-14.
+- **Growth excluding currency: reported growth less the stated currency effect** (the NKE rule, as from Q4 2012), both from the table
+  that opens each release ("Net revenue change/growth/performance" and "Foreign exchange impact on net revenue"); a "—%" or "even" is
+  0% (the Q1 2014 rule). +7.0% (Q4 2016: +5.0% and 2 points; the 53rd week's 3.5 points in), +2.6%, +3.5% and +2.3% (Q1-Q3 2017), -1.0%
+  (Q4 2017: even, with 1 point of favorable currency; 16 weeks against 17), +2.3%, +1.4% and +3.5% (2018), +4.0% (Q4
+  2018: even against 4 points), +5.6%, +5.2% and +5.3% (2019), +5.7% (Q4 2019, no currency effect), +7.7%, +0.9% and +7.3% (Q1-Q3 2020:
+  +7.7%, -3.1% against 4 points, +5.3% against 2). The 53rd week, divestitures, SodaStream (from December 2018) and the 2020
+  acquisitions stay in, as published (the AVGO rule, as in 2010-2016). Organic growth (-0.3% to +7.9%), which removes them, is not used.
+- **Servings from the 10-Qs.** No release of 2017-2020 states total servings; each 10-Q does, so `servings_later` takes it: +0.5% (Q1
+  2017), 0% for Q2 and Q3 2017 ("total servings was even with the prior year", read as 0%: the Q1 2014 "even" rule), +1%, +1% and +3%
+  (2018), +4%, +3% and +4% (2019), +6%, +1% and +13% (2020: "which reflects the impact of the revised guidelines on our prior-year
+  servings", the FDA's 12-ounce serving for most beverages from 2020-01-01 applied to both years; Q3 "primarily reflecting the contributions from
+  our recent acquisitions"), all as published. The 10-Qs of 2017-2018 came after the close and count from the next trading day; from
+  2019 each 10-Q was accepted minutes before its release (06:03-06:07 ET), so its servings arrive with the print; Q3 2020's came after
+  the close with the release. No filing states a fourth quarter's total servings, so those slots stay empty (the AAPL Mac-unit rule),
+  and the franchise line shows each 10-K's figure for the year from its date: +3% for 2016 (+2% without the extra week), -1% for 2017,
+  +1% for 2018, +4% for 2019 ("primarily reflecting our acquisition of SodaStream").
+- **Dividends,** the latest declared rate: $0.7525 a quarter to 2017-07-10; $0.805 from the Q2 2017 release (2017-07-11) and $0.9275
+  from the Q2 2018 release (2018-07-10), each "Cash dividends declared per common share"; $0.955 from the Q2 2019 10-Q and $1.0225 from
+  the Q2 2020 10-Q ("Cash dividends declared per common share were $0.955 and $0.9275 for the 12 weeks ended June 15, 2019 and June 16,
+  2018, respectively"), each accepted minutes before that morning's release: the 2019 and 2020 releases state no dividend per share,
+  and no 8-K of 2017-2020 states a declaration. The increases announced with each year's Q4 results (to $3.22, $3.71, $3.82 and $4.09
+  annualized, "effective with the dividend expected to be paid in June") were announcements (the AAPL 2012 rule, as for 2010-2016).
+- **The non-service pension cost.** From Q1 2018 PepsiCo presents the non-service components of pension cost below operating profit
+  (ASU 2017-07) and each 2018 release recasts the prior-year quarter, so each print's operating margin change compares the two years
+  as its release states them (the 2016 cost-of-sales rule, which also covers the Q4 2016 release's reclassified 2015 cost of sales).
+  The 8-K of 2018-02-27 (the recast quarterly operating profit of 2016 and 2017) "does not revise or restate PepsiCo's previously
+  reported consolidated financial statements": it adds nothing (the ACN 2024-09-30 rule, as for the 2008 segment recasts); the FY2017 vintage keeps the 10-K's
+  $10,509 million until the FY2018 10-K. Net revenue is never recast.
+- **Segments.** Six through the FY2018 10-K (North America Beverages is "PepsiCo Beverages North America" in the 2019 releases); the
+  FY2019 10-K realigns Europe Sub-Saharan Africa and Asia, Middle East and North Africa into Europe, Africa, Middle East and South Asia,
+  and Asia Pacific, Australia and New Zealand and China region "during the fourth quarter of 2019": each vintage's bridge and business
+  line take its own 10-K's segments.
+- **E-commerce on the watch list from 2018-02-14.** ECOMMERCE (live from 2015-01-01) is scoped to e-commerce displacing physical
+  retail, grocery and distribution. The FY2014-FY2016 10-Ks name e-commerce only among the channels larger retailers might use ("other
+  distribution channels such as e-commerce ... the competitive advantages we derive from our go-to-market systems and brand equity may
+  be eroded"), under a heading about "changes to the retail landscape". The FY2017 10-K is the first whose risk-factor heading names it:
+  "The loss of, or a significant reduction in sales to, any key customer or disruption in the retail landscape, including rapid growth
+  in hard discounters and the e-commerce channel, could adversely affect our business, financial condition or results of operations."
+  So PEP carries ECOMMERCE on the watch list from that 10-K's date, company-acknowledged, with no market read (the NKE and LOW rule),
+  each 10-K's wording replacing the last (FY2018: a heading of its own; FY2019: "can adversely affect"), on 151 dates. The factor pair
+  nets to zero and the theme signal stays at 2/4, so only text changes; no dated evidence ties PepsiCo's multiple to e-commerce. Decided
+  from the filings' wording before any outcome; the builder gained the NKE encoding (`ecommerce_company_acknowledged`).
+- **Nasdaq.** The 8-K of 2017-12-08 (16:35 ET, dated 2017-12-11) transfers the listing from the New York Stock Exchange "effective
+  December 19, 2017 after market close"; "PepsiCo shares are expected to begin trading as a Nasdaq-listed security on December 20,
+  2017". A new fact-sheet key, `listings`, names the exchange once announced and effective, so the model's header and price line read
+  Nasdaq from 2017-12-22 (display only; the NYSE before, so no earlier model changes).
+- **Calendar.** Every release came before the open (8-Ks accepted 06:00-06:33 ET; calls at 7:45 or 8 a.m. ET, question-and-answer
+  calls at 8:15 a.m. in 2020) except Q3 2020, whose 8-K was accepted at 17:56 ET on 2020-09-30 for a release dated October 1: after the
+  close, so it counts from 2020-10-01 (the UNP Q1 2011 rule). The Q4 2018 release came on Friday 2019-02-15 before the open, so the print
+  meets that day's close; the Q1 2019 release on 2019-04-17 was followed by Good Friday. The weeks' dates are 2017-02-16, 2017-04-27,
+  2017-07-12, 2017-10-05, 2018-02-14, 2018-04-27, 2018-07-11, 2018-10-03, 2019-02-15, 2019-04-18, 2019-07-10, 2019-10-04, 2020-02-14,
+  2020-04-29, 2020-07-14 and 2020-10-02. The next print's timing in each print's note is the year-ago quarter's (public), not the
+  actual next date (earlier prints mostly took the actual one: display text only).
+- **Durability is unchanged:** DURABLE, risk 2, with each 10-K's own words (FY2016 and FY2017: "a complementary portfolio of enjoyable
+  brands", from FY2018 "of brands"; the U.S. liquid refreshment beverage shares of PepsiCo and The Coca-Cola Company were 24% and 20%
+  in 2016, 23% and 20% in 2017, 22% and 20% in 2018 and 2019). The FY2019 10-K adds to its competitors "smaller companies developing
+  and selling micro brands directly to consumers through e-commerce platforms" (not quoted in the "why"; the e-commerce risk is on the
+  watch list). EV and CRYPTO, live from 2020, are scoped to other industries; GLP1 is not live until 2023-08-08.
+- **Adds nothing:** the officer, director, compensation and annual-meeting 8-Ks; the note offerings, redemptions, and tender and
+  exchange offers (2016-10-03 to 2020-10-09); the credit agreements (2017-06-06, 2018-06-05, 2020-06-03); the SodaStream agreement
+  (2018-08-20, $3.2 billion, no guided figure) and completion (2018-12-06); the pension recast (2018-02-27); the by-law amendment and
+  virtual annual meeting (2020-04-16); and the 10-Qs beyond their servings and dividends.
+
+Corrections to 2013-2016, found while extending the series and applied before any 2017-2020 outcome: the Q4 2012-2015 prints' servings
+notes cited the next 10-K's figure for the year ("the FY2012 10-K gives +3% for the year"), which that 10-K published after the print:
+on 2013-02-15, 2014-02-14 and 2015-02-12 a model showed it before it was public. The notes now say only that no filing states the
+quarter's total servings; the franchise line shows each 10-K's figure from its own date, as intended. Text only, on 38 dates (the
+volume line, and the franchise line on those three): no metric, class, tier or outcome moves. A check now finds no model that cites a
+10-K or 10-Q dated after it, and no fact whose text cites a later filing apart from the Q3 2007 print, whose currency effect comes from
+the 10-Q filed the next day by design ("PEP") and which no model dated before that 10-Q uses.
+
+Controls: altering one value of each print, `servings_later`, vintage, guide, dividend, event and listing published from 2016-12-01
+changes no date before its publication (a listing: its effective date) and changes the first weekly date on or after it (56 of 56). No
+string of any dated fact appears in a model dated before it (448,581 checks over the 679 PEP models). The firewall at 2017-02-20,
+2018-01-01, 2018-02-20, 2019-01-01, 2019-02-20, 2020-01-01, 2020-02-20 and 2021-01-01 changes no model before its cutoff (477, 522,
+529, 574, 581, 626, 633 and 679 dates); the cutoffs after each Q4 print are those where the `servings_later` plant fires. The 470 dates
+of 2008-2016 rebuild byte-identical apart from the 38 corrected. Beyond the 209 new entries in the index, the files shared with other
+tickers that changed are the firewall (the listing plant, a key no other ticker has) and the anachronism list (SodaStream).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH and AVOID on 156 of 209 dates, CHEAP and BUY on 52, FAIR and WATCHLIST on 1.** RICH and AVOID from 2017-01-06 to 2019-02-08
+  (110 dates), CHEAP and BUY from 2019-02-15 to 2020-02-07 (52), RICH and AVOID from 2020-02-14 (46), except FAIR and WATCHLIST on
+  2020-03-20. By year: RICH on all 52 dates of 2017 and all 52 of 2018; CHEAP on 46 of 2019 and RICH on its first 6; RICH on 46 of 2020,
+  CHEAP on its first 6 and FAIR on 1. The tier agrees on 6 to 8 of the 8 robustness variants (8 on 161 dates), the valuation verdict on
+  2 to 8 (8 on 140).
+- **EPS anchors on the last full year:** FY15's $3.67 to 2017-02-10 (27.7-28.9x, the 92nd-97th percentile), FY16's $4.36 to 2018-02-09
+  (24.8-27.9x, the 83rd-100th), FY17's $3.38 to 2019-02-08 (28.8-36.1x, the 84th-100th: the Tax Act charge in it), FY18's $8.78 from
+  2019-02-15 to 2020-02-07 (13.1-16.6x, the 10th-34th, at $115.23-145.37: the tax benefits in it) and FY19's $5.20 from 2020-02-14
+  (20.0-28.5x, the 51st-90th, at $103.93-148.30). The 2019 CHEAP year is FY2018's tax benefits: the price did not fall.
+- **The EPP floor:** 16x on FY15's, FY16's and FY17's EPS ($58.72, $69.76, $54.08), 18x from 2019-01-04 ($60.84), 15x on FY18's $8.78
+  from 2019-02-15 ($131.70), 18x on FY19's $5.20 from 2020-02-14 ($93.60) and 19x on 2020-12-31 ($98.80). The price was below the
+  floor on 22 dates, 2019-02-15 to 2019-08-23 (by 0.4% to 12.5%), and above it on every other date, by up to 125.5% (2018-11-30, on
+  FY17's $3.38).
+- **BEAR** is -14.1%/yr to 2018-02-09, -22.5% from the Q4 2017 print and -40.8% from the Q4 2019 print. **BULL** is the window's EPS
+  CAGR, floored at BASE on most dates: +0.6%/yr (2008-2017) from 2018-02-14 against BASE's +0.2%, +10.6% (2008-2018, FY18 from the Q4
+  print) on 2019-02-15, +9.8% (2009-2018) from the FY2018 10-K, +3.2% (2010-2019) against BASE's +2.4% from 2020-07-14. **XBULL** is
+  +10.4%/yr (2008-2010) to 2019-02-08 and +41.9% (2016-2018) from 2019-02-15. The price stood above the BULL value on 97 dates, all
+  before 2019-02-15 (Ratio B `inf`).
+- **BASE followed the quarter's growth plus the buyback** (+1.1 to +1.5 points): +2.5%/yr (Q3 2016) to 2017-02-10, +8.5% (Q4 2016, the
+  extra week in), +4.1%, +5.0% and +3.8% (Q1-Q3 2017), +0.2% (Q4 2017), +3.5%, +2.6% and +4.7% (Q1-Q3 2018), +5.2% and +5.1% (Q4 2018,
+  before and after the FY2018 10-K), +6.7%, +6.3% and +6.4% (Q1-Q3 2019), +7.2% (Q4 2019), +9.2%, +2.4% and +8.8% (Q1-Q3 2020). On the
+  CHEAP dates Ratio B was 0.33 to 0.71 and the BASE price $175-180.
+- **The proxy composite** was 2.30 on Q3 2016, 2.15 on Q4 2016 (no servings: an empty slot scores BASE), 2.10 on Q1 2017 (servings
+  +0.5% at BEAR, operating margin +239bp at XBULL), 1.80 on Q2 2017 (servings 0%), 2.15 on Q3 and Q4 2017, 1.95 on Q1-Q3 2018 (servings
+  +1%, +1% and +3%, each below the decade's worst year of 4%), 2.20 on Q4 2018 (gross margin +73bp), 2.35 on Q1 2019 (servings +4%,
+  gross margin +87bp, operating margin +120bp), 1.85 on Q2 2019 (servings +3% and operating margin -223bp at BEAR), 2.20 on Q3 2019,
+  2.35 on Q4 2019, 2.55 on Q1 2020 (servings +6% and net revenue +7.7% at BULL, operating margin -172bp at BEAR), 1.85 on Q2 2020
+  (servings +1% and operating margin -205bp at BEAR) and 2.40 on Q3 2020 (servings +13% with the acquisitions, at XBULL).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed; no outcome consulted):
+- the core figures in the history (FY16 $4.85, FY17 $5.23, FY18 $5.66, FY19 $5.53) would change 52 classes (CHEAP to RICH on every date
+  from 2019-02-15 to 2020-02-07) and 59 tiers (those 52 BUY to AVOID; AVOID to WATCHLIST on the six dates from 2018-04-27 to 2018-06-01;
+  WATCHLIST to ACCUMULATE on 2020-03-20);
+- those and the core EPS guides read as points (FY17 $5.09, $5.13, $5.23; FY18 $5.70, then $5.65; FY19 $5.50; FY20 $5.88 until the
+  withdrawal of 2020-04-28, $5.50 from 2020-10-01) would change 59 classes (the 52; RICH to FAIR or CHEAP on five dates from 2018-05-04
+  to 2018-06-01; FAIR to CHEAP on 2020-03-20 and RICH to FAIR on 2020-03-27) and 78 tiers;
+- FY18 without the stated tax benefits ($5.21: $8.78 less $3.55 and $0.02, a derived figure, as a test only) would change the same 52
+  classes and 52 tiers (BUY to AVOID);
+- FY17 without the Tax Act charge ($5.08: $3.38 plus the stated $1.70, a derived figure, as a test only) would change 1 class (FAIR to
+  RICH on 2020-03-20) and 9 tiers (AVOID to WATCHLIST on the eight dates from 2018-04-20 to 2018-06-08, and 2020-03-20); both derived
+  figures together, 52 classes and 60 tiers;
+- the stated organic growth for every print (-0.3% to +7.9%: the extra week, structural changes and currency out) would change 1 class
+  and 1 tier (FAIR to RICH and WATCHLIST to AVOID on 2020-03-20);
+- the organic revenue guides read as fiscal-year revenue guides (4 percent for 2019, about 4 percent from 2020-10-01) would change
+  nothing;
+- servings from the releases only (no `servings_later`), and "was even with the prior year" read as no figure, would change nothing;
+- the dividends dated from the announcements (2017-02-15, 2018-02-13, 2019-02-15, 2020-02-13) would change nothing;
+- no e-commerce watch list would change nothing (text only, by construction).
+
+Judgement calls that could carry hindsight:
+- the 2008 core rule, which keeps FY16-FY19 at GAAP, together with the mirror test's threshold, which keeps FY2018's $5.1 billion of tax
+  benefits in: the CHEAP and BUY year from 2019-02-15 to 2020-02-07 rests entirely on them (52 classes with the core figures or with
+  FY18 without the benefits). Both rules were frozen before PEP was built (2026-11-01 and 2026-11-02) and are applied as written, but
+  whether a non-cash tax benefit should anchor a multiple is the question an analyst in 2019 would have asked, and its answer is the
+  call that moves the most in this range;
+- keeping the extra week, divestitures and acquisitions in growth (1 class);
+- ECOMMERCE on the watch list from the FY2017 10-K rather than from the FY2014 10-K's "other distribution channels such as e-commerce"
+  (text only);
+- `servings_later` from the 10-Qs, "even" read as 0%, and the empty fourth quarters (no class moves);
+- dating dividends from their declarations (no class moves);
+- the pension recast and the 2019 segment realignment adding nothing, and each 2018 print's operating margin change on its release's
+  recast basis (not tested: the releases state no other basis for both years);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2017-2020 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -5033,7 +5223,11 @@ What the gates enforce:
   PEP in 2008 carries none: no theme in the registry is live for a beverage and convenient-food company (GLP1, whose scope names
   snacks and beverages, from 2023-08-08; ECOMMERCE is scoped to physical retail, OFFSHORE to IT services), so its watch list is
   empty ("PEP"). Its FY2006 and FY2007 10-Ks name "consumer health concerns about obesity" as a risk, which no theme in the registry
-  covers before GLP1; the wording stays in the durability "why".
+  covers before GLP1; the wording stays in the durability "why". The list stays empty through 2017: the FY2014-FY2016 10-Ks name e-commerce
+  only among the channels larger retailers might use. From the FY2017 10-K (2018-02-14), the first whose risk-factor heading names
+  "disruption in the retail landscape, including rapid growth in hard discounters and the e-commerce channel" as a risk to its business,
+  PEP carries ECOMMERCE on the watch list, company-acknowledged, with no market read (the NKE and LOW rule); the FY2018 and FY2019 10-Ks
+  keep the heading, so it stays there through 2020. EV and CRYPTO, live from 2020, are scoped to other industries ("PEP 2017-2020").
 
 ## Workflow
 
