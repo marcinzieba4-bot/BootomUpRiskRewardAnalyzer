@@ -1,12 +1,14 @@
 # PEP retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the PEP weekly dates: 53 from 2008-01-04 to 2008-12-31, 104 from 2009-01-09 to 2010-12-31, 157
-from 2011-01-07 to 2013-12-31 and 156 from 2014-01-10 to 2016-12-30. They are **labels and hypotheses**: never feed them back into
-the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008: 4b429b6;
-2009-2010: 88ba341, documented in 55a6818; 2011-2013: 29c50f2, documented in b02f4d4; 2014-2016: bc27375, documented in 03bc69c).
-Prices run to 2026-10-30; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by
-2012-12-28 (2013-12-30), the 2011-2013 batch's by 2015-12-30 (2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30). Medians
-of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+from 2011-01-07 to 2013-12-31, 156 from 2014-01-10 to 2016-12-30 and 209 from 2017-01-06 to 2020-12-31. They are **labels and
+hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was
+committed and pushed (2008: 4b429b6; 2009-2010: 88ba341, documented in 55a6818; 2011-2013: 29c50f2, documented in b02f4d4; 2014-2016:
+bc27375, documented in 03bc69c; 2017-2020: 53e0347, documented in b1ed84f). Prices run to 2026-10-30 (2017-2020: 2026-11-02); the 2008
+batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2010 batch's by 2012-12-28 (2013-12-30), the 2011-2013
+batch's by 2015-12-30 (2016-12-30), the 2014-2016 batch's by 2018-12-28 (2019-12-30), the 2017-2020 batch's by 2022-12-30
+(2023-12-29). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two
+years.
 
 ## 2008 (53 dates)
 
@@ -215,3 +217,81 @@ of an even count take the upper middle value (`statistics.median_high`). The 15%
   CHEAP: they returned +28% to +32% against SPY's +9% to +17%, so as CHEAP they would have held (one, 2014-04-04 at +32.3%, also
   cleared the hurdle) where as RICH they failed. Facts about seven dates, not reasons to change an encoding: the calls were decided
   before scoring and stay; changing a rule means a new method version tested elsewhere.
+
+## 2017-2020 (209 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 52 | +22% | +13% to +36% | 2 | 0 | +8% | 2 |
+| class FAIR | 1 | +65% | +65% | 1 | 0 | +51% | 0 |
+| class RICH | 156 | +28% | +6% to +47% | 50 | 83 | +18% | 57 |
+| legacy tier BUY | 52 | +22% | +13% to +36% | 2 | 0 | +8% | 2 |
+| legacy tier WATCHLIST | 1 | +65% | +65% | 1 | 0 | +51% | 0 |
+| legacy tier AVOID | 156 | +28% | +6% to +47% | 50 | 83 | +18% | 57 |
+| FY15 anchor (to the Q4 2016 print) | 6 | +13% | +12% to +13% | 0 | 0 | +6% | 6 |
+| FY16 anchor, Q4 2016 print | 10 | +14% | +10% to +18% | 0 | 0 | -0% | 10 |
+| Q1 2017 print | 11 | +20% | +14% to +21% | 0 | 0 | -0% | 11 |
+| Q2 2017 print | 12 | +22% | +16% to +28% | 0 | 5 | +3% | 7 |
+| Q3 2017 print | 19 | +24% | +20% to +37% | 2 | 11 | +9% | 8 |
+| FY17 anchor, Q4 2017 print | 10 | +27% | +6% to +42% | 4 | 10 | +22% | 0 |
+| Q1 2018 print | 11 | +38% | +27% to +47% | 7 | 11 | +31% | 0 |
+| Q2 2018 print | 12 | +27% | +21% to +32% | 0 | 12 | +19% | 0 |
+| Q3 2018 print | 19 | +33% | +24% to +42% | 11 | 4 | +22% | 7 |
+| FY18 anchor, Q4 2018 print | 9 | +22% | +18% to +25% | 0 | 0 | +16% | 0 |
+| Q1 2019 print | 12 | +20% | +15% to +22% | 0 | 0 | +7% | 0 |
+| Q2 2019 print | 12 | +26% | +17% to +28% | 0 | 0 | +8% | 0 |
+| Q3 2019 print | 19 | +27% | +13% to +36% | 2 | 0 | +8% | 2 |
+| FY19 anchor, Q4 2019 print | 11 | +31% | +19% to +65% | 5 | 0 | +19% | 6 |
+| Q1 2020 print | 11 | +34% | +26% to +37% | 8 | 5 | +23% | 2 |
+| Q2 2020 print | 11 | +33% | +29% to +38% | 8 | 11 | +21% | 0 |
+| Q3 2020 print | 14 | +32% | +23% to +43% | 6 | 14 | +19% | 0 |
+| 2017 | 52 | +20% | +10% to +34% | 1 | 12 | +3% | 40 |
+| 2018 | 52 | +30% | +6% to +47% | 19 | 41 | +21% | 7 |
+| 2019 | 52 | +22% | +13% to +39% | 4 | 0 | +8% | 2 |
+| 2020 | 53 | +32% | +19% to +65% | 29 | 30 | +20% | 10 |
+
+- **CHEAP on 52 dates; the call held on 2, and the cheapness was FY2018's tax benefits.** Every CHEAP date (2019-02-15 to
+  2020-02-07) is anchored on FY18's GAAP $8.78, which carries $5.1 billion of non-cash tax benefits (13.1-16.6x it). PEP returned
+  +12.9% to +35.6% over two years (median +22.2%) while SPY returned +37.3% to +61.0% (median +49.6%): none beat SPY, and only
+  2020-01-03 ($135.63, +33.6%) and 2020-01-10 ($134.53, +35.6%) cleared the hurdle. Every two-year price landed nearest BASE, at 0.75-0.98
+  times a BASE price ($175-180) built on $8.78. One-year returns had a median of +6.7%; three-year returns ran from +26.8% to +54.5%
+  (median +41.7%), ahead of SPY on 23 of 52; every window held the 2020-03-20 close ($103.93), a 29.3% drawdown from the February
+  peak.
+- **RICH on 156 dates; the call held on 57, and which ones held followed SPY again.** PEP missed the hurdle on 106 of the 156
+  (two-year returns +6.2% to +46.7%, median +28.2%) and beat SPY on 83, so the call turned on the market's path, as in 2014-2016. It
+  held on all 34 from 2017-01-06 to 2017-08-25 (PEP +10% to +22%, SPY +15% to +29%); failed on the 11 from 2017-09-01 to 2017-11-10
+  (PEP +24% to +34% against SPY +20% to +25%); held on 8 of the 9 to 2018-01-12; failed on all 40 from 2018-01-19 to 2018-10-19,
+  whose two-year windows ended in 2020, through the crash (SPY -9.3% to +31.8%, PEP +6.2% to +46.7%); held on 7 of the 16 to
+  2019-02-08 (the 8 from 2018-12-07 to 2019-01-25 failed by clearing the hurdle while lagging SPY); and held on 8 of the 46 in 2020,
+  failing on all 30 from 2020-06-12, whose windows ended in 2022 (PEP +23% to +43%, SPY +5.5% to +33.9%). RICH marked neither a loss
+  nor a lag: its median two-year return (+28.2%) was above CHEAP's (+22.2%); its largest drawdowns within two years were -13.1% to
+  -29.3% (median -21.0%); one-year returns had a median of +15.0%, three-year returns +11.1% to +72.1% (median +40.8%), ahead of SPY on
+  36 of 156.
+- **Nothing ranked the outcomes across the batch, and the floor broke with its anchor.** Across the 209 dates the EPP gap ranks the
+  two-year returns at Spearman +0.11 (+0.21 on the m12-24 average), the entry price at +0.03, Ratio B at +0.07, the adjusted gap at
+  -0.11 and the proxy composite at -0.01, where each earlier batch had the gap and the entry price at -0.43 to -0.92. Within years the entry
+  price still ranks 2018 (-0.62) and 2020 (-0.54). The floor moved with the GAAP anchor, from $54.08 (16x FY17's $3.38, after the Tax
+  Act charge) to $131.70 (15x FY18's $8.78, with the tax benefits) within a year: the 22 dates below it (2019-02-15 to 2019-08-23)
+  returned a median +21.8%, none clearing the hurdle or beating SPY, the reverse of 2008-2016, when nearness to the floor marked the
+  best entries; the 121 dates more than 50% above it (mostly 2017-2018, on FY16's and FY17's GAAP EPS) returned +25.9%.
+- **The COVID low was the best entry, and FAIR.** 2020-03-20 ($103.93, 20.0x FY19's $5.20, the 51st percentile) returned +64.7% and
+  cleared the hurdle, but lagged SPY's +99.3% by 34.5pp, so FAIR (within 15pp of SPY) failed. The RICH dates either side: 2020-03-13
+  ($127.45, +27.2%) held; 2020-03-27 ($120.46, +44.1%) failed by clearing the hurdle.
+- **Two-year prices landed nearest XBULL on 100 dates, BULL on 57 and BASE on 52 (the CHEAP dates), never nearest BEAR.** RICH's
+  two-year prices were 0.99-1.79 times BULL and 1.18-2.26 times BASE, mostly built on GAAP anchors that one-offs had lowered (FY15's
+  Venezuela charges to 2017-02-10, FY17's Tax Act charge through 2018). No two-year path went below its BEAR price.
+- **Across 2008-2020 (679 dates) CHEAP held on 143 of 318, RICH on 167 of 360 and FAIR on 0 of 1.** CHEAP cleared the hurdle on 90 and
+  beat SPY on 61; RICH cleared it on 58 and beat SPY on 173; the median two-year returns are +23.4% and +24.1%. In 2017-2020 the price
+  state no longer said even the absolute part: CHEAP's median (+22%) trailed RICH's (+28%), because CHEAP was the tax benefit.
+- **The encoding calls, seen afterwards.** The core figures in the history, or FY18 without its stated tax benefits, turn the 52
+  CHEAP dates RICH: as RICH they would have held on 50 (failing only on 2020-01-03 and 2020-01-10, which cleared the hurdle), against 2
+  as CHEAP. With the core guides also read as points, 2018-05-11 and 2018-05-18 would have been CHEAP and held (+45.7%, +46.7%),
+  2018-05-04, 2018-05-25 and 2018-06-01 FAIR and failed (PEP beat SPY by 23-29pp), 2020-03-20 CHEAP and held, and 2020-03-27 FAIR and
+  failed. FY17 without the Tax Act charge, or organic growth, makes 2020-03-20 RICH, which fails too. Facts about these dates, not
+  reasons to change an encoding: the 2008 core rule and the distorted-year test were frozen before PEP was built and applied before
+  scoring, and they stay; changing a rule means a new method version, tested elsewhere first.
+- **Hypothesis for the method, not a rule:** a year's GAAP EPS moved by large one-off tax items (FY17's charge, FY18's benefits, 42%
+  of that year's net income) set the P/E anchor, the floor and every scenario more than the market did, and the distorted-year test
+  only removes one-offs larger than the year's income without them. Whether a lower bound, or a company-adjusted figure where its only
+  other exclusion is a recurring timing item (PEP's commodity mark-to-market), predicts better is a question for other tickers and
+  years, with the change made as a new method version; never fit it to PEP's outcomes.
