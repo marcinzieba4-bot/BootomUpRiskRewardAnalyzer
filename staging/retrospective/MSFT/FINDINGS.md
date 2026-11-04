@@ -1,14 +1,15 @@
 # MSFT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MSFT weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
-never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719; 2018-2020: 567b23c; 2021-2023: 63b6804). The
-2008-2011 outcomes were computed on 2026-11-03 and the 2012-2023 ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12
-currency correction (retro/README.md, "MSFT 2012-2014") were re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure
-below still holds. The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30
-(2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29), the 2018-2020
-batch's by 2022-12-30 (2023-12-29), the 2021-2023 batch's by 2025-12-29 (three-year: 2026-11-03; the eight dates from 2023-11-10 have
-none yet). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+Patterns seen in `outcome.json` for the MSFT weekly dates: 983 from 2008-01-04 to 2026-10-30. They are **labels and hypotheses**: never
+feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed
+(2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719; 2018-2020: 567b23c; 2021-2023: 63b6804; 2024-2026:
+3827093). The 2008-2011 outcomes were computed on 2026-11-03 and the 2012-2026 ones on 2026-11-04; the eleven dates of 2011 rebuilt for
+the Q1 FY12 currency correction (retro/README.md, "MSFT 2012-2014") were re-scored on 2026-11-04 with unchanged values, and every
+2009-2011 figure below still holds. The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011
+batch's by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29),
+the 2018-2020 batch's by 2022-12-30 (2023-12-29), the 2021-2023 batch's by 2025-12-29 (three-year: 2026-11-03; the eight dates from
+2023-11-10 have none yet); prices end on 2026-11-03, so of the 2024-2026 batch only the 44 dates to 2024-11-01 have two years. Medians
+of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -338,3 +339,55 @@ none yet). Medians of an even count take the upper middle value (`statistics.med
   2022-06-02, the Q2 FY23 operating income and GENAI move no class; GENAI's 22 dates (from 2023-08-04, text only) returned +27% to +65%
   and beat SPY on 11. Whether generative AI proved a threat to Microsoft or a franchise for it is hindsight and stays out of the registry
   question. The calls were decided before scoring and stay; changing a rule means a new method version tested elsewhere.
+
+## 2024-2026 (148 dates)
+
+Prices end on 2026-11-03, so only the 44 dates to 2024-11-01 have two years, the 96 to 2025-10-31 one year and the 122 to 2026-05-01
+six months; the 26 dates from 2026-05-08 have no outcome yet. Every date with two years is a 2024 date, RICH and AVOID. The 33 CHEAP
+dates (from 2026-02-06) have at most six months.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 44 | +6% | -15% to +30% | 0 | 0 | +10% | 44 |
+| legacy tier AVOID | 44 | +6% | -15% to +30% | 0 | 0 | +10% | 44 |
+| FY23's $9.81 (2024-01-05 to 2024-07-26) | 30 | -0% | -15% to +30% | 0 | 0 | +12% | 30 |
+| FY24's GAAP $11.80 (2024-08-01 to 2024-11-01) | 14 | +25% | +13% to +30% | 0 | 0 | +7% | 14 |
+
+| Group (one year) | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | Median price change to 2026-10-30 |
+|---|---|---|---|---|---|---|
+| class RICH | 94 | +4% | -25% to +29% | 21 | 20 | +23% |
+| class FAIR | 2 | +16% | +5% to +16% | 1 | 0 | +45% |
+| legacy tier AVOID | 87 | +5% | -25% to +29% | 21 | 20 | +22% |
+| legacy tier WATCHLIST | 7 | -0% | -5% to +9% | 0 | 0 | +33% |
+| legacy tier ACCUMULATE | 2 | +16% | +5% to +16% | 1 | 0 | +45% |
+| FY23's $9.81 (2024-01-05 to 2024-07-26) | 30 | +7% | -15% to +22% | 3 | 2 | +25% |
+| FY24's GAAP $11.80 (2024-08-01 to 2025-07-25) | 52 | +8% | -25% to +29% | 19 | 18 | +25% |
+| FY25's GAAP $13.64, dates with a year (2025-08-01 to 2025-10-31) | 14 | +1% | -11% to +5% | 0 | 0 | +2% |
+| 2024 | 52 | +12% | -15% to +29% | 20 | 20 | +25% |
+| 2025, dates with a year | 44 | -1% | -25% to +16% | 2 | 0 | +13% |
+
+- **RICH held on all 44 two-year dates.** The 2024 entries ($367.75-453.55, 30-48x the anchor) returned -15.0% (2024-06-28) to +30.3%
+  (2024-01-05) over two years, median +6.1%, while SPY returned +24.0% to +50.0% (median +39.1%): none cleared the hurdle and each lagged
+  SPY, by 4.9pp to 54.0pp, so RICH held on every one. The two-year price landed at BULL on 39 dates, XBULL on 3 and BASE on 2 (1.10-1.59
+  times the BASE price); drawdowns within two years were 24.2% to 34.9%, the windows bottoming at the 2025-04-08 close ($354.56, 25
+  dates) or the 2026-06-25 close ($352.83, 19). It is the first full year of RICH calls that held: from 2014 to 2023 RICH held on 14 of
+  the 460 dates that carried it (none before late 2020). The entries sat at the 98th-100th percentile of the stock's own range on FY23's
+  $9.81, and two declines (April 2025, 30x FY24's $11.80; June 2026, 26x FY25's $13.64) brought the multiple back toward the band's
+  median (24-28x).
+- **Over one year the order was weak; over six months the 2026 CHEAP dates led.** The 96 one-year dates returned a median +4.8% (-25.0%
+  to +29.4%); 20 beat SPY (2024-07-19 to 2024-11-29, windows ending in the 2025 rally), the two FAIR dates of April 2025 returned +4.8%
+  and +15.9% but lagged SPY by 20-27pp. Over six months (122 dates) RICH returned a median +0.8% (beating SPY on 26 of 104), FAIR +24.0%
+  (4 of 7) and the 11 CHEAP dates with six months (2026-02-06 to 2026-05-01) +21.6% to +45.2% (median +26.4%), each ahead of SPY by 7.5pp
+  to 29.6pp. To 2026-10-30 the price rose a median +30.0% from the 32 earlier CHEAP dates, +21.3% from the FAIR and +21.7% from the RICH
+  ones. Six months is not a call check; the CHEAP calls are scored only in 2028.
+- **The multiple and the floor distance ranked the two-year returns; the composites less so.** Spearman over the 44 two-year dates: the
+  P/E -0.92, the EPP gap -0.92, the entry price -0.57, Ratio B -0.56 (16 finite values), the market composite -0.55, the adjusted gap
+  +0.54 and the proxy composite -0.30. Over the 96 one-year dates the order is weaker (the P/E -0.37, the entry price -0.33, the market
+  composite -0.33, the adjusted gap +0.31, the EPP gap -0.21, the proxy composite +0.05; the entry date -0.34), and over six months the
+  entry price ranks -0.80. Hypothesis, as in 2021-2023: the valuation inputs rank entries well when the multiple swings inside the band;
+  test it on other compounders, never on MSFT's own outcomes.
+- **The encoding calls, seen afterwards.** The OpenAI call (GAAP FY25 and FY26 with the recurring losses and gains in; retro/README.md,
+  "MSFT 2024-2026") moves 5 classes from CHEAP to FAIR in August-October 2026, dates with no outcome yet. The 2024 and 2026 investor-metrics
+  decks, the Q2 FY24 comparison and GENAI move no class. That Microsoft's OpenAI stake and its AI business turned out as they did is
+  hindsight and stays out of the GENAI question. The calls were decided before scoring and stay; changing a rule means a new method
+  version tested elsewhere.
