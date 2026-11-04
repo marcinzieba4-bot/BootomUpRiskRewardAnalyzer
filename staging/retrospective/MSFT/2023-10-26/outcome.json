@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "MSFT",
+ "as_of": "2023-10-26",
+ "computed": "2026-11-04",
+ "data_source": "Yahoo Finance daily closes + dividends (MSFT, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2024-04-26",
+   "price": 406.32,
+   "dividends": 1.5,
+   "total_return_pct": 24.4,
+   "benchmark_total_return_pct": 24.0,
+   "excess_pct": 0.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2024-10-25",
+   "price": 428.15,
+   "dividends": 3.0,
+   "total_return_pct": 31.5,
+   "benchmark_total_return_pct": 42.1,
+   "excess_pct": -10.6,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2025-10-24",
+   "price": 523.61,
+   "dividends": 6.32,
+   "total_return_pct": 61.6,
+   "benchmark_total_return_pct": 67.6,
+   "excess_pct": -6.0,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2026-10-26",
+   "price": 532.6,
+   "dividends": 9.96,
+   "total_return_pct": 65.5,
+   "benchmark_total_return_pct": 90.8,
+   "excess_pct": -25.3,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2025-08-04",
+   "price": 535.64
+  },
+  "low": {
+   "date": "2023-10-27",
+   "price": 329.81
+  },
+  "max_drawdown_pct": -24.2,
+  "return_to_avg_price_m12_m24_pct": 38.0
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Microsoft: Azure + M365 + OpenAI; capex intensity is the only real debate",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

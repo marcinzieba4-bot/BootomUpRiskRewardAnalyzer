@@ -1,14 +1,14 @@
 # MSFT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MSFT weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the MSFT weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719; 2018-2020: 567b23c). The 2008-2011 outcomes
-were computed on 2026-11-03 and the 2012-2020 ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12 currency correction
-(retro/README.md, "MSFT 2012-2014") were re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure below still holds.
-The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the
-2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29), the 2018-2020 batch's by
-2022-12-30 (2023-12-29). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is
-+32.2% over two years.
+pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719; 2018-2020: 567b23c; 2021-2023: 63b6804). The
+2008-2011 outcomes were computed on 2026-11-03 and the 2012-2023 ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12
+currency correction (retro/README.md, "MSFT 2012-2014") were re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure
+below still holds. The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30
+(2014-12-30), the 2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29), the 2018-2020
+batch's by 2022-12-30 (2023-12-29), the 2021-2023 batch's by 2025-12-29 (three-year: 2026-11-03; the eight dates from 2023-11-10 have
+none yet). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -283,4 +283,58 @@ The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), t
 - **The encoding calls, seen afterwards.** No call moves a class or a tier in 2018-2020 (retro/README.md, "MSFT 2018-2020"): GAAP FY18
   would have put the anchor at 46-65x instead of 25-36x on dates that returned +81% to +137%, and reported growth or GAAP FY19 change
   only the scenario numbers. CLOUD changed only text; that Microsoft's own cloud kept growing is hindsight and stays out of the registry
+  question. The calls were decided before scoring and stay; changing a rule means a new method version tested elsewhere.
+
+## 2021-2023 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 142 | +39% | +3% to +84% | 83 | 120 | +24% | 11 |
+| class FAIR | 14 | +85% | +74% to +93% | 14 | 14 | +76% | 0 |
+| legacy tier AVOID | 132 | +36% | +3% to +83% | 73 | 110 | +23% | 11 |
+| legacy tier WATCHLIST | 19 | +77% | +54% to +87% | 19 | 19 | +70% | 0 |
+| legacy tier ACCUMULATE | 5 | +87% | +86% to +93% | 5 | 5 | +81% | 0 |
+| FY20's GAAP $5.76 (2021-01-08 to 2021-07-23) | 29 | +21% | +5% to +36% | 3 | 26 | +5% | 3 |
+| FY21's $7.97, as adjusted (2021-07-29 to 2022-07-22) | 52 | +36% | +3% to +83% | 27 | 52 | +8% | 0 |
+| FY22's $9.21, as adjusted (2022-07-28 to 2023-07-21) | 52 | +56% | +26% to +93% | 49 | 44 | +61% | 3 |
+| FY23's $9.81, as adjusted (2023-07-27 to 2023-12-29) | 23 | +57% | +27% to +65% | 18 | 12 | +32% | 5 |
+| 2021 | 52 | +13% | +3% to +36% | 3 | 49 | -2% | 3 |
+| 2022 | 52 | +60% | +19% to +91% | 50 | 52 | +42% | 0 |
+| 2023 | 52 | +49% | +26% to +93% | 44 | 33 | +35% | 8 |
+| verdict OVERVALUED | 142 | +39% | +3% to +84% | 83 | 120 | +24% | 11 |
+| verdict MODESTLY OVERVALUED | 12 | +85% | +74% to +91% | 12 | 12 | +75% | 0 |
+| verdict FAIRLY VALUED | 2 | +93% | +87% to +93% | 2 | 2 | +87% | 0 |
+
+- **RICH held on 11 of 142 dates; the 14 FAIR dates were the range's best entries.** MSFT returned +3% to +93% over two years (median
+  +42%), cleared the hurdle on 97 dates and beat SPY on 134 (SPY -8% to +68%, median +36%). The RICH call held on 2021-01-08,
+  2021-01-28 and 2021-02-05 (two-year windows ending in early 2023: +5% to +9%, 0.3-4.7pp behind SPY), on 2023-04-06, 2023-04-21 and
+  2023-04-27 (+26% to +31%, 0.3-6.4pp behind) and on five dates from 2023-11-24 ($371-377 entries; +27% to +32%, 16-23pp behind SPY).
+  The FAIR dates of 2022-09-23 to 2023-01-20 (entries $221-245, 24.0-26.6x FY22's $9.21, the 63rd-73rd percentile of its own range)
+  returned +74% to +93% and beat SPY by 16-36pp, so the FAIR expectation (within 15pp of the benchmark) held on none: they missed on
+  the upside. The weakest two-year return was 2021-10-28's (+3.3%, its window ending a year after the 2022 low), the strongest
+  2023-01-06's (+92.8%). One-year returns had a median of +25% (-33% to +67%); three-year returns on 148 dates ran from +12% to +138%
+  (median +61%). Drawdowns within two years were 15.5-37.6%; no path went below BEAR, and the two-year high passed BULL on every date.
+- **The two-year price landed at XBULL on 132 dates and at BULL on 24** (0.74-1.18 times XBULL; 1.08-1.83 times BULL, 1.43-2.29 times
+  BASE). The BULL landings are the entries whose two-year windows ended in a pullback: August-October 2021 (ending in the second half
+  of 2023), August-November 2022 (the second half of 2024) and February-April 2023 (the spring of 2025).
+- **The tiers ranked the entries in order, and so did the valuation inputs.** ACCUMULATE (5 dates) returned a median +87%, WATCHLIST (19)
+  +77%, AVOID (132) +36%; FAIRLY VALUED +93%, MODESTLY OVERVALUED +85%, OVERVALUED +39%. Spearman across the 156 dates, against the
+  two-year return, the return to the m12-24 average price and the three-year return (148 dates): the P/E -0.83, -0.91 and -0.44; the EPP
+  gap -0.83, -0.93 and -0.32; the market composite -0.88, -0.93 and -0.51; the adjusted gap +0.76, +0.70 and +0.62; Ratio B -0.69, -0.93
+  and -0.76 on its 90 finite values; the proxy composite -0.47, -0.62 and -0.25; the entry price -0.23, -0.37 and -0.82; the entry date
+  +0.62, +0.62 and -0.09. Within the anchor periods the entry price ranks -0.79 (FY21's $7.97), -0.86 (FY22's $9.21) and -0.93 (FY23's
+  $9.81) against the two-year return, and +0.51 on the 29 dates of FY20's $5.76 (-0.99 against the m12-24 average). In 2018-2020 the
+  calendar overrode the valuation inputs across the range; here the 2022 drawdown put the lowest multiples and the best returns on the
+  same dates.
+- **The band caught up only at the low.** The window's median rose from 18.3x to 23.8x and the anchor from FY20's $5.76 to FY23's $9.81
+  (+19.4%/yr), so the stock sat at the 97th-100th percentile through 2021 (86th-100th in the first half of 2022) and came down to the
+  63rd-73rd only at the late-2022 low, where the class read FAIR, not CHEAP. Hypothesis, not a rule: when a compounder's multiple falls
+  back toward its own ten-year band, the band's ranking turns useful even though its level still understates the outcome (FAIR entries
+  beat SPY by 16-36pp). Test it on other compounders' drawdowns, never on MSFT's own outcomes.
+- **The encoding calls, seen afterwards.** At GAAP ($8.05, $9.65, $9.68) instead of the company's figures, 7 classes would move
+  (retro/README.md, "MSFT 2021-2023"): RICH to FAIR on 2022-09-16, 2022-11-11, 2022-11-25 and 2022-12-09 (+72% to +84%, 18-30pp ahead of
+  SPY: still FAIR misses) and FAIR to CHEAP on 2022-10-27, 2022-11-04 and 2023-01-06 (+87% to +93%: CHEAP would have held). Reported
+  growth instead of constant currency would turn four FAIR dates of September-October 2022 RICH (+75% to +87%: RICH misses). The 8-K of
+  2022-06-02, the Q2 FY23 operating income and GENAI move no class; GENAI's 22 dates (from 2023-08-04, text only) returned +27% to +65%
+  and beat SPY on 11. Whether generative AI proved a threat to Microsoft or a franchise for it is hindsight and stays out of the registry
   question. The calls were decided before scoring and stay; changing a rule means a new method version tested elsewhere.
