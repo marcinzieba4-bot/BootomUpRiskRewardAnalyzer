@@ -1,13 +1,13 @@
 # MSFT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MSFT weekly dates: 366 from 2008-01-04 to 2014-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the MSFT weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc). The 2008-2011 outcomes were computed on 2026-11-03 and the 2012-2014
-ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12 currency correction (retro/README.md, "MSFT 2012-2014") were
-re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure below still holds. The 2008 batch's two-year horizons end
-by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30
-(2017-12-29). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two
-years.
+pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719). The 2008-2011 outcomes were computed on
+2026-11-03 and the 2012-2017 ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12 currency correction
+(retro/README.md, "MSFT 2012-2014") were re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure below still holds.
+The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the
+2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29). Medians of an even count take the
+upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -183,3 +183,59 @@ years.
   outcomes must not decide the registry question: that Microsoft's cloud business later grew is hindsight; the question stays a
   point-in-time one about its FY2010 10-K and the registry's basis, for the owner. The calls were decided before scoring and stay;
   changing a rule means a new method version tested elsewhere.
+
+## 2015-2017 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 8 | +64% | +39% to +70% | 8 | 8 | +39% | 0 |
+| class RICH | 148 | +83% | +47% to +108% | 148 | 148 | +55% | 0 |
+| legacy tier ACCUMULATE | 3 | +39% | +39% to +42% | 3 | 3 | +18% | 0 |
+| legacy tier WATCHLIST | 8 | +64% | +57% to +70% | 8 | 8 | +40% | 0 |
+| legacy tier AVOID | 145 | +83% | +47% to +108% | 145 | 145 | +56% | 0 |
+| FY14's $2.63 (2015-01-09 to 2015-07-17) | 28 | +58% | +39% to +70% | 28 | 28 | +33% | 0 |
+| FY15's $2.63, as adjusted (2015-07-23 to 2016-07-15) | 52 | +76% | +50% to +108% | 52 | 52 | +46% | 0 |
+| FY16's GAAP $2.10, after the Windows 10 deferrals (2016-07-21 to 2017-07-14) | 52 | +91% | +61% to +105% | 52 | 52 | +61% | 0 |
+| FY17's GAAP $2.71 (2017-07-21 to 2017-07-28) | 2 | +98% | +90% to +98% | 2 | 2 | +58% | 0 |
+| FY17's $3.25, the recast (2017-08-04 to 2017-12-29) | 22 | +87% | +72% to +95% | 22 | 22 | +56% | 0 |
+| 2015 | 52 | +62% | +39% to +81% | 52 | 52 | +34% | 0 |
+| 2016 | 52 | +92% | +61% to +108% | 52 | 52 | +61% | 0 |
+| 2017 | 52 | +87% | +67% to +102% | 52 | 52 | +59% | 0 |
+| verdict MODESTLY OVERVALUED | 9 | +64% | +39% to +70% | 9 | 9 | +39% | 0 |
+| verdict OVERVALUED | 147 | +83% | +47% to +108% | 147 | 147 | +55% | 0 |
+
+- **No call held: RICH on none of 148 dates, FAIR on none of 8.** MSFT returned +39% to +108% over two years, cleared the hurdle and
+  beat SPY on every date, by 20-75pp (SPY +11% to +53%, median +25%): RICH needs a miss of both, FAIR a landing within 15pp of SPY,
+  and neither came close. The weakest two-year return was the first date's (+38.6% from 2015-01-09), the strongest 2016-06-24's
+  (+107.9%). One-year returns had a median of +34% (+5.2% to +55.8%); three-year returns ran from +77.7% to +214.9% (median +151.9%).
+  Drawdowns within two years were 10.5-18.6%; no path went below BEAR, and the two-year high reached BASE on every date and BULL on 153.
+- **The two-year price landed at XBULL on 130 dates,** BULL on 23 (from 2015-01-28 to 2015-07-10) and BASE on the three dates of
+  January 2015; it was 3.92-10.68 times BEAR, 0.99-4.08 times BASE, 0.80-3.02 times BULL and 0.69-1.53 times XBULL. The scenario
+  range, built from the window's P/E percentiles and the history's growth, sat below the path from mid-2015 on.
+- **RICH came from the band, and the band's richest reading did best.** The class rests on the P/E against a ten-year range whose
+  median was 14.7x on every date: 15.3-21.3x on $2.63 to 2016-07-15, 26.6-34.7x (the 99th-100th percentile) on FY16's GAAP $2.10 and
+  22.3-26.7x on the recast $3.25. The dates on GAAP $2.10, the most extreme P/Es of the range, returned the most (median +91%, the
+  price 1.55-1.99 times the entry two years on). Hypothesis, not a rule: once an own-history band's median comes from a franchise's
+  de-rated years (2005-2013 here; the 2012-2014 mirror image of 2008-2011), the band reads a re-rating as RICH from its first months,
+  and a deferral that depresses GAAP EPS pushes the reading to the top of the band (the company's figures give 20-26x on FY16: still
+  RICH, retro/README.md, "MSFT 2015-2017"). The test belongs on other tickers' re-rating phases, never on MSFT's own outcomes.
+- **What ranked the outcomes was the calendar.** Spearman across the 156 dates, against the two-year return, the return to the m12-24
+  average price and the three-year return: Ratio B +0.64, +0.50 and +0.28 (the 73 finite values); the market composite +0.49, +0.61
+  and +0.49; the entry price +0.47, +0.50 and +0.58; the EPP gap +0.48, +0.61 and +0.47; the adjusted gap -0.34, -0.53 and -0.12; the
+  proxy composite +0.41, +0.42 and +0.58. The entry date itself ranks +0.63 against the two-year return and +0.73 against the
+  three-year: every series that rose with the price over 2015-2017 ranks "right" by riding the trend. Within the two long anchor
+  periods the signs turn or split: the entry price -0.28 (FY15's $2.63) and -0.23 (FY16's $2.10) against the two-year return, cheaper entries
+  doing better as in 2012-2014, and the proxy composite -0.40 and +0.25. Hypothesis: across a sustained re-rating a level shift in any
+  series lines up with the returns; read a rank correlation within an anchor period, not across one.
+- **The signals that turned were the business ones, read twice by one accounting effect.** The proxy composite rose from 1.95-2.15 on
+  the 2015 prints to 2.35-2.70 on Q2 FY17 to Q1 FY18: unearned revenue at BULL from Q2 FY16 (+17.8% to +38.5%) and the gross margin at
+  BULL from Q3 FY17 (BASE or BEAR on every earlier print of the range), while reported revenue stayed at BEAR from Q3 FY15 to Q3 FY17
+  under the deferrals and the strong dollar. The deferral itself moves unearned revenue up and revenue down, so the two signals partly read the same entry;
+  that the business strengthened is hindsight about one stock, and the weights stay as frozen.
+- **The encoding calls, seen afterwards.** No call moves more than two classes in 2015-2017 (retro/README.md, "MSFT 2015-2017"): the
+  two that reported growth would move (2015-03-13 and 2015-04-17, FAIR to RICH) returned +63% and +64%, 43-47pp ahead of SPY, so they
+  fail either way. The company's non-GAAP FY16 and FY17 lower the anchor's P/E by a quarter and leave every date RICH: the deferral
+  reading did not decide these outcomes. CLOUD changed only text; that Microsoft's own cloud business grew through the range is
+  hindsight and must not decide the registry question (the theme's market-pricing date and whether it applies to Microsoft stay
+  point-in-time questions, for the owner). The calls were decided before scoring and stay; changing a rule means a new method version
+  tested elsewhere.
