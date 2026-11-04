@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  MSFT  ·  Microsoft Corporation  ·  $74.49  ·  RETROSPECTIVE as of 2017-09-29
+  Signal: ✕ AVOID   Ratio B: 36.09x   Adj gap: -1.11  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2017-09-29; latest print Q4 FY17 (Jul 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenues, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Productivity and Busines  $    33.8  $  33.8  $  37.5      +0.0      +3.7
+    +15.8% revenues in FY17
+  Intelligent Cloud         $    31.0  $  31.0  $  34.4      +0.0      +3.4
+    +9.8% revenues in FY17
+  More Personal Computing   $    44.4  $  44.4  $  49.3      +0.0      +4.9
+    -2.8% revenues in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   109.2  $ 109.2  $ 121.2      +0.0     +12.0
+  FY2018E = FY17 $96.57B × (1 + 13.0%: no Q1 FY18 revenue guide, Q4 FY17 revenue ex-currency, applied to the year (no FY18 revenue guide in scope)); split pro rata to FY17 revenue by segment, restated (the 8-K of 2017-08-03)
+  Q4 FY17 (Jul 20): revenues $23.32B +13.1%; unearned revenue $44.48B +31.2%; receivables +8.3%;
+  gross margin 63.73% (+244.1bp); operating margin 22.86% (+791.8bp); EPS $0.83 vs $0.39
+  Billings: unearned revenue +31.2% (unearned revenue $34,102M + $10,377M long-term vs $27,468M + $6,441M a year earlier); revenue +13.1% as reported (revenue $23,317M vs $20,614M after the 'Net Impact from Windows 10 Revenue Deferrals' of $1,383M against $2,027M a year earlier (as reported; non-GAAP $24,700M)); no filing states the quarter's currency effect; ex-currency +13% (the release's revenue growth of 13%: no filing states the quarter's currency effect on reported revenue (the release gives constant currency for non-GAAP revenue only)); Q4 FY17 EPS $0.83 after the deferral's $0.12 and the restructuring's $0.03, and including 'a $1.8 billion impact related to the utilization of prior years' losses from Microsoft's phone business' ($0.23; non-GAAP $0.98)
+  FY18: no guide in a filing; the Q4 FY17 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+
+  FY2018E EPS check:  $109.2B × 31.0% pre-tax × (1−14.8%) ÷ 7.806B  =  $3.69  (FY2018E: no EPS guide in numbers, FY17's $3.25 stands)
+  FY2020E BEAR check: $109.2B × 31.0% ÷ 7.477B  =  $3.85  (scenario $1.87)
+  FY2020E BULL check: $121.2B × 31.4% ÷ 7.477B  =  $4.33  (scenario $4.31)
+  Every 1pp of pre-tax margin ≈ $0.12 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Unearned revenue growth            -35.0%   ≥-9.0%   ≥17.0%  ≥104.0%    +31.2%  ▲ BULL  ███░
+  Gross margin change               -1020.0bp  ≥-460.0bp  ≥90.0bp  ≥270.0bp  +244.1bp  ▲ BULL  ███░
+  Revenue growth                      +2.0%    ≥8.0%   ≥14.0%   ≥29.0%    +13.1%  ◦ BASE  ██░░
+  Receivables growth less revenue   +41.0pp  ≤29.0pp  ≤16.0pp  ≤-12.0pp    -4.8pp  ▲ BULL  ███░
+  Operating margin change           -1000.0bp  ≥-510.0bp  ≥-30.0bp  ≥1210.0bp  +791.8bp  ▲ BULL  ███░
+  Cloud: net effect on licensed software and services   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   3.71 / 4.00  (back-solved from $74 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.60  →  Gap -1.11  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenue +5.9%, unearned revenue +20.1% (unearned revenue $26,656M at June 30, 2017 vs $22,193M, both restated (the 8-K of 2017-08-03)); Q4 gross margin 63.73% (+244bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 22.9x FY18E vs a 14.7x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q1 FY18 revenue guide, Q4 FY17 revenue ex-currency +13% vs a 5.9% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $132.98B, FY17 free cash flow $31.38B, dividend $1.68 a year, $11,788M of share repurchases and $11,845M of dividends paid in FY17  (+0.30 × 15%  =  +0.045)
+    +  Cloud services: 'our cloud-based strategies' — Microsoft sells them as well  (+0.20 × 10%  =  +0.020)
+    -  Cloud competition (FY2017 10-K): 'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Unearned revenue growth             +31.2%    -35.0%  -66.2%  Multi-year licensing renewals slow: b…
+  Gross margin change               +244.1bp  -1020.0bp  -1264.1bp  Hardware and services mix dilutes sof…
+  Revenue growth                      +13.1%     +2.0%  -11.1%  PC shipments and IT budgets stall tog…
+  Receivables growth less revenue     -4.8pp   +41.0pp  +45.8pp  Receivables build ahead of revenue: c…
+  Operating margin change           +791.8bp  -1000.0bp  -1791.8bp  Operating costs keep growing into a s…
+  Cloud: net effect on licensed software and services    +2.0/4    +1.0/4  -1.0/4  Customers move to competitors' cloud …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$33  (model)  /  $20 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: unearned revenue went from +38.0% (Q3 FY17) to +31.2% (Q4 FY17);
+  the bear case needs a licensing recession that gross margin (+244.1bp now)
+  and receivables (-4.8pp against revenue) no longer absorb. A demand recession hits PC shipments and consumer sales first; the bear needs
+  it to spread to enterprise licensing renewals as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.25  (FY2018E: no EPS guide in numbers, FY17's $3.25 stands)
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2007 15.7x, 2008 10.8x, 2009 9.4x, 2010 8.8x, 2011 9.0x, 2012 10.2x, 2013 10.3x, 2014 13.2x, 2015 15.3x, 2016 15.7x, 2017 19.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $32/share
+  Current $74 vs Updated EPP $32:  +129%  ⚠ far above floor — large drawdown room
+  Bear $20 vs Updated EPP $32:  -38%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Unearned revenue growth                     -9.0      -40.2   BASE floor (vs +31 now)
+  Gross margin change                       -460.0     -704.1   BASE floor (vs +244 now)
+  Revenue growth                               8.0       -5.1   BASE floor (vs +13 now)
+  Receivables growth less revenue             29.0      +33.8   BASE floor (vs -5 now)
+  Operating margin change                   -510.0    -1301.8   BASE floor (vs +792 now)
+  Cloud: net effect on licensed software and services             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.25 × (1+13.1%)² = $4.16
+  At 14x P/E (conservative):  $58/share
+  + Cumul. dividends (2yr):  +$3.46/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $58  (▼16 from $74)
+  Conservative total return:  -17% over 2yr  = -9%/yr
+
+  13.1% EPS growth is what is left once the premium multiple (22.9x)
+  mean-reverts to 14x. Breakeven at 14x needs FY2020E EPS of $5.07,
+  i.e. 24.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $56.32  –  $75.97  (at 92th pct of range)
+  Annual dividend:      $1.68/share  (yield 2.3%)
+  Realized vol (1yr):   14% annualized
+  Beta vs broad market: 1.18
+  1-sigma range (1yr):  $64  –  $85  ($74 ± 14%)
+  2-sigma range (1yr):  $53  –  $96
+  ────────────────────────────────────────────────────────────
+  Bear $20 requires:  ~5.1σ price move  (unusual — requires fundamental break)
+  A software company with a 1.2 beta: the stock is +31% off its October
+  low while unearned revenue went from +38.0% (Q3 FY17) to +31.2% (Q4 FY17).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.87  10.5x  $     20     6.0%      1.4%    +4.6pp  EPS -24.2%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE        4.31  14.7x  $     63    20.8%      4.8%   +16.1pp  EPS +15.1%/yr (Q4 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        4.31  17.7x  $     76    61.6%     16.7%   +44.9pp  EPS +15.1%/yr (FY08-FY17 CAGR); P/E holds its 75th pct
+  XBULL       5.30  20.1x  $    107    11.6%     77.2%   -65.6pp  EPS +27.7%/yr (best 2-yr run FY08-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $74  /  Market EV: $99  /  Current: $74
+  Conservative EV (2yr, ④): $58 + $3.46 divs = $62 total value
+  Downside (→ Bear $20): 73.2%   Upside (→ Bull $76): 2.0%   Ratio B 36.09x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $74 the market needs $99 in two years —
+  above the BULL case. That is a market composite of 3.71 against a model
+  read of 2.60: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      36.09x    +129%    -1.11  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.12x    +129%    -0.65  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +129%    -1.20  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         12.08x    +129%    -0.99  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +129%    -1.33  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)            36.09x    +129%    -0.81  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                36.09x     +76%    -1.01  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                   36.09x    +129%    -0.80  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY18 print (late October) — the next read on unearned revenue (+31.2% now) and the full-year guide
+  (2) Gross margin — +244.1bp in Q4 FY17: software against the hardware and online mix
+  (3) A FY18 guide — none in a filing: the Q4 FY17 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+  (4) Receivables — +8.3% against revenue +13.1% in Q4 FY17 (-4.8pp): volume licensing is billed ahead, collected later
+  (5) Capital return at 23x — $1,765M of share repurchases and $3,009M of dividends in the quarter: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $32  |  ADD below ~$54  |  TRIM above $76
+════════════════════════════════════════════════════════════════════════
+

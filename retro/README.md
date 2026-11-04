@@ -5965,6 +5965,172 @@ Judgement calls that could carry hindsight:
   (text only); the registry date itself stays the owner's decision (Microsoft's FY2010 10-K is an earlier verified filing of the risk);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2012-2014 went; DURABLE (the class label only).
 
+### MSFT 2015-2017: GAAP through the Windows 10 deferrals, the new revenue standard as a vintage of its own, CLOUD stays on the watch list
+
+```bash
+python3 retro/build_msft.py --weekly 2015-01-05 2017-12-31                  # 156 dates, 2015-01-09 .. 2017-12-29
+for c in 2015-07-01 2016-01-01 2016-07-01 2017-01-01 2017-07-01 2018-01-01; do python3 retro/tools/firewall.py $c MSFT; done
+```
+
+All 36 8-Ks filed from January 2015 to December 2017 were checked: the twelve earnings releases read in full, the other 24 read for
+guides, figures and dividend rates. The FY2015-FY2017 10-Ks were read for the history, the segments, the dividends and the risk
+factors, the nine 10-Qs from Q2 FY15 to Q1 FY18 for their currency effects and dividends, and the FY2008-FY2010 10-Ks for the first
+year's diluted shares. 347 strings were checked word for word with `verbatim.py` against their own filings, every quote in the prints'
+notes, the vintages' "why" and the cloud events was found in its own release, 10-Q or 10-K, every number of the prints and vintages was
+matched to the text of its cited source, every year-ago figure to the year-ago print (the differences are FY14's restatement and the
+recast below), and the builder re-derives every print's signal values from its raw figures. Each source's date comes from EDGAR's
+acceptance time. Thresholds, signals and the engine are unchanged; the builder gained three encodings (unearned revenue that is not
+comparable, a vintage that keeps an earlier 10-K's words, a receivables caveat), decided on 2026-11-04 before any 2015-2017 model was
+built. Decided before any 2015-2017 outcome was computed:
+
+- **Four vintages.** The FY2015 10-K (accepted 2015-07-31 15:07 ET, during the session, so dated that day) gives FY2011-FY2015, the
+  FY2016 10-K (2016-07-28 16:12 ET, dated 2016-07-29) FY2012-FY2016 and the FY2017 10-K (2017-08-02 16:15 ET, dated 2017-08-03)
+  FY2013-FY2017. The 8-K of 2017-08-03 (16:04 ET, dated 2017-08-04) re-presents FY2016-FY2017 under the new revenue and lease standards,
+  adopted from July 1, 2017 by the full retrospective method: diluted EPS $2.56 and $3.25, revenue $91,154M and $96,571M, with restated
+  balance sheets and segments. It is a vintage of its own, the latest filing that reports those years (the UNP 2010 and AAPL 2010
+  rule); FY2008-FY2015 stay as published, a seam. Its wording (the "why", the business line) and its CLOUD event stay the FY2017 10-K's
+  (the AAPL 10-K/A rule; the vintage's new `text_published` gives the 10-K's date). The FY2017 10-K already states the same figures
+  under "Expected Impacts to Reported Results"; no weekly date falls between the two filings, so the FY2017 10-K vintage is never the
+  latest one on a built date. Each earlier year comes from the latest 10-K that reports it, so the history runs FY2006-FY2015,
+  FY2007-FY2016 and FY2008-FY2017; each Q4 print extends it for the week before its 10-K (FY2005-FY2015 on 2015-07-23, FY2006-FY2016 on
+  2016-07-21, FY2007-FY2017 on 2017-07-21 and 2017-07-28). The first year's diluted shares: FY2006's 10,531M (the FY2008 10-K),
+  FY2007's 9,886M (FY2009 10-K) and FY2008's 9,470M (FY2010 10-K).
+- **FY2015 at the company's $2.63, FY2014 restated to $2.64.** The Q4 FY15 release's "2015 As Adjusted (Non-GAAP)" excludes only the
+  impairment, integration and restructuring charges ($10,011 million, $1.15 a share; GAAP $1.48) and its "2014 As Adjusted
+  (Non-GAAP)" only $127 million of integration and restructuring (GAAP $2.63): figures excluding one-offs (the ACN rule), from
+  2015-07-23 (FY14 by `restates`, as FY11 from the Q4 FY12 release) and in the FY2015-FY2017 vintages.
+- **FY2016 and FY2017 at GAAP until the recast.** FY16 enters at $2.10 and FY17 at $2.71: the company's $2.79 and $3.31 also remove
+  the Windows 10 revenue deferrals (net $6.6 billion and $6.7 billion), revenue recognition rather than one-offs (the 2008 rule), so
+  they are not figures excluding only one-offs (the NKE FY2007 rule). No EPS excluding only the impairment and restructuring (FY16
+  $0.11, FY17 $0.03) was published, and FY17's "$1.8 billion impact related to the utilization of prior years' losses from
+  Microsoft's phone business" ($0.23 a share) is an effect: nothing is derived. On the new basis the deferral is gone and the recast
+  gives GAAP only, so $2.56 and $3.25 stand from 2017-08-04 (no adjusted figure on the new basis: the UNP 2010 rule).
+- **Prints at GAAP but one.** The Q4 FY15 release gives operating income excluding only "Impairment, Integration, and Restructuring
+  Charges" for both quarters, $6,385M against $6,609M (GAAP $(2,053)M and $6,482M), so it replaces GAAP (the PEP Q4 2007 rule): the
+  operating margin +52bp, not -3,698bp. From Q1 FY16 every comparable figure also removes the Windows 10 deferrals, so GAAP stands:
+  Q4 FY16 reads $3,080M against the impaired $(2,053)M (+2,420bp, as Q4 FY13 against Q4 FY12). Year-ago quarters are taken as each
+  release shows them: Q1 FY17's gives Q1 FY16's EPS as $0.61 ($0.57 first reported, before the share-based payment standard adopted
+  in Q3 FY16 with effect from July 1, 2015), and Q1 FY18's gives Q1 FY17 under the new standards (revenue $21,928M, operating income
+  $6,715M, EPS $0.72; $20,453M, $5,225M and $0.60 first reported).
+- **The Windows 10 deferrals are revenue recognition, not one-offs** (the 2008 and 2012-2014 rule): net deferrals of $1,281M in Q1
+  FY16, $1,897M in Q2 FY16 (with Halo 5: "Net Impact from Revenue Deferrals"), $1,545M in Q3 FY16, $2,028M in Q4 FY16 and $1,881M,
+  $1,976M, $1,467M and $1,383M in FY17. The prints and BASE take the reported figures; the company's non-GAAP revenue, operating income
+  and EPS go in the notes. A deferral lowers revenue and raises unearned revenue, so the two signals move in opposite directions.
+- **Growth excluding currency.** The release's constant-currency growth of reported revenue where it states one: Q3 FY15 +9% (+6%
+  reported), Q4 FY15 -2% (-5%) and Q1 FY18 +11% (+12%). Otherwise the release's growth less the quarter's effect that the 10-Q filed
+  with it states: Q2 FY15 +8% + 1% = +9%, Q1 FY16 -12% + 5% = -7%, Q2 FY16 -10% + 5% = -5% ("approximately $1.2 billion or 5%"), Q3
+  FY16 -6% + 4% = -2% ("approximately $838 million or 4%"), Q1 FY17 0% + 2% = +2% and Q2 FY17 +1% + 2% = +3%. From Q4 FY16 the releases
+  give constant currency only for non-GAAP revenue, with the deferrals removed, which is not the reported revenue's (as a segment's
+  effect is not the quarter's); a Q4 has no 10-Q and the Q3 FY17 10-Q states only segments' effects, so the reported growth stands:
+  -7% on Q4 FY16, +8% on Q3 FY17 and +13% on Q4 FY17.
+- **Q1 FY18 under the new standards.** Its income statement runs against Q1 FY17 as the release restates it. No filing gives the
+  September 30, 2016 balance sheet on the new basis, and the recast moves June 30, 2017 unearned revenue from $44,479M to $26,656M, so
+  unearned revenue growth is not comparable: the print carries none (`unearned_prior_m` null; the engine's not-reported path scores it
+  BASE, and the billings line says "not comparable"). The engine has no such path for receivables, so the gap keeps the Q1 FY17
+  release's old-basis balance ($14,561M against $11,129M: +30.8%, +18.9pp against revenue), with the restatement's size in catalyst 4
+  (+$2,639M, +13.3% at June 30, 2017; the print's new `receivables_caveat`).
+- **No guide in a filing.** Every release says "Microsoft will provide forward-looking guidance in connection with this quarterly
+  earnings announcement on its earnings conference call and webcast" (the 2012-2014 rule), so nothing is entered, and each year's
+  anchor is the last full year's EPS: FY14's $2.63 to 2015-07-17, FY15's $2.63 from 2015-07-23, FY16's $2.10 from 2016-07-21, FY17's
+  $2.71 on 2017-07-21 and 2017-07-28 and the recast $3.25 from 2017-08-04.
+- **Dividends,** each from the first filing that states the rate: $0.36 a quarter from the Q1 FY16 10-Q (declared September 15, 2015;
+  dated 2015-10-23; no 8-K states it), $0.39 from the Q1 FY17 10-Q (declared September 20, 2016; dated 2016-10-21; the 8-K of
+  2016-09-22 covers the bylaws and the meeting date only) and $0.42 from the 8-K of 2017-09-19 (17:14 ET, dated 2017-09-20). Each 10-K
+  restates the June rate.
+- **CLOUD stays on the watch list.** The FY2015-FY2017 10-Ks keep the FY2014 10-K's risk factor, "Our increasing focus on services
+  presents execution and competitive risks" ("At the same time, our competitors are rapidly developing and deploying cloud-based
+  services for consumers and business customers. Pricing and delivery models are evolving."; "These costs will reduce the operating
+  margins we have previously achieved."), each an event (`cloud_company_acknowledged`). The theme's market-pricing date (2015-04-23,
+  Amazon's first AWS segment disclosure) passes in the range, but the registry's evidence names no pricing of Microsoft: re-filing as
+  DISRUPTION_EXPOSED needs dated evidence that the market prices cloud substitution of Microsoft's licensed software (as for LOW after
+  its theme's pricing date), so the watch list stays, text only, and DURABLE, risk 2, stands.
+- **Segments** (display only): the FY2015 10-K's six lines to 2016-07-21; from 2016-07-29 the FY2016 10-K's three (Productivity and
+  Business Processes, Intelligent Cloud, More Personal Computing); from 2017-08-04 the recast's restated three. The 8-Ks of 2015-09-29
+  and 2015-10-27 recast FY2015 to the new segments without changing the statements: a segment recast adds nothing (the NKE 2009 rule).
+- **Calendar.** All twelve releases came after the close (16:04-16:11 ET; the webcast at 2:30 p.m. Pacific). Nine came on Thursdays
+  and are dated Friday; the Q2 FY15 release came on Monday 2015-01-26 (dated Tuesday, so the week's date is Wednesday 2015-01-28) and
+  the Q4 FY15 and Q4 FY16 releases on Tuesdays (dated Wednesday; the weeks' dates are Thursday 2015-07-23 and 2016-07-21), each the day
+  after the print (the AAPL rule). Holiday weeks end on Thursdays: 2015-04-02, 2015-07-02, 2015-12-24, 2015-12-31, 2016-03-24 and
+  2017-04-13.
+- **Anachronism list:** Intelligent Cloud and Productivity and Business Processes (2015-07-31, the FY2015 10-K's ambitions, accepted
+  during the session; EDGAR full-text search) join `taxonomy_eras.json`; Windows 10, HoloLens, Dynamics 365 and Microsoft Teams were
+  listed with the 2008 series. Only MSFT models from 2016-07-29 contain the new terms, so no output changes.
+- **Adds nothing:** the note offerings (2015-02-12, 2015-11-03, 2016-08-05, 2017-02-03), the bylaws (2015-08-07, 2016-03-17,
+  2016-07-05, 2016-09-22 with the meeting date, 2017-06-14), the director and officer 8-Ks (2015-09-11, 2016-07-07, 2017-03-14,
+  2017-09-19's director retirement, whose exhibit gives the dividend), the annual meetings (2015-12-03, 2016-12-01, 2017-11-30), the
+  derivative settlement notice (2015-12-04), the phone restructurings (2015-07-08 and 2016-05-25: charges, no guided number; they enter
+  with the prints), the LinkedIn agreement (2016-06-13; its slides' "Minimally (~1%) dilutive to non-GAAP EPS in FY17 and FY18" is not
+  a current-year figure, the UNP merger rule) and completion (2016-12-08), and the 10-Qs beyond their currency effects and dividends.
+
+Controls: altering one value of each print (its cash, its growth excluding currency, its call-only guidance words; Q1 FY18's
+receivables caveat and unearned-revenue note), each Q4 print's fiscal-year EPS and the restated FY14, each vintage (its "why" and its
+first-year EPS; the recast's FY17 EPS), each dividend and each cloud event published from 2015-01-01 changes no date before its
+publication and changes the first weekly date on or after it (55 of 57; the FY2017 10-K vintage changes nothing, as the next day's
+8-K replaces it before any weekly date, while its cloud event acts from 2017-08-04 through the recast vintage). No string or dollar
+figure of any print, vintage, guide, dividend, event or source appears in a model dated before it (377,426 checks over the 522 MSFT
+models; the one new hit, "$1.6 billion" from the Q3 FY16 10-Q, is the frozen engine's own comment on FY07 investment income, and the
+two older ones are the 2012-2014 coincidences). The firewall at 2015-07-01, 2016-01-01, 2016-07-01, 2017-01-01, 2017-07-01 and
+2018-01-01 changes no model before its cutoff. The 366 dates of 2008-2014 rebuild byte-identical, and no other ticker's file changed.
+
+Seen in the build (method behaviour, not tuned):
+- **The class goes RICH and stays.** RICH on 148 dates and FAIR on 8, none CHEAP; AVOID on 145, WATCHLIST on 8 and ACCUMULATE on 3.
+  FAIR and ACCUMULATE on the three dates of January 2015 before the Q2 FY15 print; FAIR or RICH, WATCHLIST or AVOID, to 2015-04-17;
+  RICH and AVOID on all 141 dates from 2015-04-24 (the Q3 FY15 print). The verdict is OVERVALUED on 147 dates and MODESTLY OVERVALUED on
+  9.
+- **The calls are robust.** The tier agrees on 8 of the 8 variants on 122 dates, 7 on 19, 6 on 9 and 5 on 6; the class on 8 on 133, 7
+  on 16, 6 on 4 and 3 on 3. Every disagreement falls before 2015-10-01 (the class's before 2015-07-17), most of them the multiples one
+  band richer (the tier on 34 dates, the class on 15) or cheaper (11 and 8).
+- **EPS anchors on the last full year:** FY14's $2.63 from 2015-01-09 to 2015-07-17 (15.3-18.5x, the 57th-81st percentile of its own
+  range), FY15's $2.63 from 2015-07-23 to 2016-07-15 (16.2-21.3x, the 68th-99th), FY16's $2.10 from 2016-07-21 to 2017-07-14
+  (26.6-34.7x, the 99th-100th), FY17's $2.71 on 2017-07-21 and 2017-07-28 (27.0-27.2x) and the recast $3.25 from 2017-08-04
+  (22.3-26.7x, the 99th-100th). The window's median P/E is 14.7x throughout.
+- **The floor stays far below.** The median of the calendar-year P/E lows is 10x throughout: $26.30 on $2.63 to 2016-07-15 (the stock
+  53-113% above it), $21.00 on $2.10 (166-247% above), $27.10 on $2.71 and $32.50 on $3.25 (123-172% above).
+- **BEAR is -24.2%/yr throughout** (FY11's $2.64 to FY12's $2.00, the impairment year), at the 10th-percentile P/E: $13-20.
+- **BASE follows the quarter's growth plus the buyback** (no margin step): +27.9%/yr on Q1 FY15 (with the acquired phone business),
+  +11.9% on Q2 and Q3 FY15, +0.7-0.8% on Q4 FY15, -4.3% on Q1 FY16, -2.3% on Q2, +0.7% on Q3, -4.2% to -4.6% on Q4 FY16 (the deferrals
+  and the strong dollar in the reported growth), then +4.4%, +5.4% and +10.4% on Q1-Q3 FY17, +15.1-15.4% on Q4 FY17 and +13.1% on Q1
+  FY18; the BASE price ran $28-63. The growth factor read +0.50 on Q1 FY15, -0.23 on Q2 and Q3 FY15, -0.50 from Q4 FY15 to Q4 FY16,
+  -0.49 and -0.39 on Q1 and Q2 FY17, +0.11 on Q3 FY17 and +0.50 on Q4 FY17 and Q1 FY18.
+- **BULL and XBULL:** BULL is the window's EPS CAGR (+8.9%/yr over FY05-FY15 on 2015-07-23, +8.4% over FY06-FY15 from the FY2015
+  10-K, +5.2% and +3.9% over FY06-FY16 and FY07-FY16 from 2016-07-21), floored at BASE where BASE is higher (Q1-Q3 FY15, from Q1
+  FY17). XBULL is FY09-FY11's +27.7%/yr (+27.9% on Q1 FY15, floored at BULL).
+- **Ratio B ran from 0.98 to infinite** (BULL below the price on 83 dates from 2015-11-06); the market composite 2.18-3.93 and the
+  adjusted gap -1.97 to -0.20.
+- **The proxy composite** was 1.95 on Q1 FY15, 2.15 on Q2 FY15 to Q1 FY16, 2.20 on Q2 FY16, 2.00 on Q3 FY16 (revenue -5.5% and the
+  gross margin -466bp at BEAR), 2.30 on Q4 FY16 (the operating margin +2,420bp at XBULL against the impaired quarter, revenue -7.1% and
+  the gross margin -504bp at BEAR), 2.20 on Q1 FY17, 2.35 on Q2 FY17, 2.40 on Q3 FY17, 2.70 on Q4 FY17 (the gross margin +244bp and
+  the operating margin +792bp at BULL) and 2.35 on Q1 FY18. Revenue scored BEAR from Q3 FY15 to Q3 FY17 (-12.2% to +7.6% reported).
+  Unearned revenue scored BULL from Q2 FY16 to Q4 FY17 (+17.8% to +38.5%, the deferrals) and BASE otherwise (Q1 FY18 not comparable);
+  the receivables gap BULL on every print but Q3 FY15 (-14.4pp, XBULL) and Q1 FY18 (+18.9pp, BASE).
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- FY14 and FY15 at GAAP ($2.63 and $1.48) instead of the company's figures excluding the charges: 128 models move, no class or tier
+  changes;
+- the company's non-GAAP FY16 $2.79 and FY17 $3.31 until the recast: 54 models move, no class or tier changes (the anchor's P/E
+  20.0-26.1x instead of 26.6-34.7x from 2016-07-21, 22.1-22.3x instead of 27.0-27.2x in July 2017);
+- no recast vintage (the FY2017 10-K's old basis kept from 2017-08-04): 22 models, no change;
+- the deferrals taken out of the BASE reads (the company's non-GAAP constant-currency growth, Q1 FY16 -2% to Q4 FY17 +10%), out of
+  the prints' revenue and operating income (the company's non-GAAP figures for both quarters), or both: 105 models each, no change;
+- the releases' dollar currency effect (stated with non-GAAP constant currency) taken off reported revenue on Q4 FY16, Q3 FY17 and Q4
+  FY17 (-4%, +9%, +14%): 39 models, no change;
+- Q1 FY18's unearned revenue against the old-basis balance (-25.9%): 10 models, no change;
+- Q4 FY15 operating income at GAAP: 13 models, no change;
+- reported growth instead of growth excluding currency: 114 models, 2 classes (FAIR to RICH on 2015-03-13 and 2015-04-17) and 1 tier
+  (WATCHLIST to AVOID on 2015-03-06);
+- CLOUD off the watch list: 156 models (text only), no change.
+
+Judgement calls that could carry hindsight:
+- the Windows 10 deferrals read as revenue recognition (the 2008 rule, decided before any MSFT model was built): GAAP FY16 and FY17
+  and the reported prints; no class or tier moves in 2015-2017 with the company's figures, but the anchor's P/E falls by a quarter;
+- the 8-K of 2017-08-03 as a vintage of its own (the recast EPS from 2017-08-04) and Q1 FY18's unearned revenue as not comparable,
+  with the receivables gap on mixed bases (no class moves);
+- FY2015 at the company's $2.63 and FY2014 restated to $2.64 (no class moves);
+- constant currency given only for non-GAAP revenue left out (no class moves; reported growth throughout would move 2);
+- guidance given only on the conference call left out, so FY15-FY18 have no guide in numbers;
+- CLOUD kept on the watch list after its market-pricing date, with no dated evidence of the market pricing Microsoft (text only);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2015-2017 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -6070,7 +6236,9 @@ What the gates enforce:
   company-acknowledged, with no market read, in the latest 10-K's own words: the FY2012 10-K's "Our increasing focus on devices and
   services presents execution and competitive risks" (its competitors "rapidly developing and deploying cloud-based services"), then the
   FY2013 and FY2014 10-Ks' "Our increasing focus on services" (whose costs "will reduce the operating margins" in FY2014). The theme's
-  market-pricing date (2015-04-23) lies after 2014, so DURABLE stands ("MSFT 2012-2014").
+  market-pricing date (2015-04-23) lies after 2014, so DURABLE stands ("MSFT 2012-2014"). It stays on the list through 2017 in the
+  FY2015-FY2017 10-Ks' words (from 2017-08-04 the FY2017 10-K's, kept by the recast vintage): the market-pricing date passes, but no
+  dated evidence shows the market pricing cloud substitution of Microsoft's licensed software, so DURABLE stands ("MSFT 2015-2017").
 
 ## Workflow
 

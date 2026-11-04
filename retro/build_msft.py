@@ -30,11 +30,16 @@ conference call, which is not a filing; with no next-quarter revenue guide, BASE
 excluding currency (a total effect stated only in dollars is taken off the quarter's revenue; retro/README.md, "MSFT 2012-2014").
 A Q4 print may restate an earlier year's EPS to a company figure excluding only one-offs first published in it ('restates').
 CLOUD (live from 2012-10-30 in retro/taxonomy_eras.json) joins the watch list from its live date with the latest 10-K's own words.
+From the Q1 FY16 release the company's non-GAAP figures also remove the Windows 10 revenue deferrals (revenue recognition), so GAAP
+stands. The 8-K of 2017-08-03 re-presents FY2016-FY2017 under the new revenue and lease standards: a vintage of its own that keeps
+the FY2017 10-K's wording and CLOUD event ('text_published'); the Q1 FY18 print has no year-ago unearned revenue on the new basis in
+any filing, so it is not comparable ('unearned_prior_m' null: the engine's not-reported path; retro/README.md, "MSFT 2015-2017").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
-release, where it is the first trading day after it. Every Microsoft earnings 8-K of the period was accepted after the close
-(the webcast at 2:30 p.m. Pacific), so a print is dated the next trading day, a Friday each time: that day is the week's date
-and the print meets its close, public before the open (release_time; the AAPL 2011 and AVGO 2021-2023 rules).
+release, where it is the first trading day after it. Most Microsoft earnings 8-Ks were accepted after the close (the webcast
+at 2:30 p.m. Pacific), so a print is dated the next trading day; a Friday print is that week's date and meets its close, public
+before the open (release_time; the AAPL 2011 and AVGO 2021-2023 rules); a print dated earlier in the week dates its week the next
+trading day (Q2 FY09 and Q2 FY11 were public on a Thursday, Q4 FY14-FY16 on a Wednesday, Q2 FY15 on a Tuesday).
 
 Output goes to staging/retrospective/MSFT until the series is added to the archive (--out archive/retrospective/MSFT).
 
@@ -114,10 +119,11 @@ def check_print(p):
     ar = pct(r["ar_prior_m"], r["ar_m"])
     want = {"sales_b": r["sales_m"] / 1000, "sales_pct": round(sales, 1), "gross_margin": r2(gm), "gross_margin_bp": round((gm - gm0) * 100, 1),
             "op_margin": r2(om), "op_margin_bp": round((om - om0) * 100, 1), "unearned_b": r["unearned_m"] / 1000,
-            "unearned_pct": round(pct(r["unearned_prior_m"], r["unearned_m"]), 1), "receivables_b": r["ar_m"] / 1000,
-            "receivables_pct": round(ar, 1), "receivables_gap_pp": round(ar - sales, 1)}
+            # no year-ago balance on the print's own basis in any filing (Q1 FY18, the new revenue standard): not comparable
+            "unearned_pct": None if r["unearned_prior_m"] is None else round(pct(r["unearned_prior_m"], r["unearned_m"]), 1),
+            "receivables_b": r["ar_m"] / 1000, "receivables_pct": round(ar, 1), "receivables_gap_pp": round(ar - sales, 1)}
     for k, v in want.items():
-        assert abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+        assert (p[k] is None) == (v is None) and (v is None or abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
     if "fx_impact_m" in r:     # a total currency effect stated only in dollars (Q1 and Q2 FY12): growth excluding currency is
         # (revenue - effect) / year-ago revenue - 1, rounded half up to a whole percent, as the release states growth
         lc = math.floor((r["sales_m"] - r["fx_impact_m"]) / r["sales_prior_m"] * 100 - 100 + 0.5)
@@ -166,8 +172,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30); the 10-K's open-source, software-as-a-service and cloud risks
     # stay in the durability 'why' (the PEP obesity rule). The one encoding decided (retro/README.md, "MSFT 2012-2014"): each 10-K's
     # cloud risk factor (cloud_company_acknowledged) puts CLOUD on the watch list from the theme's live date, with the latest 10-K's
-    # words (a 10-K's wording is replaced by the next 10-K's). Any other event kind needs its encoding decided first
-    events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
+    # words (a 10-K's wording is replaced by the next 10-K's; a vintage that re-presents a 10-K's years keeps that 10-K's words and
+    # event: 'text_published', the 8-K of 2017-08-03). Any other event kind needs its encoding decided first
+    text_from = h.get("text_published", h["published"])
+    events = [e for e in facts["events"] if e["published"] <= as_of and (text_from <= e["published"] or "doc" not in e)]
     if any(e["kind"] != "cloud_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the MSFT builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     themes = retro_tool.load_taxonomy()["themes"]
@@ -330,7 +338,8 @@ def build(as_of, facts, raw, spx, engine, out):
             f"(3) The {fy_now} guide — operating expenses {usd(*gx['opex_guide_usd_b'])} only ({gx['doc']}); no revenue or EPS guide in numbers"
             if gx else f"(3) A {fy_now} guide — none in a filing: {on_call}" if on_call else f"(3) A {fy_now} guide — none in scope yet")
     cat4 = (f"(4) Receivables — {latest['receivables_pct']:+.1f}% against revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
-            f"({latest['receivables_gap_pp']:+.1f}pp): volume licensing is billed ahead, collected later")
+            f"({latest['receivables_gap_pp']:+.1f}pp): volume licensing is billed ahead, collected later"
+            + (f"; {latest['receivables_caveat']}" if latest.get("receivables_caveat") else ""))
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -357,7 +366,8 @@ def build(as_of, facts, raw, spx, engine, out):
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = f"; {latest['eps_note']}" if latest.get("eps_note") else ""
-    billings = (f"Billings: unearned revenue {latest['unearned_pct']:+.1f}% ({latest['unearned_note']}); revenue "
+    unearned = f"{latest['unearned_pct']:+.1f}%" if latest["unearned_pct"] is not None else "not comparable"
+    billings = (f"Billings: unearned revenue {unearned} ({latest['unearned_note']}); revenue "
                 f"{latest['sales_pct']:+.1f}% as reported ({latest['sales_note']}); "
                 + (f"'{latest['fx_note']}'" if latest["fx_note"] is not None else "no filing states the quarter's currency effect")
                 + (f"; ex-currency {latest['lc_pct']:+.0f}% ({latest['lc_note']})" if not gq else "") + eps_note)

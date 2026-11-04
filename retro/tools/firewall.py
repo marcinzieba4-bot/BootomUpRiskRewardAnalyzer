@@ -16,7 +16,8 @@ Plants a print, a history vintage, an event per live theme and a company name (U
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
 CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter; PEP: a display-only guide, and total servings that a filing after CUTOFF
 first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange; MSFT: a guide with every guided field, a later
-range for every quarter the fact sheet guides, a later withdrawal of every guided year and call-only guidance words; a CLOUD event
+range for every quarter the fact sheet guides, a later withdrawal of every guided year, call-only guidance words and a receivables
+caveat; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -85,6 +86,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       op_margin=-50.0, op_margin_bp=-999.0, eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0,
                       cash_b=99.0, next_print="PLANTED", cash_return_text="PLANTED", fx_note="PLANTED", sales_note="PLANTED",
                       unearned_note="PLANTED", receivables_note="PLANTED", lc_pct=-60.0, lc_note="PLANTED", guide_on_call="PLANTED",
+                      receivables_caveat="PLANTED",
                       raw=dict(sales_m=1, sales_prior_m=99, cogs_m=1, cogs_prior_m=1, op_m=-99, op_prior_m=99, ar_m=99, ar_prior_m=1,
                                unearned_m=1, unearned_prior_m=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
