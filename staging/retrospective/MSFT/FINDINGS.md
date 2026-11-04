@@ -1,10 +1,13 @@
 # MSFT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MSFT weekly dates: 209 from 2008-01-04 to 2011-12-30. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the MSFT weekly dates: 366 from 2008-01-04 to 2014-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 91273a1; 2009-2011: 26d3d5b). Prices run to 2026-11-03; the 2008 batch's two-year horizons end by 2010-12-30
-(three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30). Medians of an even count take the upper middle value
-(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc). The 2008-2011 outcomes were computed on 2026-11-03 and the 2012-2014
+ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12 currency correction (retro/README.md, "MSFT 2012-2014") were
+re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure below still holds. The 2008 batch's two-year horizons end
+by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the 2012-2014 batch's by 2016-12-30
+(2017-12-29). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two
+years.
 
 ## 2008 (53 dates)
 
@@ -111,3 +114,72 @@ pushed (2008: 91273a1; 2009-2011: 26d3d5b). Prices run to 2026-11-03; the 2008 b
   "Azure + M365 + OpenAI", DURABLE, risk 1) is hindsight; the question stays a point-in-time one about the FY2010 10-K's risk factor
   and the registry's basis, for the owner. The calls were decided before scoring and stay; changing a rule means a new method version
   tested elsewhere.
+
+## 2012-2014 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 109 | +51% | +21% to +94% | 93 | 81 | +29% | 95 |
+| class FAIR | 35 | +38% | +23% to +52% | 27 | 35 | +17% | 3 |
+| class RICH | 13 | +31% | +21% to +37% | 5 | 13 | +22% | 0 |
+| legacy tier BUY | 106 | +51% | +21% to +94% | 91 | 78 | +28% | 86 |
+| legacy tier ACCUMULATE | 37 | +38% | +28% to +52% | 33 | 37 | +22% | 9 |
+| legacy tier WATCHLIST | 14 | +29% | +21% to +34% | 1 | 14 | +15% | 3 |
+| FY11's $2.69 (2012-01-06 to 2012-07-13) | 28 | +32% | +21% to +51% | 14 | 0 | +14% | 14 |
+| FY12's $2.00, after the impairment (2012-07-20 to 2013-07-12) | 52 | +58% | +32% to +94% | 51 | 52 | +41% | 52 |
+| FY13's $2.58 (2013-07-19 to 2014-07-18) | 53 | +44% | +21% to +57% | 44 | 53 | +26% | 29 |
+| FY14's $2.63 (2014-07-24 to 2014-12-31) | 24 | +34% | +23% to +40% | 16 | 24 | +15% | 3 |
+| 2012 | 52 | +48% | +21% to +94% | 38 | 24 | +24% | 38 |
+| 2013 | 52 | +52% | +31% to +84% | 50 | 52 | +36% | 52 |
+| 2014 | 53 | +36% | +21% to +57% | 37 | 53 | +21% | 8 |
+| verdict UNDERVALUED | 68 | +44% | +21% to +58% | 52 | 40 | +26% | 54 |
+| verdict MODESTLY UNDERVALUED | 28 | +59% | +40% to +94% | 28 | 28 | +55% | 22 |
+| verdict FAIRLY VALUED | 38 | +48% | +25% to +84% | 33 | 38 | +25% | 21 |
+| verdict MODESTLY OVERVALUED | 10 | +33% | +23% to +40% | 7 | 10 | +15% | 1 |
+| verdict OVERVALUED | 13 | +31% | +21% to +37% | 5 | 13 | +22% | 0 |
+
+- **CHEAP held on 95 of 109 dates; FAIR on 3 of 35 and RICH on none of 13.** The CHEAP call held on all 91 dates from 2012-05-04 to
+  2014-01-24 (entries $26.46-38.36, two-year returns +31% to +94%, ahead of SPY on 80) and on 2014-02-07. It failed on 14 of the 17
+  dates from 2012-01-06 to 2012-04-27 (entries $28.25-32.60, the stock 13-25% below the floor that FY11's $2.69 set): MSFT returned
+  +21% to +31% over two years while SPY returned +34% to +46%. From 2014-01-31 the class turned FAIR (35 dates) and RICH (13, from
+  2014-04-25 to 2014-07-18), and MSFT beat SPY on all 48 by 12-39pp (+21% to +52% against SPY's +6% to +18%): FAIR held only where
+  MSFT stayed within 15pp of SPY (2014-09-12, 2014-09-19, 2014-11-14), and RICH, which needs a miss of both the hurdle and SPY, held
+  on none. MSFT beat SPY on 129 of the 157 dates (SPY +6% to +56%, median +32%). One-year returns had a median of +19% (-11.3% to
+  +51.0%); three-year returns ran from +36.5% to +123.8% (median +77.5%).
+- **The class followed the multiple up, and the multiple kept rising.** The FAIR and RICH dates traded at 14.6-18.9x the anchor
+  (FY13's $2.58, then FY14's $2.63), the 47th-78th percentile of a ten-year range whose median had fallen to 14.7-14.9x and whose
+  75th percentile to 18.0-19.8x as 2002-2004 left it; the price sat 46-89% above the floor (10x, the median of the calendar-year
+  lows since 2004). The anchor barely moved ($2.58 to $2.63), so the class changed on the price alone. Every two-year price on those
+  48 dates landed at 0.92-1.35 times BASE (BASE nearest on 46, BULL on 2). Hypothesis, not a rule: the mirror image of 2008-2011,
+  when a window that spanned the bubble kept every date CHEAP; here a window made of the de-rated 2005-2013 years set the median and
+  75th percentile low, and a franchise re-rating out of that range read FAIR and then RICH early. The test belongs on other tickers'
+  re-rating phases, never on MSFT's own outcomes.
+- **Only the entry price ranked the outcomes.** Spearman across the 157 dates, against the two-year return, the return to the m12-24
+  average price and the three-year return: the entry price -0.60, -0.57 and -0.13; the EPP gap -0.31, -0.23 and +0.19; Ratio B
+  -0.24, -0.17 and +0.09; the market composite -0.13, -0.04 and +0.28; the adjusted gap +0.10, +0.08 and -0.32; the proxy composite
+  +0.25, +0.26 and -0.15 (2009-2011: Ratio B -0.75, -0.87 and -0.80). Within the 109 CHEAP dates the price measures ranked with the
+  opposite sign (Ratio B +0.37 and the adjusted gap -0.64 on the two-year return; the entry price still -0.47): the 28 dates on FY11's
+  $2.69, whose BULL was the FY02-FY11 CAGR (+21.1%/yr), had the lowest Ratio B (0.11-0.20) and the weakest returns (median +32%), and
+  the 52 on FY12's GAAP $2.00, whose lower anchor cut every scenario price, had a higher Ratio B (0.49-0.93) and the strongest (+58%,
+  the call held on all). Hypothesis, not a rule: a level change in the EPS anchor moves Ratio B with no change in the price, so across
+  an anchor seam Ratio B ranks the encoding rather than the entry. Test it on other tickers' impairment years before reading anything
+  into it; never fit it to MSFT's outcomes.
+- **The verdict did not warn; it pointed the wrong way.** The 23 OVERVALUED and MODESTLY OVERVALUED dates (2014-04-25 to 2014-07-18,
+  2014-10-31 to 2014-12-31) returned +21% to +40% and beat SPY on every one by 12-27pp; MODESTLY UNDERVALUED (28 dates, mostly on
+  FY12's $2.00) did best (+41% to +94%, median +59%). In 2009-2011 the 19 dates the verdict did not call UNDERVALUED all failed, with
+  the stock at its floor; in 2014 the stock sat far above a 10x floor and kept rising. Hypothesis: the verdict's warning carries where
+  the price meets the floor, not where the floor has fallen away below it. Test it elsewhere.
+- **BASE was the landing; BEAR came only from the FY11 anchor.** BASE was nearest the two-year price on 128 dates, BULL on 18 (16 entries
+  from 2012-09-21 to 2013-01-25, and 2014-07-11 and 2014-07-18) and BEAR on 11 (2012-01-06 to 2012-03-16, where BEAR was $20 on FY11's
+  $2.69). The two-year price ($35-64) was 1.75-4.13 times BEAR, 0.59-1.71 times BASE and 0.35-0.89 times BULL. No path went below
+  BEAR (drawdowns of 14-20%); the two-year high reached BASE on 100 dates and BULL on none. From 2012-07-20, when the impairment
+  year set BEAR at -24.2%/yr, the lowest two-year low was 1.95 times the BEAR price (1.32 on all dates): hindsight about
+  one stock's path, and no reason to treat the year differently.
+- **The encoding calls, seen afterwards.** The deferral reading is the one call that moves classes (retro/README.md, "MSFT
+  2012-2014"): with the company's non-GAAP figures in both the BASE reads and the prints, 38 dates would change class (24 CHEAP to
+  FAIR, 12 RICH to FAIR, 2 FAIR to CHEAP). On those dates the built classes held on 24 and the alternative's would have held on 12;
+  that is hindsight on one stock, and neither confirms nor refutes a rule decided in 2008. GAAP FY12 against the company's $2.78 moved
+  only tiers (ACCUMULATE or WATCHLIST to the next tier up on 23 dates that returned +21% to +52%). CLOUD changed only text, and the
+  outcomes must not decide the registry question: that Microsoft's cloud business later grew is hindsight; the question stays a
+  point-in-time one about its FY2010 10-K and the registry's basis, for the owner. The calls were decided before scoring and stay;
+  changing a rule means a new method version tested elsewhere.
