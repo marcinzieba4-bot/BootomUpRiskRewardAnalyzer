@@ -25,6 +25,12 @@ company-published figure excluding one-offs only replaces it (the ACN rule). The
 deferrals of fiscal 2007 (revenue moved from the second quarter to the third) are revenue recognition, not a one-off (the AAPL
 Q4 FY08 rule), so the quarters stay as reported and the company's "as adjusted" figures go in the notes.
 
+From the Q2 FY09 release Microsoft guides only operating expenses (display only), and from the Q1 FY14 release only on its
+conference call, which is not a filing; with no next-quarter revenue guide, BASE takes the latest quarter's revenue growth
+excluding currency (a total effect stated only in dollars is taken off the quarter's revenue; retro/README.md, "MSFT 2012-2014").
+A Q4 print may restate an earlier year's EPS to a company figure excluding only one-offs first published in it ('restates').
+CLOUD (live from 2012-10-30 in retro/taxonomy_eras.json) joins the watch list from its live date with the latest 10-K's own words.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Every Microsoft earnings 8-K of the period was accepted after the close
 (the webcast at 2:30 p.m. Pacific), so a print is dated the next trading day, a Friday each time: that day is the week's date
@@ -112,6 +118,10 @@ def check_print(p):
             "receivables_pct": round(ar, 1), "receivables_gap_pp": round(ar - sales, 1)}
     for k, v in want.items():
         assert abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+    if "fx_impact_m" in r:     # a total currency effect stated only in dollars (Q1 and Q2 FY12): growth excluding currency is
+        # (revenue - effect) / year-ago revenue - 1, rounded half up to a whole percent, as the release states growth
+        lc = math.floor((r["sales_m"] - r["fx_impact_m"]) / r["sales_prior_m"] * 100 - 100 + 0.5)
+        assert p["lc_pct"] == lc, (p["quarter"], "lc_pct", p["lc_pct"], lc)
 
 
 def usd(lo, hi):
@@ -152,12 +162,16 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a software maker in 2008 (CLOUD from 2012-10-30, scoped to on-premise
-    # IT; OFFSHORE to IT services; GENAI from 2022-11-30); the 10-K's open-source and software-as-a-service risks stay in the
-    # durability 'why' (the PEP obesity rule). Any event needs its theme encoding decided first
+    # no disruption theme in taxonomy_eras.json is live for a software maker to 2012-10-29 (CLOUD from 2012-10-30, scoped to
+    # on-premise IT; OFFSHORE to IT services; GENAI from 2022-11-30); the 10-K's open-source, software-as-a-service and cloud risks
+    # stay in the durability 'why' (the PEP obesity rule). The one encoding decided (retro/README.md, "MSFT 2012-2014"): each 10-K's
+    # cloud risk factor (cloud_company_acknowledged) puts CLOUD on the watch list from the theme's live date, with the latest 10-K's
+    # words (a 10-K's wording is replaced by the next 10-K's). Any other event kind needs its encoding decided first
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    if events:
+    if any(e["kind"] != "cloud_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the MSFT builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
+    themes = retro_tool.load_taxonomy()["themes"]
+    events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -166,8 +180,14 @@ def build(as_of, facts, raw, spx, engine, out):
         a = p.get("fy_actual")
         if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
             y = str(a["fy"])
+            # an earlier year's company figure excluding only one-offs, first published in this release ('restates': the Q4 FY12
+            # release's FY11 $2.64), replaces it until the next 10-K vintage carries it (the ACN rule)
+            eps_n = {**h["eps_normalized"], y: a["eps_normalized"]}
+            for yy, e in a.get("restates", {}).items():
+                assert yy in eps_n, (p["quarter"], yy, "restates a year outside the history")
+                eps_n[yy] = e
             h.update(fy_label=a["fy_label"],
-                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     eps_normalized=eps_n,
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -240,9 +260,14 @@ def build(as_of, facts, raw, spx, engine, out):
         bits.append(f"no {fy_now} revenue or EPS guide in numbers: the {gw['doc']} withdrew it ('{gw['quote']}')")
     elif gx and not ge:
         bits.append(f"no {fy_now} revenue or EPS guide in numbers")
+    # from the Q1 FY14 release Microsoft gives its outlook only on the conference call, which is not a filing: nothing is entered,
+    # and the last numeric range of the year, if any, stands (the AAPL 2020 and NKE rule)
+    on_call = (f"the {latest['quarter']} release gives guidance only on its conference call ('{latest['guide_on_call']}'), not a filing"
+               if latest.get("guide_on_call") else None)
     guide_text = ("Guide: " + "; ".join(bits) + ("; operating income ranges are display only (no margin guide)" if not gx else
-                                                  "; operating expense ranges are display only (no margin guide)")) if bits else \
-                 f"{fy_now}: no guide in scope yet"
+                                                  "; operating expense ranges are display only (no margin guide)")
+                  + (f"; {on_call}" if on_call else "")) if bits else \
+                 (f"{fy_now}: no guide in a filing; {on_call}" if on_call else f"{fy_now}: no guide in scope yet")
     margin_guided = False                          # no operating-margin guide in numbers: no guided step
     fy_margin_base = h["prev_fy_op_margin"]
 
@@ -285,9 +310,25 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("A demand recession hits PC shipments and consumer sales first; the bear needs\n"
                 "  it to spread to enterprise licensing renewals as well.")
     theme_summary = "no disruption theme has dated evidence"
+    for e in [e for e in events if e["kind"] == "cloud_company_acknowledged"][-1:]:
+        # CLOUD is live from 2012-10-30 and scoped to on-premise software and hardware; the latest 10-K's cloud risk factor puts it on
+        # the watch list (the ACN CLOUD rule, as for LOW, NKE, AVGO and PEP: company-acknowledged, no market read). The factor pair
+        # nets to zero and the theme signal stays at 2/4, so only text changes; re-filing needs dated evidence of market pricing
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "cloud"
+        watch = [{"theme": "CLOUD", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Microsoft's own {e['doc']}, under '{e['heading']}', says '{e['risk_quote']}' and '{e['margin_quote']}' "
+                             f"It competes with cloud services of its own: '{e['offering']}' The stock trades at {close / eps_now:.1f}x "
+                             f"{fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market "
+                             "pricing cloud substitution of Microsoft's licensed software specifically.")}]
+        factors = [(f"Cloud services: {e['offering_short']} — Microsoft sells them as well", 0.2, 0.10),
+                   (f"Cloud competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "Cloud: net effect on licensed software and services"
+        trigger = "Customers move to competitors' cloud services faster than Microsoft's own cloud revenue grows"
+        theme_summary = "cloud is live and company-acknowledged; no dated evidence ties the multiple to it"
     cat3 = (f"(3) The {fy_now} guide — " + bits[0] if ge else
             f"(3) The {fy_now} guide — operating expenses {usd(*gx['opex_guide_usd_b'])} only ({gx['doc']}); no revenue or EPS guide in numbers"
-            if gx else f"(3) A {fy_now} guide — none in scope yet")
+            if gx else f"(3) A {fy_now} guide — none in a filing: {on_call}" if on_call else f"(3) A {fy_now} guide — none in scope yet")
     cat4 = (f"(4) Receivables — {latest['receivables_pct']:+.1f}% against revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['receivables_gap_pp']:+.1f}pp): volume licensing is billed ahead, collected later")
 

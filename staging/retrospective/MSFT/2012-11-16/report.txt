@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  MSFT  ·  Microsoft Corporation  ·  $26.52  ·  RETROSPECTIVE as of 2012-11-16
+  Signal: ◉ BUY   Ratio B: 0.49x   Adj gap: +0.34  [MODESTLY UNDERVALUED]
+  Point-in-time: 18 sources, latest published 2012-11-16; latest print Q1 FY13 (Oct 18)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E revenues, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2013E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Windows & Windows Live D  $    17.2  $  17.2  $  20.7      +0.0      +3.5
+    +0.2% revenues in FY12
+  Server and Tools          $    17.1  $  17.1  $  20.6      +0.0      +3.5
+    +12.0% revenues in FY12
+  Online Services Division  $     2.7  $   2.7  $   3.2      +0.0      +0.5
+    +9.5% revenues in FY12
+  Microsoft Business Divis  $    22.0  $  22.0  $  26.4      +0.0      +4.4
+    +7.4% revenues in FY12
+  Entertainment and Device  $     8.8  $   8.8  $  10.6      +0.0      +1.8
+    +7.7% revenues in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    67.8  $  67.8  $  81.5      +0.0     +13.7
+  FY2013E = FY12 $73.72B × (1 − 8.0%: no Q2 FY13 revenue guide, Q1 FY13 revenue ex-currency, applied to the year (no FY13 revenue guide in scope)); split pro rata to FY12 revenue by segment (FY2012 10-K)
+  Q1 FY13 (Oct 18): revenues $16.01B -7.9%; unearned revenue $19.59B +25.1%; receivables -2.8%;
+  gross margin 73.96% (-429.5bp); operating margin 33.16% (-830.5bp); EPS $0.53 vs $0.68
+  Billings: unearned revenue +25.1% (unearned revenue $18,295M + $1,292M long-term vs $14,345M + $1,313M a year earlier (the Q1 FY12 release)); revenue -7.9% as reported (revenue $16,008M vs $17,372M after 'the deferral of $1.36 billion of revenue' for the Windows Upgrade Offer, Windows 8 pre-sales and the Office Offer (as reported; non-GAAP $17,364M, 0%)); no filing states the quarter's currency effect; ex-currency -8% (the release's revenue decline of 8%: no filing states the quarter's total currency effect (the 10-Q states only Server and Tools' and the Microsoft Business Division's, unfavorable $77 million and $119 million)); Q1 FY13 EPS $0.53 after the deferral's $0.13 (non-GAAP $0.65)
+  Guide: FY13 operating expenses $30.3-30.9B (Q1 FY13 release; reaffirmed); no FY13 revenue or EPS guide in numbers; operating expense ranges are display only (no margin guide)
+
+  FY2013E EPS check:  $67.8B × 30.2% pre-tax × (1−23.8%) ÷ 8.494B  =  $1.84  (FY2013E: no EPS guide in numbers, FY12's $2.00 stands)
+  FY2015E BEAR check: $67.8B × 30.2% ÷ 8.029B  =  $1.94  (scenario $1.15)
+  FY2015E BULL check: $81.5B × 30.6% ÷ 8.029B  =  $2.37  (scenario $2.53)
+  Every 1pp of pre-tax margin ≈ $0.06 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Unearned revenue growth            -35.0%   ≥-9.0%   ≥17.0%  ≥104.0%    +25.1%  ▲ BULL  ███░
+  Gross margin change               -1020.0bp  ≥-460.0bp  ≥90.0bp  ≥270.0bp  -429.5bp  ◦ BASE  ██░░
+  Revenue growth                      +2.0%    ≥8.0%   ≥14.0%   ≥29.0%     -7.9%  ⚠ BEAR  █░░░
+  Receivables growth less revenue   +41.0pp  ≤29.0pp  ≤16.0pp  ≤-12.0pp    +5.1pp  ▲ BULL  ███░
+  Operating margin change           -1000.0bp  ≥-510.0bp  ≥-30.0bp  ≥1210.0bp  -830.5bp  ⚠ BEAR  █░░░
+  Cloud: net effect on licensed software and services   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.05 / 4.00
+  Market composite:   2.05 / 4.00  (back-solved from $27 + 15% hurdle)
+  SCA adjustment:    +0.14  ·  EPP-distance adj +0.20  →  Adj composite 2.39  →  Gap +0.34  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 revenue +5.4%, unearned revenue +17.2% (unearned revenue $20,059M at June 30, 2012 vs $17,120M (FY2012 10-K)); Q1 gross margin 73.96% (-430bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 13.3x FY13E vs a 16.3x 10-yr median (23rd percentile of its own range)  (+0.45 × 25%  =  +0.113)
+    -  Growth vs own history: no Q2 FY13 revenue guide, Q1 FY13 revenue ex-currency -8% vs a 11.3% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $66.64B, FY12 free cash flow $29.32B, dividend $0.92 a year, $5,029M of share repurchases and $6,385M of dividends paid in FY12  (+0.30 × 15%  =  +0.045)
+    +  Cloud services: 'our own competing cloud-based software plus services strategies' — Microsoft sells them as well  (+0.20 × 10%  =  +0.020)
+    -  Cloud competition (FY2012 10-K): 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Unearned revenue growth             +25.1%    -35.0%  -60.1%  Multi-year licensing renewals slow: b…
+  Gross margin change               -429.5bp  -1020.0bp  -590.5bp  Hardware and services mix dilutes sof…
+  Revenue growth                       -7.9%     +2.0%   +9.9%  PC shipments and IT budgets stall tog…
+  Receivables growth less revenue     +5.1pp   +41.0pp  +35.9pp  Receivables build ahead of revenue: c…
+  Operating margin change           -830.5bp  -1000.0bp  -169.5bp  Operating costs keep growing into a s…
+  Cloud: net effect on licensed software and services    +2.0/4    +1.0/4  -1.0/4  Customers move to competitors' cloud …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$19  (model)  /  $12 (defined)
+  Bear probability (proxy model):  17.0%
+
+  KEY TRIGGER: unearned revenue went from +17.2% (Q4 FY12) to +25.1% (Q1 FY13);
+  the bear case needs a licensing recession that gross margin (-429.5bp now)
+  and receivables (+5.1pp against revenue) no longer absorb. A demand recession hits PC shipments and consumer sales first; the bear needs
+  it to spread to enterprise licensing renewals as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.00  (FY2013E: no EPS guide in numbers, FY12's $2.00 stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2002 37.5x, 2003 33.0x, 2004 23.7x, 2005 19.1x, 2006 14.9x, 2007 14.9x, 2008 10.8x, 2009 9.4x, 2010 8.8x, 2011 9.0x, 2012 13.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $28/share
+  Current $27 vs Updated EPP $28:  -5%  ✓ BELOW panic floor — deep-value zone
+  Bear $12 vs Updated EPP $28:  -57%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Unearned revenue growth                     -9.0      -34.1   BASE floor (vs +25 now)
+  Gross margin change                       -460.0      -30.5   BASE floor (vs -430 now)
+  Revenue growth                               8.0      +15.9   BASE floor (vs -8 now)
+  Receivables growth less revenue             29.0      +23.9   BASE floor (vs +5 now)
+  Operating margin change                   -510.0     +320.5   BASE floor (vs -830 now)
+  Cloud: net effect on licensed software and services             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.00 × (1+0.0%)² = $2.00
+  At 16x P/E (conservative):  $32/share
+  + Cumul. dividends (2yr):  +$1.90/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $32  (▲5 from $27)
+  Conservative total return:  +28% over 2yr  = +14%/yr
+
+  At 13.3x the multiple is already near its 16x median, so the conservative
+  case is a growth question: breakeven at 16x needs FY2015E EPS of $1.54,
+  i.e. -12.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $24.30  –  $32.95  (at 26th pct of range)
+  Annual dividend:      $0.92/share  (yield 3.5%)
+  Realized vol (1yr):   21% annualized
+  Beta vs broad market: 0.99
+  1-sigma range (1yr):  $21  –  $32  ($27 ± 21%)
+  2-sigma range (1yr):  $15  –  $38
+  ────────────────────────────────────────────────────────────
+  Bear $12 requires:  ~2.6σ price move  (unusual — requires fundamental break)
+  A software company with a 1.0 beta: the stock is +9% off its November
+  low while unearned revenue went from +17.2% (Q4 FY12) to +25.1% (Q1 FY13).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.15  10.6x  $     12    17.0%     17.0%    +0.0pp  EPS -24.2%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct
+  BASE        1.80  16.3x  $     29    59.2%     59.2%    +0.0pp  EPS +-5.2%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        2.53  22.3x  $     56    20.0%     20.0%    +0.0pp  EPS +12.6%/yr (FY03-FY12 CAGR); P/E holds its 75th pct
+  XBULL       3.39  35.3x  $    120     3.8%      3.8%    +0.0pp  EPS +30.1%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct
+
+  Proxy EV (2yr): $35  /  Market EV: $35  /  Current: $27
+  Conservative EV (2yr, ④): $32 + $1.90 divs = $34 total value
+  Downside (→ Bear $12): 54.8%   Upside (→ Bull $56): 111.2%   Ratio B 0.49x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $27 the market needs $35 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.05 against a model
+  read of 2.39: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.49x      -5%    +0.34  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.17x      -5%    +0.86  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.07x      -5%    -0.07  FAIRLY VALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.43x      -5%    +0.39  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.51x      -5%    +0.30  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.49x      -5%    +0.64  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.49x     -22%    +0.34  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.49x      -5%    +0.51  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY13 print (late January) — the next read on unearned revenue (+25.1% now) and the full-year guide
+  (2) Gross margin — -429.5bp in Q1 FY13: software against the hardware and online mix
+  (3) The FY13 guide — operating expenses $30.3-30.9B only (Q1 FY13 release); no revenue or EPS guide in numbers
+  (4) Receivables — -2.8% against revenue -7.9% in Q1 FY13 (+5.1pp): volume licensing is billed ahead, collected later
+  (5) Capital return at 13x — $1,632M of share repurchases and $1,676M of dividends in the quarter: management's own read of the multiple
+  ◉ BUY  |  EPP floor $28  |  ADD below ~$25  |  TRIM above $56
+════════════════════════════════════════════════════════════════════════
+

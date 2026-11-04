@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  MSFT  ·  Microsoft Corporation  ·  $40.12  ·  RETROSPECTIVE as of 2014-05-23
+  Signal: ◎ ACCUMULATE   Ratio B: 0.97x   Adj gap: -0.73  [OVERVALUED]
+  Point-in-time: 21 sources, latest published 2014-05-23; latest print Q3 FY14 (Apr 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenues, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2014E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Windows Division          $    18.8  $  18.8  $  22.2      +0.0      +3.4
+    -0.9% revenues in FY13
+  Server and Tools          $    20.5  $  20.5  $  24.2      +0.0      +3.7
+    +9.4% revenues in FY13
+  Online Services Division  $     3.3  $   3.3  $   3.9      +0.0      +0.6
+    +11.9% revenues in FY13
+  Microsoft Business Divis  $    24.9  $  24.9  $  29.5      +0.0      +4.6
+    +2.7% revenues in FY13
+  Entertainment and Device  $    10.3  $  10.3  $  12.2      +0.0      +1.9
+    +6.5% revenues in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    77.8  $  77.8  $  92.0      +0.0     +14.2
+  FY2014E = FY13 $77.85B × (1 + 0.0%: no Q4 FY14 revenue guide, Q3 FY14 revenue ex-currency, applied to the year (no FY14 revenue guide in scope)); split pro rata to FY13 revenue by segment (FY2013 10-K)
+  Q3 FY14 (Apr 24): revenues $20.40B -0.4%; unearned revenue $19.51B +9.0%; receivables +12.6%;
+  gross margin 70.88% (-575.5bp); operating margin 34.18% (-297.0bp); EPS $0.68 vs $0.72
+  Billings: unearned revenue +9.0% (unearned revenue $17,670M + $1,842M long-term vs $16,511M + $1,394M a year earlier (the Q3 FY13 release)); revenue -0.4% as reported (revenue $20,403M vs $20,489M, a year-ago quarter with $1,658M of net revenue recognition (as reported; 8% against the year-ago non-GAAP $18,831M)); no filing states the quarter's currency effect; ex-currency +0% (the release's revenue change of '(0)%': no filing states the quarter's currency effect); Q3 FY13's $0.72 included the net recognition's $0.16 and the fine's $0.09 (non-GAAP $0.65)
+  Guide: FY14 operating expenses $31.3-31.9B (Q4 FY13 release; 'revising operating expense guidance downward'); no FY14 revenue or EPS guide in numbers; operating expense ranges are display only (no margin guide); the Q3 FY14 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+
+  FY2014E EPS check:  $77.8B × 34.8% pre-tax × (1−19.2%) ÷ 8.367B  =  $2.61  (FY2014E: no EPS guide in numbers, FY13's $2.58 stands)
+  FY2016E BEAR check: $77.8B × 34.8% ÷ 7.899B  =  $2.77  (scenario $1.48)
+  FY2016E BULL check: $92.0B × 35.1% ÷ 7.899B  =  $3.31  (scenario $3.40)
+  Every 1pp of pre-tax margin ≈ $0.08 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Unearned revenue growth            -35.0%   ≥-9.0%   ≥17.0%  ≥104.0%     +9.0%  ◦ BASE  ██░░
+  Gross margin change               -1020.0bp  ≥-460.0bp  ≥90.0bp  ≥270.0bp  -575.5bp  ⚠ BEAR  █░░░
+  Revenue growth                      +2.0%    ≥8.0%   ≥14.0%   ≥29.0%     -0.4%  ⚠ BEAR  █░░░
+  Receivables growth less revenue   +41.0pp  ≤29.0pp  ≤16.0pp  ≤-12.0pp   +13.0pp  ▲ BULL  ███░
+  Operating margin change           -1000.0bp  ≥-510.0bp  ≥-30.0bp  ≥1210.0bp  -297.0bp  ◦ BASE  ██░░
+  Cloud: net effect on licensed software and services   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   2.42 / 4.00  (back-solved from $40 + 15% hurdle)
+  SCA adjustment:    -0.01  ·  EPP-distance adj -0.10  →  Adj composite 1.69  →  Gap -0.73  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 revenue +5.6%, unearned revenue +11.7% (unearned revenue $22,399M at June 30, 2013 vs $20,059M (FY2013 10-K)); Q3 gross margin 70.88% (-576bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 15.6x FY14E vs a 14.8x 10-yr median (58th percentile of its own range)  (-0.13 × 25%  =  -0.033)
+    -  Growth vs own history: no Q4 FY14 revenue guide, Q3 FY14 revenue ex-currency +0% vs a 8.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $88.42B, FY13 free cash flow $24.58B, dividend $1.12 a year, $5,360M of share repurchases and $7,455M of dividends paid in FY13  (+0.30 × 15%  =  +0.045)
+    +  Cloud services: 'our own competing cloud-based strategies' — Microsoft sells them as well  (+0.20 × 10%  =  +0.020)
+    -  Cloud competition (FY2013 10-K): 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Unearned revenue growth              +9.0%    -35.0%  -44.0%  Multi-year licensing renewals slow: b…
+  Gross margin change               -575.5bp  -1020.0bp  -444.5bp  Hardware and services mix dilutes sof…
+  Revenue growth                       -0.4%     +2.0%   +2.4%  PC shipments and IT budgets stall tog…
+  Receivables growth less revenue    +13.0pp   +41.0pp  +28.0pp  Receivables build ahead of revenue: c…
+  Operating margin change           -297.0bp  -1000.0bp  -703.0bp  Operating costs keep growing into a s…
+  Cloud: net effect on licensed software and services    +2.0/4    +1.0/4  -1.0/4  Customers move to competitors' cloud …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$25  (model)  /  $16 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: unearned revenue went from -1.7% (Q2 FY14) to +9.0% (Q3 FY14);
+  the bear case needs a licensing recession that gross margin (-575.5bp now)
+  and receivables (+13.0pp against revenue) no longer absorb. A demand recession hits PC shipments and consumer sales first; the bear needs
+  it to spread to enterprise licensing renewals as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.58  (FY2014E: no EPS guide in numbers, FY13's $2.58 stands)
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2004 23.7x, 2005 19.1x, 2006 14.9x, 2007 14.9x, 2008 10.8x, 2009 9.4x, 2010 8.8x, 2011 9.0x, 2012 10.2x, 2013 10.3x, 2014 13.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $26/share
+  Current $40 vs Updated EPP $26:  +56%  ⚠ far above floor — large drawdown room
+  Bear $16 vs Updated EPP $26:  -38%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Unearned revenue growth                     -9.0      -18.0   BASE floor (vs +9 now)
+  Gross margin change                       -460.0     +115.5   BASE floor (vs -576 now)
+  Revenue growth                               8.0       +8.4   BASE floor (vs -0 now)
+  Receivables growth less revenue             29.0      +16.0   BASE floor (vs +13 now)
+  Operating margin change                   -510.0     -213.0   BASE floor (vs -297 now)
+  Cloud: net effect on licensed software and services             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.58 × (1+0.8%)² = $2.62
+  At 14x P/E (conservative):  $37/share
+  + Cumul. dividends (2yr):  +$2.31/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $37  (▼3 from $40)
+  Conservative total return:  -3% over 2yr  = -1%/yr
+
+  0.8% EPS growth is what is left once the premium multiple (15.6x)
+  mean-reverts to 14x. Breakeven at 14x needs FY2016E EPS of $2.70,
+  i.e. 2.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $30.84  –  $41.66  (at 86th pct of range)
+  Annual dividend:      $1.12/share  (yield 2.8%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 0.93
+  1-sigma range (1yr):  $30  –  $50  ($40 ± 25%)
+  2-sigma range (1yr):  $20  –  $61
+  ────────────────────────────────────────────────────────────
+  Bear $16 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  A software company with a 0.9 beta: the stock is +29% off its September
+  low while unearned revenue went from -1.7% (Q2 FY14) to +9.0% (Q3 FY14).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.48  10.5x  $     16    29.4%     10.7%   +18.7pp  EPS -24.2%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct
+  BASE        2.73  14.8x  $     40    52.7%     37.5%   +15.2pp  EPS +2.8%/yr (Q3 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        3.40  19.2x  $     65    15.1%     43.6%   -28.5pp  EPS +14.7%/yr (FY04-FY13 CAGR); P/E holds its 75th pct
+  XBULL       4.37  22.3x  $     97     2.9%      8.2%    -5.4pp  EPS +30.1%/yr (best 2-yr run FY04-FY13); P/E at its 90th pct
+
+  Proxy EV (2yr): $38  /  Market EV: $53  /  Current: $40
+  Conservative EV (2yr, ④): $37 + $2.31 divs = $39 total value
+  Downside (→ Bear $16): 60.1%   Upside (→ Bull $65): 62.0%   Ratio B 0.97x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $40 the market needs $53 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.42 against a model
+  read of 1.69: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.97x     +56%    -0.73  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.62x     +56%    -0.27  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.64x     +56%    -1.28  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.90x     +56%    -0.67  OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.10x     +56%    -0.79  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             0.97x     +56%    -0.43  MODESTLY OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.97x     +20%    -0.63  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.97x     +56%    -0.58  OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY14 print (late July) — the next read on unearned revenue (+9.0% now) and the full-year guide
+  (2) Gross margin — -575.5bp in Q3 FY14: software against the hardware and online mix
+  (3) The FY14 guide — operating expenses $31.3-31.9B only (Q4 FY13 release); no revenue or EPS guide in numbers
+  (4) Receivables — +12.6% against revenue -0.4% in Q3 FY14 (+13.0pp): volume licensing is billed ahead, collected later
+  (5) Capital return at 16x — $1,845M of share repurchases and $2,322M of dividends in the quarter: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $26  |  ADD below ~$34  |  TRIM above $65
+════════════════════════════════════════════════════════════════════════
+

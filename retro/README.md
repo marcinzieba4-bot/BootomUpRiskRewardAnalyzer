@@ -5691,9 +5691,10 @@ Decided before any 2009-2011 outcome was computed:
 - **No quarter guide: the latest quarter's revenue growth excluding currency** (the NKE and PEP rule) feeds BASE and the growth
   factor. It is the release's growth less the currency effect a filing states: Q2 FY09 +1% (2% less "one percentage point"), Q4 FY09
   -16% (-17% less a "one percentage point decrease") and Q1 FY10 -12% (-14% less a "2 percentage point decrease"). Where a filing calls
-  the effect not significant or insignificant (Q3 FY09, Q1 FY11, Q3 FY11, Q4 FY11), or no filing states it (Q2-Q4 FY10, Q2 FY11, Q1
-  FY12), the reported growth stands: -6% on Q3 FY09, +14%, +6% and +22% on Q2-Q4 FY10, +25%, +5%, +13% and +8% on Q1-Q4 FY11 and +7%
-  on Q1 FY12.
+  the effect not significant or insignificant (Q3 FY09, Q1 FY11, Q3 FY11, Q4 FY11; the Q2 FY11 10-Q too, though that print's note
+  cites only the release), or no filing states it (Q2-Q4 FY10), the reported growth stands: -6% on Q3 FY09, +14%, +6% and +22% on Q2-Q4
+  FY10, +25%, +5%, +13% and +8% on Q1-Q4 FY11. Q1 FY12 is +5%: its 10-Q states the effect in dollars ("a favorable foreign currency
+  impact of $409 million"), which the first transcription missed (+7%, the reported growth; corrected in "MSFT 2012-2014").
 - **The Windows 7 and Office 2010 deferrals are revenue recognition, not one-offs** (the 2008 technology-guarantee rule). Q4 FY09
   deferred $276 million for the Windows 7 Upgrade Option program, Q1 FY10 $1.47 billion for the program and the sales before general
   availability, and Q2 FY10 recognized $1.71 billion; Q3 FY10 deferred $305 million for the Office 2010 Technology Guarantee. The
@@ -5754,9 +5755,9 @@ Seen in the build (method behaviour, not tuned):
 - **BASE follows the quarter's growth excluding currency plus the buyback** (1.6-2.9%/yr; no margin step): +8.9%/yr on the Q2 FY09
   guide (2009-01-09 and 2009-01-16), then +2.6% on Q2 FY09, -4.4% on Q3, -14.0% and -13.7% on Q4 (the first deferral), -9.7% on Q1 FY10
   (the $1.47 billion deferral), +16.3% on Q2 FY10 (the recognition), +8.3% on Q3, +24.2% and +24.5% on Q4, +27.5% on Q1 FY11 (against
-  the deferral quarter), +7.5% on Q2 FY11 (against the recognition), +15.5% on Q3, +10.6% and +10.9% on Q4 FY11 and +9.9% on Q1 FY12.
+  the deferral quarter), +7.5% on Q2 FY11 (against the recognition), +15.5% on Q3, +10.6% and +10.9% on Q4 FY11 and +7.9% on Q1 FY12 (+9.9% before the correction).
   The BASE price ran $30-84. The growth factor read -0.50 from 2009-01-09 to Q1 FY10 and on Q3 FY10 and Q2 FY11, +0.19 on Q2 FY10,
-  +0.50 on Q4 FY10 and Q1 FY11, +0.09 on Q3 FY11 and -0.39 to -0.49 from Q4 FY11, against an 11.7-13.5% median.
+  +0.50 on Q4 FY10 and Q1 FY11, +0.09 on Q3 FY11 and -0.39 to -0.50 from Q4 FY11, against an 11.7-13.5% median.
 - **BULL and XBULL:** BULL is the window's EPS CAGR (+11.4%/yr over FY99-FY08 to 2009-07-17, +7.4% over FY00-FY09 from the FY2009 10-K,
   +13.2% over FY01-FY10 from the FY2010 10-K, +21.1% over FY02-FY11 from the FY2011 10-K), floored at BASE where BASE is higher (Q2-Q4
   FY10, Q1 and Q3 FY11). XBULL is the FY04-FY06 run (+30.1%/yr) on every date.
@@ -5772,7 +5773,7 @@ How far each call moves the classes (the 156 dates rebuilt with one encoding cha
 - the deferrals taken out of the BASE reads (the company's growth without them: Q1 FY10 -2% after currency, Q2 FY10 +4%, Q3 FY10
   +8%, Q1 FY11 +13%, Q2 FY11 +15%), out of the prints' revenue and operating income (the company's adjusted revenue; Q4 FY09's $13,375M
   derived for the test, no company total being published), or out of both, would change no class and no tier (65 to 104 models move);
-- reported growth instead of growth excluding currency (Q2 FY09 +2%, Q4 FY09 -17%, Q1 FY10 -14%) would change nothing;
+- reported growth instead of growth excluding currency (Q2 FY09 +2%, Q4 FY09 -17%, Q1 FY10 -14%, and Q1 FY12 +7%) would change nothing;
 - keeping the withdrawn FY09 range ($2.05 instead of FY08's $1.87 from 2009-01-23 to 2009-07-17) would change nothing;
 - FY09 at $1.70 (Q3 FY09's $0.06 and Q4 FY09's $0.02 of listed items added back) and FY11 at $2.64 (Q3 FY11's $0.05 tax benefit
   out), both derived for the test only, would change nothing;
@@ -5784,12 +5785,185 @@ Judgement calls that could carry hindsight:
   moves no class);
 - the Windows 7 and Office 2010 deferrals as revenue recognition (they swing BASE between -9.7%/yr and +27.5%/yr and the proxy
   composite between 1.80 and 3.00; no class moves);
-- reported growth where no filing states the currency effect (Q2-Q4 FY10, Q2 FY11, Q1 FY12), and an effect called insignificant read
-  as zero;
+- reported growth where no filing states the currency effect (Q2-Q4 FY10), and an effect called insignificant read as zero;
 - FY2009-FY2011 at GAAP, with the quantified severance, impairments, legal charges and tax benefit left in (no class moves);
 - the cloud risk factor kept in the "why" because the registry's CLOUD date (2012-10-30) stands: text only either way, and the date
   itself is the owner's decision;
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2009-2011 went; DURABLE (the class label only).
+
+### MSFT 2012-2014: GAAP through the goodwill impairment, the upgrade-offer deferrals, guidance moves to the call, CLOUD on the watch list
+
+```bash
+python3 retro/build_msft.py --weekly 2012-01-02 2014-12-31                  # 157 dates, 2012-01-06 .. 2014-12-31
+for c in 2012-07-01 2013-01-01 2013-07-01 2014-01-01 2014-07-01 2015-01-01; do python3 retro/tools/firewall.py $c MSFT; done
+```
+
+All 45 8-Ks and the 8-K/A filed from January 2012 to December 2014 were checked: the twelve earnings releases read in full, the other
+33 8-Ks and the 8-K/A of 2013-05-20 read for guides, figures and dividend rates. The FY2012-FY2014 10-Ks were read for the history, the
+segments, the dividends and the risk factors, the nine 10-Qs from Q2 FY12 to Q1 FY15 for their currency effects and dividends (the
+10-Q/A of 2012-01-27 only adds the XBRL exhibit), and the FY2005-FY2007 10-Ks for the first year's diluted shares. 312 strings were
+checked word for word with `verbatim.py` against their own filings, every number of the prints, guides and vintages was matched to the
+text of its cited source, every year-ago figure to the year-ago print (the one difference is the recast below), and the builder
+re-derives every print's signal values from its raw figures. Each source's date comes from EDGAR's acceptance time. Thresholds, signals
+and the engine are unchanged; the builder gained four encodings (an earlier year restated by a Q4 release, a currency effect stated in
+dollars, guidance given only on the call, the CLOUD watch list), decided before any 2012-2014 model was built. Decided before any
+2012-2014 outcome was computed:
+
+- **Three vintages, all filed after the close.** The FY2012 10-K (accepted 2012-07-26 16:12 ET, dated 2012-07-27) gives FY2008-FY2012,
+  the FY2013 10-K (2013-07-30 16:14 ET, dated 2013-07-31) FY2009-FY2013 and the FY2014 10-K (2014-07-31 17:16 ET, dated 2014-08-01)
+  FY2010-FY2014. Each earlier year comes from the latest 10-K that reports it, so the history runs FY2003-FY2012, FY2004-FY2013 and
+  FY2005-FY2014; each Q4 print extends it for the week before its 10-K (FY2002-FY2012 on 2012-07-20, FY2003-FY2013 on 2013-07-19,
+  FY2004-FY2014 on 2014-07-24). The first year's diluted shares: FY2003's 10,882M (the FY2005 10-K), FY2004's 10,894M (FY2006 10-K)
+  and FY2005's 10,906M (FY2007 10-K).
+- **FY2011 at the company's $2.64 from the Q4 FY12 release.** Its "2011 As Adjusted (Non-GAAP)" excludes only the $0.05 tax settlement
+  (GAAP $2.69): a company figure excluding a one-off (the ACN rule; FY2006's and FY2007's "as adjusted" figures also came from a later
+  release). It replaces $2.69 from 2012-07-20 (a Q4 print's new `restates` field, until the FY2012 10-K vintage carries it).
+- **FY2012-FY2014 at GAAP.** FY12 enters at $2.00, after the $6.19 billion goodwill impairment of the Online Services Division (announced
+  by the 8-K of 2012-07-02). The company's non-GAAP $2.78 also removes the $540 million Windows Upgrade Offer deferral, revenue
+  recognition rather than a one-off (the 2008 rule), so it is not a figure excluding a one-off (the NKE FY2007 and AAPL Q4 FY08 rule),
+  and no EPS excluding the impairment alone was published ($0.73 a share is an effect; nothing is derived). The year is kept: the
+  impairment is under its $16,978M net income (the AAPL FY2003 test). FY13 enters at $2.58 (the company's $2.62 also removes the
+  Windows Upgrade Offer recognition; no EPS excluding the $733 million European Commission fine alone; the $900 million Surface RT
+  charge, $0.07, is an effect) and FY14 at $2.63 (the Q4 FY14 release gives its "Noted Items", net $(0.03), as effects only).
+- **Prints at GAAP.** The company's comparable figures remove deferrals or recognitions as well as one-offs, so no comparable operating
+  income replaces GAAP (the PEP Q4 2007 rule): Q4 FY12 reads $192M (the impairment and the deferral in: operating margin -3,447bp),
+  Q4 FY13 $6,073M against it (+2,946bp), Q3 FY13 keeps the fine and Q1 FY15 its $1.14 billion of integration and restructuring
+  expenses (a Noted Item). The Q1 FY15 release recasts Q1 FY14's cost of revenue to $5,145M ($5,114M first reported), taken as shown
+  (the 2008 rule).
+- **The upgrade-offer deferrals are revenue recognition, not one-offs** (the 2008 and 2009-2011 rule): the Windows Upgrade Offer
+  deferral in Q4 FY12 ($540M), the Q1 FY13 deferral of $1.36 billion (the Windows Upgrade Offer, Windows 8 pre-sales and the Office
+  Offer), Q2 FY13's net deferral ($1,329M, less $783M recognized for Windows 8 pre-sales), Q3 FY13's $1,658M net recognition, Q4
+  FY13's $782M Office Upgrade Offer recognition and Q1 FY14's $113M Windows 8.1 pre-sales deferral. The prints and BASE take the
+  reported figures; the company's non-GAAP revenue and growth go in the notes.
+- **Growth excluding currency, an effect stated only in dollars** (new encoding). The Q2 FY12 10-Q states "a favorable foreign currency
+  impact of $225 million": growth excluding currency is ($20,885M - $225M) / $19,953M - 1 = +3.5%, rounded half up to +4% as the
+  release states growth (`fx_impact_m`; the builder re-derives it). The 10-Qs of Q3 FY12 to Q3 FY13 state only segments' effects (the
+  Microsoft Business Division's, Server and Tools'), which are not the quarter's, so the reported growth stands, as it does where no
+  filing states an effect (from Q4 FY12; the FY2012 10-K's "insignificant impact on revenue" is the fiscal year's): +6% on Q3 FY12, +4%
+  on Q4 FY12, -8% on Q1 FY13, then +3%, +18%, +10%, +16%, +14%, 0% (the release's "(0)%"), +18% and +25% on Q2 FY13 to Q1 FY15.
+- **The Q1 FY12 correction.** Reading the Q1 FY12 10-Q (MS52, already a source of that print) for this range found "Revenue for the
+  three months ended September 30, 2011 included a favorable foreign currency impact of $409 million", which the 2009-2011
+  transcription had missed ("no filing states the quarter's currency effect"). By the same rule Q1 FY12 is +5% ((17,372 - 409) / 16,195
+  - 1 = +4.7%), not the reported +7%: a transcription error against the cited filing, corrected in the fact sheet. The 11 dates from
+  2011-10-21 to 2011-12-30 were rebuilt and re-run: BASE +7.9%/yr instead of +9.9%, the BASE price $2-3 lower, the conservative
+  two-year return about 8pp lower, the growth factor -0.50 instead of -0.49; no class, tier, verdict, Ratio B, adjusted gap, market
+  composite or robustness count changes. Those dates had
+  been scored on 2026-11-03; their outcomes are refreshed with this range's. The other 2009-2011 10-Qs were re-read for a total effect
+  and none was missed (the Q2 FY11 10-Q calls it insignificant: the same +5%).
+- **Operating-expense guides, then guidance only on the call.** Every release to Q4 FY13 guides the fiscal year's operating expenses,
+  display only: FY12 $28.5-28.9B and $28.3-28.7B ("revising operating expense guidance downward"), FY13 $30.3-30.9B (preliminary in the
+  Q3 FY12 release, reaffirmed three times) and $30.2-30.5B "Adjusting for the European Commission fine", FY14 $31.6-32.2B (preliminary)
+  and $31.3-31.9B (Q4 FY13). From Q1 FY14 each release says "Microsoft will provide forward-looking guidance in connection with this
+  quarterly earnings announcement on its earnings conference call and webcast": the calls are not filings (the AAPL 2020 and NKE rule),
+  so nothing is entered, the FY14 range stands as display, the guide line quotes the release (`guide_on_call`), and FY15 has no guide
+  in a filing. With no EPS guide in numbers, each year's anchor is the last full year's EPS (the rollover rule): FY11's $2.69 to
+  2012-07-13, FY12's $2.00 from 2012-07-20, FY13's $2.58 from 2013-07-19 and FY14's $2.63 from 2014-07-24. The preliminary FY13 and
+  FY14 ranges are superseded on the day their year becomes current, so they change nothing.
+- **Dividends,** each from the first filing that states the rate: $0.23 a quarter from the 8-K of 2012-09-18 (accepted 16:56 ET, dated
+  2012-09-19), $0.28 from the Q1 FY14 10-Q (declared September 16, 2013; dated 2013-10-25; no 8-K states it) and $0.31 from the 8-K
+  of 2014-09-17 (06:04 ET, before the open). The 8-K of 2014-03-12 restates $0.28.
+- **CLOUD on the watch list from its live date** (new encoding). Each 10-K's cloud risk factor is an event (`cloud_company_acknowledged`,
+  id = the 10-K's source): the FY2012 10-K's "Our increasing focus on devices and services presents execution and competitive risks"
+  ("Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers. Pricing and
+  delivery models are evolving."; "These costs may reduce the operating margins we have previously achieved."), the FY2013 10-K's
+  "Our increasing focus on services presents execution and competitive risks" and the FY2014 10-K's (whose costs "will reduce the
+  operating margins"). CLOUD is live in the registry from 2012-10-30, so the FY2012 10-K's words stay in the "why" alone from 2012-07-27
+  to 2012-10-26 and put CLOUD on the watch list from 2012-11-02 (the first weekly date on or after 2012-10-30, after the Hurricane
+  Sandy closure), company-acknowledged, with no market read (the ACN, LOW, NKE, AVGO and PEP rule). The factor pair nets to zero and the
+  theme signal stays at 2/4, so only text changes; the theme's market-pricing date (2015-04-23) is after the range, and DURABLE, risk 2,
+  stands.
+- **Segments** (display only): the FY2012 10-K's five divisions, the FY2013 10-K's (the Windows Division renamed) and, from 2014-08-01,
+  the FY2014 10-K's six lines (Devices and Consumer Licensing, Computing and Gaming Hardware, Phone Hardware, new with no prior year,
+  Devices and Consumer Other, Commercial Licensing and Commercial Other). The 8-Ks of 2013-09-20, 2013-09-26 and 2013-11-26 recast the
+  segments without restating the statements: a segment recast adds nothing, and the bridge keeps the FY2013 10-K's lines until the
+  FY2014 10-K (the NKE 2009 rule).
+- **Calendar.** All twelve releases came after the close (16:02-16:07 ET; the webcast at 2:30 p.m. Pacific), so each print is dated the
+  next trading day, a Friday each time but one: the Q4 FY14 release came on Tuesday 2014-07-22 and is dated Wednesday, so the week's
+  date is Thursday 2014-07-24, the day after the print (the AAPL rule). Holiday weeks end on Thursdays: 2012-04-05, 2013-03-28,
+  2014-04-17 and 2014-07-03; the week of the Sandy closure ends on 2012-11-02; the range ends on Wednesday 2014-12-31.
+- **Anachronism list:** Windows Phone 8 (2012-10-10), Office 365 Home Premium (2012-10-19), Surface RT (2013-04-19), Windows 8.1
+  (2013-07-19), Microsoft Azure (2014-04-25) and Surface Pro 3 (2014-07-23) join `taxonomy_eras.json`, each dated from the first
+  Microsoft filing that uses it (EDGAR full-text search; each was accepted after the close). No model of any ticker contains them, so no
+  output changes.
+- **Adds nothing:** the director and officer 8-Ks (2012-02-21, 2012-05-03, 2012-09-18's director retirement, 2012-10-09, 2012-11-16,
+  2013-04-18, 2013-05-13 and its 8-K/A, 2013-07-03, 2013-07-11, 2013-08-23 on the CEO's planned retirement, 2013-09-23, the second
+  8-K of 2013-09-26, 2014-02-04 on the new CEO, 2014-03-12, 2014-03-20, 2014-07-31, 2014-08-19, 2014-09-17's board changes), the bylaws
+  (2012-06-18), the annual meetings (2012-11-29, 2013-11-20, 2014-12-04), the note offerings (2012-11-07, 2013-05-01, 2013-12-06), the
+  comprehensive-income recast (2012-11-02), the goodwill impairment 8-K (2012-07-02: no guided number; the charge enters with the Q4
+  FY12 print), the ValueAct agreement (2013-08-30), the Nokia agreement (2013-09-03: "accretive to our adjusted earnings per share
+  starting in FY15" is not a current-year figure, the UNP merger rule), the restructuring plan (2014-07-17: $1.1-1.6 billion of charges,
+  no input in the method), and the 10-Qs beyond their currency effects and dividends.
+
+Controls: altering one value of each print (its cash, its growth excluding currency or its dollar currency effect, its call-only
+guidance words), each Q4 print's fiscal-year EPS and the restated FY11, each vintage (its "why" and its first-year EPS), each guide, each
+dividend and each cloud event published from 2011-10-21 changes no date before its publication and changes the first weekly date on or
+after it (53 of 56; the preliminary FY13 and FY14 ranges change nothing, and the FY2012 10-K's cloud event first acts on 2012-11-02,
+CLOUD's live date). No string or dollar figure of any print, vintage, guide, dividend, event or source appears in a model
+dated before it (177,294 checks over the 366 MSFT models; the two hits are coincidences: $0.52, a 2009 dividend rate, and $2.00, the
+low end of the October 2008 EPS range). The firewall at 2012-07-01, 2013-01-01, 2013-07-01, 2014-01-01, 2014-07-01 and 2015-01-01
+changes no model before its cutoff. The 198 dates of 2008-2011 outside the Q1 FY12 correction rebuild byte-identical, and no other
+ticker's file changed.
+
+Seen in the build (method behaviour, not tuned):
+- **The class moves for the first time.** CHEAP on 109 dates, FAIR on 35 and RICH on 13; BUY on 106, ACCUMULATE on 37 and WATCHLIST on
+  14. CHEAP and BUY on all 52 dates of 2012 and on 43 of 2013 (ACCUMULATE on 9 from 2013-05-03 to 2013-07-12); in 2014 FAIR on 35,
+  RICH on 13 (2014-04-25 to 2014-07-18) and CHEAP on 5. The verdict is UNDERVALUED on 68 dates, MODESTLY UNDERVALUED on 28, FAIRLY
+  VALUED on 38, MODESTLY OVERVALUED on 10 and OVERVALUED on 13.
+- **The calls are less robust than in 2008-2011.** The tier agrees on 8 of the 8 variants on 28 dates, 7 on 66, 6 on 37 and 5 on 26;
+  the class on 8 on 41, 7 on 85, 6 on 21, 4 on 3 and 3 on 7. The FAIR dates are the least robust (the class on 3-7 of 8). The
+  multiples one band cheaper or richer account for most of the disagreement (the tier on 129 and 51 dates).
+- **EPS anchors on the last full year:** FY11's $2.69 from 2012-01-06 to 2012-07-13 (10.4-12.1x, the 15th-24th percentile of its own
+  range), FY12's $2.00 from 2012-07-20 to 2013-07-12 (13.2-17.8x, the 23rd-61st), FY13's $2.58 from 2013-07-19 to 2014-07-18
+  (12.1-17.3x, the 24th-70th) and FY14's $2.63 from 2014-07-24 (16.3-18.9x, the 67th-78th). The window's median P/E falls from 18.9x
+  to 14.7x as the 2002-2004 multiples leave it.
+- **The floor meets the price.** The median of the calendar-year P/E lows is 14x through 2012 ($37.66 on $2.69, the stock 13-25% below
+  it; $28.00 on FY12's $2.00 from 2012-07-20, the stock within -6% and +12% of it), 13x from 2013-01-04 when 2002 leaves the window
+  ($26.00; 3-37% above it), and 10x from 2013-07-19, when FY13's $2.58 lowers calendar 2012's and 2013's P/E lows to 10.2x and 10.3x
+  ($25.80, then $26.30 on $2.63; 21-89% above it).
+- **BEAR is -13.4%/yr to 2012-07-13 and -24.2%/yr from 2012-07-20** (FY11's $2.64 to FY12's $2.00, the impairment year), at the
+  10th-percentile P/E: $12-20.
+- **BASE follows the quarter's growth plus the buyback** (2.5-2.9%/yr; no margin step): +7.9%/yr on Q1 FY12, +6.9% on Q2, +8.9% on Q3,
+  +6.7-6.8% on Q4 FY12, -5.2% on Q1 FY13 (the $1.36 billion deferral; the engine prints it "+-5.2%"), +5.8% on Q2 FY13, +20.8% on Q3
+  FY13 (the net recognition), +12.5-12.8% on Q4 FY13, +18.8% on Q1 FY14, +16.8% on Q2 FY14, +2.8% on Q3 FY14, +20.6-20.9% on Q4 FY14
+  (with the acquired phone business) and +27.9% on Q1 FY15; the BASE price ran $29-63. The growth factor read -0.50 to Q2 FY13 and on
+  Q3 FY14, +0.50 on Q3 FY13, Q1 and Q2 FY14, Q4 FY14 and Q1 FY15, and +0.03 and +0.20 on Q4 FY13, against a 9.7-11.9% median.
+- **BULL and XBULL:** BULL is the window's EPS CAGR (+21.1%/yr over FY02-FY11 to 2012-07-13, +15.3% over FY02-FY12 on 2012-07-20,
+  +12.6% over FY03-FY12 from the FY2012 10-K, +14.1% and +14.7% over FY03-FY13 and FY04-FY13 from 2013-07-19), floored at BASE where
+  BASE is higher (Q3 FY13, Q1 and Q2 FY14, Q4 FY14, Q1 FY15). XBULL is the FY04-FY06 run (+30.1%/yr) to 2014-07-24, then FY09-FY11's
+  +27.7% (the FY2014 10-K), floored at BULL (+27.9% on Q1 FY15).
+- **Ratio B ran 0.11-1.49,** above 1 on 26 dates from 2014-05-30 (the BEAR downside larger than the BULL upside); the market composite
+  1.32-2.67 and the adjusted gap -1.03 to +1.34.
+- **The proxy composite** was 2.00 on Q1 and Q2 FY12, 2.35 on Q3 FY12, 2.05 on Q4 FY12 (the operating margin -3,447bp at BEAR: the
+  impairment) and Q1 FY13 (revenue -7.9% and the operating margin -830bp at BEAR: the deferral), 2.20 on Q2 FY13, 2.65 on Q3 FY13
+  (revenue +17.7% and the operating margin +53bp at BULL: the recognition), 2.25 on Q4 FY13 (the operating margin +2,946bp at XBULL
+  against the impairment quarter, the gross margin -510bp at BEAR with the Surface RT charge), 2.45 on Q1 FY14, 2.10 on Q2 FY14 (the
+  gross margin -726bp at BEAR), 1.80 on Q3 FY14 (revenue -0.4% and the gross margin -576bp at BEAR), 2.30 on Q4 FY14 and 1.95 on Q1
+  FY15 (the gross margin -789bp and the operating margin -900bp at BEAR: the phone business and the restructuring). Unearned revenue
+  scored BULL from Q4 FY12 to Q3 FY13 (+17.2% to +29.2%) and BASE otherwise (-1.7% to +16.7%); the receivables gap BULL on every print.
+
+How far each call moves the classes (the 157 dates and the 11 corrected ones rebuilt with one encoding changed; no outcome consulted):
+- the company's non-GAAP FY12 $2.78 and FY13 $2.62 instead of GAAP would change no class and 23 tiers (ACCUMULATE to BUY on 14 dates
+  in May-July 2013 and March-April 2014, WATCHLIST to ACCUMULATE on 9 in 2014); FY12 at $2.73 (the impairment's $0.73 added back,
+  derived for the test only) no class and 22 tiers;
+- FY11 kept at GAAP $2.69 would change no class and 6 tiers;
+- the deferrals and recognitions taken out of the BASE reads (the company's non-GAAP growth: Q4 FY12 +7%, Q1 FY13 0%, Q2 FY13 +5%, Q3
+  FY13 +8%, Q4 FY13 +3%, Q1 FY14 +7%, Q2 FY14 +11%, Q3 FY14 +8%, Q4 FY14 +22%) would change 16 classes (CHEAP to FAIR on 13 dates
+  from 2013-05-03 to 2014-02-07, RICH to FAIR on 2014-05-02 and 2014-05-09, FAIR to CHEAP on 2014-08-01) and 21 tiers; taken out of
+  the prints' revenue and operating income (the company's non-GAAP figures for both quarters), 19 classes and no tier; out of both,
+  38 classes and 21 tiers (118 models move);
+- reported growth instead of growth excluding a dollar currency effect (Q1 FY12 +7%, Q2 FY12 +5%) would change nothing;
+- CLOUD off the watch list would change nothing (text only).
+
+Judgement calls that could carry hindsight:
+- the deferrals and recognitions read as revenue recognition (the 2008 rule, decided before any MSFT model was built): in 2012-2014 it
+  moves classes for the first time (up to 38 dates with the company's adjusted figures);
+- FY2012 at GAAP with the goodwill impairment in, because the company's figure also removes a deferral (no class moves; 22-23 tiers);
+- FY2011 restated to the company's $2.64 from the Q4 FY12 release (no class moves; 6 tiers);
+- a currency effect stated in dollars taken off the quarter's revenue, and a segment's effect not used for the quarter (no class moves);
+- guidance given only on the conference call left out (the calls are not filings), so FY14 and FY15 have no guide in numbers;
+- CLOUD on the watch list from the registry's live date, the 10-K's words read as company acknowledgement and not as market pricing
+  (text only); the registry date itself stays the owner's decision (Microsoft's FY2010 10-K is an earlier verified filing of the risk);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2012-2014 went; DURABLE (the class label only).
 
 ## Categories change with the era
 
@@ -5892,7 +6066,11 @@ What the gates enforce:
   empty through 2011: from the FY2010 10-K (2010-07-30) a risk factor is headed "The cloud-based computing model presents execution and
   competitive risks", but CLOUD is not live until 2012-10-30, so those words join the "why" too. Microsoft's FY2010 10-K is an earlier
   verified filing of the risk than the registry's basis (Accenture's FY2012 10-K); whether to move CLOUD's date is left to the owner
-  ("MSFT 2009-2011").
+  ("MSFT 2009-2011"). From 2012-11-02, the first weekly date on or after CLOUD's live date, MSFT carries CLOUD on the watch list,
+  company-acknowledged, with no market read, in the latest 10-K's own words: the FY2012 10-K's "Our increasing focus on devices and
+  services presents execution and competitive risks" (its competitors "rapidly developing and deploying cloud-based services"), then the
+  FY2013 and FY2014 10-Ks' "Our increasing focus on services" (whose costs "will reduce the operating margins" in FY2014). The theme's
+  market-pricing date (2015-04-23) lies after 2014, so DURABLE stands ("MSFT 2012-2014").
 
 ## Workflow
 

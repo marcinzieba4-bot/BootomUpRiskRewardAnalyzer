@@ -213,3 +213,160 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2011-12-16 | $26.00 | Microsoft Q1 FY12 results | 2.00 | +1.35 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.8% | -3.1pp | +23.5% | ✓ |
 | 2011-12-23 | $26.03 | Microsoft Q1 FY12 results | 2.00 | +1.35 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.6% | -1.9pp | +24.0% | ✓ |
 | 2011-12-30 | $25.96 | Microsoft Q1 FY12 results | 2.00 | +1.13 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.6% | -1.0pp | +25.0% | ✓ |
+| 2012-01-06 | $28.11 | Microsoft Q1 FY12 results | 2.00 | +1.03 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-01-13 | $28.25 | Microsoft Q1 FY12 results | 2.00 | +1.02 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-01-20 | $29.71 | Microsoft Q2 FY12 results | 2.00 | +0.96 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-01-27 | $29.23 | Microsoft Q2 FY12 results | 2.00 | +0.98 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-02-03 | $30.24 | Microsoft Q2 FY12 results | 2.00 | +0.94 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-02-10 | $30.50 | Microsoft Q2 FY12 results | 2.00 | +0.93 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-02-17 | $31.25 | Microsoft Q2 FY12 results | 2.00 | +0.91 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-02-24 | $31.48 | Microsoft Q2 FY12 results | 2.00 | +0.90 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-03-02 | $32.08 | Microsoft Q2 FY12 results | 2.00 | +0.87 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-03-09 | $31.99 | Microsoft Q2 FY12 results | 2.00 | +0.86 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-03-16 | $32.60 | Microsoft Q2 FY12 results | 2.00 | +0.84 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-03-23 | $32.01 | Microsoft Q2 FY12 results | 2.00 | +0.86 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-03-30 | $32.26 | Microsoft Q2 FY12 results | 2.00 | +0.85 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-04-05 | $31.52 | Microsoft Q2 FY12 results | 2.00 | +0.88 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-04-13 | $30.81 | Microsoft Q2 FY12 results | 2.00 | +0.91 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-04-20 | $32.42 | Microsoft Q3 FY12 results | 2.35 | +1.20 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-04-27 | $31.98 | Microsoft Q3 FY12 results | 2.35 | +1.22 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-05-04 | $30.98 | Microsoft Q3 FY12 results | 2.35 | +1.27 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-05-11 | $31.16 | Microsoft Q3 FY12 results | 2.35 | +1.25 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-05-18 | $29.27 | Microsoft Q3 FY12 results | 2.35 | +1.31 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-05-25 | $29.06 | Microsoft Q3 FY12 results | 2.35 | +1.32 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-06-01 | $28.45 | Microsoft Q3 FY12 results | 2.35 | +1.34 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-06-08 | $29.65 | Microsoft Q3 FY12 results | 2.35 | +1.30 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-06-15 | $30.02 | Microsoft Q3 FY12 results | 2.35 | +1.28 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-06-22 | $30.70 | Microsoft Q3 FY12 results | 2.35 | +1.25 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-06-29 | $30.59 | Microsoft Q3 FY12 results | 2.35 | +1.26 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-07-06 | $30.19 | Microsoft Q3 FY12 results | 2.35 | +1.27 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-07-13 | $29.39 | Microsoft Q3 FY12 results | 2.35 | +1.30 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-07-20 | $30.12 | Microsoft Q4 FY12 results | 2.05 | +0.20 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-07-27 | $29.76 | Microsoft Q4 FY12 results | 2.05 | +0.20 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-08-03 | $29.75 | Microsoft Q4 FY12 results | 2.05 | +0.20 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-08-10 | $30.42 | Microsoft Q4 FY12 results | 2.05 | +0.15 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-08-17 | $30.90 | Microsoft Q4 FY12 results | 2.05 | +0.09 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-08-24 | $30.56 | Microsoft Q4 FY12 results | 2.05 | +0.12 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-08-31 | $30.82 | Microsoft Q4 FY12 results | 2.05 | +0.09 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-09-07 | $30.95 | Microsoft Q4 FY12 results | 2.05 | +0.08 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-09-14 | $31.21 | Microsoft Q4 FY12 results | 2.05 | +0.02 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-09-21 | $31.19 | Microsoft Q4 FY12 results | 2.05 | +0.02 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-09-28 | $29.76 | Microsoft Q4 FY12 results | 2.05 | +0.15 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-10-05 | $29.85 | Microsoft Q4 FY12 results | 2.05 | +0.14 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-10-12 | $29.20 | Microsoft Q4 FY12 results | 2.05 | +0.20 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-10-19 | $28.64 | Microsoft Q1 FY13 results | 2.05 | +0.02 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-10-26 | $28.21 | Microsoft Q1 FY13 results | 2.05 | +0.05 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-11-02 | $29.50 | Microsoft Q1 FY13 results | 2.05 | -0.05 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-11-09 | $28.83 | Microsoft Q1 FY13 results | 2.05 | -0.01 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-11-16 | $26.52 | Microsoft Q1 FY13 results | 2.05 | +0.34 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-11-23 | $27.70 | Microsoft Q1 FY13 results | 2.05 | +0.26 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-11-30 | $26.62 | Microsoft Q1 FY13 results | 2.05 | +0.32 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-12-07 | $26.46 | Microsoft Q1 FY13 results | 2.05 | +0.34 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-12-14 | $26.81 | Microsoft Q1 FY13 results | 2.05 | +0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-12-21 | $27.45 | Microsoft Q1 FY13 results | 2.05 | +0.26 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2012-12-28 | $26.55 | Microsoft Q1 FY13 results | 2.05 | +0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-01-04 | $26.74 | Microsoft Q1 FY13 results | 2.05 | +0.10 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-01-11 | $26.83 | Microsoft Q1 FY13 results | 2.05 | +0.10 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-01-18 | $27.25 | Microsoft Q1 FY13 results | 2.05 | +0.07 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-01-25 | $27.88 | Microsoft Q2 FY13 results | 2.20 | +0.37 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-02-01 | $27.93 | Microsoft Q2 FY13 results | 2.20 | +0.37 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-02-08 | $27.55 | Microsoft Q2 FY13 results | 2.20 | +0.40 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-02-15 | $28.01 | Microsoft Q2 FY13 results | 2.20 | +0.35 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-02-22 | $27.76 | Microsoft Q2 FY13 results | 2.20 | +0.37 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-03-01 | $27.95 | Microsoft Q2 FY13 results | 2.20 | +0.35 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-03-08 | $28.00 | Microsoft Q2 FY13 results | 2.20 | +0.35 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-03-15 | $28.04 | Microsoft Q2 FY13 results | 2.20 | +0.34 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-03-22 | $28.25 | Microsoft Q2 FY13 results | 2.20 | +0.32 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-03-28 | $28.61 | Microsoft Q2 FY13 results | 2.20 | +0.28 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-04-05 | $28.70 | Microsoft Q2 FY13 results | 2.20 | +0.24 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-04-12 | $28.79 | Microsoft Q2 FY13 results | 2.20 | +0.24 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-04-19 | $29.77 | Microsoft Q3 FY13 results | 2.65 | +1.16 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-04-26 | $31.79 | Microsoft Q3 FY13 results | 2.65 | +1.01 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-05-03 | $33.49 | Microsoft Q3 FY13 results | 2.65 | +0.89 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-05-10 | $32.69 | Microsoft Q3 FY13 results | 2.65 | +0.95 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-05-17 | $34.87 | Microsoft Q3 FY13 results | 2.65 | +0.79 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-05-24 | $34.27 | Microsoft Q3 FY13 results | 2.65 | +0.83 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-05-31 | $34.90 | Microsoft Q3 FY13 results | 2.65 | +0.78 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-06-07 | $35.67 | Microsoft Q3 FY13 results | 2.65 | +0.72 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-06-14 | $34.40 | Microsoft Q3 FY13 results | 2.65 | +0.82 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-06-21 | $33.27 | Microsoft Q3 FY13 results | 2.65 | +0.90 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-06-28 | $34.54 | Microsoft Q3 FY13 results | 2.65 | +0.79 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-07-05 | $34.21 | Microsoft Q3 FY13 results | 2.65 | +0.77 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-07-12 | $35.67 | Microsoft Q3 FY13 results | 2.65 | +0.65 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-07-19 | $31.40 | Microsoft Q4 FY13 results | 2.25 | +0.81 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-07-26 | $31.62 | Microsoft Q4 FY13 results | 2.25 | +0.79 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-08-02 | $31.89 | Microsoft Q4 FY13 results | 2.25 | +0.82 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-08-09 | $32.70 | Microsoft Q4 FY13 results | 2.25 | +0.77 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-08-16 | $31.80 | Microsoft Q4 FY13 results | 2.25 | +0.82 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-08-23 | $34.75 | Microsoft Q4 FY13 results | 2.25 | +0.65 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-08-30 | $33.40 | Microsoft Q4 FY13 results | 2.25 | +0.71 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-09-06 | $31.15 | Microsoft Q4 FY13 results | 2.25 | +0.84 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2013-09-13 | $33.03 | Microsoft Q4 FY13 results | 2.25 | +0.73 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-09-20 | $32.79 | Microsoft Q4 FY13 results | 2.25 | +0.75 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-09-27 | $33.27 | Microsoft Q4 FY13 results | 2.25 | +0.71 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-04 | $33.88 | Microsoft Q4 FY13 results | 2.25 | +0.67 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-11 | $34.13 | Microsoft Q4 FY13 results | 2.25 | +0.66 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-18 | $34.96 | Microsoft Q4 FY13 results | 2.25 | +0.59 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-10-25 | $35.73 | Microsoft Q1 FY14 results | 2.45 | +0.93 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-11-01 | $35.53 | Microsoft Q1 FY14 results | 2.45 | +0.95 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-11-08 | $37.78 | Microsoft Q1 FY14 results | 2.45 | +0.72 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-11-15 | $37.84 | Microsoft Q1 FY14 results | 2.45 | +0.72 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-11-22 | $37.57 | Microsoft Q1 FY14 results | 2.45 | +0.72 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-11-29 | $38.13 | Microsoft Q1 FY14 results | 2.45 | +0.69 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-12-06 | $38.36 | Microsoft Q1 FY14 results | 2.45 | +0.67 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-12-13 | $36.69 | Microsoft Q1 FY14 results | 2.45 | +0.77 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-12-20 | $36.80 | Microsoft Q1 FY14 results | 2.45 | +0.77 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2013-12-27 | $37.29 | Microsoft Q1 FY14 results | 2.45 | +0.73 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2014-01-03 | $36.91 | Microsoft Q1 FY14 results | 2.45 | +0.76 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2014-01-10 | $36.04 | Microsoft Q1 FY14 results | 2.45 | +0.89 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2014-01-17 | $36.38 | Microsoft Q1 FY14 results | 2.45 | +0.76 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2014-01-24 | $36.81 | Microsoft Q2 FY14 results | 2.10 | +0.33 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2014-01-31 | $37.84 | Microsoft Q2 FY14 results | 2.10 | +0.25 | 0.68x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-02-07 | $36.56 | Microsoft Q2 FY14 results | 2.10 | +0.34 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2014-02-14 | $37.62 | Microsoft Q2 FY14 results | 2.10 | +0.27 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-02-21 | $37.98 | Microsoft Q2 FY14 results | 2.10 | +0.23 | 0.71x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-02-28 | $38.31 | Microsoft Q2 FY14 results | 2.10 | +0.21 | 0.73x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-03-07 | $37.90 | Microsoft Q2 FY14 results | 2.10 | +0.24 | 0.70x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-03-14 | $37.70 | Microsoft Q2 FY14 results | 2.10 | +0.25 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-03-21 | $40.16 | Microsoft Q2 FY14 results | 2.10 | +0.04 | 0.84x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2014-03-28 | $40.30 | Microsoft Q2 FY14 results | 2.10 | +0.03 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2014-04-04 | $39.87 | Microsoft Q2 FY14 results | 2.10 | +0.05 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2014-04-11 | $39.21 | Microsoft Q2 FY14 results | 2.10 | +0.11 | 0.81x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2014-04-17 | $40.01 | Microsoft Q2 FY14 results | 2.10 | +0.03 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-04-25 | $39.91 | Microsoft Q3 FY14 results | 1.80 | -0.70 | 0.92x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-05-02 | $39.69 | Microsoft Q3 FY14 results | 1.80 | -0.69 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-05-09 | $39.54 | Microsoft Q3 FY14 results | 1.80 | -0.68 | 0.89x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-05-16 | $39.83 | Microsoft Q3 FY14 results | 1.80 | -0.72 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-05-23 | $40.12 | Microsoft Q3 FY14 results | 1.80 | -0.73 | 0.97x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-05-30 | $40.94 | Microsoft Q3 FY14 results | 1.80 | -0.78 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2014-06-06 | $41.48 | Microsoft Q3 FY14 results | 1.80 | -0.81 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-06-13 | $41.23 | Microsoft Q3 FY14 results | 1.80 | -0.81 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-06-20 | $41.68 | Microsoft Q3 FY14 results | 1.80 | -0.84 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-06-27 | $42.25 | Microsoft Q3 FY14 results | 1.80 | -0.86 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-07-03 | $41.80 | Microsoft Q3 FY14 results | 1.80 | -0.86 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2014-07-11 | $42.09 | Microsoft Q3 FY14 results | 1.80 | -0.89 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-07-18 | $44.69 | Microsoft Q3 FY14 results | 1.80 | -1.03 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-07-24 | $44.40 | Microsoft Q4 FY14 results | 2.30 | +0.07 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-08-01 | $42.86 | Microsoft Q4 FY14 results | 2.30 | +0.19 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-08-08 | $43.20 | Microsoft Q4 FY14 results | 2.30 | +0.15 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-08-15 | $44.79 | Microsoft Q4 FY14 results | 2.30 | +0.05 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-08-22 | $45.15 | Microsoft Q4 FY14 results | 2.30 | +0.02 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-08-29 | $45.43 | Microsoft Q4 FY14 results | 2.30 | -0.01 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-09-05 | $45.91 | Microsoft Q4 FY14 results | 2.30 | -0.05 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-09-12 | $46.70 | Microsoft Q4 FY14 results | 2.30 | -0.10 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-09-19 | $47.52 | Microsoft Q4 FY14 results | 2.30 | -0.16 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-09-26 | $46.41 | Microsoft Q4 FY14 results | 2.30 | -0.08 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-10-03 | $46.09 | Microsoft Q4 FY14 results | 2.30 | -0.08 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-10-10 | $44.03 | Microsoft Q4 FY14 results | 2.30 | +0.05 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-10-17 | $43.63 | Microsoft Q4 FY14 results | 2.30 | +0.09 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2014-10-24 | $46.13 | Microsoft Q1 FY15 results | 1.95 | -0.17 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-10-31 | $46.95 | Microsoft Q1 FY15 results | 1.95 | -0.23 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-11-07 | $48.68 | Microsoft Q1 FY15 results | 1.95 | -0.35 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-11-14 | $49.58 | Microsoft Q1 FY15 results | 1.95 | -0.41 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-11-21 | $47.98 | Microsoft Q1 FY15 results | 1.95 | -0.30 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-11-28 | $47.81 | Microsoft Q1 FY15 results | 1.95 | -0.29 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-12-05 | $48.42 | Microsoft Q1 FY15 results | 1.95 | -0.34 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-12-12 | $46.95 | Microsoft Q1 FY15 results | 1.95 | -0.23 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-12-19 | $47.66 | Microsoft Q1 FY15 results | 1.95 | -0.28 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-12-26 | $47.88 | Microsoft Q1 FY15 results | 1.95 | -0.30 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2014-12-31 | $46.45 | Microsoft Q1 FY15 results | 1.95 | -0.20 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |

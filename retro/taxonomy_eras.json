@@ -933,9 +933,24 @@
     "note": "first in a Microsoft filing in its Q4 FY11 release (8-K accepted 2011-07-21 16:06 ET, dated the next trading day)"
    },
    {
+    "term": "Windows Phone 8",
+    "first_seen": "2012-10-10",
+    "note": "first in a Microsoft filing in its proxy statement of 2012-10-09 (DEF 14A accepted 17:06 ET, dated the next trading day)"
+   },
+   {
+    "term": "Office 365 Home Premium",
+    "first_seen": "2012-10-19",
+    "note": "first in a Microsoft filing in its Q1 FY13 10-Q (accepted 2012-10-18 16:04 ET, dated the next trading day)"
+   },
+   {
     "term": "Surface Pro",
     "first_seen": "2013-01-25",
     "note": "first in a Microsoft filing in its Q2 FY13 release (8-K accepted 2013-01-24 16:04 ET, dated the next trading day)"
+   },
+   {
+    "term": "Surface RT",
+    "first_seen": "2013-04-19",
+    "note": "first in a Microsoft filing in its Q3 FY13 10-Q (accepted 2013-04-18 16:07 ET, dated the next trading day)"
    },
    {
     "term": "Xbox One",
@@ -943,9 +958,24 @@
     "note": "first in a Microsoft filing in its Q4 FY13 release (8-K accepted 2013-07-18 16:07 ET, dated the next trading day)"
    },
    {
+    "term": "Windows 8.1",
+    "first_seen": "2013-07-19",
+    "note": "first in a Microsoft filing in its Q4 FY13 release (8-K accepted 2013-07-18 16:07 ET, dated the next trading day)"
+   },
+   {
     "term": "Nokia Devices and Services",
     "first_seen": "2014-04-25",
     "note": "the business Microsoft acquired from Nokia; first in a Microsoft filing under that name in its Q3 FY14 release (8-K accepted 2014-04-24 16:03 ET, dated the next trading day)"
+   },
+   {
+    "term": "Microsoft Azure",
+    "first_seen": "2014-04-25",
+    "note": "the renamed Windows Azure; first in a Microsoft filing in its Q3 FY14 10-Q (accepted 2014-04-24 16:06 ET, dated the next trading day)"
+   },
+   {
+    "term": "Surface Pro 3",
+    "first_seen": "2014-07-23",
+    "note": "first in a Microsoft filing in its Q4 FY14 release (8-K accepted 2014-07-22 16:04 ET, dated the next trading day)"
    },
    {
     "term": "Windows 10",

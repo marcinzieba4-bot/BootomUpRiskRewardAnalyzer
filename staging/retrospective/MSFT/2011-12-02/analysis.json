@@ -21,7 +21,7 @@
   "business_kind": "DURABLE",
   "obsolescence_risk": 2,
   "price_state": "CHEAP",
-  "quality_note": "Microsoft: 'We generate revenue by developing, licensing, and supporting a wide range of software products and services, by designing and selling hardware, and by delivering relevant online advertising to a global customer audience'; 'The cloud-based computing model presents execution and competitive risks': 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Challenges to our business models may reduce our revenue or operating margins': 'Certain “open source” software business models challenge our license-based software model'; 'We face intense competition' (its own FY2011 10-K): a competition and business-model risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.05x; -33% to EPP floor; model-vs-market gap +1.35; conservative 2yr +142%.",
+  "quality_note": "Microsoft: 'We generate revenue by developing, licensing, and supporting a wide range of software products and services, by designing and selling hardware, and by delivering relevant online advertising to a global customer audience'; 'The cloud-based computing model presents execution and competitive risks': 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Challenges to our business models may reduce our revenue or operating margins': 'Certain “open source” software business models challenge our license-based software model'; 'We face intense competition' (its own FY2011 10-K): a competition and business-model risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.05x; -33% to EPP floor; model-vs-market gap +1.35; conservative 2yr +134%.",
   "theme": null
  },
  "legacy_signal_short": "BUY",
@@ -33,12 +33,12 @@
   "epp_gap_pct": -33.0,
   "epp_adj": 0.2,
   "proxy_composite": 2.0,
-  "sca": 0.152,
-  "adj_composite": 2.352,
+  "sca": 0.15,
+  "adj_composite": 2.35,
   "market_composite": 1.0,
   "adj_gap": 1.35,
   "valuation": "UNDERVALUED",
-  "cons_return_2yr": 142.4,
+  "cons_return_2yr": 133.8,
   "scenarios": {
    "BEAR": {
     "eps": 2.02,
@@ -47,10 +47,10 @@
     "desc": "EPS -13.4%/yr (worst year FY02-FY11, capped at 0%); P/E to its 10th pct"
    },
    "BASE": {
-    "eps": 3.25,
+    "eps": 3.13,
     "pe": 19.1,
-    "price": 62,
-    "desc": "EPS +9.9%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median"
+    "price": 60,
+    "desc": "EPS +7.9%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median"
    },
    "BULL": {
     "eps": 3.95,
@@ -74,7 +74,7 @@
    "adj_gap": 1.35,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
@@ -84,17 +84,17 @@
    "adj_gap": 1.13,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
    "variant": "Multiples one band cheaper (p5/p25/med/p75)",
    "ratio_b": 0.12,
    "epp_gap_pct": -33.0,
-   "adj_gap": 0.93,
+   "adj_gap": 0.91,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
@@ -104,7 +104,7 @@
    "adj_gap": 1.13,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
@@ -114,7 +114,7 @@
    "adj_gap": 1.35,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
@@ -124,7 +124,7 @@
    "adj_gap": 1.65,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
@@ -134,7 +134,7 @@
    "adj_gap": 1.35,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   },
   {
@@ -144,14 +144,14 @@
    "adj_gap": 1.35,
    "verdict": "UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 142.4,
+   "cons_return_2yr": 133.8,
    "price_state": "CHEAP"
   }
  ],
  "robustness_price_states": [
   "CHEAP"
  ],
- "summary": "MSFT (retrospective, 2011-12-02) ◉ BUY — Ratio B 0.05x (20.7% downside to Bear $20 / +415.5% upside to Bull $130) | Adj composite 2.35 vs market 1.00: gap +1.35 [UNDERVALUED] | -33% above the EPP floor $38 (14x FY12E $2.69) | Conservative 2-yr case: +142.4% total (+71.2%/yr) | At 9.4x FY12E the 15% hurdle price $33 sits at or below the BASE case; unearned revenue +12.5% in Q1 FY12, forward revenues +7% (no Q2 FY12 revenue guide, Q1 FY12 revenue ex-currency); no disruption theme has dated evidence.",
+ "summary": "MSFT (retrospective, 2011-12-02) ◉ BUY — Ratio B 0.05x (20.7% downside to Bear $20 / +415.5% upside to Bull $130) | Adj composite 2.35 vs market 1.00: gap +1.35 [UNDERVALUED] | -33% above the EPP floor $38 (14x FY12E $2.69) | Conservative 2-yr case: +133.8% total (+66.9%/yr) | At 9.4x FY12E the 15% hurdle price $33 sits at or below the BASE case; unearned revenue +12.5% in Q1 FY12, forward revenues +5% (no Q2 FY12 revenue guide, Q1 FY12 revenue ex-currency); no disruption theme has dated evidence.",
  "sources": [
   {
    "id": "MS32",
@@ -255,7 +255,7 @@
    "filed": "2011-10-20 16:08 ET (after the close)",
    "title": "Microsoft Q1 FY12 10-Q",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511276022/d230161d10q.htm",
-   "supports": "dividend of $0.20 declared on September 20, 2011"
+   "supports": "currency effect on Q1 FY12 revenue ($409 million favorable); dividend of $0.20 declared on September 20, 2011"
   },
   {
    "id": "MS44",
@@ -290,5 +290,5 @@
   }
  ],
  "warnings": [],
- "generated": "2026-11-03"
+ "generated": "2026-11-04"
 }

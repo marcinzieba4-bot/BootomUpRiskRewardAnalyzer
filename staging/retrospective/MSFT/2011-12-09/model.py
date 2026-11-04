@@ -120,7 +120,7 @@ SOURCES = [
         "filed": "2011-10-20 16:08 ET (after the close)",
         "title": "Microsoft Q1 FY12 10-Q",
         "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511276022/d230161d10q.htm",
-        "supports": "dividend of $0.20 declared on September 20, 2011"
+        "supports": "currency effect on Q1 FY12 revenue ($409 million favorable); dividend of $0.20 declared on September 20, 2011"
     },
     {
         "id": "MS44",
@@ -196,12 +196,12 @@ LATEST          = {'quarter': 'Q1 FY12', 'release': 'Oct 20', 'sales_b': 17.372,
 PREV_UNEARNED   = (15.4, 'Q4 FY11')
 EPP_TODAY_EPS   = 2.69   # FY2012E: no EPS guide in numbers, FY11's $2.69 stands
 EPS_LABEL       = "FY2012E: no EPS guide in numbers, FY11's $2.69 stands"
-FWD_GUIDE       = (7.0, 7.0)   # no next-quarter revenue guide: the latest quarter's revenue growth excluding currency
+FWD_GUIDE       = (5.0, 5.0)   # no next-quarter revenue guide: the latest quarter's revenue growth excluding currency
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'no Q2 FY12 revenue guide, Q1 FY12 revenue ex-currency', 'Q1 FY12', 'Q1 rev ex-FX'
 GUIDE_TEXT      = "Guide: FY12 operating expenses $28.6-29.2B (Q1 FY12 release; 'including Skype and the associated acquisition-related expenses'); no FY12 revenue or EPS guide in numbers; operating expense ranges are display only (no margin guide)"
 MARGIN_GUIDED   = False   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
 FY_MARGIN_BASE  = 38.83
-FY_REVENUE_B    = 74.84
+FY_REVENUE_B    = 73.44
 FY_REVENUE_LABEL = 'no Q2 FY12 revenue guide, Q1 FY12 revenue ex-currency, applied to the year (no FY12 revenue guide in scope)'
 SHARES_DIL_B    = 8.4900
 GROUPS          = [('Windows & Windows Live Division', 18.778, -0.1), ('Server and Tools', 17.107, 11.2), ('Online Services Division', 2.528, 14.9), ('Microsoft Business Division', 21.986, 13.7), ('Entertainment and Devices Division', 8.716, 40.0)]
@@ -209,7 +209,7 @@ GROUPS_BASIS    = 'FY11 revenue by segment (FY2011 10-K)'
 NEXT_PRINT      = 'Q2 FY12 print (late January)'
 SHARE_GAIN_TEXT = 'Franchise: FY11 revenue +11.9%, unearned revenue +15.4% (unearned revenue $17,120M at June 30, 2011 vs $14,830M (FY2011 10-K)); Q1 gross margin 78.26% (-236bp)'
 BALANCE_TEXT    = 'Cash and short-term investments $57.40B, FY11 free cash flow $24.64B, dividend $0.80 a year, $11,555M of share repurchases and $5,180M of dividends paid in FY11'
-BILLINGS_TEXT   = "Billings: unearned revenue +12.5% (unearned revenue $14,345M + $1,313M long-term vs $12,767M + $1,152M a year earlier (the Q1 FY11 release)); revenue +7.3% as reported (revenue $17,372M vs $16,195M); no filing states the quarter's currency effect; ex-currency +7% (the release's revenue growth of 7%: no filing states the quarter's currency effect)"
+BILLINGS_TEXT   = "Billings: unearned revenue +12.5% (unearned revenue $14,345M + $1,313M long-term vs $12,767M + $1,152M a year earlier (the Q1 FY11 release)); revenue +7.3% as reported (revenue $17,372M vs $16,195M); 'Revenue for the three months ended September 30, 2011 included a favorable foreign currency impact of $409 million'; ex-currency +5% (the release's revenue growth of 7% less 'a favorable foreign currency impact of $409 million' (the 10-Q): ($17,372M - $409M) / $16,195M = +4.7%, rounded to a whole percent)"
 CAPITAL_RETURN  = '$1,934M of share repurchases and $1,341M of dividends in the quarter'
 THEME_FACTORS   = []
 THEME_SIGNAL_NAME    = 'Disruption theme: none live'

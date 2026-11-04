@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for MSFT retrospectives (retro/build_msft.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every Microsoft earnings 8-K of the period was accepted after the close, with the 10-Q minutes apart. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest fiscal-year EPS range for the current year (its midpoint), the latest next-quarter revenue range (as growth on the year-ago quarter's revenue from its own filing), and the latest declared dividend. Microsoft's fiscal year ends on June 30. Values are as reported; a vintage takes each year from the latest 10-K that reports it, per share as published (the February 2003 two-for-one split restates the years published before it: 'eps_published', 'shares_published'), and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release or the 10-Q filed with it ('raw'; the builder re-derives and checks them): the year-ago balance sheet comes from the year-ago quarter's own 10-Q or release, unearned revenue is short- plus long-term, and a comparable operating income replaces GAAP only when the release gives it for both quarters and it excludes only one-offs; lc_pct (from the Q2 FY09 print, the first without a next-quarter guide) is the revenue growth the release states less the currency effect the release or the 10-Q filed with it states, the reported growth where none is stated. From the Q2 FY09 release Microsoft gives no revenue or EPS guide in numbers: that release withdraws the fiscal 2009 guide ('withdrawn' voids every earlier guide for its year), and the fiscal 2009-2012 operating expense ranges ('opex_guide_usd_b') are display only. Guides start with the Q4 FY07 release (the Q3 FY07 release's preliminary fiscal 2008 range is superseded before any built date). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for MSFT retrospectives (retro/build_msft.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every Microsoft earnings 8-K of the period was accepted after the close, with the 10-Q minutes apart. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the latest fiscal-year EPS range for the current year (its midpoint), the latest next-quarter revenue range (as growth on the year-ago quarter's revenue from its own filing), and the latest declared dividend. Microsoft's fiscal year ends on June 30. Values are as reported; a vintage takes each year from the latest 10-K that reports it, per share as published (the February 2003 two-for-one split restates the years published before it: 'eps_published', 'shares_published'), and a company figure excluding one-offs only replaces GAAP EPS (the history's 'normalization' says which). A print's margins and growth rates are derived from the raw figures of its release or the 10-Q filed with it ('raw'; the builder re-derives and checks them): the year-ago balance sheet comes from the year-ago quarter's own 10-Q or release, unearned revenue is short- plus long-term, and a comparable operating income replaces GAAP only when the release gives it for both quarters and it excludes only one-offs; lc_pct (from the Q2 FY09 print, the first without a next-quarter guide) is the revenue growth the release states less the currency effect the release or the 10-Q filed with it states, the reported growth where none is stated; a total effect stated only in dollars ('fx_impact_m' in 'raw', favorable positive; Q1 and Q2 FY12) is taken off the quarter's revenue, (revenue - effect) / year-ago revenue - 1, rounded half up to a whole percent (the builder re-derives it), and a segment's effect alone is not the quarter's. From the Q2 FY09 release Microsoft gives no revenue or EPS guide in numbers: that release withdraws the fiscal 2009 guide ('withdrawn' voids every earlier guide for its year), and the fiscal 2009-2014 operating expense ranges ('opex_guide_usd_b') are display only; from the Q1 FY14 release Microsoft gives guidance only on its conference call, which is not a filing, so nothing is entered. A Q4 print's fiscal-year actuals may restate an earlier year's EPS to a company figure excluding only one-offs first published in that release ('restates' in 'fy_actual'), until the next 10-K vintage carries it. Events: each 10-K's cloud risk factor (kind cloud_company_acknowledged, id = the 10-K's source), used only from CLOUD's live date in retro/taxonomy_eras.json. Guides start with the Q4 FY07 release (the Q3 FY07 release's preliminary fiscal 2008 range is superseded before any built date). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "MSFT",
  "sources": {
   "MS1": {
@@ -350,7 +350,168 @@
    "filed": "2011-10-20 16:08 ET (after the close)",
    "title": "Microsoft Q1 FY12 10-Q",
    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312511276022/d230161d10q.htm",
-   "supports": "dividend of $0.20 declared on September 20, 2011"
+   "supports": "currency effect on Q1 FY12 revenue ($409 million favorable); dividend of $0.20 declared on September 20, 2011"
+  },
+  "MS53": {
+   "published": "2012-01-20",
+   "filed": "2012-01-19 16:05 ET (after the close)",
+   "title": "Microsoft Q2 FY12 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512017015/d284709dex991.htm",
+   "supports": "Q2 FY12 income statement, balance sheet and cash flows; the year-ago quarter's Office 2010 technology guarantee recognition; operating expense guidance for FY2012"
+  },
+  "MS54": {
+   "published": "2012-01-20",
+   "filed": "2012-01-19 16:09 ET (after the close)",
+   "title": "Microsoft Q2 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512017029/d266753d10q.htm",
+   "supports": "currency effect on Q2 FY12 revenue ($225 million favorable)"
+  },
+  "MS55": {
+   "published": "2012-04-20",
+   "filed": "2012-04-19 16:03 ET (after the close)",
+   "title": "Microsoft Q3 FY12 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512170657/d337382dex991.htm",
+   "supports": "Q3 FY12 income statement, balance sheet and cash flows; the year-ago quarter's tax benefit; operating expense guidance for FY2012 and preliminary FY2013"
+  },
+  "MS56": {
+   "published": "2012-04-20",
+   "filed": "2012-04-19 16:06 ET (after the close)",
+   "title": "Microsoft Q3 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512170665/d313493d10q.htm",
+   "supports": "currency effect on Q3 FY12 Microsoft Business Division revenue only"
+  },
+  "MS57": {
+   "published": "2012-07-20",
+   "filed": "2012-07-19 16:06 ET (after the close)",
+   "title": "Microsoft Q4 FY12 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512307447/d379850dex991.htm",
+   "supports": "Q4 FY12 and FY12 income statements, balance sheets and cash flows; the goodwill impairment and the Windows Upgrade Offer deferral; non-GAAP reconciliation (FY12 $2.78, FY11 as adjusted $2.64); operating expense guidance for FY2013 reaffirmed"
+  },
+  "MS58": {
+   "published": "2012-07-27",
+   "filed": "2012-07-26 16:12 ET (after the close)",
+   "title": "Microsoft FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512316848/d347676d10k.htm",
+   "supports": "five-year summary FY2008-FY2012 (diluted EPS $1.87, $1.62, $2.10, $2.69, $2.00; revenue $60,420M-$73,723M); income statements FY2010-FY2012 (FY2012 diluted shares 8,506M); balance sheets June 30, 2011 and 2012; segment revenue FY2011-FY2012; cash flows; dividends declared ($0.20 on June 13, 2012); risk factors (devices and services, business model competition, competition)"
+  },
+  "MS59": {
+   "published": "2012-10-19",
+   "filed": "2012-10-18 16:02 ET (after the close)",
+   "title": "Microsoft Q1 FY13 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512427207/d416523dex991.htm",
+   "supports": "Q1 FY13 income statement, balance sheet and cash flows; the Windows Upgrade Offer, Windows 8 pre-sales and Office Offer deferral; operating expense guidance for FY2013 reaffirmed"
+  },
+  "MS60": {
+   "published": "2012-10-19",
+   "filed": "2012-10-18 16:04 ET (after the close)",
+   "title": "Microsoft Q1 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512427209/d406056d10q.htm",
+   "supports": "currency effects on Q1 FY13 Server and Tools and Microsoft Business Division revenue only"
+  },
+  "MS61": {
+   "published": "2012-09-19",
+   "filed": "2012-09-18 16:56 ET (after the close)",
+   "title": "Microsoft 8-K of 2012-09-18 (exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512395523/d413054dex991.htm",
+   "supports": "quarterly dividend of $0.23 declared on September 18, 2012"
+  },
+  "MS62": {
+   "published": "2013-01-25",
+   "filed": "2013-01-24 16:04 ET (after the close)",
+   "title": "Microsoft Q2 FY13 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513022190/d472137dex991.htm",
+   "supports": "Q2 FY13 income statement, balance sheet and cash flows; the net deferral and the Windows 8 pre-sales recognition; operating expense guidance for FY2013 reaffirmed"
+  },
+  "MS63": {
+   "published": "2013-01-25",
+   "filed": "2013-01-24 16:10 ET (after the close)",
+   "title": "Microsoft Q2 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513022207/d453668d10q.htm",
+   "supports": "currency effect on Q2 FY13 Microsoft Business Division revenue only"
+  },
+  "MS64": {
+   "published": "2013-04-19",
+   "filed": "2013-04-18 16:05 ET (after the close)",
+   "title": "Microsoft Q3 FY13 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513160734/d497278dex991.htm",
+   "supports": "Q3 FY13 income statement, balance sheet and cash flows; the net recognition and the European Commission fine; operating expense guidance for FY2013 and preliminary FY2014"
+  },
+  "MS65": {
+   "published": "2013-04-19",
+   "filed": "2013-04-18 16:07 ET (after the close)",
+   "title": "Microsoft Q3 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513160748/d497226d10q.htm",
+   "supports": "currency effect on Q3 FY13 Microsoft Business Division revenue only"
+  },
+  "MS66": {
+   "published": "2013-07-19",
+   "filed": "2013-07-18 16:07 ET (after the close)",
+   "title": "Microsoft Q4 FY13 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513294305/d570922dex991.htm",
+   "supports": "Q4 FY13 and FY13 income statements, balance sheets and cash flows; the Surface RT charge and the Office Upgrade Offer recognition; non-GAAP reconciliation (FY13 $2.62, FY12 $2.78); operating expense guidance for FY2014"
+  },
+  "MS67": {
+   "published": "2013-07-31",
+   "filed": "2013-07-30 16:14 ET (after the close)",
+   "title": "Microsoft FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513310206/d527745d10k.htm",
+   "supports": "five-year summary FY2009-FY2013 (diluted EPS $1.62, $2.10, $2.69, $2.00, $2.58; revenue $58,437M-$77,849M); income statements FY2011-FY2013 (FY2013 diluted shares 8,470M); balance sheets June 30, 2012 and 2013; segment revenue FY2012-FY2013; cash flows; dividends declared ($0.23 on June 12, 2013); risk factors (services, business model competition, competition)"
+  },
+  "MS68": {
+   "published": "2013-10-25",
+   "filed": "2013-10-24 16:04 ET (after the close)",
+   "title": "Microsoft Q1 FY14 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513409837/d616848dex991.htm",
+   "supports": "Q1 FY14 income statement, balance sheet and cash flows; the Windows 8.1 pre-sales deferral; guidance only on the conference call"
+  },
+  "MS69": {
+   "published": "2013-10-25",
+   "filed": "2013-10-24 16:08 ET (after the close)",
+   "title": "Microsoft Q1 FY14 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513409855/d594455d10q.htm",
+   "supports": "dividend of $0.28 declared on September 16, 2013"
+  },
+  "MS70": {
+   "published": "2014-01-24",
+   "filed": "2014-01-23 16:06 ET (after the close)",
+   "title": "Microsoft Q2 FY14 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312514018629/d661449dex991.htm",
+   "supports": "Q2 FY14 income statement, balance sheet and cash flows; the year-ago quarter's net deferral; guidance only on the conference call"
+  },
+  "MS71": {
+   "published": "2014-04-25",
+   "filed": "2014-04-24 16:03 ET (after the close)",
+   "title": "Microsoft Q3 FY14 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312514157077/d713611dex991.htm",
+   "supports": "Q3 FY14 income statement, balance sheet and cash flows; the year-ago quarter's net recognition and fine; guidance only on the conference call"
+  },
+  "MS72": {
+   "published": "2014-07-23",
+   "filed": "2014-07-22 16:04 ET (after the close)",
+   "title": "Microsoft Q4 FY14 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312514275529/d759928dex991.htm",
+   "supports": "Q4 FY14 and FY14 income statements, balance sheets and cash flows; the acquired Nokia business; Noted Items; guidance only on the conference call"
+  },
+  "MS73": {
+   "published": "2014-08-01",
+   "filed": "2014-07-31 17:16 ET (after the close)",
+   "title": "Microsoft FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312514289961/d722626d10k.htm",
+   "supports": "five-year summary FY2010-FY2014 (diluted EPS $2.10, $2.69, $2.00, $2.58, $2.63; revenue $62,484M-$86,833M); income statements FY2012-FY2014 (FY2014 diluted shares 8,399M); balance sheets June 30, 2013 and 2014; segment revenue FY2012-FY2014; cash flows; dividends declared ($0.28 on June 10, 2014); risk factors (services, business model competition, competition)"
+  },
+  "MS74": {
+   "published": "2014-09-17",
+   "filed": "2014-09-17 06:04 ET (before the open)",
+   "title": "Microsoft 8-K of 2014-09-17 (exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312514343628/d791068dex991.htm",
+   "supports": "quarterly dividend of $0.31 declared on September 16, 2014"
+  },
+  "MS75": {
+   "published": "2014-10-24",
+   "filed": "2014-10-23 16:06 ET (after the close)",
+   "title": "Microsoft Q1 FY15 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312514380219/d809612dex991.htm",
+   "supports": "Q1 FY15 income statement, balance sheet and cash flows; integration and restructuring expenses; guidance only on the conference call"
   }
  },
  "history_vintages": [
@@ -977,6 +1138,388 @@
     ]
    ],
    "groups_basis": "FY11 revenue by segment (FY2011 10-K)"
+  },
+  {
+   "published": "2012-07-27",
+   "sources": [
+    "MS58",
+    "MS32",
+    "MS31",
+    "MS30",
+    "MS26",
+    "MS10",
+    "MS8",
+    "MS18",
+    "MS11",
+    "MS12",
+    "MS57"
+   ],
+   "company": "Microsoft Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY12",
+   "why": "Microsoft: 'We generate revenue by developing, licensing, and supporting a wide range of software products and services, by designing and selling hardware, and by delivering relevant online advertising to a global customer audience'; 'Our increasing focus on devices and services presents execution and competitive risks': 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Business model competition': 'Some companies compete with us using an open source business model'; 'We face intense competition across all markets for our products and services, which may lead to lower revenue or operating margins' (its own FY2012 10-K): a competition and business-model risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2010": "2010-06-30",
+    "2011": "2011-06-30",
+    "2012": "2012-06-30"
+   },
+   "eps_gaap": {
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.2,
+    "2007": 1.42,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.69,
+    "2012": 2.0
+   },
+   "eps_normalized": {
+    "2003": 0.69,
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.27,
+    "2007": 1.49,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.64,
+    "2012": 2.0
+   },
+   "eps_published": {
+    "2003": "2007-08-06",
+    "2004": "2008-08-01",
+    "2005": "2009-07-30",
+    "2006": "2010-07-30",
+    "2007": "2011-07-28"
+   },
+   "revenue_usd_b": {
+    "2003": 32.187,
+    "2004": 36.835,
+    "2005": 39.788,
+    "2006": 44.282,
+    "2007": 51.122,
+    "2008": 60.42,
+    "2009": 58.437,
+    "2010": 62.484,
+    "2011": 69.943,
+    "2012": 73.723
+   },
+   "diluted_shares_m": {
+    "2003": 10882.0,
+    "2012": 8506.0
+   },
+   "shares_published": {
+    "2003": "2005-08-26"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 29.52,
+   "prev_fy_op_margin_note": "FY12 operating income $21,763M / revenue $73,723M (FY2012 10-K; GAAP, after the $6,193M goodwill impairment)",
+   "prev_fy_pretax_margin": 30.2,
+   "prev_fy_pretax_margin_note": "FY12 income before income taxes $22,267M / $73,723M (FY2012 10-K)",
+   "prev_fy_gross_margin": 76.22,
+   "prev_fy_sales_growth": 5.4,
+   "prev_fy_unearned_pct": 17.2,
+   "prev_fy_unearned_note": "unearned revenue $20,059M at June 30, 2012 vs $17,120M (FY2012 10-K)",
+   "tax_rate": 0.238,
+   "tax_note": "FY12 effective rate: provision $5,289M / income before income taxes $22,267M (FY2012 10-K)",
+   "fcf_b": 29.321,
+   "fcf_label": "FY12",
+   "prev_q_unearned_pct": 16.7,
+   "prev_q_label": "Q3 FY12",
+   "prev_q_source": "MS55",
+   "dividend_annual": 0.8,
+   "dividend_note": "$0.20 quarterly, declared on June 13, 2012 (FY2012 10-K)",
+   "cash_return_text": "$5,029M of share repurchases and $6,385M of dividends paid in FY12",
+   "business_line": "Windows & Windows Live Division, Server and Tools, Online Services Division, Microsoft Business Division and Entertainment and Devices Division",
+   "normalization": "diluted EPS, each year from the latest 10-K that reports it, all with stock-based compensation expense; a company figure excluding one-offs only replaces it: FY2006 $1.27 and FY2007 $1.49 'as adjusted' (Q4 FY07 release: excluding the Xbox 360 warranty charges, legal charges and tax benefits; GAAP $1.20, $1.42); FY2003 $0.69, FY2004 $0.75 and FY2005 $1.12 stay GAAP (their releases list per-share effects but publish no EPS without them; nothing is derived); FY2008-FY2010 GAAP; FY2011 $2.64, the company's '2011 As Adjusted (Non-GAAP)' excluding only the $0.05 tax settlement (Q4 FY12 release; GAAP $2.69); FY2012 GAAP $2.00 (the company's non-GAAP $2.78 also removes the $540 million Windows Upgrade Offer deferral, revenue recognition rather than a one-off, and no EPS excluding the $6.19 billion goodwill impairment alone was published; nothing is derived; kept: the impairment is under the year's $16,978M net income); no year excluded",
+   "groups": [
+    [
+     "Windows & Windows Live Division",
+     18.818,
+     0.2
+    ],
+    [
+     "Server and Tools",
+     18.696,
+     12.0
+    ],
+    [
+     "Online Services Division",
+     2.934,
+     9.5
+    ],
+    [
+     "Microsoft Business Division",
+     23.963,
+     7.4
+    ],
+    [
+     "Entertainment and Devices Division",
+     9.585,
+     7.7
+    ]
+   ],
+   "groups_basis": "FY12 revenue by segment (FY2012 10-K)"
+  },
+  {
+   "published": "2013-07-31",
+   "sources": [
+    "MS67",
+    "MS58",
+    "MS32",
+    "MS31",
+    "MS30",
+    "MS26",
+    "MS9",
+    "MS18",
+    "MS11",
+    "MS12",
+    "MS57",
+    "MS66"
+   ],
+   "company": "Microsoft Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY13",
+   "why": "Microsoft: 'We generate revenue by developing, licensing, and supporting a wide range of software products and services, by designing and selling hardware devices, and by delivering relevant online advertising to a global customer audience'; 'Our increasing focus on services presents execution and competitive risks': 'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Business model competition': 'Some companies compete with us using an open source business model'; 'We face intense competition across all markets for our products and services, which may lead to lower revenue or operating margins' (its own FY2013 10-K): a competition and business-model risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2011": "2011-06-30",
+    "2012": "2012-06-30",
+    "2013": "2013-06-30"
+   },
+   "eps_gaap": {
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.2,
+    "2007": 1.42,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.69,
+    "2012": 2.0,
+    "2013": 2.58
+   },
+   "eps_normalized": {
+    "2004": 0.75,
+    "2005": 1.12,
+    "2006": 1.27,
+    "2007": 1.49,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.64,
+    "2012": 2.0,
+    "2013": 2.58
+   },
+   "eps_published": {
+    "2004": "2008-08-01",
+    "2005": "2009-07-30",
+    "2006": "2010-07-30",
+    "2007": "2011-07-28",
+    "2008": "2012-07-27"
+   },
+   "revenue_usd_b": {
+    "2004": 36.835,
+    "2005": 39.788,
+    "2006": 44.282,
+    "2007": 51.122,
+    "2008": 60.42,
+    "2009": 58.437,
+    "2010": 62.484,
+    "2011": 69.943,
+    "2012": 73.723,
+    "2013": 77.849
+   },
+   "diluted_shares_m": {
+    "2004": 10894.0,
+    "2013": 8470.0
+   },
+   "shares_published": {
+    "2004": "2006-08-28"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 34.38,
+   "prev_fy_op_margin_note": "FY13 operating income $26,764M / revenue $77,849M (FY2013 10-K; GAAP)",
+   "prev_fy_pretax_margin": 34.75,
+   "prev_fy_pretax_margin_note": "FY13 income before income taxes $27,052M / $77,849M (FY2013 10-K)",
+   "prev_fy_gross_margin": 73.99,
+   "prev_fy_sales_growth": 5.6,
+   "prev_fy_unearned_pct": 11.7,
+   "prev_fy_unearned_note": "unearned revenue $22,399M at June 30, 2013 vs $20,059M (FY2013 10-K)",
+   "tax_rate": 0.192,
+   "tax_note": "FY13 effective rate: provision $5,189M / income before income taxes $27,052M (FY2013 10-K)",
+   "fcf_b": 24.576,
+   "fcf_label": "FY13",
+   "prev_q_unearned_pct": 17.9,
+   "prev_q_label": "Q3 FY13",
+   "prev_q_source": "MS64",
+   "dividend_annual": 0.92,
+   "dividend_note": "$0.23 quarterly, declared on June 12, 2013 (FY2013 10-K)",
+   "cash_return_text": "$5,360M of share repurchases and $7,455M of dividends paid in FY13",
+   "business_line": "Windows Division, Server and Tools, Online Services Division, Microsoft Business Division and Entertainment and Devices Division",
+   "normalization": "diluted EPS, each year from the latest 10-K that reports it, all with stock-based compensation expense; a company figure excluding one-offs only replaces it: FY2006 $1.27 and FY2007 $1.49 'as adjusted' (Q4 FY07 release: excluding the Xbox 360 warranty charges, legal charges and tax benefits; GAAP $1.20, $1.42); FY2004 $0.75 and FY2005 $1.12 stay GAAP (their releases list per-share effects but publish no EPS without them; nothing is derived); FY2008-FY2010 GAAP; FY2011 $2.64, the company's '2011 As Adjusted (Non-GAAP)' excluding only the $0.05 tax settlement (Q4 FY12 release; GAAP $2.69); FY2012 GAAP $2.00 (the company's non-GAAP $2.78 also removes the $540 million Windows Upgrade Offer deferral, revenue recognition rather than a one-off, and no EPS excluding the $6.19 billion goodwill impairment alone was published; nothing is derived; kept: the impairment is under the year's $16,978M net income); FY2013 GAAP $2.58 (the company's non-GAAP $2.62 also removes the Windows Upgrade Offer recognition; no EPS excluding the European Commission fine alone; the Surface RT charge is an effect); no year excluded",
+   "groups": [
+    [
+     "Windows Division",
+     18.68,
+     -0.9
+    ],
+    [
+     "Server and Tools",
+     20.295,
+     9.4
+    ],
+    [
+     "Online Services Division",
+     3.284,
+     11.9
+    ],
+    [
+     "Microsoft Business Division",
+     24.738,
+     2.7
+    ],
+    [
+     "Entertainment and Devices Division",
+     10.213,
+     6.5
+    ]
+   ],
+   "groups_basis": "FY13 revenue by segment (FY2013 10-K)"
+  },
+  {
+   "published": "2014-08-01",
+   "sources": [
+    "MS73",
+    "MS67",
+    "MS58",
+    "MS32",
+    "MS31",
+    "MS30",
+    "MS10",
+    "MS18",
+    "MS12",
+    "MS57",
+    "MS66",
+    "MS72"
+   ],
+   "company": "Microsoft Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY14",
+   "why": "Microsoft: 'We generate revenue by developing, licensing, and supporting a wide range of software products and services, by designing, manufacturing, and selling devices, and by delivering relevant online advertising to a global customer audience'; 'Our increasing focus on services presents execution and competitive risks': 'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Business model competition': 'Some companies compete with us using an open source business model'; 'We face intense competition across all markets for our products and services, which may lead to lower revenue or operating margins' (its own FY2014 10-K): a competition and business-model risk, not an obsolescence one",
+   "fiscal_year_ends": {
+    "2012": "2012-06-30",
+    "2013": "2013-06-30",
+    "2014": "2014-06-30"
+   },
+   "eps_gaap": {
+    "2005": 1.12,
+    "2006": 1.2,
+    "2007": 1.42,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.69,
+    "2012": 2.0,
+    "2013": 2.58,
+    "2014": 2.63
+   },
+   "eps_normalized": {
+    "2005": 1.12,
+    "2006": 1.27,
+    "2007": 1.49,
+    "2008": 1.87,
+    "2009": 1.62,
+    "2010": 2.1,
+    "2011": 2.64,
+    "2012": 2.0,
+    "2013": 2.58,
+    "2014": 2.63
+   },
+   "eps_published": {
+    "2005": "2009-07-30",
+    "2006": "2010-07-30",
+    "2007": "2011-07-28",
+    "2008": "2012-07-27",
+    "2009": "2013-07-31"
+   },
+   "revenue_usd_b": {
+    "2005": 39.788,
+    "2006": 44.282,
+    "2007": 51.122,
+    "2008": 60.42,
+    "2009": 58.437,
+    "2010": 62.484,
+    "2011": 69.943,
+    "2012": 73.723,
+    "2013": 77.849,
+    "2014": 86.833
+   },
+   "diluted_shares_m": {
+    "2005": 10906.0,
+    "2014": 8399.0
+   },
+   "shares_published": {
+    "2005": "2007-08-06"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 31.97,
+   "prev_fy_op_margin_note": "FY14 operating income $27,759M / revenue $86,833M (FY2014 10-K; GAAP)",
+   "prev_fy_pretax_margin": 32.04,
+   "prev_fy_pretax_margin_note": "FY14 income before income taxes $27,820M / $86,833M (FY2014 10-K)",
+   "prev_fy_gross_margin": 68.98,
+   "prev_fy_sales_growth": 11.5,
+   "prev_fy_unearned_pct": 12.3,
+   "prev_fy_unearned_note": "unearned revenue $25,158M at June 30, 2014 vs $22,399M (FY2014 10-K)",
+   "tax_rate": 0.207,
+   "tax_note": "FY14 effective rate: provision $5,746M / income before income taxes $27,820M (FY2014 10-K)",
+   "fcf_b": 26.746,
+   "fcf_label": "FY14",
+   "prev_q_unearned_pct": 9.0,
+   "prev_q_label": "Q3 FY14",
+   "prev_q_source": "MS71",
+   "dividend_annual": 1.12,
+   "dividend_note": "$0.28 quarterly, declared on June 10, 2014 (FY2014 10-K)",
+   "cash_return_text": "$7,316M of share repurchases and $8,879M of dividends paid in FY14",
+   "business_line": "Devices and Consumer Licensing, Computing and Gaming Hardware, Phone Hardware, Devices and Consumer Other, Commercial Licensing and Commercial Other",
+   "normalization": "diluted EPS, each year from the latest 10-K that reports it, all with stock-based compensation expense; a company figure excluding one-offs only replaces it: FY2006 $1.27 and FY2007 $1.49 'as adjusted' (Q4 FY07 release: excluding the Xbox 360 warranty charges, legal charges and tax benefits; GAAP $1.20, $1.42); FY2005 $1.12 stays GAAP (its release lists per-share effects but publishes no EPS without them; nothing is derived); FY2008-FY2010 GAAP; FY2011 $2.64, the company's '2011 As Adjusted (Non-GAAP)' excluding only the $0.05 tax settlement (Q4 FY12 release; GAAP $2.69); FY2012 GAAP $2.00 (the company's non-GAAP $2.78 also removes the $540 million Windows Upgrade Offer deferral, revenue recognition rather than a one-off, and no EPS excluding the $6.19 billion goodwill impairment alone was published; nothing is derived; kept: the impairment is under the year's $16,978M net income); FY2013 GAAP $2.58 (the company's non-GAAP $2.62 also removes the Windows Upgrade Offer recognition; no EPS excluding the European Commission fine alone; the Surface RT charge is an effect); FY2014 GAAP $2.63 (no figure excluding one-offs published; the Noted Items are effects); no year excluded",
+   "groups": [
+    [
+     "Devices and Consumer Licensing",
+     18.803,
+     -1.1
+    ],
+    [
+     "Computing and Gaming Hardware",
+     9.628,
+     49.0
+    ],
+    [
+     "Phone Hardware",
+     1.985,
+     null
+    ],
+    [
+     "Devices and Consumer Other",
+     7.258,
+     9.7
+    ],
+    [
+     "Commercial Licensing",
+     42.027,
+     5.9
+    ],
+    [
+     "Commercial Other",
+     7.547,
+     33.3
+    ]
+   ],
+   "groups_basis": "FY14 revenue by segment (FY2014 10-K)"
   }
  ],
  "prints": [
@@ -1960,22 +2503,23 @@
     "ar_m": 10153,
     "ar_prior_m": 9646,
     "unearned_m": 15658,
-    "unearned_prior_m": 13919
+    "unearned_prior_m": 13919,
+    "fx_impact_m": 409
    },
    "sales_note": "revenue $17,372M vs $16,195M",
    "gross_margin_note": "cost of revenue $3,777M vs $3,139M",
    "op_margin_note": "operating income $7,203M vs $7,116M",
    "receivables_note": "accounts receivable $10,153M at September 30, 2011 vs $9,646M at September 30, 2010 (the Q1 FY11 release)",
    "unearned_note": "unearned revenue $14,345M + $1,313M long-term vs $12,767M + $1,152M a year earlier (the Q1 FY11 release)",
-   "lc_pct": 7.0,
-   "lc_note": "the release's revenue growth of 7%: no filing states the quarter's currency effect",
+   "lc_pct": 5.0,
+   "lc_note": "the release's revenue growth of 7% less 'a favorable foreign currency impact of $409 million' (the 10-Q): ($17,372M - $409M) / $16,195M = +4.7%, rounded to a whole percent",
    "eps_q": 0.68,
    "eps_q_prior": 0.62,
    "eps_note": "",
    "diluted_shares_m": 8490,
    "cash_b": 57.403,
    "cash_note": "cash, cash equivalents, and short-term investments $57,403M",
-   "fx_note": null,
+   "fx_note": "Revenue for the three months ended September 30, 2011 included a favorable foreign currency impact of $409 million",
    "next_print": "Q2 FY12 print (late January)",
    "cash_return_text": "$1,934M of share repurchases and $1,341M of dividends in the quarter",
    "sales_b": 17.372,
@@ -1989,6 +2533,690 @@
    "receivables_b": 10.153,
    "receivables_pct": 5.3,
    "receivables_gap_pp": -2.0
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-01-20",
+   "source": "MS53",
+   "extra_sources": [
+    "MS54",
+    "MS46"
+   ],
+   "release": "Jan 19",
+   "release_time": "after the close on Jan 19: 8-K accepted 16:05 ET, 10-Q 16:09 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EST); public before the open of the next trading day",
+   "period_end": "2011-12-31",
+   "raw": {
+    "sales_m": 20885,
+    "sales_prior_m": 19953,
+    "cogs_m": 5638,
+    "cogs_prior_m": 4833,
+    "op_m": 7994,
+    "op_prior_m": 8165,
+    "ar_m": 13643,
+    "ar_prior_m": 12874,
+    "unearned_m": 15334,
+    "unearned_prior_m": 13417,
+    "fx_impact_m": 225
+   },
+   "sales_note": "revenue $20,885M vs $19,953M, a year-ago quarter that included 'recognition of $224 million of deferred revenue related to the Office 2010 technology guarantee program' (as reported)",
+   "gross_margin_note": "cost of revenue $5,638M vs $4,833M",
+   "op_margin_note": "operating income $7,994M vs $8,165M",
+   "receivables_note": "accounts receivable $13,643M at December 31, 2011 vs $12,874M at December 31, 2010 (the Q2 FY11 release)",
+   "unearned_note": "unearned revenue $13,985M + $1,349M long-term vs $12,063M + $1,354M a year earlier (the Q2 FY11 release)",
+   "lc_pct": 4.0,
+   "lc_note": "the release's revenue growth of 5% less 'a favorable foreign currency impact of $225 million' (the 10-Q): ($20,885M - $225M) / $19,953M = +3.5%, rounded to a whole percent",
+   "eps_q": 0.78,
+   "eps_q_prior": 0.77,
+   "eps_note": "",
+   "diluted_shares_m": 8465,
+   "cash_b": 51.736,
+   "cash_note": "cash, cash equivalents, and short-term investments $51,736M",
+   "fx_note": "Revenue for the three months ended December 31, 2011 also included Skype revenue from the date of acquisition and a favorable foreign currency impact of $225 million",
+   "next_print": "Q3 FY12 print (late April)",
+   "cash_return_text": "$1,042M of share repurchases and $1,683M of dividends in the quarter",
+   "sales_b": 20.885,
+   "sales_pct": 4.7,
+   "gross_margin": 73.0,
+   "gross_margin_bp": -277.4,
+   "op_margin": 38.28,
+   "op_margin_bp": -264.5,
+   "unearned_b": 15.334,
+   "unearned_pct": 14.3,
+   "receivables_b": 13.643,
+   "receivables_pct": 6.0,
+   "receivables_gap_pp": 1.3
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-04-20",
+   "source": "MS55",
+   "extra_sources": [
+    "MS56",
+    "MS48"
+   ],
+   "release": "Apr 19",
+   "release_time": "after the close on Apr 19: 8-K accepted 16:03 ET, 10-Q 16:06 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2012-03-31",
+   "raw": {
+    "sales_m": 17407,
+    "sales_prior_m": 16428,
+    "cogs_m": 3952,
+    "cogs_prior_m": 3897,
+    "op_m": 6374,
+    "op_prior_m": 5709,
+    "ar_m": 10961,
+    "ar_prior_m": 10033,
+    "unearned_m": 15191,
+    "unearned_prior_m": 13019
+   },
+   "sales_note": "revenue $17,407M vs $16,428M",
+   "gross_margin_note": "cost of revenue $3,952M vs $3,897M",
+   "op_margin_note": "operating income $6,374M vs $5,709M",
+   "receivables_note": "accounts receivable $10,961M at March 31, 2012 vs $10,033M at March 31, 2011 (the Q3 FY11 release)",
+   "unearned_note": "unearned revenue $13,929M + $1,262M long-term vs $11,887M + $1,132M a year earlier (the Q3 FY11 release)",
+   "lc_pct": 6.0,
+   "lc_note": "the release's revenue growth of 6%: no filing states the quarter's total currency effect (the 10-Q states only the Microsoft Business Division's, 'a favorable foreign currency impact of $121 million')",
+   "eps_q": 0.6,
+   "eps_q_prior": 0.61,
+   "eps_note": "Q3 FY11's $0.61 included 'a $461 million or $0.05 per share tax benefit primarily related to a tax settlement with the U.S. Internal Revenue Service'",
+   "diluted_shares_m": 8498,
+   "cash_b": 59.529,
+   "cash_note": "cash, cash equivalents, and short-term investments $59,529M",
+   "fx_note": null,
+   "next_print": "Q4 FY12 print (late July)",
+   "cash_return_text": "$1,023M of share repurchases and $1,683M of dividends in the quarter",
+   "sales_b": 17.407,
+   "sales_pct": 6.0,
+   "gross_margin": 77.3,
+   "gross_margin_bp": 101.8,
+   "op_margin": 36.62,
+   "op_margin_bp": 186.6,
+   "unearned_b": 15.191,
+   "unearned_pct": 16.7,
+   "receivables_b": 10.961,
+   "receivables_pct": 9.2,
+   "receivables_gap_pp": 3.3
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-07-20",
+   "source": "MS57",
+   "extra_sources": [],
+   "release": "Jul 19",
+   "release_time": "after the close on Jul 19: 8-K accepted 16:06 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2012-06-30",
+   "raw": {
+    "sales_m": 18059,
+    "sales_prior_m": 17367,
+    "cogs_m": 4163,
+    "cogs_prior_m": 3708,
+    "op_m": 192,
+    "op_prior_m": 6171,
+    "ar_m": 15780,
+    "ar_prior_m": 14987,
+    "unearned_m": 20059,
+    "unearned_prior_m": 17120
+   },
+   "sales_note": "revenue $18,059M vs $17,367M after 'the deferral of $540 million of revenue related to the Windows Upgrade Offer' (as reported; non-GAAP $18,599M, +7%)",
+   "gross_margin_note": "cost of revenue $4,163M vs $3,708M",
+   "op_margin_note": "operating income $192M vs $6,171M, after the $6,193M goodwill impairment and the $540M deferral (GAAP: the company's non-GAAP $6,925M also adds back the deferral)",
+   "receivables_note": "accounts receivable $15,780M at June 30, 2012 vs $14,987M at June 30, 2011",
+   "unearned_note": "unearned revenue $18,653M + $1,406M long-term vs $15,722M + $1,398M a year earlier",
+   "lc_pct": 4.0,
+   "lc_note": "the release's revenue growth of 4%: no filing states the quarter's currency effect (the FY2012 10-K's 'insignificant impact on revenue' is the fiscal year's)",
+   "eps_q": -0.06,
+   "eps_q_prior": 0.69,
+   "eps_note": "Q4 FY12 EPS $(0.06) after the goodwill impairment's $0.73 and the deferral's $0.06 (non-GAAP $0.73)",
+   "diluted_shares_m": 8388,
+   "cash_b": 63.04,
+   "cash_note": "cash, cash equivalents, and short-term investments $63,040M",
+   "fx_note": null,
+   "next_print": "Q1 FY13 print (late October)",
+   "cash_return_text": "$1,030M of share repurchases and $1,678M of dividends in the quarter",
+   "sales_b": 18.059,
+   "sales_pct": 4.0,
+   "gross_margin": 76.95,
+   "gross_margin_bp": -170.1,
+   "op_margin": 1.06,
+   "op_margin_bp": -3447.0,
+   "unearned_b": 20.059,
+   "unearned_pct": 17.2,
+   "receivables_b": 15.78,
+   "receivables_pct": 5.3,
+   "receivables_gap_pp": 1.3,
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 2.0,
+    "revenue_usd_b": 73.723,
+    "diluted_shares_m": 8506.0,
+    "normalization_note": "FY12 = GAAP $2.00: the company's non-GAAP $2.78 also removes the $540 million Windows Upgrade Offer deferral (revenue recognition, not a one-off), and no EPS excluding the $6.19 billion goodwill impairment alone was published ($0.73 a share is an effect; nothing is derived); FY11 = $2.64, the company's '2011 As Adjusted (Non-GAAP)' excluding only the $0.05 tax settlement (GAAP $2.69)",
+    "restates": {
+     "2011": 2.64
+    },
+    "op_margin": 29.52,
+    "op_margin_note": "FY12 operating income $21,763M / revenue $73,723M (Q4 FY12 release; GAAP, after the $6,193M goodwill impairment)",
+    "pretax_margin": 30.2,
+    "pretax_margin_note": "FY12 income before income taxes $22,267M / $73,723M",
+    "gross_margin": 76.22,
+    "sales_growth": 5.4,
+    "unearned_pct": 17.2,
+    "tax_rate": 0.238,
+    "tax_note": "FY12 effective rate: provision $5,289M / income before income taxes $22,267M"
+   }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2012-10-19",
+   "source": "MS59",
+   "extra_sources": [
+    "MS60",
+    "MS51"
+   ],
+   "release": "Oct 18",
+   "release_time": "after the close on Oct 18: 8-K accepted 16:02 ET, 10-Q 16:04 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2012-09-30",
+   "raw": {
+    "sales_m": 16008,
+    "sales_prior_m": 17372,
+    "cogs_m": 4168,
+    "cogs_prior_m": 3777,
+    "op_m": 5308,
+    "op_prior_m": 7203,
+    "ar_m": 9871,
+    "ar_prior_m": 10153,
+    "unearned_m": 19587,
+    "unearned_prior_m": 15658
+   },
+   "sales_note": "revenue $16,008M vs $17,372M after 'the deferral of $1.36 billion of revenue' for the Windows Upgrade Offer, Windows 8 pre-sales and the Office Offer (as reported; non-GAAP $17,364M, 0%)",
+   "gross_margin_note": "cost of revenue $4,168M vs $3,777M",
+   "op_margin_note": "operating income $5,308M vs $7,203M (GAAP; non-GAAP $6,664M adds back the deferral)",
+   "receivables_note": "accounts receivable $9,871M at September 30, 2012 vs $10,153M at September 30, 2011 (the Q1 FY12 release)",
+   "unearned_note": "unearned revenue $18,295M + $1,292M long-term vs $14,345M + $1,313M a year earlier (the Q1 FY12 release)",
+   "lc_pct": -8.0,
+   "lc_note": "the release's revenue decline of 8%: no filing states the quarter's total currency effect (the 10-Q states only Server and Tools' and the Microsoft Business Division's, unfavorable $77 million and $119 million)",
+   "eps_q": 0.53,
+   "eps_q_prior": 0.68,
+   "eps_note": "Q1 FY13 EPS $0.53 after the deferral's $0.13 (non-GAAP $0.65)",
+   "diluted_shares_m": 8494,
+   "cash_b": 66.644,
+   "cash_note": "cash, cash equivalents, and short-term investments $66,644M",
+   "fx_note": null,
+   "next_print": "Q2 FY13 print (late January)",
+   "cash_return_text": "$1,632M of share repurchases and $1,676M of dividends in the quarter",
+   "sales_b": 16.008,
+   "sales_pct": -7.9,
+   "gross_margin": 73.96,
+   "gross_margin_bp": -429.5,
+   "op_margin": 33.16,
+   "op_margin_bp": -830.5,
+   "unearned_b": 19.587,
+   "unearned_pct": 25.1,
+   "receivables_b": 9.871,
+   "receivables_pct": -2.8,
+   "receivables_gap_pp": 5.1
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-01-25",
+   "source": "MS62",
+   "extra_sources": [
+    "MS63",
+    "MS53"
+   ],
+   "release": "Jan 24",
+   "release_time": "after the close on Jan 24: 8-K accepted 16:04 ET, 10-Q 16:10 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EST); public before the open of the next trading day",
+   "period_end": "2012-12-31",
+   "raw": {
+    "sales_m": 21456,
+    "sales_prior_m": 20885,
+    "cogs_m": 5692,
+    "cogs_prior_m": 5638,
+    "op_m": 7771,
+    "op_prior_m": 7994,
+    "ar_m": 14317,
+    "ar_prior_m": 13643,
+    "unearned_m": 19813,
+    "unearned_prior_m": 15334
+   },
+   "sales_note": "revenue $21,456M vs $20,885M after $1,329M of net revenue deferred for the Windows Upgrade Offer, the Office Upgrade Offer and Pre-sales and the Video Game Deferral, less $783M recognized for Windows 8 Pre-sales (as reported; non-GAAP $22,002M, +5%)",
+   "gross_margin_note": "cost of revenue $5,692M vs $5,638M",
+   "op_margin_note": "operating income $7,771M vs $7,994M (GAAP; non-GAAP $8,317M)",
+   "receivables_note": "accounts receivable $14,317M at December 31, 2012 vs $13,643M at December 31, 2011 (the Q2 FY12 release)",
+   "unearned_note": "unearned revenue $18,354M + $1,459M long-term vs $13,985M + $1,349M a year earlier (the Q2 FY12 release)",
+   "lc_pct": 3.0,
+   "lc_note": "the release's revenue growth of 3%: no filing states the quarter's total currency effect (the 10-Q states only the Microsoft Business Division's, 'an unfavorable foreign currency impact of $103 million')",
+   "eps_q": 0.76,
+   "eps_q_prior": 0.78,
+   "eps_note": "Q2 FY13 EPS $0.76 after the net deferral's $0.13 and the $0.08 recognized for Windows 8 Pre-sales (non-GAAP $0.81)",
+   "diluted_shares_m": 8444,
+   "cash_b": 68.312,
+   "cash_note": "cash, cash equivalents, and short-term investments $68,312M",
+   "fx_note": null,
+   "next_print": "Q3 FY13 print (late April)",
+   "cash_return_text": "$1,658M of share repurchases and $1,933M of dividends in the quarter",
+   "sales_b": 21.456,
+   "sales_pct": 2.7,
+   "gross_margin": 73.47,
+   "gross_margin_bp": 46.7,
+   "op_margin": 36.22,
+   "op_margin_bp": -205.8,
+   "unearned_b": 19.813,
+   "unearned_pct": 29.2,
+   "receivables_b": 14.317,
+   "receivables_pct": 4.9,
+   "receivables_gap_pp": 2.2
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-04-19",
+   "source": "MS64",
+   "extra_sources": [
+    "MS65",
+    "MS55"
+   ],
+   "release": "Apr 18",
+   "release_time": "after the close on Apr 18: 8-K accepted 16:05 ET, 10-Q 16:07 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2013-03-31",
+   "raw": {
+    "sales_m": 20489,
+    "sales_prior_m": 17407,
+    "cogs_m": 4787,
+    "cogs_prior_m": 3952,
+    "op_m": 7612,
+    "op_prior_m": 6374,
+    "ar_m": 11991,
+    "ar_prior_m": 10961,
+    "unearned_m": 17905,
+    "unearned_prior_m": 15191
+   },
+   "sales_note": "revenue $20,489M vs $17,407M including $1,658M of net revenue recognition for the Windows Upgrade Offer, the Office Upgrade Offer and Pre-Sales and the Video Game Deferral (as reported; non-GAAP $18,831M, +8%)",
+   "gross_margin_note": "cost of revenue $4,787M vs $3,952M",
+   "op_margin_note": "operating income $7,612M vs $6,374M, after the $733M European Commission fine (GAAP: the company's non-GAAP $6,687M also removes the net recognition)",
+   "receivables_note": "accounts receivable $11,991M at March 31, 2013 vs $10,961M at March 31, 2012 (the Q3 FY12 release)",
+   "unearned_note": "unearned revenue $16,511M + $1,394M long-term vs $13,929M + $1,262M a year earlier (the Q3 FY12 release)",
+   "lc_pct": 18.0,
+   "lc_note": "the release's revenue growth of 18%: no filing states the quarter's total currency effect (the 10-Q states only the Microsoft Business Division's, 'an unfavorable foreign currency impact of $114 million')",
+   "eps_q": 0.72,
+   "eps_q_prior": 0.6,
+   "eps_note": "Q3 FY13 EPS $0.72 includes the net recognition's $0.16 and the European Commission fine's $0.09 (non-GAAP $0.65)",
+   "diluted_shares_m": 8429,
+   "cash_b": 74.483,
+   "cash_note": "cash, cash equivalents, and short-term investments $74,483M",
+   "fx_note": null,
+   "next_print": "Q4 FY13 print (late July)",
+   "cash_return_text": "$1,028M of share repurchases and $1,925M of dividends in the quarter",
+   "sales_b": 20.489,
+   "sales_pct": 17.7,
+   "gross_margin": 76.64,
+   "gross_margin_bp": -66.0,
+   "op_margin": 37.15,
+   "op_margin_bp": 53.4,
+   "unearned_b": 17.905,
+   "unearned_pct": 17.9,
+   "receivables_b": 11.991,
+   "receivables_pct": 9.4,
+   "receivables_gap_pp": -8.3
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2013-07-19",
+   "source": "MS66",
+   "extra_sources": [],
+   "release": "Jul 18",
+   "release_time": "after the close on Jul 18: 8-K accepted 16:07 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2013-06-30",
+   "raw": {
+    "sales_m": 19896,
+    "sales_prior_m": 18059,
+    "cogs_m": 5602,
+    "cogs_prior_m": 4163,
+    "op_m": 6073,
+    "op_prior_m": 192,
+    "ar_m": 17486,
+    "ar_prior_m": 15780,
+    "unearned_m": 22399,
+    "unearned_prior_m": 20059
+   },
+   "sales_note": "revenue $19,896M vs $18,059M including 'the recognition of $782 million of previously deferred revenue related to the Office Upgrade Offer', against a year-ago quarter that deferred $540M (as reported; non-GAAP $19,114M against $18,599M, +3%)",
+   "gross_margin_note": "cost of revenue $5,602M vs $4,163M (including 'a $900 million charge' for Surface RT inventory adjustments)",
+   "op_margin_note": "operating income $6,073M vs $192M (GAAP: the year-ago goodwill impairment and this quarter's Surface RT charge in; the company's non-GAAP $5,291M and $6,925M also remove the recognition and the deferral)",
+   "receivables_note": "accounts receivable $17,486M at June 30, 2013 vs $15,780M at June 30, 2012",
+   "unearned_note": "unearned revenue $20,639M + $1,760M long-term vs $18,653M + $1,406M a year earlier",
+   "lc_pct": 10.0,
+   "lc_note": "the release's revenue growth of 10%: no filing states the quarter's currency effect",
+   "eps_q": 0.59,
+   "eps_q_prior": -0.06,
+   "eps_note": "Q4 FY13 EPS $0.59 includes the Surface RT charge's $0.07 and the recognition's $0.07 (non-GAAP $0.52); Q4 FY12's $(0.06) includes the goodwill impairment",
+   "diluted_shares_m": 8442,
+   "cash_b": 77.022,
+   "cash_note": "cash, cash equivalents, and short-term investments $77,022M",
+   "fx_note": null,
+   "next_print": "Q1 FY14 print (late October)",
+   "cash_return_text": "$1,042M of share repurchases and $1,921M of dividends in the quarter",
+   "sales_b": 19.896,
+   "sales_pct": 10.2,
+   "gross_margin": 71.84,
+   "gross_margin_bp": -510.4,
+   "op_margin": 30.52,
+   "op_margin_bp": 2946.1,
+   "unearned_b": 22.399,
+   "unearned_pct": 11.7,
+   "receivables_b": 17.486,
+   "receivables_pct": 10.8,
+   "receivables_gap_pp": 0.6,
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 2.58,
+    "revenue_usd_b": 77.849,
+    "diluted_shares_m": 8470.0,
+    "normalization_note": "FY13 = GAAP $2.58: the company's non-GAAP $2.62 also removes the $540 million Windows Upgrade Offer recognition, and no EPS excluding the $733 million European Commission fine alone was published; the $900 million Surface RT charge ($0.07) is an effect, kept in both",
+    "op_margin": 34.38,
+    "op_margin_note": "FY13 operating income $26,764M / revenue $77,849M (Q4 FY13 release; GAAP)",
+    "pretax_margin": 34.75,
+    "pretax_margin_note": "FY13 income before income taxes $27,052M / $77,849M",
+    "gross_margin": 73.99,
+    "sales_growth": 5.6,
+    "unearned_pct": 11.7,
+    "tax_rate": 0.192,
+    "tax_note": "FY13 effective rate: provision $5,189M / income before income taxes $27,052M"
+   }
+  },
+  {
+   "quarter": "Q1 FY14",
+   "fy": 2014,
+   "q": 1,
+   "published": "2013-10-25",
+   "source": "MS68",
+   "extra_sources": [
+    "MS69",
+    "MS59"
+   ],
+   "release": "Oct 24",
+   "release_time": "after the close on Oct 24: 8-K accepted 16:04 ET, 10-Q 16:08 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2013-09-30",
+   "raw": {
+    "sales_m": 18529,
+    "sales_prior_m": 16008,
+    "cogs_m": 5114,
+    "cogs_prior_m": 4168,
+    "op_m": 6334,
+    "op_prior_m": 5308,
+    "ar_m": 11007,
+    "ar_prior_m": 9871,
+    "unearned_m": 20214,
+    "unearned_prior_m": 19587
+   },
+   "sales_note": "revenue $18,529M vs $16,008M after 'the deferral of $113 million of revenue primarily related to Windows 8.1 Pre-sales', against a year-ago quarter that deferred $1,356M (as reported; non-GAAP $18,642M against $17,364M, +7%)",
+   "gross_margin_note": "cost of revenue $5,114M vs $4,168M",
+   "op_margin_note": "operating income $6,334M vs $5,308M (GAAP; non-GAAP $6,447M against $6,664M)",
+   "receivables_note": "accounts receivable $11,007M at September 30, 2013 vs $9,871M at September 30, 2012 (the Q1 FY13 release)",
+   "unearned_note": "unearned revenue $18,585M + $1,629M long-term vs $18,295M + $1,292M a year earlier (the Q1 FY13 release)",
+   "lc_pct": 16.0,
+   "lc_note": "the release's revenue growth of 16%: no filing states the quarter's currency effect",
+   "eps_q": 0.62,
+   "eps_q_prior": 0.53,
+   "eps_note": "Q1 FY14 EPS $0.62 after the deferral's $0.01 (non-GAAP $0.63); Q1 FY13's $0.53 after its $0.13 deferral",
+   "diluted_shares_m": 8434,
+   "cash_b": 80.672,
+   "cash_note": "cash, cash equivalents, and short-term investments $80,672M",
+   "fx_note": null,
+   "next_print": "Q2 FY14 print (late January)",
+   "guide_on_call": "Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast",
+   "cash_return_text": "$2,188M of share repurchases and $1,916M of dividends in the quarter",
+   "sales_b": 18.529,
+   "sales_pct": 15.7,
+   "gross_margin": 72.4,
+   "gross_margin_bp": -156.3,
+   "op_margin": 34.18,
+   "op_margin_bp": 102.6,
+   "unearned_b": 20.214,
+   "unearned_pct": 3.2,
+   "receivables_b": 11.007,
+   "receivables_pct": 11.5,
+   "receivables_gap_pp": -4.2
+  },
+  {
+   "quarter": "Q2 FY14",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-01-24",
+   "source": "MS70",
+   "extra_sources": [
+    "MS62"
+   ],
+   "release": "Jan 23",
+   "release_time": "after the close on Jan 23: 8-K accepted 16:06 ET, 10-Q 16:08 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EST); public before the open of the next trading day",
+   "period_end": "2013-12-31",
+   "raw": {
+    "sales_m": 24519,
+    "sales_prior_m": 21456,
+    "cogs_m": 8284,
+    "cogs_prior_m": 5692,
+    "op_m": 7969,
+    "op_prior_m": 7771,
+    "ar_m": 15986,
+    "ar_prior_m": 14317,
+    "unearned_m": 19474,
+    "unearned_prior_m": 19813
+   },
+   "sales_note": "revenue $24,519M vs $21,456M, a year-ago quarter with $1,329M of net revenue deferred and $783M recognized for Windows 8 Pre-sales (as reported; 11% against the year-ago non-GAAP $22,002M)",
+   "gross_margin_note": "cost of revenue $8,284M vs $5,692M",
+   "op_margin_note": "operating income $7,969M vs $7,771M (GAAP; the year-ago non-GAAP $8,317M)",
+   "receivables_note": "accounts receivable $15,986M at December 31, 2013 vs $14,317M at December 31, 2012 (the Q2 FY13 release)",
+   "unearned_note": "unearned revenue $17,616M + $1,858M long-term vs $18,354M + $1,459M a year earlier (the Q2 FY13 release)",
+   "lc_pct": 14.0,
+   "lc_note": "the release's revenue growth of 14%: no filing states the quarter's currency effect",
+   "eps_q": 0.78,
+   "eps_q_prior": 0.76,
+   "eps_note": "Q2 FY13's $0.76 was after its net deferral (non-GAAP $0.81)",
+   "diluted_shares_m": 8395,
+   "cash_b": 83.944,
+   "cash_note": "cash, cash equivalents, and short-term investments $83,944M",
+   "fx_note": null,
+   "next_print": "Q3 FY14 print (late April)",
+   "guide_on_call": "Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast",
+   "cash_return_text": "$2,113M of share repurchases and $2,332M of dividends in the quarter",
+   "sales_b": 24.519,
+   "sales_pct": 14.3,
+   "gross_margin": 66.21,
+   "gross_margin_bp": -725.7,
+   "op_margin": 32.5,
+   "op_margin_bp": -371.7,
+   "unearned_b": 19.474,
+   "unearned_pct": -1.7,
+   "receivables_b": 15.986,
+   "receivables_pct": 11.7,
+   "receivables_gap_pp": -2.6
+  },
+  {
+   "quarter": "Q3 FY14",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-04-25",
+   "source": "MS71",
+   "extra_sources": [
+    "MS64"
+   ],
+   "release": "Apr 24",
+   "release_time": "after the close on Apr 24: 8-K accepted 16:03 ET, 10-Q 16:06 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2014-03-31",
+   "raw": {
+    "sales_m": 20403,
+    "sales_prior_m": 20489,
+    "cogs_m": 5941,
+    "cogs_prior_m": 4787,
+    "op_m": 6974,
+    "op_prior_m": 7612,
+    "ar_m": 13497,
+    "ar_prior_m": 11991,
+    "unearned_m": 19512,
+    "unearned_prior_m": 17905
+   },
+   "sales_note": "revenue $20,403M vs $20,489M, a year-ago quarter with $1,658M of net revenue recognition (as reported; 8% against the year-ago non-GAAP $18,831M)",
+   "gross_margin_note": "cost of revenue $5,941M vs $4,787M",
+   "op_margin_note": "operating income $6,974M vs $7,612M (GAAP; the year-ago non-GAAP $6,687M)",
+   "receivables_note": "accounts receivable $13,497M at March 31, 2014 vs $11,991M at March 31, 2013 (the Q3 FY13 release)",
+   "unearned_note": "unearned revenue $17,670M + $1,842M long-term vs $16,511M + $1,394M a year earlier (the Q3 FY13 release)",
+   "lc_pct": 0.0,
+   "lc_note": "the release's revenue change of '(0)%': no filing states the quarter's currency effect",
+   "eps_q": 0.68,
+   "eps_q_prior": 0.72,
+   "eps_note": "Q3 FY13's $0.72 included the net recognition's $0.16 and the fine's $0.09 (non-GAAP $0.65)",
+   "diluted_shares_m": 8367,
+   "cash_b": 88.425,
+   "cash_note": "cash, cash equivalents, and short-term investments $88,425M",
+   "fx_note": null,
+   "next_print": "Q4 FY14 print (late July)",
+   "guide_on_call": "Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast",
+   "cash_return_text": "$1,845M of share repurchases and $2,322M of dividends in the quarter",
+   "sales_b": 20.403,
+   "sales_pct": -0.4,
+   "gross_margin": 70.88,
+   "gross_margin_bp": -575.5,
+   "op_margin": 34.18,
+   "op_margin_bp": -297.0,
+   "unearned_b": 19.512,
+   "unearned_pct": 9.0,
+   "receivables_b": 13.497,
+   "receivables_pct": 12.6,
+   "receivables_gap_pp": 13.0
+  },
+  {
+   "quarter": "Q4 FY14",
+   "fy": 2014,
+   "q": 4,
+   "published": "2014-07-23",
+   "source": "MS72",
+   "extra_sources": [],
+   "release": "Jul 22",
+   "release_time": "after the close on Jul 22: 8-K accepted 16:04 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2014-06-30",
+   "raw": {
+    "sales_m": 23382,
+    "sales_prior_m": 19896,
+    "cogs_m": 7595,
+    "cogs_prior_m": 5602,
+    "op_m": 6482,
+    "op_prior_m": 6073,
+    "ar_m": 19544,
+    "ar_prior_m": 17486,
+    "unearned_m": 25158,
+    "unearned_prior_m": 22399
+   },
+   "sales_note": "revenue $23,382M vs $19,896M, including $1.99 billion from the Nokia Devices and Services business acquired on April 25, 2014, against a year-ago quarter with $782M of recognition (as reported; 22% against the year-ago non-GAAP $19,114M)",
+   "gross_margin_note": "cost of revenue $7,595M vs $5,602M (the year-ago quarter with the $900M Surface RT charge)",
+   "op_margin_note": "operating income $6,482M vs $6,073M (GAAP; the acquired business contributed $(692) million; the year-ago non-GAAP $5,291M also removes the recognition)",
+   "receivables_note": "accounts receivable $19,544M at June 30, 2014 vs $17,486M at June 30, 2013",
+   "unearned_note": "unearned revenue $23,150M + $2,008M long-term vs $20,639M + $1,760M a year earlier",
+   "lc_pct": 18.0,
+   "lc_note": "the release's revenue growth of 18%: no filing states the quarter's currency effect",
+   "eps_q": 0.55,
+   "eps_q_prior": 0.59,
+   "eps_note": "Q4 FY14 EPS $0.55: the acquired Nokia business contributed $(0.08), and the Noted Items net $(0.03) (the end of the Nokia commercial agreement $0.04, integration and restructuring $(0.02), an adjustment to prior years' taxes $(0.05)); Q4 FY13's $0.59 included the Surface RT charge's $0.07 and the recognition's $0.07",
+   "diluted_shares_m": 8345,
+   "cash_b": 85.709,
+   "cash_note": "cash, cash equivalents, and short-term investments $85,709M",
+   "fx_note": null,
+   "next_print": "Q1 FY15 print (late October)",
+   "guide_on_call": "Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast",
+   "cash_return_text": "$1,170M of share repurchases and $2,309M of dividends in the quarter",
+   "sales_b": 23.382,
+   "sales_pct": 17.5,
+   "gross_margin": 67.52,
+   "gross_margin_bp": -432.6,
+   "op_margin": 27.72,
+   "op_margin_bp": -280.2,
+   "unearned_b": 25.158,
+   "unearned_pct": 12.3,
+   "receivables_b": 19.544,
+   "receivables_pct": 11.8,
+   "receivables_gap_pp": -5.8,
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 2.63,
+    "revenue_usd_b": 86.833,
+    "diluted_shares_m": 8399.0,
+    "normalization_note": "FY14 = GAAP $2.63: no figure excluding one-offs published (the release's Noted Items, net $(0.03), are effects)",
+    "op_margin": 31.97,
+    "op_margin_note": "FY14 operating income $27,759M / revenue $86,833M (Q4 FY14 release; GAAP)",
+    "pretax_margin": 32.04,
+    "pretax_margin_note": "FY14 income before income taxes $27,820M / $86,833M",
+    "gross_margin": 68.98,
+    "sales_growth": 11.5,
+    "unearned_pct": 12.3,
+    "tax_rate": 0.207,
+    "tax_note": "FY14 effective rate: provision $5,746M / income before income taxes $27,820M"
+   }
+  },
+  {
+   "quarter": "Q1 FY15",
+   "fy": 2015,
+   "q": 1,
+   "published": "2014-10-24",
+   "source": "MS75",
+   "extra_sources": [
+    "MS68"
+   ],
+   "release": "Oct 23",
+   "release_time": "after the close on Oct 23: 8-K accepted 16:06 ET, 10-Q 16:16 ET; webcast at 2:30 p.m. Pacific (5:30 p.m. EDT); public before the open of the next trading day",
+   "period_end": "2014-09-30",
+   "raw": {
+    "sales_m": 23201,
+    "sales_prior_m": 18529,
+    "cogs_m": 8273,
+    "cogs_prior_m": 5145,
+    "op_m": 5844,
+    "op_prior_m": 6334,
+    "ar_m": 12887,
+    "ar_prior_m": 11007,
+    "unearned_m": 22538,
+    "unearned_prior_m": 20214
+   },
+   "sales_note": "revenue $23,201M vs $18,529M, including the phone hardware business acquired from Nokia (as reported)",
+   "gross_margin_note": "cost of revenue $8,273M vs $5,145M (the release's Q1 FY14 figure; $5,114M first reported)",
+   "op_margin_note": "operating income $5,844M vs $6,334M, after '$1.14 billion of integration and restructuring expenses' (GAAP: a Noted Item, no figure without it)",
+   "receivables_note": "accounts receivable $12,887M at September 30, 2014 vs $11,007M at September 30, 2013 (the Q1 FY14 release)",
+   "unearned_note": "unearned revenue $20,713M + $1,825M long-term vs $18,585M + $1,629M a year earlier (the Q1 FY14 release)",
+   "lc_pct": 25.0,
+   "lc_note": "the release's revenue growth of 25%: no filing states the quarter's currency effect",
+   "eps_q": 0.54,
+   "eps_q_prior": 0.62,
+   "eps_note": "Q1 FY15 EPS $0.54 includes '$1.14 billion of integration and restructuring expenses, or an $0.11 per share negative impact'",
+   "diluted_shares_m": 8351,
+   "cash_b": 89.193,
+   "cash_note": "cash, cash equivalents, and short-term investments $89,193M",
+   "fx_note": null,
+   "next_print": "Q2 FY15 print (late January)",
+   "guide_on_call": "Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast",
+   "cash_return_text": "$2,888M of share repurchases and $2,307M of dividends in the quarter",
+   "sales_b": 23.201,
+   "sales_pct": 25.2,
+   "gross_margin": 64.34,
+   "gross_margin_bp": -789.1,
+   "op_margin": 25.19,
+   "op_margin_bp": -899.6,
+   "unearned_b": 22.538,
+   "unearned_pct": 11.5,
+   "receivables_b": 12.887,
+   "receivables_pct": 17.1,
+   "receivables_gap_pp": -8.1
   }
  ],
  "guides": [
@@ -2360,6 +3588,105 @@
     29.2
    ],
    "note": "'including Skype and the associated acquisition-related expenses'"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-01-20",
+   "source": "MS53",
+   "doc": "Q2 FY12 release",
+   "opex_guide_usd_b": [
+    28.5,
+    28.9
+   ],
+   "note": "'revising operating expense guidance downward'"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-04-20",
+   "source": "MS55",
+   "doc": "Q3 FY12 release",
+   "opex_guide_usd_b": [
+    28.3,
+    28.7
+   ],
+   "note": "'revising operating expense guidance downward'"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-04-20",
+   "source": "MS55",
+   "doc": "Q3 FY12 release (preliminary)",
+   "opex_guide_usd_b": [
+    30.3,
+    30.9
+   ],
+   "note": "'6% to 8% growth from the mid-point of fiscal year 2012 guidance'"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-07-20",
+   "source": "MS57",
+   "doc": "Q4 FY12 release",
+   "opex_guide_usd_b": [
+    30.3,
+    30.9
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-10-19",
+   "source": "MS59",
+   "doc": "Q1 FY13 release",
+   "opex_guide_usd_b": [
+    30.3,
+    30.9
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-01-25",
+   "source": "MS62",
+   "doc": "Q2 FY13 release",
+   "opex_guide_usd_b": [
+    30.3,
+    30.9
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-19",
+   "source": "MS64",
+   "doc": "Q3 FY13 release",
+   "opex_guide_usd_b": [
+    30.2,
+    30.5
+   ],
+   "note": "'Adjusting for the European Commission fine'"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-04-19",
+   "source": "MS64",
+   "doc": "Q3 FY13 release (preliminary)",
+   "opex_guide_usd_b": [
+    31.6,
+    32.2
+   ],
+   "note": "'4 to 6% growth from the mid-point of fiscal year 2013 adjusted guidance'"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-07-19",
+   "source": "MS66",
+   "doc": "Q4 FY13 release",
+   "opex_guide_usd_b": [
+    31.3,
+    31.9
+   ],
+   "note": "'revising operating expense guidance downward'"
   }
  ],
  "dividends": [
@@ -2386,9 +3713,67 @@
    "source": "MS52",
    "quarterly": 0.2,
    "note": "$0.20 quarterly, declared on September 20, 2011 (Q1 FY12 10-Q)"
+  },
+  {
+   "published": "2012-09-19",
+   "source": "MS61",
+   "quarterly": 0.23,
+   "note": "$0.23 quarterly, declared on September 18, 2012 (8-K of 2012-09-18)"
+  },
+  {
+   "published": "2013-10-25",
+   "source": "MS69",
+   "quarterly": 0.28,
+   "note": "$0.28 quarterly, declared on September 16, 2013 (Q1 FY14 10-Q)"
+  },
+  {
+   "published": "2014-09-17",
+   "source": "MS74",
+   "quarterly": 0.31,
+   "note": "$0.31 quarterly, declared on September 16, 2014 (8-K of 2014-09-17)"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "id": "MS58",
+   "published": "2012-07-27",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2012 10-K",
+   "heading": "Our increasing focus on devices and services presents execution and competitive risks.",
+   "risk_quote": "Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers. Pricing and delivery models are evolving.",
+   "margin_quote": "These costs may reduce the operating margins we have previously achieved.",
+   "risk_short": "'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'",
+   "offering": "We are devoting significant resources to develop and deploy our own competing cloud-based software plus services strategies.",
+   "offering_short": "'our own competing cloud-based software plus services strategies'"
+  },
+  {
+   "id": "MS67",
+   "published": "2013-07-31",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2013 10-K",
+   "heading": "Our increasing focus on services presents execution and competitive risks.",
+   "risk_quote": "Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers. Pricing and delivery models are evolving.",
+   "margin_quote": "These costs may reduce the operating margins we have previously achieved.",
+   "risk_short": "'Our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'",
+   "offering": "We are devoting significant resources to develop and deploy our own competing cloud-based strategies.",
+   "offering_short": "'our own competing cloud-based strategies'"
+  },
+  {
+   "id": "MS73",
+   "published": "2014-08-01",
+   "theme": "CLOUD",
+   "kind": "cloud_company_acknowledged",
+   "doc": "FY2014 10-K",
+   "heading": "Our increasing focus on services presents execution and competitive risks.",
+   "risk_quote": "At the same time, our competitors are rapidly developing and deploying cloud-based services for consumers and business customers. Pricing and delivery models are evolving.",
+   "margin_quote": "These costs will reduce the operating margins we have previously achieved.",
+   "risk_short": "'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'",
+   "offering": "We are devoting significant resources to develop and deploy our cloud-based strategies.",
+   "offering_short": "'our cloud-based strategies'"
+  }
+ ],
  "company_names": [],
  "splits": [
   {
