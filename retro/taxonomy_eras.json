@@ -1046,6 +1046,21 @@
     "term": "Microsoft Fabric",
     "first_seen": "2023-07-28",
     "note": "first in a Microsoft filing in its FY2023 10-K (accepted 2023-07-27 16:01 ET, dated the next trading day)"
+   },
+   {
+    "term": "Azure AI Foundry",
+    "first_seen": "2025-07-31",
+    "note": "first in a Microsoft filing in its FY2025 10-K (accepted 2025-07-30 16:11 ET, dated the next trading day)"
+   },
+   {
+    "term": "Agents and Infra",
+    "first_seen": "2026-09-03",
+    "note": "Microsoft's segment from fiscal 2027; first in a Microsoft filing in its 8-K of 2026-09-02 (accepted 16:30 ET, dated the next trading day)"
+   },
+   {
+    "term": "Microsoft Foundry",
+    "first_seen": "2026-10-22",
+    "note": "the renamed Azure AI Foundry; first in a Microsoft filing in its annual report of 2026-10-21 (ARS accepted 16:25 ET, dated the next trading day)"
    }
   ]
  }

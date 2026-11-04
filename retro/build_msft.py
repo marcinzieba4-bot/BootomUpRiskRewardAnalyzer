@@ -39,7 +39,11 @@ properties) and restructuring, so its FY17-FY19 figures replace GAAP and its con
 the reported revenue's (retro/README.md, "MSFT 2018-2020"). From the FY2021 10-K Item 6 is reserved: a vintage takes the three years of
 the 10-K's income statements and each earlier year from the latest 10-K that reports it. The 8-K of 2022-06-02 restates the fourth
 quarter's ranges in a filing after currency moves (revenue, operating income and EPS), so it is a next-quarter guide ('q_guide', the 2008
-encoding) until the Q4 FY22 print; GENAI joins the watch list from the FY2023 10-K (retro/README.md, "MSFT 2021-2023").
+encoding) until the Q4 FY22 print; GENAI joins the watch list from the FY2023 10-K (retro/README.md, "MSFT 2021-2023"). From the Q1
+FY26 release the company's non-GAAP figures exclude the impact from its investments in OpenAI, recurring net losses and gains rather
+than one-offs, so GAAP stands; the 8-K of 2026-09-02 restates the Q1 FY27 total revenue range in a filing (a quarter guide with revenue
+alone); from the FY2024 10-K the cloud competitor sentence and the margin sentence sit under different headings ('margin_heading'; text
+only; retro/README.md, "MSFT 2024-2026").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Most Microsoft earnings 8-Ks were accepted after the close (the webcast
@@ -267,9 +271,13 @@ def build(as_of, facts, raw, spx, engine, out):
         bits.append(f"{fy_now} ({ge['doc']}): " + ", ".join(fy_bits) + (f" ({ge['note']})" if ge.get("note") else ""))
     if gq:
         q = gq["q_guide"]
-        eq = q.get("eps_words") or f"${money(q['eps'][0])}-{money(q['eps'][1])}"
+        # a quarter guide may give revenue alone (the 8-K of 2026-09-02: cost and expense ranges, no operating income or EPS range;
+        # nothing is derived from them)
+        eq = q.get("eps_words") or (f"${money(q['eps'][0])}-{money(q['eps'][1])}" if "eps" in q else None)
+        rest = ((f", operating income {usd(*q['op_income_usd_b'])}" if "op_income_usd_b" in q else "") + (f", EPS {eq}" if eq else "")
+                or "; no operating income or EPS range in the filing")
         bits.append(f"{q['quarter']} ({gq['doc']}): revenue {usd(*q['sales_usd_b'])} ({pct_range(*fwd)} on {q['prior_label']}'s "
-                    f"${q['prior_sales_b']:.3f}B), operating income {usd(*q['op_income_usd_b'])}, EPS {eq}"
+                    f"${q['prior_sales_b']:.3f}B){rest}"
                     + (f" ({gq['note']})" if gq.get("note") and gq is not ge else ""))
     gx = next((g for g in reversed(guides) if "opex_guide_usd_b" in g), None)
     if gx:                                         # 2009-2011: operating expense ranges only, display only
@@ -282,8 +290,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # and the last numeric range of the year, if any, stands (the AAPL 2020 and NKE rule)
     on_call = (f"the {latest['quarter']} release gives guidance only on its conference call ('{latest['guide_on_call']}'), not a filing"
                if latest.get("guide_on_call") else None)
-    guide_text = ("Guide: " + "; ".join(bits) + ("; operating income ranges are display only (no margin guide)" if not gx else
-                                                  "; operating expense ranges are display only (no margin guide)")
+    op_ranges = any("op_income_guide_usd_b" in g or "op_income_usd_b" in g.get("q_guide", {}) for g in (ge, gq) if g)
+    guide_text = ("Guide: " + "; ".join(bits) + ("; operating expense ranges are display only (no margin guide)" if gx else
+                                                  "; operating income ranges are display only (no margin guide)" if op_ranges else
+                                                  "; no margin guide in numbers")
                   + (f"; {on_call}" if on_call else "")) if bits else \
                  (f"{fy_now}: no guide in a filing; {on_call}" if on_call else f"{fy_now}: no guide in scope yet")
     margin_guided = False                          # no operating-margin guide in numbers: no guided step
@@ -335,7 +345,11 @@ def build(as_of, facts, raw, spx, engine, out):
         val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
         stage = "cloud"
         watch = [{"theme": "CLOUD", "status": "live, company-acknowledged; no market read",
-                  "reason": (f"Live: Microsoft's own {e['doc']}, under '{e['heading']}', says '{e['risk_quote']}' and '{e['margin_quote']}' "
+                  # from the FY2024 10-K the competitor sentence sits under "Business model competition" and the margin sentence
+                  # under a cloud-and-AI risk factor of its own ('margin_heading')
+                  "reason": (f"Live: Microsoft's own {e['doc']}, under '{e['heading']}', says '{e['risk_quote']}'"
+                             + (f" and '{e['margin_quote']}' " if "margin_heading" not in e else
+                                f", and under '{e['margin_heading']}', '{e['margin_quote']}' ") +
                              f"It competes with cloud services of its own: '{e['offering']}' The stock trades at {close / eps_now:.1f}x "
                              f"{fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market "
                              "pricing cloud substitution of Microsoft's licensed software specifically.")}]

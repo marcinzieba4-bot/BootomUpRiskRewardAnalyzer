@@ -6427,6 +6427,151 @@ Judgement calls that could carry hindsight:
 - CLOUD kept on the watch list, with no dated evidence of the market pricing Microsoft (text only);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2021-2023 went; DURABLE (the class label only).
 
+### MSFT 2024-2026: the OpenAI impact at GAAP, a revenue guide in an investor-metrics deck, CHEAP for the first time since 2014
+
+```bash
+python3 retro/build_msft.py --weekly 2024-01-01 2026-10-30                  # 148 dates, 2024-01-05 .. 2026-10-30
+for c in 2024-07-01 2025-01-01 2025-07-01 2026-01-01 2026-07-01 2026-11-01; do python3 retro/tools/firewall.py $c MSFT; done
+```
+
+All 24 8-Ks and the 8-K/A filed from January 2024 to October 2026 were checked: the twelve earnings releases read in full, the other
+twelve 8-Ks and the 8-K/A read for guides, figures and dividend rates. The FY2024-FY2026 10-Ks were read for the history, the segments,
+the dividends and the risk factors, the nine 10-Qs from Q2 FY24 to Q1 FY27 for their dividends and accounting changes (none), and the
+FY2017-FY2019 10-Ks for the first year's diluted shares. 304 numbers of the prints, vintages, guide and dividends were matched by script to
+the rows of their cited filings, 116 strings were checked word for word with `verbatim.py` against their own filings, every year-ago
+figure was matched to the year-ago print (no differences), and the builder re-derives every print's signal values from its raw figures.
+Each source's date comes from EDGAR's acceptance time. Thresholds, signals and the engine are unchanged; the builder gained two display
+paths (a quarter guide with revenue alone; a cloud margin sentence under a heading of its own), decided on 2026-11-04 before any 2024-2026
+model was built, and the 835 dates of 2008-2023 rebuild byte-identical with them. Decided before any 2024-2026 outcome was computed:
+
+- **Three vintages, each filed minutes after its Q4 release.** The FY2024 10-K (accepted 2024-07-30 16:06 ET, three minutes after the
+  release; dated 2024-07-31), the FY2025 10-K (2025-07-30 16:11 ET; dated 2025-07-31) and the FY2026 10-K (2026-07-29 16:08 ET; dated
+  2026-07-30) each carry their year on the print's own date, so no weekly date sees a Q4 print's fiscal-year figures before the 10-K (the
+  three Q4 prints' fiscal-year EPS change nothing). Item 6 is reserved; each 10-K gives three income-statement years and each earlier year
+  comes from the latest 10-K that reports it (FY2016-FY2018 still from the FY2020 10-K's five-year summary). The history runs FY2015-FY2024,
+  FY2016-FY2025 and FY2017-FY2026; the first year's diluted shares are FY2015's 8,254M (the FY2017 10-K), FY2016's 8,013M (FY2018 10-K)
+  and FY2017's 7,832M (FY2019 10-K).
+- **FY2024-FY2026 at GAAP.** FY24 enters at $11.80 (the Q4 FY24 release publishes no adjusted figure). From the Q1 FY26 release the
+  company's non-GAAP figures exclude the "impact from investments in OpenAI": losses of $523 million, $939 million, $583 million and
+  $1,575 million in the quarters of FY25 ($0.49 for the year), then a $3.1 billion loss, a $7.6 billion net gain with the OpenAI
+  recapitalization, a $14 million loss and a $480 million gain in FY26 ($0.67 net for the year). That is an equity investee's result in every
+  quarter, not a one-off, so the company's FY25 $14.13 and FY26 $17.28 (first published in the Q4 FY26 release) are not figures excluding
+  only one-offs (the NKE FY2007 rule, as the Windows 10 deferral years of 2015-2017): FY25 stays at $13.64 and FY26 at $17.95. No year is
+  excluded: FY26's net gains ($4,963 million) are a fraction of its $133,749 million net income (the AVGO FY2018 mirror test). The tax
+  rates stay as the facts (FY26 19.4% on a pre-tax income that carries the gains): display only.
+- **Prints at GAAP but one.** The OpenAI impact sits in other income and expense, below operating income. The Q2 FY24 release gives Q2
+  FY23 excluding only the Q2 charge ($21,570M) against Q2 FY24's unadjusted $27,032M, which replaces GAAP for the year-ago quarter (the
+  PEP Q4 2007 rule; the Q2 FY23 print's own figure). Activision Blizzard is in the reported growth from Q2 FY24, as the acquired phone
+  business was in 2014.
+- **Growth excluding currency, from the releases:** +16% on Q2 FY24, +17%, +16%, +16%, +12%, +15%, +17%, +17%, +15%, +15%, +17% and +19% on
+  Q1 FY27. From Q3 FY26 the releases print one wide table, whose revenue row (no adjustment) gives the constant-currency growth.
+- **A quarter guide in an investor-metrics deck.** Every release gives guidance only on the call. Two 8-Ks restate a call's outlook in a
+  slide deck when the segments change. The 8-K of 2024-08-21 ("FY25 Investor Metrics") gives the Q1 FY25 ranges by segment only, "As
+  provided on July 30, 2024" and mechanically updated; no total is stated and none is derived, so it adds nothing (the segment rule). The 8-K
+  of 2026-09-02 ("FY27 Segments and Investor Metrics"; accepted 16:30 ET, dated 2026-09-03) states the Q1 FY27 outlook as provided on July
+  29, 2026, including "Total Company Revenue of $89.85 to $90.95 billion": a quarter's revenue range in a filing, entered as a next-quarter
+  guide (the 2008 encoding, as the 8-K of 2022-06-02): +15.7% to +17.1% on Q1 FY26's $77.673 billion from 2026-09-04 to 2026-10-23, in place
+  of Q4 FY26's +17%. It gives cost of revenue and operating expense ranges but no operating income or EPS range, and "Operating margin
+  Expected to remain relatively flat year-over-year" in words, so there is no margin step and nothing is derived; the builder shows a
+  quarter guide with revenue alone. FY26's $17.95 stays the FY27 anchor.
+- **No guide in a release; each year's anchor is the last full year's EPS:** FY23's $9.81 to 2024-07-26, FY24's $11.80 from 2024-08-01,
+  FY25's $13.64 from 2025-08-01 and FY26's $17.95 from 2026-07-31.
+- **Dividends,** each from the first filing that states the rate: $0.83 a quarter from the Q1 FY25 10-Q (declared September 16, 2024;
+  dated 2024-10-31), $0.91 from the Q1 FY26 10-Q (declared September 15, 2025; dated 2025-10-30) and $0.98 from the Q1 FY27 10-Q (declared
+  September 15, 2026; dated 2026-10-29). No 8-K states them; each 10-K restates the June rate ($0.75, $0.83, $0.91).
+- **CLOUD and GENAI stay on the watch list, in each 10-K's own words.** From the FY2024 10-K the cloud competitor sentence moves into
+  "Business model competition" ("Our competitors continue to develop and deploy cloud-based services for consumers and business customers,
+  and pricing and delivery models are evolving."; from FY2025 "We and our competitors continue to devote significant resources to
+  developing and deploying cloud-based strategies and services ..."), and the margin sentence sits under a risk factor of its own ("Our
+  focus on cloud-based and AI services presents execution and competitive risks." in FY2024 and FY2025, "Our cloud and AI strategy
+  requires substantial investments ..." in FY2026), so the CLOUD event carries that heading too (`margin_heading`, text only). The GENAI
+  event quotes the AI bullet of the same section (FY2024: "We expect AI technology and services to be a highly competitive and rapidly
+  evolving market, and new competitors continue to enter the market."; FY2025: "AI technology and services are a highly competitive and
+  rapidly evolving market ..."; FY2026 adds "Our AI offerings compete with AI products from hyperscalers, open-source offerings, and frontier
+  model providers, some of which are also current or potential partners.") and its open-source rivals ("using open source AI models", then
+  "developing, making available, or using AI models that are open"). No dated evidence in the registry or the fact sheet shows the market
+  pricing generative-AI substitution of Microsoft's software seats or search, and no press coverage is added (the ACN rule after 2023), so
+  GENAI is not re-filed: DURABLE, risk 2, stands; the theme signal stays with CLOUD.
+- **Segments** (display only): each 10-K's three segments; the FY2025 10-K's carry the recast of the 8-K of 2024-12-03 (Microsoft 365
+  commercial brought together in Productivity and Business Processes; "no impact on our consolidated balance sheets, consolidated income
+  statements, or consolidated cash flows statements"), so its growth runs on FY24 as recast. The FY27 two-segment structure (Agents and
+  Infra, Devices and Consumer; the 8-K of 2026-09-02) and its recast of the FY2026 10-K (the 8-K of 2026-10-28, dated 2026-10-29) add nothing
+  (the NKE 2009 rule): the bridge keeps the FY2026 10-K's three segments to the end of the range.
+- **Calendar.** All twelve releases came after the close (16:03-16:08 ET). The Q2 and Q4 FY24 releases came on Tuesdays (dated Wednesday;
+  the week's date Thursday 2024-02-01 and 2024-08-01), the Q3 FY24 release on Thursday 2024-04-25 (dated Friday 2024-04-26, the print's own
+  day, public before that day's open: the AAPL 2011 rule), and from Q1 FY25 every release on a Wednesday (dated Thursday; the week's date
+  Friday). Holiday weeks end on Thursdays: 2024-03-28, 2025-04-17, 2025-07-03, 2026-04-02, 2026-06-18 and 2026-07-02. The last date is
+  2026-10-30, the last complete week: the series was built on 2026-11-04, so a rebuild after the close of 2026-11-06 adds the week of
+  2026-11-02. The newest dates have no two-year outcome yet.
+- **Anachronism list:** Azure AI Foundry (the FY2025 10-K, 2025-07-31), Agents and Infra (the 8-K of 2026-09-02, dated 2026-09-03) and
+  Microsoft Foundry (the annual report of 2026-10-21, dated 2026-10-22) join `taxonomy_eras.json`, each dated from the first Microsoft filing
+  that uses it (EDGAR full-text search). "Devices and Consumer" is left out: the FY2014-FY2016 segments "Devices and Consumer Licensing" and
+  "Devices and Consumer Other" would match it. No model of any ticker contains the new terms, so no output changes.
+- **Adds nothing:** the cybersecurity incident 8-K and its 8-K/A (2024-01-19, 2024-03-08: no figure), the Cruise impairment (2024-12-11:
+  "approximately $800 million in the second quarter of fiscal year 2025 ... recorded in other income and expense", entering with the Q2
+  FY25 print, which publishes no figure without it), the OpenAI partnership blog with the Q1 FY26 release (2025-10-29: a stake "valued at
+  approximately $135 billion", "an incremental $250B of Azure services"; no guided number), the 2024-12-03 and 2026-10-28 segment recasts, the
+  officer and director 8-Ks (2025-01-22, 2025-09-30, 2026-05-14, 2026-06-05), the bylaws (2025-07-01), the annual meetings (2024-12-11,
+  2025-12-08 with the 2026 Stock Plan), and the 10-Qs beyond their dividends.
+
+Controls: altering one value of each print (its cash, its growth excluding currency, its call-only guidance words), each vintage (its "why"
+and its first-year EPS), the 8-K guide, each dividend and each CLOUD event (its quote and its margin heading) and GENAI event published from
+2024-01-01 changes no date before its publication and changes the first weekly date on or after it (55 of 58); the three Q4 prints'
+fiscal-year EPS change nothing, because each 10-K carries the year on the same date. No string or dollar figure of any print, vintage,
+guide, dividend, event or source appears in a model dated before it (698,561 checks over the 983 MSFT models; the hits are year-ago revenues
+that the later releases' wide tables repeat ($70,066M, $76,441M, $77,673M, each public a year earlier), the generic "Constant Currency" and
+a coincidence, "$29.63", a 2009 close, against the Q1 FY27 guide's "$29.6"). The firewall at 2024-07-01, 2025-01-01, 2025-07-01, 2026-01-01,
+2026-07-01 and 2026-11-01 changes no model before its cutoff. The 835 dates of 2008-2023 rebuild byte-identical, and no other ticker's file
+changed.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 104 dates, CHEAP on 33 and FAIR on 11.** AVOID on 89, BUY on 35, WATCHLIST on 17 and ACCUMULATE on 7. RICH on every date from
+  2024-01-05 to 2026-01-09 but 2025-04-04 and 2025-04-17 (FAIR, the April 2025 low); FAIR from 2026-01-16 to 2026-01-30; CHEAP from 2026-02-06,
+  the first CHEAP date since 2014-02-07, on 33 of the last 39 dates (FAIR on 2026-04-17, 2026-04-24, 2026-05-15, 2026-05-29, 2026-10-09 and
+  2026-10-16). The verdict is OVERVALUED on 104 dates, MODESTLY OVERVALUED on 5, FAIRLY VALUED on 11, MODESTLY UNDERVALUED on 15 and
+  UNDERVALUED on 13.
+- **The calls are less robust than in 2018-2020.** The tier agrees on 8 of the 8 variants on 51 dates, 7 on 63, 6 on 17 and 5 on 17; the
+  class on 8 on 75, 7 on 48, 6 on 6, 5 on 13, 4 on 4 and 3 on 2. The multiples one band richer or cheaper account for most of the
+  disagreement (the tier on 73 and 48 dates, the class on 52 and 25).
+- **EPS anchors on the last full year:** FY23's $9.81 from 2024-01-05 to 2024-07-26 (37.5-47.7x, the 98th-100th percentile of its own
+  range), FY24's $11.80 from 2024-08-01 to 2025-07-25 (30.5-43.5x, the 72nd-100th), FY25's $13.64 from 2025-08-01 to 2026-07-24
+  (26.2-38.4x, the 42nd-100th) and FY26's $17.95 from 2026-07-31 (25.9-29.8x, the 42nd-69th). The window's median P/E rose from 23.8x to
+  27.9x as the 2014-2016 multiples left it (27.0-27.3x on FY26's $17.95), its 75th percentile from 28.7x to 31.8x.
+- **The floor rose to the price.** The median of the calendar-year P/E lows was 20x on FY23's $9.81 ($196.20), 20-21x on FY24's $11.80
+  ($236.00-247.80), 21-22x on FY25's $13.64 ($286.44-300.08) and 21x on FY26's $17.95 ($376.95): the stock 18.9% to 138.3% above it.
+- **BEAR is -2.7%/yr to 2025-07-25 and flat from 2025-08-01** (FY15's $2.63 to FY16's recast $2.56, then no EPS decline in FY16-FY25 or
+  FY17-FY26: the 0% cap), at the 10th-percentile P/E: $158-379.
+- **BASE follows the quarter's growth plus a shrinking buyback** (1.3%/yr to 0.6%/yr): +13.3%/yr on Q1 FY24, +17.3% on Q2, +18.3% on Q3,
+  +17.1% on Q4 FY24 and Q1 FY25, +13.1% on Q2 FY25, +16.1% on Q3, +17.8% on Q4 FY25 and Q1 FY26, +15.8% on Q2 and Q3 FY26, +17.6% on Q4 FY26,
+  +17.0% on the 8-K's Q1 FY27 range and +19.6% on Q1 FY27. The BASE price ran $300-701, above the price on 59 dates. The growth factor read
+  -0.20 to +0.41 against a 13.6-14.9% median.
+- **BULL and XBULL:** BULL is the window's EPS CAGR (+15.7%/yr over FY14-FY23, floored at BASE on Q2 and Q3 FY24, +18.2% over FY15-FY24,
+  +20.4% over FY16-FY25, +20.7% over FY17-FY26); XBULL is FY19-FY21's +29.5%/yr throughout.
+- **Ratio B is infinite on 28 dates** (BULL below the price) and below 1 on 40 (0.31-0.97: 2025-04-04 and most dates from 2026-01-30); the
+  market composite 1.82-3.93 and the adjusted gap -1.81 to +0.83.
+- **The proxy composite** was 2.65 on Q2 FY24 (the gross margin +152bp at BULL), 2.45 on Q3 and Q4 FY24, 2.30 on Q1-Q3 FY25 (the operating
+  margin -100bp at BASE on Q1, revenue +12.3% and +13.3% at BASE on Q2 and Q3) and 2.45 from Q4 FY25 to Q1 FY27. Unearned revenue scored
+  BASE on every print (+4.4% to +16.2%) and the receivables gap BULL on every print.
+
+How far each call moves the classes (the 148 dates rebuilt with one encoding changed; no outcome consulted):
+- FY25 and FY26 at the company's OpenAI-adjusted $14.13 and $17.28, from the Q4 FY26 release that first gives them: 14 models move, 5
+  classes (CHEAP to FAIR on 2026-08-28, 2026-09-25, 2026-10-02, 2026-10-23 and 2026-10-30), 1 tier and 10 verdicts;
+- the 8-K of 2024-08-21's segment ranges summed into a Q1 FY25 guide ($63.80-64.80 billion, derived for the test only): 10 models, no change;
+- no quarter guide from the 8-K of 2026-09-02: 9 models, no change;
+- Q2 FY24's year-ago operating income at GAAP: 12 models, no change;
+- GENAI off the watch list: 118 models (text only), no change;
+- reported growth instead of constant currency on every print: 95 models, no class or tier, 11 verdicts.
+
+Judgement calls that could carry hindsight:
+- the OpenAI impact read as a recurring investment result, so FY25 and FY26 stay at GAAP with the recapitalization gains in (5 classes
+  move in August-October 2026 with the company's figures);
+- the 8-K of 2026-09-02 read as a quarter guide in a filing and the 8-K of 2024-08-21 as adding nothing, because one states a total and the
+  other only segments (no class moves either way);
+- GENAI kept on the watch list without re-filing: the 2025-2026 software derating is in the registry only as a hindsight note, and no press
+  coverage is added after 2023 (text only);
+- CLOUD kept on the watch list in each 10-K's restructured wording (text only);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2024-2026 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -6541,7 +6686,10 @@ What the gates enforce:
   FY2022 10-Ks and the 10-Qs to Q3 FY23 name AI only as Microsoft's own offerings and their risks, and the FY2023 10-K is the first to
   name "AI technology and services" as "a highly competitive and rapidly evolving market" and competitors "using open source AI models"
   among the business models Microsoft competes with. From 2023-08-04 MSFT carries GENAI on the watch list as well, company-acknowledged,
-  with no market read; the theme signal stays with CLOUD (the ACN CLOUD rule) ("MSFT 2021-2023").
+  with no market read; the theme signal stays with CLOUD (the ACN CLOUD rule) ("MSFT 2021-2023"). The FY2024-FY2026 10-Ks keep both, the
+  cloud competitor sentence now inside "Business model competition" beside the AI one, so CLOUD and GENAI stay on the list through 2026;
+  no dated evidence shows the market pricing generative-AI substitution of Microsoft's software seats or search, so neither is re-filed
+  ("MSFT 2024-2026").
 
 ## Workflow
 
