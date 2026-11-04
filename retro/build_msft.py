@@ -36,14 +36,17 @@ the FY2017 10-K's wording and CLOUD event ('text_published'); the Q1 FY18 print 
 any filing, so it is not comparable ('unearned_prior_m' null: the engine's not-reported path; retro/README.md, "MSFT 2015-2017"),
 as are Q2 and Q3 FY18. From the Q2 FY18 release the company's adjustments are tax items (the TCJA, the transfer of intangible
 properties) and restructuring, so its FY17-FY19 figures replace GAAP and its constant-currency revenue growth, labelled non-GAAP, is
-the reported revenue's (retro/README.md, "MSFT 2018-2020").
+the reported revenue's (retro/README.md, "MSFT 2018-2020"). From the FY2021 10-K Item 6 is reserved: a vintage takes the three years of
+the 10-K's income statements and each earlier year from the latest 10-K that reports it. The 8-K of 2022-06-02 restates the fourth
+quarter's ranges in a filing after currency moves (revenue, operating income and EPS), so it is a next-quarter guide ('q_guide', the 2008
+encoding) until the Q4 FY22 print; GENAI joins the watch list from the FY2023 10-K (retro/README.md, "MSFT 2021-2023").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Most Microsoft earnings 8-Ks were accepted after the close (the webcast
 at 2:30 p.m. Pacific), so a print is dated the next trading day; a Friday print is that week's date and meets its close, public
 before the open (release_time; the AAPL 2011 and AVGO 2021-2023 rules); a print dated earlier in the week dates its week the next
-trading day (Q2 FY09, Q2 FY11 and eight prints of 2018-2020 were public on a Thursday, Q4 FY14-FY16 and Q1 FY21 on a Wednesday,
-Q2 FY15 on a Tuesday).
+trading day (Q2 FY09, Q2 FY11 and eight prints of 2018-2020 were public on a Thursday, Q4 FY14-FY16, Q1 FY21 and the twelve prints
+of 2021-2023 on a Wednesday, Q2 FY15 on a Tuesday).
 
 Output goes to staging/retrospective/MSFT until the series is added to the archive (--out archive/retrospective/MSFT).
 
@@ -178,9 +181,12 @@ def build(as_of, facts, raw, spx, engine, out):
     # cloud risk factor (cloud_company_acknowledged) puts CLOUD on the watch list from the theme's live date, with the latest 10-K's
     # words (a 10-K's wording is replaced by the next 10-K's; a vintage that re-presents a 10-K's years keeps that 10-K's words and
     # event: 'text_published', the 8-K of 2017-08-03). Any other event kind needs its encoding decided first
+    # From the FY2023 10-K, the first Microsoft filing that names AI as a competitive market and competitors' open source AI models among
+    # the business models it competes with, GENAI (live from 2022-11-30) joins the watch list too (genai_company_acknowledged; retro/README.md,
+    # "MSFT 2021-2023")
     text_from = h.get("text_published", h["published"])
     events = [e for e in facts["events"] if e["published"] <= as_of and (text_from <= e["published"] or "doc" not in e)]
-    if any(e["kind"] != "cloud_company_acknowledged" for e in events):
+    if any(e["kind"] not in ("cloud_company_acknowledged", "genai_company_acknowledged") for e in events):
         sys.exit(f"{as_of}: the MSFT builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     themes = retro_tool.load_taxonomy()["themes"]
     events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
@@ -338,6 +344,17 @@ def build(as_of, facts, raw, spx, engine, out):
         sig_name = "Cloud: net effect on licensed software and services"
         trigger = "Customers move to competitors' cloud services faster than Microsoft's own cloud revenue grows"
         theme_summary = "cloud is live and company-acknowledged; no dated evidence ties the multiple to it"
+    # another live theme with company evidence joins the watch list; the theme signal and factors stay with the first (the ACN CLOUD
+    # rule, as PEP's GLP1). GENAI (live from 2022-11-30; generative AI substitutes software seats, search and other core products):
+    # company-acknowledged, no market read (the NKE and LOW rule), so text only; re-filing needs dated evidence of market pricing
+    for e in [e for e in events if e["kind"] == "genai_company_acknowledged"][-1:]:
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        watch.append({"theme": "GENAI", "status": "live, company-acknowledged; no market read",
+                      "reason": (f"Live: Microsoft's own {e['doc']}, under '{e['heading']}', says '{e['risk_quote']}' and that some "
+                                 f"companies compete with it '{e['rival_quote']}' ('{e['mimic_quote']}') It sells generative AI of its "
+                                 f"own: '{e['offering']}' The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as "
+                                 "DISRUPTION_EXPOSED (GENAI) only if dated evidence shows the market pricing generative-AI substitution "
+                                 "of Microsoft's software seats or search specifically.")})
     cat3 = (f"(3) The {fy_now} guide — " + bits[0] if ge else
             f"(3) The {fy_now} guide — operating expenses {usd(*gx['opex_guide_usd_b'])} only ({gx['doc']}); no revenue or EPS guide in numbers"
             if gx else f"(3) A {fy_now} guide — none in a filing: {on_call}" if on_call else f"(3) A {fy_now} guide — none in scope yet")

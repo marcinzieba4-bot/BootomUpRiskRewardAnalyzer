@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  MSFT  ·  Microsoft Corporation  ·  $314.04  ·  RETROSPECTIVE as of 2022-01-07
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.40  [OVERVALUED]
+  Point-in-time: 18 sources, latest published 2022-01-07; latest print Q1 FY22 (Oct 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenues, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Productivity and Busines  $    64.7  $  64.7  $  77.7      +0.0     +13.0
+    +16.2% revenues in FY21
+  Intelligent Cloud         $    72.1  $  72.1  $  86.6      +0.0     +14.5
+    +24.2% revenues in FY21
+  More Personal Computing   $    64.9  $  64.9  $  78.0      +0.0     +13.1
+    +12.1% revenues in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   201.7  $ 201.7  $ 242.3      +0.0     +40.6
+  FY2022E = FY21 $168.09B × (1 + 20.0%: no Q2 FY22 revenue guide, Q1 FY22 revenue ex-currency, applied to the year (no FY22 revenue guide in scope)); split pro rata to FY21 revenue by segment (FY2021 10-K)
+  Q1 FY22 (Oct 26): revenues $45.32B +22.0%; unearned revenue $41.02B +13.0%; receivables +19.7%;
+  gross margin 69.89% (-50.0bp); operating margin 44.66% (+192.8bp); EPS $2.71 vs $1.82
+  Billings: unearned revenue +13.0% (unearned revenue $38,465M + $2,550M long-term vs $33,476M + $2,829M a year earlier (the Q1 FY21 release)); revenue +22.0% as reported (revenue $45,317M vs $37,154M); 'Percentage Change Y/Y (non-GAAP) Constant Currency | 20%'; ex-currency +20% (the release: 'Percentage Change Y/Y (non-GAAP) Constant Currency' of 20% (22% reported); its non-GAAP revenue is the reported revenue (the one adjustment, the transfer of intangible properties, is a tax benefit)); Q1 FY22 EPS $2.71 including 'a $3.3 billion net income tax benefit' (non-GAAP $2.27)
+  FY22: no guide in a filing; the Q1 FY22 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+
+  FY2022E EPS check:  $201.7B × 42.3% pre-tax × (1−13.8%) ÷ 7.567B  =  $9.72  (FY2022E: no EPS guide in numbers, FY21's $7.97 stands)
+  FY2024E BEAR check: $201.7B × 42.3% ÷ 7.379B  =  $9.97  (scenario $7.55)
+  FY2024E BULL check: $242.3B × 42.7% ÷ 7.379B  =  $12.09  (scenario $11.72)
+  Every 1pp of pre-tax margin ≈ $0.23 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Unearned revenue growth            -35.0%   ≥-9.0%   ≥17.0%  ≥104.0%    +13.0%  ◦ BASE  ██░░
+  Gross margin change               -1020.0bp  ≥-460.0bp  ≥90.0bp  ≥270.0bp   -50.0bp  ◦ BASE  ██░░
+  Revenue growth                      +2.0%    ≥8.0%   ≥14.0%   ≥29.0%    +22.0%  ▲ BULL  ███░
+  Receivables growth less revenue   +41.0pp  ≤29.0pp  ≤16.0pp  ≤-12.0pp    -2.3pp  ▲ BULL  ███░
+  Operating margin change           -1000.0bp  ≥-510.0bp  ≥-30.0bp  ≥1210.0bp  +192.8bp  ▲ BULL  ███░
+  Cloud: net effect on licensed software and services   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.45 / 4.00
+  Market composite:   3.75 / 4.00  (back-solved from $314 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.35  →  Gap -1.40  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 revenue +17.5%, unearned revenue +12.7% (unearned revenue $44,141M at June 30, 2021 vs $39,180M (FY2021 10-K)); Q1 gross margin 69.89% (-50bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 39.4x FY22E vs a 19.9x 10-yr median (98th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q2 FY22 revenue guide, Q1 FY22 revenue ex-currency +20% vs a 11.5% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $130.62B, FY21 free cash flow $56.12B, dividend $2.48 a year, $27,385M of share repurchases and $16,521M of dividends paid in FY21  (+0.30 × 15%  =  +0.045)
+    +  Cloud services: 'our cloud-based strategies' — Microsoft sells them as well  (+0.20 × 10%  =  +0.020)
+    -  Cloud competition (FY2021 10-K): 'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Unearned revenue growth             +13.0%    -35.0%  -48.0%  Multi-year licensing renewals slow: b…
+  Gross margin change                -50.0bp  -1020.0bp  -970.0bp  Hardware and services mix dilutes sof…
+  Revenue growth                      +22.0%     +2.0%  -20.0%  PC shipments and IT budgets stall tog…
+  Receivables growth less revenue     -2.3pp   +41.0pp  +43.3pp  Receivables build ahead of revenue: c…
+  Operating margin change           +192.8bp  -1000.0bp  -1192.8bp  Operating costs keep growing into a s…
+  Cloud: net effect on licensed software and services    +2.0/4    +1.0/4  -1.0/4  Customers move to competitors' cloud …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$139  (model)  /  $95 (defined)
+  Bear probability (proxy model):  10.2%
+
+  KEY TRIGGER: unearned revenue went from +12.7% (Q4 FY21) to +13.0% (Q1 FY22);
+  the bear case needs a licensing recession that gross margin (-50.0bp now)
+  and receivables (-2.3pp against revenue) no longer absorb. A demand recession hits PC shipments and consumer sales first; the bear needs
+  it to spread to enterprise licensing renewals as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.97  (FY2022E: no EPS guide in numbers, FY21's $7.97 stands)
+  Min viable P/E at panic:          17x  [median of calendar-year P/E lows: 2012 10.2x, 2013 10.3x, 2014 13.2x, 2015 15.3x, 2016 15.6x, 2017 17.6x, 2018 19.8x, 2019 20.5x, 2020 23.5x, 2021 26.6x, 2022 39.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $135/share
+  Current $314 vs Updated EPP $135:  +132%  ⚠ far above floor — large drawdown room
+  Bear $95 vs Updated EPP $135:  -30%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Unearned revenue growth                     -9.0      -22.0   BASE floor (vs +13 now)
+  Gross margin change                       -460.0     -410.0   BASE floor (vs -50 now)
+  Revenue growth                               8.0      -14.0   BASE floor (vs +22 now)
+  Receivables growth less revenue             29.0      +31.3   BASE floor (vs -2 now)
+  Operating margin change                   -510.0     -702.8   BASE floor (vs +193 now)
+  Cloud: net effect on licensed software and services             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.97 × (1+19.2%)² = $11.33
+  At 19x P/E (conservative):  $215/share
+  + Cumul. dividends (2yr):  +$5.11/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $215  (▼99 from $314)
+  Conservative total return:  -30% over 2yr  = -15%/yr
+
+  19.2% EPS growth is what is left once the premium multiple (39.4x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2024E EPS of $16.26,
+  i.e. 42.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $212.03  –  $349.67  (at 74th pct of range)
+  Annual dividend:      $2.48/share  (yield 0.8%)
+  Realized vol (1yr):   21% annualized
+  Beta vs broad market: 1.17
+  1-sigma range (1yr):  $248  –  $380  ($314 ± 21%)
+  2-sigma range (1yr):  $182  –  $446
+  ────────────────────────────────────────────────────────────
+  Bear $95 requires:  ~3.3σ price move  (unusual — requires fundamental break)
+  A software company with a 1.2 beta: the stock is +48% off its January
+  low while unearned revenue went from +12.7% (Q4 FY21) to +13.0% (Q1 FY22).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        7.55  12.6x  $     95    10.2%      1.2%    +9.0pp  EPS -2.7%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE       11.72  19.9x  $    233    35.5%      4.3%   +31.2pp  EPS +21.2%/yr (Q1 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL       11.72  25.1x  $    294    45.6%     15.0%   +30.6pp  EPS +21.2%/yr (FY12-FY21 CAGR); P/E holds its 75th pct
+  XBULL      13.37  30.6x  $    409     8.6%     79.5%   -70.8pp  EPS +29.5%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct
+
+  Proxy EV (2yr): $262  /  Market EV: $380  /  Current: $314
+  Conservative EV (2yr, ④): $215 + $5.11 divs = $220 total value
+  Downside (→ Bear $95): 69.7%   Upside (→ Bull $294): -6.4%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $314 the market needs $415 in two years —
+  above the BULL case. That is a market composite of 3.75 against a model
+  read of 2.35: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +132%    -1.40  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.29x    +132%    -0.80  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +132%    -1.58  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +132%    -1.42  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +132%    -1.42  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +132%    -1.10  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +97%    -1.30  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +132%    -1.40  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY22 print (late January) — the next read on unearned revenue (+13.0% now) and the full-year guide
+  (2) Gross margin — -50.0bp in Q1 FY22: software against the hardware and online mix
+  (3) A FY22 guide — none in a filing: the Q1 FY22 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+  (4) Receivables — +19.7% against revenue +22.0% in Q1 FY22 (-2.3pp): volume licensing is billed ahead, collected later
+  (5) Capital return at 39x — $7,684M of share repurchases and $4,206M of dividends in the quarter: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $135  |  ADD below ~$198  |  TRIM above $294
+════════════════════════════════════════════════════════════════════════
+

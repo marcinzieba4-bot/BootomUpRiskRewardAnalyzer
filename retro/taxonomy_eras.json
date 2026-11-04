@@ -1011,6 +1011,41 @@
     "term": "Microsoft Teams",
     "first_seen": "2017-08-03",
     "note": "first in a Microsoft filing in its FY2017 10-K (accepted 2017-08-02 16:15 ET, dated the next trading day)"
+   },
+   {
+    "term": "Xbox Series X",
+    "first_seen": "2021-01-27",
+    "note": "first in a Microsoft filing in its Q2 FY21 10-Q (accepted 2021-01-26 16:09 ET, dated the next trading day)"
+   },
+   {
+    "term": "Windows 11",
+    "first_seen": "2021-07-30",
+    "note": "first in a Microsoft filing in its FY2021 10-K (accepted 2021-07-29 16:21 ET, dated the next trading day)"
+   },
+   {
+    "term": "Microsoft Viva",
+    "first_seen": "2021-07-30",
+    "note": "first in a Microsoft filing in its FY2021 10-K (accepted 2021-07-29 16:21 ET, dated the next trading day)"
+   },
+   {
+    "term": "Windows 365",
+    "first_seen": "2021-10-15",
+    "note": "first in a Microsoft filing in its proxy statement of 2021-10-14 (DEF 14A accepted 16:06 ET, dated the next trading day)"
+   },
+   {
+    "term": "Azure OpenAI",
+    "first_seen": "2022-10-27",
+    "note": "the Azure OpenAI Service; first in a Microsoft filing in its proxy statement of 2022-10-27 (DEF 14A accepted 09:05 ET, before the open)"
+   },
+   {
+    "term": "Bing Chat",
+    "first_seen": "2023-07-28",
+    "note": "first in a Microsoft filing in its FY2023 10-K (accepted 2023-07-27 16:01 ET, dated the next trading day)"
+   },
+   {
+    "term": "Microsoft Fabric",
+    "first_seen": "2023-07-28",
+    "note": "first in a Microsoft filing in its FY2023 10-K (accepted 2023-07-27 16:01 ET, dated the next trading day)"
    }
   ]
  }

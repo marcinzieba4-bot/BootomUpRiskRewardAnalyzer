@@ -1,0 +1,334 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MSFT",
+ "company": "Microsoft Corporation",
+ "as_of": "2021-04-01",
+ "price_date": "2021-04-01",
+ "price": 242.35,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); software signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Microsoft: 'We generate revenue by offering a wide range of cloud-based and other services to people and businesses; licensing and supporting an array of software products; designing, manufacturing, and selling devices; and delivering relevant online advertising to a global audience'; 'Our increasing focus on cloud-based services presents execution and competitive risks': 'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Business model competition': 'Some companies compete with us by modifying and then distributing open source software at little or no cost to end users'; 'We face intense competition across all markets for our products and services, which may lead to lower revenue or operating margins' (its own FY2020 10-K): a competition and business-model risk, not an obsolescence one",
+  "theme_watch": [
+   {
+    "theme": "CLOUD",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Microsoft's own FY2020 10-K, under 'Our increasing focus on cloud-based services presents execution and competitive risks.', says 'At the same time, our competitors are rapidly developing and deploying cloud-based services for consumers and business customers. Pricing and delivery models are evolving.' and 'These costs will reduce the operating margins we have previously achieved.' It competes with cloud services of its own: 'We are devoting significant resources to develop and deploy our cloud-based strategies.' The stock trades at 42.1x FY21E — a premium. Re-file as DISRUPTION_EXPOSED (CLOUD) only if dated evidence shows the market pricing cloud substitution of Microsoft's licensed software specifically."
+   }
+  ],
+  "evidence": [
+   "MS114"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Microsoft: 'We generate revenue by offering a wide range of cloud-based and other services to people and businesses; licensing and supporting an array of software products; designing, manufacturing, and selling devices; and delivering relevant online advertising to a global audience'; 'Our increasing focus on cloud-based services presents execution and competitive risks': 'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'; 'Business model competition': 'Some companies compete with us by modifying and then distributing open source software at little or no cost to end users'; 'We face intense competition across all markets for our products and services, which may lead to lower revenue or operating margins' (its own FY2020 10-K): a competition and business-model risk, not an obsolescence one. durable franchise (obsolescence risk 2/5); price rich; +180% to EPP floor; model-vs-market gap -1.42; conservative 2yr -42%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 86.4,
+  "epp_gap_pct": 180.5,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.45,
+  "sca": 0.1,
+  "adj_composite": 2.35,
+  "market_composite": 3.77,
+  "adj_gap": -1.42,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -42.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.31,
+    "pe": 11.9,
+    "price": 39,
+    "desc": "EPS -24.2%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 7.78,
+    "pe": 18.6,
+    "price": 145,
+    "desc": "EPS +16.3%/yr (Q2 rev ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 7.78,
+    "pe": 23.6,
+    "price": 184,
+    "desc": "EPS +16.3%/yr (FY11-FY20 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 8.73,
+    "pe": 30.2,
+    "price": 264,
+    "desc": "EPS +23.1%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.22,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.58,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.12,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.7,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 180.5,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -42.3,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "MSFT (retrospective, 2021-04-01) ✕ AVOID — Ratio B infx (83.9% downside to Bear $39 / +-24.1% upside to Bull $184) | Adj composite 2.35 vs market 3.77: gap -1.42 [OVERVALUED] | +180% above the EPP floor $86 (15x FY21E $5.76) | Conservative 2-yr case: -42.3% total (-21.1%/yr) | At 42.1x FY21E the 15% hurdle price $321 sits above the BULL case; unearned revenue +6.9% in Q2 FY21, forward revenues +15% (no Q3 FY21 revenue guide, Q2 FY21 revenue ex-currency); cloud is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "MS114",
+   "published": "2020-07-31",
+   "filed": "2020-07-30 20:44 ET (after the close)",
+   "title": "Microsoft FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020034944/msft-10k_20200630.htm",
+   "supports": "five-year summary FY2016-FY2020 (diluted EPS $5.76, $5.06, $2.13, $3.25, $2.56; revenue $143,015M-$91,154M); income statements FY2018-FY2020 (FY2020 diluted shares 7,683M); balance sheets June 30, 2019 and 2020; segment revenue FY2018-FY2020; cash flows; dividends declared ($0.51 on June 17, 2020); risk factors (cloud-based services, business model competition, competition); the server and network useful-life change for fiscal 2021"
+  },
+  {
+   "id": "MS108",
+   "published": "2019-08-02",
+   "filed": "2019-08-01 16:09 ET (after the close)",
+   "title": "Microsoft FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+   "supports": "five-year summary FY2015-FY2019 (diluted EPS $5.06, $2.13, $3.25, $2.56, $1.48; revenue $125,843M-$93,580M); income statements FY2017-FY2019 (FY2019 diluted shares 7,753M); balance sheets June 30, 2018 and 2019; segment revenue FY2017-FY2019; cash flows; dividends declared ($0.46 on June 12, 2019); risk factors (cloud-based services, business model competition, competition)"
+  },
+  {
+   "id": "MS102",
+   "published": "2018-08-03",
+   "filed": "2018-08-03 11:03 ET (during the session)",
+   "title": "Microsoft FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459018019062/msft-10k_20180630.htm",
+   "supports": "five-year summary FY2014-FY2018 (diluted EPS $2.13, $3.25, $2.56, $1.48, $2.63; revenue $110,360M-$86,833M; FY2016-FY2018 under the new revenue and lease standards); income statements FY2016-FY2018 (FY2018 diluted shares 7,794M); balance sheets June 30, 2017 and 2018; segment revenue FY2016-FY2018; cash flows; dividends declared ($0.42 on June 13, 2018); risk factors (cloud-based services, business model competition, competition)"
+  },
+  {
+   "id": "MS95",
+   "published": "2017-08-03",
+   "filed": "2017-08-02 16:15 ET (after the close)",
+   "title": "Microsoft FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459017014900/msft-10k_20170630.htm",
+   "supports": "five-year summary FY2013-FY2017 (diluted EPS $2.58, $2.63, $1.48, $2.10, $2.71; revenue $77,849M-$89,950M); income statements FY2015-FY2017 (FY2017 diluted shares 7,832M); balance sheets June 30, 2016 and 2017; segment revenue FY2015-FY2017; cash flows; dividends declared ($0.39 on June 13, 2017); risk factors (services, business model competition, competition); the expected effect of the new revenue and lease standards adopted July 1, 2017 (FY17 diluted EPS $3.25, FY16 $2.56; revenue $96,571M, $91,154M)"
+  },
+  {
+   "id": "MS88",
+   "published": "2016-07-29",
+   "filed": "2016-07-28 16:12 ET (after the close)",
+   "title": "Microsoft FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516662209/d187868d10k.htm",
+   "supports": "five-year summary FY2012-FY2016 (diluted EPS $2.00, $2.58, $2.63, $1.48, $2.10; revenue $73,723M-$85,320M); income statements FY2014-FY2016 (FY2016 diluted shares 8,013M); balance sheets June 30, 2015 and 2016; segment revenue FY2014-FY2016; cash flows; dividends declared ($0.36 on June 14, 2016); risk factors (services, business model competition, competition)"
+  },
+  {
+   "id": "MS80",
+   "published": "2015-07-31",
+   "filed": "2015-07-31 15:07 ET (during the session)",
+   "title": "Microsoft FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312515272806/d918813d10k.htm",
+   "supports": "five-year summary FY2011-FY2015 (diluted EPS $2.69, $2.00, $2.58, $2.63, $1.48; revenue $69,943M-$93,580M); income statements FY2013-FY2015 (FY2015 diluted shares 8,254M); balance sheets June 30, 2014 and 2015; segment revenue FY2013-FY2015; cash flows; dividends declared ($0.31 on June 9, 2015); risk factors (services, business model competition, competition)"
+  },
+  {
+   "id": "MS67",
+   "published": "2013-07-31",
+   "filed": "2013-07-30 16:14 ET (after the close)",
+   "title": "Microsoft FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513310206/d527745d10k.htm",
+   "supports": "five-year summary FY2009-FY2013 (diluted EPS $1.62, $2.10, $2.69, $2.00, $2.58; revenue $58,437M-$77,849M); income statements FY2011-FY2013 (FY2013 diluted shares 8,470M); balance sheets June 30, 2012 and 2013; segment revenue FY2012-FY2013; cash flows; dividends declared ($0.23 on June 12, 2013); risk factors (services, business model competition, competition)"
+  },
+  {
+   "id": "MS57",
+   "published": "2012-07-20",
+   "filed": "2012-07-19 16:06 ET (after the close)",
+   "title": "Microsoft Q4 FY12 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312512307447/d379850dex991.htm",
+   "supports": "Q4 FY12 and FY12 income statements, balance sheets and cash flows; the goodwill impairment and the Windows Upgrade Offer deferral; non-GAAP reconciliation (FY12 $2.78, FY11 as adjusted $2.64); operating expense guidance for FY2013 reaffirmed"
+  },
+  {
+   "id": "MS66",
+   "published": "2013-07-19",
+   "filed": "2013-07-18 16:07 ET (after the close)",
+   "title": "Microsoft Q4 FY13 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312513294305/d570922dex991.htm",
+   "supports": "Q4 FY13 and FY13 income statements, balance sheets and cash flows; the Surface RT charge and the Office Upgrade Offer recognition; non-GAAP reconciliation (FY13 $2.62, FY12 $2.78); operating expense guidance for FY2014"
+  },
+  {
+   "id": "MS79",
+   "published": "2015-07-22",
+   "filed": "2015-07-21 16:06 ET (after the close)",
+   "title": "Microsoft Q4 FY15 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312515258359/d89094dex991.htm",
+   "supports": "Q4 FY15 and FY15 income statements, balance sheets and cash flows; the phone impairment, integration and restructuring charges; non-GAAP reconciliation (FY15 $2.63, FY14 $2.64); constant-currency growth"
+  },
+  {
+   "id": "MS101",
+   "published": "2018-07-20",
+   "filed": "2018-07-19 16:02 ET (after the close)",
+   "title": "Microsoft Q4 FY18 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312518221458/d501766dex991.htm",
+   "supports": "Q4 FY18 and FY18 income statements, balance sheets and cash flows; the TCJA impacts and Q4 FY17's restructuring (non-GAAP reconciliation: FY18 $3.88, FY17 $3.29); constant-currency growth"
+  },
+  {
+   "id": "MS107",
+   "published": "2019-07-19",
+   "filed": "2019-07-18 16:03 ET (after the close)",
+   "title": "Microsoft Q4 FY19 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312519196501/d777737dex991.htm",
+   "supports": "Q4 FY19 and FY19 income statements, balance sheets and cash flows; the tax benefit of the transfer of intangible properties and the TCJA charge (non-GAAP reconciliation: FY19 $4.75, FY18 $3.88); constant-currency growth"
+  },
+  {
+   "id": "MS113",
+   "published": "2020-07-23",
+   "filed": "2020-07-22 16:03 ET (after the close)",
+   "title": "Microsoft Q4 FY20 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520197109/d941281dex991.htm",
+   "supports": "Q4 FY20 and FY20 income statements, balance sheets and cash flows; the store-closure charge; Q4 FY19's and FY19's tax items (non-GAAP reconciliation: FY19 $4.75); constant-currency growth"
+  },
+  {
+   "id": "MS115",
+   "published": "2020-10-28",
+   "filed": "2020-10-27 16:12 ET (after the close)",
+   "title": "Microsoft Q1 FY21 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520278410/d10535dex991.htm",
+   "supports": "Q1 FY21 income statement, balance sheet and cash flows; constant-currency growth"
+  },
+  {
+   "id": "MS116",
+   "published": "2020-10-28",
+   "filed": "2020-10-27 16:21 ET (after the close)",
+   "title": "Microsoft Q1 FY21 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020047996/msft-10q_20200930.htm",
+   "supports": "dividend of $0.56 declared on September 15, 2020; the effect of the useful-life change on Q1 FY21 operating income ($927 million) and EPS ($0.10)"
+  },
+  {
+   "id": "MS109",
+   "published": "2019-10-24",
+   "filed": "2019-10-23 16:06 ET (after the close)",
+   "title": "Microsoft Q1 FY20 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312519272562/d823675dex991.htm",
+   "supports": "Q1 FY20 income statement, balance sheet and cash flows; constant-currency growth"
+  },
+  {
+   "id": "MS117",
+   "published": "2021-01-27",
+   "filed": "2021-01-26 16:04 ET (after the close)",
+   "title": "Microsoft Q2 FY21 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312521017683/d65802dex991.htm",
+   "supports": "Q2 FY21 income statement, balance sheet and cash flows; constant-currency growth"
+  },
+  {
+   "id": "MS118",
+   "published": "2021-01-27",
+   "filed": "2021-01-26 16:09 ET (after the close)",
+   "title": "Microsoft Q2 FY21 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021002316/msft-10q_20201231.htm",
+   "supports": "the effect of the useful-life change on Q2 FY21 operating income ($787 million) and EPS ($0.09)"
+  },
+  {
+   "id": "MS111",
+   "published": "2020-01-30",
+   "filed": "2020-01-29 16:03 ET (after the close)",
+   "title": "Microsoft Q2 FY20 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312520018383/d875975dex991.htm",
+   "supports": "Q2 FY20 income statement, balance sheet and cash flows; Q2 FY19's TCJA charge (non-GAAP reconciliation); constant-currency growth"
+  },
+  {
+   "id": "MS29",
+   "published": "2003-02-03",
+   "filed": "2003-01-31 17:23 ET (after the close)",
+   "title": "Microsoft Q2 FY03 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000103221003000121/d10q.htm",
+   "supports": "'On January 16, 2003, the Company’s Board of Directors approved a two-for-one split on Microsoft’s common stock, payable to shareholders of record on January 27, 2003'"
+  },
+  {
+   "id": "A0",
+   "published": "2021-04-01",
+   "title": "Yahoo Finance daily prices, MSFT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MSFT/history",
+   "supports": "close $242.35 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-04"
+}
