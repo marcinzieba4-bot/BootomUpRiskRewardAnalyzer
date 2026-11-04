@@ -6131,6 +6131,143 @@ Judgement calls that could carry hindsight:
 - CLOUD kept on the watch list after its market-pricing date, with no dated evidence of the market pricing Microsoft (text only);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2015-2017 went; DURABLE (the class label only).
 
+### MSFT 2018-2020: the Tax Act and the intangible-property transfer as company figures, FY17 restated again, RICH throughout
+
+```bash
+python3 retro/build_msft.py --weekly 2018-01-01 2020-12-31                  # 157 dates, 2018-01-05 .. 2020-12-31
+for c in 2018-07-01 2019-01-01 2019-07-01 2020-01-01 2020-07-01 2021-01-01; do python3 retro/tools/firewall.py $c MSFT; done
+```
+
+All 29 8-Ks filed from January 2018 to December 2020 were checked: the twelve earnings releases read in full, the other 17 read for
+guides, figures and dividend rates. The FY2018-FY2020 10-Ks were read for the history, the segments, the dividends and the risk factors,
+the nine 10-Qs from Q2 FY18 to Q1 FY21 for their currency effects, dividends and accounting changes, and the FY2011-FY2013 10-Ks for the
+first year's diluted shares. 311 strings were checked word for word with `verbatim.py` against their own filings, the 57 quotes in the
+prints' notes, the vintages' "why" and the cloud events were each found in their own release, 10-Q or 10-K, every number of the prints
+and vintages was matched to its cited source, every year-ago figure to the year-ago print (the differences are Q2 and Q3 FY17 as
+restated under the new standards and FY17's restatement below), and the builder re-derives every print's signal values from its raw
+figures. Each source's date comes from EDGAR's acceptance time. Thresholds, signals, engine and builder logic are unchanged (the
+builder's docstring only); decided on 2026-11-04 before any 2018-2020 model was built:
+
+- **Three vintages.** The FY2018 10-K (accepted 2018-08-03 11:03 ET, during the session, so dated that day) gives FY2014-FY2018 (FY2016
+  on the new revenue and lease standards, FY2014-FY2015 as previously reported: the seam stays), the FY2019 10-K (2019-08-01 16:09 ET,
+  dated 2019-08-02) FY2015-FY2019 and the FY2020 10-K (2020-07-30 20:44 ET, dated Friday 2020-07-31; EDGAR files it 2020-07-30)
+  FY2016-FY2020. Each earlier year comes from the latest 10-K that reports it, so the history runs FY2009-FY2018, FY2010-FY2019 and
+  FY2011-FY2020; each Q4 print extends it for the weeks before its 10-K (FY2008-FY2018 on 2018-07-20 and 2018-07-27, FY2009-FY2019 on
+  2019-07-19 and 2019-07-26, FY2010-FY2020 on 2020-07-24). The first year's diluted shares: FY2009's 8,996M (the FY2011 10-K), FY2010's
+  8,927M (FY2012 10-K) and FY2011's 8,593M (FY2013 10-K).
+- **FY2018 at the company's $3.88, FY2017 restated to $3.29.** The Q4 FY18 release's "2018 As Adjusted (non-GAAP)" excludes only the
+  "Net TCJA Impact" ($13,696 million, $1.75 a share; GAAP $2.13), and its "2017 As Adjusted (non-GAAP)" only $306 million of
+  restructuring expenses (GAAP $3.25 on the new basis): figures excluding one-offs (the ACN rule), from 2018-07-20 (FY17 by `restates`,
+  as FY11 and FY14 before it) and in the FY2018-FY2020 vintages. A company figure exists, so the distorted-year exclusion (NKE FY2018,
+  where none was published) does not arise.
+- **FY2019 at the company's $4.75, FY2020 at GAAP $5.76.** The Q4 FY19 release's "2019 As Adjusted (non-GAAP)" excludes only the "Net Tax
+  Impact of Transfer of Intangible Properties" (a $2,567 million benefit, $0.33) and the TCJA's $157 million charge ($0.02; GAAP $5.06):
+  a figure excluding one-offs, benefits included (as FY11's tax settlement). FY20 has no adjusted figure: its $450 million store-closure
+  charge stays in, a fraction of the year's net income (the AAPL FY2003 test). FY16 stays at the recast's $2.56 (no adjusted figure on the
+  new basis). The tax rates stay as the facts (FY18 54.6% with the TCJA charge, FY19 10.2% with the transfer's benefit): they feed only
+  the display-only EPS check (as NKE FY18).
+- **Prints at GAAP but one.** Every other adjustment of the range sits below operating income (tax items), so operating income is the
+  same either way; Q4 FY18's release gives both quarters excluding only one-offs, $10,379M (no adjustment) against Q4 FY17's $7,988M
+  excluding only restructuring (GAAP $7,682M as restated), which replaces GAAP (the PEP Q4 2007 rule, as Q4 FY15). Year-ago quarters are
+  taken as each release shows them: Q2-Q4 FY18 run against Q2-Q4 FY17 restated under the new standards (EPS $0.80, $0.70 and $1.03;
+  $0.66, $0.61 and $0.83 first reported).
+- **Growth excluding currency, from the releases.** Every release states constant-currency revenue growth; the Q3 FY18 10-Q alone
+  states a consolidated effect ("a favorable foreign currency impact of 3%", the release's 16% less 3% = 13%). Six releases label the row
+  non-GAAP (Q2 FY18, Q4 FY18, Q2 FY19, Q4 FY19, Q2 FY20, Q4 FY20), but the same table's non-GAAP revenue is the reported revenue (every
+  adjustment is a tax item or restructuring below revenue), so its constant-currency growth is the reported revenue's. That differs from
+  2015-2017, where non-GAAP revenue removed the Windows 10 deferrals and its constant currency was not used; that rule stands for a
+  non-GAAP revenue that differs. The reads: +11% on Q2 FY18, +13%, +15%, +18%, +13%, +16%, +14%, +15%, +15%, +16%, +15% and +12% on Q1 FY21.
+- **Q2 and Q3 FY18 under the new standards.** No filing gives December 31, 2016 or March 31, 2017 on the new basis, so unearned revenue
+  is not comparable (null, the engine's not-reported path) and the receivables keep the year-ago releases' old-basis balances with the
+  caveat (the Q1 FY18 rule; gaps of +16.5pp and +18.0pp). From Q4 FY18 both are comparable (June 30, 2017 restated in the release).
+- **No guide in a filing.** Every release says guidance is given on the call (`guide_on_call`). The 8-K of 2020-02-26 (17:10 ET, dated
+  2020-02-27) quotes the Q2 FY20 call's More Personal Computing range ("between $10.75 and $11.15 billion") and says "we do not expect to
+  meet our More Personal Computing segment guidance ... All other components of our Q3 guidance remain unchanged": a segment's range is
+  not the quarter's revenue guide (the segment rule), it is withdrawn in the same filing, and the other components are in no filing, so
+  it adds nothing (as NIKE's update of 2020-02-04). Each year's anchor is the last full year's EPS: FY17's $3.25 to 2018-07-13, FY18's
+  $3.88 from 2018-07-20, FY19's $4.75 from 2019-07-19 and FY20's $5.76 from 2020-07-24.
+- **The useful-life change is an accounting estimate, not a one-off.** The FY2020 10-K: "it is estimated this change will increase our
+  fiscal year 2021 operating income by $2.7 billion"; the Q1 FY21 10-Q: "an increase in operating income of $927 million and net income
+  of $763 million, or $0.10 per both basic and diluted share". No company figure excludes it, so Q1 FY21 stays at GAAP with the effect in
+  its note, and an effect is not a guide: no margin step (nothing is derived). The Q3 FY20 release's "COVID-19 had minimal net impact on
+  the total company revenue" and the Q4 FY20 release's COVID-19 section are words with no figure to enter (the UNP 2020 rule).
+- **Dividends,** each from the first filing that states the rate: $0.46 a quarter from the Q1 FY19 10-Q (declared September 18, 2018;
+  dated 2018-10-25), $0.51 from the Q1 FY20 10-Q (declared September 18, 2019; dated 2019-10-24) and $0.56 from the Q1 FY21 10-Q
+  (declared September 15, 2020; dated 2020-10-28). No 8-K states them (the 8-Ks of 2018-09-19, 2019-09-19 and 2020-09-21 cover an
+  incentive plan, board changes and ZeniMax). Each 10-K restates the June rate.
+- **CLOUD stays on the watch list.** The FY2018-FY2020 10-Ks head the risk factor "Our increasing focus on cloud-based services presents
+  execution and competitive risks", with the same competitor, margin and offering sentences; each is an event. No dated evidence shows
+  the market pricing cloud substitution of Microsoft's licensed software, so the watch list stays, text only, and DURABLE, risk 2,
+  stands. No other theme in the registry is live for a software maker (GENAI from 2022-11-30).
+- **Segments** (display only): the FY2018, FY2019 and FY2020 10-Ks' three segments, none recast in the range.
+- **Calendar.** All twelve releases came after the close (16:02-16:12 ET). The eight Wednesday releases (Q2 FY18, Q1-Q3 FY19, Q1-Q4 FY20)
+  are dated Thursday, so the week's date is Friday; the three Thursday releases (Q3 and Q4 FY18, Q4 FY19) are dated Friday, the print's
+  own day; the Q1 FY21 release came on Tuesday 2020-10-27, dated Wednesday, so the week's date is Thursday 2020-10-29. Holiday weeks end
+  on Thursdays: 2018-03-29, 2019-04-18, 2020-04-09, 2020-07-02 and 2020-12-24; the range ends on Thursday 2020-12-31.
+- **Anachronism list:** TCJA (2017-11-13, its first EDGAR full-text hit, a third-party offering statement; Microsoft's first use is the
+  Q2 FY18 release and 10-Q) joins `taxonomy_eras.json` beside the Tax Cuts and Jobs Act. Only MSFT models from 2018 contain it, so no
+  output changes.
+- **Adds nothing:** GitHub (2018-06-04: "minimal dilution of less than 1 percent to earnings per share in fiscal years 2019 and 2020 on a
+  non-GAAP basis", not a current-year EPS and an effect, the UNP merger rule), ZeniMax (2020-09-21: "minimal impact to non-GAAP
+  operating income in fiscal years 2021 and 2022", words), the TikTok statement (2020-08-03), the Azure blog post (2020-03-31), the store
+  closures (2020-06-26: "a pre-tax charge of approximately $450M, or $0.05 per share", entering with the Q4 FY20 print), the debt exchange
+  offers (2020-04-30, 2020-05-14, 2020-06-01), the incentive plan (2018-09-19), the board and officer 8-Ks (2019-09-19, 2020-03-13,
+  2020-07-01, 2020-07-07), the annual meetings (2018-11-29, 2019-12-05, 2020-12-04), and the 10-Qs beyond their currency effects,
+  dividends and the useful-life change.
+
+Controls: altering one value of each print (its cash, its growth excluding currency, its call-only guidance words; Q2 and Q3 FY18's
+receivables caveat and unearned-revenue note), each Q4 print's fiscal-year EPS and the restated FY17, each vintage (its "why" and its
+first-year EPS), each dividend and each cloud event published from 2018-01-01 changes no date before its publication and changes the
+first weekly date on or after it (56 of 56). No string or dollar figure of any print, vintage, guide, dividend, event or source appears
+in a model dated before it (622,124 checks over the 679 MSFT models; the three new hits are coincidences: "$0.80 a year", FY11's
+dividend, and the 2008 guide ranges "EPS $0.51-0.53" and "$1.78-1.81"); the one later year in a new model is "fiscal 2021", the FY2020
+10-K's own words from 2020-07-31, when fiscal 2021 was current. The firewall at 2018-07-01, 2019-01-01, 2019-07-01, 2020-01-01,
+2020-07-01 and 2021-01-01 changes no model before its cutoff. The 522 dates of 2008-2017 rebuild byte-identical, and no other ticker's
+file changed.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH and AVOID on every date.** All 157 dates are RICH, AVOID and OVERVALUED, and all eight robustness variants agree on every one
+  (tier and class). The price ran from $87.18 (2018-03-23) to $228.91 (2020-08-28); at the COVID-19 low (2020-03-20, $137.35) the
+  multiple was 28.9x, the 94th percentile of its own range.
+- **EPS anchors on the last full year:** FY17's $3.25 from 2018-01-05 to 2018-07-13 (26.8-32.4x, the 98th-100th percentile of its own
+  range), FY18's $3.88 from 2018-07-20 to 2019-07-12 (25.3-35.8x, the 94th-100th), FY19's $4.75 from 2019-07-19 to 2020-07-17
+  (28.1-45.0x, the 94th-100th) and FY20's $5.76 from 2020-07-24 (34.8-39.7x, the 97th-100th). The window's median rose from 14.7x to
+  18.3x as the 2008-2010 multiples left it.
+- **The floor rose and stayed far below.** The median of the calendar-year P/E lows went from 10x (to 2018-11-16) to 11x, 13x (from
+  2019-01-04), 14x and 15x (from 2020-01-03): $32.50 on $3.25, $38.80-50.44 on $3.88, $61.75-71.25 on $4.75 and $86.40 on $5.76, the
+  stock 93-224% above it.
+- **BEAR is -24.2%/yr throughout** (FY11's $2.64 to FY12's $2.00), at the 10th-percentile P/E: $20-38.
+- **BASE follows the quarter's growth plus the buyback:** +13.1%/yr on Q1 and Q2 FY18, +15.1% on Q3 FY18, +16.6-17.0% on Q4 FY18,
+  +19.6% on Q1 FY19, +14.6% on Q2 FY19, +17.6% on Q3 FY19, +15.5-15.6% on Q4 FY19, +16.6% on Q1 and Q2 FY20, +17.6% on Q3 FY20,
+  +16.3-16.5% on Q4 FY20 and +13.3% on Q1 FY21; the BASE price ran $61-140, below the price on every date. The growth factor read +0.50
+  throughout (+0.42 on Q1 FY21).
+- **BULL and XBULL:** BULL is floored at BASE on every date (the window's EPS CAGR is lower); XBULL is FY09-FY11's +27.7%/yr to
+  2019-07-26, then FY16-FY18's +23.1% (the FY2019 10-K).
+- **Ratio B is infinite on 150 dates** (BULL below the price), finite on seven (11.11-454.56: late 2018 and 2020-03-20); the market
+  composite 3.71-3.93 and the adjusted gap -1.88 to -1.00.
+- **The proxy composite** was 2.00 on Q2 FY18, 2.30 on Q3 FY18, 2.65 on Q4 FY18 and Q1 FY19, 2.50 on Q2 FY19, 2.85 on Q3 FY19 (the
+  range's high: revenue, gross margin, operating margin, unearned revenue and receivables at BULL), 2.50 on Q4 FY19 and Q1 FY20, 2.70 on
+  Q2 FY20 (the gross margin +477bp at XBULL), 2.65 on Q3 FY20, 2.15 on Q4 FY20 (the gross margin -156bp and the operating margin -154bp,
+  the latter with the store-closure charge, both at BASE) and 2.50 on Q1 FY21. Unearned revenue scored BULL from Q4 FY18 to Q3 FY19 (+17.4% to
+  +22.7%) and BASE otherwise (Q2 and Q3 FY18 not comparable; +5.3% to +13.7% from Q4 FY19); the receivables gap BASE on Q2 and Q3 FY18
+  (the mixed bases) and BULL from Q4 FY18.
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed; no outcome consulted): none moves a class or a
+tier. FY18 at GAAP $2.13 (129 models move; the anchor's P/E 46.1-65.2x instead of 25.3-35.8x from 2018-07-20), FY17 kept at $3.25 (129),
+FY19 at GAAP $5.06 (77), reported growth where the constant-currency row is labelled non-GAAP (79) or on every print (143), Q4 FY18's
+operating income at GAAP (14), Q2 and Q3 FY18's unearned revenue against the old-basis balances (38), and CLOUD off the watch list (157,
+text only).
+
+Judgement calls that could carry hindsight:
+- the tax items read as one-offs, so the company's FY18 $3.88 and FY19 $4.75 replace GAAP (no class moves either way);
+- FY17 restated a second time, to the company's $3.29 on the new basis (no class moves);
+- constant-currency growth labelled non-GAAP read as the reported revenue's where the table's non-GAAP revenue is the reported revenue
+  (no class moves);
+- the 8-K of 2020-02-26 read as adding nothing: it withdraws a segment's call range, not a guide in a filing;
+- the useful-life change kept in Q1 FY21's GAAP figures, with no margin step from its expected effect;
+- CLOUD kept on the watch list, with no dated evidence of the market pricing Microsoft (text only);
+- the signals, unchanged since 2008 and chosen by a builder who knows how 2018-2020 went; DURABLE (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -6239,6 +6376,8 @@ What the gates enforce:
   market-pricing date (2015-04-23) lies after 2014, so DURABLE stands ("MSFT 2012-2014"). It stays on the list through 2017 in the
   FY2015-FY2017 10-Ks' words (from 2017-08-04 the FY2017 10-K's, kept by the recast vintage): the market-pricing date passes, but no
   dated evidence shows the market pricing cloud substitution of Microsoft's licensed software, so DURABLE stands ("MSFT 2015-2017").
+  The FY2018-FY2020 10-Ks head the risk factor "Our increasing focus on cloud-based services presents execution and competitive risks";
+  the status is unchanged through 2020 ("MSFT 2018-2020").
 
 ## Workflow
 

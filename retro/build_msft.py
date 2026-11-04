@@ -33,13 +33,17 @@ CLOUD (live from 2012-10-30 in retro/taxonomy_eras.json) joins the watch list fr
 From the Q1 FY16 release the company's non-GAAP figures also remove the Windows 10 revenue deferrals (revenue recognition), so GAAP
 stands. The 8-K of 2017-08-03 re-presents FY2016-FY2017 under the new revenue and lease standards: a vintage of its own that keeps
 the FY2017 10-K's wording and CLOUD event ('text_published'); the Q1 FY18 print has no year-ago unearned revenue on the new basis in
-any filing, so it is not comparable ('unearned_prior_m' null: the engine's not-reported path; retro/README.md, "MSFT 2015-2017").
+any filing, so it is not comparable ('unearned_prior_m' null: the engine's not-reported path; retro/README.md, "MSFT 2015-2017"),
+as are Q2 and Q3 FY18. From the Q2 FY18 release the company's adjustments are tax items (the TCJA, the transfer of intangible
+properties) and restructuring, so its FY17-FY19 figures replace GAAP and its constant-currency revenue growth, labelled non-GAAP, is
+the reported revenue's (retro/README.md, "MSFT 2018-2020").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings
 release, where it is the first trading day after it. Most Microsoft earnings 8-Ks were accepted after the close (the webcast
 at 2:30 p.m. Pacific), so a print is dated the next trading day; a Friday print is that week's date and meets its close, public
 before the open (release_time; the AAPL 2011 and AVGO 2021-2023 rules); a print dated earlier in the week dates its week the next
-trading day (Q2 FY09 and Q2 FY11 were public on a Thursday, Q4 FY14-FY16 on a Wednesday, Q2 FY15 on a Tuesday).
+trading day (Q2 FY09, Q2 FY11 and eight prints of 2018-2020 were public on a Thursday, Q4 FY14-FY16 and Q1 FY21 on a Wednesday,
+Q2 FY15 on a Tuesday).
 
 Output goes to staging/retrospective/MSFT until the series is added to the archive (--out archive/retrospective/MSFT).
 

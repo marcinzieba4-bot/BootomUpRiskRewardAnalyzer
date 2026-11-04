@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  MSFT  ·  Microsoft Corporation  ·  $128.90  ·  RETROSPECTIVE as of 2019-05-03
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.02  [OVERVALUED]
+  Point-in-time: 21 sources, latest published 2019-05-03; latest print Q3 FY19 (Apr 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E revenues, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2019E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Productivity and Busines  $    41.6  $  41.6  $  47.9      +0.0      +6.3
+    +20.1% revenues in FY18
+  Intelligent Cloud         $    37.4  $  37.4  $  43.0      +0.0      +5.6
+    +17.6% revenues in FY18
+  More Personal Computing   $    49.0  $  49.0  $  56.5      +0.0      +7.5
+    +7.6% revenues in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   128.0  $ 128.0  $ 147.4      +0.0     +19.4
+  FY2019E = FY18 $110.36B × (1 + 16.0%: no Q4 FY19 revenue guide, Q3 FY19 revenue ex-currency, applied to the year (no FY19 revenue guide in scope)); split pro rata to FY18 revenue by segment (FY2018 10-K)
+  Q3 FY19 (Apr 24): revenues $30.57B +14.0%; unearned revenue $28.14B +17.4%; receivables +12.0%;
+  gross margin 66.73% (+129.4bp); operating margin 33.83% (+290.8bp); EPS $1.14 vs $0.95
+  Billings: unearned revenue +17.4% (unearned revenue $24,251M + $3,884M long-term vs $21,370M + $2,585M a year earlier (the Q3 FY18 release)); revenue +14.0% as reported (revenue $30,571M vs $26,819M); 'Percentage Change Y/Y Constant Currency | 16%'; ex-currency +16% (the release: 'Percentage Change Y/Y Constant Currency' of 16% (14% reported)); Q3 FY19 EPS $1.14 against Q3 FY18's $0.95
+  FY19: no guide in a filing; the Q3 FY19 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+
+  FY2019E EPS check:  $128.0B × 33.0% pre-tax × (1−54.6%) ÷ 7.744B  =  $2.48  (FY2019E: no EPS guide in numbers, FY18's $3.88 stands)
+  FY2021E BEAR check: $128.0B × 33.0% ÷ 7.497B  =  $2.56  (scenario $2.23)
+  FY2021E BULL check: $147.4B × 33.4% ÷ 7.497B  =  $2.99  (scenario $5.37)
+  Every 1pp of pre-tax margin ≈ $0.08 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Unearned revenue growth            -35.0%   ≥-9.0%   ≥17.0%  ≥104.0%    +17.4%  ▲ BULL  ███░
+  Gross margin change               -1020.0bp  ≥-460.0bp  ≥90.0bp  ≥270.0bp  +129.4bp  ▲ BULL  ███░
+  Revenue growth                      +2.0%    ≥8.0%   ≥14.0%   ≥29.0%    +14.0%  ▲ BULL  ███░
+  Receivables growth less revenue   +41.0pp  ≤29.0pp  ≤16.0pp  ≤-12.0pp    -2.0pp  ▲ BULL  ███░
+  Operating margin change           -1000.0bp  ≥-510.0bp  ≥-30.0bp  ≥1210.0bp  +290.8bp  ▲ BULL  ███░
+  Cloud: net effect on licensed software and services   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.85 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $129 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.75  →  Gap -1.02  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 revenue +14.3%, unearned revenue +22.7% (unearned revenue $32,720M at June 30, 2018 vs $26,656M (FY2018 10-K)); Q3 gross margin 66.73% (+129bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 33.2x FY19E vs a 15.7x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q4 FY19 revenue guide, Q3 FY19 revenue ex-currency +16% vs a 6.9% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $131.62B, FY18 free cash flow $32.25B, dividend $1.84 a year, $10,721M of share repurchases and $12,699M of dividends paid in FY18  (+0.30 × 15%  =  +0.045)
+    +  Cloud services: 'our cloud-based strategies' — Microsoft sells them as well  (+0.20 × 10%  =  +0.020)
+    -  Cloud competition (FY2018 10-K): 'our competitors are rapidly developing and deploying cloud-based services for consumers and business customers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Unearned revenue growth             +17.4%    -35.0%  -52.4%  Multi-year licensing renewals slow: b…
+  Gross margin change               +129.4bp  -1020.0bp  -1149.4bp  Hardware and services mix dilutes sof…
+  Revenue growth                      +14.0%     +2.0%  -12.0%  PC shipments and IT budgets stall tog…
+  Receivables growth less revenue     -2.0pp   +41.0pp  +43.0pp  Receivables build ahead of revenue: c…
+  Operating margin change           +290.8bp  -1000.0bp  -1290.8bp  Operating costs keep growing into a s…
+  Cloud: net effect on licensed software and services    +2.0/4    +1.0/4  -1.0/4  Customers move to competitors' cloud …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$42  (model)  /  $23 (defined)
+  Bear probability (proxy model):  5.0%
+
+  KEY TRIGGER: unearned revenue went from +18.0% (Q2 FY19) to +17.4% (Q3 FY19);
+  the bear case needs a licensing recession that gross margin (+129.4bp now)
+  and receivables (-2.0pp against revenue) no longer absorb. A demand recession hits PC shipments and consumer sales first; the bear needs
+  it to spread to enterprise licensing renewals as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.88  (FY2019E: no EPS guide in numbers, FY18's $3.88 stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2009 10.7x, 2010 8.8x, 2011 9.0x, 2012 10.2x, 2013 10.3x, 2014 13.2x, 2015 15.3x, 2016 15.6x, 2017 17.6x, 2018 21.9x, 2019 25.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $50/share
+  Current $129 vs Updated EPP $50:  +156%  ⚠ far above floor — large drawdown room
+  Bear $23 vs Updated EPP $50:  -54%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Unearned revenue growth                     -9.0      -26.4   BASE floor (vs +17 now)
+  Gross margin change                       -460.0     -589.4   BASE floor (vs +129 now)
+  Revenue growth                               8.0       -6.0   BASE floor (vs +14 now)
+  Receivables growth less revenue             29.0      +31.0   BASE floor (vs -2 now)
+  Operating margin change                   -510.0     -800.8   BASE floor (vs +291 now)
+  Cloud: net effect on licensed software and services             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.88 × (1+15.6%)² = $5.19
+  At 15x P/E (conservative):  $78/share
+  + Cumul. dividends (2yr):  +$3.79/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $78  (▼51 from $129)
+  Conservative total return:  -37% over 2yr  = -18%/yr
+
+  15.6% EPS growth is what is left once the premium multiple (33.2x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2021E EPS of $8.34,
+  i.e. 46.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $92.92  –  $131.37  (at 94th pct of range)
+  Annual dividend:      $1.84/share  (yield 1.4%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 1.42
+  1-sigma range (1yr):  $96  –  $162  ($129 ± 25%)
+  2-sigma range (1yr):  $64  –  $194
+  ────────────────────────────────────────────────────────────
+  Bear $23 requires:  ~3.2σ price move  (unusual — requires fundamental break)
+  A software company with a 1.4 beta: the stock is +37% off its December
+  low while unearned revenue went from +18.0% (Q2 FY19) to +17.4% (Q3 FY19).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.23  10.5x  $     23     5.0%      1.2%    +3.8pp  EPS -24.2%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct
+  BASE        5.37  15.7x  $     84    17.6%      4.3%   +13.3pp  EPS +17.6%/yr (Q3 rev ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        5.37  19.6x  $    105    61.3%     15.0%   +46.3pp  EPS +17.6%/yr (FY09-FY18 CAGR); P/E holds its 75th pct
+  XBULL       6.32  24.8x  $    157    16.1%     79.5%   -63.3pp  EPS +27.7%/yr (best 2-yr run FY09-FY18); P/E at its 90th pct
+
+  Proxy EV (2yr): $106  /  Market EV: $144  /  Current: $129
+  Conservative EV (2yr, ④): $78 + $3.79 divs = $82 total value
+  Downside (→ Bear $23): 82.2%   Upside (→ Bull $105): -18.5%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $129 the market needs $170 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.75: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +156%    -1.02  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    24.61x    +156%    -0.64  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +156%    -1.18  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +156%    -1.02  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +156%    -1.02  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +156%    -0.72  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +108%    -1.02  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +156%    -1.02  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY19 print (late July) — the next read on unearned revenue (+17.4% now) and the full-year guide
+  (2) Gross margin — +129.4bp in Q3 FY19: software against the hardware and online mix
+  (3) A FY19 guide — none in a filing: the Q3 FY19 release gives guidance only on its conference call ('Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast'), not a filing
+  (4) Receivables — +12.0% against revenue +14.0% in Q3 FY19 (-2.0pp): volume licensing is billed ahead, collected later
+  (5) Capital return at 33x — $4,753M of share repurchases and $3,526M of dividends in the quarter: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $50  |  ADD below ~$71  |  TRIM above $105
+════════════════════════════════════════════════════════════════════════
+
