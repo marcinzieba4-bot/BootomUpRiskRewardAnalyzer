@@ -1,13 +1,14 @@
 # MSFT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MSFT weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the MSFT weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719). The 2008-2011 outcomes were computed on
-2026-11-03 and the 2012-2017 ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12 currency correction
+pushed (2008: 91273a1; 2009-2011: 26d3d5b; 2012-2014: 6bf73dc; 2015-2017: d81c719; 2018-2020: 567b23c). The 2008-2011 outcomes
+were computed on 2026-11-03 and the 2012-2020 ones on 2026-11-04; the eleven dates of 2011 rebuilt for the Q1 FY12 currency correction
 (retro/README.md, "MSFT 2012-2014") were re-scored on 2026-11-04 with unchanged values, and every 2009-2011 figure below still holds.
 The 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30), the 2009-2011 batch's by 2013-12-30 (2014-12-30), the
-2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29). Medians of an even count take the
-upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
+2012-2014 batch's by 2016-12-30 (2017-12-29), the 2015-2017 batch's by 2019-12-27 (2020-12-29), the 2018-2020 batch's by
+2022-12-30 (2023-12-29). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is
++32.2% over two years.
 
 ## 2008 (53 dates)
 
@@ -239,3 +240,47 @@ upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over 
   hindsight and must not decide the registry question (the theme's market-pricing date and whether it applies to Microsoft stay
   point-in-time questions, for the owner). The calls were decided before scoring and stay; changing a rule means a new method version
   tested elsewhere.
+
+## 2018-2020 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 157 | +95% | +1% to +137% | 133 | 154 | +64% | 3 |
+| legacy tier AVOID | 157 | +95% | +1% to +137% | 133 | 154 | +64% | 3 |
+| FY17's $3.25, the recast (2018-01-05 to 2018-07-13) | 28 | +90% | +47% to +113% | 28 | 28 | +54% | 0 |
+| FY18's $3.88, as adjusted (2018-07-20 to 2019-07-12) | 52 | +104% | +81% to +137% | 52 | 52 | +71% | 0 |
+| FY19's $4.75, as adjusted (2019-07-19 to 2020-07-17) | 53 | +106% | +27% to +134% | 49 | 53 | +73% | 0 |
+| FY20's GAAP $5.76 (2020-07-24 to 2020-12-31) | 24 | +17% | +1% to +42% | 4 | 21 | +34% | 3 |
+| 2018 | 52 | +94% | +47% to +131% | 52 | 52 | +55% | 0 |
+| 2019 | 52 | +114% | +94% to +137% | 52 | 52 | +76% | 0 |
+| 2020 | 53 | +37% | +1% to +122% | 29 | 50 | +47% | 3 |
+| verdict OVERVALUED | 157 | +95% | +1% to +137% | 133 | 154 | +64% | 3 |
+
+- **RICH held on 3 of 157 dates, all in late 2020.** MSFT returned +1% to +137% over two years (median +95%), cleared the hurdle on
+  133 dates and beat SPY on 154 (SPY -9% to +99%, median +35%). The call held only on 2020-10-16, 2020-10-29 and 2020-11-06 (entries
+  $204.72-223.72, 35.5-38.8x FY20's $5.76), whose two-year windows end in the 2022 decline: +1.1% to +17.5%, 0.2-9.8pp behind SPY. The
+  strongest two-year return was 2019-02-01's (+137.0%), the weakest 2020-11-06's (+1.1%). One-year returns had a median of +40% (+13.9%
+  to +75.8%); three-year returns ran from +44.7% to +246.2% (median +105.6%). Drawdowns within two years were 18.3-37.6%; no path went
+  below BEAR, and the two-year high passed BULL on every date. Across 2015-2020 the RICH reading held on 3 of the 305 dates that carried
+  it.
+- **The two-year price landed at XBULL on every date** (0.96-1.96 times XBULL; 1.31-2.67 times BULL, 1.64-3.29 times BASE). XBULL is
+  the best two-year EPS run of the history at the 90th-percentile P/E; the path ran above it on most dates. At the COVID-19 low
+  (2020-03-20, $137.35, 28.9x, the 94th percentile) the two-year return was +122%.
+- **The band never caught up.** The window's median rose from 14.7x to 18.3x while the stock traded at 25-45x, the 94th-100th percentile
+  on every date, and the EPS anchor moved from FY17's $3.29 to FY20's $5.76 (+20.5%/yr). Hypothesis, not a rule: a
+  ten-year own-history band lags a franchise whose earnings compound at about 20% a year by most of a decade, so it reads RICH for as
+  long as the compounding lasts, and the reading held only when the market itself fell (2022). The test belongs on other compounders'
+  long re-ratings, never on MSFT's own outcomes.
+- **Within an anchor period the price ranked the right way; across the range the calendar ranked the other way.** Spearman across the
+  157 dates, against the two-year return, the return to the m12-24 average price and the three-year return: the entry price -0.46, -0.25
+  and -0.85; the EPP gap -0.42, -0.63 and +0.28; the market composite -0.20, -0.25 and +0.04; the adjusted gap +0.22, +0.46 and +0.04; the
+  proxy composite +0.16, +0.41 and +0.02 (Ratio B -0.71, -0.46, -0.71 on its 7 finite values). The entry date ranks -0.40 against the
+  two-year return and -0.80 against the three-year, the mirror of 2015-2017 (+0.63, +0.73): late-2020 entries met 2022. Within the
+  anchor periods the entry price and the P/E rank -0.37 (FY18's $3.88), -0.85 (FY19's $4.75) and -0.67 (FY20's $5.76) against the
+  two-year return, and +0.35 on the 28 dates of FY17's $3.25: the higher the multiple within a period, the lower the return, as in
+  2012-2017. Hypothesis: the valuation inputs rank entries within an anchor period while the class misreads the level; keep testing the
+  split on other tickers.
+- **The encoding calls, seen afterwards.** No call moves a class or a tier in 2018-2020 (retro/README.md, "MSFT 2018-2020"): GAAP FY18
+  would have put the anchor at 46-65x instead of 25-36x on dates that returned +81% to +137%, and reported growth or GAAP FY19 change
+  only the scenario numbers. CLOUD changed only text; that Microsoft's own cloud kept growing is hindsight and stays out of the registry
+  question. The calls were decided before scoring and stay; changing a rule means a new method version tested elsewhere.
