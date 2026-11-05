@@ -266,3 +266,263 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2012-12-21 | $87.23 | Exxon Mobil Q3 2012 results | 1.65 | -0.59 | 1.14x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +13.3% | -36.4pp | +11.7% | ✓ |
 | 2012-12-28 | $85.10 | Exxon Mobil Q3 2012 results | 1.65 | -0.54 | 1.07x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +15.6% | -38.4pp | +14.4% | ✓ |
 | 2012-12-31 | $86.55 | Exxon Mobil Q3 2012 results | 1.65 | -0.59 | 1.12x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +13.4% | -37.4pp | +12.4% | ✓ |
+| 2013-01-11 | $89.61 | Exxon Mobil Q3 2012 results | 1.65 | -0.69 | 1.25x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +8.5% | -35.2pp | +8.3% | ✓ |
+| 2013-01-18 | $90.80 | Exxon Mobil Q3 2012 results | 1.65 | -0.73 | 1.30x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +6.0% | -34.7pp | +6.7% | ✓ |
+| 2013-01-25 | $91.73 | Exxon Mobil Q3 2012 results | 1.65 | -0.76 | 1.36x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +4.7% | -36.5pp | +5.5% | ✓ |
+| 2013-02-01 | $90.04 | Exxon Mobil Q4 2012 results | 1.80 | -0.22 | 0.92x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +2.8% | -33.8pp | +7.4% | ✗ |
+| 2013-02-08 | $88.61 | Exxon Mobil Q4 2012 results | 1.80 | -0.20 | 0.89x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +9.2% | -30.9pp | +9.1% | ✗ |
+| 2013-02-15 | $88.36 | Exxon Mobil Q4 2012 results | 1.80 | -0.20 | 0.88x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +11.6% | -31.0pp | +9.5% | ✗ |
+| 2013-02-22 | $89.20 | Exxon Mobil Q4 2012 results | 1.80 | -0.21 | 0.91x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +6.7% | -37.1pp | +8.4% | ✗ |
+| 2013-03-01 | $89.43 | Exxon Mobil Q4 2012 results | 1.80 | -0.27 | 1.04x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +4.9% | -38.3pp | +7.9% | ✗ |
+| 2013-03-08 | $88.97 | Exxon Mobil Q4 2012 results | 1.80 | -0.27 | 1.03x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +2.2% | -35.9pp | +8.3% | ✗ |
+| 2013-03-15 | $89.37 | Exxon Mobil Q4 2012 results | 1.80 | -0.28 | 1.06x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -0.2% | -36.5pp | +7.6% | ✗ |
+| 2013-03-22 | $89.29 | Exxon Mobil Q4 2012 results | 1.80 | -0.28 | 1.05x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +0.6% | -39.4pp | +7.5% | ✗ |
+| 2013-03-28 | $90.11 | Exxon Mobil Q4 2012 results | 1.80 | -0.29 | 1.08x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.4% | -37.4pp | +6.3% | ✗ |
+| 2013-04-05 | $89.01 | Exxon Mobil Q4 2012 results | 1.80 | -0.27 | 1.05x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +0.6% | -37.2pp | +7.3% | ✗ |
+| 2013-04-12 | $88.99 | Exxon Mobil Q4 2012 results | 1.80 | -0.28 | 1.06x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +2.1% | -34.9pp | +7.1% | ✗ |
+| 2013-04-19 | $87.45 | Exxon Mobil Q4 2012 results | 1.80 | -0.25 | 1.01x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +5.4% | -33.1pp | +8.7% | ✗ |
+| 2013-04-26 | $88.00 | Exxon Mobil Q1 2013 results | 1.85 | -0.29 | 1.03x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +4.8% | -33.6pp | +7.7% | ✗ |
+| 2013-05-03 | $90.02 | Exxon Mobil Q1 2013 results | 1.85 | -0.32 | 1.09x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +4.6% | -30.6pp | +5.0% | ✗ |
+| 2013-05-10 | $90.14 | Exxon Mobil Q1 2013 results | 1.85 | -0.32 | 1.10x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +3.9% | -30.2pp | +4.6% | ✗ |
+| 2013-05-17 | $91.76 | Exxon Mobil Q1 2013 results | 1.85 | -0.38 | 1.15x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.1% | -30.6pp | +2.4% | ✗ |
+| 2013-05-24 | $91.53 | Exxon Mobil Q1 2013 results | 1.85 | -0.37 | 1.16x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +0.4% | -32.9pp | +2.3% | ✗ |
+| 2013-05-31 | $90.47 | Exxon Mobil Q1 2013 results | 1.85 | -0.33 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +0.1% | -33.6pp | +3.3% | ✗ |
+| 2013-06-07 | $91.45 | Exxon Mobil Q1 2013 results | 1.85 | -0.37 | 1.16x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -2.0% | -33.7pp | +1.8% | ✗ |
+| 2013-06-14 | $90.58 | Exxon Mobil Q1 2013 results | 1.85 | -0.34 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.3% | -34.6pp | +2.4% | ✗ |
+| 2013-06-21 | $89.48 | Exxon Mobil Q1 2013 results | 1.85 | -0.32 | 1.09x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.2% | -36.1pp | +3.3% | ✗ |
+| 2013-06-28 | $90.35 | Exxon Mobil Q1 2013 results | 1.85 | -0.34 | 1.16x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.2% | -36.8pp | +1.9% | ✗ |
+| 2013-07-05 | $91.57 | Exxon Mobil Q1 2013 results | 1.85 | -0.38 | 1.20x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -3.3% | -35.2pp | +0.2% | ✗ |
+| 2013-07-12 | $93.40 | Exxon Mobil Q1 2013 results | 1.85 | -0.43 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -6.2% | -34.6pp | -2.2% | ✗ |
+| 2013-07-19 | $95.17 | Exxon Mobil Q1 2013 results | 1.85 | -0.48 | 1.35x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -7.5% | -37.6pp | -4.4% | ✗ |
+| 2013-07-26 | $94.79 | Exxon Mobil Q1 2013 results | 1.85 | -0.47 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -10.0% | -37.5pp | -4.5% | ✗ |
+| 2013-08-02 | $91.95 | Exxon Mobil Q2 2013 results | 1.70 | -0.58 | 1.22x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | -8.0% | -35.6pp | -2.0% | ✓ |
+| 2013-08-09 | $90.72 | Exxon Mobil Q2 2013 results | 1.70 | -0.54 | 1.17x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | -10.1% | -37.4pp | -1.2% | ✓ |
+| 2013-08-16 | $87.91 | Exxon Mobil Q2 2013 results | 1.70 | -0.49 | 1.09x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -4.6% | -35.5pp | +1.5% | ✗ |
+| 2013-08-23 | $87.52 | Exxon Mobil Q2 2013 results | 1.70 | -0.49 | 1.08x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -11.3% | -34.6pp | +1.4% | ✗ |
+| 2013-08-30 | $87.16 | Exxon Mobil Q2 2013 results | 1.70 | -0.28 | 1.07x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -7.6% | -34.0pp | +1.2% | ✗ |
+| 2013-09-06 | $87.25 | Exxon Mobil Q2 2013 results | 1.70 | -0.28 | 1.07x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -10.7% | -31.2pp | +0.6% | ✗ |
+| 2013-09-13 | $88.40 | Exxon Mobil Q2 2013 results | 1.70 | -0.50 | 1.11x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | -11.6% | -32.3pp | -1.2% | ✓ |
+| 2013-09-20 | $88.66 | Exxon Mobil Q2 2013 results | 1.70 | -0.50 | 1.12x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | -11.8% | -30.9pp | -2.0% | ✓ |
+| 2013-09-27 | $86.90 | Exxon Mobil Q2 2013 results | 1.70 | -0.28 | 1.06x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -9.4% | -28.2pp | -0.5% | ✗ |
+| 2013-10-04 | $86.32 | Exxon Mobil Q2 2013 results | 1.70 | -0.28 | 1.06x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -5.7% | -25.8pp | -0.3% | ✗ |
+| 2013-10-11 | $86.95 | Exxon Mobil Q2 2013 results | 1.70 | -0.28 | 1.08x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -2.5% | -25.4pp | -1.4% | ✗ |
+| 2013-10-18 | $87.55 | Exxon Mobil Q2 2013 results | 1.70 | -0.50 | 1.10x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +0.5% | -20.6pp | -2.3% | ✓ |
+| 2013-10-25 | $87.97 | Exxon Mobil Q2 2013 results | 1.70 | -0.50 | 1.11x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +0.6% | -21.8pp | -3.0% | ✓ |
+| 2013-11-01 | $89.82 | Exxon Mobil Q3 2013 results | 2.35 | +0.25 | 1.18x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.8% | -24.2pp | -5.3% | ✗ |
+| 2013-11-08 | $92.73 | Exxon Mobil Q3 2013 results | 2.35 | +0.16 | 1.29x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -3.7% | -26.6pp | -8.5% | ✗ |
+| 2013-11-15 | $95.27 | Exxon Mobil Q3 2013 results | 2.35 | +0.08 | 1.40x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -12.2% | -29.0pp | -11.3% | ✗ |
+| 2013-11-22 | $95.01 | Exxon Mobil Q3 2013 results | 2.35 | +0.09 | 1.39x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -10.1% | -30.2pp | -11.3% | ✗ |
+| 2013-11-29 | $93.48 | Exxon Mobil Q3 2013 results | 2.35 | +0.13 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -7.1% | -27.2pp | -10.1% | ✗ |
+| 2013-12-06 | $95.65 | Exxon Mobil Q3 2013 results | 2.35 | +0.07 | 1.42x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -11.7% | -31.9pp | -12.4% | ✗ |
+| 2013-12-13 | $95.31 | Exxon Mobil Q3 2013 results | 2.35 | +0.08 | 1.40x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -16.1% | -33.9pp | -12.4% | ✗ |
+| 2013-12-20 | $98.68 | Exxon Mobil Q3 2013 results | 2.35 | -0.03 | 1.63x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -16.0% | -30.6pp | -15.6% | ✗ |
+| 2013-12-27 | $101.51 | Exxon Mobil Q3 2013 results | 2.35 | -0.10 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | -16.4% | -32.6pp | -18.2% | ✓ |
+| 2014-01-03 | $99.51 | Exxon Mobil Q3 2013 results | 2.35 | -0.12 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -16.1% | -31.9pp | -16.8% | ✗ |
+| 2014-01-10 | $100.52 | Exxon Mobil Q3 2013 results | 2.35 | -0.14 | 1.73x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -20.1% | -28.7pp | -17.9% | ✗ |
+| 2014-01-17 | $99.16 | Exxon Mobil Q3 2013 results | 2.35 | -0.11 | 1.65x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -16.1% | -22.8pp | -17.1% | ✗ |
+| 2014-01-24 | $94.85 | Exxon Mobil Q3 2013 results | 2.35 | +0.02 | 1.44x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -13.4% | -24.4pp | -13.6% | ✗ |
+| 2014-01-31 | $92.16 | Exxon Mobil Q4 2013 results | 2.15 | -0.90 | 4.58x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.5% | -22.7pp | -11.3% | ✓ |
+| 2014-02-07 | $90.58 | Exxon Mobil Q4 2013 results | 2.15 | -0.86 | 4.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.1% | -15.2pp | -10.1% | ✓ |
+| 2014-02-14 | $94.11 | Exxon Mobil Q4 2013 results | 2.15 | -1.04 | 5.31x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.9% | -13.7pp | -13.7% | ✓ |
+| 2014-02-21 | $95.03 | Exxon Mobil Q4 2013 results | 2.15 | -1.05 | 5.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.2% | -16.0pp | -14.7% | ✓ |
+| 2014-02-28 | $96.27 | Exxon Mobil Q4 2013 results | 2.15 | -1.12 | 14.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.2% | -18.2pp | -15.9% | ✓ |
+| 2014-03-07 | $94.99 | Exxon Mobil Q4 2013 results | 2.15 | -1.10 | 11.41x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.1% | -15.9pp | -14.9% | ✓ |
+| 2014-03-14 | $93.47 | Exxon Mobil Q4 2013 results | 2.15 | -1.08 | 9.20x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.8% | -19.8pp | -13.6% | ✓ |
+| 2014-03-21 | $94.31 | Exxon Mobil Q4 2013 results | 2.15 | -1.09 | 10.31x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.3% | -19.7pp | -14.4% | ✓ |
+| 2014-03-28 | $97.70 | Exxon Mobil Q4 2013 results | 2.15 | -1.14 | 19.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.0% | -22.0pp | -17.4% | ✓ |
+| 2014-04-04 | $97.36 | Exxon Mobil Q4 2013 results | 2.15 | -1.14 | 17.75x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.8% | -23.8pp | -17.1% | ✓ |
+| 2014-04-11 | $96.72 | Exxon Mobil Q4 2013 results | 2.15 | -1.13 | 15.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.0% | -24.9pp | -16.6% | ✓ |
+| 2014-04-17 | $100.42 | Exxon Mobil Q4 2013 results | 2.15 | -1.18 | 54.06x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.7% | -25.6pp | -19.7% | ✓ |
+| 2014-04-25 | $100.41 | Exxon Mobil Q4 2013 results | 2.15 | -1.18 | 53.72x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.4% | -23.8pp | -19.7% | ✓ |
+| 2014-05-02 | $102.01 | Exxon Mobil Q1 2014 results | 2.15 | -1.20 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.1% | -22.0pp | -20.9% | ✓ |
+| 2014-05-09 | $101.95 | Exxon Mobil Q1 2014 results | 2.15 | -1.19 | 1739.00x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.2% | -22.2pp | -20.9% | ✓ |
+| 2014-05-16 | $100.74 | Exxon Mobil Q1 2014 results | 2.15 | -1.17 | 68.05x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.4% | -19.7pp | -19.9% | ✓ |
+| 2014-05-23 | $101.32 | Exxon Mobil Q1 2014 results | 2.15 | -1.18 | 126.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.9% | -18.1pp | -20.3% | ✓ |
+| 2014-05-30 | $100.53 | Exxon Mobil Q1 2014 results | 2.15 | -1.17 | 58.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.8% | -18.2pp | -19.6% | ✓ |
+| 2014-06-06 | $101.60 | Exxon Mobil Q1 2014 results | 2.15 | -1.18 | 61.86x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.4% | -18.8pp | -20.4% | ✓ |
+| 2014-06-13 | $102.65 | Exxon Mobil Q1 2014 results | 2.15 | -1.20 | 250.43x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.2% | -17.8pp | -21.1% | ✓ |
+| 2014-06-20 | $103.83 | Exxon Mobil Q1 2014 results | 2.15 | -1.21 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.7% | -17.1pp | -21.8% | ✓ |
+| 2014-06-27 | $101.21 | Exxon Mobil Q1 2014 results | 2.15 | -1.16 | 48.16x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.5% | -12.8pp | -19.7% | ✓ |
+| 2014-07-03 | $102.59 | Exxon Mobil Q1 2014 results | 2.15 | -1.18 | 213.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.9% | -13.1pp | -20.6% | ✓ |
+| 2014-07-11 | $101.74 | Exxon Mobil Q1 2014 results | 2.15 | -1.17 | 68.84x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.1% | -14.9pp | -19.7% | ✓ |
+| 2014-07-18 | $102.73 | Exxon Mobil Q1 2014 results | 2.15 | -1.19 | 324.93x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.1% | -15.8pp | -20.3% | ✓ |
+| 2014-07-25 | $103.18 | Exxon Mobil Q1 2014 results | 2.15 | -1.19 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.1% | -18.9pp | -20.4% | ✓ |
+| 2014-08-01 | $98.80 | Exxon Mobil Q2 2014 results | 2.15 | -1.03 | 10.22x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.3% | -24.4pp | -16.7% | ✓ |
+| 2014-08-08 | $99.74 | Exxon Mobil Q2 2014 results | 2.15 | -1.04 | 10.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.4% | -22.6pp | -17.3% | ✓ |
+| 2014-08-15 | $99.03 | Exxon Mobil Q2 2014 results | 2.15 | -1.03 | 9.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.5% | -21.7pp | -16.5% | ✓ |
+| 2014-08-22 | $98.50 | Exxon Mobil Q2 2014 results | 2.15 | -1.02 | 8.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.8% | -18.7pp | -15.8% | ✓ |
+| 2014-08-29 | $99.46 | Exxon Mobil Q2 2014 results | 2.15 | -1.04 | 9.89x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.9% | -18.8pp | -16.3% | ✓ |
+| 2014-09-05 | $99.26 | Exxon Mobil Q2 2014 results | 2.15 | -1.03 | 9.64x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.1% | -18.8pp | -15.9% | ✓ |
+| 2014-09-12 | $95.78 | Exxon Mobil Q2 2014 results | 2.15 | -0.97 | 6.61x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.8% | -15.7pp | -12.6% | ✓ |
+| 2014-09-19 | $97.12 | Exxon Mobil Q2 2014 results | 2.15 | -1.00 | 7.55x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.7% | -18.3pp | -13.5% | ✓ |
+| 2014-09-26 | $95.43 | Exxon Mobil Q2 2014 results | 2.15 | -0.96 | 6.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.9% | -19.5pp | -11.8% | ✓ |
+| 2014-10-03 | $93.92 | Exxon Mobil Q2 2014 results | 2.15 | -0.93 | 5.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.1% | -15.3pp | -10.1% | ✓ |
+| 2014-10-10 | $91.60 | Exxon Mobil Q2 2014 results | 2.15 | -0.76 | 4.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.9% | -15.1pp | -7.6% | ✓ |
+| 2014-10-17 | $91.21 | Exxon Mobil Q2 2014 results | 2.15 | -0.75 | 4.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.2% | -16.0pp | -7.1% | ✓ |
+| 2014-10-24 | $94.49 | Exxon Mobil Q2 2014 results | 2.15 | -0.94 | 5.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.9% | -15.6pp | -10.2% | ✓ |
+| 2014-10-31 | $96.71 | Exxon Mobil Q3 2014 results | 1.80 | -1.44 | 9.86x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.3% | -16.0pp | -12.2% | ✓ |
+| 2014-11-07 | $96.59 | Exxon Mobil Q3 2014 results | 1.80 | -1.44 | 9.70x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.2% | -15.3pp | -12.1% | ✓ |
+| 2014-11-14 | $95.09 | Exxon Mobil Q3 2014 results | 1.80 | -1.41 | 8.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.2% | -14.4pp | -10.6% | ✓ |
+| 2014-11-21 | $96.81 | Exxon Mobil Q3 2014 results | 1.80 | -1.44 | 9.99x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.6% | -15.3pp | -12.1% | ✓ |
+| 2014-11-28 | $90.54 | Exxon Mobil Q3 2014 results | 1.80 | -1.21 | 5.22x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.0% | -8.6pp | -5.9% | ✓ |
+| 2014-12-05 | $93.82 | Exxon Mobil Q3 2014 results | 1.80 | -1.39 | 7.05x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.5% | -10.9pp | -9.1% | ✓ |
+| 2014-12-12 | $86.60 | Exxon Mobil Q3 2014 results | 1.80 | -1.09 | 3.89x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +11.8% | -5.1pp | -1.2% | ✓ |
+| 2014-12-19 | $93.64 | Exxon Mobil Q3 2014 results | 1.80 | -1.39 | 6.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.8% | -10.6pp | -8.3% | ✓ |
+| 2014-12-26 | $93.21 | Exxon Mobil Q3 2014 results | 1.80 | -1.37 | 6.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.6% | -8.9pp | -7.7% | ✓ |
+| 2015-01-02 | $92.83 | Exxon Mobil Q3 2014 results | 1.80 | -1.26 | 6.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.5% | -9.5pp | -7.1% | ✓ |
+| 2015-01-09 | $92.10 | Exxon Mobil Q3 2014 results | 1.80 | -1.25 | 5.98x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.9% | -14.3pp | -6.1% | ✓ |
+| 2015-01-16 | $91.12 | Exxon Mobil Q3 2014 results | 1.80 | -1.22 | 5.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.2% | -15.7pp | -4.9% | ✓ |
+| 2015-01-23 | $90.89 | Exxon Mobil Q3 2014 results | 1.80 | -1.21 | 5.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.1% | -14.7pp | -4.5% | ✓ |
+| 2015-01-30 | $87.42 | Exxon Mobil Q3 2014 results | 1.80 | -1.11 | 4.12x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.8% | -14.7pp | -0.5% | ✓ |
+| 2015-02-03 | $92.25 | Exxon Mobil Q4 2014 results | 1.55 | -1.53 | 5.62x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.1% | -19.3pp | -5.6% | ✓ |
+| 2015-02-13 | $93.37 | Exxon Mobil Q4 2014 results | 1.55 | -1.56 | 6.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.8% | -19.9pp | -6.6% | ✓ |
+| 2015-02-20 | $89.92 | Exxon Mobil Q4 2014 results | 1.55 | -1.46 | 4.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.5% | -17.9pp | -3.1% | ✓ |
+| 2015-02-27 | $88.54 | Exxon Mobil Q4 2014 results | 1.55 | -1.46 | 5.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.2% | -17.9pp | -1.6% | ✓ |
+| 2015-03-06 | $85.63 | Exxon Mobil Q4 2014 results | 1.55 | -1.39 | 4.60x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.6% | -15.1pp | +1.8% | ✓ |
+| 2015-03-13 | $83.87 | Exxon Mobil Q4 2014 results | 1.55 | -1.33 | 4.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.1% | -15.6pp | +3.9% | ✓ |
+| 2015-03-20 | $84.54 | Exxon Mobil Q4 2014 results | 1.55 | -1.36 | 4.22x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.0% | -12.7pp | +3.1% | ✓ |
+| 2015-03-27 | $83.58 | Exxon Mobil Q4 2014 results | 1.55 | -1.33 | 3.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.3% | -13.6pp | +4.2% | ✓ |
+| 2015-04-02 | $84.30 | Exxon Mobil Q4 2014 results | 1.55 | -1.34 | 4.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.3% | -14.2pp | +3.3% | ✓ |
+| 2015-04-10 | $85.56 | Exxon Mobil Q4 2014 results | 1.55 | -1.39 | 4.57x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.1% | -12.2pp | +1.7% | ✓ |
+| 2015-04-17 | $86.93 | Exxon Mobil Q4 2014 results | 1.55 | -1.42 | 5.11x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.7% | -16.4pp | +0.1% | ✓ |
+| 2015-04-24 | $86.97 | Exxon Mobil Q4 2014 results | 1.55 | -1.42 | 5.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.1% | -16.2pp | -0.1% | ✓ |
+| 2015-05-01 | $88.85 | Exxon Mobil Q1 2015 results | 1.90 | -1.15 | 6.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.0% | -18.4pp | -2.3% | ✓ |
+| 2015-05-08 | $88.99 | Exxon Mobil Q1 2015 results | 1.90 | -1.15 | 6.16x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.2% | -17.6pp | -2.6% | ✓ |
+| 2015-05-15 | $87.35 | Exxon Mobil Q1 2015 results | 1.90 | -1.12 | 5.30x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.6% | -15.7pp | -1.0% | ✓ |
+| 2015-05-22 | $86.52 | Exxon Mobil Q1 2015 results | 1.90 | -1.09 | 4.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.0% | -14.6pp | -0.2% | ✓ |
+| 2015-05-29 | $85.20 | Exxon Mobil Q1 2015 results | 1.90 | -1.06 | 4.44x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.7% | -16.0pp | +1.2% | ✓ |
+| 2015-06-05 | $84.28 | Exxon Mobil Q1 2015 results | 1.90 | -1.04 | 4.14x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.1% | -18.4pp | +2.1% | ✓ |
+| 2015-06-12 | $84.02 | Exxon Mobil Q1 2015 results | 1.90 | -1.02 | 4.06x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.8% | -14.3pp | +2.2% | ✓ |
+| 2015-06-19 | $85.21 | Exxon Mobil Q1 2015 results | 1.90 | -1.06 | 4.45x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.1% | -16.2pp | +0.6% | ✓ |
+| 2015-06-26 | $83.86 | Exxon Mobil Q1 2015 results | 1.90 | -1.02 | 4.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.0% | -16.3pp | +2.0% | ✓ |
+| 2015-07-02 | $83.14 | Exxon Mobil Q1 2015 results | 1.90 | -1.01 | 3.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.3% | -16.7pp | +2.7% | ✓ |
+| 2015-07-10 | $82.22 | Exxon Mobil Q1 2015 results | 1.90 | -0.98 | 3.58x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.7% | -16.4pp | +3.5% | ✓ |
+| 2015-07-17 | $82.61 | Exxon Mobil Q1 2015 results | 1.90 | -0.99 | 3.68x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.1% | -14.7pp | +2.7% | ✓ |
+| 2015-07-24 | $79.94 | Exxon Mobil Q1 2015 results | 1.90 | -0.90 | 3.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.4% | -15.6pp | +5.8% | ✓ |
+| 2015-07-31 | $79.21 | Exxon Mobil Q2 2015 results | 1.90 | -0.88 | 2.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +8.0% | -13.6pp | +6.5% | ✓ |
+| 2015-08-07 | $76.83 | Exxon Mobil Q2 2015 results | 1.90 | -0.80 | 2.56x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +12.1% | -11.4pp | +9.6% | ✓ |
+| 2015-08-14 | $78.36 | Exxon Mobil Q2 2015 results | 1.90 | -0.85 | 2.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.5% | -14.5pp | +7.3% | ✓ |
+| 2015-08-21 | $72.13 | Exxon Mobil Q2 2015 results | 1.90 | -0.62 | 1.98x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +14.2% | -13.1pp | +16.3% | ✓ |
+| 2015-08-28 | $75.07 | Exxon Mobil Q2 2015 results | 1.90 | -0.74 | 2.32x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +9.9% | -17.4pp | +11.4% | ✓ |
+| 2015-09-04 | $72.46 | Exxon Mobil Q2 2015 results | 1.90 | -0.65 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +14.0% | -19.4pp | +15.2% | ✓ |
+| 2015-09-11 | $72.69 | Exxon Mobil Q2 2015 results | 1.90 | -0.65 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +17.3% | -14.0pp | +14.6% | ✓ |
+| 2015-09-18 | $72.68 | Exxon Mobil Q2 2015 results | 1.90 | -0.65 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +18.5% | -14.0pp | +14.4% | ✓ |
+| 2015-09-25 | $73.23 | Exxon Mobil Q2 2015 results | 1.90 | -0.67 | 2.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +18.8% | -15.1pp | +13.5% | ✓ |
+| 2015-10-02 | $75.88 | Exxon Mobil Q2 2015 results | 1.90 | -0.77 | 2.42x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +15.5% | -18.6pp | +9.4% | ✓ |
+| 2015-10-09 | $79.26 | Exxon Mobil Q2 2015 results | 1.90 | -0.88 | 2.96x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +11.1% | -19.6pp | +4.6% | ✓ |
+| 2015-10-16 | $82.48 | Exxon Mobil Q2 2015 results | 1.90 | -0.99 | 3.64x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.7% | -22.4pp | +0.4% | ✓ |
+| 2015-10-23 | $82.98 | Exxon Mobil Q2 2015 results | 1.90 | -1.00 | 3.77x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.5% | -20.3pp | -0.3% | ✓ |
+| 2015-10-30 | $82.74 | Exxon Mobil Q3 2015 results | 1.90 | -1.00 | 3.71x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +8.2% | -19.7pp | -0.0% | ✓ |
+| 2015-11-06 | $84.47 | Exxon Mobil Q3 2015 results | 1.90 | -1.04 | 4.20x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +6.3% | -21.4pp | -2.1% | ✓ |
+| 2015-11-13 | $78.10 | Exxon Mobil Q3 2015 results | 1.90 | -0.86 | 2.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +13.9% | -18.2pp | +5.8% | ✓ |
+| 2015-11-20 | $79.79 | Exxon Mobil Q3 2015 results | 1.90 | -0.91 | 3.05x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +8.5% | -19.3pp | +3.5% | ✓ |
+| 2015-11-27 | $81.23 | Exxon Mobil Q3 2015 results | 1.90 | -0.96 | 3.35x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.3% | -21.3pp | +1.5% | ✓ |
+| 2015-12-04 | $78.86 | Exxon Mobil Q3 2015 results | 1.90 | -0.88 | 2.88x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +13.6% | -16.8pp | +4.5% | ✓ |
+| 2015-12-11 | $74.34 | Exxon Mobil Q3 2015 results | 1.90 | -0.72 | 2.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +19.8% | -16.7pp | +10.7% | ✓ |
+| 2015-12-18 | $77.28 | Exxon Mobil Q3 2015 results | 1.90 | -0.84 | 2.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +15.1% | -23.6pp | +6.3% | ✓ |
+| 2015-12-24 | $79.33 | Exxon Mobil Q3 2015 results | 1.90 | -0.90 | 2.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +13.5% | -21.1pp | +3.3% | ✓ |
+| 2015-12-31 | $77.95 | Exxon Mobil Q3 2015 results | 1.90 | -0.85 | 2.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +15.0% | -20.4pp | +5.0% | ✓ |
+| 2016-01-08 | $74.69 | Exxon Mobil Q3 2015 results | 1.90 | -0.73 | 2.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +24.8% | -22.8pp | +9.6% | ✓ |
+| 2016-01-15 | $77.58 | Exxon Mobil Q3 2015 results | 1.90 | -0.85 | 2.67x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +20.6% | -32.4pp | +5.5% | ✓ |
+| 2016-01-22 | $76.57 | Exxon Mobil Q3 2015 results | 1.90 | -0.81 | 2.52x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +23.1% | -30.1pp | +6.9% | ✓ |
+| 2016-01-29 | $77.85 | Exxon Mobil Q3 2015 results | 1.90 | -0.85 | 2.71x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +20.8% | -31.0pp | +5.2% | ✓ |
+| 2016-02-03 | $78.48 | Exxon Mobil Q4 2015 results | 2.40 | -1.29 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +15.4% | -33.5pp | +4.4% | ✓ |
+| 2016-02-12 | $81.03 | Exxon Mobil Q4 2015 results | 2.40 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.8% | -45.4pp | +1.0% | ✓ |
+| 2016-02-19 | $82.50 | Exxon Mobil Q4 2015 results | 2.40 | -1.34 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.1% | -47.0pp | -0.9% | ✓ |
+| 2016-02-26 | $81.75 | Exxon Mobil Q4 2015 results | 2.40 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.9% | -43.4pp | -0.1% | ✓ |
+| 2016-03-04 | $82.29 | Exxon Mobil Q4 2015 results | 2.40 | -1.34 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.8% | -39.7pp | -0.9% | ✓ |
+| 2016-03-11 | $82.19 | Exxon Mobil Q4 2015 results | 2.40 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.9% | -44.0pp | -0.9% | ✓ |
+| 2016-03-18 | $84.20 | Exxon Mobil Q4 2015 results | 2.40 | -1.35 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.6% | -42.3pp | -3.5% | ✓ |
+| 2016-03-24 | $83.98 | Exxon Mobil Q4 2015 results | 2.40 | -1.35 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.0% | -37.6pp | -3.4% | ✓ |
+| 2016-04-01 | $82.96 | Exxon Mobil Q4 2015 results | 2.40 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.7% | -34.4pp | -2.4% | ✓ |
+| 2016-04-08 | $83.21 | Exxon Mobil Q4 2015 results | 2.40 | -1.34 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.7% | -34.3pp | -2.9% | ✓ |
+| 2016-04-15 | $84.97 | Exxon Mobil Q4 2015 results | 2.40 | -1.35 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.2% | -33.4pp | -5.0% | ✓ |
+| 2016-04-22 | $87.53 | Exxon Mobil Q4 2015 results | 2.40 | -1.38 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.8% | -34.9pp | -7.8% | ✓ |
+| 2016-04-29 | $88.40 | Exxon Mobil Q1 2016 results | 2.05 | -1.73 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.1% | -38.9pp | -8.8% | ✓ |
+| 2016-05-06 | $88.51 | Exxon Mobil Q1 2016 results | 2.05 | -1.73 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.2% | -40.1pp | -9.0% | ✓ |
+| 2016-05-13 | $88.66 | Exxon Mobil Q1 2016 results | 2.05 | -1.73 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.4% | -39.2pp | -9.2% | ✓ |
+| 2016-05-20 | $89.74 | Exxon Mobil Q1 2016 results | 2.05 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.6% | -39.2pp | -10.3% | ✓ |
+| 2016-05-27 | $90.01 | Exxon Mobil Q1 2016 results | 2.05 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.7% | -39.6pp | -10.6% | ✓ |
+| 2016-06-03 | $88.37 | Exxon Mobil Q1 2016 results | 2.05 | -1.72 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.4% | -35.0pp | -9.0% | ✓ |
+| 2016-06-10 | $89.98 | Exxon Mobil Q1 2016 results | 2.05 | -1.73 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.3% | -37.2pp | -10.6% | ✓ |
+| 2016-06-17 | $90.72 | Exxon Mobil Q1 2016 results | 2.05 | -1.73 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.3% | -43.1pp | -11.3% | ✓ |
+| 2016-06-24 | $89.39 | Exxon Mobil Q1 2016 results | 2.05 | -1.72 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.1% | -42.0pp | -10.0% | ✓ |
+| 2016-07-01 | $93.84 | Exxon Mobil Q1 2016 results | 2.05 | -1.77 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.3% | -39.1pp | -14.3% | ✓ |
+| 2016-07-08 | $93.54 | Exxon Mobil Q1 2016 results | 2.05 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.4% | -39.4pp | -14.0% | ✓ |
+| 2016-07-15 | $95.12 | Exxon Mobil Q1 2016 results | 2.05 | -1.75 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.0% | -39.9pp | -15.4% | ✓ |
+| 2016-07-22 | $94.01 | Exxon Mobil Q1 2016 results | 2.05 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.9% | -40.0pp | -14.3% | ✓ |
+| 2016-07-29 | $88.95 | Exxon Mobil Q2 2016 results | 2.05 | -1.66 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.0% | -35.0pp | -9.4% | ✓ |
+| 2016-08-05 | $87.56 | Exxon Mobil Q2 2016 results | 2.05 | -1.64 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.4% | -35.7pp | -8.0% | ✓ |
+| 2016-08-12 | $87.85 | Exxon Mobil Q2 2016 results | 2.05 | -1.65 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.5% | -36.5pp | -8.2% | ✓ |
+| 2016-08-19 | $87.80 | Exxon Mobil Q2 2016 results | 2.05 | -1.64 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.8% | -38.6pp | -8.2% | ✓ |
+| 2016-08-26 | $87.27 | Exxon Mobil Q2 2016 results | 2.05 | -1.63 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.6% | -38.4pp | -7.6% | ✓ |
+| 2016-09-02 | $87.42 | Exxon Mobil Q2 2016 results | 2.05 | -1.63 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.2% | -38.5pp | -7.6% | ✓ |
+| 2016-09-09 | $86.84 | Exxon Mobil Q2 2016 results | 2.05 | -1.62 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.4% | -37.9pp | -7.0% | ✓ |
+| 2016-09-16 | $84.03 | Exxon Mobil Q2 2016 results | 2.05 | -1.59 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +6.1% | -34.2pp | -3.8% | ✓ |
+| 2016-09-23 | $83.45 | Exxon Mobil Q2 2016 results | 2.05 | -1.58 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +9.5% | -30.2pp | -3.0% | ✓ |
+| 2016-09-30 | $87.28 | Exxon Mobil Q2 2016 results | 2.05 | -1.63 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.5% | -34.4pp | -7.2% | ✓ |
+| 2016-10-07 | $86.74 | Exxon Mobil Q2 2016 results | 2.05 | -1.61 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.6% | -32.8pp | -6.5% | ✓ |
+| 2016-10-14 | $86.54 | Exxon Mobil Q2 2016 results | 2.05 | -1.61 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.2% | -32.9pp | -6.2% | ✓ |
+| 2016-10-21 | $86.62 | Exxon Mobil Q2 2016 results | 2.05 | -1.61 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.8% | -31.9pp | -6.4% | ✓ |
+| 2016-10-28 | $84.78 | Exxon Mobil Q3 2016 results | 1.85 | -1.77 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.2% | -30.7pp | -4.4% | ✓ |
+| 2016-11-04 | $83.57 | Exxon Mobil Q3 2016 results | 1.85 | -1.66 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.5% | -29.6pp | -3.1% | ✓ |
+| 2016-11-11 | $85.67 | Exxon Mobil Q3 2016 results | 1.85 | -1.78 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.7% | -31.1pp | -5.6% | ✓ |
+| 2016-11-18 | $85.28 | Exxon Mobil Q3 2016 results | 1.85 | -1.78 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.0% | -29.8pp | -5.2% | ✓ |
+| 2016-11-25 | $87.12 | Exxon Mobil Q3 2016 results | 1.85 | -1.80 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.1% | -29.4pp | -7.3% | ✓ |
+| 2016-12-02 | $87.04 | Exxon Mobil Q3 2016 results | 1.85 | -1.79 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.4% | -31.4pp | -7.3% | ✓ |
+| 2016-12-09 | $89.00 | Exxon Mobil Q3 2016 results | 1.85 | -1.82 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.7% | -26.4pp | -9.4% | ✓ |
+| 2016-12-16 | $91.18 | Exxon Mobil Q3 2016 results | 1.85 | -1.84 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -10.2% | -29.7pp | -11.7% | ✓ |
+| 2016-12-23 | $90.71 | Exxon Mobil Q3 2016 results | 1.85 | -1.84 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -18.0% | -29.0pp | -11.5% | ✓ |
+| 2016-12-30 | $90.26 | Exxon Mobil Q3 2016 results | 1.85 | -1.83 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -17.5% | -32.8pp | -11.4% | ✓ |
+| 2017-01-06 | $88.50 | Exxon Mobil Q3 2016 results | 1.85 | -1.81 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -12.5% | -27.9pp | -9.9% | ✓ |
+| 2017-01-13 | $86.35 | Exxon Mobil Q3 2016 results | 1.85 | -1.78 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.7% | -28.1pp | -8.0% | ✓ |
+| 2017-01-20 | $85.89 | Exxon Mobil Q3 2016 results | 1.85 | -1.77 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.7% | -29.6pp | -7.8% | ✓ |
+| 2017-01-27 | $85.51 | Exxon Mobil Q3 2016 results | 1.85 | -1.77 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.8% | -29.2pp | -7.8% | ✓ |
+| 2017-02-01 | $82.94 | Exxon Mobil Q4 2016 results | 1.85 | -1.79 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.9% | -23.9pp | -5.2% | ✓ |
+| 2017-02-10 | $82.52 | Exxon Mobil Q4 2016 results | 1.85 | -1.77 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.6% | -23.7pp | -4.9% | ✓ |
+| 2017-02-17 | $81.76 | Exxon Mobil Q4 2016 results | 1.85 | -1.75 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.8% | -19.4pp | -4.0% | ✓ |
+| 2017-02-24 | $81.08 | Exxon Mobil Q4 2016 results | 1.85 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.6% | -17.5pp | -3.1% | ✓ |
+| 2017-03-03 | $82.46 | Exxon Mobil Q4 2016 results | 1.85 | -1.75 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.7% | -17.0pp | -4.7% | ✓ |
+| 2017-03-10 | $81.61 | Exxon Mobil Q4 2016 results | 1.85 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.6% | -15.0pp | -3.6% | ✓ |
+| 2017-03-17 | $82.00 | Exxon Mobil Q4 2016 results | 1.85 | -1.75 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.5% | -17.4pp | -3.9% | ✓ |
+| 2017-03-24 | $81.23 | Exxon Mobil Q4 2016 results | 1.85 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +6.9% | -16.8pp | -2.8% | ✓ |
+| 2017-03-31 | $82.01 | Exxon Mobil Q4 2016 results | 1.85 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +6.3% | -17.8pp | -3.6% | ✓ |
+| 2017-04-07 | $82.76 | Exxon Mobil Q4 2016 results | 1.85 | -1.75 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.4% | -19.6pp | -4.3% | ✓ |
+| 2017-04-13 | $81.69 | Exxon Mobil Q4 2016 results | 1.85 | -1.74 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +6.8% | -22.3pp | -2.9% | ✓ |
+| 2017-04-21 | $80.69 | Exxon Mobil Q4 2016 results | 1.85 | -1.73 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +8.4% | -19.5pp | -1.7% | ✓ |
+| 2017-04-28 | $81.65 | Exxon Mobil Q1 2017 results | 2.80 | -0.69 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +6.4% | -21.1pp | -2.8% | ✓ |
+| 2017-05-05 | $82.02 | Exxon Mobil Q1 2017 results | 2.80 | -0.69 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.2% | -24.7pp | -3.2% | ✓ |
+| 2017-05-12 | $82.55 | Exxon Mobil Q1 2017 results | 2.80 | -0.70 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.6% | -24.2pp | -3.9% | ✓ |
+| 2017-05-19 | $81.93 | Exxon Mobil Q1 2017 results | 2.80 | -0.69 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.5% | -23.6pp | -3.3% | ✓ |
+| 2017-05-26 | $81.55 | Exxon Mobil Q1 2017 results | 2.80 | -0.68 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.2% | -22.4pp | -3.0% | ✓ |
+| 2017-06-02 | $79.50 | Exxon Mobil Q1 2017 results | 2.80 | -0.65 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.9% | -19.7pp | -0.6% | ✓ |
+| 2017-06-09 | $82.13 | Exxon Mobil Q1 2017 results | 2.80 | -0.69 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.3% | -23.7pp | -4.0% | ✓ |
+| 2017-06-16 | $83.49 | Exxon Mobil Q1 2017 results | 2.80 | -0.71 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.2% | -26.1pp | -5.8% | ✓ |
+| 2017-06-23 | $81.61 | Exxon Mobil Q1 2017 results | 2.80 | -0.68 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.1% | -22.1pp | -3.7% | ✓ |
+| 2017-06-30 | $80.73 | Exxon Mobil Q1 2017 results | 2.80 | -0.67 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.9% | -22.5pp | -2.8% | ✓ |
+| 2017-07-07 | $80.22 | Exxon Mobil Q1 2017 results | 2.80 | -0.66 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.0% | -24.6pp | -2.3% | ✓ |
+| 2017-07-14 | $81.28 | Exxon Mobil Q1 2017 results | 2.80 | -0.67 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.5% | -23.2pp | -3.7% | ✓ |
+| 2017-07-21 | $80.12 | Exxon Mobil Q1 2017 results | 2.80 | -0.65 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.7% | -22.9pp | -2.5% | ✓ |
+| 2017-07-28 | $79.60 | Exxon Mobil Q2 2017 results | 2.70 | -0.83 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.1% | -24.4pp | -2.0% | ✓ |
+| 2017-08-04 | $80.21 | Exxon Mobil Q2 2017 results | 2.70 | -0.84 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.5% | -25.0pp | -2.9% | ✓ |
+| 2017-08-11 | $78.21 | Exxon Mobil Q2 2017 results | 2.70 | -0.81 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.1% | -25.8pp | -0.7% | ✓ |
+| 2017-08-18 | $76.64 | Exxon Mobil Q2 2017 results | 2.70 | -0.79 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.3% | -25.6pp | +1.1% | ✓ |
+| 2017-08-25 | $76.72 | Exxon Mobil Q2 2017 results | 2.70 | -0.80 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.5% | -24.2pp | +0.7% | ✓ |
+| 2017-09-01 | $76.57 | Exxon Mobil Q2 2017 results | 2.70 | -0.79 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.0% | -24.2pp | +0.6% | ✓ |
+| 2017-09-08 | $78.82 | Exxon Mobil Q2 2017 results | 2.70 | -0.82 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.7% | -26.8pp | -2.5% | ✓ |
+| 2017-09-15 | $80.07 | Exxon Mobil Q2 2017 results | 2.70 | -0.83 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.1% | -25.6pp | -4.3% | ✓ |
+| 2017-09-22 | $79.92 | Exxon Mobil Q2 2017 results | 2.70 | -0.83 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.6% | -25.4pp | -4.4% | ✓ |
+| 2017-09-29 | $81.98 | Exxon Mobil Q2 2017 results | 2.70 | -0.85 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.8% | -26.6pp | -7.2% | ✓ |
+| 2017-10-06 | $81.71 | Exxon Mobil Q2 2017 results | 2.70 | -0.85 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.6% | -27.4pp | -7.3% | ✓ |
+| 2017-10-13 | $82.41 | Exxon Mobil Q2 2017 results | 2.70 | -0.86 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.3% | -28.7pp | -8.5% | ✓ |
+| 2017-10-20 | $83.11 | Exxon Mobil Q2 2017 results | 2.70 | -0.87 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -10.8% | -30.7pp | -9.5% | ✓ |
+| 2017-10-27 | $83.71 | Exxon Mobil Q3 2017 results | 2.65 | -0.90 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.4% | -30.5pp | -10.4% | ✓ |
+| 2017-11-03 | $83.18 | Exxon Mobil Q3 2017 results | 2.65 | -0.90 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.4% | -31.0pp | -10.1% | ✓ |
+| 2017-11-10 | $82.94 | Exxon Mobil Q3 2017 results | 2.65 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.6% | -30.4pp | -10.1% | ✓ |
+| 2017-11-17 | $80.24 | Exxon Mobil Q3 2017 results | 2.65 | -0.86 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.5% | -30.5pp | -7.3% | ✓ |
+| 2017-11-24 | $81.42 | Exxon Mobil Q3 2017 results | 2.65 | -0.87 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.6% | -30.1pp | -8.8% | ✓ |
+| 2017-12-01 | $83.46 | Exxon Mobil Q3 2017 results | 2.65 | -0.90 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -10.4% | -33.2pp | -11.3% | ✓ |
+| 2017-12-08 | $82.66 | Exxon Mobil Q3 2017 results | 2.65 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.9% | -30.4pp | -10.6% | ✓ |
+| 2017-12-15 | $83.03 | Exxon Mobil Q3 2017 results | 2.65 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.6% | -31.1pp | -11.2% | ✓ |
+| 2017-12-22 | $83.97 | Exxon Mobil Q3 2017 results | 2.65 | -0.90 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.8% | -32.7pp | -12.2% | ✓ |
+| 2017-12-29 | $83.64 | Exxon Mobil Q3 2017 results | 2.65 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.5% | -33.5pp | -11.8% | ✓ |

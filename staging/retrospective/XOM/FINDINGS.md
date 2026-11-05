@@ -1,8 +1,8 @@
 # XOM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the XOM weekly dates: 53 from 2008-01-04 to 2008-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the XOM weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: ae6e2c7). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
+pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -97,4 +97,56 @@ Scored only after the point-in-time build was committed and pushed (12ca906). Tw
   +58% and mostly lagged SPY after 2010, so neither encoding reads as right on these outcomes. GAAP EPS would have moved 21 classes, 20 of them
   from December 2011 to June 2012 (CHEAP to FAIR; those dates returned +13% to +35%, 15-29pp behind SPY, where FAIR's ±15pp band also
   fails). The calls were
+  decided before scoring and stay.
+
+## 2013-2017 (260 dates)
+
+Scored only after the point-in-time build was committed and pushed (a700fce). Two-year horizons end by 2019-12-27; three-year horizons
+of the 2017 dates run into 2020.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all | 260 | -1.2% | -20.1% to +24.8% | 0 | 0 | -3.9% | 215 |
+| class CHEAP | 5 | -7.6% | -10.7% to -2.5% | 0 | 0 | -0.3% | 0 |
+| class FAIR | 40 | -1.3% | -20.1% to +11.6% | 0 | 0 | +2.3% | 0 |
+| class RICH | 215 | -1.2% | -18.0% to +24.8% | 0 | 0 | -4.9% | 215 |
+| tier ACCUMULATE | 22 | +1.2% | -11.3% to +11.6% | 0 | 0 | +7.3% | 0 |
+| tier WATCHLIST | 32 | -6.2% | -20.1% to +8.5% | 0 | 0 | -2.2% | 9 |
+| tier AVOID | 206 | -1.2% | -18.0% to +24.8% | 0 | 0 | -5.2% | 206 |
+| 2013 CHEAP | 5 | -7.6% | -10.7% to -2.5% | 0 | 0 | -0.3% | 0 |
+| 2013 FAIR | 36 | -0.2% | -16.1% to +11.6% | 0 | 0 | +2.4% | 0 |
+| 2013 RICH | 10 | +0.5% | -16.4% to +8.5% | 0 | 0 | -1.2% | 10 |
+| 2014 FAIR | 4 | -16.1% | -20.1% to -13.4% | 0 | 0 | -16.8% | 0 |
+| 2014 RICH | 48 | -5.8% | -9.7% to +11.8% | 0 | 0 | -15.8% | 48 |
+| 2015 RICH | 53 | +4.7% | -4.8% to +19.8% | 0 | 0 | +2.2% | 53 |
+| 2016 RICH | 52 | -1.4% | -18.0% to +24.8% | 0 | 0 | -7.2% | 52 |
+| 2017 RICH | 52 | -1.7% | -12.5% to +8.4% | 0 | 0 | -4.0% | 52 |
+
+- **XOM lagged SPY on every one of the 260 dates, so every RICH call held and no FAIR or CHEAP call did.** Over two years XOM returned
+  -20% to +25% (median -1%) while SPY returned +6% to +53%; the gap was 5-47pp. No date cleared the hurdle. RICH held on all 215 dates; the
+  36 FAIR and 5 CHEAP dates of 2013 and the 4 FAIR dates of January 2014 returned -20% to +12%, 23-39pp behind SPY, outside FAIR's ±15pp
+  band. One-year returns had a median of +2%, three-year returns of -3% (the 2017 dates' three-year windows end in 2020: -49% to -8%).
+- **The 2013 FAIR and CHEAP calls rested on 2012's gains.** FY12's $9.70 anchored all of them and included $9.9 billion of divestment and
+  restructuring gains that the company did not call special items and published no per-share figure without. The point-in-time
+  sensitivity (README, "XOM 2013-2017") already showed that removing them, a derived figure the method forbids as an input, would have
+  made all 45 of those dates RICH; on these outcomes that would have held. Hypothesis for the method, not a rule: a large one-off gain
+  left in the latest year's EPS, because no figure excluding it was published, can flip a stock from RICH to FAIR for a year; test it on
+  other tickers' disclosed but unquantified one-offs, never on XOM's outcomes.
+- **From 2016 the RICH call held by lagging, not by falling.** From the Q4 2015 print (100 dates) the anchors were the trough years
+  (FY15's $3.85, FY16's $1.88), so the BEAR, BASE and BULL prices fell to $4-8, $23-41 and $37-65 while XOM traded at $77-95. Two years
+  later XOM stood at $67-85, 1.1-2.2 times BULL and above every scenario but XBULL, and its lowest close in any of those windows ($65.51)
+  was 8-16 times the BEAR price. The scenario prices undershot the stock badly; the class held because SPY rose 11-49% over the same
+  windows. The 2009 fall as BEAR (-52.5%/yr for two years) was never approached in this batch either (lowest closes 3.4-16 times BEAR).
+- **Ranking: the entry price again, and the valuation metrics the right way round this time.** The entry price ranks the return to the
+  m12-24 average at Spearman -0.64 (the two-year endpoint -0.58). The EPP gap (-0.48), Ratio B (-0.49) and the adjusted gap (+0.37) rank
+  it in the expected direction, where in 2009-2012 they ranked it the wrong way or barely; the proxy composite ranks it at -0.44 (+0.50 in
+  2009-2012, -0.15 in 2008). Against the excess over SPY every metric is near zero (-0.13 to -0.04): within this batch they sort the
+  absolute return, which followed the oil price and the entry price, and say nothing about the return relative to the market. Three
+  batches that disagree are not a pattern; record them, conclude nothing.
+- **The encoding calls, seen afterwards.** GAAP EPS in every year would have made 14 dates of July 2013 to January 2014 RICH instead of
+  FAIR or CHEAP; they returned -20% to -3%, 23-38pp behind SPY, so all 14 would have held (none holds now). BASE on production growth would
+  have made 11 RICH dates FAIR (6 in 2013, 5 in 2015); they returned -12% to +19%, 13-37pp behind SPY, so 3 would have held instead of 11.
+  Both together: 9 of the 20 changed dates hold either way. In 2009-2012 neither encoding read as right; here GAAP reads better on 14 dates
+  and the production fallback worse on 8. Two batches with different answers are not evidence for either.
+  ENERGY_TRANSITION was text only (0 classes either way); ExxonMobil's later derating lies outside these two-year windows. The calls were
   decided before scoring and stay.
