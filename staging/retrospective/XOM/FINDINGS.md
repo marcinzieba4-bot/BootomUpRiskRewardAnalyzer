@@ -1,8 +1,8 @@
 # XOM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the XOM weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the XOM weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
+pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce; 2018-2020: 24123ad). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -150,3 +150,52 @@ of the 2017 dates run into 2020.
   and the production fallback worse on 8. Two batches with different answers are not evidence for either.
   ENERGY_TRANSITION was text only (0 classes either way); ExxonMobil's later derating lies outside these two-year windows. The calls were
   decided before scoring and stay.
+
+## 2018-2020 (157 dates)
+
+Scored only after the point-in-time build was committed and pushed (24123ad). Two-year horizons end by 2022-12-30, so the 2020 dates'
+windows run into the 2022 energy-price rise.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all | 157 | -10.2% | -52.4% to +264.0% | 49 | 48 | -20.0% | 74 |
+| class CHEAP | 18 | -25.1% | -48.1% to +264.0% | 6 | 6 | -35.5% | 6 |
+| class FAIR | 30 | -38.4% | -52.4% to +141.1% | 2 | 2 | -15.9% | 0 |
+| class RICH | 109 | -1.3% | -40.6% to +230.4% | 41 | 40 | -18.6% | 68 |
+| tier ACCUMULATE | 16 | +161.6% | -38.7% to +264.0% | 8 | 8 | +93.1% | 3 |
+| tier WATCHLIST | 44 | -36.7% | -52.4% to +232.8% | 12 | 12 | -13.7% | 3 |
+| tier AVOID | 97 | -7.7% | -40.6% to +180.5% | 29 | 28 | -21.7% | 68 |
+| 2018 CHEAP | 8 | -38.4% | -48.1% to -28.3% | 0 | 0 | -37.4% | 0 |
+| 2018 FAIR | 28 | -38.8% | -52.4% to -11.1% | 0 | 0 | -27.9% | 0 |
+| 2018 RICH | 16 | -34.6% | -40.6% to -11.3% | 0 | 0 | -21.6% | 16 |
+| 2019 CHEAP | 4 | -25.0% | -32.0% to -24.9% | 0 | 0 | -38.9% | 0 |
+| 2019 RICH | 48 | -9.4% | -31.7% to +4.3% | 0 | 0 | -35.0% | 48 |
+| 2020 CHEAP | 6 | +232.8% | +149.5% to +264.0% | 6 | 6 | +136.8% | 6 |
+| 2020 FAIR | 2 | +141.1% | +129.8% to +141.1% | 2 | 2 | +64.8% | 0 |
+| 2020 RICH | 45 | +119.7% | +0.3% to +230.4% | 41 | 40 | +63.4% | 4 |
+
+- **Three regimes, and the call held on 74 of 157.** From the 2018 dates XOM returned -52% to -11% over two years, into the COVID fall,
+  while SPY returned -9% to +58%: RICH held on all 16, and the 28 FAIR and 8 CHEAP dates lagged SPY by 36-86pp (none held). From the 2019
+  dates XOM returned -32% to +4% against SPY's +43% to +61%: RICH held on all 48, the 4 CHEAP dates of January 2019 lagged by 70-83pp.
+  From the 2020 dates XOM returned +0.3% to +264% and beat SPY on 48 of 53: RICH held on only 4 (the January 2020 dates before the COVID
+  fall), CHEAP held on all 6 (March and November 2020: +150% to +264%), and FAIR's ±15pp band failed on both FAIR dates (2020-03-13 and 2020-04-03: +141% and +130%).
+  One-year returns had a median of -6%, three-year returns of +35%.
+- **The 2018 FAIR and CHEAP calls rested on BASE's revenue growth.** FY17's $4.63 (with the tax-reform gain) and revenue +16% to +27% put
+  BASE at +19% to +29%/yr; the point-in-time sensitivity showed that BASE on production growth would move 81 classes. On these outcomes
+  the production encoding would have held on 47 of the 81 changed dates, the revenue encoding holds on 12: the opposite of 2013-2017 (3
+  against 11) and of 2010-2011 (neither). Three batches, three answers about the fallback: record it, conclude nothing.
+- **COVID made the BEAR case briefly visible and then irrelevant.** The 2018 dates' two-year windows end in 2020, so their prices landed
+  nearest BEAR on 41 of 52 dates; the lowest close in any window ($31.45, March 2020) was still 2.9 times the BEAR price ($10-11), and
+  BEAR (2009's, then 2016's fall applied for two years) was never reached. From the 2020 dates the prices landed nearest BULL on 51 of 53.
+- **The re-file preceded the largest gains of the batch.** The 18 dates from 2020-09-04 carry the TRANSITION labels (14 TRANSITION-EXPOSED,
+  NOT CHEAP; 4 TRANSITION-FEAR BASKET); XOM returned +153% to +264% over two years from them, 142-253pp ahead of SPY, as the energy-price
+  rise of 2022 reversed the derating (the theme registry's own hindsight note). The re-file changes the label only; the class held on the
+  4 CHEAP dates. A label read as "the market prices decarbonisation" sat at the bottom of the cycle: a hypothesis about index-removal
+  evidence, not a rule.
+- **Ranking: the entry price, strongest yet; the composites the wrong way.** The entry price ranks the return to the m12-24 average at
+  Spearman -0.74 (the two-year endpoint -0.88, the excess over SPY -0.67). The proxy composite ranks it at -0.64 and the adjusted gap at
+  -0.50, both the wrong way (the 2018 prints' revenue growth lifted both before the fall); the EPP gap ranks it the expected way (-0.42),
+  Ratio B not at all (-0.23). Four batches that disagree on everything but the entry price; record them, conclude nothing.
+- **The encoding calls, seen afterwards.** GAAP EPS changes nothing here. The derived test without the one-offs (2017-2019) would have
+  moved 71 classes and held on 19 of them, where the published encoding holds on 47; FY2019 alone, 8 classes, 0 against 6. In 2013-2017
+  the derived 2012 figure would have done better; here the GAAP figures do. The calls were decided before scoring and stay.

@@ -526,3 +526,160 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $83.03 | Exxon Mobil Q3 2017 results | 2.65 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.6% | -31.1pp | -11.2% | ✓ |
 | 2017-12-22 | $83.97 | Exxon Mobil Q3 2017 results | 2.65 | -0.90 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.8% | -32.7pp | -12.2% | ✓ |
 | 2017-12-29 | $83.64 | Exxon Mobil Q3 2017 results | 2.65 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.5% | -33.5pp | -11.8% | ✓ |
+| 2018-01-05 | $86.75 | Exxon Mobil Q3 2017 results | 2.65 | -0.93 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -11.3% | -33.1pp | -15.0% | ✓ |
+| 2018-01-12 | $87.52 | Exxon Mobil Q3 2017 results | 2.65 | -0.94 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -13.4% | -34.4pp | -15.8% | ✓ |
+| 2018-01-19 | $87.15 | Exxon Mobil Q3 2017 results | 2.65 | -0.93 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -13.7% | -35.9pp | -15.5% | ✓ |
+| 2018-01-26 | $89.00 | Exxon Mobil Q3 2017 results | 2.65 | -0.96 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -18.0% | -36.5pp | -17.3% | ✓ |
+| 2018-02-02 | $84.53 | Exxon Mobil Q4 2017 results | 2.80 | +0.29 | 2.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -18.6% | -39.3pp | -13.2% | ✓ |
+| 2018-02-09 | $75.78 | Exxon Mobil Q4 2017 results | 2.80 | +0.55 | 1.44x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -11.1% | -42.2pp | -3.5% | ✗ |
+| 2018-02-16 | $76.54 | Exxon Mobil Q4 2017 results | 2.80 | +0.52 | 1.49x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -11.9% | -39.5pp | -4.8% | ✗ |
+| 2018-02-23 | $77.53 | Exxon Mobil Q4 2017 results | 2.80 | +0.51 | 1.54x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -15.0% | -40.3pp | -6.4% | ✗ |
+| 2018-03-02 | $75.55 | Exxon Mobil Q4 2017 results | 2.80 | +0.55 | 1.46x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -19.7% | -38.6pp | -4.8% | ✗ |
+| 2018-03-09 | $74.56 | Exxon Mobil Q4 2017 results | 2.80 | +0.57 | 1.41x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -34.8% | -37.0pp | -4.3% | ✗ |
+| 2018-03-16 | $75.12 | Exxon Mobil Q4 2017 results | 2.80 | +0.56 | 1.44x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -45.1% | -36.1pp | -6.1% | ✗ |
+| 2018-03-23 | $72.89 | Exxon Mobil Q4 2017 results | 2.80 | +0.61 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -47.6% | -38.3pp | -4.6% | ✗ |
+| 2018-03-29 | $74.61 | Exxon Mobil Q4 2017 results | 2.80 | +0.58 | 1.41x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -41.4% | -41.9pp | -7.7% | ✗ |
+| 2018-04-06 | $74.87 | Exxon Mobil Q4 2017 results | 2.80 | +0.57 | 1.43x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -36.9% | -43.1pp | -9.4% | ✗ |
+| 2018-04-13 | $77.84 | Exxon Mobil Q4 2017 results | 2.80 | +0.49 | 1.59x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -36.4% | -44.5pp | -13.7% | ✗ |
+| 2018-04-20 | $79.00 | Exxon Mobil Q4 2017 results | 2.80 | +0.46 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -39.3% | -49.1pp | -15.9% | ✗ |
+| 2018-04-27 | $77.79 | Exxon Mobil Q1 2018 results | 2.45 | +0.11 | 1.71x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -34.8% | -46.6pp | -15.6% | ✗ |
+| 2018-05-04 | $76.90 | Exxon Mobil Q1 2018 results | 2.45 | +0.13 | 1.65x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -32.8% | -43.6pp | -15.5% | ✗ |
+| 2018-05-11 | $81.28 | Exxon Mobil Q1 2018 results | 2.45 | +0.00 | 1.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -36.4% | -47.7pp | -20.8% | ✓ |
+| 2018-05-18 | $81.30 | Exxon Mobil Q1 2018 results | 2.45 | +0.00 | 1.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -35.9% | -48.6pp | -21.6% | ✓ |
+| 2018-05-25 | $78.71 | Exxon Mobil Q1 2018 results | 2.45 | +0.09 | 1.77x | AVOID | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | -34.7% | -47.3pp | -19.7% | ✓ |
+| 2018-06-01 | $81.83 | Exxon Mobil Q1 2018 results | 2.45 | -0.02 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -35.1% | -50.8pp | -23.4% | ✓ |
+| 2018-06-08 | $83.60 | Exxon Mobil Q1 2018 results | 2.45 | -0.08 | 2.17x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -26.4% | -46.5pp | -25.5% | ✓ |
+| 2018-06-15 | $80.66 | Exxon Mobil Q1 2018 results | 2.45 | +0.03 | 1.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -33.1% | -47.4pp | -23.4% | ✓ |
+| 2018-06-22 | $81.38 | Exxon Mobil Q1 2018 results | 2.45 | +0.01 | 1.98x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -34.6% | -51.7pp | -24.8% | ✓ |
+| 2018-06-29 | $82.73 | Exxon Mobil Q1 2018 results | 2.45 | -0.05 | 2.09x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -38.2% | -54.5pp | -26.8% | ✓ |
+| 2018-07-06 | $82.33 | Exxon Mobil Q1 2018 results | 2.45 | -0.02 | 2.06x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -37.8% | -57.0pp | -27.1% | ✓ |
+| 2018-07-13 | $83.31 | Exxon Mobil Q1 2018 results | 2.45 | -0.06 | 2.14x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -40.6% | -57.2pp | -28.8% | ✓ |
+| 2018-07-20 | $81.40 | Exxon Mobil Q1 2018 results | 2.45 | +0.02 | 1.98x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -39.4% | -59.4pp | -27.9% | ✓ |
+| 2018-07-27 | $81.92 | Exxon Mobil Q2 2018 results | 2.55 | +0.33 | 1.28x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -37.9% | -56.7pp | -29.1% | ✗ |
+| 2018-08-03 | $80.20 | Exxon Mobil Q2 2018 results | 2.55 | +0.40 | 1.21x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | -38.8% | -58.7pp | -28.3% | ✗ |
+| 2018-08-10 | $79.42 | Exxon Mobil Q2 2018 results | 2.55 | +0.44 | 1.18x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | -36.4% | -58.9pp | -28.3% | ✗ |
+| 2018-08-17 | $78.26 | Exxon Mobil Q2 2018 results | 2.55 | +0.48 | 1.14x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | -36.7% | -59.2pp | -27.9% | ✗ |
+| 2018-08-24 | $79.62 | Exxon Mobil Q2 2018 results | 2.55 | +0.44 | 1.19x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | -38.4% | -61.5pp | -29.8% | ✗ |
+| 2018-08-31 | $80.17 | Exxon Mobil Q2 2018 results | 2.55 | +0.42 | 1.21x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | -40.7% | -65.3pp | -30.9% | ✗ |
+| 2018-09-07 | $81.83 | Exxon Mobil Q2 2018 results | 2.55 | +0.35 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -43.9% | -66.8pp | -32.9% | ✗ |
+| 2018-09-14 | $82.92 | Exxon Mobil Q2 2018 results | 2.55 | +0.32 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -47.5% | -67.7pp | -34.7% | ✗ |
+| 2018-09-21 | $85.17 | Exxon Mobil Q2 2018 results | 2.55 | +0.25 | 1.42x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -49.2% | -65.0pp | -37.2% | ✗ |
+| 2018-09-28 | $85.02 | Exxon Mobil Q2 2018 results | 2.55 | +0.26 | 1.41x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -50.4% | -69.2pp | -38.0% | ✗ |
+| 2018-10-05 | $85.34 | Exxon Mobil Q2 2018 results | 2.55 | +0.25 | 1.42x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -52.4% | -74.4pp | -39.0% | ✗ |
+| 2018-10-12 | $81.38 | Exxon Mobil Q2 2018 results | 2.55 | +0.40 | 1.23x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | -49.0% | -80.8pp | -36.9% | ✗ |
+| 2018-10-19 | $81.97 | Exxon Mobil Q2 2018 results | 2.55 | +0.37 | 1.26x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -50.9% | -78.7pp | -38.1% | ✗ |
+| 2018-10-26 | $77.53 | Exxon Mobil Q2 2018 results | 2.55 | +0.54 | 1.10x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | -48.1% | -80.3pp | -35.5% | ✗ |
+| 2018-11-02 | $81.95 | Exxon Mobil Q3 2018 results | 2.80 | +0.60 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -50.2% | -75.7pp | -39.8% | ✗ |
+| 2018-11-09 | $80.87 | Exxon Mobil Q3 2018 results | 2.80 | +0.65 | 1.26x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -46.9% | -78.5pp | -40.0% | ✗ |
+| 2018-11-16 | $78.96 | Exxon Mobil Q3 2018 results | 2.80 | +0.72 | 1.19x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | -42.9% | -79.5pp | -39.3% | ✗ |
+| 2018-11-23 | $75.49 | Exxon Mobil Q3 2018 results | 2.80 | +0.84 | 1.06x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -38.7% | -78.7pp | -37.4% | ✗ |
+| 2018-11-30 | $79.50 | Exxon Mobil Q3 2018 results | 2.80 | +0.70 | 1.21x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | -43.3% | -78.7pp | -41.1% | ✗ |
+| 2018-12-07 | $77.64 | Exxon Mobil Q3 2018 results | 2.80 | +0.77 | 1.14x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -38.4% | -82.7pp | -40.4% | ✗ |
+| 2018-12-14 | $75.58 | Exxon Mobil Q3 2018 results | 2.80 | +0.85 | 1.07x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -35.0% | -79.3pp | -39.5% | ✗ |
+| 2018-12-21 | $68.12 | Exxon Mobil Q3 2018 results | 2.80 | +1.15 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -28.3% | -85.8pp | -33.6% | ✗ |
+| 2018-12-28 | $68.17 | Exxon Mobil Q3 2018 results | 2.80 | +1.15 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -28.6% | -83.4pp | -34.3% | ✗ |
+| 2019-01-04 | $71.15 | Exxon Mobil Q3 2018 results | 2.80 | +1.10 | 0.93x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -32.0% | -82.6pp | -37.7% | ✗ |
+| 2019-01-11 | $71.72 | Exxon Mobil Q3 2018 results | 2.80 | +1.09 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -25.1% | -75.6pp | -38.9% | ✗ |
+| 2019-01-18 | $72.99 | Exxon Mobil Q3 2018 results | 2.80 | +1.06 | 0.98x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -24.9% | -70.2pp | -40.6% | ✗ |
+| 2019-01-25 | $71.72 | Exxon Mobil Q3 2018 results | 2.80 | +1.09 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | -25.0% | -73.9pp | -39.9% | ✗ |
+| 2019-02-01 | $75.92 | Exxon Mobil Q4 2018 results | 2.50 | +0.34 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -31.7% | -75.2pp | -43.7% | ✓ |
+| 2019-02-08 | $73.98 | Exxon Mobil Q4 2018 results | 2.50 | +0.39 | 2.00x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -21.3% | -69.9pp | -42.6% | ✓ |
+| 2019-02-15 | $77.71 | Exxon Mobil Q4 2018 results | 2.50 | +0.30 | 2.39x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -26.0% | -71.7pp | -45.6% | ✓ |
+| 2019-02-22 | $78.42 | Exxon Mobil Q4 2018 results | 2.50 | +0.27 | 2.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -21.9% | -64.6pp | -46.2% | ✓ |
+| 2019-03-01 | $80.00 | Exxon Mobil Q4 2018 results | 2.50 | +0.22 | 2.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -20.8% | -63.8pp | -47.2% | ✓ |
+| 2019-03-08 | $79.01 | Exxon Mobil Q4 2018 results | 2.50 | +0.25 | 2.62x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -14.2% | -57.4pp | -46.4% | ✓ |
+| 2019-03-15 | $80.15 | Exxon Mobil Q4 2018 results | 2.50 | +0.21 | 2.78x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -16.0% | -60.5pp | -46.6% | ✓ |
+| 2019-03-22 | $80.48 | Exxon Mobil Q4 2018 results | 2.50 | +0.21 | 2.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -21.9% | -66.5pp | -46.3% | ✓ |
+| 2019-03-29 | $80.80 | Exxon Mobil Q4 2018 results | 2.50 | +0.20 | 2.88x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -20.3% | -64.5pp | -46.0% | ✓ |
+| 2019-04-05 | $82.49 | Exxon Mobil Q4 2018 results | 2.50 | +0.15 | 3.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -23.1% | -67.8pp | -46.7% | ✓ |
+| 2019-04-12 | $80.92 | Exxon Mobil Q4 2018 results | 2.50 | +0.20 | 2.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -22.8% | -68.6pp | -45.3% | ✓ |
+| 2019-04-18 | $81.13 | Exxon Mobil Q4 2018 results | 2.50 | +0.19 | 2.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -21.6% | -69.4pp | -45.2% | ✓ |
+| 2019-04-26 | $80.49 | Exxon Mobil Q1 2019 results | 2.20 | -0.54 | 6.61x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -22.2% | -68.4pp | -44.3% | ✓ |
+| 2019-05-03 | $77.47 | Exxon Mobil Q1 2019 results | 2.20 | -0.44 | 4.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -15.1% | -61.2pp | -41.8% | ✓ |
+| 2019-05-10 | $76.56 | Exxon Mobil Q1 2019 results | 2.20 | -0.42 | 4.54x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -10.3% | -59.3pp | -40.7% | ✓ |
+| 2019-05-17 | $75.91 | Exxon Mobil Q1 2019 results | 2.20 | -0.40 | 4.30x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -8.9% | -58.2pp | -39.8% | ✓ |
+| 2019-05-24 | $74.10 | Exxon Mobil Q1 2019 results | 2.20 | -0.35 | 3.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -10.2% | -62.4pp | -37.9% | ✓ |
+| 2019-05-31 | $70.77 | Exxon Mobil Q1 2019 results | 2.20 | -0.27 | 2.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -7.7% | -64.4pp | -34.7% | ✓ |
+| 2019-06-07 | $74.58 | Exxon Mobil Q1 2019 results | 2.20 | -0.36 | 3.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -8.8% | -59.5pp | -37.7% | ✓ |
+| 2019-06-14 | $74.35 | Exxon Mobil Q1 2019 results | 2.20 | -0.36 | 3.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -7.2% | -58.1pp | -37.2% | ✓ |
+| 2019-06-21 | $77.69 | Exxon Mobil Q1 2019 results | 2.20 | -0.46 | 5.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -10.5% | -57.5pp | -39.5% | ✓ |
+| 2019-06-28 | $76.63 | Exxon Mobil Q1 2019 results | 2.20 | -0.42 | 4.57x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -8.7% | -58.4pp | -38.2% | ✓ |
+| 2019-07-05 | $76.13 | Exxon Mobil Q1 2019 results | 2.20 | -0.41 | 4.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -7.9% | -57.0pp | -37.4% | ✓ |
+| 2019-07-12 | $77.63 | Exxon Mobil Q1 2019 results | 2.20 | -0.45 | 4.98x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -12.2% | -61.4pp | -38.1% | ✓ |
+| 2019-07-19 | $74.99 | Exxon Mobil Q1 2019 results | 2.20 | -0.38 | 4.00x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -16.9% | -63.7pp | -35.6% | ✓ |
+| 2019-07-26 | $74.81 | Exxon Mobil Q1 2019 results | 2.20 | -0.38 | 3.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -12.5% | -62.3pp | -35.0% | ✓ |
+| 2019-08-02 | $71.75 | Exxon Mobil Q2 2019 results | 2.40 | -0.09 | 3.16x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -10.0% | -63.5pp | -31.9% | ✓ |
+| 2019-08-09 | $70.84 | Exxon Mobil Q2 2019 results | 2.40 | -0.07 | 2.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -9.4% | -64.9pp | -30.6% | ✓ |
+| 2019-08-16 | $68.30 | Exxon Mobil Q2 2019 results | 2.40 | -0.01 | 2.52x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -7.9% | -66.6pp | -27.6% | ✓ |
+| 2019-08-23 | $67.49 | Exxon Mobil Q2 2019 results | 2.40 | +0.01 | 2.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -8.3% | -69.3pp | -26.4% | ✓ |
+| 2019-08-30 | $68.48 | Exxon Mobil Q2 2019 results | 2.40 | -0.01 | 2.55x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -9.3% | -67.8pp | -27.0% | ✓ |
+| 2019-09-06 | $70.93 | Exxon Mobil Q2 2019 results | 2.40 | -0.08 | 2.99x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -12.8% | -68.6pp | -29.2% | ✓ |
+| 2019-09-13 | $72.64 | Exxon Mobil Q2 2019 results | 2.40 | -0.11 | 3.36x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -14.2% | -66.3pp | -30.4% | ✓ |
+| 2019-09-20 | $72.08 | Exxon Mobil Q2 2019 results | 2.40 | -0.10 | 3.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -15.9% | -65.2pp | -29.4% | ✓ |
+| 2019-09-27 | $71.48 | Exxon Mobil Q2 2019 results | 2.40 | -0.09 | 3.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -7.3% | -61.0pp | -28.2% | ✓ |
+| 2019-10-04 | $68.97 | Exxon Mobil Q2 2019 results | 2.40 | -0.04 | 2.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -0.4% | -49.9pp | -24.8% | ✓ |
+| 2019-10-11 | $68.98 | Exxon Mobil Q2 2019 results | 2.40 | -0.04 | 2.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -0.7% | -51.2pp | -24.1% | ✓ |
+| 2019-10-18 | $67.61 | Exxon Mobil Q2 2019 results | 2.40 | -0.00 | 2.42x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +2.8% | -51.1pp | -21.7% | ✓ |
+| 2019-10-25 | $69.25 | Exxon Mobil Q2 2019 results | 2.40 | -0.04 | 2.68x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +3.0% | -51.8pp | -22.7% | ✓ |
+| 2019-11-01 | $69.60 | Exxon Mobil Q3 2019 results | 2.05 | -0.45 | 2.74x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +4.3% | -49.7pp | -22.2% | ✓ |
+| 2019-11-08 | $70.77 | Exxon Mobil Q3 2019 results | 2.05 | -0.48 | 2.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +1.5% | -54.0pp | -22.6% | ✓ |
+| 2019-11-15 | $69.19 | Exxon Mobil Q3 2019 results | 2.05 | -0.45 | 2.67x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +3.1% | -50.4pp | -20.0% | ✓ |
+| 2019-11-22 | $69.37 | Exxon Mobil Q3 2019 results | 2.05 | -0.45 | 2.70x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -1.3% | -55.3pp | -19.5% | ✓ |
+| 2019-11-29 | $68.13 | Exxon Mobil Q3 2019 results | 2.05 | -0.43 | 2.50x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +0.6% | -50.8pp | -17.5% | ✓ |
+| 2019-12-06 | $69.51 | Exxon Mobil Q3 2019 results | 2.05 | -0.45 | 2.72x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -1.4% | -50.7pp | -18.6% | ✓ |
+| 2019-12-13 | $69.23 | Exxon Mobil Q3 2019 results | 2.05 | -0.45 | 2.67x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -0.9% | -51.5pp | -17.7% | ✓ |
+| 2019-12-20 | $69.94 | Exxon Mobil Q3 2019 results | 2.05 | -0.47 | 2.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -5.4% | -50.9pp | -18.0% | ✓ |
+| 2019-12-27 | $69.89 | Exxon Mobil Q3 2019 results | 2.05 | -0.47 | 2.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -1.5% | -52.8pp | -17.5% | ✓ |
+| 2020-01-03 | $70.33 | Exxon Mobil Q3 2019 results | 2.05 | -0.48 | 2.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +0.3% | -51.5pp | -17.6% | ✓ |
+| 2020-01-10 | $69.14 | Exxon Mobil Q3 2019 results | 2.05 | -0.44 | 2.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +9.1% | -37.3pp | -15.5% | ✓ |
+| 2020-01-17 | $68.56 | Exxon Mobil Q3 2019 results | 2.05 | -0.43 | 2.57x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +15.0% | -28.4pp | -14.2% | ✓ |
+| 2020-01-24 | $66.32 | Exxon Mobil Q3 2019 results | 2.05 | -0.38 | 2.24x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +20.3% | -17.0pp | -10.6% | ✓ |
+| 2020-01-31 | $62.12 | Exxon Mobil Q4 2019 results | 2.20 | -0.73 | 11.30x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +32.4% | -8.5pp | -3.7% | ✗ |
+| 2020-02-07 | $61.47 | Exxon Mobil Q4 2019 results | 2.20 | -0.71 | 9.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +45.4% | +7.3pp | -1.5% | ✗ |
+| 2020-02-14 | $60.65 | Exxon Mobil Q4 2019 results | 2.20 | -0.59 | 8.45x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +41.7% | +8.3pp | +0.8% | ✗ |
+| 2020-02-21 | $59.13 | Exxon Mobil Q4 2019 results | 2.20 | -0.53 | 6.62x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +42.6% | +9.0pp | +4.0% | ✗ |
+| 2020-02-28 | $51.44 | Exxon Mobil Q4 2019 results | 2.20 | -0.22 | 3.84x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +66.0% | +14.8pp | +20.4% | ✗ |
+| 2020-03-06 | $47.69 | Exxon Mobil Q4 2019 results | 2.20 | -0.09 | 2.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +91.0% | +41.8pp | +30.7% | ✗ |
+| 2020-03-13 | $38.12 | Exxon Mobil Q4 2019 results | 2.20 | +0.34 | 1.25x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +141.1% | +80.9pp | +64.8% | ✗ |
+| 2020-03-20 | $32.74 | Exxon Mobil Q4 2019 results | 2.20 | +0.82 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +161.6% | +62.4pp | +93.1% | ✓ |
+| 2020-03-27 | $36.95 | Exxon Mobil Q4 2019 results | 2.20 | +0.59 | 1.15x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +149.5% | +66.4pp | +72.5% | ✓ |
+| 2020-04-03 | $39.21 | Exxon Mobil Q4 2019 results | 2.20 | +0.30 | 1.35x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +129.8% | +42.7pp | +63.8% | ✗ |
+| 2020-04-09 | $43.13 | Exxon Mobil Q4 2019 results | 2.20 | +0.09 | 1.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +117.5% | +52.6pp | +50.2% | ✗ |
+| 2020-04-17 | $43.22 | Exxon Mobil Q4 2019 results | 2.20 | +0.09 | 1.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +119.4% | +62.7pp | +51.1% | ✗ |
+| 2020-04-24 | $43.73 | Exxon Mobil Q4 2019 results | 2.20 | +0.06 | 1.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +110.6% | +56.1pp | +50.8% | ✗ |
+| 2020-05-01 | $43.14 | Exxon Mobil Q1 2020 results | 1.90 | -0.37 | 2.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +113.8% | +64.1pp | +54.1% | ✗ |
+| 2020-05-08 | $46.18 | Exxon Mobil Q1 2020 results | 1.90 | -0.50 | 2.64x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +113.7% | +69.1pp | +45.2% | ✗ |
+| 2020-05-15 | $42.00 | Exxon Mobil Q1 2020 results | 1.90 | -0.32 | 1.84x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +128.2% | +83.9pp | +60.8% | ✗ |
+| 2020-05-22 | $44.60 | Exxon Mobil Q1 2020 results | 1.90 | -0.43 | 2.29x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +121.6% | +85.9pp | +52.9% | ✗ |
+| 2020-05-29 | $45.47 | Exxon Mobil Q1 2020 results | 1.90 | -0.46 | 2.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +130.0% | +89.8pp | +51.5% | ✗ |
+| 2020-06-05 | $53.08 | Exxon Mobil Q1 2020 results | 1.90 | -0.83 | 5.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +99.8% | +67.7pp | +30.9% | ✗ |
+| 2020-06-12 | $47.17 | Exxon Mobil Q1 2020 results | 1.90 | -0.53 | 2.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +127.8% | +95.9pp | +49.0% | ✗ |
+| 2020-06-19 | $45.98 | Exxon Mobil Q1 2020 results | 1.90 | -0.48 | 2.60x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +102.5% | +80.2pp | +54.2% | ✗ |
+| 2020-06-26 | $43.62 | Exxon Mobil Q1 2020 results | 1.90 | -0.39 | 2.11x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +115.2% | +81.4pp | +63.4% | ✗ |
+| 2020-07-02 | $44.08 | Exxon Mobil Q1 2020 results | 1.90 | -0.40 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +114.5% | +88.7pp | +62.9% | ✗ |
+| 2020-07-10 | $42.65 | Exxon Mobil Q1 2020 results | 1.90 | -0.35 | 1.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +118.2% | +92.2pp | +69.2% | ✗ |
+| 2020-07-17 | $43.52 | Exxon Mobil Q1 2020 results | 1.90 | -0.38 | 2.09x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +110.3% | +87.0pp | +67.0% | ✗ |
+| 2020-07-24 | $43.43 | Exxon Mobil Q1 2020 results | 1.90 | -0.38 | 2.07x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +116.6% | +89.9pp | +68.8% | ✗ |
+| 2020-07-31 | $42.08 | Exxon Mobil Q2 2020 results | 1.15 | -1.29 | 1.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +147.0% | +117.2pp | +75.8% | ✗ |
+| 2020-08-07 | $43.44 | Exxon Mobil Q2 2020 results | 1.15 | -1.34 | 2.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +119.7% | +92.7pp | +71.8% | ✗ |
+| 2020-08-14 | $43.20 | Exxon Mobil Q2 2020 results | 1.15 | -1.32 | 2.03x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +133.8% | +103.6pp | +74.3% | ✗ |
+| 2020-08-21 | $41.01 | Exxon Mobil Q2 2020 results | 1.15 | -1.25 | 1.70x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +146.5% | +118.7pp | +85.5% | ✗ |
+| 2020-08-28 | $40.69 | Exxon Mobil Q2 2020 results | 1.15 | -1.23 | 1.66x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +157.7% | +138.8pp | +89.1% | ✗ |
+| 2020-09-04 | $39.08 | Exxon Mobil Q2 2020 results | 1.15 | -1.17 | 1.46x | WATCHLIST | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +162.5% | +144.6pp | +99.0% | ✗ |
+| 2020-09-11 | $36.90 | Exxon Mobil Q2 2020 results | 1.15 | -0.92 | 1.24x | WATCHLIST | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +180.5% | +155.3pp | +112.5% | ✗ |
+| 2020-09-18 | $37.19 | Exxon Mobil Q2 2020 results | 1.15 | -1.12 | 1.27x | WATCHLIST | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +169.5% | +149.3pp | +113.0% | ✗ |
+| 2020-09-25 | $34.64 | Exxon Mobil Q2 2020 results | 1.15 | -0.86 | 1.05x | ACCUMULATE | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +167.8% | +152.2pp | +130.7% | ✗ |
+| 2020-10-02 | $32.98 | Exxon Mobil Q2 2020 results | 1.15 | -0.82 | 0.93x | ACCUMULATE | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +186.0% | +175.4pp | +143.9% | ✗ |
+| 2020-10-09 | $34.74 | Exxon Mobil Q2 2020 results | 1.15 | -0.86 | 1.06x | ACCUMULATE | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +211.0% | +203.0pp | +133.7% | ✗ |
+| 2020-10-16 | $34.10 | Exxon Mobil Q2 2020 results | 1.15 | -0.85 | 1.01x | ACCUMULATE | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +211.4% | +205.0pp | +140.3% | ✗ |
+| 2020-10-23 | $34.16 | Exxon Mobil Q2 2020 results | 1.15 | -0.85 | 1.01x | ACCUMULATE | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | +230.4% | +218.7pp | +142.2% | ✗ |
+| 2020-10-30 | $32.62 | Exxon Mobil Q3 2020 results | 1.65 | -0.17 | 0.90x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +260.8% | +238.1pp | +156.2% | ✓ |
+| 2020-11-06 | $32.78 | Exxon Mobil Q3 2020 results | 1.65 | -0.17 | 0.91x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +264.0% | +253.1pp | +157.8% | ✓ |
+| 2020-11-13 | $36.08 | Exxon Mobil Q3 2020 results | 1.65 | -0.28 | 1.17x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +232.8% | +218.2pp | +136.8% | ✓ |
+| 2020-11-20 | $36.94 | Exxon Mobil Q3 2020 results | 1.65 | -0.30 | 1.24x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +222.5% | +207.7pp | +134.0% | ✓ |
+| 2020-11-27 | $40.19 | Exxon Mobil Q3 2020 results | 1.65 | -0.60 | 1.59x | WATCHLIST | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 5/8 RICH | +199.2% | +185.3pp | +117.1% | ✗ |
+| 2020-12-04 | $41.68 | Exxon Mobil Q3 2020 results | 1.65 | -0.67 | 1.80x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | +180.5% | +167.3pp | +111.7% | ✗ |
+| 2020-12-11 | $43.80 | Exxon Mobil Q3 2020 results | 1.65 | -0.76 | 2.14x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | +152.5% | +141.9pp | +103.4% | ✗ |
+| 2020-12-18 | $42.73 | Exxon Mobil Q3 2020 results | 1.65 | -0.72 | 1.96x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | +161.5% | +154.4pp | +110.5% | ✗ |
+| 2020-12-24 | $41.60 | Exxon Mobil Q3 2020 results | 1.65 | -0.67 | 1.78x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | +178.2% | +171.1pp | +118.2% | ✗ |
+| 2020-12-31 | $41.22 | Exxon Mobil Q3 2020 results | 1.65 | -0.65 | 1.73x | WATCHLIST | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 5/8 RICH | +184.7% | +179.2pp | +122.1% | ✗ |
