@@ -1,8 +1,8 @@
 # XOM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the XOM weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the XOM weekly dates: 983 from 2008-01-04 to 2026-10-30. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce; 2018-2020: 24123ad; 2021-2023: b9c3f2a). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
+pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce; 2018-2020: 24123ad; 2021-2023: b9c3f2a; 2024-2026: 663a656). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -250,3 +250,54 @@ exist for 148 dates (to 2026-11-04).
   revenue fallback holds on 49 (2018-2020: 47 against 12; 2013-2017: 3 against 11; 2010-2011: neither): the answers alternate. GAAP EPS, or 2019
   at GAAP without the restatement, would have moved only the 4 FAIR dates of late 2021 to CHEAP and held on all 4 (0 as published).
   FY2020's exclusion has no tested alternative: a loss has no P/E. The calls were decided before scoring and stay.
+
+## 2024-2026 (148 dates)
+
+Scored only after the point-in-time build was committed and pushed (663a656). Prices end on 2026-11-04, so only the 44 dates to
+2024-11-01 have two years, the 96 to 2025-10-31 one year and the 122 to 2026-05-01 six months; the 26 dates from 2026-05-08 have no
+outcome yet. Every date with two years is CHEAP or FAIR. None of the 41 RICH dates (from 2025-11-07) has a year.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 40 | +42.1% | +25.6% to +69.9% | 32 | 21 | +13.6% | 32 |
+| class FAIR | 4 | +38.9% | +28.8% to +53.9% | 3 | 2 | +1.9% | 2 |
+| legacy tier BUY | 21 | +43.4% | +29.8% to +60.1% | 19 | 13 | +14.7% | 19 |
+| legacy tier ACCUMULATE | 23 | +38.7% | +25.6% to +69.9% | 16 | 10 | +8.7% | 15 |
+| FY22's $14.06 (2024-01-05 to 2024-01-26) | 4 | +38.5% | +29.8% to +42.1% | 2 | 0 | +11.7% | 2 |
+| FY23's $9.52 (2024-02-02 to 2024-11-01) | 40 | +42.1% | +25.6% to +69.9% | 33 | 23 | +13.2% | 32 |
+
+| Group (one year) | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | Median price change to 2026-10-30 |
+|---|---|---|---|---|---|---|
+| class CHEAP | 70 | +7.1% | -9.4% to +57.9% | 24 | 21 | +68.3% |
+| class FAIR | 26 | +45.5% | -11.1% to +67.3% | 22 | 21 | +66.8% |
+| legacy tier BUY | 21 | +1.3% | -7.2% to +19.8% | 1 | 0 | +62.4% |
+| legacy tier ACCUMULATE | 45 | +5.2% | -11.1% to +57.9% | 15 | 13 | +66.1% |
+| legacy tier WATCHLIST | 27 | +41.7% | +23.7% to +56.3% | 27 | 26 | +68.3% |
+| legacy tier AVOID | 3 | +63.1% | +62.3% to +67.3% | 3 | 3 | +63.7% |
+| FY22's $14.06 (2024-01-05 to 2024-01-26) | 4 | +10.4% | +8.8% to +19.8% | 1 | 0 | +87.3% |
+| FY23's $9.52 (2024-02-02 to 2025-01-24) | 52 | +1.7% | -11.1% to +27.9% | 5 | 3 | +62.7% |
+| FY24's $7.79, dates with a year (2025-01-31 to 2025-10-31) | 40 | +45.9% | +23.7% to +67.3% | 40 | 39 | +70.8% |
+
+- **CHEAP held on 32 of the 40 two-year dates, FAIR on 2 of 4.** The 2024 entries ($97-125, 7-13x the anchor) returned +25.6% to +69.9%
+  over two years (median +42.1%) while SPY returned +24.0% to +50.0% (median +39.1%). Every CHEAP date gained more than 25%; the eight
+  misses (2024-01-05, 2024-01-12, 2024-05-10, 2024-05-31 and 2024-06-21 to 2024-07-12) returned +25.6% to +31.9%, just under the
+  hurdle's +32.2%, and lagged SPY by 7.8-20.3pp. Of the four FAIR dates of March-April 2024 two held (within ±15pp of SPY); 2024-03-28
+  beat SPY by 29.9pp and 2024-04-19 lagged it by 17.6pp. The two-year price landed nearest BASE on all 44 (0.77-1.38 times the BASE
+  price); the lowest close in 41 windows was the 2025-04-10 close, 4.4-6.2 times BEAR. The trailing anchors here sat mid-cycle (FY23's
+  $9.52 at the 17th-44th percentile), unlike the peak-year anchor of 2023, whose 48 CHEAP dates all failed.
+- **One year out, the 2025 FAIR and WATCHLIST dates did best.** Over one year the 70 CHEAP dates returned a median +7.1% (21 beat SPY)
+  and the 26 FAIR dates +45.5% (21 beat SPY): the 40 dates on FY24's $7.79 (January to October 2025, FAIR or CHEAP at 13-15x) had one-year
+  windows ending in 2026's rise and returned +23.7% to +67.3%, beating SPY on 39. Over six months the 26 RICH dates with an outcome
+  (2025-11-07 to 2026-05-01) returned a median +14.2% (-4.9% to +34.4%), beating SPY on 17. To 2026-10-30 the price rose a median +68.3%
+  from the CHEAP dates, +62.3% from the FAIR and +27.4% from the RICH ones. Six months and one year are not call checks; the RICH calls
+  are scored only from late 2027.
+- **The ranks split by horizon.** Over the 44 two-year dates the adjusted gap ranks the return to the m12-24 average at Spearman +0.74,
+  the market composite -0.71, Ratio B -0.57 and the proxy composite +0.47, the expected way round; the entry price and the EPP gap rank it
+  at -0.07. Over the 96 one-year dates the entry price ranks the return at -0.59, the proxy and market composites at +0.64 and +0.63 and
+  Ratio B at +0.64 (the wrong way): the later, richer-rated entries had windows ending in 2026's rise. Six batches that disagree; record
+  them, conclude nothing.
+- **The encoding calls, seen afterwards.** GAAP EPS would have moved 15 of the two-year CHEAP dates to FAIR (on FY23's $8.89); on these
+  outcomes FAIR would hold on 12 of them, where CHEAP holds on 10. BASE on production growth would have moved the 4 FAIR dates of
+  March-April 2024 to CHEAP, holding on 3 against 2; both together, 7 dates and 5 either way. The year-ago-volume call moves no date with
+  two years. The timing-effects figure, left out as recurring, and the redomiciliation change no class. The calls were decided before
+  scoring and stay.

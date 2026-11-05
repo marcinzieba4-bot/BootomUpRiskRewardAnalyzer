@@ -1,0 +1,51 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "XOM",
+ "as_of": "2025-09-05",
+ "computed": "2026-11-05",
+ "data_source": "Yahoo Finance daily closes + dividends (XOM, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-03-05",
+   "price": 150.76,
+   "dividends": 2.06,
+   "total_return_pct": 39.9,
+   "benchmark_total_return_pct": 5.9,
+   "excess_pct": 34.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2026-09-04",
+   "price": 159.47,
+   "dividends": 4.12,
+   "total_return_pct": 49.8,
+   "benchmark_total_return_pct": 20.2,
+   "excess_pct": 29.6,
+   "hurdle_pct": 15.0
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-10-30",
+   "price": 187.25
+  },
+  "low": {
+   "date": "2025-09-08",
+   "price": 109.85
+  },
+  "max_drawdown_pct": -20.7,
+  "return_to_avg_price_m12_m24_pct": 55.7
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DISRUPTION_EXPOSED",
+   "risk": 3
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "ExxonMobil: integrated major, Guyana/Permian; oil price",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

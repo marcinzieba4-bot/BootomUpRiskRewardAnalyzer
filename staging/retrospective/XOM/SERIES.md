@@ -839,3 +839,151 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2023-12-15 | $100.90 | Exxon Mobil Q3 2023 results | 2.40 | +1.24 | 0.30x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +24.5% | -23.2pp | +9.7% | ✗ |
 | 2023-12-22 | $101.91 | Exxon Mobil Q3 2023 results | 2.40 | +1.23 | 0.30x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +23.6% | -24.0pp | +8.8% | ✗ |
 | 2023-12-29 | $99.98 | Exxon Mobil Q3 2023 results | 2.40 | +1.25 | 0.29x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +28.4% | -19.3pp | +11.1% | ✗ |
+| 2024-01-05 | $102.63 | Exxon Mobil Q3 2023 results | 2.40 | +1.23 | 0.30x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +29.8% | -20.3pp | +8.5% | ✗ |
+| 2024-01-12 | $99.95 | Exxon Mobil Q3 2023 results | 2.40 | +1.25 | 0.29x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +31.9% | -16.9pp | +11.7% | ✗ |
+| 2024-01-19 | $96.95 | Exxon Mobil Q3 2023 results | 2.40 | +1.27 | 0.28x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +42.1% | -4.3pp | +15.4% | ✓ |
+| 2024-01-26 | $103.00 | Exxon Mobil Q3 2023 results | 2.40 | +1.23 | 0.31x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +38.5% | -6.5pp | +9.1% | ✓ |
+| 2024-02-02 | $101.97 | Exxon Mobil Q4 2023 results | 2.20 | +0.77 | 0.69x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +43.4% | -0.2pp | +10.8% | ✓ |
+| 2024-02-09 | $101.77 | Exxon Mobil Q4 2023 results | 2.20 | +0.77 | 0.69x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +56.3% | +15.0pp | +11.8% | ✓ |
+| 2024-02-16 | $103.73 | Exxon Mobil Q4 2023 results | 2.20 | +0.75 | 0.72x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +50.7% | +11.4pp | +10.3% | ✓ |
+| 2024-02-23 | $103.84 | Exxon Mobil Q4 2023 results | 2.20 | +0.75 | 0.72x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +52.8% | +15.6pp | +10.9% | ✓ |
+| 2024-03-01 | $105.84 | Exxon Mobil Q4 2023 results | 2.20 | +0.73 | 0.75x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +51.6% | +15.0pp | +9.4% | ✓ |
+| 2024-03-08 | $108.38 | Exxon Mobil Q4 2023 results | 2.20 | +0.67 | 0.79x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +46.8% | +12.6pp | +7.7% | ✓ |
+| 2024-03-15 | $111.27 | Exxon Mobil Q4 2023 results | 2.20 | +0.63 | 0.83x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +47.4% | +15.0pp | +5.6% | ✓ |
+| 2024-03-22 | $113.49 | Exxon Mobil Q4 2023 results | 2.20 | +0.58 | 0.87x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +47.7% | +20.4pp | +4.3% | ✓ |
+| 2024-03-28 | $116.24 | Exxon Mobil Q4 2023 results | 2.20 | +0.32 | 0.91x | ACCUMULATE | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +53.9% | +29.9pp | +2.7% | ✗ |
+| 2024-04-05 | $121.37 | Exxon Mobil Q4 2023 results | 2.20 | +0.26 | 1.01x | ACCUMULATE | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +38.9% | +9.6pp | -0.9% | ✓ |
+| 2024-04-12 | $120.37 | Exxon Mobil Q4 2023 results | 2.20 | +0.27 | 0.99x | ACCUMULATE | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +33.3% | -2.6pp | +0.8% | ✓ |
+| 2024-04-19 | $119.88 | Exxon Mobil Q4 2023 results | 2.20 | +0.28 | 0.98x | ACCUMULATE | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +28.8% | -17.6pp | +1.9% | ✗ |
+| 2024-04-26 | $117.96 | Exxon Mobil Q1 2024 results | 2.15 | +0.54 | 0.94x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | +33.0% | -10.4pp | +4.3% | ✓ |
+| 2024-05-03 | $116.00 | Exxon Mobil Q1 2024 results | 2.15 | +0.57 | 0.91x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +38.5% | -5.3pp | +6.8% | ✓ |
+| 2024-05-10 | $117.96 | Exxon Mobil Q1 2024 results | 2.15 | +0.54 | 0.94x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | +29.3% | -15.1pp | +5.8% | ✗ |
+| 2024-05-17 | $119.64 | Exxon Mobil Q1 2024 results | 2.15 | +0.51 | 0.97x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | +38.7% | -3.7pp | +5.0% | ✓ |
+| 2024-05-24 | $113.42 | Exxon Mobil Q1 2024 results | 2.15 | +0.81 | 0.87x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +43.6% | +0.1pp | +11.7% | ✓ |
+| 2024-05-31 | $117.26 | Exxon Mobil Q1 2024 results | 2.15 | +0.55 | 0.93x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +30.7% | -15.5pp | +8.7% | ✗ |
+| 2024-06-07 | $112.75 | Exxon Mobil Q1 2024 results | 2.15 | +0.82 | 0.85x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +40.1% | -0.8pp | +13.9% | ✓ |
+| 2024-06-14 | $109.11 | Exxon Mobil Q1 2024 results | 2.15 | +0.87 | 0.80x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +42.1% | +2.7pp | +18.4% | ✓ |
+| 2024-06-21 | $110.76 | Exxon Mobil Q1 2024 results | 2.15 | +0.85 | 0.82x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +31.6% | -8.2pp | +17.1% | ✗ |
+| 2024-06-28 | $115.12 | Exxon Mobil Q1 2024 results | 2.15 | +0.58 | 0.89x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +25.6% | -11.1pp | +13.1% | ✗ |
+| 2024-07-05 | $113.37 | Exxon Mobil Q1 2024 results | 2.15 | +0.81 | 0.86x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +28.0% | -9.0pp | +15.2% | ✗ |
+| 2024-07-12 | $113.27 | Exxon Mobil Q1 2024 results | 2.15 | +0.81 | 0.86x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +29.7% | -7.8pp | +15.8% | ✗ |
+| 2024-07-19 | $116.07 | Exxon Mobil Q1 2024 results | 2.15 | +0.56 | 0.91x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +33.9% | -4.2pp | +13.6% | ✓ |
+| 2024-07-26 | $117.33 | Exxon Mobil Q1 2024 results | 2.15 | +0.54 | 0.93x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | +40.6% | +2.2pp | +13.1% | ✓ |
+| 2024-08-02 | $116.88 | Exxon Mobil Q2 2024 results | 2.55 | +1.17 | 0.64x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +39.8% | -3.1pp | +14.3% | ✓ |
+| 2024-08-09 | $118.85 | Exxon Mobil Q2 2024 results | 2.55 | +1.15 | 0.66x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +35.5% | -12.3pp | +13.2% | ✓ |
+| 2024-08-16 | $118.17 | Exxon Mobil Q2 2024 results | 2.55 | +1.16 | 0.66x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +41.4% | -1.3pp | +14.7% | ✓ |
+| 2024-08-23 | $116.32 | Exxon Mobil Q2 2024 results | 2.55 | +1.18 | 0.64x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +48.9% | +10.1pp | +17.5% | ✓ |
+| 2024-08-30 | $117.94 | Exxon Mobil Q2 2024 results | 2.55 | +1.16 | 0.65x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +39.7% | +0.6pp | +16.7% | ✓ |
+| 2024-09-06 | $112.64 | Exxon Mobil Q2 2024 results | 2.55 | +1.43 | 0.60x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +48.7% | +3.5pp | +23.0% | ✓ |
+| 2024-09-13 | $111.15 | Exxon Mobil Q2 2024 results | 2.55 | +1.45 | 0.58x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +56.6% | +18.0pp | +25.5% | ✓ |
+| 2024-09-20 | $115.27 | Exxon Mobil Q2 2024 results | 2.55 | +1.19 | 0.63x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +48.9% | +12.2pp | +21.9% | ✓ |
+| 2024-09-27 | $115.82 | Exxon Mobil Q2 2024 results | 2.55 | +1.18 | 0.63x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | +45.6% | +8.1pp | +22.1% | ✓ |
+| 2024-10-04 | $124.83 | Exxon Mobil Q2 2024 results | 2.55 | +1.09 | 0.73x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +37.9% | +0.9pp | +14.1% | ✓ |
+| 2024-10-11 | $123.61 | Exxon Mobil Q2 2024 results | 2.55 | +1.10 | 0.72x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +43.2% | +6.3pp | +16.1% | ✓ |
+| 2024-10-18 | $120.01 | Exxon Mobil Q2 2024 results | 2.55 | +1.13 | 0.68x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +55.9% | +22.8pp | +20.6% | ✓ |
+| 2024-10-25 | $119.49 | Exxon Mobil Q2 2024 results | 2.55 | +1.13 | 0.67x | BUY | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +60.1% | +26.3pp | +22.2% | ✓ |
+| 2024-11-01 | $114.95 | Exxon Mobil Q3 2024 results | 2.45 | +0.92 | 0.89x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | +69.9% | +35.0pp | +28.2% | ✓ |
+| 2024-11-08 | $121.11 | Exxon Mobil Q3 2024 results | 2.45 | +0.83 | 1.00x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +22.5% | - |
+| 2024-11-15 | $119.31 | Exxon Mobil Q3 2024 results | 2.45 | +0.86 | 0.97x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +24.9% | - |
+| 2024-11-22 | $121.79 | Exxon Mobil Q3 2024 results | 2.45 | +0.82 | 1.02x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +22.9% | - |
+| 2024-11-29 | $117.96 | Exxon Mobil Q3 2024 results | 2.45 | +0.87 | 0.94x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +27.4% | - |
+| 2024-12-06 | $113.57 | Exxon Mobil Q3 2024 results | 2.45 | +1.15 | 0.87x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +32.9% | - |
+| 2024-12-13 | $110.84 | Exxon Mobil Q3 2024 results | 2.45 | +1.19 | 0.82x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +36.9% | - |
+| 2024-12-20 | $105.87 | Exxon Mobil Q3 2024 results | 2.45 | +1.27 | 0.75x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +44.1% | - |
+| 2024-12-27 | $106.48 | Exxon Mobil Q3 2024 results | 2.45 | +1.25 | 0.76x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +43.8% | - |
+| 2025-01-03 | $107.86 | Exxon Mobil Q3 2024 results | 2.45 | +1.23 | 0.78x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +42.5% | - |
+| 2025-01-10 | $106.54 | Exxon Mobil Q3 2024 results | 2.45 | +1.25 | 0.76x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +45.0% | - |
+| 2025-01-17 | $112.32 | Exxon Mobil Q3 2024 results | 2.45 | +1.16 | 0.86x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +38.1% | - |
+| 2025-01-24 | $108.66 | Exxon Mobil Q3 2024 results | 2.45 | +1.21 | 0.82x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 8/8 CHEAP | - | - | +43.2% | - |
+| 2025-01-31 | $106.83 | Exxon Mobil Q4 2024 results | 2.80 | +1.00 | 1.40x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +46.1% | - |
+| 2025-02-07 | $108.89 | Exxon Mobil Q4 2024 results | 2.80 | +0.96 | 1.50x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +43.6% | - |
+| 2025-02-14 | $108.24 | Exxon Mobil Q4 2024 results | 2.80 | +0.97 | 1.47x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +44.6% | - |
+| 2025-02-21 | $110.69 | Exxon Mobil Q4 2024 results | 2.80 | +0.88 | 1.08x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +41.5% | - |
+| 2025-02-28 | $111.33 | Exxon Mobil Q4 2024 results | 2.80 | +0.87 | 1.11x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +40.9% | - |
+| 2025-03-07 | $109.02 | Exxon Mobil Q4 2024 results | 2.80 | +0.90 | 1.06x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +44.0% | - |
+| 2025-03-14 | $111.90 | Exxon Mobil Q4 2024 results | 2.80 | +0.86 | 1.12x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +40.5% | - |
+| 2025-03-21 | $115.50 | Exxon Mobil Q4 2024 results | 2.80 | +0.81 | 1.21x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | - | - | +36.0% | - |
+| 2025-03-28 | $117.73 | Exxon Mobil Q4 2024 results | 2.80 | +0.78 | 1.27x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +33.2% | - |
+| 2025-04-04 | $104.34 | Exxon Mobil Q4 2024 results | 2.80 | +0.97 | 0.96x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +50.1% | - |
+| 2025-04-11 | $103.14 | Exxon Mobil Q4 2024 results | 2.80 | +0.98 | 0.96x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +51.8% | - |
+| 2025-04-17 | $106.92 | Exxon Mobil Q4 2024 results | 2.80 | +0.91 | 1.05x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +46.7% | - |
+| 2025-04-25 | $108.57 | Exxon Mobil Q4 2024 results | 2.80 | +0.89 | 1.11x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +44.7% | - |
+| 2025-05-02 | $106.21 | Exxon Mobil Q1 2025 results | 2.45 | +0.60 | 1.05x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +48.1% | - |
+| 2025-05-09 | $107.31 | Exxon Mobil Q1 2025 results | 2.45 | +0.58 | 1.09x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +46.9% | - |
+| 2025-05-16 | $108.19 | Exxon Mobil Q1 2025 results | 2.45 | +0.57 | 1.12x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +45.9% | - |
+| 2025-05-23 | $103.03 | Exxon Mobil Q1 2025 results | 2.45 | +0.65 | 1.01x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +53.2% | - |
+| 2025-05-30 | $102.30 | Exxon Mobil Q1 2025 results | 2.45 | +0.66 | 1.00x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +54.6% | - |
+| 2025-06-06 | $104.27 | Exxon Mobil Q1 2025 results | 2.45 | +0.60 | 1.06x | ACCUMULATE | TRANSITION-FEAR BASKET (CHEAP) | 7/8 CHEAP | - | - | +52.1% | - |
+| 2025-06-13 | $112.12 | Exxon Mobil Q1 2025 results | 2.45 | +0.49 | 1.29x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +41.8% | - |
+| 2025-06-20 | $114.70 | Exxon Mobil Q1 2025 results | 2.45 | +0.45 | 1.39x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +39.3% | - |
+| 2025-06-27 | $109.38 | Exxon Mobil Q1 2025 results | 2.45 | +0.53 | 1.23x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | - | - | +47.2% | - |
+| 2025-07-03 | $112.20 | Exxon Mobil Q1 2025 results | 2.45 | +0.49 | 1.31x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +44.5% | - |
+| 2025-07-11 | $115.43 | Exxon Mobil Q1 2025 results | 2.45 | +0.45 | 1.43x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +41.7% | - |
+| 2025-07-18 | $107.77 | Exxon Mobil Q1 2025 results | 2.45 | +0.55 | 1.23x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | - | - | +52.9% | - |
+| 2025-07-25 | $110.40 | Exxon Mobil Q1 2025 results | 2.45 | +0.50 | 1.32x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +49.9% | - |
+| 2025-08-01 | $109.64 | Exxon Mobil Q2 2025 results | 3.10 | +0.98 | 1.32x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +51.6% | - |
+| 2025-08-08 | $106.80 | Exxon Mobil Q2 2025 results | 3.10 | +1.02 | 1.25x | WATCHLIST | TRANSITION-FEAR BASKET (CHEAP) | 6/8 CHEAP | - | - | +56.6% | - |
+| 2025-08-15 | $106.49 | Exxon Mobil Q2 2025 results | 3.10 | +1.01 | 1.29x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +57.7% | - |
+| 2025-08-22 | $111.28 | Exxon Mobil Q2 2025 results | 3.10 | +0.95 | 1.47x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +51.2% | - |
+| 2025-08-29 | $114.29 | Exxon Mobil Q2 2025 results | 3.10 | +0.90 | 1.59x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +48.1% | - |
+| 2025-09-05 | $109.23 | Exxon Mobil Q2 2025 results | 3.10 | +0.98 | 1.38x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +55.7% | - |
+| 2025-09-12 | $112.16 | Exxon Mobil Q2 2025 results | 3.10 | +0.94 | 1.53x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +52.2% | - |
+| 2025-09-19 | $112.82 | Exxon Mobil Q2 2025 results | 3.10 | +0.92 | 1.56x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +52.1% | - |
+| 2025-09-26 | $117.22 | Exxon Mobil Q2 2025 results | 3.10 | +0.87 | 1.74x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +48.1% | - |
+| 2025-10-03 | $113.26 | Exxon Mobil Q2 2025 results | 3.10 | +0.92 | 1.57x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +55.3% | - |
+| 2025-10-10 | $110.73 | Exxon Mobil Q2 2025 results | 3.10 | +0.94 | 1.62x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +61.4% | - |
+| 2025-10-17 | $112.24 | Exxon Mobil Q2 2025 results | 3.10 | +0.91 | 1.75x | AVOID | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +60.3% | - |
+| 2025-10-24 | $115.39 | Exxon Mobil Q2 2025 results | 3.10 | +0.87 | 1.95x | AVOID | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +56.4% | - |
+| 2025-10-31 | $114.36 | Exxon Mobil Q3 2025 results | 2.90 | +0.73 | 1.96x | AVOID | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +53.4% | - |
+| 2025-11-07 | $117.22 | Exxon Mobil Q3 2025 results | 2.90 | +0.68 | 2.18x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-11-14 | $119.29 | Exxon Mobil Q3 2025 results | 2.90 | +0.65 | 2.33x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-11-21 | $117.08 | Exxon Mobil Q3 2025 results | 2.90 | +0.68 | 2.17x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-11-28 | $115.92 | Exxon Mobil Q3 2025 results | 2.90 | +0.70 | 2.14x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-05 | $116.54 | Exxon Mobil Q3 2025 results | 2.90 | +0.68 | 2.18x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-12 | $118.82 | Exxon Mobil Q3 2025 results | 2.90 | +0.65 | 2.34x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-19 | $116.69 | Exxon Mobil Q3 2025 results | 2.90 | +0.68 | 2.19x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-26 | $119.11 | Exxon Mobil Q3 2025 results | 2.90 | +0.65 | 2.36x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-02 | $122.65 | Exxon Mobil Q3 2025 results | 2.90 | +0.60 | 2.72x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-09 | $124.61 | Exxon Mobil Q3 2025 results | 2.90 | +0.58 | 2.91x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-16 | $129.89 | Exxon Mobil Q3 2025 results | 2.90 | +0.51 | 3.53x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-23 | $134.97 | Exxon Mobil Q3 2025 results | 2.90 | +0.46 | 4.35x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-30 | $141.40 | Exxon Mobil Q4 2025 results | 3.10 | +0.43 | infx | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-06 | $149.05 | Exxon Mobil Q4 2025 results | 3.10 | +0.33 | infx | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-13 | $148.45 | Exxon Mobil Q4 2025 results | 3.10 | +0.24 | infx | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-20 | $147.28 | Exxon Mobil Q4 2025 results | 3.10 | +0.32 | 6.53x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-27 | $152.50 | Exxon Mobil Q4 2025 results | 3.10 | +0.26 | 9.06x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-06 | $151.21 | Exxon Mobil Q4 2025 results | 3.10 | +0.27 | 8.29x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-13 | $156.12 | Exxon Mobil Q4 2025 results | 3.10 | +0.19 | 12.13x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-20 | $159.67 | Exxon Mobil Q4 2025 results | 3.10 | +0.16 | 17.73x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-27 | $170.99 | Exxon Mobil Q4 2025 results | 3.10 | +0.09 | infx | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-02 | $160.69 | Exxon Mobil Q4 2025 results | 3.10 | +0.15 | 20.34x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-10 | $152.51 | Exxon Mobil Q4 2025 results | 3.10 | +0.22 | 9.07x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-17 | $146.44 | Exxon Mobil Q4 2025 results | 3.10 | +0.31 | 6.24x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-24 | $148.91 | Exxon Mobil Q4 2025 results | 3.10 | +0.27 | 7.17x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-01 | $152.75 | Exxon Mobil Q1 2026 results | 2.75 | -0.05 | 9.23x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-08 | $144.57 | Exxon Mobil Q1 2026 results | 2.75 | +0.05 | 5.66x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-15 | $157.92 | Exxon Mobil Q1 2026 results | 2.75 | -0.11 | 14.48x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-22 | $154.92 | Exxon Mobil Q1 2026 results | 2.75 | -0.08 | 10.93x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-29 | $145.26 | Exxon Mobil Q1 2026 results | 2.75 | +0.04 | 5.86x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-05 | $149.92 | Exxon Mobil Q1 2026 results | 2.75 | -0.02 | 7.63x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-12 | $147.01 | Exxon Mobil Q1 2026 results | 2.75 | +0.02 | 6.43x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-18 | $137.81 | Exxon Mobil Q1 2026 results | 2.75 | +0.12 | 4.17x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-26 | $136.54 | Exxon Mobil Q1 2026 results | 2.75 | +0.15 | 3.96x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-02 | $137.09 | Exxon Mobil Q1 2026 results | 2.75 | +0.13 | 4.05x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-10 | $138.88 | Exxon Mobil Q1 2026 results | 2.75 | +0.11 | 4.36x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-17 | $147.36 | Exxon Mobil Q1 2026 results | 2.75 | -0.00 | 6.56x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-24 | $156.94 | Exxon Mobil Q1 2026 results | 2.75 | -0.11 | 13.10x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-07-31 | $155.44 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.45 | 1.49x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-07 | $153.04 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.48 | 1.43x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-14 | $160.10 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.37 | 1.61x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-21 | $165.11 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.30 | 1.76x | AVOID | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-28 | $156.71 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.42 | 1.52x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-04 | $159.47 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.38 | 1.59x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-11 | $165.99 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.28 | 1.79x | AVOID | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-18 | $163.54 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.32 | 1.71x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-25 | $160.59 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.36 | 1.63x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-10-02 | $164.01 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.31 | 1.73x | WATCHLIST | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-10-09 | $168.94 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.24 | 1.89x | AVOID | TRANSITION-EXPOSED, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-10-16 | $178.98 | ExxonMobil Holdings Q2 2026 results | 2.50 | +0.11 | 2.29x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-23 | $183.21 | ExxonMobil Holdings Q2 2026 results | 2.50 | -0.04 | 2.49x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-30 | $187.25 | ExxonMobil Holdings Q3 2026 results | 2.45 | -0.42 | 5.52x | AVOID | TRANSITION-EXPOSED, NOT CHEAP (RICH) | 7/8 RICH | - | - | - | - |

@@ -1,0 +1,65 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "XOM",
+ "as_of": "2024-02-09",
+ "computed": "2026-11-05",
+ "data_source": "Yahoo Finance daily closes + dividends (XOM, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2024-08-09",
+   "price": 118.85,
+   "dividends": 1.9,
+   "total_return_pct": 18.6,
+   "benchmark_total_return_pct": 7.0,
+   "excess_pct": 11.6,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-02-07",
+   "price": 108.89,
+   "dividends": 3.84,
+   "total_return_pct": 10.8,
+   "benchmark_total_return_pct": 21.3,
+   "excess_pct": -10.5,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2026-02-09",
+   "price": 151.21,
+   "dividends": 7.84,
+   "total_return_pct": 56.3,
+   "benchmark_total_return_pct": 41.3,
+   "excess_pct": 15.0,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-02-09",
+   "price": 151.21
+  },
+  "low": {
+   "date": "2025-04-10",
+   "price": 99.93
+  },
+  "max_drawdown_pct": -20.3,
+  "return_to_avg_price_m12_m24_pct": 11.8
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DISRUPTION_EXPOSED",
+   "risk": 3
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "ExxonMobil: integrated major, Guyana/Permian; oil price",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
