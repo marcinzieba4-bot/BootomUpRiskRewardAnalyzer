@@ -6582,13 +6582,16 @@ beside the others, with the same `index.json` and their own `SERIES.md`.
 
 ```bash
 python3 retro/build_xom.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
-for d in staging/retrospective/XOM/2008-*/; do
+python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31                   # 209 dates, 2009-01-09 .. 2012-12-31
+for d in staging/retrospective/XOM/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series XOM
 python3 retro/tools/firewall.py 2008-07-01 XOM
 python3 retro/tools/firewall.py 2009-01-01 XOM
+python3 retro/tools/firewall.py 2011-01-01 XOM
+python3 retro/tools/firewall.py 2013-01-01 XOM
 ```
 
 The 10-Ks from FY1999 to FY2007 were read for the history and the decade's signal values (the FY1999-FY2001 10-Ks are plain-text
@@ -6722,6 +6725,97 @@ Judgement calls that could carry hindsight:
 - leaving the alternative-energy and climate-change wording in the "why" rather than reading it as an early energy-transition theme (the
   registry's live date stands; text only either way).
 
+### XOM 2009-2012: the 2009 trough as an anchor, the XTO merger, production outlooks in numbers
+
+Every 8-K, 10-Q and 10-K of February 2009 to February 2013 was read (65 filings, the four analyst-meeting transcripts and slide decks
+among them). The prints were extracted by script from each release and checked twice: 255 strings with `verbatim.py` against their own
+filings, and every volume against the release's own narrative and its Investor Relations Data Summary. Decided on 2026-11-05, before any
+2009-2012 date was built or scored:
+
+- **Four 10-K vintages, each with a Q4 print before it.** The FY2008 10-K (accepted 2009-02-27 16:16 ET, dated 2009-03-02), FY2009
+  (2010-02-26 16:17 ET, dated 2010-03-01), FY2010 (2011-02-25 16:07 ET, dated 2011-02-28) and FY2011 (2012-02-24 16:08 ET, dated
+  2012-02-27). The FY2010 10-K/A of 2011-02-28 adds the auditors' conformed signature and corrects typographical errors ("no changes in
+  any of the financial or other information"), so it adds nothing. Each Q4 release extends the history with its year until the 10-K.
+- **Release timing.** Every earnings 8-K of the period was accepted before the open (08:55-09:29 ET) except the Q4 2011 release (09:45 ET,
+  during the session). The Q4 2008 print came on Friday 2009-01-30, so that day is the week's date and meets its close (the 2008 rule); the
+  Q4 2009 and Q4 2010 prints came on Mondays and the Q4 2011 print on a Tuesday, so those weeks are dated the next day (2010-02-02,
+  2011-02-01, 2012-02-01); the Thursday prints date their weeks the Friday.
+- **The 2009 accounting changes, as published.** From 2009 ExxonMobil reports noncontrolling interests inside income before income taxes
+  and counts unvested share-based awards in basic EPS (both adopted on January 1, 2009). Each release from Q1 2009 shows its year-ago quarter
+  restated, which the print takes as the release shows it (the MSFT recast rule: Q1 2008 income before income taxes $20,474M against
+  $20,192M first reported). The FY2009 10-K restates 2005-2008 EPS ($5.70, $6.60, $7.26, $8.66) and 2007-2008 income before income taxes;
+  each year comes from the latest filing that reports it. One seam stays: 2005 and 2006 keep the company's figures excluding special items
+  ($5.35, $6.55), first published on the earlier basis and never republished.
+- **EPS:** a year with special items takes the company's per-share figure excluding them from the latest filing that publishes one, a year
+  without them GAAP from the latest 10-K (the 2008 rule, unchanged). 2008 is $8.47 from the Q4 2008 release (the German gas transport gain
+  and the Valdez charges, $1,160M net; GAAP $8.69), restated to $8.44 by the Q4 2009 release under the new EPS rule ('restates': the history
+  carries it from 2010-02-02, the FY2009 10-K from 2010-03-01); 2009 is $4.01 (a $140M Valdez interest charge; GAAP $3.98); 2007 is $7.26
+  from the FY2009 10-K; 2010 and 2011 had no special items ($6.22, $8.42). The Q2 2012 release's "net gain of $7.5 billion associated with
+  divestments and tax-related items" (the Japan restructuring among them) is not a special item and no figure excluding it is published, so
+  it stays in (the ACN Russia rule): it lifts the Q2 2012 pre-tax margin by 573bp (XBULL).
+- **Still no earnings, revenue or margin guide in numbers**, so the 2008 rules apply on every date: the last full year's EPS stands, BASE
+  takes the latest quarter's revenue growth, and the margin signal the latest quarter's change. From 2009 each analyst meeting states the
+  current year's production in numbers: "we expect production in the range of 4 million oil-equivalent barrels per day in 2009" (8-K of
+  2009-03-11, after the close: from 2009-03-12), "we continue to expect production to grow between 3% and 4% this year" (8-K of 2010-03-17,
+  after the close: from 2010-03-18), "Volumes growth remains strong • 2010-2011: 3 to 4 percent" (8-K of 2011-03-15) and "Volume outlook:
+  2011 to 2012: down 3 percent" at 2011 prices (8-K of 2012-03-14). Method r2 has no volume input, so each is shown in the guide line and
+  catalyst (3) for its year and feeds nothing (the UNP volume-guide rule). Each release's statement of the next quarter's share purchases
+  ("currently anticipated to equal $5 billion in the fourth quarter of 2010") goes into the capital-return line, display only.
+- **The XTO Energy merger** (agreement 2009-12-13, 8-K accepted 2009-12-14 17:24 ET; closed 2010-06-25 with 416 million shares issued) adds
+  no guided number. Acquisitions stay in, as published (the PEP rule): production grows 20.5% in Q3 2010 and 18.9% in Q4 2010, and the
+  diluted share count of 2010 (4,897M) is above 2009's (4,848M).
+- **Dividends,** each from the first filing that states the rate: $0.40 (FY2008 10-K), $0.42 from the Q2 2009 release, $0.44 from the Q2
+  2010 release, $0.47 from the Q2 2011 release, $0.57 from the Q2 2012 release, and each January declaration in its 10-K.
+- **Durability: CYCLICAL, risk 2, unchanged.** From the FY2009 10-K the risk factors are rewritten: "The oil, gas, and petrochemical
+  businesses are fundamentally commodity businesses", and a new risk factor, "Climate change and greenhouse gas restrictions", says such
+  rules "could make our products more expensive and reduce demand for hydrocarbons, as well as shifting hydrocarbon demand toward relatively
+  lower-carbon sources such as natural gas" (from the FY2010 10-K: "could make our products more expensive, lengthen project implementation
+  times, and reduce demand for hydrocarbons"). ENERGY_TRANSITION is live only from 2015-12-12, so these words join the "why" (the PEP obesity
+  rule, as MSFT's cloud risk factor of 2010). XOM's FY2009 10-K (2010-03-01) is an earlier verified company acknowledgment of the theme than
+  the registry's basis (the Paris Agreement); whether to move ENERGY_TRANSITION's date is left to the owner, and moving it would change text
+  only unless dated evidence showed the market pricing it.
+- **Adds nothing:** the Valdez 8-K of 2009-06-19 (an after-tax charge "of about $150 million will be recorded in the second quarter of
+  2009", booked as $140M), the XTO 8-Ks (2009-12-14, 2010-03-16, 2010-06-25), the Baltimore verdict (2011-07-07), the reserves releases, the
+  Financial and Operating Reviews, the director-fee, bylaw, annual-meeting, officer and compensation 8-Ks, and the 10-Qs beyond their
+  dividends.
+
+Controls: altering one value of each new print (with each Q4 print's full-year actuals and the Q4 2009 restatement of 2008), vintage,
+dividend and production outlook changes no date before its publication and changes the first weekly date on or after it (33 of 33). The 53
+dates of 2008 rebuild byte-identical. A scan of all 262 XOM models for the figures and notes of every later print, vintage, dividend and
+outlook finds none before its publication (0 of 19,842).
+
+Seen in the build (method behaviour, not tuned):
+- **2009: CHEAP and BUY on all 52 dates**, robustness 8 of 8. FY08's $8.47 is the anchor all year (7.6-10.7x); BASE is negative from the Q4
+  2008 print (-24.3%, -41.8%, -42.7% and -36.9%/yr: revenue -27% to -46%), but BULL is the decade CAGR (21-24%) and XBULL the 2002-2004 run
+  (+53.3%) at the window's 75th and 90th percentile multiples (17-19x and 20-26x), so Ratio B stays at 0.11-0.23 and the EPP gap at -24% to
+  +7%.
+- **The trough becomes the anchor and the bear.** From the Q4 2009 print FY09's $4.01 is the EPS anchor (16.7x) and the 2009 fall (-52.5%:
+  $8.44 to $4.01) the decade's worst year, so BEAR is -52.5%/yr for two years: a BEAR price of $9 to 2011-01-28, $13 on FY10's $6.22 and
+  $18 on FY11's $8.42. It stays until 2009 leaves the window. RICH and AVOID on all 12 dates of 2010-02-02 to 2010-04-23 (Ratio B 2.2-3.6).
+- **BASE follows revenue, so it follows the oil price:** +45.2%/yr from the Q1 2010 print (revenue +41.0%; CHEAP and BUY on 13 dates),
+  +28.4% from Q2 2010 (CHEAP, ACCUMULATE or WATCHLIST), +20.0% from Q3 2010 (FAIR on 3 dates, RICH on 11 to 2011-01-28 at 17.6-19.7x FY09's
+  EPS); from the Q4 2010 print, on FY10's $6.22: CHEAP on all 50 dates to 2012-01-13 (+20.8% to +39.7%/yr; FAIR on 2012-01-20); on FY11's $8.42 from
+  2012-02-01, CHEAP and FAIR alternate to July (BASE +19.2% then +12.6%), FAIR on the 14 dates of the Q2 2012 print (+5.3%) and RICH on the
+  10 of Q3 2012 (revenue -7.7%, BASE -3.9%).
+- **Totals over the 209 dates:** CHEAP 148, FAIR 28, RICH 33; BUY 90, ACCUMULATE 74, WATCHLIST 20, AVOID 25; robustness 8 of 8 on 92 dates,
+  4-5 of 8 on 25 (mostly 2012, where the price sits near the BASE case).
+- **The proxy composite** ranges from 1.55 (Q2 2009) to 3.25 (Q3 2010, with production +20.5% at XBULL); the market composite from 1.38 to
+  2.82.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed; no outcome consulted):
+- GAAP EPS in every year instead of the company's figures excluding special items would change 21 classes (1 in 2010, 2 in 2011, 18 in
+  2012, mostly CHEAP to FAIR in December 2011-March 2012, as 2008's $8.66 deepens BEAR to -54%) and 37 tiers;
+- BASE on the latest quarter's oil-equivalent production growth instead of revenue growth would change 70 classes (33 in 2010 and 30 in
+  2011, mostly CHEAP to RICH from the Q1 2010 print) and 74 tiers: in 2010-2011 the revenue fallback, not the business, decides the class;
+- both together: 84 classes and 99 tiers.
+
+Judgement calls that could carry hindsight (in addition to the 2008 list, which stands):
+- the production outlooks kept as display only, although they are the one forward number the company gives (method r2 has no volume input;
+  using one would be a new method version);
+- the company's figures excluding special items, 2008's and 2009's among them (21 classes move without them), and the 2005-2006 seam;
+- the Q2 2012 gains left in, as no figure excluding them was published;
+- the climate-change risk factor left in the "why" rather than putting ENERGY_TRANSITION on the watch list before its registry date (text only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -6845,6 +6939,10 @@ What the gates enforce:
   competitiveness of alternative hydrocarbon or other energy sources" and laws "addressing alternative energy sources and the risks of global
   climate change" among the factors behind its results, which no live theme covers; the wording stays in the durability "why" (the PEP
   obesity rule). XOM is also the first ticker filed CYCLICAL rather than DURABLE, on the 10-K's own "fundamentally a commodity business".
+  The list stays empty through 2012: from the FY2009 10-K (2010-03-01) a risk factor headed "Climate change and greenhouse gas
+  restrictions" says such rules could "reduce demand for hydrocarbons", but ENERGY_TRANSITION is not live until 2015-12-12, so those words
+  join the "why" too; XOM's FY2009 10-K is an earlier verified filing of the risk than the registry's basis, and whether to move the date is
+  left to the owner ("XOM 2009-2012").
 
 ## Workflow
 

@@ -18,7 +18,7 @@ dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in wo
 CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter; PEP: a display-only guide, and total servings that a filing after CUTOFF
 first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange; MSFT: a guide with every guided field, a later
 range for every quarter the fact sheet guides, a later withdrawal of every guided year, call-only guidance words and a receivables
-caveat; XOM: a guide and a dividend, and a later print with outlook words; a CLOUD event
+caveat; XOM: a guide with a production outlook for every guided year and a dividend, and a later print with outlook words; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -109,6 +109,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             prior_label="PLANTED", prior_sales_m=1, prior_source="V1", yoy_pct=[-50, -40], quote="PLANTED",
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
+               "XOM": dict(production_quote="PLANTED", note="PLANTED"),
                "MSFT": dict(rev_guide_usd_b=[0.1, 0.2], op_income_guide_usd_b=[0.1, 0.2], note="PLANTED", opex_guide_usd_b=[0.1, 0.2],
                             q_guide={"quarter": "Q4 FY99", "sales_usd_b": [0.1, 0.2], "op_income_usd_b": [0.1, 0.2], "eps": [0.1, 0.2],
                                      "eps_words": "PLANTED", "prior_sales_b": 99.0, "prior_source": "MS1", "prior_label": "PLANTED"})}.get(TICKER, {})

@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  XOM  ·  Exxon Mobil Corporation  ·  $91.92  ·  RETROSPECTIVE as of 2012-09-21
+  Signal: ◐ WATCHLIST   Ratio B: 1.21x   Adj gap: -0.16  [FAIRLY VALUED]
+  Point-in-time: 21 sources, latest published 2012-09-21; latest print Q2 2012 (Jul 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2012E revenues, USD bn  →  FY2014E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2012E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Upstream                  $    49.1  $  49.1  $  59.5      +0.0     +10.4
+    +32.9% revenues in FY11
+  Downstream                $   400.3  $ 400.3  $ 485.3      +0.0     +85.0
+    +26.4% revenues in FY11
+  Chemical                  $    44.3  $  44.3  $  53.8      +0.0      +9.5
+    +18.1% revenues in FY11
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   493.7  $ 493.7  $ 598.6      +0.0    +104.9
+  FY2012E = FY11 $486.43B × (1 + 1.5%: no Q3 2012 revenue guide, Q2 2012 revenue as reported, applied to the year (no FY12 revenue guide)); split pro rata to FY11 segment sales and other operating revenue (FY2011 10-K; corporate $22M not shown)
+  Q2 2012 (Jul 26): total revenues $127.36B +1.5%; oil-equivalent production -5.6%; product sales -2.5%;
+  chemical sales -3.4%; pre-tax margin 20.56% (+572.7bp); EPS $3.41 vs $2.18
+  Volumes: oil-equivalent production -5.6% ('On an oil-equivalent basis, production decreased 5.6% from the second quarter of 2011. Excluding the impacts of entitlement volumes, OPEC quota effects and divestments, production was essentially flat.'); petroleum product sales -2.5%; chemical prime product sales -3.4%; revenue +1.5% as reported (total revenues and other income $127,363M vs $125,486M (the release; its only revenue line)); EPS no special items; earnings included a net gain of $7.5 billion associated with divestments and tax-related items, for which no figure excluding it is published
+  FY12: no earnings, revenue or margin guide in numbers (BASE takes Q2 2012 revenue growth); production outlook (analyst meeting slides (8-K of 2012-03-14)): 'Volume outlook: 2011 to 2012: down 3 percent' (projections based on 2011 average prices ($111/B Brent), excluding divestments and OPEC quota effects; display only: method r2 has no volume input)
+
+  FY2012E EPS check:  $493.7B × 15.1% pre-tax × (1−42.4%) ÷ 4.657B  =  $9.20  (FY2012E: no EPS guide in numbers, FY11's $8.42 stands)
+  FY2014E BEAR check: $493.7B × 15.1% ÷ 4.312B  =  $9.93  (scenario $1.90)
+  FY2014E BULL check: $598.6B × 15.5% ÷ 4.312B  =  $12.36  (scenario $12.03)
+  Every 1pp of pre-tax margin ≈ $0.61 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production           -7.0%   ≥-4.0%   ≥-1.0%    ≥4.0%     -5.6%  ⚠ BEAR  █░░░
+  Petroleum product sales            -20.0%  ≥-10.0%    ≥0.0%    ≥3.0%     -2.5%  ◦ BASE  ██░░
+  Revenue growth                     -41.0%  ≥-16.0%    ≥9.0%   ≥25.0%     +1.5%  ◦ BASE  ██░░
+  Chemical prime product sales        -9.0%   ≥-4.0%    ≥1.0%    ≥7.0%     -3.4%  ◦ BASE  ██░░
+  Pre-tax margin change             -630.0bp  ≥-270.0bp  ≥90.0bp  ≥560.0bp  +572.7bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.10 / 4.00
+  Market composite:   2.27 / 4.00  (back-solved from $92 + 15% hurdle)
+  SCA adjustment:    +0.01  ·  EPP-distance adj +0.00  →  Adj composite 2.11  →  Gap -0.16  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY11 revenue +26.9%, oil-equivalent production +1.3% (4,506 koebd vs 4,447, FY2011 10-K); Q2 pre-tax margin 20.56% (+573bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 10.9x FY12E vs a 10.8x 10-yr median (53rd percentile of its own range)  (-0.05 × 25%  =  -0.013)
+    -  Growth vs own history: no Q3 2012 revenue guide, Q2 2012 revenue as reported +1.5% vs a 20.7% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and cash equivalents $18.00B, FY11 free cash flow $24.37B, dividend $2.28 a year, $22,055M of common stock acquired and $9,020M of dividends paid in FY11  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production            -5.6%     -7.0%   -1.4%  Field decline and entitlements outrun…
+  Petroleum product sales              -2.5%    -20.0%  -17.5%  Fuel demand falls with the economy
+  Revenue growth                       +1.5%    -41.0%  -42.5%  Crude, gas and product prices fall to…
+  Chemical prime product sales         -3.4%     -9.0%   -5.6%  Petrochemical demand follows industry…
+  Pre-tax margin change             +572.7bp  -630.0bp  -1202.7bp  Costs stay up while prices and margin…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$47  (model)  /  $18 (defined)
+  Bear probability (proxy model):  16.3%
+
+  KEY TRIGGER: oil-equivalent production went from -5.5% (Q1 2012) to -5.6% (Q2 2012);
+  the bear case needs a commodity-price fall that the pre-tax margin (+572.7bp now)
+  and product sales (-2.5% now) no longer absorb. Prices drive earnings, by the company's own account; the bear needs crude
+  and gas realizations to fall, not only volumes.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.42  (FY2012E: no EPS guide in numbers, FY11's $8.42 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2002 18.9x, 2003 12.4x, 2004 10.1x, 2005 9.3x, 2006 8.6x, 2007 9.6x, 2008 7.4x, 2009 15.5x, 2010 9.1x, 2011 8.1x, 2012 9.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $76/share
+  Current $92 vs Updated EPP $76:  +21%  moderate distance to floor
+  Bear $18 vs Updated EPP $76:  -76%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   -4.0       +1.6   BASE floor (vs -6 now)
+  Petroleum product sales                    -10.0       -7.5   BASE floor (vs -2 now)
+  Revenue growth                             -16.0      -17.5   BASE floor (vs +2 now)
+  Chemical prime product sales                -4.0       -0.6   BASE floor (vs -3 now)
+  Pre-tax margin change                     -270.0     -842.7   BASE floor (vs +573 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.42 × (1+3.3%)² = $8.98
+  At 10x P/E (conservative):  $90/share
+  + Cumul. dividends (2yr):  +$4.70/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $90  (▼2 from $92)
+  Conservative total return:  +3% over 2yr  = +1%/yr
+
+  At 10.9x the multiple is already near its 10x median, so the conservative
+  case is a growth question: breakeven at 10x needs FY2014E EPS of $8.72,
+  i.e. 1.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $67.93  –  $92.50  (at 98th pct of range)
+  Annual dividend:      $2.28/share  (yield 2.5%)
+  Realized vol (1yr):   19% annualized
+  Beta vs broad market: 0.88
+  1-sigma range (1yr):  $75  –  $109  ($92 ± 19%)
+  2-sigma range (1yr):  $58  –  $126
+  ────────────────────────────────────────────────────────────
+  Bear $18 requires:  ~4.3σ price move  (unusual — requires fundamental break)
+  An integrated oil and gas company with a 0.9 beta: the stock is +33% off its September
+  low while oil-equivalent production went from -5.5% (Q1 2012) to -5.6% (Q2 2012).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.90   9.3x  $     18    16.3%     13.5%    +2.8pp  EPS -52.5%/yr (worst year FY02-FY11, capped at 0%); P/E to its 10th pct
+  BASE        9.33  10.8x  $    101    56.8%     47.1%    +9.7pp  EPS +5.3%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       12.03  12.7x  $    153    22.7%     33.2%   -10.5pp  EPS +19.5%/yr (FY02-FY11 CAGR); P/E holds its 75th pct
+  XBULL      19.78  17.1x  $    338     4.3%      6.3%    -2.0pp  EPS +53.3%/yr (best 2-yr run FY02-FY11); P/E at its 90th pct
+
+  Proxy EV (2yr): $109  /  Market EV: $122  /  Current: $92
+  Conservative EV (2yr, ④): $90 + $4.70 divs = $94 total value
+  Downside (→ Bear $18): 80.4%   Upside (→ Bull $153): 66.4%   Ratio B 1.21x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $92 the market needs $122 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.27 against a model
+  read of 2.11: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.21x     +21%    -0.16  FAIRLY VALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.64x     +21%    +0.18  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.97x     +21%    -0.44  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.14x     +21%    -0.11  FAIRLY VALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.34x     +21%    -0.20  FAIRLY VALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.21x     +21%    +0.14  FAIRLY VALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.21x      -9%    +0.04  FAIRLY VALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.21x     +21%    -0.02  FAIRLY VALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2012 print (late October) — the next read on oil-equivalent production (-5.6% now); no guide to read it against
+  (2) Pre-tax margin — +572.7bp in Q2 2012: realizations against costs, refining and chemical margins
+  (3) The FY12 production outlook — 'Volume outlook: 2011 to 2012: down 3 percent' (analyst meeting slides (8-K of 2012-03-14); display only): no earnings or revenue guide
+  (4) Capital and exploration expenditures — capital and exploration expenditures $9,339M vs $10,306M in Q2 2012: the projects the volumes need
+  (5) Capital return at 11x — 60 million shares bought for the treasury at a gross cost of $5.0 billion and $2,657M of dividends in the quarter; 'Share purchases to reduce shares outstanding are currently anticipated to equal $5 billion in the third quarter of 2012.': management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $76  |  ADD below ~$86  |  TRIM above $153
+════════════════════════════════════════════════════════════════════════
+

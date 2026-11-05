@@ -57,3 +57,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2008-12-19 | $75.02 | Exxon Mobil Q3 2008 results | 2.10 | +1.30 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +0.7% | -45.3pp | -13.6% | ✗ |
 | 2008-12-26 | $77.19 | Exxon Mobil Q3 2008 results | 2.10 | +1.28 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | -0.8% | -50.0pp | -15.9% | ✗ |
 | 2008-12-31 | $79.83 | Exxon Mobil Q3 2008 results | 2.10 | +1.23 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | -3.8% | -48.1pp | -18.6% | ✗ |
+| 2009-01-09 | $77.57 | Exxon Mobil Q3 2008 results | 2.10 | +1.07 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-01-16 | $78.10 | Exxon Mobil Q3 2008 results | 2.10 | +1.06 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-01-23 | $78.04 | Exxon Mobil Q3 2008 results | 2.10 | +1.06 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-01-30 | $76.48 | Exxon Mobil Q4 2008 results | 1.70 | +0.12 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-02-06 | $80.34 | Exxon Mobil Q4 2008 results | 1.70 | +0.03 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-02-13 | $74.59 | Exxon Mobil Q4 2008 results | 1.70 | +0.17 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-02-20 | $71.23 | Exxon Mobil Q4 2008 results | 1.70 | +0.26 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-02-27 | $67.90 | Exxon Mobil Q4 2008 results | 1.70 | +0.34 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-03-06 | $64.03 | Exxon Mobil Q4 2008 results | 1.70 | +0.45 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-03-13 | $67.20 | Exxon Mobil Q4 2008 results | 1.70 | +0.38 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-03-20 | $66.09 | Exxon Mobil Q4 2008 results | 1.70 | +0.40 | 0.12x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-03-27 | $69.98 | Exxon Mobil Q4 2008 results | 1.70 | +0.31 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-04-03 | $70.44 | Exxon Mobil Q4 2008 results | 1.70 | +0.30 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-04-09 | $69.84 | Exxon Mobil Q4 2008 results | 1.70 | +0.31 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-04-17 | $66.75 | Exxon Mobil Q4 2008 results | 1.70 | +0.38 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-04-24 | $66.57 | Exxon Mobil Q4 2008 results | 1.70 | +0.38 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-05-01 | $68.01 | Exxon Mobil Q1 2009 results | 1.75 | +0.08 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-05-08 | $70.80 | Exxon Mobil Q1 2009 results | 1.75 | +0.05 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-05-15 | $69.11 | Exxon Mobil Q1 2009 results | 1.75 | +0.07 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-05-22 | $68.83 | Exxon Mobil Q1 2009 results | 1.75 | +0.07 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-05-29 | $69.35 | Exxon Mobil Q1 2009 results | 1.75 | +0.06 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-06-05 | $72.97 | Exxon Mobil Q1 2009 results | 1.75 | +0.03 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-06-12 | $73.78 | Exxon Mobil Q1 2009 results | 1.75 | +0.02 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-06-19 | $71.05 | Exxon Mobil Q1 2009 results | 1.75 | +0.04 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-06-26 | $69.05 | Exxon Mobil Q1 2009 results | 1.75 | +0.06 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-07-02 | $68.49 | Exxon Mobil Q1 2009 results | 1.75 | +0.06 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-07-10 | $65.12 | Exxon Mobil Q1 2009 results | 1.75 | +0.09 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-07-17 | $68.52 | Exxon Mobil Q1 2009 results | 1.75 | +0.06 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-07-24 | $72.29 | Exxon Mobil Q1 2009 results | 1.75 | +0.02 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-07-31 | $70.39 | Exxon Mobil Q2 2009 results | 1.55 | -0.17 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-08-07 | $69.47 | Exxon Mobil Q2 2009 results | 1.55 | -0.16 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-08-14 | $68.21 | Exxon Mobil Q2 2009 results | 1.55 | -0.16 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-08-21 | $69.92 | Exxon Mobil Q2 2009 results | 1.55 | -0.17 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-08-28 | $70.12 | Exxon Mobil Q2 2009 results | 1.55 | -0.17 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-09-04 | $69.18 | Exxon Mobil Q2 2009 results | 1.55 | -0.17 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-09-11 | $69.98 | Exxon Mobil Q2 2009 results | 1.55 | -0.18 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-09-18 | $69.99 | Exxon Mobil Q2 2009 results | 1.55 | -0.18 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-09-25 | $68.70 | Exxon Mobil Q2 2009 results | 1.55 | -0.17 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-10-02 | $66.58 | Exxon Mobil Q2 2009 results | 1.55 | -0.15 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-10-09 | $69.27 | Exxon Mobil Q2 2009 results | 1.55 | -0.17 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-10-16 | $73.12 | Exxon Mobil Q2 2009 results | 1.55 | -0.21 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-10-23 | $73.57 | Exxon Mobil Q2 2009 results | 1.55 | -0.21 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-10-30 | $71.67 | Exxon Mobil Q3 2009 results | 2.05 | +0.33 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-11-06 | $72.58 | Exxon Mobil Q3 2009 results | 2.05 | +0.32 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-11-13 | $72.47 | Exxon Mobil Q3 2009 results | 2.05 | +0.31 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-11-20 | $74.38 | Exxon Mobil Q3 2009 results | 2.05 | +0.30 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-11-27 | $74.87 | Exxon Mobil Q3 2009 results | 2.05 | +0.29 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-12-04 | $74.25 | Exxon Mobil Q3 2009 results | 2.05 | +0.29 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-12-11 | $72.83 | Exxon Mobil Q3 2009 results | 2.05 | +0.31 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-12-18 | $68.21 | Exxon Mobil Q3 2009 results | 2.05 | +0.35 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-12-24 | $68.66 | Exxon Mobil Q3 2009 results | 2.05 | +0.35 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2009-12-31 | $68.19 | Exxon Mobil Q3 2009 results | 2.05 | +0.35 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-01-08 | $69.52 | Exxon Mobil Q3 2009 results | 2.05 | +0.33 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-01-15 | $69.11 | Exxon Mobil Q3 2009 results | 2.05 | +0.34 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-01-22 | $66.10 | Exxon Mobil Q3 2009 results | 2.05 | +0.37 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-01-29 | $64.43 | Exxon Mobil Q3 2009 results | 2.05 | +0.38 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-02-02 | $66.96 | Exxon Mobil Q4 2009 results | 2.35 | -0.33 | 2.52x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2010-02-12 | $64.80 | Exxon Mobil Q4 2009 results | 2.35 | -0.24 | 2.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2010-02-19 | $65.87 | Exxon Mobil Q4 2009 results | 2.35 | -0.28 | 2.36x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2010-02-26 | $65.00 | Exxon Mobil Q4 2009 results | 2.35 | -0.24 | 2.24x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2010-03-05 | $66.47 | Exxon Mobil Q4 2009 results | 2.35 | -0.29 | 2.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-03-12 | $66.80 | Exxon Mobil Q4 2009 results | 2.35 | -0.31 | 3.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-03-19 | $67.04 | Exxon Mobil Q4 2009 results | 2.35 | -0.32 | 3.06x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-03-26 | $66.54 | Exxon Mobil Q4 2009 results | 2.35 | -0.29 | 2.96x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-04-01 | $67.61 | Exxon Mobil Q4 2009 results | 2.35 | -0.44 | 3.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-04-09 | $68.76 | Exxon Mobil Q4 2009 results | 2.35 | -0.50 | 3.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-04-16 | $67.93 | Exxon Mobil Q4 2009 results | 2.35 | -0.46 | 3.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-04-23 | $69.24 | Exxon Mobil Q4 2009 results | 2.35 | -0.52 | 3.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2010-04-30 | $67.77 | Exxon Mobil Q1 2010 results | 3.15 | +1.40 | 0.71x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-05-07 | $63.70 | Exxon Mobil Q1 2010 results | 3.15 | +1.58 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-05-14 | $63.60 | Exxon Mobil Q1 2010 results | 3.15 | +1.58 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-05-21 | $60.88 | Exxon Mobil Q1 2010 results | 3.15 | +1.63 | 0.58x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-05-28 | $60.46 | Exxon Mobil Q1 2010 results | 3.15 | +1.63 | 0.57x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-06-04 | $59.53 | Exxon Mobil Q1 2010 results | 3.15 | +1.66 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-06-11 | $61.86 | Exxon Mobil Q1 2010 results | 3.15 | +1.61 | 0.60x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-06-18 | $63.10 | Exxon Mobil Q1 2010 results | 3.15 | +1.59 | 0.62x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-06-25 | $59.10 | Exxon Mobil Q1 2010 results | 3.15 | +1.66 | 0.55x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-07-02 | $56.57 | Exxon Mobil Q1 2010 results | 3.15 | +1.71 | 0.51x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-07-09 | $58.78 | Exxon Mobil Q1 2010 results | 3.15 | +1.67 | 0.55x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-07-16 | $57.96 | Exxon Mobil Q1 2010 results | 3.15 | +1.68 | 0.53x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-07-23 | $59.72 | Exxon Mobil Q1 2010 results | 3.15 | +1.64 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2010-07-30 | $59.68 | Exxon Mobil Q2 2010 results | 2.85 | +1.08 | 0.88x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-08-06 | $61.97 | Exxon Mobil Q2 2010 results | 2.85 | +1.00 | 0.96x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-08-13 | $59.91 | Exxon Mobil Q2 2010 results | 2.85 | +1.08 | 0.89x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-08-20 | $58.89 | Exxon Mobil Q2 2010 results | 2.85 | +1.11 | 0.86x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-08-27 | $59.80 | Exxon Mobil Q2 2010 results | 2.85 | +1.08 | 0.89x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-09-03 | $61.32 | Exxon Mobil Q2 2010 results | 2.85 | +1.02 | 0.94x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-09-10 | $61.20 | Exxon Mobil Q2 2010 results | 2.85 | +1.02 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-09-17 | $60.78 | Exxon Mobil Q2 2010 results | 2.85 | +1.04 | 0.94x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-09-24 | $61.75 | Exxon Mobil Q2 2010 results | 2.85 | +1.00 | 0.97x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-10-01 | $62.54 | Exxon Mobil Q2 2010 results | 2.85 | +0.97 | 1.00x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-10-08 | $64.38 | Exxon Mobil Q2 2010 results | 2.85 | +0.90 | 1.07x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-10-15 | $65.19 | Exxon Mobil Q2 2010 results | 2.85 | +0.87 | 1.11x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2010-10-22 | $66.34 | Exxon Mobil Q2 2010 results | 2.85 | +0.82 | 1.15x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2010-10-29 | $66.49 | Exxon Mobil Q3 2010 results | 3.25 | +1.00 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2010-11-05 | $70.00 | Exxon Mobil Q3 2010 results | 3.25 | +0.76 | 1.97x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2010-11-12 | $70.99 | Exxon Mobil Q3 2010 results | 3.25 | +0.72 | 2.07x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2010-11-19 | $70.54 | Exxon Mobil Q3 2010 results | 3.25 | +0.74 | 2.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2010-11-26 | $69.23 | Exxon Mobil Q3 2010 results | 3.25 | +0.79 | 1.90x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2010-12-03 | $71.19 | Exxon Mobil Q3 2010 results | 3.25 | +0.71 | 2.09x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2010-12-10 | $72.18 | Exxon Mobil Q3 2010 results | 3.25 | +0.67 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2010-12-17 | $72.17 | Exxon Mobil Q3 2010 results | 3.25 | +0.67 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2010-12-23 | $73.20 | Exxon Mobil Q3 2010 results | 3.25 | +0.64 | 2.31x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2010-12-31 | $73.12 | Exxon Mobil Q3 2010 results | 3.25 | +0.64 | 2.30x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2011-01-07 | $75.59 | Exxon Mobil Q3 2010 results | 3.25 | +0.55 | 2.62x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2011-01-14 | $77.84 | Exxon Mobil Q3 2010 results | 3.25 | +0.47 | 2.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2011-01-21 | $78.98 | Exxon Mobil Q3 2010 results | 3.25 | +0.43 | 3.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2011-01-28 | $78.99 | Exxon Mobil Q3 2010 results | 3.25 | +0.43 | 3.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2011-02-01 | $83.91 | Exxon Mobil Q4 2010 results | 2.75 | +0.79 | 1.00x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-02-11 | $82.82 | Exxon Mobil Q4 2010 results | 2.75 | +0.81 | 0.97x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-02-18 | $84.50 | Exxon Mobil Q4 2010 results | 2.75 | +0.77 | 1.01x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-02-25 | $85.34 | Exxon Mobil Q4 2010 results | 2.75 | +0.75 | 1.04x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-03-04 | $85.08 | Exxon Mobil Q4 2010 results | 2.75 | +0.66 | 1.03x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-03-11 | $82.12 | Exxon Mobil Q4 2010 results | 2.75 | +0.73 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-03-18 | $80.85 | Exxon Mobil Q4 2010 results | 2.75 | +0.76 | 0.92x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-03-25 | $83.62 | Exxon Mobil Q4 2010 results | 2.75 | +0.69 | 0.99x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-04-01 | $84.68 | Exxon Mobil Q4 2010 results | 2.75 | +0.66 | 1.03x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-04-08 | $85.95 | Exxon Mobil Q4 2010 results | 2.75 | +0.62 | 1.07x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-04-15 | $84.29 | Exxon Mobil Q4 2010 results | 2.75 | +0.67 | 1.04x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-04-21 | $86.36 | Exxon Mobil Q4 2010 results | 2.75 | +0.61 | 1.12x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-04-29 | $87.98 | Exxon Mobil Q1 2011 results | 3.05 | +1.11 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-05-06 | $82.69 | Exxon Mobil Q1 2011 results | 3.05 | +1.34 | 0.75x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-05-13 | $80.87 | Exxon Mobil Q1 2011 results | 3.05 | +1.38 | 0.72x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-05-20 | $81.57 | Exxon Mobil Q1 2011 results | 3.05 | +1.36 | 0.74x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-05-27 | $82.63 | Exxon Mobil Q1 2011 results | 3.05 | +1.34 | 0.76x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-06-03 | $81.18 | Exxon Mobil Q1 2011 results | 3.05 | +1.37 | 0.74x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-06-10 | $79.78 | Exxon Mobil Q1 2011 results | 3.05 | +1.39 | 0.72x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-06-17 | $79.02 | Exxon Mobil Q1 2011 results | 3.05 | +1.41 | 0.73x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-06-24 | $76.78 | Exxon Mobil Q1 2011 results | 3.05 | +1.45 | 0.69x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-07-01 | $82.01 | Exxon Mobil Q1 2011 results | 3.05 | +1.33 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-07-08 | $82.42 | Exxon Mobil Q1 2011 results | 3.05 | +1.32 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-07-15 | $83.00 | Exxon Mobil Q1 2011 results | 3.05 | +1.30 | 0.92x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-07-22 | $85.22 | Exxon Mobil Q1 2011 results | 3.05 | +1.24 | 0.99x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-07-29 | $79.79 | Exxon Mobil Q2 2011 results | 2.90 | +1.36 | 0.65x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-08-05 | $74.82 | Exxon Mobil Q2 2011 results | 2.90 | +1.45 | 0.58x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-08-12 | $72.00 | Exxon Mobil Q2 2011 results | 2.90 | +1.50 | 0.55x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-08-19 | $69.80 | Exxon Mobil Q2 2011 results | 2.90 | +1.54 | 0.52x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-08-26 | $72.64 | Exxon Mobil Q2 2011 results | 2.90 | +1.48 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-09-02 | $72.14 | Exxon Mobil Q2 2011 results | 2.90 | +1.49 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-09-09 | $71.01 | Exxon Mobil Q2 2011 results | 2.90 | +1.52 | 0.54x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-09-16 | $74.55 | Exxon Mobil Q2 2011 results | 2.90 | +1.45 | 0.59x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-09-23 | $69.31 | Exxon Mobil Q2 2011 results | 2.90 | +1.56 | 0.52x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-09-30 | $72.63 | Exxon Mobil Q2 2011 results | 2.90 | +1.48 | 0.58x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-10-07 | $73.56 | Exxon Mobil Q2 2011 results | 2.90 | +1.46 | 0.59x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-10-14 | $78.11 | Exxon Mobil Q2 2011 results | 2.90 | +1.38 | 0.67x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-10-21 | $80.13 | Exxon Mobil Q2 2011 results | 2.90 | +1.34 | 0.71x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-10-28 | $81.48 | Exxon Mobil Q3 2011 results | 2.30 | +0.64 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-11-04 | $78.52 | Exxon Mobil Q3 2011 results | 2.30 | +0.70 | 0.78x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-11-11 | $79.72 | Exxon Mobil Q3 2011 results | 2.30 | +0.68 | 0.80x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-11-18 | $77.90 | Exxon Mobil Q3 2011 results | 2.30 | +0.72 | 0.76x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-11-25 | $73.90 | Exxon Mobil Q3 2011 results | 2.30 | +0.80 | 0.69x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2011-12-02 | $79.79 | Exxon Mobil Q3 2011 results | 2.30 | +0.67 | 0.81x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-12-09 | $81.34 | Exxon Mobil Q3 2011 results | 2.30 | +0.64 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-12-16 | $80.16 | Exxon Mobil Q3 2011 results | 2.30 | +0.67 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-12-23 | $85.22 | Exxon Mobil Q3 2011 results | 2.30 | +0.56 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2011-12-30 | $84.76 | Exxon Mobil Q3 2011 results | 2.30 | +0.57 | 0.94x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-01-06 | $85.12 | Exxon Mobil Q3 2011 results | 2.30 | +0.56 | 0.96x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-01-13 | $84.88 | Exxon Mobil Q3 2011 results | 2.30 | +0.56 | 0.96x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-01-20 | $87.49 | Exxon Mobil Q3 2011 results | 2.30 | +0.40 | 1.03x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2012-01-27 | $85.83 | Exxon Mobil Q3 2011 results | 2.30 | +0.53 | 0.98x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-02-01 | $83.97 | Exxon Mobil Q4 2011 results | 1.95 | +0.30 | 0.80x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-02-10 | $83.80 | Exxon Mobil Q4 2011 results | 1.95 | +0.31 | 0.80x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-02-17 | $85.62 | Exxon Mobil Q4 2011 results | 1.95 | +0.26 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-02-24 | $87.34 | Exxon Mobil Q4 2011 results | 1.95 | +0.21 | 0.89x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2012-03-02 | $86.33 | Exxon Mobil Q4 2011 results | 1.95 | +0.22 | 0.86x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2012-03-09 | $84.30 | Exxon Mobil Q4 2011 results | 1.95 | +0.27 | 0.81x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-03-16 | $86.44 | Exxon Mobil Q4 2011 results | 1.95 | +0.20 | 0.86x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2012-03-23 | $85.55 | Exxon Mobil Q4 2011 results | 1.95 | +0.23 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-03-30 | $86.73 | Exxon Mobil Q4 2011 results | 1.95 | +0.19 | 0.87x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-04-05 | $84.82 | Exxon Mobil Q4 2011 results | 1.95 | +0.26 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-04-13 | $82.95 | Exxon Mobil Q4 2011 results | 1.95 | +0.29 | 0.79x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-04-20 | $85.30 | Exxon Mobil Q4 2011 results | 1.95 | +0.23 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-04-27 | $86.08 | Exxon Mobil Q1 2012 results | 2.00 | +0.12 | 0.87x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-05-04 | $84.57 | Exxon Mobil Q1 2012 results | 2.00 | +0.18 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-05-11 | $83.10 | Exxon Mobil Q1 2012 results | 2.00 | +0.22 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-05-18 | $81.47 | Exxon Mobil Q1 2012 results | 2.00 | +0.26 | 0.80x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-05-25 | $82.08 | Exxon Mobil Q1 2012 results | 2.00 | +0.24 | 0.82x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-06-01 | $77.92 | Exxon Mobil Q1 2012 results | 2.00 | +0.32 | 0.73x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2012-06-08 | $80.84 | Exxon Mobil Q1 2012 results | 2.00 | +0.26 | 0.80x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-06-15 | $83.22 | Exxon Mobil Q1 2012 results | 2.00 | +0.19 | 0.87x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-06-22 | $82.11 | Exxon Mobil Q1 2012 results | 2.00 | +0.24 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2012-06-29 | $85.57 | Exxon Mobil Q1 2012 results | 2.00 | +0.10 | 0.96x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-07-06 | $84.80 | Exxon Mobil Q1 2012 results | 2.00 | +0.14 | 0.94x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-07-13 | $85.47 | Exxon Mobil Q1 2012 results | 2.00 | +0.10 | 0.97x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-07-20 | $85.95 | Exxon Mobil Q1 2012 results | 2.00 | +0.08 | 0.98x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-07-27 | $87.45 | Exxon Mobil Q2 2012 results | 2.10 | -0.00 | 1.03x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-08-03 | $87.55 | Exxon Mobil Q2 2012 results | 2.10 | -0.01 | 1.03x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-08-10 | $88.44 | Exxon Mobil Q2 2012 results | 2.10 | -0.04 | 1.07x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-08-17 | $88.40 | Exxon Mobil Q2 2012 results | 2.10 | -0.04 | 1.07x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-08-24 | $88.05 | Exxon Mobil Q2 2012 results | 2.10 | -0.04 | 1.08x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-08-31 | $87.30 | Exxon Mobil Q2 2012 results | 2.10 | -0.00 | 1.05x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2012-09-07 | $89.92 | Exxon Mobil Q2 2012 results | 2.10 | -0.10 | 1.14x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-09-14 | $92.30 | Exxon Mobil Q2 2012 results | 2.10 | -0.16 | 1.22x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-09-21 | $91.92 | Exxon Mobil Q2 2012 results | 2.10 | -0.16 | 1.21x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-09-28 | $91.45 | Exxon Mobil Q2 2012 results | 2.10 | -0.14 | 1.21x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-10-05 | $92.55 | Exxon Mobil Q2 2012 results | 2.10 | -0.18 | 1.25x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-10-12 | $91.03 | Exxon Mobil Q2 2012 results | 2.10 | -0.13 | 1.20x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-10-19 | $92.15 | Exxon Mobil Q2 2012 results | 2.10 | -0.17 | 1.24x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-10-26 | $90.62 | Exxon Mobil Q2 2012 results | 2.10 | -0.12 | 1.18x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2012-11-02 | $90.27 | Exxon Mobil Q3 2012 results | 1.65 | -0.66 | 1.21x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2012-11-09 | $87.21 | Exxon Mobil Q3 2012 results | 1.65 | -0.59 | 1.10x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | - | - | - | - |
+| 2012-11-16 | $86.45 | Exxon Mobil Q3 2012 results | 1.65 | -0.56 | 1.09x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | - | - | - | - |
+| 2012-11-23 | $89.09 | Exxon Mobil Q3 2012 results | 1.65 | -0.65 | 1.19x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2012-11-30 | $88.14 | Exxon Mobil Q3 2012 results | 1.65 | -0.62 | 1.15x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2012-12-07 | $88.60 | Exxon Mobil Q3 2012 results | 1.65 | -0.64 | 1.19x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2012-12-14 | $88.08 | Exxon Mobil Q3 2012 results | 1.65 | -0.62 | 1.17x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2012-12-21 | $87.23 | Exxon Mobil Q3 2012 results | 1.65 | -0.59 | 1.14x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | - | - | - | - |
+| 2012-12-28 | $85.10 | Exxon Mobil Q3 2012 results | 1.65 | -0.54 | 1.07x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | - | - | - | - |
+| 2012-12-31 | $86.55 | Exxon Mobil Q3 2012 results | 1.65 | -0.59 | 1.12x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | - | - | - | - |

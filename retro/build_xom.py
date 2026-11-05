@@ -19,7 +19,10 @@ of the period, so the no-guide rules of method r2 apply on every date (retro/REA
 Revenue is total revenues and other income, the one revenue line the releases publish, and the annual history takes it from the
 10-K income statements. EPS is diluted EPS from continuing operations before extraordinary items and the cumulative effect of
 accounting changes, each year from the latest filing that reports it, and the company's earnings per share excluding special items
-replace it where a filing publishes them (the ACN rule). Any guide in the fact sheet, or any event, needs its encoding decided first.
+replace it where a filing publishes them (the ACN rule). From 2009 the analyst-meeting 8-Ks state the current year's production
+outlook in numbers: a volume guide, display only (method r2 has no volume input; the UNP rule). Any other guide field, or any event,
+needs its encoding decided first. A Q4 print may restate an earlier year's figure excluding special items ('restates': the Q4 2009
+release's 2008 $8.44 under the participating-securities EPS rule adopted in 2009), until the next 10-K vintage carries it.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. ExxonMobil's earnings 8-Ks of 2007-2008 were accepted before the open or during the
@@ -53,6 +56,8 @@ OUT = os.path.join(ROOT, "staging", "retrospective", "XOM")
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"production": (-7, -4, -1, 4), "product_sales": (-20, -10, 0, 3), "revenue": (-41, -16, 9, 25),
                      "chem_sales": (-9, -4, 1, 7), "pretax_margin": (-630, -270, 90, 560)}
+# the guide fields this builder has an encoding for: a current-year production outlook in numbers ('production_quote'), display only
+GUIDE_KEYS = {"fy", "published", "source", "doc", "production_quote", "note"}
 RULE_T_KEYS = {"production": (1, False), "product_sales": (1, False), "revenue": (1, False), "chem_sales": (1, False),
                "pretax_margin": (10, False)}           # (rounding unit, lower is better)
 
@@ -111,8 +116,9 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in facts["history_vintages"]:            # the fiscal calendar the filings state must match the rule above
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-    # ExxonMobil gives no guidance in numbers in any filing of the period: a guide public on AS_OF needs its encoding first
-    assert not [g for g in facts["guides"] if g["published"] <= as_of], (as_of, "a guide with no encoding yet; decide one first")
+    # ExxonMobil gives no earnings, revenue or margin guidance in numbers; a guide public on AS_OF may carry only encoded fields
+    for g in [g for g in facts["guides"] if g["published"] <= as_of]:
+        assert set(g) <= GUIDE_KEYS, (g["doc"], "a guide field with no encoding yet; decide one first")
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
@@ -140,8 +146,14 @@ def build(as_of, facts, raw, spx, engine, out):
         a = p.get("fy_actual")
         if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
             y = str(a["fy"])
+            # an earlier year's company figure excluding special items, first published in this release ('restates'), replaces it until
+            # the next 10-K vintage carries it (the ACN rule; the MSFT Q4 FY12 encoding)
+            eps_n = {**h["eps_normalized"], y: a["eps_normalized"]}
+            for yy, e in a.get("restates", {}).items():
+                assert yy in eps_n, (p["quarter"], yy, "restates a year outside the history")
+                eps_n[yy] = e
             h.update(fy_label=a["fy_label"],
-                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     eps_normalized=eps_n,
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -169,8 +181,14 @@ def build(as_of, facts, raw, spx, engine, out):
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
     words = (f"; the {latest['quarter']} release, in words: '{latest['outlook_words']}' (no field)" if latest.get("outlook_words") else "")
-    guide_text = (f"{fy_now}: no guide in numbers in any filing (ExxonMobil gives no earnings, revenue, volume or margin guidance; "
-                  f"BASE takes {latest['quarter']} revenue growth)" + words)
+    # the latest production outlook for the current year, display only (the UNP volume-guide rule)
+    gp = next((g for g in reversed([g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]) if "production_quote" in g), None)
+    if gp:
+        guide_text = (f"{fy_now}: no earnings, revenue or margin guide in numbers (BASE takes {latest['quarter']} revenue growth); production "
+                      f"outlook ({gp['doc']}): '{gp['production_quote']}' ({gp['note']}; display only: method r2 has no volume input)" + words)
+    else:
+        guide_text = (f"{fy_now}: no guide in numbers in any filing (ExxonMobil gives no earnings, revenue, volume or margin guidance; "
+                      f"BASE takes {latest['quarter']} revenue growth)" + words)
     margin_guided = False                          # no pre-tax margin guide in numbers: no guided step
     fy_margin_base = h["prev_fy_pretax_margin"]
 
@@ -213,7 +231,8 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("Prices drive earnings, by the company's own account; the bear needs crude\n"
                 "  and gas realizations to fall, not only volumes.")
     theme_summary = "no disruption theme has dated evidence"
-    cat3 = f"(3) A {fy_now} guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings"
+    cat3 = (f"(3) The {fy_now} production outlook — '{gp['production_quote']}' ({gp['doc']}; display only): no earnings or revenue guide"
+            if gp else f"(3) A {fy_now} guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings")
     cat4 = f"(4) Capital and exploration expenditures — {latest['capex_note']} in {latest['quarter']}: the projects the volumes need"
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
@@ -227,7 +246,7 @@ def build(as_of, facts, raw, spx, engine, out):
     company = h["company"]
     exchange = h["exchange"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + ([dividend_src] if dividend_src else []) + split_ids)
+           + ([dividend_src] if dividend_src else []) + ([gp["source"]] if gp else []) + split_ids)
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, XOM and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/XOM/history",
@@ -239,7 +258,7 @@ def build(as_of, facts, raw, spx, engine, out):
                    "product_sales_pct", "chem_pct", "eps_q", "eps_q_prior")
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
-    eps_note = f"; EPS {latest['eps_note']}" if latest.get("eps_note") else ""
+    eps_note = (f"; EPS {latest['eps_note']}" if latest.get("eps_note") else "") + (f"; {latest['deal_note']}" if latest.get("deal_note") else "")
     volumes = (f"Volumes: oil-equivalent production {latest['production_pct']:+.1f}% ('{latest['production_note']}'); "
                f"petroleum product sales {latest['product_sales_pct']:+.1f}%; chemical prime product sales {latest['chem_pct']:+.1f}%; "
                f"revenue {latest['sales_pct']:+.1f}% as reported ({latest['sales_note']}){eps_note}")
