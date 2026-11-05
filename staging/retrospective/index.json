@@ -212691,7 +212691,20 @@
    "cons_return_2yr": 16.0,
    "path": "staging/retrospective/XOM/2008-01-04",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.3,
+    "tr_1y": -9.7,
+    "tr_2y": -21.4,
+    "tr_3y": -13.3,
+    "excess_6m": 6.4,
+    "excess_1y": 22.6,
+    "excess_2y": -5.1,
+    "excess_3y": -8.2,
+    "avg_m12_m24": -23.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212710,7 +212723,20 @@
    "cons_return_2yr": 18.3,
    "path": "staging/retrospective/XOM/2008-01-11",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.5,
+    "tr_1y": -12.4,
+    "tr_2y": -18.6,
+    "tr_3y": -10.7,
+    "excess_6m": 6.2,
+    "excess_1y": 22.1,
+    "excess_2y": -4.0,
+    "excess_3y": -6.7,
+    "avg_m12_m24": -21.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212729,7 +212755,20 @@
    "cons_return_2yr": 25.5,
    "path": "staging/retrospective/XOM/2008-01-18",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.3,
+    "tr_1y": -6.4,
+    "tr_2y": -15.0,
+    "tr_3y": -1.7,
+    "excess_6m": 0.3,
+    "excess_1y": 27.1,
+    "excess_2y": -4.8,
+    "excess_3y": -5.2,
+    "avg_m12_m24": -17.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212748,7 +212787,20 @@
    "cons_return_2yr": 27.2,
    "path": "staging/retrospective/XOM/2008-01-25",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.8,
+    "tr_1y": -5.2,
+    "tr_2y": -17.7,
+    "tr_3y": -0.4,
+    "excess_6m": 2.9,
+    "excess_1y": 30.3,
+    "excess_2y": -3.9,
+    "excess_3y": -2.8,
+    "avg_m12_m24": -16.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212767,7 +212819,20 @@
    "cons_return_2yr": 104.2,
    "path": "staging/retrospective/XOM/2008-02-01",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.4,
+    "tr_1y": -9.2,
+    "tr_2y": -19.3,
+    "tr_3y": 3.4,
+    "excess_6m": 2.3,
+    "excess_1y": 29.5,
+    "excess_2y": -0.9,
+    "excess_3y": 4.6,
+    "avg_m12_m24": -18.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212786,7 +212851,20 @@
    "cons_return_2yr": 114.8,
    "path": "staging/retrospective/XOM/2008-02-08",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.2,
+    "tr_1y": 0.3,
+    "tr_2y": -17.2,
+    "tr_3y": 7.7,
+    "excess_6m": -1.4,
+    "excess_1y": 32.9,
+    "excess_2y": -0.5,
+    "excess_3y": 2.7,
+    "avg_m12_m24": -14.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212805,7 +212883,20 @@
    "cons_return_2yr": 105.6,
    "path": "staging/retrospective/XOM/2008-02-15",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.8,
+    "tr_1y": -10.8,
+    "tr_2y": -20.3,
+    "tr_3y": 3.1,
+    "excess_6m": -6.1,
+    "excess_1y": 26.0,
+    "excess_2y": -3.8,
+    "excess_3y": -0.6,
+    "avg_m12_m24": -18.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212824,7 +212915,20 @@
    "cons_return_2yr": 101.3,
    "path": "staging/retrospective/XOM/2008-02-22",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.0,
+    "tr_1y": -16.5,
+    "tr_2y": -21.2,
+    "tr_3y": 3.8,
+    "excess_6m": -3.5,
+    "excess_1y": 24.5,
+    "excess_2y": -6.8,
+    "excess_3y": 1.3,
+    "avg_m12_m24": -20.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212843,7 +212947,20 @@
    "cons_return_2yr": 102.1,
    "path": "staging/retrospective/XOM/2008-02-29",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.1,
+    "tr_1y": -20.1,
+    "tr_2y": -21.5,
+    "tr_3y": 4.1,
+    "excess_6m": -4.3,
+    "excess_1y": 22.6,
+    "excess_2y": -7.9,
+    "excess_3y": -0.8,
+    "avg_m12_m24": -20.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212862,7 +212979,20 @@
    "cons_return_2yr": 113.2,
    "path": "staging/retrospective/XOM/2008-03-07",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.4,
+    "tr_1y": -20.4,
+    "tr_2y": -15.4,
+    "tr_3y": 8.8,
+    "excess_6m": -4.3,
+    "excess_1y": 24.3,
+    "excess_2y": -7.3,
+    "excess_3y": 2.0,
+    "avg_m12_m24": -15.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212881,7 +213011,20 @@
    "cons_return_2yr": 104.7,
    "path": "staging/retrospective/XOM/2008-03-14",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.9,
+    "tr_1y": -19.9,
+    "tr_2y": -18.4,
+    "tr_3y": 1.8,
+    "excess_6m": -7.2,
+    "excess_1y": 19.3,
+    "excess_2y": -11.3,
+    "excess_3y": -4.1,
+    "avg_m12_m24": -19.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212900,7 +213043,20 @@
    "cons_return_2yr": 106.9,
    "path": "staging/retrospective/XOM/2008-03-20",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.4,
+    "tr_1y": -20.4,
+    "tr_2y": -17.3,
+    "tr_3y": 1.0,
+    "excess_6m": -0.4,
+    "excess_1y": 19.6,
+    "excess_2y": -8.7,
+    "excess_3y": -1.0,
+    "avg_m12_m24": -18.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212919,7 +213075,20 @@
    "cons_return_2yr": 106.3,
    "path": "staging/retrospective/XOM/2008-03-28",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.4,
+    "tr_1y": -16.0,
+    "tr_2y": -18.1,
+    "tr_3y": 3.9,
+    "excess_6m": 2.6,
+    "excess_1y": 19.9,
+    "excess_2y": -10.3,
+    "excess_3y": -1.1,
+    "avg_m12_m24": -18.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212938,7 +213107,20 @@
    "cons_return_2yr": 98.1,
    "path": "staging/retrospective/XOM/2008-04-04",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.3,
+    "tr_1y": -18.8,
+    "tr_2y": -20.1,
+    "tr_3y": 1.3,
+    "excess_6m": 7.1,
+    "excess_1y": 17.7,
+    "excess_2y": -9.6,
+    "excess_3y": -1.2,
+    "avg_m12_m24": -21.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212957,7 +213139,20 @@
    "cons_return_2yr": 98.4,
    "path": "staging/retrospective/XOM/2008-04-11",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -28.7,
+    "tr_1y": -19.4,
+    "tr_2y": -18.7,
+    "tr_3y": 1.8,
+    "excess_6m": 3.9,
+    "excess_1y": 14.3,
+    "excess_2y": -11.9,
+    "excess_3y": -2.8,
+    "avg_m12_m24": -21.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212976,7 +213171,20 @@
    "cons_return_2yr": 87.1,
    "path": "staging/retrospective/XOM/2008-04-18",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -26.8,
+    "tr_1y": -27.3,
+    "tr_2y": -24.2,
+    "tr_3y": -6.2,
+    "excess_6m": 4.9,
+    "excess_1y": 7.9,
+    "excess_2y": -13.9,
+    "excess_3y": -5.6,
+    "avg_m12_m24": -26.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -212995,7 +213203,20 @@
    "cons_return_2yr": 90.2,
    "path": "staging/retrospective/XOM/2008-04-25",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.5,
+    "tr_1y": -26.3,
+    "tr_2y": -21.6,
+    "tr_3y": -1.3,
+    "excess_6m": 12.2,
+    "excess_1y": 9.8,
+    "excess_2y": -12.2,
+    "excess_3y": -2.1,
+    "avg_m12_m24": -24.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213014,7 +213235,20 @@
    "cons_return_2yr": 109.5,
    "path": "staging/retrospective/XOM/2008-05-02",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.4,
+    "tr_1y": -22.3,
+    "tr_2y": -20.7,
+    "tr_3y": 2.7,
+    "excess_6m": 14.2,
+    "excess_1y": 13.7,
+    "excess_2y": -8.0,
+    "excess_3y": 1.4,
+    "avg_m12_m24": -22.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213033,7 +213267,20 @@
    "cons_return_2yr": 111.3,
    "path": "staging/retrospective/XOM/2008-05-09",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.8,
+    "tr_1y": -18.9,
+    "tr_2y": -25.0,
+    "tr_3y": -1.1,
+    "excess_6m": 15.6,
+    "excess_1y": 12.2,
+    "excess_2y": -8.5,
+    "excess_3y": -3.2,
+    "avg_m12_m24": -21.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213052,7 +213299,20 @@
    "cons_return_2yr": 102.6,
    "path": "staging/retrospective/XOM/2008-05-16",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -19.6,
+    "tr_1y": -23.7,
+    "tr_2y": -27.8,
+    "tr_3y": -7.9,
+    "excess_6m": 18.7,
+    "excess_1y": 12.3,
+    "excess_2y": -10.9,
+    "excess_3y": -6.2,
+    "avg_m12_m24": -25.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213071,7 +213331,20 @@
    "cons_return_2yr": 107.0,
    "path": "staging/retrospective/XOM/2008-05-23",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.5,
+    "tr_1y": -22.3,
+    "tr_2y": -29.2,
+    "tr_3y": -5.4,
+    "excess_6m": 25.7,
+    "excess_1y": 11.1,
+    "excess_2y": -11.9,
+    "excess_3y": -6.5,
+    "avg_m12_m24": -23.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213090,7 +213363,20 @@
    "cons_return_2yr": 111.5,
    "path": "staging/retrospective/XOM/2008-05-30",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.8,
+    "tr_1y": -20.0,
+    "tr_2y": -28.1,
+    "tr_3y": -1.1,
+    "excess_6m": 26.0,
+    "excess_1y": 12.1,
+    "excess_2y": -9.4,
+    "excess_3y": -1.3,
+    "avg_m12_m24": -22.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213109,7 +213395,20 @@
    "cons_return_2yr": 116.3,
    "path": "staging/retrospective/XOM/2008-06-06",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.8,
+    "tr_1y": -14.1,
+    "tr_2y": -27.6,
+    "tr_3y": -1.6,
+    "excess_6m": 23.7,
+    "excess_1y": 14.6,
+    "excess_2y": -9.4,
+    "excess_3y": -1.5,
+    "avg_m12_m24": -20.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213128,7 +213427,20 @@
    "cons_return_2yr": 112.4,
    "path": "staging/retrospective/XOM/2008-06-13",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.0,
+    "tr_1y": -14.7,
+    "tr_2y": -26.2,
+    "tr_3y": -4.5,
+    "excess_6m": 25.6,
+    "excess_1y": 13.6,
+    "excess_2y": -10.3,
+    "excess_3y": -3.5,
+    "avg_m12_m24": -22.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213147,7 +213459,20 @@
    "cons_return_2yr": 121.1,
    "path": "staging/retrospective/XOM/2008-06-20",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.7,
+    "tr_1y": -14.4,
+    "tr_2y": -21.8,
+    "tr_3y": -0.1,
+    "excess_6m": 21.2,
+    "excess_1y": 13.7,
+    "excess_2y": -10.2,
+    "excess_3y": -2.5,
+    "avg_m12_m24": -19.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213166,7 +213491,20 @@
    "cons_return_2yr": 116.9,
    "path": "staging/retrospective/XOM/2008-06-27",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.9,
+    "tr_1y": -18.3,
+    "tr_2y": -27.9,
+    "tr_3y": -4.1,
+    "excess_6m": 20.7,
+    "excess_1y": 7.7,
+    "excess_2y": -16.1,
+    "excess_3y": -9.9,
+    "avg_m12_m24": -21.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213185,7 +213523,20 @@
    "cons_return_2yr": 112.7,
    "path": "staging/retrospective/XOM/2008-07-03",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.6,
+    "tr_1y": -20.6,
+    "tr_2y": -32.2,
+    "tr_3y": -1.3,
+    "excess_6m": 18.7,
+    "excess_1y": 6.4,
+    "excess_2y": -16.7,
+    "excess_3y": -12.9,
+    "avg_m12_m24": -23.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213204,7 +213555,20 @@
    "cons_return_2yr": 119.6,
    "path": "staging/retrospective/XOM/2008-07-11",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.3,
+    "tr_1y": -21.9,
+    "tr_2y": -27.4,
+    "tr_3y": 1.8,
+    "excess_6m": 18.6,
+    "excess_1y": 5.0,
+    "excess_2y": -18.2,
+    "excess_3y": -10.5,
+    "avg_m12_m24": -20.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213223,7 +213587,20 @@
    "cons_return_2yr": 130.2,
    "path": "staging/retrospective/XOM/2008-07-18",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.2,
+    "tr_1y": -14.0,
+    "tr_2y": -24.8,
+    "tr_3y": 7.6,
+    "excess_6m": 28.1,
+    "excess_1y": 9.3,
+    "excess_2y": -13.2,
+    "excess_3y": -1.6,
+    "avg_m12_m24": -17.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213242,7 +213619,20 @@
    "cons_return_2yr": 113.6,
    "path": "staging/retrospective/XOM/2008-07-25",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.5,
+    "tr_1y": -9.5,
+    "tr_2y": -22.8,
+    "tr_3y": 9.8,
+    "excess_6m": 29.1,
+    "excess_1y": 10.3,
+    "excess_2y": -14.5,
+    "excess_3y": -2.5,
+    "avg_m12_m24": -17.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213261,7 +213651,20 @@
    "cons_return_2yr": 140.4,
    "path": "staging/retrospective/XOM/2008-08-01",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.1,
+    "tr_1y": -9.7,
+    "tr_2y": -21.0,
+    "tr_3y": 6.3,
+    "excess_6m": 30.2,
+    "excess_1y": 10.0,
+    "excess_2y": -12.0,
+    "excess_3y": -1.4,
+    "avg_m12_m24": -15.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213280,7 +213683,20 @@
    "cons_return_2yr": 143.4,
    "path": "staging/retrospective/XOM/2008-08-08",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.6,
+    "tr_1y": -9.7,
+    "tr_2y": -17.1,
+    "tr_3y": -4.3,
+    "excess_6m": 35.3,
+    "excess_1y": 10.2,
+    "excess_2y": -7.5,
+    "excess_3y": 3.4,
+    "avg_m12_m24": -14.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213299,7 +213715,20 @@
    "cons_return_2yr": 148.6,
    "path": "staging/retrospective/XOM/2008-08-15",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.2,
+    "tr_1y": -9.4,
+    "tr_2y": -17.9,
+    "tr_3y": 3.1,
+    "excess_6m": 33.2,
+    "excess_1y": 11.3,
+    "excess_2y": -4.6,
+    "excess_3y": 5.0,
+    "avg_m12_m24": -13.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213318,7 +213747,20 @@
    "cons_return_2yr": 138.6,
    "path": "staging/retrospective/XOM/2008-08-22",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.3,
+    "tr_1y": -10.9,
+    "tr_2y": -22.5,
+    "tr_3y": -6.2,
+    "excess_6m": 28.9,
+    "excess_1y": 7.8,
+    "excess_2y": -9.0,
+    "excess_3y": 1.5,
+    "avg_m12_m24": -16.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213337,7 +213779,20 @@
    "cons_return_2yr": 139.5,
    "path": "staging/retrospective/XOM/2008-08-29",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.1,
+    "tr_1y": -10.3,
+    "tr_2y": -21.1,
+    "tr_3y": -0.9,
+    "excess_6m": 27.4,
+    "excess_1y": 7.5,
+    "excess_2y": -7.6,
+    "excess_3y": -0.6,
+    "avg_m12_m24": -16.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213356,7 +213811,20 @@
    "cons_return_2yr": 153.4,
    "path": "staging/retrospective/XOM/2008-09-05",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.7,
+    "tr_1y": -6.3,
+    "tr_2y": -14.5,
+    "tr_3y": 2.2,
+    "excess_6m": 26.9,
+    "excess_1y": 9.6,
+    "excess_2y": -7.3,
+    "excess_3y": 1.9,
+    "avg_m12_m24": -12.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213375,7 +213843,20 @@
    "cons_return_2yr": 147.3,
    "path": "staging/retrospective/XOM/2008-09-12",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.3,
+    "tr_1y": -7.6,
+    "tr_2y": -16.7,
+    "tr_3y": -0.6,
+    "excess_6m": 26.7,
+    "excess_1y": 7.3,
+    "excess_2y": -8.8,
+    "excess_3y": 1.3,
+    "avg_m12_m24": -14.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213394,7 +213875,20 @@
    "cons_return_2yr": 140.7,
    "path": "staging/retrospective/XOM/2008-09-19",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.2,
+    "tr_1y": -10.0,
+    "tr_2y": -19.4,
+    "tr_3y": -0.9,
+    "excess_6m": 22.7,
+    "excess_1y": 2.1,
+    "excess_2y": -13.7,
+    "excess_3y": -3.5,
+    "avg_m12_m24": -17.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213413,7 +213907,20 @@
    "cons_return_2yr": 137.6,
    "path": "staging/retrospective/XOM/2008-09-26",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.7,
+    "tr_1y": -12.8,
+    "tr_2y": -19.3,
+    "tr_3y": -4.6,
+    "excess_6m": 19.5,
+    "excess_1y": -1.1,
+    "excess_2y": -18.0,
+    "excess_3y": -6.6,
+    "avg_m12_m24": -18.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213432,7 +213939,20 @@
    "cons_return_2yr": 145.9,
    "path": "staging/retrospective/XOM/2008-10-03",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.6,
+    "tr_1y": -12.5,
+    "tr_2y": -15.4,
+    "tr_3y": -2.1,
+    "excess_6m": 13.9,
+    "excess_1y": -7.4,
+    "excess_2y": -23.4,
+    "excess_3y": -8.0,
+    "avg_m12_m24": -15.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213451,7 +213971,20 @@
    "cons_return_2yr": 207.3,
    "path": "staging/retrospective/XOM/2008-10-10",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.3,
+    "tr_1y": 13.7,
+    "tr_2y": 8.6,
+    "tr_3y": 30.6,
+    "excess_6m": 14.9,
+    "excess_1y": -10.1,
+    "excess_2y": -28.2,
+    "excess_3y": -12.4,
+    "avg_m12_m24": 5.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213470,7 +214003,20 @@
    "cons_return_2yr": 181.6,
    "path": "staging/retrospective/XOM/2008-10-17",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.7,
+    "tr_1y": 9.9,
+    "tr_2y": 0.7,
+    "tr_3y": 21.5,
+    "excess_6m": 4.5,
+    "excess_1y": -9.4,
+    "excess_2y": -30.4,
+    "excess_3y": -15.0,
+    "avg_m12_m24": -3.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213489,7 +214035,20 @@
    "cons_return_2yr": 177.6,
    "path": "staging/retrospective/XOM/2008-10-24",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.4,
+    "tr_1y": 8.9,
+    "tr_2y": 1.0,
+    "tr_3y": 23.6,
+    "excess_6m": -3.5,
+    "excess_1y": -17.9,
+    "excess_2y": -40.2,
+    "excess_3y": -28.6,
+    "avg_m12_m24": -5.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213508,7 +214067,20 @@
    "cons_return_2yr": 138.1,
    "path": "staging/retrospective/XOM/2008-10-31",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.0,
+    "tr_1y": -1.1,
+    "tr_2y": -5.8,
+    "tr_3y": 16.9,
+    "excess_6m": -0.6,
+    "excess_1y": -10.4,
+    "excess_2y": -32.8,
+    "excess_3y": -23.1,
+    "avg_m12_m24": -12.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213527,7 +214099,20 @@
    "cons_return_2yr": 138.6,
    "path": "staging/retrospective/XOM/2008-11-07",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.2,
+    "tr_1y": -0.2,
+    "tr_2y": -1.3,
+    "tr_3y": 13.8,
+    "excess_6m": -4.4,
+    "excess_1y": -16.8,
+    "excess_2y": -36.9,
+    "excess_3y": -28.2,
+    "avg_m12_m24": -12.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213546,7 +214131,20 @@
    "cons_return_2yr": 139.5,
    "path": "staging/retrospective/XOM/2008-11-14",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.2,
+    "tr_1y": 0.6,
+    "tr_2y": 1.0,
+    "tr_3y": 14.3,
+    "excess_6m": -8.9,
+    "excess_1y": -28.6,
+    "excess_2y": -43.0,
+    "excess_3y": -38.6,
+    "avg_m12_m24": -11.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213565,7 +214163,20 @@
    "cons_return_2yr": 132.8,
    "path": "staging/retrospective/XOM/2008-11-21",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.7,
+    "tr_1y": 0.3,
+    "tr_2y": -2.5,
+    "tr_3y": 8.4,
+    "excess_6m": -22.5,
+    "excess_1y": -40.2,
+    "excess_2y": -59.4,
+    "excess_3y": -50.9,
+    "avg_m12_m24": -14.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213584,7 +214195,20 @@
    "cons_return_2yr": 120.2,
    "path": "staging/retrospective/XOM/2008-11-28",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.6,
+    "tr_1y": -4.5,
+    "tr_2y": -9.4,
+    "tr_3y": 1.2,
+    "excess_6m": -14.9,
+    "excess_1y": -28.7,
+    "excess_2y": -46.3,
+    "excess_3y": -39.4,
+    "avg_m12_m24": -19.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213603,7 +214227,20 @@
    "cons_return_2yr": 130.4,
    "path": "staging/retrospective/XOM/2008-12-05",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.7,
+    "tr_1y": -0.9,
+    "tr_2y": -2.6,
+    "tr_3y": 11.9,
+    "excess_6m": -12.7,
+    "excess_1y": -29.8,
+    "excess_2y": -47.5,
+    "excess_3y": -39.6,
+    "avg_m12_m24": -15.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213622,7 +214259,20 @@
    "cons_return_2yr": 119.3,
    "path": "staging/retrospective/XOM/2008-12-12",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.3,
+    "tr_1y": -7.4,
+    "tr_2y": -6.1,
+    "tr_3y": 6.0,
+    "excess_6m": -15.6,
+    "excess_1y": -34.9,
+    "excess_2y": -51.0,
+    "excess_3y": -41.4,
+    "avg_m12_m24": -19.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213641,7 +214291,20 @@
    "cons_return_2yr": 135.2,
    "path": "staging/retrospective/XOM/2008-12-19",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.2,
+    "tr_1y": -6.9,
+    "tr_2y": 0.7,
+    "tr_3y": 13.0,
+    "excess_6m": -9.8,
+    "excess_1y": -34.3,
+    "excess_2y": -45.3,
+    "excess_3y": -31.3,
+    "avg_m12_m24": -13.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213660,7 +214323,20 @@
    "cons_return_2yr": 128.6,
    "path": "staging/retrospective/XOM/2008-12-26",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.5,
+    "tr_1y": -8.9,
+    "tr_2y": -0.8,
+    "tr_3y": 17.2,
+    "excess_6m": -16.1,
+    "excess_1y": -40.4,
+    "excess_2y": -50.0,
+    "excess_3y": -35.9,
+    "avg_m12_m24": -15.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "XOM",
@@ -213679,7 +214355,20 @@
    "cons_return_2yr": 121.0,
    "path": "staging/retrospective/XOM/2008-12-31",
    "generated": "2026-11-05",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.4,
+    "tr_1y": -11.8,
+    "tr_2y": -3.8,
+    "tr_3y": 12.8,
+    "excess_6m": -14.5,
+    "excess_1y": -38.9,
+    "excess_2y": -48.1,
+    "excess_3y": -34.1,
+    "avg_m12_m24": -18.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   }
  ]
 }
