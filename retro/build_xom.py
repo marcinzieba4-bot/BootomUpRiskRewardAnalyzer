@@ -31,6 +31,11 @@ with a clause on the theme's status on AS_OF ('why_theme_tail'). The second even
 that names ExxonMobil (transition_market_evidence) counts from the theme's registered market-pricing date and re-files the stock under
 DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, label only (the ACN GENAI rule): the Dow removal of 2020-08-31. From Q4 2017 revenue is
 net of sales-based taxes (2015 on, as the FY2017 10-K restates it; earlier years stay gross, a seam kept as published).
+FY2020 is a loss even on the company's figure excluding identified items, so it gets no P/E (retro/README.md, "XOM 2021-2023"): the
+Q4 2020 print's 'excluded_note' and each later vintage's 'eps_excluded' keep it out of the EPS history, its days leave the P/E window
+(the label reads 'ex-FY20'), growth is measured only between years in the history and the anchor is the last full year in it (the NKE
+FY2018 encoding). From Q2 2022 the releases rename the volume lines ('pps_label', 'chem_label': Energy Products and Chemical Products
+sales); the text follows the release in force.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. ExxonMobil's earnings 8-Ks of 2007-2008 were accepted before the open or during the
@@ -44,6 +49,7 @@ Usage
   python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31
   python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31
   python3 retro/build_xom.py --weekly 2018-01-01 2020-12-31
+  python3 retro/build_xom.py --weekly 2021-01-04 2023-12-31
   python3 retro/build_xom.py 2008-02-01
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/XOM/<AS_OF>
 """
@@ -133,14 +139,27 @@ def build(as_of, facts, raw, spx, engine, out):
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
+    # on_basis (the shared split helper) divides every Q4 print's full-year EPS; an excluded year has none, so a NaN stands in for it
+    # there and None comes back after (the NKE encoding; no split follows an excluded year in the fact sheet)
+    held = {p["quarter"] for p in facts["prints"] if "fy_actual" in p and p["fy_actual"]["eps_normalized"] is None}
+    facts = {**facts, "prints": [{**p, "fy_actual": {**p["fy_actual"], "eps_normalized": math.nan}} if p["quarter"] in held else p
+                                 for p in facts["prints"]]}
     facts, split_ids = on_basis(facts, as_of)      # the 2001 split: 1998 EPS and the first year's diluted shares
+    for p in facts["prints"]:
+        if p["quarter"] in held:
+            p["fy_actual"]["eps_normalized"] = None
+            assert not any(p["published"] < sp["effective"] <= as_of for sp in facts.get("splits", [])), \
+                (as_of, "a split after an excluded year: decide how its GAAP figure is restated first")
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
     # prints published by AS_OF that report a fiscal year after the history (a Q4 print reports the year just ended, so it
     # stays in scope after the 10-K that follows it)
-    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    # a year excluded from the EPS history ('eps_excluded': a loss year, or a distorted year, with no positive published figure excluding
+    # its one-offs; retro/README.md, "XOM 2021-2023") is still reported (the NKE FY2018 rule)
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
+    first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     # no disruption theme in taxonomy_eras.json is live for an oil and gas producer to 2015-12-11 (ENERGY_TRANSITION, which carries
@@ -165,11 +184,13 @@ def build(as_of, facts, raw, spx, engine, out):
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
+        if a and a["fy"] not in reported(h):          # the 10-K vintage, once out, wins
             y = str(a["fy"])
             # an earlier year's company figure excluding special items, first published in this release ('restates'), replaces it until
             # the next 10-K vintage carries it (the ACN rule; the MSFT Q4 FY12 encoding)
-            eps_n = {**h["eps_normalized"], y: a["eps_normalized"]}
+            eps_n = {**h["eps_normalized"], **({y: a["eps_normalized"]} if a["eps_normalized"] is not None else {})}
+            if a["eps_normalized"] is None:           # an excluded year: reported, but out of the EPS history
+                h.update(eps_excluded={**h.get("eps_excluded", {}), y: a["excluded_note"]})
             for yy, e in a.get("restates", {}).items():
                 assert yy in eps_n, (p["quarter"], yy, "restates a year outside the history")
                 eps_n[yy] = e
@@ -190,14 +211,17 @@ def build(as_of, facts, raw, spx, engine, out):
     i = public.index(latest)
     prev = (public[i - 1]["production_pct"], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_production_pct"], h["prev_q_label"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
-    cur_fy = max(eps_hist) + 1
+    excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
+    cur_fy = max(reported(h)) + 1
+    last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
 
     # ── no guide in numbers: the last full year's EPS stands, and BASE takes the latest quarter's revenue growth ──
-    eps_now = eps_hist[cur_fy - 1]
-    eps_label = f"{fy_e}: no EPS guide in numbers, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+    eps_now = eps_hist[last_fy]
+    eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
+        f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
@@ -232,9 +256,12 @@ def build(as_of, facts, raw, spx, engine, out):
     eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY EPS, for the P/E series
     fy = lambda d: min(fiscal_year(d), cur_fy)     # a day past the last reported year keeps the current year's EPS
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    # an excluded year's own days leave the window (the r2 rule's "the window starts after it", for a year that is not the first)
+    gone = sorted({fy(d) for d in window} & set(excluded))
+    window = [d for d in window if fy(d) not in excluded]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
-    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
+    window_label = ("10-yr" if years > 9.9 else f"{years:.1f}-yr") + "".join(f" ex-FY{y % 100:02d}" for y in gone)
     pe = {d: px[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -314,7 +341,8 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = (f"; EPS {latest['eps_note']}" if latest.get("eps_note") else "") + (f"; {latest['deal_note']}" if latest.get("deal_note") else "")
     volumes = (f"Volumes: oil-equivalent production {latest['production_pct']:+.1f}% ('{latest['production_note']}'); "
-               f"petroleum product sales {latest['product_sales_pct']:+.1f}%; chemical prime product sales {latest['chem_pct']:+.1f}%; "
+               f"{latest.get('pps_label', 'petroleum product sales')} {latest['product_sales_pct']:+.1f}%; "
+               f"{latest.get('chem_label', 'chemical prime product sales')} {latest['chem_pct']:+.1f}%; "
                f"revenue {latest['sales_pct']:+.1f}% as reported ({latest['sales_note']}){eps_note}")
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"

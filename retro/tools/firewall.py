@@ -18,7 +18,8 @@ dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in wo
 CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later guide for every guided quarter; PEP: a display-only guide, and total servings that a filing after CUTOFF
 first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange; MSFT: a guide with every guided field, a later
 range for every quarter the fact sheet guides, a later withdrawal of every guided year, call-only guidance words and a receivables
-caveat; XOM: a guide with a production outlook for every guided year and a dividend, and a later print with outlook words; a CLOUD event
+caveat; XOM: a guide with a production outlook for every guided year and a dividend, and a later print with outlook words, renamed
+volume lines and full-year actuals that exclude its own year and restate every earlier one, and a later vintage that excludes a year; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -94,6 +95,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      pretax_margin_bp=-999.0, production_pct=-60.0, product_sales_pct=-60.0, chem_pct=-60.0, eps_q=0.01, eps_q_prior=9.99,
                      eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, next_print="PLANTED", cash_return_text="PLANTED",
                      production_note="PLANTED", sales_note="PLANTED", capex_note="PLANTED", outlook_words="PLANTED",
+                     pps_label="PLANTED", chem_label="PLANTED",
                      raw=dict(rev_m=1, rev_prior_m=99, pretax_m=-99, pretax_prior_m=99, oe_kbd=1, oe_prior_kbd=99, pps_kbd=1,
                               pps_prior_kbd=99, chem_kt=1, chem_prior_kt=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
@@ -185,6 +187,13 @@ try:
     v.update(published=later, why="PLANTED", company="PLANTED")
     v["eps_normalized"] = {**v["eps_normalized"], "2099": 0.01}
     f["history_vintages"].append(v)
+    if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
+                           # print's full-year actuals excluding its own year and restating every earlier one
+        v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
+        fa = copy.deepcopy(max((p for p in f["prints"] if "fy_actual" in p and p["published"] < cutoff), key=lambda p: p["published"])["fy_actual"])
+        fa.update(fy=2099, fy_label="FY99", eps_normalized=None, excluded_note="PLANTED", normalization_note="PLANTED", revenue_usd_b=0.01,
+                  restates={y: 0.01 for y in v["eps_normalized"] if y != "2099"})
+        last["fy_actual"] = fa
     for theme in {e["theme"] for e in f["events"] if e["published"] < cutoff}:
         e = copy.deepcopy(max((e for e in f["events"] if e["theme"] == theme and e["published"] < cutoff), key=lambda e: e["published"]))
         e.update(published=later, doc="PLANTED")

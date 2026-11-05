@@ -91,6 +91,9 @@ Fallbacks for facts a company did not publish (decided before any outcome of the
   years, XBULL over two-year runs whose ends are both in it, BULL from the first year to the last); and the rollover rule's last
   full year is the last year in the history. Example: NKE FY2018, whose Tax Act charges ($1,875M and $158M) exceeded the year's
   $1,933M net income.
+  A loss even on the company's figure (added 2026-11-05 for XOM FY2020; no earlier output changes, so still r2): a year whose
+  company-published EPS without its one-offs is itself a loss has no P/E either, so it is excluded like a loss with no adjusted
+  figure (as the latest year, in the way above). Example: XOM FY2020, $(5.25) GAAP and $(0.33) excluding identified items.
 - **A listing inside the window** (added 2026-11-01 for AVGO; no earlier output changes, so still r2): a stock's own P/E exists
   only from its first trading day, so the window runs from the listing, up to ten years, and its label counts trading days below
   a year ("22-trading-day"). Example: AVGO, listed 2009-08-06.
@@ -6585,6 +6588,7 @@ python3 retro/build_xom.py --weekly 2008-01-01 2008-12-31                   # 53
 python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31                   # 209 dates, 2009-01-09 .. 2012-12-31
 python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31                   # 260 dates, 2013-01-11 .. 2017-12-29
 python3 retro/build_xom.py --weekly 2018-01-01 2020-12-31                   # 157 dates, 2018-01-05 .. 2020-12-31
+python3 retro/build_xom.py --weekly 2021-01-04 2023-12-31                   # 156 dates, 2021-01-08 .. 2023-12-29
 for d in staging/retrospective/XOM/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -6603,6 +6607,10 @@ python3 retro/tools/firewall.py 2018-07-01 XOM
 python3 retro/tools/firewall.py 2019-07-01 XOM
 python3 retro/tools/firewall.py 2020-10-01 XOM
 python3 retro/tools/firewall.py 2021-01-01 XOM
+python3 retro/tools/firewall.py 2021-07-01 XOM
+python3 retro/tools/firewall.py 2022-07-01 XOM
+python3 retro/tools/firewall.py 2023-07-01 XOM
+python3 retro/tools/firewall.py 2024-01-01 XOM
 ```
 
 The 10-Ks from FY1999 to FY2007 were read for the history and the decade's signal values (the FY1999-FY2001 10-Ks are plain-text
@@ -7038,6 +7046,119 @@ Judgement calls that could carry hindsight (in addition to the earlier XOM lists
 - BASE on revenue growth, which again decides the class (81 classes move on production growth);
 - the earnings-considerations and impairment 8-Ks read as adding nothing, and the revenue seam kept as published.
 
+### XOM 2021-2023: FY2020's loss leaves the history, 2019 restated, the 2022 price spike, ENERGY_TRANSITION stays re-filed
+
+Every 8-K, 10-Q and 10-K of February 2021 to December 2023 was listed (64 filings: 52 8-Ks, two of them amendments, nine 10-Qs and three
+10-Ks; January 2021's were listed with 2018-2020, and the Q4 2023 release of 2024-02-02 lies after the range and is not used). The
+earnings releases with their Investor Relations Data Summaries and the three 10-Ks were read for the facts; every other 8-K and the 10-Qs
+were checked for a guided number or a dividend. The prints were extracted by script and checked twice: 316 strings with `verbatim.py`
+against their own filings (every quoted sentence taken by an exact search), and each quarter's oil-equivalent production against the
+release's Investor Relations Data Summary. Decided on 2026-11-05, before any 2021-2023 date was built or scored:
+
+- **Three 10-K vintages, each with a Q4 print before it:** FY2020 (accepted 2021-02-24 17:01 ET, dated 2021-02-25), FY2021 (2022-02-23
+  16:11 ET, dated 2022-02-24) and FY2022 (2023-02-22 16:37 ET, dated 2023-02-23). The FY2023 10-K and the Q4 2023 print lie after the range.
+- **Release timing.** All twelve earnings 8-Ks (Q4 2020 to Q3 2023) were accepted before the open (06:02-07:30 ET). The nine Friday
+  releases meet their own day's close and date their weeks (the 2008 rule); the three Q4 releases came on a Tuesday (2021-02-02,
+  2022-02-01, 2023-01-31), so the Wednesday after dates their weeks (2021-02-03, 2022-02-02, 2023-02-01), as the weekly rule sets.
+- **FY2020 is excluded: a loss even on the company's own figure.** The Q4 2020 release reports a GAAP loss of $(5.25) a share (the fourth
+  quarter's identified items, mainly non-cash impairments, were $4.73 a share) and $(0.33) excluding identified items; a loss has no P/E, so neither figure can
+  anchor the multiple. The method gains a note (see "Retro method r2"; no earlier output changes, so still r2): a year that is a loss
+  even on the company-published figure without its one-offs is excluded like a loss with none. As the latest year it is encoded as NKE's
+  FY2018 was: it leaves the EPS history (the Q4 2020 print's `fy_actual` carries no EPS and an `excluded_note`; the FY2020-FY2022
+  vintages carry `eps_excluded`), its revenue, shares and margins stay, its own days leave the P/E window ("10-yr ex-FY20"), EPS growth is
+  measured only between years in the history, and the rollover rule's last full year is the last year in it, so FY2019 stands for FY2021E
+  until the Q4 2021 print. A scan of every fact sheet finds no earlier year of any ticker whose company-published figure was a loss.
+- **FY2019 restated to $2.25 a share.** The Q4 2020 release is the first filing to publish 2019's earnings per share excluding
+  identified items ($2.25; GAAP $3.36, which includes the $3.7 billion Norway gain). It replaces GAAP from the print (the ACN rule; the
+  `restates` encoding of the Q4 2009 release), on 2021-02-03, and the FY2020 10-K carries it from 2021-02-25. Every 2020 date keeps
+  $3.36: the per-share figure was not public before 2021-02-02 (the 2018-2020 section's derived $2.25 was a test only, never an input).
+- **FY2021 and FY2022 at the company's figures excluding identified items,** each published per share in its Q4 release: $5.38 (GAAP
+  $5.39) and $14.06 (GAAP $13.26, with the $3.4 billion charge for the exit from Russia's Sakhalin-1 in the first quarter of 2022). The
+  quarters carry the per-share figures their releases give in the note.
+- **The releases' layout changes twice; the facts follow the release in force.** Q1 2022's key-figure tables run current quarter,
+  prior quarter, year-ago quarter; from Q2 2022 the label sits between the three quarters and the two year-to-date columns. The
+  extraction matches each value to its column header (`1Q22`, `1Q21`), never to its position. From Q2 2022, after the reorganisation
+  into Upstream, Energy Products, Chemical Products and Specialty Products (announced 2022-01-31), the releases report "Energy Products
+  sales" and "Chemical Products sales", each with its year-ago figure on the new basis. They feed the product-sales and chemical-sales
+  signals as the successors of petroleum product sales and chemical prime product sales, with the rule-T thresholds unchanged, and the
+  text names the line the release in force names (`pps_label`, `chem_label`); dates before Q2 2022 keep the old names.
+- **Still no guide in numbers in any filing.** The 8-Ks of 2021-11-17, 2022-11-18 and 2023-11-15 announce Corporate Plan updates
+  "on the Investors section of our website", with "Website materials are not part of this filing": the capex ranges, earnings and cash
+  flow potential and share-repurchase plans they carry were never filed, so they add nothing (website posts are not filings, as for NKE's
+  investor-relations posts). The eleven
+  earnings-considerations 8-Ks (2021-03-31 to 2023-10-04) guide no earnings, revenue or volume figure and add nothing (the ACN
+  non-earnings 8-K rule). The 2008 rules apply on every date and the guide line reads "no guide in numbers in any filing".
+- **Dividends,** each from the first filing that states the rate: $0.87 through 2021 (no raise filed until the Q4 2021 release states
+  $0.88, 2022-02-01), $0.91 from the Q3 2022 release (2022-10-28) and $0.95 from the Q3 2023 release (2023-10-27). Diluted shares fall
+  from 4,275M (FY2021) to 4,205M (FY2022) as published; the repurchase plans themselves were website-only.
+- **ENERGY_TRANSITION stays re-filed** under DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, on every date, the "why" quoting the
+  FY2020-FY2022 10-Ks' climate risk factor ("Depending on how policies are formulated and applied, ... reduce demand for hydrocarbons
+  ..."; headed "Climate change and greenhouse gas restrictions" in the FY2020 10-K and "Greenhouse gas restrictions" from FY2021) and the
+  company's own low-carbon work (advanced biofuels and hydrogen, carbon capture and storage; from FY2021 the Low Carbon Solutions (LCS)
+  business unit). Label only, as before: the theme signal and the factor pair are unchanged.
+- **EV is not recorded on any date** (2020 included). The theme is live from about 2020, scoped to "battery-electric vehicles displace
+  ICE powertrains, auto parts suppliers and fuel retail", and every XOM 10-K from FY2015 names electric vehicles or "electric
+  transportation" among the fuel-choice factors (the FY2021 and FY2022 10-Ks add "mandates for sales of electric vehicles" to the climate
+  risk factor). ExxonMobil's exposure
+  through fuel demand is the decarbonisation ENERGY_TRANSITION already covers, the stock is filed under that theme from 2020-09-04, before
+  EV's market-pricing date (2020-12-21), and EV's evidence names Tesla and legacy automakers, not ExxonMobil; a second company-acknowledged
+  theme would be text only on the watch list and inert after the re-file (the ACN rule that left OFFSHORE out once GENAI had priority).
+- **Adds nothing:** the reorganisation release (2022-01-31) and its earnings recast (2022-06-17), the Sakhalin-1 exit release
+  (2022-03-03; its charge reaches the Q1 2022 print as an identified item), the Denbury (8-K of 2023-07-13, all stock, closed 2023-11-02)
+  and Pioneer (8-K of 2023-10-11, all stock, closed after the range) agreements and filings, whose shares reach no print in the range, the
+  debt satisfactions (2021-12-17, 2022-12-23), the Corporate Plan notices above, the vote results of 2021-06-02 (three directors
+  nominated by Engine No. 1 elected) and later years, the officer, director, compensation and bylaw 8-Ks, and the 10-Qs beyond their
+  dividends.
+
+Controls: altering one value of each new print (with each Q4 print's full-year actuals, Q4 2020's excluded-year note and its 2019
+restatement), vintage, dividend and ENERGY_TRANSITION event changes no date before it is visible and changes the first weekly date on or
+after it (25 of 25; the event controls alter the risk factor's short form, the text the re-filed "why" shows). The 679 dates of
+2008-2020 rebuild byte-identical. A scan of all 835 XOM models for the figures, notes and quotes of every print, vintage, dividend,
+outlook and event finds none before it is visible (0 of 320,843); the restated $2.25 for 2019 first appears on 2021-02-03 and "ex-FY20"
+in no model before it. The firewall at 2021-07-01, 2022-07-01, 2023-07-01 and 2024-01-01 (planted facts, now with a later Q4 print
+that excludes its own year and restates every earlier one, a later vintage that excludes a year and renamed volume lines, and prices ×10
+after each cutoff) changes none of the 704 to 835 earlier models; rerun with the new plants, the 2018-07-01 and 2021-01-01 cutoffs
+change none of the 548 and 679.
+
+Seen in the build (method behaviour, not tuned):
+- **January 2021:** RICH and AVOID on 4 dates (FY19's $3.36, the Q3 2020 print's BASE -27.5%/yr).
+- **From the Q4 2020 print to the Q1 2021 print: RICH and AVOID on 12 dates.** With FY2020 out, FY19's restated $2.25 anchors the
+  multiple: $47-62 is 21.1-27.5x (the 70th-78th percentile of the ex-FY20 window). The quarter's revenue -30.7% puts BASE at -29.3%/yr
+  ($19), and BEAR becomes 2019's restated fall (-53.9%/yr, $4): no upside to any scenario price, so Ratio B is infinite.
+- **Q1 2021 print: RICH and AVOID on 13 dates** (revenue +5.3%, BASE +6.8%/yr, $43-45; the price $57-65, 25-29x; Ratio B 14.2 to 5.3).
+- **Q2 and Q3 2021 prints (2021-07-30 to 2022-01-28): CHEAP on 23 dates, FAIR on 4; BUY on 24, ACCUMULATE on 3.** Revenue +107.8% on
+  the 2020 trough quarter and then +59.7% put BASE at +109.3% and +61.2%/yr ($171-173, then $103-104) on the same $2.25, against $53-75
+  at 23-34x (the 71st-85th percentile): the revenue fallback, not the multiple, makes the class. FAIR from 2021-10-22 to 2021-11-12,
+  ACCUMULATE on the three dates from 2022-01-14 as the price reached $72-75.
+- **From the Q4 2021 print (2022-02-02) to 2023-01-27: CHEAP and BUY on all 52 dates.** FY21's $5.38 anchors at 14.4-21.5x (the
+  43rd-72nd percentile) as the price rises from $77 to $116; revenue +82.6%, +53.0%, +70.8% and +51.9% put BASE at +52.8% to +83.9%/yr
+  ($210-300). BEAR stays 2019's restated fall ($11-13).
+- **From the Q4 2022 print (2023-02-01): CHEAP and BUY on all 48 dates.** FY22's $14.06 anchors at 7.1-8.5x (the 8th-19th percentile).
+  Revenue turns down (+12.3%, then -4.3%, -28.3% and -19.0%): BASE falls from +13.3% to -27.7%/yr ($294-298, then $121-215), still above
+  the price ($100-119); BEAR $22-23.
+- **Totals over the 156 dates:** CHEAP 123, FAIR 4, RICH 29; BUY 124, ACCUMULATE 3, AVOID 29. Robustness is strong: 8 of 8 on 125 dates,
+  4-6 of 8 on 14 (all in 2021). Labels: TRANSITION-FEAR BASKET 123, TRANSITION-EXPOSED, NOT CHEAP 29, TRANSITION-EXPOSED, NEUTRALLY VALUED
+  4. The proxy composite ranges from 1.45 (2021-02-03) to 3.55, the market composite from 1.02 to 2.99; the EPP floor is 12x in
+  January 2021, 14-17x from February 2021 to January 2022 (2016's year at 38.9x and 2019's restated one at 29.6x among the calendar-year
+  lows), 12-14x from the Q4 2021 print and 12-13x in 2023.
+
+How far each call moves the classes (the 156 dates rebuilt with one encoding changed; no outcome consulted):
+- GAAP EPS in every year (2019 at $3.36, FY2021 $5.39, FY2022 $13.26; FY2020 a loss either way) would change 4 classes (FAIR to CHEAP,
+  2021-10-22 to 2021-11-12) and 3 tiers;
+- FY2019 at GAAP alone (no restatement): the same 4 classes;
+- BASE on the latest quarter's oil-equivalent production growth instead of revenue growth would change 77 classes (23 in 2021, 50 in
+  2022, 4 in 2023; 63 to RICH, 14 CHEAP to FAIR) and 79 tiers: the revenue fallback decides the class, as in every earlier XOM batch;
+- both together: 79 classes;
+- without the re-file: no class, 156 labels.
+
+Judgement calls that could carry hindsight (in addition to the earlier XOM lists, which stand):
+- FY2020 excluded on the new note (a loss even on the company's figure), which leaves FY19's restated $2.25 as the anchor through 2021;
+- BASE on revenue growth, which again decides the class (77 classes move on production growth), and in 2021-2022 runs at +54% to +109%/yr
+  on revenue that rebounded from the 2020 trough;
+- the renamed Energy Products and Chemical Products sales read as the successors of the old volume lines under unchanged thresholds;
+- EV left out, the re-file continued on the 2020 evidence, and the Corporate Plan updates read as adding nothing because they were
+  posted to the website and not filed.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -7171,7 +7292,9 @@ What the gates enforce:
   ("XOM 2013-2017"). It stays on the watch list in the FY2017-FY2019 10-Ks' words until the theme's registered market-pricing event,
   ExxonMobil's removal from the Dow Jones Industrial Average (announced 2020-08-24, effective 2020-08-31): from 2020-09-04 XOM is
   re-filed under DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, label only, with the announcement's own reason (Apple's stock split)
-  quoted beside it ("XOM 2018-2020").
+  quoted beside it ("XOM 2018-2020"). The re-file stands through 2023, in the FY2020-FY2022 10-Ks' words; EV, live from about 2020 and
+  scoped to fuel retail among others, is not recorded: the stock is already filed under ENERGY_TRANSITION, and EV's evidence names
+  automakers, not ExxonMobil ("XOM 2021-2023").
 
 ## Workflow
 
