@@ -1,8 +1,8 @@
 # XOM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the XOM weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the XOM weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce; 2018-2020: 24123ad). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
+pushed (2008: ae6e2c7; 2009-2012: 12ca906; 2013-2017: a700fce; 2018-2020: 24123ad; 2021-2023: b9c3f2a). Prices run to 2026-11-04; the 2008 batch's two-year horizons end by 2010-12-30 (three-year: 2011-12-30).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -199,3 +199,54 @@ windows run into the 2022 energy-price rise.
 - **The encoding calls, seen afterwards.** GAAP EPS changes nothing here. The derived test without the one-offs (2017-2019) would have
   moved 71 classes and held on 19 of them, where the published encoding holds on 47; FY2019 alone, 8 classes, 0 against 6. In 2013-2017
   the derived 2012 figure would have done better; here the GAAP figures do. The calls were decided before scoring and stay.
+
+## 2021-2023 (156 dates)
+
+Scored only after the point-in-time build was committed and pushed (b9c3f2a). Two-year horizons end by 2025-12-29; three-year horizons
+exist for 148 dates (to 2026-11-04).
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| all | 156 | +35.3% | -4.4% to +173.5% | 84 | 73 | +22.2% | 51 |
+| class CHEAP | 123 | +23.6% | -4.4% to +127.4% | 51 | 40 | +11.0% | 51 |
+| class FAIR | 4 | +76.8% | +72.4% to +87.3% | 4 | 4 | +71.6% | 0 |
+| class RICH | 29 | +94.6% | +69.4% to +173.5% | 29 | 29 | +77.3% | 0 |
+| tier BUY | 124 | +23.8% | -4.4% to +127.4% | 52 | 41 | +11.0% | 48 |
+| tier ACCUMULATE | 3 | +46.4% | +44.4% to +49.1% | 3 | 3 | +49.7% | 3 |
+| tier AVOID | 29 | +94.6% | +69.4% to +173.5% | 29 | 29 | +77.3% | 0 |
+| FY19's $3.36, Q3 2020 print (January 2021) | 4 | +158.6% | +151.0% to +173.5% | 4 | 4 | +103.3% | 0 |
+| FY19's restated $2.25, Q4 2020 print (2021-02-03 to 2021-04-23) | 12 | +117.3% | +85.3% to +150.9% | 12 | 12 | +79.0% | 0 |
+| $2.25, Q1 2021 print (2021-04-30 to 2021-07-23) | 13 | +85.4% | +69.4% to +119.1% | 13 | 13 | +71.2% | 0 |
+| $2.25, Q2 and Q3 2021 prints (2021-07-30 to 2022-01-28) | 27 | +83.9% | +44.4% to +127.4% | 27 | 27 | +78.3% | 23 |
+| FY21's $5.38 (2022-02-02 to 2023-01-27) | 52 | +33.5% | +1.8% to +52.0% | 28 | 17 | +17.4% | 28 |
+| FY22's $14.06 (from 2023-02-01) | 48 | +9.2% | -4.4% to +28.4% | 0 | 0 | +4.9% | 0 |
+
+- **The call held on 51 of 156, and it read the cycle backwards at both ends.** The 29 RICH dates of January to July 2021 were followed
+  by +69% to +174% over two years, 65-161pp ahead of SPY (-8% to +13%): RICH failed on all 29. The CHEAP calls from the Q2 2021 print to
+  the spring of 2022 held (all 23 on the Q2 and Q3 2021 prints and every date to 2022-05-20); the 4 FAIR dates of October-November
+  2021 failed, their +72% to +87% far outside FAIR's ±15pp band. From mid-2022 the hits thin out, the misses coming at entry prices of
+  $93-116 (28 of 52 held on FY21's anchor; none of the 15 dates from 2022-10-21), and the 48 CHEAP dates on FY22's $14.06 at 7-8x returned -4% to +28%, 19-55pp behind SPY (+27% to +70%):
+  CHEAP failed on all 48. One-year returns had a median of +24%, three-year returns of +55%.
+- **Peak-year anchors at a low multiple, trough-year anchors at a high one.** In 2021 FY2020 was excluded (a loss), so FY19's restated
+  $2.25, a down year, anchored the multiple: $45-65 was 21-29x (the 70th-78th percentile) and RICH, at the start of the 2021-2022 energy
+  rise. In 2023 FY22's $14.06, the record year, anchored it: $100-119 was 7-8x (the 8th-19th percentile) and CHEAP, after the rise. The
+  same shape appeared before: CHEAP on FY07's peak in 2008 (0 of 53 held), FAIR or CHEAP on FY12's gains in 2013 (0 of 41), RICH on the trough
+  years in 2016-2017 (held only because SPY rose faster). Hypothesis for the method, not a rule: for a commodity producer the trailing
+  year's EPS sets the class against the cycle, cheap at peak earnings and rich near trough earnings; test it on other cyclical tickers'
+  outcomes, never on XOM's.
+- **The scenario band missed the move in both directions.** On the RICH dates XOM's price already exceeded BULL ($37-67) on 13 of 29;
+  two years later it stood at $100-119, 1.5-3.1 times BULL (0.4-0.5 times XBULL). On the Q2-Q3 2021 dates the two-year price landed
+  nearest BASE on all 27 (0.6-1.0 times BASE's $103-173). From the Q4 2021 print BASE ran at +53% to +84%/yr ($210-300), then at $121-298 on FY22's
+  anchor, and BULL at $284-411, while the two-year prices ($102-125) landed nearest BEAR on 59 dates, the lowest close in each window still 4.2-7.5 times
+  the BEAR price ($11-23): BEAR, 2019's restated fall applied for two years, was never approached.
+- **The TRANSITION label sat on the best-performing years.** All 156 dates carry the re-filed labels (TRANSITION-FEAR BASKET on the 123
+  CHEAP dates); the theme registry's own hindsight note records that the 2022 energy shock reversed the derating. The label changes
+  no class, and the method has no rule that ends a re-file when the evidence reverses: a question for the owner, not an input.
+- **Ranking: the entry price almost perfectly, the valuation metrics the wrong way.** The entry price ranks the return to the m12-24
+  average at Spearman -0.99 (the two-year endpoint -0.98, the excess over SPY -0.96): the batch is one price path up and then sideways.
+  The EPP gap ranks it at +0.59 and Ratio B at +0.19 (both the wrong way), the adjusted gap at -0.22 (the wrong way), the proxy composite
+  not at all (+0.07). Five batches that disagree on everything but the entry price; record them, conclude nothing.
+- **The encoding calls, seen afterwards.** BASE on production growth would have moved 77 classes and held on 27 of them, where the
+  revenue fallback holds on 49 (2018-2020: 47 against 12; 2013-2017: 3 against 11; 2010-2011: neither): the answers alternate. GAAP EPS, or 2019
+  at GAAP without the restatement, would have moved only the 4 FAIR dates of late 2021 to CHEAP and held on all 4 (0 as published).
+  FY2020's exclusion has no tested alternative: a loss has no P/E. The calls were decided before scoring and stay.
