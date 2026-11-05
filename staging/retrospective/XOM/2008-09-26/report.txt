@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  XOM  ·  Exxon Mobil Corporation  ·  $80.65  ·  RETROSPECTIVE as of 2008-09-26
+  Signal: ◉ BUY   Ratio B: 0.19x   Adj gap: +1.30  [UNDERVALUED]
+  Point-in-time: 17 sources, latest published 2008-09-26; latest print Q2 2008 (Jul 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E revenues, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2008E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Upstream                  $    41.7  $  41.7  $  50.6      +0.0      +8.9
+    -12.8% revenues in FY07
+  Downstream                $   472.7  $ 472.7  $ 573.4      +0.0    +100.7
+    +8.8% revenues in FY07
+  Chemical                  $    53.6  $  53.6  $  65.0      +0.0     +11.4
+    +8.0% revenues in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   568.0  $ 568.0  $ 689.0      +0.0    +121.0
+  FY2008E = FY07 $404.55B × (1 + 40.4%: no Q3 2008 revenue guide, Q2 2008 revenue as reported, applied to the year (no FY08 revenue guide)); split pro rata to FY07 segment sales and other operating revenue (FY2007 10-K; corporate $30M not shown)
+  Q2 2008 (Jul 31): total revenues $138.07B +40.4%; oil-equivalent production -7.8%; product sales -2.9%;
+  chemical sales -2.6%; pre-tax margin 16.08% (-214.6bp); EPS $2.22 vs $1.83
+  Volumes: oil-equivalent production -7.8% ('On an oil-equivalent basis, production decreased 8% from the second quarter of 2007. Excluding impacts related to the Venezuela expropriation, the Nigeria labor strike and lower entitlement volumes (which include price and spend impacts and PSC net interest reductions), production was down about 3%.'); petroleum product sales -2.9%; chemical prime product sales -2.6%; revenue +40.4% as reported (total revenues and other income $138,072M vs $98,350M (the release; its only revenue line)); EPS including an after tax special charge of $290 million for the Valdez punitive damages ($2.27 a share excluding it)
+  FY08: no guide in numbers in any filing (ExxonMobil gives no earnings, revenue, volume or margin guidance; BASE takes Q2 2008 revenue growth)
+
+  FY2008E EPS check:  $568.0B × 17.4% pre-tax × (1−42.4%) ÷ 5.261B  =  $10.83  (FY2008E: no EPS guide in numbers, FY07's $7.28 stands)
+  FY2010E BEAR check: $568.0B × 17.4% ÷ 4.984B  =  $11.43  (scenario $4.11)
+  FY2010E BULL check: $689.0B × 17.8% ÷ 4.984B  =  $14.19  (scenario $14.90)
+  Every 1pp of pre-tax margin ≈ $0.62 EPS ≈ $9/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production           -7.0%   ≥-4.0%   ≥-1.0%    ≥4.0%     -7.8%  ⚠ BEAR  █░░░
+  Petroleum product sales            -20.0%  ≥-10.0%    ≥0.0%    ≥3.0%     -2.9%  ◦ BASE  ██░░
+  Revenue growth                     -41.0%  ≥-16.0%    ≥9.0%   ≥25.0%    +40.4%  ★ XBULL  ████
+  Chemical prime product sales        -9.0%   ≥-4.0%    ≥1.0%    ≥7.0%     -2.6%  ◦ BASE  ██░░
+  Pre-tax margin change             -630.0bp  ≥-270.0bp  ≥90.0bp  ≥560.0bp  -214.6bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.10 / 4.00
+  Market composite:   1.33 / 4.00  (back-solved from $81 + 15% hurdle)
+  SCA adjustment:    +0.33  ·  EPP-distance adj +0.20  →  Adj composite 2.63  →  Gap +1.30  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 revenue +7.1%, oil-equivalent production -1.3% (4,180 koebd vs 4,237, FY2007 10-K); Q2 pre-tax margin 16.08% (-215bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 11.1x FY08E vs a 13.8x 10-yr median (24th percentile of its own range)  (+0.43 × 25%  =  +0.107)
+    +  Growth vs own history: no Q3 2008 revenue guide, Q2 2008 revenue as reported +40.4% vs a 9.4% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $39.00B, FY07 free cash flow $36.62B, dividend $1.60 a year, $31,822M of common stock acquired and $7,621M of dividends paid in FY07  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production            -7.8%     -7.0%   +0.8%  Field decline and entitlements outrun…
+  Petroleum product sales              -2.9%    -20.0%  -17.1%  Fuel demand falls with the economy
+  Revenue growth                      +40.4%    -41.0%  -81.4%  Crude, gas and product prices fall to…
+  Chemical prime product sales         -2.6%     -9.0%   -6.4%  Petrochemical demand follows industry…
+  Pre-tax margin change             -214.6bp  -630.0bp  -415.4bp  Costs stay up while prices and margin…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$96  (model)  /  $42 (defined)
+  Bear probability (proxy model):  16.3%
+
+  KEY TRIGGER: oil-equivalent production went from -5.6% (Q1 2008) to -7.8% (Q2 2008);
+  the bear case needs a commodity-price fall that the pre-tax margin (-214.6bp now)
+  and product sales (-2.9% now) no longer absorb. Prices drive earnings, by the company's own account; the bear needs crude
+  and gas realizations to fall, not only volumes.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.28  (FY2008E: no EPS guide in numbers, FY07's $7.28 stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 1998 27.3x, 1999 27.2x, 2000 15.0x, 2001 15.9x, 2002 17.9x, 2003 12.4x, 2004 10.1x, 2005 9.3x, 2006 8.6x, 2007 9.6x, 2008 10.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $87/share
+  Current $81 vs Updated EPP $87:  -8%  ✓ BELOW panic floor — deep-value zone
+  Bear $42 vs Updated EPP $87:  -52%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   -4.0       +3.8   BASE floor (vs -8 now)
+  Petroleum product sales                    -10.0       -7.1   BASE floor (vs -3 now)
+  Revenue growth                             -16.0      -56.4   BASE floor (vs +40 now)
+  Chemical prime product sales                -4.0       -1.4   BASE floor (vs -3 now)
+  Pre-tax margin change                     -270.0      -55.4   BASE floor (vs -215 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.28 × (1+41.1%)² = $14.49
+  At 13x P/E (conservative):  $188/share
+  + Cumul. dividends (2yr):  +$3.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $188  (▲108 from $81)
+  Conservative total return:  +138% over 2yr  = +69%/yr
+
+  At 11.1x the multiple is already near its 13x median, so the conservative
+  case is a growth question: breakeven at 13x needs FY2010E EPS of $5.95,
+  i.e. -9.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $71.51  –  $96.12  (at 37th pct of range)
+  Annual dividend:      $1.60/share  (yield 2.0%)
+  Realized vol (1yr):   28% annualized
+  Beta vs broad market: 0.83
+  1-sigma range (1yr):  $58  –  $103  ($81 ± 28%)
+  2-sigma range (1yr):  $35  –  $126
+  ────────────────────────────────────────────────────────────
+  Bear $42 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  An integrated oil and gas company with a 0.8 beta: the stock is +10% off its September
+  low while oil-equivalent production went from -5.6% (Q1 2008) to -7.8% (Q2 2008).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.11  10.3x  $     42    16.3%     66.6%   -50.3pp  EPS -24.9%/yr (worst year FY98-FY07, capped at 0%); P/E to its 10th pct
+  BASE       14.90  13.8x  $    206    56.8%     24.9%   +31.8pp  EPS +43.1%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       14.90  19.2x  $    286    22.7%      7.1%   +15.6pp  EPS +43.1%/yr (FY98-FY07 CAGR); P/E holds its 75th pct
+  XBULL      17.10  29.6x  $    506     4.3%      1.3%    +2.9pp  EPS +53.3%/yr (best 2-yr run FY98-FY07); P/E at its 90th pct
+
+  Proxy EV (2yr): $210  /  Market EV: $107  /  Current: $81
+  Conservative EV (2yr, ④): $188 + $3.30 divs = $192 total value
+  Downside (→ Bear $42): 47.9%   Upside (→ Bull $286): 254.6%   Ratio B 0.19x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $81 the market needs $107 in two years —
+  at or below the BASE case. That is a market composite of 1.33 against a model
+  read of 2.63: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.19x      -8%    +1.30  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.10x      -8%    +1.41  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.33x      -8%    +1.12  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.17x      -8%    +1.32  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.20x      -8%    +1.28  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.19x      -8%    +1.60  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.19x     -26%    +1.30  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.19x      -8%    +1.36  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2008 print (late October) — the next read on oil-equivalent production (-7.8% now); no guide to read it against
+  (2) Pre-tax margin — -214.6bp in Q2 2008: realizations against costs, refining and chemical margins
+  (3) A FY08 guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings
+  (4) Capital and exploration expenditures — capital and exploration expenditures $6,970M vs $5,039M in Q2 2008: the projects the volumes need
+  (5) Capital return at 11x — $8.0 billion of share purchases to reduce shares outstanding and $2,098M of dividends in the quarter: management's own read of the multiple
+  ◉ BUY  |  EPP floor $87  |  ADD below ~$175  |  TRIM above $286
+════════════════════════════════════════════════════════════════════════
+

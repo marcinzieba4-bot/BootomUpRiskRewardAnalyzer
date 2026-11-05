@@ -1,0 +1,812 @@
+{
+ "_doc": "Point-in-time fact sheet for XOM retrospectives (retro/build_xom.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted before the open or during the session on their release days (each print's release_time says which). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), and the latest declared dividend. ExxonMobil's fiscal year is the calendar year. It gives no earnings, revenue, volume or margin guidance in numbers in any filing of the period (releases, 10-Qs, 10-Ks and the analyst-meeting 8-Ks: production outlooks as charts and words, a multi-year capital range), so 'guides' is empty and the no-guide rules apply. Values are as reported; a vintage takes each year from the latest filing that reports it, per share as published (the 2001 two-for-one split restates the years published before it: 'eps_published', 'shares_published'), and the company's earnings per share excluding special items replace GAAP EPS where a filing publishes them (the history's 'normalization' says which). Revenue is total revenues and other income, the one revenue line the releases publish. A print's growth rates and margin are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago quarter is the one the same release shows. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "XOM",
+ "sources": {
+  "XO1": {
+   "published": "2000-03-23",
+   "filed": "2000-03-23 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/0000930661-00-000656.txt",
+   "supports": "income statements 1997-1999 after the Exxon-Mobil merger, restated as a pooling of interests (total revenue $201,746M, $169,642M, $185,527M; income before income taxes $19,337M, $12,083M, $11,150M); 1997 weighted average shares assuming dilution 3,581M (before the 2001 split)"
+  },
+  "XO2": {
+   "published": "2001-03-28",
+   "filed": "2001-03-28 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000093066101000781/0001.txt",
+   "supports": "income statements 1998-2000 (total revenue $169,642M, $185,527M, $232,748M; income before income taxes $12,083M, $11,150M, $27,081M); 1998 earnings excluding merger effects and special items $2.49 per share assuming dilution and 1998 weighted average shares assuming dilution 3,533M (both before the 2001 split)"
+  },
+  "XO3": {
+   "published": "2002-03-27",
+   "filed": "2002-03-27 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000093066102000889/d10k.txt",
+   "supports": "five-year selected data 1997-2001 (1997 net income per share assuming dilution before extraordinary item and cumulative effect of accounting change $1.64, after the 2001 split); 1999 earnings excluding merger effects and special items $1.19 per share assuming dilution; income statements 1999-2001; operating summary 1997-2001"
+  },
+  "XO4": {
+   "published": "2003-03-26",
+   "filed": "2003-03-26 11:14 ET (during the session)",
+   "title": "Exxon Mobil FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000093066103001208/d10k.htm",
+   "supports": "earnings excluding merger effects, discontinued operations and other special items per share assuming dilution, 2000 $2.37, 2001 $2.25; income statements 2000-2002 restated for discontinued operations (total revenue $231,846M, $212,785M, $204,506M; income before income taxes $26,881M, $23,970M, $17,510M); five-year income from continuing operations per share assuming dilution (1998 $1.15); operating summary 1998-2002 with oil-equivalent production"
+  },
+  "XO5": {
+   "published": "2004-03-15",
+   "filed": "2004-03-15 12:53 ET (during the session)",
+   "title": "Exxon Mobil FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312504041877/d10k.htm",
+   "supports": "income statements 2001-2003 (total revenues and other income $212,785M, $204,506M, $246,738M; income before income taxes $23,970M, $17,510M, $31,966M); five-year income from continuing operations per share assuming dilution (1999 $1.11); operating summary 1999-2003"
+  },
+  "XO6": {
+   "published": "2004-01-29",
+   "filed": "2004-01-29 09:14 ET (before the open)",
+   "title": "Exxon Mobil Q4 2003 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408804000018/r012904ex991.htm",
+   "supports": "2002 earnings excluding merger effects, discontinued operations, accounting change and other special items $1.69 per share assuming dilution"
+  },
+  "XO7": {
+   "published": "2005-02-28",
+   "filed": "2005-02-28 11:31 ET (during the session)",
+   "title": "Exxon Mobil FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312505038144/d10k.htm",
+   "supports": "income statements 2002-2004 (total revenues and other income $204,506M, $246,738M, $298,035M; income before income taxes $17,510M, $31,966M, $41,241M); five-year income from continuing operations per share assuming dilution (2000 $2.24); operating summary 2000-2004"
+  },
+  "XO8": {
+   "published": "2005-01-31",
+   "filed": "2005-01-31 08:58 ET (before the open)",
+   "title": "Exxon Mobil Q4 2004 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408805000026/r013105ex991.htm",
+   "supports": "2003 earnings excluding accounting change and other special items $2.56 per share assuming dilution"
+  },
+  "XO9": {
+   "published": "2006-02-28",
+   "filed": "2006-02-28 12:45 ET (during the session)",
+   "title": "Exxon Mobil FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312506040951/d10k.htm",
+   "supports": "income statements 2003-2005 (total revenues and other income $246,738M, $298,035M, $370,680M; income before income taxes $31,966M, $41,241M, $59,432M); five-year income from continuing operations per share assuming dilution (2001 $2.17); operating summary 2001-2005"
+  },
+  "XO10": {
+   "published": "2006-01-30",
+   "filed": "2006-01-30 09:09 ET (before the open)",
+   "title": "Exxon Mobil Q4 2005 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408806000025/r8k4q05ex991.htm",
+   "supports": "2004 earnings excluding special items $3.97 per share assuming dilution"
+  },
+  "XO11": {
+   "published": "2007-02-01",
+   "filed": "2007-02-01 09:46 ET (during the session)",
+   "title": "Exxon Mobil Q4 2006 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408807000021/r8k4q07991.htm",
+   "supports": "earnings excluding special items per share assuming dilution, 2005 $5.35 and 2006 $6.55"
+  },
+  "XO12": {
+   "published": "2007-02-28",
+   "filed": "2007-02-28 14:53 ET (during the session)",
+   "title": "Exxon Mobil FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312507042435/d10k.htm",
+   "supports": "five-year selected data 2002-2006 (income from continuing operations per share assuming dilution $1.61, $3.15, $3.89, $5.71, $6.62); income statements 2004-2006 (total revenues and other income $298,035M, $370,680M, $377,635M; income before income taxes $41,241M, $59,432M, $67,402M; income taxes $27,902M in 2006); 2006 weighted average shares assuming dilution 5,970M; operating summary 2002-2006 (oil-equivalent production, petroleum product sales net of purchases/sales with the same counterparty, chemical prime product sales); cash flows (operating cash flow $49,286M, additions to property, plant and equipment $15,462M, common stock acquired $29,558M, dividends $7,628M); segment sales and other operating revenue 2005-2006; dividend of $0.32 declared on January 31, 2007; Item 1 and Item 1A"
+  },
+  "XO13": {
+   "published": "2007-07-26",
+   "filed": "2007-07-26 09:08 ET (before the open)",
+   "title": "Exxon Mobil Q2 2007 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408807000107/r8k2q991.htm",
+   "supports": "Q2 2007 and Q2 2006 total revenues and other income, income before income taxes, oil-equivalent production, petroleum product sales, chemical prime product sales; dividends of $0.35 per share in Q2 2007"
+  },
+  "XO14": {
+   "published": "2007-11-01",
+   "filed": "2007-11-01 09:41 ET (during the session)",
+   "title": "Exxon Mobil Q3 2007 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408807000142/r8k3q991.htm",
+   "supports": "Q3 2007 and Q3 2006 total revenues and other income, income before income taxes, oil-equivalent production, petroleum product sales, chemical prime product sales; cash and cash equivalents"
+  },
+  "XO15": {
+   "published": "2008-02-01",
+   "filed": "2008-02-01 09:06 ET (before the open)",
+   "title": "Exxon Mobil Q4 2007 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408808000021/r8k4q991.htm",
+   "supports": "Q4 and full-year 2007 and 2006 total revenues and other income, income before income taxes, income taxes, net income per share assuming dilution, earnings excluding special items ($7.28 in 2007, $6.55 in 2006), average shares assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales"
+  },
+  "XO16": {
+   "published": "2008-02-29",
+   "filed": "2008-02-28 16:17 ET (after the close)",
+   "title": "Exxon Mobil FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312508041781/d10k.htm",
+   "supports": "five-year selected data 2003-2007 (income from continuing operations per share assuming dilution $3.15, $3.89, $5.71, $6.62, $7.28); income statements 2005-2007 (total revenues and other income $370,680M, $377,635M, $404,552M; income before income taxes $59,432M, $67,402M, $70,474M; income taxes $29,864M in 2007); 2007 weighted average shares assuming dilution 5,577M; operating summary 2003-2007; cash flows (operating cash flow $52,002M, additions to property, plant and equipment $15,387M, common stock acquired $31,822M, dividends $7,621M); segment sales and other operating revenue 2006-2007; dividend of $0.35 declared on January 30, 2008; Item 1 and Item 1A"
+  },
+  "XO17": {
+   "published": "2008-05-01",
+   "filed": "2008-05-01 10:03 ET (during the session)",
+   "title": "Exxon Mobil Q1 2008 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408808000053/f8k1q991.htm",
+   "supports": "Q1 2008 and Q1 2007 total revenues and other income, income before income taxes, oil-equivalent production, petroleum product sales, chemical prime product sales"
+  },
+  "XO18": {
+   "published": "2008-07-31",
+   "filed": "2008-07-31 09:12 ET (before the open)",
+   "title": "Exxon Mobil Q2 2008 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408808000102/r8k2q991.htm",
+   "supports": "Q2 2008 and Q2 2007 total revenues and other income, income before income taxes, oil-equivalent production, petroleum product sales, chemical prime product sales; dividends of $0.40 per share in Q2 2008"
+  },
+  "XO19": {
+   "published": "2008-10-30",
+   "filed": "2008-10-30 09:12 ET (before the open)",
+   "title": "Exxon Mobil Q3 2008 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408808000124/r8k3q991.htm",
+   "supports": "Q3 2008 and Q3 2007 total revenues and other income, income before income taxes, oil-equivalent production, petroleum product sales, chemical prime product sales"
+  },
+  "XO20": {
+   "published": "2001-08-13",
+   "filed": "2001-08-13 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil Q2 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408801500015/sec10qs.txt",
+   "supports": "the two-for-one stock split approved on May 30, 2001 for shareholders of record on June 20, 2001"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-28",
+   "sources": [
+    "XO12",
+    "XO11",
+    "XO10",
+    "XO8",
+    "XO6",
+    "XO9",
+    "XO7",
+    "XO5",
+    "XO4",
+    "XO3",
+    "XO2",
+    "XO1"
+   ],
+   "company": "Exxon Mobil Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY06",
+   "why": "ExxonMobil: 'Their principal business is energy, involving exploration for, and production of, crude oil and natural gas, manufacture of petroleum products and transportation and sale of crude oil, natural gas and petroleum products'; 'The oil and gas business is fundamentally a commodity business. This means the operations and earnings of the Corporation and its affiliates throughout the world may be significantly affected by changes in oil, gas and petrochemical prices and by changes in margins on gasoline and other refined products'; 'The energy and petrochemical industries are highly competitive'; among the factors it lists, 'the competitiveness of alternative hydrocarbon or other energy sources' and 'laws and regulations related to environmental or energy security matters, including those addressing alternative energy sources and the risks of global climate change' (its own FY2006 10-K): earnings that move with the commodity cycle, by the company's own account; no disruption theme is live for an oil and gas producer, so the alternative-energy and climate-change wording stays here",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_gaap": {
+    "1997": 1.64,
+    "1998": 1.15,
+    "1999": 1.11,
+    "2000": 2.24,
+    "2001": 2.17,
+    "2002": 1.61,
+    "2003": 3.15,
+    "2004": 3.89,
+    "2005": 5.71,
+    "2006": 6.62
+   },
+   "eps_normalized": {
+    "1997": 1.64,
+    "1998": 2.49,
+    "1999": 1.19,
+    "2000": 2.37,
+    "2001": 2.25,
+    "2002": 1.69,
+    "2003": 2.56,
+    "2004": 3.97,
+    "2005": 5.35,
+    "2006": 6.55
+   },
+   "eps_published": {
+    "1997": "2002-03-27",
+    "1998": "2001-03-28",
+    "1999": "2002-03-27",
+    "2000": "2003-03-26",
+    "2001": "2003-03-26",
+    "2002": "2004-01-29",
+    "2003": "2005-01-31",
+    "2004": "2006-01-30",
+    "2005": "2007-02-01",
+    "2006": "2007-02-01"
+   },
+   "revenue_usd_b": {
+    "1997": 201.746,
+    "1998": 169.642,
+    "1999": 185.527,
+    "2000": 231.846,
+    "2001": 212.785,
+    "2002": 204.506,
+    "2003": 246.738,
+    "2004": 298.035,
+    "2005": 370.68,
+    "2006": 377.635
+   },
+   "revenue_sources": {
+    "1997": "XO1",
+    "1998": "XO2",
+    "1999": "XO3",
+    "2000": "XO4",
+    "2001": "XO5",
+    "2002": "XO7",
+    "2003": "XO9",
+    "2004": "XO12",
+    "2005": "XO12",
+    "2006": "XO12"
+   },
+   "diluted_shares_m": {
+    "1997": 3581.0,
+    "2006": 5970.0
+   },
+   "shares_published": {
+    "1997": "2000-03-23"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 17.85,
+   "prev_fy_pretax_margin_note": "FY06 income before income taxes $67,402M / total revenues and other income $377,635M (FY2006 10-K)",
+   "prev_fy_sales_growth": 1.9,
+   "prev_fy_production_pct": 4.2,
+   "prev_fy_production_note": "4,237 koebd vs 4,065, FY2006 10-K",
+   "tax_rate": 0.414,
+   "tax_note": "FY06 effective rate: income taxes $27,902M / income before income taxes $67,402M (FY2006 10-K)",
+   "fcf_b": 33.82,
+   "fcf_label": "FY06",
+   "fcf_note": "operating cash flow $49,286M less additions to property, plant and equipment $15,462M",
+   "prev_q_production_pct": null,
+   "prev_q_label": "Q1 2007",
+   "dividend_annual": 1.28,
+   "dividend_note": "$0.32 quarterly, declared on January 31, 2007 (FY2006 10-K)",
+   "cash_return_text": "$29,558M of common stock acquired and $7,628M of dividends paid in FY06",
+   "business_line": "Upstream, Downstream and Chemical",
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's earnings per share assuming dilution excluding special items (merger effects, discontinued operations and other special items to 2002) replace it where a filing publishes them: 1998 $2.49 before the 2001 split (FY2000 10-K), 1999 $1.19 (FY2001 10-K), 2000 $2.37 and 2001 $2.25 (FY2002 10-K), 2002 $1.69 (Q4 2003 release), 2003 $2.56 (Q4 2004 release), 2004 $3.97 (Q4 2005 release), 2005 $5.35 and 2006 $6.55 (Q4 2006 release; GAAP $5.71 and $6.62); 1997 stays at its $1.64 (FY2001 10-K): the FY1999 10-K gives 1997 earnings excluding special items in dollars only, and nothing is derived; no year is excluded (the largest listed items, 2003's $2,230M tax settlement and $1,700M Ruhrgas gain, are under that year's $17,030M of earnings without them)",
+   "groups": [
+    [
+     "Upstream",
+     32.875,
+     9.4
+    ],
+    [
+     "Downstream",
+     298.457,
+     0.3
+    ],
+    [
+     "Chemical",
+     34.098,
+     9.3
+    ]
+   ],
+   "groups_basis": "FY06 segment sales and other operating revenue (FY2006 10-K; FY05 still includes purchases/sales with the same counterparty; corporate $37M not shown)"
+  },
+  {
+   "published": "2008-02-29",
+   "sources": [
+    "XO16",
+    "XO15",
+    "XO12",
+    "XO11",
+    "XO10",
+    "XO8",
+    "XO6",
+    "XO9",
+    "XO7",
+    "XO5",
+    "XO4",
+    "XO3",
+    "XO2"
+   ],
+   "company": "Exxon Mobil Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "why": "ExxonMobil: 'Their principal business is energy, involving exploration for, and production of, crude oil and natural gas, manufacture of petroleum products and transportation and sale of crude oil, natural gas and petroleum products'; 'The oil and gas business is fundamentally a commodity business. This means the operations and earnings of the Corporation and its affiliates throughout the world may be significantly affected by changes in oil, gas and petrochemical prices and by changes in margins on gasoline and other refined products'; 'The energy and petrochemical industries are highly competitive'; among the factors it lists, 'the competitiveness of alternative hydrocarbon or other energy sources' and 'laws and regulations related to environmental or energy security matters, including those addressing alternative energy sources and the risks of global climate change' (its own FY2007 10-K): earnings that move with the commodity cycle, by the company's own account; no disruption theme is live for an oil and gas producer, so the alternative-energy and climate-change wording stays here",
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_gaap": {
+    "1998": 1.15,
+    "1999": 1.11,
+    "2000": 2.24,
+    "2001": 2.17,
+    "2002": 1.61,
+    "2003": 3.15,
+    "2004": 3.89,
+    "2005": 5.71,
+    "2006": 6.62,
+    "2007": 7.28
+   },
+   "eps_normalized": {
+    "1998": 2.49,
+    "1999": 1.19,
+    "2000": 2.37,
+    "2001": 2.25,
+    "2002": 1.69,
+    "2003": 2.56,
+    "2004": 3.97,
+    "2005": 5.35,
+    "2006": 6.55,
+    "2007": 7.28
+   },
+   "eps_published": {
+    "1998": "2001-03-28",
+    "1999": "2002-03-27",
+    "2000": "2003-03-26",
+    "2001": "2003-03-26",
+    "2002": "2004-01-29",
+    "2003": "2005-01-31",
+    "2004": "2006-01-30",
+    "2005": "2007-02-01",
+    "2006": "2008-02-01",
+    "2007": "2008-02-01"
+   },
+   "revenue_usd_b": {
+    "1998": 169.642,
+    "1999": 185.527,
+    "2000": 231.846,
+    "2001": 212.785,
+    "2002": 204.506,
+    "2003": 246.738,
+    "2004": 298.035,
+    "2005": 370.68,
+    "2006": 377.635,
+    "2007": 404.552
+   },
+   "revenue_sources": {
+    "1998": "XO2",
+    "1999": "XO3",
+    "2000": "XO4",
+    "2001": "XO5",
+    "2002": "XO7",
+    "2003": "XO9",
+    "2004": "XO12",
+    "2005": "XO16",
+    "2006": "XO16",
+    "2007": "XO16"
+   },
+   "diluted_shares_m": {
+    "1998": 3533.0,
+    "2007": 5577.0
+   },
+   "shares_published": {
+    "1998": "2001-03-28"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 17.42,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes $70,474M / total revenues and other income $404,552M (FY2007 10-K)",
+   "prev_fy_sales_growth": 7.1,
+   "prev_fy_production_pct": -1.3,
+   "prev_fy_production_note": "4,180 koebd vs 4,237, FY2007 10-K",
+   "tax_rate": 0.424,
+   "tax_note": "FY07 effective rate: income taxes $29,864M / income before income taxes $70,474M (FY2007 10-K)",
+   "fcf_b": 36.62,
+   "fcf_label": "FY07",
+   "fcf_note": "operating cash flow $52,002M less additions to property, plant and equipment $15,387M",
+   "prev_q_production_pct": null,
+   "prev_q_label": "Q3 2007",
+   "dividend_annual": 1.4,
+   "dividend_note": "$0.35 quarterly, declared on January 30, 2008 (FY2007 10-K)",
+   "cash_return_text": "$31,822M of common stock acquired and $7,621M of dividends paid in FY07",
+   "business_line": "Upstream, Downstream and Chemical",
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's earnings per share assuming dilution excluding special items (merger effects, discontinued operations and other special items to 2002) replace it where a filing publishes them: 1998 $2.49 before the 2001 split (FY2000 10-K), 1999 $1.19 (FY2001 10-K), 2000 $2.37 and 2001 $2.25 (FY2002 10-K), 2002 $1.69 (Q4 2003 release), 2003 $2.56 (Q4 2004 release), 2004 $3.97 (Q4 2005 release), 2005 $5.35 (Q4 2006 release), 2006 $6.55 and 2007 $7.28 (Q4 2007 release; GAAP $5.71, $6.62 and $7.28); no year is excluded (the largest listed items, 2003's $2,230M tax settlement and $1,700M Ruhrgas gain, are under that year's $17,030M of earnings without them)",
+   "groups": [
+    [
+     "Upstream",
+     28.656,
+     -12.8
+    ],
+    [
+     "Downstream",
+     324.816,
+     8.8
+    ],
+    [
+     "Chemical",
+     36.826,
+     8.0
+    ]
+   ],
+   "groups_basis": "FY07 segment sales and other operating revenue (FY2007 10-K; corporate $30M not shown)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-26",
+   "source": "XO13",
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 09:08 ET; webcast at 10 a.m. Central time",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_m": 98350,
+    "rev_prior_m": 99034,
+    "pretax_m": 17928,
+    "pretax_prior_m": 18204,
+    "oe_kbd": 4120,
+    "oe_prior_kbd": 4161,
+    "pps_kbd": 6974,
+    "pps_prior_kbd": 7060,
+    "chem_kt": 6897,
+    "chem_prior_kt": 6855
+   },
+   "sales_note": "total revenues and other income $98,350M vs $99,034M (the release; its only revenue line)",
+   "pretax_margin_note": "income before income taxes $17,928M vs $18,204M",
+   "production_note": "On an oil-equivalent basis, production decreased by 1% from the second quarter of 2006. Excluding the cumulative impact of entitlements and divestments, as well as OPEC quota effects, production was up nearly 4%.",
+   "eps_q": 1.83,
+   "eps_q_prior": 1.72,
+   "eps_note": "no special items in either quarter",
+   "diluted_shares_m": 5620,
+   "cash_b": 33.6,
+   "cash_note": "total cash and cash equivalent $33.6B (Investor Relations Data Summary)",
+   "capex_note": "capital and exploration expenditures $5,039M vs $4,901M",
+   "next_print": "Q3 2007 print (late October)",
+   "cash_return_text": "$7.0 billion of share purchases to reduce shares outstanding and $1,961M of dividends in the quarter",
+   "sales_b": 98.35,
+   "sales_pct": -0.7,
+   "pretax_margin": 18.23,
+   "pretax_margin_bp": -15.3,
+   "production_pct": -1.0,
+   "product_sales_pct": -1.2,
+   "chem_pct": 0.6
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-11-01",
+   "source": "XO14",
+   "release": "Nov 1",
+   "release_time": "during the session on Nov 1: 8-K accepted 09:41 ET; webcast at 10 a.m. Central time; public before that day's close",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 102337,
+    "rev_prior_m": 99593,
+    "pretax_m": 16760,
+    "pretax_prior_m": 18178,
+    "oe_kbd": 3920,
+    "oe_prior_kbd": 4004,
+    "pps_kbd": 7101,
+    "pps_prior_kbd": 7302,
+    "chem_kt": 6729,
+    "chem_prior_kt": 6752
+   },
+   "sales_note": "total revenues and other income $102,337M vs $99,593M (the release; its only revenue line)",
+   "pretax_margin_note": "income before income taxes $16,760M vs $18,178M",
+   "production_note": "On an oil-equivalent basis, production decreased by 2% from the third quarter of 2006. Excluding the impact of entitlements, divestments, OPEC quota effects and Venezuela, production was up 3%.",
+   "eps_q": 1.7,
+   "eps_q_prior": 1.77,
+   "eps_note": "no special items in either quarter",
+   "diluted_shares_m": 5536,
+   "cash_b": 36.0,
+   "cash_note": "total cash and cash equivalent $36.0B (Investor Relations Data Summary)",
+   "capex_note": "capital and exploration expenditures $5,441M vs $5,061M",
+   "next_print": "Q4 2007 print (late January or early February)",
+   "cash_return_text": "$7.0 billion of share purchases to reduce shares outstanding and $1,932M of dividends in the quarter",
+   "sales_b": 102.337,
+   "sales_pct": 2.8,
+   "pretax_margin": 16.38,
+   "pretax_margin_bp": -187.5,
+   "production_pct": -2.1,
+   "product_sales_pct": -2.8,
+   "chem_pct": -0.3
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-02-01",
+   "source": "XO15",
+   "release": "Feb 1",
+   "release_time": "before the open on Feb 1: 8-K accepted 09:06 ET; webcast at 10 a.m. Central time",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 116642,
+    "rev_prior_m": 90028,
+    "pretax_m": 19722,
+    "pretax_prior_m": 15561,
+    "oe_kbd": 4253,
+    "oe_prior_kbd": 4228,
+    "pps_kbd": 7125,
+    "pps_prior_kbd": 7447,
+    "chem_kt": 7049,
+    "chem_prior_kt": 6827
+   },
+   "sales_note": "total revenues and other income $116,642M vs $90,028M (the release; its only revenue line)",
+   "pretax_margin_note": "income before income taxes $19,722M vs $15,561M",
+   "production_note": "On an oil-equivalent basis, production increased nearly 1% from the fourth quarter of 2006. Excluding the Venezuela expropriation, divestments, OPEC quota effects and price and spend impacts on volumes, production was up nearly 3%.",
+   "eps_q": 2.13,
+   "eps_q_prior": 1.76,
+   "eps_note": "Q4 2006 included a special tax-related benefit of $410 million ($1.69 a share excluding it)",
+   "diluted_shares_m": 5454,
+   "cash_b": 34.0,
+   "cash_note": "total cash and cash equivalent $34.0B (Investor Relations Data Summary)",
+   "capex_note": "capital and exploration expenditures $6,151M vs $5,069M",
+   "next_print": "Q1 2008 print (late April or early May)",
+   "cash_return_text": "$7.0 billion of share purchases to reduce shares outstanding and $1,903M of dividends in the quarter",
+   "sales_b": 116.642,
+   "sales_pct": 29.6,
+   "pretax_margin": 16.91,
+   "pretax_margin_bp": -37.6,
+   "production_pct": 0.6,
+   "product_sales_pct": -4.3,
+   "chem_pct": 3.3,
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 7.28,
+    "revenue_usd_b": 404.552,
+    "diluted_shares_m": 5577,
+    "normalization_note": "FY2007 $7.28 from the Q4 2007 release (no special items in 2007; earnings excluding special items equal net income)",
+    "pretax_margin": 17.42,
+    "pretax_margin_note": "FY07 income before income taxes $70,474M / total revenues and other income $404,552M (Q4 2007 release)",
+    "sales_growth": 7.1,
+    "production_pct": -1.3,
+    "production_note": "4,180 koebd vs 4,237, Q4 2007 release",
+    "tax_rate": 0.424,
+    "tax_note": "FY07 effective rate: income taxes $29,864M / income before income taxes $70,474M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-05-01",
+   "source": "XO17",
+   "release": "May 1",
+   "release_time": "during the session on May 1: 8-K accepted 10:03 ET; webcast at 10 a.m. Central time; public before that day's close",
+   "period_end": "2008-03-31",
+   "raw": {
+    "rev_m": 116854,
+    "rev_prior_m": 87223,
+    "pretax_m": 20192,
+    "pretax_prior_m": 16064,
+    "oe_kbd": 4182,
+    "oe_prior_kbd": 4432,
+    "pps_kbd": 6821,
+    "pps_prior_kbd": 7198,
+    "chem_kt": 6578,
+    "chem_prior_kt": 6805
+   },
+   "sales_note": "total revenues and other income $116,854M vs $87,223M (the release; its only revenue line)",
+   "pretax_margin_note": "income before income taxes $20,192M vs $16,064M",
+   "production_note": "On an oil-equivalent basis, production decreased 5.6% from the first quarter of 2007. Excluding the Venezuela expropriation, divestments, OPEC quota effects and price and spend impacts on volumes, production was down 3%.",
+   "eps_q": 2.03,
+   "eps_q_prior": 1.62,
+   "eps_note": "no special items in either quarter",
+   "diluted_shares_m": 5362,
+   "cash_b": 40.9,
+   "cash_note": "total cash and cash equivalent $40.9B (Investor Relations Data Summary)",
+   "capex_note": "capital and exploration expenditures $5,491M vs $4,222M",
+   "next_print": "Q2 2008 print (late July)",
+   "cash_return_text": "$8.0 billion of share purchases to reduce shares outstanding and $1,879M of dividends in the quarter",
+   "sales_b": 116.854,
+   "sales_pct": 34.0,
+   "pretax_margin": 17.28,
+   "pretax_margin_bp": -113.7,
+   "production_pct": -5.6,
+   "product_sales_pct": -5.2,
+   "chem_pct": -3.3
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-31",
+   "source": "XO18",
+   "release": "Jul 31",
+   "release_time": "before the open on Jul 31: 8-K accepted 09:12 ET; webcast at 10 a.m. Central time",
+   "period_end": "2008-06-30",
+   "raw": {
+    "rev_m": 138072,
+    "rev_prior_m": 98350,
+    "pretax_m": 22206,
+    "pretax_prior_m": 17928,
+    "oe_kbd": 3801,
+    "oe_prior_kbd": 4123,
+    "pps_kbd": 6775,
+    "pps_prior_kbd": 6974,
+    "chem_kt": 6718,
+    "chem_prior_kt": 6897
+   },
+   "sales_note": "total revenues and other income $138,072M vs $98,350M (the release; its only revenue line)",
+   "pretax_margin_note": "income before income taxes $22,206M vs $17,928M",
+   "production_note": "On an oil-equivalent basis, production decreased 8% from the second quarter of 2007. Excluding impacts related to the Venezuela expropriation, the Nigeria labor strike and lower entitlement volumes (which include price and spend impacts and PSC net interest reductions), production was down about 3%.",
+   "eps_q": 2.22,
+   "eps_q_prior": 1.83,
+   "eps_note": "including an after tax special charge of $290 million for the Valdez punitive damages ($2.27 a share excluding it)",
+   "diluted_shares_m": 5261,
+   "cash_b": 39.0,
+   "cash_note": "total cash and cash equivalent $39.0B (Investor Relations Data Summary)",
+   "capex_note": "capital and exploration expenditures $6,970M vs $5,039M",
+   "next_print": "Q3 2008 print (late October)",
+   "cash_return_text": "$8.0 billion of share purchases to reduce shares outstanding and $2,098M of dividends in the quarter",
+   "sales_b": 138.072,
+   "sales_pct": 40.4,
+   "pretax_margin": 16.08,
+   "pretax_margin_bp": -214.6,
+   "production_pct": -7.8,
+   "product_sales_pct": -2.9,
+   "chem_pct": -2.6
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-30",
+   "source": "XO19",
+   "release": "Oct 30",
+   "release_time": "before the open on Oct 30: 8-K accepted 09:12 ET; webcast at 10 a.m. Central time",
+   "period_end": "2008-09-30",
+   "raw": {
+    "rev_m": 137737,
+    "rev_prior_m": 102337,
+    "pretax_m": 26157,
+    "pretax_prior_m": 16760,
+    "oe_kbd": 3595,
+    "oe_prior_kbd": 3918,
+    "pps_kbd": 6688,
+    "pps_prior_kbd": 7101,
+    "chem_kt": 6060,
+    "chem_prior_kt": 6729
+   },
+   "sales_note": "total revenues and other income $137,737M vs $102,337M (the release; its only revenue line)",
+   "pretax_margin_note": "income before income taxes $26,157M vs $16,760M",
+   "production_note": "On an oil-equivalent basis, production decreased 8% from the third quarter of 2007. Excluding lower entitlement volumes (which include price and spend impacts and PSC net interest reductions) and impacts associated with the hurricanes, production was down about 5%.",
+   "eps_q": 2.86,
+   "eps_q_prior": 1.7,
+   "eps_note": "including an after-tax special gain of $1,620 million from the sale of a natural gas transportation business in Germany and an after-tax special charge of $170 million for Valdez interest ($2.59 a share excluding them; income before income taxes includes the gain, for which no pre-tax amount is published)",
+   "diluted_shares_m": 5160,
+   "cash_b": 36.7,
+   "cash_note": "total cash and cash equivalent $36.7B (Investor Relations Data Summary)",
+   "capex_note": "capital and exploration expenditures $6,853M vs $5,441M",
+   "next_print": "Q4 2008 print (late January)",
+   "cash_return_text": "$8.0 billion of share purchases to reduce shares outstanding and $2,063M of dividends in the quarter",
+   "sales_b": 137.737,
+   "sales_pct": 34.6,
+   "pretax_margin": 18.99,
+   "pretax_margin_bp": 261.3,
+   "production_pct": -8.2,
+   "product_sales_pct": -5.8,
+   "chem_pct": -9.9,
+   "outlook_words": "Damage repairs and lower volumes across all business lines associated with the hurricanes are expected to reduce fourth quarter earnings by about $500 million."
+  }
+ ],
+ "guides": [],
+ "dividends": [
+  {
+   "published": "2007-07-26",
+   "source": "XO13",
+   "quarterly": 0.35,
+   "note": "$0.35 a share in the second quarter of 2007 (Q2 2007 release)"
+  },
+  {
+   "published": "2008-07-31",
+   "source": "XO18",
+   "quarterly": 0.4,
+   "note": "$0.40 a share in the second quarter of 2008 (Q2 2008 release)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [
+  {
+   "published": "2001-08-13",
+   "source": "XO20",
+   "effective": "2001-07-19",
+   "ratio": 2,
+   "note": "two-for-one, approved on May 30, 2001 for shareholders of record on June 20, 2001; split-adjusted trading from July 19, 2001 (Yahoo's split date); first stated in the Q2 2001 10-Q"
+  }
+ ],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'XOM'): the decade of the FY2006 10-K, the vintage public on 2008-01-04, is 1997-2006; no 10-K published by then reports 1996 on the merged Exxon Mobil basis (the FY1999 10-K's income statements and operating summary start in 1997), so each signal has the nine year-on-year changes 1998-2006 (rule T takes the annual values the filings report). Each change comes from the latest 10-K published by 2008-01-04 that reports both years: total revenues and other income and income before income taxes from its income statement, volumes from its operating summary. Everything as reported, seams included (the 2002 discontinued-operations reclassification, the 2006 netting of purchases/sales with the same counterparty, which the FY2006 10-K applies to 2002-2006 petroleum product sales, and the merger divestments of 2000).",
+  "production": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": -1.64,
+    "1999": -0.87,
+    "2000": 0.99,
+    "2001": -0.51,
+    "2002": -0.4,
+    "2003": -0.83,
+    "2004": 0.29,
+    "2005": -3.56,
+    "2006": 4.23
+   },
+   "sources": "XO3 (1998: 1997 and 1998 from the FY2001 10-K, oil-equivalent = liquids + gas / 6, which that 10-K does not state), XO4 (1999), XO5 (2000), XO7 (2001), XO9 (2002), XO12 (2003-2006)",
+   "thresholds": {
+    "BEAR": -7,
+    "BASE": -4,
+    "BULL": -1,
+    "XBULL": 4
+   }
+  },
+  "product_sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": 1.14,
+    "1999": 0.16,
+    "2000": -10.06,
+    "2001": -0.28,
+    "2002": -2.68,
+    "2003": 2.76,
+    "2004": 3.31,
+    "2005": 0.11,
+    "2006": -3.62
+   },
+   "sources": "XO3 (1998: 1997 and 1998 from the FY2001 10-K), XO4 (1999), XO5 (2000), XO7 (2001), XO9 (2002), XO12 (2003-2006)",
+   "thresholds": {
+    "BEAR": -20,
+    "BASE": -10,
+    "BULL": 0,
+    "XBULL": 3
+   }
+  },
+  "revenue": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": -15.91,
+    "1999": 9.36,
+    "2000": 25.45,
+    "2001": -8.22,
+    "2002": -3.89,
+    "2003": 20.65,
+    "2004": 20.79,
+    "2005": 24.37,
+    "2006": 1.88
+   },
+   "sources": "XO1 (1998), XO2 (1999), XO3 (2000), XO4 (2001), XO5 (2002), XO7 (2003), XO9 (2004), XO12 (2005-2006)",
+   "thresholds": {
+    "BEAR": -41,
+    "BASE": -16,
+    "BULL": 9,
+    "XBULL": 25
+   }
+  },
+  "chem_sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": -0.88,
+    "1999": 7.0,
+    "2000": 1.4,
+    "2001": 0.56,
+    "2002": 3.2,
+    "2003": -0.15,
+    "2004": 4.6,
+    "2005": -3.64,
+    "2006": 2.14
+   },
+   "sources": "XO3 (1998: 1997 and 1998 from the FY2001 10-K), XO4 (1999), XO5 (2000), XO7 (2001), XO9 (2002), XO12 (2003-2006)",
+   "thresholds": {
+    "BEAR": -9,
+    "BASE": -4,
+    "BULL": 1,
+    "XBULL": 7
+   }
+  },
+  "pretax_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1998": -246.2,
+    "1999": -111.3,
+    "2000": 562.5,
+    "2001": -32.9,
+    "2002": -270.3,
+    "2003": 439.3,
+    "2004": 88.2,
+    "2005": 219.6,
+    "2006": 181.5
+   },
+   "sources": "XO1 (1998), XO2 (1999), XO3 (2000), XO4 (2001), XO5 (2002), XO7 (2003), XO9 (2004), XO12 (2005-2006)",
+   "thresholds": {
+    "BEAR": -630,
+    "BASE": -270,
+    "BULL": 90,
+    "XBULL": 560
+   }
+  }
+ }
+}

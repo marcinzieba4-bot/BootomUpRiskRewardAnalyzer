@@ -6572,6 +6572,156 @@ Judgement calls that could carry hindsight:
 - CLOUD kept on the watch list in each 10-K's restructured wording (text only);
 - the signals, unchanged since 2008 and chosen by a builder who knows how 2024-2026 went; DURABLE (the class label only).
 
+## XOM (ExxonMobil): the ninth ticker, in staging
+
+The XOM series is built apart from ACN, UNP, LOW, AAPL, NKE, AVGO, PEP and MSFT and shares nothing with them but the machinery: its own
+fact sheet (`retro/facts/XOM.json`), builder (`retro/build_xom.py`) and engine (`retro/templates/xom_engine.py.tmpl`, the MSFT engine with
+integrated oil and gas signals). The method is still r2. No fact, parameter, outcome or finding of another ticker enters an XOM model, and
+neither does today's live profile of XOM in `data/business_profiles.json` (a 2026 judgement). Outputs go to `staging/retrospective/XOM/`,
+beside the others, with the same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_xom.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/XOM/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series XOM
+python3 retro/tools/firewall.py 2008-07-01 XOM
+python3 retro/tools/firewall.py 2009-01-01 XOM
+```
+
+The 10-Ks from FY1999 to FY2007 were read for the history and the decade's signal values (the FY1999-FY2001 10-Ks are plain-text
+filings, the first on the merged Exxon Mobil basis), with the Q4 releases of 2003-2006 for the per-share figures they publish excluding
+special items; every 8-K and 10-Q of January 2007 to January 2009 (36 filings, the two analyst-meeting transcripts and slide decks among
+them) and the Q2 2001 10-Q for the split were read in full, with no delegated transcription. 173 strings were checked with `verbatim.py` against their own filings,
+and every raw value of the six prints was matched again by script to the text of its release. Each source's date comes from EDGAR's
+acceptance time (converted from UTC; before 2003 EDGAR gives the filing date only). Decided on 2026-11-05, before any XOM model was built or
+any XOM outcome computed:
+
+- **Fiscal calendar.** ExxonMobil's fiscal year is the calendar year. The four dates of January 2008 have no 2007 EPS yet: FY06's stands
+  for 2007 and the first days of 2008 (the rollover rule), until the Q4 2007 print adds FY07.
+- **Prices on the as-of share basis** (the UNP rule). ExxonMobil last split on 2001-07-19 (two-for-one, approved on May 30, 2001 for
+  shareholders of record on June 20, 2001, first stated in the Q2 2001 10-Q, filed 2001-08-13), so for every 2008 date Yahoo's series is the
+  price as traded: $92.08 on 2008-01-04. The split restates the per-share facts published before it: 1998 EPS excluding special items (the
+  FY2000 10-K, $2.49 → $1.245) and the first year's diluted shares (the FY1999 10-K's 3,581M for 1997 and the FY2000 10-K's 3,533M for 1998,
+  doubled). The 1997 split precedes every per-share fact in the fact sheet.
+- **Release timing.** The Q2 2007, Q4 2007, Q2 2008 and Q3 2008 earnings 8-Ks were accepted before the open (09:06-09:12 ET; the webcast
+  at 10 a.m. Central), the Q3 2007 and Q1 2008 ones during the session (09:41 and 10:03 ET), so each print is dated its release day. The Q4
+  2007 print came on Friday 2008-02-01 before the open, so that day is the week's date and meets its close (the AAPL 2011 rule); the
+  Thursday prints date their weeks the next day: 2008-05-02, 2008-08-01 and 2008-10-31. The FY2007 10-K, accepted 2008-02-28 16:17 ET, is
+  dated 2008-02-29.
+- **History: each year from the latest filing that reports it.** The FY2006 10-K (accepted 2007-02-28 14:53 ET) gives 2002-2006 per share
+  and 2004-2006 income statements; 2003 revenue comes from the FY2005 10-K, 2002 from the FY2004 10-K, 2001 from the FY2003 10-K, 2000 from
+  the FY2002 10-K, 1999 from the FY2001 10-K, 1998 from the FY2000 10-K and 1997 from the FY1999 10-K. The Q4 2007 release extends it with
+  2007 from 2008-02-01, and the FY2007 10-K moves the window to 1998-2007. Three seams stay in, as published (the LOW and PEP rule): the 2002
+  reclassification of the coal and copper businesses as discontinued operations (the FY2002 10-K's 2000 revenue is $231,846M, the FY2001
+  10-K's $232,748M; 1999 and earlier keep them), the netting of purchases and sales with the same counterparty from 2006 (2006 revenue
+  +1.9% on a 2005 that still includes $30,810M of them), and the 1999 merger, accounted for as a pooling of interests, so 1997 and 1998 are
+  the combined companies as later 10-Ks restate them.
+- **Revenue is total revenues and other income**, the one revenue line the releases publish (the Q4 2003 release heads it "Revenue"); the
+  history takes it from the 10-K income statements, so the quarter's growth and the history's median growth share a basis. It includes
+  sales-based taxes and the equity companies' income.
+- **EPS** is diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes (the NKE
+  rule). The company's earnings per share assuming dilution excluding special items replace it where a filing publishes them (the ACN rule):
+  1998 $1.245 (FY2000 10-K, after the split), 1999 $1.19 (FY2001 10-K), 2000 $2.37 and 2001 $2.25 (FY2002 10-K: merger effects, discontinued
+  operations and other special items), 2002 $1.69 (Q4 2003 release), 2003 $2.56 (Q4 2004 release: the $2,230M tax settlement, the $1,700M
+  Ruhrgas gain and the accounting change), 2004 $3.97 (Q4 2005 release), 2005 $5.35 and 2006 $6.55 (Q4 2006 release), 2007 $7.28 (no special
+  items). 1997 stays GAAP at $1.64 (FY2001 10-K): the FY1999 10-K gives its earnings excluding special items in dollars only, and nothing is
+  derived. **No year is excluded:** the largest listed items, 2003's benefits, are under that year's $17,030M of earnings without them (the
+  AAPL FY2003 test and its AVGO mirror). The special items of 1998 include write-downs and inventory effects of the oil-price fall; they
+  are the company's own list, taken as published.
+- **No guide in numbers.** No release, 10-Q, 10-K or other 8-K of 2007-2008 gives an earnings, revenue, volume or margin guide in numbers.
+  The analyst meetings of 2007-03-07 and 2008-03-05 (8-Ks of 2007-03-13 and 2008-03-11, with transcripts) show production capacity as
+  charts and words and a capital "investment profile in the range of $25 billion to $30 billion per year", a multi-year range that is not
+  a current-year input (the LOW rule). So, on every date:
+  - current-FY EPS: the last full year's EPS stands: FY06's $6.55 to 2008-01-25, FY07's $7.28 from the Q4 2007 print (the UNP and NKE rule);
+  - BASE growth and the growth factor: the latest quarter's revenue growth, as reported (the UNP rule; no filing states a currency effect on
+    revenue, so it is the reported growth, the MSFT and PEP fallback): +2.8% (Q3 2007), +29.6% (Q4 2007), +34.0% (Q1 2008), +40.4% (Q2 2008),
+    +34.6% (Q3 2008);
+  - no margin step: the margin signal takes the latest quarter's change.
+  - The Q3 2008 release's "Damage repairs and lower volumes across all business lines associated with the hurricanes are expected to reduce
+    fourth quarter earnings by about $500 million." is shown in the guide line and feeds no input (the UNP quarter-guide rule).
+- **Dividends,** each from the first filing that states the rate: $0.32 a quarter (FY2006 10-K, declared January 31, 2007), $0.35 from the Q2
+  2007 release, $0.35 again in the FY2007 10-K (declared January 30, 2008), $0.40 from the Q2 2008 release.
+- **Signals.** Six, with ACN's weights: oil-equivalent production growth (0.20), petroleum product sales growth (0.20), revenue growth (0.15,
+  as reported), chemical prime product sales growth (0.15), the pre-tax margin change (0.15: income before income taxes on total revenues and
+  other income) and the theme slot at 2/4. The three volumes are the ones each release reports for its three segments (Upstream, Downstream,
+  Chemical), as stated, each against the year-ago quarter in the same release; the fact sheet keeps the raw figures and the builder
+  re-derives each value.
+- **Thresholds by rule T** over the decade of the FY2006 10-K, the vintage public on 2008-01-04: 1997-2006. No 10-K published by then
+  reports 1996 on the merged basis (the FY1999 10-K's statements and operating summary start in 1997), so each signal has the nine changes
+  1998-2006 (rule T takes the annual values the filings report, the AVGO rule), each from the latest 10-K published by then that reports
+  both years. The FY2001 10-K states no oil-equivalent line, so its 1997 and 1998 production is liquids plus gas at the 6-to-1 conversion the
+  later 10-Ks state (4,271.5 for 1998 against the FY2002 10-K's stated 4,272). The values are in the fact sheet (`rule_t`); the builder
+  recomputes the thresholds and refuses to build if the engine's differ.
+
+  | Signal | 1998-2006 | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | oil-equivalent production | -1.64, -0.87, 0.99, -0.51, -0.4, -0.83, 0.29, -3.56, 4.23 % | -7 / -4 / -1 / 4 % |
+  | petroleum product sales | 1.14, 0.16, -10.06, -0.28, -2.68, 2.76, 3.31, 0.11, -3.62 % | -20 / -10 / 0 / 3 % |
+  | revenue growth | -15.91, 9.36, 25.45, -8.22, -3.89, 20.65, 20.79, 24.37, 1.88 % | -41 / -16 / 9 / 25 % |
+  | chemical prime product sales | -0.88, 7.0, 1.4, 0.56, 3.2, -0.15, 4.6, -3.64, 2.14 % | -9 / -4 / 1 / 7 % |
+  | pre-tax margin change | -246.2, -111.3, 562.5, -32.9, -270.3, 439.3, 88.2, 219.6, 181.5 bp | -630 / -270 / 90 / 560 bp |
+
+- **Durability: CYCLICAL, risk 2, the first ticker that is not DURABLE.** The house taxonomy's CYCLICAL is a "good business whose earnings
+  ARE the cycle (commodities, ...)", and the 10-K says so in its own words: "The oil and gas business is fundamentally a commodity business.
+  This means the operations and earnings of the Corporation and its affiliates throughout the world may be significantly affected by changes
+  in oil, gas and petrochemical prices and by changes in margins on gasoline and other refined products". The "why" quotes that, the
+  principal business and "The energy and petrochemical industries are highly competitive". The kind changes the class label only (CHEAP reads
+  CYCLICAL, RISK PRICED IN); the price state and the tier do not depend on it. No disruption theme in `taxonomy_eras.json` is live for an oil
+  and gas producer in 2008 (ENERGY_TRANSITION, which carries oil, gas and refining, from 2015-12-12), so the 10-K's "the competitiveness of
+  alternative hydrocarbon or other energy sources" and its laws "addressing alternative energy sources and the risks of global climate change"
+  stay in the "why" (the PEP obesity rule); the watch list is empty and the builder refuses events until a theme encoding is decided.
+- **Segment bridge and EPS check** (display only): the 10-K's three segments (Upstream, Downstream, Chemical, by sales and other operating
+  revenue) with each one's growth, the total from the fallback growth applied to the last year; the EPS check runs on the pre-tax margin.
+- **Adds nothing:** the reserves releases (2007-02-15, 2008-02-15), the Financial and Operating Reviews (2007-03-23, 2008-03-24), the
+  analyst-meeting 8-Ks beyond the words above, the Valdez 8-Ks (2007-05-25, 2007-10-29, 2008-06-30), the Cerro Negro 8-Ks (2007-07-02,
+  2007-09-12), the German gas transport sale (2008-07-03: a gain "reported in third quarter 2008 results", no guided number), the officer,
+  director and compensation 8-Ks, and the 10-Qs beyond their dividends.
+- **Anachronism list:** ExxonMobil names first seen in its filings after the start of 2008 (Liza, Payara, Yellowtail, Low Carbon Solutions,
+  Exxtend, Proxxima) join `taxonomy_eras.json`, each dated from the first ExxonMobil filing that uses it (EDGAR full-text search). No
+  existing model of any ticker contains them, so no output changes. XOM's source ids are `XO1`-`XO20`.
+
+Controls: altering one value of each print, vintage, dividend and the split changes no date before its publication and changes the first
+weekly date on or after it (12 of 12, the Q4 2007 print's FY07 actuals among them). Rebuilding the 2008 dates of ACN, UNP, LOW, AAPL, NKE, PEP
+and MSFT and the 2009 dates of AVGO changes nothing. A scan of the 53 models for the figures, notes and dividends of every later print and
+vintage finds none before its publication (0 of 665).
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP and BUY on all 53 dates**, robustness 7 of 8 on the four January dates and 8 of 8 from 2008-02-01.
+- **BASE carries the oil price.** With no guide, BASE is the latest quarter's revenue growth plus the buyback (diluted shares fell 2.0%/yr
+  over 1997-2006, 2.5% over 1997-2007 from the Q4 2007 print, 2.7% over 1998-2007): +4.8%/yr to 2008-01-25 (Q3 2007 revenue +2.8%), +32.1% from the Q4 2007 print (+29.6%), +32.3% from
+  the FY2007 10-K, +36.7% from Q1 2008, +43.1% from Q2 2008 and +37.3% from Q3 2008, so from February BULL is BASE (the decade CAGR is 16.6%,
+  21.7% over 1998-2007) and the growth factor sits at its +0.5 cap (-0.5 in January). This is UNP's fuel-surcharge pattern.
+- **BEAR is the 2002 fall** (-24.9%/yr: 2001's $2.25 to 2002's $1.69), at the 10th-percentile P/E (10.2-10.4x): $38-42. XBULL is the
+  2002-2004 run (+53.3%/yr).
+- **The EPS anchor is the last full year.** FY07's $7.28 stands all year while nine-month 2008 EPS was already $7.11 (the Q3 2008 release),
+  so the multiple of 8.6-12.9x is on a year already passed (the AAPL and NKE pattern).
+- **The window holds the low-earnings years.** The 1998-2002 multiples (24-27x lows in 1998-1999) set the 75th and 90th percentiles at
+  18.7-22.7x and 26.3-29.7x, and the median of the calendar-year lows at 12-14x (11x on 2008-12-31, when 1998 leaves the window). The EPP gap
+  is -29% (2008-10-10) to +8%; the stock's own P/E ranks at the 0th-44th percentile.
+- **The proxy composite** is 2.00 on Q3 2007 (every signal at BASE), 2.65 on Q4 2007 (production +0.6% and chemical sales +3.3% at BULL,
+  revenue +29.6% at XBULL) and 2.10 on Q1-Q3 2008 (production -5.6%, -7.8% and -8.2% at BEAR, revenue +34-40% at XBULL; on Q3 2008 chemical
+  sales -9.9% at BEAR and the pre-tax margin +261bp, with the German gain in it, at BULL). The market composite is 1.00-1.93, the adjusted gap
+  +0.13 to +1.73 and Ratio B 0.09-0.49.
+
+How far each call moves the classes (the 53 dates rebuilt with one encoding changed; no outcome consulted):
+- GAAP EPS in every year instead of the company's figures excluding special items would change no class and no tier;
+- BASE on the latest quarter's oil-equivalent production growth instead of revenue growth (-5.5% to +3.3%/yr instead of +4.8% to +43.1%)
+  would change no class and no tier, and so would both together; any revenue line between them (sales and other operating revenue grew
+  +28.9% in Q4 2007, against +29.6% for total revenues and other income) is bracketed by that test.
+
+Judgement calls that could carry hindsight:
+- the signals, chosen by a builder who knows that production fell through 2008 and demand late in the year: one volume per segment, as each
+  release reports them (rule T then sets the thresholds mechanically);
+- CYCLICAL rather than DURABLE (the class label only), the first departure from the other eight;
+- total revenues and other income as the revenue line, and the company's figures excluding special items, 1998's write-downs and inventory
+  effects among them (no class moves either way);
+- the oil-equivalent production of 1997-1998 from liquids and gas where the 10-K states no oil-equivalent line, and nine rule-T values;
+- leaving the alternative-energy and climate-change wording in the "why" rather than reading it as an early energy-transition theme (the
+  registry's live date stands; text only either way).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -6690,6 +6840,11 @@ What the gates enforce:
   cloud competitor sentence now inside "Business model competition" beside the AI one, so CLOUD and GENAI stay on the list through 2026;
   no dated evidence shows the market pricing generative-AI substitution of Microsoft's software seats or search, so neither is re-filed
   ("MSFT 2024-2026").
+  XOM in 2008 carries none: no theme in the registry is live for an oil and gas producer (ENERGY_TRANSITION, scoped to oil, gas, coal and
+  refining, from 2015-12-12; OFFSHORE to IT services), so its watch list is empty ("XOM"). Its FY2006 and FY2007 10-Ks list "the
+  competitiveness of alternative hydrocarbon or other energy sources" and laws "addressing alternative energy sources and the risks of global
+  climate change" among the factors behind its results, which no live theme covers; the wording stays in the durability "why" (the PEP
+  obesity rule). XOM is also the first ticker filed CYCLICAL rather than DURABLE, on the 10-K's own "fundamentally a commodity business".
 
 ## Workflow
 

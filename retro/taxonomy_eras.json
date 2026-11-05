@@ -1061,6 +1061,36 @@
     "term": "Microsoft Foundry",
     "first_seen": "2026-10-22",
     "note": "the renamed Azure AI Foundry; first in a Microsoft filing in its annual report of 2026-10-21 (ARS accepted 16:25 ET, dated the next trading day)"
+   },
+   {
+    "term": "Liza",
+    "first_seen": "2016-03-08",
+    "note": "the Liza oil field in the Stabroek block offshore Guyana; first in an ExxonMobil filing in its analyst-meeting 8-K of 2016-03-08 (accepted 13:48 ET, during the session)"
+   },
+   {
+    "term": "Payara",
+    "first_seen": "2017-01-31",
+    "note": "a Stabroek block discovery offshore Guyana; first in an ExxonMobil filing in its Q4 2016 earnings 8-K (accepted 2017-01-31 08:00 ET, before the open)"
+   },
+   {
+    "term": "Yellowtail",
+    "first_seen": "2019-04-26",
+    "note": "a Stabroek block discovery offshore Guyana; first in an ExxonMobil filing in its Q1 2019 earnings 8-K (accepted 2019-04-26 07:58 ET, before the open)"
+   },
+   {
+    "term": "Low Carbon Solutions",
+    "first_seen": "2021-02-02",
+    "note": "ExxonMobil's business launched in 2021; first in an ExxonMobil filing in its DEFA14A of 2021-02-01 (accepted 17:13 ET, dated the next trading day); a shareholder's PX14A6G of 2016-05-05 used the phrase in passing"
+   },
+   {
+    "term": "Exxtend",
+    "first_seen": "2022-04-29",
+    "note": "ExxonMobil's advanced-recycling technology; first in an ExxonMobil filing in its Q1 2022 earnings 8-K (accepted 2022-04-29 06:02 ET, before the open)"
+   },
+   {
+    "term": "Proxxima",
+    "first_seen": "2024-04-11",
+    "note": "ExxonMobil's thermoset resin product line; first in an ExxonMobil filing in its annual report to shareholders (ARS accepted 2024-04-11 09:00 ET, before the open)"
    }
   ]
  }
