@@ -6584,6 +6584,7 @@ beside the others, with the same `index.json` and their own `SERIES.md`.
 python3 retro/build_xom.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
 python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31                   # 209 dates, 2009-01-09 .. 2012-12-31
 python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31                   # 260 dates, 2013-01-11 .. 2017-12-29
+python3 retro/build_xom.py --weekly 2018-01-01 2020-12-31                   # 157 dates, 2018-01-05 .. 2020-12-31
 for d in staging/retrospective/XOM/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -6598,6 +6599,10 @@ python3 retro/tools/firewall.py 2015-01-01 XOM
 python3 retro/tools/firewall.py 2016-01-01 XOM
 python3 retro/tools/firewall.py 2017-07-01 XOM
 python3 retro/tools/firewall.py 2018-01-01 XOM
+python3 retro/tools/firewall.py 2018-07-01 XOM
+python3 retro/tools/firewall.py 2019-07-01 XOM
+python3 retro/tools/firewall.py 2020-10-01 XOM
+python3 retro/tools/firewall.py 2021-01-01 XOM
 ```
 
 The 10-Ks from FY1999 to FY2007 were read for the history and the decade's signal values (the FY1999-FY2001 10-Ks are plain-text
@@ -6936,6 +6941,103 @@ Judgement calls that could carry hindsight (in addition to the 2008 and 2009-201
 - the 2016 and 2017 multi-year production ranges read as the current year's outlook, and the two release sentences shown in words
   (display only either way).
 
+### XOM 2018-2020: revenue net of sales taxes, one-offs at GAAP, COVID, the Dow removal re-files the energy transition
+
+Every 8-K, 10-Q and 10-K of January 2018 to January 2021 was listed (52 filings to 2021-01-31: 40 8-Ks, nine 10-Qs and three 10-Ks,
+plus the Q4 2020 release of 2021-02-02, after the range and not used). The earnings releases with their Investor Relations Data
+Summaries and the three 10-Ks were read for the facts; every other 8-K and the 10-Qs were checked for a guided number or a dividend. The
+prints were extracted by script and checked twice: 290 strings with `verbatim.py` against their own filings (every quoted sentence taken
+by an exact search), and every volume against the release's Investor Relations Data Summary. One source is not an SEC filing: the S&P
+Dow Jones Indices announcement of 2020-08-24 (below). Decided on 2026-11-05, before any 2018-2020 date was built or scored:
+
+- **Three 10-K vintages, each with a Q4 print before it:** FY2017 (accepted 2018-02-28 16:39 ET, dated 2018-03-01), FY2018 (2019-02-27
+  16:19 ET, dated 2019-02-28) and FY2019 (2020-02-26 16:15 ET, dated 2020-02-27). The first year's diluted shares come from the last 10-K
+  that reports them: 2008 5,221M (FY2010 10-K), 2009 4,848M (FY2011), 2010 4,897M (FY2012). The Q4 2020 print (2021-02-02) lies after the
+  range, so FY2020's loss enters no model here.
+- **Release timing.** All twelve earnings 8-Ks (Q4 2017 to Q3 2020) were accepted before the open (07:28-08:39 ET) on a Friday, so each
+  print meets its own day's close and dates its week (the 2008 rule).
+- **Revenue net of sales-based taxes from Q4 2017.** The 8-K of 2018-01-19 announced, and the Q4 2017 release applied, net reporting of
+  sales-based taxes; each release from Q4 2017 compares with the year-ago quarter as restated (the MSFT recast rule), and the FY2017 10-K
+  restates 2015 and 2016 total revenues and other income ($249,248M and $208,114M against $268,882M and $226,094M first reported). Each
+  year comes from the latest filing that reports it, so 2015 on is net and 2014 and earlier stay gross: a seam kept as published (the
+  2006 netting rule). It makes 2015's step -39.5% instead of -34.7% and moves no median of revenue growth (-6.0%, -1.2% and -6.0% for the
+  three vintages either way); the bridge's display CAGR carries it.
+- **EPS at GAAP for 2017, 2018 and 2019.** The releases exclude U.S. tax reform and impairments (2017-2018) and then "identified items"
+  (from Q2 2019), but give the full-year figures without them in dollars only: 2017 $15,289M (GAAP $4.63, with a $5,942M tax-reform gain
+  and $1,521M of impairments), 2018 $21,038M (GAAP $4.88), 2019 $9,605M (GAAP $3.36, with $4,735M of identified items, mainly the $3.7
+  billion Norway gain); no 10-K publishes a per-share figure. So each year stays GAAP (the 1997 rule: nothing is derived), and quarters
+  carry the per-share figures their releases give in the note (Q4 2017's $0.88 excluding tax reform and impairments; from Q2 2019 the
+  identified items per share). **No year is excluded:** 2017's benefits ($5,942M) and 2019's ($4,735M) are under each year's income
+  without them (the AVOID FY2018 mirror test). FY2017's income taxes are a $1,174M benefit (effective rate -6.3%, as published).
+- **Still no guide in numbers, and no production outlook in any filing.** The investor days of 2018-2020 were not filed; the one
+  presentation filed (Scotia Howard Weil, 8-K of 2019-03-25) says "Volumes consistent with fourth quarter" in words. So the 2008 rules
+  apply on every date and the guide line reads "no guide in numbers in any filing" from 2018-02-02. From 2019 ExxonMobil files
+  "earnings considerations" 8-Ks after each quarter ends (2019-04-10 to 2020-12-30, eight filings): ranges for the effect of prices,
+  margins and identified items on the quarter just ended, before its release. They guide no earnings, revenue or volume figure, so they
+  add nothing (the ACN non-earnings 8-K rule), and nor do the capex cut to about $23 billion (8-K of 2020-04-07) or the material
+  impairment notice (Item 2.06, 8-K of 2020-11-30: an after-tax charge of $17-20 billion in Q4 2020, which reaches FY2020's EPS only with
+  the Q4 2020 print, after the range).
+- **Dividends,** each from the first filing that states the rate: $0.77 (FY2017 10-K), $0.82 from the Q2 2018 release, $0.87 from the Q2
+  2019 release, with each January declaration in its 10-K ($0.87 on January 29, 2020); no raise in 2020. Share purchases only offset
+  dilution throughout; the Bass acquisition shares lift diluted shares to 4,270M from Q4 2017.
+- **ENERGY_TRANSITION: the watch list, then a re-file from 2020-09-04.** The FY2017-FY2019 10-Ks keep the climate risk factor ("Such
+  policies could make our products more expensive, less competitive, lengthen project implementation times, and reduce demand for
+  hydrocarbons, ..." from FY2018), so the watch list continues in each 10-K's words (the FY2019 10-K heads its research paragraph
+  "Alternative energy"). The theme registry dates ENERGY_TRANSITION's market pricing to 2020-08-31, "ExxonMobil removed from the Dow
+  Jones Industrial Average": dated evidence that names the company, which the earlier XOM text required for a re-file. The second
+  encoding (decided before any 2018-2020 date was built): market evidence that names the company (`transition_market_evidence`, an event
+  without a `doc`, so it stays in scope once public) counts from the theme's registered market-pricing date and re-files the stock under
+  DISRUPTION_EXPOSED (ENERGY_TRANSITION) with risk 3 (the ACN GENAI rule). The source is S&P Dow Jones Indices' announcement of
+  2020-08-24 (PR Newswire, issued after the close, dated 2020-08-25): "Salesforce.com (NYSE:CRM) will replace Exxon Mobil Corp.
+  (NYSE:XOM)", effective before the open on 2020-08-31. The announcement itself gives a different reason, "prompted by DJIA constituent
+  Apple Inc.'s (NASD:AAPL) decision to split its stock 4:1", and the re-filed "why" quotes it. The kind changes the class label only
+  (RICH reads TRANSITION-EXPOSED, NOT CHEAP; CHEAP reads TRANSITION-FEAR BASKET): the theme signal and the factor pair are unchanged, so
+  no number moves.
+- **Adds nothing:** the reserves releases (2018-02-09, 2019-02-26), the earnings-considerations 8-Ks, the capex and impairment 8-Ks above,
+  the debt offerings (2019-08-16, 2020-03-19, 2020-04-15, 2020-06-26), the mini-tender notice (2020-07-28), the EDGAR-outage notice
+  (2020-07-30), the officer, director, bylaw and annual-meeting 8-Ks, and the 10-Qs beyond their dividends.
+
+Controls: altering one value of each new print (with each Q4 print's full-year actuals), vintage, dividend and ENERGY_TRANSITION event
+changes no date before it is visible and changes the first weekly date on or after it (24 of 24; the Dow evidence is visible from the
+theme's market-pricing date, so the first date it changes is 2020-09-04). The 522 dates of 2008-2017 rebuild byte-identical. A scan of
+all 679 XOM models for the figures, notes and quotes of every print, vintage, dividend, outlook and event finds none before it is visible
+(0 of 210,567). The firewall at 2018-07-01, 2019-07-01, 2020-10-01 and 2021-01-01 (planted facts, a later Dow event, and prices
+×10 after each cutoff) changes none of the 548 to 679 earlier models.
+
+Seen in the build (method behaviour, not tuned):
+- **January 2018:** RICH and AVOID on 4 dates (FY16's $1.88, 46-47x).
+- **From the Q4 2017 print to January 2019: FAIR on 28 dates, CHEAP on 12, RICH on 12.** FY17's $4.63, with the tax-reform gain in it, at
+  14.7-18.4x (the 50th-77th percentile); revenue +16% to +27% puts BASE at +18.6% to +28.9%/yr, and BULL (the decade CAGR) is held at
+  BASE's rate. BEAR is still the 2009 fall (-52.5%/yr, $9-10). CHEAP from late October 2018 to January 2019 as the price fell to $68-82.
+- **RICH and AVOID on all 52 dates from the Q4 2018 print (2019-02-01) to 2020-01-24.** FY18's $4.88 at 13.6-16.9x (the 49th-62nd
+  percentile) with revenue turning down (BASE +9.5-10.1%/yr, then -4.6% to -13.7%/yr from the Q1 2019 print); Ratio B 2.0-6.6. From the
+  FY2018 vintage (2019-02-28) the 2009 fall leaves the history and BEAR becomes 2016's fall (-51.2%/yr).
+- **2020: RICH on 45 dates (4 of them before the Q4 2019 print), CHEAP on 6, FAIR on 2.** From the Q4 2019 print FY19's $3.36, with the Norway gain in it, anchors the
+  multiple; the COVID fall takes the price to $32.62-62.12 (9.7-18.5x, the 16th-69th percentile): CHEAP on 2 dates of March 2020. The Q1
+  2020 print's revenue -11.7% and the Q2 2020 print's -52.8% put BASE at -10.2% and -51.3%/yr ($42 and $12; the latter just below BEAR's
+  -51.2%, as in 2009), so RICH on all 26 dates to 2020-10-23; the Q3 2020 print (revenue -29.0%, BASE -27.5%/yr) gives CHEAP on 4 and
+  RICH on 6. The 18 dates from 2020-09-04 carry the re-filed labels (14 TRANSITION-EXPOSED, NOT CHEAP; 4 TRANSITION-FEAR BASKET).
+- **Totals over the 157 dates:** CHEAP 18, FAIR 30, RICH 109; ACCUMULATE 16, WATCHLIST 44, AVOID 97. Robustness is weak: 8 of 8 on 19
+  dates, 2-5 of 8 on 109. The proxy composite ranges from 1.15 (Q2 2020) to 2.80, the market composite from 1.82 to 3.41; the EPP floor
+  moves from 11x to 13-14x from late 2018 through 2019 and back to 11-12x in 2020.
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed; no outcome consulted):
+- GAAP EPS in every year (2008 and 2009 at GAAP) would change no class and one tier;
+- BASE on the latest quarter's oil-equivalent production growth instead of revenue growth would change 81 classes (36 in 2018, 16 in
+  2019, 29 in 2020; 40 FAIR or CHEAP to RICH, 41 the other way) and 71 tiers: as in 2010-2011, the revenue fallback decides the class;
+- both together: the same 81 classes;
+- as tests only (each figure derived, which the method forbids as an input): 2017, 2018 and 2019 without their excluded items ($3.59,
+  $4.93 and $2.25: the dollar figures over the year's diluted shares) would change 71 classes (41 RICH to FAIR or CHEAP, 30 the other way),
+  2019 alone 8 (in 2020, CHEAP or FAIR to RICH);
+- without the re-file: no class, 18 labels.
+
+Judgement calls that could carry hindsight (in addition to the earlier XOM lists, which stand):
+- the re-file on the theme registry's reading of the Dow removal, when the announcement gives Apple's split as its reason (label only:
+  no class, price state or tier moves);
+- the one-offs left in at GAAP because only dollar figures excluding them were published (71 classes move without them);
+- BASE on revenue growth, which again decides the class (81 classes move on production growth);
+- the earnings-considerations and impairment 8-Ks read as adding nothing, and the revenue seam kept as published.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -7066,7 +7168,10 @@ What the gates enforce:
   it on the watch list, company-acknowledged, with no market read, in the latest 10-K's own words (the MSFT CLOUD rule): the FY2014
   10-K's climate-change risk factor, then the FY2015 and FY2016 10-Ks', which repeat it. The theme's market-pricing date (2020-08-31)
   lies after 2017 and no dated evidence shows the market pricing decarbonisation of ExxonMobil's reserves, so CYCLICAL stands
-  ("XOM 2013-2017").
+  ("XOM 2013-2017"). It stays on the watch list in the FY2017-FY2019 10-Ks' words until the theme's registered market-pricing event,
+  ExxonMobil's removal from the Dow Jones Industrial Average (announced 2020-08-24, effective 2020-08-31): from 2020-09-04 XOM is
+  re-filed under DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, label only, with the announcement's own reason (Apple's stock split)
+  quoted beside it ("XOM 2018-2020").
 
 ## Workflow
 

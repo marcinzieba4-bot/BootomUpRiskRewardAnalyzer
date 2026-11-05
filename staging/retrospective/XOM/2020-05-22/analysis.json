@@ -1,0 +1,263 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "XOM",
+ "company": "Exxon Mobil Corporation",
+ "as_of": "2020-05-22",
+ "price_date": "2020-05-22",
+ "price": 44.6,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); integrated oil and gas signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "ExxonMobil: 'Their principal business involves exploration for, and production of, crude oil and natural gas and manufacture, trade, transport and sale of crude oil, natural gas, petroleum products, petrochemicals and a wide variety of specialty products'; 'The oil, gas, and petrochemical businesses are fundamentally commodity businesses. This means ExxonMobil’s operations and earnings may be significantly affected by changes in oil, gas, and petrochemical prices and by changes in margins on refined products'; 'The energy and petrochemical industries are highly competitive'; among its risk factors, 'increased competitiveness of alternative energy sources' and 'Due to concern over the risks of climate change, a number of countries have adopted, or are considering the adoption of, regulatory frameworks to reduce greenhouse gas emissions', which 'could make our products more expensive, less competitive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon sources such as natural gas' (its own FY2019 10-K): earnings that move with the commodity cycle, by the company's own account; ENERGY_TRANSITION is live (from 2015-12-12) and its climate-change risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for ExxonMobil",
+  "theme_watch": [
+   {
+    "theme": "ENERGY_TRANSITION",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: ExxonMobil's own FY2019 10-K, under 'Climate change and greenhouse gas restrictions', says 'Such policies could make our products more expensive, less competitive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon sources such as natural gas.' Under 'Alternative energy': 'Our research projects focus on developing algae-based biofuels, carbon capture and storage, breakthrough energy efficiency processes, advanced energy-saving materials, and other technologies.' The stock trades at 13.3x FY20E — near its own median. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market pricing decarbonisation of ExxonMobil's reserves and refining specifically."
+   }
+  ],
+  "evidence": [
+   "XO86"
+  ]
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "ExxonMobil: 'Their principal business involves exploration for, and production of, crude oil and natural gas and manufacture, trade, transport and sale of crude oil, natural gas, petroleum products, petrochemicals and a wide variety of specialty products'; 'The oil, gas, and petrochemical businesses are fundamentally commodity businesses. This means ExxonMobil’s operations and earnings may be significantly affected by changes in oil, gas, and petrochemical prices and by changes in margins on refined products'; 'The energy and petrochemical industries are highly competitive'; among its risk factors, 'increased competitiveness of alternative energy sources' and 'Due to concern over the risks of climate change, a number of countries have adopted, or are considering the adoption of, regulatory frameworks to reduce greenhouse gas emissions', which 'could make our products more expensive, less competitive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon sources such as natural gas' (its own FY2019 10-K): earnings that move with the commodity cycle, by the company's own account; ENERGY_TRANSITION is live (from 2015-12-12) and its climate-change risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for ExxonMobil. cyclical (obsolescence risk 2/5); price rich; Ratio B 2.29x; +21% to EPP floor; model-vs-market gap -0.43; conservative 2yr +29%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 2.29,
+  "ratio_b_fmt": "2.29x",
+  "epp": 36.96,
+  "epp_gap_pct": 20.7,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.9,
+  "sca": 0.045,
+  "adj_composite": 1.945,
+  "market_composite": 2.38,
+  "adj_gap": -0.43,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 29.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.8,
+    "pe": 9.1,
+    "price": 7,
+    "desc": "EPS -51.2%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.71,
+    "pe": 15.5,
+    "price": 42,
+    "desc": "EPS +-10.2%/yr (Q1 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.93,
+    "pe": 20.7,
+    "price": 61,
+    "desc": "EPS +-6.6%/yr (FY10-FY19 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 8.72,
+    "pe": 24.8,
+    "price": 216,
+    "desc": "EPS +61.1%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 2.29,
+   "epp_gap_pct": 20.7,
+   "adj_gap": -0.43,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.25,
+   "epp_gap_pct": 20.7,
+   "adj_gap": 0.07,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 29.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 94.0,
+   "epp_gap_pct": 20.7,
+   "adj_gap": -0.84,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.1,
+   "epp_gap_pct": 20.7,
+   "adj_gap": -0.39,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.61,
+   "epp_gap_pct": 20.7,
+   "adj_gap": -0.47,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 2.29,
+   "epp_gap_pct": 20.7,
+   "adj_gap": -0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 2.29,
+   "epp_gap_pct": -5.2,
+   "adj_gap": -0.23,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 2.29,
+   "epp_gap_pct": 20.7,
+   "adj_gap": -0.31,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 29.1,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "XOM (retrospective, 2020-05-22) ✕ AVOID — Ratio B 2.29x (84.3% downside to Bear $7 / +36.8% upside to Bull $61) | Adj composite 1.95 vs market 2.38: gap -0.43 [MODESTLY OVERVALUED] | +21% above the EPP floor $37 (11x FY20E $3.36) | Conservative 2-yr case: +29.1% total (+14.5%/yr) | At 13.3x FY20E the 15% hurdle price $59 sits between the BASE and BULL cases; oil-equivalent production +1.6% in Q1 2020, forward revenues -11.7% (no Q2 2020 revenue guide, Q1 2020 revenue as reported); the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "XO86",
+   "published": "2020-02-27",
+   "filed": "2020-02-26 16:15 ET (after the close)",
+   "title": "Exxon Mobil FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000016/xom10k2019.htm",
+   "supports": "five-year selected data 2015-2019 (earnings per common share assuming dilution $3.85, $1.88, $4.63, $4.88, $3.36); income statements 2017-2019 (total revenues and other income $244,363M, $290,212M, $264,938M; income before income taxes $20,056M and income taxes $5,282M in 2019; weighted average shares 4,270M); cash flows; segment sales; operating summary (oil-equivalent production 3,952 and 3,833 koebd); the dividend declared on January 29, 2020; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO81",
+   "published": "2019-02-28",
+   "filed": "2019-02-27 16:19 ET (after the close)",
+   "title": "Exxon Mobil FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408819000010/xom10k2018.htm",
+   "supports": "five-year selected data 2014-2018 (earnings per common share assuming dilution $7.60, $3.85, $1.88, $4.63, $4.88); income statements 2016-2018 (total revenues and other income $208,114M, $244,363M, $290,212M; income before income taxes $30,953M and income taxes $9,532M in 2018; weighted average shares 4,270M); cash flows; segment sales; operating summary (oil-equivalent production 3,833 and 3,985 koebd); the dividend declared on January 30, 2019; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO76",
+   "published": "2018-03-01",
+   "filed": "2018-02-28 16:39 ET (after the close)",
+   "title": "Exxon Mobil FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408818000015/xom10k2017.htm",
+   "supports": "five-year selected data 2013-2017 (earnings per common share assuming dilution $7.37, $7.60, $3.85, $1.88, $4.63); income statements 2015-2017 (total revenues and other income $249,248M, $208,114M, $244,363M; income before income taxes $18,674M and income taxes $(1,174)M in 2017; weighted average shares 4,256M); cash flows; segment sales; operating summary (oil-equivalent production 3,985 and 4,053 koebd); the dividend declared on January 31, 2018; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO70",
+   "published": "2017-02-23",
+   "filed": "2017-02-22 16:47 ET (after the close)",
+   "title": "Exxon Mobil FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408817000017/xom10k2016.htm",
+   "supports": "five-year selected data 2012-2016 (earnings per common share assuming dilution $9.70, $7.37, $7.60, $3.85, $1.88); income statements 2014-2016 (total revenues and other income $411,939M, $268,882M, $226,094M; income before income taxes $7,969M and income taxes $(406)M in 2016; diluted shares 4,177M); cash flows; segment sales; operating summary (oil-equivalent production 4,053 and 4,097 koebd); the dividend declared on January 25, 2017; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO64",
+   "published": "2016-02-25",
+   "filed": "2016-02-24 16:09 ET (after the close)",
+   "title": "Exxon Mobil FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408816000065/xom10k2015.htm",
+   "supports": "five-year selected data 2011-2015 (earnings per common share assuming dilution $8.42, $9.70, $7.37, $7.60, $3.85); income statements 2013-2015 (total revenues and other income $438,255M, $411,939M, $268,882M; income before income taxes $21,966M and income taxes $5,415M in 2015; diluted shares 4,196M); cash flows; segment sales; operating summary (oil-equivalent production 4,097 and 3,969 koebd); the dividend declared on January 27, 2016; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO58",
+   "published": "2015-02-26",
+   "filed": "2015-02-25 16:26 ET (after the close)",
+   "title": "Exxon Mobil FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408815000013/xom10k2014.htm",
+   "supports": "five-year selected data 2010-2014 (earnings per common share assuming dilution $6.22, $8.42, $9.70, $7.37, $7.60); income statements 2012-2014 (total revenues and other income $480,681M, $438,255M, $411,939M; income before income taxes $51,630M and income taxes $18,015M in 2014; diluted shares 4,282M); cash flows; segment sales; operating summary (oil-equivalent production 3,969 and 4,175 koebd); the dividend declared on January 28, 2015; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO52",
+   "published": "2014-02-27",
+   "filed": "2014-02-26 16:07 ET (after the close)",
+   "title": "Exxon Mobil FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408814000012/xom10k2013.htm",
+   "supports": "five-year selected data 2009-2013 (earnings per common share assuming dilution $3.98, $6.22, $8.42, $9.70, $7.37); income statements 2011-2013 (total revenues and other income $486,429M, $480,681M, $438,255M; income before income taxes $57,711M and income taxes $24,263M in 2013; diluted shares 4,419M); cash flows; segment sales; operating summary (oil-equivalent production 4,175 and 4,239 koebd); the dividend declared on January 29, 2014; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO46",
+   "published": "2013-02-28",
+   "filed": "2013-02-27 16:05 ET (after the close)",
+   "title": "Exxon Mobil FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408813000011/xom10k2012.htm",
+   "supports": "five-year selected data 2008-2012 (earnings per common share assuming dilution $8.66, $3.98, $6.22, $8.42, $9.70); income statements 2010-2012 (total revenues and other income $383,221M, $486,429M, $482,295M; income before income taxes $78,726M and income taxes $31,045M in 2012; diluted shares 4,628M); cash flows; segment sales; operating summary (oil-equivalent production 4,239 and 4,506 koebd); the dividend declared on January 30, 2013; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO85",
+   "published": "2020-01-31",
+   "filed": "2020-01-31 07:28 ET (before the open)",
+   "title": "Exxon Mobil Q4 2019 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000011/f8k4q991.htm",
+   "supports": "Q4 2019 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases; full-year income taxes"
+  },
+  {
+   "id": "XO87",
+   "published": "2020-05-01",
+   "filed": "2020-05-01 07:33 ET (before the open)",
+   "title": "Exxon Mobil Q1 2020 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000035/f8k1q991.htm",
+   "supports": "Q1 2020 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases"
+  },
+  {
+   "id": "XO20",
+   "published": "2001-08-13",
+   "filed": "2001-08-13 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil Q2 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408801500015/sec10qs.txt",
+   "supports": "the two-for-one stock split approved on May 30, 2001 for shareholders of record on June 20, 2001"
+  },
+  {
+   "id": "A0",
+   "published": "2020-05-22",
+   "title": "Yahoo Finance daily prices, XOM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/XOM/history",
+   "supports": "close $44.60 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-05"
+}

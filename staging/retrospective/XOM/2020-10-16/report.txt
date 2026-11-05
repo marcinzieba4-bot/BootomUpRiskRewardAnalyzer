@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  XOM  ·  Exxon Mobil Corporation  ·  $34.10  ·  RETROSPECTIVE as of 2020-10-16
+  Signal: ◎ ACCUMULATE   Ratio B: 1.01x   Adj gap: -0.85  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2020-10-16; latest print Q2 2020 (Jul 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenues, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Upstream                  $    11.3  $  11.3  $  10.4      +0.0      -0.9
+    -9.3% revenues in FY19
+  Downstream                $   100.3  $ 100.3  $  92.4      +0.0      -7.9
+    -7.4% revenues in FY19
+  Chemical                  $    13.4  $  13.4  $  12.4      +0.0      -1.0
+    -15.5% revenues in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   125.0  $ 125.0  $ 115.2      +0.0      -9.8
+  FY2020E = FY19 $264.94B × (1 − 52.8%: no Q3 2020 revenue guide, Q2 2020 revenue as reported, applied to the year (no FY20 revenue guide)); split pro rata to FY19 segment sales and other operating revenue (FY2019 10-K, net of sales-based taxes; corporate $41M not shown)
+  Q2 2020 (Jul 31): total revenues $32.60B -52.8%; oil-equivalent production -6.9%; product sales -18.0%;
+  chemical sales -11.3%; pre-tax margin -5.03% (-1173.4bp); EPS $-0.26 vs $0.73
+  Volumes: oil-equivalent production -6.9% ('Oil-equivalent production was 3.6 million barrels per day, down 7 percent from the second quarter of 2019, including a 3 percent decrease in liquids and a 12 percent decrease in natural gas, mainly reflecting the impacts of COVID-19 on global demand including economic and government mandated curtailments.'); petroleum product sales -18.0%; chemical prime product sales -11.3%; revenue -52.8% as reported (total revenues and other income $32,605M vs $69,091M (the release; its only revenue line)); EPS a loss including identified items of +$0.44 a share (mainly the noncash inventory valuation reversal); a loss of $0.70 a share excluding them
+  FY20: no guide in numbers in any filing (ExxonMobil gives no earnings, revenue, volume or margin guidance; BASE takes Q2 2020 revenue growth)
+
+  FY2020E EPS check:  $125.0B × 7.6% pre-tax × (1−26.3%) ÷ 4.271B  =  $1.63  (FY2020E: no EPS guide in numbers, FY19's $3.36 stands)
+  FY2022E BEAR check: $125.0B × 7.6% ÷ 4.141B  =  $1.68  (scenario $0.80)
+  FY2022E BULL check: $115.2B × 8.0% ÷ 4.141B  =  $1.63  (scenario $2.93)
+  Every 1pp of pre-tax margin ≈ $0.22 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production           -7.0%   ≥-4.0%   ≥-1.0%    ≥4.0%     -6.9%  ⚠ BEAR  █░░░
+  Petroleum product sales            -20.0%  ≥-10.0%    ≥0.0%    ≥3.0%    -18.0%  ⚠ BEAR  █░░░
+  Revenue growth                     -41.0%  ≥-16.0%    ≥9.0%   ≥25.0%    -52.8%  ⚠ BEAR  █░░░
+  Chemical prime product sales        -9.0%   ≥-4.0%    ≥1.0%    ≥7.0%    -11.3%  ⚠ BEAR  █░░░
+  Pre-tax margin change             -630.0bp  ≥-270.0bp  ≥90.0bp  ≥560.0bp  -1173.4bp  ⚠ BEAR  █░░░
+  Energy transition: net effect on hydrocarbon demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.15 / 4.00
+  Market composite:   2.35 / 4.00  (back-solved from $34 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 1.50  →  Gap -0.85  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenue -8.7%, oil-equivalent production +3.1% (3,952 koebd vs 3,833, FY2019 10-K); Q2 pre-tax margin -5.03% (-1173bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 10.1x FY20E vs a 15.6x 10-yr median (20th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no Q3 2020 revenue guide, Q2 2020 revenue as reported -52.8% vs a -6.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and cash equivalents $12.60B, FY19 free cash flow $5.36B, dividend $3.48 a year, $594M of common stock acquired and $14,652M of dividends paid in FY19  (+0.30 × 15%  =  +0.045)
+    +  Lower-carbon research: 'algae-based biofuels, carbon capture and storage' — ExxonMobil funds it as well  (+0.20 × 10%  =  +0.020)
+    -  Climate rules (FY2019 10-K): 'reduce demand for hydrocarbons'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production            -6.9%     -7.0%   -0.1%  Field decline and entitlements outrun…
+  Petroleum product sales             -18.0%    -20.0%   -2.0%  Fuel demand falls with the economy
+  Revenue growth                      -52.8%    -41.0%  +11.8%  Crude, gas and product prices fall to…
+  Chemical prime product sales        -11.3%     -9.0%   +2.3%  Petrochemical demand follows industry…
+  Pre-tax margin change             -1173.4bp  -630.0bp  +543.4bp  Costs stay up while prices and margin…
+  Energy transition: net effect on hydrocarbon demand    +2.0/4    +1.0/4  -1.0/4  Greenhouse gas rules cut hydrocarbon …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$14  (model)  /  $7 (defined)
+  Bear probability (proxy model):  72.2%
+
+  KEY TRIGGER: oil-equivalent production went from +1.6% (Q1 2020) to -6.9% (Q2 2020);
+  the bear case needs a commodity-price fall that the pre-tax margin (-1173.4bp now)
+  and product sales (-18.0% now) no longer absorb. Prices drive earnings, by the company's own account; the bear needs crude
+  and gas realizations to fall, not only volumes.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.36  (FY2020E: no EPS guide in numbers, FY19's $3.36 stands)
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2010 10.5x, 2011 8.1x, 2012 8.0x, 2013 11.6x, 2014 11.4x, 2015 17.8x, 2016 38.9x, 2017 16.4x, 2018 13.4x, 2019 19.9x, 2020 9.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $37/share
+  Current $34 vs Updated EPP $37:  -8%  ✓ BELOW panic floor — deep-value zone
+  Bear $7 vs Updated EPP $37:  -81%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   -4.0       +2.9   BASE floor (vs -7 now)
+  Petroleum product sales                    -10.0       +8.0   BASE floor (vs -18 now)
+  Revenue growth                             -16.0      +36.8   BASE floor (vs -53 now)
+  Chemical prime product sales                -4.0       +7.3   BASE floor (vs -11 now)
+  Pre-tax margin change                     -270.0     +903.4   BASE floor (vs -1173 now)
+  Energy transition: net effect on hydrocarbon demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.36 × (1+0.0%)² = $3.36
+  At 15x P/E (conservative):  $50/share
+  + Cumul. dividends (2yr):  +$7.17/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $50  (▲16 from $34)
+  Conservative total return:  +69% over 2yr  = +34%/yr
+
+  At 10.1x the multiple is already near its 15x median, so the conservative
+  case is a growth question: breakeven at 15x needs FY2022E EPS of $1.80,
+  i.e. -26.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $30.11  –  $73.12  (at 9th pct of range)
+  Annual dividend:      $3.48/share  (yield 10.2%)
+  Realized vol (1yr):   48% annualized
+  Beta vs broad market: 1.07
+  1-sigma range (1yr):  $18  –  $51  ($34 ± 48%)
+  2-sigma range (1yr):  $1  –  $67
+  ────────────────────────────────────────────────────────────
+  Bear $7 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  An integrated oil and gas company with a 1.1 beta: the stock is +8% off its March
+  low while oil-equivalent production went from +1.6% (Q1 2020) to -6.9% (Q2 2020).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.80   9.1x  $      7    72.2%     12.0%   +60.2pp  EPS -51.2%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE        0.80  15.6x  $     12    20.7%     42.0%   -21.3pp  EPS +-51.3%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        2.93  20.7x  $     61     5.9%     38.7%   -32.7pp  EPS +-6.6%/yr (FY10-FY19 CAGR); P/E holds its 75th pct
+  XBULL       8.72  24.8x  $    216     1.1%      7.3%    -6.2pp  EPS +61.1%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $14  /  Market EV: $45  /  Current: $34
+  Conservative EV (2yr, ④): $50 + $7.17 divs = $58 total value
+  Downside (→ Bear $7): 79.5%   Upside (→ Bull $61): 78.9%   Ratio B 1.01x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $34 the market needs $45 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.35 against a model
+  read of 1.50: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.01x      -8%    -0.85  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.65x      -8%    -0.58  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.28x      -8%    -1.05  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.94x      -8%    -0.82  OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.09x      -8%    -0.87  OVERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             1.01x      -8%    -0.55  OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 1.01x     -28%    -0.85  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    1.01x      -8%    -0.79  OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2020 print (late October) — the next read on oil-equivalent production (-6.9% now); no guide to read it against
+  (2) Pre-tax margin — -1173.4bp in Q2 2020: realizations against costs, refining and chemical margins
+  (3) A FY20 guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings
+  (4) Capital and exploration expenditures — capital and exploration expenditures $2,306M vs $2,389M in Q2 2020: the projects the volumes need
+  (5) Capital return at 10x — 6 million shares bought for the treasury at a gross cost of $305 million in the first six months of 2020, to offset dilution, and $3,715M of dividends in the quarter; 'The corporation will continue to acquire shares to offset dilution in conjunction with its benefit plans and programs.': management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $37  |  ADD below ~$10  |  TRIM above $61
+════════════════════════════════════════════════════════════════════════
+

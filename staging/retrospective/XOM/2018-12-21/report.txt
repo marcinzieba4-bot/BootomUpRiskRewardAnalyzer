@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  XOM  ·  Exxon Mobil Corporation  ·  $68.12  ·  RETROSPECTIVE as of 2018-12-21
+  Signal: ◎ ACCUMULATE   Ratio B: 0.84x   Adj gap: +1.15  [UNDERVALUED]
+  Point-in-time: 16 sources, latest published 2018-12-21; latest print Q3 2018 (Nov 2)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenues, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Upstream                  $    30.8  $  30.8  $  26.6      +0.0      -4.2
+    +20.3% revenues in FY17
+  Downstream                $   238.5  $ 238.5  $ 205.5      +0.0     -33.0
+    +18.8% revenues in FY17
+  Chemical                  $    37.1  $  37.1  $  32.0      +0.0      -5.1
+    +13.0% revenues in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   306.4  $ 306.4  $ 264.1      +0.0     -42.3
+  FY2018E = FY17 $244.36B × (1 + 25.4%: no Q4 2018 revenue guide, Q3 2018 revenue as reported, applied to the year (no FY18 revenue guide)); split pro rata to FY17 segment sales and other operating revenue (FY2017 10-K, net of sales-based taxes; corporate $35M not shown)
+  Q3 2018 (Nov 2): total revenues $76.61B +25.4%; oil-equivalent production -2.4%; product sales +1.3%;
+  chemical sales +3.6%; pre-tax margin 11.85% (+271.6bp); EPS $1.46 vs $0.93
+  Volumes: oil-equivalent production -2.4% ('Oil-equivalent production was 3.8 million barrels per day, down 2 percent from the third quarter of 2017.'); petroleum product sales +1.3%; chemical prime product sales +3.6%; revenue +25.4% as reported (total revenues and other income $76,605M vs $61,100M (the release; its only revenue line, net of sales-based taxes from Q4 2017, the year-ago quarter as restated)); EPS GAAP; the release reports no tax-reform or impairment items
+  FY18: no guide in numbers in any filing (ExxonMobil gives no earnings, revenue, volume or margin guidance; BASE takes Q3 2018 revenue growth)
+
+  FY2018E EPS check:  $306.4B × 7.6% pre-tax × (1−-6.3%) ÷ 4.271B  =  $5.83  (FY2018E: no EPS guide in numbers, FY17's $4.63 stands)
+  FY2020E BEAR check: $306.4B × 7.6% ÷ 4.077B  =  $6.10  (scenario $1.05)
+  FY2020E BULL check: $264.1B × 8.0% ÷ 4.077B  =  $5.54  (scenario $7.55)
+  Every 1pp of pre-tax margin ≈ $0.76 EPS ≈ $10/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production           -7.0%   ≥-4.0%   ≥-1.0%    ≥4.0%     -2.4%  ◦ BASE  ██░░
+  Petroleum product sales            -20.0%  ≥-10.0%    ≥0.0%    ≥3.0%     +1.3%  ▲ BULL  ███░
+  Revenue growth                     -41.0%  ≥-16.0%    ≥9.0%   ≥25.0%    +25.4%  ★ XBULL  ████
+  Chemical prime product sales        -9.0%   ≥-4.0%    ≥1.0%    ≥7.0%     +3.6%  ▲ BULL  ███░
+  Pre-tax margin change             -630.0bp  ≥-270.0bp  ≥90.0bp  ≥560.0bp  +271.6bp  ▲ BULL  ███░
+  Energy transition: net effect on hydrocarbon demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.80 / 4.00
+  Market composite:   1.88 / 4.00  (back-solved from $68 + 15% hurdle)
+  SCA adjustment:    +0.23  ·  EPP-distance adj +0.00  →  Adj composite 3.02  →  Gap +1.15  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenue +17.4%, oil-equivalent production -1.7% (3,985 koebd vs 4,053, FY2017 10-K); Q3 pre-tax margin 11.85% (+272bp)  (+0.40 × 20%  =  +0.080)
+    ·  Multiple: 14.7x FY18E vs a 13.7x 10-yr median (50th percentile of its own range)  (+0.00 × 25%  =  +0.000)
+    +  Growth vs own history: no Q4 2018 revenue guide, Q3 2018 revenue as reported +25.4% vs a -6.0% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $5.70B, FY17 free cash flow $14.66B, dividend $3.28 a year, $747M of common stock acquired and $13,001M of dividends paid in FY17  (+0.30 × 15%  =  +0.045)
+    +  Lower-carbon research: 'algae-based biofuels, carbon capture and storage' — ExxonMobil funds it as well  (+0.20 × 10%  =  +0.020)
+    -  Climate rules (FY2017 10-K): 'reduce demand for hydrocarbons'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production            -2.4%     -7.0%   -4.6%  Field decline and entitlements outrun…
+  Petroleum product sales              +1.3%    -20.0%  -21.3%  Fuel demand falls with the economy
+  Revenue growth                      +25.4%    -41.0%  -66.4%  Crude, gas and product prices fall to…
+  Chemical prime product sales         +3.6%     -9.0%  -12.6%  Petrochemical demand follows industry…
+  Pre-tax margin change             +271.6bp  -630.0bp  -901.6bp  Costs stay up while prices and margin…
+  Energy transition: net effect on hydrocarbon demand    +2.0/4    +1.0/4  -1.0/4  Greenhouse gas rules cut hydrocarbon …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$39  (model)  /  $10 (defined)
+  Bear probability (proxy model):  5.2%
+
+  KEY TRIGGER: oil-equivalent production went from -7.0% (Q2 2018) to -2.4% (Q3 2018);
+  the bear case needs a commodity-price fall that the pre-tax margin (+271.6bp now)
+  and product sales (+1.3% now) no longer absorb. Prices drive earnings, by the company's own account; the bear needs crude
+  and gas realizations to fall, not only volumes.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.63  (FY2018E: no EPS guide in numbers, FY17's $4.63 stands)
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2008 8.9x, 2009 15.5x, 2010 9.1x, 2011 8.1x, 2012 8.0x, 2013 11.6x, 2014 11.4x, 2015 17.8x, 2016 38.9x, 2017 16.4x, 2018 14.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $51/share
+  Current $68 vs Updated EPP $51:  +34%  moderate distance to floor
+  Bear $10 vs Updated EPP $51:  -80%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   -4.0       -1.6   BASE floor (vs -2 now)
+  Petroleum product sales                    -10.0      -11.3   BASE floor (vs +1 now)
+  Revenue growth                             -16.0      -41.4   BASE floor (vs +25 now)
+  Chemical prime product sales                -4.0       -7.6   BASE floor (vs +4 now)
+  Pre-tax margin change                     -270.0     -541.6   BASE floor (vs +272 now)
+  Energy transition: net effect on hydrocarbon demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.63 × (1+25.7%)² = $7.32
+  At 13x P/E (conservative):  $95/share
+  + Cumul. dividends (2yr):  +$6.76/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $95  (▲27 from $68)
+  Conservative total return:  +50% over 2yr  = +25%/yr
+
+  25.7% EPS growth is what is left once the premium multiple (14.7x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2020E EPS of $4.72,
+  i.e. 1.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $67.67  –  $89.30  (at 2th pct of range)
+  Annual dividend:      $3.28/share  (yield 4.8%)
+  Realized vol (1yr):   21% annualized
+  Beta vs broad market: 0.84
+  1-sigma range (1yr):  $54  –  $82  ($68 ± 21%)
+  2-sigma range (1yr):  $39  –  $97
+  ────────────────────────────────────────────────────────────
+  Bear $10 requires:  ~4.0σ price move  (unusual — requires fundamental break)
+  An integrated oil and gas company with a 0.8 beta: the stock is +0% off its December
+  low while oil-equivalent production went from -7.0% (Q2 2018) to -2.4% (Q3 2018).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.05   9.1x  $     10     5.2%     24.2%   -19.0pp  EPS -52.5%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE        7.55  13.7x  $    103    18.0%     56.6%   -38.6pp  EPS +27.7%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        7.55  18.2x  $    137    62.8%     16.2%   +46.6pp  EPS +27.7%/yr (FY08-FY17 CAGR); P/E holds its 75th pct
+  XBULL       9.72  24.3x  $    236    14.0%      3.1%   +11.0pp  EPS +44.9%/yr (best 2-yr run FY08-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $138  /  Market EV: $90  /  Current: $68
+  Conservative EV (2yr, ④): $95 + $6.76 divs = $102 total value
+  Downside (→ Bear $10): 85.3%   Upside (→ Bull $137): 101.1%   Ratio B 0.84x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $68 the market needs $90 in two years —
+  at or below the BASE case. That is a market composite of 1.88 against a model
+  read of 3.02: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.84x     +34%    +1.15  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.50x     +34%    +1.45  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.69x     +34%    +0.60  UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.79x     +34%    +1.19  UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          0.91x     +34%    +1.09  UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.84x     +34%    +1.44  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.84x      +5%    +1.15  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.84x     +34%    +1.25  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2018 print (late January or early February) — the next read on oil-equivalent production (-2.4% now); no guide to read it against
+  (2) Pre-tax margin — +271.6bp in Q3 2018: realizations against costs, refining and chemical margins
+  (3) A FY18 guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings
+  (4) Capital and exploration expenditures — capital and exploration expenditures $6,586M vs $5,987M in Q3 2018: the projects the volumes need
+  (5) Capital return at 15x — 5 million shares bought for the treasury at a gross cost of $425 million in the first nine months of 2018, to offset dilution, and $3,503M of dividends in the quarter; 'The corporation will continue to acquire shares to offset dilution in conjunction with its benefit plans and programs, but does not currently plan on making purchases to reduce shares outstanding.': management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $51  |  ADD below ~$88  |  TRIM above $137
+════════════════════════════════════════════════════════════════════════
+

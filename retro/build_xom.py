@@ -27,7 +27,10 @@ From Q1 2013 the releases no longer report special items, so each later year is 
 in dollars only, so it stays in (nothing is derived; retro/README.md, "XOM 2013-2017"). The one event kind encoded: each 10-K's
 climate-change risk factor (transition_company_acknowledged) puts ENERGY_TRANSITION on the watch list from the theme's live date
 (2015-12-12), company-acknowledged with no market read: text only (the MSFT CLOUD rule). From the FY2012 vintage the 'why' ends
-with a clause on the theme's status on AS_OF ('why_theme_tail').
+with a clause on the theme's status on AS_OF ('why_theme_tail'). The second event kind (retro/README.md, "XOM 2018-2020"): market evidence
+that names ExxonMobil (transition_market_evidence) counts from the theme's registered market-pricing date and re-files the stock under
+DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, label only (the ACN GENAI rule): the Dow removal of 2020-08-31. From Q4 2017 revenue is
+net of sales-based taxes (2015 on, as the FY2017 10-K restates it; earlier years stay gross, a seam kept as published).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. ExxonMobil's earnings 8-Ks of 2007-2008 were accepted before the open or during the
@@ -40,6 +43,7 @@ Usage
   python3 retro/build_xom.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31
   python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31
+  python3 retro/build_xom.py --weekly 2018-01-01 2020-12-31
   python3 retro/build_xom.py 2008-02-01
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/XOM/<AS_OF>
 """
@@ -146,10 +150,15 @@ def build(as_of, facts, raw, spx, engine, out):
     # latest 10-K's words (a 10-K's wording is replaced by the next 10-K's; the MSFT CLOUD rule). Any other event kind needs its
     # encoding decided first
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    if any(e["kind"] != "transition_company_acknowledged" for e in events):
+    # The second encoding (retro/README.md, "XOM 2018-2020"): market evidence that names ExxonMobil (transition_market_evidence, an
+    # event without a 'doc', so it stays in scope once public) counts from the theme's registered market-pricing date and re-files the
+    # stock under DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3 (the ACN GENAI rule): the class label changes, the price state does not
+    if any(e["kind"] not in ("transition_company_acknowledged", "transition_market_evidence") for e in events):
         sys.exit(f"{as_of}: the XOM builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
     themes = retro_tool.load_taxonomy()["themes"]
-    events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
+    visible = lambda e: max(themes[e["theme"]]["live_from"],
+                            themes[e["theme"]]["market_pricing_from"] if e["kind"] == "transition_market_evidence" else "")
+    events = [e for e in events if visible(e) <= as_of]      # a theme counts only from its live date, market evidence from its pricing date
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -265,6 +274,17 @@ def build(as_of, facts, raw, spx, engine, out):
         assert h.get("why_theme_tail"), "a vintage before FY2012 states that no theme is live"
         why = h["why"] + ("; ENERGY_TRANSITION is live (from 2015-12-12) and its climate-change risk factor puts it on the watch list: "
                           "company-acknowledged, with no dated evidence that the market prices it for ExxonMobil")
+    kind, pit_risk, assigned = "CYCLICAL", 2, None
+    for m in [e for e in events if e["kind"] == "transition_market_evidence"][-1:]:
+        # the theme registry dates ENERGY_TRANSITION's market pricing to this event, and it names ExxonMobil: re-filed, label only (the
+        # theme signal and the factor pair are unchanged, so no number moves); the announcement's own stated reason is quoted
+        e10 = [e for e in events if e["kind"] == "transition_company_acknowledged"][-1]
+        kind, pit_risk, assigned, stage, watch = "DISRUPTION_EXPOSED", 3, "ENERGY_TRANSITION", "refiled", []
+        why = (h["why"] + f"; re-filed under the energy transition: the theme registry dates its market pricing to {m['event']} "
+               f"({m['issuer']}, announced {m['announced']}: '{m['quote']}', effective {m['effective']}; the announcement gives as its reason "
+               f"'{m['reason_quote']}'), while ExxonMobil's own {e10['doc']} says {e10['risk_short']}")
+        theme_summary = (f"the energy transition is live and re-filed: the theme registry dates its market pricing to {m['event']} "
+                         f"(effective {m['effective']})")
     cat3 = (f"(3) The {fy_now} production outlook — '{gp['production_quote']}' ({gp['doc']}; display only): no earnings or revenue guide"
             if gp else f"(3) A {fy_now} guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings")
     cat4 = f"(4) Capital and exploration expenditures — {latest['capex_note']} in {latest['quarter']}: the projects the volumes need"
@@ -322,8 +342,8 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 
 # Durability as judged on AS_OF from the dated facts above.
 PIT_PROFILE = {{
-    "kind": "CYCLICAL",
-    "risk": 2,
+    "kind": "{kind}",{chr(10) + '    "theme": "' + assigned + '",' if assigned else ""}
+    "risk": {pit_risk},
     "why": {R(why)},
     "theme_watch": {R(watch)},
     "evidence": {R(list(dict.fromkeys(e["id"] for e in events)))},
