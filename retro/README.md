@@ -6788,7 +6788,8 @@ Seen in the build (method behaviour, not tuned):
 - **2009: CHEAP and BUY on all 52 dates**, robustness 8 of 8. FY08's $8.47 is the anchor all year (7.6-10.7x); BASE is negative from the Q4
   2008 print (-24.3%, -41.8%, -42.7% and -36.9%/yr: revenue -27% to -46%), but BULL is the decade CAGR (21-24%) and XBULL the 2002-2004 run
   (+53.3%) at the window's 75th and 90th percentile multiples (17-19x and 20-26x), so Ratio B stays at 0.11-0.23 and the EPP gap at -24% to
-  +7%.
+  +7%. From the Q1 2009 print to 2010-01-29 (40 dates) BASE lies below BEAR (BASE -42.7% to -36.9%/yr against BEAR's -24.9%, the decade's
+  worst year capped at 0): BASE prices of $33-40 under BEAR's $42-45. The frozen rules order nothing between them.
 - **The trough becomes the anchor and the bear.** From the Q4 2009 print FY09's $4.01 is the EPS anchor (16.7x) and the 2009 fall (-52.5%:
   $8.44 to $4.01) the decade's worst year, so BEAR is -52.5%/yr for two years: a BEAR price of $9 to 2011-01-28, $13 on FY10's $6.22 and
   $18 on FY11's $8.42. It stays until 2009 leaves the window. RICH and AVOID on all 12 dates of 2010-02-02 to 2010-04-23 (Ratio B 2.2-3.6).
@@ -6804,7 +6805,7 @@ Seen in the build (method behaviour, not tuned):
 
 How far each call moves the classes (the 209 dates rebuilt with one encoding changed; no outcome consulted):
 - GAAP EPS in every year instead of the company's figures excluding special items would change 21 classes (1 in 2010, 2 in 2011, 18 in
-  2012, mostly CHEAP to FAIR in December 2011-March 2012, as 2008's $8.66 deepens BEAR to -54%) and 37 tiers;
+  2012, mostly CHEAP to FAIR from December 2011 to June 2012, as 2008's $8.66 deepens BEAR to -54%) and 37 tiers;
 - BASE on the latest quarter's oil-equivalent production growth instead of revenue growth would change 70 classes (33 in 2010 and 30 in
   2011, mostly CHEAP to RICH from the Q1 2010 print) and 74 tiers: in 2010-2011 the revenue fallback, not the business, decides the class;
 - both together: 84 classes and 99 tiers.

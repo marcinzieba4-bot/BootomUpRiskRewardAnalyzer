@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "XOM",
+ "as_of": "2011-08-26",
+ "computed": "2026-11-05",
+ "data_source": "Yahoo Finance daily closes + dividends (XOM, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2012-02-24",
+   "price": 87.34,
+   "dividends": 0.94,
+   "total_return_pct": 21.5,
+   "benchmark_total_return_pct": 17.3,
+   "excess_pct": 4.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2012-08-24",
+   "price": 88.05,
+   "dividends": 2.08,
+   "total_return_pct": 24.1,
+   "benchmark_total_return_pct": 22.2,
+   "excess_pct": 1.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2013-08-26",
+   "price": 87.09,
+   "dividends": 4.48,
+   "total_return_pct": 26.1,
+   "benchmark_total_return_pct": 45.8,
+   "excess_pct": -19.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2014-08-26",
+   "price": 99.64,
+   "dividends": 7.12,
+   "total_return_pct": 47.0,
+   "benchmark_total_return_pct": 78.0,
+   "excess_pct": -31.0,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2013-07-23",
+   "price": 95.2
+  },
+  "low": {
+   "date": "2011-09-22",
+   "price": 69.24
+  },
+  "max_drawdown_pct": -11.3,
+  "return_to_avg_price_m12_m24_pct": 23.8
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "ExxonMobil: integrated major, Guyana/Permian; oil price",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
