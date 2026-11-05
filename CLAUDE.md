@@ -22,8 +22,8 @@ touching either directory.
 - **Tickers are separate.** Each has its own fact sheet, builder and engine; nothing from one ticker's facts,
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
-  (2008 to 2026-10-30 so far) and XOM (2008 to 2026-10-30 so far) sit in `staging/retrospective/` until the owner adds them to the archive (retro/README.md,
-  "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM"). The live `nke_signal_model.py`, `avgo_*.py` and `msft_signal_model.py` files
+  (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far) and SHW (2008 so far) sit in `staging/retrospective/` until the owner adds them to the
+  archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW"). The live `nke_signal_model.py`, `avgo_*.py` and `msft_signal_model.py` files
   and today's profiles in `data/business_profiles.json` are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2).
 - **Never use the owner's personal email** in request headers to external

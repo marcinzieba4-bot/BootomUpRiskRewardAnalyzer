@@ -12,6 +12,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 PEP          # the PEP series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 MSFT         # the MSFT series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 XOM          # the XOM series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 SHW          # the SHW series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -19,7 +20,8 @@ CUTOFF that a filing after it states, the 'futures_later' rule; AVGO: a later gu
 first states on the last print before it, the 'servings_later' rule, and a listing on a new exchange; MSFT: a guide with every guided field, a later
 range for every quarter the fact sheet guides, a later withdrawal of every guided year, call-only guidance words and a receivables
 caveat; XOM: a guide with a production outlook for every guided year and a dividend, and a later print with outlook words, renamed
-volume lines and full-year actuals that exclude its own year and restate every earlier one, and a later vintage that excludes a year; a CLOUD event
+volume lines and full-year actuals that exclude its own year and restate every earlier one, and a later vintage that excludes a year; SHW: a guide
+with every guided field, a later range for every quarter the fact sheet guides, and a later print that renames every reporting line; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -45,7 +47,8 @@ FACTS = os.path.join(ROOT, "retro", "facts", f"{TICKER}.json")
 CACHE = [os.path.join(ROOT, "retro", ".cache", n) for n in (f"{TICKER}.json", "_GSPC.json")]
 OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP", "LOW": "staging/retrospective/LOW",
           "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE", "AVGO": "staging/retrospective/AVGO",
-          "PEP": "staging/retrospective/PEP", "MSFT": "staging/retrospective/MSFT", "XOM": "staging/retrospective/XOM"}[TICKER]
+          "PEP": "staging/retrospective/PEP", "MSFT": "staging/retrospective/MSFT", "XOM": "staging/retrospective/XOM",
+          "SHW": "staging/retrospective/SHW"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -97,7 +100,14 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      production_note="PLANTED", sales_note="PLANTED", capex_note="PLANTED", outlook_words="PLANTED",
                      pps_label="PLANTED", chem_label="PLANTED",
                      raw=dict(rev_m=1, rev_prior_m=99, pretax_m=-99, pretax_prior_m=99, oe_kbd=1, oe_prior_kbd=99, pps_kbd=1,
-                              pps_prior_kbd=99, chem_kt=1, chem_prior_kt=99))}[TICKER]
+                              pps_prior_kbd=99, chem_kt=1, chem_prior_kt=99)),
+         "SHW": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, lc_pct=-60.0, comps_pct=-60.0,
+                     consumer_pct=-60.0, gross_margin=1.0, gross_margin_bp=-999.0, pretax_margin=-50.0, pretax_margin_bp=-999.0,
+                     eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0, next_print="PLANTED",
+                     cash_return_text="PLANTED", comps_note="PLANTED", consumer_note="PLANTED", currency_pp=-50.0,
+                     currency_note="PLANTED", acq_note="PLANTED",
+                     renames={"Paint Stores Group": "PLANTED", "Consumer Group": "PLANTED", "Global Group": "PLANTED"},
+                     raw=dict(ns_k=1, ns_prior_k=99, cogs_k=1, cogs_prior_k=1, pretax_k=-99, pretax_prior_k=99, diluted_shares=1))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -112,6 +122,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
                "XOM": dict(production_quote="PLANTED", note="PLANTED"),
+               "SHW": dict(fy_words="PLANTED", note="PLANTED",
+                           q_guide={"quarter": "Q4 2099", "sales": [-40, -30], "eps": [0.1, 0.2], "words": "PLANTED"}),
                "MSFT": dict(rev_guide_usd_b=[0.1, 0.2], op_income_guide_usd_b=[0.1, 0.2], note="PLANTED", opex_guide_usd_b=[0.1, 0.2],
                             q_guide={"quarter": "Q4 FY99", "sales_usd_b": [0.1, 0.2], "op_income_usd_b": [0.1, 0.2], "eps": [0.1, 0.2],
                                      "eps_words": "PLANTED", "prior_sales_b": 99.0, "prior_source": "MS1", "prior_label": "PLANTED"})}.get(TICKER, {})
@@ -181,6 +193,12 @@ try:
         for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):   # and a later withdrawal of every guided year
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "withdrawn": True,
                                 "quote": "PLANTED", "opex_guide_usd_b": [0.1, 0.2]})
+    if TICKER == "SHW":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
+                           # wins): a later guide may never reach an earlier date
+        for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):
+            f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED",
+                                "eps_guide": [0.1, 0.2], "rev_guide": [-40, -30], "fy_words": "PLANTED",
+                                "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
     if "listings" in f:    # PEP: an exchange change announced and effective after CUTOFF
         f["listings"].append({"published": later, "effective": later, "exchange": "PLANTED", "source": last["source"], "note": "PLANTED"})
     v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))

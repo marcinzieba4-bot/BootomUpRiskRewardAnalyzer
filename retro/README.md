@@ -7267,6 +7267,162 @@ Judgement calls that could carry hindsight (in addition to the earlier XOM lists
 - the Middle East supplement of 2026-04-08, the Corporate Plan notices and the capex ranges read as adding nothing;
 - the re-file kept to the end of the range: the method has no rule that ends one (label only).
 
+## SHW (Sherwin-Williams): the tenth ticker, in staging
+
+The SHW series is built apart from ACN, UNP, LOW, AAPL, NKE, AVGO, PEP, MSFT and XOM and shares nothing with them but the machinery:
+its own fact sheet (`retro/facts/SHW.json`), builder (`retro/build_shw.py`, the LOW guide list with the XOM rule-T and raw-figure
+checks) and engine (`retro/templates/shw_engine.py.tmpl`, the XOM engine with paint and coatings signals). The method is still r2. No
+fact, parameter, outcome or finding of another ticker enters an SHW model, and neither does today's live profile of SHW in
+`data/business_profiles.json` (a 2026 judgement, not read for this series). Outputs go to `staging/retrospective/SHW/`, beside the
+others, with the same `index.json` and their own `SERIES.md`.
+
+```bash
+python3 retro/build_shw.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
+for d in staging/retrospective/SHW/2008-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SHW
+python3 retro/tools/firewall.py 2008-07-01 SHW
+python3 retro/tools/firewall.py 2009-01-01 SHW
+for c in 2008-02-01 2008-03-25 2008-04-24 2008-06-05 2008-10-18; do python3 retro/tools/firewall.py $c SHW; done
+```
+
+The 10-Ks from FY1998 to FY2007 were read for the history and the decade's signal values (the FY1998-FY2004 annual reports, Exhibit 13,
+are plain-text filings), and every 8-K and 10-Q of October 2006 to November 2008 (29 filings, the two outlook 8-Ks of 2008-03-24 and
+2008-06-03 among them), by Opus directly, with no delegated transcription. The fact sheet is generated from the transcribed raw figures
+by a script, so every growth rate, margin and rule-T change is computed, not typed; 202 strings were checked with `verbatim.py` against
+their own filings (every statement-of-income row behind a print, every stated comparable-store, Consumer Group and currency figure, every
+guide). Each source's date comes from EDGAR's acceptance time (converted from UTC; before 2003 EDGAR gives the filing date only).
+Decided on 2026-11-05, before any SHW model was built or any SHW outcome computed:
+
+- **Fiscal calendar.** Sherwin-Williams' fiscal year is the calendar year. The four dates of January 2008 have FY2007 as the current year
+  (its EPS guide; no FY07 EPS yet), until the Q4 2007 print adds FY07 on 2008-01-29.
+- **Prices on the as-of share basis** (the UNP rule). Sherwin-Williams split three-for-one on 2021-04-01, after every 2008 date, so the
+  builder multiplies Yahoo's split-adjusted series by three: $54.08 as traded on 2008-01-04. The two-for-one split of 1997-03-31 precedes
+  every per-share fact in the fact sheet (the earliest is the FY1998 10-K), so nothing is restated.
+- **Release timing.** The earnings 8-Ks of Q2 2007 to Q3 2008 were accepted during the session on the release day (09:32-10:08 ET; the
+  conference call at 11:00 a.m. ET), each on a Tuesday or Thursday, so a print dates its week the next trading day: 2008-01-30,
+  2008-04-23, 2008-07-18 and 2008-10-17. The outlook 8-Ks were accepted 2008-03-24 08:52 ET (before the open) and 2008-06-03 09:33 ET.
+  The FY2006 10-K, accepted 2007-02-28 17:29 ET, is dated 2007-03-01; the FY2007 10-K, accepted 2008-02-28 09:55 ET, keeps its date.
+- **History: each year from the latest filing that reports it.** Net sales from the latest statement of consolidated income that reports
+  the year (FY2006 vintage: 2004-2006 from the FY2006 10-K, 2003 from the FY2005 10-K, back to 1997 from the FY1999 10-K); EPS from the
+  latest five-year financial summary (2002-2006 from the FY2006 10-K, 2001 from the FY2005 10-K, 1999 from the FY2003 10-K, 1998 from the
+  FY2002 10-K, 1997 from the FY2001 10-K); diluted shares of the first and last year from the earnings-per-share notes (1997's
+  174,032,342 from the FY1999 10-K). The Q4 2007 release extends the history with FY07 from 2008-01-29, and the FY2007 10-K moves the
+  window to 1998-2007. The 1997 Thompson Minwax acquisition (net sales +18.1%) stays in, as published (the LOW and PEP rule).
+- **EPS** is diluted EPS before the cumulative effect of the 2002 change in accounting principle (the NKE rule): 2002 $2.04 ($.84 after
+  it). The company's figure excluding the 2000 impairment of long-lived assets replaces 2000's GAAP $.10 (the ACN rule): $1.90, from the
+  FY2002 10-K's "Results/Ratios Excluding Impairment Charge", the latest filing that publishes it (the $352,040K charge, mostly Consumer
+  Segment goodwill, exceeded the year's $16,026K net income). 2005's $22,000K goodwill impairment and 2007's (about $.08 a share; the
+  release gives no figure excluding it) stay in. **No year is excluded.**
+- **Guides: EPS in numbers, net sales mostly in words.** Every release (and the outlook 8-Ks) guides the next quarter's and the year's
+  diluted EPS as ranges. Net sales are guided in numbers only in the Q2 and Q3 2007 releases (Q3 2007 "between 4% and 6%"; Q4 2007
+  "between 5.0% and 6.0%, including acquisitions", FY2007 "between 2.5% and 3.5%"); every other statement is words ("a low-to-mid single
+  digit percentage increase", "slightly lower than 2007", "plus or minus in the low single digits"), and words are not figures (the UNP
+  2016 rule). Method r2 maps them as for LOW:
+  - current-FY EPS: the midpoint of the latest fiscal-year EPS range for the current year: FY07 $4.725 ($4.70-4.75, Q3 2007 release) to
+    2008-01-25; FY08 $5.075 ($5.00-5.15, Q4 2007 release), $4.775 from the 8-K of 2008-03-24 ($4.70-4.85, reaffirmed 2008-04-22), $3.85
+    from the 8-K of 2008-06-03 ($3.60-4.10, reaffirmed 2008-07-17) and $4.07 from the Q3 2008 release ($3.97-4.17);
+  - BASE growth and the growth factor: the Q4 2007 net sales guide, +5.0% to 6.0% as published (in dollars, including acquisitions; no
+    filing guides in local currency, the MSFT and LOW reading), to 2008-01-25; from the Q4 2007 print, with no net sales guide in numbers,
+    the latest quarter's net sales growth less the currency effect the release states (the NKE and PEP rule): +2.0% (Q4 2007: 3.3 less
+    1.3), -0.1% (Q1 2008: 1.5 less 1.6), +0.3% (Q2 2008: 1.4 less 1.1), +2.4% (Q3 2008: 3.3 less 0.9); acquisitions stay in (1.7-2.9
+    points a quarter);
+  - no margin guide, so no margin step: the margin signal takes the latest quarter's pre-tax margin change.
+  - The next quarter's EPS range and every statement in words are shown in the guide line and feed no input.
+- **Dividends,** from the 10-K that states the rate: $.315 a quarter (FY2006 10-K, increased February 21, 2007), $.35 from the FY2007
+  10-K (increased February 20, 2008). The releases state no rate.
+- **Signals.** Six, with ACN's weights, in the LOW layout: Paint Stores comparable-store sales (0.20, the release's "net sales from stores
+  open for more than twelve calendar months"), gross margin change (0.20), net sales growth (0.15, as reported), Consumer Group net sales
+  growth (0.15, as the release states it), the pre-tax margin change (0.15: income before income taxes on net sales; the statement of
+  income has no operating-income line) and the theme slot at 2/4. The releases carry no balance sheet, so LOW's inventory signal has no
+  quarterly value; its slot goes to the Consumer Group, the one other segment with a decade of history in the 10-Ks (the Global Group
+  was formed in 2006 from parts of the other segments, with history from 2004). Margins and net sales growth are derived from the raw
+  figures of each release's statement of income (the fact sheet keeps them in thousands and the builder re-derives each value).
+- **Thresholds by rule T** over the decade of the FY2006 10-K, the vintage public on 2008-01-04: 1997-2006, each change from the latest
+  10-K published by then that reports both years (statements of income for the margins and net sales; the five-year segment tables, in
+  millions, or the MD&A table in thousands where the same filing has one, for the Consumer segment's net external sales). No 10-K states
+  1997's comparable-store sales, so that signal has the nine years 1998-2006 (rule T takes the annual values the filings report).
+  2000's income before income taxes is the company's figure excluding the impairment, $495,446K (the FY2002 10-K; the LOW rule for a
+  published excluding figure). Seams stay in, as published: Thompson Minwax in 1997, the FY2002 10-K's restatement of the Consumer
+  segment for 2000-2001, the 2006 realignment into the Paint Stores, Consumer and Global Groups. The values are in the fact sheet
+  (`rule_t`); the builder recomputes the thresholds and refuses to build if the engine's differ.
+
+  | Signal | 1997-2006 | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | comparable-store sales (1998-2006) | 4.9, 4.0, 3.7, -1.3, 1.9, 4.0, 10.1, 13.6, 9.1 % | -7 / -1 / 4 / 14 % |
+  | gross margin change | 115.2, 21.0, 177.0, -65.8, -46.4, 129.1, 29.8, -121.8, -134.7, 88.4 bp | -290 / -130 / 30 / 180 bp |
+  | net sales growth | 18.1, 1.09, 1.41, 4.15, -2.79, 2.34, 4.3, 13.06, 17.61, 8.61 % | -10 / -3 / 4 / 18 % |
+  | Consumer Group net sales growth | 21.26, -9.01, -4.52, 2.21, -8.71, 3.15, 1.02, 8.96, 7.62, -1.94 % | -20 / -9 / 2 / 21 % |
+  | pre-tax margin change | -32.9, 16.5, 87.6, -28.8, -112.8, 121.1, 8.1, -18.0, -36.4, 155.7 bp | -220 / -110 / 0 / 160 bp |
+
+- **Durability: DURABLE, risk 2** (the LOW precedent). The "why" quotes the 10-K: the company "is engaged in the manufacture,
+  distribution and sale of paint, coatings and related products", "a leading manufacturer and retailer", 3,046 (then 3,325)
+  company-operated paint stores, and "Portions of our business involve the sale of paint, coatings and related products to segments of
+  the economy that are cyclical in nature, particularly segments relating to construction, housing and manufacturing". Portions of a
+  business that follow a cycle are not earnings that are the cycle (XOM's "fundamentally a commodity business"), so CYCLICAL is not
+  used; the kind changes the class label only. No disruption theme in `taxonomy_eras.json` is live for a paint and coatings maker in
+  2008 (ECOMMERCE, scoped to physical retail, from 2015-01-01), so the watch list is empty and the builder refuses events until a theme
+  encoding is decided.
+- **Segment bridge and EPS check** (display only): the 10-K's segments by net sales (Paint Stores, Global, Consumer, Administrative),
+  the total from the fiscal-year net sales guide (FY2007) or the BASE fallback applied to the last year (FY2008); the EPS check runs on
+  the pre-tax margin. A renamed reporting line takes its new name from the first print that uses it (the ACN rule): the Global Finishes
+  Group from the Q3 2008 release (2008-10-16).
+- **Adds nothing:** the credit-agreement, indenture and officer 8-Ks (2007-04-26, 2007-08-29, 2007-09-17, 2007-09-25, 2008-02-26,
+  2008-06-02), the XBRL test filing of 2008-11-03, and the 10-Qs beyond their dividends (the releases come first and carry every print
+  value).
+- **Anachronism list:** Sherwin-Williams names first seen in its filings after the start of 2008 (Global Finishes Group from 2008-10-16,
+  Latin America Coatings Group, HGTV HOME, The Americas Group, Consumer Brands Group, Performance Coatings Group) join
+  `taxonomy_eras.json`, each dated from the first Sherwin-Williams filing that uses it (EDGAR full-text search). No existing model of any
+  ticker contains them, so no output changes. SHW's source ids are `SH1`-`SH20`.
+
+Controls: altering one value of each print, guide and vintage changes no date before its publication and changes the first weekly date
+on or after it whenever the value is in scope (37 controls; the four that change nothing are three 2007 EPS ranges that later guides
+supersede and the Q2 2007 pre-tax margin, never the latest print on a 2008 date). Rebuilding the 2008 dates of ACN, UNP, LOW, AAPL, NKE, PEP, MSFT and XOM and the 2009 dates of AVGO
+changes nothing. A scan of the 53 models for the figures, notes, guides and texts of every later print, guide and vintage finds none
+before its first publication (0 of 1,486; the Q1 and Q2 2008 releases' reaffirmed ranges were already public from the 8-Ks of
+2008-03-24 and 2008-06-03).
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP to April, RICH from June.** CHEAP on 19 dates (2008-01-04 to 2008-04-23, 2008-05-23, 2008-05-30), FAIR on 2 (2008-05-02,
+  2008-05-09) and RICH on 32 (2008-05-16, 2008-06-06 to 2008-12-31). Robustness 8 of 8 on every date to 2008-04-18 and from 2008-07-18,
+  1 to 7 of 8 from 2008-04-23 to 2008-07-11. The legacy tier is BUY to 2008-07-11 and then follows the price: ACCUMULATE on 13 dates,
+  WATCHLIST on 6, AVOID on 6 between 2008-08-15 and 2008-09-26.
+- **The EPS guide carries the call.** The P/E window barely moves all year (10th percentile 11.4-11.6x, median 13.5-13.7x, 90th
+  percentile 15.3-16.6x); the current-FY EPS falls from $5.075 to $3.85 between January and June as the guide is cut twice, so a $47-63
+  price that was 9.9-12.5x (1st-27th percentile) in January-May is 12.2-16.5x (19th-96th percentile) from June, and the BULL price falls
+  from $88-96 to $72-75.
+- **BEAR is 2001** (-11.6%/yr: 2000's $1.90 excluding the impairment to 2001's $1.68) at the 10th-percentile P/E (11.4-11.6x): $43-46 in
+  January-May, $35-37 from June. XBULL is the 2004-2006 run (+24.1%/yr); BULL the decade CAGR (+12.1%, then +13.0% over 1998-2007).
+- **BASE is the guide, then the quarter less currency.** +8.2%/yr to 2008-01-25 (the Q4 2007 guide's 5.5% plus a 2.7% buyback), +4.9%
+  from the Q4 2007 print, +5.2% from the FY2007 10-K, +3.1% from Q1 2008, +3.5% from Q2 2008 and +5.6% from Q3 2008 (diluted shares fell
+  2.7%/yr over 1997-2006, 2.9% over 1997-2007 and 3.2% over 1998-2007).
+- **The proxy composite** is 2.35 through the Q4 2007 print (gross margin +78bp and +192bp at BULL or better, the pre-tax margin at BULL,
+  comparable-store sales at BASE until Q4 2007's -2.5%), then 1.65 from Q1 2008 (comps -6.5% and -4.5% at BEAR, gross margin -125bp at
+  BASE, the pre-tax margin -297bp and -230bp at BEAR) and 1.45 from Q3 2008 (gross margin -265bp at BEAR). The market composite rises
+  from 1.6-2.4 in January-May to 2.6-3.5 from mid-July, so the adjusted gap runs from +1.14 to -2.06.
+
+How far each call moves the classes (the 53 dates recomputed with one encoding changed; no outcome consulted):
+- BASE on reported net sales growth instead of growth less currency: 4 classes (2008-05-02 and 2008-05-09 FAIR to CHEAP, 2008-06-27 and
+  2008-07-11 RICH to FAIR), no tier;
+- the Consumer Group signal at BEAR on every date: 5 classes (2008-04-23 to 2008-05-30, toward RICH); at XBULL on every date: 8 classes
+  (2008-05-02 to 2008-07-11, toward CHEAP), no tier either way, which brackets any other choice of the fourth signal;
+- the pre-tax margin thresholds with 2000 at GAAP (-1420 / -700 / 10 / 560 bp): 6 classes (2008-05-02 to 2008-07-11, toward CHEAP), no
+  tier.
+Every move falls in May-July 2008, where the class already changes from week to week; January-April CHEAP and August-December RICH hold
+under all of them.
+
+Judgement calls that could carry hindsight:
+- the signals, chosen by a builder who knows that housing and DIY demand fell through 2008: Paint Stores comparable-store sales, and the
+  Consumer Group for the slot LOW's inventory signal fills (rule T then sets the thresholds mechanically);
+- DURABLE rather than CYCLICAL (the class label only), despite the 10-K's "cyclical in nature" for portions of the business;
+- the company's 2000 figures excluding the impairment, in the EPS history and in the pre-tax margin's rule-T values (6 classes move at
+  GAAP);
+- net sales guides in words read as no field, and BASE in 2008 on the latest quarter's growth less the stated currency effect (4 classes
+  move on reported growth);
+- the Q4 2007 net sales guide used as published, including acquisitions, in dollars.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -7403,6 +7559,11 @@ What the gates enforce:
   quoted beside it ("XOM 2018-2020"). The re-file stands through 2023, in the FY2020-FY2022 10-Ks' words; EV, live from about 2020 and
   scoped to fuel retail among others, is not recorded: the stock is already filed under ENERGY_TRANSITION, and EV's evidence names
   automakers, not ExxonMobil ("XOM 2021-2023"). Both stand through 2026, in the FY2023-FY2025 10-Ks' words ("XOM 2024-2026").
+  SHW in 2008 carries none: no theme in the registry is live for a paint and coatings maker (ECOMMERCE, scoped to physical retail,
+  from 2015-01-01; OFFSHORE to IT services), so its watch list is empty ("SHW"). Its FY2006 and FY2007 10-Ks say portions of the
+  business sell to "segments of the economy that are cyclical in nature, particularly segments relating to construction, housing and
+  manufacturing"; that is a cycle, not a disruption theme, and the wording stays in the durability "why", which files SHW DURABLE (the
+  LOW precedent) rather than CYCLICAL.
 
 ## Workflow
 
