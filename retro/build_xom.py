@@ -35,7 +35,10 @@ FY2020 is a loss even on the company's figure excluding identified items, so it 
 Q4 2020 print's 'excluded_note' and each later vintage's 'eps_excluded' keep it out of the EPS history, its days leave the P/E window
 (the label reads 'ex-FY20'), growth is measured only between years in the history and the anchor is the last full year in it (the NKE
 FY2018 encoding). From Q2 2022 the releases rename the volume lines ('pps_label', 'chem_label': Energy Products and Chemical Products
-sales); the text follows the release in force.
+sales); the text follows the release in force. From Q4 2024 the releases print volumes for the current and prior quarters and the
+year to date only (Q1 releases excepted): a print's year-ago volume then comes from the year-ago quarter's own release, listed in
+its 'extra_sources' (retro/README.md, "XOM 2024-2026"). From 2026-07-01 the listed company is ExxonMobil Holdings Corporation, the
+successor registrant after the redomiciliation to Texas ('company_names', the AVGO rule).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. ExxonMobil's earnings 8-Ks of 2007-2008 were accepted before the open or during the
@@ -50,6 +53,7 @@ Usage
   python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31
   python3 retro/build_xom.py --weekly 2018-01-01 2020-12-31
   python3 retro/build_xom.py --weekly 2021-01-04 2023-12-31
+  python3 retro/build_xom.py --weekly 2024-01-01 2026-10-30
   python3 retro/build_xom.py 2008-02-01
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/XOM/<AS_OF>
 """
@@ -324,10 +328,13 @@ def build(as_of, facts, raw, spx, engine, out):
         assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
-    company = h["company"]
+    # a successor issuer's name from its filing until the next vintage carries it (the AVGO rule; the 2026 redomiciliation)
+    renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
+    company = renames[-1]["name"] if renames else h["company"]
     exchange = h["exchange"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + ([dividend_src] if dividend_src else []) + ([gp["source"]] if gp else []) + split_ids + [e["id"] for e in events])
+           + ([dividend_src] if dividend_src else []) + ([gp["source"]] if gp else []) + split_ids + [e["id"] for e in events]
+           + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, XOM and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/XOM/history",

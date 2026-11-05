@@ -6589,6 +6589,7 @@ python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31                   # 20
 python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31                   # 260 dates, 2013-01-11 .. 2017-12-29
 python3 retro/build_xom.py --weekly 2018-01-01 2020-12-31                   # 157 dates, 2018-01-05 .. 2020-12-31
 python3 retro/build_xom.py --weekly 2021-01-04 2023-12-31                   # 156 dates, 2021-01-08 .. 2023-12-29
+python3 retro/build_xom.py --weekly 2024-01-01 2026-10-30                   # 148 dates, 2024-01-05 .. 2026-10-30
 for d in staging/retrospective/XOM/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -6611,6 +6612,7 @@ python3 retro/tools/firewall.py 2021-07-01 XOM
 python3 retro/tools/firewall.py 2022-07-01 XOM
 python3 retro/tools/firewall.py 2023-07-01 XOM
 python3 retro/tools/firewall.py 2024-01-01 XOM
+for c in 2024-07-01 2025-01-01 2025-07-01 2026-01-01 2026-07-01 2026-11-01; do python3 retro/tools/firewall.py $c XOM; done
 ```
 
 The 10-Ks from FY1999 to FY2007 were read for the history and the decade's signal values (the FY1999-FY2001 10-Ks are plain-text
@@ -7159,6 +7161,112 @@ Judgement calls that could carry hindsight (in addition to the earlier XOM lists
 - EV left out, the re-file continued on the 2020 evidence, and the Corporate Plan updates read as adding nothing because they were
   posted to the website and not filed.
 
+### XOM 2024-2026: Pioneer in the volumes, year-ago volumes from the year-ago release, timing effects left in, a successor issuer in Texas
+
+Every 8-K, 10-Q and 10-K of January 2024 to November 2026 was listed for both registrants: Exxon Mobil Corporation (52 filings: 39 8-Ks,
+two 8-K/As, eight 10-Qs and three 10-Ks) and, from the redomiciliation of 2026-07-01, ExxonMobil Holdings Corporation (EDGAR CIK 2115436:
+the 8-K12B, six 8-Ks and the Q3 2026 10-Q; the Q2 2026 10-Q was filed under both). The twelve earnings releases with their exhibits 99.2
+and the three 10-Ks were read for the facts; every other 8-K and the 10-Qs were checked for a guided number, a dividend or a share count.
+The prints were extracted by script (each key-figure value matched to its column header, never to its position) and checked twice: 351
+strings with `verbatim.py` against their own filings, and every year-ago volume that two filings state (a Q1 release's year-ago column, the
+Q2 and Q3 2024 Investor Relations Data Summaries' five quarters) against the year-ago quarter's own release (18 of 18 identical). Decided on
+2026-11-05, before any 2024-2026 date was built or scored:
+
+- **Three 10-K vintages, each with a Q4 print before it:** FY2023 (accepted 2024-02-28 16:37 ET, dated 2024-02-29), FY2024 (2025-02-19
+  16:39 ET, dated 2025-02-20) and FY2025 (2026-02-18 16:06 ET, dated 2026-02-19). The first year's diluted shares come from the last 10-K
+  that reports them: 2014 4,282M (FY2016 10-K), 2015 4,196M (FY2017 10-K), 2016 4,177M (FY2018 10-K). From the FY2024 10-K the segment
+  revenue table has no corporate column; the display groups are unchanged.
+- **Release timing.** All twelve earnings 8-Ks (Q4 2023 to Q3 2026) were accepted before the open (06:31-06:32 ET) on a Friday, so each
+  print meets its own day's close and dates its week (the 2008 rule). Holiday weeks end on Thursdays: 2024-03-28, 2025-04-17, 2025-07-03,
+  2026-04-02, 2026-06-18 and 2026-07-02. The last date is 2026-10-30, the day of the Q3 2026 print and the last complete week: the series
+  was built on 2026-11-05, so a rebuild after the close of 2026-11-06 adds the week of 2026-11-02. The newest dates have no two-year
+  outcome yet.
+- **EPS: the company's figures excluding identified items, published per share in each Q4 release** (the ACN rule): FY2023 $9.52 (GAAP
+  $8.89, with a $2.0 billion impairment in California), FY2024 $7.79 (GAAP $7.84) and FY2025 $6.99 (GAAP $6.70). From Q1 2026 the releases
+  add a figure that also excludes "estimated timing effects" (unsettled derivatives marked to market and LIFO recognition differences,
+  "Impacts are expected to unwind in subsequent periods"), and from Q2 2026 they headline it as "Adjusted Earnings/(Loss) Per Common
+  Share". Timing effects arise in every quarter (the Q2 2026 release's restated 2025 quarters show them in all four: $0.03, $0.03, $0.04 and
+  $0.08 a share), so that figure does not exclude only one-offs (the NKE FY2007 rule, as MSFT's OpenAI impact), and no full year on that
+  basis is published inside the range. The quarters carry each figure in their note, display only.
+- **Year-ago volumes from the year-ago quarter's own release.** From Q4 2024 the key figures print the current and prior quarters and the
+  year to date (the Q1 releases keep a year-ago column; the Q2 and Q3 2024 releases' Investor Relations Data Summaries still give five
+  quarters). Where a release prints no year-ago quarter for production, Energy Products sales or Chemical Products sales, the current
+  quarter is read against the year-ago quarter's own release, public a year earlier (the AAPL guide and AVGO inventory rule; the print's
+  `extra_sources`): Q4 2024 against Q4 2023, Q2-Q4 2025 against Q2-Q4 2024, Q2 and Q3 2026 against Q2 and Q3 2025. Nothing is derived from
+  the year-to-date columns. Revenue, pre-tax income and EPS keep the year-ago columns of the release's own income statement.
+- **Pioneer in the volumes, as published.** The Pioneer Natural Resources merger (agreed October 2023, closed 2024-05-03 with 545 million
+  shares issued) adds no guided number. Acquisitions stay in (the PEP rule, as XTO in 2010): production grows 20.8% in Q2 2024, 24.2% in
+  Q3, 20.3% in Q4 2024 and Q1 2025, and diluted shares rise from 3,998M (Q1 2024) to 4,462M (Q3 2024) before the buyback brings them to
+  4,140M (Q3 2026). The Q1-Q3 2024 prints say so in a deal note. Denbury (closed 2023-11-02) reaches no print as a share count of its own.
+- **Still no guide in numbers in any filing.** The Corporate Plan updates were again announced by 8-K (2024-11-12, 2025-11-18) and posted
+  only on the website. The releases' capital-expenditure ranges ("approximately $28 billion" for 2024, "$27 billion to $29 billion" for
+  2025, "$27-$29 billion" for 2026) and their project earnings at constant prices and margins ("more than $3 billion of earnings in 2026") give no EPS,
+  revenue or volume figure, so they add nothing (as the capex 8-K of 2020-04-07). The twelve earnings-considerations 8-Ks add nothing (the
+  ACN non-earnings 8-K rule); the last is renamed "Market and Planned Impacts to Earnings" (2026-10-16). The supplement of 2026-04-08
+  ("Impact of Middle East conflict on ExxonMobil activities", before the open) expects the conflict "to lower global oil-equivalent
+  production by approximately 6% in first quarter compared with fourth-quarter 2025" and first-quarter EPS "higher than the fourth quarter
+  of 2025, excluding unfavorable timing effects": estimates for a quarter already ended, 23 days before its print, with no figure for a
+  later period, so it adds nothing either (method r2 has no volume input).
+- **Dividends,** each from the first filing that states the rate: $0.99 from the Q3 2024 release (2024-11-01), $1.03 from the Q3 2025
+  release (2025-10-31) and $1.07 from the Q3 2026 release (2026-10-30), with each 10-K's declaration ($0.95 on February 1, 2024; $0.99 on
+  January 31, 2025; $1.03 on January 29, 2026).
+- **A successor issuer.** On 2026-07-01 Exxon Mobil Corporation (New Jersey) completed its redomiciliation merger: each share was
+  exchanged for one share of ExxonMobil Holdings Corporation (Texas), "the successor registrant" (8-K12B accepted 12:36 ET), trading as XOM
+  on the NYSE from July 2. The Q2 and Q3 2026 releases are the new registrant's. The listed company's name follows from the first weekly
+  date on or after the filing, 2026-07-02, until a vintage carries it (`company_names`, the AVGO rule); the exchange is one for one, so the
+  price series runs on unchanged.
+- **ENERGY_TRANSITION stays re-filed** under DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, on every date, the "why" quoting the
+  FY2023-FY2025 10-Ks' "Greenhouse gas restrictions" risk factor ("Depending on how policies are formulated and applied, such policies
+  could negatively affect our investment returns, ... and reduce demand for hydrocarbons, ...") and the Low Carbon Solutions business unit.
+  Label only. EV stays unrecorded ("XOM 2021-2023").
+- **Adds nothing:** the Pioneer completion 8-K (2024-05-03) beyond the shares in the prints, the Pioneer convertible-notes redemption
+  (2024-05-10), the floating-rate notes (2024-10-08, 2025-04-01, 2025-11-13, 2026-03-31, 2026-09-25), the XTO notes redemption
+  (2026-08-28), the Corporate Plan notices, the officer and director 8-Ks and 8-K/As, the annual-meeting votes (2024-05-31, 2025-05-30,
+  2026-05-29), the redomiciliation 8-Ks beyond the name, and the 10-Qs beyond their dividends.
+
+Controls: altering one value of each new print (with each Q4 print's full-year actuals and the Q1-Q3 2024 deal notes), vintage, dividend,
+ENERGY_TRANSITION event and company name changes no date before it is visible and changes the first weekly date on or after it (28 of
+28). The 835 dates of 2008-2023 rebuild byte-identical. A scan of all 983 XOM models for the figures, notes and quotes of every print,
+vintage, dividend, outlook, event and company name, and now every source's title and supports text, finds none before it is visible (0 of
+599,484; a string already inside an earlier item's text, such as the line name "Energy Products sales", is not distinctive). The firewall at 2024-07-01, 2025-01-01, 2025-07-01, 2026-01-01, 2026-07-01 and 2026-11-01 (planted facts, a
+planted later company name, and prices ×10 after each cutoff) changes none of the 861 to 983 earlier models.
+
+Seen in the build (method behaviour, not tuned):
+- **January 2024: CHEAP and BUY on 4 dates** (FY22's $14.06 at 6.9-7.3x, the 8th-11th percentile; BASE -18.4%/yr).
+- **From the Q4 2023 print to January 2025: CHEAP on 48 dates, FAIR on 4.** FY23's $9.52 anchors at 10.7-13.1x (the 17th-44th
+  percentile) as the price moves between $102 and $125; revenue -11.6%, -4.0%, +12.2% and -0.8% put BASE at -11.0% to +12.8%/yr
+  ($124-200). FAIR from 2024-03-28 to 2024-04-19 ($116-121); ACCUMULATE on 35 dates, BUY on 17.
+- **From the Q4 2024 print to the Q3 2025 print: CHEAP on 18 dates, FAIR on 21.** FY24's $7.79 anchors at 13.1-15.1x (the 34th-49th
+  percentile); revenue -1.1%, +0.1% and -12.4% put BASE at -0.2% to -12.7%/yr ($90-124). WATCHLIST on 27, ACCUMULATE on 10, AVOID on 2.
+- **RICH and AVOID on 38 dates from 2025-11-07 to 2026-07-24.** FY24's $7.79 and then, from the Q4 2025 print, FY25's $6.99 anchor at
+  14.7-24.5x as the price rises from $116 to $171 (the 78th-83rd percentile in 2026); revenue -5.2%, -1.3% and +2.4% put BASE at -5.5% to
+  +2.1%/yr ($104-114); Ratio B 2.0-4.4 in late 2025, infinite on the first dates of 2026, then 7.2-13.1.
+- **The Q2 2026 print: FAIR on 11 dates, RICH on 2.** Revenue +42.3% puts BASE at +42.0%/yr ($220) against $153-183 at 21.9-26.2x (the
+  82nd-87th percentile); RICH from 2026-10-16. The Q3 2026 print (revenue +32.7%, BASE +32.4%/yr, $191) gives RICH on 2026-10-30 at
+  $187.25.
+- **Totals over the 148 dates:** CHEAP 70, FAIR 37, RICH 41; BUY 21, ACCUMULATE 45, WATCHLIST 35, AVOID 47. Labels: TRANSITION-FEAR BASKET
+  70, TRANSITION-EXPOSED, NOT CHEAP 41, TRANSITION-EXPOSED, NEUTRALLY VALUED 37. Robustness is weak: 8 of 8 on 27 dates, 7 on 65, 2-6 on
+  56. BEAR is 2019's restated fall (-53.9%/yr) throughout ($12-22); the EPP floor is 12-13x; the proxy composite ranges from 2.15 to
+  3.10, the market composite from 1.48 to 2.85.
+
+How far each call moves the classes (the 148 dates rebuilt with one encoding changed; no outcome consulted):
+- GAAP EPS in every year (2019 $3.36, 2021 $5.39, 2022 $13.26, 2023 $8.89, 2024 $7.84, 2025 $6.70) would change 25 classes (19 CHEAP to
+  FAIR in 2024 on FY23's $8.89, 4 FAIR to RICH in 2026 on FY25's $6.70, one each way in 2025) and 50 tiers;
+- BASE on the latest quarter's oil-equivalent production growth instead of revenue growth would change 24 classes (4 in 2024, 9 in 2025,
+  11 in 2026; 13 FAIR to CHEAP, 11 FAIR to RICH) and 47 tiers;
+- both together: 28 classes and 69 tiers;
+- year-ago volumes from the year-to-date columns instead of the year-ago releases (a test only: a different period): 5 classes (CHEAP to
+  FAIR, 2025-02-21 to 2025-04-25), no tier;
+- without the re-file: no class, 148 labels.
+
+Judgement calls that could carry hindsight (in addition to the earlier XOM lists, which stand):
+- the company's figures excluding identified items for FY2023-FY2025, and the timing-effects figure left out as recurring (25 classes
+  move at GAAP);
+- year-ago volumes read against the year-ago quarter's own release where a release prints none;
+- BASE on revenue growth, which again decides most classes (24 move on production growth), and in Q2-Q3 2026 runs at +32% to +42%/yr;
+- the Middle East supplement of 2026-04-08, the Corporate Plan notices and the capex ranges read as adding nothing;
+- the re-file kept to the end of the range: the method has no rule that ends one (label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -7294,7 +7402,7 @@ What the gates enforce:
   re-filed under DISRUPTION_EXPOSED (ENERGY_TRANSITION), risk 3, label only, with the announcement's own reason (Apple's stock split)
   quoted beside it ("XOM 2018-2020"). The re-file stands through 2023, in the FY2020-FY2022 10-Ks' words; EV, live from about 2020 and
   scoped to fuel retail among others, is not recorded: the stock is already filed under ENERGY_TRANSITION, and EV's evidence names
-  automakers, not ExxonMobil ("XOM 2021-2023").
+  automakers, not ExxonMobil ("XOM 2021-2023"). Both stand through 2026, in the FY2023-FY2025 10-Ks' words ("XOM 2024-2026").
 
 ## Workflow
 

@@ -1,0 +1,332 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "XOM",
+ "company": "Exxon Mobil Corporation",
+ "as_of": "2025-10-31",
+ "price_date": "2025-10-31",
+ "price": 114.36,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); integrated oil and gas signals",
+ "pit_profile": {
+  "kind": "DISRUPTION_EXPOSED",
+  "theme": "ENERGY_TRANSITION",
+  "risk": 3,
+  "why": "ExxonMobil: 'Our principal business involves exploration for, and production of, crude oil and natural gas; manufacture, trade, transport and sale of crude oil, natural gas, petroleum products, petrochemicals, and a wide variety of specialty products'; 'The oil, gas, and petrochemical businesses are fundamentally commodity businesses. This means ExxonMobil’s operations and earnings may be significantly affected by changes in oil, gas, and petrochemical prices and by changes in margins on refined products'; 'The energy and petrochemical industries are highly competitive'; among its risk factors, 'increased competitiveness of, or government policy support for, alternative energy sources' and 'Driven by concern over the risks of climate change, a number of countries have adopted, or are considering the adoption of, regulatory frameworks to report on or reduce greenhouse gas emissions, including emissions from the production and use of oil and gas and their products', which 'could negatively affect our investment returns, make our hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon alternatives' (its own FY2024 10-K): earnings that move with the commodity cycle, by the company's own account; re-filed under the energy transition: the theme registry dates its market pricing to ExxonMobil's removal from the Dow Jones Industrial Average (S&P Dow Jones Indices, announced 2020-08-24: 'Salesforce.com (NYSE:CRM) will replace Exxon Mobil Corp. (NYSE:XOM)', effective 2020-08-31; the announcement gives as its reason 'prompted by DJIA constituent Apple Inc.'s (NASD:AAPL) decision to split its stock 4:1'), while ExxonMobil's own FY2024 10-K says 'reduce demand for hydrocarbons'",
+  "theme_watch": [],
+  "evidence": [
+   "XO90",
+   "XO112"
+  ]
+ },
+ "classification": {
+  "quality_class": "TRANSITION-EXPOSED, NEUTRALLY VALUED",
+  "quality_label": "◐ TRANSITION-EXPOSED, NEUTRALLY VALUED",
+  "quality_color": "#60a5fa",
+  "quality_tone": "blue",
+  "business_kind": "DISRUPTION_EXPOSED",
+  "obsolescence_risk": 3,
+  "price_state": "FAIR",
+  "quality_note": "ExxonMobil: 'Our principal business involves exploration for, and production of, crude oil and natural gas; manufacture, trade, transport and sale of crude oil, natural gas, petroleum products, petrochemicals, and a wide variety of specialty products'; 'The oil, gas, and petrochemical businesses are fundamentally commodity businesses. This means ExxonMobil’s operations and earnings may be significantly affected by changes in oil, gas, and petrochemical prices and by changes in margins on refined products'; 'The energy and petrochemical industries are highly competitive'; among its risk factors, 'increased competitiveness of, or government policy support for, alternative energy sources' and 'Driven by concern over the risks of climate change, a number of countries have adopted, or are considering the adoption of, regulatory frameworks to report on or reduce greenhouse gas emissions, including emissions from the production and use of oil and gas and their products', which 'could negatively affect our investment returns, make our hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon alternatives' (its own FY2024 10-K): earnings that move with the commodity cycle, by the company's own account; re-filed under the energy transition: the theme registry dates its market pricing to ExxonMobil's removal from the Dow Jones Industrial Average (S&P Dow Jones Indices, announced 2020-08-24: 'Salesforce.com (NYSE:CRM) will replace Exxon Mobil Corp. (NYSE:XOM)', effective 2020-08-31; the announcement gives as its reason 'prompted by DJIA constituent Apple Inc.'s (NASD:AAPL) decision to split its stock 4:1'), while ExxonMobil's own FY2024 10-K says 'reduce demand for hydrocarbons'. TRANSITION-exposed franchise (obsolescence risk 3/5); price fair; Ratio B 1.96x; +13% to EPP floor; model-vs-market gap +0.73; conservative 2yr +10%.",
+  "theme": "ENERGY_TRANSITION"
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 1.96,
+  "ratio_b_fmt": "1.96x",
+  "epp": 101.27,
+  "epp_gap_pct": 12.9,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.9,
+  "sca": 0.038,
+  "adj_composite": 2.938,
+  "market_composite": 2.21,
+  "adj_gap": 0.73,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 9.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.66,
+    "pe": 7.8,
+    "price": 13,
+    "desc": "EPS -53.9%/yr (worst year FY15-FY24 ex-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 6.96,
+    "pe": 15.1,
+    "price": 105,
+    "desc": "EPS +-5.5%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr ex-FY20 median"
+   },
+   "BULL": {
+    "eps": 9.11,
+    "pe": 18.2,
+    "price": 166,
+    "desc": "EPS +8.1%/yr (FY15-FY24 ex-FY20 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 20.22,
+    "pe": 42.5,
+    "price": 859,
+    "desc": "EPS +61.1%/yr (best 2-yr run FY15-FY24 ex-FY20); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.96,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 1.2,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 9.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 4.41,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 0.16,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.79,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.17,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 0.7,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.96,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 1.03,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.96,
+   "epp_gap_pct": -8.2,
+   "adj_gap": 0.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.96,
+   "epp_gap_pct": 12.9,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 9.6,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "XOM (retrospective, 2025-10-31) ✕ AVOID — Ratio B 1.96x (88.6% downside to Bear $13 / +45.2% upside to Bull $166) | Adj composite 2.94 vs market 2.21: gap +0.73 [UNDERVALUED] | +13% above the EPP floor $101 (13x FY25E $7.79) | Conservative 2-yr case: +9.6% total (+4.8%/yr) | At 14.7x FY25E the 15% hurdle price $151 sits between the BASE and BULL cases; oil-equivalent production +4.1% in Q3 2025, forward revenues -5.2% (no Q4 2025 revenue guide, Q3 2025 revenue as reported); the energy transition is live and re-filed: the theme registry dates its market pricing to ExxonMobil's removal from the Dow Jones Industrial Average (effective 2020-08-31).",
+ "sources": [
+  {
+   "id": "XO112",
+   "published": "2025-02-20",
+   "filed": "2025-02-19 16:39 ET (after the close)",
+   "title": "Exxon Mobil FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408825000010/xom-20241231.htm",
+   "supports": "income statements 2022-2024 (earnings per common share assuming dilution $13.26, $8.89, $7.84; total revenues and other income $413,680M, $344,582M, $349,585M; income before income taxes $48,873M and income taxes $13,810M in 2024; weighted average shares 4,298M); cash flows; segment sales; operating summary (oil-equivalent production 4,333 and 3,738 koebd); the dividend declared on January 31, 2025; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO111",
+   "published": "2025-01-31",
+   "filed": "2025-01-31 06:31 ET (before the open)",
+   "title": "Exxon Mobil Q4 2024 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408825000006/f8k4q24991.htm",
+   "supports": "Q4 2024 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q4 2024 oil-equivalent production, Energy Products sales and Chemical Products sales; year-ago volumes from XO106; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items; full-year income taxes"
+  },
+  {
+   "id": "XO107",
+   "published": "2024-02-29",
+   "filed": "2024-02-28 16:37 ET (after the close)",
+   "title": "Exxon Mobil FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408824000018/xom-20231231.htm",
+   "supports": "income statements 2021-2023 (earnings per common share assuming dilution $5.39, $13.26, $8.89; total revenues and other income $285,640M, $413,680M, $344,582M; income before income taxes $52,783M and income taxes $15,429M in 2023; weighted average shares 4,052M); cash flows; segment sales; operating summary (oil-equivalent production 3,738 and 3,737 koebd); the dividend declared on February 1, 2024; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO106",
+   "published": "2024-02-02",
+   "filed": "2024-02-02 06:31 ET (before the open)",
+   "title": "Exxon Mobil Q4 2023 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408824000007/f8k4q23991.htm",
+   "supports": "Q4 2023 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q4 2023 oil-equivalent production, Energy Products sales and Chemical Products sales; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items; full-year income taxes"
+  },
+  {
+   "id": "XO102",
+   "published": "2023-02-23",
+   "filed": "2023-02-22 16:37 ET (after the close)",
+   "title": "Exxon Mobil FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408823000020/xom-20221231.htm",
+   "supports": "income statements 2020-2022 (earnings per common share assuming dilution $(5.25), $5.39, $13.26; total revenues and other income $181,502M, $285,640M, $413,680M; income before income taxes $77,753M and income taxes $20,176M in 2022; weighted average shares 4,205M); cash flows; segment sales; operating summary (oil-equivalent production 3,737 and 3,712 koebd); the dividend declared on January 30, 2023; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO101",
+   "published": "2023-01-31",
+   "filed": "2023-01-31 06:32 ET (before the open)",
+   "title": "Exxon Mobil Q4 2022 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408823000011/f8k4q22991.htm",
+   "supports": "Q4 2022 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, Energy Products sales, Chemical Products sales, average shares assuming dilution, dividends, share purchases; earnings per share excluding identified items; full-year income taxes"
+  },
+  {
+   "id": "XO97",
+   "published": "2022-02-24",
+   "filed": "2022-02-23 16:11 ET (after the close)",
+   "title": "Exxon Mobil FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408822000011/xom-20211231.htm",
+   "supports": "income statements 2019-2021 (earnings per common share assuming dilution $3.36, $(5.25), $5.39; total revenues and other income $264,938M, $181,502M, $285,640M; income before income taxes $31,234M and income taxes $7,636M in 2021; weighted average shares 4,275M); cash flows; segment sales; operating summary (oil-equivalent production 3,712 and 3,761 koebd); the dividend declared on January 26, 2022; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO96",
+   "published": "2022-02-01",
+   "filed": "2022-02-01 07:25 ET (before the open)",
+   "title": "Exxon Mobil Q4 2021 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408822000005/f8k4q21991.htm",
+   "supports": "Q4 2021 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases; earnings per share excluding identified items; full-year income taxes"
+  },
+  {
+   "id": "XO92",
+   "published": "2021-02-25",
+   "filed": "2021-02-24 17:01 ET (after the close)",
+   "title": "Exxon Mobil FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408821000012/xom-20201231.htm",
+   "supports": "income statements 2018-2020 (earnings per common share assuming dilution $4.88, $3.36, $(5.25); total revenues and other income $290,212M, $264,938M, $181,502M; income before income taxes $(28,883)M and income taxes $(5,632)M in 2020; weighted average shares 4,271M); cash flows; segment sales; operating summary (oil-equivalent production 3,761 and 3,952 koebd); the dividend declared on January 27, 2021; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO91",
+   "published": "2021-02-02",
+   "filed": "2021-02-02 07:27 ET (before the open)",
+   "title": "Exxon Mobil Q4 2020 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408821000004/f8k4q991.htm",
+   "supports": "Q4 2020 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases; earnings per share excluding identified items; full-year income taxes"
+  },
+  {
+   "id": "XO86",
+   "published": "2020-02-27",
+   "filed": "2020-02-26 16:15 ET (after the close)",
+   "title": "Exxon Mobil FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408820000016/xom10k2019.htm",
+   "supports": "five-year selected data 2015-2019 (earnings per common share assuming dilution $3.85, $1.88, $4.63, $4.88, $3.36); income statements 2017-2019 (total revenues and other income $244,363M, $290,212M, $264,938M; income before income taxes $20,056M and income taxes $5,282M in 2019; weighted average shares 4,270M); cash flows; segment sales; operating summary (oil-equivalent production 3,952 and 3,833 koebd); the dividend declared on January 29, 2020; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO81",
+   "published": "2019-02-28",
+   "filed": "2019-02-27 16:19 ET (after the close)",
+   "title": "Exxon Mobil FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408819000010/xom10k2018.htm",
+   "supports": "five-year selected data 2014-2018 (earnings per common share assuming dilution $7.60, $3.85, $1.88, $4.63, $4.88); income statements 2016-2018 (total revenues and other income $208,114M, $244,363M, $290,212M; income before income taxes $30,953M and income taxes $9,532M in 2018; weighted average shares 4,270M); cash flows; segment sales; operating summary (oil-equivalent production 3,833 and 3,985 koebd); the dividend declared on January 30, 2019; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO76",
+   "published": "2018-03-01",
+   "filed": "2018-02-28 16:39 ET (after the close)",
+   "title": "Exxon Mobil FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408818000015/xom10k2017.htm",
+   "supports": "five-year selected data 2013-2017 (earnings per common share assuming dilution $7.37, $7.60, $3.85, $1.88, $4.63); income statements 2015-2017 (total revenues and other income $249,248M, $208,114M, $244,363M; income before income taxes $18,674M and income taxes $(1,174)M in 2017; weighted average shares 4,256M); cash flows; segment sales; operating summary (oil-equivalent production 3,985 and 4,053 koebd); the dividend declared on January 31, 2018; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO113",
+   "published": "2025-05-02",
+   "filed": "2025-05-02 06:31 ET (before the open)",
+   "title": "Exxon Mobil Q1 2025 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408825000022/livef8k1q25991.htm",
+   "supports": "Q1 2025 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q1 2025 oil-equivalent production, Energy Products sales and Chemical Products sales; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items"
+  },
+  {
+   "id": "XO114",
+   "published": "2025-08-01",
+   "filed": "2025-08-01 06:32 ET (before the open)",
+   "title": "Exxon Mobil Q2 2025 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408825000040/livef8k2q25991.htm",
+   "supports": "Q2 2025 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q2 2025 oil-equivalent production, Energy Products sales and Chemical Products sales; year-ago volumes from XO109; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items"
+  },
+  {
+   "id": "XO109",
+   "published": "2024-08-02",
+   "filed": "2024-08-02 06:31 ET (before the open)",
+   "title": "Exxon Mobil Q2 2024 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408824000048/f8k2q24991.htm",
+   "supports": "Q2 2024 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q2 2024 oil-equivalent production, Energy Products sales and Chemical Products sales; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items"
+  },
+  {
+   "id": "XO115",
+   "published": "2025-10-31",
+   "filed": "2025-10-31 06:31 ET (before the open)",
+   "title": "Exxon Mobil Q3 2025 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408825000059/livef8k3q25991.htm",
+   "supports": "Q3 2025 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q3 2025 oil-equivalent production, Energy Products sales and Chemical Products sales; year-ago volumes from XO110; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items"
+  },
+  {
+   "id": "XO110",
+   "published": "2024-11-01",
+   "filed": "2024-11-01 06:32 ET (before the open)",
+   "title": "Exxon Mobil Q3 2024 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408824000066/f8k3q24991.htm",
+   "supports": "Q3 2024 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, average shares assuming dilution, dividends; Q3 2024 oil-equivalent production, Energy Products sales and Chemical Products sales; cash and cash equivalents; shareholder distributions; earnings per share excluding identified items"
+  },
+  {
+   "id": "XO20",
+   "published": "2001-08-13",
+   "filed": "2001-08-13 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil Q2 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408801500015/sec10qs.txt",
+   "supports": "the two-for-one stock split approved on May 30, 2001 for shareholders of record on June 20, 2001"
+  },
+  {
+   "id": "XO90",
+   "published": "2020-08-25",
+   "filed": "2020-08-24 (PR Newswire, New York; issued after the close, so dated the next trading day)",
+   "title": "S&P Dow Jones Indices: Salesforce.com, Amgen and Honeywell International Set to Join Dow Jones Industrial Average",
+   "url": "https://press.spglobal.com/2020-08-24-Salesforce-com-Amgen-and-Honeywell-International-Set-to-Join-Dow-Jones-Industrial-Average",
+   "supports": "ExxonMobil's removal from the Dow Jones Industrial Average, effective prior to the opening on August 31, 2020, and the reason the announcement gives"
+  },
+  {
+   "id": "A0",
+   "published": "2025-10-31",
+   "title": "Yahoo Finance daily prices, XOM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/XOM/history",
+   "supports": "close $114.36 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY20 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-05"
+}
