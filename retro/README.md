@@ -6583,6 +6583,7 @@ beside the others, with the same `index.json` and their own `SERIES.md`.
 ```bash
 python3 retro/build_xom.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
 python3 retro/build_xom.py --weekly 2009-01-05 2012-12-31                   # 209 dates, 2009-01-09 .. 2012-12-31
+python3 retro/build_xom.py --weekly 2013-01-07 2017-12-31                   # 260 dates, 2013-01-11 .. 2017-12-29
 for d in staging/retrospective/XOM/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -6592,6 +6593,10 @@ python3 retro/tools/firewall.py 2008-07-01 XOM
 python3 retro/tools/firewall.py 2009-01-01 XOM
 python3 retro/tools/firewall.py 2011-01-01 XOM
 python3 retro/tools/firewall.py 2013-01-01 XOM
+python3 retro/tools/firewall.py 2015-01-01 XOM
+python3 retro/tools/firewall.py 2016-01-01 XOM
+python3 retro/tools/firewall.py 2017-07-01 XOM
+python3 retro/tools/firewall.py 2018-01-01 XOM
 ```
 
 The 10-Ks from FY1999 to FY2007 were read for the history and the decade's signal values (the FY1999-FY2001 10-Ks are plain-text
@@ -6817,6 +6822,119 @@ Judgement calls that could carry hindsight (in addition to the 2008 list, which 
 - the Q2 2012 gains left in, as no figure excluding them was published;
 - the climate-change risk factor left in the "why" rather than putting ENERGY_TRANSITION on the watch list before its registry date (text only).
 
+### XOM 2013-2017: special items leave the releases, the oil-price fall at GAAP, ENERGY_TRANSITION on the watch list
+
+Every 8-K, 10-Q and 10-K of February 2013 to January 2018 was listed (77 filings: 56 8-Ks, one 8-K/A, 15 10-Qs and five 10-Ks). The
+earnings releases with their Investor Relations Data Summaries, the five 10-Ks and the five analyst-meeting transcripts and slide decks
+were read for the facts; every other 8-K and the 10-Qs were checked for a guided number or a dividend (none earlier than the releases).
+The prints were extracted by script from each release and checked twice: 450 strings with `verbatim.py` against their own filings (every
+quoted sentence is taken from the converted filing by an exact search), and every volume against the release's own Investor Relations
+Data Summary. Decided on 2026-11-05, before any 2013-2017 date was built or scored:
+
+- **Five 10-K vintages, each with a Q4 print before it.** FY2012 (accepted 2013-02-27 16:05 ET, dated 2013-02-28), FY2013 (2014-02-26
+  16:07 ET, dated 2014-02-27), FY2014 (2015-02-25 16:26 ET, dated 2015-02-26), FY2015 (2016-02-24 16:09 ET, dated 2016-02-25) and FY2016
+  (2017-02-22 16:47 ET, dated 2017-02-23). Each year comes from the latest filing that reports it: the FY2013 10-K restates 2012's total
+  revenues and other income to $480,681M ($482,295M first reported), which the vintages carry from 2014-02-27, and each release shows its
+  year-ago quarter as restated (the MSFT recast rule). The first year's diluted shares come from the last 10-K that reports them: 2003
+  6,662M (FY2005 10-K), 2004 6,519M (FY2006), 2005 6,322M (FY2007), 2006 5,970M (FY2008) and 2007 5,594M (FY2009, restated). From the
+  FY2014 10-K the company states one weighted share count, "the same" for basic and diluted.
+- **Release timing.** Every earnings 8-K of the period was accepted before the open (08:00-09:29 ET) except the Q3 2013 and Q2 2014
+  releases (09:48 and 09:36 ET, during the session). The Thursday prints date their weeks the Friday; the Friday prints (Q4 2012, Q3 2014,
+  Q2-Q3 2015, Q1-Q3 2016, Q1-Q3 2017) meet their own day's close (the 2008 rule); the Monday Q4 2014 print and the Tuesday Q4 2015 and
+  Q4 2016 prints date their weeks the next day (2015-02-03, 2016-02-03, 2017-02-01).
+- **Special items leave the releases.** The Q4 2012 release is the last with a special-items table (none in 2012); from Q1 2013 the
+  releases report none, so 2010 and every later year are GAAP, while 2003-2006, 2008 and 2009 keep the company's figures excluding special
+  items. Three one-offs have no per-share figure excluding them and stay in (the ACN Russia rule): 2012's "$9.9 billion of divestment and
+  restructuring gains, mainly Japan of $6.5 billion", whose effect the Q2 2013 release gives only as a percentage ("earnings per share
+  were down 14%"); Q4 2014's "approximately $1 billion of non-cash effects" (U.S. deferred income tax items and a Venezuela arbitration
+  ruling); and FY2016's $2 billion impairment, whose exclusion the Q4 2016 release gives in dollars only ("full year earnings were $9.9
+  billion"), so FY2016 is GAAP $1.88 (the 1997 rule: nothing is derived). **No year is excluded:** the impairment is under 2016's $7,840M
+  of earnings, so reported EPS is not under half the year's EPS without it (the AAPL FY2002 test), and no benefit approaches half a year's
+  income (its AVGO mirror). FY2016's income taxes are a $406M benefit, so its effective rate is -5.1%, as published (the EPS check prints
+  `(1−-5.1%)`, a display quirk).
+- **Still no earnings, revenue or margin guide in numbers**, so the 2008 rules apply on every date: the last full year's EPS stands, BASE
+  takes the latest quarter's revenue growth, and the margin signal the latest quarter's change. Each analyst meeting states the current
+  year's production in numbers: "Total production will decline about 1% this year in 2013 versus last year." (8-K of 2013-03-12), "We
+  anticipate total volumes to be flat in 2014 and grow about 2% to 3% per year from 2015 to 2017." (2014-03-11), "We anticipate total
+  volumes to be 4.1 million oil-equivalent barrels per day in 2015 and grow an average of 3% per year in 2016 and 2017." (2015-03-10, at a
+  $55 Brent), "we anticipate a range of 4.0 to 4.2 million oil-equivalent barrels per day of production through 2020" (2016-03-08) and
+  "We anticipate a range of 4 to 4.4 million oil-equivalent barrels per day of production through the end of the decade." (2017-03-07),
+  each 8-K accepted during the session. The last two are ranges that cover the current year (as 2011's two-year growth range did). Each is
+  shown in the guide line and catalyst (3) for its year and feeds nothing (the UNP volume-guide rule). Two release sentences are shown as
+  the release's words and feed nothing: Q3 2014's production "remains on track with previous full-year estimates of 4 million
+  oil-equivalent barrels per day" and Q4 2015's 2016 capital and exploration expenditures of $23.2 billion (method r2 has no capex input).
+  From the Q4 2015 release the company buys shares only to offset dilution; the capital-return line quotes its words.
+- **Dividends,** each from the first filing that states the rate: $0.57 (FY2012 10-K), $0.63 from the Q2 2013 release, $0.69 from Q2
+  2014, $0.73 from Q2 2015, $0.75 from Q2 2016 and $0.77 from Q2 2017, with each January declaration in its 10-K. No 10-Q states a raise
+  before its Q2 release.
+- **ENERGY_TRANSITION on the watch list from 2015-12-18.** The theme is live from 2015-12-12 and its scope (decarbonisation strands oil,
+  gas and coal reserves and refining) covers ExxonMobil. Every 10-K of the period keeps the risk factor "Climate change and greenhouse gas
+  restrictions" ("These requirements could make our products more expensive, lengthen project implementation times, and reduce demand for
+  hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon sources such as natural gas."). The encoding (the MSFT
+  CLOUD rule): from the first weekly date on or after the live date, XOM carries ENERGY_TRANSITION on the watch list, company-acknowledged,
+  with no market read, in the latest 10-K's words: the FY2014 10-K's (published 2015-02-26, before the live date, as Microsoft's FY2012
+  10-K preceded CLOUD's), then the FY2015 10-K's from 2016-02-25 and the FY2016 10-K's from 2017-02-23. The factor pair (the company's own
+  research under "Government sponsorship of alternative energy", +0.2; the climate risk factor, -0.2) nets to zero and the theme signal
+  stays at 2/4, so only text changes, and CYCLICAL stands. The theme's market-pricing date (2020-08-31) lies after 2017, and no filing of
+  the period shows the market pricing decarbonisation of ExxonMobil's reserves: the shareholders' 2017 vote on a "Report on Impacts of
+  Climate Change Policies" (8-K of 2017-06-06) and the board's decision to enhance its climate disclosures (8-K of 2017-12-11) are
+  governance, not a market read, and add nothing. From the FY2012 vintage the durability "why" ends with a clause that follows the
+  theme's status on the as-of date (`why_theme_tail`): "no disruption theme is live ..." to 2015-12-11, then that ENERGY_TRANSITION is
+  on the watch list; the 2008-2012 vintages keep their text, so those dates rebuild byte-identical. The FY2015 and FY2016 10-Ks add "or
+  electric vehicles" to the fuel-choice factors; EV is not live until 2020 and the "why" does not quote that clause.
+- **Adds nothing:** the reserves releases (2013-02-19, 2014-02-21, 2015-02-24, 2016-02-19, 2017-02-23), the Financial and Operating
+  Reviews (2013-03-26, 2014-03-24, 2015-03-23), the debt offerings (2014-03-20, 2015-03-06, 2016-03-03), the Q3 2016 release's warning
+  that Kearl's oil sands may not qualify as proved reserves at year-end (no guided number), the Bass family Permian acquisition for $5.6
+  billion of shares (8-K of 2017-01-17; Q1 2017's diluted shares, 4,223M, include them as published), the Tillerson agreement
+  (2017-01-04), the mini-tender notice (2017-03-27), the officer, director, bylaw and annual-meeting 8-Ks, the 10-Qs beyond their
+  dividends, and the new presentation of sales-based taxes (8-K of 2018-01-19, after the range).
+
+Controls: altering one value of each new print (with each Q4 print's full-year actuals and the two release sentences), vintage, dividend,
+production outlook and ENERGY_TRANSITION event changes no date before it is visible and changes the first weekly date on or after it
+(45 of 45; an event is visible from the theme's live date). The 262 dates of 2008-2012 rebuild byte-identical. A scan of all 522 XOM
+models for the figures, notes and quotes of every print, vintage, dividend, outlook and event finds none before it is visible (0 of
+124,436). The firewall at 2013-07-01, 2015-01-01, 2016-01-01, 2017-07-01 and 2018-01-01 (planted facts, an ENERGY_TRANSITION event
+from 2016, and prices ×10 after each cutoff) changes none of the 287 to 522 earlier models.
+
+Seen in the build (method behaviour, not tuned):
+- **2013: FAIR on 36 dates, RICH on 10, CHEAP on 5.** From the Q4 2012 print FY12's $9.70, with the Japan gains in it, is the anchor
+  (8.9-10.5x, the 9th-55th percentile; FY11's $8.42 on the three dates before it); BASE is the latest quarter's revenue growth (-12.3% to +1.7%/yr), BEAR the 2009 fall (-52.5%/yr, $18-20), BULL the
+  decade CAGR (16-20%), so the price sits between BASE and BULL and Ratio B is 0.9-1.8: ACCUMULATE on 22 dates, WATCHLIST on 28 and AVOID
+  on one.
+- **RICH and AVOID on all 205 dates from the Q4 2013 print (2014-01-31) to 2017-12-29.** FY13's $7.37 (the gains leave the anchor) at
+  11.8-14.1x is the 65th-90th percentile with BASE at +0.1% to +9.1%/yr (Ratio B 3.9 to infinite) in 2014; the oil-price fall then takes
+  revenue down 21-37% from the Q4 2014 print, so BASE is -17% to -33%/yr through 2015 while FY14's $7.60 anchors the multiple (9.5-12.3x).
+  From the Q4 2015 print FY15's $3.85 is the anchor (20-25x, the 89th-100th percentile) and from the Q4 2016 print FY16's $1.88 (41-45x):
+  the price lies above the BULL case on every date from 2016-02-03 (Ratio B infinite). BEAR stays the 2009 fall throughout (the decade's
+  worst year: 2015's -49.3% and 2016's -51.2% come close), at $15-20 to 2015 and $4-8 after.
+- **The window absorbs the trough multiples.** As the 2015-2017 days at 20-45x join the P/E window, its 75th and 90th percentiles rise from
+  12x and 14-16x to 21x and 44x and the median from 10.7x to 12.4x; the median of the calendar-year lows (the EPP floor) moves from 9x to 11x
+  with the Q4 2016 print. BULL's decade CAGR falls from +19.5%/yr to -5.7%/yr and is held at BASE's rate whenever it is lower.
+- **Totals over the 260 dates:** CHEAP 5, FAIR 40, RICH 215; ACCUMULATE 22, WATCHLIST 32, AVOID 206; robustness 8 of 8 on 151 dates and
+  3-5 of 8 on 53 (mostly 2013, where the price sits near the BASE case).
+- **The proxy composite** ranges from 1.55 to 2.80 and the market composite from 2.15 to 3.52.
+
+How far each call moves the classes (the 260 dates rebuilt with one encoding changed; no outcome consulted):
+- GAAP EPS in every year instead of the company's figures excluding special items would change 14 classes (11 in 2013, 3 in January 2014:
+  FAIR or CHEAP to RICH) and 22 tiers;
+- BASE on the latest quarter's oil-equivalent production growth instead of revenue growth would change 11 classes (6 in 2013, 5 in 2015:
+  RICH to FAIR) and 5 tiers; unlike 2010-2011, the revenue fallback seldom decides the class, because from 2014 the price sits near or
+  above the BULL case whatever BASE is;
+- both together: 20 classes and 27 tiers;
+- as tests only (each figure derived, which the method forbids as an input): 2012 without its $9.9 billion of gains ($7.56: $44,880M less $9,900M over 4,628M shares) and FY2016
+  without its impairment ($2.37: the release's $9.9 billion over 4,177M shares) would change 45 classes (41 in 2013 and 4 in January 2014: every FAIR and CHEAP date becomes RICH) and 0
+  classes respectively;
+- without the ENERGY_TRANSITION events: 0 classes and 0 tiers (text only, as designed).
+
+Judgement calls that could carry hindsight (in addition to the 2008 and 2009-2012 lists, which stand):
+- the one-offs left in because no per-share figure excluding them was published: 2012's gains (they lift the 2013 anchor by about a
+  fifth, and every FAIR or CHEAP date of 2013 rests on them), Q4 2014's non-cash effects and FY2016's impairment;
+- ENERGY_TRANSITION kept on the watch list (company-acknowledged, no market read) from its live date rather than read as priced: the
+  builder knows the theme's later course, and re-filing would need dated evidence of the market pricing it for ExxonMobil (text only
+  either way: the class label, not the price state, would change);
+- the 2016 and 2017 multi-year production ranges read as the current year's outlook, and the two release sentences shown in words
+  (display only either way).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -6943,7 +7061,11 @@ What the gates enforce:
   The list stays empty through 2012: from the FY2009 10-K (2010-03-01) a risk factor headed "Climate change and greenhouse gas
   restrictions" says such rules could "reduce demand for hydrocarbons", but ENERGY_TRANSITION is not live until 2015-12-12, so those words
   join the "why" too; XOM's FY2009 10-K is an earlier verified filing of the risk than the registry's basis, and whether to move the date is
-  left to the owner ("XOM 2009-2012").
+  left to the owner ("XOM 2009-2012"). From 2015-12-18, the first weekly date on or after ENERGY_TRANSITION's live date, XOM carries
+  it on the watch list, company-acknowledged, with no market read, in the latest 10-K's own words (the MSFT CLOUD rule): the FY2014
+  10-K's climate-change risk factor, then the FY2015 and FY2016 10-Ks', which repeat it. The theme's market-pricing date (2020-08-31)
+  lies after 2017 and no dated evidence shows the market pricing decarbonisation of ExxonMobil's reserves, so CYCLICAL stands
+  ("XOM 2013-2017").
 
 ## Workflow
 

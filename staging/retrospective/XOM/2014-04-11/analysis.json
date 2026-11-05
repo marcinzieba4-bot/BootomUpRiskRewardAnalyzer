@@ -1,0 +1,296 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "XOM",
+ "company": "Exxon Mobil Corporation",
+ "as_of": "2014-04-11",
+ "price_date": "2014-04-11",
+ "price": 96.72,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); integrated oil and gas signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "ExxonMobil: 'Their principal business is energy, involving exploration for, and production of, crude oil and natural gas, manufacture of petroleum products and transportation and sale of crude oil, natural gas and petroleum products'; 'The oil, gas, and petrochemical businesses are fundamentally commodity businesses. This means ExxonMobil’s operations and earnings may be significantly affected by changes in oil, gas and petrochemical prices and by changes in margins on refined products'; 'The energy and petrochemical industries are highly competitive'; among its risk factors, 'increased competitiveness of alternative energy sources that have so far generally not been competitive with oil and gas without the benefit of government subsidies or mandates' and 'Due to concern over the risk of climate change, a number of countries have adopted, or are considering the adoption of, regulatory frameworks to reduce greenhouse gas emissions', which 'could make our products more expensive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon sources such as natural gas' (its own FY2013 10-K): earnings that move with the commodity cycle, by the company's own account; no disruption theme is live for an oil and gas producer, so the alternative-energy and climate-change wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "ExxonMobil: 'Their principal business is energy, involving exploration for, and production of, crude oil and natural gas, manufacture of petroleum products and transportation and sale of crude oil, natural gas and petroleum products'; 'The oil, gas, and petrochemical businesses are fundamentally commodity businesses. This means ExxonMobil’s operations and earnings may be significantly affected by changes in oil, gas and petrochemical prices and by changes in margins on refined products'; 'The energy and petrochemical industries are highly competitive'; among its risk factors, 'increased competitiveness of alternative energy sources that have so far generally not been competitive with oil and gas without the benefit of government subsidies or mandates' and 'Due to concern over the risk of climate change, a number of countries have adopted, or are considering the adoption of, regulatory frameworks to reduce greenhouse gas emissions', which 'could make our products more expensive, lengthen project implementation times, and reduce demand for hydrocarbons, as well as shift hydrocarbon demand toward relatively lower-carbon sources such as natural gas' (its own FY2013 10-K): earnings that move with the commodity cycle, by the company's own account; no disruption theme is live for an oil and gas producer, so the alternative-energy and climate-change wording stays here. cyclical (obsolescence risk 2/5); price rich; Ratio B 15.48x; +46% to EPP floor; model-vs-market gap -1.13; conservative 2yr -18%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 15.48,
+  "ratio_b_fmt": "15.48x",
+  "epp": 66.33,
+  "epp_gap_pct": 45.8,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.15,
+  "sca": -0.1,
+  "adj_composite": 1.95,
+  "market_composite": 3.08,
+  "adj_gap": -1.13,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -18.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.66,
+    "pe": 9.0,
+    "price": 15,
+    "desc": "EPS -52.5%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 7.54,
+    "pe": 10.7,
+    "price": 81,
+    "desc": "EPS +1.1%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 8.46,
+    "pe": 12.1,
+    "price": 102,
+    "desc": "EPS +7.1%/yr (FY04-FY13 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.48,
+    "pe": 13.8,
+    "price": 214,
+    "desc": "EPS +44.9%/yr (best 2-yr run FY04-FY13); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 15.48,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -1.13,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 3.98,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -0.73,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -1.32,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 9.87,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -1.09,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 36.28,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -1.18,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 15.48,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -0.83,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 15.48,
+   "epp_gap_pct": 9.4,
+   "adj_gap": -1.03,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 15.48,
+   "epp_gap_pct": 45.8,
+   "adj_gap": -0.98,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.4,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "XOM (retrospective, 2014-04-11) ✕ AVOID — Ratio B 15.48x (84.5% downside to Bear $15 / +5.5% upside to Bull $102) | Adj composite 1.95 vs market 3.08: gap -1.13 [OVERVALUED] | +46% above the EPP floor $66 (9x FY14E $7.37) | Conservative 2-yr case: -18.4% total (-9.2%/yr) | At 13.1x FY14E the 15% hurdle price $128 sits above the BULL case; oil-equivalent production -1.8% in Q4 2013, forward revenues -3.3% (no Q1 2014 revenue guide, Q4 2013 revenue as reported); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "XO52",
+   "published": "2014-02-27",
+   "filed": "2014-02-26 16:07 ET (after the close)",
+   "title": "Exxon Mobil FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408814000012/xom10k2013.htm",
+   "supports": "five-year selected data 2009-2013 (earnings per common share assuming dilution $3.98, $6.22, $8.42, $9.70, $7.37); income statements 2011-2013 (total revenues and other income $486,429M, $480,681M, $438,255M; income before income taxes $57,711M and income taxes $24,263M in 2013; diluted shares 4,419M); cash flows; segment sales; operating summary (oil-equivalent production 4,175 and 4,239 koebd); the dividend declared on January 29, 2014; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO46",
+   "published": "2013-02-28",
+   "filed": "2013-02-27 16:05 ET (after the close)",
+   "title": "Exxon Mobil FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408813000011/xom10k2012.htm",
+   "supports": "five-year selected data 2008-2012 (earnings per common share assuming dilution $8.66, $3.98, $6.22, $8.42, $9.70); income statements 2010-2012 (total revenues and other income $383,221M, $486,429M, $482,295M; income before income taxes $78,726M and income taxes $31,045M in 2012; diluted shares 4,628M); cash flows; segment sales; operating summary (oil-equivalent production 4,239 and 4,506 koebd); the dividend declared on January 30, 2013; Item 1 and the risk factors"
+  },
+  {
+   "id": "XO40",
+   "published": "2012-02-27",
+   "filed": "2012-02-24 16:08 ET (after the close)",
+   "title": "Exxon Mobil FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312512078102/d257530d10k.htm",
+   "supports": "five-year selected data 2007-2011 (earnings per common share assuming dilution $7.26, $8.66, $3.98, $6.22, $8.42); income statements 2009-2011 (total revenues and other income $310,586M, $383,221M, $486,429M; income before income taxes $73,257M and income taxes $31,051M in 2011); 2011 weighted average shares assuming dilution 4,875M; operating summary 2007-2011; cash flows (operating cash flow $55,345M, additions to property, plant and equipment $30,975M, common stock acquired $22,055M, dividends $9,020M); segment sales and other operating revenue 2010-2011; dividend of $0.47 declared on January 25, 2012; Item 1 and Item 1A"
+  },
+  {
+   "id": "XO33",
+   "published": "2011-01-31",
+   "filed": "2011-01-31 08:58 ET (before the open)",
+   "title": "Exxon Mobil Q4 2010 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408811000006/f8k4q991.htm",
+   "supports": "Q4 2010 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases, and the full year's"
+  },
+  {
+   "id": "XO34",
+   "published": "2011-02-28",
+   "filed": "2011-02-25 16:07 ET (after the close)",
+   "title": "Exxon Mobil FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312511047394/d10k.htm",
+   "supports": "five-year selected data 2006-2010 (earnings per common share assuming dilution $6.60, $7.26, $8.66, $3.98, $6.22); income statements 2008-2010 (total revenues and other income $477,359M, $310,586M, $383,221M; income before income taxes $52,959M and income taxes $21,561M in 2010); 2010 weighted average shares assuming dilution 4,897M; operating summary 2006-2010; cash flows (operating cash flow $48,413M, additions to property, plant and equipment $26,871M, common stock acquired $13,093M, dividends $8,498M); segment sales and other operating revenue 2009-2010; dividend of $0.44 declared on January 26, 2011; Item 1 and Item 1A"
+  },
+  {
+   "id": "XO27",
+   "published": "2010-02-01",
+   "filed": "2010-02-01 09:11 ET (before the open)",
+   "title": "Exxon Mobil Q4 2009 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408810000008/f8k4q991.htm",
+   "supports": "Q4 2009 and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases, and the full year's"
+  },
+  {
+   "id": "XO28",
+   "published": "2010-03-01",
+   "filed": "2010-02-26 16:17 ET (after the close)",
+   "title": "Exxon Mobil FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312510042929/d10k.htm",
+   "supports": "five-year selected data 2005-2009, restated for the participating-securities EPS rule (earnings per common share assuming dilution $5.70, $6.60, $7.26, $8.66, $3.98); income statements 2007-2009 restated for noncontrolling interests (total revenues and other income $404,552M, $477,359M, $310,586M; income before income taxes $34,777M and income taxes $15,119M in 2009); 2009 weighted average shares assuming dilution 4,848M; operating summary 2005-2009; cash flows (operating cash flow $28,438M, additions to property, plant and equipment $22,491M, common stock acquired $19,703M, dividends $8,023M); segment sales and other operating revenue 2008-2009; dividend of $0.42 declared on January 27, 2010; Item 1 and Item 1A"
+  },
+  {
+   "id": "XO22",
+   "published": "2009-03-02",
+   "filed": "2009-02-27 16:16 ET (after the close)",
+   "title": "Exxon Mobil FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312509040966/d10k.htm",
+   "supports": "five-year selected data 2004-2008 (net income per common share assuming dilution $3.89, $5.71, $6.62, $7.28, $8.69); income statements 2006-2008 (total revenues and other income $377,635M, $404,552M, $477,359M; income before income taxes $81,750M and income taxes $36,530M in 2008); 2008 weighted average shares assuming dilution 5,203M; operating summary 2004-2008; cash flows (operating cash flow $59,725M, additions to property, plant and equipment $19,318M, common stock acquired $35,734M, dividends $8,058M); segment sales and other operating revenue 2007-2008; dividend of $0.40 declared on January 28, 2009; Item 1 and Item 1A"
+  },
+  {
+   "id": "XO16",
+   "published": "2008-02-29",
+   "filed": "2008-02-28 16:17 ET (after the close)",
+   "title": "Exxon Mobil FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312508041781/d10k.htm",
+   "supports": "five-year selected data 2003-2007 (income from continuing operations per share assuming dilution $3.15, $3.89, $5.71, $6.62, $7.28); income statements 2005-2007 (total revenues and other income $370,680M, $377,635M, $404,552M; income before income taxes $59,432M, $67,402M, $70,474M; income taxes $29,864M in 2007); 2007 weighted average shares assuming dilution 5,577M; operating summary 2003-2007; cash flows (operating cash flow $52,002M, additions to property, plant and equipment $15,387M, common stock acquired $31,822M, dividends $7,621M); segment sales and other operating revenue 2006-2007; dividend of $0.35 declared on January 30, 2008; Item 1 and Item 1A"
+  },
+  {
+   "id": "XO15",
+   "published": "2008-02-01",
+   "filed": "2008-02-01 09:06 ET (before the open)",
+   "title": "Exxon Mobil Q4 2007 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408808000021/r8k4q991.htm",
+   "supports": "Q4 and full-year 2007 and 2006 total revenues and other income, income before income taxes, income taxes, net income per share assuming dilution, earnings excluding special items ($7.28 in 2007, $6.55 in 2006), average shares assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales"
+  },
+  {
+   "id": "XO12",
+   "published": "2007-02-28",
+   "filed": "2007-02-28 14:53 ET (during the session)",
+   "title": "Exxon Mobil FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312507042435/d10k.htm",
+   "supports": "five-year selected data 2002-2006 (income from continuing operations per share assuming dilution $1.61, $3.15, $3.89, $5.71, $6.62); income statements 2004-2006 (total revenues and other income $298,035M, $370,680M, $377,635M; income before income taxes $41,241M, $59,432M, $67,402M; income taxes $27,902M in 2006); 2006 weighted average shares assuming dilution 5,970M; operating summary 2002-2006 (oil-equivalent production, petroleum product sales net of purchases/sales with the same counterparty, chemical prime product sales); cash flows (operating cash flow $49,286M, additions to property, plant and equipment $15,462M, common stock acquired $29,558M, dividends $7,628M); segment sales and other operating revenue 2005-2006; dividend of $0.32 declared on January 31, 2007; Item 1 and Item 1A"
+  },
+  {
+   "id": "XO11",
+   "published": "2007-02-01",
+   "filed": "2007-02-01 09:46 ET (during the session)",
+   "title": "Exxon Mobil Q4 2006 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408807000021/r8k4q07991.htm",
+   "supports": "earnings excluding special items per share assuming dilution, 2005 $5.35 and 2006 $6.55"
+  },
+  {
+   "id": "XO10",
+   "published": "2006-01-30",
+   "filed": "2006-01-30 09:09 ET (before the open)",
+   "title": "Exxon Mobil Q4 2005 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408806000025/r8k4q05ex991.htm",
+   "supports": "2004 earnings excluding special items $3.97 per share assuming dilution"
+  },
+  {
+   "id": "XO51",
+   "published": "2014-01-30",
+   "filed": "2014-01-30 09:17 ET (before the open)",
+   "title": "Exxon Mobil Q4 2013 results (8-K exhibits 99.1, 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408814000002/f8k4q991.htm",
+   "supports": "Q4 2013 and full-year and year-ago total revenues and other income, income before income taxes, earnings per share assuming dilution, oil-equivalent production, petroleum product sales, chemical prime product sales, average shares assuming dilution, dividends, share purchases; full-year income taxes"
+  },
+  {
+   "id": "XO53",
+   "published": "2014-03-11",
+   "filed": "2014-03-11 11:20 ET (during the session)",
+   "title": "Exxon Mobil analyst meeting of March 5, 2014 (8-K: transcript and slides)",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000119312514093064/d681421dex991.htm",
+   "supports": "the production outlook for 2014 stated in numbers (display only)"
+  },
+  {
+   "id": "XO20",
+   "published": "2001-08-13",
+   "filed": "2001-08-13 (EDGAR gives the filing date only)",
+   "title": "Exxon Mobil Q2 2001 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408801500015/sec10qs.txt",
+   "supports": "the two-for-one stock split approved on May 30, 2001 for shareholders of record on June 20, 2001"
+  },
+  {
+   "id": "A0",
+   "published": "2014-04-11",
+   "title": "Yahoo Finance daily prices, XOM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/XOM/history",
+   "supports": "close $96.72 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2015, 2017 after 2014 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-05"
+}

@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  XOM  ·  Exxon Mobil Corporation  ·  $90.58  ·  RETROSPECTIVE as of 2014-02-07
+  Signal: ✕ AVOID   Ratio B: 4.10x   Adj gap: -0.86  [OVERVALUED]
+  Point-in-time: 21 sources, latest published 2014-02-07; latest print Q4 2013 (Jan 30)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenues, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2014E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Upstream                  $    37.7  $  37.7  $  42.3      +0.0      +4.6
+    -13.2% revenues in FY12
+  Downstream                $   349.9  $ 349.9  $ 392.4      +0.0     +42.5
+    -1.2% revenues in FY12
+  Chemical                  $    36.2  $  36.2  $  40.6      +0.0      +4.4
+    -7.7% revenues in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   423.8  $ 423.8  $ 475.3      +0.0     +51.5
+  FY2014E = FY13 $438.25B × (1 − 3.3%: no Q1 2014 revenue guide, Q4 2013 revenue as reported, applied to the year (no FY14 revenue guide)); split pro rata to FY12 segment sales and other operating revenue (FY2012 10-K; corporate $24M not shown)
+  Q4 2013 (Jan 30): total revenues $110.86B -3.3%; oil-equivalent production -1.8%; product sales -1.9%;
+  chemical sales +3.0%; pre-tax margin 13.27% (-215.7bp); EPS $1.91 vs $2.20
+  Volumes: oil-equivalent production -1.8% ('On an oil‑equivalent basis, production decreased 1.8% from the fourth quarter of 2012. Excluding the impacts of entitlement volumes, OPEC quota effects and divestments, production was essentially flat.'); petroleum product sales -1.9%; chemical prime product sales +3.0%; revenue -3.3% as reported (total revenues and other income $110,860M vs $114,699M (the release; its only revenue line)); EPS GAAP; the releases no longer report special items
+  FY14: no guide in numbers in any filing (ExxonMobil gives no earnings, revenue, volume or margin guidance; BASE takes Q4 2013 revenue growth)
+
+  FY2014E EPS check:  $423.8B × 13.2% pre-tax × (1−42.0%) ÷ 4.361B  =  $7.42  (FY2014E: no EPS guide in numbers, FY13's $7.37 stands)
+  FY2016E BEAR check: $423.8B × 13.2% ÷ 4.003B  =  $8.09  (scenario $1.66)
+  FY2016E BULL check: $475.3B × 13.6% ÷ 4.003B  =  $9.34  (scenario $9.11)
+  Every 1pp of pre-tax margin ≈ $0.56 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production           -7.0%   ≥-4.0%   ≥-1.0%    ≥4.0%     -1.8%  ◦ BASE  ██░░
+  Petroleum product sales            -20.0%  ≥-10.0%    ≥0.0%    ≥3.0%     -1.9%  ◦ BASE  ██░░
+  Revenue growth                     -41.0%  ≥-16.0%    ≥9.0%   ≥25.0%     -3.3%  ◦ BASE  ██░░
+  Chemical prime product sales        -9.0%   ≥-4.0%    ≥1.0%    ≥7.0%     +3.0%  ▲ BULL  ███░
+  Pre-tax margin change             -630.0bp  ≥-270.0bp  ≥90.0bp  ≥560.0bp  -215.7bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   2.91 / 4.00  (back-solved from $91 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj +0.00  →  Adj composite 2.05  →  Gap -0.86  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 revenue -8.8%, oil-equivalent production -1.5% (4,175 koebd vs 4,239, Q4 2013 release); Q4 pre-tax margin 13.27% (-216bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 12.3x FY14E vs a 10.7x 10-yr median (80th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no Q1 2014 revenue guide, Q4 2013 revenue as reported -3.3% vs a 12.6% 10-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and cash equivalents $4.90B, FY12 free cash flow $21.90B, dividend $2.52 a year, $21,068M of common stock acquired and $10,092M of dividends paid in FY12  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production            -1.8%     -7.0%   -5.2%  Field decline and entitlements outrun…
+  Petroleum product sales              -1.9%    -20.0%  -18.1%  Fuel demand falls with the economy
+  Revenue growth                       -3.3%    -41.0%  -37.7%  Crude, gas and product prices fall to…
+  Chemical prime product sales         +3.0%     -9.0%  -12.0%  Petrochemical demand follows industry…
+  Pre-tax margin change             -215.7bp  -630.0bp  -414.3bp  Costs stay up while prices and margin…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$36  (model)  /  $15 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: oil-equivalent production went from +1.5% (Q3 2013) to -1.8% (Q4 2013);
+  the bear case needs a commodity-price fall that the pre-tax margin (-215.7bp now)
+  and product sales (-1.9% now) no longer absorb. Prices drive earnings, by the company's own account; the bear needs crude
+  and gas realizations to fall, not only volumes.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.37  (FY2014E: no EPS guide in numbers, FY13's $7.37 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2004 10.1x, 2005 9.3x, 2006 8.6x, 2007 9.6x, 2008 7.4x, 2009 15.5x, 2010 9.1x, 2011 8.1x, 2012 8.0x, 2013 11.6x, 2014 12.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $66/share
+  Current $91 vs Updated EPP $66:  +37%  moderate distance to floor
+  Bear $15 vs Updated EPP $66:  -77%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   -4.0       -2.2   BASE floor (vs -2 now)
+  Petroleum product sales                    -10.0       -8.1   BASE floor (vs -2 now)
+  Revenue growth                             -16.0      -12.7   BASE floor (vs -3 now)
+  Chemical prime product sales                -4.0       -7.0   BASE floor (vs +3 now)
+  Pre-tax margin change                     -270.0      -54.3   BASE floor (vs -216 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.37 × (1+0.0%)² = $7.37
+  At 10x P/E (conservative):  $74/share
+  + Cumul. dividends (2yr):  +$5.19/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $74  (▼17 from $91)
+  Conservative total return:  -13% over 2yr  = -6%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (12.3x)
+  mean-reverts to 10x. Breakeven at 10x needs FY2016E EPS of $8.54,
+  i.e. 7.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $84.79  –  $101.74  (at 34th pct of range)
+  Annual dividend:      $2.52/share  (yield 2.8%)
+  Realized vol (1yr):   14% annualized
+  Beta vs broad market: 0.81
+  1-sigma range (1yr):  $78  –  $103  ($91 ± 14%)
+  2-sigma range (1yr):  $66  –  $115
+  ────────────────────────────────────────────────────────────
+  Bear $15 requires:  ~6.1σ price move  (unusual — requires fundamental break)
+  An integrated oil and gas company with a 0.8 beta: the stock is +6% off its October
+  low while oil-equivalent production went from +1.5% (Q3 2013) to -1.8% (Q4 2013).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.66   9.0x  $     15    15.5%      4.9%   +10.6pp  EPS -52.5%/yr (worst year FY03-FY13, capped at 0%); P/E to its 10th pct
+  BASE        7.50  10.7x  $     80    54.1%     16.9%   +37.2pp  EPS +0.9%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        9.11  12.0x  $    109    25.6%     59.2%   -33.6pp  EPS +11.2%/yr (FY03-FY13 CAGR); P/E holds its 75th pct
+  XBULL      15.48  13.8x  $    214     4.8%     19.0%   -14.2pp  EPS +44.9%/yr (best 2-yr run FY03-FY13); P/E at its 90th pct
+
+  Proxy EV (2yr): $84  /  Market EV: $120  /  Current: $91
+  Conservative EV (2yr, ④): $74 + $5.19 divs = $79 total value
+  Downside (→ Bear $15): 83.4%   Upside (→ Bull $109): 20.3%   Ratio B 4.10x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $91 the market needs $120 in two years —
+  above the BULL case. That is a market composite of 2.91 against a model
+  read of 2.05: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       4.10x     +37%    -0.86  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.11x     +37%    -0.42  MODESTLY OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)    11.77x     +37%    -1.08  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.37x     +37%    -0.79  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          4.97x     +37%    -0.92  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             4.10x     +37%    -0.56  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 4.10x      +2%    -0.86  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    4.10x     +37%    -0.65  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2014 print (late April) — the next read on oil-equivalent production (-1.8% now); no guide to read it against
+  (2) Pre-tax margin — -215.7bp in Q4 2013: realizations against costs, refining and chemical margins
+  (3) A FY14 guide — none: ExxonMobil gives no earnings, revenue or volume guidance in its filings
+  (4) Capital and exploration expenditures — capital and exploration expenditures $9,924M vs $12,443M in Q4 2013: the projects the volumes need
+  (5) Capital return at 12x — 36 million shares bought for the treasury at a gross cost of $3.3 billion and $2,750M of dividends in the quarter; 'Share purchases to reduce shares outstanding are currently anticipated to equal $3 billion in the first quarter of 2014.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $66  |  ADD below ~$68  |  TRIM above $109
+════════════════════════════════════════════════════════════════════════
+
