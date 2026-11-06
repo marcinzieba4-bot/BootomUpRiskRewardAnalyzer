@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SHW  ·  The Sherwin-Williams Company  ·  $431.03  ·  RETROSPECTIVE as of 2019-03-15
+  Signal: ◉ BUY   Ratio B: 0.39x   Adj gap: -0.53  [OVERVALUED]
+  Point-in-time: 13 sources, latest published 2019-03-15; latest print Q4 2018 (Jan 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E net sales, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2019E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  The Americas Group        $    10.2  $  10.2  $  12.4      +0.0      +2.2
+    +5.6% net sales in FY18
+  Performance Coatings Gro  $     5.5  $   5.5  $   6.7      +0.0      +1.2
+    +39.4% net sales in FY18
+  Consumer Brands Group     $     2.9  $   2.9  $   3.5      +0.0      +0.6
+    +27.1% net sales in FY18
+  Administrative            $     0.0  $   0.0  $   0.0      +0.0      +0.0
+    -30.6% net sales in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    18.6  $  18.6  $  22.6      +0.0      +4.0
+  FY2019E = FY18 $17.53B × (1 + 5.5%: FY19 net sales guide); split pro rata to FY18 segment net sales (FY2018 10-K)
+  Q4 2018 (Jan 31): net sales $4.06B +2.1%; comps +2.9%; Consumer Group -6.5%; gross margin 41.40% (-230.4bp);
+  pre-tax margin 2.51% (-316.8bp); EPS $1.07 vs $8.92
+  Comparable-store sales: 'Net sales from stores in U.S. and Canada open for more than twelve calendar months increased 5.1% in the year and 2.9% in the quarter'; Consumer Group: 'Net sales decreased 6.5% to $534.4 million in the quarter'; no consolidated currency effect on net sales stated ('Currency translation rate changes decreased diluted net income per share in the quarter by $.15 per share'); no acquisition effect in the quarter; 'The new revenue standard decreased consolidated net sales less than 1% in the year and quarter'; EPS including charges of $1.10 for acquisition-related costs and $1.37 of other non-operating expenses ($3.54 adjusted); the year-ago quarter revised for the inventory accounting change ($8.92)
+  FY19 guide (Q4 2018 release): EPS $20.40-21.40 (excluding acquisition-related costs and other non-operating expenses; GAAP $16.77 to $17.77); net sales +4-7%; Q1 2019: net sales +2-6%; the full-year range is 'core net sales'
+
+  FY2019E EPS check:  $18.6B × 7.8% pre-tax × (1−18.5%) ÷ 0.094B  =  $12.45  (FY2019E EPS, guide midpoint)
+  FY2021E BEAR check: $18.6B × 7.8% ÷ 0.090B  =  $12.98  (scenario $20.21)
+  FY2021E BULL check: $22.6B × 8.2% ÷ 0.090B  =  $16.59  (scenario $29.76)
+  Every 1pp of pre-tax margin ≈ $1.61 EPS ≈ $35/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores comparable sales       -7.0%   ≥-1.0%    ≥4.0%   ≥14.0%     +2.9%  ◦ BASE  ██░░
+  Gross margin change               -290.0bp  ≥-130.0bp  ≥30.0bp  ≥180.0bp  -230.4bp  ⚠ BEAR  █░░░
+  Net sales growth                   -10.0%   ≥-3.0%    ≥4.0%   ≥18.0%     +2.1%  ◦ BASE  ██░░
+  Consumer Group net sales growth    -20.0%   ≥-9.0%    ≥2.0%   ≥21.0%     -6.5%  ◦ BASE  ██░░
+  Pre-tax margin change             -220.0bp  ≥-110.0bp   ≥0.0bp  ≥160.0bp  -316.8bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.65 / 4.00
+  Market composite:   2.25 / 4.00  (back-solved from $431 + 15% hurdle)
+  SCA adjustment:    +0.07  ·  EPP-distance adj +0.00  →  Adj composite 1.72  →  Gap -0.53  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 net sales +17.0% on Paint Stores comps +5.1%, 4,696 paint stores; Q4 gross margin 41.40% (-230.4bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 20.6x FY19E vs a 21.7x 10-yr median (39th percentile of its own range)  (+0.18 × 25%  =  +0.045)
+    -  Growth vs own history: Q1 2019 net sales guide +2-6% vs a 9.3% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY18 year-end cash $0.156B, FY18 free cash flow $1.69B, dividend $4.52 a year, 1.525 million shares purchased in 2018; remaining authorization 10.13 million shares at December 31, 2018  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Paint Stores comparable sales        +2.9%     -7.0%   -9.9%  Housing turnover and repaint demand f…
+  Gross margin change               -230.4bp  -290.0bp  -59.6bp  Raw material costs outrun selling prices
+  Net sales growth                     +2.1%    -10.0%  -12.1%  Volume falls faster than prices, stor…
+  Consumer Group net sales growth      -6.5%    -20.0%  -13.5%  DIY demand at the big retailers shrinks
+  Pre-tax margin change             -316.8bp  -220.0bp  +96.8bp  Store and selling costs deleverage on…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$392  (model)  /  $325 (defined)
+  Bear probability (proxy model):  40.7%
+
+  KEY TRIGGER: Paint Stores comparable sales went from +5.2% (Q3 2018) to +2.9% (Q4 2018);
+  the bear case needs a demand recession that gross margin (-230.4bp now)
+  and selling prices no longer cover. Housing drives demand, by the company's own account; the bear needs raw
+  material costs to stay up while volumes fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $20.90  (FY2019E EPS, guide midpoint)
+  Min viable P/E at panic:          18x  [median of calendar-year P/E lows: 2009 11.8x, 2010 13.8x, 2011 16.8x, 2012 14.0x, 2013 21.3x, 2014 20.0x, 2015 19.6x, 2016 18.6x, 2017 18.2x, 2018 19.7x, 2019 18.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $376/share
+  Current $431 vs Updated EPP $376:  +15%  moderate distance to floor
+  Bear $325 vs Updated EPP $376:  -14%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Paint Stores comparable sales               -1.0       -3.9   BASE floor (vs +3 now)
+  Gross margin change                       -130.0     +100.4   BASE floor (vs -230 now)
+  Net sales growth                            -3.0       -5.1   BASE floor (vs +2 now)
+  Consumer Group net sales growth             -9.0       -2.5   BASE floor (vs -6 now)
+  Pre-tax margin change                     -110.0     +206.8   BASE floor (vs -317 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $20.90 × (1+4.1%)² = $22.65
+  At 21x P/E (conservative):  $476/share
+  + Cumul. dividends (2yr):  +$9.31/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $476  (▲45 from $431)
+  Conservative total return:  +12% over 2yr  = +6%/yr
+
+  At 20.6x the multiple is already near its 21x median, so the conservative
+  case is a growth question: breakeven at 21x needs FY2021E EPS of $20.08,
+  i.e. -2.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $355.28  –  $479.64  (at 61th pct of range)
+  Annual dividend:      $4.52/share  (yield 1.0%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 0.89
+  1-sigma range (1yr):  $330  –  $532  ($431 ± 23%)
+  2-sigma range (1yr):  $229  –  $633
+  ────────────────────────────────────────────────────────────
+  Bear $325 requires:  ~1.1σ price move  (within normal vol range)
+  A paint and coatings company with a 0.9 beta: the stock is +18% off its December
+  low while Paint Stores comparable sales went from +5.2% (Q3 2018) to +2.9% (Q4 2018).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       20.21  16.1x  $    325    40.7%     13.8%   +26.9pp  EPS -1.7%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct
+  BASE       23.52  21.7x  $    510    44.2%     48.3%    -4.1pp  EPS +6.1%/yr (Q1 guide + margin + buyback); P/E at its 10-yr median
+  BULL       29.76  23.6x  $    702    12.7%     31.8%   -19.2pp  EPS +19.3%/yr (FY09-FY18 CAGR); P/E holds its 75th pct
+  XBULL      36.60  25.3x  $    926     2.4%      6.0%    -3.6pp  EPS +32.3%/yr (best 2-yr run FY09-FY18); P/E at its 90th pct
+
+  Proxy EV (2yr): $469  /  Market EV: $571  /  Current: $431
+  Conservative EV (2yr, ④): $476 + $9.31 divs = $485 total value
+  Downside (→ Bear $325): 24.6%   Upside (→ Bull $702): 62.9%   Ratio B 0.39x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $431 the market needs $570 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.25 against a model
+  read of 1.72: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.39x     +15%    -0.53  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.15x     +15%    -0.21  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.59x     +15%    -0.78  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.33x     +15%    -0.44  MODESTLY OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.46x     +15%    -0.61  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.39x     +15%    -0.23  MODESTLY OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.39x      -2%    -0.33  MODESTLY OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.39x     +15%    -0.25  MODESTLY OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2019 print (late April) — the next read on comps (+2.9% now) and the guide
+  (2) Gross margin — -230.4bp in Q4 2018: raw material costs against selling prices, what must hold if comps do not
+  (3) FY19 EPS guide $20.40-21.40 (Q4 2018 release)
+  (4) Pre-tax margin — 2.51% in Q4 2018 (-316.8bp): where store and selling costs deleverage on falling comps
+  (5) Capital return at 21x — 1,525,000 shares purchased in the year; remaining authorization 10.13 million shares at December 31, 2018: management's own read of the multiple
+  ◉ BUY  |  EPP floor $376  |  ADD below ~$434  |  TRIM above $702
+════════════════════════════════════════════════════════════════════════
+

@@ -22,10 +22,12 @@ current fiscal year that states it. The method r2 inputs map as follows (retro/R
   - guided margin step: none (no margin guide in numbers); the margin signal takes the latest quarter's pre-tax margin change.
 Words ('fy_words', a quarter's 'words') are shown in the guide line and feed no input (the UNP 2016 rule). A later print may publish
 an earlier year's company figure on a new basis ('restates': the Q1 2017 release's FY2016 $12.85); it replaces the year from that print
-until a 10-K vintage published after it carries the year (retro/README.md, "SHW 2015-2017").
+until a 10-K vintage published after it carries the year (retro/README.md, "SHW 2015-2017"). A guide may withdraw named fields of its
+year ('withdrawn': the Q1 2020 release's FY2020 net sales range), which voids them in every earlier guide for that year (the AAPL and LOW
+2020 rule; retro/README.md, "SHW 2018-2020").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open or during the session on the
+where it is the first trading day after it. The earnings 8-Ks of 2007-2020 were accepted before the open or during the session on the
 release day; a release on the week's last trading day (Thursday 2011-04-21 and 2014-04-17, before Good Friday; Friday 2013-10-25) counts
 for that close, by an 8-K accepted before the open or during the session (the UNP 2014 rule).
 
@@ -36,6 +38,7 @@ Usage
   python3 retro/build_shw.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_shw.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_shw.py --weekly 2015-01-05 2017-12-31
+  python3 retro/build_shw.py --weekly 2018-01-01 2020-12-31
   python3 retro/build_shw.py 2008-01-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SHW/<AS_OF>
 """
@@ -185,7 +188,14 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    stated = lambda k: next((g for g in reversed(guides) if k in g), None)
+    # a guide may withdraw named fields of its year ('withdrawn': the Q1 2020 release replaces the FY2020 net sales range of +2% to 4%
+    # with words and says the range no longer holds, the AAPL 2020-02-17 and LOW 2020 rule): the field is void in every earlier guide
+    # for that year, so only a guide published on or after the withdrawal can state it again
+    void = {}
+    for g in guides:
+        for k in g.get("withdrawn", []):
+            void[k] = g["published"]
+    stated = lambda k: next((g for g in reversed(guides) if k in g and g["published"] >= void.get(k, "")), None)
     ge, gr, gw = stated("eps_guide"), stated("rev_guide"), stated("fy_words")
     qkey = lambda q: (int(q.split()[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"], nq)                 # a next-quarter guide counts while its quarter is unreported
