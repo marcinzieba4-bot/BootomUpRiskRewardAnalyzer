@@ -589,6 +589,125 @@
    "title": "Sherwin-Williams Q3 2020 results (8-K, Exhibit 99)",
    "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312520277492/d912449dex99.htm",
    "supports": "Q3 2020 statement of income (millions), comparable-store and Consumer Brands Group sales; Q4 2020 net sales +3% to 7%; FY2020 adjusted EPS $24.00 to $24.30 (GAAP $21.49 to $21.79)"
+  },
+  "SH85": {
+   "published": "2021-01-28",
+   "filed": "2021-01-28 07:13 ET, before the open",
+   "title": "Sherwin-Williams Q4 2020 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521019921/d61075dex99.htm",
+   "supports": "Q4 and FY2020 statements of income (millions), comparable-store and segment sales; FY2020 adjusted EPS $24.58 (GAAP $22.08); FY2021 adjusted EPS $26.40 to $27.20 (GAAP $23.87 to $24.67)"
+  },
+  "SH86": {
+   "published": "2021-02-04",
+   "filed": "2021-02-03 16:16 ET, after the close",
+   "title": "Sherwin-Williams three-for-one stock split (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521027314/d37953dex991.htm",
+   "supports": "three-for-one stock split in the form of a stock dividend to holders of record March 23, 2021, distributed after the close of trading on March 31, 2021; split-adjusted trading from April 1, 2021"
+  },
+  "SH87": {
+   "published": "2021-02-19",
+   "filed": "2021-02-19 11:42 ET, during the session",
+   "title": "Sherwin-Williams FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980021000010/shw-20201231.htm",
+   "supports": "selected financial data 2016-2020; statements of consolidated income 2018-2020 (millions); adjusted EPS $24.58 (2020) and $21.12 (2019); 2020 diluted shares 91,942,623; comparable store sales +2.7% (2020); segment net sales 2019-2020; quarterly dividend $1.65 from February 17, 2021; Item 1 and Item 1A"
+  },
+  "SH88": {
+   "published": "2021-04-27",
+   "filed": "2021-04-27 07:15 ET, before the open",
+   "title": "Sherwin-Williams Q1 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521132585/d154013dex99.htm",
+   "supports": "Q1 2021 statement of income (millions, after the split), same-store and Consumer Brands Group sales; FY2021 adjusted EPS $8.80 to $9.07 (GAAP $7.66 to $7.93)"
+  },
+  "SH89": {
+   "published": "2021-07-27",
+   "filed": "2021-07-27 07:16 ET, before the open",
+   "title": "Sherwin-Williams Q2 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521225004/d144442dex99.htm",
+   "supports": "Q2 2021 statement of income, same-store and Consumer Brands Group sales; FY2021 adjusted EPS $9.15 to $9.45 (GAAP $8.01 to $8.31)"
+  },
+  "SH90": {
+   "published": "2021-10-26",
+   "filed": "2021-10-26 07:16 ET, before the open",
+   "title": "Sherwin-Williams Q3 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521307190/d224900dex99.htm",
+   "supports": "Q3 2021 statement of income, same-store and Consumer Brands Group sales; FY2021 adjusted EPS $8.35 to $8.55 (GAAP $7.16 to $7.36)"
+  },
+  "SH91": {
+   "published": "2022-01-14",
+   "filed": "2022-01-14 07:07 ET, before the open",
+   "title": "Sherwin-Williams preliminary Q4 and FY2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312522009295/d293301dex99.htm",
+   "supports": "Q4 2021 consolidated net sales up approximately 6.1% (preliminary); FY2021 adjusted EPS approximately $8.15 (GAAP approximately $6.96)"
+  },
+  "SH92": {
+   "published": "2022-01-27",
+   "filed": "2022-01-27 07:16 ET, before the open",
+   "title": "Sherwin-Williams Q4 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980022000003/shwyepressrelease.htm",
+   "supports": "Q4 and FY2021 statements of income, same-store and segment sales; FY2021 adjusted EPS $8.15 (GAAP $6.98); FY2022 adjusted EPS $9.25 to $9.65 (GAAP $8.40 to $8.80)"
+  },
+  "SH93": {
+   "published": "2022-02-18",
+   "filed": "2022-02-17 16:32 ET, after the close",
+   "title": "Sherwin-Williams FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980022000007/shw-20211231.htm",
+   "supports": "statements of consolidated income 2019-2021 (millions, after the split); adjusted EPS $8.15 (2021) and $8.19 (2020); 2021 diluted shares 267.1 million; comparable store sales +6.0% (2021); segment net sales 2020-2021; quarterly dividend $0.60 from February 16, 2022; Item 1 and Item 1A"
+  },
+  "SH94": {
+   "published": "2022-04-26",
+   "filed": "2022-04-26 07:08 ET, before the open",
+   "title": "Sherwin-Williams Q1 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980022000014/shwpressrelease1q2022.htm",
+   "supports": "Q1 2022 statement of income, same-store and Consumer Brands Group sales; FY2022 adjusted EPS $9.25 to $9.65 reaffirmed"
+  },
+  "SH95": {
+   "published": "2022-07-27",
+   "filed": "2022-07-27 07:09 ET, before the open",
+   "title": "Sherwin-Williams Q2 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980022000025/shwpressrelease2q2022.htm",
+   "supports": "Q2 2022 statement of income, same-store and Consumer Brands Group sales, currency effect; FY2022 adjusted EPS $8.50 to $8.80 (GAAP $7.65 to $7.95)"
+  },
+  "SH96": {
+   "published": "2022-10-25",
+   "filed": "2022-10-25 07:07 ET, before the open",
+   "title": "Sherwin-Williams Q3 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980022000033/shwpressrelease3q2022.htm",
+   "supports": "Q3 2022 statement of income, same-store and Consumer Brands Group sales, acquisition and currency effects; FY2022 adjusted EPS $8.50 to $8.80 reaffirmed"
+  },
+  "SH97": {
+   "published": "2023-01-26",
+   "filed": "2023-01-26 07:04 ET, before the open",
+   "title": "Sherwin-Williams Q4 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980023000002/shw2022yeearningsrelease.htm",
+   "supports": "Q4 and FY2022 statements of income, same-store and segment sales, acquisition and currency effects; FY2022 adjusted EPS $8.73 (GAAP $7.72); FY2023 adjusted EPS $7.95 to $8.65 (GAAP $6.79 to $7.59)"
+  },
+  "SH98": {
+   "published": "2023-02-22",
+   "filed": "2023-02-22 15:39 ET, during the session",
+   "title": "Sherwin-Williams FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980023000007/shw-20221231.htm",
+   "supports": "statements of consolidated income 2020-2022 (millions); adjusted EPS $8.73 (2022) and $8.15 (2021); 2022 diluted shares 261.8 million; comparable store sales +11.7% (2022); segment net sales 2021-2022; quarterly dividend $0.605 from February 15, 2023; Item 1 and Item 1A"
+  },
+  "SH99": {
+   "published": "2023-04-25",
+   "filed": "2023-04-25 07:06 ET, before the open",
+   "title": "Sherwin-Williams Q1 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980023000012/shwearningsrelease1q2023.htm",
+   "supports": "Q1 2023 statement of income, same-store and Consumer Brands Group sales (new segments), acquisition and currency effects; FY2023 adjusted EPS $7.95 to $8.65 reaffirmed"
+  },
+  "SH100": {
+   "published": "2023-07-25",
+   "filed": "2023-07-25 07:06 ET, before the open",
+   "title": "Sherwin-Williams Q2 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980023000023/shwearningsrelease2q2023.htm",
+   "supports": "Q2 2023 statement of income, same-store and Consumer Brands Group sales; FY2023 adjusted EPS $9.30 to $9.70 (GAAP $8.46 to $8.86)"
+  },
+  "SH101": {
+   "published": "2023-10-24",
+   "filed": "2023-10-24 07:04 ET, before the open",
+   "title": "Sherwin-Williams Q3 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980023000029/shwearningsrelease3q2023.htm",
+   "supports": "Q3 2023 statement of income, same-store and Consumer Brands Group sales; FY2023 adjusted EPS $10.10 to $10.30 (GAAP $9.21 to $9.41)"
   }
  },
  "history_vintages": [
@@ -2539,6 +2658,447 @@
     ]
    ],
    "groups_basis": "FY19 segment net sales (FY2019 10-K)"
+  },
+  {
+   "published": "2021-02-19",
+   "sources": [
+    "SH87",
+    "SH81",
+    "SH76",
+    "SH75",
+    "SH70",
+    "SH69",
+    "SH65",
+    "SH60",
+    "SH55",
+    "SH49",
+    "SH43"
+   ],
+   "company": "The Sherwin-Williams Company",
+   "exchange": "NYSE",
+   "fy_label": "FY20",
+   "why": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; 'The Americas Group consisted of 4,774 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing, manufacturing and oil production, refining, storage and transportation' (its own FY2020 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not",
+   "fiscal_year_ends": {
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31"
+   },
+   "eps_gaap": {
+    "2011": 4.14,
+    "2012": 6.02,
+    "2013": 7.25,
+    "2014": 8.77,
+    "2015": 11.15,
+    "2016": 11.99,
+    "2017": 18.64,
+    "2018": 11.67,
+    "2019": 16.49,
+    "2020": 22.08
+   },
+   "eps_normalized": {
+    "2011": 4.14,
+    "2012": 6.49,
+    "2013": 7.25,
+    "2014": 8.77,
+    "2015": 11.15,
+    "2016": 12.85,
+    "2017": 15.07,
+    "2018": 18.53,
+    "2019": 21.12,
+    "2020": 24.58
+   },
+   "eps_sources": {
+    "2011": "SH60",
+    "2012": "SH43 ('As Reported'; GAAP $6.02: SH65)",
+    "2013": "SH70",
+    "2014": "SH76",
+    "2015": "SH81",
+    "2016": "SH69 (excluding the Valspar acquisition costs; GAAP $11.99: SH81)",
+    "2017": "SH75 (excluding acquisition-related costs and one-time items; GAAP $18.64 continuing: SH81)",
+    "2018": "SH81 (adjusted; GAAP $11.67: SH87)",
+    "2019": "SH87 (adjusted; GAAP $16.49)",
+    "2020": "SH87 (adjusted; GAAP $22.08)"
+   },
+   "normalization": "diluted EPS before the cumulative effect of the 2002 change in accounting principle, each year from the latest 10-K that reports it; the company's figure excluding the 2000 impairment of long-lived assets replaces 2000's GAAP $.10: $1.90 (the FY2002 10-K's 'Results/Ratios Excluding Impairment Charge', the latest filing that publishes it; the $352,040K charge exceeded the year's net income of $16,026K); 2005's $22,000K goodwill impairment, 2006's $16.0M litigation charge and 2007's goodwill impairment (about $.08 a share), 2008's asset impairments ($.31), 2009's impairments and loss on dissolution of a foreign subsidiary ($.13), 2010's health care tax charge ($.10), debt repurchase costs ($.12), impairments ($.04) and site-sale gain ($.04), 2011's IRS settlement of the ESOP audit ($.70) and impairments ($.03), 2013's Brazil tax assessments ($.21) and early retirement of debt ($.02), 2014's environmental provisions ($.22) and Comex loss ($.18), partly offset by the titanium dioxide settlement ($.13), 2016's goodwill and trademark impairment ($10,688K) stay in: the releases give each 'including' the item and publish no figure excluding it; no year excluded; 2012 is the company's $6.49 without the U.S. Department of Labor ESOP settlement (the 'As Reported' column of the 8-K of 2013-02-21; GAAP $6.02 after the $.47 charge; its $.02 of impairments stay in); 2013-2015 as the FY2016 10-K restates them under the treasury stock method ($7.25, $8.77, $11.15); 2016 is the company's $12.85 excluding the Valspar acquisition costs ($.86; GAAP $11.99), as the Q1 2017 and Q4 2017 releases publish it; 2017 is the company's $15.07 excluding the Valspar acquisition costs and purchase accounting impacts ($3.47 with the inventory accounting change of the fourth quarter of 2018), the one-time benefit from the deferred income tax reductions of the Tax Cuts and Jobs Act and Valspar subsidiary mergers ($7.04) and the discontinued operations ($.44) (the Q4 2017 and Q4 2018 releases; GAAP $18.20, $18.64 from continuing operations, as revised for that change); 2018 is the company's adjusted $18.53 excluding acquisition-related costs ($4.15) and other non-operating expenses ($2.71: environmental provisions $1.32, the California litigation $1.09, pension plan settlement $.30) (GAAP $11.67); 2019 is the company's adjusted $21.12 excluding acquisition-related costs ($3.21) and other adjustments ($1.42: trademark impairments $1.00, the tax credit investment loss $.79, pension plan settlement $.27, less a Brazil indirect tax credit $.36 and the California litigation reduction $.28) (GAAP $16.49); 2018 and 2019 as the FY2019 10-K publishes them; 2020 is the company's adjusted $24.58 excluding acquisition-related amortization ($2.50) (GAAP $22.08); 2019's $21.12 and 2020's as the FY2020 10-K publishes them",
+   "revenue_usd_b": {
+    "2011": 8.765699,
+    "2012": 9.534462,
+    "2013": 10.185532,
+    "2014": 11.129533,
+    "2015": 11.339304,
+    "2016": 11.855602,
+    "2017": 14.9838,
+    "2018": 17.5345,
+    "2019": 17.9008,
+    "2020": 18.3617
+   },
+   "revenue_sources": {
+    "2011": "SH49",
+    "2012": "SH55",
+    "2013": "SH60",
+    "2014": "SH65",
+    "2015": "SH70",
+    "2016": "SH76",
+    "2017": "SH81",
+    "2018": "SH87",
+    "2019": "SH87",
+    "2020": "SH87"
+   },
+   "diluted_shares_m": {
+    "2011": 105.671973,
+    "2020": 91.942623
+   },
+   "shares_sources": {
+    "2011": "SH49",
+    "2020": "SH87"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.72,
+   "prev_fy_pretax_margin_note": "FY20 income before income taxes $2,519,200K / net sales $18,361,700K (FY2020 10-K, in millions there)",
+   "prev_fy_gross_margin": 47.29,
+   "prev_fy_sales_growth": 2.6,
+   "prev_fy_comps": 2.7,
+   "prev_fy_consumer_pct": 14.1,
+   "prev_fy_stores": 4774,
+   "tax_rate": 0.194,
+   "tax_note": "FY20 effective rate: income taxes $488,800K / income before income taxes $2,519,200K (FY2020 10-K)",
+   "fcf_b": 3.105,
+   "fcf_label": "FY20",
+   "fcf_note": "net operating cash $3,408,600K less capital expenditures $303,800K",
+   "cash_b": 0.227,
+   "cash_note": "cash and cash equivalents $226,600K at December 31, 2020",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 2020",
+   "dividend_annual": 6.6,
+   "dividend_note": "$1.65 quarterly ('On February 17, 2021, the Board of Directors increased the quarterly cash dividend to $1.65 per share', FY2020 10-K)",
+   "cash_return_text": "3.9 million shares purchased in 2020; remaining authorization 4.55 million shares at December 31, 2020",
+   "business_line": "The Americas Group (4,774 stores), Consumer Brands Group and Performance Coatings Group",
+   "groups": [
+    [
+     "The Americas Group",
+     10.3832,
+     2.1
+    ],
+    [
+     "Performance Coatings Group",
+     4.9224,
+     -2.5
+    ],
+    [
+     "Consumer Brands Group",
+     3.0534,
+     14.1
+    ],
+    [
+     "Administrative",
+     0.0027,
+     -6.9
+    ]
+   ],
+   "groups_basis": "FY20 segment net sales (FY2020 10-K)"
+  },
+  {
+   "published": "2022-02-18",
+   "sources": [
+    "SH93",
+    "SH87",
+    "SH81",
+    "SH76",
+    "SH75",
+    "SH70",
+    "SH69",
+    "SH65",
+    "SH60",
+    "SH55",
+    "SH43"
+   ],
+   "company": "The Sherwin-Williams Company",
+   "exchange": "NYSE",
+   "fy_label": "FY21",
+   "why": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; 'The Americas Group consisted of 4,859 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing, manufacturing and oil production, refining, storage and transportation' (its own FY2021 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not",
+   "fiscal_year_ends": {
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31"
+   },
+   "eps_gaap": {
+    "2012": 6.02,
+    "2013": 7.25,
+    "2014": 8.77,
+    "2015": 11.15,
+    "2016": 11.99,
+    "2017": 18.64,
+    "2018": 11.67,
+    "2019": 5.5,
+    "2020": 7.36,
+    "2021": 6.98
+   },
+   "eps_normalized": {
+    "2012": 6.49,
+    "2013": 7.25,
+    "2014": 8.77,
+    "2015": 11.15,
+    "2016": 12.85,
+    "2017": 15.07,
+    "2018": 18.53,
+    "2019": 21.12,
+    "2020": 8.19,
+    "2021": 8.15
+   },
+   "eps_sources": {
+    "2012": "SH43 ('As Reported'; GAAP $6.02: SH65)",
+    "2013": "SH70",
+    "2014": "SH76",
+    "2015": "SH81",
+    "2016": "SH69 (excluding the Valspar acquisition costs; GAAP $11.99: SH81)",
+    "2017": "SH75 (excluding acquisition-related costs and one-time items; GAAP $18.64 continuing: SH81)",
+    "2018": "SH81 (adjusted; GAAP $11.67: SH87)",
+    "2019": "SH87 (adjusted; GAAP $16.49)",
+    "2020": "SH93 (adjusted; GAAP $7.36)",
+    "2021": "SH93 (adjusted; GAAP $6.98)"
+   },
+   "normalization": "diluted EPS before the cumulative effect of the 2002 change in accounting principle, each year from the latest 10-K that reports it; the company's figure excluding the 2000 impairment of long-lived assets replaces 2000's GAAP $.10: $1.90 (the FY2002 10-K's 'Results/Ratios Excluding Impairment Charge', the latest filing that publishes it; the $352,040K charge exceeded the year's net income of $16,026K); 2005's $22,000K goodwill impairment, 2006's $16.0M litigation charge and 2007's goodwill impairment (about $.08 a share), 2008's asset impairments ($.31), 2009's impairments and loss on dissolution of a foreign subsidiary ($.13), 2010's health care tax charge ($.10), debt repurchase costs ($.12), impairments ($.04) and site-sale gain ($.04), 2011's IRS settlement of the ESOP audit ($.70) and impairments ($.03), 2013's Brazil tax assessments ($.21) and early retirement of debt ($.02), 2014's environmental provisions ($.22) and Comex loss ($.18), partly offset by the titanium dioxide settlement ($.13), 2016's goodwill and trademark impairment ($10,688K) stay in: the releases give each 'including' the item and publish no figure excluding it; no year excluded; 2012 is the company's $6.49 without the U.S. Department of Labor ESOP settlement (the 'As Reported' column of the 8-K of 2013-02-21; GAAP $6.02 after the $.47 charge; its $.02 of impairments stay in); 2013-2015 as the FY2016 10-K restates them under the treasury stock method ($7.25, $8.77, $11.15); 2016 is the company's $12.85 excluding the Valspar acquisition costs ($.86; GAAP $11.99), as the Q1 2017 and Q4 2017 releases publish it; 2017 is the company's $15.07 excluding the Valspar acquisition costs and purchase accounting impacts ($3.47 with the inventory accounting change of the fourth quarter of 2018), the one-time benefit from the deferred income tax reductions of the Tax Cuts and Jobs Act and Valspar subsidiary mergers ($7.04) and the discontinued operations ($.44) (the Q4 2017 and Q4 2018 releases; GAAP $18.20, $18.64 from continuing operations, as revised for that change); 2018 is the company's adjusted $18.53 excluding acquisition-related costs ($4.15) and other non-operating expenses ($2.71: environmental provisions $1.32, the California litigation $1.09, pension plan settlement $.30) (GAAP $11.67); 2019 is the company's adjusted $21.12 excluding acquisition-related costs ($3.21) and other adjustments ($1.42: trademark impairments $1.00, the tax credit investment loss $.79, pension plan settlement $.27, less a Brazil indirect tax credit $.36 and the California litigation reduction $.28) (GAAP $16.49); 2018 and 2019 as the FY2019 10-K publishes them; 2020 is the company's adjusted $24.58 excluding acquisition-related amortization ($2.50) (GAAP $22.08); 2019's $21.12 and 2020's as the FY2020 10-K publishes them; from the three-for-one split of 2021-04-01 the 10-Ks state EPS after it: 2019-2021 from the FY2021 10-K (2019 GAAP $5.50), 2021 the company's adjusted $8.15 excluding acquisition-related amortization and the Wattyl divestiture loss (GAAP $6.98), 2020 its $8.19 (GAAP $7.36); the earlier years as published before the split (divided by three on the AS_OF basis)",
+   "revenue_usd_b": {
+    "2012": 9.534462,
+    "2013": 10.185532,
+    "2014": 11.129533,
+    "2015": 11.339304,
+    "2016": 11.855602,
+    "2017": 14.9838,
+    "2018": 17.5345,
+    "2019": 17.9008,
+    "2020": 18.3617,
+    "2021": 19.9446
+   },
+   "revenue_sources": {
+    "2012": "SH55",
+    "2013": "SH60",
+    "2014": "SH65",
+    "2015": "SH70",
+    "2016": "SH76",
+    "2017": "SH81",
+    "2018": "SH87",
+    "2019": "SH93",
+    "2020": "SH93",
+    "2021": "SH93"
+   },
+   "diluted_shares_m": {
+    "2012": 103.930429,
+    "2021": 267.1
+   },
+   "shares_sources": {
+    "2012": "SH55",
+    "2021": "SH93"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 11.27,
+   "prev_fy_pretax_margin_note": "FY21 income before income taxes $2,248,600K / net sales $19,944,600K (FY2021 10-K, in millions there)",
+   "prev_fy_gross_margin": 42.83,
+   "prev_fy_sales_growth": 8.6,
+   "prev_fy_comps": 6.0,
+   "prev_fy_consumer_pct": -10.9,
+   "prev_fy_stores": 4859,
+   "tax_rate": 0.171,
+   "tax_note": "FY21 effective rate: income taxes $384,200K / income before income taxes $2,248,600K (FY2021 10-K)",
+   "fcf_b": 1.873,
+   "fcf_label": "FY21",
+   "fcf_note": "net operating cash $2,244,600K less capital expenditures $372,000K",
+   "cash_b": 0.166,
+   "cash_note": "cash and cash equivalents $165,700K at December 31, 2021",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 2021",
+   "dividend_annual": 2.4,
+   "dividend_note": "$0.60 quarterly ('On February 16, 2022, the Board of Directors increased the quarterly cash dividend to $0.60 per share', FY2021 10-K)",
+   "cash_return_text": "10.1 million shares purchased in 2021; remaining authorization 48.6 million shares at December 31, 2021",
+   "business_line": "The Americas Group (4,859 stores), Consumer Brands Group and Performance Coatings Group",
+   "groups": [
+    [
+     "The Americas Group",
+     11.217,
+     8.0
+    ],
+    [
+     "Performance Coatings Group",
+     6.0038,
+     22.0
+    ],
+    [
+     "Consumer Brands Group",
+     2.7216,
+     -10.9
+    ],
+    [
+     "Administrative",
+     0.0022,
+     -18.5
+    ]
+   ],
+   "groups_basis": "FY21 segment net sales (FY2021 10-K)",
+   "eps_published": {
+    "2012": "2013-02-21",
+    "2013": "2018-02-23",
+    "2014": "2019-02-22",
+    "2015": "2020-02-21",
+    "2016": "2018-01-25",
+    "2017": "2019-01-31",
+    "2018": "2020-02-21",
+    "2019": "2021-02-19"
+   },
+   "shares_published": {
+    "2012": "2015-02-25"
+   }
+  },
+  {
+   "published": "2023-02-22",
+   "sources": [
+    "SH98",
+    "SH93",
+    "SH87",
+    "SH81",
+    "SH76",
+    "SH75",
+    "SH70",
+    "SH69",
+    "SH65",
+    "SH60"
+   ],
+   "company": "The Sherwin-Williams Company",
+   "exchange": "NYSE",
+   "fy_label": "FY22",
+   "why": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; 'The Americas Group consisted of 4,931 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing, manufacturing and oil production, refining, storage and transportation' (its own FY2022 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not",
+   "fiscal_year_ends": {
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31"
+   },
+   "eps_gaap": {
+    "2013": 7.25,
+    "2014": 8.77,
+    "2015": 11.15,
+    "2016": 11.99,
+    "2017": 18.64,
+    "2018": 11.67,
+    "2019": 5.5,
+    "2020": 7.36,
+    "2021": 6.98,
+    "2022": 7.72
+   },
+   "eps_normalized": {
+    "2013": 7.25,
+    "2014": 8.77,
+    "2015": 11.15,
+    "2016": 12.85,
+    "2017": 15.07,
+    "2018": 18.53,
+    "2019": 21.12,
+    "2020": 8.19,
+    "2021": 8.15,
+    "2022": 8.73
+   },
+   "eps_sources": {
+    "2013": "SH70",
+    "2014": "SH76",
+    "2015": "SH81",
+    "2016": "SH69 (excluding the Valspar acquisition costs; GAAP $11.99: SH81)",
+    "2017": "SH75 (excluding acquisition-related costs and one-time items; GAAP $18.64 continuing: SH81)",
+    "2018": "SH81 (adjusted; GAAP $11.67: SH87)",
+    "2019": "SH87 (adjusted; GAAP $16.49)",
+    "2020": "SH93 (adjusted; GAAP $7.36: SH98)",
+    "2021": "SH98 (adjusted; GAAP $6.98)",
+    "2022": "SH98 (adjusted; GAAP $7.72)"
+   },
+   "normalization": "diluted EPS before the cumulative effect of the 2002 change in accounting principle, each year from the latest 10-K that reports it; the company's figure excluding the 2000 impairment of long-lived assets replaces 2000's GAAP $.10: $1.90 (the FY2002 10-K's 'Results/Ratios Excluding Impairment Charge', the latest filing that publishes it; the $352,040K charge exceeded the year's net income of $16,026K); 2005's $22,000K goodwill impairment, 2006's $16.0M litigation charge and 2007's goodwill impairment (about $.08 a share), 2008's asset impairments ($.31), 2009's impairments and loss on dissolution of a foreign subsidiary ($.13), 2010's health care tax charge ($.10), debt repurchase costs ($.12), impairments ($.04) and site-sale gain ($.04), 2011's IRS settlement of the ESOP audit ($.70) and impairments ($.03), 2013's Brazil tax assessments ($.21) and early retirement of debt ($.02), 2014's environmental provisions ($.22) and Comex loss ($.18), partly offset by the titanium dioxide settlement ($.13), 2016's goodwill and trademark impairment ($10,688K) stay in: the releases give each 'including' the item and publish no figure excluding it; no year excluded; 2012 is the company's $6.49 without the U.S. Department of Labor ESOP settlement (the 'As Reported' column of the 8-K of 2013-02-21; GAAP $6.02 after the $.47 charge; its $.02 of impairments stay in); 2013-2015 as the FY2016 10-K restates them under the treasury stock method ($7.25, $8.77, $11.15); 2016 is the company's $12.85 excluding the Valspar acquisition costs ($.86; GAAP $11.99), as the Q1 2017 and Q4 2017 releases publish it; 2017 is the company's $15.07 excluding the Valspar acquisition costs and purchase accounting impacts ($3.47 with the inventory accounting change of the fourth quarter of 2018), the one-time benefit from the deferred income tax reductions of the Tax Cuts and Jobs Act and Valspar subsidiary mergers ($7.04) and the discontinued operations ($.44) (the Q4 2017 and Q4 2018 releases; GAAP $18.20, $18.64 from continuing operations, as revised for that change); 2018 is the company's adjusted $18.53 excluding acquisition-related costs ($4.15) and other non-operating expenses ($2.71: environmental provisions $1.32, the California litigation $1.09, pension plan settlement $.30) (GAAP $11.67); 2019 is the company's adjusted $21.12 excluding acquisition-related costs ($3.21) and other adjustments ($1.42: trademark impairments $1.00, the tax credit investment loss $.79, pension plan settlement $.27, less a Brazil indirect tax credit $.36 and the California litigation reduction $.28) (GAAP $16.49); 2018 and 2019 as the FY2019 10-K publishes them; 2020 is the company's adjusted $24.58 excluding acquisition-related amortization ($2.50) (GAAP $22.08); 2019's $21.12 and 2020's as the FY2020 10-K publishes them; from the three-for-one split of 2021-04-01 the 10-Ks state EPS after it: 2019-2021 from the FY2021 10-K (2019 GAAP $5.50), 2021 the company's adjusted $8.15 excluding acquisition-related amortization and the Wattyl divestiture loss (GAAP $6.98), 2020 its $8.19 (GAAP $7.36); the earlier years as published before the split (divided by three on the AS_OF basis); 2022 is the company's adjusted $8.73 excluding acquisition-related amortization and restructuring charges including trademark impairments (GAAP $7.72)",
+   "revenue_usd_b": {
+    "2013": 10.185532,
+    "2014": 11.129533,
+    "2015": 11.339304,
+    "2016": 11.855602,
+    "2017": 14.9838,
+    "2018": 17.5345,
+    "2019": 17.9008,
+    "2020": 18.3617,
+    "2021": 19.9446,
+    "2022": 22.1489
+   },
+   "revenue_sources": {
+    "2013": "SH60",
+    "2014": "SH65",
+    "2015": "SH70",
+    "2016": "SH76",
+    "2017": "SH81",
+    "2018": "SH87",
+    "2019": "SH93",
+    "2020": "SH98",
+    "2021": "SH98",
+    "2022": "SH98"
+   },
+   "diluted_shares_m": {
+    "2013": 103.048871,
+    "2022": 261.8
+   },
+   "shares_sources": {
+    "2013": "SH60",
+    "2022": "SH98"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 11.62,
+   "prev_fy_pretax_margin_note": "FY22 income before income taxes $2,573,100K / net sales $22,148,900K (FY2022 10-K, in millions there)",
+   "prev_fy_gross_margin": 42.1,
+   "prev_fy_sales_growth": 11.1,
+   "prev_fy_comps": 11.7,
+   "prev_fy_consumer_pct": -1.1,
+   "prev_fy_stores": 4931,
+   "tax_rate": 0.215,
+   "tax_note": "FY22 effective rate: income taxes $553,000K / income before income taxes $2,573,100K (FY2022 10-K)",
+   "fcf_b": 1.275,
+   "fcf_label": "FY22",
+   "fcf_note": "net operating cash $1,919,900K less capital expenditures $644,500K",
+   "cash_b": 0.199,
+   "cash_note": "cash and cash equivalents $198,800K at December 31, 2022",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 2022",
+   "dividend_annual": 2.42,
+   "dividend_note": "$0.605 quarterly ('On February 15, 2023, the Board of Directors increased the quarterly cash dividend to $0.605 per share', FY2022 10-K)",
+   "cash_return_text": "3.4 million shares purchased in 2022; remaining authorization 45.2 million shares at December 31, 2022",
+   "business_line": "The Americas Group (4,931 stores), Consumer Brands Group and Performance Coatings Group",
+   "groups": [
+    [
+     "The Americas Group",
+     12.661,
+     12.9
+    ],
+    [
+     "Performance Coatings Group",
+     6.7935,
+     13.2
+    ],
+    [
+     "Consumer Brands Group",
+     2.6907,
+     -1.1
+    ],
+    [
+     "Administrative",
+     0.0037,
+     68.2
+    ]
+   ],
+   "groups_basis": "FY22 segment net sales (FY2022 10-K)",
+   "eps_published": {
+    "2013": "2018-02-23",
+    "2014": "2019-02-22",
+    "2015": "2020-02-21",
+    "2016": "2018-01-25",
+    "2017": "2019-01-31",
+    "2018": "2020-02-21",
+    "2019": "2021-02-19"
+   },
+   "shares_published": {
+    "2013": "2016-02-24"
+   }
   }
  ],
  "prints": [
@@ -4864,6 +5424,541 @@
    "next_print": "Q4 2020 print (late January)",
    "raw_note": "the release states the statement of income in millions to one decimal; raw figures in thousands",
    "eps_note": "including $.63 of acquisition-related amortization ($8.29 adjusted); the statement of income in millions"
+  },
+  {
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-01-28",
+   "source": "SH85",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 07:13 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2020-12-31",
+   "raw": {
+    "ns_k": 4488800,
+    "ns_prior_k": 4114400,
+    "cogs_k": 2360100,
+    "cogs_prior_k": 2220400,
+    "pretax_k": 503900,
+    "pretax_prior_k": 297400,
+    "diluted_shares": 91268111
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal; raw figures in thousands and shares",
+   "sales_b": 4.489,
+   "sales_pct": 9.1,
+   "gross_margin": 47.42,
+   "gross_margin_bp": 138.9,
+   "pretax_margin": 11.23,
+   "pretax_margin_bp": 399.7,
+   "comps_pct": 9.3,
+   "comps_note": "Net sales from stores in U.S. and Canada open for more than twelve calendar months increased 2.7% in the year and 9.3% in the quarter",
+   "consumer_pct": 13.6,
+   "consumer_note": "In the fourth quarter, net sales increased 13.6% to $612.8 million",
+   "currency_pp": null,
+   "currency_note": "currency effect stated for the year only ('Currency translation rate changes reduced consolidated net sales for the year by 1.1%')",
+   "lc_pct": null,
+   "acq_note": "no acquisition effect stated",
+   "eps_q": 4.46,
+   "eps_q_prior": 2.66,
+   "diluted_shares_m": 91.268111,
+   "cash_return_text": "3.9 million shares purchased in 2020; remaining authorization 4.55 million shares at December 31, 2020",
+   "next_print": "Q1 2021 print (late April)",
+   "eps_note": "including $.63 of acquisition-related amortization ($5.09 adjusted); the statement of income in millions",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 24.58,
+    "revenue_usd_b": 18.3617,
+    "diluted_shares_m": 91.942623,
+    "normalization_note": "FY2020 $24.58 from the Q4 2020 release, the company's adjusted figure excluding acquisition-related amortization ($2.50) (GAAP $22.08)",
+    "gross_margin": 47.29,
+    "pretax_margin": 13.72,
+    "pretax_margin_note": "FY20 income before income taxes $2,519,200K / net sales $18,361,700K (Q4 2020 release, in millions there)",
+    "sales_growth": 2.6,
+    "comps_pct": 2.7,
+    "consumer_pct": 14.1,
+    "stores": 4774,
+    "tax_rate": 0.194,
+    "tax_note": "FY20 effective rate: income taxes $488,800K / income before income taxes $2,519,200K"
+   }
+  },
+  {
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-04-27",
+   "source": "SH88",
+   "release": "Apr 27",
+   "release_time": "before the open on Apr 27: 8-K accepted 07:15 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2021-03-31",
+   "raw": {
+    "ns_k": 4656000,
+    "ns_prior_k": 4146700,
+    "cogs_k": 2544000,
+    "cogs_prior_k": 2257000,
+    "pretax_k": 509000,
+    "pretax_prior_k": 392300,
+    "diluted_shares": 270600000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 4.656,
+   "sales_pct": 12.3,
+   "gross_margin": 45.36,
+   "gross_margin_bp": -21.0,
+   "pretax_margin": 10.93,
+   "pretax_margin_bp": 147.2,
+   "comps_pct": 8.2,
+   "comps_note": "Net sales from stores in U.S. and Canada open more than twelve calendar months increased 8.2%",
+   "consumer_pct": 25.0,
+   "consumer_note": "Consumer Brands Group 'Net sales | 778.1 | 622.3 | 155.8 | 25.0%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated in the consolidated results; the Consumer Brands Group's paragraph says 'Currency translation rate changes increased consolidated net sales by 2.7%', read as the group's (the next release's parallel sentence says 'the group's net sales')",
+   "lc_pct": null,
+   "acq_note": "no acquisition effect stated; the Wattyl business divested in the quarter",
+   "eps_q": 1.51,
+   "eps_q_prior": 1.15,
+   "diluted_shares_m": 270.6,
+   "cash_return_text": "3.3 million shares purchased in the quarter; remaining authorization 55.35 million shares at March 31, 2021 (after the split)",
+   "next_print": "Q2 2021 print (late July)",
+   "eps_note": "after the three-for-one split, the year-ago quarter restated ($1.15); including the $0.34 Wattyl divestiture loss and $0.21 of acquisition-related amortization ($2.06 adjusted)"
+  },
+  {
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-07-27",
+   "source": "SH89",
+   "release": "Jul 27",
+   "release_time": "before the open on Jul 27: 8-K accepted 07:16 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2021-06-30",
+   "raw": {
+    "ns_k": 5379800,
+    "ns_prior_k": 4604000,
+    "cogs_k": 2968400,
+    "cogs_prior_k": 2395100,
+    "pretax_k": 819200,
+    "pretax_prior_k": 747400,
+    "diluted_shares": 267800000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 5.38,
+   "sales_pct": 16.9,
+   "gross_margin": 44.82,
+   "gross_margin_bp": -315.5,
+   "pretax_margin": 15.23,
+   "pretax_margin_bp": -100.6,
+   "comps_pct": 19.3,
+   "comps_note": "Net sales from stores in U.S. and Canada open more than twelve calendar months increased 19.3% in the quarter",
+   "consumer_pct": -25.4,
+   "consumer_note": "Consumer Brands Group 'Net sales | 731.5 | 980.2 | (248.7) | (25.4 | )%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated",
+   "lc_pct": null,
+   "acq_note": "no acquisition effect stated",
+   "eps_q": 2.42,
+   "eps_q_prior": 2.16,
+   "diluted_shares_m": 267.8,
+   "cash_return_text": "6.4 million shares purchased in the six months; remaining authorization 52.25 million shares at June 30, 2021",
+   "next_print": "Q3 2021 print (late October)",
+   "eps_note": "including $0.23 of acquisition-related amortization ($2.65 adjusted)"
+  },
+  {
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-10-26",
+   "source": "SH90",
+   "release": "Oct 26",
+   "release_time": "before the open on Oct 26: 8-K accepted 07:16 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2021-09-30",
+   "raw": {
+    "ns_k": 5146700,
+    "ns_prior_k": 5122200,
+    "cogs_k": 3007100,
+    "cogs_prior_k": 2666900,
+    "pretax_k": 611500,
+    "pretax_prior_k": 875600,
+    "diluted_shares": 266600000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 5.147,
+   "sales_pct": 0.5,
+   "gross_margin": 41.57,
+   "gross_margin_bp": -636.2,
+   "pretax_margin": 11.88,
+   "pretax_margin_bp": -521.3,
+   "comps_pct": -2.8,
+   "comps_note": "Net sales from stores in U.S. and Canada open more than twelve calendar months decreased 2.8% in the quarter",
+   "consumer_pct": -22.8,
+   "consumer_note": "Consumer Brands Group 'Net sales | 646.7 | 838.1 | (191.4) | (22.8 | )%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated",
+   "lc_pct": null,
+   "acq_note": "no acquisition effect stated; 'Raw material availability issues negatively impacted quarter sales by an estimated high single digit percentage'",
+   "eps_q": 1.88,
+   "eps_q_prior": 2.55,
+   "diluted_shares_m": 266.6,
+   "cash_return_text": "8.075 million shares purchased in the nine months; remaining authorization 50.575 million shares at September 30, 2021",
+   "next_print": "Q4 2021 print (late January)",
+   "eps_note": "including $0.21 of acquisition-related amortization ($2.09 adjusted)"
+  },
+  {
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-01-27",
+   "source": "SH92",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 07:16 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2021-12-31",
+   "raw": {
+    "ns_k": 4762100,
+    "ns_prior_k": 4488800,
+    "cogs_k": 2882400,
+    "cogs_prior_k": 2360100,
+    "pretax_k": 308900,
+    "pretax_prior_k": 503900,
+    "diluted_shares": 264600000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 4.762,
+   "sales_pct": 6.1,
+   "gross_margin": 39.47,
+   "gross_margin_bp": -795.0,
+   "pretax_margin": 6.49,
+   "pretax_margin_bp": -473.9,
+   "comps_pct": 1.0,
+   "comps_note": "same-store sales 'Same-store sales (1) | 1.0% | 9.3%' ('Same-store sales represents net sales from stores in U.S. and Canada open more than twelve calendar months')",
+   "consumer_pct": -7.8,
+   "consumer_note": "Consumer Brands Group 'Net sales | 565.3 | 612.8 | (47.5) | (7.8)%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated",
+   "lc_pct": null,
+   "acq_note": "no acquisition effect stated",
+   "eps_q": 1.15,
+   "eps_q_prior": 1.49,
+   "diluted_shares_m": 264.6,
+   "cash_return_text": "10.1 million shares purchased in 2021; remaining authorization 48.6 million shares at December 31, 2021",
+   "next_print": "Q1 2022 print (late April)",
+   "eps_note": "including $0.19 of acquisition-related amortization ($1.34 adjusted)",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": 8.15,
+    "revenue_usd_b": 19.9446,
+    "diluted_shares_m": 267.1,
+    "normalization_note": "FY2021 $8.15 from the Q4 2021 release, the company's adjusted figure excluding acquisition-related amortization and the loss on the Wattyl divestiture (GAAP $6.98)",
+    "gross_margin": 42.83,
+    "pretax_margin": 11.27,
+    "pretax_margin_note": "FY21 income before income taxes $2,248,600K / net sales $19,944,600K (Q4 2021 release, in millions there)",
+    "sales_growth": 8.6,
+    "comps_pct": 6.0,
+    "consumer_pct": -10.9,
+    "stores": 4859,
+    "tax_rate": 0.171,
+    "tax_note": "FY21 effective rate: income taxes $384,200K / income before income taxes $2,248,600K",
+    "comps_note": "FY2021 same-store sales +6.0% from the FY2021 10-K; the release states none for the year",
+    "cons_note": "FY2021 Consumer Brands Group net sales $2,721.6 million against $3,053.4 million (-10.9%)"
+   }
+  },
+  {
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-04-26",
+   "source": "SH94",
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 07:08 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2022-03-31",
+   "raw": {
+    "ns_k": 4998700,
+    "ns_prior_k": 4656000,
+    "cogs_k": 2945800,
+    "cogs_prior_k": 2544000,
+    "pretax_k": 461100,
+    "pretax_prior_k": 509000,
+    "diluted_shares": 263100000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 4.999,
+   "sales_pct": 7.4,
+   "gross_margin": 41.07,
+   "gross_margin_bp": -429.2,
+   "pretax_margin": 9.22,
+   "pretax_margin_bp": -170.8,
+   "comps_pct": 3.8,
+   "comps_note": "same-store sales 'Same-store sales (1) | 3.8% | 8.2%' ('Same-store sales represents net sales from stores in U.S. and Canada open more than twelve calendar months')",
+   "consumer_pct": -10.1,
+   "consumer_note": "Consumer Brands Group 'Net sales | 699.4 | 778.1 | (78.7) | (10.1)%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated",
+   "lc_pct": null,
+   "acq_note": "no acquisition effect stated",
+   "eps_q": 1.41,
+   "eps_q_prior": 1.51,
+   "diluted_shares_m": 263.1,
+   "cash_return_text": "1.45 million shares purchased in the quarter; remaining authorization 47.1 million shares at March 31, 2022",
+   "next_print": "Q2 2022 print (late July)",
+   "eps_note": "including $0.20 of acquisition-related amortization ($1.61 adjusted)"
+  },
+  {
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-07-27",
+   "source": "SH95",
+   "release": "Jul 27",
+   "release_time": "before the open on Jul 27: 8-K accepted 07:09 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2022-06-30",
+   "raw": {
+    "ns_k": 5872300,
+    "ns_prior_k": 5379800,
+    "cogs_k": 3423300,
+    "cogs_prior_k": 2968400,
+    "pretax_k": 739900,
+    "pretax_prior_k": 819200,
+    "diluted_shares": 261800000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 5.872,
+   "sales_pct": 9.2,
+   "gross_margin": 41.7,
+   "gross_margin_bp": -311.9,
+   "pretax_margin": 12.6,
+   "pretax_margin_bp": -262.7,
+   "comps_pct": 6.4,
+   "comps_note": "same-store sales 'Same-store sales (1) | 6.4% | 19.3%' ('Same-store sales represents net sales from stores in U.S. and Canada open more than twelve calendar months')",
+   "consumer_pct": 0.9,
+   "consumer_note": "Consumer Brands Group 'Net sales | 737.9 | 731.5 | 6.4 | 0.9%'",
+   "currency_pp": -1.4,
+   "currency_note": "Currency translation rate changes decreased consolidated net sales by 1.4%",
+   "lc_pct": 10.6,
+   "acq_note": "no consolidated acquisition effect stated (PCG: 'Acquisitions increased sales by 2.9%')",
+   "eps_q": 2.21,
+   "eps_q_prior": 2.42,
+   "diluted_shares_m": 261.8,
+   "cash_return_text": "2.55 million shares purchased in the six months; remaining authorization 46.0 million shares at June 30, 2022",
+   "next_print": "Q3 2022 print (late October)",
+   "eps_note": "including $0.20 of acquisition-related amortization ($2.41 adjusted)"
+  },
+  {
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-10-25",
+   "source": "SH96",
+   "release": "Oct 25",
+   "release_time": "before the open on Oct 25: 8-K accepted 07:07 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2022-09-30",
+   "raw": {
+    "ns_k": 6047400,
+    "ns_prior_k": 5146700,
+    "cogs_k": 3458000,
+    "cogs_prior_k": 3007100,
+    "pretax_k": 877200,
+    "pretax_prior_k": 611500,
+    "diluted_shares": 261100000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 6.047,
+   "sales_pct": 17.5,
+   "gross_margin": 42.82,
+   "gross_margin_bp": 124.6,
+   "pretax_margin": 14.51,
+   "pretax_margin_bp": 262.4,
+   "comps_pct": 20.7,
+   "comps_note": "same-store sales 'Same-store sales (1) | 20.7% | (2.8)%' ('Same-store sales represents net sales from stores in U.S. and Canada open more than twelve calendar months')",
+   "consumer_pct": 8.5,
+   "consumer_note": "Consumer Brands Group 'Net sales | 701.9 | 646.7 | 55.2 | 8.5%'",
+   "currency_pp": -2.1,
+   "currency_note": "currency translation rate changes decreased consolidated net sales by 2.1%",
+   "lc_pct": 19.6,
+   "acq_note": "'Acquisitions increased consolidated net sales by 1.6%'",
+   "eps_q": 2.62,
+   "eps_q_prior": 1.88,
+   "diluted_shares_m": 261.1,
+   "cash_return_text": "2.75 million shares purchased in the nine months; remaining authorization 45.8 million shares at September 30, 2022",
+   "next_print": "Q4 2022 print (late January)",
+   "eps_note": "including $0.21 of acquisition-related amortization ($2.83 adjusted)"
+  },
+  {
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-01-26",
+   "source": "SH97",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 07:04 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2022-12-31",
+   "raw": {
+    "ns_k": 5230500,
+    "ns_prior_k": 4762100,
+    "cogs_k": 2996700,
+    "cogs_prior_k": 2882400,
+    "pretax_k": 494900,
+    "pretax_prior_k": 308900,
+    "diluted_shares": 260400000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 5.231,
+   "sales_pct": 9.8,
+   "gross_margin": 42.71,
+   "gross_margin_bp": 323.5,
+   "pretax_margin": 9.46,
+   "pretax_margin_bp": 297.5,
+   "comps_pct": 15.5,
+   "comps_note": "same-store sales 'Same-store sales (1) | 15.5% | 1.0%' ('Same-store sales represents net sales from stores in U.S. and Canada open more than twelve calendar months')",
+   "consumer_pct": -2.4,
+   "consumer_note": "Consumer Brands Group 'Net sales | 551.5 | 565.3 | (13.8) | (2.4)%'",
+   "currency_pp": -2.0,
+   "currency_note": "currency translation rate changes decreased consolidated net sales by 2.0%",
+   "lc_pct": 11.8,
+   "acq_note": "'Acquisitions increased consolidated net sales by approximately 1.5%'",
+   "eps_q": 1.48,
+   "eps_q_prior": 1.15,
+   "diluted_shares_m": 260.4,
+   "cash_return_text": "3.4 million shares purchased in 2022; remaining authorization 45.2 million shares at December 31, 2022",
+   "next_print": "Q1 2023 print (late April)",
+   "eps_note": "including $0.21 of acquisition-related amortization and $0.20 of restructuring charges including trademark impairments ($1.89 adjusted)",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 8.73,
+    "revenue_usd_b": 22.1489,
+    "diluted_shares_m": 261.8,
+    "normalization_note": "FY2022 $8.73 from the Q4 2022 release, the company's adjusted figure excluding acquisition-related amortization and restructuring charges (GAAP $7.72)",
+    "gross_margin": 42.1,
+    "pretax_margin": 11.62,
+    "pretax_margin_note": "FY22 income before income taxes $2,573,100K / net sales $22,148,900K (Q4 2022 release, in millions there)",
+    "sales_growth": 11.1,
+    "comps_pct": 11.7,
+    "consumer_pct": -1.1,
+    "stores": 4931,
+    "tax_rate": 0.215,
+    "tax_note": "FY22 effective rate: income taxes $553,000K / income before income taxes $2,573,100K",
+    "comps_note": "FY2022 same-store sales +11.7% from the FY2022 10-K; the release states none for the year",
+    "cons_note": "FY2022 Consumer Brands Group net sales $2,690.7 million against $2,721.6 million (-1.1%)"
+   }
+  },
+  {
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-04-25",
+   "source": "SH99",
+   "release": "Apr 25",
+   "release_time": "before the open on Apr 25: 8-K accepted 07:06 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2023-03-31",
+   "raw": {
+    "ns_k": 5442400,
+    "ns_prior_k": 4998700,
+    "cogs_k": 3021500,
+    "cogs_prior_k": 2945800,
+    "pretax_k": 614800,
+    "pretax_prior_k": 461100,
+    "diluted_shares": 259700000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 5.442,
+   "sales_pct": 8.9,
+   "gross_margin": 44.48,
+   "gross_margin_bp": 341.4,
+   "pretax_margin": 11.3,
+   "pretax_margin_bp": 207.2,
+   "comps_pct": 14.2,
+   "comps_note": "Paint Stores Group same-store sales 'Same-store sales (1) | 14.2% | 3.8%' ('Same-store sales represents net sales from stores open more than twelve calendar months')",
+   "consumer_pct": 2.4,
+   "consumer_note": "Consumer Brands Group (recast, with Latin America) 'Net sales | 872.7 | 852.2 | 20.5 | 2.4%'",
+   "currency_pp": -1.0,
+   "currency_note": "currency translation rate changes decreased consolidated net sales by 1.0%",
+   "lc_pct": 9.9,
+   "acq_note": "'Acquisitions increased consolidated net sales by 1.8%'",
+   "eps_q": 1.84,
+   "eps_q_prior": 1.41,
+   "diluted_shares_m": 259.7,
+   "cash_return_text": "1.3 million shares purchased in the quarter; remaining authorization 43.9 million shares at March 31, 2023",
+   "next_print": "Q2 2023 print (late July)",
+   "eps_note": "including $0.20 of acquisition-related amortization ($2.04 adjusted); segments recast from 2023 (Paint Stores, Consumer Brands and Performance Coatings Groups)"
+  },
+  {
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-07-25",
+   "source": "SH100",
+   "release": "Jul 25",
+   "release_time": "before the open on Jul 25: 8-K accepted 07:06 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2023-06-30",
+   "raw": {
+    "ns_k": 6240600,
+    "ns_prior_k": 5872300,
+    "cogs_k": 3368300,
+    "cogs_prior_k": 3423300,
+    "pretax_k": 1012100,
+    "pretax_prior_k": 739900,
+    "diluted_shares": 258900000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 6.241,
+   "sales_pct": 6.3,
+   "gross_margin": 46.03,
+   "gross_margin_bp": 432.2,
+   "pretax_margin": 16.22,
+   "pretax_margin_bp": 361.8,
+   "comps_pct": 9.5,
+   "comps_note": "Paint Stores Group same-store sales 'Same-store sales (1) | 9.5% | 6.4%' ('Same-store sales represents net sales from stores open more than twelve calendar months')",
+   "consumer_pct": 5.1,
+   "consumer_note": "Consumer Brands Group 'Net sales | 945.8 | 900.0 | 45.8 | 5.1%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated",
+   "lc_pct": null,
+   "acq_note": "'Acquisitions increased consolidated net sales by 1.4%'",
+   "eps_q": 3.07,
+   "eps_q_prior": 2.21,
+   "diluted_shares_m": 258.9,
+   "cash_return_text": "2.3 million shares repurchased in the six months; remaining authorization 42.9 million shares at June 30, 2023",
+   "next_print": "Q3 2023 print (late October)",
+   "eps_note": "including acquisition-related amortization and restructuring charges ($3.29 adjusted)"
+  },
+  {
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-10-24",
+   "source": "SH101",
+   "release": "Oct 24",
+   "release_time": "before the open on Oct 24: 8-K accepted 07:04 ET; conference call at 11:00 a.m. ET",
+   "period_end": "2023-09-30",
+   "raw": {
+    "ns_k": 6116700,
+    "ns_prior_k": 6047400,
+    "cogs_k": 3200500,
+    "cogs_prior_k": 3458000,
+    "pretax_k": 1009000,
+    "pretax_prior_k": 877200,
+    "diluted_shares": 258400000
+   },
+   "raw_note": "the release states the statement of income in millions to one decimal and diluted shares in millions; raw figures in thousands and shares",
+   "sales_b": 6.117,
+   "sales_pct": 1.1,
+   "gross_margin": 47.68,
+   "gross_margin_bp": 485.8,
+   "pretax_margin": 16.5,
+   "pretax_margin_bp": 199.0,
+   "comps_pct": 3.0,
+   "comps_note": "Paint Stores Group same-store sales 'Same-store sales (1) | 3.0% | 20.7%' ('Same-store sales represents net sales from stores open more than twelve calendar months')",
+   "consumer_pct": -4.0,
+   "consumer_note": "Consumer Brands Group 'Net sales | 854.8 | 890.6 | (35.8) | (4.0)%'",
+   "currency_pp": null,
+   "currency_note": "no consolidated currency effect on net sales stated",
+   "lc_pct": null,
+   "acq_note": "acquisitions named without a consolidated figure",
+   "eps_q": 2.95,
+   "eps_q_prior": 2.62,
+   "diluted_shares_m": 258.4,
+   "cash_return_text": "3.8 million shares repurchased in the nine months; remaining authorization 41.4 million shares at September 30, 2023",
+   "next_print": "Q4 2023 print (late January)",
+   "eps_note": "including $0.19 of acquisition-related amortization and $0.06 of discrete tax expense on the China architectural divestiture ($3.20 adjusted)"
   }
  ],
  "guides": [
@@ -6124,6 +7219,217 @@
      7
     ]
    }
+  },
+  {
+   "fy": 2021,
+   "published": "2021-01-28",
+   "source": "SH85",
+   "doc": "Q4 2020 release",
+   "eps_guide": [
+    26.4,
+    27.2
+   ],
+   "eps_guide_note": "adjusted, excluding acquisition-related amortization; GAAP $23.87 to $24.67",
+   "fy_words": "net sales to increase mid-to-high single digits compared to full year 2020",
+   "q_guide": {
+    "quarter": "Q1 2021",
+    "words": "our net sales will increase high single digits compared to the first quarter of 2020"
+   }
+  },
+  {
+   "fy": 2021,
+   "published": "2021-04-27",
+   "source": "SH88",
+   "doc": "Q1 2021 release",
+   "eps_guide": [
+    8.8,
+    9.07
+   ],
+   "eps_guide_note": "adjusted, excluding the $0.34 Wattyl divestiture loss and acquisition-related amortization; GAAP $7.66 to $7.93",
+   "fy_words": "Up mid-to-high single digit %",
+   "q_guide": {
+    "quarter": "Q2 2021",
+    "words": "Up mid-to-high teens %"
+   }
+  },
+  {
+   "fy": 2021,
+   "published": "2021-07-27",
+   "source": "SH89",
+   "doc": "Q2 2021 release",
+   "eps_guide": [
+    9.15,
+    9.45
+   ],
+   "eps_guide_note": "adjusted; GAAP $8.01 to $8.31, 'Reaffirming' a range first given at the June 8 Financial Community Presentation, which no SEC filing carries",
+   "fy_words": "Up high-single to low-double digit %",
+   "q_guide": {
+    "quarter": "Q3 2021",
+    "words": "Up mid-to-high single digit %"
+   }
+  },
+  {
+   "fy": 2021,
+   "published": "2021-10-26",
+   "source": "SH90",
+   "doc": "Q3 2021 release",
+   "eps_guide": [
+    8.35,
+    8.55
+   ],
+   "eps_guide_note": "adjusted; GAAP $7.16 to $7.36; the release 'reaffirms' this adjusted range, which no earlier SEC filing carries",
+   "fy_words": "Up high-single digit %",
+   "q_guide": {
+    "quarter": "Q4 2021",
+    "words": "Up mid-to-high single digit %"
+   }
+  },
+  {
+   "fy": 2021,
+   "published": "2022-01-14",
+   "source": "SH91",
+   "doc": "8-K of 2022-01-14",
+   "eps_guide": [
+    8.15,
+    8.15
+   ],
+   "eps_guide_note": "preliminary unaudited, adjusted; GAAP approximately $6.96",
+   "q_guide": {
+    "quarter": "Q4 2021",
+    "sales": [
+     6.1,
+     6.1
+    ]
+   },
+   "note": "preliminary unaudited: 'Fourth quarter 2021 consolidated net sales increased approximately 6.1% compared to the prior year'"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-01-27",
+   "source": "SH92",
+   "doc": "Q4 2021 release",
+   "eps_guide": [
+    9.25,
+    9.65
+   ],
+   "eps_guide_note": "adjusted, excluding acquisition-related amortization; GAAP $8.40 to $8.80",
+   "fy_words": "Up high-single digit % to low-double digit %",
+   "q_guide": {
+    "quarter": "Q1 2022",
+    "words": "Up low to mid-single digit %"
+   }
+  },
+  {
+   "fy": 2022,
+   "published": "2022-04-26",
+   "source": "SH94",
+   "doc": "Q1 2022 release",
+   "eps_guide": [
+    9.25,
+    9.65
+   ],
+   "eps_guide_note": "adjusted; GAAP $8.40 to $8.80",
+   "fy_words": "Up high-single digit to low-double digit %",
+   "q_guide": {
+    "quarter": "Q2 2022",
+    "words": "Up low-double digit to mid-teens %"
+   }
+  },
+  {
+   "fy": 2022,
+   "published": "2022-07-27",
+   "source": "SH95",
+   "doc": "Q2 2022 release",
+   "eps_guide": [
+    8.5,
+    8.8
+   ],
+   "eps_guide_note": "adjusted; GAAP $7.65 to $7.95",
+   "fy_words": "Up high-single to low-double digit %",
+   "q_guide": {
+    "quarter": "Q3 2022",
+    "words": "Up low to mid-teens %"
+   }
+  },
+  {
+   "fy": 2022,
+   "published": "2022-10-25",
+   "source": "SH96",
+   "doc": "Q3 2022 release",
+   "eps_guide": [
+    8.5,
+    8.8
+   ],
+   "eps_guide_note": "adjusted; GAAP $7.65 to $7.95",
+   "fy_words": "Up low-double digit %",
+   "q_guide": {
+    "quarter": "Q4 2022",
+    "words": "Up high-single to low-double digit %"
+   }
+  },
+  {
+   "fy": 2023,
+   "published": "2023-01-26",
+   "source": "SH97",
+   "doc": "Q4 2022 release",
+   "eps_guide": [
+    7.95,
+    8.65
+   ],
+   "eps_guide_note": "adjusted, excluding acquisition-related amortization ($0.81) and restructuring ($0.25 to $0.35); GAAP $6.79 to $7.59",
+   "fy_words": "Down mid-single digit % to flat",
+   "q_guide": {
+    "quarter": "Q1 2023",
+    "words": "Flat to up mid-single digit %"
+   }
+  },
+  {
+   "fy": 2023,
+   "published": "2023-04-25",
+   "source": "SH99",
+   "doc": "Q1 2023 release",
+   "eps_guide": [
+    7.95,
+    8.65
+   ],
+   "eps_guide_note": "adjusted; GAAP $6.79 to $7.59",
+   "fy_words": "Down mid-single digit % to flat",
+   "q_guide": {
+    "quarter": "Q2 2023",
+    "words": "Up or down low-single digit %"
+   }
+  },
+  {
+   "fy": 2023,
+   "published": "2023-07-25",
+   "source": "SH100",
+   "doc": "Q2 2023 release",
+   "eps_guide": [
+    9.3,
+    9.7
+   ],
+   "eps_guide_note": "adjusted, excluding acquisition-related amortization ($0.81) and restructuring ($0.03); GAAP $8.46 to $8.86",
+   "fy_words": "Up low-single digit %",
+   "q_guide": {
+    "quarter": "Q3 2023",
+    "words": "Up or down low-single digit %"
+   }
+  },
+  {
+   "fy": 2023,
+   "published": "2023-10-24",
+   "source": "SH101",
+   "doc": "Q3 2023 release",
+   "eps_guide": [
+    10.1,
+    10.3
+   ],
+   "eps_guide_note": "adjusted, excluding acquisition-related amortization ($0.80) and restructuring-related net expense ($0.09); GAAP $9.21 to $9.41",
+   "fy_words": "Up low-single digit %",
+   "q_guide": {
+    "quarter": "Q4 2023",
+    "words": "Up or down low-single digit %"
+   }
   }
  ],
  "dividends": [],
@@ -6245,5 +7551,14 @@
     "XBULL": 160
    }
   }
- }
+ },
+ "splits": [
+  {
+   "published": "2021-02-04",
+   "source": "SH86",
+   "effective": "2021-04-01",
+   "ratio": 3,
+   "note": "three-for-one, a stock dividend to holders of record at the close of business on March 23, 2021, distributed after the close of trading on March 31, 2021; split-adjusted trading from April 1, 2021"
+  }
+ ]
 }

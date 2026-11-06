@@ -7,7 +7,8 @@ market statistics, with paint and coatings signals (retro/templates/shw_engine.p
   1. selects only the history vintage, prints, guides and dividends whose 'published' date is <= AS_OF,
   2. computes every market statistic from daily prices truncated at AS_OF, on the AS_OF share basis (Yahoo's split-adjusted
      series times the splits after AS_OF: the three-for-one split of 2021-04-01 for every date before it; the 1997 split
-     precedes every per-share fact in the fact sheet),
+     precedes every per-share fact in the fact sheet; from 2021-04-01 the per-share facts published before it are divided by three,
+     on_basis with the split record of the fact sheet),
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 Sherwin-Williams' fiscal year is the calendar year. Each earnings release (and an outlook 8-K between releases) guides the
@@ -27,7 +28,7 @@ year ('withdrawn': the Q1 2020 release's FY2020 net sales range), which voids th
 2020 rule; retro/README.md, "SHW 2018-2020").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2020 were accepted before the open or during the session on the
+where it is the first trading day after it. The earnings 8-Ks of 2007-2023 were accepted before the open or during the session on the
 release day; a release on the week's last trading day (Thursday 2011-04-21 and 2014-04-17, before Good Friday; Friday 2013-10-25) counts
 for that close, by an 8-K accepted before the open or during the session (the UNP 2014 rule).
 
@@ -39,6 +40,7 @@ Usage
   python3 retro/build_shw.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_shw.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_shw.py --weekly 2018-01-01 2020-12-31
+  python3 retro/build_shw.py --weekly 2021-01-01 2023-12-31
   python3 retro/build_shw.py 2008-01-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SHW/<AS_OF>
 """
@@ -379,7 +381,7 @@ REF_LOW         = {px[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
-EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}
+EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}{"; " + h["split_note"] if h.get("split_note") else ""}
 REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # net sales, USD bn
 SHARES_HIST   = {R({y: round(v, 3) for y, v in shares.items()})}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}

@@ -683,3 +683,159 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2020-12-18 | $728.23 | Sherwin-Williams Q3 2020 results | 3.15 | -0.45 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.0% | -6.1pp | +4.5% | ✓ |
 | 2020-12-24 | $733.90 | Sherwin-Williams Q3 2020 results | 3.15 | -0.48 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.1% | -6.0pp | +3.1% | ✓ |
 | 2020-12-31 | $734.91 | Sherwin-Williams Q3 2020 results | 3.15 | -0.49 | 2.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.2% | -6.7pp | +2.2% | ✓ |
+| 2021-01-08 | $728.77 | Sherwin-Williams Q3 2020 results | 3.15 | -0.45 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-15 | $725.55 | Sherwin-Williams Q3 2020 results | 3.15 | -0.43 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-22 | $732.17 | Sherwin-Williams Q3 2020 results | 3.15 | -0.46 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-01-29 | $691.80 | Sherwin-Williams Q4 2020 results | 3.00 | +0.20 | 0.75x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-02-05 | $716.58 | Sherwin-Williams Q4 2020 results | 3.00 | -0.00 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-02-12 | $721.05 | Sherwin-Williams Q4 2020 results | 3.00 | -0.03 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-02-19 | $716.91 | Sherwin-Williams Q4 2020 results | 3.00 | +0.21 | 0.72x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-02-26 | $680.34 | Sherwin-Williams Q4 2020 results | 3.00 | +0.41 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-03-05 | $675.69 | Sherwin-Williams Q4 2020 results | 3.00 | +0.44 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-03-12 | $708.13 | Sherwin-Williams Q4 2020 results | 3.00 | +0.26 | 0.66x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-03-19 | $706.25 | Sherwin-Williams Q4 2020 results | 3.00 | +0.27 | 0.65x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-03-26 | $759.02 | Sherwin-Williams Q4 2020 results | 3.00 | -0.11 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-04-01 | $249.75 | Sherwin-Williams Q4 2020 results | 3.00 | -0.05 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2021-04-09 | $255.29 | Sherwin-Williams Q4 2020 results | 3.00 | -0.14 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2021-04-16 | $266.92 | Sherwin-Williams Q4 2020 results | 3.00 | -0.31 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2021-04-23 | $273.92 | Sherwin-Williams Q4 2020 results | 3.00 | -0.41 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-04-28 | $268.96 | Sherwin-Williams Q1 2021 results | 2.80 | -0.47 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2021-05-07 | $287.23 | Sherwin-Williams Q1 2021 results | 2.80 | -0.73 | 2.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-05-14 | $286.09 | Sherwin-Williams Q1 2021 results | 2.80 | -0.69 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-05-21 | $283.13 | Sherwin-Williams Q1 2021 results | 2.80 | -0.65 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-05-28 | $283.53 | Sherwin-Williams Q1 2021 results | 2.80 | -0.64 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-06-04 | $283.20 | Sherwin-Williams Q1 2021 results | 2.80 | -0.64 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-06-11 | $276.74 | Sherwin-Williams Q1 2021 results | 2.80 | -0.54 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-06-18 | $268.16 | Sherwin-Williams Q1 2021 results | 2.80 | -0.42 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2021-06-25 | $273.99 | Sherwin-Williams Q1 2021 results | 2.80 | -0.50 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2021-07-02 | $275.22 | Sherwin-Williams Q1 2021 results | 2.80 | -0.51 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2021-07-09 | $276.22 | Sherwin-Williams Q1 2021 results | 2.80 | -0.52 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-07-16 | $282.41 | Sherwin-Williams Q1 2021 results | 2.80 | -0.60 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2021-07-23 | $285.97 | Sherwin-Williams Q1 2021 results | 2.80 | -0.65 | 2.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-07-28 | $287.54 | Sherwin-Williams Q2 2021 results | 2.20 | -1.09 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-08-06 | $296.95 | Sherwin-Williams Q2 2021 results | 2.20 | -1.22 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-08-13 | $305.66 | Sherwin-Williams Q2 2021 results | 2.20 | -1.33 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-08-20 | $307.06 | Sherwin-Williams Q2 2021 results | 2.20 | -1.35 | 3.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-08-27 | $302.87 | Sherwin-Williams Q2 2021 results | 2.20 | -1.29 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-09-03 | $307.43 | Sherwin-Williams Q2 2021 results | 2.20 | -1.36 | 3.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-09-10 | $300.64 | Sherwin-Williams Q2 2021 results | 2.20 | -1.25 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-09-17 | $293.74 | Sherwin-Williams Q2 2021 results | 2.20 | -1.15 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-09-24 | $291.80 | Sherwin-Williams Q2 2021 results | 2.20 | -1.12 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-01 | $285.04 | Sherwin-Williams Q2 2021 results | 2.20 | -1.02 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2021-10-08 | $289.99 | Sherwin-Williams Q2 2021 results | 2.20 | -1.09 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-15 | $296.39 | Sherwin-Williams Q2 2021 results | 2.20 | -1.17 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-22 | $306.62 | Sherwin-Williams Q2 2021 results | 2.20 | -1.30 | 2.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-10-27 | $317.38 | Sherwin-Williams Q3 2021 results | 1.30 | -2.65 | 91.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-05 | $319.03 | Sherwin-Williams Q3 2021 results | 1.30 | -2.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-12 | $331.40 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-19 | $332.25 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-11-26 | $323.30 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-03 | $342.40 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-10 | $346.46 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-17 | $340.44 | Sherwin-Williams Q3 2021 results | 1.30 | -2.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-23 | $338.38 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2021-12-31 | $352.16 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-07 | $323.22 | Sherwin-Williams Q3 2021 results | 1.30 | -2.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-14 | $308.46 | Sherwin-Williams preliminary Q4 and FY2021 results | 1.30 | -2.58 | 93.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-21 | $292.85 | Sherwin-Williams preliminary Q4 and FY2021 results | 1.30 | -2.49 | 7.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-01-28 | $287.70 | Sherwin-Williams Q4 2021 results | 1.80 | -1.51 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-04 | $281.73 | Sherwin-Williams Q4 2021 results | 1.80 | -1.44 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-11 | $273.10 | Sherwin-Williams Q4 2021 results | 1.80 | -1.34 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-18 | $268.07 | Sherwin-Williams Q4 2021 results | 1.80 | -1.53 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-02-25 | $267.27 | Sherwin-Williams Q4 2021 results | 1.80 | -1.52 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-04 | $258.49 | Sherwin-Williams Q4 2021 results | 1.80 | -1.40 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-11 | $233.59 | Sherwin-Williams Q4 2021 results | 1.80 | -0.75 | 0.47x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2022-03-18 | $251.53 | Sherwin-Williams Q4 2021 results | 1.80 | -1.29 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-03-25 | $245.21 | Sherwin-Williams Q4 2021 results | 1.80 | -1.04 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-01 | $255.21 | Sherwin-Williams Q4 2021 results | 1.80 | -1.34 | 0.89x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-04-08 | $263.76 | Sherwin-Williams Q4 2021 results | 1.80 | -1.47 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-04-14 | $252.90 | Sherwin-Williams Q4 2021 results | 1.80 | -1.30 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-04-22 | $244.92 | Sherwin-Williams Q4 2021 results | 1.80 | -1.03 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-04-27 | $279.38 | Sherwin-Williams Q1 2022 results | 1.65 | -1.79 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-05-06 | $273.38 | Sherwin-Williams Q1 2022 results | 1.65 | -1.71 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-05-13 | $273.33 | Sherwin-Williams Q1 2022 results | 1.65 | -1.70 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-05-20 | $257.95 | Sherwin-Williams Q1 2022 results | 1.65 | -1.49 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-05-27 | $276.35 | Sherwin-Williams Q1 2022 results | 1.65 | -1.74 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-06-03 | $268.88 | Sherwin-Williams Q1 2022 results | 1.65 | -1.64 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-06-10 | $247.42 | Sherwin-Williams Q1 2022 results | 1.65 | -1.15 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-06-17 | $222.79 | Sherwin-Williams Q1 2022 results | 1.65 | -0.57 | 0.28x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2022-06-24 | $231.25 | Sherwin-Williams Q1 2022 results | 1.65 | -0.75 | 0.39x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2022-07-01 | $235.23 | Sherwin-Williams Q1 2022 results | 1.65 | -0.84 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-07-08 | $238.29 | Sherwin-Williams Q1 2022 results | 1.65 | -0.90 | 0.49x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-07-15 | $245.57 | Sherwin-Williams Q1 2022 results | 1.65 | -1.10 | 0.62x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-07-22 | $259.01 | Sherwin-Williams Q1 2022 results | 1.65 | -1.49 | 0.92x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2022-07-28 | $243.04 | Sherwin-Williams Q2 2022 results | 2.00 | -1.09 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-05 | $237.08 | Sherwin-Williams Q2 2022 results | 2.00 | -0.99 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-12 | $251.61 | Sherwin-Williams Q2 2022 results | 2.00 | -1.21 | 1.37x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-19 | $244.58 | Sherwin-Williams Q2 2022 results | 2.00 | -1.10 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-08-26 | $235.70 | Sherwin-Williams Q2 2022 results | 2.00 | -0.92 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2022-09-02 | $231.81 | Sherwin-Williams Q2 2022 results | 2.00 | -0.81 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2022-09-09 | $240.35 | Sherwin-Williams Q2 2022 results | 2.00 | -1.01 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2022-09-16 | $221.56 | Sherwin-Williams Q2 2022 results | 2.00 | -0.43 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-09-23 | $211.22 | Sherwin-Williams Q2 2022 results | 2.00 | -0.17 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-09-30 | $204.75 | Sherwin-Williams Q2 2022 results | 2.00 | -0.01 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-07 | $205.60 | Sherwin-Williams Q2 2022 results | 2.00 | -0.02 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-14 | $201.70 | Sherwin-Williams Q2 2022 results | 2.00 | +0.08 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-10-21 | $207.82 | Sherwin-Williams Q2 2022 results | 2.00 | -0.08 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-10-26 | $220.88 | Sherwin-Williams Q3 2022 results | 3.20 | +1.33 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-11-04 | $216.23 | Sherwin-Williams Q3 2022 results | 3.20 | +1.45 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2022-11-11 | $237.24 | Sherwin-Williams Q3 2022 results | 3.20 | +0.79 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-11-18 | $240.04 | Sherwin-Williams Q3 2022 results | 3.20 | +0.72 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-11-25 | $249.52 | Sherwin-Williams Q3 2022 results | 3.20 | +0.51 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2022-12-02 | $257.75 | Sherwin-Williams Q3 2022 results | 3.20 | +0.26 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2022-12-09 | $252.88 | Sherwin-Williams Q3 2022 results | 3.20 | +0.42 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2022-12-16 | $240.47 | Sherwin-Williams Q3 2022 results | 3.20 | +0.75 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-12-23 | $242.67 | Sherwin-Williams Q3 2022 results | 3.20 | +0.72 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2022-12-30 | $237.33 | Sherwin-Williams Q3 2022 results | 3.20 | +0.84 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-01-06 | $235.80 | Sherwin-Williams Q3 2022 results | 3.20 | +0.89 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-01-13 | $245.88 | Sherwin-Williams Q3 2022 results | 3.20 | +0.66 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-01-20 | $245.31 | Sherwin-Williams Q3 2022 results | 3.20 | +0.67 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-01-27 | $228.54 | Sherwin-Williams Q4 2022 results | 3.25 | +0.31 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-02-03 | $241.73 | Sherwin-Williams Q4 2022 results | 3.25 | +0.06 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-02-10 | $230.49 | Sherwin-Williams Q4 2022 results | 3.25 | +0.28 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-02-17 | $227.98 | Sherwin-Williams Q4 2022 results | 3.25 | +0.34 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-02-24 | $221.08 | Sherwin-Williams Q4 2022 results | 3.25 | +0.57 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-03-03 | $228.34 | Sherwin-Williams Q4 2022 results | 3.25 | +0.35 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-03-10 | $214.10 | Sherwin-Williams Q4 2022 results | 3.25 | +0.86 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-03-17 | $217.32 | Sherwin-Williams Q4 2022 results | 3.25 | +0.77 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-03-24 | $211.28 | Sherwin-Williams Q4 2022 results | 3.25 | +0.94 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-03-31 | $224.77 | Sherwin-Williams Q4 2022 results | 3.25 | +0.46 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-04-06 | $223.98 | Sherwin-Williams Q4 2022 results | 3.25 | +0.50 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-04-14 | $225.65 | Sherwin-Williams Q4 2022 results | 3.25 | +0.43 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-04-21 | $233.64 | Sherwin-Williams Q4 2022 results | 3.25 | +0.22 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-04-26 | $228.90 | Sherwin-Williams Q1 2023 results | 3.40 | +0.42 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-05-05 | $230.84 | Sherwin-Williams Q1 2023 results | 3.40 | +0.38 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-05-12 | $227.43 | Sherwin-Williams Q1 2023 results | 3.40 | +0.47 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-05-19 | $232.77 | Sherwin-Williams Q1 2023 results | 3.40 | +0.34 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-05-26 | $229.14 | Sherwin-Williams Q1 2023 results | 3.40 | +0.43 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-06-02 | $240.83 | Sherwin-Williams Q1 2023 results | 3.40 | +0.19 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-06-09 | $240.76 | Sherwin-Williams Q1 2023 results | 3.40 | +0.19 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-06-16 | $247.89 | Sherwin-Williams Q1 2023 results | 3.40 | +0.08 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-06-23 | $247.04 | Sherwin-Williams Q1 2023 results | 3.40 | +0.09 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2023-06-30 | $265.52 | Sherwin-Williams Q1 2023 results | 3.40 | -0.18 | 2.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-07-07 | $255.42 | Sherwin-Williams Q1 2023 results | 3.40 | -0.01 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2023-07-14 | $267.04 | Sherwin-Williams Q1 2023 results | 3.40 | -0.17 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-07-21 | $268.73 | Sherwin-Williams Q1 2023 results | 3.40 | -0.19 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2023-07-26 | $280.90 | Sherwin-Williams Q2 2023 results | 3.20 | -0.20 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-08-04 | $273.56 | Sherwin-Williams Q2 2023 results | 3.20 | -0.10 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-08-11 | $273.72 | Sherwin-Williams Q2 2023 results | 3.20 | -0.10 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-08-18 | $270.15 | Sherwin-Williams Q2 2023 results | 3.20 | -0.05 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-08-25 | $264.63 | Sherwin-Williams Q2 2023 results | 3.20 | +0.04 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-09-01 | $274.82 | Sherwin-Williams Q2 2023 results | 3.20 | -0.11 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-09-08 | $271.45 | Sherwin-Williams Q2 2023 results | 3.20 | -0.06 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-09-15 | $261.63 | Sherwin-Williams Q2 2023 results | 3.20 | +0.12 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-09-22 | $254.67 | Sherwin-Williams Q2 2023 results | 3.20 | +0.30 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-09-29 | $255.05 | Sherwin-Williams Q2 2023 results | 3.20 | +0.29 | 0.67x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2023-10-06 | $254.85 | Sherwin-Williams Q2 2023 results | 3.20 | +0.30 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2023-10-13 | $246.94 | Sherwin-Williams Q2 2023 results | 3.20 | +0.57 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2023-10-20 | $237.70 | Sherwin-Williams Q2 2023 results | 3.20 | +0.76 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-10-25 | $238.61 | Sherwin-Williams Q3 2023 results | 2.70 | +0.36 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-11-03 | $250.91 | Sherwin-Williams Q3 2023 results | 2.70 | +0.16 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-11-10 | $255.75 | Sherwin-Williams Q3 2023 results | 2.70 | +0.08 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2023-11-17 | $270.28 | Sherwin-Williams Q3 2023 results | 2.70 | -0.21 | 0.63x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2023-11-24 | $275.83 | Sherwin-Williams Q3 2023 results | 2.70 | -0.42 | 0.73x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2023-12-01 | $282.33 | Sherwin-Williams Q3 2023 results | 2.70 | -0.54 | 0.86x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2023-12-08 | $289.82 | Sherwin-Williams Q3 2023 results | 2.70 | -0.64 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-15 | $309.77 | Sherwin-Williams Q3 2023 results | 2.70 | -0.87 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-22 | $311.27 | Sherwin-Williams Q3 2023 results | 2.70 | -0.88 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-12-29 | $311.90 | Sherwin-Williams Q3 2023 results | 2.70 | -0.88 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |

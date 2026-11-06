@@ -1,0 +1,287 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SHW",
+ "company": "The Sherwin-Williams Company",
+ "as_of": "2021-06-11",
+ "price_date": "2021-06-11",
+ "price": 276.74,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); paint and coatings signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; 'The Americas Group consisted of 4,774 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing, manufacturing and oil production, refining, storage and transportation' (its own FY2020 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; 'The Americas Group consisted of 4,774 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing, manufacturing and oil production, refining, storage and transportation' (its own FY2020 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not. durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.84x; +72% to EPP floor; model-vs-market gap -0.54; conservative 2yr -10%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 1.84,
+  "ratio_b_fmt": "1.84x",
+  "epp": 160.83,
+  "epp_gap_pct": 72.1,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.8,
+  "sca": 0.1,
+  "adj_composite": 2.8,
+  "market_composite": 3.34,
+  "adj_gap": -0.54,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -9.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 8.94,
+    "pe": 19.6,
+    "price": 175,
+    "desc": "Flat EPS (worst year FY11-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 11.58,
+    "pe": 22.9,
+    "price": 265,
+    "desc": "EPS +13.9%/yr (Q1 sales + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 13.27,
+    "pe": 25.0,
+    "price": 332,
+    "desc": "EPS +21.9%/yr (FY11-FY20 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.65,
+    "pe": 27.1,
+    "price": 424,
+    "desc": "EPS +32.3%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.84,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.07,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -9.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 4.17,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.9,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.47,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.43,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -9.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.36,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.66,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.84,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.24,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.84,
+   "epp_gap_pct": 47.5,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.84,
+   "epp_gap_pct": 72.1,
+   "adj_gap": -0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "SHW (retrospective, 2021-06-11) ✕ AVOID — Ratio B 1.84x (36.8% downside to Bear $175 / +20.0% upside to Bull $332) | Adj composite 2.80 vs market 3.34: gap -0.54 [OVERVALUED] | +72% above the EPP floor $161 (18x FY21E $8.94) | Conservative 2-yr case: -9.5% total (-4.7%/yr) | At 31.0x FY21E the 15% hurdle price $366 sits above the BULL case; comps +8.2% in Q1 2021, forward sales +12.3% (no FY21 net sales guide in numbers, Q1 2021 net sales); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SH87",
+   "published": "2021-02-19",
+   "filed": "2021-02-19 11:42 ET, during the session",
+   "title": "Sherwin-Williams FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980021000010/shw-20201231.htm",
+   "supports": "selected financial data 2016-2020; statements of consolidated income 2018-2020 (millions); adjusted EPS $24.58 (2020) and $21.12 (2019); 2020 diluted shares 91,942,623; comparable store sales +2.7% (2020); segment net sales 2019-2020; quarterly dividend $1.65 from February 17, 2021; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH81",
+   "published": "2020-02-21",
+   "filed": "2020-02-21 15:03 ET, during the session",
+   "title": "Sherwin-Williams FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980020000005/shw-12312019x10k.htm",
+   "supports": "selected financial data 2015-2019; statements of consolidated income 2017-2019 (millions); adjusted EPS $21.12 (2019) and $18.53 (2018); 2019 average shares outstanding assuming dilution 93,446,842; comparable store sales +5.3% (2019); segment net sales 2018-2019; quarterly dividend $1.34 from February 19, 2020; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH76",
+   "published": "2019-02-22",
+   "filed": "2019-02-22 14:28 ET, during the session",
+   "title": "Sherwin-Williams FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980019000004/shw-12312018xex13.htm",
+   "supports": "financial summary 2014-2018 (2017 revised); statements of consolidated income 2016-2018; 2018 average shares outstanding assuming dilution 94,988,070; comparable store sales +5.1% (2018); segment net sales 2017-2018; quarterly dividend $1.13 from February 13, 2019; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH75",
+   "published": "2019-01-31",
+   "filed": "2019-01-31 07:14 ET, before the open",
+   "title": "Sherwin-Williams Q4 2018 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312519023138/d699691dex99.htm",
+   "supports": "Q4 and FY2018 statements of income (2017 revised for the inventory accounting change), comparable-store and segment sales; FY2018 adjusted EPS $18.53 (GAAP $11.67); FY2017 $15.07; Q1 2019 net sales +2% to 6%; FY2019 core net sales +4% to 7% and adjusted EPS $20.40 to $21.40 (GAAP $16.77 to $17.77)"
+  },
+  {
+   "id": "SH70",
+   "published": "2018-02-23",
+   "filed": "2018-02-23 14:11 ET, during the session",
+   "title": "Sherwin-Williams FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980018000004/shw-12312017xex13.htm",
+   "supports": "financial summary 2013-2017; statements of consolidated income 2015-2017; 2017 average common shares outstanding assuming dilution 94,927,213; comparable store sales +6.3% (2017); segment net sales 2016-2017; effective tax rate 25.1% excluding the deferred income tax reductions; quarterly dividend $.86 from February 14, 2018; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH69",
+   "published": "2018-01-25",
+   "filed": "2018-01-25 07:31 ET, before the open",
+   "title": "Sherwin-Williams Q4 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312518019026/d520779dex99.htm",
+   "supports": "Q4 and FY2017 statements of income, comparable-store and segment sales, Valspar's share; FY2017 EPS $15.07 excluding Valspar acquisition costs and one-time items (GAAP $18.67); FY2016 $12.85 excluding acquisition costs; FY2018 EPS $18.75 to $19.35 on the same basis (GAAP $15.35 to $15.85)"
+  },
+  {
+   "id": "SH65",
+   "published": "2017-02-22",
+   "filed": "2017-02-22 14:13 ET, during the session",
+   "title": "Sherwin-Williams FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980017000005/shw-12312016xex13.htm",
+   "supports": "financial summary 2012-2016 (2013-2015 diluted EPS restated to the treasury stock method); statements of consolidated income 2014-2016; 2016 average common shares outstanding assuming dilution 94,488,086; comparable store sales +5.3% excluding the revenue reclassification (2016); segment net sales 2015-2016; quarterly dividend $.85 from February 15, 2017; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH60",
+   "published": "2016-02-24",
+   "filed": "2016-02-24 14:23 ET, during the session",
+   "title": "Sherwin-Williams FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980016000026/shw-12312015xex13.htm",
+   "supports": "financial summary 2011-2015; statements of consolidated income 2013-2015; 2015 average common shares outstanding assuming dilution 94,024,092; comparable store sales +4.2% (2015); segment net sales 2014-2015; quarterly dividend $.84 from February 17, 2016; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH55",
+   "published": "2015-02-25",
+   "filed": "2015-02-25 14:18 ET, during the session",
+   "title": "Sherwin-Williams FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980015000004/shw-12312014xex13.htm",
+   "supports": "financial summary 2010-2014; statements of consolidated income 2012-2014; 2014 average common shares outstanding assuming dilution 98,075,435; comparable store sales +8.8% (2014); segment net sales 2013-2014; quarterly dividend $.67 from February 18, 2015; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH49",
+   "published": "2014-02-27",
+   "filed": "2014-02-27 14:26 ET, during the session",
+   "title": "Sherwin-Williams FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980014000045/shw-12312013xex13.htm",
+   "supports": "financial summary 2009-2013; statements of consolidated income 2011-2013; 2013 average common shares outstanding assuming dilution 103,048,871; comparable store sales +7.8% (2013); segment net sales 2012-2013; quarterly dividend $.55 from February 19, 2014; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH43",
+   "published": "2013-02-21",
+   "filed": "2013-02-21 08:23 ET, before the open",
+   "title": "Sherwin-Williams DOL settlement, revised 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312513068377/d490132dex99.htm",
+   "supports": "the $80.0 million ESOP settlement with the U.S. Department of Labor recorded in the fourth quarter of 2012; FY2012 diluted EPS $6.49 as reported and $6.02 revised (income before income taxes $987,309K and $907,309K)"
+  },
+  {
+   "id": "SH85",
+   "published": "2021-01-28",
+   "filed": "2021-01-28 07:13 ET, before the open",
+   "title": "Sherwin-Williams Q4 2020 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521019921/d61075dex99.htm",
+   "supports": "Q4 and FY2020 statements of income (millions), comparable-store and segment sales; FY2020 adjusted EPS $24.58 (GAAP $22.08); FY2021 adjusted EPS $26.40 to $27.20 (GAAP $23.87 to $24.67)"
+  },
+  {
+   "id": "SH88",
+   "published": "2021-04-27",
+   "filed": "2021-04-27 07:15 ET, before the open",
+   "title": "Sherwin-Williams Q1 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521132585/d154013dex99.htm",
+   "supports": "Q1 2021 statement of income (millions, after the split), same-store and Consumer Brands Group sales; FY2021 adjusted EPS $8.80 to $9.07 (GAAP $7.66 to $7.93)"
+  },
+  {
+   "id": "SH86",
+   "published": "2021-02-04",
+   "filed": "2021-02-03 16:16 ET, after the close",
+   "title": "Sherwin-Williams three-for-one stock split (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000119312521027314/d37953dex991.htm",
+   "supports": "three-for-one stock split in the form of a stock dividend to holders of record March 23, 2021, distributed after the close of trading on March 31, 2021; split-adjusted trading from April 1, 2021"
+  },
+  {
+   "id": "SH20",
+   "published": "2008-10-16",
+   "filed": "2008-10-16 09:48 ET, during the session",
+   "title": "Sherwin-Williams Q3 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015208007932/l34106aexv99.htm",
+   "supports": "Q3 2008 statement of income, comparable-store and Consumer Group sales, currency effect; FY2008 EPS $3.97 to $4.17; Q4 2008 EPS $.40 to $.60; the Global Group renamed the Global Finishes Group"
+  },
+  {
+   "id": "W0",
+   "published": "2021-06-11",
+   "title": "Yahoo Finance daily prices, SHW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SHW/history",
+   "supports": "close $276.74 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-06"
+}
