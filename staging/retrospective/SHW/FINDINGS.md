@@ -1,9 +1,9 @@
 # SHW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SHW weekly dates: 209 from 2008-01-04 to 2011-12-30. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the SHW weekly dates: 366 from 2008-01-04 to 2014-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: c486e3a; 2009-2011: c951197). Prices run to 2026-11-05 (2008) and 2026-11-06 (2009-2011); the two-year horizons end by
-2013-12-30 (three-year: 2014-12-30).
+pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6). Prices run to 2026-11-05 (2008, 2012-2014) and 2026-11-06 (2009-2011);
+the two-year horizons end by 2016-12-30 (three-year: 2017-12-29).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -99,3 +99,47 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   FAIR; a FAIR call would have held on one of them (2009-03-06, 3.7pp behind SPY) and failed on the rest; the IRS-settlement guide and the Good Friday print move no class. No encoding
   choice of this batch reaches the result: the level of the call, not an input, failed. The calls were decided before scoring and stay.
 
+## 2012-2014 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH (all) | 157 | +53.8% | +4.5% to +106.8% | 136 | 151 | +37.3% | 5 |
+| legacy tier AVOID (all) | 157 | +53.8% | +4.5% to +106.8% | 136 | 151 | +37.3% | 5 |
+| 2012 | 52 | +65.8% | +41.3% to +106.8% | 52 | 52 | +44.1% | 0 |
+| 2013 | 52 | +55.3% | +28.4% to +85.9% | 49 | 52 | +41.2% | 0 |
+| 2014 | 53 | +37.8% | +4.5% to +59.1% | 35 | 47 | +30.2% | 5 |
+| to 2014-10-24 | 147 | +54.7% | +23.9% to +106.8% | 136 | 147 | +38.3% | 0 |
+| from the Q3 2014 print (2014-10-29) | 10 | +12.0% | +4.5% to +14.4% | 0 | 4 | +13.4% | 5 |
+| lowest third by adjusted gap (-1.68 to -1.13) | 52 | +53.9% | | | | +46.6% | |
+| middle third (-1.13 to -0.84) | 52 | +68.1% | | | | +38.2% | |
+| highest third (-0.81 to -0.27) | 53 | +46.2% | | | | +32.7% | |
+
+- **The call failed on 152 of 157 dates and held only at the very end.** RICH and AVOID on every date, and the stock returned +4.5% to
+  +107% over two years (median +54%), cleared the hurdle on 136 and beat SPY on 151. Every date to 2014-10-24 beat SPY, by 2-63pp; the
+  eleven of them under the hurdle (five from 2013-09-27 to 2014-01-17, six from 2014-09-19 to 2014-10-24) still returned +24% to +30%. From the Q3 2014
+  print the two-year returns fell to +4.5% to +14.4% (SHW closed at $292 on 2015-05-19 and $219 on 2015-09-29, 25% lower): none cleared
+  the hurdle and five lagged SPY, by 1.5-8.5pp, so the call held on 2014-11-07, 2014-12-12, 2014-12-19, 2014-12-26 and 2014-12-31
+  (2014-12-05 tied SPY at -0.0pp and counts as a miss). One-year returns ran -0.4% to +73% (median +26.5%, ahead of SPY on 122);
+  three-year returns +31% to +193% (median +71%), ahead of SPY on all 157. Over 2008-2014 the RICH call held on 6 of 340 RICH dates.
+- **The two-year price landed beyond XBULL until 2014.** It landed nearest XBULL on 133 dates and BULL on 24 (all 2014). For the 2012
+  dates the two-year price ($177-265) was 1.09-1.53 times XBULL ($127-200); for 2013 0.91-1.37 times; for 2014 0.67-1.02 times XBULL and
+  1.10-1.52 times BULL. No path came near BEAR: the lowest close of every window was 2.0-2.8 times the BEAR price, and drawdowns ran 11-25%.
+- **The multiple band re-rated, two to three years late.** Hypothesis for the method, not a rule. The price ran 17.6-30.2x the guided
+  year (the 87th-100th percentile of its own ten-year range) while the window's median moved only from 14.1x to 15.8x and its 90th
+  percentile from 17.4x to 24.1x, as the stock's own recent multiples entered it. Unlike 2008-2011 the anchor was no trough (FY12 guides
+  $5.52-6.45, FY13 $7.15-7.50, FY14 $8.22-8.78, each above the year before), so the binding input was the band. The hurdle was missed only
+  at 24-30x (1.6-1.9 times the window median) and the call held only at 27-30x (1.7-1.9 times), after the price had nearly tripled from
+  $93; it cleared at 17.6-26.7x. Across the 157 dates the entry P/E ranks the two-year return at Spearman -0.80 (the m12-24 average price:
+  -0.68): the multiple ranked the dates the right way while its level read RICH from 1.25 times the median. With 2009-2011 this makes one
+  hypothesis: a band drawn only from the stock's own past decade cannot hold a re-rating that runs for years. Test a band that can re-rate on
+  other tickers and periods before any method change; never fit it to SHW's outcomes.
+- **Within the period, buying lower ranked the outcome; the composite gap did not.** The entry price ranks the return to the m12-24
+  average price at Spearman -0.72 (the two-year endpoint: -0.58), the EPP gap at -0.51 (-0.53) and the conservative two-year case at
+  +0.42 (+0.60), all the right way; Ratio B at -0.10 (-0.25), the right way but weak. The adjusted gap ranks it at -0.39 (-0.05) and the
+  proxy composite at -0.29 (-0.13), the wrong way: the most-overvalued third returned +54% over two years, the middle +68%, the least
+  overvalued +46%. The adjusted gap has now ranked SHW's dates -0.35 (2008), +0.70 (2009-2011) and -0.39 (2012-2014): for one stock it
+  says when to buy, not whether, and not reliably even that.
+- **The encoding calls, seen afterwards.** Every alternative in retro/README.md ("SHW 2012-2014") moves no class and no tier: BASE on
+  reported growth, the Consumer Group signal at BEAR or XBULL, the pre-tax margin thresholds with 2000 at GAAP, FY2012 at GAAP $6.02,
+  FY2011 before the IRS charge, and the FY2013 guide and Q4 2013 sales guide with or without Comex. No encoding choice reaches the result:
+  the level of the call failed on 152 dates and held on 5, with no input deciding either. The calls were decided before scoring and stay.
