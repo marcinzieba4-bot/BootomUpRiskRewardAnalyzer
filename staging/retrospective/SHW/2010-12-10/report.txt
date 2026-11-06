@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SHW  ·  The Sherwin-Williams Company  ·  $77.76  ·  RETROSPECTIVE as of 2010-12-10
+  Signal: ✕ AVOID   Ratio B: 32.87x   Adj gap: -1.62  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2010-12-10; latest print Q3 2010 (Oct 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2010E net sales, USD bn  →  FY2012E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2010E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores Group        $     4.6  $   4.6  $   4.9      +0.0      +0.3
+    -12.9% net sales in FY09
+  Global Finishes Group     $     1.8  $   1.8  $   1.9      +0.0      +0.1
+    -11.4% net sales in FY09
+  Consumer Group            $     1.3  $   1.3  $   1.4      +0.0      +0.1
+    -3.7% net sales in FY09
+  Administrative            $     0.0  $   0.0  $   0.0      +0.0      +0.0
+    -8.0% net sales in FY09
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     7.7  $   7.7  $   8.2      +0.0      +0.5
+  FY2010E = FY09 $7.09B × (1 + 8.3%: no FY10 net sales guide in numbers, Q3 2010 net sales ex-currency, applied to the year (no FY10 net sales guide in numbers)); split pro rata to FY09 segment net sales (FY2009 10-K)
+  Q3 2010 (Oct 26): net sales $2.17B +8.8%; comps +5.1%; Consumer Group +3.0%; gross margin 44.73% (-179.4bp);
+  pre-tax margin 11.76% (-119.6bp); EPS $1.60 vs $1.51
+  Comparable-store sales: 'Net sales from stores open for more than twelve calendar months increased 5.1% in the quarter'; Consumer Group: 'Net sales of the Consumer Group increased 3.0% to $340.4 million in the quarter'; currency +0.6pp ('Favorable currency translation rate changes increased consolidated net sales 0.6% in the quarter'); 'Acquisitions increased consolidated net sales 3.4% in the quarter'
+  FY10 guide (Q4 2009 release, Q1 2010 release, Q2 2010 release, Q3 2010 release): EPS $4.12-4.22; net sales in words: 'consolidated net sales to increase above 2009 levels by a high single digit percentage'; Q4 2010: net sales in words: 'consolidated net sales will increase in the mid teens compared to last year’s fourth quarter primarily due to acquisitions', EPS $0.59-0.69
+
+  FY2010E EPS check:  $7.7B × 8.8% pre-tax × (1−30.0%) ÷ 0.108B  =  $4.36  (FY2010E EPS, guide midpoint)
+  FY2012E BEAR check: $7.7B × 8.8% ÷ 0.100B  =  $4.72  (scenario $3.02)
+  FY2012E BULL check: $8.2B × 9.2% ÷ 0.100B  =  $5.26  (scenario $5.24)
+  Every 1pp of pre-tax margin ≈ $0.50 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores comparable sales       -7.0%   ≥-1.0%    ≥4.0%   ≥14.0%     +5.1%  ▲ BULL  ███░
+  Gross margin change               -290.0bp  ≥-130.0bp  ≥30.0bp  ≥180.0bp  -179.4bp  ⚠ BEAR  █░░░
+  Net sales growth                   -10.0%   ≥-3.0%    ≥4.0%   ≥18.0%     +8.8%  ▲ BULL  ███░
+  Consumer Group net sales growth    -20.0%   ≥-9.0%    ≥2.0%   ≥21.0%     +3.0%  ▲ BULL  ███░
+  Pre-tax margin change             -220.0bp  ≥-110.0bp   ≥0.0bp  ≥160.0bp  -119.6bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $78 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.15  →  Gap -1.62  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY09 net sales -11.1% on Paint Stores comps -12.9%, 3,354 paint stores; Q3 gross margin 44.73% (-179.4bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.6x FY10E vs a 13.9x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY10 net sales guide in numbers, Q3 2010 net sales ex-currency +8.2% vs a 2.5% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY09 year-end cash $0.069B, FY09 free cash flow $0.77B, dividend $1.44 a year, 9.00 million shares purchased in 2009; remaining authorization 10.75 million shares at December 31, 2009  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Paint Stores comparable sales        +5.1%     -7.0%  -12.1%  Housing turnover and repaint demand f…
+  Gross margin change               -179.4bp  -290.0bp  -110.6bp  Raw material costs outrun selling prices
+  Net sales growth                     +8.8%    -10.0%  -18.8%  Volume falls faster than prices, stor…
+  Consumer Group net sales growth      +3.0%    -20.0%  -23.0%  DIY demand at the big retailers shrinks
+  Pre-tax margin change             -119.6bp  -220.0bp  -100.4bp  Store and selling costs deleverage on…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$48  (model)  /  $37 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: Paint Stores comparable sales went from +5.9% (Q2 2010) to +5.1% (Q3 2010);
+  the bear case needs a demand recession that gross margin (-179.4bp now)
+  and selling prices no longer cover. Housing drives demand, by the company's own account; the bear needs raw
+  material costs to stay up while volumes fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.17  (FY2010E EPS, guide midpoint)
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2000 11.9x, 2001 12.1x, 2002 10.8x, 2003 11.0x, 2004 12.2x, 2005 12.4x, 2006 9.9x, 2007 12.3x, 2008 11.3x, 2009 11.4x, 2010 13.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $46/share
+  Current $78 vs Updated EPP $46:  +70%  ⚠ far above floor — large drawdown room
+  Bear $37 vs Updated EPP $46:  -19%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Paint Stores comparable sales               -1.0       -6.1   BASE floor (vs +5 now)
+  Gross margin change                       -130.0      +49.4   BASE floor (vs -179 now)
+  Net sales growth                            -3.0      -11.8   BASE floor (vs +9 now)
+  Consumer Group net sales growth             -9.0      -12.0   BASE floor (vs +3 now)
+  Pre-tax margin change                     -110.0       +9.6   BASE floor (vs -120 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.17 × (1+10.1%)² = $5.05
+  At 13x P/E (conservative):  $66/share
+  + Cumul. dividends (2yr):  +$2.97/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $66  (▼12 from $78)
+  Conservative total return:  -12% over 2yr  = -6%/yr
+
+  10.1% EPS growth is what is left once the premium multiple (18.6x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2012E EPS of $5.75,
+  i.e. 17.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $57.86  –  $80.53  (at 88th pct of range)
+  Annual dividend:      $1.44/share  (yield 1.9%)
+  Realized vol (1yr):   21% annualized
+  Beta vs broad market: 0.65
+  1-sigma range (1yr):  $61  –  $94  ($78 ± 21%)
+  2-sigma range (1yr):  $44  –  $111
+  ────────────────────────────────────────────────────────────
+  Bear $37 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  A paint and coatings company with a 0.7 beta: the stock is +34% off its January
+  low while Paint Stores comparable sales went from +5.9% (Q2 2010) to +5.1% (Q3 2010).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.02  12.1x  $     37    15.5%      1.2%   +14.3pp  EPS -14.9%/yr (worst year FY00-FY09, capped at 0%); P/E to its 10th pct
+  BASE        5.24  13.9x  $     73    54.1%      4.3%   +49.8pp  EPS +12.1%/yr (Q3 ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        5.24  15.0x  $     79    25.6%     15.0%   +10.6pp  EPS +12.1%/yr (FY00-FY09 CAGR); P/E holds its 75th pct
+  XBULL       6.42  16.3x  $    105     4.8%     79.5%   -74.6pp  EPS +24.1%/yr (best 2-yr run FY00-FY09); P/E at its 90th pct
+
+  Proxy EV (2yr): $70  /  Market EV: $99  /  Current: $78
+  Conservative EV (2yr, ④): $66 + $2.97 divs = $69 total value
+  Downside (→ Bear $37): 52.4%   Upside (→ Bull $79): 1.6%   Ratio B 32.87x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $78 the market needs $103 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.15: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      32.87x     +70%    -1.62  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     5.35x     +70%    -1.20  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +70%    -1.62  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         12.27x     +70%    -1.60  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +70%    -1.62  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)            32.87x     +70%    -1.32  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                32.87x     +33%    -1.52  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                   32.87x     +70%    -1.36  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2010 print (late January) — the next read on comps (+5.1% now) and the guide
+  (2) Gross margin — -179.4bp in Q3 2010: raw material costs against selling prices, what must hold if comps do not
+  (3) FY10 EPS guide $4.12-4.22 (Q3 2010 release)
+  (4) Pre-tax margin — 11.76% in Q3 2010 (-119.6bp): where store and selling costs deleverage on falling comps
+  (5) Capital return at 19x — 1.13 million shares purchased in the quarter; remaining authorization 7.28 million shares at September 30, 2010: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $46  |  ADD below ~$62  |  TRIM above $79
+════════════════════════════════════════════════════════════════════════
+

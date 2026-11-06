@@ -11,8 +11,8 @@ market statistics, with paint and coatings signals (retro/templates/shw_engine.p
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 Sherwin-Williams' fiscal year is the calendar year. Each earnings release (and an outlook 8-K between releases) guides the
-next quarter and the fiscal year: diluted EPS ranges in numbers; net sales in numbers only in the Q2 and Q3 2007 releases,
-otherwise in words. Guides are therefore their own dated list, as for LOW, and each field comes from the latest guide for the
+next quarter and the fiscal year: diluted EPS ranges in numbers; net sales in numbers in some releases (Q2-Q3 2007, most of 2009
+and 2011), otherwise in words. Guides are therefore their own dated list, as for LOW, and each field comes from the latest guide for the
 current fiscal year that states it. The method r2 inputs map as follows (retro/README.md, "SHW"):
   - current-FY EPS: the fiscal-year EPS guide midpoint (no numeric EPS guide: the last full year's EPS stands),
   - forward revenue growth: the next-quarter net sales guide for a quarter not yet reported (none in numbers: the fiscal-year
@@ -22,12 +22,15 @@ current fiscal year that states it. The method r2 inputs map as follows (retro/R
 Words ('fy_words', a quarter's 'words') are shown in the guide line and feed no input (the UNP 2016 rule).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2008 were accepted during the session on the release day.
+where it is the first trading day after it. The earnings 8-Ks of 2007-2011 were accepted before the open or during the session on the
+release day; a release on the week's last trading day (Thursday 2011-04-21, before Good Friday) counts for that close, by an 8-K accepted
+during the session (the UNP 2014 rule).
 
 Output goes to staging/retrospective/SHW until the series is added to the archive (--out archive/retrospective/SHW).
 
 Usage
   python3 retro/build_shw.py --weekly 2008-01-01 2008-12-31
+  python3 retro/build_shw.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_shw.py 2008-01-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SHW/<AS_OF>
 """
@@ -65,7 +68,9 @@ def fiscal_year(day):
 
 
 def eps_rng(lo, hi):
-    return money(lo) if lo == hi else f"{money(lo)}-{money(hi)}"
+    """an EPS range: '4.70-4.75', a loss in parentheses ('(0.05)-0.15')"""
+    m = lambda x: f"({money(-x)})" if x < 0 else money(x)
+    return m(lo) if lo == hi else f"{m(lo)}-{m(hi)}"
 
 
 def rule_t(rt):
@@ -188,7 +193,10 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd = [latest["lc_pct"]] * 2
         fwd_label = f"no {fy_now} net sales guide in numbers, {latest['quarter']} net sales ex-currency"
         fwd_short, fwd_period = f"{latest['quarter'][:2]} ex-FX", latest["quarter"]
-        fwd_kind = f"no net sales guide in numbers: {latest['quarter']} growth {latest['sales_pct']:+.1f}% less the {latest['currency_pp']:.1f}pp currency effect the release states"
+        cx = latest["currency_pp"]
+        fwd_kind = (f"no net sales guide in numbers: {latest['quarter']} growth {latest['sales_pct']:+.1f}% "
+                    + (f"less the {cx:.1f}pp currency effect the release states" if cx >= 0 else
+                       f"plus the {-cx:.1f}pp currency drag the release states"))
     else:                                    # ... as reported when the release states no currency effect
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"no {fy_now} net sales guide in numbers, {latest['quarter']} net sales"
@@ -197,7 +205,7 @@ def build(as_of, facts, raw, spx, engine, out):
     fy_rev = gr["rev_guide"] if gr else fwd
     fy_rev_label = f"{fy_now} net sales guide" if gr else f"{fwd_label}, applied to the year (no {fy_now} net sales guide in numbers)"
     if guides:
-        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}"] if ge else []) + \
+        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
                ([f"net sales {pct_range(*gr['rev_guide'])}"] if gr else []) + \
                ([f"net sales in words: '{gw['fy_words']}'"] if gw and (not gr or gw["published"] > gr["published"]) else []) + \
                ([f"{q['quarter']}: " + ", ".join(
@@ -257,11 +265,14 @@ def build(as_of, facts, raw, spx, engine, out):
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
-    # a print dated AS_OF meets AS_OF's close only if it was public before the open (the week's last trading day)
+    # a print dated AS_OF meets AS_OF's close only if it was public before it: before the open, or (a release on the Thursday
+    # before Good Friday, when no trading day followed it in its week) by an 8-K accepted during the session (the UNP 2014 rule)
     same_day = [p for p in prints if p["published"] == as_of]
     if same_day:
-        assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
-        tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
+        rt = same_day[-1].get("release_time", "")
+        assert "before the open" in rt or "before the close" in rt, (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the close")
+        tag = (f"(day of the {same_day[-1]['quarter']} print, public before the open)" if "before the open" in rt else
+               f"(day of the {same_day[-1]['quarter']} print, released during the session)")
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
@@ -286,7 +297,7 @@ def build(as_of, facts, raw, spx, engine, out):
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = f"; EPS {latest['eps_note']}" if latest.get("eps_note") else ""
-    fx_txt = (f"currency +{latest['currency_pp']:.1f}pp ('{latest['currency_note']}')" if latest["currency_pp"] is not None
+    fx_txt = (f"currency {latest['currency_pp']:+.1f}pp ('{latest['currency_note']}')" if latest["currency_pp"] is not None
               else latest["currency_note"])
     volumes = (f"Comparable-store sales: '{latest['comps_note']}'; Consumer Group: '{latest['consumer_note']}'; {fx_txt}; "
                f"{latest['acq_note']}{eps_note}")
