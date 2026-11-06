@@ -1,9 +1,9 @@
 # SHW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SHW weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the SHW weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306). Prices run to 2026-11-05 (2008, 2012-2014) and
-2026-11-06 (2009-2011, 2015-2017); the two-year horizons end by 2019-12-27 (three-year: 2020-12-29).
+pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306; 2018-2020: 205620b). Prices run to 2026-11-05
+(2008, 2012-2014) and 2026-11-06 (2009-2011, 2015-2020); the two-year horizons end by 2022-12-30 (three-year: 2023-12-29).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -206,3 +206,62 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   (one FAIR date to CHEAP would have held; 2016-10-26 RICH to FAIR would not). The revenue reclassification taken out of BASE moves 3
   toward RICH, all of which would have failed (one FAIR held as built). FY2016 at $12.45, BASE on reported growth and the FY2015 range not
   carried move nothing. The calls were decided before scoring and stay; changing a rule means a new method version tested elsewhere.
+
+## 2018-2020 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 78 | +53.2% | +1.3% to +105.4% | 71 | 70 | +44.1% | 78 |
+| class FAIR | 25 | +61.1% | +2.0% to +80.6% | 23 | 23 | +43.4% | 12 |
+| class RICH | 54 | +36.3% | -11.1% to +83.5% | 27 | 28 | +40.7% | 26 |
+| legacy tier BUY | 84 | +58.2% | +1.3% to +105.4% | 77 | 76 | +46.5% | 74 |
+| legacy tier ACCUMULATE | 15 | +73.4% | +32.9% to +80.6% | 15 | 15 | +44.5% | 7 |
+| legacy tier WATCHLIST | 26 | +65.2% | +2.0% to +83.5% | 23 | 23 | +43.1% | 10 |
+| legacy tier AVOID | 32 | +7.5% | -11.1% to +70.2% | 6 | 7 | +23.0% | 25 |
+| 2018 (CHEAP 47, FAIR 5) | 52 | +47.5% | +1.3% to +96.3% | 45 | 52 | +32.5% | 49 |
+| 2019 (CHEAP 19, FAIR 14, RICH 19) | 52 | +75.7% | +58.0% to +105.4% | 52 | 52 | +47.9% | 24 |
+| 2020 (RICH 35, CHEAP 12, FAIR 6) | 53 | +24.7% | -11.1% to +85.9% | 24 | 17 | +44.7% | 43 |
+| to 2018-10-19, BASE with Valspar (CHEAP 39, FAIR 3) | 42 | +45.5% | +1.3% to +74.9% | 35 | 42 | +30.3% | 41 |
+| 2018-10-26 to 2019-01-25 (CHEAP 12, FAIR 2) | 14 | +84.8% | +68.8% to +96.3% | 14 | 14 | +55.9% | 12 |
+| lowest third by adjusted gap (-1.21 to -0.46) | 52 | +41.8% | | | | +42.7% | |
+| middle third (-0.45 to +0.36) | 52 | +73.8% | | | | +48.4% | |
+| highest third (+0.36 to +1.58) | 53 | +47.6% | | | | +33.3% | |
+
+- **CHEAP held on all 78 dates; RICH held on 26 of 54, the first time at scale.** The stock returned -11% to +105% over two years
+  (median +53%), cleared the hurdle on 121 and beat SPY on 121. Every 2018 and 2019 date beat SPY; every 2019 date cleared the hurdle
+  (+58% to +105%). The 2020 dates, whose two years end in 2022, split: January-April 2020 (CHEAP, but RICH in January) returned +42% to
+  +86%, while from 2020-06-19 the two-year returns fell to -11% to +27%, behind SPY on every date but 2020-07-24 (+0.7pp), and the RICH
+  call held on 26 of the 27 RICH dates from then. The CHEAP dates of March-April 2020 lagged SPY by up to 20pp but cleared the hurdle, so they count as held. The FAIR
+  call held on 12 of 25. One-year returns had a median of +27% (-8% to +80%); three-year returns ran +5% to +173% (median +61%), ahead
+  of SPY on all 2018 dates, 35 of 2019's and 4 of 2020's. Over 2008-2020 the RICH call held on 49 of 519 RICH dates.
+- **The CHEAP of 2018 rests on Valspar again.** To the Q3 2018 print BASE took the quarter's reported growth, Valspar's acquired sales
+  in it (+30% to +46%/yr), and 39 of those 42 dates read CHEAP; each beat SPY over two years (by 10-44pp) and 32 cleared the hurdle. On
+  core growth, measured before scoring, 21 of them read FAIR or RICH, and seen afterwards those would have held on 2 instead of 21. The
+  inflated scenarios also skew the landings: for ten dates of March-May 2018 the two-year price ($397-538) landed nearest BEAR ($243-247)
+  only because BASE, BULL and XBULL compounded +46%/yr. This is the 2015-2017 finding a second time, through the same acquisition of the
+  same stock: one observation, not two. The hypothesis stands as written there (a fallback growth rate should net out stated acquired
+  sales when the anchor year includes them), and it is still to be tested on other tickers, never fitted to SHW.
+- **The company's adjusted EPS read the period better than GAAP.** Measured before scoring, every EPS figure at GAAP moves 72 classes,
+  almost all toward RICH; seen afterwards, 60 of those 72 calls held as built and 4 would have held at GAAP. GAAP FY2017 carries the $7.04
+  Tax Act benefit and FY2018 $6.86 of acquisition costs and one-off items, so a GAAP anchor swings by a third from year to year. A label,
+  not an input: the method's rule (the company's figure without its listed items) was set in 2008 and is unchanged.
+- **RICH held only above the band's 90th percentile.** The window's median sat at 20.8-22.7x and its 90th percentile at 25.3-26.1x. The
+  held RICH calls entered at 28.8-31.5x the guided year, 1.28-1.40 times the median and its 99th-100th percentile, all in June-December
+  2020; the failed ones at 20.1-31.0x (0.93-1.38 times, 33rd-100th percentile), among them every RICH date of 2019 (+61% to +84%). As in
+  2012-2017 the RICH line sits where the multiple is merely above its median, while poor two-year returns came only near the top of the
+  band; here the dates that missed the hurdle entered at 0.97-1.40 times the median and those that cleared it at 0.80-1.39 times, so the
+  overlap is wider than in 2015-2017. The same hypothesis (test where the RICH line should sit on other tickers before any method change).
+- **The ranking weakened.** Across the 157 dates the entry P/E relative to the window median ranks the return to the m12-24 average price
+  at Spearman -0.56 (the two-year endpoint: -0.58), the EPP gap at -0.46 (-0.54) and Ratio B at -0.32 (-0.33), the right way; the
+  adjusted gap at +0.03 (+0.12) and the proxy composite at -0.05 (-0.29), nothing; the entry price at -0.24 (-0.41). The thirds by
+  adjusted gap returned +42%, +74% and +48% over two years, no order. The adjusted gap has now ranked SHW's dates -0.35, +0.70, -0.39,
+  +0.35 and +0.03 on the m12-24 outcome: for one stock it does not rank reliably; the entry multiple has, in the last three batches.
+- **The two-year price landed beyond XBULL again in 2019.** It landed nearest XBULL on 53 dates (39 of 2019's, at 0.74-1.10 times
+  XBULL), BULL on 50, BASE on 44 and BEAR on 10 (the inflated 2018 scenarios above). Drawdowns within two years ran 24-43%, the deepest
+  through March 2020 and 2022; the lowest close of each window was 0.99-2.39 times the BEAR price: the COVID low of 2020-03-23 ($396.70) sat at or just under the
+  BEAR price ($398-402) of the eight dates from 2020-01-31 to 2020-03-20.
+- **The encoding calls, seen afterwards.** Of the alternatives in retro/README.md ("SHW 2018-2020"), the Valspar and GAAP ones are above.
+  The Consumer Brands Group signal at BEAR moves 14 classes toward RICH (12 held as built, 2 after); at XBULL 22 toward CHEAP or FAIR (0
+  and 14). The pre-tax margin thresholds with 2000 at GAAP move 12 (5 and 7); BASE on reported growth 1 (held either way); the FY2020
+  range kept and the preliminary 8-K dropped move nothing. The calls were decided before scoring and stay; changing a rule means a new
+  method version tested elsewhere.
