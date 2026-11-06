@@ -370,159 +370,159 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2014-12-19 | $260.07 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.7% | -7.7pp | +6.8% | ✓ |
 | 2014-12-26 | $264.85 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.1% | -7.4pp | +4.9% | ✓ |
 | 2014-12-31 | $263.04 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.5% | -8.5pp | +5.6% | ✓ |
-| 2015-01-09 | $274.42 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-16 | $273.82 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-23 | $274.01 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-30 | $271.27 | Sherwin-Williams Q4 2014 results | 2.70 | -0.69 | 7.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-06 | $280.31 | Sherwin-Williams Q4 2014 results | 2.70 | -0.75 | 14.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-13 | $285.00 | Sherwin-Williams Q4 2014 results | 2.70 | -0.78 | 18.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-20 | $289.75 | Sherwin-Williams Q4 2014 results | 2.70 | -0.91 | 20.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-27 | $285.20 | Sherwin-Williams Q4 2014 results | 2.70 | -0.77 | 11.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-06 | $286.44 | Sherwin-Williams Q4 2014 results | 2.70 | -0.87 | 11.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-13 | $285.24 | Sherwin-Williams Q4 2014 results | 2.70 | -0.75 | 10.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-20 | $290.00 | Sherwin-Williams Q4 2014 results | 2.70 | -0.88 | 13.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-27 | $281.68 | Sherwin-Williams Q4 2014 results | 2.70 | -0.71 | 7.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-02 | $284.35 | Sherwin-Williams Q4 2014 results | 2.70 | -0.73 | 8.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-10 | $290.65 | Sherwin-Williams Q4 2014 results | 2.70 | -0.88 | 12.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-17 | $282.14 | Sherwin-Williams Q1 2015 results | 2.70 | -0.78 | 11.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-24 | $282.62 | Sherwin-Williams Q1 2015 results | 2.70 | -0.77 | 11.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-01 | $282.16 | Sherwin-Williams Q1 2015 results | 2.70 | -0.76 | 10.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-08 | $287.20 | Sherwin-Williams Q1 2015 results | 2.70 | -0.90 | 13.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-15 | $291.22 | Sherwin-Williams Q1 2015 results | 2.70 | -0.93 | 19.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-22 | $286.51 | Sherwin-Williams Q1 2015 results | 2.70 | -0.90 | 12.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-29 | $288.18 | Sherwin-Williams Q1 2015 results | 2.70 | -0.90 | 12.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-05 | $280.38 | Sherwin-Williams Q1 2015 results | 2.70 | -0.74 | 7.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-12 | $280.91 | Sherwin-Williams Q1 2015 results | 2.70 | -0.74 | 7.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-19 | $281.99 | Sherwin-Williams Q1 2015 results | 2.70 | -0.75 | 8.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-26 | $283.09 | Sherwin-Williams Q1 2015 results | 2.70 | -0.75 | 8.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-02 | $277.67 | Sherwin-Williams Q1 2015 results | 2.70 | -0.70 | 6.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-10 | $278.21 | Sherwin-Williams Q1 2015 results | 2.70 | -0.71 | 6.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-17 | $266.01 | Sherwin-Williams Q2 2015 results | 2.85 | -0.55 | 4.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-24 | $267.12 | Sherwin-Williams Q2 2015 results | 2.85 | -0.56 | 4.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-31 | $277.76 | Sherwin-Williams Q2 2015 results | 2.85 | -0.65 | 7.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-07 | $269.34 | Sherwin-Williams Q2 2015 results | 2.85 | -0.58 | 4.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-14 | $279.37 | Sherwin-Williams Q2 2015 results | 2.85 | -0.65 | 7.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-21 | $261.35 | Sherwin-Williams Q2 2015 results | 2.85 | -0.50 | 3.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-28 | $258.11 | Sherwin-Williams Q2 2015 results | 2.85 | -0.47 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-04 | $253.86 | Sherwin-Williams Q2 2015 results | 2.85 | -0.43 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-11 | $255.66 | Sherwin-Williams Q2 2015 results | 2.85 | -0.45 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-18 | $246.65 | Sherwin-Williams Q2 2015 results | 2.85 | -0.34 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-09-25 | $227.49 | Sherwin-Williams Q2 2015 results | 2.85 | -0.07 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-10-02 | $237.00 | Sherwin-Williams Q2 2015 results | 2.85 | -0.21 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2015-10-09 | $242.86 | Sherwin-Williams Q2 2015 results | 2.85 | -0.29 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-10-16 | $243.17 | Sherwin-Williams Q2 2015 results | 2.85 | -0.29 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-10-23 | $245.77 | Sherwin-Williams Q2 2015 results | 2.85 | -0.33 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-10-30 | $266.83 | Sherwin-Williams Q3 2015 results | 2.85 | -0.53 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-06 | $267.23 | Sherwin-Williams Q3 2015 results | 2.85 | -0.53 | 4.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-13 | $262.63 | Sherwin-Williams Q3 2015 results | 2.85 | -0.49 | 3.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-20 | $274.28 | Sherwin-Williams Q3 2015 results | 2.85 | -0.59 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-27 | $276.83 | Sherwin-Williams Q3 2015 results | 2.85 | -0.61 | 5.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-04 | $272.42 | Sherwin-Williams Q3 2015 results | 2.85 | -0.57 | 4.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-11 | $261.88 | Sherwin-Williams Q3 2015 results | 2.85 | -0.48 | 3.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-18 | $256.23 | Sherwin-Williams Q3 2015 results | 2.85 | -0.42 | 2.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-24 | $265.17 | Sherwin-Williams Q3 2015 results | 2.85 | -0.50 | 3.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-31 | $259.60 | Sherwin-Williams Q3 2015 results | 2.85 | -0.45 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-01-08 | $241.77 | Sherwin-Williams Q3 2015 results | 2.85 | -0.22 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-01-15 | $242.10 | Sherwin-Williams Q3 2015 results | 2.85 | -0.22 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-01-22 | $250.01 | Sherwin-Williams Q3 2015 results | 2.85 | -0.34 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-01-29 | $255.67 | Sherwin-Williams Q4 2015 results | 3.05 | +0.33 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-02-05 | $256.12 | Sherwin-Williams Q4 2015 results | 3.05 | +0.31 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-02-12 | $256.65 | Sherwin-Williams Q4 2015 results | 3.05 | +0.31 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-02-19 | $255.51 | Sherwin-Williams Q4 2015 results | 3.05 | +0.33 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-02-26 | $273.03 | Sherwin-Williams Q4 2015 results | 3.05 | +0.03 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-03-04 | $276.81 | Sherwin-Williams Q4 2015 results | 3.05 | -0.01 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-03-11 | $284.83 | Sherwin-Williams Q4 2015 results | 3.05 | -0.11 | 2.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-03-18 | $288.69 | Sherwin-Williams Q4 2015 results | 3.05 | -0.15 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-03-24 | $281.35 | Sherwin-Williams Q4 2015 results | 3.05 | -0.06 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-04-01 | $287.65 | Sherwin-Williams Q4 2015 results | 3.05 | -0.13 | 2.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-04-08 | $296.98 | Sherwin-Williams Q4 2015 results | 3.05 | -0.22 | 3.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-04-15 | $296.43 | Sherwin-Williams Q4 2015 results | 3.05 | -0.22 | 3.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-04-22 | $299.10 | Sherwin-Williams Q1 2016 results | 3.05 | -0.09 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-04-29 | $287.31 | Sherwin-Williams Q1 2016 results | 3.05 | +0.06 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-05-06 | $290.48 | Sherwin-Williams Q1 2016 results | 3.05 | +0.01 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-05-13 | $293.17 | Sherwin-Williams Q1 2016 results | 3.05 | -0.02 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-05-20 | $289.61 | Sherwin-Williams Q1 2016 results | 3.05 | +0.04 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-05-27 | $291.79 | Sherwin-Williams Q1 2016 results | 3.05 | +0.01 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-03 | $291.00 | Sherwin-Williams Q1 2016 results | 3.05 | +0.02 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-10 | $292.05 | Sherwin-Williams Q1 2016 results | 3.05 | +0.01 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-17 | $288.31 | Sherwin-Williams Q1 2016 results | 3.05 | +0.06 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-24 | $283.75 | Sherwin-Williams Q1 2016 results | 3.05 | +0.14 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2016-07-01 | $293.80 | Sherwin-Williams Q1 2016 results | 3.05 | -0.02 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-08 | $306.52 | Sherwin-Williams Q1 2016 results | 3.05 | -0.14 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-15 | $305.90 | Sherwin-Williams Q1 2016 results | 3.05 | -0.14 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-22 | $293.58 | Sherwin-Williams Q2 2016 results | 2.75 | -0.42 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-29 | $299.73 | Sherwin-Williams Q2 2016 results | 2.75 | -0.48 | 2.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-08-05 | $300.38 | Sherwin-Williams Q2 2016 results | 2.75 | -0.48 | 2.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-08-12 | $295.81 | Sherwin-Williams Q2 2016 results | 2.75 | -0.43 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-08-19 | $287.77 | Sherwin-Williams Q2 2016 results | 2.75 | -0.32 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-08-26 | $285.82 | Sherwin-Williams Q2 2016 results | 2.75 | -0.29 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-09-02 | $286.43 | Sherwin-Williams Q2 2016 results | 2.75 | -0.29 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-09-09 | $274.39 | Sherwin-Williams Q2 2016 results | 2.75 | -0.12 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-09-16 | $273.98 | Sherwin-Williams Q2 2016 results | 2.75 | -0.11 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-09-23 | $283.00 | Sherwin-Williams Q2 2016 results | 2.75 | -0.25 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-09-30 | $276.66 | Sherwin-Williams Q2 2016 results | 2.75 | -0.14 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-10-07 | $268.74 | Sherwin-Williams Q2 2016 results | 2.75 | -0.01 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-10-14 | $268.40 | Sherwin-Williams Q2 2016 results | 2.75 | -0.01 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-10-21 | $277.14 | Sherwin-Williams Q2 2016 results | 2.75 | -0.15 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-10-26 | $249.23 | Sherwin-Williams Q3 2016 results | 2.00 | -0.51 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
-| 2016-11-04 | $242.54 | Sherwin-Williams Q3 2016 results | 2.00 | -0.41 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-11-11 | $261.76 | Sherwin-Williams Q3 2016 results | 2.00 | -0.71 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2016-11-18 | $260.29 | Sherwin-Williams Q3 2016 results | 2.00 | -0.69 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2016-11-25 | $274.97 | Sherwin-Williams Q3 2016 results | 2.00 | -0.93 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-12-02 | $265.06 | Sherwin-Williams Q3 2016 results | 2.00 | -0.75 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
-| 2016-12-09 | $270.92 | Sherwin-Williams Q3 2016 results | 2.00 | -0.85 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-16 | $271.76 | Sherwin-Williams Q3 2016 results | 2.00 | -0.87 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-23 | $272.30 | Sherwin-Williams Q3 2016 results | 2.00 | -0.88 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-30 | $268.74 | Sherwin-Williams Q3 2016 results | 2.00 | -0.81 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-01-06 | $278.99 | Sherwin-Williams Q3 2016 results | 2.00 | -0.99 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-01-13 | $285.10 | Sherwin-Williams Q3 2016 results | 2.00 | -1.08 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-01-20 | $283.62 | Sherwin-Williams Q3 2016 results | 2.00 | -1.05 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-01-27 | $305.20 | Sherwin-Williams Q4 2016 results | 2.35 | -0.36 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-02-03 | $304.00 | Sherwin-Williams Q4 2016 results | 2.35 | -0.35 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-02-10 | $306.47 | Sherwin-Williams Q4 2016 results | 2.35 | -0.38 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-02-17 | $311.35 | Sherwin-Williams Q4 2016 results | 2.35 | -0.55 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-02-24 | $312.65 | Sherwin-Williams Q4 2016 results | 2.35 | -0.60 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-03 | $311.93 | Sherwin-Williams Q4 2016 results | 2.35 | -0.58 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-10 | $311.90 | Sherwin-Williams Q4 2016 results | 2.35 | -0.58 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-17 | $313.38 | Sherwin-Williams Q4 2016 results | 2.35 | -0.61 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-24 | $309.45 | Sherwin-Williams Q4 2016 results | 2.35 | -0.54 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-03-31 | $310.19 | Sherwin-Williams Q4 2016 results | 2.35 | -0.56 | 2.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-04-07 | $313.07 | Sherwin-Williams Q4 2016 results | 2.35 | -0.60 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-04-13 | $308.35 | Sherwin-Williams Q4 2016 results | 2.35 | -0.53 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-04-21 | $324.60 | Sherwin-Williams Q1 2017 results | 2.50 | -0.49 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-04-28 | $334.68 | Sherwin-Williams Q1 2017 results | 2.50 | -0.62 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-05 | $338.24 | Sherwin-Williams Q1 2017 results | 2.50 | -0.65 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-12 | $334.05 | Sherwin-Williams Q1 2017 results | 2.50 | -0.61 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-19 | $332.37 | Sherwin-Williams Q1 2017 results | 2.50 | -0.58 | 2.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-26 | $334.95 | Sherwin-Williams Q1 2017 results | 2.50 | -0.61 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-06-02 | $345.40 | Sherwin-Williams Q1 2017 results | 2.50 | -0.70 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-09 | $352.91 | Sherwin-Williams Q1 2017 results | 2.50 | -0.76 | 3.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-16 | $350.55 | Sherwin-Williams Q1 2017 results | 2.50 | -0.74 | 3.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-23 | $357.10 | Sherwin-Williams Q1 2017 results | 2.50 | -0.78 | 3.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-30 | $350.96 | Sherwin-Williams Q1 2017 results | 2.50 | -0.73 | 3.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-07 | $352.03 | Sherwin-Williams Q1 2017 results | 2.50 | -0.74 | 3.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-14 | $356.47 | Sherwin-Williams Q1 2017 results | 2.50 | -0.77 | 3.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-21 | $352.17 | Sherwin-Williams Q2 2017 results | 2.15 | -0.37 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-07-28 | $342.38 | Sherwin-Williams Q2 2017 results | 2.15 | -0.24 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-08-04 | $335.07 | Sherwin-Williams Q2 2017 results | 2.15 | -0.04 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-08-11 | $331.88 | Sherwin-Williams Q2 2017 results | 2.15 | +0.00 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-08-18 | $328.97 | Sherwin-Williams Q2 2017 results | 2.15 | +0.06 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-08-25 | $339.16 | Sherwin-Williams Q2 2017 results | 2.15 | -0.19 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-09-01 | $343.62 | Sherwin-Williams Q2 2017 results | 2.15 | -0.24 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-09-08 | $344.55 | Sherwin-Williams Q2 2017 results | 2.15 | -0.26 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-09-15 | $340.98 | Sherwin-Williams Q2 2017 results | 2.15 | -0.22 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-09-22 | $349.76 | Sherwin-Williams Q2 2017 results | 2.15 | -0.32 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-09-29 | $358.04 | Sherwin-Williams Q2 2017 results | 2.15 | -0.44 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-10-06 | $383.47 | Sherwin-Williams Q2 2017 results | 2.15 | -0.79 | 1.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-13 | $385.84 | Sherwin-Williams Q2 2017 results | 2.15 | -0.82 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-20 | $389.70 | Sherwin-Williams Q2 2017 results | 2.15 | -0.86 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-10-25 | $392.54 | Sherwin-Williams Q3 2017 results | 2.45 | +0.58 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-11-03 | $397.11 | Sherwin-Williams Q3 2017 results | 2.45 | +0.56 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-11-10 | $389.46 | Sherwin-Williams Q3 2017 results | 2.45 | +0.59 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-11-17 | $386.98 | Sherwin-Williams Q3 2017 results | 2.45 | +0.60 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-11-24 | $394.03 | Sherwin-Williams Q3 2017 results | 2.45 | +0.57 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-12-01 | $395.07 | Sherwin-Williams Q3 2017 results | 2.45 | +0.57 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-12-08 | $408.85 | Sherwin-Williams Q3 2017 results | 2.45 | +0.51 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2017-12-15 | $403.82 | Sherwin-Williams Q3 2017 results | 2.45 | +0.53 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2017-12-22 | $413.09 | Sherwin-Williams Q3 2017 results | 2.45 | +0.49 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2017-12-29 | $410.04 | Sherwin-Williams Q3 2017 results | 2.45 | +0.51 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2015-01-09 | $274.42 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.8% | -11.4pp | +1.5% | ✓ |
+| 2015-01-16 | $273.82 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.3% | -10.6pp | +2.0% | ✓ |
+| 2015-01-23 | $274.01 | Sherwin-Williams Q3 2014 results | 2.85 | -1.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.9% | -8.7pp | +2.2% | ✓ |
+| 2015-01-30 | $271.27 | Sherwin-Williams Q4 2014 results | 2.70 | -0.69 | 7.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.6% | -3.9pp | +3.5% | ✓ |
+| 2015-02-06 | $280.31 | Sherwin-Williams Q4 2014 results | 2.70 | -0.75 | 14.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.9% | -5.7pp | +0.5% | ✓ |
+| 2015-02-13 | $285.00 | Sherwin-Williams Q4 2014 results | 2.70 | -0.78 | 18.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.8% | -4.4pp | -0.7% | ✓ |
+| 2015-02-20 | $289.75 | Sherwin-Williams Q4 2014 results | 2.70 | -0.91 | 20.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.5% | -5.9pp | -2.1% | ✓ |
+| 2015-02-27 | $285.20 | Sherwin-Williams Q4 2014 results | 2.70 | -0.77 | 11.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.9% | -5.8pp | -0.2% | ✓ |
+| 2015-03-06 | $286.44 | Sherwin-Williams Q4 2014 results | 2.70 | -0.87 | 11.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.9% | -7.9pp | -0.3% | ✓ |
+| 2015-03-13 | $285.24 | Sherwin-Williams Q4 2014 results | 2.70 | -0.75 | 10.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.5% | -8.3pp | +0.3% | ✓ |
+| 2015-03-20 | $290.00 | Sherwin-Williams Q4 2014 results | 2.70 | -0.88 | 13.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.8% | -7.0pp | -1.2% | ✓ |
+| 2015-03-27 | $281.68 | Sherwin-Williams Q4 2014 results | 2.70 | -0.71 | 7.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.1% | -5.8pp | +2.0% | ✓ |
+| 2015-04-02 | $284.35 | Sherwin-Williams Q4 2014 results | 2.70 | -0.73 | 8.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.3% | -7.2pp | +1.1% | ✓ |
+| 2015-04-10 | $290.65 | Sherwin-Williams Q4 2014 results | 2.70 | -0.88 | 12.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.4% | -6.8pp | -0.9% | ✓ |
+| 2015-04-17 | $282.14 | Sherwin-Williams Q1 2015 results | 2.70 | -0.78 | 11.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.4% | -4.7pp | +2.2% | ✓ |
+| 2015-04-24 | $282.62 | Sherwin-Williams Q1 2015 results | 2.70 | -0.77 | 11.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.2% | +1.9pp | +2.1% | ✗ |
+| 2015-05-01 | $282.16 | Sherwin-Williams Q1 2015 results | 2.70 | -0.76 | 10.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.1% | +2.6pp | +2.6% | ✗ |
+| 2015-05-08 | $287.20 | Sherwin-Williams Q1 2015 results | 2.70 | -0.90 | 13.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.8% | +2.3pp | +1.1% | ✗ |
+| 2015-05-15 | $291.22 | Sherwin-Williams Q1 2015 results | 2.70 | -0.93 | 19.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.6% | -0.7pp | -0.0% | ✓ |
+| 2015-05-22 | $286.51 | Sherwin-Williams Q1 2015 results | 2.70 | -0.90 | 12.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.9% | +1.3pp | +1.9% | ✗ |
+| 2015-05-29 | $288.18 | Sherwin-Williams Q1 2015 results | 2.70 | -0.90 | 12.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.5% | -0.2pp | +1.6% | ✓ |
+| 2015-06-05 | $280.38 | Sherwin-Williams Q1 2015 results | 2.70 | -0.74 | 7.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.4% | +3.8pp | +4.7% | ✗ |
+| 2015-06-12 | $280.91 | Sherwin-Williams Q1 2015 results | 2.70 | -0.74 | 7.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.1% | +6.0pp | +4.9% | ✗ |
+| 2015-06-19 | $281.99 | Sherwin-Williams Q1 2015 results | 2.70 | -0.75 | 8.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.9% | +8.5pp | +4.9% | ✗ |
+| 2015-06-26 | $283.09 | Sherwin-Williams Q1 2015 results | 2.70 | -0.75 | 8.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.1% | +8.8pp | +5.0% | ✗ |
+| 2015-07-02 | $277.67 | Sherwin-Williams Q1 2015 results | 2.70 | -0.70 | 6.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.7% | +7.7pp | +7.4% | ✗ |
+| 2015-07-10 | $278.21 | Sherwin-Williams Q1 2015 results | 2.70 | -0.71 | 6.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.8% | +7.6pp | +7.6% | ✗ |
+| 2015-07-17 | $266.01 | Sherwin-Williams Q2 2015 results | 2.85 | -0.55 | 4.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.5% | +17.7pp | +12.9% | ✗ |
+| 2015-07-24 | $267.12 | Sherwin-Williams Q2 2015 results | 2.85 | -0.56 | 4.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.0% | +11.1pp | +12.8% | ✗ |
+| 2015-07-31 | $277.76 | Sherwin-Williams Q2 2015 results | 2.85 | -0.65 | 7.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.6% | +4.0pp | +8.8% | ✗ |
+| 2015-08-07 | $269.34 | Sherwin-Williams Q2 2015 results | 2.85 | -0.58 | 4.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.5% | +3.0pp | +12.5% | ✗ |
+| 2015-08-14 | $279.37 | Sherwin-Williams Q2 2015 results | 2.85 | -0.65 | 7.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.9% | +0.8pp | +8.7% | ✗ |
+| 2015-08-21 | $261.35 | Sherwin-Williams Q2 2015 results | 2.85 | -0.50 | 3.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | +1.3pp | +16.6% | ✗ |
+| 2015-08-28 | $258.11 | Sherwin-Williams Q2 2015 results | 2.85 | -0.47 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.9% | +6.6pp | +18.4% | ✗ |
+| 2015-09-04 | $253.86 | Sherwin-Williams Q2 2015 results | 2.85 | -0.43 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.0% | +4.6pp | +20.7% | ✗ |
+| 2015-09-11 | $255.66 | Sherwin-Williams Q2 2015 results | 2.85 | -0.45 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.5% | +7.3pp | +20.3% | ✗ |
+| 2015-09-18 | $246.65 | Sherwin-Williams Q2 2015 results | 2.85 | -0.34 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.4% | +7.9pp | +25.3% | ✗ |
+| 2015-09-25 | $227.49 | Sherwin-Williams Q2 2015 results | 2.85 | -0.07 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +57.6% | +23.8pp | +36.5% | ✗ |
+| 2015-10-02 | $237.00 | Sherwin-Williams Q2 2015 results | 2.85 | -0.21 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +54.4% | +20.3pp | +31.6% | ✗ |
+| 2015-10-09 | $242.86 | Sherwin-Williams Q2 2015 results | 2.85 | -0.29 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.0% | +29.3pp | +29.3% | ✗ |
+| 2015-10-16 | $243.17 | Sherwin-Williams Q2 2015 results | 2.85 | -0.29 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.6% | +30.5pp | +30.1% | ✗ |
+| 2015-10-23 | $245.77 | Sherwin-Williams Q2 2015 results | 2.85 | -0.33 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.0% | +32.1pp | +29.6% | ✗ |
+| 2015-10-30 | $266.83 | Sherwin-Williams Q3 2015 results | 2.85 | -0.53 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.2% | +22.3pp | +20.4% | ✗ |
+| 2015-11-06 | $267.23 | Sherwin-Williams Q3 2015 results | 2.85 | -0.53 | 4.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.9% | +22.3pp | +21.4% | ✗ |
+| 2015-11-13 | $262.63 | Sherwin-Williams Q3 2015 results | 2.85 | -0.49 | 3.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.6% | +18.5pp | +24.5% | ✗ |
+| 2015-11-20 | $274.28 | Sherwin-Williams Q3 2015 results | 2.85 | -0.59 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.8% | +16.0pp | +20.1% | ✗ |
+| 2015-11-27 | $276.83 | Sherwin-Williams Q3 2015 results | 2.85 | -0.61 | 5.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.4% | +14.8pp | +19.7% | ✗ |
+| 2015-12-04 | $272.42 | Sherwin-Williams Q3 2015 results | 2.85 | -0.57 | 4.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.9% | +21.5pp | +22.6% | ✗ |
+| 2015-12-11 | $261.88 | Sherwin-Williams Q3 2015 results | 2.85 | -0.48 | 3.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.3% | +21.8pp | +28.6% | ✗ |
+| 2015-12-18 | $256.23 | Sherwin-Williams Q3 2015 results | 2.85 | -0.42 | 2.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.9% | +23.2pp | +32.4% | ✗ |
+| 2015-12-24 | $265.17 | Sherwin-Williams Q3 2015 results | 2.85 | -0.50 | 3.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.3% | +23.7pp | +28.9% | ✗ |
+| 2015-12-31 | $259.60 | Sherwin-Williams Q3 2015 results | 2.85 | -0.45 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.6% | +25.1pp | +32.6% | ✗ |
+| 2016-01-08 | $241.77 | Sherwin-Williams Q3 2015 results | 2.85 | -0.22 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +78.2% | +30.6pp | +43.4% | ✗ |
+| 2016-01-15 | $242.10 | Sherwin-Williams Q3 2015 results | 2.85 | -0.22 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +81.6% | +28.6pp | +44.3% | ✗ |
+| 2016-01-22 | $250.01 | Sherwin-Williams Q3 2015 results | 2.85 | -0.34 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +73.6% | +20.3pp | +40.7% | ✗ |
+| 2016-01-29 | $255.67 | Sherwin-Williams Q4 2015 results | 3.05 | +0.33 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +67.2% | +15.5pp | +38.6% | ✗ |
+| 2016-02-05 | $256.12 | Sherwin-Williams Q4 2015 results | 3.05 | +0.31 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +56.2% | +10.8pp | +39.2% | ✓ |
+| 2016-02-12 | $256.65 | Sherwin-Williams Q4 2015 results | 3.05 | +0.31 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +59.9% | +12.7pp | +39.7% | ✓ |
+| 2016-02-19 | $255.51 | Sherwin-Williams Q4 2015 results | 3.05 | +0.33 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +60.1% | +13.0pp | +40.9% | ✓ |
+| 2016-02-26 | $273.03 | Sherwin-Williams Q4 2015 results | 3.05 | +0.03 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +50.5% | +3.3pp | +32.5% | ✗ |
+| 2016-03-04 | $276.81 | Sherwin-Williams Q4 2015 results | 3.05 | -0.01 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +43.4% | +4.5pp | +31.2% | ✗ |
+| 2016-03-11 | $284.83 | Sherwin-Williams Q4 2015 results | 3.05 | -0.11 | 2.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +50.2% | +8.1pp | +28.2% | ✗ |
+| 2016-03-18 | $288.69 | Sherwin-Williams Q4 2015 results | 3.05 | -0.15 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.0% | +5.3pp | +27.2% | ✗ |
+| 2016-03-24 | $281.35 | Sherwin-Williams Q4 2015 results | 3.05 | -0.06 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.5% | +8.8pp | +31.1% | ✗ |
+| 2016-04-01 | $287.65 | Sherwin-Williams Q4 2015 results | 3.05 | -0.13 | 2.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.7% | +7.0pp | +28.8% | ✗ |
+| 2016-04-08 | $296.98 | Sherwin-Williams Q4 2015 results | 3.05 | -0.22 | 3.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.2% | +0.6pp | +25.3% | ✗ |
+| 2016-04-15 | $296.43 | Sherwin-Williams Q4 2015 results | 3.05 | -0.22 | 3.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.3% | +0.2pp | +25.9% | ✗ |
+| 2016-04-22 | $299.10 | Sherwin-Williams Q1 2016 results | 3.05 | -0.09 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +33.5% | +1.4pp | +25.3% | ✗ |
+| 2016-04-29 | $287.31 | Sherwin-Williams Q1 2016 results | 3.05 | +0.06 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.9% | -0.8pp | +30.8% | ✗ |
+| 2016-05-06 | $290.48 | Sherwin-Williams Q1 2016 results | 3.05 | +0.01 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.3% | -1.6pp | +29.6% | ✗ |
+| 2016-05-13 | $293.17 | Sherwin-Williams Q1 2016 results | 3.05 | -0.02 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.3% | -5.5pp | +28.7% | ✗ |
+| 2016-05-20 | $289.61 | Sherwin-Williams Q1 2016 results | 3.05 | +0.04 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.2% | -0.4pp | +30.6% | ✗ |
+| 2016-05-27 | $291.79 | Sherwin-Williams Q1 2016 results | 3.05 | +0.01 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.8% | +2.8pp | +30.0% | ✗ |
+| 2016-06-03 | $291.00 | Sherwin-Williams Q1 2016 results | 3.05 | +0.02 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +35.0% | +0.4pp | +30.6% | ✗ |
+| 2016-06-10 | $292.05 | Sherwin-Williams Q1 2016 results | 3.05 | +0.01 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.6% | +1.7pp | +30.5% | ✗ |
+| 2016-06-17 | $288.31 | Sherwin-Williams Q1 2016 results | 3.05 | +0.06 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.8% | +3.0pp | +32.5% | ✗ |
+| 2016-06-24 | $283.75 | Sherwin-Williams Q1 2016 results | 3.05 | +0.14 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +42.0% | +2.1pp | +34.9% | ✗ |
+| 2016-07-01 | $293.80 | Sherwin-Williams Q1 2016 results | 3.05 | -0.02 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.0% | +7.3pp | +30.6% | ✗ |
+| 2016-07-08 | $306.52 | Sherwin-Williams Q1 2016 results | 3.05 | -0.14 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +37.1% | +3.1pp | +25.5% | ✗ |
+| 2016-07-15 | $305.90 | Sherwin-Williams Q1 2016 results | 3.05 | -0.14 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.0% | +5.0pp | +26.2% | ✗ |
+| 2016-07-22 | $293.58 | Sherwin-Williams Q2 2016 results | 2.75 | -0.42 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.5% | +14.3pp | +31.9% | ✗ |
+| 2016-07-29 | $299.73 | Sherwin-Williams Q2 2016 results | 2.75 | -0.48 | 2.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.3% | +16.3pp | +29.8% | ✗ |
+| 2016-08-05 | $300.38 | Sherwin-Williams Q2 2016 results | 2.75 | -0.48 | 2.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.7% | +15.3pp | +30.2% | ✗ |
+| 2016-08-12 | $295.81 | Sherwin-Williams Q2 2016 results | 2.75 | -0.43 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +52.1% | +18.1pp | +33.0% | ✗ |
+| 2016-08-19 | $287.77 | Sherwin-Williams Q2 2016 results | 2.75 | -0.32 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +56.4% | +21.6pp | +37.4% | ✗ |
+| 2016-08-26 | $285.82 | Sherwin-Williams Q2 2016 results | 2.75 | -0.29 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +58.9% | +22.2pp | +39.1% | ✗ |
+| 2016-09-02 | $286.43 | Sherwin-Williams Q2 2016 results | 2.75 | -0.29 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.4% | +24.1pp | +39.6% | ✗ |
+| 2016-09-09 | $274.39 | Sherwin-Williams Q2 2016 results | 2.75 | -0.12 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +71.0% | +31.7pp | +46.4% | ✗ |
+| 2016-09-16 | $273.98 | Sherwin-Williams Q2 2016 results | 2.75 | -0.11 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +73.3% | +33.0pp | +47.5% | ✗ |
+| 2016-09-23 | $283.00 | Sherwin-Williams Q2 2016 results | 2.75 | -0.25 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +68.5% | +28.8pp | +43.7% | ✗ |
+| 2016-09-30 | $276.66 | Sherwin-Williams Q2 2016 results | 2.75 | -0.14 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +67.0% | +28.1pp | +47.8% | ✗ |
+| 2016-10-07 | $268.74 | Sherwin-Williams Q2 2016 results | 2.75 | -0.01 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +67.0% | +28.6pp | +52.7% | ✗ |
+| 2016-10-14 | $268.40 | Sherwin-Williams Q2 2016 results | 2.75 | -0.01 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +54.2% | +20.1pp | +53.1% | ✗ |
+| 2016-10-21 | $277.14 | Sherwin-Williams Q2 2016 results | 2.75 | -0.15 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +48.0% | +14.3pp | +48.5% | ✗ |
+| 2016-10-26 | $249.23 | Sherwin-Williams Q3 2016 results | 2.00 | -0.51 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +51.4% | +22.6pp | +65.0% | ✗ |
+| 2016-11-04 | $242.54 | Sherwin-Williams Q3 2016 results | 2.00 | -0.41 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +68.7% | +33.6pp | +69.5% | ✗ |
+| 2016-11-11 | $261.76 | Sherwin-Williams Q3 2016 results | 2.00 | -0.71 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +61.1% | +28.2pp | +57.2% | ✗ |
+| 2016-11-18 | $260.29 | Sherwin-Williams Q3 2016 results | 2.00 | -0.69 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +65.5% | +35.7pp | +58.3% | ✗ |
+| 2016-11-25 | $274.97 | Sherwin-Williams Q3 2016 results | 2.00 | -0.93 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.4% | +30.2pp | +50.0% | ✗ |
+| 2016-12-02 | $265.06 | Sherwin-Williams Q3 2016 results | 2.00 | -0.75 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +62.6% | +32.6pp | +55.8% | ✗ |
+| 2016-12-09 | $270.92 | Sherwin-Williams Q3 2016 results | 2.00 | -0.85 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.3% | +25.6pp | +52.4% | ✗ |
+| 2016-12-16 | $271.76 | Sherwin-Williams Q3 2016 results | 2.00 | -0.87 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.6% | +25.0pp | +51.8% | ✗ |
+| 2016-12-23 | $272.30 | Sherwin-Williams Q3 2016 results | 2.00 | -0.88 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.8% | +29.8pp | +51.3% | ✗ |
+| 2016-12-30 | $268.74 | Sherwin-Williams Q3 2016 results | 2.00 | -0.81 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.5% | +32.2pp | +53.1% | ✗ |
+| 2017-01-06 | $278.99 | Sherwin-Williams Q3 2016 results | 2.00 | -0.99 | 1.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.4% | +27.0pp | +47.3% | ✗ |
+| 2017-01-13 | $285.10 | Sherwin-Williams Q3 2016 results | 2.00 | -1.08 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.3% | +22.8pp | +44.0% | ✗ |
+| 2017-01-20 | $283.62 | Sherwin-Williams Q3 2016 results | 2.00 | -1.05 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.9% | +21.0pp | +44.5% | ✗ |
+| 2017-01-27 | $305.20 | Sherwin-Williams Q4 2016 results | 2.35 | -0.36 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +31.0% | +10.6pp | +34.1% | ✗ |
+| 2017-02-03 | $304.00 | Sherwin-Williams Q4 2016 results | 2.35 | -0.35 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.4% | +17.4pp | +34.6% | ✗ |
+| 2017-02-10 | $306.47 | Sherwin-Williams Q4 2016 results | 2.35 | -0.38 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.6% | +18.5pp | +33.6% | ✗ |
+| 2017-02-17 | $311.35 | Sherwin-Williams Q4 2016 results | 2.35 | -0.55 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +43.3% | +21.1pp | +31.7% | ✗ |
+| 2017-02-24 | $312.65 | Sherwin-Williams Q4 2016 results | 2.35 | -0.60 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +43.0% | +20.9pp | +31.4% | ✗ |
+| 2017-03-03 | $311.93 | Sherwin-Williams Q4 2016 results | 2.35 | -0.58 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +42.3% | +20.5pp | +31.9% | ✗ |
+| 2017-03-10 | $311.90 | Sherwin-Williams Q4 2016 results | 2.35 | -0.58 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.0% | +16.3pp | +32.1% | ✗ |
+| 2017-03-17 | $313.38 | Sherwin-Williams Q4 2016 results | 2.35 | -0.61 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.8% | +16.9pp | +31.6% | ✗ |
+| 2017-03-24 | $309.45 | Sherwin-Williams Q4 2016 results | 2.35 | -0.54 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +38.3% | +14.5pp | +33.4% | ✗ |
+| 2017-03-31 | $310.19 | Sherwin-Williams Q4 2016 results | 2.35 | -0.56 | 2.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +41.1% | +17.0pp | +33.3% | ✗ |
+| 2017-04-07 | $313.07 | Sherwin-Williams Q4 2016 results | 2.35 | -0.60 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.8% | +18.8pp | +32.4% | ✗ |
+| 2017-04-13 | $308.35 | Sherwin-Williams Q4 2016 results | 2.35 | -0.53 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +45.5% | +16.4pp | +34.8% | ✗ |
+| 2017-04-21 | $324.60 | Sherwin-Williams Q1 2017 results | 2.50 | -0.49 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.6% | +13.6pp | +28.3% | ✗ |
+| 2017-04-28 | $334.68 | Sherwin-Williams Q1 2017 results | 2.50 | -0.62 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.6% | +11.1pp | +24.9% | ✗ |
+| 2017-05-05 | $338.24 | Sherwin-Williams Q1 2017 results | 2.50 | -0.65 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.9% | +10.0pp | +24.1% | ✗ |
+| 2017-05-12 | $334.05 | Sherwin-Williams Q1 2017 results | 2.50 | -0.61 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +33.8% | +9.0pp | +26.0% | ✗ |
+| 2017-05-19 | $332.37 | Sherwin-Williams Q1 2017 results | 2.50 | -0.58 | 2.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +33.3% | +9.1pp | +27.0% | ✗ |
+| 2017-05-26 | $334.95 | Sherwin-Williams Q1 2017 results | 2.50 | -0.61 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.8% | +9.6pp | +26.3% | ✗ |
+| 2017-06-02 | $345.40 | Sherwin-Williams Q1 2017 results | 2.50 | -0.70 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.6% | +6.7pp | +22.6% | ✗ |
+| 2017-06-09 | $352.91 | Sherwin-Williams Q1 2017 results | 2.50 | -0.76 | 3.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.4% | +14.1pp | +20.3% | ✗ |
+| 2017-06-16 | $350.55 | Sherwin-Williams Q1 2017 results | 2.50 | -0.74 | 3.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.2% | +14.3pp | +21.6% | ✗ |
+| 2017-06-23 | $357.10 | Sherwin-Williams Q1 2017 results | 2.50 | -0.78 | 3.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.5% | +7.3pp | +19.7% | ✗ |
+| 2017-06-30 | $350.96 | Sherwin-Williams Q1 2017 results | 2.50 | -0.73 | 3.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.7% | +7.2pp | +22.2% | ✗ |
+| 2017-07-07 | $352.03 | Sherwin-Williams Q1 2017 results | 2.50 | -0.74 | 3.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.5% | +7.0pp | +22.0% | ✗ |
+| 2017-07-14 | $356.47 | Sherwin-Williams Q1 2017 results | 2.50 | -0.77 | 3.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.8% | +7.2pp | +20.8% | ✗ |
+| 2017-07-21 | $352.17 | Sherwin-Williams Q2 2017 results | 2.15 | -0.37 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +31.8% | +7.2pp | +22.5% | ✓ |
+| 2017-07-28 | $342.38 | Sherwin-Williams Q2 2017 results | 2.15 | -0.24 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +51.8% | +25.3pp | +26.3% | ✗ |
+| 2017-08-04 | $335.07 | Sherwin-Williams Q2 2017 results | 2.15 | -0.04 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +54.6% | +32.1pp | +29.5% | ✗ |
+| 2017-08-11 | $331.88 | Sherwin-Williams Q2 2017 results | 2.15 | +0.00 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +58.8% | +35.1pp | +31.2% | ✗ |
+| 2017-08-18 | $328.97 | Sherwin-Williams Q2 2017 results | 2.15 | +0.06 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +63.5% | +40.2pp | +32.8% | ✗ |
+| 2017-08-25 | $339.16 | Sherwin-Williams Q2 2017 results | 2.15 | -0.19 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +53.4% | +32.7pp | +29.3% | ✗ |
+| 2017-09-01 | $343.62 | Sherwin-Williams Q2 2017 results | 2.15 | -0.24 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +55.5% | +33.4pp | +28.0% | ✗ |
+| 2017-09-08 | $344.55 | Sherwin-Williams Q2 2017 results | 2.15 | -0.26 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +57.4% | +32.4pp | +28.0% | ✗ |
+| 2017-09-15 | $340.98 | Sherwin-Williams Q2 2017 results | 2.15 | -0.22 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +61.1% | +36.6pp | +29.7% | ✗ |
+| 2017-09-22 | $349.76 | Sherwin-Williams Q2 2017 results | 2.15 | -0.32 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +59.6% | +35.8pp | +26.8% | ✗ |
+| 2017-09-29 | $358.04 | Sherwin-Williams Q2 2017 results | 2.15 | -0.44 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +54.2% | +32.4pp | +24.4% | ✗ |
+| 2017-10-06 | $383.47 | Sherwin-Williams Q2 2017 results | 2.15 | -0.79 | 1.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.1% | +25.3pp | +16.6% | ✗ |
+| 2017-10-13 | $385.84 | Sherwin-Williams Q2 2017 results | 2.15 | -0.82 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.5% | +24.2pp | +16.6% | ✗ |
+| 2017-10-20 | $389.70 | Sherwin-Williams Q2 2017 results | 2.15 | -0.86 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.9% | +25.9pp | +16.2% | ✗ |
+| 2017-10-25 | $392.54 | Sherwin-Williams Q3 2017 results | 2.45 | +0.58 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +48.4% | +26.2pp | +16.2% | ✓ |
+| 2017-11-03 | $397.11 | Sherwin-Williams Q3 2017 results | 2.45 | +0.56 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +47.9% | +25.4pp | +15.9% | ✓ |
+| 2017-11-10 | $389.46 | Sherwin-Williams Q3 2017 results | 2.45 | +0.59 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +51.2% | +27.5pp | +19.0% | ✓ |
+| 2017-11-17 | $386.98 | Sherwin-Williams Q3 2017 results | 2.45 | +0.60 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.2% | +30.2pp | +20.7% | ✓ |
+| 2017-11-24 | $394.03 | Sherwin-Williams Q3 2017 results | 2.45 | +0.57 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +47.9% | +24.4pp | +19.3% | ✓ |
+| 2017-12-01 | $395.07 | Sherwin-Williams Q3 2017 results | 2.45 | +0.57 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.6% | +26.8pp | +19.7% | ✓ |
+| 2017-12-08 | $408.85 | Sherwin-Williams Q3 2017 results | 2.45 | +0.51 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +43.5% | +20.9pp | +16.5% | ✓ |
+| 2017-12-15 | $403.82 | Sherwin-Williams Q3 2017 results | 2.45 | +0.53 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +43.7% | +21.2pp | +18.8% | ✓ |
+| 2017-12-22 | $413.09 | Sherwin-Williams Q3 2017 results | 2.45 | +0.49 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +42.6% | +18.7pp | +17.1% | ✗ |
+| 2017-12-29 | $410.04 | Sherwin-Williams Q3 2017 results | 2.45 | +0.51 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +43.8% | +18.8pp | +18.7% | ✓ |

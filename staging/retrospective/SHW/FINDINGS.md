@@ -1,9 +1,9 @@
 # SHW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SHW weekly dates: 366 from 2008-01-04 to 2014-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the SHW weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6). Prices run to 2026-11-05 (2008, 2012-2014) and 2026-11-06 (2009-2011);
-the two-year horizons end by 2016-12-30 (three-year: 2017-12-29).
+pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306). Prices run to 2026-11-05 (2008, 2012-2014) and
+2026-11-06 (2009-2011, 2015-2017); the two-year horizons end by 2019-12-27 (three-year: 2020-12-29).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -143,3 +143,66 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   reported growth, the Consumer Group signal at BEAR or XBULL, the pre-tax margin thresholds with 2000 at GAAP, FY2012 at GAAP $6.02,
   FY2011 before the IRS charge, and the FY2013 guide and Q4 2013 sales guide with or without Comex. No encoding choice reaches the result:
   the level of the call failed on 152 dates and held on 5, with no input deciding either. The calls were decided before scoring and stay.
+
+## 2015-2017 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 125 | +38.7% | +3.8% to +81.6% | 91 | 104 | +27.0% | 17 |
+| class FAIR | 22 | +58.8% | +31.8% to +73.3% | 21 | 22 | +32.8% | 4 |
+| class CHEAP | 9 | +47.9% | +43.5% to +55.2% | 9 | 9 | +18.8% | 9 |
+| legacy tier ACCUMULATE | 13 | +48.4% | +42.6% to +68.7% | 13 | 13 | +19.0% | 9 |
+| legacy tier WATCHLIST | 26 | +57.4% | +31.8% to +73.3% | 25 | 26 | +40.9% | 4 |
+| legacy tier AVOID | 117 | +38.3% | +3.8% to +81.6% | 83 | 96 | +25.9% | 17 |
+| 2015 (RICH 51, FAIR 1) | 52 | +28.6% | +3.8% to +61.9% | 21 | 35 | +7.6% | 17 |
+| 2016 (RICH 43, FAIR 9) | 52 | +50.2% | +32.2% to +81.6% | 52 | 48 | +38.6% | 3 |
+| 2017 to 2017-07-14 (all RICH) | 28 | +38.6% | +23.6% to +45.8% | 25 | 28 | +31.6% | 0 |
+| 2017-07-21 to 2017-10-20 (FAIR 11, RICH 3) | 14 | +54.6% | +31.8% to +63.5% | 13 | 14 | +28.0% | 1 |
+| from 2017-10-25 (CHEAP 9, FAIR 1) | 10 | +47.9% | +42.6% to +55.2% | 10 | 10 | +18.8% | 9 |
+| lowest third by adjusted gap (-1.13 to -0.62) | 52 | +28.7% | | | | +7.6% | |
+| middle third (-0.61 to -0.25) | 52 | +45.8% | | | | +29.8% | |
+| highest third (-0.24 to +0.60) | 52 | +48.4% | | | | +30.5% | |
+
+- **RICH held on the 17 dates of early 2015 and failed on the other 108.** The stock returned +3.8% to +82% over two years (median +42%),
+  cleared the hurdle on 121 and beat SPY on 135. The 17 held RICH calls run from 2015-01-09 to 2015-04-17, plus 2015-05-15 and 2015-05-29:
+  two-year returns of +3.8% to +18.5%, 0.2-11.4pp behind SPY, as SHW fell 25% from its May 2015 high to $218.94 on 2015-09-29. Every
+  other 2015 date under the hurdle (to 2015-08-21) still beat SPY. From 2016 every date cleared the hurdle but four of 2017
+  (2017-01-27, 2017-05-26, 2017-06-02 and 2017-07-21, +24% to +32%), and only four (2016-04-29 to 2016-05-20) lagged SPY, by
+  0.4-5.5pp. The FAIR call held on 4 of 22 (2016-02-05 to 2016-02-19 and 2017-07-21, 7-13pp ahead of SPY); the other 18 beat SPY by
+  more than 15pp (15.5-40pp). One-year returns had a median of +15% (-11% to +65%); three-year returns ran +33% to +140% (median +68%),
+  ahead of SPY on 155 of 156. Over 2008-2017 the RICH call held on 23 of 465 RICH dates.
+- **The CHEAP call held on all 9 dates, through the acquisition, not the franchise.** From the Q3 2017 print BASE took the quarter's
+  +37.4% reported growth, 32.8 points of it Valspar's acquired sales, as +41.1%/yr EPS growth on a FY2017 anchor that already held seven
+  months of Valspar (retro/README.md, "SHW 2015-2017"). The two-year price ($572-593) landed at 0.93-0.96 times that BASE price
+  ($618-621), the stock returning +44% to +55%, 19-30pp ahead of SPY. Every alternative that takes Valspar out of the inputs, decided and
+  measured before scoring, turns those dates RICH or FAIR, and seen afterwards each turns held calls into failed ones: BASE on core growth
+  (21 dates moved; 10 held before, 0 after), the Valspar items at GAAP (26; 10 and 0), the FY2017 anchor without Valspar (13; 8 and 0).
+  The rule that put the acquisition into BASE has stood since 2008 (Q4 2010's +18.2% with 8.7 points of acquisitions) and stays; that it
+  scored well here is one acquisition of one stock, and a growth rate that counts an acquisition's sales against an anchor that already
+  includes the acquisition overstates growth by construction. Hypothesis for the method, not a rule: a fallback growth rate should net out
+  stated acquired sales when the anchor year includes them. Test it on other tickers' acquisitions before any method change; never fit it
+  to SHW's outcomes, which here favour the double count.
+- **The band caught up; the price landed nearest BULL.** It landed nearest BULL on 134 dates, XBULL on 11 (2015-2016) and BASE on 11
+  (2017's CHEAP dates and two more), at 0.64-0.90 times XBULL and 0.82-1.39 times BULL: the first SHW batch since 2008 where no two-year
+  price went beyond XBULL. The window's median P/E rose from 15.8x to 20.8x and its 90th percentile held at 24-25x, so the bands now
+  spanned the multiples the stock traded at (20-31x the guided year). No path came near BEAR: the lowest close of every window was
+  1.9-2.7 times the BEAR price; drawdowns ran 15-25%.
+- **RICH held only at the top of the band.** The held RICH calls entered at 24.7-31.3x the guided year, 1.55-1.98 times the window
+  median and its 92nd-100th percentile (the January 2015 dates on FY2014's $8.775 until the Q4 2014 print); the failed ones at 20.3-26.1x,
+  1.02-1.60 times the median and its 54th-97th percentile. Every date that missed the hurdle entered at 1.11-1.98 times the median; every
+  date that cleared it at 0.99-1.49 times. With 2012-2014 (missed at 1.6-1.9 times the median, cleared at 17.6-26.7x) this sharpens the
+  band hypothesis of 2009-2014: the RICH line sits about where the multiple is merely above its median, while SHW's two-year returns turned
+  poor only near 1.5-2 times it. Test where the RICH line should sit on other tickers and periods before any method change; never fit it to
+  SHW's outcomes.
+- **This time the ranking ran the right way on most measures.** Across the 156 dates the entry P/E ranks the return to the m12-24
+  average price at Spearman -0.92 (the two-year endpoint: -0.63), the EPP gap at -0.71 (-0.51), Ratio B at -0.65 (-0.71), the
+  conservative two-year case at +0.50 (+0.50) and the adjusted gap at +0.35 (+0.52), all the right way; the entry price at -0.26
+  (-0.20); the proxy composite at -0.09 (-0.09), nothing. The least-overvalued third by adjusted gap returned +48% against +29% for the
+  most-overvalued. The adjusted gap has now ranked SHW's dates -0.35 (2008), +0.70 (2009-2011), -0.39 (2012-2014) and +0.35 (2015-2017);
+  the entry multiple has ranked them the right way in the last two batches (-0.68 and -0.92 on the m12-24 outcome).
+- **The encoding calls, seen afterwards.** Of the alternatives in retro/README.md ("SHW 2015-2017"), the Valspar ones decide the second
+  half of 2017 (above). The Consumer Group signal at BEAR moves 17 classes toward RICH and would have held on 0 of them (10 held as
+  built); at XBULL 5 RICH dates of 2016 turn FAIR, one of which would have held. The pre-tax margin thresholds with 2000 at GAAP move 2
+  (one FAIR date to CHEAP would have held; 2016-10-26 RICH to FAIR would not). The revenue reclassification taken out of BASE moves 3
+  toward RICH, all of which would have failed (one FAIR held as built). FY2016 at $12.45, BASE on reported growth and the FY2015 range not
+  carried move nothing. The calls were decided before scoring and stay; changing a rule means a new method version tested elsewhere.
