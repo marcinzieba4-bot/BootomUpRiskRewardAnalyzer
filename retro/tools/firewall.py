@@ -21,7 +21,8 @@ first states on the last print before it, the 'servings_later' rule, and a listi
 range for every quarter the fact sheet guides, a later withdrawal of every guided year, call-only guidance words and a receivables
 caveat; XOM: a guide with a production outlook for every guided year and a dividend, and a later print with outlook words, renamed
 volume lines and full-year actuals that exclude its own year and restate every earlier one, and a later vintage that excludes a year; SHW: a guide
-with every guided field, a later range for every quarter the fact sheet guides, and a later print that renames every reporting line; a CLOUD event
+with every guided field, a later range for every quarter the fact sheet guides, and a later print that renames every reporting line and restates
+every year of the history (the 'restates' field of SHW 2015-2017); a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -199,6 +200,8 @@ try:
             f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED",
                                 "eps_guide": [0.1, 0.2], "rev_guide": [-40, -30], "fy_words": "PLANTED",
                                 "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
+        v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+        last.update(restates={y: 0.01 for y in v0["eps_normalized"]}, restates_note="PLANTED")
     if "listings" in f:    # PEP: an exchange change announced and effective after CUTOFF
         f["listings"].append({"published": later, "effective": later, "exchange": "PLANTED", "source": last["source"], "note": "PLANTED"})
     v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))

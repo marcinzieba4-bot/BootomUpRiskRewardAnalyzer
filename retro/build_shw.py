@@ -11,18 +11,21 @@ market statistics, with paint and coatings signals (retro/templates/shw_engine.p
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 Sherwin-Williams' fiscal year is the calendar year. Each earnings release (and an outlook 8-K between releases) guides the
-next quarter and the fiscal year: diluted EPS ranges in numbers; net sales in numbers in some releases (Q2-Q3 2007, most of 2009
-and 2011, the first two of 2012, every one from Q1 2013), otherwise in words. Guides are therefore their own dated list, as for LOW, and each field comes from the latest guide for the
+next quarter and the fiscal year: diluted EPS ranges in numbers (from Q1 2016 the company's figure excluding the Valspar acquisition
+costs, as published beside GAAP); net sales in numbers in some releases (Q2-Q3 2007, most of 2009 and 2011, the first two of 2012, every
+one from Q1 2013 to Q2 2015), otherwise in words. Guides are therefore their own dated list, as for LOW, and each field comes from the latest guide for the
 current fiscal year that states it. The method r2 inputs map as follows (retro/README.md, "SHW"):
   - current-FY EPS: the fiscal-year EPS guide midpoint (no numeric EPS guide: the last full year's EPS stands),
   - forward revenue growth: the next-quarter net sales guide for a quarter not yet reported (none in numbers: the fiscal-year
     net sales guide; none either: the latest quarter's net sales growth excluding the currency effect the release states, the
     NKE and PEP rule, or as reported when the release states none),
   - guided margin step: none (no margin guide in numbers); the margin signal takes the latest quarter's pre-tax margin change.
-Words ('fy_words', a quarter's 'words') are shown in the guide line and feed no input (the UNP 2016 rule).
+Words ('fy_words', a quarter's 'words') are shown in the guide line and feed no input (the UNP 2016 rule). A later print may publish
+an earlier year's company figure on a new basis ('restates': the Q1 2017 release's FY2016 $12.85); it replaces the year from that print
+until a 10-K vintage published after it carries the year (retro/README.md, "SHW 2015-2017").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2014 were accepted before the open or during the session on the
+where it is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open or during the session on the
 release day; a release on the week's last trading day (Thursday 2011-04-21 and 2014-04-17, before Good Friday; Friday 2013-10-25) counts
 for that close, by an 8-K accepted before the open or during the session (the UNP 2014 rule).
 
@@ -32,6 +35,7 @@ Usage
   python3 retro/build_shw.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_shw.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_shw.py --weekly 2012-01-02 2014-12-31
+  python3 retro/build_shw.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_shw.py 2008-01-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SHW/<AS_OF>
 """
@@ -158,6 +162,15 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_comps=a["comps_pct"], prev_fy_consumer_pct=a["consumer_pct"], prev_fy_stores=a["stores"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a company figure for an earlier year of the history, first published in a later print ('restates': the Q1 2017 release's FY2016
+    # $12.85 excluding only the Valspar acquisition costs, the basis of its FY2017 guide), replaces it from that print until a 10-K
+    # vintage published after the print carries the year (each year from the latest filing that reports it; the XOM 'restates')
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, e in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: e}, normalization=f'{h["normalization"]}; {p["restates_note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} EPS from {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope); before the
     # first print in the fact sheet, the vintage names it
