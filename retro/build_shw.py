@@ -12,7 +12,7 @@ market statistics, with paint and coatings signals (retro/templates/shw_engine.p
 
 Sherwin-Williams' fiscal year is the calendar year. Each earnings release (and an outlook 8-K between releases) guides the
 next quarter and the fiscal year: diluted EPS ranges in numbers; net sales in numbers in some releases (Q2-Q3 2007, most of 2009
-and 2011), otherwise in words. Guides are therefore their own dated list, as for LOW, and each field comes from the latest guide for the
+and 2011, the first two of 2012, every one from Q1 2013), otherwise in words. Guides are therefore their own dated list, as for LOW, and each field comes from the latest guide for the
 current fiscal year that states it. The method r2 inputs map as follows (retro/README.md, "SHW"):
   - current-FY EPS: the fiscal-year EPS guide midpoint (no numeric EPS guide: the last full year's EPS stands),
   - forward revenue growth: the next-quarter net sales guide for a quarter not yet reported (none in numbers: the fiscal-year
@@ -22,15 +22,16 @@ current fiscal year that states it. The method r2 inputs map as follows (retro/R
 Words ('fy_words', a quarter's 'words') are shown in the guide line and feed no input (the UNP 2016 rule).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2011 were accepted before the open or during the session on the
-release day; a release on the week's last trading day (Thursday 2011-04-21, before Good Friday) counts for that close, by an 8-K accepted
-during the session (the UNP 2014 rule).
+where it is the first trading day after it. The earnings 8-Ks of 2007-2014 were accepted before the open or during the session on the
+release day; a release on the week's last trading day (Thursday 2011-04-21 and 2014-04-17, before Good Friday; Friday 2013-10-25) counts
+for that close, by an 8-K accepted before the open or during the session (the UNP 2014 rule).
 
 Output goes to staging/retrospective/SHW until the series is added to the archive (--out archive/retrospective/SHW).
 
 Usage
   python3 retro/build_shw.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_shw.py --weekly 2009-01-05 2011-12-31
+  python3 retro/build_shw.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_shw.py 2008-01-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SHW/<AS_OF>
 """
@@ -175,8 +176,15 @@ def build(as_of, facts, raw, spx, engine, out):
     ge, gr, gw = stated("eps_guide"), stated("rev_guide"), stated("fy_words")
     qkey = lambda q: (int(q.split()[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"], nq)                 # a next-quarter guide counts while its quarter is unreported
-    gq = next((g for g in reversed(guides) if later(g["q_guide"]["quarter"])), None)
-    q = gq["q_guide"] if gq else None
+    gq = next((g for g in reversed(guides) if "q_guide" in g and later(g["q_guide"]["quarter"])), None)
+    # each field of the next quarter's guide from the latest guide that states it for that quarter (an outlook 8-K that updates only
+    # the quarter's EPS, 2012-04-09, leaves the release's net sales range standing)
+    q = None
+    if gq:
+        q = {}
+        for g in guides:
+            if g.get("q_guide", {}).get("quarter") == gq["q_guide"]["quarter"]:
+                q.update(g["q_guide"])
     if ge:
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} EPS, guide midpoint"

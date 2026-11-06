@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  SHW  ·  The Sherwin-Williams Company  ·  $194.69  ·  RETROSPECTIVE as of 2014-03-28
+  Signal: ✕ AVOID   Ratio B: 8.92x   Adj gap: -0.38  [MODESTLY OVERVALUED]
+  Point-in-time: 12 sources, latest published 2014-03-28; latest print Q4 2013 (Jan 30)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E net sales, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2014E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores Group        $     6.6  $   6.6  $   7.4      +0.0      +0.8
+    +10.9% net sales in FY13
+  Global Finishes Group     $     2.2  $   2.2  $   2.5      +0.0      +0.3
+    +2.2% net sales in FY13
+  Consumer Group            $     1.5  $   1.5  $   1.7      +0.0      +0.2
+    +1.5% net sales in FY13
+  Latin America Coatings G  $     0.9  $   0.9  $   1.0      +0.0      +0.1
+    -0.4% net sales in FY13
+  Administrative            $     0.0  $   0.0  $   0.0      +0.0      +0.0
+    -19.6% net sales in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    11.2  $  11.2  $  12.6      +0.0      +1.4
+  FY2014E = FY13 $10.19B × (1 + 10.5%: FY14 net sales guide); split pro rata to FY13 segment net sales (FY2013 10-K)
+  Q4 2013 (Jan 30): net sales $2.46B +10.6%; comps +9.2%; Consumer Group +6.6%; gross margin 45.75% (+94.8bp);
+  pre-tax margin 6.07% (+183.4bp); EPS $1.14 vs $0.65
+  Comparable-store sales: 'Net sales from stores open for more than twelve calendar months increased 7.8% in the year and 9.2% in the quarter'; Consumer Group: 'Net sales increased 6.6% to $272.6 million in the quarter'; currency -1.1pp ('Unfavorable currency translation rate changes decreased consolidated net sales 0.8% in the year and 1.1% in the quarter'); acquisitions 'increased consolidated net sales 1.8% in the year and 4.6% in the quarter'; EPS the year-ago quarter as revised for the DOL settlement ($.65; cost of goods sold $1,226,362K, income before income taxes $94,193K)
+  FY14 guide (Q4 2013 release): EPS $8.12-8.32 ('including a Comex EPS loss of $.45 to $.55 per share'); net sales +8-13%; Q1 2014: net sales +7-12%, EPS $0.95-1.15
+
+  FY2014E EPS check:  $11.2B × 10.7% pre-tax × (1−30.7%) ÷ 0.102B  =  $8.14  (FY2014E EPS, guide midpoint)
+  FY2016E BEAR check: $11.2B × 10.7% ÷ 0.094B  =  $8.80  (scenario $5.95)
+  FY2016E BULL check: $12.6B × 11.1% ÷ 0.094B  =  $10.27  (scenario $10.56)
+  Every 1pp of pre-tax margin ≈ $0.76 EPS ≈ $12/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores comparable sales       -7.0%   ≥-1.0%    ≥4.0%   ≥14.0%     +9.2%  ▲ BULL  ███░
+  Gross margin change               -290.0bp  ≥-130.0bp  ≥30.0bp  ≥180.0bp   +94.8bp  ▲ BULL  ███░
+  Net sales growth                   -10.0%   ≥-3.0%    ≥4.0%   ≥18.0%    +10.6%  ▲ BULL  ███░
+  Consumer Group net sales growth    -20.0%   ≥-9.0%    ≥2.0%   ≥21.0%     +6.6%  ▲ BULL  ███░
+  Pre-tax margin change             -220.0bp  ≥-110.0bp   ≥0.0bp  ≥160.0bp  +183.4bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.00 / 4.00
+  Market composite:   3.30 / 4.00  (back-solved from $195 + 15% hurdle)
+  SCA adjustment:    +0.02  ·  EPP-distance adj -0.10  →  Adj composite 2.92  →  Gap -0.38  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 net sales +6.8% on Paint Stores comps +7.8%, 3,908 paint stores; Q4 gross margin 45.75% (+94.8bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 23.7x FY14E vs a 15.1x 10-yr median (92nd percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 2014 net sales guide +7-12% vs a 8.6% 9-yr median  (+0.09 × 20%  =  +0.018)
+    +  FY13 year-end cash $0.745B, FY13 free cash flow $0.92B, dividend $2.20 a year, 4.30 million shares purchased in 2013; remaining authorization 12.15 million shares at December 31, 2013  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Paint Stores comparable sales        +9.2%     -7.0%  -16.2%  Housing turnover and repaint demand f…
+  Gross margin change                +94.8bp  -290.0bp  -384.8bp  Raw material costs outrun selling prices
+  Net sales growth                    +10.6%    -10.0%  -20.6%  Volume falls faster than prices, stor…
+  Consumer Group net sales growth      +6.6%    -20.0%  -26.6%  DIY demand at the big retailers shrinks
+  Pre-tax margin change             +183.4bp  -220.0bp  -403.4bp  Store and selling costs deleverage on…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$104  (model)  /  $76 (defined)
+  Bear probability (proxy model):  4.6%
+
+  KEY TRIGGER: Paint Stores comparable sales went from +10.9% (Q3 2013) to +9.2% (Q4 2013);
+  the bear case needs a demand recession that gross margin (+94.8bp now)
+  and selling prices no longer cover. Housing drives demand, by the company's own account; the bear needs raw
+  material costs to stay up while volumes fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.22  (FY2014E EPS, guide midpoint)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2004 13.3x, 2005 12.4x, 2006 9.9x, 2007 12.3x, 2008 11.3x, 2009 11.4x, 2010 13.8x, 2011 16.8x, 2012 14.0x, 2013 21.3x, 2014 21.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $107/share
+  Current $195 vs Updated EPP $107:  +82%  ⚠ far above floor — large drawdown room
+  Bear $76 vs Updated EPP $107:  -29%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Paint Stores comparable sales               -1.0      -10.2   BASE floor (vs +9 now)
+  Gross margin change                       -130.0     -224.8   BASE floor (vs +95 now)
+  Net sales growth                            -3.0      -13.6   BASE floor (vs +11 now)
+  Consumer Group net sales growth             -9.0      -15.6   BASE floor (vs +7 now)
+  Pre-tax margin change                     -110.0     -293.4   BASE floor (vs +183 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.22 × (1+11.3%)² = $10.19
+  At 15x P/E (conservative):  $153/share
+  + Cumul. dividends (2yr):  +$4.53/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $153  (▼42 from $195)
+  Conservative total return:  -19% over 2yr  = -10%/yr
+
+  11.3% EPS growth is what is left once the premium multiple (23.7x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2016E EPS of $12.68,
+  i.e. 24.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $162.22  –  $208.63  (at 70th pct of range)
+  Annual dividend:      $2.20/share  (yield 1.1%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 1.16
+  1-sigma range (1yr):  $152  –  $238  ($195 ± 22%)
+  2-sigma range (1yr):  $109  –  $280
+  ────────────────────────────────────────────────────────────
+  Bear $76 requires:  ~2.8σ price move  (unusual — requires fundamental break)
+  A paint and coatings company with a 1.2 beta: the stock is +18% off its April
+  low while Paint Stores comparable sales went from +10.9% (Q3 2013) to +9.2% (Q4 2013).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.95  12.7x  $     76     4.6%      3.2%    +1.3pp  EPS -14.9%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct
+  BASE       10.56  15.1x  $    159    15.9%     11.2%    +4.7pp  EPS +13.3%/yr (Q1 guide + margin + buyback); P/E at its 10-yr median
+  BULL       10.56  19.7x  $    208    55.5%     39.2%   +16.2pp  EPS +13.3%/yr (FY04-FY13 CAGR); P/E holds its 75th pct
+  XBULL      14.41  23.3x  $    336    24.1%     46.3%   -22.2pp  EPS +32.4%/yr (best 2-yr run FY04-FY13); P/E at its 90th pct
+
+  Proxy EV (2yr): $225  /  Market EV: $258  /  Current: $195
+  Conservative EV (2yr, ④): $153 + $4.53 divs = $157 total value
+  Downside (→ Bear $76): 61.0%   Upside (→ Bull $208): 6.8%   Ratio B 8.92x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $195 the market needs $257 in two years —
+  above the BULL case. That is a market composite of 3.30 against a model
+  read of 2.92: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       8.92x     +82%    -0.38  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.20x     +82%    +0.02  FAIRLY VALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +82%    -0.85  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          6.04x     +82%    -0.32  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         16.65x     +82%    -0.44  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             8.92x     +82%    -0.08  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 8.92x     +48%    -0.38  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    8.92x     +82%    -0.19  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2014 print (mid-April) — the next read on comps (+9.2% now) and the guide
+  (2) Gross margin — +94.8bp in Q4 2013: raw material costs against selling prices, what must hold if comps do not
+  (3) FY14 EPS guide $8.12-8.32 (Q4 2013 release)
+  (4) Pre-tax margin — 6.07% in Q4 2013 (+183.4bp): where store and selling costs deleverage on falling comps
+  (5) Capital return at 24x — 1.5 million shares purchased in the quarter and 4.3 million in the year; remaining authorization 12.15 million shares at December 31, 2013: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $107  |  ADD below ~$135  |  TRIM above $208
+════════════════════════════════════════════════════════════════════════
+
