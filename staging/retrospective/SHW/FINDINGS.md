@@ -1,9 +1,10 @@
 # SHW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SHW weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the SHW weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306; 2018-2020: 205620b). Prices run to 2026-11-05
-(2008, 2012-2014) and 2026-11-06 (2009-2011, 2015-2020); the two-year horizons end by 2022-12-30 (three-year: 2023-12-29).
+pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306; 2018-2020: 205620b; 2021-2023: a82e11f). Prices run to
+2026-11-05 (2008, 2012-2014) and 2026-11-06 (2009-2011, 2015-2023); the two-year horizons end by 2025-12-29 (three-year: 2026-11-03;
+the last eight dates of 2023 have none yet).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -265,3 +266,99 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   and 14). The pre-tax margin thresholds with 2000 at GAAP move 12 (5 and 7); BASE on reported growth 1 (held either way); the FY2020
   range kept and the preliminary 8-K dropped move nothing. The calls were decided before scoring and stay; changing a rule means a new
   method version tested elsewhere.
+
+## 2021-2023 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 38 | +56.3% | -0.5% to +93.0% | 36 | 23 | +47.9% | 36 |
+| class FAIR | 35 | +35.0% | -14.7% to +61.7% | 18 | 9 | +30.4% | 26 |
+| class RICH | 83 | +6.0% | -24.1% to +61.6% | 15 | 16 | -3.3% | 64 |
+| legacy tier BUY | 47 | +42.4% | -7.3% to +93.0% | 35 | 20 | +39.0% | 36 |
+| legacy tier ACCUMULATE | 37 | +40.9% | -14.7% to +62.3% | 26 | 22 | +27.8% | 25 |
+| legacy tier WATCHLIST | 28 | +17.1% | -13.7% to +51.0% | 7 | 6 | +3.5% | 22 |
+| legacy tier AVOID | 44 | -8.9% | -24.1% to +37.8% | 1 | 0 | -18.1% | 43 |
+| 2021 (RICH 38, FAIR 12, CHEAP 2) | 52 | -9.1% | -24.1% to +3.6% | 0 | 0 | -17.5% | 48 |
+| 2022 (RICH 36, CHEAP 14, FAIR 2) | 52 | +38.2% | -6.7% to +93.0% | 30 | 28 | +21.3% | 34 |
+| 2023 (CHEAP 22, FAIR 21, RICH 9) | 52 | +40.4% | +6.0% to +69.7% | 39 | 20 | +41.5% | 44 |
+| RICH run 2021-06-25 to 2022-09-09 (RICH 64) | 64 | +11.5% | -24.1% to +61.6% | 14 | 16 | -9.1% | 46 |
+| 2022-09-16 to 2023-04-21, BASE +12% to +21%/yr (CHEAP 26, FAIR 6) | 32 | +58.6% | +38.8% to +93.0% | 32 | 25 | +48.9% | 32 |
+| lowest third by adjusted gap (-2.77 to -0.99) | 52 | +6.6% | | | | -11.4% | |
+| middle third by adjusted gap (-0.92 to -0.00) | 52 | +15.0% | | | | +13.7% | |
+| highest third by adjusted gap (+0.04 to +1.45) | 52 | +50.1% | | | | +43.5% | |
+
+- **RICH held on 64 of 83 dates and CHEAP on 36 of 38: SHW's best batch.**
+  - Across all 156 dates, two-year returns ran from -24% to +93% (median +28%). Dates cleared the hurdle on 69 and beat SPY on 48.
+  - **2021.** The two-year windows ran through the 2022 fall: a 43% drawdown to the low of 2022-10-20.
+    - Every one of the 52 dates missed the hurdle and lagged SPY, by 4-21pp, with returns of -24% to +4%.
+    - The RICH call held on all 38 RICH dates of 2021, which entered at 30-42x the guided year.
+    - The two CHEAP dates, 2021-02-26 and 2021-03-05, failed (-0.5% and +3.4%, behind SPY by 5-8pp). They entered at 25x, the 80th
+      percentile of the band.
+  - **2022.** The RICH call held on 14 of 25 dates in the first half and 4 of 11 in the second. Every CHEAP date from 2022-09-16 held,
+    with returns of +44% to +93%.
+  - **2023.** All 22 CHEAP dates held (+35% to +70%), and FAIR held on 14 of 21.
+  - **Other horizons.**
+    - One-year returns had a median of +12%, ranging from -32% to +65%.
+    - Three-year returns (148 dates) ran from -2% to +73% (median +35%), ahead of SPY on 17: nine of 2021's, eight of 2022's and none
+      of 2023's 44.
+  - **Over 2008-2023:** the RICH call held on 113 of 602 dates, CHEAP on 142 of 144, and FAIR on 42 of 89.
+- **RICH held where the multiple stood far above its median.** The window's median sat at 22.7-24.3x and its 90th percentile at
+  26.1-30.9x.
+
+  | RICH calls | Entry P/E on the guided year | Times the median | Percentile of the band |
+  |---|---|---|---|
+  | Held | 24.9-41.7x | 1.06-1.79 | 63rd-100th |
+  | Failed | 23.6-30.8x | 1.00-1.27 | 50th-90th |
+
+  - **The failed calls** are nine dates of 2022-02-25 to 2022-04-22, two of June 2022, seven of 2022-07-28 to 2022-09-09, and
+    2023-07-07.
+  - **The hurdle split the same way:** the dates that missed it entered at 1.06-1.79 times the median, and those that cleared it at
+    0.98-1.27 times.
+  - **Why this batch did better.** The pattern of 2012-2020 holds: poor two-year returns come near the top of the band, while the RICH
+    line sits just above the median. What changed is that 2021 took the multiple to the top of a band that was itself rising. The
+    hypothesis is unchanged: test where the RICH line should sit on other tickers before any method change.
+- **BASE read price inflation as growth, and the calls held anyway.**
+  - The 32 dates of 2022-09-16 to 2023-04-21 (CHEAP 26, FAIR 6) rested on BASE at +12% to +21%/yr. That growth came from sales the Q3 2022
+    release attributes to selling price increases.
+  - Every one of the 32 cleared the hurdle (+39% to +93%), and 25 beat SPY. They entered at $202-258 and 23-30x the guided year, after
+    the fall: each date's two-year low (2022-10-20, March or May 2023) came within months of its entry.
+  - Unlike Valspar's acquired sales in 2017-2018, the inflated BASE did not mislead here. Seen afterwards, BASE on reported growth (no
+    currency adjustment) would have turned four of these CHEAP dates FAIR, and three of the four would still have held.
+  - This is one episode, a label and not a rule.
+- **The ranking ran the right way on every measure, but over one cycle.** Spearman correlations across the 156 dates:
+
+  | Measure | With the m12-24 average price | With the two-year endpoint |
+  |---|---|---|
+  | Entry P/E relative to the window median | -0.81 | -0.77 |
+  | Its percentile | -0.85 | -0.84 |
+  | EPP gap | -0.76 | -0.75 |
+  | Ratio B | -0.70 | -0.69 |
+  | Adjusted gap | +0.78 | +0.62 |
+  | Proxy composite | +0.63 | +0.44 |
+  | Conservative case | +0.74 | +0.77 |
+  | Entry price alone | -0.83 | -0.87 |
+
+  - **By adjusted gap, the thirds returned** +7%, +15% and +50% over two years, in order.
+  - **One cycle dominates.** The 2021 peak and the 2022 trough drive every measure, and the entry price alone ranks as well as any of
+    them. The batch is close to one independent observation, and its two-year windows overlap.
+  - **The adjusted gap has now ranked SHW's dates** -0.35, +0.70, -0.39, +0.35, +0.03 and +0.78 on the m12-24 outcome. It is still not
+    a reliable ranking for one stock.
+- **The two-year price landed nearest BULL.**
+  - **Landings:** BULL on 82 dates, BASE on 45 (43 of them 2021's), XBULL on 27 (at 0.89-0.98 times XBULL), and BEAR on 2 (2021-03-26
+    and 2021-10-22).
+  - **Drawdowns** within two years ran 16-43%.
+  - **The low.** The close of 2022-10-20 ($201.22) is the lowest close in 93 of the windows. It came within 4% of the BEAR price
+    ($193-194) of the June-July 2022 dates; across all dates the window's lowest close was 1.04-1.40 times the BEAR price.
+- **The encoding calls, seen afterwards.** These are the alternatives in retro/README.md ("SHW 2021-2023"):
+
+  | Alternative | Classes moved | Held as built | Held under the variant |
+  |---|---|---|---|
+  | Every EPS figure at GAAP | 70 | 53 | 31 |
+  | Consumer Brands Group signal at BEAR | 16 | 12 | 11 |
+  | Consumer Brands Group signal at XBULL | 16 | 11 | 8 |
+  | Pre-tax margin thresholds with 2000 at GAAP | 10 | 7 | 6 |
+  | BASE on reported growth | 4 | 4 | 3 |
+  | The Q1 2021 currency sentence read as consolidated | 1 | 1 | 1 |
+  | The preliminary 8-K not read as a guide | 0 | — | — |
+
+  The calls were decided before scoring and stay. Changing a rule means a new method version tested elsewhere.
