@@ -27,6 +27,10 @@ replaces it; the range stands, the ACN rule; retro/README.md, "WMT 2012-2014").
 A later print may publish an earlier year's company figure on a new basis ('restates': the Q4 FY11 release's FY10 underlying $3.67 as
 adjusted for the change in inventory accounting); it replaces the year from that print until a 10-K vintage published after it carries
 the year (the SHW rule; retro/README.md, "WMT 2009-2011").
+From 2015 (retro/README.md, "WMT 2015-2017"): ECOMMERCE, live from 2015-01-01, joins the watch list from each 10-K's competition risk
+factor (company-acknowledged, no market read; text only); a fiscal-year net sales guide stated excluding currency ('rev_basis') is method
+r2's local-currency guide; and a one-off inside operating income that a release states in dollars, with the change excluding it, leaves
+that release's operating margin ('op_oneoff_m', 'op_oneoff_prior_m').
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. The earnings 8-Ks were accepted before the open on the release day.
@@ -37,6 +41,7 @@ Usage
   python3 retro/build_wmt.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_wmt.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_wmt.py --weekly 2012-01-02 2014-12-31
+  python3 retro/build_wmt.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_wmt.py 2008-02-20
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/WMT/<AS_OF>
 """
@@ -120,7 +125,10 @@ def check_print(p):
     assert r["ns_m"] + r["other_m"] - r["cogs_m"] - r["sga_m"] == r["op_m"], (p["quarter"], "operating income")
     assert r["ns_prior_m"] + r["other_prior_m"] - r["cogs_prior_m"] - r["sga_prior_m"] == r["op_prior_m"], (p["quarter"], "prior")
     m, m0 = (r["ns_m"] - r["cogs_m"]) / r["ns_m"] * 100, (r["ns_prior_m"] - r["cogs_prior_m"]) / r["ns_prior_m"] * 100
-    o, o0 = r["op_m"] / r["ns_m"] * 100, r["op_prior_m"] / r["ns_prior_m"] * 100
+    # a one-off inside operating income that the release states in dollars, with the change excluding it, leaves that release's operating
+    # margin ('op_oneoff_m' in the quarter, 'op_oneoff_prior_m' in the year-ago quarter; retro/README.md, "WMT 2015-2017")
+    o = (r["op_m"] - r.get("op_oneoff_m", 0)) / r["ns_m"] * 100
+    o0 = (r["op_prior_m"] - r.get("op_oneoff_prior_m", 0)) / r["ns_prior_m"] * 100
     sp = round((r["ns_m"] / r["ns_prior_m"] - 1) * 100, 1)
     ip = round((r["inv_m"] / r["inv_prior_m"] - 1) * 100, 1)
     want = {"sales_b": round(r["ns_m"] / 1000, 3), "sales_pct": sp, "gross_margin": round(m, 2),
@@ -163,11 +171,15 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a discount retailer in 2008 (ECOMMERCE, scoped to physical retail,
-    # from 2015-01-01); the builder refuses events until a theme encoding is decided
-    events = [e for e in facts["events"] if e["published"] <= as_of]
-    if events:
+    # no disruption theme in taxonomy_eras.json is live for a discount retailer before 2015 (ECOMMERCE, scoped to physical retail, from
+    # 2015-01-01). The one encoding decided (retro/README.md, "WMT 2015-2017"): each 10-K's competition risk factor, which names e-commerce or
+    # digital retail (ecommerce_company_acknowledged), puts ECOMMERCE on the watch list from the theme's live date, with the latest 10-K's
+    # words (a 10-K's wording is replaced by the next 10-K's; the MSFT CLOUD and XOM rule). Any other event kind needs its encoding decided first
+    events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
+    if any(e["kind"] != "ecommerce_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the WMT builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
+    themes = retro_tool.load_taxonomy()["themes"]
+    events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -229,8 +241,10 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd, fwd_label, fwd_short, fwd_period = q["sales"], f"{q['quarter']} net sales guide", f"{q['quarter'][:2]} guide", q["quarter"]
         fwd_kind = "next-quarter net sales guide"
     elif gr:                                 # no next-quarter guide in numbers: the fiscal-year net sales guide
-        fwd, fwd_label, fwd_short, fwd_period = gr["rev_guide"], f"{fy_now} net sales guide", f"{fy_now} guide", fy_now
-        fwd_kind = "fiscal-year net sales guide (no next-quarter guide in numbers)"
+        # a guide stated excluding currency ('rev_basis') is method r2's local-currency guide (the PEP rule; retro/README.md, "WMT 2015-2017")
+        basis = f" {gr['rev_basis']}" if gr.get("rev_basis") else ""
+        fwd, fwd_label, fwd_short, fwd_period = gr["rev_guide"], f"{fy_now} net sales guide{basis}", f"{fy_now} guide", fy_now
+        fwd_kind = f"fiscal-year net sales guide{basis} (no next-quarter guide in numbers)"
     elif latest.get("lc_pct") is not None:   # no net sales guide in numbers: the latest quarter at constant currency (NKE, PEP, SHW)
         fwd = [latest["lc_pct"]] * 2
         fwd_label = f"no {fy_now} net sales guide in numbers, {latest['quarter']} net sales at constant currency"
@@ -243,7 +257,8 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd_short, fwd_period = f"{latest['quarter'][:2]} sales", latest["quarter"]
         fwd_kind = f"no net sales guide in numbers: {latest['quarter']} growth as reported (the release states no currency effect)"
     fy_rev = gr["rev_guide"] if gr else fwd
-    fy_rev_label = (f"{fy_now} net sales guide" if gr else f"{fwd_label}, applied to the year" if q and "sales" in q else
+    fy_rev_label = (f"{fy_now} net sales guide" + (f" {gr['rev_basis']}" if gr.get("rev_basis") else "") if gr else
+                    f"{fwd_label}, applied to the year" if q and "sales" in q else
                     f"{latest['quarter']} net sales growth at constant currency applied to the year (no {fy_now} net sales guide in numbers)"
                     if fwd_short.endswith("ex-FX") else
                     f"{latest['quarter']} net sales growth applied to the year (no {fy_now} net sales guide in numbers)")
@@ -251,7 +266,8 @@ def build(as_of, facts, raw, spx, engine, out):
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']}; {ge['doc']})" if ge.get("eps_guide_note") else f" ({ge['doc']})")]
                 if ge else [f"no {fy_now} EPS range yet"]) + \
                ([f"{gw['fy_words']} ({gw['doc']}; the range stands)"] if gw else []) + \
-               ([f"net sales {pct_range(*gr['rev_guide'])}" + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
+               ([f"net sales {pct_range(*gr['rev_guide'])}" + (f" {gr['rev_basis']}" if gr.get("rev_basis") else "")
+                 + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"net sales {pct_range(*q['sales'])}"] if "sales" in q else []) +
                    ([f"U.S. comps {pct_range(*q['comps'])}"] if "comps" in q else []) +
@@ -296,12 +312,39 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text, from facts only: no disruption theme has dated evidence on AS_OF ──
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("General economic conditions drive demand, by the company's own account; the bear\n"
                 "  needs fuel, labor and health-care costs to keep rising while comps fall.")
     theme_summary = "no disruption theme has dated evidence"
+    why = h["why"]
+    if h.get("why_theme_tail"):                    # from the FY2014 vintage the theme clause follows the theme's status on AS_OF
+        why += "; no disruption theme is live for it"
+    for e in [e for e in events if e["kind"] == "ecommerce_company_acknowledged"][-1:]:
+        # ECOMMERCE is live from 2015-01-01 and scoped to physical retail, grocery included; the latest 10-K's competition risk factor puts
+        # it on the watch list (the ACN CLOUD rule, as for LOW: company-acknowledged, no market read). The factor pair nets to zero and the
+        # theme signal stays at 2/4, so only text changes. The registry's market-pricing event (2017-06-16) names no company, so it is quoted
+        # from its date and re-files nothing (the LOW and PEP reading); re-filing needs dated evidence of market pricing for Walmart
+        th = themes[e["theme"]]
+        mp = [x for x in th["pit_evidence"] if x["date"] <= as_of]
+        mp_txt = (f" The theme registry dates the market's pricing of e-commerce to {mp[-1]['date']} ({mp[-1]['event']}), evidence that "
+                  "names no company." if mp else "")
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "ecommerce"
+        watch = [{"theme": "ECOMMERCE", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Walmart's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                             f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}.{mp_txt} Re-file as DISRUPTION_EXPOSED "
+                             "(ECOMMERCE) only if dated evidence shows the market pricing online substitution of Walmart's store "
+                             "sales specifically.")}]
+        factors = [(f"Omni-channel: {e['offering_short']} — Walmart sells online itself", 0.2, 0.10),
+                   (f"Online competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "E-commerce: net effect on store sales"
+        trigger = "Online and multi-channel rivals take share faster than Walmart's own e-commerce sales grow"
+        theme_summary = "e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it"
+        assert h.get("why_theme_tail"), "a vintage before FY2014 states that no theme is live"
+        why = h["why"] + ("; ECOMMERCE is live (from 2015-01-01) and its competition risk factor puts it on the watch list: "
+                          "company-acknowledged, with no dated evidence that the market prices it for Walmart")
     cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
             f"(3) A numeric {fy_now} EPS guide — none yet")
     cat4 = (f"(4) Operating margin — {latest['op_margin']:.2f}% in {latest['quarter']} ({latest['op_margin_bp']:+.1f}bp): "
@@ -324,7 +367,7 @@ def build(as_of, facts, raw, spx, engine, out):
     groups = [(line_names.get(n, n), v, g) for n, v, g in h["groups"]]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + [g["source"] for g in guides]
            + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames]
-           + [p["source"] for p in public if p.get("renames")])
+           + [p["source"] for p in public if p.get("renames")] + [e["id"] for e in events])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "WM0", "published": as_of, "title": "Yahoo Finance daily prices, WMT and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/WMT/history",
@@ -336,7 +379,8 @@ def build(as_of, facts, raw, spx, engine, out):
                    "op_margin_bp", "inventory_pct", "inventory_gap_pp", "eps_q", "eps_q_prior")
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
-    eps_note = f"; EPS {latest['eps_note']}" if latest.get("eps_note") else ""
+    eps_note = (f"; operating margin {latest['op_margin_note']}" if latest.get("op_margin_note") else "") + \
+               (f"; EPS {latest['eps_note']}" if latest.get("eps_note") else "")
     segs = ", ".join(f"{n} ${b:.2f}B {g:+.1f}%" for n, b, g in latest["segments"])
     fx_txt = (f"; currency: {latest['currency_note']}" + (f", {latest['lc_pct']:+.1f}% at constant currency" if latest.get("lc_pct") is not None else "")
               if latest.get("currency_note") else "")
@@ -369,9 +413,9 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 PIT_PROFILE = {{
     "kind": "DURABLE",
     "risk": 2,
-    "why": {R(h["why"])},
+    "why": {R(why)},
     "theme_watch": {R(watch)},
-    "evidence": [],
+    "evidence": {R(list(dict.fromkeys(e["id"] for e in events)))},
 }}
 
 # ── FACTS: market (prices truncated at AS_OF, as traded on each day) ──────────

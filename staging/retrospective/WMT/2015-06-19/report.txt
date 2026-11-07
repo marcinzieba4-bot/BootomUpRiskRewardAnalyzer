@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  WMT  ·  Wal-Mart Stores, Inc.  ·  $72.74  ·  RETROSPECTIVE as of 2015-06-19
+  Signal: ◎ ACCUMULATE   Ratio B: 0.90x   Adj gap: -2.17  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2015-06-19; latest print Q1 FY16 (May 19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2016E net sales, USD bn  →  FY2018E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2016E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Walmart U.S.              $   292.4  $ 292.4  $ 322.8      +0.0     +30.4
+    +3.1% net sales in FY15
+  Walmart International     $   138.2  $ 138.2  $ 152.6      +0.0     +14.4
+    -0.3% net sales in FY15
+  Sam's Club                $    58.9  $  58.9  $  65.0      +0.0      +6.1
+    +1.5% net sales in FY15
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   489.5  $ 489.5  $ 540.4      +0.0     +50.9
+  FY2016E = FY15 $482.23B × (1 + 1.5%: FY16 net sales guide); split pro rata to FY15 segment net sales (FY2015 10-K)
+  Q1 FY16 (May 19): net sales $114.00B -0.1%; U.S. comps +0.2%; gross margin 24.14% (+9.3bp);
+  operating margin 4.98% (-44.2bp); EPS $1.03 vs $1.10; inventory +2.2% (+2.3pp vs sales)
+  Segment net sales: Walmart U.S. $70.25B +3.5%, Walmart International $30.28B -6.6%, Sam's Club $13.48B -3.0%; comps: Total U.S. comparable store sales with fuel +0.2% (Total U.S. | 1.0% | -0.2% | 0.2% | -0.2% | -0.8% | 0.0%); inventory $46.31B +2.2% year on year; currency: currency exchange rate fluctuations of $3,256 million (the release's constant-currency table), +2.7% at constant currency
+  FY16 guide (Q4 FY15 release, Q1 FY16 release): EPS $4.70-5.05 (Q4 FY15 release); net sales +1-2% ('Given the potential impact of currency headwinds'; the earlier '2 to 4 percent' was given at the October investor conference, not filed); Q2 FY16: Walmart U.S. comparable sales around +1%; Sam's Club without fuel flat to +2%, EPS $1.06-1.18
+
+  FY2016E EPS check:  ($489.5B × 5.63% − $2.35B interest) × (1−32.2%) ÷ 3.243B  =  $5.27  (FY2016E EPS, guide midpoint $4.88)
+  FY2018E BEAR check: ($489.5B × 5.63% − interest) ÷ 3.059B  =  $5.59  (scenario $4.80)
+  FY2018E BULL check: ($540.4B × 6.03% − interest) ÷ 3.059B  =  $6.70  (scenario $5.60)
+  Every 1pp of operating margin ≈ $1.02 EPS ≈ $15/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. comparable store sales         -1.0%    ≥2.0%    ≥5.0%    ≥9.0%     +0.2%  ⚠ BEAR  █░░░
+  Gross margin change               -60.0bp  ≥-20.0bp  ≥30.0bp  ≥60.0bp    +9.3bp  ◦ BASE  ██░░
+  Net sales growth                    +7.0%   ≥10.0%   ≥13.0%   ≥19.0%     -0.1%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth   +6.0pp   ≤1.0pp  ≤-4.0pp  ≤-15.0pp    +2.3pp  ⚠ BEAR  █░░░
+  Operating margin change           -90.0bp  ≥-40.0bp  ≥10.0bp  ≥40.0bp   -44.2bp  ⚠ BEAR  █░░░
+  E-commerce: net effect on store sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.35 / 4.00
+  Market composite:   3.56 / 4.00  (back-solved from $73 + 15% hurdle)
+  SCA adjustment:    +0.04  ·  EPP-distance adj +0.00  →  Adj composite 1.39  →  Gap -2.17  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY15 net sales +1.9% on U.S. comps +0.5%, 4,516 Walmart U.S. units, 647 Sam's Clubs and 6,290 Walmart International units; Q1 gross margin 24.14% (+9.3bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 14.9x FY16E vs a 14.8x 10-yr median (53rd percentile of its own range)  (-0.05 × 25%  =  -0.013)
+    -  Growth vs own history: FY16 net sales guide +1-2% vs a 5.0% 9-yr median  (-0.35 × 20%  =  -0.070)
+    +  Cash $7.76B at 2015-04-30, FY15 free cash flow $16.39B, dividend $1.96 a year, purchase of Company stock $1,015M in fiscal 2015 (FY2015 10-K)  (+0.30 × 15%  =  +0.045)
+    +  Omni-channel: e-commerce added about 0.3% to fiscal 2015 Walmart U.S. comps — Walmart sells online itself  (+0.20 × 10%  =  +0.020)
+    -  Online competition (FY2015 10-K): competition 'whether through physical retail, digital retail or through a combination of both areas'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. comparable store sales          +0.2%     -1.0%   -1.2%  Traffic and ticket fall together
+  Gross margin change                 +9.3bp   -60.0bp  -69.3bp  Price cuts and mix shift compress the…
+  Net sales growth                     -0.1%     +7.0%   +7.1%  Comps stall as new stores and currenc…
+  Inventory growth less sales growth    +2.3pp    +6.0pp  +3.7pp  Inventory outruns sales; markdowns fo…
+  Operating margin change            -44.2bp   -90.0bp  -45.8bp  Expenses deleverage on low comps
+  E-commerce: net effect on store sales    +2.0/4    +1.0/4  -1.0/4  Online and multi-channel rivals take …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$65  (model)  /  $59 (defined)
+  Bear probability (proxy model):  65.1%
+
+  KEY TRIGGER: U.S. comps went from +1.2% (Q4 FY15) to +0.2% (Q1 FY16);
+  the bear case needs a demand recession that gross margin (+9.3bp now)
+  and expense control no longer cover. General economic conditions drive demand, by the company's own account; the bear
+  needs fuel, labor and health-care costs to keep rising while comps fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.88  (FY2016E EPS, guide midpoint)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2005 15.6x, 2006 14.7x, 2007 13.4x, 2008 14.3x, 2009 12.6x, 2010 11.8x, 2011 10.7x, 2012 11.4x, 2013 13.5x, 2014 14.3x, 2015 14.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $63/share
+  Current $73 vs Updated EPP $63:  +15%  moderate distance to floor
+  Bear $59 vs Updated EPP $63:  -7%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. comparable store sales                  2.0       +1.8   BASE floor (vs +0 now)
+  Gross margin change                        -20.0      -29.3   BASE floor (vs +9 now)
+  Net sales growth                            10.0      +10.1   BASE floor (vs -0 now)
+  Inventory growth less sales growth             1.0       -1.3   BASE floor (vs +2 now)
+  Operating margin change                    -40.0       +4.2   BASE floor (vs -44 now)
+  E-commerce: net effect on store sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.88 × (1+2.4%)² = $5.11
+  At 14x P/E (conservative):  $72/share
+  + Cumul. dividends (2yr):  +$4.04/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $72  (▼1 from $73)
+  Conservative total return:  +4% over 2yr  = +2%/yr
+
+  At 14.9x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2018E EPS of $4.91,
+  i.e. 0.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $71.70  –  $90.97  (at 5th pct of range)
+  Annual dividend:      $1.96/share  (yield 2.7%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.67
+  1-sigma range (1yr):  $61  –  $84  ($73 ± 16%)
+  2-sigma range (1yr):  $49  –  $96
+  ────────────────────────────────────────────────────────────
+  Bear $59 requires:  ~1.2σ price move  (within normal vol range)
+  A discount retailer with a 0.7 beta: the stock is +1% off its June
+  low while U.S. comps went from +1.2% (Q4 FY15) to +0.2% (Q1 FY16).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.80  12.3x  $     59    65.1%      2.0%   +63.1pp  EPS -0.8%/yr (worst year FY06-FY15, capped at 0%); P/E to its 10th pct
+  BASE        5.31  14.8x  $     79    26.0%      6.9%   +19.2pp  EPS +4.4%/yr (FY16 guide + margin + buyback); P/E at its 10-yr median
+  BULL        5.60  15.8x  $     88     7.5%     23.9%   -16.5pp  EPS +7.2%/yr (FY06-FY15 CAGR); P/E holds its 75th pct
+  XBULL       6.02  16.9x  $    102     1.4%     67.3%   -65.8pp  EPS +11.1%/yr (best 2-yr run FY06-FY15); P/E at its 90th pct
+
+  Proxy EV (2yr): $67  /  Market EV: $96  /  Current: $73
+  Conservative EV (2yr, ④): $72 + $4.04 divs = $76 total value
+  Downside (→ Bear $59): 18.9%   Upside (→ Bull $88): 21.0%   Ratio B 0.90x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $73 the market needs $96 in two years —
+  above the BULL case. That is a market composite of 3.56 against a model
+  read of 1.39: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.90x     +15%    -2.17  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.35x     +15%    -1.63  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.53x     +15%    -2.36  OVERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.64x     +15%    -1.96  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          1.19x     +15%    -2.38  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             0.90x     +15%    -1.87  OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.90x      -7%    -1.97  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.90x     +15%    -1.55  OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY16 print (mid-August) — the next read on comps (+0.2% now) and the guide
+  (2) Gross margin — +9.3bp in Q1 FY16: price cuts, mix and fuel against cost of sales, what must hold if comps do not
+  (3) FY16 EPS guide $4.70-5.05 (Q4 FY15 release)
+  (4) Operating margin — 4.98% in Q1 FY16 (-44.2bp): where expense deleverage on low comps shows first
+  (5) Capital return at 15x — Purchase of Company stock $280M in the three months: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $63  |  ADD below ~$67  |  TRIM above $88
+════════════════════════════════════════════════════════════════════════
+
