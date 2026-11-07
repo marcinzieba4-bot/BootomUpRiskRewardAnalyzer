@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  WMT  ·  Walmart Inc.  ·  $120.29  ·  RETROSPECTIVE as of 2019-12-13
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -2.22  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2019-12-13; latest print Q3 FY20 (Nov 14)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E net sales, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Walmart U.S.              $   341.6  $ 341.6  $ 359.7      +0.0     +18.1
+    +4.1% net sales in FY19
+  Walmart International     $   124.4  $ 124.4  $ 131.0      +0.0      +6.6
+    +2.3% net sales in FY19
+  Sam's Club                $    59.6  $  59.6  $  62.7      +0.0      +3.1
+    -2.3% net sales in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   525.6  $ 525.6  $ 553.4      +0.0     +27.8
+  FY2020E = FY19 $510.33B × (1 + 3.0%: FY20 net sales guide at constant currency); split pro rata to FY19 segment net sales (FY2019 10-K)
+  Q3 FY20 (Nov 14): net sales $126.98B +2.5%; U.S. comps +2.8%; gross margin 24.48% (-36.7bp);
+  operating margin 3.72% (-30.9bp); EPS $1.15 vs $0.58; inventory +2.3% (-0.2pp vs sales)
+  Segment net sales: Walmart U.S. $83.19B +3.2%, Walmart International $29.17B +1.3%, Sam's Club $14.62B +0.7%; comps: Total U.S. comparable store sales with fuel +2.8% (the table's first column: Total U.S. | 2.8% | 3.8% | 2.8% | 3.4% | 0.0% | 0.4%); inventory $51.55B +2.3% year on year; currency: currency exchange rate fluctuations of $1,010 million (the release's constant-currency table), +3.3% at constant currency; EPS reported; the company's adjusted $1.16 excludes a $0.06 impairment and a $0.05 JD.com gain (operating income includes 'a non-cash impairment charge of $0.3 billion', stated only rounded)
+  FY20 guide (8-K of 2018-10-16, Q4 FY19 release, Q2 FY20 release, Q3 FY20 release): no FY20 EPS range yet; adjusted EPS 'to increase slightly compared to FY19 adjusted EPS1, including Flipkart' (Q3 FY20 release; words, no range); net sales +3% at constant currency ('Around 3% in constant currency'; Walmart U.S. comp sales 'towards the upper-end of +2.5% to +3%, excluding fuel')
+
+  FY2020E EPS check:  ($525.6B × 4.30% − $2.13B interest) × (1−37.4%) ÷ 2.861B  =  $4.48  (FY2020E: no numeric EPS guide yet, FY19's $4.91 stands $4.91)
+  FY2022E BEAR check: ($525.6B × 4.30% − interest) ÷ 2.686B  =  $4.77  (scenario $4.02)
+  FY2022E BULL check: ($553.4B × 4.70% − interest) ÷ 2.686B  =  $5.57  (scenario $5.53)
+  Every 1pp of operating margin ≈ $1.15 EPS ≈ $18/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. comparable store sales         -1.0%    ≥2.0%    ≥5.0%    ≥9.0%     +2.8%  ◦ BASE  ██░░
+  Gross margin change               -60.0bp  ≥-20.0bp  ≥30.0bp  ≥60.0bp   -36.7bp  ⚠ BEAR  █░░░
+  Net sales growth                    +7.0%   ≥10.0%   ≥13.0%   ≥19.0%     +2.5%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth   +6.0pp   ≤1.0pp  ≤-4.0pp  ≤-15.0pp    -0.2pp  ◦ BASE  ██░░
+  Operating margin change           -90.0bp  ≥-40.0bp  ≥10.0bp  ≥40.0bp   -30.9bp  ◦ BASE  ██░░
+  E-commerce: net effect on store sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.65 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $120 + 15% hurdle)
+  SCA adjustment:    +0.00  ·  EPP-distance adj -0.10  →  Adj composite 1.55  →  Gap -2.22  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 net sales +2.9% on U.S. comps +4.0%, 4,769 Walmart U.S. units, 599 Sam's Clubs and 5,993 Walmart International units; Q3 gross margin 24.48% (-36.7bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 24.5x FY20E vs a 15.3x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY20 net sales guide at constant currency +3% vs a 2.9% 9-yr median  (+0.01 × 20%  =  +0.002)
+    +  Cash $8.61B at 2019-10-31, FY19 free cash flow $17.41B, dividend $2.12 a year, purchase of Company stock $7,410M in fiscal 2019 (FY2019 10-K)  (+0.30 × 15%  =  +0.045)
+    +  Omni-channel: eCommerce added about 1.3% to fiscal 2019 Walmart U.S. comps — Walmart sells online itself  (+0.20 × 10%  =  +0.020)
+    -  Online competition (FY2019 10-K): competition with 'global eCommerce and omni-channel retailers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. comparable store sales          +2.8%     -1.0%   -3.8%  Traffic and ticket fall together
+  Gross margin change                -36.7bp   -60.0bp  -23.3bp  Price cuts and mix shift compress the…
+  Net sales growth                     +2.5%     +7.0%   +4.5%  Comps stall as new stores and currenc…
+  Inventory growth less sales growth    -0.2pp    +6.0pp  +6.2pp  Inventory outruns sales; markdowns fo…
+  Operating margin change            -30.9bp   -90.0bp  -59.1bp  Expenses deleverage on low comps
+  E-commerce: net effect on store sales    +2.0/4    +1.0/4  -1.0/4  Online and multi-channel rivals take …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$60  (model)  /  $49 (defined)
+  Bear probability (proxy model):  40.7%
+
+  KEY TRIGGER: U.S. comps went from +2.6% (Q2 FY20) to +2.8% (Q3 FY20);
+  the bear case needs a demand recession that gross margin (-36.7bp now)
+  and expense control no longer cover. General economic conditions drive demand, by the company's own account; the bear
+  needs fuel, labor and health-care costs to keep rising while comps fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.91  (FY2020E: no numeric EPS guide yet, FY19's $4.91 stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2009 14.4x, 2010 11.8x, 2011 10.7x, 2012 11.4x, 2013 13.5x, 2014 14.3x, 2015 12.3x, 2016 13.3x, 2017 15.0x, 2018 16.8x, 2019 18.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $64/share
+  Current $120 vs Updated EPP $64:  +88%  ⚠ far above floor — large drawdown room
+  Bear $49 vs Updated EPP $64:  -23%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. comparable store sales                  2.0       -0.8   BASE floor (vs +3 now)
+  Gross margin change                        -20.0      +16.7   BASE floor (vs -37 now)
+  Net sales growth                            10.0       +7.5   BASE floor (vs +2 now)
+  Inventory growth less sales growth             1.0       +1.2   BASE floor (vs -0 now)
+  Operating margin change                    -40.0       -9.1   BASE floor (vs -31 now)
+  E-commerce: net effect on store sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.91 × (1+4.1%)² = $5.32
+  At 15x P/E (conservative):  $80/share
+  + Cumul. dividends (2yr):  +$4.37/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $80  (▼40 from $120)
+  Conservative total return:  -30% over 2yr  = -15%/yr
+
+  4.1% EPS growth is what is left once the premium multiple (24.5x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2022E EPS of $7.73,
+  i.e. 25.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $85.78  –  $125.38  (at 87th pct of range)
+  Annual dividend:      $2.12/share  (yield 1.8%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.59
+  1-sigma range (1yr):  $101  –  $139  ($120 ± 16%)
+  2-sigma range (1yr):  $82  –  $158
+  ────────────────────────────────────────────────────────────
+  Bear $49 requires:  ~3.8σ price move  (unusual — requires fundamental break)
+  A discount retailer with a 0.6 beta: the stock is +40% off its December
+  low while U.S. comps went from +2.6% (Q2 FY20) to +2.8% (Q3 FY20).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.02  12.3x  $     49    40.7%      1.2%   +39.5pp  EPS -9.5%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE        5.53  15.3x  $     85    44.2%      4.3%   +39.9pp  EPS +6.1%/yr (FY20 guide + margin + buyback); P/E at its 10-yr median
+  BULL        5.53  17.5x  $     97    12.7%     15.0%    -2.3pp  EPS +6.1%/yr (FY10-FY19 CAGR); P/E holds its 75th pct
+  XBULL       6.06  20.3x  $    123     2.4%     79.5%   -77.1pp  EPS +11.1%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $73  /  Market EV: $117  /  Current: $120
+  Conservative EV (2yr, ④): $80 + $4.37 divs = $84 total value
+  Downside (→ Bear $49): 59.3%   Upside (→ Bull $97): -19.4%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $120 the market needs $159 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 1.55: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +88%    -2.22  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx     +88%    -2.22  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +88%    -2.22  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +88%    -2.22  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +88%    -2.25  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +88%    -1.92  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +53%    -2.22  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +88%    -2.22  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY20 print (mid-February) — the next read on comps (+2.8% now) and the guide
+  (2) Gross margin — -36.7bp in Q3 FY20: price cuts, mix and fuel against cost of sales, what must hold if comps do not
+  (3) A numeric FY20 EPS guide — none yet
+  (4) Operating margin — 3.72% in Q3 FY20 (-30.9bp): where expense deleverage on low comps shows first
+  (5) Capital return at 24x — Purchase of Company stock $4,829M in the nine months: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $64  |  ADD below ~$72  |  TRIM above $97
+════════════════════════════════════════════════════════════════════════
+

@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for WMT retrospectives (retro/build_wmt.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Walmart's fiscal year N ends on January 31 of calendar year N. Each release guides diluted EPS from continuing operations for the next quarter and, in most releases, the fiscal year; U.S. comparable store sales for the next quarter in most; fiscal-year net sales in a few (from the Q4 FY11 release); never a margin. Values are as reported; a vintage takes each year from the latest filing that reports it (the 10-K's Eleven-Year or Five-Year Financial Summary for EPS and net sales; the statements of income for diluted shares). A print's growth, margins and inventory growth are derived from the raw figures of its release ('raw', millions; the builder re-derives and checks them): the year-ago quarter is the one the same release shows; a currency effect is the one the release states (a dollar effect is converted on the year-ago net sales of the same release); comparable store sales are the release's Total U.S. figure with fuel, the measure the 10-Ks report. A one-off inside operating income that the release itself states in dollars, with the change excluding it, is taken out of that release's operating margin ('op_oneoff_m' for the quarter, 'op_oneoff_prior_m' for the year-ago quarter); one stated only per share stays in. Events (ECOMMERCE, company-acknowledged, from each 10-K's competition risk factor) count only from the theme's live date in taxonomy_eras.json. rule_t holds the annual values behind the engine's signal thresholds, with the raw figures they are computed from. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for WMT retrospectives (retro/build_wmt.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Walmart's fiscal year N ends on January 31 of calendar year N. Each release guides diluted EPS from continuing operations for the next quarter and, in most releases, the fiscal year; U.S. comparable store sales for the next quarter in most; fiscal-year net sales in a few (from the Q4 FY11 release); never a margin. Values are as reported; a vintage takes each year from the latest filing that reports it (the 10-K's Eleven-Year or Five-Year Financial Summary for EPS and net sales; the statements of income for diluted shares). A print's growth, margins and inventory growth are derived from the raw figures of its release ('raw', millions; the builder re-derives and checks them): the year-ago quarter is the one the same release shows; a currency effect is the one the release states (a dollar effect is converted on the year-ago net sales of the same release); comparable store sales are the release's Total U.S. figure with fuel, the measure the 10-Ks report. A one-off inside operating income that the release itself states in dollars, with the change excluding it, is taken out of that release's operating margin ('op_oneoff_m' for the quarter, 'op_oneoff_prior_m' for the year-ago quarter); one stated only per share stays in. A guide may withdraw named fields of its year ('withdrawn'), voiding them in every earlier guide for that year; net sales guided only in words or as a one-sided bound ('rev_words') give no field. A change of legal name ('company_names') applies from its effective date. Events (ECOMMERCE, company-acknowledged, from each 10-K's competition risk factor) count only from the theme's live date in taxonomy_eras.json. rule_t holds the annual values behind the engine's signal thresholds, with the raw figures they are computed from. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "WMT",
  "sources": {
   "WM1": {
@@ -463,6 +463,125 @@
    "title": "Wal-Mart Q3 FY2018 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416917000075/earningsrelease-10312017.htm",
    "supports": "Q3 FY18 results; FY18 adjusted EPS $4.38-4.46 (GAAP $3.84-3.92)"
+  },
+  "WM67": {
+   "published": "2018-02-20",
+   "filed": "2018-02-20 06:30 ET, before the open",
+   "title": "Walmart Q4 FY2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000020/earningsrelease-1312018.htm",
+   "supports": "Q4 and FY18 results; adjusted EPS FY18 $4.42 (reported $3.28), FY17 $4.32 repeated; FY19 EPS $4.75-5.00, net sales +1.5% to +2.0% in constant currency"
+  },
+  "WM68": {
+   "published": "2018-02-01",
+   "filed": "2018-02-01 09:27 ET, before the open",
+   "title": "Walmart 8-K of 2018-02-01 (Item 5.03, the new legal name)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000013/form8-kx212018.htm",
+   "supports": "the legal name changes from Wal-Mart Stores, Inc. to Walmart Inc., effective February 1, 2018"
+  },
+  "WM69": {
+   "published": "2018-04-02",
+   "filed": "2018-03-30 16:01 ET, after the close (Good Friday, the market closed)",
+   "title": "Walmart FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000028/wmtform10-kx1312018.htm",
+   "supports": "Five-Year Financial Summary FY14-FY18; statements of income; the February 20, 2018 dividend; Item 1, 1A and 7 wording"
+  },
+  "WM70": {
+   "published": "2018-05-17",
+   "filed": "2018-05-17 07:01 ET, before the open",
+   "title": "Walmart Q1 FY2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000047/earningsrelease-4302018.htm",
+   "supports": "Q1 FY19 results"
+  },
+  "WM71": {
+   "published": "2018-08-16",
+   "filed": "2018-08-16 07:00 ET, before the open",
+   "title": "Walmart Q2 FY2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000081/earningsrelease-7312018.htm",
+   "supports": "Q2 FY19 results; FY19 adjusted EPS $4.90-5.05 excluding Flipkart (GAAP $2.90-3.05), net sales about 2% in constant currency"
+  },
+  "WM72": {
+   "published": "2018-10-16",
+   "filed": "2018-10-16 06:31 ET, before the open",
+   "title": "Walmart 8-K of 2018-10-16 (Exhibit 99.1, Regulation FD: meeting for the investment community)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000093/exhibit991-101618.htm",
+   "supports": "FY19 adjusted EPS $4.65-4.80 including Flipkart (GAAP $2.65-2.80); FY20 outlook in words, net sales at least 3 percent"
+  },
+  "WM73": {
+   "published": "2018-11-15",
+   "filed": "2018-11-15 07:00 ET, before the open",
+   "title": "Walmart Q3 FY2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416918000103/earningsrelease-10312018.htm",
+   "supports": "Q3 FY19 results; FY19 adjusted EPS $4.75-4.85 (GAAP $2.26-2.36)"
+  },
+  "WM74": {
+   "published": "2019-02-19",
+   "filed": "2019-02-19 07:00 ET, before the open",
+   "title": "Walmart Q4 FY2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000011/earningsrelease-1312019.htm",
+   "supports": "Q4 and FY19 results; adjusted EPS FY19 $4.91 (reported $2.26), FY18 $4.42 repeated; FY20 outlook reiterated in words"
+  },
+  "WM75": {
+   "published": "2019-03-29",
+   "filed": "2019-03-28 16:56 ET, after the close",
+   "title": "Walmart FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000016/wmtform10-kx1312019.htm",
+   "supports": "Five-Year Financial Summary FY15-FY19; statements of income; the February 19, 2019 dividend; Item 1, 1A and 7 wording"
+  },
+  "WM76": {
+   "published": "2019-05-16",
+   "filed": "2019-05-16 07:00 ET, before the open",
+   "title": "Walmart Q1 FY2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000021/earningsrelease-4302019.htm",
+   "supports": "Q1 FY20 results"
+  },
+  "WM77": {
+   "published": "2019-08-15",
+   "filed": "2019-08-15 06:59 ET, before the open",
+   "title": "Walmart Q2 FY2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000058/earningsrelease-7312019.htm",
+   "supports": "Q2 FY20 results; FY20 net sales around 3% in constant currency, adjusted EPS in words"
+  },
+  "WM78": {
+   "published": "2019-11-14",
+   "filed": "2019-11-14 07:00 ET, before the open",
+   "title": "Walmart Q3 FY2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000081/earningsrelease-103120.htm",
+   "supports": "Q3 FY20 results; FY20 adjusted EPS in words"
+  },
+  "WM79": {
+   "published": "2020-02-18",
+   "filed": "2020-02-18 06:04 ET, before the open",
+   "title": "Walmart Q4 FY2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416920000007/earningsrelease-1312020.htm",
+   "supports": "Q4 and FY20 results; adjusted EPS FY20 $4.93 (reported $5.19), FY19 $4.91 repeated; FY21 EPS $5.00-5.15, net sales around 3% in constant currency; adjusted operating income"
+  },
+  "WM80": {
+   "published": "2020-03-23",
+   "filed": "2020-03-20 16:51 ET, after the close",
+   "title": "Walmart FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416920000011/wmtform10-kx1312020.htm",
+   "supports": "Five-Year Financial Summary FY16-FY20; statements of income; the February 18, 2020 dividend; Item 1, 1A and 7 wording"
+  },
+  "WM81": {
+   "published": "2020-05-19",
+   "filed": "2020-05-19 06:58 ET, before the open",
+   "title": "Walmart Q1 FY2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416920000016/earningsrelease-4302020.htm",
+   "supports": "Q1 FY21 results; the FY21 guidance withdrawn"
+  },
+  "WM82": {
+   "published": "2020-08-18",
+   "filed": "2020-08-18 06:58 ET, before the open",
+   "title": "Walmart Q2 FY2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416920000037/earningsrelease-7312020.htm",
+   "supports": "Q2 FY21 results; adjusted operating income"
+  },
+  "WM83": {
+   "published": "2020-11-17",
+   "filed": "2020-11-17 06:59 ET, before the open",
+   "title": "Walmart Q3 FY2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416920000073/earningsreleasefy21q3.htm",
+   "supports": "Q3 FY21 results; adjusted operating income"
   }
  },
  "history_vintages": [
@@ -2052,6 +2171,424 @@
     ]
    ],
    "groups_basis": "FY17 segment net sales (FY2017 10-K)"
+  },
+  {
+   "published": "2018-04-02",
+   "sources": [
+    "WM69",
+    "WM41",
+    "WM47",
+    "WM52",
+    "WM58",
+    "WM63",
+    "WM25",
+    "WM30",
+    "WM51",
+    "WM57",
+    "WM62",
+    "WM67",
+    "WM31"
+   ],
+   "company": "Walmart Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY18",
+   "why": "Walmart: 'helps people around the world save money and live better – anytime and anywhere – in retail stores and through eCommerce'; 'everyday low prices (\"EDLP\")'; 'We operate in the highly competitive retail industry in all of the markets we serve' ('We face strong competition from other retailers and wholesale club operators (whether through physical retail, digital retail or the integration of both), which could materially adversely affect our financial performance'); and 'General economic conditions and other economic factors, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2018 10-K): a low-price store network whose demand follows the consumer economy by its own account",
+   "why_theme_tail": true,
+   "fiscal_year_ends": {
+    "2016": "2016-01-31",
+    "2017": "2017-01-31",
+    "2018": "2018-01-31"
+   },
+   "eps_reported": {
+    "2009": 3.35,
+    "2010": 3.72,
+    "2011": 4.18,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 4.85,
+    "2015": 4.99,
+    "2016": 4.57,
+    "2017": 4.38,
+    "2018": 3.28
+   },
+   "eps_normalized": {
+    "2009": 3.42,
+    "2010": 3.67,
+    "2011": 4.07,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 5.11,
+    "2015": 5.07,
+    "2016": 4.59,
+    "2017": 4.32,
+    "2018": 4.42
+   },
+   "eps_sources": {
+    "2009": "WM25 (reported $3.35: WM41)",
+    "2010": "WM30 (reported $3.72: WM47)",
+    "2011": "WM30 (reported $4.18: WM52)",
+    "2012": "WM58",
+    "2013": "WM63",
+    "2014": "WM51 (reported $4.85: WM69)",
+    "2015": "WM57 (reported $4.99: WM69)",
+    "2016": "WM62 (reported $4.57: WM69)",
+    "2017": "WM67 (reported $4.38: WM69)",
+    "2018": "WM67 (reported $3.28: WM69)"
+   },
+   "revenue_usd_b": {
+    "2009": 401.087,
+    "2010": 404.743,
+    "2011": 418.5,
+    "2012": 443.416,
+    "2013": 465.604,
+    "2014": 473.076,
+    "2015": 482.229,
+    "2016": 478.614,
+    "2017": 481.317,
+    "2018": 495.761
+   },
+   "revenue_sources": {
+    "2009": "WM41",
+    "2010": "WM47",
+    "2011": "WM52",
+    "2012": "WM58",
+    "2013": "WM63",
+    "2014": "WM69",
+    "2015": "WM69",
+    "2016": "WM69",
+    "2017": "WM69",
+    "2018": "WM69"
+   },
+   "diluted_shares_m": {
+    "2009": 3951,
+    "2018": 3010
+   },
+   "shares_sources": {
+    "2009": "WM31",
+    "2018": "WM69"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per common share from continuing operations, each year from the latest filing that reports it (the five-year summaries; FY14-FY18 from the FY2018 10-K); FY09 is the company's adjusted $3.42 (reported $3.35; the Q4 FY10 release); FY10 keeps the company's underlying $3.67, published before the Vips restatement (reported $3.72 restated; no figure excluding its one-offs is published on the new basis); FY11 its underlying $4.07 (reported $4.18; the Q4 FY11 release); FY14 its underlying $5.11 excluding discrete items of $0.26 (reported $4.85; the Q4 FY14 release, repeated in the Q4 FY15 release); FY15 its underlying $5.07 excluding discrete items of $0.08 (reported $4.99; the Q4 FY15 release, repeated as adjusted in the Q4 FY16 release); FY16 its adjusted $4.59 excluding the closure of 269 stores, discrete tax items and the lease accounting adjustment (reported $4.57; the Q4 FY16 release, repeated in the Q4 FY17 release); FY17 its adjusted $4.32 excluding the Yihaodian gain and U.S. discontinued real estate projects and severance (reported $4.38; the Q4 FY17 release, repeated in the Q4 FY18 release); FY18 its adjusted $4.42 excluding discrete items of $1.14 (reported $3.28; the Q4 FY18 release); FY12, FY13 at reported $4.53, $5.01; no year is excluded",
+   "prev_fy_op_margin": 4.12,
+   "prev_fy_op_margin_note": "FY18 operating income $20,437M / net sales $495,761M (FY2018 10-K; one-offs included, as reported)",
+   "prev_fy_gross_margin": 24.68,
+   "prev_fy_sales_growth": 3.0,
+   "prev_fy_comps": 2.2,
+   "prev_fy_comps_note": "calendar comparable sales in the U.S. +2.2% (FY2018 10-K summary; including fuel and eCommerce sales)",
+   "prev_fy_stores": "4,761 Walmart U.S. units, 597 Sam's Clubs and 6,360 Walmart International units",
+   "tax_rate": 0.3042,
+   "tax_note": "FY18 effective rate: provision $4,600M / pre-tax income $15,123M (FY2018 10-K)",
+   "net_interest_b": 2.178,
+   "net_interest_note": "FY18 interest, net (FY2018 10-K)",
+   "fcf_b": 18.286,
+   "fcf_label": "FY18",
+   "fcf_note": "net cash provided by operating activities $28,337M less payments for property and equipment $10,051M",
+   "cash_b": 6.756,
+   "cash_note": "cash and cash equivalents $6,756M at January 31, 2018",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY18",
+   "dividend_annual": 2.08,
+   "dividend_note": "$2.08 a year ('On February 20, 2018, the Board of Directors approved the ... annual dividend of $2.08 per share', FY2018 10-K)",
+   "cash_return_text": "purchase of Company stock $8,296M in fiscal 2018 (FY2018 10-K)",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Walmart International and Sam's Club",
+   "groups": [
+    [
+     "Walmart U.S.",
+     318.477,
+     3.5
+    ],
+    [
+     "Walmart International",
+     118.068,
+     1.7
+    ],
+    [
+     "Sam's Club",
+     59.216,
+     3.2
+    ]
+   ],
+   "groups_basis": "FY18 segment net sales (FY2018 10-K)"
+  },
+  {
+   "published": "2019-03-29",
+   "sources": [
+    "WM75",
+    "WM47",
+    "WM52",
+    "WM58",
+    "WM63",
+    "WM69",
+    "WM30",
+    "WM51",
+    "WM57",
+    "WM62",
+    "WM67",
+    "WM74",
+    "WM36"
+   ],
+   "company": "Walmart Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY19",
+   "why": "Walmart: 'helps people around the world save money and live better – anytime and anywhere – by providing the opportunity to shop in retail stores and through eCommerce'; 'everyday low prices (\"EDLP\")'; 'We operate in the highly competitive omni-channel retail industry in all of the markets we serve' ('We face strong competition from other retailers and wholesale club operators which could materially adversely affect our financial performance'); and 'General economic conditions and other economic factors, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2019 10-K): a low-price store network whose demand follows the consumer economy by its own account",
+   "why_theme_tail": true,
+   "fiscal_year_ends": {
+    "2017": "2017-01-31",
+    "2018": "2018-01-31",
+    "2019": "2019-01-31"
+   },
+   "eps_reported": {
+    "2010": 3.72,
+    "2011": 4.18,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 4.85,
+    "2015": 4.99,
+    "2016": 4.57,
+    "2017": 4.38,
+    "2018": 3.28,
+    "2019": 2.26
+   },
+   "eps_normalized": {
+    "2010": 3.67,
+    "2011": 4.07,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 5.11,
+    "2015": 5.07,
+    "2016": 4.59,
+    "2017": 4.32,
+    "2018": 4.42,
+    "2019": 4.91
+   },
+   "eps_sources": {
+    "2010": "WM30 (reported $3.72: WM47)",
+    "2011": "WM30 (reported $4.18: WM52)",
+    "2012": "WM58",
+    "2013": "WM63",
+    "2014": "WM51 (reported $4.85: WM69)",
+    "2015": "WM57 (reported $4.99: WM75)",
+    "2016": "WM62 (reported $4.57: WM75)",
+    "2017": "WM67 (reported $4.38: WM75)",
+    "2018": "WM74 (reported $3.28: WM75)",
+    "2019": "WM74 (reported $2.26: WM75)"
+   },
+   "revenue_usd_b": {
+    "2010": 404.743,
+    "2011": 418.5,
+    "2012": 443.416,
+    "2013": 465.604,
+    "2014": 473.076,
+    "2015": 482.229,
+    "2016": 478.614,
+    "2017": 481.317,
+    "2018": 495.761,
+    "2019": 510.329
+   },
+   "revenue_sources": {
+    "2010": "WM47",
+    "2011": "WM52",
+    "2012": "WM58",
+    "2013": "WM63",
+    "2014": "WM69",
+    "2015": "WM75",
+    "2016": "WM75",
+    "2017": "WM75",
+    "2018": "WM75",
+    "2019": "WM75"
+   },
+   "diluted_shares_m": {
+    "2010": 3877,
+    "2019": 2945
+   },
+   "shares_sources": {
+    "2010": "WM36",
+    "2019": "WM75"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per common share from continuing operations, each year from the latest filing that reports it (the five-year summaries; FY15-FY19 from the FY2019 10-K); FY10 keeps the company's underlying $3.67, published before the Vips restatement (reported $3.72 restated; no figure excluding its one-offs is published on the new basis); FY11 its underlying $4.07 (reported $4.18; the Q4 FY11 release); FY14 its underlying $5.11 excluding discrete items of $0.26 (reported $4.85; the Q4 FY14 release, repeated in the Q4 FY15 release); FY15 its underlying $5.07 excluding discrete items of $0.08 (reported $4.99; the Q4 FY15 release, repeated as adjusted in the Q4 FY16 release); FY16 its adjusted $4.59 excluding the closure of 269 stores, discrete tax items and the lease accounting adjustment (reported $4.57; the Q4 FY16 release, repeated in the Q4 FY17 release); FY17 its adjusted $4.32 excluding the Yihaodian gain and U.S. discontinued real estate projects and severance (reported $4.38; the Q4 FY17 release, repeated in the Q4 FY18 release); FY18 its adjusted $4.42 excluding discrete items of $1.14 (reported $3.28; the Q4 FY18 release, repeated in the Q4 FY19 release); FY19 its adjusted $4.91 excluding the Walmart Brazil sale, unrealized JD.com losses and tax reform (reported $2.26; the Q4 FY19 release); FY12, FY13 at reported $4.53, $5.01; no year is excluded",
+   "prev_fy_op_margin": 4.3,
+   "prev_fy_op_margin_note": "FY19 operating income $21,957M / net sales $510,329M (FY2019 10-K; one-offs included, as reported)",
+   "prev_fy_gross_margin": 24.5,
+   "prev_fy_sales_growth": 2.9,
+   "prev_fy_comps": 4.0,
+   "prev_fy_comps_note": "calendar comparable sales in the U.S. +4.0% (FY2019 10-K summary; including fuel and eCommerce sales)",
+   "prev_fy_stores": "4,769 Walmart U.S. units, 599 Sam's Clubs and 5,993 Walmart International units",
+   "tax_rate": 0.3736,
+   "tax_note": "FY19 effective rate: provision $4,281M / pre-tax income $11,460M (FY2019 10-K)",
+   "net_interest_b": 2.129,
+   "net_interest_note": "FY19 interest, net (FY2019 10-K)",
+   "fcf_b": 17.409,
+   "fcf_label": "FY19",
+   "fcf_note": "net cash provided by operating activities $27,753M less payments for property and equipment $10,344M",
+   "cash_b": 7.722,
+   "cash_note": "cash and cash equivalents $7,722M at January 31, 2019",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY19",
+   "dividend_annual": 2.12,
+   "dividend_note": "$2.12 a year ('The Board of Directors approved, effective February 19, 2019, the ... annual dividend of $2.12 per share', FY2019 10-K)",
+   "cash_return_text": "purchase of Company stock $7,410M in fiscal 2019 (FY2019 10-K)",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Walmart International and Sam's Club",
+   "groups": [
+    [
+     "Walmart U.S.",
+     331.666,
+     4.1
+    ],
+    [
+     "Walmart International",
+     120.824,
+     2.3
+    ],
+    [
+     "Sam's Club",
+     57.839,
+     -2.3
+    ]
+   ],
+   "groups_basis": "FY19 segment net sales (FY2019 10-K)"
+  },
+  {
+   "published": "2020-03-23",
+   "sources": [
+    "WM80",
+    "WM52",
+    "WM58",
+    "WM63",
+    "WM69",
+    "WM75",
+    "WM30",
+    "WM51",
+    "WM57",
+    "WM62",
+    "WM67",
+    "WM74",
+    "WM79",
+    "WM41"
+   ],
+   "company": "Walmart Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY20",
+   "why": "Walmart: 'helps people around the world save money and live better – anytime and anywhere – by providing the opportunity to shop in retail stores and through eCommerce'; 'everyday low prices (\"EDLP\")'; 'We operate in the highly competitive omni-channel retail industry in all of the markets we serve' ('We face strong competition from other retailers and wholesale club operators which could materially adversely affect our financial performance'); and 'General economic conditions and other economic factors, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2020 10-K): a low-price store network whose demand follows the consumer economy by its own account",
+   "why_theme_tail": true,
+   "fiscal_year_ends": {
+    "2018": "2018-01-31",
+    "2019": "2019-01-31",
+    "2020": "2020-01-31"
+   },
+   "eps_reported": {
+    "2011": 4.18,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 4.85,
+    "2015": 4.99,
+    "2016": 4.57,
+    "2017": 4.38,
+    "2018": 3.28,
+    "2019": 2.26,
+    "2020": 5.19
+   },
+   "eps_normalized": {
+    "2011": 4.07,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 5.11,
+    "2015": 5.07,
+    "2016": 4.59,
+    "2017": 4.32,
+    "2018": 4.42,
+    "2019": 4.91,
+    "2020": 4.93
+   },
+   "eps_sources": {
+    "2011": "WM30 (reported $4.18: WM52)",
+    "2012": "WM58",
+    "2013": "WM63",
+    "2014": "WM51 (reported $4.85: WM69)",
+    "2015": "WM57 (reported $4.99: WM75)",
+    "2016": "WM62 (reported $4.57: WM80)",
+    "2017": "WM67 (reported $4.38: WM80)",
+    "2018": "WM74 (reported $3.28: WM80)",
+    "2019": "WM79 (reported $2.26: WM80)",
+    "2020": "WM79 (reported $5.19: WM80)"
+   },
+   "revenue_usd_b": {
+    "2011": 418.5,
+    "2012": 443.416,
+    "2013": 465.604,
+    "2014": 473.076,
+    "2015": 482.229,
+    "2016": 478.614,
+    "2017": 481.317,
+    "2018": 495.761,
+    "2019": 510.329,
+    "2020": 519.926
+   },
+   "revenue_sources": {
+    "2011": "WM52",
+    "2012": "WM58",
+    "2013": "WM63",
+    "2014": "WM69",
+    "2015": "WM75",
+    "2016": "WM80",
+    "2017": "WM80",
+    "2018": "WM80",
+    "2019": "WM80",
+    "2020": "WM80"
+   },
+   "diluted_shares_m": {
+    "2011": 3670,
+    "2020": 2868
+   },
+   "shares_sources": {
+    "2011": "WM41",
+    "2020": "WM80"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per common share from continuing operations, each year from the latest filing that reports it (the five-year summaries; FY16-FY20 from the FY2020 10-K); FY11 its underlying $4.07 (reported $4.18; the Q4 FY11 release); FY14 its underlying $5.11 excluding discrete items of $0.26 (reported $4.85; the Q4 FY14 release, repeated in the Q4 FY15 release); FY15 its underlying $5.07 excluding discrete items of $0.08 (reported $4.99; the Q4 FY15 release, repeated as adjusted in the Q4 FY16 release); FY16 its adjusted $4.59 excluding the closure of 269 stores, discrete tax items and the lease accounting adjustment (reported $4.57; the Q4 FY16 release, repeated in the Q4 FY17 release); FY17 its adjusted $4.32 excluding the Yihaodian gain and U.S. discontinued real estate projects and severance (reported $4.38; the Q4 FY17 release, repeated in the Q4 FY18 release); FY18 its adjusted $4.42 excluding discrete items of $1.14 (reported $3.28; the Q4 FY18 release, repeated in the Q4 FY19 release); FY19 its adjusted $4.91 excluding the Walmart Brazil sale, unrealized JD.com losses and tax reform (reported $2.26; the Q4 FY19 release, repeated in the Q4 FY20 release); FY20 its adjusted $4.93 excluding a JD.com gain, business restructuring and income tax items (reported $5.19; the Q4 FY20 release); FY12, FY13 at reported $4.53, $5.01; no year is excluded",
+   "prev_fy_op_margin": 3.96,
+   "prev_fy_op_margin_note": "FY20 operating income $20,568M / net sales $519,926M (FY2020 10-K; one-offs included, as reported)",
+   "prev_fy_gross_margin": 24.1,
+   "prev_fy_sales_growth": 1.9,
+   "prev_fy_comps": 2.7,
+   "prev_fy_comps_note": "calendar comparable sales in the U.S. +2.7% (FY2020 10-K summary; including fuel and eCommerce sales)",
+   "prev_fy_stores": "4,756 Walmart U.S. units, 599 Sam's Clubs and 6,146 Walmart International units",
+   "tax_rate": 0.2443,
+   "tax_note": "FY20 effective rate: provision $4,915M / pre-tax income $20,116M (FY2020 10-K)",
+   "net_interest_b": 2.41,
+   "net_interest_note": "FY20 interest, net (FY2020 10-K)",
+   "fcf_b": 14.55,
+   "fcf_label": "FY20",
+   "fcf_note": "net cash provided by operating activities $25,255M less payments for property and equipment $10,705M",
+   "cash_b": 9.465,
+   "cash_note": "cash and cash equivalents $9,465M at January 31, 2020",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY20",
+   "dividend_annual": 2.16,
+   "dividend_note": "$2.16 a year ('The Board of Directors approved, effective February 18, 2020, the ... annual dividend of $2.16 per share', FY2020 10-K)",
+   "cash_return_text": "purchase of Company stock $5,717M in fiscal 2020 (FY2020 10-K)",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Walmart International and Sam's Club",
+   "groups": [
+    [
+     "Walmart U.S.",
+     341.004,
+     2.8
+    ],
+    [
+     "Walmart International",
+     120.13,
+     -0.6
+    ],
+    [
+     "Sam's Club",
+     58.792,
+     1.6
+    ]
+   ],
+   "groups_basis": "FY20 segment net sales (FY2020 10-K)"
   }
  ],
  "prints": [
@@ -4993,6 +5530,828 @@
    "lc_basis": "derived",
    "currency_note": "currency exchange rate fluctuations of $454 million (favourable) (the release's constant-currency table)",
    "eps_note": "reported; the company's adjusted $1.00 excludes the loss on extinguishment of debt ($0.29), an FCPA accrual ($0.09) and international property impairments ($0.04)"
+  },
+  {
+   "quarter": "Q4 FY18",
+   "fy": 2018,
+   "q": 4,
+   "published": "2018-02-20",
+   "source": "WM67",
+   "release": "Feb 20",
+   "release_time": "before the open on Feb 20: 8-K accepted 06:30 ET",
+   "period_end": "2018-01-31",
+   "raw": {
+    "ns_m": 135150,
+    "ns_prior_m": 129750,
+    "other_m": 1117,
+    "other_prior_m": 1186,
+    "cogs_m": 102640,
+    "cogs_prior_m": 97743,
+    "sga_m": 29160,
+    "sga_prior_m": 26988,
+    "op_m": 4467,
+    "op_prior_m": 6205,
+    "inv_m": 43783,
+    "inv_prior_m": 43046,
+    "diluted_shares_m": 2978
+   },
+   "sales_b": 135.15,
+   "sales_pct": 4.2,
+   "gross_margin": 24.05,
+   "gross_margin_bp": -61.3,
+   "op_margin": 3.31,
+   "op_margin_bp": -147.7,
+   "inventory_pct": 1.7,
+   "inventory_gap_pp": -2.5,
+   "comps_pct": 2.8,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.8% (the table's first column: Total U.S. | 2.8% | 2.0% | 2.6% | 1.9% | 0.2% | 0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     86.579,
+     3.4
+    ],
+    [
+     "Walmart International",
+     33.092,
+     6.7
+    ],
+    [
+     "Sam's Club",
+     15.479,
+     3.3
+    ]
+   ],
+   "eps_q": 0.73,
+   "eps_q_prior": 1.22,
+   "diluted_shares_m": 2978,
+   "cash_b": 6.756,
+   "cash_return_text": "Purchase of Company stock $8,296M in fiscal 2018",
+   "next_print": "Q1 FY19 print (mid-May)",
+   "lc_pct": 3.2,
+   "currency_m": 1197,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,197 million (favourable) (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.33 excludes discrete items of $0.60 (restructuring, the loss on extinguishment of debt, impairments, a lump-sum bonus, the tax reform benefit and a legal settlement recovery)",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 4.42,
+    "revenue_usd_b": 495.761,
+    "diluted_shares_m": 3010,
+    "normalization_note": "FY18 the company's adjusted $4.42 excluding discrete items of $1.14 (reported $3.28), from the Q4 FY18 release",
+    "op_margin": 4.12,
+    "op_margin_note": "FY18 operating income $20,437M / net sales $495,761M (Q4 FY18 release; one-offs included, as reported)",
+    "gross_margin": 24.68,
+    "sales_growth": 3.0,
+    "comps_pct": 2.3,
+    "stores": null,
+    "tax_rate": 0.3042,
+    "tax_note": "FY18 effective rate: provision $4,600M / pre-tax $15,123M",
+    "net_interest_b": 2.178,
+    "fcf_b": 18.286,
+    "cash_b": 6.756,
+    "fcf_note": "net cash provided by operating activities $28,337M less payments for property and equipment $10,051M"
+   }
+  },
+  {
+   "quarter": "Q1 FY19",
+   "fy": 2019,
+   "q": 1,
+   "published": "2018-05-17",
+   "source": "WM70",
+   "release": "May 17",
+   "release_time": "before the open on May 17: 8-K accepted 07:01 ET",
+   "period_end": "2018-04-30",
+   "raw": {
+    "ns_m": 121630,
+    "ns_prior_m": 116526,
+    "other_m": 1060,
+    "other_prior_m": 1016,
+    "cogs_m": 91707,
+    "cogs_prior_m": 87688,
+    "sga_m": 25829,
+    "sga_prior_m": 24617,
+    "op_m": 5154,
+    "op_prior_m": 5237,
+    "inv_m": 43303,
+    "inv_prior_m": 43361,
+    "diluted_shares_m": 2967
+   },
+   "sales_b": 121.63,
+   "sales_pct": 4.4,
+   "gross_margin": 24.6,
+   "gross_margin_bp": -14.6,
+   "op_margin": 4.24,
+   "op_margin_bp": -25.7,
+   "inventory_pct": -0.1,
+   "inventory_gap_pp": -4.5,
+   "comps_pct": 2.6,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.6% (the table's first column: Total U.S. | 2.6% | 1.7% | 2.3% | 1.4% | 0.3% | 0.3%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     77.748,
+     3.1
+    ],
+    [
+     "Walmart International",
+     30.26,
+     11.7
+    ],
+    [
+     "Sam's Club",
+     13.622,
+     -2.7
+    ]
+   ],
+   "eps_q": 0.72,
+   "eps_q_prior": 1.0,
+   "diluted_shares_m": 2967,
+   "cash_b": 7.885,
+   "cash_return_text": "Purchase of Company stock $539M in the three months",
+   "next_print": "Q2 FY19 print (mid-August)",
+   "lc_pct": 2.7,
+   "currency_m": 1947,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,947 million (favourable) (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.14 excludes a $0.47 unrealized loss on the JD.com investment and a $0.05 tax reform benefit"
+  },
+  {
+   "quarter": "Q2 FY19",
+   "fy": 2019,
+   "q": 2,
+   "published": "2018-08-16",
+   "source": "WM71",
+   "release": "Aug 16",
+   "release_time": "before the open on Aug 16: 8-K accepted 07:00 ET",
+   "period_end": "2018-07-31",
+   "raw": {
+    "ns_m": 127059,
+    "ns_prior_m": 121949,
+    "other_m": 969,
+    "other_prior_m": 1406,
+    "cogs_m": 95571,
+    "cogs_prior_m": 91521,
+    "sga_m": 26707,
+    "sga_prior_m": 25865,
+    "op_m": 5750,
+    "op_prior_m": 5969,
+    "inv_m": 41985,
+    "inv_prior_m": 43442,
+    "diluted_shares_m": 2960
+   },
+   "sales_b": 127.059,
+   "sales_pct": 4.2,
+   "gross_margin": 24.78,
+   "gross_margin_bp": -16.9,
+   "op_margin": 4.53,
+   "op_margin_bp": -36.9,
+   "inventory_pct": -3.4,
+   "inventory_gap_pp": -7.6,
+   "comps_pct": 5.2,
+   "comps_note": "Total U.S. comparable store sales with fuel +5.2% (the table's first column: Total U.S. | 5.2% | 1.8% | 4.6% | 1.7% | 0.6% | 0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     82.815,
+     5.2
+    ],
+    [
+     "Walmart International",
+     29.454,
+     4.0
+    ],
+    [
+     "Sam's Club",
+     14.79,
+     -0.6
+    ]
+   ],
+   "eps_q": -0.29,
+   "eps_q_prior": 0.96,
+   "diluted_shares_m": 2960,
+   "cash_b": 15.84,
+   "cash_return_text": "Purchase of Company stock $1,844M in the six months",
+   "next_print": "Q3 FY19 print (mid-November)",
+   "lc_pct": 4.0,
+   "currency_m": 242,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $242 million (favourable) (the release's constant-currency table)",
+   "eps_note": "a reported loss; the company's adjusted $1.29 excludes the $1.51 Walmart Brazil charge, $0.04 of tax reform and a $0.03 JD.com loss"
+  },
+  {
+   "quarter": "Q3 FY19",
+   "fy": 2019,
+   "q": 3,
+   "published": "2018-11-15",
+   "source": "WM73",
+   "release": "Nov 15",
+   "release_time": "before the open on Nov 15: 8-K accepted 07:00 ET",
+   "period_end": "2018-10-31",
+   "raw": {
+    "ns_m": 123897,
+    "ns_prior_m": 122136,
+    "other_m": 997,
+    "other_prior_m": 1043,
+    "cogs_m": 93116,
+    "cogs_prior_m": 91547,
+    "sga_m": 26792,
+    "sga_prior_m": 26868,
+    "op_m": 4986,
+    "op_prior_m": 4764,
+    "inv_m": 50380,
+    "inv_prior_m": 50147,
+    "diluted_shares_m": 2941
+   },
+   "sales_b": 123.897,
+   "sales_pct": 1.4,
+   "gross_margin": 24.84,
+   "gross_margin_bp": -20.1,
+   "op_margin": 4.02,
+   "op_margin_bp": 12.4,
+   "inventory_pct": 0.5,
+   "inventory_gap_pp": -0.9,
+   "comps_pct": 3.8,
+   "comps_note": "Total U.S. comparable store sales with fuel +3.8% (the table's first column: Total U.S. | 3.8% | 3.0% | 3.4% | 2.7% | 0.4% | 0.3%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     80.583,
+     3.7
+    ],
+    [
+     "Walmart International",
+     28.793,
+     -2.6
+    ],
+    [
+     "Sam's Club",
+     14.521,
+     -2.3
+    ]
+   ],
+   "eps_q": 0.58,
+   "eps_q_prior": 0.58,
+   "diluted_shares_m": 2941,
+   "cash_b": 9.174,
+   "cash_return_text": "Purchase of Company stock $4,161M in the nine months",
+   "next_print": "Q4 FY19 print (mid-February)",
+   "lc_pct": 2.4,
+   "currency_m": -1216,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,216 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.08 excludes a $0.48 JD.com loss, a $0.03 Walmart Brazil currency charge and a $0.01 tax benefit"
+  },
+  {
+   "quarter": "Q4 FY19",
+   "fy": 2019,
+   "q": 4,
+   "published": "2019-02-19",
+   "source": "WM74",
+   "release": "Feb 19",
+   "release_time": "before the open on Feb 19: 8-K accepted 07:00 ET",
+   "period_end": "2019-01-31",
+   "raw": {
+    "ns_m": 137743,
+    "ns_prior_m": 135150,
+    "other_m": 1050,
+    "other_prior_m": 1117,
+    "cogs_m": 104907,
+    "cogs_prior_m": 102640,
+    "sga_m": 27819,
+    "sga_prior_m": 29160,
+    "op_m": 6067,
+    "op_prior_m": 4467,
+    "inv_m": 44269,
+    "inv_prior_m": 43783,
+    "diluted_shares_m": 2914
+   },
+   "sales_b": 137.743,
+   "sales_pct": 1.9,
+   "gross_margin": 23.84,
+   "gross_margin_bp": -21.6,
+   "op_margin": 4.4,
+   "op_margin_bp": 109.9,
+   "inventory_pct": 1.1,
+   "inventory_gap_pp": -0.8,
+   "comps_pct": 4.1,
+   "comps_note": "Total U.S. comparable store sales with fuel +4.1% (the table's first column: Total U.S. | 4.1% | 2.8% | 4.0% | 2.6% | 0.1% | 0.2%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     90.52,
+     4.6
+    ],
+    [
+     "Walmart International",
+     32.317,
+     -2.3
+    ],
+    [
+     "Sam's Club",
+     14.906,
+     -3.7
+    ]
+   ],
+   "eps_q": 1.27,
+   "eps_q_prior": 0.73,
+   "diluted_shares_m": 2914,
+   "cash_b": 7.722,
+   "cash_return_text": "Purchase of Company stock $7,410M in fiscal 2019",
+   "next_print": "Q1 FY20 print (mid-May)",
+   "lc_pct": 3.2,
+   "currency_m": -1680,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,680 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.41 excludes a $0.17 tax reform charge and a $0.03 JD.com gain",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 4.91,
+    "revenue_usd_b": 510.329,
+    "diluted_shares_m": 2945,
+    "normalization_note": "FY19 the company's adjusted $4.91 excluding the Walmart Brazil sale, unrealized JD.com losses and tax reform (reported $2.26), from the Q4 FY19 release",
+    "op_margin": 4.3,
+    "op_margin_note": "FY19 operating income $21,957M / net sales $510,329M (Q4 FY19 release; one-offs included, as reported)",
+    "gross_margin": 24.5,
+    "sales_growth": 2.9,
+    "comps_pct": 3.9,
+    "stores": null,
+    "tax_rate": 0.3736,
+    "tax_note": "FY19 effective rate: provision $4,281M / pre-tax $11,460M",
+    "net_interest_b": 2.129,
+    "fcf_b": 17.409,
+    "cash_b": 7.722,
+    "fcf_note": "net cash provided by operating activities $27,753M less payments for property and equipment $10,344M"
+   }
+  },
+  {
+   "quarter": "Q1 FY20",
+   "fy": 2020,
+   "q": 1,
+   "published": "2019-05-16",
+   "source": "WM76",
+   "release": "May 16",
+   "release_time": "before the open on May 16: 8-K accepted 07:00 ET",
+   "period_end": "2019-04-30",
+   "raw": {
+    "ns_m": 122949,
+    "ns_prior_m": 121630,
+    "other_m": 976,
+    "other_prior_m": 1060,
+    "cogs_m": 93034,
+    "cogs_prior_m": 91707,
+    "sga_m": 25946,
+    "sga_prior_m": 25829,
+    "op_m": 4945,
+    "op_prior_m": 5154,
+    "inv_m": 44751,
+    "inv_prior_m": 43303,
+    "diluted_shares_m": 2886
+   },
+   "sales_b": 122.949,
+   "sales_pct": 1.1,
+   "gross_margin": 24.33,
+   "gross_margin_bp": -27.0,
+   "op_margin": 4.02,
+   "op_margin_bp": -21.5,
+   "inventory_pct": 3.3,
+   "inventory_gap_pp": 2.2,
+   "comps_pct": 3.0,
+   "comps_note": "Total U.S. comparable store sales with fuel +3.0% (the table's first column: Total U.S. | 3.0% | 2.6% | 2.9% | 2.3% | 0.1% | 0.3%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     80.344,
+     3.3
+    ],
+    [
+     "Walmart International",
+     28.775,
+     -4.9
+    ],
+    [
+     "Sam's Club",
+     13.83,
+     1.5
+    ]
+   ],
+   "eps_q": 1.33,
+   "eps_q_prior": 0.72,
+   "diluted_shares_m": 2886,
+   "cash_b": 9.255,
+   "cash_return_text": "Purchase of Company stock $2,135M in the three months",
+   "next_print": "Q2 FY20 print (mid-August)",
+   "lc_pct": 2.6,
+   "currency_m": -1838,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,838 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.13 excludes a $0.20 JD.com gain"
+  },
+  {
+   "quarter": "Q2 FY20",
+   "fy": 2020,
+   "q": 2,
+   "published": "2019-08-15",
+   "source": "WM77",
+   "release": "Aug 15",
+   "release_time": "before the open on Aug 15: 8-K accepted 06:59 ET",
+   "period_end": "2019-07-31",
+   "raw": {
+    "ns_m": 129388,
+    "ns_prior_m": 127059,
+    "other_m": 989,
+    "other_prior_m": 969,
+    "cogs_m": 97923,
+    "cogs_prior_m": 95571,
+    "sga_m": 26871,
+    "sga_prior_m": 26707,
+    "op_m": 5583,
+    "op_prior_m": 5750,
+    "inv_m": 44134,
+    "inv_prior_m": 41985,
+    "diluted_shares_m": 2869
+   },
+   "sales_b": 129.388,
+   "sales_pct": 1.8,
+   "gross_margin": 24.32,
+   "gross_margin_bp": -46.4,
+   "op_margin": 4.31,
+   "op_margin_bp": -21.1,
+   "inventory_pct": 5.1,
+   "inventory_gap_pp": 3.3,
+   "comps_pct": 2.6,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.6% (the table's first column: Total U.S. | 2.6% | 5.2% | 2.6% | 4.6% | 0.0% | 0.6%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     85.2,
+     2.9
+    ],
+    [
+     "Walmart International",
+     29.139,
+     -1.1
+    ],
+    [
+     "Sam's Club",
+     15.049,
+     1.8
+    ]
+   ],
+   "eps_q": 1.26,
+   "eps_q_prior": -0.29,
+   "diluted_shares_m": 2869,
+   "cash_b": 9.283,
+   "cash_return_text": "Purchase of Company stock $3,707M in the six months",
+   "next_print": "Q3 FY20 print (mid-November)",
+   "lc_pct": 2.9,
+   "currency_m": -1301,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,301 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.27 excludes a $0.01 JD.com loss"
+  },
+  {
+   "quarter": "Q3 FY20",
+   "fy": 2020,
+   "q": 3,
+   "published": "2019-11-14",
+   "source": "WM78",
+   "release": "Nov 14",
+   "release_time": "before the open on Nov 14: 8-K accepted 07:00 ET",
+   "period_end": "2019-10-31",
+   "raw": {
+    "ns_m": 126981,
+    "ns_prior_m": 123897,
+    "other_m": 1010,
+    "other_prior_m": 997,
+    "cogs_m": 95900,
+    "cogs_prior_m": 93116,
+    "sga_m": 27373,
+    "sga_prior_m": 26792,
+    "op_m": 4718,
+    "op_prior_m": 4986,
+    "inv_m": 51546,
+    "inv_prior_m": 50380,
+    "diluted_shares_m": 2861
+   },
+   "sales_b": 126.981,
+   "sales_pct": 2.5,
+   "gross_margin": 24.48,
+   "gross_margin_bp": -36.7,
+   "op_margin": 3.72,
+   "op_margin_bp": -30.9,
+   "inventory_pct": 2.3,
+   "inventory_gap_pp": -0.2,
+   "comps_pct": 2.8,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.8% (the table's first column: Total U.S. | 2.8% | 3.8% | 2.8% | 3.4% | 0.0% | 0.4%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     83.189,
+     3.2
+    ],
+    [
+     "Walmart International",
+     29.167,
+     1.3
+    ],
+    [
+     "Sam's Club",
+     14.625,
+     0.7
+    ]
+   ],
+   "eps_q": 1.15,
+   "eps_q_prior": 0.58,
+   "diluted_shares_m": 2861,
+   "cash_b": 8.606,
+   "cash_return_text": "Purchase of Company stock $4,829M in the nine months",
+   "next_print": "Q4 FY20 print (mid-February)",
+   "lc_pct": 3.3,
+   "currency_m": -1010,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,010 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.16 excludes a $0.06 impairment and a $0.05 JD.com gain (operating income includes 'a non-cash impairment charge of $0.3 billion', stated only rounded)"
+  },
+  {
+   "quarter": "Q4 FY20",
+   "fy": 2020,
+   "q": 4,
+   "published": "2020-02-18",
+   "source": "WM79",
+   "release": "Feb 18",
+   "release_time": "before the open on Feb 18: 8-K accepted 06:04 ET",
+   "period_end": "2020-01-31",
+   "raw": {
+    "ns_m": 140608,
+    "ns_prior_m": 137743,
+    "other_m": 1063,
+    "other_prior_m": 1050,
+    "cogs_m": 107748,
+    "cogs_prior_m": 104907,
+    "sga_m": 28601,
+    "sga_prior_m": 27819,
+    "op_m": 5322,
+    "op_prior_m": 6067,
+    "inv_m": 44435,
+    "inv_prior_m": 44269,
+    "diluted_shares_m": 2855,
+    "op_oneoff_m": -546
+   },
+   "sales_b": 140.608,
+   "sales_pct": 2.1,
+   "gross_margin": 23.37,
+   "gross_margin_bp": -46.9,
+   "op_margin": 4.17,
+   "op_margin_bp": -23.1,
+   "inventory_pct": 0.4,
+   "inventory_gap_pp": -1.7,
+   "comps_pct": 2.0,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.0% (the table's first column: Total U.S. | 2.0% | 4.1% | 1.8% | 4.0% | 0.2% | 0.1%)",
+   "op_margin_note": "excluding $546 million of business restructuring charges (the release's adjusted operating income of $5,868 million); reported operating margin 3.79%",
+   "segments": [
+    [
+     "Walmart U.S.",
+     92.271,
+     1.9
+    ],
+    [
+     "Walmart International",
+     33.049,
+     2.3
+    ],
+    [
+     "Sam's Club",
+     15.288,
+     2.6
+    ]
+   ],
+   "eps_q": 1.45,
+   "eps_q_prior": 1.27,
+   "diluted_shares_m": 2855,
+   "cash_b": 9.465,
+   "cash_return_text": "Purchase of Company stock $5,717M in fiscal 2020",
+   "next_print": "Q1 FY21 print (mid-May)",
+   "lc_pct": 2.1,
+   "currency_m": 12,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $12 million (favourable) (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.38 excludes a JD.com gain, business restructuring and income tax items",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 4.93,
+    "revenue_usd_b": 519.926,
+    "diluted_shares_m": 2868,
+    "normalization_note": "FY20 the company's adjusted $4.93 excluding a JD.com gain, business restructuring and income tax items (reported $5.19), from the Q4 FY20 release",
+    "op_margin": 3.96,
+    "op_margin_note": "FY20 operating income $20,568M / net sales $519,926M (Q4 FY20 release; one-offs included, as reported)",
+    "gross_margin": 24.1,
+    "sales_growth": 1.9,
+    "comps_pct": 2.6,
+    "stores": null,
+    "tax_rate": 0.2443,
+    "tax_note": "FY20 effective rate: provision $4,915M / pre-tax $20,116M",
+    "net_interest_b": 2.41,
+    "fcf_b": 14.55,
+    "cash_b": 9.465,
+    "fcf_note": "net cash provided by operating activities $25,255M less payments for property and equipment $10,705M"
+   }
+  },
+  {
+   "quarter": "Q1 FY21",
+   "fy": 2021,
+   "q": 1,
+   "published": "2020-05-19",
+   "source": "WM81",
+   "release": "May 19",
+   "release_time": "before the open on May 19: 8-K accepted 06:58 ET",
+   "period_end": "2020-04-30",
+   "raw": {
+    "ns_m": 133672,
+    "ns_prior_m": 122949,
+    "other_m": 950,
+    "other_prior_m": 976,
+    "cogs_m": 102026,
+    "cogs_prior_m": 93034,
+    "sga_m": 27372,
+    "sga_prior_m": 25946,
+    "op_m": 5224,
+    "op_prior_m": 4945,
+    "inv_m": 41217,
+    "inv_prior_m": 44751,
+    "diluted_shares_m": 2849
+   },
+   "sales_b": 133.672,
+   "sales_pct": 8.7,
+   "gross_margin": 23.67,
+   "gross_margin_bp": -65.7,
+   "op_margin": 3.91,
+   "op_margin_bp": -11.4,
+   "inventory_pct": -7.9,
+   "inventory_gap_pp": -16.6,
+   "comps_pct": 9.7,
+   "comps_note": "Total U.S. comparable store sales with fuel +9.7% (the table's first column: Total U.S. | 9.7% | 3.0% | 10.3% | 2.9% | -0.6% | 0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     88.743,
+     10.5
+    ],
+    [
+     "Walmart International",
+     29.766,
+     3.4
+    ],
+    [
+     "Sam's Club",
+     15.163,
+     9.6
+    ]
+   ],
+   "eps_q": 1.4,
+   "eps_q_prior": 1.33,
+   "diluted_shares_m": 2849,
+   "cash_b": 14.93,
+   "cash_return_text": "Purchase of Company stock $723M in the three months",
+   "next_print": "Q2 FY21 print (mid-August)",
+   "lc_pct": 9.7,
+   "currency_m": -1254,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,254 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.18 excludes a $0.22 JD.com gain"
+  },
+  {
+   "quarter": "Q2 FY21",
+   "fy": 2021,
+   "q": 2,
+   "published": "2020-08-18",
+   "source": "WM82",
+   "release": "Aug 18",
+   "release_time": "before the open on Aug 18: 8-K accepted 06:58 ET",
+   "period_end": "2020-07-31",
+   "raw": {
+    "ns_m": 136824,
+    "ns_prior_m": 129388,
+    "other_m": 918,
+    "other_prior_m": 989,
+    "cogs_m": 102689,
+    "cogs_prior_m": 97923,
+    "sga_m": 28994,
+    "sga_prior_m": 26871,
+    "op_m": 6059,
+    "op_prior_m": 5583,
+    "inv_m": 41084,
+    "inv_prior_m": 44134,
+    "diluted_shares_m": 2848,
+    "op_oneoff_m": -457
+   },
+   "sales_b": 136.824,
+   "sales_pct": 5.7,
+   "gross_margin": 24.95,
+   "gross_margin_bp": 63.0,
+   "op_margin": 4.76,
+   "op_margin_bp": 44.7,
+   "inventory_pct": -6.9,
+   "inventory_gap_pp": -12.6,
+   "comps_pct": 9.0,
+   "comps_note": "Total U.S. comparable store sales with fuel +9.0% (the table's first column: Total U.S. | 9.0% | 2.6% | 9.9% | 2.6% | -0.9% | 0.0%)",
+   "op_margin_note": "excluding a $380 million business restructuring charge and a $77 million discrete tax item (the release's adjusted operating income of $6,516 million); reported operating margin 4.43%",
+   "segments": [
+    [
+     "Walmart U.S.",
+     93.282,
+     9.5
+    ],
+    [
+     "Walmart International",
+     27.167,
+     -6.8
+    ],
+    [
+     "Sam's Club",
+     16.375,
+     8.8
+    ]
+   ],
+   "eps_q": 2.27,
+   "eps_q_prior": 1.26,
+   "diluted_shares_m": 2848,
+   "cash_b": 16.906,
+   "cash_return_text": "Purchase of Company stock $723M in the six months",
+   "next_print": "Q3 FY21 print (mid-November)",
+   "lc_pct": 7.6,
+   "currency_m": -2445,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $2,445 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.56 excludes a $0.89 equity investment gain, a $0.10 restructuring charge and a $0.08 discrete tax item"
+  },
+  {
+   "quarter": "Q3 FY21",
+   "fy": 2021,
+   "q": 3,
+   "published": "2020-11-17",
+   "source": "WM83",
+   "release": "Nov 17",
+   "release_time": "before the open on Nov 17: 8-K accepted 06:59 ET",
+   "period_end": "2020-10-31",
+   "raw": {
+    "ns_m": 133752,
+    "ns_prior_m": 126981,
+    "other_m": 956,
+    "other_prior_m": 1010,
+    "cogs_m": 100339,
+    "cogs_prior_m": 95900,
+    "sga_m": 28591,
+    "sga_prior_m": 27373,
+    "op_m": 5778,
+    "op_prior_m": 4718,
+    "inv_m": 51842,
+    "inv_prior_m": 51546,
+    "diluted_shares_m": 2849,
+    "op_oneoff_prior_m": -293
+   },
+   "sales_b": 133.752,
+   "sales_pct": 5.3,
+   "gross_margin": 24.98,
+   "gross_margin_bp": 50.4,
+   "op_margin": 4.32,
+   "op_margin_bp": 37.4,
+   "inventory_pct": 0.6,
+   "inventory_gap_pp": -4.7,
+   "comps_pct": 6.6,
+   "comps_note": "Total U.S. comparable store sales with fuel +6.6% (the table's first column: Total U.S. | 6.6% | 2.8% | 7.1% | 2.8% | -0.5% | 0.0%)",
+   "op_margin_note": "the year-ago quarter excluding its $293 million charge (the Jabong.com impairment; the release's adjusted operating income of $5,011 million for Q3 FY20)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     88.353,
+     6.2
+    ],
+    [
+     "Walmart International",
+     29.554,
+     1.3
+    ],
+    [
+     "Sam's Club",
+     15.845,
+     8.3
+    ]
+   ],
+   "eps_q": 1.8,
+   "eps_q_prior": 1.15,
+   "diluted_shares_m": 2849,
+   "cash_b": 14.325,
+   "cash_return_text": "Purchase of Company stock $1,186M in the nine months",
+   "next_print": "Q4 FY21 print (mid-February)",
+   "lc_pct": 6.2,
+   "currency_m": -1067,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,067 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's adjusted $1.34 excludes a $0.80 equity investment gain and the $0.34 loss on the sale of Walmart Argentina"
   }
  ],
  "guides": [
@@ -5817,6 +7176,127 @@
     "quarter": "Q4 FY18",
     "comps_text": "Walmart U.S. without fuel +1.5% to +2.0%; Sam's Club without fuel +1.5% to +2.0%; no quarter EPS range"
    }
+  },
+  {
+   "fy": 2019,
+   "published": "2018-02-20",
+   "source": "WM67",
+   "doc": "Q4 FY18 release",
+   "eps_guide": [
+    4.75,
+    5.0
+   ],
+   "rev_guide": [
+    1.5,
+    2.0
+   ],
+   "rev_basis": "at constant currency",
+   "rev_guide_note": "after Sam's Club closures, tobacco, the Brazil eCommerce wind-down and the Suburbia divestiture; Walmart U.S. comp sales ex. fuel 'at least +2.0%'"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-08-16",
+   "source": "WM71",
+   "doc": "Q2 FY19 release",
+   "eps_guide": [
+    4.9,
+    5.05
+   ],
+   "eps_guide_note": "adjusted, excluding the Walmart Brazil sale, unrealized JD.com losses, tax reform adjustments and the not yet closed Flipkart investment; GAAP $2.90-3.05",
+   "rev_guide": [
+    2,
+    2
+   ],
+   "rev_basis": "at constant currency",
+   "rev_guide_note": "'About 2% in constant currency', with -180bp from the Walmart Brazil sale and the other actions"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-10-16",
+   "source": "WM72",
+   "doc": "8-K of 2018-10-16",
+   "eps_guide": [
+    4.65,
+    4.8
+   ],
+   "eps_guide_note": "adjusted, now including about $0.25 of Flipkart dilution; GAAP $2.65-2.80"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-11-15",
+   "source": "WM73",
+   "doc": "Q3 FY19 release",
+   "eps_guide": [
+    4.75,
+    4.85
+   ],
+   "eps_guide_note": "adjusted; GAAP $2.26-2.36"
+  },
+  {
+   "fy": 2020,
+   "published": "2018-10-16",
+   "source": "WM72",
+   "doc": "8-K of 2018-10-16",
+   "fy_words": "EPS to 'Decline by a low single digit percentage range compared with FY19 adjusted EPS'",
+   "rev_words": "'At least 3 percent in constant currency', a one-sided bound"
+  },
+  {
+   "fy": 2020,
+   "published": "2019-02-19",
+   "source": "WM74",
+   "doc": "Q4 FY19 release",
+   "fy_words": "EPS to 'Decline by a low single-digit percentage range compared with FY19 adjusted EPS' (up 'by a low to mid single-digit percentage range' excluding Flipkart)",
+   "rev_words": "'At least 3 percent in constant currency', a one-sided bound; Walmart U.S. comp sales +2.5% to +3%, excluding fuel"
+  },
+  {
+   "fy": 2020,
+   "published": "2019-08-15",
+   "source": "WM77",
+   "doc": "Q2 FY20 release",
+   "fy_words": "adjusted EPS from a 'Slight decrease to slight increase compared with FY19 adjusted EPS, including Flipkart'",
+   "rev_guide": [
+    3,
+    3
+   ],
+   "rev_basis": "at constant currency",
+   "rev_guide_note": "'Around 3% in constant currency'; Walmart U.S. comp sales 'towards the upper-end of +2.5% to +3%, excluding fuel'"
+  },
+  {
+   "fy": 2020,
+   "published": "2019-11-14",
+   "source": "WM78",
+   "doc": "Q3 FY20 release",
+   "fy_words": "adjusted EPS 'to increase slightly compared to FY19 adjusted EPS1, including Flipkart'"
+  },
+  {
+   "fy": 2021,
+   "published": "2020-02-18",
+   "source": "WM79",
+   "doc": "Q4 FY20 release",
+   "eps_guide": [
+    5.0,
+    5.15
+   ],
+   "eps_guide_note": "up 1.5% to 4.5% on FY20 adjusted EPS, assuming no further change in the JD.com fair value",
+   "rev_guide": [
+    3,
+    3
+   ],
+   "rev_basis": "at constant currency",
+   "rev_guide_note": "'Around 3% in constant currency'; U.S. comp sales growth 'of at least 2.5%'"
+  },
+  {
+   "fy": 2021,
+   "published": "2020-05-19",
+   "source": "WM81",
+   "doc": "Q1 FY21 release",
+   "withdrawn": [
+    "eps_guide",
+    "rev_guide",
+    "rev_words",
+    "fy_words"
+   ],
+   "withdrawn_quote": "the company is withdrawing financial guidance"
   }
  ],
  "dividends": [
@@ -5871,9 +7351,48 @@
    "risk_short": "competition 'whether through physical retail, digital retail or the integration of both'",
    "offering": "it sells online itself: 'E-commerce sales positively impacted comparable sales approximately 0.4% and 0.7% for Walmart U.S. and Sam's Club, respectively, for fiscal 2017', and 'In September 2016, we completed the acquisition of Jet.com, Inc.'",
    "offering_short": "e-commerce added about 0.4% to fiscal 2017 Walmart U.S. comps"
+  },
+  {
+   "id": "WM69",
+   "published": "2018-04-02",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2018 10-K",
+   "risk_quote": "We face strong competition from other retailers and wholesale club operators (whether through physical retail, digital retail or the integration of both), which could materially adversely affect our financial performance.",
+   "risk_short": "competition 'whether through physical retail, digital retail or the integration of both'",
+   "offering": "it sells online itself: 'eCommerce sales positively impacted comparable sales approximately 0.7% for both Walmart U.S. and Sam's Club for fiscal 2018'",
+   "offering_short": "eCommerce added about 0.7% to fiscal 2018 U.S. comps"
+  },
+  {
+   "id": "WM75",
+   "published": "2019-03-29",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2019 10-K",
+   "risk_quote": "Each of our segments competes for customers, employees, digital prominence, products and services and in other important aspects of its business with many other local, regional, national and global eCommerce and omni-channel retailers, wholesale club operators and retail intermediaries.",
+   "risk_short": "competition with 'global eCommerce and omni-channel retailers'",
+   "offering": "it sells online itself: 'Walmart U.S. eCommerce sales positively contributed approximately 1.3% and 0.7% to comparable sales for fiscal 2019 and fiscal 2018, respectively'",
+   "offering_short": "eCommerce added about 1.3% to fiscal 2019 Walmart U.S. comps"
+  },
+  {
+   "id": "WM80",
+   "published": "2020-03-23",
+   "theme": "ECOMMERCE",
+   "kind": "ecommerce_company_acknowledged",
+   "doc": "FY2020 10-K",
+   "risk_quote": "Each of our segments competes for customers, employees, digital prominence, products and services and in other important aspects of its business with many other local, regional, national and global eCommerce and omni-channel retailers, wholesale club operators and retail intermediaries.",
+   "risk_short": "competition with 'global eCommerce and omni-channel retailers'",
+   "offering": "it sells online itself: 'Walmart U.S. eCommerce sales positively contributed approximately 1.7% and 1.3% to comparable sales for fiscal 2020 and 2019, respectively'",
+   "offering_short": "eCommerce added about 1.7% to fiscal 2020 Walmart U.S. comps"
   }
  ],
- "company_names": [],
+ "company_names": [
+  {
+   "published": "2018-02-01",
+   "name": "Walmart Inc.",
+   "source": "WM68"
+  }
+ ],
  "rule_t": {
   "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'WMT'): the decade of the FY2007 10-K, the vintage public on 2008-01-04, is fiscal 1998-2007 (fiscal years end January 31). Each year-on-year change comes from the latest 10-K published by then that reports both years. For net sales, cost of sales, U.S. comparable store sales and inventories that is the FY2007 10-K's Eleven-Year Financial Summary (one table, restated for the McLane, South Korea and Germany dispositions; comparable store sales in whole percents as the table gives them, with the fiscal 2007 change of definition left in). The summary has no operating income, so each operating-margin change comes from the statements of income of the latest 10-K reporting both years (operating income = net sales and other income less cost of sales and operating, selling, general and administrative expenses, over net sales; a line in the statements from the FY2003 10-K, derived before it). Seams stay in, as published: the 1999-2000 Asda acquisition, the 2005-2006 Seiyu consolidation, the reclassification of interest income out of other income in the FY2003 10-K.",
   "comps": {

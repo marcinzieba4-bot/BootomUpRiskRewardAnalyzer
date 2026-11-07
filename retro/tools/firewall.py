@@ -26,7 +26,7 @@ with every guided field, a later range for every quarter the fact sheet guides, 
 every year of the history (the 'restates' field of SHW 2015-2017), and a later withdrawal of every guided field (SHW 2018-2020); WMT: a guide
 with every guided field (words and a net sales note included), a later range for every quarter the fact sheet guides, and a later print that
 renames every reporting line and restates every year of the history, with operating one-offs, a constant-currency rate and a guide basis
-(WMT 2015-2017); every
+(WMT 2015-2017), and a later withdrawal of every guided field (WMT 2018-2020); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -137,7 +137,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
                "XOM": dict(production_quote="PLANTED", note="PLANTED"),
-               "WMT": dict(eps_guide_note="PLANTED", fy_words="PLANTED", rev_guide_note="PLANTED", rev_basis="PLANTED",
+               "WMT": dict(eps_guide_note="PLANTED", fy_words="PLANTED", rev_guide_note="PLANTED", rev_basis="PLANTED", rev_words="PLANTED",
                            q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2]}),
                "SHW": dict(fy_words="PLANTED", note="PLANTED",
                            q_guide={"quarter": "Q4 2099", "sales": [-40, -30], "eps": [0.1, 0.2], "words": "PLANTED"}),
@@ -230,6 +230,9 @@ try:
                                 "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         last.update(restates={y: 0.01 for y in v0["eps_normalized"]}, restates_note="PLANTED")
+        for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):   # and a later withdrawal of every guided field
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "withdrawn_quote": "PLANTED",
+                                "withdrawn": ["rev_guide", "eps_guide", "rev_words"], "fy_words": "PLANTED"})
     if "listings" in f:    # PEP: an exchange change announced and effective after CUTOFF
         f["listings"].append({"published": later, "effective": later, "exchange": "PLANTED", "source": last["source"], "note": "PLANTED"})
     v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))
