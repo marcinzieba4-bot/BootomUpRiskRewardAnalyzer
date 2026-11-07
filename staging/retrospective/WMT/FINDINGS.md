@@ -1,9 +1,9 @@
 # WMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the WMT weekly dates: 209 from 2008-01-04 to 2011-12-30. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the WMT weekly dates: 366 from 2008-01-04 to 2014-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 339c071; 2009-2011: 7be709f). Outcomes were computed on 2026-11-07 from the closes posted to 2026-11-06; the two-year
-horizons end by 2013-12-30 (three-year: 2014-12-30).
+pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783). Outcomes were computed on 2026-11-07 from the closes posted to
+2026-11-06; the two-year horizons end by 2016-12-30 (three-year: 2017-12-29).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -88,3 +88,55 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
 - **The encoding calls, seen afterwards.** None of the alternatives in retro/README.md ("WMT 2009-2011") moves a class or a tier, so the
   outcomes cannot tell them apart. What failed in 2009 was the level of the call, set by the floor; the calls were decided before scoring
   and stay.
+
+## 2012-2014 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 51 | +22.7% | +2.9% to +40.8% | 9 | 1 | +12.6% | 9 |
+| class FAIR | 3 | +18.2% | +17.7% to +35.7% | 1 | 0 | +9.5% | 1 |
+| class RICH | 103 | -3.3% | -23.9% to +33.8% | 1 | 0 | -6.2% | 102 |
+| tier BUY | 140 | +4.4% | -23.9% to +40.8% | 11 | 1 | +3.5% | 95 |
+| tier ACCUMULATE | 8 | -1.8% | -21.3% to -1.1% | 0 | 0 | -12.5% | 8 |
+| tier WATCHLIST | 1 | -6.4% | | 0 | 0 | -13.7% | 1 |
+| tier AVOID | 8 | -12.7% | -15.4% to -9.8% | 0 | 0 | -18.7% | 8 |
+| 2012 (CHEAP 49, RICH 3) | 52 | +22.7% | +2.9% to +40.8% | 9 | 1 | +12.6% | 12 |
+| 2013 (CHEAP 2, FAIR 3, RICH 47) | 52 | +1.9% | -23.9% to +35.7% | 2 | 0 | +4.5% | 47 |
+| 2014 (RICH 53) | 53 | -5.2% | -17.1% to +5.7% | 0 | 0 | -12.5% | 53 |
+| highest third by adjusted gap (-0.46 to +0.60) | 52 | +22.7% | | | | +12.6% | |
+| middle third (-1.08 to -0.48) | 53 | +1.9% | | | | +4.4% | |
+| lowest third (-2.24 to -1.09) | 52 | -5.6% | | | | -12.5% | |
+
+- **RICH held on 102 of 103 dates; CHEAP on 9 of 51.** From late 2012 the stock traded above where BASE leaves room for the hurdle,
+  and the call held: the RICH dates returned -24% to +34% over two years (median -3.3%) and never beat SPY (+6% to +51%). The one miss,
+  2013-01-25, returned +33.8%, just over the +32.2% hurdle, still 7.4pp behind SPY. The AVOID dates (2014-11-14 to 2014-12-31, $83-88)
+  returned -10% to -15% while SPY returned +10% to +17%. The CHEAP dates of 2012 returned +3% to +41% (median +22.7%) while SPY returned
+  +34% to +56%: the call held on the eight cheapest entries of January-May 2012 ($58.70-60.67, 5-13% under the floor), which cleared
+  the hurdle, and on 2012-12-28; only 2012-04-27 beat SPY (+1.8pp). One-year returns beat SPY on 17 of the 52 dates of 2012, none of
+  2013 and 7 of 2014; over three years no date of 2012-2014 beat SPY (2012 median +10.4%, 2013 +0.4%, 2014 +9.9%).
+- **The classes ranked the outcome the right way, for once.** CHEAP's median two-year return was +22.7%, FAIR's +18.2%, RICH's -3.3%;
+  by adjusted gap the highest third returned +22.7%, the middle +1.9% and the lowest -5.6%. Across the 157 dates the adjusted gap ranks
+  the return to the m12-24 average price at Spearman +0.93 (the two-year endpoint: +0.81), Ratio B at -0.94 (-0.82) and the market
+  composite at -0.96 (-0.83), a little better than the entry price itself (-0.86, -0.82) and the EPP gap (-0.86, -0.81). The anchors
+  moved this time (BASE $83-96, floor $62.72-68.90), but the ranking is still mostly "buy lower": the stock rose from $59 to $88.
+- **A defensive stock in a bull market: up in absolute terms, behind in relative ones.** CHEAP's expectation is to clear the hurdle or
+  beat SPY; in 2012 it failed on 40 of 49 CHEAP dates at +3% to +31%, as SPY ran +34% to +56%. This is the 2009 pattern again (a
+  defensive stock lagging a rebound), and the 2008 one reversed (ahead while the market fell). Two of three WMT batches now say the
+  class read a defensive stock's absolute value correctly and its relative value wrongly; whether the hurdle-or-benchmark test is the
+  right label for such a stock is a question for the method, not a rule.
+- **The two-year price walked down from BASE to BEAR.** It landed nearest BASE on 32 of the 52 dates of 2012 (0.78-1.00 times BASE),
+  BEAR on 33 of 2013 (0.66-1.03 times BASE) and BEAR on all 53 of 2014 (0.97-1.18 times the BEAR price, $61-74). The lowest close of the
+  windows was 2015-11-13's $56.42, and drawdowns reached 37.6% (from $90.47 on 2015-01-08) on the 60 dates from 2013-11-15. The outcomes record prices, not EPS, so they do
+  not say whether the earnings or the multiple carried it.
+- **The operating signals ranked the outcome the wrong way again in 2012.** Within 2012 the proxy composite ranks the return to the
+  m12-24 average price at Spearman -0.70 (the two-year endpoint: -0.77); across 2013-2014 at -0.11 (-0.37); across all 157 dates at
+  +0.11 (+0.05). With every signal at its BEAR value (a sensitivity run before scoring), 31 dates of June 2012 to March 2013 read RICH,
+  and 29 of them would have held as RICH, against 2 that held as CHEAP or FAIR. For this stock the quarter's operating signals pointed
+  the wrong way in all three batches (2008 -0.49, 2009-2011 -0.83, 2012 -0.70). Hypothesis for the method, not a rule: test whether
+  comparable-sales and margin signals carry information for a mature, low-growth retailer on other tickers before any change; never
+  fit them to WMT's outcomes.
+- **The encoding calls, seen afterwards.** The release's own constant-currency rate (acquisitions out; retro/README.md, "WMT
+  2012-2014") would have moved five CHEAP dates (2012-08-03 to 2012-10-26) to FAIR and 2013-03-08 from FAIR to RICH: the five returned
+  +3% to +8% and lagged SPY by 30-40pp, so they fail as FAIR too, and 2013-03-08 (+17.7%, 20.5pp behind SPY) would have held as RICH.
+  FY14 at reported EPS moves tiers only. The calls were decided before scoring and stay; changing a rule means a new method version
+  tested elsewhere.
