@@ -8607,7 +8607,7 @@ before its first publication (0 of 39,756); no model carries a calendar year aft
 
 Seen in the build (method behaviour, not tuned):
 - **From CHEAP to RICH.** CHEAP on 49 of the 52 dates of 2012 (RICH 2012-11-23 to 2012-12-07); in 2013 CHEAP on 2, FAIR on 3 and RICH
-  on 47; RICH on all 52 of 2014. The model tier is BUY on 140 dates, ACCUMULATE on 2013-11-29 and seven dates from 2014-09-05 to
+  on 47; RICH on all 53 of 2014 (2014-12-31 covers ISO week 2015-W01). The model tier is BUY on 140 dates, ACCUMULATE on 2013-11-29 and seven dates from 2014-09-05 to
   2014-10-31, WATCHLIST on 2014-11-07 and AVOID on the eight dates from 2014-11-14 ($83-88, at or above the BASE price of $85; Ratio B
   2.2-4.9). Robustness is 6 to 8 of 8 on 135 dates and 1 to 5 of 8 on 22, all between 2012-11-23 and 2013-10-04, where the adjusted
   gap sits near RICH's line (the FAIR dates agree with 1 of 8).
