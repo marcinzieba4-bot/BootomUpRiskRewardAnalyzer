@@ -1,9 +1,9 @@
 # WMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the WMT weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the WMT weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f). Outcomes were computed on 2026-11-07 from the
-closes posted to 2026-11-06; the two-year horizons end by 2019-12-27 (three-year: 2020-12-29).
+pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f; 2018-2020: ec73369). Outcomes were computed on
+2026-11-07 from the closes posted to 2026-11-06; the two-year horizons end by 2022-12-30 (three-year: 2023-12-29).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -197,3 +197,50 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   2015-10-23 CHEAP (it would have held) and 2015-11-06 FAIR (it would still have failed). The constant-currency reading thus did better
   on these dates, which says nothing about the rule: it was decided before scoring, the dates are few and the re-rating swamped every
   call. The calls stay; changing a rule means a new method version tested elsewhere.
+
+## 2018-2020 (157 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, tier AVOID (every date) | 157 | +30.0% | -6.9% to +72.4% | 75 | 55 | +23.7% | 79 |
+| 2018 | 52 | +49.7% | +9.4% to +72.4% | 43 | 46 | +30.7% | 6 |
+| 2019 | 52 | +35.4% | +18.5% to +61.4% | 30 | 9 | +27.7% | 22 |
+| 2020 | 53 | +5.9% | -6.9% to +34.9% | 2 | 0 | +8.7% | 51 |
+| FY18 anchor (to 2018-02-16) | 7 | +16.5% | +9.4% to +21.9% | 0 | 1 | +5.9% | 6 |
+| FY19 guides (2018-02-21 to 2019-02-15) | 52 | +51.5% | +23.9% to +72.4% | 50 | 52 | +32.8% | 0 |
+| FY20, FY19's EPS standing (2019-02-20 to 2020-02-14) | 52 | +30.0% | +17.3% to +45.4% | 23 | 2 | +24.1% | 29 |
+| FY21 guide (2020-02-19 to 2020-05-15) | 13 | +28.0% | +21.0% to +34.9% | 2 | 0 | +19.0% | 11 |
+| after the withdrawal (from 2020-05-20) | 33 | +1.9% | -6.9% to +8.3% | 0 | 0 | +1.0% | 33 |
+| highest third by adjusted gap (-1.77 to -0.75) | 52 | +5.9% | | 19 | 19 | +14.4% | 33 |
+| middle third (-2.22 to -1.77) | 52 | +42.4% | | 35 | 23 | +33.5% | 17 |
+| lowest third (-2.54 to -2.22) | 53 | +28.9% | | 21 | 13 | +23.6% | 29 |
+
+- **RICH held on 79 of 157 dates, almost all through the benchmark.** A RICH call expects the stock to miss the +32.2% hurdle and lag
+  SPY. On the 69 dates from 2018-02-21 to 2019-06-14 it did neither: the dates under the FY19 guides ($82-106) returned +24% to +72% over
+  two years and beat SPY on every one, by 3 to 48 points (SPY -9% to +58%), and those of February to June 2019 cleared the hurdle. From
+  mid-2019 the stock kept rising, but SPY rose faster: the 40 dates held between 2019-06-21 and 2020-05-15 returned +17% to +32% while SPY
+  returned +32% to +99% (2020-03-20, the COVID low); the misses among them (2019-08-02 to 2019-09-06, 2020-03-27 and 2020-04-09) cleared
+  the hurdle. After the withdrawal the 33 dates from 2020-05-20 ($118-152) returned -7% to +8% and held every time. Three-year returns
+  ran +8% to +80% (median +34.0%) and beat SPY on 47 of 157.
+- **The two-year price landed above XBULL almost every time.** It landed nearest XBULL on 149 dates and BULL on 8 (from 2020-05-20), at
+  1.05-1.76 times the BULL price and 1.22-1.93 times BASE: $107-157 two years on (as traded), against BULL prices that the decade's EPS
+  CAGR kept at BASE's rate. Drawdowns were 14-26%, the lowest closes 2018-12-24's $85.82 and 2020-03-12's $104.05. The 2015-2017
+  hypothesis carries on: a ten-year own-P/E window in which the multiple had been low capped every scenario multiple (the 90th percentile
+  near 17x) below where the stock traded, and the stock re-rated past it. Here the call still held about half the time, because the
+  benchmark rallied harder than this stock did from mid-2019; that is the outcome of the label's benchmark leg, not of the valuation.
+  Test a percentile window that can see a regime change, or a cross-sectional multiple, on other tickers before any method change.
+- **Within each year, cheaper entries still did better; across the three years the anchors told little.** The entry price ranks the
+  return to the m12-24 average price at Spearman -0.80 within 2018, -0.98 within 2019 and -1.00 within 2020 (all dates: -0.87); the EPP gap
+  at -0.90 over all dates. The adjusted gap ranks it at +0.28 and +0.38 within 2018 and 2019 but -0.79 within 2020, and -0.26 over all
+  dates: its least negative third, mostly the COVID quarters after the withdrawal, returned the least (+5.9%). Ratio B, infinite on every
+  date from 2019, ranks nothing.
+- **The operating signals: right in 2019, wrong in 2020.** The proxy composite ranks the return to the m12-24 average price at +0.19
+  within 2018, +0.55 within 2019 and -0.82 within 2020 (all dates: -0.24). Its 2020 readings were the strongest of any WMT batch (3.10 on
+  Q2 FY21: comparable sales +9.0%, gross margin +63bp, operating margin +45bp, inventories 13 points behind sales), all from the pandemic's
+  pull-forward of demand, and they came before the weakest returns. Over the six WMT batches the proxy composite has ranked the outcome the
+  wrong way in 2008, 2009-2011, 2012, 2015, 2016 and 2020, and the right way in 2017, 2018 (weakly) and 2019. Hypothesis for the method,
+  not a rule: test whether quarterly comparable-sales and margin signals carry information for a mature retailer on other tickers.
+- **The encoding calls, seen afterwards.** None of the alternatives in retro/README.md ("WMT 2018-2020") moves a class or a tier, so the
+  outcomes cannot tell them apart. The withdrawal mattered only to the text and to BASE (+9-12.5% on the COVID quarters), which could not
+  bring the price within RICH's line. The calls were decided before scoring and stay; changing a rule means a new method version tested
+  elsewhere.
