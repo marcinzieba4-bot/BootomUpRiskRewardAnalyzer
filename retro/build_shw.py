@@ -28,7 +28,7 @@ year ('withdrawn': the Q1 2020 release's FY2020 net sales range), which voids th
 2020 rule; retro/README.md, "SHW 2018-2020").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2023 were accepted before the open or during the session on the
+where it is the first trading day after it. The earnings 8-Ks of 2007-2026 were accepted before the open or during the session on the
 release day; a release on the week's last trading day (Thursday 2011-04-21 and 2014-04-17, before Good Friday; Friday 2013-10-25) counts
 for that close, by an 8-K accepted before the open or during the session (the UNP 2014 rule).
 
@@ -41,6 +41,7 @@ Usage
   python3 retro/build_shw.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_shw.py --weekly 2018-01-01 2020-12-31
   python3 retro/build_shw.py --weekly 2021-01-01 2023-12-31
+  python3 retro/build_shw.py --weekly 2024-01-01 2026-11-06
   python3 retro/build_shw.py 2008-01-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SHW/<AS_OF>
 """

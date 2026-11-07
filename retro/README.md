@@ -7291,6 +7291,7 @@ for c in 2012-04-10 2012-07-01 2013-01-01 2013-02-22 2013-07-01 2013-10-26 2014-
 for c in 2015-01-30 2015-04-17 2015-07-17 2016-01-29 2016-03-22 2016-07-01 2017-01-27 2017-04-21 2017-07-21 2017-10-25 2018-01-01; do python3 retro/tools/firewall.py $c SHW; done
 for c in 2018-01-26 2018-07-25 2019-01-16 2019-02-01 2019-07-01 2020-01-31 2020-04-30 2020-07-29 2020-10-28 2021-01-01; do python3 retro/tools/firewall.py $c SHW; done
 for c in 2021-01-29 2021-02-04 2021-04-01 2021-04-28 2022-01-14 2022-02-18 2022-07-28 2022-10-26 2023-01-27 2023-07-26 2024-01-01; do python3 retro/tools/firewall.py $c SHW; done
+for c in 2024-01-26 2024-02-21 2024-07-24 2025-01-31 2025-02-21 2025-07-23 2025-10-02 2026-01-30 2026-02-20 2026-07-29 2026-10-28 2026-11-02; do python3 retro/tools/firewall.py $c SHW; done
 ```
 
 The 10-Ks from FY1998 to FY2007 were read for the history and the decade's signal values (the FY1998-FY2004 annual reports, Exhibit 13,
@@ -8072,6 +8073,209 @@ Judgement calls that could carry hindsight (in addition to the 2008-2020 lists, 
 - **Two guide ranges first given outside SEC filings.** They enter only with the releases that restate them.
 - **Full-year comps for FY2021 and FY2022 from the 10-Ks.** Display only, in the franchise line.
 
+### SHW 2024-2026: guides in words to the end, Suvinil in the sales, the Paint Stores Group's stores, a refreshed price cache
+
+```bash
+python3 retro/build_shw.py --weekly 2024-01-01 2026-11-06                   # 149 dates, 2024-01-05 .. 2026-11-06
+```
+
+Every 8-K, 10-Q and 10-K of January 2024 to November 2026 was listed: 43 filings, of which 31 are 8-Ks, nine are 10-Qs and three are
+10-Ks. The facts come from the twelve earnings releases (Q4 2023 to Q3 2026, each Exhibit 99.1) and the three 10-Ks, read directly with
+no delegated transcription. Every other 8-K and every 10-Q was checked for a guided number, and none has one.
+
+The fact sheet's records are sources `SH102`-`SH116`. The transcription script now writes every typed figure back as the filing's own
+row text (statement-of-income rows, segment rows, same-store rows, Regulation G rows, guide rows), so a typo fails the check.
+`verbatim.py` checked 286 more strings, 1,855 in all.
+
+Thresholds (rule T), signals and the engine are unchanged. The builder changes only in its docstring.
+
+The following was decided on 2026-11-07, before any 2024-2026 date was built or scored.
+
+#### The end of the range
+
+- **The last date is 2026-11-06,** the last complete week: the series was built on Saturday 2026-11-07.
+- **A refreshed price cache.** The price cache (`retro/.cache`, not committed) had been fetched at 16:24 ET on 2026-11-06, before Yahoo
+  posted that day's close, so its last bar was 2026-11-05. It was refetched for SHW, the S&P 500 and SPY.
+- **No earlier model changes.** Rebuilding 2008-2023 from the new cache changes no model.
+- **The newest dates have no two-year outcome yet.**
+
+#### The 10-K vintages
+
+Three 10-K vintages, each with a Q4 print before it:
+
+| 10-K | accepted (ET) | published | history window | first-year diluted shares |
+|---|---|---|---|---|
+| FY2023 | 2024-02-20 15:57 | 2024-02-20 | 2014-2023 | 2014's 98,740,521, from the FY2016 10-K |
+| FY2024 | 2025-02-20 17:24 (after the close) | 2025-02-21 | 2015-2024 | 2015's 94,543,543, from the FY2017 10-K |
+| FY2025 | 2026-02-19 14:54 | 2026-02-19 | 2016-2025 | 2016's 94,488,086, from the FY2018 10-K |
+
+- **First-year shares.** Each is the latest 10-K that reports the year (treasury stock method). Each was published before the 2021 split,
+  so `shares_published` multiplies it by three.
+- **Pre-split years.** The years the vintages take from filings published before the split keep their `eps_published` dates, as in
+  2021-2023.
+- **The new segment basis.** All three vintages name the Paint Stores Group (from the 2023 recast) in their business line and "why": "The
+  Paint Stores Group consisted of 4,694 company-operated specialty paint stores", then 4,773 and 4,853. That count is about 240 lower than
+  The Americas Group's 4,931 at the end of 2022, because the Latin American stores moved to the Consumer Brands Group. The franchise line
+  shows the count; no input reads it.
+
+#### EPS: the company's adjusted figure (the 2018-2020 rule, unchanged)
+
+| Fiscal year | Excludes | Guides, in order | Enters at (GAAP) |
+|---|---|---|---|
+| FY2023 | the restructuring-plan items, trademark impairment, the Argentine peso devaluation ($0.16) and acquisition-related amortization | (2021-2023 batch) | $10.35 ($9.25) |
+| FY2024 | acquisition-related amortization | $10.85-11.35 (twice), $11.10-11.40 (twice) | $11.33 ($10.55) |
+| FY2025 | amortization, severance and other restructuring ($0.34) and trademark impairment ($0.05) | $11.65-12.05 (twice), $11.20-11.50, $11.25-11.45 | $11.43 ($10.26) |
+| FY2026 | amortization and restructuring | $11.50-11.90 (twice), $11.80-12.20, $11.85-12.15 | — |
+
+- **The 10-Ks publish the same adjusted figures** for both years they show: 2022-2023, 2023-2024 and 2024-2025.
+- **No preliminary-results 8-K** falls in the range.
+- **Guide changes are new ranges, not withdrawals.** The Q2 2025 release's "Adjusting" guide replaces the range rather than voiding it.
+
+#### Guides in words; BASE
+
+Net sales are guided only in words throughout, both for the next quarter and the year ("Up or down low-single digit %", "Up mid to
+high-single digit %"). Words are not figures (the UNP 2016 rule), so BASE takes each latest quarter's growth less a stated consolidated
+currency effect, or as reported where none is stated.
+
+| Quarter | Growth | Stated consolidated currency effect | BASE growth input |
+|---|---|---|---|
+| Q4 2023 | +0.4% | none | +0.4% |
+| Q1 2024 | -1.4% | none | -1.4% |
+| Q2 2024 | +0.5% | none | +0.5% |
+| Q3 2024 | +0.7% | 1.0 point unfavorable | +1.7% |
+| Q4 2024 | +0.9% | 1.3 points unfavorable | +2.2% |
+| Q1 2025 | -1.1% | about 1 point unfavorable ("an approximate 1% impact") | -0.1% |
+| Q2 2025 | +0.7% | none | +0.7% |
+| Q3 2025 | +3.2% | none | +3.2% |
+| Q4 2025 | +5.6% | none | +5.6% |
+| Q1 2026 | +6.8% | 1.7 points favorable | +5.1% |
+| Q2 2026 | +7.5% | none | +7.5% |
+| Q3 2026 | +7.9% | none | +7.9% |
+
+- **Segment-only currency is not used.** Where only the segments state currency (CBG, PCG), BASE does not net it out; the note says so.
+- **The resulting BASE EPS growth** runs from +0.1%/yr (Q1 2024) to +9.3%/yr (Q3 2026).
+
+#### Suvinil in the sales, as published
+
+- **The deal.** The 8-K of 2025-02-18 announced the purchase of BASF's Brazilian architectural paints business (Suvinil). The 8-K of
+  2025-10-01 reported its close on October 1, 2025.
+- **Neither adds a guided number.** The Q3 2025 guide notes that it "includes the Suvinil acquisition".
+- **Acquisitions stay in (the 2008 rule).**
+  - The Q4 2025 release states Suvinil "contributed $164.5 million, or 3.1% of the change from the fourth quarter of 2024". BASE takes
+    the +5.6% with it.
+  - The Q1-Q3 2026 releases say "inclusive of the October 2025 acquisition of Suvinil" without a figure.
+  - The Q3 2026 release adds "selling price increases, which impacted Net sales by a mid-single digit percentage". This is noted and
+    adds nothing.
+
+#### Signals
+
+- **Comparable-store sales** are the Paint Stores Group's same-store row, labelled "Same-store sales (1)" or "Same-store sales change
+  (1)" as each release prints it. The footnote's own capitalization varies between releases ("net sales" or "Net sales") and is quoted
+  as printed.
+- **Full-year comps** come from each Q4 release's own sentence: +6.8% (2023), +1.7% (2024) and +1.7% (2025).
+- **The Consumer Brands Group's growth** comes from its table row: -10.7% to -2.6% through Q3 2025, then +19.2% to +24.5% with Suvinil.
+- **Margins** are at GAAP.
+
+#### Other facts
+
+- **Release timing.** All twelve earnings 8-Ks were accepted before the open (07:03-07:12 ET) on a Tuesday or Thursday. Each dates its
+  week from the next trading day.
+- **Dividends,** from each 10-K:
+
+  | 10-K | Quarterly rate | Declared |
+  |---|---|---|
+  | FY2023 | $0.715 | February 14, 2024 |
+  | FY2024 | $0.79 | February 19, 2025 |
+  | FY2025 | $0.80 | January 26, 2026 |
+
+- **Filings that add nothing:**
+  - the officer, director, bylaw and annual-meeting 8-Ks, among them the Executive Chairman's retirement (2024-11-14) and the CFO
+    succession (2025-11-03);
+  - the credit-facility, term-loan and note 8-Ks;
+  - the Suvinil 8-Ks beyond the prints;
+  - the 10-Qs.
+- **The watch list stays empty through 2026.**
+  - GENAI is scoped to software, IT services, information and education. The FY2024 and FY2025 10-Ks name artificial intelligence
+    only as a risk to the protection of intellectual property ("advances in artificial intelligence technology and increasingly
+    widespread use of generative artificial intelligence tools") and to cybersecurity ("advances in artificial intelligence (AI)
+    capabilities"). That is a risk to the company's own systems, not substitution of its products.
+  - ECOMMERCE is scoped to physical retail. The FY2023-FY2025 10-Ks use "online" only for employee training.
+  - ENERGY_TRANSITION, EV and CRYPTO are scoped to other industries.
+  - The classification stays DURABLE, risk 2.
+
+#### Checks
+
+- **Controls: 33 of 33.** One value at a time was altered, and each time no date before its publication changed and the first weekly
+  date on or after it did. The values: each new print's comps, with each Q4 print's full-year EPS; each guide's EPS; each vintage's tax
+  rate; and a pre-split EPS year in each vintage.
+- **Leak scan.** All 984 SHW models were scanned for every figure, note, guide, title and URL. Nothing appears before its first
+  publication except:
+  - the earlier batches' segment-name hits;
+  - generic phrases already inside earlier notes: the two currency phrases of 2021-2023, and now "no consolidated acquisition effect
+    stated" (Q1 2025's note, already the opening of Q2 2022's).
+
+  No model carries a calendar year after its date outside an FY label.
+- **Regression.** The 833 dates of 2008-2023 that a single run produces rebuild byte-identical. The other two, 2008-12-31 and
+  2014-12-31, are the ends of their batches.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 121 of 149 dates, CHEAP on 21, FAIR on 7.**
+
+  | Year | RICH | CHEAP | FAIR | When |
+  |---|---|---|---|---|
+  | 2024 | 51 | — | 1 | FAIR on 2024-06-07 only |
+  | 2025 | 52 | — | — | every date |
+  | 2026 | 18 | 21 | 6 | from 2026-03-13 the class turns with the price: CHEAP on 2026-03-13 to 2026-04-02, 2026-04-29 to 2026-06-18, 2026-07-24, 2026-09-04 to 2026-10-16 and 2026-10-28; RICH on 2026-11-06 |
+
+  - **Legacy tier:** WATCHLIST on 49 dates, ACCUMULATE on 41, AVOID on 34 and BUY on 25.
+  - **Robustness** is 5-8 of 8 except on nine dates at 3-4 of 8, most at the edges of a RICH run.
+- **The multiple stayed high in a band that kept rising.**
+
+  | Year | Price | P/E on the guided year | Percentile of its own 10-year range |
+  |---|---|---|---|
+  | 2024 | $292-397 | 26.3-35.3x | 67th-95th |
+  | 2025 | $321-373 | 28.0-32.9x | 67th-90th |
+  | 2026 | $300-370 | 25.6-31.5x | 46th-86th |
+
+  - **The band.** Its median rose from 23.9x to 26.7x and its 90th percentile sat at 30.4-33.0x. 2021's 43.2x stays the maximum.
+  - **The anchor:**
+    - FY2024: $11.10, then $11.25;
+    - FY2025: $11.85, then $11.35 twice;
+    - FY2026: $11.70, then $12.00.
+  - **The EPP floor** is 19x, and 20x from 2025-10-03. The price stood 28% to 86% above it.
+- **BEAR is 2021's -0.5%/yr throughout.** The bear price is $209-248, at the 10th-percentile multiple of 20.7-20.9x.
+- **BULL and XBULL.** BULL falls with the decade CAGR, from +15.3% to +11.5%/yr, as the strong 2013-2016 years leave the window. XBULL
+  goes from +24.0% to +21.0% and then +20.1%/yr.
+- **BASE ran low, then rose with Suvinil.**
+  - **To Q3 2025** it took growth of -1.4% to +3.2% (BASE EPS +0.1% to +4.4%/yr) against a price at 26-35x: RICH throughout.
+  - **From Q4 2025** it took +5.1% to +7.9% (BASE EPS +6.5% to +9.3%/yr), Suvinil in it.
+  - **The CHEAP of 2026** entered at $300-335, 25.6-27.9x, the 46th-62nd percentile, near the band's median.
+  - **The RICH dates of 2026** entered at $328-370, 28.2-31.5x.
+- **Composites.**
+  - The proxy composite reads 2.05-2.80 and the market composite 2.48-3.77.
+  - The adjusted gap runs from -1.74 to +0.41.
+  - The conservative two-year case runs from -29% to +14%.
+
+How far each call moves the classes. The 149 dates were recomputed with one encoding changed each time; no outcome was consulted.
+
+| Encoding changed | Classes | Tiers | Direction |
+|---|---|---|---|
+| Every EPS figure at GAAP: the guides in force at their GAAP ranges, FY2016-FY2025 at GAAP | 37 | 115 | RICH to FAIR on 13 dates of January-July 2024; CHEAP to FAIR on 21 dates of 2026; FAIR to RICH on 3 dates of 2026 |
+| Consumer Brands Group signal at BEAR on every date | 11 | 0 | All in 2026, toward RICH or FAIR |
+| Consumer Brands Group signal at XBULL on every date | 9 | 0 | RICH to FAIR: 8 dates of 2024 and 2026-07-10 |
+| Pre-tax margin thresholds with 2000 at GAAP | 0 | 0 | |
+| BASE on reported net sales growth (no currency adjustment) | 0 | 0 | |
+| BASE on Q4 2025 growth less Suvinil's stated 3.1 points | 0 | 0 | |
+
+Judgement calls that could carry hindsight (in addition to the 2008-2023 lists, which stand):
+- **The company's adjusted EPS throughout.** It excludes recurring amortization, as well as 2023's Argentine peso devaluation and
+  2025's restructuring and trademark impairment. At GAAP, 37 classes move.
+- **Approximate currency figures read as figures.** "approximately 1.0%" (Q3 2024) and "an approximate 1% impact" (Q1 2025) are taken as
+  -1.0 points. No class moves either way.
+- **Suvinil's acquired sales left in BASE** (the 2008 rule, not new). No class moves without its one stated figure.
+- **The Paint Stores Group's store count replacing The Americas Group's.** Display only.
+- **The refreshed price cache.** It changes no earlier model, and the new dates read the close of 2026-11-06.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -8220,7 +8424,9 @@ What the gates enforce:
   empty through 2020: the FY2017-FY2019 10-Ks name no e-commerce or online competition, and EV and CRYPTO, live from 2020, are scoped to
   other industries ("SHW 2018-2020") It stays empty
   through 2023: GENAI (from 2022-11-30) is scoped to software, IT services, information and education, and the FY2020-FY2022 10-Ks use
-  "online" only for COVID-era ordering and employee training ("SHW 2021-2023").
+  "online" only for COVID-era ordering and employee training ("SHW 2021-2023") It stays empty through 2026: the FY2024 and FY2025 10-Ks
+  name artificial intelligence only as a risk to intellectual-property protection and cybersecurity, not as a substitute for paint and
+  coatings, and GENAI is scoped to software, IT services, information and education ("SHW 2024-2026").
 
 ## Workflow
 

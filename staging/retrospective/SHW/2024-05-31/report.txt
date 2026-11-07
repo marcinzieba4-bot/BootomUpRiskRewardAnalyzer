@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SHW  ·  The Sherwin-Williams Company  ·  $303.80  ·  RETROSPECTIVE as of 2024-05-31
+  Signal: ◎ ACCUMULATE   Ratio B: 0.77x   Adj gap: -0.67  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2024-05-31; latest print Q1 2024 (Apr 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E net sales, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores Group        $    12.7  $  12.7  $  14.9      +0.0      +2.2
+    +7.3% net sales in FY23
+  Performance Coatings Gro  $     6.7  $   6.7  $   7.9      +0.0      +1.2
+    +0.7% net sales in FY23
+  Consumer Brands Group     $     3.3  $   3.3  $   3.9      +0.0      +0.6
+    -0.7% net sales in FY23
+  Administrative            $     0.0  $   0.0  $   0.0      +0.0      +0.0
+    +0.0% net sales in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    22.7  $  22.7  $  26.7      +0.0      +4.0
+  FY2024E = FY23 $23.05B × (1 − 1.4%: no FY24 net sales guide in numbers, Q1 2024 net sales, applied to the year (no FY24 net sales guide in numbers)); split pro rata to FY23 segment net sales (FY2023 10-K)
+  Q1 2024 (Apr 23): net sales $5.37B -1.4%; comps -0.1%; Consumer Group -7.1%; gross margin 47.16% (+267.4bp);
+  pre-tax margin 11.92% (+62.8bp); EPS $1.97 vs $1.84
+  Comparable-store sales: 'Paint Stores Group same-store sales 'Same-store sales change (1) | (0.1)% | 14.2%' ('Same-store sales represents net sales from stores open more than twelve calendar months')'; Consumer Group: 'Consumer Brands Group 'Net sales | 811.0 | 872.7 | (61.7) | (7.1)%''; no consolidated currency effect on net sales stated; no consolidated acquisition effect stated (PCG: 'Incremental sales from acquisitions increased Net sales by 1.3% in the quarter'); EPS including $0.20 of acquisition-related amortization ($2.17 adjusted)
+  FY24 guide (Q4 2023 release, Q1 2024 release): EPS $10.85-11.35 (adjusted; GAAP $10.05 to $10.55 (reaffirmed)); net sales in words: 'Up low to mid-single digit %'; Q2 2024: net sales in words: 'Flat to up low-single digit %'
+
+  FY2024E EPS check:  $22.7B × 13.5% pre-tax × (1−23.2%) ÷ 0.256B  =  $9.19  (FY2024E EPS, guide midpoint)
+  FY2026E BEAR check: $22.7B × 13.5% ÷ 0.248B  =  $9.48  (scenario $10.99)
+  FY2026E BULL check: $26.7B × 13.9% ÷ 0.248B  =  $11.48  (scenario $14.70)
+  Every 1pp of pre-tax margin ≈ $0.68 EPS ≈ $17/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores comparable sales       -7.0%   ≥-1.0%    ≥4.0%   ≥14.0%     -0.1%  ◦ BASE  ██░░
+  Gross margin change               -290.0bp  ≥-130.0bp  ≥30.0bp  ≥180.0bp  +267.4bp  ★ XBULL  ████
+  Net sales growth                   -10.0%   ≥-3.0%    ≥4.0%   ≥18.0%     -1.4%  ◦ BASE  ██░░
+  Consumer Group net sales growth    -20.0%   ≥-9.0%    ≥2.0%   ≥21.0%     -7.1%  ◦ BASE  ██░░
+  Pre-tax margin change             -220.0bp  ≥-110.0bp   ≥0.0bp  ≥160.0bp   +62.8bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.55 / 4.00
+  Market composite:   3.05 / 4.00  (back-solved from $304 + 15% hurdle)
+  SCA adjustment:    -0.07  ·  EPP-distance adj -0.10  →  Adj composite 2.38  →  Gap -0.67  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 net sales +4.1% on Paint Stores comps +6.8%, 4,694 paint stores; Q1 gross margin 47.16% (+267.4bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.4x FY24E vs a 24.3x 10-yr median (73rd percentile of its own range)  (-0.38 × 25%  =  -0.095)
+    -  Growth vs own history: no FY24 net sales guide in numbers, Q1 2024 net sales -1.4% vs a 4.6% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY23 year-end cash $0.277B, FY23 free cash flow $2.63B, dividend $2.86 a year, 5.6 million shares purchased in 2023; remaining authorization 39.6 million shares at December 31, 2023  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Paint Stores comparable sales        -0.1%     -7.0%   -6.9%  Housing turnover and repaint demand f…
+  Gross margin change               +267.4bp  -290.0bp  -557.4bp  Raw material costs outrun selling prices
+  Net sales growth                     -1.4%    -10.0%   -8.6%  Volume falls faster than prices, stor…
+  Consumer Group net sales growth      -7.1%    -20.0%  -12.9%  DIY demand at the big retailers shrinks
+  Pre-tax margin change              +62.8bp  -220.0bp  -282.8bp  Store and selling costs deleverage on…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$249  (model)  /  $227 (defined)
+  Bear probability (proxy model):  8.4%
+
+  KEY TRIGGER: Paint Stores comparable sales went from +2.1% (Q4 2023) to -0.1% (Q1 2024);
+  the bear case needs a demand recession that gross margin (+267.4bp now)
+  and selling prices no longer cover. Housing drives demand, by the company's own account; the bear needs raw
+  material costs to stay up while volumes fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $11.10  (FY2024E EPS, guide midpoint)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2014 23.0x, 2015 19.6x, 2016 18.6x, 2017 18.2x, 2018 19.7x, 2019 18.0x, 2020 16.1x, 2021 27.0x, 2022 23.0x, 2023 20.2x, 2024 26.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $211/share
+  Current $304 vs Updated EPP $211:  +44%  ⚠ far above floor — large drawdown room
+  Bear $227 vs Updated EPP $211:  +8%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Paint Stores comparable sales               -1.0       -0.9   BASE floor (vs -0 now)
+  Gross margin change                       -130.0     -397.4   BASE floor (vs +267 now)
+  Net sales growth                            -3.0       -1.6   BASE floor (vs -1 now)
+  Consumer Group net sales growth             -9.0       -1.9   BASE floor (vs -7 now)
+  Pre-tax margin change                     -110.0     -172.8   BASE floor (vs +63 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $11.10 × (1+0.0%)² = $11.10
+  At 24x P/E (conservative):  $266/share
+  + Cumul. dividends (2yr):  +$5.89/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $266  (▼37 from $304)
+  Conservative total return:  -10% over 2yr  = -5%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (27.4x)
+  mean-reverts to 24x. Breakeven at 24x needs FY2026E EPS of $12.41,
+  i.e. 5.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $227.20  –  $348.37  (at 63th pct of range)
+  Annual dividend:      $2.86/share  (yield 0.9%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 1.05
+  1-sigma range (1yr):  $244  –  $363  ($304 ± 20%)
+  2-sigma range (1yr):  $185  –  $423
+  ────────────────────────────────────────────────────────────
+  Bear $227 requires:  ~1.3σ price move  (within normal vol range)
+  A paint and coatings company with a 1.1 beta: the stock is +29% off its June
+  low while Paint Stores comparable sales went from +2.1% (Q4 2023) to -0.1% (Q1 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       10.99  20.7x  $    227     8.4%      4.4%    +4.0pp  EPS -0.5%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE       11.13  24.3x  $    270    29.3%     15.2%   +14.0pp  EPS +0.1%/yr (Q1 sales + margin + buyback); P/E at its 10-yr median
+  BULL       14.70  27.5x  $    404    52.4%     53.1%    -0.7pp  EPS +15.1%/yr (FY14-FY23 CAGR); P/E holds its 75th pct
+  XBULL      16.26  30.7x  $    499     9.9%     27.3%   -17.4pp  EPS +21.0%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct
+
+  Proxy EV (2yr): $359  /  Market EV: $402  /  Current: $304
+  Conservative EV (2yr, ④): $266 + $5.89 divs = $272 total value
+  Downside (→ Bear $227): 25.3%   Upside (→ Bull $404): 33.0%   Ratio B 0.77x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $304 the market needs $402 in two years —
+  between the BASE and BULL cases. That is a market composite of 3.05 against a model
+  read of 2.38: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.77x     +44%    -0.67  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.41x     +44%    -0.08  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.58x     +44%    -1.12  OVERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.62x     +44%    -0.52  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.94x     +44%    -0.80  OVERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.77x     +44%    -0.37  MODESTLY OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.77x     +24%    -0.57  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.77x     +44%    -0.24  MODESTLY OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2024 print (late July) — the next read on comps (-0.1% now) and the guide
+  (2) Gross margin — +267.4bp in Q1 2024: raw material costs against selling prices, what must hold if comps do not
+  (3) FY24 EPS guide $10.85-11.35 (Q1 2024 release)
+  (4) Pre-tax margin — 11.92% in Q1 2024 (+62.8bp): where store and selling costs deleverage on falling comps
+  (5) Capital return at 27x — 1.7 million shares repurchased in the quarter; remaining authorization 37.9 million shares at March 31, 2024: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $211  |  ADD below ~$230  |  TRIM above $404
+════════════════════════════════════════════════════════════════════════
+
