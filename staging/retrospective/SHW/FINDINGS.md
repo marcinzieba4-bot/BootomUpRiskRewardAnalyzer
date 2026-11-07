@@ -1,10 +1,11 @@
 # SHW retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SHW weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the SHW weekly dates: 984 from 2008-01-04 to 2026-11-06. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306; 2018-2020: 205620b; 2021-2023: a82e11f). Prices run to
-2026-11-05 (2008, 2012-2014) and 2026-11-06 (2009-2011, 2015-2023); the two-year horizons end by 2025-12-29 (three-year: 2026-11-03;
-the last eight dates of 2023 have none yet).
+pushed (2008: c486e3a; 2009-2011: c951197; 2012-2014: bf0acb6; 2015-2017: 0cc2306; 2018-2020: 205620b; 2021-2023: a82e11f; 2024-2026: c1aa250).
+Outcomes were computed on 2026-11-05 (2008, 2012-2014), 2026-11-06 (2009-2011, 2015-2023) and 2026-11-07 (2024-2026), each from the
+closes posted when it ran; the two-year horizons end by 2026-10-30 (three-year: 2026-11-03). Dates from 2023-11-10 have no three-year
+outcome yet, dates from 2024-11-08 no two-year outcome, and 2026-11-06 none at all.
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -362,3 +363,75 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   | The preliminary 8-K not read as a guide | 0 | — | — |
 
   The calls were decided before scoring and stay. Changing a rule means a new method version tested elsewhere.
+
+## 2024-2026 (149 dates; 44 with a two-year outcome)
+
+Only the dates from 2024-01-05 to 2024-11-01 have a two-year outcome. Of the rest:
+- 52 more have a one-year outcome, to 2025-10-29;
+- 26 more have a six-month outcome, to 2026-04-29;
+- the 27 from 2026-05-08 on have none yet.
+
+The call check is two-year only, so every 2026 call, CHEAP or RICH, is still unscored.
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 1 | +6.7% | +6.7% to +6.7% | 0 | 0 | +16.1% | 0 |
+| class RICH | 43 | +2.9% | -14.1% to +21.3% | 0 | 0 | +4.8% | 43 |
+| legacy tier BUY | 6 | +17.4% | +6.7% to +21.3% | 0 | 0 | +14.2% | 5 |
+| legacy tier ACCUMULATE | 11 | +7.5% | -2.2% to +21.3% | 0 | 0 | +11.6% | 11 |
+| legacy tier WATCHLIST | 10 | +9.7% | -2.6% to +20.2% | 0 | 0 | +6.9% | 10 |
+| legacy tier AVOID | 17 | -5.8% | -14.1% to +8.8% | 0 | 0 | -6.9% | 17 |
+
+| Group (one year) | Dates | Median 1-yr total return | Range | Cleared 15% | Beat SPY | Median excess vs SPY |
+|---|---|---|---|---|---|---|
+| class FAIR | 1 | +23.5% | +23.5% to +23.5% | 1 | 1 | +9.9% |
+| class RICH | 95 | -0.1% | -16.8% to +20.7% | 11 | 13 | -18.3% |
+| 2024 (RICH 51, FAIR 1) | 52 | +4.8% | -14.0% to +23.5% | 12 | 14 | -11.2% |
+| 2025 (RICH 44) | 44 | -2.8% | -16.8% to +8.0% | 0 | 0 | -23.0% |
+
+- **RICH held on all 43 dates with a two-year outcome.**
+  - Two-year returns ran from -14% to +21% (median +3%). None cleared the hurdle, and every one lagged SPY, by 16-51pp.
+  - The only FAIR date, 2024-06-07, returned +6.7%, 34pp behind SPY, so the FAIR call failed.
+  - Over one year the 95 RICH dates returned a median of -0.1% and beat SPY on 13. Every 2025 date lagged SPY over one year, by 9-44pp.
+  - **Over 2008-2026,** counting dates with a two-year outcome: RICH held on 156 of 645, CHEAP on 142 of 144 (none in this batch), and
+    FAIR on 42 of 90.
+- **The held RICH calls sat higher in the band than the RICH that failed in 2022-2023.**
+  - They entered at 26.6-34.5x the guided year, 1.09-1.40 times the window's median and its 68th-94th percentile.
+  - The band's median had itself risen to 23.9-24.6x.
+  - In 2021-2023 the failed RICH calls entered at 1.00-1.27 times the median, and the held ones at 1.06-1.79. Here none failed
+    between 1.09 and 1.40.
+  - The fundamentals:
+    - adjusted EPS rose 9.5% in 2024 ($10.35 to $11.33) and 0.9% in 2025 ($11.43), by the Q4 releases;
+    - same-store sales grew 1.7% in each year;
+    - the price went sideways ($290-400).
+  - **The hypothesis is unchanged** (test where the RICH line should sit on other tickers before any method change). This batch adds
+    one more episode in which a multiple well above its median, with low growth, did not pay.
+- **The two-year price landed nearest BASE (29 dates) or BULL (15).**
+  - BASE ran at only +0.1% to +3.2%/yr on these dates, so a flat price landed near it.
+  - Drawdowns within two years ran 22-27%. The lows came on 2024-06-07 and 2026-06-02 (22 dates each), and stayed 1.27-1.40 times the
+    BEAR price.
+- **The ranking ran the right way on every measure, inside one class.** Spearman correlations across the 44 two-year dates:
+
+  | Measure | With the m12-24 average price | With the two-year endpoint |
+  |---|---|---|
+  | Entry multiple relative to the window median | -0.88 | -0.74 |
+  | EPP gap | -0.90 | -0.76 |
+  | Ratio B | -0.90 | -0.76 |
+  | Adjusted gap | +0.94 | +0.78 |
+  | Entry price alone | -0.99 | -0.82 |
+
+  - **Over one year** (96 dates) the adjusted gap ranks at +0.68 and the entry price at -0.79.
+  - **These are mostly one measure.** The entry price ranks as well as anything, and these dates run consecutively through a sideways
+    market, so they mostly measure where in the range each date bought. They are not independent tests.
+  - **The adjusted gap has now ranked SHW's dates** -0.35, +0.70, -0.39, +0.35, +0.03, +0.78 and +0.94 on the m12-24 outcome. The
+    last batch's dates span only ten months.
+- **The 2026 CHEAP calls are unscored.** There are 21 of them, all from 2026-03-13. Only five have a six-month return (+1% to +6%), and
+  all five lagged SPY, by a median 14pp. That is too early to call, and a label only.
+- **The encoding calls, seen afterwards.** These are the alternatives in retro/README.md ("SHW 2024-2026").
+  - **Every EPS figure at GAAP** moves 37 classes. 13 of them have a two-year outcome (RICH to FAIR, January-July 2024): all 13 held as
+    built, and none would have held as FAIR, since each lagged SPY by more than 15pp.
+  - **The Consumer Brands Group signal at XBULL** moves 9, of which 8 are scored the same way: 8 held as built, 0 under the variant.
+  - **The other alternatives** are unscored (the Consumer Brands Group at BEAR, all in 2026) or move nothing (reported growth, Suvinil
+    netted out, the pre-tax margin bracket).
+
+  The calls stay.
