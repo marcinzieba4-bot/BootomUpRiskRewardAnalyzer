@@ -13,27 +13,30 @@ builder
 
 Walmart's fiscal year N ends on January 31 of calendar year N (fiscal 2008 ended 2008-01-31). Each earnings release guides diluted
 EPS from continuing operations for the next quarter and, in most releases, for the fiscal year, and U.S. comparable store sales for
-the next quarter in most; no release of the period guides net sales or a margin in numbers. Guides are therefore their own dated
-list, as for LOW and SHW, and each field comes from the latest guide for the current fiscal year that states it. The method r2
-inputs map as follows (retro/README.md, "WMT"):
+the next quarter in most; from the Q4 FY11 release some guide fiscal-year net sales, and none guides a margin in numbers. Guides
+are therefore their own dated list, as for LOW and SHW, and each field comes from the latest guide for the current fiscal year that
+states it. The method r2 inputs map as follows (retro/README.md, "WMT"):
   - current-FY EPS: the fiscal-year EPS guide midpoint (no numeric EPS guide: the last full year's EPS stands),
   - forward revenue growth: the next-quarter net sales guide for a quarter not yet reported (none in numbers: the fiscal-year net
     sales guide; none either: the latest quarter's net sales growth excluding the currency effect the release states, the NKE, PEP
     and SHW rule, or as reported when the release states none, as every release of 2007-2008 does),
   - guided margin step: none (no margin guide in numbers); the margin signal takes the latest quarter's operating-margin change.
-The comparable store sales guide for the next quarter is shown in the guide line and feeds no input.
+The comparable store sales guide for the next quarter is shown in the guide line and feeds no input, as are a net sales guide's
+note ('rev_guide_note') and a later update in words to the fiscal-year EPS range ('fy_words', shown while no later numeric range
+replaces it; the range stands, the ACN rule; retro/README.md, "WMT 2012-2014").
 A later print may publish an earlier year's company figure on a new basis ('restates': the Q4 FY11 release's FY10 underlying $3.67 as
 adjusted for the change in inventory accounting); it replaces the year from that print until a 10-K vintage published after it carries
 the year (the SHW rule; retro/README.md, "WMT 2009-2011").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
-where it is the first trading day after it. The earnings 8-Ks of 2007-2008 were accepted before the open on the release day.
+where it is the first trading day after it. The earnings 8-Ks were accepted before the open on the release day.
 
 Output goes to staging/retrospective/WMT until the series is added to the archive (--out archive/retrospective/WMT).
 
 Usage
   python3 retro/build_wmt.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_wmt.py --weekly 2009-01-05 2011-12-31
+  python3 retro/build_wmt.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_wmt.py 2008-02-20
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/WMT/<AS_OF>
 """
@@ -209,7 +212,9 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
-    ge, gr = stated("eps_guide"), stated("rev_guide")
+    ge, gr, gw = stated("eps_guide"), stated("rev_guide"), stated("fy_words")
+    if gw and ge and gw["published"] < ge["published"]:
+        gw = None                            # a later numeric range replaces words about an earlier one
     qkey = lambda q: (int(q.split("FY")[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"] % 100, nq)          # a next-quarter guide counts while its quarter is unreported
     gq = next((g for g in reversed(guides) if "q_guide" in g and later(g["q_guide"]["quarter"])), None)
@@ -245,7 +250,8 @@ def build(as_of, facts, raw, spx, engine, out):
     if guides:
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']}; {ge['doc']})" if ge.get("eps_guide_note") else f" ({ge['doc']})")]
                 if ge else [f"no {fy_now} EPS range yet"]) + \
-               ([f"net sales {pct_range(*gr['rev_guide'])}"] if gr else []) + \
+               ([f"{gw['fy_words']} ({gw['doc']}; the range stands)"] if gw else []) + \
+               ([f"net sales {pct_range(*gr['rev_guide'])}" + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"net sales {pct_range(*q['sales'])}"] if "sales" in q else []) +
                    ([f"U.S. comps {pct_range(*q['comps'])}"] if "comps" in q else []) +

@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for WMT retrospectives (retro/build_wmt.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Walmart's fiscal year N ends on January 31 of calendar year N. Each release guides diluted EPS from continuing operations for the next quarter and, in most releases, the fiscal year; U.S. comparable store sales for the next quarter in most; never net sales or a margin. Values are as reported; a vintage takes each year from the latest filing that reports it (the 10-K's Eleven-Year Financial Summary for EPS and net sales; the statements of income for diluted shares). A print's growth, margins and inventory growth are derived from the raw figures of its release ('raw', millions; the builder re-derives and checks them): the year-ago quarter is the one the same release shows; comparable store sales are the release's Total U.S. figure with fuel, the measure the 10-Ks report. rule_t holds the annual values behind the engine's signal thresholds, with the raw figures they are computed from. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for WMT retrospectives (retro/build_wmt.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Walmart's fiscal year N ends on January 31 of calendar year N. Each release guides diluted EPS from continuing operations for the next quarter and, in most releases, the fiscal year; U.S. comparable store sales for the next quarter in most; fiscal-year net sales in a few (from the Q4 FY11 release); never a margin. Values are as reported; a vintage takes each year from the latest filing that reports it (the 10-K's Eleven-Year or Five-Year Financial Summary for EPS and net sales; the statements of income for diluted shares). A print's growth, margins and inventory growth are derived from the raw figures of its release ('raw', millions; the builder re-derives and checks them): the year-ago quarter is the one the same release shows; a currency effect is the one the release states (a dollar effect is converted on the year-ago net sales of the same release); comparable store sales are the release's Total U.S. figure with fuel, the measure the 10-Ks report. rule_t holds the annual values behind the engine's signal thresholds, with the raw figures they are computed from. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "WMT",
  "sources": {
   "WM1": {
@@ -239,6 +239,118 @@
    "title": "Wal-Mart Q3 FY2012 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511312114/d256387dex991.htm",
    "supports": "Q3 FY12 results; Q4 FY12 EPS $1.42-1.48, implying FY12 $4.45-4.51"
+  },
+  "WM35": {
+   "published": "2012-02-21",
+   "filed": "2012-02-21 07:05 ET, before the open",
+   "title": "Wal-Mart Q4 FY2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312512069086/d305069dex991.htm",
+   "supports": "Q4 and FY12 results; FY13 EPS $4.72-4.92; Q1 FY13 EPS $1.01-1.06"
+  },
+  "WM36": {
+   "published": "2012-03-28",
+   "filed": "2012-03-27 17:22 ET, after the close",
+   "title": "Wal-Mart Stores FY2012 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312512134679/d270972dex13.htm",
+   "supports": "Five-Year Financial Summary FY08-FY12; statements of income; the March 1, 2012 dividend increase; Item 1 and 1A wording"
+  },
+  "WM37": {
+   "published": "2012-05-17",
+   "filed": "2012-05-17 07:02 ET, before the open",
+   "title": "Wal-Mart Q1 FY2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312512237308/d354306dex991.htm",
+   "supports": "Q1 FY13 results; Q2 FY13 EPS $1.13-1.18"
+  },
+  "WM38": {
+   "published": "2012-08-16",
+   "filed": "2012-08-16 07:01 ET, before the open",
+   "title": "Wal-Mart Q2 FY2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312512358182/d397942dex991.htm",
+   "supports": "Q2 FY13 results; FY13 EPS $4.83-4.93; Q3 FY13 EPS $1.04-1.09"
+  },
+  "WM39": {
+   "published": "2012-11-15",
+   "filed": "2012-11-15 07:00 ET, before the open",
+   "title": "Wal-Mart Q3 FY2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312512471604/d440140dex991.htm",
+   "supports": "Q3 FY13 results; FY13 EPS $4.88-4.93; Q4 FY13 EPS $1.53-1.58"
+  },
+  "WM40": {
+   "published": "2013-02-21",
+   "filed": "2013-02-21 07:00 ET, before the open",
+   "title": "Wal-Mart Q4 FY2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416913000007/earningsrelease.htm",
+   "supports": "Q4 and FY13 results; FY14 EPS $5.20-5.40; Q1 FY14 EPS $1.11-1.16; the FY14 dividend of $1.88"
+  },
+  "WM41": {
+   "published": "2013-03-27",
+   "filed": "2013-03-26 17:09 ET, after the close",
+   "title": "Wal-Mart Stores FY2013 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416913000011/annualreporttoshareholders.htm",
+   "supports": "Five-Year Financial Summary FY09-FY13; statements of income; Item 1 and 1A wording"
+  },
+  "WM42": {
+   "published": "2013-05-16",
+   "filed": "2013-05-16 07:00 ET, before the open",
+   "title": "Wal-Mart Q1 FY2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416913000016/earningsrelease-43013.htm",
+   "supports": "Q1 FY14 results; Q2 FY14 EPS $1.22-1.27"
+  },
+  "WM43": {
+   "published": "2013-08-15",
+   "filed": "2013-08-15 07:00 ET, before the open",
+   "title": "Wal-Mart Q2 FY2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416913000034/earningsrelease-73113.htm",
+   "supports": "Q2 FY14 results; FY14 EPS $5.10-5.30, net sales +2-3%; Q3 FY14 EPS $1.11-1.16"
+  },
+  "WM44": {
+   "published": "2013-11-14",
+   "filed": "2013-11-14 07:00 ET, before the open",
+   "title": "Wal-Mart Q3 FY2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416913000042/earningsrelease-103113.htm",
+   "supports": "Q3 FY14 results; FY14 EPS $5.01-5.11, underlying $5.11-5.21; Q4 FY14 underlying EPS $1.60-1.70"
+  },
+  "WM45": {
+   "published": "2014-01-31",
+   "filed": "2014-01-31 07:52 ET, before the open",
+   "title": "Wal-Mart 8-K of 2014-01-31 (Exhibit 99.1, Regulation FD)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000010/exhibit991-13114.htm",
+   "supports": "FY14 underlying EPS expected 'at or slightly below the low end of our range of $5.11 to $5.21'"
+  },
+  "WM46": {
+   "published": "2014-02-20",
+   "filed": "2014-02-20 07:00 ET, before the open",
+   "title": "Wal-Mart Q4 FY2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000016/earningsrelease-13114.htm",
+   "supports": "Q4 and FY14 results; underlying EPS FY14 $5.11 (reported $4.85); FY15 EPS $5.10-5.45, net sales +3-5%"
+  },
+  "WM47": {
+   "published": "2014-03-24",
+   "filed": "2014-03-21 17:10 ET, after the close (a Friday)",
+   "title": "Wal-Mart Stores FY2014 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000019/wmt13114ars.htm",
+   "supports": "Five-Year Financial Summary FY10-FY14; statements of income; the February 20, 2014 dividend; Item 1 and 1A wording"
+  },
+  "WM48": {
+   "published": "2014-05-15",
+   "filed": "2014-05-15 07:00 ET, before the open",
+   "title": "Wal-Mart Q1 FY2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000022/earningsrelease-43014.htm",
+   "supports": "Q1 FY15 results; Q2 FY15 EPS $1.15-1.25"
+  },
+  "WM49": {
+   "published": "2014-08-14",
+   "filed": "2014-08-14 07:00 ET, before the open",
+   "title": "Wal-Mart Q2 FY2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000050/earningsrelease-7312014.htm",
+   "supports": "Q2 FY15 results; FY15 EPS $4.90-5.15; Q3 FY15 EPS $1.10-1.20"
+  },
+  "WM50": {
+   "published": "2014-11-13",
+   "filed": "2014-11-13 07:00 ET, before the open",
+   "title": "Wal-Mart Q3 FY2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000073/earningsrelease-10312014.htm",
+   "supports": "Q3 FY15 results; FY15 EPS $4.92-5.02; Q4 FY15 EPS $1.46-1.56"
   }
  },
  "history_vintages": [
@@ -1014,6 +1126,408 @@
     ]
    ],
    "groups_basis": "FY11 segment net sales (FY2011 10-K)"
+  },
+  {
+   "published": "2012-03-28",
+   "sources": [
+    "WM36",
+    "WM19",
+    "WM21",
+    "WM26",
+    "WM31",
+    "WM25",
+    "WM30",
+    "WM7"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY12",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'everyday low prices (“EDLP”)'; 'The retail business is highly competitive' (its segments compete with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarkets, and 'internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2012 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2010": "2010-01-31",
+    "2011": "2011-01-31",
+    "2012": "2012-01-31"
+   },
+   "eps_reported": {
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.35,
+    "2010": 3.73,
+    "2011": 4.18,
+    "2012": 4.54
+   },
+   "eps_normalized": {
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.42,
+    "2010": 3.67,
+    "2011": 4.07,
+    "2012": 4.54
+   },
+   "eps_sources": {
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM36",
+    "2009": "WM25 (reported $3.35: WM36)",
+    "2010": "WM30 (reported $3.73: WM36)",
+    "2011": "WM30 (reported $4.18: WM36)",
+    "2012": "WM36"
+   },
+   "revenue_usd_b": {
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 373.821,
+    "2009": 401.087,
+    "2010": 405.132,
+    "2011": 418.952,
+    "2012": 443.854
+   },
+   "revenue_sources": {
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM36",
+    "2009": "WM36",
+    "2010": "WM36",
+    "2011": "WM36",
+    "2012": "WM36"
+   },
+   "diluted_shares_m": {
+    "2003": 4446,
+    "2012": 3474
+   },
+   "shares_sources": {
+    "2003": "WM7",
+    "2012": "WM36"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the five-year summaries; fiscal 2003-2004 from the eleven-year summary re-presented by the 8-K of 2009-01-13); FY09 is the company's adjusted $3.42 (reported $3.35; the Q4 FY10 release), FY10 its underlying $3.67 and FY11 its underlying $4.07 (reported $3.73 and $4.18; the Q4 FY11 release), each the latest filing that publishes it; FY12 at reported $4.54 (its net benefits of about $0.05 have no published figure excluding them); no year is excluded",
+   "prev_fy_op_margin": 5.98,
+   "prev_fy_op_margin_note": "FY12 operating income $26,558M / net sales $443,854M (FY2012 10-K)",
+   "prev_fy_gross_margin": 24.5,
+   "prev_fy_sales_growth": 5.9,
+   "prev_fy_comps": 1.6,
+   "prev_fy_comps_note": "calendar comparable sales in the United States +1.6% (FY2012 10-K summary; 'Comparable store and club sales include fuel')",
+   "prev_fy_stores": "3,868 Walmart U.S. units, 611 Sam's Clubs and 5,651 Walmart International units",
+   "tax_rate": 0.3256,
+   "tax_note": "FY12 effective rate: provision $7,944M / pre-tax income from continuing operations $24,398M (Q4 FY12 release; FY2012 10-K pre-tax)",
+   "net_interest_b": 2.16,
+   "net_interest_note": "FY12 interest, net (FY2012 10-K)",
+   "fcf_b": 10.745,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $24,255M less payments for property and equipment $13,510M",
+   "cash_b": 6.55,
+   "cash_note": "cash and cash equivalents $6,550M at January 31, 2012",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY12",
+   "dividend_annual": 1.59,
+   "dividend_note": "$1.59 a year ('On March 1, 2012, the Board of Directors approved an increase in the annual dividend ... to $1.59 per share', FY2012 10-K)",
+   "cash_return_text": "purchase of Company stock $6,298M in fiscal 2012 (the Q4 FY12 release)",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Walmart International and Sam's Club",
+   "groups": [
+    [
+     "Walmart U.S.",
+     264.186,
+     1.5
+    ],
+    [
+     "Walmart International",
+     125.873,
+     15.2
+    ],
+    [
+     "Sam's Club",
+     53.795,
+     8.8
+    ]
+   ],
+   "groups_basis": "FY12 segment net sales (FY2012 10-K)"
+  },
+  {
+   "published": "2013-03-27",
+   "sources": [
+    "WM41",
+    "WM19",
+    "WM21",
+    "WM26",
+    "WM31",
+    "WM36",
+    "WM25",
+    "WM30",
+    "WM8"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY13",
+   "why": "Walmart: 'operates retail stores in various formats under 69 banners around the world and is committed to saving people money so they can live better'; 'everyday low prices (\"EDLP\")'; 'The retail business is highly competitive' (its segments compete with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarkets, and 'internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2013 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2011": "2011-01-31",
+    "2012": "2012-01-31",
+    "2013": "2013-01-31"
+   },
+   "eps_reported": {
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.35,
+    "2010": 3.73,
+    "2011": 4.18,
+    "2012": 4.54,
+    "2013": 5.02
+   },
+   "eps_normalized": {
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.42,
+    "2010": 3.67,
+    "2011": 4.07,
+    "2012": 4.54,
+    "2013": 5.02
+   },
+   "eps_sources": {
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM36",
+    "2009": "WM25 (reported $3.35: WM41)",
+    "2010": "WM30 (reported $3.73: WM41)",
+    "2011": "WM30 (reported $4.18: WM41)",
+    "2012": "WM41",
+    "2013": "WM41"
+   },
+   "revenue_usd_b": {
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 373.821,
+    "2009": 401.087,
+    "2010": 405.132,
+    "2011": 418.952,
+    "2012": 443.854,
+    "2013": 466.114
+   },
+   "revenue_sources": {
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM36",
+    "2009": "WM41",
+    "2010": "WM41",
+    "2011": "WM41",
+    "2012": "WM41",
+    "2013": "WM41"
+   },
+   "diluted_shares_m": {
+    "2004": 4373,
+    "2013": 3389
+   },
+   "shares_sources": {
+    "2004": "WM8",
+    "2013": "WM41"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the five-year summaries; fiscal 2004 from the eleven-year summary re-presented by the 8-K of 2009-01-13); FY09 is the company's adjusted $3.42 (reported $3.35; the Q4 FY10 release), FY10 its underlying $3.67 and FY11 its underlying $4.07 (reported $3.73 and $4.18; the Q4 FY11 release), each the latest filing that publishes it; FY12 at reported $4.54 and FY13 at reported $5.02 (no published figure excluding their one-offs); no year is excluded",
+   "prev_fy_op_margin": 5.96,
+   "prev_fy_op_margin_note": "FY13 operating income $27,801M / net sales $466,114M (FY2013 10-K)",
+   "prev_fy_gross_margin": 24.38,
+   "prev_fy_sales_growth": 5.0,
+   "prev_fy_comps": 2.4,
+   "prev_fy_comps_note": "calendar comparable sales in the United States +2.4% (FY2013 10-K summary; including fuel and online sales)",
+   "prev_fy_stores": "4,005 Walmart U.S. units, 620 Sam's Clubs and 6,148 Walmart International units",
+   "tax_rate": 0.3101,
+   "tax_note": "FY13 effective rate: provision $7,981M / pre-tax income from continuing operations $25,737M (Q4 FY13 release; FY2013 10-K pre-tax)",
+   "net_interest_b": 2.064,
+   "net_interest_note": "FY13 interest, net (FY2013 10-K)",
+   "fcf_b": 12.693,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $25,591M less payments for property and equipment $12,898M",
+   "cash_b": 7.781,
+   "cash_note": "cash and cash equivalents $7,781M at January 31, 2013",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY13",
+   "dividend_annual": 1.88,
+   "dividend_note": "$1.88 a year ('On February 21, 2013, the Board of Directors approved an increase in the annual dividend ... to $1.88 per share', FY2013 10-K)",
+   "cash_return_text": "purchase of Company stock $7,600M in fiscal 2013 (the Q4 FY13 release)",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Walmart International and Sam's Club",
+   "groups": [
+    [
+     "Walmart U.S.",
+     274.49,
+     3.9
+    ],
+    [
+     "Walmart International",
+     135.201,
+     7.4
+    ],
+    [
+     "Sam's Club",
+     56.423,
+     4.9
+    ]
+   ],
+   "groups_basis": "FY13 segment net sales (FY2013 10-K)"
+  },
+  {
+   "published": "2014-03-24",
+   "sources": [
+    "WM47",
+    "WM21",
+    "WM26",
+    "WM31",
+    "WM36",
+    "WM41",
+    "WM25",
+    "WM30",
+    "WM46",
+    "WM9"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY14",
+   "why": "Walmart: 'helps people around the world save money and live better – anytime and anywhere – in retail stores, online, and through their mobile devices'; 'everyday low prices (\"EDLP\")'; 'The retail business is highly competitive' ('We face strong competition from other retailers and wholesale club operators (whether through physical retail, e-commerce retail or through a combination of both areas), which could adversely affect our financial performance'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2014 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2012": "2012-01-31",
+    "2013": "2013-01-31",
+    "2014": "2014-01-31"
+   },
+   "eps_reported": {
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.35,
+    "2010": 3.72,
+    "2011": 4.18,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 4.85
+   },
+   "eps_normalized": {
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.42,
+    "2010": 3.67,
+    "2011": 4.07,
+    "2012": 4.53,
+    "2013": 5.01,
+    "2014": 5.11
+   },
+   "eps_sources": {
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM36",
+    "2009": "WM25 (reported $3.35: WM41)",
+    "2010": "WM30 (reported $3.72: WM47)",
+    "2011": "WM30 (reported $4.18: WM47)",
+    "2012": "WM47",
+    "2013": "WM47",
+    "2014": "WM46 (reported $4.85: WM47)"
+   },
+   "revenue_usd_b": {
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 373.821,
+    "2009": 401.087,
+    "2010": 404.743,
+    "2011": 418.5,
+    "2012": 443.416,
+    "2013": 465.604,
+    "2014": 473.076
+   },
+   "revenue_sources": {
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM36",
+    "2009": "WM41",
+    "2010": "WM47",
+    "2011": "WM47",
+    "2012": "WM47",
+    "2013": "WM47",
+    "2014": "WM47"
+   },
+   "diluted_shares_m": {
+    "2005": 4266,
+    "2014": 3283
+   },
+   "shares_sources": {
+    "2005": "WM9",
+    "2014": "WM47"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the five-year summaries; FY10-FY14 from the FY2014 10-K, which restates FY10, FY12 and FY13 for the Vips discontinued operation); FY09 is the company's adjusted $3.42 (reported $3.35; the Q4 FY10 release); FY10 keeps the company's underlying $3.67, published before the Vips restatement (reported $3.72 restated; no figure excluding its one-offs is published on the new basis); FY11 its underlying $4.07 (reported $4.18; the Q4 FY11 release); FY14 its underlying $5.11 excluding discrete items of $0.26 (reported $4.85; the Q4 FY14 release); FY12 and FY13 at reported $4.53 and $5.01; no year is excluded",
+   "prev_fy_op_margin": 5.68,
+   "prev_fy_op_margin_note": "FY14 operating income $26,872M / net sales $473,076M (FY2014 10-K; the discrete items included, the release's underlying figure of about $27.8 billion is rounded)",
+   "prev_fy_gross_margin": 24.31,
+   "prev_fy_sales_growth": 1.6,
+   "prev_fy_comps": -0.5,
+   "prev_fy_comps_note": "calendar comparable sales in the United States -0.5% (FY2014 10-K summary; including fuel and e-commerce sales)",
+   "prev_fy_stores": "4,203 Walmart U.S. units, 632 Sam's Clubs and 6,107 Walmart International units",
+   "tax_rate": 0.3287,
+   "tax_note": "FY14 effective rate: provision $8,105M / pre-tax income from continuing operations $24,656M (Q4 FY14 release; FY2014 10-K pre-tax)",
+   "net_interest_b": 2.216,
+   "net_interest_note": "FY14 interest, net (FY2014 10-K)",
+   "fcf_b": 10.142,
+   "fcf_label": "FY14",
+   "fcf_note": "net cash provided by operating activities $23,257M less payments for property and equipment $13,115M",
+   "cash_b": 7.281,
+   "cash_note": "cash and cash equivalents $7,281M at January 31, 2014",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY14",
+   "dividend_annual": 1.92,
+   "dividend_note": "$1.92 a year ('On February 20, 2014, the Board of Directors approved the ... annual dividend at $1.92 per share', FY2014 10-K)",
+   "cash_return_text": "purchase of Company stock $6,683M in fiscal 2014 (the Q4 FY14 release)",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Walmart International and Sam's Club",
+   "groups": [
+    [
+     "Walmart U.S.",
+     279.406,
+     1.8
+    ],
+    [
+     "Walmart International",
+     136.513,
+     1.3
+    ],
+    [
+     "Sam's Club",
+     57.157,
+     1.3
+    ]
+   ],
+   "groups_basis": "FY14 segment net sales (FY2014 10-K)"
   }
  ],
  "prints": [
@@ -2325,6 +2839,821 @@
    "lc_basis": "stated",
    "currency_note": "'consolidated net sales on a constant currency basis increased 6.8 percent' (acquisitions added $2.1 billion)",
    "eps_note": "the year-ago $0.95 included a tax benefit of about $0.05"
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-02-21",
+   "source": "WM35",
+   "release": "Feb 21",
+   "release_time": "before the open on Feb 21: 8-K accepted 07:05 ET; a pre-recorded call after the release",
+   "period_end": "2012-01-31",
+   "raw": {
+    "ns_m": 122285,
+    "ns_prior_m": 115600,
+    "other_m": 884,
+    "other_prior_m": 760,
+    "cogs_m": 92589,
+    "cogs_prior_m": 87071,
+    "sga_m": 22179,
+    "sga_prior_m": 21285,
+    "op_m": 8401,
+    "op_prior_m": 8004,
+    "inv_m": 40714,
+    "inv_prior_m": 36437,
+    "diluted_shares_m": 3442
+   },
+   "sales_b": 122.285,
+   "sales_pct": 5.8,
+   "gross_margin": 24.28,
+   "gross_margin_bp": -39.5,
+   "op_margin": 6.87,
+   "op_margin_bp": -5.4,
+   "inventory_pct": 11.7,
+   "inventory_gap_pp": 5.9,
+   "comps_pct": 2.4,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.4% (Total U.S. | 2.1% | -1.1% | 2.4% | -0.8% | 0.3% | 0.3%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     72.789,
+     2.4
+    ],
+    [
+     "Walmart International",
+     35.486,
+     13.1
+    ],
+    [
+     "Sam's Club",
+     14.01,
+     6.8
+    ]
+   ],
+   "eps_q": 1.51,
+   "eps_q_prior": 1.41,
+   "diluted_shares_m": 3442,
+   "cash_b": 6.55,
+   "cash_return_text": "Purchase of Company stock $6,298M in fiscal 2012",
+   "next_print": "Q1 FY13 print (mid-May)",
+   "lc_pct": 6.6,
+   "currency_m": -1000,
+   "lc_basis": "derived",
+   "currency_note": "'Net sales included approximately $1.0 billion of negative impact from currency exchange rates' (the release's constant-currency rate also excludes acquisitions)",
+   "eps_note": "includes net benefits of about $0.07 from tax matters and real estate transactions (no figure excluding them)",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 4.54,
+    "revenue_usd_b": 443.854,
+    "diluted_shares_m": 3474,
+    "normalization_note": "FY12 reported $4.54 from the Q4 FY12 release (its net benefits of about $0.05 have no published figure excluding them)",
+    "op_margin": 5.98,
+    "op_margin_note": "FY12 operating income $26,558M / net sales $443,854M (Q4 FY12 release)",
+    "gross_margin": 24.5,
+    "sales_growth": 5.9,
+    "comps_pct": 1.6,
+    "stores": null,
+    "tax_rate": 0.3256,
+    "tax_note": "FY12 effective rate: provision $7,944M / pre-tax $24,398M",
+    "net_interest_b": 2.16,
+    "fcf_b": 10.745,
+    "cash_b": 6.55,
+    "fcf_note": "net cash provided by operating activities $24,255M less payments for property and equipment $13,510M"
+   }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2012-05-17",
+   "source": "WM37",
+   "release": "May 17",
+   "release_time": "before the open on May 17: 8-K accepted 07:02 ET; a pre-recorded call after the release",
+   "period_end": "2012-04-30",
+   "raw": {
+    "ns_m": 112272,
+    "ns_prior_m": 103415,
+    "other_m": 746,
+    "other_prior_m": 774,
+    "cogs_m": 85186,
+    "cogs_prior_m": 78177,
+    "sga_m": 21445,
+    "sga_prior_m": 20116,
+    "op_m": 6387,
+    "op_prior_m": 5896,
+    "inv_m": 41284,
+    "inv_prior_m": 38495,
+    "diluted_shares_m": 3425
+   },
+   "sales_b": 112.272,
+   "sales_pct": 8.6,
+   "gross_margin": 24.13,
+   "gross_margin_bp": -27.9,
+   "op_margin": 5.69,
+   "op_margin_bp": -1.2,
+   "inventory_pct": 7.2,
+   "inventory_gap_pp": -1.4,
+   "comps_pct": 3.2,
+   "comps_note": "Total U.S. comparable store sales with fuel +3.2% (Total U.S. | 3.0% | -0.3% | 3.2% | 0.4% | 0.2% | 0.7%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     66.341,
+     5.9
+    ],
+    [
+     "Walmart International",
+     32.077,
+     15.0
+    ],
+    [
+     "Sam's Club",
+     13.854,
+     7.9
+    ]
+   ],
+   "eps_q": 1.09,
+   "eps_q_prior": 0.98,
+   "diluted_shares_m": 3425,
+   "cash_b": 8.117,
+   "cash_return_text": "Purchase of Company stock $1,589M in the quarter",
+   "next_print": "Q2 FY13 print (mid-August)",
+   "lc_pct": 9.3,
+   "currency_m": -800,
+   "lc_basis": "derived",
+   "currency_note": "'Net sales for this quarter included a negative currency exchange rate impact of approximately $800 million' (the stated 7.5% constant-currency rate excludes $1.9 billion of acquisitions)"
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2012-08-16",
+   "source": "WM38",
+   "release": "Aug 16",
+   "release_time": "before the open on Aug 16: 8-K accepted 07:01 ET; a pre-recorded call after the release",
+   "period_end": "2012-07-31",
+   "raw": {
+    "ns_m": 113534,
+    "ns_prior_m": 108638,
+    "other_m": 762,
+    "other_prior_m": 728,
+    "cogs_m": 85657,
+    "cogs_prior_m": 81770,
+    "sga_m": 21941,
+    "sga_prior_m": 21213,
+    "op_m": 6698,
+    "op_prior_m": 6383,
+    "inv_m": 40558,
+    "inv_prior_m": 38867,
+    "diluted_shares_m": 3398
+   },
+   "sales_b": 113.534,
+   "sales_pct": 4.5,
+   "gross_margin": 24.55,
+   "gross_margin_bp": -17.8,
+   "op_margin": 5.9,
+   "op_margin_bp": 2.4,
+   "inventory_pct": 4.4,
+   "inventory_gap_pp": -0.1,
+   "comps_pct": 2.4,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.4% (Total U.S. | 2.5% | 0.0% | 2.4% | 0.8% | -0.1% | 0.8%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     67.357,
+     3.8
+    ],
+    [
+     "Walmart International",
+     32.016,
+     6.4
+    ],
+    [
+     "Sam's Club",
+     14.161,
+     3.8
+    ]
+   ],
+   "eps_q": 1.18,
+   "eps_q_prior": 1.09,
+   "diluted_shares_m": 3398,
+   "cash_b": 7.935,
+   "cash_return_text": "Purchase of Company stock $3,429M in the six months",
+   "next_print": "Q3 FY13 print (mid-November)",
+   "lc_pct": 6.5,
+   "currency_m": -2175,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $2,175 million (the release's constant-currency table); 'Without the currency impact, net sales would have been $115.7 billion'"
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2012-11-15",
+   "source": "WM39",
+   "release": "Nov 15",
+   "release_time": "before the open on Nov 15: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2012-10-31",
+   "raw": {
+    "ns_m": 113204,
+    "ns_prior_m": 109516,
+    "other_m": 725,
+    "other_prior_m": 710,
+    "cogs_m": 85517,
+    "cogs_prior_m": 82591,
+    "sga_m": 22296,
+    "sga_prior_m": 21757,
+    "op_m": 6116,
+    "op_prior_m": 5878,
+    "inv_m": 47487,
+    "inv_prior_m": 44340,
+    "diluted_shares_m": 3379
+   },
+   "sales_b": 113.204,
+   "sales_pct": 3.4,
+   "gross_margin": 24.46,
+   "gross_margin_bp": -12.8,
+   "op_margin": 5.4,
+   "op_margin_bp": 3.5,
+   "inventory_pct": 7.1,
+   "inventory_gap_pp": 3.7,
+   "comps_pct": 1.9,
+   "comps_note": "Total U.S. comparable store sales with fuel +1.9% (Total U.S. | 1.7% | 1.9% | 1.9% | 2.6% | 0.2% | 0.7%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     66.127,
+     3.6
+    ],
+    [
+     "Walmart International",
+     33.159,
+     2.4
+    ],
+    [
+     "Sam's Club",
+     13.918,
+     4.7
+    ]
+   ],
+   "eps_q": 1.08,
+   "eps_q_prior": 0.97,
+   "diluted_shares_m": 3379,
+   "cash_b": 8.643,
+   "cash_return_text": "Purchase of Company stock $4,657M in the nine months",
+   "next_print": "Q4 FY13 print (mid-February)",
+   "lc_pct": 4.9,
+   "currency_m": -1670,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,670 million (the release's constant-currency table); 'Without the currency impact, net sales would have been $114.9 billion'",
+   "eps_note": "includes charges for Brazil employment claims (about $69 million) and Superstorm Sandy (about $36 million), no figure excluding them"
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2013-02-21",
+   "source": "WM40",
+   "release": "Feb 21",
+   "release_time": "before the open on Feb 21: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2013-01-31",
+   "raw": {
+    "ns_m": 127104,
+    "ns_prior_m": 122285,
+    "other_m": 815,
+    "other_prior_m": 884,
+    "cogs_m": 96128,
+    "cogs_prior_m": 92589,
+    "sga_m": 23191,
+    "sga_prior_m": 22179,
+    "op_m": 8600,
+    "op_prior_m": 8401,
+    "inv_m": 43803,
+    "inv_prior_m": 40714,
+    "diluted_shares_m": 3355
+   },
+   "sales_b": 127.104,
+   "sales_pct": 3.9,
+   "gross_margin": 24.37,
+   "gross_margin_bp": 8.6,
+   "op_margin": 6.77,
+   "op_margin_bp": -10.4,
+   "inventory_pct": 7.6,
+   "inventory_gap_pp": 3.7,
+   "comps_pct": 1.3,
+   "comps_note": "Total U.S. comparable store sales with fuel +1.3% (Total U.S. | 1.2% | 2.1% | 1.3% | 2.4% | 0.1% | 0.3%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     74.665,
+     2.6
+    ],
+    [
+     "Walmart International",
+     37.949,
+     6.9
+    ],
+    [
+     "Sam's Club",
+     14.49,
+     3.4
+    ]
+   ],
+   "eps_q": 1.67,
+   "eps_q_prior": 1.51,
+   "diluted_shares_m": 3355,
+   "cash_b": 7.781,
+   "cash_return_text": "Purchase of Company stock $7,600M in fiscal 2013",
+   "next_print": "Q1 FY14 print (mid-May)",
+   "lc_pct": 3.8,
+   "currency_m": 147,
+   "lc_basis": "derived",
+   "currency_note": "a positive currency impact of $147 million (the release's constant-currency table shows (147)); its 3.7% constant-currency rate also excludes an acquisition",
+   "eps_note": "benefited from a lower than expected effective tax rate (no figure excluding it)",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 5.02,
+    "revenue_usd_b": 466.114,
+    "diluted_shares_m": 3389,
+    "normalization_note": "FY13 reported $5.02 from the Q4 FY13 release",
+    "op_margin": 5.96,
+    "op_margin_note": "FY13 operating income $27,801M / net sales $466,114M (Q4 FY13 release)",
+    "gross_margin": 24.38,
+    "sales_growth": 5.0,
+    "comps_pct": 2.2,
+    "stores": null,
+    "tax_rate": 0.3101,
+    "tax_note": "FY13 effective rate: provision $7,981M / pre-tax $25,737M",
+    "net_interest_b": 2.064,
+    "fcf_b": 12.693,
+    "cash_b": 7.781,
+    "fcf_note": "net cash provided by operating activities $25,591M less payments for property and equipment $12,898M"
+   }
+  },
+  {
+   "quarter": "Q1 FY14",
+   "fy": 2014,
+   "q": 1,
+   "published": "2013-05-16",
+   "source": "WM42",
+   "release": "May 16",
+   "release_time": "before the open on May 16: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2013-04-30",
+   "raw": {
+    "ns_m": 113429,
+    "ns_prior_m": 112264,
+    "other_m": 758,
+    "other_prior_m": 746,
+    "cogs_m": 86027,
+    "cogs_prior_m": 85178,
+    "sga_m": 21704,
+    "sga_prior_m": 21445,
+    "op_m": 6456,
+    "op_prior_m": 6387,
+    "inv_m": 43138,
+    "inv_prior_m": 41284,
+    "diluted_shares_m": 3318
+   },
+   "sales_b": 113.429,
+   "sales_pct": 1.0,
+   "gross_margin": 24.16,
+   "gross_margin_bp": 3.1,
+   "op_margin": 5.69,
+   "op_margin_bp": 0.2,
+   "inventory_pct": 4.5,
+   "inventory_gap_pp": 3.5,
+   "comps_pct": -1.2,
+   "comps_note": "Total U.S. comparable store sales with fuel -1.2% (Total U.S. | -1.2% | 3.0% | -1.2% | 3.2% | 0.0% | 0.2%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     66.553,
+     0.3
+    ],
+    [
+     "Walmart International",
+     33.005,
+     2.9
+    ],
+    [
+     "Sam's Club",
+     13.871,
+     0.1
+    ]
+   ],
+   "eps_q": 1.14,
+   "eps_q_prior": 1.09,
+   "diluted_shares_m": 3318,
+   "cash_b": 8.855,
+   "cash_return_text": "Purchase of Company stock $2,246M in the quarter",
+   "next_print": "Q2 FY14 print (mid-August)",
+   "lc_pct": 1.9,
+   "currency_m": -1010,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,010 million (the release's constant-currency table)"
+  },
+  {
+   "quarter": "Q2 FY14",
+   "fy": 2014,
+   "q": 2,
+   "published": "2013-08-15",
+   "source": "WM43",
+   "release": "Aug 15",
+   "release_time": "before the open on Aug 15: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2013-07-31",
+   "raw": {
+    "ns_m": 116216,
+    "ns_prior_m": 113520,
+    "other_m": 729,
+    "other_prior_m": 762,
+    "cogs_m": 87455,
+    "cogs_prior_m": 85643,
+    "sga_m": 22697,
+    "sga_prior_m": 21941,
+    "op_m": 6793,
+    "op_prior_m": 6698,
+    "inv_m": 42793,
+    "inv_prior_m": 40558,
+    "diluted_shares_m": 3291
+   },
+   "sales_b": 116.216,
+   "sales_pct": 2.4,
+   "gross_margin": 24.75,
+   "gross_margin_bp": 19.1,
+   "op_margin": 5.85,
+   "op_margin_bp": -5.5,
+   "inventory_pct": 5.5,
+   "inventory_gap_pp": 3.1,
+   "comps_pct": 0.1,
+   "comps_note": "Total U.S. comparable store sales with fuel +0.1% (Total U.S. | 0.0% | 2.5% | 0.1% | 2.4% | 0.1% | -0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     68.728,
+     2.1
+    ],
+    [
+     "Walmart International",
+     32.956,
+     2.9
+    ],
+    [
+     "Sam's Club",
+     14.532,
+     2.6
+    ]
+   ],
+   "eps_q": 1.24,
+   "eps_q_prior": 1.18,
+   "diluted_shares_m": 3291,
+   "cash_b": 9.016,
+   "cash_return_text": "Purchase of Company stock $4,096M in the six months",
+   "next_print": "Q3 FY14 print (mid-November)",
+   "lc_pct": 3.0,
+   "currency_m": -680,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $680 million (the release's constant-currency table)",
+   "eps_note": "includes about $0.01 for a non-income tax matter in Walmart International"
+  },
+  {
+   "quarter": "Q3 FY14",
+   "fy": 2014,
+   "q": 3,
+   "published": "2013-11-14",
+   "source": "WM44",
+   "release": "Nov 14",
+   "release_time": "before the open on Nov 14: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2013-10-31",
+   "raw": {
+    "ns_m": 114876,
+    "ns_prior_m": 113077,
+    "other_m": 812,
+    "other_prior_m": 723,
+    "cogs_m": 86687,
+    "cogs_prior_m": 85470,
+    "sga_m": 22691,
+    "sga_prior_m": 22237,
+    "op_m": 6310,
+    "op_prior_m": 6093,
+    "inv_m": 49673,
+    "inv_prior_m": 47487,
+    "diluted_shares_m": 3271
+   },
+   "sales_b": 114.876,
+   "sales_pct": 1.6,
+   "gross_margin": 24.54,
+   "gross_margin_bp": 12.4,
+   "op_margin": 5.49,
+   "op_margin_bp": 10.5,
+   "inventory_pct": 4.6,
+   "inventory_gap_pp": 3.0,
+   "comps_pct": -0.2,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.2% (Total U.S. | -0.1% | 1.7% | -0.2% | 1.9% | -0.1% | 0.2%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     67.692,
+     2.4
+    ],
+    [
+     "Walmart International",
+     33.109,
+     0.2
+    ],
+    [
+     "Sam's Club",
+     14.075,
+     1.1
+    ]
+   ],
+   "eps_q": 1.14,
+   "eps_q_prior": 1.07,
+   "diluted_shares_m": 3271,
+   "cash_b": 8.736,
+   "cash_return_text": "Purchase of Company stock $5,806M in the nine months",
+   "next_print": "Q4 FY14 print (mid-February)",
+   "lc_pct": 3.0,
+   "currency_m": -1622,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,622 million (the release's constant-currency table); an acquisition added $314 million",
+   "eps_note": "the year-ago $1.07 'reflects $0.01 per share from Vips restaurants in Mexico now in discontinued operations'"
+  },
+  {
+   "quarter": "Q4 FY14",
+   "fy": 2014,
+   "q": 4,
+   "published": "2014-02-20",
+   "source": "WM46",
+   "release": "Feb 20",
+   "release_time": "before the open on Feb 20: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2014-01-31",
+   "raw": {
+    "ns_m": 128786,
+    "ns_prior_m": 126960,
+    "other_m": 920,
+    "other_prior_m": 816,
+    "cogs_m": 97971,
+    "cogs_prior_m": 96071,
+    "sga_m": 24388,
+    "sga_prior_m": 23125,
+    "op_m": 7347,
+    "op_prior_m": 8580,
+    "inv_m": 44858,
+    "inv_prior_m": 43803,
+    "diluted_shares_m": 3254
+   },
+   "sales_b": 128.786,
+   "sales_pct": 1.4,
+   "gross_margin": 23.93,
+   "gross_margin_bp": -40.2,
+   "op_margin": 5.7,
+   "op_margin_bp": -105.3,
+   "inventory_pct": 2.4,
+   "inventory_gap_pp": 1.0,
+   "comps_pct": -0.4,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.4% (Total U.S. | -0.4% | 0.5% | -0.4% | 0.6% | 0.0% | 0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     76.433,
+     2.4
+    ],
+    [
+     "Walmart International",
+     37.674,
+     -0.4
+    ],
+    [
+     "Sam's Club",
+     14.679,
+     1.3
+    ]
+   ],
+   "eps_q": 1.34,
+   "eps_q_prior": 1.67,
+   "diluted_shares_m": 3254,
+   "cash_b": 7.281,
+   "cash_return_text": "Purchase of Company stock $6,683M in fiscal 2014",
+   "next_print": "Q1 FY15 print (mid-May)",
+   "lc_pct": 2.8,
+   "currency_m": -1787,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,787 million (the release's constant-currency table)",
+   "eps_note": "reported; the company's underlying $1.60 excludes discrete items of $0.26",
+   "restates": {
+    "2013": 5.01
+   },
+   "restates_note": "FY13 $5.01 with the Vips restaurants in discontinued operations (first reported $5.02), from the Q4 FY14 release",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 5.11,
+    "revenue_usd_b": 473.076,
+    "diluted_shares_m": 3283,
+    "normalization_note": "FY14 the company's underlying $5.11 excluding discrete items of $0.26 (reported $4.85), from the Q4 FY14 release",
+    "op_margin": 5.68,
+    "op_margin_note": "FY14 operating income $26,872M / net sales $473,076M (Q4 FY14 release; the discrete items included, its underlying figure of about $27.8 billion is rounded)",
+    "gross_margin": 24.31,
+    "sales_growth": 1.6,
+    "comps_pct": -0.4,
+    "stores": null,
+    "tax_rate": 0.3287,
+    "tax_note": "FY14 effective rate: provision $8,105M / pre-tax $24,656M",
+    "net_interest_b": 2.216,
+    "fcf_b": 10.142,
+    "cash_b": 7.281,
+    "fcf_note": "net cash provided by operating activities $23,257M less payments for property and equipment $13,115M"
+   }
+  },
+  {
+   "quarter": "Q1 FY15",
+   "fy": 2015,
+   "q": 1,
+   "published": "2014-05-15",
+   "source": "WM48",
+   "release": "May 15",
+   "release_time": "before the open on May 15: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2014-04-30",
+   "raw": {
+    "ns_m": 114167,
+    "ns_prior_m": 113313,
+    "other_m": 793,
+    "other_prior_m": 757,
+    "cogs_m": 86714,
+    "cogs_prior_m": 85991,
+    "sga_m": 22053,
+    "sga_prior_m": 21641,
+    "op_m": 6193,
+    "op_prior_m": 6438,
+    "inv_m": 45315,
+    "inv_prior_m": 43138,
+    "diluted_shares_m": 3248
+   },
+   "sales_b": 114.167,
+   "sales_pct": 0.8,
+   "gross_margin": 24.05,
+   "gross_margin_bp": -6.6,
+   "op_margin": 5.42,
+   "op_margin_bp": -25.7,
+   "inventory_pct": 5.0,
+   "inventory_gap_pp": 4.2,
+   "comps_pct": -0.2,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.2% (Total U.S. | -0.2% | -1.2% | -0.2% | -1.2% | 0.0% | 0.0%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     67.852,
+     2.0
+    ],
+    [
+     "Walmart International",
+     32.424,
+     -1.4
+    ],
+    [
+     "Sam's Club",
+     13.891,
+     0.1
+    ]
+   ],
+   "eps_q": 1.1,
+   "eps_q_prior": 1.14,
+   "diluted_shares_m": 3248,
+   "cash_b": 6.012,
+   "cash_return_text": "Purchase of Company stock $626M in the quarter",
+   "next_print": "Q2 FY15 print (mid-August)",
+   "lc_pct": 2.1,
+   "currency_m": -1576,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $1,576 million (the release's constant-currency table)",
+   "eps_note": "the company estimates severe weather lowered it by about $0.03"
+  },
+  {
+   "quarter": "Q2 FY15",
+   "fy": 2015,
+   "q": 2,
+   "published": "2014-08-14",
+   "source": "WM49",
+   "release": "Aug 14",
+   "release_time": "before the open on Aug 14: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2014-07-31",
+   "raw": {
+    "ns_m": 119336,
+    "ns_prior_m": 116101,
+    "other_m": 789,
+    "other_prior_m": 729,
+    "cogs_m": 90010,
+    "cogs_prior_m": 87420,
+    "sga_m": 23375,
+    "sga_prior_m": 22633,
+    "op_m": 6740,
+    "op_prior_m": 6777,
+    "inv_m": 45451,
+    "inv_prior_m": 42793,
+    "diluted_shares_m": 3241
+   },
+   "sales_b": 119.336,
+   "sales_pct": 2.8,
+   "gross_margin": 24.57,
+   "gross_margin_bp": -12.9,
+   "op_margin": 5.65,
+   "op_margin_bp": -18.9,
+   "inventory_pct": 6.2,
+   "inventory_gap_pp": 3.4,
+   "comps_pct": 0.1,
+   "comps_note": "Total U.S. comparable store sales with fuel +0.1% (Total U.S. | 0.0% | 0.0% | 0.1% | 0.1% | 0.1% | 0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     70.601,
+     2.7
+    ],
+    [
+     "Walmart International",
+     33.872,
+     3.1
+    ],
+    [
+     "Sam's Club",
+     14.863,
+     2.3
+    ]
+   ],
+   "eps_q": 1.21,
+   "eps_q_prior": 1.23,
+   "diluted_shares_m": 3241,
+   "cash_b": 6.184,
+   "cash_return_text": "Purchase of Company stock $933M in the six months",
+   "next_print": "Q3 FY15 print (mid-November)",
+   "lc_pct": 3.4,
+   "currency_m": -696,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $696 million (the release's constant-currency table)"
+  },
+  {
+   "quarter": "Q3 FY15",
+   "fy": 2015,
+   "q": 3,
+   "published": "2014-11-13",
+   "source": "WM50",
+   "release": "Nov 13",
+   "release_time": "before the open on Nov 13: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2014-10-31",
+   "raw": {
+    "ns_m": 118076,
+    "ns_prior_m": 114876,
+    "other_m": 925,
+    "other_prior_m": 812,
+    "cogs_m": 89247,
+    "cogs_prior_m": 86687,
+    "sga_m": 23489,
+    "sga_prior_m": 22691,
+    "op_m": 6265,
+    "op_prior_m": 6310,
+    "inv_m": 51501,
+    "inv_prior_m": 49673,
+    "diluted_shares_m": 3240
+   },
+   "sales_b": 118.076,
+   "sales_pct": 2.8,
+   "gross_margin": 24.42,
+   "gross_margin_bp": -12.3,
+   "op_margin": 5.31,
+   "op_margin_bp": -18.7,
+   "inventory_pct": 3.7,
+   "inventory_gap_pp": 0.9,
+   "comps_pct": 0.5,
+   "comps_note": "Total U.S. comparable store sales with fuel +0.5% (Total U.S. | 0.5% | -0.1% | 0.5% | -0.2% | 0.0% | -0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     70.025,
+     3.4
+    ],
+    [
+     "Walmart International",
+     33.659,
+     1.7
+    ],
+    [
+     "Sam's Club",
+     14.392,
+     2.3
+    ]
+   ],
+   "eps_q": 1.15,
+   "eps_q_prior": 1.14,
+   "diluted_shares_m": 3240,
+   "cash_b": 6.718,
+   "cash_return_text": "Purchase of Company stock $1,015M in the nine months",
+   "next_print": "Q4 FY15 print (mid-February)",
+   "lc_pct": 3.1,
+   "currency_m": -396,
+   "lc_basis": "derived",
+   "currency_note": "currency exchange rate fluctuations of $396 million (the release's constant-currency table)"
   }
  ],
  "guides": [
@@ -2697,9 +4026,239 @@
     ],
     "comps_text": "Walmart U.S. comparable sales flat to +2%; Sam's Club without fuel +4% to +6%"
    }
+  },
+  {
+   "fy": 2013,
+   "published": "2012-02-21",
+   "source": "WM35",
+   "doc": "Q4 FY12 release",
+   "eps_guide": [
+    4.72,
+    4.92
+   ],
+   "q_guide": {
+    "quarter": "Q1 FY13",
+    "eps": [
+     1.01,
+     1.06
+    ],
+    "comps_text": "Walmart U.S. comparable sales flat to +2%; Sam's Club without fuel +3% to +5%"
+   }
+  },
+  {
+   "fy": 2013,
+   "published": "2012-05-17",
+   "source": "WM37",
+   "doc": "Q1 FY13 release",
+   "q_guide": {
+    "quarter": "Q2 FY13",
+    "eps": [
+     1.13,
+     1.18
+    ],
+    "comps_text": "Walmart U.S. comparable sales +1% to +3%; Sam's Club without fuel +4% to +6%"
+   }
+  },
+  {
+   "fy": 2013,
+   "published": "2012-08-16",
+   "source": "WM38",
+   "doc": "Q2 FY13 release",
+   "eps_guide": [
+    4.83,
+    4.93
+   ],
+   "q_guide": {
+    "quarter": "Q3 FY13",
+    "eps": [
+     1.04,
+     1.09
+    ],
+    "comps_text": "Walmart U.S. comparable sales +1.0% to +3.0%; Sam's Club without fuel +3.0% to +5.0%"
+   }
+  },
+  {
+   "fy": 2013,
+   "published": "2012-11-15",
+   "source": "WM39",
+   "doc": "Q3 FY13 release",
+   "eps_guide": [
+    4.88,
+    4.93
+   ],
+   "q_guide": {
+    "quarter": "Q4 FY13",
+    "eps": [
+     1.53,
+     1.58
+    ],
+    "comps_text": "Walmart U.S. comparable sales +1.0% to +3.0%; Sam's Club without fuel +1.5% to +3.5%"
+   }
+  },
+  {
+   "fy": 2014,
+   "published": "2013-02-21",
+   "source": "WM40",
+   "doc": "Q4 FY13 release",
+   "eps_guide": [
+    5.2,
+    5.4
+   ],
+   "eps_guide_note": "includes increased e-commerce costs of around $0.09 per share",
+   "q_guide": {
+    "quarter": "Q1 FY14",
+    "eps": [
+     1.11,
+     1.16
+    ],
+    "comps_text": "Walmart U.S. comparable sales around flat; Sam's Club without fuel flat to +2.0%"
+   }
+  },
+  {
+   "fy": 2014,
+   "published": "2013-05-16",
+   "source": "WM42",
+   "doc": "Q1 FY14 release",
+   "q_guide": {
+    "quarter": "Q2 FY14",
+    "eps": [
+     1.22,
+     1.27
+    ],
+    "comps_text": "Walmart U.S. comparable sales flat to +2.0%; Sam's Club without fuel +1.0% to +3.0%"
+   }
+  },
+  {
+   "fy": 2014,
+   "published": "2013-08-15",
+   "source": "WM43",
+   "doc": "Q2 FY14 release",
+   "eps_guide": [
+    5.1,
+    5.3
+   ],
+   "rev_guide": [
+    2,
+    3
+   ],
+   "q_guide": {
+    "quarter": "Q3 FY14",
+    "eps": [
+     1.11,
+     1.16
+    ],
+    "comps_text": "Walmart U.S. comparable sales relatively flat; Sam's Club without fuel flat to +2%"
+   }
+  },
+  {
+   "fy": 2014,
+   "published": "2013-11-14",
+   "source": "WM44",
+   "doc": "Q3 FY14 release",
+   "eps_guide": [
+    5.11,
+    5.21
+   ],
+   "eps_guide_note": "underlying; reported $5.01-5.11 includes about $0.10 for the closure of about 50 stores in Brazil and China and the India franchise ending",
+   "q_guide": {
+    "quarter": "Q4 FY14",
+    "eps": [
+     1.6,
+     1.7
+    ],
+    "comps_text": "underlying EPS (reported $1.50-1.60); Walmart U.S. comparable sales relatively flat; Sam's Club without fuel flat to +2%"
+   }
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-31",
+   "source": "WM45",
+   "doc": "8-K of 2014-01-31",
+   "fy_words": "underlying EPS 'at or slightly below the low end of our range of $5.11 to $5.21'; discrete items in reported EPS now about $0.26 (new items $0.15)"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-02-20",
+   "source": "WM46",
+   "doc": "Q4 FY14 release",
+   "eps_guide": [
+    5.1,
+    5.45
+   ],
+   "rev_guide": [
+    3,
+    5
+   ],
+   "rev_guide_note": "'we expect to be toward the low end of the net sales guidance'",
+   "q_guide": {
+    "quarter": "Q1 FY15",
+    "eps": [
+     1.1,
+     1.2
+    ],
+    "comps_text": "Walmart U.S. comparable sales relatively flat; Sam's Club without fuel relatively flat"
+   }
+  },
+  {
+   "fy": 2015,
+   "published": "2014-05-15",
+   "source": "WM48",
+   "doc": "Q1 FY15 release",
+   "q_guide": {
+    "quarter": "Q2 FY15",
+    "eps": [
+     1.15,
+     1.25
+    ],
+    "comps_text": "Walmart U.S. comparable sales relatively flat; Sam's Club without fuel flat"
+   }
+  },
+  {
+   "fy": 2015,
+   "published": "2014-08-14",
+   "source": "WM49",
+   "doc": "Q2 FY15 release",
+   "eps_guide": [
+    4.9,
+    5.15
+   ],
+   "q_guide": {
+    "quarter": "Q3 FY15",
+    "eps": [
+     1.1,
+     1.2
+    ],
+    "comps_text": "Walmart U.S. comparable sales relatively flat; Sam's Club without fuel slightly positive"
+   }
+  },
+  {
+   "fy": 2015,
+   "published": "2014-11-13",
+   "source": "WM50",
+   "doc": "Q3 FY15 release",
+   "eps_guide": [
+    4.92,
+    5.02
+   ],
+   "eps_guide_note": "includes about $0.03 for the closure of underperforming stores in Walmart Japan, with no range excluding it",
+   "q_guide": {
+    "quarter": "Q4 FY15",
+    "eps": [
+     1.46,
+     1.56
+    ],
+    "comps_text": "Walmart U.S. comparable sales flat to +1%; Sam's Club without fuel flat to +2%"
+   }
   }
  ],
- "dividends": [],
+ "dividends": [
+  {
+   "published": "2013-02-21",
+   "source": "WM40",
+   "quarterly": 0.47,
+   "note": "$1.88 a year ('The company announced its annual ... dividend of $1.88 per share', Q4 FY13 release)"
+  }
+ ],
  "events": [],
  "company_names": [],
  "rule_t": {
