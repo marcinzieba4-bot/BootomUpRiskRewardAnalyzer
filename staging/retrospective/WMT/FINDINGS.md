@@ -1,9 +1,9 @@
 # WMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the WMT weekly dates: 366 from 2008-01-04 to 2014-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the WMT weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783). Outcomes were computed on 2026-11-07 from the closes posted to
-2026-11-06; the two-year horizons end by 2016-12-30 (three-year: 2017-12-29).
+pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f). Outcomes were computed on 2026-11-07 from the
+closes posted to 2026-11-06; the two-year horizons end by 2019-12-27 (three-year: 2020-12-29).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -140,3 +140,60 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   +3% to +8% and lagged SPY by 30-40pp, so they fail as FAIR too, and 2013-03-08 (+17.7%, 20.5pp behind SPY) would have held as RICH.
   FY14 at reported EPS moves tiers only. The calls were decided before scoring and stay; changing a rule means a new method version
   tested elsewhere.
+
+## 2015-2017 (156 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 4 | +70.1% | +58.9% to +73.2% | 4 | 4 | +32.6% | 4 |
+| class FAIR | 1 | +59.0% | | 1 | 1 | +27.6% | 0 |
+| class RICH | 151 | +36.6% | -20.2% to +74.7% | 89 | 92 | +24.2% | 53 |
+| tier BUY | 22 | +66.3% | +19.0% to +74.7% | 16 | 16 | +27.6% | 10 |
+| tier ACCUMULATE | 15 | +15.3% | +5.6% to +71.2% | 3 | 4 | +0.2% | 11 |
+| tier WATCHLIST | 3 | +9.1% | -0.5% to +10.6% | 0 | 0 | -6.1% | 3 |
+| tier AVOID | 116 | +38.6% | -20.2% to +68.3% | 75 | 77 | +24.9% | 33 |
+| 2015 (RICH 47, CHEAP 4, FAIR 1) | 52 | +13.0% | -20.2% to +73.2% | 13 | 14 | -0.2% | 42 |
+| 2016 (RICH 52) | 52 | +38.1% | +20.0% to +74.7% | 36 | 31 | +26.1% | 15 |
+| 2017 (RICH 52) | 52 | +44.5% | +25.4% to +56.9% | 45 | 52 | +27.3% | 0 |
+| the reset window, 2015-10-16 to 2016-01-22 | 15 | +68.0% | +52.4% to +74.7% | 15 | 15 | +28.8% | 4 |
+| highest third by adjusted gap (-1.90 to -0.24) | 52 | +43.6% | | 34 | 34 | +25.2% | |
+| middle third (-2.08 to -1.90) | 52 | +36.6% | | 34 | 29 | +26.2% | |
+| lowest third (-2.46 to -2.08) | 52 | +32.6% | | 26 | 34 | +16.8% | |
+
+- **RICH held on 53 of 151 dates: before the October 2015 reset, not after it.** The 40 RICH dates to 2015-10-09 ($63-89) returned -20%
+  to +33% over two years and held on 38 (the misses, 2015-08-19 and 2015-09-18, beat SPY by 0.7pp and 0.2pp). From the reset the stock
+  re-rated: the 15 dates from 2015-10-16 to 2016-01-22 ($56-63) returned +52% to +75%, every one over the hurdle and ahead of SPY; the
+  four CHEAP dates held and the ten RICH ones and the FAIR one failed. In 2016 RICH held on 15 dates (2016-03-24, 2016-04-15 and
+  2016-05-20 to 2016-08-12, $68-74, +20% to +32%, 0.1-16pp behind SPY) and failed on 37; in 2017 it failed on all 52, which returned +25% to
+  +57% and beat SPY (+15% to +29%) every time. Three-year returns ran +13% to +96% (median +63.6%) and beat SPY on 122 of 156.
+- **The two-year price landed on XBULL from 2016 on.** It landed nearest BEAR on 6 dates of 2015, BASE on 26, BULL on 10 and XBULL on 10,
+  then XBULL on all 104 dates of 2016-2017, at 1.13-1.54 times the BULL price and 1.20-1.67 times BASE ($82-120 two years on, against BULL
+  prices of $73-81). The lowest close of the windows was 2015-11-13's $56.42 again (44 dates), and drawdowns ran 12-37%.
+- **A decade of low multiples capped the upside the model could see.** Hypothesis for the method, not a rule. The scenarios take their
+  multiples from the stock's own ten-year P/E range: from 2015 that window held only the de-rated years (median 14.6-14.9x, 90th
+  percentile 16.5-17.2x), and BULL was held at BASE's rate once FY16's down year cut the decade CAGR. The stock then re-rated well past the
+  90th percentile; the outcomes record prices, not EPS, so they do not say how much was multiple and how much earnings, but the two-year
+  prices sat 23-54% over the BULL prices of 2017. This is the 2008 finding in reverse: there a decade of falling multiples put the EPP
+  floor above the price and read CHEAP by construction; here a decade of low multiples put every scenario multiple below where the stock
+  went and read RICH by construction. Test a percentile window that can see a regime change (or a cross-sectional multiple) on other
+  tickers and periods before any method change; never fit it to WMT's outcomes.
+- **The ranks agree only within 2015.** Within 2015 the entry price ranks the return to the m12-24 average price at Spearman -0.99, Ratio B
+  and the EPP gap at -0.99, the adjusted gap at +0.71: "buy lower" again, with the October 2015 low as the best entry. Across all 156 dates
+  the adjusted gap ranks it at +0.41 (+0.38 for the two-year endpoint) and the thirds in the right order (+43.6%, +36.6%, +32.6%), but all
+  three cleared the hurdle at the median; Ratio B (+0.01) and the market composite (-0.05) rank it not at all, and the tiers out of order
+  (BUY +66.3% first, then AVOID +38.6% ahead of ACCUMULATE +15.3% and WATCHLIST +9.1%).
+- **The operating signals: wrong in 2015-2016, right in 2017.** The proxy composite ranks the return to the m12-24 average price at -0.31
+  within 2015 and -0.38 within 2016, then +0.60 within 2017 (all dates: +0.39). After four batches in which the quarter's operating
+  signals pointed the wrong way (2008 -0.49, 2009-2011 -0.83, 2012 -0.70), 2017 is the first year they ranked it the right way (the
+  lowest reading, 1.50 on the Q3 FY18 print, came before the year's lowest returns). With every signal at its BEAR value (the sensitivity
+  run before scoring) the four CHEAP dates and the FAIR one read RICH and would all have failed; the signals added nothing the price did not.
+- **The theme, seen afterwards.** ECOMMERCE stayed on the watch list and DURABLE stood (retro/README.md, "WMT 2015-2017"); the stock
+  re-rated through and after the registry's 2017-06-16 sell-off date, as a beneficiary rather than a casualty (2017-06-16's two-year return
+  +50.5%). The label carried no price-state input, so it neither helped nor hurt the call; re-filing it as AMAZON-FEAR would have changed
+  the label only.
+- **The encoding calls, seen afterwards.** Reading the FY16 "relatively flat" as words (the +1-2% standing) would have moved 2015-10-23
+  from FAIR to RICH and 2015-10-30 and 2015-12-11 from CHEAP to FAIR: all three returned +59% to +70% and beat SPY by 31-34pp, so they fail
+  under that reading and hold or fail as encoded (two CHEAP held, the FAIR one failed). Reported EPS with GAAP ranges would have made
+  2015-10-23 CHEAP (it would have held) and 2015-11-06 FAIR (it would still have failed). The constant-currency reading thus did better
+  on these dates, which says nothing about the rule: it was decided before scoring, the dates are few and the re-rating swamped every
+  call. The calls stay; changing a rule means a new method version tested elsewhere.

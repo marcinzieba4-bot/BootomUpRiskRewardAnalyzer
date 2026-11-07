@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "WMT",
+ "as_of": "2015-08-07",
+ "computed": "2026-11-07",
+ "data_source": "Yahoo Finance daily closes + dividends (WMT, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2016-02-05",
+   "price": 67.0,
+   "dividends": 0.49,
+   "total_return_pct": -5.3,
+   "benchmark_total_return_pct": -8.5,
+   "excess_pct": 3.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2016-08-05",
+   "price": 73.76,
+   "dividends": 1.49,
+   "total_return_pct": 5.6,
+   "benchmark_total_return_pct": 7.0,
+   "excess_pct": -1.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2017-08-07",
+   "price": 81.28,
+   "dividends": 3.51,
+   "total_return_pct": 19.0,
+   "benchmark_total_return_pct": 23.5,
+   "excess_pct": -4.5,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2018-08-07",
+   "price": 89.77,
+   "dividends": 5.57,
+   "total_return_pct": 33.8,
+   "benchmark_total_return_pct": 44.0,
+   "excess_pct": -10.2,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2017-08-07",
+   "price": 81.28
+  },
+  "low": {
+   "date": "2015-11-13",
+   "price": 56.42
+  },
+  "max_drawdown_pct": -22.3,
+  "return_to_avg_price_m12_m24_pct": 1.6
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Walmart: scale retail + ads/marketplace; consolidating near 52-week low",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
