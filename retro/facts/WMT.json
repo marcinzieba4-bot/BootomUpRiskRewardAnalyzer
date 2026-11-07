@@ -127,6 +127,118 @@
    "title": "Wal-Mart Q3 FY2009 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508234356/dex991.htm",
    "supports": "Q3 FY09 results; FY09 EPS $3.42-3.46; Q4 FY09 EPS $1.03-1.07, U.S. comps 1-3%"
+  },
+  "WM19": {
+   "published": "2009-01-13",
+   "filed": "2009-01-13 13:17 ET, during the session",
+   "title": "Wal-Mart 8-K re-presenting the FY2008 annual report (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416909000002/fy08ars.htm",
+   "supports": "the FY2008 financial statements, Eleven-Year Financial Summary and MD&A reclassified for the Gazeley and Seiyu discontinued operations (net sales FY07 $344,759M, FY08 $374,307M; EPS unchanged)"
+  },
+  "WM20": {
+   "published": "2009-02-17",
+   "filed": "2009-02-17 07:16 ET, before the open",
+   "title": "Wal-Mart Q4 FY2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312509030183/dex991.htm",
+   "supports": "Q4 and FY09 results; underlying EPS FY09 $3.42 (reported $3.35); FY10 EPS $3.45-3.60"
+  },
+  "WM21": {
+   "published": "2009-04-01",
+   "filed": "2009-04-01 15:48 ET, during the session",
+   "title": "Wal-Mart Stores FY2009 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416909000006/dex13.htm",
+   "supports": "Five-Year Financial Summary FY05-FY09; statements of income; the March 5, 2009 dividend increase"
+  },
+  "WM22": {
+   "published": "2009-05-14",
+   "filed": "2009-05-14 07:00 ET, before the open",
+   "title": "Wal-Mart Q1 FY2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312509110525/dex991.htm",
+   "supports": "Q1 FY10 results; constant-currency net sales; Q2 FY10 EPS $0.83-0.88"
+  },
+  "WM23": {
+   "published": "2009-08-13",
+   "filed": "2009-08-13 07:01 ET, before the open",
+   "title": "Wal-Mart Q2 FY2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312509173667/dex991.htm",
+   "supports": "Q2 FY10 results; FY10 EPS $3.50-3.60; Q3 FY10 EPS $0.78-0.82"
+  },
+  "WM24": {
+   "published": "2009-11-12",
+   "filed": "2009-11-12 07:01 ET, before the open",
+   "title": "Wal-Mart Q3 FY2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312509231868/dex991.htm",
+   "supports": "Q3 FY10 results; FY10 EPS $3.57-3.61; Q4 FY10 EPS $1.08-1.12"
+  },
+  "WM25": {
+   "published": "2010-02-18",
+   "filed": "2010-02-18 07:15 ET, before the open",
+   "title": "Wal-Mart Q4 FY2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510033699/dex991.htm",
+   "supports": "Q4 and FY10 results; adjusted EPS FY10 $3.66 (reported $3.72), FY09 $3.42; FY11 EPS $3.90-4.00"
+  },
+  "WM26": {
+   "published": "2010-03-31",
+   "filed": "2010-03-30 17:07 ET, after the close",
+   "title": "Wal-Mart Stores FY2010 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510071652/dex13.htm",
+   "supports": "Five-Year Financial Summary FY06-FY10; statements of income; the March 4, 2010 dividend increase"
+  },
+  "WM27": {
+   "published": "2010-05-18",
+   "filed": "2010-05-18 08:09 ET, before the open",
+   "title": "Wal-Mart Q1 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510122849/dex991.htm",
+   "supports": "Q1 FY11 results; Q2 FY11 EPS $0.93-0.98"
+  },
+  "WM28": {
+   "published": "2010-08-17",
+   "filed": "2010-08-17 07:00 ET, before the open",
+   "title": "Wal-Mart Q2 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510190753/dex991.htm",
+   "supports": "Q2 FY11 results (prior year as adjusted for the inventory accounting change); FY11 EPS $3.95-4.05"
+  },
+  "WM29": {
+   "published": "2010-11-16",
+   "filed": "2010-11-16 07:00 ET, before the open",
+   "title": "Wal-Mart Q3 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510261366/dex991.htm",
+   "supports": "Q3 FY11 results; FY11 EPS $4.08-4.12; Q4 FY11 EPS $1.29-1.33"
+  },
+  "WM30": {
+   "published": "2011-02-22",
+   "filed": "2011-02-22 07:01 ET, before the open",
+   "title": "Wal-Mart Q4 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511041255/dex991.htm",
+   "supports": "Q4 and FY11 results; underlying EPS FY11 $4.07 (reported $4.18), FY10 $3.67 as adjusted; FY12 EPS $4.35-4.50, net sales +4-6%"
+  },
+  "WM31": {
+   "published": "2011-03-31",
+   "filed": "2011-03-30 17:31 ET, after the close",
+   "title": "Wal-Mart Stores FY2011 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511083157/dex13.htm",
+   "supports": "Five-Year Financial Summary FY07-FY11 as adjusted; statements of income; the March 3, 2011 dividend increase"
+  },
+  "WM32": {
+   "published": "2011-05-17",
+   "filed": "2011-05-17 07:02 ET, before the open",
+   "title": "Wal-Mart Q1 FY2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511142247/dex991.htm",
+   "supports": "Q1 FY12 results; Q2 FY12 EPS $1.05-1.10"
+  },
+  "WM33": {
+   "published": "2011-08-16",
+   "filed": "2011-08-16 07:00 ET, before the open",
+   "title": "Wal-Mart Q2 FY2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511223750/dex991.htm",
+   "supports": "Q2 FY12 results; FY12 EPS $4.41-4.51; Q3 FY12 EPS $0.95-1.00"
+  },
+  "WM34": {
+   "published": "2011-11-15",
+   "filed": "2011-11-15 07:00 ET, before the open",
+   "title": "Wal-Mart Q3 FY2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511312114/d256387dex991.htm",
+   "supports": "Q3 FY12 results; Q4 FY12 EPS $1.42-1.48, implying FY12 $4.45-4.51"
   }
  },
  "history_vintages": [
@@ -383,6 +495,525 @@
     ]
    ],
    "groups_basis": "FY08 segment net sales (FY2008 10-K)"
+  },
+  {
+   "published": "2009-01-13",
+   "sources": [
+    "WM19",
+    "WM3",
+    "WM15"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Wal-Mart Stores segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2008 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2006": "2006-01-31",
+    "2007": "2007-01-31",
+    "2008": "2008-01-31"
+   },
+   "eps_reported": {
+    "1999": 0.94,
+    "2000": 1.25,
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16
+   },
+   "eps_normalized": {
+    "1999": 0.94,
+    "2000": 1.25,
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16
+   },
+   "eps_sources": {
+    "1999": "WM19",
+    "2000": "WM19",
+    "2001": "WM19",
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM19",
+    "2006": "WM19",
+    "2007": "WM19",
+    "2008": "WM19"
+   },
+   "revenue_usd_b": {
+    "1999": 129.161,
+    "2000": 153.345,
+    "2001": 178.028,
+    "2002": 201.166,
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 374.307
+   },
+   "revenue_sources": {
+    "1999": "WM19",
+    "2000": "WM19",
+    "2001": "WM19",
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM19",
+    "2006": "WM19",
+    "2007": "WM19",
+    "2008": "WM19"
+   },
+   "diluted_shares_m": {
+    "1999": 4485,
+    "2008": 4072
+   },
+   "shares_sources": {
+    "1999": "WM3",
+    "2008": "WM19"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the eleven-year summary re-presented by the 8-K of 2009-01-13: Gazeley and the Seiyu restructuring moved to discontinued operations, which restates FY07-FY08 net sales and leaves EPS unchanged; fiscal 2000 before the cumulative effect of the Sam's Club membership accounting change); no company figure excluding a one-off is published for any year, so no year is excluded",
+   "prev_fy_op_margin": 5.86,
+   "prev_fy_op_margin_note": "FY08 operating income $21,952M / net sales $374,307M (8-K of 2009-01-13, reclassified)",
+   "prev_fy_gross_margin": 23.5,
+   "prev_fy_sales_growth": 8.6,
+   "prev_fy_comps": 1.6,
+   "prev_fy_comps_note": "'Comparable store sales in the United States increased 1.6% in fiscal 2008' (8-K of 2009-01-13)",
+   "prev_fy_stores": "3,550 Walmart U.S. units, 591 Sam's Clubs and 3,098 units outside the United States",
+   "tax_rate": 0.3418,
+   "tax_note": "FY08 effective rate: provision $6,889M / pre-tax income from continuing operations $20,158M (8-K of 2009-01-13)",
+   "net_interest_b": 1.794,
+   "net_interest_note": "FY08 interest, net (8-K of 2009-01-13)",
+   "fcf_b": 5.417,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities of continuing operations $20,354M less payments for property and equipment $14,937M",
+   "cash_b": 5.492,
+   "cash_note": "cash and cash equivalents $5,492M at January 31, 2008, reclassified",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY09",
+   "dividend_annual": 0.95,
+   "dividend_note": "$0.95 a year ('On March 6, 2008, the Company’s Board of Directors approved an increase in annual dividends to $0.95 per share', the re-presented FY2008 annual report)",
+   "cash_return_text": "$7.7 billion of shares purchased in fiscal 2008 under the $15.0 billion program announced on June 1, 2007",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Sam's Club and International",
+   "groups": [
+    [
+     "Walmart U.S.",
+     239.529,
+     5.8
+    ],
+    [
+     "International",
+     90.421,
+     17.6
+    ],
+    [
+     "Sam's Club",
+     44.357,
+     6.7
+    ]
+   ],
+   "groups_basis": "FY08 segment net sales, reclassified (8-K of 2009-01-13)"
+  },
+  {
+   "published": "2009-04-01",
+   "sources": [
+    "WM21",
+    "WM19",
+    "WM20",
+    "WM4"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY09",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Walmart U.S. segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2009 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2007": "2007-01-31",
+    "2008": "2008-01-31",
+    "2009": "2009-01-31"
+   },
+   "eps_reported": {
+    "2000": 1.25,
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16,
+    "2009": 3.35
+   },
+   "eps_normalized": {
+    "2000": 1.25,
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16,
+    "2009": 3.42
+   },
+   "eps_sources": {
+    "2000": "WM19",
+    "2001": "WM19",
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM21",
+    "2007": "WM21",
+    "2008": "WM21",
+    "2009": "WM20 (reported $3.35: WM21)"
+   },
+   "revenue_usd_b": {
+    "2000": 153.345,
+    "2001": 178.028,
+    "2002": 201.166,
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 374.307,
+    "2009": 401.244
+   },
+   "revenue_sources": {
+    "2000": "WM19",
+    "2001": "WM19",
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM21",
+    "2007": "WM21",
+    "2008": "WM21",
+    "2009": "WM21"
+   },
+   "diluted_shares_m": {
+    "2000": 4474,
+    "2009": 3951
+   },
+   "shares_sources": {
+    "2000": "WM4",
+    "2009": "WM21"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the eleven-year summary re-presented by the 8-K of 2009-01-13 for the years it alone still reports, the five-year summaries for the later years; fiscal 2000 before the cumulative effect of the Sam's Club membership accounting change); FY09 is the company's underlying $3.42 excluding the charge for the settlement of 63 wage-and-hour class actions (reported $3.35; the Q4 FY09 release, the latest filing that publishes it); no other year has a company figure excluding a one-off, and no year is excluded",
+   "prev_fy_op_margin": 5.68,
+   "prev_fy_op_margin_note": "FY09 operating income $22,798M / net sales $401,244M (FY2009 10-K; the litigation charge included, no figure excluding it)",
+   "prev_fy_gross_margin": 23.7,
+   "prev_fy_sales_growth": 7.2,
+   "prev_fy_comps": 3.5,
+   "prev_fy_comps_note": "'Comparable store sales in the United States increased 3.5% in fiscal 2009' (FY2009 10-K)",
+   "prev_fy_stores": "3,656 Walmart U.S. units, 602 Sam's Clubs and 3,615 units outside the United States",
+   "tax_rate": 0.3419,
+   "tax_note": "FY09 effective rate: provision $7,145M / pre-tax income from continuing operations $20,898M (FY2009 10-K)",
+   "net_interest_b": 1.9,
+   "net_interest_note": "FY09 interest, net (FY2009 10-K)",
+   "fcf_b": 11.648,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities of continuing operations $23,147M less payments for property and equipment $11,499M",
+   "cash_b": 7.275,
+   "cash_note": "cash and cash equivalents $7,275M at January 31, 2009",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY09",
+   "dividend_annual": 1.09,
+   "dividend_note": "$1.09 a year ('On March 5, 2009, the Company’s Board of Directors approved an increase in the annual dividends ... to $1.09 per share', FY2009 10-K)",
+   "cash_return_text": "purchase of Company stock $3,521M in fiscal 2009",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Sam's Club and International",
+   "groups": [
+    [
+     "Walmart U.S.",
+     255.745,
+     6.8
+    ],
+    [
+     "International",
+     98.645,
+     9.1
+    ],
+    [
+     "Sam's Club",
+     46.854,
+     5.6
+    ]
+   ],
+   "groups_basis": "FY09 segment net sales (FY2009 10-K)"
+  },
+  {
+   "published": "2010-03-31",
+   "sources": [
+    "WM26",
+    "WM19",
+    "WM21",
+    "WM25",
+    "WM5"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY10",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Walmart U.S. segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2010 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2008": "2008-01-31",
+    "2009": "2009-01-31",
+    "2010": "2010-01-31"
+   },
+   "eps_reported": {
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16,
+    "2009": 3.35,
+    "2010": 3.72
+   },
+   "eps_normalized": {
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16,
+    "2009": 3.42,
+    "2010": 3.66
+   },
+   "eps_sources": {
+    "2001": "WM19",
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM26",
+    "2008": "WM26",
+    "2009": "WM25 (reported $3.35: WM26)",
+    "2010": "WM25 (reported $3.72: WM26)"
+   },
+   "revenue_usd_b": {
+    "2001": 178.028,
+    "2002": 201.166,
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 373.821,
+    "2009": 401.087,
+    "2010": 405.046
+   },
+   "revenue_sources": {
+    "2001": "WM19",
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM26",
+    "2008": "WM26",
+    "2009": "WM26",
+    "2010": "WM26"
+   },
+   "diluted_shares_m": {
+    "2001": 4484,
+    "2010": 3877
+   },
+   "shares_sources": {
+    "2001": "WM5",
+    "2010": "WM26"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the eleven-year summary re-presented by the 8-K of 2009-01-13 for the years it alone still reports, the five-year summaries for the later years; fiscal 2000 before the cumulative effect of the Sam's Club membership accounting change); FY09 is the company's adjusted $3.42 excluding the wage-and-hour litigation charge (reported $3.35) and FY10 its adjusted $3.66 excluding net tax benefits of $0.10 and restructuring charges of $0.04 (reported $3.72), both from the Q4 FY10 release, the latest filing that publishes them; no year is excluded",
+   "prev_fy_op_margin": 5.91,
+   "prev_fy_op_margin_note": "FY10 operating income $23,950M / net sales $405,046M (FY2010 10-K; restructuring charges included, no consolidated figure excluding them)",
+   "prev_fy_gross_margin": 24.78,
+   "prev_fy_sales_growth": 1.0,
+   "prev_fy_comps": -0.8,
+   "prev_fy_comps_note": "comparable sales in the United States -0.8% (FY2010 10-K summary: 'Comparable store and club sales include fuel')",
+   "prev_fy_stores": "3,708 Walmart U.S. units, 596 Sam's Clubs and 4,112 International units",
+   "tax_rate": 0.3235,
+   "tax_note": "FY10 effective rate: provision $7,139M / pre-tax income from continuing operations $22,066M (FY2010 10-K)",
+   "net_interest_b": 1.884,
+   "net_interest_note": "FY10 interest, net (FY2010 10-K)",
+   "fcf_b": 14.065,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $26,249M less payments for property and equipment $12,184M",
+   "cash_b": 7.907,
+   "cash_note": "cash and cash equivalents $7,907M at January 31, 2010",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY10",
+   "dividend_annual": 1.21,
+   "dividend_note": "$1.21 a year ('On March 4, 2010, the company’s Board of Directors approved an increase in the annual dividend ... to $1.21 per share', FY2010 10-K)",
+   "cash_return_text": "about $9.2 billion of remaining authorization for share repurchases at January 31, 2010",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Sam's Club and International",
+   "groups": [
+    [
+     "Walmart U.S.",
+     258.229,
+     1.1
+    ],
+    [
+     "International",
+     100.107,
+     1.3
+    ],
+    [
+     "Sam's Club",
+     46.71,
+     -0.4
+    ]
+   ],
+   "groups_basis": "FY10 segment net sales (FY2010 10-K)"
+  },
+  {
+   "published": "2011-03-31",
+   "sources": [
+    "WM31",
+    "WM19",
+    "WM21",
+    "WM26",
+    "WM25",
+    "WM30",
+    "WM6"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY11",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Walmart U.S. segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2011 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2009": "2009-01-31",
+    "2010": "2010-01-31",
+    "2011": "2011-01-31"
+   },
+   "eps_reported": {
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.35,
+    "2010": 3.73,
+    "2011": 4.18
+   },
+   "eps_normalized": {
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.93,
+    "2008": 3.15,
+    "2009": 3.42,
+    "2010": 3.67,
+    "2011": 4.07
+   },
+   "eps_sources": {
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM31",
+    "2009": "WM25 (reported $3.35: WM31)",
+    "2010": "WM30 (reported $3.73: WM31)",
+    "2011": "WM30 (reported $4.18: WM31)"
+   },
+   "revenue_usd_b": {
+    "2002": 201.166,
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.759,
+    "2008": 373.821,
+    "2009": 401.087,
+    "2010": 405.132,
+    "2011": 418.952
+   },
+   "revenue_sources": {
+    "2002": "WM19",
+    "2003": "WM19",
+    "2004": "WM19",
+    "2005": "WM21",
+    "2006": "WM26",
+    "2007": "WM31",
+    "2008": "WM31",
+    "2009": "WM31",
+    "2010": "WM31",
+    "2011": "WM31"
+   },
+   "diluted_shares_m": {
+    "2002": 4481,
+    "2011": 3670
+   },
+   "shares_sources": {
+    "2002": "WM6",
+    "2011": "WM31"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "normalization": "diluted income per share from continuing operations, each year from the latest filing that reports it (the eleven-year summary re-presented by the 8-K of 2009-01-13 for the years it alone still reports, the five-year summaries for the later years; fiscal 2000 before the cumulative effect of the Sam's Club membership accounting change); FY07-FY11 as adjusted for the change in inventory accounting of fiscal 2011 (FY07 $2.93, FY08 $3.15); FY09 is the company's adjusted $3.42 excluding the wage-and-hour litigation charge (reported $3.35, unchanged as adjusted; the Q4 FY10 release), FY10 its underlying $3.67 and FY11 its underlying $4.07 excluding tax benefits (reported $3.73 and $4.18; the Q4 FY11 release); no year is excluded",
+   "prev_fy_op_margin": 6.1,
+   "prev_fy_op_margin_note": "FY11 operating income $25,542M / net sales $418,952M (FY2011 10-K)",
+   "prev_fy_gross_margin": 24.74,
+   "prev_fy_sales_growth": 3.4,
+   "prev_fy_comps": -0.6,
+   "prev_fy_comps_note": "comparable sales in the United States -0.6% (FY2011 10-K summary: 'Comparable store and club sales include fuel')",
+   "prev_fy_stores": "3,804 Walmart U.S. units, 609 Sam's Clubs and 4,557 Walmart International units",
+   "tax_rate": 0.322,
+   "tax_note": "FY11 effective rate: provision $7,579M / pre-tax income from continuing operations $23,538M (FY2011 10-K)",
+   "net_interest_b": 2.004,
+   "net_interest_note": "FY11 interest, net (FY2011 10-K)",
+   "fcf_b": 10.944,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $23,643M less payments for property and equipment $12,699M",
+   "cash_b": 7.395,
+   "cash_note": "cash and cash equivalents $7,395M at January 31, 2011",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY11",
+   "dividend_annual": 1.46,
+   "dividend_note": "$1.46 a year ('On March 3, 2011, our Board of Directors approved an increase in the annual dividend ... to $1.46 per share', FY2011 10-K)",
+   "cash_return_text": "about $4.8 billion of remaining authorization for share repurchases at January 31, 2011",
+   "business_line": "Walmart U.S. (supercenters, discount stores, Neighborhood Markets), Sam's Club and Walmart International",
+   "groups": [
+    [
+     "Walmart U.S.",
+     260.261,
+     0.1
+    ],
+    [
+     "Walmart International",
+     109.232,
+     12.1
+    ],
+    [
+     "Sam's Club",
+     49.459,
+     3.5
+    ]
+   ],
+   "groups_basis": "FY11 segment net sales (FY2011 10-K)"
   }
  ],
  "prints": [
@@ -877,6 +1508,823 @@
    "cash_return_text": "Purchase of company stock $3,521M in the nine months",
    "next_print": "Q4 FY09 print (mid-February)",
    "eps_note": "the year-ago $0.70 'included a net benefit of $0.01 per share' from real estate gains"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-02-17",
+   "source": "WM20",
+   "release": "Feb 17",
+   "release_time": "before the open on Feb 17: 8-K accepted 07:16 ET; a pre-recorded call after the release",
+   "period_end": "2009-01-31",
+   "raw": {
+    "ns_m": 107996,
+    "ns_prior_m": 106208,
+    "other_m": 1120,
+    "other_prior_m": 1135,
+    "cogs_m": 82601,
+    "cogs_prior_m": 81277,
+    "sga_m": 20138,
+    "sga_prior_m": 19190,
+    "op_m": 6377,
+    "op_prior_m": 6876,
+    "inv_m": 34511,
+    "inv_prior_m": 35159,
+    "diluted_shares_m": 3936
+   },
+   "sales_b": 107.996,
+   "sales_pct": 1.7,
+   "gross_margin": 23.51,
+   "gross_margin_bp": 4.1,
+   "op_margin": 5.9,
+   "op_margin_bp": -56.9,
+   "inventory_pct": -1.8,
+   "inventory_gap_pp": -3.5,
+   "comps_pct": 2.3,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.3% (Total U.S. | 2.8% | 1.7% | 2.3% | 2.1% | -0.5% | 0.4%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     71.464,
+     6.0
+    ],
+    [
+     "International",
+     24.696,
+     -8.4
+    ],
+    [
+     "Sam's Club",
+     11.836,
+     0.0
+    ]
+   ],
+   "eps_q": 0.96,
+   "eps_q_prior": 1.03,
+   "diluted_shares_m": 3936,
+   "cash_b": 7.275,
+   "cash_return_text": "Purchase of Company stock $3,521M in fiscal 2009",
+   "next_print": "Q1 FY10 print (mid-May)",
+   "lc_pct": null,
+   "currency_m": null,
+   "lc_basis": null,
+   "currency_note": "no consolidated currency effect stated (International only: 'On a constant currency basis ... International sales increased 9.0 percent in the fourth quarter')",
+   "eps_note": "reported; the company's underlying $1.03 excludes the litigation charge of about $255 million after tax",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 3.42,
+    "revenue_usd_b": 401.244,
+    "diluted_shares_m": 3951,
+    "normalization_note": "FY09 the company's underlying $3.42 excluding the litigation charge (reported $3.35), from the Q4 FY09 release",
+    "op_margin": 5.68,
+    "op_margin_note": "FY09 operating income $22,798M / net sales $401,244M (Q4 FY09 release; litigation charge included)",
+    "gross_margin": 23.7,
+    "sales_growth": 7.2,
+    "comps_pct": 3.5,
+    "stores": null,
+    "tax_rate": 0.3419,
+    "tax_note": "FY09 effective rate: provision $7,145M / pre-tax $20,898M",
+    "net_interest_b": 1.9,
+    "fcf_b": 11.648,
+    "cash_b": 7.275,
+    "fcf_note": "net cash provided by operating activities $23,147M less payments for property and equipment $11,499M"
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2009-05-14",
+   "source": "WM22",
+   "release": "May 14",
+   "release_time": "before the open on May 14: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2009-04-30",
+   "raw": {
+    "ns_m": 93471,
+    "ns_prior_m": 94042,
+    "other_m": 771,
+    "other_prior_m": 898,
+    "cogs_m": 70388,
+    "cogs_prior_m": 71372,
+    "sga_m": 18637,
+    "sga_prior_m": 18251,
+    "op_m": 5217,
+    "op_prior_m": 5317,
+    "inv_m": 34391,
+    "inv_prior_m": 35521,
+    "diluted_shares_m": 3930
+   },
+   "sales_b": 93.471,
+   "sales_pct": -0.6,
+   "gross_margin": 24.7,
+   "gross_margin_bp": 58.9,
+   "op_margin": 5.58,
+   "op_margin_bp": -7.2,
+   "inventory_pct": -3.2,
+   "inventory_gap_pp": -2.6,
+   "comps_pct": 2.9,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.9% (Total U.S. | 3.7% | 2.0% | 2.9% | 2.5% | -0.8% | 0.5%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     61.244,
+     3.8
+    ],
+    [
+     "International",
+     21.263,
+     -11.1
+    ],
+    [
+     "Sam's Club",
+     10.964,
+     -1.4
+    ]
+   ],
+   "eps_q": 0.77,
+   "eps_q_prior": 0.76,
+   "diluted_shares_m": 3930,
+   "cash_b": 6.578,
+   "cash_return_text": "Purchase of company stock $886M in the quarter",
+   "next_print": "Q2 FY10 print (mid-August)",
+   "lc_pct": 4.5,
+   "currency_m": -4836,
+   "lc_basis": "stated",
+   "currency_note": "'Without the negative impact of currency exchange rates, equal to $4.836 billion, net sales for the quarter increased 4.5 percent'"
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2009-08-13",
+   "source": "WM23",
+   "release": "Aug 13",
+   "release_time": "before the open on Aug 13: 8-K accepted 07:01 ET; a pre-recorded call after the release",
+   "period_end": "2009-07-31",
+   "raw": {
+    "ns_m": 100082,
+    "ns_prior_m": 101546,
+    "other_m": 828,
+    "other_prior_m": 796,
+    "cogs_m": 75153,
+    "cogs_prior_m": 77118,
+    "sga_m": 19875,
+    "sga_prior_m": 19411,
+    "op_m": 5882,
+    "op_prior_m": 5813,
+    "inv_m": 33861,
+    "inv_prior_m": 35365,
+    "diluted_shares_m": 3900
+   },
+   "sales_b": 100.082,
+   "sales_pct": -1.4,
+   "gross_margin": 24.91,
+   "gross_margin_bp": 85.2,
+   "op_margin": 5.88,
+   "op_margin_bp": 15.3,
+   "inventory_pct": -4.3,
+   "inventory_gap_pp": -2.9,
+   "comps_pct": -1.9,
+   "comps_note": "Total U.S. comparable store sales with fuel -1.9% (Total U.S. | -1.2% | 4.3% | -1.9% | 4.9% | -0.7% | 0.6%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     64.209,
+     0.3
+    ],
+    [
+     "International",
+     23.965,
+     -5.1
+    ],
+    [
+     "Sam's Club",
+     11.908,
+     -3.2
+    ]
+   ],
+   "eps_q": 0.88,
+   "eps_q_prior": 0.86,
+   "diluted_shares_m": 3900,
+   "cash_b": 7.997,
+   "cash_return_text": "Purchase of Company stock $2,792M in the six months",
+   "next_print": "Q3 FY10 print (mid-November)",
+   "lc_pct": 2.7,
+   "currency_m": -4199,
+   "lc_basis": "stated",
+   "currency_note": "'Without the negative impact of currency exchange rates equal to $4.199 billion, net sales for the quarter increased 2.7 percent'"
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2009-11-12",
+   "source": "WM24",
+   "release": "Nov 12",
+   "release_time": "before the open on Nov 12: 8-K accepted 07:01 ET; a pre-recorded call after the release",
+   "period_end": "2009-10-31",
+   "raw": {
+    "ns_m": 98667,
+    "ns_prior_m": 97619,
+    "other_m": 744,
+    "other_prior_m": 726,
+    "cogs_m": 73805,
+    "cogs_prior_m": 73621,
+    "sga_m": 20013,
+    "sga_prior_m": 19432,
+    "op_m": 5593,
+    "op_prior_m": 5292,
+    "inv_m": 38775,
+    "inv_prior_m": 40416,
+    "diluted_shares_m": 3861
+   },
+   "sales_b": 98.667,
+   "sales_pct": 1.1,
+   "gross_margin": 25.2,
+   "gross_margin_bp": 61.5,
+   "op_margin": 5.67,
+   "op_margin_bp": 24.7,
+   "inventory_pct": -4.1,
+   "inventory_gap_pp": -5.2,
+   "comps_pct": -0.8,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.8% (Total U.S. | -0.4% | 2.5% | -0.8% | 2.9% | -0.4% | 0.4%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     61.807,
+     1.2
+    ],
+    [
+     "International",
+     25.307,
+     1.6
+    ],
+    [
+     "Sam's Club",
+     11.553,
+     -0.7
+    ]
+   ],
+   "eps_q": 0.84,
+   "eps_q_prior": 0.77,
+   "diluted_shares_m": 3861,
+   "cash_b": 6.003,
+   "cash_return_text": "Purchase of Company stock $5,105M in the nine months",
+   "next_print": "Q4 FY10 print (mid-February)",
+   "lc_pct": 3.8,
+   "currency_m": -2617,
+   "lc_basis": "stated",
+   "currency_note": "'net sales for the third quarter would have been $2.617 billion higher, increasing 3.8 percent'"
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-02-18",
+   "source": "WM25",
+   "release": "Feb 18",
+   "release_time": "before the open on Feb 18: 8-K accepted 07:15 ET; a pre-recorded call after the release",
+   "period_end": "2010-01-31",
+   "raw": {
+    "ns_m": 112826,
+    "ns_prior_m": 107880,
+    "other_m": 825,
+    "other_prior_m": 867,
+    "cogs_m": 85311,
+    "cogs_prior_m": 81945,
+    "sga_m": 21082,
+    "sga_prior_m": 20425,
+    "op_m": 7258,
+    "op_prior_m": 6377,
+    "inv_m": 33160,
+    "inv_prior_m": 34511,
+    "diluted_shares_m": 3820
+   },
+   "sales_b": 112.826,
+   "sales_pct": 4.6,
+   "gross_margin": 24.39,
+   "gross_margin_bp": 34.7,
+   "op_margin": 6.43,
+   "op_margin_bp": 52.2,
+   "inventory_pct": -3.9,
+   "inventory_gap_pp": -8.5,
+   "comps_pct": -1.2,
+   "comps_note": "Total U.S. comparable store sales with fuel -1.2% (Total U.S. | -1.6% | 2.4% | -1.2% | 1.8% | 0.4% | -0.6%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     70.969,
+     -0.5
+    ],
+    [
+     "International",
+     29.572,
+     19.5
+    ],
+    [
+     "Sam's Club",
+     12.285,
+     3.8
+    ]
+   ],
+   "eps_q": 1.23,
+   "eps_q_prior": 0.96,
+   "diluted_shares_m": 3820,
+   "cash_b": 7.907,
+   "cash_return_text": "Purchase of Company stock $7,276M in fiscal 2010",
+   "next_print": "Q1 FY11 print (mid-May)",
+   "lc_pct": 2.8,
+   "currency_m": 1900,
+   "lc_basis": "derived",
+   "currency_note": "'Net sales for the fourth quarter included a currency exchange rate benefit of $1.9 billion'",
+   "eps_note": "reported; the company's adjusted $1.17 excludes net tax benefits of $0.10 and restructuring charges of $0.04",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 3.66,
+    "revenue_usd_b": 405.046,
+    "diluted_shares_m": 3877,
+    "normalization_note": "FY10 the company's adjusted $3.66 excluding net tax benefits and restructuring charges (reported $3.72), from the Q4 FY10 release",
+    "op_margin": 5.91,
+    "op_margin_note": "FY10 operating income $23,950M / net sales $405,046M (Q4 FY10 release; restructuring charges included)",
+    "gross_margin": 24.78,
+    "sales_growth": 1.0,
+    "comps_pct": -0.3,
+    "stores": null,
+    "tax_rate": 0.3235,
+    "tax_note": "FY10 effective rate: provision $7,139M / pre-tax $22,066M",
+    "net_interest_b": 1.884,
+    "fcf_b": 14.065,
+    "cash_b": 7.907,
+    "fcf_note": "net cash provided by operating activities $26,249M less payments for property and equipment $12,184M"
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2010-05-18",
+   "source": "WM27",
+   "release": "May 18",
+   "release_time": "before the open on May 18: 8-K accepted 08:09 ET; a pre-recorded call after the release",
+   "period_end": "2010-04-30",
+   "raw": {
+    "ns_m": 99097,
+    "ns_prior_m": 93471,
+    "other_m": 751,
+    "other_prior_m": 771,
+    "cogs_m": 74703,
+    "cogs_prior_m": 70388,
+    "sga_m": 19373,
+    "sga_prior_m": 18637,
+    "op_m": 5772,
+    "op_prior_m": 5217,
+    "inv_m": 35503,
+    "inv_prior_m": 34391,
+    "diluted_shares_m": 3781
+   },
+   "sales_b": 99.097,
+   "sales_pct": 6.0,
+   "gross_margin": 24.62,
+   "gross_margin_bp": -7.9,
+   "op_margin": 5.82,
+   "op_margin_bp": 24.3,
+   "inventory_pct": 3.2,
+   "inventory_gap_pp": -2.8,
+   "comps_pct": -0.5,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.5% (Total U.S. | -1.1% | 3.7% | -0.5% | 2.9% | 0.6% | -0.8%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     62.324,
+     1.1
+    ],
+    [
+     "Walmart International",
+     25.03,
+     21.4
+    ],
+    [
+     "Sam's Club",
+     11.743,
+     4.6
+    ]
+   ],
+   "eps_q": 0.88,
+   "eps_q_prior": 0.77,
+   "diluted_shares_m": 3781,
+   "cash_b": 8.516,
+   "cash_return_text": "Purchase of company stock $2,967M in the quarter",
+   "next_print": "Q2 FY11 print (mid-August)",
+   "lc_pct": 3.3,
+   "currency_m": 2500,
+   "lc_basis": "derived",
+   "currency_note": "'Net sales for the first quarter included a currency exchange rate benefit of $2.5 billion'",
+   "renames": {
+    "International": "Walmart International"
+   }
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2010-08-17",
+   "source": "WM28",
+   "release": "Aug 17",
+   "release_time": "before the open on Aug 17: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2010-07-31",
+   "raw": {
+    "ns_m": 103016,
+    "ns_prior_m": 100168,
+    "other_m": 710,
+    "other_prior_m": 708,
+    "cogs_m": 77523,
+    "cogs_prior_m": 75056,
+    "sga_m": 20013,
+    "sga_prior_m": 19891,
+    "op_m": 6190,
+    "op_prior_m": 5929,
+    "inv_m": 34793,
+    "inv_prior_m": 33365,
+    "diluted_shares_m": 3707
+   },
+   "sales_b": 103.016,
+   "sales_pct": 2.8,
+   "gross_margin": 24.75,
+   "gross_margin_bp": -32.3,
+   "op_margin": 6.01,
+   "op_margin_bp": 9.0,
+   "inventory_pct": 4.3,
+   "inventory_gap_pp": 1.5,
+   "comps_pct": -1.1,
+   "comps_note": "Total U.S. comparable store sales with fuel -1.1% (Total U.S. | -1.4% | -1.2% | -1.1% | -1.9% | 0.3% | -0.7%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     64.654,
+     0.0
+    ],
+    [
+     "Walmart International",
+     25.901,
+     11.0
+    ],
+    [
+     "Sam's Club",
+     12.461,
+     2.2
+    ]
+   ],
+   "eps_q": 0.97,
+   "eps_q_prior": 0.89,
+   "diluted_shares_m": 3707,
+   "cash_b": 10.195,
+   "cash_return_text": "Purchase of Company stock $7,112M in the six months",
+   "next_print": "Q3 FY11 print (mid-November)",
+   "lc_pct": 2.0,
+   "currency_m": 857,
+   "lc_basis": "stated",
+   "currency_note": "'On a constant currency basis, consolidated net sales increased 2.0 percent' (a currency exchange rate benefit of $857 million)",
+   "eps_note": "the year-ago quarter as adjusted for the change in inventory accounting (previously $0.88)"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2010-11-16",
+   "source": "WM29",
+   "release": "Nov 16",
+   "release_time": "before the open on Nov 16: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2010-10-31",
+   "raw": {
+    "ns_m": 101239,
+    "ns_prior_m": 98667,
+    "other_m": 713,
+    "other_prior_m": 706,
+    "cogs_m": 75906,
+    "cogs_prior_m": 73915,
+    "sga_m": 20435,
+    "sga_prior_m": 20016,
+    "op_m": 5611,
+    "op_prior_m": 5442,
+    "inv_m": 41059,
+    "inv_prior_m": 38129,
+    "diluted_shares_m": 3631
+   },
+   "sales_b": 101.239,
+   "sales_pct": 2.6,
+   "gross_margin": 25.02,
+   "gross_margin_bp": -6.3,
+   "op_margin": 5.54,
+   "op_margin_bp": 2.7,
+   "inventory_pct": 7.7,
+   "inventory_gap_pp": 5.1,
+   "comps_pct": -0.5,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.5% (Total U.S. | -0.7% | -0.4% | -0.5% | -0.8% | 0.2% | -0.4%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     62.178,
+     -0.1
+    ],
+    [
+     "Walmart International",
+     26.919,
+     9.3
+    ],
+    [
+     "Sam's Club",
+     12.142,
+     2.7
+    ]
+   ],
+   "eps_q": 0.95,
+   "eps_q_prior": 0.82,
+   "diluted_shares_m": 3631,
+   "cash_b": 10.616,
+   "cash_return_text": "Purchase of Company stock $10,972M in the nine months",
+   "next_print": "Q4 FY11 print (mid-February)",
+   "lc_pct": 2.3,
+   "currency_m": 349,
+   "lc_basis": "derived",
+   "currency_note": "'Walmart International net sales include a $349 million benefit from changes in currency exchange rates' (no other segment reports in another currency)",
+   "eps_note": "includes a tax benefit of about $0.05 (no figure excluding it); the year-ago quarter as adjusted (previously $0.84)"
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-02-22",
+   "source": "WM30",
+   "release": "Feb 22",
+   "release_time": "before the open on Feb 22: 8-K accepted 07:01 ET; a pre-recorded call after the release",
+   "period_end": "2011-01-31",
+   "raw": {
+    "ns_m": 115600,
+    "ns_prior_m": 112826,
+    "other_m": 760,
+    "other_prior_m": 796,
+    "cogs_m": 87158,
+    "cogs_prior_m": 85078,
+    "sga_m": 21198,
+    "sga_prior_m": 21086,
+    "op_m": 8004,
+    "op_prior_m": 7458,
+    "inv_m": 36318,
+    "inv_prior_m": 32713,
+    "diluted_shares_m": 3563
+   },
+   "sales_b": 115.6,
+   "sales_pct": 2.5,
+   "gross_margin": 24.6,
+   "gross_margin_bp": 1.0,
+   "op_margin": 6.92,
+   "op_margin_bp": 31.4,
+   "inventory_pct": 11.0,
+   "inventory_gap_pp": 8.5,
+   "comps_pct": -0.8,
+   "comps_note": "Total U.S. comparable store sales with fuel -0.8% (Total U.S. | -1.1% | -1.6% | -0.8% | -1.2% | 0.3% | 0.4%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     71.105,
+     -0.5
+    ],
+    [
+     "Walmart International",
+     31.382,
+     8.9
+    ],
+    [
+     "Sam's Club",
+     13.113,
+     4.4
+    ]
+   ],
+   "eps_q": 1.41,
+   "eps_q_prior": 1.26,
+   "diluted_shares_m": 3563,
+   "cash_b": 7.395,
+   "cash_return_text": "Purchase of Company stock $14,776M in fiscal 2011",
+   "next_print": "Q1 FY12 print (mid-May)",
+   "lc_pct": 1.9,
+   "currency_m": 664,
+   "lc_basis": "stated",
+   "currency_note": "'Consolidated net sales on a constant currency basis increased by 1.9 percent for the quarter'",
+   "eps_note": "reported; the company's underlying $1.34 excludes tax benefits of about $0.07",
+   "restates": {
+    "2010": 3.67
+   },
+   "restates_note": "FY10 the company's underlying $3.67 as adjusted for the change in inventory accounting (reported $3.73), from the Q4 FY11 release",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 4.07,
+    "revenue_usd_b": 418.952,
+    "diluted_shares_m": 3670,
+    "normalization_note": "FY11 the company's underlying $4.07 excluding tax benefits of about $0.11 (reported $4.18), from the Q4 FY11 release",
+    "op_margin": 6.1,
+    "op_margin_note": "FY11 operating income $25,542M / net sales $418,952M (Q4 FY11 release)",
+    "gross_margin": 24.74,
+    "sales_growth": 3.4,
+    "comps_pct": -0.7,
+    "stores": null,
+    "tax_rate": 0.322,
+    "tax_note": "FY11 effective rate: provision $7,579M / pre-tax $23,538M",
+    "net_interest_b": 2.004,
+    "fcf_b": 10.944,
+    "cash_b": 7.395,
+    "fcf_note": "net cash provided by operating activities $23,643M less payments for property and equipment $12,699M"
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2011-05-17",
+   "source": "WM32",
+   "release": "May 17",
+   "release_time": "before the open on May 17: 8-K accepted 07:02 ET; a pre-recorded call after the release",
+   "period_end": "2011-04-30",
+   "raw": {
+    "ns_m": 103415,
+    "ns_prior_m": 99097,
+    "other_m": 774,
+    "other_prior_m": 714,
+    "cogs_m": 78177,
+    "cogs_prior_m": 74618,
+    "sga_m": 20116,
+    "sga_prior_m": 19456,
+    "op_m": 5896,
+    "op_prior_m": 5737,
+    "inv_m": 38335,
+    "inv_prior_m": 35021,
+    "diluted_shares_m": 3513
+   },
+   "sales_b": 103.415,
+   "sales_pct": 4.4,
+   "gross_margin": 24.4,
+   "gross_margin_bp": -29.7,
+   "op_margin": 5.7,
+   "op_margin_bp": -8.8,
+   "inventory_pct": 9.5,
+   "inventory_gap_pp": 5.1,
+   "comps_pct": 0.4,
+   "comps_note": "Total U.S. comparable store sales with fuel +0.4% (Total U.S. | -0.3% | -1.1% | 0.4% | -0.5% | 0.7% | 0.6%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     62.669,
+     0.6
+    ],
+    [
+     "Walmart International",
+     27.905,
+     11.5
+    ],
+    [
+     "Sam's Club",
+     12.841,
+     9.4
+    ]
+   ],
+   "eps_q": 0.98,
+   "eps_q_prior": 0.87,
+   "diluted_shares_m": 3513,
+   "cash_b": 9.4,
+   "cash_return_text": "Purchase of Company stock $2,129M in the quarter",
+   "next_print": "Q2 FY12 print (mid-August)",
+   "lc_pct": 3.0,
+   "currency_m": 1300,
+   "lc_basis": "stated",
+   "currency_note": "'Consolidated net sales on a constant currency basis increased by 3.0 percent'"
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2011-08-16",
+   "source": "WM33",
+   "release": "Aug 16",
+   "release_time": "before the open on Aug 16: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2011-07-31",
+   "raw": {
+    "ns_m": 108638,
+    "ns_prior_m": 103016,
+    "other_m": 728,
+    "other_prior_m": 710,
+    "cogs_m": 81770,
+    "cogs_prior_m": 77438,
+    "sga_m": 21213,
+    "sga_prior_m": 20098,
+    "op_m": 6383,
+    "op_prior_m": 6190,
+    "inv_m": 38651,
+    "inv_prior_m": 34793,
+    "diluted_shares_m": 3485
+   },
+   "sales_b": 108.638,
+   "sales_pct": 5.5,
+   "gross_margin": 24.73,
+   "gross_margin_bp": -9.7,
+   "op_margin": 5.88,
+   "op_margin_bp": -13.3,
+   "inventory_pct": 11.1,
+   "inventory_gap_pp": 5.6,
+   "comps_pct": 0.8,
+   "comps_note": "Total U.S. comparable store sales with fuel +0.8% (Total U.S. | 0.0% | -1.4% | 0.8% | -1.1% | 0.8% | 0.3%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     64.893,
+     0.4
+    ],
+    [
+     "Walmart International",
+     30.099,
+     16.2
+    ],
+    [
+     "Sam's Club",
+     13.646,
+     9.5
+    ]
+   ],
+   "eps_q": 1.09,
+   "eps_q_prior": 0.97,
+   "diluted_shares_m": 3485,
+   "cash_b": 8.102,
+   "cash_return_text": "Purchase of Company stock $3,540M in the six months",
+   "next_print": "Q3 FY12 print (mid-November)",
+   "lc_pct": 3.2,
+   "currency_m": 2300,
+   "lc_basis": "stated",
+   "currency_note": "'consolidated net sales on a constant currency basis increased by 3.2 percent'"
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2011-11-15",
+   "source": "WM34",
+   "release": "Nov 15",
+   "release_time": "before the open on Nov 15: 8-K accepted 07:00 ET; a pre-recorded call after the release",
+   "period_end": "2011-10-31",
+   "raw": {
+    "ns_m": 109516,
+    "ns_prior_m": 101239,
+    "other_m": 710,
+    "other_prior_m": 713,
+    "cogs_m": 82591,
+    "cogs_prior_m": 75819,
+    "sga_m": 21757,
+    "sga_prior_m": 20522,
+    "op_m": 5878,
+    "op_prior_m": 5611,
+    "inv_m": 44135,
+    "inv_prior_m": 41059,
+    "diluted_shares_m": 3458
+   },
+   "sales_b": 109.516,
+   "sales_pct": 8.2,
+   "gross_margin": 24.59,
+   "gross_margin_bp": -52.3,
+   "op_margin": 5.37,
+   "op_margin_bp": -17.5,
+   "inventory_pct": 7.5,
+   "inventory_gap_pp": -0.7,
+   "comps_pct": 2.6,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.6% (Total U.S. | 1.9% | -0.7% | 2.6% | -0.5% | 0.7% | 0.2%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     63.835,
+     2.7
+    ],
+    [
+     "Walmart International",
+     32.383,
+     20.3
+    ],
+    [
+     "Sam's Club",
+     13.298,
+     9.5
+    ]
+   ],
+   "eps_q": 0.97,
+   "eps_q_prior": 0.95,
+   "diluted_shares_m": 3458,
+   "cash_b": 7.063,
+   "cash_return_text": "Purchase of Company stock $4,957M in the nine months",
+   "next_print": "Q4 FY12 print (mid-February)",
+   "lc_pct": 6.8,
+   "currency_m": 1300,
+   "lc_basis": "stated",
+   "currency_note": "'consolidated net sales on a constant currency basis increased 6.8 percent' (acquisitions added $2.1 billion)",
+   "eps_note": "the year-ago $0.95 included a tax benefit of about $0.05"
   }
  ],
  "guides": [
@@ -1038,6 +2486,216 @@
      1,
      3
     ]
+   }
+  },
+  {
+   "fy": 2010,
+   "published": "2009-02-17",
+   "source": "WM20",
+   "doc": "Q4 FY09 release",
+   "eps_guide": [
+    3.45,
+    3.6
+   ],
+   "eps_guide_note": "reported EPS; assumes currency rates stay where they were at year end, about 13 cents below the year before",
+   "q_guide": {
+    "quarter": "Q1 FY10",
+    "eps": [
+     0.72,
+     0.77
+    ],
+    "comps_text": "U.S. comparable sales without fuel +1% to +3% for the 13 weeks to May 1"
+   }
+  },
+  {
+   "fy": 2010,
+   "published": "2009-05-14",
+   "source": "WM22",
+   "doc": "Q1 FY10 release",
+   "q_guide": {
+    "quarter": "Q2 FY10",
+    "eps": [
+     0.83,
+     0.88
+    ]
+   }
+  },
+  {
+   "fy": 2010,
+   "published": "2009-08-13",
+   "source": "WM23",
+   "doc": "Q2 FY10 release",
+   "eps_guide": [
+    3.5,
+    3.6
+   ],
+   "q_guide": {
+    "quarter": "Q3 FY10",
+    "eps": [
+     0.78,
+     0.82
+    ],
+    "comps_text": "Walmart U.S. comparable sales flat to +2%; Sam's Club flat, plus or minus 1%"
+   }
+  },
+  {
+   "fy": 2010,
+   "published": "2009-11-12",
+   "source": "WM24",
+   "doc": "Q3 FY10 release",
+   "eps_guide": [
+    3.57,
+    3.61
+   ],
+   "q_guide": {
+    "quarter": "Q4 FY10",
+    "eps": [
+     1.08,
+     1.12
+    ],
+    "comps_text": "Walmart U.S. comparable sales flat, plus or minus 1%; Sam's Club about flat, plus or minus 1%"
+   }
+  },
+  {
+   "fy": 2011,
+   "published": "2010-02-18",
+   "source": "WM25",
+   "doc": "Q4 FY10 release",
+   "eps_guide": [
+    3.9,
+    4.0
+   ],
+   "q_guide": {
+    "quarter": "Q1 FY11",
+    "eps": [
+     0.81,
+     0.85
+    ],
+    "comps_text": "Walmart U.S. comparable sales without fuel flat, plus or minus 1.0%; Sam's Club without fuel flat, plus or minus 1.0%"
+   }
+  },
+  {
+   "fy": 2011,
+   "published": "2010-05-18",
+   "source": "WM27",
+   "doc": "Q1 FY11 release",
+   "q_guide": {
+    "quarter": "Q2 FY11",
+    "eps": [
+     0.93,
+     0.98
+    ],
+    "comps_text": "Walmart U.S. comparable sales without fuel -2.0% to +1%; Sam's Club without fuel flat, plus or minus 1%"
+   }
+  },
+  {
+   "fy": 2011,
+   "published": "2010-08-17",
+   "source": "WM28",
+   "doc": "Q2 FY11 release",
+   "eps_guide": [
+    3.95,
+    4.05
+   ],
+   "q_guide": {
+    "quarter": "Q3 FY11",
+    "eps": [
+     0.87,
+     0.91
+    ],
+    "comps_text": "Walmart U.S. comparable sales -2.0% to +1.0%; Sam's Club without fuel flat to +2.0%"
+   }
+  },
+  {
+   "fy": 2011,
+   "published": "2010-11-16",
+   "source": "WM29",
+   "doc": "Q3 FY11 release",
+   "eps_guide": [
+    4.08,
+    4.12
+   ],
+   "eps_guide_note": "reflects the third quarter's tax benefit of about $0.05 (no range excluding it)",
+   "q_guide": {
+    "quarter": "Q4 FY11",
+    "eps": [
+     1.29,
+     1.33
+    ],
+    "comps_text": "Walmart U.S. comparable sales -1.0% to +2.0%; Sam's Club without fuel +1.0% to +3.0%"
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2011-02-22",
+   "source": "WM30",
+   "doc": "Q4 FY11 release",
+   "eps_guide": [
+    4.35,
+    4.5
+   ],
+   "rev_guide": [
+    4,
+    6
+   ],
+   "q_guide": {
+    "quarter": "Q1 FY12",
+    "eps": [
+     0.91,
+     0.96
+    ],
+    "comps_text": "Walmart U.S. comparable sales -2% to flat; Sam's Club without fuel +1% to +3%"
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2011-05-17",
+   "source": "WM32",
+   "doc": "Q1 FY12 release",
+   "q_guide": {
+    "quarter": "Q2 FY12",
+    "eps": [
+     1.05,
+     1.1
+    ],
+    "comps_text": "Walmart U.S. comparable sales -1% to +1%; Sam's Club without fuel +3% to +5%"
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2011-08-16",
+   "source": "WM33",
+   "doc": "Q2 FY12 release",
+   "eps_guide": [
+    4.41,
+    4.51
+   ],
+   "q_guide": {
+    "quarter": "Q3 FY12",
+    "eps": [
+     0.95,
+     1.0
+    ],
+    "comps_text": "Walmart U.S. comparable sales -1% to +1%; Sam's Club without fuel +3.0% to +5.0%"
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2011-11-15",
+   "source": "WM34",
+   "doc": "Q3 FY12 release",
+   "eps_guide": [
+    4.45,
+    4.51
+   ],
+   "eps_guide_note": "'this implies a full year EPS from continuing operations range of $4.45 to $4.51'",
+   "q_guide": {
+    "quarter": "Q4 FY12",
+    "eps": [
+     1.42,
+     1.48
+    ],
+    "comps_text": "Walmart U.S. comparable sales flat to +2%; Sam's Club without fuel +4% to +6%"
    }
   }
  ],

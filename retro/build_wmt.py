@@ -18,10 +18,13 @@ list, as for LOW and SHW, and each field comes from the latest guide for the cur
 inputs map as follows (retro/README.md, "WMT"):
   - current-FY EPS: the fiscal-year EPS guide midpoint (no numeric EPS guide: the last full year's EPS stands),
   - forward revenue growth: the next-quarter net sales guide for a quarter not yet reported (none in numbers: the fiscal-year net
-    sales guide; none either: the latest quarter's net sales growth as reported, since no release of the period states a currency
-    effect on net sales, the LOW and SHW rule),
+    sales guide; none either: the latest quarter's net sales growth excluding the currency effect the release states, the NKE, PEP
+    and SHW rule, or as reported when the release states none, as every release of 2007-2008 does),
   - guided margin step: none (no margin guide in numbers); the margin signal takes the latest quarter's operating-margin change.
 The comparable store sales guide for the next quarter is shown in the guide line and feeds no input.
+A later print may publish an earlier year's company figure on a new basis ('restates': the Q4 FY11 release's FY10 underlying $3.67 as
+adjusted for the change in inventory accounting); it replaces the year from that print until a 10-K vintage published after it carries
+the year (the SHW rule; retro/README.md, "WMT 2009-2011").
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. The earnings 8-Ks of 2007-2008 were accepted before the open on the release day.
@@ -30,6 +33,7 @@ Output goes to staging/retrospective/WMT until the series is added to the archiv
 
 Usage
   python3 retro/build_wmt.py --weekly 2008-01-01 2008-12-31
+  python3 retro/build_wmt.py --weekly 2009-01-05 2011-12-31
   python3 retro/build_wmt.py 2008-02-20
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/WMT/<AS_OF>
 """
@@ -121,6 +125,9 @@ def check_print(p):
             "inventory_pct": ip, "inventory_gap_pp": round(ip - sp, 1), "diluted_shares_m": r["diluted_shares_m"]}
     for k, v in want.items():
         assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+    if p.get("currency_m") is not None:            # a stated dollar effect re-derives the constant-currency growth (or agrees with a stated one)
+        d = round(((r["ns_m"] - p["currency_m"]) / r["ns_prior_m"] - 1) * 100, 1)
+        assert (p["lc_pct"] == d) if p["lc_basis"] == "derived" else abs(p["lc_pct"] - d) <= 0.11, (p["quarter"], "currency", p["lc_pct"], d)
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -178,6 +185,15 @@ def build(as_of, facts, raw, spx, engine, out):
                      net_interest_b=a["net_interest_b"], net_interest_note=f'FY{y[2:]} interest, net ({p["source"]})',
                      fcf_b=a["fcf_b"], fcf_label=a["fy_label"], fcf_note=a["fcf_note"],
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a company figure for an earlier year of the history, first published in a later print ('restates': the Q4 FY11 release's FY10
+    # underlying $3.67 as adjusted for the change in inventory accounting), replaces it from that print until a 10-K vintage published
+    # after the print carries the year (each year from the latest filing that reports it; the SHW rule)
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, e in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: e}, normalization=f'{h["normalization"]}; {p["restates_note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} EPS from {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope); before the
     # first print in the fact sheet, the vintage names it
@@ -210,6 +226,12 @@ def build(as_of, facts, raw, spx, engine, out):
     elif gr:                                 # no next-quarter guide in numbers: the fiscal-year net sales guide
         fwd, fwd_label, fwd_short, fwd_period = gr["rev_guide"], f"{fy_now} net sales guide", f"{fy_now} guide", fy_now
         fwd_kind = "fiscal-year net sales guide (no next-quarter guide in numbers)"
+    elif latest.get("lc_pct") is not None:   # no net sales guide in numbers: the latest quarter at constant currency (NKE, PEP, SHW)
+        fwd = [latest["lc_pct"]] * 2
+        fwd_label = f"no {fy_now} net sales guide in numbers, {latest['quarter']} net sales at constant currency"
+        fwd_short, fwd_period = f"{latest['quarter'][:2]} ex-FX", latest["quarter"]
+        fwd_kind = (f"no net sales guide in numbers: {latest['quarter']} growth {latest['sales_pct']:+.1f}% excluding the currency effect "
+                    f"the release states ({latest['lc_pct']:+.1f}% at constant currency)")
     else:                                    # no net sales guide in numbers: the latest quarter's growth as reported (LOW, SHW)
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"no {fy_now} net sales guide in numbers, {latest['quarter']} net sales"
@@ -217,6 +239,8 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd_kind = f"no net sales guide in numbers: {latest['quarter']} growth as reported (the release states no currency effect)"
     fy_rev = gr["rev_guide"] if gr else fwd
     fy_rev_label = (f"{fy_now} net sales guide" if gr else f"{fwd_label}, applied to the year" if q and "sales" in q else
+                    f"{latest['quarter']} net sales growth at constant currency applied to the year (no {fy_now} net sales guide in numbers)"
+                    if fwd_short.endswith("ex-FX") else
                     f"{latest['quarter']} net sales growth applied to the year (no {fy_now} net sales guide in numbers)")
     if guides:
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']}; {ge['doc']})" if ge.get("eps_guide_note") else f" ({ge['doc']})")]
@@ -225,6 +249,7 @@ def build(as_of, facts, raw, spx, engine, out):
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"net sales {pct_range(*q['sales'])}"] if "sales" in q else []) +
                    ([f"U.S. comps {pct_range(*q['comps'])}"] if "comps" in q else []) +
+                   ([q["comps_text"]] if "comps_text" in q else []) +
                    ([f"EPS ${eps_rng(*q['eps'])}"] if "eps" in q else []))] if q else [])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
@@ -307,8 +332,10 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     eps_note = f"; EPS {latest['eps_note']}" if latest.get("eps_note") else ""
     segs = ", ".join(f"{n} ${b:.2f}B {g:+.1f}%" for n, b, g in latest["segments"])
+    fx_txt = (f"; currency: {latest['currency_note']}" + (f", {latest['lc_pct']:+.1f}% at constant currency" if latest.get("lc_pct") is not None else "")
+              if latest.get("currency_note") else "")
     volumes = (f"Segment net sales: {segs}; comps: {latest['comps_note']}; inventory ${latest['raw']['inv_m'] / 1000:.2f}B "
-               f"{latest['inventory_pct']:+.1f}% year on year{eps_note}")
+               f"{latest['inventory_pct']:+.1f}% year on year{fx_txt}{eps_note}")
     stores_txt = h["prev_fy_stores"] or "no year-end store count in the Q4 release"
     R = repr
     head = f'''#!/usr/bin/env python3

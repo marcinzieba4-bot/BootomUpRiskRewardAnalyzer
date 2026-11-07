@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "WMT",
+ "company": "Wal-Mart Stores, Inc.",
+ "as_of": "2010-11-17",
+ "price_date": "2010-11-17",
+ "price": 53.77,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); discount-retail signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Walmart U.S. segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2010 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Walmart U.S. segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2010 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price cheap; Ratio B -0.01x; -13% to EPP floor; model-vs-market gap +0.42; conservative 2yr +39%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": -0.01,
+  "ratio_b_fmt": "-0.01x",
+  "epp": 61.5,
+  "epp_gap_pct": -12.6,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.5,
+  "sca": 0.15,
+  "adj_composite": 1.85,
+  "market_composite": 1.43,
+  "adj_gap": 0.42,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 39.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.1,
+    "pe": 13.4,
+    "price": 55,
+    "desc": "Flat EPS (worst year FY01-FY10, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.43,
+    "pe": 17.3,
+    "price": 77,
+    "desc": "EPS +3.9%/yr (Q3 ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 5.04,
+    "pe": 26.9,
+    "price": 136,
+    "desc": "EPS +10.9%/yr (FY01-FY10 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.69,
+    "pe": 33.5,
+    "price": 191,
+    "desc": "EPS +17.8%/yr (best 2-yr run FY01-FY10); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -12.6,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.06,
+   "epp_gap_pct": -12.6,
+   "adj_gap": 0.63,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -12.6,
+   "adj_gap": -0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": -0.04,
+   "epp_gap_pct": -12.6,
+   "adj_gap": 0.49,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.01,
+   "epp_gap_pct": -12.6,
+   "adj_gap": 0.34,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -12.6,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -27.1,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -12.6,
+   "adj_gap": 0.85,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 39.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "WMT (retrospective, 2010-11-17) ◉ BUY — Ratio B -0.01x (-2.3% downside to Bear $55 / +152.9% upside to Bull $136) | Adj composite 1.85 vs market 1.43: gap +0.42 [MODESTLY UNDERVALUED] | -13% above the EPP floor $61 (15x FY11E $4.10) | Conservative 2-yr case: +39.3% total (+19.7%/yr) | At 13.1x FY11E the 15% hurdle price $71 sits at or below the BASE case; U.S. comps -0.5% in Q3 FY11, forward sales +2.3% (no FY11 net sales guide in numbers, Q3 FY11 net sales at constant currency); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "WM26",
+   "published": "2010-03-31",
+   "filed": "2010-03-30 17:07 ET, after the close",
+   "title": "Wal-Mart Stores FY2010 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510071652/dex13.htm",
+   "supports": "Five-Year Financial Summary FY06-FY10; statements of income; the March 4, 2010 dividend increase"
+  },
+  {
+   "id": "WM19",
+   "published": "2009-01-13",
+   "filed": "2009-01-13 13:17 ET, during the session",
+   "title": "Wal-Mart 8-K re-presenting the FY2008 annual report (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416909000002/fy08ars.htm",
+   "supports": "the FY2008 financial statements, Eleven-Year Financial Summary and MD&A reclassified for the Gazeley and Seiyu discontinued operations (net sales FY07 $344,759M, FY08 $374,307M; EPS unchanged)"
+  },
+  {
+   "id": "WM21",
+   "published": "2009-04-01",
+   "filed": "2009-04-01 15:48 ET, during the session",
+   "title": "Wal-Mart Stores FY2009 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416909000006/dex13.htm",
+   "supports": "Five-Year Financial Summary FY05-FY09; statements of income; the March 5, 2009 dividend increase"
+  },
+  {
+   "id": "WM25",
+   "published": "2010-02-18",
+   "filed": "2010-02-18 07:15 ET, before the open",
+   "title": "Wal-Mart Q4 FY2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510033699/dex991.htm",
+   "supports": "Q4 and FY10 results; adjusted EPS FY10 $3.66 (reported $3.72), FY09 $3.42; FY11 EPS $3.90-4.00"
+  },
+  {
+   "id": "WM5",
+   "published": "2003-04-16",
+   "filed": "2003-04-15 17:15 ET, after the close",
+   "title": "Wal-Mart Stores FY2003 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416903000005/ex13final.htm",
+   "supports": "consolidated statements of income, fiscal 2001-2003 (operating profit)"
+  },
+  {
+   "id": "WM27",
+   "published": "2010-05-18",
+   "filed": "2010-05-18 08:09 ET, before the open",
+   "title": "Wal-Mart Q1 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510122849/dex991.htm",
+   "supports": "Q1 FY11 results; Q2 FY11 EPS $0.93-0.98"
+  },
+  {
+   "id": "WM28",
+   "published": "2010-08-17",
+   "filed": "2010-08-17 07:00 ET, before the open",
+   "title": "Wal-Mart Q2 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510190753/dex991.htm",
+   "supports": "Q2 FY11 results (prior year as adjusted for the inventory accounting change); FY11 EPS $3.95-4.05"
+  },
+  {
+   "id": "WM29",
+   "published": "2010-11-16",
+   "filed": "2010-11-16 07:00 ET, before the open",
+   "title": "Wal-Mart Q3 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510261366/dex991.htm",
+   "supports": "Q3 FY11 results; FY11 EPS $4.08-4.12; Q4 FY11 EPS $1.29-1.33"
+  },
+  {
+   "id": "WM17",
+   "published": "2008-08-14",
+   "filed": "2008-08-14 06:14 ET, before the open",
+   "title": "Wal-Mart Q2 FY2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508177102/dex991.htm",
+   "supports": "Q2 FY09 results; FY09 EPS raised to $3.43-3.50; Q3 FY09 EPS $0.73-0.76, U.S. comps 1-2%; the Walmart U.S. segment name"
+  },
+  {
+   "id": "WM0",
+   "published": "2010-11-17",
+   "title": "Yahoo Finance daily prices, WMT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/WMT/history",
+   "supports": "close $53.77 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-07"
+}
