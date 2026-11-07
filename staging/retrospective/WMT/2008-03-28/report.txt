@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  WMT  ·  Wal-Mart Stores, Inc.  ·  $52.12  ·  RETROSPECTIVE as of 2008-03-28
+  Signal: ◉ BUY   Ratio B: 0.00x   Adj gap: +1.20  [UNDERVALUED]
+  Point-in-time: 8 sources, latest published 2008-03-28; latest print Q4 FY08 (Feb 19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E net sales, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2009E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Wal-Mart Stores           $   266.1  $ 266.1  $ 338.7      +0.0     +72.6
+    +7.8% net sales in FY07
+  International             $    90.7  $  90.7  $ 115.4      +0.0     +24.7
+    +30.2% net sales in FY07
+  Sam's Club                $    48.9  $  48.9  $  62.2      +0.0     +13.3
+    +4.5% net sales in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   405.7  $ 405.7  $ 516.3      +0.0    +110.6
+  FY2009E = FY08 $374.53B × (1 + 8.3%: Q4 FY08 net sales growth applied to the year (no FY09 net sales guide in numbers)); split pro rata to FY07 segment net sales (FY2007 10-K)
+  Q4 FY08 (Feb 19): net sales $106.27B +8.3%; U.S. comps +2.1%; gross margin 23.47% (+51.1bp);
+  operating margin 6.48% (-8.3bp); EPS $1.02 vs $0.95; inventory +4.4% (-3.9pp vs sales)
+  Segment net sales: Wal-Mart Stores $67.43B +5.0%, International $27.01B +18.8%, Sam's Club $11.83B +6.3%; comps: Total U.S. comparable store sales with fuel +2.1% (Total U.S. | 1.7% | 1.6% | 2.1% | 1.4% | 0.4% | -0.2%); inventory $35.18B +4.4% year on year; EPS 'including a net charge of approximately $0.02 per share for certain items' (no figure excluding them)
+  FY09 guide (Q4 FY08 release): EPS $3.30-3.43 (Q4 FY08 release); Q1 FY09: EPS $0.70-0.74
+
+  FY2009E EPS check:  ($405.7B × 5.87% − $1.80B interest) × (1−34.2%) ÷ 3.998B  =  $3.62  (FY2009E EPS, guide midpoint $3.37)
+  FY2011E BEAR check: ($405.7B × 5.87% − interest) ÷ 3.912B  =  $3.70  (scenario $3.37)
+  FY2011E BULL check: ($516.3B × 6.27% − interest) ÷ 3.912B  =  $5.14  (scenario $4.47)
+  Every 1pp of operating margin ≈ $0.67 EPS ≈ $18/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. comparable store sales         -1.0%    ≥2.0%    ≥5.0%    ≥9.0%     +2.1%  ◦ BASE  ██░░
+  Gross margin change               -60.0bp  ≥-20.0bp  ≥30.0bp  ≥60.0bp   +51.1bp  ▲ BULL  ███░
+  Net sales growth                    +7.0%   ≥10.0%   ≥13.0%   ≥19.0%     +8.3%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth   +6.0pp   ≤1.0pp  ≤-4.0pp  ≤-15.0pp    -3.9pp  ◦ BASE  ██░░
+  Operating margin change           -90.0bp  ≥-40.0bp  ≥10.0bp  ≥40.0bp    -8.3bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.05 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $52 + 15% hurdle)
+  SCA adjustment:    +0.17  ·  EPP-distance adj +0.20  →  Adj composite 2.42  →  Gap +1.20  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 net sales +8.6% on U.S. comps +1.6%, no year-end store count in the Q4 release; Q4 gross margin 23.47% (+51.1bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 15.5x FY09E vs a 27.1x 10-yr median (12th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY09 net sales guide in numbers, Q4 FY08 net sales +8.3% vs a 12.1% 10-yr median  (-0.38 × 20%  =  -0.076)
+    +  Cash $5.57B at 2008-01-31, FY08 free cash flow $5.42B, dividend $0.88 a year, $1.8 billion of shares repurchased in the fourth quarter of fiscal 2007; about $4.3 billion left under the $10.0 billion program at January 31, 2007  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. comparable store sales          +2.1%     -1.0%   -3.1%  Traffic and ticket fall together
+  Gross margin change                +51.1bp   -60.0bp  -111.1bp  Price cuts and mix shift compress the…
+  Net sales growth                     +8.3%     +7.0%   -1.3%  Comps stall as new stores and currenc…
+  Inventory growth less sales growth    -3.9pp    +6.0pp  +9.9pp  Inventory outruns sales; markdowns fo…
+  Operating margin change             -8.3bp   -90.0bp  -81.7bp  Expenses deleverage on low comps
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$72  (model)  /  $52 (defined)
+  Bear probability (proxy model):  17.0%
+
+  KEY TRIGGER: U.S. comps went from +1.5% (Q3 FY08) to +2.1% (Q4 FY08);
+  the bear case needs a demand recession that gross margin (+51.1bp now)
+  and expense control no longer cover. General economic conditions drive demand, by the company's own account; the bear
+  needs fuel, labor and health-care costs to keep rising while comps fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.37  (FY2009E EPS, guide midpoint)
+  Min viable P/E at panic:          22x  [median of calendar-year P/E lows: 1998 26.1x, 1999 32.1x, 2000 30.0x, 2001 29.3x, 2002 24.9x, 2003 22.5x, 2004 20.9x, 2005 15.6x, 2006 14.7x, 2007 13.4x, 2008 14.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $74/share
+  Current $52 vs Updated EPP $74:  -30%  ✓ BELOW panic floor — deep-value zone
+  Bear $52 vs Updated EPP $74:  -30%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. comparable store sales                  2.0       -0.1   BASE floor (vs +2 now)
+  Gross margin change                        -20.0      -71.1   BASE floor (vs +51 now)
+  Net sales growth                            10.0       +1.7   BASE floor (vs +8 now)
+  Inventory growth less sales growth             1.0       +4.9   BASE floor (vs -4 now)
+  Operating margin change                    -40.0      -31.7   BASE floor (vs -8 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.37 × (1+7.4%)² = $3.88
+  At 27x P/E (conservative):  $105/share
+  + Cumul. dividends (2yr):  +$1.81/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $105  (▲53 from $52)
+  Conservative total return:  +104% over 2yr  = +52%/yr
+
+  At 15.5x the multiple is already near its 27x median, so the conservative
+  case is a growth question: breakeven at 27x needs FY2011E EPS of $1.86,
+  i.e. -25.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $42.09  –  $54.15  (at 83th pct of range)
+  Annual dividend:      $0.88/share  (yield 1.7%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.75
+  1-sigma range (1yr):  $41  –  $64  ($52 ± 22%)
+  2-sigma range (1yr):  $29  –  $75
+  ────────────────────────────────────────────────────────────
+  Bear $52 requires:  ~0.0σ price move  (within normal vol range)
+  A discount retailer with a 0.8 beta: the stock is +23% off its September
+  low while U.S. comps went from +1.5% (Q3 FY08) to +2.1% (Q4 FY08).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.37  15.3x  $     52    17.0%     72.2%   -55.3pp  Flat EPS (worst year FY98-FY08, capped at 0%); P/E to its 10th pct
+  BASE        4.03  27.1x  $    109    59.2%     20.7%   +38.5pp  EPS +9.4%/yr (Q4 sales + margin + buyback); P/E at its 10-yr median
+  BULL        4.47  34.6x  $    155    20.0%      5.9%   +14.1pp  EPS +15.3%/yr (FY98-FY08 CAGR); P/E holds its 75th pct
+  XBULL       5.53  38.4x  $    212     3.8%      1.1%    +2.7pp  EPS +28.2%/yr (best 2-yr run FY98-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $112  /  Market EV: $72  /  Current: $52
+  Conservative EV (2yr, ④): $105 + $1.81 divs = $107 total value
+  Downside (→ Bear $52): 0.2%   Upside (→ Bull $155): 197.4%   Ratio B 0.00x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $52 the market needs $69 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.42: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.00x     -30%    +1.20  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.06x     -30%    +1.42  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.03x     -30%    +0.85  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.01x     -30%    +1.42  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.02x     -30%    +1.20  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.00x     -30%    +1.50  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.00x     -38%    +1.20  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.00x     -30%    +1.20  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY09 print (mid-May) — the next read on comps (+2.1% now) and the guide
+  (2) Gross margin — +51.1bp in Q4 FY08: price cuts, mix and fuel against cost of sales, what must hold if comps do not
+  (3) FY09 EPS guide $3.30-3.43 (Q4 FY08 release)
+  (4) Operating margin — 6.48% in Q4 FY08 (-8.3bp): where expense deleverage on low comps shows first
+  (5) Capital return at 15x — Purchase of Company stock $7,691M in fiscal 2008: management's own read of the multiple
+  ◉ BUY  |  EPP floor $74  |  ADD below ~$93  |  TRIM above $155
+════════════════════════════════════════════════════════════════════════
+

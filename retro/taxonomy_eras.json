@@ -1121,6 +1121,31 @@
     "term": "Performance Coatings Group",
     "first_seen": "2017-07-20",
     "note": "a Sherwin-Williams reportable segment after the Valspar acquisition; first in a Sherwin-Williams filing in its Q2 2017 earnings 8-K (accepted 2017-07-20 07:31 ET, before the open)"
+   },
+   {
+    "term": "Walmart U.S.",
+    "first_seen": "2008-08-14",
+    "note": "Wal-Mart's renamed Wal-Mart Stores segment; first in a Wal-Mart filing in its Q2 FY2009 earnings 8-K (accepted 2008-08-14 06:14 ET, before the open)"
+   },
+   {
+    "term": "Walmart International",
+    "first_seen": "2010-02-18",
+    "note": "Wal-Mart's renamed International segment; first in a Wal-Mart filing in its Q4 FY2010 earnings 8-K (accepted 2010-02-18 07:15 ET, before the open)"
+   },
+   {
+    "term": "Jet.com",
+    "first_seen": "2016-08-08",
+    "note": "the e-commerce company Wal-Mart agreed to acquire; first in a Wal-Mart filing in its 8-K of 2016-08-08 (accepted 08:30 ET, before the open)"
+   },
+   {
+    "term": "Walmart Inc.",
+    "first_seen": "2018-02-01",
+    "note": "Wal-Mart Stores, Inc.'s new name from 2018-02-01; first in a Walmart filing in a Form 4 of 2018-01-31 (accepted 17:08 ET, after the close, so the next trading day)"
+   },
+   {
+    "term": "Flipkart",
+    "first_seen": "2018-05-09",
+    "note": "the Indian e-commerce company Walmart agreed to acquire a majority of; first in a Walmart filing in its 8-K of 2018-05-09 (accepted 07:04 ET, before the open)"
    }
   ]
  }

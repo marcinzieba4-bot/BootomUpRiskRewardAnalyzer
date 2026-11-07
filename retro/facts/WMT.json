@@ -1,0 +1,1388 @@
+{
+ "_doc": "Point-in-time fact sheet for WMT retrospectives (retro/build_wmt.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2008 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Walmart's fiscal year N ends on January 31 of calendar year N. Each release guides diluted EPS from continuing operations for the next quarter and, in most releases, the fiscal year; U.S. comparable store sales for the next quarter in most; never net sales or a margin. Values are as reported; a vintage takes each year from the latest filing that reports it (the 10-K's Eleven-Year Financial Summary for EPS and net sales; the statements of income for diluted shares). A print's growth, margins and inventory growth are derived from the raw figures of its release ('raw', millions; the builder re-derives and checks them): the year-ago quarter is the one the same release shows; comparable store sales are the release's Total U.S. figure with fuel, the measure the 10-Ks report. rule_t holds the annual values behind the engine's signal thresholds, with the raw figures they are computed from. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "WMT",
+ "sources": {
+  "WM1": {
+   "published": "1999-04-19",
+   "filed": "1999-04-19 (EDGAR gives the filing date only)",
+   "title": "Wal-Mart Stores FY1999 10-K (fiscal year ended January 31, 1999)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416999000002/0000104169-99-000002.txt",
+   "supports": "consolidated statements of income, fiscal 1997-1999 (net sales, other income-net, cost of sales, operating, selling and general and administrative expenses)"
+  },
+  "WM2": {
+   "published": "2000-04-17",
+   "filed": "2000-04-17 (EDGAR gives the filing date only)",
+   "title": "Wal-Mart Stores FY2000 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416900000002/0000104169-00-000002.txt",
+   "supports": "consolidated statements of income, fiscal 1998-2000; fiscal 1998 diluted average shares 4,533 million"
+  },
+  "WM3": {
+   "published": "2001-04-17",
+   "filed": "2001-04-17 (EDGAR gives the filing date only)",
+   "title": "Wal-Mart Stores FY2001 10-K/A, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000102140801500157/dex13.htm",
+   "supports": "consolidated statements of income, fiscal 1999-2001; fiscal 1999 diluted average shares 4,485 million"
+  },
+  "WM4": {
+   "published": "2002-04-15",
+   "filed": "2002-04-15 (EDGAR gives the filing date only)",
+   "title": "Wal-Mart Stores FY2002 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416902000004/ex13final.htm",
+   "supports": "consolidated statements of income, fiscal 2000-2002"
+  },
+  "WM5": {
+   "published": "2003-04-16",
+   "filed": "2003-04-15 17:15 ET, after the close",
+   "title": "Wal-Mart Stores FY2003 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416903000005/ex13final.htm",
+   "supports": "consolidated statements of income, fiscal 2001-2003 (operating profit)"
+  },
+  "WM6": {
+   "published": "2004-04-12",
+   "filed": "2004-04-09 16:05 ET, after the close (Good Friday; the next trading day is 2004-04-12)",
+   "title": "Wal-Mart Stores FY2004 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312504059900/dex13.htm",
+   "supports": "consolidated statements of income, fiscal 2002-2004 (operating profit)"
+  },
+  "WM7": {
+   "published": "2005-03-31",
+   "filed": "2005-03-31 15:34 ET, during the session",
+   "title": "Wal-Mart Stores FY2005 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312505066992/dex13.htm",
+   "supports": "consolidated statements of income, fiscal 2003-2005 (operating income)"
+  },
+  "WM8": {
+   "published": "2006-03-30",
+   "filed": "2006-03-29 16:14 ET, after the close",
+   "title": "Wal-Mart Stores FY2006 10-K, Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312506066792/dex13.htm",
+   "supports": "consolidated statements of income, fiscal 2004-2006 (operating income)"
+  },
+  "WM9": {
+   "published": "2007-03-28",
+   "filed": "2007-03-27 16:40 ET, after the close",
+   "title": "Wal-Mart Stores FY2007 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312507065603/dex13.htm",
+   "supports": "Eleven-Year Financial Summary fiscal 1997-2007 (net sales, comparable store sales, cost of sales, inventories, diluted EPS); statements of income fiscal 2005-2007; segment net sales; the March 8, 2007 dividend increase; Item 1 and Item 1A wording"
+  },
+  "WM10": {
+   "published": "2007-02-20",
+   "filed": "2007-02-20 06:18 ET, before the open",
+   "title": "Wal-Mart Q4 FY2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312507034618/dex991.htm",
+   "supports": "Q4 FY07 results; FY08 outlook: EPS from continuing operations $3.15 to $3.23; Q1 FY08 EPS $0.68-0.71, U.S. comps 1-3%"
+  },
+  "WM11": {
+   "published": "2007-05-15",
+   "filed": "2007-05-15 06:09 ET, before the open",
+   "title": "Wal-Mart Q1 FY2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312507114400/dex991.htm",
+   "supports": "Q1 FY08 results; Q2 FY08 EPS $0.75-0.79, U.S. comps 1-2%; no full-year figure"
+  },
+  "WM12": {
+   "published": "2007-08-14",
+   "filed": "2007-08-14 06:13 ET, before the open",
+   "title": "Wal-Mart Q2 FY2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312507181442/dex991.htm",
+   "supports": "Q2 FY08 results; FY08 EPS updated to $3.05-3.13; Q3 FY08 EPS $0.62-0.65, U.S. comps 1-3%"
+  },
+  "WM13": {
+   "published": "2007-11-13",
+   "filed": "2007-11-13 06:23 ET, before the open",
+   "title": "Wal-Mart Q3 FY2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312507243455/dex991.htm",
+   "supports": "Q3 FY08 results; FY08 EPS $3.13-3.17; Q4 FY08 EPS $0.99-1.03, U.S. comps flat to 2%"
+  },
+  "WM14": {
+   "published": "2008-02-19",
+   "filed": "2008-02-19 06:18 ET, before the open",
+   "title": "Wal-Mart Q4 FY2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508033081/dex991.htm",
+   "supports": "Q4 and fiscal 2008 results; FY09 EPS from continuing operations $3.30-3.43; Q1 FY09 EPS $0.70-0.74"
+  },
+  "WM15": {
+   "published": "2008-04-01",
+   "filed": "2008-03-31 16:12 ET, after the close",
+   "title": "Wal-Mart Stores FY2008 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508071085/dex13.htm",
+   "supports": "Eleven-Year Financial Summary fiscal 1998-2008; statements of income fiscal 2006-2008; segment net sales; the March 6, 2008 dividend increase; Item 1 and Item 1A wording"
+  },
+  "WM16": {
+   "published": "2008-05-13",
+   "filed": "2008-05-13 06:08 ET, before the open",
+   "title": "Wal-Mart Q1 FY2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508112325/dex991.htm",
+   "supports": "Q1 FY09 results; Q2 FY09 EPS $0.78-0.81, U.S. comps flat to 2%; no full-year figure"
+  },
+  "WM17": {
+   "published": "2008-08-14",
+   "filed": "2008-08-14 06:14 ET, before the open",
+   "title": "Wal-Mart Q2 FY2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508177102/dex991.htm",
+   "supports": "Q2 FY09 results; FY09 EPS raised to $3.43-3.50; Q3 FY09 EPS $0.73-0.76, U.S. comps 1-2%; the Walmart U.S. segment name"
+  },
+  "WM18": {
+   "published": "2008-11-13",
+   "filed": "2008-11-13 06:10 ET, before the open",
+   "title": "Wal-Mart Q3 FY2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508234356/dex991.htm",
+   "supports": "Q3 FY09 results; FY09 EPS $3.42-3.46; Q4 FY09 EPS $1.03-1.07, U.S. comps 1-3%"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-28",
+   "sources": [
+    "WM9",
+    "WM2"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Wal-Mart Stores segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2007 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2005": "2005-01-31",
+    "2006": "2006-01-31",
+    "2007": "2007-01-31"
+   },
+   "eps_gaap": {
+    "1998": 0.77,
+    "1999": 0.98,
+    "2000": 1.19,
+    "2001": 1.39,
+    "2002": 1.47,
+    "2003": 1.79,
+    "2004": 2.07,
+    "2005": 2.41,
+    "2006": 2.68,
+    "2007": 2.71
+   },
+   "eps_normalized": {
+    "1998": 0.76,
+    "1999": 0.94,
+    "2000": 1.25,
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92
+   },
+   "eps_sources": {
+    "1998": "WM9",
+    "1999": "WM9",
+    "2000": "WM9",
+    "2001": "WM9",
+    "2002": "WM9",
+    "2003": "WM9",
+    "2004": "WM9",
+    "2005": "WM9",
+    "2006": "WM9",
+    "2007": "WM9"
+   },
+   "normalization": "diluted income per share from continuing operations, each year from the latest 10-K that reports it (the FY2007 10-K's Eleven-Year Financial Summary, restated for the McLane, South Korea and Germany dispositions; fiscal 2000 before the cumulative effect of the Sam's Club membership accounting change); no company figure excluding a one-off is published for any year and no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1998": 112.005,
+    "1999": 129.161,
+    "2000": 153.345,
+    "2001": 178.028,
+    "2002": 201.166,
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.992
+   },
+   "revenue_sources": {
+    "1998": "WM9",
+    "1999": "WM9",
+    "2000": "WM9",
+    "2001": "WM9",
+    "2002": "WM9",
+    "2003": "WM9",
+    "2004": "WM9",
+    "2005": "WM9",
+    "2006": "WM9",
+    "2007": "WM9"
+   },
+   "diluted_shares_m": {
+    "1998": 4533,
+    "2007": 4168
+   },
+   "shares_sources": {
+    "1998": "WM2",
+    "2007": "WM9"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 5.94,
+   "prev_fy_op_margin_note": "FY07 operating income $20,497M / net sales $344,992M (FY2007 10-K)",
+   "prev_fy_gross_margin": 23.43,
+   "prev_fy_sales_growth": 11.7,
+   "prev_fy_comps": 2.0,
+   "prev_fy_comps_note": "'Comparable store sales increased 2.0% in fiscal 2007 and 3.4% in fiscal 2006 in the United States' (FY2007 10-K)",
+   "prev_fy_stores": "3,443 Wal-Mart Stores units, 579 Sam's Clubs and 2,757 units outside the United States",
+   "tax_rate": 0.3356,
+   "tax_note": "FY07 effective rate: provision $6,365M / pre-tax income from continuing operations $18,968M (FY2007 10-K)",
+   "net_interest_b": 1.529,
+   "net_interest_note": "FY07 interest, net (FY2007 10-K)",
+   "fcf_b": 4.543,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities of continuing operations $20,209M less payments for property and equipment $15,666M",
+   "cash_b": 7.373,
+   "cash_note": "cash and cash equivalents $7,373M at January 31, 2007",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY07",
+   "dividend_annual": 0.88,
+   "dividend_note": "$0.88 a year ('On March 8, 2007, the Company’s Board of Directors approved an increase in annual dividends to $0.88 per share', FY2007 10-K)",
+   "cash_return_text": "$1.8 billion of shares repurchased in the fourth quarter of fiscal 2007; about $4.3 billion left under the $10.0 billion program at January 31, 2007",
+   "business_line": "Wal-Mart Stores (supercenters, discount stores, Neighborhood Markets), Sam's Club and International",
+   "groups": [
+    [
+     "Wal-Mart Stores",
+     226.294,
+     7.8
+    ],
+    [
+     "International",
+     77.116,
+     30.2
+    ],
+    [
+     "Sam's Club",
+     41.582,
+     4.5
+    ]
+   ],
+   "groups_basis": "FY07 segment net sales (FY2007 10-K)"
+  },
+  {
+   "published": "2008-04-01",
+   "sources": [
+    "WM15",
+    "WM3"
+   ],
+   "company": "Wal-Mart Stores, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "why": "Walmart: 'operates retail stores in various formats around the world and is committed to saving people money so they can live better'; 'every day low prices (“EDLP”)'; 'The retail business is highly competitive' (its Wal-Mart Stores segment competes with discount, department, drug, variety and specialty stores, supermarkets, supercenter-type stores and hypermarts, 'as well as internet-based retailers and catalog businesses'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2008 10-K): a low-price store network whose demand follows the consumer economy by its own account; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2006": "2006-01-31",
+    "2007": "2007-01-31",
+    "2008": "2008-01-31"
+   },
+   "eps_gaap": {
+    "1999": 0.98,
+    "2000": 1.19,
+    "2001": 1.39,
+    "2002": 1.47,
+    "2003": 1.79,
+    "2004": 2.07,
+    "2005": 2.41,
+    "2006": 2.68,
+    "2007": 2.71,
+    "2008": 3.13
+   },
+   "eps_normalized": {
+    "1999": 0.94,
+    "2000": 1.25,
+    "2001": 1.44,
+    "2002": 1.5,
+    "2003": 1.79,
+    "2004": 2.08,
+    "2005": 2.46,
+    "2006": 2.72,
+    "2007": 2.92,
+    "2008": 3.16
+   },
+   "eps_sources": {
+    "1999": "WM15",
+    "2000": "WM15",
+    "2001": "WM15",
+    "2002": "WM15",
+    "2003": "WM15",
+    "2004": "WM15",
+    "2005": "WM15",
+    "2006": "WM15",
+    "2007": "WM15",
+    "2008": "WM15"
+   },
+   "normalization": "diluted income per share from continuing operations, each year from the latest 10-K that reports it (the FY2008 10-K's Eleven-Year Financial Summary, restated for the McLane, South Korea and Germany dispositions; fiscal 2000 before the cumulative effect of the Sam's Club membership accounting change); no company figure excluding a one-off is published for any year and no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1999": 129.161,
+    "2000": 153.345,
+    "2001": 178.028,
+    "2002": 201.166,
+    "2003": 226.479,
+    "2004": 252.792,
+    "2005": 281.488,
+    "2006": 308.945,
+    "2007": 344.992,
+    "2008": 374.526
+   },
+   "revenue_sources": {
+    "1999": "WM15",
+    "2000": "WM15",
+    "2001": "WM15",
+    "2002": "WM15",
+    "2003": "WM15",
+    "2004": "WM15",
+    "2005": "WM15",
+    "2006": "WM15",
+    "2007": "WM15",
+    "2008": "WM15"
+   },
+   "diluted_shares_m": {
+    "1999": 4485,
+    "2008": 4072
+   },
+   "shares_sources": {
+    "1999": "WM3",
+    "2008": "WM15"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 5.87,
+   "prev_fy_op_margin_note": "FY08 operating income $21,996M / net sales $374,526M (FY2008 10-K)",
+   "prev_fy_gross_margin": 23.5,
+   "prev_fy_sales_growth": 8.6,
+   "prev_fy_comps": 1.6,
+   "prev_fy_comps_note": "'Comparable store sales in the United States increased 1.6% in fiscal 2008 and 2.0% in fiscal 2007' (FY2008 10-K)",
+   "prev_fy_stores": "3,550 Wal-Mart Stores units, 591 Sam's Clubs and 3,121 units outside the United States",
+   "tax_rate": 0.342,
+   "tax_note": "FY08 effective rate: provision $6,908M / pre-tax income from continuing operations $20,198M (FY2008 10-K)",
+   "net_interest_b": 1.798,
+   "net_interest_note": "FY08 interest, net (FY2008 10-K)",
+   "fcf_b": 5.417,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities of continuing operations $20,354M less payments for property and equipment $14,937M",
+   "cash_b": 5.569,
+   "cash_note": "cash and cash equivalents $5,569M at January 31, 2008",
+   "prev_q_comps": null,
+   "prev_q_label": "Q3 FY08",
+   "dividend_annual": 0.95,
+   "dividend_note": "$0.95 a year ('On March 6, 2008, the Company’s Board of Directors approved an increase in annual dividends to $0.95 per share', FY2008 10-K)",
+   "cash_return_text": "$7.7 billion of shares purchased in fiscal 2008; about $8.5 billion left under the $15.0 billion program at January 31, 2008",
+   "business_line": "Wal-Mart Stores (supercenters, discount stores, Neighborhood Markets), Sam's Club and International",
+   "groups": [
+    [
+     "Wal-Mart Stores",
+     239.529,
+     5.8
+    ],
+    [
+     "International",
+     90.64,
+     17.5
+    ],
+    [
+     "Sam's Club",
+     44.357,
+     6.7
+    ]
+   ],
+   "groups_basis": "FY08 segment net sales (FY2008 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 FY07",
+   "fy": 2007,
+   "q": 4,
+   "published": "2007-02-20",
+   "source": "WM10",
+   "release": "Feb 20",
+   "release_time": "before the open on Feb 20: 8-K accepted 06:18 ET; a pre-recorded call after the release",
+   "period_end": "2007-01-31",
+   "raw": {
+    "ns_m": 98090,
+    "ns_prior_m": 88418,
+    "other_m": 988,
+    "other_prior_m": 834,
+    "cogs_m": 75565,
+    "cogs_prior_m": 68382,
+    "sga_m": 17080,
+    "sga_prior_m": 14978,
+    "op_m": 6433,
+    "op_prior_m": 5892,
+    "inv_m": 33685,
+    "inv_prior_m": 31910,
+    "diluted_shares_m": 4156
+   },
+   "sales_b": 98.09,
+   "sales_pct": 10.9,
+   "gross_margin": 22.96,
+   "gross_margin_bp": 30.3,
+   "op_margin": 6.56,
+   "op_margin_bp": -10.6,
+   "inventory_pct": 5.6,
+   "inventory_gap_pp": -5.3,
+   "comps_pct": 1.4,
+   "comps_note": "Total U.S. comparable store sales with fuel +1.4% (the release: 'Including the impact of fuel sales, the Sam’s Club and total U.S. comparable store sales figures for the quarter ended Jan. 31, 2007, would have been 1.9 and 1.4 percent'; 1.6% without fuel)",
+   "segments": [
+    [
+     "Wal-Mart Stores",
+     64.228,
+     6.7
+    ],
+    [
+     "International",
+     22.734,
+     29.6
+    ],
+    [
+     "Sam's Club",
+     11.128,
+     4.4
+    ]
+   ],
+   "eps_q": 0.95,
+   "eps_q_prior": 0.87,
+   "diluted_shares_m": 4156,
+   "cash_b": 7.373,
+   "cash_return_text": "Purchase of Company stock $1,718M in fiscal 2007",
+   "next_print": "Q1 FY08 print (mid-May)",
+   "eps_note": "includes a '$0.02 per share net benefit' from tax matters (no figure excluding it)"
+  },
+  {
+   "quarter": "Q1 FY08",
+   "fy": 2008,
+   "q": 1,
+   "published": "2007-05-15",
+   "source": "WM11",
+   "release": "May 15",
+   "release_time": "before the open on May 15: 8-K accepted 06:09 ET; a pre-recorded call after the release",
+   "period_end": "2007-04-30",
+   "raw": {
+    "ns_m": 85387,
+    "ns_prior_m": 78835,
+    "other_m": 1023,
+    "other_prior_m": 841,
+    "cogs_m": 65311,
+    "cogs_prior_m": 60237,
+    "sga_m": 16249,
+    "sga_prior_m": 14944,
+    "op_m": 4850,
+    "op_prior_m": 4495,
+    "inv_m": 35200,
+    "inv_prior_m": 31900,
+    "diluted_shares_m": 4128
+   },
+   "sales_b": 85.387,
+   "sales_pct": 8.3,
+   "gross_margin": 23.51,
+   "gross_margin_bp": -7.9,
+   "op_margin": 5.68,
+   "op_margin_bp": -2.2,
+   "inventory_pct": 10.3,
+   "inventory_gap_pp": 2.0,
+   "comps_pct": 0.6,
+   "comps_note": "Total U.S. comparable store sales with fuel +0.6% (Total U.S. | 0.6% | 3.8% | 0.6% | 3.9% | 0.0% | 0.1%)",
+   "segments": [
+    [
+     "Wal-Mart Stores",
+     55.437,
+     5.6
+    ],
+    [
+     "International",
+     19.627,
+     18.5
+    ],
+    [
+     "Sam's Club",
+     10.323,
+     5.6
+    ]
+   ],
+   "eps_q": 0.68,
+   "eps_q_prior": 0.64,
+   "diluted_shares_m": 4128,
+   "cash_b": 6.563,
+   "cash_return_text": "Purchase of Company stock $943M in the quarter",
+   "next_print": "Q2 FY08 print (mid-August)"
+  },
+  {
+   "quarter": "Q2 FY08",
+   "fy": 2008,
+   "q": 2,
+   "published": "2007-08-14",
+   "source": "WM12",
+   "release": "Aug 14",
+   "release_time": "before the open on Aug 14: 8-K accepted 06:13 ET; a pre-recorded call after the release",
+   "period_end": "2007-07-31",
+   "raw": {
+    "ns_m": 91990,
+    "ns_prior_m": 84524,
+    "other_m": 1022,
+    "other_prior_m": 906,
+    "cogs_m": 70589,
+    "cogs_prior_m": 64585,
+    "sga_m": 17130,
+    "sga_prior_m": 15741,
+    "op_m": 5293,
+    "op_prior_m": 5104,
+    "inv_m": 34184,
+    "inv_prior_m": 32087,
+    "diluted_shares_m": 4108
+   },
+   "sales_b": 91.99,
+   "sales_pct": 8.8,
+   "gross_margin": 23.26,
+   "gross_margin_bp": -32.5,
+   "op_margin": 5.75,
+   "op_margin_bp": -28.5,
+   "inventory_pct": 6.5,
+   "inventory_gap_pp": -2.3,
+   "comps_pct": 2.0,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.0% (Total U.S. | 1.9% | 1.7% | 2.0% | 1.8% | 0.1% | 0.1%)",
+   "segments": [
+    [
+     "Wal-Mart Stores",
+     59.013,
+     6.5
+    ],
+    [
+     "International",
+     21.6,
+     15.7
+    ],
+    [
+     "Sam's Club",
+     11.377,
+     8.6
+    ]
+   ],
+   "eps_q": 0.76,
+   "eps_q_prior": 0.72,
+   "diluted_shares_m": 4108,
+   "cash_b": 6.094,
+   "cash_return_text": "Purchase of Company stock $2,484M in the six months",
+   "next_print": "Q3 FY08 print (mid-November)"
+  },
+  {
+   "quarter": "Q3 FY08",
+   "fy": 2008,
+   "q": 3,
+   "published": "2007-11-13",
+   "source": "WM13",
+   "release": "Nov 13",
+   "release_time": "before the open on Nov 13: 8-K accepted 06:23 ET; a pre-recorded call after the release",
+   "period_end": "2007-10-31",
+   "raw": {
+    "ns_m": 90880,
+    "ns_prior_m": 83543,
+    "other_m": 1069,
+    "other_prior_m": 924,
+    "cogs_m": 69292,
+    "cogs_prior_m": 63765,
+    "sga_m": 17685,
+    "sga_prior_m": 16237,
+    "op_m": 4972,
+    "op_prior_m": 4465,
+    "inv_m": 39555,
+    "inv_prior_m": 38531,
+    "diluted_shares_m": 4056
+   },
+   "sales_b": 90.88,
+   "sales_pct": 8.8,
+   "gross_margin": 23.75,
+   "gross_margin_bp": 8.0,
+   "op_margin": 5.47,
+   "op_margin_bp": 12.6,
+   "inventory_pct": 2.7,
+   "inventory_gap_pp": -6.1,
+   "comps_pct": 1.5,
+   "comps_note": "Total U.S. comparable store sales with fuel +1.5% (Total U.S. | 1.5% | 1.5% | 1.5% | 1.2% | 0.0% | -0.3%)",
+   "segments": [
+    [
+     "Wal-Mart Stores",
+     57.651,
+     6.4
+    ],
+    [
+     "International",
+     22.403,
+     16.9
+    ],
+    [
+     "Sam's Club",
+     10.826,
+     6.1
+    ]
+   ],
+   "eps_q": 0.7,
+   "eps_q_prior": 0.62,
+   "diluted_shares_m": 4056,
+   "cash_b": 4.95,
+   "cash_return_text": "Purchase of Company stock $5,279M in the nine months",
+   "next_print": "Q4 FY08 print (mid-February)"
+  },
+  {
+   "quarter": "Q4 FY08",
+   "fy": 2008,
+   "q": 4,
+   "published": "2008-02-19",
+   "source": "WM14",
+   "release": "Feb 19",
+   "release_time": "before the open on Feb 19: 8-K accepted 06:18 ET; a pre-recorded call after the release",
+   "period_end": "2008-01-31",
+   "raw": {
+    "ns_m": 106269,
+    "ns_prior_m": 98090,
+    "other_m": 1159,
+    "other_prior_m": 988,
+    "cogs_m": 81323,
+    "cogs_prior_m": 75565,
+    "sga_m": 19224,
+    "sga_prior_m": 17080,
+    "op_m": 6881,
+    "op_prior_m": 6433,
+    "inv_m": 35180,
+    "inv_prior_m": 33685,
+    "diluted_shares_m": 3998
+   },
+   "sales_b": 106.269,
+   "sales_pct": 8.3,
+   "gross_margin": 23.47,
+   "gross_margin_bp": 51.1,
+   "op_margin": 6.48,
+   "op_margin_bp": -8.3,
+   "inventory_pct": 4.4,
+   "inventory_gap_pp": -3.9,
+   "comps_pct": 2.1,
+   "comps_note": "Total U.S. comparable store sales with fuel +2.1% (Total U.S. | 1.7% | 1.6% | 2.1% | 1.4% | 0.4% | -0.2%)",
+   "segments": [
+    [
+     "Wal-Mart Stores",
+     67.428,
+     5.0
+    ],
+    [
+     "International",
+     27.01,
+     18.8
+    ],
+    [
+     "Sam's Club",
+     11.831,
+     6.3
+    ]
+   ],
+   "eps_q": 1.02,
+   "eps_q_prior": 0.95,
+   "diluted_shares_m": 3998,
+   "cash_b": 5.569,
+   "cash_return_text": "Purchase of Company stock $7,691M in fiscal 2008",
+   "next_print": "Q1 FY09 print (mid-May)",
+   "eps_note": "'including a net charge of approximately $0.02 per share for certain items' (no figure excluding them)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 3.16,
+    "revenue_usd_b": 374.526,
+    "diluted_shares_m": 4072,
+    "normalization_note": "FY08 diluted EPS from continuing operations $3.16 from the Q4 FY08 release (net $3.13)",
+    "op_margin": 5.87,
+    "op_margin_note": "FY08 operating income $21,996M / net sales $374,526M (Q4 FY08 release)",
+    "gross_margin": 23.5,
+    "sales_growth": 8.6,
+    "comps_pct": 1.6,
+    "stores": null,
+    "tax_rate": 0.342,
+    "tax_note": "FY08 effective rate: provision $6,908M / pre-tax $20,198M",
+    "net_interest_b": 1.798,
+    "fcf_b": 5.417,
+    "cash_b": 5.569,
+    "fcf_note": "net cash provided by operating activities of continuing operations $20,354M less payments for property and equipment $14,937M"
+   }
+  },
+  {
+   "quarter": "Q1 FY09",
+   "fy": 2009,
+   "q": 1,
+   "published": "2008-05-13",
+   "source": "WM16",
+   "release": "May 13",
+   "release_time": "before the open on May 13: 8-K accepted 06:08 ET; a pre-recorded call after the release",
+   "period_end": "2008-04-30",
+   "raw": {
+    "ns_m": 94122,
+    "ns_prior_m": 85387,
+    "other_m": 1181,
+    "other_prior_m": 1023,
+    "cogs_m": 71886,
+    "cogs_prior_m": 65311,
+    "sga_m": 18107,
+    "sga_prior_m": 16249,
+    "op_m": 5310,
+    "op_prior_m": 4850,
+    "inv_m": 35541,
+    "inv_prior_m": 35200,
+    "diluted_shares_m": 3967
+   },
+   "sales_b": 94.122,
+   "sales_pct": 10.2,
+   "gross_margin": 23.62,
+   "gross_margin_bp": 11.3,
+   "op_margin": 5.64,
+   "op_margin_bp": -3.8,
+   "inventory_pct": 1.0,
+   "inventory_gap_pp": -9.2,
+   "comps_pct": 3.3,
+   "comps_note": "Total U.S. comparable store sales with fuel +3.3% (Total U.S. | 2.9% | 0.6% | 3.3% | 0.6% | 0.4% | 0.0%)",
+   "segments": [
+    [
+     "Wal-Mart Stores",
+     59.073,
+     6.6
+    ],
+    [
+     "International",
+     23.937,
+     22.0
+    ],
+    [
+     "Sam's Club",
+     11.112,
+     7.6
+    ]
+   ],
+   "eps_q": 0.76,
+   "eps_q_prior": 0.68,
+   "diluted_shares_m": 3967,
+   "cash_b": 8.072,
+   "cash_return_text": "Purchase of Company stock $1,375M in the quarter",
+   "next_print": "Q2 FY09 print (mid-August)",
+   "eps_note": "diluted net income per share (no discontinued operations in the quarter)"
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2008-08-14",
+   "source": "WM17",
+   "release": "Aug 14",
+   "release_time": "before the open on Aug 14: 8-K accepted 06:14 ET; a pre-recorded call after the release",
+   "period_end": "2008-07-31",
+   "raw": {
+    "ns_m": 101598,
+    "ns_prior_m": 91990,
+    "other_m": 1069,
+    "other_prior_m": 1009,
+    "cogs_m": 77642,
+    "cogs_prior_m": 70589,
+    "sga_m": 19228,
+    "sga_prior_m": 17127,
+    "op_m": 5797,
+    "op_prior_m": 5283,
+    "inv_m": 35382,
+    "inv_prior_m": 34184,
+    "diluted_shares_m": 3958
+   },
+   "sales_b": 101.598,
+   "sales_pct": 10.4,
+   "gross_margin": 23.58,
+   "gross_margin_bp": 31.5,
+   "op_margin": 5.71,
+   "op_margin_bp": -3.7,
+   "inventory_pct": 3.5,
+   "inventory_gap_pp": -6.9,
+   "comps_pct": 5.0,
+   "comps_note": "Total U.S. comparable store sales with fuel +5.0% (Total U.S. | 4.5% | 1.9% | 5.0% | 2.0% | 0.5% | 0.1%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     64.053,
+     8.5
+    ],
+    [
+     "International",
+     25.261,
+     16.9
+    ],
+    [
+     "Sam's Club",
+     12.284,
+     8.0
+    ]
+   ],
+   "eps_q": 0.86,
+   "eps_q_prior": 0.75,
+   "diluted_shares_m": 3958,
+   "cash_b": 6.907,
+   "cash_return_text": "Purchase of Company stock $2,184M in the six months",
+   "next_print": "Q3 FY09 print (mid-November)",
+   "eps_note": "the year-ago $0.75 is restated for a discontinued operation and 'included a net benefit of $0.04 per share from three items'",
+   "renames": {
+    "Wal-Mart Stores": "Walmart U.S."
+   }
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2008-11-13",
+   "source": "WM18",
+   "release": "Nov 13",
+   "release_time": "before the open on Nov 13: 8-K accepted 06:10 ET; a pre-recorded call after the release",
+   "period_end": "2008-10-31",
+   "raw": {
+    "ns_m": 97634,
+    "ns_prior_m": 90826,
+    "other_m": 1008,
+    "other_prior_m": 1039,
+    "cogs_m": 74114,
+    "cogs_prior_m": 69251,
+    "sga_m": 19236,
+    "sga_prior_m": 17653,
+    "op_m": 5292,
+    "op_prior_m": 4961,
+    "inv_m": 40416,
+    "inv_prior_m": 39535,
+    "diluted_shares_m": 3944
+   },
+   "sales_b": 97.634,
+   "sales_pct": 7.5,
+   "gross_margin": 24.09,
+   "gross_margin_bp": 33.6,
+   "op_margin": 5.42,
+   "op_margin_bp": -4.2,
+   "inventory_pct": 2.2,
+   "inventory_gap_pp": -5.3,
+   "comps_pct": 3.3,
+   "comps_note": "Total U.S. comparable store sales with fuel +3.3% (Total U.S. | 3.0% | 1.5% | 3.3% | 1.5% | 0.3% | 0.0%)",
+   "segments": [
+    [
+     "Walmart U.S.",
+     61.155,
+     6.1
+    ],
+    [
+     "International",
+     24.857,
+     11.2
+    ],
+    [
+     "Sam's Club",
+     11.622,
+     7.4
+    ]
+   ],
+   "eps_q": 0.77,
+   "eps_q_prior": 0.7,
+   "diluted_shares_m": 3944,
+   "cash_b": 5.92,
+   "cash_return_text": "Purchase of company stock $3,521M in the nine months",
+   "next_print": "Q4 FY09 print (mid-February)",
+   "eps_note": "the year-ago $0.70 'included a net benefit of $0.01 per share' from real estate gains"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2008,
+   "published": "2007-02-20",
+   "source": "WM10",
+   "doc": "Q4 FY07 release",
+   "eps_guide": [
+    3.15,
+    3.23
+   ],
+   "q_guide": {
+    "quarter": "Q1 FY08",
+    "eps": [
+     0.68,
+     0.71
+    ],
+    "comps": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2007-05-15",
+   "source": "WM11",
+   "doc": "Q1 FY08 release",
+   "q_guide": {
+    "quarter": "Q2 FY08",
+    "eps": [
+     0.75,
+     0.79
+    ],
+    "comps": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2007-08-14",
+   "source": "WM12",
+   "doc": "Q2 FY08 release",
+   "eps_guide": [
+    3.05,
+    3.13
+   ],
+   "eps_guide_note": "'updating its full year guidance'; the initial forecast was $3.15-3.23",
+   "q_guide": {
+    "quarter": "Q3 FY08",
+    "eps": [
+     0.62,
+     0.65
+    ],
+    "comps": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2007-11-13",
+   "source": "WM13",
+   "doc": "Q3 FY08 release",
+   "eps_guide": [
+    3.13,
+    3.17
+   ],
+   "eps_guide_note": "includes 'an anticipated restructuring charge for Seiyu of approximately $40 million after tax'",
+   "q_guide": {
+    "quarter": "Q4 FY08",
+    "eps": [
+     0.99,
+     1.03
+    ],
+    "comps": [
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "fy": 2009,
+   "published": "2008-02-19",
+   "source": "WM14",
+   "doc": "Q4 FY08 release",
+   "eps_guide": [
+    3.3,
+    3.43
+   ],
+   "q_guide": {
+    "quarter": "Q1 FY09",
+    "eps": [
+     0.7,
+     0.74
+    ]
+   }
+  },
+  {
+   "fy": 2009,
+   "published": "2008-05-13",
+   "source": "WM16",
+   "doc": "Q1 FY09 release",
+   "q_guide": {
+    "quarter": "Q2 FY09",
+    "eps": [
+     0.78,
+     0.81
+    ],
+    "comps": [
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "fy": 2009,
+   "published": "2008-08-14",
+   "source": "WM17",
+   "doc": "Q2 FY09 release",
+   "eps_guide": [
+    3.43,
+    3.5
+   ],
+   "eps_guide_note": "'raising our current forecast'",
+   "q_guide": {
+    "quarter": "Q3 FY09",
+    "eps": [
+     0.73,
+     0.76
+    ],
+    "comps": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "fy": 2009,
+   "published": "2008-11-13",
+   "source": "WM18",
+   "doc": "Q3 FY09 release",
+   "eps_guide": [
+    3.42,
+    3.46
+   ],
+   "eps_guide_note": "'tightened and modestly reduced'; currency 'projected to negatively affect this year’s fourth-quarter results by approximately six cents per share'",
+   "q_guide": {
+    "quarter": "Q4 FY09",
+    "eps": [
+     1.03,
+     1.07
+    ],
+    "comps": [
+     1,
+     3
+    ]
+   }
+  }
+ ],
+ "dividends": [],
+ "events": [],
+ "company_names": [],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'WMT'): the decade of the FY2007 10-K, the vintage public on 2008-01-04, is fiscal 1998-2007 (fiscal years end January 31). Each year-on-year change comes from the latest 10-K published by then that reports both years. For net sales, cost of sales, U.S. comparable store sales and inventories that is the FY2007 10-K's Eleven-Year Financial Summary (one table, restated for the McLane, South Korea and Germany dispositions; comparable store sales in whole percents as the table gives them, with the fiscal 2007 change of definition left in). The summary has no operating income, so each operating-margin change comes from the statements of income of the latest 10-K reporting both years (operating income = net sales and other income less cost of sales and operating, selling, general and administrative expenses, over net sales; a line in the statements from the FY2003 10-K, derived before it). Seams stay in, as published: the 1999-2000 Asda acquisition, the 2005-2006 Seiyu consolidation, the reclassification of interest income out of other income in the FY2003 10-K.",
+  "comps": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": 6.0,
+    "1999": 9.0,
+    "2000": 8.0,
+    "2001": 5.0,
+    "2002": 6.0,
+    "2003": 5.0,
+    "2004": 4.0,
+    "2005": 3.0,
+    "2006": 3.0,
+    "2007": 2.0
+   },
+   "sources": "WM9 (Eleven-Year Financial Summary, fiscal 1998-2007)",
+   "thresholds": {
+    "BEAR": -1,
+    "BASE": 2,
+    "BULL": 5,
+    "XBULL": 9
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1998": 47.89,
+    "1999": 16.34,
+    "2000": 60.42,
+    "2001": 18.39,
+    "2002": -18.71,
+    "2003": 33.97,
+    "2004": 10.62,
+    "2005": 47.26,
+    "2006": 10.79,
+    "2007": 35.52
+   },
+   "sources": "WM9 (Eleven-Year Financial Summary: net sales less cost of sales, fiscal 1997-2007)",
+   "thresholds": {
+    "BEAR": -60,
+    "BASE": -20,
+    "BULL": 30,
+    "XBULL": 60
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": 12.42,
+    "1999": 15.32,
+    "2000": 18.72,
+    "2001": 16.1,
+    "2002": 13.0,
+    "2003": 12.58,
+    "2004": 11.62,
+    "2005": 11.35,
+    "2006": 9.75,
+    "2007": 11.67
+   },
+   "sources": "WM9 (Eleven-Year Financial Summary: net sales, fiscal 1997-2007)",
+   "thresholds": {
+    "BEAR": 7,
+    "BASE": 10,
+    "BULL": 13,
+    "XBULL": 19
+   }
+  },
+  "inventory_gap": {
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "1998": -9.54,
+    "1999": -14.99,
+    "2000": -0.65,
+    "2001": -6.87,
+    "2002": -7.77,
+    "2003": -2.01,
+    "2004": -2.63,
+    "2005": 0.67,
+    "2006": -1.29,
+    "2007": -6.11
+   },
+   "sources": "WM9 (Eleven-Year Financial Summary: inventories and net sales, fiscal 1997-2007)",
+   "thresholds": {
+    "BEAR": 6,
+    "BASE": 1,
+    "BULL": -4,
+    "XBULL": -15
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1998": 5.61,
+    "1999": 38.67,
+    "2000": 22.41,
+    "2001": -11.84,
+    "2002": -43.11,
+    "2003": 11.44,
+    "2004": 7.15,
+    "2005": 13.06,
+    "2006": -8.88,
+    "2007": -11.58
+   },
+   "sources": "WM1 (1998), WM2 (1999), WM3 (2000), WM4 (2001), WM5 (2002), WM6 (2003), WM7 (2004), WM8 (2005), WM9 (2006), WM9 (2007)",
+   "thresholds": {
+    "BEAR": -90,
+    "BASE": -40,
+    "BULL": 10,
+    "XBULL": 40
+   }
+  },
+  "raw": {
+   "summary_fy1997_2007": {
+    "net_sales_m": {
+     "1997": 99627,
+     "1998": 112005,
+     "1999": 129161,
+     "2000": 153345,
+     "2001": 178028,
+     "2002": 201166,
+     "2003": 226479,
+     "2004": 252792,
+     "2005": 281488,
+     "2006": 308945,
+     "2007": 344992
+    },
+    "cost_of_sales_m": {
+     "1997": 78897,
+     "1998": 88163,
+     "1999": 101456,
+     "2000": 119526,
+     "2001": 138438,
+     "2002": 156807,
+     "2003": 175769,
+     "2004": 195922,
+     "2005": 216832,
+     "2006": 237649,
+     "2007": 264152
+    },
+    "inventories_m": {
+     "1997": 15556,
+     "1998": 16005,
+     "1999": 16058,
+     "2000": 18961,
+     "2001": 20710,
+     "2002": 21793,
+     "2003": 24098,
+     "2004": 26263,
+     "2005": 29419,
+     "2006": 31910,
+     "2007": 33685
+    },
+    "comps_pct": {
+     "1997": 5,
+     "1998": 6,
+     "1999": 9,
+     "2000": 8,
+     "2001": 5,
+     "2002": 6,
+     "2003": 5,
+     "2004": 4,
+     "2005": 3,
+     "2006": 3,
+     "2007": 2
+    },
+    "net_sales_increase_pct": {
+     "1997": 11.9,
+     "1998": 12.4,
+     "1999": 15.3,
+     "2000": 18.7,
+     "2001": 16.1,
+     "2002": 13.0,
+     "2003": 12.6,
+     "2004": 11.6,
+     "2005": 11.4,
+     "2006": 9.8,
+     "2007": 11.7
+    },
+    "source": "WM9"
+   },
+   "op_income_statements": {
+    "1998": {
+     "source": "WM1",
+     "1997": [
+      104859,
+      1319,
+      83510,
+      16946
+     ],
+     "1998": [
+      117958,
+      1341,
+      93438,
+      19358
+     ]
+    },
+    "1999": {
+     "source": "WM2",
+     "1998": [
+      117958,
+      1341,
+      93438,
+      19358
+     ],
+     "1999": [
+      137634,
+      1574,
+      108725,
+      22363
+     ]
+    },
+    "2000": {
+     "source": "WM3",
+     "1999": [
+      137634,
+      1574,
+      108725,
+      22363
+     ],
+     "2000": [
+      165013,
+      1796,
+      129664,
+      27040
+     ]
+    },
+    "2001": {
+     "source": "WM4",
+     "2000": [
+      165013,
+      1796,
+      129664,
+      27040
+     ],
+     "2001": [
+      191329,
+      1966,
+      150255,
+      31550
+     ]
+    },
+    "2002": {
+     "source": "WM5",
+     "2001": [
+      191329,
+      1787,
+      150255,
+      31550
+     ],
+     "2002": [
+      217799,
+      1873,
+      171562,
+      36173
+     ]
+    },
+    "2003": {
+     "source": "WM6",
+     "2002": [
+      204011,
+      1812,
+      159097,
+      35147
+     ],
+     "2003": [
+      229616,
+      1961,
+      178299,
+      39983
+     ]
+    },
+    "2004": {
+     "source": "WM7",
+     "2003": [
+      229616,
+      1961,
+      178299,
+      39983
+     ],
+     "2004": [
+      256329,
+      2352,
+      198747,
+      44909
+     ]
+    },
+    "2005": {
+     "source": "WM8",
+     "2004": [
+      256329,
+      2352,
+      198747,
+      44909
+     ],
+     "2005": [
+      285222,
+      2910,
+      219793,
+      51248
+     ]
+    },
+    "2006": {
+     "source": "WM9",
+     "2005": [
+      281488,
+      2822,
+      216832,
+      50178
+     ],
+     "2006": [
+      308945,
+      3156,
+      237649,
+      55739
+     ]
+    },
+    "2007": {
+     "source": "WM9",
+     "2006": [
+      308945,
+      3156,
+      237649,
+      55739
+     ],
+     "2007": [
+      344992,
+      3658,
+      264152,
+      64001
+     ]
+    }
+   },
+   "_doc": "statement rows are [net sales, other (membership and other) income, cost of sales, operating, selling, general and administrative expenses], millions"
+  }
+ }
+}
