@@ -9,6 +9,10 @@ lowest point-in-time Ratio B, in equal weight.
 - **Execution:** each trade happens at the next trading day's close after the signal. The short pays SPY's dividends.
   Interest on the short proceeds, borrow fees and commissions are not modelled.
 
+**Read "Is the 27% real?" at the end before quoting any number here.** Most of the +27% a year comes from a stock
+list picked in 2026. On a list without the three biggest compounders the same rules returned +15.8%; on the six weakest
+stocks, +9.5%.
+
 Everything here is a **label or a hypothesis**. Never feed it back into a model, a fact sheet, a builder or a method rule
 (retro/README.md, "The one rule").
 
@@ -126,3 +130,49 @@ The long book held since the last monthly entry is ACN, LOW and AVGO. ACN is the
   0.02% a trade. The long book's monthly turnover is in `RATIO_B_BASKET.md`.
 - **Six market drawdowns** are the whole crash record. The 100-day rule happened to catch long falls (2008, 2022) and
   fast ones (2020, 2025) alike; a faster crash could beat its lag.
+
+## Is the 27% real? A reality check
+
+The tests are printed by `python3 staging/retrospective/ratio_b_reality.py` and were fixed in its docstring before
+the first run. The point-in-time check was run separately (below).
+
+**The arithmetic is real.**
+- **Hand check:** three months recomputed by hand from raw Yahoo closes and dividends match the script (2009-03 +17.4%
+  / +17.4%, 2016-02 +10.9% / +11.0%, 2022-06 -11.7% / -11.7%).
+- **Outcomes:** the 18,583 stored 2y and 3y outcomes recompute exactly (`ratio_epp.py check`).
+- **No look-ahead in execution:** every trade happens at the close *after* the signal date.
+- **Point-in-time:** pending. The repo's point-in-time lint (`retro_tool.py lint`) and an as-of price check against
+  Yahoo are running on every first-of-month signal date; the result goes in a follow-up commit.
+
+**As a forward expectation it is not.** It stacks three things, and only one of them is the signal:
+
+| Universe (annual return / worst drawdown, 2008-2026) | SPY | Equal weight + hedge | **Ratio B book + hedge** | Ratio B minus equal |
+|---|---|---|---|---|
+| All eleven (the published result) | +11.2% / -51% | +14.3% / -16% | **+27.0% / -28%** | +12.7pp |
+| Without AVGO, AAPL, MSFT | +11.2% / -51% | +10.2% / -19% | **+15.8% / -28%** | +5.6pp |
+| Only the six weakest (ACN, NKE, PEP, UNP, WMT, XOM) | +11.2% / -51% | +8.4% / -21% | **+9.5% / -29%** | +1.0pp |
+
+1. **The stock list (hindsight).** The eleven were picked in 2026, after AVGO, AAPL and MSFT had already compounded.
+   Buying all eleven equally beat SPY by 6.7 points a year unhedged (17.9% against 11.2%). Two names carried the Ratio B
+   book: AVGO supplied 24% of its log return and AAPL 15%. Remove the three biggest compounders and the result falls to
+   +15.8%; keep only the six weakest and it is +9.5%, below SPY.
+2. **Ratio B itself: real within this list, much smaller outside it.** Three random stocks a month from the same eleven,
+   with the same hedge, returned a median 13.7% over 300 runs (5th-95th percentile 9.4% to 18.3%, best 21.8%). None
+   reached the Ratio B book's 27.0%. But the edge shrinks as the list gets weaker: +12.7, +5.6 and +1.0 points.
+   - A plausible reason: a low Ratio B means a stock near its BEAR price, usually after a fall. Buying that dip pays
+     handsomely in a future compounder (AVGO, AAPL) and little in a stock that keeps drifting (PEP, XOM).
+3. **Costs and taxes.**
+   - The long book turns over about 465% a year, and the hedge trades 11 times a year. A cost of 0.10% a trade takes
+     the result to +25.0% (worst drawdown -29%), and 0.25% to +22.1% (-32%).
+   - Frequent trading also realises gains every year, which taxes would reduce further (not modelled).
+
+Also not in the numbers:
+- **The method was written in 2026.** Its rules (the P/E percentiles and EPS windows behind BEAR and BULL) were frozen
+  and applied point-in-time, but chosen by people who knew the history.
+- **The period was good for US mega-caps.** 2008-2026 favoured exactly this kind of stock.
+
+**A fair reading:** on a list of quality stocks chosen today, without knowing which will become the next AVGO, the
+tests bracket the result at about +9.5% to +15.8% a year before costs, with worst drawdowns near -28%. That is roughly
+SPY's return or somewhat better, with about half SPY's worst drawdown. +27% needs the list to contain future winners,
+and nobody can pick that list in advance. The next real test is a universe fixed without hindsight, such as an
+index's members as of 2008, failures included.
