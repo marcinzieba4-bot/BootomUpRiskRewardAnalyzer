@@ -141,8 +141,10 @@ the first run. The point-in-time check was run separately (below).
   / +17.4%, 2016-02 +10.9% / +11.0%, 2022-06 -11.7% / -11.7%).
 - **Outcomes:** the 18,583 stored 2y and 3y outcomes recompute exactly (`ratio_epp.py check`).
 - **No look-ahead in execution:** every trade happens at the close *after* the signal date.
-- **Point-in-time:** pending. The repo's point-in-time lint (`retro_tool.py lint`) and an as-of price check against
-  Yahoo are running on every first-of-month signal date; the result goes in a follow-up commit.
+- **Point-in-time:** the repo's point-in-time lint (`retro_tool.py lint`) passed on all 2,467 first-of-month signal
+  dates the baskets read: 0 errors. Every as-of price matched Yahoo's close within 0.5%. Its 294 warnings are the tool's
+  "a later calendar year appears" check. A sample of 617 dates showed only quoted guidance ("about 30% in 2009" in a
+  2008 model, a fiscal-2017 outlook in 2016) and a share count read as a year (2,039.6 million). None is a later fact.
 
 **As a forward expectation it is not.** It stacks three things, and only one of them is the signal:
 
