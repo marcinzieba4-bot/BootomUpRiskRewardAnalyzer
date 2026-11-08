@@ -1,9 +1,9 @@
 # WMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the WMT weekly dates: 679 from 2008-01-04 to 2020-12-31. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the WMT weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f; 2018-2020: ec73369). Outcomes were computed on
-2026-11-07 from the closes posted to 2026-11-06; the two-year horizons end by 2022-12-30 (three-year: 2023-12-29).
+pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f; 2018-2020: ec73369; 2021-2023: 5748a2e). Outcomes to 2020 were
+computed on 2026-11-07 and those of 2021-2023 on 2026-11-08, from the closes posted to 2026-11-06 (the 2021-2023 section gives its horizons).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -244,3 +244,56 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   outcomes cannot tell them apart. The withdrawal mattered only to the text and to BASE (+9-12.5% on the COVID quarters), which could not
   bring the price within RICH's line. The calls were decided before scoring and stay; changing a rule means a new method version tested
   elsewhere.
+
+## 2021-2023 (156 dates)
+
+Scored on 2026-11-08, from the closes posted to 2026-11-06, after the point-in-time build (5748a2e) was pushed. The two-year horizons end
+by 2025-12-29; the three-year horizons exist for the 148 dates to 2023-11-03. Prices are on the as-of share basis (the 2024 three-for-one
+split undone).
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH (every date) | 156 | +63.9% | -0.9% to +132.9% | 85 | 144 | +32.4% | 12 |
+| tier AVOID | 149 | +61.7% | -0.9% to +132.9% | 78 | 137 | +30.7% | 12 |
+| tier WATCHLIST (2022-05-18 to 2022-07-08) | 7 | +68.9% | +61.3% to +74.9% | 7 | 7 | +36.5% | 0 |
+| 2021 | 52 | +12.0% | -0.9% to +20.0% | 0 | 46 | +1.1% | 6 |
+| 2022 | 52 | +63.9% | +11.3% to +102.7% | 33 | 46 | +32.4% | 6 |
+| 2023 | 52 | +94.9% | +68.8% to +132.9% | 52 | 52 | +69.1% | 0 |
+| FY20's EPS standing after the withdrawal (to 2021-02-12) | 6 | +3.1% | -0.9% to +5.2% | 0 | 0 | -4.2% | 6 |
+| FY22, FY21's EPS standing (2021-02-19 to 2021-08-13) | 26 | +12.0% | +5.4% to +18.4% | 0 | 26 | +0.7% | 0 |
+| FY22 guides (2021-08-18 to 2022-02-11) | 26 | +15.2% | +8.9% to +28.4% | 0 | 26 | +5.9% | 0 |
+| FY23, FY22's EPS standing (2022-02-18 to 2022-05-13) | 13 | +25.6% | +16.8% to +32.0% | 0 | 7 | +9.2% | 6 |
+| FY23 growth guides (2022-05-18 to 2023-02-17) | 40 | +78.8% | +56.3% to +118.2% | 40 | 40 | +37.4% | 0 |
+| FY24 guides (from 2023-02-22) | 45 | +94.6% | +68.8% to +132.9% | 45 | 45 | +70.1% | 0 |
+| highest third by adjusted gap (-1.54 to -1.25) | 52 | +83.3% | | 33 | 46 | +66.1% | 6 |
+| middle third (-1.82 to -1.56) | 52 | +17.8% | | 16 | 46 | +6.8% | 6 |
+| lowest third (-2.24 to -1.82) | 52 | +78.5% | | 36 | 52 | +36.7% | 0 |
+
+- **RICH failed on 144 of 156 dates.** A RICH call expects the stock to miss the +32.2% hurdle and lag SPY. It held only on the six dates
+  of January and February 2021 (two-year returns of -1% to +5%, 2 to 8 points behind SPY) and the six of 2022-04-08 to 2022-05-13 (+17% to
+  +32%, 2 to 7 points behind). The other 2021 dates returned only +5% to +20% but beat SPY, which returned -8% to +13% through the 2022 bear
+  market, by up to 19 points. From the Q1 FY23 print (2022-05-18) every date cleared the hurdle and beat SPY, by 16 to 85 points: the 40
+  dates under the FY23 growth guides returned +56% to +118%, the 45 under the FY24 guides +69% to +133%. The
+  seven WATCHLIST dates ($118-125, the period's cheapest entries) returned +61% to +75%. One-year returns ran -15% to +92% (median +13.3%,
+  ahead of SPY on 103); three-year returns +13% to +180% (median +114.1%, ahead of SPY on 141 of 148).
+- **The two-year price landed past BULL every time.** It landed nearest XBULL on 140 dates and BULL on 16, at 1.00-2.09 times the BULL price
+  and 1.25-2.52 times BASE: $137-350 two years on (as traded on the as-of basis). Drawdowns within the two years were 11-26%, the lowest close
+  2022-06-17's $118.29. For the third batch running the stock re-rated past every scenario multiple drawn from its own ten-year P/E window
+  (the 90th percentile 23.5-24.3x): the 2015-2017 hypothesis carries on, now without the benchmark leg to rescue the call as it partly did in
+  2019-2020. The outcomes record prices, not EPS, so they cannot say how much of the move was earnings and how much multiple. Hypothesis
+  for the method, not a rule: test a P/E window that can register a regime change, or a cross-sectional multiple, on other tickers before
+  any method change.
+- **Within each year the rankings flip.** The entry price ranks the return to the m12-24 average price at Spearman -0.49 within 2021 and
+  -0.58 within 2022 (cheaper entries did better) but +0.56 within 2023 (all dates: +0.39, the later and dearer entries rode the re-rating).
+  The EPP gap ranks it at -0.83, -0.10 and +0.02 (all dates: -0.60). The adjusted gap ranks it at -0.45, -0.27 and +0.65 (all dates: -0.06),
+  and its thirds are not ordered (+83%, +18%, +79%). Ratio B, infinite on 65 dates, ranks nothing.
+- **The operating signals: wrong in 2021 and 2022, right in 2023.** The proxy composite ranks the return to the m12-24 average price at
+  -0.52 within 2021, -0.69 within 2022 and +0.66 within 2023 (all dates: -0.12). Its highest readings (2.55-2.60, the lapping pandemic
+  quarters and Q1 FY22) came before the weakest returns, and its lowest (1.55, the inventory glut of the Q1 and Q2 FY23 prints) before the strongest. Over
+  the seven WMT batches the proxy composite has now ranked the outcome the wrong way in 2008, 2009-2011, 2012, 2015, 2016, 2020, 2021 and
+  2022, and the right way in 2017, 2018 (weakly), 2019 and 2023. Hypothesis for the method, not a rule: for a mature retailer, quarterly
+  comparable-sales and margin signals look contrarian more often than confirming; test it on other tickers before any change.
+- **The encoding calls, seen afterwards.** Only reported EPS moves classes (retro/README.md, "WMT 2021-2023"): its 12 FAIR dates of 2023
+  returned +89% to +133%, 40 to 85 points ahead of SPY, so FAIR (within 15 points of SPY) would have failed on every one as well. The
+  divestiture and growth-guide alternatives move only tiers, and on dates that all cleared the hurdle. The calls were decided before
+  scoring and stay; changing a rule means a new method version tested elsewhere.
