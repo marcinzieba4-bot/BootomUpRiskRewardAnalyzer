@@ -31,7 +31,9 @@ renames every reporting line and restates every year of the history, with operat
 the fields of a guide converted from reported growth (WMT 2021-2023); RCL: a guide with every guided field (Net Yields as published and at
 constant currency, capacity, the display fields, an EPS guide note), a later range for every quarter the fact sheet guides, and a print
 whose Net Yields, Net Cruise Costs, occupancy and raw figures are absurd and which restates every year of the history (the 'restates'
-field of RCL 2010-2013); every
+field of RCL 2010-2013), a later withdrawal and a later outlook in words for every guided year, the planted print's full-year actuals
+excluding its own year and a later vintage that excludes a year, and APCD and occupancy that a filing after CUTOFF first states on the
+last print before it (the 'stats_later' rule of RCL 2018-2021); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -246,6 +248,17 @@ try:
                                 "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         last.update(restates={y: 0.01 for y in v0["eps_normalized"]}, restates_note="PLANTED")
+        for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):   # a later withdrawal and outlook in words (RCL 2018-2021)
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "withdrawn_quote": "PLANTED",
+                                "withdrawn": ["eps_guide", "fy_rev", "fy_display", "q_guide", "note"]})
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "words": "PLANTED"})
+        p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
+        if p0.get("stats_later", {}).get("published", cutoff) >= cutoff:     # a real one public before CUTOFF stays
+            p0["stats_later"] = {"published": later, "source": p0["source"], "apcd": 1, "apcd_prior": 99, "occ": 1.0, "occ_prior": 99.0,
+                                 "capacity_pct": -99.0, "occupancy": 1.0, "occupancy_bp": -9800.0}
+        fa = copy.deepcopy(max((p for p in f["prints"] if "fy_actual" in p and p["published"] < cutoff), key=lambda p: p["published"])["fy_actual"])
+        fa.update(fy=2099, fy_label="FY99", eps_normalized=None, excluded_note="PLANTED", normalization_note="PLANTED", revenue_usd_b=0.01)
+        last.update(fy_actual=fa, no_ny_ncc=True, no_ny_ncc_note="PLANTED", ratio_note="PLANTED", ytd_sales_pct=-99.0, ytd_label="PLANTED")
     if TICKER == "WMT":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
                            # wins): a later guide may never reach an earlier date
         for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):
@@ -267,6 +280,8 @@ try:
     v.update(published=later, why="PLANTED", company="PLANTED")
     v["eps_normalized"] = {**v["eps_normalized"], "2099": 0.01}
     f["history_vintages"].append(v)
+    if TICKER == "RCL":    # a later vintage excluding a year (RCL 2018-2021)
+        v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

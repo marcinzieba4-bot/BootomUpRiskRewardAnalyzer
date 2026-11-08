@@ -1,0 +1,329 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "RCL",
+ "company": "Royal Caribbean Cruises Ltd.",
+ "as_of": "2019-01-11",
+ "price_date": "2019-01-11",
+ "price": 106.42,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cruise-line signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Royal Caribbean: 'Together, our Global Brands and our Partner Brands operate a combined total of 49 ships in the cruise vacation industry with an aggregate capacity of approximately 124,070 berths as of December 31, 2017'; 'Our principal competitors are Carnival Corporation & plc'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic conditions' (its own FY2017 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Royal Caribbean: 'Together, our Global Brands and our Partner Brands operate a combined total of 49 ships in the cruise vacation industry with an aggregate capacity of approximately 124,070 berths as of December 31, 2017'; 'Our principal competitors are Carnival Corporation & plc'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic conditions' (its own FY2017 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 1.06x; +21% to EPP floor; model-vs-market gap +1.12; conservative 2yr +59%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 1.06,
+  "ratio_b_fmt": "1.06x",
+  "epp": 88.0,
+  "epp_gap_pct": 20.9,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.55,
+  "sca": 0.35,
+  "adj_composite": 2.9,
+  "market_composite": 1.78,
+  "adj_gap": 1.12,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 58.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.62,
+    "pe": 11.3,
+    "price": 7,
+    "desc": "EPS -73.5%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 12.05,
+    "pe": 14.6,
+    "price": 176,
+    "desc": "EPS +17.0%/yr (Q4 cc guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 12.05,
+    "pe": 16.6,
+    "price": 200,
+    "desc": "EPS +17.0%/yr (FY08-FY17 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 34.33,
+    "pe": 19.5,
+    "price": 669,
+    "desc": "EPS +97.5%/yr (best 2-yr run FY08-FY17); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.06,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 1.12,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 1.31,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.44,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 0.94,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 58.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.0,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 1.15,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.14,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 1.09,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.06,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 1.42,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.06,
+   "epp_gap_pct": -7.0,
+   "adj_gap": 1.32,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.06,
+   "epp_gap_pct": 20.9,
+   "adj_gap": 1.21,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 58.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "RCL (retrospective, 2019-01-11) ◎ ACCUMULATE — Ratio B 1.06x (93.4% downside to Bear $7 / +87.9% upside to Bull $200) | Adj composite 2.90 vs market 1.78: gap +1.12 [UNDERVALUED] | +21% above the EPP floor $88 (10x FY18E $8.80) | Conservative 2-yr case: +58.6% total (+29.3%/yr) | At 12.1x FY18E the 15% hurdle price $141 sits at or below the BASE case; Net Yields +1.8% in Q3 2018, forward net revenue +16.83-17.38% (Q4 2018 net revenue guide at constant currency); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "RC76",
+   "published": "2018-02-21",
+   "filed": "2018-02-20 19:14 ET, after the close",
+   "title": "Royal Caribbean FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488718000017/rcl-20171231x10k.htm",
+   "supports": "selected financial data 2013-2017 including Adjusted EPS; occupancy 2017; revenues by type; dividends and share repurchases; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC70",
+   "published": "2017-02-24",
+   "filed": "2017-02-23 17:29 ET, after the close",
+   "title": "Royal Caribbean FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488717000020/rcl-20161231x10k.htm",
+   "supports": "selected financial data 2012-2016 including Adjusted EPS; occupancy 2012-2016; revenues by type; dividends and share repurchases; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC64",
+   "published": "2016-02-22",
+   "filed": "2016-02-22 09:04 ET, before the open",
+   "title": "Royal Caribbean FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488716000126/rcl-20151231x10k.htm",
+   "supports": "selected financial data 2011-2015 including Adjusted EPS; occupancy 2011-2015; revenues by type; dividends and share repurchases; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC58",
+   "published": "2015-02-24",
+   "filed": "2015-02-23 16:37 ET, after the close",
+   "title": "Royal Caribbean FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488715000025/rcl-20141231x10k.htm",
+   "supports": "selected financial data 2010-2014; Adjusted EPS 2012-2014; occupancy 2010-2014; revenues by type; dividends and the 2014 share repurchase; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC52",
+   "published": "2014-02-21",
+   "filed": "2014-02-20 17:08 ET, after the close",
+   "title": "Royal Caribbean FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488714000023/rcl-20131231x10k.htm",
+   "supports": "selected financial data 2009-2013; Adjusted EPS 2011-2013; occupancy 2009-2013; revenues by type; the dividends of 2013; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC46",
+   "published": "2013-02-25",
+   "filed": "2013-02-25 08:01 ET, before the open",
+   "title": "Royal Caribbean FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000104746913001567/a2213132z10-k.htm",
+   "supports": "selected financial data 2008-2012; occupancy 2008-2012; revenues by type; the dividends of 2012; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC9",
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:17 ET, after the close",
+   "title": "Royal Caribbean FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000043/form10kfinal.htm",
+   "supports": "selected financial data 2002-2006 (total revenues, operating income, diluted EPS before the cumulative effect of a change in accounting principle, diluted shares); occupancy 2002-2006; Net Revenues, Net Cruise Costs and APCD 2004-2006; revenues by type; the $0.15 quarterly dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC8",
+   "published": "2006-02-24",
+   "filed": "2006-02-24 09:37 ET, during the session",
+   "title": "Royal Caribbean FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488706000003/form10k2005.htm",
+   "supports": "selected financial data 2001-2005; occupancy 2001-2005; Net Revenues, Net Cruise Costs and APCD 2003-2005"
+  },
+  {
+   "id": "RC7",
+   "published": "2005-03-15",
+   "filed": "2005-03-14 17:14 ET, after the close",
+   "title": "Royal Caribbean FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488705000004/file10k.htm",
+   "supports": "selected financial data 2000-2004 (diluted EPS $2.31 for 2000); occupancy 2000-2004; Net Revenues, Net Cruise Costs and APCD 2002-2004"
+  },
+  {
+   "id": "RC6",
+   "published": "2004-03-16",
+   "filed": "2004-03-15 17:06 ET, after the close",
+   "title": "Royal Caribbean FY2003 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488704000004/annualreport2.htm",
+   "supports": "selected financial data 1999-2003 (total revenues, operating income, 1999 diluted shares 186,456K); occupancy 1999-2003; 2002 Net Yields -0.7% and Net Cruise Costs per APCD -2.2%"
+  },
+  {
+   "id": "RC5",
+   "published": "2003-03-25",
+   "filed": "2003-03-24 17:29 ET, after the close",
+   "title": "Royal Caribbean FY2002 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014403003650/g80869e20vf.htm",
+   "supports": "selected financial data 1998-2002 (revenues, operating income, 1998 diluted shares 181,165K); occupancy 1998-2002; 'Net yields for 2001 declined 9.1% from the prior year'"
+  },
+  {
+   "id": "RC4",
+   "published": "2002-04-08",
+   "filed": "2002-04-08 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY2001 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014402003619/g75173e20-f.htm",
+   "supports": "selected financial data 1997-2001 (revenues, operating income; 1997 diluted income before extraordinary item $1.20 and 152,174K diluted shares)"
+  },
+  {
+   "id": "RC3",
+   "published": "2001-04-17",
+   "filed": "2001-04-17 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY2000 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014401500838/g67041e20-f.txt",
+   "supports": "selected financial data 1996-2000 (revenues, operating income)"
+  },
+  {
+   "id": "RC2",
+   "published": "2000-04-04",
+   "filed": "2000-04-04 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY1999 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-00-004542.txt",
+   "supports": "selected statistical information 1997-1999 (occupancy 104.2%, 105.2%, 104.7%)"
+  },
+  {
+   "id": "RC1",
+   "published": "1999-04-02",
+   "filed": "1999-04-02 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY1998 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-99-004018.txt",
+   "supports": "selected statistical information 1996-1998 (occupancy 101.3%, 104.2%, 105.2%)"
+  },
+  {
+   "id": "RC75",
+   "published": "2018-01-24",
+   "filed": "2018-01-24 08:06 ET, before the open",
+   "title": "Royal Caribbean Q4 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488718000013/exh991form8k20180124.htm",
+   "supports": "Q4 2017 and FY2017 results; FY2018 and Q1 2018 estimates"
+  },
+  {
+   "id": "RC77",
+   "published": "2018-04-26",
+   "filed": "2018-04-26 08:18 ET, before the open",
+   "title": "Royal Caribbean Q1 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488718000038/exh991form8k20180426.htm",
+   "supports": "Q1 2018 results; FY2018 and Q2 2018 estimates"
+  },
+  {
+   "id": "RC78",
+   "published": "2018-08-02",
+   "filed": "2018-08-02 08:02 ET, before the open",
+   "title": "Royal Caribbean Q2 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488718000076/exh991form8k20180802.htm",
+   "supports": "Q2 2018 results; FY2018 and Q3 2018 estimates"
+  },
+  {
+   "id": "RC79",
+   "published": "2018-10-25",
+   "filed": "2018-10-25 08:39 ET, before the open",
+   "title": "Royal Caribbean Q3 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488718000083/a2018q3earningsrelease8-k.htm",
+   "supports": "Q3 2018 results; FY2018 and Q4 2018 estimates"
+  },
+  {
+   "id": "RC80",
+   "published": "2018-10-26",
+   "filed": "2018-10-25 17:32 ET, after the close",
+   "title": "Royal Caribbean Q3 2018 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488718000086/a2018q310q.htm",
+   "supports": "the $0.70 quarterly dividend declared in September 2018 (its first statement in a filing)"
+  },
+  {
+   "id": "W0",
+   "published": "2019-01-11",
+   "title": "Yahoo Finance daily prices, RCL and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/RCL/history",
+   "supports": "close $106.42 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2099 after 2019 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-08"
+}

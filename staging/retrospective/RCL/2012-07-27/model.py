@@ -315,18 +315,20 @@ CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
 # its best year, BASE = its worst year, BEAR = one median-to-worst step beyond the worst (Net Cruise Costs per APCD is
 # lower-is-better, the mirror image); retro/build_rcl.py checks these numbers against the fact sheet. Net Yields, Net
 # Cruise Costs per APCD, revenue growth and the operating margin derived from the release's statements and APCD, occupancy
-# as the release states it, each against the year-ago quarter in the same release
+# as the release states it, each against the year-ago quarter in the same release. A value the release does not state, or a
+# ratio over a base that is not positive, is None and scores BASE (the AAPL Mac-unit rule; retro/README.md, RCL)
+_f = lambda v: None if v is None else float(v)
 SIGNALS = [
-    ("Net Yields change", "% YoY", -20.0, -9.0, 1.0, 9.0, float(LATEST["ny_pct"]), True,
+    ("Net Yields change", "% YoY", -20.0, -9.0, 1.0, 9.0, _f(LATEST["ny_pct"]), True,
      "Close-in discounting to fill ships"),
-    ("Net Cruise Costs per APCD", "% YoY", 7.0, 6.0, 6.0, -2.0, float(LATEST["ncc_pct"]), False,
+    ("Net Cruise Costs per APCD", "% YoY", 7.0, 6.0, 6.0, -2.0, _f(LATEST["ncc_pct"]), False,
      "Fuel and running costs outrun yields"),
-    ("Total revenue growth", "% YoY", -17.0, -3.0, 10.0, 43.0, float(LATEST["sales_pct"]), True,
+    ("Total revenue growth", "% YoY", -17.0, -3.0, 10.0, 43.0, _f(LATEST["sales_pct"]), True,
      "New ships sail into falling prices"),
-    ("Occupancy change", "bp YoY", -560.0, -260.0, 40.0, 290.0, float(LATEST["occupancy_bp"]), True,
+    ("Occupancy change", "bp YoY", -560.0, -260.0, 40.0, 290.0, _f(LATEST["occupancy_bp"]), True,
      "Load factors slip as bookings come later"),
     (MARGIN_SIGNAL_NAME, "bp YoY", -1140.0, -540.0, 70.0, 290.0,
-     round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else float(LATEST["op_margin_bp"]), True,
+     round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else _f(LATEST["op_margin_bp"]), True,
      "Ship costs deleverage on lower yields"),
     (THEME_SIGNAL_NAME, "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
      THEME_SIGNAL_TRIGGER),
@@ -473,7 +475,7 @@ _verdict = ev["verdict"]
 ratio_b  = ev["rb"]
 signal_short, signal_full = legacy_tier(ratio_b)
 L = LATEST
-# Net Yields in the text (every release of the period states them; the value is derived from the release's figures)
+# Net Yields in the text (derived from the release's figures; "n/r" where the release states none)
 _pr_move = f"Net Yields went from {_now(PREV_NY[0], '%')} ({PREV_NY[1]}) to {_now(L['ny_pct'], '%')} ({L['quarter']})"
 _usd = lambda x: f"-{CUR}{-x:.2f}" if x < 0 else f"{CUR}{x:.2f}"
 
@@ -501,10 +503,17 @@ print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_
 _fyg = FY_REVENUE_B / REVENUE_HIST[max(REVENUE_HIST)] - 1
 print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if _fyg >= 0 else '−'} {abs(_fyg)*100:.1f}%: {FY_REVENUE_LABEL}); "
       f"split pro rata to {GROUPS_BASIS}")
-print(f"  {L['quarter']} ({L['release']}): total revenues ${L['sales_b']:.2f}B {L['sales_pct']:+.1f}%; Net Yields ${L['ny']:.2f} ({L['ny_pct']:+.1f}%); "
-      f"Net Cruise Costs ${L['ncc']:.2f} per APCD ({L['ncc_pct']:+.1f}%);")
-print(f"  capacity {L['capacity_pct']:+.1f}%; occupancy {L['occupancy']:.1f}% ({L['occupancy_bp']:+.0f}bp); operating margin {L['op_margin']:.2f}% "
-      f"({L['op_margin_bp']:+.1f}bp); EPS {_usd(L['eps_q'])} vs {_usd(L['eps_q_prior'])}")
+_rev_s = (f"{L['sales_pct']:+.1f}%" if L["sales_pct"] is not None else
+          "(no year-on-year change: the year-ago quarter's total revenues were not positive)")
+_ny_s = (f"Net Yields ${L['ny']:.2f} ({L['ny_pct']:+.1f}%); Net Cruise Costs ${L['ncc']:.2f} per APCD ({L['ncc_pct']:+.1f}%);"
+         if L["ny"] is not None else "Net Yields and Net Cruise Costs not stated;")
+print(f"  {L['quarter']} ({L['release']}): total revenues ${L['sales_b']:.2f}B {_rev_s}; {_ny_s}")
+_cap_s = (f"capacity {L['capacity_pct']:+.1f}%; occupancy {L['occupancy']:.1f}% ({L['occupancy_bp']:+.0f}bp)" if L["occupancy"] is not None
+          else "capacity and occupancy not yet stated")
+_om_s = (f"operating margin {L['op_margin']:.2f}% ({L['op_margin_bp']:+.1f}bp)" if L["op_margin_bp"] is not None else
+         f"operating margin {L['op_margin']:.2f}% (no year-on-year change: the year-ago quarter's total revenues were not positive)"
+         if L["op_margin"] is not None else "operating margin not meaningful (total revenues were not positive)")
+print(f"  {_cap_s}; {_om_s}; EPS {_usd(L['eps_q'])} vs {_usd(L['eps_q_prior'])}")
 print(f"  {VOLUMES_TEXT}")
 print(f"  {GUIDE_TEXT}")
 
@@ -552,7 +561,7 @@ print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"""
   KEY TRIGGER: {_pr_move};
   the bear case needs a demand recession that cost control (Net Cruise Costs per APCD
-  {L['ncc_pct']:+.1f}% now) no longer covers. {KEY_TRIGGER_TAIL}""")
+  {_now(L['ncc_pct'], '%')} now) no longer covers. {KEY_TRIGGER_TAIL}""")
 
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
@@ -655,7 +664,8 @@ print()
 print("═" * W)
 print("  Key catalysts to watch (from the as-of date):")
 print(f"  (1) {NEXT_PRINT} — the next read on Net Yields ({_now(L['ny_pct'], '%')} now) and the guide")
-print(f"  (2) Occupancy — {L['occupancy']:.1f}% in {L['quarter']} ({L['occupancy_bp']:+.0f}bp): whether the ships fill without deeper discounts")
+print(f"  (2) Occupancy — {L['occupancy']:.1f}% in {L['quarter']} ({L['occupancy_bp']:+.0f}bp): whether the ships fill without deeper discounts"
+      if L["occupancy"] is not None else f"  (2) Occupancy — not yet stated for {L['quarter']}: whether the ships fill without deeper discounts")
 print(f"  {CATALYST_3}")
 print(f"  {CATALYST_4}")
 print(f"  (5) Capital return at {PE_NOW:.0f}x — {CAPITAL_RETURN}: management's own read of the multiple")

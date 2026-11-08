@@ -526,3 +526,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $125.09 | Royal Caribbean Q3 2017 results | 2.55 | -0.11 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.7% | -17.8pp | -8.7% | ✓ |
 | 2017-12-22 | $121.06 | Royal Caribbean Q3 2017 results | 2.55 | -0.04 | 4.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.9% | -11.0pp | -5.3% | ✓ |
 | 2017-12-29 | $119.28 | Royal Caribbean Q3 2017 results | 2.55 | +0.00 | 4.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.4% | -8.6pp | -3.3% | ✓ |
+| 2018-01-05 | $121.23 | Royal Caribbean Q3 2017 results | 2.55 | -0.04 | 4.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2018-01-12 | $127.53 | Royal Caribbean Q3 2017 results | 2.55 | -0.15 | 6.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2018-01-19 | $128.97 | Royal Caribbean Q3 2017 results | 2.55 | -0.17 | 6.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2018-01-25 | $131.93 | Royal Caribbean Q4 2017 results | 2.15 | -0.24 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-02-02 | $129.66 | Royal Caribbean Q4 2017 results | 2.15 | -0.21 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-02-09 | $124.47 | Royal Caribbean Q4 2017 results | 2.15 | -0.11 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-02-16 | $131.68 | Royal Caribbean Q4 2017 results | 2.15 | -0.24 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-02-23 | $130.20 | Royal Caribbean Q4 2017 results | 2.15 | -0.19 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-03-02 | $122.63 | Royal Caribbean Q4 2017 results | 2.15 | -0.06 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-03-09 | $126.62 | Royal Caribbean Q4 2017 results | 2.15 | -0.12 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-03-16 | $124.75 | Royal Caribbean Q4 2017 results | 2.15 | -0.10 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-03-23 | $117.04 | Royal Caribbean Q4 2017 results | 2.15 | +0.03 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-03-29 | $117.74 | Royal Caribbean Q4 2017 results | 2.15 | +0.02 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2018-04-06 | $114.83 | Royal Caribbean Q4 2017 results | 2.15 | +0.07 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-04-13 | $113.74 | Royal Caribbean Q4 2017 results | 2.15 | +0.08 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-04-20 | $119.09 | Royal Caribbean Q4 2017 results | 2.15 | -0.01 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2018-04-27 | $111.82 | Royal Caribbean Q1 2018 results | 2.15 | +0.32 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-05-04 | $107.36 | Royal Caribbean Q1 2018 results | 2.15 | +0.41 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-05-11 | $107.06 | Royal Caribbean Q1 2018 results | 2.15 | +0.41 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-05-18 | $106.96 | Royal Caribbean Q1 2018 results | 2.15 | +0.43 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2018-05-25 | $109.80 | Royal Caribbean Q1 2018 results | 2.15 | +0.36 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-06-01 | $106.33 | Royal Caribbean Q1 2018 results | 2.15 | +0.44 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2018-06-08 | $103.48 | Royal Caribbean Q1 2018 results | 2.15 | +0.48 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2018-06-15 | $114.51 | Royal Caribbean Q1 2018 results | 2.15 | +0.27 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-06-22 | $111.55 | Royal Caribbean Q1 2018 results | 2.15 | +0.33 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-06-29 | $103.60 | Royal Caribbean Q1 2018 results | 2.15 | +0.48 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2018-07-06 | $104.74 | Royal Caribbean Q1 2018 results | 2.15 | +0.46 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2018-07-13 | $107.87 | Royal Caribbean Q1 2018 results | 2.15 | +0.40 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-07-20 | $110.56 | Royal Caribbean Q1 2018 results | 2.15 | +0.34 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-07-27 | $111.77 | Royal Caribbean Q1 2018 results | 2.15 | +0.33 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-08-03 | $112.42 | Royal Caribbean Q2 2018 results | 2.40 | +0.74 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-08-10 | $113.64 | Royal Caribbean Q2 2018 results | 2.40 | +0.72 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-08-17 | $115.72 | Royal Caribbean Q2 2018 results | 2.40 | +0.67 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-08-24 | $119.71 | Royal Caribbean Q2 2018 results | 2.40 | +0.58 | 1.75x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-08-31 | $122.58 | Royal Caribbean Q2 2018 results | 2.40 | +0.53 | 1.88x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2018-09-07 | $124.36 | Royal Caribbean Q2 2018 results | 2.40 | +0.50 | 1.97x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2018-09-14 | $129.29 | Royal Caribbean Q2 2018 results | 2.40 | +0.41 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-09-21 | $131.47 | Royal Caribbean Q2 2018 results | 2.40 | +0.37 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-09-28 | $129.94 | Royal Caribbean Q2 2018 results | 2.40 | +0.39 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2018-10-05 | $123.67 | Royal Caribbean Q2 2018 results | 2.40 | +0.52 | 1.93x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-10-12 | $119.05 | Royal Caribbean Q2 2018 results | 2.40 | +0.61 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-10-19 | $115.18 | Royal Caribbean Q2 2018 results | 2.40 | +0.70 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2018-10-26 | $103.07 | Royal Caribbean Q3 2018 results | 2.55 | +1.16 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-11-02 | $105.80 | Royal Caribbean Q3 2018 results | 2.55 | +1.13 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-11-09 | $107.17 | Royal Caribbean Q3 2018 results | 2.55 | +1.12 | 1.08x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-11-16 | $109.99 | Royal Caribbean Q3 2018 results | 2.55 | +1.08 | 1.14x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-11-23 | $110.28 | Royal Caribbean Q3 2018 results | 2.55 | +1.07 | 1.15x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-11-30 | $113.07 | Royal Caribbean Q3 2018 results | 2.55 | +1.03 | 1.22x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2018-12-07 | $104.92 | Royal Caribbean Q3 2018 results | 2.55 | +1.14 | 1.03x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-12-14 | $107.09 | Royal Caribbean Q3 2018 results | 2.55 | +1.12 | 1.08x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2018-12-21 | $92.52 | Royal Caribbean Q3 2018 results | 2.55 | +1.25 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2018-12-28 | $96.04 | Royal Caribbean Q3 2018 results | 2.55 | +1.22 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-01-04 | $98.76 | Royal Caribbean Q3 2018 results | 2.55 | +1.19 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-01-11 | $106.42 | Royal Caribbean Q3 2018 results | 2.55 | +1.12 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2019-01-18 | $109.35 | Royal Caribbean Q3 2018 results | 2.55 | +1.09 | 1.13x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2019-01-25 | $111.74 | Royal Caribbean Q3 2018 results | 2.55 | +1.04 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2019-01-31 | $120.05 | Royal Caribbean Q4 2018 results | 2.55 | +1.15 | 0.98x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2019-02-08 | $114.84 | Royal Caribbean Q4 2018 results | 2.55 | +1.19 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-02-15 | $117.97 | Royal Caribbean Q4 2018 results | 2.55 | +1.16 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2019-02-22 | $120.93 | Royal Caribbean Q4 2018 results | 2.55 | +1.14 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2019-03-01 | $119.03 | Royal Caribbean Q4 2018 results | 2.55 | +1.33 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-03-08 | $116.54 | Royal Caribbean Q4 2018 results | 2.55 | +1.35 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-03-15 | $117.18 | Royal Caribbean Q4 2018 results | 2.55 | +1.35 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-03-22 | $115.58 | Royal Caribbean Q4 2018 results | 2.55 | +1.36 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-03-29 | $114.62 | Royal Caribbean Q4 2018 results | 2.55 | +1.37 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-04-05 | $117.27 | Royal Caribbean Q4 2018 results | 2.55 | +1.34 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-04-12 | $121.94 | Royal Caribbean Q4 2018 results | 2.55 | +1.29 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-04-18 | $120.99 | Royal Caribbean Q4 2018 results | 2.55 | +1.31 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-04-26 | $121.16 | Royal Caribbean Q4 2018 results | 2.55 | +1.31 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-05-02 | $125.77 | Royal Caribbean Q1 2019 results | 2.15 | +0.84 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-05-10 | $126.07 | Royal Caribbean Q1 2019 results | 2.15 | +0.83 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-05-17 | $124.88 | Royal Caribbean Q1 2019 results | 2.15 | +0.85 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-05-24 | $123.68 | Royal Caribbean Q1 2019 results | 2.15 | +0.86 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-05-31 | $121.76 | Royal Caribbean Q1 2019 results | 2.15 | +0.89 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-06-07 | $120.97 | Royal Caribbean Q1 2019 results | 2.15 | +0.90 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-06-14 | $124.13 | Royal Caribbean Q1 2019 results | 2.15 | +0.84 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-06-21 | $114.84 | Royal Caribbean Q1 2019 results | 2.15 | +0.96 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-06-28 | $121.21 | Royal Caribbean Q1 2019 results | 2.15 | +0.89 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-07-05 | $115.40 | Royal Caribbean Q1 2019 results | 2.15 | +0.96 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-07-12 | $110.14 | Royal Caribbean Q1 2019 results | 2.15 | +1.00 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-07-19 | $110.15 | Royal Caribbean Q1 2019 results | 2.15 | +1.00 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-07-26 | $113.96 | Royal Caribbean Q2 2019 results | 2.30 | +1.05 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-08-02 | $110.73 | Royal Caribbean Q2 2019 results | 2.30 | +1.08 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-08-09 | $109.25 | Royal Caribbean Q2 2019 results | 2.30 | +1.10 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-08-16 | $105.18 | Royal Caribbean Q2 2019 results | 2.30 | +1.33 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-08-23 | $102.53 | Royal Caribbean Q2 2019 results | 2.30 | +1.36 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-08-30 | $104.28 | Royal Caribbean Q2 2019 results | 2.30 | +1.34 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-09-06 | $108.41 | Royal Caribbean Q2 2019 results | 2.30 | +1.10 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-09-13 | $114.83 | Royal Caribbean Q2 2019 results | 2.30 | +1.04 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-09-20 | $111.68 | Royal Caribbean Q2 2019 results | 2.30 | +1.07 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-09-27 | $107.03 | Royal Caribbean Q2 2019 results | 2.30 | +1.10 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-10-04 | $103.31 | Royal Caribbean Q2 2019 results | 2.30 | +1.34 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-10-11 | $107.57 | Royal Caribbean Q2 2019 results | 2.30 | +1.09 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-10-18 | $111.18 | Royal Caribbean Q2 2019 results | 2.30 | +1.06 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-10-25 | $111.37 | Royal Caribbean Q2 2019 results | 2.30 | +1.06 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-10-31 | $108.83 | Royal Caribbean Q3 2019 results | 2.15 | +0.86 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-11-08 | $114.53 | Royal Caribbean Q3 2019 results | 2.15 | +0.79 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-11-15 | $117.89 | Royal Caribbean Q3 2019 results | 2.15 | +0.73 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-11-22 | $119.13 | Royal Caribbean Q3 2019 results | 2.15 | +0.70 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-11-29 | $120.02 | Royal Caribbean Q3 2019 results | 2.15 | +0.68 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-12-06 | $122.07 | Royal Caribbean Q3 2019 results | 2.15 | +0.63 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-12-13 | $125.64 | Royal Caribbean Q3 2019 results | 2.15 | +0.56 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-12-20 | $131.08 | Royal Caribbean Q3 2019 results | 2.15 | +0.45 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2019-12-27 | $133.33 | Royal Caribbean Q3 2019 results | 2.15 | +0.39 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-01-03 | $133.49 | Royal Caribbean Q3 2019 results | 2.15 | +0.38 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-01-10 | $133.19 | Royal Caribbean Q3 2019 results | 2.15 | +0.39 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-01-17 | $135.05 | Royal Caribbean Q3 2019 results | 2.15 | +0.35 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-01-24 | $126.51 | Royal Caribbean Q3 2019 results | 2.15 | +0.53 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-01-31 | $117.08 | Royal Caribbean Q3 2019 results | 2.15 | +0.73 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-02-05 | $118.26 | Royal Caribbean Q4 2019 results | 2.00 | +0.55 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-02-14 | $113.16 | Royal Caribbean Q4 2019 results | 2.00 | +0.61 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-02-21 | $106.11 | Royal Caribbean Q4 2019 results | 2.00 | +0.68 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-02-28 | $80.41 | Royal Caribbean Q4 2019 results | 2.00 | +1.10 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-03-06 | $65.01 | Royal Caribbean Q4 2019 results | 2.00 | +1.46 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-03-13 | $32.33 | Royal Caribbean Q4 2019 results | 2.00 | +1.50 | -0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-03-20 | $23.81 | Royal Caribbean Q4 2019 results | 2.00 | +1.50 | -0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-03-27 | $34.50 | Royal Caribbean Q4 2019 results | 2.00 | +1.50 | -0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-04-03 | $24.39 | Royal Caribbean Q4 2019 results | 2.00 | +1.50 | -0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-04-09 | $40.22 | Royal Caribbean Q4 2019 results | 2.00 | +1.32 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-04-17 | $37.39 | Royal Caribbean Q4 2019 results | 2.00 | +1.32 | -0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-04-24 | $35.68 | Royal Caribbean Q4 2019 results | 2.00 | +1.32 | -0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-05-01 | $40.77 | Royal Caribbean Q4 2019 results | 2.00 | +1.32 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-05-08 | $39.92 | Royal Caribbean Q4 2019 results | 2.00 | +1.32 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-05-15 | $37.45 | Royal Caribbean Q4 2019 results | 2.00 | +1.50 | -0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-05-21 | $43.35 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-05-29 | $51.87 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-06-05 | $69.44 | Royal Caribbean Q1 2020 results | 1.35 | +0.16 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-06-12 | $61.18 | Royal Caribbean Q1 2020 results | 1.35 | +0.35 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-06-19 | $55.27 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-06-26 | $46.41 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-07-02 | $49.51 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-07-10 | $51.77 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-07-17 | $53.14 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-07-24 | $50.83 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-07-31 | $48.71 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-08-07 | $52.10 | Royal Caribbean Q1 2020 results | 1.35 | +0.60 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-08-11 | $58.67 | Royal Caribbean Q2 2020 results | 1.55 | -0.25 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-08-21 | $61.53 | Royal Caribbean Q2 2020 results | 1.55 | -0.27 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-08-28 | $70.12 | Royal Caribbean Q2 2020 results | 1.55 | -0.34 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-09-04 | $71.95 | Royal Caribbean Q2 2020 results | 1.55 | -0.36 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-09-11 | $69.34 | Royal Caribbean Q2 2020 results | 1.55 | -0.34 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-09-18 | $65.45 | Royal Caribbean Q2 2020 results | 1.55 | -0.31 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-09-25 | $64.59 | Royal Caribbean Q2 2020 results | 1.55 | -0.30 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-10-02 | $65.26 | Royal Caribbean Q2 2020 results | 1.55 | -0.30 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-10-09 | $71.09 | Royal Caribbean Q2 2020 results | 1.55 | -0.35 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-10-16 | $58.83 | Royal Caribbean Q2 2020 results | 1.55 | -0.25 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-10-23 | $64.48 | Royal Caribbean Q2 2020 results | 1.55 | -0.30 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-10-30 | $56.42 | Royal Caribbean Q3 2020 results | 1.70 | -0.09 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-11-06 | $58.57 | Royal Caribbean Q3 2020 results | 1.70 | -0.11 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-11-13 | $70.61 | Royal Caribbean Q3 2020 results | 1.70 | -0.20 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-11-20 | $72.58 | Royal Caribbean Q3 2020 results | 1.70 | -0.22 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-11-27 | $81.48 | Royal Caribbean Q3 2020 results | 1.70 | -0.29 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-12-04 | $82.73 | Royal Caribbean Q3 2020 results | 1.70 | -0.30 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-12-11 | $76.46 | Royal Caribbean Q3 2020 results | 1.70 | -0.25 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-12-18 | $72.29 | Royal Caribbean Q3 2020 results | 1.70 | -0.22 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-12-24 | $70.66 | Royal Caribbean Q3 2020 results | 1.70 | -0.21 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2020-12-31 | $74.69 | Royal Caribbean Q3 2020 results | 1.70 | -0.24 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-01-08 | $72.97 | Royal Caribbean Q3 2020 results | 1.70 | -0.23 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-01-15 | $72.92 | Royal Caribbean Q3 2020 results | 1.70 | -0.23 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-01-22 | $71.96 | Royal Caribbean Q3 2020 results | 1.70 | -0.22 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-01-29 | $65.00 | Royal Caribbean Q3 2020 results | 1.70 | -0.17 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-02-05 | $71.58 | Royal Caribbean Q3 2020 results | 1.70 | -0.22 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-02-12 | $67.63 | Royal Caribbean Q3 2020 results | 1.70 | -0.19 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-02-19 | $78.87 | Royal Caribbean Q3 2020 results | 1.70 | -0.28 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-02-23 | $90.05 | Royal Caribbean Q4 2020 results | 1.55 | -0.49 | 0.28x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-03-05 | $86.51 | Royal Caribbean Q4 2020 results | 1.55 | -0.47 | 0.24x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2021-03-12 | $90.22 | Royal Caribbean Q4 2020 results | 1.55 | -0.49 | 0.28x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-03-19 | $90.72 | Royal Caribbean Q4 2020 results | 1.55 | -0.50 | 0.29x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2021-03-26 | $84.56 | Royal Caribbean Q4 2020 results | 1.55 | -0.45 | 0.23x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-04-01 | $86.67 | Royal Caribbean Q4 2020 results | 1.55 | -0.47 | 0.25x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2021-04-09 | $89.88 | Royal Caribbean Q4 2020 results | 1.55 | -0.49 | 0.29x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-04-16 | $85.39 | Royal Caribbean Q4 2020 results | 1.55 | -0.46 | 0.24x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-04-23 | $85.81 | Royal Caribbean Q4 2020 results | 1.55 | -0.46 | 0.25x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-04-30 | $86.95 | Royal Caribbean Q1 2021 results | 1.55 | -0.47 | 0.26x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2021-05-07 | $84.29 | Royal Caribbean Q1 2021 results | 1.55 | -0.45 | 0.24x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-05-14 | $84.27 | Royal Caribbean Q1 2021 results | 1.55 | -0.45 | 0.24x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-05-21 | $82.82 | Royal Caribbean Q1 2021 results | 1.55 | -0.44 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2021-05-28 | $93.27 | Royal Caribbean Q1 2021 results | 1.55 | -0.52 | 0.34x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2021-06-04 | $94.07 | Royal Caribbean Q1 2021 results | 1.55 | -0.52 | 0.35x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2021-06-11 | $90.09 | Royal Caribbean Q1 2021 results | 1.55 | -0.49 | 0.31x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-06-18 | $85.64 | Royal Caribbean Q1 2021 results | 1.55 | -0.46 | 0.26x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-06-25 | $89.22 | Royal Caribbean Q1 2021 results | 1.55 | -0.49 | 0.31x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-07-02 | $86.04 | Royal Caribbean Q1 2021 results | 1.55 | -0.47 | 0.27x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2021-07-09 | $82.33 | Royal Caribbean Q1 2021 results | 1.55 | -0.44 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2021-07-16 | $72.39 | Royal Caribbean Q1 2021 results | 1.55 | -0.36 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-07-23 | $77.72 | Royal Caribbean Q1 2021 results | 1.55 | -0.41 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-07-30 | $76.87 | Royal Caribbean Q1 2021 results | 1.55 | -0.40 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-08-05 | $78.10 | Royal Caribbean Q2 2021 results | 1.55 | -0.38 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-08-13 | $78.89 | Royal Caribbean Q2 2021 results | 1.55 | -0.39 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-08-20 | $78.21 | Royal Caribbean Q2 2021 results | 1.55 | -0.38 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-08-27 | $83.26 | Royal Caribbean Q2 2021 results | 1.55 | -0.42 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-09-03 | $79.43 | Royal Caribbean Q2 2021 results | 1.55 | -0.39 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-09-10 | $81.56 | Royal Caribbean Q2 2021 results | 1.55 | -0.41 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-09-17 | $83.79 | Royal Caribbean Q2 2021 results | 1.55 | -0.42 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2021-09-24 | $90.69 | Royal Caribbean Q2 2021 results | 1.55 | -0.48 | 0.35x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-10-01 | $92.33 | Royal Caribbean Q2 2021 results | 1.55 | -0.49 | 0.37x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-10-08 | $87.73 | Royal Caribbean Q2 2021 results | 1.55 | -0.45 | 0.32x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2021-10-15 | $86.32 | Royal Caribbean Q2 2021 results | 1.55 | -0.44 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2021-10-22 | $84.63 | Royal Caribbean Q2 2021 results | 1.55 | -0.43 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2021-10-29 | $84.43 | Royal Caribbean Q3 2021 results | 1.85 | -0.14 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-11-05 | $96.67 | Royal Caribbean Q3 2021 results | 1.85 | -0.43 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2021-11-12 | $84.57 | Royal Caribbean Q3 2021 results | 1.85 | -0.14 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-11-19 | $80.47 | Royal Caribbean Q3 2021 results | 1.85 | -0.11 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-11-26 | $67.98 | Royal Caribbean Q3 2021 results | 1.85 | -0.01 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-12-03 | $66.76 | Royal Caribbean Q3 2021 results | 1.85 | +0.00 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-12-10 | $75.50 | Royal Caribbean Q3 2021 results | 1.85 | -0.07 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-12-17 | $72.41 | Royal Caribbean Q3 2021 results | 1.85 | -0.04 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-12-23 | $79.53 | Royal Caribbean Q3 2021 results | 1.85 | -0.10 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2021-12-31 | $76.90 | Royal Caribbean Q3 2021 results | 1.85 | -0.08 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |

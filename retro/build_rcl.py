@@ -31,6 +31,13 @@ its per-APCD table.
 From 2014 (retro/README.md, "RCL 2014-2017"): Net Yields and Net Cruise Costs are the company's own as-reported figures, re-derived from
 the statement rows less the lines its reconciliation excludes ('nr_x_k', 'nc_x_k': businesses held for sale or divested before their
 sale, other initiative costs, the net gain on the Pullmantur sale); every EPS guide is the company's Adjusted EPS ('eps_guide_note').
+From 2018 (retro/README.md, "RCL 2018-2021"): a guide may withdraw its year ('withdrawn': the 8-K of 2020-03-10), which voids every
+earlier field for that year (the LOW, SHW and WMT rule); a guide record may carry only the outlook in words ('words', no field); a year
+that is a loss even on the company's figure (FY2020) is excluded as XOM's FY2020 was ('excluded_note' on the Q4 print, 'eps_excluded' on
+the vintages); a release that states no Net Yields or Net Cruise Costs ('no_ny_ncc', Q2 2020 to Q3 2021) leaves those signals without a
+value, as is any ratio over a base that is not positive (Q3 2020's negative revenues), and each scores BASE (the AAPL Mac-unit rule); a
+print's APCD and occupancy may come from a later filing on its own date ('stats_later', the NKE futures_later rule: Q2 2021's 10-Q);
+and where the latest quarter's revenue growth has no value, BASE takes the same release's year-to-date growth ('ytd_sales_pct').
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. A release accepted after the close (Q2 2008, 2008-07-21 18:30 ET) is dated the next
@@ -43,6 +50,7 @@ Usage
   python3 retro/build_rcl.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_rcl.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_rcl.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_rcl.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_rcl.py 2008-01-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/RCL/<AS_OF>
 """
@@ -134,45 +142,68 @@ def check_print(p):
     """Re-derive a print's values from its raw published figures (they must match), and check the derived Net Yields and Net
     Cruise Costs changes against the ones the release states (within the release's own rounding of its per-APCD figures)."""
     r = p["raw"]
-    rv, rv0, ny, ny0 = derived(r)
-    nc = r["opex_k"] + r["msa_k"] - r["comm_k"] - r["onboard_k"] - r.get("nc_x_k", 0)             # the company's exclusions, as for
-    nc0 = r["opex_prior_k"] + r["msa_prior_k"] - r["comm_prior_k"] - r["onboard_prior_k"] - r.get("nc_x_prior_k", 0)   # Net Revenues
-    ncc, ncc0 = nc * 1000 / r["apcd"], nc0 * 1000 / r["apcd_prior"]
-    m, m0 = r["opinc_k"] / rv * 100, r["opinc_prior_k"] / rv0 * 100
-    want = {"sales_b": round(rv / 1e6, 3), "sales_pct": r1((rv / rv0 - 1) * 100), "ny": r2(ny), "ny_prior": r2(ny0),
-            "ny_pct": r1((ny / ny0 - 1) * 100), "ncc": r2(ncc), "ncc_prior": r2(ncc0), "ncc_pct": r1((ncc / ncc0 - 1) * 100),
-            "capacity_pct": r1((r["apcd"] / r["apcd_prior"] - 1) * 100), "occupancy": r["occ"],
-            "occupancy_bp": r1((r["occ"] - r["occ_prior"]) * 100), "op_margin": r2(m), "op_margin_bp": r1((m - m0) * 100),
+    rv, rv0 = r["rev_k"], r["rev_prior_k"]
+    m = lambda oi, x: oi / x * 100 if x > 0 else None          # a ratio needs a positive base (Q3 2020's revenues were negative)
+    m, m0 = m(r["opinc_k"], rv), m(r["opinc_prior_k"], rv0)
+    want = {"sales_b": round(rv / 1e6, 3), "sales_pct": r1((rv / rv0 - 1) * 100) if rv0 > 0 else None,
+            "op_margin": r2(m) if m is not None else None, "op_margin_bp": r1((m - m0) * 100) if None not in (m, m0) else None,
             "diluted_shares_m": r["diluted_shares_k"] / 1000, "cash_b": round(r["cash_k"] / 1e6, 3)}
+    if "apcd" in r:
+        want.update(capacity_pct=r1((r["apcd"] / r["apcd_prior"] - 1) * 100), occupancy=r["occ"], occupancy_bp=r1((r["occ"] - r["occ_prior"]) * 100))
+    else:                                  # APCD and occupancy from a later filing ('stats_later'), none on the print itself
+        sl = p["stats_later"]
+        assert sl["published"] > p["published"] and sl["capacity_pct"] == r1((sl["apcd"] / sl["apcd_prior"] - 1) * 100) and \
+            sl["occupancy_bp"] == r1((sl["occ"] - sl["occ_prior"]) * 100) and sl["occupancy"] == sl["occ"], (p["quarter"], "stats_later")
+        want.update(capacity_pct=None, occupancy=None, occupancy_bp=None)
+    if p.get("no_ny_ncc"):                 # the release states no Net Yields or Net Cruise Costs (Q2 2020 to Q3 2021)
+        want.update(ny=None, ny_prior=None, ny_pct=None, ncc=None, ncc_prior=None, ncc_pct=None)
+    else:
+        rv, rv0, ny, ny0 = derived(r)
+        nc = r["opex_k"] + r["msa_k"] - r["comm_k"] - r["onboard_k"] - r.get("nc_x_k", 0)             # the company's exclusions, as for
+        nc0 = r["opex_prior_k"] + r["msa_prior_k"] - r["comm_prior_k"] - r["onboard_prior_k"] - r.get("nc_x_prior_k", 0)   # Net Revenues
+        ncc, ncc0 = nc * 1000 / r["apcd"], nc0 * 1000 / r["apcd_prior"]
+        want.update(ny=r2(ny), ny_prior=r2(ny0), ny_pct=r1((ny / ny0 - 1) * 100), ncc=r2(ncc), ncc_prior=r2(ncc0),
+                    ncc_pct=r1((ncc / ncc0 - 1) * 100))
+    if "ytd_sales_pct" in p:
+        want["ytd_sales_pct"] = r1((r["ytd_rev_k"] / r["ytd_rev_prior_k"] - 1) * 100)
     for k, v in want.items():
-        assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+        assert p[k] == v or (None not in (p[k], v) and abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
     for k in ("ny", "ncc"):                # a change the release states as reported (from 2011 some state only constant currency)
         if p.get(f"{k}_stated_pct") is not None:
             assert abs(p[f"{k}_pct"] - p[f"{k}_stated_pct"]) <= 0.1, (p["quarter"], k, "stated")
     a = p.get("fy_actual")
     if a:
         ra = a["raw"]
-        rv, rv0, ny, ny0 = derived(ra)
-        nc, nc0 = ra["ncc_k"] * 1000 / ra["apcd"], ra["ncc_prior_k"] * 1000 / ra["apcd_prior"]
+        if "net_rev_k" in ra:
+            rv, rv0, ny, ny0 = derived(ra)
+            nc, nc0 = ra["ncc_k"] * 1000 / ra["apcd"], ra["ncc_prior_k"] * 1000 / ra["apcd_prior"]
+            yp, cp = r2((ny / ny0 - 1) * 100), r2((nc / nc0 - 1) * 100)
+        else:                              # FY2020: the release states no Net Revenues or Net Cruise Costs for the year
+            rv, rv0, yp, cp = ra["rev_k"], ra["rev_prior_k"], None, None
         want = {"revenue_usd_b": rv / 1e6, "op_margin": r2(ra["opinc_k"] / rv * 100), "sales_growth": r1((rv / rv0 - 1) * 100),
-                "ny_pct": r2((ny / ny0 - 1) * 100), "ncc_pct": r2((nc / nc0 - 1) * 100), "occupancy": ra["occ"],
+                "ny_pct": yp, "ncc_pct": cp, "occupancy": ra["occ"],
                 "capacity_pct": r1((ra["apcd"] / ra["apcd_prior"] - 1) * 100), "other_expense_b": round(-ra["other_k"] / 1e6, 4),
                 "cash_b": round(ra["cash_k"] / 1e6, 3), "fcf_b": round((ra["cfo_k"] - ra["capex_k"]) / 1e6, 3)}
         for k, v in want.items():
-            assert a[k] == v or abs(a[k] - v) < 1e-9, (p["quarter"], "fy_actual", k, a[k], v)
+            assert a[k] == v or (None not in (a[k], v) and abs(a[k] - v) < 1e-9), (p["quarter"], "fy_actual", k, a[k], v)
+        assert (a["eps_normalized"] is None) == ("excluded_note" in a), (p["quarter"], "an excluded year carries its note and no EPS")
 
 
 def check_vintage(v):
     """Re-derive a vintage's last-year values from its raw figures."""
     r = v["vintage_raw"]
-    rv, rv0, ny, ny0 = derived(r)
-    nc, nc0 = r["ncc_k"] * 1000 / r["apcd"], r["ncc_prior_k"] * 1000 / r["apcd_prior"]
+    if "net_rev_k" in r:
+        rv, rv0, ny, ny0 = derived(r)
+        nc, nc0 = r["ncc_k"] * 1000 / r["apcd"], r["ncc_prior_k"] * 1000 / r["apcd_prior"]
+        yp, cp = r2((ny / ny0 - 1) * 100), r2((nc / nc0 - 1) * 100)
+    else:                                  # the FY2020 10-K states no Net Revenues or Net Cruise Costs
+        rv, rv0, yp, cp = r["rev_k"], r["rev_prior_k"], None, None
     want = {"prev_fy_op_margin": r2(r["opinc_k"] / rv * 100), "prev_fy_sales_growth": r1((rv / rv0 - 1) * 100),
-            "prev_fy_ny_pct": r2((ny / ny0 - 1) * 100), "prev_fy_ncc_pct": r2((nc / nc0 - 1) * 100),
+            "prev_fy_ny_pct": yp, "prev_fy_ncc_pct": cp,
             "prev_fy_capacity_pct": r1((r["apcd"] / r["apcd_prior"] - 1) * 100), "other_expense_b": round(-r["other_k"] / 1e6, 4),
             "cash_b": round(r["cash_k"] / 1e6, 3), "fcf_b": round((r["cfo_k"] - r["capex_k"]) / 1e6, 3)}
     for k, x in want.items():
-        assert v[k] == x or abs(v[k] - x) < 1e-9, (v["published"], k, v[k], x)
+        assert v[k] == x or (None not in (v[k], x) and abs(v[k] - x) < 1e-9), (v["published"], k, v[k], x)
     last = max(v["revenue_usd_b"])
     assert abs(v["revenue_usd_b"][last] * 1e6 - rv) < 1e-3, (v["published"], "last year's revenue")
 
@@ -205,7 +236,17 @@ def build(as_of, facts, raw, spx, engine, out):
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
+    # on_basis (the shared split helper) divides every Q4 print's full-year EPS; an excluded year has none, so a NaN stands in for it
+    # there and None comes back after (the XOM encoding; Royal Caribbean has no split after 1998)
+    held = {p["quarter"] for p in facts["prints"] if "fy_actual" in p and p["fy_actual"]["eps_normalized"] is None}
+    facts = {**facts, "prints": [{**p, "fy_actual": {**p["fy_actual"], "eps_normalized": math.nan}} if p["quarter"] in held else p
+                                 for p in facts["prints"]]}
     facts, split_ids = on_basis(facts, as_of)
+    for p in facts["prints"]:
+        if p["quarter"] in held:
+            p["fy_actual"]["eps_normalized"] = None
+            assert not any(p["published"] < sp["effective"] <= as_of for sp in facts.get("splits", [])), \
+                (as_of, "a split after an excluded year: decide how its GAAP figure is restated first")
     for g in facts["guides"]:                      # a next-quarter EPS guide is per share too (on_basis covers the rest)
         r = math.prod(s["ratio"] for s in facts.get("splits", []) if g["published"] < s["effective"] <= as_of)
         if r != 1 and "eps" in g.get("q_guide", {}):
@@ -216,7 +257,9 @@ def build(as_of, facts, raw, spx, engine, out):
     h = vintages[-1]                                   # latest annual history public on AS_OF
     # prints published by AS_OF that report a fiscal year after the history (a Q4 print reports the year just ended, so it
     # stays in scope after the 10-K that follows it)
-    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    # a year excluded from the EPS history ('eps_excluded': FY2020, a loss even on the company's figure) is still reported (the XOM rule)
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
+    first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     # no disruption theme in taxonomy_eras.json is live for a cruise company in 2008-2013; the builder refuses events until a
@@ -230,10 +273,12 @@ def build(as_of, facts, raw, spx, engine, out):
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
+        if a and a["fy"] not in reported(h):                           # the 10-K vintage, once out, wins
             y = str(a["fy"])
+            if a["eps_normalized"] is None:                            # an excluded year: reported, but out of the EPS history
+                h.update(eps_excluded={**h.get("eps_excluded", {}), y: a["excluded_note"]})
             h.update(fy_label=a["fy_label"],
-                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     eps_normalized={**h["eps_normalized"], **({y: a["eps_normalized"]} if a["eps_normalized"] is not None else {})},
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -260,31 +305,49 @@ def build(as_of, facts, raw, spx, engine, out):
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     i = public.index(latest)
     prev = (public[i - 1]["ny_pct"], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_ny"], h["prev_q_label"])
+    later_ids = []
+    sl = latest.get("stats_later")
+    if sl and sl["published"] <= as_of:     # APCD and occupancy first stated by a later filing count from its date ('stats_later')
+        latest = {**latest, **{k: sl[k] for k in ("capacity_pct", "occupancy", "occupancy_bp")}}
+        later_ids.append(sl["source"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
-    cur_fy = max(eps_hist) + 1
+    excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
+    cur_fy = max(reported(h)) + 1
+    last_fy = max(eps_hist)            # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
 
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    stated = lambda k: next((g for g in reversed(guides) if k in g), None)
+    # a guide may withdraw its year ('withdrawn': the 8-K of 2020-03-10): each named field is void in every earlier guide for that year,
+    # so only a guide published on or after the withdrawal can state it again (the LOW, SHW and WMT rule)
+    void = {}
+    for g in guides:
+        for k in g.get("withdrawn", []):
+            void[k] = g["published"]
+    wd = next((g for g in reversed(guides) if g.get("withdrawn")), None)
+    gw = next((g for g in reversed(guides) if "words" in g), None)          # the latest outlook in words (no field)
+    stated = lambda k: next((g for g in reversed(guides) if k in g and g["published"] >= void.get(k, "")), None)
     ge, gr = stated("eps_guide"), stated("fy_rev")
     qkey = lambda q: (int(q.split()[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"], nq)                 # a next-quarter guide counts while its quarter is unreported
-    gq = next((g for g in reversed(guides) if "q_guide" in g and later(g["q_guide"]["quarter"])), None)
+    gq = next((g for g in reversed(guides) if "q_guide" in g and later(g["q_guide"]["quarter"])
+               and g["published"] >= void.get("q_guide", "")), None)
     q = None
     if gq:                                    # each field of the next quarter's guide from the latest guide that states it
         q = {}
         for g in guides:
-            if g.get("q_guide", {}).get("quarter") == gq["q_guide"]["quarter"]:
+            if g.get("q_guide", {}).get("quarter") == gq["q_guide"]["quarter"] and g["published"] >= void.get("q_guide", ""):
                 q.update(g["q_guide"])
     if ge:
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} EPS, guide midpoint" if ge["eps_guide"][0] != ge["eps_guide"][1] else f"{fy_e} EPS, guided figure"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
-        eps_now = eps_hist[cur_fy - 1]
-        eps_label = f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+        eps_now = eps_hist[last_fy]
+        eps_label = (f"{fy_e}: the {wd['doc']} withdrew the {fy_now} guide, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" if wd else
+                     f"{fy_e}: no numeric EPS guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands") + "".join(
+            f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fr = gr["fy_rev"] if gr else None
     has_q = q is not None and "ny" in q and "capacity" in q
     if has_q and "ny_cc" in q:               # method r2: the next-quarter guide on a constant-currency basis
@@ -307,17 +370,27 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd_label, fwd_short = f"{fy_now} net revenue guide", f"{fy_now} guide"
         fwd_kind = (f"no next-quarter guide in numbers: the {fy_now} guide, Net Yields {pct_range(*fr['ny'])} on capacity "
                     f"{fr['capacity']:+.1f}% (Net Revenues = Net Yields x APCD)")
-    else:                                     # no guide at all: the latest quarter's revenue growth as reported
+    elif latest["sales_pct"] is not None:     # no guide at all: the latest quarter's revenue growth as reported
         fwd, fwd_period = [latest["sales_pct"]] * 2, latest["quarter"]
         fwd_label, fwd_short = f"no {fy_now} guide in numbers, {latest['quarter']} revenues", f"{latest['quarter'][:2]} revenues"
         fwd_kind = f"no guide in numbers: {latest['quarter']} total revenue growth as reported"
+    else:                                     # ... and no quarter growth (a year-ago quarter with revenues not positive): the year to date
+        fwd, fwd_period = [latest["ytd_sales_pct"]] * 2, f"{latest['quarter']} {latest['ytd_label']}"
+        fwd_label = f"no {fy_now} guide in numbers, {latest['quarter'][-4:]}'s {latest['ytd_label']} revenues"
+        fwd_short = f"{latest['ytd_label']} revenues"
+        fwd_kind = (f"no guide in numbers and no {latest['quarter']} growth (its year-ago quarter's revenues were not positive): the "
+                    f"{latest['ytd_label']}' total revenue growth as reported")
     if fr:
         fy_basis = "ny_cc" if "ny_cc" in fr else "ny"
         fy_rev = net_rev(fr[fy_basis], fr["capacity"])
         fy_rev_label = f"{fy_now} net revenue guide{' at constant currency' if fy_basis == 'ny_cc' else ''}, applied to total revenues"
     else:
         fy_rev, fy_rev_label = fwd, f"{fwd_label}, applied to the year (no {fy_now} guide in numbers)"
-    if guides:
+    if not (ge or fr or q) and (wd or gw):    # no field in numbers: the withdrawal and the outlook in words
+        guide_text = (f"{fy_now}: no guide in numbers" + (f"; the {wd['doc']} withdrew it ('{wd['withdrawn_quote']}')" if wd else "")
+                      + f" (BASE takes {fwd_label.split(', ', 1)[1]})"
+                      + (f"; the {gw['doc']}, in words: '{gw['words']}' (no field)" if gw else ""))
+    elif guides:
         fyr = (([f"Net Yields {pct_range(*fr['ny'])}"] + ([f"{pct_range(*fr['ny_cc'])} at constant currency"] if "ny_cc" in fr else [])
                 + [f"capacity {fr['capacity']:+.1f}%"]) if fr else [])
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + fyr + \
@@ -327,7 +400,7 @@ def build(as_of, facts, raw, spx, engine, out):
                    ([f"{pct_range(*q['ny_cc'])} at constant currency"] if "ny_cc" in q else []) +
                    ([f"capacity {q['capacity']:+.1f}%"] if "capacity" in q else []) +
                    ([f"EPS ${eps_rng(*q['eps'])}"] if "eps" in q else []))] if q else []) + \
-               ([guides[-1]["note"]] if guides[-1].get("note") else [])
+               ([guides[-1]["note"]] if guides[-1].get("note") and guides[-1]["published"] >= void.get("note", "") else [])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
         guide_text = f"{fy_now}: no guide yet"
@@ -353,9 +426,12 @@ def build(as_of, facts, raw, spx, engine, out):
     eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY EPS, for the P/E series
     fy = lambda d: min(fiscal_year(d), cur_fy)     # a day past the last guided year keeps that year's EPS
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    # an excluded year's own days leave the window (the r2 rule's "the window starts after it", for a year that is not the first)
+    gone = sorted({fy(d) for d in window} & set(excluded))
+    window = [d for d in window if fy(d) not in excluded]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
-    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
+    window_label = ("10-yr" if years > 9.9 else f"{years:.1f}-yr") + "".join(f" ex-FY{y % 100:02d}" for y in gone)
     pe = {d: px[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -374,9 +450,11 @@ def build(as_of, facts, raw, spx, engine, out):
                 "  account; the bear needs yields to fall faster than running costs can be cut.")
     theme_summary = "no disruption theme has dated evidence"
     cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
+            f"(3) A numeric {fy_now} EPS guide again — the {wd['doc']} withdrew it" if wd else
             f"(3) A numeric {fy_now} EPS guide — none yet")
     cat4 = (f"(4) Net Cruise Costs per APCD — {latest['ncc_pct']:+.1f}% in {latest['quarter']}: fuel and running costs "
-            "against yields")
+            "against yields" if latest["ncc_pct"] is not None else
+            f"(4) Net Cruise Costs per APCD — not stated in {latest['quarter']}: running costs against yields once the ships sail")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -393,8 +471,8 @@ def build(as_of, facts, raw, spx, engine, out):
     company = renames[-1]["name"] if renames else h["company"]
     exchange = h["exchange"]
     groups = [tuple(g) for g in h["groups"]]
-    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + [g["source"] for g in guides]
-           + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames])
+    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + later_ids
+           + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, RCL and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/RCL/history",
@@ -406,9 +484,16 @@ def build(as_of, facts, raw, spx, engine, out):
                    "occupancy", "occupancy_bp", "op_margin", "op_margin_bp", "eps_q", "eps_q_prior")
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
-    volumes = (f"Net Yields: '{latest['ny_note']}'; Net Cruise Costs: '{latest['ncc_note']}'; capacity {latest['capacity_pct']:+.1f}%"
+    cap_s = f"capacity {latest['capacity_pct']:+.1f}%" if latest["capacity_pct"] is not None else "capacity not yet stated"
+    volumes = ((f"Net Yields: '{latest['ny_note']}'; Net Cruise Costs: '{latest['ncc_note']}'; " if not latest.get("no_ny_ncc") else
+                f"Net Yields and Net Cruise Costs: {latest['no_ny_ncc_note']}; ") + cap_s
+               + (f"; {latest['ratio_note']}" if latest.get("ratio_note") else "")
                + (f"; fuel: '{latest['fuel_note']}'" if latest["fuel_note"] else "")
                + (f"; EPS {latest['eps_note']}" if latest.get("eps_note") else ""))
+    fy_ny = (f"{h['fy_label']} Net Yields {h['prev_fy_ny_pct']:+.1f}% on capacity {h['prev_fy_capacity_pct']:+.1f}%" if h["prev_fy_ny_pct"] is not None
+             else f"{h['fy_label']} Net Yields not stated (capacity {h['prev_fy_capacity_pct']:+.1f}%)")
+    q_ny = (f"{latest['quarter']} Net Yields {latest['ny_pct']:+.1f}%" if latest["ny_pct"] is not None else f"{latest['quarter']} Net Yields not stated")
+    q_occ = f"occupancy {latest['occupancy']:.1f}%" if latest["occupancy"] is not None else "occupancy not yet stated"
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -483,7 +568,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} Net Yields {h['prev_fy_ny_pct']:+.1f}% on capacity {h['prev_fy_capacity_pct']:+.1f}%, occupancy {h['prev_fy_occupancy']:.1f}%; {latest['quarter']} Net Yields {latest['ny_pct']:+.1f}%, occupancy {latest['occupancy']:.1f}%")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {fy_ny}, occupancy {h['prev_fy_occupancy']:.1f}%; {q_ny}, {q_occ}")}
 BALANCE_TEXT    = {R(f"{h['fy_label']} year-end cash ${h['cash_b']:.3f}B, {h['fcf_label']} free cash flow {usd_b(h['fcf_b'])}, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}
