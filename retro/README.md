@@ -9128,6 +9128,7 @@ with the same `index.json` and their own `SERIES.md`.
 python3 retro/build_rcl.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
 python3 retro/build_rcl.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
 python3 retro/build_rcl.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+python3 retro/build_rcl.py --weekly 2014-01-06 2017-12-31                   # 208 dates, 2014-01-10 .. 2017-12-29
 for d in staging/retrospective/RCL/20[01][0-9]-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -9138,6 +9139,9 @@ for c in 2008-01-30 2008-02-19 2008-04-24 2008-07-01 2008-07-22 2008-10-28 2008-
 for c in 2010-01-28 2010-02-24 2010-04-28 2010-07-22 2010-10-26 2011-01-27 2011-02-25 2011-04-28 2011-07-28 2011-10-27 2012-02-02 \
          2012-02-29 2012-04-20 2012-07-26 2012-10-25 2012-10-26 2013-02-04 2013-02-25 2013-04-25 2013-07-25 2013-09-12 2013-10-24 \
          2014-01-01; do python3 retro/tools/firewall.py $c RCL; done
+for c in 2014-01-27 2014-02-21 2014-04-24 2014-07-24 2014-10-23 2014-10-24 2015-01-29 2015-02-24 2015-04-20 2015-07-31 2015-10-23 \
+         2015-10-26 2016-02-02 2016-02-22 2016-04-29 2016-08-02 2016-10-28 2016-10-31 2017-01-26 2017-02-24 2017-04-28 2017-08-01 \
+         2017-11-07 2017-11-08 2018-01-01; do python3 retro/tools/firewall.py $c RCL; done
 ```
 
 Royal Caribbean filed as a foreign private issuer until 2004: its annual reports for FY1998 to FY2003 are on Form 20-F (the FY1998-FY2000
@@ -9416,6 +9420,90 @@ Judgement calls that could carry hindsight (beyond the 2008-2009 list):
   restructuring (no class moves);
 - the May 2013 per-share impacts read as no guide, as the June 2009 ones were;
 - the net revenue implied by Net Yields and capacity as method r2's revenue guide, now the largest lever (42 classes on Net Yields alone).
+
+### RCL 2014-2017
+
+208 weekly dates, 2014-01-10 to 2017-12-29, on the same method, engine and rule-T thresholds; the series starts at 2014-01-06 because
+2013-12-31 already holds ISO week 1 of 2014 (the UNP and LOW practice). The fact sheet only gains facts and two optional raw fields; its
+2008-2013 content is unchanged and the 314 earlier models rebuild byte for byte. Read: every 8-K and 10-Q of February 2014 to January 2018
+(46 8-Ks, one an amendment, and 12 10-Qs), the FY2013-FY2016 10-Ks and the Q4 2013 release, all by Opus directly. 1,558 strings across
+2008-2017 were checked with `verbatim.py` against their own filings, 1,558 found; for every 2014-2017 guide the checklist also re-parses
+the table rows it checks and asserts they give the fact sheet's numbers. Decided on 2026-11-08, before any 2014-2017 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (08:00-08:58 ET); the five on a Friday (2015-07-31, 2015-10-23,
+  2016-04-29, 2016-10-28, 2017-04-28) date their week that day (the UNP 2014 rule). The FY2013, FY2014 and FY2016 10-Ks were accepted after
+  the close (2014-02-20 17:08, 2015-02-23 16:37, 2017-02-23 17:29 ET) and are dated the next trading day; the FY2015 10-K (2016-02-22 09:04)
+  keeps its date.
+- **Net Yields and Net Cruise Costs by the company's own definition.** From 2014 the releases state both excluding lines their
+  reconciliations list: Pullmantur's non-core businesses (a land tour company and a travel agency) while held for sale and before their
+  sale on 2014-03-31, then "other initiative costs" and, in Q3 2016, the net gain on the 51% sale of Pullmantur and CDF Croisières de
+  France. The company labels these figures "As-Reported" (against Constant-Currency), and the decade's rule-T values are the company's
+  own (2001-2002 stated, 2003-2006 its Net Revenues and Net Cruise Costs), so each print keeps its statement rows and adds the excluded
+  lines ('nr_x_k', 'nc_x_k'); the builder subtracts them (zero before 2014, so no earlier value changes). The derived figures equal the
+  company's Net Revenues and Net Cruise Costs rows in every release, and its stated as-reported Net Yields change on all 12 quarters that
+  state one (the four Q4 releases state the quarter only at constant currency; Net Cruise Costs are stated only excluding fuel, so the
+  checklist checks the per-APCD or thousands rows). Statement-derived values, without the exclusions, would read Q4 2014 Net Yields at
+  -5.0% against the company's +0.4% (land-tour revenue has no cruise days); rebuilt that way, no class or tier moves. The 2017 releases
+  restate the year-ago marketing, selling and administrative expenses to include 2016's restructuring charges; the year-ago figure is
+  taken from the same release's Net Cruise Costs reconciliation (as first reported), and the checklist checks both.
+- **EPS is the company's Adjusted EPS** (the ACN rule), each year from the latest filing that publishes it: 2013 $2.40 (GAAP $2.14, after
+  $56.9 million of restructuring and related charges); from the Q4 2014 release the company's Adjusted EPS also excludes the divested
+  businesses and gives 2013 as $2.44, which replaces $2.40 from 2015-01-29 (the SHW `restates` rule) until the FY2014 10-K carries 2012
+  $2.02, 2013 $2.44 and 2014 $3.39 (GAAP $3.43). The FY2013 10-K already printed the $2.44 and $2.02 as "excluding estimated impact of
+  businesses held for sale", beside its headline $2.40 and $1.97; the headline stands until the company adopts the basis. 2015 is $4.83
+  (GAAP $3.02, after the $399.3 million Pullmantur impairment) and 2016 $6.08 (GAAP $5.93); from the FY2015 10-K the five-year selected
+  data itself prints Adjusted EPS. No year is excluded. History vintages FY2013 (2004-2013), FY2014 (2005-2014), FY2015 (2006-2015) and
+  FY2016 (2007-2016), the first year's diluted shares from the FY2008-FY2011 10-Ks (234,580K, 234,714K, 221,485K, 214,255K).
+- **Guides:** every EPS guide is Adjusted EPS ('eps_guide_note'). Current-FY EPS: FY14 $3.30 from 2014-01-28 ($3.20-3.40), $3.35 from
+  2014-04-25, $3.45 from 2014-07-25; FY15 $4.75 from 2015-01-30, $4.55 from 2015-04-21, $4.70 from 2015-07-31, $4.80 from 2015-10-23; FY16
+  $6.00 from 2016-02-03, $6.25 from 2016-04-29, $6.05 from 2016-08-03; FY17 $7.00 from 2017-01-27, $7.10 from 2017-04-28, $7.40 from
+  2017-08-02, $7.375 from 2017-11-08. Every release guides the next quarter at constant currency, so BASE always takes it. Capacity turns
+  negative after Pullmantur's deconsolidation (August 2016): -0.2% for Q4 2016, -1.7% to -2.4% for 2017, -4.0% for Q2 and Q3 2017, as
+  published. The Q3 2016 release's full-year constant-currency Net Yields of "4.0% or better" is taken at its stated bound.
+- **Dividends,** each first stated in the Q3 10-Q, accepted after the close: $0.30 from 2014-10-24, $0.375 from 2015-10-26, $0.48 from
+  2016-10-31, $0.60 from 2017-11-08. Share repurchases (3.5 million shares from A. Wilhelmsen in Q4 2014, the $500 million programs of
+  October 2015 and April 2017) reach the model through the diluted share count and are quoted in the cash-return text.
+- **Operating margins keep the Pullmantur impairments and restructuring charges** (Q3 2015 -1,194bp, Q3 2016 +1,844bp against it, Q4 2013
+  +1,962bp against Q4 2012's): no release publishes operating income excluding them. Rebuilt with them excluded, no class or tier moves.
+- **Adds nothing:** the Pullmantur joint-venture 8-K of 2016-05-10 ("an immaterial one-time gain", no figure); the ship-order, financing,
+  officer, director, shareholder-vote and trading-plan 8-Ks; the 10-Qs beyond the dividends.
+- **Anachronism list:** Project Edge (from 2014-12-05) and Project Icon (from 2016-10-31) join `taxonomy_eras.json`; no model of any ticker
+  contains them. RCL's source ids run to `RC74`. `retro_tool run` warns of "2091" on 51 dates of 2016-2017: the FY15 other expense of
+  $0.2091B (`NET_INTEREST_B`), a number, not a year.
+
+Controls: altering one value of each print from Q3 2013 (and each Q4 print's full-year EPS), guide (its EPS range, next-quarter Net Yields and fiscal-year constant-currency Net Yields), vintage, dividend and the Q4 2014 restatement must change no date before its publication and the first weekly date on or after it (results: CONTROLS_RESULT). A scan of the 522 models finds no figure, note, guide, text or source of a later print, guide, vintage or dividend
+before its first publication (0 of 205,547 pairs). The firewall (with its RCL plant of a later restatement of every history year) passes
+at all 25 cutoffs above. No shared code changed, so no other ticker is rebuilt.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH almost throughout:** 2014 RICH on all 51 dates (8 of 8 robustness on every one), 2015 on all 53, 2016 RICH 14, FAIR 35 and CHEAP
+  3 (2016-07-08, 2016-09-09, 2016-09-16, the only dates under the EPP floor), 2017 RICH on all 52. RICH runs unbroken from 2014-01-10 to
+  2016-01-29 (108 dates) and from 2016-11-11 to 2017-12-29 (60). The legacy tier is AVOID on 179 and WATCHLIST on 29.
+- **Why RICH:** the BEAR case is still 2009's fall (-73.5%/yr) at the 10th-percentile P/E, $2-5 a share, a 94-98% fall on every date, so
+  Ratio B turns on the upside to BULL; BULL is the decade CAGR or BASE where higher (1.4-11.7%/yr), and BASE runs at 0-7%/yr in 2014,
+  2.5-11.7% in 2015, 5.3-11.7% in 2016 and -0.0% to 6.0% in 2017 (the Q3 2017 guide's yields of 4.0-4.5% on capacity of -4.0%). The price was
+  above BULL (Ratio B infinite) on 23 dates of 2014 and 12 of 2015. On guided EPS the stock traded at 15.0-23.8x in 2014 (61st-96th
+  percentile of its own window), 14.9-24.5x in 2015, 10.9-19.1x in 2016 and 13.5-17.5x in 2017, against a window whose 10th percentile is
+  10.2x, median 14.3-14.6x and 90th 18.6-19.8x; the EPP floor is 11x (10x in part of 2016).
+- **The proxy composite** reads 2.20-3.05 in 2014, 2.25-2.85 in 2015 and 2016, and 2.55-3.20 in 2017 (Q2 2017's 3.20, Net Yields
+  +9.9% with Pullmantur gone, equals the series' high of Q2-Q3 2010).
+
+How far each call moves the classes (the 208 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- Net Yields and Net Cruise Costs from the statements, without the company's exclusions: no class, no tier;
+- GAAP EPS for 2012-2016 instead of the company's Adjusted EPS: 97 classes (every 2016 date but seven toward CHEAP or FAIR, and all of
+  2017's 52 from RICH to FAIR or CHEAP) and 93 tiers: GAAP 2015 ($3.02, after the impairment) and 2012 ($0.08) raise the stock's own P/E
+  window, so later prices read cheaper against it;
+- the FY2013 restatement to $2.44 ignored until the 10-K: no class, no tier; operating income before the impairments and the Q4 2013
+  restructuring: no class, no tier;
+- the guides as reported, or forward growth on Net Yields alone: 3 classes each (2016-03-18, 2016-04-08, 2016-05-20, FAIR to RICH);
+- every signal at BEAR: 20 classes (2016, FAIR to RICH); every signal at XBULL or Net Cruise Costs at BASE: none.
+The RICH calls of 2014-2015 hold under every variant; those of 2017 hold under all but GAAP EPS.
+
+Judgement calls that could carry hindsight (beyond the earlier lists):
+- the company's Adjusted EPS for 2012-2016 (97 classes move at GAAP), and its 2014 redefinition applied from the release that made it;
+- Net Yields and Net Cruise Costs by the company's definition rather than the statements (no class moves);
+- "4.0% or better" read at its bound; capacity as published through the Pullmantur deconsolidation (the 2017 BASE of about 0%);
+- the year-ago marketing expense taken from the cost reconciliation in the 2017 releases.
 
 ## Categories change with the era
 

@@ -1188,6 +1188,16 @@
     "note": "the ship class ordered as Project Sunshine; first in a Royal Caribbean filing in its FY2012 10-K (accepted 2013-02-25 08:01 ET, before the open)"
    },
    {
+    "term": "Project Edge",
+    "first_seen": "2014-12-05",
+    "note": "the code name of Celebrity Cruises' next ship class (later Edge-class); first in a Royal Caribbean filing in its 8-K of 2014-12-04 (accepted 16:54 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Project Icon",
+    "first_seen": "2016-10-31",
+    "note": "the code name of Royal Caribbean International's next ship class (later Icon-class); first in a Royal Caribbean filing in its Q3 2016 10-Q (accepted 2016-10-28 17:11 ET, after the close, so it counts from the next trading day)"
+   },
+   {
     "term": "Quantum of the Seas",
     "first_seen": "2013-02-25",
     "note": "the first Quantum-class ship; first in a Royal Caribbean filing in its FY2012 10-K (accepted 2013-02-25 08:01 ET, before the open)"

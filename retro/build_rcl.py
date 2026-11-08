@@ -28,6 +28,9 @@ release's interest expense revision of FY2009 and FY2010), which replaces them u
 EPS guide stated only as adjusted EPS ('eps_guide_note', Q3 2013) is used as the company's figure excluding the item (the ACN rule); and
 a release that states a quarter's Net Yield or Net Cruise Cost change only at constant currency leaves the as-reported cross-check to
 its per-APCD table.
+From 2014 (retro/README.md, "RCL 2014-2017"): Net Yields and Net Cruise Costs are the company's own as-reported figures, re-derived from
+the statement rows less the lines its reconciliation excludes ('nr_x_k', 'nc_x_k': businesses held for sale or divested before their
+sale, other initiative costs, the net gain on the Pullmantur sale); every EPS guide is the company's Adjusted EPS ('eps_guide_note').
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. A release accepted after the close (Q2 2008, 2008-07-21 18:30 ET) is dated the next
@@ -39,6 +42,7 @@ Usage
   python3 retro/build_rcl.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_rcl.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_rcl.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_rcl.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_rcl.py 2008-01-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/RCL/<AS_OF>
 """
@@ -118,8 +122,10 @@ def rule_t(rt):
 def derived(r):
     """a quarter's or year's values from its raw figures (thousands; APCD in days; occupancy in percent)"""
     rv, rv0 = r["rev_k"], r["rev_prior_k"]
-    nr = r.get("net_rev_k", rv - r.get("comm_k", 0) - r.get("onboard_k", 0))
-    nr0 = r.get("net_rev_prior_k", rv0 - r.get("comm_prior_k", 0) - r.get("onboard_prior_k", 0))
+    # a print's Net Revenues by the company's own definition: from 2014 the releases exclude the divested Pullmantur businesses and
+    # 'other initiative costs' and print the lines they exclude ('nr_x_k', 'nr_x_prior_k'; zero before 2014)
+    nr = r.get("net_rev_k", rv - r.get("comm_k", 0) - r.get("onboard_k", 0) - r.get("nr_x_k", 0))
+    nr0 = r.get("net_rev_prior_k", rv0 - r.get("comm_prior_k", 0) - r.get("onboard_prior_k", 0) - r.get("nr_x_prior_k", 0))
     ny, ny0 = nr * 1000 / r["apcd"], nr0 * 1000 / r["apcd_prior"]
     return rv, rv0, ny, ny0
 
@@ -129,8 +135,8 @@ def check_print(p):
     Cruise Costs changes against the ones the release states (within the release's own rounding of its per-APCD figures)."""
     r = p["raw"]
     rv, rv0, ny, ny0 = derived(r)
-    nc = r["opex_k"] + r["msa_k"] - r["comm_k"] - r["onboard_k"]
-    nc0 = r["opex_prior_k"] + r["msa_prior_k"] - r["comm_prior_k"] - r["onboard_prior_k"]
+    nc = r["opex_k"] + r["msa_k"] - r["comm_k"] - r["onboard_k"] - r.get("nc_x_k", 0)             # the company's exclusions, as for
+    nc0 = r["opex_prior_k"] + r["msa_prior_k"] - r["comm_prior_k"] - r["onboard_prior_k"] - r.get("nc_x_prior_k", 0)   # Net Revenues
     ncc, ncc0 = nc * 1000 / r["apcd"], nc0 * 1000 / r["apcd_prior"]
     m, m0 = r["opinc_k"] / rv * 100, r["opinc_prior_k"] / rv0 * 100
     want = {"sales_b": round(rv / 1e6, 3), "sales_pct": r1((rv / rv0 - 1) * 100), "ny": r2(ny), "ny_prior": r2(ny0),
