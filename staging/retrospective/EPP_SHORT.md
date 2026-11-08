@@ -82,7 +82,7 @@ Each month, short every signalled stock in equal weight against 100% SPY.
 | without tech | **MAIN and the price down over 12 months** | 12m | **+2.0%** | +0.22 | -33% |
 
 - **No version of the basket was worth running.** The best made 1-2% a year, with drawdowns of -27% to -33%.
-- **The main basket lost money in 15 of 19 calendar years.** It made money in 2015, 2019 and 2024 (2024 +23%).
+- **The main basket lost money in 16 of 19 calendar years.** It made money in 2015, 2019 and 2024 (2024 +23%).
 - **2008 is the telling year.** With SPY down 37%, the main basket still lost 23%: the "losers" fell even more than the
   market.
 
