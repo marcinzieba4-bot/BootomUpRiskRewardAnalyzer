@@ -1,8 +1,8 @@
 # RCL retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the RCL weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**: never feed
+Patterns seen in `outcome.json` for the RCL weekly dates: 731 from 2008-01-04 to 2021-12-31. They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008-2009:
-ea16eb8; 2010-2013: fa305ce; 2014-2017: 6b78a85). Outcomes were computed on 2026-11-08 from the closes posted to 2026-11-06; every date has its 6-month, 1-, 2-
+ea16eb8; 2010-2013: fa305ce; 2014-2017: 6b78a85; 2018-2021: 3f7f42d, its controls and firewall d0fe8be). Outcomes were computed on 2026-11-08 from the closes posted to 2026-11-06; every date has its 6-month, 1-, 2-
 and 3-year horizons.
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
@@ -273,6 +273,89 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   at or over it +28.0%. Within each year the entry price ranks the m12-24 return at Spearman -1.00, +0.11, -0.98 and -0.99; across the
   four years -0.75. The proxy composite ranks it the wrong way again (-0.22; -0.63 in 2015).
 
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 10 | -26.4% | -41.9% to -18.0% | 0 | 0 | -32.2% | 0 |
+| class FAIR | 26 | -47.3% | -71.0% to -22.4% | 0 | 0 | -17.1% | 0 |
+| class RICH | 16 | -14.2% | -71.4% to +14.7% | 0 | 0 | -9.3% | 16 |
+| legacy tier ACCUMULATE | 7 | -25.5% | -41.9% to -18.0% | 0 | 0 | -30.6% | 0 |
+| legacy tier WATCHLIST | 25 | -48.0% | -71.0% to -22.4% | 0 | 0 | -17.1% | 0 |
+| legacy tier AVOID | 20 | -38.0% | -71.4% to +14.7% | 0 | 0 | -10.1% | 16 |
+
+- **RICH at the top held; the easing to FAIR and CHEAP did not.** The 11 RICH dates of January to mid-March 2018 ($121-132, at the stock's
+  high) returned -71% to +15% over two years and beat SPY on none. From April the class eased to FAIR and then CHEAP as the price fell to
+  $93-124 at 10.5-15x guided EPS; those 35 dates returned -69% to -18% (median -43.5%), behind SPY on all. Their one-year returns were
+  still positive (median +9.6%): the two-year horizon (2020) is the pandemic, which no 2018 filing foresaw.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 52 | -25.6% | -44.0% to -10.3% | 0 | 0 | -36.7% | 0 |
+| legacy tier BUY | 44 | -24.6% | -44.0% to -10.3% | 0 | 0 | -33.7% | 0 |
+| legacy tier ACCUMULATE | 6 | -28.7% | -42.7% to -24.6% | 0 | 0 | -47.4% | 0 |
+| legacy tier WATCHLIST | 2 | -29.9% | -35.4% to -29.9% | 0 | 0 | -42.2% | 0 |
+
+- **CHEAP on every date, wrong on every date.** At 10.7-14.0x the FY19 guide, with BEAR now 2012's -27.1%/yr instead of 2009's
+  -73.5%/yr, the model called CHEAP and BUY. Within two years of every 2019 date the price fell 83.5% from its high (to $22.33 on
+  2020-03-18), and it lost 10-44% to the two-year endpoint, behind SPY on all 52. The two-year price landed nearest BEAR on all 52 and
+  above the BEAR price on all: the decade's worst year (-27%/yr) bounded the endpoint, not the path, through two years of losses
+  ($(18.31) a share adjusted in 2020).
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 53 | -25.2% | -43.0% to +243.0% | 10 | 10 | +8.2% | 10 |
+| March to May (2020-03-13..2020-05-29, $24-52) | 12 | +111.7% | +12.4% to +243.0% | 10 | 10 | +118.5% | 10 |
+| June to December (2020-06-05..2020-12-31, $46-83) | 31 | -26.9% | -43.0% to -7.0% | 0 | 0 | +2.9% | 0 |
+
+- **One class, two outcomes, split by price.** The model was CHEAP and BUY on all 53 dates, on FY2019's $9.54 at 2.5-11x. Bought in the
+  crash ($24-52, March to May), it returned +12% to +243% over two years and beat SPY on 10 of 12; bought from June at $46-83, it lost 7-43%
+  (the 2022 low) and beat SPY on none, although the one-year return was still +35.5% at the median. Within the year the entry price ranks the
+  m12-24 return at Spearman -0.98; the class, constant, ranks nothing.
+- **The anchor could not see the losses.** No rule replaces FY2019's $9.54 while the company gives no EPS guide, so the P/E stayed at the
+  bottom of its window (0th-9th percentile) and the price under the EPP floor on every 2020 date from 2020-02-28, while the company lost
+  $(18.31) a share in 2020 (adjusted). Hypothesis, not a rule: when guidance is withdrawn and the latest quarters are losses, an anchor
+  from the last normal year measures recovery value, not current earnings; test on other tickers and periods with withdrawn guides
+  before any method change.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 31 | +19.8% | -24.6% to +69.2% | 9 | 22 | -13.7% | 22 |
+| class FAIR | 18 | -10.9% | -31.8% to +20.6% | 0 | 5 | -36.1% | 8 |
+| class RICH | 3 | -15.3% | -31.8% to -8.3% | 0 | 0 | -41.3% | 3 |
+
+- **The classes ranked the returns the right way.** CHEAP (31) returned a median +19.8% and beat SPY on 22; FAIR and RICH (21) -14.4% and
+  beat it on 5. The adjusted gap ranks the m12-24 return at Spearman +0.85 and the proxy composite at +0.84 (in 2018-2020 the proxy ranked
+  it -0.71, -0.32 and -0.19). The two-year endpoints (2023) caught the recovery; the m12-24 average price (2022-2023) was below the entry
+  price on 46 of 52, and the three-year median was +88%.
+
+## 2018-2021 together
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 146 | -22.9% | -44.0% to +243.0% | 19 | 32 | -23.1% | 32 |
+| class FAIR | 44 | -38.6% | -71.0% to +20.6% | 0 | 5 | -26.0% | 8 |
+| class RICH | 19 | -15.3% | -71.4% to +14.7% | 0 | 0 | -10.1% | 19 |
+| P/E on the anchor under its window's median | 196 | -24.6% | -71.4% to +243.0% | 19 | 37 | -23.1% | 48 |
+| P/E on the anchor at or over its window's median | 13 | -14.2% | -57.3% to +14.7% | 0 | 0 | -10.9% | 11 |
+| price under the EPP floor | 100 | -7.4% | -43.0% to +243.0% | 19 | 36 | -12.5% | 42 |
+| price at or over the EPP floor | 109 | -29.8% | -71.4% to +14.7% | 0 | 1 | -31.3% | 17 |
+
+- **A shock outside every input decides the batch.** The two-year price landed nearest BEAR on 197 of 209 dates. The 88 CHEAP and FAIR
+  dates from 2018-03-23 to the end of 2019 lost 10-71% over two years, through a pandemic no filing of the time anticipated. The calls
+  that held were RICH (all 19: the January 2018 high and three dates of 2021), CHEAP in the March-May 2020 crash (10 of 12) and CHEAP in
+  2021 (22 of 31). Read with the 2008-2017 findings, RCL's classes were right where the price was extreme (the 2008-2009 lows, the January
+  2018 high, the 2020 crash) and wrong in the long middle.
+- **The price against the EPP floor ranked better than the class**, as the P/E against its median did in 2014-2017: under the floor the
+  100 dates returned a median -7.4% (36 beat SPY), at or over it -29.8% (1 beat SPY). Across 2018-2021 the entry price ranks the m12-24
+  return at Spearman -0.64, the EPP gap at -0.59, the proxy composite at -0.53 (the wrong way again but for 2021), the adjusted gap -0.14.
+
 ## The encoding calls, seen afterwards
 
 - The calls listed in retro/README.md ("RCL") move classes only where the class already changes week to week. GAAP EPS instead of the
@@ -302,4 +385,11 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
     where RICH held). It works through the P/E window (GAAP 2015 and 2012 raise it), not through the anchor, and it cuts both ways.
   - Net Yields and Net Cruise Costs from the statements instead of the company's definition, the FY2013 restatement ignored, and operating
     margins before the impairments move no class.
-
+- 2018-2021 (retro/README.md, "RCL 2018-2021"), hindsight comparisons of alternatives decided before scoring; the calls stay:
+  - GAAP EPS instead of the company's Adjusted EPS would have moved 56 dates toward CHEAP (44 FAIR to CHEAP, 12 RICH to CHEAP; 35 in 2018,
+    21 in 2021); they returned -71% to +21% and beat SPY on 5: more wrong, not less.
+  - Net Yields and Net Cruise Costs derived from the statements where no release stated them would have moved 34 dates of 2021: 15
+    CHEAP to RICH (-4% to +69%, 14 ahead of SPY: wrong) and 12 FAIR or RICH to CHEAP (-32% to +4%, 2 ahead: wrong). Scoring the unstated
+    signals at BASE was the better reading of 2021, by hindsight only.
+  - The withdrawal ignored, the per-share impacts netted, Q3 2021's BASE on the previous quarter, and the Q2 2021 10-Q's statistics
+    ignored (3 dates, FAIR to CHEAP, -0% to +4%) change little or nothing.
