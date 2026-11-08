@@ -6,6 +6,10 @@ stays the record for that ticker; nothing here enters another ticker's models. T
 tickers they describe, so they are in-sample. Testing one means a fourth ticker (ideally several on the same dates),
 then a new method version and a full re-run.
 
+**Out-of-sample test:** `CROSS_TICKER_OUT_OF_SAMPLE.md` tests these patterns on the eight tickers built since (AAPL, AVGO,
+MSFT, NKE, PEP, SHW, WMT, XOM). Crash entries held, cheap & falling held more weakly, and the loss-filter and own-P/E
+findings did not replicate.
+
 Every count and return below is printed by `python3 staging/retrospective/cross_ticker.py` (one section:
 `... cross_ticker.py zones`). The script reads the repo and writes nothing. Medians of an even count take the upper
 middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
