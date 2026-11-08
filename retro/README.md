@@ -9361,7 +9361,7 @@ any 2010-2013 outcome was computed:
 
 Controls: altering one value of each print from Q3 2009 (and each Q4 print's full-year EPS), guide (its EPS range, its next-quarter Net
 Yields and its fiscal-year constant-currency Net Yields), vintage, dividend and the Q2 2011 restatement changes no date before its
-publication and changes the first weekly date on or after it (CONTROLS_SUMMARY). A scan of the 314 models for the figures, notes, guides,
+publication and changes the first weekly date on or after it (79 controls from the Q3 2009 release on, every one in scope: the restated FY2009 EPS and the reinstated dividend act from 2011-07-29 until the FY2011 10-K takes over on 2012-02-29). A scan of the 314 models for the figures, notes, guides,
 texts and sources of every later print, guide, vintage and dividend finds none before its first publication (0 of 74,363 pairs); the only
 calendar year after a date outside an FY label is the Q3 2010 release's 2011 outlook, a forecast, on the ten dates from 2010-10-27 (which
 `retro_tool run` reports as a warning). The firewall plants a later restatement of every history year as well (`restates`, as for SHW and
