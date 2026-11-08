@@ -33,6 +33,12 @@ r2's local-currency guide; and a one-off inside operating income that a release 
 that release's operating margin ('op_oneoff_m', 'op_oneoff_prior_m').
 From 2018 (retro/README.md, "WMT 2018-2020"): a guide may withdraw named fields of its year ('withdrawn', the SHW rule; the Q1 FY21
 release), and net sales guided only in words or as a one-sided bound ('rev_words') are shown and give no field.
+From 2021 (retro/README.md, "WMT 2021-2023"): an EPS guide stated as growth on the last full year ('eps_growth', a range in percent: the
+NKE rule) gives the current-FY EPS as that year's EPS times the midpoint, and the latest EPS guide in either form stands; a next-quarter
+net sales guide may carry its basis ('sales_basis'); and a net sales guide stated as reported growth with the currency effect for the
+guided period in dollars in the same filing is converted to constant currency on the year-ago net sales (the PEP 2026 rule and the WMT
+2012-2014 conversion: 'rev_reported', 'rev_currency_m', 'rev_prior_m'; in a quarter guide 'sales_reported', 'currency_m', 'prior_m'),
+which the builder re-derives.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. The earnings 8-Ks were accepted before the open on the release day.
@@ -45,6 +51,7 @@ Usage
   python3 retro/build_wmt.py --weekly 2012-01-02 2014-12-31
   python3 retro/build_wmt.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_wmt.py --weekly 2018-01-01 2020-12-31
+  python3 retro/build_wmt.py --weekly 2021-01-04 2023-12-31
   python3 retro/build_wmt.py 2008-02-20
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/WMT/<AS_OF>
 """
@@ -144,6 +151,17 @@ def check_print(p):
         assert (p["lc_pct"] == d) if p["lc_basis"] == "derived" else abs(p["lc_pct"] - d) <= 0.11, (p["quarter"], "currency", p["lc_pct"], d)
 
 
+def check_guide(g):
+    """Re-derive a net sales guide converted to constant currency from reported growth and the currency effect the same filing
+    states for the guided period, on the year-ago net sales (retro/README.md, "WMT 2021-2023"); the stored range must match."""
+    conv = lambda rep, cur, prior: [round(x - cur / prior * 100 + 1e-12, 1) for x in rep]
+    if "rev_reported" in g:
+        assert g["rev_guide"] == conv(g["rev_reported"], g["rev_currency_m"], g["rev_prior_m"]), (g["doc"], "rev_guide", g["rev_guide"])
+    q = g.get("q_guide", {})
+    if "sales_reported" in q:
+        assert q["sales"] == conv(q["sales_reported"], q["currency_m"], q["prior_m"]), (g["doc"], q["quarter"], "sales", q["sales"])
+
+
 def build(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
@@ -160,6 +178,8 @@ def build(as_of, facts, raw, spx, engine, out):
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
+    for g in [g for g in facts["guides"] if g["published"] <= as_of]:  # and a converted guide its reported growth and currency
+        check_guide(g)
     facts, split_ids = on_basis(facts, as_of)
     for g in facts["guides"]:                      # a next-quarter EPS guide is per share too (on_basis covers the rest)
         r = math.prod(s["ratio"] for s in facts.get("splits", []) if g["published"] < s["effective"] <= as_of)
@@ -235,6 +255,13 @@ def build(as_of, facts, raw, spx, engine, out):
     wd = next((g for g in reversed(guides) if g.get("withdrawn")), None)
     stated = lambda k: next((g for g in reversed(guides) if k in g and g["published"] >= void.get(k, "")), None)
     ge, gr, gw = stated("eps_guide"), stated("rev_guide"), stated("fy_words")
+    # an EPS guide stated as growth on the last full year ('eps_growth', the NKE rule; retro/README.md, "WMT 2021-2023"): the latest EPS
+    # guide in either form stands
+    gg = stated("eps_growth")
+    if gg and (not ge or gg["published"] > ge["published"]):
+        ge = gg
+    eps_fig = lambda g: (f"EPS ${eps_rng(*g['eps_guide'])}" if "eps_guide" in g else
+                         f"EPS {pct_range(*g['eps_growth'])} on FY{(cur_fy - 1) % 100:02d}'s ${money(eps_hist[cur_fy - 1])}")
     if gw and ge and gw["published"] < ge["published"]:
         gw = None                            # a later numeric range replaces words about an earlier one
     # net sales guided only in words or as a one-sided bound ('rev_words': "at least 3 percent", the PEP, UNP and LOW rule: no field),
@@ -246,7 +273,12 @@ def build(as_of, facts, raw, spx, engine, out):
     later = lambda q: qkey(q) > (latest["fy"] % 100, nq)          # a next-quarter guide counts while its quarter is unreported
     gq = next((g for g in reversed(guides) if "q_guide" in g and later(g["q_guide"]["quarter"])), None)
     q = gq["q_guide"] if gq else None
-    if ge:
+    if ge and "eps_growth" in ge:            # growth on the last full year's EPS, at the midpoint of the range
+        mid = sum(ge["eps_growth"]) / 2
+        eps_now = round(eps_hist[cur_fy - 1] * (1 + mid / 100), 2)
+        eps_label = (f"{fy_e} EPS, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_hist[cur_fy - 1])} {mid:+g}%, the midpoint of the "
+                     f"{ge['doc']}'s EPS growth guide")
+    elif ge:
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} EPS, guide midpoint"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
@@ -254,7 +286,8 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_label = (f"{fy_e}: guidance withdrawn ({wd['doc']}), FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands" if wd else
                      f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands")
     if q and "sales" in q:                   # method r2: the next-quarter net sales guide
-        fwd, fwd_label, fwd_short, fwd_period = q["sales"], f"{q['quarter']} net sales guide", f"{q['quarter'][:2]} guide", q["quarter"]
+        qb = f" {q['sales_basis']}" if q.get("sales_basis") else ""
+        fwd, fwd_label, fwd_short, fwd_period = q["sales"], f"{q['quarter']} net sales guide{qb}", f"{q['quarter'][:2]} guide", q["quarter"]
         fwd_kind = "next-quarter net sales guide"
     elif gr:                                 # no next-quarter guide in numbers: the fiscal-year net sales guide
         # a guide stated excluding currency ('rev_basis') is method r2's local-currency guide (the PEP rule; retro/README.md, "WMT 2015-2017")
@@ -279,7 +312,8 @@ def build(as_of, facts, raw, spx, engine, out):
                     if fwd_short.endswith("ex-FX") else
                     f"{latest['quarter']} net sales growth applied to the year (no {fy_now} net sales guide in numbers)")
     if guides:
-        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']}; {ge['doc']})" if ge.get("eps_guide_note") else f" ({ge['doc']})")]
+        gnote = ge.get("eps_guide_note", ge.get("eps_growth_note")) if ge else None
+        bits = ([eps_fig(ge) + (f" ({gnote}; {ge['doc']})" if gnote else f" ({ge['doc']})")]
                 if ge else [f"no {fy_now} EPS range: the {wd['doc']} withdrew the guidance ('{wd['withdrawn_quote']}')"] if wd else
                 [f"no {fy_now} EPS range yet"]) + \
                ([f"{gw['fy_words']} ({gw['doc']}; " + ("the range stands)" if ge else "words, no range)")] if gw else []) + \
@@ -287,7 +321,7 @@ def build(as_of, facts, raw, spx, engine, out):
                ([f"net sales {pct_range(*gr['rev_guide'])}" + (f" {gr['rev_basis']}" if gr.get("rev_basis") else "")
                  + (f" ({gr['rev_guide_note']})" if gr.get("rev_guide_note") else "")] if gr else []) + \
                ([f"{q['quarter']}: " + ", ".join(
-                   ([f"net sales {pct_range(*q['sales'])}"] if "sales" in q else []) +
+                   ([f"net sales {pct_range(*q['sales'])}" + (f" {q['sales_basis']}" if q.get("sales_basis") else "")] if "sales" in q else []) +
                    ([f"U.S. comps {pct_range(*q['comps'])}"] if "comps" in q else []) +
                    ([q["comps_text"]] if "comps_text" in q else []) +
                    ([f"EPS ${eps_rng(*q['eps'])}"] if "eps" in q else []))] if q else [])
@@ -363,7 +397,8 @@ def build(as_of, facts, raw, spx, engine, out):
         assert h.get("why_theme_tail"), "a vintage before FY2014 states that no theme is live"
         why = h["why"] + ("; ECOMMERCE is live (from 2015-01-01) and its competition risk factor puts it on the watch list: "
                           "company-acknowledged, with no dated evidence that the market prices it for Walmart")
-    cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
+    cat3 = (f"(3) {fy_now} {eps_fig(ge)} guide ({ge['doc']})" if ge and "eps_growth" in ge else
+            f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
             f"(3) A numeric {fy_now} EPS guide again — the {wd['doc']} withdrew it" if wd else
             f"(3) A numeric {fy_now} EPS guide — none yet")
     cat4 = (f"(4) Operating margin — {latest['op_margin']:.2f}% in {latest['quarter']} ({latest['op_margin_bp']:+.1f}bp): "

@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  WMT  ·  Walmart Inc.  ·  $141.03  ·  RETROSPECTIVE as of 2021-12-10
+  Signal: ✕ AVOID   Ratio B: 6.82x   Adj gap: -1.93  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2021-12-10; latest print Q3 FY22 (Nov 16)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E net sales, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Walmart U.S.              $   381.4  $ 381.4  $ 401.0      +0.0     +19.6
+    +8.5% net sales in FY21
+  Walmart International     $   125.1  $ 125.1  $ 131.5      +0.0      +6.4
+    +1.0% net sales in FY21
+  Sam's Club                $    65.9  $  65.9  $  69.3      +0.0      +3.4
+    +8.7% net sales in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   572.4  $ 572.4  $ 601.8      +0.0     +29.4
+  FY2022E = FY21 $555.23B × (1 + 3.1%: Q3 FY22 net sales growth at constant currency applied to the year (no FY22 net sales guide in numbers)); split pro rata to FY21 segment net sales (FY2021 10-K)
+  Q3 FY22 (Nov 16): net sales $139.21B +4.1%; U.S. comps +11.1%; gross margin 24.56% (-42.5bp);
+  operating margin 4.16% (-15.9bp); EPS $1.11 vs $1.80; inventory +10.9% (+6.8pp vs sales)
+  Segment net sales: Walmart U.S. $96.61B +9.3%, Walmart International $23.63B -20.1%, Sam's Club $18.97B +19.7%; comps: Total U.S. comparable store sales with fuel +11.1% (the table's first column: Total U.S. | 11.1% | 6.6% | 9.9% | 7.1% | 1.2% | -0.5%); inventory $57.48B +10.9% year on year; currency: currency exchange rate fluctuations of $1,347 million (favourable) (the release's constant-currency table), +3.1% at constant currency; EPS reported; the company's adjusted $1.45 excludes a $0.67 loss on extinguishment of debt and $0.33 of equity investment gains
+  FY22 guide (Q4 FY21 release, Q1 FY22 release, Q2 FY22 release, Q3 FY22 release): EPS $6.40 (adjusted 'around $6.40'; GAAP 'around $5.00'; Q3 FY22 release); net sales 'Slightly positive in constant currency' (up '6% to 7%, or more than $30 billion' excluding divestitures, which leaves out the sold operations: display only) (Q2 FY22 release; no range); Q4 FY22: Walmart U.S. comp sales 'of around 5%'; no quarter EPS range
+
+  FY2022E EPS check:  ($572.4B × 4.06% − $2.19B interest) × (1−33.4%) ÷ 2.797B  =  $5.01  (FY2022E EPS, guide midpoint $6.40)
+  FY2024E BEAR check: ($572.4B × 4.06% − interest) ÷ 2.673B  =  $5.25  (scenario $5.25)
+  FY2024E BULL check: ($601.8B × 4.46% − interest) ÷ 2.673B  =  $6.14  (scenario $7.10)
+  Every 1pp of operating margin ≈ $1.36 EPS ≈ $23/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. comparable store sales         -1.0%    ≥2.0%    ≥5.0%    ≥9.0%    +11.1%  ★ XBULL  ████
+  Gross margin change               -60.0bp  ≥-20.0bp  ≥30.0bp  ≥60.0bp   -42.5bp  ⚠ BEAR  █░░░
+  Net sales growth                    +7.0%   ≥10.0%   ≥13.0%   ≥19.0%     +4.1%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth   +6.0pp   ≤1.0pp  ≤-4.0pp  ≤-15.0pp    +6.8pp  ⚠ BEAR  █░░░
+  Operating margin change           -90.0bp  ≥-40.0bp  ≥10.0bp  ≥40.0bp   -15.9bp  ◦ BASE  ██░░
+  E-commerce: net effect on store sales   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.90 / 4.00
+  Market composite:   3.75 / 4.00  (back-solved from $141 + 15% hurdle)
+  SCA adjustment:    +0.02  ·  EPP-distance adj -0.10  →  Adj composite 1.82  →  Gap -1.93  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 net sales +6.8% on U.S. comps +8.7%, 4,743 Walmart U.S. units, 599 Sam's Clubs and 6,101 Walmart International units; Q3 gross margin 24.56% (-42.5bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 22.0x FY22E vs a 17.0x 10-yr median (80th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY22 net sales guide in numbers, Q3 FY22 net sales at constant currency +3.1% vs a 1.9% 9-yr median  (+0.12 × 20%  =  +0.024)
+    +  Cash $16.11B at 2021-10-31, FY21 free cash flow $25.81B, dividend $2.20 a year, purchase of Company stock $2,625M in fiscal 2021 (FY2021 10-K)  (+0.30 × 15%  =  +0.045)
+    +  Omni-channel: eCommerce added about 5.4% to fiscal 2021 Walmart U.S. comps — Walmart sells online itself  (+0.20 × 10%  =  +0.020)
+    -  Online competition (FY2021 10-K): competition with 'global physical, eCommerce and omni-channel retailers'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. comparable store sales         +11.1%     -1.0%  -12.1%  Traffic and ticket fall together
+  Gross margin change                -42.5bp   -60.0bp  -17.5bp  Price cuts and mix shift compress the…
+  Net sales growth                     +4.1%     +7.0%   +2.9%  Comps stall as new stores and currenc…
+  Inventory growth less sales growth    +6.8pp    +6.0pp  -0.8pp  Inventory outruns sales; markdowns fo…
+  Operating margin change            -15.9bp   -90.0bp  -74.1bp  Expenses deleverage on low comps
+  E-commerce: net effect on store sales    +2.0/4    +1.0/4  -1.0/4  Online and multi-channel rivals take …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$89  (model)  /  $73 (defined)
+  Bear probability (proxy model):  23.0%
+
+  KEY TRIGGER: U.S. comps went from +6.8% (Q2 FY22) to +11.1% (Q3 FY22);
+  the bear case needs a demand recession that gross margin (-42.5bp now)
+  and expense control no longer cover. General economic conditions drive demand, by the company's own account; the bear
+  needs fuel, labor and health-care costs to keep rising while comps fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.40  (FY2022E EPS, guide midpoint)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2011 12.7x, 2012 11.4x, 2013 13.5x, 2014 14.3x, 2015 12.3x, 2016 13.3x, 2017 15.0x, 2018 16.8x, 2019 18.9x, 2020 19.0x, 2021 19.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $90/share
+  Current $141 vs Updated EPP $90:  +57%  ⚠ far above floor — large drawdown room
+  Bear $73 vs Updated EPP $90:  -19%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. comparable store sales                  2.0       -9.1   BASE floor (vs +11 now)
+  Gross margin change                        -20.0      +22.5   BASE floor (vs -42 now)
+  Net sales growth                            10.0       +5.9   BASE floor (vs +4 now)
+  Inventory growth less sales growth             1.0       -5.8   BASE floor (vs +7 now)
+  Operating margin change                    -40.0      -24.1   BASE floor (vs -16 now)
+  E-commerce: net effect on store sales             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.40 × (1+3.3%)² = $6.83
+  At 17x P/E (conservative):  $116/share
+  + Cumul. dividends (2yr):  +$4.53/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $116  (▼25 from $141)
+  Conservative total return:  -14% over 2yr  = -7%/yr
+
+  3.3% EPS growth is what is left once the premium multiple (22.0x)
+  mean-reverts to 17x. Breakeven at 17x needs FY2024E EPS of $8.03,
+  i.e. 12.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $126.28  –  $152.57  (at 56th pct of range)
+  Annual dividend:      $2.20/share  (yield 1.6%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.50
+  1-sigma range (1yr):  $118  –  $164  ($141 ± 16%)
+  2-sigma range (1yr):  $95  –  $187
+  ────────────────────────────────────────────────────────────
+  Bear $73 requires:  ~3.0σ price move  (unusual — requires fundamental break)
+  A discount retailer with a 0.5 beta: the stock is +11% off its March
+  low while U.S. comps went from +6.8% (Q2 FY22) to +11.1% (Q3 FY22).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.25  13.9x  $     73    23.0%      1.2%   +21.7pp  EPS -9.5%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE        7.10  17.0x  $    121    57.5%      4.3%   +53.2pp  EPS +5.3%/yr (Q3 ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL        7.10  21.3x  $    151    16.5%     15.0%    +1.5pp  EPS +5.3%/yr (FY12-FY21 CAGR); P/E holds its 75th pct
+  XBULL       7.27  23.5x  $    171     3.1%     79.5%   -76.4pp  EPS +6.6%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct
+
+  Proxy EV (2yr): $116  /  Market EV: $165  /  Current: $141
+  Conservative EV (2yr, ④): $116 + $4.53 divs = $121 total value
+  Downside (→ Bear $73): 48.2%   Upside (→ Bull $151): 7.1%   Ratio B 6.82x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $141 the market needs $187 in two years —
+  above the BULL case. That is a market composite of 3.75 against a model
+  read of 1.82: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       6.82x     +57%    -1.93  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.39x     +57%    -1.68  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +57%    -1.93  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          4.41x     +57%    -1.98  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         11.73x     +57%    -1.95  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             6.82x     +57%    -1.63  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 6.82x     +30%    -1.83  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    6.82x     +57%    -1.93  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY22 print (mid-February) — the next read on comps (+11.1% now) and the guide
+  (2) Gross margin — -42.5bp in Q3 FY22: price cuts, mix and fuel against cost of sales, what must hold if comps do not
+  (3) FY22 EPS guide $6.40 (Q3 FY22 release)
+  (4) Operating margin — 4.16% in Q3 FY22 (-15.9bp): where expense deleverage on low comps shows first
+  (5) Capital return at 22x — Purchase of Company stock $7,368M in the nine months: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $90  |  ADD below ~$103  |  TRIM above $151
+════════════════════════════════════════════════════════════════════════
+
