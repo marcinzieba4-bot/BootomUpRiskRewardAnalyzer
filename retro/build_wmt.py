@@ -39,6 +39,11 @@ net sales guide may carry its basis ('sales_basis'); and a net sales guide state
 guided period in dollars in the same filing is converted to constant currency on the year-ago net sales (the PEP 2026 rule and the WMT
 2012-2014 conversion: 'rev_reported', 'rev_currency_m', 'rev_prior_m'; in a quarter guide 'sales_reported', 'currency_m', 'prior_m'),
 which the builder re-derives.
+From 2024 (retro/README.md, "WMT 2024-2026"): the three-for-one split effective 2024-02-26 (the fact sheet's 'splits'; per-share facts
+published before it are divided by three from that date, each vintage year by its own 'eps_published' / 'shares_published' date, the SHW
+2021 encoding), the move of the listing to Nasdaq effective 2025-12-09 ('listings', the PEP 2017 encoding; display only), and a year or
+quarter with no Total U.S. comparable sales figure in any filing (from the Q4 FY26 release: the signal keeps its name, thresholds and
+weight and scores BASE with no value, the AAPL Mac-unit rule).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. The earnings 8-Ks were accepted before the open on the release day.
@@ -52,6 +57,7 @@ Usage
   python3 retro/build_wmt.py --weekly 2015-01-05 2017-12-31
   python3 retro/build_wmt.py --weekly 2018-01-01 2020-12-31
   python3 retro/build_wmt.py --weekly 2021-01-04 2023-12-31
+  python3 retro/build_wmt.py --weekly 2024-01-01 2026-11-06
   python3 retro/build_wmt.py 2008-02-20
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/WMT/<AS_OF>
 """
@@ -413,7 +419,9 @@ def build(as_of, facts, raw, spx, engine, out):
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
-    exchange = h["exchange"]
+    # a listing moved to another exchange counts from its effective date (the PEP 2017 encoding; display only)
+    listing = [x for x in facts.get("listings", []) if x["published"] <= as_of and x["effective"] <= as_of]
+    exchange = listing[-1]["exchange"] if listing else h["exchange"]
     # a renamed reporting line takes the new name from the first print that uses it (the ACN service-line rule)
     line_names = {}
     for p in public:
@@ -421,7 +429,7 @@ def build(as_of, facts, raw, spx, engine, out):
     groups = [(line_names.get(n, n), v, g) for n, v, g in h["groups"]]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + [g["source"] for g in guides]
            + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames]
-           + [p["source"] for p in public if p.get("renames")] + [e["id"] for e in events])
+           + [p["source"] for p in public if p.get("renames")] + [e["id"] for e in events] + [x["source"] for x in listing])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "WM0", "published": as_of, "title": "Yahoo Finance daily prices, WMT and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/WMT/history",
@@ -441,6 +449,9 @@ def build(as_of, facts, raw, spx, engine, out):
     volumes = (f"Segment net sales: {segs}; comps: {latest['comps_note']}; inventory ${latest['raw']['inv_m'] / 1000:.2f}B "
                f"{latest['inventory_pct']:+.1f}% year on year{fx_txt}{eps_note}")
     stores_txt = h["prev_fy_stores"] or "no year-end store count in the Q4 release"
+    # no Total U.S. comparable sales figure for the year in any filing (from fiscal 2026): said so, as for a missing store count
+    comps_fy = (f"U.S. comps {h['prev_fy_comps']:+.1f}%" if h["prev_fy_comps"] is not None else
+                "no Total U.S. comparable sales figure for the year")
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -488,7 +499,7 @@ REF_LOW         = {px[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
-EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}
+EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}{"; " + h["split_note"] if h.get("split_note") else ""}
 REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # net sales, USD bn
 SHARES_HIST   = {R({y: round(v, 3) for y, v in shares.items()})}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
@@ -515,7 +526,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in groups])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net sales {h['prev_fy_sales_growth']:+.1f}% on U.S. comps {h['prev_fy_comps']:+.1f}%, {stores_txt}; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net sales {h['prev_fy_sales_growth']:+.1f}% on {comps_fy}, {stores_txt}; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"Cash ${latest['cash_b']:.2f}B at {latest['period_end']}, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}
