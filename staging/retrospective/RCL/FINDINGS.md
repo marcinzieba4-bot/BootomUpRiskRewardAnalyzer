@@ -1,8 +1,8 @@
 # RCL retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the RCL weekly dates: 314 from 2008-01-04 to 2013-12-31. They are **labels and hypotheses**: never feed
+Patterns seen in `outcome.json` for the RCL weekly dates: 522 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008-2009:
-ea16eb8; 2010-2013: fa305ce). Outcomes were computed on 2026-11-08 from the closes posted to 2026-11-06; every date has its 6-month, 1-, 2-
+ea16eb8; 2010-2013: fa305ce; 2014-2017: 6b78a85). Outcomes were computed on 2026-11-08 from the closes posted to 2026-11-06; every date has its 6-month, 1-, 2-
 and 3-year horizons.
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
@@ -192,6 +192,87 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
   (2010-2011) and failed when a trough or a low-growth guide set it (late 2009, 2012-2013). The method's EPS anchor and BASE move with the cycle,
   and the series' wrong calls cluster where the cycle turned.
 
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH (every date) | 51 | +32.5% | -0.5% to +92.0% | 26 | 42 | +50.4% | 9 |
+| FY13 EPS $2.325 (to 2014-01-24) | 3 | +87.2% | +72.3% to +92.0% | 3 | 3 | +73.0% | 0 |
+| FY14 EPS $3.30 (2014-01-28 to 2014-04-17) | 12 | +48.6% | +35.8% to +62.9% | 12 | 12 | +63.1% | 0 |
+| FY14 EPS $3.35 (2014-04-25 to 2014-07-18) | 13 | +40.0% | +23.0% to +53.4% | 10 | 13 | +53.6% | 0 |
+| FY14 EPS $3.45 (from 2014-07-25) | 23 | +14.1% | -0.5% to +32.5% | 1 | 14 | +20.5% | 9 |
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH (every date) | 53 | +34.5% | +2.6% to +64.3% | 29 | 43 | +6.7% | 9 |
+| FY14 EPS $3.45 (to 2015-01-23) | 4 | +4.4% | +2.6% to +6.2% | 0 | 0 | -8.9% | 4 |
+| FY15 EPS $4.75 (2015-01-30 to 2015-04-17) | 12 | +28.6% | +22.9% to +31.4% | 0 | 12 | +0.8% | 0 |
+| FY15 EPS $4.55 (2015-04-21 to 2015-07-24) | 14 | +46.3% | +36.1% to +64.3% | 14 | 14 | +9.0% | 0 |
+| FY15 EPS $4.70 (2015-07-31 to 2015-10-16) | 12 | +36.9% | +27.6% to +44.2% | 9 | 10 | +7.5% | 2 |
+| FY15 EPS $4.80 (from 2015-10-23) | 11 | +34.2% | +21.7% to +40.5% | 6 | 7 | +9.9% | 3 |
+
+- **RICH for two years while the stock doubled.** The 108 RICH dates from 2014-01-10 to 2016-01-29 returned -0.5% to +92% over two years
+  (median +34.7%), ahead of SPY on 88; the call held on 18 (late 2014, January 2015 and five dates of late 2015). One-year returns from 2014 dates were +20% to
+  +82%, ahead of SPY on all 51; the stock rose from $47 to its $102.73 high of 2015-12-30. The two-year price landed nearest BULL on every
+  date, at 1.1-2.2 times it. The 35 dates already priced above BULL (Ratio B infinite) returned -0.5% to +92%.
+- **The class came from the BEAR case, not from the price.** On guided EPS the stock was at 15-24x (59th-96th percentile of its own window),
+  but the RICH reading would have held at any P/E: the BEAR case, 2009's -73.5%/yr fall, put the downside at 94-98% on every date, so
+  Ratio B was the upside to BULL, and BULL (BASE or a decade CAGR of 1.4-11.7%/yr) could not match a business whose Adjusted EPS went from
+  $2.40 (2013) to $6.08 (2016). Hypothesis, not a rule: a single collapse year in the decade window sets BEAR for ten years (2009 stays in
+  the window until 2019) and makes every date RICH unless guided growth is high; test a BEAR that no single year can set on other
+  cyclical tickers and periods, as the 2010-2013 findings already suggested; never fit it to RCL's outcomes.
+- **2015's endpoint flatters it.** By the endpoint-robust measure the 2015 dates did little (m12-24 average price +6.7%, one-year median
+  -8.5%, through the fall to $65.48 on 2016-09-19); the two-year endpoints (late 2017) caught the next rise. RICH "held" on 9 by the
+  endpoint test.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 3 | +95.0% | +59.5% to +101.5% | 3 | 3 | +78.9% | 3 |
+| class FAIR | 35 | +66.0% | +40.8% to +93.6% | 35 | 35 | +61.4% | 6 |
+| class RICH | 14 | +38.3% | +15.5% to +69.2% | 11 | 13 | +41.1% | 0 |
+| legacy tier WATCHLIST | 29 | +69.8% | +44.9% to +101.5% | 29 | 29 | +65.2% | 6 |
+| legacy tier AVOID | 23 | +46.0% | +15.5% to +79.4% | 20 | 22 | +44.4% | 3 |
+
+- **The low of the window was the trade, and the model leaned only to FAIR.** With the price down to $66-80 and the P/E on guided EPS at
+  10.9-13.4x (13th-33rd percentile), the class eased to FAIR on 35 dates and CHEAP on 3 (the only dates under the EPP floor, 2016-07-08,
+  2016-09-09, 2016-09-16): FAIR returned +41% to +94% (4-50pp ahead of SPY, outside its ±15pp band on 29) and CHEAP +60% to +102%. Within
+  the year the entry price, the P/E and the EPP gap rank the m12-24 return at Spearman -0.98 each; the adjusted gap at +0.59.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH (every date) | 52 | +12.9% | -11.9% to +34.5% | 2 | 13 | +2.9% | 39 |
+| FY16 EPS $6.05 (to 2017-01-20) | 3 | +30.7% | +22.8% to +34.2% | 1 | 3 | +35.1% | 0 |
+| FY17 EPS $7.00 (2017-01-27 to 2017-04-21) | 13 | +25.5% | +21.9% to +34.5% | 1 | 10 | +17.7% | 3 |
+| FY17 EPS $7.10 (2017-04-28 to 2017-07-28) | 14 | +15.6% | +0.4% to +25.1% | 0 | 0 | +4.6% | 14 |
+| FY17 EPS $7.40 (2017-08-02 to 2017-11-03) | 14 | -5.2% | -11.9% to +1.5% | 0 | 0 | -4.1% | 14 |
+| FY17 EPS $7.375 (from 2017-11-08) | 8 | +1.8% | -7.0% to +16.4% | 0 | 0 | -8.9% | 8 |
+
+- **RICH was right in 2017.** The call held on 39 of 52 (every date from 2017-04-28): two-year returns -12% to +35%, 2 cleared the hurdle,
+  13 beat SPY; the stock peaked at $134.98 on 2018-01-26 and fell to $84.55 by 2018-12-24. The three-year horizon (2020) caught the
+  pandemic: median -40.7%, -64% to +68%. The signals read their best since 2010 (proxy composite 2.90-3.20) at the top, as in 2008 and
+  2010.
+
+## 2014-2017 together
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 3 | +95.0% | +59.5% to +101.5% | 3 | 3 | +78.9% | 3 |
+| class FAIR | 35 | +66.0% | +40.8% to +93.6% | 35 | 35 | +61.4% | 6 |
+| class RICH | 170 | +28.6% | -11.9% to +92.0% | 68 | 111 | +10.4% | 57 |
+| P/E on guided EPS under its 10-yr median | 64 | +47.8% | +15.5% to +101.5% | 47 | 61 | +54.5% | 12 |
+| P/E on guided EPS at or over its 10-yr median | 144 | +28.0% | -11.9% to +92.0% | 59 | 88 | +8.0% | 54 |
+
+- **Across 2012-2017 the model was RICH on 269 of 309 dates** (from 2012-02-03), while the price went from $30.59 to $119.28. The P/E
+  against its own window ranked better than the class did: under the window's median the 64 dates returned a median +47.8% (61 beat SPY),
+  at or over it +28.0%. Within each year the entry price ranks the m12-24 return at Spearman -1.00, +0.11, -0.98 and -0.99; across the
+  four years -0.75. The proxy composite ranks it the wrong way again (-0.22; -0.63 in 2015).
+
 ## The encoding calls, seen afterwards
 
 - The calls listed in retro/README.md ("RCL") move classes only where the class already changes week to week. GAAP EPS instead of the
@@ -215,3 +296,10 @@ Medians of an even count take the upper middle value (`statistics.median_high`).
     means a new method version tested elsewhere.
   - Operating margins excluding the Q4 2012 impairment and the Q3 2013 restructuring, and the Interest Expense Revision ignored, move no
     class.
+- 2014-2017 (retro/README.md, "RCL 2014-2017"), hindsight comparisons of alternatives decided before scoring; the calls stay:
+  - GAAP EPS for 2012-2016 instead of the company's Adjusted EPS would have moved 45 dates of 2016 toward CHEAP or FAIR (they returned
+    +16% to +94%, all ahead of SPY: closer to right) and all 52 of 2017 from RICH to FAIR or CHEAP (-12% to +35%, 13 ahead of SPY: wrong
+    where RICH held). It works through the P/E window (GAAP 2015 and 2012 raise it), not through the anchor, and it cuts both ways.
+  - Net Yields and Net Cruise Costs from the statements instead of the company's definition, the FY2013 restatement ignored, and operating
+    margins before the impairments move no class.
+

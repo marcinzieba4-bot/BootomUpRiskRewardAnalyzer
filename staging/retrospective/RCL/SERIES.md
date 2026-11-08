@@ -318,211 +318,211 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2013-12-20 | $46.96 | Royal Caribbean Q3 2013 results | 2.40 | -0.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +109.4% | +94.8pp | +79.1% | ✗ |
 | 2013-12-27 | $47.14 | Royal Caribbean Q3 2013 results | 2.40 | -0.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +117.2% | +100.9pp | +79.0% | ✗ |
 | 2013-12-31 | $47.42 | Royal Caribbean Q3 2013 results | 2.40 | -0.68 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +121.8% | +106.0pp | +78.4% | ✗ |
-| 2014-01-10 | $49.09 | Royal Caribbean Q3 2013 results | 2.40 | -0.71 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-17 | $49.56 | Royal Caribbean Q3 2013 results | 2.40 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-24 | $47.13 | Royal Caribbean Q3 2013 results | 2.40 | -0.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-28 | $49.66 | Royal Caribbean Q4 2013 results | 2.85 | +0.39 | 5.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-07 | $50.61 | Royal Caribbean Q4 2013 results | 2.85 | +0.34 | 5.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-14 | $52.26 | Royal Caribbean Q4 2013 results | 2.85 | +0.15 | 7.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-21 | $51.87 | Royal Caribbean Q4 2013 results | 2.85 | +0.13 | 15.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-28 | $52.93 | Royal Caribbean Q4 2013 results | 2.85 | +0.07 | 24.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-07 | $51.89 | Royal Caribbean Q4 2013 results | 2.85 | +0.13 | 16.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-14 | $50.35 | Royal Caribbean Q4 2013 results | 2.85 | +0.30 | 10.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-21 | $54.37 | Royal Caribbean Q4 2013 results | 2.85 | +0.01 | 83.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-28 | $53.54 | Royal Caribbean Q4 2013 results | 2.85 | +0.03 | 112.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-04 | $54.53 | Royal Caribbean Q4 2013 results | 2.85 | -0.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-11 | $51.80 | Royal Caribbean Q4 2013 results | 2.85 | +0.11 | 22.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-17 | $51.34 | Royal Caribbean Q4 2013 results | 2.85 | +0.13 | 18.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-25 | $51.36 | Royal Caribbean Q1 2014 results | 2.20 | -0.16 | 5.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-02 | $53.00 | Royal Caribbean Q1 2014 results | 2.20 | -0.34 | 6.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-09 | $51.37 | Royal Caribbean Q1 2014 results | 2.20 | -0.16 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-16 | $51.90 | Royal Caribbean Q1 2014 results | 2.20 | -0.28 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-23 | $54.21 | Royal Caribbean Q1 2014 results | 2.20 | -0.39 | 7.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-30 | $55.29 | Royal Caribbean Q1 2014 results | 2.20 | -0.44 | 9.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-06 | $56.80 | Royal Caribbean Q1 2014 results | 2.20 | -0.49 | 13.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-13 | $54.00 | Royal Caribbean Q1 2014 results | 2.20 | -0.38 | 7.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-20 | $56.35 | Royal Caribbean Q1 2014 results | 2.20 | -0.48 | 11.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-27 | $55.80 | Royal Caribbean Q1 2014 results | 2.20 | -0.46 | 10.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-03 | $57.13 | Royal Caribbean Q1 2014 results | 2.20 | -0.51 | 14.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-11 | $54.97 | Royal Caribbean Q1 2014 results | 2.20 | -0.43 | 8.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-18 | $55.50 | Royal Caribbean Q1 2014 results | 2.20 | -0.46 | 9.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-25 | $63.06 | Royal Caribbean Q2 2014 results | 3.05 | +0.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-01 | $59.47 | Royal Caribbean Q2 2014 results | 3.05 | +0.18 | 108.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-08 | $59.53 | Royal Caribbean Q2 2014 results | 3.05 | +0.18 | 122.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-15 | $62.47 | Royal Caribbean Q2 2014 results | 3.05 | +0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-22 | $63.58 | Royal Caribbean Q2 2014 results | 3.05 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-29 | $63.76 | Royal Caribbean Q2 2014 results | 3.05 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-05 | $66.98 | Royal Caribbean Q2 2014 results | 3.05 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-12 | $67.21 | Royal Caribbean Q2 2014 results | 3.05 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-19 | $68.24 | Royal Caribbean Q2 2014 results | 3.05 | +0.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-26 | $67.50 | Royal Caribbean Q2 2014 results | 3.05 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-03 | $66.38 | Royal Caribbean Q2 2014 results | 3.05 | +0.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-10 | $57.82 | Royal Caribbean Q2 2014 results | 3.05 | +0.26 | 25.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-17 | $57.71 | Royal Caribbean Q2 2014 results | 3.05 | +0.25 | 24.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-24 | $64.55 | Royal Caribbean Q3 2014 results | 2.85 | -0.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-31 | $67.97 | Royal Caribbean Q3 2014 results | 2.85 | -0.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-07 | $67.20 | Royal Caribbean Q3 2014 results | 2.85 | -0.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-14 | $69.57 | Royal Caribbean Q3 2014 results | 2.85 | -0.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-21 | $70.42 | Royal Caribbean Q3 2014 results | 2.85 | -0.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-28 | $73.74 | Royal Caribbean Q3 2014 results | 2.85 | -0.21 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-05 | $78.37 | Royal Caribbean Q3 2014 results | 2.85 | -0.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-12 | $77.97 | Royal Caribbean Q3 2014 results | 2.85 | -0.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-19 | $80.59 | Royal Caribbean Q3 2014 results | 2.85 | -0.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-26 | $82.27 | Royal Caribbean Q3 2014 results | 2.85 | -0.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-02 | $82.95 | Royal Caribbean Q3 2014 results | 2.85 | -0.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-09 | $83.92 | Royal Caribbean Q3 2014 results | 2.85 | -0.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-16 | $82.99 | Royal Caribbean Q3 2014 results | 2.85 | -0.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-23 | $84.51 | Royal Caribbean Q3 2014 results | 2.85 | -0.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-30 | $75.55 | Royal Caribbean Q4 2014 results | 2.50 | -0.25 | 13.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-06 | $75.64 | Royal Caribbean Q4 2014 results | 2.50 | -0.25 | 13.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-13 | $75.56 | Royal Caribbean Q4 2014 results | 2.50 | -0.25 | 13.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-20 | $76.17 | Royal Caribbean Q4 2014 results | 2.50 | -0.28 | 15.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-27 | $76.42 | Royal Caribbean Q4 2014 results | 2.50 | -0.31 | 28.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-06 | $79.58 | Royal Caribbean Q4 2014 results | 2.50 | -0.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-13 | $77.55 | Royal Caribbean Q4 2014 results | 2.50 | -0.34 | 51.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-20 | $79.98 | Royal Caribbean Q4 2014 results | 2.50 | -0.41 | 3849.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-27 | $79.85 | Royal Caribbean Q4 2014 results | 2.50 | -0.41 | 512.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-02 | $82.45 | Royal Caribbean Q4 2014 results | 2.50 | -0.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-10 | $81.24 | Royal Caribbean Q4 2014 results | 2.50 | -0.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-17 | $79.03 | Royal Caribbean Q4 2014 results | 2.50 | -0.38 | 78.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-21 | $73.91 | Royal Caribbean Q1 2015 results | 2.40 | -0.11 | 5.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-01 | $67.94 | Royal Caribbean Q1 2015 results | 2.40 | +0.22 | 3.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-05-08 | $72.45 | Royal Caribbean Q1 2015 results | 2.40 | -0.06 | 4.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-15 | $74.73 | Royal Caribbean Q1 2015 results | 2.40 | -0.13 | 5.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-22 | $76.22 | Royal Caribbean Q1 2015 results | 2.40 | -0.17 | 6.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-29 | $75.98 | Royal Caribbean Q1 2015 results | 2.40 | -0.16 | 6.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-05 | $78.77 | Royal Caribbean Q1 2015 results | 2.40 | -0.24 | 9.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-12 | $76.80 | Royal Caribbean Q1 2015 results | 2.40 | -0.18 | 6.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-19 | $79.80 | Royal Caribbean Q1 2015 results | 2.40 | -0.26 | 9.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-26 | $79.80 | Royal Caribbean Q1 2015 results | 2.40 | -0.26 | 9.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-02 | $78.78 | Royal Caribbean Q1 2015 results | 2.40 | -0.23 | 8.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-10 | $82.41 | Royal Caribbean Q1 2015 results | 2.40 | -0.33 | 14.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-17 | $84.28 | Royal Caribbean Q1 2015 results | 2.40 | -0.39 | 21.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-24 | $82.60 | Royal Caribbean Q1 2015 results | 2.40 | -0.34 | 14.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-31 | $89.85 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 20.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-07 | $91.19 | Royal Caribbean Q2 2015 results | 2.55 | -0.24 | 31.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-14 | $89.89 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 21.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-21 | $85.71 | Royal Caribbean Q2 2015 results | 2.55 | -0.10 | 9.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-28 | $88.86 | Royal Caribbean Q2 2015 results | 2.55 | -0.19 | 16.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-04 | $88.54 | Royal Caribbean Q2 2015 results | 2.55 | -0.17 | 13.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-11 | $92.86 | Royal Caribbean Q2 2015 results | 2.55 | -0.25 | 41.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-18 | $95.49 | Royal Caribbean Q2 2015 results | 2.55 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-09-25 | $91.07 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 22.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-02 | $91.25 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 23.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-09 | $92.50 | Royal Caribbean Q2 2015 results | 2.55 | -0.24 | 35.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-16 | $91.82 | Royal Caribbean Q2 2015 results | 2.55 | -0.23 | 27.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-23 | $97.99 | Royal Caribbean Q3 2015 results | 2.25 | -0.56 | 9499.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-10-30 | $98.35 | Royal Caribbean Q3 2015 results | 2.25 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-06 | $99.41 | Royal Caribbean Q3 2015 results | 2.25 | -0.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-13 | $95.50 | Royal Caribbean Q3 2015 results | 2.25 | -0.53 | 37.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-20 | $94.02 | Royal Caribbean Q3 2015 results | 2.25 | -0.51 | 22.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-11-27 | $92.50 | Royal Caribbean Q3 2015 results | 2.25 | -0.46 | 13.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-04 | $94.27 | Royal Caribbean Q3 2015 results | 2.25 | -0.51 | 19.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-11 | $91.91 | Royal Caribbean Q3 2015 results | 2.25 | -0.45 | 12.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-18 | $95.90 | Royal Caribbean Q3 2015 results | 2.25 | -0.53 | 29.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-24 | $99.92 | Royal Caribbean Q3 2015 results | 2.25 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-12-31 | $101.21 | Royal Caribbean Q3 2015 results | 2.25 | -0.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-01-08 | $91.78 | Royal Caribbean Q3 2015 results | 2.25 | -0.44 | 12.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-01-15 | $82.92 | Royal Caribbean Q3 2015 results | 2.25 | -0.23 | 4.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-01-22 | $85.76 | Royal Caribbean Q3 2015 results | 2.25 | -0.28 | 5.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-01-29 | $81.96 | Royal Caribbean Q3 2015 results | 2.25 | -0.19 | 4.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-02-03 | $73.83 | Royal Caribbean Q4 2015 results | 2.70 | +1.10 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-02-12 | $68.77 | Royal Caribbean Q4 2015 results | 2.70 | +1.20 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-02-19 | $70.85 | Royal Caribbean Q4 2015 results | 2.70 | +1.17 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-02-26 | $75.19 | Royal Caribbean Q4 2015 results | 2.70 | +1.06 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-03-04 | $74.01 | Royal Caribbean Q4 2015 results | 2.70 | +1.09 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-03-11 | $72.82 | Royal Caribbean Q4 2015 results | 2.70 | +1.12 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-03-18 | $77.62 | Royal Caribbean Q4 2015 results | 2.70 | +0.98 | 1.78x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-03-24 | $74.47 | Royal Caribbean Q4 2015 results | 2.70 | +1.08 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-04-01 | $81.88 | Royal Caribbean Q4 2015 results | 2.70 | +0.85 | 2.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-04-08 | $80.60 | Royal Caribbean Q4 2015 results | 2.70 | +0.89 | 1.99x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-04-15 | $81.05 | Royal Caribbean Q4 2015 results | 2.70 | +0.87 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-04-22 | $73.80 | Royal Caribbean Q4 2015 results | 2.70 | +1.09 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-04-29 | $77.40 | Royal Caribbean Q1 2016 results | 2.55 | +0.82 | 1.81x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-05-06 | $74.80 | Royal Caribbean Q1 2016 results | 2.55 | +0.89 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-05-13 | $75.64 | Royal Caribbean Q1 2016 results | 2.55 | +0.87 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-05-20 | $78.90 | Royal Caribbean Q1 2016 results | 2.55 | +0.77 | 1.92x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2016-05-27 | $77.77 | Royal Caribbean Q1 2016 results | 2.55 | +0.80 | 1.83x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-06-03 | $76.37 | Royal Caribbean Q1 2016 results | 2.55 | +0.85 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-06-10 | $73.93 | Royal Caribbean Q1 2016 results | 2.55 | +0.91 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-06-17 | $74.64 | Royal Caribbean Q1 2016 results | 2.55 | +0.89 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-06-24 | $70.08 | Royal Caribbean Q1 2016 results | 2.55 | +0.98 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2016-07-01 | $69.11 | Royal Caribbean Q1 2016 results | 2.55 | +1.00 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-07-08 | $68.38 | Royal Caribbean Q1 2016 results | 2.55 | +1.21 | 1.30x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-07-15 | $70.39 | Royal Caribbean Q1 2016 results | 2.55 | +0.98 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-07-22 | $72.98 | Royal Caribbean Q1 2016 results | 2.55 | +0.93 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-07-29 | $72.44 | Royal Caribbean Q1 2016 results | 2.55 | +0.94 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-08-03 | $68.77 | Royal Caribbean Q2 2016 results | 2.55 | +0.91 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-08-12 | $70.80 | Royal Caribbean Q2 2016 results | 2.55 | +0.86 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-08-19 | $69.43 | Royal Caribbean Q2 2016 results | 2.55 | +0.89 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-08-26 | $69.75 | Royal Caribbean Q2 2016 results | 2.55 | +0.88 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-09-02 | $70.01 | Royal Caribbean Q2 2016 results | 2.55 | +0.88 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-09-09 | $65.98 | Royal Caribbean Q2 2016 results | 2.55 | +1.16 | 1.35x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-09-16 | $66.32 | Royal Caribbean Q2 2016 results | 2.55 | +1.16 | 1.36x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-09-23 | $71.99 | Royal Caribbean Q2 2016 results | 2.55 | +0.83 | 1.70x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-09-30 | $74.95 | Royal Caribbean Q2 2016 results | 2.55 | +0.75 | 1.91x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2016-10-07 | $73.69 | Royal Caribbean Q2 2016 results | 2.55 | +0.79 | 1.82x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-10-14 | $69.98 | Royal Caribbean Q2 2016 results | 2.55 | +0.88 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-10-21 | $69.37 | Royal Caribbean Q2 2016 results | 2.55 | +0.89 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-10-28 | $74.47 | Royal Caribbean Q3 2016 results | 2.85 | +1.09 | 1.83x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2016-11-04 | $75.23 | Royal Caribbean Q3 2016 results | 2.85 | +1.06 | 1.89x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2016-11-11 | $81.75 | Royal Caribbean Q3 2016 results | 2.85 | +0.88 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-11-18 | $82.95 | Royal Caribbean Q3 2016 results | 2.85 | +0.85 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-11-25 | $83.02 | Royal Caribbean Q3 2016 results | 2.85 | +0.84 | 2.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-02 | $79.56 | Royal Caribbean Q3 2016 results | 2.85 | +0.93 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-09 | $86.19 | Royal Caribbean Q3 2016 results | 2.85 | +0.75 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-16 | $84.03 | Royal Caribbean Q3 2016 results | 2.85 | +0.82 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-23 | $84.25 | Royal Caribbean Q3 2016 results | 2.85 | +0.80 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-30 | $82.04 | Royal Caribbean Q3 2016 results | 2.85 | +0.87 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-01-06 | $84.33 | Royal Caribbean Q3 2016 results | 2.85 | +0.80 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-01-13 | $85.09 | Royal Caribbean Q3 2016 results | 2.85 | +0.79 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-01-20 | $85.04 | Royal Caribbean Q3 2016 results | 2.85 | +0.79 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-01-27 | $94.56 | Royal Caribbean Q4 2016 results | 2.90 | +0.94 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-02-03 | $94.52 | Royal Caribbean Q4 2016 results | 2.90 | +0.94 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-02-10 | $95.84 | Royal Caribbean Q4 2016 results | 2.90 | +0.91 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-02-17 | $95.21 | Royal Caribbean Q4 2016 results | 2.90 | +0.92 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-02-24 | $96.15 | Royal Caribbean Q4 2016 results | 2.90 | +0.92 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-03-03 | $95.48 | Royal Caribbean Q4 2016 results | 2.90 | +0.94 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-03-10 | $97.25 | Royal Caribbean Q4 2016 results | 2.90 | +0.89 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-17 | $97.80 | Royal Caribbean Q4 2016 results | 2.90 | +0.88 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-24 | $98.57 | Royal Caribbean Q4 2016 results | 2.90 | +0.86 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-03-31 | $98.11 | Royal Caribbean Q4 2016 results | 2.90 | +0.87 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-04-07 | $97.39 | Royal Caribbean Q4 2016 results | 2.90 | +0.88 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-04-13 | $94.36 | Royal Caribbean Q4 2016 results | 2.90 | +0.96 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2017-04-21 | $97.33 | Royal Caribbean Q4 2016 results | 2.90 | +0.88 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-04-28 | $106.60 | Royal Caribbean Q1 2017 results | 3.05 | +0.86 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-05 | $108.62 | Royal Caribbean Q1 2017 results | 3.05 | +0.81 | 3.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-12 | $107.57 | Royal Caribbean Q1 2017 results | 3.05 | +0.84 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-19 | $106.15 | Royal Caribbean Q1 2017 results | 3.05 | +0.87 | 2.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-05-26 | $111.08 | Royal Caribbean Q1 2017 results | 3.05 | +0.66 | 3.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-06-02 | $113.38 | Royal Caribbean Q1 2017 results | 3.05 | +0.62 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-09 | $109.82 | Royal Caribbean Q1 2017 results | 3.05 | +0.69 | 3.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-06-16 | $111.90 | Royal Caribbean Q1 2017 results | 3.05 | +0.65 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-23 | $111.86 | Royal Caribbean Q1 2017 results | 3.05 | +0.65 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-06-30 | $109.23 | Royal Caribbean Q1 2017 results | 3.05 | +0.80 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-07-07 | $109.20 | Royal Caribbean Q1 2017 results | 3.05 | +0.80 | 3.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-07-14 | $108.89 | Royal Caribbean Q1 2017 results | 3.05 | +0.81 | 3.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-07-21 | $114.91 | Royal Caribbean Q1 2017 results | 3.05 | +0.58 | 4.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-07-28 | $113.39 | Royal Caribbean Q1 2017 results | 3.05 | +0.62 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-02 | $117.39 | Royal Caribbean Q2 2017 results | 3.20 | +0.62 | 3.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-11 | $117.22 | Royal Caribbean Q2 2017 results | 3.20 | +0.62 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-18 | $118.81 | Royal Caribbean Q2 2017 results | 3.20 | +0.59 | 4.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-08-25 | $120.44 | Royal Caribbean Q2 2017 results | 3.20 | +0.58 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-09-01 | $124.24 | Royal Caribbean Q2 2017 results | 3.20 | +0.51 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-09-08 | $117.45 | Royal Caribbean Q2 2017 results | 3.20 | +0.62 | 3.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-09-15 | $120.92 | Royal Caribbean Q2 2017 results | 3.20 | +0.57 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-09-22 | $115.29 | Royal Caribbean Q2 2017 results | 3.20 | +0.66 | 3.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2017-09-29 | $118.54 | Royal Caribbean Q2 2017 results | 3.20 | +0.61 | 4.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-10-06 | $123.39 | Royal Caribbean Q2 2017 results | 3.20 | +0.52 | 5.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-10-13 | $127.77 | Royal Caribbean Q2 2017 results | 3.20 | +0.45 | 6.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-10-20 | $120.71 | Royal Caribbean Q2 2017 results | 3.20 | +0.57 | 4.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-10-27 | $124.21 | Royal Caribbean Q2 2017 results | 3.20 | +0.51 | 5.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-11-03 | $123.18 | Royal Caribbean Q2 2017 results | 3.20 | +0.53 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-11-08 | $128.92 | Royal Caribbean Q3 2017 results | 2.55 | -0.18 | 7.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-11-17 | $124.40 | Royal Caribbean Q3 2017 results | 2.55 | -0.10 | 5.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-11-24 | $125.21 | Royal Caribbean Q3 2017 results | 2.55 | -0.12 | 5.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-01 | $125.23 | Royal Caribbean Q3 2017 results | 2.55 | -0.12 | 5.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-08 | $125.23 | Royal Caribbean Q3 2017 results | 2.55 | -0.12 | 5.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-15 | $125.09 | Royal Caribbean Q3 2017 results | 2.55 | -0.11 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-22 | $121.06 | Royal Caribbean Q3 2017 results | 2.55 | -0.04 | 4.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2017-12-29 | $119.28 | Royal Caribbean Q3 2017 results | 2.55 | +0.00 | 4.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2014-01-10 | $49.09 | Royal Caribbean Q3 2013 results | 2.40 | -0.71 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.0% | +83.4pp | +73.0% | ✗ |
+| 2014-01-17 | $49.56 | Royal Caribbean Q3 2013 results | 2.40 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.3% | +65.6pp | +71.6% | ✗ |
+| 2014-01-24 | $47.13 | Royal Caribbean Q3 2013 results | 2.40 | -0.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.2% | +76.2pp | +80.5% | ✗ |
+| 2014-01-28 | $49.66 | Royal Caribbean Q4 2013 results | 2.85 | +0.39 | 5.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +62.7% | +52.6pp | +71.2% | ✗ |
+| 2014-02-07 | $50.61 | Royal Caribbean Q4 2013 results | 2.85 | +0.34 | 5.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.3% | +33.2pp | +68.1% | ✗ |
+| 2014-02-14 | $52.26 | Royal Caribbean Q4 2013 results | 2.85 | +0.15 | 7.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.8% | +30.0pp | +62.5% | ✗ |
+| 2014-02-21 | $51.87 | Royal Caribbean Q4 2013 results | 2.85 | +0.13 | 15.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.6% | +32.8pp | +63.6% | ✗ |
+| 2014-02-28 | $52.93 | Royal Caribbean Q4 2013 results | 2.85 | +0.07 | 24.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.9% | +37.9pp | +60.2% | ✗ |
+| 2014-03-07 | $51.89 | Royal Caribbean Q4 2013 results | 2.85 | +0.13 | 16.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.9% | +36.0pp | +63.1% | ✗ |
+| 2014-03-14 | $50.35 | Royal Caribbean Q4 2013 results | 2.85 | +0.30 | 10.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.2% | +35.1pp | +67.9% | ✗ |
+| 2014-03-21 | $54.37 | Royal Caribbean Q4 2013 results | 2.85 | +0.01 | 83.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.6% | +34.3pp | +55.3% | ✗ |
+| 2014-03-28 | $53.54 | Royal Caribbean Q4 2013 results | 2.85 | +0.03 | 112.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.7% | +31.7pp | +57.7% | ✗ |
+| 2014-04-04 | $54.53 | Royal Caribbean Q4 2013 results | 2.85 | -0.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.0% | +40.9pp | +54.8% | ✗ |
+| 2014-04-11 | $51.80 | Royal Caribbean Q4 2013 results | 2.85 | +0.11 | 22.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +41.5pp | +62.9% | ✗ |
+| 2014-04-17 | $51.34 | Royal Caribbean Q4 2013 results | 2.85 | +0.13 | 18.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +62.9% | +47.0pp | +64.5% | ✗ |
+| 2014-04-25 | $51.36 | Royal Caribbean Q1 2014 results | 2.20 | -0.16 | 5.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.0% | +34.6pp | +64.5% | ✗ |
+| 2014-05-02 | $53.00 | Royal Caribbean Q1 2014 results | 2.20 | -0.34 | 6.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.4% | +38.4pp | +59.7% | ✗ |
+| 2014-05-09 | $51.37 | Royal Caribbean Q1 2014 results | 2.20 | -0.16 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.4% | +38.5pp | +65.1% | ✗ |
+| 2014-05-16 | $51.90 | Royal Caribbean Q1 2014 results | 2.20 | -0.28 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.2% | +37.8pp | +63.5% | ✗ |
+| 2014-05-23 | $54.21 | Royal Caribbean Q1 2014 results | 2.20 | -0.39 | 7.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.7% | +36.5pp | +56.6% | ✗ |
+| 2014-05-30 | $55.29 | Royal Caribbean Q1 2014 results | 2.20 | -0.44 | 9.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.5% | +32.1pp | +53.6% | ✗ |
+| 2014-06-06 | $56.80 | Royal Caribbean Q1 2014 results | 2.20 | -0.49 | 13.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.9% | +26.5pp | +49.4% | ✗ |
+| 2014-06-13 | $54.00 | Royal Caribbean Q1 2014 results | 2.20 | -0.38 | 7.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.0% | +28.3pp | +57.1% | ✗ |
+| 2014-06-20 | $56.35 | Royal Caribbean Q1 2014 results | 2.20 | -0.48 | 11.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.9% | +29.5pp | +50.4% | ✗ |
+| 2014-06-27 | $55.80 | Royal Caribbean Q1 2014 results | 2.20 | -0.46 | 10.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.0% | +16.8pp | +51.6% | ✗ |
+| 2014-07-03 | $57.13 | Royal Caribbean Q1 2014 results | 2.20 | -0.51 | 14.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.7% | +15.5pp | +47.8% | ✗ |
+| 2014-07-11 | $54.97 | Royal Caribbean Q1 2014 results | 2.20 | -0.43 | 8.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.5% | +18.6pp | +53.2% | ✗ |
+| 2014-07-18 | $55.50 | Royal Caribbean Q1 2014 results | 2.20 | -0.46 | 9.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.9% | +19.2pp | +51.3% | ✗ |
+| 2014-07-25 | $63.06 | Royal Caribbean Q2 2014 results | 3.05 | +0.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.1% | +6.3pp | +32.8% | ✗ |
+| 2014-08-01 | $59.47 | Royal Caribbean Q2 2014 results | 3.05 | +0.18 | 108.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.4% | +8.3pp | +40.4% | ✗ |
+| 2014-08-08 | $59.53 | Royal Caribbean Q2 2014 results | 3.05 | +0.18 | 122.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.8% | +11.6pp | +39.7% | ✗ |
+| 2014-08-15 | $62.47 | Royal Caribbean Q2 2014 results | 3.05 | +0.11 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.8% | +2.5pp | +32.4% | ✗ |
+| 2014-08-22 | $63.58 | Royal Caribbean Q2 2014 results | 3.05 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.1% | +0.2pp | +29.6% | ✗ |
+| 2014-08-29 | $63.76 | Royal Caribbean Q2 2014 results | 3.05 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.0% | +1.0pp | +28.7% | ✗ |
+| 2014-09-05 | $66.98 | Royal Caribbean Q2 2014 results | 3.05 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.6% | -4.2pp | +22.0% | ✓ |
+| 2014-09-12 | $67.21 | Royal Caribbean Q2 2014 results | 3.05 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.5% | -8.4pp | +20.9% | ✓ |
+| 2014-09-19 | $68.24 | Royal Caribbean Q2 2014 results | 3.05 | +0.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.5% | -11.1pp | +18.3% | ✓ |
+| 2014-09-26 | $67.50 | Royal Caribbean Q2 2014 results | 3.05 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.4% | -3.2pp | +18.9% | ✓ |
+| 2014-10-03 | $66.38 | Royal Caribbean Q2 2014 results | 3.05 | +0.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.7% | +2.5pp | +20.5% | ✗ |
+| 2014-10-10 | $57.82 | Royal Caribbean Q2 2014 results | 3.05 | +0.26 | 25.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.5% | +14.5pp | +37.7% | ✗ |
+| 2014-10-17 | $57.71 | Royal Caribbean Q2 2014 results | 3.05 | +0.25 | 24.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.2% | +7.0pp | +37.3% | ✗ |
+| 2014-10-24 | $64.55 | Royal Caribbean Q3 2014 results | 2.85 | -0.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.4% | -0.3pp | +22.0% | ✓ |
+| 2014-10-31 | $67.97 | Royal Caribbean Q3 2014 results | 2.85 | -0.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.8% | +4.2pp | +15.1% | ✗ |
+| 2014-11-07 | $67.20 | Royal Caribbean Q3 2014 results | 2.85 | -0.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.1% | +9.1pp | +15.7% | ✗ |
+| 2014-11-14 | $69.57 | Royal Caribbean Q3 2014 results | 2.85 | -0.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.0% | +14.7pp | +11.3% | ✗ |
+| 2014-11-21 | $70.42 | Royal Caribbean Q3 2014 results | 2.85 | -0.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.5% | +10.8pp | +9.7% | ✗ |
+| 2014-11-28 | $73.74 | Royal Caribbean Q3 2014 results | 2.85 | -0.21 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.4% | +3.9pp | +4.5% | ✗ |
+| 2014-12-05 | $78.37 | Royal Caribbean Q3 2014 results | 2.85 | -0.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.1% | -3.3pp | -2.0% | ✓ |
+| 2014-12-12 | $77.97 | Royal Caribbean Q3 2014 results | 2.85 | -0.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.4% | -3.5pp | -1.7% | ✓ |
+| 2014-12-19 | $80.59 | Royal Caribbean Q3 2014 results | 2.85 | -0.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.2% | -7.2pp | -5.2% | ✓ |
+| 2014-12-26 | $82.27 | Royal Caribbean Q3 2014 results | 2.85 | -0.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.1% | -6.4pp | -7.4% | ✓ |
+| 2015-01-02 | $82.95 | Royal Caribbean Q3 2014 results | 2.85 | -0.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.6% | -10.5pp | -8.5% | ✓ |
+| 2015-01-09 | $83.92 | Royal Caribbean Q3 2014 results | 2.85 | -0.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.4% | -10.8pp | -9.8% | ✓ |
+| 2015-01-16 | $82.99 | Royal Caribbean Q3 2014 results | 2.85 | -0.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.2% | -10.7pp | -8.9% | ✓ |
+| 2015-01-23 | $84.51 | Royal Caribbean Q3 2014 results | 2.85 | -0.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.2% | -10.4pp | -10.5% | ✓ |
+| 2015-01-30 | $75.55 | Royal Caribbean Q4 2014 results | 2.50 | -0.25 | 13.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.0% | +10.5pp | +0.4% | ✗ |
+| 2015-02-06 | $75.64 | Royal Caribbean Q4 2014 results | 2.50 | -0.25 | 13.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.4% | +13.8pp | +0.8% | ✗ |
+| 2015-02-13 | $75.56 | Royal Caribbean Q4 2014 results | 2.50 | -0.25 | 13.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | +16.2pp | +1.6% | ✗ |
+| 2015-02-20 | $76.17 | Royal Caribbean Q4 2014 results | 2.50 | -0.28 | 15.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | +13.2pp | +1.3% | ✗ |
+| 2015-02-27 | $76.42 | Royal Caribbean Q4 2014 results | 2.50 | -0.31 | 28.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.1% | +13.4pp | +1.5% | ✗ |
+| 2015-03-06 | $79.58 | Royal Caribbean Q4 2014 results | 2.50 | -0.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.2% | +4.4pp | -2.0% | ✗ |
+| 2015-03-13 | $77.55 | Royal Caribbean Q4 2014 results | 2.50 | -0.34 | 51.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.1% | +9.3pp | +1.2% | ✗ |
+| 2015-03-20 | $79.98 | Royal Caribbean Q4 2014 results | 2.50 | -0.41 | 3849.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.5% | +9.7pp | -1.3% | ✗ |
+| 2015-03-27 | $79.85 | Royal Caribbean Q4 2014 results | 2.50 | -0.41 | 512.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.4% | +10.5pp | -0.6% | ✗ |
+| 2015-04-02 | $82.45 | Royal Caribbean Q4 2014 results | 2.50 | -0.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.9% | +4.4pp | -3.3% | ✗ |
+| 2015-04-10 | $81.24 | Royal Caribbean Q4 2014 results | 2.50 | -0.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.6% | +8.3pp | -1.4% | ✗ |
+| 2015-04-17 | $79.03 | Royal Caribbean Q4 2014 results | 2.50 | -0.38 | 78.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.5% | +8.4pp | +1.6% | ✗ |
+| 2015-04-21 | $73.91 | Royal Caribbean Q1 2015 results | 2.40 | -0.11 | 5.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.1% | +19.9pp | +9.0% | ✗ |
+| 2015-05-01 | $67.94 | Royal Caribbean Q1 2015 results | 2.40 | +0.22 | 3.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +64.3% | +46.9pp | +19.5% | ✗ |
+| 2015-05-08 | $72.45 | Royal Caribbean Q1 2015 results | 2.40 | -0.06 | 4.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.5% | +36.1pp | +13.0% | ✗ |
+| 2015-05-15 | $74.73 | Royal Caribbean Q1 2015 results | 2.40 | -0.13 | 5.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.6% | +31.3pp | +10.4% | ✗ |
+| 2015-05-22 | $76.22 | Royal Caribbean Q1 2015 results | 2.40 | -0.17 | 6.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.5% | +27.9pp | +9.0% | ✗ |
+| 2015-05-29 | $75.98 | Royal Caribbean Q1 2015 results | 2.40 | -0.16 | 6.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.1% | +31.4pp | +10.0% | ✗ |
+| 2015-06-05 | $78.77 | Royal Caribbean Q1 2015 results | 2.40 | -0.24 | 9.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.6% | +26.1pp | +6.9% | ✗ |
+| 2015-06-12 | $76.80 | Royal Caribbean Q1 2015 results | 2.40 | -0.18 | 6.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.6% | +27.5pp | +10.6% | ✗ |
+| 2015-06-19 | $79.80 | Royal Caribbean Q1 2015 results | 2.40 | -0.26 | 9.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.3% | +25.9pp | +7.4% | ✗ |
+| 2015-06-26 | $79.80 | Royal Caribbean Q1 2015 results | 2.40 | -0.26 | 9.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.8% | +23.6pp | +8.3% | ✗ |
+| 2015-07-02 | $78.78 | Royal Caribbean Q1 2015 results | 2.40 | -0.23 | 8.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +22.0pp | +10.7% | ✗ |
+| 2015-07-10 | $82.41 | Royal Caribbean Q1 2015 results | 2.40 | -0.33 | 14.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.6% | +15.5pp | +6.7% | ✗ |
+| 2015-07-17 | $84.28 | Royal Caribbean Q1 2015 results | 2.40 | -0.39 | 21.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.3% | +16.6pp | +5.2% | ✗ |
+| 2015-07-24 | $82.60 | Royal Caribbean Q1 2015 results | 2.40 | -0.34 | 14.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.3% | +21.3pp | +8.4% | ✗ |
+| 2015-07-31 | $89.85 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 20.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.0% | +8.4pp | +0.5% | ✗ |
+| 2015-08-07 | $91.19 | Royal Caribbean Q2 2015 results | 2.55 | -0.24 | 31.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.9% | +9.4pp | +0.1% | ✗ |
+| 2015-08-14 | $89.89 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 21.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.9% | +14.8pp | +2.6% | ✗ |
+| 2015-08-21 | $85.71 | Royal Caribbean Q2 2015 results | 2.55 | -0.10 | 9.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.0% | +16.7pp | +8.8% | ✗ |
+| 2015-08-28 | $88.86 | Royal Caribbean Q2 2015 results | 2.55 | -0.19 | 16.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.7% | +12.5pp | +6.0% | ✗ |
+| 2015-09-04 | $88.54 | Royal Caribbean Q2 2015 results | 2.55 | -0.17 | 13.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.2% | +10.8pp | +7.5% | ✗ |
+| 2015-09-11 | $92.86 | Royal Caribbean Q2 2015 results | 2.55 | -0.25 | 41.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.7% | +3.5pp | +3.4% | ✗ |
+| 2015-09-18 | $95.49 | Royal Caribbean Q2 2015 results | 2.55 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.6% | -4.9pp | +1.7% | ✓ |
+| 2015-09-25 | $91.07 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 22.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.0% | -4.8pp | +7.7% | ✓ |
+| 2015-10-02 | $91.25 | Royal Caribbean Q2 2015 results | 2.55 | -0.22 | 23.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.5% | +0.4pp | +8.4% | ✗ |
+| 2015-10-09 | $92.50 | Royal Caribbean Q2 2015 results | 2.55 | -0.24 | 35.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.6% | +7.9pp | +8.0% | ✗ |
+| 2015-10-16 | $91.82 | Royal Caribbean Q2 2015 results | 2.55 | -0.23 | 27.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +12.6pp | +9.9% | ✗ |
+| 2015-10-23 | $97.99 | Royal Caribbean Q3 2015 results | 2.25 | -0.56 | 9499.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.0% | +0.1pp | +4.1% | ✗ |
+| 2015-10-30 | $98.35 | Royal Caribbean Q3 2015 results | 2.25 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.7% | -0.2pp | +4.8% | ✓ |
+| 2015-11-06 | $99.41 | Royal Caribbean Q3 2015 results | 2.25 | -0.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.8% | +2.1pp | +4.6% | ✗ |
+| 2015-11-13 | $95.50 | Royal Caribbean Q3 2015 results | 2.25 | -0.53 | 37.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | +2.1pp | +9.9% | ✗ |
+| 2015-11-20 | $94.02 | Royal Caribbean Q3 2015 results | 2.25 | -0.51 | 22.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.7% | +7.9pp | +12.4% | ✗ |
+| 2015-11-27 | $92.50 | Royal Caribbean Q3 2015 results | 2.25 | -0.46 | 13.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.3% | +10.8pp | +15.0% | ✗ |
+| 2015-12-04 | $94.27 | Royal Caribbean Q3 2015 results | 2.25 | -0.51 | 19.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.5% | +6.2pp | +13.8% | ✗ |
+| 2015-12-11 | $91.91 | Royal Caribbean Q3 2015 results | 2.25 | -0.45 | 12.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.5% | +4.0pp | +17.6% | ✗ |
+| 2015-12-18 | $95.90 | Royal Caribbean Q3 2015 results | 2.25 | -0.53 | 29.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.4% | -3.4pp | +13.5% | ✗ |
+| 2015-12-24 | $99.92 | Royal Caribbean Q3 2015 results | 2.25 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.0% | -9.6pp | +9.6% | ✓ |
+| 2015-12-31 | $101.21 | Royal Caribbean Q3 2015 results | 2.25 | -0.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.7% | -13.8pp | +8.8% | ✓ |
+| 2016-01-08 | $91.78 | Royal Caribbean Q3 2015 results | 2.25 | -0.44 | 12.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.2% | -11.4pp | +20.7% | ✗ |
+| 2016-01-15 | $82.92 | Royal Caribbean Q3 2015 results | 2.25 | -0.23 | 4.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +5.5pp | +34.5% | ✗ |
+| 2016-01-22 | $85.76 | Royal Caribbean Q3 2015 results | 2.25 | -0.28 | 5.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.6% | +1.3pp | +30.9% | ✗ |
+| 2016-01-29 | $81.96 | Royal Caribbean Q3 2015 results | 2.25 | -0.19 | 4.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.2% | +17.4pp | +38.0% | ✗ |
+| 2016-02-03 | $73.83 | Royal Caribbean Q4 2015 results | 2.70 | +1.10 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +80.9% | +32.0pp | +54.2% | ✗ |
+| 2016-02-12 | $68.77 | Royal Caribbean Q4 2015 results | 2.70 | +1.20 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +93.6% | +46.4pp | +66.5% | ✗ |
+| 2016-02-19 | $70.85 | Royal Caribbean Q4 2015 results | 2.70 | +1.17 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +90.8% | +43.7pp | +62.5% | ✗ |
+| 2016-02-26 | $75.19 | Royal Caribbean Q4 2015 results | 2.70 | +1.06 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +78.1% | +30.8pp | +53.9% | ✗ |
+| 2016-03-04 | $74.01 | Royal Caribbean Q4 2015 results | 2.70 | +1.09 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +70.4% | +31.5pp | +57.1% | ✗ |
+| 2016-03-11 | $72.82 | Royal Caribbean Q4 2015 results | 2.70 | +1.12 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +79.5% | +37.4pp | +60.4% | ✗ |
+| 2016-03-18 | $77.62 | Royal Caribbean Q4 2015 results | 2.70 | +0.98 | 1.78x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +66.0% | +27.2pp | +51.2% | ✗ |
+| 2016-03-24 | $74.47 | Royal Caribbean Q4 2015 results | 2.70 | +1.08 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +62.7% | +31.0pp | +58.3% | ✗ |
+| 2016-04-01 | $81.88 | Royal Caribbean Q4 2015 results | 2.70 | +0.85 | 2.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +48.8% | +17.1pp | +44.4% | ✗ |
+| 2016-04-08 | $80.60 | Royal Caribbean Q4 2015 results | 2.70 | +0.89 | 1.99x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.5% | +16.0pp | +47.1% | ✗ |
+| 2016-04-15 | $81.05 | Royal Caribbean Q4 2015 results | 2.70 | +0.87 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +45.4% | +13.3pp | +46.7% | ✗ |
+| 2016-04-22 | $73.80 | Royal Caribbean Q4 2015 results | 2.70 | +1.09 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +66.9% | +34.8pp | +61.6% | ✗ |
+| 2016-04-29 | $77.40 | Royal Caribbean Q1 2016 results | 2.55 | +0.82 | 1.81x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +49.8% | +16.0pp | +54.5% | ✗ |
+| 2016-05-06 | $74.80 | Royal Caribbean Q1 2016 results | 2.55 | +0.89 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +49.0% | +15.1pp | +59.9% | ✗ |
+| 2016-05-13 | $75.64 | Royal Caribbean Q1 2016 results | 2.55 | +0.87 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.0% | +9.1pp | +58.0% | ✓ |
+| 2016-05-20 | $78.90 | Royal Caribbean Q1 2016 results | 2.55 | +0.77 | 1.92x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +40.8% | +4.1pp | +51.5% | ✓ |
+| 2016-05-27 | $77.77 | Royal Caribbean Q1 2016 results | 2.55 | +0.80 | 1.83x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +46.0% | +12.1pp | +53.7% | ✓ |
+| 2016-06-03 | $76.37 | Royal Caribbean Q1 2016 results | 2.55 | +0.85 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +44.9% | +10.3pp | +56.4% | ✓ |
+| 2016-06-10 | $73.93 | Royal Caribbean Q1 2016 results | 2.55 | +0.91 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +45.8% | +8.9pp | +61.4% | ✓ |
+| 2016-06-17 | $74.64 | Royal Caribbean Q1 2016 results | 2.55 | +0.89 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +59.2% | +20.4pp | +59.8% | ✗ |
+| 2016-06-24 | $70.08 | Royal Caribbean Q1 2016 results | 2.55 | +0.98 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +65.3% | +25.5pp | +70.1% | ✗ |
+| 2016-07-01 | $69.11 | Royal Caribbean Q1 2016 results | 2.55 | +1.00 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +56.2% | +22.4pp | +72.4% | ✗ |
+| 2016-07-08 | $68.38 | Royal Caribbean Q1 2016 results | 2.55 | +1.21 | 1.30x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.5% | +25.5pp | +74.1% | ✓ |
+| 2016-07-15 | $70.39 | Royal Caribbean Q1 2016 results | 2.55 | +0.98 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +59.4% | +25.4pp | +69.1% | ✗ |
+| 2016-07-22 | $72.98 | Royal Caribbean Q1 2016 results | 2.55 | +0.93 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +57.4% | +24.3pp | +63.0% | ✗ |
+| 2016-07-29 | $72.44 | Royal Caribbean Q1 2016 results | 2.55 | +0.94 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +60.3% | +26.2pp | +64.2% | ✗ |
+| 2016-08-03 | $68.77 | Royal Caribbean Q2 2016 results | 2.55 | +0.91 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +69.8% | +34.1pp | +72.8% | ✗ |
+| 2016-08-12 | $70.80 | Royal Caribbean Q2 2016 results | 2.55 | +0.86 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +66.6% | +32.6pp | +67.6% | ✗ |
+| 2016-08-19 | $69.43 | Royal Caribbean Q2 2016 results | 2.55 | +0.89 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +72.9% | +38.1pp | +70.8% | ✗ |
+| 2016-08-26 | $69.75 | Royal Caribbean Q2 2016 results | 2.55 | +0.88 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +77.8% | +41.1pp | +70.0% | ✗ |
+| 2016-09-02 | $70.01 | Royal Caribbean Q2 2016 results | 2.55 | +0.88 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +81.3% | +43.9pp | +69.3% | ✗ |
+| 2016-09-09 | $65.98 | Royal Caribbean Q2 2016 results | 2.55 | +1.16 | 1.35x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +95.0% | +55.7pp | +79.8% | ✓ |
+| 2016-09-16 | $66.32 | Royal Caribbean Q2 2016 results | 2.55 | +1.16 | 1.36x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +101.5% | +61.2pp | +78.9% | ✓ |
+| 2016-09-23 | $71.99 | Royal Caribbean Q2 2016 results | 2.55 | +0.83 | 1.70x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +89.6% | +49.9pp | +65.2% | ✗ |
+| 2016-09-30 | $74.95 | Royal Caribbean Q2 2016 results | 2.55 | +0.75 | 1.91x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +79.4% | +40.5pp | +59.0% | ✗ |
+| 2016-10-07 | $73.69 | Royal Caribbean Q2 2016 results | 2.55 | +0.79 | 1.82x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +74.0% | +35.6pp | +61.9% | ✗ |
+| 2016-10-14 | $69.98 | Royal Caribbean Q2 2016 results | 2.55 | +0.88 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +76.6% | +42.5pp | +70.4% | ✗ |
+| 2016-10-21 | $69.37 | Royal Caribbean Q2 2016 results | 2.55 | +0.89 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +72.6% | +38.9pp | +71.7% | ✗ |
+| 2016-10-28 | $74.47 | Royal Caribbean Q3 2016 results | 2.85 | +1.09 | 1.83x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +44.5% | +15.1pp | +59.6% | ✗ |
+| 2016-11-04 | $75.23 | Royal Caribbean Q3 2016 results | 2.85 | +1.06 | 1.89x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +46.7% | +11.6pp | +57.5% | ✓ |
+| 2016-11-11 | $81.75 | Royal Caribbean Q3 2016 results | 2.85 | +0.88 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.6% | +3.8pp | +44.4% | ✗ |
+| 2016-11-18 | $82.95 | Royal Caribbean Q3 2016 results | 2.85 | +0.85 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.1% | +8.3pp | +42.0% | ✗ |
+| 2016-11-25 | $83.02 | Royal Caribbean Q3 2016 results | 2.85 | +0.84 | 2.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.3% | +15.0pp | +41.5% | ✗ |
+| 2016-12-02 | $79.56 | Royal Caribbean Q3 2016 results | 2.85 | +0.93 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.8% | +17.9pp | +47.4% | ✗ |
+| 2016-12-09 | $86.19 | Royal Caribbean Q3 2016 results | 2.85 | +0.75 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +27.0% | +6.3pp | +35.7% | ✗ |
+| 2016-12-16 | $84.03 | Royal Caribbean Q3 2016 results | 2.85 | +0.82 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.8% | +13.3pp | +38.8% | ✗ |
+| 2016-12-23 | $84.25 | Royal Caribbean Q3 2016 results | 2.85 | +0.80 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +15.5% | +4.4pp | +37.9% | ✗ |
+| 2016-12-30 | $82.04 | Royal Caribbean Q3 2016 results | 2.85 | +0.87 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.9% | +7.6pp | +41.1% | ✗ |
+| 2017-01-06 | $84.33 | Royal Caribbean Q3 2016 results | 2.85 | +0.80 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.8% | +7.3pp | +36.7% | ✗ |
+| 2017-01-13 | $85.09 | Royal Caribbean Q3 2016 results | 2.85 | +0.79 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.7% | +12.2pp | +35.1% | ✗ |
+| 2017-01-20 | $85.04 | Royal Caribbean Q3 2016 results | 2.85 | +0.79 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +34.2% | +12.3pp | +34.7% | ✗ |
+| 2017-01-27 | $94.56 | Royal Caribbean Q4 2016 results | 2.90 | +0.94 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.2% | +2.8pp | +20.7% | ✗ |
+| 2017-02-03 | $94.52 | Royal Caribbean Q4 2016 results | 2.90 | +0.94 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.2% | +8.1pp | +20.4% | ✗ |
+| 2017-02-10 | $95.84 | Royal Caribbean Q4 2016 results | 2.90 | +0.91 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.8% | +3.7pp | +18.6% | ✗ |
+| 2017-02-17 | $95.21 | Royal Caribbean Q4 2016 results | 2.90 | +0.92 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +28.9% | +6.7pp | +19.1% | ✗ |
+| 2017-02-24 | $96.15 | Royal Caribbean Q4 2016 results | 2.90 | +0.92 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +30.7% | +8.6pp | +17.7% | ✗ |
+| 2017-03-03 | $95.48 | Royal Caribbean Q4 2016 results | 2.90 | +0.94 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +29.1% | +7.4pp | +18.4% | ✗ |
+| 2017-03-10 | $97.25 | Royal Caribbean Q4 2016 results | 2.90 | +0.89 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.0% | +5.3pp | +16.1% | ✗ |
+| 2017-03-17 | $97.80 | Royal Caribbean Q4 2016 results | 2.90 | +0.88 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.9% | +2.0pp | +15.3% | ✗ |
+| 2017-03-24 | $98.57 | Royal Caribbean Q4 2016 results | 2.90 | +0.86 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.3% | -1.4pp | +14.3% | ✓ |
+| 2017-03-31 | $98.11 | Royal Caribbean Q4 2016 results | 2.90 | +0.87 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.9% | -2.2pp | +14.7% | ✓ |
+| 2017-04-07 | $97.39 | Royal Caribbean Q4 2016 results | 2.90 | +0.88 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.5% | -1.5pp | +15.6% | ✓ |
+| 2017-04-13 | $94.36 | Royal Caribbean Q4 2016 results | 2.90 | +0.96 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +34.5% | +5.4pp | +19.4% | ✗ |
+| 2017-04-21 | $97.33 | Royal Caribbean Q4 2016 results | 2.90 | +0.88 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.4% | +1.5pp | +15.8% | ✗ |
+| 2017-04-28 | $106.60 | Royal Caribbean Q1 2017 results | 3.05 | +0.86 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +18.3% | -9.2pp | +5.8% | ✓ |
+| 2017-05-05 | $108.62 | Royal Caribbean Q1 2017 results | 3.05 | +0.81 | 3.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.1% | -1.8pp | +4.2% | ✓ |
+| 2017-05-12 | $107.57 | Royal Caribbean Q1 2017 results | 3.05 | +0.84 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.8% | -3.0pp | +5.6% | ✓ |
+| 2017-05-19 | $106.15 | Royal Caribbean Q1 2017 results | 3.05 | +0.87 | 2.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.3% | -1.8pp | +7.4% | ✓ |
+| 2017-05-26 | $111.08 | Royal Caribbean Q1 2017 results | 3.05 | +0.66 | 3.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +15.8% | -5.3pp | +2.9% | ✓ |
+| 2017-06-02 | $113.38 | Royal Caribbean Q1 2017 results | 3.05 | +0.62 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.4% | -5.5pp | +1.0% | ✓ |
+| 2017-06-09 | $109.82 | Royal Caribbean Q1 2017 results | 3.05 | +0.69 | 3.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +14.9% | -7.4pp | +4.6% | ✓ |
+| 2017-06-16 | $111.90 | Royal Caribbean Q1 2017 results | 3.05 | +0.65 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.6% | -7.3pp | +2.9% | ✓ |
+| 2017-06-23 | $111.86 | Royal Caribbean Q1 2017 results | 3.05 | +0.65 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.3% | -17.9pp | +3.1% | ✓ |
+| 2017-06-30 | $109.23 | Royal Caribbean Q1 2017 results | 3.05 | +0.80 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +15.7% | -9.7pp | +5.8% | ✓ |
+| 2017-07-07 | $109.20 | Royal Caribbean Q1 2017 results | 3.05 | +0.80 | 3.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +10.4% | -17.1pp | +6.0% | ✓ |
+| 2017-07-14 | $108.89 | Royal Caribbean Q1 2017 results | 3.05 | +0.81 | 3.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +5.9% | -20.7pp | +6.4% | ✓ |
+| 2017-07-21 | $114.91 | Royal Caribbean Q1 2017 results | 3.05 | +0.58 | 4.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.4% | -24.2pp | +0.8% | ✓ |
+| 2017-07-28 | $113.39 | Royal Caribbean Q1 2017 results | 3.05 | +0.62 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.1% | -21.4pp | +2.2% | ✓ |
+| 2017-08-02 | $117.39 | Royal Caribbean Q2 2017 results | 3.20 | +0.62 | 3.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.2% | -23.7pp | -1.2% | ✓ |
+| 2017-08-11 | $117.22 | Royal Caribbean Q2 2017 results | 3.20 | +0.62 | 3.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.4% | -26.1pp | -1.1% | ✓ |
+| 2017-08-18 | $118.81 | Royal Caribbean Q2 2017 results | 3.20 | +0.59 | 4.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.1% | -30.4pp | -2.6% | ✓ |
+| 2017-08-25 | $120.44 | Royal Caribbean Q2 2017 results | 3.20 | +0.58 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.6% | -31.3pp | -4.1% | ✓ |
+| 2017-09-01 | $124.24 | Royal Caribbean Q2 2017 results | 3.20 | +0.51 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.9% | -34.1pp | -7.4% | ✓ |
+| 2017-09-08 | $117.45 | Royal Caribbean Q2 2017 results | 3.20 | +0.62 | 3.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.3% | -28.3pp | -2.2% | ✓ |
+| 2017-09-15 | $120.92 | Royal Caribbean Q2 2017 results | 3.20 | +0.57 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.7% | -25.2pp | -5.2% | ✓ |
+| 2017-09-22 | $115.29 | Royal Caribbean Q2 2017 results | 3.20 | +0.66 | 3.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +1.5% | -22.3pp | -0.9% | ✓ |
+| 2017-09-29 | $118.54 | Royal Caribbean Q2 2017 results | 3.20 | +0.61 | 4.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.2% | -26.9pp | -4.0% | ✓ |
+| 2017-10-06 | $123.39 | Royal Caribbean Q2 2017 results | 3.20 | +0.52 | 5.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.9% | -31.8pp | -8.1% | ✓ |
+| 2017-10-13 | $127.77 | Royal Caribbean Q2 2017 results | 3.20 | +0.45 | 6.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.6% | -31.9pp | -11.5% | ✓ |
+| 2017-10-20 | $120.71 | Royal Caribbean Q2 2017 results | 3.20 | +0.57 | 4.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.4% | -23.4pp | -6.5% | ✓ |
+| 2017-10-27 | $124.21 | Royal Caribbean Q2 2017 results | 3.20 | +0.51 | 5.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.0% | -27.1pp | -9.1% | ✓ |
+| 2017-11-03 | $123.18 | Royal Caribbean Q2 2017 results | 3.20 | +0.53 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.4% | -27.9pp | -8.3% | ✓ |
+| 2017-11-08 | $128.92 | Royal Caribbean Q3 2017 results | 2.55 | -0.18 | 7.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.0% | -30.3pp | -12.3% | ✓ |
+| 2017-11-17 | $124.40 | Royal Caribbean Q3 2017 results | 2.55 | -0.10 | 5.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.9% | -25.9pp | -8.9% | ✓ |
+| 2017-11-24 | $125.21 | Royal Caribbean Q3 2017 results | 2.55 | -0.12 | 5.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.6% | -24.0pp | -9.4% | ✓ |
+| 2017-12-01 | $125.23 | Royal Caribbean Q3 2017 results | 2.55 | -0.12 | 5.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.1% | -22.7pp | -9.3% | ✓ |
+| 2017-12-08 | $125.23 | Royal Caribbean Q3 2017 results | 2.55 | -0.12 | 5.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.8% | -20.8pp | -9.1% | ✓ |
+| 2017-12-15 | $125.09 | Royal Caribbean Q3 2017 results | 2.55 | -0.11 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.7% | -17.8pp | -8.7% | ✓ |
+| 2017-12-22 | $121.06 | Royal Caribbean Q3 2017 results | 2.55 | -0.04 | 4.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.9% | -11.0pp | -5.3% | ✓ |
+| 2017-12-29 | $119.28 | Royal Caribbean Q3 2017 results | 2.55 | +0.00 | 4.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.4% | -8.6pp | -3.3% | ✓ |
