@@ -1,9 +1,10 @@
 # WMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the WMT weekly dates: 835 from 2008-01-04 to 2023-12-29. They are **labels and hypotheses**:
+Patterns seen in `outcome.json` for the WMT weekly dates: 984 from 2008-01-04 to 2026-11-06 (the newest without full horizons). They are **labels and hypotheses**:
 never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and
-pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f; 2018-2020: ec73369; 2021-2023: 5748a2e). Outcomes to 2020 were
-computed on 2026-11-07 and those of 2021-2023 on 2026-11-08, from the closes posted to 2026-11-06 (the 2021-2023 section gives its horizons).
+pushed (2008: 339c071; 2009-2011: 7be709f; 2012-2014: 4080783; 2015-2017: d2f2e6f; 2018-2020: ec73369; 2021-2023: 5748a2e; 2024-2026: b2877b9). Outcomes
+to 2020 were computed on 2026-11-07 and those from 2021 on 2026-11-08, from the closes posted to 2026-11-06 (the 2021-2023 and 2024-2026
+sections give their horizons).
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years.
 
 ## 2008 (53 dates)
@@ -297,3 +298,46 @@ split undone).
   returned +89% to +133%, 40 to 85 points ahead of SPY, so FAIR (within 15 points of SPY) would have failed on every one as well. The
   divestiture and growth-guide alternatives move only tiers, and on dates that all cleared the hurdle. The calls were decided before
   scoring and stay; changing a rule means a new method version tested elsewhere.
+
+## 2024-2026 (149 dates; outcomes so far)
+
+Scored on 2026-11-08, from the closes posted to 2026-11-06, after the point-in-time build (b2877b9) was pushed. The horizons are partial:
+two-year returns exist for the 44 dates to 2024-11-01, one-year for the 96 to 2025-10-31 and six-month for the 122 to 2026-05-01; the 26
+dates after that have none, and 2026-11-06 has no later close, so no outcome file. Prices are on each date's own share basis (the split
+of 2024-02-26 undone for the eight earlier dates). Every date was RICH and AVOID.
+
+| Group | Dates | Median return | Range | Cleared the hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| two years (2024-01-05 to 2024-11-01) | 44 | +83.4% | +31.1% to +138.9% | 43 | 40 | +69.9% | 1 |
+| two years, before the split (to 2024-02-21) | 8 | +122.7% | +115.5% to +138.9% | 8 | 8 | +83.8% | 0 |
+| two years, after the split (2024-03-01 to 2024-11-01) | 36 | +73.6% | +31.1% to +123.0% | 35 | 32 | +67.5% | 1 |
+| one year (to 2025-10-31; hurdle +15%) | 96 | +30.8% | +3.1% to +84.7% | 82 | 77 | | |
+| one year, 2024 dates | 52 | +42.2% | +20.5% to +84.7% | 52 | 52 | | |
+| one year, 2025 dates | 44 | +23.0% | +3.1% to +52.4% | 30 | 25 | | |
+| six months (to 2026-05-01; hurdle +7.2%) | 122 | +18.8% | -19.2% to +49.5% | 82 | 81 | | |
+| six months, 2026 dates | 18 | -9.9% | -19.2% to -0.4% | 0 | 0 | | |
+
+- **RICH failed again wherever two years have passed.** The 44 dates of January to October 2024 returned +31% to +139% over two years and
+  cleared the +32.2% hurdle on 43; SPY returned +24% to +50%, so the stock beat it on 40, by up to 100 points. The call held on one date
+  (2024-10-04: +31.1%, 5.8 points behind SPY); 2024-08-30, 2024-09-06 and 2024-09-13 also trailed SPY by about 3 points but cleared the
+  hurdle. The eight dates before the split ($157-174 as traded) returned +116% to +139%. The two-year price landed past XBULL on all 44, at
+  1.32-1.95 times the XBULL price and 1.66-2.38 times BULL; drawdowns within the two years were 22-24%.
+- **One year on, the 2025 entries were already weaker.** Every 2024 date returned +20% to +85% over one year and beat SPY; of the 44 dates
+  of 2025 with a one-year return, 19 (2025-05-23 to 2025-10-17, $94-108) trailed SPY by up to 14 points, returning +3% to +26%.
+- **The first RICH dates that look right, over six months only.** The 18 dates of January to April 2026 ($103-134, 36-51x guided EPS, the
+  85th-100th percentile of the window) returned -0.4% to -19.2% over six months, 10 to 35 points behind SPY; the 2025-11-28 to 2025-12-26
+  dates had already trailed it. Six months is the horizon the archive weights least, and the two-year verdicts of these dates fall in
+  2028: treat this as unscored.
+- **What ranked the outcome.** Over the 96 dates with a one-year return, the EPP gap ranks it at Spearman -0.86 (the less the price sat
+  above the floor, the better), the P/E percentile at -0.36, the adjusted gap at +0.64 and the proxy composite at +0.66 (both the right
+  way); over the 44 two-year dates the EPP gap ranks the return to the m12-24 average price at -0.96 and the adjusted gap and proxy
+  composite at -0.34 and -0.57. In this regime the distance from the floor sorted the entries well even though every class was wrong.
+- **The 2015-2017 hypothesis, a fourth batch.** From 2015 the stock re-rated past every multiple its own ten-year P/E window allowed: on the
+  44 dates scored over two years the 90th percentile was 24-25x while the stock traded at 24-39x, and every two-year price landed past
+  XBULL. The window only catches up as the re-rating enters it (its 90th percentile reaches 25-35x in 2025 and 35-39x in 2026). Hypothesis for the
+  method, not a rule: an own-history P/E window cannot register a lasting re-rating of a mature company; test a window that can see a
+  regime change, or a cross-sectional multiple, on other tickers before any method change.
+- **The encoding calls, seen afterwards.** Only reported EPS moves classes (retro/README.md, "WMT 2024-2026"): its eight FAIR and CHEAP
+  dates of early 2024 are the ones that returned +116% to +139% over two years, so a cheaper class would have been right there. That is a
+  hindsight observation on eight dates and changes nothing: the calls were decided before scoring and stay; changing a rule means a new
+  method version tested elsewhere.
