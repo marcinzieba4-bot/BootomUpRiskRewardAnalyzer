@@ -107,3 +107,64 @@ down 10 points, price -6%).
   (+9.0%).
 
 This is point-in-time data read through hindsight labels, not advice.
+
+## Adding a falling-EPS filter
+
+Tested on request after the first results. The rules were fixed in the script's docstring before this part ran
+(`epp_short.py eps_signals eps_pairs eps_per eps_book eps_years eps_now`). Both filters are point-in-time:
+- **E1:** the last fiscal year's EPS was below the year before, in the date's own EPS history.
+- **E2:** the EPS the floor uses (the year's guide, or the last full year) is lower than 26 weeks earlier, adjusted for
+  splits in between.
+- **E3:** both.
+
+**Short the stock, long SPY (positive = the trade won):**
+
+| Signal | Universe | Dates (12m) | Episodes | 6m: median / won | 12m: median / won | 24m: median / won |
+|---|---|---|---|---|---|---|
+| MAIN, no EPS filter (from above) | all eleven | 2,365 | 183 | -1.4% / 46% | -1.2% / 48% | -3.5% / 48% |
+| MAIN + E1 | all eleven | 386 | 52 | -0.2% / 49% | +1.0% / 52% | -6.7% / 42% |
+| **MAIN + E2** | all eleven | 264 | 44 | -1.3% / 44% | **-2.2% / 44%** | **-9.5% / 46%** |
+| MAIN + E3 | all eleven | 144 | 21 | +2.6% / 56% | +0.1% / 51% | +2.6% / 54% |
+| below the floor and shrinking + E2 | all eleven | 53 | 15 | -3.8% / 30% | -6.0% / 32% | +8.4% / 66% |
+| MAIN + E2 + price down over 12 months | all eleven | 151 | 29 | -1.2% / 44% | -2.3% / 41% | -9.1% / 45% |
+| MAIN + E2 | without tech | 201 | 34 | +0.2% / 50% | -2.1% / 43% | -3.7% / 48% |
+
+**As a monthly basket:**
+
+| Signal | Universe | 1m / 6m / 12m holds: annual return |
+|---|---|---|
+| MAIN + E1 | all eleven | -3.0% / +0.2% / +0.6% |
+| MAIN + E2 | all eleven | -8.4% / -0.7% / -0.7% |
+| MAIN + E3 | all eleven | -4.6% / +0.3% / +0.1% |
+
+None is better than break-even over 6-12 months. MAIN + E2 made money in only 5 of 19 calendar years (1-month hold) and
+7 of 19 (12-month hold).
+
+- **Falling EPS does not rescue the short.** It narrows the signal (286 dates instead of 2,561) and keeps AAPL and AVGO out
+  of it entirely. But the stocks it leaves still recovered as often as they kept falling.
+  - Per ticker: NKE won (+51.8% median at 12 months, 2023 and 2026).
+  - LOW (-5.7%, won 29%), SHW (-4.5%, 28%), XOM (-17.3%, 11%) and UNP (-15.3%) lost.
+- **Falling EPS alone pointed the wrong way over a year.** Stocks whose last full year's EPS fell beat SPY over the next
+  12-24 months (the short lost: -4.9% median at 12 months, -13.5% at 24). Earnings that fall tend to recover, and the
+  price recovers with them.
+
+### Post-hoc: falling EPS predicted 3-6 months of lagging, then a rebound
+
+Chosen after reading the table above, so it is a lead, not a result (`epp_short.py eps_post`). Both EPS filters,
+**without the EPP gap**, short against SPY:
+
+| Signal | Universe | 3m: median / won | 6m: median / won | 12m: median / won | Basket held 6 months: annual / Sharpe / worst drawdown |
+|---|---|---|---|---|---|
+| E3 alone | all eleven | +1.3% / 57% | +3.7% / 59% | -3.6% / 44% | +2.0% / 0.22 / -39% |
+| **E3 alone** | **without tech** | +1.9% / 61% | **+5.2% / 66%** | +0.6% / 51% | **+4.3% / 0.39 / -26%** |
+
+- This is the best short so far, and it has nothing to do with the EPP gap. It looks like the known short-horizon pattern
+  in which falling earnings keep weighing on a stock for a few months: earnings momentum.
+- To treat it as a finding it needs a fresh test, fixed in advance, on tickers not yet built.
+
+### Now
+
+LOW is the only ticker on which MAIN + E2 fires: gap +8%, down 14 points; EPS lower than 26 weeks ago; price -18% over
+12 months. That combination lost money on LOW historically (-5.7% median at 12 months).
+- NKE has falling EPS on both filters, but its gap widened by 43 points, so MAIN does not fire.
+- PEP and XOM have E1 only.
