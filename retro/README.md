@@ -9587,8 +9587,16 @@ from the rows the checklist checks. Decided on 2026-11-08, before any 2018-2021 
   (EDGAR full-text search); no model of any ticker contains them. `retro_tool run` warns of "2091", "2094", "2098" and "2099" on 54 dates:
   diluted shares in billions (`SHARES_DIL_B`), numbers, not years.
 
-Controls and the firewall are recorded in the next commit. A scan of the 731 models for the 228 figures, notes, guides, words, texts and
-sources first published from 2017-12-30 finds none before its first publication (0 of 140,754 pairs). (The same scan flags three strings of
+Controls: altering one value of each new print (its EPS, each Q4 print's full-year EPS or, for FY2020, its exclusion note, Q2 2021's
+10-Q statistics and Q3 2021's year-to-date growth), guide (its EPS range, next-quarter Net Yields and fiscal-year constant-currency Net
+Yields), the withdrawal (removed), each outlook in words, vintage (its first-year EPS) and dividend must change no date before its
+publication and the first weekly date on or after it: all 64 did (the withdrawal acts from 2020-03-13 to 2021-02-19, when FY2020 stops
+being the current year; each vintage until the next one replaces it). A scan of the 731 models for the 228 figures, notes, guides, words,
+texts and sources first published from 2017-12-30 finds none before its first publication (0 of 140,754 pairs). The firewall (its RCL
+plant now also carries a later withdrawal and outlook in words for every guided year, a print whose full-year actuals exclude its own year,
+a vintage that excludes a year, and APCD and occupancy that a filing after the cutoff first states on the last print before it) passes at
+all 26 cutoffs above, and rerun with the new plants at 2010-01-01, 2014-01-01 and 2018-01-01 changes none of the 105, 314 and 522 earlier
+models. No other ticker's code changed, so no other ticker is rebuilt. (The same scan flags three strings of
 the earlier batches, each a substring of an earlier print's own text, such as Q3 2007's "Including Pullmantur, Net Cruise Costs per APCD
 increased 6.7%".)
 
