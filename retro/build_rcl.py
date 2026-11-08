@@ -23,6 +23,11 @@ from the latest guide for the current fiscal year that states it. The method r2 
 A guide given including and excluding an acquisition (2007: 'Including Pullmantur' and 'Comparable') keeps the consolidated figure;
 the other goes in the note (the ACN rule). Words (a quarter's 'mid-single digits') and the Net Cruise Cost and fuel guides are shown
 in the guide line and feed no input.
+From 2010 (retro/README.md, "RCL 2010-2013"): a later print may publish earlier years' EPS on a new basis ('restates': the Q2 2011
+release's interest expense revision of FY2009 and FY2010), which replaces them until a 10-K carries them (the SHW rule); a fiscal-year
+EPS guide stated only as adjusted EPS ('eps_guide_note', Q3 2013) is used as the company's figure excluding the item (the ACN rule); and
+a release that states a quarter's Net Yield or Net Cruise Cost change only at constant currency leaves the as-reported cross-check to
+its per-APCD table.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. A release accepted after the close (Q2 2008, 2008-07-21 18:30 ET) is dated the next
@@ -33,6 +38,7 @@ Output goes to staging/retrospective/RCL until the series is added to the archiv
 Usage
   python3 retro/build_rcl.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_rcl.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_rcl.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_rcl.py 2008-01-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/RCL/<AS_OF>
 """
@@ -134,7 +140,9 @@ def check_print(p):
             "diluted_shares_m": r["diluted_shares_k"] / 1000, "cash_b": round(r["cash_k"] / 1e6, 3)}
     for k, v in want.items():
         assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
-    assert abs(p["ny_pct"] - p["ny_stated_pct"]) <= 0.1 and abs(p["ncc_pct"] - p["ncc_stated_pct"]) <= 0.1, (p["quarter"], "stated")
+    for k in ("ny", "ncc"):                # a change the release states as reported (from 2011 some state only constant currency)
+        if p.get(f"{k}_stated_pct") is not None:
+            assert abs(p[f"{k}_pct"] - p[f"{k}_stated_pct"]) <= 0.1, (p["quarter"], k, "stated")
     a = p.get("fy_actual")
     if a:
         ra = a["raw"]
@@ -205,7 +213,7 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a cruise company in 2008-2009; the builder refuses events until a
+    # no disruption theme in taxonomy_eras.json is live for a cruise company in 2008-2013; the builder refuses events until a
     # theme encoding is decided
     events = [e for e in facts["events"] if e["published"] <= as_of]
     if events:
@@ -231,6 +239,15 @@ def build(as_of, facts, raw, spx, engine, out):
                      cash_b=a["cash_b"], fcf_b=a["fcf_b"], fcf_label=a["fy_label"], groups=a["groups"],
                      groups_basis=f'{a["fy_label"]} revenues by type ({a["doc"]}; one reportable segment)',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a company figure for an earlier year of the history, first published in a later print ('restates': the Q2 2011 release's FY2009
+    # $0.71 and FY2010 $2.37 after the interest expense revision), replaces it from that print until a 10-K vintage published after the
+    # print carries the year (each year from the latest filing that reports it; the SHW rule)
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, e in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: e}, normalization=f'{h["normalization"]}; {p["restates_note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} EPS from {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope); before the
     # first print in the fact sheet, the vintage names it
@@ -297,7 +314,7 @@ def build(as_of, facts, raw, spx, engine, out):
     if guides:
         fyr = (([f"Net Yields {pct_range(*fr['ny'])}"] + ([f"{pct_range(*fr['ny_cc'])} at constant currency"] if "ny_cc" in fr else [])
                 + [f"capacity {fr['capacity']:+.1f}%"]) if fr else [])
-        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}"] if ge else []) + fyr + \
+        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + fyr + \
                ([gr["fy_display"]] if gr and gr.get("fy_display") else []) + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"Net Yields {pct_range(*q['ny'])}"] if "ny" in q else []) +

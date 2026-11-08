@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for RCL retrospectives (retro/build_rcl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Royal Caribbean's fiscal year is the calendar year. Each release guides the next quarter and the year: diluted EPS, capacity (APCD) and Net Yields in numbers (approximate figures and single points as published; 'Flat' is 0), from the Q1 2009 release also Net Yields on a constant dollar basis ('ny_cc'); Net Cruise Costs and fuel are shown and feed nothing. A print's values are derived from the raw figures of its release ('raw', thousands; APCD in days; the 2007 releases print their statements as images, so the figures are the same quarter's 10-Q, 'extra_sources'): Net Yields are total revenues less commissions, transportation and other and onboard and other expenses per APCD, Net Cruise Costs are total cruise operating expenses plus marketing, selling and administrative expenses less the same two lines, per APCD, each against the year-ago quarter in the same release; the builder re-derives them and checks them against the release's stated changes ('ny_stated_pct', 'ncc_stated_pct'). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for RCL retrospectives (retro/build_rcl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Royal Caribbean's fiscal year is the calendar year. Each release guides the next quarter and the year: diluted EPS, capacity (APCD) and Net Yields in numbers (approximate figures and single points as published; 'Flat' is 0), from the Q1 2009 release also Net Yields on a constant dollar basis ('ny_cc'); Net Cruise Costs and fuel are shown and feed nothing. A print's values are derived from the raw figures of its release ('raw', thousands; APCD in days; the 2007 releases print their statements as images, so the figures are the same quarter's 10-Q, 'extra_sources'): Net Yields are total revenues less commissions, transportation and other and onboard and other expenses per APCD, Net Cruise Costs are total cruise operating expenses plus marketing, selling and administrative expenses less the same two lines, per APCD, each against the year-ago quarter in the same release; the builder re-derives them and checks them against the release's stated changes ('ny_stated_pct', 'ncc_stated_pct'). From 2010: a release that states a change only at constant currency or excluding fuel leaves its stated value null, and its note is then the release's per-APCD table row (as reported, constant currency, year ago); 'restates' on a print (the Q2 2011 release's Interest Expense Revision of FY2009 and FY2010 EPS) replaces those years of the history until a 10-K published after the print carries them; 'eps_guide_note' marks an EPS guide stated as the company's adjusted EPS (Q3 2013). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
  "ticker": "RCL",
  "sources": {
   "RC1": {
@@ -197,6 +197,160 @@
    "title": "Royal Caribbean Q3 2009 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000142/exh991q3pr.htm",
    "supports": "Q3 2009 results; 2009 and Q4 2009 estimates"
+  },
+  "RC29": {
+   "published": "2010-01-28",
+   "filed": "2010-01-28 08:42 ET, before the open",
+   "title": "Royal Caribbean Q4 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488710000009/exh991q42009final.htm",
+   "supports": "Q4 and full year 2009 results; 2010 and Q1 2010 estimates, as reported and after adjusting for changes in currency"
+  },
+  "RC30": {
+   "published": "2010-02-24",
+   "filed": "2010-02-23 16:36 ET, after the close",
+   "title": "Royal Caribbean FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000119312510037643/d10k.htm",
+   "supports": "selected financial data 2005-2009; occupancy 2005-2009; revenues by type; no dividends in 2009; Item 1 and Item 1A wording"
+  },
+  "RC31": {
+   "published": "2010-04-28",
+   "filed": "2010-04-28 09:26 ET, before the open",
+   "title": "Royal Caribbean Q1 2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488710000100/exh991final.htm",
+   "supports": "Q1 2010 results; 2010 and Q2 2010 estimates"
+  },
+  "RC32": {
+   "published": "2010-07-22",
+   "filed": "2010-07-22 08:43 ET, before the open",
+   "title": "Royal Caribbean Q2 2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488710000122/exh991.htm",
+   "supports": "Q2 2010 results; 2010 and Q3 2010 estimates, reported and on a Constant Currency basis"
+  },
+  "RC33": {
+   "published": "2010-10-26",
+   "filed": "2010-10-26 09:28 ET, before the open",
+   "title": "Royal Caribbean Q3 2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488710000140/exh991p.htm",
+   "supports": "Q3 2010 results; 2010 and Q4 2010 estimates, reported and on a Constant Currency basis; 2011 in words"
+  },
+  "RC34": {
+   "published": "2011-01-27",
+   "filed": "2011-01-27 08:42 ET, before the open",
+   "title": "Royal Caribbean Q4 2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488711000008/exh99120110127h.htm",
+   "supports": "Q4 and full year 2010 results; 2011 and Q1 2011 estimates, reported and on a Constant Currency basis"
+  },
+  "RC35": {
+   "published": "2011-02-25",
+   "filed": "2011-02-24 16:44 ET, after the close",
+   "title": "Royal Caribbean FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000119312511045435/d10k.htm",
+   "supports": "selected financial data 2006-2010; occupancy 2006-2010; revenues by type; no dividends in 2010; Item 1 and Item 1A wording"
+  },
+  "RC36": {
+   "published": "2011-04-28",
+   "filed": "2011-04-28 08:59 ET, before the open",
+   "title": "Royal Caribbean Q1 2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488711000017/exh99120110428f.htm",
+   "supports": "Q1 2011 results; 2011 and Q2 2011 estimates, As-Reported and Constant-Currency"
+  },
+  "RC37": {
+   "published": "2011-07-28",
+   "filed": "2011-07-27 17:18 ET, after the close",
+   "title": "Royal Caribbean Q2 2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488711000042/exh99120110727f1.htm",
+   "supports": "Q2 2011 results; the Interest Expense Revision of 2009 and 2010 (diluted EPS $0.71 and $2.37); 2011 and Q3 2011 estimates; the dividend reinstated at 10¢ a quarter"
+  },
+  "RC38": {
+   "published": "2011-10-27",
+   "filed": "2011-10-27 08:38 ET, before the open",
+   "title": "Royal Caribbean Q3 2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488711000064/exh991f.htm",
+   "supports": "Q3 2011 results; 2011 and Q4 2011 estimates"
+  },
+  "RC39": {
+   "published": "2012-02-02",
+   "filed": "2012-02-02 08:56 ET, before the open",
+   "title": "Royal Caribbean Q4 2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488712000005/exh9918k20120202a.htm",
+   "supports": "Q4 and full year 2011 results; 2012 and Q1 2012 estimates"
+  },
+  "RC40": {
+   "published": "2012-02-29",
+   "filed": "2012-02-29 09:02 ET, before the open",
+   "title": "Royal Caribbean FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000119312512087322/d254924d10k.htm",
+   "supports": "selected financial data 2007-2011 (2009 and 2010 as revised); occupancy 2007-2011; revenues by type; the dividends of 2011; Item 1 and Item 1A wording"
+  },
+  "RC41": {
+   "published": "2012-04-20",
+   "filed": "2012-04-20 08:37 ET, before the open",
+   "title": "Royal Caribbean Q1 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488712000038/exh991form8k20120420.htm",
+   "supports": "Q1 2012 results; 2012 and Q2 2012 estimates"
+  },
+  "RC42": {
+   "published": "2012-07-26",
+   "filed": "2012-07-26 08:59 ET, before the open",
+   "title": "Royal Caribbean Q2 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488712000053/exh991.htm",
+   "supports": "Q2 2012 results; 2012 and Q3 2012 estimates"
+  },
+  "RC43": {
+   "published": "2012-10-25",
+   "filed": "2012-10-25 08:44 ET, before the open",
+   "title": "Royal Caribbean Q3 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488712000062/exh99120121025.htm",
+   "supports": "Q3 2012 results; 2012 and Q4 2012 estimates"
+  },
+  "RC44": {
+   "published": "2012-10-26",
+   "filed": "2012-10-25 16:32 ET, after the close",
+   "title": "Royal Caribbean Q3 2012 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000110465912071206/a12-18840_110q.htm",
+   "supports": "the $0.12 quarterly dividend declared in September 2012 (its first statement in a filing)"
+  },
+  "RC45": {
+   "published": "2013-02-04",
+   "filed": "2013-02-04 08:37 ET, before the open",
+   "title": "Royal Caribbean Q4 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488713000013/exh99120130204.htm",
+   "supports": "Q4 and full year 2012 results (2012 EPS $1.97 before the Pullmantur impairment charges, GAAP $0.08); 2013 and Q1 2013 estimates"
+  },
+  "RC46": {
+   "published": "2013-02-25",
+   "filed": "2013-02-25 08:01 ET, before the open",
+   "title": "Royal Caribbean FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000104746913001567/a2213132z10-k.htm",
+   "supports": "selected financial data 2008-2012; occupancy 2008-2012; revenues by type; the dividends of 2012; Item 1 and Item 1A wording"
+  },
+  "RC47": {
+   "published": "2013-04-25",
+   "filed": "2013-04-25 08:35 ET, before the open",
+   "title": "Royal Caribbean Q1 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488713000027/exh99120130425er.htm",
+   "supports": "Q1 2013 results; 2013 and Q2 2013 estimates"
+  },
+  "RC48": {
+   "published": "2013-07-25",
+   "filed": "2013-07-25 08:47 ET, before the open",
+   "title": "Royal Caribbean Q2 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488713000055/exh991form8k20130725.htm",
+   "supports": "Q2 2013 results; 2013 and Q3 2013 estimates"
+  },
+  "RC49": {
+   "published": "2013-09-12",
+   "filed": "2013-09-11 17:25 ET, after the close",
+   "title": "Royal Caribbean raises its quarterly dividend (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488713000061/exh991form8k20130911.htm",
+   "supports": "'an increase of the quarterly cash dividend to $0.25 per common share'"
+  },
+  "RC50": {
+   "published": "2013-10-24",
+   "filed": "2013-10-24 08:47 ET, before the open",
+   "title": "Royal Caribbean Q3 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488713000069/exh9918k20131024.htm",
+   "supports": "Q3 2013 results (adjusted EPS excluding restructuring and related charges); 2013 and Q4 2013 estimates"
   }
  },
  "history_vintages": [
@@ -643,6 +797,608 @@
     ]
    ],
    "groups_basis": "FY08 revenues by type (FY2008 10-K; one reportable segment)"
+  },
+  {
+   "published": "2010-02-24",
+   "sources": [
+    "RC30",
+    "RC25",
+    "RC19",
+    "RC11",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY09",
+   "fiscal_year_ends": {
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31"
+   },
+   "eps_gaap": {
+    "2000": 2.31,
+    "2001": 1.31,
+    "2002": 1.76,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.75
+   },
+   "eps_normalized": {
+    "2000": 2.31,
+    "2001": 1.65,
+    "2002": 1.72,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.75
+   },
+   "eps_sources": {
+    "2000": "RC7",
+    "2001": "RC11 (the company's comparable figure; GAAP $1.31 after EITF 04-8: RC8)",
+    "2002": "RC11 (the company's figure excluding the merger termination proceeds and the litigation charge; GAAP $1.76 after EITF 04-8: RC9)",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC30",
+    "2007": "RC30",
+    "2008": "RC30",
+    "2009": "RC30"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 2001 $1.65 ('The comparable figures for 2001', excluding the effects of September 11 and ships out of service) and 2002 $1.72 (excluding the P&O Princess termination proceeds and the litigation charge), both from the Q4 2002 release, on the basis before EITF 04-8 restated GAAP (the UNP 2005 rule); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "2000": 2.865846,
+    "2001": 3.14525,
+    "2002": 3.434347,
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584,
+    "2007": 6.149139,
+    "2008": 6.532525,
+    "2009": 5.889826
+   },
+   "revenue_sources": {
+    "2000": "RC7",
+    "2001": "RC8",
+    "2002": "RC9",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30",
+    "2006": "RC30",
+    "2007": "RC30",
+    "2008": "RC30",
+    "2009": "RC30"
+   },
+   "diluted_shares_m": {
+    "2000": 192.935,
+    "2009": 215.295
+   },
+   "shares_sources": {
+    "2000": "RC7",
+    "2009": "RC30"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 38 ships in the cruise vacation industry with approximately 84,050 berths as of December 31, 2009'; 'We compete principally on the basis of quality of ships, quality of service, variety of itineraries, choice of destinations and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic and business conditions' (its own FY2009 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 8.29,
+   "prev_fy_op_margin_note": "FY09 operating income $488,511K / total revenues $5,889,826K (FY2009 10-K)",
+   "prev_fy_sales_growth": -9.8,
+   "prev_fy_ny_pct": -14.21,
+   "prev_fy_ncc_pct": -9.81,
+   "prev_fy_occupancy": 102.5,
+   "prev_fy_capacity_pct": 5.1,
+   "prev_fy_fleet": "38 ships in the cruise vacation industry with approximately 84,050 berths as of December 31, 2009",
+   "vintage_raw": {
+    "opinc_k": 488511,
+    "rev_k": 5889826,
+    "rev_prior_k": 6532525,
+    "net_rev_k": 4403187,
+    "net_rev_prior_k": 4881824,
+    "ncc_k": 3346462,
+    "ncc_prior_k": 3529487,
+    "apcd": 27821224,
+    "apcd_prior": 26463637,
+    "other_k": -326090,
+    "cash_k": 284619,
+    "cfo_k": 844881,
+    "capex_k": 2477549
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.3261,
+   "other_expense_note": "FY09 other income (expense), net of interest, $-326,090K (FY2009 10-K)",
+   "fcf_b": -1.633,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities $844,881K less purchases of property and equipment $2,477,549K",
+   "cash_b": 0.285,
+   "cash_note": "cash and cash equivalents $284,619K at December 31, 2009",
+   "prev_q_ny": null,
+   "prev_q_label": "Q3 2009",
+   "dividend_annual": 0.0,
+   "dividend_note": "none ('We did not declare cash dividends in 2009', FY2009 10-K)",
+   "cash_return_text": "no share repurchases in 2009; no dividend since the fourth quarter of 2008",
+   "business_line": "Royal Caribbean International, Celebrity Cruises, Pullmantur, Azamara Cruises and CDF Croisières de France (38 ships, about 84,050 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     4.205709,
+     -11.1
+    ],
+    [
+     "Onboard and other revenues",
+     1.684117,
+     -6.6
+    ]
+   ],
+   "groups_basis": "FY09 revenues by type (FY2009 10-K; one reportable segment)"
+  },
+  {
+   "published": "2011-02-25",
+   "sources": [
+    "RC35",
+    "RC30",
+    "RC25",
+    "RC19",
+    "RC11",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY10",
+   "fiscal_year_ends": {
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31"
+   },
+   "eps_gaap": {
+    "2001": 1.31,
+    "2002": 1.76,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.75,
+    "2010": 2.51
+   },
+   "eps_normalized": {
+    "2001": 1.65,
+    "2002": 1.72,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.75,
+    "2010": 2.51
+   },
+   "eps_sources": {
+    "2001": "RC11 (the company's comparable figure; GAAP $1.31 after EITF 04-8: RC8)",
+    "2002": "RC11 (the company's figure excluding the merger termination proceeds and the litigation charge; GAAP $1.76 after EITF 04-8: RC9)",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC35",
+    "2007": "RC35",
+    "2008": "RC35",
+    "2009": "RC35",
+    "2010": "RC35"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 2001 $1.65 ('The comparable figures for 2001', excluding the effects of September 11 and ships out of service) and 2002 $1.72 (excluding the P&O Princess termination proceeds and the litigation charge), both from the Q4 2002 release, on the basis before EITF 04-8 restated GAAP (the UNP 2005 rule); 2010 keeps Q1 2010's $0.39 per share legal settlement gain (no figure excluding it); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "2001": 3.14525,
+    "2002": 3.434347,
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584,
+    "2007": 6.149139,
+    "2008": 6.532525,
+    "2009": 5.889826,
+    "2010": 6.752504
+   },
+   "revenue_sources": {
+    "2001": "RC8",
+    "2002": "RC9",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30",
+    "2006": "RC35",
+    "2007": "RC35",
+    "2008": "RC35",
+    "2009": "RC35",
+    "2010": "RC35"
+   },
+   "diluted_shares_m": {
+    "2001": 202.004,
+    "2010": 217.711
+   },
+   "shares_sources": {
+    "2001": "RC8",
+    "2010": "RC35"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 40 ships in the cruise vacation industry with an aggregate of approximately 92,300 berths as of December 31, 2010'; 'We compete principally on the basis of innovation and quality of ships, quality of service, variety of itineraries, choice of destinations and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic and business conditions and is sensitive to reductions in discretionary consumer spending' (its own FY2010 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 11.89,
+   "prev_fy_op_margin_note": "FY10 operating income $802,633K / total revenues $6,752,504K (FY2010 10-K)",
+   "prev_fy_sales_growth": 14.6,
+   "prev_fy_ny_pct": 4.17,
+   "prev_fy_ncc_pct": -1.83,
+   "prev_fy_occupancy": 104.3,
+   "prev_fy_capacity_pct": 11.1,
+   "prev_fy_fleet": "40 ships in the cruise vacation industry with an aggregate of approximately 92,300 berths as of December 31, 2010",
+   "vintage_raw": {
+    "opinc_k": 802633,
+    "rev_k": 6752504,
+    "rev_prior_k": 5889826,
+    "net_rev_k": 5096418,
+    "net_rev_prior_k": 4403187,
+    "ncc_k": 3650069,
+    "ncc_prior_k": 3346462,
+    "apcd": 30911073,
+    "apcd_prior": 27821224,
+    "other_k": -255166,
+    "cash_k": 419929,
+    "cfo_k": 1663019,
+    "capex_k": 2187189
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.2552,
+   "other_expense_note": "FY10 other income (expense), net of interest, $-255,166K (FY2010 10-K)",
+   "fcf_b": -0.524,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $1,663,019K less purchases of property and equipment $2,187,189K",
+   "cash_b": 0.42,
+   "cash_note": "cash and cash equivalents $419,929K at December 31, 2010",
+   "prev_q_ny": null,
+   "prev_q_label": "Q3 2010",
+   "dividend_annual": 0.0,
+   "dividend_note": "none ('We did not declare cash dividends in 2010 or 2009', FY2010 10-K)",
+   "cash_return_text": "no share repurchases in 2010; no dividend since the fourth quarter of 2008",
+   "business_line": "Royal Caribbean International, Celebrity Cruises, Azamara Club Cruises, Pullmantur and CDF Croisières de France (40 ships, about 92,300 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     4.908644,
+     16.7
+    ],
+    [
+     "Onboard and other revenues",
+     1.84386,
+     9.5
+    ]
+   ],
+   "groups_basis": "FY10 revenues by type (FY2010 10-K; one reportable segment)"
+  },
+  {
+   "published": "2012-02-29",
+   "sources": [
+    "RC40",
+    "RC35",
+    "RC30",
+    "RC25",
+    "RC19",
+    "RC11",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY11",
+   "fiscal_year_ends": {
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31"
+   },
+   "eps_gaap": {
+    "2002": 1.76,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.71,
+    "2010": 2.37,
+    "2011": 2.77
+   },
+   "eps_normalized": {
+    "2002": 1.72,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.71,
+    "2010": 2.37,
+    "2011": 2.77
+   },
+   "eps_sources": {
+    "2002": "RC11 (the company's figure excluding the merger termination proceeds and the litigation charge; GAAP $1.76 after EITF 04-8: RC9)",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC35",
+    "2007": "RC40",
+    "2008": "RC40",
+    "2009": "RC40 (as revised for the Interest Expense Revision; $0.75 in RC30)",
+    "2010": "RC40 (as revised; $2.51 in RC35)",
+    "2011": "RC40"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 2002 $1.72 (excluding the P&O Princess termination proceeds and the litigation charge, Q4 2002 release), on the basis before EITF 04-8 restated GAAP (the UNP 2005 rule); 2009 $0.71 and 2010 $2.37 as revised for the Interest Expense Revision ($0.75 and $2.51 before it) (FY2011 10-K); 2010 keeps Q1 2010's $0.39 per share legal settlement gain (no figure excluding it); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "2002": 3.434347,
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584,
+    "2007": 6.149139,
+    "2008": 6.532525,
+    "2009": 5.889826,
+    "2010": 6.752504,
+    "2011": 7.537263
+   },
+   "revenue_sources": {
+    "2002": "RC9",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30",
+    "2006": "RC35",
+    "2007": "RC40",
+    "2008": "RC40",
+    "2009": "RC40",
+    "2010": "RC40",
+    "2011": "RC40"
+   },
+   "diluted_shares_m": {
+    "2002": 209.565,
+    "2011": 219.229
+   },
+   "shares_sources": {
+    "2002": "RC9",
+    "2011": "RC40"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 39 ships in the cruise vacation industry across five brands with an aggregate capacity of approximately 92,650 berths as of December 31, 2011'; 'We compete principally on the basis of exceptional service provided by our crew, innovation and quality of ships, variety of itineraries, choice of destinations and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic and geopolitical conditions' (its own FY2011 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 12.36,
+   "prev_fy_op_margin_note": "FY11 operating income $931,628K / total revenues $7,537,263K (FY2011 10-K)",
+   "prev_fy_sales_growth": 11.6,
+   "prev_fy_ny_pct": 4.06,
+   "prev_fy_ncc_pct": 3.66,
+   "prev_fy_occupancy": 104.8,
+   "prev_fy_capacity_pct": 7.5,
+   "prev_fy_fleet": "39 ships in the cruise vacation industry across five brands with an aggregate capacity of approximately 92,650 berths as of December 31, 2011",
+   "vintage_raw": {
+    "opinc_k": 931628,
+    "rev_k": 7537263,
+    "rev_prior_k": 6752504,
+    "net_rev_k": 5702049,
+    "net_rev_prior_k": 5096418,
+    "ncc_k": 4067995,
+    "ncc_prior_k": 3650069,
+    "apcd": 33235508,
+    "apcd_prior": 30911073,
+    "other_k": -324207,
+    "cash_k": 262186,
+    "cfo_k": 1455739,
+    "capex_k": 1173626
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.3242,
+   "other_expense_note": "FY11 other income (expense), net of interest, $-324,207K (FY2011 10-K)",
+   "fcf_b": 0.282,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $1,455,739K less purchases of property and equipment $1,173,626K",
+   "cash_b": 0.262,
+   "cash_note": "cash and cash equivalents $262,186K at December 31, 2011",
+   "prev_q_ny": null,
+   "prev_q_label": "Q3 2011",
+   "dividend_annual": 0.4,
+   "dividend_note": "$0.10 a quarter ('We subsequently declared cash dividends on our common stock of $0.10 per share during the third and fourth quarters of 2011', FY2011 10-K)",
+   "cash_return_text": "no share repurchases in 2011; the quarterly dividend reinstated at $0.10 from the third quarter of 2011",
+   "business_line": "Royal Caribbean International, Celebrity Cruises, Azamara Club Cruises, Pullmantur and CDF Croisières de France (39 ships, about 92,650 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     5.525904,
+     12.6
+    ],
+    [
+     "Onboard and other revenues",
+     2.011359,
+     9.1
+    ]
+   ],
+   "groups_basis": "FY11 revenues by type (FY2011 10-K; one reportable segment)"
+  },
+  {
+   "published": "2013-02-25",
+   "sources": [
+    "RC46",
+    "RC45",
+    "RC40",
+    "RC35",
+    "RC30",
+    "RC25",
+    "RC19",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY12",
+   "fiscal_year_ends": {
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31"
+   },
+   "eps_gaap": {
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.71,
+    "2010": 2.37,
+    "2011": 2.77,
+    "2012": 0.08
+   },
+   "eps_normalized": {
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68,
+    "2009": 0.71,
+    "2010": 2.37,
+    "2011": 2.77,
+    "2012": 1.97
+   },
+   "eps_sources": {
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC35",
+    "2007": "RC40",
+    "2008": "RC46",
+    "2009": "RC46 (as revised for the Interest Expense Revision; $0.75 in RC30)",
+    "2010": "RC46 (as revised; $2.51 in RC35)",
+    "2011": "RC46",
+    "2012": "RC45 (the company's figure before the Pullmantur impairment charges; GAAP $0.08: RC46)"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 2012 $1.97 before the Pullmantur impairment charges (Q4 2012 release; GAAP $0.08); 2009 $0.71 and 2010 $2.37 as revised for the Interest Expense Revision ($0.75 and $2.51 before it); 2010 keeps Q1 2010's $0.39 per share legal settlement gain (no figure excluding it); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584,
+    "2007": 6.149139,
+    "2008": 6.532525,
+    "2009": 5.889826,
+    "2010": 6.752504,
+    "2011": 7.537263,
+    "2012": 7.688024
+   },
+   "revenue_sources": {
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC30",
+    "2006": "RC35",
+    "2007": "RC40",
+    "2008": "RC46",
+    "2009": "RC46",
+    "2010": "RC46",
+    "2011": "RC46",
+    "2012": "RC46"
+   },
+   "diluted_shares_m": {
+    "2003": 211.175,
+    "2012": 219.457
+   },
+   "shares_sources": {
+    "2003": "RC19",
+    "2012": "RC46"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'Together, these six brands operate a combined 41 ships in the cruise vacation industry with an aggregate capacity of approximately 98,650 berths as of December 31, 2012'; 'We compete principally on the basis of exceptional service provided by our crew; innovation and quality of ships; variety of itineraries; choice of destinations; and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic and geopolitical conditions' (its own FY2012 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 5.24,
+   "prev_fy_op_margin_note": "FY12 operating income $403,110K / total revenues $7,688,024K (FY2012 10-K)",
+   "prev_fy_sales_growth": 2.0,
+   "prev_fy_ny_pct": 1.5,
+   "prev_fy_ncc_pct": 5.45,
+   "prev_fy_occupancy": 104.4,
+   "prev_fy_capacity_pct": 1.4,
+   "prev_fy_fleet": "41 ships in the cruise vacation industry with an aggregate capacity of approximately 98,650 berths as of December 31, 2012",
+   "vintage_raw": {
+    "opinc_k": 403110,
+    "rev_k": 7688024,
+    "rev_prior_k": 7537263,
+    "net_rev_k": 5869316,
+    "net_rev_prior_k": 5702049,
+    "ncc_k": 4350269,
+    "ncc_prior_k": 4067995,
+    "apcd": 33705584,
+    "apcd_prior": 33235508,
+    "other_k": -384823,
+    "cash_k": 194855,
+    "cfo_k": 1381734,
+    "capex_k": 1291499
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.3848,
+   "other_expense_note": "FY12 other income (expense), net of interest, $-384,823K (FY2012 10-K)",
+   "fcf_b": 0.09,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $1,381,734K less purchases of property and equipment $1,291,499K",
+   "cash_b": 0.195,
+   "cash_note": "cash and cash equivalents $194,855K at December 31, 2012",
+   "prev_q_ny": null,
+   "prev_q_label": "Q3 2012",
+   "dividend_annual": 0.48,
+   "dividend_note": "$0.12 a quarter ('We declared and paid cash dividends on our common stock of $0.10 per share during each of the first and second quarters of 2012 and $0.12 per share during each of the third and fourth quarters of 2012', FY2012 10-K)",
+   "cash_return_text": "no share repurchases in 2012; the quarterly dividend raised from $0.10 to $0.12 in the second half of 2012",
+   "business_line": "Royal Caribbean International, Celebrity Cruises, Pullmantur, Azamara Club Cruises and CDF Croisières de France, and TUI Cruises through a 50% joint venture (41 ships, about 98,650 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     5.594595,
+     1.2
+    ],
+    [
+     "Onboard and other revenues",
+     2.093429,
+     4.1
+    ]
+   ],
+   "groups_basis": "FY12 revenues by type (FY2012 10-K; one reportable segment)"
   }
  ],
  "prints": [
@@ -1312,6 +2068,1119 @@
    "next_print": "Q4 2009 print (late January)",
    "ny_stated_pct": -16.5,
    "ncc_stated_pct": -10.0
+  },
+  {
+   "quarter": "Q4 2009",
+   "fy": 2009,
+   "q": 4,
+   "published": "2010-01-28",
+   "source": "RC29",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 08:42 ET",
+   "period_end": "2009-12-31",
+   "raw": {
+    "rev_k": 1451667,
+    "rev_prior_k": 1456277,
+    "comm_k": 256517,
+    "comm_prior_k": 274003,
+    "onboard_k": 109436,
+    "onboard_prior_k": 94405,
+    "opex_k": 1037245,
+    "opex_prior_k": 1074820,
+    "msa_k": 185655,
+    "msa_prior_k": 183918,
+    "opinc_k": 82355,
+    "opinc_prior_k": 63559,
+    "apcd": 7335032,
+    "apcd_prior": 6823470,
+    "occ": 100.8,
+    "occ_prior": 101.7,
+    "diluted_shares_k": 216386,
+    "cash_k": 284619
+   },
+   "sales_b": 1.452,
+   "sales_pct": -0.3,
+   "ny": 148.02,
+   "ny_prior": 159.43,
+   "ny_pct": -7.2,
+   "ny_cc_pct": -9.7,
+   "ny_note": "Net Yields decreased 7.2% from the prior year or 9.7% after adjusting for year over year changes in currency",
+   "ncc": 116.83,
+   "ncc_prior": 130.48,
+   "ncc_pct": -10.5,
+   "ncc_note": "NCC decreased 10.5% from the prior year or 12.4% after adjusting for changes in currency",
+   "capacity_pct": 7.5,
+   "occupancy": 100.8,
+   "occupancy_bp": -90.0,
+   "op_margin": 5.67,
+   "op_margin_bp": 130.9,
+   "eps_q": 0.02,
+   "eps_q_prior": 0.01,
+   "diluted_shares_m": 216.386,
+   "cash_b": 0.285,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; no share repurchases; As of December 31, 2009, liquidity was $0.9 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q1 2010 print (late April)",
+   "ny_stated_pct": -7.2,
+   "ncc_stated_pct": -10.5,
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 0.75,
+    "revenue_usd_b": 5.889826,
+    "diluted_shares_m": 215.295,
+    "raw": {
+     "rev_k": 5889826,
+     "rev_prior_k": 6532525,
+     "opinc_k": 488511,
+     "net_rev_k": 4403187,
+     "net_rev_prior_k": 4881824,
+     "ncc_k": 3346462,
+     "ncc_prior_k": 3529487,
+     "apcd": 27821224,
+     "apcd_prior": 26463637,
+     "occ": 102.5,
+     "occ_prior": 104.5,
+     "other_k": -326090,
+     "cash_k": 284619,
+     "cfo_k": 844881,
+     "capex_k": 2477549,
+     "ticket_k": 4205709,
+     "onboard_rev_k": 1684117,
+     "ticket_prior_k": 4730289,
+     "onboard_rev_prior_k": 1802236
+    },
+    "normalization_note": "FY09 diluted EPS $0.75 from the Q4 2009 release (no figure excluding a one-off published)",
+    "op_margin": 8.29,
+    "op_margin_note": "FY09 operating income $488,511K / total revenues $5,889,826K (Q4 2009 release)",
+    "sales_growth": -9.8,
+    "ny_pct": -14.21,
+    "ncc_pct": -9.81,
+    "occupancy": 102.5,
+    "capacity_pct": 5.1,
+    "other_expense_b": 0.3261,
+    "cash_b": 0.285,
+    "fcf_b": -1.633,
+    "fcf_note": "net cash provided by operating activities $844,881K less purchases of property and equipment $2,477,549K",
+    "groups": [
+     [
+      "Passenger ticket revenues",
+      4.205709,
+      -11.1
+     ],
+     [
+      "Onboard and other revenues",
+      1.684117,
+      -6.6
+     ]
+    ],
+    "tax_rate": 0.0,
+    "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+    "doc": "Q4 2009 release"
+   }
+  },
+  {
+   "quarter": "Q1 2010",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-04-28",
+   "source": "RC31",
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 09:26 ET",
+   "period_end": "2010-03-31",
+   "raw": {
+    "rev_k": 1485650,
+    "rev_prior_k": 1325602,
+    "comm_k": 268650,
+    "comm_prior_k": 235829,
+    "onboard_k": 90935,
+    "onboard_prior_k": 83234,
+    "opex_k": 1025275,
+    "opex_prior_k": 952336,
+    "msa_k": 211048,
+    "msa_prior_k": 189157,
+    "opinc_k": 91752,
+    "opinc_prior_k": 44253,
+    "apcd": 7354093,
+    "apcd_prior": 6743456,
+    "occ": 103.1,
+    "occ_prior": 101.2,
+    "diluted_shares_k": 216975,
+    "cash_k": 278104
+   },
+   "sales_b": 1.486,
+   "sales_pct": 12.1,
+   "ny": 153.12,
+   "ny_prior": 149.26,
+   "ny_pct": 2.6,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields improved 2.6%",
+   "ncc": 119.22,
+   "ncc_prior": 121.96,
+   "ncc_pct": -2.2,
+   "ncc_note": "NCC in the first quarter of 2010 decreased 2.2% from the prior year",
+   "capacity_pct": 9.1,
+   "occupancy": 103.1,
+   "occupancy_bp": 190.0,
+   "op_margin": 6.18,
+   "op_margin_bp": 283.8,
+   "eps_q": 0.4,
+   "eps_q_prior": -0.17,
+   "eps_note": "'The results included a $0.39 per share gain from a previously announced legal settlement'; no figure excluding it",
+   "diluted_shares_m": 216.975,
+   "cash_b": 0.278,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; no share repurchases; As of March 31, 2010 liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q2 2010 print (late July)",
+   "ny_stated_pct": 2.6,
+   "ncc_stated_pct": -2.2
+  },
+  {
+   "quarter": "Q2 2010",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-07-22",
+   "source": "RC32",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 08:43 ET",
+   "period_end": "2010-06-30",
+   "raw": {
+    "rev_k": 1601697,
+    "rev_prior_k": 1349015,
+    "comm_k": 271140,
+    "comm_prior_k": 232552,
+    "onboard_k": 124190,
+    "onboard_prior_k": 112523,
+    "opex_k": 1086187,
+    "opex_prior_k": 965435,
+    "msa_k": 211795,
+    "msa_prior_k": 190593,
+    "opinc_k": 143684,
+    "opinc_prior_k": 55062,
+    "apcd": 7543536,
+    "apcd_prior": 6585128,
+    "occ": 103.6,
+    "occ_prior": 102.3,
+    "diluted_shares_k": 217561,
+    "cash_k": 318820
+   },
+   "sales_b": 1.602,
+   "sales_pct": 18.7,
+   "ny": 159.92,
+   "ny_prior": 152.46,
+   "ny_pct": 4.9,
+   "ny_cc_pct": 5.4,
+   "ny_note": "Second quarter Net Yields increased 4.9%, (5.4% on a Constant Currency basis)",
+   "ncc": 119.66,
+   "ncc_prior": 123.15,
+   "ncc_pct": -2.8,
+   "ncc_note": "In the second quarter of 2010, NCC decreased 2.8%",
+   "capacity_pct": 14.6,
+   "occupancy": 103.6,
+   "occupancy_bp": 130.0,
+   "op_margin": 8.97,
+   "op_margin_bp": 488.9,
+   "eps_q": 0.28,
+   "eps_q_prior": -0.16,
+   "diluted_shares_m": 217.561,
+   "cash_b": 0.319,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; no share repurchases; As of June 30, 2010, in addition to committed unsecured financing on its three remaining newbuilds, liquidity was $1.0 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q3 2010 print (late October)",
+   "ny_stated_pct": 4.9,
+   "ncc_stated_pct": -2.8
+  },
+  {
+   "quarter": "Q3 2010",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-10-26",
+   "source": "RC33",
+   "release": "Oct 26",
+   "release_time": "before the open on Oct 26: 8-K accepted 09:28 ET",
+   "period_end": "2010-09-30",
+   "raw": {
+    "rev_k": 2060659,
+    "rev_prior_k": 1763542,
+    "comm_k": 350166,
+    "comm_prior_k": 303969,
+    "onboard_k": 159824,
+    "onboard_prior_k": 152579,
+    "opex_k": 1239625,
+    "opex_prior_k": 1116086,
+    "msa_k": 213300,
+    "msa_prior_k": 196594,
+    "opinc_k": 445502,
+    "opinc_prior_k": 306841,
+    "apcd": 8069663,
+    "apcd_prior": 7157608,
+    "occ": 107.3,
+    "occ_prior": 105.4,
+    "diluted_shares_k": 217512,
+    "cash_k": 441930
+   },
+   "sales_b": 2.061,
+   "sales_pct": 16.8,
+   "ny": 192.16,
+   "ny_prior": 182.6,
+   "ny_pct": 5.2,
+   "ny_cc_pct": 7.2,
+   "ny_note": "Net Yields for the third quarter of 2010 increased 5.2% (7.2% on a Constant Currency basis)",
+   "ncc": 116.85,
+   "ncc_prior": 119.61,
+   "ncc_pct": -2.3,
+   "ncc_note": "In the third quarter of 2010, NCC decreased 2.3%",
+   "capacity_pct": 12.7,
+   "occupancy": 107.3,
+   "occupancy_bp": 190.0,
+   "op_margin": 21.62,
+   "op_margin_bp": 422.0,
+   "eps_q": 1.64,
+   "eps_q_prior": 1.07,
+   "diluted_shares_m": 217.512,
+   "cash_b": 0.442,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; no share repurchases; As of September 30, 2010, in addition to committed unsecured financing on its three remaining newbuilds, liquidity was $1.3 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q4 2010 print (late January)",
+   "ny_stated_pct": 5.2,
+   "ncc_stated_pct": -2.3
+  },
+  {
+   "quarter": "Q4 2010",
+   "fy": 2010,
+   "q": 4,
+   "published": "2011-01-27",
+   "source": "RC34",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 08:42 ET",
+   "period_end": "2010-12-31",
+   "raw": {
+    "rev_k": 1604498,
+    "rev_prior_k": 1451667,
+    "comm_k": 285566,
+    "comm_prior_k": 256517,
+    "onboard_k": 105615,
+    "onboard_prior_k": 109436,
+    "opex_k": 1106989,
+    "opex_prior_k": 1037245,
+    "msa_k": 211936,
+    "msa_prior_k": 185655,
+    "opinc_k": 121695,
+    "opinc_prior_k": 82355,
+    "apcd": 7943782,
+    "apcd_prior": 7335032,
+    "occ": 103.1,
+    "occ_prior": 100.8,
+    "diluted_shares_k": 218742,
+    "cash_k": 419929
+   },
+   "sales_b": 1.604,
+   "sales_pct": 10.5,
+   "ny": 152.74,
+   "ny_prior": 148.02,
+   "ny_pct": 3.2,
+   "ny_cc_pct": 4.2,
+   "ny_note": "Net Yields for the fourth quarter of 2010 increased 3.2% (4.2% on a Constant Currency basis)",
+   "ncc": 116.79,
+   "ncc_prior": 116.83,
+   "ncc_pct": -0.0,
+   "ncc_note": "NCC were flat, and NCC excluding fuel increased 1.7%",
+   "capacity_pct": 8.3,
+   "occupancy": 103.1,
+   "occupancy_bp": 230.0,
+   "op_margin": 7.58,
+   "op_margin_bp": 191.1,
+   "eps_q": 0.2,
+   "eps_q_prior": 0.02,
+   "diluted_shares_m": 218.742,
+   "cash_b": 0.42,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; no share repurchases; As of December 31, 2010, liquidity was $1.6 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q1 2011 print (late April)",
+   "ny_stated_pct": 3.2,
+   "ncc_stated_pct": 0.0,
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 2.51,
+    "revenue_usd_b": 6.752504,
+    "diluted_shares_m": 217.711,
+    "raw": {
+     "rev_k": 6752504,
+     "rev_prior_k": 5889826,
+     "opinc_k": 802633,
+     "net_rev_k": 5096418,
+     "net_rev_prior_k": 4403187,
+     "ncc_k": 3650069,
+     "ncc_prior_k": 3346462,
+     "apcd": 30911073,
+     "apcd_prior": 27821224,
+     "occ": 104.3,
+     "occ_prior": 102.5,
+     "other_k": -255166,
+     "cash_k": 419929,
+     "cfo_k": 1663019,
+     "capex_k": 2187189,
+     "ticket_k": 4908644,
+     "onboard_rev_k": 1843860,
+     "ticket_prior_k": 4205709,
+     "onboard_rev_prior_k": 1684117
+    },
+    "normalization_note": "FY10 diluted EPS $2.51 from the Q4 2010 release, including Q1 2010's $0.39 per share legal settlement gain (stated only as a per-share amount; no figure excluding it)",
+    "op_margin": 11.89,
+    "op_margin_note": "FY10 operating income $802,633K / total revenues $6,752,504K (Q4 2010 release)",
+    "sales_growth": 14.6,
+    "ny_pct": 4.17,
+    "ncc_pct": -1.83,
+    "occupancy": 104.3,
+    "capacity_pct": 11.1,
+    "other_expense_b": 0.2552,
+    "cash_b": 0.42,
+    "fcf_b": -0.524,
+    "fcf_note": "net cash provided by operating activities $1,663,019K less purchases of property and equipment $2,187,189K",
+    "groups": [
+     [
+      "Passenger ticket revenues",
+      4.908644,
+      16.7
+     ],
+     [
+      "Onboard and other revenues",
+      1.84386,
+      9.5
+     ]
+    ],
+    "tax_rate": 0.0,
+    "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+    "doc": "Q4 2010 release"
+   }
+  },
+  {
+   "quarter": "Q1 2011",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-04-28",
+   "source": "RC36",
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 08:59 ET",
+   "period_end": "2011-03-31",
+   "raw": {
+    "rev_k": 1671995,
+    "rev_prior_k": 1485650,
+    "comm_k": 279549,
+    "comm_prior_k": 268650,
+    "onboard_k": 102490,
+    "onboard_prior_k": 90935,
+    "opex_k": 1101071,
+    "opex_prior_k": 1025275,
+    "msa_k": 248138,
+    "msa_prior_k": 211048,
+    "opinc_k": 149534,
+    "opinc_prior_k": 91752,
+    "apcd": 8100296,
+    "apcd_prior": 7354093,
+    "occ": 104.3,
+    "occ_prior": 103.1,
+    "diluted_shares_k": 219626,
+    "cash_k": 470258
+   },
+   "sales_b": 1.672,
+   "sales_pct": 12.5,
+   "ny": 159.25,
+   "ny_prior": 153.12,
+   "ny_pct": 4.0,
+   "ny_cc_pct": 2.8,
+   "ny_note": "Net Yields for the first quarter of 2011 increased 4.0% (2.8% on a Constant-Currency basis)",
+   "ncc": 119.4,
+   "ncc_prior": 119.22,
+   "ncc_pct": 0.2,
+   "ncc_note": "NCC were up 0.2%, and NCC excluding fuel increased 0.8%",
+   "capacity_pct": 10.1,
+   "occupancy": 104.3,
+   "occupancy_bp": 120.0,
+   "op_margin": 8.94,
+   "op_margin_bp": 276.8,
+   "eps_q": 0.42,
+   "eps_q_prior": 0.4,
+   "eps_note": "'Included in Other Income/(Expense) was an $0.11 per share marked-to-market gain on the company’s fuel option portfolio'; no figure excluding it",
+   "diluted_shares_m": 219.626,
+   "cash_b": 0.47,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; no share repurchases; As of March 31, 2011, liquidity was $1.6 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q2 2011 print (late July)",
+   "ny_stated_pct": 4.0,
+   "ncc_stated_pct": 0.2
+  },
+  {
+   "quarter": "Q2 2011",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-07-28",
+   "source": "RC37",
+   "release": "Jul 27",
+   "release_time": "after the close on Jul 27: 8-K accepted 17:18 ET; public before the open of the next trading day",
+   "period_end": "2011-06-30",
+   "raw": {
+    "rev_k": 1767873,
+    "rev_prior_k": 1601697,
+    "comm_k": 299174,
+    "comm_prior_k": 271140,
+    "onboard_k": 134938,
+    "onboard_prior_k": 124190,
+    "opex_k": 1185375,
+    "opex_prior_k": 1086187,
+    "msa_k": 242258,
+    "msa_prior_k": 211795,
+    "opinc_k": 168190,
+    "opinc_prior_k": 143684,
+    "apcd": 8038014,
+    "apcd_prior": 7543536,
+    "occ": 103.7,
+    "occ_prior": 103.6,
+    "diluted_shares_k": 219370,
+    "cash_k": 551460
+   },
+   "sales_b": 1.768,
+   "sales_pct": 10.4,
+   "ny": 165.93,
+   "ny_prior": 159.92,
+   "ny_pct": 3.8,
+   "ny_cc_pct": 0.8,
+   "ny_note": "Net Yields for the second quarter of 2011 increased 3.8% (0.8% on a Constant-Currency basis)",
+   "ncc": 123.6,
+   "ncc_prior": 119.66,
+   "ncc_pct": 3.3,
+   "ncc_note": "NCC excluding fuel increased 2.3% (decreased 0.1% on a Constant-Currency basis)",
+   "capacity_pct": 6.6,
+   "occupancy": 103.7,
+   "occupancy_bp": 10.0,
+   "op_margin": 9.51,
+   "op_margin_bp": 54.3,
+   "eps_q": 0.43,
+   "eps_q_prior": 0.25,
+   "eps_note": "'Second quarter EPS was 47¢ before the Interest Expense Revision'; 43¢ after it, the year-ago quarter revised to 25¢",
+   "diluted_shares_m": 219.37,
+   "cash_b": 0.551,
+   "fuel_note": "",
+   "cash_return_text": "the quarterly dividend reinstated at 10¢ a share; no share repurchases; As of June 30, 2011, and taking into account the new revolver, liquidity was $1.3 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q3 2011 print (late October)",
+   "ny_stated_pct": 3.8,
+   "ncc_stated_pct": null,
+   "restates": {
+    "2009": 0.71,
+    "2010": 2.37
+   },
+   "restates_note": "FY09 $0.71 and FY10 $2.37 after the Interest Expense Revision (Q2 2011 release, from 2011-07-28: 'Management identified an error in the previous accounting treatment of interest expense'; 'This revision is not a restatement'; $0.75 and $2.51 before it)"
+  },
+  {
+   "quarter": "Q3 2011",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-10-27",
+   "source": "RC38",
+   "release": "Oct 27",
+   "release_time": "before the open on Oct 27: 8-K accepted 08:38 ET",
+   "period_end": "2011-09-30",
+   "raw": {
+    "rev_k": 2321994,
+    "rev_prior_k": 2060659,
+    "comm_k": 405674,
+    "comm_prior_k": 350166,
+    "onboard_k": 181604,
+    "onboard_prior_k": 159824,
+    "opex_k": 1405300,
+    "opex_prior_k": 1239625,
+    "msa_k": 231761,
+    "msa_prior_k": 213300,
+    "opinc_k": 507742,
+    "opinc_prior_k": 445502,
+    "apcd": 8575926,
+    "apcd_prior": 8069663,
+    "occ": 107.9,
+    "occ_prior": 107.3,
+    "diluted_shares_k": 218934,
+    "cash_k": 451460
+   },
+   "sales_b": 2.322,
+   "sales_pct": 12.7,
+   "ny": 202.28,
+   "ny_prior": 192.16,
+   "ny_pct": 5.3,
+   "ny_cc_pct": 2.6,
+   "ny_note": "Net Yields increased 5.3% (2.6% on a Constant-Currency basis.)",
+   "ncc": 122.41,
+   "ncc_prior": 116.85,
+   "ncc_pct": 4.8,
+   "ncc_note": "NCC excluding fuel increasing only 0.7% on a Constant-Currency basis (2.5% on an as-reported basis)",
+   "capacity_pct": 6.3,
+   "occupancy": 107.9,
+   "occupancy_bp": 60.0,
+   "op_margin": 21.87,
+   "op_margin_bp": 24.7,
+   "eps_q": 1.82,
+   "eps_q_prior": 1.61,
+   "eps_note": "'Absent the revaluation charge, third quarter earnings per share totaled $1.90'; the fuel option revaluation is a mark-to-market loss",
+   "diluted_shares_m": 218.934,
+   "cash_b": 0.451,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.10 a quarter; no share repurchases; As of September 30, 2011, liquidity was $1.3 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q4 2011 print (late January)",
+   "ny_stated_pct": 5.3,
+   "ncc_stated_pct": null
+  },
+  {
+   "quarter": "Q4 2011",
+   "fy": 2011,
+   "q": 4,
+   "published": "2012-02-02",
+   "source": "RC39",
+   "release": "Feb 2",
+   "release_time": "before the open on Feb 2: 8-K accepted 08:56 ET",
+   "period_end": "2011-12-31",
+   "raw": {
+    "rev_k": 1775401,
+    "rev_prior_k": 1604498,
+    "comm_k": 315316,
+    "comm_prior_k": 285566,
+    "onboard_k": 116469,
+    "onboard_prior_k": 105615,
+    "opex_k": 1250861,
+    "opex_prior_k": 1106989,
+    "msa_k": 238445,
+    "msa_prior_k": 211936,
+    "opinc_k": 106162,
+    "opinc_prior_k": 121695,
+    "apcd": 8521272,
+    "apcd_prior": 7943782,
+    "occ": 103.0,
+    "occ_prior": 103.1,
+    "diluted_shares_k": 218982,
+    "cash_k": 262186
+   },
+   "sales_b": 1.775,
+   "sales_pct": 10.7,
+   "ny": 157.68,
+   "ny_prior": 152.74,
+   "ny_pct": 3.2,
+   "ny_cc_pct": 3.5,
+   "ny_note": "Net Yields increased 3.5% on a Constant-Currency basis (+3.2% As-Reported.)",
+   "ncc": 124.1,
+   "ncc_prior": 116.79,
+   "ncc_pct": 6.3,
+   "ncc_note": "NCC excluding fuel increased 3.7% on a Constant-Currency basis (+3.6% As-Reported.)",
+   "capacity_pct": 7.3,
+   "occupancy": 103.0,
+   "occupancy_bp": -10.0,
+   "op_margin": 5.98,
+   "op_margin_bp": -160.5,
+   "eps_q": 0.17,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 218.982,
+   "cash_b": 0.262,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.10 a quarter; no share repurchases; As of December 31, 2011, liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q1 2012 print (late April)",
+   "ny_stated_pct": 3.2,
+   "ncc_stated_pct": null,
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 2.77,
+    "revenue_usd_b": 7.537263,
+    "diluted_shares_m": 219.229,
+    "raw": {
+     "rev_k": 7537263,
+     "rev_prior_k": 6752504,
+     "opinc_k": 931628,
+     "net_rev_k": 5702049,
+     "net_rev_prior_k": 5096418,
+     "ncc_k": 4067995,
+     "ncc_prior_k": 3650069,
+     "apcd": 33235508,
+     "apcd_prior": 30911073,
+     "occ": 104.8,
+     "occ_prior": 104.3,
+     "other_k": -324207,
+     "cash_k": 262186,
+     "cfo_k": 1455739,
+     "capex_k": 1173626,
+     "ticket_k": 5525904,
+     "onboard_rev_k": 2011359,
+     "ticket_prior_k": 4908644,
+     "onboard_rev_prior_k": 1843860
+    },
+    "normalization_note": "FY11 diluted EPS $2.77 from the Q4 2011 release (no figure excluding a one-off published)",
+    "op_margin": 12.36,
+    "op_margin_note": "FY11 operating income $931,628K / total revenues $7,537,263K (Q4 2011 release)",
+    "sales_growth": 11.6,
+    "ny_pct": 4.06,
+    "ncc_pct": 3.66,
+    "occupancy": 104.8,
+    "capacity_pct": 7.5,
+    "other_expense_b": 0.3242,
+    "cash_b": 0.262,
+    "fcf_b": 0.282,
+    "fcf_note": "net cash provided by operating activities $1,455,739K less purchases of property and equipment $1,173,626K",
+    "groups": [
+     [
+      "Passenger ticket revenues",
+      5.525904,
+      12.6
+     ],
+     [
+      "Onboard and other revenues",
+      2.011359,
+      9.1
+     ]
+    ],
+    "tax_rate": 0.0,
+    "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+    "doc": "Q4 2011 release"
+   }
+  },
+  {
+   "quarter": "Q1 2012",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-04-20",
+   "source": "RC41",
+   "release": "Apr 20",
+   "release_time": "before the open on Apr 20: 8-K accepted 08:37 ET",
+   "period_end": "2012-03-31",
+   "raw": {
+    "rev_k": 1834480,
+    "rev_prior_k": 1671995,
+    "comm_k": 320738,
+    "comm_prior_k": 279549,
+    "onboard_k": 107595,
+    "onboard_prior_k": 102490,
+    "opex_k": 1255112,
+    "opex_prior_k": 1101071,
+    "msa_k": 264601,
+    "msa_prior_k": 248138,
+    "opinc_k": 135375,
+    "opinc_prior_k": 149534,
+    "apcd": 8299800,
+    "apcd_prior": 8100296,
+    "occ": 104.6,
+    "occ_prior": 104.3,
+    "diluted_shares_k": 219230,
+    "cash_k": 277533
+   },
+   "sales_b": 1.834,
+   "sales_pct": 9.7,
+   "ny": 169.42,
+   "ny_prior": 159.25,
+   "ny_pct": 6.4,
+   "ny_cc_pct": 7.0,
+   "ny_note": "Net Yields increased 7.0% on a Constant-Currency basis (+6.4% As-Reported)",
+   "ncc": 131.49,
+   "ncc_prior": 119.4,
+   "ncc_pct": 10.1,
+   "ncc_note": "Net Cruise Costs (“NCC”) excluding fuel increased 5.7% on a Constant-Currency basis (+5.1% As-Reported)",
+   "capacity_pct": 2.5,
+   "occupancy": 104.6,
+   "occupancy_bp": 30.0,
+   "op_margin": 7.38,
+   "op_margin_bp": -156.4,
+   "eps_q": 0.21,
+   "eps_q_prior": 0.36,
+   "diluted_shares_m": 219.23,
+   "cash_b": 0.278,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.10 a quarter; no share repurchases; As of March 31, 2012, liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q2 2012 print (late July)",
+   "ny_stated_pct": 6.4,
+   "ncc_stated_pct": null
+  },
+  {
+   "quarter": "Q2 2012",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-07-26",
+   "source": "RC42",
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 08:59 ET",
+   "period_end": "2012-06-30",
+   "raw": {
+    "rev_k": 1821004,
+    "rev_prior_k": 1767873,
+    "comm_k": 307697,
+    "comm_prior_k": 299174,
+    "onboard_k": 130981,
+    "onboard_prior_k": 134938,
+    "opex_k": 1296014,
+    "opex_prior_k": 1185375,
+    "msa_k": 247571,
+    "msa_prior_k": 242258,
+    "opinc_k": 96905,
+    "opinc_prior_k": 168190,
+    "apcd": 8180898,
+    "apcd_prior": 8038014,
+    "occ": 104.1,
+    "occ_prior": 103.7,
+    "diluted_shares_k": 217866,
+    "cash_k": 212209
+   },
+   "sales_b": 1.821,
+   "sales_pct": 3.0,
+   "ny": 168.97,
+   "ny_prior": 165.93,
+   "ny_pct": 1.8,
+   "ny_cc_pct": 4.5,
+   "ny_note": "Net Yields increased 4.5% on a Constant-Currency basis (+1.8% As-Reported)",
+   "ncc": 135.06,
+   "ncc_prior": 123.6,
+   "ncc_pct": 9.3,
+   "ncc_note": "Net Cruise Costs (“NCC”) excluding fuel increased 8.3% on a Constant-Currency basis (+5.8% As-Reported)",
+   "capacity_pct": 1.8,
+   "occupancy": 104.1,
+   "occupancy_bp": 40.0,
+   "op_margin": 5.32,
+   "op_margin_bp": -419.2,
+   "eps_q": -0.02,
+   "eps_q_prior": 0.43,
+   "eps_note": "'Results include a ($0.05) per share mark-to-market loss on the company’s WTI fuel option portfolio'; no figure excluding it",
+   "diluted_shares_m": 217.866,
+   "cash_b": 0.212,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.10 a quarter; no share repurchases; As of June 30, 2012, liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facilities",
+   "next_print": "Q3 2012 print (late October)",
+   "ny_stated_pct": 1.8,
+   "ncc_stated_pct": null
+  },
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-10-25",
+   "source": "RC43",
+   "release": "Oct 25",
+   "release_time": "before the open on Oct 25: 8-K accepted 08:44 ET",
+   "period_end": "2012-09-30",
+   "raw": {
+    "rev_k": 2226390,
+    "rev_prior_k": 2321994,
+    "comm_k": 366100,
+    "comm_prior_k": 405674,
+    "onboard_k": 166356,
+    "onboard_prior_k": 181604,
+    "opex_k": 1348325,
+    "opex_prior_k": 1405300,
+    "msa_k": 243877,
+    "msa_prior_k": 231761,
+    "opinc_k": 452137,
+    "opinc_prior_k": 507742,
+    "apcd": 8581222,
+    "apcd_prior": 8575926,
+    "occ": 107.3,
+    "occ_prior": 107.9,
+    "diluted_shares_k": 219296,
+    "cash_k": 241237
+   },
+   "sales_b": 2.226,
+   "sales_pct": -4.1,
+   "ny": 197.4,
+   "ny_prior": 202.28,
+   "ny_pct": -2.4,
+   "ny_cc_pct": 0.1,
+   "ny_note": "Net Yields increased 0.1% on a Constant-Currency basis (down 2.4% As-Reported)",
+   "ncc": 123.5,
+   "ncc_prior": 122.41,
+   "ncc_pct": 0.9,
+   "ncc_note": "Net Cruise Costs (“NCC”) excluding fuel increased 2.0% on a Constant-Currency basis (declined 0.2% As-Reported)",
+   "capacity_pct": 0.1,
+   "occupancy": 107.3,
+   "occupancy_bp": -60.0,
+   "op_margin": 20.31,
+   "op_margin_bp": -155.9,
+   "eps_q": 1.68,
+   "eps_q_prior": 1.82,
+   "diluted_shares_m": 219.296,
+   "cash_b": 0.241,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.10 a quarter; no share repurchases",
+   "next_print": "Q4 2012 print (late January)",
+   "ny_stated_pct": -2.4,
+   "ncc_stated_pct": null
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-02-04",
+   "source": "RC45",
+   "release": "Feb 4",
+   "release_time": "before the open on Feb 4: 8-K accepted 08:37 ET",
+   "period_end": "2012-12-31",
+   "raw": {
+    "rev_k": 1806150,
+    "rev_prior_k": 1775401,
+    "comm_k": 294720,
+    "comm_prior_k": 315316,
+    "onboard_k": 124521,
+    "onboard_prior_k": 116469,
+    "opex_k": 1257983,
+    "opex_prior_k": 1250861,
+    "msa_k": 255494,
+    "msa_prior_k": 238445,
+    "opinc_k": -281307,
+    "opinc_prior_k": 106162,
+    "apcd": 8643664,
+    "apcd_prior": 8521272,
+    "occ": 101.8,
+    "occ_prior": 103.0,
+    "diluted_shares_k": 218326,
+    "cash_k": 194855
+   },
+   "sales_b": 1.806,
+   "sales_pct": 1.7,
+   "ny": 160.45,
+   "ny_prior": 157.68,
+   "ny_pct": 1.8,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields | 160.45 | 160.54 | 157.68",
+   "ncc": 126.59,
+   "ncc_prior": 124.1,
+   "ncc_pct": 2.0,
+   "ncc_note": "Net Cruise Costs per APCD | 126.59 | 127.16 | 124.10",
+   "capacity_pct": 1.4,
+   "occupancy": 101.8,
+   "occupancy_bp": -120.0,
+   "op_margin": -15.57,
+   "op_margin_bp": -2155.5,
+   "eps_q": -1.8,
+   "eps_q_prior": 0.17,
+   "eps_note": "'fourth quarter 2012 net income before impairment charges of $21.1 million, or $0.10 per share'; operating income is after the $385,444K impairment of Pullmantur related assets (no operating figure excluding it is published)",
+   "diluted_shares_m": 218.326,
+   "cash_b": 0.195,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.12 a quarter; no share repurchases",
+   "next_print": "Q1 2013 print (late April)",
+   "ny_stated_pct": null,
+   "ncc_stated_pct": null,
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 1.97,
+    "revenue_usd_b": 7.688024,
+    "diluted_shares_m": 219.457,
+    "raw": {
+     "rev_k": 7688024,
+     "rev_prior_k": 7537263,
+     "opinc_k": 403110,
+     "net_rev_k": 5869316,
+     "net_rev_prior_k": 5702049,
+     "ncc_k": 4350269,
+     "ncc_prior_k": 4067995,
+     "apcd": 33705584,
+     "apcd_prior": 33235508,
+     "occ": 104.4,
+     "occ_prior": 104.8,
+     "other_k": -384823,
+     "cash_k": 194855,
+     "cfo_k": 1381734,
+     "capex_k": 1291499,
+     "ticket_k": 5594595,
+     "onboard_rev_k": 2093429,
+     "ticket_prior_k": 5525904,
+     "onboard_rev_prior_k": 2011359
+    },
+    "normalization_note": "FY12 diluted EPS $1.97, the company's figure before the Pullmantur impairment charges ('Net income before the non-cash impairment charge described below was $432.2 million, or $1.97 per share', Q4 2012 release; GAAP $0.08, the ACN rule)",
+    "op_margin": 5.24,
+    "op_margin_note": "FY12 operating income $403,110K / total revenues $7,688,024K (Q4 2012 release)",
+    "sales_growth": 2.0,
+    "ny_pct": 1.5,
+    "ncc_pct": 5.45,
+    "occupancy": 104.4,
+    "capacity_pct": 1.4,
+    "other_expense_b": 0.3848,
+    "cash_b": 0.195,
+    "fcf_b": 0.09,
+    "fcf_note": "net cash provided by operating activities $1,381,734K less purchases of property and equipment $1,291,499K",
+    "groups": [
+     [
+      "Passenger ticket revenues",
+      5.594595,
+      1.2
+     ],
+     [
+      "Onboard and other revenues",
+      2.093429,
+      4.1
+     ]
+    ],
+    "tax_rate": 0.0,
+    "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+    "doc": "Q4 2012 release"
+   }
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-25",
+   "source": "RC47",
+   "release": "Apr 25",
+   "release_time": "before the open on Apr 25: 8-K accepted 08:35 ET",
+   "period_end": "2013-03-31",
+   "raw": {
+    "rev_k": 1911220,
+    "rev_prior_k": 1834480,
+    "comm_k": 322937,
+    "comm_prior_k": 320738,
+    "onboard_k": 121487,
+    "onboard_prior_k": 107595,
+    "opex_k": 1282190,
+    "opex_prior_k": 1255112,
+    "msa_k": 274034,
+    "msa_prior_k": 264601,
+    "opinc_k": 165632,
+    "opinc_prior_k": 135375,
+    "apcd": 8428110,
+    "apcd_prior": 8299800,
+    "occ": 104.9,
+    "occ_prior": 104.6,
+    "diluted_shares_k": 220484,
+    "cash_k": 215888
+   },
+   "sales_b": 1.911,
+   "sales_pct": 4.2,
+   "ny": 174.04,
+   "ny_prior": 169.42,
+   "ny_pct": 2.7,
+   "ny_cc_pct": 3.6,
+   "ny_note": "Net Yields increased 3.6% on a Constant-Currency basis (2.7% As-Reported)",
+   "ncc": 131.92,
+   "ncc_prior": 131.49,
+   "ncc_pct": 0.3,
+   "ncc_note": "Net Cruise Costs (“NCC”) excluding fuel decreased 0.5% on a Constant-Currency basis (decreased 0.6% As-Reported)",
+   "capacity_pct": 1.5,
+   "occupancy": 104.9,
+   "occupancy_bp": 30.0,
+   "op_margin": 8.67,
+   "op_margin_bp": 128.7,
+   "eps_q": 0.35,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 220.484,
+   "cash_b": 0.216,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.12 a quarter; no share repurchases; As of March 31, 2013, liquidity was $2.2 billion, including cash and the undrawn portion of the company’s unsecured credit facilities",
+   "next_print": "Q2 2013 print (late July)",
+   "ny_stated_pct": 2.7,
+   "ncc_stated_pct": null
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-25",
+   "source": "RC48",
+   "release": "Jul 25",
+   "release_time": "before the open on Jul 25: 8-K accepted 08:47 ET",
+   "period_end": "2013-06-30",
+   "raw": {
+    "rev_k": 1882767,
+    "rev_prior_k": 1821004,
+    "comm_k": 316506,
+    "comm_prior_k": 307697,
+    "onboard_k": 140710,
+    "onboard_prior_k": 130981,
+    "opex_k": 1323619,
+    "opex_prior_k": 1296014,
+    "msa_k": 259626,
+    "msa_prior_k": 247571,
+    "opinc_k": 113338,
+    "opinc_prior_k": 96905,
+    "apcd": 8238182,
+    "apcd_prior": 8180898,
+    "occ": 103.0,
+    "occ_prior": 104.1,
+    "diluted_shares_k": 220648,
+    "cash_k": 205174
+   },
+   "sales_b": 1.883,
+   "sales_pct": 3.4,
+   "ny": 173.04,
+   "ny_prior": 168.97,
+   "ny_pct": 2.4,
+   "ny_cc_pct": 2.8,
+   "ny_note": "Net Yields on a Constant-Currency basis increased 2.8% for the quarter",
+   "ncc": 136.68,
+   "ncc_prior": 135.06,
+   "ncc_pct": 1.2,
+   "ncc_note": "Net Cruise Costs per APCD | 136.68 | 136.75 | 135.06",
+   "capacity_pct": 0.7,
+   "occupancy": 103.0,
+   "occupancy_bp": -110.0,
+   "op_margin": 6.02,
+   "op_margin_bp": 69.8,
+   "eps_q": 0.11,
+   "eps_q_prior": -0.02,
+   "eps_note": "'Absent these two charges, earnings per share would have been $0.23 per share' (the Grandeur fire and the affinity credit card correction)",
+   "diluted_shares_m": 220.648,
+   "cash_b": 0.205,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.12 a quarter; no share repurchases",
+   "next_print": "Q3 2013 print (late October)",
+   "ny_stated_pct": null,
+   "ncc_stated_pct": null
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-24",
+   "source": "RC50",
+   "release": "Oct 24",
+   "release_time": "before the open on Oct 24: 8-K accepted 08:47 ET",
+   "period_end": "2013-09-30",
+   "raw": {
+    "rev_k": 2311749,
+    "rev_prior_k": 2226390,
+    "comm_k": 378291,
+    "comm_prior_k": 366100,
+    "onboard_k": 178269,
+    "onboard_prior_k": 166356,
+    "opex_k": 1416801,
+    "opex_prior_k": 1348325,
+    "msa_k": 249954,
+    "msa_prior_k": 243877,
+    "opinc_k": 444209,
+    "opinc_prior_k": 452137,
+    "apcd": 8667948,
+    "apcd_prior": 8581222,
+    "occ": 107.3,
+    "occ_prior": 107.3,
+    "diluted_shares_k": 221004,
+    "cash_k": 209567
+   },
+   "sales_b": 2.312,
+   "sales_pct": 3.8,
+   "ny": 202.49,
+   "ny_prior": 197.4,
+   "ny_pct": 2.6,
+   "ny_cc_pct": 2.6,
+   "ny_note": "Net Yields on a Constant-Currency basis increased 2.6% during the third quarter",
+   "ncc": 128.08,
+   "ncc_prior": 123.5,
+   "ncc_pct": 3.7,
+   "ncc_note": "Net Cruise Costs per APCD | 128.08 | 127.47 | 123.50",
+   "capacity_pct": 1.0,
+   "occupancy": 107.3,
+   "occupancy_bp": 0.0,
+   "op_margin": 19.22,
+   "op_margin_bp": -109.3,
+   "eps_q": 1.65,
+   "eps_q_prior": 1.68,
+   "eps_note": "'U.S. GAAP EPS (after the charge) was $1.65'; adjusted EPS $1.71 excludes $12.2 million of restructuring and related charges, which operating income includes ($12,244K)",
+   "diluted_shares_m": 221.004,
+   "cash_b": 0.21,
+   "fuel_note": "",
+   "cash_return_text": "dividend $0.25 a quarter from the fourth quarter of 2013; no share repurchases",
+   "next_print": "Q4 2013 print (late January)",
+   "ny_stated_pct": null,
+   "ncc_stated_pct": null
   }
  ],
  "guides": [
@@ -1703,6 +3572,614 @@
     ]
    },
    "note": "2009 EPS 'Approx. $0.70'; Net Yields for 2009 'approximately 14%, or 12% to 13% after adjusting for changes in currency' (no constant-currency figure for Q4 2009)"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-28",
+   "source": "RC29",
+   "doc": "Q4 2009 release",
+   "eps_guide": [
+    2.0,
+    2.2
+   ],
+   "fy_rev": {
+    "ny": [
+     3,
+     6
+    ],
+    "ny_cc": [
+     3,
+     5
+    ],
+    "capacity": 11.4
+   },
+   "fy_display": "Net Cruise Costs per APCD Flat to up slightly, excluding fuel Flat to up slightly; fuel expenses $687 Million",
+   "q_guide": {
+    "quarter": "Q1 2010",
+    "ny": [
+     2,
+     2
+    ],
+    "ny_cc": [
+     0,
+     0
+    ],
+    "capacity": 9.2,
+    "eps": [
+     0.25,
+     0.3
+    ]
+   },
+   "note": "the 2010 EPS range is 'including $0.39 related to a legal settlement'; 'After adjusting for changes in currency, Net Yields are forecasted to be around flat in the first quarter and increase 3% to 5% for the full year'"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-28",
+   "source": "RC31",
+   "doc": "Q1 2010 release",
+   "eps_guide": [
+    2.15,
+    2.25
+   ],
+   "fy_rev": {
+    "ny": [
+     4,
+     5
+    ],
+    "capacity": 11.5
+   },
+   "fy_display": "Net Cruise Costs per APCD Flat – down slightly, excluding fuel Approx. (1%); fuel expenses $678 Million",
+   "q_guide": {
+    "quarter": "Q2 2010",
+    "ny": [
+     6,
+     6
+    ],
+    "capacity": 14.6,
+    "eps": [
+     0.16,
+     0.21
+    ]
+   },
+   "note": "no estimate after adjusting for currency in this release; the EPS range reflects 'the recent travel disruptions in Europe'"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-07-22",
+   "source": "RC32",
+   "doc": "Q2 2010 release",
+   "eps_guide": [
+    2.25,
+    2.35
+   ],
+   "fy_rev": {
+    "ny": [
+     3,
+     4
+    ],
+    "ny_cc": [
+     4,
+     5
+    ],
+    "capacity": 11.5
+   },
+   "fy_display": "Net Cruise Costs per APCD (1%) – (2%), excluding fuel (1%) – (2%); fuel expenses $652 Million",
+   "q_guide": {
+    "quarter": "Q3 2010",
+    "ny": [
+     4,
+     4
+    ],
+    "ny_cc": [
+     7,
+     7
+    ],
+    "capacity": 12.7,
+    "eps": [
+     1.52,
+     1.57
+    ]
+   }
+  },
+  {
+   "fy": 2010,
+   "published": "2010-10-26",
+   "source": "RC33",
+   "doc": "Q3 2010 release",
+   "eps_guide": [
+    2.43,
+    2.47
+   ],
+   "fy_rev": {
+    "ny": [
+     4,
+     5
+    ],
+    "ny_cc": [
+     4,
+     5
+    ],
+    "capacity": 11.0
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. (1%), excluding fuel Approx. (1%); fuel expenses $651 Million",
+   "q_guide": {
+    "quarter": "Q4 2010",
+    "ny": [
+     4,
+     5
+    ],
+    "ny_cc": [
+     5,
+     5
+    ],
+    "capacity": 8.1,
+    "eps": [
+     0.08,
+     0.12
+    ]
+   },
+   "note": "2011 in words and one range: 'First quarter 2011 Net Yields are currently expected to improve 2%-4%' and 'the company expects 2011 EPS to exceed its previous record of $3.26 per share'"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-01-27",
+   "source": "RC34",
+   "doc": "Q4 2010 release",
+   "eps_guide": [
+    3.25,
+    3.45
+   ],
+   "fy_rev": {
+    "ny": [
+     4,
+     6
+    ],
+    "ny_cc": [
+     4,
+     5
+    ],
+    "capacity": 7.4
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. 2%, excluding fuel Approx. 2%; fuel expenses $705 Million",
+   "q_guide": {
+    "quarter": "Q1 2011",
+    "ny": [
+     2,
+     3
+    ],
+    "ny_cc": [
+     1,
+     2
+    ],
+    "capacity": 10.2,
+    "eps": [
+     0.1,
+     0.15
+    ]
+   }
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-28",
+   "source": "RC36",
+   "doc": "Q1 2011 release",
+   "eps_guide": [
+    3.1,
+    3.3
+   ],
+   "fy_rev": {
+    "ny": [
+     5,
+     7
+    ],
+    "ny_cc": [
+     3,
+     5
+    ],
+    "capacity": 7.5
+   },
+   "fy_display": "Net Cruise Costs per APCD 5% to 6%, excluding fuel 4% to 5%; fuel expenses $770 Million",
+   "q_guide": {
+    "quarter": "Q2 2011",
+    "ny": [
+     5,
+     5
+    ],
+    "ny_cc": [
+     1,
+     2
+    ],
+    "capacity": 6.6,
+    "eps": [
+     0.4,
+     0.45
+    ]
+   }
+  },
+  {
+   "fy": 2011,
+   "published": "2011-07-28",
+   "source": "RC37",
+   "doc": "Q2 2011 release",
+   "eps_guide": [
+    2.85,
+    2.95
+   ],
+   "fy_rev": {
+    "ny": [
+     5,
+     5
+    ],
+    "ny_cc": [
+     2,
+     3
+    ],
+    "capacity": 7.6
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. 4%, excluding fuel Approx. 3%; fuel expenses $763 Million",
+   "q_guide": {
+    "quarter": "Q3 2011",
+    "ny": [
+     5,
+     5
+    ],
+    "ny_cc": [
+     1,
+     2
+    ],
+    "capacity": 6.3,
+    "eps": [
+     1.85,
+     1.9
+    ]
+   },
+   "note": "after the Interest Expense Revision: 'Excluding the Interest Expense Revision, EPS expectations would have been $3.05 to $3.15 per share'"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-10-27",
+   "source": "RC38",
+   "doc": "Q3 2011 release",
+   "eps_guide": [
+    2.7,
+    2.8
+   ],
+   "fy_rev": {
+    "ny": [
+     4,
+     4
+    ],
+    "ny_cc": [
+     2,
+     3
+    ],
+    "capacity": 7.5
+   },
+   "fy_display": "Net Cruise Costs per APCD 3% to 4%, excluding fuel 2% to 3%; fuel expenses $761 Million",
+   "q_guide": {
+    "quarter": "Q4 2011",
+    "ny": [
+     3,
+     4
+    ],
+    "ny_cc": [
+     3,
+     4
+    ],
+    "capacity": 7.3,
+    "eps": [
+     0.09,
+     0.19
+    ]
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2012-02-02",
+   "source": "RC39",
+   "doc": "Q4 2011 release",
+   "eps_guide": [
+    1.9,
+    2.3
+   ],
+   "fy_rev": {
+    "ny": [
+     0,
+     4
+    ],
+    "ny_cc": [
+     1,
+     5
+    ],
+    "capacity": 2.1
+   },
+   "fy_display": "Net Cruise Costs per APCD 5% to 6%, excluding fuel 3% to 4%; fuel expenses $889 million",
+   "q_guide": {
+    "quarter": "Q1 2012",
+    "ny": [
+     4,
+     6
+    ],
+    "ny_cc": [
+     5,
+     7
+    ],
+    "capacity": 2.5,
+    "eps": [
+     0.1,
+     0.2
+    ]
+   },
+   "note": "after the Costa Concordia ('Impact of Costa Concordia'): 'the company currently anticipates yield improvement for the full year 2012 to be in a range between 1% and 5% on a Constant-Currency basis and between flat and 4% on an As-Reported basis'"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-04-20",
+   "source": "RC41",
+   "doc": "Q1 2012 release",
+   "eps_guide": [
+    1.8,
+    2.1
+   ],
+   "fy_rev": {
+    "ny": [
+     1,
+     4
+    ],
+    "ny_cc": [
+     2,
+     5
+    ],
+    "capacity": 1.5
+   },
+   "fy_display": "Net Cruise Costs per APCD 6% to 7%, excluding fuel Approx. 4%; fuel expenses $923 million",
+   "q_guide": {
+    "quarter": "Q2 2012",
+    "ny": [
+     2,
+     3
+    ],
+    "ny_cc": [
+     4,
+     5
+    ],
+    "capacity": 1.8,
+    "eps": [
+     -0.05,
+     0.05
+    ]
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2012-07-26",
+   "source": "RC42",
+   "doc": "Q2 2012 release",
+   "eps_guide": [
+    1.7,
+    1.8
+   ],
+   "fy_rev": {
+    "ny": [
+     0,
+     1
+    ],
+    "ny_cc": [
+     2,
+     3
+    ],
+    "capacity": 1.5
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. 5%, excluding fuel Approx. 2%; fuel expenses $899 million",
+   "q_guide": {
+    "quarter": "Q3 2012",
+    "ny": [
+     -5,
+     -5
+    ],
+    "ny_cc": [
+     -2,
+     -1
+    ],
+    "capacity": 0.2,
+    "eps": [
+     1.4,
+     1.5
+    ]
+   }
+  },
+  {
+   "fy": 2012,
+   "published": "2012-10-25",
+   "source": "RC43",
+   "doc": "Q3 2012 release",
+   "eps_guide": [
+    1.85,
+    1.95
+   ],
+   "fy_rev": {
+    "ny": [
+     1,
+     2
+    ],
+    "ny_cc": [
+     3,
+     3
+    ],
+    "capacity": 1.4
+   },
+   "fy_display": "Net Cruise Costs per APCD 5% to 6%, excluding fuel 2% to 3%; fuel expenses $910 million",
+   "q_guide": {
+    "quarter": "Q4 2012",
+    "ny": [
+     1,
+     1
+    ],
+    "ny_cc": [
+     1,
+     1
+    ],
+    "capacity": 1.4,
+    "eps": [
+     -0.02,
+     0.08
+    ]
+   }
+  },
+  {
+   "fy": 2013,
+   "published": "2013-02-04",
+   "source": "RC45",
+   "doc": "Q4 2012 release",
+   "eps_guide": [
+    2.3,
+    2.5
+   ],
+   "fy_rev": {
+    "ny": [
+     3,
+     5
+    ],
+    "ny_cc": [
+     2,
+     4
+    ],
+    "capacity": 1.4
+   },
+   "fy_display": "Net Cruise Costs per APCD 3% to 4%, excluding fuel Approx. 3%; fuel expenses $960 million",
+   "q_guide": {
+    "quarter": "Q1 2013",
+    "ny": [
+     2,
+     2
+    ],
+    "ny_cc": [
+     2,
+     3
+    ],
+    "capacity": 1.5,
+    "eps": [
+     0.1,
+     0.2
+    ]
+   }
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-25",
+   "source": "RC47",
+   "doc": "Q1 2013 release",
+   "eps_guide": [
+    2.3,
+    2.5
+   ],
+   "fy_rev": {
+    "ny": [
+     2,
+     4
+    ],
+    "ny_cc": [
+     2,
+     4
+    ],
+    "capacity": 1.3
+   },
+   "fy_display": "Net Cruise Costs per APCD 2% to 3%, excluding fuel 2% to 3%; fuel expenses $928 million",
+   "q_guide": {
+    "quarter": "Q2 2013",
+    "ny": [
+     2,
+     3
+    ],
+    "ny_cc": [
+     3,
+     3
+    ],
+    "capacity": 1.3,
+    "eps": [
+     0.1,
+     0.15
+    ]
+   }
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-25",
+   "source": "RC48",
+   "doc": "Q2 2013 release",
+   "eps_guide": [
+    2.2,
+    2.3
+   ],
+   "fy_rev": {
+    "ny": [
+     2,
+     2
+    ],
+    "ny_cc": [
+     2,
+     3
+    ],
+    "capacity": 1.0
+   },
+   "fy_display": "Net Cruise Costs per APCD 1% to 2%, excluding fuel 1% to 2%; fuel expenses $923 million",
+   "q_guide": {
+    "quarter": "Q3 2013",
+    "ny": [
+     1,
+     1
+    ],
+    "ny_cc": [
+     1,
+     2
+    ],
+    "capacity": 1.8,
+    "eps": [
+     1.6,
+     1.7
+    ]
+   },
+   "note": "'Reported EPS', after the Grandeur of the Seas fire and the affinity card correction"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-10-24",
+   "source": "RC50",
+   "doc": "Q3 2013 release",
+   "eps_guide": [
+    2.3,
+    2.35
+   ],
+   "fy_rev": {
+    "ny": [
+     2,
+     3
+    ],
+    "ny_cc": [
+     3,
+     3
+    ],
+    "capacity": 0.8
+   },
+   "fy_display": "Net Cruise Costs per APCD 1% to 2%, excluding fuel Approx. 2%; fuel expenses $920 million",
+   "q_guide": {
+    "quarter": "Q4 2013",
+    "ny": [
+     2,
+     2
+    ],
+    "ny_cc": [
+     2,
+     3
+    ],
+    "capacity": 0.0,
+    "eps": [
+     0.15,
+     0.2
+    ]
+   },
+   "note": "'Full year adjusted EPS is now expected to be $2.30 to $2.35'; adjusted EPS 'excludes a special charge of $12.2 million for restructuring and related expenses' in Q3, and 'The company expects to incur additional restructuring and related expenses during the fourth quarter'; Q4 2013 capacity 'Flat'",
+   "eps_guide_note": "adjusted EPS, excluding restructuring and related charges"
   }
  ],
  "dividends": [
@@ -1711,6 +4188,24 @@
    "source": "RC23",
    "quarterly": 0.0,
    "note": "none ('The Board of Directors ... decided today to discontinue the company’s common stock dividend', 8-K of 2008-11-18, after the close; the rate had been $0.15 a quarter)"
+  },
+  {
+   "published": "2011-07-28",
+   "source": "RC37",
+   "quarterly": 0.1,
+   "note": "$0.10 a quarter ('The Board of Directors reinstated the quarterly dividend at a rate of 10¢ per share', Q2 2011 release, after the close of 2011-07-27)"
+  },
+  {
+   "published": "2012-10-26",
+   "source": "RC44",
+   "quarterly": 0.12,
+   "note": "$0.12 a quarter ('In September 2012, we declared a cash dividend on our common stock of $0.12 per share which was paid in the fourth quarter of 2012', Q3 2012 10-Q, after the close of 2012-10-25)"
+  },
+  {
+   "published": "2013-09-12",
+   "source": "RC49",
+   "quarterly": 0.25,
+   "note": "$0.25 a quarter ('The board also approved an increase of the quarterly cash dividend to $0.25 per common share', 8-K of 2013-09-11, after the close)"
   }
  ],
  "events": [],

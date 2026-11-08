@@ -29,8 +29,9 @@ with every guided field (words and a net sales note included), a later range for
 renames every reporting line and restates every year of the history, with operating one-offs, a constant-currency rate and a guide basis
 (WMT 2015-2017), and a later withdrawal of every guided field (WMT 2018-2020), with an EPS guide stated as growth, a quarter guide's basis and
 the fields of a guide converted from reported growth (WMT 2021-2023); RCL: a guide with every guided field (Net Yields as published and at
-constant currency, capacity, the display fields), a later range for every quarter the fact sheet guides, and a print whose Net Yields, Net
-Cruise Costs, occupancy and raw figures are absurd; every
+constant currency, capacity, the display fields, an EPS guide note), a later range for every quarter the fact sheet guides, and a print
+whose Net Yields, Net Cruise Costs, occupancy and raw figures are absurd and which restates every year of the history (the 'restates'
+field of RCL 2010-2013); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -153,7 +154,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                            rev_reported=[-50, -40], rev_currency_m=-99999, rev_prior_m=1,
                            q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2],
                                     "sales_basis": "PLANTED", "sales_reported": [-50, -40], "currency_m": -99999, "prior_m": 1}),
-               "RCL": dict(note="PLANTED", fy_display="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
+               "RCL": dict(note="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
                            q_guide={"quarter": "Q4 2099", "ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0, "eps": [0.1, 0.2]}),
                "SHW": dict(fy_words="PLANTED", note="PLANTED",
                            q_guide={"quarter": "Q4 2099", "sales": [-40, -30], "eps": [0.1, 0.2], "words": "PLANTED"}),
@@ -243,6 +244,8 @@ try:
             f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED",
                                 "eps_guide": [0.1, 0.2], **{k: v for k, v in GUIDE_PLANT.items() if k != "q_guide"},
                                 "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
+        v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+        last.update(restates={y: 0.01 for y in v0["eps_normalized"]}, restates_note="PLANTED")
     if TICKER == "WMT":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
                            # wins): a later guide may never reach an earlier date
         for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):

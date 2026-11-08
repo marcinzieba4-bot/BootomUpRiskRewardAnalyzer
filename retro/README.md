@@ -9127,13 +9127,17 @@ with the same `index.json` and their own `SERIES.md`.
 ```bash
 python3 retro/build_rcl.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
 python3 retro/build_rcl.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
-for d in staging/retrospective/RCL/200[89]-*/; do
+python3 retro/build_rcl.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for d in staging/retrospective/RCL/20[01][0-9]-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series RCL
 for c in 2008-01-30 2008-02-19 2008-04-24 2008-07-01 2008-07-22 2008-10-28 2008-11-19 2009-01-01 2009-01-29 2009-02-24 2009-04-23 \
          2009-07-01 2009-07-29 2009-11-03 2010-01-01; do python3 retro/tools/firewall.py $c RCL; done
+for c in 2010-01-28 2010-02-24 2010-04-28 2010-07-22 2010-10-26 2011-01-27 2011-02-25 2011-04-28 2011-07-28 2011-10-27 2012-02-02 \
+         2012-02-29 2012-04-20 2012-07-26 2012-10-25 2012-10-26 2013-02-04 2013-02-25 2013-04-25 2013-07-25 2013-09-12 2013-10-24 \
+         2014-01-01; do python3 retro/tools/firewall.py $c RCL; done
 ```
 
 Royal Caribbean filed as a foreign private issuer until 2004: its annual reports for FY1998 to FY2003 are on Form 20-F (the FY1998-FY2000
@@ -9303,6 +9307,115 @@ Judgement calls that could carry hindsight:
 - the June 2009 per-share impacts read as no guide (3 classes move if they are netted into one);
 - DURABLE rather than CYCLICAL (the class label only), on a 10-K that ties demand to the economy but does not call its earnings the cycle;
 - the 2007 statement figures read from images and taken from the 10-Qs (the same figures, checked by eye against the images).
+
+### RCL 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds; the fact sheet only gains facts (its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte). Read: every 8-K and 10-Q of February 2010 to February
+2014 (52 8-Ks, one an amendment, and 12 10-Qs) and the FY2009-FY2012 10-Ks, all by Opus directly; every release prints its statements as
+text. 964 strings across both series were checked with `verbatim.py` against their own filings, 964 found. Decided on 2026-11-08, before
+any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (08:35-09:28 ET) except Q2 2011, accepted 2011-07-27 17:18 ET, after
+  the close, so it is dated 2011-07-28 (its week's date 2011-07-29). The Q1 2012 release came on a Friday before the open (2012-04-20 08:37
+  ET), so its week's date is that day (the UNP 2014 rule). The FY2009 and FY2010 10-Ks (2010-02-23 16:36 and 2011-02-24 16:44 ET) are dated
+  the next trading day; the FY2011 (2012-02-29 09:02) and FY2012 (2013-02-25 08:01) 10-Ks keep their dates.
+- **History.** Four more vintages, each year from the latest filing that reports it: FY2009 (2000-2009), FY2010 (2001-2010), FY2011
+  (2002-2011) and FY2012 (2003-2012); the first year's diluted shares from the FY2004 (2000: 192,935K), FY2005 (2001: 202,004K), FY2006
+  (2002: 209,565K) and FY2007 (2003: 211,175K) 10-Ks. The Q4 2009-Q4 2012 prints extend the history until the 10-K.
+- **EPS.** FY2009 $0.75 is a trough with no listed one-off: it stays. FY2010 $2.51 keeps Q1 2010's legal settlement gain, which the
+  release states only per share ("The results included a $0.39 per share gain from a previously announced legal settlement") with no
+  figure excluding it (the 2008 legal-settlement precedent; under half the year's income). The Q2 2011 release revised FY2009 to $0.71 and
+  FY2010 to $2.37 ("Management identified an error in the previous accounting treatment of interest expense"; "This revision is not a
+  restatement"), and the FY2011 10-K carries the revised figures: from 2011-07-28 they replace $0.75 and $2.51 (the SHW `restates` rule),
+  and the FY2011 guide on the revised basis ($2.85-2.95) is used, its "would have been $3.05 to $3.15" in the note. FY2012 is the company's
+  $1.97 "before the non-cash impairment charge" of $413.9 million on Pullmantur (GAAP $0.08; the ACN rule); at GAAP the year would be
+  distorted, the charge being 96% of the income before it. The Q3 2013 release states the FY2013 guide only as adjusted EPS ($2.30-2.35,
+  excluding restructuring and related charges): it is used as the company's figure excluding the item (the ACN rule, `eps_guide_note`).
+- **Operating margins keep the Pullmantur impairment** (Q4 2012: operating income $(281,307)K, -2,156bp on the year-ago quarter; FY2012
+  5.2%) **and the Q3 2013 restructuring charge** ($12,244K): neither release publishes operating income excluding them. Net Cruise Costs
+  exclude both by the company's definition (total cruise operating expenses plus marketing, selling and administrative expenses, which do
+  not contain those lines). Rebuilt with both excluded, no class or tier moves.
+- **Guides** as before: the current-FY EPS midpoint, FY10 $2.10 ($2.00-2.20, Q4 2009 release, "including $0.39 related to a legal
+  settlement"), $2.20 from 2010-04-29, $2.30 from 2010-07-23, $2.45 from 2010-10-27; FY11 $3.35 from 2011-01-28, $3.20 from 2011-04-29,
+  $2.90 from 2011-07-29, $2.75 from 2011-10-28; FY12 $2.10 from 2012-02-03 (after the Costa Concordia accident, "Impact of Costa
+  Concordia"), $1.95 from 2012-04-20, $1.75 from 2012-07-27, $1.90 from 2012-10-26; FY13 $2.40 from 2013-02-05, $2.25 from 2013-07-26,
+  $2.325 (adjusted) from 2013-10-25. BASE takes the next quarter's net revenue guide at constant currency where the release states one
+  (every release but Q1 2010, whose Q2 2010 guide is as published: +21.5%, Net Yields approx. 6% on capacity 14.6%); "around flat" and a
+  capacity of "Flat" are 0. The constant-currency test is per print. The Q3 2010 release's 2011 outlook ("First quarter 2011 Net Yields
+  are currently expected to improve 2%-4%"; "2011 EPS to exceed its previous record of $3.26") is a note: FY2010 is the current year until
+  the Q4 2010 print.
+- **Stated changes.** From Q2 2011 most releases state Net Cruise Costs only excluding fuel or at constant currency, and the Q4 2012, Q2 2013
+  and Q3 2013 releases state Net Yields as a change only at constant currency: the builder checks the as-reported change where the release
+  states it (13 of 16 Net Yields, 6 of 16 Net Cruise Costs, within 0.1pp), and the note is then the release's per-APCD table row (as
+  reported, at constant currency, a year ago), which `verbatim.py` checks. The signals stay as reported, as the decade's are.
+- **Dividends:** reinstated at $0.10 a quarter (Q2 2011 release, 2011-07-28), $0.12 from 2012-10-26 (declared in September 2012 and first
+  stated in the Q3 2012 10-Q, accepted 2012-10-25 16:32 ET), $0.25 from 2013-09-12 (8-K accepted 2013-09-11 17:25 ET).
+- **Adds nothing:** the Grandeur of the Seas fire 8-K of 2013-05-29 ("a reduction of $0.10 per share") and the investor-day slides of
+  2013-05-30 (the fire's $0.10 and about $0.08 of currency and fuel against the April guide), which restate no range (the WMT 2010 rule; the
+  July release later bridges them to $2.22); the Rolls-Royce settlement 8-K of 2010-01-11 (no per-share figure; the Q4 2009 release states
+  the $0.39); the Project Sunshine letter of intent (2011-02-11) and the ship-order, financing, notes, officer, director and
+  shareholder-agreement 8-Ks; the 10-Qs beyond the $0.12 dividend (the releases come first and carry every guide).
+- **Anachronism list:** Project Sunshine (from 2011-02-14; the 8-K was accepted 2011-02-11 16:28 ET, after the close) and Quantum-class
+  (2013-02-25) join `taxonomy_eras.json`; no model of any ticker contains them. RCL's source ids run to `RC50`.
+
+Controls: altering one value of each print from Q3 2009 (and each Q4 print's full-year EPS), guide (its EPS range, its next-quarter Net
+Yields and its fiscal-year constant-currency Net Yields), vintage, dividend and the Q2 2011 restatement changes no date before its
+publication and changes the first weekly date on or after it (CONTROLS_SUMMARY). A scan of the 314 models for the figures, notes, guides,
+texts and sources of every later print, guide, vintage and dividend finds none before its first publication (0 of 74,363 pairs); the only
+calendar year after a date outside an FY label is the Q3 2010 release's 2011 outlook, a forecast, on the ten dates from 2010-10-27 (which
+`retro_tool run` reports as a warning). The firewall plants a later restatement of every history year as well (`restates`, as for SHW and
+WMT) and passes at all 23 cutoffs above. No shared code changed (the firewall only gains the RCL plant), so no other ticker is rebuilt.
+
+Seen in the build (method behaviour, not tuned):
+- **Classes:** 2010 RICH 23, FAIR 12, CHEAP 17; 2011 CHEAP 24, FAIR 20, RICH 8; 2012 RICH 46, CHEAP 4, FAIR 2; 2013 RICH on all 53.
+  RICH in January 2010 (the FY09 anchor of $0.70, Ratio B infinite), from 2010-02-26 to 2010-04-29, from 2010-10-27 to 2011-01-21,
+  on 2011-02-11 and 2011-02-18 and from 2011-05-06 to 2011-05-20; CHEAP from 2010-05-21 to 2010-09-17 (but 2010-06-18), on 2011-06-10
+  and from 2011-07-29 to 2012-01-27 (27 dates); RICH from 2012-02-03 on every date but 2012-05-18 and 2012-06-01, and without a break
+  from 2012-06-08 to 2013-12-31 (83 dates). The legacy tier is AVOID on 142, WATCHLIST
+  on 32, ACCUMULATE on 26 and BUY on 9 (all in 2011). Robustness is 7-8 of 8 on 2013's dates, 3-8 of 8 in 2012.
+- **BEAR is now 2009** (-72.0%/yr, 2008's $2.68 to 2009's $0.75; -73.5% from 2011-07-28 on the revised $0.71) at the 10th-percentile
+  P/E: $1-3 a share, a 91-97% fall on every date from 2010-01-29. With the downside near-total everywhere, Ratio B moves with the upside
+  to BULL, so the class follows BASE: BULL is the decade CAGR or BASE where higher, and the decade CAGR (-11.7%/yr over 2000-2009 to
+  +5.4%/yr over 2002-2011) is under BASE on every date to 2012-07-20; from 2012-07-27 BULL is the decade CAGR (3.7-5.4%/yr) on 60 of 76
+  dates. XBULL is the 2003-2005 run (+46.1%/yr) until the Q4 2011 print adds 2011, then 2009-2011 (+97.5%/yr, $0.71 to $2.77).
+- **BASE follows capacity.** Net revenue guides of +9.2% (Q1 2010), +21.5% (Q2 2010, as published), +20.6% (Q3 2010), +13.5% (Q4 2010),
+  +11.3% to +12.4% (Q1 2011) and +7.4% to +11.6% (Q2 2011 to Q4 2011) carry capacity growth of 6-15%; with capacity at 0-2.5% from 2012
+  they fall to +5.9% to +9.7% (Q1-Q2 2012), -1.8% to -0.8% (Q3 2012), +2.0% to +4.6% (Q4 2012 to Q4 2013). BASE (with the negative buyback
+  term) runs from +19-20%/yr in mid-2010 to -1.8% to +3.9%/yr from 2012-07-27, and the price is above BULL on 2013-01-25 and on every
+  date from 2013-10-25 (Ratio B infinite on those 12 dates).
+- **The P/E window barely moves** (10th percentile 9.2-10.2x, median 13.9-14.6x, 90th 19.6-21.1x). On guided EPS the stock trades at
+  10.4-38.8x in 2010 (38.8x in January on FY09's $0.70), 7.5-20.4x in 2011, 9.3-18.6x in 2012 and 13.3-20.4x in 2013. The EPP floor
+  (the median of the calendar-year lows) is 8-9x to 2012 and 11x in 2013; the price is under it only on 2011-08-19, 2011-09-23,
+  2011-09-30 and 2011-10-07.
+- **The proxy composite** is 2.55 on Q4 2009, 3.05 on Q1 2010, 3.20 on Q2 and Q3 2010 (Net Yields +4.9% and +5.2%, Net Cruise Costs
+  down, revenue +17-19%, the operating margin +422-489bp), 2.85 on Q4 2010 and Q1 2011, 2.55 on Q2 2011, 2.70 on Q3 2011, 2.15 on Q4
+  2011, 2.00 on Q1 2012 (Net Cruise Costs +10.1% at BEAR, the margin -156bp), 2.15 on Q2 2012, 2.05 on Q3 2012, 2.25 on Q4 2012, 2.55
+  on Q1 2013 and 2.40 on Q2 and Q3 2013.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- operating income before the Q4 2012 impairment and the Q3 2013 restructuring: no class, no tier;
+- FY2012 at GAAP $0.08: 5 classes (2013-03-22 to 2013-04-12 and 2013-06-21, RICH to FAIR), no tier;
+- FY2010 without the $0.39 legal gain (a figure no filing publishes): 15 classes (April-June 2011 toward CHEAP or FAIR, eight dates
+  of March-July 2012 RICH to FAIR) and 13 tiers;
+- the Interest Expense Revision ignored until the FY2011 10-K: no class, 2 tiers;
+- the guides as reported (constant currency ignored): 17 classes (July-October 2010 and April-July 2011) and 18 tiers;
+- forward growth on Net Yields alone (capacity left out): 42 classes (29 in 2010, 13 in 2011, all toward FAIR or RICH) and 39 tiers;
+- every signal at BEAR: 58 classes (2010-01-29 to 2012-06-01, toward FAIR or RICH), no tier; every signal at XBULL: 9 classes (March-July
+  2012, RICH to FAIR), no tier; Net Cruise Costs per APCD at BASE: 12 classes (February 2010 FAIR to RICH, March-July 2012 RICH to
+  FAIR), no tier.
+The 83 RICH calls from 2012-06-08 hold under every variant but FY2012 at GAAP (5 dates of 2013) and three that move 3-4 dates of June-July
+2012 (FY2010 without the gain, every signal at XBULL, Net Cruise Costs at BASE); the 27 CHEAP calls of 2011-07-29 to 2012-01-27 hold
+under all but forward growth on Net Yields alone (2 dates) and every signal at BEAR (11 dates). Capacity in BASE is the call that moves
+most, all in 2010-2011.
+
+Judgement calls that could carry hindsight (beyond the 2008-2009 list):
+- the company's FY2012 EPS before the Pullmantur impairment (5 classes move at GAAP), and the FY2010 legal gain kept (15 move without it);
+- the Interest Expense Revision applied from the release that published it (no class moves);
+- the Q3 2013 adjusted-EPS guide read as the company's figure excluding an item; the operating margins kept after the impairment and
+  restructuring (no class moves);
+- the May 2013 per-share impacts read as no guide, as the June 2009 ones were;
+- the net revenue implied by Net Yields and capacity as method r2's revenue guide, now the largest lever (42 classes on Net Yields alone).
 
 ## Categories change with the era
 

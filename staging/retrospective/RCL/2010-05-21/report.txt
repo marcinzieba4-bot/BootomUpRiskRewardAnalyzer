@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  RCL  ·  Royal Caribbean Cruises Ltd.  ·  $28.34  ·  RETROSPECTIVE as of 2010-05-21
+  Signal: ◐ WATCHLIST   Ratio B: 1.16x   Adj gap: +1.33  [UNDERVALUED]
+  Point-in-time: 16 sources, latest published 2010-05-21; latest print Q1 2010 (Apr 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2010E revenues, USD bn  →  FY2012E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2010E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Passenger ticket revenue  $     4.9  $   4.9  $   5.7      +0.0      +0.8
+    -11.1% in FY09
+  Onboard and other revenu  $     2.0  $   2.0  $   2.3      +0.0      +0.3
+    -6.6% in FY09
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     6.9  $   6.9  $   8.0      +0.0      +1.1
+  FY2010E = FY09 $5.89B × (1 + 16.5%: FY10 net revenue guide, applied to total revenues); split pro rata to FY09 revenues by type (FY2009 10-K; one reportable segment)
+  Q1 2010 (Apr 28): total revenues $1.49B +12.1%; Net Yields $153.12 (+2.6%); Net Cruise Costs $119.22 per APCD (-2.2%);
+  capacity +9.1%; occupancy 103.1% (+190bp); operating margin 6.18% (+283.8bp); EPS $0.40 vs -$0.17
+  Net Yields: 'Net Yields improved 2.6%'; Net Cruise Costs: 'NCC in the first quarter of 2010 decreased 2.2% from the prior year'; capacity +9.1%; EPS 'The results included a $0.39 per share gain from a previously announced legal settlement'; no figure excluding it
+  FY10 guide (Q4 2009 release, Q1 2010 release): EPS $2.15-2.25; Net Yields +4-5%; capacity +11.5%; Net Cruise Costs per APCD Flat – down slightly, excluding fuel Approx. (1%); fuel expenses $678 Million; Q2 2010: Net Yields +6%, capacity +14.6%, EPS $0.16-0.21; no estimate after adjusting for currency in this release; the EPS range reflects 'the recent travel disruptions in Europe'
+
+  FY2010E EPS check:  ($6.9B × 8.29% − $0.33B other) × (1−0.0%) ÷ 0.217B  =  $1.13  (FY2010E EPS, guide midpoint $2.20)
+  FY2012E BEAR check: ($6.9B × 8.29% − other) ÷ 0.222B  =  $1.11  (scenario $0.17)
+  FY2012E BULL check: ($8.0B × 8.69% − other) ÷ 0.222B  =  $1.66  (scenario $3.18)
+  Every 1pp of operating margin ≈ $0.32 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net Yields change                  -20.0%   ≥-9.0%    ≥1.0%    ≥9.0%     +2.6%  ▲ BULL  ███░
+  Net Cruise Costs per APCD           +7.0%    ≤6.0%    ≤6.0%   ≤-2.0%     -2.2%  ★ XBULL  ████
+  Total revenue growth               -17.0%   ≥-3.0%   ≥10.0%   ≥43.0%    +12.1%  ▲ BULL  ███░
+  Occupancy change                  -560.0bp  ≥-260.0bp  ≥40.0bp  ≥290.0bp  +190.0bp  ▲ BULL  ███░
+  Operating margin change           -1140.0bp  ≥-540.0bp  ≥70.0bp  ≥290.0bp  +283.8bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.05 / 4.00
+  Market composite:   1.89 / 4.00  (back-solved from $28 + 15% hurdle)
+  SCA adjustment:    +0.28  ·  EPP-distance adj -0.10  →  Adj composite 3.22  →  Gap +1.33  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY09 Net Yields -14.2% on capacity +5.1%, occupancy 102.5%; Q1 2010 Net Yields +2.6%, occupancy 103.1%  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.9x FY10E vs a 14.0x 10-yr median (38th percentile of its own range)  (+0.20 × 25%  =  +0.050)
+    +  Growth vs own history: Q2 2010 net revenue guide +21.48% vs a 9.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY09 year-end cash $0.285B, FY09 free cash flow -$1.63B, dividend $0.00 a year, no share repurchases in 2009; no dividend since the fourth quarter of 2008  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net Yields change                    +2.6%    -20.0%  -22.6%  Close-in discounting to fill ships
+  Net Cruise Costs per APCD            -2.2%     +7.0%   +9.2%  Fuel and running costs outrun yields
+  Total revenue growth                +12.1%    -17.0%  -29.1%  New ships sail into falling prices
+  Occupancy change                  +190.0bp  -560.0bp  -750.0bp  Load factors slip as bookings come later
+  Operating margin change           +283.8bp  -1140.0bp  -1423.8bp  Ship costs deleverage on lower yields
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$15  (model)  /  $2 (defined)
+  Bear probability (proxy model):  4.4%
+
+  KEY TRIGGER: Net Yields went from -7.2% (Q4 2009) to +2.6% (Q1 2010);
+  the bear case needs a demand recession that cost control (Net Cruise Costs per APCD
+  -2.2% now) no longer covers. Demand follows the economies the ships sell into, by the company's own
+  account; the bear needs yields to fall faster than running costs can be cut.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.20  (FY2010E EPS, guide midpoint)
+  Min viable P/E at panic:          8x  [median of calendar-year P/E lows: 2000 7.5x, 2001 5.1x, 2002 8.3x, 2003 8.9x, 2004 15.5x, 2005 13.0x, 2006 11.1x, 2007 12.8x, 2008 2.5x, 2009 7.3x, 2010 11.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $18/share
+  Current $28 vs Updated EPP $18:  +61%  ⚠ far above floor — large drawdown room
+  Bear $2 vs Updated EPP $18:  -89%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net Yields change                           -9.0      -11.6   BASE floor (vs +3 now)
+  Net Cruise Costs per APCD                    6.0       +8.2   BASE floor (vs -2 now)
+  Total revenue growth                        -3.0      -15.1   BASE floor (vs +12 now)
+  Occupancy change                          -260.0     -450.0   BASE floor (vs +190 now)
+  Operating margin change                   -540.0     -823.8   BASE floor (vs +284 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.20 × (1+18.3%)² = $3.08
+  At 14x P/E (conservative):  $43/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $43  (▲15 from $28)
+  Conservative total return:  +52% over 2yr  = +26%/yr
+
+  At 12.9x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2012E EPS of $2.02,
+  i.e. -4.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $11.80  –  $38.12  (at 63th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   58% annualized
+  Beta vs broad market: 2.37
+  1-sigma range (1yr):  $12  –  $45  ($28 ± 58%)
+  2-sigma range (1yr):  $-4  –  $61
+  ────────────────────────────────────────────────────────────
+  Bear $2 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A cruise company with a 2.4 beta: the stock is +133% off its July
+  low while Net Yields went from -7.2% (Q4 2009) to +2.6% (Q1 2010).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.17   9.2x  $      2     4.4%     23.6%   -19.2pp  EPS -72.0%/yr (worst year FY00-FY09, capped at 0%); P/E to its 10th pct
+  BASE        3.18  14.0x  $     45    15.2%     57.0%   -41.8pp  EPS +20.3%/yr (Q2 guide + margin + buyback); P/E at its 10-yr median
+  BULL        3.18  16.1x  $     51    53.1%     16.3%   +36.8pp  EPS +20.3%/yr (FY00-FY09 CAGR); P/E holds its 75th pct
+  XBULL       4.69  20.7x  $     97    27.3%      3.1%   +24.2pp  EPS +46.1%/yr (best 2-yr run FY00-FY09); P/E at its 90th pct
+
+  Proxy EV (2yr): $60  /  Market EV: $37  /  Current: $28
+  Conservative EV (2yr, ④): $43 + $0.00 divs = $43 total value
+  Downside (→ Bear $2): 92.9%   Upside (→ Bull $51): 80.0%   Ratio B 1.16x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $28 the market needs $37 in two years —
+  at or below the BASE case. That is a market composite of 1.89 against a model
+  read of 3.22: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.16x     +61%    +1.33  UNDERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.70x     +61%    +1.53  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.64x     +61%    +0.91  UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          1.07x     +61%    +1.36  UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.22x     +61%    +1.27  UNDERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.16x     +61%    +1.64  UNDERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.16x     +17%    +1.43  UNDERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.16x     +61%    +1.43  UNDERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2010 print (late July) — the next read on Net Yields (+2.6% now) and the guide
+  (2) Occupancy — 103.1% in Q1 2010 (+190bp): whether the ships fill without deeper discounts
+  (3) FY10 EPS guide $2.15-2.25 (Q1 2010 release)
+  (4) Net Cruise Costs per APCD — -2.2% in Q1 2010: fuel and running costs against yields
+  (5) Capital return at 13x — no dividend; no share repurchases; As of March 31, 2010 liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility: management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $18  |  ADD below ~$38  |  TRIM above $51
+════════════════════════════════════════════════════════════════════════
+
