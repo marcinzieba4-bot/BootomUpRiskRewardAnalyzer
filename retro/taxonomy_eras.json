@@ -1146,6 +1146,61 @@
     "term": "Flipkart",
     "first_seen": "2018-05-09",
     "note": "the Indian e-commerce company Walmart agreed to acquire a majority of; first in a Walmart filing in its 8-K of 2018-05-09 (accepted 07:04 ET, before the open)"
+   },
+   {
+    "term": "TUI Cruises",
+    "first_seen": "2008-02-19",
+    "note": "Royal Caribbean's German joint venture; first in a Royal Caribbean filing in its FY2007 10-K (accepted 2008-02-19 07:25 ET, before the open)"
+   },
+   {
+    "term": "Oasis of the Seas",
+    "first_seen": "2008-07-28",
+    "note": "the first Oasis-class ship (ordered as Project Genesis); first in a Royal Caribbean filing in its Q2 2008 10-Q (accepted 2008-07-25 16:17 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Allure of the Seas",
+    "first_seen": "2008-07-28",
+    "note": "the second Oasis-class ship; first in a Royal Caribbean filing in its Q2 2008 10-Q (accepted 2008-07-25 16:17 ET, after the close)"
+   },
+   {
+    "term": "Oasis-class",
+    "first_seen": "2008-07-28",
+    "note": "Royal Caribbean International's ship class formerly called Project Genesis; first in a Royal Caribbean filing in its Q2 2008 10-Q (accepted 2008-07-25 16:17 ET, after the close)"
+   },
+   {
+    "term": "Celebrity Silhouette",
+    "first_seen": "2010-02-24",
+    "note": "the fourth Solstice-class ship; first in a Royal Caribbean filing in its FY2009 10-K (accepted 2010-02-23 16:36 ET, after the close)"
+   },
+   {
+    "term": "Celebrity Reflection",
+    "first_seen": "2010-10-28",
+    "note": "the fifth Solstice-class ship; first in a Royal Caribbean filing in its Q3 2010 10-Q (accepted 2010-10-27 16:35 ET, after the close)"
+   },
+   {
+    "term": "Quantum of the Seas",
+    "first_seen": "2013-02-25",
+    "note": "the first Quantum-class ship; first in a Royal Caribbean filing in its FY2012 10-K (accepted 2013-02-25 08:01 ET, before the open)"
+   },
+   {
+    "term": "Celebrity Edge",
+    "first_seen": "2017-02-24",
+    "note": "the first Edge-class ship; first in a Royal Caribbean filing in its FY2016 10-K (accepted 2017-02-23 17:29 ET, after the close)"
+   },
+   {
+    "term": "Silversea",
+    "first_seen": "2018-06-14",
+    "note": "the luxury cruise line Royal Caribbean agreed to acquire a majority of; first in a Royal Caribbean filing in its 8-K of 2018-06-14 (accepted 07:05 ET, before the open)"
+   },
+   {
+    "term": "Perfect Day at CocoCay",
+    "first_seen": "2018-10-25",
+    "note": "Royal Caribbean's private-island destination; first in a Royal Caribbean filing in its Q3 2018 earnings 8-K (accepted 2018-10-25 08:39 ET, before the open)"
+   },
+   {
+    "term": "Icon of the Seas",
+    "first_seen": "2021-08-05",
+    "note": "the first Icon-class ship; first in a Royal Caribbean filing in its Q2 2021 10-Q (accepted 2021-08-05 09:01 ET, during the session)"
    }
   ]
  }

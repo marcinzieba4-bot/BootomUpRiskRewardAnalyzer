@@ -1,0 +1,2098 @@
+{
+ "_doc": "Point-in-time fact sheet for RCL retrospectives (retro/build_rcl.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it; a next-quarter guide while its quarter is unreported) and the latest declared dividend. Royal Caribbean's fiscal year is the calendar year. Each release guides the next quarter and the year: diluted EPS, capacity (APCD) and Net Yields in numbers (approximate figures and single points as published; 'Flat' is 0), from the Q1 2009 release also Net Yields on a constant dollar basis ('ny_cc'); Net Cruise Costs and fuel are shown and feed nothing. A print's values are derived from the raw figures of its release ('raw', thousands; APCD in days; the 2007 releases print their statements as images, so the figures are the same quarter's 10-Q, 'extra_sources'): Net Yields are total revenues less commissions, transportation and other and onboard and other expenses per APCD, Net Cruise Costs are total cruise operating expenses plus marketing, selling and administrative expenses less the same two lines, per APCD, each against the year-ago quarter in the same release; the builder re-derives them and checks them against the release's stated changes ('ny_stated_pct', 'ncc_stated_pct'). rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "RCL",
+ "sources": {
+  "RC1": {
+   "published": "1999-04-02",
+   "filed": "1999-04-02 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY1998 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-99-004018.txt",
+   "supports": "selected statistical information 1996-1998 (occupancy 101.3%, 104.2%, 105.2%)"
+  },
+  "RC2": {
+   "published": "2000-04-04",
+   "filed": "2000-04-04 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY1999 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-00-004542.txt",
+   "supports": "selected statistical information 1997-1999 (occupancy 104.2%, 105.2%, 104.7%)"
+  },
+  "RC3": {
+   "published": "2001-04-17",
+   "filed": "2001-04-17 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY2000 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014401500838/g67041e20-f.txt",
+   "supports": "selected financial data 1996-2000 (revenues, operating income)"
+  },
+  "RC4": {
+   "published": "2002-04-08",
+   "filed": "2002-04-08 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY2001 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014402003619/g75173e20-f.htm",
+   "supports": "selected financial data 1997-2001 (revenues, operating income; 1997 diluted income before extraordinary item $1.20 and 152,174K diluted shares)"
+  },
+  "RC5": {
+   "published": "2003-03-25",
+   "filed": "2003-03-24 17:29 ET, after the close",
+   "title": "Royal Caribbean FY2002 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014403003650/g80869e20vf.htm",
+   "supports": "selected financial data 1998-2002 (revenues, operating income, 1998 diluted shares 181,165K); occupancy 1998-2002; 'Net yields for 2001 declined 9.1% from the prior year'"
+  },
+  "RC6": {
+   "published": "2004-03-16",
+   "filed": "2004-03-15 17:06 ET, after the close",
+   "title": "Royal Caribbean FY2003 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488704000004/annualreport2.htm",
+   "supports": "selected financial data 1999-2003 (total revenues, operating income, 1999 diluted shares 186,456K); occupancy 1999-2003; 2002 Net Yields -0.7% and Net Cruise Costs per APCD -2.2%"
+  },
+  "RC7": {
+   "published": "2005-03-15",
+   "filed": "2005-03-14 17:14 ET, after the close",
+   "title": "Royal Caribbean FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488705000004/file10k.htm",
+   "supports": "selected financial data 2000-2004 (diluted EPS $2.31 for 2000); occupancy 2000-2004; Net Revenues, Net Cruise Costs and APCD 2002-2004"
+  },
+  "RC8": {
+   "published": "2006-02-24",
+   "filed": "2006-02-24 09:37 ET, during the session",
+   "title": "Royal Caribbean FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488706000003/form10k2005.htm",
+   "supports": "selected financial data 2001-2005; occupancy 2001-2005; Net Revenues, Net Cruise Costs and APCD 2003-2005"
+  },
+  "RC9": {
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:17 ET, after the close",
+   "title": "Royal Caribbean FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000043/form10kfinal.htm",
+   "supports": "selected financial data 2002-2006 (total revenues, operating income, diluted EPS before the cumulative effect of a change in accounting principle, diluted shares); occupancy 2002-2006; Net Revenues, Net Cruise Costs and APCD 2004-2006; revenues by type; the $0.15 quarterly dividend; Item 1 and Item 1A wording"
+  },
+  "RC10": {
+   "published": "2000-02-04",
+   "filed": "2000-02-04 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean Q4 1999 results (6-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-00-001476.txt",
+   "supports": "'Since both years experienced non-recurring items, comparable EPS was $2.15 in 1999 versus $1.93 in 1998'"
+  },
+  "RC11": {
+   "published": "2003-01-31",
+   "filed": "2003-01-30 16:25 ET, after the close",
+   "title": "Royal Caribbean Q4 2002 results (6-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488703000002/jan3003press.txt",
+   "supports": "2002 'Excluding the impact of these items, net income for 2002 would have been $338.3 million, or $1.72 per share'; 'The comparable figures for 2001 were $318.9 million, or $1.65 per share'"
+  },
+  "RC12": {
+   "published": "2007-02-05",
+   "filed": "2007-02-05 10:15 ET, during the session",
+   "title": "Royal Caribbean Q4 2006 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000016/fourthquarterprfinal.htm",
+   "supports": "2007 outlook: EPS $3.05 to $3.20, Net Yields in a range around 3%, capacity 12.2%; Q1 2007 Net Yields down in a range around 3%"
+  },
+  "RC13": {
+   "published": "2007-05-01",
+   "filed": "2007-05-01 11:51 ET, during the session",
+   "title": "Royal Caribbean Q1 2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000066/form8kprq107.htm",
+   "supports": "full year and Q2 2007 estimates (capacity, Net Yields, EPS)"
+  },
+  "RC14": {
+   "published": "2007-07-26",
+   "filed": "2007-07-26 09:10 ET, before the open",
+   "title": "Royal Caribbean Q2 2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000085/form8kpr.htm",
+   "supports": "Q2 2007 results (statements as images); full year and Q3 2007 estimates"
+  },
+  "RC15": {
+   "published": "2007-07-26",
+   "filed": "2007-07-26 15:26 ET, during the session",
+   "title": "Royal Caribbean Q2 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000087/form10q2q07.htm",
+   "supports": "Q2 2007 statement of operations, Net Yields, Net Cruise Costs and occupancy in text (the release prints them as images)"
+  },
+  "RC16": {
+   "published": "2007-10-22",
+   "filed": "2007-10-22 09:34 ET, during the session",
+   "title": "Royal Caribbean Q3 2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000103/pressrelease20071022.htm",
+   "supports": "Q3 2007 results (statements as images); full year and Q4 2007 estimates"
+  },
+  "RC17": {
+   "published": "2007-10-23",
+   "filed": "2007-10-22 17:30 ET, after the close",
+   "title": "Royal Caribbean Q3 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000105/form10q3qtr07.htm",
+   "supports": "Q3 2007 statement of operations, Net Yields, Net Cruise Costs and occupancy in text (the release prints them as images)"
+  },
+  "RC18": {
+   "published": "2008-01-30",
+   "filed": "2008-01-30 10:22 ET, during the session",
+   "title": "Royal Caribbean Q4 2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488708000006/pressrelease20080130.htm",
+   "supports": "Q4 and full year 2007 results; 2008 and Q1 2008 estimates"
+  },
+  "RC19": {
+   "published": "2008-02-19",
+   "filed": "2008-02-19 07:25 ET, before the open",
+   "title": "Royal Caribbean FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488708000067/final10k07.htm",
+   "supports": "selected financial data 2003-2007; occupancy 2003-2007; revenues by type; the $0.15 quarterly dividend; Item 1 and Item 1A wording"
+  },
+  "RC20": {
+   "published": "2008-04-24",
+   "filed": "2008-04-24 08:59 ET, before the open",
+   "title": "Royal Caribbean Q1 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488708000096/pressrelease20080424.htm",
+   "supports": "Q1 2008 results; 2008 and Q2 2008 estimates"
+  },
+  "RC21": {
+   "published": "2008-07-22",
+   "filed": "2008-07-21 18:30 ET, after the close",
+   "title": "Royal Caribbean Q2 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488708000115/pr20080721exh991.htm",
+   "supports": "Q2 2008 results; 2008 and Q3 2008 estimates"
+  },
+  "RC22": {
+   "published": "2008-10-28",
+   "filed": "2008-10-28 09:06 ET, before the open",
+   "title": "Royal Caribbean Q3 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014408007827/g16271exv99w1.htm",
+   "supports": "Q3 2008 results; 2008 and Q4 2008 estimates"
+  },
+  "RC23": {
+   "published": "2008-11-19",
+   "filed": "2008-11-18 16:12 ET, after the close",
+   "title": "Royal Caribbean discontinues its dividend (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488708000140/pr20081118exh991form.htm",
+   "supports": "'decided today to discontinue the company’s common stock dividend'"
+  },
+  "RC24": {
+   "published": "2009-01-29",
+   "filed": "2009-01-29 08:44 ET, before the open",
+   "title": "Royal Caribbean Q4 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000005/exh99pr20090129.htm",
+   "supports": "Q4 and full year 2008 results; 2009 and Q1 2009 estimates"
+  },
+  "RC25": {
+   "published": "2009-02-24",
+   "filed": "2009-02-24 07:33 ET, before the open",
+   "title": "Royal Caribbean FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000119312509035629/d10k.htm",
+   "supports": "selected financial data 2004-2008; occupancy 2004-2008; revenues by type; the discontinued dividend; Item 1 and Item 1A wording"
+  },
+  "RC26": {
+   "published": "2009-04-23",
+   "filed": "2009-04-23 09:41 ET, during the session",
+   "title": "Royal Caribbean Q1 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000106/exh991er1q2009b.htm",
+   "supports": "Q1 2009 results; 2009 and Q2 2009 estimates, as reported and on a constant dollar basis"
+  },
+  "RC27": {
+   "published": "2009-07-29",
+   "filed": "2009-07-29 08:55 ET, before the open",
+   "title": "Royal Caribbean Q2 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000131/pr20090729final1d.htm",
+   "supports": "Q2 2009 results; 2009 and Q3 2009 estimates, as reported and on a constant dollar basis"
+  },
+  "RC28": {
+   "published": "2009-11-03",
+   "filed": "2009-11-03 08:46 ET, before the open",
+   "title": "Royal Caribbean Q3 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000142/exh991q3pr.htm",
+   "supports": "Q3 2009 results; 2009 and Q4 2009 estimates"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-01",
+   "sources": [
+    "RC11",
+    "RC10",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY06",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_gaap": {
+    "1997": 1.15,
+    "1998": 1.83,
+    "1999": 2.06,
+    "2000": 2.31,
+    "2001": 1.31,
+    "2002": 1.76,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94
+   },
+   "eps_normalized": {
+    "1997": 1.2,
+    "1998": 1.93,
+    "1999": 2.15,
+    "2000": 2.31,
+    "2001": 1.65,
+    "2002": 1.72,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94
+   },
+   "eps_sources": {
+    "1997": "RC4 (income before extraordinary item; $1.15 after the $.05 extraordinary loss)",
+    "1998": "RC10 (the company's comparable EPS; GAAP $1.83: RC5)",
+    "1999": "RC10 (the company's comparable EPS; GAAP $2.06: RC6)",
+    "2000": "RC7",
+    "2001": "RC11 (the company's comparable figure; GAAP $1.31 after EITF 04-8: RC8)",
+    "2002": "RC11 (the company's figure excluding the merger termination proceeds and the litigation charge; GAAP $1.76 after EITF 04-8: RC9)",
+    "2003": "RC9",
+    "2004": "RC9",
+    "2005": "RC9 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC9"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 1998 $1.93 and 1999 $2.15 ('comparable EPS', Q4 1999 release), 2001 $1.65 ('The comparable figures for 2001', excluding the effects of September 11 and ships out of service) and 2002 $1.72 (excluding the P&O Princess termination proceeds and the litigation charge), both from the Q4 2002 release, on the basis before EITF 04-8 restated GAAP (the UNP 2005 rule); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1997": 1.939007,
+    "1998": 2.636291,
+    "1999": 2.546152,
+    "2000": 2.865846,
+    "2001": 3.14525,
+    "2002": 3.434347,
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584
+   },
+   "revenue_sources": {
+    "1997": "RC4",
+    "1998": "RC5",
+    "1999": "RC6",
+    "2000": "RC7",
+    "2001": "RC8",
+    "2002": "RC9",
+    "2003": "RC9",
+    "2004": "RC9",
+    "2005": "RC9",
+    "2006": "RC9"
+   },
+   "diluted_shares_m": {
+    "1997": 152.174,
+    "2006": 221.485
+   },
+   "shares_sources": {
+    "1997": "RC4",
+    "2006": "RC9"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 34 cruise ships with approximately 67,550 berths'; 'We compete principally on the basis of quality of ships, quality of service, variety of itineraries and price'; 'We may lose business to competitors throughout the vacation market'; and 'Demand for cruises has been and is expected to continue to be dependent on the strength of the economies in the countries in which we market our products, the public’s attitude towards the safety of travel and the geo-political climate' (its own FY2006 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 16.42,
+   "prev_fy_op_margin_note": "FY06 operating income $858,446K / total revenues $5,229,584K (FY2006 10-K)",
+   "prev_fy_sales_growth": 6.7,
+   "prev_fy_ny_pct": 3.41,
+   "prev_fy_ncc_pct": 6.44,
+   "prev_fy_occupancy": 106.5,
+   "prev_fy_capacity_pct": 3.0,
+   "prev_fy_fleet": "34 cruise ships with approximately 67,550 berths",
+   "vintage_raw": {
+    "opinc_k": 858446,
+    "rev_k": 5229584,
+    "rev_prior_k": 4903174,
+    "net_rev_k": 3980437,
+    "net_rev_prior_k": 3735957,
+    "ncc_k": 2700346,
+    "ncc_prior_k": 2462323,
+    "apcd": 22392478,
+    "apcd_prior": 21733724,
+    "other_k": -224524,
+    "cash_k": 104520,
+    "cfo_k": 948506,
+    "capex_k": 1180579
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.2245,
+   "other_expense_note": "FY06 other income (expense), net of interest, $-224,524K (FY2006 10-K)",
+   "fcf_b": -0.232,
+   "fcf_label": "FY06",
+   "fcf_note": "net cash provided by operating activities $948,506K less purchases of property and equipment $1,180,579K",
+   "cash_b": 0.105,
+   "cash_note": "cash and cash equivalents $104,520K at December 31, 2006",
+   "prev_q_ny": null,
+   "prev_q_label": "Q1 2007",
+   "dividend_annual": 0.6,
+   "dividend_note": "$0.15 a quarter ('We declared cash dividends on our common stock of $0.15 per share in each of the quarters of 2006', FY2006 10-K)",
+   "cash_return_text": "4.6 million shares purchased in 2006 at $35.99 under an accelerated share repurchase, to offset the conversion of zero coupon convertible notes",
+   "business_line": "Royal Caribbean International, Celebrity Cruises and Pullmantur (34 ships, about 67,550 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     3.838648,
+     6.3
+    ],
+    [
+     "Onboard and other revenues",
+     1.390936,
+     7.5
+    ]
+   ],
+   "groups_basis": "FY06 revenues by type (FY2006 10-K; one reportable segment)"
+  },
+  {
+   "published": "2008-02-19",
+   "sources": [
+    "RC19",
+    "RC11",
+    "RC10",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_gaap": {
+    "1998": 1.83,
+    "1999": 2.06,
+    "2000": 2.31,
+    "2001": 1.31,
+    "2002": 1.76,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94,
+    "2007": 2.82
+   },
+   "eps_normalized": {
+    "1998": 1.93,
+    "1999": 2.15,
+    "2000": 2.31,
+    "2001": 1.65,
+    "2002": 1.72,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94,
+    "2007": 2.82
+   },
+   "eps_sources": {
+    "1998": "RC10 (the company's comparable EPS; GAAP $1.83: RC5)",
+    "1999": "RC10 (the company's comparable EPS; GAAP $2.06: RC6)",
+    "2000": "RC7",
+    "2001": "RC11 (the company's comparable figure; GAAP $1.31 after EITF 04-8: RC8)",
+    "2002": "RC11 (the company's figure excluding the merger termination proceeds and the litigation charge; GAAP $1.76 after EITF 04-8: RC9)",
+    "2003": "RC19",
+    "2004": "RC19",
+    "2005": "RC19 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC19",
+    "2007": "RC19"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 1998 $1.93 and 1999 $2.15 ('comparable EPS', Q4 1999 release), 2001 $1.65 ('The comparable figures for 2001', excluding the effects of September 11 and ships out of service) and 2002 $1.72 (excluding the P&O Princess termination proceeds and the litigation charge), both from the Q4 2002 release, on the basis before EITF 04-8 restated GAAP (the UNP 2005 rule); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1998": 2.636291,
+    "1999": 2.546152,
+    "2000": 2.865846,
+    "2001": 3.14525,
+    "2002": 3.434347,
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584,
+    "2007": 6.149139
+   },
+   "revenue_sources": {
+    "1998": "RC5",
+    "1999": "RC6",
+    "2000": "RC7",
+    "2001": "RC8",
+    "2002": "RC9",
+    "2003": "RC19",
+    "2004": "RC19",
+    "2005": "RC19",
+    "2006": "RC19",
+    "2007": "RC19"
+   },
+   "diluted_shares_m": {
+    "1998": 181.165,
+    "2007": 214.255
+   },
+   "shares_sources": {
+    "1998": "RC5",
+    "2007": "RC19"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 35 ships in the cruise vacation industry with approximately 71,200 berths as of December 31, 2007'; 'We compete principally on the basis of quality of ships, quality of service, variety of itineraries and price'; 'We may lose business to competitors throughout the vacation market'; and 'Demand for cruises has been and is expected to continue to be dependent on the strength of the economies in the countries in which we market our products, the public’s attitude towards the safety of travel and the geo-political climate ... For instance, the current weakening of the U.S. economy and the tighter credit markets could have an adverse effect on vacationers’ discretionary income and consumer confidence' (its own FY2007 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 14.66,
+   "prev_fy_op_margin_note": "FY07 operating income $901,335K / total revenues $6,149,139K (FY2007 10-K)",
+   "prev_fy_sales_growth": 17.6,
+   "prev_fy_ny_pct": 3.31,
+   "prev_fy_ncc_pct": 6.64,
+   "prev_fy_occupancy": 105.7,
+   "prev_fy_capacity_pct": 12.3,
+   "prev_fy_fleet": "35 ships in the cruise vacation industry with approximately 71,200 berths as of December 31, 2007",
+   "vintage_raw": {
+    "opinc_k": 901335,
+    "rev_k": 6149139,
+    "rev_prior_k": 5229584,
+    "net_rev_k": 4619480,
+    "net_rev_prior_k": 3980437,
+    "ncc_k": 3235079,
+    "ncc_prior_k": 2700346,
+    "apcd": 25155768,
+    "apcd_prior": 22392478,
+    "other_k": -297930,
+    "cash_k": 230784,
+    "cfo_k": 1268694,
+    "capex_k": 1317381
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.2979,
+   "other_expense_note": "FY07 other income (expense), net of interest, $-297,930K (FY2007 10-K)",
+   "fcf_b": -0.049,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $1,268,694K less purchases of property and equipment $1,317,381K",
+   "cash_b": 0.231,
+   "cash_note": "cash and cash equivalents $230,784K at December 31, 2007",
+   "prev_q_ny": null,
+   "prev_q_label": "Q3 2007",
+   "dividend_annual": 0.6,
+   "dividend_note": "$0.15 a quarter ('We declared cash dividends on our common stock of $0.15 per share in each of the quarters of 2007 and 2006', FY2007 10-K)",
+   "cash_return_text": "no share repurchases in 2007",
+   "business_line": "Royal Caribbean International, Celebrity Cruises, Pullmantur, Azamara Cruises and CDF Croisières de France (35 ships, about 71,200 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     4.427384,
+     15.3
+    ],
+    [
+     "Onboard and other revenues",
+     1.721755,
+     23.8
+    ]
+   ],
+   "groups_basis": "FY07 revenues by type (FY2007 10-K; one reportable segment)"
+  },
+  {
+   "published": "2009-02-24",
+   "sources": [
+    "RC25",
+    "RC19",
+    "RC11",
+    "RC10",
+    "RC9",
+    "RC8",
+    "RC7",
+    "RC6",
+    "RC5",
+    "RC4",
+    "RC3",
+    "RC2",
+    "RC1"
+   ],
+   "company": "Royal Caribbean Cruises Ltd.",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_gaap": {
+    "1999": 2.06,
+    "2000": 2.31,
+    "2001": 1.31,
+    "2002": 1.76,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.26,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68
+   },
+   "eps_normalized": {
+    "1999": 2.15,
+    "2000": 2.31,
+    "2001": 1.65,
+    "2002": 1.72,
+    "2003": 1.42,
+    "2004": 2.26,
+    "2005": 3.03,
+    "2006": 2.94,
+    "2007": 2.82,
+    "2008": 2.68
+   },
+   "eps_sources": {
+    "1999": "RC10 (the company's comparable EPS; GAAP $2.06: RC6)",
+    "2000": "RC7",
+    "2001": "RC11 (the company's comparable figure; GAAP $1.31 after EITF 04-8: RC8)",
+    "2002": "RC11 (the company's figure excluding the merger termination proceeds and the litigation charge; GAAP $1.76 after EITF 04-8: RC9)",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC25 (before the cumulative effect of a change in accounting principle ($3.26 after it))",
+    "2006": "RC25",
+    "2007": "RC25",
+    "2008": "RC25"
+   },
+   "normalization": "diluted EPS before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 1998 $1.93 and 1999 $2.15 ('comparable EPS', Q4 1999 release), 2001 $1.65 ('The comparable figures for 2001', excluding the effects of September 11 and ships out of service) and 2002 $1.72 (excluding the P&O Princess termination proceeds and the litigation charge), both from the Q4 2002 release, on the basis before EITF 04-8 restated GAAP (the UNP 2005 rule); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1999": 2.546152,
+    "2000": 2.865846,
+    "2001": 3.14525,
+    "2002": 3.434347,
+    "2003": 3.784249,
+    "2004": 4.555375,
+    "2005": 4.903174,
+    "2006": 5.229584,
+    "2007": 6.149139,
+    "2008": 6.532525
+   },
+   "revenue_sources": {
+    "1999": "RC6",
+    "2000": "RC7",
+    "2001": "RC8",
+    "2002": "RC9",
+    "2003": "RC19",
+    "2004": "RC25",
+    "2005": "RC25",
+    "2006": "RC25",
+    "2007": "RC25",
+    "2008": "RC25"
+   },
+   "diluted_shares_m": {
+    "1999": 186.456,
+    "2008": 214.195
+   },
+   "shares_sources": {
+    "1999": "RC6",
+    "2008": "RC25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 38 ships in the cruise vacation industry with approximately 78,650 berths as of December 31, 2008'; 'We compete principally on the basis of quality of ships, quality of service, variety of itineraries and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic conditions. The current worldwide economic downturn has had an adverse effect on vacationers’ discretionary income and consumer confidence which has resulted in cruise booking slowdowns, decreased cruise prices and lower onboard revenues for us and for the others in the cruise industry' (its own FY2008 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+   "prev_fy_op_margin": 12.74,
+   "prev_fy_op_margin_note": "FY08 operating income $831,984K / total revenues $6,532,525K (FY2008 10-K)",
+   "prev_fy_sales_growth": 6.2,
+   "prev_fy_ny_pct": 0.46,
+   "prev_fy_ncc_pct": 3.71,
+   "prev_fy_occupancy": 104.5,
+   "prev_fy_capacity_pct": 5.2,
+   "prev_fy_fleet": "38 ships in the cruise vacation industry with approximately 78,650 berths as of December 31, 2008",
+   "vintage_raw": {
+    "opinc_k": 831984,
+    "rev_k": 6532525,
+    "rev_prior_k": 6149139,
+    "net_rev_k": 4881824,
+    "net_rev_prior_k": 4619480,
+    "ncc_k": 3529487,
+    "ncc_prior_k": 3235079,
+    "apcd": 26463637,
+    "apcd_prior": 25155768,
+    "other_k": -258262,
+    "cash_k": 402878,
+    "cfo_k": 1071255,
+    "capex_k": 2223534
+   },
+   "tax_rate": 0.0,
+   "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+   "other_expense_b": 0.2583,
+   "other_expense_note": "FY08 other income (expense), net of interest, $-258,262K (FY2008 10-K)",
+   "fcf_b": -1.152,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $1,071,255K less purchases of property and equipment $2,223,534K",
+   "cash_b": 0.403,
+   "cash_note": "cash and cash equivalents $402,878K at December 31, 2008",
+   "prev_q_ny": null,
+   "prev_q_label": "Q3 2008",
+   "dividend_annual": 0.0,
+   "dividend_note": "none ('Commencing in the fourth quarter 2008 our board of directors discontinued the quarterly dividends', FY2008 10-K)",
+   "cash_return_text": "no share repurchases in 2008; the quarterly dividend discontinued from the fourth quarter of 2008",
+   "business_line": "Royal Caribbean International, Celebrity Cruises, Pullmantur, Azamara Cruises and CDF Croisières de France (38 ships, about 78,650 berths)",
+   "groups": [
+    [
+     "Passenger ticket revenues",
+     4.730289,
+     6.8
+    ],
+    [
+     "Onboard and other revenues",
+     1.802236,
+     4.7
+    ]
+   ],
+   "groups_basis": "FY08 revenues by type (FY2008 10-K; one reportable segment)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-26",
+   "source": "RC14",
+   "extra_sources": [
+    "RC15"
+   ],
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 09:10 ET; conference call at 10 a.m.",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_k": 1481325,
+    "rev_prior_k": 1292984,
+    "comm_k": 268630,
+    "comm_prior_k": 228733,
+    "onboard_k": 102169,
+    "onboard_prior_k": 84926,
+    "opex_k": 965529,
+    "opex_prior_k": 824973,
+    "msa_k": 193195,
+    "msa_prior_k": 181744,
+    "opinc_k": 200883,
+    "opinc_prior_k": 184244,
+    "apcd": 6041961,
+    "apcd_prior": 5374078,
+    "occ": 106.0,
+    "occ_prior": 106.9,
+    "diluted_shares_k": 214157,
+    "cash_k": 212365
+   },
+   "sales_b": 1.481,
+   "sales_pct": 14.6,
+   "ny": 183.8,
+   "ny_prior": 182.23,
+   "ny_pct": 0.9,
+   "ny_cc_pct": null,
+   "ny_note": "Including Pullmantur, the company’s Net Yields increased 0.9%",
+   "ncc": 130.41,
+   "ncc_prior": 128.96,
+   "ncc_pct": 1.1,
+   "ncc_note": "Net Cruise Costs per APCD increased 1.1%",
+   "capacity_pct": 12.4,
+   "occupancy": 106.0,
+   "occupancy_bp": -90.0,
+   "op_margin": 13.56,
+   "op_margin_bp": -68.8,
+   "eps_q": 0.6,
+   "eps_q_prior": 0.57,
+   "diluted_shares_m": 214.157,
+   "cash_b": 0.212,
+   "fuel_note": "“at-the-pump” fuel prices averaging $443 per metric ton",
+   "cash_return_text": "no share repurchases; As of June 30, 2007, liquidity was $1.4 billion, comprising $0.2 billion in cash and cash equivalents and $1.2 billion in available credit on the company’s revolving credit agreement",
+   "next_print": "Q3 2007 print (late October)",
+   "ny_stated_pct": 0.9,
+   "ncc_stated_pct": 1.1
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-22",
+   "source": "RC16",
+   "extra_sources": [
+    "RC17"
+   ],
+   "release": "Oct 22",
+   "release_time": "during the session on Oct 22: 8-K accepted 09:34 ET; conference call at 10 a.m.",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_k": 1953592,
+    "rev_prior_k": 1636851,
+    "comm_k": 356471,
+    "comm_prior_k": 289462,
+    "onboard_k": 148218,
+    "onboard_prior_k": 123167,
+    "opex_k": 1149244,
+    "opex_prior_k": 944166,
+    "msa_k": 199169,
+    "msa_prior_k": 163745,
+    "opinc_k": 482834,
+    "opinc_prior_k": 419609,
+    "apcd": 6668881,
+    "apcd_prior": 5865782,
+    "occ": 109.1,
+    "occ_prior": 109.6,
+    "diluted_shares_k": 214295,
+    "cash_k": 411906
+   },
+   "sales_b": 1.954,
+   "sales_pct": 19.4,
+   "ny": 217.26,
+   "ny_prior": 208.71,
+   "ny_pct": 4.1,
+   "ny_cc_pct": null,
+   "ny_note": "Including Pullmantur, Net Yields increased 4.1%",
+   "ncc": 126.52,
+   "ncc_prior": 118.53,
+   "ncc_pct": 6.7,
+   "ncc_note": "Including Pullmantur, Net Cruise Costs per APCD increased 6.7%",
+   "capacity_pct": 13.7,
+   "occupancy": 109.1,
+   "occupancy_bp": -50.0,
+   "op_margin": 24.72,
+   "op_margin_bp": -92.0,
+   "eps_q": 1.84,
+   "eps_q_prior": 1.63,
+   "diluted_shares_m": 214.295,
+   "cash_b": 0.412,
+   "fuel_note": "The average at-the-pump price for the quarter was $473 per metric ton versus $442 per metric ton in 2006",
+   "cash_return_text": "no share repurchases; As of September 30, 2007, liquidity was $1.6 billion, comprising $0.4 billion in cash and cash equivalents and $1.2 billion in available credit on the company’s unsecured revolving credit facility",
+   "next_print": "Q4 2007 print (late January)",
+   "ny_stated_pct": 4.1,
+   "ncc_stated_pct": 6.7
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-30",
+   "source": "RC18",
+   "release": "Jan 30",
+   "release_time": "during the session on Jan 30: 8-K accepted 10:22 ET; conference call at 10 a.m.",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_k": 1491095,
+    "rev_prior_k": 1153215,
+    "comm_k": 279237,
+    "comm_prior_k": 197470,
+    "onboard_k": 88845,
+    "onboard_prior_k": 63272,
+    "opex_k": 1025584,
+    "opex_prior_k": 750358,
+    "msa_k": 204492,
+    "msa_prior_k": 181183,
+    "opinc_k": 137974,
+    "opinc_prior_k": 113542,
+    "apcd": 6628881,
+    "apcd_prior": 5849048,
+    "occ": 103.8,
+    "occ_prior": 104.3,
+    "diluted_shares_k": 214477,
+    "cash_k": 230784
+   },
+   "sales_b": 1.491,
+   "sales_pct": 29.3,
+   "ny": 169.41,
+   "ny_prior": 152.58,
+   "ny_pct": 11.0,
+   "ny_cc_pct": null,
+   "ny_note": "Including Pullmantur, Net Yields increased 11.0%",
+   "ncc": 130.04,
+   "ncc_prior": 114.69,
+   "ncc_pct": 13.4,
+   "ncc_note": "Including Pullmantur, Net Cruise Costs per APCD increased 13.4%",
+   "capacity_pct": 13.3,
+   "occupancy": 103.8,
+   "occupancy_bp": -50.0,
+   "op_margin": 9.25,
+   "op_margin_bp": -59.2,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.22,
+   "diluted_shares_m": 214.477,
+   "cash_b": 0.231,
+   "fuel_note": "The average at-the-pump price for the quarter was $555 per metric ton versus $395 per metric ton in 2006",
+   "cash_return_text": "no share repurchases; As of December 31, 2007, liquidity was $1.4 billion, comprising $0.2 billion in cash and cash equivalents and $1.2 billion in available credit on the company’s unsecured revolving credit facility",
+   "next_print": "Q1 2008 print (late April)",
+   "ny_stated_pct": 11.0,
+   "ncc_stated_pct": 13.4,
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 2.82,
+    "revenue_usd_b": 6.149139,
+    "diluted_shares_m": 214.255,
+    "raw": {
+     "rev_k": 6149139,
+     "rev_prior_k": 5229584,
+     "opinc_k": 901335,
+     "net_rev_k": 4619480,
+     "net_rev_prior_k": 3980437,
+     "ncc_k": 3235079,
+     "ncc_prior_k": 2700346,
+     "apcd": 25155768,
+     "apcd_prior": 22392478,
+     "occ": 105.7,
+     "occ_prior": 106.5,
+     "other_k": -297930,
+     "cash_k": 230784,
+     "cfo_k": 1268694,
+     "capex_k": 1317381,
+     "ticket_k": 4427384,
+     "onboard_rev_k": 1721755,
+     "ticket_prior_k": 3838648,
+     "onboard_rev_prior_k": 1390936
+    },
+    "normalization_note": "FY07 diluted EPS $2.82 from the Q4 2007 release (no figure excluding a one-off published)",
+    "op_margin": 14.66,
+    "op_margin_note": "FY07 operating income $901,335K / total revenues $6,149,139K (Q4 2007 release)",
+    "sales_growth": 17.6,
+    "ny_pct": 3.31,
+    "ncc_pct": 6.64,
+    "occupancy": 105.7,
+    "capacity_pct": 12.3,
+    "other_expense_b": 0.2979,
+    "cash_b": 0.231,
+    "fcf_b": -0.049,
+    "fcf_note": "net cash provided by operating activities $1,268,694K less purchases of property and equipment $1,317,381K",
+    "groups": [
+     [
+      "Passenger ticket revenues",
+      4.427384,
+      15.3
+     ],
+     [
+      "Onboard and other revenues",
+      1.721755,
+      23.8
+     ]
+    ],
+    "tax_rate": 0.0,
+    "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+    "doc": "Q4 2007 release"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-24",
+   "source": "RC20",
+   "release": "Apr 24",
+   "release_time": "before the open on Apr 24: 8-K accepted 08:59 ET; conference call at 10 a.m.",
+   "period_end": "2008-03-31",
+   "raw": {
+    "rev_k": 1429085,
+    "rev_prior_k": 1223126,
+    "comm_k": 257940,
+    "comm_prior_k": 219685,
+    "onboard_k": 78520,
+    "onboard_prior_k": 66403,
+    "opex_k": 962186,
+    "opex_prior_k": 841341,
+    "msa_k": 204941,
+    "msa_prior_k": 186184,
+    "opinc_k": 137568,
+    "opinc_prior_k": 79643,
+    "apcd": 6332099,
+    "apcd_prior": 5816046,
+    "occ": 104.4,
+    "occ_prior": 103.7,
+    "diluted_shares_k": 214464,
+    "cash_k": 441127
+   },
+   "sales_b": 1.429,
+   "sales_pct": 16.8,
+   "ny": 172.55,
+   "ny_prior": 161.11,
+   "ny_pct": 7.1,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields increased 7.1% to a record $173 per APCD",
+   "ncc": 131.18,
+   "ncc_prior": 127.48,
+   "ncc_pct": 2.9,
+   "ncc_note": "Net Cruise Costs per APCD increased 2.9%",
+   "capacity_pct": 8.9,
+   "occupancy": 104.4,
+   "occupancy_bp": 70.0,
+   "op_margin": 9.63,
+   "op_margin_bp": 311.5,
+   "eps_q": 0.35,
+   "eps_q_prior": 0.04,
+   "diluted_shares_m": 214.464,
+   "cash_b": 0.441,
+   "fuel_note": "The average at-the-pump price for the quarter was $592 per metric ton versus $388 per metric ton in 2007",
+   "cash_return_text": "no share repurchases; As of March 31, 2008, liquidity was $1.4 billion, including $0.4 billion in cash and cash equivalents and $1.0 billion in available credit on the company’s unsecured revolving credit facility",
+   "next_print": "Q2 2008 print (late July)",
+   "ny_stated_pct": 7.1,
+   "ncc_stated_pct": 2.9
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-22",
+   "source": "RC21",
+   "release": "Jul 21",
+   "release_time": "after the close on Jul 21: 8-K accepted 18:30 ET; public before the open of the next trading day",
+   "period_end": "2008-06-30",
+   "raw": {
+    "rev_k": 1583774,
+    "rev_prior_k": 1481325,
+    "comm_k": 284735,
+    "comm_prior_k": 268630,
+    "onboard_k": 117315,
+    "onboard_prior_k": 102169,
+    "opex_k": 1090999,
+    "opex_prior_k": 965529,
+    "msa_k": 196548,
+    "msa_prior_k": 193195,
+    "opinc_k": 168950,
+    "opinc_prior_k": 200883,
+    "apcd": 6362851,
+    "apcd_prior": 6041961,
+    "occ": 104.0,
+    "occ_prior": 106.0,
+    "diluted_shares_k": 214280,
+    "cash_k": 387158
+   },
+   "sales_b": 1.584,
+   "sales_pct": 6.9,
+   "ny": 185.72,
+   "ny_prior": 183.8,
+   "ny_pct": 1.0,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields improved 1.0%",
+   "ncc": 139.17,
+   "ncc_prior": 130.41,
+   "ncc_pct": 6.7,
+   "ncc_note": "Net Cruise Costs per APCD increased 6.7%",
+   "capacity_pct": 5.3,
+   "occupancy": 104.0,
+   "occupancy_bp": -200.0,
+   "op_margin": 10.67,
+   "op_margin_bp": -289.3,
+   "eps_q": 0.4,
+   "eps_q_prior": 0.6,
+   "diluted_shares_m": 214.28,
+   "cash_b": 0.387,
+   "fuel_note": "Fuel prices increased 55%, while fuel costs per APCD increased at a lower rate of 31%, due mainly to fuel initiatives and hedging",
+   "cash_return_text": "no share repurchases; As of June 30, 2008, liquidity was $1.3 billion, including $0.4 billion in cash and cash equivalents, and $0.9 billion in available credit on the company’s unsecured revolving credit facility",
+   "next_print": "Q3 2008 print (late October)",
+   "ny_stated_pct": 1.0,
+   "ncc_stated_pct": 6.7
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-28",
+   "source": "RC22",
+   "release": "Oct 28",
+   "release_time": "before the open on Oct 28: 8-K accepted 09:06 ET; conference call at 10 a.m.",
+   "period_end": "2008-09-30",
+   "raw": {
+    "rev_k": 2063389,
+    "rev_prior_k": 1953592,
+    "comm_k": 375638,
+    "comm_prior_k": 356471,
+    "onboard_k": 168145,
+    "onboard_prior_k": 148218,
+    "opex_k": 1275661,
+    "opex_prior_k": 1149244,
+    "msa_k": 191115,
+    "msa_prior_k": 199169,
+    "opinc_k": 461907,
+    "opinc_prior_k": 482834,
+    "apcd": 6945217,
+    "apcd_prior": 6668881,
+    "occ": 107.8,
+    "occ_prior": 109.1,
+    "diluted_shares_k": 214172,
+    "cash_k": 301963
+   },
+   "sales_b": 2.063,
+   "sales_pct": 5.6,
+   "ny": 218.8,
+   "ny_prior": 217.26,
+   "ny_pct": 0.7,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields increased 0.7% to $219 per APCD",
+   "ncc": 132.9,
+   "ncc_prior": 126.52,
+   "ncc_pct": 5.0,
+   "ncc_note": "Net Cruise Costs per APCD increased 5.0%",
+   "capacity_pct": 4.1,
+   "occupancy": 107.8,
+   "occupancy_bp": -130.0,
+   "op_margin": 22.39,
+   "op_margin_bp": -232.9,
+   "eps_q": 1.92,
+   "eps_q_prior": 1.84,
+   "eps_note": "'these figures also include the receipt of a legal settlement of $17.6 million'; no figure excluding it",
+   "diluted_shares_m": 214.172,
+   "cash_b": 0.302,
+   "fuel_note": "The average at-the-pump price for the quarter was $669 per metric ton versus $457 per metric ton in 2007",
+   "cash_return_text": "no share repurchases; As of September 30, 2008, liquidity was $1.4 billion, including cash and cash equivalents and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q4 2008 print (late January)",
+   "ny_stated_pct": 0.7,
+   "ncc_stated_pct": 5.0
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-29",
+   "source": "RC24",
+   "release": "Jan 29",
+   "release_time": "before the open on Jan 29: 8-K accepted 08:44 ET; conference call at 10 a.m.",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_k": 1456277,
+    "rev_prior_k": 1491095,
+    "comm_k": 274003,
+    "comm_prior_k": 279237,
+    "onboard_k": 94405,
+    "onboard_prior_k": 88845,
+    "opex_k": 1074820,
+    "opex_prior_k": 1025584,
+    "msa_k": 183918,
+    "msa_prior_k": 204492,
+    "opinc_k": 63559,
+    "opinc_prior_k": 137974,
+    "apcd": 6823470,
+    "apcd_prior": 6628881,
+    "occ": 101.7,
+    "occ_prior": 103.8,
+    "diluted_shares_k": 213789,
+    "cash_k": 402878
+   },
+   "sales_b": 1.456,
+   "sales_pct": -2.3,
+   "ny": 159.43,
+   "ny_prior": 169.41,
+   "ny_pct": -5.9,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields decreased 5.9% from the prior year",
+   "ncc": 130.48,
+   "ncc_prior": 130.04,
+   "ncc_pct": 0.3,
+   "ncc_note": "Net Cruise Costs per APCD increased 0.3%",
+   "capacity_pct": 2.9,
+   "occupancy": 101.7,
+   "occupancy_bp": -210.0,
+   "op_margin": 4.36,
+   "op_margin_bp": -488.9,
+   "eps_q": 0.01,
+   "eps_q_prior": 0.33,
+   "diluted_shares_m": 213.789,
+   "cash_b": 0.403,
+   "fuel_note": "Fuel cost per metric ton for the fourth quarter increased 11% to $565 versus 2007",
+   "cash_return_text": "the dividend discontinued from the fourth quarter of 2008; As of December 31, 2008, liquidity was $1.0 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q1 2009 print (late April)",
+   "ny_stated_pct": -5.9,
+   "ncc_stated_pct": 0.3,
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 2.68,
+    "revenue_usd_b": 6.532525,
+    "diluted_shares_m": 214.195,
+    "raw": {
+     "rev_k": 6532525,
+     "rev_prior_k": 6149139,
+     "opinc_k": 831984,
+     "net_rev_k": 4881824,
+     "net_rev_prior_k": 4619480,
+     "ncc_k": 3529487,
+     "ncc_prior_k": 3235079,
+     "apcd": 26463637,
+     "apcd_prior": 25155768,
+     "occ": 104.5,
+     "occ_prior": 105.7,
+     "other_k": -258262,
+     "cash_k": 402878,
+     "cfo_k": 1071255,
+     "capex_k": 2223534,
+     "ticket_k": 4730289,
+     "onboard_rev_k": 1802236,
+     "ticket_prior_k": 4427384,
+     "onboard_rev_prior_k": 1721755
+    },
+    "normalization_note": "FY08 diluted EPS $2.68 from the Q4 2008 release (no figure excluding a one-off published)",
+    "op_margin": 12.74,
+    "op_margin_note": "FY08 operating income $831,984K / total revenues $6,532,525K (Q4 2008 release)",
+    "sales_growth": 6.2,
+    "ny_pct": 0.46,
+    "ncc_pct": 3.71,
+    "occupancy": 104.5,
+    "capacity_pct": 5.2,
+    "other_expense_b": 0.2583,
+    "cash_b": 0.403,
+    "fcf_b": -1.152,
+    "fcf_note": "net cash provided by operating activities $1,071,255K less purchases of property and equipment $2,223,534K",
+    "groups": [
+     [
+      "Passenger ticket revenues",
+      4.730289,
+      6.8
+     ],
+     [
+      "Onboard and other revenues",
+      1.802236,
+      4.7
+     ]
+    ],
+    "tax_rate": 0.0,
+    "tax_note": "no income tax line in the statement of operations (the Section 883 exemption)",
+    "doc": "Q4 2008 release"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-23",
+   "source": "RC26",
+   "release": "Apr 23",
+   "release_time": "during the session on Apr 23: 8-K accepted 09:41 ET; conference call at 10 a.m.",
+   "period_end": "2009-03-31",
+   "raw": {
+    "rev_k": 1325602,
+    "rev_prior_k": 1429085,
+    "comm_k": 235829,
+    "comm_prior_k": 257940,
+    "onboard_k": 83234,
+    "onboard_prior_k": 78520,
+    "opex_k": 952336,
+    "opex_prior_k": 962186,
+    "msa_k": 189157,
+    "msa_prior_k": 204941,
+    "opinc_k": 44253,
+    "opinc_prior_k": 137568,
+    "apcd": 6743456,
+    "apcd_prior": 6332099,
+    "occ": 101.2,
+    "occ_prior": 104.4,
+    "diluted_shares_k": 213687,
+    "cash_k": 455884
+   },
+   "sales_b": 1.326,
+   "sales_pct": -7.2,
+   "ny": 149.26,
+   "ny_prior": 172.55,
+   "ny_pct": -13.5,
+   "ny_cc_pct": null,
+   "ny_note": "Net Yields decreased 13.5% from the prior year",
+   "ncc": 121.96,
+   "ncc_prior": 131.18,
+   "ncc_pct": -7.0,
+   "ncc_note": "NCC declined 7.0% versus the first quarter of 2008",
+   "capacity_pct": 6.5,
+   "occupancy": 101.2,
+   "occupancy_bp": -320.0,
+   "op_margin": 3.34,
+   "op_margin_bp": -628.8,
+   "eps_q": -0.17,
+   "eps_q_prior": 0.35,
+   "diluted_shares_m": 213.687,
+   "cash_b": 0.456,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; As of March 31, 2009, liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q2 2009 print (late July)",
+   "ny_stated_pct": -13.5,
+   "ncc_stated_pct": -7.0
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-29",
+   "source": "RC27",
+   "release": "Jul 29",
+   "release_time": "before the open on Jul 29: 8-K accepted 08:55 ET; conference call at 9 a.m.",
+   "period_end": "2009-06-30",
+   "raw": {
+    "rev_k": 1349015,
+    "rev_prior_k": 1583774,
+    "comm_k": 232552,
+    "comm_prior_k": 284735,
+    "onboard_k": 112523,
+    "onboard_prior_k": 117315,
+    "opex_k": 965435,
+    "opex_prior_k": 1090999,
+    "msa_k": 190593,
+    "msa_prior_k": 196548,
+    "opinc_k": 55062,
+    "opinc_prior_k": 168950,
+    "apcd": 6585128,
+    "apcd_prior": 6362851,
+    "occ": 102.3,
+    "occ_prior": 104.0,
+    "diluted_shares_k": 213780,
+    "cash_k": 309758
+   },
+   "sales_b": 1.349,
+   "sales_pct": -14.8,
+   "ny": 152.46,
+   "ny_prior": 185.72,
+   "ny_pct": -17.9,
+   "ny_cc_pct": -14.2,
+   "ny_note": "Net Yields decreased 17.9% from the prior year and declined 14.2% on a constant dollar basis",
+   "ncc": 123.15,
+   "ncc_prior": 139.17,
+   "ncc_pct": -11.5,
+   "ncc_note": "NCC decreased 11.5% from the prior year and 8.5% on a constant dollar basis",
+   "capacity_pct": 3.5,
+   "occupancy": 102.3,
+   "occupancy_bp": -170.0,
+   "op_margin": 4.08,
+   "op_margin_bp": -658.6,
+   "eps_q": -0.16,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 213.78,
+   "cash_b": 0.31,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; As of June 30, 2009, liquidity was $0.9 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q3 2009 print (late October)",
+   "ny_stated_pct": -17.9,
+   "ncc_stated_pct": -11.5
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-11-03",
+   "source": "RC28",
+   "release": "Nov 3",
+   "release_time": "before the open on Nov 3: 8-K accepted 08:46 ET; conference call at 10 a.m.",
+   "period_end": "2009-09-30",
+   "raw": {
+    "rev_k": 1763542,
+    "rev_prior_k": 2063389,
+    "comm_k": 303969,
+    "comm_prior_k": 375638,
+    "onboard_k": 152579,
+    "onboard_prior_k": 168145,
+    "opex_k": 1116086,
+    "opex_prior_k": 1275661,
+    "msa_k": 196594,
+    "msa_prior_k": 191115,
+    "opinc_k": 306841,
+    "opinc_prior_k": 461907,
+    "apcd": 7157608,
+    "apcd_prior": 6945217,
+    "occ": 105.4,
+    "occ_prior": 107.8,
+    "diluted_shares_k": 215669,
+    "cash_k": 285863
+   },
+   "sales_b": 1.764,
+   "sales_pct": -14.5,
+   "ny": 182.6,
+   "ny_prior": 218.8,
+   "ny_pct": -16.5,
+   "ny_cc_pct": -14.5,
+   "ny_note": "Net Yields decreased 16.5% from the prior year or 14.5% after adjusting for year over year changes in currency",
+   "ncc": 119.61,
+   "ncc_prior": 132.9,
+   "ncc_pct": -10.0,
+   "ncc_note": "NCC decreased 10.0% from the prior year or 8.8% after adjusting for changes in currency",
+   "capacity_pct": 3.1,
+   "occupancy": 105.4,
+   "occupancy_bp": -240.0,
+   "op_margin": 17.4,
+   "op_margin_bp": -498.7,
+   "eps_q": 1.07,
+   "eps_q_prior": 1.92,
+   "diluted_shares_m": 215.669,
+   "cash_b": 0.286,
+   "fuel_note": "",
+   "cash_return_text": "no dividend; As of September 30, 2009, liquidity was $1.1 billion, including cash and the undrawn portion of the company’s unsecured revolving credit facility",
+   "next_print": "Q4 2009 print (late January)",
+   "ny_stated_pct": -16.5,
+   "ncc_stated_pct": -10.0
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-02-05",
+   "source": "RC12",
+   "doc": "Q4 2006 release",
+   "eps_guide": [
+    3.05,
+    3.2
+   ],
+   "fy_rev": {
+    "ny": [
+     3,
+     3
+    ],
+    "capacity": 12.2
+   },
+   "fy_display": "Net Cruise Costs per APCD around +3%",
+   "q_guide": {
+    "quarter": "Q1 2007",
+    "ny": [
+     -3,
+     -3
+    ],
+    "eps": [
+     0.03,
+     0.08
+    ]
+   },
+   "note": "Net Yields 'will increase in a range around 3%' for 2007 and 'decrease in a range around 3%' in Q1 2007; Pullmantur 'accounts for two percentage points of this change'"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-05-01",
+   "source": "RC13",
+   "doc": "Q1 2007 release",
+   "eps_guide": [
+    3.05,
+    3.2
+   ],
+   "fy_rev": {
+    "ny": [
+     2,
+     2
+    ],
+    "capacity": 12.2
+   },
+   "fy_display": "Net Cruise Costs per APCD 3%",
+   "q_guide": {
+    "quarter": "Q2 2007",
+    "ny": [
+     0,
+     0
+    ],
+    "capacity": 12.6,
+    "eps": [
+     0.58,
+     0.63
+    ]
+   },
+   "note": "including Pullmantur; comparable (excluding Pullmantur) Net Yields flat for 2007 and (1%) for Q2 2007, capacity 5.0% and 6.3%"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-07-26",
+   "source": "RC14",
+   "doc": "Q2 2007 release",
+   "eps_guide": [
+    2.75,
+    2.85
+   ],
+   "fy_rev": {
+    "ny": [
+     2,
+     3
+    ],
+    "capacity": 12.0
+   },
+   "fy_display": "Net Cruise Costs per APCD ≈5%",
+   "q_guide": {
+    "quarter": "Q3 2007",
+    "ny": [
+     2,
+     3
+    ],
+    "capacity": 13.2,
+    "eps": [
+     1.75,
+     1.8
+    ]
+   },
+   "note": "including Pullmantur; comparable (excluding Pullmantur) Net Yields ≈Flat for 2007 and Q3 2007, capacity 4.6% and 4.9%"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-22",
+   "source": "RC16",
+   "doc": "Q3 2007 release",
+   "eps_guide": [
+    2.8,
+    2.85
+   ],
+   "fy_rev": {
+    "ny": [
+     3,
+     3
+    ],
+    "capacity": 12.4
+   },
+   "fy_display": "Net Cruise Costs per APCD 5% to 6%",
+   "q_guide": {
+    "quarter": "Q4 2007",
+    "ny": [
+     9,
+     9
+    ],
+    "capacity": 13.6,
+    "eps": [
+     0.32,
+     0.37
+    ]
+   },
+   "note": "including Pullmantur; comparable (excluding Pullmantur) Net Yields ≈ 2% for Q4 2007 on capacity of 4.7%; Q1 2008 Net Yields 'will increase around mid-single digits compared to 2007' (words)"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-01-30",
+   "source": "RC18",
+   "doc": "Q4 2007 release",
+   "eps_guide": [
+    3.2,
+    3.4
+   ],
+   "fy_rev": {
+    "ny": [
+     4,
+     4
+    ],
+    "capacity": 5.1
+   },
+   "fy_display": "Net Cruise Costs per APCD approx. 2%, excluding fuel 1% - 2%",
+   "q_guide": {
+    "quarter": "Q1 2008",
+    "ny": [
+     7,
+     7
+    ],
+    "capacity": 8.8,
+    "eps": [
+     0.3,
+     0.35
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-24",
+   "source": "RC20",
+   "doc": "Q1 2008 release",
+   "eps_guide": [
+    2.85,
+    3.0
+   ],
+   "fy_rev": {
+    "ny": [
+     4,
+     4
+    ],
+    "capacity": 5.1
+   },
+   "fy_display": "Net Cruise Costs per APCD approx. 5%, excluding fuel 2% - 3%; fuel expenses $685 Million",
+   "q_guide": {
+    "quarter": "Q2 2008",
+    "ny": [
+     2,
+     2
+    ],
+    "capacity": 5.4,
+    "eps": [
+     0.4,
+     0.45
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-22",
+   "source": "RC21",
+   "doc": "Q2 2008 release",
+   "eps_guide": [
+    2.55,
+    2.65
+   ],
+   "fy_rev": {
+    "ny": [
+     3,
+     4
+    ],
+    "capacity": 5.0
+   },
+   "fy_display": "Net Cruise Costs per APCD 6% - 7%; fuel expenses $772 million",
+   "q_guide": {
+    "quarter": "Q3 2008",
+    "ny": [
+     2,
+     2
+    ],
+    "capacity": 3.9,
+    "eps": [
+     1.65,
+     1.7
+    ]
+   },
+   "note": "the 2008 EPS range includes 'estimated restructuring-related expenses of $15 million, or $0.07 per share'"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-28",
+   "source": "RC22",
+   "doc": "Q3 2008 release",
+   "eps_guide": [
+    2.73,
+    2.78
+   ],
+   "fy_rev": {
+    "ny": [
+     1,
+     1
+    ],
+    "capacity": 5.2
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. 3%; fuel expenses $686 Million",
+   "q_guide": {
+    "quarter": "Q4 2008",
+    "ny": [
+     -5,
+     -4
+    ],
+    "capacity": 2.9,
+    "eps": [
+     0.05,
+     0.1
+    ]
+   },
+   "note": "'Just over half of the decline from prior guidance is due to the stronger U.S. dollar'"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-29",
+   "source": "RC24",
+   "doc": "Q4 2008 release",
+   "eps_guide": [
+    1.4,
+    1.4
+   ],
+   "fy_rev": {
+    "ny": [
+     -13,
+     -9
+    ],
+    "capacity": 6.7
+   },
+   "fy_display": "Net Cruise Costs per APCD (7%) - (9%), excluding fuel (5%) - (7%); fuel expenses $580 Million",
+   "q_guide": {
+    "quarter": "Q1 2009",
+    "ny": [
+     -16,
+     -14
+    ],
+    "capacity": 6.9,
+    "eps": [
+     -0.35,
+     -0.3
+    ]
+   },
+   "note": "2009 EPS 'Around $1.40' (a single mid-point figure)"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-23",
+   "source": "RC26",
+   "doc": "Q1 2009 release",
+   "eps_guide": [
+    1.35,
+    1.35
+   ],
+   "fy_rev": {
+    "ny": [
+     -13,
+     -12
+    ],
+    "ny_cc": [
+     -10,
+     -9
+    ],
+    "capacity": 5.9
+   },
+   "fy_display": "Net Cruise Costs per APCD (10%) - (12%), excluding fuel (6%) - (8%); fuel expenses $574 Million",
+   "q_guide": {
+    "quarter": "Q2 2009",
+    "ny": [
+     -17,
+     -17
+    ],
+    "ny_cc": [
+     -12,
+     -12
+    ],
+    "capacity": 3.5,
+    "eps": [
+     -0.05,
+     0.0
+    ]
+   },
+   "note": "2009 EPS 'Around $1.35'; Net Yields 'approximately 12% on a constant dollar basis' for Q2 2009 and '9% - 10% on a constant dollar basis' for 2009"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-29",
+   "source": "RC27",
+   "doc": "Q2 2009 release",
+   "eps_guide": [
+    0.7,
+    0.8
+   ],
+   "fy_rev": {
+    "ny": [
+     -14,
+     -14
+    ],
+    "ny_cc": [
+     -12,
+     -11
+    ],
+    "capacity": 5.2
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. (10%), excluding fuel (6%) – (7%); fuel expenses $591 Million",
+   "q_guide": {
+    "quarter": "Q3 2009",
+    "ny": [
+     -18,
+     -18
+    ],
+    "ny_cc": [
+     -16,
+     -15
+    ],
+    "capacity": 3.1,
+    "eps": [
+     0.95,
+     1.0
+    ]
+   },
+   "note": "'On a constant dollar basis net yields are projected to decline 15% - 16% in the third quarter and 11% - 12% for the full year'"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-11-03",
+   "source": "RC28",
+   "doc": "Q3 2009 release",
+   "eps_guide": [
+    0.7,
+    0.7
+   ],
+   "fy_rev": {
+    "ny": [
+     -14,
+     -14
+    ],
+    "ny_cc": [
+     -13,
+     -12
+    ],
+    "capacity": 5.1
+   },
+   "fy_display": "Net Cruise Costs per APCD Approx. (10%), excluding fuel (6%) – (7%); fuel expenses $596 million",
+   "q_guide": {
+    "quarter": "Q4 2009",
+    "ny": [
+     -8,
+     -7
+    ],
+    "capacity": 7.5,
+    "eps": [
+     -0.05,
+     -0.05
+    ]
+   },
+   "note": "2009 EPS 'Approx. $0.70'; Net Yields for 2009 'approximately 14%, or 12% to 13% after adjusting for changes in currency' (no constant-currency figure for Q4 2009)"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2008-11-19",
+   "source": "RC23",
+   "quarterly": 0.0,
+   "note": "none ('The Board of Directors ... decided today to discontinue the company’s common stock dividend', 8-K of 2008-11-18, after the close; the rate had been $0.15 a quarter)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'RCL'): the decade of the FY2006 10-K, the vintage public on 2008-01-04, is 1997-2006. Each year-on-year change comes from the latest filing published by then that reports both years (the FY1998-FY2003 annual reports on Form 20-F, the FY2004-FY2006 10-Ks); 'raw' keeps the figures and 'from' the filing of each change, and retro/build_rcl.py re-derives every value. Net Yields and Net Cruise Costs per APCD are first stated for 2001 and 2002 (each 20-F's own percentage, the FY2002 20-F's 2001 Net Yields on the basis before the FY2003 20-F's reclassification of port costs) and derived from the 10-Ks' Net Revenues, Net Cruise Costs and APCD from 2003; no filing states either for an earlier year (the FY2000 20-F says net revenue per available lower berth for 2000 'was approximately the same as in 1999': words, no value). Occupancy changes in basis points from the stated percentages; the operating margin is operating income on total revenues.",
+  "raw": {
+   "RC1": {
+    "occ": {
+     "1996": 101.3,
+     "1997": 104.2,
+     "1998": 105.2
+    }
+   },
+   "RC2": {
+    "occ": {
+     "1997": 104.2,
+     "1998": 105.2,
+     "1999": 104.7
+    }
+   },
+   "RC3": {
+    "rev_k": {
+     "1996": 1357325,
+     "1997": 1939007,
+     "1998": 2636291,
+     "1999": 2546152,
+     "2000": 2865846
+    },
+    "opinc_k": {
+     "1996": 217033,
+     "1997": 303555,
+     "1998": 488735,
+     "1999": 480174,
+     "2000": 569540
+    }
+   },
+   "RC4": {
+    "rev_k": {
+     "1997": 1939007,
+     "1998": 2636291,
+     "1999": 2546152,
+     "2000": 2865846,
+     "2001": 3145250
+    },
+    "opinc_k": {
+     "1997": 303555,
+     "1998": 488735,
+     "1999": 480174,
+     "2000": 569540,
+     "2001": 455605
+    }
+   },
+   "RC5": {
+    "rev_k": {
+     "1998": 2636291,
+     "1999": 2546152,
+     "2000": 2865846,
+     "2001": 3145250,
+     "2002": 3434347
+    },
+    "opinc_k": {
+     "1998": 488735,
+     "1999": 480174,
+     "2000": 569540,
+     "2001": 455605,
+     "2002": 550975
+    },
+    "occ": {
+     "1998": 105.2,
+     "1999": 104.7,
+     "2000": 104.4,
+     "2001": 101.8,
+     "2002": 104.5
+    },
+    "ny_stated": {
+     "2001": -9.1
+    }
+   },
+   "RC6": {
+    "rev_k": {
+     "1999": 2546152,
+     "2000": 2865846,
+     "2001": 3145250,
+     "2002": 3434347,
+     "2003": 3784249
+    },
+    "opinc_k": {
+     "1999": 480174,
+     "2000": 569540,
+     "2001": 455605,
+     "2002": 550975,
+     "2003": 526185
+    },
+    "occ": {
+     "1999": 104.7,
+     "2000": 104.4,
+     "2001": 101.8,
+     "2002": 104.5,
+     "2003": 103.2
+    },
+    "ny_stated": {
+     "2002": -0.7
+    },
+    "ncc_stated": {
+     "2002": -2.2
+    }
+   },
+   "RC7": {
+    "rev_k": {
+     "2000": 2865846,
+     "2001": 3145250,
+     "2002": 3434347,
+     "2003": 3784249,
+     "2004": 4555375
+    },
+    "opinc_k": {
+     "2000": 569540,
+     "2001": 455605,
+     "2002": 550975,
+     "2003": 526185,
+     "2004": 753589
+    },
+    "occ": {
+     "2000": 104.4,
+     "2001": 101.8,
+     "2002": 104.5,
+     "2003": 103.2,
+     "2004": 105.7
+    },
+    "net_rev_k": {
+     "2002": 2556939,
+     "2003": 2850368,
+     "2004": 3432452
+    },
+    "ncc_k": {
+     "2002": 1666864,
+     "2003": 1961488,
+     "2004": 2284727
+    },
+    "apcd": {
+     "2002": 17334204,
+     "2003": 19439238,
+     "2004": 21439288
+    }
+   },
+   "RC8": {
+    "rev_k": {
+     "2001": 3145250,
+     "2002": 3434347,
+     "2003": 3784249,
+     "2004": 4555375,
+     "2005": 4903174
+    },
+    "opinc_k": {
+     "2001": 455605,
+     "2002": 550975,
+     "2003": 526185,
+     "2004": 753589,
+     "2005": 871565
+    },
+    "occ": {
+     "2001": 101.8,
+     "2002": 104.5,
+     "2003": 103.2,
+     "2004": 105.7,
+     "2005": 106.6
+    },
+    "net_rev_k": {
+     "2003": 2850368,
+     "2004": 3432452,
+     "2005": 3735957
+    },
+    "ncc_k": {
+     "2003": 1961488,
+     "2004": 2284727,
+     "2005": 2462323
+    },
+    "apcd": {
+     "2003": 19439238,
+     "2004": 21439288,
+     "2005": 21733724
+    }
+   },
+   "RC9": {
+    "rev_k": {
+     "2002": 3434347,
+     "2003": 3784249,
+     "2004": 4555375,
+     "2005": 4903174,
+     "2006": 5229584
+    },
+    "opinc_k": {
+     "2002": 550975,
+     "2003": 526185,
+     "2004": 753589,
+     "2005": 871565,
+     "2006": 858446
+    },
+    "occ": {
+     "2002": 104.5,
+     "2003": 103.2,
+     "2004": 105.7,
+     "2005": 106.6,
+     "2006": 106.5
+    },
+    "net_rev_k": {
+     "2004": 3432452,
+     "2005": 3735957,
+     "2006": 3980437
+    },
+    "ncc_k": {
+     "2004": 2284727,
+     "2005": 2462323,
+     "2006": 2700346
+    },
+    "apcd": {
+     "2004": 21439288,
+     "2005": 21733724,
+     "2006": 22392478
+    }
+   }
+  },
+  "from": {
+   "sales": {
+    "1997": "RC3",
+    "1998": "RC4",
+    "1999": "RC5",
+    "2000": "RC6",
+    "2001": "RC7",
+    "2002": "RC8",
+    "2003": "RC9",
+    "2004": "RC9",
+    "2005": "RC9",
+    "2006": "RC9"
+   },
+   "op_margin": {
+    "1997": "RC3",
+    "1998": "RC4",
+    "1999": "RC5",
+    "2000": "RC6",
+    "2001": "RC7",
+    "2002": "RC8",
+    "2003": "RC9",
+    "2004": "RC9",
+    "2005": "RC9",
+    "2006": "RC9"
+   },
+   "occupancy": {
+    "1997": "RC1",
+    "1998": "RC2",
+    "1999": "RC5",
+    "2000": "RC6",
+    "2001": "RC7",
+    "2002": "RC8",
+    "2003": "RC9",
+    "2004": "RC9",
+    "2005": "RC9",
+    "2006": "RC9"
+   },
+   "ny": {
+    "2001": "RC5",
+    "2002": "RC6",
+    "2003": "RC7",
+    "2004": "RC8",
+    "2005": "RC9",
+    "2006": "RC9"
+   },
+   "ncc": {
+    "2002": "RC6",
+    "2003": "RC7",
+    "2004": "RC8",
+    "2005": "RC9",
+    "2006": "RC9"
+   }
+  },
+  "ny": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2001": -9.1,
+    "2002": -0.7,
+    "2003": -0.6,
+    "2004": 9.19,
+    "2005": 7.37,
+    "2006": 3.41
+   },
+   "sources": "RC5 (2001), RC6 (2002), RC7 (2003), RC8 (2004), RC9 (2005), RC9 (2006)",
+   "thresholds": {
+    "BEAR": -20,
+    "BASE": -9,
+    "BULL": 1,
+    "XBULL": 9
+   }
+  },
+  "ncc": {
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2002": -2.2,
+    "2003": 4.93,
+    "2004": 5.61,
+    "2005": 6.31,
+    "2006": 6.44
+   },
+   "sources": "RC6 (2002), RC7 (2003), RC8 (2004), RC9 (2005), RC9 (2006)",
+   "thresholds": {
+    "BEAR": 7,
+    "BASE": 6,
+    "BULL": 6,
+    "XBULL": -2
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 42.86,
+    "1998": 35.96,
+    "1999": -3.42,
+    "2000": 12.56,
+    "2001": 9.75,
+    "2002": 9.19,
+    "2003": 10.19,
+    "2004": 20.38,
+    "2005": 7.63,
+    "2006": 6.66
+   },
+   "sources": "RC3 (1997), RC4 (1998), RC5 (1999), RC6 (2000), RC7 (2001), RC8 (2002), RC9 (2003), RC9 (2004), RC9 (2005), RC9 (2006)",
+   "thresholds": {
+    "BEAR": -17,
+    "BASE": -3,
+    "BULL": 10,
+    "XBULL": 43
+   }
+  },
+  "occupancy": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 290.0,
+    "1998": 100.0,
+    "1999": -50.0,
+    "2000": -30.0,
+    "2001": -260.0,
+    "2002": 270.0,
+    "2003": -130.0,
+    "2004": 250.0,
+    "2005": 90.0,
+    "2006": -10.0
+   },
+   "sources": "RC1 (1997), RC2 (1998), RC5 (1999), RC6 (2000), RC7 (2001), RC8 (2002), RC9 (2003), RC9 (2004), RC9 (2005), RC9 (2006)",
+   "thresholds": {
+    "BEAR": -560,
+    "BASE": -260,
+    "BULL": 40,
+    "XBULL": 290
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -33.46,
+    "1998": 288.36,
+    "1999": 32.01,
+    "2000": 101.46,
+    "2001": -538.79,
+    "2002": 155.76,
+    "2003": -213.85,
+    "2004": 263.82,
+    "2005": 123.27,
+    "2006": -136.03
+   },
+   "sources": "RC3 (1997), RC4 (1998), RC5 (1999), RC6 (2000), RC7 (2001), RC8 (2002), RC9 (2003), RC9 (2004), RC9 (2005), RC9 (2006)",
+   "thresholds": {
+    "BEAR": -1140,
+    "BASE": -540,
+    "BULL": 70,
+    "XBULL": 290
+   }
+  }
+ },
+ "splits": []
+}

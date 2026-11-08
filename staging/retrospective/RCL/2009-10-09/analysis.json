@@ -1,0 +1,294 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "RCL",
+ "company": "Royal Caribbean Cruises Ltd.",
+ "as_of": "2009-10-09",
+ "price_date": "2009-10-09",
+ "price": 23.77,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cruise-line signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Royal Caribbean: 'We are the world’s second largest cruise company operating 38 ships in the cruise vacation industry with approximately 78,650 berths as of December 31, 2008'; 'We compete principally on the basis of quality of ships, quality of service, variety of itineraries and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic conditions. The current worldwide economic downturn has had an adverse effect on vacationers’ discretionary income and consumer confidence which has resulted in cruise booking slowdowns, decreased cruise prices and lower onboard revenues for us and for the others in the cruise industry' (its own FY2008 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Royal Caribbean: 'We are the world’s second largest cruise company operating 38 ships in the cruise vacation industry with approximately 78,650 berths as of December 31, 2008'; 'We compete principally on the basis of quality of ships, quality of service, variety of itineraries and price'; 'We may lose business to competitors throughout the vacation market'; and 'The demand for cruises is affected by international, national and local economic conditions. The current worldwide economic downturn has had an adverse effect on vacationers’ discretionary income and consumer confidence which has resulted in cruise booking slowdowns, decreased cruise prices and lower onboard revenues for us and for the others in the cruise industry' (its own FY2008 10-K): a cruise-fleet franchise whose demand follows the economies it sells into, by its own account; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price rich; +296% to EPP floor; model-vs-market gap -2.27; conservative 2yr -56%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 6.0,
+  "epp_gap_pct": 296.2,
+  "epp_adj": -0.3,
+  "proxy_composite": 1.9,
+  "sca": -0.1,
+  "adj_composite": 1.5,
+  "market_composite": 3.77,
+  "adj_gap": -2.27,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -55.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.38,
+    "pe": 9.2,
+    "price": 3,
+    "desc": "EPS -28.6%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.55,
+    "pe": 14.0,
+    "price": 8,
+    "desc": "EPS +-14.4%/yr (Q3 cc guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 0.79,
+    "pe": 16.4,
+    "price": 13,
+    "desc": "EPS +2.5%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.6,
+    "pe": 21.0,
+    "price": 34,
+    "desc": "EPS +46.1%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -1.79,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -1.97,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 188.1,
+   "adj_gap": -2.17,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 296.2,
+   "adj_gap": -2.2,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -55.8,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "RCL (retrospective, 2009-10-09) ✕ AVOID — Ratio B infx (87.4% downside to Bear $3 / +-45.3% upside to Bull $13) | Adj composite 1.50 vs market 3.77: gap -2.27 [OVERVALUED] | +296% above the EPP floor $6 (8x FY09E $0.75) | Conservative 2-yr case: -55.8% total (-27.9%/yr) | At 31.7x FY09E the 15% hurdle price $31 sits above the BULL case; Net Yields -17.9% in Q2 2009, forward net revenue -13.4% to -12.36% (Q3 2009 net revenue guide at constant currency); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "RC25",
+   "published": "2009-02-24",
+   "filed": "2009-02-24 07:33 ET, before the open",
+   "title": "Royal Caribbean FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000119312509035629/d10k.htm",
+   "supports": "selected financial data 2004-2008; occupancy 2004-2008; revenues by type; the discontinued dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC19",
+   "published": "2008-02-19",
+   "filed": "2008-02-19 07:25 ET, before the open",
+   "title": "Royal Caribbean FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488708000067/final10k07.htm",
+   "supports": "selected financial data 2003-2007; occupancy 2003-2007; revenues by type; the $0.15 quarterly dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC11",
+   "published": "2003-01-31",
+   "filed": "2003-01-30 16:25 ET, after the close",
+   "title": "Royal Caribbean Q4 2002 results (6-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488703000002/jan3003press.txt",
+   "supports": "2002 'Excluding the impact of these items, net income for 2002 would have been $338.3 million, or $1.72 per share'; 'The comparable figures for 2001 were $318.9 million, or $1.65 per share'"
+  },
+  {
+   "id": "RC10",
+   "published": "2000-02-04",
+   "filed": "2000-02-04 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean Q4 1999 results (6-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-00-001476.txt",
+   "supports": "'Since both years experienced non-recurring items, comparable EPS was $2.15 in 1999 versus $1.93 in 1998'"
+  },
+  {
+   "id": "RC9",
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:17 ET, after the close",
+   "title": "Royal Caribbean FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488707000043/form10kfinal.htm",
+   "supports": "selected financial data 2002-2006 (total revenues, operating income, diluted EPS before the cumulative effect of a change in accounting principle, diluted shares); occupancy 2002-2006; Net Revenues, Net Cruise Costs and APCD 2004-2006; revenues by type; the $0.15 quarterly dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "RC8",
+   "published": "2006-02-24",
+   "filed": "2006-02-24 09:37 ET, during the session",
+   "title": "Royal Caribbean FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488706000003/form10k2005.htm",
+   "supports": "selected financial data 2001-2005; occupancy 2001-2005; Net Revenues, Net Cruise Costs and APCD 2003-2005"
+  },
+  {
+   "id": "RC7",
+   "published": "2005-03-15",
+   "filed": "2005-03-14 17:14 ET, after the close",
+   "title": "Royal Caribbean FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488705000004/file10k.htm",
+   "supports": "selected financial data 2000-2004 (diluted EPS $2.31 for 2000); occupancy 2000-2004; Net Revenues, Net Cruise Costs and APCD 2002-2004"
+  },
+  {
+   "id": "RC6",
+   "published": "2004-03-16",
+   "filed": "2004-03-15 17:06 ET, after the close",
+   "title": "Royal Caribbean FY2003 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488704000004/annualreport2.htm",
+   "supports": "selected financial data 1999-2003 (total revenues, operating income, 1999 diluted shares 186,456K); occupancy 1999-2003; 2002 Net Yields -0.7% and Net Cruise Costs per APCD -2.2%"
+  },
+  {
+   "id": "RC5",
+   "published": "2003-03-25",
+   "filed": "2003-03-24 17:29 ET, after the close",
+   "title": "Royal Caribbean FY2002 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014403003650/g80869e20vf.htm",
+   "supports": "selected financial data 1998-2002 (revenues, operating income, 1998 diluted shares 181,165K); occupancy 1998-2002; 'Net yields for 2001 declined 9.1% from the prior year'"
+  },
+  {
+   "id": "RC4",
+   "published": "2002-04-08",
+   "filed": "2002-04-08 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY2001 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014402003619/g75173e20-f.htm",
+   "supports": "selected financial data 1997-2001 (revenues, operating income; 1997 diluted income before extraordinary item $1.20 and 152,174K diluted shares)"
+  },
+  {
+   "id": "RC3",
+   "published": "2001-04-17",
+   "filed": "2001-04-17 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY2000 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000095014401500838/g67041e20-f.txt",
+   "supports": "selected financial data 1996-2000 (revenues, operating income)"
+  },
+  {
+   "id": "RC2",
+   "published": "2000-04-04",
+   "filed": "2000-04-04 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY1999 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-00-004542.txt",
+   "supports": "selected statistical information 1997-1999 (occupancy 104.2%, 105.2%, 104.7%)"
+  },
+  {
+   "id": "RC1",
+   "published": "1999-04-02",
+   "filed": "1999-04-02 (EDGAR gives the filing date only)",
+   "title": "Royal Caribbean FY1998 annual report on Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/0000950144-99-004018.txt",
+   "supports": "selected statistical information 1996-1998 (occupancy 101.3%, 104.2%, 105.2%)"
+  },
+  {
+   "id": "RC24",
+   "published": "2009-01-29",
+   "filed": "2009-01-29 08:44 ET, before the open",
+   "title": "Royal Caribbean Q4 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000005/exh99pr20090129.htm",
+   "supports": "Q4 and full year 2008 results; 2009 and Q1 2009 estimates"
+  },
+  {
+   "id": "RC26",
+   "published": "2009-04-23",
+   "filed": "2009-04-23 09:41 ET, during the session",
+   "title": "Royal Caribbean Q1 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000106/exh991er1q2009b.htm",
+   "supports": "Q1 2009 results; 2009 and Q2 2009 estimates, as reported and on a constant dollar basis"
+  },
+  {
+   "id": "RC27",
+   "published": "2009-07-29",
+   "filed": "2009-07-29 08:55 ET, before the open",
+   "title": "Royal Caribbean Q2 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488709000131/pr20090729final1d.htm",
+   "supports": "Q2 2009 results; 2009 and Q3 2009 estimates, as reported and on a constant dollar basis"
+  },
+  {
+   "id": "W0",
+   "published": "2009-10-09",
+   "title": "Yahoo Finance daily prices, RCL and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/RCL/history",
+   "supports": "close $23.77 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-08"
+}
