@@ -9471,7 +9471,7 @@ the table rows it checks and asserts they give the fact sheet's numbers. Decided
   contains them. RCL's source ids run to `RC74`. `retro_tool run` warns of "2091" on 51 dates of 2016-2017: the FY15 other expense of
   $0.2091B (`NET_INTEREST_B`), a number, not a year.
 
-Controls: altering one value of each print from Q3 2013 (and each Q4 print's full-year EPS), guide (its EPS range, next-quarter Net Yields and fiscal-year constant-currency Net Yields), vintage, dividend and the Q4 2014 restatement must change no date before its publication and the first weekly date on or after it (results: CONTROLS_RESULT). A scan of the 522 models finds no figure, note, guide, text or source of a later print, guide, vintage or dividend
+Controls: altering one value of each print from Q3 2013 (and each Q4 print's full-year EPS), guide (its EPS range, next-quarter Net Yields and fiscal-year constant-currency Net Yields), vintage, dividend and the Q4 2014 restatement must change no date before its publication and the first weekly date on or after it: all 81 did (the FY2013 restatement acts from 2015-01-30 until the FY2014 10-K takes over on 2015-02-24; each dividend until the next 10-K restates the rate). A scan of the 522 models finds no figure, note, guide, text or source of a later print, guide, vintage or dividend
 before its first publication (0 of 205,547 pairs). The firewall (with its RCL plant of a later restatement of every history year) passes
 at all 25 cutoffs above. No shared code changed, so no other ticker is rebuilt.
 
