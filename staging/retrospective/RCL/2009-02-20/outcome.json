@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "RCL",
+ "as_of": "2009-02-20",
+ "computed": "2026-11-08",
+ "data_source": "Yahoo Finance daily closes + dividends (RCL, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2009-08-20",
+   "price": 19.0,
+   "dividends": 0,
+   "total_return_pct": 219.9,
+   "benchmark_total_return_pct": 31.8,
+   "excess_pct": 188.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2010-02-19",
+   "price": 26.3,
+   "dividends": 0,
+   "total_return_pct": 342.8,
+   "benchmark_total_return_pct": 46.4,
+   "excess_pct": 296.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2011-02-18",
+   "price": 47.16,
+   "dividends": 0,
+   "total_return_pct": 693.9,
+   "benchmark_total_return_pct": 79.5,
+   "excess_pct": 614.4,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2012-02-17",
+   "price": 30.81,
+   "dividends": 0.2,
+   "total_return_pct": 422.1,
+   "benchmark_total_return_pct": 85.3,
+   "excess_pct": 336.8,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2011-01-14",
+   "price": 49.96
+  },
+  "low": {
+   "date": "2009-03-02",
+   "price": 5.5
+  },
+  "max_drawdown_pct": -39.5,
+  "return_to_avg_price_m12_m24_pct": 481.8
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Royal Caribbean: cruise demand cycle with $22B net debt",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
