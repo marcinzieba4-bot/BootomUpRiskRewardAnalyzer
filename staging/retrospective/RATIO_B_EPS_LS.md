@@ -49,8 +49,11 @@ Annual return / Sharpe / worst drawdown, from monthly data.
 
 ## 2. Where the plateau is
 
-Average Sharpe of every setting sharing a value, over the full period (with tech / without tech). Each value held the
-same order in both halves, except the "empty" setting.
+Average Sharpe of every setting sharing a value, over the full period (with tech / without tech).
+
+The best value was the same in both halves, and in both universes, for four settings: the short filter (E3), the short
+hold (6 months), the short size (50%) and the long side (not barred). The best number of long names switched between 2
+(2008-2016) and 3 (2017-2026). The empty-cohort choice is a toss-up.
 
 | Setting | Best value | Worst value |
 |---|---|---|
