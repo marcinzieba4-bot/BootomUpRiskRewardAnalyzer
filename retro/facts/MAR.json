@@ -610,6 +610,174 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828017011091/mar-2017q3earningsreleasee.htm",
    "accepted": "accepted 2017-11-07 17:03 ET (after the close), so dated 2017-11-08",
    "supports": "Q3 2017 print; FY2017 and Q4 2017 guides; FY2018 outlook"
+  },
+  "MA88": {
+   "published": "2018-02-15",
+   "title": "Marriott International Q4 2017 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018001699/mar-2017q4earningsreleasee.htm",
+   "accepted": "accepted 2018-02-14 17:32 ET (after the close), so dated 2018-02-15",
+   "supports": "Q4 2017 print, FY2017 actuals, FY2018 and Q1 2018 guides"
+  },
+  "MA89": {
+   "published": "2018-02-15",
+   "title": "Marriott International FY2017 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018001756/mar-q42017x10k.htm",
+   "accepted": "accepted 2018-02-15 15:50 ET (during the session)",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  "MA90": {
+   "published": "2018-05-09",
+   "title": "Marriott International Q1 2018 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018006289/mar-2018q1earningsreleasee.htm",
+   "accepted": "accepted 2018-05-08 17:26 ET (after the close), so dated 2018-05-09",
+   "supports": "Q1 2018 print (ASC 606 basis); FY2018 and Q2 2018 guides"
+  },
+  "MA91": {
+   "published": "2018-05-10",
+   "title": "Marriott International Q1 2018 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018006463/mar-q12018x10q.htm",
+   "accepted": "accepted 2018-05-10 09:50 ET (during the session)",
+   "supports": "the quarterly cash dividend of $0.41 a share declared on May 4, 2018"
+  },
+  "MA92": {
+   "published": "2018-07-25",
+   "title": "Marriott International 8-K of 2018-07-25 (Ex. 99, 2017 recast under ASU 2014-09)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018009570/a2017recastexhibit99.htm",
+   "accepted": "accepted 2018-07-25 08:01 ET (before the open)",
+   "supports": "FY2017 and its quarters recast under the new revenue standard (full retrospective)"
+  },
+  "MA93": {
+   "published": "2018-08-07",
+   "title": "Marriott International Q2 2018 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018010559/mar-2018q2earningsreleasee.htm",
+   "accepted": "accepted 2018-08-06 17:11 ET (after the close), so dated 2018-08-07",
+   "supports": "Q2 2018 print; FY2018 and Q3 2018 guides"
+  },
+  "MA94": {
+   "published": "2018-11-06",
+   "title": "Marriott International Q3 2018 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828018013657/mar-2018q3earningsreleasee.htm",
+   "accepted": "accepted 2018-11-05 17:23 ET (after the close), so dated 2018-11-06",
+   "supports": "Q3 2018 print; FY2018 and Q4 2018 guides"
+  },
+  "MA95": {
+   "published": "2019-03-01",
+   "title": "Marriott International Q4 2018 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019002290/mar-2018q4earningsreleasee.htm",
+   "accepted": "accepted 2019-02-28 16:55 ET (after the close), so dated 2019-03-01",
+   "supports": "Q4 2018 print, FY2018 actuals, FY2019 and Q1 2019 guides"
+  },
+  "MA96": {
+   "published": "2019-03-01",
+   "title": "Marriott International FY2018 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019002337/mar-q42018x10k.htm",
+   "accepted": "accepted 2019-03-01 12:09 ET (during the session)",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  "MA97": {
+   "published": "2019-05-10",
+   "title": "Marriott International Q1 2019 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019006494/mar-2019q1earningsreleasee.htm",
+   "accepted": "accepted 2019-05-10 06:04 ET (before the open)",
+   "supports": "Q1 2019 print; FY2019 and Q2 2019 guides"
+  },
+  "MA98": {
+   "published": "2019-08-06",
+   "title": "Marriott International Q2 2019 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019009998/mar-2019q2earningsrelease.htm",
+   "accepted": "accepted 2019-08-05 17:15 ET (after the close), so dated 2019-08-06",
+   "supports": "Q2 2019 print; FY2019 and Q3 2019 guides"
+  },
+  "MA99": {
+   "published": "2019-08-06",
+   "title": "Marriott International Q2 2019 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019010070/mar-q22019x10q.htm",
+   "accepted": "accepted 2019-08-06 13:22 ET (during the session)",
+   "supports": "the quarterly cash dividend of $0.48 a share declared on May 10, 2019"
+  },
+  "MA100": {
+   "published": "2019-11-05",
+   "title": "Marriott International Q3 2019 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019013210/mar-2019q3exhibit99.htm",
+   "accepted": "accepted 2019-11-04 17:25 ET (after the close), so dated 2019-11-05",
+   "supports": "Q3 2019 print; FY2019 and Q4 2019 guides"
+  },
+  "MA101": {
+   "published": "2020-02-27",
+   "title": "Marriott International Q4 2019 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020002320/mar-2019q4exh99.htm",
+   "accepted": "accepted 2020-02-26 17:14 ET (after the close), so dated 2020-02-27",
+   "supports": "Q4 2019 print, FY2019 actuals, FY2020 and Q1 2020 guides"
+  },
+  "MA102": {
+   "published": "2020-02-27",
+   "title": "Marriott International FY2019 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020002376/mar-q42019x10k.htm",
+   "accepted": "accepted 2020-02-27 11:40 ET (during the session)",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  "MA103": {
+   "published": "2020-03-19",
+   "title": "Marriott International 8-K of 2020-03-18 (Ex. 99, COVID-19 update)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020003775/mar-2020covidx19ex99.htm",
+   "accepted": "accepted 2020-03-18 17:18 ET (after the close), so dated 2020-03-19",
+   "supports": "the withdrawal of every aspect of the 2020 outlook; the cash dividend suspended after the first quarter of 2020"
+  },
+  "MA104": {
+   "published": "2020-05-11",
+   "title": "Marriott International Q1 2020 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020007293/mar-2020q1er99.htm",
+   "accepted": "accepted 2020-05-11 08:22 ET (before the open)",
+   "supports": "Q1 2020 print"
+  },
+  "MA105": {
+   "published": "2020-08-10",
+   "title": "Marriott International Q2 2020 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020012239/mar-2020q2earningsrele.htm",
+   "accepted": "accepted 2020-08-10 08:07 ET (before the open)",
+   "supports": "Q2 2020 print"
+  },
+  "MA106": {
+   "published": "2020-11-06",
+   "title": "Marriott International Q3 2020 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020015865/mar-2020q3earningsrele.htm",
+   "accepted": "accepted 2020-11-06 08:12 ET (before the open)",
+   "supports": "Q3 2020 print"
+  },
+  "MA107": {
+   "published": "2021-02-18",
+   "title": "Marriott International Q4 2020 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021002419/mar-2020q4earningsreleasee.htm",
+   "accepted": "accepted 2021-02-18 08:10 ET (before the open)",
+   "supports": "Q4 2020 print, FY2020 actuals"
+  },
+  "MA108": {
+   "published": "2021-02-18",
+   "title": "Marriott International FY2020 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021002433/mar-20201231.htm",
+   "accepted": "accepted 2021-02-18 12:34 ET (during the session)",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  "MA109": {
+   "published": "2021-05-10",
+   "title": "Marriott International Q1 2021 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021009580/mar-2021q1earningsreleasee.htm",
+   "accepted": "accepted 2021-05-10 08:17 ET (before the open)",
+   "supports": "Q1 2021 print"
+  },
+  "MA110": {
+   "published": "2021-08-03",
+   "title": "Marriott International Q2 2021 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021015244/mar-2021q2earningsreleasee.htm",
+   "accepted": "accepted 2021-08-03 08:12 ET (before the open)",
+   "supports": "Q2 2021 print"
+  },
+  "MA111": {
+   "published": "2021-11-03",
+   "title": "Marriott International Q3 2021 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021021312/mar-2021q3earningsreleasee.htm",
+   "accepted": "accepted 2021-11-03 07:47 ET (before the open)",
+   "supports": "Q3 2021 print"
   }
  },
  "history_vintages": [
@@ -2465,6 +2633,826 @@
    "fcf_b": 1.383,
    "fcf_note": "cash from operations $1,582M less capital expenditures $199M",
    "groups_basis": "FY16 revenues by segment (FY2016 10-K; 2016 includes Legacy-Starwood from the Merger Date)"
+  },
+  {
+   "published": "2018-02-15",
+   "sources": [
+    "MA89",
+    "MA88",
+    "MA34",
+    "MA40",
+    "MA49",
+    "MA55",
+    "MA63",
+    "MA41",
+    "MA76",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY17",
+   "fiscal_year_ends": {
+    "2008": "2009-01-02",
+    "2009": "2010-01-01",
+    "2010": "2010-12-31",
+    "2011": "2011-12-30",
+    "2012": "2012-12-28",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31"
+   },
+   "eps_gaap": {
+    "2008": 0.97,
+    "2009": -0.97,
+    "2010": 1.21,
+    "2011": 0.55,
+    "2012": 1.72,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.64,
+    "2017": 3.61
+   },
+   "eps_sources": {
+    "2008": "MA34 (excluding restructuring costs and other charges and certain tax items, after the 2009 stock dividends; GAAP $0.97: MA89)",
+    "2009": "MA40 (excluding restructuring costs and other charges, the Timeshare strategy impairment charges and certain tax items; GAAP $-0.97: MA89)",
+    "2010": "MA49 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items; GAAP $1.21: MA89)",
+    "2011": "MA55 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges; GAAP $0.55: MA89)",
+    "2012": "MA63 (excluding the gain on the Courtyard joint venture sale; GAAP $1.72: MA89)",
+    "2013": "MA89",
+    "2014": "MA89",
+    "2015": "MA89",
+    "2016": "MA89",
+    "2017": "MA88 (excluding merger-related costs, the Avendra gain and the Tax Act provisional charge (old revenue basis); GAAP $3.61: MA89)"
+   },
+   "revenue_usd_b": {
+    "2008": 12.879,
+    "2009": 10.908,
+    "2010": 11.691,
+    "2011": 12.317,
+    "2012": 11.814,
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 17.072,
+    "2017": 22.894
+   },
+   "revenue_sources": {
+    "2008": "MA89",
+    "2009": "MA89",
+    "2010": "MA89",
+    "2011": "MA89",
+    "2012": "MA89",
+    "2013": "MA89",
+    "2014": "MA89",
+    "2015": "MA89",
+    "2016": "MA89",
+    "2017": "MA89"
+   },
+   "diluted_shares_m": {
+    "2008": 370.7,
+    "2017": 379.9
+   },
+   "shares_sources": {
+    "2008": "MA41 (370.7M, after the 2009 stock dividends)",
+    "2017": "MA89"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, and timeshare properties in 127 countries and territories under 30 brand names'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties and home and apartment sharing services for guests'; 'Economic downturns could impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business'; and 'Our 2017 full-year results reflected a year-over-year increase in the number of properties in our system, including those from the Starwood Combination, favorable demand for our brands in many markets around the world, and slow but steady economic growth' (its own FY2017 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 22894,
+    "rev_prior_m": 17072,
+    "opinc_m": 2514,
+    "pretax_m": 2332,
+    "fees_m": 3327,
+    "fees_prior_m": 2400,
+    "cash_m": 383,
+    "cfo_m": 2436,
+    "capex_m": 240
+   },
+   "prev_fy_revpar_pct": 2.2,
+   "prev_fy_occupancy": 76.0,
+   "prev_fy_occ_pts": 0.5,
+   "fcf_label": "FY17",
+   "cash_note": "cash and equivalents $383M at year-end 2017",
+   "dividend_annual": 1.32,
+   "dividend_note": "$0.33 a quarter ('Our Board of Directors declared a cash dividend of $0.33 per share on February 9, 2018, payable on March 30, 2018 to shareholders of record on February 23, 2018', FY2017 10-K)",
+   "cash_return_text": "repurchased 29.2 million shares in 2017 at an average price of $103.66; the authorization raised by 30 million shares on November 9, 2017, 32.2 million shares remaining at year-end 2017 (FY2017 10-K)",
+   "groups": [
+    [
+     "North American Full-Service",
+     14.3,
+     37.8
+    ],
+    [
+     "North American Limited-Service",
+     4.002,
+     12.4
+    ],
+    [
+     "Asia Pacific",
+     1.344,
+     76.6
+    ],
+    [
+     "Other International",
+     2.658,
+     41.8
+    ],
+    [
+     "Unallocated corporate",
+     0.59,
+     18.2
+    ]
+   ],
+   "groups_doc": "FY2017 10-K; 2016 recast for the Asia Pacific segment",
+   "groups_rev_m": 22894,
+   "eps_normalized": {
+    "2008": 1.49,
+    "2009": 0.93,
+    "2010": 1.02,
+    "2011": 1.31,
+    "2012": 1.64,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.64,
+    "2017": 4.36
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them, each from the latest filing that publishes it (the ACN rule): 2008 $1.49 (excluding restructuring costs and other charges and certain tax items, after the 2009 stock dividends, MA34); 2009 $0.93 (excluding restructuring costs and other charges, the Timeshare strategy impairment charges and certain tax items, MA40); 2010 $1.02 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items, MA49); 2011 $1.31 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges, MA55); 2012 $1.64 (excluding the gain on the Courtyard joint venture sale, MA63); 2017 $4.36 (excluding merger-related costs, the Avendra gain and the Tax Act provisional charge (old revenue basis), MA88); the other years at GAAP",
+   "prev_fy_op_margin_note": "FY17 operating income $2,514M / revenues $22,894M (MA88, as adjusted)",
+   "tax_rate": 0.2903,
+   "tax_note": "FY17 provision $677M on $2,332M (MA88, as adjusted)",
+   "other_note": "FY17 operating income less income before income taxes ($2,514M - $2,332M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2017",
+   "prev_fy_op_margin": 10.98,
+   "prev_fy_sales_growth": 34.1,
+   "prev_fy_fees_pct": 38.6,
+   "other_expense_b": 0.182,
+   "cash_b": 0.383,
+   "fcf_b": 2.196,
+   "fcf_note": "cash from operations $2,436M less capital expenditures $240M",
+   "groups_basis": "FY17 revenues by segment (FY2017 10-K; 2016 recast for the Asia Pacific segment)"
+  },
+  {
+   "published": "2018-07-25",
+   "sources": [
+    "MA92",
+    "MA34",
+    "MA40",
+    "MA49",
+    "MA55",
+    "MA63",
+    "MA89",
+    "MA41",
+    "MA76",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY17",
+   "fiscal_year_ends": {
+    "2008": "2009-01-02",
+    "2009": "2010-01-01",
+    "2010": "2010-12-31",
+    "2011": "2011-12-30",
+    "2012": "2012-12-28",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31"
+   },
+   "eps_gaap": {
+    "2008": 0.97,
+    "2009": -0.97,
+    "2010": 1.21,
+    "2011": 0.55,
+    "2012": 1.72,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.64,
+    "2017": 3.84
+   },
+   "eps_sources": {
+    "2008": "MA34 (excluding restructuring costs and other charges and certain tax items, after the 2009 stock dividends; GAAP $0.97: MA92)",
+    "2009": "MA40 (excluding restructuring costs and other charges, the Timeshare strategy impairment charges and certain tax items; GAAP $-0.97: MA92)",
+    "2010": "MA49 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items; GAAP $1.21: MA92)",
+    "2011": "MA55 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges; GAAP $0.55: MA92)",
+    "2012": "MA63 (excluding the gain on the Courtyard joint venture sale; GAAP $1.72: MA92)",
+    "2013": "MA89",
+    "2014": "MA89",
+    "2015": "MA89",
+    "2016": "MA89",
+    "2017": "MA92 (ASU 2014-09 recast; MA89 $3.61 on the old basis)"
+   },
+   "revenue_usd_b": {
+    "2008": 12.879,
+    "2009": 10.908,
+    "2010": 11.691,
+    "2011": 12.317,
+    "2012": 11.814,
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 17.072,
+    "2017": 20.452
+   },
+   "revenue_sources": {
+    "2008": "MA89",
+    "2009": "MA89",
+    "2010": "MA89",
+    "2011": "MA89",
+    "2012": "MA89",
+    "2013": "MA89",
+    "2014": "MA89",
+    "2015": "MA89",
+    "2016": "MA89",
+    "2017": "MA92 (ASU 2014-09 recast; MA89 $22,894M on the old basis)"
+   },
+   "diluted_shares_m": {
+    "2008": 370.7,
+    "2017": 379.9
+   },
+   "shares_sources": {
+    "2008": "MA41 (370.7M, after the 2009 stock dividends)",
+    "2017": "MA92 (379.9M, as in MA89)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, and timeshare properties in 127 countries and territories under 30 brand names'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties and home and apartment sharing services for guests'; 'Economic downturns could impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business'; and 'Our 2017 full-year results reflected a year-over-year increase in the number of properties in our system, including those from the Starwood Combination, favorable demand for our brands in many markets around the world, and slow but steady economic growth' (its own FY2017 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 20452,
+    "rev_prior_m": 17072,
+    "opinc_m": 2504,
+    "pretax_m": 2982,
+    "fees_m": 3295,
+    "fees_prior_m": 2400,
+    "cash_m": 383,
+    "cfo_m": 2436,
+    "capex_m": 240
+   },
+   "prev_fy_revpar_pct": 2.2,
+   "prev_fy_occupancy": 76.0,
+   "prev_fy_occ_pts": 0.5,
+   "fcf_label": "FY17",
+   "cash_note": "cash and equivalents $383M at year-end 2017",
+   "dividend_annual": 1.32,
+   "dividend_note": "$0.33 a quarter ('Our Board of Directors declared a cash dividend of $0.33 per share on February 9, 2018, payable on March 30, 2018 to shareholders of record on February 23, 2018', FY2017 10-K)",
+   "cash_return_text": "repurchased 29.2 million shares in 2017 at an average price of $103.66; the authorization raised by 30 million shares on November 9, 2017, 32.2 million shares remaining at year-end 2017 (FY2017 10-K)",
+   "groups": [
+    [
+     "North American Full-Service",
+     14.3,
+     37.8
+    ],
+    [
+     "North American Limited-Service",
+     4.002,
+     12.4
+    ],
+    [
+     "Asia Pacific",
+     1.344,
+     76.6
+    ],
+    [
+     "Other International",
+     2.658,
+     41.8
+    ],
+    [
+     "Unallocated corporate",
+     0.59,
+     18.2
+    ]
+   ],
+   "groups_doc": "FY2017 10-K; 2016 recast for the Asia Pacific segment",
+   "dividend_published": "2018-02-15",
+   "groups_rev_m": 22894,
+   "eps_normalized": {
+    "2008": 1.49,
+    "2009": 0.93,
+    "2010": 1.02,
+    "2011": 1.31,
+    "2012": 1.64,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.64,
+    "2017": 3.84
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them, each from the latest filing that publishes it (the ACN rule): 2008 $1.49 (excluding restructuring costs and other charges and certain tax items, after the 2009 stock dividends, MA34); 2009 $0.93 (excluding restructuring costs and other charges, the Timeshare strategy impairment charges and certain tax items, MA40); 2010 $1.02 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items, MA49); 2011 $1.31 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges, MA55); 2012 $1.64 (excluding the gain on the Courtyard joint venture sale, MA63); the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); FY2017 as recast under ASU 2014-09 (the 8-K of 2018-07-25), earlier years as first published (a seam)",
+   "prev_fy_op_margin_note": "FY17 operating income $2,504M / revenues $20,452M (MA92, as recast, reported)",
+   "tax_rate": 0.5107,
+   "tax_note": "FY17 provision $1,523M on $2,982M (MA92, as recast, reported)",
+   "other_note": "FY17 operating income less income before income taxes ($2,504M - $2,982M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2017",
+   "prev_fy_op_margin": 12.24,
+   "prev_fy_sales_growth": 19.8,
+   "prev_fy_fees_pct": 37.3,
+   "other_expense_b": -0.478,
+   "cash_b": 0.383,
+   "fcf_b": 2.196,
+   "fcf_note": "cash from operations $2,436M less capital expenditures $240M",
+   "groups_basis": "FY17 revenues by segment (FY2017 10-K; 2016 recast for the Asia Pacific segment)"
+  },
+  {
+   "published": "2019-03-01",
+   "sources": [
+    "MA96",
+    "MA95",
+    "MA40",
+    "MA49",
+    "MA55",
+    "MA63",
+    "MA50",
+    "MA76",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY18",
+   "fiscal_year_ends": {
+    "2009": "2010-01-01",
+    "2010": "2010-12-31",
+    "2011": "2011-12-30",
+    "2012": "2012-12-28",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31"
+   },
+   "eps_gaap": {
+    "2009": -0.97,
+    "2010": 1.21,
+    "2011": 0.55,
+    "2012": 1.72,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38
+   },
+   "eps_sources": {
+    "2009": "MA40 (excluding restructuring costs and other charges, the Timeshare strategy impairment charges and certain tax items; GAAP $-0.97: MA96)",
+    "2010": "MA49 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items; GAAP $1.21: MA96)",
+    "2011": "MA55 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges; GAAP $0.55: MA96)",
+    "2012": "MA63 (excluding the gain on the Courtyard joint venture sale; GAAP $1.72: MA96)",
+    "2013": "MA96",
+    "2014": "MA96",
+    "2015": "MA96",
+    "2016": "MA96 (ASU 2014-09)",
+    "2017": "MA96 (ASU 2014-09)",
+    "2018": "MA96 (ASU 2014-09)"
+   },
+   "revenue_usd_b": {
+    "2009": 10.908,
+    "2010": 11.691,
+    "2011": 12.317,
+    "2012": 11.814,
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758
+   },
+   "revenue_sources": {
+    "2009": "MA96",
+    "2010": "MA96",
+    "2011": "MA96",
+    "2012": "MA96",
+    "2013": "MA96",
+    "2014": "MA96",
+    "2015": "MA96",
+    "2016": "MA96 (ASU 2014-09)",
+    "2017": "MA96 (ASU 2014-09)",
+    "2018": "MA96 (ASU 2014-09)"
+   },
+   "diluted_shares_m": {
+    "2009": 356.4,
+    "2018": 354.2
+   },
+   "shares_sources": {
+    "2009": "MA50 (356.4M)",
+    "2018": "MA96"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, and timeshare properties in 130 countries and territories under 30 brand names'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties and home and apartment sharing services for guests'; 'Economic downturns could impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business'; 'Our 2018 full-year results reflected a year-over-year increase in the number of properties in our system, favorable demand for our brands in many markets around the world, and generally favorable economic conditions'; and 'On November 30, 2018, we announced a data security incident involving unauthorized access to the Starwood reservations database (the “Data Security Incident”)' ... 'The Data Security Incident could have numerous adverse effects on our business' (its own FY2018 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 20758,
+    "rev_prior_m": 20452,
+    "opinc_m": 2366,
+    "pretax_m": 2345,
+    "fees_m": 3638,
+    "fees_prior_m": 3295,
+    "cash_m": 316,
+    "cfo_m": 2357,
+    "capex_m": 556
+   },
+   "prev_fy_revpar_pct": 1.8,
+   "prev_fy_occupancy": 75.7,
+   "prev_fy_occ_pts": -0.2,
+   "fcf_label": "FY18",
+   "cash_note": "cash and equivalents $316M at year-end 2018",
+   "dividend_annual": 1.64,
+   "dividend_note": "$0.41 a quarter ('Our Board of Directors declared a cash dividend of $0.41 per share on February 15, 2019, payable on March 29, 2019 to shareholders of record on March 1, 2019', FY2018 10-K)",
+   "cash_return_text": "repurchased 21.5 million shares in 2018 at an average price of $130.67; 10.7 million shares remaining at year-end 2018 and the authorization raised by 25 million shares on February 15, 2019 (FY2018 10-K)",
+   "groups": [
+    [
+     "North American Full-Service",
+     13.072,
+     1.3
+    ],
+    [
+     "North American Limited-Service",
+     3.217,
+     -0.1
+    ],
+    [
+     "Asia Pacific",
+     1.118,
+     6.1
+    ],
+    [
+     "Other International",
+     2.266,
+     -1.0
+    ],
+    [
+     "Unallocated corporate",
+     1.085,
+     10.5
+    ]
+   ],
+   "groups_doc": "FY2018 10-K; total segment revenue including cost reimbursements, both years under ASU 2014-09",
+   "eps_normalized": {
+    "2009": 0.93,
+    "2010": 1.02,
+    "2011": 1.31,
+    "2012": 1.64,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them, each from the latest filing that publishes it (the ACN rule): 2009 $0.93 (excluding restructuring costs and other charges, the Timeshare strategy impairment charges and certain tax items, MA40); 2010 $1.02 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items, MA49); 2011 $1.31 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges, MA55); 2012 $1.64 (excluding the gain on the Courtyard joint venture sale, MA63); the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam)",
+   "prev_fy_op_margin_note": "FY18 operating income $2,366M / revenues $20,758M (MA96, as reported)",
+   "tax_rate": 0.1868,
+   "tax_note": "FY18 provision $438M on $2,345M (MA96, as reported)",
+   "other_note": "FY18 operating income less income before income taxes ($2,366M - $2,345M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2018",
+   "prev_fy_op_margin": 11.4,
+   "prev_fy_sales_growth": 1.5,
+   "prev_fy_fees_pct": 10.4,
+   "other_expense_b": 0.021,
+   "cash_b": 0.316,
+   "fcf_b": 1.801,
+   "fcf_note": "cash from operations $2,357M less capital expenditures $556M",
+   "groups_basis": "FY18 revenues by segment (FY2018 10-K; total segment revenue including cost reimbursements, both years under ASU 2014-09)"
+  },
+  {
+   "published": "2020-02-27",
+   "sources": [
+    "MA102",
+    "MA101",
+    "MA49",
+    "MA55",
+    "MA63",
+    "MA56",
+    "MA76",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY19",
+   "fiscal_year_ends": {
+    "2010": "2010-12-31",
+    "2011": "2011-12-30",
+    "2012": "2012-12-28",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31"
+   },
+   "eps_gaap": {
+    "2010": 1.21,
+    "2011": 0.55,
+    "2012": 1.72,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8
+   },
+   "eps_sources": {
+    "2010": "MA49 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items; GAAP $1.21: MA102)",
+    "2011": "MA55 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges; GAAP $0.55: MA102)",
+    "2012": "MA63 (excluding the gain on the Courtyard joint venture sale; GAAP $1.72: MA102)",
+    "2013": "MA102",
+    "2014": "MA102",
+    "2015": "MA102",
+    "2016": "MA102 (ASU 2014-09)",
+    "2017": "MA102 (ASU 2014-09)",
+    "2018": "MA102 (ASU 2014-09)",
+    "2019": "MA102 (ASU 2014-09)"
+   },
+   "revenue_usd_b": {
+    "2010": 11.691,
+    "2011": 12.317,
+    "2012": 11.814,
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972
+   },
+   "revenue_sources": {
+    "2010": "MA102",
+    "2011": "MA102",
+    "2012": "MA102",
+    "2013": "MA102",
+    "2014": "MA102",
+    "2015": "MA102",
+    "2016": "MA102 (ASU 2014-09)",
+    "2017": "MA102 (ASU 2014-09)",
+    "2018": "MA102 (ASU 2014-09)",
+    "2019": "MA102 (ASU 2014-09)"
+   },
+   "diluted_shares_m": {
+    "2010": 378.3,
+    "2019": 335.5
+   },
+   "shares_sources": {
+    "2010": "MA56 (378.3M)",
+    "2019": "MA102"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, and timeshare properties in 134 countries and territories under 30 brand names'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests with other hotel properties and home sharing or rental services'; 'Economic downturns and other global, national, and regional conditions could impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business'; 'The Data Security Incident could have numerous adverse effects on our business'; 'Our 2019 full-year results reflected a year-over-year increase in the number of properties in our system, strong demand for our brands in many markets around the world, and generally favorable economic conditions'; and 'The Coronavirus outbreak currently is impacting our operations in China and other parts of our Asia Pacific segment by necessitating the closure of numerous hotels in mainland China and significantly reducing demand in Greater China and certain other Asia Pacific markets' ... 'We cannot presently estimate the overall operational and financial impact, which could be material to our 2020 results, and which is highly dependent on the breadth and duration of the outbreak and could be affected by other factors we are not currently able to predict' (its own FY2019 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 20972,
+    "rev_prior_m": 20758,
+    "opinc_m": 1800,
+    "pretax_m": 1599,
+    "fees_m": 3823,
+    "fees_prior_m": 3638,
+    "cash_m": 225,
+    "cfo_m": 1685,
+    "capex_m": 653
+   },
+   "prev_fy_revpar_pct": 1.0,
+   "prev_fy_occupancy": 75.8,
+   "prev_fy_occ_pts": -0.1,
+   "fcf_label": "FY19",
+   "cash_note": "cash and equivalents $225M at year-end 2019",
+   "dividend_annual": 1.92,
+   "dividend_note": "$0.48 a quarter ('Our Board of Directors declared a cash dividend of $0.48 per share on February 14, 2020, payable on March 31, 2020 to shareholders of record on February 28, 2020', FY2019 10-K)",
+   "cash_return_text": "repurchased 17.3 million shares in 2019 at an average price of $130.79; 18.4 million shares remaining at year-end 2019 (FY2019 10-K)",
+   "groups": [
+    [
+     "North American Full-Service",
+     13.455,
+     2.9
+    ],
+    [
+     "North American Limited-Service",
+     3.378,
+     5.0
+    ],
+    [
+     "Asia Pacific",
+     1.189,
+     6.4
+    ],
+    [
+     "Other International",
+     2.355,
+     3.9
+    ],
+    [
+     "Unallocated corporate",
+     0.595,
+     -45.2
+    ]
+   ],
+   "groups_doc": "FY2019 10-K; total segment revenue including cost reimbursements",
+   "eps_normalized": {
+    "2010": 1.02,
+    "2011": 1.31,
+    "2012": 1.64,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them, each from the latest filing that publishes it (the ACN rule): 2010 $1.02 (as if the Timeshare spin-off had occurred at the start of 2010, and excluding other charges and certain tax items, MA49); 2011 $1.31 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges, MA55); 2012 $1.64 (excluding the gain on the Courtyard joint venture sale, MA63); the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam)",
+   "prev_fy_op_margin_note": "FY19 operating income $1,800M / revenues $20,972M (MA102, as reported)",
+   "tax_rate": 0.2039,
+   "tax_note": "FY19 provision $326M on $1,599M (MA102, as reported)",
+   "other_note": "FY19 operating income less income before income taxes ($1,800M - $1,599M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2019",
+   "prev_fy_op_margin": 8.58,
+   "prev_fy_sales_growth": 1.0,
+   "prev_fy_fees_pct": 5.1,
+   "other_expense_b": 0.201,
+   "cash_b": 0.225,
+   "fcf_b": 1.032,
+   "fcf_note": "cash from operations $1,685M less capital expenditures $653M",
+   "groups_basis": "FY19 revenues by segment (FY2019 10-K; total segment revenue including cost reimbursements)"
+  },
+  {
+   "published": "2021-02-18",
+   "sources": [
+    "MA108",
+    "MA107",
+    "MA55",
+    "MA63",
+    "MA102",
+    "MA64",
+    "MA76",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY20",
+   "fiscal_year_ends": {
+    "2011": "2011-12-30",
+    "2012": "2012-12-28",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31"
+   },
+   "eps_gaap": {
+    "2011": 0.55,
+    "2012": 1.72,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2020": -0.82
+   },
+   "eps_sources": {
+    "2011": "MA55 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges; GAAP $0.55: MA108)",
+    "2012": "MA63 (excluding the gain on the Courtyard joint venture sale; GAAP $1.72: MA108)",
+    "2013": "MA102 (the FY2020 10-K shows five years)",
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA108 (ASU 2014-09)",
+    "2020": "MA108 (ASU 2014-09)"
+   },
+   "eps_excluded": {
+    "2020": "FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)"
+   },
+   "revenue_usd_b": {
+    "2011": 12.317,
+    "2012": 11.814,
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972,
+    "2020": 10.571
+   },
+   "revenue_sources": {
+    "2011": "MA102 (the FY2020 10-K shows five years)",
+    "2012": "MA102 (the FY2020 10-K shows five years)",
+    "2013": "MA102 (the FY2020 10-K shows five years)",
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA108 (ASU 2014-09)",
+    "2020": "MA108 (ASU 2014-09)"
+   },
+   "diluted_shares_m": {
+    "2011": 362.3,
+    "2020": 325.8
+   },
+   "shares_sources": {
+    "2011": "MA64 (362.3M)",
+    "2020": "MA108 (basic: anti-dilutive awards excluded)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, and timeshare properties in 133 countries and territories under 30 brand names'; 'COVID-19 has had a material detrimental impact on our business and financial results, and such impact could continue and may worsen for an unknown period of time'; 'Worldwide comparable systemwide constant dollar RevPAR declined 23 percent in the 2020 first quarter, 84 percent in the 2020 second quarter, 66 percent in the 2020 third quarter, and 64 percent in the 2020 fourth quarter, compared to the same periods in 2019'; 'we expect that there will not be a significant rebound in travel and lodging demand until there is widespread distribution of effective vaccines'; 'Even after COVID-19 subsides or effective vaccines or treatments become widely available, our business, markets, growth prospects and business model could continue to be materially impacted or altered'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests with other hotel properties and home sharing or rental services'; 'Economic downturns and other global, national, and regional conditions could further impact our financial results and growth'; and 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business' (its own FY2020 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 10571,
+    "rev_prior_m": 20972,
+    "opinc_m": 84,
+    "pretax_m": -466,
+    "fees_m": 1683,
+    "fees_prior_m": 3823,
+    "cash_m": 877,
+    "cfo_m": 1639,
+    "capex_m": 135
+   },
+   "prev_fy_revpar_pct": -67.3,
+   "prev_fy_occupancy": 28.6,
+   "prev_fy_occ_pts": -47.2,
+   "fcf_label": "FY20",
+   "cash_note": "cash and equivalents $877M at year-end 2020",
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We do not anticipate declaring further cash dividends until business conditions improve and are prohibited from doing so for the duration of the Covenant Waiver Period under our Credit Facility' (the last, $0.48, declared February 14, 2020 and paid March 31, 2020; FY2020 10-K)",
+   "cash_return_text": "repurchased 1.0 million shares in 2020 (all in the first quarter) at an average price of $145.42; 'We do not anticipate repurchasing additional shares until business conditions improve, and are prohibited from doing so for the duration of the Covenant Waiver Period under our Credit Facility, with certain exceptions' (FY2020 10-K)",
+   "groups": [
+    [
+     "U.S. & Canada",
+     7.905,
+     -53.0
+    ],
+    [
+     "Asia Pacific",
+     0.612,
+     -48.5
+    ],
+    [
+     "EMEA",
+     0.758,
+     -60.8
+    ],
+    [
+     "Unallocated corporate and other",
+     1.296,
+     27.3
+    ]
+   ],
+   "groups_doc": "FY2020 10-K; 2019 recast for the U.S. & Canada / Asia Pacific / EMEA segments",
+   "eps_normalized": {
+    "2011": 1.31,
+    "2012": 1.64,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them, each from the latest filing that publishes it (the ACN rule): 2011 $1.31 (as if the Timeshare spin-off had occurred at the start of 2011, and excluding other charges, MA55); 2012 $1.64 (excluding the gain on the Courtyard joint venture sale, MA63); the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam); FY2020 excluded: FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)",
+   "prev_fy_op_margin_note": "FY20 operating income $84M / revenues $10,571M (MA108, a benefit, as reported)",
+   "tax_rate": 0.427,
+   "tax_note": "FY20 tax benefit $199M on a pretax loss of $466M (MA108; rate on a loss)",
+   "other_note": "FY20 operating income less income before income taxes ($84M - $-466M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2020",
+   "prev_fy_op_margin": 0.79,
+   "prev_fy_sales_growth": -49.6,
+   "prev_fy_fees_pct": -56.0,
+   "other_expense_b": 0.55,
+   "cash_b": 0.877,
+   "fcf_b": 1.504,
+   "fcf_note": "cash from operations $1,639M less capital expenditures $135M",
+   "groups_basis": "FY20 revenues by segment (FY2020 10-K; 2019 recast for the U.S. & Canada / Asia Pacific / EMEA segments)"
   }
  ],
  "prints": [
@@ -4806,6 +5794,863 @@
    "occupancy_bp": -20.0,
    "diluted_shares_m": 376.6,
    "cash_b": 0.508
+  },
+  {
+   "quarter": "Q4 2017",
+   "fy": 2017,
+   "q": 4,
+   "published": "2018-02-15",
+   "source": "MA88",
+   "release": "Feb 14",
+   "release_time": "after the close on Feb 14: 8-K accepted 17:32 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2017-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 284,
+    "base_prior_m": 268,
+    "fran_m": 411,
+    "fran_prior_m": 356,
+    "inc_m": 170,
+    "inc_prior_m": 149,
+    "rev_total_m": 5875,
+    "rev_total_prior_m": 5456,
+    "opinc_m": 629,
+    "opinc_prior_m": 577,
+    "diluted_shares_m": 369.9,
+    "cash_m": 383
+   },
+   "basis_note": "Q4 2017 as adjusted (as reported less $59 million of merger-related adjustments; the 'other adjustments', the Avendra gain and the provisional Tax Act charge, sit below operating income; revenues and fees unadjusted) against Q4 2016 as adjusted (less $136 million of merger-related costs), as the release's Percent Better/(Worse) column 'Adjusted 2017 vs. Adjusted 2016' compares them (page A-3): no longer 'combined', Starwood being in both quarters; three months ended December 31, 2017 and December 31, 2016 (92 days each); fees on the reclassified presentation (credit card and residential branding fees in franchise fees: Q4 2016 franchise fees $356M here, $296M in the Q4 2016 release); the last quarter on the pre-ASC 606 basis (the release says 2018 guidance reflects the new revenue standard and 2017 will be recast); RevPAR from the Combined Key Lodging Statistics, in constant dollars, 2016 statistics combined; the full-year comparison (page A-4) is adjusted 2017 against combined 2016",
+   "revpar_pct": 3.9,
+   "occupancy": 72.9,
+   "occupancy_pts": 1.3,
+   "eps_q": 1.12,
+   "eps_q_prior": 0.85,
+   "eps_note": "as adjusted: excluding $59 million ($47 million after-tax) of merger-related adjustments, the $659 million ($400 million after-tax) Avendra gain and the $567 million provisional charge resulting from the Tax Cuts and Jobs Act of 2017 ($0.54 as reported); one-offs only: on this pre-ASC 606 basis cost reimbursements equal reimbursed costs ($4,557M) and are not adjusted; the adjusted provision keeps $21 million of benefits from earnings in lower tax jurisdictions, a $10 million stock-based compensation (ASU 2016-09) benefit and $7 million of net favorable discrete items, less $17 million on higher earnings; year-ago $0.85 as adjusted (excluding $136 million ($90 million after-tax) of merger-related costs; $0.62 as reported)",
+   "ww_revpar_note": "In the 2017 fourth quarter, worldwide comparable systemwide constant dollar RevPAR increased 4.6 percent (a 5.3 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 7.4 million shares of common stock in the fourth quarter at a cost of $925 million at an average price of $124.99. For full year 2017, Marriott repurchased 29.2 million shares of common stock at a cost of $3.0 billion at an average price of $103.66. To date in 2018, the company has repurchased 2.3 million shares for $315 million at an average price of $139.02.",
+   "next_print": "Q1 2018 print (late April)",
+   "sales_b": 5.875,
+   "sales_pct": 7.7,
+   "fees_m": 865,
+   "fees_prior_m": 773,
+   "fees_pct": 11.9,
+   "op_margin": 10.71,
+   "op_margin_bp": 13.1,
+   "occupancy_bp": 130.0,
+   "diluted_shares_m": 369.9,
+   "cash_b": 0.383,
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 4.36,
+    "eps_gaap": 3.61,
+    "revenue_usd_b": 22.894,
+    "diluted_shares_m": 379.9,
+    "raw": {
+     "rev_m": 22894,
+     "rev_prior_m": 17072,
+     "rev_adj_m": 22891,
+     "opinc_m": 2514,
+     "pretax_m": 2332,
+     "tax_m": 677,
+     "fees_m": 3327,
+     "fees_prior_m": 3072,
+     "cash_m": 383
+    },
+    "op_margin": 10.98,
+    "sales_growth": 34.1,
+    "fees_pct": 8.3,
+    "revpar_pct": 2.2,
+    "occupancy": 76.0,
+    "occupancy_pts": 0.5,
+    "other_expense_b": 0.182,
+    "tax_rate": 0.2903,
+    "cash_b": 0.383,
+    "groups": null,
+    "normalization_note": "FY17 $4.36 as adjusted, excluding $155 million ($116 million after-tax) of merger-related adjustments, the $659 million ($400 million after-tax) Avendra gain and the $567 million provisional Tax Cuts and Jobs Act charge, one-offs only (cost reimbursements and reimbursed costs are equal and unadjusted on this pre-ASC 606 basis) (GAAP $3.61), the Q4 2017 release (page A-4); its comparison is combined FY2016 $3.30 (Marriott and Starwood as if the acquisition and Starwood's timeshare sale had been completed on January 1, 2015: merger-related costs and a $91 million loss on cumulative translation adjustment removed, taxes at 32.5 percent, 394.4 million shares); FY2016 as reported $2.64 (295.7 million shares, Starwood from September 23, 2016); the release publishes no FY2016 adjusted EPS on the reported basis; basic EPS $3.66 reported and $4.41 adjusted (FY2016 $2.68 reported, $3.35 combined); operating income ($2,514M), income before income taxes ($2,332M) and the provision ($677M) as adjusted ($2,359M, $2,836M and $1,464M as reported); rev_adj $22,891M excludes $3M of merger-related revenue adjustments; fees $3,327M against combined 2016 $3,072M, the release's comparison (reported 2016, reclassified: $2,400M); rev_prior is 2016 as reported ($17,072M; combined $22,483M); RevPAR is the full-year company-operated North American row (constant dollars, 2016 statistics combined); twelve months ended December 31, 2017 and 2016",
+    "op_margin_note": "FY17 operating income $2,514M / revenues $22,891M (Q4 2017 release)",
+    "tax_note": "FY17 provision $677M on $2,332M",
+    "doc": "Q4 2017 release"
+   }
+  },
+  {
+   "quarter": "Q1 2018",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-05-09",
+   "source": "MA90",
+   "release": "May 8",
+   "release_time": "after the close on May 8: 8-K accepted 17:26 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2018-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 273,
+    "base_prior_m": 264,
+    "fran_m": 417,
+    "fran_prior_m": 355,
+    "inc_m": 155,
+    "inc_prior_m": 140,
+    "rev_total_m": 5006,
+    "rev_total_prior_m": 4912,
+    "opinc_m": 500,
+    "opinc_prior_m": 546,
+    "diluted_shares_m": 363.3,
+    "cash_m": 701
+   },
+   "basis_note": "as reported on the ASC 606 basis (ASU 2014-09 adopted January 1, 2018, full retrospective): Q1 2018 against Q1 2017 recast, as the release's 'Reported 2018 vs. 2017' column compares them (page A-1, footnote 10); three months ended March 31, 2018 and March 31, 2017 (90 days each); fees = base management + franchise + incentive ('Gross Fee Revenues' $845M against $759M recast; the Q1 2017 release had $782M on the old basis), contract investment amortization ($18M; $11M) now a separate deduction to net fee revenues; total revenues include cost reimbursement revenue ($3,773M; $3,736M) and operating income is after reimbursed expenses ($3,835M; $3,696M); the company's adjusted total revenues (excluding cost reimbursement revenue) $1,233M against $1,176M and adjusted operating income $596M against $554M (+8 percent; also excluding merger-related costs, charges and other); RevPAR from the Key Lodging Statistics (no longer 'combined'), in constant dollars",
+   "revpar_pct": 1.4,
+   "occupancy": 73.0,
+   "occupancy_pts": 0.1,
+   "eps_q": 1.09,
+   "eps_q_prior": 0.95,
+   "eps_note": "as reported ($1.09 against $0.95 for Q1 2017 recast under ASC 606); the company's adjusted diluted EPS, $1.34 against $0.96 (+40 percent; adjusted net income $487M against $375M), excludes cost reimbursement revenue and reimbursed expenses (a timing effect: reimbursed expenses exceeded the revenue by $62M in Q1 2018, against a $40M surplus in Q1 2017), merger-related costs, charges and other ($34M; $48M), a $5M increase in the Avendra gain and a $22M net Tax Act charge, with their tax effect: not a one-off-only figure, so not used, and the release publishes none that excludes only one-offs; reported Q1 2018 includes the $53 million gain on the sale of two hotels in Buenos Aires and the $35 million incremental retirement contribution in G&A",
+   "ww_revpar_note": "In the 2018 first quarter, worldwide comparable systemwide constant dollar RevPAR increased 3.6 percent (a 5.5 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 5.6 million shares of common stock in the 2018 first quarter for $782 million at an average price of $139.20 per share. Year-to-date through May 8, the company has repurchased 7.9 million shares for $1.1 billion at an average price of $137.95 per share.",
+   "next_print": "Q2 2018 print (mid-July)",
+   "sales_b": 5.006,
+   "sales_pct": 1.9,
+   "fees_m": 845,
+   "fees_prior_m": 759,
+   "fees_pct": 11.3,
+   "op_margin": 9.99,
+   "op_margin_bp": -112.8,
+   "occupancy_bp": 10.0,
+   "diluted_shares_m": 363.3,
+   "cash_b": 0.701
+  },
+  {
+   "quarter": "Q2 2018",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-08-07",
+   "source": "MA93",
+   "release": "Aug 6",
+   "release_time": "after the close on Aug 6: 8-K accepted 17:11 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2018-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 300,
+    "base_prior_m": 285,
+    "fran_m": 475,
+    "fran_prior_m": 408,
+    "inc_m": 176,
+    "inc_prior_m": 155,
+    "rev_total_m": 5346,
+    "rev_total_prior_m": 5211,
+    "opinc_m": 740,
+    "opinc_prior_m": 744,
+    "diluted_shares_m": 357.3,
+    "cash_m": 366
+   },
+   "basis_note": "as reported on the ASC 606 basis: Q2 2018 against Q2 2017 recast, as the release's 'Reported 2018 vs. 2017' column compares them (page A-1, footnote 10); three months ended June 30, 2018 and June 30, 2017 (91 days each); fees = base management + franchise + incentive (gross fee revenues $951M against $848M recast; $849M in the Q2 2017 release on the old basis); total revenues include cost reimbursement revenue ($3,985M; $3,927M), operating income is after reimbursed expenses ($3,979M; $3,791M); the company's adjusted total revenues $1,361M against $1,284M and adjusted operating income $752M against $634M (+19 percent); RevPAR from the Key Lodging Statistics, in constant dollars",
+   "revpar_pct": 3.3,
+   "occupancy": 80.2,
+   "occupancy_pts": 0.7,
+   "eps_q": 1.71,
+   "eps_q_prior": 1.28,
+   "eps_note": "as reported ($1.71 against $1.28 for Q2 2017 recast); the company's adjusted diluted EPS, $1.73 against $1.11 (+56 percent; adjusted net income $619M against $425M), excludes cost reimbursement revenue and reimbursed expenses (a $6M surplus in Q2 2018, $136M in Q2 2017), merger-related costs, charges and other ($18M; $26M) and a $1M Avendra gain adjustment, with their tax effect: not one-offs only, so not used, and no figure excluding only one-offs is published; the release states that EPS included $0.26 from gains on asset sales ($119 million pretax, in gains and other income, net and equity in earnings) in Q2 2018 and $0.04 ($24 million pretax, the Charlotte Marriott City Center) in Q2 2017; effective tax rate 23.3 percent against 31.7 percent (the Tax Act)",
+   "ww_revpar_note": "In the 2018 second quarter, worldwide comparable systemwide constant dollar RevPAR increased 3.8 percent (a 5.1 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 6.2 million shares of common stock in the 2018 second quarter for $850 million at an average price of $136.20 per share. Year-to-date through August 6, the company has repurchased 14.1 million shares for $1.9 billion at an average price of $136.35 per share.",
+   "next_print": "Q3 2018 print (early October)",
+   "sales_b": 5.346,
+   "sales_pct": 2.6,
+   "fees_m": 951,
+   "fees_prior_m": 848,
+   "fees_pct": 12.1,
+   "op_margin": 13.84,
+   "op_margin_bp": -43.5,
+   "occupancy_bp": 70.0,
+   "diluted_shares_m": 357.3,
+   "cash_b": 0.366
+  },
+  {
+   "quarter": "Q3 2018",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-11-06",
+   "source": "MA94",
+   "release": "Nov 5",
+   "release_time": "after the close on Nov 5: 8-K accepted 17:23 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2018-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 279,
+    "base_prior_m": 269,
+    "fran_m": 502,
+    "fran_prior_m": 419,
+    "inc_m": 151,
+    "inc_prior_m": 138,
+    "rev_total_m": 5049,
+    "rev_total_prior_m": 5078,
+    "opinc_m": 570,
+    "opinc_prior_m": 790,
+    "diluted_shares_m": 350.6,
+    "cash_m": 373
+   },
+   "basis_note": "as reported on the ASC 606 basis: Q3 2018 against Q3 2017 recast, as the release's 'Reported 2018 vs. 2017' column compares them (page A-1, footnote 10); three months ended September 30, 2018 and September 30, 2017 (92 days each); fees = base management + franchise + incentive (gross fee revenues $932M against $826M recast; $831M in the Q3 2017 release on the old basis); total revenues include cost reimbursement revenue ($3,733M; $3,830M), operating income is after reimbursed expenses ($3,879M; $3,650M), hence reported operating income down 28 percent; the company's adjusted total revenues $1,316M against $1,245M (2017 also less $3M of purchase accounting revisions) and adjusted operating income $728M against $632M (+15 percent); RevPAR from the Key Lodging Statistics, in constant dollars",
+   "revpar_pct": 1.5,
+   "occupancy": 77.7,
+   "occupancy_pts": -0.5,
+   "eps_q": 1.38,
+   "eps_q_prior": 1.29,
+   "eps_note": "as reported ($1.38 against $1.29 for Q3 2017 recast); the company's adjusted diluted EPS, $1.70 against $1.05 (+62 percent; adjusted net income $598M against $397M), excludes cost reimbursement revenue and reimbursed expenses (reimbursed expenses exceeded the revenue by $146M in Q3 2018, against a $180M surplus in Q3 2017) and merger-related costs, charges and other ($12M; $22M), with their tax effect: not one-offs only, so not used, and no figure excluding only one-offs is published; the release states that EPS included $0.26 from gains on asset sales ($71 million pretax, in gains and other income, net and equity in earnings: a $55 million gain on a joint venture's sale of the JW Marriott hotel in Mexico City and an adjustment to the gain on the Fiji hotels); effective tax rate 14.9 percent (the Tax Act, the Fiji and Mexico City sales, $11 million of favorable discrete items) against 34.3 percent",
+   "ww_revpar_note": "In the 2018 third quarter, worldwide comparable systemwide constant dollar RevPAR increased 1.9 percent (a 1.2 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 6.7 million shares of common stock in the 2018 third quarter for $841 million at an average price of $125.78 per share. Year-to-date through November 5, the company has repurchased 20.8 million shares for $2.7 billion at an average price of $131.19 per share.",
+   "next_print": "Q4 2018 print (mid-February)",
+   "sales_b": 5.049,
+   "sales_pct": -0.6,
+   "fees_m": 932,
+   "fees_prior_m": 826,
+   "fees_pct": 12.8,
+   "op_margin": 11.29,
+   "op_margin_bp": -426.8,
+   "occupancy_bp": -50.0,
+   "diluted_shares_m": 350.6,
+   "cash_b": 0.373
+  },
+  {
+   "quarter": "Q4 2018",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-03-01",
+   "source": "MA95",
+   "release": "Feb 28",
+   "release_time": "after the close on Feb 28: 8-K accepted 16:55 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2018-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 288,
+    "base_prior_m": 284,
+    "fran_m": 455,
+    "fran_prior_m": 404,
+    "inc_m": 167,
+    "inc_prior_m": 174,
+    "rev_total_m": 5289,
+    "rev_total_prior_m": 5251,
+    "opinc_m": 422,
+    "opinc_prior_m": 424,
+    "diluted_shares_m": 345.7,
+    "cash_m": 316
+   },
+   "basis_note": "as reported on the ASC 606 basis, Q4 2017 recast ('This column reflects our recast 2017 results under the new accounting standard'), as the release's A-1 column 'Reported 2018 vs. 2017' compares them; three months ended December 31, 2018 and December 31, 2017 (92 days each); total revenues include cost reimbursement revenue and operating income is after reimbursed expenses and merger-related costs and charges; the company's adjusted total revenues $1,305M against $1,289M and adjusted operating income $680M against $612M (+11 percent) exclude cost reimbursement revenue, reimbursed expenses and merger-related costs, charges and other (page A-3); fees = base management, franchise and incentive management fees (gross fee revenues $910M against $862M), before contract investment amortization ($14M against $16M); the release also discloses immaterial loyalty-program accounting errors that understated cost reimbursement revenue, net of reimbursed expenses, in Q1-Q3 2018 (net income +$99M for the three quarters, to be revised in the 2018 Form 10-K; no effect on adjusted EPS); RevPAR from the Key Lodging Statistics, in constant dollars, comparable company-operated North American properties, row 'North American - All' (the tables are no longer labelled combined and carry no pro forma footnote)",
+   "revpar_pct": 0.4,
+   "occupancy": 71.7,
+   "occupancy_pts": -1.2,
+   "eps_q": 0.92,
+   "eps_q_prior": 0.31,
+   "eps_note": "as reported (Q4 2017 recast under ASU 2014-09; it carries the $659 million Avendra gain and the $563 million provisional Tax Act charge); no figure excluding only one-offs is published: the company's adjusted diluted EPS, $1.44 against $1.09 (+32 percent), excludes cost reimbursement revenue ($3,984M against $3,962M) and reimbursed expenses ($4,151M against $4,091M) as well as merger-related costs, charges and other ($91M against $59M), $5 million of adjustments to the provisional Tax Act charge in Q4 2018, and in Q4 2017 the Avendra gain and the Tax Act charge; adjusted net income $497M against $403M; Q4 2018 reported results include $28 million of expenses and $25 million of insurance proceeds related to the data security incident disclosed on November 30, 2018 (net $3 million, in reimbursed expenses or merger-related costs and charges, excluded from the adjusted figures)",
+   "ww_revpar_note": "In the 2018 fourth quarter, worldwide comparable systemwide constant dollar RevPAR increased 1.3 percent (a 0.1 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 3.0 million shares of common stock in the 2018 fourth quarter for $336 million at an average price of $113.85 per share. For full year 2018, Marriott repurchased 21.5 million shares for $2.8 billion at an average price of $130.67 per share. Year-to-date through February 28, the company has repurchased 2.4 million shares for $300 million at an average price of $126.31 per share. The company suspended repurchases for a time due to the data security incident and the loyalty accounting matter described below. On February 15, 2019, the board of directors increased the company’s authorization to repurchase shares by 25.0 million for a total authorization of 33.3 million shares as of February 28, 2019.",
+   "next_print": "Q1 2019 print (late April)",
+   "sales_b": 5.289,
+   "sales_pct": 0.7,
+   "fees_m": 910,
+   "fees_prior_m": 862,
+   "fees_pct": 5.6,
+   "op_margin": 7.98,
+   "op_margin_bp": -9.6,
+   "occupancy_bp": -120.0,
+   "diluted_shares_m": 345.7,
+   "cash_b": 0.316,
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 5.38,
+    "eps_gaap": 5.38,
+    "revenue_usd_b": 20.758,
+    "diluted_shares_m": 354.2,
+    "raw": {
+     "rev_m": 20758,
+     "rev_prior_m": 20452,
+     "rev_adj_m": 20758,
+     "opinc_m": 2366,
+     "pretax_m": 2345,
+     "tax_m": 438,
+     "fees_m": 3638,
+     "fees_prior_m": 3295,
+     "cash_m": 316
+    },
+    "op_margin": 11.4,
+    "sales_growth": 1.5,
+    "fees_pct": 10.4,
+    "revpar_pct": 1.8,
+    "occupancy": 75.7,
+    "occupancy_pts": -0.2,
+    "other_expense_b": 0.021,
+    "tax_rate": 0.1868,
+    "cash_b": 0.316,
+    "groups": null,
+    "normalization_note": "FY18 $5.38 as reported (GAAP $5.38), the Q4 2018 release: it publishes no full-year figure excluding only one-offs; its adjusted FY2018 diluted EPS $6.21 (+48 percent on adjusted FY2017 $4.21, recast) excludes cost reimbursement revenue ($15,543M against $15,455M) and reimbursed expenses ($15,778M against $15,228M) as well as merger-related costs, charges and other ($155M in both years), the Avendra gain ($6M in 2018, $659M in 2017) and the Tax Act provisional charge and its adjustments ($27M in 2018, $563M in 2017), and it keeps $183M ($0.44) of asset sale gains in gains and other income, net and $65M ($0.21) in equity in earnings; adjusted net income $2,201M against $1,600M, adjusted operating income $2,756M against $2,432M on adjusted total revenues $5,215M against $4,994M, adjusted EBITDA $3,473M against $3,131M; reported FY2017 $3.84 (recast under ASU 2014-09), basic $5.45 against $3.89; revenues, operating income, income before income taxes, the provision and diluted shares as reported, FY2018 reflecting the correction of immaterial loyalty-program accounting errors in Q1-Q3 2018 (net income +$99M); fees = base management $1,140M + franchise $1,849M + incentive $649M (gross fee revenues $3,638M) against FY2017 recast $3,295M; RevPAR is the full-year company-operated North American 'North American - All' row in constant dollars; data security incident items in the release are Q4 only: $28M of expenses and $25M of insurance proceeds (net $3M)",
+    "op_margin_note": "FY18 operating income $2,366M / revenues $20,758M (Q4 2018 release)",
+    "tax_note": "FY18 provision $438M on $2,345M",
+    "doc": "Q4 2018 release"
+   }
+  },
+  {
+   "quarter": "Q1 2019",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-05-10",
+   "source": "MA97",
+   "release": "May 10",
+   "release_time": "before the open on May 10: 8-K accepted 06:04 ET; conference call at 1:00 p.m. ET on May 10, the day of the release (8-K accepted 06:04 ET)",
+   "period_end": "2019-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 282,
+    "base_prior_m": 273,
+    "fran_m": 450,
+    "fran_prior_m": 417,
+    "inc_m": 163,
+    "inc_prior_m": 155,
+    "rev_total_m": 5012,
+    "rev_total_prior_m": 5009,
+    "opinc_m": 510,
+    "opinc_prior_m": 530,
+    "diluted_shares_m": 342.8,
+    "cash_m": 258
+   },
+   "basis_note": "as reported, as the release's A-1 column 'Reported 2019 vs. 2018' compares them, Q1 2018 'revised information as presented in our 2018 Annual Report on Form 10-K' (the loyalty-program accounting correction); three months ended March 31, 2019 and March 31, 2018 (90 days each); total revenues include cost reimbursement revenue ($3,756M against $3,776M) and operating income is after reimbursed expenses ($3,892M against $3,808M); the company's adjusted total revenues $1,256M against $1,233M and adjusted operating income $655M against $596M (+10 percent) exclude cost reimbursement revenue, reimbursed expenses and merger-related costs and charges (page A-2); gross fee revenues $895M against $845M, before contract investment amortization ($14M against $18M); ASU 2016-02 (leases) adopted in Q1 2019 with no income statement effect; RevPAR from the Key Lodging Statistics, in constant dollars, comparable company-operated North American properties, 'North American - All'; the 8-K was accepted before the open (06:04 ET) and the conference call was at 1:00 p.m. ET the same day, not at 10 a.m.",
+   "revpar_pct": 0.7,
+   "occupancy": 71.8,
+   "occupancy_pts": -1.2,
+   "eps_q": 1.09,
+   "eps_q_prior": 1.16,
+   "eps_note": "as reported (Q1 2018 as revised in the 2018 Form 10-K); no figure excluding only one-offs is published: the company's adjusted diluted EPS, $1.41 against $1.34 (+5 percent), excludes cost reimbursement revenue and reimbursed expenses as well as merger-related costs and charges ($9M against $34M), and for Q1 2018 also $22M of adjustments to the provisional Tax Act charge and a $5M increase to the Avendra gain; adjusted net income $482M against $487M; Q1 2018 reported and adjusted results include $53 million pre-tax ($0.11 per share) of asset sale gains; the reported Q1 2019 provision reflects $42 million of favorable discrete tax items ($16 million a year earlier); data security incident: $44 million of expenses and $46 million of insurance recoveries in the quarter (in reimbursed expenses or merger-related costs and charges, excluded from the adjusted figures)",
+   "ww_revpar_note": "In the 2019 first quarter, worldwide comparable systemwide constant dollar RevPAR increased 1.1 percent (a 0.3 percent decrease using actual dollars).",
+   "cash_return_text": "The company repurchased 6.7 million shares of common stock in the 2019 first quarter for $828 million at an average price of $124.16 per share. Year-to-date through May 8, the company has repurchased 8.1 million shares for $1.02 billion at an average price of $125.91 per share. Year-to date through May 8, we have returned nearly $1.2 billion to our shareholders through share repurchases and dividends, and we continue to expect to return at least $3 billion for full year 2019.",
+   "next_print": "Q2 2019 print (mid-July)",
+   "sales_b": 5.012,
+   "sales_pct": 0.1,
+   "fees_m": 895,
+   "fees_prior_m": 845,
+   "fees_pct": 5.9,
+   "op_margin": 10.18,
+   "op_margin_bp": -40.5,
+   "occupancy_bp": -120.0,
+   "diluted_shares_m": 342.8,
+   "cash_b": 0.258
+  },
+  {
+   "quarter": "Q2 2019",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-08-06",
+   "source": "MA98",
+   "release": "Aug 5",
+   "release_time": "after the close on Aug 5: 8-K accepted 17:15 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2019-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 309,
+    "base_prior_m": 300,
+    "fran_m": 525,
+    "fran_prior_m": 475,
+    "inc_m": 165,
+    "inc_prior_m": 176,
+    "rev_total_m": 5305,
+    "rev_total_prior_m": 5409,
+    "opinc_m": 409,
+    "opinc_prior_m": 818,
+    "diluted_shares_m": 336.4,
+    "cash_m": 284
+   },
+   "basis_note": "as reported, as the release's A-1 column 'Reported 2019 vs. 2018' compares them, Q2 2018 'revised information as presented in our 2018 Annual Report on Form 10-K'; three months ended June 30, 2019 and June 30, 2018 (91 days each); total revenues include cost reimbursement revenue ($3,903M against $4,048M) and operating income is after reimbursed expenses ($4,107M against $3,964M) and merger-related costs and charges ($173M, with the $126M ICO accrual, against $18M); the company's adjusted total revenues $1,402M against $1,361M and adjusted operating income $786M against $752M (+5 percent) exclude cost reimbursement revenue, reimbursed expenses and merger-related costs and charges (page A-3); gross fee revenues $999M against $951M, before contract investment amortization ($15M against $13M); RevPAR from the Key Lodging Statistics, in constant dollars, comparable company-operated North American properties, 'North American - All'",
+   "revpar_pct": 0.1,
+   "occupancy": 79.9,
+   "occupancy_pts": -0.5,
+   "eps_q": 0.69,
+   "eps_q_prior": 1.87,
+   "eps_note": "as reported: Q2 2019 carries merger-related costs and charges of $173 million ($18 million a year earlier), including a $126 million non-tax deductible accrual for the fine proposed by the U.K. Information Commissioner's Office over the data security incident; the quarter's other data security items were $22 million of expenses and $22 million of insurance recoveries; Q2 2018 reported and adjusted EPS include $0.26 of asset sale gains ($119 million pre-tax); no figure excluding only one-offs is published: the company's adjusted diluted EPS, $1.56 against $1.73 (-10 percent), excludes cost reimbursement revenue and reimbursed expenses as well as merger-related costs and charges (the accrual included) and, for Q2 2018, a $1M increase to the Avendra gain; adjusted net income $525M against $619M",
+   "ww_revpar_note": "In the 2019 second quarter, worldwide comparable systemwide constant dollar RevPAR increased 1.2 percent (a 0.3 percent decrease using actual dollars).",
+   "cash_return_text": "The company repurchased 3.8 million shares of common stock in the 2019 second quarter for $500 million at an average price of $132.39 per share. Year-to-date through August 2, the company has repurchased 12.1 million shares for $1.6 billion at an average price of $128.88 per share.",
+   "next_print": "Q3 2019 print (early October)",
+   "sales_b": 5.305,
+   "sales_pct": -1.9,
+   "fees_m": 999,
+   "fees_prior_m": 951,
+   "fees_pct": 5.0,
+   "op_margin": 7.71,
+   "op_margin_bp": -741.3,
+   "occupancy_bp": -50.0,
+   "diluted_shares_m": 336.4,
+   "cash_b": 0.284
+  },
+  {
+   "quarter": "Q3 2019",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-11-05",
+   "source": "MA100",
+   "release": "Nov 4",
+   "release_time": "after the close on Nov 4: 8-K accepted 17:25 ET; public before the open of the next trading day; conference call at 11:00 a.m. ET on Nov 5",
+   "period_end": "2019-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 291,
+    "base_prior_m": 279,
+    "fran_m": 530,
+    "fran_prior_m": 502,
+    "inc_m": 134,
+    "inc_prior_m": 151,
+    "rev_total_m": 5284,
+    "rev_total_prior_m": 5051,
+    "opinc_m": 607,
+    "opinc_prior_m": 596,
+    "diluted_shares_m": 332.5,
+    "cash_m": 276
+   },
+   "basis_note": "as reported, as the release's A-1 column 'Reported 2019 vs. 2018' compares them, Q3 2018 'revised information as presented in our 2018 Annual Report on Form 10-K'; three months ended September 30, 2019 and September 30, 2018 (92 days each); total revenues include cost reimbursement revenue ($3,952M against $3,735M) and operating income is after reimbursed expenses ($4,070M against $3,855M); the company's adjusted total revenues $1,332M against $1,316M and adjusted operating income $734M against $728M (+1 percent) exclude cost reimbursement revenue, reimbursed expenses and merger-related costs and charges (page A-3); gross fee revenues $955M against $932M, before contract investment amortization ($16M against $13M); RevPAR from the Key Lodging Statistics, in constant dollars, comparable company-operated North American properties, 'North American - All'; the conference call was at 11:00 a.m. ET on November 5, not at 10 a.m.",
+   "revpar_pct": 1.0,
+   "occupancy": 78.4,
+   "occupancy_pts": 0.3,
+   "eps_q": 1.16,
+   "eps_q_prior": 1.43,
+   "eps_note": "as reported; no figure excluding only one-offs is published: the company's adjusted diluted EPS, $1.47 against $1.70 (-14 percent), excludes cost reimbursement revenue and reimbursed expenses as well as merger-related costs and charges ($9M against $12M); adjusted net income $488M against $598M; Q3 2019 reported and adjusted results include a $9 million pre-tax ($0.02 per share) asset sale gain, Q3 2018 reported and adjusted EPS include $0.26 of asset sale gains ($71 million pre-tax, among them a $55 million gain on a joint venture's sale of a hotel in Latin America); data security incident: $6 million of expenses and $9 million of insurance recoveries in the quarter (in reimbursed expenses or merger-related costs and charges, excluded from the adjusted figures)",
+   "ww_revpar_note": "In the 2019 third quarter, worldwide comparable systemwide constant dollar RevPAR increased 1.5 percent (a 0.9 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 3.8 million shares of common stock in the 2019 third quarter for $500 million at an average price of $133.41 per share. Year-to-date through November 1, the company has repurchased 14.2 million shares for $1.83 billion at an average price of $128.79 per share.",
+   "next_print": "Q4 2019 print (mid-February)",
+   "sales_b": 5.284,
+   "sales_pct": 4.6,
+   "fees_m": 955,
+   "fees_prior_m": 932,
+   "fees_pct": 2.5,
+   "op_margin": 11.49,
+   "op_margin_bp": -31.2,
+   "occupancy_bp": 30.0,
+   "diluted_shares_m": 332.5,
+   "cash_b": 0.276
+  },
+  {
+   "quarter": "Q4 2019",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-02-27",
+   "source": "MA101",
+   "release": "Feb 26",
+   "release_time": "after the close on Feb 26: 8-K accepted 17:14 ET; public before the open of the next trading day; conference call at 10 a.m. ET",
+   "period_end": "2019-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 298,
+    "base_prior_m": 288,
+    "fran_m": 501,
+    "fran_prior_m": 455,
+    "inc_m": 175,
+    "inc_prior_m": 167,
+    "rev_total_m": 5371,
+    "rev_total_prior_m": 5289,
+    "opinc_m": 274,
+    "opinc_prior_m": 422,
+    "diluted_shares_m": 330.4,
+    "cash_m": 225
+   },
+   "basis_note": "as reported in both quarters (ASC 606), as the release's 'Reported 2019 vs. 2018' column compares them (page A-1); three months ended December 31, 2019 and December 31, 2018 (92 days each); total revenues include cost reimbursement revenue ($3,988M against $3,984M); the release's adjusted total revenues (excluding cost reimbursement revenue) $1,383M against $1,305M and adjusted operating income (also excluding reimbursed expenses and merger-related costs and charges (credits)) $603M against $680M (page A-3), the 2019 figure including $114 million of impairment charges; fees as reported (gross fee revenues $974M against $910M, before contract investment amortization of $17M and $14M); cash from 'cash balances totaled $225 million' at year-end; RevPAR from the Key Lodging Statistics, comparable company-operated North American properties, constant dollars, 'North American - All', 2019 against 2018 (the year-ago quarter)",
+   "revpar_pct": 1.9,
+   "occupancy": 72.7,
+   "occupancy_pts": 0.7,
+   "eps_q": 0.85,
+   "eps_q_prior": 0.92,
+   "eps_note": "as reported in both quarters: the company's adjusted diluted EPS, $1.57 against $1.44, excludes cost reimbursement revenue, reimbursed expenses and merger-related costs and charges (credits) and their tax effect, so it is not a one-off-only figure; reported and adjusted 2019 figures both include $0.32 of asset sale gains ($134 million pretax, two hotels in North America) and $0.26 of impairment charges ($114 million pretax in depreciation, amortization, and other: $99 million on a leased hotel in North America, $15 million on the sale of a hotel), 2018 $0.02 of asset sale gains; the release's adjusted EPS also excluding asset impairments, gains on asset dispositions and gains on investees' property sales, $1.51 against $1.42, still excludes cost reimbursements; the 2019 quarter's merger-related line is a $53 million credit (the ICO fine accrual for the data security incident reduced to $65 million; $14 million of data security expenses and $7 million of insurance recoveries sit in that line or in reimbursed expenses); 330.4 million diluted shares for both reported and adjusted EPS (345.7 million a year earlier)",
+   "ww_revpar_note": "In the 2019 fourth quarter, worldwide comparable systemwide constant dollar RevPAR increased 1.1 percent (a 0.8 percent increase using actual dollars).",
+   "cash_return_text": "The company repurchased 3.1 million shares of common stock in the 2019 fourth quarter for $432 million at an average price of $140.00 per share. For full year 2019, Marriott repurchased 17.3 million shares for $2.3 billion at an average price of $130.79 per share. Year to date through February 25, the company has repurchased 1.0 million shares for $150 million at an average price of $145.42 per share.",
+   "next_print": "Q1 2020 print (late April)",
+   "sales_b": 5.371,
+   "sales_pct": 1.6,
+   "fees_m": 974,
+   "fees_prior_m": 910,
+   "fees_pct": 7.0,
+   "op_margin": 5.1,
+   "op_margin_bp": -287.7,
+   "occupancy_bp": 70.0,
+   "diluted_shares_m": 330.4,
+   "cash_b": 0.225,
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 3.8,
+    "eps_gaap": 3.8,
+    "revenue_usd_b": 20.972,
+    "diluted_shares_m": 335.5,
+    "raw": {
+     "rev_m": 20972,
+     "rev_prior_m": 20758,
+     "rev_adj_m": 20972,
+     "opinc_m": 1800,
+     "pretax_m": 1599,
+     "tax_m": 326,
+     "fees_m": 3823,
+     "fees_prior_m": 3638,
+     "cash_m": 225
+    },
+    "op_margin": 8.58,
+    "sales_growth": 1.0,
+    "fees_pct": 5.1,
+    "revpar_pct": 1.0,
+    "occupancy": 75.8,
+    "occupancy_pts": -0.1,
+    "other_expense_b": 0.201,
+    "tax_rate": 0.2039,
+    "cash_b": 0.225,
+    "groups": null,
+    "normalization_note": "FY19 $3.80 as reported (GAAP $3.80), the Q4 2019 release: it publishes no figure excluding only one-offs. Its adjusted diluted EPS, $6.00 (FY2018 $6.21), excludes cost reimbursement revenue, reimbursed expenses and merger-related costs and charges (in 2018 also the gain on the sale of Avendra and the U.S. Tax Cuts and Jobs Act of 2017) with their tax effect; its adjusted diluted EPS also excluding asset impairments, gains on asset dispositions and gains on investees' property sales, $5.92 (FY2018 $5.56), still excludes cost reimbursements. FY2018 as reported $5.38 (revised for the 2018 first three quarters as in the 2018 10-K); basic EPS $3.83 (FY2018 $5.45). Reported and adjusted 2019 EPS include $0.33 of asset sale gains ($143 million pretax) and $0.25 of asset impairments ($114 million pretax); 2018 includes $0.66 (reported) and $0.65 (adjusted) of asset sale gains. Merger-related costs and charges $138 million ($155 million in 2018), the line that carries the ICO fine accrual for the data security incident. Revenues, operating income, income before income taxes, the provision and diluted shares as reported; the release's adjusted total revenues $5,373M ($5,215M), adjusted operating income $2,778M ($2,756M), adjusted net income $2,012M ($2,201M), adjusted EBITDA $3,575M ($3,473M). Fees: gross fee revenues (base management, franchise and incentive) $3,823M against $3,638M, before contract investment amortization of $62M and $58M. RevPAR: the full-year comparable company-operated North American 'North American - All' row, constant dollars",
+    "op_margin_note": "FY19 operating income $1,800M / revenues $20,972M (Q4 2019 release)",
+    "tax_note": "FY19 provision $326M on $1,599M",
+    "doc": "Q4 2019 release"
+   }
+  },
+  {
+   "quarter": "Q1 2020",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-05-11",
+   "source": "MA104",
+   "release": "May 11",
+   "release_time": "before the open on May 11: 8-K accepted 08:22 ET; conference call at 8:30 a.m. ET on May 11, the morning of the release",
+   "period_end": "2020-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 214,
+    "base_prior_m": 282,
+    "fran_m": 415,
+    "fran_prior_m": 450,
+    "inc_m": 0,
+    "inc_prior_m": 163,
+    "rev_total_m": 4681,
+    "rev_total_prior_m": 5012,
+    "opinc_m": 114,
+    "opinc_prior_m": 510,
+    "diluted_shares_m": 327.4,
+    "cash_m": 1760
+   },
+   "basis_note": "as reported in both quarters (ASC 606), as the release's 'Reported 2020 vs. 2019' column compares them (page A-1); three months ended March 31, 2020 (91 days, a leap year) against March 31, 2019 (90 days): the release does not mention the extra day; total revenues include cost reimbursement revenue ($3,797M against $3,756M); the release's adjusted total revenues $884M against $1,256M and adjusted operating income $192M against $655M (page A-2), the 2020 figure including $180 million of COVID-19 impairment charges, bad debt expense and guarantee reserves; incentive management fees nil ('no incentive fees were recognized under accounting standards due to the significant uncertainty created by COVID-19'); cash from 'cash balances totaled $1.76 billion' at quarter-end (the release puts net liquidity at about $4.3 billion as of May 8, after $1.6 billion of senior notes in April and $920 million from the co-brand credit card amendments); RevPAR from the Key Lodging Statistics, comparable company-operated North American properties, constant dollars, 'North American - All', 2020 against the 2019 first quarter (the year-ago quarter), hotels temporarily closed by COVID-19 kept in the comparable set; the conference call was held at 8:30 a.m. ET on May 11, the morning of the release",
+   "revpar_pct": -21.8,
+   "occupancy": 56.8,
+   "occupancy_pts": -15.1,
+   "eps_q": 0.09,
+   "eps_q_prior": 1.09,
+   "eps_note": "as reported in both quarters: the company's adjusted diluted EPS, $0.26 against $1.41, excludes cost reimbursement revenue, reimbursed expenses and merger-related costs and (recoveries) charges and their tax effect, so it is not a one-off-only figure; reported and adjusted 2020 figures include COVID-19 impairment charges, bad debt expense and guarantee reserves of $0.45 and $0.42 a share respectively ($193 million pretax and $148 million after-tax reported, $138 million after-tax adjusted: among them a $90 million impairment of several leased hotels in North America, $65 million of bad debt expense and $14 million of guarantee reserves); no incentive management fees recognized in the quarter; the merger-related line a $2 million recovery ($15 million of data security expenses and $17 million of insurance recoveries sit in that line or in reimbursed expenses)",
+   "ww_revpar_note": "In the 2020 first quarter, worldwide RevPAR declined 22.5 percent (a 22.7 percent decline using actual dollars).",
+   "cash_return_text": "The company repurchased 1.0 million shares of common stock in the 2020 first quarter for $150 million at an average price of $145.42 per share. The company halted further share repurchases in February and suspended its quarterly dividend beginning in the second quarter.",
+   "next_print": "Q2 2020 print (mid-July)",
+   "days": 91,
+   "days_prior": 90,
+   "sales_b": 4.681,
+   "sales_pct": -6.6,
+   "fees_m": 629,
+   "fees_prior_m": 895,
+   "fees_pct": -29.7,
+   "op_margin": 2.44,
+   "op_margin_bp": -774.0,
+   "occupancy_bp": -1510.0,
+   "diluted_shares_m": 327.4,
+   "cash_b": 1.76
+  },
+  {
+   "quarter": "Q2 2020",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-08-10",
+   "source": "MA105",
+   "release": "Aug 10",
+   "release_time": "before the open on Aug 10: 8-K accepted 08:07 ET; conference call at 8:30 a.m. ET on Aug 10, the morning of the release",
+   "period_end": "2020-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 40,
+    "base_prior_m": 309,
+    "fran_m": 182,
+    "fran_prior_m": 525,
+    "inc_m": 12,
+    "inc_prior_m": 165,
+    "rev_total_m": 1464,
+    "rev_total_prior_m": 5305,
+    "opinc_m": -154,
+    "opinc_prior_m": 409,
+    "diluted_shares_m": 325.6,
+    "cash_m": 2300
+   },
+   "basis_note": "as reported in both quarters (ASC 606), as the release's 'Reported 2020 vs. 2019' column compares them (page A-1); three months ended June 30, 2020 and June 30, 2019 (91 days each); an operating loss of $154 million against income of $409 million; total revenues include cost reimbursement revenue ($1,202M against $3,903M); the release's adjusted total revenues $262M against $1,402M and adjusted operating loss $109M against income of $786M (page A-3), the 2020 figure including $60 million of COVID-19 impairment charges and bad debt expense; the merger-related line renamed 'Restructuring and merger-related charges'; cash from 'cash balances totaled $2.3 billion' at quarter-end (net liquidity about $4.4 billion); RevPAR from the Key Lodging Statistics, comparable company-operated North American properties, constant dollars, 'North American - All', 2020 against the 2019 second quarter (the year-ago quarter), hotels temporarily closed by COVID-19 kept in the comparable set; the conference call was held at 8:30 a.m. ET on August 10, the morning of the release",
+   "revpar_pct": -91.7,
+   "occupancy": 9.8,
+   "occupancy_pts": -69.9,
+   "eps_q": -0.72,
+   "eps_q_prior": 0.69,
+   "eps_note": "as reported in both quarters (a loss of $0.72 a share): the company's adjusted diluted loss per share, $(0.64) against EPS of $1.56, excludes cost reimbursement revenue, reimbursed expenses and restructuring and merger-related charges and their tax effect, so it is not a one-off-only figure; COVID-19 impairment charges and bad debt expense cost $0.19 a share reported ($77 million pretax, $61 million after-tax) and $0.17 adjusted ($54 million after-tax); restructuring and merger-related charges $6 million against $173 million (the 2019 quarter's included a $126 million non-tax deductible accrual for the ICO fine on the data security incident and a $34 million impairment of a legacy-Starwood office building); 325.6 million shares, the basic count, because equivalents are anti-dilutive in a loss quarter",
+   "ww_revpar_note": "In the 2020 second quarter, worldwide RevPAR declined 84.4 percent (an 84.6 percent decline using actual dollars).",
+   "cash_return_text": "The company halted share repurchases in February of this year and suspended its quarterly dividend beginning in the second quarter.",
+   "next_print": "Q3 2020 print (early October)",
+   "sales_b": 1.464,
+   "sales_pct": -72.4,
+   "fees_m": 234,
+   "fees_prior_m": 999,
+   "fees_pct": -76.6,
+   "op_margin": -10.52,
+   "op_margin_bp": -1822.9,
+   "occupancy_bp": -6990.0,
+   "diluted_shares_m": 325.6,
+   "cash_b": 2.3
+  },
+  {
+   "quarter": "Q3 2020",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-11-06",
+   "source": "MA106",
+   "release": "Nov 6",
+   "release_time": "before the open on Nov 6: 8-K accepted 08:12 ET; conference call at 8:30 a.m. ET on Nov 6, the morning of the release",
+   "period_end": "2020-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 87,
+    "base_prior_m": 291,
+    "fran_m": 279,
+    "fran_prior_m": 530,
+    "inc_m": 31,
+    "inc_prior_m": 134,
+    "rev_total_m": 2254,
+    "rev_total_prior_m": 5284,
+    "opinc_m": 252,
+    "opinc_prior_m": 607,
+    "diluted_shares_m": 326.8,
+    "cash_m": 1600
+   },
+   "basis_note": "as reported in both quarters (ASC 606), as the release's 'Reported 2020 vs. 2019' column compares them (page A-1); three months ended September 30, 2020 and September 30, 2019 (92 days each); total revenues include cost reimbursement revenue ($1,789M against $3,952M); the release's adjusted total revenues $465M against $1,332M and adjusted operating income $147M against $734M (page A-3), the 2020 figure including $32 million of COVID-19 impairment charges; cash from the net debt sentence ('total debt of $11.0 billion less cash and cash equivalents of $1.6 billion'; the liquidity paragraph gives 'roughly $1.5 billion in available cash balances'); RevPAR from the Key Lodging Statistics, comparable company-operated North American properties, constant dollars, 'North American - All', 2020 against the 2019 third quarter (the year-ago quarter; the highlights say 'compared to the 2019 third quarter'), hotels temporarily closed by COVID-19 kept in the comparable set; the conference call was held at 8:30 a.m. ET on November 6, the morning of the release",
+   "revpar_pct": -78.0,
+   "occupancy": 22.9,
+   "occupancy_pts": -55.3,
+   "eps_q": 0.31,
+   "eps_q_prior": 1.16,
+   "eps_note": "as reported in both quarters: the company's adjusted diluted EPS, $0.06 against $1.47, excludes cost reimbursement revenue, reimbursed expenses and restructuring and merger-related charges and their tax effect, so it is not a one-off-only figure (reported exceeds adjusted in 2020: the reconciliation removes cost reimbursement revenue of $1,789M and adds back reimbursed expenses of $1,683M); COVID-19 impairment charges cost $0.07 a share in both ($32 million pretax, $24 million after-tax); restructuring and merger-related charges $1 million against $9 million ($40 million of organizational realignment costs largely offset by a $39 million reduction of the ICO fine accrual)",
+   "ww_revpar_note": "In the 2020 third quarter, worldwide RevPAR declined 65.9 percent (a 65.9 percent decline using actual dollars).",
+   "cash_return_text": "The company halted share repurchases in February of this year and suspended its quarterly dividend beginning in the second quarter.",
+   "next_print": "Q4 2020 print (mid-February)",
+   "sales_b": 2.254,
+   "sales_pct": -57.3,
+   "fees_m": 397,
+   "fees_prior_m": 955,
+   "fees_pct": -58.4,
+   "op_margin": 11.18,
+   "op_margin_bp": -30.7,
+   "occupancy_bp": -5530.0,
+   "diluted_shares_m": 326.8,
+   "cash_b": 1.6
+  },
+  {
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-02-18",
+   "source": "MA107",
+   "release": "Feb 18",
+   "release_time": "before the open on Feb 18: 8-K accepted 08:10 ET; conference call at 8:30 a.m. ET on Feb 18, the morning of the release",
+   "period_end": "2020-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 102,
+    "base_prior_m": 298,
+    "fran_m": 277,
+    "fran_prior_m": 501,
+    "inc_m": 44,
+    "inc_prior_m": 175,
+    "rev_total_m": 2172,
+    "rev_total_prior_m": 5371,
+    "opinc_m": -128,
+    "opinc_prior_m": 274,
+    "diluted_shares_m": 326.2,
+    "cash_m": 900
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2020 vs. 2019'), three months ended December 31, 2020 and December 31, 2019 (92 days each); total revenues include cost reimbursement revenue ($1,664M against $3,988M) and operating income is a $128M loss; the company's adjusted total revenues ($530M against $1,383M) and adjusted operating income ($148M against $717M) exclude cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges and impairments (page A-3); fees as reported (gross fee revenues $423M against $974M, before contract investment amortization of $38M and $17M); cash is the release's rounded 'cash and cash equivalents of $0.9 billion' (no exact figure in the release; net liquidity of about $4.4 billion includes 'roughly $0.8 billion in available cash balances'); RevPAR from the Key Lodging Statistics, constant dollars, the first table 'Comparable Company-Operated US & Canada Properties' (the former North American table), its 'US & Canada - All' row; the year-ago base is the 2019 fourth quarter (no 2020-vs-2019 split arises: 2019 is the year-ago period); statistics include hotels temporarily closed due to COVID-19 and comparability ignores COVID-19 interruptions; systemwide constant-dollar RevPAR against the 2019 quarter: worldwide -64.1 percent, U.S. & Canada -64.6 percent; the conference call was at 8:30 a.m. ET on February 18, the morning of the release",
+   "revpar_pct": -75.0,
+   "occupancy": 24.9,
+   "occupancy_pts": -47.9,
+   "eps_q": -0.5,
+   "eps_q_prior": 0.85,
+   "eps_note": "as reported: a diluted loss of $0.50 (basic and diluted shares the same, 326.2 million, the equivalents being anti-dilutive) against $0.85; the company's adjusted diluted EPS, $0.12 against $1.51, excludes cost reimbursement revenue and reimbursed expenses (a timing effect, not a one-off) besides restructuring and merger-related charges ($262 million in the quarter, largely a $243 million increase to the liability for the Sheraton Grand Chicago put option), $74 million ($0.23 per share) of income tax benefits from the closure of prior years' audits, impairment charges of $88 million after-tax ($0.27 per share) and a $4 million after-tax ($0.01 per share) loss on asset sales; no figure excluding only one-offs is published, so eps is as reported; the reported quarter carries a $150 million tax benefit including $100 million from the closure of pre-acquisition Starwood audits",
+   "ww_revpar_note": "In the 2020 fourth quarter, worldwide RevPAR declined 64.1 percent (a 63.9 percent decline using actual dollars).",
+   "cash_return_text": "The company halted share repurchases in February of 2020 and suspended its quarterly dividend beginning in the second quarter of 2020.",
+   "next_print": "Q1 2021 print (late April)",
+   "sales_b": 2.172,
+   "sales_pct": -59.6,
+   "fees_m": 423,
+   "fees_prior_m": 974,
+   "fees_pct": -56.6,
+   "op_margin": -5.89,
+   "op_margin_bp": -1099.5,
+   "occupancy_bp": -4790.0,
+   "diluted_shares_m": 326.2,
+   "cash_b": 0.9,
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": null,
+    "eps_gaap": -0.82,
+    "revenue_usd_b": 10.571,
+    "diluted_shares_m": 325.8,
+    "raw": {
+     "rev_m": 10571,
+     "rev_prior_m": 20972,
+     "rev_adj_m": 10571,
+     "opinc_m": 84,
+     "pretax_m": -466,
+     "tax_m": -199,
+     "fees_m": 1683,
+     "fees_prior_m": 3823,
+     "cash_m": 900
+    },
+    "op_margin": 0.79,
+    "sales_growth": -49.6,
+    "fees_pct": -56.0,
+    "revpar_pct": -67.3,
+    "occupancy": 28.6,
+    "occupancy_pts": -47.2,
+    "other_expense_b": 0.55,
+    "tax_rate": 0.427,
+    "cash_b": 0.9,
+    "groups": null,
+    "normalization_note": "FY20 no normalized EPS: reported diluted EPS $(0.82), a loss (basic and diluted shares the same, 325.8 million), against $3.80 for FY2019, the Q4 2020 release; the company's adjusted diluted EPS $0.18 (FY2019 adjusted $5.92) excludes cost reimbursement revenue and reimbursed expenses besides restructuring and merger-related charges ($267M), impairments ($278M pre-tax), a $6M loss on asset dispositions and a $74M income tax benefit from audit closures, so no figure excluding only one-offs is published; its quarterly table gives adjusted EPS $0.49, $(0.57), $0.13 and $0.12 for the four 2020 quarters (reported $0.09, $(0.72), $0.31, $(0.50)); revenues ($10,571M, including $8,452M of cost reimbursement revenue), operating income ($84M), the loss before income taxes ($466M) and the income tax benefit ($199M, passed as a negative provision, so the computed tax rate is a benefit rate on a loss) as reported; the company's adjusted total revenues $2,181M and adjusted operating income $535M (FY2019 $5,373M and $2,892M); fees reported against reported ($1,683M against $3,823M, before contract investment amortization of $132M and $62M); adjusted EBITDA $1,147M against $3,575M; RevPAR is the full-year comparable company-operated US & Canada row (constant dollars, against 2019); no segment revenue table in this release",
+    "op_margin_note": "FY20 operating income $84M / revenues $10,571M (Q4 2020 release)",
+    "tax_note": "FY20 provision $-199M on $-466M",
+    "doc": "Q4 2020 release",
+    "excluded_note": "FY2020 diluted EPS $(0.82), a loss; the company's adjusted figure ($0.18) also excludes cost reimbursement revenue and reimbursed expenses (a timing effect), so no figure excluding only one-offs is published: excluded (the XOM FY2020 rule)"
+   }
+  },
+  {
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-05-10",
+   "source": "MA109",
+   "release": "May 10",
+   "release_time": "before the open on May 10: 8-K accepted 08:17 ET; conference call at 8:30 a.m. ET on May 10, the morning of the release",
+   "period_end": "2021-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 106,
+    "base_prior_m": 214,
+    "fran_m": 306,
+    "fran_prior_m": 415,
+    "inc_m": 33,
+    "inc_prior_m": 0,
+    "rev_total_m": 2316,
+    "rev_total_prior_m": 4681,
+    "opinc_m": 84,
+    "opinc_prior_m": 114,
+    "diluted_shares_m": 326.7,
+    "cash_m": 600
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2021 vs. 2020'); three months ended March 31, 2021 (90 days) against March 31, 2020 (91 days, leap year: the release does not mention the extra day); total revenues include cost reimbursement revenue ($1,780M against $3,797M); the company's adjusted total revenues $536M against $891M and adjusted operating income $138M against $293M (page A-2); fees as reported (no incentive management fees in the first quarter of 2020: '—'); cash is the release's rounded 'cash and cash equivalents of $0.6 billion'; RevPAR from the first table, 'Comparable Company-Operated US & Canada Properties', constant dollars, against the 2020 first quarter (properties comparable in both years); against 2019 the release gives systemwide figures only (page A-8, properties comparable as of March 31, 2021): U.S. & Canada -57.1 percent (occupancy 40.3 percent, -28.7 pts), worldwide -59.1 percent; systemwide against 2020: U.S. & Canada and worldwide -46.3 percent; the conference call was at 8:30 a.m. ET on May 10, the morning of the release",
+   "revpar_pct": -57.8,
+   "occupancy": 29.0,
+   "occupancy_pts": -27.7,
+   "eps_q": -0.03,
+   "eps_q_prior": 0.09,
+   "eps_note": "as reported: a diluted loss of $0.03 (basic and diluted shares the same, 326.7 million) against $0.09; the company's adjusted diluted EPS, $0.10 against $0.49, excludes cost reimbursement revenue and reimbursed expenses (a timing effect) besides restructuring and merger-related charges and impairment charges ($3 million after-tax, $0.01 per share, in 2021; $75 million after-tax, $0.23 per share, in 2020); no figure excluding only one-offs is published; both measures keep $14 million of additional non-recurring executive compensation related to leadership changes in general and administrative expenses",
+   "ww_revpar_note": "In the 2021 first quarter, worldwide RevPAR declined 46.3 percent (a 45.9 percent decline using actual dollars) compared to the 2020 first quarter.",
+   "cash_return_text": "The company halted share repurchases in February of 2020 and suspended its quarterly dividend beginning in the second quarter of 2020.",
+   "next_print": "Q2 2021 print (mid-July)",
+   "days": 90,
+   "days_prior": 91,
+   "sales_b": 2.316,
+   "sales_pct": -50.5,
+   "fees_m": 445,
+   "fees_prior_m": 629,
+   "fees_pct": -29.3,
+   "op_margin": 3.63,
+   "op_margin_bp": 119.2,
+   "occupancy_bp": -2770.0,
+   "diluted_shares_m": 326.7,
+   "cash_b": 0.6
+  },
+  {
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-08-03",
+   "source": "MA110",
+   "release": "Aug 3",
+   "release_time": "before the open on Aug 3: 8-K accepted 08:12 ET; conference call at 8:30 a.m. ET on Aug 3, the morning of the release",
+   "period_end": "2021-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 156,
+    "base_prior_m": 40,
+    "fran_m": 431,
+    "fran_prior_m": 182,
+    "inc_m": 55,
+    "inc_prior_m": 12,
+    "rev_total_m": 3149,
+    "rev_total_prior_m": 1464,
+    "opinc_m": 486,
+    "opinc_prior_m": -154,
+    "diluted_shares_m": 329.1,
+    "cash_m": 700
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2021 vs. 2020'); three months ended June 30, 2021 and June 30, 2020 (91 days each); total revenues include cost reimbursement revenue ($2,338M against $1,202M); the company's adjusted total revenues $811M against $265M and adjusted operating income $406M against a $85M loss (page A-3); fees as reported; owned, leased and other revenue includes $18 million of German government COVID-19 subsidies; cash is the release's rounded 'cash and cash equivalents of $0.7 billion'; the release makes no statement on share repurchases or dividends (the sentence on the February 2020 halt and the suspended dividend is no longer printed), so cash_return is empty; RevPAR from the first table, 'Comparable Company-Operated US & Canada Properties', constant dollars, against the 2020 second quarter (properties comparable in both years); against 2019 the release gives systemwide figures only (page A-11, properties comparable as of June 30, 2021): U.S. & Canada -39.5 percent (occupancy 56.1 percent, -21.2 pts), worldwide -43.8 percent; systemwide against 2020: U.S. & Canada +274.6 percent, worldwide +262.6 percent; the conference call was at 8:30 a.m. ET on August 3, the morning of the release",
+   "revpar_pct": 554.9,
+   "occupancy": 45.0,
+   "occupancy_pts": 36.4,
+   "eps_q": 1.28,
+   "eps_q_prior": -0.72,
+   "eps_note": "as reported: $1.28 against a diluted loss of $0.72 (2020 basic and diluted shares the same, 325.6 million); the reported quarter includes a $41 million tax benefit after a $118 million reversal of reserves related to the closure of pre-acquisition Starwood audits; the company's adjusted diluted EPS, $0.79 against a $0.57 loss, excludes cost reimbursement revenue and reimbursed expenses (a timing effect) besides restructuring and merger-related charges, special tax items of $98 million ($0.30 per share) in 2021 and impairment charges of $25 million after-tax ($0.08 per share) in 2020; no figure excluding only one-offs is published",
+   "ww_revpar_note": "In the 2021 second quarter, worldwide RevPAR increased 262.6 percent (a 268.7 percent increase using actual dollars) compared to the 2020 second quarter.",
+   "cash_return_text": "",
+   "next_print": "Q3 2021 print (early October)",
+   "sales_b": 3.149,
+   "sales_pct": 115.1,
+   "fees_m": 642,
+   "fees_prior_m": 234,
+   "fees_pct": 174.4,
+   "op_margin": 15.43,
+   "op_margin_bp": 2595.3,
+   "occupancy_bp": 3640.0,
+   "diluted_shares_m": 329.1,
+   "cash_b": 0.7
+  },
+  {
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-11-03",
+   "source": "MA111",
+   "release": "Nov 3",
+   "release_time": "before the open on Nov 3: 8-K accepted 07:47 ET; conference call at 8:30 a.m. ET on Nov 3, the morning of the release",
+   "period_end": "2021-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 190,
+    "base_prior_m": 87,
+    "fran_m": 533,
+    "fran_prior_m": 279,
+    "inc_m": 53,
+    "inc_prior_m": 31,
+    "rev_total_m": 3946,
+    "rev_total_prior_m": 2254,
+    "opinc_m": 545,
+    "opinc_prior_m": 252,
+    "diluted_shares_m": 329.3,
+    "cash_m": 800
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2021 vs. 2020'); three months ended September 30, 2021 and September 30, 2020 (92 days each); total revenues include cost reimbursement revenue ($2,950M against $1,789M); the company's adjusted total revenues $996M against $495M and adjusted operating income $527M against $179M (page A-3); fees as reported; cash is the release's rounded 'cash and equivalents of $0.8 billion'; the release makes no statement on share repurchases or dividends, so cash_return is empty (its only 'repurchase' is of the Series EE notes); RevPAR from the first table, 'Comparable Company-Operated US & Canada Properties', constant dollars, against the 2020 third quarter (properties comparable in both years); against 2019 the release gives systemwide figures only (page A-11, properties comparable as of September 30, 2021): U.S. & Canada -19.9 percent (occupancy 63.5 percent, -13.1 pts), worldwide -25.8 percent; systemwide against 2020: U.S. & Canada +134.7 percent, worldwide +118.4 percent; the conference call was at 8:30 a.m. ET on November 3, the morning of the release",
+   "revpar_pct": 258.3,
+   "occupancy": 56.8,
+   "occupancy_pts": 36.3,
+   "eps_q": 0.67,
+   "eps_q_prior": 0.31,
+   "eps_note": "as reported: $0.67 against $0.31, the 2021 quarter after a $164 million loss on the extinguishment of debt (the September 2021 tender for $1.0 billion of Series EE notes); the company's adjusted diluted EPS, $0.99 against $0.13, excludes that loss ($122 million after-tax, $0.37 per share) and impairment charges ($8 million after-tax, $0.02 per share; 2020: $24 million after-tax, $0.07 per share), and also restructuring and merger-related charges, cost reimbursement revenue and reimbursed expenses, which the release puts together at $23 million of after-tax profits ($0.07 per share) in 2021 and $80 million ($0.25 per share) in 2020; it publishes no figure excluding only one-offs (restructuring charges are lumped with the cost reimbursement timing)",
+   "ww_revpar_note": "In the 2021 third quarter, worldwide RevPAR increased 118.4 percent (a 120.7 percent increase using actual dollars) compared to the 2020 third quarter.",
+   "cash_return_text": "",
+   "next_print": "Q4 2021 print (mid-February)",
+   "sales_b": 3.946,
+   "sales_pct": 75.1,
+   "fees_m": 776,
+   "fees_prior_m": 397,
+   "fees_pct": 95.5,
+   "op_margin": 13.81,
+   "op_margin_bp": 263.1,
+   "occupancy_bp": 3630.0,
+   "diluted_shares_m": 329.3,
+   "cash_b": 0.8
   }
  ],
  "guides": [
@@ -7015,6 +8860,553 @@
    "doc": "Q3 2017 release",
    "fy_display": "systemwide constant-dollar RevPAR flat to +2% North America, +3-5% outside North America, +1-3% worldwide",
    "note": "the CEO's remarks only: no 2018 fee, EPS or operating income outlook; rooms 'increase roughly 7 percent, gross', deletions 1 to 1.5 percent; North American full-service group revenue pace 'up nearly 2 percent'"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-02-15",
+   "source": "MA88",
+   "doc": "Q4 2017 release",
+   "eps_guide": [
+    5.11,
+    5.34
+   ],
+   "eps_guide_note": "adjusted, on the ASC 606 basis ('reflects adoption of the new revenue standard'): excludes merger-related adjustments, the expenses of spending the Avendra proceeds and the timing differences of cost reimbursements and reimbursed costs; includes the $0.11 expected excess tax benefit from stock-based compensation (tax rate 22 percent); $5.22 to $5.45 excluding the impact of the new revenue standard",
+   "fy_fees": {
+    "level_m": [
+     3535,
+     3620
+    ],
+    "pct": null,
+    "prior_m": 3327,
+    "prior_label": "FY17",
+    "prior_source": "MA88",
+    "derived_pct": [
+     6.25,
+     8.81
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR +1-2% North America, +3-5% outside North America, +1-3% worldwide",
+   "q_guide": {
+    "quarter": "Q1 2018",
+    "revpar": "systemwide constant-dollar flat to +2% North America, +3-5% outside North America, +1-3% worldwide"
+   },
+   "note": "the 2018 guide is on the ASC 606 basis, the FY2017 actual ($3,327M of fees, FY17) on the old one: no growth percentage is stated and the release gives no recast 2017 base; its own 'Excluding the Impact of the New Revenue Standard' column, comparable with 2017, is fees $3,560-3,645M, operating income $2,640-2,745M and EPS $5.22-5.45; fees include $360-380M of credit card branding fees, incentive fees up 'at a low single digit rate' over $607M; operating income $2,590-2,695M (about $50M lower for the new standard); adjusted EBITDA $3,315-3,420M ($60M higher without the new standard); contract investment amortization about $55M; Q1 2018 'abbreviated guidance': RevPAR only, no Q1 fee or EPS figure, and an approximately $45 million Q1 gain on the Buenos Aires hotel sale; gross rooms +7 percent, deletions 1 to 1.5 percent; roughly $2.5B to be returned assuming no additional asset sales"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-05-09",
+   "source": "MA90",
+   "doc": "Q1 2018 release",
+   "eps_guide": [
+    5.43,
+    5.55
+   ],
+   "eps_guide_note": "adjusted, ASC 606 basis: excludes merger-related costs and charges, cost reimbursement revenue and reimbursed expenses, and the Q1 net Tax Act charge and Avendra gain increase; includes the $0.12 excess tax benefit (tax rate 23 percent) and the Q1 gains (gains and other income $65-70M)",
+   "fy_fees": {
+    "level_m": [
+     3650,
+     3690
+    ],
+    "pct": [
+     11,
+     12
+    ],
+    "prior_m": 3295,
+    "prior_label": "FY17 recast (ASC 606)",
+    "prior_source": "MA90",
+    "derived_pct": [
+     10.77,
+     11.99
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR +2-3% North America, +5-6% outside North America, +3-4% worldwide",
+   "q_guide": {
+    "quarter": "Q2 2018",
+    "fees_m": [
+     935,
+     945
+    ],
+    "fees_pct": [
+     10,
+     11
+    ],
+    "prior_m": 848,
+    "prior_label": "Q2 2017 recast (ASC 606)",
+    "prior_source": "MA90",
+    "eps": [
+     1.34,
+     1.36
+    ],
+    "revpar": "systemwide constant-dollar +3-4% North America, +5-6% outside North America, +3-4% worldwide",
+    "derived_pct": [
+     10.26,
+     11.44
+    ]
+   },
+   "note": "gross fee revenues (base management + franchise + incentive, before contract investment amortization) against 2017 recast bases the release gives as estimates: Q2 $935-945M, 'a 10 to 11 percent increase over second quarter 2017 gross fee revenues of $848 million'; FY $3,650-3,690M, 'an 11 to 12 percent increase over 2017 gross fee revenues of $3,295 million', including $360-380M of credit card branding fees ($242M in 2017), incentive fees up roughly 10 percent over $607M; Q2 operating income $695-705M, adjusted EBITDA $880-890M (7 to 9 percent over $820M recast); FY operating income $2,715-2,765M, adjusted EBITDA $3,445-3,500M (10 to 12 percent over $3,131M recast); net rooms +5.5-6 percent; at least $3.0B to be returned assuming no additional asset sales"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-08-07",
+   "source": "MA93",
+   "doc": "Q2 2018 release",
+   "eps_guide": [
+    5.81,
+    5.91
+   ],
+   "eps_guide_note": "adjusted, ASC 606 basis: excludes merger-related costs and charges, cost reimbursement revenue and reimbursed expenses, and the first-half net Tax Act charge and Avendra gain increase; includes the excess tax benefits (core tax rate 23.9 percent, effective 21.7 percent) and the gains on assets sold to date (gains and other income about $172M)",
+   "fy_fees": {
+    "level_m": [
+     3640,
+     3675
+    ],
+    "pct": [
+     10,
+     12
+    ],
+    "prior_m": 3295,
+    "prior_label": "FY17 recast (ASC 606)",
+    "prior_source": "MA93",
+    "derived_pct": [
+     10.47,
+     11.53
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR +2-3% North America, +5-6% outside North America, +3-4% worldwide",
+   "q_guide": {
+    "quarter": "Q3 2018",
+    "fees_m": [
+     915,
+     935
+    ],
+    "fees_pct": [
+     11,
+     13
+    ],
+    "prior_m": 826,
+    "prior_label": "Q3 2017 recast (ASC 606)",
+    "prior_source": "MA93",
+    "eps": [
+     1.27,
+     1.32
+    ],
+    "revpar": "systemwide constant-dollar +1.5-2% North America, +5-6% outside North America, +2.5-3% worldwide",
+    "derived_pct": [
+     10.77,
+     13.2
+    ]
+   },
+   "note": "this release also guides the fourth quarter: Q4 2018 gross fees $929-944M, 'an 8 to 10 percent increase over fourth quarter 2017 gross fee revenues of $862 million', EPS $1.47-1.52, operating income $712-732M, effective tax rate 20.7 percent, adjusted EBITDA $896-916M (14 to 16 percent over $789M recast), systemwide constant-dollar RevPAR +1.5-2% North America, +5-6% outside North America, +2.5-3% worldwide; Q3 gross fees 'an 11 to 13 percent increase over third quarter 2017 gross fee revenues of $826 million', operating income $665-690M, effective tax rate 24.5 percent, adjusted EBITDA $845-870M (5 to 8 percent over $806M); FY gross fees 'a 10 to 12 percent increase over 2017 gross fee revenues of $3,295 million' (credit card branding fees $360-380M against $242M; incentive fees up roughly 10 percent over $607M), operating income $2,725-2,770M, adjusted EBITDA $3,450-3,495M (10 to 12 percent over $3,131M); net rooms roughly +5 percent (gross 7 percent); more than $3.1B to be returned assuming no additional asset sales"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-11-06",
+   "source": "MA94",
+   "doc": "Q3 2018 release",
+   "eps_guide": [
+    6.15,
+    6.18
+   ],
+   "eps_guide_note": "adjusted, ASC 606 basis: excludes merger-related costs and charges, cost reimbursement revenue and reimbursed expenses, and the first-half net Tax Act charge and Avendra gain increase; includes the excess tax benefits (core tax rate 22.6 percent, effective 19.8 percent) and the gains on assets sold to date (gains and other income about $188M, equity in earnings about $105M)",
+   "fy_fees": {
+    "level_m": [
+     3628,
+     3638
+    ],
+    "pct": [
+     10,
+     10
+    ],
+    "prior_m": 3295,
+    "prior_label": "FY17 recast (ASC 606)",
+    "prior_source": "MA94",
+    "derived_pct": [
+     10.11,
+     10.41
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR roughly +2% North America, roughly +6% outside North America, roughly +3% worldwide",
+   "q_guide": {
+    "quarter": "Q4 2018",
+    "fees_m": [
+     900,
+     910
+    ],
+    "fees_pct": [
+     4,
+     6
+    ],
+    "prior_m": 862,
+    "prior_label": "Q4 2017 recast (ASC 606)",
+    "prior_source": "MA94",
+    "eps": [
+     1.37,
+     1.41
+    ],
+    "revpar": "systemwide constant-dollar roughly +1% North America, +5-6% outside North America, roughly +2% worldwide",
+    "derived_pct": [
+     4.41,
+     5.57
+    ]
+   },
+   "note": "Q4 gross fees 'a 4 to 6 percent increase over fourth quarter 2017 gross fee revenues of $862 million' (lowered from $929-944M for foreign exchange and lower RevPAR), operating income $665-680M, effective tax rate 19.2 percent, adjusted EBITDA $847-862M (7 to 9 percent over $789M recast); North American Q4 RevPAR includes an estimated 110-basis-point headwind from the 2017 hurricane relief comparison; FY gross fees 'a 10 percent increase over 2017 gross fee revenues of $3,295 million' (credit card branding fees $370-380M against $242M; incentive fees up at a mid to high single-digit rate over $607M), operating income $2,741-2,756M, adjusted EBITDA $3,456-3,471M (10 to 11 percent over $3,131M); net rooms roughly +5 percent (gross nearly 7 percent); roughly $3.7B to be returned assuming no additional asset sales"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-11-06",
+   "source": "MA94",
+   "doc": "Q3 2018 release",
+   "fy_display": "systemwide constant-dollar RevPAR +1-3% North America, +3-5% outside North America, +2-3% worldwide",
+   "note": "the CEO's remarks only, 'based on our early budgeting analysis': no 2019 fee, EPS or operating income outlook; gross room additions at a rate similar to 2018, deletions 1 to 1.5 percent, net rooms growth roughly 5.5 percent; the 2018 G&A outlook's $50 million workforce investment 'will not recur in 2019'"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-03-01",
+   "source": "MA95",
+   "doc": "Q4 2018 release",
+   "eps_guide": [
+    5.87,
+    6.1
+   ],
+   "eps_guide_note": "adjusted: excludes merger-related costs and charges, cost reimbursement revenue and reimbursed expenses (not forecast), so it compares with the company's adjusted EPS, not the reported EPS of the prints; 'a 2 to 5 percent decline from 2018 adjusted diluted EPS of $6.21' (reported $5.38); assumes no asset sale gains (adjusted 2018 had $0.44 + $0.21 of them); tax rate 23 percent",
+   "fy_fees": {
+    "level_m": [
+     3830,
+     3910
+    ],
+    "pct": [
+     5,
+     7
+    ],
+    "prior_m": 3638,
+    "prior_label": "FY18",
+    "prior_source": "MA95",
+    "derived_pct": [
+     5.28,
+     7.48
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR +1-3% North America, +2-4% outside North America, +1-3% worldwide",
+   "q_guide": {
+    "quarter": "Q1 2019",
+    "fees_m": [
+     885,
+     905
+    ],
+    "fees_pct": [
+     5,
+     7
+    ],
+    "prior_label": "Q1 2018",
+    "eps": [
+     1.3,
+     1.35
+    ],
+    "revpar": "systemwide constant-dollar +1-2% North America, +2-4% outside North America, +1-3% worldwide",
+    "prior_m": 845,
+    "prior_source": "MA90",
+    "derived_pct": [
+     4.73,
+     7.1
+    ]
+   },
+   "note": "fees are gross fee revenues (base management + franchise + incentive): Q1 $885-905M, 'a 5 to 7 percent increase over first quarter 2018 gross fee revenues of $845 million' (about $9M of unfavorable foreign exchange; incentive fees down at a low single-digit rate on $155M); FY $3,830-3,910M, 'a 5 to 7 percent increase over 2018 gross fee revenues of $3,638 million' ($15-20M of unfavorable foreign exchange; credit card branding fees $410-420M against $380M; incentive fees up at a low single-digit rate on $649M); Q1 EPS $1.30-1.35 (adjusted basis) 'down 3 percent to up 1 percent compared to first quarter 2018 adjusted diluted EPS of $1.34', which included $0.11 of asset sale gains; Q1 tax rate 21 percent; operating income (adjusted basis) Q1 $645-670M, FY $2,915-3,015M; adjusted EBITDA Q1 $820-845M (6 to 10 percent over $770M), FY $3,615-3,715M (4 to 7 percent over $3,473M); G&A Q1 $215-220M, FY $910-920M; net rooms roughly +5.5 percent (deletions 1 to 1.5 percent); investment spending $500-700M; at least $3B to be returned assuming no asset sales"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-05-10",
+   "source": "MA97",
+   "doc": "Q1 2019 release",
+   "eps_guide": [
+    5.97,
+    6.19
+   ],
+   "eps_guide_note": "adjusted: excludes merger-related costs and charges, cost reimbursement revenue and reimbursed expenses; 'flat to down 4 percent from 2018 adjusted diluted EPS of $6.21'; assumes no additional asset sale gains; tax rate 22.5 percent",
+   "fy_fees": {
+    "level_m": [
+     3845,
+     3925
+    ],
+    "pct": [
+     6,
+     8
+    ],
+    "prior_m": 3638,
+    "prior_label": "FY18",
+    "prior_source": "MA95",
+    "derived_pct": [
+     5.69,
+     7.89
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR +1-3% North America, +2-4% outside North America, +1-3% worldwide",
+   "q_guide": {
+    "quarter": "Q2 2019",
+    "fees_m": [
+     990,
+     1010
+    ],
+    "fees_pct": [
+     4,
+     6
+    ],
+    "prior_label": "Q2 2018",
+    "eps": [
+     1.52,
+     1.58
+    ],
+    "revpar": "systemwide constant-dollar +1-2% North America, +2-4% outside North America, +1-3% worldwide",
+    "prior_m": 951,
+    "prior_source": "MA93",
+    "derived_pct": [
+     4.1,
+     6.2
+    ]
+   },
+   "note": "gross fee revenues: Q2 $990-1,010M, 'a 4 to 6 percent increase over second quarter 2018 gross fee revenues of $951 million' (about $5M of unfavorable foreign exchange; incentive fees down slightly on $176M, hotels under renovation); FY $3,845-3,925M, 'a 6 to 8 percent increase over 2018 gross fee revenues of $3,638 million' (about $10M of unfavorable foreign exchange; credit card branding fees $410-420M; incentive fees up at a mid single-digit rate on $649M; raised from February largely on higher incentive fees); Q2 EPS $1.52-1.58 (adjusted basis) 'a 9 to 12 percent decline compared to second quarter 2018 adjusted diluted EPS of $1.73', which included $0.26 of asset sale gains; Q2 tax rate 24.5 percent; operating income (adjusted basis) Q2 $770-795M, FY $2,925-3,025M; adjusted EBITDA Q2 $940-965M (flat to +3 percent on $939M), FY $3,615-3,715M unchanged; G&A FY $920-930M; net rooms roughly +5.5 percent; investment spending $600-800M; at least $3B to be returned"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-08-06",
+   "source": "MA98",
+   "doc": "Q2 2019 release",
+   "eps_guide": [
+    5.97,
+    6.06
+   ],
+   "eps_guide_note": "adjusted: excludes merger-related costs and charges, cost reimbursement revenue and reimbursed expenses; 'a 2 to 4 percent decline compared to 2018 adjusted diluted EPS of $6.21'; includes the $9 million pre-tax ($0.02) Q3 asset sale gain; tax rate 22.4 percent",
+   "fy_fees": {
+    "level_m": [
+     3820,
+     3850
+    ],
+    "pct": [
+     5,
+     6
+    ],
+    "prior_m": 3638,
+    "prior_label": "FY18",
+    "prior_source": "MA95",
+    "derived_pct": [
+     5.0,
+     5.83
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR +1-2% North America, +2-3% outside North America, +1-2% worldwide",
+   "q_guide": {
+    "quarter": "Q3 2019",
+    "fees_m": [
+     945,
+     960
+    ],
+    "fees_pct": [
+     1,
+     3
+    ],
+    "prior_label": "Q3 2018",
+    "eps": [
+     1.47,
+     1.51
+    ],
+    "revpar": "systemwide constant-dollar +1-2% North America, +2-3% outside North America, +1-2% worldwide",
+    "prior_m": 932,
+    "prior_source": "MA94",
+    "derived_pct": [
+     1.39,
+     3.0
+    ]
+   },
+   "note": "this release also guides the fourth quarter: Q4 2019 gross fee revenues $981-996M, 'an 8 to 9 percent increase over fourth quarter 2018 gross fee revenues of $910 million' (incentive fees up at a mid to high single-digit rate on $167M), EPS $1.53-1.58 (adjusted basis), operating income $744-764M, tax rate 23.3 percent, adjusted EBITDA $917-937M (6 to 8 percent over $864M), systemwide constant-dollar RevPAR +1-2% North America, +2-3% outside North America, +1-2% worldwide; Q3 gross fee revenues $945-960M, 'a 1 to 3 percent increase over third quarter 2018 gross fee revenues of $932 million' (lower residential branding fees; incentive fees down at a mid to high single-digit rate on $151M); Q3 EPS $1.47-1.51 (adjusted basis) 'an 11 to 14 percent decline compared to third quarter 2018 adjusted diluted EPS of $1.70', which included $0.26 of asset sale gains; Q3 includes a $9M gain ($0.02); Q3 operating income $725-745M, tax rate 25.0 percent, adjusted EBITDA $896-916M (flat to +2 percent on $900M); FY gross fee revenues $3,820-3,850M, 'a 5 to 6 percent increase over 2018 gross fee revenues of $3,638 million' (about $20M of unfavorable foreign exchange, credit card branding fees $400-410M, incentive fees flat on $649M; cut from May on lower RevPAR growth, foreign exchange and credit card fees); FY operating income $2,910-2,950M, adjusted EBITDA $3,586-3,626M (3 to 4 percent over $3,473M); net rooms +5.0-5.5 percent (construction delays); investment spending $650-750M; cash returned 'could approach $3 billion'"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-11-05",
+   "source": "MA100",
+   "doc": "Q3 2019 release",
+   "eps_guide": [
+    5.87,
+    5.9
+   ],
+   "eps_guide_note": "adjusted: excludes merger-related costs and charges, cost reimbursement revenue, reimbursed expenses and the expected gain on the sale of the St. Regis New York; 'a 5 percent decline compared to 2018 adjusted diluted EPS of $6.21'; includes the $9 million pre-tax ($0.02) Q3 asset sale gain; tax rate 22.9 percent",
+   "fy_fees": {
+    "level_m": [
+     3809,
+     3819
+    ],
+    "pct": [
+     5,
+     5
+    ],
+    "prior_m": 3638,
+    "prior_label": "FY18",
+    "prior_source": "MA95",
+    "derived_pct": [
+     4.7,
+     4.98
+    ]
+   },
+   "fy_display": "systemwide constant-dollar RevPAR roughly +1% North America, roughly +2% outside North America, roughly +1% worldwide",
+   "q_guide": {
+    "quarter": "Q4 2019",
+    "fees_m": [
+     960,
+     970
+    ],
+    "fees_pct": [
+     5,
+     7
+    ],
+    "prior_label": "Q4 2018",
+    "eps": [
+     1.44,
+     1.47
+    ],
+    "revpar": "systemwide constant-dollar flat to +1% North America, roughly +1% outside North America, roughly +1% worldwide",
+    "prior_m": 910,
+    "prior_source": "MA95",
+    "derived_pct": [
+     5.49,
+     6.59
+    ]
+   },
+   "note": "the full-year fee percentage is a single figure, 'a 5 percent increase over 2018 gross fee revenues of $3,638 million' (pct [5, 5]; $20M of unfavorable foreign exchange; credit card branding fees $400-410M); Q4 gross fee revenues $960-970M, 'a 5 to 7 percent increase over fourth quarter 2018 gross fee revenues of $910 million', cut from August on more modest RevPAR growth and margins, Hong Kong and foreign exchange (incentive fees roughly flat on $167M); Q4 EPS $1.44-1.47 (adjusted basis), tax rate 25.0 percent, operating income $715-730M, adjusted EBITDA $898-913M (4 to 6 percent over $864M; reflects the St. Regis New York sale, not its gain); FY operating income $2,890-2,905M, adjusted EBITDA $3,572-3,587M (3 percent over $3,473M); net rooms +5.0-5.25 percent; investment spending $1,000-1,100M (W New York - Union Square purchase, expected Elegant Hotels Group acquisition); St Regis New York sold for $310M in Q4; cash returned 'could approach $3 billion'"
+  },
+  {
+   "fy": 2020,
+   "published": "2019-11-05",
+   "source": "MA100",
+   "doc": "Q3 2019 release",
+   "fy_display": "systemwide constant-dollar RevPAR flat to +2% worldwide, North America in the middle of the range",
+   "note": "no 2020 fee, EPS or operating income outlook; net rooms growth 'comparable to its expectation for 2019' (5.0 to 5.25 percent in the same release); the CEO: North American group revenue pace for 2020 'up at a mid-single digit growth rate'"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-02-27",
+   "source": "MA101",
+   "doc": "Q4 2019 release",
+   "eps_guide": [
+    6.3,
+    6.53
+   ],
+   "eps_guide_note": "adjusted, 'could total': the base case excludes any impact from the Coronavirus outbreak, merger-related costs and charges, cost reimbursement revenue and reimbursed expenses, and any additional asset sales; set against FY2019 adjusted diluted EPS of $6.00 (reported $3.80); tax rate 23.3 percent",
+   "fy_fees": {
+    "level_m": [
+     3960,
+     4040
+    ],
+    "pct": [
+     4,
+     6
+    ],
+    "prior_m": 3823,
+    "prior_label": "FY19",
+    "prior_source": "MA101",
+    "derived_pct": [
+     3.58,
+     5.68
+    ]
+   },
+   "fy_display": "base case, no Coronavirus impact: systemwide constant-dollar RevPAR flat to +2% worldwide, North America around the middle of that range",
+   "q_guide": {
+    "quarter": "Q1 2020",
+    "fees_m": [
+     940,
+     950
+    ],
+    "fees_pct": [
+     5,
+     6
+    ],
+    "prior_label": "Q1 2019",
+    "eps": [
+     1.47,
+     1.5
+    ],
+    "revpar": "base case, no Coronavirus impact: systemwide constant-dollar +1-2% worldwide and in North America",
+    "prior_m": 895,
+    "prior_source": "MA97",
+    "derived_pct": [
+     5.03,
+     6.15
+    ]
+   },
+   "note": "a base case outlook that 'does not reflect any impact from the Coronavirus outbreak' ('Marriott cannot fully estimate the financial impact from the virus, which could be material to first quarter and full year 2020 results'): if the current low occupancy in Asia Pacific continues with no meaningful impact outside the region, the company 'could earn roughly $25 million in lower fee revenue per month, compared to its 2020 base case outlook', and room additions could be delayed; fee growth stated: FY $3,960-4,040M 'a 4 to 6 percent increase over 2019 gross fee revenues of $3,823 million' (including roughly $10M of unfavorable foreign exchange; other franchise fees $630-640M, roughly +10 percent; the CEO rounds it to $4 billion, +5 percent), Q1 $940-950M 'a 5 to 6 percent increase over first quarter 2019 gross fee revenues of $895 million' (incentive fees to decrease slightly from $163M); Q1 EPS $1.47-1.50 on the same adjusted basis (tax rate 20.8 percent); operating income Q1 $685-699M, FY $2,995-3,095M; G&A Q1 $230-234M, FY $950-960M (+1-2 percent on $938M); owned, leased and other revenue net of direct expenses Q1 about $50M, FY $295-305M; adjusted EBITDA Q1 $853-867M (+4-6 percent on $821M), FY $3,700-3,800M (+3-6 percent on $3,575M); net rooms +5.0-5.25 percent after 1-1.5 percent deletions; investment spending $700-800M; more than $2.4B returned to shareholders through repurchases and dividends assuming no additional asset sales and no Coronavirus impact"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-03-19",
+   "source": "MA103",
+   "doc": "8-K of 2020-03-18",
+   "withdrawn": [
+    "eps_guide",
+    "fy_fees",
+    "fy_display",
+    "q_guide",
+    "note"
+   ],
+   "withdrawn_quote": "Marriott withdraws all aspects of its outlook and assumptions for 2020"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-05-11",
+   "source": "MA104",
+   "doc": "Q1 2020 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the financial impact of this unprecedented situation, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results."
+  },
+  {
+   "fy": 2020,
+   "published": "2020-08-10",
+   "source": "MA105",
+   "doc": "Q2 2020 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the financial impact of this unprecedented situation, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
+   "note": "no RevPAR, fee or EPS outlook; the CEO's remarks estimate net rooms growth for 2020: 'Given current trends, we estimate rooms could grow by 2 to 3 percent, net, for the full year'"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-11-06",
+   "source": "MA106",
+   "doc": "Q3 2020 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the financial impact of this unprecedented situation, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
+   "note": "no RevPAR, fee or EPS outlook; the CEO's remarks: 'For full year 2020, we now expect 2.5 to 3 percent net rooms growth, including terminations of 1.5 to 2 percent'"
+  },
+  {
+   "fy": 2021,
+   "published": "2020-11-06",
+   "source": "MA106",
+   "doc": "Q3 2020 release",
+   "words": "Assuming progress is made in containing COVID-19, we would expect gross room additions in 2021 to accelerate compared to our expectations for 2020."
+  },
+  {
+   "fy": 2021,
+   "published": "2021-02-18",
+   "source": "MA107",
+   "doc": "Q4 2020 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the impact of this unprecedented situation on its future results, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
+   "note": "no RevPAR, fee, EPS or operating income outlook for 2021; the only number is gross rooms growth: 'Looking ahead, we expect gross rooms growth could accelerate to approximately 6 percent in 2021' (Mr. Capuano); further information on the impact of COVID-19 was left to the call that morning"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-05-10",
+   "source": "MA109",
+   "doc": "Q1 2021 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the impact of this unprecedented situation on its future results, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
+   "note": "no RevPAR, fee, EPS or operating income outlook for 2021; rooms only: gross rooms growth 'approximately 6 percent in 2021' ('consistent with our view a quarter ago') and net rooms growth of 3 to 3.5 percent ('we continue to estimate': the Q4 2020 release itself printed no net figure)"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-08-03",
+   "source": "MA110",
+   "doc": "Q2 2021 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the impact of this unprecedented situation on its future results, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
+   "note": "no RevPAR, fee, EPS or operating income outlook for 2021; gross rooms growth approximately 6 percent, net rooms growth 'towards the top end of the 3 to 3.5 percent range'; full-year 2021 investment spending $575 million to $625 million; the CEO expects business transient and group demand to increase meaningfully in the fall"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-11-03",
+   "source": "MA111",
+   "doc": "Q3 2021 release",
+   "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the impact of this unprecedented situation on its future results, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
+   "note": "no RevPAR, fee, EPS or operating income outlook for 2021 and nothing on the next year; net rooms growth 'approximately 3.5 percent' in 2021; full-year 2021 investment spending $525 million to $550 million (down from $575-625M a quarter earlier); business transient demand 'picked up again in October, a trend we expect to continue'"
   }
  ],
  "dividends": [
@@ -7089,6 +9481,24 @@
    "source": "MA85",
    "quarterly": 0.33,
    "note": "$0.33 a quarter ('$0.33 per share declared on May 5, 2017 to be paid June 30, 2017', Q1 2017 10-Q)"
+  },
+  {
+   "published": "2018-05-10",
+   "source": "MA91",
+   "quarterly": 0.41,
+   "note": "$0.41 a quarter ('$0.41 per share declared on May 4, 2018', Q1 2018 10-Q)"
+  },
+  {
+   "published": "2019-08-06",
+   "source": "MA99",
+   "quarterly": 0.48,
+   "note": "$0.48 a quarter ('$0.48 per share declared on May 10, 2019', Q2 2019 10-Q)"
+  },
+  {
+   "published": "2020-03-19",
+   "source": "MA103",
+   "quarterly": 0.0,
+   "note": "none: 'Marriott anticipates that its previously announced first quarter 2020 dividend, payable on March 31, 2020, will be the last until conditions improve' (8-K of 2020-03-18)"
   }
  ],
  "events": [],

@@ -157,7 +157,8 @@ def check_vintage(v):
         assert v[k] == x or abs(v[k] - x) < 1e-9, (v["published"], k, v[k], x)
     last = max(v["revenue_usd_b"])
     assert abs(v["revenue_usd_b"][last] * 1000 - r.get("rev_reported_m", r["rev_m"])) < 1e-6, (v["published"], "last year's revenue")
-    assert abs(sum(g[1] for g in v["groups"]) * 1000 - r.get("rev_reported_m", r["rev_m"])) < 1e-6, (v["published"], "segments sum")
+    # a recast vintage without a segment table keeps the earlier 10-K's segments, which sum to that 10-K's revenues ('groups_rev_m')
+    assert abs(sum(g[1] for g in v["groups"]) * 1000 - v.get("groups_rev_m", r.get("rev_reported_m", r["rev_m"]))) < 1e-6, (v["published"], "segments sum")
 
 
 def on_basis(facts, as_of):
@@ -374,7 +375,9 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── dividend: the latest declared cash rate ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
-    divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
+    # a vintage's dividend counts from the filing that states it: a recast vintage repeats its 10-K's rate ('dividend_published', the UNP
+    # encoding), so it never overrides a later declared rate
+    divs.append((h.get("dividend_published", h["published"]), h["dividend_annual"], h["dividend_note"], None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
     # ── market statistics, prices truncated at AS_OF, from the spinoff on ──
