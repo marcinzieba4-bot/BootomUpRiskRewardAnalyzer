@@ -1,10 +1,12 @@
 # MAR retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MAR weekly dates: 105 from 2008-01-04 to 2009-12-31. They are **labels and hypotheses**: never feed
-them back into the method or the fact sheet. The batch was scored only after its point-in-time build was committed and pushed (6eb0401).
-Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its 6-month, 1-, 2- and 3-year horizons.
-Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. "Call held"
-is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark, FAIR land within ±15pp of it, RICH miss the hurdle and lag it.
+Patterns seen in `outcome.json` for the MAR weekly dates: 315 from 2008-01-04 to 2013-12-31. They are **labels and hypotheses**: never feed
+them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed: 2008-2009
+after 6eb0401, 2010-2013 after 893d2ad. Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its
+6-month, 1-, 2- and 3-year horizons. Total returns keep Yahoo's 1061:1000 factor for the 2011 Marriott Vacations Worldwide spin-off, so
+they include the distributed shares. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
+is +32.2% over two years. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark, FAIR should land within
+±15pp of the benchmark, and RICH should miss the hurdle and lag the benchmark.
 
 ## 2008 (53 dates)
 
@@ -83,3 +85,126 @@ is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark, FAIR la
   means a new method version tested elsewhere.
 - Today's live profile of MAR (`data/business_profiles.json`, a 2026 judgement, recorded in `outcome.json` as profile drift) also files it
   DURABLE, risk 2; the kind changes only the class label, and the outcomes above come from the price state, which the EPS anchor and BASE set.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 52 | +20.5% | -7.8% to +48.6% | 12 | 16 | +3.6% | 36 |
+| legacy tier AVOID | 52 | +20.5% | -7.8% to +48.6% | 12 | 16 | +3.6% | 36 |
+| FY09 EPS $0.81 (2010-01-08 to 2010-02-05) | 5 | +36.9% | +22.2% to +48.6% | 3 | 5 | +22.3% | 0 |
+| FY10 EPS $0.88 (2010-02-12 to 2010-04-16) | 10 | +38.4% | +18.8% to +43.4% | 7 | 9 | +16.1% | 1 |
+| FY10 EPS $1.00 (2010-04-23 to 2010-07-09) | 12 | +24.8% | +10.5% to +43.5% | 2 | 2 | +3.4% | 10 |
+| FY10 EPS $1.09 (2010-07-16 to 2010-10-01) | 12 | +19.3% | +14.8% to +29.0% | 0 | 0 | +3.6% | 12 |
+| FY10 EPS $1.105 (2010-10-08 to 2010-12-31) | 13 | -1.6% | -7.8% to +17.3% | 0 | 0 | -1.8% | 13 |
+
+- **RICH on every date; it held from the FY10 guide of $1.00 on.**
+  - The 14 dates to 2010-04-09, on the trough-year FY2009 and first FY2010 guides ($0.81, $0.88), returned +22% to +49% over two years,
+    2-18pp ahead of SPY. The call held on none.
+  - From 2010-04-23 it held on 35 of 37. Two-year returns ran -8% to +44%, and the m12-24 average price was -10% to +18% from the entry.
+  - The 13 dates of Q4 2010 lagged SPY by 10-27pp.
+  - Every date sat through the 2011 sell-off: a 38-39% drawdown within two years.
+- **The price was above the EPP floor on every date** (by 55-114%). This is the 2009 pattern, a guided trough year read RICH, carried into
+  the recovery year. It was wrong while the guides still read the trough and right once they had caught up. Hypothesis, not a rule: as
+  noted for 2009, test a multi-year or mid-cycle EPS anchor elsewhere.
+- **The two-year price landed nearest BULL on 37 dates and XBULL on 13**, never BEAR. One-year returns had a median of +1.4% (ahead of SPY on
+  12); three-year returns +34.1% (+22% to +68%, ahead of SPY on 13).
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 20 | +63.0% | +36.9% to +72.1% | 20 | 20 | +46.1% | 20 |
+| class FAIR | 19 | +28.7% | +19.0% to +58.2% | 5 | 10 | +17.4% | 19 |
+| class RICH | 13 | +8.3% | +0.3% to +22.6% | 0 | 0 | +2.3% | 13 |
+| legacy tier BUY | 7 | +66.3% | +56.8% to +72.1% | 7 | 7 | +55.6% | 7 |
+| legacy tier ACCUMULATE | 8 | +66.3% | +36.9% to +71.9% | 8 | 8 | +44.8% | 8 |
+| legacy tier WATCHLIST | 24 | +29.5% | +19.0% to +64.8% | 10 | 15 | +19.3% | 24 |
+| legacy tier AVOID | 13 | +8.3% | +0.3% to +22.6% | 0 | 0 | +2.3% | 13 |
+| FY10 EPS $1.105 (2011-01-07 to 2011-02-11) | 6 | +7.8% | +0.3% to +12.6% | 0 | 0 | -0.3% | 6 |
+| FY11 EPS $1.40 (2011-02-16 to 2011-07-08) | 21 | +25.0% | +6.3% to +33.3% | 2 | 7 | +12.6% | 21 |
+| FY11 EPS $1.39 (2011-07-15 to 2011-09-30) | 12 | +60.5% | +28.3% to +72.1% | 10 | 10 | +53.0% | 12 |
+| FY11 EPS $1.395 (2011-10-07 to 2011-12-30) | 13 | +59.4% | +46.2% to +71.9% | 13 | 13 | +38.8% | 13 |
+
+- **Every call held (52 of 52), and the classes rank the outcome.**
+  - CHEAP: 2011-07-29 to 2011-10-21 in the summer sell-off (BUY at $26.24 on 2011-08-19), and 2011-11-18 to the year-end. It returned
+    +37% to +72%; every date cleared the hurdle and beat SPY.
+  - FAIR: +28.7% median.
+  - RICH (January to March and 2011-05-27): +0.3% to +22.6%, every date behind SPY.
+- **Within the year the adjusted gap ranked the outcome.** Against the m12-24 return it scores Spearman +0.96; the entry price scores -1.00,
+  the EPP gap -0.99 and Ratio B -0.98; the proxy composite +0.04.
+- **The two-year price landed nearest BASE on 35 dates and BULL on 17.** Three-year returns: +104% median, ahead of SPY on 45.
+
+## 2012 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 17 | +83.4% | +56.9% to +130.3% | 17 | 17 | +41.2% | 17 |
+| class FAIR | 33 | +65.0% | +44.4% to +119.6% | 33 | 33 | +26.3% | 16 |
+| class RICH | 3 | +41.3% | +34.5% to +48.5% | 3 | 3 | +21.0% | 0 |
+| legacy tier ACCUMULATE | 6 | +83.4% | +79.2% to +130.3% | 6 | 6 | +41.2% | 6 |
+| legacy tier WATCHLIST | 41 | +70.0% | +47.7% to +126.9% | 41 | 41 | +31.8% | 24 |
+| legacy tier AVOID | 6 | +45.2% | +34.5% to +50.9% | 6 | 6 | +21.0% | 3 |
+| FY11 EPS $1.395 (2012-01-06 to 2012-02-10) | 6 | +48.5% | +34.5% to +56.2% | 6 | 6 | +24.1% | 3 |
+| FY12 EPS $1.58 (2012-02-17 to 2012-04-13) | 9 | +50.7% | +44.4% to +56.9% | 9 | 9 | +19.9% | 9 |
+| FY12 EPS $1.635 (2012-04-20 to 2012-07-06) | 12 | +65.0% | +47.7% to +72.3% | 12 | 12 | +26.0% | 7 |
+| FY12 EPS $1.70 (2012-07-13 to 2012-12-31) | 26 | +87.7% | +70.0% to +130.3% | 26 | 26 | +49.2% | 14 |
+
+- **Everything rose, and the median still runs CHEAP > FAIR > RICH.**
+  - Every date cleared the hurdle and beat SPY.
+  - The CHEAP calls held on all 17.
+  - FAIR held on 16 of 33: the 17 misses (from 2012-06-08) beat SPY by 15-66pp.
+  - The three RICH dates (2012-01-20, 2012-02-03, 2012-02-10, before the FY12 guide) returned +35% to +49% and held on none.
+- **The two-year price landed nearest BULL on 43 dates and XBULL on 10.** Three-year returns ran +75% to +143%, ahead of SPY on every date.
+- The adjusted gap ranks the m12-24 return at +0.65 and the EPP gap at -0.74. The proxy composite scores -0.56.
+
+## 2013 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 36 | +89.4% | +65.2% to +115.6% | 36 | 36 | +77.9% | 36 |
+| class FAIR | 4 | +102.0% | +96.8% to +106.1% | 4 | 4 | +64.4% | 0 |
+| class RICH | 13 | +57.8% | +38.8% to +96.0% | 13 | 13 | +63.0% | 0 |
+| legacy tier BUY | 26 | +91.8% | +72.4% to +115.6% | 26 | 26 | +77.9% | 26 |
+| legacy tier ACCUMULATE | 10 | +74.2% | +65.2% to +88.4% | 10 | 10 | +77.9% | 10 |
+| legacy tier WATCHLIST | 4 | +102.0% | +96.8% to +106.1% | 4 | 4 | +64.4% | 0 |
+| legacy tier AVOID | 13 | +57.8% | +38.8% to +96.0% | 13 | 13 | +63.0% | 0 |
+| FY12 EPS $1.70 (2013-01-04 to 2013-02-15) | 7 | +96.8% | +84.6% to +106.1% | 7 | 7 | +62.7% | 0 |
+| FY13 EPS $1.975 (2013-02-21 to 2013-04-26) | 10 | +106.0% | +91.4% to +115.6% | 10 | 10 | +71.4% | 10 |
+| FY13 EPS $2.005 (2013-05-03 to 2013-07-26) | 13 | +90.4% | +83.2% to +103.4% | 13 | 13 | +80.4% | 13 |
+| FY13 EPS $1.975 (2013-08-02 to 2013-10-25) | 13 | +74.2% | +65.2% to +84.7% | 13 | 13 | +80.0% | 13 |
+| FY13 EPS $1.995 (2013-11-01 to 2013-12-31) | 10 | +57.4% | +38.8% to +71.6% | 10 | 10 | +63.5% | 0 |
+
+- **CHEAP from the Q4 2012 print held on all 36** (2013-02-21 to 2013-10-25: +65% to +116%, 46-75pp ahead of SPY).
+- **Every other call missed.**
+  - The four FAIR dates of January and the three RICH dates of February 2013 came before the FY13 guide. They returned +85% to +106%.
+  - The ten RICH dates from 2013-11-01 returned +39% to +72%, 24-49pp ahead of SPY, and the m12-24 average price was 54-68% above the
+    entry.
+- **The November-December RICH calls rest on the calendar change.** From 2013-10-31, BASE reads the Q4 2013 fee guide on 92 days against
+  the 112-day Q4 2012 (-17% to -19%), with the price 21-30% above the floor.
+  - The two alternatives tested before scoring would not have made those calls hold. Read per day, the guide moves none of them. Replaced
+    by the FY2013 fee guide, 7 move to FAIR and still miss by 24-49pp.
+  - Hypothesis, not a rule: a quarter guide on an unequal period measures the calendar more than the business. Test day-normalised and
+    fiscal-year fallbacks on the house's other unequal quarters (AAPL's and AVGO's 14-week quarters, LOW's 53rd week); never fit either to
+    MAR's outcomes.
+- The adjusted gap ranks the m12-24 return at +0.87, the EPP gap at -0.79 and the proxy composite at +0.61. **The two-year price landed
+  nearest BASE on 14 dates, BULL on 32 and XBULL on 7.**
+
+## The 2010-2013 encoding calls, seen afterwards
+
+These are hindsight comparisons of alternatives decided before scoring (retro/README.md, "MAR 2010-2013", Sensitivity). The calls stay,
+and changing a rule means a new method version tested elsewhere.
+
+- **Prices as traded through the spin-off.** With Yahoo's factor kept, 45 dates from 2011-12-02 to 2013-01-25 would have read FAIR or RICH
+  instead of CHEAP or FAIR. The call held on 33 of them as built and would have held on 3.
+- **The company's EPS basis.**
+  - GAAP EPS wherever the year is not distorted would have moved 31 dates toward CHEAP or FAIR: the call held on 11 of them as built and
+    would have held on 19.
+  - FY2007 at the ex-timeshare $1.50 would have moved 21: held on 2 as built, 11 under the alternative.
+  - FY2010 at $1.15 with timeshare would have moved 4: held on 4 as built, 1 under the alternative.
+  - Both alternatives that would have done better read the stock cheaper in a market that rose on almost every date. That is a rising
+    tide, not evidence for either basis.
+- **The 2013 quarter guides.** Read per day, 5 dates would have moved: held on 5 as built, 0 under the alternative. Replaced by the FY2013
+  fee guide, 10: held on 3 as built, 0 under the alternative.
+- **Signals.** The proxy composite's rank against the outcome changes sign from year to year (-0.43, +0.04, -0.56, +0.61), so it is no
+  steady guide here. The adjusted gap ranked the outcome positively in 2011-2013 (+0.96, +0.65, +0.87).
