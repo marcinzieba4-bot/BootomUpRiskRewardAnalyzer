@@ -140,7 +140,8 @@ def check_print(p):
                 "cash_b": round(ra["cash_m"] / 1000, 3)}
         for k, v in want.items():
             assert a[k] == v or abs(a[k] - v) < 1e-9, (p["quarter"], "fy_actual", k, a[k], v)
-        assert abs(sum(g[1] for g in a["groups"]) * 1000 - ra["rev_m"]) < 1e-6, (p["quarter"], "segments sum to the year's revenues")
+        if a.get("groups"):                       # a release without a segment table keeps the vintage's segments
+            assert abs(sum(g[1] for g in a["groups"]) * 1000 - ra["rev_m"]) < 1e-6, (p["quarter"], "segments sum to the year's revenues")
 
 
 def check_vintage(v):
@@ -278,7 +279,7 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_revpar_pct=a["revpar_pct"], prev_fy_occupancy=a["occupancy"], prev_fy_occ_pts=a["occupancy_pts"],
                      other_expense_b=a["other_expense_b"], other_note=f'{a["fy_label"]} operating income less income before taxes ({p["source"]})',
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})', cash_b=a["cash_b"], cash_note=f'cash balances at year-end ({p["source"]})',
-                     groups=a["groups"], groups_basis=f'{a["fy_label"]} revenues by segment ({a["doc"]})',
+                     **(dict(groups=a["groups"], groups_basis=f'{a["fy_label"]} revenues by segment ({a["doc"]})') if a.get("groups") else {}),
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one; before the first print, the vintage names it
