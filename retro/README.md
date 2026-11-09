@@ -9971,6 +9971,137 @@ Judgement calls that could carry hindsight:
 - the 2009 stock dividends applied from the later of the ex-date and the first filing that states the ratio, and the November one not at all;
 - DURABLE rather than CYCLICAL (the class label only), on 10-Ks that tie hotel profitability to the economy but describe a fee business.
 
+### MAR 2010-2013
+
+210 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte.
+
+Read: the 16 earnings releases from Q4 2009 to Q3 2013, the FY2009-FY2012 10-Ks, and the 8-Ks and 10-Qs that state a dividend, a
+stock-dividend ratio, the spin-off, the calendar change or the listing. The source ids are MA32-MA62; MA62 is the FY2003 10-K, for 2001's
+diluted shares. Five Opus subagents split the transcription by year and by the 10-Ks, working from the converted filings, and the
+encodings were decided centrally. 1,217 strings across both series were checked with `verbatim.py`, each against its own filing, and all
+1,217 were found. Decided on 2026-11-09, before any 2010-2013 outcome was computed:
+
+- **Release timing.**
+  - Q4 2009 (2010-02-11 07:27 ET) and Q1 2010 (2010-04-22 07:49 ET) came before the open.
+  - From Q2 2010 every release was accepted after the close (16:38-19:33 ET), so each print is dated the next trading day (the AVGO
+    rule).
+  - The 10-Ks: FY2009 was accepted 2010-02-12 16:10 ET and is dated 2010-02-16 (2010-02-15 was a market holiday). FY2010 (2011-02-18
+    10:27), FY2011 (2012-02-16 15:34, the day of the Q4 2011 print) and FY2012 (2013-02-20 11:12) keep their dates.
+- **History.**
+  - Four more vintages, each with ten years from its own 10-K: FY2009 (2000-2009), FY2010 (2001-2010), FY2011 (2002-2011) and FY2012
+    (2003-2012). The 10-Ks restate per-share data for the 2009 stock dividends by 0.00360, 0.00370 and 0.00341, the first two net of cash
+    in lieu of fractions.
+  - The first year's diluted shares come from the FY2002 (2000: 254.0M), FY2003 (2001: 256.7M), FY2004 (2002: 254.6M) and FY2005 (2003:
+    245.4M) 10-Ks, before the 2006 split.
+  - FY2009's 356.4M is the 10-K's diluted count in a loss year, which equals basic. The release's adjusted 367.4M moves no class.
+  - From the FY2009 10-K, operating income carries the provision for loan losses (2008: $765M against $785M). Rule T stays frozen on the
+    values public on 2008-01-04.
+  - The Q4 2010, Q4 2011 and Q4 2012 releases print no segment table. Between such a print and its 10-K, the history keeps the previous
+    vintage's segments (a builder change; no earlier output changes).
+  - The FY2011 10-K restates 2010 for Hawaii. FY2012's "Former Timeshare" segment is 0.
+- **EPS: the company's figures excluding one-offs (the ACN rule), each year from the latest filing that publishes one.**
+  - 2005: $1.33 (Q4 2006 release, before the stock dividends; the builder restates it).
+  - 2007: $1.89 (Q4 2008 release, before the stock dividends), then from the FY2011 vintage $1.87 "EXCLUDING ESOP IMPACT" (Q4 2011
+    release).
+  - 2008: $1.49 (Q4 2009 release, after the stock dividends; it was $1.51).
+  - 2009: $0.93 (GAAP $(0.97): restructuring, the timeshare strategy impairments and tax items).
+  - 2010: $1.15 (Q4 2010 release; GAAP $1.21), then $1.02 "as if the Timeshare spin-off had occurred" at the start of 2010 (Q4 2011
+    release).
+  - 2011: $1.31, as if spun off and excluding other charges (GAAP $0.55, with the $324M timeshare impairment).
+  - 2012: $1.64 excluding the Courtyard joint venture gain (GAAP $1.72).
+  - No year is excluded: every distorted GAAP year has a published adjusted figure.
+  - The Q4 2011 release also states FY2007 excluding the timeshare segment ($1.50). It is not used: no filing gives any other year before
+    2010 without timeshare, so the history keeps timeshare to 2009.
+- **The spin-off of Marriott Vacations Worldwide.** One MVW share for every ten Marriott shares, to holders of record on 2011-11-10,
+  distributed 2011-11-21 (8-Ks of 2011-10-26 and 2011-11-21).
+  - It is not a split. Yahoo books it as 1061:1000 on 2011-11-22, and the builder undoes that factor (`distributions`), so prices stay
+    as traded. The ex-date drop stays in the series and in the next year's realized vol and beta.
+  - Revenue history stays as reported, with timeshare before the spin-off, as the 10-K segment tables give it. Margins and the quarterly
+    comparisons use the company's adjusted columns.
+  - Outcomes keep Yahoo's factor: the distributed shares stay in the holding.
+- **Prints: each release's own comparison.**
+  - The 2010 quarters are as reported against 2009 as adjusted. From 2010 the securitized timeshare notes are consolidated (ASU
+    2009-16/17), and 2009 is not restated.
+  - Q4 2010 is adjusted against adjusted: it excludes $100M of impairment and other charges and an $85M tax benefit.
+  - Q3 2011 is adjusted against 2010 as reported: it excludes the $324M timeshare impairment, $28M of other charges and $32M of tax.
+  - Q4 2011 is adjusted against adjusted, as if spun off at the start of 2010.
+  - The 2012 quarters are as reported against 2011 as adjusted. The 2013 quarters are as reported on both sides.
+  - Q4 2009 (16 weeks) is compared with the 17-week Q4 2008. Its RevPAR comes from the release's first table, which excludes the 53rd week
+    (-12.6%; -13.1% against all 17 weeks).
+  - The RevPAR table covers the "Continental United States and Canada" in 2009-2010 and the "United States" from 2011. The Q2 2010 table
+    is in constant dollars.
+- **A calendar year from FY2013.** The 8-K of 2012-05-08: "The company's fiscal year 2013 will begin on December 29, 2012 and will end on
+  December 31, 2013", and "The company will not restate historical results".
+  - `fiscal_year_end` is December 31 from 2013.
+  - The 2013 quarters run 93, 91, 92 and 92 days, against 84, 84, 84 and 112. The statements compare the unequal periods; RevPAR compares
+    calendar months.
+  - Growth is as published, with the days in the notes (the LOW 53rd-week, AAPL 14-week and AVGO 2018 rules). So the quarter fee guides
+    read +18.3% to +23.3% (Q1), +18.4% to +21.4% (Q2), +16.0% to +19.1% (Q3), and -19.4% to -17.2% (Q4, from 2013-10-31).
+- **Guides, the current-FY EPS midpoint.**
+  - FY10: $0.88 (Q4 2009 release, again "assumptions" in its words), $1.00 from 2010-04-22, $1.09 from 2010-07-15, $1.105 from 2010-10-07.
+  - FY11: $1.40 from 2011-02-15, $1.39 from 2011-07-14, $1.395 (adjusted) from 2011-10-06.
+  - FY12: $1.58 from 2012-02-16, $1.635 from 2012-04-19, $1.70 from 2012-07-12.
+  - FY13: $1.975 from 2013-02-20, $2.005 from 2013-05-02, $1.975 from 2013-08-01, $1.995 from 2013-10-31.
+  - The quarter fee guides are always in dollars, read against the year-ago quarter's own release. The Q4 2012 guide is read against Q4
+    2011 as adjusted ($420M).
+  - The fiscal-year fee growth is stated in the Q2 2011 release (10-12%) and in every release from Q4 2011 except Q3 2012 and Q3 2013.
+  - The Q3 releases' next-year outlooks wait for the Q4 print, which supersedes them: 2011 fees of $1,290-1,330M; 2012 EPS "could total
+    $1.48 to $1.68" ("not intended to be forecasts"); the 2013 and 2014 RevPAR in the CEO's words.
+- **Dividends:** $0.04 a quarter from 2010-02-05 (8-K accepted 11:53 ET, during the session); $0.0875 from 2010-11-05; $0.10 from
+  2011-07-15 (first stated in the Q2 2011 10-Q); $0.13 from 2012-05-09; $0.17 from 2013-05-15.
+- **The third 2009 stock dividend,** 0.00341 (ex-date 2009-11-17, Yahoo 1003:1000), is first stated in the FY2009 10-K, so it applies from
+  2010-02-16.
+- **Listing:** NASDAQ from 2013-10-21 (8-K of 2013-10-07; display only, the PEP 2017 encoding).
+- **Display only:** the 8-K of 2010-01-07 (Q4 2009 North American systemwide RevPAR down 13 to 14 percent) and the 8-K of 2011-03-28
+  (Q1 2011 EPS reiterated, RevPAR at the low end).
+- **Adds nothing:** the investor-meeting 8-Ks (2010-10-27, 2012-06-18), the timeshare tax, Form 10 and impairment 8-Ks of 2011, and the
+  debt, officer, director and shareholder-vote 8-Ks.
+
+Controls and checks:
+- **Controls:** altering one value of each print (its RevPAR and quarter EPS, and each Q4 print's full-year EPS), guide (its EPS range, its
+  next-quarter fee range, its RevPAR and display fields, its note), vintage, dividend and stock dividend, removing the spin-off
+  distribution and renaming the listing changes no model dated before the value's publication. The first weekly date on or after
+  publication changes whenever the value is in scope there. That is 85 controls over the 315 dates, 71 of them in scope; the 14 out of
+  scope are the Q3 releases' next-year outlooks and pre-2008 facts superseded before the first date.
+- **Leak scan:** the distinctive texts and figures of every print, guide, vintage, dividend, stock dividend, distribution and listing
+  appear in no model before their first publication (0 hits in 67,314 pairs).
+- **Firewall:** passes at 31 cutoffs: every release, 10-K, dividend, stock-dividend, spin-off and listing date of 2010-2013, plus
+  2014-01-01, with 0 files changed and no planted text.
+- **`retro_tool run`:** passes on all 210 dates, with no warnings.
+
+Seen in the build (method behaviour, not tuned):
+- **2010: RICH on all 52 dates (AVOID).** The trough-year EPS guides ($0.81-1.105) set the EPP floor at $14.5-21, against prices of
+  $26-42 (55-114% above it). This is the 2009 pattern of a guided trough year read RICH, carried through the recovery year.
+- **2011: RICH to 2011-03-25** (13 dates), then FAIR once the FY11 guide ($1.40) lifts the floor to $26.6. CHEAP from 2011-07-29 to
+  2011-10-21 in the summer sell-off (BUY at $26.24 on 2011-08-19, 5% above the floor), and again from 2011-11-18 to the year-end.
+- **2012: FAIR on 33 dates, CHEAP on 17, RICH on 3** (2012-01-20, 2012-02-03 and 2012-02-10, before the FY12 guide). The price stays 7-44%
+  above a floor of $25-32.
+- **2013: FAIR in January, RICH 2013-02-01 to 2013-02-15, CHEAP from the Q4 2012 print (2013-02-21) to 2013-10-25 (36 dates, BUY on 26),
+  RICH from 2013-11-01** (10 dates):
+  - The FY13 guide ($1.975) lifts the floor to $37.5.
+  - From 2013-11-01 the Q4 2013 fee guide on 92 days against 112 turns BASE negative, and the price sits 21-30% above the floor.
+
+Sensitivity (each call changed alone, the 210 dates reclassified offline):
+- **Yahoo's spin-off factor kept**, i.e. pre-spin prices scaled down by 1.061: **45 classes** (20 CHEAP to FAIR and 25 FAIR to RICH,
+  2011-12-02 to 2013-01-25). Lower pre-spin P/Es lower the floor.
+- **GAAP EPS wherever the year is not distorted** (the distorted 2009 and 2011 keep the company's figure): 31 classes, toward CHEAP or FAIR.
+- **FY2007 at $1.50 excluding timeshare** from the FY2011 vintage: 21 classes, toward CHEAP or FAIR.
+- **FY2010 at $1.15 with timeshare** after the spin-off: 4 classes.
+- **The 2013 quarter fee guides:** read per day, 5 classes (CHEAP to FAIR); replaced by the FY2013 fee guide, 10 classes (7 of the 10 RICH
+  dates of November-December 2013 to FAIR, and 3 CHEAP to FAIR).
+- **No class or tier moves:** the Q4 2009 release's planning assumptions read as no guide, and FY2009 shares at 367.4M.
+- **Every signal at its BEAR value:** 85 classes, toward RICH. **At XBULL:** 14 classes, toward CHEAP or FAIR.
+
+Judgement calls that could carry hindsight:
+- prices as traded through the spin-off with ex-timeshare EPS for 2010-2011, so pre-spin P/Es carry MVW's value (45 classes move with
+  Yahoo's factor kept);
+- the company's as-if-spin figures for 2010-2011, and the timeshare-inclusive one-off-adjusted figures (not the ex-timeshare $1.50) for
+  2007;
+- the 2013 quarter guides read as published on unequal day counts, the house rule;
+- the Q3 2011 adjusted figures, which keep spin-off transaction costs (the company's own columns);
+- the 2010 "assumptions" read as guides (no class moves).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

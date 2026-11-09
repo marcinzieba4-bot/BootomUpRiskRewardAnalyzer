@@ -34,6 +34,7 @@ Output goes to staging/retrospective/MAR until the series is added to the archiv
 Usage
   python3 retro/build_mar.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_mar.py --weekly 2009-01-01 2009-12-31
+  python3 retro/build_mar.py --weekly 2010-01-01 2010-12-31     (and 2011, 2012, 2013, one year at a time)
   python3 retro/build_mar.py 2008-01-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/MAR/<AS_OF>
 """
