@@ -1,0 +1,302 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MAR",
+ "company": "Marriott International, Inc.",
+ "as_of": "2023-12-01",
+ "price_date": "2023-12-01",
+ "price": 209.28,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); hotel signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, timeshare, and other lodging properties in 138 countries and territories under 30 brand names'; 'Although COVID-19’s negative impact on our business, operations, and financial results has significantly decreased since 2020, we are continuing to see some of the foregoing effects and could see additional effects in the future'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with major hotel chains, regional hotel chains, independent hotels, and home sharing and rental services across national and international venues'; 'Economic downturns and other global, national, and regional conditions and events could further impact our business, financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business' (its own FY2022 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, timeshare, and other lodging properties in 138 countries and territories under 30 brand names'; 'Although COVID-19’s negative impact on our business, operations, and financial results has significantly decreased since 2020, we are continuing to see some of the foregoing effects and could see additional effects in the future'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with major hotel chains, regional hotel chains, independent hotels, and home sharing and rental services across national and international venues'; 'Economic downturns and other global, national, and regional conditions and events could further impact our business, financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business' (its own FY2022 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.88x; +17% to EPP floor; model-vs-market gap +0.54; conservative 2yr +7%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 0.88,
+  "ratio_b_fmt": "0.88x",
+  "epp": 179.44,
+  "epp_gap_pct": 16.6,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.65,
+  "sca": 0.144,
+  "adj_composite": 2.794,
+  "market_composite": 2.25,
+  "adj_gap": 0.54,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 7.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.26,
+    "pe": 20.9,
+    "price": 89,
+    "desc": "EPS -29.4%/yr (worst year FY13-FY22 ex-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 9.54,
+    "pe": 24.9,
+    "price": 238,
+    "desc": "EPS +5.7%/yr (Q4 fee guide + margin + buyback); P/E at its 10-yr ex-FY20 median"
+   },
+   "BULL": {
+    "eps": 11.37,
+    "pe": 30.4,
+    "price": 346,
+    "desc": "EPS +15.4%/yr (FY13-FY22 ex-FY20 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 16.84,
+    "pe": 39.2,
+    "price": 660,
+    "desc": "EPS +40.4%/yr (best 2-yr run FY13-FY22 ex-FY20); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.88,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.54,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.48,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.96,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 7.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.69,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 7.3,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.8,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.6,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.98,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.48,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.3,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.88,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.84,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.88,
+   "epp_gap_pct": 2.0,
+   "adj_gap": 0.54,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.88,
+   "epp_gap_pct": 16.6,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 7.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "MAR (retrospective, 2023-12-01) ◎ ACCUMULATE — Ratio B 0.88x (57.5% downside to Bear $89 / +65.3% upside to Bull $346) | Adj composite 2.79 vs market 2.25: gap +0.54 [UNDERVALUED] | +17% above the EPP floor $179 (21x FY23E $8.54) | Conservative 2-yr case: +7.3% total (+3.7%/yr) | At 24.5x FY23E the 15% hurdle price $277 sits between the BASE and BULL cases; North American RevPAR +4.4% in Q3 2023, forward fee revenue +4.77-7.43% (Q4 2023 fee revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MA119",
+   "published": "2023-02-14",
+   "title": "Marriott International FY2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA118",
+   "published": "2023-02-14",
+   "title": "Marriott International Q4 2022 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003441/mar-2022q4earningsreleasee.htm",
+   "supports": "Q4 2022 print, FY2022 actuals, outlook"
+  },
+  {
+   "id": "MA76",
+   "published": "2016-02-18",
+   "title": "Marriott International FY2015 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828016011346/mar-q42015x10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the pending Starwood merger"
+  },
+  {
+   "id": "MA102",
+   "published": "2020-02-27",
+   "title": "Marriott International FY2019 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828020002376/mar-q42019x10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA108",
+   "published": "2021-02-18",
+   "title": "Marriott International FY2020 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021002433/mar-20201231.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA113",
+   "published": "2022-02-15",
+   "title": "Marriott International FY2021 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022002666/mar-20211231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA107",
+   "published": "2021-02-18",
+   "title": "Marriott International Q4 2020 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021002419/mar-2020q4earningsreleasee.htm",
+   "supports": "Q4 2020 print, FY2020 actuals"
+  },
+  {
+   "id": "MA1",
+   "published": "1999-03-16",
+   "title": "Marriott International FY1998 Form 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838599000780/0000928385-99-000780.txt",
+   "supports": "the March 27, 1998 spinoff: no stock price data before it ('we were not a publicly-held company during that time')"
+  },
+  {
+   "id": "MA120",
+   "published": "2023-05-02",
+   "title": "Marriott International Q1 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023014748/mar-2023q1xearningsrelease.htm",
+   "supports": "Q1 2023 print, outlook"
+  },
+  {
+   "id": "MA121",
+   "published": "2023-08-01",
+   "title": "Marriott International Q2 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023026343/mar-2023q2xearningsrelease.htm",
+   "supports": "Q2 2023 print, outlook"
+  },
+  {
+   "id": "MA123",
+   "published": "2023-11-02",
+   "title": "Marriott International Q3 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023036166/mar-2023q3xearningsrelease.htm",
+   "supports": "Q3 2023 print, outlook"
+  },
+  {
+   "id": "MA122",
+   "published": "2023-08-01",
+   "title": "Marriott International Q2 2023 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023026380/mar-20230630.htm",
+   "supports": "dividends declared"
+  },
+  {
+   "id": "MA12",
+   "published": "2007-02-21",
+   "title": "Marriott International FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507035757/d10k.htm",
+   "supports": "selected financial data 1999-2006, segments, synthetic fuel lines 2004-2006, RevPAR statistics, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA27",
+   "published": "2009-05-05",
+   "title": "Marriott International 8-K/A of 2009-05-05 (Ex. 99.1, stock dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000118143109022814/rrd241247_28284.htm",
+   "supports": "a stock dividend of 0.00369 share per share (record date June 25, 2009), paid in place of the cash dividend"
+  },
+  {
+   "id": "MA31",
+   "published": "2009-10-09",
+   "title": "Marriott International Q3 2009 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509206036/d10q.htm",
+   "supports": "the second stock dividend's ratio, 0.00379 share per share (record date August 20, 2009)"
+  },
+  {
+   "id": "MA35",
+   "published": "2010-02-16",
+   "title": "Marriott International FY2009 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312510030603/d10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the third 2009 stock dividend's ratio"
+  },
+  {
+   "id": "MA47",
+   "published": "2011-10-26",
+   "title": "Marriott International 8-K of 2011-10-26 (Ex. 99, spin-off approved)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511281516/d247139dex99.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide: one share for every ten Marriott shares, record date November 10, distribution November 21, 2011"
+  },
+  {
+   "id": "MA48",
+   "published": "2011-11-21",
+   "title": "Marriott International 8-K of 2011-11-21 (spin-off completed)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511317838/d257339d8k.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide completed on November 21, 2011"
+  },
+  {
+   "id": "MA60",
+   "published": "2013-10-07",
+   "title": "Marriott International 8-K of 2013-10-07 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312513392754/d607930d8k.htm",
+   "supports": "the listing moved from the NYSE to NASDAQ, trading there from October 21, 2013"
+  },
+  {
+   "id": "W0",
+   "published": "2023-12-01",
+   "title": "Yahoo Finance daily prices, MAR and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MAR/history",
+   "supports": "close $209.28 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY20 P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2024 after 2023 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-09"
+}

@@ -778,6 +778,216 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021021312/mar-2021q3earningsreleasee.htm",
    "accepted": "accepted 2021-11-03 07:47 ET (before the open)",
    "supports": "Q3 2021 print"
+  },
+  "MA112": {
+   "published": "2022-02-15",
+   "title": "Marriott International Q4 2021 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022002652/mar-2021q4earningsreleasee.htm",
+   "accepted": "accepted 2022-02-15 07:37 ET (before the open)",
+   "supports": "Q4 2021 print, FY2021 actuals, outlook"
+  },
+  "MA113": {
+   "published": "2022-02-15",
+   "title": "Marriott International FY2021 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022002666/mar-20211231.htm",
+   "accepted": "accepted 2022-02-15 12:23 ET (during the session)",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  "MA114": {
+   "published": "2022-05-04",
+   "title": "Marriott International Q1 2022 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022012143/mar-2022q1earningsreleasee.htm",
+   "accepted": "accepted 2022-05-04 07:42 ET (before the open)",
+   "supports": "Q1 2022 print, outlook"
+  },
+  "MA115": {
+   "published": "2022-08-02",
+   "title": "Marriott International Q2 2022 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022020030/mar-2022q2earningsreleasee.htm",
+   "accepted": "accepted 2022-08-02 07:38 ET (before the open)",
+   "supports": "Q2 2022 print, outlook"
+  },
+  "MA116": {
+   "published": "2022-11-03",
+   "title": "Marriott International Q3 2022 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022027939/mar-2022q3earningsreleasee.htm",
+   "accepted": "accepted 2022-11-03 06:52 ET (before the open)",
+   "supports": "Q3 2022 print, outlook"
+  },
+  "MA117": {
+   "published": "2023-02-13",
+   "title": "Marriott International 8-K of 2023-02-10 (Ex. 99: quarterly cash dividend; CEO appointed President)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312523032570/d427456dex99.htm",
+   "accepted": "accepted 2023-02-10 16:10 ET (after the close)",
+   "supports": "dividend $0.40 a quarter"
+  },
+  "MA118": {
+   "published": "2023-02-14",
+   "title": "Marriott International Q4 2022 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003441/mar-2022q4earningsreleasee.htm",
+   "accepted": "accepted 2023-02-14 07:28 ET (before the open)",
+   "supports": "Q4 2022 print, FY2022 actuals, outlook"
+  },
+  "MA119": {
+   "published": "2023-02-14",
+   "title": "Marriott International FY2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm",
+   "accepted": "accepted 2023-02-14 15:00 ET (during the session)",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  "MA120": {
+   "published": "2023-05-02",
+   "title": "Marriott International Q1 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023014748/mar-2023q1xearningsrelease.htm",
+   "accepted": "accepted 2023-05-02 07:19 ET (before the open)",
+   "supports": "Q1 2023 print, outlook"
+  },
+  "MA121": {
+   "published": "2023-08-01",
+   "title": "Marriott International Q2 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023026343/mar-2023q2xearningsrelease.htm",
+   "accepted": "accepted 2023-08-01 07:23 ET (before the open)",
+   "supports": "Q2 2023 print, outlook"
+  },
+  "MA122": {
+   "published": "2023-08-01",
+   "title": "Marriott International Q2 2023 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023026380/mar-20230630.htm",
+   "accepted": "accepted 2023-08-01 10:54 ET (during the session)",
+   "supports": "dividends declared"
+  },
+  "MA123": {
+   "published": "2023-11-02",
+   "title": "Marriott International Q3 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023036166/mar-2023q3xearningsrelease.htm",
+   "accepted": "accepted 2023-11-02 06:59 ET (before the open)",
+   "supports": "Q3 2023 print, outlook"
+  },
+  "MA124": {
+   "published": "2024-02-13",
+   "title": "Marriott International Q4 2023 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004335/mar-2023q4xearningsrelease.htm",
+   "accepted": "accepted 2024-02-13 07:24 ET (before the open)",
+   "supports": "Q4 2023 print, FY2023 actuals, outlook"
+  },
+  "MA125": {
+   "published": "2024-02-13",
+   "title": "Marriott International FY2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004372/mar-20231231.htm",
+   "accepted": "accepted 2024-02-13 12:30 ET (during the session)",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  "MA126": {
+   "published": "2024-05-01",
+   "title": "Marriott International Q1 2024 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024019458/mar-2024q1xearningsrelease.htm",
+   "accepted": "accepted 2024-05-01 07:10 ET (before the open)",
+   "supports": "Q1 2024 print, outlook"
+  },
+  "MA127": {
+   "published": "2024-07-31",
+   "title": "Marriott International Q2 2024 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024033622/mar-2024q2xearningsrelease.htm",
+   "accepted": "accepted 2024-07-31 07:13 ET (before the open)",
+   "supports": "Q2 2024 print, outlook"
+  },
+  "MA128": {
+   "published": "2024-07-31",
+   "title": "Marriott International Q2 2024 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024033679/mar-20240630.htm",
+   "accepted": "accepted 2024-07-31 11:22 ET (during the session)",
+   "supports": "dividends declared"
+  },
+  "MA129": {
+   "published": "2024-11-04",
+   "title": "Marriott International Q3 2024 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024044831/mar-2024q3xearningsreleasea.htm",
+   "accepted": "accepted 2024-11-04 07:21 ET (before the open)",
+   "supports": "Q3 2024 print, outlook"
+  },
+  "MA130": {
+   "published": "2025-02-11",
+   "title": "Marriott International Q4 2024 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025004772/mar-2024q4xearningsrelease.htm",
+   "accepted": "accepted 2025-02-11 07:30 ET (before the open)",
+   "supports": "Q4 2024 print, FY2024 actuals, outlook"
+  },
+  "MA131": {
+   "published": "2025-02-11",
+   "title": "Marriott International FY2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025004818/mar-20241231.htm",
+   "accepted": "accepted 2025-02-11 12:50 ET (during the session)",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  "MA132": {
+   "published": "2025-05-06",
+   "title": "Marriott International Q1 2025 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025022390/mar-2025q1xex99earningsrel.htm",
+   "accepted": "accepted 2025-05-06 07:01 ET (before the open)",
+   "supports": "Q1 2025 print, outlook"
+  },
+  "MA133": {
+   "published": "2025-08-05",
+   "title": "Marriott International Q2 2025 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025037592/mar-2025q2xex99earningsrel.htm",
+   "accepted": "accepted 2025-08-05 07:00 ET (before the open)",
+   "supports": "Q2 2025 print, outlook"
+  },
+  "MA134": {
+   "published": "2025-08-05",
+   "title": "Marriott International Q2 2025 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828625000006/mar-20250630.htm",
+   "accepted": "accepted 2025-08-05 10:51 ET (during the session)",
+   "supports": "dividends declared"
+  },
+  "MA135": {
+   "published": "2025-11-04",
+   "title": "Marriott International Q3 2025 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828625000011/mar-2025q3xex99earningsrel.htm",
+   "accepted": "accepted 2025-11-04 07:00 ET (before the open)",
+   "supports": "Q3 2025 print, outlook"
+  },
+  "MA136": {
+   "published": "2026-02-10",
+   "title": "Marriott International Q4 2025 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000005/mar-2025q4xex99earningsrel.htm",
+   "accepted": "accepted 2026-02-10 07:00 ET (before the open)",
+   "supports": "Q4 2025 print, FY2025 actuals, outlook"
+  },
+  "MA137": {
+   "published": "2026-02-10",
+   "title": "Marriott International FY2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000007/mar-20251231.htm",
+   "accepted": "accepted 2026-02-10 13:35 ET (during the session)",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  "MA138": {
+   "published": "2026-05-06",
+   "title": "Marriott International Q1 2026 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000012/mar-2026q1xex99earningsrel.htm",
+   "accepted": "accepted 2026-05-06 07:00 ET (before the open)",
+   "supports": "Q1 2026 print, outlook"
+  },
+  "MA139": {
+   "published": "2026-08-03",
+   "title": "Marriott International Q2 2026 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000033/mar-2026q2xex99earningsrel.htm",
+   "accepted": "accepted 2026-08-03 07:00 ET (before the open)",
+   "supports": "Q2 2026 print, outlook"
+  },
+  "MA140": {
+   "published": "2026-08-03",
+   "title": "Marriott International Q2 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000035/mar-20260630.htm",
+   "accepted": "accepted 2026-08-03 07:40 ET (before the open)",
+   "supports": "dividends declared"
+  },
+  "MA141": {
+   "published": "2026-11-02",
+   "title": "Marriott International Q3 2026 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm",
+   "accepted": "accepted 2026-11-02 07:00 ET (before the open)",
+   "supports": "Q3 2026 print, outlook"
   }
  },
  "history_vintages": [
@@ -3453,6 +3663,796 @@
    "fcf_b": 1.504,
    "fcf_note": "cash from operations $1,639M less capital expenditures $135M",
    "groups_basis": "FY20 revenues by segment (FY2020 10-K; 2019 recast for the U.S. & Canada / Asia Pacific / EMEA segments)"
+  },
+  {
+   "published": "2022-02-15",
+   "sources": [
+    "MA113",
+    "MA112",
+    "MA63",
+    "MA70",
+    "MA102",
+    "MA108",
+    "MA107",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY21",
+   "fiscal_year_ends": {
+    "2012": "2012-12-28",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31"
+   },
+   "eps_gaap": {
+    "2012": 1.72,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34
+   },
+   "eps_sources": {
+    "2012": "MA63 (excluding the gain on the Courtyard joint venture sale; GAAP $1.72: MA108)",
+    "2013": "MA102 (the FY2020 10-K shows five years)",
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2021": "MA113 (FY2021 10-K, statements of income)"
+   },
+   "eps_excluded": {
+    "2020": "FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)"
+   },
+   "revenue_usd_b": {
+    "2012": 11.814,
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972,
+    "2020": 10.571,
+    "2021": 13.857
+   },
+   "revenue_sources": {
+    "2012": "MA102 (the FY2020 10-K shows five years)",
+    "2013": "MA102 (the FY2020 10-K shows five years)",
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2020": "MA113 (FY2021 10-K, statements of income)",
+    "2021": "MA113 (FY2021 10-K, statements of income)"
+   },
+   "diluted_shares_m": {
+    "2012": 332.9,
+    "2021": 329.3
+   },
+   "shares_sources": {
+    "2012": "MA70 (332.9M, the third year of its EPS note)",
+    "2021": "MA113 (EPS note)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, and timeshare properties in 139 countries and territories under 30 brand names'; 'COVID-19 has had a material detrimental impact on our business and financial results, and such impact could continue and may worsen for an unknown period of time'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Each of our hotel brands and our home rental offering competes with major hotel chains, regional hotel chains, independent hotels, and home sharing and rental services across national and international venues'; 'Economic downturns and other global, national, and regional conditions could further impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business' (its own FY2021 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 13857,
+    "rev_prior_m": 10571,
+    "opinc_m": 1750,
+    "pretax_m": 1180,
+    "fees_m": 2694,
+    "fees_prior_m": 1683,
+    "cash_m": 1393,
+    "cfo_m": 1177,
+    "capex_m": 183
+   },
+   "prev_fy_revpar_pct": 85.1,
+   "prev_fy_occupancy": 47.1,
+   "prev_fy_occ_pts": 19.9,
+   "fcf_label": "FY21",
+   "cash_note": "cash and equivalents $1,393M at year-end 2021",
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We also did not declare any cash dividends in 2021.' 'We do not anticipate repurchasing additional shares or declaring cash dividends until our leverage ratios further improve' (FY2021 10-K)",
+   "cash_return_text": "'We did not repurchase any shares of our common stock in 2021.' (FY2021 10-K)",
+   "groups": [
+    [
+     "U.S. & Canada",
+     10.356,
+     31.0
+    ],
+    [
+     "International",
+     2.254,
+     41.1
+    ],
+    [
+     "Unallocated corporate and other",
+     1.247,
+     16.7
+    ]
+   ],
+   "groups_doc": "FY2021 10-K segment note: revenues by reportable segment (cost reimbursement revenue included) and unallocated corporate and other",
+   "eps_normalized": {
+    "2012": 1.64,
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them (the ACN rule): 2012 $1.64 (excluding the gain on the Courtyard joint venture sale, MA63); the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam); from the FY2021 10-K (Item 6 reserved) each 10-K reports three years, so earlier years come from the latest 10-K that reports them; FY2020 excluded: FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)",
+   "prev_fy_op_margin_note": "FY21 operating income $1,750M / revenues $13,857M (MA113, as reported)",
+   "tax_rate": 0.0686,
+   "tax_note": "FY21 provision $81M on income before income taxes of $1,180M (MA113)",
+   "other_note": "FY21 operating income less income before income taxes ($1,750M - $1,180M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2021",
+   "prev_fy_op_margin": 12.63,
+   "prev_fy_sales_growth": 31.1,
+   "prev_fy_fees_pct": 60.1,
+   "other_expense_b": 0.57,
+   "cash_b": 1.393,
+   "fcf_b": 0.994,
+   "fcf_note": "cash from operations $1,177M less capital and technology expenditures $183M",
+   "groups_basis": "FY21 revenues by segment (FY2021 10-K)"
+  },
+  {
+   "published": "2023-02-14",
+   "sources": [
+    "MA119",
+    "MA118",
+    "MA76",
+    "MA102",
+    "MA108",
+    "MA113",
+    "MA107",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY22",
+   "fiscal_year_ends": {
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31"
+   },
+   "eps_gaap": {
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24
+   },
+   "eps_sources": {
+    "2013": "MA102 (the FY2020 10-K shows five years)",
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2021": "MA119 (FY2022 10-K, statements of income)",
+    "2022": "MA119 (FY2022 10-K, statements of income)"
+   },
+   "eps_excluded": {
+    "2020": "FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)"
+   },
+   "revenue_usd_b": {
+    "2013": 12.784,
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972,
+    "2020": 10.571,
+    "2021": 13.857,
+    "2022": 20.773
+   },
+   "revenue_sources": {
+    "2013": "MA102 (the FY2020 10-K shows five years)",
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2020": "MA119 (FY2022 10-K, statements of income)",
+    "2021": "MA119 (FY2022 10-K, statements of income)",
+    "2022": "MA119 (FY2022 10-K, statements of income)"
+   },
+   "diluted_shares_m": {
+    "2013": 313.0,
+    "2022": 325.8
+   },
+   "shares_sources": {
+    "2013": "MA76 (313.0M, the third year of its EPS note)",
+    "2022": "MA119 (EPS note)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, timeshare, and other lodging properties in 138 countries and territories under 30 brand names'; 'Although COVID-19’s negative impact on our business, operations, and financial results has significantly decreased since 2020, we are continuing to see some of the foregoing effects and could see additional effects in the future'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with major hotel chains, regional hotel chains, independent hotels, and home sharing and rental services across national and international venues'; 'Economic downturns and other global, national, and regional conditions and events could further impact our business, financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business' (its own FY2022 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 20773,
+    "rev_prior_m": 13857,
+    "opinc_m": 3462,
+    "pretax_m": 3114,
+    "fees_m": 4078,
+    "fees_prior_m": 2694,
+    "cash_m": 507,
+    "cfo_m": 2363,
+    "capex_m": 332
+   },
+   "prev_fy_revpar_pct": 67.0,
+   "prev_fy_occupancy": 65.3,
+   "prev_fy_occ_pts": 17.9,
+   "fcf_label": "FY22",
+   "cash_note": "cash and equivalents $507M at year-end 2022",
+   "dividend_annual": 1.6,
+   "dividend_note": "$0.40 a quarter, the latest declared rate in its FY2022 10-K: 'Our Board of Directors declared a cash dividend of $0.40 per share on February 10, 2023, payable on March 31, 2023 to stockholders of record on February 24, 2023.'",
+   "cash_return_text": "'We repurchased 16.8 million shares of our common stock for $2.6 billion in 2022.' (FY2022 10-K)",
+   "groups": [
+    [
+     "U.S. & Canada",
+     15.753,
+     52.1
+    ],
+    [
+     "International",
+     3.486,
+     54.7
+    ],
+    [
+     "Unallocated corporate and other",
+     1.534,
+     23.0
+    ]
+   ],
+   "groups_doc": "FY2022 10-K segment note: revenues by reportable segment (cost reimbursement revenue included) and unallocated corporate and other",
+   "eps_normalized": {
+    "2013": 2.0,
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them (the ACN rule): the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam); from the FY2021 10-K (Item 6 reserved) each 10-K reports three years, so earlier years come from the latest 10-K that reports them; FY2020 excluded: FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)",
+   "prev_fy_op_margin_note": "FY22 operating income $3,462M / revenues $20,773M (MA119, as reported)",
+   "tax_rate": 0.2428,
+   "tax_note": "FY22 provision $756M on income before income taxes of $3,114M (MA119)",
+   "other_note": "FY22 operating income less income before income taxes ($3,462M - $3,114M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2022",
+   "prev_fy_op_margin": 16.67,
+   "prev_fy_sales_growth": 49.9,
+   "prev_fy_fees_pct": 51.4,
+   "other_expense_b": 0.348,
+   "cash_b": 0.507,
+   "fcf_b": 2.031,
+   "fcf_note": "cash from operations $2,363M less capital and technology expenditures $332M",
+   "groups_basis": "FY22 revenues by segment (FY2022 10-K)"
+  },
+  {
+   "published": "2024-02-13",
+   "sources": [
+    "MA125",
+    "MA124",
+    "MA83",
+    "MA102",
+    "MA108",
+    "MA113",
+    "MA119",
+    "MA107",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY23",
+   "fiscal_year_ends": {
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31"
+   },
+   "eps_gaap": {
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24,
+    "2023": 10.18
+   },
+   "eps_sources": {
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2021": "MA125 (FY2023 10-K, statements of income)",
+    "2022": "MA125 (FY2023 10-K, statements of income)",
+    "2023": "MA125 (FY2023 10-K, statements of income)"
+   },
+   "eps_excluded": {
+    "2020": "FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)"
+   },
+   "revenue_usd_b": {
+    "2014": 13.796,
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972,
+    "2020": 10.571,
+    "2021": 13.857,
+    "2022": 20.773,
+    "2023": 23.713
+   },
+   "revenue_sources": {
+    "2014": "MA102 (the FY2020 10-K shows five years)",
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2020": "MA119 (FY2022 10-K, statements of income)",
+    "2021": "MA125 (FY2023 10-K, statements of income)",
+    "2022": "MA125 (FY2023 10-K, statements of income)",
+    "2023": "MA125 (FY2023 10-K, statements of income)"
+   },
+   "diluted_shares_m": {
+    "2014": 296.8,
+    "2023": 302.9
+   },
+   "shares_sources": {
+    "2014": "MA83 (296.8M, the third year of its EPS note)",
+    "2023": "MA125 (EPS note)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, timeshare, and other lodging properties in 139 countries and territories under more than 30 brand names'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with major hotel chains, regional hotel chains, independent hotels, and home sharing and rental services across national and international venues'; 'Economic and other global, national, and regional conditions and events have in the past impacted, and could in the future impact, our business, financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business' (its own FY2023 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 23713,
+    "rev_prior_m": 20773,
+    "opinc_m": 3864,
+    "pretax_m": 3378,
+    "fees_m": 4824,
+    "fees_prior_m": 4078,
+    "cash_m": 338,
+    "cfo_m": 3170,
+    "capex_m": 452
+   },
+   "prev_fy_revpar_pct": 10.2,
+   "prev_fy_occupancy": 68.9,
+   "prev_fy_occ_pts": 3.7,
+   "fcf_label": "FY23",
+   "cash_note": "cash and equivalents $338M at year-end 2023",
+   "dividend_annual": 2.08,
+   "dividend_note": "$0.52 a quarter, the latest declared rate in its FY2023 10-K: 'Our Board declared a cash dividend of $0.52 per share on February 8, 2024, payable on March 29, 2024 to stockholders of record on February 22, 2024.'",
+   "cash_return_text": "'We repurchased 21.5 million shares of our common stock for $3.9 billion in 2023.' (FY2023 10-K)",
+   "groups": [
+    [
+     "U.S. & Canada",
+     17.696,
+     12.3
+    ],
+    [
+     "International",
+     4.455,
+     27.8
+    ],
+    [
+     "Unallocated corporate and other",
+     1.562,
+     1.8
+    ]
+   ],
+   "groups_doc": "FY2023 10-K segment note: revenues by reportable segment (cost reimbursement revenue included) and unallocated corporate and other",
+   "eps_normalized": {
+    "2014": 2.54,
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24,
+    "2023": 10.18
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them (the ACN rule): the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam); from the FY2021 10-K (Item 6 reserved) each 10-K reports three years, so earlier years come from the latest 10-K that reports them; FY2020 excluded: FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)",
+   "prev_fy_op_margin_note": "FY23 operating income $3,864M / revenues $23,713M (MA125, as reported)",
+   "tax_rate": 0.0873,
+   "tax_note": "FY23 provision $295M on income before income taxes of $3,378M (MA125)",
+   "other_note": "FY23 operating income less income before income taxes ($3,864M - $3,378M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2023",
+   "prev_fy_op_margin": 16.29,
+   "prev_fy_sales_growth": 14.2,
+   "prev_fy_fees_pct": 18.3,
+   "other_expense_b": 0.486,
+   "cash_b": 0.338,
+   "fcf_b": 2.718,
+   "fcf_note": "cash from operations $3,170M less capital and technology expenditures $452M",
+   "groups_basis": "FY23 revenues by segment (FY2023 10-K)"
+  },
+  {
+   "published": "2025-02-11",
+   "sources": [
+    "MA131",
+    "MA130",
+    "MA89",
+    "MA102",
+    "MA108",
+    "MA113",
+    "MA119",
+    "MA125",
+    "MA107",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY24",
+   "fiscal_year_ends": {
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31"
+   },
+   "eps_gaap": {
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24,
+    "2023": 10.18,
+    "2024": 8.33
+   },
+   "eps_sources": {
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2021": "MA125 (FY2023 10-K, statements of income)",
+    "2022": "MA131 (FY2024 10-K, statements of income)",
+    "2023": "MA131 (FY2024 10-K, statements of income)",
+    "2024": "MA131 (FY2024 10-K, statements of income)"
+   },
+   "eps_excluded": {
+    "2020": "FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)"
+   },
+   "revenue_usd_b": {
+    "2015": 14.486,
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972,
+    "2020": 10.571,
+    "2021": 13.857,
+    "2022": 20.773,
+    "2023": 23.713,
+    "2024": 25.1
+   },
+   "revenue_sources": {
+    "2015": "MA102 (the FY2020 10-K shows five years)",
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2020": "MA119 (FY2022 10-K, statements of income)",
+    "2021": "MA125 (FY2023 10-K, statements of income)",
+    "2022": "MA131 (FY2024 10-K, statements of income)",
+    "2023": "MA131 (FY2024 10-K, statements of income)",
+    "2024": "MA131 (FY2024 10-K, statements of income)"
+   },
+   "diluted_shares_m": {
+    "2015": 272.8,
+    "2024": 285.2
+   },
+   "shares_sources": {
+    "2015": "MA89 (272.8M, the third year of its EPS note)",
+    "2024": "MA131 (EPS note)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide operator, franchisor, and licensor of hotel, residential, timeshare, and other lodging properties under more than 30 brand names'; 'As of year-end 2024, our system included 9,361 properties (1,706,331 rooms) in 144 countries and territories'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with regional, national, and international chains that operate lodging properties or franchise their brands, lodging properties that are not affiliated with a chain, and online platforms that allow travelers to book short-term rentals of homes and apartments'; 'Economic and other global, national, and regional conditions and events have in the past impacted, and could in the future impact, our business, financial results and growth'; 'An increase in the use of Internet travel intermediaries to book hotel reservations could adversely impact our business' (its own FY2024 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 25100,
+    "rev_prior_m": 23713,
+    "opinc_m": 3767,
+    "pretax_m": 3151,
+    "fees_m": 5170,
+    "fees_prior_m": 4824,
+    "cash_m": 396,
+    "cfo_m": 2749,
+    "capex_m": 750
+   },
+   "prev_fy_revpar_pct": 3.4,
+   "prev_fy_occupancy": 69.4,
+   "prev_fy_occ_pts": 0.5,
+   "fcf_label": "FY24",
+   "cash_note": "cash and equivalents $396M at year-end 2024",
+   "dividend_annual": 2.52,
+   "dividend_note": "$0.63 a quarter, the latest declared rate in its FY2024 10-K: '(4) $0.63 per share declared on November 7, 2024 and paid on December 31, 2024 to stockholders of record on November 21, 2024.'",
+   "cash_return_text": "'We repurchased 15.4 million shares of our common stock for $3.7 billion in 2024.' (FY2024 10-K)",
+   "groups": [
+    [
+     "U.S. & Canada",
+     18.612,
+     5.2
+    ],
+    [
+     "EMEA",
+     2.406,
+     6.1
+    ],
+    [
+     "Greater China",
+     0.582,
+     -3.0
+    ],
+    [
+     "APEC",
+     0.976,
+     17.6
+    ],
+    [
+     "Unallocated corporate and other",
+     2.524,
+     8.8
+    ]
+   ],
+   "groups_doc": "FY2024 10-K segment note: revenues by reportable segment (cost reimbursement revenue included) and unallocated corporate and other; from the FY2024 10-K four reportable segments (U.S. & Canada, EMEA, Greater China, APEC), 2023 recast",
+   "eps_normalized": {
+    "2015": 3.15,
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24,
+    "2023": 10.18,
+    "2024": 8.33
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them (the ACN rule): the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam); from the FY2021 10-K (Item 6 reserved) each 10-K reports three years, so earlier years come from the latest 10-K that reports them; FY2020 excluded: FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)",
+   "prev_fy_op_margin_note": "FY24 operating income $3,767M / revenues $25,100M (MA131, as reported)",
+   "tax_rate": 0.2463,
+   "tax_note": "FY24 provision $776M on income before income taxes of $3,151M (MA131)",
+   "other_note": "FY24 operating income less income before income taxes ($3,767M - $3,151M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2024",
+   "prev_fy_op_margin": 15.01,
+   "prev_fy_sales_growth": 5.8,
+   "prev_fy_fees_pct": 7.2,
+   "other_expense_b": 0.616,
+   "cash_b": 0.396,
+   "fcf_b": 1.999,
+   "fcf_note": "cash from operations $2,749M less capital and technology expenditures $750M",
+   "groups_basis": "FY24 revenues by segment (FY2024 10-K)"
+  },
+  {
+   "published": "2026-02-10",
+   "sources": [
+    "MA137",
+    "MA136",
+    "MA96",
+    "MA108",
+    "MA113",
+    "MA119",
+    "MA125",
+    "MA131",
+    "MA107",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "Nasdaq",
+   "fy_label": "FY25",
+   "fiscal_year_ends": {
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31",
+    "2025": "2025-12-31"
+   },
+   "eps_gaap": {
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24,
+    "2023": 10.18,
+    "2024": 8.33,
+    "2025": 9.51
+   },
+   "eps_sources": {
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2021": "MA125 (FY2023 10-K, statements of income)",
+    "2022": "MA131 (FY2024 10-K, statements of income)",
+    "2023": "MA137 (FY2025 10-K, statements of income)",
+    "2024": "MA137 (FY2025 10-K, statements of income)",
+    "2025": "MA137 (FY2025 10-K, statements of income)"
+   },
+   "eps_excluded": {
+    "2020": "FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)"
+   },
+   "revenue_usd_b": {
+    "2016": 15.407,
+    "2017": 20.452,
+    "2018": 20.758,
+    "2019": 20.972,
+    "2020": 10.571,
+    "2021": 13.857,
+    "2022": 20.773,
+    "2023": 23.713,
+    "2024": 25.1,
+    "2025": 26.186
+   },
+   "revenue_sources": {
+    "2016": "MA108 (ASU 2014-09)",
+    "2017": "MA108 (ASU 2014-09)",
+    "2018": "MA108 (ASU 2014-09)",
+    "2019": "MA113 (FY2021 10-K, statements of income)",
+    "2020": "MA119 (FY2022 10-K, statements of income)",
+    "2021": "MA125 (FY2023 10-K, statements of income)",
+    "2022": "MA131 (FY2024 10-K, statements of income)",
+    "2023": "MA137 (FY2025 10-K, statements of income)",
+    "2024": "MA137 (FY2025 10-K, statements of income)",
+    "2025": "MA137 (FY2025 10-K, statements of income)"
+   },
+   "diluted_shares_m": {
+    "2016": 295.7,
+    "2025": 273.6
+   },
+   "shares_sources": {
+    "2016": "MA96 (295.7M, the third year of its EPS note)",
+    "2025": "MA137 (EPS note)"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on franchising, management, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide franchisor, operator, and licensor of hotel, residential, timeshare, and other lodging properties under a portfolio of compelling brands at different price and service points'; 'As of year-end 2025, our system included 9,805 properties (1,779,936 rooms) in 145 countries and territories'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with regional, national, and international chains that operate lodging properties or franchise their brands, lodging properties that are not affiliated with a chain, and online platforms that allow travelers to book short-term rentals of homes and apartments'; 'Economic and other global, national, and regional conditions and events have in the past materially impacted, and could in the future materially impact, our business, operations, financial results, and growth'; 'Changes in the way hotel rooms are booked could adversely impact our business'; 'In addition, the introduction of AI capabilities by existing and emerging travel intermediaries may change the way guests plan, book, and pay for travel, which may disrupt how our products and services are marketed and distributed, potentially eroding brand loyalty, increasing distribution costs, and negatively affecting our Loyalty Program, which could adversely impact our financial performance and our ability to grow our business' (its own FY2025 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it (the AI sentence of its booking-channel risk factor names a risk no theme in taxonomy_eras.json covers: GENAI is scoped to software, IT services, information, search, education and mobility, so it stays here, as home sharing did from FY2015)",
+   "business_line": "lodging management, franchising and licensing",
+   "vintage_raw": {
+    "rev_m": 26186,
+    "rev_prior_m": 25100,
+    "opinc_m": 4141,
+    "pretax_m": 3394,
+    "fees_m": 5438,
+    "fees_prior_m": 5170,
+    "cash_m": 358,
+    "cfo_m": 3212,
+    "capex_m": 604
+   },
+   "prev_fy_revpar_pct": 2.3,
+   "prev_fy_occupancy": 69.0,
+   "prev_fy_occ_pts": -0.4,
+   "fcf_label": "FY25",
+   "cash_note": "cash and equivalents $358M at year-end 2025",
+   "dividend_annual": 2.68,
+   "dividend_note": "$0.67 a quarter, the latest declared rate in its FY2025 10-K: '(4) $0.67 per share declared on November 6, 2025 and paid on December 31, 2025 to stockholders of record on November 20, 2025.'",
+   "cash_return_text": "'We repurchased 12.1 million shares of our common stock for $3.3 billion in 2025.' (FY2025 10-K)",
+   "groups": [
+    [
+     "U.S. & Canada",
+     19.349,
+     4.0
+    ],
+    [
+     "EMEA",
+     2.407,
+     0.0
+    ],
+    [
+     "Greater China",
+     0.59,
+     1.4
+    ],
+    [
+     "APEC",
+     1.073,
+     9.9
+    ],
+    [
+     "Unallocated corporate and other",
+     2.767,
+     9.6
+    ]
+   ],
+   "groups_doc": "FY2025 10-K segment note: revenues by reportable segment (cost reimbursement revenue included) and unallocated corporate and other",
+   "eps_normalized": {
+    "2016": 2.73,
+    "2017": 3.84,
+    "2018": 5.38,
+    "2019": 3.8,
+    "2021": 3.34,
+    "2022": 7.24,
+    "2023": 10.18,
+    "2024": 8.33,
+    "2025": 9.51
+   },
+   "normalization": "diluted EPS attributable to Marriott shareholders, each year from the latest filing that reports it; the company's figures excluding only one-offs replace GAAP where a filing publishes them (the ACN rule): the other years at GAAP; from the ASC 606 basis the company's adjusted figures also exclude cost reimbursement revenue and reimbursed expenses, a timing effect in every quarter, so they are not figures excluding only one-offs (the NKE FY2007, MSFT and XOM rule); 2016-2017 as recast under ASU 2014-09, earlier years as first published (a seam); from the FY2021 10-K (Item 6 reserved) each 10-K reports three years, so earlier years come from the latest 10-K that reports them; FY2020 excluded: FY2020 diluted EPS $(0.82), a loss (net loss $267M after $267M of restructuring and merger-related charges, FY2020 10-K); the company's adjusted figure also excludes cost reimbursement revenue and reimbursed expenses (Q4 2020 release), so no figure excludes only one-offs: excluded (the XOM FY2020 rule)",
+   "prev_fy_op_margin_note": "FY25 operating income $4,141M / revenues $26,186M (MA137, as reported)",
+   "tax_rate": 0.2336,
+   "tax_note": "FY25 provision $793M on income before income taxes of $3,394M (MA137)",
+   "other_note": "FY25 operating income less income before income taxes ($4,141M - $3,394M)",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2025",
+   "prev_fy_op_margin": 15.81,
+   "prev_fy_sales_growth": 4.3,
+   "prev_fy_fees_pct": 5.2,
+   "other_expense_b": 0.747,
+   "cash_b": 0.358,
+   "fcf_b": 2.608,
+   "fcf_note": "cash from operations $3,212M less capital and technology expenditures $604M",
+   "groups_basis": "FY25 revenues by segment (FY2025 10-K)"
   }
  ],
  "prints": [
@@ -6651,6 +7651,1071 @@
    "occupancy_bp": 3630.0,
    "diluted_shares_m": 329.3,
    "cash_b": 0.8
+  },
+  {
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-02-15",
+   "source": "MA112",
+   "release": "Feb 15",
+   "release_time": "before the open on Feb 15: 8-K accepted 07:37 ET; conference call at 8:30 a.m. ET on Feb 15, the morning of the release",
+   "period_end": "2021-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 217,
+    "base_prior_m": 102,
+    "fran_m": 520,
+    "fran_prior_m": 277,
+    "inc_m": 94,
+    "inc_prior_m": 44,
+    "rev_total_m": 4446,
+    "rev_total_prior_m": 2172,
+    "opinc_m": 635,
+    "opinc_prior_m": -128,
+    "diluted_shares_m": 329.8,
+    "cash_m": 1400
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2021 vs. 2020'); three months ended December 31, 2021 and December 31, 2020 (92 days each); total revenues include cost reimbursement revenue ($3,374M against $1,664M); the company's adjusted total revenues $1,072M against $530M and adjusted operating income $578M against $148M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At year-end 2021, Marriott’s net debt was $8.7 billion, representing total debt of $10.1 billion less cash and equivalents of $1.4 billion.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2020 fourth quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on February 15, 2022, the morning of the release",
+   "revpar_pct": 240.9,
+   "occupancy": 56.8,
+   "occupancy_pts": 33.9,
+   "eps_q": 1.42,
+   "eps_q_prior": -0.5,
+   "eps_note": "as reported: $1.42 against a diluted loss of $0.50 (329.8 million diluted shares against 326.2 million); the company's adjusted diluted EPS, $1.30 against $0.12, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2020 fourth quarter adjusted results excluded income tax benefits of $74 million ($0.23 per share), impairment charges of $88 million after-tax ($0.27 per share), and loss on asset sales of $4 million after-tax ($0.01 per share).' 'Adjusted results also excluded restructuring and merger-related charges, cost reimbursement revenue, and reimbursed expenses.' 'These items totaled $38 million of after-tax profits ($0.12 per share) in the 2021 fourth quarter and an after-tax loss of $185 million ($0.57 per share) in the 2020 fourth quarter.'",
+   "ww_revpar_note": "In the 2021 fourth quarter, worldwide RevPAR increased 124.5 percent (a 124.9 percent increase using actual dollars) compared to the 2020 fourth quarter.",
+   "cash_return_text": "",
+   "next_print": "Q1 2022 print (early May)",
+   "sales_b": 4.446,
+   "sales_pct": 104.7,
+   "fees_m": 831,
+   "fees_prior_m": 423,
+   "fees_pct": 96.5,
+   "op_margin": 14.28,
+   "op_margin_bp": 2017.6,
+   "occupancy_bp": 3390.0,
+   "diluted_shares_m": 329.8,
+   "cash_b": 1.4,
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": 3.34,
+    "eps_gaap": 3.34,
+    "revenue_usd_b": 13.857,
+    "diluted_shares_m": 329.3,
+    "raw": {
+     "rev_m": 13857,
+     "rev_prior_m": 10571,
+     "rev_adj_m": 13857,
+     "opinc_m": 1750,
+     "pretax_m": 1180,
+     "tax_m": 81,
+     "fees_m": 2694,
+     "fees_prior_m": 1683,
+     "cash_m": 1400
+    },
+    "op_margin": 12.63,
+    "sales_growth": 31.1,
+    "fees_pct": 60.1,
+    "revpar_pct": 85.1,
+    "occupancy": 47.1,
+    "occupancy_pts": 19.9,
+    "other_expense_b": 0.57,
+    "tax_rate": 0.0686,
+    "cash_b": 1.4,
+    "groups": null,
+    "normalization_note": "FY21 $3.34 as reported (GAAP), the Q4 2021 release: it publishes no figure excluding only one-offs. Its adjusted diluted EPS, $3.19 (FY20 $0.18), excludes cost reimbursement revenue and reimbursed expenses, a timing effect, besides its named items (the 2018-2021 rule); revenues ($13,857M, including cost reimbursement revenue), operating income ($1,750M), income before income taxes ($1,180M) and the provision ($81M) as reported; the company's adjusted total revenues $3,415M and adjusted operating income $1,649M; fees are gross fee revenues $2,694M against $1,683M; RevPAR is the full-year comparable company-operated US & Canada row (constant dollars); no segment revenue table in this release",
+    "op_margin_note": "FY21 operating income $1,750M / revenues $13,857M (Q4 2021 release)",
+    "tax_note": "FY21 provision $81M on $1,180M",
+    "doc": "Q4 2021 release"
+   }
+  },
+  {
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-05-04",
+   "source": "MA114",
+   "release": "May 4",
+   "release_time": "before the open on May 4: 8-K accepted 07:42 ET; conference call at 8:30 a.m. ET on May 4, the morning of the release",
+   "period_end": "2022-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 213,
+    "base_prior_m": 106,
+    "fran_m": 500,
+    "fran_prior_m": 306,
+    "inc_m": 102,
+    "inc_prior_m": 33,
+    "rev_total_m": 4199,
+    "rev_total_prior_m": 2316,
+    "opinc_m": 558,
+    "opinc_prior_m": 84,
+    "diluted_shares_m": 330.0,
+    "cash_m": 1000
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2022 vs. 2021'); three months ended March 31, 2022 and March 31, 2021 (90 days each); total revenues include cost reimbursement revenue ($3,146M against $1,780M); the company's adjusted total revenues $1,058M against $536M and adjusted operating income $605M against $138M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At quarter end, Marriott’s net debt was $8.5 billion, representing total debt of $9.5 billion less cash and cash equivalents of $1.0 billion.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2021 first quarter (properties comparable in both years); '$33 million of subsidies received from international government COVID-19 assistance programs'; from 2022 the release also compares RevPAR with 2019 (systemwide), shown in its bullets and the outlook, not used; the conference call was at 8:30 a.m. ET on May 4, 2022, the morning of the release",
+   "revpar_pct": 154.7,
+   "occupancy": 54.4,
+   "occupancy_pts": 25.4,
+   "eps_q": 1.14,
+   "eps_q_prior": -0.03,
+   "eps_note": "as reported: $1.14 against a diluted loss of $0.03 (330.0 million diluted shares against 326.7 million); the company's adjusted diluted EPS, $1.25 against $0.10, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2022 first quarter adjusted results excluded $11 million after-tax ($0.03 per share) of impairment charges and a $6 million after-tax ($0.02 per share) gain on an investee’s property sale.' 'The 2021 first quarter adjusted results excluded $3 million after-tax ($0.01 per share) of impairment charges.' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses and restructuring, merger-related charges, and other expenses.' 'These items totaled a $31 million after-tax loss ($0.10 per share) in the 2022 first quarter and an after-tax loss of $42 million ($0.12 per share) in the 2021 first quarter.'",
+   "ww_revpar_note": "In the 2022 first quarter, worldwide RevPAR increased 96.5 percent (a 95.5 percent increase using actual dollars) compared to the 2021 first quarter.",
+   "cash_return_text": "Marriott resumes cash dividends, with the Board of Directors declaring a $0.30 per share dividend payable on June 30, 2022, to shareholders of record as of May 16, 2022;",
+   "next_print": "Q2 2022 print (early August)",
+   "sales_b": 4.199,
+   "sales_pct": 81.3,
+   "fees_m": 815,
+   "fees_prior_m": 445,
+   "fees_pct": 83.1,
+   "op_margin": 13.29,
+   "op_margin_bp": 966.2,
+   "occupancy_bp": 2540.0,
+   "diluted_shares_m": 330.0,
+   "cash_b": 1.0
+  },
+  {
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-08-02",
+   "source": "MA115",
+   "release": "Aug 2",
+   "release_time": "before the open on Aug 2: 8-K accepted 07:38 ET; conference call at 8:30 a.m. ET on Aug 2, the morning of the release",
+   "period_end": "2022-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 269,
+    "base_prior_m": 156,
+    "fran_m": 669,
+    "fran_prior_m": 431,
+    "inc_m": 135,
+    "inc_prior_m": 55,
+    "rev_total_m": 5338,
+    "rev_total_prior_m": 3149,
+    "opinc_m": 950,
+    "opinc_prior_m": 486,
+    "diluted_shares_m": 329.5,
+    "cash_m": 500
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2022 vs. 2021'); three months ended June 30, 2022 and June 30, 2021 (91 days each); total revenues include cost reimbursement revenue ($3,920M against $2,338M); the company's adjusted total revenues $1,418M against $811M and adjusted operating income $857M against $406M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At quarter end, Marriott’s net debt was $8.3 billion, representing total debt of $8.8 billion less cash and cash equivalents of $0.5 billion.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2021 second quarter (properties comparable in both years); from 2022 the release also compares RevPAR with 2019 (systemwide), shown in its bullets and the outlook, not used; the conference call was at 8:30 a.m. ET on August 2, 2022, the morning of the release",
+   "revpar_pct": 106.4,
+   "occupancy": 71.7,
+   "occupancy_pts": 26.5,
+   "eps_q": 2.06,
+   "eps_q_prior": 1.28,
+   "eps_note": "as reported: $2.06 against $1.28 (329.5 million diluted shares against 329.1 million); the company's adjusted diluted EPS, $1.80 against $0.79, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2022 second quarter adjusted results excluded $11 million after-tax ($0.03 per share) of gains on investees’ property sales and a $2 million after-tax ($0.01 per share) gain on an asset disposition.' 'The 2021 second quarter adjusted results excluded special tax items of $98 million ($0.30 per share).' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses and restructuring, merger-related charges, and other expenses.'",
+   "ww_revpar_note": "In the 2022 second quarter, worldwide RevPAR increased 70.6 percent (a 69.1 percent increase using actual dollars) compared to the 2021 second quarter.",
+   "cash_return_text": "The company repurchased 1.9 million shares of common stock in the 2022 second quarter for $300 million at an average price of $157.38 per share. Year-to-date through July 29, the company has repurchased 2.9 million shares for $448 million at an average price of $152.99 per share.",
+   "next_print": "Q3 2022 print (early November)",
+   "sales_b": 5.338,
+   "sales_pct": 69.5,
+   "fees_m": 1073,
+   "fees_prior_m": 642,
+   "fees_pct": 67.1,
+   "op_margin": 17.8,
+   "op_margin_bp": 236.3,
+   "occupancy_bp": 2650.0,
+   "diluted_shares_m": 329.5,
+   "cash_b": 0.5
+  },
+  {
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-11-03",
+   "source": "MA116",
+   "release": "Nov 3",
+   "release_time": "before the open on Nov 3: 8-K accepted 06:52 ET; conference call at 8:00 a.m. ET on Nov 3, the morning of the release",
+   "period_end": "2022-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 275,
+    "base_prior_m": 190,
+    "fran_m": 678,
+    "fran_prior_m": 533,
+    "inc_m": 106,
+    "inc_prior_m": 53,
+    "rev_total_m": 5313,
+    "rev_total_prior_m": 3946,
+    "opinc_m": 958,
+    "opinc_prior_m": 545,
+    "diluted_shares_m": 325.7,
+    "cash_m": 1000
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2022 vs. 2021'); three months ended September 30, 2022 and September 30, 2021 (92 days each); total revenues include cost reimbursement revenue ($3,931M against $2,950M); the company's adjusted total revenues $1,382M against $996M and adjusted operating income $815M against $527M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At quarter end, Marriott’s net debt was $8.4 billion, representing total debt of $9.4 billion less cash and cash equivalents of $1.0 billion.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2021 third quarter (properties comparable in both years); from 2022 the release also compares RevPAR with 2019 (systemwide), shown in its bullets and the outlook, not used; the conference call was at 8:00 a.m. ET on November 3, 2022, the morning of the release",
+   "revpar_pct": 41.2,
+   "occupancy": 69.4,
+   "occupancy_pts": 12.2,
+   "eps_q": 1.94,
+   "eps_q_prior": 0.67,
+   "eps_note": "as reported: $1.94 against $0.67 (325.7 million diluted shares against 329.3 million); the company's adjusted diluted EPS, $1.69 against $0.99, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2022 third quarter adjusted results excluded special tax items of $30 million ($0.09 per share) and a $2 million ($0.01 per share) gain on an investee’s property sale.' 'The 2021 third quarter adjusted results excluded a $122 million after-tax ($0.37 per share) loss on the extinguishment of debt and $8 million after-tax ($0.02 per share) of impairment charges.' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses and restructuring, merger-related charges, and other expenses.'",
+   "ww_revpar_note": "In the 2022 third quarter, worldwide RevPAR increased 36.3 percent (a 33.4 percent increase using actual dollars) compared to the 2021 third quarter.",
+   "cash_return_text": "Year-to-date through October 31, the company has repurchased 11.1 million shares for $1.7 billion at an average price of $153.21 per share.",
+   "next_print": "Q4 2022 print (mid-February)",
+   "sales_b": 5.313,
+   "sales_pct": 34.6,
+   "fees_m": 1059,
+   "fees_prior_m": 776,
+   "fees_pct": 36.5,
+   "op_margin": 18.03,
+   "op_margin_bp": 422.0,
+   "occupancy_bp": 1220.0,
+   "diluted_shares_m": 325.7,
+   "cash_b": 1.0
+  },
+  {
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-02-14",
+   "source": "MA118",
+   "release": "Feb 14",
+   "release_time": "before the open on Feb 14: 8-K accepted 07:28 ET; conference call at 8:30 a.m. ET on Feb 14, the morning of the release",
+   "period_end": "2022-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 287,
+    "base_prior_m": 217,
+    "fran_m": 658,
+    "fran_prior_m": 520,
+    "inc_m": 186,
+    "inc_prior_m": 94,
+    "rev_total_m": 5923,
+    "rev_total_prior_m": 4446,
+    "opinc_m": 996,
+    "opinc_prior_m": 635,
+    "diluted_shares_m": 317.9,
+    "cash_m": 500
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2022 vs. 2021'); three months ended December 31, 2022 and December 31, 2021 (92 days each); total revenues include cost reimbursement revenue ($4,420M against $3,374M); the company's adjusted total revenues $1,503M against $1,072M and adjusted operating income $926M against $578M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At year-end 2022, Marriott’s total debt was $10.1 billion and cash and equivalents totaled $0.5 billion, compared to $10.1 billion in debt and $1.4 billion of cash and equivalents at year-end 2021.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2021 fourth quarter (properties comparable in both years); from 2022 the release also compares RevPAR with 2019 (systemwide), shown in its bullets and the outlook, not used; the conference call was at 8:30 a.m. ET on February 14, 2023, the morning of the release",
+   "revpar_pct": 30.5,
+   "occupancy": 65.4,
+   "occupancy_pts": 8.3,
+   "eps_q": 2.12,
+   "eps_q_prior": 1.42,
+   "eps_note": "as reported: $2.12 against $1.42 (317.9 million diluted shares against 329.8 million); the company's adjusted diluted EPS, $1.96 against $1.30, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses and restructuring, merger-related charges, and other expenses.'",
+   "ww_revpar_note": "In the 2022 fourth quarter, worldwide RevPAR increased 28.8 percent (a 25.6 percent increase using actual dollars) compared to the 2021 fourth quarter.",
+   "cash_return_text": "The company repurchased 8.7 million shares of common stock in the 2022 fourth quarter for $1.4 billion. For full year 2022, Marriott repurchased 16.8 million shares for $2.6 billion. Year to date through February 10, the company has repurchased 2.5 million shares for $400 million.",
+   "next_print": "Q1 2023 print (early May)",
+   "sales_b": 5.923,
+   "sales_pct": 33.2,
+   "fees_m": 1131,
+   "fees_prior_m": 831,
+   "fees_pct": 36.1,
+   "op_margin": 16.82,
+   "op_margin_bp": 253.3,
+   "occupancy_bp": 830.0,
+   "diluted_shares_m": 317.9,
+   "cash_b": 0.5,
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 7.24,
+    "eps_gaap": 7.24,
+    "revenue_usd_b": 20.773,
+    "diluted_shares_m": 325.8,
+    "raw": {
+     "rev_m": 20773,
+     "rev_prior_m": 13857,
+     "rev_adj_m": 20773,
+     "opinc_m": 3462,
+     "pretax_m": 3114,
+     "tax_m": 756,
+     "fees_m": 4078,
+     "fees_prior_m": 2694,
+     "cash_m": 500
+    },
+    "op_margin": 16.67,
+    "sales_growth": 49.9,
+    "fees_pct": 51.4,
+    "revpar_pct": 67.0,
+    "occupancy": 65.3,
+    "occupancy_pts": 17.9,
+    "other_expense_b": 0.348,
+    "tax_rate": 0.2428,
+    "cash_b": 0.5,
+    "groups": null,
+    "normalization_note": "FY22 $7.24 as reported (GAAP), the Q4 2022 release: it publishes no figure excluding only one-offs. Its adjusted diluted EPS, $6.69 (FY21 $3.19), excludes cost reimbursement revenue and reimbursed expenses, a timing effect, besides its named items (the 2018-2021 rule); revenues ($20,773M, including cost reimbursement revenue), operating income ($3,462M), income before income taxes ($3,114M) and the provision ($756M) as reported; the company's adjusted total revenues $5,361M and adjusted operating income $3,203M; fees are gross fee revenues $4,078M against $2,694M; RevPAR is the full-year comparable company-operated US & Canada row (constant dollars); no segment revenue table in this release",
+    "op_margin_note": "FY22 operating income $3,462M / revenues $20,773M (Q4 2022 release)",
+    "tax_note": "FY22 provision $756M on $3,114M",
+    "doc": "Q4 2022 release"
+   }
+  },
+  {
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-05-02",
+   "source": "MA120",
+   "release": "May 2",
+   "release_time": "before the open on May 2: 8-K accepted 07:19 ET; conference call at 8:30 a.m. ET on May 2, the morning of the release",
+   "period_end": "2023-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 293,
+    "base_prior_m": 213,
+    "fran_m": 639,
+    "fran_prior_m": 500,
+    "inc_m": 201,
+    "inc_prior_m": 102,
+    "rev_total_m": 5615,
+    "rev_total_prior_m": 4199,
+    "opinc_m": 951,
+    "opinc_prior_m": 558,
+    "diluted_shares_m": 311.0,
+    "cash_m": 600
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2023 vs. 2022'); three months ended March 31, 2023 and March 31, 2022 (90 days each); total revenues include cost reimbursement revenue ($4,147M against $3,146M); the company's adjusted total revenues $1,468M against $1,058M and adjusted operating income $941M against $605M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $10.7 billion and cash and equivalents totaled $0.6 billion, compared to $10.1 billion in debt and $0.5 billion of cash and equivalents at year-end 2022.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2022 first quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on May 2, 2023, the morning of the release",
+   "revpar_pct": 31.3,
+   "occupancy": 66.0,
+   "occupancy_pts": 12.0,
+   "eps_q": 2.43,
+   "eps_q_prior": 1.14,
+   "eps_note": "as reported: $2.43 against $1.14 (311.0 million diluted shares against 330.0 million); the company's adjusted diluted EPS, $2.09 against $1.25, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2023 first quarter adjusted results excluded a special tax item of $100 million ($0.32 per share).' 'The 2022 first quarter adjusted results excluded $11 million after-tax ($0.03 per share) of impairment charges and a $6 million after-tax ($0.02 per share) gain on an investee’s property sale.' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses and merger-related charges and other expenses.'",
+   "ww_revpar_note": "In the 2023 first quarter, worldwide RevPAR increased 34.3 percent (a 32.6 percent increase using actual dollars) compared to the 2022 first quarter.",
+   "cash_return_text": "Year to date through April 28, the company has repurchased 8.2 million shares for $1.4 billion.",
+   "next_print": "Q2 2023 print (early August)",
+   "sales_b": 5.615,
+   "sales_pct": 33.7,
+   "fees_m": 1133,
+   "fees_prior_m": 815,
+   "fees_pct": 39.0,
+   "op_margin": 16.94,
+   "op_margin_bp": 364.8,
+   "occupancy_bp": 1200.0,
+   "diluted_shares_m": 311.0,
+   "cash_b": 0.6
+  },
+  {
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-08-01",
+   "source": "MA121",
+   "release": "Aug 1",
+   "release_time": "before the open on Aug 1: 8-K accepted 07:23 ET; conference call at 8:30 a.m. ET on Aug 1, the morning of the release",
+   "period_end": "2023-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 318,
+    "base_prior_m": 269,
+    "fran_m": 739,
+    "fran_prior_m": 669,
+    "inc_m": 193,
+    "inc_prior_m": 135,
+    "rev_total_m": 6075,
+    "rev_total_prior_m": 5338,
+    "opinc_m": 1096,
+    "opinc_prior_m": 950,
+    "diluted_shares_m": 305.0,
+    "cash_m": 600
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2023 vs. 2022'); three months ended June 30, 2023 and June 30, 2022 (91 days each); total revenues include cost reimbursement revenue ($4,457M against $3,920M); the company's adjusted total revenues $1,618M against $1,418M and adjusted operating income $1,043M against $857M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $11.3 billion and cash and equivalents totaled $0.6 billion, compared to $10.1 billion in debt and $0.5 billion of cash and equivalents at year-end 2022.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2022 second quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on August 1, 2023, the morning of the release",
+   "revpar_pct": 5.2,
+   "occupancy": 72.7,
+   "occupancy_pts": 1.2,
+   "eps_q": 2.38,
+   "eps_q_prior": 2.06,
+   "eps_note": "as reported: $2.38 against $2.06 (305.0 million diluted shares against 329.5 million); the company's adjusted diluted EPS, $2.26 against $1.80, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2022 second quarter adjusted results excluded $13 million ($11 million after-tax and $0.03 per share) of gains on investees’ property sales and a $2 million ($2 million after-tax and $0.01 per share) gain on an asset disposition.' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses and merger-related charges and other expenses.'",
+   "ww_revpar_note": "In the 2023 second quarter, worldwide RevPAR increased 13.5 percent (a 12.7 percent increase using actual dollars) compared to the 2022 second quarter.",
+   "cash_return_text": "Year to date through July 28, the company has repurchased 13.6 million shares for $2.3 billion.",
+   "next_print": "Q3 2023 print (early November)",
+   "sales_b": 6.075,
+   "sales_pct": 13.8,
+   "fees_m": 1250,
+   "fees_prior_m": 1073,
+   "fees_pct": 16.5,
+   "op_margin": 18.04,
+   "op_margin_bp": 24.4,
+   "occupancy_bp": 120.0,
+   "diluted_shares_m": 305.0,
+   "cash_b": 0.6
+  },
+  {
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-11-02",
+   "source": "MA123",
+   "release": "Nov 2",
+   "release_time": "before the open on Nov 2: 8-K accepted 06:59 ET; conference call at 8:00 a.m. ET on Nov 2, the morning of the release",
+   "period_end": "2023-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 306,
+    "base_prior_m": 275,
+    "fran_m": 748,
+    "fran_prior_m": 678,
+    "inc_m": 143,
+    "inc_prior_m": 106,
+    "rev_total_m": 5928,
+    "rev_total_prior_m": 5313,
+    "opinc_m": 1099,
+    "opinc_prior_m": 958,
+    "diluted_shares_m": 300.1,
+    "cash_m": 700
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2023 vs. 2022'); three months ended September 30, 2023 and September 30, 2022 (92 days each); total revenues include cost reimbursement revenue ($4,391M against $3,931M); the company's adjusted total revenues $1,537M against $1,382M and adjusted operating income $959M against $815M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $11.8 billion and cash and equivalents totaled $0.7 billion, compared to $10.1 billion in debt and $0.5 billion of cash and equivalents at year-end 2022.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2022 third quarter (properties comparable in both years); the conference call was at 8:00 a.m. ET on November 2, 2023, the morning of the release",
+   "revpar_pct": 4.4,
+   "occupancy": 70.8,
+   "occupancy_pts": 1.3,
+   "eps_q": 2.51,
+   "eps_q_prior": 1.94,
+   "eps_note": "as reported: $2.51 against $1.94 (300.1 million diluted shares against 325.7 million); the company's adjusted diluted EPS, $2.11 against $1.69, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2023 third quarter adjusted results excluded a $24 million ($16 million after-tax and $0.05 per share) gain on the sale of a hotel in the Caribbean & Latin America (CALA) region.' 'The 2022 third quarter adjusted results excluded special tax items of $30 million ($0.09 per share) and a $2 million ($2 million after-tax and $0.01 per share) gain on an investee’s property sale.' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses and merger-related charges and other expenses.'",
+   "ww_revpar_note": "In the 2023 third quarter, worldwide RevPAR increased 8.8 percent (an 8.7 percent increase using actual dollars) compared to the 2022 third quarter.",
+   "cash_return_text": "Year to date through October 31, the company has repurchased 18.3 million shares for $3.3 billion.",
+   "next_print": "Q4 2023 print (mid-February)",
+   "sales_b": 5.928,
+   "sales_pct": 11.6,
+   "fees_m": 1197,
+   "fees_prior_m": 1059,
+   "fees_pct": 13.0,
+   "op_margin": 18.54,
+   "op_margin_bp": 50.8,
+   "occupancy_bp": 130.0,
+   "diluted_shares_m": 300.1,
+   "cash_b": 0.7
+  },
+  {
+   "quarter": "Q4 2023",
+   "fy": 2023,
+   "q": 4,
+   "published": "2024-02-13",
+   "source": "MA124",
+   "release": "Feb 13",
+   "release_time": "before the open on Feb 13: 8-K accepted 07:24 ET; conference call at 8:30 a.m. ET on Feb 13, the morning of the release",
+   "period_end": "2023-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 321,
+    "base_prior_m": 287,
+    "fran_m": 705,
+    "fran_prior_m": 658,
+    "inc_m": 218,
+    "inc_prior_m": 186,
+    "rev_total_m": 6095,
+    "rev_total_prior_m": 5923,
+    "opinc_m": 718,
+    "opinc_prior_m": 996,
+    "diluted_shares_m": 295.6,
+    "cash_m": 300
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2023 vs. 2022'); three months ended December 31, 2023 and December 31, 2022 (92 days each); total revenues include cost reimbursement revenue ($4,418M against $4,420M); the company's adjusted total revenues $1,677M against $1,503M and adjusted operating income $992M against $926M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At year-end 2023, Marriott’s total debt was $11.9 billion and cash and equivalents totaled $0.3 billion, compared to $10.1 billion in debt and $0.5 billion of cash and equivalents at year-end 2022.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2022 fourth quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on February 13, 2024, the morning of the release",
+   "revpar_pct": 3.6,
+   "occupancy": 65.9,
+   "occupancy_pts": 0.3,
+   "eps_q": 2.87,
+   "eps_q_prior": 2.12,
+   "eps_note": "as reported: $2.87 against $2.12 (295.6 million diluted shares against 317.9 million); the company's adjusted diluted EPS, $3.57 against $1.96, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses and merger-related charges and other expenses.' 'Results in the 2023 quarter included a $63 million ($47 million after-tax and $0.16 per share) termination fee related to a development project.' 'The year-over-year change reflects a $27 million ($20 million after-tax and $0.07 per share) litigation reserve related to an international hotel, as well as higher performance-related compensation expenses, professional fees, and bad debt reserves.' 'The favorable year-over-year change is primarily due to international intellectual property restructuring transactions completed in the quarter resulting in $228 million ($0.77 per share) of benefits and a $223 million ($0.75 per share) favorable impact from the release of a tax valuation allowance.'",
+   "ww_revpar_note": "In the 2023 fourth quarter, worldwide RevPAR increased 7.2 percent (a 7.6 percent increase using actual dollars) compared to the 2022 fourth quarter.",
+   "cash_return_text": "The company repurchased 4.7 million shares of common stock in the 2023 fourth quarter for $965 million. For full year 2023, Marriott repurchased 21.5 million shares for $3.9 billion. Year to date through February 9, the company has repurchased 1.3 million shares for $300 million.",
+   "next_print": "Q1 2024 print (early May)",
+   "sales_b": 6.095,
+   "sales_pct": 2.9,
+   "fees_m": 1244,
+   "fees_prior_m": 1131,
+   "fees_pct": 10.0,
+   "op_margin": 11.78,
+   "op_margin_bp": -503.6,
+   "occupancy_bp": 30.0,
+   "diluted_shares_m": 295.6,
+   "cash_b": 0.3,
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": 10.18,
+    "eps_gaap": 10.18,
+    "revenue_usd_b": 23.713,
+    "diluted_shares_m": 302.9,
+    "raw": {
+     "rev_m": 23713,
+     "rev_prior_m": 20773,
+     "rev_adj_m": 23713,
+     "opinc_m": 3864,
+     "pretax_m": 3378,
+     "tax_m": 295,
+     "fees_m": 4824,
+     "fees_prior_m": 4078,
+     "cash_m": 300
+    },
+    "op_margin": 16.29,
+    "sales_growth": 14.2,
+    "fees_pct": 18.3,
+    "revpar_pct": 10.2,
+    "occupancy": 68.9,
+    "occupancy_pts": 3.7,
+    "other_expense_b": 0.486,
+    "tax_rate": 0.0873,
+    "cash_b": 0.3,
+    "groups": null,
+    "normalization_note": "FY23 $10.18 as reported (GAAP), the Q4 2023 release: it publishes no figure excluding only one-offs. Its adjusted diluted EPS, $9.99 (FY22 $6.69), excludes cost reimbursement revenue and reimbursed expenses, a timing effect, besides its named items (the 2018-2021 rule); revenues ($23,713M, including cost reimbursement revenue), operating income ($3,864M), income before income taxes ($3,378M) and the provision ($295M) as reported; the company's adjusted total revenues $6,300M and adjusted operating income $3,935M; fees are gross fee revenues $4,824M against $4,078M; RevPAR is the full-year comparable company-operated US & Canada row (constant dollars); no segment revenue table in this release",
+    "op_margin_note": "FY23 operating income $3,864M / revenues $23,713M (Q4 2023 release)",
+    "tax_note": "FY23 provision $295M on $3,378M",
+    "doc": "Q4 2023 release"
+   }
+  },
+  {
+   "quarter": "Q1 2024",
+   "fy": 2024,
+   "q": 1,
+   "published": "2024-05-01",
+   "source": "MA126",
+   "release": "May 1",
+   "release_time": "before the open on May 1: 8-K accepted 07:10 ET; conference call at 8:30 a.m. ET on May 1, the morning of the release",
+   "period_end": "2024-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 313,
+    "base_prior_m": 293,
+    "fran_m": 688,
+    "fran_prior_m": 639,
+    "inc_m": 209,
+    "inc_prior_m": 201,
+    "rev_total_m": 5977,
+    "rev_total_prior_m": 5615,
+    "opinc_m": 876,
+    "opinc_prior_m": 951,
+    "diluted_shares_m": 291.6,
+    "cash_m": 400
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2024 vs. 2023'); three months ended March 31, 2024 and March 31, 2023 (91 against 90 days); total revenues include cost reimbursement revenue ($4,433M against $4,147M); the company's adjusted total revenues $1,544M against $1,468M and adjusted operating income $952M against $941M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $12.7 billion and cash and equivalents totaled $0.4 billion, compared to $11.9 billion in debt and $0.3 billion of cash and equivalents at year-end 2023.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2023 first quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on May 1, 2024, the morning of the release",
+   "revpar_pct": 2.6,
+   "occupancy": 66.0,
+   "occupancy_pts": 0.3,
+   "eps_q": 1.93,
+   "eps_q_prior": 2.43,
+   "eps_note": "as reported: $1.93 against $2.43 (291.6 million diluted shares against 311.0 million); the company's adjusted diluted EPS, $2.13 against $2.09, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2023 first quarter adjusted results excluded a special tax item of $100 million ($0.32 per share).' 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses and merger-related charges and other expenses.'",
+   "ww_revpar_note": "In the 2024 first quarter, worldwide RevPAR increased 4.2 percent (a 3.9 percent increase using actual dollars) compared to the 2023 first quarter.",
+   "cash_return_text": "Year to date through April 26, the company has repurchased 6.2 million shares for $1.5 billion.",
+   "next_print": "Q2 2024 print (early August)",
+   "sales_b": 5.977,
+   "sales_pct": 6.4,
+   "fees_m": 1210,
+   "fees_prior_m": 1133,
+   "fees_pct": 6.8,
+   "op_margin": 14.66,
+   "op_margin_bp": -228.1,
+   "occupancy_bp": 30.0,
+   "diluted_shares_m": 291.6,
+   "cash_b": 0.4
+  },
+  {
+   "quarter": "Q2 2024",
+   "fy": 2024,
+   "q": 2,
+   "published": "2024-07-31",
+   "source": "MA127",
+   "release": "Jul 31",
+   "release_time": "before the open on Jul 31: 8-K accepted 07:13 ET; conference call at 8:30 a.m. ET on Jul 31, the morning of the release",
+   "period_end": "2024-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 330,
+    "base_prior_m": 318,
+    "fran_m": 818,
+    "fran_prior_m": 739,
+    "inc_m": 195,
+    "inc_prior_m": 193,
+    "rev_total_m": 6439,
+    "rev_total_prior_m": 6075,
+    "opinc_m": 1195,
+    "opinc_prior_m": 1096,
+    "diluted_shares_m": 286.7,
+    "cash_m": 300
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2024 vs. 2023'); three months ended June 30, 2024 and June 30, 2023 (91 days each); total revenues include cost reimbursement revenue ($4,728M against $4,457M); the company's adjusted total revenues $1,711M against $1,618M and adjusted operating income $1,120M against $1,043M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $13.1 billion and cash and equivalents totaled $0.3 billion, compared to $11.9 billion in debt and $0.3 billion of cash and equivalents at year-end 2023.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2023 second quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on July 31, 2024, the morning of the release",
+   "revpar_pct": 3.7,
+   "occupancy": 73.6,
+   "occupancy_pts": 0.9,
+   "eps_q": 2.69,
+   "eps_q_prior": 2.38,
+   "eps_note": "as reported: $2.69 against $2.38 (286.7 million diluted shares against 305.0 million); the company's adjusted diluted EPS, $2.50 against $2.26, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses and merger-related charges and other expenses.'",
+   "ww_revpar_note": "In the 2024 second quarter, worldwide RevPAR increased 4.9 percent (a 4.0 percent increase using actual dollars) compared to the 2023 second quarter.",
+   "cash_return_text": "Year to date through July 29, the company has repurchased 10.4 million shares for $2.5 billion.",
+   "next_print": "Q3 2024 print (early November)",
+   "sales_b": 6.439,
+   "sales_pct": 6.0,
+   "fees_m": 1343,
+   "fees_prior_m": 1250,
+   "fees_pct": 7.4,
+   "op_margin": 18.56,
+   "op_margin_bp": 51.8,
+   "occupancy_bp": 90.0,
+   "diluted_shares_m": 286.7,
+   "cash_b": 0.3
+  },
+  {
+   "quarter": "Q3 2024",
+   "fy": 2024,
+   "q": 3,
+   "published": "2024-11-04",
+   "source": "MA129",
+   "release": "Nov 4",
+   "release_time": "before the open on Nov 4: 8-K accepted 07:21 ET; conference call at 8:30 a.m. ET on Nov 4, the morning of the release",
+   "period_end": "2024-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 312,
+    "base_prior_m": 306,
+    "fran_m": 812,
+    "fran_prior_m": 748,
+    "inc_m": 159,
+    "inc_prior_m": 143,
+    "rev_total_m": 6255,
+    "rev_total_prior_m": 5928,
+    "opinc_m": 944,
+    "opinc_prior_m": 1099,
+    "diluted_shares_m": 282.4,
+    "cash_m": 400
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2024 vs. 2023'); three months ended September 30, 2024 and September 30, 2023 (92 days each); total revenues include cost reimbursement revenue ($4,617M against $4,391M); the company's adjusted total revenues $1,638M against $1,537M and adjusted operating income $1,017M against $959M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $13.6 billion and cash and equivalents totaled $0.4 billion, compared to $11.9 billion in debt and $0.3 billion of cash and equivalents at year-end 2023.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2023 third quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on November 4, 2024, the morning of the release",
+   "revpar_pct": 3.1,
+   "occupancy": 71.1,
+   "occupancy_pts": 0.3,
+   "eps_q": 2.07,
+   "eps_q_prior": 2.51,
+   "eps_note": "as reported: $2.07 against $2.51 (282.4 million diluted shares against 300.1 million); the company's adjusted diluted EPS, $2.26 against $2.11, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses and restructuring and merger-related charges.'",
+   "ww_revpar_note": "In the 2024 third quarter, worldwide RevPAR increased 3.0 percent (a 2.3 percent increase using actual dollars) compared to the 2023 third quarter.",
+   "cash_return_text": "Year to date through October 31, the company has repurchased 14.2 million shares for $3.4 billion.",
+   "next_print": "Q4 2024 print (mid-February)",
+   "sales_b": 6.255,
+   "sales_pct": 5.5,
+   "fees_m": 1283,
+   "fees_prior_m": 1197,
+   "fees_pct": 7.2,
+   "op_margin": 15.09,
+   "op_margin_bp": -344.7,
+   "occupancy_bp": 30.0,
+   "diluted_shares_m": 282.4,
+   "cash_b": 0.4
+  },
+  {
+   "quarter": "Q4 2024",
+   "fy": 2024,
+   "q": 4,
+   "published": "2025-02-11",
+   "source": "MA130",
+   "release": "Feb 11",
+   "release_time": "before the open on Feb 11: 8-K accepted 07:30 ET; conference call at 8:30 a.m. ET on Feb 11, the morning of the release",
+   "period_end": "2024-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 333,
+    "base_prior_m": 321,
+    "fran_m": 795,
+    "fran_prior_m": 705,
+    "inc_m": 206,
+    "inc_prior_m": 218,
+    "rev_total_m": 6429,
+    "rev_total_prior_m": 6095,
+    "opinc_m": 752,
+    "opinc_prior_m": 718,
+    "diluted_shares_m": 280.1,
+    "cash_m": 400
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2024 vs. 2023'); three months ended December 31, 2024 and December 31, 2023 (92 days each); total revenues include cost reimbursement revenue ($4,704M against $4,418M); the company's adjusted total revenues $1,725M against $1,677M and adjusted operating income $1,072M against $992M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At year-end 2024, Marriott’s total debt was $14.4 billion and cash and equivalents totaled $0.4 billion, compared to $11.9 billion in debt and $0.3 billion of cash and equivalents at year-end 2023.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2023 fourth quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on February 11, 2025, the morning of the release",
+   "revpar_pct": 4.2,
+   "occupancy": 66.8,
+   "occupancy_pts": 0.8,
+   "eps_q": 1.63,
+   "eps_q_prior": 2.87,
+   "eps_note": "as reported: $1.63 against $2.87 (280.1 million diluted shares against 295.6 million); the company's adjusted diluted EPS, $2.45 against $3.57, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges and gain on asset dispositions.' 'Reported and adjusted results in 2024 included a $19 million ($14 million after-tax and $0.05 per share) guarantee reserve for a U.S. hotel, which was negotiated in connection with the Starwood acquisition.' 'Reported and adjusted results in 2023 included a $63 million ($47 million after‐tax and $0.15 per share) termination fee related to a development project, $228 million ($0.75 per share) of tax benefits from international intellectual property transactions and a $223 million ($0.73 per share) favorable impact from the release of a tax valuation allowance.'",
+   "ww_revpar_note": "In the 2024 fourth quarter, worldwide RevPAR increased 5.0 percent (a 5.0 percent increase using actual dollars) compared to the 2023 fourth quarter.",
+   "cash_return_text": "The company repurchased 2.0 million shares of common stock in the 2024 fourth quarter for $0.5 billion. For full year 2024, Marriott repurchased 15.4 million shares for $3.7 billion. Year to date through February 7, the company has repurchased 1.2 million shares for $350 million.",
+   "next_print": "Q1 2025 print (early May)",
+   "sales_b": 6.429,
+   "sales_pct": 5.5,
+   "fees_m": 1334,
+   "fees_prior_m": 1244,
+   "fees_pct": 7.2,
+   "op_margin": 11.7,
+   "op_margin_bp": -8.3,
+   "occupancy_bp": 80.0,
+   "diluted_shares_m": 280.1,
+   "cash_b": 0.4,
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 8.33,
+    "eps_gaap": 8.33,
+    "revenue_usd_b": 25.1,
+    "diluted_shares_m": 285.2,
+    "raw": {
+     "rev_m": 25100,
+     "rev_prior_m": 23713,
+     "rev_adj_m": 25100,
+     "opinc_m": 3767,
+     "pretax_m": 3151,
+     "tax_m": 776,
+     "fees_m": 5170,
+     "fees_prior_m": 4824,
+     "cash_m": 400
+    },
+    "op_margin": 15.01,
+    "sales_growth": 5.8,
+    "fees_pct": 7.2,
+    "revpar_pct": 3.4,
+    "occupancy": 69.4,
+    "occupancy_pts": 0.5,
+    "other_expense_b": 0.616,
+    "tax_rate": 0.2463,
+    "cash_b": 0.4,
+    "groups": null,
+    "normalization_note": "FY24 $8.33 as reported (GAAP), the Q4 2024 release: it publishes no figure excluding only one-offs. Its adjusted diluted EPS, $9.33 (FY23 $9.99), excludes cost reimbursement revenue and reimbursed expenses, a timing effect, besides its named items (the 2018-2021 rule); revenues ($25,100M, including cost reimbursement revenue), operating income ($3,767M), income before income taxes ($3,151M) and the provision ($776M) as reported; the company's adjusted total revenues $6,618M and adjusted operating income $4,161M; fees are gross fee revenues $5,170M against $4,824M; RevPAR is the full-year comparable company-operated US & Canada row (constant dollars); no segment revenue table in this release",
+    "op_margin_note": "FY24 operating income $3,767M / revenues $25,100M (Q4 2024 release)",
+    "tax_note": "FY24 provision $776M on $3,151M",
+    "doc": "Q4 2024 release"
+   }
+  },
+  {
+   "quarter": "Q1 2025",
+   "fy": 2025,
+   "q": 1,
+   "published": "2025-05-06",
+   "source": "MA132",
+   "release": "May 6",
+   "release_time": "before the open on May 6: 8-K accepted 07:01 ET; conference call at 8:30 a.m. ET on May 6, the morning of the release",
+   "period_end": "2025-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 325,
+    "base_prior_m": 313,
+    "fran_m": 746,
+    "fran_prior_m": 688,
+    "inc_m": 204,
+    "inc_prior_m": 209,
+    "rev_total_m": 6263,
+    "rev_total_prior_m": 5977,
+    "opinc_m": 948,
+    "opinc_prior_m": 876,
+    "diluted_shares_m": 277.7,
+    "cash_m": 500
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2025 vs. 2024'); three months ended March 31, 2025 and March 31, 2024 (90 against 91 days); total revenues include cost reimbursement revenue ($4,655M against $4,433M); the company's adjusted total revenues $1,608M against $1,544M and adjusted operating income $1,016M against $952M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $15.1 billion and cash and equivalents totaled $0.5 billion, compared to $14.4 billion in debt and $0.4 billion of cash and equivalents at year-end 2024.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2024 first quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on May 6, 2025, the morning of the release",
+   "revpar_pct": 5.1,
+   "occupancy": 67.2,
+   "occupancy_pts": 1.2,
+   "eps_q": 2.39,
+   "eps_q_prior": 1.93,
+   "eps_note": "as reported: $2.39 against $1.93 (277.7 million diluted shares against 291.6 million); the company's adjusted diluted EPS, $2.32 against $2.13, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'The 2025 first quarter adjusted results excluded the benefit of an income tax special item of $71 million ($0.25 per share).' 'Adjusted results also excluded cost reimbursement revenue, reimbursed expenses, and restructuring and merger-related charges.'",
+   "ww_revpar_note": "In the 2025 first quarter, worldwide RevPAR increased 4.1 percent (a 2.7 percent increase using actual dollars) compared to the 2024 first quarter.",
+   "cash_return_text": "The company repurchased 2.8 million shares of common stock in the 2025 first quarter for $0.8 billion. Year to date through April 29, the company has repurchased 3.9 million shares for $1.0 billion.",
+   "next_print": "Q2 2025 print (late July)",
+   "sales_b": 6.263,
+   "sales_pct": 4.8,
+   "fees_m": 1275,
+   "fees_prior_m": 1210,
+   "fees_pct": 5.4,
+   "op_margin": 15.14,
+   "op_margin_bp": 48.0,
+   "occupancy_bp": 120.0,
+   "diluted_shares_m": 277.7,
+   "cash_b": 0.5
+  },
+  {
+   "quarter": "Q2 2025",
+   "fy": 2025,
+   "q": 2,
+   "published": "2025-08-05",
+   "source": "MA133",
+   "release": "Aug 5",
+   "release_time": "before the open on Aug 5: 8-K accepted 07:00 ET; conference call at 8:30 a.m. ET on Aug 5, the morning of the release",
+   "period_end": "2025-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 340,
+    "base_prior_m": 330,
+    "fran_m": 860,
+    "fran_prior_m": 818,
+    "inc_m": 200,
+    "inc_prior_m": 195,
+    "rev_total_m": 6744,
+    "rev_total_prior_m": 6439,
+    "opinc_m": 1236,
+    "opinc_prior_m": 1195,
+    "diluted_shares_m": 274.7,
+    "cash_m": 700
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2025 vs. 2024'); three months ended June 30, 2025 and June 30, 2024 (91 days each); total revenues include cost reimbursement revenue ($4,932M against $4,728M); the company's adjusted total revenues $1,812M against $1,711M and adjusted operating income $1,186M against $1,120M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $15.7 billion and cash and equivalents totaled $0.7 billion, compared to $14.4 billion in debt and $0.4 billion of cash and equivalents at year-end 2024.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2024 second quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on August 5, 2025, the morning of the release",
+   "revpar_pct": 1.6,
+   "occupancy": 73.1,
+   "occupancy_pts": -0.4,
+   "eps_q": 2.78,
+   "eps_q_prior": 2.69,
+   "eps_note": "as reported: $2.78 against $2.69 (274.7 million diluted shares against 286.7 million); the company's adjusted diluted EPS, $2.65 against $2.50, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges, and, for the 2025 second quarter, income tax special items.'",
+   "ww_revpar_note": "In the 2025 second quarter, worldwide RevPAR increased 1.5 percent (a 1.7 percent increase using actual dollars) compared to the 2024 second quarter.",
+   "cash_return_text": "The company repurchased 2.8 million shares of common stock in the 2025 second quarter for $0.7 billion. Year to date through July 30, the company has repurchased 6.4 million shares for $1.7 billion.",
+   "next_print": "Q3 2025 print (early November)",
+   "sales_b": 6.744,
+   "sales_pct": 4.7,
+   "fees_m": 1400,
+   "fees_prior_m": 1343,
+   "fees_pct": 4.2,
+   "op_margin": 18.33,
+   "op_margin_bp": -23.1,
+   "occupancy_bp": -40.0,
+   "diluted_shares_m": 274.7,
+   "cash_b": 0.7
+  },
+  {
+   "quarter": "Q3 2025",
+   "fy": 2025,
+   "q": 3,
+   "published": "2025-11-04",
+   "source": "MA135",
+   "release": "Nov 4",
+   "release_time": "before the open on Nov 4: 8-K accepted 07:00 ET; conference call at 8:30 a.m. ET on Nov 4, the morning of the release",
+   "period_end": "2025-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 314,
+    "base_prior_m": 312,
+    "fran_m": 876,
+    "fran_prior_m": 812,
+    "inc_m": 148,
+    "inc_prior_m": 159,
+    "rev_total_m": 6489,
+    "rev_total_prior_m": 6255,
+    "opinc_m": 1180,
+    "opinc_prior_m": 944,
+    "diluted_shares_m": 272.5,
+    "cash_m": 700
+   },
+   "basis_note": "as reported on both sides (page A-1, 'Reported 2025 vs. 2024'); three months ended September 30, 2025 and September 30, 2024 (92 days each); total revenues include cost reimbursement revenue ($4,760M against $4,617M); the company's adjusted total revenues $1,729M against $1,638M and adjusted operating income $1,119M against $1,017M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $16.0 billion and cash and equivalents totaled $0.7 billion, compared to $14.4 billion in debt and $0.4 billion of cash and equivalents at year-end 2024.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2024 third quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on November 4, 2025, the morning of the release",
+   "revpar_pct": 0.2,
+   "occupancy": 69.7,
+   "occupancy_pts": -1.4,
+   "eps_q": 2.67,
+   "eps_q_prior": 2.07,
+   "eps_note": "as reported: $2.67 against $2.07 (272.5 million diluted shares against 282.4 million); the company's adjusted diluted EPS, $2.47 against $2.26, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses, and restructuring and merger-related recoveries/charges, and other expenses.'",
+   "ww_revpar_note": "In the 2025 third quarter, worldwide RevPAR increased 0.5 percent (a 1.3 percent increase using actual dollars) compared to the 2024 third quarter.",
+   "cash_return_text": "The company repurchased 3.0 million shares of common stock in the 2025 third quarter for $0.8 billion. Year-to-date through October 30, the company has repurchased 9.7 million shares for $2.6 billion.",
+   "next_print": "Q4 2025 print (mid-February)",
+   "sales_b": 6.489,
+   "sales_pct": 3.7,
+   "fees_m": 1338,
+   "fees_prior_m": 1283,
+   "fees_pct": 4.3,
+   "op_margin": 18.18,
+   "op_margin_bp": 309.3,
+   "occupancy_bp": -140.0,
+   "diluted_shares_m": 272.5,
+   "cash_b": 0.7
+  },
+  {
+   "quarter": "Q4 2025",
+   "fy": 2025,
+   "q": 4,
+   "published": "2026-02-10",
+   "source": "MA136",
+   "release": "Feb 10",
+   "release_time": "before the open on Feb 10: 8-K accepted 07:00 ET; conference call at 8:30 a.m. ET on Feb 10, the morning of the release",
+   "period_end": "2025-12-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 343,
+    "base_prior_m": 333,
+    "fran_m": 843,
+    "fran_prior_m": 795,
+    "inc_m": 239,
+    "inc_prior_m": 206,
+    "rev_total_m": 6690,
+    "rev_total_prior_m": 6429,
+    "opinc_m": 777,
+    "opinc_prior_m": 752,
+    "diluted_shares_m": 269.4,
+    "cash_m": 400
+   },
+   "basis_note": "as reported on both sides (page A-1, '2025 vs. 2024'); three months ended December 31, 2025 and December 31, 2024 (92 days each); total revenues include cost reimbursement revenue ($4,857M against $4,704M); the company's adjusted total revenues $1,848M against $1,725M and adjusted operating income $1,155M against $1,072M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At year-end 2025, Marriott’s total debt was $16.2 billion and cash and equivalents totaled $0.4 billion, compared to $14.4 billion in debt and $0.4 billion of cash and equivalents at year-end 2024.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2024 fourth quarter (properties comparable in both years); 'In the 2025 fourth quarter, we reclassified amounts attributable to other expenses previously reported under the “General, administrative, and other” caption to the “Owned, leased, and other e'; the conference call was at 8:30 a.m. ET on February 10, 2026, the morning of the release",
+   "revpar_pct": 2.2,
+   "occupancy": 65.8,
+   "occupancy_pts": -0.9,
+   "eps_q": 1.65,
+   "eps_q_prior": 1.63,
+   "eps_note": "as reported: $1.65 against $1.63 (269.4 million diluted shares against 280.1 million); the company's adjusted diluted EPS, $2.58 against $2.45, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Adjusted results excluded cost reimbursement revenue, reimbursed expenses, restructuring and merger-related recoveries/charges, and other expenses, and impairment charges and expenses related to the Sonder termination.' 'Owned, leased, and other expense in the 2025 fourth quarter included $23 million of expenses related to the termination of our licensing agreement with Sonder Holdings Inc., which are excluded from our adjusted results.'",
+   "ww_revpar_note": "In the 2025 fourth quarter, worldwide RevPAR increased 1.9 percent (a 2.4 percent increase using actual dollars) compared to the 2024 fourth quarter.",
+   "cash_return_text": "The company repurchased 3.5 million shares of common stock in the 2025 fourth quarter for $1.0 billion. For full year 2025, Marriott repurchased 12.1 million shares for $3.3 billion. Year-to-date through February 6, the company has repurchased 1.1 million shares for $350 million.",
+   "next_print": "Q1 2026 print (early May)",
+   "sales_b": 6.69,
+   "sales_pct": 4.1,
+   "fees_m": 1425,
+   "fees_prior_m": 1334,
+   "fees_pct": 6.8,
+   "op_margin": 11.61,
+   "op_margin_bp": -8.3,
+   "occupancy_bp": -90.0,
+   "diluted_shares_m": 269.4,
+   "cash_b": 0.4,
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 9.51,
+    "eps_gaap": 9.51,
+    "revenue_usd_b": 26.186,
+    "diluted_shares_m": 273.6,
+    "raw": {
+     "rev_m": 26186,
+     "rev_prior_m": 25100,
+     "rev_adj_m": 26186,
+     "opinc_m": 4141,
+     "pretax_m": 3394,
+     "tax_m": 793,
+     "fees_m": 5438,
+     "fees_prior_m": 5170,
+     "cash_m": 400
+    },
+    "op_margin": 15.81,
+    "sales_growth": 4.3,
+    "fees_pct": 5.2,
+    "revpar_pct": 2.3,
+    "occupancy": 69.0,
+    "occupancy_pts": -0.4,
+    "other_expense_b": 0.747,
+    "tax_rate": 0.2336,
+    "cash_b": 0.4,
+    "groups": null,
+    "normalization_note": "FY25 $9.51 as reported (GAAP), the Q4 2025 release: it publishes no figure excluding only one-offs. Its adjusted diluted EPS, $5.00 (FY24 $10.02), excludes cost reimbursement revenue and reimbursed expenses, a timing effect, besides its named items (the 2018-2021 rule); revenues ($26,186M, including cost reimbursement revenue), operating income ($4,141M), income before income taxes ($3,394M) and the provision ($793M) as reported; the company's adjusted total revenues $6,997M and adjusted operating income $8M; fees are gross fee revenues $5,438M against $5,170M; RevPAR is the full-year comparable company-operated US & Canada row (constant dollars); no segment revenue table in this release",
+    "op_margin_note": "FY25 operating income $4,141M / revenues $26,186M (Q4 2025 release)",
+    "tax_note": "FY25 provision $793M on $3,394M",
+    "doc": "Q4 2025 release"
+   }
+  },
+  {
+   "quarter": "Q1 2026",
+   "fy": 2026,
+   "q": 1,
+   "published": "2026-05-06",
+   "source": "MA138",
+   "release": "May 6",
+   "release_time": "before the open on May 6: 8-K accepted 07:00 ET; conference call at 8:30 a.m. ET on May 6, the morning of the release",
+   "period_end": "2026-03-31",
+   "weeks": null,
+   "raw": {
+    "base_m": 339,
+    "base_prior_m": 325,
+    "fran_m": 872,
+    "fran_prior_m": 746,
+    "inc_m": 222,
+    "inc_prior_m": 204,
+    "rev_total_m": 6654,
+    "rev_total_prior_m": 6263,
+    "opinc_m": 1064,
+    "opinc_prior_m": 948,
+    "diluted_shares_m": 266.8,
+    "cash_m": 500
+   },
+   "basis_note": "as reported on both sides (page A-1, '2026 vs. 2025'); three months ended March 31, 2026 and March 31, 2025 (90 days each); total revenues include cost reimbursement revenue ($4,844M against $4,655M); the company's adjusted total revenues $1,810M against $1,608M and adjusted operating income $1,158M against $1,016M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $16.5 billion and cash and equivalents totaled $0.5 billion, compared to $16.2 billion in debt and $0.4 billion of cash and equivalents at year-end 2025.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2025 first quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on May 6, 2026, the morning of the release",
+   "revpar_pct": 4.6,
+   "occupancy": 67.6,
+   "occupancy_pts": 0.4,
+   "eps_q": 2.43,
+   "eps_q_prior": 2.39,
+   "eps_note": "as reported: $2.43 against $2.39 (266.8 million diluted shares against 277.7 million); the company's adjusted diluted EPS, $2.72 against $2.32, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'First quarter 2026 Adjusted results excluded cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges, and other expenses, adjustments related to the termination of our licensing agreement with Sonder Holdings Inc., and an adjustment to a gain on an asset disposition.'",
+   "ww_revpar_note": "In the 2026 first quarter, worldwide RevPAR increased 4.2 percent (a 6.0 percent increase using actual dollars) compared to the 2025 first quarter.",
+   "cash_return_text": "The company repurchased 2.1 million shares of common stock in the 2026 first quarter for $0.7 billion. Year-to-date through April 29, the company has repurchased 3.1 million shares for $1.1 billion.",
+   "next_print": "Q2 2026 print (early August)",
+   "sales_b": 6.654,
+   "sales_pct": 6.2,
+   "fees_m": 1433,
+   "fees_prior_m": 1275,
+   "fees_pct": 12.4,
+   "op_margin": 15.99,
+   "op_margin_bp": 85.4,
+   "occupancy_bp": 40.0,
+   "diluted_shares_m": 266.8,
+   "cash_b": 0.5
+  },
+  {
+   "quarter": "Q2 2026",
+   "fy": 2026,
+   "q": 2,
+   "published": "2026-08-03",
+   "source": "MA139",
+   "release": "Aug 3",
+   "release_time": "before the open on Aug 3: 8-K accepted 07:00 ET; conference call at 8:30 a.m. ET on Aug 3, the morning of the release",
+   "period_end": "2026-06-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 343,
+    "base_prior_m": 340,
+    "fran_m": 1023,
+    "fran_prior_m": 860,
+    "inc_m": 212,
+    "inc_prior_m": 200,
+    "rev_total_m": 7071,
+    "rev_total_prior_m": 6744,
+    "opinc_m": 1229,
+    "opinc_prior_m": 1236,
+    "diluted_shares_m": 264.5,
+    "cash_m": 500
+   },
+   "basis_note": "as reported on both sides (page A-1, '2026 vs. 2025'); three months ended June 30, 2026 and June 30, 2025 (91 days each); total revenues include cost reimbursement revenue ($5,058M against $4,932M); the company's adjusted total revenues $2,013M against $1,812M and adjusted operating income $1,329M against $1,186M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $16.9 billion and cash and equivalents totaled $0.5 billion, compared to $16.2 billion in debt and $0.4 billion of cash and equivalents at year-end 2025.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2025 second quarter (properties comparable in both years); the conference call was at 8:30 a.m. ET on August 3, 2026, the morning of the release",
+   "revpar_pct": 6.7,
+   "occupancy": 73.5,
+   "occupancy_pts": 0.5,
+   "eps_q": 2.9,
+   "eps_q_prior": 2.78,
+   "eps_note": "as reported: $2.90 against $2.78 (264.5 million diluted shares against 274.7 million); the company's adjusted diluted EPS, $3.19 against $2.65, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Second quarter 2026 Adjusted results excluded cost reimbursement revenue, reimbursed expenses, restructuring and merger-related recoveries/charges, and other expenses, and certain impairment charges.' 'The increase was driven by a $68 million impairment charge recorded in connection with our sale of a U.S. & Canada hotel, which is excluded from our Adjusted results.'",
+   "ww_revpar_note": "In the 2026 second quarter, worldwide RevPAR increased 3.4 percent (a 3.9 percent increase using actual dollars) compared to the 2025 second quarter.",
+   "cash_return_text": "The company repurchased 3.0 million shares of common stock in the 2026 second quarter for $1.1 billion. Year-to-date through July 29, the company has repurchased 6.2 million shares for $2.2 billion.",
+   "next_print": "Q3 2026 print (early November)",
+   "sales_b": 7.071,
+   "sales_pct": 4.8,
+   "fees_m": 1578,
+   "fees_prior_m": 1400,
+   "fees_pct": 12.7,
+   "op_margin": 17.38,
+   "op_margin_bp": -94.7,
+   "occupancy_bp": 50.0,
+   "diluted_shares_m": 264.5,
+   "cash_b": 0.5
+  },
+  {
+   "quarter": "Q3 2026",
+   "fy": 2026,
+   "q": 3,
+   "published": "2026-11-02",
+   "source": "MA141",
+   "release": "Nov 2",
+   "release_time": "before the open on Nov 2: 8-K accepted 07:00 ET; conference call at 8:00 a.m. ET on Nov 2, the morning of the release",
+   "period_end": "2026-09-30",
+   "weeks": null,
+   "raw": {
+    "base_m": 334,
+    "base_prior_m": 314,
+    "fran_m": 1007,
+    "fran_prior_m": 876,
+    "inc_m": 181,
+    "inc_prior_m": 148,
+    "rev_total_m": 7005,
+    "rev_total_prior_m": 6489,
+    "opinc_m": 1274,
+    "opinc_prior_m": 1180,
+    "diluted_shares_m": 261.2,
+    "cash_m": 500
+   },
+   "basis_note": "as reported on both sides (page A-1, '2026 vs. 2025'); three months ended September 30, 2026 and September 30, 2025 (92 days each); total revenues include cost reimbursement revenue ($5,080M against $4,760M); the company's adjusted total revenues $1,925M against $1,729M and adjusted operating income $1,267M against $1,119M (the non-GAAP schedule); fees are gross fee revenues (base management, franchise and incentive), as reported, before contract investment amortization; cash is the release's rounded figure: 'At the end of the quarter, Marriott’s total debt was $16.8 billion and cash and equivalents totaled $0.5 billion, compared to $16.2 billion in debt and $0.4 billion of cash and equivalents at year-end 2025.'; RevPAR from the first table of the Key Lodging Statistics, 'Comparable Company-Operated US & Canada Properties', in constant dollars, its 'US & Canada - All' row, against the 2025 third quarter (properties comparable in both years); the conference call was at 8:00 a.m. ET on November 2, 2026, the morning of the release",
+   "revpar_pct": 9.9,
+   "occupancy": 72.2,
+   "occupancy_pts": 2.4,
+   "eps_q": 3.04,
+   "eps_q_prior": 2.67,
+   "eps_note": "as reported: $3.04 against $2.67 (261.2 million diluted shares against 272.5 million); the company's adjusted diluted EPS, $3.02 against $2.47, excludes cost reimbursement revenue and reimbursed expenses (a timing effect in every quarter, not a one-off), so no figure excluding only one-offs is published; the release: 'Third quarter 2026 Adjusted results excluded cost reimbursement revenue, reimbursed expenses, and certain impairment charges.'",
+   "ww_revpar_note": "In the 2026 third quarter, worldwide RevPAR increased 6.5 percent (a 6.4 percent increase using actual dollars) compared to the 2025 third quarter.",
+   "cash_return_text": "The company repurchased 3.5 million shares of common stock in the 2026 third quarter for $1.3 billion. Year-to-date through October 28, the company has repurchased 9.6 million shares for $3.4 billion.",
+   "next_print": "Q4 2026 print (early February)",
+   "sales_b": 7.005,
+   "sales_pct": 8.0,
+   "fees_m": 1522,
+   "fees_prior_m": 1338,
+   "fees_pct": 13.8,
+   "op_margin": 18.19,
+   "op_margin_bp": 0.2,
+   "occupancy_bp": 240.0,
+   "diluted_shares_m": 261.2,
+   "cash_b": 0.5
   }
  ],
  "guides": [
@@ -9407,6 +11472,848 @@
    "doc": "Q3 2021 release",
    "words": "Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the impact of this unprecedented situation on its future results, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.",
    "note": "no RevPAR, fee, EPS or operating income outlook for 2021 and nothing on the next year; net rooms growth 'approximately 3.5 percent' in 2021; full-year 2021 investment spending $525 million to $550 million (down from $575-625M a quarter earlier); business transient demand 'picked up again in October, a trend we expect to continue'"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-02-15",
+   "source": "MA112",
+   "doc": "Q4 2021 release",
+   "note": "no RevPAR, fee, EPS or operating income outlook for 2022; the release's COVID-19 section: 'Due to the numerous uncertainties associated with COVID-19, Marriott cannot presently estimate the impact of this unprecedented situation on its future results, which is highly dependent on the severity and duration of the pandemic and its impacts, but expects that COVID-19 will continue to be material to the company’s results.'; the CEO: 'For 2022, we expect gross rooms growth approaching 5 percent and deletions of 1 to 1.5 percent, resulting in anticipated net rooms growth of 3.5 to 4 percent.' and 'Assuming no meaningful setback in the global recovery, we could begin returning cash to shareholders later in 2022.'; 'Marriott anticipates that full year 2022 investment spending will total $600 million to $700 million.'"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-05-04",
+   "source": "MA114",
+   "doc": "Q1 2022 release",
+   "note": "no fee, EPS or operating income outlook for 2022, and no COVID-19 section (the Q4 2021 release's is not repeated); the CEO: 'RevPAR in the U.S. & Canada for the remaining quarters of this year is expected to be roughly flat with 2019 levels.' and 'For 2022, we still expect gross rooms growth approaching 5 percent and deletions of 1 to 1.5 percent, resulting in anticipated net rooms growth of 3.5 to 4 percent.'; 'Marriott anticipates that full year 2022 investment spending will total $600 million to $700 million.'"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-08-02",
+   "source": "MA115",
+   "doc": "Q2 2022 release",
+   "eps_guide": [
+    6.33,
+    6.59
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for third quarter and full year 2022 do not include cost reimbursement revenue, reimbursed expenses, or restructuring, merger-related charges, and other expenses, which the company cannot accurately forecast, and which may be significant, and do not reflect any asset sales that may occur during the remainder of the year. Adjusted EPS - diluted for full year 2022 excludes impairments, gains on investees’ property sales, and gains on asset dispositions reported in the first half of 2022. See page A-3 for the Adjusted EPS - diluted calculation for the first half of 2022.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     3930,
+     4030
+    ],
+    "pct": null,
+    "prior_m": 2694,
+    "prior_label": "FY21",
+    "prior_source": "MA112",
+    "derived_pct": [
+     45.88,
+     49.59
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR (Full Year 2022 vs Full Year 2019): Worldwide -6% to -3%, U.S. & Canada -3% to flat, International -13% to -10%",
+   "q_guide": {
+    "quarter": "Q3 2022",
+    "fees_m": [
+     1010,
+     1050
+    ],
+    "prior_label": "Q3 2021",
+    "eps": [
+     1.59,
+     1.69
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR (Third Quarter 2022 vs Third Quarter 2019): Worldwide flat to +3%, U.S. & Canada +1% to +4%, International -3% to flat",
+    "prior_m": 776,
+    "prior_source": "MA111",
+    "derived_pct": [
+     30.15,
+     35.31
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Gross Rooms Growth Approaching 5%; Deletions 1.5% to 2%; Net rooms growth 3% to 3.5%; Owned, leased, and other revenue, net of direct expenses Approx. $60 (Q3 2022) and Approx. $285 (FY2022); General, administrative, and other expenses $235 to $230 (Q3 2022) and $900 to $890 (FY2022); Adjusted EBITDA $927 to $972 (Q3 2022) and $3,682 to $3,792 (FY2022); Investment spending $600 to $650; Capital return to shareholders More than $2,200"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-11-03",
+   "source": "MA116",
+   "doc": "Q3 2022 release",
+   "eps_guide": [
+    6.51,
+    6.58
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for fourth quarter and full year 2022 do not include cost reimbursement revenue, reimbursed expenses, or restructuring, merger-related charges, and other expenses, each of which the company cannot forecast with sufficient accuracy, and which may be significant, and do not reflect any asset sales that may occur during the remainder of the year. Adjusted EPS – diluted for full year 2022 excludes impairments, gains on investees’ property sales, gains on asset dispositions, and special tax items reported in the first three quarters of 2022. See page A-3 for the Adjusted EPS – diluted calculation for the first three quarters of 2022.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     4017,
+     4037
+    ],
+    "pct": null,
+    "prior_m": 2694,
+    "prior_label": "FY21",
+    "prior_source": "MA112",
+    "derived_pct": [
+     49.11,
+     49.85
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR (Full Year 2022 vs Full Year 2019): Worldwide -5% to -3%, U.S. & Canada -2% to flat, International -13% to -11%",
+   "q_guide": {
+    "quarter": "Q4 2022",
+    "fees_m": [
+     1070,
+     1090
+    ],
+    "prior_label": "Q4 2021",
+    "eps": [
+     1.77,
+     1.84
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR (Fourth Quarter 2022 vs Fourth Quarter 2019): Worldwide +2% to +4%, U.S. & Canada +4% to +6%, International -2% to flat",
+    "prior_m": 831,
+    "prior_source": "MA112",
+    "derived_pct": [
+     28.76,
+     31.17
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Gross Rooms Growth Approx. 4.5%; Deletions Approx. 1.5%; Net rooms growth Approx. 3.0%; Owned, leased, and other revenue, net of direct expenses Approx. $77 (Q4 2022) and Approx. $269 (FY2022); General, administrative, and other expenses $235 to $225 (Q4 2022) and $890 to $880 (FY2022); Adjusted EBITDA $1,007 to $1,037 (Q4 2022) and $3,770 to $3,800 (FY2022); Investment spending Approx. $500; Capital return to shareholders More than $2,700; the outlook's words: 'The change in expected gross rooms growth compared to the company’s prior guidance primarily reflects lengthened construction timelines in Greater China resulting from extended lockdowns.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-02-14",
+   "source": "MA118",
+   "doc": "Q4 2022 release",
+   "eps_guide": [
+    7.23,
+    7.91
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for first quarter and full year 2023 do not include cost reimbursement revenue, reimbursed expenses, restructuring, merger-related charges, and other expenses, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     4325,
+     4555
+    ],
+    "pct": null,
+    "prior_m": 4078,
+    "prior_label": "FY22",
+    "prior_source": "MA118",
+    "derived_pct": [
+     6.06,
+     11.7
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR growth (Full Year 2023 vs Full Year 2022): Worldwide 6% to 11%, U.S. & Canada 5% to 9%, International 12% to 18%",
+   "q_guide": {
+    "quarter": "Q1 2023",
+    "fees_m": [
+     1045,
+     1065
+    ],
+    "prior_label": "Q1 2022",
+    "eps": [
+     1.82,
+     1.88
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR growth (First Quarter 2023 vs First Quarter 2022): Worldwide 30% to 32%, U.S. & Canada 25% to 27%, International 47% to 49%",
+    "prior_m": 815,
+    "prior_source": "MA114",
+    "derived_pct": [
+     28.22,
+     30.67
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Gross Rooms Growth Approx. 5.5%; Deletions 1% to 1.5%; Net rooms growth 4% to 4.5%; Owned, leased, and other revenue, net of direct expenses Approx. $60 (Q1 2023) and $265 to $285 (FY2023); General, administrative, and other expenses $205 to $200 (Q1 2023) and $935 to $915 (FY2023); Adjusted EBITDA $980 to $1,005 (Q1 2023) and $4,030 to $4,300 (FY2023); the outlook's words: 'Results in the first quarter are expected to benefit significantly from the easier comparison to the 2022 quarter when the emergence of Omicron depressed lodging demand. Roughly halfway through the quarter, global booking trends remain robust. In January, worldwide RevPAR was up 51.6 percent year over year.' 'Given short-term booking windows and a high level of macroeconomic uncertainty, there is less visibility in forecasting the company’s financial performance for full year 2023. As a result, the company is providing a broad range of potential full year RevPAR and other key metrics in the following tables. The high end of the range reflects relatively steady global economic conditions throughout 2023, with continued resilience of travel demand across customer segments and markets. The low end of the range reflects a meaningful softening of the global economy beginning in the second quarter with worldwide RevPAR roughly flat compared to 2022 in the second half of the year.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-05-02",
+   "source": "MA120",
+   "doc": "Q1 2023 release",
+   "eps_guide": [
+    7.97,
+    8.42
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for second quarter and full year 2023 do not include cost reimbursement revenue, reimbursed expenses, merger-related charges and other expenses, special tax items, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Adjusted EPS – diluted for full year 2023 excludes a special tax item of $100 million reported in the first quarter of 2023. See page A-2 for the Adjusted EPS – diluted calculation for the first quarter of 2023.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     4600,
+     4750
+    ],
+    "pct": null,
+    "prior_m": 4078,
+    "prior_label": "FY22",
+    "prior_source": "MA118",
+    "derived_pct": [
+     12.8,
+     16.48
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2023 vs Full Year 2022): Worldwide 10% to 13%, U.S. & Canada 6% to 9%, International 22% to 25%",
+   "q_guide": {
+    "quarter": "Q2 2023",
+    "fees_m": [
+     1205,
+     1225
+    ],
+    "prior_label": "Q2 2022",
+    "eps": [
+     2.09,
+     2.15
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (Second Quarter 2023 vs Second Quarter 2022): Worldwide 10% to 12%, U.S. & Canada 5% to 7%, International 27% to 29%",
+    "prior_m": 1073,
+    "prior_source": "MA115",
+    "derived_pct": [
+     12.3,
+     14.17
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Gross Rooms Growth Approx. 5.5%; Deletions 1% to 1.5%; Net rooms growth 4% to 4.5%; Owned, leased, and other revenue, net of direct expenses Approx. $80 (Q2 2023) and $300 to $310 (FY2023); General, administrative, and other expenses $250 to $245 (Q2 2023) and $935 to $915 (FY2023); Adjusted EBITDA $1,140 to $1,165 (Q2 2023) and $4,360 to $4,540 (FY2023); Investment Spending $850 to $1,000; Capital Return to Shareholders $3,600 to $4,100; the outlook's words: 'The company is raising its guidance for full year 2023. One month into the second quarter, global booking trends remain robust.' 'Given short-term booking windows and a high level of macroeconomic uncertainty, there is less visibility in forecasting the company’s financial performance for the second half of 2023.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-08-01",
+   "source": "MA121",
+   "doc": "Q2 2023 release",
+   "eps_guide": [
+    8.36,
+    8.65
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for third quarter and full year 2023 do not include cost reimbursement revenue, reimbursed expenses, merger-related charges and other expenses, special tax items, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Adjusted EPS – diluted for full year 2023 excludes a special tax item of $100 million reported in the first half of 2023. See page A-3 for the Adjusted EPS – diluted calculation for the first half of 2023.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     4730,
+     4820
+    ],
+    "pct": null,
+    "prior_m": 4078,
+    "prior_label": "FY22",
+    "prior_source": "MA118",
+    "derived_pct": [
+     15.99,
+     18.2
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2023 vs Full Year 2022): Worldwide 12% to 14%, U.S. & Canada 7% to 9%, International 28% to 30%",
+   "q_guide": {
+    "quarter": "Q3 2023",
+    "fees_m": [
+     1185,
+     1210
+    ],
+    "prior_label": "Q3 2022",
+    "eps": [
+     2.0,
+     2.09
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (Third Quarter 2023 vs Third Quarter 2022): Worldwide 6% to 8%, U.S. & Canada 2% to 4%, International 17% to 19%",
+    "prior_m": 1059,
+    "prior_source": "MA116",
+    "derived_pct": [
+     11.9,
+     14.26
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net Rooms Growth 6.4% to 6.7%; Owned, leased, and other revenue, net of direct expenses Approx. $65 (Q3 2023) and $330 to $335 (FY2023); General, administrative, and other expenses $250 to $240 (Q3 2023) and $935 to $915 (FY2023); Adjusted EBITDA $1,105 to $1,140 (Q3 2023) and $4,535 to $4,650 (FY2023); Investment Spending $900 to $1,000; Capital Return to Shareholders $4,100 to $4,500; the outlook's words: 'The company’s updated guidance for full year 2023 reflects relatively steady global economic conditions through the remainder of 2023, with continued resilience in travel demand. RevPAR growth is expected to remain higher internationally than in the U.S. & Canada, where there has been a return to more normal seasonal patterns, and year-over-year RevPAR growth is stabilizing.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-11-02",
+   "source": "MA123",
+   "doc": "Q3 2023 release",
+   "eps_guide": [
+    8.5,
+    8.59
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for fourth quarter and full year 2023 do not include cost reimbursement revenue, reimbursed expenses, merger-related charges and other expenses, special tax items, or any additional asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Adjusted EPS – diluted for full year 2023 excludes a special tax item of $100 million and an asset sale gain of $24 million reported in the first three quarters of 2023. See page A-3 for the Adjusted EPS – diluted calculation for the first three quarters of 2023.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     4765,
+     4795
+    ],
+    "pct": null,
+    "prior_m": 4078,
+    "prior_label": "FY22",
+    "prior_source": "MA118",
+    "derived_pct": [
+     16.85,
+     17.58
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2023 vs Full Year 2022): Worldwide 14% to 15%, U.S. & Canada 8% to 9%, International 31% to 32%",
+   "q_guide": {
+    "quarter": "Q4 2023",
+    "fees_m": [
+     1185,
+     1215
+    ],
+    "prior_label": "Q4 2022",
+    "eps": [
+     2.04,
+     2.13
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (Fourth Quarter 2023 vs Fourth Quarter 2022): Worldwide 6% to 7.5%, U.S. & Canada 3% to 4%, International 14% to 16%",
+    "prior_m": 1131,
+    "prior_source": "MA118",
+    "derived_pct": [
+     4.77,
+     7.43
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net Rooms Growth 4.2% to 4.5%; Owned, leased, and other revenue, net of direct expenses $80 to $85 (Q4 2023) and $328 to $333 (FY2023); General, administrative, and other expenses Approx. $255 (Q4 2023) and Approx. $935 (FY2023); Adjusted EBITDA $1,115 to $1,150 (Q4 2023) and $4,574 to $4,609 (FY2023); Investment Spending $900 to $950; Capital Return to Shareholders $4,300 to $4,500; the outlook's words: 'Marriott anticipates that the 37,000 rooms related to its deal with MGM will now be added to its distribution in early 2024. As such, the company now expects full year 2023 net rooms growth of 4.2 to 4.5 percent, higher than its August 2, 2023 guidance when excluding the MGM rooms.'"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-02-13",
+   "source": "MA124",
+   "doc": "Q4 2023 release",
+   "eps_guide": [
+    9.18,
+    9.52
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for first quarter and full year 2024 do not include cost reimbursement revenue, reimbursed expenses, merger-related charges and other expenses, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5120,
+     5220
+    ],
+    "pct": null,
+    "prior_m": 4824,
+    "prior_label": "FY23",
+    "prior_source": "MA124",
+    "derived_pct": [
+     6.14,
+     8.21
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2024 vs Full Year 2023): Worldwide 3% to 5%",
+   "q_guide": {
+    "quarter": "Q1 2024",
+    "fees_m": [
+     1190,
+     1205
+    ],
+    "prior_label": "Q1 2023",
+    "eps": [
+     2.12,
+     2.19
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (First Quarter 2024 vs First Quarter 2023): Worldwide 4% to 5%",
+    "prior_m": 1133,
+    "prior_source": "MA120",
+    "derived_pct": [
+     5.03,
+     6.35
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth 5.5% to 6%; Owned, leased, and other revenue, net of direct expenses $65 to $70 (Q1 2024) and $320 to $330 (FY2024); General, administrative, and other expenses $245 to $235 (Q1 2024) and $1,035 to $1,015 (FY2024); Adjusted EBITDA $1,120 to $1,150 (Q1 2024) and $4,880 to $5,010 (FY2024); Investment spending $1,000 to $1,200; Capital return to shareholders $4,100 to $4,300"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-05-01",
+   "source": "MA126",
+   "doc": "Q1 2024 release",
+   "eps_guide": [
+    9.31,
+    9.65
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for second quarter and full year 2024 do not include cost reimbursement revenue, reimbursed expenses, merger-related charges and other expenses, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5180,
+     5280
+    ],
+    "pct": null,
+    "prior_m": 4824,
+    "prior_label": "FY23",
+    "prior_source": "MA124",
+    "derived_pct": [
+     7.38,
+     9.45
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2024 vs Full Year 2023): Worldwide 3% to 5%",
+   "q_guide": {
+    "quarter": "Q2 2024",
+    "fees_m": [
+     1340,
+     1355
+    ],
+    "prior_label": "Q2 2023",
+    "eps": [
+     2.43,
+     2.48
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (Second Quarter 2024 vs Second Quarter 2023): Worldwide 4% to 5%",
+    "prior_m": 1250,
+    "prior_source": "MA121",
+    "derived_pct": [
+     7.2,
+     8.4
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth 5.5% to 6%; Owned, leased, and other revenue, net of direct expenses Approx. $90 (Q2 2024) and $335 to $345 (FY2024); General, administrative, and other expenses $258 to $253 (Q2 2024) and $1,040 to $1,020 (FY2024); Adjusted EBITDA $1,295 to $1,315 (Q2 2024) and $4,960 to $5,090 (FY2024); Investment spending $1,000 to $1,200; Capital return to shareholders $4,200 to $4,400"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-07-31",
+   "source": "MA127",
+   "doc": "Q2 2024 release",
+   "eps_guide": [
+    9.23,
+    9.4
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for third quarter and full year 2024 do not include cost reimbursement revenue, reimbursed expenses, merger-related charges and other expenses, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5130,
+     5180
+    ],
+    "pct": null,
+    "prior_m": 4824,
+    "prior_label": "FY23",
+    "prior_source": "MA124",
+    "derived_pct": [
+     6.34,
+     7.38
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2024 vs Full Year 2023): Worldwide 3% to 4%",
+   "q_guide": {
+    "quarter": "Q3 2024",
+    "fees_m": [
+     1275,
+     1290
+    ],
+    "prior_label": "Q3 2023",
+    "eps": [
+     2.27,
+     2.33
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (Third Quarter 2024 vs Third Quarter 2023): Worldwide 3% to 4%",
+    "prior_m": 1197,
+    "prior_source": "MA123",
+    "derived_pct": [
+     6.52,
+     7.77
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth 5.5% to 6%; Owned, leased, and other revenue, net of direct expenses Approx. $75 (Q3 2024) and $345 to $350 (FY2024); General, administrative, and other expenses $250 to $240 (Q3 2024) and $1,030 to $1,020 (FY2024); Adjusted EBITDA $1,225 to $1,250 (Q3 2024) and $4,950 to $5,015 (FY2024); Investment spending $1,000 to $1,200; Capital return to shareholders Approx. $4,300; the outlook's words: 'The company’s updated outlook includes a narrowing of the RevPAR growth range for full year 2024, primarily as a result of a weaker operating environment in Greater China, as well as marginally softer expectations in the U.S. & Canada.'"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-11-04",
+   "source": "MA129",
+   "doc": "Q3 2024 release",
+   "eps_guide": [
+    9.19,
+    9.27
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for fourth quarter and full year 2024 do not include cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges, or any asset sales that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5126,
+     5146
+    ],
+    "pct": null,
+    "prior_m": 4824,
+    "prior_label": "FY23",
+    "prior_source": "MA124",
+    "derived_pct": [
+     6.26,
+     6.67
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2024 vs Full Year 2023): Worldwide 3% to 4%",
+   "q_guide": {
+    "quarter": "Q4 2024",
+    "fees_m": [
+     1290,
+     1310
+    ],
+    "prior_label": "Q4 2023",
+    "eps": [
+     2.31,
+     2.39
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (Fourth Quarter 2024 vs Fourth Quarter 2023): Worldwide 2% to 3%",
+    "prior_m": 1244,
+    "prior_source": "MA124",
+    "derived_pct": [
+     3.7,
+     5.31
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth Approx. 6.5%; Owned, leased, and other revenue, net of direct expenses Approx. $95 (Q4 2024) and Approx. $346 (FY2024); General, administrative, and other expenses $275 to $265 (Q4 2024) and $1,060 to $1,050 (FY2024); Adjusted EBITDA $1,235 to $1,265 (Q4 2024) and $4,930 to $4,960 (FY2024); Investment spending $1,100 to $1,200; Capital return to shareholders Approx. $4,400"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-02-11",
+   "source": "MA130",
+   "doc": "Q4 2024 release",
+   "eps_guide": [
+    9.82,
+    10.19
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for first quarter and full year 2025 do not include cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges, or any potential asset sales or property or brand acquisitions that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5370,
+     5480
+    ],
+    "pct": null,
+    "prior_m": 5170,
+    "prior_label": "FY24",
+    "prior_source": "MA130",
+    "derived_pct": [
+     3.87,
+     6.0
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $RevPAR growth (Full Year 2025 vs Full Year 2024): Worldwide 2% to 4%",
+   "q_guide": {
+    "quarter": "Q1 2025",
+    "fees_m": [
+     1240,
+     1255
+    ],
+    "prior_label": "Q1 2024",
+    "eps": [
+     2.2,
+     2.26
+    ],
+    "revpar": "Comparable systemwide constant $RevPAR growth (First Quarter 2025 vs First Quarter 2024): Worldwide 3% to 4%",
+    "prior_m": 1210,
+    "prior_source": "MA126",
+    "derived_pct": [
+     2.48,
+     3.72
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth 4% to 5%; Owned, leased, and other revenue, net of direct expenses Approx. $55 (Q1 2025) and $345 to $355 (FY2025); General, administrative, and other expenses $255 to $245 (Q1 2025) and $985 to $965 (FY2025); Adjusted EBITDA $1,170 to $1,195 (Q1 2025) and $5,295 to $5,435 (FY2025); Effective tax rate Approx. 22% (Q1 2025) and Approx. 26% (FY2025); Investment spending $1,000 to $1,100; Capital return to shareholders Approx. $4,000"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-05-06",
+   "source": "MA132",
+   "doc": "Q1 2025 release",
+   "eps_guide": [
+    9.82,
+    10.19
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for second quarter and full year 2025 do not include cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges, income tax special items or any potential asset sales or property or brand acquisitions that may occur during the year (other than our planned acquisition of the citizenM brand, which we assume to occur in the second half of 2025), each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Adjusted EPS – diluted for full year 2025 excludes the benefit of an income tax special item of $71 million.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5365,
+     5475
+    ],
+    "pct": null,
+    "prior_m": 5170,
+    "prior_label": "FY24",
+    "prior_source": "MA130",
+    "derived_pct": [
+     3.77,
+     5.9
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR growth (Full Year 2025 vs. Full Year 2024): Worldwide 1.5% to 3.5%",
+   "q_guide": {
+    "quarter": "Q2 2025",
+    "fees_m": [
+     1380,
+     1395
+    ],
+    "prior_label": "Q2 2024",
+    "eps": [
+     2.57,
+     2.62
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR growth (Second Quarter 2025 vs. Second Quarter 2024): Worldwide 1.5% to 2.5%",
+    "prior_m": 1343,
+    "prior_source": "MA127",
+    "derived_pct": [
+     2.76,
+     3.87
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth Approaching 5%; Owned, leased, and other revenue, net of direct expenses Approx. $100 (Q2 2025) and $345 to $355 (FY2025); General, administrative, and other expenses $245 to $240 (Q2 2025) and $985 to $965 (FY2025); Adjusted EBITDA $1,370 to $1,390 (Q2 2025) and $5,285 to $5,425 (FY2025); Effective tax rate Approx. 27% (Q2 2025) and Approx. 26% (FY2025); Investment spending (including $355 million for citizenM) $1,355 to $1,455; Capital return to shareholders Approx. $4,000; the outlook's words: 'The Company’s updated outlook generally assumes the continuation of current booking trends. Compared to prior expectations, it incorporates somewhat softer expectations in the U.S. & Canada region.'"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-08-05",
+   "source": "MA133",
+   "doc": "Q2 2025 release",
+   "eps_guide": [
+    9.85,
+    10.08
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for third quarter and full year 2025 do not include cost reimbursement revenue, reimbursed expenses, restructuring and merger-related charges, income tax special items, or any potential asset sales or property or brand acquisitions that may occur during the year (other than our acquisition of the citizenM brand in the 2025 third quarter), each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Adjusted EPS – diluted for full year 2025 excludes the benefit of income tax special items of $74 million.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5365,
+     5420
+    ],
+    "pct": null,
+    "prior_m": 5170,
+    "prior_label": "FY24",
+    "prior_source": "MA130",
+    "derived_pct": [
+     3.77,
+     4.84
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR growth (Full Year 2025 vs. Full Year 2024): Worldwide 1.5% to 2.5%",
+   "q_guide": {
+    "quarter": "Q3 2025",
+    "fees_m": [
+     1310,
+     1325
+    ],
+    "prior_label": "Q3 2024",
+    "eps": [
+     2.31,
+     2.39
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR growth (Third Quarter 2025 vs. Third Quarter 2024): Worldwide flat to 1.0%",
+    "prior_m": 1283,
+    "prior_source": "MA129",
+    "derived_pct": [
+     2.1,
+     3.27
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth Approaching 5%; Owned, leased, and other revenue, net of direct expenses $80 to $90 (Q3 2025) and $360 to $370 (FY2025); General, administrative, and other expenses $245 to $240 (Q3 2025) and $985 to $965 (FY2025); Adjusted EBITDA $1,288 to $1,318 (Q3 2025) and $5,310 to $5,395 (FY2025); Investment spending (including $355 million for citizenM) $1,355 to $1,455; Capital return to shareholders Approx. $4,000; the outlook's words: 'The Company's updated outlook generally assumes the continuation of the current macro-economic environment.'"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-11-04",
+   "source": "MA135",
+   "doc": "Q3 2025 release",
+   "eps_guide": [
+    9.98,
+    10.06
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA and Adjusted EPS – diluted for fourth quarter and full year 2025 do not include cost reimbursement revenue, reimbursed expenses, restructuring and merger-related recoveries/charges, and other expenses, income tax special items, or any potential asset sales or property or brand acquisitions that may occur during the year (other than our acquisition of the citizenM brand in the 2025 third quarter), each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Adjusted EPS – diluted for full year 2025 excludes the benefit of income tax special items of $74 million.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5395,
+     5415
+    ],
+    "pct": null,
+    "prior_m": 5170,
+    "prior_label": "FY24",
+    "prior_source": "MA130",
+    "derived_pct": [
+     4.35,
+     4.74
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR growth (Full Year 2025 vs. Full Year 2024): Worldwide 1.5% to 2.5%",
+   "q_guide": {
+    "quarter": "Q4 2025",
+    "fees_m": [
+     1382,
+     1402
+    ],
+    "prior_label": "Q4 2024",
+    "eps": [
+     2.54,
+     2.62
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR growth (Fourth Quarter 2025 vs. Fourth Quarter 2024): Worldwide 1.0% to 2.0%",
+    "prior_m": 1334,
+    "prior_source": "MA130",
+    "derived_pct": [
+     3.6,
+     5.1
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth Approaching 5%; Owned, leased, and other revenue, net of direct expenses Approx. $98 (Q4 2025) and Approx. $370 (FY2025); General, administrative, and other expenses $261 to $251 (Q4 2025) and $985 to $975 (FY2025); Adjusted EBITDA $1,371 to $1,401 (Q4 2025) and $5,352 to $5,382 (FY2025); Investment spending (including $349 million for citizenM) Approx. $1,450; Capital return to shareholders Approx. $4,000; the outlook's words: 'The Company's updated outlook generally assumes the continuation of the current macro-economic environment.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-02-10",
+   "source": "MA136",
+   "doc": "Q4 2025 release",
+   "eps_guide": [
+    11.32,
+    11.57
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA, Adjusted EPS – diluted, and Adjusted effective tax rate for first quarter and full year 2026 do not include cost reimbursement revenue, reimbursed expenses, restructuring and merger-related recoveries/charges, and other expenses, income tax special items, or any potential asset sales or property or brand acquisitions that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5895,
+     5955
+    ],
+    "pct": null,
+    "prior_m": 5438,
+    "prior_label": "FY25",
+    "prior_source": "MA136",
+    "derived_pct": [
+     8.4,
+     9.51
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR growth (Full Year 2026 vs. Full Year 2025): Worldwide 1.5% to 2.5%",
+   "q_guide": {
+    "quarter": "Q1 2026",
+    "fees_m": [
+     1365,
+     1380
+    ],
+    "prior_label": "Q1 2025",
+    "eps": [
+     2.5,
+     2.55
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR growth (First Quarter 2026 vs. First Quarter 2025): Worldwide 1.0% to 2.0%",
+    "prior_m": 1275,
+    "prior_source": "MA132",
+    "derived_pct": [
+     7.06,
+     8.24
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth 4.5% to 5%; Owned, leased, and other revenue, net of owned, leased, and other expense Approx. $15 (Q1 2026) and $230 to $240 (FY2026); General and administrative expenses $215 to $210 (Q1 2026) and $895 to $875 (FY2026); Adjusted EBITDA $1,305 to $1,325 (Q1 2026) and $5,840 to $5,930 (FY2026); Adjusted effective tax rate Approx. 24.5% (Q1 2026) and 26.0% to 26.5% (FY2026); Investment spending $1,000 to $1,100; Capital return to shareholders Over $4,300; the outlook's words: 'The Company's updated outlook generally assumes the continuation of the current macro-economic environment. The outlook includes around a 35 percent increase in the co-branded credit card fees that Marriott recognizes in franchise fees, primarily reflecting expected strong growth in spending across our global co-branded card portfolio and an increase in the royalty rate associated with the payments received from the credit card companies that Marriott recognizes in franchise fees. The outlook does not include any impact from the renegotiation of our U.S. co-branded cards, as those discussions are still ongoing.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-05-06",
+   "source": "MA138",
+   "doc": "Q1 2026 release",
+   "eps_guide": [
+    11.38,
+    11.63
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA, Adjusted EPS – diluted, and Adjusted effective tax rate for second quarter and full year 2026 do not include cost reimbursement revenue, reimbursed expenses, and restructuring and merger-related charges, and other expenses, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Our outlook includes the impact of our planned sale of a U.S. & Canada hotel (but adjusted for the related expected impairment charge of approximately $65 million to $70 million), which we assume will occur later in the 2026 second quarter, as well as our planned investment in Lefay, which we assume will occur later this year. Our outlook excludes any other potential asset sales or property or brand acquisitions that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. In addition, our full year 2026 outlook excludes the first quarter 2026 adjustments related to the Sonder termination of $2 million and adjustment to a gain on an asset disposition of $(8) million.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     5925,
+     5985
+    ],
+    "pct": null,
+    "prior_m": 5438,
+    "prior_label": "FY25",
+    "prior_source": "MA136",
+    "derived_pct": [
+     8.96,
+     10.06
+    ]
+   },
+   "fy_display": "Comparable systemwide constant $ RevPAR growth (Full Year 2026 vs. Full Year 2025): Worldwide 2.0% to 3.0%",
+   "q_guide": {
+    "quarter": "Q2 2026",
+    "fees_m": [
+     1538,
+     1553
+    ],
+    "prior_label": "Q2 2025",
+    "eps": [
+     2.99,
+     3.06
+    ],
+    "revpar": "Comparable systemwide constant $ RevPAR growth (Second Quarter 2026 vs. Second Quarter 2025): Worldwide 1.5% to 2.5%",
+    "prior_m": 1400,
+    "prior_source": "MA133",
+    "derived_pct": [
+     9.86,
+     10.93
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth 4.5% to 5%; Owned, leased, and other revenue, net of owned, leased, and other expense Approx. $60 (Q2 2026) and $215 to $225 (FY2026); General and administrative expenses $230 to $220 (Q2 2026) and $895 to $875 (FY2026); Adjusted EBITDA $1,525 to $1,550 (Q2 2026) and $5,880 to $5,970 (FY2026); Adjusted effective tax rate Approx. 26.5% (Q2 2026) and 26.0% to 26.5% (FY2026); Investment spending $1,050 to $1,150; Capital return to shareholders Over $4,400; the outlook's words: 'The company's updated outlook assumes continued impact from the conflict in the Middle East and continued travel disruption, primarily impacting the Middle East region through the end of the year. The outlook does not include any impact from the renegotiation of our U.S. co-branded cards, as those discussions are still ongoing.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-08-03",
+   "source": "MA139",
+   "doc": "Q2 2026 release",
+   "eps_guide": [
+    11.64,
+    11.81
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA, Adjusted EPS – diluted, and Adjusted effective tax rate for third quarter and full year 2026 do not include cost reimbursement revenue, reimbursed expenses, and restructuring and merger-related recoveries/charges, and other expenses, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Our outlook includes the impact of our sale of a U.S. & Canada hotel and our investment in Lefay, each of which occurred in the 2026 second quarter. Our outlook excludes any other potential asset sales or property or brand acquisitions that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. In addition, our full year 2026 outlook excludes the 2026 first half adjustments related to the Sonder termination of $2 million, an adjustment to a gain on an asset disposition of $(8) million, and an impairment charge of $(68) million recorded in connection with our sale of a U.S. & Canada hotel.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     6025,
+     6055
+    ],
+    "pct": null,
+    "prior_m": 5438,
+    "prior_label": "FY25",
+    "prior_source": "MA136",
+    "derived_pct": [
+     10.79,
+     11.35
+    ]
+   },
+   "fy_display": "RevPAR (Full Year 2026 vs. Full Year 2025): Worldwide RevPAR growth 3.0% to 3.5%",
+   "q_guide": {
+    "quarter": "Q3 2026",
+    "fees_m": [
+     1474,
+     1483
+    ],
+    "prior_label": "Q3 2025",
+    "eps": [
+     2.74,
+     2.82
+    ],
+    "revpar": "RevPAR (Third Quarter 2026 vs. Third Quarter 2025): Worldwide RevPAR growth 3.5% to 4.0%",
+    "prior_m": 1338,
+    "prior_source": "MA135",
+    "derived_pct": [
+     10.16,
+     10.84
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth Low end of 4.5% to 5%; Owned, leased, and other revenue, net of owned, leased, and other expense $30 to $40 (Q3 2026) and $175 to $185 (FY2026); General and administrative expenses $220 to $210 (Q3 2026) and $895 to $875 (FY2026); Adjusted EBITDA $1,439 to $1,468 (Q3 2026) and $5,965 to $6,025 (FY2026); Adjusted effective tax rate Approx. 26.7% (Q3 2026) and 26.0% to 26.5% (FY2026); Investment spending $1,250 to $1,350; Capital return to shareholders Over $4,500; the outlook's words: 'The company's updated outlook generally assumes the continuation of the current macroeconomic environment. The outlook includes the expected partial year incremental impact of the new terms of our recently executed agreements with JPMorgan Chase and American Express for our U.S. co-branded credit card program.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-11-02",
+   "source": "MA141",
+   "doc": "Q3 2026 release",
+   "eps_guide": [
+    12.07,
+    12.14
+   ],
+   "eps_guide_note": "adjusted ('Adjusted EPS – diluted'): 'Adjusted EBITDA, Adjusted EPS – diluted, and Adjusted effective tax rate for fourth quarter and full year 2026 do not include cost reimbursement revenue, reimbursed expenses, and restructuring and merger-related recoveries/charges, and other expenses, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. Our outlook includes the impact of our sale of a U.S. & Canada hotel and our investment in Lefay, each of which occurred in the 2026 second quarter, and our planned sale of a U.S. & Canada hotel, which we assume will occur in the 2026 fourth quarter. Our outlook excludes any other potential asset sales or property or brand acquisitions that may occur during the year, each of which the company cannot forecast with sufficient accuracy and without unreasonable efforts, and which may be significant. In addition, our full year 2026 outlook excludes the adjustments from the 2026 first three quarters related to the Sonder termination of $2 million, an adjustment to a gain on an asset disposition of $(8) million, and asset impairment charges of $(74) million.'; so it compares with the company's adjusted EPS, not the reported EPS of the prints",
+   "fy_fees": {
+    "level_m": [
+     6137,
+     6145
+    ],
+    "pct": null,
+    "prior_m": 5438,
+    "prior_label": "FY25",
+    "prior_source": "MA136",
+    "derived_pct": [
+     12.85,
+     13.0
+    ]
+   },
+   "fy_display": "RevPAR (Full Year 2026 vs. Full Year 2025): Worldwide RevPAR growth 4.5% to 5.0%",
+   "q_guide": {
+    "quarter": "Q4 2026",
+    "fees_m": [
+     1604,
+     1612
+    ],
+    "prior_label": "Q4 2025",
+    "eps": [
+     3.14,
+     3.21
+    ],
+    "revpar": "RevPAR (Fourth Quarter 2026 vs. Fourth Quarter 2025): Worldwide RevPAR growth 4.5% to 5.0%",
+    "prior_m": 1425,
+    "prior_source": "MA136",
+    "derived_pct": [
+     12.56,
+     13.12
+    ]
+   },
+   "note": "no fee growth percentage stated (the dollar ranges are read against the year-ago periods' own releases); Net rooms growth Low end of 4.5% to 5%; Owned, leased, and other revenue, net of owned, leased, and other expense $47 to $52 (Q4 2026) and $170 to $175 (FY2026); General and administrative expenses $237 to $227 (Q4 2026) and $890 to $880 (FY2026); Adjusted EBITDA $1,573 to $1,596 (Q4 2026) and $6,075 to $6,098 (FY2026); Adjusted effective tax rate Approx. 26.5% (Q4 2026) and Approx. 26.0% (FY2026); Investment spending $1,250 to $1,350; Capital return to shareholders At least $4,800; the outlook's words: 'The company's updated outlook generally assumes the continuation of the current macroeconomic environment.'"
   }
  ],
  "dividends": [
@@ -9499,6 +12406,42 @@
    "source": "MA103",
    "quarterly": 0.0,
    "note": "none: 'Marriott anticipates that its previously announced first quarter 2020 dividend, payable on March 31, 2020, will be the last until conditions improve' (8-K of 2020-03-18)"
+  },
+  {
+   "published": "2022-05-04",
+   "source": "MA114",
+   "quarterly": 0.3,
+   "note": "$0.30 a quarter, cash dividends resumed: 'Marriott resumes cash dividends, with the Board of Directors declaring a $0.30 per share dividend payable on June 30, 2022, to shareholders of record as of May 16, 2022' (Q1 2022 release)"
+  },
+  {
+   "published": "2023-02-13",
+   "source": "MA117",
+   "quarterly": 0.4,
+   "note": "$0.40 a quarter ('declared a quarterly cash dividend of 40 cents per share of common stock', 8-K of 2023-02-10, accepted after the close)"
+  },
+  {
+   "published": "2023-08-01",
+   "source": "MA122",
+   "quarterly": 0.52,
+   "note": "$0.52 a quarter ('(2) $0.52 per share declared on May 12, 2023', Q2 2023 10-Q)"
+  },
+  {
+   "published": "2024-07-31",
+   "source": "MA128",
+   "quarterly": 0.63,
+   "note": "$0.63 a quarter ('(2) $0.63 per share declared on May 10, 2024', Q2 2024 10-Q)"
+  },
+  {
+   "published": "2025-08-05",
+   "source": "MA134",
+   "quarterly": 0.67,
+   "note": "$0.67 a quarter ('(2) $0.67 per share declared on May 9, 2025', Q2 2025 10-Q)"
+  },
+  {
+   "published": "2026-08-03",
+   "source": "MA140",
+   "quarterly": 0.73,
+   "note": "$0.73 a quarter ('(2) $0.73 per share declared on May 8, 2026', Q2 2026 10-Q)"
   }
  ],
  "events": [],

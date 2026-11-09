@@ -1366,6 +1366,56 @@
     "term": "Ritz-Carlton Reserve",
     "first_seen": "2011-02-18",
     "note": "a Ritz-Carlton sub-brand; first in a Marriott filing in its 10-K of 2011-02-18 (accepted 2011-02-18 10:27 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Ritz-Carlton Yacht Collection",
+    "first_seen": "2023-02-14",
+    "note": "Marriott's yacht brand; first in a Marriott filing in its FY2022 10-K (accepted 2023-02-14 15:00 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Apartments by Marriott Bonvoy",
+    "first_seen": "2023-03-28",
+    "note": "a Marriott apartment-rental offering; first in a Marriott filing in its 2022 annual report to shareholders (ARS, accepted 2023-03-28 08:56 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "City Express by Marriott",
+    "first_seen": "2023-05-02",
+    "note": "the Marriott brand name of the City Express portfolio acquired in 2023 (the acquired name 'City Express' predates the deal and is not added); first in a Marriott filing in its Q1 2023 10-Q (accepted 2023-05-02 12:31 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "MGM Collection with Marriott Bonvoy",
+    "first_seen": "2023-08-01",
+    "note": "the licensing collection with MGM Resorts; first in a Marriott filing in its Q2 2023 earnings 8-K (accepted 2023-08-01 07:23 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "StudioRes",
+    "first_seen": "2023-09-27",
+    "note": "a Marriott midscale extended-stay brand; first in a Marriott filing in its 8-K of 2023-09-27 (security analyst meeting, accepted 06:29 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Four Points Flex",
+    "first_seen": "2024-11-04",
+    "note": "a Marriott midscale brand; first in a Marriott filing in its Q3 2024 earnings 8-K (accepted 2024-11-04 07:21 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Sonder by Marriott Bonvoy",
+    "first_seen": "2025-02-11",
+    "note": "the licensing offering with Sonder; first in a Marriott filing in its Q4 2024 earnings 8-K (accepted 2025-02-11 07:30 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Series by Marriott",
+    "first_seen": "2025-08-05",
+    "note": "a Marriott midscale/upper-midscale collection brand; first in a Marriott filing in its Q2 2025 earnings 8-K (accepted 2025-08-05 07:00 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Outdoor Collection by Marriott Bonvoy",
+    "first_seen": "2025-11-04",
+    "note": "a Marriott outdoor-lodging collection; first in a Marriott filing in its Q3 2025 earnings 8-K (accepted 2025-11-04 07:00 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Marriott Bonvoy Outdoors",
+    "first_seen": "2026-03-27",
+    "note": "first in a Marriott filing in its proxy statement (DEF 14A, accepted 2026-03-27 10:00 ET, during the session), EDGAR full-text search"
    }
   ]
  }
