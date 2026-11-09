@@ -6,11 +6,13 @@ The MAR sibling of build_rcl.py: the same frozen rules (retro method r2), the sa
 with hotel signals (retro/templates/mar_engine.py.tmpl). For each as-of date the builder
   1. selects only the history vintage, prints, guides, dividends and splits whose 'published' (a split: 'applies') date is <= AS_OF,
   2. computes every market statistic from daily prices truncated at AS_OF, on the AS_OF share basis (Yahoo's split-adjusted series
-     times the splits after AS_OF: the 2006 two-for-one split, the 2009 stock dividends and Yahoo's 2011 factor), from the
-     1998-03-27 spinoff on,
+     times the splits after AS_OF: the 2006 two-for-one split and the 2009 stock dividends), from the 1998-03-27 spinoff on;
+     Yahoo also books the 2011-11-21 spin-off of Marriott Vacations Worldwide as a 1.061 split, and that factor is undone
+     ('distributions'), so every price is as traded,
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
-Marriott's fiscal year ends on the Friday nearest to December 31 (52 or 53 weeks; FY2002 and FY2008 had 53). Each earnings release
+Marriott's fiscal year ends on the Friday nearest to December 31 (52 or 53 weeks; FY2002 and FY2008 had 53), and from FY2013 on
+December 31 (a calendar year, quarters of calendar months; earlier periods not restated). Each earnings release
 guides the next quarter and the year: diluted EPS (the company's figure excluding synthetic fuel and named one-offs), total fee
 revenue (base management, franchise and incentive fees) in dollars, sometimes with its growth stated, and RevPAR in words and numbers.
 The method r2 inputs map as follows (retro/README.md, "MAR"):
@@ -24,7 +26,8 @@ The method r2 inputs map as follows (retro/README.md, "MAR"):
 RevPAR guides, the outlook's other lines and its words are shown in the guide line and feed no input.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. Every MAR earnings release of 2007-2009 was accepted before the open.
+is the first trading day after it. Every MAR earnings release of 2007-2009 and of Q4 2009-Q1 2010 was accepted before the open;
+from Q2 2010 every one was accepted after the close, so it is dated the next trading day (the AVGO rule).
 
 Output goes to staging/retrospective/MAR until the series is added to the archive (--out archive/retrospective/MAR).
 
@@ -60,8 +63,11 @@ r1, r2 = (lambda x: round(x + 1e-12, 1)), (lambda x: round(x + 1e-12, 2))
 
 
 def fiscal_year_end(n):
-    """Marriott's fiscal year n ends on the Friday nearest to December 31 of year n."""
+    """Marriott's fiscal year n ends on the Friday nearest to December 31 of year n; from 2013 on December 31 (the board's change
+    to a calendar fiscal year, 8-K of 2012-05-08: fiscal 2013 began on December 29, 2012)."""
     d = dt.date(n, 12, 31)
+    if n >= 2013:
+        return d
     back = (d.weekday() - 4) % 7                 # days back to the previous Friday (0 if Dec 31 is a Friday)
     return d - dt.timedelta(days=back) if back <= 3 else d + dt.timedelta(days=7 - back)
 
@@ -223,6 +229,14 @@ def build(as_of, facts, raw, spx, engine, out):
     yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
                     for v in chart.get("events", {}).get("splits", {}).values()}
     assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
+    # a distribution (the 2011 spin-off of Marriott Vacations Worldwide) is not a split: Yahoo books it as one, so its factor is
+    # undone for the days before its ex-date and every price stays as traded (the ex-date drop stays in the series)
+    for x in facts.get("distributions", []):
+        ev = [v for v in chart.get("events", {}).get("splits", {}).values()
+              if dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat() == x["effective"]]
+        assert len(ev) == 1 and ev[0]["numerator"] / ev[0]["denominator"] == x["yahoo_factor"], (x["effective"], "Yahoo's factor")
+        if x["effective"] <= as_of:
+            px = {d: (tuple(v * x["yahoo_factor"] for v in hlc) if d < x["effective"] else hlc) for d, hlc in px.items()}
     assert all(s["applies"] >= s["effective"] and s["applies"] >= facts["sources"][s["source"]]["published"]
                for s in facts["splits"] if "applies" in s), "a split applies from the later of its ex-date and its filing"
     for v in facts["history_vintages"]:            # the fiscal calendar the filings state must match the rule above
@@ -390,12 +404,16 @@ def build(as_of, facts, raw, spx, engine, out):
 
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
-    exchange = h["exchange"]
+    # a listing moved to another exchange counts from its effective date (the PEP 2017 encoding; display only)
+    listing = [x for x in facts.get("listings", []) if x["published"] <= as_of and x["effective"] <= as_of]
+    exchange = listing[-1]["exchange"] if listing else h["exchange"]
     groups = [tuple(g) for g in h["groups"]]
     qprior = [q["prior_source"]] if q and qbasis == "derived" else []
     fprior = [gf["fy_fees"]["prior_source"]] if gf and fbasis == "derived" else []
     ids = (list(h["sources"]) + [p["source"] for p in prints] + qprior + fprior
-           + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames])
+           + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames]
+           + [i for x in facts.get("distributions", []) if x["effective"] <= as_of for i in (x["announced"], x["source"])]
+           + [x["source"] for x in listing])
     sources = [dict(id=i, **{k: v for k, v in facts["sources"][i].items() if k != "accepted"}) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, MAR and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/MAR/history",
