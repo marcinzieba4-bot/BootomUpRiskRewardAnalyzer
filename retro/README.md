@@ -10201,6 +10201,100 @@ Judgement calls that could carry hindsight:
 - "home and apartment sharing services" left without a theme;
 - DURABLE rather than CYCLICAL (the class label only).
 
+### MAR 2018-2021
+
+211 weekly dates, 2018-01-05 to 2021-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts, and the
+525 earlier models rebuild byte for byte.
+
+Read: the 16 earnings releases Q4 2017-Q3 2021, the FY2017-FY2020 10-Ks, the 8-K of 2018-07-25 recasting FY2017 under the new revenue
+standard, the COVID-19 update 8-K of 2020-03-18, the 10-Qs that first state a dividend raise, and every other 8-K of the period (76
+filings; sources MA88-MA111). Five Opus subagents split the transcription by year and by the 10-Ks, and the encodings were decided
+centrally. 3,799 strings across the series were checked with `verbatim.py`, each against its own filing, and all were found. Decided on
+2026-11-09, before any 2018-2021 outcome was computed:
+
+- **Release timing.**
+  - Accepted after the close and dated the next trading day: Q4 2017-Q3 2018, Q4 2018, Q2-Q4 2019.
+  - Accepted before the open (06:04-08:22 ET) and dated that day: Q1 2019 and every release from Q1 2020.
+  - The 10-Ks were all accepted during the session and keep their dates.
+  - Calls not at 10 a.m. ET (`release_time`): Q1 2019 at 1 p.m., Q3 2019 at 11 a.m., and from Q1 2020 at 8:30 a.m.
+- **The new revenue standard (ASU 2014-09, full retrospective from Q1 2018).** The 8-K of 2018-07-25 recasting FY2017 is a vintage
+  of its own: the latest filing that reports that year (the MSFT 2017, UNP 2010 and AAPL 2010 rule).
+  - Earlier years stay as first published, a seam. The FY2018 10-K recasts 2016 too.
+  - The recast has no segment table, so its segments stay the FY2017 10-K's (`groups_rev_m`). Its dividend counts from the 10-K's date
+    (`dividend_published`, the UNP encoding), so it does not override the $0.41 first stated on 2018-05-10.
+- **EPS.** From the new standard the company's "Adjusted" EPS, operating income and revenues also exclude cost reimbursement revenue
+  and reimbursed expenses, a timing effect in every quarter. So they are not figures excluding only one-offs (the NKE FY2007, MSFT and
+  XOM 2026 rule), and nothing is derived from the reconciliation lines.
+  - FY2017: $4.36 from the Q4 2017 release (old basis, excluding only the merger-related costs, the Avendra gain and the Tax Act
+    charge; GAAP $3.61). From the recast (2018-07-25) it is GAAP $3.84; the recast's adjusted $4.21 also excludes cost reimbursements.
+  - FY2016 (recast) $2.73, FY2018 $5.38 (adjusted $6.21) and FY2019 $3.80 (adjusted $6.00) stand at GAAP.
+  - **FY2020 is excluded:** $(0.82), a loss with no figure excluding only one-offs (the company's $0.18 also excludes cost
+    reimbursements). The encoding is the XOM and RCL one: `excluded_note` on the Q4 2020 print, `eps_excluded` on the FY2020 vintage,
+    and the window "10-yr ex-FY20" from 2021-02-19. FY2019's $3.80 stands as the last full year through 2021.
+- **Prints: as reported.** Fees are base management, franchise and incentive fees. Total revenues include cost reimbursements, and
+  operating income is GAAP. The adjusted figures are in each note. Each release's own year-ago column is used: 2017 recast in 2018,
+  2019 for the 2020 quarters, 2020 for the 2021 quarters (2019 in the note).
+  - RevPAR comes from the comparable company-operated North American table ("US & Canada" from Q4 2020), in constant dollars.
+- **Guides: the current-FY EPS midpoint, as published (adjusted, `eps_guide_note`).**
+  - FY18: $5.225 from 2018-02-15, $5.49 from 2018-05-09, $5.86 from 2018-08-07, $6.165 from 2018-11-06.
+  - FY19: $5.985 from 2019-03-01, $6.08 from 2019-05-10, $6.015 from 2019-08-06, $5.885 from 2019-11-05.
+  - FY20: $6.415 from 2020-02-27 ("does not reflect any impact from the Coronavirus outbreak").
+  - **Fee growth as the release states it.** FY2018 +10-12% and FY2019 +5-8%; the quarters from Q2 2018 to Q1 2020 between +1-3% and
+    +11-13%.
+  - The February 2018 outlook gives the year in dollars only: $3,535-3,620M against the old-basis FY2017 fees of $3,327M (the AVGO
+    rule). Its Q1 2018 guide is RevPAR only. Read against the recast $3,295M, no class moves.
+- **The withdrawal.** The 8-K of 2020-03-18 (17:18 ET, dated 2020-03-19): "Marriott withdraws all aspects of its outlook and
+  assumptions for 2020". It voids the EPS, fee, RevPAR and quarter fields and the note (`withdrawn`; the builder now voids the quarter
+  guide too, the RCL rule).
+  - No guide in numbers follows to the end of 2021, so FY2019's $3.80 stands.
+  - BASE takes the latest quarter's fee growth: +7.0% (Q4 2019), then -29.7%, -76.6%, -58.4%, -56.6%, -29.3%, +174.4% (Q2 2021 on
+    Q2 2020) and +95.5%.
+  - The releases' COVID-19 outlook paragraphs are `words` records, which feed nothing.
+- **Dividends:**
+  - $0.41 a quarter from 2018-05-10 (Q1 2018 10-Q) and $0.48 from 2019-08-06 (Q2 2019 10-Q).
+  - None from 2020-03-19: "Marriott anticipates that its previously announced first quarter 2020 dividend, payable on March 31, 2020,
+    will be the last until conditions improve".
+- **COVID enters only through the prints, the withdrawal and the dividend** (the LOW 2020 and RCL rule); no theme is live for hotels.
+- **Adds nothing:**
+  - the Starwood data-security 8-Ks (2018-11-30, 2019-01-04, 2019-07-09; the costs, insurance and the $126M fine accrual are in the
+    prints' notes);
+  - the analyst meeting of 2019-03-18 (rooms and fees by 2021);
+  - the credit-card, credit-facility, debt, tender, officer, director and vote 8-Ks.
+- **Builder changes,** none of which changes an earlier output: an excluded year, a withdrawal that also voids the quarter guide,
+  `groups_rev_m` and `dividend_published`.
+
+Controls and checks:
+- **Controls:** 173 controls over the 736 dates (152 in scope). Each changes no model before its value's publication: the withdrawal
+  acts from 2020-03-20, the recast vintage from 2018-07-27 and the excluded year's note from 2021-02-19.
+- **Leak scan:** 0 hits in 328,604 (string, earlier model) pairs.
+- **Firewall:** passes at 20 cutoffs (every 2018-2021 release, 10-K, recast, withdrawal and dividend date, plus 2022-01-01), with 0 files
+  changed and no planted text.
+- **`retro_tool run`:** passes on all 211 dates. It warns of "2039" on 51 dates: FY2019's 0.2039 tax rate, a number, not a year.
+
+Seen in the build (method behaviour, not tuned):
+- **2018: RICH to 2018-06-15 (24 dates), then FAIR and CHEAP** as the FY18 guides rise ($5.225 to $6.165) and the price falls toward the
+  floor ($80-117).
+- **2019: CHEAP on 51 dates, FAIR on 2.** The FY19 guides ($5.885-6.08) put the floor at $112-117; the price ran from 8% below it to 37% above.
+- **2020: CHEAP to 2020-05-08, then RICH.** On 2020-03-20 the withdrawal drops the anchor to FY19's $3.80 and the floor to $72.20, and
+  the price ($74.58) sits at it. From the Q1 2020 print BASE takes -29.7%, then -76.6%, and the class turns RICH.
+- **2021: RICH to 2021-07-30, then CHEAP or FAIR** (14 and 8 dates) on Q2 2021's +174.4% and Q3's +95.5% fee growth against the 2020
+  trough, with the price 82-107% above the floor.
+
+Sensitivity (each call changed alone, the 211 dates reclassified offline):
+- **The withdrawal ignored** (the February 2020 outlook stands): 38 classes, RICH to CHEAP or FAIR.
+- **2021 fee growth against the same quarter of 2019:** 22 classes, every CHEAP or FAIR date from 2021-08-04 to RICH.
+- **The company's adjusted EPS for FY2017-FY2019:** 12 classes toward CHEAP.
+- **The recast vintage ignored:** 4 classes.
+- **No class moves:** the February 2018 fee guide on the recast base.
+- **Every signal at its BEAR value:** 86 classes. **At XBULL:** 35.
+
+Judgement calls that could carry hindsight:
+- the 2021 fallback to the latest quarter's fee growth against the 2020 trough (22 classes rest on it);
+- the 8-K of 2020-03-18 read as withdrawing every guided field (38 classes);
+- the post-ASC 606 adjusted EPS read as not excluding only one-offs (12 classes), and FY2020's exclusion;
+- the recast as a vintage of its own (4 classes);
+- DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
