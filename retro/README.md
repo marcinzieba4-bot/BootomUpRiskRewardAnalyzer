@@ -10102,6 +10102,105 @@ Judgement calls that could carry hindsight:
 - the Q3 2011 adjusted figures, which keep spin-off transaction costs (the company's own columns);
 - the 2010 "assumptions" read as guides (no class moves).
 
+### MAR 2014-2017
+
+210 weekly dates, 2014-01-03 to 2017-12-29, on the same method, engine and rule-T thresholds. The fact sheet only gains facts, and the
+315 earlier models rebuild byte for byte.
+
+Read: the 16 earnings releases Q4 2013-Q3 2017, the FY2013-FY2016 10-Ks, the 10-Qs that first state each dividend raise, and every 8-K
+of the period (66 filings in all; sources MA63-MA87). Five Opus subagents split the transcription by year and by the 10-Ks, and the
+encodings were decided centrally. 2,406 strings across the series were checked with `verbatim.py`, each against its own filing, and all
+were found. Decided on 2026-11-09, before any 2014-2017 outcome was computed:
+
+- **Release timing.** Every release was accepted after the close (16:43-17:50 ET), so each print is dated the next trading day. The 10-Ks
+  (13:27, 12:08, 12:08 and 15:55 ET) and the dividend 10-Qs were accepted during the session and keep their dates. The Q2 2017 call was
+  held at 5:30 p.m. ET the same evening (`release_time`).
+- **History.** Four more vintages, each with ten years from its own 10-K: FY2013 (2004-2013), FY2014 (2005-2014), FY2015 (2006-2015) and
+  FY2016 (2007-2016).
+  - The first year's diluted shares: 2004 480.9M (FY2006 10-K), 2005 462.3M (FY2007), 2006 430.2M (FY2008), each restated by the builder
+    for the 2009 stock dividends; 2007 401.4M (FY2009 10-K, already restated).
+  - The FY2014 10-K recasts the segments to continents and splits out depreciation; the FY2013 10-K's Former Timeshare line (zero in both
+    years) is left out.
+- **EPS: the company's figures excluding one-offs (the ACN rule).** 2005 $1.33, 2007 $1.87, 2008 $1.49, 2009 $0.93, 2010 $1.02, 2011
+  $1.31 and 2012 $1.64 (the Q4 2013 release restates the Courtyard exclusion). 2013 $2.00, 2014 $2.54, 2015 $3.15 and 2016 $2.64 stand at
+  GAAP: no release publishes a full-year adjusted figure on the reported basis.
+  - FY2016's $2.64 carries $386M of pretax merger-related costs, under half the year's income, so it is not a distorted year. The Q4 2016
+    release's "combined" $3.30 is a pro forma figure, not used.
+- **Starwood** (closed 2016-09-23; 0.80 Marriott share and $21.00 per Starwood share; 134.4M shares issued) enters only through the
+  prints and guides, as published (the LOW 2025 and AVGO rule). The pro formas (8-Ks of 2016-06-06 and 2017-02-15, the 8-K/A of
+  2016-11-17), the deal filings and the merger agreement's terms add nothing.
+  - **Prints: each release's own comparison.** Q3 2016 is as adjusted (excluding merger-related costs and eight days of Starwood) against
+    Q3 2015 as reported. Q4 2016 and 2017 are as adjusted against the "combined" (pro forma) year-ago quarter the release prints. The 2017
+    releases' reclassification of branding fees into franchise fees is taken as each release gives it. RevPAR comes from the combined
+    "Comparable Company-Operated North American Properties" table ("North American - All" in 2017).
+  - **Fee guides: the release's own percentage first.** From the Q3 2016 release, the quarter and year guides state growth "over pro
+    forma" or "compared to combined" fees: Q4 2016 +1% to +2% (over $688M), Q1 2017 flat to +1% (over $740M), FY2017 +3% to +6% (over
+    $3,072M).
+  - **The Q1-Q3 2017 releases state no percentage.** Their quarter guides are read against the year-ago quarter's own release (the
+    AVGO rule), whose fees are legacy Marriott's: Q2 2017 $820-835M against $515M (+59.2% to +62.1%), Q3 2017 $810-825M against $491M
+    (+65.0% to +68.0%), Q4 2017 $825-835M against $713M (+15.7% to +17.1%).
+- **Operating income** is as adjusted only where the release prints adjusted statement columns (Q4 2013-Q4 2014: none; Q3 2016 on). The
+  2014-2015 schedules' "Operating income, as adjusted" belongs to a margin excluding cost reimbursements, and in Q1 2014 to a
+  three-day calendar estimate, so it is not used. Rebuilt with it, no class moves.
+- **Guides, the current-FY EPS midpoint.**
+  - FY14: $2.37 from 2014-02-20, $2.46 from 2014-04-30, $2.455 from 2014-07-30, $2.50 from 2014-10-29.
+  - FY15: $3.06 from 2015-02-19, $3.14 from 2015-07-30.
+  - FY16: $3.775 from 2016-02-18. The Q1 2016 release then withdraws it ("the company is not providing full year 2016 EPS guidance at
+    this time", over the merger's timing), so FY15's $3.15 stands from 2016-04-28 to the Q4 2016 print. This is the SHW, LOW, AAPL and
+    WMT `withdrawn` rule, now in the MAR builder.
+  - FY17: $3.88 (adjusted) from 2017-02-16, $4.005 from 2017-05-09, $4.12 from 2017-08-08, $4.23 from 2017-11-08.
+  - Fee growth is stated by every full-year guide from the Q4 2013 release to the Q4 2016 release (7-12% a year before the merger). The
+    quarter guides state it in the Q4 2015, Q2 2016 and Q3 2016 releases and in the Q4 2016 release.
+- **Unequal quarters:** Q4 2013 (92 days against 112) and Q1 2014 (90 against 93) are as published, with the days in the notes (the 2013
+  rule); the Q4 2013 guide read per day moves no class.
+- **Dividends:** $0.20 a quarter from 2014-07-30, $0.25 from 2015-07-30, $0.30 from 2016-07-28 (each first stated in the Q2 10-Q; no
+  8-K), $0.33 from 2017-05-09 (Q1 2017 10-Q).
+- **Adds nothing:**
+  - the segment recast (8-K of 2014-07-03; the bridge keeps the latest 10-K's segments);
+  - the analyst meetings (2014-09-08: 2017 EPS scenarios on assumed RevPAR; 2017-03-21: rooms and fees by 2019), which are not current-year
+    figures;
+  - the EDITION sales, Davos and ALIS releases, and the debt, officer, director and vote 8-Ks;
+  - Delta Hotels (2015), which is in the prints and guides as published.
+- **Durability** stays DURABLE, risk 2. From the FY2015 10-K the competition risk factor names "home and apartment sharing services". No
+  theme in `taxonomy_eras.json` covers it, so it stays in the "why" and no theme is live (the PEP rule for an unregistered risk).
+
+Controls and checks:
+- **Controls:** 129 controls over the 525 dates (111 in scope); none changes a model before its value's publication. The out-of-scope
+  ones are the Q3 releases' next-year outlooks and pre-2008 facts.
+- **Leak scan:** 0 hits in 183,089 (string, earlier model) pairs.
+- **Firewall:** passes at 19 cutoffs (every 2014-2017 release and 10-K date, the closing, plus 2018-01-01), with 0 files changed and no
+  planted text.
+- **`retro_tool run`:** passes on all 210 dates, with no warnings.
+
+Seen in the build (method behaviour, not tuned):
+- **2014: RICH on 48 dates, FAIR on 5.** The FY13 anchor and then the FY14 guides ($2.37-2.50) set the floor at $38-47.5, and the price
+  ran $49-79, 17-66% above it.
+- **2015: RICH on 30, FAIR on 22, CHEAP on 2015-12-18** ($65.11, 9% above the floor of $59.66 on the FY15 guide of $3.14).
+- **2016: FAIR on 28, CHEAP on 16, RICH on 8.**
+  - CHEAP and BUY at the Q4 2015 print: the price was 3% below the floor on the FY16 guide of $3.775.
+  - After the withdrawal the anchor falls to FY15's $3.15 and the floor to $56.70: mostly FAIR.
+  - RICH from 2016-11-09: Q4 2016 fees +1% to +2% over pro forma, the price 31% above the floor.
+- **2017: RICH to 2017-05-05, CHEAP and BUY from 2017-05-10 to 2017-11-03 (26 dates), RICH from 2017-11-09.**
+  - The CHEAP run rests on the Q2 and Q3 2017 fee guides read against legacy-Marriott quarters (+59% to +68%), with the price 25-55% above
+    the floor.
+  - The Q4 guide (+16%) and a price 48-69% above the floor turn it back.
+
+Sensitivity (each call changed alone, the 210 dates reclassified offline):
+- **2017 guides read against the combined 2016 base** the Q4 2016 release states ($3,072M; quarter guides dropped, the year's guide
+  +5% to +7%): **all 26 CHEAP dates to RICH.**
+- **The 2016 EPS withdrawal ignored:** 31 classes (27 FAIR to CHEAP, 4 RICH to FAIR).
+- **GAAP EPS wherever the year is not distorted:** 23 classes, toward FAIR.
+- **No class moves:** FY2016 at the combined $3.30; the margin-schedule operating income; the Q4 2013 guide per day.
+- **Every signal at its BEAR value:** 73 classes toward RICH. **At XBULL:** 43 toward CHEAP or FAIR.
+
+Judgement calls that could carry hindsight:
+- the 2017 quarter guides read against legacy-Marriott quarters, the AVGO rule (26 classes rest on it);
+- the Q1 2016 sentence read as a withdrawal of the FY2016 EPS guide (31 classes);
+- FY2013-FY2016 at GAAP where no adjusted figure is published, FY2016 with its merger costs;
+- operating income as adjusted only from adjusted statement columns;
+- "home and apartment sharing services" left without a theme;
+- DURABLE rather than CYCLICAL (the class label only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
