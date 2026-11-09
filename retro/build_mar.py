@@ -296,7 +296,14 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    stated = lambda k: next((g for g in reversed(guides) if k in g), None)
+    # a guide may withdraw named fields of its year ('withdrawn', the SHW, LOW, AAPL and WMT rule; the Q1 2016 release withdraws the
+    # FY2016 EPS guide): each is void in every earlier guide for that year, so only a guide published on or after it can state it again
+    void = {}
+    for g in guides:
+        for k in g.get("withdrawn", []):
+            void[k] = g["published"]
+    wd = next((g for g in reversed(guides) if "eps_guide" in g.get("withdrawn", [])), None)
+    stated = lambda k: next((g for g in reversed(guides) if k in g and g["published"] >= void.get(k, "")), None)
     ge, gf, gd, gw, gn = stated("eps_guide"), stated("fy_fees"), stated("fy_display"), stated("words"), stated("note")
     qkey = lambda q: (int(q.split()[1]), int(q[1]))
     later = lambda q: qkey(q) > (latest["fy"], nq)                 # a next-quarter guide counts while its quarter is unreported
@@ -312,7 +319,8 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_label = f"{fy_e} EPS, guide midpoint" if ge["eps_guide"][0] != ge["eps_guide"][1] else f"{fy_e} EPS, guided figure"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[last_fy]
-        eps_label = f"{fy_e}: no numeric EPS guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
+        eps_label = (f"{fy_e}: EPS guidance withdrawn ({wd['doc']}), FY{last_fy % 100:02d}'s ${money(eps_now)} stands" if wd else
+                     f"{fy_e}: no numeric EPS guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands")
     qg, qbasis = fee_growth(q, as_of, facts["sources"]) if q else (None, None)
     fg, fbasis = fee_growth(gf["fy_fees"], as_of, facts["sources"]) if gf else (None, None)
     if qg:                                    # method r2: the next-quarter revenue guide (total fee revenue)
@@ -339,7 +347,8 @@ def build(as_of, facts, raw, spx, engine, out):
         if gf:
             lv = gf["fy_fees"]["level_m"]
             fees_txt = (f"fees ${lv[0]:,}M-{lv[1]:,}M" if lv else "fees") + (f" ({pct_range(*fg)})" if fg else "")
-        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + \
+        bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else
+                [f"EPS guidance withdrawn ({wd['doc']}: '{wd['withdrawn_quote']}')"] if wd else []) + \
                ([fees_txt] if fees_txt else []) + ([gd["fy_display"]] if gd else []) + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"fees ${q['fees_m'][0]:,}M-{q['fees_m'][1]:,}M"] if "fees_m" in q else []) +
@@ -392,7 +401,8 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("Fees follow the hotels' revenues and profits through the economy, by the\n"
                 "  company's own account; the bear needs incentive fees to vanish faster than units grow.")
     theme_summary = "no disruption theme has dated evidence"
-    cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else f"(3) A numeric {fy_now} EPS guide — none yet")
+    cat3 = (f"(3) {fy_now} EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
+            f"(3) A numeric {fy_now} EPS guide — withdrawn ({wd['doc']})" if wd else f"(3) A numeric {fy_now} EPS guide — none yet")
     cat4 = f"(4) Total fee revenue — {latest['fees_pct']:+.1f}% in {latest['quarter']}: incentive fees against unit growth"
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
