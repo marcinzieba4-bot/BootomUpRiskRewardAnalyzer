@@ -1271,6 +1271,66 @@
     "term": "Healthy Sail Panel",
     "first_seen": "2020-07-06",
     "note": "the health panel formed with Norwegian Cruise Line Holdings; first in a Royal Caribbean filing in its 8-K of 2020-07-06 (accepted 10:55 ET, during the session)"
+   },
+   {
+    "term": "Utopia of the Seas",
+    "first_seen": "2022-05-06",
+    "note": "the sixth Oasis-class ship; first in a Royal Caribbean filing in its Q1 2022 10-Q (accepted 2022-05-05 17:15 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Silver Nova",
+    "first_seen": "2022-03-01",
+    "note": "a Silversea Nova-class ship; first in a Royal Caribbean filing in its FY2021 10-K (accepted 2022-03-01 09:15 ET, before the open)"
+   },
+   {
+    "term": "Silver Ray",
+    "first_seen": "2023-02-24",
+    "note": "the second Silversea Nova-class ship; first in a Royal Caribbean filing in its FY2022 10-K (accepted 2023-02-23 17:28 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Star of the Seas",
+    "first_seen": "2023-10-27",
+    "note": "the second Icon-class ship; first in a Royal Caribbean filing in its Q3 2023 10-Q (accepted 2023-10-26 17:17 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Celebrity Ascent",
+    "first_seen": "2022-03-01",
+    "note": "the fourth Edge-class ship; first in a Royal Caribbean filing in its FY2021 10-K (accepted 2022-03-01 09:15 ET, before the open)"
+   },
+   {
+    "term": "Celebrity Xcel",
+    "first_seen": "2023-12-26",
+    "note": "the fifth Edge-class ship; first in a Royal Caribbean filing in its 8-K of 2023-12-22 (accepted 2023-12-22 16:30 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Trifecta",
+    "first_seen": "2022-11-03",
+    "note": "the company's 2022-2025 performance program; first in a Royal Caribbean filing in its Q3 2022 earnings 8-K (accepted 2022-11-03 08:24 ET, before the open)"
+   },
+   {
+    "term": "Celebrity River Cruises",
+    "first_seen": "2025-01-28",
+    "note": "Celebrity's river-cruise brand; first in a Royal Caribbean filing in its Q4 2024 earnings 8-K (accepted 2025-01-28 06:33 ET, before the open)"
+   },
+   {
+    "term": "Perfecta",
+    "first_seen": "2025-04-21",
+    "note": "the company's performance program after Trifecta; first in a Royal Caribbean filing in its proxy statement (DEF 14A) of 2025-04-18 (accepted 2025-04-18 16:25 ET, after the close on Good Friday, a market holiday, so it counts from the next trading day)"
+   },
+   {
+    "term": "Silver Endeavour",
+    "first_seen": "2022-07-28",
+    "note": "the Silversea expedition ship acquired in 2022; first in a Royal Caribbean filing in its Q2 2022 earnings 8-K (accepted 2022-07-28 08:05 ET, before the open)"
+   },
+   {
+    "term": "Hideaway Beach",
+    "first_seen": "2023-02-24",
+    "note": "the adults-only area at Perfect Day at CocoCay; first in a Royal Caribbean filing in its FY2022 10-K (accepted 2023-02-23 17:28 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Discovery-class",
+    "first_seen": "2026-01-29",
+    "note": "a class of ships on order; first in a Royal Caribbean filing in its Q4 2025 earnings 8-K (accepted 2026-01-29 06:32 ET, before the open)"
    }
   ]
  }

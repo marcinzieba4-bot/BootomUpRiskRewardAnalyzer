@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  RCL  ·  Royal Caribbean Cruises Ltd.  ·  $39.67  ·  RETROSPECTIVE as of 2022-08-05
+  Signal: ◉ BUY   Ratio B: -0.01x   Adj gap: +2.45  [UNDERVALUED]
+  Point-in-time: 20 sources, latest published 2022-08-05; latest print Q2 2022 (Jul 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenues, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Passenger ticket revenue  $     6.1  $   6.1  $   4.2      +0.0      -1.9
+    -37.4% in FY21
+  Onboard and other revenu  $     3.8  $   3.8  $   2.7      +0.0      -1.1
+    -16.1% in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     9.9  $   9.9  $   6.9      +0.0      -3.0
+  FY2022E = FY21 $1.53B × (1 + 545.5%: no FY22 yield guide, Q3 2022 total revenue guide in dollars, applied to the year (no FY22 guide in numbers)); split pro rata to FY21 revenues by type (FY2021 10-K; one reportable segment)
+  Q2 2022 (Jul 28): total revenues $2.18B +4190.1%; Net Yields and Net Cruise Costs not stated;
+  capacity +2087.9%; occupancy 82.0% (+5450bp); operating margin -10.01% (+200030.9bp); EPS -$2.05 vs -$5.29
+  Net Yields and Net Cruise Costs: no year-on-year Net Yields or Net Cruise Costs in the release (no reconciliation against the year-ago quarter); it says: 'Gross Cruise Costs per APCD improved 2.4% as reported and 1.9% in constant currency, compared to the first quarter 2022'; capacity +2087.9%; EPS 'Adjusted Net Loss of $(0.5) billion or $(2.08) per share for the second quarter of 2022'
+  FY22 guide (Q4 2021 release, Q1 2022 release, Q2 2022 release): Q3 2022: EPS $0.05-0.25; Q3 2022 total revenues $2.9-3.0B ('The company expects to operate 11.6 million APCDs in the third quarter and generate approximately $2.9 billion - $3.0 billion in Total Revenue, based on current currency exchange rates') against Q3 2021 total revenues $0.457B: +534.63-556.52%; the Q2 2022 release, in words: 'The Group expects a Net Loss in the second half of 2022 due to increases in fuel rates, interest rates and foreign exchange rates' (no field)
+
+  FY2022E EPS check:  ($9.9B × -252.61% − $1.39B other) × (1−0.0%) ÷ 0.255B  =  $-103.52  (FY2022E: no numeric EPS guide yet, FY19's $9.54 stands (FY20 is excluded: a loss even on the company's figure: Adjusted EPS $(18.31), GAAP $(27.05) (RC101, the FY2021 10-K); no P/E (the r2 note for a loss on the company's figure, XOM FY2020)) (FY21 is excluded: a loss even on the company's figure: Adjusted EPS $(19.19), GAAP $(20.89) (RC101, the FY2021 10-K); no P/E (the r2 note for a loss on the company's figure, XOM FY2020)) $9.54)
+  FY2024E BEAR check: ($9.9B × -252.61% − other) ÷ 0.263B  =  $-100.45  (scenario $9.54)
+  FY2024E BULL check: ($6.9B × -252.21% − other) ÷ 0.263B  =  $-71.51  (scenario $395.73)
+  Every 1pp of operating margin ≈ $0.39 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net Yields change                  -20.0%   ≥-9.0%    ≥1.0%    ≥9.0%       n/r  ◦ BASE  ██░░
+  Net Cruise Costs per APCD           +7.0%    ≤6.0%    ≤6.0%   ≤-2.0%       n/r  ◦ BASE  ██░░
+  Total revenue growth               -17.0%   ≥-3.0%   ≥10.0%   ≥43.0%  +4190.1%  ★ XBULL  ████
+  Occupancy change                  -560.0bp  ≥-260.0bp  ≥40.0bp  ≥290.0bp  +5450.0bp  ★ XBULL  ████
+  Operating margin change           -1140.0bp  ≥-540.0bp  ≥70.0bp  ≥290.0bp  +200030.9bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.90 / 4.00
+  Market composite:   1.00 / 4.00  (back-solved from $40 + 15% hurdle)
+  SCA adjustment:    +0.35  ·  EPP-distance adj +0.20  →  Adj composite 3.45  →  Gap +2.45  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 Net Yields not stated (capacity +37.8%), occupancy 49.3%; Q2 2022 Net Yields not stated, occupancy 82.0%  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 4.2x FY22E vs a 14.1x 10-yr ex-FY20 ex-FY21 median (2nd percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: no FY22 yield guide, Q3 2022 total revenue guide in dollars +534.63-556.52% vs a 2.8% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY21 year-end cash $2.702B, FY21 free cash flow -$4.11B, dividend $0.00 a year, 'we agreed with certain of our lenders that we will not pay dividends or engage in stock repurchases' (FY2021 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net Yields change                      n/r    -20.0%     n/r  Close-in discounting to fill ships
+  Net Cruise Costs per APCD              n/r     +7.0%     n/r  Fuel and running costs outrun yields
+  Total revenue growth              +4190.1%    -17.0%  -4207.1%  New ships sail into falling prices
+  Occupancy change                  +5450.0bp  -560.0bp  -6010.0bp  Load factors slip as bookings come later
+  Operating margin change           +200030.9bp  -1140.0bp  -201170.9bp  Ship costs deleverage on lower yields
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$1,690  (model)  /  $106 (defined)
+  Bear probability (proxy model):  4.9%
+
+  KEY TRIGGER: Net Yields went from n/r (Q1 2022) to n/r (Q2 2022);
+  the bear case needs a demand recession that cost control (Net Cruise Costs per APCD
+  n/r now) no longer covers. Demand follows the economies the ships sell into, by the company's own
+  account; the bear needs yields to fall faster than running costs can be cut.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $9.54  (FY2022E: no numeric EPS guide yet, FY19's $9.54 stands (FY20 is excluded: a loss even on the company's figure: Adjusted EPS $(18.31), GAAP $(27.05) (RC101, the FY2021 10-K); no P/E (the r2 note for a loss on the company's figure, XOM FY2020)) (FY21 is excluded: a loss even on the company's figure: Adjusted EPS $(19.19), GAAP $(20.89) (RC101, the FY2021 10-K); no P/E (the r2 note for a loss on the company's figure, XOM FY2020)))
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2012 12.7x, 2013 13.0x, 2014 13.6x, 2015 13.8x, 2016 10.8x, 2017 11.1x, 2018 10.1x, 2019 9.7x, 2022 3.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $105/share
+  Current $40 vs Updated EPP $105:  -62%  ✓ BELOW panic floor — deep-value zone
+  Bear $106 vs Updated EPP $105:  +1%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net Yields change                           -9.0        n/r   BASE floor (not reported now)
+  Net Cruise Costs per APCD                    6.0        n/r   BASE floor (not reported now)
+  Total revenue growth                        -3.0    -4193.1   BASE floor (vs +4190 now)
+  Occupancy change                          -260.0    -5710.0   BASE floor (vs +5450 now)
+  Operating margin change                   -540.0  -200570.9   BASE floor (vs +200031 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $9.54 × (1+542.1%)² = $393.28
+  At 14x P/E (conservative):  $5,506/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $5,506  (▲5,466 from $40)
+  Conservative total return:  +13779% over 2yr  = +6890%/yr
+
+  At 4.2x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2024E EPS of $2.83,
+  i.e. -45.5%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $31.09  –  $98.27  (at 13th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   61% annualized
+  Beta vs broad market: 1.81
+  1-sigma range (1yr):  $15  –  $64  ($40 ± 61%)
+  2-sigma range (1yr):  $-9  –  $88
+  ────────────────────────────────────────────────────────────
+  Bear $106 requires:  ~-2.7σ price move  (within normal vol range)
+  A cruise company with a 1.8 beta: the stock is +27% off its July
+  low while Net Yields went from n/r (Q1 2022) to n/r (Q2 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        9.54  11.1x  $    106     4.9%     72.2%   -67.4pp  Flat EPS (worst year FY12-FY19, capped at 0%); P/E to its 10th pct
+  BASE      395.73  14.1x  $  5,580    17.1%     20.7%    -3.6pp  EPS +544.1%/yr (Q3 $ guide + margin + buyback); P/E at its 10-yr ex-FY20 ex-FY21 median
+  BULL      395.73  16.1x  $  6,371    59.5%      5.9%   +53.6pp  EPS +544.1%/yr (FY12-FY19 CAGR); P/E holds its 75th pct
+  XBULL     395.73  18.1x  $  7,163    18.5%      1.1%   +17.4pp  EPS +544.1%/yr (best 2-yr run FY12-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $6,077  /  Market EV: $1,690  /  Current: $40
+  Conservative EV (2yr, ④): $5,506 + $0.00 divs = $5,506 total value
+  Downside (→ Bear $106): -167.2%   Upside (→ Bull $6371): 15960.0%   Ratio B -0.01x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $40 the market needs $52 in two years —
+  at or below the BASE case. That is a market composite of 1.00 against a model
+  read of 3.45: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.01x     -62%    +2.45  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.01x     -62%    +2.41  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)    -0.01x     -62%    +2.45  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.01x     -62%    +2.45  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.01x     -62%    +2.28  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.01x     -62%    +2.75  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.01x     -70%    +2.45  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.01x     -62%    +2.45  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2022 print (late October) — the next read on Net Yields (n/r now) and the guide
+  (2) Occupancy — 82.0% in Q2 2022 (+5450bp): whether the ships fill without deeper discounts
+  (3) A numeric FY22 EPS guide — none yet
+  (4) Net Cruise Costs per APCD — not stated in Q2 2022: running costs against yields once the ships sail
+  (5) Capital return at 4x — no dividend ('Agreed with its lenders that it will not pay dividends or engage in stock repurchases', the 8-K of 2020-05-08): management's own read of the multiple
+  ◉ BUY  |  EPP floor $105  |  ADD below ~$4,743  |  TRIM above $6,371
+════════════════════════════════════════════════════════════════════════
+

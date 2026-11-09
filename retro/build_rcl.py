@@ -38,6 +38,10 @@ the vintages); a release that states no Net Yields or Net Cruise Costs ('no_ny_n
 value, as is any ratio over a base that is not positive (Q3 2020's negative revenues), and each scores BASE (the AAPL Mac-unit rule); a
 print's APCD and occupancy may come from a later filing on its own date ('stats_later', the NKE futures_later rule: Q2 2021's 10-Q);
 and where the latest quarter's revenue growth has no value, BASE takes the same release's year-to-date growth ('ytd_sales_pct').
+From 2022 (retro/README.md, "RCL 2022-2026"): with no Net Yields guide in numbers, a next-quarter total revenues guide in dollars
+('q_rev', Q3 and Q4 2022) is read against the year-ago quarter's total revenues as published (the AVGO rule), before the latest
+quarter's growth; guides stated against 2019 are display only (the WMT rule); an outlook in words is shown beside a numeric guide; a
+vintage may state annual Net Cruise Costs without Net Yields (the FY2022 10-K); and from FY2025 the statement has an income tax line.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release,
 where it is the first trading day after it. A release accepted after the close (Q2 2008, 2008-07-21 18:30 ET) is dated the next
@@ -51,6 +55,7 @@ Usage
   python3 retro/build_rcl.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_rcl.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_rcl.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_rcl.py --weekly 2022-01-03 2026-11-08
   python3 retro/build_rcl.py 2008-01-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/RCL/<AS_OF>
 """
@@ -192,12 +197,13 @@ def check_print(p):
 def check_vintage(v):
     """Re-derive a vintage's last-year values from its raw figures."""
     r = v["vintage_raw"]
+    rv, rv0, yp, cp = r["rev_k"], r["rev_prior_k"], None, None   # the FY2020 and FY2021 10-Ks state neither for the year
     if "net_rev_k" in r:
         rv, rv0, ny, ny0 = derived(r)
+        yp = r2((ny / ny0 - 1) * 100)
+    if "ncc_k" in r:                       # each on its own: the FY2022 10-K states Net Cruise Costs against 2021, not Net Yields
         nc, nc0 = r["ncc_k"] * 1000 / r["apcd"], r["ncc_prior_k"] * 1000 / r["apcd_prior"]
-        yp, cp = r2((ny / ny0 - 1) * 100), r2((nc / nc0 - 1) * 100)
-    else:                                  # the FY2020 10-K states no Net Revenues or Net Cruise Costs
-        rv, rv0, yp, cp = r["rev_k"], r["rev_prior_k"], None, None
+        cp = r2((nc / nc0 - 1) * 100)
     want = {"prev_fy_op_margin": r2(r["opinc_k"] / rv * 100), "prev_fy_sales_growth": r1((rv / rv0 - 1) * 100),
             "prev_fy_ny_pct": yp, "prev_fy_ncc_pct": cp,
             "prev_fy_capacity_pct": r1((r["apcd"] / r["apcd_prior"] - 1) * 100), "other_expense_b": round(-r["other_k"] / 1e6, 4),
@@ -285,7 +291,7 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_op_margin=a["op_margin"], prev_fy_op_margin_note=a["op_margin_note"],
                      prev_fy_sales_growth=a["sales_growth"], prev_fy_ny_pct=a["ny_pct"], prev_fy_ncc_pct=a["ncc_pct"],
                      prev_fy_occupancy=a["occupancy"], prev_fy_capacity_pct=a["capacity_pct"],
-                     other_expense_b=a["other_expense_b"], other_expense_note=f'FY{y[2:]} other income (expense) ({p["source"]})',
+                     other_expense_b=a["other_expense_b"], other_expense_note=f'{a.get("other_note", f"FY{y[2:]} other income (expense)")} ({p["source"]})',
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      cash_b=a["cash_b"], fcf_b=a["fcf_b"], fcf_label=a["fy_label"], groups=a["groups"],
                      groups_basis=f'{a["fy_label"]} revenues by type ({a["doc"]}; one reportable segment)',
@@ -334,6 +340,15 @@ def build(as_of, facts, raw, spx, engine, out):
     later = lambda q: qkey(q) > (latest["fy"], nq)                 # a next-quarter guide counts while its quarter is unreported
     gq = next((g for g in reversed(guides) if "q_guide" in g and later(g["q_guide"]["quarter"])
                and g["published"] >= void.get("q_guide", "")), None)
+    # a next-quarter total revenues guide in dollars ('q_rev', 2022), while its quarter is unreported
+    qr = next((g["q_rev"] for g in reversed(guides) if "q_rev" in g and later(g["q_rev"]["quarter"])
+               and g["published"] >= void.get("q_rev", "")), None)
+    if qr:
+        assert facts["sources"][qr["prior_source"]]["published"] <= as_of, (as_of, "q_rev base")
+        qr_fwd = [r2((lv * 1e6 / qr["prior_k"] - 1) * 100) for lv in qr["level_b"]]
+        qr_lvl = f"${qr['level_b'][0]:.1f}B" if qr["level_b"][0] == qr["level_b"][1] else f"${qr['level_b'][0]:.1f}-{qr['level_b'][1]:.1f}B"
+        qr_text = (f"{qr['quarter']} total revenues {qr_lvl} ('{qr['quote']}') against {qr['prior_label']} ${qr['prior_k'] / 1e6:.3f}B: "
+                   f"{pct_range(*qr_fwd)}")
     q = None
     if gq:                                    # each field of the next quarter's guide from the latest guide that states it
         q = {}
@@ -370,6 +385,11 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd_label, fwd_short = f"{fy_now} net revenue guide", f"{fy_now} guide"
         fwd_kind = (f"no next-quarter guide in numbers: the {fy_now} guide, Net Yields {pct_range(*fr['ny'])} on capacity "
                     f"{fr['capacity']:+.1f}% (Net Revenues = Net Yields x APCD)")
+    elif qr:                                  # no yield guide in numbers: the next quarter's total revenues guide in dollars, read
+        fwd, fwd_period = qr_fwd, qr["quarter"]  # against the year-ago quarter's total revenues as published (the AVGO rule)
+        fwd_label, fwd_short = f"no {fy_now} yield guide, {qr['quarter']} total revenue guide in dollars", f"{qr['quarter'][:2]} $ guide"
+        fwd_kind = (f"no yield guide in numbers: the {qr['quarter']} total revenues guide, {qr_lvl}, against {qr['prior_label']} "
+                    f"${qr['prior_k'] / 1e6:.3f}B")
     elif latest["sales_pct"] is not None:     # no guide at all: the latest quarter's revenue growth as reported
         fwd, fwd_period = [latest["sales_pct"]] * 2, latest["quarter"]
         fwd_label, fwd_short = f"no {fy_now} guide in numbers, {latest['quarter']} revenues", f"{latest['quarter'][:2]} revenues"
@@ -394,13 +414,16 @@ def build(as_of, facts, raw, spx, engine, out):
         fyr = (([f"Net Yields {pct_range(*fr['ny'])}"] + ([f"{pct_range(*fr['ny_cc'])} at constant currency"] if "ny_cc" in fr else [])
                 + [f"capacity {fr['capacity']:+.1f}%"]) if fr else [])
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else []) + fyr + \
-               ([gr["fy_display"]] if gr and gr.get("fy_display") else []) + \
+               ([gr["fy_display"]] if gr and gr.get("fy_display") else
+                [gd["fy_display"]] if not gr and (gd := stated("fy_display")) else []) + \
                ([f"{q['quarter']}: " + ", ".join(
                    ([f"Net Yields {pct_range(*q['ny'])}"] if "ny" in q else []) +
                    ([f"{pct_range(*q['ny_cc'])} at constant currency"] if "ny_cc" in q else []) +
                    ([f"capacity {q['capacity']:+.1f}%"] if "capacity" in q else []) +
                    ([f"EPS ${eps_rng(*q['eps'])}"] if "eps" in q else []))] if q else []) + \
-               ([guides[-1]["note"]] if guides[-1].get("note") and guides[-1]["published"] >= void.get("note", "") else [])
+               ([guides[-1]["note"]] if guides[-1].get("note") and guides[-1]["published"] >= void.get("note", "") else []) + \
+               ([qr_text] if qr else []) + \
+               ([f"the {gw['doc']}, in words: '{gw['words']}' (no field)"] if gw and gw["published"] >= void.get("words", "") else [])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
         guide_text = f"{fy_now}: no guide yet"
@@ -472,6 +495,7 @@ def build(as_of, facts, raw, spx, engine, out):
     exchange = h["exchange"]
     groups = [tuple(g) for g in h["groups"]]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])] + later_ids
+           + ([qr["prior_source"]] if qr else [])
            + [g["source"] for g in guides] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, RCL and S&P 500, truncated at AS_OF",
