@@ -99709,7 +99709,20 @@
    "cons_return_2yr": -2.8,
    "path": "staging/retrospective/MAR/2014-01-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.5,
+    "tr_1y": 61.4,
+    "tr_2y": 41.3,
+    "tr_3y": 75.5,
+    "excess_6m": 26.2,
+    "excess_1y": 47.0,
+    "excess_2y": 25.5,
+    "excess_3y": 45.4,
+    "avg_m12_m24": 55.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99728,7 +99741,20 @@
    "cons_return_2yr": -4.0,
    "path": "staging/retrospective/MAR/2014-01-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.8,
+    "tr_1y": 61.3,
+    "tr_2y": 30.6,
+    "tr_3y": 72.1,
+    "excess_6m": 26.2,
+    "excess_1y": 48.3,
+    "excess_2y": 22.0,
+    "excess_3y": 42.3,
+    "avg_m12_m24": 53.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99747,7 +99773,20 @@
    "cons_return_2yr": -6.6,
    "path": "staging/retrospective/MAR/2014-01-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.9,
+    "tr_1y": 51.4,
+    "tr_2y": 21.0,
+    "tr_3y": 68.4,
+    "excess_6m": 18.4,
+    "excess_1y": 39.6,
+    "excess_2y": 14.4,
+    "excess_3y": 38.4,
+    "avg_m12_m24": 48.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99766,7 +99805,20 @@
    "cons_return_2yr": -5.0,
    "path": "staging/retrospective/MAR/2014-01-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.0,
+    "tr_1y": 59.3,
+    "tr_2y": 29.0,
+    "tr_3y": 75.6,
+    "excess_6m": 23.0,
+    "excess_1y": 42.6,
+    "excess_2y": 18.0,
+    "excess_3y": 41.3,
+    "avg_m12_m24": 50.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99785,7 +99837,20 @@
    "cons_return_2yr": -4.1,
    "path": "staging/retrospective/MAR/2014-01-31",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.4,
+    "tr_1y": 52.7,
+    "tr_2y": 27.8,
+    "tr_3y": 78.8,
+    "excess_6m": 21.9,
+    "excess_1y": 38.6,
+    "excess_2y": 14.6,
+    "excess_3y": 44.0,
+    "avg_m12_m24": 51.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99804,7 +99869,20 @@
    "cons_return_2yr": -4.0,
    "path": "staging/retrospective/MAR/2014-02-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.2,
+    "tr_1y": 52.3,
+    "tr_2y": 25.4,
+    "tr_3y": 80.1,
+    "excess_6m": 23.9,
+    "excess_1y": 35.8,
+    "excess_2y": 16.3,
+    "excess_3y": 45.7,
+    "avg_m12_m24": 50.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99823,7 +99901,20 @@
    "cons_return_2yr": -8.2,
    "path": "staging/retrospective/MAR/2014-02-14",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.3,
+    "tr_1y": 55.6,
+    "tr_2y": 27.2,
+    "tr_3y": 76.2,
+    "excess_6m": 23.9,
+    "excess_1y": 39.5,
+    "excess_2y": 21.4,
+    "excess_3y": 42.3,
+    "avg_m12_m24": 43.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99842,7 +99933,20 @@
    "cons_return_2yr": 23.2,
    "path": "staging/retrospective/MAR/2014-02-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.4,
+    "tr_1y": 59.5,
+    "tr_2y": 28.4,
+    "tr_3y": 73.0,
+    "excess_6m": 22.0,
+    "excess_1y": 42.6,
+    "excess_2y": 19.6,
+    "excess_3y": 37.6,
+    "avg_m12_m24": 40.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99861,7 +99965,20 @@
    "cons_return_2yr": 19.3,
    "path": "staging/retrospective/MAR/2014-02-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.0,
+    "tr_1y": 54.7,
+    "tr_2y": 29.0,
+    "tr_3y": 65.9,
+    "excess_6m": 19.6,
+    "excess_1y": 39.6,
+    "excess_2y": 19.9,
+    "excess_3y": 32.3,
+    "avg_m12_m24": 35.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99880,7 +99997,20 @@
    "cons_return_2yr": 18.1,
    "path": "staging/retrospective/MAR/2014-03-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.0,
+    "tr_1y": 50.2,
+    "tr_2y": 30.2,
+    "tr_3y": 62.7,
+    "excess_6m": 22.2,
+    "excess_1y": 38.0,
+    "excess_2y": 19.4,
+    "excess_3y": 30.1,
+    "avg_m12_m24": 33.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99899,7 +100029,20 @@
    "cons_return_2yr": 20.0,
    "path": "staging/retrospective/MAR/2014-03-14",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.8,
+    "tr_1y": 53.8,
+    "tr_2y": 35.0,
+    "tr_3y": 65.7,
+    "excess_6m": 23.0,
+    "excess_1y": 40.3,
+    "excess_2y": 21.0,
+    "excess_3y": 30.6,
+    "avg_m12_m24": 35.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99918,7 +100061,20 @@
    "cons_return_2yr": 17.1,
    "path": "staging/retrospective/MAR/2014-03-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.4,
+    "tr_1y": 53.6,
+    "tr_2y": 34.1,
+    "tr_3y": 66.7,
+    "excess_6m": 22.6,
+    "excess_1y": 38.4,
+    "excess_2y": 19.8,
+    "excess_3y": 34.3,
+    "avg_m12_m24": 31.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99937,7 +100093,20 @@
    "cons_return_2yr": 16.7,
    "path": "staging/retrospective/MAR/2014-03-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.3,
+    "tr_1y": 47.2,
+    "tr_2y": 31.9,
+    "tr_3y": 75.8,
+    "excess_6m": 20.6,
+    "excess_1y": 34.2,
+    "excess_2y": 17.9,
+    "excess_3y": 42.1,
+    "avg_m12_m24": 30.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99956,7 +100125,20 @@
    "cons_return_2yr": 15.9,
    "path": "staging/retrospective/MAR/2014-04-04",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.8,
+    "tr_1y": 45.1,
+    "tr_2y": 22.2,
+    "tr_3y": 71.1,
+    "excess_6m": 16.3,
+    "excess_1y": 32.2,
+    "excess_2y": 7.1,
+    "excess_3y": 37.9,
+    "avg_m12_m24": 29.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99975,7 +100157,20 @@
    "cons_return_2yr": 17.0,
    "path": "staging/retrospective/MAR/2014-04-11",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.6,
+    "tr_1y": 46.7,
+    "tr_2y": 24.6,
+    "tr_3y": 70.7,
+    "excess_6m": 9.6,
+    "excess_1y": 28.8,
+    "excess_2y": 7.7,
+    "excess_3y": 34.2,
+    "avg_m12_m24": 30.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -99994,7 +100189,20 @@
    "cons_return_2yr": 15.0,
    "path": "staging/retrospective/MAR/2014-04-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.3,
+    "tr_1y": 39.4,
+    "tr_2y": 23.9,
+    "tr_3y": 68.8,
+    "excess_6m": 14.2,
+    "excess_1y": 25.8,
+    "excess_2y": 8.0,
+    "excess_3y": 36.1,
+    "avg_m12_m24": 27.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -100013,7 +100221,20 @@
    "cons_return_2yr": 13.0,
    "path": "staging/retrospective/MAR/2014-04-25",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.8,
+    "tr_1y": 44.4,
+    "tr_2y": 20.2,
+    "tr_3y": 70.5,
+    "excess_6m": 15.3,
+    "excess_1y": 28.7,
+    "excess_2y": 3.8,
+    "excess_3y": 35.6,
+    "avg_m12_m24": 24.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -100032,7 +100253,20 @@
    "cons_return_2yr": 24.4,
    "path": "staging/retrospective/MAR/2014-05-01",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.1,
+    "tr_1y": 39.7,
+    "tr_2y": 22.8,
+    "tr_3y": 68.4,
+    "excess_6m": 22.0,
+    "excess_1y": 25.7,
+    "excess_2y": 8.8,
+    "excess_3y": 34.8,
+    "avg_m12_m24": 21.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100051,7 +100285,20 @@
    "cons_return_2yr": 25.2,
    "path": "staging/retrospective/MAR/2014-05-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.5,
+    "tr_1y": 39.4,
+    "tr_2y": 21.9,
+    "tr_3y": 81.4,
+    "excess_6m": 21.3,
+    "excess_1y": 24.7,
+    "excess_2y": 8.0,
+    "excess_3y": 47.2,
+    "avg_m12_m24": 22.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100070,7 +100317,20 @@
    "cons_return_2yr": 24.8,
    "path": "staging/retrospective/MAR/2014-05-16",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.3,
+    "tr_1y": 40.0,
+    "tr_2y": 19.1,
+    "tr_3y": 83.4,
+    "excess_6m": 24.7,
+    "excess_1y": 25.0,
+    "excess_2y": 4.8,
+    "excess_3y": 48.9,
+    "avg_m12_m24": 21.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100089,7 +100349,20 @@
    "cons_return_2yr": 22.9,
    "path": "staging/retrospective/MAR/2014-05-23",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.9,
+    "tr_1y": 36.7,
+    "tr_2y": 12.7,
+    "tr_3y": 83.3,
+    "excess_6m": 19.3,
+    "excess_1y": 22.7,
+    "excess_2y": 0.5,
+    "excess_3y": 50.5,
+    "avg_m12_m24": 18.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100108,7 +100381,20 @@
    "cons_return_2yr": 18.2,
    "path": "staging/retrospective/MAR/2014-05-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.5,
+    "tr_1y": 27.9,
+    "tr_2y": 10.7,
+    "tr_3y": 78.3,
+    "excess_6m": 20.0,
+    "excess_1y": 16.3,
+    "excess_2y": -2.7,
+    "excess_3y": 46.3,
+    "avg_m12_m24": 14.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100127,7 +100413,20 @@
    "cons_return_2yr": 15.9,
    "path": "staging/retrospective/MAR/2014-06-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.3,
+    "tr_1y": 26.1,
+    "tr_2y": 11.0,
+    "tr_3y": 72.0,
+    "excess_6m": 18.9,
+    "excess_1y": 16.7,
+    "excess_2y": -1.4,
+    "excess_3y": 41.0,
+    "avg_m12_m24": 11.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100146,7 +100445,20 @@
    "cons_return_2yr": 18.6,
    "path": "staging/retrospective/MAR/2014-06-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.7,
+    "tr_1y": 26.2,
+    "tr_2y": 10.6,
+    "tr_3y": 74.3,
+    "excess_6m": 21.3,
+    "excess_1y": 16.0,
+    "excess_2y": -1.1,
+    "excess_3y": 41.8,
+    "avg_m12_m24": 13.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100165,7 +100477,20 @@
    "cons_return_2yr": 14.6,
    "path": "staging/retrospective/MAR/2014-06-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.5,
+    "tr_1y": 23.5,
+    "tr_2y": 9.7,
+    "tr_3y": 68.8,
+    "excess_6m": 16.0,
+    "excess_1y": 13.8,
+    "excess_2y": -0.6,
+    "excess_3y": 38.2,
+    "avg_m12_m24": 9.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100184,7 +100509,20 @@
    "cons_return_2yr": 13.8,
    "path": "staging/retrospective/MAR/2014-06-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.6,
+    "tr_1y": 20.1,
+    "tr_2y": -1.4,
+    "tr_3y": 62.8,
+    "excess_6m": 16.1,
+    "excess_1y": 10.9,
+    "excess_2y": -7.6,
+    "excess_3y": 32.9,
+    "avg_m12_m24": 8.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100203,7 +100541,20 @@
    "cons_return_2yr": 11.1,
    "path": "staging/retrospective/MAR/2014-07-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.2,
+    "tr_1y": 15.4,
+    "tr_2y": 6.3,
+    "tr_3y": 57.5,
+    "excess_6m": 14.5,
+    "excess_1y": 8.8,
+    "excess_2y": -3.9,
+    "excess_3y": 28.7,
+    "avg_m12_m24": 5.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100222,7 +100573,20 @@
    "cons_return_2yr": 12.0,
    "path": "staging/retrospective/MAR/2014-07-11",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.7,
+    "tr_1y": 18.1,
+    "tr_2y": 10.8,
+    "tr_3y": 59.7,
+    "excess_6m": 16.8,
+    "excess_1y": 10.6,
+    "excess_2y": -2.1,
+    "excess_3y": 29.9,
+    "avg_m12_m24": 6.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100241,7 +100605,20 @@
    "cons_return_2yr": 12.2,
    "path": "staging/retrospective/MAR/2014-07-18",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.6,
+    "tr_1y": 21.0,
+    "tr_2y": 11.4,
+    "tr_3y": 62.0,
+    "excess_6m": 14.5,
+    "excess_1y": 11.5,
+    "excess_2y": -2.3,
+    "excess_3y": 31.1,
+    "avg_m12_m24": 6.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100260,7 +100637,20 @@
    "cons_return_2yr": 9.7,
    "path": "staging/retrospective/MAR/2014-07-25",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.9,
+    "tr_1y": 12.8,
+    "tr_2y": 10.2,
+    "tr_3y": 60.0,
+    "excess_6m": 14.2,
+    "excess_1y": 5.6,
+    "excess_2y": -3.7,
+    "excess_3y": 28.3,
+    "avg_m12_m24": 3.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100279,7 +100669,20 @@
    "cons_return_2yr": 21.5,
    "path": "staging/retrospective/MAR/2014-07-31",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.7,
+    "tr_1y": 13.6,
+    "tr_2y": 13.7,
+    "tr_3y": 64.5,
+    "excess_6m": 11.4,
+    "excess_1y": 2.3,
+    "excess_2y": -3.1,
+    "excess_3y": 29.9,
+    "avg_m12_m24": 6.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100298,7 +100701,20 @@
    "cons_return_2yr": 21.1,
    "path": "staging/retrospective/MAR/2014-08-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.9,
+    "tr_1y": 11.2,
+    "tr_2y": 14.6,
+    "tr_3y": 64.9,
+    "excess_6m": 7.5,
+    "excess_1y": 1.5,
+    "excess_2y": -2.6,
+    "excess_3y": 30.2,
+    "avg_m12_m24": 6.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100317,7 +100733,20 @@
    "cons_return_2yr": 16.7,
    "path": "staging/retrospective/MAR/2014-08-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.5,
+    "tr_1y": 7.9,
+    "tr_2y": 11.0,
+    "tr_3y": 53.7,
+    "excess_6m": 10.2,
+    "excess_1y": -1.1,
+    "excess_2y": -5.2,
+    "excess_3y": 21.1,
+    "avg_m12_m24": 2.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100336,7 +100765,20 @@
    "cons_return_2yr": 14.9,
    "path": "staging/retrospective/MAR/2014-08-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.5,
+    "tr_1y": 2.6,
+    "tr_2y": 9.1,
+    "tr_3y": 53.8,
+    "excess_6m": 14.5,
+    "excess_1y": 1.3,
+    "excess_2y": -4.8,
+    "excess_3y": 24.0,
+    "avg_m12_m24": 0.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100355,7 +100797,20 @@
    "cons_return_2yr": 13.3,
    "path": "staging/retrospective/MAR/2014-08-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.3,
+    "tr_1y": 4.4,
+    "tr_2y": 7.8,
+    "tr_3y": 49.1,
+    "excess_6m": 14.3,
+    "excess_1y": 3.1,
+    "excess_2y": -5.2,
+    "excess_3y": 20.6,
+    "avg_m12_m24": -0.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100374,7 +100829,20 @@
    "cons_return_2yr": 11.0,
    "path": "staging/retrospective/MAR/2014-09-05",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.6,
+    "tr_1y": 0.1,
+    "tr_2y": 2.6,
+    "tr_3y": 49.0,
+    "excess_6m": 11.9,
+    "excess_1y": 2.4,
+    "excess_2y": -10.2,
+    "excess_3y": 20.2,
+    "avg_m12_m24": -2.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100393,7 +100861,20 @@
    "cons_return_2yr": 11.4,
    "path": "staging/retrospective/MAR/2014-09-12",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.8,
+    "tr_1y": 4.7,
+    "tr_2y": -0.1,
+    "tr_3y": 53.4,
+    "excess_6m": 12.8,
+    "excess_1y": 3.8,
+    "excess_2y": -13.0,
+    "excess_3y": 21.3,
+    "avg_m12_m24": -2.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100412,7 +100893,20 @@
    "cons_return_2yr": 8.9,
    "path": "staging/retrospective/MAR/2014-09-19",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.3,
+    "tr_1y": -2.2,
+    "tr_2y": -3.0,
+    "tr_3y": 53.2,
+    "excess_6m": 12.4,
+    "excess_1y": -1.7,
+    "excess_2y": -13.6,
+    "excess_3y": 22.0,
+    "avg_m12_m24": -4.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100431,7 +100925,20 @@
    "cons_return_2yr": 11.2,
    "path": "staging/retrospective/MAR/2014-09-26",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.5,
+    "tr_1y": -1.9,
+    "tr_2y": -2.2,
+    "tr_3y": 57.4,
+    "excess_6m": 9.7,
+    "excess_1y": -1.4,
+    "excess_2y": -14.8,
+    "excess_3y": 24.8,
+    "avg_m12_m24": -2.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100450,7 +100957,20 @@
    "cons_return_2yr": 15.5,
    "path": "staging/retrospective/MAR/2014-10-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.3,
+    "tr_1y": 6.3,
+    "tr_2y": 2.0,
+    "tr_3y": 65.4,
+    "excess_6m": 12.2,
+    "excess_1y": 4.9,
+    "excess_2y": -12.2,
+    "excess_3y": 30.0,
+    "avg_m12_m24": 1.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100469,7 +100989,20 @@
    "cons_return_2yr": 23.7,
    "path": "staging/retrospective/MAR/2014-10-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.0,
+    "tr_1y": 21.7,
+    "tr_2y": 9.2,
+    "tr_3y": 84.6,
+    "excess_6m": 15.7,
+    "excess_1y": 13.9,
+    "excess_2y": -8.7,
+    "excess_3y": 44.0,
+    "avg_m12_m24": 8.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100488,7 +101021,20 @@
    "cons_return_2yr": 21.0,
    "path": "staging/retrospective/MAR/2014-10-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.0,
+    "tr_1y": 15.0,
+    "tr_2y": 6.0,
+    "tr_3y": 82.0,
+    "excess_6m": 8.6,
+    "excess_1y": 4.9,
+    "excess_2y": -11.2,
+    "excess_3y": 39.3,
+    "avg_m12_m24": 5.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100507,7 +101053,20 @@
    "cons_return_2yr": 13.5,
    "path": "staging/retrospective/MAR/2014-10-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.7,
+    "tr_1y": 10.0,
+    "tr_2y": 0.1,
+    "tr_3y": 73.3,
+    "excess_6m": 9.9,
+    "excess_1y": 2.2,
+    "excess_2y": -13.6,
+    "excess_3y": 35.9,
+    "avg_m12_m24": -1.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100526,7 +101085,20 @@
    "cons_return_2yr": 0.2,
    "path": "staging/retrospective/MAR/2014-10-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.9,
+    "tr_1y": 2.2,
+    "tr_2y": -8.6,
+    "tr_3y": 60.2,
+    "excess_6m": 0.3,
+    "excess_1y": -4.1,
+    "excess_2y": -19.5,
+    "excess_3y": 24.8,
+    "avg_m12_m24": -10.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100545,7 +101117,20 @@
    "cons_return_2yr": 0.9,
    "path": "staging/retrospective/MAR/2014-11-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.5,
+    "tr_1y": 2.8,
+    "tr_2y": -3.2,
+    "tr_3y": 64.4,
+    "excess_6m": 0.7,
+    "excess_1y": -2.6,
+    "excess_2y": -12.2,
+    "excess_3y": 30.7,
+    "avg_m12_m24": -9.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100564,7 +101149,20 @@
    "cons_return_2yr": -2.3,
    "path": "staging/retrospective/MAR/2014-11-14",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.9,
+    "tr_1y": -5.5,
+    "tr_2y": 1.6,
+    "tr_3y": 62.0,
+    "excess_6m": -1.0,
+    "excess_1y": -6.7,
+    "excess_2y": -8.6,
+    "excess_3y": 29.3,
+    "avg_m12_m24": -12.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100583,7 +101181,20 @@
    "cons_return_2yr": 0.2,
    "path": "staging/retrospective/MAR/2014-11-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.5,
+    "tr_1y": -3.6,
+    "tr_2y": 4.5,
+    "tr_3y": 72.4,
+    "excess_6m": 2.2,
+    "excess_1y": -6.9,
+    "excess_2y": -6.2,
+    "excess_3y": 40.2,
+    "avg_m12_m24": -10.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100602,7 +101213,20 @@
    "cons_return_2yr": -3.3,
    "path": "staging/retrospective/MAR/2014-11-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.9,
+    "tr_1y": -8.1,
+    "tr_2y": 1.8,
+    "tr_3y": 65.4,
+    "excess_6m": -2.7,
+    "excess_1y": -11.2,
+    "excess_2y": -8.8,
+    "excess_3y": 32.1,
+    "avg_m12_m24": -13.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100621,7 +101245,20 @@
    "cons_return_2yr": -3.6,
    "path": "staging/retrospective/MAR/2014-12-05",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.2,
+    "tr_1y": -8.9,
+    "tr_2y": 5.2,
+    "tr_3y": 65.7,
+    "excess_6m": -2.0,
+    "excess_1y": -11.6,
+    "excess_2y": -5.2,
+    "excess_3y": 32.8,
+    "avg_m12_m24": -13.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100640,7 +101277,20 @@
    "cons_return_2yr": -0.8,
    "path": "staging/retrospective/MAR/2014-12-12",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.4,
+    "tr_1y": -11.7,
+    "tr_2y": 12.1,
+    "tr_3y": 72.2,
+    "excess_6m": -5.2,
+    "excess_1y": -14.2,
+    "excess_2y": -4.8,
+    "excess_3y": 32.7,
+    "avg_m12_m24": -10.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100659,7 +101309,20 @@
    "cons_return_2yr": -1.6,
    "path": "staging/retrospective/MAR/2014-12-19",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.9,
+    "tr_1y": -14.7,
+    "tr_2y": 12.3,
+    "tr_3y": 76.3,
+    "excess_6m": -2.2,
+    "excess_1y": -13.6,
+    "excess_2y": -1.1,
+    "excess_3y": 40.4,
+    "avg_m12_m24": -10.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100678,7 +101341,20 @@
    "cons_return_2yr": -3.2,
    "path": "staging/retrospective/MAR/2014-12-26",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.8,
+    "tr_1y": -11.4,
+    "tr_2y": 9.5,
+    "tr_3y": 73.7,
+    "excess_6m": -4.4,
+    "excess_1y": -12.1,
+    "excess_2y": -2.9,
+    "excess_3y": 39.0,
+    "avg_m12_m24": -11.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100697,7 +101373,20 @@
    "cons_return_2yr": -2.4,
    "path": "staging/retrospective/MAR/2014-12-31",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.1,
+    "tr_1y": -11.6,
+    "tr_2y": 8.7,
+    "tr_3y": 78.3,
+    "excess_6m": -5.2,
+    "excess_1y": -13.8,
+    "excess_2y": -4.4,
+    "excess_3y": 41.9,
+    "avg_m12_m24": -10.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100716,7 +101405,20 @@
    "cons_return_2yr": -2.0,
    "path": "staging/retrospective/MAR/2015-01-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.2,
+    "tr_1y": -12.6,
+    "tr_2y": 9.0,
+    "tr_3y": 76.4,
+    "excess_6m": -5.1,
+    "excess_1y": -13.8,
+    "excess_2y": -4.0,
+    "excess_3y": 39.0,
+    "avg_m12_m24": -10.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100735,7 +101437,20 @@
    "cons_return_2yr": -3.3,
    "path": "staging/retrospective/MAR/2015-01-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.2,
+    "tr_1y": -19.2,
+    "tr_2y": 7.1,
+    "tr_3y": 79.2,
+    "excess_6m": -6.5,
+    "excess_1y": -15.2,
+    "excess_2y": -8.0,
+    "excess_3y": 38.2,
+    "avg_m12_m24": -11.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100754,7 +101469,20 @@
    "cons_return_2yr": 0.4,
    "path": "staging/retrospective/MAR/2015-01-16",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.7,
+    "tr_1y": -20.3,
+    "tr_2y": 11.7,
+    "tr_3y": 87.8,
+    "excess_6m": -2.6,
+    "excess_1y": -15.5,
+    "excess_2y": -5.3,
+    "excess_3y": 43.7,
+    "avg_m12_m24": -7.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100773,7 +101501,20 @@
    "cons_return_2yr": -3.0,
    "path": "staging/retrospective/MAR/2015-01-23",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.4,
+    "tr_1y": -19.2,
+    "tr_2y": 10.1,
+    "tr_3y": 90.0,
+    "excess_6m": -7.9,
+    "excess_1y": -14.2,
+    "excess_2y": -4.5,
+    "excess_3y": 45.2,
+    "avg_m12_m24": -9.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100792,7 +101533,20 @@
    "cons_return_2yr": 2.2,
    "path": "staging/retrospective/MAR/2015-01-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.9,
+    "tr_1y": -16.5,
+    "tr_2y": 17.3,
+    "tr_3y": 102.2,
+    "excess_6m": -8.6,
+    "excess_1y": -15.7,
+    "excess_2y": -1.2,
+    "excess_3y": 54.2,
+    "avg_m12_m24": -4.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100811,7 +101565,20 @@
    "cons_return_2yr": 2.6,
    "path": "staging/retrospective/MAR/2015-02-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.8,
+    "tr_1y": -17.9,
+    "tr_2y": 18.2,
+    "tr_3y": 93.2,
+    "excess_6m": -6.1,
+    "excess_1y": -11.3,
+    "excess_2y": 2.6,
+    "excess_3y": 55.7,
+    "avg_m12_m24": -3.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -100830,7 +101597,20 @@
    "cons_return_2yr": -4.1,
    "path": "staging/retrospective/MAR/2015-02-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.4,
+    "tr_1y": -18.5,
+    "tr_2y": 12.7,
+    "tr_3y": 81.4,
+    "excess_6m": -8.8,
+    "excess_1y": -9.4,
+    "excess_2y": -2.4,
+    "excess_3y": 48.1,
+    "avg_m12_m24": -9.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100849,7 +101629,20 @@
    "cons_return_2yr": 19.2,
    "path": "staging/retrospective/MAR/2015-02-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.8,
+    "tr_1y": -19.7,
+    "tr_2y": 10.2,
+    "tr_3y": 73.3,
+    "excess_6m": -12.3,
+    "excess_1y": -12.6,
+    "excess_2y": -5.2,
+    "excess_3y": 38.4,
+    "avg_m12_m24": -12.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100868,7 +101661,20 @@
    "cons_return_2yr": 19.1,
    "path": "staging/retrospective/MAR/2015-02-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.8,
+    "tr_1y": -16.8,
+    "tr_2y": 7.9,
+    "tr_3y": 70.4,
+    "excess_6m": -9.4,
+    "excess_1y": -11.4,
+    "excess_2y": -8.8,
+    "excess_3y": 33.7,
+    "avg_m12_m24": -12.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100887,7 +101693,20 @@
    "cons_return_2yr": 21.4,
    "path": "staging/retrospective/MAR/2015-03-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.5,
+    "tr_1y": -14.2,
+    "tr_2y": 9.1,
+    "tr_3y": 73.1,
+    "excess_6m": -7.3,
+    "excess_1y": -12.8,
+    "excess_2y": -9.7,
+    "excess_3y": 35.1,
+    "avg_m12_m24": -10.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100906,7 +101725,20 @@
    "cons_return_2yr": 20.5,
    "path": "staging/retrospective/MAR/2015-03-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.4,
+    "tr_1y": -14.9,
+    "tr_2y": 8.7,
+    "tr_3y": 77.0,
+    "excess_6m": -7.0,
+    "excess_1y": -15.4,
+    "excess_2y": -11.1,
+    "excess_3y": 36.0,
+    "avg_m12_m24": -10.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100925,7 +101757,20 @@
    "cons_return_2yr": 17.7,
    "path": "staging/retrospective/MAR/2015-03-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.5,
+    "tr_1y": -11.8,
+    "tr_2y": 8.1,
+    "tr_3y": 71.4,
+    "excess_6m": -10.4,
+    "excess_1y": -10.9,
+    "excess_2y": -8.6,
+    "excess_3y": 36.1,
+    "avg_m12_m24": -11.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100944,7 +101789,20 @@
    "cons_return_2yr": 22.4,
    "path": "staging/retrospective/MAR/2015-03-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.6,
+    "tr_1y": -13.8,
+    "tr_2y": 18.0,
+    "tr_3y": 72.1,
+    "excess_6m": -9.4,
+    "excess_1y": -14.7,
+    "excess_2y": 0.2,
+    "excess_3y": 38.8,
+    "avg_m12_m24": -7.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100963,7 +101821,20 @@
    "cons_return_2yr": 23.4,
    "path": "staging/retrospective/MAR/2015-04-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.2,
+    "tr_1y": -15.0,
+    "tr_2y": 20.2,
+    "tr_3y": 69.2,
+    "excess_6m": -5.7,
+    "excess_1y": -17.3,
+    "excess_2y": 1.8,
+    "excess_3y": 37.8,
+    "avg_m12_m24": -6.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -100982,7 +101853,20 @@
    "cons_return_2yr": 23.2,
    "path": "staging/retrospective/MAR/2015-04-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.2,
+    "tr_1y": -15.9,
+    "tr_2y": 16.1,
+    "tr_3y": 66.0,
+    "excess_6m": -1.0,
+    "excess_1y": -15.3,
+    "excess_2y": -0.1,
+    "excess_3y": 33.3,
+    "avg_m12_m24": -6.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101001,7 +101885,20 @@
    "cons_return_2yr": 27.4,
    "path": "staging/retrospective/MAR/2015-04-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.3,
+    "tr_1y": -11.2,
+    "tr_2y": 21.3,
+    "tr_3y": 80.7,
+    "excess_6m": -3.0,
+    "excess_1y": -13.2,
+    "excess_2y": 4.2,
+    "excess_3y": 44.2,
+    "avg_m12_m24": -2.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101020,7 +101917,20 @@
    "cons_return_2yr": 20.9,
    "path": "staging/retrospective/MAR/2015-04-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.4,
+    "tr_1y": -17.5,
+    "tr_2y": 17.0,
+    "tr_3y": 71.6,
+    "excess_6m": -6.4,
+    "excess_1y": -18.3,
+    "excess_2y": 0.7,
+    "excess_3y": 40.8,
+    "avg_m12_m24": -6.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101039,7 +101949,20 @@
    "cons_return_2yr": 12.4,
    "path": "staging/retrospective/MAR/2015-05-01",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.6,
+    "tr_1y": -12.2,
+    "tr_2y": 20.8,
+    "tr_3y": 74.3,
+    "excess_6m": -4.2,
+    "excess_1y": -12.2,
+    "excess_2y": 3.3,
+    "excess_3y": 42.0,
+    "avg_m12_m24": -5.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101058,7 +101981,20 @@
    "cons_return_2yr": 13.4,
    "path": "staging/retrospective/MAR/2015-05-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.9,
+    "tr_1y": -12.6,
+    "tr_2y": 22.8,
+    "tr_3y": 77.9,
+    "excess_6m": -4.1,
+    "excess_1y": -11.8,
+    "excess_2y": 5.3,
+    "excess_3y": 45.3,
+    "avg_m12_m24": -3.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101077,7 +102013,20 @@
    "cons_return_2yr": 12.5,
    "path": "staging/retrospective/MAR/2015-05-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.5,
+    "tr_1y": -16.1,
+    "tr_2y": 31.3,
+    "tr_3y": 76.0,
+    "excess_6m": -5.8,
+    "excess_1y": -14.5,
+    "excess_2y": 14.1,
+    "excess_3y": 41.9,
+    "avg_m12_m24": -3.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101096,7 +102045,20 @@
    "cons_return_2yr": 13.6,
    "path": "staging/retrospective/MAR/2015-05-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.2,
+    "tr_1y": -17.6,
+    "tr_2y": 32.9,
+    "tr_3y": 76.5,
+    "excess_6m": -8.4,
+    "excess_1y": -16.1,
+    "excess_2y": 16.3,
+    "excess_3y": 42.1,
+    "avg_m12_m24": -1.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101115,7 +102077,20 @@
    "cons_return_2yr": 16.7,
    "path": "staging/retrospective/MAR/2015-05-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.7,
+    "tr_1y": -13.6,
+    "tr_2y": 40.0,
+    "tr_3y": 77.2,
+    "excess_6m": -7.9,
+    "excess_1y": -15.3,
+    "excess_2y": 21.3,
+    "excess_3y": 43.3,
+    "avg_m12_m24": 2.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101134,7 +102109,20 @@
    "cons_return_2yr": 16.1,
    "path": "staging/retrospective/MAR/2015-06-05",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.7,
+    "tr_1y": -11.9,
+    "tr_2y": 40.9,
+    "tr_3y": 81.0,
+    "excess_6m": -9.6,
+    "excess_1y": -14.2,
+    "excess_2y": 20.4,
+    "excess_3y": 43.4,
+    "avg_m12_m24": 2.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101153,7 +102141,20 @@
    "cons_return_2yr": 18.8,
    "path": "staging/retrospective/MAR/2015-06-12",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.1,
+    "tr_1y": -11.9,
+    "tr_2y": 36.2,
+    "tr_3y": 87.3,
+    "excess_6m": -9.2,
+    "excess_1y": -14.0,
+    "excess_2y": 16.1,
+    "excess_3y": 48.0,
+    "avg_m12_m24": 5.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101172,7 +102173,20 @@
    "cons_return_2yr": 17.2,
    "path": "staging/retrospective/MAR/2015-06-19",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.5,
+    "tr_1y": -13.0,
+    "tr_2y": 39.4,
+    "tr_3y": 80.7,
+    "excess_6m": -11.4,
+    "excess_1y": -13.1,
+    "excess_2y": 19.0,
+    "excess_3y": 43.4,
+    "avg_m12_m24": 5.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101191,7 +102205,20 @@
    "cons_return_2yr": 19.7,
    "path": "staging/retrospective/MAR/2015-06-26",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.9,
+    "tr_1y": -14.5,
+    "tr_2y": 39.7,
+    "tr_3y": 75.1,
+    "excess_6m": -8.0,
+    "excess_1y": -13.5,
+    "excess_2y": 19.5,
+    "excess_3y": 39.0,
+    "avg_m12_m24": 8.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101210,7 +102237,20 @@
    "cons_return_2yr": 21.7,
    "path": "staging/retrospective/MAR/2015-07-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.7,
+    "tr_1y": -8.0,
+    "tr_2y": 37.2,
+    "tr_3y": 74.0,
+    "excess_6m": -9.1,
+    "excess_1y": -11.3,
+    "excess_2y": 16.2,
+    "excess_3y": 36.2,
+    "avg_m12_m24": 11.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101229,7 +102269,20 @@
    "cons_return_2yr": 19.8,
    "path": "staging/retrospective/MAR/2015-07-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.9,
+    "tr_1y": -6.7,
+    "tr_2y": 35.6,
+    "tr_3y": 76.9,
+    "excess_6m": -10.5,
+    "excess_1y": -11.3,
+    "excess_2y": 14.4,
+    "excess_3y": 35.8,
+    "avg_m12_m24": 10.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101248,7 +102301,20 @@
    "cons_return_2yr": 17.1,
    "path": "staging/retrospective/MAR/2015-07-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.7,
+    "tr_1y": -8.3,
+    "tr_2y": 33.4,
+    "tr_3y": 72.6,
+    "excess_6m": -12.2,
+    "excess_1y": -11.9,
+    "excess_2y": 13.6,
+    "excess_3y": 34.1,
+    "avg_m12_m24": 8.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101267,7 +102333,20 @@
    "cons_return_2yr": 23.0,
    "path": "staging/retrospective/MAR/2015-07-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.9,
+    "tr_1y": -2.7,
+    "tr_2y": 41.8,
+    "tr_3y": 80.6,
+    "excess_6m": -7.6,
+    "excess_1y": -9.2,
+    "excess_2y": 18.8,
+    "excess_3y": 38.5,
+    "avg_m12_m24": 14.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101286,7 +102365,20 @@
    "cons_return_2yr": 21.4,
    "path": "staging/retrospective/MAR/2015-07-31",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.9,
+    "tr_1y": 0.2,
+    "tr_2y": 45.5,
+    "tr_3y": 78.5,
+    "excess_6m": -8.0,
+    "excess_1y": -5.0,
+    "excess_2y": 23.9,
+    "excess_3y": 38.9,
+    "avg_m12_m24": 17.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101305,7 +102397,20 @@
    "cons_return_2yr": 23.6,
    "path": "staging/retrospective/MAR/2015-08-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.2,
+    "tr_1y": 3.3,
+    "tr_2y": 52.0,
+    "tr_3y": 79.5,
+    "excess_6m": -6.7,
+    "excess_1y": -3.7,
+    "excess_2y": 28.4,
+    "excess_3y": 35.5,
+    "avg_m12_m24": 20.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101324,7 +102429,20 @@
    "cons_return_2yr": 22.7,
    "path": "staging/retrospective/MAR/2015-08-14",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.5,
+    "tr_1y": 1.6,
+    "tr_2y": 42.4,
+    "tr_3y": 74.4,
+    "excess_6m": -0.7,
+    "excess_1y": -4.8,
+    "excess_2y": 20.4,
+    "excess_3y": 32.2,
+    "avg_m12_m24": 20.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101343,7 +102461,20 @@
    "cons_return_2yr": 27.2,
    "path": "staging/retrospective/MAR/2015-08-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.9,
+    "tr_1y": 7.8,
+    "tr_2y": 45.8,
+    "tr_3y": 85.5,
+    "excess_6m": -3.0,
+    "excess_1y": -4.8,
+    "excess_2y": 18.5,
+    "excess_3y": 33.7,
+    "avg_m12_m24": 26.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101362,7 +102493,20 @@
    "cons_return_2yr": 23.2,
    "path": "staging/retrospective/MAR/2015-08-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.1,
+    "tr_1y": 2.8,
+    "tr_2y": 44.0,
+    "tr_3y": 79.5,
+    "excess_6m": -3.1,
+    "excess_1y": -8.4,
+    "excess_2y": 16.7,
+    "excess_3y": 27.1,
+    "avg_m12_m24": 22.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101381,7 +102525,20 @@
    "cons_return_2yr": 25.9,
    "path": "staging/retrospective/MAR/2015-09-04",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.8,
+    "tr_1y": 2.5,
+    "tr_2y": 51.6,
+    "tr_3y": 86.2,
+    "excess_6m": -6.0,
+    "excess_1y": -13.2,
+    "excess_2y": 18.3,
+    "excess_3y": 28.5,
+    "avg_m12_m24": 26.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101400,7 +102557,20 @@
    "cons_return_2yr": 20.8,
    "path": "staging/retrospective/MAR/2015-09-11",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.0,
+    "tr_1y": -6.9,
+    "tr_2y": 46.5,
+    "tr_3y": 79.7,
+    "excess_6m": -9.2,
+    "excess_1y": -17.5,
+    "excess_2y": 15.3,
+    "excess_3y": 25.7,
+    "avg_m12_m24": 22.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101419,7 +102589,20 @@
    "cons_return_2yr": 26.5,
    "path": "staging/retrospective/MAR/2015-09-18",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.7,
+    "tr_1y": -0.3,
+    "tr_2y": 54.9,
+    "tr_3y": 91.8,
+    "excess_6m": -0.0,
+    "excess_1y": -11.7,
+    "excess_2y": 22.4,
+    "excess_3y": 36.4,
+    "avg_m12_m24": 28.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101438,7 +102621,20 @@
    "cons_return_2yr": 28.7,
    "path": "staging/retrospective/MAR/2015-09-25",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.9,
+    "tr_1y": 1.5,
+    "tr_2y": 62.4,
+    "tr_3y": 94.3,
+    "excess_6m": -5.6,
+    "excess_1y": -12.8,
+    "excess_2y": 28.5,
+    "excess_3y": 36.2,
+    "avg_m12_m24": 32.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101457,7 +102653,20 @@
    "cons_return_2yr": 23.4,
    "path": "staging/retrospective/MAR/2015-10-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.4,
+    "tr_1y": -4.2,
+    "tr_2y": 58.0,
+    "tr_3y": 81.7,
+    "excess_6m": -12.6,
+    "excess_1y": -17.4,
+    "excess_2y": 23.9,
+    "excess_3y": 24.8,
+    "avg_m12_m24": 27.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101476,7 +102685,20 @@
    "cons_return_2yr": 15.3,
    "path": "staging/retrospective/MAR/2015-10-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.3,
+    "tr_1y": -10.8,
+    "tr_2y": 50.5,
+    "tr_3y": 61.6,
+    "excess_6m": -15.0,
+    "excess_1y": -19.8,
+    "excess_2y": 19.8,
+    "excess_3y": 11.8,
+    "avg_m12_m24": 20.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101495,7 +102717,20 @@
    "cons_return_2yr": 19.4,
    "path": "staging/retrospective/MAR/2015-10-16",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.3,
+    "tr_1y": -7.2,
+    "tr_2y": 58.6,
+    "tr_3y": 65.0,
+    "excess_6m": -10.7,
+    "excess_1y": -14.2,
+    "excess_2y": 28.5,
+    "excess_3y": 20.0,
+    "avg_m12_m24": 26.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101514,7 +102749,20 @@
    "cons_return_2yr": 17.1,
    "path": "staging/retrospective/MAR/2015-10-23",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.0,
+    "tr_1y": -9.4,
+    "tr_2y": 56.3,
+    "tr_3y": 54.3,
+    "excess_6m": -12.8,
+    "excess_1y": -14.6,
+    "excess_2y": 28.4,
+    "excess_3y": 15.6,
+    "avg_m12_m24": 25.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101533,7 +102781,20 @@
    "cons_return_2yr": 19.2,
    "path": "staging/retrospective/MAR/2015-10-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.1,
+    "tr_1y": -10.7,
+    "tr_2y": 57.4,
+    "tr_3y": 55.1,
+    "excess_6m": -8.4,
+    "excess_1y": -15.1,
+    "excess_2y": 29.5,
+    "excess_3y": 19.5,
+    "avg_m12_m24": 23.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101552,7 +102813,20 @@
    "cons_return_2yr": 19.4,
    "path": "staging/retrospective/MAR/2015-11-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.1,
+    "tr_1y": -7.8,
+    "tr_2y": 62.2,
+    "tr_3y": 54.4,
+    "excess_6m": -8.1,
+    "excess_1y": -9.2,
+    "excess_2y": 34.5,
+    "excess_3y": 16.6,
+    "avg_m12_m24": 25.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101571,7 +102845,20 @@
    "cons_return_2yr": 25.9,
    "path": "staging/retrospective/MAR/2015-11-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.4,
+    "tr_1y": 2.4,
+    "tr_2y": 68.8,
+    "tr_3y": 65.5,
+    "excess_6m": -9.6,
+    "excess_1y": -6.6,
+    "excess_2y": 36.7,
+    "excess_3y": 24.2,
+    "avg_m12_m24": 33.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101590,7 +102877,20 @@
    "cons_return_2yr": 26.6,
    "path": "staging/retrospective/MAR/2015-11-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.4,
+    "tr_1y": 7.9,
+    "tr_2y": 77.0,
+    "tr_3y": 65.3,
+    "excess_6m": -8.6,
+    "excess_1y": 1.4,
+    "excess_2y": 49.2,
+    "excess_3y": 32.4,
+    "avg_m12_m24": 35.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101609,7 +102909,20 @@
    "cons_return_2yr": 28.1,
    "path": "staging/retrospective/MAR/2015-11-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.5,
+    "tr_1y": 11.5,
+    "tr_2y": 81.0,
+    "tr_3y": 73.4,
+    "excess_6m": -7.9,
+    "excess_1y": 3.6,
+    "excess_2y": 52.4,
+    "excess_3y": 38.6,
+    "avg_m12_m24": 38.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101628,7 +102941,20 @@
    "cons_return_2yr": 28.9,
    "path": "staging/retrospective/MAR/2015-12-04",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.5,
+    "tr_1y": 13.1,
+    "tr_2y": 83.2,
+    "tr_3y": 65.4,
+    "excess_6m": -4.9,
+    "excess_1y": 6.2,
+    "excess_2y": 52.8,
+    "excess_3y": 29.7,
+    "avg_m12_m24": 40.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101647,7 +102973,20 @@
    "cons_return_2yr": 36.9,
    "path": "staging/retrospective/MAR/2015-12-11",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.3,
+    "tr_1y": 26.7,
+    "tr_2y": 96.0,
+    "tr_3y": 70.6,
+    "excess_6m": -4.9,
+    "excess_1y": 12.3,
+    "excess_2y": 59.5,
+    "excess_3y": 32.7,
+    "avg_m12_m24": 50.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101666,7 +103005,20 @@
    "cons_return_2yr": 40.6,
    "path": "staging/retrospective/MAR/2015-12-18",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.9,
+    "tr_1y": 33.9,
+    "tr_2y": 108.5,
+    "tr_3y": 72.4,
+    "excess_6m": -1.4,
+    "excess_1y": 19.1,
+    "excess_2y": 69.8,
+    "excess_3y": 38.4,
+    "avg_m12_m24": 56.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101685,7 +103037,20 @@
    "cons_return_2yr": 33.1,
    "path": "staging/retrospective/MAR/2015-12-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.3,
+    "tr_1y": 23.9,
+    "tr_2y": 98.4,
+    "tr_3y": 52.7,
+    "excess_6m": -6.1,
+    "excess_1y": 12.0,
+    "excess_2y": 63.8,
+    "excess_3y": 31.7,
+    "avg_m12_m24": 48.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101704,7 +103069,20 @@
    "cons_return_2yr": 36.6,
    "path": "staging/retrospective/MAR/2015-12-31",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.0,
+    "tr_1y": 25.0,
+    "tr_2y": 106.1,
+    "tr_3y": 65.9,
+    "excess_6m": -3.8,
+    "excess_1y": 13.2,
+    "excess_2y": 70.6,
+    "excess_3y": 37.3,
+    "avg_m12_m24": 54.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101723,7 +103101,20 @@
    "cons_return_2yr": 46.1,
    "path": "staging/retrospective/MAR/2016-01-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.4,
+    "tr_1y": 33.2,
+    "tr_2y": 121.5,
+    "tr_3y": 81.6,
+    "excess_6m": 0.5,
+    "excess_1y": 12.4,
+    "excess_2y": 73.9,
+    "excess_3y": 40.3,
+    "avg_m12_m24": 66.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101742,7 +103133,20 @@
    "cons_return_2yr": 53.7,
    "path": "staging/retrospective/MAR/2016-01-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.8,
+    "tr_1y": 40.7,
+    "tr_2y": 138.8,
+    "tr_3y": 91.7,
+    "excess_6m": 2.8,
+    "excess_1y": 17.4,
+    "excess_2y": 85.9,
+    "excess_3y": 45.4,
+    "avg_m12_m24": 76.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101761,7 +103165,20 @@
    "cons_return_2yr": 46.6,
    "path": "staging/retrospective/MAR/2016-01-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.5,
+    "tr_1y": 36.9,
+    "tr_2y": 134.1,
+    "tr_3y": 78.1,
+    "excess_6m": -0.6,
+    "excess_1y": 15.5,
+    "excess_2y": 80.9,
+    "excess_3y": 32.6,
+    "avg_m12_m24": 70.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101780,7 +103197,20 @@
    "cons_return_2yr": 49.4,
    "path": "staging/retrospective/MAR/2016-01-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.9,
+    "tr_1y": 42.3,
+    "tr_2y": 145.5,
+    "tr_3y": 87.9,
+    "excess_6m": 4.7,
+    "excess_1y": 21.8,
+    "excess_2y": 93.7,
+    "excess_3y": 44.4,
+    "avg_m12_m24": 75.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101799,7 +103229,20 @@
    "cons_return_2yr": 52.6,
    "path": "staging/retrospective/MAR/2016-02-05",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.1,
+    "tr_1y": 44.3,
+    "tr_2y": 131.3,
+    "tr_3y": 101.5,
+    "excess_6m": 4.9,
+    "excess_1y": 19.9,
+    "excess_2y": 85.9,
+    "excess_3y": 48.5,
+    "avg_m12_m24": 81.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101818,7 +103261,20 @@
    "cons_return_2yr": 43.5,
    "path": "staging/retrospective/MAR/2016-02-12",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.6,
+    "tr_1y": 37.3,
+    "tr_2y": 121.8,
+    "tr_3y": 86.1,
+    "excess_6m": -4.6,
+    "excess_1y": 10.8,
+    "excess_2y": 74.7,
+    "excess_3y": 31.5,
+    "avg_m12_m24": 71.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101837,7 +103293,20 @@
    "cons_return_2yr": 58.2,
    "path": "staging/retrospective/MAR/2016-02-19",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.4,
+    "tr_1y": 37.7,
+    "tr_2y": 114.5,
+    "tr_3y": 91.8,
+    "excess_6m": -1.5,
+    "excess_1y": 12.9,
+    "excess_2y": 67.4,
+    "excess_3y": 39.6,
+    "avg_m12_m24": 68.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101856,7 +103325,20 @@
    "cons_return_2yr": 52.5,
    "path": "staging/retrospective/MAR/2016-02-26",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.3,
+    "tr_1y": 29.5,
+    "tr_2y": 111.1,
+    "tr_3y": 94.2,
+    "excess_6m": -5.2,
+    "excess_1y": 5.9,
+    "excess_2y": 63.9,
+    "excess_3y": 43.6,
+    "avg_m12_m24": 63.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101875,7 +103357,20 @@
    "cons_return_2yr": 50.7,
    "path": "staging/retrospective/MAR/2016-03-04",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.3,
+    "tr_1y": 27.6,
+    "tr_2y": 106.0,
+    "tr_3y": 85.7,
+    "excess_6m": -6.7,
+    "excess_1y": 6.3,
+    "excess_2y": 67.1,
+    "excess_3y": 39.1,
+    "avg_m12_m24": 63.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101894,7 +103389,20 @@
    "cons_return_2yr": 50.9,
    "path": "staging/retrospective/MAR/2016-03-11",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.1,
+    "tr_1y": 27.5,
+    "tr_2y": 111.7,
+    "tr_3y": 80.6,
+    "excess_6m": -8.3,
+    "excess_1y": 8.0,
+    "excess_2y": 69.5,
+    "excess_3y": 36.1,
+    "avg_m12_m24": 64.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101913,7 +103421,20 @@
    "cons_return_2yr": 42.1,
    "path": "staging/retrospective/MAR/2016-03-18",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.7,
+    "tr_1y": 22.4,
+    "tr_2y": 96.3,
+    "tr_3y": 76.5,
+    "excess_6m": -11.2,
+    "excess_1y": 4.2,
+    "excess_2y": 57.5,
+    "excess_3y": 31.2,
+    "avg_m12_m24": 56.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -101932,7 +103453,20 @@
    "cons_return_2yr": 51.4,
    "path": "staging/retrospective/MAR/2016-03-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.6,
+    "tr_1y": 38.0,
+    "tr_2y": 98.5,
+    "tr_3y": 87.4,
+    "excess_6m": -6.8,
+    "excess_1y": 20.6,
+    "excess_2y": 66.9,
+    "excess_3y": 42.8,
+    "avg_m12_m24": 68.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101951,7 +103485,20 @@
    "cons_return_2yr": 54.8,
    "path": "staging/retrospective/MAR/2016-04-01",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.2,
+    "tr_1y": 42.1,
+    "tr_2y": 106.3,
+    "tr_3y": 96.1,
+    "excess_6m": -4.4,
+    "excess_1y": 26.0,
+    "excess_2y": 74.6,
+    "excess_3y": 50.8,
+    "avg_m12_m24": 73.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101970,7 +103517,20 @@
    "cons_return_2yr": 56.1,
    "path": "staging/retrospective/MAR/2016-04-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.8,
+    "tr_1y": 38.8,
+    "tr_2y": 100.5,
+    "tr_3y": 108.9,
+    "excess_6m": -4.5,
+    "excess_1y": 21.6,
+    "excess_2y": 68.9,
+    "excess_3y": 60.5,
+    "avg_m12_m24": 76.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -101989,7 +103549,20 @@
    "cons_return_2yr": 53.0,
    "path": "staging/retrospective/MAR/2016-04-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.2,
+    "tr_1y": 36.6,
+    "tr_2y": 96.7,
+    "tr_3y": 104.0,
+    "excess_6m": -3.4,
+    "excess_1y": 22.5,
+    "excess_2y": 64.5,
+    "excess_3y": 57.4,
+    "avg_m12_m24": 73.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -102008,7 +103581,20 @@
    "cons_return_2yr": 56.2,
    "path": "staging/retrospective/MAR/2016-04-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.8,
+    "tr_1y": 40.8,
+    "tr_2y": 110.4,
+    "tr_3y": 110.4,
+    "excess_6m": -1.6,
+    "excess_1y": 26.3,
+    "excess_2y": 78.3,
+    "excess_3y": 64.5,
+    "avg_m12_m24": 78.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -102027,7 +103613,20 @@
    "cons_return_2yr": 27.6,
    "path": "staging/retrospective/MAR/2016-04-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.9,
+    "tr_1y": 36.4,
+    "tr_2y": 99.7,
+    "tr_3y": 99.9,
+    "excess_6m": -7.0,
+    "excess_1y": 18.8,
+    "excess_2y": 65.9,
+    "excess_3y": 50.4,
+    "avg_m12_m24": 70.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102046,7 +103645,20 @@
    "cons_return_2yr": 29.2,
    "path": "staging/retrospective/MAR/2016-05-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.4,
+    "tr_1y": 41.9,
+    "tr_2y": 99.9,
+    "tr_3y": 105.0,
+    "excess_6m": -1.0,
+    "excess_1y": 23.2,
+    "excess_2y": 66.0,
+    "excess_3y": 55.6,
+    "avg_m12_m24": 73.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102065,7 +103677,20 @@
    "cons_return_2yr": 33.7,
    "path": "staging/retrospective/MAR/2016-05-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.6,
+    "tr_1y": 55.0,
+    "tr_2y": 112.8,
+    "tr_3y": 94.6,
+    "excess_6m": 3.9,
+    "excess_1y": 36.1,
+    "excess_2y": 75.0,
+    "excess_3y": 50.3,
+    "avg_m12_m24": 81.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102084,7 +103709,20 @@
    "cons_return_2yr": 37.6,
    "path": "staging/retrospective/MAR/2016-05-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.2,
+    "tr_1y": 60.1,
+    "tr_2y": 117.2,
+    "tr_3y": 102.7,
+    "excess_6m": 11.8,
+    "excess_1y": 42.0,
+    "excess_2y": 80.6,
+    "excess_3y": 57.4,
+    "avg_m12_m24": 87.5,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102103,7 +103741,20 @@
    "cons_return_2yr": 34.9,
    "path": "staging/retrospective/MAR/2016-05-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.3,
+    "tr_1y": 63.1,
+    "tr_2y": 112.0,
+    "tr_3y": 95.1,
+    "excess_6m": 12.9,
+    "excess_1y": 45.9,
+    "excess_2y": 78.1,
+    "excess_3y": 53.6,
+    "avg_m12_m24": 84.7,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102122,7 +103773,20 @@
    "cons_return_2yr": 31.5,
    "path": "staging/retrospective/MAR/2016-06-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.3,
+    "tr_1y": 63.6,
+    "tr_2y": 107.2,
+    "tr_3y": 89.2,
+    "excess_6m": 11.8,
+    "excess_1y": 45.3,
+    "excess_2y": 72.6,
+    "excess_3y": 51.7,
+    "avg_m12_m24": 80.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102141,7 +103805,20 @@
    "cons_return_2yr": 34.5,
    "path": "staging/retrospective/MAR/2016-06-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.6,
+    "tr_1y": 55.9,
+    "tr_2y": 112.1,
+    "tr_3y": 106.2,
+    "excess_6m": 17.7,
+    "excess_1y": 37.9,
+    "excess_2y": 75.2,
+    "excess_3y": 61.7,
+    "avg_m12_m24": 85.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102160,7 +103837,20 @@
    "cons_return_2yr": 34.5,
    "path": "staging/retrospective/MAR/2016-06-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.4,
+    "tr_1y": 59.1,
+    "tr_2y": 112.8,
+    "tr_3y": 106.4,
+    "excess_6m": 20.2,
+    "excess_1y": 39.3,
+    "excess_2y": 74.0,
+    "excess_3y": 59.7,
+    "avg_m12_m24": 87.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102179,7 +103869,20 @@
    "cons_return_2yr": 39.9,
    "path": "staging/retrospective/MAR/2016-06-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.5,
+    "tr_1y": 64.7,
+    "tr_2y": 111.6,
+    "tr_3y": 120.8,
+    "excess_6m": 20.3,
+    "excess_1y": 42.8,
+    "excess_2y": 71.7,
+    "excess_3y": 68.9,
+    "avg_m12_m24": 95.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -102198,7 +103901,20 @@
    "cons_return_2yr": 31.9,
    "path": "staging/retrospective/MAR/2016-07-01",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.8,
+    "tr_1y": 49.8,
+    "tr_2y": 90.6,
+    "tr_3y": 114.7,
+    "excess_6m": 15.2,
+    "excess_1y": 32.4,
+    "excess_2y": 56.9,
+    "excess_3y": 66.8,
+    "avg_m12_m24": 85.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102217,7 +103933,20 @@
    "cons_return_2yr": 28.0,
    "path": "staging/retrospective/MAR/2016-07-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.7,
+    "tr_1y": 45.4,
+    "tr_2y": 86.5,
+    "tr_3y": 108.5,
+    "excess_6m": 10.7,
+    "excess_1y": 29.4,
+    "excess_2y": 52.5,
+    "excess_3y": 61.9,
+    "avg_m12_m24": 80.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102236,7 +103965,20 @@
    "cons_return_2yr": 27.4,
    "path": "staging/retrospective/MAR/2016-07-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.6,
+    "tr_1y": 45.6,
+    "tr_2y": 90.4,
+    "tr_3y": 109.6,
+    "excess_6m": 12.3,
+    "excess_1y": 29.7,
+    "excess_2y": 56.4,
+    "excess_3y": 63.3,
+    "avg_m12_m24": 80.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102255,7 +103997,20 @@
    "cons_return_2yr": 26.0,
    "path": "staging/retrospective/MAR/2016-07-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.7,
+    "tr_1y": 46.6,
+    "tr_2y": 91.1,
+    "tr_3y": 97.8,
+    "excess_6m": 14.2,
+    "excess_1y": 30.8,
+    "excess_2y": 58.0,
+    "excess_3y": 53.7,
+    "avg_m12_m24": 78.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102274,7 +104029,20 @@
    "cons_return_2yr": 26.4,
    "path": "staging/retrospective/MAR/2016-07-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.9,
+    "tr_1y": 45.8,
+    "tr_2y": 83.0,
+    "tr_3y": 103.0,
+    "excess_6m": 14.3,
+    "excess_1y": 30.0,
+    "excess_2y": 48.9,
+    "excess_3y": 57.3,
+    "avg_m12_m24": 77.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102293,7 +104061,20 @@
    "cons_return_2yr": 24.7,
    "path": "staging/retrospective/MAR/2016-08-05",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.3,
+    "tr_1y": 46.1,
+    "tr_2y": 79.9,
+    "tr_3y": 85.2,
+    "excess_6m": 12.1,
+    "excess_1y": 30.6,
+    "excess_2y": 45.6,
+    "excess_3y": 48.3,
+    "avg_m12_m24": 76.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102312,7 +104093,20 @@
    "cons_return_2yr": 26.0,
    "path": "staging/retrospective/MAR/2016-08-12",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.0,
+    "tr_1y": 39.9,
+    "tr_2y": 70.7,
+    "tr_3y": 86.8,
+    "excess_6m": 13.9,
+    "excess_1y": 26.0,
+    "excess_2y": 36.7,
+    "excess_3y": 48.0,
+    "avg_m12_m24": 78.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102331,7 +104125,20 @@
    "cons_return_2yr": 22.5,
    "path": "staging/retrospective/MAR/2016-08-19",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.6,
+    "tr_1y": 34.2,
+    "tr_2y": 71.0,
+    "tr_3y": 82.4,
+    "excess_6m": 12.9,
+    "excess_1y": 21.0,
+    "excess_2y": 36.2,
+    "excess_3y": 41.8,
+    "avg_m12_m24": 74.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102350,7 +104157,20 @@
    "cons_return_2yr": 24.5,
    "path": "staging/retrospective/MAR/2016-08-26",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.9,
+    "tr_1y": 40.4,
+    "tr_2y": 73.3,
+    "tr_3y": 80.0,
+    "excess_6m": 10.8,
+    "excess_1y": 25.7,
+    "excess_2y": 36.6,
+    "excess_3y": 40.6,
+    "avg_m12_m24": 77.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102369,7 +104189,20 @@
    "cons_return_2yr": 27.7,
    "path": "staging/retrospective/MAR/2016-09-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.6,
+    "tr_1y": 48.5,
+    "tr_2y": 82.5,
+    "tr_3y": 84.4,
+    "excess_6m": 14.4,
+    "excess_1y": 32.9,
+    "excess_2y": 45.2,
+    "excess_3y": 43.7,
+    "avg_m12_m24": 82.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102388,7 +104221,20 @@
    "cons_return_2yr": 35.0,
    "path": "staging/retrospective/MAR/2016-09-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.9,
+    "tr_1y": 56.3,
+    "tr_2y": 93.0,
+    "tr_3y": 100.6,
+    "excess_6m": 17.7,
+    "excess_1y": 38.5,
+    "excess_2y": 53.7,
+    "excess_3y": 53.8,
+    "avg_m12_m24": 93.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102407,7 +104253,20 @@
    "cons_return_2yr": 32.0,
    "path": "staging/retrospective/MAR/2016-09-16",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.5,
+    "tr_1y": 55.7,
+    "tr_2y": 94.3,
+    "tr_3y": 97.0,
+    "excess_6m": 17.1,
+    "excess_1y": 36.7,
+    "excess_2y": 54.0,
+    "excess_3y": 49.8,
+    "avg_m12_m24": 90.2,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102426,7 +104285,20 @@
    "cons_return_2yr": 32.4,
    "path": "staging/retrospective/MAR/2016-09-23",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.0,
+    "tr_1y": 59.5,
+    "tr_2y": 95.3,
+    "tr_3y": 90.5,
+    "excess_6m": 27.5,
+    "excess_1y": 41.8,
+    "excess_2y": 55.5,
+    "excess_3y": 45.3,
+    "avg_m12_m24": 91.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102445,7 +104317,20 @@
    "cons_return_2yr": 34.6,
    "path": "staging/retrospective/MAR/2016-09-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.5,
+    "tr_1y": 65.6,
+    "tr_2y": 100.2,
+    "tr_3y": 91.4,
+    "excess_6m": 31.1,
+    "excess_1y": 47.3,
+    "excess_2y": 61.2,
+    "excess_3y": 47.2,
+    "avg_m12_m24": 95.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102464,7 +104349,20 @@
    "cons_return_2yr": 35.0,
    "path": "staging/retrospective/MAR/2016-10-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.7,
+    "tr_1y": 68.3,
+    "tr_2y": 85.0,
+    "tr_3y": 84.3,
+    "excess_6m": 26.3,
+    "excess_1y": 47.8,
+    "excess_2y": 46.6,
+    "excess_3y": 40.9,
+    "avg_m12_m24": 96.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102483,7 +104381,20 @@
    "cons_return_2yr": 34.4,
    "path": "staging/retrospective/MAR/2016-10-14",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.6,
+    "tr_1y": 72.5,
+    "tr_2y": 78.3,
+    "tr_3y": 84.8,
+    "excess_6m": 26.4,
+    "excess_1y": 50.7,
+    "excess_2y": 44.2,
+    "excess_3y": 38.7,
+    "avg_m12_m24": 95.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102502,7 +104413,20 @@
    "cons_return_2yr": 35.0,
    "path": "staging/retrospective/MAR/2016-10-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.6,
+    "tr_1y": 73.2,
+    "tr_2y": 71.0,
+    "tr_3y": 89.9,
+    "excess_6m": 27.9,
+    "excess_1y": 50.8,
+    "excess_2y": 37.3,
+    "excess_3y": 42.6,
+    "avg_m12_m24": 96.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102521,7 +104445,20 @@
    "cons_return_2yr": 34.4,
    "path": "staging/retrospective/MAR/2016-10-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.9,
+    "tr_1y": 78.1,
+    "tr_2y": 71.2,
+    "tr_3y": 94.4,
+    "excess_6m": 27.8,
+    "excess_1y": 54.6,
+    "excess_2y": 41.8,
+    "excess_3y": 44.5,
+    "avg_m12_m24": 95.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102540,7 +104477,20 @@
    "cons_return_2yr": 30.2,
    "path": "staging/retrospective/MAR/2016-11-04",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.0,
+    "tr_1y": 76.4,
+    "tr_2y": 77.7,
+    "tr_3y": 93.5,
+    "excess_6m": 24.4,
+    "excess_1y": 50.2,
+    "excess_2y": 42.6,
+    "excess_3y": 38.8,
+    "avg_m12_m24": 89.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102559,7 +104509,20 @@
    "cons_return_2yr": 10.8,
    "path": "staging/retrospective/MAR/2016-11-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.2,
+    "tr_1y": 62.1,
+    "tr_2y": 61.7,
+    "tr_3y": 85.9,
+    "excess_6m": 27.4,
+    "excess_1y": 40.6,
+    "excess_2y": 28.8,
+    "excess_3y": 36.1,
+    "avg_m12_m24": 77.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102578,7 +104541,20 @@
    "cons_return_2yr": 6.4,
    "path": "staging/retrospective/MAR/2016-11-18",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.1,
+    "tr_1y": 64.3,
+    "tr_2y": 57.4,
+    "tr_3y": 81.7,
+    "excess_6m": 24.7,
+    "excess_1y": 44.1,
+    "excess_2y": 27.6,
+    "excess_3y": 32.0,
+    "avg_m12_m24": 70.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102597,7 +104573,20 @@
    "cons_return_2yr": 4.5,
    "path": "staging/retrospective/MAR/2016-11-25",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.5,
+    "tr_1y": 62.7,
+    "tr_2y": 53.0,
+    "tr_3y": 81.7,
+    "excess_6m": 26.3,
+    "excess_1y": 43.1,
+    "excess_2y": 29.7,
+    "excess_3y": 33.3,
+    "avg_m12_m24": 67.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102616,7 +104605,20 @@
    "cons_return_2yr": 3.6,
    "path": "staging/retrospective/MAR/2016-12-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.8,
+    "tr_1y": 61.8,
+    "tr_2y": 48.8,
+    "tr_3y": 83.2,
+    "excess_6m": 27.5,
+    "excess_1y": 39.2,
+    "excess_2y": 18.9,
+    "excess_3y": 34.4,
+    "avg_m12_m24": 65.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102635,7 +104637,20 @@
    "cons_return_2yr": -1.8,
    "path": "staging/retrospective/MAR/2016-12-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.3,
+    "tr_1y": 56.3,
+    "tr_2y": 36.6,
+    "tr_3y": 74.8,
+    "excess_6m": 14.8,
+    "excess_1y": 37.0,
+    "excess_2y": 15.9,
+    "excess_3y": 29.5,
+    "avg_m12_m24": 56.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102654,7 +104669,20 @@
    "cons_return_2yr": -4.6,
    "path": "staging/retrospective/MAR/2016-12-16",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.2,
+    "tr_1y": 52.4,
+    "tr_2y": 28.4,
+    "tr_3y": 77.3,
+    "excess_6m": 13.4,
+    "excess_1y": 31.8,
+    "excess_2y": 8.9,
+    "excess_3y": 29.2,
+    "avg_m12_m24": 51.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102673,7 +104701,20 @@
    "cons_return_2yr": -2.4,
    "path": "staging/retrospective/MAR/2016-12-23",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.5,
+    "tr_1y": 60.9,
+    "tr_2y": 25.7,
+    "tr_3y": 85.4,
+    "excess_6m": 15.8,
+    "excess_1y": 40.2,
+    "excess_2y": 14.7,
+    "excess_3y": 36.3,
+    "avg_m12_m24": 54.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102692,7 +104733,20 @@
    "cons_return_2yr": -0.7,
    "path": "staging/retrospective/MAR/2016-12-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.1,
+    "tr_1y": 65.7,
+    "tr_2y": 33.2,
+    "tr_3y": 89.4,
+    "excess_6m": 12.9,
+    "excess_1y": 44.2,
+    "excess_2y": 17.9,
+    "excess_3y": 38.8,
+    "avg_m12_m24": 56.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102711,7 +104765,20 @@
    "cons_return_2yr": -0.3,
    "path": "staging/retrospective/MAR/2017-01-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.8,
+    "tr_1y": 64.9,
+    "tr_2y": 34.5,
+    "tr_3y": 84.7,
+    "excess_6m": 15.0,
+    "excess_1y": 42.4,
+    "excess_2y": 19.0,
+    "excess_3y": 35.5,
+    "avg_m12_m24": 57.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102730,7 +104797,20 @@
    "cons_return_2yr": -0.7,
    "path": "staging/retrospective/MAR/2017-01-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.6,
+    "tr_1y": 70.7,
+    "tr_2y": 35.9,
+    "tr_3y": 83.3,
+    "excess_6m": 14.0,
+    "excess_1y": 46.2,
+    "excess_2y": 17.4,
+    "excess_3y": 32.0,
+    "avg_m12_m24": 55.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102749,7 +104829,20 @@
    "cons_return_2yr": -2.7,
    "path": "staging/retrospective/MAR/2017-01-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.1,
+    "tr_1y": 72.3,
+    "tr_2y": 32.6,
+    "tr_3y": 83.6,
+    "excess_6m": 12.1,
+    "excess_1y": 46.5,
+    "excess_2y": 10.7,
+    "excess_3y": 30.4,
+    "avg_m12_m24": 51.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102768,7 +104861,20 @@
    "cons_return_2yr": -4.7,
    "path": "staging/retrospective/MAR/2017-01-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.6,
+    "tr_1y": 72.4,
+    "tr_2y": 30.9,
+    "tr_3y": 65.8,
+    "excess_6m": 12.7,
+    "excess_1y": 45.2,
+    "excess_2y": 10.5,
+    "excess_3y": 17.7,
+    "avg_m12_m24": 47.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102787,7 +104893,20 @@
    "cons_return_2yr": -4.0,
    "path": "staging/retrospective/MAR/2017-02-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.0,
+    "tr_1y": 66.7,
+    "tr_2y": 37.4,
+    "tr_3y": 71.1,
+    "excess_6m": 13.4,
+    "excess_1y": 44.5,
+    "excess_2y": 15.3,
+    "excess_3y": 23.0,
+    "avg_m12_m24": 48.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102806,7 +104925,20 @@
    "cons_return_2yr": -5.1,
    "path": "staging/retrospective/MAR/2017-02-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.8,
+    "tr_1y": 59.1,
+    "tr_2y": 36.9,
+    "tr_3y": 74.0,
+    "excess_6m": 9.6,
+    "excess_1y": 44.1,
+    "excess_2y": 15.8,
+    "excess_3y": 22.7,
+    "avg_m12_m24": 46.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102825,7 +104957,20 @@
    "cons_return_2yr": 7.6,
    "path": "staging/retrospective/MAR/2017-02-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.2,
+    "tr_1y": 56.4,
+    "tr_2y": 38.7,
+    "tr_3y": 67.4,
+    "excess_6m": 5.8,
+    "excess_1y": 38.2,
+    "excess_2y": 16.5,
+    "excess_3y": 17.2,
+    "avg_m12_m24": 40.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102844,7 +104989,20 @@
    "cons_return_2yr": 9.4,
    "path": "staging/retrospective/MAR/2017-02-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.5,
+    "tr_1y": 64.8,
+    "tr_2y": 50.9,
+    "tr_3y": 59.9,
+    "excess_6m": 11.5,
+    "excess_1y": 46.7,
+    "excess_2y": 28.8,
+    "excess_3y": 17.1,
+    "avg_m12_m24": 44.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102863,7 +105021,20 @@
    "cons_return_2yr": 9.7,
    "path": "staging/retrospective/MAR/2017-03-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.4,
+    "tr_1y": 62.3,
+    "tr_2y": 46.8,
+    "tr_3y": 37.3,
+    "excess_6m": 15.5,
+    "excess_1y": 47.5,
+    "excess_2y": 25.0,
+    "excess_3y": 4.9,
+    "avg_m12_m24": 44.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102882,7 +105053,20 @@
    "cons_return_2yr": 9.9,
    "path": "staging/retrospective/MAR/2017-03-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.2,
+    "tr_1y": 66.9,
+    "tr_2y": 42.8,
+    "tr_3y": 32.6,
+    "excess_6m": 15.5,
+    "excess_1y": 47.6,
+    "excess_2y": 23.1,
+    "excess_3y": 4.7,
+    "avg_m12_m24": 44.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102901,7 +105085,20 @@
    "cons_return_2yr": 7.8,
    "path": "staging/retrospective/MAR/2017-03-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.1,
+    "tr_1y": 61.2,
+    "tr_2y": 41.8,
+    "tr_3y": -9.3,
+    "excess_6m": 13.9,
+    "excess_1y": 43.5,
+    "excess_2y": 18.9,
+    "excess_3y": -22.1,
+    "avg_m12_m24": 41.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102920,7 +105117,20 @@
    "cons_return_2yr": 1.9,
    "path": "staging/retrospective/MAR/2017-03-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.1,
+    "tr_1y": 44.5,
+    "tr_2y": 36.3,
+    "tr_3y": -10.1,
+    "excess_6m": 8.4,
+    "excess_1y": 32.0,
+    "excess_2y": 12.6,
+    "excess_3y": -20.9,
+    "avg_m12_m24": 32.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102939,7 +105149,20 @@
    "cons_return_2yr": 1.1,
    "path": "staging/retrospective/MAR/2017-03-31",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.8,
+    "tr_1y": 45.8,
+    "tr_2y": 36.0,
+    "tr_3y": -14.0,
+    "excess_6m": 10.2,
+    "excess_1y": 32.1,
+    "excess_2y": 11.9,
+    "excess_3y": -31.7,
+    "avg_m12_m24": 31.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102958,7 +105181,20 @@
    "cons_return_2yr": 4.4,
    "path": "staging/retrospective/MAR/2017-04-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.3,
+    "tr_1y": 45.0,
+    "tr_2y": 50.2,
+    "tr_3y": -13.7,
+    "excess_6m": 14.1,
+    "excess_1y": 32.5,
+    "excess_2y": 23.2,
+    "excess_3y": -33.2,
+    "avg_m12_m24": 36.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102977,7 +105213,20 @@
    "cons_return_2yr": 4.0,
    "path": "staging/retrospective/MAR/2017-04-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.5,
+    "tr_1y": 44.6,
+    "tr_2y": 50.3,
+    "tr_3y": -9.4,
+    "excess_6m": 15.8,
+    "excess_1y": 28.5,
+    "excess_2y": 21.2,
+    "excess_3y": -34.8,
+    "avg_m12_m24": 35.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -102996,7 +105245,20 @@
    "cons_return_2yr": 3.0,
    "path": "staging/retrospective/MAR/2017-04-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.1,
+    "tr_1y": 50.1,
+    "tr_2y": 48.6,
+    "tr_3y": -8.3,
+    "excess_6m": 14.5,
+    "excess_1y": 34.4,
+    "excess_2y": 20.6,
+    "excess_3y": -31.5,
+    "avg_m12_m24": 34.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103015,7 +105277,20 @@
    "cons_return_2yr": 0.9,
    "path": "staging/retrospective/MAR/2017-04-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.6,
+    "tr_1y": 46.9,
+    "tr_2y": 47.6,
+    "tr_3y": -2.2,
+    "excess_6m": 17.3,
+    "excess_1y": 32.9,
+    "excess_2y": 20.2,
+    "excess_3y": -28.9,
+    "avg_m12_m24": 31.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103034,7 +105309,20 @@
    "cons_return_2yr": -1.9,
    "path": "staging/retrospective/MAR/2017-05-05",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.9,
+    "tr_1y": 41.3,
+    "tr_2y": 47.4,
+    "tr_3y": -8.8,
+    "excess_6m": 17.1,
+    "excess_1y": 28.3,
+    "excess_2y": 20.6,
+    "excess_3y": -34.8,
+    "avg_m12_m24": 27.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103053,7 +105341,20 @@
    "cons_return_2yr": 137.2,
    "path": "staging/retrospective/MAR/2017-05-10",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.0,
+    "tr_1y": 35.5,
+    "tr_2y": 30.4,
+    "tr_3y": -10.8,
+    "excess_6m": 8.4,
+    "excess_1y": 20.1,
+    "excess_2y": 6.1,
+    "excess_3y": -39.4,
+    "avg_m12_m24": 20.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103072,7 +105373,20 @@
    "cons_return_2yr": 138.2,
    "path": "staging/retrospective/MAR/2017-05-19",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.4,
+    "tr_1y": 36.1,
+    "tr_2y": 29.9,
+    "tr_3y": -7.4,
+    "excess_6m": 13.1,
+    "excess_1y": 20.2,
+    "excess_2y": 5.7,
+    "excess_3y": -36.6,
+    "avg_m12_m24": 20.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103091,7 +105405,20 @@
    "cons_return_2yr": 129.1,
    "path": "staging/retrospective/MAR/2017-05-26",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.0,
+    "tr_1y": 30.4,
+    "tr_2y": 19.8,
+    "tr_3y": -7.0,
+    "excess_6m": 10.2,
+    "excess_1y": 15.8,
+    "excess_2y": -1.3,
+    "excess_3y": -37.3,
+    "avg_m12_m24": 15.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103110,7 +105437,20 @@
    "cons_return_2yr": 122.5,
    "path": "staging/retrospective/MAR/2017-06-02",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.9,
+    "tr_1y": 27.0,
+    "tr_2y": 16.3,
+    "tr_3y": -9.0,
+    "excess_6m": 6.6,
+    "excess_1y": 12.9,
+    "excess_2y": -0.6,
+    "excess_3y": -41.7,
+    "avg_m12_m24": 12.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103129,7 +105469,20 @@
    "cons_return_2yr": 139.1,
    "path": "staging/retrospective/MAR/2017-06-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.9,
+    "tr_1y": 36.5,
+    "tr_2y": 32.4,
+    "tr_3y": 9.2,
+    "excess_6m": 16.8,
+    "excess_1y": 20.2,
+    "excess_2y": 10.1,
+    "excess_3y": -29.1,
+    "avg_m12_m24": 20.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103148,7 +105501,20 @@
    "cons_return_2yr": 134.3,
    "path": "staging/retrospective/MAR/2017-06-16",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.9,
+    "tr_1y": 34.2,
+    "tr_2y": 30.9,
+    "tr_3y": -5.7,
+    "excess_6m": 14.0,
+    "excess_1y": 17.9,
+    "excess_2y": 8.0,
+    "excess_3y": -40.7,
+    "avg_m12_m24": 17.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103167,7 +105533,20 @@
    "cons_return_2yr": 135.3,
    "path": "staging/retrospective/MAR/2017-06-23",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.4,
+    "tr_1y": 28.8,
+    "tr_2y": 34.7,
+    "tr_3y": -8.5,
+    "excess_6m": 18.3,
+    "excess_1y": 13.8,
+    "excess_2y": 9.5,
+    "excess_3y": -43.5,
+    "avg_m12_m24": 18.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103186,7 +105565,20 @@
    "cons_return_2yr": 144.1,
    "path": "staging/retrospective/MAR/2017-06-30",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.0,
+    "tr_1y": 27.6,
+    "tr_2y": 43.0,
+    "tr_3y": -10.0,
+    "excess_6m": 24.5,
+    "excess_1y": 13.4,
+    "excess_2y": 17.5,
+    "excess_3y": -44.2,
+    "avg_m12_m24": 22.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103205,7 +105597,20 @@
    "cons_return_2yr": 144.0,
    "path": "staging/retrospective/MAR/2017-07-07",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.6,
+    "tr_1y": 28.6,
+    "tr_2y": 44.6,
+    "tr_3y": -8.3,
+    "excess_6m": 20.6,
+    "excess_1y": 12.8,
+    "excess_2y": 17.1,
+    "excess_3y": -44.6,
+    "avg_m12_m24": 23.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103224,7 +105629,20 @@
    "cons_return_2yr": 142.5,
    "path": "staging/retrospective/MAR/2017-07-14",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.1,
+    "tr_1y": 31.1,
+    "tr_2y": 44.2,
+    "tr_3y": -9.2,
+    "excess_6m": 24.8,
+    "excess_1y": 15.2,
+    "excess_2y": 17.6,
+    "excess_3y": -45.7,
+    "avg_m12_m24": 22.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103243,7 +105661,20 @@
    "cons_return_2yr": 138.1,
    "path": "staging/retrospective/MAR/2017-07-21",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.7,
+    "tr_1y": 30.7,
+    "tr_2y": 36.9,
+    "tr_3y": -8.1,
+    "excess_6m": 26.1,
+    "excess_1y": 15.4,
+    "excess_2y": 12.4,
+    "excess_3y": -46.3,
+    "avg_m12_m24": 20.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103262,7 +105693,20 @@
    "cons_return_2yr": 137.0,
    "path": "staging/retrospective/MAR/2017-07-28",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.0,
+    "tr_1y": 25.7,
+    "tr_2y": 38.7,
+    "tr_3y": -11.8,
+    "excess_6m": 25.9,
+    "excess_1y": 9.8,
+    "excess_2y": 12.2,
+    "excess_3y": -48.4,
+    "avg_m12_m24": 20.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103281,7 +105725,20 @@
    "cons_return_2yr": 133.2,
    "path": "staging/retrospective/MAR/2017-08-04",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.1,
+    "tr_1y": 23.4,
+    "tr_2y": 32.4,
+    "tr_3y": -13.7,
+    "excess_6m": 22.7,
+    "excess_1y": 6.8,
+    "excess_2y": 10.0,
+    "excess_3y": -53.6,
+    "avg_m12_m24": 18.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103300,7 +105757,20 @@
    "cons_return_2yr": 166.4,
    "path": "staging/retrospective/MAR/2017-08-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.1,
+    "tr_1y": 20.6,
+    "tr_2y": 33.8,
+    "tr_3y": -3.0,
+    "excess_6m": 28.3,
+    "excess_1y": 3.3,
+    "excess_2y": 11.6,
+    "excess_3y": -44.8,
+    "avg_m12_m24": 22.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103319,7 +105789,20 @@
    "cons_return_2yr": 175.4,
    "path": "staging/retrospective/MAR/2017-08-18",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.0,
+    "tr_1y": 27.8,
+    "tr_2y": 34.6,
+    "tr_3y": 1.0,
+    "excess_6m": 28.4,
+    "excess_1y": 8.3,
+    "excess_2y": 11.3,
+    "excess_3y": -45.2,
+    "avg_m12_m24": 27.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103338,7 +105821,20 @@
    "cons_return_2yr": 168.2,
    "path": "staging/retrospective/MAR/2017-08-25",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.9,
+    "tr_1y": 23.8,
+    "tr_2y": 27.5,
+    "tr_3y": 2.3,
+    "excess_6m": 28.5,
+    "excess_1y": 4.2,
+    "excess_2y": 6.8,
+    "excess_3y": -45.0,
+    "avg_m12_m24": 23.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103357,7 +105853,20 @@
    "cons_return_2yr": 160.1,
    "path": "staging/retrospective/MAR/2017-09-01",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.1,
+    "tr_1y": 23.3,
+    "tr_2y": 24.6,
+    "tr_3y": 3.4,
+    "excess_6m": 24.1,
+    "excess_1y": 4.1,
+    "excess_2y": 2.4,
+    "excess_3y": -45.4,
+    "avg_m12_m24": 20.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103376,7 +105885,20 @@
    "cons_return_2yr": 161.1,
    "path": "staging/retrospective/MAR/2017-09-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.4,
+    "tr_1y": 23.8,
+    "tr_2y": 28.3,
+    "tr_3y": 4.6,
+    "excess_6m": 23.2,
+    "excess_1y": 5.2,
+    "excess_2y": 3.2,
+    "excess_3y": -37.0,
+    "avg_m12_m24": 20.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103395,7 +105917,20 @@
    "cons_return_2yr": 156.2,
    "path": "staging/retrospective/MAR/2017-09-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.1,
+    "tr_1y": 25.2,
+    "tr_2y": 30.2,
+    "tr_3y": 4.0,
+    "excess_6m": 24.2,
+    "excess_1y": 7.0,
+    "excess_2y": 5.7,
+    "excess_3y": -38.5,
+    "avg_m12_m24": 18.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103414,7 +105949,20 @@
    "cons_return_2yr": 150.3,
    "path": "staging/retrospective/MAR/2017-09-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.8,
+    "tr_1y": 22.7,
+    "tr_2y": 20.7,
+    "tr_3y": -7.6,
+    "excess_6m": 21.2,
+    "excess_1y": 3.6,
+    "excess_2y": -3.1,
+    "excess_3y": -46.5,
+    "avg_m12_m24": 15.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103433,7 +105981,20 @@
    "cons_return_2yr": 144.9,
    "path": "staging/retrospective/MAR/2017-09-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.9,
+    "tr_1y": 21.1,
+    "tr_2y": 12.5,
+    "tr_3y": -11.6,
+    "excess_6m": 18.2,
+    "excess_1y": 3.4,
+    "excess_2y": -9.3,
+    "excess_3y": -50.4,
+    "avg_m12_m24": 13.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103452,7 +106013,20 @@
    "cons_return_2yr": 141.6,
    "path": "staging/retrospective/MAR/2017-10-06",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.7,
+    "tr_1y": 10.0,
+    "tr_2y": 11.1,
+    "tr_3y": -9.5,
+    "excess_6m": 14.7,
+    "excess_1y": -5.1,
+    "excess_2y": -8.8,
+    "excess_3y": -47.5,
+    "avg_m12_m24": 11.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103471,7 +106045,20 @@
    "cons_return_2yr": 134.6,
    "path": "staging/retrospective/MAR/2017-10-13",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.4,
+    "tr_1y": 3.4,
+    "tr_2y": 8.1,
+    "tr_3y": -11.0,
+    "excess_6m": 9.5,
+    "excess_1y": -6.9,
+    "excess_2y": -12.2,
+    "excess_3y": -54.7,
+    "avg_m12_m24": 8.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103490,7 +106077,20 @@
    "cons_return_2yr": 134.7,
    "path": "staging/retrospective/MAR/2017-10-20",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.1,
+    "tr_1y": -1.3,
+    "tr_2y": 8.1,
+    "tr_3y": -12.8,
+    "excess_6m": 15.5,
+    "excess_1y": -10.7,
+    "excess_2y": -11.9,
+    "excess_3y": -52.6,
+    "avg_m12_m24": 8.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103509,7 +106109,20 @@
    "cons_return_2yr": 127.1,
    "path": "staging/retrospective/MAR/2017-10-27",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.2,
+    "tr_1y": -3.9,
+    "tr_2y": 8.9,
+    "tr_3y": -17.8,
+    "excess_6m": 11.8,
+    "excess_1y": -8.8,
+    "excess_2y": -12.2,
+    "excess_3y": -55.3,
+    "avg_m12_m24": 5.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103528,7 +106141,20 @@
    "cons_return_2yr": 122.1,
    "path": "staging/retrospective/MAR/2017-11-03",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.3,
+    "tr_1y": 0.7,
+    "tr_2y": 8.1,
+    "tr_3y": -17.5,
+    "excess_6m": 8.8,
+    "excess_1y": -6.4,
+    "excess_2y": -14.5,
+    "excess_3y": -53.8,
+    "avg_m12_m24": 2.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "MAR",
@@ -103547,7 +106173,20 @@
    "cons_return_2yr": 16.0,
    "path": "staging/retrospective/MAR/2017-11-09",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.6,
+    "tr_1y": -0.2,
+    "tr_2y": 14.9,
+    "tr_3y": 3.1,
+    "excess_6m": 11.3,
+    "excess_1y": -9.8,
+    "excess_2y": -8.9,
+    "excess_3y": -40.5,
+    "avg_m12_m24": 5.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103566,7 +106205,20 @@
    "cons_return_2yr": 9.9,
    "path": "staging/retrospective/MAR/2017-11-17",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.1,
+    "tr_1y": -4.3,
+    "tr_2y": 10.6,
+    "tr_3y": 1.2,
+    "excess_6m": 4.6,
+    "excess_1y": -12.4,
+    "excess_2y": -14.4,
+    "excess_3y": -44.9,
+    "avg_m12_m24": 0.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103585,7 +106237,20 @@
    "cons_return_2yr": 9.0,
    "path": "staging/retrospective/MAR/2017-11-24",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.6,
+    "tr_1y": -6.1,
+    "tr_2y": 10.4,
+    "tr_3y": 6.6,
+    "excess_6m": 3.9,
+    "excess_1y": -9.1,
+    "excess_2y": -13.1,
+    "excess_3y": -39.2,
+    "avg_m12_m24": -0.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103604,7 +106269,20 @@
    "cons_return_2yr": 8.7,
    "path": "staging/retrospective/MAR/2017-12-01",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.6,
+    "tr_1y": -8.1,
+    "tr_2y": 13.3,
+    "tr_3y": 4.4,
+    "excess_6m": 5.3,
+    "excess_1y": -14.2,
+    "excess_2y": -9.5,
+    "excess_3y": -40.1,
+    "avg_m12_m24": -0.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103623,7 +106301,20 @@
    "cons_return_2yr": 6.6,
    "path": "staging/retrospective/MAR/2017-12-08",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.6,
+    "tr_1y": -12.8,
+    "tr_2y": 12.7,
+    "tr_3y": 5.5,
+    "excess_6m": 1.9,
+    "excess_1y": -13.9,
+    "excess_2y": -9.9,
+    "excess_3y": -40.0,
+    "avg_m12_m24": -1.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103642,7 +106333,20 @@
    "cons_return_2yr": 6.2,
    "path": "staging/retrospective/MAR/2017-12-15",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.5,
+    "tr_1y": -15.9,
+    "tr_2y": 15.2,
+    "tr_3y": 3.4,
+    "excess_6m": 2.6,
+    "excess_1y": -15.0,
+    "excess_2y": -7.3,
+    "excess_3y": -40.8,
+    "avg_m12_m24": -1.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103661,7 +106365,20 @@
    "cons_return_2yr": 2.9,
    "path": "staging/retrospective/MAR/2017-12-22",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.5,
+    "tr_1y": -22.0,
+    "tr_2y": 15.1,
+    "tr_3y": -2.9,
+    "excess_6m": -4.0,
+    "excess_1y": -13.9,
+    "excess_2y": -8.8,
+    "excess_3y": -46.3,
+    "avg_m12_m24": -4.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MAR",
@@ -103680,7 +106397,20 @@
    "cons_return_2yr": 1.6,
    "path": "staging/retrospective/MAR/2017-12-29",
    "generated": "2026-11-09",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.2,
+    "tr_1y": -19.8,
+    "tr_2y": 15.0,
+    "tr_3y": -2.1,
+    "excess_6m": -8.7,
+    "excess_1y": -14.6,
+    "excess_2y": -10.0,
+    "excess_3y": -47.4,
+    "avg_m12_m24": -4.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "MSFT",

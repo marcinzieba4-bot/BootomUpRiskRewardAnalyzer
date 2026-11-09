@@ -1,8 +1,8 @@
 # MAR retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MAR weekly dates: 315 from 2008-01-04 to 2013-12-31. They are **labels and hypotheses**: never feed
+Patterns seen in `outcome.json` for the MAR weekly dates: 525 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed: 2008-2009
-after 6eb0401, 2010-2013 after 893d2ad. Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its
+after 6eb0401, 2010-2013 after 893d2ad, 2014-2017 after a9637a3. Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its
 6-month, 1-, 2- and 3-year horizons. Total returns keep Yahoo's 1061:1000 factor for the 2011 Marriott Vacations Worldwide spin-off, so
 they include the distributed shares. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
 is +32.2% over two years. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark, FAIR should land within
@@ -208,3 +208,111 @@ and changing a rule means a new method version tested elsewhere.
   fee guide, 10: held on 3 as built, 0 under the alternative.
 - **Signals.** The proxy composite's rank against the outcome changes sign from year to year (-0.43, +0.04, -0.56, +0.61), so it is no
   steady guide here. The adjusted gap ranked the outcome positively in 2011-2013 (+0.96, +0.65, +0.87).
+
+## 2014 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 5 | +19.1% | +9.2% to +22.8% | 0 | 4 | +21.3% | 5 |
+| class RICH | 48 | +11.0% | -8.6% to +41.3% | 3 | 17 | +6.3% | 31 |
+| legacy tier WATCHLIST | 6 | +21.9% | +9.2% to +28.4% | 0 | 5 | +21.6% | 5 |
+| legacy tier AVOID | 47 | +10.8% | -8.6% to +41.3% | 3 | 16 | +6.3% | 31 |
+| FY13 EPS $1.995 (2014-01-03 to 2014-02-14) | 7 | +27.8% | +21.0% to +41.3% | 1 | 7 | +50.9% | 0 |
+| FY14 EPS $2.37 (2014-02-21 to 2014-04-25) | 10 | +29.0% | +20.2% to +35.0% | 2 | 10 | +31.4% | 0 |
+| FY14 EPS $2.46 (2014-05-01 to 2014-07-25) | 13 | +10.8% | -1.4% to +22.8% | 0 | 4 | +11.5% | 13 |
+| FY14 EPS $2.455 (2014-07-31 to 2014-10-24) | 13 | +6.0% | -3.0% to +14.6% | 0 | 0 | +0.6% | 13 |
+| FY14 EPS $2.50 (2014-10-30 to 2014-12-31) | 10 | +5.2% | -8.6% to +12.3% | 0 | 0 | -10.8% | 10 |
+
+- **RICH held from May 2014 on (36 of 36), not before.**
+  - The 17 dates to 2014-04-25, on the FY13 anchor and the first FY14 guide, returned +20% to +41% over two years (4-26pp ahead of SPY)
+    and held on none.
+  - From 2014-05-01 two-year returns ran -9% to +23% and the m12-24 average price -13% to +22% from the entry, through a 23-31%
+    drawdown.
+- **Three-year returns were +49% to +85%** on every date, ahead of SPY on all 53. The two-year price landed nearest BASE on 39 dates and
+  BULL on 14.
+- Within the year the entry price ranks the m12-24 return at Spearman -1.00 and the EPP gap at -0.91. The adjusted gap scores -0.15 and
+  the proxy composite -0.52.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 1 | +108.5% | +108.5% | 1 | 1 | +56.0% | 1 |
+| class FAIR | 22 | +52.0% | +16.1% to +106.1% | 18 | 21 | +26.4% | 4 |
+| class RICH | 30 | +31.3% | +7.1% to +62.2% | 14 | 19 | -3.4% | 11 |
+| legacy tier ACCUMULATE | 1 | +108.5% | +108.5% | 1 | 1 | +56.0% | 1 |
+| legacy tier WATCHLIST | 22 | +52.0% | +16.1% to +106.1% | 18 | 21 | +26.4% | 4 |
+| legacy tier AVOID | 30 | +31.3% | +7.1% to +62.2% | 14 | 19 | -3.4% | 11 |
+| FY14 EPS $2.50 (2015-01-02 to 2015-02-13) | 7 | +11.7% | +7.1% to +18.2% | 0 | 1 | -9.0% | 6 |
+| FY15 EPS $3.06 (2015-02-20 to 2015-07-24) | 23 | +22.8% | +7.9% to +41.8% | 10 | 17 | -3.5% | 9 |
+| FY15 EPS $3.14 (2015-07-31 to 2015-12-31) | 23 | +58.0% | +42.4% to +108.5% | 23 | 23 | +26.4% | 1 |
+
+- **The class ranked the outcome** (CHEAP +108.5%, FAIR +52.0%, RICH +31.3%), **but most calls missed.**
+  - RICH held on 11 of 30: one-year returns were weak (median -10.8%), but the two-year endpoints in 2017 caught the post-merger rally.
+  - FAIR held on 4 of 22.
+  - The single CHEAP date (2015-12-18, $65.11) returned +108.5%.
+- **By the endpoint-robust measure RICH was largely right:** the m12-24 average price was -3.4% median from the entry.
+- The adjusted gap ranks the m12-24 return at +0.61, the EPP gap at -0.94 and the proxy composite at -0.86.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 16 | +111.7% | +96.7% to +145.5% | 16 | 16 | +73.3% | 16 |
+| class FAIR | 28 | +91.1% | +70.7% to +117.2% | 28 | 28 | +84.7% | 0 |
+| class RICH | 8 | +48.8% | +25.7% to +61.7% | 6 | 8 | +65.7% | 0 |
+| legacy tier BUY | 4 | +110.4% | +100.5% to +114.5% | 4 | 4 | +76.0% | 4 |
+| legacy tier ACCUMULATE | 14 | +117.2% | +96.3% to +145.5% | 14 | 14 | +71.9% | 12 |
+| legacy tier WATCHLIST | 26 | +90.6% | +70.7% to +112.8% | 26 | 26 | +84.7% | 0 |
+| legacy tier AVOID | 8 | +48.8% | +25.7% to +61.7% | 6 | 8 | +65.7% | 0 |
+| FY15 EPS $3.14 (2016-01-08 to 2016-02-12) | 6 | +134.1% | +121.5% to +145.5% | 6 | 6 | +75.4% | 6 |
+| FY16 EPS $3.775 (2016-02-19 to 2016-04-22) | 10 | +106.3% | +96.3% to +114.5% | 10 | 10 | +68.4% | 9 |
+| FY15 actual $3.15 after the withdrawal (2016-04-29 to 2016-12-30) | 36 | +85.0% | +25.7% to +117.2% | 34 | 36 | +80.6% | 1 |
+| price under the EPP floor | 6 | +110.4% | +96.7% to +138.8% | 6 | 6 | +76.0% | 6 |
+| price at or over the EPP floor | 46 | +93.0% | +25.7% to +145.5% | 44 | 46 | +78.5% | 10 |
+
+- **CHEAP held on all 16 dates (+97% to +146%). FAIR and RICH missed on every date,** in a two-year run in which every date beat SPY
+  (one-year median +48.5%, three-year +75% to +121%).
+- **After the Q1 2016 withdrawal the anchor fell to FY15's $3.15** and the 28 dates from 2016-04-29 read FAIR. They returned +71% to
+  +117%, 36-81pp ahead of SPY. With the February guide still standing, 27 of them would have read CHEAP and held. That is a hindsight
+  comparison of a call decided before scoring: the withdrawal rule stays.
+- The six dates under the EPP floor (January-March 2016) returned +97% to +139%.
+- **The two-year price landed nearest BULL on 29 dates and XBULL on 23.**
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 26 | +30.2% | +8.1% to +44.6% | 10 | 17 | +20.0% | 17 |
+| class RICH | 26 | +36.3% | +10.4% to +50.9% | 17 | 18 | +35.6% | 8 |
+| legacy tier BUY | 26 | +30.2% | +8.1% to +44.6% | 10 | 17 | +20.0% | 17 |
+| legacy tier AVOID | 26 | +36.3% | +10.4% to +50.9% | 17 | 18 | +35.6% | 8 |
+| FY15 actual $3.15, FY16 withdrawn (2017-01-06 to 2017-02-10) | 6 | +35.9% | +30.9% to +37.4% | 5 | 6 | +51.7% | 0 |
+| FY17 EPS $3.88 (2017-02-17 to 2017-05-05) | 12 | +47.4% | +36.0% to +50.9% | 12 | 12 | +36.0% | 0 |
+| FY17 EPS $4.005 (2017-05-10 to 2017-08-04) | 13 | +32.4% | +16.3% to +44.6% | 8 | 11 | +20.1% | 11 |
+| FY17 EPS $4.12 (2017-08-09 to 2017-11-03) | 13 | +20.7% | +8.1% to +34.6% | 2 | 6 | +15.6% | 6 |
+| FY17 EPS $4.23 (2017-11-09 to 2017-12-29) | 8 | +14.9% | +10.4% to +15.2% | 0 | 0 | -0.4% | 8 |
+
+- **The CHEAP run of May-November 2017 rests on the acquisition-swollen guides** (Q2 and Q3 2017 fees read against legacy-Marriott
+  quarters, +59% to +68%). It held on 17 of 26: two-year returns ran +8% to +45%, and three-year returns -18% to +9% (to 2020).
+  - Read against the combined 2016 base, all 26 would have been RICH and 9 would have held.
+  - Hindsight, not a rule: the swollen-guide CHEAP calls were the weakest CHEAP calls of the series. A guide read against a
+    pre-acquisition base measures the deal, not the business. Test the combined-base reading where another ticker's company states one
+    before the guide (AVGO's LSI and Broadcom, LOW's acquisitions); never fit it to MAR.
+- **RICH split by date.**
+  - The 18 dates of January-May 2017 (the price 21-31% above the floor) returned +31% to +51% and held on none.
+  - The 8 dates from 2017-11-09 (48-69% above the floor) returned +10% to +15%, 7-14pp behind SPY, and held on all.
+- The two-year price landed nearest BEAR on 25 dates, BASE on 9 and BULL on 18. Three-year returns (to 2020) had a median of -3.0%, ahead
+  of SPY on 10.
+
+## The 2014-2017 encoding calls, seen afterwards
+
+These are hindsight comparisons of alternatives decided before scoring (retro/README.md, "MAR 2014-2017", Sensitivity). The calls stay.
+
+- **The 2017 guides against legacy-Marriott quarters (the AVGO rule):** 26 dates CHEAP as built, held on 17. They would have been RICH
+  on the combined base and held on 9.
+- **The 2016 EPS withdrawal:** 31 dates as built, held on 0. With the February guide standing, 27 would have moved to CHEAP and held. The
+  alternative that does better reads the stock cheaper in a rising market (the 2010-2013 rising-tide caveat).
+- **GAAP EPS wherever the year is not distorted:** 23 dates, held on 11 as built and 14 under the alternative.
+- **Signals:** the proxy composite ranks the outcome at -0.52, -0.86, +0.41 and -0.51; it is not a steady guide for MAR. The adjusted
+  gap scores -0.15, +0.61, +0.11 and -0.20: weaker than in 2011-2013.
