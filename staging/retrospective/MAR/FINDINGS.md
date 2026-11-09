@@ -1,9 +1,10 @@
 # MAR retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MAR weekly dates: 736 from 2008-01-04 to 2021-12-31. They are **labels and hypotheses**: never feed
+Patterns seen in `outcome.json` for the MAR weekly dates: 991 from 2008-01-04 to 2026-11-03. They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed: 2008-2009
-after 6eb0401, 2010-2013 after 893d2ad, 2014-2017 after a9637a3, 2018-2021 after f06ae2a and its checks (fdab930). Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its
-6-month, 1-, 2- and 3-year horizons. Total returns keep Yahoo's 1061:1000 factor for the 2011 Marriott Vacations Worldwide spin-off, so
+after 6eb0401, 2010-2013 after 893d2ad, 2014-2017 after a9637a3, 2018-2021 after f06ae2a and its checks (fdab930), 2022-2026 after e6cab74 and its checks (049d18d). Outcomes were computed on 2026-11-09 from the closes posted
+to 2026-11-06; every date to 2021 has its 6-month, 1-, 2- and 3-year horizons, and dates from 2022 have those that have elapsed (two years to
+2024-11-05). Total returns keep Yahoo's 1061:1000 factor for the 2011 Marriott Vacations Worldwide spin-off, so
 they include the distributed shares. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
 is +32.2% over two years. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark, FAIR should land within
 ±15pp of the benchmark, and RICH should miss the hurdle and lag the benchmark.
@@ -418,3 +419,161 @@ These are hindsight comparisons of alternatives decided before scoring (retro/RE
 - In the shock the fallbacks pulled in opposite directions. The withdrawal-and-trough reading was the worst of the series in 2020-21; the
   trough base made the 2021 rebound read CHEAP, and that held. The two together are the case for testing a pre-shock base in a
   withdrawal (the hypothesis above), on other tickers first.
+
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 27 | +75.5% | +33.2% to +93.8% | 27 | 27 | +48.1% | 27 |
+| class FAIR | 25 | +47.2% | +32.9% to +74.7% | 25 | 25 | +19.0% | 7 |
+| legacy tier BUY | 51 | +54.9% | +32.9% to +93.8% | 51 | 51 | +41.2% | 33 |
+| legacy tier ACCUMULATE | 1 | +34.0% | +34.0% to +34.0% | 1 | 1 | +19.0% | 1 |
+| FY19 actual $3.80 (no FY21 guide) (2022-01-07 to 2022-02-11) | 6 | +50.7% | +35.2% to +53.4% | 6 | 6 | +17.9% | 2 |
+| FY21 actual $3.34 (no FY22 guide) (2022-02-16 to 2022-07-29) | 24 | +49.0% | +32.9% to +79.0% | 24 | 24 | +24.7% | 10 |
+| FY22 EPS $6.46 (2022-08-03 to 2022-10-28) | 13 | +54.9% | +33.2% to +85.1% | 13 | 13 | +46.8% | 13 |
+| FY22 EPS $6.545 (2022-11-04 to 2022-12-30) | 9 | +79.9% | +74.9% to +93.8% | 9 | 9 | +51.3% | 9 |
+| price at or over the EPP floor | 52 | +54.9% | +32.9% to +93.8% | 52 | 52 | +41.2% | 34 |
+
+- **CHEAP held on all 27 dates; FAIR on 7 of 25.** Every 2022 date cleared the hurdle and beat SPY over two years (+33% to +94%, 1-40pp
+  ahead). The CHEAP dates returned a median +75.5% (m12-24 average price +48.1%); the FAIR dates of January to July 2022 a median +47.2%,
+  and 18 of the 25 beat SPY by more than 15pp, so the FAIR call missed by being too cautious.
+- **The trough anchor and the recovery-quarter BASE pulled against each other.** On FY2019's $3.80 and then FY2021's $3.34 the stock sat at
+  the 86th-100th percentile of its own P/E range, which alone reads RICH; BASE of +83% to +97%/yr on fee growth against the 2021 quarters
+  pulled it back to FAIR. Read against 2019 (the sensitivity variant), all 30 dates of January to July would have been RICH, and RICH would
+  have held on none of them: the recovery-quarter growth, absurd as a two-year rate, was nearer the outcome than a 2019 base.
+- **From the first FY22 guide (2022-08-03) the class was CHEAP, and right.** The 22 dates on the $6.46 and $6.545 guides returned +33% to
+  +94% and all held.
+- The adjusted gap ranks the m12-24 return at Spearman +0.82, the EPP gap at -0.80, Ratio B at -0.57, the entry price at -0.86 and the
+  proxy composite at -0.03. The two-year price landed nearest BASE on all 52 dates; three-year returns ran +26% to +116%, ahead of SPY on 46.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 49 | +47.4% | +26.0% to +80.6% | 46 | 27 | +42.0% | 46 |
+| class FAIR | 3 | +41.8% | +41.7% to +43.2% | 3 | 0 | +20.6% | 3 |
+| legacy tier BUY | 36 | +51.9% | +26.3% to +80.6% | 35 | 27 | +45.2% | 35 |
+| legacy tier ACCUMULATE | 15 | +39.9% | +26.0% to +47.4% | 13 | 0 | +28.4% | 13 |
+| legacy tier WATCHLIST | 1 | +41.7% | +41.7% to +41.7% | 1 | 0 | +19.3% | 1 |
+| FY22 EPS $6.545 (2023-01-06 to 2023-02-10) | 6 | +71.0% | +67.7% to +80.6% | 6 | 6 | +49.7% | 6 |
+| FY23 EPS $7.57 (2023-02-15 to 2023-04-28) | 11 | +58.1% | +26.3% to +64.8% | 10 | 10 | +50.8% | 10 |
+| FY23 EPS $8.195 (2023-05-03 to 2023-07-28) | 13 | +51.3% | +40.5% to +58.9% | 13 | 11 | +42.5% | 13 |
+| FY23 EPS $8.505 (2023-08-02 to 2023-10-27) | 13 | +36.9% | +26.0% to +49.0% | 11 | 0 | +31.9% | 11 |
+| FY23 EPS $8.545 (2023-11-03 to 2023-12-29) | 9 | +41.8% | +39.9% to +49.5% | 9 | 0 | +28.0% | 9 |
+| price at or over the EPP floor | 52 | +45.5% | +26.0% to +80.6% | 49 | 27 | +41.9% | 49 |
+
+- **CHEAP on 49 dates, held on 46.** Every date cleared or nearly cleared the hurdle (+26% to +81%). The three misses (2023-04-21,
+  2023-08-02, 2023-08-11) returned +26% to +32%, just short of the 32.2% hurdle and behind SPY.
+- **The edge over SPY shrank through the year.** The six January-February dates on the FY22 guide returned +68% to +81% (all ahead of
+  SPY); the dates on the $8.505 and $8.545 FY23 guides (August-December) returned +26% to +50% and beat SPY on none, as the 2024-2025
+  market rallied: absolute returns held the CHEAP call (the hurdle), relative ones did not.
+- Ranking: the adjusted gap +0.95, Ratio B -0.96, the entry price -0.99, the EPP gap -0.59, the proxy composite +0.54. Three-year returns
+  (44 dates) ran +64% to +131%.
+
+## 2024 (53 dates; 45 with a two-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 6 | +64.8% | +60.6% to +72.8% | 6 | 6 | +46.8% | 6 |
+| class FAIR | 39 | +48.1% | +27.4% to +70.3% | 35 | 31 | +25.5% | 29 |
+| legacy tier ACCUMULATE | 26 | +57.1% | +30.7% to +72.8% | 25 | 24 | +29.9% | 19 |
+| legacy tier WATCHLIST | 19 | +41.3% | +27.4% to +62.8% | 16 | 13 | +14.3% | 16 |
+| FY23 EPS $8.545 (2024-01-05 to 2024-02-09) | 6 | +41.6% | +32.3% to +45.6% | 6 | 0 | +16.1% | 6 |
+| FY24 EPS $9.35 (2024-02-14 to 2024-04-26) | 11 | +38.0% | +27.4% to +62.3% | 7 | 9 | +12.0% | 10 |
+| FY24 EPS $9.48 (2024-05-02 to 2024-07-26) | 13 | +58.3% | +49.0% to +72.1% | 13 | 13 | +28.9% | 7 |
+| FY24 EPS $9.315 (2024-08-01 to 2024-11-01) | 14 | +51.1% | +40.9% to +72.8% | 14 | 14 | +39.9% | 12 |
+| FY24 EPS $9.23 (2024-11-05) | 1 | +62.8% | +62.8% to +62.8% | 1 | 1 | +33.7% | 0 |
+| price at or over the EPP floor | 45 | +50.7% | +27.4% to +72.8% | 41 | 37 | +28.0% | 35 |
+
+- **FAIR held on 29 of 39 and CHEAP on all 6.** The CHEAP dates of the June and August 2024 dips returned +61% to +73%; the FAIR misses
+  (April, June-July and late October-November 2024) beat SPY by 16-33pp.
+- **The eight RICH dates (2024-11-15 to 2024-12-31) have no two-year label yet.** Over one year they returned +0.9% to +13.5%, behind SPY
+  by 5-13pp, missing the 15% hurdle on all eight: the RICH call was right over one year. Their two-year labels come in November-December
+  2026.
+- The two-year price landed nearest BULL on 41 of the 45 dates. Ranking: the adjusted gap +0.64, the EPP gap -0.53, Ratio B -0.54, the
+  proxy composite +0.38.
+
+## 2025 (53 dates; one-year horizon on 45)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 3 | +58.4% | +55.9% to +72.7% | 3 | 3 | - | - |
+| class FAIR | 36 | +35.4% | +14.8% to +58.9% | 35 | 35 | - | - |
+| class RICH | 6 | +18.5% | +9.4% to +48.4% | 3 | 3 | - | - |
+| legacy tier BUY | 2 | +72.7% | +55.9% to +72.7% | 2 | 2 | - | - |
+| legacy tier ACCUMULATE | 6 | +43.4% | +30.2% to +58.4% | 6 | 6 | - | - |
+| legacy tier WATCHLIST | 31 | +35.2% | +14.8% to +58.9% | 30 | 30 | - | - |
+| legacy tier AVOID | 6 | +18.5% | +9.4% to +48.4% | 3 | 3 | - | - |
+| FY24 EPS $9.23 (2025-01-03 to 2025-02-07) | 6 | +14.8% | +9.4% to +22.2% | 2 | 2 | - | - |
+| FY25 EPS $10.005 (2025-02-12 to 2025-08-01) | 25 | +38.6% | +22.8% to +72.7% | 25 | 25 | - | - |
+| FY25 EPS $9.965 (2025-08-06 to 2025-10-31) | 13 | +35.2% | +26.6% to +54.3% | 13 | 13 | - | - |
+| FY25 EPS $10.02 (2025-11-05) | 1 | +48.4% | +48.4% to +48.4% | 1 | 1 | - | - |
+| price at or over the EPP floor | 45 | +35.2% | +9.4% to +72.7% | 41 | 41 | - | - |
+
+- **One year is not the method's horizon.** The 36 FAIR dates with a one-year horizon returned a median +35.4% (+15% to +59%), the three
+  CHEAP dates of the April 2025 fall +56% to +73%, and the six RICH dates +9% to +48% (median +18.5%; three behind SPY). Over one year the
+  classes ranked the outcome (CHEAP over FAIR over RICH), and the adjusted gap ranks it at +0.80.
+
+## 2026 (45 dates; six-month horizon on 19; none from 2026-05-15)
+
+| Group | Dates | Median 6-month total return | Range | Cleared 7.2% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 6 | +7.1% | +4.0% to +11.3% | 2 | 0 | - | - |
+| class RICH | 13 | +12.9% | -2.2% to +19.5% | 8 | 7 | - | - |
+| legacy tier WATCHLIST | 6 | +7.1% | +4.0% to +11.3% | 2 | 0 | - | - |
+| legacy tier AVOID | 13 | +12.9% | -2.2% to +19.5% | 8 | 7 | - | - |
+| FY25 EPS $10.02 (2026-01-02 to 2026-02-06) | 6 | +14.4% | +8.4% to +19.5% | 6 | 5 | - | - |
+| FY26 EPS $11.445 (2026-02-11 to 2026-05-01) | 12 | +6.4% | -2.2% to +12.9% | 3 | 1 | - | - |
+| FY26 EPS $11.505 (2026-05-07) | 1 | +18.7% | +18.7% to +18.7% | 1 | 1 | - | - |
+| price at or over the EPP floor | 19 | +8.4% | -2.2% to +19.5% | 10 | 7 | - | - |
+
+- Six months only, on 19 dates: RICH a median +12.9% (-2% to +20%), FAIR +7.1%. Across all 35 RICH dates of 2024-2026 with a six-month
+  horizon the median is +6.8% (-13.8% to +35.2%), ahead of SPY on 16. No reading yet.
+
+## Dates with a two-year horizon, 2022-2024 together (149)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 82 | +53.4% | +26.0% to +93.8% | 79 | 60 | +45.1% | 79 |
+| class FAIR | 67 | +46.8% | +27.4% to +74.7% | 63 | 56 | +23.2% | 39 |
+| legacy tier BUY | 87 | +52.7% | +26.3% to +93.8% | 86 | 78 | +44.1% | 68 |
+| legacy tier ACCUMULATE | 42 | +50.2% | +26.0% to +72.8% | 39 | 25 | +28.9% | 33 |
+| legacy tier WATCHLIST | 20 | +41.4% | +27.4% to +62.8% | 17 | 13 | +16.1% | 17 |
+| FY19 actual $3.80 (no FY21 guide) (2022-01-07 to 2022-02-11) | 6 | +50.7% | +35.2% to +53.4% | 6 | 6 | +17.9% | 2 |
+| FY21 actual $3.34 (no FY22 guide) (2022-02-16 to 2022-07-29) | 24 | +49.0% | +32.9% to +79.0% | 24 | 24 | +24.7% | 10 |
+| FY22 EPS $6.46 (2022-08-03 to 2022-10-28) | 13 | +54.9% | +33.2% to +85.1% | 13 | 13 | +46.8% | 13 |
+| FY22 EPS $6.545 (2022-11-04 to 2023-02-10) | 15 | +77.1% | +67.7% to +93.8% | 15 | 15 | +49.7% | 15 |
+| FY23 EPS $7.57 (2023-02-15 to 2023-04-28) | 11 | +58.1% | +26.3% to +64.8% | 10 | 10 | +50.8% | 10 |
+| FY23 EPS $8.195 (2023-05-03 to 2023-07-28) | 13 | +51.3% | +40.5% to +58.9% | 13 | 11 | +42.5% | 13 |
+| FY23 EPS $8.505 (2023-08-02 to 2023-10-27) | 13 | +36.9% | +26.0% to +49.0% | 11 | 0 | +31.9% | 11 |
+| FY23 EPS $8.545 (2023-11-03 to 2024-02-09) | 15 | +41.7% | +32.3% to +49.5% | 15 | 0 | +21.2% | 15 |
+| FY24 EPS $9.35 (2024-02-14 to 2024-04-26) | 11 | +38.0% | +27.4% to +62.3% | 7 | 9 | +12.0% | 10 |
+| FY24 EPS $9.48 (2024-05-02 to 2024-07-26) | 13 | +58.3% | +49.0% to +72.1% | 13 | 13 | +28.9% | 7 |
+| FY24 EPS $9.315 (2024-08-01 to 2024-11-01) | 14 | +51.1% | +40.9% to +72.8% | 14 | 14 | +39.9% | 12 |
+| FY24 EPS $9.23 (2024-11-05) | 1 | +62.8% | +62.8% to +62.8% | 1 | 1 | +33.7% | 0 |
+| price at or over the EPP floor | 149 | +50.2% | +26.0% to +93.8% | 142 | 116 | +35.3% | 118 |
+
+- **No date of 2022-2024 lost money over two years** (+26% to +94%, median +50.2%); 142 of 149 cleared the hurdle and 116 beat SPY.
+  CHEAP held on 79 of 82 and FAIR on 39 of 67; RICH has no two-year label before 2024-11-15.
+- The adjusted gap ranks the m12-24 return at +0.73, the entry price at -0.61, Ratio B at -0.64, the EPP gap at -0.59 and the proxy
+  composite at +0.39. The landing was nearest BASE on 103 dates and BULL on 46.
+
+## The 2022-2026 encoding calls, seen afterwards
+
+These are hindsight comparisons of alternatives decided before scoring (retro/README.md, "MAR 2022-2026", Sensitivity). The calls stay.
+
+- **Growth against the 2021-2022 recovery quarters (the frozen fallback and the AVGO rule):** the 45 dates the 2019 base would move held
+  on 27 as built and would have held on 6. The opposite of 2021, where the trough base made the rebound read CHEAP and that held too:
+  for MAR the recovery-quarter growth was the better read twice. Hypothesis, not a rule; the RCL 2022-2026 comparison runs the same way
+  (its vs-2019 variant moved 2023 CHEAP calls that held). Test a restart base on other tickers' shocks; never fit it to MAR.
+- **GAAP EPS from FY2021:** of the 47 dates the company's adjusted EPS would move, 29 have a two-year label: held on 20 as built and 8
+  under the alternative (most moves were FAIR to RICH in a rising market).
+- **FY2023 with its tax benefits:** three moved dates with a two-year label, held on all three as built and none under the alternative.
+- **The quarter fee guides rather than the fiscal-year guide:** six dates, held on all six either way.
+- **Signals:** at BEAR 152 classes move (99 with a two-year label: held on 71 as built, 5 as moved); at XBULL 60 (33: held on 26 as built,
+  31 as moved, the FAIR dates of 2024 moving to CHEAP). The proxy composite ranks the two-year outcome at -0.03, +0.54 and +0.38 in
+  2022-2024; it is not a steady guide for MAR.
+- Seen across the series: after the 2009 and 2020 troughs a trough-year anchor read the recovery RICH or FAIR and missed; in 2022 the same
+  anchor was offset by recovery-quarter growth and the read was FAIR, still too cautious. Hypothesis for the method (a mid-cycle anchor
+  after a trough), to be tested on other tickers, not fitted to MAR.
