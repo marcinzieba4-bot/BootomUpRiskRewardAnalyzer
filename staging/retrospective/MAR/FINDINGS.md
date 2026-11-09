@@ -273,8 +273,8 @@ and changing a rule means a new method version tested elsewhere.
 
 - **CHEAP held on all 16 dates (+97% to +146%). FAIR and RICH missed on every date,** in a two-year run in which every date beat SPY
   (one-year median +48.5%, three-year +75% to +121%).
-- **After the Q1 2016 withdrawal the anchor fell to FY15's $3.15** and the 28 dates from 2016-04-29 read FAIR. They returned +71% to
-  +117%, 36-81pp ahead of SPY. With the February guide still standing, 27 of them would have read CHEAP and held. That is a hindsight
+- **After the Q1 2016 withdrawal the anchor fell to FY15's $3.15** and 27 of the 28 dates from 2016-04-29 to 2016-11-04 read FAIR
+  (2016-06-24 read CHEAP). They returned +71% to +117%, 36-81pp ahead of SPY. With the February guide still standing, 27 of them would have read CHEAP and held. That is a hindsight
   comparison of a call decided before scoring: the withdrawal rule stays.
 - The six dates under the EPP floor (January-March 2016) returned +97% to +139%.
 - **The two-year price landed nearest BULL on 29 dates and XBULL on 23.**
@@ -300,7 +300,7 @@ and changing a rule means a new method version tested elsewhere.
     pre-acquisition base measures the deal, not the business. Test the combined-base reading where another ticker's company states one
     before the guide (AVGO's LSI and Broadcom, LOW's acquisitions); never fit it to MAR.
 - **RICH split by date.**
-  - The 18 dates of January-May 2017 (the price 21-31% above the floor) returned +31% to +51% and held on none.
+  - The 18 dates of January-May 2017 (the price 18-53% above the floor) returned +31% to +51% and held on none.
   - The 8 dates from 2017-11-09 (48-69% above the floor) returned +10% to +15%, 7-14pp behind SPY, and held on all.
 - The two-year price landed nearest BEAR on 25 dates, BASE on 9 and BULL on 18. Three-year returns (to 2020) had a median of -3.0%, ahead
   of SPY on 10.
