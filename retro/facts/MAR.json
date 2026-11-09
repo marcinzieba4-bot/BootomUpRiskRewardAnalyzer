@@ -1,0 +1,2226 @@
+{
+ "_doc": "Point-in-time fact sheet for MAR retrospectives (retro/build_mar.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day. Generated from the transcribed raw figures; every growth rate, margin and rule-T value is computed from them, and the builder re-derives them. Per-share figures published before a split or stock dividend carry their own publication date ('eps_published', 'shares_published'); a split applies from its 'applies' date, the later of its ex-date and the first filing that states it.",
+ "ticker": "MAR",
+ "sources": {
+  "MA1": {
+   "published": "1999-03-16",
+   "title": "Marriott International FY1998 Form 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838599000780/0000928385-99-000780.txt",
+   "accepted": "filed 1999-03-16 (EDGAR gives the filing date only)",
+   "supports": "the March 27, 1998 spinoff: no stock price data before it ('we were not a publicly-held company during that time')"
+  },
+  "MA2": {
+   "published": "2000-03-10",
+   "title": "Marriott International FY1999 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838500000655/0000928385-00-000655.txt",
+   "accepted": "filed 2000-03-10 (filing date only)",
+   "supports": "rule T: 1998 RevPAR and occupancy for comparable company-operated U.S. properties across the lodging brands"
+  },
+  "MA3": {
+   "published": "2001-03-16",
+   "title": "Marriott International FY2000 Form 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838501000845/0001.txt",
+   "accepted": "filed 2001-03-16 (filing date only)",
+   "supports": "rule T: 1996-1997 sales, 1999 RevPAR and occupancy; FY1998 diluted shares 273.1M (before the 2006 split)"
+  },
+  "MA4": {
+   "published": "2002-03-22",
+   "title": "Marriott International FY2001 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838502000921/d10k.txt",
+   "accepted": "filed 2002-03-22 (filing date only)",
+   "supports": "1997 sales (history and rule T), 1998 sales on the same basis; FY1999 diluted shares 269.8M (before the 2006 split)"
+  },
+  "MA5": {
+   "published": "2003-02-14",
+   "title": "Marriott International FY2002 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838503000294/d10k.htm",
+   "accepted": "accepted 2003-02-14 09:56 ET",
+   "supports": "FY1998 diluted EPS from continuing operations $1.39 and sales $6,311M (Senior Living and Distribution Services discontinued); rule T: 1999 sales change, 2001 and 2002 RevPAR, 2001 occupancy"
+  },
+  "MA6": {
+   "published": "2004-02-10",
+   "title": "Marriott International Q4 2003 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312504017690/dex99.htm",
+   "accepted": "accepted 2004-02-10 07:08 ET (before the open)",
+   "supports": "FY2002 diluted EPS from continuing operations excluding synthetic fuel $1.45 (GAAP $1.74), before the 2006 split"
+  },
+  "MA7": {
+   "published": "2005-02-08",
+   "title": "Marriott International Q4 2004 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312505021600/dex99.htm",
+   "accepted": "accepted 2005-02-08 09:00 ET (before the open)",
+   "supports": "FY2003 diluted EPS from continuing operations excluding synthetic fuel $1.55 (GAAP $1.94), before the 2006 split"
+  },
+  "MA8": {
+   "published": "2005-02-23",
+   "title": "Marriott International FY2004 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312505034535/d10k.htm",
+   "accepted": "accepted 2005-02-22 21:19 ET (after the close), so dated 2005-02-23",
+   "supports": "FY2002 synthetic fuel revenues $193M and expenses $327M (statement of income)"
+  },
+  "MA9": {
+   "published": "2006-02-09",
+   "title": "Marriott International Q4 2005 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312506024520/dex99.htm",
+   "accepted": "accepted 2006-02-09 08:17 ET (before the open)",
+   "supports": "FY2004 diluted EPS from continuing operations excluding synthetic fuel $2.03 (GAAP $2.47), before the 2006 split"
+  },
+  "MA10": {
+   "published": "2006-02-22",
+   "title": "Marriott International FY2005 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312506036627/d10k.htm",
+   "accepted": "accepted 2006-02-22 15:09 ET (during the session)",
+   "supports": "FY2003 synthetic fuel revenues $302M and expenses $406M; rule T: 2004 North American company-operated RevPAR"
+  },
+  "MA11": {
+   "published": "2007-02-08",
+   "title": "Marriott International Q4 2006 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507023406/dex99.htm",
+   "accepted": "accepted 2007-02-08 07:50 ET (before the open)",
+   "supports": "FY2006 EPS excluding synthetic fuel $1.65 and FY2005 $1.33 excluding synthetic fuel, the CTF charge and the leveraged lease charge; FY2006 measures excluding synthetic fuel; the FY2007 guide"
+  },
+  "MA12": {
+   "published": "2007-02-21",
+   "title": "Marriott International FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507035757/d10k.htm",
+   "accepted": "accepted 2007-02-21 10:38 ET (during the session)",
+   "supports": "selected financial data 1999-2006, segments, synthetic fuel lines 2004-2006, RevPAR statistics, cash flow, dividend, risk factors"
+  },
+  "MA13": {
+   "published": "2007-04-19",
+   "title": "Marriott International Q1 2007 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507084625/dex99.htm",
+   "accepted": "accepted 2007-04-19 08:10 ET (before the open)",
+   "supports": "Q1 2007 fees (the year-ago base of the Q1 2008 guide); the FY2007 and Q2 2007 guides"
+  },
+  "MA14": {
+   "published": "2007-07-12",
+   "title": "Marriott International Q2 2007 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507153723/dex99.htm",
+   "accepted": "accepted 2007-07-12 07:43 ET (before the open)",
+   "supports": "Q2 2007 print and guide"
+  },
+  "MA15": {
+   "published": "2007-07-16",
+   "title": "Marriott International Q2 2007 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507154893/d10q.htm",
+   "accepted": "accepted 2007-07-13 16:10 ET (after the close), so dated 2007-07-16",
+   "supports": "dividends declared per share $0.0750 in the second quarter of 2007"
+  },
+  "MA16": {
+   "published": "2007-10-04",
+   "title": "Marriott International Q3 2007 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507212951/dex99.htm",
+   "accepted": "accepted 2007-10-04 07:58 ET (before the open)",
+   "supports": "Q3 2007 print; FY2007, Q4 2007 and FY2008 guides"
+  },
+  "MA17": {
+   "published": "2008-02-14",
+   "title": "Marriott International Q4 2007 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508030241/dex99.htm",
+   "accepted": "accepted 2008-02-14 08:11 ET (before the open)",
+   "supports": "Q4 2007 print, FY2007 actuals (adjusted EPS excluding the ESOP settlement), FY2008 and Q1 2008 guides"
+  },
+  "MA18": {
+   "published": "2008-02-19",
+   "title": "Marriott International FY2007 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508032582/d10k.htm",
+   "accepted": "accepted 2008-02-15 17:11 ET (after the close), so dated 2008-02-19 (2008-02-18 a market holiday)",
+   "supports": "selected financial data 2000-2007 with synthetic fuel discontinued, segments, cash flow, dividend, risk factors"
+  },
+  "MA19": {
+   "published": "2008-04-17",
+   "title": "Marriott International Q1 2008 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508083177/dex99.htm",
+   "accepted": "accepted 2008-04-17 07:30 ET (before the open)",
+   "supports": "Q1 2008 print; FY2008 and Q2 2008 guides"
+  },
+  "MA20": {
+   "published": "2008-06-02",
+   "title": "Marriott International 8-K of 2008-06-02 (Ex. 99, CEO remarks)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508126468/dex99.htm",
+   "accepted": "accepted 2008-06-02 14:29 ET (during the session)",
+   "supports": "second quarter 2008 North American RevPAR of approximately 2 percent against the 3 to 5 percent guide (display only)"
+  },
+  "MA21": {
+   "published": "2008-07-10",
+   "title": "Marriott International Q2 2008 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508149001/dex99.htm",
+   "accepted": "accepted 2008-07-10 07:30 ET (before the open)",
+   "supports": "Q2 2008 print; FY2008 and Q3 2008 guides"
+  },
+  "MA22": {
+   "published": "2008-07-11",
+   "title": "Marriott International Q2 2008 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508149831/d10q.htm",
+   "accepted": "accepted 2008-07-11 15:26 ET (during the session)",
+   "supports": "the quarterly cash dividend raised to $0.0875 in May 2008"
+  },
+  "MA23": {
+   "published": "2008-10-02",
+   "title": "Marriott International Q3 2008 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312508204914/dex99.htm",
+   "accepted": "accepted 2008-10-02 07:40 ET (before the open)",
+   "supports": "Q3 2008 print; FY2008, Q4 2008 and FY2009 guides"
+  },
+  "MA24": {
+   "published": "2009-02-12",
+   "title": "Marriott International Q4 2008 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509026235/dex99.htm",
+   "accepted": "accepted 2009-02-12 07:33 ET (before the open)",
+   "supports": "Q4 2008 print (17 weeks), FY2008 adjusted actuals, FY2009 and Q1 2009 guides"
+  },
+  "MA25": {
+   "published": "2009-02-13",
+   "title": "Marriott International FY2008 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509027236/d10k.htm",
+   "accepted": "accepted 2009-02-12 16:45 ET (after the close), so dated 2009-02-13",
+   "supports": "selected financial data 1999-2008, segments, cash flow, dividend, risk factors"
+  },
+  "MA26": {
+   "published": "2009-04-23",
+   "title": "Marriott International Q1 2009 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509085180/dex99.htm",
+   "accepted": "accepted 2009-04-23 08:15 ET (before the open)",
+   "supports": "Q1 2009 print; FY2009 and Q2 2009 guides"
+  },
+  "MA27": {
+   "published": "2009-05-05",
+   "title": "Marriott International 8-K/A of 2009-05-05 (Ex. 99.1, stock dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000118143109022814/rrd241247_28284.htm",
+   "accepted": "accepted 2009-05-05 15:11 ET (during the session)",
+   "supports": "a stock dividend of 0.00369 share per share (record date June 25, 2009), paid in place of the cash dividend"
+  },
+  "MA28": {
+   "published": "2009-07-16",
+   "title": "Marriott International Q2 2009 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509149806/dex99.htm",
+   "accepted": "accepted 2009-07-16 07:38 ET (before the open)",
+   "supports": "Q2 2009 print; FY2009 and Q3 2009 guides"
+  },
+  "MA29": {
+   "published": "2009-09-23",
+   "title": "Marriott International 8-K of 2009-09-23 (Ex. 99, timeshare charges)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509196196/dex99.htm",
+   "accepted": "accepted 2009-09-23 08:06 ET (before the open)",
+   "supports": "third quarter 2009 North American systemwide RevPAR expected down about 19 percent against the -20% to -23% guide (display only)"
+  },
+  "MA30": {
+   "published": "2009-10-08",
+   "title": "Marriott International Q3 2009 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509205275/dex99.htm",
+   "accepted": "accepted 2009-10-08 07:46 ET (before the open)",
+   "supports": "Q3 2009 print; Q4 2009 guide (no fiscal-year EPS guide); FY2010 outlook"
+  },
+  "MA31": {
+   "published": "2009-10-09",
+   "title": "Marriott International Q3 2009 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509206036/d10q.htm",
+   "accepted": "accepted 2009-10-09 10:23 ET (during the session)",
+   "supports": "the second stock dividend's ratio, 0.00379 share per share (record date August 20, 2009)"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-21",
+   "sources": [
+    "MA12",
+    "MA11",
+    "MA10",
+    "MA9",
+    "MA8",
+    "MA7",
+    "MA6",
+    "MA5",
+    "MA4",
+    "MA3",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY06",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-30",
+    "2006": "2006-12-29"
+   },
+   "eps_gaap": {
+    "1998": 1.39,
+    "1999": 0.75,
+    "2000": 0.96,
+    "2001": 0.52,
+    "2002": 0.87,
+    "2003": 0.97,
+    "2004": 1.24,
+    "2005": 1.45,
+    "2006": 1.66
+   },
+   "eps_normalized": {
+    "1998": 1.39,
+    "1999": 0.75,
+    "2000": 0.96,
+    "2001": 0.52,
+    "2002": 1.45,
+    "2003": 1.55,
+    "2004": 2.03,
+    "2005": 1.33,
+    "2006": 1.65
+   },
+   "eps_published": {
+    "1998": "2003-02-14",
+    "2002": "2004-02-10",
+    "2003": "2005-02-08",
+    "2004": "2006-02-09"
+   },
+   "eps_sources": {
+    "1998": "MA5 ($1.39 before the 2006 split)",
+    "1999": "MA12",
+    "2000": "MA12",
+    "2001": "MA12",
+    "2002": "MA6 (excluding synthetic fuel, $1.45 before the 2006 split; GAAP $0.87: MA12)",
+    "2003": "MA7 (excluding synthetic fuel, $1.55 before the 2006 split; GAAP $0.97: MA12)",
+    "2004": "MA9 (excluding synthetic fuel, $2.03 before the 2006 split; GAAP $1.24: MA12)",
+    "2005": "MA11 (excluding synthetic fuel, the CTF charge and the leveraged lease charge; GAAP $1.45: MA12)",
+    "2006": "MA11 (excluding synthetic fuel; GAAP $1.66: MA12)"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest filing that reports it, from 1998 (no per-share data before the March 1998 spinoff); the company's figures excluding synthetic fuel ('not ... related to our core business') and one-offs replace GAAP where a filing publishes them (the ACN rule): 2002 $0.725, 2003 $0.775 and 2004 $1.015 (the Q4 2003-Q4 2005 releases' $1.45, $1.55 and $2.03 before the 2006 split), 2005 $1.33 (also excluding the CTF and leveraged lease charges) and 2006 $1.65 (the Q4 2006 release); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1997": 7.236,
+    "1998": 6.311,
+    "1999": 7.026,
+    "2000": 7.911,
+    "2001": 7.768,
+    "2002": 8.222,
+    "2003": 8.712,
+    "2004": 9.778,
+    "2005": 11.129,
+    "2006": 11.995
+   },
+   "revenue_sources": {
+    "1997": "MA4 (sales, before the 2002 discontinued operations)",
+    "1998": "MA5",
+    "1999": "MA12",
+    "2000": "MA12",
+    "2001": "MA12",
+    "2002": "MA12 $8,415M less synthetic fuel $193M (MA8)",
+    "2003": "MA12 $9,014M less synthetic fuel $302M (MA10)",
+    "2004": "MA12 $10,099M less synthetic fuel $321M",
+    "2005": "MA12 $11,550M less synthetic fuel $421M",
+    "2006": "MA12 $12,160M less synthetic fuel $165M"
+   },
+   "diluted_shares_m": {
+    "1998": 273.1,
+    "2006": 430.2
+   },
+   "shares_published": {
+    "1998": "2001-03-16"
+   },
+   "shares_sources": {
+    "1998": "MA3 (273.1M before the 2006 split)",
+    "2006": "MA12"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management and franchising, we own very few of our lodging properties'; 'We operate or franchise 2,832 lodging properties worldwide, with 513,832 rooms as of year-end 2006'; 'The lodging industry is highly competitive, which may impact our ability to compete successfully with other hotel and timeshare properties for customers'; 'The profitability of the hotels, vacation timeshare resorts and corporate apartments that we operate or franchise may be adversely affected by a number of factors, including: ... international, national and regional economic and geopolitical conditions'; and 'if the amount of sales made through Internet intermediaries increases significantly, our business and profitability may be harmed' (its own FY2006 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and timeshare (NYSE: MAR)",
+   "vintage_raw": {
+    "rev_m": 11995,
+    "rev_prior_m": 11129,
+    "opinc_m": 1087,
+    "pretax_m": 1092,
+    "fees_m": 1224,
+    "fees_prior_m": 1027,
+    "cash_m": 193,
+    "cfo_m": 970,
+    "capex_m": 529
+   },
+   "prev_fy_op_margin_note": "FY06 operating income excluding synthetic fuel $1,087M / revenues excluding synthetic fuel $11,995M (MA11, MA12)",
+   "prev_fy_revpar_pct": 8.9,
+   "prev_fy_occupancy": 72.8,
+   "prev_fy_occ_pts": -0.4,
+   "tax_rate": 0.348,
+   "tax_note": "FY06 effective tax rate excluding synthetic fuel, 34.8% (MA11)",
+   "other_note": "FY06 operating income less income from continuing operations before taxes, excluding synthetic fuel ($1,087M - $1,092M)",
+   "fcf_label": "FY06",
+   "cash_note": "cash and equivalents $193M at year-end 2006",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q1 2007",
+   "dividend_annual": 0.25,
+   "dividend_note": "$0.0625 a quarter ('In April 2006, our Board of Directors increased the quarterly cash dividend by 19 percent to $0.0625 per share', FY2006 10-K)",
+   "cash_return_text": "repurchased 42 million shares in 2006 for $1.58 billion (Q4 2006 release)",
+   "groups": [
+    [
+     "North American Full-Service",
+     5.196,
+     1.6
+    ],
+    [
+     "North American Limited-Service",
+     2.06,
+     9.2
+    ],
+    [
+     "International",
+     1.411,
+     38.7
+    ],
+    [
+     "Luxury",
+     1.423,
+     6.8
+    ],
+    [
+     "Timeshare",
+     1.84,
+     6.9
+    ],
+    [
+     "Other unallocated corporate",
+     0.065,
+     16.1
+    ]
+   ],
+   "groups_doc": "FY2006 10-K",
+   "prev_fy_op_margin": 9.06,
+   "prev_fy_sales_growth": 7.8,
+   "prev_fy_fees_pct": 19.2,
+   "other_expense_b": -0.005,
+   "cash_b": 0.193,
+   "fcf_b": 0.441,
+   "fcf_note": "cash from operations $970M less capital expenditures $529M",
+   "groups_basis": "FY06 revenues by segment (FY2006 10-K)"
+  },
+  {
+   "published": "2008-02-19",
+   "sources": [
+    "MA18",
+    "MA17",
+    "MA12",
+    "MA11",
+    "MA5",
+    "MA3",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "fiscal_year_ends": {
+    "2005": "2005-12-30",
+    "2006": "2006-12-29",
+    "2007": "2007-12-28"
+   },
+   "eps_gaap": {
+    "1998": 1.39,
+    "1999": 0.75,
+    "2000": 0.96,
+    "2001": 0.52,
+    "2002": 0.72,
+    "2003": 0.77,
+    "2004": 1.01,
+    "2005": 1.17,
+    "2006": 1.65,
+    "2007": 1.75
+   },
+   "eps_normalized": {
+    "1998": 1.39,
+    "1999": 0.75,
+    "2000": 0.96,
+    "2001": 0.52,
+    "2002": 0.72,
+    "2003": 0.77,
+    "2004": 1.01,
+    "2005": 1.33,
+    "2006": 1.65,
+    "2007": 1.89
+   },
+   "eps_published": {
+    "1998": "2003-02-14"
+   },
+   "eps_sources": {
+    "1998": "MA5 ($1.39 before the 2006 split)",
+    "1999": "MA12",
+    "2000": "MA18",
+    "2001": "MA18",
+    "2002": "MA18",
+    "2003": "MA18",
+    "2004": "MA18",
+    "2005": "MA11 (excluding the CTF and leveraged lease charges; GAAP $1.17 with synthetic fuel discontinued: MA18)",
+    "2006": "MA18",
+    "2007": "MA17 (excluding the ESOP settlement; GAAP $1.75: MA18)"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest filing that reports it, from 1998; synthetic fuel is a discontinued operation from the FY2007 10-K; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 2005 $1.33 (excluding the CTF and leveraged lease charges, the Q4 2006 release) and 2007 $1.89 (excluding the ESOP settlement, the Q4 2007 release); no year is excluded",
+   "revenue_usd_b": {
+    "1998": 6.311,
+    "1999": 7.026,
+    "2000": 7.911,
+    "2001": 7.768,
+    "2002": 8.222,
+    "2003": 8.712,
+    "2004": 9.778,
+    "2005": 11.129,
+    "2006": 11.995,
+    "2007": 12.99
+   },
+   "revenue_sources": {
+    "1998": "MA5",
+    "1999": "MA12",
+    "2000": "MA18",
+    "2001": "MA18",
+    "2002": "MA18",
+    "2003": "MA18",
+    "2004": "MA18",
+    "2005": "MA18",
+    "2006": "MA18",
+    "2007": "MA18"
+   },
+   "diluted_shares_m": {
+    "1998": 273.1,
+    "2007": 397.3
+   },
+   "shares_published": {
+    "1998": "2001-03-16"
+   },
+   "shares_sources": {
+    "1998": "MA3 (273.1M before the 2006 split)",
+    "2007": "MA18"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management and franchising, we own very few of our lodging properties'; 'We are a worldwide operator and franchisor of 2,999 properties (535,093 rooms)'; 'The lodging industry is highly competitive, which may impact our ability to compete successfully with other hotel and timeshare properties for customers'; 'The profitability of the hotels, vacation timeshare resorts, and corporate apartments that we operate or franchise may be adversely affected by a number of factors, including: ... international, national, and regional economic and geopolitical conditions'; and 'if the amount of sales made through Internet intermediaries increases significantly, our business and profitability may be harmed' (its own FY2007 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and timeshare (NYSE: MAR)",
+   "vintage_raw": {
+    "rev_m": 12990,
+    "rev_prior_m": 11995,
+    "opinc_m": 1223,
+    "pretax_m": 1185,
+    "fees_m": 1428,
+    "fees_prior_m": 1224,
+    "cash_m": 332,
+    "cfo_m": 778,
+    "capex_m": 671
+   },
+   "prev_fy_op_margin_note": "FY07 operating income excluding the ESOP settlement $1,223M (MA17) / revenues $12,990M (MA18)",
+   "prev_fy_revpar_pct": 6.2,
+   "prev_fy_occupancy": 72.7,
+   "prev_fy_occ_pts": 0.3,
+   "tax_rate": 0.367,
+   "tax_note": "FY07 provision excluding the ESOP settlement, $435M on $1,185M (MA17)",
+   "other_note": "FY07 operating income less income from continuing operations before taxes, excluding the ESOP settlement ($1,223M - $1,185M)",
+   "fcf_label": "FY07",
+   "cash_note": "cash and equivalents $332M at year-end 2007",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2007",
+   "dividend_annual": 0.3,
+   "dividend_note": "$0.0750 a quarter ('In April 2007, our Board of Directors increased the quarterly cash dividend by 2 percent to $0.0750 per share', FY2007 10-K)",
+   "cash_return_text": "repurchased 12 million shares in the fourth quarter of 2007 for $462 million (Q4 2007 release)",
+   "groups": [
+    [
+     "North American Full-Service",
+     5.476,
+     5.4
+    ],
+    [
+     "North American Limited-Service",
+     2.198,
+     6.7
+    ],
+    [
+     "International",
+     1.594,
+     13.0
+    ],
+    [
+     "Luxury",
+     1.576,
+     10.8
+    ],
+    [
+     "Timeshare",
+     2.065,
+     12.2
+    ],
+    [
+     "Other unallocated corporate",
+     0.081,
+     24.6
+    ]
+   ],
+   "groups_doc": "FY2007 10-K",
+   "prev_fy_op_margin": 9.41,
+   "prev_fy_sales_growth": 8.3,
+   "prev_fy_fees_pct": 16.7,
+   "other_expense_b": 0.038,
+   "cash_b": 0.332,
+   "fcf_b": 0.107,
+   "fcf_note": "cash from operations $778M less capital expenditures $671M",
+   "groups_basis": "FY07 revenues by segment (FY2007 10-K)"
+  },
+  {
+   "published": "2009-02-13",
+   "sources": [
+    "MA25",
+    "MA24",
+    "MA11",
+    "MA4",
+    "MA1"
+   ],
+   "company": "Marriott International, Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "fiscal_year_ends": {
+    "2006": "2006-12-29",
+    "2007": "2007-12-28",
+    "2008": "2009-01-02"
+   },
+   "eps_gaap": {
+    "1999": 0.75,
+    "2000": 0.96,
+    "2001": 0.52,
+    "2002": 0.72,
+    "2003": 0.77,
+    "2004": 1.01,
+    "2005": 1.17,
+    "2006": 1.65,
+    "2007": 1.75,
+    "2008": 0.98
+   },
+   "eps_normalized": {
+    "1999": 0.75,
+    "2000": 0.96,
+    "2001": 0.52,
+    "2002": 0.72,
+    "2003": 0.77,
+    "2004": 1.01,
+    "2005": 1.33,
+    "2006": 1.65,
+    "2007": 1.89,
+    "2008": 1.51
+   },
+   "eps_sources": {
+    "1999": "MA25",
+    "2000": "MA25",
+    "2001": "MA25",
+    "2002": "MA25",
+    "2003": "MA25",
+    "2004": "MA25",
+    "2006": "MA25",
+    "2005": "MA11 (excluding the CTF and leveraged lease charges; GAAP $1.17: MA25)",
+    "2007": "MA24 (excluding the ESOP settlement; GAAP $1.75: MA25)",
+    "2008": "MA24 (excluding restructuring costs and other charges and certain tax items; GAAP $0.98: MA25)"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's figures excluding one-offs replace GAAP where a filing publishes them (the ACN rule): 2005 $1.33 (the Q4 2006 release), 2007 $1.89 and 2008 $1.51 (excluding $0.34 of restructuring costs and other charges and $0.20 of certain tax items; the Q4 2008 release); no year's one-offs reach half its income, so no year is excluded",
+   "revenue_usd_b": {
+    "1999": 7.026,
+    "2000": 7.911,
+    "2001": 7.768,
+    "2002": 8.222,
+    "2003": 8.712,
+    "2004": 9.778,
+    "2005": 11.129,
+    "2006": 11.995,
+    "2007": 12.99,
+    "2008": 12.879
+   },
+   "revenue_sources": {
+    "1999": "MA25",
+    "2000": "MA25",
+    "2001": "MA25",
+    "2002": "MA25",
+    "2003": "MA25",
+    "2004": "MA25",
+    "2005": "MA25",
+    "2006": "MA25",
+    "2007": "MA25",
+    "2008": "MA25"
+   },
+   "diluted_shares_m": {
+    "1999": 269.8,
+    "2008": 366.9
+   },
+   "shares_published": {
+    "1999": "2002-03-22"
+   },
+   "shares_sources": {
+    "1999": "MA4 (269.8M before the 2006 split)",
+    "2008": "MA25"
+   },
+   "pe_window_start": "1998-03-27",
+   "pe_window_note": "the March 27, 1998 spinoff (MA1)",
+   "margin_signal_name": "Operating margin change",
+   "why": "Marriott: 'Consistent with our focus on management and franchising, we own very few of our lodging properties'; 'We are a worldwide operator and franchisor of 3,178 properties (560,681 rooms)'; 'The lodging industry is highly competitive, which may impact our ability to compete successfully with other hotel and timeshare properties for customers'; 'The profitability of the hotels, vacation timeshare resorts, and corporate apartments that we operate or franchise may be adversely affected by a number of factors, including: ... international, national, and regional economic and geopolitical conditions'; and 'The economic recession, the global credit crisis and eroded consumer confidence all contributed to a difficult business environment in 2008' (its own FY2008 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+   "business_line": "lodging management, franchising and timeshare (NYSE: MAR)",
+   "vintage_raw": {
+    "rev_m": 12940,
+    "rev_prior_m": 12990,
+    "rev_reported_m": 12879,
+    "opinc_m": 930,
+    "pretax_m": 886,
+    "fees_m": 1397,
+    "fees_prior_m": 1428,
+    "cash_m": 134,
+    "cfo_m": 641,
+    "capex_m": 357
+   },
+   "prev_fy_op_margin_note": "FY08 operating income as adjusted $930M / revenues as adjusted $12,940M (MA24; as reported $785M / $12,879M)",
+   "prev_fy_revpar_pct": -2.9,
+   "prev_fy_occupancy": 69.8,
+   "prev_fy_occ_pts": -2.4,
+   "tax_rate": 0.3905,
+   "tax_note": "FY08 provision as adjusted, $346M on $886M (MA24)",
+   "other_note": "FY08 operating income less income from continuing operations before taxes, as adjusted ($930M - $886M)",
+   "fcf_label": "FY08",
+   "cash_note": "cash and equivalents $134M at year-end 2008",
+   "prev_q_revpar": null,
+   "prev_q_label": "Q3 2008",
+   "dividend_annual": 0.35,
+   "dividend_note": "$0.0875 a quarter ('In April 2008, our Board of Directors increased the quarterly cash dividend by 17 percent to $0.0875 per share', FY2008 10-K)",
+   "cash_return_text": "repurchased 11.9 million shares in 2008 for $371 million; no share repurchases are planned in 2009 (Q4 2008 release)",
+   "groups": [
+    [
+     "North American Full-Service",
+     5.631,
+     2.8
+    ],
+    [
+     "North American Limited-Service",
+     2.233,
+     1.6
+    ],
+    [
+     "International",
+     1.544,
+     -3.1
+    ],
+    [
+     "Luxury",
+     1.659,
+     5.3
+    ],
+    [
+     "Timeshare",
+     1.75,
+     -15.3
+    ],
+    [
+     "Other unallocated corporate",
+     0.062,
+     -23.5
+    ]
+   ],
+   "groups_doc": "FY2008 10-K",
+   "prev_fy_op_margin": 7.19,
+   "prev_fy_sales_growth": -0.9,
+   "prev_fy_fees_pct": -2.2,
+   "other_expense_b": 0.044,
+   "cash_b": 0.134,
+   "fcf_b": 0.284,
+   "fcf_note": "cash from operations $641M less capital expenditures $357M",
+   "groups_basis": "FY08 revenues by segment (FY2008 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-12",
+   "source": "MA14",
+   "release": "Jul 12",
+   "release_time": "before the open on Jul 12: 8-K accepted 07:43 ET; conference call at 10 a.m. ET",
+   "period_end": "2007-06-15",
+   "weeks": 12,
+   "raw": {
+    "base_m": 148,
+    "base_prior_m": 134,
+    "fran_m": 101,
+    "fran_prior_m": 93,
+    "inc_m": 116,
+    "inc_prior_m": 77,
+    "rev_total_m": 3210,
+    "rev_total_prior_m": 2891,
+    "sf_rev_m": 88,
+    "sf_rev_prior_m": 39,
+    "opinc_m": 370,
+    "opinc_prior_m": 292,
+    "diluted_shares_m": 403.8,
+    "cash_m": 151
+   },
+   "basis_note": "revenues exclude the synthetic fuel line; operating income excludes synthetic fuel and the ESOP settlement (the company's figures)",
+   "revpar_pct": 5.6,
+   "occupancy": 76.6,
+   "occupancy_pts": -0.1,
+   "eps_q": 0.57,
+   "eps_q_prior": 0.42,
+   "eps_note": "excluding synthetic fuel and the ESOP settlement ($0.51 as reported; year-ago $0.42 excluding synthetic fuel)",
+   "ww_revpar_note": "Worldwide systemwide comparable revenue per available room (REVPAR) rose 7.5 percent (6.4 percent using constant dollars)",
+   "cash_return_text": "Marriott repurchased 8.7 million shares of the company’s common stock for $402 million during the second quarter",
+   "next_print": "Q3 2007 print (early October)",
+   "sales_b": 3.122,
+   "sales_pct": 9.5,
+   "fees_m": 365,
+   "fees_prior_m": 304,
+   "fees_pct": 20.1,
+   "op_margin": 11.85,
+   "op_margin_bp": 161.3,
+   "occupancy_bp": -10.0,
+   "diluted_shares_m": 403.8,
+   "cash_b": 0.151
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-04",
+   "source": "MA16",
+   "release": "Oct 4",
+   "release_time": "before the open on Oct 4: 8-K accepted 07:58 ET; conference call at 10 a.m. ET",
+   "period_end": "2007-09-07",
+   "weeks": 12,
+   "raw": {
+    "base_m": 135,
+    "base_prior_m": 119,
+    "fran_m": 111,
+    "fran_prior_m": 94,
+    "inc_m": 56,
+    "inc_prior_m": 49,
+    "rev_total_m": 3040,
+    "rev_total_prior_m": 2703,
+    "sf_rev_m": 97,
+    "sf_rev_prior_m": 6,
+    "opinc_m": 210,
+    "opinc_prior_m": 227,
+    "diluted_shares_m": 394.1,
+    "cash_m": 208
+   },
+   "basis_note": "revenues exclude the synthetic fuel line; operating income excludes synthetic fuel (the company's figure)",
+   "revpar_pct": 7.2,
+   "occupancy": 76.4,
+   "occupancy_pts": 1.8,
+   "eps_q": 0.31,
+   "eps_q_prior": 0.34,
+   "eps_note": "excluding synthetic fuel ($0.33 as reported in both quarters)",
+   "ww_revpar_note": "Worldwide systemwide comparable revenue per available room (REVPAR) rose 7.7 percent (6.6 percent using constant dollars)",
+   "cash_return_text": "Marriott repurchased 10.7 million shares of the company’s common stock for $462 million during the third quarter",
+   "next_print": "Q4 2007 print (mid-February)",
+   "sales_b": 2.943,
+   "sales_pct": 9.1,
+   "fees_m": 302,
+   "fees_prior_m": 262,
+   "fees_pct": 15.3,
+   "op_margin": 7.14,
+   "op_margin_bp": -128.1,
+   "occupancy_bp": 180.0,
+   "diluted_shares_m": 394.1,
+   "cash_b": 0.208
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-02-14",
+   "source": "MA17",
+   "release": "Feb 14",
+   "release_time": "before the open on Feb 14: 8-K accepted 08:11 ET; conference call at 10 a.m. ET",
+   "period_end": "2007-12-28",
+   "weeks": 16,
+   "raw": {
+    "base_m": 203,
+    "base_prior_m": 173,
+    "fran_m": 136,
+    "fran_prior_m": 121,
+    "inc_m": 126,
+    "inc_prior_m": 96,
+    "rev_total_m": 4089,
+    "rev_total_prior_m": 3798,
+    "opinc_m": 406,
+    "opinc_prior_m": 338,
+    "diluted_shares_m": 383.1,
+    "cash_m": 332
+   },
+   "basis_note": "as reported (synthetic fuel a discontinued operation)",
+   "revpar_pct": 6.2,
+   "occupancy": 70.0,
+   "occupancy_pts": 0.4,
+   "eps_q": 0.62,
+   "eps_q_prior": 0.52,
+   "eps_note": "from continuing operations (synthetic fuel discontinued)",
+   "ww_revpar_note": "REVPAR for the company’s comparable worldwide systemwide properties increased 8.1 percent (6.6 percent using constant dollars)",
+   "cash_return_text": "Marriott repurchased 12 million shares of the company’s common stock for $462 million during the fourth quarter",
+   "next_print": "Q1 2008 print (mid-April)",
+   "sales_b": 4.089,
+   "sales_pct": 7.7,
+   "fees_m": 465,
+   "fees_prior_m": 390,
+   "fees_pct": 19.2,
+   "op_margin": 9.93,
+   "op_margin_bp": 103.0,
+   "occupancy_bp": 40.0,
+   "diluted_shares_m": 383.1,
+   "cash_b": 0.332,
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 1.89,
+    "eps_gaap": 1.75,
+    "revenue_usd_b": 12.99,
+    "diluted_shares_m": 397.3,
+    "raw": {
+     "rev_m": 12990,
+     "rev_prior_m": 11995,
+     "rev_adj_m": 12990,
+     "opinc_m": 1223,
+     "pretax_m": 1185,
+     "tax_m": 435,
+     "fees_m": 1428,
+     "fees_prior_m": 1224,
+     "cash_m": 332
+    },
+    "op_margin": 9.41,
+    "sales_growth": 8.3,
+    "fees_pct": 16.7,
+    "revpar_pct": 6.2,
+    "occupancy": 72.7,
+    "occupancy_pts": 0.3,
+    "other_expense_b": 0.038,
+    "tax_rate": 0.3671,
+    "cash_b": 0.332,
+    "groups": [
+     [
+      "North American Full-Service",
+      5.476,
+      5.4
+     ],
+     [
+      "North American Limited-Service",
+      2.198,
+      6.7
+     ],
+     [
+      "International",
+      1.594,
+      13.0
+     ],
+     [
+      "Luxury",
+      1.576,
+      10.8
+     ],
+     [
+      "Timeshare",
+      2.065,
+      12.2
+     ],
+     [
+      "Other unallocated corporate",
+      0.081,
+      24.6
+     ]
+    ],
+    "normalization_note": "FY07 $1.89 excluding the ESOP settlement (GAAP $1.75), the Q4 2007 release",
+    "op_margin_note": "FY07 operating income $1,223M / revenues $12,990M (Q4 2007 release)",
+    "tax_note": "FY07 provision $435M on $1,185M",
+    "doc": "Q4 2007 release"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-17",
+   "source": "MA19",
+   "release": "Apr 17",
+   "release_time": "before the open on Apr 17: 8-K accepted 07:30 ET; conference call at 10 a.m. ET",
+   "period_end": "2008-03-21",
+   "weeks": 12,
+   "raw": {
+    "base_m": 148,
+    "base_prior_m": 134,
+    "fran_m": 96,
+    "fran_prior_m": 91,
+    "inc_m": 74,
+    "inc_prior_m": 71,
+    "rev_total_m": 2947,
+    "rev_total_prior_m": 2836,
+    "opinc_m": 195,
+    "opinc_prior_m": 237,
+    "diluted_shares_m": 371.9,
+    "cash_m": 314
+   },
+   "basis_note": "as reported",
+   "revpar_pct": 2.3,
+   "occupancy": 67.5,
+   "occupancy_pts": -0.6,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.4,
+   "eps_note": "from continuing operations",
+   "ww_revpar_note": "REVPAR for the company’s comparable worldwide systemwide properties increased 4.4 percent (3.5 percent using constant dollars)",
+   "cash_return_text": "The company repurchased 6.2 million shares of common stock in the first quarter of 2008 at a cost of $208 million.",
+   "next_print": "Q2 2008 print (mid-July)",
+   "sales_b": 2.947,
+   "sales_pct": 3.9,
+   "fees_m": 318,
+   "fees_prior_m": 296,
+   "fees_pct": 7.4,
+   "op_margin": 6.62,
+   "op_margin_bp": -174.0,
+   "occupancy_bp": -60.0,
+   "diluted_shares_m": 371.9,
+   "cash_b": 0.314
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-10",
+   "source": "MA21",
+   "release": "Jul 10",
+   "release_time": "before the open on Jul 10: 8-K accepted 07:30 ET; conference call at 10 a.m. ET",
+   "period_end": "2008-06-13",
+   "weeks": 12,
+   "raw": {
+    "base_m": 161,
+    "base_prior_m": 148,
+    "fran_m": 110,
+    "fran_prior_m": 101,
+    "inc_m": 103,
+    "inc_prior_m": 116,
+    "rev_total_m": 3185,
+    "rev_total_prior_m": 3122,
+    "opinc_m": 313,
+    "opinc_prior_m": 335,
+    "diluted_shares_m": 370.0,
+    "cash_m": 125
+   },
+   "basis_note": "as reported (the year-ago operating income includes the ESOP excise tax, as the release compares it)",
+   "revpar_pct": 1.4,
+   "occupancy": 75.3,
+   "occupancy_pts": -0.7,
+   "eps_q": 0.51,
+   "eps_q_prior": 0.57,
+   "eps_note": "excluding prior years' tax adjustments and foreign subsidiaries' income tax charges ($0.41 as reported; year-ago $0.57 excluding the ESOP settlement)",
+   "ww_revpar_note": "REVPAR at comparable worldwide systemwide properties rose 4.2 percent (2.6 percent using constant dollars)",
+   "cash_return_text": "The company repurchased 2.4 million shares of common stock during the second quarter at a cost of $75 million.",
+   "next_print": "Q3 2008 print (early October)",
+   "sales_b": 3.185,
+   "sales_pct": 2.0,
+   "fees_m": 374,
+   "fees_prior_m": 365,
+   "fees_pct": 2.5,
+   "op_margin": 9.83,
+   "op_margin_bp": -90.3,
+   "occupancy_bp": -70.0,
+   "diluted_shares_m": 370.0,
+   "cash_b": 0.125
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-02",
+   "source": "MA23",
+   "release": "Oct 2",
+   "release_time": "before the open on Oct 2: 8-K accepted 07:40 ET; conference call at 10 a.m. ET",
+   "period_end": "2008-09-05",
+   "weeks": 12,
+   "raw": {
+    "base_m": 143,
+    "base_prior_m": 135,
+    "fran_m": 108,
+    "fran_prior_m": 111,
+    "inc_m": 52,
+    "inc_prior_m": 56,
+    "rev_total_m": 2963,
+    "rev_total_prior_m": 2943,
+    "opinc_m": 203,
+    "opinc_prior_m": 210,
+    "diluted_shares_m": 365.4,
+    "cash_m": 117
+   },
+   "basis_note": "as reported",
+   "revpar_pct": -1.0,
+   "occupancy": 74.1,
+   "occupancy_pts": -1.9,
+   "eps_q": 0.34,
+   "eps_q_prior": 0.31,
+   "eps_note": "excluding the prior year tax adjustment ($0.26 as reported)",
+   "ww_revpar_note": "REVPAR at comparable worldwide systemwide properties rose 2.2 percent (0.7 percent using constant dollars)",
+   "cash_return_text": "The company repurchased 3.3 million shares of common stock during the third quarter of 2008 at a cost of $88 million. The company does not anticipate meaningful share repurchase activity in the balance of 2008 and 2009.",
+   "next_print": "Q4 2008 print (mid-February)",
+   "sales_b": 2.963,
+   "sales_pct": 0.7,
+   "fees_m": 303,
+   "fees_prior_m": 302,
+   "fees_pct": 0.3,
+   "op_margin": 6.85,
+   "op_margin_bp": -28.4,
+   "occupancy_bp": -190.0,
+   "diluted_shares_m": 365.4,
+   "cash_b": 0.117
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-02-12",
+   "source": "MA24",
+   "release": "Feb 12",
+   "release_time": "before the open on Feb 12: 8-K accepted 07:33 ET; conference call at 10 a.m. ET",
+   "period_end": "2009-01-02",
+   "weeks": 17,
+   "raw": {
+    "base_m": 183,
+    "base_prior_m": 203,
+    "fran_m": 137,
+    "fran_prior_m": 136,
+    "inc_m": 82,
+    "inc_prior_m": 126,
+    "rev_total_m": 3845,
+    "rev_total_prior_m": 4089,
+    "opinc_m": 219,
+    "opinc_prior_m": 406,
+    "diluted_shares_m": 359.4,
+    "cash_m": 134
+   },
+   "basis_note": "as adjusted (17 weeks against 16; RevPAR statistics for the seventeen weeks against the sixteen, as the release's first table)",
+   "revpar_pct": -10.9,
+   "occupancy": 64.5,
+   "occupancy_pts": -4.8,
+   "eps_q": 0.34,
+   "eps_q_prior": 0.62,
+   "eps_note": "as adjusted, excluding restructuring costs and other charges and certain tax items ($(0.03) as reported)",
+   "ww_revpar_note": "REVPAR for the company’s worldwide systemwide properties declined 7.5 percent (6.8 percent using constant dollars)",
+   "cash_return_text": "No share repurchases are planned in 2009.",
+   "next_print": "Q1 2009 print (late April)",
+   "sales_b": 3.845,
+   "sales_pct": -6.0,
+   "fees_m": 402,
+   "fees_prior_m": 465,
+   "fees_pct": -13.5,
+   "op_margin": 5.7,
+   "op_margin_bp": -423.3,
+   "occupancy_bp": -480.0,
+   "diluted_shares_m": 359.4,
+   "cash_b": 0.134,
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 1.51,
+    "eps_gaap": 0.98,
+    "revenue_usd_b": 12.879,
+    "diluted_shares_m": 366.9,
+    "raw": {
+     "rev_m": 12879,
+     "rev_prior_m": 12990,
+     "rev_adj_m": 12940,
+     "opinc_m": 930,
+     "pretax_m": 886,
+     "tax_m": 346,
+     "fees_m": 1397,
+     "fees_prior_m": 1428,
+     "cash_m": 134
+    },
+    "op_margin": 7.19,
+    "sales_growth": -0.9,
+    "fees_pct": -2.2,
+    "revpar_pct": -2.9,
+    "occupancy": 69.8,
+    "occupancy_pts": -2.4,
+    "other_expense_b": 0.044,
+    "tax_rate": 0.3905,
+    "cash_b": 0.134,
+    "groups": [
+     [
+      "North American Full-Service",
+      5.631,
+      2.8
+     ],
+     [
+      "North American Limited-Service",
+      2.233,
+      1.6
+     ],
+     [
+      "International",
+      1.544,
+      -3.1
+     ],
+     [
+      "Luxury",
+      1.659,
+      5.3
+     ],
+     [
+      "Timeshare",
+      1.75,
+      -15.3
+     ],
+     [
+      "Other unallocated corporate",
+      0.062,
+      -23.5
+     ]
+    ],
+    "normalization_note": "FY08 $1.51 excluding restructuring costs and other charges and certain tax items (GAAP $0.98), the Q4 2008 release",
+    "op_margin_note": "FY08 operating income $930M / revenues $12,940M (Q4 2008 release)",
+    "tax_note": "FY08 provision $346M on $886M",
+    "doc": "Q4 2008 release"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-23",
+   "source": "MA26",
+   "release": "Apr 23",
+   "release_time": "before the open on Apr 23: 8-K accepted 08:15 ET; conference call at 10 a.m. ET",
+   "period_end": "2009-03-27",
+   "weeks": 12,
+   "raw": {
+    "base_m": 125,
+    "base_prior_m": 148,
+    "fran_m": 88,
+    "fran_prior_m": 96,
+    "inc_m": 43,
+    "inc_prior_m": 74,
+    "rev_total_m": 2512,
+    "rev_total_prior_m": 2947,
+    "opinc_m": 138,
+    "opinc_prior_m": 195,
+    "diluted_shares_m": 356.7,
+    "cash_m": 168
+   },
+   "basis_note": "as adjusted, against the year-ago quarter as reported",
+   "revpar_pct": -18.0,
+   "occupancy": 60.4,
+   "occupancy_pts": -7.2,
+   "eps_q": 0.24,
+   "eps_q_prior": 0.33,
+   "eps_note": "as adjusted, excluding restructuring costs and other charges and certain tax items ($(0.06) as reported)",
+   "ww_revpar_note": "REVPAR for the company’s worldwide comparable systemwide properties declined 17.3 percent (16.2 percent using constant dollars)",
+   "cash_return_text": "No share repurchases are planned in 2009.",
+   "next_print": "Q2 2009 print (mid-July)",
+   "sales_b": 2.512,
+   "sales_pct": -14.8,
+   "fees_m": 256,
+   "fees_prior_m": 318,
+   "fees_pct": -19.5,
+   "op_margin": 5.49,
+   "op_margin_bp": -112.3,
+   "occupancy_bp": -720.0,
+   "diluted_shares_m": 356.7,
+   "cash_b": 0.168
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-16",
+   "source": "MA28",
+   "release": "Jul 16",
+   "release_time": "before the open on Jul 16: 8-K accepted 07:38 ET; conference call at 10 a.m. ET",
+   "period_end": "2009-06-19",
+   "weeks": 12,
+   "raw": {
+    "base_m": 126,
+    "base_prior_m": 161,
+    "fran_m": 93,
+    "fran_prior_m": 110,
+    "inc_m": 35,
+    "inc_prior_m": 103,
+    "rev_total_m": 2574,
+    "rev_total_prior_m": 3185,
+    "opinc_m": 155,
+    "opinc_prior_m": 313,
+    "diluted_shares_m": 363.5,
+    "cash_m": 125
+   },
+   "basis_note": "as adjusted, against the year-ago quarter as adjusted",
+   "revpar_pct": -23.4,
+   "occupancy": 67.3,
+   "occupancy_pts": -8.0,
+   "eps_q": 0.23,
+   "eps_q_prior": 0.51,
+   "eps_note": "as adjusted ($0.10 as reported); per-share figures after the July 30, 2009 stock dividend",
+   "ww_revpar_note": "REVPAR for the company’s worldwide comparable systemwide properties declined 23.6 percent (21.4 percent using constant dollars)",
+   "cash_return_text": "No share repurchases are planned in 2009.",
+   "next_print": "Q3 2009 print (early October)",
+   "sales_b": 2.574,
+   "sales_pct": -19.2,
+   "fees_m": 254,
+   "fees_prior_m": 374,
+   "fees_pct": -32.1,
+   "op_margin": 6.02,
+   "op_margin_bp": -380.6,
+   "occupancy_bp": -800.0,
+   "diluted_shares_m": 363.5,
+   "cash_b": 0.125
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-08",
+   "source": "MA30",
+   "release": "Oct 8",
+   "release_time": "before the open on Oct 8: 8-K accepted 07:46 ET; conference call at 10 a.m. ET",
+   "period_end": "2009-09-11",
+   "weeks": 12,
+   "raw": {
+    "base_m": 116,
+    "base_prior_m": 143,
+    "fran_m": 100,
+    "fran_prior_m": 108,
+    "inc_m": 17,
+    "inc_prior_m": 52,
+    "rev_total_m": 2468,
+    "rev_total_prior_m": 2963,
+    "opinc_m": 115,
+    "opinc_prior_m": 203,
+    "diluted_shares_m": 366.3,
+    "cash_m": 130
+   },
+   "basis_note": "as adjusted, against the year-ago quarter as adjusted",
+   "revpar_pct": -20.6,
+   "occupancy": 68.7,
+   "occupancy_pts": -5.3,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.33,
+   "eps_note": "as adjusted, excluding restructuring costs and other charges, the timeshare strategy impairment charges and certain tax items ($(1.31) as reported); per-share figures after the 2009 stock dividends",
+   "ww_revpar_note": "REVPAR for the company’s worldwide comparable systemwide properties declined 21.4 percent (19.9 percent using constant dollars)",
+   "cash_return_text": "No share repurchases are planned in 2009.",
+   "next_print": "Q4 2009 print (mid-February)",
+   "sales_b": 2.468,
+   "sales_pct": -16.7,
+   "fees_m": 233,
+   "fees_prior_m": 303,
+   "fees_pct": -23.1,
+   "op_margin": 4.66,
+   "op_margin_bp": -219.2,
+   "occupancy_bp": -530.0,
+   "diluted_shares_m": 366.3,
+   "cash_b": 0.13
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-02-08",
+   "source": "MA11",
+   "doc": "Q4 2006 release",
+   "eps_guide": [
+    1.82,
+    1.92
+   ],
+   "eps_guide_note": "excluding synthetic fuel",
+   "fy_fees": {
+    "level_m": [
+     1380,
+     1400
+    ],
+    "pct": [
+     13,
+     14
+    ],
+    "prior_m": 1224,
+    "prior_label": "FY06",
+    "prior_source": "MA11",
+    "derived_pct": [
+     12.75,
+     14.38
+    ]
+   },
+   "fy_display": "North American comparable RevPAR +7-9%",
+   "q_guide": {
+    "quarter": "Q1 2007",
+    "fees_m": [
+     295,
+     305
+    ],
+    "eps": [
+     0.35,
+     0.39
+    ],
+    "revpar": "North American toward the lower end of +7-9%"
+   }
+  },
+  {
+   "fy": 2007,
+   "published": "2007-04-19",
+   "source": "MA13",
+   "doc": "Q1 2007 release",
+   "eps_guide": [
+    1.84,
+    1.94
+   ],
+   "eps_guide_note": "excluding synthetic fuel",
+   "fy_fees": {
+    "level_m": [
+     1390,
+     1410
+    ],
+    "pct": [
+     14,
+     15
+    ],
+    "prior_m": 1224,
+    "prior_label": "FY06",
+    "prior_source": "MA11",
+    "derived_pct": [
+     13.56,
+     15.2
+    ]
+   },
+   "fy_display": "North American comparable RevPAR +6-8%, worldwide +7-9%",
+   "q_guide": {
+    "quarter": "Q2 2007",
+    "fees_m": [
+     355,
+     365
+    ],
+    "eps": [
+     0.51,
+     0.55
+    ],
+    "revpar": "North American toward the lower end of +6-8%"
+   }
+  },
+  {
+   "fy": 2007,
+   "published": "2007-07-12",
+   "source": "MA14",
+   "doc": "Q2 2007 release",
+   "eps_guide": [
+    1.88,
+    1.96
+   ],
+   "eps_guide_note": "excluding synthetic fuel and the ESOP settlement",
+   "fy_fees": {
+    "level_m": [
+     1405,
+     1415
+    ],
+    "pct": [
+     15,
+     16
+    ],
+    "prior_m": 1224,
+    "prior_label": "FY06",
+    "prior_source": "MA11",
+    "derived_pct": [
+     14.79,
+     15.6
+    ]
+   },
+   "fy_display": "North American RevPAR +6-7%",
+   "q_guide": {
+    "quarter": "Q3 2007",
+    "fees_m": [
+     295,
+     300
+    ],
+    "eps": [
+     0.27,
+     0.31
+    ],
+    "revpar": "North American +6-7%"
+   }
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-04",
+   "source": "MA16",
+   "doc": "Q3 2007 release",
+   "eps_guide": [
+    1.88,
+    1.9
+   ],
+   "eps_guide_note": "excluding synthetic fuel and the ESOP settlement",
+   "fy_fees": {
+    "level_m": [
+     1408,
+     1418
+    ],
+    "pct": null,
+    "prior_m": 1224,
+    "prior_label": "FY06",
+    "prior_source": "MA11",
+    "derived_pct": [
+     15.03,
+     15.85
+    ]
+   },
+   "q_guide": {
+    "quarter": "Q4 2007",
+    "fees_m": [
+     445,
+     455
+    ],
+    "fees_pct": [
+     14,
+     17
+    ],
+    "prior_m": 390,
+    "prior_label": "Q4 2006",
+    "prior_source": "MA11",
+    "eps": [
+     0.61,
+     0.63
+    ],
+    "revpar": "worldwide systemwide and North American company-operated +6-8%",
+    "derived_pct": [
+     14.1,
+     16.67
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2007-10-04",
+   "source": "MA16",
+   "doc": "Q3 2007 release",
+   "eps_guide": [
+    2.1,
+    2.25
+   ],
+   "eps_guide_note": "excluding synthetic fuel and the ESOP settlement",
+   "fy_fees": {
+    "level_m": [
+     1540,
+     1570
+    ],
+    "pct": null,
+    "prior_m": null,
+    "prior_label": null,
+    "prior_source": null
+   },
+   "fy_display": "worldwide systemwide and North American company-operated RevPAR +5-7%"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-02-14",
+   "source": "MA17",
+   "doc": "Q4 2007 release",
+   "eps_guide": [
+    2.0,
+    2.1
+   ],
+   "fy_fees": {
+    "level_m": [
+     1490,
+     1520
+    ],
+    "pct": [
+     4,
+     6
+    ],
+    "prior_m": 1428,
+    "prior_label": "FY07",
+    "prior_source": "MA17",
+    "derived_pct": [
+     4.34,
+     6.44
+    ]
+   },
+   "fy_display": "worldwide systemwide and North American company-operated RevPAR +3-5%",
+   "q_guide": {
+    "quarter": "Q1 2008",
+    "fees_m": [
+     310,
+     315
+    ],
+    "prior_m": 296,
+    "prior_label": "Q1 2007",
+    "prior_source": "MA13",
+    "eps": [
+     0.32,
+     0.36
+    ],
+    "revpar": "worldwide systemwide +3-5%, North American company-operated +2-4%",
+    "derived_pct": [
+     4.73,
+     6.42
+    ]
+   },
+   "note": "fee growth 'expected to be 8 to 10 percent over 2007' adjusting 2007 for $19M of business interruption proceeds, $17M of prior-period incentive fees and about $10M of higher relicensing fees"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-17",
+   "source": "MA19",
+   "doc": "Q1 2008 release",
+   "eps_guide": [
+    1.98,
+    2.08
+   ],
+   "fy_fees": {
+    "level_m": [
+     1490,
+     1520
+    ],
+    "pct": null,
+    "prior_m": 1428,
+    "prior_label": "FY07",
+    "prior_source": "MA17",
+    "derived_pct": [
+     4.34,
+     6.44
+    ]
+   },
+   "fy_display": "worldwide systemwide and North American company-operated RevPAR +3-5%",
+   "q_guide": {
+    "quarter": "Q2 2008",
+    "fees_m": [
+     380,
+     385
+    ],
+    "prior_m": 365,
+    "prior_label": "Q2 2007",
+    "prior_source": "MA14",
+    "eps": [
+     0.48,
+     0.52
+    ],
+    "revpar": "worldwide systemwide and North American company-operated +3-5%",
+    "derived_pct": [
+     4.11,
+     5.48
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2008-06-02",
+   "source": "MA20",
+   "doc": "8-K of 2008-06-02",
+   "q_guide": {
+    "quarter": "Q2 2008",
+    "revpar": "North American 'approximately 2 percent, compared to prior company guidance of 3 to 5 percent'"
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-10",
+   "source": "MA21",
+   "doc": "Q2 2008 release",
+   "eps_guide": [
+    1.77,
+    1.88
+   ],
+   "eps_guide_note": "excluding $0.10 of non-cash items in the tax provision",
+   "fy_fees": {
+    "level_m": [
+     1450,
+     1475
+    ],
+    "pct": null,
+    "prior_m": 1428,
+    "prior_label": "FY07",
+    "prior_source": "MA17",
+    "derived_pct": [
+     1.54,
+     3.29
+    ]
+   },
+   "fy_display": "worldwide systemwide RevPAR flat to +2% (constant dollars), North American company-operated -1% to +1%",
+   "q_guide": {
+    "quarter": "Q3 2008",
+    "fees_m": [
+     300,
+     310
+    ],
+    "prior_m": 302,
+    "prior_label": "Q3 2007",
+    "prior_source": "MA16",
+    "eps": [
+     0.3,
+     0.35
+    ],
+    "revpar": "worldwide systemwide flat to +2% (constant dollars), North American company-operated flat to -2%",
+    "derived_pct": [
+     -0.66,
+     2.65
+    ]
+   }
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-02",
+   "source": "MA23",
+   "doc": "Q3 2008 release",
+   "eps_guide": [
+    1.62,
+    1.68
+   ],
+   "eps_guide_note": "excluding $0.18 of non-cash items in the tax provision",
+   "fy_fees": {
+    "level_m": [
+     1435,
+     1445
+    ],
+    "pct": null,
+    "prior_m": 1428,
+    "prior_label": "FY07",
+    "prior_source": "MA17",
+    "derived_pct": [
+     0.49,
+     1.19
+    ]
+   },
+   "q_guide": {
+    "quarter": "Q4 2008",
+    "fees_m": [
+     440,
+     450
+    ],
+    "fees_pct": [
+     -5,
+     -3
+    ],
+    "prior_m": 465,
+    "prior_label": "Q4 2007",
+    "prior_source": "MA17",
+    "eps": [
+     0.44,
+     0.5
+    ],
+    "revpar": "worldwide systemwide -1% to -3%, North American company-operated -3% to -5%",
+    "derived_pct": [
+     -5.38,
+     -3.23
+    ]
+   }
+  },
+  {
+   "fy": 2009,
+   "published": "2008-10-02",
+   "source": "MA23",
+   "doc": "Q3 2008 release",
+   "eps_guide": [
+    1.48,
+    1.6
+   ],
+   "eps_guide_note": "'could total'",
+   "fy_fees": {
+    "level_m": [
+     1365,
+     1385
+    ],
+    "pct": [
+     -5,
+     -4
+    ],
+    "prior_m": null,
+    "prior_label": null,
+    "prior_source": null
+   },
+   "fy_display": "North American company-operated RevPAR 'at best, a 3 percent decline'",
+   "words": "While Marriott would typically provide a range of guidance for future performance in the coming year, the current global economic and financial climate makes predictions very difficult"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-02-12",
+   "source": "MA24",
+   "doc": "Q4 2008 release",
+   "eps_guide": [
+    0.86,
+    1.04
+   ],
+   "eps_guide_note": "'could total'",
+   "fy_fees": {
+    "level_m": [
+     1075,
+     1175
+    ],
+    "pct": null,
+    "prior_m": 1397,
+    "prior_label": "FY08",
+    "prior_source": "MA24",
+    "derived_pct": [
+     -23.05,
+     -15.89
+    ]
+   },
+   "fy_display": "North American company-operated RevPAR -12% to -17%",
+   "q_guide": {
+    "quarter": "Q1 2009",
+    "fees_pct": [
+     -25,
+     -20
+    ],
+    "eps": [
+     0.13,
+     0.15
+    ],
+    "revpar": "North American company-operated roughly -17%"
+   },
+   "words": "is unable to give its typical annual guidance. Instead, the company is providing a broad range of assumptions, which it’s using for internal planning purposes"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-23",
+   "source": "MA26",
+   "doc": "Q1 2009 release",
+   "eps_guide": [
+    0.88,
+    1.02
+   ],
+   "eps_guide_note": "adjusted, 'could total'",
+   "fy_fees": {
+    "level_m": [
+     1050,
+     1100
+    ],
+    "pct": null,
+    "prior_m": 1397,
+    "prior_label": "FY08",
+    "prior_source": "MA24",
+    "derived_pct": [
+     -24.84,
+     -21.26
+    ]
+   },
+   "fy_display": "North American systemwide RevPAR -17% to -20%",
+   "q_guide": {
+    "quarter": "Q2 2009",
+    "fees_m": [
+     245,
+     255
+    ],
+    "prior_m": 374,
+    "prior_label": "Q2 2008",
+    "prior_source": "MA21",
+    "eps": [
+     0.2,
+     0.23
+    ],
+    "revpar": "North American systemwide -22% to -25%",
+    "derived_pct": [
+     -34.49,
+     -31.82
+    ]
+   },
+   "words": "is unable to give its typical annual guidance. Instead, the company is providing the following assumptions, which it is using internally for planning purposes"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-16",
+   "source": "MA28",
+   "doc": "Q2 2009 release",
+   "eps_guide": [
+    0.76,
+    0.86
+   ],
+   "eps_guide_note": "adjusted, 'could total'",
+   "fy_fees": {
+    "level_m": [
+     1030,
+     1060
+    ],
+    "pct": null,
+    "prior_m": 1397,
+    "prior_label": "FY08",
+    "prior_source": "MA24",
+    "derived_pct": [
+     -26.27,
+     -24.12
+    ]
+   },
+   "fy_display": "North American systemwide RevPAR -17% to -20%",
+   "q_guide": {
+    "quarter": "Q3 2009",
+    "fees_m": [
+     210,
+     220
+    ],
+    "prior_m": 303,
+    "prior_label": "Q3 2008",
+    "prior_source": "MA23",
+    "eps": [
+     0.09,
+     0.14
+    ],
+    "revpar": "North American systemwide -20% to -23%",
+    "derived_pct": [
+     -30.69,
+     -27.39
+    ]
+   },
+   "words": "Therefore, the company is unable to give its typical guidance. Instead, the company is providing the following assumptions which it is using for internal planning purposes"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-09-23",
+   "source": "MA29",
+   "doc": "8-K of 2009-09-23",
+   "q_guide": {
+    "quarter": "Q3 2009",
+    "revpar": "North American systemwide 'approximately 19 percent' lower (the 8-K of 2009-09-23)"
+   },
+   "note": "third quarter 2009 'pre-tax impairment charges of approximately $760 million associated with its timeshare segment' (8-K of 2009-09-23)"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-10-08",
+   "source": "MA30",
+   "doc": "Q3 2009 release",
+   "q_guide": {
+    "quarter": "Q4 2009",
+    "fees_m": [
+     310,
+     320
+    ],
+    "prior_m": 402,
+    "prior_label": "Q4 2008",
+    "prior_source": "MA24",
+    "eps": [
+     0.2,
+     0.23
+    ],
+    "revpar": "North American systemwide -13% to -16%",
+    "derived_pct": [
+     -22.89,
+     -20.4
+    ]
+   },
+   "words": "Therefore, the company is unable to give its typical guidance. Instead, the company is providing the following assumptions which it is using for internal planning purposes"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-08",
+   "source": "MA30",
+   "doc": "Q3 2009 release",
+   "fy_fees": {
+    "level_m": [
+     1050,
+     1110
+    ],
+    "pct": null,
+    "prior_m": null,
+    "prior_label": null,
+    "prior_source": null
+   },
+   "fy_display": "worldwide systemwide RevPAR flat to -5% (constant dollars)"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-07-16",
+   "source": "MA15",
+   "quarterly": 0.075,
+   "note": "$0.0750 a quarter (dividends declared per share in the second quarter of 2007, Q2 2007 10-Q)"
+  },
+  {
+   "published": "2008-07-11",
+   "source": "MA22",
+   "quarterly": 0.0875,
+   "note": "$0.0875 a quarter ('In May 2008, our Board of Directors increased the quarterly cash dividend by 17 percent to $0.0875 per share', Q2 2008 10-Q)"
+  },
+  {
+   "published": "2009-05-05",
+   "source": "MA27",
+   "quarterly": 0.0,
+   "note": "none in cash: a stock dividend of 0.00369 share per share in its place ('paying a stock dividend helps provide liquidity', 8-K/A of 2009-05-05)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'MAR'): the decade of the FY2006 10-K, the vintage public on 2008-01-04, is 1997-2006. Each year-on-year change comes from the latest filing published by then that reports both years; 'raw' keeps the figures, 'from' the filing of each change and 'sf_from' the filing of each year's synthetic fuel lines, and retro/build_mar.py re-derives every value. RevPAR and occupancy are those of comparable company-operated U.S. (from the FY2002 10-K North American) properties across the lodging brands, as each 10-K states them: no all-brand figure exists for 1997 (one brand), 2000 (the full-service brands only) or 2003 (segments only), and 2002's occupancy 'declined slightly' (words, no value); 1999's 'occupancy remained at 77.5 percent' is a change of 0. Fees are base management, franchise and incentive fees (no table before the FY2003 10-K gives them, so from 2000). Revenues and operating income exclude synthetic fuel (its revenue line, and its revenues less expenses, from each year's latest statement of income); 1997-1999 sales are each filing's own basis (before and after the 2002 discontinued operations); operating income is first tabled for 1999, so the margin from 2000.",
+  "raw": {
+   "MA2": {
+    "revpar": {
+     "1998": 6.0
+    },
+    "occ_pts": {
+     "1998": -0.5
+    }
+   },
+   "MA3": {
+    "sales_m": {
+     "1996": 5738,
+     "1997": 7236
+    },
+    "revpar": {
+     "1999": 3.7
+    },
+    "occ_pts": {
+     "1999": 0.0
+    }
+   },
+   "MA4": {
+    "sales_m": {
+     "1997": 7236,
+     "1998": 7968
+    }
+   },
+   "MA5": {
+    "sales_m": {
+     "1998": 6311,
+     "1999": 7041
+    },
+    "revpar": {
+     "2001": -10.4,
+     "2002": -5.7
+    },
+    "occ_pts": {
+     "2001": -6.7
+    }
+   },
+   "MA8": {
+    "sf_rev_m": {
+     "2002": 193
+    },
+    "sf_exp_m": {
+     "2002": 327
+    }
+   },
+   "MA10": {
+    "revpar": {
+     "2004": 8.6
+    },
+    "sf_rev_m": {
+     "2003": 302
+    },
+    "sf_exp_m": {
+     "2003": 406
+    }
+   },
+   "MA12": {
+    "rev_m": {
+     "1999": 7026,
+     "2000": 7911,
+     "2001": 7768,
+     "2002": 8415,
+     "2003": 9014,
+     "2004": 10099,
+     "2005": 11550,
+     "2006": 12160
+    },
+    "opinc_m": {
+     "1999": 621,
+     "2000": 762,
+     "2001": 420,
+     "2002": 321,
+     "2003": 377,
+     "2004": 477,
+     "2005": 555,
+     "2006": 1011
+    },
+    "fees_m": {
+     "1999": 800,
+     "2000": 907,
+     "2001": 794,
+     "2002": 773,
+     "2003": 742,
+     "2004": 873,
+     "2005": 1027,
+     "2006": 1224
+    },
+    "sf_rev_m": {
+     "2004": 321,
+     "2005": 421,
+     "2006": 165
+    },
+    "sf_exp_m": {
+     "2004": 419,
+     "2005": 565,
+     "2006": 241
+    },
+    "revpar": {
+     "2005": 9.8,
+     "2006": 8.9
+    },
+    "occ_pts": {
+     "2005": 1.4,
+     "2006": -0.4
+    }
+   }
+  },
+  "from": {
+   "revpar": {
+    "1998": "MA2",
+    "1999": "MA3",
+    "2001": "MA5",
+    "2002": "MA5",
+    "2004": "MA10",
+    "2005": "MA12",
+    "2006": "MA12"
+   },
+   "occupancy": {
+    "1998": "MA2",
+    "1999": "MA3",
+    "2001": "MA5",
+    "2005": "MA12",
+    "2006": "MA12"
+   },
+   "fees": {
+    "2000": "MA12",
+    "2001": "MA12",
+    "2002": "MA12",
+    "2003": "MA12",
+    "2004": "MA12",
+    "2005": "MA12",
+    "2006": "MA12"
+   },
+   "sales": {
+    "1997": "MA3",
+    "1998": "MA4",
+    "1999": "MA5",
+    "2000": "MA12",
+    "2001": "MA12",
+    "2002": "MA12",
+    "2003": "MA12",
+    "2004": "MA12",
+    "2005": "MA12",
+    "2006": "MA12"
+   },
+   "op_margin": {
+    "2000": "MA12",
+    "2001": "MA12",
+    "2002": "MA12",
+    "2003": "MA12",
+    "2004": "MA12",
+    "2005": "MA12",
+    "2006": "MA12"
+   }
+  },
+  "sf_from": {
+   "2002": "MA8",
+   "2003": "MA10",
+   "2004": "MA12",
+   "2005": "MA12",
+   "2006": "MA12"
+  },
+  "revpar": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1998": 6.0,
+    "1999": 3.7,
+    "2001": -10.4,
+    "2002": -5.7,
+    "2004": 8.6,
+    "2005": 9.8,
+    "2006": 8.9
+   },
+   "thresholds": {
+    "BEAR": -27,
+    "BASE": -10,
+    "BULL": 6,
+    "XBULL": 10
+   },
+   "sources": "MA2 (1998), MA3 (1999), MA5 (2001), MA5 (2002), MA10 (2004), MA12 (2005), MA12 (2006)"
+  },
+  "fees": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2000": 13.38,
+    "2001": -12.46,
+    "2002": -2.64,
+    "2003": -4.01,
+    "2004": 17.65,
+    "2005": 17.64,
+    "2006": 19.18
+   },
+   "thresholds": {
+    "BEAR": -38,
+    "BASE": -12,
+    "BULL": 13,
+    "XBULL": 19
+   },
+   "sources": "MA12 (2000), MA12 (2001), MA12 (2002), MA12 (2003), MA12 (2004), MA12 (2005), MA12 (2006)"
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 26.11,
+    "1998": 10.12,
+    "1999": 11.57,
+    "2000": 12.6,
+    "2001": -1.81,
+    "2002": 5.84,
+    "2003": 5.96,
+    "2004": 12.24,
+    "2005": 13.82,
+    "2006": 7.78
+   },
+   "thresholds": {
+    "BEAR": -14,
+    "BASE": -2,
+    "BULL": 11,
+    "XBULL": 26
+   },
+   "sources": "MA3 (1997), MA4 (1998), MA5 (1999), MA12 (2000), MA12 (2001), MA12 (2002), MA12 (2003), MA12 (2004), MA12 (2005), MA12 (2006)"
+  },
+  "occupancy": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1998": -50.0,
+    "1999": 0.0,
+    "2001": -670.0,
+    "2005": 140.0,
+    "2006": -40.0
+   },
+   "thresholds": {
+    "BEAR": -1300,
+    "BASE": -670,
+    "BULL": -40,
+    "XBULL": 140
+   },
+   "sources": "MA2 (1998), MA3 (1999), MA5 (2001), MA12 (2005), MA12 (2006)"
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2000": 79.36,
+    "2001": -422.54,
+    "2002": 12.71,
+    "2003": -1.28,
+    "2004": 35.94,
+    "2005": 40.03,
+    "2006": 278.12
+   },
+   "thresholds": {
+    "BEAR": -880,
+    "BASE": -420,
+    "BULL": 40,
+    "XBULL": 280
+   },
+   "sources": "MA12 (2000), MA12 (2001), MA12 (2002), MA12 (2003), MA12 (2004), MA12 (2005), MA12 (2006)"
+  }
+ },
+ "splits": [
+  {
+   "effective": "2006-06-12",
+   "applies": "2007-02-21",
+   "ratio": 2,
+   "source": "MA12",
+   "note": "'On June 9, 2006, we completed a two-for-one stock split that was effected in the form of a stock dividend' (FY2006 10-K); ex-date 2006-06-12 in the price data; it applies from the FY2006 10-K, the first fact-sheet filing that states it, before every as-of date"
+  },
+  {
+   "effective": "2009-06-23",
+   "applies": "2009-06-23",
+   "ratio": 1.00369,
+   "source": "MA27",
+   "note": "stock dividend of 0.00369 share per share, record 2009-06-25 (8-K/A of 2009-05-05); ex-date 2009-06-23 in the price data; the company restates per-share data for it"
+  },
+  {
+   "effective": "2009-08-18",
+   "applies": "2009-10-09",
+   "ratio": 1.00379,
+   "source": "MA31",
+   "note": "stock dividend of 0.00379 share per share, record 2009-08-20; ex-date 2009-08-18 in the price data, ratio first in a filing in the Q3 2009 10-Q (2009-10-09), so it applies from then"
+  }
+ ],
+ "listing": {
+  "first_day": "1998-03-27",
+  "source": "MA1"
+ }
+}

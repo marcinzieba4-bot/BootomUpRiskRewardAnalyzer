@@ -15,6 +15,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 SHW          # the SHW series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 WMT          # the WMT series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 RCL          # the RCL series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 MAR          # the MAR series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -34,7 +35,9 @@ whose Net Yields, Net Cruise Costs, occupancy and raw figures are absurd and whi
 field of RCL 2010-2013), a later withdrawal and a later outlook in words for every guided year, the planted print's full-year actuals
 excluding its own year and a later vintage that excludes a year, and APCD and occupancy that a filing after CUTOFF first states on the
 last print before it (the 'stats_later' rule of RCL 2018-2021), a later dollar revenue guide for every guided quarter and a later
-vintage with an income tax line (RCL 2022-2026); every
+vintage with an income tax line (RCL 2022-2026); MAR: a guide with every guided field (fiscal-year and next-quarter fee ranges and
+percentages, the display, note and words fields), a later range for every quarter the fact sheet guides, and a print whose fees, RevPAR,
+occupancy, raw figures and full-year actuals are absurd; every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -62,7 +65,8 @@ CACHE = [os.path.join(ROOT, "retro", ".cache", n) for n in (f"{TICKER}.json", "_
 OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP", "LOW": "staging/retrospective/LOW",
           "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE", "AVGO": "staging/retrospective/AVGO",
           "PEP": "staging/retrospective/PEP", "MSFT": "staging/retrospective/MSFT", "XOM": "staging/retrospective/XOM",
-          "SHW": "staging/retrospective/SHW", "WMT": "staging/retrospective/WMT", "RCL": "staging/retrospective/RCL"}[TICKER]
+          "SHW": "staging/retrospective/SHW", "WMT": "staging/retrospective/WMT", "RCL": "staging/retrospective/RCL",
+          "MAR": "staging/retrospective/MAR"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -138,7 +142,13 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      cash_return_text="PLANTED", fuel_note="PLANTED", period_end="PLANTED",
                      raw=dict(rev_k=1, rev_prior_k=99, comm_k=0, comm_prior_k=0, onboard_k=0, onboard_prior_k=0, opex_k=99, opex_prior_k=1,
                               msa_k=1, msa_prior_k=1, opinc_k=-99, opinc_prior_k=99, apcd=1, apcd_prior=99, occ=1.0, occ_prior=99.0,
-                              diluted_shares_k=1, cash_k=99))}[TICKER]
+                              diluted_shares_k=1, cash_k=99)),
+         "MAR": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, fees_m=1, fees_prior_m=999,
+                     fees_pct=-60.0, revpar_pct=-60.0, occupancy=1.0, occupancy_pts=-99.0, occupancy_bp=-9900.0, op_margin=-50.0,
+                     op_margin_bp=-999.0, eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0,
+                     next_print="PLANTED", cash_return_text="PLANTED", ww_revpar_note="PLANTED", basis_note="PLANTED", period_end="PLANTED",
+                     raw=dict(base_m=1, base_prior_m=999, fran_m=0, fran_prior_m=0, inc_m=0, inc_prior_m=0, rev_total_m=1, rev_total_prior_m=99,
+                              opinc_m=-99, opinc_prior_m=99, diluted_shares_m=1.0, cash_m=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -157,6 +167,10 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                            rev_reported=[-50, -40], rev_currency_m=-99999, rev_prior_m=1,
                            q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2],
                                     "sales_basis": "PLANTED", "sales_reported": [-50, -40], "currency_m": -99999, "prior_m": 1}),
+               "MAR": dict(note="PLANTED", words="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED",
+                           fy_fees={"level_m": [1, 2], "pct": [-60, -50], "prior_m": 1, "prior_label": "PLANTED", "prior_source": "MA1"},
+                           q_guide={"quarter": "Q4 2099", "fees_m": [1, 2], "fees_pct": [-60, -50], "prior_m": 1, "prior_label": "PLANTED",
+                                    "prior_source": "MA1", "eps": [0.1, 0.2], "revpar": "PLANTED"}),
                "RCL": dict(note="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
                            q_guide={"quarter": "Q4 2099", "ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0, "eps": [0.1, 0.2]}),
                "SHW": dict(fy_words="PLANTED", note="PLANTED",
@@ -263,6 +277,17 @@ try:
         fa = copy.deepcopy(max((p for p in f["prints"] if "fy_actual" in p and p["published"] < cutoff), key=lambda p: p["published"])["fy_actual"])
         fa.update(fy=2099, fy_label="FY99", eps_normalized=None, excluded_note="PLANTED", normalization_note="PLANTED", revenue_usd_b=0.01)
         last.update(fy_actual=fa, no_ny_ncc=True, no_ny_ncc_note="PLANTED", ratio_note="PLANTED", ytd_sales_pct=-99.0, ytd_label="PLANTED")
+    if TICKER == "MAR":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
+                           # wins): a later guide may never reach an earlier date; and absurd full-year actuals on the planted print
+        for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):
+            f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED",
+                                "eps_guide": [0.1, 0.2], **{k: v for k, v in GUIDE_PLANT.items() if k != "q_guide"},
+                                "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
+        withfy = [p for p in f["prints"] if "fy_actual" in p]           # before the first Q4 print, the earliest one's fields, planted later
+        fa = copy.deepcopy(max([p for p in withfy if p["published"] < cutoff] or withfy[:1], key=lambda p: p["published"])["fy_actual"])
+        fa.update(fy=2099, fy_label="FY99", eps_normalized=0.01, normalization_note="PLANTED", revenue_usd_b=0.01, revpar_pct=-99.0,
+                  op_margin=-99.0, fees_pct=-99.0, tax_note="PLANTED", op_margin_note="PLANTED", doc="PLANTED")
+        last["fy_actual"] = fa
     if TICKER == "WMT":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
                            # wins): a later guide may never reach an earlier date
         for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):

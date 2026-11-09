@@ -1331,6 +1331,41 @@
     "term": "Discovery-class",
     "first_seen": "2026-01-29",
     "note": "a class of ships on order; first in a Royal Caribbean filing in its Q4 2025 earnings 8-K (accepted 2026-01-29 06:32 ET, before the open)"
+   },
+   {
+    "term": "Autograph Collection",
+    "first_seen": "2010-02-11",
+    "note": "a Marriott brand (soft-branded collection); first in a Marriott filing in its 8-K of 2010-02-11 (accepted 2010-02-11 07:27 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "AC Hotels by Marriott",
+    "first_seen": "2011-02-15",
+    "note": "the Marriott brand formed with AC Hotels; first in a Marriott filing in its 8-K of 2011-02-14 (accepted 2011-02-14 19:16 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Moxy Hotels",
+    "first_seen": "2013-08-01",
+    "note": "a Marriott brand; first in a Marriott filing in its 10-Q of 2013-08-01 (accepted 2013-08-01 11:42 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Marriott Vacations Worldwide",
+    "first_seen": "2011-06-29",
+    "note": "the timeshare spin-off of 2011; first in a Marriott filing in its 8-K of 2011-06-28 (accepted 2011-06-28 16:58 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Marriott Bonvoy",
+    "first_seen": "2019-03-01",
+    "note": "Marriott's loyalty programme after the Starwood merger; first in a Marriott filing in its 8-K of 2019-02-28 (accepted 2019-02-28 16:55 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Ritz-Carlton Destination Club",
+    "first_seen": "2009-07-16",
+    "note": "Marriott's renamed fractional and residential timeshare brand; first in a Marriott filing in its 8-K of 2009-07-16 (accepted 2009-07-16 07:38 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Ritz-Carlton Reserve",
+    "first_seen": "2011-02-18",
+    "note": "a Ritz-Carlton sub-brand; first in a Marriott filing in its 10-K of 2011-02-18 (accepted 2011-02-18 10:27 ET, during the session), EDGAR full-text search"
    }
   ]
  }
