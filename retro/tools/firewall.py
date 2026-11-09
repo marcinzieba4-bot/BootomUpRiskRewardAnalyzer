@@ -33,7 +33,8 @@ constant currency, capacity, the display fields, an EPS guide note), a later ran
 whose Net Yields, Net Cruise Costs, occupancy and raw figures are absurd and which restates every year of the history (the 'restates'
 field of RCL 2010-2013), a later withdrawal and a later outlook in words for every guided year, the planted print's full-year actuals
 excluding its own year and a later vintage that excludes a year, and APCD and occupancy that a filing after CUTOFF first states on the
-last print before it (the 'stats_later' rule of RCL 2018-2021); every
+last print before it (the 'stats_later' rule of RCL 2018-2021), a later dollar revenue guide for every guided quarter and a later
+vintage with an income tax line (RCL 2022-2026); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -242,10 +243,13 @@ try:
                                 "withdrawn": ["rev_guide", "eps_guide"]})
     if TICKER == "RCL":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
                            # wins): a later guide may never reach an earlier date
-        for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):
+        # (and a later dollar revenue guide for each, read against a planted year-ago quarter: the 'q_rev' field of RCL 2022-2026)
+        for q in sorted({g[k]["quarter"] for g in f["guides"] for k in ("q_guide", "q_rev") if k in g}):
             f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED",
                                 "eps_guide": [0.1, 0.2], **{k: v for k, v in GUIDE_PLANT.items() if k != "q_guide"},
-                                "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q}})
+                                "q_guide": {**GUIDE_PLANT["q_guide"], "quarter": q},
+                                "q_rev": {"quarter": q, "level_b": [0.01, 0.02], "prior_k": 1, "prior_source": last["source"],
+                                          "prior_label": "PLANTED", "quote": "PLANTED"}})
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         last.update(restates={y: 0.01 for y in v0["eps_normalized"]}, restates_note="PLANTED")
         for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):   # a later withdrawal and outlook in words (RCL 2018-2021)
@@ -280,8 +284,10 @@ try:
     v.update(published=later, why="PLANTED", company="PLANTED")
     v["eps_normalized"] = {**v["eps_normalized"], "2099": 0.01}
     f["history_vintages"].append(v)
-    if TICKER == "RCL":    # a later vintage excluding a year (RCL 2018-2021)
+    if TICKER == "RCL":    # a later vintage excluding a year (RCL 2018-2021), with a tax line and Net Cruise Costs without Net Yields (RCL 2022-2026)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
+        v.update(tax_rate=0.99, tax_note="PLANTED", other_expense_note="PLANTED", units_note="PLANTED", prev_fy_ny_pct=None,
+                 prev_fy_ncc_pct=-99.0)
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

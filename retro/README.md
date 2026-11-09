@@ -9147,6 +9147,9 @@ for c in 2014-01-27 2014-02-21 2014-04-24 2014-07-24 2014-10-23 2014-10-24 2015-
 for c in 2018-01-24 2018-02-21 2018-04-26 2018-08-02 2018-10-25 2018-10-26 2019-01-30 2019-02-25 2019-05-01 2019-07-25 2019-10-30 \
          2019-10-31 2020-02-04 2020-02-26 2020-03-10 2020-05-08 2020-05-20 2020-08-10 2020-10-29 2021-02-22 2021-03-01 2021-04-29 \
          2021-08-04 2021-08-05 2021-10-29 2022-01-01; do python3 retro/tools/firewall.py $c RCL; done
+for c in 2022-02-04 2022-03-01 2022-05-05 2022-07-28 2022-11-03 2023-02-07 2023-02-24 2023-05-04 2023-07-27 2023-10-26 2024-02-01 \
+         2024-02-22 2024-04-25 2024-07-25 2024-10-29 2025-01-28 2025-02-14 2025-04-29 2025-07-29 2025-10-28 2026-01-29 2026-02-12 \
+         2026-04-30 2026-07-28 2026-10-27 2026-11-09; do python3 retro/tools/firewall.py $c RCL; done
 ```
 
 Royal Caribbean filed as a foreign private issuer until 2004: its annual reports for FY1998 to FY2003 are on Form 20-F (the FY1998-FY2000
@@ -9717,6 +9720,19 @@ checklist checks by a second parser. Decided on 2026-11-09, before any 2022-2026
   that date. `retro_tool run` (offline, with its as-of price check run once for all 253 dates against one download: 0 of 253 off by more
   than 0.5%) passes every date and warns of "2087" and "2043" on 28 dates: Q2 2022's capacity change (+2,087.9%) and Q3 2023's margin
   change (+2,043.7bp), numbers, not years.
+
+Controls: altering one value of each new print (its EPS; its Net Yields change, or for the nine releases without one the note that
+says so; each Q4 print's full-year EPS or, for FY2021 and FY2022, its exclusion note), guide (its EPS range, and its next-quarter Net
+Yields, fiscal-year constant-currency Net Yields, next-quarter EPS, dollar revenue guide and display line where it has them), each
+outlook in words, vintage (its first-year EPS) and dividend must change no date before its publication and the first weekly date on or
+after it. 133 of the 134 did; the other, FY2022's exclusion note, changes nothing because no model prints it while a numeric FY2023
+guide is current, and removing the exclusion itself instead (FY2022 at $1.00) changes 2023-02-08 and 2023-02-17 (until the FY2022 10-K)
+and nothing earlier. A scan of the 984 models for the 289 figures, notes, guides, words, texts and sources first published from
+2021-12-31 finds none before its first publication (0 of 248,026 pairs; "dividend $0.75 a quarter" and "dividend $1.50 a quarter", the
+whole texts of Q2 2025 and Q3 2026, appear earlier only inside the longer texts of the prints before them). The firewall (its RCL plant
+now also carries a later dollar revenue guide for every guided quarter and a later vintage with an income tax line and Net Cruise Costs
+without Net Yields) passes at all 26 cutoffs above, and rerun with the new plants at 2010-01-01, 2014-01-01, 2018-01-01 and 2022-01-01
+changes none of the 105, 314, 522 and 731 earlier models. No other ticker's code changed, so no other ticker is rebuilt.
 
 Seen in the build (method behaviour, not tuned):
 - **Classes:** 2022 CHEAP on all 52; 2023 CHEAP 46, FAIR 6; 2024 CHEAP 40, FAIR 2, RICH 10; 2025 RICH 47, FAIR 2, CHEAP 3; 2026 RICH
