@@ -1,8 +1,8 @@
 # MAR retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MAR weekly dates: 525 from 2008-01-04 to 2017-12-29. They are **labels and hypotheses**: never feed
+Patterns seen in `outcome.json` for the MAR weekly dates: 736 from 2008-01-04 to 2021-12-31. They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed: 2008-2009
-after 6eb0401, 2010-2013 after 893d2ad, 2014-2017 after a9637a3. Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its
+after 6eb0401, 2010-2013 after 893d2ad, 2014-2017 after a9637a3, 2018-2021 after f06ae2a and its checks (fdab930). Outcomes were computed on 2026-11-09 from the closes posted to 2026-11-06; every date has its
 6-month, 1-, 2- and 3-year horizons. Total returns keep Yahoo's 1061:1000 factor for the 2011 Marriott Vacations Worldwide spin-off, so
 they include the distributed shares. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
 is +32.2% over two years. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark, FAIR should land within
@@ -316,3 +316,105 @@ These are hindsight comparisons of alternatives decided before scoring (retro/RE
 - **GAAP EPS wherever the year is not distorted:** 23 dates, held on 11 as built and 14 under the alternative.
 - **Signals:** the proxy composite ranks the outcome at -0.52, -0.86, +0.41 and -0.51; it is not a steady guide for MAR. The adjusted
   gap scores -0.15, +0.61, +0.11 and -0.20: weaker than in 2011-2013.
+
+## 2018 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 15 | +6.6% | -20.9% to +26.0% | 0 | 0 | -6.2% | 0 |
+| class FAIR | 14 | -26.8% | -32.4% to -13.8% | 0 | 0 | -10.1% | 0 |
+| class RICH | 24 | -29.0% | -44.9% to +13.6% | 0 | 0 | -6.6% | 24 |
+| legacy tier BUY | 6 | +21.8% | +12.3% to +26.0% | 0 | 0 | -2.1% | 0 |
+| legacy tier ACCUMULATE | 11 | -13.7% | -20.9% to +7.0% | 0 | 0 | -8.5% | 0 |
+| legacy tier WATCHLIST | 12 | -27.2% | -32.4% to -13.8% | 0 | 0 | -10.5% | 0 |
+| legacy tier AVOID | 24 | -29.0% | -44.9% to +13.6% | 0 | 0 | -6.6% | 24 |
+| FY17 EPS $4.23 guide (2018-01-05 to 2018-02-09) | 6 | +6.7% | -1.8% to +13.6% | 0 | 0 | -6.2% | 6 |
+| FY18 EPS $5.225 (2018-02-16 to 2018-05-04) | 12 | -36.2% | -44.9% to +7.1% | 0 | 0 | -4.1% | 12 |
+| FY18 EPS $5.49 (2018-05-10 to 2018-08-03) | 13 | -30.4% | -34.5% to -16.0% | 0 | 0 | -10.5% | 6 |
+| FY18 EPS $5.86 (2018-08-08 to 2018-11-02) | 13 | -18.1% | -26.8% to -11.9% | 0 | 0 | -9.8% | 0 |
+| FY18 EPS $6.165 (2018-11-07 to 2018-12-31) | 9 | +19.8% | -8.2% to +26.0% | 0 | 0 | -4.7% | 0 |
+| price under the EPP floor | 7 | +21.6% | -8.2% to +26.0% | 0 | 0 | -3.3% | 0 |
+| price at or over the EPP floor | 46 | -20.9% | -44.9% to +13.6% | 0 | 0 | -8.5% | 24 |
+
+- **RICH held on all 24 dates of January-June 2018** (-45% to +14% over two years, 8-50pp behind SPY).
+- **The FAIR and CHEAP dates of June-December 2018 held on none.** Their two-year windows end in the 2020 collapse: -32% to +26%,
+  23-52pp behind SPY. Over three years they returned +4% to +58%.
+- No date cleared the hurdle or beat SPY over two years. The two-year price landed nearest BEAR on 34 dates and BASE on 19.
+
+## 2019 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 51 | +11.0% | -3.9% to +32.3% | 1 | 0 | -5.8% | 1 |
+| class FAIR | 2 | +12.5% | +8.9% to +12.5% | 0 | 0 | -15.6% | 0 |
+| legacy tier BUY | 47 | +11.9% | -3.9% to +32.3% | 1 | 0 | -5.8% | 1 |
+| legacy tier ACCUMULATE | 6 | +9.5% | -0.4% to +13.8% | 0 | 0 | -5.8% | 0 |
+| FY18 EPS $6.165 (2019-01-04 to 2019-02-22) | 8 | +13.8% | +4.8% to +19.7% | 0 | 0 | -5.8% | 0 |
+| FY19 EPS $5.985 (2019-03-01 to 2019-05-03) | 10 | +17.1% | +7.6% to +27.1% | 0 | 0 | -17.3% | 0 |
+| FY19 EPS $6.08 (2019-05-10 to 2019-08-02) | 13 | +7.6% | -3.9% to +16.2% | 0 | 0 | -10.6% | 0 |
+| FY19 EPS $6.015 (2019-08-07 to 2019-11-01) | 13 | +13.2% | +3.5% to +32.3% | 1 | 0 | +3.8% | 1 |
+| FY19 EPS $5.885 (2019-11-06 to 2019-12-31) | 9 | +9.5% | -0.4% to +27.1% | 0 | 0 | +0.1% | 0 |
+| price under the EPP floor | 6 | +17.9% | +4.8% to +19.7% | 0 | 0 | -4.9% | 0 |
+| price at or over the EPP floor | 47 | +10.2% | -3.9% to +32.3% | 1 | 0 | -6.3% | 1 |
+
+- **CHEAP on 51 dates, held on 1.** Every two-year window runs through the 2020 collapse: -4% to +32%, 17-54pp behind SPY. One-year
+  returns had a median of -20.6%; three-year returns ran -2% to +58%, behind SPY on every date.
+- Nothing public in 2019 named the shock. The floor read was right about price and earnings as they stood, and the outcome is the
+  pandemic's. The landing was nearest BASE on all 53.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 19 | +43.9% | +8.7% to +194.0% | 11 | 9 | +35.9% | 11 |
+| class RICH | 34 | +56.0% | +13.6% to +105.9% | 28 | 34 | +63.4% | 0 |
+| legacy tier BUY | 21 | +69.1% | +8.7% to +194.0% | 13 | 11 | +57.4% | 10 |
+| legacy tier ACCUMULATE | 10 | +70.8% | +56.0% to +97.9% | 10 | 10 | +76.1% | 1 |
+| legacy tier WATCHLIST | 11 | +51.4% | +43.0% to +72.5% | 11 | 11 | +63.0% | 0 |
+| legacy tier AVOID | 11 | +27.4% | +13.6% to +62.1% | 5 | 11 | +24.4% | 0 |
+| FY19 EPS $5.885 (2020-01-03 to 2020-02-21) | 8 | +14.1% | +8.7% to +22.5% | 0 | 0 | +2.8% | 0 |
+| FY20 EPS $6.415 (2020-02-28 to 2020-03-13) | 3 | +43.9% | +37.2% to +69.1% | 3 | 1 | +35.9% | 3 |
+| FY19 actual $3.80 after the withdrawal (2020-03-20 to 2020-12-31) | 42 | +62.3% | +13.6% to +194.0% | 36 | 42 | +70.0% | 8 |
+| price under the EPP floor | 3 | +69.1% | +43.9% to +194.0% | 3 | 2 | +57.4% | 3 |
+| price at or over the EPP floor | 50 | +55.7% | +8.7% to +129.5% | 36 | 41 | +63.0% | 8 |
+
+- **The best calls of the series: CHEAP from the withdrawal to the Q1 2020 print.** On 2020-03-20 the anchor fell to FY19's $3.80 and
+  the floor to $72.20, with the price at it. The 8 dates from 2020-03-20 to 2020-05-08 returned +98% to +194% (30-107pp ahead of SPY).
+- **RICH from 2020-05-12 to 2021-07-30, 64 dates, held on none.** BASE took the collapsed quarters' fee growth (-29.7% to -76.6%). The
+  dates returned +5% to +106% over two years (2-65pp ahead of SPY) and +57% to +140% over three.
+  - Hypothesis, not a rule: when guidance is withdrawn in a shock, the latest-quarter fallback extrapolates the trough. Test a fallback to
+    the last guided rate, or to a multi-year growth rate, on other tickers' shocks (RCL 2020-2021 used the same fallback but stayed CHEAP
+    on its price); never fit it to MAR.
+- The 8 CHEAP dates of January-February 2020 returned +9% to +23% and missed.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 14 | +48.5% | +23.0% to +56.6% | 11 | 14 | +21.7% | 14 |
+| class FAIR | 8 | +29.0% | +17.3% to +38.3% | 2 | 8 | +11.5% | 0 |
+| class RICH | 30 | +26.1% | +5.2% to +50.7% | 7 | 30 | +13.1% | 0 |
+| legacy tier BUY | 22 | +38.3% | +17.3% to +56.6% | 13 | 22 | +15.6% | 14 |
+| legacy tier AVOID | 30 | +26.1% | +5.2% to +50.7% | 7 | 30 | +13.1% | 0 |
+| FY19 actual $3.80, FY20 excluded (2021-01-08 to 2021-12-31) | 52 | +28.4% | +5.2% to +56.6% | 20 | 52 | +13.9% | 14 |
+
+- **Every date beat SPY over two years** (SPY -8% to +13% in 2021-2023). The CHEAP calls held on all 14; FAIR (8) and RICH (30) missed.
+- **The CHEAP and FAIR dates of August-December 2021 rest on the rebound quarters' fee growth** against the 2020 trough (+174.4%, +95.5%).
+  Read against 2019, all 22 would have been RICH and none would have held.
+- The classes ranked the outcome (CHEAP +48.5%, FAIR +29.0%, RICH +26.1%). The adjusted gap scores +0.51 against the m12-24 return, the
+  EPP gap -0.82 and the proxy composite +0.39.
+
+## The 2018-2021 encoding calls, seen afterwards
+
+These are hindsight comparisons of alternatives decided before scoring (retro/README.md, "MAR 2018-2021", Sensitivity). The calls stay.
+
+- **The 2020 withdrawal read as voiding every field:** 38 dates RICH as built, held on 0. With the February 2020 outlook standing, 36
+  of them would have held.
+- **The 2021 latest-quarter fallback against the 2020 trough:** 22 dates CHEAP or FAIR as built, held on 14. Against 2019 they would
+  all have been RICH, held on 0.
+- **GAAP EPS for FY2017r-FY2019 (the post-ASC 606 adjusted figures read as not excluding only one-offs):** 12 dates, held on 0 as built.
+  With the company's adjusted EPS, 11 would have held.
+- **The recast vintage:** 4 dates, held on none either way.
+- In the shock the fallbacks pulled in opposite directions. The withdrawal-and-trough reading was the worst of the series in 2020-21; the
+  trough base made the 2021 rebound read CHEAP, and that held. The two together are the case for testing a pre-shock base in a
+  withdrawal (the hypothesis above), on other tickers first.
