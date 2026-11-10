@@ -10950,7 +10950,7 @@ EDGAR's acceptance time. Decided on 2026-11-10, before any outcome of these date
   release), revenue (0.20), the gross margin change (0.15; revenue less cost of revenue), the change in total segment operating income
   on revenue (0.15; the segment measure of the 10-K) and the operating margin change (0.15, GAAP), with the theme slot at 2/4. The
   regions Baker Hughes Incorporated's engine scored are no longer reported for the company (the releases give North America and
-  international revenue for Oilfield Services only, in words). Remaining performance obligations and the book-to-bill ratio are shown,
+  international revenue for Oilfield Services only, in a sentence, against the prior quarter). Remaining performance obligations and the book-to-bill ratio are shown,
   not scored.
 - **Thresholds by rule T over the years the filings report** (the bounds rule), from the filings public on 2019-02-01, each change from
   the latest one that reports both years; the builder re-derives them and refuses to build if the engine's differ:
@@ -10997,6 +10997,9 @@ Controls and checks (before any outcome):
   October 2019. The comment now names only the 2017 listing.
 - **Years after the as-of date:** none in the 153 models and reports, other than FY labels.
 - **`retro_tool run`:** passes on all 153 dates, with no warnings.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 20 cutoffs above (every release, 10-K, outlook,
+  name and listing date, 2019-01-31 and 2022-01-01), with 0 files changed and no planted text (497 to 650 dates each). The planted
+  print, guides, dividend and full-year actuals are in the new company's own fields.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: CHEAP 119, RICH 34, no FAIR.** 2019: CHEAP and BUY on all 48 dates, robustness 8 of 8. 2020: CHEAP 42, RICH 11 (2020-07-23,

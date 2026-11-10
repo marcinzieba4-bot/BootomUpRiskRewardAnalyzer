@@ -1,6 +1,8 @@
 # BKR retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the BKR weekly dates: 497 from 2008-01-04 to 2017-06-30, all Baker Hughes Incorporated (NYSE: BHI).
+The 153 dates of 2019-02-01 to 2021-12-31 are a different company (Baker Hughes, a GE company, then Baker Hughes Company) and have their
+own section, "2019-2021", with its own notes on dividends and horizons.
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed and pushed (2008-2009: 2b07c92; 2010-2013: 57e05a9; 2014-2017: e026e58). Outcomes were computed on
 2026-11-10 from the closes posted to 2026-11-09; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-06-30).
@@ -344,6 +346,94 @@ tier rows coincide.
 - **The entry price ranked the two-year total return best** in every year (-0.60 to -0.85). The proxy composite ranked it -0.68, -0.07,
   -0.14 and +0.24.
 
+## 2019-2021: Baker Hughes, a GE company and Baker Hughes Company (153 dates, 2019-02-01 to 2021-12-31)
+
+A different company from the sections above: the new listing of 2017-07-05 (BHGE; BKR from 2019-10-18), built on its own facts and
+engine (retro/README.md, "BKR 2018-2021"). No date from 2017-07-07 to 2019-01-25 exists. Scored only after the point-in-time build was
+committed and pushed (e9e8e19) and the firewall had passed at its 20 cutoffs. Outcomes were computed on 2026-11-10; every date has all
+four horizons (the last three-year endpoint is 2024-12-30). Dividends are $0.18 a quarter, rising from 2022; no split and no special
+dividend falls in a horizon, so the m12-24 measure is usable again. FY18's $0.45 is the EPS anchor on every date.
+
+**Hindsight the model could not see:** the oil-price collapse and COVID-19 (low close $9.33 on 2020-03-23, 60-67% under every 2019
+entry), then the recovery to $38.72 on 2022-03-25. Two-year endpoints of 2019 dates fall in 2021, before that recovery was complete;
+those of 2020 and 2021 dates fall in 2022 and 2023.
+
+### 2019 (48 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 48 | +3.1% | -18.4% to +28.6% | 0 | 0 | -15.3% | 0 |
+| latest print Q4 2018 (2019-02-01 to 2019-04-26) | 13 | -11.4% | -18.4% to +0.2% | 0 | 0 | -35.0% | 0 |
+| latest print Q1 2019 (2019-05-01 to 2019-07-26) | 13 | +1.8% | -10.5% to +21.1% | 0 | 0 | -18.9% | 0 |
+| latest print Q2 2019 (2019-08-01 to 2019-10-25) | 13 | +10.0% | -10.2% to +28.6% | 0 | 0 | -5.3% | 0 |
+| latest print Q3 2019 (2019-10-31 to 2019-12-27) | 9 | +11.4% | -2.3% to +23.9% | 0 | 0 | +1.8% | 0 |
+
+- **CHEAP and BUY on all 48 dates, with robustness 8 of 8, and it held on none.** No date cleared the hurdle or beat SPY over two years
+  (25-64pp behind, median -46.6pp); one-year returns were -60.5% to +1.4% (median -32.1%) and every date sat through a 64-67% drawdown.
+  Over three years 6 cleared the hurdle and 14 beat SPY (median +30.9%). Every two-year endpoint landed nearest the BEAR price.
+- **Why CHEAP:** 46-62x one year's $0.45 looked low only against the same stock's 2018 range (median 58-71x), with BASE at +8% to +17%/yr
+  from as-reported revenue growth and a 2018 buyback read as a rate. A window of one to two years has no trough in it.
+- **Rankings.** Against the two-year total return, the entry price ranks at Spearman -0.82, the EPP gap at -0.80 and the proxy composite
+  at -0.53 (the higher the signals, the worse the outcome).
+
+### 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 42 | +94.4% | +3.3% to +267.3% | 36 | 36 | +85.0% | 36 |
+| class RICH | 11 | +51.4% | +26.0% to +81.7% | 10 | 11 | +45.2% | 0 |
+| legacy tier BUY | 47 | +91.3% | +3.3% to +267.3% | 41 | 41 | +82.4% | 36 |
+| legacy tier ACCUMULATE | 1 | +51.4% | +51.4% to +51.4% | 1 | 1 | +45.2% | 0 |
+| legacy tier WATCHLIST | 4 | +45.4% | +40.9% to +48.6% | 4 | 4 | +38.3% | 0 |
+| legacy tier AVOID | 1 | +26.0% | +26.0% to +26.0% | 0 | 1 | +27.4% | 0 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-17; 3 CHEAP) | 3 | +10.7% | +3.3% to +22.4% | 0 | 0 | -6.3% | 0 |
+| latest print Q4 2019 (2020-01-23 to 2020-04-17; 13 CHEAP) | 13 | +115.5% | +24.9% to +267.3% | 10 | 10 | +49.7% | 10 |
+| latest print Q1 2020 (2020-04-23 to 2020-07-17; 13 CHEAP) | 13 | +123.7% | +84.2% to +158.4% | 13 | 13 | +80.1% | 13 |
+| latest print Q2 2020 (2020-07-23 to 2020-10-16; 10 CHEAP, 3 RICH) | 13 | +76.5% | +52.8% to +91.3% | 13 | 13 | +92.2% | 10 |
+| latest print Q3 2020 (2020-10-22 to 2020-12-31; 8 RICH, 3 CHEAP) | 11 | +51.4% | +26.0% to +96.3% | 10 | 11 | +45.2% | 3 |
+
+- **CHEAP held on 36 of 42; RICH held on 0 of 11.** The six CHEAP misses are 2020-01-03 to 2020-02-07, before the collapse (+3% to +31%,
+  9-48pp behind SPY). From 2020-02-14 every CHEAP date cleared the hurdle and beat SPY (the March dates by up to +177pp).
+- **Every RICH date beat SPY** (by 15-67pp) and 10 of 11 cleared the hurdle. RICH came from a negative BASE (Q2 and Q3 2020 revenue,
+  -21% and -14%) applied to the unchanged $0.45: the same reading of a trough quarter as a two-year rate that failed for Baker Hughes
+  Incorporated in 2009.
+- **Rankings:** entry price -0.81, EPP gap -0.71, proxy composite +0.15.
+
+### 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 29 | +52.9% | +32.7% to +85.6% | 29 | 29 | +33.2% | 29 |
+| class RICH | 23 | +37.0% | +16.0% to +52.3% | 13 | 23 | +23.2% | 0 |
+| legacy tier BUY | 41 | +49.5% | +25.5% to +85.6% | 39 | 41 | +31.0% | 29 |
+| legacy tier ACCUMULATE | 3 | +30.1% | +25.3% to +38.6% | 1 | 3 | +21.6% | 0 |
+| legacy tier WATCHLIST | 2 | +20.5% | +20.3% to +20.5% | 0 | 2 | +16.2% | 0 |
+| legacy tier AVOID | 6 | +21.5% | +16.0% to +44.6% | 2 | 6 | +13.7% | 0 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-15; 2 RICH) | 2 | +44.6% | +39.8% to +44.6% | 2 | 2 | +30.1% | 0 |
+| latest print Q4 2020 (2021-01-22 to 2021-04-16; 11 RICH, 2 CHEAP) | 13 | +39.5% | +25.3% to +63.0% | 9 | 13 | +31.0% | 2 |
+| latest print Q1 2021 (2021-04-22 to 2021-07-16; 10 RICH, 3 CHEAP) | 13 | +32.7% | +16.0% to +73.9% | 7 | 13 | +18.7% | 3 |
+| latest print Q2 2021 (2021-07-22 to 2021-10-15; 13 CHEAP) | 13 | +61.1% | +35.1% to +85.6% | 13 | 13 | +27.4% | 13 |
+| latest print Q3 2021 (2021-10-21 to 2021-12-31; 11 CHEAP) | 11 | +48.0% | +32.7% to +56.2% | 11 | 11 | +32.8% | 11 |
+
+- **CHEAP held on all 29; RICH on none of 23.** Every 2021 date beat SPY over two years (by 12-79pp) and 42 of 52 cleared the hurdle;
+  the RICH dates returned +16% to +52%. The six AVOID dates were the weakest entries of the year (median +21.5%) and still beat SPY.
+- **Rankings:** entry price -0.66, EPP gap -0.60, proxy composite +0.18.
+
+### Across 2019-2021 (hypotheses, not rules)
+
+- **The calls held on 65 of 153 dates: CHEAP 65 of 119, RICH 0 of 34.** By year 0 of 48, 36 of 53 and 29 of 52. Calling every date CHEAP
+  would have held on 99, every date RICH on 54: the classification did worse than a constant.
+- **RICH failed on every date, the reverse of 2014-2017** (153 of 160). In both periods RICH came from BASE, the latest quarter's
+  revenue growth as a two-year rate. It was right while a downturn persisted (2015-2016) and wrong at each turn (2009, 2020-2021).
+  This repeats the hypothesis of the earlier sections: test a dampened or mean-reverting BASE for cyclicals, across tickers.
+- **A short window cannot tell cheap from dear.** 2019's CHEAP rested on a 1.1- to 2-year window of one stock's P/E on one year's EPS.
+  The listing rule produces a class from the first date it can; hypothesis: a minimum window before a class is given (an owner
+  question, and a rule change if adopted). AVGO's 2009 dates are the other case to test it on.
+- **One year's EPS anchored three years.** $0.45 stood from 2019 to 2021 because 2019 was distorted and 2020 a loss; the quarters'
+  adjusted figures summed to $0.83 for 2019, which the method does not read.
+- **The entry price ranked the two-year return best** in every year (-0.66 to -0.82; -0.80 over all 153), as in every earlier section.
+  The proxy composite ranked it -0.53, +0.15 and +0.18 by year.
+
 ## The encoding calls, seen afterwards
 
 **2008-2009.** No judgement call recorded in retro/README.md ("BKR") moves a class or a tier, so every outcome above is the same under
@@ -396,3 +486,23 @@ No call is re-encoded on these scores. GAAP EPS scores better here (FY14 at $3.9
 the company's figures are the house rule (ACN). Every signal at BEAR scores well because it reads RICH almost everywhere while the stock
 fell; it is a stress test, not a candidate encoding. Every signal at XBULL shows how much the RICH calls of 2015-2016 rest on the
 signals reading the revenue fall.
+
+**2019-2021.** Each variant in retro/README.md ("BKR 2018-2021") was rebuilt on every date with one encoding changed, then scored against
+the same outcomes. This is hindsight: the class moves were recorded before scoring, in e9e8e19.
+
+| Variant | Classes moved | Call held 2019 | 2020 | 2021 | All |
+|---|---|---|---|---|---|
+| as committed | - | 0/48 | 36/53 | 29/52 | 65/153 |
+| 2019 kept at GAAP $0.23 | 61 | 0/48 | 10/53 | 0/52 | 10/153 |
+| adjusted quarters summed (2018 $0.64, 2019 $0.83), 2020 excluded | 34 | 0/48 | 47/53 | 52/52 | 99/153 |
+| adjusted quarters summed, 2020 kept at $0.03 | 42 | 0/48 | 47/53 | 2/52 | 49/153 |
+| 2018 at $0.64, 2019 and 2020 excluded | 1 | 0/48 | 36/53 | 28/52 | 64/153 |
+| Class A share count alone | 40 | 0/48 | 20/53 | 5/52 | 25/153 |
+| no buyback term | 10 | 0/48 | 31/53 | 24/52 | 55/153 |
+| rule T: 2018 orders and segment margin as GAAP | 0 | 0/48 | 36/53 | 29/52 | 65/153 |
+| every signal at its BEAR value | 41 | 6/48 | 32/53 | 8/52 | 46/153 |
+| every signal at its XBULL value | 27 | 0/48 | 41/53 | 41/52 | 82/153 |
+
+No variant rescues 2019. The spread from 10 to 99 of 153 comes from which years are in the EPS history and which share count feeds the
+buyback term: the outcome of this series depends more on those two encoding calls than on anything the company reported. That is a
+reason to treat these 153 labels as weak evidence, not a reason to pick the variant that scored best.

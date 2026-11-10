@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "BKR",
+ "as_of": "2021-07-02",
+ "computed": "2026-11-10",
+ "data_source": "Yahoo Finance daily closes + dividends (BKR, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2021-12-31",
+   "price": 24.06,
+   "dividends": 0.36,
+   "total_return_pct": 3.7,
+   "benchmark_total_return_pct": 10.2,
+   "excess_pct": -6.5,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2022-07-01",
+   "price": 29.09,
+   "dividends": 0.72,
+   "total_return_pct": 26.6,
+   "benchmark_total_return_pct": -10.7,
+   "excess_pct": 37.3,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2023-06-30",
+   "price": 31.61,
+   "dividends": 1.47,
+   "total_return_pct": 40.5,
+   "benchmark_total_return_pct": 5.1,
+   "excess_pct": 35.4,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2024-07-02",
+   "price": 34.69,
+   "dividends": 2.29,
+   "total_return_pct": 57.0,
+   "benchmark_total_return_pct": 31.0,
+   "excess_pct": 26.0,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2022-03-25",
+   "price": 38.72
+  },
+  "low": {
+   "date": "2021-07-19",
+   "price": 19.65
+  },
+  "max_drawdown_pct": -47.2,
+  "return_to_avg_price_m12_m24_pct": 18.8
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Baker Hughes: oilfield services + LNG equipment; leverage post-Chart",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
