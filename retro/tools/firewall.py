@@ -40,8 +40,8 @@ vintage with an income tax line (RCL 2022-2026); MAR: a guide with every guided 
 percentages, the display, note and words fields), a later range for every quarter the fact sheet guides, and a print whose fees, RevPAR,
 occupancy, raw figures and full-year actuals are absurd; BKR: a print whose regional revenues, margins, outlook, rig-count note, raw
 figures, pro forma table, basis note and full-year actuals are absurd and whose actuals restate every year, and a later display-only
-outlook for every quarter an 8-K guides and the two after the last print (the guide and dividend every fact sheet with a 'guides' list
-gets, too); every
+outlook for every quarter an 8-K guides and the two after the last print, and a later vintage excluding a year (the guide and dividend
+every fact sheet with a 'guides' list gets, too); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -341,6 +341,8 @@ try:
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(tax_rate=0.99, tax_note="PLANTED", other_expense_note="PLANTED", units_note="PLANTED", prev_fy_ny_pct=None,
                  prev_fy_ncc_pct=-99.0)
+    if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
+        v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

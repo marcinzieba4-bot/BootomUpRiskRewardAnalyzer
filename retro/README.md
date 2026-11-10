@@ -10446,13 +10446,14 @@ others, with the same `index.json` and their own `SERIES.md`.
 python3 retro/build_bkr.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
 python3 retro/build_bkr.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
 python3 retro/build_bkr.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31 ("BKR 2010-2013")
-for d in staging/retrospective/BKR/200[89]-*/; do
+python3 retro/build_bkr.py --weekly 2014-01-01 2017-06-30                   # 183 dates, 2014-01-03 .. 2017-06-30 ("BKR 2014-2017")
+for d in staging/retrospective/BKR/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series BKR
 for c in 2008-01-30 2008-01-31 2008-02-22 2008-04-22 2008-07-22 2008-07-30 2008-10-22 2009-01-01 2009-01-28 2009-03-02 \
-         2009-04-29 2009-08-05 2009-11-04 2010-01-01; do python3 retro/tools/firewall.py $c BKR; done   # 2010-2013: "BKR 2010-2013"
+         2009-04-29 2009-08-05 2009-11-04 2010-01-01; do python3 retro/tools/firewall.py $c BKR; done   # later: "BKR 2010-2013", "BKR 2014-2017"
 ```
 
 Read for the history and the decade's signal values: the selected financial data, statements of operations and tables of revenues by
@@ -10738,6 +10739,131 @@ Judgement calls that could carry hindsight:
 - the 8-K outlooks as display only (method r2 has no regional-margin or quarter-EPS input);
 - the signals and CYCLICAL, as in 2008-2009.
 
+### BKR 2014-2017
+
+183 weekly dates, 2014-01-03 to 2017-06-30, the last week of Baker Hughes Incorporated, on the same method, engine and rule-T thresholds.
+The fact sheet only gains facts: its 2008-2013 content is unchanged and the 314 earlier models rebuild byte for byte after the builder
+changes below.
+
+```bash
+python3 retro/build_bkr.py --weekly 2014-01-01 2017-06-30                   # 183 dates, 2014-01-03 .. 2017-06-30
+for c in 2014-01-01 2014-01-10 2014-01-21 2014-02-13 2014-04-17 2014-05-09 2014-07-17 2014-10-16 2015-01-20 2015-02-26 2015-04-21 \
+         2015-07-21 2015-10-21 2015-12-12 2016-01-28 2016-02-18 2016-04-27 2016-07-28 2016-10-25 2017-01-26 2017-02-08 2017-04-25 \
+         2017-07-01; do python3 retro/tools/firewall.py $c BKR; done
+```
+
+**Why the series stops at 2017-06-30.** The combination with GE's oil and gas business closed on 2017-07-03 (8-K12B, accepted 12:09 ET),
+and "Baker Hughes, a GE company" (CIK 1701605) traded on the NYSE as BHGE from 2017-07-05; each Baker Hughes share became one BHGE Class A
+share plus the $17.50 special dividend. Yahoo's BKR series runs on through it, but the company does not: BHGE's financial statements are
+GE Oil & Gas's (the accounting predecessor), and BHGE has no full year of its own earnings per share before FY2018. None of Baker Hughes'
+history, prints or anchors describes the new company, and a BHGE series would need a decision method r2 does not make (a new listing
+under the listing rule with no full-year EPS, or the series ending with BHI). The dates from 2017-07-07 are not built; that call is the
+owner's.
+
+Read: the 14 earnings releases from Q4 2013 to Q1 2017, the FY2013-FY2016 10-Ks (and the FY2015 10-K/A), every other 8-K of January 2014
+to July 2017 (73 filings with the 10-Qs; the non-earnings 8-Ks item by item), the two merger proxy statements (DEFM14A of 2015-02-19 and
+2017-05-30) for projections, and the FY2006-FY2009 10-Ks again for the first year's diluted shares. All by Opus directly. The source ids
+are BK49-BK68. 1,014 strings across the three batches were checked with `verbatim.py`, each against its own filing, and all 1,014 were
+found; a script matched every raw figure of the 2010-2017 prints to its row (0 mismatches). Decided on 2026-11-10, before any 2014-2017
+outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (06:21-09:20 ET) except Q3 2015's (10:23 ET, during the session),
+  whose week is dated the next trading day (2015-10-22). The Q1 2014 release came on Thursday 2014-04-17, before Good Friday: the week
+  has no later trading day, so its date is the release day, which the release, accepted at 06:35 ET, meets (the 2013-03-29 rule). The
+  10-Ks were accepted after the close and are dated 2014-02-13, 2015-02-26, 2016-02-18 and 2017-02-08; the FY2015 10-K/A (2016-02-18)
+  only removes a draft caption from the cover page and adds nothing.
+- **History: four more vintages,** each with ten years: FY2013 (2004-2013), FY2014 (2005-2014), FY2015 (2006-2015) and FY2016
+  (2007-2016), each year from the latest filing that reports it. The first year's diluted shares: 335.6M (2004, FY2006 10-K), 341.5M
+  (2005, FY2007 10-K), 333M (2006, FY2008 10-K) and 320M (2007, FY2009 10-K).
+- **EPS: the company's adjusted net income per diluted share, each year from the latest filing that publishes one.** 2013 $2.62 (GAAP
+  $2.47) and 2014 $4.22 (GAAP $3.92). The Q4 2013 release restates 2012 to $3.07 (GAAP $2.97, with Process and Pipeline Services in
+  continuing operations; the release's own 2012 figure, carried as `restates` and then by the vintages), which closes the 2010-2013 seam
+  for 2012; 2011 stays $4.14, as no later filing publishes an adjusted 2011.
+- **2015 and 2016 are excluded: losses even on the company's figures** (the XOM FY2020 note of method r2). 2015 is GAAP $(4.49) a share and
+  $(0.48) adjusted; 2016 GAAP $(6.31) (with the $3.5 billion termination fee in it) and $(2.96) adjusted. A loss has no P/E, so each leaves
+  the EPS history as its Q4 print arrives (`excluded_note`, then the vintages' `eps_excluded`); its revenue, shares and margins stay, its
+  own days leave the P/E window ("10-yr ex-FY15", then "ex-FY15 ex-FY16"), and EPS growth is measured only between years in the history.
+  The rollover rule's last full year is the last year in it, so FY14's $4.22 stands for FY2016E and FY2017E. The builder gains the XOM
+  encoding (no earlier output changes).
+- **No guide in numbers,** as before: no release, 10-Q, 10-K or other 8-K guides EPS, revenue or a margin for the company, so the last full
+  year's EPS stands (FY12's $3.00 to 2014-01-17, FY13's $2.62 from 2014-01-22, FY14's $4.22 from 2015-01-21 to the end), BASE takes the
+  latest quarter's revenue growth and the margin signal its operating-margin change. One display-only outlook joins the `guides`: the 8-K
+  of 2014-01-10 (accepted 08:11 ET), "adjusted earnings per share ... are estimated to be between $0.60 and $0.62 per share" for Q4 2013.
+- **Pending deals add nothing** (the UNP merger rule; the XOM XTO rule for a deal with no guided number). Halliburton's acquisition of
+  Baker Hughes: talks confirmed in the 8-K of 2014-11-13 (accepted 18:47 ET), the agreement announced on 2014-11-17 (1.12 Halliburton
+  shares plus $19.00 in cash for each share), approved by both companies' stockholders on 2015-03-27 and terminated effective
+  2016-04-30 (8-K of 2016-05-02). The combination with GE's oil and gas business: announced on 2016-10-31 (GE 62.5%, Baker Hughes holders
+  37.5% and a $17.50 a share special dividend), approved on 2017-06-30. From November 2014 to April 2016 the price is a target's; method r2
+  has no input for an offer. The management projections in the two merger proxies are not guides ("not prepared with a view toward public
+  disclosure", the UNP and AVGO rule). The $3.5 billion termination fee enters only as published: in Q2 2016's GAAP results and operating
+  loss, outside the adjusted figures.
+- **Margins and growth as reported.** From Q1 2015 the statements carry impairment and restructuring charges, merger costs, goodwill
+  impairment and the termination fee inside the operating result, and the operating-margin signal takes it as published (Q2 2016:
+  -23.7%, with the fee's $3.5 billion and $1.8 billion of goodwill impairment); the gross margin is revenue less cost of revenue and
+  research and engineering, as before. The Weatherford pipeline business (2014) and the deconsolidation of North America onshore pressure
+  pumping into a joint venture (2016-12-30, the Q1 2017 comparison) stay in growth as published (the BJ Services rule). Q3 2014 realigns
+  locations between Europe/Africa/Russia Caspian and Middle East/Asia Pacific; each release's year-ago quarter is used as restated.
+- **Dividends:** $0.17 a quarter from the 8-K of 2014-05-09 (accepted 11:34 ET), payable August 15, 2014; $0.17 to the end.
+- **Durability: CYCLICAL, risk 2, unchanged.** The FY2013 10-K keeps "Our business is cyclical ..."; the FY2014 10-K says "Our industry is
+  cyclical, and past cycles have been driven primarily by alternating periods of ample supply or shortages of oil and natural gas relative
+  to demand"; the FY2015 and FY2016 10-Ks drop the word ("Our revenue is predominately generated from the sale of products and services
+  to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and
+  natural gas exploration, field development and production"). The "why" quotes each 10-K's own words; the kind stands (the class label
+  only).
+- **ENERGY_TRANSITION is live from 2015-12-12 but out of scope.** Its scope is oil, gas and coal reserves and refining, which Baker Hughes
+  does not hold, so it does not go on the watch list (unlike XOM) and the 10-Ks' greenhouse-gas risk stays in the "why" (the PEP obesity
+  rule). From the FY2013 vintage the "why" ends with a clause that follows the theme's status on the as-of date (`why_theme_tail`, the
+  XOM encoding): "no disruption theme is live for an oilfield services company ..." to 2015-12-11, then "ENERGY_TRANSITION is live from
+  2015-12-12 but scoped to oil, gas and coal reserves and refining, which an oilfield services company does not hold"; the theme signal
+  then reads "none in scope". Text only: the theme slot stays at 2/4. Widening the scope to oilfield services remains the owner's call.
+- **Adds nothing:** the Weatherford pipeline acquisition (2014-03-24), the presentations and conference notices, the debt tender offers and
+  credit agreements, the "path for the future" 8-K of 2016-05-02 (a $500 million cost-savings target and a $1.5 billion buyback with the
+  fee; no guided figure), the pressure pumping joint venture (2016-11-29, 2016-12-01) and its pro forma statements (2017-01-06), the GE
+  transaction agreements and 425 communications, and the officer, director, bylaw and vote 8-Ks.
+
+Controls and checks:
+- **Controls:** altering one value of each 2014-2017 print (its North America revenue, each Q4 print's full-year EPS or excluded-year note
+  and the Q4 2013 restatement), the outlook, each vintage (its last year's EPS and its excluded-year note) and the dividend changes no model
+  dated before its publication and changes the first weekly date on or after it: 27 of 27 over the 497 dates.
+- **Leak scan:** the distinctive texts and figures of every print, outlook, vintage, dividend and source appear in no model before their
+  publication (0 hits in 180,511 pairs).
+- **`retro_tool run`:** passes on all 183 dates, with no warnings.
+- **Firewall:** passes at the 23 cutoffs above (every release, 10-K, outlook and dividend 8-K date of 2014-2017, the theme's live date,
+  2014-01-01 and 2017-07-01), with 0 files changed and no planted text; the planted facts now include a later vintage excluding a year.
+
+Seen in the build (method behaviour, not tuned):
+- **2014: RICH and AVOID on 49 of 52 dates.** FY13's $2.62 (a year with Iraq's losses in it) is the anchor from the Q4 2013 print: the stock
+  trades at 21.6-28.6x (the 64th-96th percentile, against an 18x median), 25-79% above a 16x floor ($41.92), with BASE at +4.9% to
+  +7.2%/yr. FAIR on the three dates before it, on FY12's $3.00 (17.7-18.0x).
+- **2015: FY14's $4.22 from 2015-01-21, at a 13x floor ($54.86).** CHEAP on 3 dates and FAIR on 10 (WATCHLIST) to the Q1 2015 print, at
+  13.7-15.9x; then BASE turns with the revenue fall, -22.6%/yr (Q1 2015 revenue -19.8%), -35.9% and -42.2%, and the class is RICH on 40
+  dates, though the multiple falls to 9.5-13.8x and the price under the floor from August: on a BASE of $24-43 the price sits above the
+  two-year BASE value.
+- **2016: RICH on 50 of 52** (FAIR on 2016-01-08 and 2016-01-15, at the January low), with BASE at -40.8% to -51.8%/yr and the multiple
+  at 9.5-15.7x FY14's $4.22 (the 3rd-44th percentile); the tier moves between ACCUMULATE, WATCHLIST and AVOID with the price.
+- **2017: RICH on 21, FAIR on 5** (from 2017-05-26), as Q1 2017's -15.3% revenue lifts BASE to -18.6%/yr and the proxy composite to 2.60.
+- **BEAR stays 2009's fall** (-74.3%/yr) at $2-4; BULL is the decade CAGR at the 75th percentile, $65-105.
+- **The proxy composite** reads the cycle: 2.00-2.65 to the Q4 2014 print, 1.15-1.50 from Q1 2015 to Q3 2016, 1.90 (Q4 2016) and 2.60
+  (Q1 2017). Robustness is 8 of 8 on 49 of the 52 dates of 2014 and 3-8 of 8 from 2015 (5 or fewer on 37 dates).
+- **Totals over the 183 dates:** CHEAP 3, FAIR 20, RICH 160.
+
+Sensitivity (each call changed alone, the 183 dates reclassified offline; no outcome consulted):
+- **GAAP EPS in every year** (2012 $2.97, 2013 $2.47, 2014 $3.92; 2015 and 2016 are losses either way): 12 classes (3 CHEAP to FAIR, 9
+  FAIR to RICH; 2015-01-21 to 2017-06-30) and 59 tiers;
+- **2012 at $3.00, without the Q4 2013 restatement:** no class, no tier;
+- **revenue outside North America including the industrial segment:** no class, no tier;
+- **every signal at its BEAR value:** 23 classes, toward RICH; **at its XBULL value: 75 classes** (53 RICH to CHEAP, 20 RICH to FAIR, 2 FAIR
+  to CHEAP; 2015-05-29 to 2016-10-26): the RICH calls of the downturn rest on the signals and BASE reading the revenue fall.
+
+Judgement calls that could carry hindsight:
+- the pending takeover and the GE combination as adding nothing, so the prices of November 2014 to April 2016 are read as a stock's, not a
+  target's (no variant; an owner rule would be new);
+- FY14's $4.22 as the anchor through mid-2017, by the method's loss-year rule (2015 and 2016 excluded);
+- the operating-margin signal at GAAP, with the termination fee and the impairments in it;
+- CYCLICAL kept although the FY2015 and FY2016 10-Ks drop the word; ENERGY_TRANSITION out of scope (text only either way);
+- the merger proxies' projections not used;
+- the series stopped at 2017-06-30 rather than continued as BHGE.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -10927,7 +11053,9 @@ What the gates enforce:
   greenhouse gas emissions"; the theme is not live, so the words stay in the durability "why" (the PEP obesity rule), and whether this
   earlier filing should move ENERGY_TRANSITION's date or widen its scope is left to the owner (the MSFT and XOM precedent).
   The list stays empty through 2013: the FY2009-FY2012 10-Ks repeat the risk ("demand for oil and natural gas could be impacted by
-  environmental regulation"), which stays in the "why" ("BKR 2010-2013").
+  environmental regulation"), which stays in the "why" ("BKR 2010-2013"). From 2015-12-12 ENERGY_TRANSITION is live, but its scope
+  (reserves and refining) does not cover an oilfield services company, so the list stays empty to the last Baker Hughes Incorporated date
+  (2017-06-30) and the "why" says so ("BKR 2014-2017").
 
 ## Workflow
 

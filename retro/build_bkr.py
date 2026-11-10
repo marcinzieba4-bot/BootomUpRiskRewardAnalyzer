@@ -9,7 +9,8 @@ with oilfield services signals (retro/templates/bkr_engine.py.tmpl). For each as
      split-adjusted series is the price as traded),
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
-The company of 2007-2009 is Baker Hughes Incorporated, listed on the NYSE as BHI. BKR is the series key (TICKER, the folder, the
+The company of 2007-2017 is Baker Hughes Incorporated, listed on the NYSE as BHI, to its last weekly date (2017-06-30; the
+combination with GE's oil and gas business closed on 2017-07-03, retro/README.md, "BKR 2014-2017"). BKR is the series key (TICKER, the folder, the
 index) and the symbol under which Yahoo serves the price history; every printed line names the listing of the date
 (LISTED_SYMBOL = "BHI"; retro/README.md, "BKR").
 
@@ -24,8 +25,10 @@ guide line, display only: it guides a region, not the company's revenue. The 200
 EPS is diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes, each year
 from the latest filing that reports it, and the company's operating profit per diluted share replaces it where a filing publishes
 one (the ACN rule). 1998, a loss with no published figure excluding its charges, is excluded; the history and the P/E window start
-with 1999 (the ACN FY02 and AAPL FY2002 rule; 'pe_window_start'). No disruption theme is live for an oilfield services company in
-2008-2009, so the events list must stay empty until an encoding is decided.
+with 1999 (the ACN FY02 and AAPL FY2002 rule; 'pe_window_start'). 2015 and 2016, losses even on the company's adjusted figures, are
+excluded as later years (the XOM FY2020 note: 'eps_excluded'; their days leave the P/E window and FY14's EPS stands). No disruption
+theme in scope is live for an oilfield services company (ENERGY_TRANSITION, live from 2015-12-12, is scoped to reserves and refining),
+so the events list must stay empty until an encoding is decided.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Baker Hughes' earnings 8-Ks of 2007-2009 were accepted before the open on the release day; a print
@@ -36,6 +39,8 @@ Output goes to staging/retrospective/BKR until the series is added to the archiv
 Usage
   python3 retro/build_bkr.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_bkr.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_bkr.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_bkr.py --weekly 2014-01-01 2017-06-30
   python3 retro/build_bkr.py 2008-01-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/BKR/<AS_OF>
 """
@@ -137,7 +142,10 @@ def build(as_of, facts, raw, spx, engine, out):
     h = vintages[-1]                                   # latest annual history public on AS_OF
     # prints published by AS_OF that report a fiscal year after the history (a Q4 print reports the year just ended, so it stays
     # in scope after the 10-K that follows it)
-    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    # a year excluded from the EPS history ('eps_excluded': a loss even on the company's figure; retro/README.md, "BKR 2014-2017", the XOM
+    # FY2020 note of method r2) is still reported (the NKE FY2018 rule)
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
+    first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     # no disruption theme in taxonomy_eras.json is live for an oilfield services company in 2008-2009 (ENERGY_TRANSITION, scoped
@@ -152,11 +160,13 @@ def build(as_of, facts, raw, spx, engine, out):
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
+        if a and a["fy"] not in reported(h):          # the 10-K vintage, once out, wins
             y = str(a["fy"])
             # an earlier year's company figure first published on a new basis in this release ('restates') replaces it until the next
             # 10-K vintage (the XOM encoding; the Q4 2012 release's 2011 from continuing operations)
-            eps_n = {**h["eps_normalized"], y: a["eps_normalized"]}
+            eps_n = {**h["eps_normalized"], **({y: a["eps_normalized"]} if a["eps_normalized"] is not None else {})}
+            if a["eps_normalized"] is None:           # an excluded year: reported, but out of the EPS history
+                h.update(eps_excluded={**h.get("eps_excluded", {}), y: a["excluded_note"]})
             for yy, e in a.get("restates", {}).items():
                 assert yy in eps_n, (p["quarter"], yy, "restates a year outside the history")
                 eps_n[yy] = e
@@ -178,15 +188,17 @@ def build(as_of, facts, raw, spx, engine, out):
     i = public.index(latest)
     prev = (public[i - 1]["na_pct"], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_na_pct"], h["prev_q_label"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
-    cur_fy = max(eps_hist) + 1
-    last_fy = max(eps_hist)
+    excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
+    cur_fy = max(reported(h)) + 1
+    last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
 
     # ── no guide in numbers: the last full year's EPS stands, and BASE takes the latest quarter's revenue growth ──
     eps_now = eps_hist[last_fy]
-    eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
+    eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
+        f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
@@ -224,9 +236,12 @@ def build(as_of, facts, raw, spx, engine, out):
     eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY EPS, for the P/E series
     fy = lambda d: min(fiscal_year(d), cur_fy)     # a day past the last reported year keeps the current year's EPS
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    # an excluded year's own days leave the window (the r2 rule's "the window starts after it", for a year that is not the first)
+    gone = sorted({fy(d) for d in window} & set(excluded))
+    window = [d for d in window if fy(d) not in excluded]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
-    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
+    window_label = ("10-yr" if years > 9.9 else f"{years:.1f}-yr") + "".join(f" ex-FY{y % 100:02d}" for y in gone)
     pe = {d: px[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -238,13 +253,27 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text, from facts only: no disruption theme is live for an oilfield services company ──
+    # ── era-dependent text, from facts only: no disruption theme in scope for an oilfield services company ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("Activity drives revenue, by the company's own account; the bear needs\n"
                 "  customers' spending to fall, not only the rig count.")
     theme_summary = "no disruption theme has dated evidence"
     why = h["why"]
+    # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining, which an oilfield services company
+    # does not hold (retro/README.md, "BKR 2014-2017"): from its live date the texts say so, and the greenhouse-gas wording stays in the
+    # "why" (the PEP obesity rule). From the FY2013 vintage the "why" ends with a clause that follows the theme's status on AS_OF
+    # ('why_theme_tail'); the earlier vintages keep their text, so those dates rebuild byte-identical
+    et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
+    et_live = et["live_from"] <= as_of
+    if et_live:
+        sig_name, trigger = "Disruption theme: none in scope", "No live disruption theme covers oilfield services"
+        theme_summary = (f"ENERGY_TRANSITION is live from {et['live_from']} but scoped to oil, gas and coal reserves and refining; no theme "
+                         "in scope has dated evidence")
+    if h.get("why_theme_tail"):
+        why += ("; ENERGY_TRANSITION is live from " + et["live_from"] + " but scoped to oil, gas and coal reserves and refining, which an "
+                "oilfield services company does not hold, so the greenhouse-gas wording stays here" if et_live else
+                "; no disruption theme is live for an oilfield services company, so the greenhouse-gas wording stays here")
     kind, pit_risk = "CYCLICAL", 2
     cat3 = (f"(3) A {fy_now} guide — none in numbers: Baker Hughes guides revenue outside North America, not EPS or total revenue"
             + (f" ({latest['quarter']} outlook: '{outlook[0]}')" if outlook else f"; the {latest['quarter']} release has no Outlook section"))

@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  BHI  ·  Baker Hughes Incorporated  ·  $52.62  ·  RETROSPECTIVE as of 2015-12-04
+  Signal: ◐ WATCHLIST   Ratio B: 1.27x   Adj gap: -0.66  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2015-12-04; latest print Q3 2015 (Oct 21)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America             $     7.3  $   7.3  $   9.6      +0.0      +2.3
+    +11.0% revenues in FY14
+  Latin America             $     1.4  $   1.4  $   1.8      +0.0      +0.4
+    -3.1% revenues in FY14
+  Europe/Africa/Russia Cas  $     2.7  $   2.7  $   3.5      +0.0      +0.8
+    +9.3% revenues in FY14
+  Middle East/Asia Pacific  $     2.7  $   2.7  $   3.5      +0.0      +0.8
+    +15.5% revenues in FY14
+  Industrial Services       $     0.8  $   0.8  $   1.1      +0.0      +0.3
+    +6.6% revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.9  $  14.9  $  19.5      +0.0      +4.6
+  FY2015E = FY14 $24.55B × (1 − 39.4%: no Q4 2015 revenue guide, Q3 2015 revenue as reported, applied to the year (no FY15 revenue guide)); split pro rata to FY14 segment revenue (FY2014 10-K; 2013 restated for the 2014 realignment of locations between Europe/Africa/Russia Caspian and Middle East/Asia Pacific)
+  Q3 2015 (Oct 21): total revenues $3.79B -39.4%; North America -56.6%; outside North America -24.7%;
+  gross margin 7.08% (-866.5bp); operating margin -2.67% (-1324.4bp); EPS $-0.36 vs $0.86
+  Activity: North America -56.6% (North America $1,368M vs $3,155M); outside North America -24.7% (Latin America, Europe/Africa/Russia Caspian and Middle East/Asia Pacific, $2,079M vs $2,762M (the segments less North America and Industrial Services)); revenue -39.4% as reported (total revenues $3,786M vs $6,250M); EPS Q3 2015 adjusted: $(0.05), excluding $0.31 of restructuring charges and merger and related costs
+  FY15: no guide in numbers (BASE takes Q3 2015 revenue growth); the Q3 2015 release has no Outlook section
+
+  FY2015E EPS check:  $14.9B × 10.7% pre-tax × (1−34.1%) ÷ 0.439B  =  $2.39  (FY2015E: no EPS guide in numbers, FY14's $4.22 stands)
+  FY2017E BEAR check: $14.9B × 10.7% ÷ 0.463B  =  $2.27  (scenario $0.28)
+  FY2017E BULL check: $19.5B × 11.1% ÷ 0.463B  =  $3.08  (scenario $4.72)
+  Every 1pp of pre-tax margin ≈ $0.22 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  North America revenue              -42.0%  ≥-14.0%   ≥14.0%   ≥31.0%    -56.6%  ⚠ BEAR  █░░░
+  Revenue outside North America      -64.0%  ≥-27.0%   ≥11.0%   ≥22.0%    -24.7%  ◦ BASE  ██░░
+  Revenue growth                     -58.0%  ≥-23.0%   ≥12.0%   ≥26.0%    -39.4%  ⚠ BEAR  █░░░
+  Gross margin change               -670.0bp  ≥-300.0bp  ≥60.0bp  ≥640.0bp  -866.5bp  ⚠ BEAR  █░░░
+  Operating margin change           -2440.0bp  ≥-1060.0bp  ≥330.0bp  ≥750.0bp  -1324.4bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.35 / 4.00
+  Market composite:   2.36 / 4.00  (back-solved from $53 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 1.70  →  Gap -0.66  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenue +9.8%, North America +11.0% (North America $12,078M vs $10,878M, the FY2014 10-K's segment revenue); Q3 operating margin -2.67% (-1324bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.5x FY15E vs a 16.7x 10-yr median (7th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no Q4 2015 revenue guide, Q3 2015 revenue as reported -39.4% vs a 13.8% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $2.04B, FY14 free cash flow $1.16B, dividend $0.68 a year, $600M of common stock repurchased and $279M of dividends paid in FY14  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  North America revenue               -56.6%    -42.0%  +14.6%  Gas drilling in the US and Canada falls
+  Revenue outside North America       -24.7%    -64.0%  -39.3%  International spending follows oil pr…
+  Revenue growth                      -39.4%    -58.0%  -18.6%  Customers cut drilling and production…
+  Gross margin change               -866.5bp  -670.0bp  +196.5bp  Pricing falls faster than costs
+  Operating margin change           -1324.4bp  -2440.0bp  -1115.6bp  Fixed costs stay as activity falls
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$17  (model)  /  $4 (defined)
+  Bear probability (proxy model):  65.1%
+
+  KEY TRIGGER: North America revenue went from -47.3% (Q2 2015) to -56.6% (Q3 2015);
+  the bear case needs customers' drilling budgets to fall far enough that revenue outside North
+  America (-24.7% now) and the operating margin (-1324.4bp now) give way. Activity drives revenue, by the company's own account; the bear needs
+  customers' spending to fall, not only the rig count.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.22  (FY2015E: no EPS guide in numbers, FY14's $4.22 stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2005 23.3x, 2006 15.2x, 2007 13.3x, 2008 4.9x, 2009 19.5x, 2010 17.4x, 2011 10.7x, 2012 12.4x, 2013 16.0x, 2014 11.9x, 2015 10.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $55/share
+  Current $53 vs Updated EPP $55:  -4%  ✓ BELOW panic floor — deep-value zone
+  Bear $4 vs Updated EPP $55:  -93%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  North America revenue                      -14.0      +42.6   BASE floor (vs -57 now)
+  Revenue outside North America              -27.0       -2.3   BASE floor (vs -25 now)
+  Revenue growth                             -23.0      +16.4   BASE floor (vs -39 now)
+  Gross margin change                       -300.0     +566.5   BASE floor (vs -866 now)
+  Operating margin change                  -1060.0     +264.4   BASE floor (vs -1324 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.22 × (1+0.0%)² = $4.22
+  At 16x P/E (conservative):  $68/share
+  + Cumul. dividends (2yr):  +$1.40/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $68  (▲15 from $53)
+  Conservative total return:  +31% over 2yr  = +15%/yr
+
+  At 12.5x the multiple is already near its 16x median, so the conservative
+  case is a growth question: breakeven at 16x needs FY2017E EPS of $3.20,
+  i.e. -12.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $44.11  –  $70.45  (at 32th pct of range)
+  Annual dividend:      $0.68/share  (yield 1.3%)
+  Realized vol (1yr):   32% annualized
+  Beta vs broad market: 1.16
+  1-sigma range (1yr):  $36  –  $69  ($53 ± 32%)
+  2-sigma range (1yr):  $19  –  $86
+  ────────────────────────────────────────────────────────────
+  Bear $4 requires:  ~2.9σ price move  (unusual — requires fundamental break)
+  An oilfield services company with a 1.2 beta: the stock is +15% off its August
+  low while North America revenue went from -47.3% (Q2 2015) to -56.6% (Q3 2015).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.28  12.9x  $      4    65.1%     11.9%   +53.3pp  EPS -74.3%/yr (worst year FY05-FY14, capped at 0%); P/E to its 10th pct
+  BASE        1.41  16.7x  $     24    26.0%     41.4%   -15.3pp  EPS +-42.2%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        4.72  19.2x  $     91     7.5%     39.3%   -31.9pp  EPS +5.7%/yr (FY05-FY14 CAGR); P/E holds its 75th pct
+  XBULL      12.85  24.3x  $    312     1.4%      7.4%    -6.0pp  EPS +74.5%/yr (best 2-yr run FY05-FY14); P/E at its 90th pct
+
+  Proxy EV (2yr): $20  /  Market EV: $69  /  Current: $53
+  Conservative EV (2yr, ④): $68 + $1.40 divs = $69 total value
+  Downside (→ Bear $4): 92.4%   Upside (→ Bull $91): 72.9%   Ratio B 1.27x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $53 the market needs $70 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.36 against a model
+  read of 1.70: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.27x      -4%    -0.66  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.78x      -4%    -0.48  MODESTLY OVERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     1.88x      -4%    -0.82  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.20x      -4%    -0.65  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.37x      -4%    -0.69  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.27x      -4%    -0.36  MODESTLY OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.27x     -22%    -0.66  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.27x      -4%    -0.59  OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2015 print (late January) — the next read on North America revenue (-56.6% now); no revenue or EPS guide to read it against
+  (2) Operating margin — -1324.4bp in Q3 2015: pricing and utilization against costs
+  (3) A FY15 guide — none in numbers: Baker Hughes guides revenue outside North America, not EPS or total revenue; the Q3 2015 release has no Outlook section
+  (4) Capital expenditures — For the quarter, capital expenditures were $178 million, a decrease of $80 million or 31% sequentially, and down $247 million or 58% compared to the third quarter of 2014.
+  (5) Capital return at 12x — Free cash flow (a non-GAAP measure) for the quarter was $348 million.: management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $55  |  ADD below ~$20  |  TRIM above $91
+════════════════════════════════════════════════════════════════════════
+
