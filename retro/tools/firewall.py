@@ -44,7 +44,8 @@ figures, pro forma table, basis note and full-year actuals are absurd and whose 
 outlook for every quarter an 8-K guides and the two after the last print, and a later vintage excluding a year (the guide and dividend
 every fact sheet with a 'guides' list gets, too), and from the 2017 listing of Baker Hughes, a GE company the same in the new company's
 own fields (orders, the segment margin, the work in hand; "era" on the planted print, guides and dividend; BKR 2018-2021); PFE: a
-print whose full-year actuals are absurd and which restates every year of the history (the 'restates' field of PFE 2010-2013); every
+print whose full-year actuals are absurd and which restates every year of the history (the 'restates' field of PFE 2010-2013), a later
+withdrawal of every guided field of every guided year and a later reissue of the last print before CUTOFF (PFE 2014-2017); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -387,6 +388,19 @@ try:
         # a later print restating every year of the history (the 'restates' field of PFE 2010-2013)
         last["restates"] = {y: {"eps": 0.01, "revenue_usd_b": 0.01} for y in v["eps_normalized"] if y != "2099"}
         last["restates_note"] = "PLANTED"
+        last.pop("reissued", None)
+        # a later withdrawal of every guided field of every guided year, with the GAAP-EPS policy words (PFE 2014-2017)
+        for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "withdrawn_quote": "PLANTED",
+                                "eps_none": "PLANTED", "withdrawn": ["eps_guide", "rev_guide_usd_b", "eps_adj"]})
+        # a later reissue of the last print before CUTOFF with absurd figures and full-year actuals (the 'reissued' field of PFE 2014-2017)
+        p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
+        if p0.get("reissued", {}).get("published", cutoff) >= cutoff:     # a real reissue public before CUTOFF stays
+            p0["reissued"] = {"published": later, "source": last["source"], "release_time": "PLANTED", "note": "PLANTED",
+                              "raw": {"pretax_m": -99999, "diluted_shares_m": 1}, "pretax_margin": -999.0, "pretax_margin_bp": -99999.0,
+                              "eps_q": -9.99, "diluted_shares_m": 1.0,
+                              "fy_actual": {"eps_normalized": 0.01, "normalization_note": "PLANTED", "pretax_margin": -50.0,
+                                            "pretax_margin_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED"}}
     if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted

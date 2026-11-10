@@ -11516,6 +11516,167 @@ Judgement calls that could carry hindsight:
 - the restated years and the ex-divestiture ranges against the unrestated base (no class moves);
 - the signals and DURABLE, as in 2008-2009.
 
+### PFE 2014-2017
+
+209 weekly dates, 2014-01-03 to 2017-12-29, on the same method, engine and rule-T thresholds. The fact sheet only gains facts, and the
+314 earlier models rebuild byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_pfe.py --weekly 2014-01-01 2017-12-31                   # 209 dates, 2014-01-03 .. 2017-12-29 (the MAR and BKR boundary)
+for c in 2014-01-01 2014-01-28 2014-03-03 2014-05-05 2014-07-29 2014-10-28 2015-01-27 2015-03-02 2015-04-28 2015-07-28 2015-10-27 \
+         2016-02-02 2016-02-16 2016-03-01 2016-05-03 2016-08-02 2016-11-01 2017-01-31 2017-02-24 2017-05-02 2017-08-01 2017-10-31 \
+         2018-01-01; do python3 retro/tools/firewall.py $c PFE; done
+```
+
+Read: the 16 earnings releases from Q4 2013 to Q3 2017, the 8-K of 2016-02-16 that reissues the Q4 2015 GAAP results, the FY2013-FY2016
+10-Ks (the financial reports filed as Exhibit 13, with Items 1 and 1A), every other 8-K of December 2013 to January 2018 (49 filings, by
+their exhibits), the 86 Form 425 and 10 DEFA14A filings of the period (the 2014 AstraZeneca proposal and the 2015-2016 Allergan merger),
+and the 10-Qs for the dividend and guidance statements. Downloaded from EDGAR and read directly, none delegated; every raw figure was
+parsed by a script from the row it is cited from, and 294 strings (every statement-of-income, revenue-table, guidance, reconciliation,
+financial-summary, segment, cash-flow and dividend row, and every quoted sentence) were checked with `verbatim.py`, each against its own
+filing, all found. The source ids are PF46-PF66. Decided on 2026-11-10, before any 2014-2017 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (08:37-09:29 ET; Q1 2014 at 09:27 and Q1 2017 at 09:29), none on a
+  week's last trading day, so each print's week is dated the next trading day (2014-01-29 .. 2017-11-01). The 10-Ks were accepted after the
+  close (FY2013 2014-02-28 16:38, FY2014 2015-02-27 16:38, FY2015 2016-02-29 17:26, FY2016 2017-02-23 16:30 ET) and are dated 2014-03-03,
+  2015-03-02, 2016-03-01 and 2017-02-24.
+- **History: four more vintages, each with the ten years to its own 10-K's year** (the MAR and SHW reading of "the ten fiscal years"):
+  FY2013 (2004-2013), FY2014 (2005-2014), FY2015 (2006-2015), FY2016 (2007-2016); each year from the latest 10-K that reports it, on the
+  same basis (diluted EPS from continuing operations). The FY2013 10-K restates 2009-2012 without Animal Health ($1.19, $0.98, $0.99,
+  $1.20; revenues $46.314B, $61.591B, $61.035B, $54.657B); 2013 $1.65, 2014 $1.41, 2015 $1.11, 2016 $1.17. From the FY2013 10-K the
+  financial summary no longer gives share counts, so diluted shares come from each statement of income (three years) and earlier years
+  keep the latest filing that reports them (2009 and 2010 the FY2012 10-K's). 2003 leaves the ten years by itself; `pe_window_start`
+  (2004-01-01) no longer binds from 2014.
+- **The Q4 2013 print restates 2012** without Animal Health ($1.20 and $54.657B against the FY2012 10-K's $1.26 and $58.986B), from
+  2014-01-28 to the FY2013 10-K (the 2010-2013 `restates` encoding).
+- **The distorted-year test keeps every year.** After tax, per share, the acquisition-related costs and certain significant items are
+  $0.11 against 2013's $1.65, $0.45 against 2014's $1.41, $0.50 against 2015's $1.24 as first released ($0.63 against $1.11 as reissued,
+  the FY2015 10-K's reconciliation) and $0.75 against 2016's $1.17. The 2013 items are net of the Protonix settlement income and the
+  Hisun gain; no year's listed benefits approach its income (the AVGO mirror test).
+- **Guides: reported diluted EPS and revenues, as published, for the fiscal year only,** each field from the latest guide that states it:
+  - FY2014: adjusted revenues $49.2-51.2B (the releases' only revenue range: it leaves out the transitional supply revenues with Zoetis,
+    as the 2013 range did) and reported EPS $1.57-1.72 (Q4 2013); the Q1 2014 release confirms the adjusted guidance only and says
+    "Pfizer's previously-issued 2014 reported diluted EPS(1) guidance is no longer valid" (the UK Takeover Code, during the AstraZeneca
+    proposal); $48.7-50.7B and $1.47-1.62 (Q2 2014), $48.7-49.7B and $1.50-1.59 (Q3 2014). None of the AstraZeneca-period 8-Ks and Form
+    425s of April-May 2014 or the Q1 2014 10-Q gives a reported EPS range;
+  - FY2015: revenues $44.5-46.5B and $1.37-1.52 (Q4 2014, at mid-January exchange rates), $44.0-46.0B and $1.32-1.47 (Q1 2015, "updated
+    solely" for exchange rates), $45.0-46.0B and $1.38-1.47 (Q2 2015), $47.5-48.5B and $1.37-1.43 (Q3 2015, Hospira from 2015-09-03).
+    The update of 2015-09-30 for Hospira ($46.5-47.5B, $1.29-1.38), which the Q3 2015 release reports, was not filed with the SEC, so the
+    July ranges stand to 2015-10-27 (filed documents only, the WMT and NKE rule);
+  - FY2016: $49.0-51.0B and $1.54-1.67 (Q4 2015, the Venezuela currency impact in, the pending Allergan combination out), $51.0-53.0B and
+    $1.72-1.85 (Q1 2016); from the Q2 2016 release "Pfizer does not provide guidance for GAAP Reported financial measures (other than
+    Revenues)": revenues $51.0-53.0B, then $52.0-53.0B (Q3 2016), and no reported EPS range;
+  - FY2017: revenues $52.0-54.0B (Q4 2016, Q1 2017 and Q2 2017; "reflects the pending disposition of Hospira Infusion Systems", $1.2
+    billion of 2016 revenues) and $52.4-53.1B (Q3 2017), and no reported EPS range in any release.
+  - **The two withdrawals use the 'withdrawn' rule** (SHW, LOW, MAR, RCL): the Q1 2014 statement and the Q2 2016 policy each void the
+    year's reported EPS guide, so the last full year's EPS stands as current-FY EPS (the rollover rule): FY13's $1.65 from 2014-05-06 to
+    2014-07-25, FY15's $1.11 from 2016-08-03 to 2017-01-27. FY2017 never had one, so FY16's $1.17 stands all year (`eps_none` labels the
+    policy). The adjusted EPS ranges stay in the guide line only, from the latest guide that states one: Pfizer's adjusted EPS still
+    removes the recurring amortization of acquired intangibles ($0.40-0.48 a share a year), the 2008-2009 rule.
+  - The revenue ranges are read as growth on the last full year in the history, the businesses bought in (Hospira from 2015-09-03,
+    Anacor and Medivation in 2016: the SHW Valspar and BKR BJ Services rule), and the FY2017 range without Hospira Infusion Systems
+    against a 2016 that includes it (the LOW 2011 rule). No margin step (the cost-of-sales and tax-rate guides are on the adjusted basis).
+  - Reaffirmations without numbers add nothing: the Anacor (2016-05-16) and Medivation (2016-08-22) 8-Ks ("does not expect the
+    transaction to impact its current 2016 financial guidance"), the Allergan communications, and the accelerated share repurchase 8-Ks
+    of 2015-02-10, 2016-03-09 and 2017-02-03 (repurchases assumed in the guidance already issued).
+- **The 8-K of 2016-02-16 reissues the Q4 2015 results** (accepted 07:37 ET, before the open) for a $784.6 million charge to resolve the
+  Wyeth Protonix Medicaid rebate claims: Q4 2015 pre-tax income $(354)M instead of $431M, quarter EPS $(0.03) instead of $0.10, full-year
+  EPS $1.11 instead of $1.24 (revenues and cost of sales unchanged). It is encoded on the Q4 2015 print (`reissued`): from 2016-02-16
+  the reissued figures replace the release's, and the week keeps its last trading day (2016-02-19), as a reissue is not a new earnings
+  release. A builder change that moves no earlier output.
+- **Signals,** from each release's revenue table and statement of income as before, each against the year-ago quarter as the same
+  release shows it (Animal Health out of 2013's quarters, the 2016 quarters revised for the share-based payment standard in the 2017
+  releases). Q1 2015's U.S. $4,433M and international $6,430M add to $10,863M, $1M under the worldwide $10,864M (the release's rounding,
+  also in the Q1 2016 release's year-ago column); the builder now allows that $1M and each growth rate uses the line as published.
+- **Dividends,** each from the first filing that states the rate: $0.26 a quarter (FY2013 10-K; the Q4 2013 release does not state
+  it), $0.28 (Q4 2014 release, "declared a 28-cent first-quarter 2015 dividend"), $0.30 (Q4 2015 release), $0.32 (Q4 2016 release).
+- **Durability: DURABLE, risk 2, unchanged.** The FY2013-FY2016 10-Ks keep "is a research-based, global biopharmaceutical company" and
+  generic competition as "a major challenge for us around the world" ("for our branded products" from FY2015; "or biosimilars" in
+  FY2016's competition sentence); the "why" follows each 10-K. No theme in `taxonomy_eras.json` is live for a pharmaceutical company
+  through 2017, so the watch list stays empty.
+- **Segment bridge** (display only): the FY2013 10-K's operating segments (Primary Care, Specialty Care and Oncology, Established
+  Products and Emerging Markets, Consumer Healthcare, Other); the FY2014 and FY2015 10-Ks' GIP, VOC and GEP (the share line reads "GIP
+  and VOC", the Innovative Products business), with the FY2014 reconciling items; the FY2016 10-K's Innovative Health and Essential
+  Health.
+- **Adds nothing:** the AstraZeneca proposal 8-Ks and Form 425s of April-May 2014 (no Pfizer guide in numbers), the Hospira merger
+  agreement (2015-02-06) and closing (2015-09-03, "Pfizer intends to update its 2015 financial guidance in the coming weeks"), the
+  Allergan announcement, agreement, communications and termination (2015-11-23 .. 2016-04-06; projections in merger documents are not
+  guides), the Anacor and Medivation agreements, the debt offerings, exchange and tender offers, the board, officer, by-law and vote
+  8-Ks, the mini-tender notice of 2017-05-25, the DEFA14A proxy materials, and the 10-Qs beyond their dividend and guidance statements
+  (they repeat the releases' guides).
+
+Controls and checks:
+- **Controls:** altering one value of each print (its U.S./international split, each Q4 print's full-year EPS, the restated 2012), the
+  reissue (its full-year and quarter EPS), each vintage (its last year's EPS and its dividend), each guide field (reported EPS, revenues,
+  adjusted EPS, each withdrawal) and each dividend changes none of the 8 weekly dates before its publication and changes the first
+  weekly date on or after it: 81 of 82; the other is the Q3 2016 guide's `eps_none`, inert because the Q2 2016 withdrawal already
+  labels that year.
+- **Leak scan:** the source ids, titles, notes, texts and figures of every print, reissue, restatement, guide, vintage, dividend and
+  source of the fact sheet appear in no model of the 523 dated before their publication (0 hits in 179,882 pairs, after dropping 88
+  strings an earlier fact carries).
+- **`retro_tool run`:** passes on all 209 dates. Each draws one warning for calendar years: "2070" (the pre-tax margin signal's XBULL
+  threshold), and on 2016-02-03 and 2016-02-12 also "2041" (the Q4 2015 release's tax rate, 0.2041, before the reissue).
+- **Firewall:** passes at the 23 cutoffs above and at four earlier ones rerun after the builder change (2008-07-01, 2009-01-27,
+  2011-02-28, 2013-06-24), with 0 files changed and no planted text (26 to 523 dates each); the planted facts now also include a later
+  withdrawal of every guided field of every guided year and a later reissue of the last print before the cutoff.
+- No file shared with another ticker changed (the builder, fact sheet and firewall plant are PFE's own), so no other model can move.
+
+Seen in the build (method behaviour, not tuned):
+- **January 2014: CHEAP on the 4 dates before the Q4 2013 print** (BUY, Ratio B 0.44-0.49): FY13E is still the Q3 2013 release's
+  gain-inclusive $3.10, so $30.09-31.09 is 9.7-10.0x (8th-9th percentile) against a 15x floor ($43.40), the 2013 pattern.
+- **From the Q4 2013 print: RICH on 202 of the 205 dates to 2017-12-29** (AVOID throughout), FAIR on 3 (WATCHLIST, 2016-05-04 to
+  2016-05-20, Ratio B 1.59-1.73).
+  - 2014: FY14E $1.645, FY13's $1.65 after the withdrawal, then $1.545 (Q2 and Q3 2014): the stock ($27.83-32.80) is 17.6-21.2x, the
+    39th-84th percentile of a window whose median is 18.2-18.5x, 10-33% above a 15-16x floor ($24.68-26.40). BASE is -1.5% to -3.5%/yr
+    (the adjusted revenue ranges on FY13's $51.58B plus the buyback), BULL the FY04-FY13 CAGR (+1.6%/yr), Ratio B 2.9-7.1 to
+    2014-10-31, then 8.6-1,999 as the price nears the BULL price.
+  - From the Q4 2014 print (2015-01-28) to January 2016: FY15E $1.445, $1.395, $1.425 and $1.40: 21.8-25.3x, the 81st-100th
+    percentile, 36-58% above a 16x floor ($22.32-23.12); BASE -6.6% to -7.7%/yr on the reported revenue ranges (the exchange-rate cuts
+    included), then -1.6% with Hospira; the price is above the BULL price, Ratio B infinite, on 46 of these 53 dates (12.3-1,999 on
+    the other 7).
+  - 2016: FY16E $1.605 then $1.785 with the raised Q1 2016 guide (BASE +4.0% then +8.1%/yr): 18.3-20.7x, the 46th-71st percentile,
+    14-30% above a 16x floor, Ratio B 1.6-5.2, FAIR on three dates in May. From 2016-08-03 FY15's $1.11 stands: 27.6-31.8x, 66-99% above
+    the floor, Ratio B infinite.
+  - From the Q4 2016 print (2017-02-01): FY16's $1.17: 27.1-31.8x, the 80th-99th percentile of a window whose median is 19.7-19.8x, 59-87% above a 17x floor
+    ($19.89); BASE +1.2% to +2.0%/yr; Ratio B infinite on every date.
+- **BEAR** is 2005 (-28.7%/yr) while 2004 is in the history (to 2015-02-27), then 2007 (-23.0%/yr: $1.52 to $1.17) from the FY2014
+  10-K, and 2015 (-21.3%/yr: $1.41 to $1.11) from the FY2016 10-K. **XBULL** is the 2011-2013 run (+29.1%/yr, $0.99 to $1.65) from
+  the FY2013 10-K.
+- **The proxy composite** is 1.45-2.35 throughout: U.S. revenues turn up with Hospira and Medivation (+14.9% to +49.4% in Q3 2015-Q3
+  2016), international growth is below its BASE threshold (0%) on 14 of the 16 prints (-13.3% to +1.8%), and the gross margin falls 369-575bp in Q4
+  2015-Q3 2016 with Hospira's mix.
+- **Robustness:** all eight variants agree on 186 of 209 dates (4 CHEAP, 182 RICH); 20 dates split FAIR/RICH and 3 span all three
+  classes (May 2016).
+
+Sensitivity (each call changed alone, the 209 dates reclassified offline with `retro_tool`'s own classifier; no outcome consulted):
+- **The adjusted EPS guide as current-FY EPS where no reported guide is in force** (FY14E from 2014-05-06, FY16E from 2016-08-03, FY17E),
+  against the GAAP history: **86 classes**, all RICH to CHEAP (12 in 2014, 22 in 2016, 52 in 2017), 86 tiers. The RICH calls of
+  August 2016 to December 2017 rest on reading the GAAP-EPS policy as leaving no EPS guide;
+- **the dollar revenue guides not used** (BASE on the latest quarter's growth): 21 classes (16 RICH to FAIR, 3 FAIR to CHEAP, 2 RICH to
+  CHEAP; February to July 2016, where the quarters carry Hospira), 22 tiers;
+- **the Q2 2016 policy not read as a withdrawal** (Q1 2016's $1.72-1.85 standing to the year's end): 17 classes, RICH to FAIR
+  (2016-10-07 to 2017-01-27), 17 tiers;
+- the history from 2004 in every vintage (no ten-year cut): 3 classes (FAIR to RICH, May 2016), 3 tiers;
+- the FY2016 ranges read on the FY2015 10-K's pro forma revenues with Hospira for the year ($52.082B): 3 classes (FAIR to RICH, May
+  2016), 3 tiers;
+- the Q1 2014 statement not read as a withdrawal: none; the 2016-02-16 reissue ignored: none;
+- every signal at its BEAR value: 3 classes (FAIR to RICH, May 2016); at XBULL: 3 (RICH to FAIR, 2016-05-27 to 2016-06-24); no tier
+  either way.
+The company's adjusted EPS throughout (history and guides) was not re-run for this batch: its 2004-2008 figures were derived offline for
+the 2008-2013 tests and are not in the fact sheet. The 86-class line above bounds the direction: on Pfizer's own adjusted figures the
+2014-2017 multiple is far lower than on GAAP EPS.
+
+Judgement calls that could carry hindsight:
+- reading "no longer valid" (Q1 2014) and "does not provide guidance for GAAP Reported financial measures (other than Revenues)" (from
+  Q2 2016) as withdrawals, so the last full year's GAAP EPS stands (86 classes against the adjusted guide, 17 against keeping Q1 2016's
+  range);
+- GAAP EPS rather than the company's adjusted figure, on the recurring-amortization rule of 2008-2009 (the same 86 dates);
+- the ten-year history per vintage (3 classes);
+- the dollar revenue ranges read on the last full year, acquisitions in and the Hospira Infusion Systems sale out (21 classes without
+  the ranges, 3 with the pro forma 2015 base);
+- the unfiled 2015-09-30 update left out, and the 2016-02-16 reissue applied from its own date (no class moves);
+- the signals and DURABLE, as in 2008-2013.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -11714,6 +11875,8 @@ What the gates enforce:
   in the registry, so the words stay in the durability "why" (the PEP obesity rule).
   The list stays empty through 2013: the FY2009-FY2012 10-Ks keep generic competition as "a major challenge for us around the world",
   and Lipitor's loss of U.S. exclusivity in November 2011 is the same cycle, so the words stay in the "why" ("PFE 2010-2013").
+  It stays empty through 2017: the FY2013-FY2016 10-Ks keep generic competition as "a major challenge", and the FY2016 10-K's mention
+  of biosimilars is the same cycle for biologics, not a theme in the registry ("PFE 2014-2017").
 
 ## Workflow
 

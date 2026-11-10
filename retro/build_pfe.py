@@ -23,8 +23,17 @@ inputs map as follows (retro/README.md, "PFE"):
 A Q4 print may restate the year before it on a new basis ('restates': EPS and revenues from continuing operations, after a business
 became a discontinued operation); the restated figures replace that year until a 10-K vintage published after the print carries it.
 
+From 2014 (retro/README.md, "PFE 2014-2017"):
+  - a guide may withdraw named fields of its year ('withdrawn', the SHW, LOW, MAR and RCL rule): the Q1 2014 release says the 2014 reported
+    EPS guide "is no longer valid", and the Q2 2016 release that Pfizer "does not provide guidance for GAAP Reported financial measures
+    (other than Revenues)"; a withdrawn field is void in every earlier guide for that year, so the last full year's EPS stands until a
+    later guide states the field again. A guide that gives no reported EPS under that policy says so ('eps_none'), for the label only;
+  - a print may be reissued ('reissued': the 8-K of 2016-02-16 reissues the Q4 2015 GAAP results for a $784.6 million charge): from its
+    date the reissued figures replace the print's, and its full-year actuals, without making its week an earnings week;
+  - U.S. plus international revenues may differ from the worldwide total by the release's rounding ($1 million: Q1 2015).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2013 were accepted before the open or during the session on the release
+is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open or during the session on the release
 day, none on a week's last trading day.
 
 Output goes to staging/retrospective/PFE until the series is added to the archive (--out archive/retrospective/PFE).
@@ -32,6 +41,7 @@ Output goes to staging/retrospective/PFE until the series is added to the archiv
 Usage
   python3 retro/build_pfe.py --weekly 2008-01-01 2009-12-31
   python3 retro/build_pfe.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_pfe.py --weekly 2014-01-01 2017-12-31
   python3 retro/build_pfe.py 2008-01-24
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/PFE/<AS_OF>
 """
@@ -111,7 +121,10 @@ def rule_t(rt):
 def check_print(p):
     """Re-derive a print's growth and margins from its raw published figures (they must match)."""
     r = p["raw"]
-    assert r["us_m"] + r["intl_m"] == r["rev_m"] and r["us_prior_m"] + r["intl_prior_m"] == r["rev_prior_m"], (p["quarter"], "U.S. + international")
+    # U.S. plus international equals the worldwide total, or misses it by the release's own rounding ($1 million: Q1 2015 and its year-ago
+    # column in the Q1 2016 release); each growth rate uses the line as published
+    assert abs(r["us_m"] + r["intl_m"] - r["rev_m"]) <= 1 and abs(r["us_prior_m"] + r["intl_prior_m"] - r["rev_prior_m"]) <= 1, \
+        (p["quarter"], "U.S. + international")
     m, m0 = (r["rev_m"] - r["cos_m"]) / r["rev_m"] * 100, (r["rev_prior_m"] - r["cos_prior_m"]) / r["rev_prior_m"] * 100
     t, t0 = r["pretax_m"] / r["rev_m"] * 100, r["pretax_prior_m"] / r["rev_prior_m"] * 100
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": round((r["rev_m"] / r["rev_prior_m"] - 1) * 100, 1),
@@ -138,6 +151,22 @@ def build(as_of, facts, raw, spx, engine, out):
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
+    # a print may be reissued ('reissued': the 8-K of 2016-02-16 reissues the Q4 2015 GAAP results for a $784.6 million charge): from the
+    # reissue's date its figures replace the print's (raw figures, margins, quarter EPS, shares, note and full-year actuals) and its source
+    # joins the print's; the print keeps its release date, so the reissue's week is not an earnings week (weekly_dates reads the fact
+    # sheet as it stands); a reissue published after AS_OF changes nothing
+    def reissued(p):
+        r = p.get("reissued")
+        if not r or r["published"] > as_of:
+            return p
+        q = {k: v for k, v in p.items() if k != "reissued"}
+        q.update({k: v for k, v in r.items() if k not in ("published", "source", "raw", "fy_actual", "release_time")})
+        q["raw"] = {**p["raw"], **r.get("raw", {})}
+        if "fy_actual" in r:
+            q["fy_actual"] = {**p["fy_actual"], **r["fy_actual"]}
+        q["reissue_source"] = r["source"]
+        return q
+    facts = {**facts, "prints": [reissued(p) for p in facts["prints"]]}
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
     facts, split_ids = on_basis(facts, as_of)
@@ -198,14 +227,26 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    stated = lambda k: next((g for g in reversed(guides) if k in g), None)
-    ge, gr = stated("eps_guide"), stated("rev_guide_usd_b")
+    # a guide may withdraw named fields of its year ('withdrawn', the SHW, LOW, MAR and RCL rule; the Q1 2014 release voids the 2014 reported
+    # EPS guide, and the Q2 2016 release ends GAAP guidance other than revenues): each is void in every earlier guide for that year, so only
+    # a guide published on or after the withdrawal can state it again
+    void = {}
+    for g in guides:
+        for k in g.get("withdrawn", []):
+            void[k] = g["published"]
+    stated = lambda k: next((g for g in reversed(guides) if k in g and g["published"] >= void.get(k, "")), None)
+    ge, gr, ga = stated("eps_guide"), stated("rev_guide_usd_b"), stated("eps_adj")
+    wd = next((g for g in reversed(guides) if "eps_guide" in g.get("withdrawn", [])), None)
+    gn = next((g for g in reversed(guides) if g.get("eps_none")), None)        # a year guided only after the GAAP-EPS policy (FY2017)
     if ge:
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} reported EPS, guide midpoint"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[cur_fy - 1]
-        eps_label = f"{fy_e}: no numeric EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+        prev_s = f"FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+        eps_label = (f"{fy_e}: reported EPS guidance withdrawn ({wd['doc']}), {prev_s}" if wd else
+                     f"{fy_e}: no reported EPS guide ({gn['doc']}: GAAP guidance for revenues only), {prev_s}" if gn else
+                     f"{fy_e}: no numeric EPS guide yet, {prev_s}")
     fy_prev_s = f"FY{max(rev) % 100:02d}"
     if gr:                                   # the fiscal-year revenue guide, a dollar range read against the last full year
         fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
@@ -221,10 +262,13 @@ def build(as_of, facts, raw, spx, engine, out):
         fy_rev_b = last_rev * (1 + latest["sales_pct"] / 100)
         fy_rev_label = f"{fwd_label}, applied to the year"
     if guides:
-        bits = ([f"reported EPS ${eps_rng(*ge['eps_guide'])}"] if ge else []) + \
+        # the adjusted EPS range comes from the latest guide that states it (to 2013 always the guide of the reported range)
+        bits = ([f"reported EPS ${eps_rng(*ge['eps_guide'])}"] if ge else
+                [f"reported EPS guidance withdrawn ({wd['doc']}: '{wd['withdrawn_quote']}')"] if wd else
+                [f"no reported EPS guide ('{gn['eps_none']}')"] if gn else []) + \
                ([f"{gr['rev_label']} ${gr['rev_guide_usd_b'][0]:.1f}-{gr['rev_guide_usd_b'][1]:.1f}B "
                  f"({pct_range(*fwd)} on {fy_prev_s}'s ${last_rev:.2f}B)"] if gr else []) + \
-               ([f"adjusted EPS ${eps_rng(*ge['eps_adj'])} (shown only: it excludes purchase-accounting amortization)"] if ge else []) + \
+               ([f"adjusted EPS ${eps_rng(*ga['eps_adj'])} (shown only: it excludes purchase-accounting amortization)"] if ga else []) + \
                ([g["note"] for g in guides[-1:] if g.get("note")])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
@@ -272,6 +316,8 @@ def build(as_of, facts, raw, spx, engine, out):
                 "  new products and cost cuts to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
     cat3 = (f"(3) {fy_now} reported EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
+            f"(3) A numeric {fy_now} reported EPS guide — withdrawn ({wd['doc']})" if wd else
+            f"(3) A numeric {fy_now} reported EPS guide — none (GAAP guidance for revenues only, {gn['doc']})" if gn else
             f"(3) A numeric {fy_now} EPS guide — none yet")
     cat4 = (f"(4) Pre-tax margin — {latest['pretax_margin']:.2f}% in {latest['quarter']} ({latest['pretax_margin_bp']:+.1f}bp): "
             "where restructuring, legal and acquisition charges land")
@@ -287,7 +333,8 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company, exchange = h["company"], h["exchange"]
     groups = [tuple(g) for g in h["groups"]]
-    ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
+    ids = (list(h["sources"]) + [p["source"] for p in prints] + [p["reissue_source"] for p in prints if p.get("reissue_source")]
+           + [g["source"] for g in guides]
            + ([dividend_src] if dividend_src else []) + split_ids)
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",

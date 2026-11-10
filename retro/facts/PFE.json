@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use. From 2010: a Q4 print may restate the year before it on a new basis ('restates': its EPS and revenues from continuing operations), which replaces that year from the print until a 10-K vintage published after it carries the year; the reported diluted EPS guide is used as published, discontinued operations included where the guide includes them (the only EPS line Pfizer guides).",
+ "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use. From 2010: a Q4 print may restate the year before it on a new basis ('restates': its EPS and revenues from continuing operations), which replaces that year from the print until a 10-K vintage published after it carries the year; the reported diluted EPS guide is used as published, discontinued operations included where the guide includes them (the only EPS line Pfizer guides). From 2014: a guide may withdraw named fields of its year ('withdrawn', with 'withdrawn_quote': the Q1 2014 release voids the 2014 reported EPS guide; the Q2 2016 release ends GAAP guidance other than revenues), and a guide given under that policy says so ('eps_none'); a print may be reissued ('reissued': the 8-K of 2016-02-16 reissues the Q4 2015 GAAP results), whose figures replace the print's from the reissue's date; each 10-K vintage holds the ten years to its own year.",
  "ticker": "PFE",
  "sources": {
   "PF1": {
@@ -316,6 +316,153 @@
    "title": "Pfizer Form 425: preliminary results of the Zoetis exchange offer, 2013 guidance adjusted",
    "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312513268436/d558864d425.htm",
    "supports": "2013 guidance adjusted solely for the Zoetis exchange offer (revenues without Zoetis for the full year; reported EPS unchanged, without the gain on the disposition)"
+  },
+  "PF46": {
+   "published": "2014-01-28",
+   "filed": "2014-01-28 08:50 ET (before the open)",
+   "title": "Pfizer Q4 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800314000007/pfe-12312013xex99.htm",
+   "supports": "fourth-quarter and full-year 2013 statement of income and revenues by U.S. and international; 2014 guidance"
+  },
+  "PF47": {
+   "published": "2014-03-03",
+   "filed": "2014-02-28 16:38 ET (after the close)",
+   "title": "Pfizer FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800314000018/pfe-12312013xex13.htm",
+   "supports": "financial summary 2009-2013; statement of income 2011-2013; revenues by operating segment and geography; cash flows; the first-quarter 2014 dividend; Item 1 and Item 1A wording"
+  },
+  "PF48": {
+   "published": "2014-05-05",
+   "filed": "2014-05-05 09:27 ET (before the open)",
+   "title": "Pfizer Q1 2014 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800314000027/pfe-03302014xex99.htm",
+   "supports": "first-quarter 2014 statement of income and revenues by U.S. and international; 2014 guidance"
+  },
+  "PF49": {
+   "published": "2014-07-29",
+   "filed": "2014-07-29 08:37 ET (before the open)",
+   "title": "Pfizer Q2 2014 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800314000035/pfe-06292014xex99.htm",
+   "supports": "second-quarter 2014 statement of income and revenues by U.S. and international; 2014 guidance"
+  },
+  "PF50": {
+   "published": "2014-10-28",
+   "filed": "2014-10-28 09:01 ET (before the open)",
+   "title": "Pfizer Q3 2014 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800314000043/pfe-09282014xex99.htm",
+   "supports": "third-quarter 2014 statement of income and revenues by U.S. and international; 2014 guidance"
+  },
+  "PF51": {
+   "published": "2015-01-27",
+   "filed": "2015-01-27 08:43 ET (before the open)",
+   "title": "Pfizer Q4 2014 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800315000003/pfe-12312014xex99.htm",
+   "supports": "fourth-quarter and full-year 2014 statement of income and revenues by U.S. and international; 2015 guidance"
+  },
+  "PF52": {
+   "published": "2015-03-02",
+   "filed": "2015-02-27 16:38 ET (after the close)",
+   "title": "Pfizer FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800315000014/pfe-12312014xex13.htm",
+   "supports": "financial summary 2010-2014; statement of income 2012-2014; revenues by operating segment and geography; cash flows; the first-quarter 2015 dividend; Item 1 and Item 1A wording"
+  },
+  "PF53": {
+   "published": "2015-04-28",
+   "filed": "2015-04-28 09:00 ET (before the open)",
+   "title": "Pfizer Q1 2015 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800315000018/pfe-03292015xex99.htm",
+   "supports": "first-quarter 2015 statement of income and revenues by U.S. and international; 2015 guidance"
+  },
+  "PF54": {
+   "published": "2015-07-28",
+   "filed": "2015-07-28 08:51 ET (before the open)",
+   "title": "Pfizer Q2 2015 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800315000031/pfe-06282015xex99.htm",
+   "supports": "second-quarter 2015 statement of income and revenues by U.S. and international; 2015 guidance"
+  },
+  "PF55": {
+   "published": "2015-10-27",
+   "filed": "2015-10-27 09:08 ET (before the open)",
+   "title": "Pfizer Q3 2015 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800315000048/pfe-09272015xex99.htm",
+   "supports": "third-quarter 2015 statement of income and revenues by U.S. and international; 2015 guidance"
+  },
+  "PF56": {
+   "published": "2016-02-02",
+   "filed": "2016-02-02 08:52 ET (before the open)",
+   "title": "Pfizer Q4 2015 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000056/pfe-12312015xex99.htm",
+   "supports": "fourth-quarter and full-year 2015 statement of income and revenues by U.S. and international; 2016 guidance"
+  },
+  "PF57": {
+   "published": "2016-02-16",
+   "filed": "2016-02-16 07:37 ET (before the open)",
+   "title": "Pfizer 8-K of 2016-02-16: fourth-quarter and full-year 2015 GAAP results reissued (Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000072/pfe-12312015xex99.htm",
+   "supports": "fourth-quarter and full-year 2015 statement of operations reissued for the $784.6 million charge to resolve the Protonix Medicaid rebate claims"
+  },
+  "PF58": {
+   "published": "2016-03-01",
+   "filed": "2016-02-29 17:26 ET (after the close)",
+   "title": "Pfizer FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000077/pfe-12312015x10kexhibit13.htm",
+   "supports": "financial summary 2011-2015; statement of income 2013-2015; revenues by operating segment and geography; cash flows; the first-quarter 2016 dividend; Item 1 and Item 1A wording"
+  },
+  "PF59": {
+   "published": "2016-05-03",
+   "filed": "2016-05-03 08:51 ET (before the open)",
+   "title": "Pfizer Q1 2016 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000091/pfe-04032016xex99.htm",
+   "supports": "first-quarter 2016 statement of income and revenues by U.S. and international; 2016 guidance"
+  },
+  "PF60": {
+   "published": "2016-08-02",
+   "filed": "2016-08-02 08:55 ET (before the open)",
+   "title": "Pfizer Q2 2016 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000102/pfe-07032016xex99.htm",
+   "supports": "second-quarter 2016 statement of income and revenues by U.S. and international; 2016 guidance"
+  },
+  "PF61": {
+   "published": "2016-11-01",
+   "filed": "2016-11-01 08:49 ET (before the open)",
+   "title": "Pfizer Q3 2016 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000110/pfe-10022016xex99.htm",
+   "supports": "third-quarter 2016 statement of income and revenues by U.S. and international; 2016 guidance"
+  },
+  "PF62": {
+   "published": "2017-01-31",
+   "filed": "2017-01-31 08:42 ET (before the open)",
+   "title": "Pfizer Q4 2016 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000003/pfe-12312016xex99.htm",
+   "supports": "fourth-quarter and full-year 2016 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  "PF63": {
+   "published": "2017-02-24",
+   "filed": "2017-02-23 16:30 ET (after the close)",
+   "title": "Pfizer FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000014/pfe-12312016x10kexhibit13.htm",
+   "supports": "financial summary 2012-2016; statement of income 2014-2016; revenues by operating segment and geography; cash flows; the first-quarter 2017 dividend; Item 1 and Item 1A wording"
+  },
+  "PF64": {
+   "published": "2017-05-02",
+   "filed": "2017-05-02 09:29 ET (before the open)",
+   "title": "Pfizer Q1 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000020/pfe-04022017xex99.htm",
+   "supports": "first-quarter 2017 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  "PF65": {
+   "published": "2017-08-01",
+   "filed": "2017-08-01 08:57 ET (before the open)",
+   "title": "Pfizer Q2 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000034/pfe-07022017xex99.htm",
+   "supports": "second-quarter 2017 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  "PF66": {
+   "published": "2017-10-31",
+   "filed": "2017-10-31 08:57 ET (before the open)",
+   "title": "Pfizer Q3 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000045/pfe-10012017xex99.htm",
+   "supports": "third-quarter 2017 statement of income and revenues by U.S. and international; 2017 guidance"
   }
  },
  "history_vintages": [
@@ -1166,6 +1313,642 @@
     "Established Products and Emerging Markets"
    ],
    "pharma_label": "biopharmaceutical"
+  },
+  {
+   "published": "2014-03-03",
+   "sources": [
+    "PF47",
+    "PF41",
+    "PF35",
+    "PF29",
+    "PF24"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY13",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development and manufacture of healthcare products' (FY2013 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues' (Item 1A); 'we can lose the major portion of revenues for that product in a very short period of time'; 'This loss of exclusivity reduced branded worldwide revenues by $1.7 billion in 2013, in comparison with 2012' (Lipitor, FY2013 Financial Report); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65
+   },
+   "eps_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF47",
+    "2011": "PF47",
+    "2012": "PF47",
+    "2013": "PF47"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it, the ten years to the 10-K's year; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded (the PFE 2008-2009 rule), so the history and the P/E window start with 2004; 2004-2012 kept (the earlier tests, on the bases then published); 2013 kept (acquisition-related costs and certain significant items of $0.11 a share against $1.65, Q4 2013 release after tax)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 47.733,
+    "2008": 47.529,
+    "2009": 46.314,
+    "2010": 61.591,
+    "2011": 61.035,
+    "2012": 54.657,
+    "2013": 51.584
+   },
+   "revenue_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF47",
+    "2011": "PF47",
+    "2012": "PF47",
+    "2013": "PF47"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0,
+    "2011": 7870.0,
+    "2012": 7508.0,
+    "2013": 6895.0
+   },
+   "shares_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF47",
+    "2012": "PF47",
+    "2013": "PF47"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 30.47,
+   "prev_fy_pretax_margin_note": "FY13 income from continuing operations before taxes $15,716M / revenues $51,584M (FY2013 10-K)",
+   "prev_fy_gross_margin": 81.42,
+   "prev_fy_sales_growth": -5.6,
+   "prev_fy_us_pct": -4.9,
+   "prev_fy_intl_pct": -6.1,
+   "tax_rate": 0.274,
+   "tax_note": "FY13 provision for taxes $4,306M / income from continuing operations before taxes $15,716M (FY2013 10-K)",
+   "fcf_b": 16.56,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $17,765M less purchases of property, plant and equipment $1,206M",
+   "cash_b": 32.41,
+   "cash_note": "cash and cash equivalents $2,183M and short-term investments $30,225M at December 31, 2013",
+   "dividend_annual": 1.04,
+   "dividend_note": "$0.26 quarterly ('In December 2013, our Board of Directors declared a first-quarter 2014 dividend of $0.26 per share', FY2013 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Primary Care",
+     13.272,
+     -14.7
+    ],
+    [
+     "Specialty Care and Oncology",
+     14.934,
+     -3.4
+    ],
+    [
+     "Established Products and Emerging Markets",
+     19.672,
+     -2.6
+    ],
+    [
+     "Consumer Healthcare",
+     3.342,
+     4.0
+    ],
+    [
+     "Other",
+     0.364,
+     57.6
+    ]
+   ],
+   "groups_basis": "FY13 revenues by operating segment (FY2013 10-K)",
+   "pharma_groups": [
+    "Primary Care",
+    "Specialty Care and Oncology",
+    "Established Products and Emerging Markets"
+   ],
+   "pharma_label": "biopharmaceutical",
+   "cash_return_text": "about 563 million shares purchased in 2013 for about $16.3 billion (FY2013 10-K)"
+  },
+  {
+   "published": "2015-03-02",
+   "sources": [
+    "PF52",
+    "PF47",
+    "PF41",
+    "PF35",
+    "PF29",
+    "PF24"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY14",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development and manufacture of healthcare products' (FY2014 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues' (Item 1A); 'we can lose the major portion of revenues for that product in a very short period of time'; 'A number of our current products are expected to face significantly increased generic competition over the next few years' (Item 1A); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31"
+   },
+   "eps_gaap": {
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65,
+    "2014": 1.41
+   },
+   "eps_normalized": {
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65,
+    "2014": 1.41
+   },
+   "eps_sources": {
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF52",
+    "2011": "PF52",
+    "2012": "PF52",
+    "2013": "PF52",
+    "2014": "PF52"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it, the ten years to the 10-K's year; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003, excluded, is outside the ten years; 2005-2013 kept (the earlier tests); 2014 kept (acquisition-related costs and certain significant items of $0.45 against $1.41 after tax)",
+   "revenue_usd_b": {
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 47.733,
+    "2008": 47.529,
+    "2009": 46.314,
+    "2010": 61.591,
+    "2011": 61.035,
+    "2012": 54.657,
+    "2013": 51.584,
+    "2014": 49.605
+   },
+   "revenue_sources": {
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF52",
+    "2011": "PF52",
+    "2012": "PF52",
+    "2013": "PF52",
+    "2014": "PF52"
+   },
+   "diluted_shares_m": {
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0,
+    "2011": 7870.0,
+    "2012": 7508.0,
+    "2013": 6895.0,
+    "2014": 6424.0
+   },
+   "shares_sources": {
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF47",
+    "2012": "PF52",
+    "2013": "PF52",
+    "2014": "PF52"
+   },
+   "pe_window_start": "2004-01-01",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 24.67,
+   "prev_fy_pretax_margin_note": "FY14 income from continuing operations before taxes $12,240M / revenues $49,605M (FY2014 10-K)",
+   "prev_fy_gross_margin": 80.69,
+   "prev_fy_sales_growth": -3.8,
+   "prev_fy_us_pct": -5.9,
+   "prev_fy_intl_pct": -2.5,
+   "tax_rate": 0.2549,
+   "tax_note": "FY14 provision for taxes $3,120M / income from continuing operations before taxes $12,240M (FY2014 10-K)",
+   "fcf_b": 15.68,
+   "fcf_label": "FY14",
+   "fcf_note": "net cash provided by operating activities $16,883M less purchases of property, plant and equipment $1,199M",
+   "cash_b": 36.12,
+   "cash_note": "cash and cash equivalents $3,343M and short-term investments $32,779M at December 31, 2014",
+   "dividend_annual": 1.12,
+   "dividend_note": "$0.28 quarterly ('In December 2014, our Board of Directors declared a first-quarter 2015 dividend of $0.28 per share', FY2014 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Global Innovative Pharmaceutical",
+     13.861,
+     -3.2
+    ],
+    [
+     "Global Vaccines, Oncology and Consumer Healthcare",
+     10.144,
+     9.3
+    ],
+    [
+     "Global Established Pharmaceutical",
+     25.149,
+     -8.9
+    ],
+    [
+     "Other",
+     0.253,
+     9.1
+    ],
+    [
+     "Reconciling items",
+     0.198,
+     50.0
+    ]
+   ],
+   "groups_basis": "FY14 revenues by operating segment (FY2014 10-K)",
+   "pharma_groups": [
+    "Global Innovative Pharmaceutical",
+    "Global Vaccines, Oncology and Consumer Healthcare"
+   ],
+   "pharma_label": "GIP and VOC",
+   "cash_return_text": "about 165 million shares purchased in 2014 for about $5.0 billion (FY2014 10-K)"
+  },
+  {
+   "published": "2016-03-01",
+   "sources": [
+    "PF58",
+    "PF52",
+    "PF47",
+    "PF41",
+    "PF35",
+    "PF29"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY15",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development and manufacture of healthcare products' (FY2015 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for our branded products around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues' (Item 1A); 'we can lose the major portion of revenues for that product in a very short period of time'; 'A number of our current Innovative products are expected to face significantly increased generic competition over the next few years' (Item 1A); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31"
+   },
+   "eps_gaap": {
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65,
+    "2014": 1.41,
+    "2015": 1.11
+   },
+   "eps_normalized": {
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65,
+    "2014": 1.41,
+    "2015": 1.11
+   },
+   "eps_sources": {
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF52",
+    "2011": "PF58",
+    "2012": "PF58",
+    "2013": "PF58",
+    "2014": "PF58",
+    "2015": "PF58"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it, the ten years to the 10-K's year; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003, excluded, is outside the ten years; 2006-2014 kept (the earlier tests); 2015 kept (acquisition-related costs and certain significant items of $0.63 against $1.11 after tax)",
+   "revenue_usd_b": {
+    "2006": 48.371,
+    "2007": 47.733,
+    "2008": 47.529,
+    "2009": 46.314,
+    "2010": 61.591,
+    "2011": 61.035,
+    "2012": 54.657,
+    "2013": 51.584,
+    "2014": 49.605,
+    "2015": 48.851
+   },
+   "revenue_sources": {
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF52",
+    "2011": "PF58",
+    "2012": "PF58",
+    "2013": "PF58",
+    "2014": "PF58",
+    "2015": "PF58"
+   },
+   "diluted_shares_m": {
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0,
+    "2011": 7870.0,
+    "2012": 7508.0,
+    "2013": 6895.0,
+    "2014": 6424.0,
+    "2015": 6257.0
+   },
+   "shares_sources": {
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF47",
+    "2012": "PF52",
+    "2013": "PF58",
+    "2014": "PF58",
+    "2015": "PF58"
+   },
+   "pe_window_start": "2004-01-01",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 18.35,
+   "prev_fy_pretax_margin_note": "FY15 income from continuing operations before taxes $8,965M / revenues $48,851M (FY2015 10-K)",
+   "prev_fy_gross_margin": 80.25,
+   "prev_fy_sales_growth": -1.5,
+   "prev_fy_us_pct": 13.8,
+   "prev_fy_intl_pct": -11.1,
+   "tax_rate": 0.222,
+   "tax_note": "FY15 provision for taxes $1,990M / income from continuing operations before taxes $8,965M (FY2015 10-K)",
+   "fcf_b": 13.12,
+   "fcf_label": "FY15",
+   "fcf_note": "net cash provided by operating activities $14,512M less purchases of property, plant and equipment $1,397M",
+   "cash_b": 23.29,
+   "cash_note": "cash and cash equivalents $3,641M and short-term investments $19,649M at December 31, 2015",
+   "dividend_annual": 1.2,
+   "dividend_note": "$0.30 quarterly ('In December 2015, our Board of Directors declared a first-quarter 2016 dividend of $0.30 per share', FY2015 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Global Innovative Pharmaceutical",
+     13.954,
+     0.7
+    ],
+    [
+     "Global Vaccines, Oncology and Consumer Healthcare",
+     12.803,
+     26.2
+    ],
+    [
+     "Global Established Pharmaceutical",
+     21.587,
+     -14.2
+    ],
+    [
+     "Other",
+     0.506,
+     100.0
+    ]
+   ],
+   "groups_basis": "FY15 revenues by operating segment (FY2015 10-K)",
+   "pharma_groups": [
+    "Global Innovative Pharmaceutical",
+    "Global Vaccines, Oncology and Consumer Healthcare"
+   ],
+   "pharma_label": "GIP and VOC",
+   "cash_return_text": "a $5 billion accelerated share repurchase agreement entered into on February 9, 2015 (FY2015 10-K)"
+  },
+  {
+   "published": "2017-02-24",
+   "sources": [
+    "PF63",
+    "PF58",
+    "PF52",
+    "PF47",
+    "PF41",
+    "PF35"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY16",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development and manufacture of healthcare products' (FY2016 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for our branded products around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues' (Item 1A); 'we can lose the major portion of revenues for that product in a very short period of time'; 'A number of our products are expected to face significantly increased generic competition over the next few years' (Item 1A); 'Many of our prescription pharmaceutical products face competition in the form of branded or generic drugs or biosimilars that treat similar diseases or indications'",
+   "fiscal_year_ends": {
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31"
+   },
+   "eps_gaap": {
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65,
+    "2014": 1.41,
+    "2015": 1.11,
+    "2016": 1.17
+   },
+   "eps_normalized": {
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.19,
+    "2010": 0.98,
+    "2011": 0.99,
+    "2012": 1.2,
+    "2013": 1.65,
+    "2014": 1.41,
+    "2015": 1.11,
+    "2016": 1.17
+   },
+   "eps_sources": {
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF52",
+    "2011": "PF58",
+    "2012": "PF63",
+    "2013": "PF63",
+    "2014": "PF63",
+    "2015": "PF63",
+    "2016": "PF63"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it, the ten years to the 10-K's year; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003, excluded, is outside the ten years; 2007-2015 kept (the earlier tests); 2016 kept (acquisition-related costs and certain significant items of $0.75 against $1.17 after tax)",
+   "revenue_usd_b": {
+    "2007": 47.733,
+    "2008": 47.529,
+    "2009": 46.314,
+    "2010": 61.591,
+    "2011": 61.035,
+    "2012": 54.657,
+    "2013": 51.584,
+    "2014": 49.605,
+    "2015": 48.851,
+    "2016": 52.824
+   },
+   "revenue_sources": {
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF47",
+    "2010": "PF52",
+    "2011": "PF58",
+    "2012": "PF63",
+    "2013": "PF63",
+    "2014": "PF63",
+    "2015": "PF63",
+    "2016": "PF63"
+   },
+   "diluted_shares_m": {
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0,
+    "2011": 7870.0,
+    "2012": 7508.0,
+    "2013": 6895.0,
+    "2014": 6424.0,
+    "2015": 6257.0,
+    "2016": 6159.0
+   },
+   "shares_sources": {
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF47",
+    "2012": "PF52",
+    "2013": "PF58",
+    "2014": "PF63",
+    "2015": "PF63",
+    "2016": "PF63"
+   },
+   "pe_window_start": "2004-01-01",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 15.81,
+   "prev_fy_pretax_margin_note": "FY16 income from continuing operations before taxes $8,351M / revenues $52,824M (FY2016 10-K)",
+   "prev_fy_gross_margin": 76.66,
+   "prev_fy_sales_growth": 8.1,
+   "prev_fy_us_pct": 21.5,
+   "prev_fy_intl_pct": -2.5,
+   "tax_rate": 0.1345,
+   "tax_note": "FY16 provision for taxes $1,123M / income from continuing operations before taxes $8,351M (FY2016 10-K)",
+   "fcf_b": 14.08,
+   "fcf_label": "FY16",
+   "fcf_note": "net cash provided by operating activities $15,901M less purchases of property, plant and equipment $1,823M",
+   "cash_b": 17.85,
+   "cash_note": "cash and cash equivalents $2,595M and short-term investments $15,255M at December 31, 2016",
+   "dividend_annual": 1.28,
+   "dividend_note": "$0.32 quarterly ('In December 2016, our Board of Directors declared a first-quarter 2017 dividend of $0.32 per share', FY2016 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Innovative Health",
+     29.197,
+     9.1
+    ],
+    [
+     "Essential Health",
+     23.627,
+     6.9
+    ]
+   ],
+   "groups_basis": "FY16 revenues by operating segment (FY2016 10-K)",
+   "pharma_groups": [
+    "Innovative Health"
+   ],
+   "pharma_label": "Innovative Health",
+   "cash_return_text": "a $5 billion accelerated share repurchase agreement entered into on March 8, 2016 (FY2016 10-K)"
   }
  ],
  "prints": [
@@ -2222,6 +3005,665 @@
    "cash_return_text": "no share purchase stated in the release",
    "next_print": "Q4 2013 print (late January)",
    "note": "diluted shares fell with the Zoetis exchange offer of 2013-06-24"
+  },
+  {
+   "quarter": "Q4 2013",
+   "fy": 2013,
+   "q": 4,
+   "published": "2014-01-28",
+   "source": "PF46",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 08:50 ET",
+   "raw": {
+    "rev_m": 13558,
+    "rev_prior_m": 13891,
+    "cos_m": 2794,
+    "cos_prior_m": 2753,
+    "pretax_m": 3061,
+    "pretax_prior_m": 2077,
+    "us_m": 5084,
+    "us_prior_m": 5301,
+    "intl_m": 8474,
+    "intl_prior_m": 8590,
+    "diluted_shares_m": 6533
+   },
+   "sales_b": 13.558,
+   "sales_pct": -2.4,
+   "us_pct": -4.1,
+   "intl_pct": -1.4,
+   "gross_margin": 79.39,
+   "gross_margin_bp": -78.9,
+   "pretax_margin": 22.58,
+   "pretax_margin_bp": 762.5,
+   "eps_q": 0.4,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 6533.0,
+   "cash_return_text": "$4.6 billion of common stock repurchased in the quarter, $16.3 billion in 2013",
+   "next_print": "Q1 2014 print (late April)",
+   "note": "Animal Health discontinued in both quarters after the full disposition of Zoetis on 2013-06-24 (as published)",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 1.65,
+    "revenue_usd_b": 51.584,
+    "diluted_shares_m": 6895.0,
+    "normalization_note": "FY2013 $1.65 from continuing operations (Q4 2013 release; $3.19 with the gain on the disposition of Zoetis and Animal Health's income); kept: after-tax acquisition-related costs and certain significant items of $0.11 a share against $1.65 (Q4 2013 release: acquisition-related costs $0.06 and certain significant items $0.05)",
+    "gross_margin": 81.42,
+    "pretax_margin": 30.47,
+    "pretax_margin_note": "FY13 income from continuing operations before taxes $15,716M / revenues $51,584M (Q4 2013 release)",
+    "sales_growth": -5.6,
+    "us_pct": -4.9,
+    "intl_pct": -6.1,
+    "tax_rate": 0.274,
+    "tax_note": "FY13 provision for taxes $4,306M / income from continuing operations before taxes $15,716M"
+   },
+   "restates": {
+    "2012": {
+     "eps": 1.2,
+     "revenue_usd_b": 54.657
+    }
+   },
+   "restates_note": "FY2012 $1.20 and $54.657B from continuing operations, without Animal Health (Q4 2013 release; $1.26 and $58.986B in the FY2012 10-K)"
+  },
+  {
+   "quarter": "Q1 2014",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-05-05",
+   "source": "PF48",
+   "release": "May 5",
+   "release_time": "before the open on May 5: 8-K accepted 09:27 ET",
+   "raw": {
+    "rev_m": 11353,
+    "rev_prior_m": 12410,
+    "cos_m": 2045,
+    "cos_prior_m": 2263,
+    "pretax_m": 2847,
+    "pretax_prior_m": 3725,
+    "us_m": 4275,
+    "us_prior_m": 4914,
+    "intl_m": 7078,
+    "intl_prior_m": 7496,
+    "diluted_shares_m": 6476
+   },
+   "sales_b": 11.353,
+   "sales_pct": -8.5,
+   "us_pct": -13.0,
+   "intl_pct": -5.6,
+   "gross_margin": 81.99,
+   "gross_margin_bp": 22.2,
+   "pretax_margin": 25.08,
+   "pretax_margin_bp": -493.9,
+   "eps_q": 0.35,
+   "eps_q_prior": 0.36,
+   "diluted_shares_m": 6476.0,
+   "cash_return_text": "$1.7 billion of common stock repurchased to date in 2014",
+   "next_print": "Q2 2014 print (late July)"
+  },
+  {
+   "quarter": "Q2 2014",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-07-29",
+   "source": "PF49",
+   "release": "Jul 29",
+   "release_time": "before the open on Jul 29: 8-K accepted 08:37 ET",
+   "raw": {
+    "rev_m": 12773,
+    "rev_prior_m": 12973,
+    "cos_m": 2462,
+    "cos_prior_m": 2242,
+    "pretax_m": 4003,
+    "pretax_prior_m": 5357,
+    "us_m": 4906,
+    "us_prior_m": 5090,
+    "intl_m": 7867,
+    "intl_prior_m": 7883,
+    "diluted_shares_m": 6444
+   },
+   "sales_b": 12.773,
+   "sales_pct": -1.5,
+   "us_pct": -3.6,
+   "intl_pct": -0.2,
+   "gross_margin": 80.72,
+   "gross_margin_bp": -199.3,
+   "pretax_margin": 31.34,
+   "pretax_margin_bp": -995.4,
+   "eps_q": 0.45,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 6444.0,
+   "cash_return_text": "$2.9 billion of common stock repurchased to date in 2014",
+   "next_print": "Q3 2014 print (late October)"
+  },
+  {
+   "quarter": "Q3 2014",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-10-28",
+   "source": "PF50",
+   "release": "Oct 28",
+   "release_time": "before the open on Oct 28: 8-K accepted 09:01 ET",
+   "raw": {
+    "rev_m": 12361,
+    "rev_prior_m": 12643,
+    "cos_m": 2368,
+    "cos_prior_m": 2287,
+    "pretax_m": 3587,
+    "pretax_prior_m": 3573,
+    "us_m": 4842,
+    "us_prior_m": 5186,
+    "intl_m": 7519,
+    "intl_prior_m": 7457,
+    "diluted_shares_m": 6403
+   },
+   "sales_b": 12.361,
+   "sales_pct": -2.2,
+   "us_pct": -6.6,
+   "intl_pct": 0.8,
+   "gross_margin": 80.84,
+   "gross_margin_bp": -106.8,
+   "pretax_margin": 29.02,
+   "pretax_margin_bp": 75.8,
+   "eps_q": 0.42,
+   "eps_q_prior": 0.39,
+   "diluted_shares_m": 6403.0,
+   "cash_return_text": "$4.2 billion of common stock repurchased to date in 2014",
+   "next_print": "Q4 2014 print (late January)"
+  },
+  {
+   "quarter": "Q4 2014",
+   "fy": 2014,
+   "q": 4,
+   "published": "2015-01-27",
+   "source": "PF51",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 08:43 ET",
+   "raw": {
+    "rev_m": 13118,
+    "rev_prior_m": 13558,
+    "cos_m": 2701,
+    "cos_prior_m": 2794,
+    "pretax_m": 1803,
+    "pretax_prior_m": 3061,
+    "us_m": 5050,
+    "us_prior_m": 5084,
+    "intl_m": 8068,
+    "intl_prior_m": 8474,
+    "diluted_shares_m": 6374
+   },
+   "sales_b": 13.118,
+   "sales_pct": -3.2,
+   "us_pct": -0.7,
+   "intl_pct": -4.8,
+   "gross_margin": 79.41,
+   "gross_margin_bp": 1.8,
+   "pretax_margin": 13.74,
+   "pretax_margin_bp": -883.3,
+   "eps_q": 0.2,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 6374.0,
+   "cash_return_text": "$1.2 billion of common stock repurchased in the quarter, $5.0 billion in 2014",
+   "next_print": "Q1 2015 print (early May)",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 1.41,
+    "revenue_usd_b": 49.605,
+    "diluted_shares_m": 6424.0,
+    "normalization_note": "FY2014 $1.41 from continuing operations (Q4 2014 release; $1.42 with discontinued operations); kept: after-tax acquisition-related costs and certain significant items of $0.45 a share against $1.41 (Q4 2014 release: $0.02 and $0.43)",
+    "gross_margin": 80.69,
+    "pretax_margin": 24.67,
+    "pretax_margin_note": "FY14 income from continuing operations before taxes $12,240M / revenues $49,605M (Q4 2014 release)",
+    "sales_growth": -3.8,
+    "us_pct": -5.9,
+    "intl_pct": -2.5,
+    "tax_rate": 0.2549,
+    "tax_note": "FY14 provision for taxes $3,120M / income from continuing operations before taxes $12,240M"
+   }
+  },
+  {
+   "quarter": "Q1 2015",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-04-28",
+   "source": "PF53",
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 09:00 ET",
+   "raw": {
+    "rev_m": 10864,
+    "rev_prior_m": 11353,
+    "cos_m": 1838,
+    "cos_prior_m": 2045,
+    "pretax_m": 3082,
+    "pretax_prior_m": 2847,
+    "us_m": 4433,
+    "us_prior_m": 4275,
+    "intl_m": 6430,
+    "intl_prior_m": 7078,
+    "diluted_shares_m": 6292
+   },
+   "sales_b": 10.864,
+   "sales_pct": -4.3,
+   "us_pct": 3.7,
+   "intl_pct": -9.2,
+   "gross_margin": 83.08,
+   "gross_margin_bp": 109.5,
+   "pretax_margin": 28.37,
+   "pretax_margin_bp": 329.2,
+   "eps_q": 0.38,
+   "eps_q_prior": 0.35,
+   "diluted_shares_m": 6292.0,
+   "cash_return_text": "$6.0 billion of common stock repurchased in the quarter, including a $5.0 billion accelerated share repurchase agreement",
+   "next_print": "Q2 2015 print (late July)",
+   "note": "U.S. $4,433M and international $6,430M add to $10,863M, $1M under the worldwide $10,864M (the release's rounding, as published)"
+  },
+  {
+   "quarter": "Q2 2015",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-07-28",
+   "source": "PF54",
+   "release": "Jul 28",
+   "release_time": "before the open on Jul 28: 8-K accepted 08:51 ET",
+   "raw": {
+    "rev_m": 11853,
+    "rev_prior_m": 12773,
+    "cos_m": 2180,
+    "cos_prior_m": 2462,
+    "pretax_m": 3539,
+    "pretax_prior_m": 4003,
+    "us_m": 4994,
+    "us_prior_m": 4906,
+    "intl_m": 6859,
+    "intl_prior_m": 7867,
+    "diluted_shares_m": 6243
+   },
+   "sales_b": 11.853,
+   "sales_pct": -7.2,
+   "us_pct": 1.8,
+   "intl_pct": -12.8,
+   "gross_margin": 81.61,
+   "gross_margin_bp": 88.3,
+   "pretax_margin": 29.86,
+   "pretax_margin_bp": -148.2,
+   "eps_q": 0.42,
+   "eps_q_prior": 0.45,
+   "diluted_shares_m": 6243.0,
+   "cash_return_text": "a $5.0 billion accelerated share repurchase agreement executed in February 2015, settled with a $0.2 billion cash payment in July 2015",
+   "next_print": "Q3 2015 print (late October)"
+  },
+  {
+   "quarter": "Q3 2015",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-10-27",
+   "source": "PF55",
+   "release": "Oct 27",
+   "release_time": "before the open on Oct 27: 8-K accepted 09:08 ET",
+   "raw": {
+    "rev_m": 12087,
+    "rev_prior_m": 12361,
+    "cos_m": 2219,
+    "cos_prior_m": 2368,
+    "pretax_m": 2697,
+    "pretax_prior_m": 3587,
+    "us_m": 5565,
+    "us_prior_m": 4842,
+    "intl_m": 6522,
+    "intl_prior_m": 7519,
+    "diluted_shares_m": 6243
+   },
+   "sales_b": 12.087,
+   "sales_pct": -2.2,
+   "us_pct": 14.9,
+   "intl_pct": -13.3,
+   "gross_margin": 81.64,
+   "gross_margin_bp": 79.8,
+   "pretax_margin": 22.31,
+   "pretax_margin_bp": -670.5,
+   "eps_q": 0.34,
+   "eps_q_prior": 0.42,
+   "diluted_shares_m": 6243.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2015 print (late January)",
+   "note": "legacy Hospira operations from the 2015-09-03 acquisition are in the quarter, not in the year-ago one (as published)"
+  },
+  {
+   "quarter": "Q4 2015",
+   "fy": 2015,
+   "q": 4,
+   "published": "2016-02-02",
+   "source": "PF56",
+   "release": "Feb 2",
+   "release_time": "before the open on Feb 2: 8-K accepted 08:52 ET",
+   "raw": {
+    "rev_m": 14047,
+    "rev_prior_m": 13118,
+    "cos_m": 3410,
+    "cos_prior_m": 2701,
+    "pretax_m": 431,
+    "pretax_prior_m": 1803,
+    "us_m": 6711,
+    "us_prior_m": 5050,
+    "intl_m": 7336,
+    "intl_prior_m": 8068,
+    "diluted_shares_m": 6249
+   },
+   "sales_b": 14.047,
+   "sales_pct": 7.1,
+   "us_pct": 32.9,
+   "intl_pct": -9.1,
+   "gross_margin": 75.72,
+   "gross_margin_bp": -368.6,
+   "pretax_margin": 3.07,
+   "pretax_margin_bp": -1067.6,
+   "eps_q": 0.1,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 6249.0,
+   "cash_return_text": "a $5 billion accelerated share repurchase agreement expected in the first half of 2016",
+   "next_print": "Q1 2016 print (late April)",
+   "note": "legacy Hospira operations are in the quarter, not in the year-ago one (as published)",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 1.24,
+    "revenue_usd_b": 48.851,
+    "diluted_shares_m": 6257.0,
+    "normalization_note": "FY2015 $1.24 from continuing operations (Q4 2015 release); kept: after-tax acquisition-related costs and certain significant items of $0.50 a share against $1.24 (Q4 2015 release: $0.09 and $0.41)",
+    "gross_margin": 80.25,
+    "pretax_margin": 19.96,
+    "pretax_margin_note": "FY15 income from continuing operations before taxes $9,749M / revenues $48,851M (Q4 2015 release)",
+    "sales_growth": -1.5,
+    "us_pct": 13.8,
+    "intl_pct": -11.1,
+    "tax_rate": 0.2041,
+    "tax_note": "FY15 provision for taxes $1,990M / income from continuing operations before taxes $9,749M"
+   },
+   "reissued": {
+    "published": "2016-02-16",
+    "source": "PF57",
+    "release_time": "before the open on Feb 16: 8-K accepted 07:37 ET",
+    "raw": {
+     "pretax_m": -354,
+     "diluted_shares_m": 6174
+    },
+    "pretax_margin": -2.52,
+    "pretax_margin_bp": -1626.5,
+    "eps_q": -0.03,
+    "diluted_shares_m": 6174.0,
+    "note": "legacy Hospira operations are in the quarter, not in the year-ago one; GAAP results reissued on 2016-02-16 for a $784.6 million charge to resolve the Protonix Medicaid rebate claims (as published)",
+    "fy_actual": {
+     "eps_normalized": 1.11,
+     "normalization_note": "FY2015 $1.11 from continuing operations as reissued for the $784.6 million charge (8-K of 2016-02-16; $1.24 in the Q4 2015 release); kept: the release's $0.50 a share of acquisition-related costs and certain significant items plus the $0.13 the charge takes off EPS, $0.63 against $1.11",
+     "pretax_margin": 18.35,
+     "pretax_margin_note": "FY15 income from continuing operations before taxes $8,965M / revenues $48,851M (8-K of 2016-02-16)",
+     "tax_rate": 0.222,
+     "tax_note": "FY15 provision for taxes $1,990M / income from continuing operations before taxes $8,965M (as reissued)"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2016",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-05-03",
+   "source": "PF59",
+   "release": "May 3",
+   "release_time": "before the open on May 3: 8-K accepted 08:51 ET",
+   "raw": {
+    "rev_m": 13005,
+    "rev_prior_m": 10864,
+    "cos_m": 2851,
+    "cos_prior_m": 1838,
+    "pretax_m": 3561,
+    "pretax_prior_m": 3082,
+    "us_m": 6625,
+    "us_prior_m": 4433,
+    "intl_m": 6380,
+    "intl_prior_m": 6430,
+    "diluted_shares_m": 6214
+   },
+   "sales_b": 13.005,
+   "sales_pct": 19.7,
+   "us_pct": 49.4,
+   "intl_pct": -0.8,
+   "gross_margin": 78.08,
+   "gross_margin_bp": -500.4,
+   "pretax_margin": 27.38,
+   "pretax_margin_bp": -98.7,
+   "eps_q": 0.49,
+   "eps_q_prior": 0.38,
+   "diluted_shares_m": 6214.0,
+   "cash_return_text": "a $5 billion accelerated share repurchase agreement entered into in March 2016",
+   "next_print": "Q2 2016 print (late July)",
+   "note": "legacy Hospira operations are in the quarter, not in the year-ago one; the year-ago U.S. $4,433M and international $6,430M add to $10,863M, $1M under the worldwide $10,864M (the release's rounding, as published)"
+  },
+  {
+   "quarter": "Q2 2016",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-08-02",
+   "source": "PF60",
+   "release": "Aug 2",
+   "release_time": "before the open on Aug 2: 8-K accepted 08:55 ET",
+   "raw": {
+    "rev_m": 13147,
+    "rev_prior_m": 11853,
+    "cos_m": 3174,
+    "cos_prior_m": 2180,
+    "pretax_m": 2410,
+    "pretax_prior_m": 3539,
+    "us_m": 6335,
+    "us_prior_m": 4994,
+    "intl_m": 6812,
+    "intl_prior_m": 6859,
+    "diluted_shares_m": 6137
+   },
+   "sales_b": 13.147,
+   "sales_pct": 10.9,
+   "us_pct": 26.9,
+   "intl_pct": -0.7,
+   "gross_margin": 75.86,
+   "gross_margin_bp": -575.0,
+   "pretax_margin": 18.33,
+   "pretax_margin_bp": -1152.6,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.42,
+   "diluted_shares_m": 6137.0,
+   "cash_return_text": "$8.7 billion returned through dividends and share repurchases in the first half of 2016",
+   "next_print": "Q3 2016 print (late October)",
+   "note": "legacy Hospira operations are in the quarter, not in the year-ago one (as published)"
+  },
+  {
+   "quarter": "Q3 2016",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-11-01",
+   "source": "PF61",
+   "release": "Nov 1",
+   "release_time": "before the open on Nov 1: 8-K accepted 08:49 ET",
+   "raw": {
+    "rev_m": 13045,
+    "rev_prior_m": 12087,
+    "cos_m": 3085,
+    "cos_prior_m": 2219,
+    "pretax_m": 1604,
+    "pretax_prior_m": 2697,
+    "us_m": 6530,
+    "us_prior_m": 5565,
+    "intl_m": 6515,
+    "intl_prior_m": 6522,
+    "diluted_shares_m": 6138
+   },
+   "sales_b": 13.045,
+   "sales_pct": 7.9,
+   "us_pct": 17.3,
+   "intl_pct": -0.1,
+   "gross_margin": 76.35,
+   "gross_margin_bp": -529.0,
+   "pretax_margin": 12.3,
+   "pretax_margin_bp": -1001.7,
+   "eps_q": 0.22,
+   "eps_q_prior": 0.34,
+   "diluted_shares_m": 6138.0,
+   "cash_return_text": "$10.5 billion returned through dividends and share repurchases in the first nine months of 2016",
+   "next_print": "Q4 2016 print (early February)"
+  },
+  {
+   "quarter": "Q4 2016",
+   "fy": 2016,
+   "q": 4,
+   "published": "2017-01-31",
+   "source": "PF62",
+   "release": "Jan 31",
+   "release_time": "before the open on Jan 31: 8-K accepted 08:42 ET",
+   "raw": {
+    "rev_m": 13627,
+    "rev_prior_m": 14047,
+    "cos_m": 3218,
+    "cos_prior_m": 3410,
+    "pretax_m": 777,
+    "pretax_prior_m": -354,
+    "us_m": 6808,
+    "us_prior_m": 6711,
+    "intl_m": 6819,
+    "intl_prior_m": 7336,
+    "diluted_shares_m": 6144
+   },
+   "sales_b": 13.627,
+   "sales_pct": -3.0,
+   "us_pct": 1.4,
+   "intl_pct": -7.0,
+   "gross_margin": 76.39,
+   "gross_margin_bp": 66.1,
+   "pretax_margin": 5.7,
+   "pretax_margin_bp": 822.2,
+   "eps_q": 0.12,
+   "eps_q_prior": -0.03,
+   "diluted_shares_m": 6144.0,
+   "cash_return_text": "$12.3 billion returned through dividends and share repurchases in 2016",
+   "next_print": "Q1 2017 print (early May)",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 1.17,
+    "revenue_usd_b": 52.824,
+    "diluted_shares_m": 6159.0,
+    "normalization_note": "FY2016 $1.17 from continuing operations (Q4 2016 release); kept: after-tax acquisition-related costs and certain significant items of $0.75 a share against $1.17 (Q4 2016 release: $0.11 and $0.64)",
+    "gross_margin": 76.66,
+    "pretax_margin": 15.81,
+    "pretax_margin_note": "FY16 income from continuing operations before taxes $8,351M / revenues $52,824M (Q4 2016 release)",
+    "sales_growth": 8.1,
+    "us_pct": 21.5,
+    "intl_pct": -2.5,
+    "tax_rate": 0.1345,
+    "tax_note": "FY16 provision for taxes $1,123M / income from continuing operations before taxes $8,351M"
+   }
+  },
+  {
+   "quarter": "Q1 2017",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-05-02",
+   "source": "PF64",
+   "release": "May 2",
+   "release_time": "before the open on May 2: 8-K accepted 09:29 ET",
+   "raw": {
+    "rev_m": 12779,
+    "rev_prior_m": 13005,
+    "cos_m": 2470,
+    "cos_prior_m": 2851,
+    "pretax_m": 3951,
+    "pretax_prior_m": 3561,
+    "us_m": 6637,
+    "us_prior_m": 6661,
+    "intl_m": 6142,
+    "intl_prior_m": 6344,
+    "diluted_shares_m": 6092
+   },
+   "sales_b": 12.779,
+   "sales_pct": -1.7,
+   "us_pct": -0.4,
+   "intl_pct": -3.2,
+   "gross_margin": 80.67,
+   "gross_margin_bp": 259.4,
+   "pretax_margin": 30.92,
+   "pretax_margin_bp": 353.6,
+   "eps_q": 0.51,
+   "eps_q_prior": 0.49,
+   "diluted_shares_m": 6092.0,
+   "cash_return_text": "$6.9 billion returned in the quarter, including a $5.0 billion accelerated share repurchase agreement executed in February 2017",
+   "next_print": "Q2 2017 print (early August)"
+  },
+  {
+   "quarter": "Q2 2017",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-08-01",
+   "source": "PF65",
+   "release": "Aug 1",
+   "release_time": "before the open on Aug 1: 8-K accepted 08:57 ET",
+   "raw": {
+    "rev_m": 12896,
+    "rev_prior_m": 13147,
+    "cos_m": 2663,
+    "cos_prior_m": 3174,
+    "pretax_m": 3815,
+    "pretax_prior_m": 2410,
+    "us_m": 6345,
+    "us_prior_m": 6370,
+    "intl_m": 6551,
+    "intl_prior_m": 6777,
+    "diluted_shares_m": 6037
+   },
+   "sales_b": 12.896,
+   "sales_pct": -1.9,
+   "us_pct": -0.4,
+   "intl_pct": -3.3,
+   "gross_margin": 79.35,
+   "gross_margin_bp": 349.3,
+   "pretax_margin": 29.58,
+   "pretax_margin_bp": 1125.2,
+   "eps_q": 0.51,
+   "eps_q_prior": 0.33,
+   "diluted_shares_m": 6037.0,
+   "cash_return_text": "$8.9 billion returned in the first six months of 2017",
+   "next_print": "Q3 2017 print (early November)"
+  },
+  {
+   "quarter": "Q3 2017",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-10-31",
+   "source": "PF66",
+   "release": "Oct 31",
+   "release_time": "before the open on Oct 31: 8-K accepted 08:57 ET",
+   "raw": {
+    "rev_m": 13168,
+    "rev_prior_m": 13045,
+    "cos_m": 2847,
+    "cos_prior_m": 3085,
+    "pretax_m": 3585,
+    "pretax_prior_m": 1604,
+    "us_m": 6534,
+    "us_prior_m": 6530,
+    "intl_m": 6634,
+    "intl_prior_m": 6515,
+    "diluted_shares_m": 6041
+   },
+   "sales_b": 13.168,
+   "sales_pct": 0.9,
+   "us_pct": 0.1,
+   "intl_pct": 1.8,
+   "gross_margin": 78.38,
+   "gross_margin_bp": 202.8,
+   "pretax_margin": 27.23,
+   "pretax_margin_bp": 1492.9,
+   "eps_q": 0.47,
+   "eps_q_prior": 0.22,
+   "diluted_shares_m": 6041.0,
+   "cash_return_text": "$10.8 billion returned in the first nine months of 2017",
+   "next_print": "Q4 2017 print (late January)"
   }
  ],
  "guides": [
@@ -2819,6 +4261,304 @@
     2.2
    ],
    "note": "reported EPS includes the gain on disposal of Zoetis"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-28",
+   "source": "PF46",
+   "doc": "Q4 2013 release",
+   "rev_guide_usd_b": [
+    49.2,
+    51.2
+   ],
+   "rev_label": "adjusted revenues",
+   "eps_guide": [
+    1.57,
+    1.72
+   ],
+   "eps_adj": [
+    2.2,
+    2.3
+   ],
+   "note": "adjusted revenues, the release's only revenue range (they exclude the transitional supply revenues with Zoetis)"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-05-05",
+   "source": "PF48",
+   "doc": "Q1 2014 release",
+   "rev_guide_usd_b": [
+    49.2,
+    51.2
+   ],
+   "rev_label": "adjusted revenues",
+   "eps_adj": [
+    2.2,
+    2.3
+   ],
+   "note": "adjusted guidance confirmed; the reported EPS guide withdrawn while the UK Takeover Code applied to the proposed combination with AstraZeneca",
+   "withdrawn": [
+    "eps_guide"
+   ],
+   "withdrawn_quote": "Pfizer's previously-issued 2014 reported diluted EPS guidance is no longer valid"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-07-29",
+   "source": "PF49",
+   "doc": "Q2 2014 release",
+   "rev_guide_usd_b": [
+    48.7,
+    50.7
+   ],
+   "rev_label": "adjusted revenues",
+   "eps_guide": [
+    1.47,
+    1.62
+   ],
+   "eps_adj": [
+    2.2,
+    2.3
+   ],
+   "note": "reported EPS lowered for 'charges related to certain legal matters, primarily related to Neurontin'"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-10-28",
+   "source": "PF50",
+   "doc": "Q3 2014 release",
+   "rev_guide_usd_b": [
+    48.7,
+    49.7
+   ],
+   "rev_label": "adjusted revenues",
+   "eps_guide": [
+    1.5,
+    1.59
+   ],
+   "eps_adj": [
+    2.23,
+    2.27
+   ]
+  },
+  {
+   "fy": 2015,
+   "published": "2015-01-27",
+   "source": "PF51",
+   "doc": "Q4 2014 release",
+   "rev_guide_usd_b": [
+    44.5,
+    46.5
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.37,
+    1.52
+   ],
+   "eps_adj": [
+    2.0,
+    2.1
+   ],
+   "note": "at mid-January 2015 exchange rates, $2.8 billion of revenues and $0.17 of EPS below 2014's"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-04-28",
+   "source": "PF53",
+   "doc": "Q1 2015 release",
+   "rev_guide_usd_b": [
+    44.0,
+    46.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.32,
+    1.47
+   ],
+   "eps_adj": [
+    1.95,
+    2.05
+   ],
+   "note": "updated solely for exchange rates"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-07-28",
+   "source": "PF54",
+   "doc": "Q2 2015 release",
+   "rev_guide_usd_b": [
+    45.0,
+    46.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.38,
+    1.47
+   ],
+   "eps_adj": [
+    2.01,
+    2.07
+   ]
+  },
+  {
+   "fy": 2015,
+   "published": "2015-10-27",
+   "source": "PF55",
+   "doc": "Q3 2015 release",
+   "rev_guide_usd_b": [
+    47.5,
+    48.5
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.37,
+    1.43
+   ],
+   "eps_adj": [
+    2.16,
+    2.2
+   ],
+   "note": "with legacy Hospira operations from 2015-09-03 (an update of 2015-09-30 was not filed)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-02-02",
+   "source": "PF56",
+   "doc": "Q4 2015 release",
+   "rev_guide_usd_b": [
+    49.0,
+    51.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.54,
+    1.67
+   ],
+   "eps_adj": [
+    2.2,
+    2.3
+   ],
+   "note": "includes the estimated Venezuela currency impact; excludes the pending combination with Allergan"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-05-03",
+   "source": "PF59",
+   "doc": "Q1 2016 release",
+   "rev_guide_usd_b": [
+    51.0,
+    53.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.72,
+    1.85
+   ],
+   "eps_adj": [
+    2.38,
+    2.48
+   ]
+  },
+  {
+   "fy": 2016,
+   "published": "2016-08-02",
+   "source": "PF60",
+   "doc": "Q2 2016 release",
+   "rev_guide_usd_b": [
+    51.0,
+    53.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.38,
+    2.48
+   ],
+   "note": "reaffirmed for revenues and adjusted EPS only",
+   "withdrawn": [
+    "eps_guide"
+   ],
+   "withdrawn_quote": "Pfizer does not provide guidance for GAAP Reported financial measures (other than Revenues)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-11-01",
+   "source": "PF61",
+   "doc": "Q3 2016 release",
+   "rev_guide_usd_b": [
+    52.0,
+    53.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.38,
+    2.43
+   ],
+   "eps_none": "Pfizer does not provide guidance for GAAP Reported financial measures (other than Revenues)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-01-31",
+   "source": "PF62",
+   "doc": "Q4 2016 release",
+   "rev_guide_usd_b": [
+    52.0,
+    54.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.5,
+    2.6
+   ],
+   "note": "reflects the pending disposition of Hospira Infusion Systems, $1.2 billion of 2016 revenues",
+   "eps_none": "Pfizer does not provide guidance for GAAP Reported financial measures (other than Revenues)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-05-02",
+   "source": "PF64",
+   "doc": "Q1 2017 release",
+   "rev_guide_usd_b": [
+    52.0,
+    54.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.5,
+    2.6
+   ],
+   "eps_none": "Pfizer does not provide guidance for GAAP Reported financial measures (other than Revenues)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-08-01",
+   "source": "PF65",
+   "doc": "Q2 2017 release",
+   "rev_guide_usd_b": [
+    52.0,
+    54.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.54,
+    2.6
+   ],
+   "eps_none": "Pfizer does not provide guidance for GAAP Reported financial measures (other than Revenues)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-10-31",
+   "source": "PF66",
+   "doc": "Q3 2017 release",
+   "rev_guide_usd_b": [
+    52.4,
+    53.1
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.58,
+    2.62
+   ],
+   "eps_none": "Pfizer does not provide guidance for GAAP Reported financial measures (other than Revenues)"
   }
  ],
  "dividends": [
@@ -2833,6 +4573,24 @@
    "source": "PF18",
    "quarterly": 0.16,
    "note": "$0.16 quarterly from the second-quarter 2009 dividend ('it will reduce Pfizer's quarterly dividend per share to $0.16', Wyeth acquisition 8-K, accepted 2009-01-26 17:22 ET)"
+  },
+  {
+   "published": "2015-01-27",
+   "source": "PF51",
+   "quarterly": 0.28,
+   "note": "$0.28 quarterly ('declared a 28-cent first-quarter 2015 dividend', Q4 2014 release)"
+  },
+  {
+   "published": "2016-02-02",
+   "source": "PF56",
+   "quarterly": 0.3,
+   "note": "$0.30 quarterly ('declared a 30-cent first-quarter 2016 dividend', Q4 2015 release)"
+  },
+  {
+   "published": "2017-01-31",
+   "source": "PF62",
+   "quarterly": 0.32,
+   "note": "$0.32 quarterly ('declared a 32-cent first-quarter 2017 dividend', Q4 2016 release)"
   }
  ],
  "events": [],
