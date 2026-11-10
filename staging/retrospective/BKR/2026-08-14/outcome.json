@@ -1,0 +1,32 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "BKR",
+ "as_of": "2026-08-14",
+ "computed": "2026-11-10",
+ "data_source": "Yahoo Finance daily closes + dividends (BKR, benchmark SPY)",
+ "horizons": {},
+ "within_2y": {
+  "high": {
+   "date": "2026-08-17",
+   "price": 64.9
+  },
+  "low": {
+   "date": "2026-11-05",
+   "price": 46.2
+  },
+  "max_drawdown_pct": -28.8,
+  "return_to_avg_price_m12_m24_pct": null
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Baker Hughes: oilfield services + LNG equipment; leverage post-Chart",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

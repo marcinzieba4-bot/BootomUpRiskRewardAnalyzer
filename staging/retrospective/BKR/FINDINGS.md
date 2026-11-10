@@ -2,7 +2,8 @@
 
 Patterns seen in `outcome.json` for the BKR weekly dates: 497 from 2008-01-04 to 2017-06-30, all Baker Hughes Incorporated (NYSE: BHI).
 The 153 dates of 2019-02-01 to 2021-12-31 are a different company (Baker Hughes, a GE company, then Baker Hughes Company) and have their
-own section, "2019-2021", with its own notes on dividends and horizons.
+own section, "2019-2021", with its own notes on dividends and horizons; the 253 dates of 2022-01-07 to 2026-11-06 follow in "2022-2026", where
+only 149 have a two-year outcome so far.
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed and pushed (2008-2009: 2b07c92; 2010-2013: 57e05a9; 2014-2017: e026e58). Outcomes were computed on
 2026-11-10 from the closes posted to 2026-11-09; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-06-30).
@@ -434,6 +435,96 @@ those of 2020 and 2021 dates fall in 2022 and 2023.
 - **The entry price ranked the two-year return best** in every year (-0.66 to -0.82; -0.80 over all 153), as in every earlier section.
   The proxy composite ranked it -0.53, +0.15 and +0.18 by year.
 
+## 2022-2026: Baker Hughes Company (253 dates, 2022-01-07 to 2026-11-06)
+
+Scored only after the point-in-time build was committed and pushed (9fcc596) and the firewall had passed at its 28 cutoffs. Outcomes
+were computed on 2026-11-10 from the closes posted to 2026-11-09, so the horizons are incomplete: 149 dates have a two-year outcome (to
+2024-11-08), 96 a three-year one (to 2023-11-03), 201 a one-year one (to 2025-11-07) and 227 a six-month one. **Nothing below judges a
+2025 or 2026 call:** those dates have no two-year outcome yet. Dividends are $0.18 to $0.23 a quarter; no split or special dividend.
+
+**Hindsight the model could not see:** the 2022 sell-off (low close $20.45, in the two-year window of the early-2022 dates), then a rise to $69
+in 2026; two-year endpoints of 2023 dates fall in 2025, of 2024 dates in 2026.
+
+### 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 23 | +45.5% | +14.0% to +80.1% | 18 | 17 | +28.7% | 21 |
+| class FAIR | 5 | +53.0% | +36.7% to +58.5% | 5 | 2 | +19.3% | 3 |
+| class RICH | 24 | +3.7% | -12.8% to +53.5% | 3 | 2 | -0.9% | 20 |
+| legacy tier BUY | 32 | +45.5% | +12.1% to +80.1% | 25 | 20 | +25.0% | 26 |
+| legacy tier ACCUMULATE | 6 | +12.1% | +4.3% to +47.4% | 1 | 1 | +10.5% | 4 |
+| legacy tier WATCHLIST | 1 | +5.0% | +5.0% to +5.0% | 0 | 0 | +2.0% | 1 |
+| legacy tier AVOID | 13 | -4.6% | -12.8% to +3.7% | 0 | 0 | -11.0% | 13 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-14; 1 CHEAP, 1 RICH) | 2 | +33.7% | +20.3% to +33.7% | 1 | 2 | +23.8% | 1 |
+| latest print Q4 2021 (2022-01-21 to 2022-04-14; 10 RICH, 3 CHEAP) | 13 | -3.9% | -12.8% to +18.2% | 0 | 3 | -3.4% | 13 |
+| latest print Q1 2022 (2022-04-21 to 2022-07-15; 10 RICH, 3 CHEAP) | 13 | +5.0% | -10.8% to +39.7% | 1 | 0 | +2.0% | 11 |
+| latest print Q2 2022 (2022-07-21 to 2022-10-14; 13 CHEAP) | 13 | +50.0% | +39.8% to +80.1% | 13 | 12 | +33.9% | 13 |
+| latest print Q3 2022 (2022-10-20 to 2022-12-30; 5 FAIR, 3 CHEAP, 3 RICH) | 11 | +47.4% | +36.7% to +58.8% | 11 | 4 | +19.3% | 6 |
+
+- **The calls held on 44 of 52: the best year of the whole BKR series for the classes.** RICH (the first-half highs, $29-39) held on
+  20 of 24 and returned a median +3.7% over two years; CHEAP (the summer lows) held on 21 of 23 at a median +45.5%. All 13 AVOID dates
+  missed the hurdle and SPY. Over six months CHEAP beat SPY on 22 of 23 dates and RICH on 2 of 24.
+- **Why it worked:** with the EPS fixed at $0.45, the class was a reading of the price against its own four-year range, and 2022 was a
+  year when that range held. The misses are at the year's end, where FAIR and RICH dates went on to +37% to +54% but trailed SPY.
+- **Rankings.** Against the two-year total return: the entry price at Spearman -0.81, the EPP gap -0.69, the proxy composite -0.84.
+
+### 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 45 | +37.8% | +19.5% to +71.2% | 32 | 10 | +26.8% | 33 |
+| class FAIR | 1 | +57.1% | +57.1% to +57.1% | 1 | 1 | +19.9% | 1 |
+| class RICH | 6 | +48.4% | +40.2% to +55.7% | 6 | 2 | +14.8% | 0 |
+| legacy tier BUY | 45 | +37.8% | +19.5% to +71.2% | 32 | 10 | +26.8% | 32 |
+| legacy tier ACCUMULATE | 5 | +55.0% | +46.9% to +57.1% | 5 | 3 | +14.8% | 2 |
+| legacy tier WATCHLIST | 2 | +48.4% | +40.2% to +48.4% | 2 | 0 | +15.5% | 0 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-20; 3 RICH) | 3 | +48.4% | +46.9% to +55.0% | 3 | 1 | +13.9% | 0 |
+| latest print Q4 2022 (2023-01-24 to 2023-04-14; 8 CHEAP, 3 RICH, 1 FAIR) | 12 | +55.0% | +30.0% to +71.2% | 11 | 8 | +29.0% | 9 |
+| latest print Q1 2023 (2023-04-20 to 2023-07-14; 13 CHEAP) | 13 | +33.1% | +21.0% to +42.8% | 8 | 1 | +31.7% | 8 |
+| latest print Q2 2023 (2023-07-20 to 2023-10-20; 14 CHEAP) | 14 | +32.8% | +19.5% to +50.6% | 7 | 0 | +14.4% | 7 |
+| latest print Q3 2023 (2023-10-27 to 2023-12-29; 10 CHEAP) | 10 | +47.2% | +37.9% to +53.7% | 10 | 3 | +27.2% | 10 |
+
+- **Held on 34 of 52.** Every date made money over two years (+19.5% to +71.2%) and 39 cleared the hurdle, but only 13 beat SPY (median
+  excess -6.8pp): CHEAP held where it cleared the hurdle, and missed on 12 dates of June to September 2023 (+19.5% to +31.9%, 6-24pp
+  behind SPY). The six RICH dates of January to March all cleared the hurdle and so failed. Over one year only 1 of 52 dates beat SPY.
+- **Rankings:** entry price -0.36, EPP gap -0.29, proxy composite -0.57.
+
+### 2024 (52 dates; 45 with a two-year outcome)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 45 | +82.6% | +15.0% to +123.8% | 44 | 44 | +52.3% | 44 |
+| latest print Q3 2023, EPS $0.45 (2024-01-05 to 2024-01-19) | 3 | +57.7% | +52.1% to +74.3% | 3 | 3 | +38.5% | 3 |
+| latest print Q4 2023, EPS $1.60 (2024-01-25 to 2024-04-19) | 13 | +95.5% | +73.4% to +123.8% | 13 | 13 | +46.7% | 13 |
+| latest print Q1 2024, EPS $1.60 (2024-04-25 to 2024-07-19) | 13 | +97.0% | +59.5% to +121.5% | 13 | 13 | +53.5% | 13 |
+| latest print Q2 2024, EPS $1.60 (2024-07-26 to 2024-10-18) | 13 | +74.3% | +52.4% to +92.5% | 13 | 13 | +57.5% | 13 |
+| latest print Q3 2024, EPS $1.60 (2024-10-24 to 2024-11-08) | 3 | +50.7% | +15.0% to +56.8% | 2 | 2 | +52.6% | 2 |
+
+- **CHEAP on every date and it held on 44 of 45** (median +82.6%, +43.3pp over SPY); the one miss is 2024-11-08 (+15.0%). The seven
+  dates from 2024-11-15 have no two-year outcome yet. Every two-year endpoint landed nearest the BASE price ($47-69), far under BULL
+  ($127-163).
+- **Rankings:** entry price -0.76, EPP gap -0.88, proxy composite -0.57.
+
+### 2025 and 2026 (97 dates): no two-year outcome yet
+
+Not judged. For the record only: the 45 dates of 2025 with a one-year outcome (all CHEAP) returned a median +41.1% and 40 beat SPY; of
+the 19 dates of 2026 with a six-month outcome, the 13 FAIR dates returned a median -6.1% and none beat SPY, the 5 CHEAP a median +10.1%.
+
+### Across 2022-2024 (hypotheses, not rules)
+
+- **The calls held on 122 of 149 dates with an outcome:** CHEAP 98 of 113, FAIR 4 of 6, RICH 20 of 30. Calling every date CHEAP would
+  have held on 114, so the classes added 8 dates, all of them in 2022.
+- **The same machinery that failed in 2019-2021 (65 of 153) held here.** Nothing in the method changed between the two periods; the
+  stock went sideways and then up. Both results say more about the path of one stock than about the rules. Hypothesis unchanged: a
+  class from one stock's short window of its own P/E is mostly "buy lower", and needs many tickers on the same dates to test.
+- **RICH held when the price was high in its own range (2022: 20 of 24) and failed when the business was turning up (2020-2021 and
+  early 2023: 0 of 40).** It has not once held on a date where BASE was negative from a trough quarter.
+- **The switch to the company's adjusted EPS in January 2024 changed no outcome that can be scored yet:** every 2024 date is CHEAP under
+  it and under GAAP alike; the two readings part only from 2024-11-08, where there is one scored date.
+- **The proxy composite ranked the two-year return negatively in every year** (-0.84, -0.57, -0.57), as in 2019: higher signals went
+  with lower returns. A hypothesis for the live model's weighting of trailing growth in a cyclical, to test elsewhere.
+
 ## The encoding calls, seen afterwards
 
 **2008-2009.** No judgement call recorded in retro/README.md ("BKR") moves a class or a tier, so every outcome above is the same under
@@ -506,3 +597,22 @@ the same outcomes. This is hindsight: the class moves were recorded before scori
 No variant rescues 2019. The spread from 10 to 99 of 153 comes from which years are in the EPS history and which share count feeds the
 buyback term: the outcome of this series depends more on those two encoding calls than on anything the company reported. That is a
 reason to treat these 153 labels as weak evidence, not a reason to pick the variant that scored best.
+
+**2022-2026.** Each variant in retro/README.md ("BKR 2022-2026") was rebuilt on every date with one encoding changed, then scored against
+the same outcomes (the 149 dates that have one). This is hindsight: the class moves were recorded before scoring, in 9fcc596.
+
+| Variant | Classes moved (dates with an outcome) | Call held 2022 | 2023 | 2024 | All |
+|---|---|---|---|---|---|
+| as committed | - | 44/52 | 34/52 | 44/45 | 122/149 |
+| GAAP EPS in 2023-2025 | 1 | 44/52 | 34/52 | 45/45 | 123/149 |
+| 2022 not taken from the Q4 2023 release | 1 | 44/52 | 34/52 | 45/45 | 123/149 |
+| adjusted quarters summed for 2018-2022 | 29 | 28/52 | 37/52 | 44/45 | 109/149 |
+| Class A share count alone | 72 | 26/52 | 12/52 | 42/45 | 80/149 |
+| no buyback term | 18 | 37/52 | 31/52 | 44/45 | 112/149 |
+| FY2026 revenue guide not used | 0 | 44/52 | 34/52 | 44/45 | 122/149 |
+| every signal at its BEAR value | 62 | 26/52 | 19/52 | 45/45 | 90/149 |
+| every signal at its XBULL value | 23 | 47/52 | 40/52 | 44/45 | 131/149 |
+
+The EPS calls of 2024 (adjusted against GAAP, 2022 in or out) cannot be told apart yet: they move 50 and 41 classes, all but one on
+dates without an outcome. The share count is again the encoding the result depends on most. The summed-quarters variant, which scored
+best for 2019-2021, scores worse here: no variant is better in both periods.

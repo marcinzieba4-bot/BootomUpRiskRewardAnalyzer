@@ -654,3 +654,256 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $23.68 | - | 2.90 | +0.74 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +48.2% | +43.3pp | +35.4% | ✓ |
 | 2021-12-23 | $24.22 | - | 2.90 | +0.59 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +47.1% | +43.7pp | +32.8% | ✓ |
 | 2021-12-31 | $24.06 | - | 2.90 | +0.62 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +48.3% | +45.5pp | +34.0% | ✓ |
+| 2022-01-07 | $26.12 | - | 2.90 | -0.09 | 0.58x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +33.7% | +30.6pp | +23.8% | ✓ |
+| 2022-01-14 | $27.46 | - | 2.90 | -0.50 | 0.86x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +20.3% | +14.9pp | +17.8% | ✗ |
+| 2022-01-21 | $27.24 | - | 2.95 | +0.00 | 0.48x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +18.2% | +5.1pp | +18.7% | ✓ |
+| 2022-01-28 | $27.16 | - | 2.95 | +0.04 | 0.47x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +17.8% | +4.6pp | +19.0% | ✓ |
+| 2022-02-04 | $26.59 | - | 2.95 | +0.48 | 0.38x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +14.0% | +1.0pp | +21.4% | ✓ |
+| 2022-02-11 | $29.14 | - | 2.95 | -0.61 | 0.90x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +4.3% | -12.4pp | +10.5% | ✓ |
+| 2022-02-18 | $29.11 | - | 2.95 | -0.61 | 0.89x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +5.4% | -12.6pp | +10.5% | ✓ |
+| 2022-02-25 | $29.50 | - | 2.95 | -0.62 | 1.00x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +6.5% | -12.4pp | +9.0% | ✓ |
+| 2022-03-04 | $33.22 | - | 2.95 | -0.85 | 3.68x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.8% | -28.3pp | -3.4% | ✓ |
+| 2022-03-11 | $37.64 | - | 2.95 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -12.8% | -37.5pp | -14.7% | ✓ |
+| 2022-03-18 | $35.29 | - | 2.95 | -0.89 | 17.31x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.9% | -22.2pp | -8.8% | ✓ |
+| 2022-03-25 | $38.72 | - | 2.95 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -10.0% | -27.8pp | -16.6% | ✓ |
+| 2022-04-01 | $36.42 | - | 2.95 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.0% | -22.2pp | -11.0% | ✓ |
+| 2022-04-08 | $37.52 | - | 2.95 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.6% | -23.5pp | -13.4% | ✓ |
+| 2022-04-14 | $37.29 | - | 2.95 | -0.92 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.2% | -26.9pp | -12.6% | ✓ |
+| 2022-04-21 | $32.91 | - | 2.80 | -0.98 | 2.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.7% | -12.3pp | -0.9% | ✓ |
+| 2022-04-29 | $31.02 | - | 2.80 | -0.81 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +12.1% | -14.9pp | +5.4% | ✓ |
+| 2022-05-06 | $32.13 | - | 2.80 | -0.94 | 1.46x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.0% | -23.7pp | +2.0% | ✓ |
+| 2022-05-13 | $34.11 | - | 2.80 | -1.03 | 2.81x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.1% | -32.8pp | -3.6% | ✓ |
+| 2022-05-20 | $34.55 | - | 2.80 | -1.04 | 3.49x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.9% | -38.5pp | -4.6% | ✓ |
+| 2022-05-27 | $37.18 | - | 2.80 | -1.06 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -8.7% | -39.4pp | -11.1% | ✓ |
+| 2022-06-03 | $37.82 | - | 2.80 | -1.06 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -10.8% | -42.6pp | -12.4% | ✓ |
+| 2022-06-10 | $35.23 | - | 2.80 | -1.06 | 5.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.5% | -44.3pp | -5.9% | ✓ |
+| 2022-06-17 | $29.97 | - | 2.80 | -0.77 | 0.56x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +12.1% | -40.6pp | +10.7% | ✓ |
+| 2022-06-24 | $28.47 | - | 2.80 | -0.38 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +26.4% | -16.2pp | +16.8% | ✗ |
+| 2022-07-01 | $29.09 | - | 2.80 | -0.75 | 0.39x | BUY | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +25.5% | -21.0pp | +14.5% | ✓ |
+| 2022-07-08 | $28.47 | - | 2.80 | -0.38 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +25.5% | -20.8pp | +17.1% | ✗ |
+| 2022-07-15 | $26.68 | - | 2.80 | +0.57 | 0.07x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +39.7% | -9.5pp | +25.0% | ✓ |
+| 2022-07-21 | $24.92 | - | 2.50 | +0.46 | -0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +50.5% | +9.5pp | +33.9% | ✓ |
+| 2022-07-29 | $25.69 | - | 2.50 | +0.12 | 0.07x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +55.9% | +20.4pp | +30.0% | ✓ |
+| 2022-08-05 | $24.06 | - | 2.50 | +0.79 | -0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +50.0% | +21.6pp | +38.9% | ✓ |
+| 2022-08-12 | $26.01 | - | 2.50 | -0.10 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +41.3% | +13.3pp | +28.4% | ✓ |
+| 2022-08-19 | $25.16 | - | 2.50 | +0.21 | 0.12x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +46.1% | +10.4pp | +32.8% | ✓ |
+| 2022-08-26 | $26.13 | - | 2.50 | -0.27 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +41.7% | +0.1pp | +27.8% | ✓ |
+| 2022-09-02 | $25.28 | - | 2.50 | +0.19 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +45.5% | -1.7pp | +32.0% | ✓ |
+| 2022-09-09 | $25.25 | - | 2.50 | +0.18 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +39.8% | +2.1pp | +31.9% | ✓ |
+| 2022-09-16 | $23.80 | - | 2.50 | +0.67 | -0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +49.5% | +0.5pp | +39.7% | ✓ |
+| 2022-09-23 | $21.73 | - | 2.50 | +1.15 | -0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +75.1% | +16.6pp | +53.0% | ✓ |
+| 2022-09-30 | $20.96 | - | 2.50 | +1.29 | -0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +80.1% | +15.7pp | +58.6% | ✓ |
+| 2022-10-07 | $22.88 | - | 2.50 | +0.93 | -0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +72.9% | +12.7pp | +45.6% | ✓ |
+| 2022-10-14 | $22.91 | - | 2.50 | +0.88 | -0.01x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +71.3% | +4.1pp | +45.7% | ✓ |
+| 2022-10-20 | $25.95 | - | 2.50 | +0.86 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +46.4% | -17.2pp | +28.7% | ✓ |
+| 2022-10-28 | $27.24 | - | 2.50 | +0.45 | 0.36x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +43.2% | -9.6pp | +22.8% | ✓ |
+| 2022-11-04 | $29.11 | - | 2.50 | -0.40 | 0.62x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +36.7% | -18.3pp | +15.1% | ✗ |
+| 2022-11-11 | $31.02 | - | 2.50 | -1.16 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +47.4% | -6.2pp | +8.5% | ✗ |
+| 2022-11-18 | $29.13 | - | 2.50 | -0.38 | 0.52x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +53.4% | +1.5pp | +16.2% | ✓ |
+| 2022-11-25 | $28.50 | - | 2.50 | -0.05 | 0.43x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +58.5% | +6.6pp | +19.5% | ✓ |
+| 2022-12-02 | $29.51 | - | 2.50 | -0.55 | 0.58x | BUY | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +53.5% | +1.9pp | +15.9% | ✗ |
+| 2022-12-09 | $27.11 | - | 2.50 | +0.44 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +58.8% | +1.6pp | +26.9% | ✓ |
+| 2022-12-16 | $28.37 | - | 2.50 | -0.03 | 0.41x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +53.0% | -8.3pp | +21.9% | ✓ |
+| 2022-12-23 | $29.10 | - | 2.50 | -0.48 | 0.52x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +43.5% | -15.3pp | +19.3% | ✗ |
+| 2022-12-30 | $29.53 | - | 2.50 | -0.69 | 0.58x | BUY | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +44.1% | -13.3pp | +17.9% | ✗ |
+| 2023-01-06 | $29.96 | - | 2.50 | -0.89 | 0.66x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +48.4% | -8.6pp | +16.6% | ✗ |
+| 2023-01-13 | $31.63 | - | 2.50 | -1.19 | 1.04x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +46.9% | -2.5pp | +11.1% | ✗ |
+| 2023-01-20 | $31.07 | - | 2.50 | -1.18 | 0.89x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +55.0% | +0.6pp | +13.9% | ✗ |
+| 2023-01-24 | $30.15 | - | 2.65 | +0.20 | 0.66x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +56.5% | +1.1pp | +18.1% | ✓ |
+| 2023-02-03 | $31.37 | - | 2.65 | -0.53 | 0.87x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +55.7% | +7.4pp | +14.8% | ✗ |
+| 2023-02-10 | $32.92 | - | 2.65 | -1.13 | 1.23x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +48.4% | -3.2pp | +10.5% | ✗ |
+| 2023-02-17 | $30.59 | - | 2.65 | -0.47 | 0.81x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +57.1% | +4.0pp | +19.9% | ✓ |
+| 2023-02-24 | $30.38 | - | 2.65 | -0.37 | 0.77x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +52.3% | -1.8pp | +21.7% | ✓ |
+| 2023-03-03 | $32.28 | - | 2.65 | -0.92 | 1.20x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +40.2% | -7.6pp | +15.5% | ✗ |
+| 2023-03-10 | $29.07 | - | 2.65 | +0.37 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +47.3% | -1.5pp | +29.0% | ✓ |
+| 2023-03-17 | $26.92 | - | 2.65 | +1.03 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +69.2% | +20.6pp | +40.1% | ✓ |
+| 2023-03-24 | $27.02 | - | 2.65 | +1.01 | 0.31x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +71.2% | +22.6pp | +40.4% | ✓ |
+| 2023-03-31 | $28.86 | - | 2.65 | +0.44 | 0.44x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +55.0% | +15.9pp | +32.1% | ✓ |
+| 2023-04-06 | $28.51 | - | 2.65 | +0.56 | 0.39x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +30.0% | +3.1pp | +34.3% | ✓ |
+| 2023-04-14 | $29.15 | - | 2.65 | +0.34 | 0.47x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +35.4% | +1.3pp | +31.5% | ✓ |
+| 2023-04-20 | $30.09 | - | 2.85 | +1.34 | 0.34x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +34.8% | +3.7pp | +27.8% | ✓ |
+| 2023-04-28 | $29.24 | - | 2.85 | +1.45 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +29.5% | -6.3pp | +31.8% | ✗ |
+| 2023-05-05 | $28.22 | - | 2.85 | +1.56 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +36.1% | -3.8pp | +36.8% | ✓ |
+| 2023-05-12 | $27.66 | - | 2.85 | +1.61 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +42.8% | -2.2pp | +39.9% | ✓ |
+| 2023-05-19 | $28.17 | - | 2.85 | +1.56 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +41.3% | -4.1pp | +37.7% | ✓ |
+| 2023-05-26 | $27.89 | - | 2.85 | +1.59 | 0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +37.8% | -3.4pp | +39.5% | ✓ |
+| 2023-06-02 | $29.58 | - | 2.85 | +1.39 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +31.9% | -9.8pp | +31.7% | ✗ |
+| 2023-06-09 | $30.01 | - | 2.85 | +1.33 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +33.4% | -9.3pp | +30.2% | ✓ |
+| 2023-06-16 | $30.57 | - | 2.85 | +1.26 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +33.1% | -6.8pp | +28.3% | ✓ |
+| 2023-06-23 | $29.77 | - | 2.85 | +1.38 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +32.8% | -9.0pp | +32.1% | ✓ |
+| 2023-06-30 | $31.61 | - | 2.85 | +1.09 | 0.34x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +26.7% | -15.9pp | +24.6% | ✗ |
+| 2023-07-07 | $33.11 | - | 2.85 | +0.58 | 0.48x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +23.2% | -21.5pp | +19.2% | ✗ |
+| 2023-07-14 | $34.35 | - | 2.85 | +0.31 | 0.61x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +21.0% | -21.2pp | +15.2% | ✗ |
+| 2023-07-20 | $34.66 | - | 3.30 | +1.36 | 0.45x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +19.5% | -22.4pp | +14.4% | ✗ |
+| 2023-07-28 | $35.42 | - | 3.30 | +1.28 | 0.51x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +36.2% | -6.2pp | +12.4% | ✓ |
+| 2023-08-04 | $35.52 | - | 3.30 | +1.25 | 0.52x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +28.0% | -16.4pp | +12.5% | ✗ |
+| 2023-08-11 | $35.48 | - | 3.30 | +1.33 | 0.51x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +25.2% | -20.6pp | +13.1% | ✗ |
+| 2023-08-18 | $35.26 | - | 3.30 | +1.36 | 0.47x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +26.5% | -24.1pp | +14.3% | ✗ |
+| 2023-08-25 | $35.39 | - | 3.30 | +1.37 | 0.43x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +30.4% | -18.8pp | +14.4% | ✗ |
+| 2023-09-01 | $36.81 | - | 3.30 | +1.14 | 0.54x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +28.0% | -18.0pp | +10.4% | ✗ |
+| 2023-09-08 | $36.95 | - | 3.30 | +1.12 | 0.55x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +28.2% | -20.6pp | +10.6% | ✗ |
+| 2023-09-15 | $36.16 | - | 3.30 | +1.28 | 0.49x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +32.8% | -19.1pp | +13.7% | ✓ |
+| 2023-09-22 | $35.40 | - | 3.30 | +1.38 | 0.41x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +39.5% | -18.7pp | +16.8% | ✓ |
+| 2023-09-29 | $35.32 | - | 3.30 | +1.39 | 0.40x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +48.0% | -10.6pp | +17.9% | ✓ |
+| 2023-10-06 | $33.73 | - | 3.30 | +1.56 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +50.6% | -9.0pp | +24.1% | ✓ |
+| 2023-10-13 | $34.85 | - | 3.30 | +1.43 | 0.37x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +35.5% | -21.5pp | +20.7% | ✓ |
+| 2023-10-20 | $34.84 | - | 3.30 | +1.47 | 0.37x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +37.8% | -25.0pp | +21.2% | ✓ |
+| 2023-10-27 | $34.81 | - | 2.85 | +0.94 | 0.39x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +38.8% | -31.5pp | +21.9% | ✓ |
+| 2023-11-03 | $35.19 | - | 2.85 | +0.89 | 0.41x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +42.6% | -17.9pp | +21.2% | ✓ |
+| 2023-11-10 | $34.34 | - | 2.85 | +1.01 | 0.36x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +47.2% | -10.7pp | +24.6% | ✓ |
+| 2023-11-17 | $33.71 | - | 2.85 | +1.12 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +47.3% | -3.6pp | +27.2% | ✓ |
+| 2023-11-24 | $33.89 | - | 2.85 | +1.09 | 0.33x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +50.8% | +0.8pp | +26.8% | ✓ |
+| 2023-12-01 | $33.79 | - | 2.85 | +1.11 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +53.7% | +2.4pp | +27.4% | ✓ |
+| 2023-12-08 | $32.24 | - | 2.85 | +1.39 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +52.5% | +0.8pp | +34.0% | ✓ |
+| 2023-12-15 | $33.58 | - | 2.85 | +1.14 | 0.31x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +44.9% | -2.8pp | +29.0% | ✓ |
+| 2023-12-22 | $34.12 | - | 2.85 | +1.05 | 0.34x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +38.7% | -8.9pp | +27.2% | ✓ |
+| 2023-12-29 | $34.18 | - | 2.85 | +1.06 | 0.34x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +37.9% | -9.8pp | +27.2% | ✓ |
+| 2024-01-05 | $33.42 | - | 2.85 | +1.25 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +52.1% | +2.1pp | +30.3% | ✓ |
+| 2024-01-12 | $31.52 | - | 2.85 | +1.47 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +57.7% | +8.9pp | +38.5% | ✓ |
+| 2024-01-19 | $30.70 | - | 2.85 | +1.54 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +74.3% | +28.0pp | +42.5% | ✓ |
+| 2024-01-25 | $30.30 | - | 2.50 | +2.05 | 0.00x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +83.8% | +39.6pp | +44.7% | ✓ |
+| 2024-02-02 | $28.99 | - | 2.50 | +2.05 | -0.01x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +100.8% | +57.2pp | +52.3% | ✓ |
+| 2024-02-09 | $29.06 | - | 2.50 | +2.05 | -0.01x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +111.0% | +69.7pp | +52.7% | ✓ |
+| 2024-02-16 | $29.15 | - | 2.50 | +2.05 | -0.01x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +115.3% | +75.9pp | +53.0% | ✓ |
+| 2024-02-23 | $29.89 | - | 2.50 | +1.83 | -0.00x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +119.0% | +81.8pp | +50.2% | ✓ |
+| 2024-03-01 | $29.96 | - | 2.50 | +2.05 | -0.00x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +123.8% | +87.2pp | +51.0% | ✓ |
+| 2024-03-08 | $30.60 | - | 2.50 | +2.05 | 0.00x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +101.3% | +67.1pp | +49.1% | ✓ |
+| 2024-03-15 | $32.32 | - | 2.50 | +1.84 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +73.4% | +41.0pp | +42.1% | ✓ |
+| 2024-03-22 | $33.44 | - | 2.50 | +1.66 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +85.8% | +58.6pp | +38.2% | ✓ |
+| 2024-03-28 | $33.50 | - | 2.50 | +1.66 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +94.0% | +70.0pp | +39.1% | ✓ |
+| 2024-04-05 | $34.31 | - | 2.50 | +1.60 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +81.2% | +51.9pp | +36.7% | ✓ |
+| 2024-04-12 | $33.05 | - | 2.50 | +1.62 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +95.5% | +59.6pp | +43.5% | ✓ |
+| 2024-04-19 | $32.60 | - | 2.50 | +1.84 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +88.8% | +42.5pp | +46.7% | ✓ |
+| 2024-04-25 | $33.30 | - | 2.65 | +1.98 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +112.4% | +67.7pp | +45.2% | ✓ |
+| 2024-05-03 | $31.92 | - | 2.65 | +2.20 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +121.5% | +77.7pp | +53.5% | ✓ |
+| 2024-05-10 | $32.34 | - | 2.65 | +1.99 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +103.1% | +58.7pp | +53.4% | ✓ |
+| 2024-05-17 | $33.46 | - | 2.65 | +1.98 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +97.0% | +54.7pp | +49.8% | ✓ |
+| 2024-05-24 | $32.37 | - | 2.65 | +1.77 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +109.6% | +66.1pp | +56.7% | ✓ |
+| 2024-05-31 | $33.48 | - | 2.65 | +1.75 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +96.2% | +50.0pp | +52.8% | ✓ |
+| 2024-06-07 | $31.64 | - | 2.65 | +2.10 | 0.01x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +103.5% | +62.7pp | +63.4% | ✓ |
+| 2024-06-14 | $31.09 | - | 2.65 | +1.98 | 0.01x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +108.9% | +69.5pp | +67.9% | ✓ |
+| 2024-06-21 | $32.93 | - | 2.65 | +1.76 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +82.8% | +43.0pp | +59.5% | ✓ |
+| 2024-06-28 | $35.17 | - | 2.65 | +1.63 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +65.9% | +29.3pp | +50.5% | ✓ |
+| 2024-07-05 | $34.22 | - | 2.65 | +1.68 | 0.04x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +59.5% | +22.6pp | +55.4% | ✓ |
+| 2024-07-12 | $34.50 | - | 2.65 | +1.65 | 0.04x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +72.1% | +34.6pp | +55.1% | ✓ |
+| 2024-07-19 | $35.93 | - | 2.65 | +1.57 | 0.06x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +60.7% | +22.7pp | +49.9% | ✓ |
+| 2024-07-26 | $37.65 | - | 2.65 | +1.50 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +56.8% | +18.4pp | +43.7% | ✓ |
+| 2024-08-02 | $35.74 | - | 2.65 | +1.57 | 0.06x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +74.3% | +31.3pp | +52.2% | ✓ |
+| 2024-08-09 | $35.07 | - | 2.65 | +1.62 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +80.7% | +32.9pp | +56.2% | ✓ |
+| 2024-08-16 | $34.94 | - | 2.65 | +1.62 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +90.7% | +48.0pp | +58.0% | ✓ |
+| 2024-08-23 | $35.22 | - | 2.65 | +1.59 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +82.2% | +43.3pp | +57.9% | ✓ |
+| 2024-08-30 | $35.17 | - | 2.65 | +1.59 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +82.6% | +43.5pp | +59.1% | ✓ |
+| 2024-09-06 | $33.94 | - | 2.65 | +1.67 | 0.04x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +92.5% | +47.2pp | +65.8% | ✓ |
+| 2024-09-13 | $33.40 | - | 2.65 | +1.72 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +82.3% | +43.7pp | +69.3% | ✓ |
+| 2024-09-20 | $36.04 | - | 2.65 | +1.53 | 0.06x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +63.9% | +27.2pp | +57.5% | ✓ |
+| 2024-09-27 | $36.18 | - | 2.65 | +1.52 | 0.07x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +64.9% | +27.3pp | +57.3% | ✓ |
+| 2024-10-04 | $37.93 | - | 2.65 | +1.45 | 0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +52.4% | +15.5pp | +50.4% | ✓ |
+| 2024-10-11 | $37.70 | - | 2.65 | +1.44 | 0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +55.2% | +18.3pp | +51.8% | ✓ |
+| 2024-10-18 | $36.40 | - | 2.65 | +1.50 | 0.07x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +58.0% | +24.9pp | +57.8% | ✓ |
+| 2024-10-24 | $36.78 | - | 2.75 | +1.41 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +56.8% | +23.1pp | +56.6% | ✓ |
+| 2024-11-01 | $37.85 | - | 2.75 | +1.36 | 0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +50.7% | +15.8pp | +52.6% | ✓ |
+| 2024-11-08 | $43.02 | - | 2.75 | +1.13 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +15.0% | -10.4pp | +34.4% | ✗ |
+| 2024-11-15 | $42.94 | - | 2.75 | +1.14 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +35.0% | - |
+| 2024-11-22 | $44.25 | - | 2.75 | +1.08 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +31.5% | - |
+| 2024-11-29 | $43.95 | - | 2.75 | +1.10 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +32.7% | - |
+| 2024-12-06 | $41.31 | - | 2.75 | +1.22 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +41.6% | - |
+| 2024-12-13 | $42.15 | - | 2.75 | +1.17 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +39.4% | - |
+| 2024-12-20 | $40.32 | - | 2.75 | +1.25 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +46.4% | - |
+| 2024-12-27 | $40.80 | - | 2.75 | +1.18 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +45.3% | - |
+| 2025-01-03 | $42.66 | - | 2.75 | +1.07 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +39.6% | - |
+| 2025-01-10 | $43.26 | - | 2.75 | +1.05 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +38.2% | - |
+| 2025-01-17 | $46.54 | - | 2.75 | +0.84 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +29.0% | - |
+| 2025-01-24 | $45.55 | - | 2.75 | +0.89 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +32.1% | - |
+| 2025-01-31 | $46.18 | - | 2.30 | +1.13 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +30.5% | - |
+| 2025-02-07 | $46.20 | - | 2.30 | +1.12 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +30.5% | - |
+| 2025-02-14 | $46.40 | - | 2.30 | +1.12 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +30.0% | - |
+| 2025-02-21 | $45.62 | - | 2.30 | +1.14 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +32.1% | - |
+| 2025-02-28 | $44.59 | - | 2.30 | +1.17 | 0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +34.9% | - |
+| 2025-03-07 | $42.89 | - | 2.30 | +1.24 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +40.1% | - |
+| 2025-03-14 | $42.84 | - | 2.30 | +1.24 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +40.5% | - |
+| 2025-03-21 | $44.11 | - | 2.30 | +1.19 | 0.09x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +36.6% | - |
+| 2025-03-28 | $43.08 | - | 2.30 | +1.22 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +39.6% | - |
+| 2025-04-04 | $35.41 | - | 2.30 | +1.82 | 0.02x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +69.8% | - |
+| 2025-04-11 | $37.93 | - | 2.30 | +1.62 | 0.04x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +58.4% | - |
+| 2025-04-17 | $38.91 | - | 2.30 | +1.61 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +54.3% | - |
+| 2025-04-24 | $36.38 | - | 2.15 | +1.30 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +64.7% | - |
+| 2025-05-02 | $37.10 | - | 2.15 | +1.30 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +60.6% | - |
+| 2025-05-09 | $36.49 | - | 2.15 | +1.30 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +62.6% | - |
+| 2025-05-16 | $37.79 | - | 2.15 | +1.05 | 0.04x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +56.4% | - |
+| 2025-05-23 | $36.74 | - | 2.15 | +1.52 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +60.1% | - |
+| 2025-05-30 | $37.05 | - | 2.15 | +1.30 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +58.2% | - |
+| 2025-06-06 | $37.90 | - | 2.15 | +1.04 | 0.04x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +54.0% | - |
+| 2025-06-13 | $39.04 | - | 2.15 | +1.01 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +48.8% | - |
+| 2025-06-20 | $39.00 | - | 2.15 | +1.01 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +48.7% | - |
+| 2025-06-27 | $38.06 | - | 2.15 | +1.05 | 0.03x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +52.5% | - |
+| 2025-07-03 | $39.64 | - | 2.15 | +0.99 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +46.8% | - |
+| 2025-07-11 | $40.70 | - | 2.15 | +0.94 | 0.06x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +43.3% | - |
+| 2025-07-18 | $39.72 | - | 2.15 | +0.99 | 0.05x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +47.0% | - |
+| 2025-07-24 | $45.72 | - | 2.15 | +0.70 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +28.0% | - |
+| 2025-08-01 | $43.51 | - | 2.15 | +0.79 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +34.3% | - |
+| 2025-08-08 | $43.29 | - | 2.15 | +0.79 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +34.4% | - |
+| 2025-08-15 | $42.80 | - | 2.15 | +0.81 | 0.08x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +34.8% | - |
+| 2025-08-22 | $44.76 | - | 2.15 | +0.72 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +27.6% | - |
+| 2025-08-29 | $45.40 | - | 2.15 | +0.69 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +24.8% | - |
+| 2025-09-05 | $45.58 | - | 2.15 | +0.69 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +22.5% | - |
+| 2025-09-12 | $46.49 | - | 2.15 | +0.65 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +18.9% | - |
+| 2025-09-19 | $47.34 | - | 2.15 | +0.61 | 0.12x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +16.4% | - |
+| 2025-09-26 | $50.52 | - | 2.15 | +0.49 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +8.2% | - |
+| 2025-10-03 | $48.50 | - | 2.15 | +0.56 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +12.3% | - |
+| 2025-10-10 | $45.04 | - | 2.15 | +0.70 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +19.8% | - |
+| 2025-10-17 | $45.18 | - | 2.15 | +0.70 | 0.10x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +18.2% | - |
+| 2025-10-24 | $47.30 | - | 2.35 | +0.88 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +11.0% | - |
+| 2025-10-31 | $48.41 | - | 2.35 | +0.84 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +2.7% | - |
+| 2025-11-07 | $47.87 | - | 2.35 | +0.85 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +1.2% | - |
+| 2025-11-14 | $48.73 | - | 2.35 | +0.83 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-11-21 | $48.88 | - | 2.35 | +0.82 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-11-28 | $50.20 | - | 2.35 | +0.76 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-05 | $49.20 | - | 2.35 | +0.79 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-12 | $46.86 | - | 2.35 | +0.89 | 0.13x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-19 | $44.71 | - | 2.35 | +0.98 | 0.11x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2025-12-26 | $45.25 | - | 2.35 | +0.95 | 0.12x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-02 | $47.14 | - | 2.35 | +0.86 | 0.14x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-09 | $49.97 | - | 2.35 | +0.74 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-16 | $51.75 | - | 2.35 | +0.66 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-01-23 | $53.92 | - | 2.35 | +0.57 | 0.23x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-01-27 | $56.50 | - | 2.15 | +0.42 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-02-06 | $58.92 | - | 2.15 | +0.28 | 0.25x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-02-13 | $61.20 | - | 2.15 | +0.19 | 0.29x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-02-20 | $62.21 | - | 2.15 | +0.05 | 0.30x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-02-27 | $65.26 | - | 2.15 | -0.00 | 0.35x | BUY | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-06 | $59.81 | - | 2.15 | +0.26 | 0.27x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-03-13 | $54.26 | - | 2.15 | +0.50 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-03-20 | $60.35 | - | 2.15 | +0.23 | 0.28x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-03-27 | $63.22 | - | 2.15 | +0.03 | 0.32x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-04-02 | $60.38 | - | 2.15 | +0.24 | 0.28x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-04-10 | $62.83 | - | 2.15 | +0.04 | 0.33x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-04-17 | $59.78 | - | 2.15 | +0.27 | 0.28x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-04-24 | $68.94 | - | 2.35 | +0.20 | 0.44x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-05-01 | $69.12 | - | 2.35 | +0.19 | 0.45x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-05-08 | $63.89 | - | 2.35 | +0.28 | 0.35x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-05-15 | $64.12 | - | 2.35 | +0.28 | 0.36x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-05-22 | $66.06 | - | 2.35 | +0.25 | 0.39x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-05-29 | $63.88 | - | 2.35 | +0.28 | 0.36x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-06-05 | $62.59 | - | 2.35 | +0.33 | 0.33x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-06-12 | $63.14 | - | 2.35 | +0.31 | 0.34x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-06-18 | $58.41 | - | 2.35 | +0.63 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-26 | $56.56 | - | 2.35 | +0.70 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-02 | $52.78 | - | 2.35 | +0.83 | 0.18x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-10 | $57.56 | - | 2.35 | +0.65 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-17 | $55.95 | - | 2.35 | +0.72 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-24 | $57.25 | - | 2.35 | +0.66 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-28 | $58.46 | - | 2.35 | +0.46 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $61.55 | - | 2.35 | +0.32 | 0.32x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-08-14 | $64.82 | - | 2.35 | +0.16 | 0.38x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-08-21 | $62.34 | - | 2.35 | +0.21 | 0.34x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-08-28 | $62.41 | - | 2.35 | +0.21 | 0.34x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-09-04 | $63.50 | - | 2.35 | +0.19 | 0.36x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-09-11 | $59.06 | - | 2.35 | +0.73 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-18 | $57.25 | - | 2.35 | +0.79 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $57.83 | - | 2.35 | +0.76 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $56.00 | - | 2.35 | +0.84 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $56.70 | - | 2.35 | +0.81 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $55.70 | - | 2.35 | +0.85 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-23 | $55.86 | - | 2.35 | +0.85 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-29 | $54.51 | - | 2.55 | +1.09 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-11-06 | $47.87 | - | 2.55 | +1.31 | 0.12x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | - | - |

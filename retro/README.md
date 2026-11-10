@@ -11133,6 +11133,9 @@ Controls and checks (before any outcome):
   the URL of a 2009 source: a coincidence, not a leak.
 - **Years after the as-of date:** none other than FY labels. `retro_tool run` passes on all 253 dates; on 53 dates of 2022-2023 it
   warns of "calendar year 2057", which is Digital Solutions' FY21 revenue of $2,057M in the segment list.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 28 cutoffs above (every release, 10-K, dividend
+  and guide date, and 2026-11-07), with 0 files changed and no planted text (652 to 903 dates each). The planted facts include a
+  later print in the 2022-2026 fields, a restatement of every year, a fiscal-year revenue guide and a dividend.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: CHEAP 193, FAIR 29, RICH 31.** 2022: CHEAP 23, FAIR 5, RICH 24. 2023: CHEAP 45, FAIR 1, RICH 6 (to 2023-03-03). 2024 and
