@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for BKR retrospectives (retro/build_bkr.py): Baker Hughes Incorporated, listed on the NYSE as BHI throughout 2007-2009 (BKR is the series key). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), and the latest declared dividend. Fiscal years are calendar years from 1998 (fiscal 1997 ended September 30). Baker Hughes gives no EPS, total-revenue or margin guidance in numbers in any filing of 2007-2009: each release's Outlook section guides revenue outside North America (in words or as a range), corporate expenses, capital expenditures, depreciation and the tax rate, kept on the print as 'outlook' (display only), and the 2009 releases have no Outlook section. Values are as reported; a vintage takes each year from the latest filing that reports it, and the company's operating profit per diluted share replaces GAAP EPS where a filing publishes it (the history's 'normalization' says which). A print's growth rates and margins are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago quarter is the one the same release shows. Outside North America is the release's Oilfield Operations revenue less North America. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing. From 2017-07-05 the listed company is Baker Hughes, a GE company (BHGE; Baker Hughes Company, BKR, from October 2019), built as a new listing ('listing'): the entries marked \"era\": \"bhge\" (vintages, prints, guides) and 'rule_t_bhge' are that company's and the only ones its models read; nothing of Baker Hughes Incorporated's history, prints or dividends enters them, and nothing of theirs enters a date before the listing. Its statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 (a loss for July 3 to December 31) is not a full year, so the first date is the one after the Q4 2018 release. EPS is GAAP diluted income per Class A share: the releases give adjusted EPS by quarter only, no filing gives a full-year figure excluding identified items, and nothing is derived; a year whose identified items attributable to the company exceed its net income ('one_off_test') or that is a loss is excluded. Share counts are Class A plus Class B outstanding at year end. A print's growth rates and margins are derived from its release's raw figures: orders and revenue against the year-ago quarter, the gross margin (revenue less cost of revenue), total segment operating income on revenue and the operating margin. 'listings' holds later changes of symbol and exchange.",
+ "_doc": "Point-in-time fact sheet for BKR retrospectives (retro/build_bkr.py): Baker Hughes Incorporated, listed on the NYSE as BHI throughout 2007-2009 (BKR is the series key). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), and the latest declared dividend. Fiscal years are calendar years from 1998 (fiscal 1997 ended September 30). Baker Hughes gives no EPS, total-revenue or margin guidance in numbers in any filing of 2007-2009: each release's Outlook section guides revenue outside North America (in words or as a range), corporate expenses, capital expenditures, depreciation and the tax rate, kept on the print as 'outlook' (display only), and the 2009 releases have no Outlook section. Values are as reported; a vintage takes each year from the latest filing that reports it, and the company's operating profit per diluted share replaces GAAP EPS where a filing publishes it (the history's 'normalization' says which). A print's growth rates and margins are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago quarter is the one the same release shows. Outside North America is the release's Oilfield Operations revenue less North America. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing. From 2017-07-05 the listed company is Baker Hughes, a GE company (BHGE; Baker Hughes Company, BKR, from October 2019), built as a new listing ('listing'): the entries marked \"era\": \"bhge\" (vintages, prints, guides) and 'rule_t_bhge' are that company's and the only ones its models read; nothing of Baker Hughes Incorporated's history, prints or dividends enters them, and nothing of theirs enters a date before the listing. Its statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 (a loss for July 3 to December 31) is not a full year, so the first date is the one after the Q4 2018 release. EPS is GAAP diluted income per Class A share: the releases give adjusted EPS by quarter only, no filing gives a full-year figure excluding identified items, and nothing is derived; a year whose identified items attributable to the company exceed its net income ('one_off_test') or that is a loss is excluded. Share counts are Class A plus Class B outstanding at year end. A print's growth rates and margins are derived from its release's raw figures: orders and revenue against the year-ago quarter, the gross margin (revenue less cost of revenue), total segment operating income on revenue and the operating margin. 'listings' holds later changes of symbol and exchange. From 2022 (the two segments of October 2022, then the statement of income of 2025) a print lists its segments under 'segments' and a margin its release does not report is null: total segment operating income is the release's total, or its two segments summed where it gives no total (Q3 and Q4 2024), and is not reported from Q1 2025 (segment EBITDA instead), like operating income. From the Q4 2023 release the company publishes the year's adjusted diluted EPS, which replaces GAAP ('eps_basis'; 2022's, first published there, enters the history through 'restates'). The new company's dividend changes carry \"era\" in 'dividends'; a guide with 'rev_guide_m' is a fiscal-year revenue guide in dollars.",
  "ticker": "BKR",
  "sources": {
   "BK1": {
@@ -631,6 +631,195 @@
    "title": "Baker Hughes Company 8-K: transfer of the listing to Nasdaq",
    "url": "https://www.sec.gov/Archives/edgar/data/1701605/000095010321016670/dp160581_8k.htm",
    "supports": "trading on Nasdaq from December 7, 2021, the NYSE listing ending at the close on December 6, 2021"
+  },
+  "BK91": {
+   "published": "2022-01-20",
+   "filed": "2022-01-20 07:06 ET (before the open)",
+   "title": "Baker Hughes Company Q4 2021 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000016/earningsreleaseex991123120.htm",
+   "supports": "Q4 2021 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  "BK92": {
+   "published": "2022-02-14",
+   "filed": "2022-02-11 16:42 ET (after the close)",
+   "title": "Baker Hughes Company FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000050/bkr-20211231.htm",
+   "supports": "statements of income and cash flows to 2021, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  "BK93": {
+   "published": "2022-04-20",
+   "filed": "2022-04-20 07:04 ET (before the open)",
+   "title": "Baker Hughes Company Q1 2022 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000076/earningsreleaseex991033120.htm",
+   "supports": "Q1 2022 orders, revenue, segments, margins and EPS"
+  },
+  "BK94": {
+   "published": "2022-07-20",
+   "filed": "2022-07-20 07:07 ET (before the open)",
+   "title": "Baker Hughes Company Q2 2022 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000109/earningsreleaseex991063020.htm",
+   "supports": "Q2 2022 orders, revenue, segments, margins and EPS"
+  },
+  "BK95": {
+   "published": "2022-10-19",
+   "filed": "2022-10-19 07:08 ET (before the open)",
+   "title": "Baker Hughes Company Q3 2022 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000145/earningsreleaseex991093020.htm",
+   "supports": "Q3 2022 orders, revenue, segments, margins and EPS"
+  },
+  "BK96": {
+   "published": "2022-10-28",
+   "filed": "2022-10-27 16:17 ET (after the close)",
+   "title": "Baker Hughes Company 8-K: dividend increase and repurchase authorization (exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000156/prsharebuyback.htm",
+   "supports": "the quarterly dividend of $0.19 a share, payable November 18, 2022"
+  },
+  "BK97": {
+   "published": "2023-01-23",
+   "filed": "2023-01-23 07:06 ET (before the open)",
+   "title": "Baker Hughes Company Q4 2022 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160523000012/earningsreleaseex991123120.htm",
+   "supports": "Q4 2022 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  "BK98": {
+   "published": "2023-02-15",
+   "filed": "2023-02-14 16:16 ET (after the close)",
+   "title": "Baker Hughes Company FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160523000044/bkr-20221231.htm",
+   "supports": "statements of income and cash flows to 2022, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  "BK99": {
+   "published": "2023-04-19",
+   "filed": "2023-04-19 07:06 ET (before the open)",
+   "title": "Baker Hughes Company Q1 2023 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160523000047/earningsreleaseex991033120.htm",
+   "supports": "Q1 2023 orders, revenue, segments, margins and EPS"
+  },
+  "BK100": {
+   "published": "2023-07-19",
+   "filed": "2023-07-19 07:04 ET (before the open)",
+   "title": "Baker Hughes Company Q2 2023 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160523000061/earningsreleaseex991063020.htm",
+   "supports": "Q2 2023 orders, revenue, segments, margins and EPS"
+  },
+  "BK101": {
+   "published": "2023-10-26",
+   "filed": "2023-10-25 17:04 ET (after the close)",
+   "title": "Baker Hughes Company Q3 2023 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160523000076/earningsreleaseex991093020.htm",
+   "supports": "Q3 2023 orders, revenue, segments, margins and EPS"
+  },
+  "BK102": {
+   "published": "2024-01-24",
+   "filed": "2024-01-23 17:25 ET (after the close)",
+   "title": "Baker Hughes Company Q4 2023 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000007/earningsreleaseex991123120.htm",
+   "supports": "Q4 2023 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  "BK103": {
+   "published": "2024-02-05",
+   "filed": "2024-02-05 07:52 ET (before the open)",
+   "title": "Baker Hughes Company FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000033/bkr-20231231.htm",
+   "supports": "statements of income and cash flows to 2023, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  "BK104": {
+   "published": "2024-04-24",
+   "filed": "2024-04-23 17:14 ET (after the close)",
+   "title": "Baker Hughes Company Q1 2024 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000065/earningsreleaseex991033120.htm",
+   "supports": "Q1 2024 orders, revenue, segments, margins and EPS"
+  },
+  "BK105": {
+   "published": "2024-07-26",
+   "filed": "2024-07-25 17:10 ET (after the close)",
+   "title": "Baker Hughes Company Q2 2024 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000109/earningsreleaseex991063020.htm",
+   "supports": "Q2 2024 orders, revenue, segments, margins and EPS"
+  },
+  "BK106": {
+   "published": "2024-10-23",
+   "filed": "2024-10-22 17:14 ET (after the close)",
+   "title": "Baker Hughes Company Q3 2024 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000129/earningsreleaseex991093020.htm",
+   "supports": "Q3 2024 orders, revenue, segments, margins and EPS"
+  },
+  "BK107": {
+   "published": "2025-01-31",
+   "filed": "2025-01-30 17:10 ET (after the close)",
+   "title": "Baker Hughes Company Q4 2024 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000014/earningsreleaseex991123120.htm",
+   "supports": "Q4 2024 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  "BK108": {
+   "published": "2025-02-04",
+   "filed": "2025-02-04 07:05 ET (before the open)",
+   "title": "Baker Hughes Company FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000035/bkr-20241231.htm",
+   "supports": "statements of income and cash flows to 2024, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  "BK109": {
+   "published": "2025-04-23",
+   "filed": "2025-04-22 17:08 ET (after the close)",
+   "title": "Baker Hughes Company Q1 2025 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000073/earningsreleaseex991033120.htm",
+   "supports": "Q1 2025 orders, revenue, segments, margins and EPS"
+  },
+  "BK110": {
+   "published": "2025-07-23",
+   "filed": "2025-07-22 17:10 ET (after the close)",
+   "title": "Baker Hughes Company Q2 2025 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000104/earningsreleaseex991063020.htm",
+   "supports": "Q2 2025 orders, revenue, segments, margins and EPS"
+  },
+  "BK111": {
+   "published": "2025-10-24",
+   "filed": "2025-10-23 17:25 ET (after the close)",
+   "title": "Baker Hughes Company Q3 2025 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000114/earningsreleaseex991093020.htm",
+   "supports": "Q3 2025 orders, revenue, segments, margins and EPS"
+  },
+  "BK112": {
+   "published": "2026-01-26",
+   "filed": "2026-01-26 06:09 ET (before the open)",
+   "title": "Baker Hughes Company Q4 2025 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+   "supports": "Q4 2025 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  "BK113": {
+   "published": "2026-02-06",
+   "filed": "2026-02-05 16:16 ET (after the close)",
+   "title": "Baker Hughes Company FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000007/bkr-20251231.htm",
+   "supports": "statements of income and cash flows to 2025, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  "BK114": {
+   "published": "2026-04-24",
+   "filed": "2026-04-23 17:14 ET (after the close)",
+   "title": "Baker Hughes Company Q1 2026 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000012/earningsreleaseex991033120.htm",
+   "supports": "Q1 2026 orders, revenue, segments, margins and EPS"
+  },
+  "BK115": {
+   "published": "2026-07-27",
+   "filed": "2026-07-27 06:07 ET (before the open)",
+   "title": "Baker Hughes Company Q2 2026 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000021/earningsreleaseex991063020.htm",
+   "supports": "Q2 2026 orders, revenue, segments, margins and EPS"
+  },
+  "BK116": {
+   "published": "2026-09-09",
+   "filed": "2026-09-09 06:01 ET (before the open)",
+   "title": "Baker Hughes Company 8-K: Barclays conference presentation (exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000119312526385823/d539011dex991.htm",
+   "supports": "fiscal-year 2026 guidance including Chart: revenue $28,500M to $30,300M"
+  },
+  "BK117": {
+   "published": "2026-10-28",
+   "filed": "2026-10-27 17:05 ET (after the close)",
+   "title": "Baker Hughes Company Q3 2026 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000033/earningsreleaseex991093020.htm",
+   "supports": "Q3 2026 orders, revenue, segments, margins and EPS"
   }
  },
  "listing": {
@@ -2382,6 +2571,573 @@
     ]
    ],
    "groups_basis": "FY20 segment revenue (FY2020 10-K)"
+  },
+  {
+   "era": "bhge",
+   "published": "2022-02-14",
+   "sources": [
+    "BK92",
+    "BK91",
+    "BK86",
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "Nasdaq",
+   "symbol": "BKR",
+   "fy_label": "FY21",
+   "why": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may curtail production and demand for hydrocarbons such as oil and natural gas by shifting demand towards an investment in relatively lower carbon emitting energy sources and alternative energy solutions'; 'Failure to effectively and timely execute our energy transition strategy could have an adverse effect on the demand for our technologies and services' (its own FY2021 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23,
+    "2020": -14.73,
+    "2021": -0.27
+   },
+   "eps_normalized": {
+    "2018": 0.45
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "2020": "a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E",
+    "2021": "a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838,
+    "2020": 20.705,
+    "2021": 20.502
+   },
+   "revenue_sources": {
+    "2014": "BK74",
+    "2015": "BK80",
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK86",
+    "2019": "BK92",
+    "2020": "BK92",
+    "2021": "BK92"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2021": 1026.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 6.39,
+   "prev_fy_op_margin_note": "FY21 operating income $1,310M / revenue $20,502M (FY2021 10-K)",
+   "prev_fy_sales_growth": -1.0,
+   "prev_fy_orders_pct": 4.8,
+   "prev_fy_orders_note": "orders $21.7 billion vs $20.7 billion (FY2021 10-K)",
+   "check_pretax_margin": 2.09,
+   "check_pretax_note": "FY21 income before income taxes $428M / revenue $20,502M (FY2021 10-K)",
+   "tax_rate": 1.771,
+   "tax_note": "FY21 effective rate: an income tax provision of $758M on income before income taxes of $428M (FY2021 10-K)",
+   "fcf_b": 1.83,
+   "fcf_label": "FY21",
+   "fcf_note": "operating activities $2,374M less expenditures for capital assets $856M plus proceeds from disposal of assets $315M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 a quarter: $0.72 a share declared and paid in 2021 (FY2021 10-K)",
+   "cash_return_text": "$434M of Class A common stock repurchased and $592M of dividends paid in FY21",
+   "business_line": "Oilfield Services, Oilfield Equipment, Turbomachinery & Process Solutions, Digital Solutions",
+   "normalization": "diluted income per Class A share, GAAP: the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them; 2020 is excluded: a loss of $(14.73) per Class A share (the $14,773M goodwill impairment), with no published full-year figure excluding its items; 2021 is excluded: a loss of $(0.27) per Class A share, with no published full-year figure excluding its items",
+   "groups": [
+    [
+     "Oilfield Services",
+     9542,
+     -5.9
+    ],
+    [
+     "Oilfield Equipment",
+     2486,
+     -12.6
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     6417,
+     12.5
+    ],
+    [
+     "Digital Solutions",
+     2057,
+     2.1
+    ]
+   ],
+   "groups_basis": "FY21 segment revenue (FY2021 10-K)"
+  },
+  {
+   "era": "bhge",
+   "published": "2023-02-15",
+   "sources": [
+    "BK98",
+    "BK97",
+    "BK92",
+    "BK86",
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "Nasdaq",
+   "symbol": "BKR",
+   "fy_label": "FY22",
+   "why": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may shift demand from oil and natural gas towards an investment in relatively lower carbon emitting energy sources and alternative energy solutions'; 'Failure to effectively and timely execute our energy transition strategy could have an adverse effect on the demand for our technologies and services' (its own FY2022 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23,
+    "2020": -14.73,
+    "2021": -0.27,
+    "2022": -0.61
+   },
+   "eps_normalized": {
+    "2018": 0.45
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "2020": "a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E",
+    "2021": "a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E",
+    "2022": "a loss: GAAP $(0.61) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838,
+    "2020": 20.705,
+    "2021": 20.502,
+    "2022": 21.156
+   },
+   "revenue_sources": {
+    "2014": "BK74",
+    "2015": "BK80",
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK86",
+    "2019": "BK92",
+    "2020": "BK98",
+    "2021": "BK98",
+    "2022": "BK98"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2022": 1006.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 5.6,
+   "prev_fy_op_margin_note": "FY22 operating income $1,185M / revenue $21,156M (FY2022 10-K)",
+   "prev_fy_sales_growth": 3.2,
+   "prev_fy_orders_pct": 23.5,
+   "prev_fy_orders_note": "orders $26.8 billion vs $21.7 billion (FY2022 10-K)",
+   "check_pretax_margin": 0.1,
+   "check_pretax_note": "FY22 income before income taxes $22M / revenue $21,156M (FY2022 10-K)",
+   "tax_rate": 27.273,
+   "tax_note": "FY22 effective rate: an income tax provision of $600M on income before income taxes of $22M (FY2022 10-K)",
+   "fcf_b": 1.12,
+   "fcf_label": "FY22",
+   "fcf_note": "operating activities $1,888M less expenditures for capital assets $989M plus proceeds from disposal of assets $217M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.76,
+   "dividend_note": "$0.19 a quarter: 'We increased our quarterly dividend in the fourth quarter of 2022 by one cent to $0.19 per share' (FY2022 10-K)",
+   "cash_return_text": "$828M of Class A common stock repurchased and $726M of dividends paid in FY22",
+   "business_line": "Oilfield Services & Equipment, Industrial & Energy Technology",
+   "normalization": "diluted income per Class A share, GAAP: the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them; 2020 is excluded: a loss of $(14.73) per Class A share (the $14,773M goodwill impairment), with no published full-year figure excluding its items; 2021 is excluded: a loss of $(0.27) per Class A share, with no published full-year figure excluding its items; 2022 is excluded: a loss of $(0.61) per Class A share, with no published full-year figure excluding its items",
+   "groups": [
+    [
+     "Oilfield Services & Equipment",
+     13229,
+     10.0
+    ],
+    [
+     "Industrial & Energy Technology",
+     7926,
+     -6.5
+    ]
+   ],
+   "groups_basis": "FY22 segment revenue (FY2022 10-K; two segments from October 1, 2022)"
+  },
+  {
+   "era": "bhge",
+   "published": "2024-02-05",
+   "sources": [
+    "BK103",
+    "BK102",
+    "BK98",
+    "BK92",
+    "BK86",
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "Nasdaq",
+   "symbol": "BKR",
+   "fy_label": "FY23",
+   "why": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may shift demand from oil and natural gas towards an investment in relatively lower carbon emitting energy sources and alternative energy solutions' (its own FY2023 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23,
+    "2020": -14.73,
+    "2021": -0.27,
+    "2022": -0.61,
+    "2023": 1.91
+   },
+   "eps_normalized": {
+    "2018": 0.45,
+    "2022": 0.91,
+    "2023": 1.6
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "2020": "a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E",
+    "2021": "a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838,
+    "2020": 20.705,
+    "2021": 20.502,
+    "2022": 21.156,
+    "2023": 25.506
+   },
+   "revenue_sources": {
+    "2014": "BK74",
+    "2015": "BK80",
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK86",
+    "2019": "BK92",
+    "2020": "BK98",
+    "2021": "BK103",
+    "2022": "BK103",
+    "2023": "BK103"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2023": 998.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 9.08,
+   "prev_fy_op_margin_note": "FY23 operating income $2,317M / revenue $25,506M (FY2023 10-K)",
+   "prev_fy_sales_growth": 20.6,
+   "prev_fy_orders_pct": 13.8,
+   "prev_fy_orders_note": "orders $30.5 billion vs $26.8 billion (FY2023 10-K)",
+   "check_pretax_margin": 10.41,
+   "check_pretax_note": "FY23 income before income taxes $2,655M / revenue $25,506M (FY2023 10-K)",
+   "tax_rate": 0.258,
+   "tax_note": "FY23 effective rate: an income tax provision of $685M on income before income taxes of $2,655M (FY2023 10-K)",
+   "fcf_b": 2.05,
+   "fcf_label": "FY23",
+   "fcf_note": "operating activities $3,062M less expenditures for capital assets $1,224M plus proceeds from disposal of assets $208M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.8,
+   "dividend_note": "$0.20 a quarter: 'We increased our quarterly dividend in the third quarter of 2023 by one cent to $0.20 per share' (FY2023 10-K)",
+   "cash_return_text": "$538M of Class A common stock repurchased and $786M of dividends paid in FY23",
+   "business_line": "Oilfield Services & Equipment, Industrial & Energy Technology",
+   "normalization": "diluted income per Class A share, GAAP: to 2021 the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; from the Q4 2023 release it publishes the year's adjusted diluted EPS, which replaces GAAP (the ACN rule), each year from the latest filing that publishes one; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them; 2020 is excluded: a loss of $(14.73) per Class A share (the $14,773M goodwill impairment), with no published full-year figure excluding its items; 2021 is excluded: a loss of $(0.27) per Class A share, with no published full-year figure excluding its items; 2022 $0.91 adjusted (Q4 2023 release; GAAP $(0.61)); 2023 $1.60 adjusted (Q4 2023 release; GAAP $1.91)",
+   "groups": [
+    [
+     "Oilfield Services & Equipment",
+     15361,
+     16.1
+    ],
+    [
+     "Industrial & Energy Technology",
+     10145,
+     28.0
+    ]
+   ],
+   "groups_basis": "FY23 segment revenue (FY2023 10-K)"
+  },
+  {
+   "era": "bhge",
+   "published": "2025-02-04",
+   "sources": [
+    "BK108",
+    "BK107",
+    "BK103",
+    "BK102",
+    "BK98",
+    "BK92",
+    "BK86",
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "Nasdaq",
+   "symbol": "BKR",
+   "fy_label": "FY24",
+   "why": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may shift demand from oil and natural gas towards an investment in relatively lower carbon emitting energy sources and alternative energy solutions' (its own FY2024 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23,
+    "2020": -14.73,
+    "2021": -0.27,
+    "2022": -0.61,
+    "2023": 1.91,
+    "2024": 2.98
+   },
+   "eps_normalized": {
+    "2018": 0.45,
+    "2022": 0.91,
+    "2023": 1.6,
+    "2024": 2.35
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "2020": "a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E",
+    "2021": "a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E"
+   },
+   "revenue_usd_b": {
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838,
+    "2020": 20.705,
+    "2021": 20.502,
+    "2022": 21.156,
+    "2023": 25.506,
+    "2024": 27.829
+   },
+   "revenue_sources": {
+    "2015": "BK80",
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK86",
+    "2019": "BK92",
+    "2020": "BK98",
+    "2021": "BK103",
+    "2022": "BK108",
+    "2023": "BK108",
+    "2024": "BK108"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2024": 990.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 11.07,
+   "prev_fy_op_margin_note": "FY24 operating income $3,081M / revenue $27,829M (FY2024 10-K)",
+   "prev_fy_sales_growth": 9.1,
+   "prev_fy_orders_pct": -7.5,
+   "prev_fy_orders_note": "orders $28,240M vs $30,522M (FY2024 10-K)",
+   "check_pretax_margin": 11.73,
+   "check_pretax_note": "FY24 income before income taxes $3,265M / revenue $27,829M (FY2024 10-K)",
+   "tax_rate": 0.079,
+   "tax_note": "FY24 effective rate: an income tax provision of $257M on income before income taxes of $3,265M (FY2024 10-K)",
+   "fcf_b": 2.26,
+   "fcf_label": "FY24",
+   "fcf_note": "operating activities $3,332M less expenditures for capital assets $1,278M plus proceeds from disposal of assets $203M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.84,
+   "dividend_note": "$0.21 a quarter: 'We increased our quarterly dividend in the first quarter of 2024 by one cent to $0.21 per share' (FY2024 10-K)",
+   "cash_return_text": "$484M of Class A common stock repurchased and $836M of dividends paid in FY24",
+   "business_line": "Oilfield Services & Equipment, Industrial & Energy Technology",
+   "normalization": "diluted income per Class A share, GAAP: to 2021 the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; from the Q4 2023 release it publishes the year's adjusted diluted EPS, which replaces GAAP (the ACN rule), each year from the latest filing that publishes one; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them; 2020 is excluded: a loss of $(14.73) per Class A share (the $14,773M goodwill impairment), with no published full-year figure excluding its items; 2021 is excluded: a loss of $(0.27) per Class A share, with no published full-year figure excluding its items; 2022 $0.91 adjusted (Q4 2023 release; GAAP $(0.61)); 2023 $1.60 adjusted (Q4 2023 release; GAAP $1.91); 2024 $2.35 adjusted (Q4 2024 release; GAAP $2.98)",
+   "groups": [
+    [
+     "Oilfield Services & Equipment",
+     15628,
+     1.7
+    ],
+    [
+     "Industrial & Energy Technology",
+     12201,
+     20.3
+    ]
+   ],
+   "groups_basis": "FY24 segment revenue (FY2024 10-K)"
+  },
+  {
+   "era": "bhge",
+   "published": "2026-02-06",
+   "sources": [
+    "BK113",
+    "BK112",
+    "BK108",
+    "BK107",
+    "BK103",
+    "BK102",
+    "BK98",
+    "BK92",
+    "BK86",
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "Nasdaq",
+   "symbol": "BKR",
+   "fy_label": "FY25",
+   "why": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominantly generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development, and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'The potential slowdown and shift in the energy transition could have an adverse effect on the demand for our clean energy technologies and services' (its own FY2025 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2023": "2023-12-31",
+    "2024": "2024-12-31",
+    "2025": "2025-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23,
+    "2020": -14.73,
+    "2021": -0.27,
+    "2022": -0.61,
+    "2023": 1.91,
+    "2024": 2.98,
+    "2025": 2.6
+   },
+   "eps_normalized": {
+    "2018": 0.45,
+    "2022": 0.91,
+    "2023": 1.6,
+    "2024": 2.35,
+    "2025": 2.6
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "2020": "a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E",
+    "2021": "a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E"
+   },
+   "revenue_usd_b": {
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838,
+    "2020": 20.705,
+    "2021": 20.502,
+    "2022": 21.156,
+    "2023": 25.506,
+    "2024": 27.829,
+    "2025": 27.733
+   },
+   "revenue_sources": {
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK86",
+    "2019": "BK92",
+    "2020": "BK98",
+    "2021": "BK103",
+    "2022": "BK108",
+    "2023": "BK113",
+    "2024": "BK113",
+    "2025": "BK113"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2025": 987.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": null,
+   "prev_fy_op_margin_note": "FY25: the statement of income has no operating income line (FY2025 10-K)",
+   "prev_fy_sales_growth": -0.3,
+   "prev_fy_orders_pct": 4.8,
+   "prev_fy_orders_note": "orders $29,585M vs $28,240M (FY2025 10-K)",
+   "check_pretax_margin": 10.37,
+   "check_pretax_note": "FY25 income before income taxes $2,877M / revenue $27,733M (FY2025 10-K)",
+   "tax_rate": 0.088,
+   "tax_note": "FY25 effective rate: an income tax provision of $253M on income before income taxes of $2,877M (FY2025 10-K)",
+   "fcf_b": 2.73,
+   "fcf_label": "FY25",
+   "fcf_note": "operating activities $3,810M less expenditures for capital assets $1,273M plus proceeds from disposal of assets $195M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.92,
+   "dividend_note": "$0.23 a quarter: 'In the first quarter of 2025, we increased our quarterly dividend by two cents to $0.23 per share' (FY2025 10-K)",
+   "cash_return_text": "$384M of Class A common stock repurchased and $910M of dividends paid in FY25",
+   "business_line": "Oilfield Services & Equipment, Industrial & Energy Technology",
+   "normalization": "diluted income per Class A share, GAAP: to 2021 the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; from the Q4 2023 release it publishes the year's adjusted diluted EPS, which replaces GAAP (the ACN rule), each year from the latest filing that publishes one; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them; 2020 is excluded: a loss of $(14.73) per Class A share (the $14,773M goodwill impairment), with no published full-year figure excluding its items; 2021 is excluded: a loss of $(0.27) per Class A share, with no published full-year figure excluding its items; 2022 $0.91 adjusted (Q4 2023 release; GAAP $(0.61)); 2023 $1.60 adjusted (Q4 2023 release; GAAP $1.91); 2024 $2.35 adjusted (Q4 2024 release; GAAP $2.98); 2025 $2.60 adjusted (Q4 2025 release; GAAP $2.60)",
+   "groups": [
+    [
+     "Oilfield Services & Equipment",
+     14324,
+     -8.3
+    ],
+    [
+     "Industrial & Energy Technology",
+     13409,
+     9.9
+    ]
+   ],
+   "groups_basis": "FY25 segment revenue (FY2025 10-K)"
   }
  ],
  "prints": [
@@ -5669,6 +6425,1379 @@
    "seg_margin_bp": 306.2,
    "op_margin": 7.42,
    "op_margin_bp": 839.2
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-01-20",
+   "source": "BK91",
+   "release": "Jan 20",
+   "release_time": "before the open on Jan 20: 8-K accepted 07:06 ET; public before that day's close",
+   "period_end": "2021-12-31",
+   "raw": {
+    "orders_m": 6656,
+    "orders_prior_m": 5188,
+    "rev_m": 5519,
+    "rev_prior_m": 5495,
+    "cor_m": 4315,
+    "cor_prior_m": 4486,
+    "segoi_m": 676,
+    "segoi_prior_m": 573,
+    "oi_m": 574,
+    "oi_prior_m": 182
+   },
+   "segments": [
+    [
+     "Oilfield Services",
+     2566,
+     2282
+    ],
+    [
+     "Oilfield Equipment",
+     619,
+     712
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     1776,
+     1946
+    ],
+    [
+     "Digital Solutions",
+     558,
+     556
+    ]
+   ],
+   "sales_note": "revenue $5,519M vs $5,495M",
+   "orders_note": "orders $6,656M vs $5,188M",
+   "segments_note": "Oilfield Services +12.4%; Oilfield Equipment -13.1%; Turbomachinery & Process Solutions -8.7%; Digital Solutions +0.4%",
+   "eps_q": 0.32,
+   "eps_q_prior": 0.91,
+   "eps_note": "Q4 2021 adjusted (non-GAAP, the release's figure excluding identified items): $0.25 a diluted share; GAAP $0.32",
+   "diluted_shares_m": 906.0,
+   "cash_b": 3.853,
+   "cash_note": "Cash and cash equivalents | 3,853 | 4,132",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $129 million for the fourth quarter of 2021.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the fourth quarter ended at $23.6 billion, an increase of $0.1 billion from the third quarter of 2021.",
+   "next_print": "Q1 2022 print (late April)",
+   "cash_return_text": "Cash flows generated from operating activities were $773 million for the fourth quarter of 2021. Free cash flow (a non-GAAP measure) for the quarter was $645 million.",
+   "sales_b": 5.519,
+   "sales_pct": 0.4,
+   "orders_pct": 28.3,
+   "gross_margin": 21.82,
+   "gross_margin_bp": 345.3,
+   "seg_margin": 12.25,
+   "seg_margin_bp": 182.1,
+   "seg_note": "total segment operating income $676M vs $573M",
+   "op_margin": 10.4,
+   "op_margin_bp": 708.8,
+   "margin_note": "operating income $574M vs $182M; cost of revenue $4,315M vs $4,486M",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": null,
+    "excluded_note": "a loss: GAAP $(0.27) per Class A share (Q4 2021 release), and no filing publishes a full-year figure excluding its items, so no P/E",
+    "revenue_usd_b": 20.536,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2021 excluded: a loss of $(0.27) per Class A share, with no published full-year figure excluding its items (Q4 2021 release)",
+    "op_margin": 6.38,
+    "op_margin_note": "FY21 operating income $1,310M / revenue $20,536M (Q4 2021 release)",
+    "sales_growth": -0.8,
+    "sales_note": "revenue $20,536M vs $20,705M, as reported (Q4 2021 release)",
+    "orders_pct": 4.6,
+    "orders_note": "orders $21,668M vs $20,714M, the Q4 2021 release's total-year table",
+    "check_pretax_margin": 2.08,
+    "check_pretax_note": "FY21 income before income taxes $428M / revenue $20,536M (Q4 2021 release)",
+    "tax_rate": 1.771,
+    "tax_note": "FY21 effective rate: an income tax provision of $758M on income before income taxes of $428M",
+    "groups": [
+     [
+      "Oilfield Services",
+      9542,
+      -5.9
+     ],
+     [
+      "Oilfield Equipment",
+      2486,
+      -12.6
+     ],
+     [
+      "Turbomachinery & Process Solutions",
+      6451,
+      13.1
+     ],
+     [
+      "Digital Solutions",
+      2057,
+      2.1
+     ]
+    ],
+    "groups_basis": "FY21 segment revenue (Q4 2021 release's total-year table)"
+   }
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-04-20",
+   "source": "BK93",
+   "release": "Apr 20",
+   "release_time": "before the open on Apr 20: 8-K accepted 07:04 ET; public before that day's close",
+   "period_end": "2022-03-31",
+   "raw": {
+    "orders_m": 6837,
+    "orders_prior_m": 4541,
+    "rev_m": 4835,
+    "rev_prior_m": 4782,
+    "cor_m": 3865,
+    "cor_prior_m": 3924,
+    "segoi_m": 453,
+    "segoi_prior_m": 379,
+    "oi_m": 279,
+    "oi_prior_m": 164
+   },
+   "segments": [
+    [
+     "Oilfield Services",
+     2489,
+     2200
+    ],
+    [
+     "Oilfield Equipment",
+     528,
+     628
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     1345,
+     1485
+    ],
+    [
+     "Digital Solutions",
+     474,
+     470
+    ]
+   ],
+   "sales_note": "revenue $4,835M vs $4,782M",
+   "orders_note": "orders $6,837M vs $4,541M",
+   "segments_note": "Oilfield Services +13.1%; Oilfield Equipment -15.9%; Turbomachinery & Process Solutions -9.4%; Digital Solutions +0.9%",
+   "eps_q": 0.08,
+   "eps_q_prior": -0.61,
+   "eps_note": "Q1 2022 adjusted (non-GAAP, the release's figure excluding identified items): $0.15 a diluted share; GAAP $0.08",
+   "diluted_shares_m": 948.0,
+   "cash_b": 3.191,
+   "cash_note": "Cash and cash equivalents | 3,191 | 3,853",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $177 million for the first quarter of 2022.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the first quarter ended at $25.8 billion, an increase of $2.3 billion from the fourth quarter of 2021.",
+   "next_print": "Q2 2022 print (late July)",
+   "cash_return_text": "Cash flow from operating activities was $72 million for the first quarter of 2022. Free cash flow (a non-GAAP measure) for the quarter was $(105) million.",
+   "sales_b": 4.835,
+   "sales_pct": 1.1,
+   "orders_pct": 50.6,
+   "gross_margin": 20.06,
+   "gross_margin_bp": 212.0,
+   "seg_margin": 9.37,
+   "seg_margin_bp": 144.4,
+   "seg_note": "total segment operating income $453M vs $379M",
+   "op_margin": 5.77,
+   "op_margin_bp": 234.1,
+   "margin_note": "operating income $279M vs $164M; cost of revenue $3,865M vs $3,924M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-07-20",
+   "source": "BK94",
+   "release": "Jul 20",
+   "release_time": "before the open on Jul 20: 8-K accepted 07:07 ET; public before that day's close",
+   "period_end": "2022-06-30",
+   "raw": {
+    "orders_m": 5860,
+    "orders_prior_m": 5093,
+    "rev_m": 5047,
+    "rev_prior_m": 5142,
+    "cor_m": 4077,
+    "cor_prior_m": 4166,
+    "segoi_m": 485,
+    "segoi_prior_m": 444,
+    "oi_m": -25,
+    "oi_prior_m": 194
+   },
+   "segments": [
+    [
+     "Oilfield Services",
+     2689,
+     2358
+    ],
+    [
+     "Oilfield Equipment",
+     541,
+     637
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     1293,
+     1628
+    ],
+    [
+     "Digital Solutions",
+     524,
+     520
+    ]
+   ],
+   "sales_note": "revenue $5,047M vs $5,142M",
+   "orders_note": "orders $5,860M vs $5,093M",
+   "segments_note": "Oilfield Services +14.0%; Oilfield Equipment -15.1%; Turbomachinery & Process Solutions -20.6%; Digital Solutions +0.8%",
+   "eps_q": -0.84,
+   "eps_q_prior": -0.08,
+   "eps_note": "Q2 2022 adjusted (non-GAAP, the release's figure excluding identified items): $0.11 a diluted share; GAAP $(0.84)",
+   "diluted_shares_m": 1001.0,
+   "cash_b": 2.928,
+   "cash_note": "Cash and cash equivalents | 2,928 | 3,853",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $174 million for the second quarter of 2022.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the second quarter ended at $24.3 billion, a decrease of $1.5 billion from the first quarter of 2022.",
+   "next_print": "Q3 2022 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $321 million for the second quarter of 2022. Free cash flow (a non-GAAP measure) for the quarter was $147 million.",
+   "sales_b": 5.047,
+   "sales_pct": -1.8,
+   "orders_pct": 15.1,
+   "gross_margin": 19.22,
+   "gross_margin_bp": 23.8,
+   "seg_margin": 9.61,
+   "seg_margin_bp": 97.5,
+   "seg_note": "total segment operating income $485M vs $444M",
+   "op_margin": -0.5,
+   "op_margin_bp": -426.8,
+   "margin_note": "operating loss $(25)M vs $194M; cost of revenue $4,077M vs $4,166M",
+   "basis_note": "the operating loss carries $362M of restructuring, impairment and other charges (the Russia operations), as published"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-10-19",
+   "source": "BK95",
+   "release": "Oct 19",
+   "release_time": "before the open on Oct 19: 8-K accepted 07:08 ET; public before that day's close",
+   "period_end": "2022-09-30",
+   "raw": {
+    "orders_m": 6063,
+    "orders_prior_m": 5378,
+    "rev_m": 5369,
+    "rev_prior_m": 5093,
+    "cor_m": 4245,
+    "cor_prior_m": 4083,
+    "segoi_m": 606,
+    "segoi_prior_m": 508,
+    "oi_m": 269,
+    "oi_prior_m": 378
+   },
+   "segments": [
+    [
+     "Oilfield Services",
+     2842,
+     2419
+    ],
+    [
+     "Oilfield Equipment",
+     561,
+     603
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     1438,
+     1562
+    ],
+    [
+     "Digital Solutions",
+     528,
+     510
+    ]
+   ],
+   "sales_note": "revenue $5,369M vs $5,093M",
+   "orders_note": "orders $6,063M vs $5,378M",
+   "segments_note": "Oilfield Services +17.5%; Oilfield Equipment -7.0%; Turbomachinery & Process Solutions -7.9%; Digital Solutions +3.5%",
+   "eps_q": -0.02,
+   "eps_q_prior": 0.01,
+   "eps_note": "Q3 2022 adjusted (non-GAAP, the release's figure excluding identified items): $0.26 a diluted share; GAAP $(0.02)",
+   "diluted_shares_m": 1008.0,
+   "cash_b": 2.851,
+   "cash_note": "Cash and cash equivalents | 2,851 | 3,853",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $180 million for the third quarter of 2022.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the third quarter ended at $24.7 billion, an increase of $0.4 billion from the second quarter of 2022.",
+   "next_print": "Q4 2022 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $597 million for the third quarter of 2022. Free cash flow (a non-GAAP measure) for the quarter was $417 million.",
+   "sales_b": 5.369,
+   "sales_pct": 5.4,
+   "orders_pct": 12.7,
+   "gross_margin": 20.93,
+   "gross_margin_bp": 110.4,
+   "seg_margin": 11.29,
+   "seg_margin_bp": 131.3,
+   "seg_note": "total segment operating income $606M vs $508M",
+   "op_margin": 5.01,
+   "op_margin_bp": -241.2,
+   "margin_note": "operating income $269M vs $378M; cost of revenue $4,245M vs $4,083M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-01-23",
+   "source": "BK97",
+   "release": "Jan 23",
+   "release_time": "before the open on Jan 23: 8-K accepted 07:06 ET; public before that day's close",
+   "period_end": "2022-12-31",
+   "raw": {
+    "orders_m": 8009,
+    "orders_prior_m": 6656,
+    "rev_m": 5905,
+    "rev_prior_m": 5485,
+    "cor_m": 4568,
+    "cor_prior_m": 4281,
+    "segoi_m": 792,
+    "segoi_prior_m": 676,
+    "oi_m": 663,
+    "oi_prior_m": 574
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3579,
+     3185
+    ],
+    [
+     "Industrial & Energy Technology",
+     2325,
+     2300
+    ]
+   ],
+   "sales_note": "revenue $5,905M vs $5,485M",
+   "orders_note": "orders $8,009M vs $6,656M",
+   "segments_note": "Oilfield Services & Equipment +12.4%; Industrial & Energy Technology +1.1%",
+   "eps_q": 0.18,
+   "eps_q_prior": 0.33,
+   "eps_note": "Q4 2022 adjusted (non-GAAP, the release's figure excluding identified items): $0.38 a diluted share; GAAP $0.18",
+   "diluted_shares_m": 1009.0,
+   "cash_b": 2.488,
+   "cash_note": "Cash and cash equivalents | 2,488 | 3,853",
+   "capex_note": "the release has no sentence on capital expenditures (the cash flow table: free cash flow is operating cash flow less capital expenditures net of disposals)",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the fourth quarter ended at $27.8 billion, an increase of $3.1 billion from the third quarter of 2022.",
+   "next_print": "Q1 2023 print (late April)",
+   "cash_return_text": "Cash flows generated from operating activities were $898 million for the fourth quarter of 2022. Free cash flow (a non-GAAP measure) for the quarter was $657 million. Capital expenditures, net of proceeds from disposal of assets, were $241 million for the fourth quarter of 2022. Oilfield Services & Equipment capital expenditures in the quarter were $182 million, Industrial & Energy Technology capital expenditures were $52 million.",
+   "sales_b": 5.905,
+   "sales_pct": 7.7,
+   "orders_pct": 20.3,
+   "gross_margin": 22.64,
+   "gross_margin_bp": 69.1,
+   "seg_margin": 13.41,
+   "seg_margin_bp": 108.8,
+   "seg_note": "total segment operating income $792M vs $676M",
+   "op_margin": 11.23,
+   "op_margin_bp": 76.3,
+   "margin_note": "operating income $663M vs $574M; cost of revenue $4,568M vs $4,281M",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": null,
+    "excluded_note": "a loss: GAAP $(0.61) per Class A share (Q4 2022 release), and no filing publishes a full-year figure excluding its items, so no P/E",
+    "revenue_usd_b": 21.156,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2022 excluded: a loss of $(0.61) per Class A share, with no published full-year figure excluding its items (Q4 2022 release)",
+    "op_margin": 5.6,
+    "op_margin_note": "FY22 operating income $1,185M / revenue $21,156M (Q4 2022 release)",
+    "sales_growth": 3.2,
+    "sales_note": "revenue $21,156M vs $20,502M, as reported (Q4 2022 release)",
+    "orders_pct": 23.5,
+    "orders_note": "orders $26,770M vs $21,668M, the Q4 2022 release's total-year table",
+    "check_pretax_margin": 0.1,
+    "check_pretax_note": "FY22 income before income taxes $22M / revenue $21,156M (Q4 2022 release)",
+    "tax_rate": 27.273,
+    "tax_note": "FY22 effective rate: an income tax provision of $600M on income before income taxes of $22M",
+    "groups": [
+     [
+      "Oilfield Services & Equipment",
+      13229,
+      10.0
+     ],
+     [
+      "Industrial & Energy Technology",
+      7926,
+      -6.5
+     ]
+    ],
+    "groups_basis": "FY22 segment revenue (Q4 2022 release's total-year table)"
+   }
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-04-19",
+   "source": "BK99",
+   "release": "Apr 19",
+   "release_time": "before the open on Apr 19: 8-K accepted 07:06 ET; public before that day's close",
+   "period_end": "2023-03-31",
+   "raw": {
+    "orders_m": 7632,
+    "orders_prior_m": 6837,
+    "rev_m": 5716,
+    "rev_prior_m": 4835,
+    "cor_m": 4567,
+    "cor_prior_m": 3865,
+    "segoi_m": 612,
+    "segoi_prior_m": 453,
+    "oi_m": 438,
+    "oi_prior_m": 279
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3577,
+     3017
+    ],
+    [
+     "Industrial & Energy Technology",
+     2138,
+     1818
+    ]
+   ],
+   "sales_note": "revenue $5,716M vs $4,835M",
+   "orders_note": "orders $7,632M vs $6,837M",
+   "segments_note": "Oilfield Services & Equipment +18.6%; Industrial & Energy Technology +17.6%",
+   "eps_q": 0.57,
+   "eps_q_prior": 0.08,
+   "eps_note": "Q1 2023 adjusted (non-GAAP, the release's figure excluding identified items): $0.28 a diluted share; GAAP $0.57",
+   "diluted_shares_m": 1018.0,
+   "cash_b": 2.415,
+   "cash_note": "Cash and cash equivalents | 2,415 | 2,488",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $264 million for the first quarter of 2023. Oilfield Services & Equipment capital expenditures in the quarter were $188 million, and Industrial & Energy Technology capital expenditures were $69 million.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the first quarter ended at $29.6 billion, an increase of $1.8 billion from the fourth quarter of 2022.",
+   "next_print": "Q2 2023 print (late July)",
+   "cash_return_text": "Cash flow from operating activities was $461 million for the first quarter of 2023. Free cash flow (a non-GAAP measure) for the quarter was $197 million.",
+   "sales_b": 5.716,
+   "sales_pct": 18.2,
+   "orders_pct": 11.6,
+   "gross_margin": 20.1,
+   "gross_margin_bp": 3.9,
+   "seg_margin": 10.71,
+   "seg_margin_bp": 133.8,
+   "seg_note": "total segment operating income $612M vs $453M",
+   "op_margin": 7.66,
+   "op_margin_bp": 189.2,
+   "margin_note": "operating income $438M vs $279M; cost of revenue $4,567M vs $3,865M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-07-19",
+   "source": "BK100",
+   "release": "Jul 19",
+   "release_time": "before the open on Jul 19: 8-K accepted 07:04 ET; public before that day's close",
+   "period_end": "2023-06-30",
+   "raw": {
+    "orders_m": 7474,
+    "orders_prior_m": 5860,
+    "rev_m": 6315,
+    "rev_prior_m": 5047,
+    "cor_m": 5004,
+    "cor_prior_m": 4077,
+    "segoi_m": 728,
+    "segoi_prior_m": 485,
+    "oi_m": 514,
+    "oi_prior_m": -25
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3877,
+     3230
+    ],
+    [
+     "Industrial & Energy Technology",
+     2438,
+     1816
+    ]
+   ],
+   "sales_note": "revenue $6,315M vs $5,047M",
+   "orders_note": "orders $7,474M vs $5,860M",
+   "segments_note": "Oilfield Services & Equipment +20.0%; Industrial & Energy Technology +34.3%",
+   "eps_q": 0.4,
+   "eps_q_prior": -0.84,
+   "eps_note": "Q2 2023 adjusted (non-GAAP, the release's figure excluding identified items): $0.39 a diluted share; GAAP $0.40",
+   "diluted_shares_m": 1015.0,
+   "cash_b": 2.805,
+   "cash_note": "Cash and cash equivalents | 2,805 | 2,488",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $235 million for the second quarter of 2023. OFSE capital expenditures in the quarter were $187 million, and IET capital expenditures were $42 million.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the second quarter ended at $31 billion, an increase of $1.3 billion from the first quarter of 2023.",
+   "next_print": "Q3 2023 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $858 million for the second quarter of 2023. Free cash flow (a non-GAAP measure) for the quarter was $623 million.",
+   "sales_b": 6.315,
+   "sales_pct": 25.1,
+   "orders_pct": 27.5,
+   "gross_margin": 20.76,
+   "gross_margin_bp": 154.1,
+   "seg_margin": 11.53,
+   "seg_margin_bp": 191.8,
+   "seg_note": "total segment operating income $728M vs $485M",
+   "op_margin": 8.14,
+   "op_margin_bp": 863.5,
+   "margin_note": "operating income $514M vs $(25)M; cost of revenue $5,004M vs $4,077M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-10-26",
+   "source": "BK101",
+   "release": "Oct 25",
+   "release_time": "after the close on Oct 25 (8-K accepted 17:04 ET): public before the open on the next trading day, 2023-10-26",
+   "period_end": "2023-09-30",
+   "raw": {
+    "orders_m": 8512,
+    "orders_prior_m": 6063,
+    "rev_m": 6641,
+    "rev_prior_m": 5369,
+    "cor_m": 5298,
+    "cor_prior_m": 4245,
+    "segoi_m": 811,
+    "segoi_prior_m": 606,
+    "oi_m": 714,
+    "oi_prior_m": 269
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3951,
+     3403
+    ],
+    [
+     "Industrial & Energy Technology",
+     2691,
+     1967
+    ]
+   ],
+   "sales_note": "revenue $6,641M vs $5,369M",
+   "orders_note": "orders $8,512M vs $6,063M",
+   "segments_note": "Oilfield Services & Equipment +16.1%; Industrial & Energy Technology +36.8%",
+   "eps_q": 0.51,
+   "eps_q_prior": -0.02,
+   "eps_note": "Q3 2023 adjusted (non-GAAP, the release's figure excluding identified items): $0.42 a diluted share; GAAP $0.51",
+   "diluted_shares_m": 1017.0,
+   "cash_b": 3.201,
+   "cash_note": "Cash and cash equivalents | 3,201 | 2,488",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $219 million for the third quarter of 2023. Capital expenditures, net of proceeds from disposal of assets, were $161 million for OFSE, and $41 million for IET.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the third quarter ended at $32.4 billion, an increase of $1.4 billion from the second quarter of 2023.",
+   "next_print": "Q4 2023 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $811 million for the third quarter of 2023. Free cash flow (a non-GAAP measure) for the quarter was $592 million.",
+   "sales_b": 6.641,
+   "sales_pct": 23.7,
+   "orders_pct": 40.4,
+   "gross_margin": 20.22,
+   "gross_margin_bp": -71.2,
+   "seg_margin": 12.21,
+   "seg_margin_bp": 92.5,
+   "seg_note": "total segment operating income $811M vs $606M",
+   "op_margin": 10.75,
+   "op_margin_bp": 574.1,
+   "margin_note": "operating income $714M vs $269M; cost of revenue $5,298M vs $4,245M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2023",
+   "fy": 2023,
+   "q": 4,
+   "published": "2024-01-24",
+   "source": "BK102",
+   "release": "Jan 23",
+   "release_time": "after the close on Jan 23 (8-K accepted 17:25 ET): public before the open on the next trading day, 2024-01-24",
+   "period_end": "2023-12-31",
+   "raw": {
+    "orders_m": 6904,
+    "orders_prior_m": 8009,
+    "rev_m": 6835,
+    "rev_prior_m": 5905,
+    "cor_m": 5386,
+    "cor_prior_m": 4568,
+    "segoi_m": 904,
+    "segoi_prior_m": 792,
+    "oi_m": 651,
+    "oi_prior_m": 663
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3956,
+     3579
+    ],
+    [
+     "Industrial & Energy Technology",
+     2879,
+     2325
+    ]
+   ],
+   "sales_note": "revenue $6,835M vs $5,905M",
+   "orders_note": "orders $6,904M vs $8,009M",
+   "segments_note": "Oilfield Services & Equipment +10.5%; Industrial & Energy Technology +23.8%",
+   "eps_q": 0.43,
+   "eps_q_prior": 0.18,
+   "eps_note": "Q4 2023 adjusted (non-GAAP, the release's figure excluding identified items): $0.51 a diluted share; GAAP $0.43",
+   "diluted_shares_m": 1010.0,
+   "cash_b": 2.646,
+   "cash_note": "Cash and cash equivalents | 2,646 | 2,488",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $298 million for the fourth quarter of 2023. Capital expenditures, net of proceeds from disposal of assets, were $221 million for OFSE, and $71 million for IET.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the fourth quarter ended at $33.5 billion, an increase of $1.0 billion from the third quarter of 2023.",
+   "next_print": "Q1 2024 print (late April)",
+   "cash_return_text": "Cash flow from operating activities was $932 million for the fourth quarter of 2023. Free cash flow (a non-GAAP measure) for the quarter was $633 million.",
+   "sales_b": 6.835,
+   "sales_pct": 15.7,
+   "orders_pct": -13.8,
+   "gross_margin": 21.2,
+   "gross_margin_bp": -144.2,
+   "seg_margin": 13.23,
+   "seg_margin_bp": -18.6,
+   "seg_note": "total segment operating income $904M vs $792M",
+   "op_margin": 9.52,
+   "op_margin_bp": -170.3,
+   "margin_note": "operating income $651M vs $663M; cost of revenue $5,386M vs $4,568M",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": 1.6,
+    "eps_basis": "company adjusted",
+    "restates": {
+     "2022": 0.91
+    },
+    "restates_note": "2022 at the company's adjusted diluted EPS of $0.91, first published in the Q4 2023 release (GAAP $(0.61)): the year enters the history, having been excluded as a loss with no published full-year figure",
+    "revenue_usd_b": 25.506,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2023 $1.60: the company's adjusted diluted EPS for the year (Q4 2023 release, the table reconciling net income to adjusted net income; GAAP $1.91); 2022 $0.91 adjusted, first published in the same release (GAAP $(0.61)), so 2022 enters the history",
+    "op_margin": 9.08,
+    "op_margin_note": "FY23 operating income $2,317M / revenue $25,506M (Q4 2023 release)",
+    "sales_growth": 20.6,
+    "sales_note": "revenue $25,506M vs $21,156M, as reported (Q4 2023 release)",
+    "orders_pct": 14.0,
+    "orders_note": "orders $30,522M vs $26,770M, the Q4 2023 release's total-year table",
+    "check_pretax_margin": 10.41,
+    "check_pretax_note": "FY23 income before income taxes $2,655M / revenue $25,506M (Q4 2023 release)",
+    "tax_rate": 0.258,
+    "tax_note": "FY23 effective rate: an income tax provision of $685M on income before income taxes of $2,655M",
+    "groups": [
+     [
+      "Oilfield Services & Equipment",
+      15361,
+      16.1
+     ],
+     [
+      "Industrial & Energy Technology",
+      10145,
+      28.0
+     ]
+    ],
+    "groups_basis": "FY23 segment revenue (Q4 2023 release's total-year table)"
+   }
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2024",
+   "fy": 2024,
+   "q": 1,
+   "published": "2024-04-24",
+   "source": "BK104",
+   "release": "Apr 23",
+   "release_time": "after the close on Apr 23 (8-K accepted 17:14 ET): public before the open on the next trading day, 2024-04-24",
+   "period_end": "2024-03-31",
+   "raw": {
+    "orders_m": 6542,
+    "orders_prior_m": 7632,
+    "rev_m": 6418,
+    "rev_prior_m": 5716,
+    "cor_m": 5140,
+    "cor_prior_m": 4567,
+    "segoi_m": 752,
+    "segoi_prior_m": 612,
+    "oi_m": 653,
+    "oi_prior_m": 438
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3783,
+     3577
+    ],
+    [
+     "Industrial & Energy Technology",
+     2634,
+     2138
+    ]
+   ],
+   "sales_note": "revenue $6,418M vs $5,716M",
+   "orders_note": "orders $6,542M vs $7,632M",
+   "segments_note": "Oilfield Services & Equipment +5.8%; Industrial & Energy Technology +23.2%",
+   "eps_q": 0.45,
+   "eps_q_prior": 0.57,
+   "eps_note": "Q1 2024 adjusted (non-GAAP, the release's figure excluding identified items): $0.43 a diluted share; GAAP $0.45",
+   "diluted_shares_m": 1004.0,
+   "cash_b": 2.717,
+   "cash_note": "Cash and cash equivalents | 2,717 | 2,646",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $282 million for the first quarter of 2024. Capital expenditures, net of proceeds from disposal of assets, were $210 million for OFSE, and $69 million for IET.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the first quarter ended at $32.7 billion, a decrease of $0.8 billion from the fourth quarter of 2023.",
+   "next_print": "Q2 2024 print (late July)",
+   "cash_return_text": "Cash flow from operating activities was $784 million for the first quarter of 2024. Free cash flow (a non-GAAP measure) for the quarter was $502 million.",
+   "sales_b": 6.418,
+   "sales_pct": 12.3,
+   "orders_pct": -14.3,
+   "gross_margin": 19.91,
+   "gross_margin_bp": -18.9,
+   "seg_margin": 11.72,
+   "seg_margin_bp": 101.0,
+   "seg_note": "total segment operating income $752M vs $612M",
+   "op_margin": 10.17,
+   "op_margin_bp": 251.2,
+   "margin_note": "operating income $653M vs $438M; cost of revenue $5,140M vs $4,567M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2024",
+   "fy": 2024,
+   "q": 2,
+   "published": "2024-07-26",
+   "source": "BK105",
+   "release": "Jul 25",
+   "release_time": "after the close on Jul 25 (8-K accepted 17:10 ET): public before the open on the next trading day, 2024-07-26",
+   "period_end": "2024-06-30",
+   "raw": {
+    "orders_m": 7526,
+    "orders_prior_m": 7474,
+    "rev_m": 7139,
+    "rev_prior_m": 6315,
+    "cor_m": 5649,
+    "cor_prior_m": 5004,
+    "segoi_m": 935,
+    "segoi_prior_m": 728,
+    "oi_m": 833,
+    "oi_prior_m": 514
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     4011,
+     3877
+    ],
+    [
+     "Industrial & Energy Technology",
+     3128,
+     2438
+    ]
+   ],
+   "sales_note": "revenue $7,139M vs $6,315M",
+   "orders_note": "orders $7,526M vs $7,474M",
+   "segments_note": "Oilfield Services & Equipment +3.5%; Industrial & Energy Technology +28.3%",
+   "eps_q": 0.58,
+   "eps_q_prior": 0.4,
+   "eps_note": "Q2 2024 adjusted (non-GAAP, the release's figure excluding identified items): $0.57 a diluted share; GAAP $0.58",
+   "diluted_shares_m": 1001.0,
+   "cash_b": 2.284,
+   "cash_note": "Cash and cash equivalents | 2,284 | 2,646",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $242 million for the second quarter of 2024. Capital expenditures, net of proceeds from disposal of assets, were $167 million for OFSE, and $65 million for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the second quarter ended at $33.5 billion, an increase of $0.8 billion from the first quarter of 2024.",
+   "next_print": "Q3 2024 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $348 million for the second quarter of 2024. Free cash flow (a non-GAAP financial measure) for the quarter was $106 million.",
+   "sales_b": 7.139,
+   "sales_pct": 13.0,
+   "orders_pct": 0.7,
+   "gross_margin": 20.87,
+   "gross_margin_bp": 11.1,
+   "seg_margin": 13.1,
+   "seg_margin_bp": 156.9,
+   "seg_note": "total segment operating income $935M vs $728M",
+   "op_margin": 11.67,
+   "op_margin_bp": 352.9,
+   "margin_note": "operating income $833M vs $514M; cost of revenue $5,649M vs $5,004M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2024",
+   "fy": 2024,
+   "q": 3,
+   "published": "2024-10-23",
+   "source": "BK106",
+   "release": "Oct 22",
+   "release_time": "after the close on Oct 22 (8-K accepted 17:14 ET): public before the open on the next trading day, 2024-10-23",
+   "period_end": "2024-09-30",
+   "raw": {
+    "orders_m": 6676,
+    "orders_prior_m": 8512,
+    "rev_m": 6908,
+    "rev_prior_m": 6641,
+    "cor_m": 5366,
+    "cor_prior_m": 5298,
+    "segoi_m": 1021,
+    "segoi_prior_m": 811,
+    "oi_m": 930,
+    "oi_prior_m": 714
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3963,
+     3951
+    ],
+    [
+     "Industrial & Energy Technology",
+     2945,
+     2691
+    ]
+   ],
+   "sales_note": "revenue $6,908M vs $6,641M",
+   "orders_note": "orders $6,676M vs $8,512M",
+   "segments_note": "Oilfield Services & Equipment +0.3%; Industrial & Energy Technology +9.4%",
+   "eps_q": 0.77,
+   "eps_q_prior": 0.51,
+   "eps_note": "Q3 2024 adjusted (non-GAAP, the release's figure excluding identified items): $0.67 a diluted share; GAAP $0.77",
+   "diluted_shares_m": 999.0,
+   "cash_b": 2.664,
+   "cash_note": "Cash and cash equivalents | 2,664 | 2,646",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $256 million for the third quarter of 2024, of which $182 million for OFSE and $62 million for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the third quarter ended at $33.4 billion, a decrease of $0.1 billion from the second quarter of 2024.",
+   "next_print": "Q4 2024 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $1,010 million for the third quarter of 2024. Free cash flow (a non-GAAP financial measure) for the quarter was $754 million.",
+   "sales_b": 6.908,
+   "sales_pct": 4.0,
+   "orders_pct": -21.6,
+   "gross_margin": 22.32,
+   "gross_margin_bp": 209.9,
+   "seg_margin": 14.78,
+   "seg_margin_bp": 256.8,
+   "seg_note": "total segment operating income $1,021M vs $811M (the two segments' operating income summed: the release gives no total)",
+   "op_margin": 13.46,
+   "op_margin_bp": 271.1,
+   "margin_note": "operating income $930M vs $714M; cost of revenue $5,366M vs $5,298M"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2024",
+   "fy": 2024,
+   "q": 4,
+   "published": "2025-01-31",
+   "source": "BK107",
+   "release": "Jan 30",
+   "release_time": "after the close on Jan 30 (8-K accepted 17:10 ET): public before the open on the next trading day, 2025-01-31",
+   "period_end": "2024-12-31",
+   "raw": {
+    "orders_m": 7496,
+    "orders_prior_m": 6904,
+    "rev_m": 7364,
+    "rev_prior_m": 6835,
+    "cor_m": 5833,
+    "cor_prior_m": 5386,
+    "segoi_m": 1110,
+    "segoi_prior_m": 904,
+    "oi_m": 665,
+    "oi_prior_m": 651
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3871,
+     3956
+    ],
+    [
+     "Industrial & Energy Technology",
+     3492,
+     2879
+    ]
+   ],
+   "sales_note": "revenue $7,364M vs $6,835M",
+   "orders_note": "orders $7,496M vs $6,904M",
+   "segments_note": "Oilfield Services & Equipment -2.1%; Industrial & Energy Technology +21.3%",
+   "eps_q": 1.18,
+   "eps_q_prior": 0.43,
+   "eps_note": "Q4 2024 adjusted (non-GAAP, the release's figure excluding identified items): $0.70 a diluted share; GAAP $1.18",
+   "diluted_shares_m": 999.0,
+   "cash_b": 3.364,
+   "cash_note": "Cash and cash equivalents | 3,364 | 2,646",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $295 million for the fourth quarter of 2024, of which $195 million was for OFSE and $87 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the fourth quarter of 2024 ended at $33.1 billion, a decrease of $0.3 billion from the third quarter of 2024.",
+   "next_print": "Q1 2025 print (late April)",
+   "cash_return_text": "Cash flow from operating activities was $1,189 million for the fourth quarter of 2024. Free cash flow (a non-GAAP financial measure) for the quarter was $894 million.",
+   "sales_b": 7.364,
+   "sales_pct": 7.7,
+   "orders_pct": 8.6,
+   "gross_margin": 20.79,
+   "gross_margin_bp": -40.9,
+   "seg_margin": 15.07,
+   "seg_margin_bp": 184.7,
+   "seg_note": "total segment operating income $1,110M vs $904M (the two segments' operating income summed: the release gives no total)",
+   "op_margin": 9.03,
+   "op_margin_bp": -49.4,
+   "margin_note": "operating income $665M vs $651M; cost of revenue $5,833M vs $5,386M",
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 2.35,
+    "eps_basis": "company adjusted",
+    "revenue_usd_b": 27.829,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2024 $2.35: the company's adjusted diluted EPS for the year (Q4 2024 release, the table reconciling net income to adjusted net income; GAAP $2.98)",
+    "op_margin": 11.07,
+    "op_margin_note": "FY24 operating income $3,081M / revenue $27,829M (Q4 2024 release)",
+    "sales_growth": 9.1,
+    "sales_note": "revenue $27,829M vs $25,506M, as reported (Q4 2024 release)",
+    "orders_pct": -7.5,
+    "orders_note": "orders $28,240M vs $30,522M, the Q4 2024 release's total-year table",
+    "check_pretax_margin": 11.73,
+    "check_pretax_note": "FY24 income before income taxes $3,265M / revenue $27,829M (Q4 2024 release)",
+    "tax_rate": 0.079,
+    "tax_note": "FY24 effective rate: an income tax provision of $257M on income before income taxes of $3,265M",
+    "groups": [
+     [
+      "Oilfield Services & Equipment",
+      15628,
+      1.7
+     ],
+     [
+      "Industrial & Energy Technology",
+      12201,
+      20.3
+     ]
+    ],
+    "groups_basis": "FY24 segment revenue (Q4 2024 release's total-year table)"
+   }
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2025",
+   "fy": 2025,
+   "q": 1,
+   "published": "2025-04-23",
+   "source": "BK109",
+   "release": "Apr 22",
+   "release_time": "after the close on Apr 22 (8-K accepted 17:08 ET): public before the open on the next trading day, 2025-04-23",
+   "period_end": "2025-03-31",
+   "raw": {
+    "orders_m": 6459,
+    "orders_prior_m": 6542,
+    "rev_m": 6427,
+    "rev_prior_m": 6418,
+    "cor_m": 4952,
+    "cor_prior_m": 4976
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3499,
+     3783
+    ],
+    [
+     "Industrial & Energy Technology",
+     2928,
+     2634
+    ]
+   ],
+   "sales_note": "revenue $6,427M vs $6,418M",
+   "orders_note": "orders $6,459M vs $6,542M",
+   "segments_note": "Oilfield Services & Equipment -7.5%; Industrial & Energy Technology +11.2%",
+   "eps_q": 0.4,
+   "eps_q_prior": 0.45,
+   "eps_note": "Q1 2025 adjusted (non-GAAP, the release's figure excluding identified items): $0.51 a diluted share; GAAP $0.40",
+   "diluted_shares_m": 999.0,
+   "cash_b": 3.277,
+   "cash_note": "Cash and cash equivalents | 3,277 | 3,364",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $255 million for the first quarter of 2025, of which $158 million was for OFSE and $83 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the first quarter of 2025 ended at $33.2 billion, a decrease of $0.1 billion from the fourth quarter of 2024.",
+   "next_print": "Q2 2025 print (late July)",
+   "cash_return_text": "Cash flow from operating activities was $709 million for the first quarter of 2025. Free cash flow (a non-GAAP financial measure) for the quarter was $454 million.",
+   "sales_b": 6.427,
+   "sales_pct": 0.1,
+   "orders_pct": -1.3,
+   "gross_margin": 22.95,
+   "gross_margin_bp": 48.2,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $4,952M vs $4,976M, research and development costs a separate line"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2025",
+   "fy": 2025,
+   "q": 2,
+   "published": "2025-07-23",
+   "source": "BK110",
+   "release": "Jul 22",
+   "release_time": "after the close on Jul 22 (8-K accepted 17:10 ET): public before the open on the next trading day, 2025-07-23",
+   "period_end": "2025-06-30",
+   "raw": {
+    "orders_m": 7032,
+    "orders_prior_m": 7526,
+    "rev_m": 6910,
+    "rev_prior_m": 7139,
+    "cor_m": 5295,
+    "cor_prior_m": 5493
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3617,
+     4011
+    ],
+    [
+     "Industrial & Energy Technology",
+     3293,
+     3128
+    ]
+   ],
+   "sales_note": "revenue $6,910M vs $7,139M",
+   "orders_note": "orders $7,032M vs $7,526M",
+   "segments_note": "Oilfield Services & Equipment -9.8%; Industrial & Energy Technology +5.3%",
+   "eps_q": 0.71,
+   "eps_q_prior": 0.58,
+   "eps_note": "Q2 2025 adjusted (non-GAAP, the release's figure excluding identified items): $0.63 a diluted share; GAAP $0.71",
+   "diluted_shares_m": 991.0,
+   "cash_b": 3.087,
+   "cash_note": "Cash and cash equivalents | 3,087 | 3,364",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $271 million for the second quarter of 2025, of which $184 million was for OFSE and $68 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the second quarter of 2025 ended at $34 billion, an increase of $0.8 billion from the first quarter of 2025.",
+   "next_print": "Q3 2025 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $510 million for the second quarter of 2025. Free cash flow (a non-GAAP financial measure) for the quarter was $239 million.",
+   "sales_b": 6.91,
+   "sales_pct": -3.2,
+   "orders_pct": -6.6,
+   "gross_margin": 23.37,
+   "gross_margin_bp": 31.5,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $5,295M vs $5,493M, research and development costs a separate line"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2025",
+   "fy": 2025,
+   "q": 3,
+   "published": "2025-10-24",
+   "source": "BK111",
+   "release": "Oct 23",
+   "release_time": "after the close on Oct 23 (8-K accepted 17:25 ET): public before the open on the next trading day, 2025-10-24",
+   "period_end": "2025-09-30",
+   "raw": {
+    "orders_m": 8207,
+    "orders_prior_m": 6676,
+    "rev_m": 7010,
+    "rev_prior_m": 6908,
+    "cor_m": 5309,
+    "cor_prior_m": 5208
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3636,
+     3963
+    ],
+    [
+     "Industrial & Energy Technology",
+     3374,
+     2945
+    ]
+   ],
+   "sales_note": "revenue $7,010M vs $6,908M",
+   "orders_note": "orders $8,207M vs $6,676M",
+   "segments_note": "Oilfield Services & Equipment -8.3%; Industrial & Energy Technology +14.6%",
+   "eps_q": 0.61,
+   "eps_q_prior": 0.77,
+   "eps_note": "Q3 2025 adjusted (non-GAAP, the release's figure excluding identified items): $0.68 a diluted share; GAAP $0.61",
+   "diluted_shares_m": 992.0,
+   "cash_b": 2.693,
+   "cash_note": "Cash and cash equivalents | 2,693 | 3,364",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $230 million for the third quarter of 2025, of which $148 million was for OFSE and $67 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the third quarter of 2025 ended at $35.3 billion, an increase of $1.3 billion from the second quarter of 2025.",
+   "next_print": "Q4 2025 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $929 million for the third quarter of 2025. Free cash flow (a non-GAAP financial measure) for the quarter was $699 million.",
+   "sales_b": 7.01,
+   "sales_pct": 1.5,
+   "orders_pct": 22.9,
+   "gross_margin": 24.27,
+   "gross_margin_bp": -34.4,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $5,309M vs $5,208M, research and development costs a separate line"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2025",
+   "fy": 2025,
+   "q": 4,
+   "published": "2026-01-26",
+   "source": "BK112",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 06:09 ET; public before that day's close",
+   "period_end": "2025-12-31",
+   "raw": {
+    "orders_m": 7886,
+    "orders_prior_m": 7496,
+    "rev_m": 7386,
+    "rev_prior_m": 7364,
+    "cor_m": 5633,
+    "cor_prior_m": 5670
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3572,
+     3871
+    ],
+    [
+     "Industrial & Energy Technology",
+     3814,
+     3492
+    ]
+   ],
+   "sales_note": "revenue $7,386M vs $7,364M",
+   "orders_note": "orders $7,886M vs $7,496M",
+   "segments_note": "Oilfield Services & Equipment -7.7%; Industrial & Energy Technology +9.2%",
+   "eps_q": 0.88,
+   "eps_q_prior": 1.18,
+   "eps_note": "Q4 2025 adjusted (non-GAAP, the release's figure excluding identified items): $0.78 a diluted share; GAAP $0.88",
+   "diluted_shares_m": 994.0,
+   "cash_b": 3.715,
+   "cash_note": "Cash and cash equivalents | 3,715 | 3,364",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $321 million for the fourth quarter of 2025, of which $206 million was for OFSE and $103 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the fourth quarter of 2025 ended at $35.9 billion, an increase of $0.6 billion from the third quarter of 2025.",
+   "next_print": "Q1 2026 print (late April)",
+   "cash_return_text": "Cash flow from operating activities was $1,662 million for the fourth quarter of 2025. Free cash flow (a non-GAAP financial measure) for the quarter was $1,341 million.",
+   "sales_b": 7.386,
+   "sales_pct": 0.3,
+   "orders_pct": 5.2,
+   "gross_margin": 23.73,
+   "gross_margin_bp": 73.0,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $5,633M vs $5,670M, research and development costs a separate line",
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 2.6,
+    "eps_basis": "company adjusted",
+    "revenue_usd_b": 27.733,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2025 $2.60: the company's adjusted diluted EPS for the year (Q4 2025 release, the table reconciling net income to adjusted net income; GAAP $2.60)",
+    "op_margin": null,
+    "op_margin_note": "FY25: no operating income line in the statement of income (Q4 2025 release)",
+    "sales_growth": -0.3,
+    "sales_note": "revenue $27,733M vs $27,829M, as reported (Q4 2025 release)",
+    "orders_pct": 4.8,
+    "orders_note": "orders $29,585M vs $28,240M, the Q4 2025 release's total-year table",
+    "check_pretax_margin": 10.37,
+    "check_pretax_note": "FY25 income before income taxes $2,877M / revenue $27,733M (Q4 2025 release)",
+    "tax_rate": 0.088,
+    "tax_note": "FY25 effective rate: an income tax provision of $253M on income before income taxes of $2,877M",
+    "groups": [
+     [
+      "Oilfield Services & Equipment",
+      14324,
+      -8.3
+     ],
+     [
+      "Industrial & Energy Technology",
+      13409,
+      9.9
+     ]
+    ],
+    "groups_basis": "FY25 segment revenue (Q4 2025 release's total-year table)"
+   }
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2026",
+   "fy": 2026,
+   "q": 1,
+   "published": "2026-04-24",
+   "source": "BK114",
+   "release": "Apr 23",
+   "release_time": "after the close on Apr 23 (8-K accepted 17:14 ET): public before the open on the next trading day, 2026-04-24",
+   "period_end": "2026-03-31",
+   "raw": {
+    "orders_m": 8159,
+    "orders_prior_m": 6459,
+    "rev_m": 6587,
+    "rev_prior_m": 6427,
+    "cor_m": 5083,
+    "cor_prior_m": 4952
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3237,
+     3499
+    ],
+    [
+     "Industrial & Energy Technology",
+     3350,
+     2928
+    ]
+   ],
+   "sales_note": "revenue $6,587M vs $6,427M",
+   "orders_note": "orders $8,159M vs $6,459M",
+   "segments_note": "Oilfield Services & Equipment -7.5%; Industrial & Energy Technology +14.4%",
+   "eps_q": 0.93,
+   "eps_q_prior": 0.4,
+   "eps_note": "Q1 2026 adjusted (non-GAAP, the release's figure excluding identified items): $0.58 a diluted share; GAAP $0.93",
+   "diluted_shares_m": 996.0,
+   "cash_b": 14.764,
+   "cash_note": "Cash and cash equivalents | 14,764 | 3,715",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $290 million for the first quarter of 2026, of which $177 million was for OFSE and $100 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the first quarter of 2026 ended at $36.1 billion, an increase of $0.2 billion from the fourth quarter of 2025.",
+   "next_print": "Q2 2026 print (late July)",
+   "cash_return_text": "Cash flow from operating activities was $500 million for the first quarter of 2026. Free cash flow (a non-GAAP financial measure) for the quarter was $210 million.",
+   "sales_b": 6.587,
+   "sales_pct": 2.5,
+   "orders_pct": 26.3,
+   "gross_margin": 22.83,
+   "gross_margin_bp": -11.7,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $5,083M vs $4,952M, research and development costs a separate line"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2026",
+   "fy": 2026,
+   "q": 2,
+   "published": "2026-07-27",
+   "source": "BK115",
+   "release": "Jul 27",
+   "release_time": "before the open on Jul 27: 8-K accepted 06:07 ET; public before that day's close",
+   "period_end": "2026-06-30",
+   "raw": {
+    "orders_m": 10501,
+    "orders_prior_m": 7032,
+    "rev_m": 6742,
+    "rev_prior_m": 6910,
+    "cor_m": 5165,
+    "cor_prior_m": 5295
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3451,
+     3617
+    ],
+    [
+     "Industrial & Energy Technology",
+     3291,
+     3293
+    ]
+   ],
+   "sales_note": "revenue $6,742M vs $6,910M",
+   "orders_note": "orders $10,501M vs $7,032M",
+   "segments_note": "Oilfield Services & Equipment -4.6%; Industrial & Energy Technology -0.1%",
+   "eps_q": 0.68,
+   "eps_q_prior": 0.71,
+   "eps_note": "Q2 2026 adjusted (non-GAAP, the release's figure excluding identified items): $0.64 a diluted share; GAAP $0.68",
+   "diluted_shares_m": 997.0,
+   "cash_b": 15.727,
+   "cash_note": "Cash and cash equivalents | 15,727 | 3,715",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $236 million for the second quarter of 2026, of which $135 million was for OFSE and $85 million was for IET.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the second quarter of 2026 ended at $40.1 billion, an increase of $4.0 billion from the first quarter of 2026.",
+   "next_print": "Q3 2026 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $1,345 million for the second quarter of 2026. Free cash flow (a non-GAAP financial measure) for the quarter was $1,109 million.",
+   "sales_b": 6.742,
+   "sales_pct": -2.4,
+   "orders_pct": 49.3,
+   "gross_margin": 23.39,
+   "gross_margin_bp": 1.9,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $5,165M vs $5,295M, research and development costs a separate line"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2026",
+   "fy": 2026,
+   "q": 3,
+   "published": "2026-10-28",
+   "source": "BK117",
+   "release": "Oct 27",
+   "release_time": "after the close on Oct 27 (8-K accepted 17:05 ET): public before the open on the next trading day, 2026-10-28",
+   "period_end": "2026-09-30",
+   "raw": {
+    "orders_m": 10764,
+    "orders_prior_m": 8207,
+    "rev_m": 8025,
+    "rev_prior_m": 7010,
+    "cor_m": 6097,
+    "cor_prior_m": 5309
+   },
+   "segments": [
+    [
+     "Oilfield Services & Equipment",
+     3660,
+     3636
+    ],
+    [
+     "Industrial & Energy Technology",
+     3477,
+     3374
+    ],
+    [
+     "Chart",
+     888,
+     null
+    ]
+   ],
+   "sales_note": "revenue $8,025M vs $7,010M",
+   "orders_note": "orders $10,764M vs $8,207M",
+   "segments_note": "Oilfield Services & Equipment +0.7%; Industrial & Energy Technology +3.1%; Chart $888M (new: no year-ago quarter)",
+   "eps_q": 0.41,
+   "eps_q_prior": 0.61,
+   "eps_note": "Q3 2026 adjusted (non-GAAP, the release's figure excluding identified items): $0.70 a diluted share; GAAP $0.41",
+   "diluted_shares_m": 998.0,
+   "cash_b": 4.068,
+   "cash_note": "Cash and cash equivalents | 4,068 | 3,715",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $236 million for the third quarter of 2026, of which $145 million was for OFSE, $65 million was for IET, and $15 million was for Chart.",
+   "rpo_note": "Remaining Performance Obligations (\"RPO\") in the third quarter of 2026 ended at $46.4 billion, an increase of $6.4 billion from the second quarter of 2026.",
+   "next_print": "Q4 2026 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $1,005 million for the third quarter of 2026. Free cash flow (a non-GAAP financial measure) for the quarter was $769 million.",
+   "sales_b": 8.025,
+   "sales_pct": 14.5,
+   "orders_pct": 31.2,
+   "gross_margin": 24.02,
+   "gross_margin_bp": -24.0,
+   "seg_margin": null,
+   "seg_margin_bp": null,
+   "seg_note": "segment operating income is not reported (the release gives segment EBITDA)",
+   "op_margin": null,
+   "op_margin_bp": null,
+   "margin_note": "operating income is not reported (no such line in the statement of income from the first quarter of 2025); cost of revenue $6,097M vs $5,309M, research and development costs a separate line",
+   "basis_note": "Chart Industries is in the results from its acquisition on July 16, 2026, as published; the year-ago quarter is without it"
   }
  ],
  "guides": [
@@ -5712,6 +7841,18 @@
    "doc": "8-K of 2020-04-13",
    "quarter": "Q1 2020",
    "display": "The Company expects to record a non-cash goodwill impairment charge of approximately $15 billion in the first quarter of 2020. The Company has approved a plan that will result in restructuring, impairment, and other charges of approximately $1.8 billion, of which approximately $1.5 billion will be recorded in the first quarter of 2020. Approved a plan to reduce 2020 net capital expenditures by over 20% versus 2019 net capital expenditures."
+  },
+  {
+   "era": "bhge",
+   "fy": 2026,
+   "published": "2026-09-09",
+   "source": "BK116",
+   "doc": "presentation of 2026-09-09",
+   "rev_guide_m": [
+    28500,
+    30300
+   ],
+   "rev_guide_note": "fiscal-year 2026 revenue $28,500M to $30,300M (midpoint $29,400M) with Chart from July 16, 2026; adjusted EBITDA $4,875M to $5,475M, no EPS guide"
   }
  ],
  "dividends": [
@@ -5726,6 +7867,34 @@
    "source": "BK53",
    "quarterly": 0.17,
    "note": "$0.17 a share declared on May 9, 2014, payable August 15, 2014, up from $0.15 (8-K of 2014-05-09, the first filing that states it)"
+  },
+  {
+   "era": "bhge",
+   "published": "2022-10-28",
+   "source": "BK96",
+   "quarterly": 0.19,
+   "note": "$0.19 a share declared, payable November 18, 2022, up from $0.18 (8-K accepted 2022-10-27 16:17 ET, the first filing that states it)"
+  },
+  {
+   "era": "bhge",
+   "published": "2023-10-26",
+   "source": "BK101",
+   "quarterly": 0.2,
+   "note": "$0.20 a share approved on October 25, 2023, payable November 17, 2023 (Q3 2023 release, the first filing read that states it; the rate was first paid in the third quarter)"
+  },
+  {
+   "era": "bhge",
+   "published": "2024-04-24",
+   "source": "BK104",
+   "quarterly": 0.21,
+   "note": "$0.21 a share paid in the first quarter of 2024 (Q1 2024 release's statement of income, the first filing that states it)"
+  },
+  {
+   "era": "bhge",
+   "published": "2025-04-23",
+   "source": "BK109",
+   "quarterly": 0.23,
+   "note": "$0.23 a share paid in the first quarter of 2025 (Q1 2025 release's statement of income, the first filing that states it)"
   }
  ],
  "events": [],

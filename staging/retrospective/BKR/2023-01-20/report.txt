@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  BKR  ·  Baker Hughes Company  ·  $31.07  ·  RETROSPECTIVE as of 2023-01-20
+  Signal: ◎ ACCUMULATE   Ratio B: 0.89x   Adj gap: -1.18  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2023-01-20; latest print Q3 2022 (Oct 19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenues, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Oilfield Services         $    10.1  $  10.1  $  10.2      +0.0      +0.1
+    -5.9% revenues in FY21
+  Oilfield Equipment        $     2.6  $   2.6  $   2.7      +0.0      +0.1
+    -12.6% revenues in FY21
+  Turbomachinery & Process  $     6.8  $   6.8  $   6.9      +0.0      +0.1
+    +12.5% revenues in FY21
+  Digital Solutions         $     2.2  $   2.2  $   2.2      +0.0      +0.0
+    +2.1% revenues in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    21.7  $  21.7  $  22.0      +0.0      +0.3
+  FY2022E = FY21 $20.50B × (1 + 5.4%: no Q4 2022 revenue guide, Q3 2022 revenue as reported, applied to the year (no FY22 revenue guide)); split pro rata to FY21 segment revenue (FY2021 10-K)
+  Q3 2022 (Oct 19): revenue $5.37B +5.4%; orders +12.7%; gross margin 20.93% (+110.4bp);
+  segment operating margin 11.29% (+131.3bp); operating margin 5.01% (-241.2bp); EPS $(0.02) vs $0.01
+  Activity: orders +12.7% (orders $6,063M vs $5,378M); revenue +5.4% as reported (revenue $5,369M vs $5,093M); by segment: Oilfield Services +17.5%; Oilfield Equipment -7.0%; Turbomachinery & Process Solutions -7.9%; Digital Solutions +3.5%; total segment operating income $606M vs $508M; operating income $269M vs $378M; cost of revenue $4,245M vs $4,083M; EPS Q3 2022 adjusted (non-GAAP, the release's figure excluding identified items): $0.26 a diluted share; GAAP $(0.02)
+  FY22: no guide in numbers (BASE takes Q3 2022 revenue growth); the Q3 2022 release gives no outlook in numbers
+
+  FY2022E EPS check:  $21.7B × 2.1% pre-tax × (1−177.1%) ÷ 1.026B  =  $-0.34  (FY2022E: no EPS guide in numbers, FY18's $0.45 stands (FY19 is excluded: distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)) (FY20 is excluded: a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E) (FY21 is excluded: a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E))
+  FY2024E BEAR check: $21.7B × 2.1% ÷ 0.977B  =  $-0.36  (scenario $0.45)
+  FY2024E BULL check: $22.0B × 2.5% ÷ 0.977B  =  $-0.43  (scenario $0.52)
+  Every 1pp of pre-tax margin ≈ $-0.16 EPS ≈ $-11/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Orders                             -63.0%  ≥-27.0%   ≥10.0%   ≥55.0%    +12.7%  ▲ BULL  ███░
+  Revenue growth                     -50.0%  ≥-20.0%    ≥9.0%   ≥33.0%     +5.4%  ◦ BASE  ██░░
+  Gross margin change               -770.0bp  ≥-470.0bp  ≥-170.0bp  ≥120.0bp  +110.4bp  ▲ BULL  ███░
+  Segment operating margin change   -710.0bp  ≥-510.0bp  ≥-310.0bp  ≥190.0bp  +131.3bp  ▲ BULL  ███░
+  Operating margin change           -2640.0bp  ≥-1330.0bp  ≥-20.0bp  ≥580.0bp  -241.2bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.50 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $31 + 15% hurdle)
+  SCA adjustment:    +0.20  ·  EPP-distance adj -0.10  →  Adj composite 2.59  →  Gap -1.18  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 revenue -1.0%, orders +4.8% (orders $21.7 billion vs $20.7 billion (FY2021 10-K)); Q3 segment operating margin 11.29% (+131bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 69.0x FY22E vs a 66.6x 5.0-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 median (57th percentile of its own range)  (-0.12 × 25%  =  -0.030)
+    +  Growth vs own history: no Q4 2022 revenue guide, Q3 2022 revenue as reported +5.4% vs a -1.0% 7-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $2.85B, FY21 free cash flow $1.83B, dividend $0.76 a year, $434M of Class A common stock repurchased and $592M of dividends paid in FY21  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Orders                              +12.7%    -63.0%  -75.7%  Customers defer equipment and service…
+  Revenue growth                       +5.4%    -50.0%  -55.4%  Customers cut drilling and project bu…
+  Gross margin change               +110.4bp  -770.0bp  -880.4bp  Pricing falls faster than costs
+  Segment operating margin change   +131.3bp  -710.0bp  -841.3bp  Mix and productivity turn against the…
+  Operating margin change           -241.2bp  -2640.0bp  -2398.8bp  Charges and fixed costs as activity f…
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers oilfi…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$27  (model)  /  $24 (defined)
+  Bear probability (proxy model):  9.3%
+
+  KEY TRIGGER: orders went from +15.1% (Q2 2022) to +12.7% (Q3 2022);
+  the bear case needs customers' spending to fall far enough that revenue (+5.4% now)
+  and the segment operating margin (+131.3bp now) give way. Customers' spending drives revenue, by the company's own account; the bear needs
+  that spending to fall, not only one quarter's orders.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.45  (FY2022E: no EPS guide in numbers, FY18's $0.45 stands (FY19 is excluded: distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)) (FY20 is excluded: a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E) (FY21 is excluded: a loss: GAAP $(0.27) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E))
+  Min viable P/E at panic:          45x  [median of calendar-year P/E lows: 2018 45.5x, 2022 45.4x, 2023 62.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $20/share
+  Current $31 vs Updated EPP $20:  +53%  ⚠ far above floor — large drawdown room
+  Bear $24 vs Updated EPP $20:  +19%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Orders                                     -27.0      -39.7   BASE floor (vs +13 now)
+  Revenue growth                             -20.0      -25.4   BASE floor (vs +5 now)
+  Gross margin change                       -470.0     -580.4   BASE floor (vs +110 now)
+  Segment operating margin change           -510.0     -641.3   BASE floor (vs +131 now)
+  Operating margin change                  -1330.0    -1088.8   BASE floor (vs -241 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.45 × (1+5.8%)² = $0.50
+  At 66x P/E (conservative):  $33/share
+  + Cumul. dividends (2yr):  +$1.57/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $33  (▲2 from $31)
+  Conservative total return:  +12% over 2yr  = +6%/yr
+
+  At 69.0x the multiple is already near its 66x median, so the conservative
+  case is a growth question: breakeven at 66x needs FY2024E EPS of $0.45,
+  i.e. -0.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $20.42  –  $39.78  (at 55th pct of range)
+  Annual dividend:      $0.76/share  (yield 2.4%)
+  Realized vol (1yr):   45% annualized
+  Beta vs broad market: 0.68
+  1-sigma range (1yr):  $17  –  $45  ($31 ± 45%)
+  2-sigma range (1yr):  $3  –  $59
+  ────────────────────────────────────────────────────────────
+  Bear $24 requires:  ~0.5σ price move  (within normal vol range)
+  An energy technology company, in its own words, with a 0.7 beta: the stock is +52% off its September
+  low while orders went from +15.1% (Q2 2022) to +12.7% (Q3 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.45  52.9x  $     24     9.3%      1.2%    +8.0pp  Flat EPS (no EPS change in FY18-FY18 to measure: the 0% cap); P/E to its 10th pct
+  BASE        0.52  66.6x  $     35    32.4%      4.3%   +28.1pp  EPS +7.8%/yr (Q3 revenue + margin + buyback); P/E at its 5.0-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 median
+  BULL        0.52  74.5x  $     39    49.1%     15.0%   +34.1pp  EPS +7.8%/yr (no FY18-FY18 CAGR to measure: BASE's rate); P/E holds its 75th pct
+  XBULL       0.52  79.5x  $     41     9.3%     79.5%   -70.2pp  EPS +7.8%/yr (no 2-yr run in FY18-FY18: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $37  /  Market EV: $40  /  Current: $31
+  Conservative EV (2yr, ④): $33 + $1.57 divs = $35 total value
+  Downside (→ Bear $24): 22.8%   Upside (→ Bull $39): 25.5%   Ratio B 0.89x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $31 the market needs $41 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.59: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.89x     +53%    -1.18  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.41x     +53%    -0.43  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.31x     +53%    -1.21  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.68x     +53%    -0.87  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          1.16x     +53%    -1.16  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             0.89x     +53%    -0.88  OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.89x     +44%    -1.18  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.89x     +53%    -0.13  FAIRLY VALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2022 print (late January) — the next read on orders (+12.7% now); no revenue or EPS guide to read it against
+  (2) Segment operating margin — +131.3bp in Q3 2022: pricing, mix and productivity against costs
+  (3) A FY22 guide — none in numbers: no filing guides EPS, revenue or a margin; the Q3 2022 release on the work in hand: 'Remaining Performance Obligations (RPO) in the third quarter ended at $24.7 billion, an increase of $0.4 billion from the second quarter of 2022.'
+  (4) Capital expenditures — Capital expenditures, net of proceeds from disposal of assets, were $180 million for the third quarter of 2022.
+  (5) Capital return at 69x — Cash flow from operating activities was $597 million for the third quarter of 2022. Free cash flow (a non-GAAP measure) for the quarter was $417 million.: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $20  |  ADD below ~$30  |  TRIM above $39
+════════════════════════════════════════════════════════════════════════
+

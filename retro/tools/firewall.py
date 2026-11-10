@@ -223,6 +223,8 @@ try:
                     raw=dict(orders_m=1, orders_prior_m=99, rev_m=4, rev_prior_m=400, cor_m=4, cor_prior_m=1, segoi_m=-99, segoi_prior_m=99,
                              oi_m=-99, oi_prior_m=99, ofs_m=1, ofs_prior_m=100, ofe_m=1, ofe_prior_m=100, tps_m=1, tps_prior_m=100,
                              ds_m=1, ds_prior_m=100))
+        if "segments" in last:
+            last["segments"] = [["PLANTED", 4, 400]]
     f["prints"].append(last)
     if "guides" in f:      # a guide for every fiscal year in the fact sheet, and a dividend
         for y in {g["fy"] for g in f["guides"]} | {2099}:
@@ -325,7 +327,8 @@ try:
         if last.get("era"):    # the company listed in 2017: its own full-year fields (BKR 2018-2021)
             for k in ("na_pct", "na_note", "restates", "one_off_test"):
                 fa.pop(k, None)
-            fa.update(orders_pct=-99.0, orders_note="PLANTED", sales_note="PLANTED")
+            fa.update(orders_pct=-99.0, orders_note="PLANTED", sales_note="PLANTED", eps_basis="company adjusted", restates_note="PLANTED",
+                      restates={y: 0.01 for y in list(v0["eps_normalized"]) + list(v0.get("eps_excluded", {}))})   # every year, the excluded too (BKR 2022-2026)
         last["fy_actual"] = fa
         # a later display-only outlook for every quarter an 8-K guides, and for the quarters after the last print before CUTOFF
         p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
@@ -333,6 +336,10 @@ try:
         for q in sorted({g["quarter"] for g in f["guides"] if "quarter" in g} | set(nxt)):
             f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED", "quarter": q,
                                 "display": "PLANTED"})
+        if last.get("era"):    # a later fiscal-year revenue guide in dollars for the year of the last print and the next (BKR 2022-2026)
+            for y in (p0["fy"], p0["fy"] + 1):
+                f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "rev_guide_m": [1, 2],
+                                    "rev_guide_note": "PLANTED"})
         if last.get("era"):    # the planted guides and dividend belong to the company listed in 2017
             for x in f["guides"] + f["dividends"]:
                 if x["published"] == later:

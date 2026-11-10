@@ -10448,6 +10448,7 @@ python3 retro/build_bkr.py --weekly 2009-01-05 2009-12-31                   # 52
 python3 retro/build_bkr.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31 ("BKR 2010-2013")
 python3 retro/build_bkr.py --weekly 2014-01-01 2017-06-30                   # 183 dates, 2014-01-03 .. 2017-06-30 ("BKR 2014-2017")
 python3 retro/build_bkr.py --weekly 2019-01-28 2021-12-31                   # 153 dates, 2019-02-01 .. 2021-12-31 ("BKR 2018-2021")
+python3 retro/build_bkr.py --weekly 2022-01-03 2026-11-06                   # 253 dates, 2022-01-07 .. 2026-11-06 ("BKR 2022-2026")
 for d in staging/retrospective/BKR/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -11050,6 +11051,127 @@ Judgement calls that could carry hindsight:
 - CYCLICAL although no 10-K of the new company uses the word; ENERGY_TRANSITION out of scope although the FY2020 10-K names the
   energy transition as a risk (text only either way);
 - the non-earnings 8-Ks read by their item text, not their exhibits.
+
+### BKR 2022-2026
+
+253 weekly dates, 2022-01-07 to 2026-11-06, Baker Hughes Company (Nasdaq: BKR), on the method, engine and rule-T thresholds of "BKR
+2018-2021". The fact sheet only gains facts (sources BK91-BK117): its earlier content is unchanged and the 650 earlier models rebuild
+byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_bkr.py --weekly 2022-01-03 2026-11-06                   # 253 dates, 2022-01-07 .. 2026-11-06
+for c in 2022-01-20 2022-02-14 2022-04-20 2022-07-20 2022-10-19 2022-10-28 2023-01-23 2023-02-15 2023-04-19 2023-07-19 2023-10-26 \
+         2024-01-24 2024-02-05 2024-04-24 2024-07-26 2024-10-23 2025-01-31 2025-02-04 2025-04-23 2025-07-23 2025-10-24 2026-01-26 \
+         2026-02-06 2026-04-24 2026-07-27 2026-09-09 2026-10-28 2026-11-07; do python3 retro/tools/firewall.py $c BKR; done
+```
+
+Read: the 20 earnings releases from Q4 2021 to Q3 2026, the FY2021-FY2025 10-Ks, the dividend 8-K of 2022-10-27 and the presentation
+of 2026-09-09 in full where they carry facts; the 43 other 8-Ks of 2022-2026 by their item text (exhibits not read, but for the
+presentations and the Chart announcement, searched for guidance); the proxy statements of 2022-2026 and four 10-Qs, searched for a
+full-year adjusted EPS and for the dividend increases. All by the session's model directly. 515 strings were checked with
+`verbatim.py`, each against its own filing, and all 515 were found; the script checks each release's headline figures against its
+statement of income and its segments against its revenue. Decided on 2026-11-10, before any outcome of these dates was computed:
+
+- **Release timing.** To Q2 2023 the earnings 8-Ks were accepted before the open (07:04-07:08 ET). From Q3 2023 they come after the
+  close (17:04-17:25 ET) and are dated the next trading day, but for Q4 2025 and Q2 2026 (Mondays, 06:09 and 06:07 ET). Four after-close
+  releases came on a Thursday, so the week's date is the Friday the print became public before the open (2024-07-26, 2025-01-31,
+  2025-10-24, 2026-04-24; the AVGO rule). The 10-Ks are dated 2022-02-14, 2023-02-15, 2024-02-05 (accepted 07:52 ET), 2025-02-04
+  (07:05 ET) and 2026-02-06.
+- **EPS to January 2024: FY18's $0.45 still stands.** 2021 is a loss of $(0.27) per Class A share and 2022 a loss of $(0.61), with
+  adjusted EPS by quarter only, so both are excluded like 2020 (the "BKR 2018-2021" rules). From 2022-01-07 to 2024-01-19 (107 dates)
+  the history is still 2018 alone, a figure four to five years old.
+- **From the Q4 2023 release the company publishes the year's adjusted diluted EPS, which replaces GAAP** (the ACN rule: each year from
+  the latest filing that publishes one). That release (accepted 2024-01-23 17:25 ET, dated 2024-01-24) gives 2023 at $1.60 (GAAP $1.91)
+  and, beside it, 2022 at $0.91 (GAAP $(0.61)): 2022 enters the history from that date (`restates` on the print, then the FY2023
+  vintage), since its exclusion was for want of a published figure. Then 2024 $2.35 (GAAP $2.98; Q4 2024 release) and 2025 $2.60 (GAAP
+  $2.60; Q4 2025 release). 2018 stays GAAP $0.45 and 2019-2021 stay excluded: no filing publishes those years adjusted. The history is
+  2018, 2022, 2023 (then 2024, 2025), with a gap: EPS changes are measured between consecutive years only, so BEAR is the 0% cap (the
+  only changes are rises), BULL is the 2018-to-latest CAGR (+28.9%/yr, +31.7%, +28.5%) and XBULL the 2022-2024 run from 2025. A
+  judgement call that moves classes (below): the company's figure is under GAAP in 2023 and 2024.
+- **Two margins stop being reported.** From Q3 2024 the releases give each segment's operating income with no total; the two are
+  summed (Q3 and Q4 2024). From Q1 2025 the statement of income has no operating income line (8-K of 2025-03-25: "the operating income
+  and non-operating income (loss) line items will be removed") and the releases give segment EBITDA, not segment operating income. Both
+  signals then read "n/r" and score BASE (the rule for a figure a company stops publishing, as for NKE's futures and AAPL's units);
+  nothing is derived from EBITDA and depreciation. Those dates use `retro/templates/bkr3_engine.py.tmpl`, a copy of the 2018-2021 engine
+  that accepts a missing value (same rules, thresholds and weights; the key-trigger and catalyst lines name the gross margin). From Q1
+  2025 research and development costs are a line of their own, so the gross margin is on that basis, each release against its own
+  year-ago quarter.
+- **Segments.** Two from October 1, 2022 (Oilfield Services & Equipment, Industrial & Energy Technology; first in the Q4 2022 release),
+  three with Chart in Q3 2026. Display only; each print lists its own.
+- **One guide in numbers: fiscal-year 2026 revenue.** The presentation furnished on 2026-09-09 (accepted 06:01 ET) gives "Updated Baker
+  Hughes FY’26 Guidance": revenue $28,500M to $30,300M with Chart from July 16, 2026, and adjusted EBITDA; no EPS. With no next-quarter
+  guide, BASE and the growth factor take the full-year guide (method r2), read against FY2025's $27.73B (+2.8% to +9.3%; the AAPL
+  dollar-level rule), from 2026-09-11; the Q3 2026 release restates it in words only, so the numbers stand. Chart is in the guide, as in
+  the reported growth (the house rule). Before that date, and in every other year, no release, 10-K or other 8-K guides EPS, revenue or
+  a margin in numbers: the releases refer to guidance given on the calls, and the segment targets of the presentations (EBITDA margins,
+  Industrial & Energy Technology orders) are not the company's revenue.
+- **Dividends,** each from the first filing that states the rate: $0.19 (8-K accepted 2022-10-27 16:17 ET, dated 2022-10-28), $0.20
+  (Q3 2023 release, 2023-10-26), $0.21 (Q1 2024 release's statement of income, 2024-04-24), $0.23 (Q1 2025 release's, 2025-04-23). The
+  $0.20 rate was first paid in the third quarter of 2023; the Q2 2023 10-Q and release do not state it.
+- **Share counts:** Class A plus Class B outstanding at year end, as before: 1,026M (2021), 1,006M (2022, no Class B left), 998M, 990M,
+  987M. The buyback term runs from 2017's 1,129M: +2.4%/yr falling to +1.7%.
+- **History.** Revenue for ten years to the latest, each from the latest filing that reports it (2021 is $20,502M in the FY2021 10-K,
+  $20,536M in the Q4 2021 release). The FY2025 10-K has no operating income, so no prior-year operating margin (not used: no margin
+  guide).
+- **Pending deals and acquisitions.** Chart Industries: agreement announced 2025-07-29, closed 2026-07-16. A pending deal adds nothing
+  (the XTO rule); from the Q3 2026 release Chart is in orders, revenue and the margins as published. The Continental Disc acquisition
+  and the disposals named in the releases likewise.
+- **Durability and themes: unchanged.** CYCLICAL, risk 2. Each 10-K still says its revenue "is dependent on spending by our customers
+  for oil and natural gas exploration, field development and production"; the FY2025 10-K adds "The potential slowdown and shift in the
+  energy transition could have an adverse effect on the demand for our clean energy technologies and services". ENERGY_TRANSITION stays
+  out of scope; GENAI (live from 2022-11-30) is scoped to products that AI substitutes and is not in scope. Text only.
+- **Adds nothing:** the segment recasts (2022-11-18, 2023-12-19) and the change of income-statement presentation (2025-03-25) beyond
+  what each print shows, the repurchase authorization of 2022-10-27, the General Electric term sheet of 2022-12-30, the credit and note
+  8-Ks, the Chart merger 8-Ks and its pro forma statements (2026-10-01), officers, directors and votes.
+
+Controls and checks (before any outcome):
+- **Controls:** altering one value of each print (its orders, each Q4 print's full-year EPS or excluded-year note, the restated 2022),
+  each vintage, the revenue guide and each dividend changes no model dated before its publication and changes the first weekly date on
+  or after it: 36 of 36. Altering Baker Hughes Incorporated's facts changes none of the 253 models; removing every 2022-2026 fact
+  changes none of the 650 earlier ones.
+- **Leak scan:** 0 hits in 402,352 pairs but one figure, 13409 (FY2025 segment revenue), which is part of an SEC accession number in
+  the URL of a 2009 source: a coincidence, not a leak.
+- **Years after the as-of date:** none other than FY labels. `retro_tool run` passes on all 253 dates; on 53 dates of 2022-2023 it
+  warns of "calendar year 2057", which is Digital Solutions' FY21 revenue of $2,057M in the segment list.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 193, FAIR 29, RICH 31.** 2022: CHEAP 23, FAIR 5, RICH 24. 2023: CHEAP 45, FAIR 1, RICH 6 (to 2023-03-03). 2024 and
+  2025: CHEAP and BUY on all 104 dates, robustness 8 of 8. 2026: CHEAP 21, FAIR 23 (2026-01-23 to 2026-09-04), RICH 1.
+- **2022-2023 on a five-year-old anchor.** On $0.45 the stock trades at 47-86x against a window median of 56-72x (2018 and, from
+  January 2022 and 2023, the latest year's days, each leaving as its year is excluded); the class swings with the price around that
+  median. BASE is +0.6% to +27.4%/yr from the quarter's revenue plus the buyback.
+- **The anchor more than triples on one release.** From 2024-01-25 EPS is $1.60 and the multiple reads 18.9x, not 67x; the window now
+  holds 2018's days at 45-83x of $0.45, 2022's at 22-42x of $0.91 and 2023's at 17-23x of $1.60, so its median falls from 71x to 31x
+  and to 20x by 2026, and the stock sits low in it: CHEAP on every date of 2024 and 2025.
+- **BULL is an artefact of the gap.** The CAGR from 2018's $0.45 to the latest year is +28% to +32%/yr at the 75th-percentile multiple:
+  BULL prices of $110-169 against a $29-69 stock, so Ratio B is -0.01 to 0.45 and the tier BUY on every date from 2024-01-25.
+- **The EPP floor** is $20-27 to January 2024, then $32, $35-40 and $42-44 as the anchor rises.
+- **FAIR in 2026** as the price reaches 22-27x of $2.60, above a 20-22x median, with BASE at -0.7% to +4.2%/yr; the revenue guide lifts
+  BASE to +7.7%/yr from 2026-09-11 and the class returns to CHEAP.
+- **The proxy composite** runs from 2.30 to 3.30 to the Q4 2024 print and from 2.15 to 2.55 from Q1 2025, when two of five signals
+  score BASE for want of a figure.
+
+Sensitivity (each call changed alone, the 253 dates reclassified offline; no outcome consulted):
+- **GAAP EPS in 2023-2025** ($1.91, $2.98, $2.60; 2022 stays a loss and excluded): 50 classes (21 CHEAP to FAIR, 7 CHEAP to RICH, 22
+  FAIR to RICH; 2024-11-08 to 2026-10-23) and 27 tiers;
+- **2022 not taken from the Q4 2023 release:** 41 classes (19 CHEAP to FAIR, 22 FAIR to RICH; from 2024-11-08) and 3 tiers;
+- **the quarters' adjusted EPS summed for 2018-2022** (2020 excluded), then as published: 53 classes, both ways (from 2022-01-14),
+  and 43 tiers;
+- **the Class A share count alone:** 76 classes, toward RICH (2022-06-24 to 2026-05-01), and 74 tiers; **no buyback term:** 21 classes
+  and 11 tiers;
+- **the FY2026 revenue guide not used:** no class, no tier;
+- **every signal at its BEAR value** (the unreported margins too): 104 classes, toward RICH or FAIR; **at its XBULL value:** 24 classes,
+  toward CHEAP or FAIR; no tier.
+
+Judgement calls that could carry hindsight:
+- the company's adjusted EPS from the Q4 2023 release, and 2022's taken from it (50 and 41 classes move the other ways);
+- FY18's $0.45 as the anchor to January 2024, by the excluded-year rules of 2018-2021;
+- the two unreported margins scored BASE rather than derived from segment EBITDA or dropped with their weights (the BEAR and XBULL
+  variants bound it);
+- Class A plus Class B shares for the buyback term (76 classes with the Class A count);
+- the fiscal-year revenue guide read from a conference presentation, with Chart in it (no class moves);
+- CYCLICAL and the themes, as before (text only);
+- the non-earnings 8-Ks read by their item text.
 
 ## Categories change with the era
 
