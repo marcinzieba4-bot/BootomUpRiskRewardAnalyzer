@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  PFE  ·  Pfizer Inc  ·  $23.86  ·  RETROSPECTIVE as of 2012-08-31
+  Signal: ✕ AVOID   Ratio B: 6.94x   Adj gap: -1.75  [OVERVALUED]
+  Point-in-time: 8 sources, latest published 2012-08-31; latest print Q2 2012 (Jul 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2012E revenues, USD bn  →  FY2014E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2012E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Primary Care              $    19.8  $  19.8  $  21.7      +0.0      +1.9
+    -2.8% revenues in FY11
+  Specialty Care and Oncol  $    14.5  $  14.5  $  15.9      +0.0      +1.4
+    +0.8% revenues in FY11
+  Established Products and  $    16.2  $  16.2  $  17.7      +0.0      +1.5
+    -1.3% revenues in FY11
+  Animal Health and Consum  $     6.3  $   6.3  $   6.9      +0.0      +0.6
+    +14.1% revenues in FY11
+  Nutrition                 $     1.9  $   1.9  $   2.0      +0.0      +0.1
+    +14.5% revenues in FY11
+  Pfizer CentreSource       $     0.3  $   0.3  $   0.3      +0.0      +0.0
+    -6.6% revenues in FY11
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    59.0  $  59.0  $  64.5      +0.0      +5.5
+  FY2012E = FY11 $67.42B × (1 − 12.5%: FY12 revenue guide midpoint); split pro rata to FY11 revenues by operating segment (FY2011 10-K)
+  Q2 2012 (Jul 31): revenues $15.06B -8.7%; U.S. -14.6%; international -4.6%; gross margin 81.72% (+338.5bp);
+  pre-tax margin 29.78% (+795.4bp); EPS $0.42 vs $0.32
+  U.S. revenues $5.722B (-14.6%), international $9.335B (-4.6%), each against the year-ago quarter in the same release; Nutrition discontinued in both quarters (as published)
+  FY12 guide (Q4 2011 release, Q1 2012 release, Q2 2012 release, Nexium 8-K of 2012-08-14): reported EPS $1.21-1.36; revenues $58.0-60.0B (-14% to -11% on FY11's $67.42B); adjusted EPS $2.12-2.22 (shown only: it excludes purchase-accounting amortization); EPS lowered for the upfront payment for over-the-counter Nexium; the other elements maintained
+
+  FY2012E EPS check:  $59.0B × 18.9% pre-tax × (1−31.5%) ÷ 7.537B  =  $1.01  (FY2012E reported EPS, guide midpoint)
+  FY2014E BEAR check: $59.0B × 18.9% ÷ 7.608B  =  $1.01  (scenario $0.65)
+  FY2014E BULL check: $64.5B × 19.3% ÷ 7.608B  =  $1.12  (scenario $1.20)
+  Every 1pp of pre-tax margin ≈ $0.05 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -34.0%  ≥-11.0%   ≥12.0%   ≥35.0%    -14.6%  ⚠ BEAR  █░░░
+  International revenue growth        -9.0%    ≥0.0%    ≥8.0%   ≥54.0%     -4.6%  ⚠ BEAR  █░░░
+  Revenue growth                     -19.0%   ≥-4.0%   ≥12.0%   ≥40.0%     -8.7%  ⚠ BEAR  █░░░
+  Gross margin change               -1890.0bp  ≥-900.0bp  ≥90.0bp  ≥710.0bp  +338.5bp  ▲ BULL  ███░
+  Pre-tax margin change             -6320.0bp  ≥-3120.0bp  ≥80.0bp  ≥2070.0bp  +795.4bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   3.48 / 4.00  (back-solved from $24 + 15% hurdle)
+  SCA adjustment:    -0.02  ·  EPP-distance adj +0.00  →  Adj composite 1.73  →  Gap -1.75  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY11 revenues +0.5% (U.S. -6.7%, international +6.0%), biopharmaceutical 86% of revenues; Q2 gross margin 81.72% (+338.5bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.6x FY12E vs a 17.6x 8.7-yr median (60th percentile of its own range)  (-0.17 × 25%  =  -0.043)
+    -  Growth vs own history: FY12 revenue guide -14% to -11% vs a 0.5% 7-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY11 year-end cash and short-term investments $26.76B, FY11 free cash flow $18.58B, dividend $0.88 a year, about 459 million shares purchased in 2011 for about $9.0 billion (FY2011 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                 -14.6%    -34.0%  -19.4%  Generic entry as U.S. patents expire
+  International revenue growth         -4.6%     -9.0%   -4.4%  Price cuts, generics and currency abroad
+  Revenue growth                       -8.7%    -19.0%  -10.3%  Exclusivity losses outrun new products
+  Gross margin change               +338.5bp  -1890.0bp  -2228.5bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             +795.4bp  -6320.0bp  -7115.4bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$12  (model)  /  $9 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: U.S. revenue growth went from -15.2% (Q1 2012) to -14.6% (Q2 2012);
+  the bear case needs U.S. exclusivity losses that international growth (-4.6% now)
+  and the cost base no longer absorb. Patent expiries drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.28  (FY2012E reported EPS, guide midpoint)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2004 17.0x, 2005 20.2x, 2006 14.7x, 2007 19.1x, 2008 12.4x, 2009 9.6x, 2010 14.0x, 2011 15.0x, 2012 16.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $19/share
+  Current $24 vs Updated EPP $19:  +24%  moderate distance to floor
+  Bear $9 vs Updated EPP $19:  -53%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                        -11.0       +3.6   BASE floor (vs -15 now)
+  International revenue growth                 0.0       +4.6   BASE floor (vs -5 now)
+  Revenue growth                              -4.0       +4.7   BASE floor (vs -9 now)
+  Gross margin change                       -900.0    -1238.5   BASE floor (vs +338 now)
+  Pre-tax margin change                    -3120.0    -3915.4   BASE floor (vs +795 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.28 × (1+0.0%)² = $1.28
+  At 17x P/E (conservative):  $22/share
+  + Cumul. dividends (2yr):  +$1.81/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $22  (▼2 from $24)
+  Conservative total return:  -1% over 2yr  = -0%/yr
+
+  At 18.6x the multiple is already near its 17x median, so the conservative
+  case is a growth question: breakeven at 17x needs FY2014E EPS of $1.30,
+  i.e. 0.5%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $17.05  –  $24.49  (at 92th pct of range)
+  Annual dividend:      $0.88/share  (yield 3.7%)
+  Realized vol (1yr):   18% annualized
+  Beta vs broad market: 0.68
+  1-sigma range (1yr):  $20  –  $28  ($24 ± 18%)
+  2-sigma range (1yr):  $15  –  $32
+  ────────────────────────────────────────────────────────────
+  Bear $9 requires:  ~3.5σ price move  (unusual — requires fundamental break)
+  A research-based pharmaceutical company with a 0.7 beta: the stock is +38% off its October
+  low while U.S. revenue growth went from -15.2% (Q1 2012) to -14.6% (Q2 2012).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.65  14.2x  $      9    33.0%      2.3%   +30.6pp  EPS -28.7%/yr (worst year FY04-FY11, capped at 0%); P/E to its 10th pct
+  BASE        0.97  17.6x  $     17    50.0%      8.1%   +41.9pp  EPS +-13.0%/yr (FY12 guide + margin + buyback); P/E at its 8.7-yr median
+  BULL        1.20  21.4x  $     26    14.3%     28.4%   -14.1pp  EPS +-3.6%/yr (FY04-FY11 CAGR); P/E holds its 75th pct
+  XBULL       1.47  24.9x  $     37     2.7%     61.1%   -58.4pp  EPS +7.1%/yr (best 2-yr run FY04-FY11); P/E at its 90th pct
+
+  Proxy EV (2yr): $16  /  Market EV: $32  /  Current: $24
+  Conservative EV (2yr, ④): $22 + $1.81 divs = $24 total value
+  Downside (→ Bear $9): 62.3%   Upside (→ Bull $26): 9.0%   Ratio B 6.94x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $24 the market needs $32 in two years —
+  above the BULL case. That is a market composite of 3.48 against a model
+  read of 1.73: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       6.94x     +24%    -1.75  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.09x     +24%    -1.37  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +24%    -2.07  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          6.48x     +24%    -1.69  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         13.04x     +24%    -1.83  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             6.94x     +24%    -1.45  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 6.94x      +3%    -1.75  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    6.94x     +24%    -1.51  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2012 print (late October) — the next read on U.S. revenues (-14.6% now) and the guide
+  (2) Gross margin — +338.5bp in Q2 2012: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) FY12 reported EPS guide $1.21-1.36 (Nexium 8-K of 2012-08-14)
+  (4) Pre-tax margin — 29.78% in Q2 2012 (+795.4bp): where restructuring, legal and acquisition charges land
+  (5) Capital return at 19x — no share purchase stated in the release: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $19  |  ADD below ~$14  |  TRIM above $26
+════════════════════════════════════════════════════════════════════════
+

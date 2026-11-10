@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
+ "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use. From 2010: a Q4 print may restate the year before it on a new basis ('restates': its EPS and revenues from continuing operations), which replaces that year from the print until a 10-K vintage published after it carries the year; the reported diluted EPS guide is used as published, discontinued operations included where the guide includes them (the only EPS line Pfizer guides).",
  "ticker": "PFE",
  "sources": {
   "PF1": {
@@ -155,6 +155,167 @@
    "title": "Pfizer Q3 2009 results (8-K, Exhibit 99)",
    "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309006997/a6076871ex99.htm",
    "supports": "third-quarter 2009 statement of income and revenues by U.S. and international; 2009 guidance including Wyeth from 2009-10-15"
+  },
+  "PF23": {
+   "published": "2010-02-03",
+   "filed": "2010-02-03 08:10 ET (before the open)",
+   "title": "Pfizer Q4 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752310000574/a6164666ex99.htm",
+   "supports": "fourth-quarter and full-year 2009 statements of income and revenues by U.S. and international (Wyeth from 2009-10-15); 2010 guidance"
+  },
+  "PF24": {
+   "published": "2010-02-26",
+   "filed": "2010-02-26 13:43 ET",
+   "title": "Pfizer FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312510042425/dex13.htm",
+   "supports": "financial summary 2004-2009 (revenues, diluted EPS from continuing operations, diluted shares); statement of income; revenues by business and geography; cash flows; the first-quarter 2010 dividend of $0.18; Item 1 and Item 1A wording"
+  },
+  "PF25": {
+   "published": "2010-05-04",
+   "filed": "2010-05-04 08:33 ET (before the open)",
+   "title": "Pfizer Q1 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000114420410024128/v183292_ex99.htm",
+   "supports": "first-quarter 2010 statement of income and revenues by U.S. and international; 2010 guidance"
+  },
+  "PF26": {
+   "published": "2010-08-03",
+   "filed": "2010-08-03 08:40 ET (before the open)",
+   "title": "Pfizer Q2 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000114420410040807/v192168_ex99.htm",
+   "supports": "second-quarter 2010 statement of income and revenues by U.S. and international; 2010 guidance"
+  },
+  "PF27": {
+   "published": "2010-11-02",
+   "filed": "2010-11-02 08:32 ET (before the open)",
+   "title": "Pfizer Q3 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000114420410056785/v200593_ex99.htm",
+   "supports": "third-quarter 2010 statement of income and revenues by U.S. and international; 2010 guidance"
+  },
+  "PF28": {
+   "published": "2011-02-01",
+   "filed": "2011-02-01 09:06 ET (before the open)",
+   "title": "Pfizer Q4 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752311000491/a6591760ex99.htm",
+   "supports": "fourth-quarter and full-year 2010 statements of income and revenues by U.S. and international; 2011 guidance"
+  },
+  "PF29": {
+   "published": "2011-02-28",
+   "filed": "2011-02-28 10:00 ET",
+   "title": "Pfizer FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312511048877/dex13.htm",
+   "supports": "financial summary 2006-2010; statement of income; revenues by business and geography; cash flows; the first-quarter 2011 dividend of $0.20; Item 1 and Item 1A wording"
+  },
+  "PF30": {
+   "published": "2011-04-04",
+   "filed": "2011-04-04 13:55 ET",
+   "title": "Pfizer 8-K, Exhibit 99: agreement to sell Capsugel",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800311000003/x99411.htm",
+   "supports": "the 2011 reported revenue guidance range updated to $65.2-67.2 billion, all other elements maintained"
+  },
+  "PF31": {
+   "published": "2011-05-03",
+   "filed": "2011-05-03 08:54 ET (before the open)",
+   "title": "Pfizer Q1 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752311002609/a6705006ex99.htm",
+   "supports": "first-quarter 2011 statement of income (Capsugel discontinued) and revenues by U.S. and international; 2011 guidance"
+  },
+  "PF32": {
+   "published": "2011-08-02",
+   "filed": "2011-08-02 08:55 ET (before the open)",
+   "title": "Pfizer Q2 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752311004544/a6813934ex99.htm",
+   "supports": "second-quarter 2011 statement of income and revenues by U.S. and international; 2011 guidance"
+  },
+  "PF33": {
+   "published": "2011-11-01",
+   "filed": "2011-11-01 09:35 ET",
+   "title": "Pfizer Q3 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752311006196/a50050123ex99.htm",
+   "supports": "third-quarter 2011 statement of income and revenues by U.S. and international; 2011 guidance and its reconciliation (the Capsugel gain and income)"
+  },
+  "PF34": {
+   "published": "2012-01-31",
+   "filed": "2012-01-31 09:08 ET (before the open)",
+   "title": "Pfizer Q4 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312000378/a50149901ex99.htm",
+   "supports": "fourth-quarter and full-year 2011 statements of income (2010 restated without Capsugel) and revenues by U.S. and international; 2012 guidance"
+  },
+  "PF35": {
+   "published": "2012-02-29",
+   "filed": "2012-02-28 17:07 ET (after the close)",
+   "title": "Pfizer FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312512085703/d278590dex13.htm",
+   "supports": "financial summary 2007-2011 (restated without Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2012 dividend of $0.22; Item 1 and Item 1A wording"
+  },
+  "PF36": {
+   "published": "2012-05-01",
+   "filed": "2012-05-01 09:01 ET (before the open)",
+   "title": "Pfizer Q1 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312002322/a50259007ex99.htm",
+   "supports": "first-quarter 2012 statement of income and revenues by U.S. and international; 2012 guidance updated for the decision to divest Nutrition"
+  },
+  "PF37": {
+   "published": "2012-07-31",
+   "filed": "2012-07-31 08:54 ET (before the open)",
+   "title": "Pfizer Q2 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312004028/a50358545ex_99.htm",
+   "supports": "second-quarter 2012 statement of income (Nutrition discontinued) and revenues by U.S. and international; 2012 guidance"
+  },
+  "PF38": {
+   "published": "2012-08-14",
+   "filed": "2012-08-14 13:38 ET",
+   "title": "Pfizer 8-K, Exhibit 99.1: agreement with AstraZeneca for over-the-counter Nexium",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800312000006/x99813.htm",
+   "supports": "the 2012 reported diluted EPS guidance updated to $1.21-1.36, the other elements maintained"
+  },
+  "PF39": {
+   "published": "2012-11-01",
+   "filed": "2012-11-01 08:59 ET (before the open)",
+   "title": "Pfizer Q3 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312005612/a50457010ex99.htm",
+   "supports": "third-quarter 2012 statement of income and revenues by U.S. and international; 2012 guidance and its reconciliation (Nutrition income)"
+  },
+  "PF40": {
+   "published": "2013-01-29",
+   "filed": "2013-01-29 09:01 ET (before the open)",
+   "title": "Pfizer Q4 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313000304/a50544239ex99.htm",
+   "supports": "fourth-quarter and full-year 2012 statements of income (2011 restated without Nutrition) and revenues by U.S. and international; 2013 guidance"
+  },
+  "PF41": {
+   "published": "2013-03-01",
+   "filed": "2013-02-28 16:57 ET (after the close)",
+   "title": "Pfizer FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800313000006/pfe-12312012xex13.htm",
+   "supports": "financial summary 2008-2012 (restated without Nutrition and Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2013 dividend of $0.24; Item 1 and Item 1A wording"
+  },
+  "PF42": {
+   "published": "2013-04-30",
+   "filed": "2013-04-30 09:11 ET (before the open)",
+   "title": "Pfizer Q1 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313002129/a50620601-ex99.htm",
+   "supports": "first-quarter 2013 statement of income and revenues by U.S. and international; 2013 guidance"
+  },
+  "PF43": {
+   "published": "2013-07-30",
+   "filed": "2013-07-30 07:18 ET (before the open)",
+   "title": "Pfizer Q2 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313003660/a50679919ex99.htm",
+   "supports": "second-quarter 2013 statement of income (Animal Health discontinued) and revenues by U.S. and international; 2013 guidance"
+  },
+  "PF44": {
+   "published": "2013-10-29",
+   "filed": "2013-10-29 08:48 ET (before the open)",
+   "title": "Pfizer Q3 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313005022/a50738139ex_99.htm",
+   "supports": "third-quarter 2013 statement of income and revenues by U.S. and international; 2013 guidance"
+  },
+  "PF45": {
+   "published": "2013-06-24",
+   "filed": "2013-06-24 11:49 ET",
+   "title": "Pfizer Form 425: preliminary results of the Zoetis exchange offer, 2013 guidance adjusted",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312513268436/d558864d425.htm",
+   "supports": "2013 guidance adjusted solely for the Zoetis exchange offer (revenues without Zoetis for the full year; reported EPS unchanged, without the gain on the disposition)"
   }
  },
  "history_vintages": [
@@ -449,6 +610,562 @@
     ]
    ],
    "groups_basis": "FY08 segment revenues (FY2008 10-K)"
+  },
+  {
+   "published": "2010-02-26",
+   "sources": [
+    "PF24"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY09",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2009 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18,
+    "2008": 1.19,
+    "2009": 1.23
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18,
+    "2008": 1.19,
+    "2009": 1.23
+   },
+   "eps_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF24",
+    "2007": "PF24",
+    "2008": "PF24",
+    "2009": "PF24"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2008 kept (the 2008-2009 tests); 2009 kept (acquisition-related costs and certain significant items of $0.41 a share after tax against $1.23 reported)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 48.418,
+    "2008": 48.296,
+    "2009": 50.009
+   },
+   "revenue_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF24",
+    "2007": "PF24",
+    "2008": "PF24",
+    "2009": "PF24"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0
+   },
+   "shares_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF24",
+    "2007": "PF24",
+    "2008": "PF24",
+    "2009": "PF24"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 21.65,
+   "prev_fy_pretax_margin_note": "FY09 income from continuing operations before taxes $10,827M / revenues $50,009M (FY2009 10-K)",
+   "prev_fy_gross_margin": 82.23,
+   "prev_fy_sales_growth": 3.5,
+   "prev_fy_us_pct": 6.6,
+   "prev_fy_intl_pct": 1.3,
+   "tax_rate": 0.2029,
+   "tax_note": "FY09 provision for taxes $2,197M / income from continuing operations before taxes $10,827M (FY2009 10-K)",
+   "fcf_b": 15.38,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities $16,587M less purchases of property, plant and equipment $1,205M",
+   "cash_b": 25.97,
+   "cash_note": "cash and cash equivalents $1,978M and short-term investments $23,991M at December 31, 2009",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 quarterly ('In December 2009, our Board of Directors declared a first-quarter 2010 dividend of $0.18 per share', FY2009 10-K)",
+   "cash_return_text": "no share purchases in 2009 ('We did not purchase any shares of our common stock in 2009', FY2009 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharmaceutical",
+     45.448,
+     2.9
+    ],
+    [
+     "Diversified",
+     4.189,
+     16.6
+    ],
+    [
+     "Corporate/Other",
+     0.372,
+     -29.8
+    ]
+   ],
+   "groups_basis": "FY09 revenues by business (FY2009 10-K)",
+   "pharma_groups": [
+    "Biopharmaceutical"
+   ],
+   "pharma_label": "biopharmaceutical"
+  },
+  {
+   "published": "2011-02-28",
+   "sources": [
+    "PF29",
+    "PF24"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY10",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2010 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expired in March 2010', the enantiomer patent 'expires in June 2011'; 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18,
+    "2008": 1.19,
+    "2009": 1.23,
+    "2010": 1.02
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18,
+    "2008": 1.19,
+    "2009": 1.23,
+    "2010": 1.02
+   },
+   "eps_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF29",
+    "2008": "PF29",
+    "2009": "PF29",
+    "2010": "PF29"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2008 kept (the 2008-2009 tests); 2009 kept (acquisition-related costs and certain significant items of $0.41 a share after tax against $1.23 reported); 2010 kept ($0.45 against $1.02)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 48.418,
+    "2008": 48.296,
+    "2009": 50.009,
+    "2010": 67.809
+   },
+   "revenue_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF29",
+    "2008": "PF29",
+    "2009": "PF29",
+    "2010": "PF29"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0
+   },
+   "shares_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF29",
+    "2008": "PF29",
+    "2009": "PF29",
+    "2010": "PF29"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.89,
+   "prev_fy_pretax_margin_note": "FY10 income from continuing operations before taxes $9,422M / revenues $67,809M (FY2010 10-K)",
+   "prev_fy_gross_margin": 75.99,
+   "prev_fy_sales_growth": 35.6,
+   "prev_fy_us_pct": 33.6,
+   "prev_fy_intl_pct": 37.2,
+   "tax_rate": 0.1193,
+   "tax_note": "FY10 provision for taxes $1,124M / income from continuing operations before taxes $9,422M (FY2010 10-K)",
+   "fcf_b": 9.94,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $11,454M less purchases of property, plant and equipment $1,513M",
+   "cash_b": 28.01,
+   "cash_note": "cash and cash equivalents $1,735M and short-term investments $26,277M at December 31, 2010",
+   "dividend_annual": 0.8,
+   "dividend_note": "$0.20 quarterly ('In December 2010, our Board of Directors declared a first-quarter 2011 dividend of $0.20 per share', FY2010 10-K)",
+   "cash_return_text": "about 61 million shares purchased in 2010 at an average $16.46 (FY2010 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharmaceutical",
+     58.523,
+     28.8
+    ],
+    [
+     "Diversified",
+     8.966,
+     114.0
+    ],
+    [
+     "Corporate/Other",
+     0.32,
+     -14.0
+    ]
+   ],
+   "groups_basis": "FY10 revenues by business (FY2010 10-K)",
+   "pharma_groups": [
+    "Biopharmaceutical"
+   ],
+   "pharma_label": "biopharmaceutical"
+  },
+  {
+   "published": "2012-02-29",
+   "sources": [
+    "PF35",
+    "PF29",
+    "PF24"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY11",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2011 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); 'Lipitor lost exclusivity in the U.S. in November 2011' (the 2011 Financial Report); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.21,
+    "2010": 1.01,
+    "2011": 1.11
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.21,
+    "2010": 1.01,
+    "2011": 1.11
+   },
+   "eps_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF35",
+    "2009": "PF35",
+    "2010": "PF35",
+    "2011": "PF35"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2008 kept (the 2008-2009 tests); 2009 kept (acquisition-related costs and certain significant items of $0.41 a share after tax against $1.23 reported); 2010 kept ($0.45 against $1.02); 2011 kept ($0.58 against $1.11)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 47.733,
+    "2008": 47.529,
+    "2009": 49.269,
+    "2010": 67.057,
+    "2011": 67.425
+   },
+   "revenue_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF35",
+    "2009": "PF35",
+    "2010": "PF35",
+    "2011": "PF35"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0,
+    "2011": 7870.0
+   },
+   "shares_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF35",
+    "2009": "PF35",
+    "2010": "PF35",
+    "2011": "PF35"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 18.93,
+   "prev_fy_pretax_margin_note": "FY11 income from continuing operations before taxes $12,762M / revenues $67,425M (FY2011 10-K)",
+   "prev_fy_gross_margin": 77.63,
+   "prev_fy_sales_growth": 0.5,
+   "prev_fy_us_pct": -6.7,
+   "prev_fy_intl_pct": 6.0,
+   "tax_rate": 0.3152,
+   "tax_note": "FY11 provision for taxes $4,023M / income from continuing operations before taxes $12,762M (FY2011 10-K)",
+   "fcf_b": 18.58,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $20,240M less purchases of property, plant and equipment $1,660M",
+   "cash_b": 26.76,
+   "cash_note": "cash and cash equivalents $3,539M and short-term investments $23,219M at December 31, 2011",
+   "dividend_annual": 0.88,
+   "dividend_note": "$0.22 quarterly ('In December 2011, our Board of Directors declared a first-quarter 2012 dividend of $0.22 per share', FY2011 10-K)",
+   "cash_return_text": "about 459 million shares purchased in 2011 for about $9.0 billion (FY2011 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Primary Care",
+     22.67,
+     -2.8
+    ],
+    [
+     "Specialty Care and Oncology",
+     16.568,
+     0.8
+    ],
+    [
+     "Established Products and Emerging Markets",
+     18.509,
+     -1.3
+    ],
+    [
+     "Animal Health and Consumer Healthcare",
+     7.241,
+     14.1
+    ],
+    [
+     "Nutrition",
+     2.138,
+     14.5
+    ],
+    [
+     "Pfizer CentreSource",
+     0.299,
+     -6.6
+    ]
+   ],
+   "groups_basis": "FY11 revenues by operating segment (FY2011 10-K)",
+   "pharma_groups": [
+    "Primary Care",
+    "Specialty Care and Oncology",
+    "Established Products and Emerging Markets"
+   ],
+   "pharma_label": "biopharmaceutical"
+  },
+  {
+   "published": "2013-03-01",
+   "sources": [
+    "PF41",
+    "PF35",
+    "PF29",
+    "PF24"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY12",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2012 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of revenues for that product in a very short period of time' (Item 1A); biopharmaceutical revenues 'decreased 17% in 2012 compared to 2011, primarily reflecting lower revenues from Lipitor, Geodon, Caduet, Xalatan and Aromasin, all due to the loss of exclusivity' (FY2012 10-K, Item 1); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.22,
+    "2010": 1.03,
+    "2011": 1.06,
+    "2012": 1.26
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.17,
+    "2008": 1.17,
+    "2009": 1.22,
+    "2010": 1.03,
+    "2011": 1.06,
+    "2012": 1.26
+   },
+   "eps_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF41",
+    "2012": "PF41"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2008 kept (the 2008-2009 tests); 2009 kept (acquisition-related costs and certain significant items of $0.41 a share after tax against $1.23 reported); 2010 kept ($0.45 against $1.02); 2011 kept ($0.58 against $1.11); 2012 kept ($0.45 against $1.26)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 47.733,
+    "2008": 47.529,
+    "2009": 49.078,
+    "2010": 65.165,
+    "2011": 65.259,
+    "2012": 58.986
+   },
+   "revenue_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF41",
+    "2012": "PF41"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0,
+    "2009": 7045.0,
+    "2010": 8074.0,
+    "2011": 7870.0,
+    "2012": 7508.0
+   },
+   "shares_sources": {
+    "2004": "PF24",
+    "2005": "PF24",
+    "2006": "PF29",
+    "2007": "PF35",
+    "2008": "PF41",
+    "2009": "PF41",
+    "2010": "PF41",
+    "2011": "PF41",
+    "2012": "PF41"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 20.48,
+   "prev_fy_pretax_margin_note": "FY12 income from continuing operations before taxes $12,080M / revenues $58,986M (FY2012 10-K)",
+   "prev_fy_gross_margin": 80.79,
+   "prev_fy_sales_growth": -9.6,
+   "prev_fy_us_pct": -14.3,
+   "prev_fy_intl_pct": -6.3,
+   "tax_rate": 0.2121,
+   "tax_note": "FY12 provision for taxes $2,562M / income from continuing operations before taxes $12,080M (FY2012 10-K)",
+   "fcf_b": 15.73,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $17,054M less purchases of property, plant and equipment $1,327M",
+   "cash_b": 32.71,
+   "cash_note": "cash and cash equivalents $10,389M and short-term investments $22,319M at December 31, 2012",
+   "dividend_annual": 0.96,
+   "dividend_note": "$0.24 quarterly ('In December 2012, our Board of Directors declared a first-quarter 2013 dividend of $0.24 per share', FY2012 10-K)",
+   "cash_return_text": "about 349 million shares purchased in 2012 for about $8.2 billion (FY2012 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Primary Care",
+     15.558,
+     -31.4
+    ],
+    [
+     "Specialty Care and Oncology",
+     15.461,
+     -6.7
+    ],
+    [
+     "Established Products and Emerging Markets",
+     20.195,
+     9.1
+    ],
+    [
+     "Animal Health",
+     4.299,
+     2.7
+    ],
+    [
+     "Consumer Healthcare",
+     3.212,
+     6.1
+    ],
+    [
+     "Other",
+     0.261,
+     -13.0
+    ]
+   ],
+   "groups_basis": "FY12 revenues by operating segment (FY2012 10-K)",
+   "pharma_groups": [
+    "Primary Care",
+    "Specialty Care and Oncology",
+    "Established Products and Emerging Markets"
+   ],
+   "pharma_label": "biopharmaceutical"
   }
  ],
  "prints": [
@@ -847,6 +1564,664 @@
    "cash_return_text": "no share purchase stated in the release",
    "next_print": "Q4 2009 print (late January or early February)",
    "note": "the quarter ended before the Wyeth acquisition closed (2009-10-15), so it holds no Wyeth revenue"
+  },
+  {
+   "quarter": "Q4 2009",
+   "fy": 2009,
+   "q": 4,
+   "published": "2010-02-03",
+   "source": "PF23",
+   "release": "Feb 3",
+   "release_time": "before the open on Feb 3: 8-K accepted 08:10 ET",
+   "period_end": "2009-12-31",
+   "raw": {
+    "rev_m": 16537,
+    "rev_prior_m": 12346,
+    "cos_m": 3935,
+    "cos_prior_m": 1715,
+    "pretax_m": 4,
+    "pretax_prior_m": 625,
+    "us_m": 7439,
+    "us_prior_m": 5240,
+    "intl_m": 9098,
+    "intl_prior_m": 7106,
+    "diluted_shares_m": 7847
+   },
+   "sales_b": 16.537,
+   "sales_pct": 33.9,
+   "us_pct": 42.0,
+   "intl_pct": 28.0,
+   "gross_margin": 76.2,
+   "gross_margin_bp": -990.4,
+   "pretax_margin": 0.02,
+   "pretax_margin_bp": -503.8,
+   "eps_q": 0.1,
+   "eps_q_prior": 0.03,
+   "diluted_shares_m": 7847.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2010 print (early May)",
+   "note": "Wyeth's operations from the 2009-10-15 acquisition are in the quarter, not in the year-ago one (as published)",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 1.23,
+    "revenue_usd_b": 50.009,
+    "diluted_shares_m": 7045.0,
+    "normalization_note": "FY2009 $1.23 from continuing operations (Q4 2009 release); kept: after-tax acquisition-related costs and certain significant items of $0.41 a share against $1.23",
+    "gross_margin": 82.23,
+    "pretax_margin": 21.65,
+    "pretax_margin_note": "FY09 income from continuing operations before taxes $10,827M / revenues $50,009M (Q4 2009 release)",
+    "sales_growth": 3.5,
+    "us_pct": 6.6,
+    "intl_pct": 1.3,
+    "tax_rate": 0.2029,
+    "tax_note": "FY09 provision for taxes $2,197M / income from continuing operations before taxes $10,827M"
+   }
+  },
+  {
+   "quarter": "Q1 2010",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-05-04",
+   "source": "PF25",
+   "release": "May 4",
+   "release_time": "before the open on May 4: 8-K accepted 08:33 ET",
+   "period_end": "2010-04-04",
+   "raw": {
+    "rev_m": 16750,
+    "rev_prior_m": 10867,
+    "cos_m": 4306,
+    "cos_prior_m": 1408,
+    "pretax_m": 3179,
+    "pretax_prior_m": 3803,
+    "us_m": 7314,
+    "us_prior_m": 4969,
+    "intl_m": 9436,
+    "intl_prior_m": 5898,
+    "diluted_shares_m": 8101
+   },
+   "sales_b": 16.75,
+   "sales_pct": 54.1,
+   "us_pct": 47.2,
+   "intl_pct": 60.0,
+   "gross_margin": 74.29,
+   "gross_margin_bp": -1275.1,
+   "pretax_margin": 18.98,
+   "pretax_margin_bp": -1601.7,
+   "eps_q": 0.25,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 8101.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2010 print (early August)",
+   "note": "legacy Wyeth operations are in the quarter, not in the year-ago one (as published)"
+  },
+  {
+   "quarter": "Q2 2010",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-08-03",
+   "source": "PF26",
+   "release": "Aug 3",
+   "release_time": "before the open on Aug 3: 8-K accepted 08:40 ET",
+   "period_end": "2010-07-04",
+   "raw": {
+    "rev_m": 17327,
+    "rev_prior_m": 10984,
+    "cos_m": 3795,
+    "cos_prior_m": 1756,
+    "pretax_m": 3974,
+    "pretax_prior_m": 3049,
+    "us_m": 7381,
+    "us_prior_m": 4524,
+    "intl_m": 9946,
+    "intl_prior_m": 6460,
+    "diluted_shares_m": 8072
+   },
+   "sales_b": 17.327,
+   "sales_pct": 57.7,
+   "us_pct": 63.2,
+   "intl_pct": 54.0,
+   "gross_margin": 78.1,
+   "gross_margin_bp": -591.5,
+   "pretax_margin": 22.94,
+   "pretax_margin_bp": -482.3,
+   "eps_q": 0.31,
+   "eps_q_prior": 0.34,
+   "diluted_shares_m": 8072.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2010 print (early November)",
+   "note": "legacy Wyeth operations are in the quarter, not in the year-ago one (as published)"
+  },
+  {
+   "quarter": "Q3 2010",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-11-02",
+   "source": "PF27",
+   "release": "Nov 2",
+   "release_time": "before the open on Nov 2: 8-K accepted 08:32 ET",
+   "period_end": "2010-10-03",
+   "raw": {
+    "rev_m": 16171,
+    "rev_prior_m": 11621,
+    "cos_m": 3896,
+    "cos_prior_m": 1789,
+    "pretax_m": 1440,
+    "pretax_prior_m": 3971,
+    "us_m": 7112,
+    "us_prior_m": 4816,
+    "intl_m": 9059,
+    "intl_prior_m": 6805,
+    "diluted_shares_m": 8057
+   },
+   "sales_b": 16.171,
+   "sales_pct": 39.2,
+   "us_pct": 47.7,
+   "intl_pct": 33.1,
+   "gross_margin": 75.91,
+   "gross_margin_bp": -869.8,
+   "pretax_margin": 8.9,
+   "pretax_margin_bp": -2526.6,
+   "eps_q": 0.11,
+   "eps_q_prior": 0.43,
+   "diluted_shares_m": 8057.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2010 print (early February)",
+   "note": "legacy Wyeth operations are in the quarter, not in the year-ago one (as published)"
+  },
+  {
+   "quarter": "Q4 2010",
+   "fy": 2010,
+   "q": 4,
+   "published": "2011-02-01",
+   "source": "PF28",
+   "release": "Feb 1",
+   "release_time": "before the open on Feb 1: 8-K accepted 09:06 ET",
+   "period_end": "2010-12-31",
+   "raw": {
+    "rev_m": 17561,
+    "rev_prior_m": 16537,
+    "cos_m": 4282,
+    "cos_prior_m": 3935,
+    "pretax_m": 829,
+    "pretax_prior_m": 4,
+    "us_m": 7239,
+    "us_prior_m": 7439,
+    "intl_m": 10322,
+    "intl_prior_m": 9098,
+    "diluted_shares_m": 8048
+   },
+   "sales_b": 17.561,
+   "sales_pct": 6.2,
+   "us_pct": -2.7,
+   "intl_pct": 13.5,
+   "gross_margin": 75.62,
+   "gross_margin_bp": -58.8,
+   "pretax_margin": 4.72,
+   "pretax_margin_bp": 469.6,
+   "eps_q": 0.36,
+   "eps_q_prior": 0.1,
+   "diluted_shares_m": 8048.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2011 print (early May)",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 1.02,
+    "revenue_usd_b": 67.809,
+    "diluted_shares_m": 8074.0,
+    "normalization_note": "FY2010 $1.02 from continuing operations (Q4 2010 release); kept: $0.45 a share against $1.02",
+    "gross_margin": 75.99,
+    "pretax_margin": 13.89,
+    "pretax_margin_note": "FY10 income from continuing operations before taxes $9,422M / revenues $67,809M (Q4 2010 release)",
+    "sales_growth": 35.6,
+    "us_pct": 33.6,
+    "intl_pct": 37.2,
+    "tax_rate": 0.1193,
+    "tax_note": "FY10 provision for taxes $1,124M / income from continuing operations before taxes $9,422M"
+   }
+  },
+  {
+   "quarter": "Q1 2011",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-05-03",
+   "source": "PF31",
+   "release": "May 3",
+   "release_time": "before the open on May 3: 8-K accepted 08:54 ET",
+   "period_end": "2011-04-03",
+   "raw": {
+    "rev_m": 16502,
+    "rev_prior_m": 16576,
+    "cos_m": 3693,
+    "cos_prior_m": 4202,
+    "pretax_m": 3118,
+    "pretax_prior_m": 3149,
+    "us_m": 7024,
+    "us_prior_m": 7265,
+    "intl_m": 9478,
+    "intl_prior_m": 9311,
+    "diluted_shares_m": 8035
+   },
+   "sales_b": 16.502,
+   "sales_pct": -0.4,
+   "us_pct": -3.3,
+   "intl_pct": 1.8,
+   "gross_margin": 77.62,
+   "gross_margin_bp": 297.1,
+   "pretax_margin": 18.89,
+   "pretax_margin_bp": -10.3,
+   "eps_q": 0.28,
+   "eps_q_prior": 0.25,
+   "diluted_shares_m": 8035.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2011 print (early August)",
+   "note": "Capsugel discontinued in both quarters; King from 2011-01-31 (as published)"
+  },
+  {
+   "quarter": "Q2 2011",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-08-02",
+   "source": "PF32",
+   "release": "Aug 2",
+   "release_time": "before the open on Aug 2: 8-K accepted 08:55 ET",
+   "period_end": "2011-07-03",
+   "raw": {
+    "rev_m": 16984,
+    "rev_prior_m": 17132,
+    "cos_m": 3805,
+    "cos_prior_m": 3684,
+    "pretax_m": 3682,
+    "pretax_prior_m": 3926,
+    "us_m": 6700,
+    "us_prior_m": 7333,
+    "intl_m": 10284,
+    "intl_prior_m": 9799,
+    "diluted_shares_m": 7935
+   },
+   "sales_b": 16.984,
+   "sales_pct": -0.9,
+   "us_pct": -8.6,
+   "intl_pct": 4.9,
+   "gross_margin": 77.6,
+   "gross_margin_bp": -90.0,
+   "pretax_margin": 21.68,
+   "pretax_margin_bp": -123.7,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.3,
+   "diluted_shares_m": 7935.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2011 print (early November)"
+  },
+  {
+   "quarter": "Q3 2011",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-11-01",
+   "source": "PF33",
+   "release": "Nov 1",
+   "release_time": "during the session on Nov 1: 8-K accepted 09:35 ET",
+   "period_end": "2011-10-02",
+   "raw": {
+    "rev_m": 17193,
+    "rev_prior_m": 15995,
+    "cos_m": 3679,
+    "cos_prior_m": 3790,
+    "pretax_m": 3669,
+    "pretax_prior_m": 1414,
+    "us_m": 6879,
+    "us_prior_m": 7063,
+    "intl_m": 10314,
+    "intl_prior_m": 8932,
+    "diluted_shares_m": 7810
+   },
+   "sales_b": 17.193,
+   "sales_pct": 7.5,
+   "us_pct": -2.6,
+   "intl_pct": 15.5,
+   "gross_margin": 78.6,
+   "gross_margin_bp": 229.7,
+   "pretax_margin": 21.34,
+   "pretax_margin_bp": 1250.0,
+   "eps_q": 0.31,
+   "eps_q_prior": 0.11,
+   "diluted_shares_m": 7810.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2011 print (late January)"
+  },
+  {
+   "quarter": "Q4 2011",
+   "fy": 2011,
+   "q": 4,
+   "published": "2012-01-31",
+   "source": "PF34",
+   "release": "Jan 31",
+   "release_time": "before the open on Jan 31: 8-K accepted 09:08 ET",
+   "period_end": "2011-12-31",
+   "raw": {
+    "rev_m": 16746,
+    "rev_prior_m": 17354,
+    "cos_m": 3908,
+    "cos_prior_m": 4162,
+    "pretax_m": 2293,
+    "pretax_prior_m": 793,
+    "us_m": 6328,
+    "us_prior_m": 7194,
+    "intl_m": 10418,
+    "intl_prior_m": 10160,
+    "diluted_shares_m": 7687
+   },
+   "sales_b": 16.746,
+   "sales_pct": -3.5,
+   "us_pct": -12.0,
+   "intl_pct": 2.5,
+   "gross_margin": 76.66,
+   "gross_margin_bp": 64.6,
+   "pretax_margin": 13.69,
+   "pretax_margin_bp": 912.3,
+   "eps_q": 0.19,
+   "eps_q_prior": 0.36,
+   "diluted_shares_m": 7687.0,
+   "cash_return_text": "$9.0 billion of common stock repurchased in 2011",
+   "next_print": "Q1 2012 print (early May)",
+   "note": "Lipitor lost U.S. exclusivity on 2011-11-30, inside the quarter",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 1.11,
+    "revenue_usd_b": 67.425,
+    "diluted_shares_m": 7870.0,
+    "normalization_note": "FY2011 $1.11 from continuing operations (Q4 2011 release; $1.27 with Capsugel's gain and income); kept: $0.58 a share against $1.11",
+    "gross_margin": 77.63,
+    "pretax_margin": 18.93,
+    "pretax_margin_note": "FY11 income from continuing operations before taxes $12,762M / revenues $67,425M (Q4 2011 release)",
+    "sales_growth": 0.5,
+    "us_pct": -6.7,
+    "intl_pct": 6.0,
+    "tax_rate": 0.3152,
+    "tax_note": "FY11 provision for taxes $4,023M / income from continuing operations before taxes $12,762M"
+   },
+   "restates": {
+    "2010": {
+     "eps": 1.01,
+     "revenue_usd_b": 67.057
+    }
+   },
+   "restates_note": "FY2010 $1.01 and $67.057B from continuing operations, without Capsugel (Q4 2011 release; $1.02 and $67.809B in the FY2010 10-K)"
+  },
+  {
+   "quarter": "Q1 2012",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-05-01",
+   "source": "PF36",
+   "release": "May 1",
+   "release_time": "before the open on May 1: 8-K accepted 09:01 ET",
+   "period_end": "2012-04-01",
+   "raw": {
+    "rev_m": 15405,
+    "rev_prior_m": 16502,
+    "cos_m": 2974,
+    "cos_prior_m": 3693,
+    "pretax_m": 2553,
+    "pretax_prior_m": 3118,
+    "us_m": 5954,
+    "us_prior_m": 7024,
+    "intl_m": 9451,
+    "intl_prior_m": 9478,
+    "diluted_shares_m": 7598
+   },
+   "sales_b": 15.405,
+   "sales_pct": -6.6,
+   "us_pct": -15.2,
+   "intl_pct": -0.3,
+   "gross_margin": 80.69,
+   "gross_margin_bp": 307.4,
+   "pretax_margin": 16.57,
+   "pretax_margin_bp": -232.2,
+   "eps_q": 0.24,
+   "eps_q_prior": 0.28,
+   "diluted_shares_m": 7598.0,
+   "cash_return_text": "$1.7 billion of common stock repurchased in the quarter",
+   "next_print": "Q2 2012 print (late July)"
+  },
+  {
+   "quarter": "Q2 2012",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-07-31",
+   "source": "PF37",
+   "release": "Jul 31",
+   "release_time": "before the open on Jul 31: 8-K accepted 08:54 ET",
+   "raw": {
+    "rev_m": 15057,
+    "rev_prior_m": 16485,
+    "cos_m": 2752,
+    "cos_prior_m": 3571,
+    "pretax_m": 4484,
+    "pretax_prior_m": 3598,
+    "us_m": 5722,
+    "us_prior_m": 6700,
+    "intl_m": 9335,
+    "intl_prior_m": 9785,
+    "diluted_shares_m": 7537
+   },
+   "sales_b": 15.057,
+   "sales_pct": -8.7,
+   "us_pct": -14.6,
+   "intl_pct": -4.6,
+   "gross_margin": 81.72,
+   "gross_margin_bp": 338.5,
+   "pretax_margin": 29.78,
+   "pretax_margin_bp": 795.4,
+   "eps_q": 0.42,
+   "eps_q_prior": 0.32,
+   "diluted_shares_m": 7537.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2012 print (late October)",
+   "note": "Nutrition discontinued in both quarters (as published)"
+  },
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-11-01",
+   "source": "PF39",
+   "release": "Nov 1",
+   "release_time": "before the open on Nov 1: 8-K accepted 08:59 ET",
+   "raw": {
+    "rev_m": 13976,
+    "rev_prior_m": 16609,
+    "cos_m": 2665,
+    "cos_prior_m": 3409,
+    "pretax_m": 2991,
+    "pretax_prior_m": 3541,
+    "us_m": 5627,
+    "us_prior_m": 6879,
+    "intl_m": 8349,
+    "intl_prior_m": 9730,
+    "diluted_shares_m": 7508
+   },
+   "sales_b": 13.976,
+   "sales_pct": -15.9,
+   "us_pct": -18.2,
+   "intl_pct": -14.2,
+   "gross_margin": 80.93,
+   "gross_margin_bp": 145.7,
+   "pretax_margin": 21.4,
+   "pretax_margin_bp": 8.1,
+   "eps_q": 0.41,
+   "eps_q_prior": 0.3,
+   "diluted_shares_m": 7508.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2012 print (late January)"
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-01-29",
+   "source": "PF40",
+   "release": "Jan 29",
+   "release_time": "before the open on Jan 29: 8-K accepted 09:01 ET",
+   "raw": {
+    "rev_m": 15068,
+    "rev_prior_m": 16141,
+    "cos_m": 3172,
+    "cos_prior_m": 3627,
+    "pretax_m": 2170,
+    "pretax_prior_m": 2155,
+    "us_m": 5783,
+    "us_prior_m": 6328,
+    "intl_m": 9285,
+    "intl_prior_m": 9813,
+    "diluted_shares_m": 7395
+   },
+   "sales_b": 15.068,
+   "sales_pct": -6.6,
+   "us_pct": -8.6,
+   "intl_pct": -5.4,
+   "gross_margin": 78.95,
+   "gross_margin_bp": 141.9,
+   "pretax_margin": 14.4,
+   "pretax_margin_bp": 105.0,
+   "eps_q": 0.2,
+   "eps_q_prior": 0.18,
+   "diluted_shares_m": 7395.0,
+   "cash_return_text": "$3.4 billion of common stock repurchased in the quarter, $8.2 billion in 2012",
+   "next_print": "Q1 2013 print (late April)",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 1.26,
+    "revenue_usd_b": 58.986,
+    "diluted_shares_m": 7508.0,
+    "normalization_note": "FY2012 $1.26 from continuing operations (Q4 2012 release; $1.94 with Nutrition's gain and income); kept: $0.45 a share against $1.26",
+    "gross_margin": 80.79,
+    "pretax_margin": 20.48,
+    "pretax_margin_note": "FY12 income from continuing operations before taxes $12,080M / revenues $58,986M (Q4 2012 release)",
+    "sales_growth": -9.6,
+    "us_pct": -14.3,
+    "intl_pct": -6.3,
+    "tax_rate": 0.2121,
+    "tax_note": "FY12 provision for taxes $2,562M / income from continuing operations before taxes $12,080M"
+   },
+   "restates": {
+    "2011": {
+     "eps": 1.06,
+     "revenue_usd_b": 65.259
+    }
+   },
+   "restates_note": "FY2011 $1.06 and $65.259B from continuing operations, without Nutrition (Q4 2012 release; $1.11 and $67.425B in the FY2011 10-K)"
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-30",
+   "source": "PF42",
+   "release": "Apr 30",
+   "release_time": "before the open on Apr 30: 8-K accepted 09:11 ET",
+   "raw": {
+    "rev_m": 13500,
+    "rev_prior_m": 14885,
+    "cos_m": 2652,
+    "cos_prior_m": 2745,
+    "pretax_m": 3921,
+    "pretax_prior_m": 2435,
+    "us_m": 5368,
+    "us_prior_m": 5952,
+    "intl_m": 8132,
+    "intl_prior_m": 8933,
+    "diluted_shares_m": 7269
+   },
+   "sales_b": 13.5,
+   "sales_pct": -9.3,
+   "us_pct": -9.8,
+   "intl_pct": -9.0,
+   "gross_margin": 80.36,
+   "gross_margin_bp": -120.3,
+   "pretax_margin": 29.04,
+   "pretax_margin_bp": 1268.6,
+   "eps_q": 0.38,
+   "eps_q_prior": 0.23,
+   "diluted_shares_m": 7269.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2013 print (late July)",
+   "note": "Zoetis consolidated, 19.8% sold in its 2013-02-06 IPO (as published)"
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-30",
+   "source": "PF43",
+   "release": "Jul 30",
+   "release_time": "before the open on Jul 30: 8-K accepted 07:18 ET",
+   "raw": {
+    "rev_m": 12973,
+    "rev_prior_m": 13968,
+    "cos_m": 2242,
+    "cos_prior_m": 2376,
+    "pretax_m": 5357,
+    "pretax_prior_m": 4180,
+    "us_m": 5090,
+    "us_prior_m": 5307,
+    "intl_m": 7883,
+    "intl_prior_m": 8661,
+    "diluted_shares_m": 7117
+   },
+   "sales_b": 12.973,
+   "sales_pct": -7.1,
+   "us_pct": -4.1,
+   "intl_pct": -9.0,
+   "gross_margin": 82.72,
+   "gross_margin_bp": -27.2,
+   "pretax_margin": 41.29,
+   "pretax_margin_bp": 1136.8,
+   "eps_q": 0.5,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 7117.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2013 print (late October)",
+   "note": "Animal Health discontinued in both quarters after the full disposition of Zoetis on 2013-06-24 (as published)"
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-29",
+   "source": "PF44",
+   "release": "Oct 29",
+   "release_time": "before the open on Oct 29: 8-K accepted 08:48 ET",
+   "raw": {
+    "rev_m": 12643,
+    "rev_prior_m": 12953,
+    "cos_m": 2287,
+    "cos_prior_m": 2309,
+    "pretax_m": 3573,
+    "pretax_prior_m": 2806,
+    "us_m": 5186,
+    "us_prior_m": 5174,
+    "intl_m": 7457,
+    "intl_prior_m": 7779,
+    "diluted_shares_m": 6656
+   },
+   "sales_b": 12.643,
+   "sales_pct": -2.4,
+   "us_pct": 0.2,
+   "intl_pct": -4.1,
+   "gross_margin": 81.91,
+   "gross_margin_bp": -26.3,
+   "pretax_margin": 28.26,
+   "pretax_margin_bp": 659.8,
+   "eps_q": 0.39,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 6656.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2013 print (late January)",
+   "note": "diluted shares fell with the Zoetis exchange offer of 2013-06-24"
   }
  ],
  "guides": [
@@ -1083,6 +2458,367 @@
    ],
    "rev_label": "revenues",
    "note": "includes Wyeth's operations from the 2009-10-15 closing (the business bought stays in, the SHW Valspar rule)"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-02-03",
+   "source": "PF23",
+   "doc": "Q4 2009 release",
+   "rev_guide_usd_b": [
+    67.0,
+    69.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    0.95,
+    1.1
+   ],
+   "eps_adj": [
+    2.1,
+    2.2
+   ],
+   "note": "with Wyeth for the full year"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-05-04",
+   "source": "PF25",
+   "doc": "Q1 2010 release",
+   "rev_guide_usd_b": [
+    67.0,
+    69.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    0.95,
+    1.1
+   ],
+   "eps_adj": [
+    2.1,
+    2.2
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2010-08-03",
+   "source": "PF26",
+   "doc": "Q2 2010 release",
+   "rev_guide_usd_b": [
+    67.0,
+    69.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    0.95,
+    1.1
+   ],
+   "eps_adj": [
+    2.1,
+    2.2
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2010-11-02",
+   "source": "PF27",
+   "doc": "Q3 2010 release",
+   "rev_guide_usd_b": [
+    67.0,
+    68.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    0.84,
+    0.94
+   ],
+   "eps_adj": [
+    2.17,
+    2.22
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2011-02-01",
+   "source": "PF28",
+   "doc": "Q4 2010 release",
+   "rev_guide_usd_b": [
+    66.0,
+    68.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.09,
+    1.24
+   ],
+   "eps_adj": [
+    2.16,
+    2.26
+   ],
+   "note": "with King from its acquisition"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-04",
+   "source": "PF30",
+   "doc": "Capsugel 8-K of 2011-04-04",
+   "rev_guide_usd_b": [
+    65.2,
+    67.2
+   ],
+   "rev_label": "revenues",
+   "note": "revenues without Capsugel, 'while maintaining all other elements of its 2011 financial guidance'"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-05-03",
+   "source": "PF31",
+   "doc": "Q1 2011 release",
+   "rev_guide_usd_b": [
+    65.2,
+    67.2
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.09,
+    1.24
+   ],
+   "eps_adj": [
+    2.16,
+    2.26
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2011-08-02",
+   "source": "PF32",
+   "doc": "Q2 2011 release",
+   "rev_guide_usd_b": [
+    65.2,
+    67.2
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.09,
+    1.24
+   ],
+   "eps_adj": [
+    2.16,
+    2.26
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2011-11-01",
+   "source": "PF33",
+   "doc": "Q3 2011 release",
+   "rev_guide_usd_b": [
+    66.2,
+    67.2
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.2,
+    1.3
+   ],
+   "eps_adj": [
+    2.24,
+    2.29
+   ],
+   "note": "reported EPS includes $0.17 of 'Gain on Sale of and Income from Capsugel Discontinued Operations'"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-01-31",
+   "source": "PF34",
+   "doc": "Q4 2011 release",
+   "rev_guide_usd_b": [
+    60.5,
+    62.5
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.37,
+    1.52
+   ],
+   "eps_adj": [
+    2.2,
+    2.3
+   ]
+  },
+  {
+   "fy": 2012,
+   "published": "2012-05-01",
+   "source": "PF36",
+   "doc": "Q1 2012 release",
+   "rev_guide_usd_b": [
+    58.0,
+    60.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.23,
+    1.38
+   ],
+   "eps_adj": [
+    2.14,
+    2.24
+   ],
+   "note": "revenues without Nutrition, presented as a discontinued operation from the second quarter"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-07-31",
+   "source": "PF37",
+   "doc": "Q2 2012 release",
+   "rev_guide_usd_b": [
+    58.0,
+    60.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.23,
+    1.38
+   ],
+   "eps_adj": [
+    2.14,
+    2.24
+   ],
+   "note": "reported EPS includes Nutrition's results as a discontinued operation, not the gain on its sale"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-08-14",
+   "source": "PF38",
+   "doc": "Nexium 8-K of 2012-08-14",
+   "eps_guide": [
+    1.21,
+    1.36
+   ],
+   "eps_adj": [
+    2.12,
+    2.22
+   ],
+   "note": "EPS lowered for the upfront payment for over-the-counter Nexium; the other elements maintained"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-11-01",
+   "source": "PF39",
+   "doc": "Q3 2012 release",
+   "rev_guide_usd_b": [
+    58.0,
+    59.0
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.3,
+    1.38
+   ],
+   "eps_adj": [
+    2.14,
+    2.17
+   ],
+   "note": "reported EPS includes $0.06 of 'Income from Discontinued Operations' (Nutrition)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-01-29",
+   "source": "PF40",
+   "doc": "Q4 2012 release",
+   "rev_guide_usd_b": [
+    56.2,
+    58.2
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.5,
+    1.65
+   ],
+   "eps_adj": [
+    2.2,
+    2.3
+   ],
+   "note": "with a full-year contribution from Zoetis"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-30",
+   "source": "PF42",
+   "doc": "Q1 2013 release",
+   "rev_guide_usd_b": [
+    55.3,
+    57.3
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.44,
+    1.59
+   ],
+   "eps_adj": [
+    2.14,
+    2.24
+   ],
+   "note": "Zoetis's revenues and expenses still included"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-06-24",
+   "source": "PF45",
+   "doc": "Zoetis exchange-offer 425 of 2013-06-24",
+   "rev_guide_usd_b": [
+    50.8,
+    52.8
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    1.44,
+    1.59
+   ],
+   "eps_adj": [
+    2.1,
+    2.2
+   ],
+   "note": "revenues without Zoetis for the full year; reported EPS 'was not adjusted to reflect the gain on the disposition of shares of Zoetis common stock'"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-30",
+   "source": "PF43",
+   "doc": "Q2 2013 release",
+   "rev_guide_usd_b": [
+    50.8,
+    52.8
+   ],
+   "rev_label": "revenues",
+   "eps_guide": [
+    3.07,
+    3.22
+   ],
+   "eps_adj": [
+    2.1,
+    2.2
+   ],
+   "note": "revenues without Animal Health (discontinued); reported EPS includes the 'Gain associated with the full disposition of Zoetis' and Protonix litigation income"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-10-29",
+   "source": "PF44",
+   "doc": "Q3 2013 release",
+   "rev_guide_usd_b": [
+    50.8,
+    51.8
+   ],
+   "rev_label": "adjusted revenues",
+   "eps_guide": [
+    3.05,
+    3.15
+   ],
+   "eps_adj": [
+    2.15,
+    2.2
+   ],
+   "note": "reported EPS includes the gain on disposal of Zoetis"
   }
  ],
  "dividends": [

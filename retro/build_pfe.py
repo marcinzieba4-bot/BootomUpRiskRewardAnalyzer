@@ -20,14 +20,18 @@ inputs map as follows (retro/README.md, "PFE"):
   - guided margin step: none (the cost-of-sales, expense and tax-rate guides are on the adjusted basis and are not a pre-tax margin);
     the margin signal takes the latest quarter's pre-tax margin change.
 
+A Q4 print may restate the year before it on a new basis ('restates': EPS and revenues from continuing operations, after a business
+became a discontinued operation); the restated figures replace that year until a 10-K vintage published after the print carries it.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2009 were accepted before the open or during the session on the release
+is the first trading day after it. The earnings 8-Ks of 2007-2013 were accepted before the open or during the session on the release
 day, none on a week's last trading day.
 
 Output goes to staging/retrospective/PFE until the series is added to the archive (--out archive/retrospective/PFE).
 
 Usage
   python3 retro/build_pfe.py --weekly 2008-01-01 2009-12-31
+  python3 retro/build_pfe.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_pfe.py 2008-01-24
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/PFE/<AS_OF>
 """
@@ -169,6 +173,17 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_us_pct=a["us_pct"], prev_fy_intl_pct=a["intl_pct"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a Q4 print may restate the year before it on a new basis ('restates': its EPS and revenues from continuing operations, as the
+    # Q4 2011 release does for 2010 without Capsugel and the Q4 2012 release for 2011 without Nutrition); each year comes from the latest
+    # filing that reports it, so the restated figures replace the year from the print until a 10-K vintage published after the print
+    # carries the year (the WMT, SHW and XOM encoding; retro/README.md, "PFE 2010-2013")
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, r in p["restates"].items():
+                assert yy in h["eps_normalized"] and yy in h["revenue_usd_b"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: r["eps"]}, revenue_usd_b={**h["revenue_usd_b"], yy: r["revenue_usd_b"]},
+                         normalization=f'{h["normalization"]}; {p["restates_note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
@@ -288,7 +303,13 @@ def build(as_of, facts, raw, spx, engine, out):
     volumes = (f"U.S. revenues ${r['us_m'] / 1000:.3f}B ({latest['us_pct']:+.1f}%), international ${r['intl_m'] / 1000:.3f}B "
                f"({latest['intl_pct']:+.1f}%), each against the year-ago quarter in the same release"
                + (f"; {latest['note']}" if latest.get("note") else ""))
-    pharma = next(v for n, v, _ in groups if n == "Pharmaceutical") / sum(v for _, v, _ in groups) * 100
+    # the pharmaceutical share of revenues: the Pharmaceutical segment to FY2008, the vintage's biopharmaceutical groups from FY2009
+    if h.get("pharma_groups"):
+        pharma = sum(v for n, v, _ in groups if n in h["pharma_groups"]) / sum(v for _, v, _ in groups) * 100
+        pharma_label = h["pharma_label"]
+    else:
+        pharma = next(v for n, v, _ in groups if n == "Pharmaceutical") / sum(v for _, v, _ in groups) * 100
+        pharma_label = "pharmaceutical"
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -363,7 +384,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}% (U.S. {h['prev_fy_us_pct']:+.1f}%, international {h['prev_fy_intl_pct']:+.1f}%), pharmaceutical {pharma:.0f}% of revenues; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}% (U.S. {h['prev_fy_us_pct']:+.1f}%, international {h['prev_fy_intl_pct']:+.1f}%), {pharma_label} {pharma:.0f}% of revenues; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['fcf_label']} year-end cash and short-term investments ${h['cash_b']:.2f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}

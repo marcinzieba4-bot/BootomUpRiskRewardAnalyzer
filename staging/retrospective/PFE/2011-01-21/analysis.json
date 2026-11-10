@@ -1,0 +1,208 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PFE",
+ "company": "Pfizer Inc",
+ "as_of": "2011-01-21",
+ "price_date": "2011-01-21",
+ "price": 18.36,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2009 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2009 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.66x; +29% to EPP floor; model-vs-market gap +1.18; conservative 2yr +75%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.66,
+  "ratio_b_fmt": "0.66x",
+  "epp": 14.24,
+  "epp_gap_pct": 28.9,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.75,
+  "sca": 0.17,
+  "adj_composite": 2.92,
+  "market_composite": 1.74,
+  "adj_gap": 1.18,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 74.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.45,
+    "pe": 13.5,
+    "price": 6,
+    "desc": "EPS -28.7%/yr (worst year FY04-FY09, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.66,
+    "pe": 19.1,
+    "price": 32,
+    "desc": "EPS +36.6%/yr (FY10 guide + margin + buyback); P/E at its 7.1-yr median"
+   },
+   "BULL": {
+    "eps": 1.66,
+    "pe": 22.3,
+    "price": 37,
+    "desc": "EPS +36.6%/yr (FY04-FY09 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.66,
+    "pe": 25.4,
+    "price": 42,
+    "desc": "EPS +36.6%/yr (best 2-yr run FY04-FY09); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.66,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.48,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 1.32,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.98,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 0.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.63,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 1.21,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.7,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 1.14,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.66,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 1.48,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.66,
+   "epp_gap_pct": 8.6,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.66,
+   "epp_gap_pct": 28.9,
+   "adj_gap": 1.27,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 74.9,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "PFE (retrospective, 2011-01-21) ◉ BUY — Ratio B 0.66x (67.3% downside to Bear $6 / +101.5% upside to Bull $37) | Adj composite 2.92 vs market 1.74: gap +1.18 [UNDERVALUED] | +29% above the EPP floor $14 (16x FY10E $0.89) | Conservative 2-yr case: +74.9% total (+37.4%/yr) | At 20.6x FY10E the 15% hurdle price $24 sits at or below the BASE case; U.S. revenues +47.7% in Q3 2010, forward revenues +34-36% (FY10 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "PF24",
+   "published": "2010-02-26",
+   "filed": "2010-02-26 13:43 ET",
+   "title": "Pfizer FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312510042425/dex13.htm",
+   "supports": "financial summary 2004-2009 (revenues, diluted EPS from continuing operations, diluted shares); statement of income; revenues by business and geography; cash flows; the first-quarter 2010 dividend of $0.18; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF23",
+   "published": "2010-02-03",
+   "filed": "2010-02-03 08:10 ET (before the open)",
+   "title": "Pfizer Q4 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752310000574/a6164666ex99.htm",
+   "supports": "fourth-quarter and full-year 2009 statements of income and revenues by U.S. and international (Wyeth from 2009-10-15); 2010 guidance"
+  },
+  {
+   "id": "PF25",
+   "published": "2010-05-04",
+   "filed": "2010-05-04 08:33 ET (before the open)",
+   "title": "Pfizer Q1 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000114420410024128/v183292_ex99.htm",
+   "supports": "first-quarter 2010 statement of income and revenues by U.S. and international; 2010 guidance"
+  },
+  {
+   "id": "PF26",
+   "published": "2010-08-03",
+   "filed": "2010-08-03 08:40 ET (before the open)",
+   "title": "Pfizer Q2 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000114420410040807/v192168_ex99.htm",
+   "supports": "second-quarter 2010 statement of income and revenues by U.S. and international; 2010 guidance"
+  },
+  {
+   "id": "PF27",
+   "published": "2010-11-02",
+   "filed": "2010-11-02 08:32 ET (before the open)",
+   "title": "Pfizer Q3 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000114420410056785/v200593_ex99.htm",
+   "supports": "third-quarter 2010 statement of income and revenues by U.S. and international; 2010 guidance"
+  },
+  {
+   "id": "W0",
+   "published": "2011-01-21",
+   "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PFE/history",
+   "supports": "close $18.36 as traded on AS_OF, 52-week range, realized vol, beta, the 7.1-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2029, 2070 after 2011 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-10"
+}

@@ -43,7 +43,8 @@ occupancy, raw figures and full-year actuals are absurd; BKR: a print whose regi
 figures, pro forma table, basis note and full-year actuals are absurd and whose actuals restate every year, and a later display-only
 outlook for every quarter an 8-K guides and the two after the last print, and a later vintage excluding a year (the guide and dividend
 every fact sheet with a 'guides' list gets, too), and from the 2017 listing of Baker Hughes, a GE company the same in the new company's
-own fields (orders, the segment margin, the work in hand; "era" on the planted print, guides and dividend; BKR 2018-2021); every
+own fields (orders, the segment margin, the work in hand; "era" on the planted print, guides and dividend; BKR 2018-2021); PFE: a
+print whose full-year actuals are absurd and which restates every year of the history (the 'restates' field of PFE 2010-2013); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -383,6 +384,9 @@ try:
                              "diluted_shares_m": 1.0, "normalization_note": "PLANTED", "gross_margin": 1.0, "pretax_margin": -50.0,
                              "pretax_margin_note": "PLANTED", "sales_growth": -60.0, "us_pct": -60.0, "intl_pct": -60.0, "tax_rate": 0.99,
                              "tax_note": "PLANTED"}
+        # a later print restating every year of the history (the 'restates' field of PFE 2010-2013)
+        last["restates"] = {y: {"eps": 0.01, "revenue_usd_b": 0.01} for y in v["eps_normalized"] if y != "2099"}
+        last["restates_note"] = "PLANTED"
     if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted

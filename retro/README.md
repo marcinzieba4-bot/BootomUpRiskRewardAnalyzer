@@ -11357,6 +11357,165 @@ Judgement calls that could carry hindsight:
   business's competition;
 - the series key PFE and Yahoo's 2020 factor in the price basis (checked against the 10-Ks' year-end market values).
 
+### PFE 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_pfe.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-01 2010-02-03 2010-02-26 2010-05-04 2010-08-03 2010-11-02 2011-02-01 2011-02-28 2011-04-04 2011-05-03 2011-08-02 \
+         2011-11-01 2012-01-31 2012-02-29 2012-05-01 2012-07-31 2012-08-14 2012-11-01 2013-01-29 2013-03-01 2013-04-30 2013-06-24 \
+         2013-07-30 2013-10-29 2014-01-01; do python3 retro/tools/firewall.py $c PFE; done
+```
+
+Read: the 16 earnings releases from Q4 2009 to Q3 2013, the FY2009-FY2012 10-Ks (the financial reports filed as Exhibit 13, with
+Items 1 and 1A), the FY2012 10-K/A, the 12 10-Qs for the dividend statements, every other 8-K of February 2010 to January 2014 (21
+filings, by their exhibits) and the 47 Form 425 communications of the 2013 Zoetis exchange offer, all read directly, none
+delegated. The source ids are PF23-PF45 (PF45, the Form 425 of 2013-06-24, was added last). 273 strings were checked with
+`verbatim.py`, each against its own filing (503 with the 2008-2009 batch's 230, all found), and a script found each of the 741 raw
+figures of both batches in the rows cited from its own source. Decided on 2026-11-10, before any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (07:18-09:11 ET) except Q3 2011's (09:35 ET, in the session);
+  none on a week's last trading day, so each print's week is dated the next trading day (2010-02-04 .. 2013-10-30). The 10-Ks: FY2009
+  2010-02-26 13:43 ET and FY2010 2011-02-28 10:00 ET (dated those days), FY2011 2012-02-28 17:07 ET and FY2012 2013-02-28 16:57 ET
+  (after the close, dated 2012-02-29 and 2013-03-01). Three other filings carry a guide: the 8-Ks on the Capsugel sale (2011-04-04,
+  13:55 ET) and the over-the-counter Nexium agreement (2012-08-14, 13:38 ET), and the Form 425 announcing the preliminary results of the
+  Zoetis exchange offer (2013-06-24, 11:49 ET), each from its own week's date.
+- **History: four more vintages,** 2004 to the 10-K's year, each year from the latest 10-K that reports it, on the same basis (diluted
+  EPS from continuing operations): FY2009 10-K 2009 $1.23; FY2010 10-K 2010 $1.02; FY2011 10-K, with Capsugel discontinued, 2007 $1.17,
+  2008 $1.17, 2009 $1.21, 2010 $1.01, 2011 $1.11; FY2012 10-K, with Nutrition discontinued too, 2009 $1.22, 2010 $1.03, 2011 $1.06,
+  2012 $1.26 (revenues 2008-2012 $47.529B, $49.078B, $65.165B, $65.259B, $58.986B). 2004-2006 stay from the FY2006 10-K, the latest
+  filing that reports them. 2003 stays excluded and the window starts on 2004-01-01: 6.0 years in January 2010, 10 years by the end of
+  2013.
+- **Restated years (`restates`).** The Q4 2011 release restates FY2010 without Capsugel ($1.01 and $67.057B against the 10-K's $1.02
+  and $67.809B) and the Q4 2012 release FY2011 without Nutrition ($1.06 and $65.259B against $1.11 and $67.425B). Each print replaces
+  that year from its date until a 10-K vintage published after it carries the year (four dates each; the XOM, SHW and BKR encoding).
+  A builder change that moves no earlier output.
+- **The distorted-year test keeps every year.** After tax, per share, the acquisition-related costs and certain significant items are
+  $0.41 against 2009's reported $1.23, $0.45 against 2010's $1.02, $0.58 against 2011's $1.11 and $0.45 against 2012's $1.26: reported
+  EPS is far above half the EPS without them. GAAP stands; the adjusted figures (2009 $2.02, 2010 $2.23, 2011 $2.31, 2012 $2.19) still
+  remove the recurring amortization of acquired intangibles and are shown in the guide line only.
+- **Guides: reported diluted EPS and revenues, as published, for the fiscal year only** (no quarter, margin or growth rate is guided
+  in numbers), each field from the latest guide that states it:
+  - FY2010: $67.0-69.0B and $0.95-1.10 (Q4 2009 release, "with Wyeth for the full year"; repeated in Q1 and Q2 2010), $67.0-68.0B and
+    $0.84-0.94 (Q3 2010);
+  - FY2011: $66.0-68.0B and $1.09-1.24 (Q4 2010, King included from its acquisition), $65.2-67.2B without Capsugel (the 8-K of
+    2011-04-04, "while maintaining all other elements of its 2011 financial guidance"; repeated in Q1 and Q2 2011), $66.2-67.2B and
+    $1.20-1.30 (Q3 2011, the EPS including $0.17 of "Gain on Sale of and Income from Capsugel Discontinued Operations");
+  - FY2012: $60.5-62.5B and $1.37-1.52 (Q4 2011), $58.0-60.0B without Nutrition and $1.23-1.38 (Q1 and Q2 2012), $1.21-1.36 (the Nexium
+    8-K, for the upfront payment; revenues maintained), $58.0-59.0B and $1.30-1.38 (Q3 2012, the EPS including $0.06 of Nutrition's
+    income as a discontinued operation);
+  - FY2013: $56.2-58.2B and $1.50-1.65 (Q4 2012), $55.3-57.3B and $1.44-1.59 (Q1 2013), $50.8-52.8B without Zoetis for the full
+    year and $1.44-1.59 unchanged (the Form 425 of 2013-06-24, "adjusting its 2013 financial guidance solely to reflect the impact of
+    the Zoetis exchange offer"; the EPS range "was not adjusted to reflect the gain on the disposition"), $50.8-52.8B and $3.07-3.22
+    (Q2 2013), $50.8-51.8B ("Adjusted Revenues", the release's only revenue range, $67M from reported revenues through the
+    third quarter) and $3.05-3.15 (Q3 2013). The 2013 EPS ranges include the gain on the full disposition of Zoetis, $1.56 and then
+    $1.55 a share in the guidance reconciliation, as discontinued operations.
+  Current-FY EPS is the reported range's midpoint as published, discontinued operations included where the guide includes them: it is
+  the only EPS line Pfizer guides in GAAP terms, and r2 maps the reported guide (the NKE, LOW and UNP rule). The revenue ranges are read
+  as growth on the last full year in the history, acquisitions in (Wyeth from 2009-10-15, King from 2011-01-31: the SHW Valspar and
+  BKR BJ Services rule); a range that leaves out a divested business stands as published against a base that includes it (the LOW
+  2011 rule) until the base is restated. No margin step (the cost-of-sales and tax-rate guides are on the adjusted basis). The FY2012
+  "targets" of the Q4 2010 to Q3 2011 releases are not entered: FY2012 becomes the current year with the Q4 2011 print, whose own
+  FY2012 guide supersedes them, so they could change no date (as the 2007 releases' FY2008 guides, inert in the controls).
+- **Signals,** from each release's revenue table and statement of income as before, each against the year-ago quarter as the same
+  release shows it: Wyeth is in the quarters from Q4 2009 and not in their year-ago quarters through Q3 2010 (U.S. revenue +42.0% to
+  +63.2%, international +28.0% to +60.0%); the releases restate the year-ago quarter for Capsugel, Nutrition and Animal Health as
+  discontinued operations, and the signals take those figures. Lipitor's U.S. exclusivity ended on 2011-11-30, inside Q4 2011.
+- **Dividends,** each from the first filing that states the rate: $0.18 a quarter (FY2009 10-K, "In December 2009, our Board of
+  Directors declared a first-quarter 2010 dividend of $0.18 per share"), $0.20 (FY2010 10-K), $0.22 (FY2011 10-K), $0.24 (FY2012
+  10-K). The December declarations were not filed on Form 8-K and the Q4 releases do not state them, so $0.16 stands to 2010-02-19 and
+  each new rate from the 10-K's date.
+- **Durability: DURABLE, risk 2, unchanged.** The FY2009-FY2012 10-Ks call Pfizer "a research-based, global biopharmaceutical company"
+  and keep generic competition as "a major challenge for us around the world" ("we can lose the major portion of revenues for that
+  product in a very short period of time", FY2012); the "why" follows each 10-K (Lipitor's patents "expired in March 2010" and "expires
+  in June 2011", then "Lipitor lost exclusivity in the U.S. in November 2011", then biopharmaceutical revenues "decreased 17% in 2012").
+  No theme is live for a pharmaceutical company through 2013; the watch list stays empty.
+- **Segment bridge** (display only): from the FY2011 10-K the biopharmaceutical groups are Primary Care, Specialty Care and Oncology,
+  and Established Products and Emerging Markets (`pharma_groups`); before it, the Biopharmaceutical segment.
+- **Adds nothing:** the FY2012 10-K/A of 2013-03-01 ("for the sole purpose of fixing typographical errors", the financial report's page
+  headers), the King acquisition agreement 8-K of 2010-10-12, the board and officer 8-Ks (2010-03-02 .. 2013-12-26), the derivative
+  litigation notice of 2010-12-17, the Nutrition sale to Nestle of 2012-04-23 (its guide effect enters with the Q1 2012 release), the
+  Zoetis blackout notice of 2013-05-29, the note offering of 2013-06-03, the vote results, the other 46 Zoetis exchange-offer
+  communications (Form 425, May-June 2013: offer documents, employee and shareholder notices, and a Zoetis presentation with Zoetis's own
+  2013 guidance, not Pfizer's), and the 10-Qs beyond their dividend statements (the Q2 2013 10-Q repeats the Q2 release's guide).
+
+Controls and checks:
+- **Controls:** altering one value of each print (its U.S./international split, each Q4 print's full-year EPS, each restated year),
+  each vintage (its last year's EPS and, from 2010, its dividend), each guide field and each dividend changes no model dated before its
+  publication and changes the first weekly date on or after it: 101 of 107 over the 314 dates; the other 6 are the 2007 guides of the
+  first batch, superseded before any built date.
+- **Leak scan:** the source ids, titles, notes, texts and figures of every later print, restatement, guide, vintage, dividend and
+  source appear in no model before their publication (0 hits in 53,124 pairs, after dropping 57 strings an earlier fact carries).
+- **`retro_tool run`:** passes on all 209 dates. Each draws one warning for calendar years: "2070" (the pre-tax margin signal's XBULL
+  threshold), "2011" (Lipitor's patent date in the "why", while 2010 is the current year) and "2029" (the FY2009 10-K's tax rate,
+  0.2029, to 2011-02-25).
+- **Firewall:** passes at the 25 cutoffs above (every release, 10-K and other guide date of 2010-2013, plus 2010-01-01 and 2014-01-01)
+  and at four 2008-2009 cutoffs rerun after the builder change (2008-07-01, 2009-01-27, 2009-02-27, 2009-10-20), with 0 files changed
+  and no planted text (26 to 314 dates each); the planted print now also restates every year of the history. The Form 425 guide was
+  entered after the first full run; 2013-04-30, 2013-06-24, 2013-06-25, 2013-07-30, 2013-10-29 and 2014-01-01 were run again with it.
+- No file shared with another ticker changed (the builder, fact sheet and firewall plant are PFE's own), so no other model can move.
+
+Seen in the build (method behaviour, not tuned):
+- **2010: CHEAP on all 52 dates** (BUY), and not on the multiple. From the Q4 2009 print FY10E is $1.025, then $0.89 from 2010-11-03
+  (Q3 2010's lowered guide): the stock ($14.14-19.49) trades at 12.7-19.8x, from 10% under to 32% above a 14-17x floor ($20.65 falling
+  to $13.35) and at the 12th-57th percentile of its window. The class comes from BASE: the FY2010 revenue guide, Wyeth for the full
+  year, read on FY09's $50.009B with Wyeth for 2.5 months, is +34% to +38%, so BASE is +37.6%/yr (+36.6% from Q3 2010), the BASE price
+  $31-37 and Ratio B 0.24-0.66. BULL and XBULL equal BASE.
+- **2011: RICH on 45 dates, from the Q4 2010 print** (2011-02-02; AVOID on 39, WATCHLIST on 6), CHEAP on the 4 January dates before it
+  and FAIR on 3 in November (2011-11-02, -18, -25; Ratio B 1.25-1.63). On FY11E $1.165, then $1.25 with the Capsugel gain from Q3 2011,
+  the stock is 14.8-18.0x (the 19th-55th percentile, median 17.1-17.7x), 5-29% above a 14x floor ($16.31, $17.50 from 2011-11-02);
+  BASE is -2.2%/yr on the FY2011 guide against FY10's $67.809B, -3.3% from the Capsugel 8-K (2011-04-08) and -2.6% from Q3 2011, and
+  Ratio B 1.44-4.28.
+- **2012: RICH on all 52 dates** (AVOID on 43, WATCHLIST on 9). FY12E is $1.445 (Q4 2011), $1.305 (Q1 2012), $1.285 (the Nexium 8-K,
+  from 2012-08-17) and $1.34 (Q3 2012); the stock is 14.6-20.0x (14th-69th percentile), 4-34% above a 14-15x floor ($19.27-20.23).
+  BASE is -9.3%/yr (FY12's $60.5-62.5B on FY11's $67.425B), then -13.0% and -13.7% on the ranges without Nutrition; BULL is the FY04-FY11
+  CAGR (-3.6%/yr), so the BULL price ($26-29) sits just above the price and Ratio B reaches 70 (2012-10-19).
+- **2013: RICH on 30 dates to 2013-07-26, CHEAP on 23 from the Q2 2013 print.** On FY13E $1.575 and $1.515 the stock is 17.1-20.1x,
+  7-34% above a 16x floor ($24.24-25.20), and passes the BULL price (the FY04-FY12 CAGR, -1.6%/yr) on 2013-01-11 to 2013-01-25 (Ratio B
+  infinite). From 2013-07-31 FY13E is $3.145, then $3.10, with the Zoetis gain: 9.0-10.4x (the 3rd-9th percentile), 31-40% under a 15x
+  floor ($46.50-47.17), Ratio B 0.26-0.49. BASE is -2.8% and -4.4%/yr on the first two FY2013 guides, then -12.0% from 2013-06-28 on
+  the Form 425's range without Zoetis (Ratio B does not move: BASE is not in it) and -12.9% from Q3 2013.
+- **BEAR is 2005 throughout** (-28.7%/yr) at the 10th-percentile P/E: $6-11 to mid-2013, $16-20 on the gain-inclusive EPS. **XBULL** is
+  the 2005-2007 run (+7.6%/yr), +7.1% on the FY2011 10-K's restated 2007, then FY10-FY12 (+11.7% on the Q4 2012 print's restated
+  $1.01, +10.6% on the FY2012 10-K's $1.03).
+- **The proxy composite** is 2.60 on Q4 2009, 2.95 on Q1 2010 and 3.10 on Q2 2010 (U.S. +63.2% and international +54.0% with Wyeth,
+  at the XBULL thresholds), 2.75 on Q3 2010, 2.35, 2.15, 2.00 and 2.50 on Q4 2010-Q3 2011, 1.95 on Q4 2011, 1.60, 1.75 and 1.60 on Q1-Q3
+  2012, 1.95 on Q4 2012, 1.80 on Q1 and Q2 2013 and 1.95 on Q3 2013.
+- **Robustness:** all eight variants agree on 150 of 209 dates (79 CHEAP, 71 RICH); 43 dates split FAIR/RICH and 16 span all three
+  classes (August 2011 to April 2012, at the floor's edge).
+
+Sensitivity (each call changed alone, the 209 dates reclassified offline; no outcome consulted):
+- **The company's adjusted EPS throughout** (history, actuals, restated years and guides as each release states them; 2004-2005
+  derived as in 2008-2009): **75 classes**, 79 tiers: 21 RICH to CHEAP and 28 RICH to FAIR (2011-02-02 to 2012-01-27), 3 FAIR to CHEAP
+  (November 2011), and 23 CHEAP to RICH (2013-07-31 to 2013-12-31, as the adjusted guide carries no Zoetis gain);
+- **the FY2010 revenue guides read on pro forma 2009 revenues** ($68,599M, the FY2009 10-K's unaudited combined Pfizer and Wyeth year,
+  from 2010-02-26): **37 classes**, 49 tiers (23 CHEAP to FAIR, 14 CHEAP to RICH; 2010-02-26 to 2011-01-28). The 2010 CHEAP calls rest
+  on Wyeth in growth;
+- **only 2003 leaving** (the ten-year history and window ex-FY03): 32 classes (26 RICH to FAIR, 5 RICH to CHEAP, 1 FAIR to CHEAP;
+  2011-02-02 to 2012-02-24), 42 tiers;
+- **the dollar revenue guides not used** (BASE on the latest quarter's growth): 29 classes (28 RICH to FAIR, 1 FAIR to CHEAP; 2011-02-02
+  to 2012-01-27), 31 tiers; 2010 does not move, as its quarters' growth carries Wyeth too;
+- **the Zoetis gain out of the 2013 guides** (the "Discontinued operations" line of the reconciliation, $1.51-1.66 and $1.50-1.60), or
+  the gain-inclusive guides giving no EPS (Q1 2013's $1.44-1.59 standing): **23 classes** either way, every CHEAP date from 2013-07-31
+  to RICH;
+- 2008 excluded (the pre-tax reading): 2 classes (RICH to FAIR, November-December 2011), 5 tiers;
+- the ranges without Nutrition and Animal Health read on a base without them (segment revenues of the FY2011 and FY2012 10-Ks): none;
+- the restated years ignored: none;
+- every signal at its BEAR value: 5 classes (3 FAIR to RICH in November 2011, 2 CHEAP to FAIR in November 2013); at XBULL: 29 (28 RICH
+  to FAIR, 1 FAIR to CHEAP); no tier either way.
+
+Judgement calls that could carry hindsight:
+- the reported EPS guide as published, the Zoetis gain included (23 classes in the second half of 2013). Read as a distorted year the
+  guide would stay: $3.145 is 1.9 times the $1.65 without the gain, the Protonix income and the acquisition and restructuring costs of
+  the reconciliation, and the r2 mirror test excludes only a year over double;
+- Wyeth and King in growth, the FY2010 guide read on the Pfizer-only FY2009 (37 classes with the 10-K's pro forma year);
+- GAAP EPS rather than the company's adjusted figure (75 classes), on the recurring-amortization rule of 2008-2009;
+- 2003 taking the history and the window with it (32 classes);
+- the restated years and the ex-divestiture ranges against the unrestated base (no class moves);
+- the signals and DURABLE, as in 2008-2009.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -11553,6 +11712,8 @@ What the gates enforce:
   beverages and devices; OFFSHORE to IT services), so its watch list is empty through 2009 ("PFE"). Its FY2006-FY2008 10-Ks call
   generic competition "a major challenge for us around the world"; patent expiry is the business's own cycle, not a substitution theme
   in the registry, so the words stay in the durability "why" (the PEP obesity rule).
+  The list stays empty through 2013: the FY2009-FY2012 10-Ks keep generic competition as "a major challenge for us around the world",
+  and Lipitor's loss of U.S. exclusivity in November 2011 is the same cycle, so the words stay in the "why" ("PFE 2010-2013").
 
 ## Workflow
 
