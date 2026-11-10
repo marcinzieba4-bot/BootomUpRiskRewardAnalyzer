@@ -17,6 +17,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 RCL          # the RCL series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 MAR          # the MAR series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 BKR          # the BKR series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 PFE          # the PFE series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -71,7 +72,8 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "AAPL": "staging/retrospective/AAPL", "NKE": "staging/retrospective/NKE", "AVGO": "staging/retrospective/AVGO",
           "PEP": "staging/retrospective/PEP", "MSFT": "staging/retrospective/MSFT", "XOM": "staging/retrospective/XOM",
           "SHW": "staging/retrospective/SHW", "WMT": "staging/retrospective/WMT", "RCL": "staging/retrospective/RCL",
-          "MAR": "staging/retrospective/MAR", "BKR": "staging/retrospective/BKR"}[TICKER]
+          "MAR": "staging/retrospective/MAR", "BKR": "staging/retrospective/BKR",
+          "PFE": "staging/retrospective/PFE"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -162,7 +164,13 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      pro_forma=dict(rev_m=1, rev_prior_m=99, na_m=1, na_prior_m=99, ind_m=0, ind_prior_m=0),
                      raw=dict(rev_m=1, rev_prior_m=99, cos_m=1, cos_prior_m=1, cosr_m=1, cosr_prior_m=1, rne_m=1, rne_prior_m=1,
                               oi_m=-99, oi_prior_m=99, na_m=1, na_prior_m=99, oilfield_m=1, oilfield_prior_m=99, ind_m=0, ind_prior_m=0,
-                              ind_label="PLANTED"))}[TICKER]
+                              ind_label="PLANTED")),
+         "PFE": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, us_pct=-60.0, intl_pct=-60.0,
+                     gross_margin=1.0, gross_margin_bp=-999.0, pretax_margin=-50.0, pretax_margin_bp=-999.0, eps_q=0.01, eps_q_prior=9.99,
+                     diluted_shares_m=1.0, next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED", period_end="PLANTED",
+                     release_time="PLANTED",
+                     raw=dict(rev_m=2, rev_prior_m=198, cos_m=1, cos_prior_m=1, pretax_m=-99, pretax_prior_m=99, us_m=1, us_prior_m=99,
+                              intl_m=1, intl_prior_m=99, diluted_shares_m=1))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -187,6 +195,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                                     "prior_source": "MA1", "eps": [0.1, 0.2], "revpar": "PLANTED"}),
                "RCL": dict(note="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
                            q_guide={"quarter": "Q4 2099", "ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0, "eps": [0.1, 0.2]}),
+               "PFE": dict(rev_guide_usd_b=[0.1, 0.2], eps_adj=[0.1, 0.2], rev_label="PLANTED", note="PLANTED"),
                "SHW": dict(fy_words="PLANTED", note="PLANTED",
                            q_guide={"quarter": "Q4 2099", "sales": [-40, -30], "eps": [0.1, 0.2], "words": "PLANTED"}),
                "MSFT": dict(rev_guide_usd_b=[0.1, 0.2], op_income_guide_usd_b=[0.1, 0.2], note="PLANTED", opex_guide_usd_b=[0.1, 0.2],
@@ -369,6 +378,11 @@ try:
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(tax_rate=0.99, tax_note="PLANTED", other_expense_note="PLANTED", units_note="PLANTED", prev_fy_ny_pct=None,
                  prev_fy_ncc_pct=-99.0)
+    if TICKER == "PFE":    # absurd full-year actuals on the planted print, for the year after the latest vintage
+        last["fy_actual"] = {"fy": int(max(v["eps_normalized"])), "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01,
+                             "diluted_shares_m": 1.0, "normalization_note": "PLANTED", "gross_margin": 1.0, "pretax_margin": -50.0,
+                             "pretax_margin_note": "PLANTED", "sales_growth": -60.0, "us_pct": -60.0, "intl_pct": -60.0, "tax_rate": 0.99,
+                             "tax_note": "PLANTED"}
     if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted

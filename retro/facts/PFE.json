@@ -1,0 +1,1739 @@
+{
+ "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
+ "ticker": "PFE",
+ "sources": {
+  "PF1": {
+   "published": "1999-03-26",
+   "filed": "1999-03-26 (EDGAR gives the filing date only)",
+   "title": "Pfizer FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000093041399000431/0000930413-99-000431.txt",
+   "supports": "consolidated statement of income 1996-1998 (total revenues $9,864M, $11,055M, $13,544M; cost of sales $1,695M, $1,776M, $2,094M); geographic data, total revenues in the United States $5,193M, $6,089M, $8,205M"
+  },
+  "PF2": {
+   "published": "2000-03-27",
+   "filed": "2000-03-27 (EDGAR gives the filing date only)",
+   "title": "Pfizer FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000093041300000548/0000930413-00-000548.txt",
+   "supports": "consolidated statement of income 1997-1999 (total revenues $11,055M, $13,544M, $16,204M; cost of sales $1,776M, $2,094M, $2,528M); geographic data, United States $6,089M, $8,205M, $9,896M"
+  },
+  "PF3": {
+   "published": "2001-03-28",
+   "filed": "2001-03-28 (EDGAR gives the filing date only)",
+   "title": "Pfizer FY2000 10-K405 (Warner-Lambert merger, a pooling of interests)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000095012301002716/y46668ex13-a.htm",
+   "supports": "statement of income 1998-2000 (revenues $23,231M, $27,376M, $29,574M; cost of sales $4,907M, $5,464M, $4,907M); geographic data 1998-2000; financial summary 1996-2000 (revenues $16,957M and $18,975M, income from continuing operations before taxes $3,636M and $3,979M for 1996 and 1997)"
+  },
+  "PF4": {
+   "published": "2002-03-28",
+   "filed": "2002-03-28 (EDGAR gives the filing date only)",
+   "title": "Pfizer FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000095012302003116/y58494ex13.htm",
+   "supports": "statement of income 1999-2001 (revenues $27,166M, $29,355M, $32,259M; cost of sales $5,576M, $5,007M, $5,034M); geographic data 1999-2001"
+  },
+  "PF5": {
+   "published": "2003-03-27",
+   "filed": "2003-03-27 15:04 ET",
+   "title": "Pfizer FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000095012303003360/y83976exv13.htm",
+   "supports": "statement of income 2000-2002 (revenues $26,045M, $29,024M, $32,373M; cost of sales $3,755M, $3,823M, $4,045M); geographic data 2000-2002; financial summary 1997-2002 (1997 revenues $18,975M, 1998 $23,017M; pre-tax $3,979M, $4,397M)"
+  },
+  "PF6": {
+   "published": "2004-03-10",
+   "filed": "2004-03-10 11:17 ET",
+   "title": "Pfizer FY2003 10-K (Pharmacia acquired 2003-04-16, a purchase)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000095012304003064/y94722exv13.htm",
+   "supports": "statement of income 2001-2003 (revenues $29,024M, $32,373M, $45,188M; cost of sales $3,823M, $4,045M, $9,832M); geographic data 2001-2003; financial summary 1998-2003 (1999 revenues $26,940M, pre-tax $6,945M)"
+  },
+  "PF7": {
+   "published": "2005-02-28",
+   "filed": "2005-02-28 14:29 ET",
+   "title": "Pfizer FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000095012305002379/y06124exv13.htm",
+   "supports": "statement of income 2002-2004 (revenues $32,294M, $44,736M, $52,516M; cost of sales $4,014M, $9,589M, $7,541M); geographic data 2002-2004; financial summary 1999-2004 (2000 revenues $25,958M, pre-tax $5,471M)"
+  },
+  "PF8": {
+   "published": "2006-03-01",
+   "filed": "2006-02-28 21:25 ET (after the close)",
+   "title": "Pfizer FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000093041306001567/c40966_ex13.htm",
+   "supports": "statement of income 2003-2005 (revenues $44,736M, $52,516M, $51,298M; cost of sales $9,589M, $7,541M, $8,525M); geographic data 2003-2005; financial summary 2000-2005 (2001 revenues $28,947M, pre-tax $9,963M)"
+  },
+  "PF9": {
+   "published": "2007-03-01",
+   "filed": "2007-02-28 18:17 ET (after the close)",
+   "title": "Pfizer FY2006 10-K (Consumer Healthcare discontinued)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000093041307001807/c46660_ex13.htm",
+   "supports": "financial summary 2001-2006 (revenues, income from continuing operations before taxes, diluted EPS from continuing operations: 2003 $0.16, 2004 $1.43, 2005 $1.02, 2006 $1.52; diluted shares); statement of income 2004-2006; geographic and segment data; cash flows; the first-quarter 2007 dividend of $0.29; Item 1 and Item 1A wording"
+  },
+  "PF10": {
+   "published": "2007-07-18",
+   "filed": "2007-07-18 10:23 ET",
+   "title": "Pfizer Q2 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752307006950/a5450060ex99.txt",
+   "supports": "second-quarter 2007 statement of income and revenues by U.S. and international; 2007 and 2008 guidance"
+  },
+  "PF11": {
+   "published": "2007-10-18",
+   "filed": "2007-10-18 10:13 ET",
+   "title": "Pfizer Q3 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752307009976/a5521350ex99.txt",
+   "supports": "third-quarter 2007 statement of income (Exubera charges in cost of sales) and revenues by U.S. and international; 2007 and 2008 guidance"
+  },
+  "PF12": {
+   "published": "2008-01-23",
+   "filed": "2008-01-23 11:45 ET",
+   "title": "Pfizer Q4 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752308000463/a5591644ex99.htm",
+   "supports": "fourth-quarter and full-year 2007 statements of income and revenues by U.S. and international; 2008 guidance; the first-quarter 2008 dividend of $0.32"
+  },
+  "PF13": {
+   "published": "2008-02-29",
+   "filed": "2008-02-29 15:05 ET",
+   "title": "Pfizer FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000093041308001360/c52104_ex13.htm",
+   "supports": "financial summary 2002-2007 (2007 revenues $48,418M, diluted EPS from continuing operations $1.18); statement of income 2005-2007; geographic and segment data; cash flows; the first-quarter 2008 dividend of $0.32; Item 1 and Item 1A wording"
+  },
+  "PF14": {
+   "published": "2008-04-17",
+   "filed": "2008-04-17 09:00 ET (before the open)",
+   "title": "Pfizer Q1 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752308002976/a5660475ex99.htm",
+   "supports": "first-quarter 2008 statement of income and revenues by U.S. and international; 2008 guidance"
+  },
+  "PF15": {
+   "published": "2008-07-23",
+   "filed": "2008-07-23 10:18 ET",
+   "title": "Pfizer Q2 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752308005758/a5737477ex99.htm",
+   "supports": "second-quarter 2008 statement of income and revenues by U.S. and international; 2008 guidance"
+  },
+  "PF16": {
+   "published": "2008-10-21",
+   "filed": "2008-10-21 09:21 ET (before the open)",
+   "title": "Pfizer Q3 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752308008156/a5808768ex99.htm",
+   "supports": "third-quarter 2008 statement of income and revenues by U.S. and international; 2008 guidance"
+  },
+  "PF17": {
+   "published": "2009-01-26",
+   "filed": "2009-01-26 07:38 ET (before the open)",
+   "title": "Pfizer Q4 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309000451/a5879454ex99.htm",
+   "supports": "fourth-quarter and full-year 2008 statements of income and revenues by U.S. and international; 2009 guidance"
+  },
+  "PF18": {
+   "published": "2009-01-27",
+   "filed": "2009-01-26 17:22 ET (after the close)",
+   "title": "Pfizer 8-K, Exhibit 99.1: Pfizer to acquire Wyeth",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000091412109000307/pf15040061-ex99_1.txt",
+   "supports": "the quarterly dividend reduced to $0.16 from the dividend paid in the second quarter of 2009"
+  },
+  "PF19": {
+   "published": "2009-02-27",
+   "filed": "2009-02-27 12:59 ET",
+   "title": "Pfizer FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312509040568/dex13.htm",
+   "supports": "financial summary 2003-2008 (2008 revenues $48,296M, diluted EPS from continuing operations $1.19); statement of income 2006-2008; geographic and segment data; cash flows; dividends; Item 1 and Item 1A wording"
+  },
+  "PF20": {
+   "published": "2009-04-28",
+   "filed": "2009-04-28 08:30 ET (before the open)",
+   "title": "Pfizer Q1 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309003033/a5950213ex99.htm",
+   "supports": "first-quarter 2009 statement of income and revenues by U.S. and international; 2009 guidance"
+  },
+  "PF21": {
+   "published": "2009-07-22",
+   "filed": "2009-07-22 08:45 ET (before the open)",
+   "title": "Pfizer Q2 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309004987/a6011824ex99.htm",
+   "supports": "second-quarter 2009 statement of income and revenues by U.S. and international; 2009 guidance"
+  },
+  "PF22": {
+   "published": "2009-10-20",
+   "filed": "2009-10-20 08:33 ET (before the open)",
+   "title": "Pfizer Q3 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309006997/a6076871ex99.htm",
+   "supports": "third-quarter 2009 statement of income and revenues by U.S. and international; 2009 guidance including Wyeth from 2009-10-15"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-01",
+   "sources": [
+    "PF9",
+    "PF6"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY06",
+   "why": "'is a research-based, global pharmaceutical company. We discover, develop, manufacture and market leading prescription medicines for humans and animals' (FY2006 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52
+   },
+   "eps_sources": {
+    "2004": "PF9",
+    "2005": "PF9",
+    "2006": "PF9"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2006 kept (after-tax acquisition-related costs, certain significant items and in-process R&D of $2,444M, $4,544M and $1,662M against net income of $11,361M, $8,085M and $19,337M)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371
+   },
+   "revenue_sources": {
+    "2004": "PF9",
+    "2005": "PF9",
+    "2006": "PF9"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0
+   },
+   "shares_sources": {
+    "2004": "PF9",
+    "2005": "PF9",
+    "2006": "PF9"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 26.93,
+   "prev_fy_pretax_margin_note": "FY06 income from continuing operations before taxes $13,028M / revenues $48,371M (FY2006 10-K)",
+   "prev_fy_gross_margin": 84.21,
+   "prev_fy_sales_growth": 2.0,
+   "prev_fy_us_pct": 4.4,
+   "prev_fy_intl_pct": -0.5,
+   "tax_rate": 0.1529,
+   "tax_note": "FY06 provision for taxes $1,992M / income from continuing operations before taxes $13,028M (FY2006 10-K)",
+   "fcf_b": 15.54,
+   "fcf_label": "FY06",
+   "fcf_note": "net cash provided by operating activities $17,594M less purchases of property, plant and equipment $2,050M",
+   "cash_b": 27.71,
+   "cash_note": "cash and cash equivalents $1,827M and short-term investments $25,886M at December 31, 2006",
+   "dividend_annual": 1.16,
+   "dividend_note": "$0.29 quarterly ('In December 2006, our Board of Directors declared a first-quarter 2007 dividend of $0.29 per share', FY2006 10-K)",
+   "cash_return_text": "266 million shares purchased in 2006 for $6,979 million (FY2006 10-K)",
+   "business_line": "research-based global pharmaceutical company: prescription medicines for humans and animals",
+   "groups": [
+    [
+     "Pharmaceutical",
+     45.083,
+     1.8
+    ],
+    [
+     "Animal Health",
+     2.311,
+     4.8
+    ],
+    [
+     "Corporate/Other",
+     0.977,
+     5.1
+    ]
+   ],
+   "groups_basis": "FY06 segment revenues (FY2006 10-K)"
+  },
+  {
+   "published": "2008-02-29",
+   "sources": [
+    "PF13"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "why": "'is a research-based, global pharmaceutical company. We discover, develop, manufacture and market leading prescription medicines for humans and animals' (FY2007 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18
+   },
+   "eps_sources": {
+    "2004": "PF13",
+    "2005": "PF13",
+    "2006": "PF13",
+    "2007": "PF13"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2007 kept (after-tax acquisition-related costs, certain significant items and in-process R&D of $2,444M, $4,544M, $1,662M and $4,672M against net income of $11,361M, $8,085M, $19,337M and $8,144M)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 48.418
+   },
+   "revenue_sources": {
+    "2004": "PF13",
+    "2005": "PF13",
+    "2006": "PF13",
+    "2007": "PF13"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0
+   },
+   "shares_sources": {
+    "2004": "PF13",
+    "2005": "PF13",
+    "2006": "PF13",
+    "2007": "PF13"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 19.16,
+   "prev_fy_pretax_margin_note": "FY07 income from continuing operations before taxes $9,278M / revenues $48,418M (FY2007 10-K)",
+   "prev_fy_gross_margin": 76.79,
+   "prev_fy_sales_growth": 0.1,
+   "prev_fy_us_pct": -10.3,
+   "prev_fy_intl_pct": 12.0,
+   "tax_rate": 0.1103,
+   "tax_note": "FY07 provision for taxes $1,023M / income from continuing operations before taxes $9,278M (FY2007 10-K)",
+   "fcf_b": 11.47,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $13,353M less purchases of property, plant and equipment $1,880M",
+   "cash_b": 25.48,
+   "cash_note": "cash and cash equivalents $3,406M and short-term investments $22,069M at December 31, 2007",
+   "dividend_annual": 1.28,
+   "dividend_note": "$0.32 quarterly ('In December 2007, our Board of Directors declared a first-quarter 2008 dividend of $0.32 per share', FY2007 10-K)",
+   "cash_return_text": "395 million shares purchased in 2007 for $9,994 million (FY2007 10-K)",
+   "business_line": "research-based global pharmaceutical company: prescription medicines for humans and animals",
+   "groups": [
+    [
+     "Pharmaceutical",
+     44.424,
+     -1.5
+    ],
+    [
+     "Animal Health",
+     2.639,
+     14.2
+    ],
+    [
+     "Corporate/Other",
+     1.355,
+     38.7
+    ]
+   ],
+   "groups_basis": "FY07 segment revenues (FY2007 10-K)"
+  },
+  {
+   "published": "2009-02-27",
+   "sources": [
+    "PF19"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "why": "'is a research-based, global pharmaceutical company. We discover, develop, manufacture and market leading prescription medicines for humans and animals' (FY2008 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_gaap": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18,
+    "2008": 1.19
+   },
+   "eps_normalized": {
+    "2004": 1.43,
+    "2005": 1.02,
+    "2006": 1.52,
+    "2007": 1.18,
+    "2008": 1.19
+   },
+   "eps_sources": {
+    "2004": "PF19",
+    "2005": "PF19",
+    "2006": "PF19",
+    "2007": "PF19",
+    "2008": "PF19"
+   },
+   "normalization": "diluted EPS from continuing operations before the cumulative effect of accounting changes, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used: it excludes purchase-accounting adjustments (the amortization of acquired intangibles, which recurs) as well as acquisition-related costs and certain significant items (the NKE FY2007 and AVGO rule); 2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule); 2004-2008 kept (after-tax acquisition-related costs, certain significant items and in-process R&D of $2,444M, $4,544M, $1,662M, $4,672M and $6,495M against net income of $11,361M, $8,085M, $19,337M, $8,144M and $8,104M)",
+   "revenue_usd_b": {
+    "2004": 48.988,
+    "2005": 47.405,
+    "2006": 48.371,
+    "2007": 48.418,
+    "2008": 48.296
+   },
+   "revenue_sources": {
+    "2004": "PF19",
+    "2005": "PF19",
+    "2006": "PF19",
+    "2007": "PF19",
+    "2008": "PF19"
+   },
+   "diluted_shares_m": {
+    "2004": 7614.0,
+    "2005": 7411.0,
+    "2006": 7274.0,
+    "2007": 6939.0,
+    "2008": 6750.0
+   },
+   "shares_sources": {
+    "2004": "PF19",
+    "2005": "PF19",
+    "2006": "PF19",
+    "2007": "PF19",
+    "2008": "PF19"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: $0.16 a diluted share from continuing operations (FY2006 10-K basis; $0.22 in the FY2003 10-K), with the $5,052M in-process R&D charge for the Pharmacia acquisition alone above the year's $3,910M net income, and no figure excluding only one-offs published (the company's adjusted income also removes purchase-accounting amortization, which recurs), so the history and the P/E window start with 2004 (the ACN FY02 and AAPL FY2002 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 20.07,
+   "prev_fy_pretax_margin_note": "FY08 income from continuing operations before taxes $9,694M / revenues $48,296M (FY2008 10-K)",
+   "prev_fy_gross_margin": 83.2,
+   "prev_fy_sales_growth": -0.3,
+   "prev_fy_us_pct": -11.7,
+   "prev_fy_intl_pct": 10.3,
+   "tax_rate": 0.1697,
+   "tax_note": "FY08 provision for taxes $1,645M / income from continuing operations before taxes $9,694M (FY2008 10-K)",
+   "fcf_b": 16.54,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $18,238M less purchases of property, plant and equipment $1,701M",
+   "cash_b": 23.73,
+   "cash_note": "cash and cash equivalents $2,122M and short-term investments $21,609M at December 31, 2008",
+   "dividend_annual": 0.64,
+   "dividend_note": "$0.16 quarterly from the second-quarter 2009 dividend ('it will reduce our quarterly dividend per share to $0.16', FY2008 10-K; the first-quarter 2009 dividend of $0.32 was declared in December 2008)",
+   "cash_return_text": "26 million shares purchased in 2008 for $500 million (FY2008 10-K)",
+   "business_line": "research-based global pharmaceutical company: prescription medicines for humans and animals",
+   "groups": [
+    [
+     "Pharmaceutical",
+     44.174,
+     -0.6
+    ],
+    [
+     "Animal Health",
+     2.825,
+     7.0
+    ],
+    [
+     "Corporate/Other",
+     1.297,
+     -4.3
+    ]
+   ],
+   "groups_basis": "FY08 segment revenues (FY2008 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-18",
+   "source": "PF10",
+   "release": "Jul 18",
+   "release_time": "during the session on Jul 18: 8-K accepted 10:23 ET",
+   "period_end": "2007-07-01",
+   "raw": {
+    "rev_m": 11084,
+    "rev_prior_m": 11741,
+    "cos_m": 2109,
+    "cos_prior_m": 1790,
+    "pretax_m": 1619,
+    "pretax_prior_m": 3083,
+    "us_m": 4841,
+    "us_prior_m": 6093,
+    "intl_m": 6243,
+    "intl_prior_m": 5648,
+    "diluted_shares_m": 6990
+   },
+   "sales_b": 11.084,
+   "sales_pct": -5.6,
+   "us_pct": -20.5,
+   "intl_pct": 10.5,
+   "gross_margin": 80.97,
+   "gross_margin_bp": -378.2,
+   "pretax_margin": 14.61,
+   "pretax_margin_bp": -1165.2,
+   "eps_q": 0.19,
+   "eps_q_prior": 0.31,
+   "diluted_shares_m": 6990.0,
+   "cash_return_text": "Through the first half of 2007, $5.0 billion of stock purchased",
+   "next_print": "Q3 2007 print (mid-October)"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-18",
+   "source": "PF11",
+   "release": "Oct 18",
+   "release_time": "during the session on Oct 18: 8-K accepted 10:13 ET",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 11990,
+    "rev_prior_m": 12280,
+    "cos_m": 4618,
+    "cos_prior_m": 1962,
+    "pretax_m": 636,
+    "pretax_prior_m": 3961,
+    "us_m": 5747,
+    "us_prior_m": 6708,
+    "intl_m": 6243,
+    "intl_prior_m": 5572,
+    "diluted_shares_m": 6894
+   },
+   "sales_b": 11.99,
+   "sales_pct": -2.4,
+   "us_pct": -14.3,
+   "intl_pct": 12.0,
+   "gross_margin": 61.48,
+   "gross_margin_bp": -2253.8,
+   "pretax_margin": 5.3,
+   "pretax_margin_bp": -2695.1,
+   "eps_q": 0.12,
+   "eps_q_prior": 0.44,
+   "diluted_shares_m": 6894.0,
+   "cash_return_text": "Through the first nine months of 2007, $7.5 billion of stock purchased",
+   "next_print": "Q4 2007 print (late January)",
+   "note": "cost of sales includes most of the $2.8 billion pre-tax Exubera charges (as published; no margin excluding them)"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-23",
+   "source": "PF12",
+   "release": "Jan 23",
+   "release_time": "during the session on Jan 23: 8-K accepted 11:45 ET",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 13065,
+    "rev_prior_m": 12603,
+    "cos_m": 2625,
+    "cos_prior_m": 2217,
+    "pretax_m": 3165,
+    "pretax_prior_m": 1714,
+    "us_m": 5910,
+    "us_prior_m": 6404,
+    "intl_m": 7155,
+    "intl_prior_m": 6199,
+    "diluted_shares_m": 6792
+   },
+   "sales_b": 13.065,
+   "sales_pct": 3.7,
+   "us_pct": -7.7,
+   "intl_pct": 15.4,
+   "gross_margin": 79.91,
+   "gross_margin_bp": -250.1,
+   "pretax_margin": 24.23,
+   "pretax_margin_bp": 1062.5,
+   "eps_q": 0.42,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 6792.0,
+   "cash_return_text": "In 2007, $10.0 billion of stock purchased; a new $5.0 billion program authorized",
+   "next_print": "Q1 2008 print (mid-April)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 1.21,
+    "revenue_usd_b": 48.613,
+    "diluted_shares_m": 6939.0,
+    "normalization_note": "FY2007 $1.21 from continuing operations (Q4 2007 release); the company's adjusted $2.20 is shown only (it removes purchase-accounting amortization); kept: after-tax certain significant items ($4,379M), in-process R&D ($283M) and acquisition-related costs ($10M) are under the year's $8,298M net income",
+    "gross_margin": 76.88,
+    "pretax_margin": 19.49,
+    "pretax_margin_note": "FY07 income from continuing operations before taxes $9,473M / revenues $48,613M (Q4 2007 release)",
+    "sales_growth": 0.5,
+    "us_pct": -9.6,
+    "intl_pct": 12.0,
+    "tax_rate": 0.1123,
+    "tax_note": "FY07 provision for taxes $1,064M / income from continuing operations before taxes $9,473M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-17",
+   "source": "PF14",
+   "release": "Apr 17",
+   "release_time": "before the open on Apr 17: 8-K accepted 09:00 ET",
+   "period_end": "2008-03-30",
+   "raw": {
+    "rev_m": 11848,
+    "rev_prior_m": 12474,
+    "cos_m": 1986,
+    "cos_prior_m": 1887,
+    "pretax_m": 3557,
+    "pretax_prior_m": 4053,
+    "us_m": 5511,
+    "us_prior_m": 6850,
+    "intl_m": 6337,
+    "intl_prior_m": 5624,
+    "diluted_shares_m": 6762
+   },
+   "sales_b": 11.848,
+   "sales_pct": -5.0,
+   "us_pct": -19.5,
+   "intl_pct": 12.7,
+   "gross_margin": 83.24,
+   "gross_margin_bp": -163.5,
+   "pretax_margin": 30.02,
+   "pretax_margin_bp": -247.0,
+   "eps_q": 0.41,
+   "eps_q_prior": 0.48,
+   "diluted_shares_m": 6762.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2008 print (late July)"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-23",
+   "source": "PF15",
+   "release": "Jul 23",
+   "release_time": "during the session on Jul 23: 8-K accepted 10:18 ET",
+   "period_end": "2008-06-29",
+   "raw": {
+    "rev_m": 12129,
+    "rev_prior_m": 11084,
+    "cos_m": 2289,
+    "cos_prior_m": 2109,
+    "pretax_m": 2790,
+    "pretax_prior_m": 1619,
+    "us_m": 4766,
+    "us_prior_m": 4841,
+    "intl_m": 7363,
+    "intl_prior_m": 6243,
+    "diluted_shares_m": 6748
+   },
+   "sales_b": 12.129,
+   "sales_pct": 9.4,
+   "us_pct": -1.5,
+   "intl_pct": 17.9,
+   "gross_margin": 81.13,
+   "gross_margin_bp": 15.5,
+   "pretax_margin": 23.0,
+   "pretax_margin_bp": 839.6,
+   "eps_q": 0.41,
+   "eps_q_prior": 0.19,
+   "diluted_shares_m": 6748.0,
+   "cash_return_text": "about $500 million (26.4 million shares) repurchased in the quarter",
+   "next_print": "Q3 2008 print (late October)"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-21",
+   "source": "PF16",
+   "release": "Oct 21",
+   "release_time": "before the open on Oct 21: 8-K accepted 09:21 ET",
+   "period_end": "2008-09-28",
+   "raw": {
+    "rev_m": 11973,
+    "rev_prior_m": 11990,
+    "cos_m": 2122,
+    "cos_prior_m": 4618,
+    "pretax_m": 2722,
+    "pretax_prior_m": 636,
+    "us_m": 4908,
+    "us_prior_m": 5747,
+    "intl_m": 7065,
+    "intl_prior_m": 6243,
+    "diluted_shares_m": 6736
+   },
+   "sales_b": 11.973,
+   "sales_pct": -0.1,
+   "us_pct": -14.6,
+   "intl_pct": 13.2,
+   "gross_margin": 82.28,
+   "gross_margin_bp": 2079.2,
+   "pretax_margin": 22.73,
+   "pretax_margin_bp": 1743.0,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.12,
+   "diluted_shares_m": 6736.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2008 print (late January)",
+   "note": "the year-ago quarter's cost of sales carries the Exubera charges, so the gross margin change is flattered"
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-26",
+   "source": "PF17",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 07:38 ET",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_m": 12346,
+    "rev_prior_m": 12870,
+    "cos_m": 1715,
+    "cos_prior_m": 2625,
+    "pretax_m": 625,
+    "pretax_prior_m": 2970,
+    "us_m": 5250,
+    "us_prior_m": 5715,
+    "intl_m": 7096,
+    "intl_prior_m": 7155,
+    "diluted_shares_m": 6739
+   },
+   "sales_b": 12.346,
+   "sales_pct": -4.1,
+   "us_pct": -8.1,
+   "intl_pct": -0.8,
+   "gross_margin": 86.11,
+   "gross_margin_bp": 650.5,
+   "pretax_margin": 5.06,
+   "pretax_margin_bp": -1801.5,
+   "eps_q": 0.03,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 6739.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2009 print (late April)",
+   "note": "fourth-quarter pre-tax income carries $4,474 million of certain significant items, $2,313 million of them legal matters",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 1.19,
+    "revenue_usd_b": 48.296,
+    "diluted_shares_m": 6750.0,
+    "normalization_note": "FY2008 $1.19 from continuing operations (Q4 2008 release); the company's adjusted $2.42 is shown only; kept: after-tax certain significant items ($5,862M) and in-process R&D ($633M) are under the year's $8,104M net income (pre-tax, the items and the R&D charge were $8,723M)",
+    "gross_margin": 83.2,
+    "pretax_margin": 20.07,
+    "pretax_margin_note": "FY08 income from continuing operations before taxes $9,694M / revenues $48,296M (Q4 2008 release)",
+    "sales_growth": -0.3,
+    "us_pct": -11.7,
+    "intl_pct": 10.3,
+    "tax_rate": 0.1697,
+    "tax_note": "FY08 provision for taxes $1,645M / income from continuing operations before taxes $9,694M"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-28",
+   "source": "PF20",
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 08:30 ET",
+   "period_end": "2009-03-29",
+   "raw": {
+    "rev_m": 10867,
+    "rev_prior_m": 11848,
+    "cos_m": 1408,
+    "cos_prior_m": 1986,
+    "pretax_m": 3803,
+    "pretax_prior_m": 3557,
+    "us_m": 4969,
+    "us_prior_m": 5511,
+    "intl_m": 5898,
+    "intl_prior_m": 6337,
+    "diluted_shares_m": 6753
+   },
+   "sales_b": 10.867,
+   "sales_pct": -8.3,
+   "us_pct": -9.8,
+   "intl_pct": -6.9,
+   "gross_margin": 87.04,
+   "gross_margin_bp": 380.6,
+   "pretax_margin": 35.0,
+   "pretax_margin_bp": 497.4,
+   "eps_q": 0.4,
+   "eps_q_prior": 0.41,
+   "diluted_shares_m": 6753.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2009 print (late July)"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-22",
+   "source": "PF21",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 08:45 ET",
+   "period_end": "2009-06-28",
+   "raw": {
+    "rev_m": 10984,
+    "rev_prior_m": 12129,
+    "cos_m": 1756,
+    "cos_prior_m": 2289,
+    "pretax_m": 3049,
+    "pretax_prior_m": 2790,
+    "us_m": 4524,
+    "us_prior_m": 4756,
+    "intl_m": 6460,
+    "intl_prior_m": 7373,
+    "diluted_shares_m": 6752
+   },
+   "sales_b": 10.984,
+   "sales_pct": -9.4,
+   "us_pct": -4.9,
+   "intl_pct": -12.4,
+   "gross_margin": 84.01,
+   "gross_margin_bp": 288.5,
+   "pretax_margin": 27.76,
+   "pretax_margin_bp": 475.6,
+   "eps_q": 0.34,
+   "eps_q_prior": 0.41,
+   "diluted_shares_m": 6752.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2009 print (late October)"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-20",
+   "source": "PF22",
+   "release": "Oct 20",
+   "release_time": "before the open on Oct 20: 8-K accepted 08:33 ET",
+   "period_end": "2009-09-27",
+   "raw": {
+    "rev_m": 11621,
+    "rev_prior_m": 11973,
+    "cos_m": 1789,
+    "cos_prior_m": 2122,
+    "pretax_m": 3971,
+    "pretax_prior_m": 2722,
+    "us_m": 4816,
+    "us_prior_m": 4901,
+    "intl_m": 6805,
+    "intl_prior_m": 7072,
+    "diluted_shares_m": 6762
+   },
+   "sales_b": 11.621,
+   "sales_pct": -2.9,
+   "us_pct": -1.7,
+   "intl_pct": -3.8,
+   "gross_margin": 84.61,
+   "gross_margin_bp": 232.9,
+   "pretax_margin": 34.17,
+   "pretax_margin_bp": 1143.6,
+   "eps_q": 0.43,
+   "eps_q_prior": 0.33,
+   "diluted_shares_m": 6762.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2009 print (late January or early February)",
+   "note": "the quarter ended before the Wyeth acquisition closed (2009-10-15), so it holds no Wyeth revenue"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-07-18",
+   "source": "PF10",
+   "doc": "Q2 2007 release",
+   "rev_guide_usd_b": [
+    47.0,
+    48.0
+   ],
+   "eps_guide": [
+    1.3,
+    1.41
+   ],
+   "eps_adj": [
+    2.08,
+    2.15
+   ],
+   "rev_label": "revenues"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-07-18",
+   "source": "PF10",
+   "doc": "Q2 2007 release",
+   "rev_guide_usd_b": [
+    46.5,
+    48.5
+   ],
+   "eps_guide": [
+    1.75,
+    1.93
+   ],
+   "eps_adj": [
+    2.31,
+    2.45
+   ],
+   "rev_label": "revenues"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-18",
+   "source": "PF11",
+   "doc": "Q3 2007 release",
+   "rev_guide_usd_b": [
+    47.5,
+    48.0
+   ],
+   "eps_guide": [
+    1.01,
+    1.1
+   ],
+   "eps_adj": [
+    2.1,
+    2.15
+   ],
+   "rev_label": "revenues",
+   "note": "reported EPS cut for the Exubera charges"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-10-18",
+   "source": "PF11",
+   "doc": "Q3 2007 release",
+   "rev_guide_usd_b": [
+    46.5,
+    48.5
+   ],
+   "eps_guide": [
+    1.75,
+    1.93
+   ],
+   "eps_adj": [
+    2.31,
+    2.45
+   ],
+   "rev_label": "revenues"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-01-23",
+   "source": "PF12",
+   "doc": "Q4 2007 release",
+   "rev_guide_usd_b": [
+    47.0,
+    49.0
+   ],
+   "eps_guide": [
+    1.78,
+    1.93
+   ],
+   "eps_adj": [
+    2.35,
+    2.45
+   ],
+   "rev_label": "revenues"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-17",
+   "source": "PF14",
+   "doc": "Q1 2008 release",
+   "rev_guide_usd_b": [
+    47.0,
+    49.0
+   ],
+   "eps_guide": [
+    1.73,
+    1.88
+   ],
+   "eps_adj": [
+    2.35,
+    2.45
+   ],
+   "rev_label": "revenues",
+   "note": "reported EPS updated for the in-process R&D of the first-quarter acquisitions"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-23",
+   "source": "PF15",
+   "doc": "Q2 2008 release",
+   "rev_guide_usd_b": [
+    47.0,
+    49.0
+   ],
+   "eps_guide": [
+    1.73,
+    1.88
+   ],
+   "eps_adj": [
+    2.35,
+    2.45
+   ],
+   "rev_label": "revenues"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-21",
+   "source": "PF16",
+   "doc": "Q3 2008 release",
+   "rev_guide_usd_b": [
+    48.0,
+    49.0
+   ],
+   "eps_guide": [
+    1.61,
+    1.71
+   ],
+   "eps_adj": [
+    2.36,
+    2.41
+   ],
+   "rev_label": "revenues",
+   "note": "reported EPS reduced 'reflecting in part the charges associated with the previously mentioned resolution of certain NSAID litigation'"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-26",
+   "source": "PF17",
+   "doc": "Q4 2008 release",
+   "rev_guide_usd_b": [
+    44.0,
+    46.0
+   ],
+   "eps_guide": [
+    1.34,
+    1.49
+   ],
+   "eps_adj": [
+    1.85,
+    1.95
+   ],
+   "rev_label": "adjusted revenues",
+   "note": "excludes the pending Wyeth acquisition"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-28",
+   "source": "PF20",
+   "doc": "Q1 2009 release",
+   "rev_guide_usd_b": [
+    44.0,
+    46.0
+   ],
+   "eps_guide": [
+    1.2,
+    1.35
+   ],
+   "eps_adj": [
+    1.85,
+    1.95
+   ],
+   "rev_label": "revenues",
+   "note": "reported EPS reduced for Wyeth transaction, pre-integration and financing costs"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-22",
+   "source": "PF21",
+   "doc": "Q2 2009 release",
+   "rev_guide_usd_b": [
+    45.0,
+    46.0
+   ],
+   "eps_guide": [
+    1.3,
+    1.45
+   ],
+   "eps_adj": [
+    1.9,
+    2.0
+   ],
+   "rev_label": "revenues"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-10-20",
+   "source": "PF22",
+   "doc": "Q3 2009 release",
+   "rev_guide_usd_b": [
+    49.0,
+    50.0
+   ],
+   "eps_guide": [
+    1.45,
+    1.5
+   ],
+   "eps_adj": [
+    2.0,
+    2.05
+   ],
+   "rev_label": "revenues",
+   "note": "includes Wyeth's operations from the 2009-10-15 closing (the business bought stays in, the SHW Valspar rule)"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2008-01-23",
+   "source": "PF12",
+   "quarterly": 0.32,
+   "note": "$0.32 quarterly ('we announced in December a 10% increase in our first-quarter 2008 dividend to $0.32 a share', Q4 2007 release)"
+  },
+  {
+   "published": "2009-01-27",
+   "source": "PF18",
+   "quarterly": 0.16,
+   "note": "$0.16 quarterly from the second-quarter 2009 dividend ('it will reduce Pfizer's quarterly dividend per share to $0.16', Wyeth acquisition 8-K, accepted 2009-01-26 17:22 ET)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'PFE'): the decade of the FY2006 10-K, the vintage public on 2008-01-04, is fiscal 1997-2006. Each change comes from the latest 10-K published by then that reports both years: U.S. and international revenues (consolidated less United States) from the geographic data of its notes; the gross margin (revenues less cost of sales, which excludes the amortization of intangible assets) from its statement of income; total revenues and income from continuing operations before taxes from its financial summary. Seams stay as published: the FY1998 and FY1999 10-Ks report Pfizer before the Warner-Lambert pooling (1997 and 1998 changes); the FY2000 10-K onward pools it; revenue reclassifications (EITF 00-14 and 00-25) and the Consumer Healthcare discontinuance enter with the filings that made them; 2003 carries the Pharmacia purchase (inventory step-up in cost of sales, the $5,052M in-process R&D charge in pre-tax income). 'raw' holds the figures in $ millions; the builder re-derives each value and each threshold and refuses to build if they differ.",
+  "us": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 17.25,
+    "1998": 34.75,
+    "1999": 21.81,
+    "2000": 7.83,
+    "2001": 13.4,
+    "2002": 11.51,
+    "2003": 29.99,
+    "2004": 10.24,
+    "2005": -10.92,
+    "2006": 4.33
+   },
+   "raw": {
+    "1997": {
+     "source": "PF1",
+     "us_m": [
+      5193,
+      6089
+     ],
+     "total_m": [
+      9864,
+      11055
+     ]
+    },
+    "1998": {
+     "source": "PF2",
+     "us_m": [
+      6089,
+      8205
+     ],
+     "total_m": [
+      11055,
+      13544
+     ]
+    },
+    "1999": {
+     "source": "PF3",
+     "us_m": [
+      13656,
+      16634
+     ],
+     "total_m": [
+      23231,
+      27376
+     ]
+    },
+    "2000": {
+     "source": "PF4",
+     "us_m": [
+      16464,
+      17753
+     ],
+     "total_m": [
+      27166,
+      29355
+     ]
+    },
+    "2001": {
+     "source": "PF5",
+     "us_m": [
+      16428,
+      18629
+     ],
+     "total_m": [
+      26045,
+      29024
+     ]
+    },
+    "2002": {
+     "source": "PF6",
+     "us_m": [
+      18485,
+      20613
+     ],
+     "total_m": [
+      29024,
+      32373
+     ]
+    },
+    "2003": {
+     "source": "PF7",
+     "us_m": [
+      20613,
+      26795
+     ],
+     "total_m": [
+      32294,
+      44736
+     ]
+    },
+    "2004": {
+     "source": "PF8",
+     "us_m": [
+      26795,
+      29539
+     ],
+     "total_m": [
+      44736,
+      52516
+     ]
+    },
+    "2005": {
+     "source": "PF9",
+     "us_m": [
+      27784,
+      24751
+     ],
+     "total_m": [
+      48988,
+      47405
+     ]
+    },
+    "2006": {
+     "source": "PF9",
+     "us_m": [
+      24751,
+      25822
+     ],
+     "total_m": [
+      47405,
+      48371
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -34,
+    "BASE": -11,
+    "BULL": 12,
+    "XBULL": 35
+   }
+  },
+  "intl": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 6.32,
+    "1998": 7.51,
+    "1999": 12.19,
+    "2000": 8.41,
+    "2001": 8.09,
+    "2002": 11.59,
+    "2003": 53.59,
+    "2004": 28.07,
+    "2005": 6.84,
+    "2006": -0.46
+   },
+   "raw": {
+    "1997": {
+     "source": "PF1",
+     "us_m": [
+      5193,
+      6089
+     ],
+     "total_m": [
+      9864,
+      11055
+     ]
+    },
+    "1998": {
+     "source": "PF2",
+     "us_m": [
+      6089,
+      8205
+     ],
+     "total_m": [
+      11055,
+      13544
+     ]
+    },
+    "1999": {
+     "source": "PF3",
+     "us_m": [
+      13656,
+      16634
+     ],
+     "total_m": [
+      23231,
+      27376
+     ]
+    },
+    "2000": {
+     "source": "PF4",
+     "us_m": [
+      16464,
+      17753
+     ],
+     "total_m": [
+      27166,
+      29355
+     ]
+    },
+    "2001": {
+     "source": "PF5",
+     "us_m": [
+      16428,
+      18629
+     ],
+     "total_m": [
+      26045,
+      29024
+     ]
+    },
+    "2002": {
+     "source": "PF6",
+     "us_m": [
+      18485,
+      20613
+     ],
+     "total_m": [
+      29024,
+      32373
+     ]
+    },
+    "2003": {
+     "source": "PF7",
+     "us_m": [
+      20613,
+      26795
+     ],
+     "total_m": [
+      32294,
+      44736
+     ]
+    },
+    "2004": {
+     "source": "PF8",
+     "us_m": [
+      26795,
+      29539
+     ],
+     "total_m": [
+      44736,
+      52516
+     ]
+    },
+    "2005": {
+     "source": "PF9",
+     "us_m": [
+      27784,
+      24751
+     ],
+     "total_m": [
+      48988,
+      47405
+     ]
+    },
+    "2006": {
+     "source": "PF9",
+     "us_m": [
+      24751,
+      25822
+     ],
+     "total_m": [
+      47405,
+      48371
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -9,
+    "BASE": 0,
+    "BULL": 8,
+    "XBULL": 54
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 11.9,
+    "1998": 21.3,
+    "1999": 17.04,
+    "2000": -3.65,
+    "2001": 11.51,
+    "2002": 11.9,
+    "2003": 40.42,
+    "2004": 17.23,
+    "2005": -3.23,
+    "2006": 2.04
+   },
+   "raw": {
+    "1997": {
+     "source": "PF3",
+     "revenues_m": [
+      16957,
+      18975
+     ]
+    },
+    "1998": {
+     "source": "PF5",
+     "revenues_m": [
+      18975,
+      23017
+     ]
+    },
+    "1999": {
+     "source": "PF6",
+     "revenues_m": [
+      23017,
+      26940
+     ]
+    },
+    "2000": {
+     "source": "PF7",
+     "revenues_m": [
+      26940,
+      25958
+     ]
+    },
+    "2001": {
+     "source": "PF8",
+     "revenues_m": [
+      25958,
+      28947
+     ]
+    },
+    "2002": {
+     "source": "PF9",
+     "revenues_m": [
+      26593,
+      29758
+     ]
+    },
+    "2003": {
+     "source": "PF9",
+     "revenues_m": [
+      29758,
+      41787
+     ]
+    },
+    "2004": {
+     "source": "PF9",
+     "revenues_m": [
+      41787,
+      48988
+     ]
+    },
+    "2005": {
+     "source": "PF9",
+     "revenues_m": [
+      48988,
+      47405
+     ]
+    },
+    "2006": {
+     "source": "PF9",
+     "revenues_m": [
+      47405,
+      48371
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -19,
+    "BASE": -4,
+    "BULL": 12,
+    "XBULL": 40
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 111.9,
+    "1998": 60.4,
+    "1999": 116.4,
+    "2000": 346.9,
+    "2001": 124.5,
+    "2002": 67.7,
+    "2003": -900.5,
+    "2004": 707.5,
+    "2005": -221.0,
+    "2006": -53.9
+   },
+   "raw": {
+    "1997": {
+     "source": "PF1",
+     "revenues_m": [
+      9864,
+      11055
+     ],
+     "cost_of_sales_m": [
+      1695,
+      1776
+     ]
+    },
+    "1998": {
+     "source": "PF2",
+     "revenues_m": [
+      11055,
+      13544
+     ],
+     "cost_of_sales_m": [
+      1776,
+      2094
+     ]
+    },
+    "1999": {
+     "source": "PF3",
+     "revenues_m": [
+      23231,
+      27376
+     ],
+     "cost_of_sales_m": [
+      4907,
+      5464
+     ]
+    },
+    "2000": {
+     "source": "PF4",
+     "revenues_m": [
+      27166,
+      29355
+     ],
+     "cost_of_sales_m": [
+      5576,
+      5007
+     ]
+    },
+    "2001": {
+     "source": "PF5",
+     "revenues_m": [
+      26045,
+      29024
+     ],
+     "cost_of_sales_m": [
+      3755,
+      3823
+     ]
+    },
+    "2002": {
+     "source": "PF6",
+     "revenues_m": [
+      29024,
+      32373
+     ],
+     "cost_of_sales_m": [
+      3823,
+      4045
+     ]
+    },
+    "2003": {
+     "source": "PF7",
+     "revenues_m": [
+      32294,
+      44736
+     ],
+     "cost_of_sales_m": [
+      4014,
+      9589
+     ]
+    },
+    "2004": {
+     "source": "PF8",
+     "revenues_m": [
+      44736,
+      52516
+     ],
+     "cost_of_sales_m": [
+      9589,
+      7541
+     ]
+    },
+    "2005": {
+     "source": "PF9",
+     "revenues_m": [
+      48988,
+      47405
+     ],
+     "cost_of_sales_m": [
+      6391,
+      7232
+     ]
+    },
+    "2006": {
+     "source": "PF9",
+     "revenues_m": [
+      47405,
+      48371
+     ],
+     "cost_of_sales_m": [
+      7232,
+      7640
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -1890,
+    "BASE": -900,
+    "BULL": 90,
+    "XBULL": 710
+   }
+  },
+  "pretax_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -47.3,
+    "1998": -186.6,
+    "1999": 667.6,
+    "2000": -470.3,
+    "2001": 1334.2,
+    "2002": 198.3,
+    "2003": -3121.4,
+    "2004": 2070.5,
+    "2005": -457.7,
+    "2006": 415.1
+   },
+   "raw": {
+    "1997": {
+     "source": "PF3",
+     "revenues_m": [
+      16957,
+      18975
+     ],
+     "pretax_m": [
+      3636,
+      3979
+     ]
+    },
+    "1998": {
+     "source": "PF5",
+     "revenues_m": [
+      18975,
+      23017
+     ],
+     "pretax_m": [
+      3979,
+      4397
+     ]
+    },
+    "1999": {
+     "source": "PF6",
+     "revenues_m": [
+      23017,
+      26940
+     ],
+     "pretax_m": [
+      4397,
+      6945
+     ]
+    },
+    "2000": {
+     "source": "PF7",
+     "revenues_m": [
+      26940,
+      25958
+     ],
+     "pretax_m": [
+      6945,
+      5471
+     ]
+    },
+    "2001": {
+     "source": "PF8",
+     "revenues_m": [
+      25958,
+      28947
+     ],
+     "pretax_m": [
+      5471,
+      9963
+     ]
+    },
+    "2002": {
+     "source": "PF9",
+     "revenues_m": [
+      26593,
+      29758
+     ],
+     "pretax_m": [
+      9543,
+      11269
+     ]
+    },
+    "2003": {
+     "source": "PF9",
+     "revenues_m": [
+      29758,
+      41787
+     ],
+     "pretax_m": [
+      11269,
+      2781
+     ]
+    },
+    "2004": {
+     "source": "PF9",
+     "revenues_m": [
+      41787,
+      48988
+     ],
+     "pretax_m": [
+      2781,
+      13403
+     ]
+    },
+    "2005": {
+     "source": "PF9",
+     "revenues_m": [
+      48988,
+      47405
+     ],
+     "pretax_m": [
+      13403,
+      10800
+     ]
+    },
+    "2006": {
+     "source": "PF9",
+     "revenues_m": [
+      47405,
+      48371
+     ],
+     "pretax_m": [
+      10800,
+      13028
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -6320,
+    "BASE": -3120,
+    "BULL": 80,
+    "XBULL": 2070
+   }
+  }
+ },
+ "price_basis": "Yahoo's PFE series is adjusted by a factor of 1.054 dated 2020-11-17 (Yahoo's split event for that date); every date here precedes it, so the builder multiplies Yahoo's close by it to restore the price as traded (2007-12-31 $22.73 and 2008-12-31 $17.71, the year-end market values per share in the FY2007 and FY2008 10-Ks). No Pfizer split after the 3-for-1 of 1999 precedes or restates any per-share fact in this file."
+}

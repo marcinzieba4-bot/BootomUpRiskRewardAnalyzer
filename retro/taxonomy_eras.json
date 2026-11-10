@@ -1451,6 +1451,51 @@
     "term": "Cordant",
     "first_seen": "2023-04-19",
     "note": "a Baker Hughes industrial asset-performance software; first in a Baker Hughes filing in its Q1 2023 earnings 8-K (accepted 2023-04-19 07:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Eliquis",
+    "first_seen": "2011-05-03",
+    "note": "the brand name of apixaban (Bristol-Myers Squibb and Pfizer); first in a Pfizer filing in its Q1 2011 earnings 8-K (accepted 2011-05-03 08:54 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Zoetis",
+    "first_seen": "2012-07-31",
+    "note": "the name of Pfizer's animal health business as a separate company; first in a Pfizer filing in its Q2 2012 earnings 8-K (accepted 2012-07-31 08:54 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Xeljanz",
+    "first_seen": "2012-11-09",
+    "note": "the brand name of tofacitinib; first in a Pfizer filing in its Q3 2012 10-Q (accepted 2012-11-09 13:39 ET), EDGAR full-text search"
+   },
+   {
+    "term": "Ibrance",
+    "first_seen": "2015-01-27",
+    "note": "the brand name of palbociclib; first in a Pfizer filing in its Q4 2014 earnings 8-K (accepted 2015-01-27 08:43 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Pfizer Innovative Health",
+    "first_seen": "2016-08-02",
+    "note": "a Pfizer operating segment; first in a Pfizer filing in its Q2 2016 earnings 8-K (accepted 2016-08-02 08:55 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Pfizer Essential Health",
+    "first_seen": "2016-08-02",
+    "note": "a Pfizer operating segment; first in a Pfizer filing in its Q2 2016 earnings 8-K (accepted 2016-08-02 08:55 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Viatris",
+    "first_seen": "2019-11-13",
+    "note": "the company formed from Pfizer's Upjohn business and Mylan; first in a filing under Pfizer's CIK in a Form 425 (accepted 2019-11-12 16:51 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Comirnaty",
+    "first_seen": "2021-11-02",
+    "note": "the brand name of the Pfizer-BioNTech COVID-19 vaccine; first in a Pfizer filing in its Q3 2021 earnings 8-K (accepted 2021-11-02 08:25 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Paxlovid",
+    "first_seen": "2021-11-12",
+    "note": "the brand name of nirmatrelvir and ritonavir; first in a Pfizer filing in its Q3 2021 10-Q (accepted 2021-11-12 06:06 ET, before the open), EDGAR full-text search"
    }
   ]
  }
