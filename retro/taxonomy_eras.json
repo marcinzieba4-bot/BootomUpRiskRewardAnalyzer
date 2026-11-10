@@ -1438,6 +1438,11 @@
     "note": "the abbreviation and ticker of Baker Hughes, a GE company; first in a Baker Hughes filing in an 8-K (accepted 2017-06-07 17:23 ET, after the close, so from the next trading day), EDGAR full-text search"
    },
    {
+    "term": "Baker Hughes Company",
+    "first_seen": "2019-09-17",
+    "note": "the name Baker Hughes, a GE company took on 2019-10-17; first in a Baker Hughes filing in an 8-K on the written consent approving it (accepted 2019-09-16 21:54 ET, after the close, so from the next trading day)"
+   },
+   {
     "term": "Leucipa",
     "first_seen": "2023-04-19",
     "note": "a Baker Hughes automated field production software; first in a Baker Hughes filing in its Q1 2023 earnings 8-K (accepted 2023-04-19 07:06 ET, before the open), EDGAR full-text search"

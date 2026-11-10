@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for BKR retrospectives (retro/build_bkr.py): Baker Hughes Incorporated, listed on the NYSE as BHI throughout 2007-2009 (BKR is the series key). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), and the latest declared dividend. Fiscal years are calendar years from 1998 (fiscal 1997 ended September 30). Baker Hughes gives no EPS, total-revenue or margin guidance in numbers in any filing of 2007-2009: each release's Outlook section guides revenue outside North America (in words or as a range), corporate expenses, capital expenditures, depreciation and the tax rate, kept on the print as 'outlook' (display only), and the 2009 releases have no Outlook section. Values are as reported; a vintage takes each year from the latest filing that reports it, and the company's operating profit per diluted share replaces GAAP EPS where a filing publishes it (the history's 'normalization' says which). A print's growth rates and margins are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago quarter is the one the same release shows. Outside North America is the release's Oilfield Operations revenue less North America. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "_doc": "Point-in-time fact sheet for BKR retrospectives (retro/build_bkr.py): Baker Hughes Incorporated, listed on the NYSE as BHI throughout 2007-2009 (BKR is the series key). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), and the latest declared dividend. Fiscal years are calendar years from 1998 (fiscal 1997 ended September 30). Baker Hughes gives no EPS, total-revenue or margin guidance in numbers in any filing of 2007-2009: each release's Outlook section guides revenue outside North America (in words or as a range), corporate expenses, capital expenditures, depreciation and the tax rate, kept on the print as 'outlook' (display only), and the 2009 releases have no Outlook section. Values are as reported; a vintage takes each year from the latest filing that reports it, and the company's operating profit per diluted share replaces GAAP EPS where a filing publishes it (the history's 'normalization' says which). A print's growth rates and margins are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago quarter is the one the same release shows. Outside North America is the release's Oilfield Operations revenue less North America. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing. From 2017-07-05 the listed company is Baker Hughes, a GE company (BHGE; Baker Hughes Company, BKR, from October 2019), built as a new listing ('listing'): the entries marked \"era\": \"bhge\" (vintages, prints, guides) and 'rule_t_bhge' are that company's and the only ones its models read; nothing of Baker Hughes Incorporated's history, prints or dividends enters them, and nothing of theirs enters a date before the listing. Its statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 (a loss for July 3 to December 31) is not a full year, so the first date is the one after the Q4 2018 release. EPS is GAAP diluted income per Class A share: the releases give adjusted EPS by quarter only, no filing gives a full-year figure excluding identified items, and nothing is derived; a year whose identified items attributable to the company exceed its net income ('one_off_test') or that is a loss is excluded. Share counts are Class A plus Class B outstanding at year end. A print's growth rates and margins are derived from its release's raw figures: orders and revenue against the year-ago quarter, the gross margin (revenue less cost of revenue), total segment operating income on revenue and the operating margin. 'listings' holds later changes of symbol and exchange.",
  "ticker": "BKR",
  "sources": {
   "BK1": {
@@ -477,8 +477,189 @@
    "title": "Baker Hughes Q1 2017 earnings release (8-K, exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/808362/000080836217000023/earningreleaseexhibit99103.htm",
    "supports": "Q1 2017 statement of operations and segment revenue (North America onshore pressure pumping deconsolidated from December 30, 2016)"
+  },
+  "BK69": {
+   "published": "2017-07-03",
+   "filed": "2017-07-03 11:56 ET (during the session)",
+   "title": "Baker Hughes, a GE company 8-K12B: the combination with GE's oil and gas business closed on July 3, 2017",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000119312517220852/d343521d8k12b.htm",
+   "supports": "the successor issuer: each Baker Hughes share became one Class A share of Baker Hughes, a GE company and the $17.50 special dividend; Class A common stock trading on the NYSE as BHGE from July 5, 2017"
+  },
+  "BK70": {
+   "published": "2018-02-26",
+   "filed": "2018-02-23 17:17 ET (after the close)",
+   "title": "Baker Hughes, a GE company FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160518000029/fiscalyear2017form10-k.htm",
+   "supports": "selected financial data 2014-2017 (GE Oil & Gas before July 3, 2017), orders for 2015-2017, segment revenue and operating income 2015-2017, the business description and risk factors"
+  },
+  "BK71": {
+   "published": "2018-07-20",
+   "filed": "2018-07-20 06:49 ET (before the open)",
+   "title": "Baker Hughes, a GE company Q2 2018 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160518000078/earningsreleaseexhibit9910.htm",
+   "supports": "the identified items attributable to BHGE in the first and second quarters of 2018 (Table 1b)"
+  },
+  "BK72": {
+   "published": "2018-11-13",
+   "filed": "2018-11-13 07:25 ET (before the open)",
+   "title": "Baker Hughes, a GE company 8-K recasting the FY2017 10-K for the new revenue standard (exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160518000108/exhibit992_financialsnotes.htm",
+   "supports": "statements of income, financial position and cash flows for 2017 and 2016 as recast, orders, segment revenue and operating income for 2017 and 2016, the loss per Class A share from July 3, 2017"
+  },
+  "BK73": {
+   "published": "2019-01-31",
+   "filed": "2019-01-31 06:47 ET (before the open)",
+   "title": "Baker Hughes, a GE company Q4 2018 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000015/earningsreleaseexhibit9911.htm",
+   "supports": "Q4 2018 orders, revenue, segment and operating income; full-year 2018 statement of income and the total-year table on a combined business basis"
+  },
+  "BK74": {
+   "published": "2019-02-20",
+   "filed": "2019-02-19 16:55 ET (after the close)",
+   "title": "Baker Hughes, a GE company FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000021/fiscalyear2018form10-k.htm",
+   "supports": "selected financial data 2014-2018, orders, segment revenue and operating income 2016-2018, Class A and Class B shares outstanding, cash flows, dividends, the business description and risk factors"
+  },
+  "BK75": {
+   "published": "2019-04-30",
+   "filed": "2019-04-30 06:50 ET (before the open)",
+   "title": "Baker Hughes, a GE company Q1 2019 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000035/earningsreleaseexhibit9910.htm",
+   "supports": "Q1 2019 orders, revenue, segment and operating income"
+  },
+  "BK76": {
+   "published": "2019-07-31",
+   "filed": "2019-07-31 06:49 ET (before the open)",
+   "title": "Baker Hughes, a GE company Q2 2019 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000055/earningsreleaseexhibit9910.htm",
+   "supports": "Q2 2019 orders, revenue, segment and operating income; the identified items of the first and second quarters of 2019"
+  },
+  "BK77": {
+   "published": "2019-10-18",
+   "filed": "2019-10-17 16:12 ET (after the close)",
+   "title": "Baker Hughes Company 8-K: the change of name and of ticker symbol",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000095010319013957/dp114144_8k.htm",
+   "supports": "the name Baker Hughes Company from October 17, 2019 and the NYSE ticker symbol BKR from October 18, 2019"
+  },
+  "BK78": {
+   "published": "2019-10-30",
+   "filed": "2019-10-30 06:48 ET (before the open)",
+   "title": "Baker Hughes Company Q3 2019 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000087/earningsreleaseexhibit.htm",
+   "supports": "Q3 2019 orders, revenue, segment and operating income"
+  },
+  "BK79": {
+   "published": "2020-01-22",
+   "filed": "2020-01-22 07:05 ET (before the open)",
+   "title": "Baker Hughes Company Q4 2019 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000004/earningsreleaseexhibit.htm",
+   "supports": "Q4 2019 orders, revenue, segment and operating income; full-year 2019 statement of income and total-year table; the identified items of the third and fourth quarters of 2019"
+  },
+  "BK80": {
+   "published": "2020-02-14",
+   "filed": "2020-02-13 16:18 ET (after the close)",
+   "title": "Baker Hughes Company FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000019/fiscalyear2019form10-k.htm",
+   "supports": "selected financial data 2015-2019, orders, segment revenue and operating income, Class A and Class B shares outstanding, cash flows, dividends, the business description and risk factors"
+  },
+  "BK81": {
+   "published": "2020-04-13",
+   "filed": "2020-04-13 08:09 ET (before the open)",
+   "title": "Baker Hughes Company 8-K: financial update for the first quarter of 2020 (exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000095010320007337/dp126012_ex9901.htm",
+   "supports": "the charges expected in the first quarter of 2020 and the planned cut in 2020 net capital expenditures"
+  },
+  "BK82": {
+   "published": "2020-04-22",
+   "filed": "2020-04-22 07:06 ET (before the open)",
+   "title": "Baker Hughes Company Q1 2020 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000037/earningsreleaseexhibit.htm",
+   "supports": "Q1 2020 orders, revenue, segment and operating income, with the goodwill impairment"
+  },
+  "BK83": {
+   "published": "2020-07-22",
+   "filed": "2020-07-22 07:04 ET (before the open)",
+   "title": "Baker Hughes Company Q2 2020 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000064/earningsreleaseexhibit.htm",
+   "supports": "Q2 2020 orders, revenue, segment and operating income"
+  },
+  "BK84": {
+   "published": "2020-10-21",
+   "filed": "2020-10-21 07:04 ET (before the open)",
+   "title": "Baker Hughes Company Q3 2020 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000083/earningsreleaseexhibit.htm",
+   "supports": "Q3 2020 orders, revenue, segment and operating income"
+  },
+  "BK85": {
+   "published": "2021-01-21",
+   "filed": "2021-01-21 07:04 ET (before the open)",
+   "title": "Baker Hughes Company Q4 2020 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160521000002/earningsreleaseex991123120.htm",
+   "supports": "Q4 2020 orders, revenue, segment and operating income; full-year 2020 statement of income and total-year table"
+  },
+  "BK86": {
+   "published": "2021-02-26",
+   "filed": "2021-02-25 16:07 ET (after the close)",
+   "title": "Baker Hughes Company FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160521000026/bkr-20201231.htm",
+   "supports": "statements of income 2018-2020, orders, segment revenue and operating income, Class A and Class B shares outstanding, cash flows, dividends, the business description and risk factors"
+  },
+  "BK87": {
+   "published": "2021-04-21",
+   "filed": "2021-04-21 06:34 ET (before the open)",
+   "title": "Baker Hughes Company Q1 2021 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160521000044/earningsreleaseex991033120.htm",
+   "supports": "Q1 2021 orders, revenue, segment and operating income"
+  },
+  "BK88": {
+   "published": "2021-07-21",
+   "filed": "2021-07-21 07:04 ET (before the open)",
+   "title": "Baker Hughes Company Q2 2021 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160521000084/earningsreleaseex991063020.htm",
+   "supports": "Q2 2021 orders, revenue, segment and operating income"
+  },
+  "BK89": {
+   "published": "2021-10-20",
+   "filed": "2021-10-20 07:06 ET (before the open)",
+   "title": "Baker Hughes Company Q3 2021 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160521000108/earningsreleaseex991093020.htm",
+   "supports": "Q3 2021 orders, revenue, segment and operating income"
+  },
+  "BK90": {
+   "published": "2021-10-28",
+   "filed": "2021-10-27 16:18 ET (after the close)",
+   "title": "Baker Hughes Company 8-K: transfer of the listing to Nasdaq",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000095010321016670/dp160581_8k.htm",
+   "supports": "trading on Nasdaq from December 7, 2021, the NYSE listing ending at the close on December 6, 2021"
   }
  },
+ "listing": {
+  "first_trading_day": "2017-07-05",
+  "exchange": "NYSE",
+  "symbol": "BHGE",
+  "published": "2017-07-03",
+  "source": "BK69",
+  "last_day_predecessor": "2017-07-03",
+  "note": "the combination with GE's oil and gas business closed on July 3, 2017: Baker Hughes Incorporated traded as BHI to the close of July 3, 2017 and the Class A common stock of Baker Hughes, a GE company began trading as BHGE on July 5, 2017 (8-K12B). The new company's financial statements are GE Oil & Gas's before the closing, so its own P/E exists only from the listing (the listing rule of method r2)"
+ },
+ "listings": [
+  {
+   "published": "2019-10-18",
+   "effective": "2019-10-18",
+   "exchange": "NYSE",
+   "symbol": "BKR",
+   "source": "BK77",
+   "note": "the NYSE ticker symbol BKR from the open of October 18, 2019, with the name Baker Hughes Company (8-K accepted 2019-10-17 16:12 ET)"
+  },
+  {
+   "published": "2021-10-28",
+   "effective": "2021-12-07",
+   "exchange": "Nasdaq",
+   "symbol": "BKR",
+   "source": "BK90",
+   "note": "trading on Nasdaq from December 7, 2021 (8-K accepted 2021-10-27 16:18 ET)"
+  }
+ ],
  "history_vintages": [
   {
    "published": "2007-02-26",
@@ -1812,6 +1993,395 @@
     "2015": "a loss: GAAP $(4.49) a share (FY2015 10-K) and $(0.48) adjusted (Q4 2015 release), so no P/E",
     "2016": "a loss: GAAP $(6.31) a share (FY2016 10-K) and $(2.96) adjusted (Q4 2016 release), so no P/E"
    }
+  },
+  {
+   "era": "bhge",
+   "published": "2018-11-13",
+   "sources": [
+    "BK72",
+    "BK70",
+    "BK69"
+   ],
+   "company": "Baker Hughes, a GE company",
+   "exchange": "NYSE",
+   "symbol": "BHGE",
+   "fy_label": "FY17",
+   "why": "Baker Hughes: 'We are a fullstream provider of oilfield products, services and digital solutions'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may curtail production and demand for hydrocarbons such as oil and natural gas in areas of the world where our customers operate, by shifting demand towards relatively lower carbon energy sources such as wind, solar and other renewables' (its own FY2017 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "A fullstream oilfield products and services company",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24
+   },
+   "eps_normalized": {},
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179
+   },
+   "revenue_sources": {
+    "2014": "BK70",
+    "2015": "BK70",
+    "2016": "BK72",
+    "2017": "BK72"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -1.65,
+   "prev_fy_op_margin_note": "FY17 operating loss $(284)M / revenue $17,179M (the recast FY2017 statements)",
+   "prev_fy_sales_growth": 31.3,
+   "prev_fy_orders_pct": 55.1,
+   "prev_fy_orders_note": "orders $17,159M, an increase of $6,093M from 2016 (the recast FY2017 MD&A: 'driven primarily by the acquisition of Baker Hughes')",
+   "check_pretax_margin": -1.95,
+   "check_pretax_note": "FY17 loss before income taxes and equity in loss of affiliate $(335)M / revenue $17,179M (the recast FY2017 statements)",
+   "tax_rate": -0.134,
+   "tax_note": "FY17 effective rate: an income tax provision of $45M on a loss before income taxes of $(335)M (the recast FY2017 statements), a negative rate",
+   "fcf_b": -1.29,
+   "fcf_label": "FY17",
+   "fcf_note": "operating activities $(799)M less expenditures for capital assets $665M plus proceeds from disposal of assets $172M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 a quarter: the dividend paid in the quarter ended December 31, 2017 (FY2017 10-K; $0.17 in the quarter before)",
+   "cash_return_text": "$174M of Class A common stock and $303M of common units from GE repurchased and $155M of dividends paid in FY17",
+   "business_line": "Oilfield Services, Oilfield Equipment, Turbomachinery & Process Solutions, Digital Solutions",
+   "normalization": "diluted income per Class A share, GAAP: the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is a loss of $(0.24) per Class A share for July 3 to December 31 and is not a full year, so the history has no year until the first full year's EPS is published",
+   "groups": [
+    [
+     "Oilfield Services",
+     5881,
+     646.3
+    ],
+    [
+     "Oilfield Equipment",
+     2661,
+     -24.8
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     6295,
+     -5.6
+    ],
+    [
+     "Digital Solutions",
+     2342,
+     12.3
+    ]
+   ],
+   "groups_basis": "FY17 segment revenue (the recast FY2017 MD&A; Baker Hughes in Oilfield Services and Digital Solutions from July 3, 2017)"
+  },
+  {
+   "era": "bhge",
+   "published": "2019-02-20",
+   "sources": [
+    "BK74",
+    "BK73",
+    "BK71",
+    "BK70",
+    "BK69"
+   ],
+   "company": "Baker Hughes, a GE company",
+   "exchange": "NYSE",
+   "symbol": "BHGE",
+   "fy_label": "FY18",
+   "why": "Baker Hughes: 'We are a fullstream provider of oilfield products, services and digital solutions'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may curtail production and demand for hydrocarbons such as oil and natural gas by shifting demand towards and investment in relatively lower carbon energy sources such as wind, solar and other renewables' (its own FY2018 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "A fullstream oilfield products and services company",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45
+   },
+   "eps_normalized": {
+    "2018": 0.45
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877
+   },
+   "revenue_sources": {
+    "2014": "BK74",
+    "2015": "BK74",
+    "2016": "BK74",
+    "2017": "BK74",
+    "2018": "BK74"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2018": 1035.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 3.06,
+   "prev_fy_op_margin_note": "FY18 operating income $701M / revenue $22,877M (FY2018 10-K)",
+   "prev_fy_sales_growth": 33.2,
+   "prev_fy_orders_pct": 39.3,
+   "prev_fy_orders_note": "orders $23,904M vs $17,159M (FY2018 10-K; Baker Hughes in the orders from July 3, 2017)",
+   "check_pretax_margin": 2.97,
+   "check_pretax_note": "FY18 income before income taxes and equity in loss of affiliate $680M / revenue $22,877M (FY2018 10-K)",
+   "tax_rate": 0.379,
+   "tax_note": "FY18 effective rate: an income tax provision of $258M on income before income taxes of $680M (FY2018 10-K)",
+   "fcf_b": 1.23,
+   "fcf_label": "FY18",
+   "fcf_note": "operating activities $1,762M less expenditures for capital assets $995M plus proceeds from disposal of assets $458M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 a quarter: $0.72 a share declared and paid in 2018 (FY2018 10-K)",
+   "cash_return_text": "$387M of Class A common stock and $2,099M of common units from GE repurchased and $315M of dividends paid in FY18",
+   "business_line": "Oilfield Services, Oilfield Equipment, Turbomachinery & Process Solutions, Digital Solutions",
+   "normalization": "diluted income per Class A share, GAAP: the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income",
+   "groups": [
+    [
+     "Oilfield Services",
+     11617,
+     97.5
+    ],
+    [
+     "Oilfield Equipment",
+     2641,
+     -0.8
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     6015,
+     -4.4
+    ],
+    [
+     "Digital Solutions",
+     2604,
+     11.2
+    ]
+   ],
+   "groups_basis": "FY18 segment revenue (FY2018 10-K; growth as reported, Baker Hughes in 2017 from July 3 only)"
+  },
+  {
+   "era": "bhge",
+   "published": "2020-02-14",
+   "sources": [
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "NYSE",
+   "symbol": "BKR",
+   "fy_label": "FY19",
+   "why": "Baker Hughes: 'We are an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may curtail production and demand for hydrocarbons such as oil and natural gas by shifting demand towards and investment in relatively lower carbon energy sources such as wind, solar and other renewables' (its own FY2019 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23
+   },
+   "eps_normalized": {
+    "2018": 0.45
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838
+   },
+   "revenue_sources": {
+    "2014": "BK74",
+    "2015": "BK80",
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK80",
+    "2019": "BK80"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2019": 1027.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 4.51,
+   "prev_fy_op_margin_note": "FY19 operating income $1,074M / revenue $23,838M (FY2019 10-K)",
+   "prev_fy_sales_growth": 4.2,
+   "prev_fy_orders_pct": 12.8,
+   "prev_fy_orders_note": "orders $26,973M vs $23,904M (FY2019 10-K)",
+   "check_pretax_margin": 3.16,
+   "check_pretax_note": "FY19 income before income taxes and equity in loss of affiliate $753M / revenue $23,838M (FY2019 10-K)",
+   "tax_rate": 0.64,
+   "tax_note": "FY19 effective rate: an income tax provision of $482M on income before income taxes of $753M (FY2019 10-K)",
+   "fcf_b": 1.15,
+   "fcf_label": "FY19",
+   "fcf_note": "operating activities $2,126M less expenditures for capital assets $1,240M plus proceeds from disposal of assets $264M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 a quarter: $0.72 a share declared and paid in 2019 (FY2019 10-K)",
+   "cash_return_text": "$250M of common units from GE repurchased and $395M of dividends paid in FY19",
+   "business_line": "Oilfield Services, Oilfield Equipment, Turbomachinery & Process Solutions, Digital Solutions",
+   "normalization": "diluted income per Class A share, GAAP: the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them",
+   "groups": [
+    [
+     "Oilfield Services",
+     12889,
+     10.9
+    ],
+    [
+     "Oilfield Equipment",
+     2921,
+     10.6
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     5536,
+     -8.0
+    ],
+    [
+     "Digital Solutions",
+     2492,
+     -4.3
+    ]
+   ],
+   "groups_basis": "FY19 segment revenue (FY2019 10-K)"
+  },
+  {
+   "era": "bhge",
+   "published": "2021-02-26",
+   "sources": [
+    "BK86",
+    "BK85",
+    "BK80",
+    "BK79",
+    "BK76",
+    "BK74",
+    "BK71",
+    "BK69"
+   ],
+   "company": "Baker Hughes Company",
+   "exchange": "NYSE",
+   "symbol": "BKR",
+   "fy_label": "FY20",
+   "why": "Baker Hughes: 'We are an energy technology company with a broad and diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may curtail production and demand for hydrocarbons such as oil and natural gas by shifting demand towards and investment in relatively lower carbon energy sources such as wind, solar and alternative energy solutions'; 'Failure to effectively and timely execute our energy transition strategy could have an adverse effect on the demand for our technologies and services' (its own FY2020 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account",
+   "why_theme_tail": true,
+   "kind_text": "An energy technology company, in its own words,",
+   "fiscal_year_ends": {
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31"
+   },
+   "eps_gaap": {
+    "2017": -0.24,
+    "2018": 0.45,
+    "2019": 0.23,
+    "2020": -14.73
+   },
+   "eps_normalized": {
+    "2018": 0.45
+   },
+   "eps_excluded": {
+    "2017": "a loss of $(0.24) per Class A share for July 3 to December 31, 2017, not a full year (per-share figures begin with the closing on July 3, 2017)",
+    "2019": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "2020": "a loss: GAAP $(14.73) per Class A share, and no filing publishes a full-year figure excluding its items, so no P/E"
+   },
+   "revenue_usd_b": {
+    "2014": 19.191,
+    "2015": 16.688,
+    "2016": 13.082,
+    "2017": 17.179,
+    "2018": 22.877,
+    "2019": 23.838,
+    "2020": 20.705
+   },
+   "revenue_sources": {
+    "2014": "BK74",
+    "2015": "BK80",
+    "2016": "BK80",
+    "2017": "BK80",
+    "2018": "BK86",
+    "2019": "BK86",
+    "2020": "BK86"
+   },
+   "diluted_shares_m": {
+    "2017": 1129.0,
+    "2020": 1035.0
+   },
+   "shares_note": "Class A plus Class B common stock issued and outstanding at each year end (the 10-K's statement of financial position), in millions: Class B shares and their paired LLC units exchange one for one into Class A, so the Class A count alone grows with General Electric's exchanges and sales",
+   "pe_window_start": "2017-07-05",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -77.17,
+   "prev_fy_op_margin_note": "FY20 operating loss $(15,978)M / revenue $20,705M (FY2020 10-K)",
+   "prev_fy_sales_growth": -13.1,
+   "prev_fy_orders_pct": -23.3,
+   "prev_fy_orders_note": "orders $20.7 billion vs $27.0 billion (FY2020 10-K)",
+   "check_pretax_margin": -73.42,
+   "check_pretax_note": "FY20 loss before income taxes and equity in loss of affiliate $(15,202)M / revenue $20,705M (FY2020 10-K)",
+   "tax_rate": -0.037,
+   "tax_note": "FY20 effective rate: an income tax provision of $559M on a loss before income taxes of $(15,202)M (FY2020 10-K), a negative rate",
+   "fcf_b": 0.52,
+   "fcf_label": "FY20",
+   "fcf_note": "operating activities $1,304M less expenditures for capital assets $974M plus proceeds from disposal of assets $187M (the company's definition of free cash flow)",
+   "prev_q_orders_pct": null,
+   "prev_q_label": "Q3 2018",
+   "dividend_annual": 0.72,
+   "dividend_note": "$0.18 a quarter: $0.72 a share declared and paid in 2020 (FY2020 10-K)",
+   "cash_return_text": "$488M of dividends paid and no shares or units repurchased in FY20",
+   "business_line": "Oilfield Services, Oilfield Equipment, Turbomachinery & Process Solutions, Digital Solutions",
+   "normalization": "diluted income per Class A share, GAAP: the company publishes adjusted EPS by quarter only and no filing gives a full-year figure excluding identified items, so nothing replaces GAAP and nothing is derived; the financial statements before July 3, 2017 are GE Oil & Gas's, with no per-share figures; 2017 is excluded (a loss of $(0.24) per Class A share for July 3 to December 31, not a full year); 2018 is GAAP $0.45: the identified items attributable to the company ($82M, the four quarters of the releases' Table 1b) are under its $195M of net income; 2019 is excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its $128M of net income (GAAP $0.23), with no published full-year figure excluding them; 2020 is excluded: a loss of $(14.73) per Class A share (the $14,773M goodwill impairment), with no published full-year figure excluding its items",
+   "groups": [
+    [
+     "Oilfield Services",
+     10140,
+     -21.3
+    ],
+    [
+     "Oilfield Equipment",
+     2844,
+     -2.6
+    ],
+    [
+     "Turbomachinery & Process Solutions",
+     5705,
+     3.1
+    ],
+    [
+     "Digital Solutions",
+     2015,
+     -19.1
+    ]
+   ],
+   "groups_basis": "FY20 segment revenue (FY2020 10-K)"
   }
  ],
  "prints": [
@@ -4259,6 +4829,846 @@
    "op_margin": -1.33,
    "op_margin_bp": 1961.0,
    "basis_note": "North America onshore pressure pumping deconsolidated from December 30, 2016 (contributed to a joint venture), the year-ago quarter as reported"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2018",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-01-31",
+   "source": "BK73",
+   "release": "Jan 31",
+   "release_time": "before the open on Jan 31: 8-K accepted 06:47 ET; public before that day's close",
+   "period_end": "2018-12-31",
+   "raw": {
+    "orders_m": 6884,
+    "orders_prior_m": 5701,
+    "rev_m": 6264,
+    "rev_prior_m": 5799,
+    "cor_m": 5028,
+    "cor_prior_m": 4940,
+    "segoi_m": 609,
+    "segoi_prior_m": 376,
+    "oi_m": 382,
+    "oi_prior_m": -111,
+    "ofs_m": 3062,
+    "ofs_prior_m": 2781,
+    "ofe_m": 729,
+    "ofe_prior_m": 650,
+    "tps_m": 1782,
+    "tps_prior_m": 1651,
+    "ds_m": 691,
+    "ds_prior_m": 717
+   },
+   "sales_note": "revenue $6,264M vs $5,799M",
+   "orders_note": "orders $6,884M vs $5,701M",
+   "seg_note": "total segment operating income $609M vs $376M",
+   "margin_note": "operating income $382M vs $(111)M; cost of revenue $5,028M vs $4,940M",
+   "segments_note": "Oilfield Services +10.1%; Oilfield Equipment +12.2%; Turbomachinery & Process Solutions +7.9%; Digital Solutions -3.6%",
+   "eps_q": 0.28,
+   "eps_q_prior": 0.07,
+   "eps_note": "Q4 2018 adjusted (non-GAAP, the release's figure excluding identified items): $0.26 a diluted Class A share; GAAP $0.28",
+   "diluted_shares_m": 463.0,
+   "cash_b": 3.723,
+   "cash_note": "Cash, cash equivalents and restricted cash (1) | 3,723 | 7,030",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $214 million for the fourth quarter of 2018.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the fourth quarter ended at $21.0 billion, an increase of $0.2 billion from the third quarter of 2018.",
+   "next_print": "Q1 2019 print (late April)",
+   "cash_return_text": "Cash flows generated from operating activities were $1,090 million for the fourth quarter of 2018. Free cash flow (a non-GAAP measure) for the quarter was $876 million.",
+   "sales_b": 6.264,
+   "sales_pct": 8.0,
+   "orders_pct": 20.8,
+   "gross_margin": 19.73,
+   "gross_margin_bp": 491.9,
+   "seg_margin": 9.72,
+   "seg_margin_bp": 323.8,
+   "op_margin": 6.1,
+   "op_margin_bp": 801.2,
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 0.45,
+    "revenue_usd_b": 22.877,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2018 GAAP $0.45 per diluted Class A share (Q4 2018 release): no filing publishes a full-year figure excluding identified items (adjusted EPS by quarter only; nothing is derived), and the items attributable to the company ($82M, the four quarters of Table 1b) are under its $195M of net income",
+    "op_margin": 3.06,
+    "op_margin_note": "FY18 operating income $701M / revenue $22,877M (Q4 2018 release)",
+    "sales_growth": 33.2,
+    "sales_note": "revenue $22,877M vs $17,179M, as reported (Q4 2018 release)",
+    "orders_pct": 9.5,
+    "orders_note": "orders $23,904M vs $21,821M, the Q4 2018 release's total-year table, on the release's combined business basis",
+    "check_pretax_margin": 2.97,
+    "check_pretax_note": "FY18 income before income taxes and equity in loss of affiliate $680M / revenue $22,877M (Q4 2018 release)",
+    "tax_rate": 0.379,
+    "tax_note": "FY18 effective rate: an income tax provision of $258M on income before income taxes of $680M",
+    "groups": [
+     [
+      "Oilfield Services",
+      11617,
+      12.1
+     ],
+     [
+      "Oilfield Equipment",
+      2641,
+      -0.8
+     ],
+     [
+      "Turbomachinery & Process Solutions",
+      6015,
+      -4.4
+     ],
+     [
+      "Digital Solutions",
+      2604,
+      3.2
+     ]
+    ],
+    "groups_basis": "FY18 segment revenue (Q4 2018 release's total-year table; growth on the release's combined business basis)",
+    "one_off_test": {
+     "items_attributable_m": [
+      -32,
+      60,
+      66,
+      -12
+     ],
+     "quarters": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+     ],
+     "sources": [
+      "BK71",
+      "BK71",
+      "BK73",
+      "BK73"
+     ],
+     "items_total_m": 82,
+     "net_income_attributable_m": 195,
+     "distorted": false,
+     "note": "the releases' own 'Adjustments attributable' line of Table 1b, the four quarters summed, against the year's net income attributable to the company (the AAPL FY2002 test on the basis of the per-share figure: both after tax and after the noncontrolling interest)"
+    }
+   },
+   "extra_sources": [
+    "BK71"
+   ]
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2019",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-04-30",
+   "source": "BK75",
+   "release": "Apr 30",
+   "release_time": "before the open on Apr 30: 8-K accepted 06:50 ET; public before that day's close",
+   "period_end": "2019-03-31",
+   "raw": {
+    "orders_m": 5693,
+    "orders_prior_m": 5238,
+    "rev_m": 5615,
+    "rev_prior_m": 5399,
+    "cor_m": 4639,
+    "cor_prior_m": 4558,
+    "segoi_m": 373,
+    "segoi_prior_m": 327,
+    "oi_m": 176,
+    "oi_prior_m": -41,
+    "ofs_m": 2986,
+    "ofs_prior_m": 2678,
+    "ofe_m": 735,
+    "ofe_prior_m": 664,
+    "tps_m": 1302,
+    "tps_prior_m": 1460,
+    "ds_m": 592,
+    "ds_prior_m": 598
+   },
+   "sales_note": "revenue $5,615M vs $5,399M",
+   "orders_note": "orders $5,693M vs $5,238M",
+   "seg_note": "total segment operating income $373M vs $327M",
+   "margin_note": "operating income $176M vs $(41)M; cost of revenue $4,639M vs $4,558M",
+   "segments_note": "Oilfield Services +11.5%; Oilfield Equipment +10.7%; Turbomachinery & Process Solutions -10.8%; Digital Solutions -1.0%",
+   "eps_q": 0.06,
+   "eps_q_prior": 0.17,
+   "eps_note": "Q1 2019 adjusted (non-GAAP, the release's figure excluding identified items): $0.15 a diluted Class A share; GAAP $0.06",
+   "diluted_shares_m": 516.0,
+   "cash_b": 3.073,
+   "cash_note": "Cash and cash equivalents (1) | 3,073 | 3,723",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $235 million for the first quarter of 2019.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the first quarter ended at $20.5 billion, a decrease of $0.5 billion from the fourth quarter of 2018.",
+   "next_print": "Q2 2019 print (late July)",
+   "cash_return_text": "Cash flows from operating activities were $(184) million for the first quarter of 2019. Free cash flow (a non-GAAP measure) for the quarter was $(419) million.",
+   "sales_b": 5.615,
+   "sales_pct": 4.0,
+   "orders_pct": 8.7,
+   "gross_margin": 17.38,
+   "gross_margin_bp": 180.5,
+   "seg_margin": 6.64,
+   "seg_margin_bp": 58.6,
+   "op_margin": 3.13,
+   "op_margin_bp": 389.4
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2019",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-07-31",
+   "source": "BK76",
+   "release": "Jul 31",
+   "release_time": "before the open on Jul 31: 8-K accepted 06:49 ET; public before that day's close",
+   "period_end": "2019-06-30",
+   "raw": {
+    "orders_m": 6554,
+    "orders_prior_m": 6036,
+    "rev_m": 5994,
+    "rev_prior_m": 5548,
+    "cor_m": 4932,
+    "cor_prior_m": 4612,
+    "segoi_m": 466,
+    "segoi_prior_m": 387,
+    "oi_m": 271,
+    "oi_prior_m": 78,
+    "ofs_m": 3263,
+    "ofs_prior_m": 2884,
+    "ofe_m": 693,
+    "ofe_prior_m": 617,
+    "tps_m": 1405,
+    "tps_prior_m": 1385,
+    "ds_m": 632,
+    "ds_prior_m": 662
+   },
+   "sales_note": "revenue $5,994M vs $5,548M",
+   "orders_note": "orders $6,554M vs $6,036M",
+   "seg_note": "total segment operating income $466M vs $387M",
+   "margin_note": "operating income $271M vs $78M; cost of revenue $4,932M vs $4,612M",
+   "segments_note": "Oilfield Services +13.1%; Oilfield Equipment +12.3%; Turbomachinery & Process Solutions +1.4%; Digital Solutions -4.5%",
+   "eps_q": -0.02,
+   "eps_q_prior": -0.05,
+   "eps_note": "Q2 2019 adjusted (non-GAAP, the release's figure excluding identified items): $0.20 a diluted Class A share; GAAP $(0.02)",
+   "diluted_shares_m": 515.0,
+   "cash_b": 3.138,
+   "cash_note": "Cash and cash equivalents (1) | 3,138 | 3,723",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $238 million for the second quarter of 2019.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the second quarter ended at $20.6 billion, an increase of $0.1 billion from the first quarter of 2019.",
+   "next_print": "Q3 2019 print (late October)",
+   "cash_return_text": "Cash flows from operating activities were $593 million for the second quarter of 2019. Free cash flow (a non-GAAP measure) for the quarter was $355 million.",
+   "sales_b": 5.994,
+   "sales_pct": 8.0,
+   "orders_pct": 8.6,
+   "gross_margin": 17.72,
+   "gross_margin_bp": 84.7,
+   "seg_margin": 7.77,
+   "seg_margin_bp": 79.9,
+   "op_margin": 4.52,
+   "op_margin_bp": 311.5
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2019",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-10-30",
+   "source": "BK78",
+   "release": "Oct 30",
+   "release_time": "before the open on Oct 30: 8-K accepted 06:48 ET; public before that day's close",
+   "period_end": "2019-09-30",
+   "raw": {
+    "orders_m": 7783,
+    "orders_prior_m": 5746,
+    "rev_m": 5882,
+    "rev_prior_m": 5665,
+    "cor_m": 4781,
+    "cor_prior_m": 4692,
+    "segoi_m": 531,
+    "segoi_prior_m": 475,
+    "oi_m": 297,
+    "oi_prior_m": 282,
+    "ofs_m": 3348,
+    "ofs_prior_m": 2993,
+    "ofe_m": 728,
+    "ofe_prior_m": 631,
+    "tps_m": 1197,
+    "tps_prior_m": 1389,
+    "ds_m": 609,
+    "ds_prior_m": 653
+   },
+   "sales_note": "revenue $5,882M vs $5,665M",
+   "orders_note": "orders $7,783M vs $5,746M",
+   "seg_note": "total segment operating income $531M vs $475M",
+   "margin_note": "operating income $297M vs $282M; cost of revenue $4,781M vs $4,692M",
+   "segments_note": "Oilfield Services +11.9%; Oilfield Equipment +15.4%; Turbomachinery & Process Solutions -13.8%; Digital Solutions -6.7%",
+   "eps_q": 0.11,
+   "eps_q_prior": 0.03,
+   "eps_note": "Q3 2019 adjusted (non-GAAP, the release's figure excluding identified items): $0.21 a diluted Class A share; GAAP $0.11",
+   "diluted_shares_m": 541.0,
+   "cash_b": 2.808,
+   "cash_note": "Cash and cash equivalents (1) | 2,808 | 3,723",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $199 million for the third quarter of 2019.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the third quarter ended at $22.2 billion, an increase of $1.7 billion from the second quarter of 2019.",
+   "next_print": "Q4 2019 print (late January)",
+   "cash_return_text": "Cash flows from operating activities were $360 million for the third quarter of 2019. Free cash flow (a non-GAAP measure) for the quarter was $161 million.",
+   "sales_b": 5.882,
+   "sales_pct": 3.8,
+   "orders_pct": 35.5,
+   "gross_margin": 18.72,
+   "gross_margin_bp": 154.2,
+   "seg_margin": 9.03,
+   "seg_margin_bp": 64.3,
+   "op_margin": 5.05,
+   "op_margin_bp": 7.1
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2019",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-01-22",
+   "source": "BK79",
+   "release": "Jan 22",
+   "release_time": "before the open on Jan 22: 8-K accepted 07:05 ET; public before that day's close",
+   "period_end": "2019-12-31",
+   "raw": {
+    "orders_m": 6944,
+    "orders_prior_m": 6884,
+    "rev_m": 6347,
+    "rev_prior_m": 6264,
+    "cor_m": 5052,
+    "cor_prior_m": 5028,
+    "segoi_m": 665,
+    "segoi_prior_m": 609,
+    "oi_m": 331,
+    "oi_prior_m": 382,
+    "ofs_m": 3292,
+    "ofs_prior_m": 3062,
+    "ofe_m": 765,
+    "ofe_prior_m": 729,
+    "tps_m": 1632,
+    "tps_prior_m": 1782,
+    "ds_m": 659,
+    "ds_prior_m": 691
+   },
+   "sales_note": "revenue $6,347M vs $6,264M",
+   "orders_note": "orders $6,944M vs $6,884M",
+   "seg_note": "total segment operating income $665M vs $609M",
+   "margin_note": "operating income $331M vs $382M; cost of revenue $5,052M vs $5,028M",
+   "segments_note": "Oilfield Services +7.5%; Oilfield Equipment +4.9%; Turbomachinery & Process Solutions -8.4%; Digital Solutions -4.6%",
+   "eps_q": 0.07,
+   "eps_q_prior": 0.28,
+   "eps_note": "Q4 2019 adjusted (non-GAAP, the release's figure excluding identified items): $0.27 a diluted Class A share; GAAP $0.07",
+   "diluted_shares_m": 653.0,
+   "cash_b": 3.249,
+   "cash_note": "Cash and cash equivalents (1) | 3,249 | 3,723",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $304 million for the fourth quarter of 2019.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the fourth quarter ended at $22.9 billion, an increase of $0.7 billion from the third quarter of 2019.",
+   "next_print": "Q1 2020 print (late April)",
+   "cash_return_text": "Cash flows generated from operating activities were $1,357 million for the fourth quarter of 2019. Free cash flow (a non-GAAP measure) for the quarter was $1,053 million.",
+   "sales_b": 6.347,
+   "sales_pct": 1.3,
+   "orders_pct": 0.9,
+   "gross_margin": 20.4,
+   "gross_margin_bp": 67.2,
+   "seg_margin": 10.48,
+   "seg_margin_bp": 75.5,
+   "op_margin": 5.22,
+   "op_margin_bp": -88.3,
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": null,
+    "excluded_note": "distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)",
+    "revenue_usd_b": 23.838,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2019 excluded: identified items attributable to the company ($345M, the four quarters of Table 1b) exceed its net income ($128M; GAAP $0.23), with no published full-year figure excluding them",
+    "op_margin": 4.51,
+    "op_margin_note": "FY19 operating income $1,074M / revenue $23,838M (Q4 2019 release)",
+    "sales_growth": 4.2,
+    "sales_note": "revenue $23,838M vs $22,877M, as reported (Q4 2019 release)",
+    "orders_pct": 12.8,
+    "orders_note": "orders $26,973M vs $23,904M, the Q4 2019 release's total-year table",
+    "check_pretax_margin": 3.16,
+    "check_pretax_note": "FY19 income before income taxes and equity in loss of affiliate $753M / revenue $23,838M (Q4 2019 release)",
+    "tax_rate": 0.64,
+    "tax_note": "FY19 effective rate: an income tax provision of $482M on income before income taxes of $753M",
+    "groups": [
+     [
+      "Oilfield Services",
+      12889,
+      10.9
+     ],
+     [
+      "Oilfield Equipment",
+      2921,
+      10.6
+     ],
+     [
+      "Turbomachinery & Process Solutions",
+      5536,
+      -8.0
+     ],
+     [
+      "Digital Solutions",
+      2492,
+      -4.3
+     ]
+    ],
+    "groups_basis": "FY19 segment revenue (Q4 2019 release's total-year table)",
+    "one_off_test": {
+     "items_attributable_m": [
+      44,
+      113,
+      57,
+      131
+     ],
+     "quarters": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+     ],
+     "sources": [
+      "BK76",
+      "BK76",
+      "BK79",
+      "BK79"
+     ],
+     "items_total_m": 345,
+     "net_income_attributable_m": 128,
+     "distorted": true,
+     "note": "the releases' own 'Adjustments attributable' line of Table 1b, the four quarters summed, against the year's net income attributable to the company (the AAPL FY2002 test on the basis of the per-share figure: both after tax and after the noncontrolling interest)"
+    }
+   },
+   "extra_sources": [
+    "BK76"
+   ]
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2020",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-04-22",
+   "source": "BK82",
+   "release": "Apr 22",
+   "release_time": "before the open on Apr 22: 8-K accepted 07:06 ET; public before that day's close",
+   "period_end": "2020-03-31",
+   "raw": {
+    "orders_m": 5532,
+    "orders_prior_m": 5693,
+    "rev_m": 5425,
+    "rev_prior_m": 5615,
+    "cor_m": 4670,
+    "cor_prior_m": 4639,
+    "segoi_m": 361,
+    "segoi_prior_m": 373,
+    "oi_m": -16059,
+    "oi_prior_m": 176,
+    "ofs_m": 3139,
+    "ofs_prior_m": 2986,
+    "ofe_m": 712,
+    "ofe_prior_m": 735,
+    "tps_m": 1085,
+    "tps_prior_m": 1302,
+    "ds_m": 489,
+    "ds_prior_m": 592
+   },
+   "sales_note": "revenue $5,425M vs $5,615M",
+   "orders_note": "orders $5,532M vs $5,693M",
+   "seg_note": "total segment operating income $361M vs $373M",
+   "margin_note": "operating loss $(16,059)M vs $176M; cost of revenue $4,670M vs $4,639M",
+   "segments_note": "Oilfield Services +5.1%; Oilfield Equipment -3.1%; Turbomachinery & Process Solutions -16.7%; Digital Solutions -17.4%",
+   "eps_q": -15.64,
+   "eps_q_prior": 0.06,
+   "eps_note": "Q1 2020 adjusted (non-GAAP, the release's figure excluding identified items): $0.11 a diluted Class A share; GAAP $(15.64)",
+   "diluted_shares_m": 653.0,
+   "cash_b": 3.01,
+   "cash_note": "Cash and cash equivalents (1) | 3,010 | 3,249",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $325 million for the first quarter of 2020.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the first quarter ended at $22.7 billion, a decrease of $0.2 billion from the fourth quarter of 2019.",
+   "next_print": "Q2 2020 print (late July)",
+   "cash_return_text": "Cash flow from operating activities were $478 million for the first quarter of 2020. Free cash flow (a non-GAAP measure) for the quarter was $152 million.",
+   "sales_b": 5.425,
+   "sales_pct": -3.4,
+   "orders_pct": -2.8,
+   "gross_margin": 13.92,
+   "gross_margin_bp": -346.5,
+   "seg_margin": 6.65,
+   "seg_margin_bp": 1.1,
+   "op_margin": -296.02,
+   "op_margin_bp": -29915.3,
+   "basis_note": "the operating loss carries the $14,773M goodwill impairment and $1,325M of restructuring, impairment and other charges, as published"
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2020",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-07-22",
+   "source": "BK83",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 07:04 ET; public before that day's close",
+   "period_end": "2020-06-30",
+   "raw": {
+    "orders_m": 4888,
+    "orders_prior_m": 6554,
+    "rev_m": 4736,
+    "rev_prior_m": 5994,
+    "cor_m": 4058,
+    "cor_prior_m": 4932,
+    "segoi_m": 221,
+    "segoi_prior_m": 466,
+    "oi_m": -52,
+    "oi_prior_m": 271,
+    "ofs_m": 2411,
+    "ofs_prior_m": 3263,
+    "ofe_m": 696,
+    "ofe_prior_m": 693,
+    "tps_m": 1161,
+    "tps_prior_m": 1405,
+    "ds_m": 468,
+    "ds_prior_m": 632
+   },
+   "sales_note": "revenue $4,736M vs $5,994M",
+   "orders_note": "orders $4,888M vs $6,554M",
+   "seg_note": "total segment operating income $221M vs $466M",
+   "margin_note": "operating loss $(52)M vs $271M; cost of revenue $4,058M vs $4,932M",
+   "segments_note": "Oilfield Services -26.1%; Oilfield Equipment +0.4%; Turbomachinery & Process Solutions -17.4%; Digital Solutions -25.9%",
+   "eps_q": -0.31,
+   "eps_q_prior": -0.02,
+   "eps_note": "Q2 2020 adjusted (non-GAAP, the release's figure excluding identified items): $(0.05) a diluted Class A share; GAAP $(0.31)",
+   "diluted_shares_m": 655.0,
+   "cash_b": 4.132,
+   "cash_note": "Cash and cash equivalents (1) | 4,132 | 3,249",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $167 million for the second quarter of 2020.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the second quarter ended at $22.9 billion, an increase of $0.2 billion from the first quarter of 2020.",
+   "next_print": "Q3 2020 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $230 million for the second quarter of 2020. Free cash flow (a non-GAAP measure) for the quarter was $63 million.",
+   "sales_b": 4.736,
+   "sales_pct": -21.0,
+   "orders_pct": -25.4,
+   "gross_margin": 14.32,
+   "gross_margin_bp": -340.2,
+   "seg_margin": 4.67,
+   "seg_margin_bp": -310.8,
+   "op_margin": -1.1,
+   "op_margin_bp": -561.9
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2020",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-10-21",
+   "source": "BK84",
+   "release": "Oct 21",
+   "release_time": "before the open on Oct 21: 8-K accepted 07:04 ET; public before that day's close",
+   "period_end": "2020-09-30",
+   "raw": {
+    "orders_m": 5106,
+    "orders_prior_m": 7783,
+    "rev_m": 5049,
+    "rev_prior_m": 5882,
+    "cor_m": 4292,
+    "cor_prior_m": 4781,
+    "segoi_m": 349,
+    "segoi_prior_m": 531,
+    "oi_m": -49,
+    "oi_prior_m": 297,
+    "ofs_m": 2308,
+    "ofs_prior_m": 3348,
+    "ofe_m": 726,
+    "ofe_prior_m": 728,
+    "tps_m": 1513,
+    "tps_prior_m": 1197,
+    "ds_m": 503,
+    "ds_prior_m": 609
+   },
+   "sales_note": "revenue $5,049M vs $5,882M",
+   "orders_note": "orders $5,106M vs $7,783M",
+   "seg_note": "total segment operating income $349M vs $531M",
+   "margin_note": "operating loss $(49)M vs $297M; cost of revenue $4,292M vs $4,781M",
+   "segments_note": "Oilfield Services -31.1%; Oilfield Equipment -0.3%; Turbomachinery & Process Solutions +26.4%; Digital Solutions -17.4%",
+   "eps_q": -0.25,
+   "eps_q_prior": 0.11,
+   "eps_note": "Q3 2020 adjusted (non-GAAP, the release's figure excluding identified items): $0.04 a diluted Class A share; GAAP $(0.25)",
+   "diluted_shares_m": 676.0,
+   "cash_b": 4.061,
+   "cash_note": "Cash and cash equivalents (1) | 4,061 | 3,249",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $167 million for the third quarter of 2020.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the third quarter ended at $23.0 billion, an increase of $0.1 billion from the second quarter of 2020.",
+   "next_print": "Q4 2020 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $219 million for the third quarter of 2020. Free cash flow (a non-GAAP measure) for the quarter was $52 million.",
+   "sales_b": 5.049,
+   "sales_pct": -14.2,
+   "orders_pct": -34.4,
+   "gross_margin": 14.99,
+   "gross_margin_bp": -372.5,
+   "seg_margin": 6.91,
+   "seg_margin_bp": -211.5,
+   "op_margin": -0.97,
+   "op_margin_bp": -602.0
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-01-21",
+   "source": "BK85",
+   "release": "Jan 21",
+   "release_time": "before the open on Jan 21: 8-K accepted 07:04 ET; public before that day's close",
+   "period_end": "2020-12-31",
+   "raw": {
+    "orders_m": 5188,
+    "orders_prior_m": 6944,
+    "rev_m": 5495,
+    "rev_prior_m": 6347,
+    "cor_m": 4486,
+    "cor_prior_m": 5052,
+    "segoi_m": 573,
+    "segoi_prior_m": 665,
+    "oi_m": 182,
+    "oi_prior_m": 331,
+    "ofs_m": 2282,
+    "ofs_prior_m": 3292,
+    "ofe_m": 712,
+    "ofe_prior_m": 765,
+    "tps_m": 1946,
+    "tps_prior_m": 1632,
+    "ds_m": 556,
+    "ds_prior_m": 659
+   },
+   "sales_note": "revenue $5,495M vs $6,347M",
+   "orders_note": "orders $5,188M vs $6,944M",
+   "seg_note": "total segment operating income $573M vs $665M",
+   "margin_note": "operating income $182M vs $331M; cost of revenue $4,486M vs $5,052M",
+   "segments_note": "Oilfield Services -30.7%; Oilfield Equipment -6.9%; Turbomachinery & Process Solutions +19.2%; Digital Solutions -15.6%",
+   "eps_q": 0.91,
+   "eps_q_prior": 0.07,
+   "eps_note": "Q4 2020 adjusted (non-GAAP, the release's figure excluding identified items): $(0.07) a diluted Class A share; GAAP $0.91",
+   "diluted_shares_m": 717.0,
+   "cash_b": 4.132,
+   "cash_note": "Cash and cash equivalents (1) | 4,132 | 3,249",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $127 million for the fourth quarter of 2020.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the fourth quarter ended at $23.4 billion, an increase of $0.4 billion from the third quarter of 2020.",
+   "next_print": "Q1 2021 print (late April)",
+   "cash_return_text": "Cash flows generated from operating activities were $378 million for the fourth quarter of 2020. Free cash flow (a non-GAAP measure) for the quarter was $250 million.",
+   "sales_b": 5.495,
+   "sales_pct": -13.4,
+   "orders_pct": -25.3,
+   "gross_margin": 18.36,
+   "gross_margin_bp": -204.1,
+   "seg_margin": 10.43,
+   "seg_margin_bp": -5.0,
+   "op_margin": 3.31,
+   "op_margin_bp": -190.3,
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": null,
+    "excluded_note": "a loss: GAAP $(14.73) per Class A share (Q4 2020 release), and no filing publishes a full-year figure excluding its items, so no P/E",
+    "revenue_usd_b": 20.705,
+    "diluted_shares_m": null,
+    "normalization_note": "FY2020 excluded: a loss of $(14.73) per Class A share, with no published full-year figure excluding its items (Q4 2020 release)",
+    "op_margin": -77.17,
+    "op_margin_note": "FY20 operating loss $(15,978)M / revenue $20,705M (Q4 2020 release)",
+    "sales_growth": -13.1,
+    "sales_note": "revenue $20,705M vs $23,838M, as reported (Q4 2020 release)",
+    "orders_pct": -23.2,
+    "orders_note": "orders $20,714M vs $26,973M, the Q4 2020 release's total-year table",
+    "check_pretax_margin": -73.42,
+    "check_pretax_note": "FY20 loss before income taxes and equity in loss of affiliate $(15,202)M / revenue $20,705M (Q4 2020 release)",
+    "tax_rate": -0.037,
+    "tax_note": "FY20 effective rate: an income tax provision of $559M on a loss before income taxes of $(15,202)M, a negative rate",
+    "groups": [
+     [
+      "Oilfield Services",
+      10140,
+      -21.3
+     ],
+     [
+      "Oilfield Equipment",
+      2844,
+      -2.6
+     ],
+     [
+      "Turbomachinery & Process Solutions",
+      5705,
+      3.1
+     ],
+     [
+      "Digital Solutions",
+      2015,
+      -19.1
+     ]
+    ],
+    "groups_basis": "FY20 segment revenue (Q4 2020 release's total-year table)"
+   }
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-04-21",
+   "source": "BK87",
+   "release": "Apr 21",
+   "release_time": "before the open on Apr 21: 8-K accepted 06:34 ET; public before that day's close",
+   "period_end": "2021-03-31",
+   "raw": {
+    "orders_m": 4541,
+    "orders_prior_m": 5532,
+    "rev_m": 4782,
+    "rev_prior_m": 5425,
+    "cor_m": 3924,
+    "cor_prior_m": 4670,
+    "segoi_m": 379,
+    "segoi_prior_m": 361,
+    "oi_m": 164,
+    "oi_prior_m": -16059,
+    "ofs_m": 2200,
+    "ofs_prior_m": 3139,
+    "ofe_m": 628,
+    "ofe_prior_m": 712,
+    "tps_m": 1485,
+    "tps_prior_m": 1085,
+    "ds_m": 470,
+    "ds_prior_m": 489
+   },
+   "sales_note": "revenue $4,782M vs $5,425M",
+   "orders_note": "orders $4,541M vs $5,532M",
+   "seg_note": "total segment operating income $379M vs $361M",
+   "margin_note": "operating income $164M vs $(16,059)M; cost of revenue $3,924M vs $4,670M",
+   "segments_note": "Oilfield Services -29.9%; Oilfield Equipment -11.8%; Turbomachinery & Process Solutions +36.9%; Digital Solutions -3.9%",
+   "eps_q": -0.61,
+   "eps_q_prior": -15.66,
+   "eps_note": "Q1 2021 adjusted (non-GAAP, the release's figure excluding identified items): $0.12 a diluted Class A share; GAAP $(0.61)",
+   "diluted_shares_m": 746.0,
+   "cash_b": 4.382,
+   "cash_note": "Cash and cash equivalents | 4,382 | 4,132",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $180 million for the first quarter of 2021.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the first quarter ended at $23.2 billion, a decrease of $0.2 billion from the fourth quarter of 2020.",
+   "next_print": "Q2 2021 print (late July)",
+   "cash_return_text": "Cash flow from operating activities was $678 million for the first quarter of 2021. Free cash flow (a non-GAAP measure) for the quarter was $498 million.",
+   "sales_b": 4.782,
+   "sales_pct": -11.9,
+   "orders_pct": -17.9,
+   "gross_margin": 17.94,
+   "gross_margin_bp": 402.5,
+   "seg_margin": 7.93,
+   "seg_margin_bp": 127.1,
+   "op_margin": 3.43,
+   "op_margin_bp": 29944.8
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-07-21",
+   "source": "BK88",
+   "release": "Jul 21",
+   "release_time": "before the open on Jul 21: 8-K accepted 07:04 ET; public before that day's close",
+   "period_end": "2021-06-30",
+   "raw": {
+    "orders_m": 5093,
+    "orders_prior_m": 4888,
+    "rev_m": 5142,
+    "rev_prior_m": 4736,
+    "cor_m": 4166,
+    "cor_prior_m": 4058,
+    "segoi_m": 444,
+    "segoi_prior_m": 221,
+    "oi_m": 194,
+    "oi_prior_m": -52,
+    "ofs_m": 2358,
+    "ofs_prior_m": 2411,
+    "ofe_m": 637,
+    "ofe_prior_m": 696,
+    "tps_m": 1628,
+    "tps_prior_m": 1161,
+    "ds_m": 520,
+    "ds_prior_m": 468
+   },
+   "sales_note": "revenue $5,142M vs $4,736M",
+   "orders_note": "orders $5,093M vs $4,888M",
+   "seg_note": "total segment operating income $444M vs $221M",
+   "margin_note": "operating income $194M vs $(52)M; cost of revenue $4,166M vs $4,058M",
+   "segments_note": "Oilfield Services -2.2%; Oilfield Equipment -8.5%; Turbomachinery & Process Solutions +40.2%; Digital Solutions +11.1%",
+   "eps_q": -0.08,
+   "eps_q_prior": -0.3,
+   "eps_note": "Q2 2021 adjusted (non-GAAP, the release's figure excluding identified items): $0.10 a diluted Class A share; GAAP $(0.08)",
+   "diluted_shares_m": 811.0,
+   "cash_b": 3.913,
+   "cash_note": "Cash and cash equivalents | 3,913 | 4,132",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $121 million for the second quarter of 2021.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the second quarter ended at $23.8 billion, an increase of $0.6 billion from the first quarter of 2021.",
+   "next_print": "Q3 2021 print (late October)",
+   "cash_return_text": "Cash flow from operating activities was $506 million for the second quarter of 2021. Free cash flow (a non-GAAP measure) for the quarter was $385 million.",
+   "sales_b": 5.142,
+   "sales_pct": 8.6,
+   "orders_pct": 4.2,
+   "gross_margin": 18.98,
+   "gross_margin_bp": 466.5,
+   "seg_margin": 8.63,
+   "seg_margin_bp": 396.8,
+   "op_margin": 3.77,
+   "op_margin_bp": 487.1
+  },
+  {
+   "era": "bhge",
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-10-20",
+   "source": "BK89",
+   "release": "Oct 20",
+   "release_time": "before the open on Oct 20: 8-K accepted 07:06 ET; public before that day's close",
+   "period_end": "2021-09-30",
+   "raw": {
+    "orders_m": 5378,
+    "orders_prior_m": 5106,
+    "rev_m": 5093,
+    "rev_prior_m": 5049,
+    "cor_m": 4083,
+    "cor_prior_m": 4292,
+    "segoi_m": 508,
+    "segoi_prior_m": 349,
+    "oi_m": 378,
+    "oi_prior_m": -49,
+    "ofs_m": 2419,
+    "ofs_prior_m": 2308,
+    "ofe_m": 603,
+    "ofe_prior_m": 726,
+    "tps_m": 1562,
+    "tps_prior_m": 1513,
+    "ds_m": 510,
+    "ds_prior_m": 503
+   },
+   "sales_note": "revenue $5,093M vs $5,049M",
+   "orders_note": "orders $5,378M vs $5,106M",
+   "seg_note": "total segment operating income $508M vs $349M",
+   "margin_note": "operating income $378M vs $(49)M; cost of revenue $4,083M vs $4,292M",
+   "segments_note": "Oilfield Services +4.8%; Oilfield Equipment -16.9%; Turbomachinery & Process Solutions +3.2%; Digital Solutions +1.4%",
+   "eps_q": 0.01,
+   "eps_q_prior": -0.25,
+   "eps_note": "Q3 2021 adjusted (non-GAAP, the release's figure excluding identified items): $0.16 a diluted Class A share; GAAP $0.01",
+   "diluted_shares_m": 857.0,
+   "cash_b": 3.926,
+   "cash_note": "Cash and cash equivalents | 3,926 | 4,132",
+   "capex_note": "Capital expenditures, net of proceeds from disposal of assets, were $111 million for the third quarter of 2021.",
+   "rpo_note": "Remaining Performance Obligations (RPO) in the third quarter ended at $23.5 billion, a decrease of $0.3 billion from the second quarter of 2021.",
+   "next_print": "Q4 2021 print (late January)",
+   "cash_return_text": "Cash flow from operating activities was $416 million for the third quarter of 2021. Free cash flow (a non-GAAP measure) for the quarter was $305 million.",
+   "sales_b": 5.093,
+   "sales_pct": 0.9,
+   "orders_pct": 5.3,
+   "gross_margin": 19.83,
+   "gross_margin_bp": 483.8,
+   "seg_margin": 9.97,
+   "seg_margin_bp": 306.2,
+   "op_margin": 7.42,
+   "op_margin_bp": 839.2
   }
  ],
  "guides": [
@@ -4293,6 +5703,15 @@
    "doc": "8-K of 2014-01-10",
    "quarter": "Q4 2013",
    "display": "As a result of the operational items highlighted above, adjusted earnings per share (a non-GAAP financial measure) are estimated to be between $0.60 and $0.62 per share for the quarter."
+  },
+  {
+   "era": "bhge",
+   "fy": 2020,
+   "published": "2020-04-13",
+   "source": "BK81",
+   "doc": "8-K of 2020-04-13",
+   "quarter": "Q1 2020",
+   "display": "The Company expects to record a non-cash goodwill impairment charge of approximately $15 billion in the first quarter of 2020. The Company has approved a plan that will result in restructuring, impairment, and other charges of approximately $1.8 billion, of which approximately $1.5 billion will be recorded in the first quarter of 2020. Approved a plan to reduce 2020 net capital expenditures by over 20% versus 2019 net capital expenditures."
   }
  ],
  "dividends": [
@@ -4310,7 +5729,13 @@
   }
  ],
  "events": [],
- "company_names": [],
+ "company_names": [
+  {
+   "published": "2019-10-18",
+   "name": "Baker Hughes Company",
+   "source": "BK77"
+  }
+ ],
  "rule_t": {
   "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'BKR'): the decade of the FY2006 10-K, the vintage public on 2008-01-04, is fiscal 1997-2006, ten year-on-year changes. Fiscal 1997 ended September 30, 1997 and fiscal 1998 is calendar 1998 (the company moved its year end to December 31 from 1998; the three-month transition period of October-December 1997 is not a fiscal year), so the 1998 change compares calendar 1998 with the year to September 1997, as the filings place them side by side. Each change comes from the latest 10-K published by 2008-01-04 that reports both years; seams stay as published (the Process segment shown as discontinued in the FY1999 10-K and restored in the FY2000 10-K, later discontinued businesses, the Western Atlas pooling). North America is the United States plus Canada in each 10-K's table of revenues by country (the releases' North America is 'United States and Canada'); outside North America is the rest. 'raw' keeps each change's two years as published.",
   "na_rev": {
@@ -5084,6 +6509,290 @@
       "revenue": 9027.4,
       "cost_of_revenues": 5782.4,
       "operating_income": 1934.3
+     }
+    }
+   }
+  }
+ },
+ "rule_t_bhge": {
+  "_doc": "Rule T values behind the thresholds of the engine for Baker Hughes, a GE company (retro/templates/bkr2_engine.py.tmpl; retro/README.md, 'BKR 2018-2021'): the annual year-on-year changes the filings public on 2019-02-01, the first date of the new company's series, report, however few (the bounds rule of method r2). Each change comes from the latest filing published by then that reports both years. GAAP as published: the results of Baker Hughes are in from July 3, 2017 only, so the 2017 and 2018 changes carry the acquisition (the house rule: an acquisition stays in growth); the 2018 changes in orders and in the segment operating margin are on the Q4 2018 release's combined business basis, the only one a filing public by then gives for both years. 'raw' keeps each change's two years as published.",
+  "orders": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2016": -26.73,
+    "2017": 55.06,
+    "2018": 9.55
+   },
+   "sources": "orders as each filing states them: BK70 (2016, with the stated decrease from 2015), BK72 (2017, with the stated increase from 2016), BK73 (2018 against 2017 on the release's combined business basis, the only filing public on 2019-02-01 that reports both years)",
+   "thresholds": {
+    "BEAR": -63,
+    "BASE": -27,
+    "BULL": 10,
+    "XBULL": 55
+   },
+   "raw": {
+    "2016": {
+     "source": "BK70",
+     "prior": {
+      "orders": 15385,
+      "derived": "$11,273 million plus the stated decrease of $4,112 million"
+     },
+     "year": {
+      "orders": 11273
+     }
+    },
+    "2017": {
+     "source": "BK72",
+     "prior": {
+      "orders": 11066,
+      "derived": "$17,159 million less the stated increase of $6,093 million"
+     },
+     "year": {
+      "orders": 17159
+     }
+    },
+    "2018": {
+     "source": "BK73",
+     "basis": "combined business basis",
+     "prior": {
+      "orders": 21821
+     },
+     "year": {
+      "orders": 23904
+     }
+    }
+   }
+  },
+  "revenue": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2015": -13.04,
+    "2016": -20.49,
+    "2017": 31.32,
+    "2018": 33.17
+   },
+   "sources": "revenue: BK70 (2015, 2016: the FY2017 10-K's selected financial data, before the new revenue standard), BK73 (2017, 2018: the Q4 2018 release's statement of income, as recast)",
+   "thresholds": {
+    "BEAR": -50,
+    "BASE": -20,
+    "BULL": 9,
+    "XBULL": 33
+   },
+   "raw": {
+    "2015": {
+     "source": "BK70",
+     "prior": {
+      "rev": 19191
+     },
+     "year": {
+      "rev": 16688
+     }
+    },
+    "2016": {
+     "source": "BK70",
+     "prior": {
+      "rev": 16688
+     },
+     "year": {
+      "rev": 13269
+     }
+    },
+    "2017": {
+     "source": "BK73",
+     "prior": {
+      "rev": 13082
+     },
+     "year": {
+      "rev": 17179
+     }
+    },
+    "2018": {
+     "source": "BK73",
+     "prior": {
+      "rev": 17179
+     },
+     "year": {
+      "rev": 22877
+     }
+    }
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2015": 122.0,
+    "2016": -322.6,
+    "2017": -474.0,
+    "2018": -24.9
+   },
+   "sources": "revenue less cost of revenue, on revenue: BK70 (2015, 2016), BK73 (2017, 2018)",
+   "thresholds": {
+    "BEAR": -770,
+    "BASE": -470,
+    "BULL": -170,
+    "XBULL": 120
+   },
+   "raw": {
+    "2015": {
+     "source": "BK70",
+     "prior": {
+      "rev": 19191,
+      "cor": 14256
+     },
+     "year": {
+      "rev": 16688,
+      "cor": 12193
+     }
+    },
+    "2016": {
+     "source": "BK70",
+     "prior": {
+      "rev": 16688,
+      "cor": 12193
+     },
+     "year": {
+      "rev": 13269,
+      "cor": 10123
+     }
+    },
+    "2017": {
+     "source": "BK73",
+     "prior": {
+      "rev": 13082,
+      "cor": 10150
+     },
+     "year": {
+      "rev": 17179,
+      "cor": 14143
+     }
+    },
+    "2018": {
+     "source": "BK73",
+     "prior": {
+      "rev": 17179,
+      "cor": 14143
+     },
+     "year": {
+      "rev": 22877,
+      "cor": 18891
+     }
+    }
+   }
+  },
+  "seg_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2016": -311.8,
+    "2017": -512.1,
+    "2018": 188.9
+   },
+   "sources": "total segment operating income on revenue: BK70 (2016), BK72 (2017, as recast), BK73 (2018 against 2017 on the release's combined business basis, the only filing public on 2019-02-01 that reports both years)",
+   "thresholds": {
+    "BEAR": -710,
+    "BASE": -510,
+    "BULL": -310,
+    "XBULL": 190
+   },
+   "raw": {
+    "2016": {
+     "source": "BK70",
+     "prior": {
+      "rev": 16688,
+      "segoi": 2691
+     },
+     "year": {
+      "rev": 13269,
+      "segoi": 1726
+     }
+    },
+    "2017": {
+     "source": "BK72",
+     "prior": {
+      "rev": 13082,
+      "segoi": 1519
+     },
+     "year": {
+      "rev": 17179,
+      "segoi": 1115
+     }
+    },
+    "2018": {
+     "source": "BK73",
+     "basis": "combined business basis",
+     "prior": {
+      "rev": 21841,
+      "segoi": 1302
+     },
+     "year": {
+      "rev": 22877,
+      "segoi": 1796
+     }
+    }
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2015": -1328.6,
+    "2016": 579.3,
+    "2017": -514.7,
+    "2018": 471.7
+   },
+   "sources": "operating income (loss) on revenue: BK70 (2015, 2016), BK73 (2017, 2018)",
+   "thresholds": {
+    "BEAR": -2640,
+    "BASE": -1330,
+    "BULL": -20,
+    "XBULL": 580
+   },
+   "raw": {
+    "2015": {
+     "source": "BK70",
+     "prior": {
+      "rev": 19191,
+      "oi": 2391
+     },
+     "year": {
+      "rev": 16688,
+      "oi": -138
+     }
+    },
+    "2016": {
+     "source": "BK70",
+     "prior": {
+      "rev": 16688,
+      "oi": -138
+     },
+     "year": {
+      "rev": 13269,
+      "oi": 659
+     }
+    },
+    "2017": {
+     "source": "BK73",
+     "prior": {
+      "rev": 13082,
+      "oi": 457
+     },
+     "year": {
+      "rev": 17179,
+      "oi": -284
+     }
+    },
+    "2018": {
+     "source": "BK73",
+     "prior": {
+      "rev": 17179,
+      "oi": -284
+     },
+     "year": {
+      "rev": 22877,
+      "oi": 701
      }
     }
    }

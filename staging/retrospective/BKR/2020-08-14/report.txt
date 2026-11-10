@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  BKR  ·  Baker Hughes Company  ·  $17.23  ·  RETROSPECTIVE as of 2020-08-14
+  Signal: ◉ BUY   Ratio B: 0.56x   Adj gap: -1.23  [OVERVALUED]
+  Point-in-time: 9 sources, latest published 2020-08-14; latest print Q2 2020 (Jul 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenues, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Oilfield Services         $    10.2  $  10.2  $  11.1      +0.0      +0.9
+    +10.9% revenues in FY19
+  Oilfield Equipment        $     2.3  $   2.3  $   2.5      +0.0      +0.2
+    +10.6% revenues in FY19
+  Turbomachinery & Process  $     4.4  $   4.4  $   4.8      +0.0      +0.4
+    -8.0% revenues in FY19
+  Digital Solutions         $     2.0  $   2.0  $   2.1      +0.0      +0.1
+    -4.3% revenues in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    18.9  $  18.9  $  20.5      +0.0      +1.6
+  FY2020E = FY19 $23.84B × (1 − 21.0%: no Q3 2020 revenue guide, Q2 2020 revenue as reported, applied to the year (no FY20 revenue guide)); split pro rata to FY19 segment revenue (FY2019 10-K)
+  Q2 2020 (Jul 22): revenue $4.74B -21.0%; orders -25.4%; gross margin 14.32% (-340.2bp);
+  segment operating margin 4.67% (-310.8bp); operating margin -1.10% (-561.9bp); EPS $(0.31) vs $(0.02)
+  Activity: orders -25.4% (orders $4,888M vs $6,554M); revenue -21.0% as reported (revenue $4,736M vs $5,994M); by segment: Oilfield Services -26.1%; Oilfield Equipment +0.4%; Turbomachinery & Process Solutions -17.4%; Digital Solutions -25.9%; total segment operating income $221M vs $466M; operating loss $(52)M vs $271M; cost of revenue $4,058M vs $4,932M; EPS Q2 2020 adjusted (non-GAAP, the release's figure excluding identified items): $(0.05) a diluted Class A share; GAAP $(0.31)
+  FY20: no guide in numbers (BASE takes Q2 2020 revenue growth); the Q2 2020 release gives no outlook in numbers
+
+  FY2020E EPS check:  $18.9B × 3.2% pre-tax × (1−64.0%) ÷ 1.027B  =  $0.21  (FY2020E: no EPS guide in numbers, FY18's $0.45 stands (FY19 is excluded: distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)))
+  FY2022E BEAR check: $18.9B × 3.2% ÷ 0.930B  =  $0.23  (scenario $0.45)
+  FY2022E BULL check: $20.5B × 3.6% ÷ 0.930B  =  $0.28  (scenario $0.32)
+  Every 1pp of pre-tax margin ≈ $0.07 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Orders                             -63.0%  ≥-27.0%   ≥10.0%   ≥55.0%    -25.4%  ◦ BASE  ██░░
+  Revenue growth                     -50.0%  ≥-20.0%    ≥9.0%   ≥33.0%    -21.0%  ⚠ BEAR  █░░░
+  Gross margin change               -770.0bp  ≥-470.0bp  ≥-170.0bp  ≥120.0bp  -340.2bp  ◦ BASE  ██░░
+  Segment operating margin change   -710.0bp  ≥-510.0bp  ≥-310.0bp  ≥190.0bp  -310.8bp  ◦ BASE  ██░░
+  Operating margin change           -2640.0bp  ≥-1330.0bp  ≥-20.0bp  ≥580.0bp  -561.9bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   3.15 / 4.00  (back-solved from $17 + 15% hurdle)
+  SCA adjustment:    +0.12  ·  EPP-distance adj +0.00  →  Adj composite 1.92  →  Gap -1.23  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenue +4.2%, orders +12.8% (orders $26,973M vs $23,904M (FY2019 10-K)); Q2 segment operating margin 4.67% (-311bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 38.3x FY20E vs a 59.5x 2.6-yr ex-FY17 ex-FY19 median (27th percentile of its own range)  (+0.38 × 25%  =  +0.095)
+    -  Growth vs own history: no Q3 2020 revenue guide, Q2 2020 revenue as reported -21% vs a 4.2% 5-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and cash equivalents $4.13B, FY19 free cash flow $1.15B, dividend $0.72 a year, $250M of common units from GE repurchased and $395M of dividends paid in FY19  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Orders                              -25.4%    -63.0%  -37.6%  Customers defer equipment and service…
+  Revenue growth                      -21.0%    -50.0%  -29.0%  Customers cut drilling and project bu…
+  Gross margin change               -340.2bp  -770.0bp  -429.8bp  Pricing falls faster than costs
+  Segment operating margin change   -310.8bp  -710.0bp  -399.2bp  Mix and productivity turn against the…
+  Operating margin change           -561.9bp  -2640.0bp  -2078.1bp  Charges and fixed costs as activity f…
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers oilfi…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$16  (model)  /  $14 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: orders went from -2.8% (Q1 2020) to -25.4% (Q2 2020);
+  the bear case needs customers' spending to fall far enough that revenue (-21.0% now)
+  and the segment operating margin (-310.8bp now) give way. Customers' spending drives revenue, by the company's own account; the bear needs
+  that spending to fall, not only one quarter's orders.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.45  (FY2020E: no EPS guide in numbers, FY18's $0.45 stands (FY19 is excluded: distorted: identified items attributable to the company of $345M exceed its $128M of net income (GAAP $0.23 a share), and no filing publishes a full-year figure excluding them (the releases give adjusted EPS by quarter only)))
+  Min viable P/E at panic:          33x  [median of calendar-year P/E lows: 2018 45.5x, 2020 20.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $15/share
+  Current $17 vs Updated EPP $15:  +16%  moderate distance to floor
+  Bear $14 vs Updated EPP $15:  -6%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Orders                                     -27.0       -1.6   BASE floor (vs -25 now)
+  Revenue growth                             -20.0       +1.0   BASE floor (vs -21 now)
+  Gross margin change                       -470.0     -129.8   BASE floor (vs -340 now)
+  Segment operating margin change           -510.0     -199.2   BASE floor (vs -311 now)
+  Operating margin change                  -1330.0     -768.1   BASE floor (vs -562 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.45 × (1+0.0%)² = $0.45
+  At 59x P/E (conservative):  $27/share
+  + Cumul. dividends (2yr):  +$1.48/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $27  (▲9 from $17)
+  Conservative total return:  +63% over 2yr  = +31%/yr
+
+  At 38.3x the multiple is already near its 59x median, so the conservative
+  case is a growth question: breakeven at 59x needs FY2022E EPS of $0.27,
+  i.e. -23.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $9.12  –  $25.99  (at 48th pct of range)
+  Annual dividend:      $0.72/share  (yield 4.2%)
+  Realized vol (1yr):   67% annualized
+  Beta vs broad market: 1.49
+  1-sigma range (1yr):  $6  –  $29  ($17 ± 67%)
+  2-sigma range (1yr):  $-6  –  $40
+  ────────────────────────────────────────────────────────────
+  Bear $14 requires:  ~0.3σ price move  (within normal vol range)
+  An energy technology company, in its own words, with a 1.5 beta: the stock is +85% off its March
+  low while orders went from -2.8% (Q1 2020) to -25.4% (Q2 2020).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.45  31.0x  $     14    29.4%      3.9%   +25.5pp  Flat EPS (no EPS change in FY18-FY18 to measure: the 0% cap); P/E to its 10th pct
+  BASE        0.32  59.5x  $     19    52.7%     13.7%   +38.9pp  EPS -16.2%/yr (Q2 revenue + margin + buyback); P/E at its 2.6-yr ex-FY17 ex-FY19 median
+  BULL        0.32  72.7x  $     23    15.1%     48.0%   -32.9pp  EPS -16.2%/yr (no FY18-FY18 CAGR to measure: BASE's rate); P/E holds its 75th pct
+  XBULL       0.32  77.1x  $     25     2.9%     34.4%   -31.5pp  EPS -16.2%/yr (no 2-yr run in FY18-FY18: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $18  /  Market EV: $23  /  Current: $17
+  Conservative EV (2yr, ④): $27 + $1.48 divs = $28 total value
+  Downside (→ Bear $14): 18.7%   Upside (→ Bull $23): 33.5%   Ratio B 0.56x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $17 the market needs $23 in two years —
+  between the BASE and BULL cases. That is a market composite of 3.15 against a model
+  read of 1.92: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.56x     +16%    -1.23  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.03x     +16%    -0.25  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.39x     +16%    -1.88  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.48x     +16%    -0.81  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.56x     +16%    -1.46  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.56x     +16%    -0.93  OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.56x      +6%    -1.23  OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.56x     +16%    -0.53  OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2020 print (late October) — the next read on orders (-25.4% now); no revenue or EPS guide to read it against
+  (2) Segment operating margin — -310.8bp in Q2 2020: pricing, mix and productivity against costs
+  (3) A FY20 guide — none in numbers: no filing guides EPS, revenue or a margin; the Q2 2020 release on the work in hand: 'Remaining Performance Obligations (RPO) in the second quarter ended at $22.9 billion, an increase of $0.2 billion from the first quarter of 2020.'
+  (4) Capital expenditures — Capital expenditures, net of proceeds from disposal of assets, were $167 million for the second quarter of 2020.
+  (5) Capital return at 38x — Cash flow from operating activities was $230 million for the second quarter of 2020. Free cash flow (a non-GAAP measure) for the quarter was $63 million.: management's own read of the multiple
+  ◉ BUY  |  EPP floor $15  |  ADD below ~$16  |  TRIM above $23
+════════════════════════════════════════════════════════════════════════
+

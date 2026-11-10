@@ -41,7 +41,8 @@ percentages, the display, note and words fields), a later range for every quarte
 occupancy, raw figures and full-year actuals are absurd; BKR: a print whose regional revenues, margins, outlook, rig-count note, raw
 figures, pro forma table, basis note and full-year actuals are absurd and whose actuals restate every year, and a later display-only
 outlook for every quarter an 8-K guides and the two after the last print, and a later vintage excluding a year (the guide and dividend
-every fact sheet with a 'guides' list gets, too); every
+every fact sheet with a 'guides' list gets, too), and from the 2017 listing of Baker Hughes, a GE company the same in the new company's
+own fields (orders, the segment margin, the work in hand; "era" on the planted print, guides and dividend; BKR 2018-2021); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -209,7 +210,19 @@ try:
     last = copy.deepcopy(max(f["prints"], key=lambda p: p["published"] if p["published"] < cutoff else ""))
     last.pop("fy_actual", None)
     last.pop("servings_later", None)
+    own = set(last)
     last.update(published=later, **PLANT)
+    if TICKER == "BKR" and last.get("era"):   # the company listed in 2017: the planted print keeps only that company's fields, absurd
+        for k in set(last) - own:
+            del last[k]
+        last.update(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, orders_pct=-60.0, gross_margin=1.0,
+                    gross_margin_bp=-999.0, seg_margin=1.0, seg_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0, eps_q=0.01,
+                    eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, cash_note="PLANTED", capex_note="PLANTED",
+                    rpo_note="PLANTED", next_print="PLANTED", cash_return_text="PLANTED", sales_note="PLANTED", orders_note="PLANTED",
+                    seg_note="PLANTED", margin_note="PLANTED", segments_note="PLANTED", period_end="PLANTED", basis_note="PLANTED",
+                    raw=dict(orders_m=1, orders_prior_m=99, rev_m=4, rev_prior_m=400, cor_m=4, cor_prior_m=1, segoi_m=-99, segoi_prior_m=99,
+                             oi_m=-99, oi_prior_m=99, ofs_m=1, ofs_prior_m=100, ofe_m=1, ofe_prior_m=100, tps_m=1, tps_prior_m=100,
+                             ds_m=1, ds_prior_m=100))
     f["prints"].append(last)
     if "guides" in f:      # a guide for every fiscal year in the fact sheet, and a dividend
         for y in {g["fy"] for g in f["guides"]} | {2099}:
@@ -309,6 +322,10 @@ try:
                   check_pretax_note="PLANTED", tax_rate=0.99, tax_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED")
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         fa["restates"] = {y: 0.01 for y in v0["eps_normalized"]}          # and a restatement of every year (BKR 2010-2013)
+        if last.get("era"):    # the company listed in 2017: its own full-year fields (BKR 2018-2021)
+            for k in ("na_pct", "na_note", "restates", "one_off_test"):
+                fa.pop(k, None)
+            fa.update(orders_pct=-99.0, orders_note="PLANTED", sales_note="PLANTED")
         last["fy_actual"] = fa
         # a later display-only outlook for every quarter an 8-K guides, and for the quarters after the last print before CUTOFF
         p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
@@ -316,6 +333,10 @@ try:
         for q in sorted({g["quarter"] for g in f["guides"] if "quarter" in g} | set(nxt)):
             f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED", "quarter": q,
                                 "display": "PLANTED"})
+        if last.get("era"):    # the planted guides and dividend belong to the company listed in 2017
+            for x in f["guides"] + f["dividends"]:
+                if x["published"] == later:
+                    x["era"] = last["era"]
     if TICKER == "WMT":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
                            # wins): a later guide may never reach an earlier date
         for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):
