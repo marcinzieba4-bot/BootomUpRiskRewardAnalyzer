@@ -68929,7 +68929,20 @@
    "cons_return_2yr": 3.5,
    "path": "staging/retrospective/BKR/2014-01-03",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.6,
+    "tr_1y": 6.0,
+    "tr_2y": -11.4,
+    "tr_3y": 25.1,
+    "excess_6m": 31.3,
+    "excess_1y": -8.4,
+    "excess_2y": -27.3,
+    "excess_3y": -5.0,
+    "avg_m12_m24": 8.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -68948,7 +68961,20 @@
    "cons_return_2yr": 4.5,
    "path": "staging/retrospective/BKR/2014-01-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.9,
+    "tr_1y": 7.6,
+    "tr_2y": -19.1,
+    "tr_3y": 21.3,
+    "excess_6m": 31.3,
+    "excess_1y": -5.4,
+    "excess_2y": -27.7,
+    "excess_3y": -8.5,
+    "avg_m12_m24": 9.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -68967,7 +68993,20 @@
    "cons_return_2yr": 2.5,
    "path": "staging/retrospective/BKR/2014-01-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.5,
+    "tr_1y": 5.7,
+    "tr_2y": -23.9,
+    "tr_3y": 18.0,
+    "excess_6m": 27.0,
+    "excess_1y": -6.2,
+    "excess_2y": -30.5,
+    "excess_3y": -12.0,
+    "avg_m12_m24": 6.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -68986,7 +69025,20 @@
    "cons_return_2yr": -5.8,
    "path": "staging/retrospective/BKR/2014-01-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.1,
+    "tr_1y": 3.6,
+    "tr_2y": -23.6,
+    "tr_3y": 12.7,
+    "excess_6m": 23.6,
+    "excess_1y": -10.3,
+    "excess_2y": -31.4,
+    "excess_3y": -17.2,
+    "avg_m12_m24": 1.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69005,7 +69057,20 @@
    "cons_return_2yr": -5.6,
    "path": "staging/retrospective/BKR/2014-01-31",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.3,
+    "tr_1y": 3.2,
+    "tr_2y": -21.1,
+    "tr_3y": 12.4,
+    "excess_6m": 13.7,
+    "excess_1y": -10.8,
+    "excess_2y": -34.4,
+    "excess_3y": -22.4,
+    "avg_m12_m24": 0.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69024,7 +69089,20 @@
    "cons_return_2yr": -10.1,
    "path": "staging/retrospective/BKR/2014-02-07",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.1,
+    "tr_1y": 6.1,
+    "tr_2y": -22.7,
+    "tr_3y": 6.5,
+    "excess_6m": 6.8,
+    "excess_1y": -10.4,
+    "excess_2y": -31.7,
+    "excess_3y": -27.9,
+    "avg_m12_m24": -4.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69043,7 +69121,20 @@
    "cons_return_2yr": -10.9,
    "path": "staging/retrospective/BKR/2014-02-14",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.5,
+    "tr_1y": 8.6,
+    "tr_2y": -31.2,
+    "tr_3y": 6.4,
+    "excess_6m": 5.2,
+    "excess_1y": -7.5,
+    "excess_2y": -37.0,
+    "excess_3y": -27.4,
+    "avg_m12_m24": -5.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69062,7 +69153,20 @@
    "cons_return_2yr": -12.9,
    "path": "staging/retrospective/BKR/2014-02-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.1,
+    "tr_1y": 4.9,
+    "tr_2y": -29.0,
+    "tr_3y": 2.5,
+    "excess_6m": 3.6,
+    "excess_1y": -12.1,
+    "excess_2y": -37.8,
+    "excess_3y": -32.9,
+    "avg_m12_m24": -8.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69081,7 +69185,20 @@
    "cons_return_2yr": -16.0,
    "path": "staging/retrospective/BKR/2014-02-28",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.9,
+    "tr_1y": -0.4,
+    "tr_2y": -28.2,
+    "tr_3y": -1.5,
+    "excess_6m": 1.5,
+    "excess_1y": -15.6,
+    "excess_2y": -37.3,
+    "excess_3y": -35.2,
+    "avg_m12_m24": -12.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69100,7 +69217,20 @@
    "cons_return_2yr": -16.0,
    "path": "staging/retrospective/BKR/2014-03-07",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.7,
+    "tr_1y": -2.7,
+    "tr_2y": -24.3,
+    "tr_3y": -3.0,
+    "excess_6m": 1.0,
+    "excess_1y": -15.0,
+    "excess_2y": -35.1,
+    "excess_3y": -35.5,
+    "avg_m12_m24": -13.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69119,7 +69249,20 @@
    "cons_return_2yr": -14.0,
    "path": "staging/retrospective/BKR/2014-03-14",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.1,
+    "tr_1y": -3.7,
+    "tr_2y": -26.8,
+    "tr_3y": -5.4,
+    "excess_6m": -0.7,
+    "excess_1y": -17.2,
+    "excess_2y": -40.8,
+    "excess_3y": -40.5,
+    "avg_m12_m24": -11.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69138,7 +69281,20 @@
    "cons_return_2yr": -14.4,
    "path": "staging/retrospective/BKR/2014-03-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.6,
+    "tr_1y": 1.6,
+    "tr_2y": -22.1,
+    "tr_3y": 0.2,
+    "excess_6m": 0.8,
+    "excess_1y": -13.5,
+    "excess_2y": -36.5,
+    "excess_3y": -32.2,
+    "avg_m12_m24": -12.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69157,7 +69313,20 @@
    "cons_return_2yr": -18.5,
    "path": "staging/retrospective/BKR/2014-03-28",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.1,
+    "tr_1y": -2.8,
+    "tr_2y": -30.7,
+    "tr_3y": -6.4,
+    "excess_6m": -5.6,
+    "excess_1y": -15.8,
+    "excess_2y": -44.8,
+    "excess_3y": -40.2,
+    "avg_m12_m24": -17.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69176,7 +69345,20 @@
    "cons_return_2yr": -19.0,
    "path": "staging/retrospective/BKR/2014-04-04",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.6,
+    "tr_1y": -1.9,
+    "tr_2y": -34.8,
+    "tr_3y": -5.3,
+    "excess_6m": -12.0,
+    "excess_1y": -14.8,
+    "excess_2y": -49.9,
+    "excess_3y": -38.5,
+    "avg_m12_m24": -18.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69195,7 +69377,20 @@
    "cons_return_2yr": -16.1,
    "path": "staging/retrospective/BKR/2014-04-11",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.1,
+    "tr_1y": 6.0,
+    "tr_2y": -32.0,
+    "tr_3y": -0.8,
+    "excess_6m": -16.1,
+    "excess_1y": -11.8,
+    "excess_2y": -49.0,
+    "excess_3y": -37.3,
+    "avg_m12_m24": -15.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69214,7 +69409,20 @@
    "cons_return_2yr": -22.8,
    "path": "staging/retrospective/BKR/2014-04-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -21.8,
+    "tr_1y": -1.0,
+    "tr_2y": -33.9,
+    "tr_3y": -9.8,
+    "excess_6m": -23.9,
+    "excess_1y": -14.7,
+    "excess_2y": -49.8,
+    "excess_3y": -42.5,
+    "avg_m12_m24": -22.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69233,7 +69441,20 @@
    "cons_return_2yr": -24.3,
    "path": "staging/retrospective/BKR/2014-04-25",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.8,
+    "tr_1y": -1.3,
+    "tr_2y": -33.4,
+    "tr_3y": -12.0,
+    "excess_6m": -29.2,
+    "excess_1y": -17.1,
+    "excess_2y": -49.9,
+    "excess_3y": -46.9,
+    "avg_m12_m24": -24.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69252,7 +69473,20 @@
    "cons_return_2yr": -24.3,
    "path": "staging/retrospective/BKR/2014-05-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.5,
+    "tr_1y": -0.2,
+    "tr_2y": -30.3,
+    "tr_3y": -11.8,
+    "excess_6m": -31.7,
+    "excess_1y": -14.4,
+    "excess_2y": -45.3,
+    "excess_3y": -45.6,
+    "avg_m12_m24": -25.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69271,7 +69505,20 @@
    "cons_return_2yr": -23.1,
    "path": "staging/retrospective/BKR/2014-05-09",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.6,
+    "tr_1y": -1.0,
+    "tr_2y": -34.0,
+    "tr_3y": -12.0,
+    "excess_6m": -32.8,
+    "excess_1y": -15.7,
+    "excess_2y": -48.0,
+    "excess_3y": -46.2,
+    "avg_m12_m24": -25.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69290,7 +69537,20 @@
    "cons_return_2yr": -23.1,
    "path": "staging/retrospective/BKR/2014-05-16",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.5,
+    "tr_1y": -3.6,
+    "tr_2y": -31.6,
+    "tr_3y": -13.5,
+    "excess_6m": -22.1,
+    "excess_1y": -18.6,
+    "excess_2y": -46.0,
+    "excess_3y": -48.0,
+    "avg_m12_m24": -25.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69309,7 +69569,20 @@
    "cons_return_2yr": -24.4,
    "path": "staging/retrospective/BKR/2014-05-23",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.5,
+    "tr_1y": -5.6,
+    "tr_2y": -34.2,
+    "tr_3y": -14.7,
+    "excess_6m": -15.0,
+    "excess_1y": -19.6,
+    "excess_2y": -46.3,
+    "excess_3y": -47.5,
+    "avg_m12_m24": -27.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69328,7 +69601,20 @@
    "cons_return_2yr": -24.9,
    "path": "staging/retrospective/BKR/2014-05-30",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.7,
+    "tr_1y": -7.9,
+    "tr_2y": -32.8,
+    "tr_3y": -19.0,
+    "excess_6m": -27.2,
+    "excess_1y": -19.5,
+    "excess_2y": -46.2,
+    "excess_3y": -51.0,
+    "avg_m12_m24": -28.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69347,7 +69633,20 @@
    "cons_return_2yr": -26.5,
    "path": "staging/retrospective/BKR/2014-06-06",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.3,
+    "tr_1y": -9.2,
+    "tr_2y": -29.3,
+    "tr_3y": -19.9,
+    "excess_6m": -27.8,
+    "excess_1y": -18.6,
+    "excess_2y": -41.7,
+    "excess_3y": -51.0,
+    "avg_m12_m24": -30.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69366,7 +69665,20 @@
    "cons_return_2yr": -25.6,
    "path": "staging/retrospective/BKR/2014-06-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.2,
+    "tr_1y": -8.9,
+    "tr_2y": -34.1,
+    "tr_3y": -16.9,
+    "excess_6m": -26.7,
+    "excess_1y": -19.1,
+    "excess_2y": -45.8,
+    "excess_3y": -49.5,
+    "avg_m12_m24": -30.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69385,7 +69697,20 @@
    "cons_return_2yr": -29.1,
    "path": "staging/retrospective/BKR/2014-06-20",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.0,
+    "tr_1y": -16.1,
+    "tr_2y": -36.7,
+    "tr_3y": -22.9,
+    "excess_6m": -29.4,
+    "excess_1y": -25.8,
+    "excess_2y": -47.1,
+    "excess_3y": -53.6,
+    "avg_m12_m24": -33.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69404,7 +69729,20 @@
    "cons_return_2yr": -28.4,
    "path": "staging/retrospective/BKR/2014-06-27",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.4,
+    "tr_1y": -15.4,
+    "tr_2y": -41.3,
+    "tr_3y": -25.1,
+    "excess_6m": -30.9,
+    "excess_1y": -24.6,
+    "excess_2y": -47.5,
+    "excess_3y": -55.0,
+    "avg_m12_m24": -33.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69423,7 +69761,20 @@
    "cons_return_2yr": -29.5,
    "path": "staging/retrospective/BKR/2014-07-03",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.7,
+    "tr_1y": -18.7,
+    "tr_2y": -37.1,
+    "tr_3y": -20.4,
+    "excess_6m": -29.4,
+    "excess_1y": -25.3,
+    "excess_2y": -47.3,
+    "excess_3y": -49.2,
+    "avg_m12_m24": -34.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69442,7 +69793,20 @@
    "cons_return_2yr": -27.2,
    "path": "staging/retrospective/BKR/2014-07-11",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -21.9,
+    "tr_1y": -16.9,
+    "tr_2y": -38.2,
+    "tr_3y": -21.7,
+    "excess_6m": -26.8,
+    "excess_1y": -24.5,
+    "excess_2y": -51.0,
+    "excess_3y": -51.6,
+    "avg_m12_m24": -33.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69461,7 +69825,20 @@
    "cons_return_2yr": -29.6,
    "path": "staging/retrospective/BKR/2014-07-18",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.4,
+    "tr_1y": -19.5,
+    "tr_2y": -34.2,
+    "tr_3y": -23.2,
+    "excess_6m": -25.4,
+    "excess_1y": -29.0,
+    "excess_2y": -47.9,
+    "excess_3y": -54.0,
+    "avg_m12_m24": -34.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69480,7 +69857,20 @@
    "cons_return_2yr": -29.8,
    "path": "staging/retrospective/BKR/2014-07-25",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.0,
+    "tr_1y": -19.2,
+    "tr_2y": -38.6,
+    "tr_3y": -25.4,
+    "excess_6m": -24.7,
+    "excess_1y": -26.4,
+    "excess_2y": -52.4,
+    "excess_3y": -57.1,
+    "avg_m12_m24": -34.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69499,7 +69889,20 @@
    "cons_return_2yr": -24.7,
    "path": "staging/retrospective/BKR/2014-08-01",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.1,
+    "tr_1y": -14.4,
+    "tr_2y": -31.5,
+    "tr_3y": -19.6,
+    "excess_6m": -19.8,
+    "excess_1y": -25.8,
+    "excess_2y": -48.5,
+    "excess_3y": -54.9,
+    "avg_m12_m24": -30.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69518,7 +69921,20 @@
    "cons_return_2yr": -24.5,
    "path": "staging/retrospective/BKR/2014-08-08",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.0,
+    "tr_1y": -17.7,
+    "tr_2y": -27.8,
+    "tr_3y": -20.5,
+    "excess_6m": -15.5,
+    "excess_1y": -27.4,
+    "excess_2y": -45.0,
+    "excess_3y": -55.2,
+    "avg_m12_m24": -30.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69537,7 +69953,20 @@
    "cons_return_2yr": -23.8,
    "path": "staging/retrospective/BKR/2014-08-15",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.7,
+    "tr_1y": -14.5,
+    "tr_2y": -23.1,
+    "tr_3y": -20.4,
+    "excess_6m": -12.9,
+    "excess_1y": -23.6,
+    "excess_2y": -39.4,
+    "excess_3y": -53.0,
+    "avg_m12_m24": -30.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69556,7 +69985,20 @@
    "cons_return_2yr": -24.3,
    "path": "staging/retrospective/BKR/2014-08-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.5,
+    "tr_1y": -26.5,
+    "tr_2y": -21.9,
+    "tr_3y": -23.3,
+    "excess_6m": -13.6,
+    "excess_1y": -27.9,
+    "excess_2y": -35.8,
+    "excess_3y": -53.0,
+    "avg_m12_m24": -30.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69575,7 +70017,20 @@
    "cons_return_2yr": -25.4,
    "path": "staging/retrospective/BKR/2014-08-29",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.3,
+    "tr_1y": -20.1,
+    "tr_2y": -24.8,
+    "tr_3y": -22.9,
+    "excess_6m": -15.3,
+    "excess_1y": -21.4,
+    "excess_2y": -37.8,
+    "excess_3y": -51.4,
+    "avg_m12_m24": -31.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69594,7 +70049,20 @@
    "cons_return_2yr": -24.7,
    "path": "staging/retrospective/BKR/2014-09-05",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.9,
+    "tr_1y": -21.3,
+    "tr_2y": -25.4,
+    "tr_3y": -20.4,
+    "excess_6m": -14.5,
+    "excess_1y": -19.0,
+    "excess_2y": -38.1,
+    "excess_3y": -49.3,
+    "avg_m12_m24": -31.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69613,7 +70081,20 @@
    "cons_return_2yr": -22.4,
    "path": "staging/retrospective/BKR/2014-09-12",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.7,
+    "tr_1y": -19.1,
+    "tr_2y": -23.2,
+    "tr_3y": -16.5,
+    "excess_6m": -14.7,
+    "excess_1y": -20.0,
+    "excess_2y": -36.1,
+    "excess_3y": -48.6,
+    "avg_m12_m24": -29.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69632,7 +70113,20 @@
    "cons_return_2yr": -23.9,
    "path": "staging/retrospective/BKR/2014-09-19",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.6,
+    "tr_1y": -20.1,
+    "tr_2y": -26.4,
+    "tr_3y": -16.0,
+    "excess_6m": -14.5,
+    "excess_1y": -19.5,
+    "excess_2y": -37.0,
+    "excess_3y": -47.1,
+    "avg_m12_m24": -30.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69651,7 +70145,20 @@
    "cons_return_2yr": -22.3,
    "path": "staging/retrospective/BKR/2014-09-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.8,
+    "tr_1y": -19.8,
+    "tr_2y": -23.8,
+    "tr_3y": -14.7,
+    "excess_6m": -9.5,
+    "excess_1y": -19.4,
+    "excess_2y": -36.4,
+    "excess_3y": -47.3,
+    "avg_m12_m24": -29.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69670,7 +70177,20 @@
    "cons_return_2yr": -16.4,
    "path": "staging/retrospective/BKR/2014-10-03",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.9,
+    "tr_1y": -12.4,
+    "tr_2y": -16.7,
+    "tr_3y": -8.9,
+    "excess_6m": -2.2,
+    "excess_1y": -13.7,
+    "excess_2y": -30.8,
+    "excess_3y": -44.3,
+    "avg_m12_m24": -23.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69689,7 +70209,20 @@
    "cons_return_2yr": -9.0,
    "path": "staging/retrospective/BKR/2014-10-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.0,
+    "tr_1y": 0.8,
+    "tr_2y": -3.5,
+    "tr_3y": -3.8,
+    "excess_6m": 6.7,
+    "excess_1y": -7.1,
+    "excess_2y": -21.4,
+    "excess_3y": -44.5,
+    "avg_m12_m24": -17.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69708,7 +70241,20 @@
    "cons_return_2yr": -3.3,
    "path": "staging/retrospective/BKR/2014-10-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.7,
+    "tr_1y": 2.6,
+    "tr_2y": -0.8,
+    "tr_3y": 0.4,
+    "excess_6m": 15.3,
+    "excess_1y": -7.4,
+    "excess_2y": -18.0,
+    "excess_3y": -42.2,
+    "avg_m12_m24": -11.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69727,7 +70273,20 @@
    "cons_return_2yr": -4.0,
    "path": "staging/retrospective/BKR/2014-10-24",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.9,
+    "tr_1y": 2.1,
+    "tr_2y": 0.0,
+    "tr_3y": -6.1,
+    "excess_6m": 19.1,
+    "excess_1y": -5.6,
+    "excess_2y": -13.7,
+    "excess_3y": -43.5,
+    "avg_m12_m24": -12.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69746,7 +70305,20 @@
    "cons_return_2yr": -3.0,
    "path": "staging/retrospective/BKR/2014-10-31",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.6,
+    "tr_1y": 0.4,
+    "tr_2y": 13.9,
+    "tr_3y": -3.9,
+    "excess_6m": 25.2,
+    "excess_1y": -4.7,
+    "excess_2y": 4.2,
+    "excess_3y": -37.9,
+    "avg_m12_m24": -11.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69765,7 +70337,20 @@
    "cons_return_2yr": -1.8,
    "path": "staging/retrospective/BKR/2014-11-07",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.7,
+    "tr_1y": 0.6,
+    "tr_2y": 14.9,
+    "tr_3y": 1.2,
+    "excess_6m": 23.0,
+    "excess_1y": -4.8,
+    "excess_2y": 5.8,
+    "excess_3y": -32.5,
+    "avg_m12_m24": -10.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69784,7 +70369,20 @@
    "cons_return_2yr": -14.2,
    "path": "staging/retrospective/BKR/2014-11-14",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.7,
+    "tr_1y": -19.6,
+    "tr_2y": 0.8,
+    "tr_3y": -16.4,
+    "excess_6m": 4.7,
+    "excess_1y": -20.8,
+    "excess_2y": -9.5,
+    "excess_3y": -49.1,
+    "avg_m12_m24": -21.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69803,7 +70401,20 @@
    "cons_return_2yr": -22.0,
    "path": "staging/retrospective/BKR/2014-11-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.3,
+    "tr_1y": -21.7,
+    "tr_2y": -3.7,
+    "tr_3y": -23.7,
+    "excess_6m": -4.0,
+    "excess_1y": -25.0,
+    "excess_2y": -14.4,
+    "excess_3y": -56.0,
+    "avg_m12_m24": -28.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69822,7 +70433,20 @@
    "cons_return_2yr": -9.9,
    "path": "staging/retrospective/BKR/2014-11-28",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.5,
+    "tr_1y": -6.5,
+    "tr_2y": 9.9,
+    "tr_3y": -12.9,
+    "excess_6m": 10.0,
+    "excess_1y": -9.6,
+    "excess_2y": -0.7,
+    "excess_3y": -46.2,
+    "avg_m12_m24": -16.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69841,7 +70465,20 @@
    "cons_return_2yr": -9.9,
    "path": "staging/retrospective/BKR/2014-12-05",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.0,
+    "tr_1y": -6.5,
+    "tr_2y": 18.7,
+    "tr_3y": -11.7,
+    "excess_6m": 12.2,
+    "excess_1y": -9.3,
+    "excess_2y": 8.3,
+    "excess_3y": -44.6,
+    "avg_m12_m24": -16.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69860,7 +70497,20 @@
    "cons_return_2yr": -6.6,
    "path": "staging/retrospective/BKR/2014-12-12",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.2,
+    "tr_1y": -11.8,
+    "tr_2y": 23.1,
+    "tr_3y": -8.2,
+    "excess_6m": 11.7,
+    "excess_1y": -14.4,
+    "excess_2y": 6.2,
+    "excess_3y": -47.6,
+    "avg_m12_m24": -12.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69879,7 +70529,20 @@
    "cons_return_2yr": -10.1,
    "path": "staging/retrospective/BKR/2014-12-19",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.0,
+    "tr_1y": -22.0,
+    "tr_2y": 17.4,
+    "tr_3y": -10.1,
+    "excess_6m": 5.9,
+    "excess_1y": -20.8,
+    "excess_2y": 4.0,
+    "excess_3y": -46.0,
+    "avg_m12_m24": -15.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69898,7 +70561,20 @@
    "cons_return_2yr": -8.8,
    "path": "staging/retrospective/BKR/2014-12-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.5,
+    "tr_1y": -14.1,
+    "tr_2y": 17.7,
+    "tr_3y": -8.4,
+    "excess_6m": 8.9,
+    "excess_1y": -14.8,
+    "excess_2y": 5.2,
+    "excess_3y": -43.1,
+    "avg_m12_m24": -13.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69917,7 +70593,20 @@
    "cons_return_2yr": -8.5,
    "path": "staging/retrospective/BKR/2015-01-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.0,
+    "tr_1y": -16.6,
+    "tr_2y": 18.1,
+    "tr_3y": -7.8,
+    "excess_6m": 6.2,
+    "excess_1y": -17.9,
+    "excess_2y": 5.0,
+    "excess_3y": -45.2,
+    "avg_m12_m24": -12.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69936,7 +70625,20 @@
    "cons_return_2yr": -9.0,
    "path": "staging/retrospective/BKR/2015-01-09",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.1,
+    "tr_1y": -25.2,
+    "tr_2y": 14.4,
+    "tr_3y": -3.3,
+    "excess_6m": 5.8,
+    "excess_1y": -21.2,
+    "excess_2y": -0.8,
+    "excess_3y": -44.4,
+    "avg_m12_m24": -12.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69955,7 +70657,20 @@
    "cons_return_2yr": -9.2,
    "path": "staging/retrospective/BKR/2015-01-16",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.7,
+    "tr_1y": -28.3,
+    "tr_2y": 10.1,
+    "tr_3y": -1.3,
+    "excess_6m": -1.6,
+    "excess_1y": -23.5,
+    "excess_2y": -6.8,
+    "excess_3y": -45.4,
+    "avg_m12_m24": -11.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -69974,7 +70689,20 @@
    "cons_return_2yr": 47.3,
    "path": "staging/retrospective/BKR/2015-01-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.5,
+    "tr_1y": -29.0,
+    "tr_2y": 8.6,
+    "tr_3y": -6.9,
+    "excess_6m": -0.7,
+    "excess_1y": -23.0,
+    "excess_2y": -7.4,
+    "excess_3y": -51.7,
+    "avg_m12_m24": -14.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -69993,7 +70721,20 @@
    "cons_return_2yr": 48.2,
    "path": "staging/retrospective/BKR/2015-01-30",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.8,
+    "tr_1y": -23.8,
+    "tr_2y": 8.9,
+    "tr_3y": -11.3,
+    "excess_6m": -4.9,
+    "excess_1y": -23.0,
+    "excess_2y": -9.5,
+    "excess_3y": -59.4,
+    "avg_m12_m24": -12.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70012,7 +70753,20 @@
    "cons_return_2yr": 37.1,
    "path": "staging/retrospective/BKR/2015-02-06",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.2,
+    "tr_1y": -27.3,
+    "tr_2y": 0.9,
+    "tr_3y": -21.9,
+    "excess_6m": -11.5,
+    "excess_1y": -20.8,
+    "excess_2y": -14.8,
+    "excess_3y": -59.4,
+    "avg_m12_m24": -18.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70031,7 +70785,20 @@
    "cons_return_2yr": 33.6,
    "path": "staging/retrospective/BKR/2015-02-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.0,
+    "tr_1y": -36.9,
+    "tr_2y": -2.7,
+    "tr_3y": -29.0,
+    "excess_6m": -11.4,
+    "excess_1y": -27.9,
+    "excess_2y": -17.8,
+    "excess_3y": -62.2,
+    "avg_m12_m24": -20.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70050,7 +70817,20 @@
    "cons_return_2yr": 35.3,
    "path": "staging/retrospective/BKR/2015-02-20",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.6,
+    "tr_1y": -32.6,
+    "tr_2y": -1.9,
+    "tr_3y": -27.3,
+    "excess_6m": -16.1,
+    "excess_1y": -25.4,
+    "excess_2y": -17.3,
+    "excess_3y": -62.2,
+    "avg_m12_m24": -18.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70069,7 +70849,20 @@
    "cons_return_2yr": 37.2,
    "path": "staging/retrospective/BKR/2015-02-27",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.5,
+    "tr_1y": -28.1,
+    "tr_2y": -1.2,
+    "tr_3y": -25.2,
+    "excess_6m": -9.0,
+    "excess_1y": -22.7,
+    "excess_2y": -17.9,
+    "excess_3y": -61.9,
+    "avg_m12_m24": -16.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70088,7 +70881,20 @@
    "cons_return_2yr": 40.8,
    "path": "staging/retrospective/BKR/2015-03-06",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.0,
+    "tr_1y": -23.0,
+    "tr_2y": 0.7,
+    "tr_3y": -21.0,
+    "excess_6m": -5.8,
+    "excess_1y": -21.7,
+    "excess_2y": -18.1,
+    "excess_3y": -59.1,
+    "avg_m12_m24": -14.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70107,7 +70913,20 @@
    "cons_return_2yr": 45.7,
    "path": "staging/retrospective/BKR/2015-03-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.3,
+    "tr_1y": -21.1,
+    "tr_2y": -1.4,
+    "tr_3y": -15.2,
+    "excess_6m": -5.8,
+    "excess_1y": -21.6,
+    "excess_2y": -21.2,
+    "excess_3y": -56.2,
+    "avg_m12_m24": -10.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70126,7 +70945,20 @@
    "cons_return_2yr": 37.3,
    "path": "staging/retrospective/BKR/2015-03-20",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.9,
+    "tr_1y": -23.0,
+    "tr_2y": -1.1,
+    "tr_3y": -20.9,
+    "excess_6m": -7.7,
+    "excess_1y": -22.2,
+    "excess_2y": -17.9,
+    "excess_3y": -56.2,
+    "avg_m12_m24": -15.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70145,7 +70977,20 @@
    "cons_return_2yr": 36.6,
    "path": "staging/retrospective/BKR/2015-03-27",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.8,
+    "tr_1y": -27.8,
+    "tr_2y": -5.4,
+    "tr_3y": -22.3,
+    "excess_6m": -10.6,
+    "excess_1y": -28.6,
+    "excess_2y": -23.2,
+    "excess_3y": -55.7,
+    "avg_m12_m24": -15.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70164,7 +71009,20 @@
    "cons_return_2yr": 34.5,
    "path": "staging/retrospective/BKR/2015-04-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.8,
+    "tr_1y": -31.6,
+    "tr_2y": -4.0,
+    "tr_3y": -25.8,
+    "excess_6m": -11.3,
+    "excess_1y": -33.9,
+    "excess_2y": -22.5,
+    "excess_3y": -57.1,
+    "avg_m12_m24": -16.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70183,7 +71041,20 @@
    "cons_return_2yr": 28.9,
    "path": "staging/retrospective/BKR/2015-04-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.7,
+    "tr_1y": -34.2,
+    "tr_2y": -5.2,
+    "tr_3y": -24.2,
+    "excess_6m": -11.5,
+    "excess_1y": -33.6,
+    "excess_2y": -21.5,
+    "excess_3y": -56.9,
+    "avg_m12_m24": -19.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70202,7 +71073,20 @@
    "cons_return_2yr": 28.1,
    "path": "staging/retrospective/BKR/2015-04-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -19.1,
+    "tr_1y": -33.6,
+    "tr_2y": -9.0,
+    "tr_3y": -21.8,
+    "excess_6m": -17.9,
+    "excess_1y": -35.6,
+    "excess_2y": -26.0,
+    "excess_3y": -58.3,
+    "avg_m12_m24": -19.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70221,7 +71105,20 @@
    "cons_return_2yr": 9.1,
    "path": "staging/retrospective/BKR/2015-04-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.6,
+    "tr_1y": -29.8,
+    "tr_2y": -12.0,
+    "tr_3y": -20.2,
+    "excess_6m": -15.0,
+    "excess_1y": -31.0,
+    "excess_2y": -27.5,
+    "excess_3y": -53.2,
+    "avg_m12_m24": -19.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70240,7 +71137,20 @@
    "cons_return_2yr": 6.0,
    "path": "staging/retrospective/BKR/2015-05-01",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.2,
+    "tr_1y": -28.9,
+    "tr_2y": -11.5,
+    "tr_3y": -20.0,
+    "excess_6m": -22.8,
+    "excess_1y": -28.9,
+    "excess_2y": -29.0,
+    "excess_3y": -52.3,
+    "avg_m12_m24": -20.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70259,7 +71169,20 @@
    "cons_return_2yr": 8.0,
    "path": "staging/retrospective/BKR/2015-05-08",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.6,
+    "tr_1y": -31.2,
+    "tr_2y": -9.9,
+    "tr_3y": -17.9,
+    "excess_6m": -22.8,
+    "excess_1y": -30.5,
+    "excess_2y": -27.3,
+    "excess_3y": -50.5,
+    "avg_m12_m24": -18.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70278,7 +71201,20 @@
    "cons_return_2yr": 11.1,
    "path": "staging/retrospective/BKR/2015-05-15",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -27.1,
+    "tr_1y": -31.2,
+    "tr_2y": -9.6,
+    "tr_3y": -15.5,
+    "excess_6m": -23.4,
+    "excess_1y": -29.6,
+    "excess_2y": -26.9,
+    "excess_3y": -49.6,
+    "avg_m12_m24": -16.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70297,7 +71233,20 @@
    "cons_return_2yr": 11.6,
    "path": "staging/retrospective/BKR/2015-05-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -21.6,
+    "tr_1y": -29.8,
+    "tr_2y": -9.2,
+    "tr_3y": -14.3,
+    "excess_6m": -20.9,
+    "excess_1y": -28.3,
+    "excess_2y": -25.8,
+    "excess_3y": -48.8,
+    "avg_m12_m24": -15.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70316,7 +71265,20 @@
    "cons_return_2yr": 13.5,
    "path": "staging/retrospective/BKR/2015-05-29",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.6,
+    "tr_1y": -27.3,
+    "tr_2y": -11.6,
+    "tr_3y": -15.3,
+    "excess_6m": -17.8,
+    "excess_1y": -28.9,
+    "excess_2y": -30.3,
+    "excess_3y": -49.2,
+    "avg_m12_m24": -13.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70335,7 +71297,20 @@
    "cons_return_2yr": 13.1,
    "path": "staging/retrospective/BKR/2015-06-05",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.1,
+    "tr_1y": -27.5,
+    "tr_2y": -13.3,
+    "tr_3y": -17.8,
+    "excess_6m": -19.0,
+    "excess_1y": -29.8,
+    "excess_2y": -33.8,
+    "excess_3y": -55.5,
+    "avg_m12_m24": -13.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70354,7 +71329,20 @@
    "cons_return_2yr": 14.1,
    "path": "staging/retrospective/BKR/2015-06-12",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.9,
+    "tr_1y": -27.3,
+    "tr_2y": -10.3,
+    "tr_3y": -15.6,
+    "excess_6m": -22.0,
+    "excess_1y": -29.4,
+    "excess_2y": -30.4,
+    "excess_3y": -55.0,
+    "avg_m12_m24": -12.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70373,7 +71361,20 @@
    "cons_return_2yr": 18.1,
    "path": "staging/retrospective/BKR/2015-06-19",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -28.5,
+    "tr_1y": -23.3,
+    "tr_2y": -6.5,
+    "tr_3y": -15.5,
+    "excess_6m": -24.5,
+    "excess_1y": -23.4,
+    "excess_2y": -26.8,
+    "excess_3y": -52.8,
+    "avg_m12_m24": -9.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70392,7 +71393,20 @@
    "cons_return_2yr": 18.2,
    "path": "staging/retrospective/BKR/2015-06-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.4,
+    "tr_1y": -25.8,
+    "tr_2y": -11.1,
+    "tr_3y": -14.9,
+    "excess_6m": -21.5,
+    "excess_1y": -24.8,
+    "excess_2y": -31.3,
+    "excess_3y": -50.9,
+    "avg_m12_m24": -9.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70411,7 +71425,20 @@
    "cons_return_2yr": 21.2,
    "path": "staging/retrospective/BKR/2015-07-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.0,
+    "tr_1y": -22.9,
+    "tr_2y": -7.4,
+    "tr_3y": -13.0,
+    "excess_6m": -22.4,
+    "excess_1y": -26.3,
+    "excess_2y": -28.4,
+    "excess_3y": -50.8,
+    "avg_m12_m24": -6.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70430,7 +71457,20 @@
    "cons_return_2yr": 22.5,
    "path": "staging/retrospective/BKR/2015-07-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -29.8,
+    "tr_1y": -25.7,
+    "tr_2y": -6.1,
+    "tr_3y": -9.8,
+    "excess_6m": -23.4,
+    "excess_1y": -30.3,
+    "excess_2y": -27.2,
+    "excess_3y": -51.0,
+    "avg_m12_m24": -5.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70449,7 +71489,20 @@
    "cons_return_2yr": 25.4,
    "path": "staging/retrospective/BKR/2015-07-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -31.0,
+    "tr_1y": -20.1,
+    "tr_2y": -3.1,
+    "tr_3y": -10.5,
+    "excess_6m": -20.5,
+    "excess_1y": -23.7,
+    "excess_2y": -22.9,
+    "excess_3y": -49.0,
+    "avg_m12_m24": -3.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70468,7 +71521,20 @@
    "cons_return_2yr": 25.5,
    "path": "staging/retrospective/BKR/2015-07-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -27.3,
+    "tr_1y": -22.4,
+    "tr_2y": -9.1,
+    "tr_3y": -11.5,
+    "excess_6m": -18.5,
+    "excess_1y": -27.2,
+    "excess_2y": -30.2,
+    "excess_3y": -50.4,
+    "avg_m12_m24": -3.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70487,7 +71553,20 @@
    "cons_return_2yr": 25.8,
    "path": "staging/retrospective/BKR/2015-07-31",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.6,
+    "tr_1y": -16.6,
+    "tr_2y": -3.8,
+    "tr_3y": -6.7,
+    "excess_6m": -17.7,
+    "excess_1y": -21.8,
+    "excess_2y": -25.3,
+    "excess_3y": -46.3,
+    "avg_m12_m24": -3.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70506,7 +71585,20 @@
    "cons_return_2yr": 31.3,
    "path": "staging/retrospective/BKR/2015-08-07",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.9,
+    "tr_1y": -14.0,
+    "tr_2y": -4.1,
+    "tr_3y": -1.7,
+    "excess_6m": -10.4,
+    "excess_1y": -21.0,
+    "excess_2y": -27.7,
+    "excess_3y": -45.8,
+    "avg_m12_m24": -0.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70525,7 +71617,20 @@
    "cons_return_2yr": 27.6,
    "path": "staging/retrospective/BKR/2015-08-14",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -29.8,
+    "tr_1y": -11.7,
+    "tr_2y": -7.0,
+    "tr_3y": -6.4,
+    "excess_6m": -20.0,
+    "excess_1y": -18.1,
+    "excess_2y": -29.1,
+    "excess_3y": -48.6,
+    "avg_m12_m24": -3.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70544,7 +71649,20 @@
    "cons_return_2yr": 39.2,
    "path": "staging/retrospective/BKR/2015-08-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.2,
+    "tr_1y": 8.1,
+    "tr_2y": 4.1,
+    "tr_3y": 5.1,
+    "excess_6m": -12.4,
+    "excess_1y": -4.5,
+    "excess_2y": -23.2,
+    "excess_3y": -46.7,
+    "avg_m12_m24": 11.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70563,7 +71681,20 @@
    "cons_return_2yr": 26.0,
    "path": "staging/retrospective/BKR/2015-08-28",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.5,
+    "tr_1y": -5.5,
+    "tr_2y": -4.5,
+    "tr_3y": -2.9,
+    "excess_6m": -17.5,
+    "excess_1y": -16.7,
+    "excess_2y": -31.7,
+    "excess_3y": -55.3,
+    "avg_m12_m24": -0.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70582,7 +71713,20 @@
    "cons_return_2yr": 29.4,
    "path": "staging/retrospective/BKR/2015-09-04",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.6,
+    "tr_1y": -5.3,
+    "tr_2y": -0.2,
+    "tr_3y": -2.4,
+    "excess_6m": -17.9,
+    "excess_1y": -20.9,
+    "excess_2y": -33.5,
+    "excess_3y": -60.2,
+    "avg_m12_m24": 2.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70601,7 +71745,20 @@
    "cons_return_2yr": 29.8,
    "path": "staging/retrospective/BKR/2015-09-11",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.1,
+    "tr_1y": -6.1,
+    "tr_2y": 2.4,
+    "tr_3y": -1.7,
+    "excess_6m": -17.3,
+    "excess_1y": -16.8,
+    "excess_2y": -28.9,
+    "excess_3y": -55.7,
+    "avg_m12_m24": 1.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70620,7 +71777,20 @@
    "cons_return_2yr": 28.9,
    "path": "staging/retrospective/BKR/2015-09-18",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.6,
+    "tr_1y": -8.2,
+    "tr_2y": 5.1,
+    "tr_3y": -3.1,
+    "excess_6m": -16.4,
+    "excess_1y": -19.6,
+    "excess_2y": -27.3,
+    "excess_3y": -58.5,
+    "avg_m12_m24": 0.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70639,7 +71809,20 @@
    "cons_return_2yr": 31.3,
    "path": "staging/retrospective/BKR/2015-09-25",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.2,
+    "tr_1y": -4.9,
+    "tr_2y": 7.4,
+    "tr_3y": 1.0,
+    "excess_6m": -20.7,
+    "excess_1y": -19.2,
+    "excess_2y": -26.5,
+    "excess_3y": -57.1,
+    "avg_m12_m24": 2.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70658,7 +71841,20 @@
    "cons_return_2yr": 29.2,
    "path": "staging/retrospective/BKR/2015-10-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.9,
+    "tr_1y": -4.1,
+    "tr_2y": 4.4,
+    "tr_3y": -2.8,
+    "excess_6m": -26.1,
+    "excess_1y": -17.3,
+    "excess_2y": -29.7,
+    "excess_3y": -59.7,
+    "avg_m12_m24": -0.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70677,7 +71873,20 @@
    "cons_return_2yr": 22.1,
    "path": "staging/retrospective/BKR/2015-10-09",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.0,
+    "tr_1y": -5.2,
+    "tr_2y": -3.1,
+    "tr_3y": -7.5,
+    "excess_6m": -25.7,
+    "excess_1y": -14.2,
+    "excess_2y": -33.8,
+    "excess_3y": -57.3,
+    "avg_m12_m24": -6.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70696,7 +71905,20 @@
    "cons_return_2yr": 28.0,
    "path": "staging/retrospective/BKR/2015-10-16",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.0,
+    "tr_1y": -2.6,
+    "tr_2y": -2.4,
+    "tr_3y": -6.3,
+    "excess_6m": -21.3,
+    "excess_1y": -9.6,
+    "excess_2y": -32.5,
+    "excess_3y": -51.3,
+    "avg_m12_m24": -2.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70715,7 +71937,20 @@
    "cons_return_2yr": 24.0,
    "path": "staging/retrospective/BKR/2015-10-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.9,
+    "tr_1y": -4.6,
+    "tr_2y": -6.2,
+    "tr_3y": -10.8,
+    "excess_6m": -18.8,
+    "excess_1y": -11.0,
+    "excess_2y": -36.0,
+    "excess_3y": -51.7,
+    "avg_m12_m24": -5.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70734,7 +71969,20 @@
    "cons_return_2yr": 30.8,
    "path": "staging/retrospective/BKR/2015-10-30",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.6,
+    "tr_1y": 13.5,
+    "tr_2y": -4.4,
+    "tr_3y": -11.1,
+    "excess_6m": -7.9,
+    "excess_1y": 9.2,
+    "excess_2y": -32.3,
+    "excess_3y": -46.7,
+    "avg_m12_m24": -1.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70753,7 +72001,20 @@
    "cons_return_2yr": 32.3,
    "path": "staging/retrospective/BKR/2015-11-06",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.3,
+    "tr_1y": 13.2,
+    "tr_2y": 1.7,
+    "tr_3y": -10.3,
+    "excess_6m": -10.3,
+    "excess_1y": 11.8,
+    "excess_2y": -25.9,
+    "excess_3y": -48.0,
+    "avg_m12_m24": -1.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70772,7 +72033,20 @@
    "cons_return_2yr": 44.6,
    "path": "staging/retrospective/BKR/2015-11-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.6,
+    "tr_1y": 24.8,
+    "tr_2y": 6.8,
+    "tr_3y": -9.0,
+    "excess_6m": -7.9,
+    "excess_1y": 15.8,
+    "excess_2y": -25.2,
+    "excess_3y": -50.3,
+    "avg_m12_m24": 6.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70791,7 +72065,20 @@
    "cons_return_2yr": 35.1,
    "path": "staging/retrospective/BKR/2015-11-20",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.5,
+    "tr_1y": 21.0,
+    "tr_2y": -3.0,
+    "tr_3y": -17.3,
+    "excess_6m": -9.7,
+    "excess_1y": 14.5,
+    "excess_2y": -30.8,
+    "excess_3y": -50.3,
+    "avg_m12_m24": -1.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70810,7 +72097,20 @@
    "cons_return_2yr": 30.6,
    "path": "staging/retrospective/BKR/2015-11-27",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.8,
+    "tr_1y": 18.9,
+    "tr_2y": -6.5,
+    "tr_3y": -20.2,
+    "excess_6m": -13.2,
+    "excess_1y": 11.0,
+    "excess_2y": -35.1,
+    "excess_3y": -55.0,
+    "avg_m12_m24": -5.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70829,7 +72129,20 @@
    "cons_return_2yr": 31.0,
    "path": "staging/retrospective/BKR/2015-12-04",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.5,
+    "tr_1y": 25.4,
+    "tr_2y": -3.9,
+    "tr_3y": -20.7,
+    "excess_6m": -12.9,
+    "excess_1y": 18.5,
+    "excess_2y": -34.3,
+    "excess_3y": -56.4,
+    "avg_m12_m24": -6.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70848,7 +72161,20 @@
    "cons_return_2yr": 44.2,
    "path": "staging/retrospective/BKR/2015-12-11",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.2,
+    "tr_1y": 40.2,
+    "tr_2y": 3.5,
+    "tr_3y": -14.5,
+    "excess_6m": -8.4,
+    "excess_1y": 25.8,
+    "excess_2y": -33.0,
+    "excess_3y": -52.4,
+    "avg_m12_m24": 1.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70867,7 +72193,20 @@
    "cons_return_2yr": 56.9,
    "path": "staging/retrospective/BKR/2015-12-18",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.4,
+    "tr_1y": 52.7,
+    "tr_2y": 13.6,
+    "tr_3y": -7.1,
+    "excess_6m": 3.0,
+    "excess_1y": 37.9,
+    "excess_2y": -25.1,
+    "excess_3y": -41.1,
+    "avg_m12_m24": 8.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70886,7 +72225,20 @@
    "cons_return_2yr": 44.4,
    "path": "staging/retrospective/BKR/2015-12-24",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.5,
+    "tr_1y": 37.5,
+    "tr_2y": 7.1,
+    "tr_3y": -16.0,
+    "excess_6m": -4.4,
+    "excess_1y": 25.5,
+    "excess_2y": -27.5,
+    "excess_3y": -37.0,
+    "avg_m12_m24": -1.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70905,7 +72257,20 @@
    "cons_return_2yr": 49.3,
    "path": "staging/retrospective/BKR/2015-12-31",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.5,
+    "tr_1y": 42.3,
+    "tr_2y": 9.4,
+    "tr_3y": -11.1,
+    "excess_6m": -5.3,
+    "excess_1y": 30.4,
+    "excess_2y": -26.0,
+    "excess_3y": -39.7,
+    "avg_m12_m24": 0.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70924,7 +72289,20 @@
    "cons_return_2yr": 65.8,
    "path": "staging/retrospective/BKR/2016-01-08",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.9,
+    "tr_1y": 55.5,
+    "tr_2y": 28.4,
+    "tr_3y": 2.9,
+    "excess_6m": -6.0,
+    "excess_1y": 34.7,
+    "excess_2y": -19.2,
+    "excess_3y": -38.4,
+    "avg_m12_m24": 10.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -70943,7 +72321,20 @@
    "cons_return_2yr": 72.8,
    "path": "staging/retrospective/BKR/2016-01-15",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.0,
+    "tr_1y": 54.4,
+    "tr_2y": 40.6,
+    "tr_3y": 6.8,
+    "excess_6m": -0.1,
+    "excess_1y": 31.1,
+    "excess_2y": -12.4,
+    "excess_3y": -39.5,
+    "avg_m12_m24": 14.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70962,7 +72353,20 @@
    "cons_return_2yr": 63.9,
    "path": "staging/retrospective/BKR/2016-01-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.8,
+    "tr_1y": 49.0,
+    "tr_2y": 29.4,
+    "tr_3y": 3.1,
+    "excess_6m": -8.4,
+    "excess_1y": 27.7,
+    "excess_2y": -23.8,
+    "excess_3y": -42.4,
+    "avg_m12_m24": 7.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -70981,7 +72385,20 @@
    "cons_return_2yr": 68.1,
    "path": "staging/retrospective/BKR/2016-01-29",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.7,
+    "tr_1y": 46.6,
+    "tr_2y": 15.5,
+    "tr_3y": -1.7,
+    "excess_6m": -2.5,
+    "excess_1y": 26.0,
+    "excess_2y": -36.2,
+    "excess_3y": -45.2,
+    "avg_m12_m24": 2.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71000,7 +72417,20 @@
    "cons_return_2yr": 63.1,
    "path": "staging/retrospective/BKR/2016-02-05",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.1,
+    "tr_1y": 39.8,
+    "tr_2y": 8.0,
+    "tr_3y": -0.1,
+    "excess_6m": -11.2,
+    "excess_1y": 15.4,
+    "excess_2y": -37.4,
+    "excess_3y": -53.1,
+    "avg_m12_m24": -2.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71019,7 +72449,20 @@
    "cons_return_2yr": 83.3,
    "path": "staging/retrospective/BKR/2016-02-12",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.0,
+    "tr_1y": 55.4,
+    "tr_2y": 15.0,
+    "tr_3y": 11.6,
+    "excess_6m": 7.8,
+    "excess_1y": 28.9,
+    "excess_2y": -32.1,
+    "excess_3y": -43.1,
+    "avg_m12_m24": 8.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71038,7 +72481,20 @@
    "cons_return_2yr": 73.6,
    "path": "staging/retrospective/BKR/2016-02-19",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.3,
+    "tr_1y": 46.2,
+    "tr_2y": 8.2,
+    "tr_3y": 8.8,
+    "excess_6m": 11.3,
+    "excess_1y": 21.4,
+    "excess_2y": -38.9,
+    "excess_3y": -43.4,
+    "avg_m12_m24": 0.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71057,7 +72513,20 @@
    "cons_return_2yr": 65.3,
    "path": "staging/retrospective/BKR/2016-02-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.1,
+    "tr_1y": 37.1,
+    "tr_2y": 5.5,
+    "tr_3y": 5.1,
+    "excess_6m": 3.6,
+    "excess_1y": 13.4,
+    "excess_2y": -41.7,
+    "excess_3y": -45.4,
+    "avg_m12_m24": -5.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71076,7 +72545,20 @@
    "cons_return_2yr": 58.3,
    "path": "staging/retrospective/BKR/2016-03-04",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.5,
+    "tr_1y": 31.1,
+    "tr_2y": 0.3,
+    "tr_3y": 1.1,
+    "excess_6m": -1.5,
+    "excess_1y": 9.9,
+    "excess_2y": -38.6,
+    "excess_3y": -45.5,
+    "avg_m12_m24": -10.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71095,7 +72577,20 @@
    "cons_return_2yr": 59.7,
    "path": "staging/retrospective/BKR/2016-03-11",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.1,
+    "tr_1y": 24.4,
+    "tr_2y": 7.3,
+    "tr_3y": 0.7,
+    "excess_6m": 1.8,
+    "excess_1y": 4.9,
+    "excess_2y": -34.9,
+    "excess_3y": -43.8,
+    "avg_m12_m24": -11.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71114,7 +72609,20 @@
    "cons_return_2yr": 54.2,
    "path": "staging/retrospective/BKR/2016-03-18",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.7,
+    "tr_1y": 25.7,
+    "tr_2y": 5.0,
+    "tr_3y": 0.7,
+    "excess_6m": -2.7,
+    "excess_1y": 7.5,
+    "excess_2y": -33.8,
+    "excess_3y": -44.6,
+    "avg_m12_m24": -15.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71133,7 +72641,20 @@
    "cons_return_2yr": 63.7,
    "path": "staging/retrospective/BKR/2016-03-24",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.0,
+    "tr_1y": 33.5,
+    "tr_2y": 7.6,
+    "tr_3y": 4.7,
+    "excess_6m": 3.6,
+    "excess_1y": 16.2,
+    "excess_2y": -24.1,
+    "excess_3y": -40.0,
+    "avg_m12_m24": -11.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71152,7 +72673,20 @@
    "cons_return_2yr": 70.3,
    "path": "staging/retrospective/BKR/2016-04-01",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.3,
+    "tr_1y": 40.9,
+    "tr_2y": 8.6,
+    "tr_3y": 10.5,
+    "excess_6m": 12.7,
+    "excess_1y": 24.7,
+    "excess_2y": -23.1,
+    "excess_3y": -34.7,
+    "avg_m12_m24": -9.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71171,7 +72705,20 @@
    "cons_return_2yr": 69.7,
    "path": "staging/retrospective/BKR/2016-04-08",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.4,
+    "tr_1y": 43.7,
+    "tr_2y": 12.4,
+    "tr_3y": 7.7,
+    "excess_6m": 17.1,
+    "excess_1y": 26.5,
+    "excess_2y": -19.2,
+    "excess_3y": -40.7,
+    "avg_m12_m24": -10.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71190,7 +72737,20 @@
    "cons_return_2yr": 67.0,
    "path": "staging/retrospective/BKR/2016-04-15",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.9,
+    "tr_1y": 37.3,
+    "tr_2y": 17.5,
+    "tr_3y": 4.0,
+    "excess_6m": 15.3,
+    "excess_1y": 23.2,
+    "excess_2y": -14.7,
+    "excess_3y": -42.6,
+    "avg_m12_m24": -13.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71209,7 +72769,20 @@
    "cons_return_2yr": 48.4,
    "path": "staging/retrospective/BKR/2016-04-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.5,
+    "tr_1y": 25.7,
+    "tr_2y": 13.9,
+    "tr_3y": -0.5,
+    "excess_6m": 10.1,
+    "excess_1y": 11.3,
+    "excess_2y": -18.2,
+    "excess_3y": -46.4,
+    "avg_m12_m24": -19.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71228,7 +72801,20 @@
    "cons_return_2yr": 44.0,
    "path": "staging/retrospective/BKR/2016-04-28",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.2,
+    "tr_1y": 25.5,
+    "tr_2y": 14.7,
+    "tr_3y": -5.6,
+    "excess_6m": 20.7,
+    "excess_1y": 8.5,
+    "excess_2y": -18.4,
+    "excess_3y": -54.1,
+    "avg_m12_m24": -22.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71247,7 +72833,20 @@
    "cons_return_2yr": 50.2,
    "path": "staging/retrospective/BKR/2016-05-06",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.8,
+    "tr_1y": 31.2,
+    "tr_2y": 19.6,
+    "tr_3y": -5.1,
+    "excess_6m": 25.3,
+    "excess_1y": 12.5,
+    "excess_2y": -14.3,
+    "excess_3y": -54.5,
+    "avg_m12_m24": -20.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71266,7 +72865,20 @@
    "cons_return_2yr": 54.4,
    "path": "staging/retrospective/BKR/2016-05-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.5,
+    "tr_1y": 32.4,
+    "tr_2y": 22.4,
+    "tr_3y": -7.4,
+    "excess_6m": 25.8,
+    "excess_1y": 13.5,
+    "excess_2y": -15.4,
+    "excess_3y": -51.7,
+    "avg_m12_m24": -19.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71285,7 +72897,20 @@
    "cons_return_2yr": 52.0,
    "path": "staging/retrospective/BKR/2016-05-20",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.4,
+    "tr_1y": 30.3,
+    "tr_2y": 20.8,
+    "tr_3y": -5.0,
+    "excess_6m": 28.0,
+    "excess_1y": 12.1,
+    "excess_2y": -15.8,
+    "excess_3y": -50.3,
+    "avg_m12_m24": -21.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71304,7 +72929,20 @@
    "cons_return_2yr": 49.7,
    "path": "staging/retrospective/BKR/2016-05-27",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.1,
+    "tr_1y": 21.9,
+    "tr_2y": 16.4,
+    "tr_3y": -9.2,
+    "excess_6m": 28.8,
+    "excess_1y": 4.8,
+    "excess_2y": -17.5,
+    "excess_3y": -50.6,
+    "avg_m12_m24": -23.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71323,7 +72961,20 @@
    "cons_return_2yr": 49.1,
    "path": "staging/retrospective/BKR/2016-06-03",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.0,
+    "tr_1y": 20.3,
+    "tr_2y": 16.4,
+    "tr_3y": -10.4,
+    "excess_6m": 36.5,
+    "excess_1y": 2.0,
+    "excess_2y": -18.2,
+    "excess_3y": -47.9,
+    "avg_m12_m24": -24.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71342,7 +72993,20 @@
    "cons_return_2yr": 50.0,
    "path": "staging/retrospective/BKR/2016-06-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 45.1,
+    "tr_1y": 22.4,
+    "tr_2y": 16.7,
+    "tr_3y": -6.4,
+    "excess_6m": 36.2,
+    "excess_1y": 4.3,
+    "excess_2y": -20.2,
+    "excess_3y": -50.9,
+    "avg_m12_m24": -25.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71361,7 +73025,20 @@
    "cons_return_2yr": 47.2,
    "path": "staging/retrospective/BKR/2016-06-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.6,
+    "tr_1y": 23.8,
+    "tr_2y": 9.9,
+    "tr_3y": -10.3,
+    "excess_6m": 32.4,
+    "excess_1y": 4.1,
+    "excess_2y": -28.9,
+    "excess_3y": -56.9,
+    "avg_m12_m24": -27.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71380,7 +73057,20 @@
    "cons_return_2yr": 52.4,
    "path": "staging/retrospective/BKR/2016-06-24",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.3,
+    "tr_1y": 20.9,
+    "tr_2y": 14.1,
+    "tr_3y": -2.0,
+    "excess_6m": 32.1,
+    "excess_1y": -1.0,
+    "excess_2y": -25.8,
+    "excess_3y": -53.8,
+    "avg_m12_m24": -25.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71399,7 +73089,20 @@
    "cons_return_2yr": 50.4,
    "path": "staging/retrospective/BKR/2016-07-01",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.5,
+    "tr_1y": 20.4,
+    "tr_2y": 13.3,
+    "tr_3y": -2.3,
+    "excess_6m": 34.9,
+    "excess_1y": 3.0,
+    "excess_2y": -20.5,
+    "excess_3y": -50.2,
+    "avg_m12_m24": -27.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71418,7 +73121,20 @@
    "cons_return_2yr": 57.7,
    "path": "staging/retrospective/BKR/2016-07-08",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.2,
+    "tr_1y": 28.4,
+    "tr_2y": 20.3,
+    "tr_3y": 2.5,
+    "excess_6m": 39.2,
+    "excess_1y": 12.4,
+    "excess_2y": -13.7,
+    "excess_3y": -44.1,
+    "avg_m12_m24": -24.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71437,7 +73153,20 @@
    "cons_return_2yr": 50.1,
    "path": "staging/retrospective/BKR/2016-07-15",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.4,
+    "tr_1y": 20.9,
+    "tr_2y": 12.2,
+    "tr_3y": -3.5,
+    "excess_6m": 27.1,
+    "excess_1y": 5.0,
+    "excess_2y": -21.8,
+    "excess_3y": -49.8,
+    "avg_m12_m24": -28.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71456,7 +73185,20 @@
    "cons_return_2yr": 54.7,
    "path": "staging/retrospective/BKR/2016-07-22",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.9,
+    "tr_1y": 17.4,
+    "tr_2y": 14.2,
+    "tr_3y": -2.2,
+    "excess_6m": 34.4,
+    "excess_1y": 1.6,
+    "excess_2y": -18.9,
+    "excess_3y": -46.2,
+    "avg_m12_m24": -26.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71475,7 +73217,20 @@
    "cons_return_2yr": 44.1,
    "path": "staging/retrospective/BKR/2016-07-29",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.6,
+    "tr_1y": 15.6,
+    "tr_2y": 12.1,
+    "tr_3y": -8.6,
+    "excess_6m": 26.0,
+    "excess_1y": -0.3,
+    "excess_2y": -21.9,
+    "excess_3y": -54.4,
+    "avg_m12_m24": -31.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71494,7 +73249,20 @@
    "cons_return_2yr": 46.5,
    "path": "staging/retrospective/BKR/2016-08-05",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.2,
+    "tr_1y": 13.1,
+    "tr_2y": 11.8,
+    "tr_3y": -8.1,
+    "excess_6m": 25.9,
+    "excess_1y": -2.4,
+    "excess_2y": -22.6,
+    "excess_3y": -45.0,
+    "avg_m12_m24": -30.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71513,7 +73281,20 @@
    "cons_return_2yr": 38.5,
    "path": "staging/retrospective/BKR/2016-08-12",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.6,
+    "tr_1y": 5.4,
+    "tr_2y": 7.5,
+    "tr_3y": -13.5,
+    "excess_6m": 16.5,
+    "excess_1y": -8.4,
+    "excess_2y": -26.5,
+    "excess_3y": -52.2,
+    "avg_m12_m24": -34.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71532,7 +73313,20 @@
    "cons_return_2yr": 30.8,
    "path": "staging/retrospective/BKR/2016-08-19",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.9,
+    "tr_1y": -3.3,
+    "tr_2y": -5.3,
+    "tr_3y": -22.1,
+    "excess_6m": 7.3,
+    "excess_1y": -16.5,
+    "excess_2y": -40.1,
+    "excess_3y": -62.7,
+    "avg_m12_m24": -37.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71551,7 +73345,20 @@
    "cons_return_2yr": 35.5,
    "path": "staging/retrospective/BKR/2016-08-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.2,
+    "tr_1y": 1.1,
+    "tr_2y": 1.6,
+    "tr_3y": -19.5,
+    "excess_6m": 8.2,
+    "excess_1y": -13.5,
+    "excess_2y": -35.1,
+    "excess_3y": -59.0,
+    "avg_m12_m24": -35.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71570,7 +73377,20 @@
    "cons_return_2yr": 38.5,
    "path": "staging/retrospective/BKR/2016-09-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.7,
+    "tr_1y": 5.4,
+    "tr_2y": 4.2,
+    "tr_3y": -17.0,
+    "excess_6m": 12.4,
+    "excess_1y": -10.2,
+    "excess_2y": -33.1,
+    "excess_3y": -57.8,
+    "avg_m12_m24": -34.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71589,7 +73409,20 @@
    "cons_return_2yr": 40.3,
    "path": "staging/retrospective/BKR/2016-09-09",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.5,
+    "tr_1y": 7.0,
+    "tr_2y": 2.4,
+    "tr_3y": -10.9,
+    "excess_6m": 5.3,
+    "excess_1y": -10.7,
+    "excess_2y": -36.9,
+    "excess_3y": -57.7,
+    "avg_m12_m24": -33.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71608,7 +73441,20 @@
    "cons_return_2yr": 42.4,
    "path": "staging/retrospective/BKR/2016-09-16",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.0,
+    "tr_1y": 13.8,
+    "tr_2y": 4.3,
+    "tr_3y": -10.3,
+    "excess_6m": 8.6,
+    "excess_1y": -5.2,
+    "excess_2y": -36.0,
+    "excess_3y": -57.5,
+    "avg_m12_m24": -32.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71627,7 +73473,20 @@
    "cons_return_2yr": 40.0,
    "path": "staging/retrospective/BKR/2016-09-23",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.8,
+    "tr_1y": 11.4,
+    "tr_2y": 5.2,
+    "tr_3y": -11.6,
+    "excess_6m": 11.4,
+    "excess_1y": -6.3,
+    "excess_2y": -34.5,
+    "excess_3y": -56.8,
+    "avg_m12_m24": -34.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71646,7 +73505,20 @@
    "cons_return_2yr": 36.6,
    "path": "staging/retrospective/BKR/2016-09-30",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.2,
+    "tr_1y": 8.6,
+    "tr_2y": 4.5,
+    "tr_3y": -15.2,
+    "excess_6m": 7.9,
+    "excess_1y": -9.8,
+    "excess_2y": -34.5,
+    "excess_3y": -59.4,
+    "avg_m12_m24": -35.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71665,7 +73537,20 @@
    "cons_return_2yr": 30.4,
    "path": "staging/retrospective/BKR/2016-10-07",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.6,
+    "tr_1y": 3.5,
+    "tr_2y": -3.9,
+    "tr_3y": -21.4,
+    "excess_6m": 6.1,
+    "excess_1y": -17.0,
+    "excess_2y": -42.3,
+    "excess_3y": -64.8,
+    "avg_m12_m24": -38.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71684,7 +73569,20 @@
    "cons_return_2yr": 33.2,
    "path": "staging/retrospective/BKR/2016-10-14",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.6,
+    "tr_1y": 0.3,
+    "tr_2y": -3.9,
+    "tr_3y": -19.0,
+    "excess_6m": 5.3,
+    "excess_1y": -21.6,
+    "excess_2y": -37.9,
+    "excess_3y": -65.0,
+    "avg_m12_m24": -37.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71703,7 +73601,20 @@
    "cons_return_2yr": 31.7,
    "path": "staging/retrospective/BKR/2016-10-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.8,
+    "tr_1y": -1.7,
+    "tr_2y": -6.7,
+    "tr_3y": -20.3,
+    "excess_6m": 0.1,
+    "excess_1y": -24.1,
+    "excess_2y": -40.4,
+    "excess_3y": -67.6,
+    "avg_m12_m24": -38.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71722,7 +73633,20 @@
    "cons_return_2yr": 25.9,
    "path": "staging/retrospective/BKR/2016-10-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.2,
+    "tr_1y": -12.1,
+    "tr_2y": -15.5,
+    "tr_3y": -23.3,
+    "excess_6m": -3.4,
+    "excess_1y": -34.0,
+    "excess_2y": -44.2,
+    "excess_3y": -71.6,
+    "avg_m12_m24": -41.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71741,7 +73665,20 @@
    "cons_return_2yr": 18.6,
    "path": "staging/retrospective/BKR/2016-11-04",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.6,
+    "tr_1y": -15.0,
+    "tr_2y": -22.9,
+    "tr_3y": -28.1,
+    "excess_6m": -16.2,
+    "excess_1y": -41.3,
+    "excess_2y": -58.0,
+    "excess_3y": -82.8,
+    "avg_m12_m24": -44.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71760,7 +73697,20 @@
    "cons_return_2yr": 17.5,
    "path": "staging/retrospective/BKR/2016-11-11",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.8,
+    "tr_1y": -12.8,
+    "tr_2y": -24.6,
+    "tr_3y": -28.6,
+    "excess_6m": -9.9,
+    "excess_1y": -34.3,
+    "excess_2y": -57.4,
+    "excess_3y": -78.2,
+    "avg_m12_m24": -45.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71779,7 +73729,20 @@
    "cons_return_2yr": 13.2,
    "path": "staging/retrospective/BKR/2016-11-18",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.6,
+    "tr_1y": -19.3,
+    "tr_2y": -30.5,
+    "tr_3y": -31.3,
+    "excess_6m": -15.0,
+    "excess_1y": -39.5,
+    "excess_2y": -60.3,
+    "excess_3y": -81.1,
+    "avg_m12_m24": -47.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71798,7 +73761,20 @@
    "cons_return_2yr": 11.4,
    "path": "staging/retrospective/BKR/2016-11-25",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.8,
+    "tr_1y": -20.8,
+    "tr_2y": -33.1,
+    "tr_3y": -31.9,
+    "excess_6m": -21.0,
+    "excess_1y": -40.5,
+    "excess_2y": -56.4,
+    "excess_3y": -80.2,
+    "avg_m12_m24": -48.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71817,7 +73793,20 @@
    "cons_return_2yr": 5.5,
    "path": "staging/retrospective/BKR/2016-12-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.3,
+    "tr_1y": -25.1,
+    "tr_2y": -36.1,
+    "tr_3y": -36.0,
+    "excess_6m": -27.6,
+    "excess_1y": -47.7,
+    "excess_2y": -66.0,
+    "excess_3y": -84.9,
+    "avg_m12_m24": -51.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71836,7 +73825,20 @@
    "cons_return_2yr": 3.9,
    "path": "staging/retrospective/BKR/2016-12-09",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.8,
+    "tr_1y": -26.9,
+    "tr_2y": -38.8,
+    "tr_3y": -36.9,
+    "excess_6m": -24.3,
+    "excess_1y": -46.3,
+    "excess_2y": -59.5,
+    "excess_3y": -82.2,
+    "avg_m12_m24": -52.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71855,7 +73857,20 @@
    "cons_return_2yr": 3.8,
    "path": "staging/retrospective/BKR/2016-12-16",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.2,
+    "tr_1y": -27.0,
+    "tr_2y": -39.2,
+    "tr_3y": -34.4,
+    "excess_6m": -22.0,
+    "excess_1y": -47.6,
+    "excess_2y": -58.7,
+    "excess_3y": -82.5,
+    "avg_m12_m24": -53.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71874,7 +73889,20 @@
    "cons_return_2yr": 6.1,
    "path": "staging/retrospective/BKR/2016-12-23",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.3,
+    "tr_1y": -22.3,
+    "tr_2y": -38.7,
+    "tr_3y": -30.5,
+    "excess_6m": -25.0,
+    "excess_1y": -43.0,
+    "excess_2y": -49.8,
+    "excess_3y": -79.7,
+    "avg_m12_m24": -52.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71893,7 +73921,20 @@
    "cons_return_2yr": 6.1,
    "path": "staging/retrospective/BKR/2016-12-30",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.6,
+    "tr_1y": -23.3,
+    "tr_2y": -37.9,
+    "tr_3y": -30.3,
+    "excess_6m": -24.7,
+    "excess_1y": -44.8,
+    "excess_2y": -53.2,
+    "excess_3y": -80.9,
+    "avg_m12_m24": -52.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71912,7 +73953,20 @@
    "cons_return_2yr": 7.8,
    "path": "staging/retrospective/BKR/2017-01-06",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.2,
+    "tr_1y": -17.7,
+    "tr_2y": -36.1,
+    "tr_3y": -29.4,
+    "excess_6m": -21.1,
+    "excess_1y": -40.2,
+    "excess_2y": -51.5,
+    "excess_3y": -78.7,
+    "avg_m12_m24": -52.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71931,7 +73985,20 @@
    "cons_return_2yr": 13.1,
    "path": "staging/retrospective/BKR/2017-01-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.2,
+    "tr_1y": -9.1,
+    "tr_2y": -31.0,
+    "tr_3y": -27.7,
+    "excess_6m": -18.9,
+    "excess_1y": -33.6,
+    "excess_2y": -49.5,
+    "excess_3y": -79.0,
+    "avg_m12_m24": -50.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71950,7 +74017,20 @@
    "cons_return_2yr": 11.2,
    "path": "staging/retrospective/BKR/2017-01-20",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.8,
+    "tr_1y": -14.6,
+    "tr_2y": -30.6,
+    "tr_3y": -30.2,
+    "excess_6m": -24.8,
+    "excess_1y": -40.4,
+    "excess_2y": -52.5,
+    "excess_3y": -83.5,
+    "avg_m12_m24": -51.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71969,7 +74049,20 @@
    "cons_return_2yr": 9.2,
    "path": "staging/retrospective/BKR/2017-01-27",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.4,
+    "tr_1y": -19.3,
+    "tr_2y": -32.8,
+    "tr_3y": -33.9,
+    "excess_6m": -23.3,
+    "excess_1y": -46.5,
+    "excess_2y": -53.2,
+    "excess_3y": -82.0,
+    "avg_m12_m24": -52.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -71988,7 +74081,20 @@
    "cons_return_2yr": 11.4,
    "path": "staging/retrospective/BKR/2017-02-03",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.3,
+    "tr_1y": -20.4,
+    "tr_2y": -30.0,
+    "tr_3y": -33.5,
+    "excess_6m": -23.0,
+    "excess_1y": -42.6,
+    "excess_2y": -52.1,
+    "excess_3y": -81.6,
+    "avg_m12_m24": -51.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72007,7 +74113,20 @@
    "cons_return_2yr": 12.7,
    "path": "staging/retrospective/BKR/2017-02-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.1,
+    "tr_1y": -26.9,
+    "tr_2y": -28.8,
+    "tr_3y": -31.7,
+    "excess_6m": -20.3,
+    "excess_1y": -41.9,
+    "excess_2y": -49.9,
+    "excess_3y": -82.9,
+    "avg_m12_m24": -51.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72026,7 +74145,20 @@
    "cons_return_2yr": 13.4,
    "path": "staging/retrospective/BKR/2017-02-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.7,
+    "tr_1y": -26.4,
+    "tr_2y": -26.3,
+    "tr_3y": -31.5,
+    "excess_6m": -21.0,
+    "excess_1y": -44.6,
+    "excess_2y": -48.5,
+    "excess_3y": -81.7,
+    "avg_m12_m24": -51.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72045,7 +74177,20 @@
    "cons_return_2yr": 15.3,
    "path": "staging/retrospective/BKR/2017-02-24",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.3,
+    "tr_1y": -22.7,
+    "tr_2y": -24.3,
+    "tr_3y": -34.6,
+    "excess_6m": -19.3,
+    "excess_1y": -40.8,
+    "excess_2y": -46.4,
+    "excess_3y": -77.3,
+    "avg_m12_m24": -50.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72064,7 +74209,20 @@
    "cons_return_2yr": 15.1,
    "path": "staging/retrospective/BKR/2017-03-03",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.9,
+    "tr_1y": -23.8,
+    "tr_2y": -23.2,
+    "tr_3y": -39.6,
+    "excess_6m": -17.8,
+    "excess_1y": -38.7,
+    "excess_2y": -44.9,
+    "excess_3y": -72.0,
+    "avg_m12_m24": -50.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72083,7 +74241,20 @@
    "cons_return_2yr": 22.5,
    "path": "staging/retrospective/BKR/2017-03-10",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.1,
+    "tr_1y": -13.9,
+    "tr_2y": -20.7,
+    "tr_3y": -40.7,
+    "excess_6m": -11.8,
+    "excess_1y": -33.3,
+    "excess_2y": -40.3,
+    "excess_3y": -68.5,
+    "avg_m12_m24": -47.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72102,7 +74273,20 @@
    "cons_return_2yr": 17.0,
    "path": "staging/retrospective/BKR/2017-03-17",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.1,
+    "tr_1y": -16.6,
+    "tr_2y": -20.6,
+    "tr_3y": -47.6,
+    "excess_6m": -13.3,
+    "excess_1y": -34.4,
+    "excess_2y": -43.6,
+    "excess_3y": -60.3,
+    "avg_m12_m24": -49.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72121,7 +74305,20 @@
    "cons_return_2yr": 16.8,
    "path": "staging/retrospective/BKR/2017-03-24",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.6,
+    "tr_1y": -19.6,
+    "tr_2y": -21.9,
+    "tr_3y": -47.6,
+    "excess_6m": -15.3,
+    "excess_1y": -32.1,
+    "excess_2y": -45.6,
+    "excess_3y": -58.4,
+    "avg_m12_m24": -49.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72140,7 +74337,20 @@
    "cons_return_2yr": 15.2,
    "path": "staging/retrospective/BKR/2017-03-31",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.0,
+    "tr_1y": -23.2,
+    "tr_2y": -22.0,
+    "tr_3y": -48.8,
+    "excess_6m": -16.6,
+    "excess_1y": -36.8,
+    "excess_2y": -46.1,
+    "excess_3y": -66.6,
+    "avg_m12_m24": -50.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72159,7 +74369,20 @@
    "cons_return_2yr": 12.5,
    "path": "staging/retrospective/BKR/2017-04-07",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.3,
+    "tr_1y": -22.0,
+    "tr_2y": -25.4,
+    "tr_3y": -47.7,
+    "excess_6m": -20.5,
+    "excess_1y": -34.5,
+    "excess_2y": -52.4,
+    "excess_3y": -67.2,
+    "avg_m12_m24": -51.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72178,7 +74401,20 @@
    "cons_return_2yr": 15.9,
    "path": "staging/retrospective/BKR/2017-04-13",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.3,
+    "tr_1y": -14.6,
+    "tr_2y": -23.8,
+    "tr_3y": -44.6,
+    "excess_6m": -24.0,
+    "excess_1y": -30.7,
+    "excess_2y": -53.0,
+    "excess_3y": -70.0,
+    "avg_m12_m24": -50.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72197,7 +74433,20 @@
    "cons_return_2yr": 19.5,
    "path": "staging/retrospective/BKR/2017-04-21",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.4,
+    "tr_1y": -9.5,
+    "tr_2y": -22.8,
+    "tr_3y": -43.8,
+    "excess_6m": -22.0,
+    "excess_1y": -25.2,
+    "excess_2y": -50.8,
+    "excess_3y": -67.0,
+    "avg_m12_m24": -49.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72216,7 +74465,20 @@
    "cons_return_2yr": 15.9,
    "path": "staging/retrospective/BKR/2017-04-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -19.6,
+    "tr_1y": -8.9,
+    "tr_2y": -25.2,
+    "tr_3y": -44.4,
+    "excess_6m": -27.9,
+    "excess_1y": -22.6,
+    "excess_2y": -52.5,
+    "excess_3y": -69.8,
+    "avg_m12_m24": -51.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72235,7 +74497,20 @@
    "cons_return_2yr": 16.2,
    "path": "staging/retrospective/BKR/2017-05-05",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.4,
+    "tr_1y": -8.9,
+    "tr_2y": -27.7,
+    "tr_3y": -44.3,
+    "excess_6m": -26.2,
+    "excess_1y": -21.9,
+    "excess_2y": -54.6,
+    "excess_3y": -70.3,
+    "avg_m12_m24": -51.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72254,7 +74529,20 @@
    "cons_return_2yr": 18.3,
    "path": "staging/retrospective/BKR/2017-05-12",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.8,
+    "tr_1y": -7.7,
+    "tr_2y": -29.5,
+    "tr_3y": -41.6,
+    "excess_6m": -21.8,
+    "excess_1y": -23.9,
+    "excess_2y": -54.3,
+    "excess_3y": -68.2,
+    "avg_m12_m24": -51.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72273,7 +74561,20 @@
    "cons_return_2yr": 18.4,
    "path": "staging/retrospective/BKR/2017-05-19",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.2,
+    "tr_1y": -7.4,
+    "tr_2y": -28.4,
+    "tr_3y": -41.6,
+    "excess_6m": -25.5,
+    "excess_1y": -23.3,
+    "excess_2y": -52.6,
+    "excess_3y": -70.8,
+    "avg_m12_m24": -51.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72292,7 +74593,20 @@
    "cons_return_2yr": 24.3,
    "path": "staging/retrospective/BKR/2017-05-26",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.3,
+    "tr_1y": -4.6,
+    "tr_2y": -25.8,
+    "tr_3y": -35.7,
+    "excess_6m": -21.0,
+    "excess_1y": -19.2,
+    "excess_2y": -47.0,
+    "excess_3y": -66.0,
+    "avg_m12_m24": -49.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -72311,7 +74625,20 @@
    "cons_return_2yr": 25.4,
    "path": "staging/retrospective/BKR/2017-06-02",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.6,
+    "tr_1y": -3.3,
+    "tr_2y": -26.6,
+    "tr_3y": -33.1,
+    "excess_6m": -20.9,
+    "excess_1y": -17.3,
+    "excess_2y": -43.5,
+    "excess_3y": -65.8,
+    "avg_m12_m24": -49.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -72330,7 +74657,20 @@
    "cons_return_2yr": 24.1,
    "path": "staging/retrospective/BKR/2017-06-09",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.4,
+    "tr_1y": -4.7,
+    "tr_2y": -23.9,
+    "tr_3y": -31.0,
+    "excess_6m": -23.4,
+    "excess_1y": -21.0,
+    "excess_2y": -46.2,
+    "excess_3y": -69.3,
+    "avg_m12_m24": -50.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -72349,7 +74689,20 @@
    "cons_return_2yr": 20.3,
    "path": "staging/retrospective/BKR/2017-06-16",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.0,
+    "tr_1y": -11.4,
+    "tr_2y": -28.3,
+    "tr_3y": -36.3,
+    "excess_6m": -26.9,
+    "excess_1y": -27.6,
+    "excess_2y": -51.2,
+    "excess_3y": -71.4,
+    "avg_m12_m24": -52.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "BKR",
@@ -72368,7 +74721,20 @@
    "cons_return_2yr": 27.7,
    "path": "staging/retrospective/BKR/2017-06-23",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.2,
+    "tr_1y": -5.7,
+    "tr_2y": -18.3,
+    "tr_3y": -34.8,
+    "excess_6m": -18.3,
+    "excess_1y": -20.7,
+    "excess_2y": -43.5,
+    "excess_3y": -69.8,
+    "avg_m12_m24": -49.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "BKR",
@@ -72387,7 +74753,20 @@
    "cons_return_2yr": 26.4,
    "path": "staging/retrospective/BKR/2017-06-30",
    "generated": "2026-11-10",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.2,
+    "tr_1y": -6.0,
+    "tr_2y": -20.1,
+    "tr_3y": -35.7,
+    "excess_6m": -20.6,
+    "excess_1y": -20.2,
+    "excess_2y": -45.5,
+    "excess_3y": -69.9,
+    "avg_m12_m24": -50.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "LOW",

@@ -10833,7 +10833,7 @@ Controls and checks:
 
 Seen in the build (method behaviour, not tuned):
 - **2014: RICH and AVOID on 49 of 52 dates.** FY13's $2.62 (a year with Iraq's losses in it) is the anchor from the Q4 2013 print: the stock
-  trades at 21.6-28.6x (the 64th-96th percentile, against an 18x median), 25-79% above a 16x floor ($41.92), with BASE at +4.9% to
+  trades at 20.0-28.6x (the 64th-96th percentile, against an 18x median), 25-79% above a 16x floor ($41.92), with BASE at +4.9% to
   +7.2%/yr. FAIR on the three dates before it, on FY12's $3.00 (17.7-18.0x).
 - **2015: FY14's $4.22 from 2015-01-21, at a 13x floor ($54.86).** CHEAP on 3 dates and FAIR on 10 (WATCHLIST) to the Q1 2015 print, at
   13.7-15.9x; then BASE turns with the revenue fall, -22.6%/yr (Q1 2015 revenue -19.8%), -35.9% and -42.2%, and the class is RICH on 40

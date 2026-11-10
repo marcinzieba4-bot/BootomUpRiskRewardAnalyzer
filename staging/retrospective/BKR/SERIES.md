@@ -318,3 +318,186 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2013-12-20 | $53.81 | - | 2.20 | -0.05 | 1.53x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -15.9% | -30.5pp | +8.7% | ✗ |
 | 2013-12-27 | $54.77 | - | 2.20 | -0.09 | 1.66x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -10.5% | -26.7pp | +6.5% | ✗ |
 | 2013-12-31 | $55.26 | - | 2.20 | -0.10 | 1.70x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -14.8% | -30.7pp | +5.3% | ✗ |
+| 2014-01-03 | $53.59 | - | 2.20 | -0.05 | 1.56x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -11.4% | -27.3pp | +8.5% | ✗ |
+| 2014-01-10 | $53.06 | - | 2.20 | -0.03 | 1.52x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -19.1% | -27.7pp | +9.1% | ✗ |
+| 2014-01-17 | $54.14 | - | 2.20 | -0.07 | 1.61x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -23.9% | -30.5pp | +6.4% | ✗ |
+| 2014-01-22 | $56.78 | - | 2.20 | -0.44 | 3.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -23.6% | -31.4pp | +1.0% | ✓ |
+| 2014-01-31 | $56.64 | - | 2.20 | -0.43 | 3.81x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -21.1% | -34.4pp | +0.7% | ✓ |
+| 2014-02-07 | $59.51 | - | 2.20 | -0.67 | 5.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -22.7% | -31.7pp | -4.8% | ✓ |
+| 2014-02-14 | $59.68 | - | 2.20 | -0.75 | 7.88x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -31.2% | -37.0pp | -5.8% | ✓ |
+| 2014-02-21 | $61.02 | - | 2.20 | -0.79 | 9.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -29.0% | -37.8pp | -8.4% | ✓ |
+| 2014-02-28 | $63.28 | - | 2.20 | -0.84 | 16.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -28.2% | -37.3pp | -12.3% | ✓ |
+| 2014-03-07 | $63.30 | - | 2.20 | -0.84 | 16.57x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -24.3% | -35.1pp | -13.0% | ✓ |
+| 2014-03-14 | $61.80 | - | 2.20 | -0.81 | 11.50x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -26.8% | -40.8pp | -11.3% | ✓ |
+| 2014-03-21 | $62.11 | - | 2.20 | -0.81 | 12.29x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -22.1% | -36.5pp | -12.2% | ✓ |
+| 2014-03-28 | $65.27 | - | 2.20 | -0.88 | 36.57x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -30.7% | -44.8pp | -17.0% | ✓ |
+| 2014-04-04 | $65.68 | - | 2.20 | -0.88 | 48.24x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -34.8% | -49.9pp | -18.1% | ✓ |
+| 2014-04-11 | $63.37 | - | 2.20 | -0.84 | 16.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -32.0% | -49.0pp | -15.8% | ✓ |
+| 2014-04-17 | $68.33 | - | 2.20 | -0.93 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -33.9% | -49.8pp | -22.6% | ✓ |
+| 2014-04-25 | $69.68 | - | 2.20 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -33.4% | -49.9pp | -24.7% | ✓ |
+| 2014-05-02 | $69.69 | - | 2.20 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -30.3% | -45.3pp | -25.4% | ✓ |
+| 2014-05-09 | $68.88 | - | 2.20 | -0.94 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -34.0% | -48.0pp | -25.1% | ✓ |
+| 2014-05-16 | $68.82 | - | 2.20 | -0.94 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -31.6% | -46.0pp | -25.7% | ✓ |
+| 2014-05-23 | $69.99 | - | 2.20 | -0.96 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -34.2% | -46.3pp | -27.5% | ✓ |
+| 2014-05-30 | $70.52 | - | 2.20 | -0.96 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -32.8% | -46.2pp | -28.4% | ✓ |
+| 2014-06-06 | $72.00 | - | 2.20 | -0.98 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -29.3% | -41.7pp | -30.4% | ✓ |
+| 2014-06-13 | $71.15 | - | 2.20 | -0.97 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -34.1% | -45.8pp | -30.0% | ✓ |
+| 2014-06-20 | $74.63 | - | 2.20 | -1.02 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -36.7% | -47.1pp | -33.8% | ✓ |
+| 2014-06-27 | $73.96 | - | 2.20 | -1.01 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -41.3% | -47.5pp | -33.6% | ✓ |
+| 2014-07-03 | $75.06 | - | 2.20 | -1.02 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -37.1% | -47.3pp | -34.9% | ✓ |
+| 2014-07-11 | $72.70 | - | 2.20 | -0.99 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -38.2% | -51.0pp | -33.3% | ✓ |
+| 2014-07-18 | $73.28 | - | 2.15 | -1.05 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -34.2% | -47.9pp | -34.2% | ✓ |
+| 2014-07-25 | $73.42 | - | 2.15 | -1.05 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -38.6% | -52.4pp | -34.7% | ✓ |
+| 2014-08-01 | $68.50 | - | 2.15 | -0.98 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -31.5% | -48.5pp | -30.3% | ✓ |
+| 2014-08-08 | $68.33 | - | 2.15 | -0.98 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -27.8% | -45.0pp | -30.4% | ✓ |
+| 2014-08-15 | $67.66 | - | 2.15 | -0.97 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -23.1% | -39.4pp | -30.0% | ✓ |
+| 2014-08-22 | $68.08 | - | 2.15 | -0.97 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -21.9% | -35.8pp | -30.5% | ✓ |
+| 2014-08-29 | $69.14 | - | 2.15 | -0.99 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -24.8% | -37.8pp | -31.5% | ✓ |
+| 2014-09-05 | $68.51 | - | 2.15 | -0.98 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -25.4% | -38.1pp | -31.0% | ✓ |
+| 2014-09-12 | $66.49 | - | 2.15 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -23.2% | -36.1pp | -29.0% | ✓ |
+| 2014-09-19 | $67.74 | - | 2.15 | -0.97 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -26.4% | -37.0pp | -30.5% | ✓ |
+| 2014-09-26 | $66.34 | - | 2.15 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -23.8% | -36.4pp | -29.2% | ✓ |
+| 2014-10-03 | $61.69 | - | 2.15 | -0.86 | 13.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -16.7% | -30.8pp | -23.9% | ✓ |
+| 2014-10-10 | $56.68 | - | 2.15 | -0.56 | 5.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.5% | -21.4pp | -17.3% | ✓ |
+| 2014-10-17 | $53.13 | - | 2.00 | -0.57 | 3.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.8% | -18.0pp | -11.9% | ✓ |
+| 2014-10-24 | $53.49 | - | 2.00 | -0.58 | 4.12x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.0% | -13.7pp | -12.5% | ✓ |
+| 2014-10-31 | $52.96 | - | 2.00 | -0.56 | 3.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +13.9% | +4.2pp | -11.6% | ✗ |
+| 2014-11-07 | $52.30 | - | 2.00 | -0.53 | 3.67x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +14.9% | +5.8pp | -10.3% | ✗ |
+| 2014-11-14 | $59.89 | - | 2.00 | -0.97 | 9.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.8% | -9.5pp | -21.3% | ✓ |
+| 2014-11-21 | $65.83 | - | 2.00 | -1.09 | 375.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.7% | -14.4pp | -28.1% | ✓ |
+| 2014-11-28 | $57.00 | - | 2.00 | -0.74 | 6.11x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +9.9% | -0.7pp | -16.7% | ✓ |
+| 2014-12-05 | $57.02 | - | 2.00 | -0.75 | 6.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +18.7% | +8.3pp | -16.4% | ✗ |
+| 2014-12-12 | $54.99 | - | 2.00 | -0.66 | 4.81x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +23.1% | +6.2pp | -12.7% | ✗ |
+| 2014-12-19 | $57.15 | - | 2.00 | -0.75 | 6.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +17.4% | +4.0pp | -15.3% | ✗ |
+| 2014-12-26 | $56.33 | - | 2.00 | -0.73 | 6.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +17.7% | +5.2pp | -13.5% | ✗ |
+| 2015-01-02 | $56.17 | - | 2.00 | -0.73 | 6.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +18.1% | +5.0pp | -12.7% | ✗ |
+| 2015-01-09 | $56.47 | - | 2.00 | -0.74 | 6.39x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +14.4% | -0.8pp | -12.5% | ✓ |
+| 2015-01-16 | $56.56 | - | 2.00 | -0.74 | 6.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +10.1% | -6.8pp | -11.9% | ✓ |
+| 2015-01-21 | $58.33 | - | 2.65 | +1.00 | 1.16x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +8.6% | -7.4pp | -14.1% | ✗ |
+| 2015-01-30 | $57.99 | - | 2.65 | +1.01 | 1.15x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +8.9% | -9.5pp | -12.7% | ✗ |
+| 2015-02-06 | $62.67 | - | 2.65 | +0.88 | 1.39x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +0.9% | -14.8pp | -18.6% | ✓ |
+| 2015-02-13 | $64.31 | - | 2.65 | +0.82 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -2.7% | -17.8pp | -20.1% | ✗ |
+| 2015-02-20 | $63.49 | - | 2.65 | +0.86 | 1.43x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.9% | -17.3pp | -18.6% | ✗ |
+| 2015-02-27 | $62.51 | - | 2.65 | +0.90 | 1.38x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.2% | -17.9pp | -16.8% | ✗ |
+| 2015-03-06 | $60.92 | - | 2.65 | +0.95 | 1.29x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +0.7% | -18.1pp | -14.1% | ✗ |
+| 2015-03-13 | $58.87 | - | 2.65 | +1.01 | 1.19x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | -1.4% | -21.2pp | -10.7% | ✗ |
+| 2015-03-20 | $62.47 | - | 2.65 | +0.90 | 1.37x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.1% | -17.9pp | -15.4% | ✗ |
+| 2015-03-27 | $62.79 | - | 2.65 | +0.89 | 1.39x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -5.4% | -23.2pp | -15.5% | ✗ |
+| 2015-04-02 | $63.76 | - | 2.65 | +0.86 | 1.45x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -4.0% | -22.5pp | -16.3% | ✗ |
+| 2015-04-10 | $66.54 | - | 2.65 | +0.74 | 1.63x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -5.2% | -21.5pp | -19.2% | ✗ |
+| 2015-04-17 | $66.98 | - | 2.65 | +0.73 | 1.66x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -9.0% | -26.0pp | -19.2% | ✗ |
+| 2015-04-22 | $67.07 | - | 1.50 | -0.89 | 2.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -12.0% | -27.5pp | -19.0% | ✓ |
+| 2015-05-01 | $69.02 | - | 1.50 | -0.94 | 2.41x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -11.5% | -29.0pp | -20.9% | ✓ |
+| 2015-05-08 | $67.70 | - | 1.50 | -0.91 | 2.25x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.9% | -27.3pp | -18.9% | ✓ |
+| 2015-05-15 | $65.85 | - | 1.50 | -0.86 | 2.05x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.6% | -26.9pp | -16.2% | ✓ |
+| 2015-05-22 | $65.53 | - | 1.50 | -0.85 | 2.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.2% | -25.8pp | -15.5% | ✓ |
+| 2015-05-29 | $64.46 | - | 1.50 | -0.83 | 1.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -11.6% | -30.3pp | -13.7% | ✓ |
+| 2015-06-05 | $64.68 | - | 1.50 | -0.83 | 1.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -13.3% | -33.8pp | -13.8% | ✓ |
+| 2015-06-12 | $64.13 | - | 1.50 | -0.82 | 1.89x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -10.3% | -30.4pp | -12.9% | ✓ |
+| 2015-06-19 | $61.93 | - | 1.50 | -0.76 | 1.70x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -6.5% | -26.8pp | -9.4% | ✓ |
+| 2015-06-26 | $61.90 | - | 1.50 | -0.76 | 1.70x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -11.1% | -31.3pp | -9.1% | ✓ |
+| 2015-07-02 | $60.35 | - | 1.50 | -0.73 | 1.58x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -7.4% | -28.4pp | -6.4% | ✓ |
+| 2015-07-10 | $59.71 | - | 1.50 | -0.71 | 1.54x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -6.1% | -27.2pp | -5.6% | ✓ |
+| 2015-07-17 | $58.32 | - | 1.50 | -0.68 | 1.44x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | -3.1% | -22.9pp | -3.6% | ✓ |
+| 2015-07-22 | $58.28 | - | 1.35 | -0.90 | 1.44x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -9.1% | -30.2pp | -3.8% | ✓ |
+| 2015-07-31 | $58.15 | - | 1.35 | -0.90 | 1.47x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.8% | -25.3pp | -3.9% | ✓ |
+| 2015-08-07 | $55.72 | - | 1.35 | -0.87 | 1.35x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.1% | -27.7pp | -0.2% | ✓ |
+| 2015-08-14 | $57.33 | - | 1.35 | -0.89 | 1.45x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -7.0% | -29.1pp | -3.5% | ✓ |
+| 2015-08-21 | $49.52 | - | 1.35 | -0.58 | 1.02x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +4.1% | -23.2pp | +11.0% | ✓ |
+| 2015-08-28 | $54.72 | - | 1.35 | -0.66 | 1.32x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -4.5% | -31.7pp | -0.2% | ✓ |
+| 2015-09-04 | $53.26 | - | 1.35 | -0.64 | 1.24x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -0.2% | -33.5pp | +2.1% | ✓ |
+| 2015-09-11 | $53.08 | - | 1.35 | -0.64 | 1.23x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +2.4% | -28.9pp | +1.8% | ✓ |
+| 2015-09-18 | $53.47 | - | 1.35 | -0.64 | 1.25x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +5.1% | -27.3pp | +0.6% | ✓ |
+| 2015-09-25 | $52.50 | - | 1.35 | -0.63 | 1.20x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +7.4% | -26.5pp | +2.0% | ✓ |
+| 2015-10-02 | $53.35 | - | 1.35 | -0.64 | 1.24x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +4.4% | -29.7pp | -0.1% | ✓ |
+| 2015-10-09 | $56.44 | - | 1.35 | -0.89 | 1.47x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.1% | -33.8pp | -6.1% | ✓ |
+| 2015-10-16 | $53.83 | - | 1.35 | -0.65 | 1.31x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -2.4% | -32.5pp | -2.2% | ✓ |
+| 2015-10-22 | $55.59 | - | 1.35 | -0.90 | 1.42x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.2% | -36.0pp | -5.8% | ✓ |
+| 2015-10-30 | $52.68 | - | 1.35 | -0.66 | 1.24x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -4.4% | -32.3pp | -1.7% | ✓ |
+| 2015-11-06 | $52.08 | - | 1.35 | -0.65 | 1.24x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +1.7% | -25.9pp | -1.5% | ✓ |
+| 2015-11-13 | $47.66 | - | 1.35 | -0.59 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +6.8% | -25.2pp | +6.6% | ✓ |
+| 2015-11-20 | $51.01 | - | 1.35 | -0.64 | 1.18x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -3.0% | -30.8pp | -1.6% | ✓ |
+| 2015-11-27 | $52.78 | - | 1.35 | -0.66 | 1.28x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -6.5% | -35.1pp | -5.8% | ✓ |
+| 2015-12-04 | $52.62 | - | 1.35 | -0.66 | 1.27x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | -3.9% | -34.3pp | -6.8% | ✓ |
+| 2015-12-11 | $47.80 | - | 1.35 | -0.59 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +3.5% | -33.0pp | +1.1% | ✓ |
+| 2015-12-18 | $43.92 | - | 1.35 | -0.53 | 0.85x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +13.6% | -25.1pp | +8.5% | ✓ |
+| 2015-12-24 | $47.72 | - | 1.35 | -0.59 | 1.03x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +7.1% | -27.5pp | -1.4% | ✓ |
+| 2015-12-31 | $46.15 | - | 1.35 | -0.57 | 0.96x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +9.4% | -26.0pp | +0.8% | ✓ |
+| 2016-01-08 | $41.58 | - | 1.35 | -0.49 | 0.78x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +28.4% | -19.2pp | +10.6% | ✗ |
+| 2016-01-15 | $39.89 | - | 1.35 | -0.47 | 0.72x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +40.6% | -12.4pp | +14.0% | ✓ |
+| 2016-01-22 | $42.04 | - | 1.35 | -0.50 | 0.79x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +29.4% | -23.8pp | +7.1% | ✓ |
+| 2016-01-29 | $43.51 | - | 1.15 | -0.75 | 0.80x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +15.5% | -36.2pp | +2.2% | ✓ |
+| 2016-02-05 | $44.85 | - | 1.15 | -0.77 | 0.85x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +8.0% | -37.4pp | -2.3% | ✓ |
+| 2016-02-12 | $39.90 | - | 1.15 | -0.70 | 0.68x | BUY | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +15.0% | -32.1pp | +8.2% | ✓ |
+| 2016-02-19 | $42.14 | - | 1.15 | -0.77 | 0.93x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +8.2% | -38.9pp | +0.9% | ✓ |
+| 2016-02-26 | $44.25 | - | 1.15 | -0.80 | 1.04x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.5% | -41.7pp | -5.2% | ✓ |
+| 2016-03-04 | $46.20 | - | 1.15 | -0.83 | 1.15x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.3% | -38.6pp | -10.5% | ✓ |
+| 2016-03-11 | $45.79 | - | 1.15 | -0.82 | 1.12x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.3% | -34.9pp | -11.0% | ✓ |
+| 2016-03-18 | $47.44 | - | 1.15 | -0.85 | 1.22x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.0% | -33.8pp | -15.2% | ✓ |
+| 2016-03-24 | $44.68 | - | 1.15 | -0.81 | 1.06x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.6% | -24.1pp | -11.3% | ✓ |
+| 2016-04-01 | $42.95 | - | 1.15 | -0.78 | 0.97x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +8.6% | -23.1pp | -9.0% | ✓ |
+| 2016-04-08 | $43.11 | - | 1.15 | -0.78 | 0.98x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +12.4% | -19.2pp | -10.8% | ✓ |
+| 2016-04-15 | $43.80 | - | 1.15 | -0.79 | 1.02x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +17.5% | -14.7pp | -13.4% | ✓ |
+| 2016-04-22 | $46.43 | - | 1.15 | -0.83 | 1.16x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +13.9% | -18.2pp | -19.4% | ✓ |
+| 2016-04-28 | $47.86 | - | 1.30 | -0.68 | 1.25x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +14.7% | -18.4pp | -22.8% | ✓ |
+| 2016-05-06 | $45.88 | - | 1.30 | -0.65 | 1.16x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +19.6% | -14.3pp | -20.5% | ✓ |
+| 2016-05-13 | $44.63 | - | 1.30 | -0.63 | 1.08x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +22.4% | -15.4pp | -19.3% | ✓ |
+| 2016-05-20 | $45.33 | - | 1.30 | -0.64 | 1.12x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +20.8% | -15.8pp | -21.5% | ✓ |
+| 2016-05-27 | $46.04 | - | 1.30 | -0.66 | 1.20x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +16.4% | -17.5pp | -23.6% | ✓ |
+| 2016-06-03 | $46.24 | - | 1.30 | -0.66 | 1.21x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +16.4% | -18.2pp | -24.6% | ✓ |
+| 2016-06-10 | $45.94 | - | 1.30 | -0.66 | 1.19x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +16.7% | -20.2pp | -25.0% | ✓ |
+| 2016-06-17 | $46.81 | - | 1.30 | -0.67 | 1.24x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +9.9% | -28.9pp | -27.4% | ✓ |
+| 2016-06-24 | $45.22 | - | 1.30 | -0.65 | 1.15x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +14.1% | -25.8pp | -25.8% | ✓ |
+| 2016-07-01 | $45.83 | - | 1.30 | -0.65 | 1.18x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +13.3% | -20.5pp | -27.7% | ✓ |
+| 2016-07-08 | $43.69 | - | 1.30 | -0.62 | 1.06x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +20.3% | -13.7pp | -24.5% | ✓ |
+| 2016-07-15 | $45.92 | - | 1.30 | -0.66 | 1.19x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +12.2% | -21.8pp | -28.3% | ✓ |
+| 2016-07-22 | $44.55 | - | 1.30 | -0.64 | 1.11x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +14.2% | -18.9pp | -26.3% | ✓ |
+| 2016-07-29 | $47.83 | - | 1.15 | -0.83 | 1.31x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +12.1% | -21.9pp | -31.4% | ✓ |
+| 2016-08-05 | $47.06 | - | 1.15 | -0.82 | 1.26x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +11.8% | -22.6pp | -30.4% | ✓ |
+| 2016-08-12 | $49.76 | - | 1.15 | -0.86 | 1.45x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.5% | -26.5pp | -34.1% | ✓ |
+| 2016-08-19 | $52.70 | - | 1.15 | -1.11 | 1.70x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -5.3% | -40.1pp | -37.9% | ✓ |
+| 2016-08-26 | $50.86 | - | 1.15 | -1.08 | 1.54x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.6% | -35.1pp | -35.6% | ✓ |
+| 2016-09-02 | $49.78 | - | 1.15 | -0.86 | 1.45x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.2% | -33.1pp | -34.2% | ✓ |
+| 2016-09-09 | $49.14 | - | 1.15 | -0.85 | 1.40x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.4% | -36.9pp | -33.5% | ✓ |
+| 2016-09-16 | $48.40 | - | 1.15 | -0.84 | 1.35x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.3% | -36.0pp | -32.6% | ✓ |
+| 2016-09-23 | $49.24 | - | 1.15 | -0.85 | 1.41x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +5.2% | -34.5pp | -34.0% | ✓ |
+| 2016-09-30 | $50.47 | - | 1.15 | -0.87 | 1.51x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +4.5% | -34.5pp | -35.7% | ✓ |
+| 2016-10-07 | $52.84 | - | 1.15 | -1.11 | 1.71x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.9% | -42.3pp | -38.8% | ✓ |
+| 2016-10-14 | $51.75 | - | 1.15 | -1.09 | 1.61x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.9% | -37.9pp | -37.6% | ✓ |
+| 2016-10-21 | $52.35 | - | 1.15 | -1.10 | 1.66x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -6.7% | -40.4pp | -38.4% | ✓ |
+| 2016-10-26 | $54.76 | - | 1.45 | -0.83 | 1.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -15.5% | -44.2pp | -41.2% | ✓ |
+| 2016-11-04 | $58.11 | - | 1.45 | -0.92 | 2.31x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -22.9% | -58.0pp | -44.8% | ✓ |
+| 2016-11-11 | $58.64 | - | 1.45 | -0.93 | 2.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -24.6% | -57.4pp | -45.5% | ✓ |
+| 2016-11-18 | $60.86 | - | 1.45 | -1.00 | 2.74x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -30.5% | -60.3pp | -47.7% | ✓ |
+| 2016-11-25 | $61.88 | - | 1.45 | -1.01 | 2.93x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -33.1% | -56.4pp | -48.8% | ✓ |
+| 2016-12-02 | $65.30 | - | 1.45 | -1.10 | 3.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -36.1% | -66.0pp | -51.7% | ✓ |
+| 2016-12-09 | $66.32 | - | 1.45 | -1.13 | 4.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -38.8% | -59.5pp | -52.6% | ✓ |
+| 2016-12-16 | $66.39 | - | 1.45 | -1.13 | 4.06x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -39.2% | -58.7pp | -53.0% | ✓ |
+| 2016-12-23 | $64.93 | - | 1.45 | -1.10 | 3.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -38.7% | -49.8pp | -52.2% | ✓ |
+| 2016-12-30 | $64.97 | - | 1.45 | -1.10 | 3.64x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -37.9% | -53.2pp | -52.5% | ✓ |
+| 2017-01-06 | $63.96 | - | 1.45 | -1.07 | 3.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -36.1% | -51.5pp | -52.1% | ✓ |
+| 2017-01-13 | $60.92 | - | 1.45 | -1.00 | 2.75x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -31.0% | -49.5pp | -50.1% | ✓ |
+| 2017-01-20 | $61.98 | - | 1.45 | -1.01 | 2.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -30.6% | -52.5pp | -51.3% | ✓ |
+| 2017-01-27 | $63.09 | - | 1.90 | -0.50 | 2.70x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -32.8% | -53.2pp | -52.5% | ✓ |
+| 2017-02-03 | $61.85 | - | 1.90 | -0.46 | 2.50x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -30.0% | -52.1pp | -51.8% | ✓ |
+| 2017-02-10 | $61.15 | - | 1.90 | -0.47 | 2.74x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -28.8% | -49.9pp | -51.4% | ✓ |
+| 2017-02-17 | $60.76 | - | 1.90 | -0.45 | 2.67x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -26.3% | -48.5pp | -51.1% | ✓ |
+| 2017-02-24 | $59.80 | - | 1.90 | -0.43 | 2.51x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -24.3% | -46.4pp | -50.3% | ✓ |
+| 2017-03-03 | $59.89 | - | 1.90 | -0.43 | 2.53x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -23.2% | -44.9pp | -50.4% | ✓ |
+| 2017-03-10 | $56.28 | - | 1.90 | -0.36 | 2.03x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -20.7% | -40.3pp | -47.3% | ✓ |
+| 2017-03-17 | $58.93 | - | 1.90 | -0.41 | 2.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -20.6% | -43.6pp | -49.8% | ✓ |
+| 2017-03-24 | $58.99 | - | 1.90 | -0.41 | 2.39x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -21.9% | -45.6pp | -49.9% | ✓ |
+| 2017-03-31 | $59.82 | - | 1.90 | -0.43 | 2.52x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -22.0% | -46.1pp | -50.7% | ✓ |
+| 2017-04-07 | $61.28 | - | 1.90 | -0.47 | 2.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -25.4% | -52.4pp | -51.9% | ✓ |
+| 2017-04-13 | $59.46 | - | 1.90 | -0.42 | 2.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -23.8% | -53.0pp | -50.6% | ✓ |
+| 2017-04-21 | $57.68 | - | 1.90 | -0.38 | 2.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -22.8% | -50.8pp | -49.3% | ✓ |
+| 2017-04-26 | $59.46 | - | 2.60 | +0.35 | 2.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -25.2% | -52.5pp | -51.1% | ✓ |
+| 2017-05-05 | $59.33 | - | 2.60 | +0.35 | 2.44x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -27.7% | -54.6pp | -51.4% | ✓ |
+| 2017-05-12 | $58.26 | - | 2.60 | +0.38 | 2.29x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -29.5% | -54.3pp | -51.0% | ✓ |
+| 2017-05-19 | $58.22 | - | 2.60 | +0.38 | 2.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -28.4% | -52.6pp | -51.4% | ✓ |
+| 2017-05-26 | $55.45 | - | 2.60 | +0.43 | 1.94x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -25.8% | -47.0pp | -49.4% | ✗ |
+| 2017-06-02 | $54.95 | - | 2.60 | +0.44 | 1.88x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -26.6% | -43.5pp | -49.4% | ✗ |
+| 2017-06-09 | $55.53 | - | 2.60 | +0.43 | 1.95x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -23.9% | -46.2pp | -50.3% | ✗ |
+| 2017-06-16 | $57.29 | - | 2.60 | +0.40 | 2.16x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -28.3% | -51.2pp | -52.2% | ✓ |
+| 2017-06-23 | $53.99 | - | 2.60 | +0.46 | 1.78x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -18.3% | -43.5pp | -49.6% | ✗ |
+| 2017-06-30 | $54.51 | - | 2.60 | +0.45 | 1.84x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -20.1% | -45.5pp | -50.4% | ✗ |

@@ -1,18 +1,26 @@
 # BKR retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the BKR weekly dates: 314 from 2008-01-04 to 2013-12-31, all Baker Hughes Incorporated (NYSE: BHI).
+Patterns seen in `outcome.json` for the BKR weekly dates: 497 from 2008-01-04 to 2017-06-30, all Baker Hughes Incorporated (NYSE: BHI).
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
-point-in-time build was committed and pushed (2008-2009: 2b07c92; 2010-2013: 57e05a9). Outcomes were computed on 2026-11-10 from the
-closes posted to 2026-11-09; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30, before the 2017 combination
-with GE's oil and gas business). Total returns include the $0.13, $0.15 and (from 2014-07-31) $0.17 quarterly dividends; no split or
-spin-off falls in a horizon. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2%
-over two years and +52.1% over three. "Call held" is `call_check_2y`, always the class's test (a tier row counts the class calls on its
-dates): CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and
-lag it. In 2008-2009 every date is CHEAP and BUY, so the class and the tier rows coincide.
+point-in-time build was committed and pushed (2008-2009: 2b07c92; 2010-2013: 57e05a9; 2014-2017: e026e58). Outcomes were computed on
+2026-11-10 from the closes posted to 2026-11-09; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-06-30).
+Total returns include the $0.13, $0.15 and (from 2014-07-31) $0.17 quarterly dividends, the $17.50 special dividend of the GE combination
+(ex-date 2017-07-05) and the later BHGE and BKR dividends; no split falls in a horizon. Medians of an even count take the upper middle
+value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`,
+always the class's test (a tier row counts the class calls on its dates): CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR
+should land within ±15pp of it, and RICH should miss the hurdle and lag it. In 2008-2009 every date is CHEAP and BUY, so the class and the
+tier rows coincide.
 
-**Hindsight the model could not see** (it bears on the 2012-2013 endpoints): Baker Hughes confirmed Halliburton's approach on 2014-11-13
-(the close rose 19%, from $52.05 to $61.76), agreed a combination on 2014-11-17 ($67.81), and the agreement ended on 2016-05-01. Two-year
-endpoints from 2014-11-13 to 2015 and three-year endpoints to 2016-05 are priced partly by that offer.
+**Hindsight the model could not see:**
+- Baker Hughes confirmed Halliburton's approach on 2014-11-13 (the close rose 19%, from $52.05 to $61.76), agreed a combination on
+  2014-11-17 ($67.81), and the agreement ended on 2016-05-01. Two-year endpoints from 2014-11-13 to 2015 and three-year endpoints to 2016-05
+  are priced partly by that offer, and so are the 2014-2016 entry prices from November 2014 to April 2016.
+- The GE combination was announced on 2016-10-31 and closed on 2017-07-03. Each share then became one BHGE Class A share plus the $17.50
+  special dividend, and the price series continues as BHGE's (BKR's from 2019). Endpoints after 2017-07-05 price a different company's
+  share; the total return of holding it is still what a Baker Hughes holder got.
+- **The m12-24 measure is distorted from mid-2015.** It is a price return without dividends, so for dates whose months 12-24 run past
+  2017-07-05 it is understated by the $17.50 special dividend (about 30% of the price). For 2016-2017 it is not a usable measure; the
+  2014-2017 sections rank and compare on two-year total return instead.
 
 ## 2008 (53 dates)
 
@@ -226,6 +234,116 @@ endpoints from 2014-11-13 to 2015 and three-year endpoints to 2016-05 are priced
   after +0.38 in 2008 and -0.09 in 2009. Its signals read the latest quarter's growth, which peaked with the stock (Q3 2010 to Q1 2011)
   and fell to its lows with it (2012-2013). The entry price ranked best in every year, at -0.54 to -0.99.
 
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST | 3 | -19.1% | -23.9% to -11.4% | 0 | 0 | +8.5% | 0 |
+| class RICH, legacy tier AVOID | 49 | -26.4% | -41.3% to +23.1% | 0 | 6 | -23.9% | 43 |
+| latest print Q3 2013, FY12 EPS $3.00 (2014-01-03 to 2014-01-17) | 3 | -19.1% | -23.9% to -11.4% | 0 | 0 | +8.5% | 0 |
+| latest print Q4 2013, FY13 EPS $2.62 (2014-01-22 to 2014-04-11) | 12 | -26.8% | -34.8% to -21.1% | 0 | 0 | -11.3% | 12 |
+| latest print Q1 2014, FY13 EPS $2.62 (2014-04-17 to 2014-07-11) | 13 | -34.0% | -41.3% to -29.3% | 0 | 0 | -28.4% | 13 |
+| latest print Q2 2014, FY13 EPS $2.62 (2014-07-18 to 2014-10-10) | 13 | -24.8% | -38.6% to -3.5% | 0 | 0 | -30.4% | 13 |
+| latest print Q3 2014, FY13 EPS $2.62 (2014-10-17 to 2014-12-26) | 11 | +13.9% | -3.7% to +23.1% | 0 | 6 | -13.5% | 5 |
+
+- **RICH held on 43 of 49 dates; the three FAIR dates of January missed.** No 2014 date beat SPY over one year or three. The 40 RICH dates
+  to 2014-10-24 returned -41% to 0% over two years and trailed SPY by 14-52pp; the stock fell from a $75.35 high (2014-07-02) to $38.88 on
+  2016-01-20. Six of the nine dates from 2014-10-31 to 2014-12-26 missed: they beat SPY by up to 8pp, with endpoints from 2016-10-28 to
+  2016-12-23, around the announcement of the GE combination (hindsight; see the top). The three FAIR dates trailed SPY by 27-31pp.
+- **Why RICH.** From the Q4 2013 print the anchor was FY13's $2.62 adjusted, a year with Iraq's losses in it, and the floor 16x ($41.92).
+  The stock traded at 20.0-28.6x (the 64th-96th percentile), 25-79% over the floor, with BASE at +4.9% to +7.2%/yr: the price sat above
+  the two-year BASE value on every date.
+- **Rankings.** Against the two-year total return, the entry price ranks at Spearman -0.83, the EPP gap at -0.82 and the proxy composite
+  at -0.68.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 3 | +8.6% | -1.4% to +8.9% | 0 | 0 | -12.7% | 0 |
+| class FAIR | 10 | -1.9% | -9.0% to +0.9% | 0 | 0 | -16.8% | 1 |
+| class RICH | 40 | -3.8% | -13.3% to +18.1% | 0 | 1 | -3.8% | 39 |
+| legacy tier ACCUMULATE | 6 | +7.1% | +3.5% to +13.6% | 0 | 0 | +6.6% | 6 |
+| legacy tier WATCHLIST | 36 | -3.1% | -11.1% to +8.9% | 0 | 0 | -5.8% | 24 |
+| legacy tier AVOID | 11 | -9.9% | -13.3% to +18.1% | 0 | 1 | -13.8% | 10 |
+| latest print Q3 2014, FY13 EPS $2.62 (2015-01-02 to 2015-01-16) | 3 | +14.4% | +10.1% to +18.1% | 0 | 1 | -12.5% | 2 |
+| latest print Q4 2014, FY14 EPS $4.22 (2015-01-21 to 2015-04-17) | 13 | -1.4% | -9.0% to +8.9% | 0 | 0 | -16.3% | 1 |
+| latest print Q1 2015, FY14 EPS $4.22 (2015-04-22 to 2015-07-17) | 13 | -9.9% | -13.3% to -3.1% | 0 | 0 | -13.7% | 13 |
+| latest print Q2 2015, FY14 EPS $4.22 (2015-07-22 to 2015-10-16) | 13 | -2.4% | -9.1% to +7.4% | 0 | 0 | -0.2% | 13 |
+| latest print Q3 2015, FY14 EPS $4.22 (2015-10-22 to 2015-12-31) | 11 | +1.7% | -6.5% to +13.6% | 0 | 0 | -1.5% | 11 |
+
+- **The CHEAP and FAIR calls on FY14's peak failed; the RICH calls held.** From the Q4 2014 print the anchor was FY14's $4.22, the cycle's high, and
+  the floor 13x ($54.86). The 13 dates to the Q1 2015 print (3 CHEAP, 10 FAIR, at 13.7-15.9x) returned -9% to +9% over two years, trailing
+  SPY by 7-26pp, and -21% to -37% over one year; one FAIR date held. This is the third peak-anchor CHEAP of the series, after 2008 and
+  early 2012.
+- **RICH held on 39 of 40.** From the Q1 2015 print BASE took the revenue fall (-22.6%, then -35.9% and -42.2%/yr), and the class read RICH
+  though the multiple fell to 9.5-13.8x FY14's EPS and, from August, the price sat under the floor. The 37 RICH dates from 2015-04-22
+  returned -13% to +14% over two years and trailed SPY by 23-36pp, with endpoints in 2017 that include the special dividend. The one miss
+  is 2015-01-02, which beat SPY.
+- **The Halliburton offer stood behind the entries** of the whole year (hindsight): Baker Hughes traded as a target until 2016-04-30.
+- **Rankings.** Against the two-year total return, the entry price ranks at Spearman -0.64, the EPP gap at -0.41 and the proxy composite
+  at -0.07.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 2 | +40.6% | +28.4% to +40.6% | 1 | 0 | +14.0% | 1 |
+| class RICH | 50 | +7.6% | -39.2% to +29.4% | 0 | 0 | -27.4% | 50 |
+| legacy tier BUY | 2 | +40.6% | +15.0% to +40.6% | 1 | 0 | +14.0% | 2 |
+| legacy tier ACCUMULATE | 12 | +15.5% | +5.5% to +29.4% | 0 | 0 | -5.2% | 11 |
+| legacy tier WATCHLIST | 28 | +9.9% | -6.7% to +20.8% | 0 | 0 | -27.7% | 28 |
+| legacy tier AVOID | 10 | -33.1% | -39.2% to -15.5% | 0 | 0 | -48.8% | 10 |
+| latest print Q3 2015, FY14 EPS $4.22 (2016-01-08 to 2016-01-22) | 3 | +29.4% | +28.4% to +40.6% | 1 | 0 | +10.6% | 2 |
+| latest print Q4 2015, FY14 EPS $4.22 (2016-01-29 to 2016-04-22) | 13 | +8.2% | +0.3% to +17.5% | 0 | 0 | -10.5% | 13 |
+| latest print Q1 2016, FY14 EPS $4.22 (2016-04-28 to 2016-07-22) | 13 | +16.4% | +9.9% to +22.4% | 0 | 0 | -24.6% | 13 |
+| latest print Q2 2016, FY14 EPS $4.22 (2016-07-29 to 2016-10-21) | 13 | +4.2% | -6.7% to +12.1% | 0 | 0 | -34.2% | 13 |
+| latest print Q3 2016, FY14 EPS $4.22 (2016-10-26 to 2016-12-30) | 10 | -33.1% | -39.2% to -15.5% | 0 | 0 | -48.8% | 10 |
+
+- **RICH held on all 50 RICH dates, and the year's calls held on 51 of 52.** No date beat SPY over two or three years. The one-year
+  returns were strong: 28 dates beat SPY, and the January dates returned +54% to +56% (the 2016-01-20 low was $38.88). Over two years the
+  RICH dates returned -39% to +29% and trailed SPY by 14-66pp; the 10 from the Q3 2016 print (at $55-66 after the GE announcement) lost
+  15-39%. The two-year endpoints are BHGE's 2018 prices, with the special dividend in the return.
+- **Why RICH:** FY14's $4.22 still anchored (2015 and 2016 excluded as losses), at 9.5-15.7x, and BASE was -40.8% to -51.8%/yr on the
+  revenue fall, so the two-year BASE value ($17-25) was a fraction of the price. The FAIR dates of 2016-01-08 and 2016-01-15 sat 18-21%
+  under the floor at the January low; one held.
+- **Rankings.** Against the two-year total return, the entry price and the EPP gap each rank at Spearman -0.85 and the proxy composite at
+  -0.14.
+
+## 2017 (26 dates, to 2017-06-30)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 5 | -23.9% | -26.6% to -18.3% | 0 | 0 | -49.6% | 0 |
+| class RICH | 21 | -26.3% | -36.1% to -20.6% | 0 | 0 | -51.1% | 21 |
+| legacy tier AVOID | 26 | -25.4% | -36.1% to -18.3% | 0 | 0 | -50.6% | 21 |
+| latest print Q3 2016, FY14 EPS $4.22 (2017-01-06 to 2017-01-20) | 3 | -31.0% | -36.1% to -30.6% | 0 | 0 | -51.3% | 3 |
+| latest print Q4 2016, FY14 EPS $4.22 (2017-01-27 to 2017-04-21) | 13 | -23.8% | -32.8% to -20.6% | 0 | 0 | -50.6% | 13 |
+| latest print Q1 2017, FY14 EPS $4.22 (2017-04-26 to 2017-06-30) | 10 | -25.8% | -29.5% to -18.3% | 0 | 0 | -50.4% | 5 |
+
+- **RICH held on all 21; the five FAIR dates (2017-05-26 to 2017-06-30) failed,** at -18% to -27% over two years, 43-47pp behind SPY. Every
+  2017 date lost money over one, two and three years (three-year median -35.7%, endpoints in 2020); the stock fell to $20.48 on 2018-12-24.
+- **Why FAIR at the end:** Q1 2017's -15.3% revenue lifted BASE to -18.6%/yr and the proxy composite to 2.60, and the price ($54-56) sat 0-10% over
+  the floor; the class moved toward FAIR as the business looked to be turning, a turn the share did not follow.
+- **Rankings.** Against the two-year total return, the entry price ranks at Spearman -0.60, the EPP gap at -0.57 and the proxy composite
+  at +0.24.
+
+## Across 2014-2017 (hypotheses, not rules)
+
+- **RICH held on 153 of 160 dates; CHEAP and FAIR held on 2 of 23.** All 183 calls held on 155. The downturn was read through BASE, the
+  latest quarter's revenue growth: from the Q1 2015 print it put the two-year BASE value far under the price, so the class stayed RICH
+  while the multiple of FY14's EPS fell to its own lows. The same rule read the 2009 bottom wrongly (BASE -25%/yr, then a doubling) and the
+  2010-2011 acquisition growth wrongly. Hypothesis: the latest quarter's revenue growth as a two-year rate is right when a downturn
+  persists and wrong at the turn; test a dampened or mean-reverting BASE for cyclicals across tickers, never fitted to BKR.
+- **The peak anchor failed a third time.** FY14's $4.22 made early 2015 CHEAP or FAIR (1 of 13 held), as FY07-FY08 made 2008 CHEAP
+  (13 of 53) and FY11 made 2012-01-25 to 2012-03-16 CHEAP (1 of 8). This is the strongest pattern of the series and repeats the hypothesis of
+  2008-2013: for a cyclical without guidance, test an anchor on normalized or through-cycle earnings.
+- **The loss-year rule kept a stale anchor.** With 2015 and 2016 excluded (method r2), FY14's $4.22 anchored to mid-2017, two years after
+  the company last earned it; the stock looked 9.5-15x "cheap" on it, and only BASE kept the class RICH. The rule is right that a loss has
+  no P/E; what to anchor on after two loss years is open, and an owner question.
+- **The entry price ranked the two-year total return best** in every year (-0.60 to -0.85). The proxy composite ranked it -0.68, -0.07,
+  -0.14 and +0.24.
+
 ## The encoding calls, seen afterwards
 
 **2008-2009.** No judgement call recorded in retro/README.md ("BKR") moves a class or a tier, so every outcome above is the same under
@@ -261,3 +379,20 @@ The as-published growth is the call that decided 2010-2011. It stays as encoded,
 Testing pro forma growth means a new method version, a reason that does not come from these outcomes, and a full re-run of every
 ticker. Every signal at its BEAR value scores well in 2010-2011 because it turns most of those dates FAIR or RICH while the stock went
 sideways and then down, and it fails in 2013. It is a stress test, not a candidate encoding.
+
+**2014-2017.** Each variant in retro/README.md ("BKR 2014-2017") was rebuilt on every date with one encoding changed, then scored against
+the same outcomes. This is hindsight: the class moves were recorded before scoring, in e026e58.
+
+| Variant | Classes moved | Call held 2014 | 2015 | 2016 | 2017 | All |
+|---|---|---|---|---|---|---|
+| as committed | - | 43/52 | 40/53 | 51/52 | 21/26 | 155/183 |
+| GAAP EPS in every year (2015 and 2016 losses either way) | 12 (2015-01-21 to 2017-06-30: 3 CHEAP to FAIR, 9 FAIR to RICH) | 43/52 | 44/53 | 51/52 | 26/26 | 164/183 |
+| 2012 at $3.00, no restatement | 0 | 43/52 | 40/53 | 51/52 | 21/26 | 155/183 |
+| industrial segment in revenue outside North America | 0 | 43/52 | 40/53 | 51/52 | 21/26 | 155/183 |
+| every signal at its BEAR value | 23 | 46/52 | 51/53 | 51/52 | 26/26 | 174/183 |
+| every signal at its XBULL value | 75 (2015-05-29 to 2016-10-26: 53 RICH to CHEAP) | 43/52 | 8/53 | 10/52 | 21/26 | 82/183 |
+
+No call is re-encoded on these scores. GAAP EPS scores better here (FY14 at $3.92 lowers the stale anchor), but it scored worse in 2013;
+the company's figures are the house rule (ACN). Every signal at BEAR scores well because it reads RICH almost everywhere while the stock
+fell; it is a stress test, not a candidate encoding. Every signal at XBULL shows how much the RICH calls of 2015-2016 rest on the
+signals reading the revenue fall.
