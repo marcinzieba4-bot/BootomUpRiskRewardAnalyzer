@@ -1,13 +1,18 @@
 # BKR retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the BKR weekly dates: 105 from 2008-01-04 to 2009-12-31, all Baker Hughes Incorporated (NYSE: BHI).
-They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
-point-in-time build was committed and pushed (2b07c92). Outcomes were computed on 2026-11-10 from the closes posted to 2026-11-09; every
-date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2012-12-28, before the 2017 combination with GE's oil and gas business).
-Total returns include the $0.13 and $0.15 quarterly dividends; no split or spin-off falls in a horizon. Medians of an even count take the
-upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. "Call held" is `call_check_2y`: CHEAP should
-clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and lag it. Every date
-is CHEAP and BUY, so the class and the tier rows coincide.
+Patterns seen in `outcome.json` for the BKR weekly dates: 314 from 2008-01-04 to 2013-12-31, all Baker Hughes Incorporated (NYSE: BHI).
+They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
+point-in-time build was committed and pushed (2008-2009: 2b07c92; 2010-2013: 57e05a9). Outcomes were computed on 2026-11-10 from the
+closes posted to 2026-11-09; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30, before the 2017 combination
+with GE's oil and gas business). Total returns include the $0.13, $0.15 and (from 2014-07-31) $0.17 quarterly dividends; no split or
+spin-off falls in a horizon. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2%
+over two years and +52.1% over three. "Call held" is `call_check_2y`, always the class's test (a tier row counts the class calls on its
+dates): CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and
+lag it. In 2008-2009 every date is CHEAP and BUY, so the class and the tier rows coincide.
+
+**Hindsight the model could not see** (it bears on the 2012-2013 endpoints): Baker Hughes confirmed Halliburton's approach on 2014-11-13
+(the close rose 19%, from $52.05 to $61.76), agreed a combination on 2014-11-17 ($67.81), and the agreement ended on 2016-05-01. Two-year
+endpoints from 2014-11-13 to 2015 and three-year endpoints to 2016-05 are priced partly by that offer.
 
 ## 2008 (53 dates)
 
@@ -65,11 +70,194 @@ is CHEAP and BUY, so the class and the tier rows coincide.
   higher-priced entries.
 - **The two-year price landed nearest BEAR on 34 dates and BASE on 18,** at 1.38-2.54 times the BEAR price and 0.11-0.18 times BULL.
 
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 21 | +6.2% | -19.1% to +28.6% | 0 | 0 | +13.3% | 0 |
+| class FAIR | 6 | -20.2% | -28.1% to +12.1% | 0 | 0 | -18.3% | 1 |
+| class RICH | 25 | -3.3% | -22.0% to +16.7% | 0 | 0 | +21.9% | 25 |
+| legacy tier BUY | 12 | -14.1% | -28.1% to +14.0% | 0 | 0 | -9.3% | 0 |
+| legacy tier ACCUMULATE | 13 | +17.1% | -4.2% to +28.6% | 0 | 0 | +14.5% | 0 |
+| legacy tier WATCHLIST | 5 | +9.3% | +5.0% to +16.7% | 0 | 0 | +39.9% | 4 |
+| legacy tier AVOID | 22 | -5.7% | -22.0% to +10.9% | 0 | 0 | +21.7% | 22 |
+| latest print Q3 2009, FY08 EPS $5.30 (2010-01-08 to 2010-01-22) | 3 | +11.4% | +4.1% to +14.0% | 0 | 0 | +35.1% | 0 |
+| latest print Q4 2009, FY09 EPS $1.36 (2010-01-27 to 2010-04-30) | 14 | -1.2% | -22.0% to +16.7% | 0 | 0 | +26.6% | 14 |
+| latest print Q1 2010, FY09 EPS $1.36 (2010-05-05 to 2010-07-30) | 13 | -5.7% | -11.6% to +12.1% | 0 | 0 | +21.7% | 12 |
+| latest print Q2 2010, FY09 EPS $1.36 (2010-08-04 to 2010-10-29) | 13 | +17.1% | -4.2% to +28.6% | 0 | 0 | +14.5% | 0 |
+| latest print Q3 2010, FY09 EPS $1.36 (2010-11-02 to 2010-12-31) | 9 | -19.1% | -28.1% to -13.2% | 0 | 0 | -16.9% | 0 |
+
+- **RICH held on all 25 of its dates (2010-01-27 to 2010-07-30); CHEAP and FAIR held on 1 of 27.** The RICH dates returned -22% to
+  +17% over two years and trailed SPY by 14-43pp, but over one year they returned +38% to +74% and beat SPY by 20-52pp: the call was
+  right at the two-year endpoint after a year of being wrong (the m12-24 average price was 1-40% above the entry, at or above the hurdle
+  on 4 dates). The stock peaked at $79.94 on 2011-07-25. Over three years no 2010 date beat SPY (median +8.7%).
+- **A trough anchor made RICH.** From the Q4 2009 print (2010-01-27) the anchor was FY09's GAAP $1.36, 74% under FY08's $5.30; the
+  floor fell from $84.8 to $27.2 (20x) and the price sat 54-99% above it, with BASE at -23.0%/yr (Q4 2009 revenue -23.8%) and then
+  -4.0%/yr (Q1 2010). This is 2008 in reverse: there the last full year was a peak and the class CHEAP, here a trough and the class RICH,
+  and both times the cycle turned inside the two years.
+- **From the Q2 2010 print, CHEAP rested on the BJ Services acquisition.** Revenue as published grew +44.4% (Q2 2010) and +82.7% (Q3
+  2010), North America +115% and +181%, against +20.2% and +31.1% in the releases' pro forma combined tables. BASE went to +45.2%/yr and
+  then +83.5%/yr and the proxy composite to 2.90 and 3.40. The class turned CHEAP on 2010-08-04 at $42.83, 57% above the floor. Those 18
+  CHEAP dates returned -19% to +29% over two years and trailed SPY by 6-38pp; none held. The three January dates, still on FY08's $5.30
+  (the price 44-48% under the $84.8 floor), returned +4% to +14% and trailed SPY by 4-14pp.
+- **Rankings.** Against the return to the m12-24 average price, the entry price ranks at Spearman -0.54, the EPP gap at -0.64 and the
+  proxy composite at -0.73 (the wrong sign: the composite peaked on the acquisition's growth).
+- **The two-year price landed nearest BASE on 33 dates, BULL on 10 and BEAR on 9** (the Q3 2010 print's dates, whose $115 BASE was 2.7-2.9
+  times the endpoint). From 2010-01-27 BEAR sits at $1-4 (FY09's fall is the worst year), so a BEAR landing means the endpoint was
+  under about half of BASE, not that the bear case came true.
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 45 | -30.0% | -41.9% to +19.2% | 0 | 0 | -34.8% | 0 |
+| class FAIR | 6 | -21.9% | -39.0% to +8.2% | 0 | 0 | -21.8% | 0 |
+| class RICH | 1 | -38.3% | -38.3% | 0 | 0 | -43.4% | 1 |
+| legacy tier BUY | 32 | -32.5% | -41.9% to +9.0% | 0 | 0 | -37.2% | 0 |
+| legacy tier ACCUMULATE | 14 | -2.7% | -21.1% to +19.2% | 0 | 0 | -17.6% | 0 |
+| legacy tier WATCHLIST | 5 | +7.1% | -23.7% to +8.3% | 0 | 0 | -16.2% | 0 |
+| legacy tier AVOID | 1 | -38.3% | -38.3% | 0 | 0 | -43.4% | 1 |
+| latest print Q3 2010, FY09 EPS $1.36 (2011-01-07 to 2011-01-21) | 3 | -22.8% | -27.5% to -21.9% | 0 | 0 | -25.3% | 0 |
+| latest print Q4 2010, FY10 EPS $2.06 (2011-01-26 to 2011-04-21) | 13 | -35.2% | -39.9% to -29.1% | 0 | 0 | -38.1% | 0 |
+| latest print Q1 2011, FY10 EPS $2.06 (2011-04-28 to 2011-07-22) | 13 | -33.6% | -41.9% to -29.5% | 0 | 0 | -38.7% | 0 |
+| latest print Q2 2011, FY10 EPS $2.06 (2011-07-26 to 2011-10-28) | 14 | -9.6% | -38.3% to +9.0% | 0 | 0 | -20.2% | 1 |
+| latest print Q3 2011, FY10 EPS $2.06 (2011-11-02 to 2011-12-30) | 9 | +9.0% | +2.3% to +19.2% | 0 | 0 | -5.3% | 0 |
+
+- **One call of 52 held: RICH on 2011-07-26.** No date beat SPY over one, two or three years. Two-year returns ran -42% to +19% and
+  trailed SPY by 33-71pp; the three-year median was +0.5%. The stock peaked at $79.94 on 2011-07-25 (the day of the Q2 2011 release) and
+  fell to $38.13 on 2012-06-25. Its one RICH date sat at that peak ($79.75); a week later, at $64.54, the class was CHEAP again.
+- **CHEAP came from the acquisition's growth again.** From the Q4 2010 print the anchor was FY10's GAAP $2.06 and the floor $39.1 (19x).
+  The price sat 17-99% above the floor. BASE took revenue as published:
+  - +82.2% (Q4 2010) and +78.2% (Q1 2011), against +31.6% and +23.7% pro forma;
+  - +40.5% (Q2 2011), with BJ Services in two of the year-ago quarter's three months;
+  - +27.0% (Q3 2011), the first like-for-like quarter.
+
+  BASE ran from +80.5%/yr down to +25.3%/yr, and the proxy composite stayed at 3.20-3.40. The 25 CHEAP dates to 2011-07-22 returned -42%
+  to -29% over two years. The 20 CHEAP dates from 2011-08-05, on the partly and then wholly organic comparisons, returned -24% to +19% and
+  still trailed SPY by 33-71pp.
+- **Rankings.** The entry price ranks the m12-24 return at Spearman -0.99, the EPP gap at -0.87 and the proxy composite at -0.17.
+- **The two-year price landed nearest BEAR on 31 dates and BASE on 21.** The BEAR landings are
+  2011-01-07 to 2011-09-02, where BASE ($92-155) was 2.0-3.6 times the endpoint.
+
+## 2012 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 52 | +45.9% | +6.5% to +93.7% | 37 | 29 | +33.2% | 37 |
+| legacy tier BUY | 49 | +47.0% | +12.5% to +93.7% | 37 | 29 | +33.3% | 37 |
+| legacy tier ACCUMULATE | 2 | +12.3% | +11.9% to +12.3% | 0 | 0 | +1.6% | 0 |
+| legacy tier WATCHLIST | 1 | +6.5% | +6.5% | 0 | 0 | -5.2% | 0 |
+| latest print Q3 2011, FY10 EPS $2.06 (2012-01-06 to 2012-01-20) | 3 | +11.9% | +6.5% to +12.3% | 0 | 0 | -0.6% | 0 |
+| latest print Q4 2011, FY11 EPS $4.20 (2012-01-25 to 2012-04-20) | 13 | +31.5% | +12.5% to +71.8% | 6 | 5 | +4.3% | 6 |
+| latest print Q1 2012, FY11 EPS $4.20 (2012-04-25 to 2012-07-13) | 12 | +79.2% | +63.4% to +93.7% | 12 | 12 | +40.5% | 12 |
+| latest print Q2 2012, FY11 EPS $4.20 (2012-07-20 to 2012-10-12) | 13 | +47.0% | +29.3% to +63.4% | 12 | 11 | +29.9% | 12 |
+| latest print Q3 2012, FY11 EPS $4.20 (2012-10-19 to 2012-12-28) | 11 | +36.8% | +21.5% to +60.3% | 7 | 1 | +52.9% | 7 |
+
+- **CHEAP on every date, held on 37 of 52, in four runs:**
+
+  | Dates | Held | Two-year return | Note |
+  |---|---|---|---|
+  | 2012-01-06 to 2012-03-16 | 1 of 11 | +6.5% to +32.2% | all trailed SPY over one year |
+  | 2012-03-23 to 2012-10-05 | 29 of 29 | +35% to +94% | 28 beat SPY |
+  | 2012-10-12 to 2012-11-09 | 0 of 5 | +21.5% to +31.5% | trailed SPY by 9-21pp; endpoints 2014-10-10 to 2014-11-07 |
+  | 2012-11-16 to 2012-12-28 | 7 of 7 | +35% to +60% | endpoints 2014-11-14 to 2014-12-26 |
+
+  The last two runs differ by their endpoints. The 7 hits' endpoints come after the 19% jump of 2014-11-13 on Halliburton's approach,
+  so they rest partly on the offer (hindsight; see the top).
+- **A peak anchor again.** From the Q4 2011 print (2012-01-25) the anchor was FY11's adjusted $4.20 and the floor $67.2 (16x). The price
+  ($39-52) sat 25-42% under the floor all year. Over the same prints, revenue growth slowed from +21.8% to +3.2%, the proxy composite fell
+  from 3.20 to 1.85, and BASE fell from +25.3%/yr to +0.4%/yr. FY12 came in at $3.00, 29% under the anchor: the 2008 pattern, a cyclical
+  high the next year did not repeat. The stock still rose from its 2012-06-25 low of $38.13 to $75.35 on 2014-07-02, so the calls of
+  March to October 2012 held at two years.
+- **At three years the call fails on 37 of 52.** Fifteen dates cleared the +52.1% hurdle and 8 beat SPY; the median was +28.6%, with
+  endpoints in 2015.
+- **Rankings.** Against the m12-24 return, the entry price ranks at Spearman -0.77, the EPP gap at -0.77 and the proxy composite at -0.80.
+  The composite fell through the year as the entries got better.
+- **The two-year price landed nearest BASE on 43 dates and BEAR on 9** (2012-01-25 to 2012-03-23, where BASE, $122-126, was 2.0-2.2
+  times the endpoint).
+
+## 2013 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 9 | +40.9% | +30.5% to +57.1% | 7 | 5 | +44.6% | 7 |
+| class FAIR | 38 | +24.9% | -15.9% to +50.6% | 15 | 11 | +30.7% | 30 |
+| class RICH | 6 | -7.7% | -16.2% to -5.2% | 0 | 0 | +2.0% | 6 |
+| legacy tier BUY | 3 | +31.9% | +30.5% to +34.2% | 1 | 0 | +46.6% | 1 |
+| legacy tier ACCUMULATE | 28 | +40.9% | +6.6% to +57.1% | 21 | 16 | +38.1% | 26 |
+| legacy tier WATCHLIST | 16 | +9.9% | -15.9% to +28.2% | 0 | 0 | +20.2% | 10 |
+| legacy tier AVOID | 6 | -7.7% | -16.2% to -5.2% | 0 | 0 | +2.0% | 6 |
+| latest print Q3 2012, FY11 EPS $4.20 (2013-01-04 to 2013-01-18) | 3 | +31.9% | +30.5% to +34.2% | 1 | 0 | +46.6% | 1 |
+| latest print Q4 2012, FY12 EPS $3.00 (2013-01-24 to 2013-04-12) | 12 | +40.4% | +25.4% to +47.4% | 10 | 5 | +40.3% | 12 |
+| latest print Q1 2013, FY12 EPS $3.00 (2013-04-19 to 2013-07-12) | 13 | +41.9% | +24.1% to +57.1% | 11 | 11 | +36.8% | 12 |
+| latest print Q2 2013, FY12 EPS $3.00 (2013-07-19 to 2013-10-11) | 13 | +15.0% | +6.6% to +24.9% | 0 | 0 | +27.6% | 12 |
+| latest print Q3 2013, FY12 EPS $3.00 (2013-10-18 to 2013-12-31) | 12 | -7.7% | -16.2% to +0.2% | 0 | 0 | +5.3% | 6 |
+
+- **The calls held on 43 of 53.** By class:
+  - CHEAP held on 7 of 9, with two-year returns of +30.5% to +57.1%. The 9 dates are the three January dates still on FY11's $4.20 and six
+    dates from 2013-01-24 to 2013-06-21 when the price dipped up to 3% under the $45 floor. The two misses are 2013-01-04 and 2013-01-18,
+    which trailed SPY.
+  - FAIR held on 30 of 38. The misses are 2013-05-03 (+15.4pp over SPY), 2013-08-23 (-16.7pp), and 2013-10-18 and 2013-12-06 to
+    2013-12-31 (-20 to -31pp).
+  - RICH held on 6 of 6 (2013-10-25 to 2013-11-29), at -16% to -5% over two years, trailing SPY by 25-33pp.
+- **The anchor sat near the price.** From the Q4 2012 print (2013-01-24) the anchor was FY12's adjusted $3.00 and the floor $45 (15x).
+  The price ($43-58) sat between 3% under and 32% over the floor, with BASE at -5% to +5%/yr and the proxy composite at 1.85 and then 2.20.
+  The class turned RICH after the Q3 2013 print, when the price rose to 27-30% over the floor.
+- **One year against three.** Over one year the median was +38.6% and 37 dates beat SPY. Over three years the median was +1.6% and no
+  date beat SPY; those endpoints fall in 2016. The two-year endpoints (2015-01-02 to 2015-12-30, $43.92-69.02) fall while the Halliburton
+  agreement was pending (hindsight; see the top).
+- **Rankings.** Against the m12-24 return, the entry price, the EPP gap and Ratio B each rank at Spearman -0.99, the proxy composite at
+  -0.73 and the adjusted gap at +0.62. The two-year price landed nearest BASE on all 53 dates.
+
+## Across 2010-2013 (hypotheses, not rules)
+
+- **The anchor moved the class more than the price did.** The last full year's EPS went $5.30, $1.36, $2.06, $4.20, $3.00, and the floor
+  $84.8, $27.2, $39.1, $67.2, $45.0, while the weekly price stayed between $38 and $80. Peak anchors gave CHEAP (2008, 2012) and a trough anchor
+  gave RICH (early 2010), and the two-year results followed the cycle more than the class. This repeats the 2008-2009 hypothesis: for a
+  cyclical without guidance, test an anchor and a floor on normalized or through-cycle earnings, on other tickers and periods, never fitted
+  to BKR.
+- **As-published acquisition growth.** The CHEAP calls of 2010-08-04 to 2011-07-22 rested on a BASE that counted BJ Services in the
+  current quarter and not in the year-ago one. With the releases' pro forma comparisons, the same dates read RICH or FAIR (51 classes).
+  The calls would then have held on 46 of 52 dates in 2010 and 27 of 52 in 2011, against 26 and 1 (table below).
+  Hypothesis: when an acquisition sits in the current quarter but not the year-ago one, and the company prints a pro forma comparison,
+  BASE takes that comparison. Test it on the tickers where the as-published rule was set (PEP, XOM, AVGO) and on others. Never adopt it
+  because it scores better on BKR.
+- **The proxy composite ranked the outcomes the wrong way in all four years:** -0.73, -0.17, -0.80 and -0.73 against the m12-24 return,
+  after +0.38 in 2008 and -0.09 in 2009. Its signals read the latest quarter's growth, which peaked with the stock (Q3 2010 to Q1 2011)
+  and fell to its lows with it (2012-2013). The entry price ranked best in every year, at -0.54 to -0.99.
+
 ## The encoding calls, seen afterwards
 
-No judgement call recorded in retro/README.md ("BKR") moves a class or a tier, so every outcome above is the same under each variant:
-2000 or 1999 excluded (the history and the window from 2001 or 2000), GAAP EPS instead of the company's operating profit per share, the
-outside-North-America outlook as BASE where it is a number, and every signal at its BEAR or XBULL value. What decided the 2008 failures and
-the 2009 successes was not an encoding choice but two rules of method r2 applied to a cyclical without guidance: the last full year as the
-EPS anchor and a P/E floor from the median of the window's calendar-year lows. Both are hypotheses to test across tickers (XOM, RCL and MAR
-showed related early-2008 failures), never a reason to re-encode BKR.
+**2008-2009.** No judgement call recorded in retro/README.md ("BKR") moves a class or a tier, so every outcome above is the same under
+each variant. The variants are:
+- 2000 or 1999 excluded (the history and the window from 2001 or 2000);
+- GAAP EPS instead of the company's operating profit per share;
+- the outside-North-America outlook as BASE where it is a number;
+- every signal at its BEAR or XBULL value.
+
+What decided the 2008 failures and the 2009 successes was not an encoding choice. It was two rules of method r2 applied to a cyclical
+without guidance: the last full year as the EPS anchor, and a P/E floor from the median of the window's calendar-year lows. Both are
+hypotheses to test across tickers (XOM, RCL and MAR showed related early-2008 failures), never a reason to re-encode BKR.
+
+**2010-2013.** Each variant in retro/README.md ("BKR 2010-2013") was rebuilt on every date with one encoding changed, then scored against
+the same outcomes. This is hindsight: the class moves were recorded before scoring, in 57e05a9.
+
+| Variant | Classes moved | Call held 2010 | 2011 | 2012 | 2013 | All |
+|---|---|---|---|---|---|---|
+| as committed (BJ Services in growth as published) | - | 26/52 | 1/52 | 37/52 | 43/53 | 107/209 |
+| pro forma comparisons, Q2 2010 to Q1 2011 | 51 (2010-08-04 to 2011-07-22: 31 CHEAP to RICH, 12 CHEAP to FAIR, 8 FAIR to RICH) | 46/52 | 27/52 | 37/52 | 43/53 | 153/209 |
+| GAAP EPS in every year | 28 (2011-11-02 to 2013-11-29) | 26/52 | 1/52 | 37/52 | 34/53 | 98/209 |
+| PPS-inclusive basis (2011 $4.20, 2012 $2.97) | 3 (2013) | 26/52 | 1/52 | 37/52 | 44/53 | 108/209 |
+| 2000 excluded (history and window from 2001) | 3 (2010) | 27/52 | 1/52 | 37/52 | 43/53 | 108/209 |
+| industrial segment in revenue outside North America | 0 | 26/52 | 1/52 | 37/52 | 43/53 | 107/209 |
+| every signal at its BEAR value | 119 | 44/52 | 29/52 | 40/52 | 30/53 | 143/209 |
+| every signal at its XBULL value | 46 | 19/52 | 1/52 | 37/52 | 22/53 | 79/209 |
+
+The as-published growth is the call that decided 2010-2011. It stays as encoded, for three reasons:
+- it is method r2's rule, set on PEP, XOM and AVGO;
+- it was recorded with its 51-class sensitivity before any 2010-2013 outcome was computed;
+- a better score on BKR is not a reason to re-encode BKR.
+
+Testing pro forma growth means a new method version, a reason that does not come from these outcomes, and a full re-run of every
+ticker. Every signal at its BEAR value scores well in 2010-2011 because it turns most of those dates FAIR or RICH while the stock went
+sideways and then down, and it fails in 2013. It is a stress test, not a candidate encoding.

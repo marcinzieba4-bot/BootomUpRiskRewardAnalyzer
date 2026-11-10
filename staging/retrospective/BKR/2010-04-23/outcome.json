@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "BKR",
+ "as_of": "2010-04-23",
+ "computed": "2026-11-10",
+ "data_source": "Yahoo Finance daily closes + dividends (BKR, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2010-10-22",
+   "price": 46.57,
+   "dividends": 0.3,
+   "total_return_pct": -13.5,
+   "benchmark_total_return_pct": -1.9,
+   "excess_pct": -11.6,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2011-04-21",
+   "price": 74.48,
+   "dividends": 0.6,
+   "total_return_pct": 38.6,
+   "benchmark_total_return_pct": 11.7,
+   "excess_pct": 26.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2012-04-23",
+   "price": 41.07,
+   "dividends": 1.2,
+   "total_return_pct": -22.0,
+   "benchmark_total_return_pct": 16.4,
+   "excess_pct": -38.4,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2013-04-23",
+   "price": 43.21,
+   "dividends": 1.8,
+   "total_return_pct": -16.9,
+   "benchmark_total_return_pct": 36.2,
+   "excess_pct": -53.2,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2011-07-25",
+   "price": 79.94
+  },
+  "low": {
+   "date": "2010-06-01",
+   "price": 35.87
+  },
+  "max_drawdown_pct": -49.6,
+  "return_to_avg_price_m12_m24_pct": 6.0
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Baker Hughes: oilfield services + LNG equipment; leverage post-Chart",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
