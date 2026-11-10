@@ -32,8 +32,17 @@ From 2014 (retro/README.md, "PFE 2014-2017"):
     date the reissued figures replace the print's, and its full-year actuals, without making its week an earnings week;
   - U.S. plus international revenues may differ from the worldwide total by the release's rounding ($1 million: Q1 2015).
 
+From 2018 (retro/README.md, "PFE 2018-2021"):
+  - no release gives a reported EPS guide ('eps_none' quotes the policy each time), so the last full year in the history stands as
+    current-year EPS; the revenue ranges are read as before;
+  - the 2020-11-16 spin-off of Upjohn (Viatris) is a distribution, not a split ('distributions', the MAR rule): Yahoo books it as a
+    1054:1000 split on 2020-11-17, so its factor is undone for the days before and every price stays as traded;
+  - a year may leave the EPS history as reported but excluded ('eps_excluded', the NKE, AVGO and XOM encoding; used here only by the
+    sensitivity tests), and a vintage may start its history after an excluded year ('pe_window_start', the 2003 rule: the FY2020 10-K's
+    restated 2016 is a loss).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open or during the session on the release
+is the first trading day after it. The earnings 8-Ks of 2007-2021 were accepted before the open or during the session on the release
 day, none on a week's last trading day.
 
 Output goes to staging/retrospective/PFE until the series is added to the archive (--out archive/retrospective/PFE).
@@ -42,6 +51,7 @@ Usage
   python3 retro/build_pfe.py --weekly 2008-01-01 2009-12-31
   python3 retro/build_pfe.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_pfe.py --weekly 2014-01-01 2017-12-31
+  python3 retro/build_pfe.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_pfe.py 2008-01-24
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/PFE/<AS_OF>
 """
@@ -147,6 +157,15 @@ def build(as_of, facts, raw, spx, engine, out):
     yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
                     for v in chart.get("events", {}).get("splits", {}).values()}
     assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
+    # a distribution (the 2020-11-16 separation of Upjohn and its combination with Mylan as Viatris) is not a split: Yahoo books it as a
+    # 1054:1000 split on 2020-11-17, so its factor is undone for the days before that date and every price stays as traded (the MAR
+    # 'distributions' rule; the drop stays in the series); per-share facts are not restated
+    for x in facts.get("distributions", []):
+        ev = [v for v in chart.get("events", {}).get("splits", {}).values()
+              if dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat() == x["effective"]]
+        assert len(ev) == 1 and ev[0]["numerator"] / ev[0]["denominator"] == x["yahoo_factor"], (x["effective"], "Yahoo's factor")
+        if x["effective"] <= as_of:
+            px = {d: (tuple(v * x["yahoo_factor"] for v in hlc) if d < x["effective"] else hlc) for d, hlc in px.items()}
     for v in facts["history_vintages"]:            # the fiscal calendar the filings state must match the rule above
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
@@ -169,14 +188,27 @@ def build(as_of, facts, raw, spx, engine, out):
     facts = {**facts, "prints": [reissued(p) for p in facts["prints"]]}
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
+    # on_basis (the shared split helper) divides every Q4 print's full-year EPS; an excluded year has none, so a NaN stands in for it
+    # there and None comes back after (the NKE and XOM encoding; no split follows an excluded year in the fact sheet)
+    held = {p["quarter"] for p in facts["prints"] if "fy_actual" in p and p["fy_actual"]["eps_normalized"] is None}
+    facts = {**facts, "prints": [{**p, "fy_actual": {**p["fy_actual"], "eps_normalized": math.nan}} if p["quarter"] in held else p
+                                 for p in facts["prints"]]}
     facts, split_ids = on_basis(facts, as_of)
+    for p in facts["prints"]:
+        if p["quarter"] in held:
+            p["fy_actual"]["eps_normalized"] = None
+            assert not any(p["published"] < sp["effective"] <= as_of for sp in facts.get("splits", [])), \
+                (as_of, "a split after an excluded year: decide how its GAAP figure is restated first")
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
     # prints published by AS_OF that report a fiscal year after the history (a Q4 print reports the year just ended, so it
     # stays in scope after the 10-K that follows it)
-    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    # a year excluded from the EPS history ('eps_excluded': a year distorted by one-offs with no published figure excluding only them;
+    # retro/README.md, "PFE 2018-2021") is still reported (the NKE FY2018, AVGO FY2018 and XOM FY2020 rule)
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
+    first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     # no disruption theme in taxonomy_eras.json is live for a pharmaceutical company in 2008-2009 (GLP1, from 2023-08-08, is scoped
@@ -190,10 +222,12 @@ def build(as_of, facts, raw, spx, engine, out):
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
+        if a and a["fy"] not in reported(h):          # the 10-K vintage, once out, wins
             y = str(a["fy"])
+            if a["eps_normalized"] is None:           # an excluded year: reported, but out of the EPS history
+                h.update(eps_excluded={**h.get("eps_excluded", {}), y: a["excluded_note"]})
             h.update(fy_label=a["fy_label"],
-                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     eps_normalized={**h["eps_normalized"], **({y: a["eps_normalized"]} if a["eps_normalized"] is not None else {})},
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -220,7 +254,9 @@ def build(as_of, facts, raw, spx, engine, out):
     assert i > 0, (as_of, "the fact sheet needs the print before the latest one")
     prev = (public[i - 1]["us_pct"], public[i - 1]["quarter"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
-    cur_fy = max(eps_hist) + 1
+    excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
+    cur_fy = max(reported(h)) + 1
+    last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     last_rev = rev[max(rev)]
@@ -242,8 +278,9 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
         eps_label = f"{fy_e} reported EPS, guide midpoint"
     else:                                    # no numeric EPS guide: the last full year's EPS stands (rollover rule)
-        eps_now = eps_hist[cur_fy - 1]
-        prev_s = f"FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+        eps_now = eps_hist[last_fy]
+        prev_s = f"FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
+            f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
         eps_label = (f"{fy_e}: reported EPS guidance withdrawn ({wd['doc']}), {prev_s}" if wd else
                      f"{fy_e}: no reported EPS guide ({gn['doc']}: GAAP guidance for revenues only), {prev_s}" if gn else
                      f"{fy_e}: no numeric EPS guide yet, {prev_s}")
@@ -295,9 +332,12 @@ def build(as_of, facts, raw, spx, engine, out):
     eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY EPS, for the P/E series
     fy = lambda d: min(fiscal_year(d), cur_fy)     # a day past the last guided year keeps that year's EPS
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    # an excluded year's own days leave the window (the r2 rule's "the window starts after it", for a year that is not the first)
+    gone = sorted({fy(d) for d in window} & set(excluded))
+    window = [d for d in window if fy(d) not in excluded]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
-    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
+    window_label = ("10-yr" if years > 9.9 else f"{years:.1f}-yr") + "".join(f" ex-FY{y % 100:02d}" for y in gone)
     pe = {d: px[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -335,7 +375,8 @@ def build(as_of, facts, raw, spx, engine, out):
     groups = [tuple(g) for g in h["groups"]]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [p["reissue_source"] for p in prints if p.get("reissue_source")]
            + [g["source"] for g in guides]
-           + ([dividend_src] if dividend_src else []) + split_ids)
+           + ([dividend_src] if dividend_src else []) + split_ids
+           + [x["source"] for x in facts.get("distributions", []) if x["effective"] <= as_of])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/PFE/history",

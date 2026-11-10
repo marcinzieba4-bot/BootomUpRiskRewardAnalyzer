@@ -1,0 +1,256 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PFE",
+ "company": "Pfizer Inc",
+ "as_of": "2018-01-31",
+ "price_date": "2018-01-31",
+ "price": 37.04,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development and manufacture of healthcare products' (FY2016 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for our branded products around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues' (Item 1A); 'we can lose the major portion of revenues for that product in a very short period of time'; 'A number of our products are expected to face significantly increased generic competition over the next few years' (Item 1A); 'Many of our prescription pharmaceutical products face competition in the form of branded or generic drugs or biosimilars that treat similar diseases or indications'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development and manufacture of healthcare products' (FY2016 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for our branded products around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues' (Item 1A); 'we can lose the major portion of revenues for that product in a very short period of time'; 'A number of our products are expected to face significantly increased generic competition over the next few years' (Item 1A); 'Many of our prescription pharmaceutical products face competition in the form of branded or generic drugs or biosimilars that treat similar diseases or indications'. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.24x; -30% to EPP floor; model-vs-market gap +1.28; conservative 2yr +89%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.24,
+  "ratio_b_fmt": "0.24x",
+  "epp": 52.8,
+  "epp_gap_pct": -29.8,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.15,
+  "sca": 0.348,
+  "adj_composite": 2.698,
+  "market_composite": 1.42,
+  "adj_gap": 1.28,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 89.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.18,
+    "pe": 10.4,
+    "price": 23,
+    "desc": "EPS -21.3%/yr (worst year FY07-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.89,
+    "pe": 18.4,
+    "price": 72,
+    "desc": "EPS +5.1%/yr (FY18 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 4.39,
+    "pe": 21.6,
+    "price": 95,
+    "desc": "EPS +11.6%/yr (FY07-FY17 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 11.16,
+    "pe": 29.5,
+    "price": 329,
+    "desc": "EPS +78.1%/yr (best 2-yr run FY07-FY17); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.48,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.36,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.23,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.3,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.27,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.24,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -41.5,
+   "adj_gap": 1.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -29.8,
+   "adj_gap": 1.36,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 89.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "PFE (retrospective, 2018-01-31) ◉ BUY — Ratio B 0.24x (37.9% downside to Bear $23 / +156.5% upside to Bull $95) | Adj composite 2.70 vs market 1.42: gap +1.28 [UNDERVALUED] | -30% above the EPP floor $53 (15x FY18E $3.52) | Conservative 2-yr case: +89.3% total (+44.6%/yr) | At 10.5x FY18E the 15% hurdle price $49 sits at or below the BASE case; U.S. revenues -4.4% in Q4 2017, forward revenues +1.8-5.6% (FY18 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "PF63",
+   "published": "2017-02-24",
+   "filed": "2017-02-23 16:30 ET (after the close)",
+   "title": "Pfizer FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000014/pfe-12312016x10kexhibit13.htm",
+   "supports": "financial summary 2012-2016; statement of income 2014-2016; revenues by operating segment and geography; cash flows; the first-quarter 2017 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF58",
+   "published": "2016-03-01",
+   "filed": "2016-02-29 17:26 ET (after the close)",
+   "title": "Pfizer FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800316000077/pfe-12312015x10kexhibit13.htm",
+   "supports": "financial summary 2011-2015; statement of income 2013-2015; revenues by operating segment and geography; cash flows; the first-quarter 2016 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF52",
+   "published": "2015-03-02",
+   "filed": "2015-02-27 16:38 ET (after the close)",
+   "title": "Pfizer FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800315000014/pfe-12312014xex13.htm",
+   "supports": "financial summary 2010-2014; statement of income 2012-2014; revenues by operating segment and geography; cash flows; the first-quarter 2015 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF47",
+   "published": "2014-03-03",
+   "filed": "2014-02-28 16:38 ET (after the close)",
+   "title": "Pfizer FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800314000018/pfe-12312013xex13.htm",
+   "supports": "financial summary 2009-2013; statement of income 2011-2013; revenues by operating segment and geography; cash flows; the first-quarter 2014 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF41",
+   "published": "2013-03-01",
+   "filed": "2013-02-28 16:57 ET (after the close)",
+   "title": "Pfizer FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800313000006/pfe-12312012xex13.htm",
+   "supports": "financial summary 2008-2012 (restated without Nutrition and Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2013 dividend of $0.24; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF35",
+   "published": "2012-02-29",
+   "filed": "2012-02-28 17:07 ET (after the close)",
+   "title": "Pfizer FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312512085703/d278590dex13.htm",
+   "supports": "financial summary 2007-2011 (restated without Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2012 dividend of $0.22; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF62",
+   "published": "2017-01-31",
+   "filed": "2017-01-31 08:42 ET (before the open)",
+   "title": "Pfizer Q4 2016 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000003/pfe-12312016xex99.htm",
+   "supports": "fourth-quarter and full-year 2016 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  {
+   "id": "PF64",
+   "published": "2017-05-02",
+   "filed": "2017-05-02 09:29 ET (before the open)",
+   "title": "Pfizer Q1 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000020/pfe-04022017xex99.htm",
+   "supports": "first-quarter 2017 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  {
+   "id": "PF65",
+   "published": "2017-08-01",
+   "filed": "2017-08-01 08:57 ET (before the open)",
+   "title": "Pfizer Q2 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000034/pfe-07022017xex99.htm",
+   "supports": "second-quarter 2017 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  {
+   "id": "PF66",
+   "published": "2017-10-31",
+   "filed": "2017-10-31 08:57 ET (before the open)",
+   "title": "Pfizer Q3 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800317000045/pfe-10012017xex99.htm",
+   "supports": "third-quarter 2017 statement of income and revenues by U.S. and international; 2017 guidance"
+  },
+  {
+   "id": "PF67",
+   "published": "2018-01-30",
+   "filed": "2018-01-30 08:50 ET (before the open)",
+   "title": "Pfizer Q4 2017 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800318000004/pfe-12312017xex99.htm",
+   "supports": "fourth-quarter and full-year 2017 statement of income and revenues by U.S. and international; 2018 guidance"
+  },
+  {
+   "id": "W0",
+   "published": "2018-01-31",
+   "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PFE/history",
+   "supports": "close $37.04 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2070 after 2018 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-10"
+}

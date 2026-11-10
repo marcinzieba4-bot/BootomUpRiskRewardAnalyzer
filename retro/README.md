@@ -11677,6 +11677,148 @@ Judgement calls that could carry hindsight:
 - the unfiled 2015-09-30 update left out, and the 2016-02-16 reissue applied from its own date (no class moves);
 - the signals and DURABLE, as in 2008-2013.
 
+### PFE 2018-2021
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts, and the
+523 earlier models rebuild byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_pfe.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-01-01 2018-01-30 2018-02-22 2018-05-01 2018-07-31 2018-10-30 2019-01-29 2019-02-28 2019-04-30 2019-07-29 2019-10-29 \
+         2020-01-28 2020-02-27 2020-04-28 2020-07-28 2020-10-27 2020-11-17 2021-01-12 2021-02-02 2021-02-25 2021-05-04 2021-07-28 \
+         2021-11-02 2022-01-01; do python3 retro/tools/firewall.py $c PFE; done
+```
+
+Read: the 16 earnings releases from Q4 2017 to Q3 2021, the FY2017-FY2020 10-Ks (the financial reports filed as Exhibit 13 to FY2019;
+the FY2020 10-K as one document, with Items 1 and 1A), every other 8-K of December 2017 to January 2022 (48 filings, by their
+exhibits), the 25 Form 425 and 3 SC TO-C filings (the 2019 Array tender offer and the Upjohn-Mylan combination) and the 9 DEFA14A
+filings, and the 10-Qs for the dividend statements. Downloaded from EDGAR and read directly, none delegated; every raw figure was parsed
+by a script from the row it is cited from, and 286 strings were checked with `verbatim.py`, each against its own filing, all found. The
+source ids are PF67-PF88. Decided on 2026-11-10, before any 2018-2021 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (08:04-08:58 ET), none on a week's last trading day, so each
+  print's week is dated the next trading day (2018-01-31 .. 2021-11-03). The FY2017-FY2020 10-Ks were accepted during the session
+  (15:42, 14:35, 14:15 and 13:59 ET) and keep their dates (2018-02-22, 2019-02-28, 2020-02-27, 2021-02-25).
+- **No reported EPS guide in any release.** Each release repeats that Pfizer "does not provide guidance for GAAP Reported financial
+  measures (other than revenues)" (`eps_none` on every guide), so the last full year in the history stands as current-year EPS all
+  through 2018-2021 (the rollover rule, as for FY2017): FY16's $1.17 in January 2018, FY17's $3.52 from the Q4 2017 print, FY18's $1.86
+  from the Q4 2018 print, FY19's $2.87 from the Q4 2019 print and FY20's $1.24 from the Q4 2020 print. The adjusted EPS ranges stay in
+  the guide line only (they remove $0.45-0.65 a share a year of purchase-accounting amortization, the 2008-2009 rule).
+- **The distorted-year test on the PFE measure keeps every year as first published.** Per share, after tax, acquisition-related costs
+  plus certain significant items, as each Q4 release states them (the measure of every test from 2004): 2017 a net benefit of $1.42
+  ($0.05 and $(1.47), the $10.7 billion Tax Act benefit inside), so $2.10 without them and reported $3.52 is 1.68 times it; 2018 charges
+  of $0.49, $1.86 against $2.35 (0.79); 2019 a net benefit of $0.53 (the $8.1 billion Consumer Healthcare joint-venture gain inside),
+  $2.87 against $2.34 (1.23); 2020 charges of $0.53, $1.24 against $1.77 (0.70); the restated 2019 without Upjohn $1.91 against $1.31
+  (1.46). r2 excludes a year whose reported EPS is under half, or more than double, the EPS without them; none is. **2017 is the near
+  case:** the Tax Act benefit alone ("approximately $10.7 billion", FY2017 10-K) is just larger than the year's $10.65 billion income from
+  continuing operations without it (2.004 times), so the benefit-only reading of the AVGO mirror test would exclude 2017; the net measure,
+  which also nets the year's one-off charges, is the one every PFE test has used, and it keeps 2017 (see the sensitivity below).
+- **History: four more vintages,** each year from the latest 10-K that reports it:
+  - FY2017 (2008-2017), FY2018 (2009-2018), FY2019 (2010-2019), ten years each, diluted EPS from continuing operations: 2017 $3.52, 2018
+    $1.86, 2019 $2.87;
+  - **FY2020: the FY2020 10-K restates 2016-2019 without Upjohn** (a discontinued operation from its spin-off): 2016 $(0.02), 2017
+    $2.23, 2018 $0.64, 2019 $1.91, 2020 $1.24. A loss has no P/E, so 2016 is excluded, and an excluded year that is not the latest takes
+    the history and the P/E window with it (the r2 wording, "the P/E window starts after it"; the PFE 2003 rule): the FY2020 vintage
+    holds 2017-2020 and the window starts on 2017-01-01 (4.1 years on 2021-02-26, 5.0 at the end of 2021). The restated 2017-2019 keep
+    their earlier tests (the 2014-2017 rule for restated years); no filing restates their one-offs per share;
+  - the FY2017-FY2019 10-Ks give no share counts in the financial summary, so diluted shares come from each statement of income (three
+    years) and earlier years keep the latest filing that reports them.
+- **The Q4 2020 print restates 2019 without Upjohn** ($1.91 and $41.172B against the FY2019 10-K's $2.87 and $51.750B) from 2021-02-02
+  to the FY2020 10-K (the `restates` encoding).
+- **The Upjohn spin-off is a distribution, not a split.** Pfizer holders received "approximately 0.124079 shares of Viatris common stock
+  for every one share of Pfizer common stock" (8-K of 2020-11-16, after the close, dated 2020-11-17). Yahoo books it as a 1054:1000 split
+  on 2020-11-17; the builder undoes that factor for the days before (`distributions`, the MAR 2011 rule), so every price stays as traded
+  and the drop stays in the series. A builder change that moves no earlier output (every earlier date already multiplied by the factor).
+  The pre-spin P/Es of the FY2020 vintage's window therefore carry Viatris's value against EPS without Upjohn (the MAR judgement call).
+- **Guides: revenues as published, for the fiscal year only,** each from the latest guide that states it:
+  - FY2018: $53.5-55.5B (Q4 2017, with a full year of Consumer Healthcare; reaffirmed in Q1), $53.0-55.0B (Q2), $53.0-53.7B (Q3);
+  - FY2019: $52.0-54.0B (Q4 2018, Q1 2019), $50.5-52.5B (Q2 2019: Consumer Healthcare only to July 31, then Pfizer's share of the
+    joint venture's earnings; Array and Therachon in), $51.2-52.2B (Q3 2019);
+  - FY2020: the Total Company ranges, with Upjohn for the full year: $48.5-50.5B (Q4 2019, Q1 2020), $48.6-50.6B (Q2), $48.8-49.5B (Q3).
+    The "New Pfizer" ranges (as if the Upjohn combination had closed at the start of 2020: $40.7-42.3B, then $40.8-42.4B) go in the note,
+    as the reporting entity's guide is the Total Company one. The 8-K of 2020-11-16 says the guidance was "not updated" and now "overstates
+    expected total company results": words only, so the last ranges stand and the words go in the note (the ACN rule);
+  - FY2021: $59.4-61.4B (Q4 2020, about $15 billion of BNT162b2), $70.5-72.5B (Q1 2021, about $26 billion), $78.0-80.0B (Q2, about $33.5
+    billion), $81.0-82.0B (Q3, about $36 billion of Comirnaty). The 8-K of 2021-01-12 gives a preliminary adjusted EPS range only and is
+    superseded by the Q4 2020 release before FY2021 is current (inert);
+  - the ranges are read as growth on the last full year in the history: the Consumer Healthcare joint venture and the Upjohn spin-off out
+    against a base that includes them until the base is restated (the LOW 2011 rule), Array in (the SHW Valspar rule).
+- **Dividends,** each from the first filing that states the rate: $0.34 (Q4 2017 release, "declared a 34-cent first-quarter 2018
+  dividend"), $0.36 (Q4 2018 release), $0.38 (FY2019 10-K) and $0.39 (FY2020 10-K; the Q4 2019 and Q4 2020 releases do not state them).
+- **Signals,** from each release's revenue table and statement of income as before. From Q4 2020 the table's row reads "TOTAL
+  REVENUES(b)"; Upjohn is out of both quarters from Q4 2020, Consumer Healthcare out of the quarters from Q4 2019 and in their year-ago
+  quarters to Q2 2020. U.S. plus international misses the worldwide total by $1M in Q4 2020 and Q3 2021 (the release's rounding, allowed
+  since 2014).
+- **Durability: DURABLE, risk 2, unchanged.** The FY2017-FY2020 10-Ks keep "is a research-based, global biopharmaceutical company" and
+  the generic-competition risk ("the resulting price competition can substantially decrease our revenues for the impacted products, often
+  in a very short period of time", FY2020). No theme in `taxonomy_eras.json` is live for a pharmaceutical company through 2021 (GLP1 is
+  from 2023-08-08 and scoped elsewhere), so the watch list stays empty; COVID-19 vaccine revenues are a product, not a substitution theme.
+- **Segment bridge** (display only): Innovative Health and Essential Health (FY2017, FY2018), Biopharma, Upjohn and Other (FY2019), and
+  from the FY2020 10-K, with one operating segment after the spin-off, its six therapeutic categories.
+- **Adds nothing:** the Consumer Healthcare joint-venture agreement (2018-12-19) and closing (2019-08-05) 8-Ks ("slightly accretive"),
+  the Array tender offer (2019-06-17, its adjusted-EPS dilution), the Upjohn-Mylan agreement and its Form 425s (Mylan's guidance and the
+  combined company's pro forma projections are not Pfizer guides), the vote, officer, by-law and debt 8-Ks, the DEFA14A proxy materials,
+  and the 10-Qs beyond their dividend statements.
+- **Builder changes:** the `distributions` rule above; years excluded from the EPS history as reported (`eps_excluded`, the NKE, AVGO and
+  XOM encoding: their days leave the window, growth is measured between years in the history), used here only by the sensitivity tests;
+  the distribution's source joins a model's sources from its date. No earlier output changes.
+
+Controls and checks:
+- **Controls:** altering one value of each print (its U.S./international split, each Q4 print's full-year EPS, the restated 2019), each
+  vintage (its last year's EPS and its dividend), each guide field (revenues, adjusted EPS, the policy words), each dividend, and removing
+  the distribution changes none of the 8 weekly dates before its publication and changes the first weekly date on or after it: 80 of 81;
+  the other is the 2021-01-12 8-K's preliminary range, inert as above.
+- **Leak scan:** the source ids, titles, notes, texts and figures of every fact in the fact sheet appear in no model of the 732 dated
+  before their publication (0 hits in 350,915 pairs, after dropping 110 strings an earlier fact carries).
+- **`retro_tool run`:** passes on all 209 dates; each draws one warning for calendar years, "2070" (the pre-tax margin signal's XBULL
+  threshold).
+- **Firewall:** passes at the 24 cutoffs above and at three earlier ones rerun after the builder change (2009-01-27, 2014-05-05,
+  2016-02-16), with 0 files changed and no planted text; the planted facts now also include a later vintage excluding a year.
+- No file shared with another ticker changed, so no other model can move.
+
+Seen in the build (method behaviour, not tuned):
+- **January 2018: RICH** (4 dates): FY17E is FY16's $1.17 (no guide), 31-33x.
+- **From the Q4 2017 print to January 2019: CHEAP on 52 dates** (BUY) on FY17's $3.52, which carries the Tax Act benefit: $34.16-46.23 is
+  9.7-13.1x (the 6th-24th percentile of a window whose median is 18.3x), 12-35% under a 15x floor ($52.80); BASE +2.8% to +5.1%/yr, BULL
+  the decade CAGR (+11.6% to +13.0%), XBULL the 2015-2017 run (+78.1%/yr), Ratio B 0.20-0.48.
+- **From the Q4 2018 print to January 2020: RICH on 52 dates** (AVOID) on FY18's $1.86: 18.5-23.6x (35th-79th percentile), 9-39% above a
+  17-18x floor ($31.62-33.48); BASE -2.2% to +0.6%/yr; BEAR the 2018 step (-47.2%/yr, $3.52 to $1.86); Ratio B 2.2-12.5.
+- **From the Q4 2019 print to January 2021: CHEAP on 53 dates** (BUY, ACCUMULATE on 2) on FY19's $2.87, which carries the
+  joint-venture gain and Upjohn: 10.1-14.3x (8th-25th percentile), 14-37% under a 16-17x floor ($45.92-48.79), Ratio B 0.40-0.81. From
+  2020-11-20 the price ($35.90-41.12) is without Viatris and the EPS still with Upjohn, until the Q4 2020 print restates 2019.
+- **From the Q4 2020 print: CHEAP on 45 of 48 dates** (BUY on 42, ACCUMULATE on 3), **FAIR on 3** (2021-12-17 to 12-31). FY21E is FY20's $1.24 (without Upjohn): 27-48x, but
+  BASE takes the vaccine-driven revenue ranges, +47.8%/yr (Q4 2020) to +73.1%, +91.0% and +97.0%/yr (Q3 2021), and BULL and XBULL equal
+  it, so the BASE price runs far above the price (Ratio B 0.35-0.81) while the price sits 17-109% above the floor; from the FY2020 10-K
+  the window (from 2017) has a 26.4-29.2x median and a 23x floor ($28.52), and BEAR is the restated 2018 step (-71.3%/yr).
+- **The proxy composite** is 1.50-3.10: international growth turns positive in 2018 (+4.4% to +10.5%), U.S. and total revenues fall in
+  2019-2020 (to -15.1% and -11.0%), and in 2021 revenues rise 44.6-134.4% with the vaccine while the gross margin falls 964-2,186bp.
+- **Robustness:** all eight variants agree on 172 of 209 dates (147 CHEAP, 25 RICH); 31 dates split FAIR/RICH (2019) and 6 CHEAP/FAIR
+  (February 2021 and December 2021).
+
+Sensitivity (each call changed alone, the 209 dates reclassified offline with `retro_tool`'s own classifier; no outcome consulted):
+- **2017 excluded on the Tax Act benefit alone** (the gap encoding; with the restated 2016 loss the FY2020 vintage then starts in 2018):
+  **57 classes**, 71 tiers: 52 CHEAP to RICH (48 in 2018, FY16's $1.17 standing for FY18E), 2 RICH to FAIR and 3 FAIR to CHEAP;
+- **the adjusted EPS guide as current-year EPS** (against the GAAP history): **55 classes**, all toward CHEAP (48 RICH to CHEAP in 2019),
+  55 tiers;
+- **the dollar revenue guides not used** (BASE on the latest quarter's growth): 13 classes (10 CHEAP to RICH, 3 CHEAP to FAIR; February to
+  April 2021), 25 tiers;
+- **the restated 2016 loss as a gap** (ten years ex-FY16 instead of the history starting in 2017): 11 classes, CHEAP to FAIR (August to
+  December 2021), 4 tiers;
+- Yahoo's distribution factor kept (pre-spin prices scaled down): 3 classes (CHEAP to FAIR, late 2021), 6 tiers;
+- the Q4 2020 restatement of 2019 ignored: none, 3 tiers;
+- every signal at its BEAR value: 30 classes in 2021 (26 CHEAP to FAIR, 3 CHEAP to RICH, 1 FAIR to RICH); at XBULL: none; no tier either
+  way.
+
+Judgement calls that could carry hindsight:
+- the distorted-year test on the PFE net measure, which keeps 2017 at $3.52 (57 classes against the Tax Act benefit alone, a 2.004 ratio
+  against the rule's 2);
+- GAAP EPS with no reported guide, so the last full year stands each year, against the company's adjusted guide (55 classes);
+- the restated 2016 loss taking the history and the window with it (11 classes against a gap);
+- the revenue ranges read on the last full year, with the vaccine revenues of 2021 carried into BASE as EPS growth (13 classes without the
+  ranges); the Total Company 2020 ranges rather than the New Pfizer ones;
+- prices as traded through the Upjohn distribution (3 classes with Yahoo's factor kept);
+- the signals and DURABLE, as in 2008-2017.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -11876,7 +12018,8 @@ What the gates enforce:
   The list stays empty through 2013: the FY2009-FY2012 10-Ks keep generic competition as "a major challenge for us around the world",
   and Lipitor's loss of U.S. exclusivity in November 2011 is the same cycle, so the words stay in the "why" ("PFE 2010-2013").
   It stays empty through 2017: the FY2013-FY2016 10-Ks keep generic competition as "a major challenge", and the FY2016 10-K's mention
-  of biosimilars is the same cycle for biologics, not a theme in the registry ("PFE 2014-2017").
+  of biosimilars is the same cycle for biologics, not a theme in the registry ("PFE 2014-2017"). It stays empty through 2021: the
+  FY2017-FY2020 10-Ks keep the same generic and biosimilar competition, and COVID-19 vaccine revenues are a product ("PFE 2018-2021").
 
 ## Workflow
 
