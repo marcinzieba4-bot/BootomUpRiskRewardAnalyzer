@@ -1,13 +1,15 @@
 # PFE retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the PFE weekly dates: 314 from 2008-01-04 to 2013-12-31, all Pfizer Inc (NYSE: PFE). They are
+Patterns seen in `outcome.json` for the PFE weekly dates: 523 from 2008-01-04 to 2017-12-29, all Pfizer Inc (NYSE: PFE). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time
-build was committed and pushed (40abcf7 for 2008-2009, e054737 for 2010-2013). Outcomes were computed on 2026-11-10 from the closes
-posted to 2026-11-09; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30). Total returns include the
-dividends paid in each horizon; the prices are on the as-traded basis of the models (Yahoo's series times its 1.054 factor of
-2020-11-17, after every horizon). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
-is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark
-(SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and lag it.
+build was committed and pushed (40abcf7 for 2008-2009, e054737 for 2010-2013, 0f08467 for 2014-2017). Outcomes were computed on
+2026-11-10 from the closes posted to 2026-11-09 (2008-2013) and 2026-11-10 (2014-2017); every date has its 6-month, 1-, 2- and 3-year
+horizons (the last ends 2020-12-29). Total returns include the dividends paid in each horizon; the prices are on the as-traded basis of
+the models (Yahoo's series times its 1.054 factor of 2020-11-17, after every horizon but the three-year ones of the 7 dates from
+2017-11-17, which cross that day: there the factor counts the Upjohn/Viatris distribution as if it were a split, the tool's standing
+treatment, and the price after it is Yahoo's times 1.054). Medians of an even count take the upper middle value
+(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP
+should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and lag it.
 
 ## 2008 (53 dates)
 
@@ -200,6 +202,104 @@ is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: 
 - **The two-year price landed nearest BULL on 27 dates, BASE on 23 and XBULL on 3**: the CHEAP dates nearest BASE at 0.73-0.83 times
   the gain-inclusive BASE price.
 
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 4 | +9.2% | +6.0% to +12.8% | 0 | 0 | +10.5% | 0 |
+| class RICH, legacy tier AVOID | 48 | +18.2% | -1.4% to +32.8% | 1 | 28 | +9.7% | 20 |
+| FY13E $3.10 (2014-01-03 to 2014-01-24) | 4 | +9.2% | +6.0% to +12.8% | 0 | 0 | +10.5% | 0 |
+| FY14E $1.645 (2014-01-29 to 2014-05-02) | 14 | +2.4% | -1.4% to +15.2% | 0 | 0 | +6.1% | 14 |
+| FY14E $1.65 (2014-05-06 to 2014-07-25) | 12 | +24.4% | +21.5% to +29.2% | 0 | 12 | +10.2% | 0 |
+| FY14E $1.545 (2014-07-30 to 2014-12-26) | 22 | +20.9% | +6.0% to +32.8% | 1 | 16 | +11.9% | 6 |
+| latest print Q3 2013 (2014-01-03 to 2014-01-24) | 4 | +9.2% | +6.0% to +12.8% | 0 | 0 | +10.5% | 0 |
+| latest print Q4 2013 (2014-01-29 to 2014-05-02) | 14 | +2.4% | -1.4% to +15.2% | 0 | 0 | +6.1% | 14 |
+| latest print Q1 2014 (2014-05-06 to 2014-07-25) | 12 | +24.4% | +21.5% to +29.2% | 0 | 12 | +10.2% | 0 |
+| latest print Q2 2014 (2014-07-30 to 2014-10-24) | 13 | +25.0% | +18.2% to +32.8% | 1 | 13 | +13.2% | 0 |
+| latest print Q3 2014 (2014-10-29 to 2014-12-26) | 9 | +10.1% | +6.0% to +16.0% | 0 | 3 | +6.0% | 6 |
+
+- **The January 2014 CHEAP calls failed, like the gain-inclusive CHEAP calls of late 2013.** On FY13E $3.10 with the Zoetis gain the four
+  dates ($30.09-31.09, 9.7-10.0x) returned +6.0% to +12.8% over two years and lagged SPY on all four.
+- **RICH held on 20 of 48, and the split was the entry window.** The 14 dates from the Q4 2013 print to 2014-05-02 ($29.86-32.43) returned
+  -1.4% to +15.2% and lagged SPY: all held. The 25 dates from 2014-05-06 to 2014-10-24 ($27.83-30.73), on FY13's $1.65 while the reported
+  guide was withdrawn and then on $1.545, returned +18.2% to +32.8% and beat SPY on all 25: none held. The Q3 2014 dates held on 6 of 9.
+  Over three years no 2014 date cleared the hurdle and 45 of 52 held.
+- **Entry price ranks the outcome** at -0.96 against the return to the m12-24 average price and -0.81 against the two-year return; the
+  EPP gap at -0.54 and -0.50, the proxy composite at -0.50 and -0.72.
+- **The two-year price landed nearest BULL on 37 dates and BASE on 15.**
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +6.8% | -0.6% to +23.8% | 0 | 0 | -1.3% | 53 |
+| FY14E $1.545 (2015-01-02 to 2015-01-23) | 4 | +9.6% | +4.1% to +11.1% | 0 | 0 | +1.4% | 4 |
+| FY15E $1.445 (2015-01-28 to 2015-04-24) | 13 | +5.6% | +1.0% to +8.1% | 0 | 0 | -2.9% | 13 |
+| FY15E $1.395 (2015-04-29 to 2015-07-24) | 13 | +4.2% | -0.6% to +7.9% | 0 | 0 | -1.8% | 13 |
+| FY15E $1.425 (2015-07-29 to 2015-10-23) | 13 | +11.7% | -0.6% to +19.0% | 0 | 0 | -0.2% | 13 |
+| FY15E $1.40 (2015-10-28 to 2015-12-31) | 10 | +17.6% | +7.3% to +23.8% | 0 | 0 | +4.3% | 10 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-23) | 4 | +9.6% | +4.1% to +11.1% | 0 | 0 | +1.4% | 4 |
+| latest print Q4 2014 (2015-01-28 to 2015-04-24) | 13 | +5.6% | +1.0% to +8.1% | 0 | 0 | -2.9% | 13 |
+| latest print Q1 2015 (2015-04-29 to 2015-07-24) | 13 | +4.2% | -0.6% to +7.9% | 0 | 0 | -1.8% | 13 |
+| latest print Q2 2015 (2015-07-29 to 2015-10-23) | 13 | +11.7% | -0.6% to +19.0% | 0 | 0 | -0.2% | 13 |
+| latest print Q3 2015 (2015-10-28 to 2015-12-31) | 10 | +17.6% | +7.3% to +23.8% | 0 | 0 | +4.3% | 10 |
+
+- **RICH held on all 53 dates.** On FY15E $1.395-1.445 (and FY14E $1.545 in January), 19-25x GAAP EPS against an 18.5x median, the stock
+  ($31.33-35.76) returned -0.6% to +23.8% over two years while SPY returned +13.1% to +38.8%; it lagged on every date (by 2.0-22.4pp) and
+  cleared the hurdle on none. Its m12-24 average price sat 7.1% under to 6.1% over the entry. Over three years 44 of 53 held (9 beat SPY,
+  none cleared the hurdle).
+- **Entry price ranks the outcome** at -0.97 (m12-24) and -0.74 (two years); the EPP gap at -0.81 and -0.68, the right sign.
+- **The two-year price landed nearest BULL on all 53 dates**, as the BULL case (the history's EPS CAGR, -0.1% to +3.7%/yr) sat close to
+  the entry price.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST | 3 | +13.2% | +11.9% to +14.7% | 0 | 0 | +4.8% | 0 |
+| class RICH, legacy tier AVOID | 49 | +28.8% | +8.6% to +54.5% | 18 | 13 | +11.0% | 31 |
+| FY15E $1.40 (2016-01-08 to 2016-01-29) | 4 | +28.3% | +25.6% to +36.1% | 1 | 0 | +11.7% | 3 |
+| FY16E $1.605 (2016-02-03 to 2016-04-29) | 13 | +26.6% | +16.0% to +33.4% | 1 | 0 | +15.7% | 12 |
+| FY16E $1.785 (2016-05-04 to 2016-07-29) | 13 | +11.2% | +8.6% to +15.0% | 0 | 0 | +1.6% | 10 |
+| FY16E $1.11 (2016-08-03 to 2016-12-30) | 22 | +41.4% | +22.2% to +54.5% | 16 | 13 | +17.1% | 6 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-29) | 4 | +28.3% | +25.6% to +36.1% | 1 | 0 | +11.7% | 3 |
+| latest print Q4 2015 (2016-02-03 to 2016-04-29) | 13 | +26.6% | +16.0% to +33.4% | 1 | 0 | +15.7% | 12 |
+| latest print Q1 2016 (2016-05-04 to 2016-07-29) | 13 | +11.2% | +8.6% to +15.0% | 0 | 0 | +1.6% | 10 |
+| latest print Q2 2016 (2016-08-03 to 2016-10-28) | 13 | +34.2% | +22.2% to +46.4% | 7 | 4 | +8.1% | 6 |
+| latest print Q3 2016 (2016-11-02 to 2016-12-30) | 9 | +44.5% | +37.2% to +54.5% | 9 | 9 | +21.3% | 0 |
+
+- **RICH held on 31 of 49; the 3 FAIR dates failed.** From January to July 2016, on FY15E $1.40 and FY16E $1.605 and $1.785, RICH held
+  on 25 of 27 (+8.6% to +36.1% against SPY's stronger run); the three FAIR dates of May 2016 ($33.19-34.61) returned +11.9% to +14.7% and
+  lagged SPY by 22.5-23.4pp, so FAIR's ±15pp band failed where RICH would have held.
+- **The RICH calls on FY15's $1.11 failed.** From 2016-08-03, with no reported EPS guide in force, the stock was 27.6-31.8x the last GAAP
+  year and RICH: the 22 dates ($30.63-35.29) returned +22.2% to +54.5% over two years (to late 2018), cleared the hurdle on 16 and beat
+  SPY on 13; 6 held. Over three years 39 of the year's 52 dates held and 9 cleared the hurdle.
+- **The signals and gaps ranked with the wrong signs**: the proxy composite at -0.75 against the two-year return, Ratio B at +0.68, the
+  EPP gap at +0.45, because the highest-multiple dates (the $1.11 dates) were the ones that rose most. Entry price ranks the m12-24
+  average price at -0.82.
+- **The two-year price landed nearest BULL on 19 dates, XBULL on 19 and BASE on 14.**
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +31.0% | +7.0% to +43.9% | 21 | 29 | +20.9% | 23 |
+| FY16E $1.11 (2017-01-06 to 2017-01-27) | 4 | +40.0% | +36.3% to +42.2% | 4 | 4 | +24.2% | 0 |
+| FY17E $1.17 (2017-02-01 to 2017-12-29) | 48 | +27.7% | +7.0% to +43.9% | 17 | 25 | +20.7% | 23 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-27) | 4 | +40.0% | +36.3% to +42.2% | 4 | 4 | +24.2% | 0 |
+| latest print Q4 2016 (2017-02-01 to 2017-04-28) | 13 | +32.0% | +25.0% to +43.9% | 6 | 11 | +19.1% | 2 |
+| latest print Q1 2017 (2017-05-03 to 2017-07-28) | 13 | +36.1% | +31.6% to +39.9% | 11 | 13 | +26.8% | 0 |
+| latest print Q2 2017 (2017-08-02 to 2017-10-27) | 13 | +11.1% | +7.0% to +23.8% | 0 | 1 | +18.3% | 12 |
+| latest print Q3 2017 (2017-11-01 to 2017-12-29) | 9 | +15.0% | +10.6% to +16.7% | 0 | 0 | +12.5% | 9 |
+
+- **RICH held on 23 of 52 at two years and on all 52 at three.** The four January dates (still on FY15's $1.11) and the 26 from the Q4
+  2016 print to 2017-07-28 (on FY16's $1.17, 27-31x) returned +25.0% to +43.9% to early and mid 2019, cleared the hurdle on 21 and beat
+  SPY on 28: 2 held. The 22 dates from the Q2 2017 print ($32.67-37.20) returned +7.0% to +23.8% and held on 21. Over three years (to
+  the end of 2020) every 2017 date lagged SPY (-0.5% to +40.8% against stronger benchmark returns) and none cleared the hurdle.
+- **Ratio B was infinite on every 2017 date** (the price above the BULL price), so it ranks nothing; the EPP gap ranks the m12-24 average
+  price at -0.93 and the two-year return at -0.69, entry price at -0.89 and -0.78.
+- **The two-year price landed nearest BULL on 42 dates and XBULL on 10.**
+
 ## The encoding calls, seen afterwards (2008-2009)
 
 Only one judgement call recorded in retro/README.md ("PFE") moves classes: the 2003 exclusion taking the history and the window with it.
@@ -221,4 +321,21 @@ the outcomes was the EPS line the multiple was read on (GAAP with recurring amor
 figure), and the stock's rerating from the bottom of its own 2004-2011 range while reported EPS fell, which the BULL case, built on a
 negative history CAGR, did not reach. Both are hypotheses to test across tickers, never a reason to re-encode PFE: the encodings were
 decided before any outcome existed, and changing one means a new method version and a full re-run.
+
+## The encoding calls, seen afterwards (2014-2017)
+
+The calls of 2014-2017 held on 127 of 209 dates at two years (20, 53, 31 and 23 a year) and 180 at three. Scored against the same
+outcomes, the README's sensitivity variants would have held on: the adjusted EPS guide as current-year EPS where no reported guide was in
+force 155 (57 gained: 12 in 2014, 16 in 2016, 29 in 2017; 29 lost: 6 in 2016, 23 in 2017); the Q2 2016 policy not read as a withdrawal
+133 (6 gained); the history from 2004 in every vintage, the FY2016 ranges on pro forma 2015 revenues and every signal at BEAR 130 each (3
+gained, the May 2016 FAIR dates); every signal at XBULL 124 (3 lost); the dollar revenue guides unused 114 (1 gained, 14 lost in 2016).
+The Q1 2014 withdrawal and the 2016-02-16 reissue move no class.
+
+What separated the outcomes was again the EPS line the multiple was read on. GAAP EPS carried $0.40-0.48 a share of recurring
+amortization every year, and once Pfizer stopped guiding GAAP EPS (from 2016-08-02) the last GAAP year stood as current-year EPS, so the
+stock read 27-32x and RICH while it rose 22-54% over two years from August 2016 to July 2017; the GAAP reading held in the flat 2015
+and in the second half of 2017. Hypotheses to test across tickers, never a reason to re-encode PFE: a company that guides only
+non-GAAP EPS may need a current-year EPS other than the last GAAP year when its GAAP figure carries large recurring amortization; and,
+as in every one-stock series, entry price ranks the outcome (-0.82 to -0.97 against the m12-24 average price each year). The encodings
+were decided before any outcome existed, and changing one means a new method version and a full re-run.
 
