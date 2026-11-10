@@ -1,15 +1,16 @@
 # PFE retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the PFE weekly dates: 523 from 2008-01-04 to 2017-12-29, all Pfizer Inc (NYSE: PFE). They are
+Patterns seen in `outcome.json` for the PFE weekly dates: 732 from 2008-01-04 to 2021-12-31, all Pfizer Inc (NYSE: PFE). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time
-build was committed and pushed (40abcf7 for 2008-2009, e054737 for 2010-2013, 0f08467 for 2014-2017). Outcomes were computed on
-2026-11-10 from the closes posted to 2026-11-09 (2008-2013) and 2026-11-10 (2014-2017); every date has its 6-month, 1-, 2- and 3-year
-horizons (the last ends 2020-12-29). Total returns include the dividends paid in each horizon; the prices are on the as-traded basis of
-the models (Yahoo's series times its 1.054 factor of 2020-11-17, after every horizon but the three-year ones of the 7 dates from
-2017-11-17, which cross that day: there the factor counts the Upjohn/Viatris distribution as if it were a split, the tool's standing
-treatment, and the price after it is Yahoo's times 1.054). Medians of an even count take the upper middle value
-(`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP
-should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and lag it.
+build was committed and pushed (40abcf7 for 2008-2009, e054737 for 2010-2013, 0f08467 for 2014-2017, 0ce7593 for 2018-2021). Outcomes
+were computed on 2026-11-10 from the closes posted to 2026-11-09 (2008-2013) and 2026-11-10 (2014-2021); every date has its 6-month, 1-,
+2- and 3-year horizons (the last ends 2024-12-31). Total returns include the dividends paid in each horizon; the prices are on the
+as-traded basis of the models (Yahoo's series times its 1.054 factor of 2020-11-17, for the dates before that day: a horizon that
+crosses it counts the Upjohn/Viatris distribution as if it were a split, the tool's standing treatment, so the distributed Viatris
+shares stay in the holding (the MAR rule for outcomes); dates from 2020-11-17 use Yahoo's series as it is, the price as traded). Medians
+of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over
+three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it,
+and RICH should miss the hurdle and lag it.
 
 ## 2008 (53 dates)
 
@@ -300,6 +301,100 @@ should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±1
   price at -0.93 and the two-year return at -0.69, entry price at -0.89 and -0.78.
 - **The two-year price landed nearest BULL on 42 dates and XBULL on 10.**
 
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 48 | +0.8% | -11.7% to +19.7% | 0 | 6 | -2.4% | 6 |
+| class RICH, legacy tier AVOID | 4 | +15.7% | +9.3% to +17.2% | 0 | 0 | +8.3% | 4 |
+| FY17E $1.17 (2018-01-05 to 2018-01-26) | 4 | +15.7% | +9.3% to +17.2% | 0 | 0 | +8.3% | 4 |
+| FY18E $3.52 (2018-01-31 to 2018-12-28) | 48 | +0.8% | -11.7% to +19.7% | 0 | 6 | -2.4% | 6 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-26) | 4 | +15.7% | +9.3% to +17.2% | 0 | 0 | +8.3% | 4 |
+| latest print Q4 2017 (2018-01-31 to 2018-04-27) | 13 | +6.3% | -10.2% to +19.7% | 0 | 2 | +8.4% | 2 |
+| latest print Q1 2018 (2018-05-02 to 2018-07-27) | 13 | +5.5% | -2.1% to +16.0% | 0 | 4 | +2.3% | 4 |
+| latest print Q2 2018 (2018-08-01 to 2018-10-26) | 13 | -6.9% | -11.7% to +3.7% | 0 | 0 | -14.0% | 0 |
+| latest print Q3 2018 (2018-10-31 to 2018-12-28) | 9 | -3.9% | -10.8% to +5.7% | 0 | 0 | -15.9% | 0 |
+
+- **CHEAP held on 6 of 48: the multiple was read on a tax-inflated year.** With no reported guide, FY18E was FY17's $3.52, which carries the
+  $10.7 billion Tax Act benefit, so the stock ($34.16-46.23) read 10-13x and CHEAP all year. It returned -11.7% to +19.7% over two years
+  (median +0.8%), cleared the hurdle on no date and beat SPY on 6 (March-May 2018, by 0.1-4.4pp); the two-year price landed nearest BEAR
+  on all 48. Over three years (into the 2021 vaccine run) 6 held and 2 cleared the hurdle; none beat SPY.
+- **January 2018's RICH dates held** (4 of 4): on FY16's $1.17, 31-33x, they returned +9.3% to +17.2% and lagged SPY.
+- **Entry price ranks the outcome** at -0.94 against the m12-24 average price; the EPP gap at -0.69, Ratio B at -0.68.
+- **Hindsight on the near case:** with 2017 excluded on the Tax Act benefit alone (the README sensitivity), the 48 CHEAP dates read RICH
+  on FY16's $1.17, and 42 of them would have held where 6 CHEAP calls did. Hypothesis, not a rule: a one-time tax benefit standing in
+  as current-year EPS may mislead the multiple; test the benefit-only reading of the r2 mirror test on other tickers' Tax Act years,
+  never re-encode PFE.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 4 | -0.3% | -2.9% to +4.0% | 0 | 0 | -13.5% | 0 |
+| class RICH, legacy tier AVOID | 48 | +10.7% | -11.2% to +72.0% | 18 | 6 | -6.2% | 30 |
+| FY18E $3.52 (2019-01-04 to 2019-01-25) | 4 | -0.3% | -2.9% to +4.0% | 0 | 0 | -13.5% | 0 |
+| FY19E $1.86 (2019-01-30 to 2019-12-27) | 48 | +10.7% | -11.2% to +72.0% | 18 | 6 | -6.2% | 30 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-25) | 4 | -0.3% | -2.9% to +4.0% | 0 | 0 | -13.5% | 0 |
+| latest print Q4 2018 (2019-01-30 to 2019-04-26) | 13 | -3.5% | -11.2% to +10.9% | 0 | 0 | -11.7% | 13 |
+| latest print Q1 2019 (2019-05-01 to 2019-07-26) | 13 | +6.1% | +2.2% to +10.7% | 0 | 0 | -9.6% | 13 |
+| latest print Q2 2019 (2019-07-30 to 2019-10-25) | 13 | +35.5% | +25.3% to +62.3% | 10 | 1 | +12.8% | 3 |
+| latest print Q3 2019 (2019-10-30 to 2019-12-27) | 9 | +50.0% | +27.9% to +72.0% | 8 | 5 | +12.1% | 1 |
+
+- **RICH held on 30 of 48; the January CHEAP dates failed** (4 of 4, still on FY17's $3.52, -2.9% to +4.0%). On FY18's $1.86 (18.5-23.6x)
+  the 26 dates to 2019-07-26 returned -11.2% to +10.9% over two years against SPY's +42.5% or more and all held; the 22 from the Q2 2019
+  print ($34.34-39.32, after the Upjohn-Mylan announcement) returned +25.3% to +72.0% into 2021, cleared the hurdle on 18 and held on 4.
+  Over three years 22 held and 26 beat SPY.
+- **Entry price ranks the outcome** at -0.90 (m12-24) and -0.79 (two years); the EPP gap at -0.59 and -0.54, the proxy composite at -0.74
+  and -0.69 (wrong signs: its 2019 readings fell as revenues fell, before the rise).
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 2 | +34.0% | +33.5% to +34.0% | 2 | 2 | +24.5% | 2 |
+| class CHEAP, legacy tier BUY | 47 | +48.9% | +27.7% to +109.1% | 45 | 44 | +39.0% | 47 |
+| class RICH, legacy tier AVOID | 4 | +58.1% | +44.4% to +61.5% | 4 | 4 | +14.3% | 0 |
+| FY19E $1.86 (2020-01-03 to 2020-01-24) | 4 | +58.1% | +44.4% to +61.5% | 4 | 4 | +14.3% | 0 |
+| FY20E $2.87 (2020-01-29 to 2020-12-31) | 49 | +47.9% | +27.7% to +109.1% | 47 | 46 | +38.9% | 49 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-24) | 4 | +58.1% | +44.4% to +61.5% | 4 | 4 | +14.3% | 0 |
+| latest print Q4 2019 (2020-01-29 to 2020-04-24) | 13 | +60.4% | +44.3% to +109.1% | 13 | 11 | +35.3% | 13 |
+| latest print Q1 2020 (2020-04-29 to 2020-07-24) | 13 | +57.3% | +44.1% to +79.8% | 13 | 12 | +41.6% | 13 |
+| latest print Q2 2020 (2020-07-29 to 2020-10-23) | 13 | +41.4% | +27.7% to +48.9% | 11 | 13 | +39.7% | 13 |
+| latest print Q3 2020 (2020-10-28 to 2020-12-31) | 10 | +44.8% | +33.5% to +50.3% | 10 | 10 | +35.5% | 10 |
+
+- **CHEAP held on all 49 dates; the January RICH dates failed.** On FY19's $2.87 (10-14x; the joint-venture gain and Upjohn inside, and
+  from 2020-11-20 a price without Viatris), the stock ($29.01-41.12, the COVID low of March included) returned +27.7% to +109.1% over two
+  years into the vaccine run of 2021-2022, cleared the hurdle on 47 and beat SPY on 46. The four January dates on FY18's $1.86 (21-22x,
+  RICH) returned +44.4% to +61.5% and failed. Over three years (to 2023, after the peak) 7 of 53 held, 2 cleared the hurdle.
+- **Entry price ranks the m12-24 average price at -0.76**; the EPP gap at -0.71, Ratio B at -0.81. The two-year price landed nearest
+  BASE on 49 dates.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 3 | +12.2% | +8.8% to +15.0% | 0 | 3 | +21.7% | 3 |
+| class CHEAP, legacy tier BUY | 46 | +0.1% | -40.8% to +45.7% | 6 | 20 | +12.4% | 20 |
+| class FAIR, legacy tier BUY | 3 | -46.1% | -49.8% to -45.8% | 0 | 0 | -36.6% | 0 |
+| FY20E $2.87 (2021-01-08 to 2021-01-29) | 4 | +39.0% | +30.8% to +45.7% | 2 | 4 | +35.2% | 4 |
+| FY21E $1.24 (2021-02-03 to 2021-12-31) | 48 | -2.2% | -49.8% to +35.6% | 4 | 19 | +9.3% | 19 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-29) | 4 | +39.0% | +30.8% to +45.7% | 2 | 4 | +35.2% | 4 |
+| latest print Q4 2020 (2021-02-03 to 2021-04-30) | 13 | +21.8% | +8.8% to +35.6% | 4 | 13 | +35.5% | 13 |
+| latest print Q1 2021 (2021-05-05 to 2021-07-23) | 12 | +4.3% | -2.6% to +11.5% | 0 | 6 | +15.5% | 6 |
+| latest print Q2 2021 (2021-07-29 to 2021-10-29) | 14 | -15.2% | -23.8% to -8.2% | 0 | 0 | -5.4% | 0 |
+| latest print Q3 2021 (2021-11-03 to 2021-12-31) | 9 | -39.3% | -49.8% to -23.1% | 0 | 0 | -27.6% | 0 |
+
+- **CHEAP held on 23 of 49, FAIR failed on 3, and none held at three years.** The four January dates (FY20E $2.87) and the 13 from the Q4
+  2020 print to April ($33.49-38.66) returned +8.8% to +45.7% over two years and held; from the Q1 2021 print the price rose to $59.48 while
+  FY21E stayed at FY20's $1.24 and BASE took the vaccine revenue ranges (+73% to +97%/yr): those 35 dates (32 CHEAP, 3 FAIR) returned -49.8% to +11.5% to
+  2023, 6 held, and the three FAIR dates of late December ($58.71-59.48) lost 45.8-49.8%. Over three years every 2021 date lost (-47.3% to
+  -4.4%) and lagged SPY.
+- **Rankings:** entry price ranks the m12-24 average price at -0.99 and the two-year return at -0.96; Ratio B ranks them at +0.69 and
+  +0.71, the wrong sign, as the vaccine BASE lowered Ratio B most where the price was highest. The two-year price landed nearest BEAR on
+  35 dates and BASE on 17.
+- **Hypothesis, not a rule:** a revenue guide lifted by one product's temporary surge, read as two years of EPS growth, may overstate
+  BASE; test a guide-level check (one product's share of the guided growth) on other tickers and periods, never fit to PFE.
+
 ## The encoding calls, seen afterwards (2008-2009)
 
 Only one judgement call recorded in retro/README.md ("PFE") moves classes: the 2003 exclusion taking the history and the window with it.
@@ -339,3 +434,13 @@ non-GAAP EPS may need a current-year EPS other than the last GAAP year when its 
 as in every one-stock series, entry price ranks the outcome (-0.82 to -0.97 against the m12-24 average price each year). The encodings
 were decided before any outcome existed, and changing one means a new method version and a full re-run.
 
+## The encoding calls, seen afterwards (2018-2021)
+
+The calls of 2018-2021 held on 112 of 209 dates at two years (10, 30, 49 and 23 a year) and 35 at three. Scored against the same outcomes,
+the README's sensitivity variants would have held on: 2017 excluded on the Tax Act benefit alone 154 (48 gained, 6 lost); every signal at
+BEAR 116 (7 gained, 3 lost); the adjusted EPS guide as current-year EPS 104 (22 gained, 30 lost); the dollar revenue guides unused 99 (13
+lost in early 2021); the restated 2016 loss as a gap, Yahoo's distribution factor kept, the Q4 2020 restatement ignored and every signal
+at XBULL 112 each. What separated the outcomes was, again, the GAAP year that stood in for current-year EPS with no reported guide: the
+tax-inflated 2017 made 2018 look cheap and was wrong, the gain-inflated 2019 (with Upjohn) made 2020 look cheap and was right, and in 2021
+a revenue guide driven by one product carried BASE. These are hypotheses to test across tickers, never a reason to re-encode PFE: the
+encodings were decided before any outcome existed, and changing one means a new method version and a full re-run.
