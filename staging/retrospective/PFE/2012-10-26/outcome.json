@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "PFE",
+ "as_of": "2012-10-26",
+ "computed": "2026-11-10",
+ "data_source": "Yahoo Finance daily closes + dividends (PFE, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2013-04-26",
+   "price": 30.09,
+   "dividends": 0.46,
+   "total_return_pct": 20.1,
+   "benchmark_total_return_pct": 13.2,
+   "excess_pct": 7.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2013-10-25",
+   "price": 30.61,
+   "dividends": 0.94,
+   "total_return_pct": 24.1,
+   "benchmark_total_return_pct": 26.9,
+   "excess_pct": -2.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2014-10-24",
+   "price": 29.11,
+   "dividends": 1.96,
+   "total_return_pct": 22.2,
+   "benchmark_total_return_pct": 44.0,
+   "excess_pct": -21.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2015-10-26",
+   "price": 34.16,
+   "dividends": 3.06,
+   "total_return_pct": 46.4,
+   "benchmark_total_return_pct": 54.4,
+   "excess_pct": -8.0,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2014-03-05",
+   "price": 32.75
+  },
+  "low": {
+   "date": "2012-11-15",
+   "price": 23.66
+  },
+  "max_drawdown_pct": -15.4,
+  "return_to_avg_price_m12_m24_pct": 19.4
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 3,
+   "why": "Pfizer: the 2028 Eliquis/Ibrance cliff is real, but unlike the structurally challenged names it has a named offset the model credits - the Seagen ADC oncology platform carries the 53% bull case - so this is a patent cycle to underwrite, not secular decline",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
