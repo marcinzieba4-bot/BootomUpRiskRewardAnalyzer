@@ -10445,13 +10445,14 @@ others, with the same `index.json` and their own `SERIES.md`.
 ```bash
 python3 retro/build_bkr.py --weekly 2008-01-01 2008-12-31                   # 53 dates, 2008-01-04 .. 2008-12-31
 python3 retro/build_bkr.py --weekly 2009-01-05 2009-12-31                   # 52 dates, 2009-01-09 .. 2009-12-31
+python3 retro/build_bkr.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31 ("BKR 2010-2013")
 for d in staging/retrospective/BKR/200[89]-*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series BKR
 for c in 2008-01-30 2008-01-31 2008-02-22 2008-04-22 2008-07-22 2008-07-30 2008-10-22 2009-01-01 2009-01-28 2009-03-02 \
-         2009-04-29 2009-08-05 2009-11-04 2010-01-01; do python3 retro/tools/firewall.py $c BKR; done
+         2009-04-29 2009-08-05 2009-11-04 2010-01-01; do python3 retro/tools/firewall.py $c BKR; done   # 2010-2013: "BKR 2010-2013"
 ```
 
 Read for the history and the decade's signal values: the selected financial data, statements of operations and tables of revenues by
@@ -10619,6 +10620,123 @@ Judgement calls that could carry hindsight:
 - the greenhouse-gas risk factor left in the "why" rather than putting ENERGY_TRANSITION on the watch list before its registry date
   (text only);
 - the series key BKR and the Yahoo URL in each model, which name a later symbol (no class depends on them).
+
+### BKR 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_bkr.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-26 2010-02-26 2010-05-04 2010-08-03 2010-11-01 2011-01-25 2011-02-28 2011-03-03 2011-04-27 2011-07-25 2011-11-01 \
+         2012-01-24 2012-02-27 2012-03-21 2012-04-24 2012-07-20 2012-10-19 2012-12-19 2013-01-23 2013-02-14 2013-04-19 2013-07-19 \
+         2013-10-18 2014-01-01; do python3 retro/tools/firewall.py $c BKR; done
+```
+
+Read: the 16 earnings releases from Q4 2009 to Q3 2013 and the FY2009-FY2012 10-Ks, every other 8-K of February 2010 to January 2014
+(79 filings in all, with the 10-Qs for the dividend; the non-earnings 8-Ks item by item) and the FY2002-FY2005 10-Ks again for the first
+year's diluted shares. All by Opus directly. The source ids are BK26-BK48. 647 strings across both batches were checked with
+`verbatim.py`, each against its own filing, and all 647 were found; a script matched every raw figure of the 2010-2013 prints to its
+row. Decided on 2026-11-10, before any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (06:00-07:22 ET). The Tuesday-Thursday prints date their weeks the
+  next day; from Q2 2012 five releases came on Fridays (2012-07-20, 2012-10-19, 2013-04-19, 2013-07-19, 2013-10-18), so the week's date is
+  the release day and meets its close (the same-day rule). The 10-Ks were accepted after the close and are dated 2010-02-26, 2011-02-28,
+  2012-02-27 and 2013-02-14. The FY2010 10-K/A of 2011-03-04 adds the auditor's name to a signature line and adds nothing (the XOM rule).
+- **History: four more vintages,** each with ten years from its own 10-K: FY2009 (2000-2009), FY2010 (2001-2010), FY2011 (2002-2011) and
+  FY2012 (2003-2012), each year from the latest filing that reports it (2004 from the FY2008 10-K, 2005 from the FY2009 10-K, 2006 from
+  the FY2010 10-K). The first year's diluted shares come from the FY2002 (2000: 332.9M), FY2003 (2001: 337.4M), FY2004 (2002: 337.9M) and
+  FY2005 (2003: 335.9M) 10-Ks. From the FY2009 10-K the tables are in whole millions; from the FY2010 10-K the EPS line is net income
+  attributable to Baker Hughes (2006 then reads $7.27 with discontinued operations; the company's $4.10 stands). 1998's exclusion is
+  outside every later decade; the window is ten years on every 2010-2013 date (2000's days leave it during 2010).
+- **EPS: the company's figures excluding identified items (the ACN rule), each year from the latest filing that publishes one.**
+  - 2009 is GAAP $1.36: the Q4 2009 release gives the per-share effect of its $250M of reorganization, severance, acquisition and
+    bad-debt charges ($0.55), not an EPS without them (the NKE 2008 rule), and they are under the year's $421M of net income.
+  - 2010 is GAAP $2.06: the Q4 2010 release gives a figure excluding acquisition costs and a gain for the fourth quarter only ($0.84).
+  - 2011 is $4.20 adjusted (Q4 2011 release; GAAP $3.97 with a $220M after-tax trade-name impairment, a $214M foreign-reorganization tax
+    benefit, a debt-extinguishment loss and the Libya charges). The Q4 2012 release restates it to $4.14 from continuing operations; the
+    print carries that ('restates', the XOM encoding) and the FY2012 vintage keeps it, as no later filing publishes an adjusted 2011.
+  - 2012 is $3.00 adjusted income from continuing operations (Q4 2012 release; GAAP $2.90 from continuing operations).
+  - No year is excluded.
+- **Process and Pipeline Services.** The Q3 2012 release shows the business as discontinued and restates every period; the Q4 2012 release
+  likewise, so FY12 enters the history at $20.93B of revenue from continuing operations from 2013-01-23. The 8-K of 2013-02-05 says it
+  will be retained, and the FY2012 10-K: "In February 2013, the decision was made to retain the PPS business, and accordingly, we have
+  included the financial results of PPS in continuing operations for all years presented" ($21.36B; GAAP $2.97). The 2011 and 2012
+  adjusted figures stay on the continuing-operations basis of the only release that publishes them, a seam against the 10-K's revenue
+  (a judgement call; 3 classes move, below). Each print takes its own release's comparison: ex-PPS in Q3 and Q4 2012, with PPS again from
+  Q1 2013.
+- **BJ Services stays in growth (the PEP, XOM and AVGO rule).** The acquisition closed on April 28, 2010 (diluted shares 313M in Q1
+  2010, 433M in Q3 2010). The releases compare with Baker Hughes alone, so revenue grows +44% (Q2 2010), +83%,
+  +82% and +78% (Q1 2011) and North America +115% to +181%. Q2 2010 to Q1 2011 also print a pro forma combined table; it is shown in the
+  activity line, display only. BASE takes the as-published growth; this is the call the 2010-2011 classes rest on (51 classes move with
+  the pro forma comparisons, below).
+- **Segments.** From the Q2 2010 release Baker Hughes reports five segments: North America, Latin America, Europe/Africa/Russia Caspian,
+  Middle East/Asia Pacific and an industrial segment carved out of the regions ("Industrial and Other", then "Industrial Services and
+  Other", "Industrial Services" in 2012), each release restating its year-ago quarter to them. Revenue outside North America is the three
+  international regions, the industrial segment excluded (the company's own "International operations" in its outlook 8-Ks); before Q2
+  2010 the regions are the whole, so the definition is unchanged. Reservoir Development Services moved from the industrial segment into
+  the regions from 2012 (Q1 2012 release). From Q3 2010 the statements carry one "cost of revenues" line for sales and services; the gross
+  margin is revenues less it and research and engineering, as before.
+- **No guide in numbers.** No release, 10-Q, 10-K or other 8-K of 2010-2013 guides EPS, revenue or a margin for the company; guidance moved
+  to the conference calls ("the midpoint of the 33% to 34% guidance given in our first quarter 2010 conference call", the Q2 2010
+  release), which are not filings. The no-guide rules continue: the last full year's EPS stands (FY08's $5.30 to 2010-01-22, FY09's $1.36
+  from 2010-01-27, FY10's $2.06 from 2011-01-26, FY11's $4.20 from 2012-01-25, FY12's $3.00 from 2013-01-24), BASE takes the latest
+  quarter's revenue growth and the margin signal its operating-margin change. The 2010-2013 releases have no Outlook section.
+- **Display-only outlooks** (`guides` with a quarter, shown while that quarter is the next print; a builder change that moves no earlier
+  output): the 8-K of 2011-03-03 ("a negative impact ... of approximately $0.04 to $0.07 per share to our first quarter net income per
+  share"), and the outlook 8-Ks of 2012-03-21 (Q1 2012 North America operating profit before tax margin "between 13.2% and 14.2%",
+  international 12.2-13.2%) and 2012-12-18 (accepted 19:09 ET, dated 2012-12-19: Q4 2012 North America "between 8.5% and 9.5%").
+- **Dividends:** $0.15 a quarter throughout (every 10-Q and 10-K of the period); no new dividend fact.
+- **Durability: CYCLICAL, risk 2, unchanged.** The FY2009-FY2012 10-Ks keep "Our business is cyclical and is dependent upon our customers'
+  expectations for future oil and natural gas prices ..." and the greenhouse-gas risk ("demand for oil and natural gas could be impacted by
+  environmental regulation, including “cap and trade” legislation, carbon taxes ..."; from the FY2011 10-K "regulation of hydraulic
+  fracturing" too); ENERGY_TRANSITION is not live before 2015-12-12, so the words stay in the "why".
+- **Adds nothing:** the BJ Services merger and divestiture 8-Ks (stockholder meetings, the Justice Department settlement, the sale of two
+  stimulation vessels to Superior Energy), the Oilpump Services acquisition, the Process and Pipeline Services retention 8-K beyond its
+  basis note, the Howard Weil presentation of 2013-03-19, and the debt, commercial-paper, officer, director, bylaw and vote 8-Ks.
+
+Controls and checks:
+- **Controls:** altering one value of each print (its North America revenue, each Q4 print's full-year EPS, the Q4 2012 restatement and
+  each pro forma table), each display-only outlook, each vintage and the dividend changes no model dated before its publication and changes
+  the first weekly date on or after it: 48 of 48 over the 314 dates.
+- **Leak scan:** the distinctive texts and figures of every print, outlook, vintage, dividend and source appear in no model before their
+  publication (0 hits in 69,181 pairs).
+- **`retro_tool run`:** passes on all 209 dates, with no warnings.
+- **Firewall:** passes at the 24 cutoffs above (every release, 10-K and outlook 8-K date of 2010-2013, plus 2010-01-01 and 2014-01-01)
+  and at four 2008-2009 cutoffs rerun after the builder change, with 0 files changed and no planted text (4 to 314 dates each).
+
+Seen in the build (method behaviour, not tuned):
+- **2009 sets BEAR for the rest of the decade.** From the Q4 2009 print FY09's $1.36 against FY08's $5.30 is the worst year (-74.3%/yr),
+  so the BEAR price is $1-4 on every date from 2010-01-27; the BEAR case, not the price, drives Ratio B.
+- **2010: CHEAP to the Q4 2009 print, RICH on FY09's trough, CHEAP on the acquisition's growth.** CHEAP on 3 dates (FY08's $5.30), RICH on
+  25 from 2010-01-27 (28-40x FY09's $1.36, 40-99% above a 20x floor of $27), FAIR on 6 and CHEAP again from the Q2 2010 print (2010-08-04):
+  BASE turns to +45.2%/yr on Q2 2010's +44.4% revenue and +83.5% on Q3 2010's, as published with BJ Services. 21 CHEAP, 6 FAIR, 25 RICH.
+- **2011: CHEAP on 45 dates,** from 2011-01-26 on FY10's $2.06 at 22-39x, with BASE at +80.5% (Q4 2010), +76.5% (Q1 2011), +38.8% (Q2
+  2011) and +25.3%/yr (Q3 2011); RICH once (2011-07-26, Ratio B 2.03), FAIR on 6.
+- **2012: CHEAP on all 52 dates** (BUY on 49): FY11's $4.20 is the anchor from 2012-01-25, at 9.3-12.4x (the 2nd-10th percentile), 23-42%
+  under a 15-16x floor; BASE falls from +19.2% to +0.4%/yr.
+- **2013: FAIR on 38, CHEAP on 9, RICH on 6** (from 2013-10-25). On FY12's $3.00 the stock trades at 14.5-19.4x, at the 15x floor ($45) and
+  up to 32% above it; BASE is -5.3% to +5.1%/yr. Robustness is 5 of 8 on 29 dates: the calls near the floor are fragile.
+- **The window's upper percentiles fall as 2000-2002 leave it:** the 90th percentile is 37-41x in early 2010 and 26-27x by late 2013, the
+  median 25x to 18x, and the floor goes from 20x in 2010 to 14-15x in late 2013.
+
+Sensitivity (each call changed alone, the 209 dates reclassified offline; no outcome consulted):
+- **The pro forma combined comparisons** for Q2 2010 to Q1 2011 instead of the as-published growth: **51 classes** (2010-08-04 to
+  2011-07-22: 31 CHEAP to RICH, 12 CHEAP to FAIR, 8 FAIR to RICH) and 51 tiers. The 2010-2011 CHEAP calls rest on BJ Services in growth;
+- **GAAP EPS in every year** (2011 $3.97, 2012 $2.97, FY12 at $2.90 before the 10-K): 28 classes (21 FAIR to CHEAP, 6 RICH to FAIR, 1 CHEAP
+  to FAIR; 2011-11-02 to 2013-11-29) and 66 tiers;
+- **2011 at $4.20 and 2012 at the 10-K's $2.97** (the PPS-inclusive basis, no restatement): 3 classes and 4 tiers;
+- **2000 excluded** (the history and window from 2001, the 2008-2009 sensitivity carried forward): 3 classes in 2010 and 6 tiers;
+- **revenue outside North America including the industrial segment:** no class, no tier;
+- **every signal at its BEAR value:** 119 classes, toward RICH or FAIR; **at XBULL:** 46 classes, toward FAIR or CHEAP; no tier.
+
+Judgement calls that could carry hindsight:
+- keeping BJ Services in growth (the house rule) while the releases print pro forma comparisons (51 classes move);
+- the company's adjusted figures for 2011-2012 on the continuing-operations basis of the Q4 2012 release, against the 10-K's
+  PPS-inclusive revenue (3 classes);
+- revenue outside North America without the industrial segment (no class moves);
+- the 8-K outlooks as display only (method r2 has no regional-margin or quarter-EPS input);
+- the signals and CYCLICAL, as in 2008-2009.
 
 ## Categories change with the era
 
@@ -10808,6 +10926,8 @@ What the gates enforce:
   FY2007 10-K (2008-02-22) a risk factor says "demand for hydrocarbons could be impacted by environmental regulation targeting reduction of
   greenhouse gas emissions"; the theme is not live, so the words stay in the durability "why" (the PEP obesity rule), and whether this
   earlier filing should move ENERGY_TRANSITION's date or widen its scope is left to the owner (the MSFT and XOM precedent).
+  The list stays empty through 2013: the FY2009-FY2012 10-Ks repeat the risk ("demand for oil and natural gas could be impacted by
+  environmental regulation"), which stays in the "why" ("BKR 2010-2013").
 
 ## Workflow
 

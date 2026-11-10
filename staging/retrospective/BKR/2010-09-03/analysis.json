@@ -1,0 +1,270 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BKR",
+ "company": "Baker Hughes Incorporated",
+ "as_of": "2010-09-03",
+ "price_date": "2010-09-03",
+ "price": 39.49,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); oilfield services signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "Baker Hughes: 'Baker Hughes Incorporated is a Delaware corporation engaged in the oilfield services industry'; 'The primary driver of our business is our customers’ capital and operating expenditures dedicated to oil and natural gas exploration, field development and production'; 'Our business is cyclical and is dependent upon our customers’ expectations for future oil and natural gas prices, economic growth, hydrocarbon demand and estimates of current and future oil and natural gas production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'In addition, demand for oil and natural gas could be impacted by environmental regulation, including “cap and trade” legislation, carbon taxes and the cost for carbon capture and sequestration related regulations' (its own FY2009 10-K): revenues and earnings that follow customers' drilling and production spending through the commodity cycle, by the company's own account; no disruption theme is live for an oilfield services company, so the greenhouse-gas wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, RISK PRICED IN",
+  "quality_label": "◎ CYCLICAL, RISK PRICED IN",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Baker Hughes: 'Baker Hughes Incorporated is a Delaware corporation engaged in the oilfield services industry'; 'The primary driver of our business is our customers’ capital and operating expenditures dedicated to oil and natural gas exploration, field development and production'; 'Our business is cyclical and is dependent upon our customers’ expectations for future oil and natural gas prices, economic growth, hydrocarbon demand and estimates of current and future oil and natural gas production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'In addition, demand for oil and natural gas could be impacted by environmental regulation, including “cap and trade” legislation, carbon taxes and the cost for carbon capture and sequestration related regulations' (its own FY2009 10-K): revenues and earnings that follow customers' drilling and production spending through the commodity cycle, by the company's own account; no disruption theme is live for an oilfield services company, so the greenhouse-gas wording stays here. cyclical (obsolescence risk 2/5); price cheap; Ratio B 0.78x; +45% to EPP floor; model-vs-market gap +1.25; conservative 2yr +80%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 0.78,
+  "ratio_b_fmt": "0.78x",
+  "epp": 27.2,
+  "epp_gap_pct": 45.2,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.9,
+  "sca": 0.163,
+  "adj_composite": 2.962,
+  "market_composite": 1.71,
+  "adj_gap": 1.25,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 79.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.09,
+    "pe": 15.2,
+    "price": 1,
+    "desc": "EPS -74.3%/yr (worst year FY00-FY09, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.87,
+    "pe": 25.2,
+    "price": 72,
+    "desc": "EPS +45.2%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.87,
+    "pe": 31.0,
+    "price": 89,
+    "desc": "EPS +45.2%/yr (FY00-FY09 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.09,
+    "pe": 35.4,
+    "price": 216,
+    "desc": "EPS +111.6%/yr (best 2-yr run FY00-FY09); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.78,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 1.25,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.6,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 1.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.18,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 0.9,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.73,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 1.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 1.23,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.78,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 1.55,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.78,
+   "epp_gap_pct": 26.2,
+   "adj_gap": 1.35,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.78,
+   "epp_gap_pct": 45.2,
+   "adj_gap": 1.32,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 79.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "BHI (retrospective, 2010-09-03) ◎ ACCUMULATE — Ratio B 0.78x (97.5% downside to Bear $1 / +125.4% upside to Bull $89) | Adj composite 2.96 vs market 1.71: gap +1.25 [UNDERVALUED] | +45% above the EPP floor $27 (20x FY10E $1.36) | Conservative 2-yr case: +79.6% total (+39.8%/yr) | At 29.0x FY10E the 15% hurdle price $52 sits at or below the BASE case; North America revenue +114.7% and revenue outside North America +12.7% in Q2 2010, forward revenues +44.4% (no Q3 2010 revenue guide, Q2 2010 revenue as reported); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "BK27",
+   "published": "2010-02-26",
+   "filed": "2010-02-25 19:46 ET (after the close)",
+   "title": "Baker Hughes FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012310017258/h69014e10vk.htm",
+   "supports": "selected financial data 2005-2009 (in whole millions), statements of operations and cash flows 2007-2009, segment revenues, dividends of $0.15 a quarter, the business description and risk factors"
+  },
+  {
+   "id": "BK26",
+   "published": "2010-01-26",
+   "filed": "2010-01-26 06:00 ET (before the open)",
+   "title": "Baker Hughes Q4 2009 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012310005041/h69445exv99w1.htm",
+   "supports": "Q4 and full-year 2009 statements of operations and revenue by segment and region"
+  },
+  {
+   "id": "BK22",
+   "published": "2009-03-02",
+   "filed": "2009-02-27 16:22 ET (after the close)",
+   "title": "Baker Hughes FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012909000672/h65827e10vk.htm",
+   "supports": "selected financial data 2004-2008 (in whole millions), statements of operations and cash flows 2006-2008, segment revenues, dividends of $0.15 a quarter, the business description and risk factors"
+  },
+  {
+   "id": "BK16",
+   "published": "2008-02-22",
+   "filed": "2008-02-21 16:14 ET (after the close)",
+   "title": "Baker Hughes FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012908001084/h53535e10vk.htm",
+   "supports": "selected financial data 2003-2007, statements of operations and cash flows 2005-2007, segment revenues, dividends of $0.13 a quarter, the business description and risk factors"
+  },
+  {
+   "id": "BK15",
+   "published": "2008-01-30",
+   "filed": "2008-01-30 06:01 ET (before the open)",
+   "title": "Baker Hughes Q4 2007 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013408001297/h53454exv99w1.htm",
+   "supports": "Q4 and full-year 2007 statements of operations, revenue by geography and segment, 2006 operating profit ($4.10 per diluted share) and the 2008 outlook"
+  },
+  {
+   "id": "BK12",
+   "published": "2007-02-26",
+   "filed": "2007-02-23 17:00 ET (after the close)",
+   "title": "Baker Hughes FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013407003991/h43740e10vk.htm",
+   "supports": "selected financial data 2002-2006, statements of operations and cash flows 2004-2006, revenues by country 2004-2006, segment revenues 2004-2006, dividends of $0.13 a quarter, the business description and risk factors"
+  },
+  {
+   "id": "BK10",
+   "published": "2006-03-02",
+   "filed": "2006-03-01 17:33 ET (after the close)",
+   "title": "Baker Hughes FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012906002136/h33213e10vk.htm",
+   "supports": "selected financial data 2001-2005 (2001 revenues $4,980.5M and diluted EPS $1.27): rule T's 2002 change; revenues by country for 2003-2005; segment revenues for 2003-2005"
+  },
+  {
+   "id": "BK9",
+   "published": "2005-02-17",
+   "filed": "2005-02-17 11:01 ET (during the session)",
+   "title": "Baker Hughes Q4 2004 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013405003299/h22614exv99w1.htm",
+   "supports": "operating profit of $0.98 per diluted share for 2003 (GAAP $0.53), no non-operational items in 2004"
+  },
+  {
+   "id": "BK8",
+   "published": "2005-03-02",
+   "filed": "2005-03-01 17:18 ET (after the close)",
+   "title": "Baker Hughes FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012905001852/h21636e10vk.htm",
+   "supports": "selected financial data 2000-2004 (2000 revenues $4,791.1M and diluted EPS $0.21): rule T's 2001 change; revenues by country for 2002-2004"
+  },
+  {
+   "id": "BK7",
+   "published": "2004-02-12",
+   "filed": "2004-02-12 11:01 ET (during the session)",
+   "title": "Baker Hughes Q4 2003 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013404001586/h12603exv99w1.htm",
+   "supports": "operating profit (income from continuing operations excluding identified non-operational items) of $0.94 per diluted share for 2002 (GAAP $0.68)"
+  },
+  {
+   "id": "BK5",
+   "published": "2003-03-10",
+   "filed": "2003-03-07 16:46 ET (after the close)",
+   "title": "Baker Hughes FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012903001283/h03356e10vk.txt",
+   "supports": "selected financial data 1998-2002: rule T's 1999 change, and 1998's loss from continuing operations ($(0.92) per diluted share), the year excluded from the history; revenues by country for 2000-2002"
+  },
+  {
+   "id": "BK28",
+   "published": "2010-05-04",
+   "filed": "2010-05-04 06:00 ET (before the open)",
+   "title": "Baker Hughes Q1 2010 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012310042988/h72701exv99w1.htm",
+   "supports": "Q1 2010 statement of operations, revenue by region and the year-ago quarter"
+  },
+  {
+   "id": "BK29",
+   "published": "2010-08-03",
+   "filed": "2010-08-03 06:02 ET (before the open)",
+   "title": "Baker Hughes Q2 2010 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012310071401/h74964exv99w1.htm",
+   "supports": "Q2 2010 statement of operations with BJ Services from May 2010, segment revenue (five segments, the year-ago quarter restated to them) and the pro forma combined table"
+  },
+  {
+   "id": "A0",
+   "published": "2010-09-03",
+   "title": "Yahoo Finance daily prices, Baker Hughes common stock (NYSE: BHI) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BKR/history",
+   "supports": "close $39.49 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-10"
+}

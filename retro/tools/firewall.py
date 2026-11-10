@@ -39,7 +39,9 @@ last print before it (the 'stats_later' rule of RCL 2018-2021), a later dollar r
 vintage with an income tax line (RCL 2022-2026); MAR: a guide with every guided field (fiscal-year and next-quarter fee ranges and
 percentages, the display, note and words fields), a later range for every quarter the fact sheet guides, and a print whose fees, RevPAR,
 occupancy, raw figures and full-year actuals are absurd; BKR: a print whose regional revenues, margins, outlook, rig-count note, raw
-figures and full-year actuals are absurd (the guide and dividend every fact sheet with a 'guides' list gets, too); every
+figures, pro forma table, basis note and full-year actuals are absurd and whose actuals restate every year, and a later display-only
+outlook for every quarter an 8-K guides and the two after the last print (the guide and dividend every fact sheet with a 'guides' list
+gets, too); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -155,9 +157,11 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      gross_margin=1.0, gross_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0, eps_q=0.01, eps_q_prior=9.99,
                      eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, cash_note="PLANTED", capex_note="PLANTED", next_print="PLANTED",
                      cash_return_text="PLANTED", sales_note="PLANTED", na_note="PLANTED", intl_note="PLANTED", margin_note="PLANTED",
-                     rig_note="PLANTED", outlook=["PLANTED"], period_end="PLANTED",
+                     rig_note="PLANTED", outlook=["PLANTED"], period_end="PLANTED", basis_note="PLANTED",
+                     pro_forma=dict(rev_m=1, rev_prior_m=99, na_m=1, na_prior_m=99, ind_m=0, ind_prior_m=0),
                      raw=dict(rev_m=1, rev_prior_m=99, cos_m=1, cos_prior_m=1, cosr_m=1, cosr_prior_m=1, rne_m=1, rne_prior_m=1,
-                              oi_m=-99, oi_prior_m=99, na_m=1, na_prior_m=99, oilfield_m=1, oilfield_prior_m=99))}[TICKER]
+                              oi_m=-99, oi_prior_m=99, na_m=1, na_prior_m=99, oilfield_m=1, oilfield_prior_m=99, ind_m=0, ind_prior_m=0,
+                              ind_label="PLANTED"))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -303,7 +307,15 @@ try:
         fa.update(fy=2099, fy_label="FY99", eps_normalized=0.01, normalization_note="PLANTED", revenue_usd_b=0.01, diluted_shares_m=1.0,
                   op_margin=-99.0, op_margin_note="PLANTED", sales_growth=-99.0, na_pct=-99.0, na_note="PLANTED", check_pretax_margin=-99.0,
                   check_pretax_note="PLANTED", tax_rate=0.99, tax_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED")
+        v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+        fa["restates"] = {y: 0.01 for y in v0["eps_normalized"]}          # and a restatement of every year (BKR 2010-2013)
         last["fy_actual"] = fa
+        # a later display-only outlook for every quarter an 8-K guides, and for the quarters after the last print before CUTOFF
+        p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
+        nxt = [f"Q{(p0['q'] + k - 1) % 4 + 1} {p0['fy'] + (p0['q'] + k - 1) // 4}" for k in (1, 2)]
+        for q in sorted({g["quarter"] for g in f["guides"] if "quarter" in g} | set(nxt)):
+            f["guides"].append({"fy": int(q.split()[1]), "published": later, "source": last["source"], "doc": "PLANTED", "quarter": q,
+                                "display": "PLANTED"})
     if TICKER == "WMT":    # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
                            # wins): a later guide may never reach an earlier date
         for q in sorted({g["q_guide"]["quarter"] for g in f["guides"] if "q_guide" in g}):

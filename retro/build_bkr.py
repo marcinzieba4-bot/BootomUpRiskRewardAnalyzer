@@ -65,7 +65,9 @@ RULE_T_KEYS = {"na_rev": (1, False), "intl_rev": (1, False), "revenue": (1, Fals
 PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_time", "period_end", "raw", "sales_note", "na_note",
               "intl_note", "margin_note", "eps_q", "eps_q_prior", "eps_note", "diluted_shares_m", "cash_b", "cash_note", "capex_note",
               "next_print", "cash_return_text", "sales_b", "sales_pct", "na_pct", "intl_pct", "gross_margin", "gross_margin_bp",
-              "op_margin", "op_margin_bp", "rig_note", "outlook", "fy_actual", "extra_sources"}
+              "op_margin", "op_margin_bp", "rig_note", "outlook", "fy_actual", "extra_sources", "pro_forma", "basis_note"}
+# the guide fields this builder has an encoding for: an 8-K's outlook for one quarter, display only (retro/README.md, "BKR 2010-2013")
+GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "display"}
 
 
 def fiscal_year_end(n):
@@ -104,7 +106,8 @@ def check_print(p):
     o1, o0 = r["oi_m"] / r["rev_m"] * 100, r["oi_prior_m"] / r["rev_prior_m"] * 100
     want = {"sales_b": round(r["rev_m"] / 1000, 4), "sales_pct": round(pct(r["rev_prior_m"], r["rev_m"]), 1),
             "na_pct": round(pct(r["na_prior_m"], r["na_m"]), 1),
-            "intl_pct": round(pct(r["oilfield_prior_m"] - r["na_prior_m"], r["oilfield_m"] - r["na_m"]), 1),
+            "intl_pct": round(pct(r["oilfield_prior_m"] - r["na_prior_m"] - r.get("ind_prior_m", 0),
+                                  r["oilfield_m"] - r["na_m"] - r.get("ind_m", 0)), 1),
             "gross_margin": round(g1 + 0.0, 2), "gross_margin_bp": round((g1 - g0) * 100, 1),
             "op_margin": round(o1 + 0.0, 2), "op_margin_bp": round((o1 - o0) * 100, 1)}
     for k, v in want.items():
@@ -121,8 +124,10 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in facts["history_vintages"]:            # the fiscal calendar the filings state must match the rule above
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-    # Baker Hughes gives no EPS, revenue or margin guidance in numbers; its outlook bullets live on the prints (display only)
-    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide with no encoding yet; decide one first"
+    # Baker Hughes gives no EPS, revenue or margin guidance in numbers; its outlook bullets live on the prints (display only), and an 8-K's
+    # outlook for one quarter is a display-only guide (from 2011)
+    for g in [g for g in facts["guides"] if g["published"] <= as_of]:
+        assert set(g) <= GUIDE_KEYS, (g["doc"], "a guide field with no encoding yet; decide one first")
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
@@ -149,8 +154,14 @@ def build(as_of, facts, raw, spx, engine, out):
         a = p.get("fy_actual")
         if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
             y = str(a["fy"])
+            # an earlier year's company figure first published on a new basis in this release ('restates') replaces it until the next
+            # 10-K vintage (the XOM encoding; the Q4 2012 release's 2011 from continuing operations)
+            eps_n = {**h["eps_normalized"], y: a["eps_normalized"]}
+            for yy, e in a.get("restates", {}).items():
+                assert yy in eps_n, (p["quarter"], yy, "restates a year outside the history")
+                eps_n[yy] = e
             h.update(fy_label=a["fy_label"],
-                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     eps_normalized=eps_n,
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -180,6 +191,9 @@ def build(as_of, facts, raw, spx, engine, out):
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
     outlook = latest.get("outlook")
+    # an 8-K's outlook for the quarter not yet reported, display only (method r2 has no input for it)
+    gq = [g for g in facts["guides"] if g["published"] <= as_of and g.get("quarter") == next_q and g["published"] > latest["published"]]
+    g_text = "".join(f"; the {g['doc']} on {g['quarter']}, display only: '{g['display']}'" for g in gq)
     if outlook:
         guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers (BASE takes {latest['quarter']} revenue growth); the "
                       f"{latest['quarter']} release's outlook for revenue outside North America, display only (it guides a region, not "
@@ -187,6 +201,7 @@ def build(as_of, facts, raw, spx, engine, out):
     else:
         guide_text = (f"{fy_now}: no guide in numbers (BASE takes {latest['quarter']} revenue growth); the {latest['quarter']} release "
                       "has no Outlook section")
+    guide_text += g_text
     margin_guided = False                          # no operating-margin guide in numbers: no guided step
     fy_margin_base = h["prev_fy_op_margin"]
 
@@ -247,7 +262,7 @@ def build(as_of, facts, raw, spx, engine, out):
     company = renames[-1]["name"] if renames else h["company"]
     exchange, listed = h["exchange"], h["symbol"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + ([dividend_src] if dividend_src else []) + [n["source"] for n in renames])
+           + ([dividend_src] if dividend_src else []) + [n["source"] for n in renames] + [g["source"] for g in gq])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of,
                     "title": f"Yahoo Finance daily prices, Baker Hughes common stock ({exchange}: {listed}) and S&P 500, truncated at AS_OF",
@@ -263,7 +278,15 @@ def build(as_of, facts, raw, spx, engine, out):
     eps_note = f"; EPS {latest['eps_note']}" if latest.get("eps_note") else ""
     activity = (f"Activity: North America {latest['na_pct']:+.1f}% ({latest['na_note']}); outside North America {latest['intl_pct']:+.1f}% "
                 f"({latest['intl_note']}); revenue {latest['sales_pct']:+.1f}% as reported ({latest['sales_note']})"
-                + (f"; the release on the rig count: '{latest['rig_note']}'" if latest.get("rig_note") else "") + eps_note)
+                + (f"; the release on the rig count: '{latest['rig_note']}'" if latest.get("rig_note") else "") + eps_note
+                + (f"; basis: {latest['basis_note']}" if latest.get("basis_note") else ""))
+    pf = latest.get("pro_forma")
+    if pf:                                         # the release's pro forma combined table, display only (acquisitions stay in growth)
+        pint = lambda d: d["rev_m"] - d["na_m"] - d["ind_m"]
+        pint0 = lambda d: d["rev_prior_m"] - d["na_prior_m"] - d["ind_prior_m"]
+        activity += (f"; pro forma combined with BJ Services (the release's own table, display only): revenue "
+                     f"{(pf['rev_m'] / pf['rev_prior_m'] - 1) * 100:+.1f}%, North America {(pf['na_m'] / pf['na_prior_m'] - 1) * 100:+.1f}%, "
+                     f"outside North America {(pint(pf) / pint0(pf) - 1) * 100:+.1f}%")
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"
     R = repr
