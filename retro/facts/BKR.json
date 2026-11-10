@@ -1,0 +1,1852 @@
+{
+ "_doc": "Point-in-time fact sheet for BKR retrospectives (retro/build_bkr.py): Baker Hughes Incorporated, listed on the NYSE as BHI throughout 2007-2009 (BKR is the series key). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), and the latest declared dividend. Fiscal years are calendar years from 1998 (fiscal 1997 ended September 30). Baker Hughes gives no EPS, total-revenue or margin guidance in numbers in any filing of 2007-2009: each release's Outlook section guides revenue outside North America (in words or as a range), corporate expenses, capital expenditures, depreciation and the tax rate, kept on the print as 'outlook' (display only), and the 2009 releases have no Outlook section. Values are as reported; a vintage takes each year from the latest filing that reports it, and the company's operating profit per diluted share replaces GAAP EPS where a filing publishes it (the history's 'normalization' says which). A print's growth rates and margins are derived from the raw figures of its release ('raw'; the builder re-derives and checks them): the year-ago quarter is the one the same release shows. Outside North America is the release's Oilfield Operations revenue less North America. rule_t holds the annual values behind the engine's signal thresholds. Edit only to add newly published facts or fix a transcription error against the cited filing.",
+ "ticker": "BKR",
+ "sources": {
+  "BK1": {
+   "published": "1999-03-17",
+   "filed": "1999-03-17 (EDGAR gives the filing date only)",
+   "title": "Baker Hughes FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012999001008/0000950129-99-001008.txt",
+   "supports": "revenues by country for the year ended December 31, 1998, the three months ended December 31, 1997 and the years ended September 30, 1997 and 1996, on the basis restated for the 1998 Western Atlas merger (pooling of interests): rule T's fiscal 1997 change for North America and outside North America"
+  },
+  "BK2": {
+   "published": "2000-03-16",
+   "filed": "2000-03-16 (EDGAR gives the filing date only)",
+   "title": "Baker Hughes FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012900001215/0000950129-00-001215.txt",
+   "supports": "revenues by country for 1999, 1998, the three months ended December 31, 1997 and the year ended September 30, 1997 (the Process segment then shown as discontinued): rule T's 1998 change for North America and outside North America"
+  },
+  "BK3": {
+   "published": "2001-03-12",
+   "filed": "2001-03-12 (EDGAR gives the filing date only)",
+   "title": "Baker Hughes FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012901001370/h84765e10-k.txt",
+   "supports": "selected financial data 1996-2000 (fiscal years to September 30, 1997, then calendar years): revenues, cost of revenues and operating income for rule T's fiscal 1997 change; revenues by country for 1998-2000"
+  },
+  "BK4": {
+   "published": "2002-03-13",
+   "filed": "2002-03-13 (EDGAR gives the filing date only)",
+   "title": "Baker Hughes FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012902001261/h94456e10-k.txt",
+   "supports": "selected financial data for fiscal 1997 (year to September 30) and 1998-2001: rule T's 1998 change; revenues by country for 1999-2001; 1999 weighted average shares for diluted EPS (329.9M)"
+  },
+  "BK5": {
+   "published": "2003-03-10",
+   "filed": "2003-03-07 16:46 ET (after the close)",
+   "title": "Baker Hughes FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012903001283/h03356e10vk.txt",
+   "supports": "selected financial data 1998-2002: rule T's 1999 change, and 1998's loss from continuing operations ($(0.92) per diluted share), the year excluded from the history; revenues by country for 2000-2002"
+  },
+  "BK6": {
+   "published": "2004-03-05",
+   "filed": "2004-03-05 11:48 ET (during the session)",
+   "title": "Baker Hughes FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012904001030/h12450e10vk.htm",
+   "supports": "selected financial data 1999-2003 (1999 revenues $4,854.8M and diluted EPS from continuing operations $0.08, the latest filing that reports 1999): rule T's 2000 change; revenues by country for 2001-2003"
+  },
+  "BK7": {
+   "published": "2004-02-12",
+   "filed": "2004-02-12 11:01 ET (during the session)",
+   "title": "Baker Hughes Q4 2003 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013404001586/h12603exv99w1.htm",
+   "supports": "operating profit (income from continuing operations excluding identified non-operational items) of $0.94 per diluted share for 2002 (GAAP $0.68)"
+  },
+  "BK8": {
+   "published": "2005-03-02",
+   "filed": "2005-03-01 17:18 ET (after the close)",
+   "title": "Baker Hughes FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012905001852/h21636e10vk.htm",
+   "supports": "selected financial data 2000-2004 (2000 revenues $4,791.1M and diluted EPS $0.21): rule T's 2001 change; revenues by country for 2002-2004"
+  },
+  "BK9": {
+   "published": "2005-02-17",
+   "filed": "2005-02-17 11:01 ET (during the session)",
+   "title": "Baker Hughes Q4 2004 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013405003299/h22614exv99w1.htm",
+   "supports": "operating profit of $0.98 per diluted share for 2003 (GAAP $0.53), no non-operational items in 2004"
+  },
+  "BK10": {
+   "published": "2006-03-02",
+   "filed": "2006-03-01 17:33 ET (after the close)",
+   "title": "Baker Hughes FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012906002136/h33213e10vk.htm",
+   "supports": "selected financial data 2001-2005 (2001 revenues $4,980.5M and diluted EPS $1.27): rule T's 2002 change; revenues by country for 2003-2005; segment revenues for 2003-2005"
+  },
+  "BK11": {
+   "published": "2007-02-15",
+   "filed": "2007-02-15 06:06 ET (before the open)",
+   "title": "Baker Hughes Q4 2006 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013407003411/h43649exv99w1.htm",
+   "supports": "operating profit of $4.10 per diluted share for 2006 (GAAP $7.21 from continuing operations, with the $1,743.5M pre-tax gain on the sale of the WesternGeco interest), $1,993.3M before tax and $629.9M of tax"
+  },
+  "BK12": {
+   "published": "2007-02-26",
+   "filed": "2007-02-23 17:00 ET (after the close)",
+   "title": "Baker Hughes FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013407003991/h43740e10vk.htm",
+   "supports": "selected financial data 2002-2006, statements of operations and cash flows 2004-2006, revenues by country 2004-2006, segment revenues 2004-2006, dividends of $0.13 a quarter, the business description and risk factors"
+  },
+  "BK13": {
+   "published": "2007-07-27",
+   "filed": "2007-07-27 06:01 ET (before the open)",
+   "title": "Baker Hughes Q2 2007 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013407016003/h48424exv99w1.htm",
+   "supports": "Q2 2007 statement of operations, revenue by geography and the year-ago quarter"
+  },
+  "BK14": {
+   "published": "2007-10-26",
+   "filed": "2007-10-26 06:01 ET (before the open)",
+   "title": "Baker Hughes Q3 2007 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013407022011/h50764exv99w1.htm",
+   "supports": "Q3 2007 statement of operations, revenue by geography, the year-ago quarter and the 2007 outlook"
+  },
+  "BK15": {
+   "published": "2008-01-30",
+   "filed": "2008-01-30 06:01 ET (before the open)",
+   "title": "Baker Hughes Q4 2007 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013408001297/h53454exv99w1.htm",
+   "supports": "Q4 and full-year 2007 statements of operations, revenue by geography and segment, 2006 operating profit ($4.10 per diluted share) and the 2008 outlook"
+  },
+  "BK16": {
+   "published": "2008-02-22",
+   "filed": "2008-02-21 16:14 ET (after the close)",
+   "title": "Baker Hughes FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012908001084/h53535e10vk.htm",
+   "supports": "selected financial data 2003-2007, statements of operations and cash flows 2005-2007, segment revenues, dividends of $0.13 a quarter, the business description and risk factors"
+  },
+  "BK17": {
+   "published": "2008-04-22",
+   "filed": "2008-04-22 07:09 ET (before the open)",
+   "title": "Baker Hughes Q1 2008 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013408007035/h55980exv99w1.htm",
+   "supports": "Q1 2008 statement of operations, revenue by geography, the year-ago quarter and the 2008 outlook"
+  },
+  "BK18": {
+   "published": "2008-07-22",
+   "filed": "2008-07-22 06:01 ET (before the open)",
+   "title": "Baker Hughes Q2 2008 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013408013044/h58639exv99w1.htm",
+   "supports": "Q2 2008 statement of operations, revenue by segment and region, the year-ago quarter and the 2008 outlook"
+  },
+  "BK19": {
+   "published": "2008-07-30",
+   "filed": "2008-07-29 17:12 ET (after the close)",
+   "title": "Baker Hughes Q2 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012908004128/h58547e10vq.htm",
+   "supports": "the dividend of $0.15 a share authorized on July 24, 2008, up from $0.13 (the first filing that states it)"
+  },
+  "BK20": {
+   "published": "2008-10-22",
+   "filed": "2008-10-22 06:01 ET (before the open)",
+   "title": "Baker Hughes Q3 2008 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013408018243/h64590exv99w1.htm",
+   "supports": "Q3 2008 statement of operations, revenue by segment and region, the year-ago quarter and the Q4 2008 outlook"
+  },
+  "BK21": {
+   "published": "2009-01-28",
+   "filed": "2009-01-28 06:01 ET (before the open)",
+   "title": "Baker Hughes Q4 2008 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013409001187/h65563exv99w1.htm",
+   "supports": "Q4 and full-year 2008 statements of operations, revenue by segment and region"
+  },
+  "BK22": {
+   "published": "2009-03-02",
+   "filed": "2009-02-27 16:22 ET (after the close)",
+   "title": "Baker Hughes FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012909000672/h65827e10vk.htm",
+   "supports": "selected financial data 2004-2008 (in whole millions), statements of operations and cash flows 2006-2008, segment revenues, dividends of $0.15 a quarter, the business description and risk factors"
+  },
+  "BK23": {
+   "published": "2009-04-29",
+   "filed": "2009-04-29 06:02 ET (before the open)",
+   "title": "Baker Hughes Q1 2009 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095013409008653/h66555exv99w1.htm",
+   "supports": "Q1 2009 statement of operations, revenue by segment and region and the year-ago quarter"
+  },
+  "BK24": {
+   "published": "2009-08-05",
+   "filed": "2009-08-05 06:02 ET (before the open)",
+   "title": "Baker Hughes Q2 2009 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012309029865/h67631exv99w1.htm",
+   "supports": "Q2 2009 statement of operations, revenue by segment and region and the year-ago quarter"
+  },
+  "BK25": {
+   "published": "2009-11-04",
+   "filed": "2009-11-04 06:01 ET (before the open)",
+   "title": "Baker Hughes Q3 2009 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/808362/000095012309057139/h68446exv99w1.htm",
+   "supports": "Q3 2009 statement of operations, revenue by segment and region and the year-ago quarter"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-26",
+   "sources": [
+    "BK12",
+    "BK11",
+    "BK10",
+    "BK9",
+    "BK8",
+    "BK7",
+    "BK6",
+    "BK5",
+    "BK4"
+   ],
+   "company": "Baker Hughes Incorporated",
+   "exchange": "NYSE",
+   "symbol": "BHI",
+   "fy_label": "FY06",
+   "why": "Baker Hughes: 'We are a leading provider of drilling, formation evaluation, completion and production products and services to the worldwide oil and natural gas industry'; 'The primary driver of our business is our customers’ capital and operating expenditures dedicated to exploring, and drilling for, and developing and producing oil and natural gas'; 'Our business is cyclical and is dependent upon our customers’ forecasts of future oil and natural gas prices, future economic growth and hydrocarbon demand and estimates of future oil and natural gas production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed' (its own FY2006 10-K): revenues and earnings that follow customers' drilling and production spending through the commodity cycle, by the company's own account; no disruption theme is live for an oilfield services company",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_gaap": {
+    "1999": 0.08,
+    "2000": 0.21,
+    "2001": 1.27,
+    "2002": 0.67,
+    "2003": 0.52,
+    "2004": 1.57,
+    "2005": 2.56,
+    "2006": 7.21
+   },
+   "eps_normalized": {
+    "1999": 0.08,
+    "2000": 0.21,
+    "2001": 1.27,
+    "2002": 0.94,
+    "2003": 0.98,
+    "2004": 1.57,
+    "2005": 2.56,
+    "2006": 4.1
+   },
+   "eps_excluded_note": "1998 is excluded: a loss from continuing operations of $(0.92) per diluted share (FY2002 10-K, the latest filing that reports it; the Western Atlas merger costs, an unusual charge and other charges of that year), with no published figure excluding its charges (the r2 rule for a loss year), so the EPS history, the revenue and share histories and the P/E window start with 1999 (the ACN FY02 and AAPL FY2002 rule); fiscal 1997 (the year to September 30, 1997) lies before it",
+   "revenue_usd_b": {
+    "1999": 4.8548,
+    "2000": 4.7911,
+    "2001": 4.9805,
+    "2002": 4.8435,
+    "2003": 5.2333,
+    "2004": 6.0796,
+    "2005": 7.1855,
+    "2006": 9.0274
+   },
+   "revenue_sources": {
+    "1999": "BK6",
+    "2000": "BK8",
+    "2001": "BK10",
+    "2002": "BK12",
+    "2003": "BK12",
+    "2004": "BK12",
+    "2005": "BK12",
+    "2006": "BK12"
+   },
+   "diluted_shares_m": {
+    "1999": 329.9,
+    "2006": 332.6
+   },
+   "pe_window_start": "1999-01-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 21.43,
+   "prev_fy_op_margin_note": "FY06 operating income $1,934.3M / revenues $9,027.4M (FY2006 10-K)",
+   "prev_fy_sales_growth": 25.6,
+   "prev_fy_na_pct": 31.2,
+   "prev_fy_na_note": "United States and Canada $3,999.6M vs $3,048.9M, FY2006 10-K",
+   "check_pretax_margin": 22.08,
+   "check_pretax_note": "FY06 operating profit before tax excluding the WesternGeco gain, $1,993.3M / revenues $9,027.4M (Q4 2006 release)",
+   "tax_rate": 0.316,
+   "tax_note": "FY06 tax on operating profit: $629.9M / $1,993.3M (Q4 2006 release)",
+   "fcf_b": -0.33,
+   "fcf_label": "FY06",
+   "fcf_note": "net cash flows from operating activities $590.1M (after tax on the WesternGeco gain) less expenditures for capital assets $922.2M",
+   "prev_q_na_pct": null,
+   "prev_q_label": "Q1 2007",
+   "dividend_annual": 0.52,
+   "dividend_note": "$0.13 quarterly, every quarter of 2006 (FY2006 10-K)",
+   "cash_return_text": "$1,856.0M of common stock repurchased and $172.6M of dividends paid in FY06",
+   "business_line": "Drilling and Evaluation, Completion and Production",
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's operating profit per diluted share (income from continuing operations excluding identified non-operational items) replaces it where a filing publishes one: 2002 $0.94 (Q4 2003 release; GAAP $0.67 in the FY2006 10-K), 2003 $0.98 (Q4 2004 release; GAAP $0.52), 2006 $4.10 (Q4 2006 release; GAAP $7.21 with the $1,743.5M pre-tax gain on the sale of the WesternGeco interest); 1999 $0.08 (FY2003 10-K), 2000 $0.21 (FY2004 10-K) and 2001 $1.27 (FY2005 10-K) stay GAAP: no filing publishes a per-share figure excluding their items, and their listed items, netted as the 10-Ks list them, are under each year's income (1999: a $122.8M restructuring charge against an $11.4M reversal, $54.8M of gains on disposal of assets and a $31.5M gain on trading securities; 2000: a $75.5M loss on oil and gas properties and a $29.5M restructuring charge against gains); 1998 is excluded: a loss from continuing operations of $(0.92) per diluted share (FY2002 10-K, the latest filing that reports it; the Western Atlas merger costs, an unusual charge and other charges of that year), with no published figure excluding its charges (the r2 rule for a loss year), so the EPS history, the revenue and share histories and the P/E window start with 1999 (the ACN FY02 and AAPL FY2002 rule); fiscal 1997 (the year to September 30, 1997) lies before it",
+   "groups": [
+    [
+     "Drilling and Evaluation",
+     4660.8,
+     26.2
+    ],
+    [
+     "Completion and Production",
+     4366.6,
+     25.1
+    ]
+   ],
+   "groups_basis": "FY06 segment revenues (FY2006 10-K)"
+  },
+  {
+   "published": "2008-02-22",
+   "sources": [
+    "BK16",
+    "BK15",
+    "BK12",
+    "BK10",
+    "BK9",
+    "BK8",
+    "BK7",
+    "BK6",
+    "BK5",
+    "BK4"
+   ],
+   "company": "Baker Hughes Incorporated",
+   "exchange": "NYSE",
+   "symbol": "BHI",
+   "fy_label": "FY07",
+   "why": "Baker Hughes: 'We are a leading provider of drilling, formation evaluation, completion and production products and services to the worldwide oil and natural gas industry'; 'The primary driver of our business is our customers’ capital and operating expenditures dedicated to exploring, and drilling for, and developing and producing oil and natural gas'; 'Our business is cyclical and is dependent upon our customers’ forecasts of future oil and natural gas prices, future economic growth and hydrocarbon demand and estimates of future oil and natural gas production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed' ; 'In addition, demand for hydrocarbons could be impacted by environmental regulation targeting reduction of greenhouse gas emissions including the cost for Carbon Capture and Sequestration' (its own FY2007 10-K): revenues and earnings that follow customers' drilling and production spending through the commodity cycle, by the company's own account; no disruption theme is live for an oilfield services company, so the greenhouse-gas wording stays here",
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_gaap": {
+    "1999": 0.08,
+    "2000": 0.21,
+    "2001": 1.27,
+    "2002": 0.67,
+    "2003": 0.52,
+    "2004": 1.57,
+    "2005": 2.56,
+    "2006": 7.21,
+    "2007": 4.73
+   },
+   "eps_normalized": {
+    "1999": 0.08,
+    "2000": 0.21,
+    "2001": 1.27,
+    "2002": 0.94,
+    "2003": 0.98,
+    "2004": 1.57,
+    "2005": 2.56,
+    "2006": 4.1,
+    "2007": 4.73
+   },
+   "eps_excluded_note": "1998 is excluded: a loss from continuing operations of $(0.92) per diluted share (FY2002 10-K, the latest filing that reports it; the Western Atlas merger costs, an unusual charge and other charges of that year), with no published figure excluding its charges (the r2 rule for a loss year), so the EPS history, the revenue and share histories and the P/E window start with 1999 (the ACN FY02 and AAPL FY2002 rule); fiscal 1997 (the year to September 30, 1997) lies before it",
+   "revenue_usd_b": {
+    "1999": 4.8548,
+    "2000": 4.7911,
+    "2001": 4.9805,
+    "2002": 4.8435,
+    "2003": 5.2333,
+    "2004": 6.0796,
+    "2005": 7.1855,
+    "2006": 9.0274,
+    "2007": 10.4282
+   },
+   "revenue_sources": {
+    "1999": "BK6",
+    "2000": "BK8",
+    "2001": "BK10",
+    "2002": "BK12",
+    "2003": "BK16",
+    "2004": "BK16",
+    "2005": "BK16",
+    "2006": "BK16",
+    "2007": "BK16"
+   },
+   "diluted_shares_m": {
+    "1999": 329.9,
+    "2007": 320.1
+   },
+   "pe_window_start": "1999-01-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 21.84,
+   "prev_fy_op_margin_note": "FY07 operating income $2,277.8M / revenues $10,428.2M (FY2007 10-K)",
+   "prev_fy_sales_growth": 15.5,
+   "prev_fy_na_pct": 9.0,
+   "prev_fy_na_note": "North America $4,358.0M vs $3,999.6M, Q4 2007 release",
+   "check_pretax_margin": 21.64,
+   "check_pretax_note": "FY07 income from continuing operations before income taxes $2,256.7M / revenues $10,428.2M (FY2007 10-K; no identified items)",
+   "tax_rate": 0.329,
+   "tax_note": "FY07 effective rate: income taxes $742.8M / $2,256.7M (FY2007 10-K)",
+   "fcf_b": 0.35,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash flows from operating activities $1,474.7M less expenditures for capital assets $1,127.0M",
+   "prev_q_na_pct": null,
+   "prev_q_label": "Q1 2007",
+   "dividend_annual": 0.52,
+   "dividend_note": "$0.13 quarterly, every quarter of 2007 (FY2007 10-K)",
+   "cash_return_text": "$521.5M of common stock repurchased and $166.2M of dividends paid in FY07",
+   "business_line": "Drilling and Evaluation, Completion and Production",
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's operating profit per diluted share (income from continuing operations excluding identified non-operational items) replaces it where a filing publishes one: 2002 $0.94 (Q4 2003 release; GAAP $0.67 in the FY2006 10-K), 2003 $0.98 (Q4 2004 release; GAAP $0.52), 2006 $4.10 (Q4 2007 release, the latest filing that publishes it; GAAP $7.21 with the $1,743.5M pre-tax gain on the sale of the WesternGeco interest); 1999 $0.08 (FY2003 10-K), 2000 $0.21 (FY2004 10-K) and 2001 $1.27 (FY2005 10-K) stay GAAP: no filing publishes a per-share figure excluding their items, and their listed items, netted as the 10-Ks list them, are under each year's income (1999: a $122.8M restructuring charge against an $11.4M reversal, $54.8M of gains on disposal of assets and a $31.5M gain on trading securities; 2000: a $75.5M loss on oil and gas properties and a $29.5M restructuring charge against gains); 1998 is excluded: a loss from continuing operations of $(0.92) per diluted share (FY2002 10-K, the latest filing that reports it; the Western Atlas merger costs, an unusual charge and other charges of that year), with no published figure excluding its charges (the r2 rule for a loss year), so the EPS history, the revenue and share histories and the P/E window start with 1999 (the ACN FY02 and AAPL FY2002 rule); fiscal 1997 (the year to September 30, 1997) lies before it",
+   "groups": [
+    [
+     "Drilling and Evaluation",
+     5293.2,
+     13.6
+    ],
+    [
+     "Completion and Production",
+     5135.0,
+     17.6
+    ]
+   ],
+   "groups_basis": "FY07 segment revenues (FY2007 10-K)"
+  },
+  {
+   "published": "2009-03-02",
+   "sources": [
+    "BK22",
+    "BK21",
+    "BK16",
+    "BK15",
+    "BK12",
+    "BK10",
+    "BK9",
+    "BK8",
+    "BK7",
+    "BK6",
+    "BK4"
+   ],
+   "company": "Baker Hughes Incorporated",
+   "exchange": "NYSE",
+   "symbol": "BHI",
+   "fy_label": "FY08",
+   "why": "Baker Hughes: 'Baker Hughes Incorporated is a Delaware corporation engaged in the oilfield services industry'; 'The primary driver of our business is our customers’ capital and operating expenditures dedicated to exploring, and drilling for, and developing and producing oil and natural gas'; 'Our business is cyclical and is dependent upon our customers’ expectations for future oil and natural gas prices, future economic growth, hydrocarbon demand and estimates of future oil and natural gas production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'In addition, demand for oil and natural gas could be impacted by environmental regulation or carbon taxes targeting reduction of greenhouse gas emissions or the cost for carbon capture and sequestration related regulations' (its own FY2008 10-K): revenues and earnings that follow customers' drilling and production spending through the commodity cycle, by the company's own account; no disruption theme is live for an oilfield services company, so the greenhouse-gas wording stays here",
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_gaap": {
+    "1999": 0.08,
+    "2000": 0.21,
+    "2001": 1.27,
+    "2002": 0.67,
+    "2003": 0.52,
+    "2004": 1.57,
+    "2005": 2.56,
+    "2006": 7.21,
+    "2007": 4.73,
+    "2008": 5.3
+   },
+   "eps_normalized": {
+    "1999": 0.08,
+    "2000": 0.21,
+    "2001": 1.27,
+    "2002": 0.94,
+    "2003": 0.98,
+    "2004": 1.57,
+    "2005": 2.56,
+    "2006": 4.1,
+    "2007": 4.73,
+    "2008": 5.3
+   },
+   "eps_excluded_note": "1998 is excluded: a loss from continuing operations of $(0.92) per diluted share (FY2002 10-K, the latest filing that reports it; the Western Atlas merger costs, an unusual charge and other charges of that year), with no published figure excluding its charges (the r2 rule for a loss year), so the EPS history, the revenue and share histories and the P/E window start with 1999 (the ACN FY02 and AAPL FY2002 rule); fiscal 1997 (the year to September 30, 1997) lies before it",
+   "revenue_usd_b": {
+    "1999": 4.8548,
+    "2000": 4.7911,
+    "2001": 4.9805,
+    "2002": 4.8435,
+    "2003": 5.2333,
+    "2004": 6.08,
+    "2005": 7.185,
+    "2006": 9.027,
+    "2007": 10.428,
+    "2008": 11.864
+   },
+   "revenue_sources": {
+    "1999": "BK6",
+    "2000": "BK8",
+    "2001": "BK10",
+    "2002": "BK12",
+    "2003": "BK16",
+    "2004": "BK22",
+    "2005": "BK22",
+    "2006": "BK22",
+    "2007": "BK22",
+    "2008": "BK22"
+   },
+   "diluted_shares_m": {
+    "1999": 329.9,
+    "2008": 309.0
+   },
+   "pe_window_start": "1999-01-01",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 20.03,
+   "prev_fy_op_margin_note": "FY08 operating income $2,376M / revenues $11,864M (FY2008 10-K)",
+   "prev_fy_sales_growth": 13.8,
+   "prev_fy_na_pct": 16.6,
+   "prev_fy_na_note": "North America $5,178M vs $4,441M on the region basis of the Q4 2008 release",
+   "check_pretax_margin": 19.55,
+   "check_pretax_note": "FY08 income before income taxes $2,319M / revenues $11,864M (FY2008 10-K; GAAP, as no figure excluding the year's items is published)",
+   "tax_rate": 0.295,
+   "tax_note": "FY08 effective rate: income taxes $684M / $2,319M (FY2008 10-K)",
+   "fcf_b": 0.31,
+   "fcf_label": "FY08",
+   "fcf_note": "operating activities $1,614M less expenditures for capital assets $1,303M",
+   "prev_q_na_pct": null,
+   "prev_q_label": "Q1 2007",
+   "dividend_annual": 0.6,
+   "dividend_note": "$0.15 quarterly in the third and fourth quarters of 2008 (FY2008 10-K)",
+   "cash_return_text": "$627M of common stock repurchased and $173M of dividends paid in FY08",
+   "business_line": "Drilling and Evaluation, Completion and Production",
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of accounting changes, each year from the latest filing that reports it; the company's operating profit per diluted share (income from continuing operations excluding identified non-operational items) replaces it where a filing publishes one: 2002 $0.94 (Q4 2003 release; GAAP $0.67 in the FY2006 10-K), 2003 $0.98 (Q4 2004 release; GAAP $0.52), 2006 $4.10 (Q4 2007 release, the latest filing that publishes it; GAAP $7.21 with the $1,743.5M pre-tax gain on the sale of the WesternGeco interest); 1999 $0.08 (FY2003 10-K), 2000 $0.21 (FY2004 10-K) and 2001 $1.27 (FY2005 10-K) stay GAAP: no filing publishes a per-share figure excluding their items, and their listed items, netted as the 10-Ks list them, are under each year's income (1999: a $122.8M restructuring charge against an $11.4M reversal, $54.8M of gains on disposal of assets and a $31.5M gain on trading securities; 2000: a $75.5M loss on oil and gas properties and a $29.5M restructuring charge against gains); 1998 is excluded: a loss from continuing operations of $(0.92) per diluted share (FY2002 10-K, the latest filing that reports it; the Western Atlas merger costs, an unusual charge and other charges of that year), with no published figure excluding its charges (the r2 rule for a loss year), so the EPS history, the revenue and share histories and the P/E window start with 1999 (the ACN FY02 and AAPL FY2002 rule); fiscal 1997 (the year to September 30, 1997) lies before it; 2008 is GAAP $5.30: the releases give per-share effects of its items (a $0.13 litigation charge, a $0.06 gain on a product line sale, a $0.10 discrete tax benefit and an $0.08 auction-rate impairment) but no EPS excluding them, and nothing is derived",
+   "groups": [
+    [
+     "Drilling and Evaluation",
+     6049,
+     14.3
+    ],
+    [
+     "Completion and Production",
+     5815,
+     13.2
+    ]
+   ],
+   "groups_basis": "FY08 segment revenues (FY2008 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-27",
+   "source": "BK13",
+   "release": "Jul 27",
+   "release_time": "before the open on Jul 27: 8-K accepted 06:01 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_m": 2537.5,
+    "rev_prior_m": 2203.3,
+    "cos_m": 782.7,
+    "cos_prior_m": 661.5,
+    "cosr_m": 772.1,
+    "cosr_prior_m": 679.1,
+    "rne_m": 92.6,
+    "rne_prior_m": 82.0,
+    "oi_m": 537.1,
+    "oi_prior_m": 488.5,
+    "na_m": 1049.7,
+    "na_prior_m": 975.0,
+    "oilfield_m": 2537.4,
+    "oilfield_prior_m": 2203.3
+   },
+   "sales_note": "total revenues $2,537.5M vs $2,203.3M",
+   "na_note": "North America $1,049.7M vs $975.0M",
+   "intl_note": "Oilfield Operations less North America, $1,487.7M vs $1,228.3M",
+   "margin_note": "operating income $537.1M vs $488.5M",
+   "eps_q": 1.09,
+   "eps_q_prior": 4.14,
+   "eps_note": "Q2 2006 includes the $1,743.5M pre-tax gain on the sale of the WesternGeco interest",
+   "diluted_shares_m": 321.3,
+   "cash_b": 0.8398,
+   "cash_note": "During the second quarter 2007, debt decreased $7.5 million to $1,073.8 million, and cash and short-term investments decreased $76.2 million to $839.8 million.",
+   "capex_note": "In the second quarter 2007, the company’s capital expenditures were $276.4 million, depreciation and amortization was $126.1 million and dividend payments were $41.6 million.",
+   "next_print": "Q3 2007 print (late October)",
+   "cash_return_text": "During the second quarter of 2007, the company repurchased 1.2 million shares of common stock at an average price of $82.26 per share for a total of $98.8 million.",
+   "sales_b": 2.5375,
+   "sales_pct": 15.2,
+   "na_pct": 7.7,
+   "intl_pct": 21.1,
+   "gross_margin": 35.08,
+   "gross_margin_bp": -35.5,
+   "op_margin": 21.17,
+   "op_margin_bp": -100.5
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-26",
+   "source": "BK14",
+   "release": "Oct 26",
+   "release_time": "before the open on Oct 26: 8-K accepted 06:01 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 2677.6,
+    "rev_prior_m": 2309.4,
+    "cos_m": 813.9,
+    "cos_prior_m": 666.7,
+    "cosr_m": 826.6,
+    "cosr_prior_m": 703.8,
+    "rne_m": 94.2,
+    "rne_prior_m": 87.8,
+    "oi_m": 582.6,
+    "oi_prior_m": 512.2,
+    "na_m": 1120.1,
+    "na_prior_m": 1037.6,
+    "oilfield_m": 2677.8,
+    "oilfield_prior_m": 2309.4
+   },
+   "sales_note": "total revenues $2,677.6M vs $2,309.4M",
+   "na_note": "North America $1,120.1M vs $1,037.6M",
+   "intl_note": "Oilfield Operations less North America, $1,557.7M vs $1,271.8M",
+   "margin_note": "operating income $582.6M vs $512.2M",
+   "eps_q": 1.22,
+   "eps_q_prior": 1.09,
+   "eps_note": null,
+   "diluted_shares_m": 319.8,
+   "cash_b": 0.908,
+   "cash_note": "During the third quarter 2007, debt increased $1.1 million to $1,074.9 million, and cash and short-term investments increased $68.2 million to $908.0 million.",
+   "capex_note": "In the third quarter 2007, the company’s capital expenditures were $272.7 million, depreciation and amortization was $134.4 million and dividend payments were $41.4 million.",
+   "next_print": "Q4 2007 print (late January)",
+   "cash_return_text": "During the third quarter 2007, the company repurchased 2.3 million shares of common stock at an average price of $80.05 per share for a total of $181.3 million.",
+   "sales_b": 2.6776,
+   "sales_pct": 15.9,
+   "na_pct": 8.0,
+   "intl_pct": 22.5,
+   "gross_margin": 35.21,
+   "gross_margin_bp": -163.9,
+   "op_margin": 21.76,
+   "op_margin_bp": -42.1,
+   "rig_note": "revenue from our U.S. land operations increased 13% compared to a rig count which increased 6%",
+   "outlook": [
+    "Outside North America revenue for the year 2007 is expected to be up between 20% and 21% compared to the year 2006."
+   ]
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-30",
+   "source": "BK15",
+   "release": "Jan 30",
+   "release_time": "before the open on Jan 30: 8-K accepted 06:01 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 2740.3,
+    "rev_prior_m": 2452.7,
+    "cos_m": 917.3,
+    "cos_prior_m": 849.1,
+    "cosr_m": 890.8,
+    "cosr_prior_m": 727.2,
+    "rne_m": 93.5,
+    "rne_prior_m": 90.7,
+    "oi_m": 597.9,
+    "oi_prior_m": 493.2,
+    "na_m": 1115.5,
+    "na_prior_m": 1045.7,
+    "oilfield_m": 2740.3,
+    "oilfield_prior_m": 2452.7
+   },
+   "sales_note": "total revenues $2,740.3M vs $2,452.7M",
+   "na_note": "North America $1,115.5M vs $1,045.7M",
+   "intl_note": "Oilfield Operations less North America, $1,624.8M vs $1,407.0M",
+   "margin_note": "operating income $597.9M vs $493.2M",
+   "eps_q": 1.26,
+   "eps_q_prior": 1.02,
+   "eps_note": "Q4 2006 includes a $46.1M charge for the investigation resolution",
+   "diluted_shares_m": 318.3,
+   "cash_b": 1.0544,
+   "cash_note": "During the fourth quarter of 2007, debt increased $9.9 million to $1,084.8 million, and cash and short-term investments increased $146.4 million to $1,054.4 million compared to the third quarter of 2007.",
+   "capex_note": "In the fourth quarter 2007, the company’s capital expenditures were $315.9 million, depreciation and amortization expense was $140.9 million and dividend payments were $41.7 million.",
+   "next_print": "Q1 2008 print (late April)",
+   "cash_return_text": "During the fourth quarter 2007, the company repurchased 3.0 million shares of common stock at an average price of $81.75 per share for a total of $241.5 million.",
+   "sales_b": 2.7403,
+   "sales_pct": 11.7,
+   "na_pct": 6.7,
+   "intl_pct": 15.5,
+   "gross_margin": 30.61,
+   "gross_margin_bp": -142.8,
+   "op_margin": 21.82,
+   "op_margin_bp": 171.0,
+   "rig_note": "revenue from our U.S. land operations increased 12% compared to a rig count which increased 6%",
+   "outlook": [
+    "Outside North America revenue for the year 2008 is expected to increase in a percentage range from the low to mid-teens compared to the year 2007."
+   ],
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 4.73,
+    "revenue_usd_b": 10.4282,
+    "diluted_shares_m": 320.1,
+    "normalization_note": "FY07 $4.73 from the Q4 2007 release (no identified items in 2007)",
+    "op_margin": 21.84,
+    "op_margin_note": "FY07 operating income $2,277.8M / revenues $10,428.2M (Q4 2007 release)",
+    "sales_growth": 15.5,
+    "na_pct": 9.0,
+    "na_note": "North America $4,358.0M vs $3,999.6M, Q4 2007 release",
+    "check_pretax_margin": 21.64,
+    "check_pretax_note": "FY07 income from continuing operations before income taxes $2,256.7M / revenues $10,428.2M (Q4 2007 release)",
+    "tax_rate": 0.329,
+    "tax_note": "FY07 effective rate: income taxes $742.8M / $2,256.7M",
+    "groups": [
+     [
+      "Drilling and Evaluation",
+      5293.2,
+      13.6
+     ],
+     [
+      "Completion and Production",
+      5135.0,
+      17.6
+     ]
+    ],
+    "groups_basis": "FY07 segment revenues (Q4 2007 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-22",
+   "source": "BK17",
+   "release": "Apr 22",
+   "release_time": "before the open on Apr 22: 8-K accepted 07:09 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2008-03-31",
+   "raw": {
+    "rev_m": 2670.4,
+    "rev_prior_m": 2472.8,
+    "cos_m": 865.4,
+    "cos_prior_m": 819.7,
+    "cosr_m": 904.0,
+    "cosr_prior_m": 780.4,
+    "rne_m": 102.3,
+    "rne_prior_m": 91.6,
+    "oi_m": 548.2,
+    "oi_prior_m": 560.2,
+    "na_m": 1162.3,
+    "na_prior_m": 1072.7,
+    "oilfield_m": 2670.4,
+    "oilfield_prior_m": 2472.7
+   },
+   "sales_note": "total revenues $2,670.4M vs $2,472.8M",
+   "na_note": "North America $1,162.3M vs $1,072.7M",
+   "intl_note": "Oilfield Operations less North America, $1,508.1M vs $1,400.0M",
+   "margin_note": "operating income $548.2M vs $560.2M",
+   "eps_q": 1.27,
+   "eps_q_prior": 1.17,
+   "eps_note": "Q1 2008 includes a $0.06 gain on the sale of the Surface Safety Systems product line",
+   "diluted_shares_m": 311.2,
+   "cash_b": 1.0304,
+   "cash_note": "During the first quarter of 2008, debt increased $461.6 million to $1,546.4 million, and cash and short-term investments decreased $24.0 million to $1,030.4 million compared to the fourth quarter of 2007.",
+   "capex_note": "In the first quarter 2008, the company’s capital expenditures were $226.6 million, depreciation and amortization expense was $146.8 million and dividend payments were $40.6 million.",
+   "next_print": "Q2 2008 print (late July)",
+   "cash_return_text": "During the first quarter of 2008, the company repurchased 8.2 million shares of common stock at an average price of $68.97 per share for a total of $567.8 million.",
+   "sales_b": 2.6704,
+   "sales_pct": 8.0,
+   "na_pct": 8.4,
+   "intl_pct": 7.7,
+   "gross_margin": 29.91,
+   "gross_margin_bp": -167.8,
+   "op_margin": 20.53,
+   "op_margin_bp": -212.6,
+   "rig_note": "revenue from our U.S. land operations increased 16% compared to a rig count which increased 4%",
+   "outlook": [
+    "Outside of North America, revenue for the year 2008 is expected to increase in a percentage range from the low to mid-teens compared to the year 2007."
+   ]
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-22",
+   "source": "BK18",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 06:01 ET; conference call at 10:00 a.m. Eastern time; public before that day's close",
+   "period_end": "2008-06-30",
+   "raw": {
+    "rev_m": 2997.5,
+    "rev_prior_m": 2537.5,
+    "cos_m": 1054.5,
+    "cos_prior_m": 873.6,
+    "cosr_m": 942.1,
+    "cosr_prior_m": 798.0,
+    "rne_m": 106.4,
+    "rne_prior_m": 92.7,
+    "oi_m": 562.6,
+    "oi_prior_m": 537.1,
+    "na_m": 1263.8,
+    "na_prior_m": 1055.8,
+    "oilfield_m": 2997.5,
+    "oilfield_prior_m": 2537.4
+   },
+   "sales_note": "total revenues $2,997.5M vs $2,537.5M",
+   "na_note": "North America $1,263.8M vs $1,055.8M (from this release, revenue by the region that provides operational support; the year-ago quarter restated)",
+   "intl_note": "Oilfield Operations less North America, $1,733.7M vs $1,481.6M",
+   "margin_note": "operating income $562.6M vs $537.1M",
+   "eps_q": 1.23,
+   "eps_q_prior": 1.09,
+   "eps_note": "Q2 2008 includes a $62.0M litigation settlement ($0.13 per diluted share) in operating income",
+   "diluted_shares_m": 308.4,
+   "cash_b": 1.0717,
+   "cash_note": "During the second quarter of 2008, debt increased $74.8 million to $1,621.2 million, and cash and short-term investments increased $41.3 million to $1,071.7 million compared to the first quarter of 2008.",
+   "capex_note": "In the second quarter 2008, the company’s capital expenditures were $312.4 million, depreciation and amortization expense was $155.7 million and dividend payments were $39.9 million.",
+   "next_print": "Q3 2008 print (late October)",
+   "cash_return_text": "During the second quarter of 2008, the company repurchased 51,000 shares of common stock at an average price of $87.08 per share for a total of $4.4 million.",
+   "sales_b": 2.9975,
+   "sales_pct": 18.1,
+   "na_pct": 19.7,
+   "intl_pct": 17.0,
+   "gross_margin": 29.84,
+   "gross_margin_bp": -62.9,
+   "op_margin": 18.77,
+   "op_margin_bp": -239.8,
+   "rig_note": "revenue from our U.S. land operations increased 24% compared to a rig count which increased 7%",
+   "outlook": [
+    "Outside of North America, revenue for the year 2008 is expected to increase 14% to 16% compared to the year 2007."
+   ]
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-22",
+   "source": "BK20",
+   "release": "Oct 22",
+   "release_time": "before the open on Oct 22: 8-K accepted 06:01 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2008-09-30",
+   "raw": {
+    "rev_m": 3009.6,
+    "rev_prior_m": 2677.6,
+    "cos_m": 1031.9,
+    "cos_prior_m": 906.7,
+    "cosr_m": 995.9,
+    "cosr_prior_m": 859.1,
+    "rne_m": 103.2,
+    "rne_prior_m": 94.2,
+    "oi_m": 600.4,
+    "oi_prior_m": 582.6,
+    "na_m": 1311.7,
+    "na_prior_m": 1140.7,
+    "oilfield_m": 3009.5,
+    "oilfield_prior_m": 2677.8
+   },
+   "sales_note": "total revenues $3,009.6M vs $2,677.6M",
+   "na_note": "North America $1,311.7M vs $1,140.7M (revenue by the region that provides operational support)",
+   "intl_note": "Oilfield Operations less North America, $1,697.8M vs $1,537.1M",
+   "margin_note": "operating income $600.4M vs $582.6M",
+   "eps_q": 1.39,
+   "eps_q_prior": 1.22,
+   "eps_note": "Q3 2008 includes a $0.10 discrete tax benefit and an estimated $0.11 hurricane impact",
+   "diluted_shares_m": 308.3,
+   "cash_b": 1.127,
+   "cash_note": "During the third quarter of 2008, debt increased $9 million to $1,631 million, and cash and short-term investments increased $55 million to $1,127 million as compared to the second quarter of 2008.",
+   "capex_note": "In the third quarter 2008, the company’s capital expenditures were $300 million, depreciation and amortization expense was $158 million and dividend payments were $46 million.",
+   "next_print": "Q4 2008 print (late January)",
+   "cash_return_text": "During the third quarter of 2008, the company repurchased 538,900 shares of common stock at an average price of $71.26 per share for a total of $39 million.",
+   "sales_b": 3.0096,
+   "sales_pct": 12.4,
+   "na_pct": 15.0,
+   "intl_pct": 10.5,
+   "gross_margin": 29.19,
+   "gross_margin_bp": -134.2,
+   "op_margin": 19.95,
+   "op_margin_bp": -180.9,
+   "rig_note": "revenue from our U.S. land operations increased 25% compared to a rig count which increased 11%",
+   "outlook": [
+    "Outside of North America, revenue for the fourth quarter 2008 is expected to increase between 14% and 15% compared to the fourth quarter 2007."
+   ]
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-28",
+   "source": "BK21",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 06:01 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_m": 3186,
+    "rev_prior_m": 2740,
+    "cos_m": 1129,
+    "cos_prior_m": 917,
+    "cosr_m": 1031,
+    "cosr_prior_m": 891,
+    "rne_m": 114,
+    "rne_prior_m": 93,
+    "oi_m": 664,
+    "oi_prior_m": 598,
+    "na_m": 1411,
+    "na_prior_m": 1133,
+    "oilfield_m": 3186,
+    "oilfield_prior_m": 2740
+   },
+   "sales_note": "total revenues $3,186M vs $2,740M",
+   "na_note": "North America $1,411M vs $1,133M (revenue by the region that provides operational support)",
+   "intl_note": "Oilfield Operations less North America, $1,775M vs $1,607M",
+   "margin_note": "operating income $664M vs $598M",
+   "eps_q": 1.41,
+   "eps_q_prior": 1.26,
+   "eps_note": "Q4 2008 includes a $25M after-tax impairment of auction rate securities ($0.08 per diluted share)",
+   "diluted_shares_m": 307.0,
+   "cash_b": 1.96,
+   "cash_note": "During the fourth quarter 2008, debt increased $703 million to $2.33 billion and cash and short-term investments increased $828 million to $1.96 billion as compared to the third quarter 2008.",
+   "capex_note": "In the fourth quarter 2008, the company’s capital expenditures were $463 million, depreciation and amortization expense was $177 million and dividend payments were $47 million.",
+   "next_print": "Q1 2009 print (late April)",
+   "cash_return_text": "During the fourth quarter 2008, the company repurchased 380,000 shares of common stock at an average price of $42.67 per share for a total of $16 million.",
+   "sales_b": 3.186,
+   "sales_pct": 16.3,
+   "na_pct": 24.5,
+   "intl_pct": 10.5,
+   "gross_margin": 28.63,
+   "gross_margin_bp": -199.5,
+   "op_margin": 20.84,
+   "op_margin_bp": -98.4,
+   "rig_note": "revenue from our US operations increased 26% compared to a rig count which increased 6%",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 5.3,
+    "revenue_usd_b": 11.864,
+    "diluted_shares_m": 309.0,
+    "normalization_note": "FY08 $5.30 from the Q4 2008 release (GAAP: per-share effects of its items are published, no EPS excluding them)",
+    "op_margin": 20.03,
+    "op_margin_note": "FY08 operating income $2,376M / revenues $11,864M (Q4 2008 release)",
+    "sales_growth": 13.8,
+    "na_pct": 16.6,
+    "na_note": "North America $5,178M vs $4,441M, Q4 2008 release",
+    "check_pretax_margin": 19.55,
+    "check_pretax_note": "FY08 income before income taxes $2,319M / revenues $11,864M (Q4 2008 release)",
+    "tax_rate": 0.295,
+    "tax_note": "FY08 effective rate: income taxes $684M / $2,319M",
+    "groups": [
+     [
+      "Drilling and Evaluation",
+      6049,
+      14.3
+     ],
+     [
+      "Completion and Production",
+      5815,
+      13.2
+     ]
+    ],
+    "groups_basis": "FY08 segment revenues (Q4 2008 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-29",
+   "source": "BK23",
+   "release": "Apr 29",
+   "release_time": "before the open on Apr 29: 8-K accepted 06:02 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2009-03-31",
+   "raw": {
+    "rev_m": 2668,
+    "rev_prior_m": 2670,
+    "cos_m": 1027,
+    "cos_prior_m": 865,
+    "cosr_m": 933,
+    "cosr_prior_m": 904,
+    "rne_m": 109,
+    "rne_prior_m": 103,
+    "oi_m": 318,
+    "oi_prior_m": 548,
+    "na_m": 1083,
+    "na_prior_m": 1177,
+    "oilfield_m": 2668,
+    "oilfield_prior_m": 2670
+   },
+   "sales_note": "total revenues $2,668M vs $2,670M",
+   "na_note": "North America $1,083M vs $1,177M (revenue by the region that provides operational support)",
+   "intl_note": "Oilfield Operations less North America, $1,585M vs $1,493M",
+   "margin_note": "operating income $318M vs $548M",
+   "eps_q": 0.63,
+   "eps_q_prior": 1.27,
+   "eps_note": "Q1 2009 includes about $83M before tax ($0.19 per share) of severance and a higher allowance for doubtful accounts",
+   "diluted_shares_m": 310.0,
+   "cash_b": 1.18,
+   "cash_note": "During the first quarter 2009, debt decreased $520 million to $1.81 billion and cash and short-term investments decreased $776 million to $1.18 billion as compared to the fourth quarter 2008.",
+   "capex_note": "Capital expenditures were $281 million, depreciation and amortization expense was $173 million and dividend payments were $46 million in the first quarter 2009.",
+   "next_print": "Q2 2009 print (late July or early August)",
+   "cash_return_text": "dividend payments were $46 million in the first quarter 2009",
+   "sales_b": 2.668,
+   "sales_pct": -0.1,
+   "na_pct": -8.0,
+   "intl_pct": 6.2,
+   "gross_margin": 22.45,
+   "gross_margin_bp": -743.6,
+   "op_margin": 11.92,
+   "op_margin_bp": -860.5,
+   "rig_note": "The pace of activity contraction, as measured by the rig count, has been faster than any other cyclical contraction post-1986."
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-08-05",
+   "source": "BK24",
+   "release": "Aug 5",
+   "release_time": "before the open on Aug 5: 8-K accepted 06:02 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2009-06-30",
+   "raw": {
+    "rev_m": 2336,
+    "rev_prior_m": 2998,
+    "cos_m": 926,
+    "cos_prior_m": 1055,
+    "cosr_m": 871,
+    "cosr_prior_m": 942,
+    "rne_m": 102,
+    "rne_prior_m": 106,
+    "oi_m": 153,
+    "oi_prior_m": 563,
+    "na_m": 794,
+    "na_prior_m": 1278,
+    "oilfield_m": 2336,
+    "oilfield_prior_m": 2998
+   },
+   "sales_note": "total revenues $2,336M vs $2,998M",
+   "na_note": "North America $794M vs $1,278M (revenue by the region that provides operational support)",
+   "intl_note": "Oilfield Operations less North America, $1,542M vs $1,720M",
+   "margin_note": "operating income $153M vs $563M",
+   "eps_q": 0.28,
+   "eps_q_prior": 1.23,
+   "eps_note": "Q2 2009 includes $54M before tax ($0.13 per share) of severance, reorganization and doubtful-account costs; Q2 2008 a $0.13 litigation charge",
+   "diluted_shares_m": 310.0,
+   "cash_b": 1.36,
+   "cash_note": "During the second quarter 2009, debt increased $16 million to $1.83 billion and cash and short-term investments increased $183 million to $1.36 billion as compared to the first quarter 2009.",
+   "capex_note": "Capital expenditures were $291 million, depreciation and amortization expense was $182 million and dividend payments were $46 million in the second quarter 2009.",
+   "next_print": "Q3 2009 print (late October or early November)",
+   "cash_return_text": "dividend payments were $46 million in the second quarter 2009",
+   "sales_b": 2.336,
+   "sales_pct": -22.1,
+   "na_pct": -37.9,
+   "intl_pct": -10.3,
+   "gross_margin": 18.71,
+   "gross_margin_bp": -1114.6,
+   "op_margin": 6.55,
+   "op_margin_bp": -1223.0,
+   "rig_note": "This was reflected in the North America rig count which averaged 1,024 in the second quarter 2009, down 50% compared to the second quarter 2008 and down 39% sequentially from the first quarter 2009."
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-11-04",
+   "source": "BK25",
+   "release": "Nov 4",
+   "release_time": "before the open on Nov 4: 8-K accepted 06:01 ET; conference call at 8:30 a.m. Eastern time; public before that day's close",
+   "period_end": "2009-09-30",
+   "raw": {
+    "rev_m": 2232,
+    "rev_prior_m": 3010,
+    "cos_m": 937,
+    "cos_prior_m": 1032,
+    "cosr_m": 824,
+    "cosr_prior_m": 996,
+    "rne_m": 88,
+    "rne_prior_m": 103,
+    "oi_m": 111,
+    "oi_prior_m": 601,
+    "na_m": 817,
+    "na_prior_m": 1312,
+    "oilfield_m": 2232,
+    "oilfield_prior_m": 3010
+   },
+   "sales_note": "total revenues $2,232M vs $3,010M",
+   "na_note": "North America $817M vs $1,312M (revenue by the region that provides operational support)",
+   "intl_note": "Oilfield Operations less North America, $1,415M vs $1,698M",
+   "margin_note": "operating income $111M vs $601M",
+   "eps_q": 0.18,
+   "eps_q_prior": 1.39,
+   "eps_note": null,
+   "diluted_shares_m": 311.0,
+   "cash_b": 1.49,
+   "cash_note": "During the third quarter 2009, debt decreased $23 million to $1.81 billion and cash and short-term investments increased $125 million to $1.49 billion as compared to the second quarter 2009.",
+   "capex_note": "Capital expenditures were $222 million, depreciation and amortization expense was $177 million and dividend payments were $47 million in the third quarter 2009.",
+   "next_print": "Q4 2009 print (late January)",
+   "cash_return_text": "dividend payments were $47 million in the third quarter 2009",
+   "sales_b": 2.232,
+   "sales_pct": -25.8,
+   "na_pct": -37.7,
+   "intl_pct": -16.7,
+   "gross_margin": 17.16,
+   "gross_margin_bp": -1204.3,
+   "op_margin": 4.97,
+   "op_margin_bp": -1499.4,
+   "rig_note": "Revenue in North America reflected changes in the North America rig count which was down 52% year-over-year."
+  }
+ ],
+ "guides": [],
+ "dividends": [
+  {
+   "published": "2008-07-30",
+   "source": "BK19",
+   "quarterly": 0.15,
+   "note": "$0.15 a share authorized on July 24, 2008, up from $0.13 (Q2 2008 10-Q, the first filing that states it)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "rule_t": {
+  "_doc": "Rule T values behind the engine's signal thresholds (retro/README.md, 'BKR'): the decade of the FY2006 10-K, the vintage public on 2008-01-04, is fiscal 1997-2006, ten year-on-year changes. Fiscal 1997 ended September 30, 1997 and fiscal 1998 is calendar 1998 (the company moved its year end to December 31 from 1998; the three-month transition period of October-December 1997 is not a fiscal year), so the 1998 change compares calendar 1998 with the year to September 1997, as the filings place them side by side. Each change comes from the latest 10-K published by 2008-01-04 that reports both years; seams stay as published (the Process segment shown as discontinued in the FY1999 10-K and restored in the FY2000 10-K, later discontinued businesses, the Western Atlas pooling). North America is the United States plus Canada in each 10-K's table of revenues by country (the releases' North America is 'United States and Canada'); outside North America is the rest. 'raw' keeps each change's two years as published.",
+  "na_rev": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 25.67,
+    "1998": 16.81,
+    "1999": -14.07,
+    "2000": 10.24,
+    "2001": 3.61,
+    "2002": -13.12,
+    "2003": 14.04,
+    "2004": 14.36,
+    "2005": 20.89,
+    "2006": 31.18
+   },
+   "sources": "revenues by country, United States plus Canada: BK1 (fiscal 1997), BK2 (1998), BK3 (1999), BK4 (2000), BK5 (2001), BK6 (2002), BK8 (2003), BK10 (2004), BK12 (2005-2006)",
+   "thresholds": {
+    "BEAR": -42,
+    "BASE": -14,
+    "BULL": 14,
+    "XBULL": 31
+   },
+   "raw": {
+    "1997": {
+     "source": "BK1",
+     "prior": {
+      "us": 1479.3,
+      "canada": 203.9,
+      "total": 4445.8
+     },
+     "year": {
+      "us": 1849.0,
+      "canada": 266.3,
+      "total": 5343.6
+     }
+    },
+    "1998": {
+     "source": "BK2",
+     "prior": {
+      "us": 1701.6,
+      "canada": 243.3,
+      "total": 4957.9
+     },
+     "year": {
+      "us": 2034.1,
+      "canada": 237.8,
+      "total": 5820.6
+     }
+    },
+    "1999": {
+     "source": "BK3",
+     "prior": {
+      "us": 2196.3,
+      "canada": 257.8,
+      "total": 6310.6
+     },
+     "year": {
+      "us": 1874.2,
+      "canada": 234.5,
+      "total": 4936.5
+     }
+    },
+    "2000": {
+     "source": "BK4",
+     "prior": {
+      "us": 1874.2,
+      "canada": 234.5,
+      "total": 4936.5
+     },
+     "year": {
+      "us": 2034.9,
+      "canada": 289.7,
+      "total": 5233.8
+     }
+    },
+    "2001": {
+     "source": "BK5",
+     "prior": {
+      "us": 1943.7,
+      "canada": 281.6,
+      "total": 4942.1
+     },
+     "year": {
+      "us": 2010.0,
+      "canada": 295.6,
+      "total": 5139.6
+     }
+    },
+    "2002": {
+     "source": "BK6",
+     "prior": {
+      "us": 1972.4,
+      "canada": 291.6,
+      "total": 5037.6
+     },
+     "year": {
+      "us": 1713.4,
+      "canada": 253.5,
+      "total": 4901.7
+     }
+    },
+    "2003": {
+     "source": "BK8",
+     "prior": {
+      "us": 1700.2,
+      "canada": 246.6,
+      "total": 4860.2
+     },
+     "year": {
+      "us": 1883.0,
+      "canada": 337.1,
+      "total": 5252.4
+     }
+    },
+    "2004": {
+     "source": "BK10",
+     "prior": {
+      "us": 1873.0,
+      "canada": 332.3,
+      "total": 5233.3
+     },
+     "year": {
+      "us": 2132.9,
+      "canada": 389.1,
+      "total": 6079.6
+     }
+    },
+    "2005": {
+     "source": "BK12",
+     "prior": {
+      "us": 2132.9,
+      "canada": 389.1,
+      "total": 6079.6
+     },
+     "year": {
+      "us": 2576.1,
+      "canada": 472.8,
+      "total": 7185.5
+     }
+    },
+    "2006": {
+     "source": "BK12",
+     "prior": {
+      "us": 2576.1,
+      "canada": 472.8,
+      "total": 7185.5
+     },
+     "year": {
+      "us": 3392.5,
+      "canada": 607.1,
+      "total": 9027.4
+     }
+    }
+   }
+  },
+  "intl_rev": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 16.86,
+    "1998": 17.78,
+    "1999": -26.67,
+    "2000": 2.88,
+    "2001": 4.31,
+    "2002": 5.81,
+    "2003": 4.08,
+    "2004": 17.49,
+    "2005": 16.28,
+    "2006": 21.54
+   },
+   "sources": "total revenues less United States and Canada, the same tables: BK1 (fiscal 1997), BK2 (1998), BK3 (1999), BK4 (2000), BK5 (2001), BK6 (2002), BK8 (2003), BK10 (2004), BK12 (2005-2006)",
+   "thresholds": {
+    "BEAR": -64,
+    "BASE": -27,
+    "BULL": 11,
+    "XBULL": 22
+   },
+   "raw": {
+    "1997": {
+     "source": "BK1",
+     "prior": {
+      "us": 1479.3,
+      "canada": 203.9,
+      "total": 4445.8
+     },
+     "year": {
+      "us": 1849.0,
+      "canada": 266.3,
+      "total": 5343.6
+     }
+    },
+    "1998": {
+     "source": "BK2",
+     "prior": {
+      "us": 1701.6,
+      "canada": 243.3,
+      "total": 4957.9
+     },
+     "year": {
+      "us": 2034.1,
+      "canada": 237.8,
+      "total": 5820.6
+     }
+    },
+    "1999": {
+     "source": "BK3",
+     "prior": {
+      "us": 2196.3,
+      "canada": 257.8,
+      "total": 6310.6
+     },
+     "year": {
+      "us": 1874.2,
+      "canada": 234.5,
+      "total": 4936.5
+     }
+    },
+    "2000": {
+     "source": "BK4",
+     "prior": {
+      "us": 1874.2,
+      "canada": 234.5,
+      "total": 4936.5
+     },
+     "year": {
+      "us": 2034.9,
+      "canada": 289.7,
+      "total": 5233.8
+     }
+    },
+    "2001": {
+     "source": "BK5",
+     "prior": {
+      "us": 1943.7,
+      "canada": 281.6,
+      "total": 4942.1
+     },
+     "year": {
+      "us": 2010.0,
+      "canada": 295.6,
+      "total": 5139.6
+     }
+    },
+    "2002": {
+     "source": "BK6",
+     "prior": {
+      "us": 1972.4,
+      "canada": 291.6,
+      "total": 5037.6
+     },
+     "year": {
+      "us": 1713.4,
+      "canada": 253.5,
+      "total": 4901.7
+     }
+    },
+    "2003": {
+     "source": "BK8",
+     "prior": {
+      "us": 1700.2,
+      "canada": 246.6,
+      "total": 4860.2
+     },
+     "year": {
+      "us": 1883.0,
+      "canada": 337.1,
+      "total": 5252.4
+     }
+    },
+    "2004": {
+     "source": "BK10",
+     "prior": {
+      "us": 1873.0,
+      "canada": 332.3,
+      "total": 5233.3
+     },
+     "year": {
+      "us": 2132.9,
+      "canada": 389.1,
+      "total": 6079.6
+     }
+    },
+    "2005": {
+     "source": "BK12",
+     "prior": {
+      "us": 2132.9,
+      "canada": 389.1,
+      "total": 6079.6
+     },
+     "year": {
+      "us": 2576.1,
+      "canada": 472.8,
+      "total": 7185.5
+     }
+    },
+    "2006": {
+     "source": "BK12",
+     "prior": {
+      "us": 2576.1,
+      "canada": 472.8,
+      "total": 7185.5
+     },
+     "year": {
+      "us": 3392.5,
+      "canada": 607.1,
+      "total": 9027.4
+     }
+    }
+   }
+  },
+  "revenue": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 20.19,
+    "1998": 18.1,
+    "1999": -23.07,
+    "2000": -0.45,
+    "2001": 4.36,
+    "2002": -2.75,
+    "2003": 8.05,
+    "2004": 16.17,
+    "2005": 18.19,
+    "2006": 25.63
+   },
+   "sources": "selected financial data: BK3 (fiscal 1997), BK4 (1998), BK5 (1999), BK6 (2000), BK8 (2001), BK10 (2002), BK12 (2003-2006)",
+   "thresholds": {
+    "BEAR": -58,
+    "BASE": -23,
+    "BULL": 12,
+    "XBULL": 26
+   },
+   "raw": {
+    "1997": {
+     "source": "BK3",
+     "prior": {
+      "revenue": 4445.8,
+      "cost_of_revenues": 3487.4,
+      "operating_income": 448.9
+     },
+     "year": {
+      "revenue": 5343.6,
+      "cost_of_revenues": 4188.2,
+      "operating_income": 446.5
+     }
+    },
+    "1998": {
+     "source": "BK4",
+     "prior": {
+      "revenue": 5343.6,
+      "cost_of_revenues": 4188.2,
+      "operating_income": 446.5
+     },
+     "year": {
+      "revenue": 6310.6,
+      "cost_of_revenues": 5138.4,
+      "operating_income": -139.0
+     }
+    },
+    "1999": {
+     "source": "BK5",
+     "prior": {
+      "revenue": 6310.6,
+      "cost_of_revenues": 5138.4,
+      "operating_income": -139.0
+     },
+     "year": {
+      "revenue": 4854.8,
+      "cost_of_revenues": 3957.1,
+      "operating_income": 157.6
+     }
+    },
+    "2000": {
+     "source": "BK6",
+     "prior": {
+      "revenue": 4854.8,
+      "cost_of_revenues": 3957.1,
+      "operating_income": 157.6
+     },
+     "year": {
+      "revenue": 4833.1,
+      "cost_of_revenues": 3726.7,
+      "operating_income": 338.1
+     }
+    },
+    "2001": {
+     "source": "BK8",
+     "prior": {
+      "revenue": 4791.1,
+      "cost_of_revenues": 3692.3,
+      "operating_income": 334.8
+     },
+     "year": {
+      "revenue": 5000.1,
+      "cost_of_revenues": 3532.2,
+      "operating_income": 723.0
+     }
+    },
+    "2002": {
+     "source": "BK10",
+     "prior": {
+      "revenue": 4980.5,
+      "cost_of_revenues": 3519.1,
+      "operating_income": 719.7
+     },
+     "year": {
+      "revenue": 4843.5,
+      "cost_of_revenues": 3478.5,
+      "operating_income": 559.5
+     }
+    },
+    "2003": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 4843.5,
+      "cost_of_revenues": 3478.5,
+      "operating_income": 559.5
+     },
+     "year": {
+      "revenue": 5233.3,
+      "cost_of_revenues": 3807.5,
+      "operating_income": 557.0
+     }
+    },
+    "2004": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 5233.3,
+      "cost_of_revenues": 3807.5,
+      "operating_income": 557.0
+     },
+     "year": {
+      "revenue": 6079.6,
+      "cost_of_revenues": 4351.0,
+      "operating_income": 816.4
+     }
+    },
+    "2005": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 6079.6,
+      "cost_of_revenues": 4351.0,
+      "operating_income": 816.4
+     },
+     "year": {
+      "revenue": 7185.5,
+      "cost_of_revenues": 4942.5,
+      "operating_income": 1233.4
+     }
+    },
+    "2006": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 7185.5,
+      "cost_of_revenues": 4942.5,
+      "operating_income": 1233.4
+     },
+     "year": {
+      "revenue": 9027.4,
+      "cost_of_revenues": 5782.4,
+      "operating_income": 1934.3
+     }
+    }
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 6.5,
+    "1998": -304.7,
+    "1999": -8.4,
+    "2000": 440.1,
+    "2001": 642.3,
+    "2002": -116.0,
+    "2003": -93.7,
+    "2004": 118.8,
+    "2005": 278.3,
+    "2006": 473.0
+   },
+   "sources": "revenues less cost of revenues (research and engineering included, as each 10-K's selected data shows it; the FY2006 10-K's 'cost of revenues and research and engineering'), the same tables as revenue",
+   "thresholds": {
+    "BEAR": -670,
+    "BASE": -300,
+    "BULL": 60,
+    "XBULL": 640
+   },
+   "raw": {
+    "1997": {
+     "source": "BK3",
+     "prior": {
+      "revenue": 4445.8,
+      "cost_of_revenues": 3487.4,
+      "operating_income": 448.9
+     },
+     "year": {
+      "revenue": 5343.6,
+      "cost_of_revenues": 4188.2,
+      "operating_income": 446.5
+     }
+    },
+    "1998": {
+     "source": "BK4",
+     "prior": {
+      "revenue": 5343.6,
+      "cost_of_revenues": 4188.2,
+      "operating_income": 446.5
+     },
+     "year": {
+      "revenue": 6310.6,
+      "cost_of_revenues": 5138.4,
+      "operating_income": -139.0
+     }
+    },
+    "1999": {
+     "source": "BK5",
+     "prior": {
+      "revenue": 6310.6,
+      "cost_of_revenues": 5138.4,
+      "operating_income": -139.0
+     },
+     "year": {
+      "revenue": 4854.8,
+      "cost_of_revenues": 3957.1,
+      "operating_income": 157.6
+     }
+    },
+    "2000": {
+     "source": "BK6",
+     "prior": {
+      "revenue": 4854.8,
+      "cost_of_revenues": 3957.1,
+      "operating_income": 157.6
+     },
+     "year": {
+      "revenue": 4833.1,
+      "cost_of_revenues": 3726.7,
+      "operating_income": 338.1
+     }
+    },
+    "2001": {
+     "source": "BK8",
+     "prior": {
+      "revenue": 4791.1,
+      "cost_of_revenues": 3692.3,
+      "operating_income": 334.8
+     },
+     "year": {
+      "revenue": 5000.1,
+      "cost_of_revenues": 3532.2,
+      "operating_income": 723.0
+     }
+    },
+    "2002": {
+     "source": "BK10",
+     "prior": {
+      "revenue": 4980.5,
+      "cost_of_revenues": 3519.1,
+      "operating_income": 719.7
+     },
+     "year": {
+      "revenue": 4843.5,
+      "cost_of_revenues": 3478.5,
+      "operating_income": 559.5
+     }
+    },
+    "2003": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 4843.5,
+      "cost_of_revenues": 3478.5,
+      "operating_income": 559.5
+     },
+     "year": {
+      "revenue": 5233.3,
+      "cost_of_revenues": 3807.5,
+      "operating_income": 557.0
+     }
+    },
+    "2004": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 5233.3,
+      "cost_of_revenues": 3807.5,
+      "operating_income": 557.0
+     },
+     "year": {
+      "revenue": 6079.6,
+      "cost_of_revenues": 4351.0,
+      "operating_income": 816.4
+     }
+    },
+    "2005": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 6079.6,
+      "cost_of_revenues": 4351.0,
+      "operating_income": 816.4
+     },
+     "year": {
+      "revenue": 7185.5,
+      "cost_of_revenues": 4942.5,
+      "operating_income": 1233.4
+     }
+    },
+    "2006": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 7185.5,
+      "cost_of_revenues": 4942.5,
+      "operating_income": 1233.4
+     },
+     "year": {
+      "revenue": 9027.4,
+      "cost_of_revenues": 5782.4,
+      "operating_income": 1934.3
+     }
+    }
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -174.1,
+    "1998": -1055.8,
+    "1999": 544.9,
+    "2000": 374.9,
+    "2001": 747.2,
+    "2002": -289.9,
+    "2003": -90.8,
+    "2004": 278.5,
+    "2005": 373.7,
+    "2006": 426.2
+   },
+   "sources": "operating income on revenues, the same tables as revenue (as published, the 1998 merger costs and unusual charge and fiscal 1997's acquired in-process research and development included)",
+   "thresholds": {
+    "BEAR": -2440,
+    "BASE": -1060,
+    "BULL": 330,
+    "XBULL": 750
+   },
+   "raw": {
+    "1997": {
+     "source": "BK3",
+     "prior": {
+      "revenue": 4445.8,
+      "cost_of_revenues": 3487.4,
+      "operating_income": 448.9
+     },
+     "year": {
+      "revenue": 5343.6,
+      "cost_of_revenues": 4188.2,
+      "operating_income": 446.5
+     }
+    },
+    "1998": {
+     "source": "BK4",
+     "prior": {
+      "revenue": 5343.6,
+      "cost_of_revenues": 4188.2,
+      "operating_income": 446.5
+     },
+     "year": {
+      "revenue": 6310.6,
+      "cost_of_revenues": 5138.4,
+      "operating_income": -139.0
+     }
+    },
+    "1999": {
+     "source": "BK5",
+     "prior": {
+      "revenue": 6310.6,
+      "cost_of_revenues": 5138.4,
+      "operating_income": -139.0
+     },
+     "year": {
+      "revenue": 4854.8,
+      "cost_of_revenues": 3957.1,
+      "operating_income": 157.6
+     }
+    },
+    "2000": {
+     "source": "BK6",
+     "prior": {
+      "revenue": 4854.8,
+      "cost_of_revenues": 3957.1,
+      "operating_income": 157.6
+     },
+     "year": {
+      "revenue": 4833.1,
+      "cost_of_revenues": 3726.7,
+      "operating_income": 338.1
+     }
+    },
+    "2001": {
+     "source": "BK8",
+     "prior": {
+      "revenue": 4791.1,
+      "cost_of_revenues": 3692.3,
+      "operating_income": 334.8
+     },
+     "year": {
+      "revenue": 5000.1,
+      "cost_of_revenues": 3532.2,
+      "operating_income": 723.0
+     }
+    },
+    "2002": {
+     "source": "BK10",
+     "prior": {
+      "revenue": 4980.5,
+      "cost_of_revenues": 3519.1,
+      "operating_income": 719.7
+     },
+     "year": {
+      "revenue": 4843.5,
+      "cost_of_revenues": 3478.5,
+      "operating_income": 559.5
+     }
+    },
+    "2003": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 4843.5,
+      "cost_of_revenues": 3478.5,
+      "operating_income": 559.5
+     },
+     "year": {
+      "revenue": 5233.3,
+      "cost_of_revenues": 3807.5,
+      "operating_income": 557.0
+     }
+    },
+    "2004": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 5233.3,
+      "cost_of_revenues": 3807.5,
+      "operating_income": 557.0
+     },
+     "year": {
+      "revenue": 6079.6,
+      "cost_of_revenues": 4351.0,
+      "operating_income": 816.4
+     }
+    },
+    "2005": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 6079.6,
+      "cost_of_revenues": 4351.0,
+      "operating_income": 816.4
+     },
+     "year": {
+      "revenue": 7185.5,
+      "cost_of_revenues": 4942.5,
+      "operating_income": 1233.4
+     }
+    },
+    "2006": {
+     "source": "BK12",
+     "prior": {
+      "revenue": 7185.5,
+      "cost_of_revenues": 4942.5,
+      "operating_income": 1233.4
+     },
+     "year": {
+      "revenue": 9027.4,
+      "cost_of_revenues": 5782.4,
+      "operating_income": 1934.3
+     }
+    }
+   }
+  }
+ }
+}

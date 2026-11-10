@@ -1416,6 +1416,36 @@
     "term": "Marriott Bonvoy Outdoors",
     "first_seen": "2026-03-27",
     "note": "first in a Marriott filing in its proxy statement (DEF 14A, accepted 2026-03-27 10:00 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Kymera",
+    "first_seen": "2010-11-01",
+    "note": "a Baker Hughes hybrid drill bit; first in a Baker Hughes filing in its Q3 2010 earnings 8-K (accepted 2010-11-01 06:01 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Baker Hughes, a GE company",
+    "first_seen": "2016-11-01",
+    "note": "the name of the combined company announced with GE; first in a Baker Hughes filing in a Rule 425 communication (accepted 2016-10-31 17:24 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "TerrAdapt",
+    "first_seen": "2017-03-28",
+    "note": "a Baker Hughes adaptive drill bit; first in a Baker Hughes filing in an 8-K exhibit (accepted 2017-03-28 10:30 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "BHGE",
+    "first_seen": "2017-06-08",
+    "note": "the abbreviation and ticker of Baker Hughes, a GE company; first in a Baker Hughes filing in an 8-K (accepted 2017-06-07 17:23 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Leucipa",
+    "first_seen": "2023-04-19",
+    "note": "a Baker Hughes automated field production software; first in a Baker Hughes filing in its Q1 2023 earnings 8-K (accepted 2023-04-19 07:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Cordant",
+    "first_seen": "2023-04-19",
+    "note": "a Baker Hughes industrial asset-performance software; first in a Baker Hughes filing in its Q1 2023 earnings 8-K (accepted 2023-04-19 07:06 ET, before the open), EDGAR full-text search"
    }
   ]
  }

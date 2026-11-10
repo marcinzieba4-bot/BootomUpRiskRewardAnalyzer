@@ -22,9 +22,10 @@ touching either directory.
 - **Tickers are separate.** Each has its own fact sheet, builder and engine; nothing from one ticker's facts,
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
-  (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far) and MAR (2008 to 2026-11-03 so far) sit in `staging/retrospective/` until the owner adds them to the
-  archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py` and `mar_signal_model.py` (other branches) files
+  (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far) and BKR (2008-2009 so far) sit in `staging/retrospective/` until the owner adds them to the
+  archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py` and `mar_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` are 2026 analyses: never inputs to a retrospective. AVGO did not trade
-  before its IPO, so its series starts at the listing (the listing and bounds rules of method r2).
+  before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008-2009 dates are Baker
+  Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI.
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
