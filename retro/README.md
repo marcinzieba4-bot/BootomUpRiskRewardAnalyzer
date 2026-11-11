@@ -13175,7 +13175,10 @@ Controls and checks:
 - **Shared code untouched** (the engine template, `retro_tool.py`, `taxonomy_eras.json`; the builder and fact sheet are CAT's own, the
   fact sheet only gains records, and the firewall changes only in its CAT branch, which now also plants Energy & Transportation figures, a
   restatement of every year and a theme-tail note), so no other ticker's model can change.
-- **Firewall:** run on the committed series at the 28 cutoffs above; the result follows in the next commit.
+- **Firewall:** every kind of fact planted after the cutoff with absurd values (as for 2010-2013, the planted print now also carrying
+  Energy & Transportation's raw figures and a restatement of every year of the history, the later vintage a planted theme-tail note),
+  and prices from the cutoff multiplied by 10, change no model and leave no planted text at any of the 28 cutoffs above (every release,
+  10-K, recast, outlook and dividend 8-K date of 2014-2017, the theme's live date, 2014-01-01 and 2018-01-01; 314 to 522 dates each).
 
 Seen in the build (method behaviour, not tuned):
 - **RICH and AVOID on all 208 dates** (label TOO MUCH CYCLE RISK), robust on 8 of 8 variants on 206 dates and 7 on 2 (2015-01-16 and
