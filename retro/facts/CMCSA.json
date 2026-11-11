@@ -1,0 +1,1785 @@
+{
+ "_doc": "Point-in-time fact sheet for CMCSA retrospectives (retro/build_cmcsa.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Comcast's fiscal year is the calendar year. EPS is diluted EPS from continuing operations, replaced by the company's adjusted figure where it excludes only one-offs (2006-2008). 2003 is excluded and the history starts with 2004. Guides: consolidated revenue growth in percent, pro forma, as stated; Comcast guides no EPS and no operating margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions and thousands of subscribers; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
+ "ticker": "CMCSA",
+ "sources": {
+  "CM1": {
+   "published": "1999-02-26",
+   "filed": "1999-02-26 (EDGAR gives the filing date only)",
+   "title": "Comcast FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/22301/0000950159-99-000039.txt",
+   "supports": "consolidated statement of operations 1996-1998 (revenues $3,612.3M, $4,467.7M, $5,145.3M; depreciation $259.2M, $404.1M, $463.9M; amortization $321.9M, $422.4M, $475.7M; operating income $465.9M, $466.6M, $557.1M); capital expenditures $554.4M, $795.5M, $898.9M"
+  },
+  "CM2": {
+   "published": "2000-03-01",
+   "filed": "2000-03-01 (EDGAR gives the filing date only)",
+   "title": "Comcast FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/22301/0000950159-00-000066.txt",
+   "supports": "consolidated statement of operations 1997-1999 (revenues $4,467.7M, $5,145.3M, $6,209.2M; operating income $466.6M, $557.1M, $664.0M); capital expenditures $795.5M, $898.9M, $893.8M"
+  },
+  "CM3": {
+   "published": "2001-03-02",
+   "filed": "2001-03-02 (EDGAR gives the filing date only)",
+   "title": "Comcast FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/22301/0000950159-01-000150.txt",
+   "supports": "consolidated statement of operations 1998-2000 (revenues $5,419.0M, $6,529.2M, $8,218.6M after the electronic-retailing reclassification; operating income (loss) $557.1M, $664.0M, $(161.0)M); capital expenditures $898.9M, $893.8M, $1,636.8M; cable subscribers 1996-2000 (4,280,000 in 1996, 4,366,000 in 1997)"
+  },
+  "CM4": {
+   "published": "2002-03-29",
+   "filed": "2002-03-29 (EDGAR gives the filing date only)",
+   "title": "Comcast FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/22301/0000950159-02-000191.txt",
+   "supports": "consolidated statement of operations 1999-2001 (revenues $6,529.2M, $8,218.6M, $9,674.2M; operating income (loss) $664.0M, $(161.0)M, $(746.2)M); capital expenditures $893.8M, $1,636.8M, $2,181.7M; cable subscribers 1997-2001 (4,366,000 and 4,511,000 in 1997 and 1998)"
+  },
+  "CM5": {
+   "published": "2003-03-21",
+   "filed": "2003-03-20 17:24 ET (after the close)",
+   "title": "Comcast FY2002 10-K (the first of the new Comcast after the AT&T Broadband acquisition)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0000950159-03-000238.txt",
+   "supports": "consolidated statement of operations 2000-2002 (revenues $8,357M, $9,836M, $12,460M, with QVC; operating income (loss) $(161)M, $(746)M, $1,659M); capital expenditures $1,637M, $2,182M, $1,975M; cable subscribers 1998-2002 (4,511,000 in 1998, 5,720,000 in 1999)"
+  },
+  "CM6": {
+   "published": "2004-03-15",
+   "filed": "2004-03-12 17:06 ET (after the close)",
+   "title": "Comcast FY2003 10-K (QVC presented as discontinued operations)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0000950159-04-000281.txt",
+   "supports": "consolidated statement of operations 2001-2003 (revenues $5,937M, $8,102M, $18,348M; operating income (loss) $(1,325)M, $921M, $1,954M); capital expenditures $2,039M, $1,852M, $4,161M; cable subscribers 1999-2003 in millions (5.7 in 1999, 7.6 in 2000)"
+  },
+  "CM7": {
+   "published": "2005-02-23",
+   "filed": "2005-02-23 09:28 ET (before the open)",
+   "title": "Comcast FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001047469-05-004437.txt",
+   "supports": "consolidated statement of operations 2002-2004 (revenues $8,102M, $18,348M, $20,307M; operating income $921M, $1,954M, $2,908M); capital expenditures $1,852M, $4,161M, $3,660M; cable subscribers 2000-2004 in millions (7.6 in 2000, 8.5 in 2001)"
+  },
+  "CM8": {
+   "published": "2006-02-23",
+   "filed": "2006-02-22 16:05 ET (after the close)",
+   "title": "Comcast FY2005 10-K (Annual Report as Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-06-036698.txt",
+   "supports": "consolidated statement of operations 2003-2005 (revenues $18,348M, $20,307M, $22,255M; operating income $1,954M, $2,908M, $3,690M); capital expenditures $4,161M, $3,660M, $3,621M; cable subscribers 2001-2005 in millions (8.5 in 2001, 21.3 in 2002)"
+  },
+  "CM9": {
+   "published": "2007-02-26",
+   "filed": "2007-02-26 12:08 ET",
+   "title": "Comcast FY2006 10-K (2006 Annual Report as Exhibit 13.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-039301.txt",
+   "supports": "consolidated statement of operations 2004-2006 (revenues $19,221M, $21,075M, $24,966M; operating income $2,829M, $3,521M, $4,619M; diluted EPS from continuing operations $0.28, $0.25, $0.70 after the 3-for-2 split); diluted shares 3,375M, 3,312M, 3,180M; capital expenditures $3,660M, $3,621M, $4,395M; video subscribers 2002-2006 in millions excluding the systems transferred to Time Warner; segment revenues; 2006 Free Cash Flow $2,623M; no cash dividend"
+  },
+  "CM10": {
+   "published": "2007-02-01",
+   "filed": "2007-02-01 07:05 ET (before the open)",
+   "title": "Comcast Q4 2006 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-017748.txt",
+   "supports": "2006 Adjusted Net Income $1.9 billion or $0.90 per share before the 3-for-2 split (excluding the Adelphia/Time Warner investment gain and the gain on discontinued operations); 2007 Financial Outlook (consolidated revenue growth of at least 11%, pro forma)"
+  },
+  "CM11": {
+   "published": "2007-04-26",
+   "filed": "2007-04-26 07:04 ET (before the open)",
+   "title": "Comcast Q1 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-090921.txt",
+   "supports": "2007 guidance reaffirmed (consolidated revenue growth of at least 11%)"
+  },
+  "CM12": {
+   "published": "2007-07-26",
+   "filed": "2007-07-26 07:05 ET (before the open)",
+   "title": "Comcast Q2 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-162301.txt",
+   "supports": "Q2 2007 statement of operations, GAAP capital expenditures (Table 7-A), basic subscribers; 2007 guidance reaffirmed"
+  },
+  "CM13": {
+   "published": "2007-10-25",
+   "filed": "2007-10-25 07:05 ET (before the open)",
+   "title": "Comcast Q3 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-225256.txt",
+   "supports": "Q3 2007 statement of operations, GAAP capital expenditures (Table 7-A), basic subscribers; 2007 guidance restated as 'previously issued', with words"
+  },
+  "CM14": {
+   "published": "2008-02-14",
+   "filed": "2008-02-14 06:51 ET (before the open)",
+   "title": "Comcast Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-030118.txt",
+   "supports": "Q4 and full-year 2007 statement of operations; Adjusted EPS 2007 $0.74 and 2006 $0.60; 2008 Financial Outlook (consolidated revenue growth of 8% to 10%); first quarterly dividend of $0.0625"
+  },
+  "CM15": {
+   "published": "2008-02-20",
+   "filed": "2008-02-20 11:54 ET",
+   "title": "Comcast FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-034239.txt",
+   "supports": "selected financial data 2003-2007; consolidated statement of operations 2005-2007; diluted shares 3,312M, 3,180M, 3,129M; capital expenditures; video subscribers 2003-2007; segment revenues; the $0.0625 quarterly dividend"
+  },
+  "CM16": {
+   "published": "2008-05-01",
+   "filed": "2008-05-01 07:05 ET (before the open)",
+   "title": "Comcast Q1 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-098096.txt",
+   "supports": "Q1 2008 statement of operations, GAAP capital expenditures, basic subscribers; 2008 guidance reaffirmed"
+  },
+  "CM17": {
+   "published": "2008-07-30",
+   "filed": "2008-07-30 07:05 ET (before the open)",
+   "title": "Comcast Q2 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-160785.txt",
+   "supports": "Q2 2008 statement of operations, GAAP capital expenditures, basic subscribers; 2008 guidance reaffirmed"
+  },
+  "CM18": {
+   "published": "2008-10-29",
+   "filed": "2008-10-29 07:04 ET (before the open)",
+   "title": "Comcast Q3 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-218411.txt",
+   "supports": "Q3 2008 statement of operations, GAAP capital expenditures, basic subscribers; 2008 guidance reaffirmed"
+  },
+  "CM19": {
+   "published": "2009-02-18",
+   "filed": "2009-02-18 07:05 ET (before the open)",
+   "title": "Comcast Q4 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001157523-09-001338.txt",
+   "supports": "Q4 and full-year 2008 statement of operations; Adjusted EPS 2008 $0.91 and 2007 $0.74; video customers; quarterly dividend raised to $0.0675; no 2009 outlook in numbers"
+  },
+  "CM20": {
+   "published": "2009-02-20",
+   "filed": "2009-02-20 13:52 ET",
+   "title": "Comcast FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-033975.txt",
+   "supports": "selected financial data 2004-2008; consolidated statement of operations 2006-2008; diluted shares 3,180M, 3,129M, 2,952M; capital expenditures; video customers 2004-2008; segment revenues"
+  },
+  "CM21": {
+   "published": "2009-04-30",
+   "filed": "2009-04-30 07:05 ET (before the open)",
+   "title": "Comcast Q1 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001157523-09-003188.txt",
+   "supports": "Q1 2009 statement of operations, capital expenditures, video customers"
+  },
+  "CM22": {
+   "published": "2009-08-06",
+   "filed": "2009-08-06 07:06 ET (before the open)",
+   "title": "Comcast Q2 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-166279.txt",
+   "supports": "Q2 2009 statement of operations, capital expenditures, video customers"
+  },
+  "CM23": {
+   "published": "2009-11-04",
+   "filed": "2009-11-04 07:09 ET (before the open)",
+   "title": "Comcast Q3 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-222941.txt",
+   "supports": "Q3 2009 statement of operations, capital expenditures, video customers"
+  },
+  "CM24": {
+   "published": "2007-02-01",
+   "filed": "2007-02-01 07:06 ET (before the open)",
+   "title": "Comcast 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-017749.txt",
+   "supports": "a three-for-two stock split in the form of a 50% stock dividend payable on February 21, 2007 (the stock traded ex-dividend from February 22, 2007, FY2006 Annual Report)"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-26",
+   "sources": [
+    "CM9",
+    "CM10"
+   ],
+   "company": "Comcast Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY06",
+   "why": "'We are the largest cable operator in the United States' (FY2006 10-K, Item 1); 'We operate our businesses in an increasingly competitive environment' against DBS providers, phone companies 'that are building wireline fiber-optic networks ... to provide video services' and 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'; 'it is likely new technologies will further increase the number of competitors we face'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_gaap": {
+    "2004": 0.28,
+    "2005": 0.25,
+    "2006": 0.7
+   },
+   "eps_normalized": {
+    "2004": 0.28,
+    "2005": 0.25,
+    "2006": 0.9
+   },
+   "eps_sources": {
+    "2004": "CM9",
+    "2005": "CM9",
+    "2006": "CM10"
+   },
+   "eps_published": {
+    "2006": "2007-02-01"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; a company figure excluding only one-offs replaces it (the ACN rule): 2006 $0.60 (the Q4 2006 release's $0.90 before the 3-for-2 split, excluding the Adelphia/Time Warner investment gain and the gain on discontinued operations; it keeps $0.03 of income from the systems transferred to Time Warner, which the continuing-operations line of 2004 and 2005 excludes); the company's 2004-2005 'Adjusted Net Income' excludes all investment income and other income, which recur, so it is not used (the NKE FY2007 and PFE rule): 2004 $0.28 and 2005 $0.25 stay GAAP",
+   "revenue_usd_b": {
+    "2004": 19.221,
+    "2005": 21.075,
+    "2006": 24.966
+   },
+   "revenue_sources": {
+    "2004": "CM9",
+    "2005": "CM9",
+    "2006": "CM9"
+   },
+   "diluted_shares_m": {
+    "2004": 3375.0,
+    "2005": 3312.0,
+    "2006": 3180.0
+   },
+   "shares_sources": {
+    "2004": "CM9",
+    "2005": "CM9",
+    "2006": "CM9"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: a loss from continuing operations of $(0.07) a diluted share (FY2006 10-K), and the company's 2003 figure 'as adjusted' also strips all investment and other income, which recur; a distorted year that is not the latest takes the history and the P/E window with it (the ACN FY02, AAPL FY2002 and PFE 2003 rule), so both start with 2004",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 18.5,
+   "prev_fy_op_margin_note": "operating income $4,619M / revenues $24,966M (FY2006 10-K)",
+   "prev_fy_ocf_margin": 37.82,
+   "prev_fy_pretax_margin": 14.4,
+   "prev_fy_pretax_margin_note": "income before income taxes and minority interest $3,594M / revenues $24,966M (FY2006 10-K)",
+   "prev_fy_sales_growth": 18.5,
+   "prev_fy_capex_pct": 17.6,
+   "prev_fy_video_pct": 15.27,
+   "prev_fy_video_note": "video subscribers 23.4 million against 20.3 million (FY2006 10-K table, Adelphia and Time Warner systems in)",
+   "tax_rate": 0.3748,
+   "tax_note": "income tax expense $1,347M / income before income taxes and minority interest $3,594M (FY2006 10-K)",
+   "fcf_b": 2.623,
+   "fcf_label": "FY06",
+   "fcf_note": "the company's 2006 Free Cash Flow: net cash provided by operating activities $6,618M less capital expenditures $4,395M and cash paid for intangible assets $306M, plus $706M of nonoperating items net of tax",
+   "cash_b": 2.974,
+   "cash_note": "cash and cash equivalents $1,239M and current investments $1,735M at December 31, 2006",
+   "dividend_annual": 0.0,
+   "dividend_note": "no cash dividend ('We have not declared and paid any cash dividends on our Class A, Class A Special or Class B common stock in our last two fiscal years and do not intend to do so for the foreseeable future', FY2006 10-K)",
+   "cash_return_text": "about 113 million Class A Special shares repurchased in 2006 for $2.347 billion (FY2006 10-K, split-adjusted)",
+   "business_line": "the largest U.S. cable operator (video, high-speed Internet and phone) with national cable networks",
+   "groups": [
+    [
+     "Cable",
+     24.1,
+     20.6
+    ],
+    [
+     "Programming",
+     1.053,
+     14.6
+    ],
+    [
+     "Corporate and Other",
+     0.355,
+     12.7
+    ]
+   ],
+   "groups_basis": "FY06 segment revenues before eliminations of $(542)M (FY2006 10-K)"
+  },
+  {
+   "published": "2008-02-20",
+   "sources": [
+    "CM15",
+    "CM14",
+    "CM9"
+   ],
+   "company": "Comcast Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY07",
+   "why": "'We are the largest cable operator in the United States' (FY2007 10-K, Item 1); 'A substantial portion of our revenues comes from residential subscribers whose spending patterns may be affected by prevailing economic conditions. Intensifying competition and a weakening economy affected our net subscriber additions during the second half of 2007'; competitors include DBS providers, phone companies with fiber-optic networks and 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_gaap": {
+    "2004": 0.28,
+    "2005": 0.25,
+    "2006": 0.7,
+    "2007": 0.83
+   },
+   "eps_normalized": {
+    "2004": 0.28,
+    "2005": 0.25,
+    "2006": 0.6,
+    "2007": 0.74
+   },
+   "eps_sources": {
+    "2004": "CM15",
+    "2005": "CM15",
+    "2006": "CM14",
+    "2007": "CM14"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; a company figure excluding only one-offs replaces it (the ACN rule): 2006 $0.60 (the Q4 2006 release's $0.90 before the 3-for-2 split, excluding the Adelphia/Time Warner investment gain and the gain on discontinued operations; it keeps $0.03 of income from the systems transferred to Time Warner, which the continuing-operations line of 2004 and 2005 excludes); the company's 2004-2005 'Adjusted Net Income' excludes all investment income and other income, which recur, so it is not used (the NKE FY2007 and PFE rule): 2004 $0.28 and 2005 $0.25 stay GAAP; 2006 and 2007 from the Q4 2007 release's Adjusted EPS ($0.60 and $0.74; GAAP $0.70 from continuing operations and $0.83)",
+   "revenue_usd_b": {
+    "2004": 19.221,
+    "2005": 21.075,
+    "2006": 24.966,
+    "2007": 30.895
+   },
+   "revenue_sources": {
+    "2004": "CM15",
+    "2005": "CM15",
+    "2006": "CM15",
+    "2007": "CM15"
+   },
+   "diluted_shares_m": {
+    "2004": 3375.0,
+    "2005": 3312.0,
+    "2006": 3180.0,
+    "2007": 3129.0
+   },
+   "shares_sources": {
+    "2004": "CM9",
+    "2005": "CM15",
+    "2006": "CM15",
+    "2007": "CM15"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: a loss from continuing operations of $(0.07) a diluted share (FY2006 10-K), and the company's 2003 figure 'as adjusted' also strips all investment and other income, which recur; a distorted year that is not the latest takes the history and the P/E window with it (the ACN FY02, AAPL FY2002 and PFE 2003 rule), so both start with 2004",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 18.05,
+   "prev_fy_op_margin_note": "operating income $5,578M / revenues $30,895M (FY2007 10-K)",
+   "prev_fy_ocf_margin": 38.15,
+   "prev_fy_pretax_margin": 14.08,
+   "prev_fy_pretax_margin_note": "income before income taxes and minority interest $4,349M / revenues $30,895M (FY2007 10-K)",
+   "prev_fy_sales_growth": 23.7,
+   "prev_fy_capex_pct": 19.93,
+   "prev_fy_video_pct": 2.99,
+   "prev_fy_video_note": "video subscribers 24.1 million against 23.4 million (FY2007 10-K table)",
+   "tax_rate": 0.4139,
+   "tax_note": "income tax expense $1,800M / income before income taxes and minority interest $4,349M (FY2007 10-K)",
+   "fcf_b": 2.342,
+   "fcf_label": "FY07",
+   "fcf_note": "the company's 2007 Free Cash Flow (Q4 2007 release, Table 4)",
+   "cash_b": 1.061,
+   "cash_note": "cash and cash equivalents $963M and current investments $98M at December 31, 2007",
+   "dividend_annual": 0.25,
+   "dividend_note": "$0.0625 quarterly ('On February 13, 2008 our Board of Directors approved a quarterly dividend of $0.0625 per share', FY2007 10-K)",
+   "cash_return_text": "about 133 million Class A and Class A Special shares repurchased in 2007 for $3.102 billion (FY2007 10-K)",
+   "business_line": "the largest U.S. cable operator (video, high-speed Internet and phone) with national cable networks",
+   "groups": [
+    [
+     "Cable",
+     29.305,
+     21.9
+    ],
+    [
+     "Programming",
+     1.314,
+     24.7
+    ],
+    [
+     "Corporate and Other",
+     0.515,
+     25.0
+    ]
+   ],
+   "groups_basis": "FY07 segment revenues before eliminations of $(239)M (FY2007 10-K)"
+  },
+  {
+   "published": "2009-02-20",
+   "sources": [
+    "CM20",
+    "CM19",
+    "CM15",
+    "CM14",
+    "CM9"
+   ],
+   "company": "Comcast Corporation",
+   "exchange": "Nasdaq",
+   "fy_label": "FY08",
+   "why": "'Competition for the cable services we offer consists primarily of DBS operators and local phone companies' (FY2008 10-K); 'Intensifying competition and a weakening economy affected our net customer additions in 2008'; 'We expect advances in communications technology, such as video streaming over the Internet, to continue in the future, and we are unable to predict what effects these developments will have on our businesses and operations'; competitors include 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_gaap": {
+    "2004": 0.28,
+    "2005": 0.25,
+    "2006": 0.7,
+    "2007": 0.83,
+    "2008": 0.86
+   },
+   "eps_normalized": {
+    "2004": 0.28,
+    "2005": 0.25,
+    "2006": 0.6,
+    "2007": 0.74,
+    "2008": 0.91
+   },
+   "eps_sources": {
+    "2004": "CM20",
+    "2005": "CM20",
+    "2006": "CM14",
+    "2007": "CM19",
+    "2008": "CM19"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; a company figure excluding only one-offs replaces it (the ACN rule): 2006 $0.60 (the Q4 2006 release's $0.90 before the 3-for-2 split, excluding the Adelphia/Time Warner investment gain and the gain on discontinued operations; it keeps $0.03 of income from the systems transferred to Time Warner, which the continuing-operations line of 2004 and 2005 excludes); the company's 2004-2005 'Adjusted Net Income' excludes all investment income and other income, which recur, so it is not used (the NKE FY2007 and PFE rule): 2004 $0.28 and 2005 $0.25 stay GAAP; 2006 from the Q4 2007 release ($0.60), 2007 and 2008 from the Q4 2008 release's Adjusted EPS ($0.74 and $0.91; GAAP $0.83 and $0.86)",
+   "revenue_usd_b": {
+    "2004": 19.221,
+    "2005": 21.075,
+    "2006": 24.966,
+    "2007": 30.895,
+    "2008": 34.256
+   },
+   "revenue_sources": {
+    "2004": "CM20",
+    "2005": "CM20",
+    "2006": "CM20",
+    "2007": "CM20",
+    "2008": "CM20"
+   },
+   "diluted_shares_m": {
+    "2004": 3375.0,
+    "2005": 3312.0,
+    "2006": 3180.0,
+    "2007": 3129.0,
+    "2008": 2952.0
+   },
+   "shares_sources": {
+    "2004": "CM9",
+    "2005": "CM15",
+    "2006": "CM20",
+    "2007": "CM20",
+    "2008": "CM20"
+   },
+   "pe_window_start": "2004-01-01",
+   "excluded_note": "2003 is excluded: a loss from continuing operations of $(0.07) a diluted share (FY2006 10-K), and the company's 2003 figure 'as adjusted' also strips all investment and other income, which recur; a distorted year that is not the latest takes the history and the P/E window with it (the ACN FY02, AAPL FY2002 and PFE 2003 rule), so both start with 2004",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 19.65,
+   "prev_fy_op_margin_note": "operating income $6,732M / revenues $34,256M (FY2008 10-K)",
+   "prev_fy_ocf_margin": 38.33,
+   "prev_fy_pretax_margin": 11.85,
+   "prev_fy_pretax_margin_note": "income before income taxes and minority interest $4,058M / revenues $34,256M (FY2008 10-K)",
+   "prev_fy_sales_growth": 10.9,
+   "prev_fy_capex_pct": 16.79,
+   "prev_fy_video_pct": 0.41,
+   "prev_fy_video_note": "video customers 24.2 million against 24.1 million (FY2008 10-K table, Insight Midwest systems in)",
+   "tax_rate": 0.3778,
+   "tax_note": "income tax expense $1,533M / income before income taxes and minority interest $4,058M (FY2008 10-K)",
+   "fcf_b": 3.657,
+   "fcf_label": "FY08",
+   "fcf_note": "the company's 2008 Free Cash Flow, excluding the 2008 Economic Stimulus package (Q4 2008 release)",
+   "cash_b": 1.254,
+   "cash_note": "cash and cash equivalents $1,195M and current investments $59M at December 31, 2008",
+   "dividend_annual": 0.25,
+   "dividend_note": "$0.0625 quarterly ('Our Board of Directors declared a dividend of $0.0625 per share for each quarter in 2008', FY2008 10-K)",
+   "cash_return_text": "$2.800 billion of shares repurchased in 2008 (FY2008 10-K)",
+   "business_line": "the largest U.S. cable operator (video, high-speed Internet and phone) with national cable networks",
+   "groups": [
+    [
+     "Cable",
+     32.443,
+     10.7
+    ],
+    [
+     "Programming",
+     1.426,
+     8.5
+    ],
+    [
+     "Corporate and Other",
+     0.644,
+     25.0
+    ]
+   ],
+   "groups_basis": "FY08 segment revenues before eliminations of $(257)M (FY2008 10-K)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-26",
+   "source": "CM12",
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 07:05 ET",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_m": 7712,
+    "rev_prior_m": 5908,
+    "ocf_m": 3012,
+    "ocf_prior_m": 2311,
+    "oi_m": 1468,
+    "oi_prior_m": 1173,
+    "capex_m": 1604,
+    "capex_prior_m": 976,
+    "video_k": 24141,
+    "video_prior_k": 24041,
+    "video_columns": "2Q07 | 2Q06 | 1Q07",
+    "diluted_shares_m": 3147
+   },
+   "sales_b": 7.712,
+   "sales_pct": 30.5,
+   "video_pct": 0.42,
+   "ocf_margin": 39.06,
+   "ocf_margin_bp": -6.0,
+   "op_margin": 19.04,
+   "op_margin_bp": -81.9,
+   "capex_pct": 20.8,
+   "capex_bp": 427.9,
+   "eps_q": 0.19,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 3147.0,
+   "cash_return_text": "In the second quarter of 2007, $752 million of Class A Special Common Stock repurchased (27.9 million shares)",
+   "next_print": "Q3 2007 print (late October)"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-25",
+   "source": "CM13",
+   "release": "Oct 25",
+   "release_time": "before the open on Oct 25: 8-K accepted 07:05 ET",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 7781,
+    "rev_prior_m": 6432,
+    "ocf_m": 2929,
+    "ocf_prior_m": 2437,
+    "oi_m": 1391,
+    "oi_prior_m": 1224,
+    "capex_m": 1526,
+    "capex_prior_m": 1197,
+    "video_k": 24156,
+    "video_prior_k": 24132,
+    "video_columns": "3Q07 | 2Q07 | 3Q06",
+    "diluted_shares_m": 3118
+   },
+   "sales_b": 7.781,
+   "sales_pct": 21.0,
+   "video_pct": 0.1,
+   "ocf_margin": 37.64,
+   "ocf_margin_bp": -24.6,
+   "op_margin": 17.88,
+   "op_margin_bp": -115.3,
+   "capex_pct": 19.61,
+   "capex_bp": 100.2,
+   "eps_q": 0.18,
+   "eps_q_prior": 0.38,
+   "diluted_shares_m": 3118.0,
+   "cash_return_text": "In the third quarter of 2007, $600 million of Class A Special Common Stock repurchased (22.9 million shares); a $7 billion addition to the repurchase program",
+   "next_print": "Q4 2007 print (early February)"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-02-14",
+   "source": "CM14",
+   "release": "Feb 14",
+   "release_time": "before the open on Feb 14: 8-K accepted 06:51 ET",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 8014,
+    "rev_prior_m": 7031,
+    "ocf_m": 3082,
+    "ocf_prior_m": 2594,
+    "oi_m": 1458,
+    "oi_prior_m": 1218,
+    "capex_m": 1574,
+    "capex_prior_m": 1344,
+    "video_k": 24063,
+    "video_prior_k": 24243,
+    "video_columns": "4Q07 | 3Q07 | 4Q06",
+    "diluted_shares_m": 3078
+   },
+   "sales_b": 8.014,
+   "sales_pct": 14.0,
+   "video_pct": -0.74,
+   "ocf_margin": 38.46,
+   "ocf_margin_bp": 156.4,
+   "op_margin": 18.19,
+   "op_margin_bp": 87.0,
+   "capex_pct": 19.64,
+   "capex_bp": 52.5,
+   "eps_q": 0.2,
+   "eps_q_prior": 0.13,
+   "diluted_shares_m": 3078.0,
+   "cash_return_text": "In 2007, 132.9 million common shares repurchased for about $3.1 billion; intent to use the remaining $6.9 billion authorization by the end of 2009; a first quarterly dividend of $0.0625",
+   "next_print": "Q1 2008 print (late April or early May)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 0.74,
+    "revenue_usd_b": 30.895,
+    "diluted_shares_m": 3129.0,
+    "normalization_note": "FY2007 $0.74, the company's Adjusted EPS excluding the $300M after-tax gain on the dissolution of the Texas/Kansas City Cable Partnership (Q4 2007 release; GAAP $0.83)",
+    "op_margin": 18.05,
+    "ocf_margin": 38.15,
+    "pretax_margin": 14.08,
+    "pretax_margin_note": "FY07 income before income taxes and minority interest $4,349M / revenues $30,895M (Q4 2007 release)",
+    "sales_growth": 23.7,
+    "capex_pct": 19.93,
+    "video_pct": -0.74,
+    "video_note": "basic subscribers 24,063,000 against 24,243,000 a year earlier (pro forma), the Q4 2007 release",
+    "tax_rate": 0.4139,
+    "tax_note": "FY07 income tax expense $1,800M / income before income taxes and minority interest $4,349M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-05-01",
+   "source": "CM16",
+   "release": "May 1",
+   "release_time": "before the open on May 1: 8-K accepted 07:05 ET",
+   "period_end": "2008-03-31",
+   "raw": {
+    "rev_m": 8389,
+    "rev_prior_m": 7388,
+    "ocf_m": 3174,
+    "ocf_prior_m": 2763,
+    "oi_m": 1555,
+    "oi_prior_m": 1261,
+    "capex_m": 1431,
+    "capex_prior_m": 1454,
+    "video_k": 24691,
+    "video_prior_k": 25005,
+    "video_columns": "1Q08 | 4Q07 | 1Q07",
+    "diluted_shares_m": 3017
+   },
+   "sales_b": 8.389,
+   "sales_pct": 13.5,
+   "video_pct": -1.26,
+   "ocf_margin": 37.84,
+   "ocf_margin_bp": 43.7,
+   "op_margin": 18.54,
+   "op_margin_bp": 146.8,
+   "capex_pct": 17.06,
+   "capex_bp": -262.3,
+   "eps_q": 0.24,
+   "eps_q_prior": 0.26,
+   "diluted_shares_m": 3017.0,
+   "cash_return_text": "In the first quarter of 2008, 53.1 million common shares repurchased for $1.0 billion; the first $0.0625 dividend paid April 30",
+   "next_print": "Q2 2008 print (late July)",
+   "note": "the year-ago quarter's subscribers are pro forma for the dissolution of the Insight Midwest Partnership (January 2008), as the release shows them"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-30",
+   "source": "CM17",
+   "release": "Jul 30",
+   "release_time": "before the open on Jul 30: 8-K accepted 07:05 ET",
+   "period_end": "2008-06-30",
+   "raw": {
+    "rev_m": 8553,
+    "rev_prior_m": 7712,
+    "ocf_m": 3351,
+    "ocf_prior_m": 3012,
+    "oi_m": 1750,
+    "oi_prior_m": 1468,
+    "capex_m": 1300,
+    "capex_prior_m": 1604,
+    "video_k": 24553,
+    "video_prior_k": 24904,
+    "video_columns": "2Q08 | 1Q08 | 2Q07",
+    "diluted_shares_m": 2970
+   },
+   "sales_b": 8.553,
+   "sales_pct": 10.9,
+   "video_pct": -1.41,
+   "ocf_margin": 39.18,
+   "ocf_margin_bp": 12.3,
+   "op_margin": 20.46,
+   "op_margin_bp": 142.5,
+   "capex_pct": 15.2,
+   "capex_bp": -559.9,
+   "eps_q": 0.21,
+   "eps_q_prior": 0.19,
+   "diluted_shares_m": 2970.0,
+   "cash_return_text": "In the second quarter of 2008, 48.1 million common shares repurchased for $1.0 billion",
+   "next_print": "Q3 2008 print (late October)"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-29",
+   "source": "CM18",
+   "release": "Oct 29",
+   "release_time": "before the open on Oct 29: 8-K accepted 07:04 ET",
+   "period_end": "2008-09-30",
+   "raw": {
+    "rev_m": 8549,
+    "rev_prior_m": 7781,
+    "ocf_m": 3237,
+    "ocf_prior_m": 2929,
+    "oi_m": 1670,
+    "oi_prior_m": 1391,
+    "capex_m": 1306,
+    "capex_prior_m": 1526,
+    "video_k": 24406,
+    "video_prior_k": 24848,
+    "video_columns": "3Q08 | 2Q08 | 3Q07",
+    "diluted_shares_m": 2920
+   },
+   "sales_b": 8.549,
+   "sales_pct": 9.9,
+   "video_pct": -1.78,
+   "ocf_margin": 37.86,
+   "ocf_margin_bp": 22.1,
+   "op_margin": 19.53,
+   "op_margin_bp": 165.8,
+   "capex_pct": 15.28,
+   "capex_bp": -433.5,
+   "eps_q": 0.26,
+   "eps_q_prior": 0.18,
+   "diluted_shares_m": 2920.0,
+   "cash_return_text": "In the third quarter of 2008, 39.7 million common shares repurchased for $800 million",
+   "next_print": "Q4 2008 print (mid-February)"
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-02-18",
+   "source": "CM19",
+   "release": "Feb 18",
+   "release_time": "before the open on Feb 18: 8-K accepted 07:05 ET",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_m": 8765,
+    "rev_prior_m": 8014,
+    "ocf_m": 3370,
+    "ocf_prior_m": 3082,
+    "oi_m": 1757,
+    "oi_prior_m": 1458,
+    "capex_m": 1713,
+    "capex_prior_m": 1574,
+    "video_k": 24182,
+    "video_prior_k": 24758,
+    "video_columns": "YE2007 | YE2008 (prior year first)",
+    "diluted_shares_m": 2888
+   },
+   "sales_b": 8.765,
+   "sales_pct": 9.4,
+   "video_pct": -2.33,
+   "ocf_margin": 38.45,
+   "ocf_margin_bp": -0.9,
+   "op_margin": 20.05,
+   "op_margin_bp": 185.2,
+   "capex_pct": 19.54,
+   "capex_bp": -9.7,
+   "eps_q": 0.14,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 2888.0,
+   "cash_return_text": "In 2008, 140.9 million common shares repurchased for $2.8 billion; completing the authorization by the end of 2009 now unlikely; the quarterly dividend raised 8% to $0.0675",
+   "next_print": "Q1 2009 print (late April or early May)",
+   "note": "no 2009 outlook in numbers: 'For 2009, our goal is to continue to deliver growth even in this challenging environment and we remain focused on Free Cash Flow generation'",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 0.91,
+    "revenue_usd_b": 34.256,
+    "diluted_shares_m": 2952.0,
+    "normalization_note": "FY2008 $0.91, the company's Adjusted EPS excluding the gains from the dissolution of cable partnerships, favorable income tax adjustments and the impairment of the Clearwire investment (Q4 2008 release; GAAP $0.86)",
+    "op_margin": 19.65,
+    "ocf_margin": 38.33,
+    "pretax_margin": 11.85,
+    "pretax_margin_note": "FY08 income before income taxes and minority interest $4,058M / revenues $34,256M (Q4 2008 release)",
+    "sales_growth": 10.9,
+    "capex_pct": 16.79,
+    "video_pct": -2.33,
+    "video_note": "video customers 24,182,000 against 24,758,000 a year earlier (pro forma), the Q4 2008 release",
+    "tax_rate": 0.3778,
+    "tax_note": "FY08 income tax expense $1,533M / income before income taxes and minority interest $4,058M"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-30",
+   "source": "CM21",
+   "release": "Apr 30",
+   "release_time": "before the open on Apr 30: 8-K accepted 07:05 ET",
+   "period_end": "2009-03-31",
+   "raw": {
+    "rev_m": 8835,
+    "rev_prior_m": 8389,
+    "ocf_m": 3444,
+    "ocf_prior_m": 3174,
+    "oi_m": 1811,
+    "oi_prior_m": 1555,
+    "capex_m": 1160,
+    "capex_prior_m": 1431,
+    "video_k": 24104,
+    "video_prior_k": 24701,
+    "video_columns": "1Q08 | 1Q09 (prior year first)",
+    "diluted_shares_m": 2890
+   },
+   "sales_b": 8.835,
+   "sales_pct": 5.3,
+   "video_pct": -2.42,
+   "ocf_margin": 38.98,
+   "ocf_margin_bp": 114.6,
+   "op_margin": 20.5,
+   "op_margin_bp": 196.2,
+   "capex_pct": 13.13,
+   "capex_bp": -392.8,
+   "eps_q": 0.27,
+   "eps_q_prior": 0.24,
+   "diluted_shares_m": 2890.0,
+   "cash_return_text": "No shares repurchased in the first quarter of 2009; $4.1 billion of authorization remaining; dividends of $180 million and $195 million paid in January and April",
+   "next_print": "Q2 2009 print (late July or early August)"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-08-06",
+   "source": "CM22",
+   "release": "Aug 6",
+   "release_time": "before the open on Aug 6: 8-K accepted 07:06 ET",
+   "period_end": "2009-06-30",
+   "raw": {
+    "rev_m": 8938,
+    "rev_prior_m": 8553,
+    "ocf_m": 3535,
+    "ocf_prior_m": 3351,
+    "oi_m": 1875,
+    "oi_prior_m": 1750,
+    "capex_m": 1121,
+    "capex_prior_m": 1300,
+    "video_k": 23891,
+    "video_prior_k": 24563,
+    "video_columns": "2Q08 | 2Q09 (prior year first)",
+    "diluted_shares_m": 2891
+   },
+   "sales_b": 8.938,
+   "sales_pct": 4.5,
+   "video_pct": -2.74,
+   "ocf_margin": 39.55,
+   "ocf_margin_bp": 37.1,
+   "op_margin": 20.98,
+   "op_margin_bp": 51.7,
+   "capex_pct": 12.54,
+   "capex_bp": -265.7,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 2891.0,
+   "cash_return_text": "In the second quarter of 2009, 15.5 million common shares repurchased for $215 million",
+   "next_print": "Q3 2009 print (late October or early November)"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-11-04",
+   "source": "CM23",
+   "release": "Nov 4",
+   "release_time": "before the open on Nov 4: 8-K accepted 07:09 ET",
+   "period_end": "2009-09-30",
+   "raw": {
+    "rev_m": 8802,
+    "rev_prior_m": 8549,
+    "ocf_m": 3326,
+    "ocf_prior_m": 3237,
+    "oi_m": 1711,
+    "oi_prior_m": 1670,
+    "capex_m": 1227,
+    "capex_prior_m": 1306,
+    "video_k": 23759,
+    "video_prior_k": 24415,
+    "video_columns": "3Q08 | 3Q09 (prior year first)",
+    "diluted_shares_m": 2877
+   },
+   "sales_b": 8.802,
+   "sales_pct": 3.0,
+   "video_pct": -2.69,
+   "ocf_margin": 37.79,
+   "ocf_margin_bp": -7.7,
+   "op_margin": 19.44,
+   "op_margin_bp": -9.6,
+   "capex_pct": 13.94,
+   "capex_bp": -133.7,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.26,
+   "diluted_shares_m": 2877.0,
+   "cash_return_text": "In the third quarter of 2009, 16.1 million common shares repurchased for $250 million",
+   "next_print": "Q4 2009 print (February)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-02-01",
+   "source": "CM10",
+   "doc": "Q4 2006 release",
+   "rev_words": "Consolidated revenue growth of at least 11%",
+   "note": "a one-sided bound gives no field (the PEP, UNP, LOW and WMT rule); cable revenue growth 'of at least 12%', cable operating cash flow growth 'of at least 14%', about 6.5 million RGU additions"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-04-26",
+   "source": "CM11",
+   "doc": "Q1 2007 release",
+   "rev_words": "Consolidated revenue growth of at least 11%",
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-07-26",
+   "source": "CM12",
+   "doc": "Q2 2007 release",
+   "rev_words": "Consolidated revenue growth of at least 11%",
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-25",
+   "source": "CM13",
+   "doc": "Q3 2007 release",
+   "rev_words": "Consolidated revenue growth of at least 11%",
+   "note": "'the more competitive environment and less-robust economy may have a slight impact on our full year operating results' (words: no field)"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-02-14",
+   "source": "CM14",
+   "doc": "Q4 2007 release",
+   "rev_guide_pct": [
+    8,
+    10
+   ],
+   "rev_label": "consolidated revenue growth (pro forma, Insight Midwest as of January 1, 2007)",
+   "note": "operating cash flow growth of 8% to 10%; capital expenditures about 18% of revenue; free cash flow growth of at least 20%"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-05-01",
+   "source": "CM16",
+   "doc": "Q1 2008 release",
+   "rev_guide_pct": [
+    8,
+    10
+   ],
+   "rev_label": "consolidated revenue growth (pro forma)",
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-30",
+   "source": "CM17",
+   "doc": "Q2 2008 release",
+   "rev_guide_pct": [
+    8,
+    10
+   ],
+   "rev_label": "consolidated revenue growth (pro forma)",
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-29",
+   "source": "CM18",
+   "doc": "Q3 2008 release",
+   "rev_guide_pct": [
+    8,
+    10
+   ],
+   "rev_label": "consolidated revenue growth (pro forma)",
+   "note": "reaffirmed; free cash flow growth 'will exceed' the guide"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2008-02-14",
+   "source": "CM14",
+   "quarterly": 0.0625,
+   "note": "$0.0625 quarterly ('our Board of Directors has approved a quarterly dividend of $0.0625 per share ... the first payment of a planned annual dividend of $0.25 per share', Q4 2007 release)"
+  },
+  {
+   "published": "2009-02-18",
+   "source": "CM19",
+   "quarterly": 0.0675,
+   "note": "$0.0675 quarterly ('The planned annual dividend of $0.27 per share is an 8% increase from the company's previous dividend', Q4 2008 release)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [
+  {
+   "effective": "2007-02-22",
+   "ratio": 1.5,
+   "source": "CM24",
+   "note": "three-for-two stock split, a 50% stock dividend payable on February 21, 2007; ex-dividend February 22, 2007 (Yahoo's split date)"
+  }
+ ],
+ "rule_t": {
+  "_doc": "Rule T (retro/README.md, LOW and CMCSA): for each signal its annual values for fiscal 1997-2006, each change from the latest 10-K published by 2008-01-04 whose statements (or, for subscribers, whose cable operating table) report both years; XBULL = the decade's best, BULL = its median, BASE = its worst, BEAR = one median-to-worst step beyond the worst (mirrored for capital intensity, where lower is better); rounded half up to whole percent and to 10 bp. Seams stay in, as published: QVC is consolidated until the FY2003 10-K presents it as discontinued (the 2002 change is QVC-free), Comcast Cellular is discontinued from the FY1999 10-K, the FY2000 10-K reclassifies electronic-retailing revenue, acquisitions (Jones, Lenfest, the AT&T exchanges, AT&T Broadband in November 2002, Adelphia and Time Warner in 2006) enter with the filings that report them, franchise amortization stops in 2002, and the FY2006 10-K excludes the systems transferred to Time Warner from every year of its cable table. The builder re-derives every value and threshold from the raw figures and refuses to build if they differ.",
+  "video": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 2.01,
+    "1998": 3.32,
+    "1999": 26.8,
+    "2000": 33.33,
+    "2001": 11.84,
+    "2002": 150.59,
+    "2003": 0.99,
+    "2004": 0.49,
+    "2005": -0.98,
+    "2006": 15.27
+   },
+   "raw": {
+    "1997": {
+     "source": "CM3",
+     "subscribers": [
+      4280,
+      4366
+     ],
+     "unit": "thousands"
+    },
+    "1998": {
+     "source": "CM4",
+     "subscribers": [
+      4366,
+      4511
+     ],
+     "unit": "thousands"
+    },
+    "1999": {
+     "source": "CM5",
+     "subscribers": [
+      4511,
+      5720
+     ],
+     "unit": "thousands"
+    },
+    "2000": {
+     "source": "CM6",
+     "subscribers": [
+      5.7,
+      7.6
+     ],
+     "unit": "millions"
+    },
+    "2001": {
+     "source": "CM7",
+     "subscribers": [
+      7.6,
+      8.5
+     ],
+     "unit": "millions"
+    },
+    "2002": {
+     "source": "CM8",
+     "subscribers": [
+      8.5,
+      21.3
+     ],
+     "unit": "millions"
+    },
+    "2003": {
+     "source": "CM9",
+     "subscribers": [
+      20.2,
+      20.4
+     ],
+     "unit": "millions"
+    },
+    "2004": {
+     "source": "CM9",
+     "subscribers": [
+      20.4,
+      20.5
+     ],
+     "unit": "millions"
+    },
+    "2005": {
+     "source": "CM9",
+     "subscribers": [
+      20.5,
+      20.3
+     ],
+     "unit": "millions"
+    },
+    "2006": {
+     "source": "CM9",
+     "subscribers": [
+      20.3,
+      23.4
+     ],
+     "unit": "millions"
+    }
+   },
+   "thresholds": {
+    "BEAR": -10,
+    "BASE": -1,
+    "BULL": 8,
+    "XBULL": 151
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 23.68,
+    "1998": 15.17,
+    "1999": 20.49,
+    "2000": 25.87,
+    "2001": 17.7,
+    "2002": 36.47,
+    "2003": 126.46,
+    "2004": 10.68,
+    "2005": 9.65,
+    "2006": 18.46
+   },
+   "raw": {
+    "1997": {
+     "source": "CM1",
+     "revenues_m": [
+      3612.3,
+      4467.7
+     ],
+     "operating_income_m": [
+      465.9,
+      466.6
+     ]
+    },
+    "1998": {
+     "source": "CM2",
+     "revenues_m": [
+      4467.7,
+      5145.3
+     ],
+     "operating_income_m": [
+      466.6,
+      557.1
+     ]
+    },
+    "1999": {
+     "source": "CM3",
+     "revenues_m": [
+      5419.0,
+      6529.2
+     ],
+     "operating_income_m": [
+      557.1,
+      664.0
+     ]
+    },
+    "2000": {
+     "source": "CM4",
+     "revenues_m": [
+      6529.2,
+      8218.6
+     ],
+     "operating_income_m": [
+      664.0,
+      -161.0
+     ]
+    },
+    "2001": {
+     "source": "CM5",
+     "revenues_m": [
+      8357,
+      9836
+     ],
+     "operating_income_m": [
+      -161,
+      -746
+     ]
+    },
+    "2002": {
+     "source": "CM6",
+     "revenues_m": [
+      5937,
+      8102
+     ],
+     "operating_income_m": [
+      -1325,
+      921
+     ]
+    },
+    "2003": {
+     "source": "CM7",
+     "revenues_m": [
+      8102,
+      18348
+     ],
+     "operating_income_m": [
+      921,
+      1954
+     ]
+    },
+    "2004": {
+     "source": "CM8",
+     "revenues_m": [
+      18348,
+      20307
+     ],
+     "operating_income_m": [
+      1954,
+      2908
+     ]
+    },
+    "2005": {
+     "source": "CM9",
+     "revenues_m": [
+      19221,
+      21075
+     ],
+     "operating_income_m": [
+      2829,
+      3521
+     ]
+    },
+    "2006": {
+     "source": "CM9",
+     "revenues_m": [
+      21075,
+      24966
+     ],
+     "operating_income_m": [
+      3521,
+      4619
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 0,
+    "BASE": 10,
+    "BULL": 19,
+    "XBULL": 126
+   }
+  },
+  "ocf_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -4.1,
+    "1998": 14.5,
+    "1999": 117.4,
+    "2000": 126.4,
+    "2001": -226.7,
+    "2002": 219.3,
+    "2003": -16.6,
+    "2004": 224.8,
+    "2005": 94.6,
+    "2006": -48.2
+   },
+   "raw": {
+    "1997": {
+     "source": "CM1",
+     "revenues_m": [
+      3612.3,
+      4467.7
+     ],
+     "operating_income_m": [
+      465.9,
+      466.6
+     ],
+     "depreciation_m": [
+      259.2,
+      404.1
+     ],
+     "amortization_m": [
+      321.9,
+      422.4
+     ]
+    },
+    "1998": {
+     "source": "CM2",
+     "revenues_m": [
+      4467.7,
+      5145.3
+     ],
+     "operating_income_m": [
+      466.6,
+      557.1
+     ],
+     "depreciation_m": [
+      404.1,
+      463.9
+     ],
+     "amortization_m": [
+      422.4,
+      475.7
+     ]
+    },
+    "1999": {
+     "source": "CM3",
+     "revenues_m": [
+      5419.0,
+      6529.2
+     ],
+     "operating_income_m": [
+      557.1,
+      664.0
+     ],
+     "depreciation_m": [
+      463.9,
+      572.0
+     ],
+     "amortization_m": [
+      475.7,
+      644.0
+     ]
+    },
+    "2000": {
+     "source": "CM4",
+     "revenues_m": [
+      6529.2,
+      8218.6
+     ],
+     "operating_income_m": [
+      664.0,
+      -161.0
+     ],
+     "depreciation_m": [
+      572.0,
+      837.3
+     ],
+     "amortization_m": [
+      644.0,
+      1794.0
+     ]
+    },
+    "2001": {
+     "source": "CM5",
+     "revenues_m": [
+      8357,
+      9836
+     ],
+     "operating_income_m": [
+      -161,
+      -746
+     ],
+     "depreciation_m": [
+      837,
+      1211
+     ],
+     "amortization_m": [
+      1782,
+      2205
+     ]
+    },
+    "2002": {
+     "source": "CM6",
+     "revenues_m": [
+      5937,
+      8102
+     ],
+     "operating_income_m": [
+      -1325,
+      921
+     ],
+     "depreciation_m": [
+      1130,
+      1694
+     ],
+     "amortization_m": [
+      2143,
+      221
+     ]
+    },
+    "2003": {
+     "source": "CM7",
+     "revenues_m": [
+      8102,
+      18348
+     ],
+     "operating_income_m": [
+      921,
+      1954
+     ],
+     "depreciation_m": [
+      1694,
+      3166
+     ],
+     "amortization_m": [
+      221,
+      1272
+     ]
+    },
+    "2004": {
+     "source": "CM8",
+     "revenues_m": [
+      18348,
+      20307
+     ],
+     "operating_income_m": [
+      1954,
+      2908
+     ],
+     "depreciation_m": [
+      3166,
+      3420
+     ],
+     "amortization_m": [
+      1272,
+      1203
+     ]
+    },
+    "2005": {
+     "source": "CM9",
+     "revenues_m": [
+      19221,
+      21075
+     ],
+     "operating_income_m": [
+      2829,
+      3521
+     ],
+     "depreciation_m": [
+      3197,
+      3413
+     ],
+     "amortization_m": [
+      1154,
+      1138
+     ]
+    },
+    "2006": {
+     "source": "CM9",
+     "revenues_m": [
+      21075,
+      24966
+     ],
+     "operating_income_m": [
+      3521,
+      4619
+     ],
+     "depreciation_m": [
+      3413,
+      3828
+     ],
+     "amortization_m": [
+      1138,
+      995
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -510,
+    "BASE": -230,
+    "BULL": 50,
+    "XBULL": 220
+   }
+  },
+  "capex": {
+   "unit": 10,
+   "lower_is_better": true,
+   "values": {
+    "1997": 245.8,
+    "1998": -33.5,
+    "1999": -289.9,
+    "2000": 622.7,
+    "2001": 259.5,
+    "2002": -1148.5,
+    "2003": -18.0,
+    "2004": -465.5,
+    "2005": -186.0,
+    "2006": 42.2
+   },
+   "raw": {
+    "1997": {
+     "source": "CM1",
+     "revenues_m": [
+      3612.3,
+      4467.7
+     ],
+     "operating_income_m": [
+      465.9,
+      466.6
+     ],
+     "capex_m": [
+      554.4,
+      795.5
+     ]
+    },
+    "1998": {
+     "source": "CM2",
+     "revenues_m": [
+      4467.7,
+      5145.3
+     ],
+     "operating_income_m": [
+      466.6,
+      557.1
+     ],
+     "capex_m": [
+      795.5,
+      898.9
+     ]
+    },
+    "1999": {
+     "source": "CM3",
+     "revenues_m": [
+      5419.0,
+      6529.2
+     ],
+     "operating_income_m": [
+      557.1,
+      664.0
+     ],
+     "capex_m": [
+      898.9,
+      893.8
+     ]
+    },
+    "2000": {
+     "source": "CM4",
+     "revenues_m": [
+      6529.2,
+      8218.6
+     ],
+     "operating_income_m": [
+      664.0,
+      -161.0
+     ],
+     "capex_m": [
+      893.8,
+      1636.8
+     ]
+    },
+    "2001": {
+     "source": "CM5",
+     "revenues_m": [
+      8357,
+      9836
+     ],
+     "operating_income_m": [
+      -161,
+      -746
+     ],
+     "capex_m": [
+      1637,
+      2182
+     ]
+    },
+    "2002": {
+     "source": "CM6",
+     "revenues_m": [
+      5937,
+      8102
+     ],
+     "operating_income_m": [
+      -1325,
+      921
+     ],
+     "capex_m": [
+      2039,
+      1852
+     ]
+    },
+    "2003": {
+     "source": "CM7",
+     "revenues_m": [
+      8102,
+      18348
+     ],
+     "operating_income_m": [
+      921,
+      1954
+     ],
+     "capex_m": [
+      1852,
+      4161
+     ]
+    },
+    "2004": {
+     "source": "CM8",
+     "revenues_m": [
+      18348,
+      20307
+     ],
+     "operating_income_m": [
+      1954,
+      2908
+     ],
+     "capex_m": [
+      4161,
+      3660
+     ]
+    },
+    "2005": {
+     "source": "CM9",
+     "revenues_m": [
+      19221,
+      21075
+     ],
+     "operating_income_m": [
+      2829,
+      3521
+     ],
+     "capex_m": [
+      3660,
+      3621
+     ]
+    },
+    "2006": {
+     "source": "CM9",
+     "revenues_m": [
+      21075,
+      24966
+     ],
+     "operating_income_m": [
+      3521,
+      4619
+     ],
+     "capex_m": [
+      3621,
+      4395
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 1270,
+    "BASE": 620,
+    "BULL": -30,
+    "XBULL": -1150
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -245.4,
+    "1998": 38.4,
+    "1999": -11.1,
+    "2000": -1212.9,
+    "2001": -565.8,
+    "2002": 3368.5,
+    "2003": -71.8,
+    "2004": 367.1,
+    "2005": 198.9,
+    "2006": 179.4
+   },
+   "raw": {
+    "1997": {
+     "source": "CM1",
+     "revenues_m": [
+      3612.3,
+      4467.7
+     ],
+     "operating_income_m": [
+      465.9,
+      466.6
+     ]
+    },
+    "1998": {
+     "source": "CM2",
+     "revenues_m": [
+      4467.7,
+      5145.3
+     ],
+     "operating_income_m": [
+      466.6,
+      557.1
+     ]
+    },
+    "1999": {
+     "source": "CM3",
+     "revenues_m": [
+      5419.0,
+      6529.2
+     ],
+     "operating_income_m": [
+      557.1,
+      664.0
+     ]
+    },
+    "2000": {
+     "source": "CM4",
+     "revenues_m": [
+      6529.2,
+      8218.6
+     ],
+     "operating_income_m": [
+      664.0,
+      -161.0
+     ]
+    },
+    "2001": {
+     "source": "CM5",
+     "revenues_m": [
+      8357,
+      9836
+     ],
+     "operating_income_m": [
+      -161,
+      -746
+     ]
+    },
+    "2002": {
+     "source": "CM6",
+     "revenues_m": [
+      5937,
+      8102
+     ],
+     "operating_income_m": [
+      -1325,
+      921
+     ]
+    },
+    "2003": {
+     "source": "CM7",
+     "revenues_m": [
+      8102,
+      18348
+     ],
+     "operating_income_m": [
+      921,
+      1954
+     ]
+    },
+    "2004": {
+     "source": "CM8",
+     "revenues_m": [
+      18348,
+      20307
+     ],
+     "operating_income_m": [
+      1954,
+      2908
+     ]
+    },
+    "2005": {
+     "source": "CM9",
+     "revenues_m": [
+      19221,
+      21075
+     ],
+     "operating_income_m": [
+      2829,
+      3521
+     ]
+    },
+    "2006": {
+     "source": "CM9",
+     "revenues_m": [
+      21075,
+      24966
+     ],
+     "operating_income_m": [
+      3521,
+      4619
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -2440,
+    "BASE": -1210,
+    "BULL": 10,
+    "XBULL": 3370
+   }
+  }
+ },
+ "price_basis": "Yahoo's CMCSA series is adjusted for the 2-for-1 split of 2017-02-21 and a factor of 1.067 dated 2026-01-05 (Yahoo's split event for that date, the Versant Media distribution); every date here precedes both, so the builder multiplies Yahoo's close by their product (2.134) and gets the price as traded: $18.26 on 2007-12-31 and $16.88 on 2008-12-31. The 3-for-2 split of 2007-02-22 precedes every date: prices before it are on the post-split basis in Yahoo's series, as are the per-share facts (the 'splits' record restates the Q4 2006 release's $0.90).",
+ "distributions": [
+  {
+   "effective": "2026-01-05",
+   "yahoo_factor": 1.067,
+   "source": "Yahoo chart events",
+   "kind": "split event for a distribution",
+   "note": "the Versant Media spin-off; Yahoo records it as a 1067:1000 split. It follows every date here and enters only through the price basis"
+  }
+ ]
+}

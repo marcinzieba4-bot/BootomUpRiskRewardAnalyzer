@@ -1,0 +1,200 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CMCSA",
+ "company": "Comcast Corporation",
+ "as_of": "2008-02-22",
+ "price_date": "2008-02-22",
+ "price": 20.15,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cable signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are the largest cable operator in the United States' (FY2007 10-K, Item 1); 'A substantial portion of our revenues comes from residential subscribers whose spending patterns may be affected by prevailing economic conditions. Intensifying competition and a weakening economy affected our net subscriber additions during the second half of 2007'; competitors include DBS providers, phone companies with fiber-optic networks and 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are the largest cable operator in the United States' (FY2007 10-K, Item 1); 'A substantial portion of our revenues comes from residential subscribers whose spending patterns may be affected by prevailing economic conditions. Intensifying competition and a weakening economy affected our net subscriber additions during the second half of 2007'; competitors include DBS providers, phone companies with fiber-optic networks and 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.04x; -6% to EPP floor; model-vs-market gap +1.43; conservative 2yr +105%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.04,
+  "ratio_b_fmt": "0.04x",
+  "epp": 21.46,
+  "epp_gap_pct": -6.1,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.3,
+  "sca": 0.15,
+  "adj_composite": 2.65,
+  "market_composite": 1.22,
+  "adj_gap": 1.43,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 105.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.59,
+    "pe": 29.5,
+    "price": 17,
+    "desc": "EPS -10.7%/yr (worst year FY04-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.92,
+    "pe": 46.4,
+    "price": 43,
+    "desc": "EPS +11.6%/yr (FY08 guide + margin + buyback); P/E at its 4.1-yr median"
+   },
+   "BULL": {
+    "eps": 1.41,
+    "pe": 72.8,
+    "price": 103,
+    "desc": "EPS +38.3%/yr (FY04-FY07 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.19,
+    "pe": 84.9,
+    "price": 186,
+    "desc": "EPS +72.0%/yr (best 2-yr run FY04-FY07); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.24,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.65,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -14.9,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -6.1,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 105.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CMCSA (retrospective, 2008-02-22) ◉ BUY — Ratio B 0.04x (15.6% downside to Bear $17 / +411.2% upside to Bull $103) | Adj composite 2.65 vs market 1.22: gap +1.43 [UNDERVALUED] | -6% above the EPP floor $21 (29x FY08E $0.74) | Conservative 2-yr case: +105.3% total (+52.7%/yr) | At 27.2x FY08E the 15% hurdle price $27 sits at or below the BASE case; video subscribers -0.7% in Q4 2007, forward revenues +8-10% (FY08 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CM15",
+   "published": "2008-02-20",
+   "filed": "2008-02-20 11:54 ET",
+   "title": "Comcast FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-034239.txt",
+   "supports": "selected financial data 2003-2007; consolidated statement of operations 2005-2007; diluted shares 3,312M, 3,180M, 3,129M; capital expenditures; video subscribers 2003-2007; segment revenues; the $0.0625 quarterly dividend"
+  },
+  {
+   "id": "CM14",
+   "published": "2008-02-14",
+   "filed": "2008-02-14 06:51 ET (before the open)",
+   "title": "Comcast Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-030118.txt",
+   "supports": "Q4 and full-year 2007 statement of operations; Adjusted EPS 2007 $0.74 and 2006 $0.60; 2008 Financial Outlook (consolidated revenue growth of 8% to 10%); first quarterly dividend of $0.0625"
+  },
+  {
+   "id": "CM9",
+   "published": "2007-02-26",
+   "filed": "2007-02-26 12:08 ET",
+   "title": "Comcast FY2006 10-K (2006 Annual Report as Exhibit 13.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-039301.txt",
+   "supports": "consolidated statement of operations 2004-2006 (revenues $19,221M, $21,075M, $24,966M; operating income $2,829M, $3,521M, $4,619M; diluted EPS from continuing operations $0.28, $0.25, $0.70 after the 3-for-2 split); diluted shares 3,375M, 3,312M, 3,180M; capital expenditures $3,660M, $3,621M, $4,395M; video subscribers 2002-2006 in millions excluding the systems transferred to Time Warner; segment revenues; 2006 Free Cash Flow $2,623M; no cash dividend"
+  },
+  {
+   "id": "CM24",
+   "published": "2007-02-01",
+   "filed": "2007-02-01 07:06 ET (before the open)",
+   "title": "Comcast 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-017749.txt",
+   "supports": "a three-for-two stock split in the form of a 50% stock dividend payable on February 21, 2007 (the stock traded ex-dividend from February 22, 2007, FY2006 Annual Report)"
+  },
+  {
+   "id": "W0",
+   "published": "2008-02-22",
+   "title": "Yahoo Finance daily prices, CMCSA and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CMCSA/history",
+   "supports": "close $20.15 as traded on AS_OF, 52-week range, realized vol, beta, the 4.1-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2009 after 2008 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-11"
+}

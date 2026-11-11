@@ -1506,6 +1506,26 @@
     "term": "Pfizer Ignite",
     "first_seen": "2023-05-02",
     "note": "a Pfizer business (research and development services for biotech companies); first in a Pfizer filing in its Q1 2023 earnings 8-K (accepted 2023-05-02 08:05 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Xfinity",
+    "first_seen": "2010-02-23",
+    "note": "Comcast's consumer brand for its cable services; first in a Comcast filing in its FY2009 10-K (accepted 2010-02-23 15:47 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "NBCUniversal",
+    "first_seen": "2011-01-31",
+    "note": "the name of the joint venture Comcast formed with GE's NBC Universal, written as one word; first in a Comcast filing in its 8-K on the closing (accepted 2011-01-31 10:02 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Peacock",
+    "first_seen": "2011-02-25",
+    "note": "an NBCUniversal name (later its streaming service); first in a Comcast filing in an exhibit to its FY2010 10-K (accepted 2011-02-25 15:02 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Versant",
+    "first_seen": "2025-07-31",
+    "note": "Versant Media, the cable-network company Comcast spun off; first in a Comcast filing in its Q2 2025 earnings 8-K (accepted 2025-07-31 07:07 ET, before the open), EDGAR full-text search"
    }
   ]
  }

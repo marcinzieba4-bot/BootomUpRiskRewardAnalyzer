@@ -18,6 +18,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 MAR          # the MAR series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 BKR          # the BKR series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 PFE          # the PFE series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 CMCSA        # the CMCSA series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -46,7 +47,9 @@ every fact sheet with a 'guides' list gets, too), and from the 2017 listing of B
 own fields (orders, the segment margin, the work in hand; "era" on the planted print, guides and dividend; BKR 2018-2021); PFE: a
 print whose full-year actuals are absurd and which restates every year of the history (the 'restates' field of PFE 2010-2013), a later
 withdrawal of every guided field of every guided year and a later reissue of the last print before CUTOFF (PFE 2014-2017), a later
-vintage excluding a year (PFE 2018-2021), and a later Q4 print whose full-year actuals exclude its own year (PFE 2022-2026); every
+vintage excluding a year (PFE 2018-2021), and a later Q4 print whose full-year actuals exclude its own year (PFE 2022-2026); CMCSA: a
+print whose subscribers, margins, capital expenditures, raw figures and full-year actuals are absurd (for the year after the latest
+vintage before CUTOFF), a later guide with every guided field (a range, the words of a one-sided bound, the label and note); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -76,7 +79,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "PEP": "staging/retrospective/PEP", "MSFT": "staging/retrospective/MSFT", "XOM": "staging/retrospective/XOM",
           "SHW": "staging/retrospective/SHW", "WMT": "staging/retrospective/WMT", "RCL": "staging/retrospective/RCL",
           "MAR": "staging/retrospective/MAR", "BKR": "staging/retrospective/BKR",
-          "PFE": "staging/retrospective/PFE"}[TICKER]
+          "PFE": "staging/retrospective/PFE", "CMCSA": "staging/retrospective/CMCSA"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -173,7 +176,13 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      diluted_shares_m=1.0, next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED", period_end="PLANTED",
                      release_time="PLANTED",
                      raw=dict(rev_m=2, rev_prior_m=198, cos_m=1, cos_prior_m=1, pretax_m=-99, pretax_prior_m=99, us_m=1, us_prior_m=99,
-                              intl_m=1, intl_prior_m=99, diluted_shares_m=1))}[TICKER]
+                              intl_m=1, intl_prior_m=99, diluted_shares_m=1)),
+         "CMCSA": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, video_pct=-60.0, ocf_margin=1.0,
+                       ocf_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0, capex_pct=99.0, capex_bp=9999.0, eps_q=0.01,
+                       eps_q_prior=9.99, diluted_shares_m=1.0, next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED",
+                       period_end="PLANTED", release_time="PLANTED",
+                       raw=dict(rev_m=2, rev_prior_m=198, ocf_m=1, ocf_prior_m=99, oi_m=-99, oi_prior_m=99, capex_m=99, capex_prior_m=1,
+                                video_k=1, video_prior_k=99, video_columns="PLANTED", diluted_shares_m=1))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -199,6 +208,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "RCL": dict(note="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
                            q_guide={"quarter": "Q4 2099", "ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0, "eps": [0.1, 0.2]}),
                "PFE": dict(rev_guide_usd_b=[0.1, 0.2], eps_adj=[0.1, 0.2], rev_label="PLANTED", note="PLANTED"),
+               "CMCSA": dict(rev_guide_pct=[-50, -40], rev_words="PLANTED", rev_label="PLANTED", note="PLANTED"),
                "SHW": dict(fy_words="PLANTED", note="PLANTED",
                            q_guide={"quarter": "Q4 2099", "sales": [-40, -30], "eps": [0.1, 0.2], "words": "PLANTED"}),
                "MSFT": dict(rev_guide_usd_b=[0.1, 0.2], op_income_guide_usd_b=[0.1, 0.2], note="PLANTED", opex_guide_usd_b=[0.1, 0.2],
@@ -409,6 +419,13 @@ try:
                               "eps_q": -9.99, "diluted_shares_m": 1.0,
                               "fy_actual": {"eps_normalized": 0.01, "normalization_note": "PLANTED", "pretax_margin": -50.0,
                                             "pretax_margin_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED"}}
+    if TICKER == "CMCSA":  # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF
+        v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+        y0 = max(int(y) for y in v0["eps_normalized"]) + 1
+        last["fy_actual"] = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
+                             "normalization_note": "PLANTED", "op_margin": -50.0, "ocf_margin": 1.0, "pretax_margin": -50.0,
+                             "pretax_margin_note": "PLANTED", "sales_growth": -60.0, "capex_pct": 99.0, "video_pct": -60.0,
+                             "video_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED"}
     if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
