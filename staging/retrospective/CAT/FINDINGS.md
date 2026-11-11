@@ -1,11 +1,13 @@
 # CAT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CAT weekly dates: 314 from 2008-01-04 to 2013-12-31 (105 in 2008-2009, 209 in 2010-2013), all
+Patterns seen in `outcome.json` for the CAT weekly dates: 522 from 2008-01-04 to 2017-12-29 (105 in 2008-2009, 209 in 2010-2013,
+208 in 2014-2017), all
 Caterpillar Inc. (NYSE: CAT). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was
-scored only after its point-in-time build was committed and pushed (2008-2009: 26e9995; 2010-2013: a1a4479). Outcomes were computed on
-2026-11-11; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-31). Total returns include the quarterly
+scored only after its point-in-time build was committed and pushed (2008-2009: 26e9995; 2010-2013: a1a4479; 2014-2017: 6b020c8). Outcomes were computed on
+2026-11-11; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29). Total returns include the quarterly
 dividends ($0.36, then $0.42 from July 2008, $0.44 from July 2010, $0.46 from July 2011, $0.52 from July 2012, $0.60 from July 2013,
-$0.70 from July 2014 and $0.77 from July 2015, ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even
+$0.70 from July 2014, $0.77 from July 2015, $0.78 from July 2017, $0.86 from July 2018 and $1.03
+from July 2019, ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even
 count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call
 held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of the benchmark, and
 RICH should miss the hurdle and lag the benchmark.
@@ -197,3 +199,103 @@ RICH should miss the hurdle and lag the benchmark.
   would read the cycle differently; and a composite of year-on-year quarterly changes is late at turning points.
 - **Today's profile** files CAT CYCLICAL, risk 1 (`profile_drift` in every outcome): from 2011-02-23 the point-in-time kind agrees and
   only the risk score differs (2 then, 1 today).
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 51 | -18.5% | -29.0% to +11.7% | 0 | 0 | -26.7% | 51 |
+| latest print Q3 2013, EPS $5.5 (2014-01-10 to 2014-01-24) | 3 | -24.0% | -28.3% to -22.6% | 0 | 0 | -13.5% | 3 |
+| latest print Q4 2013, EPS $5.85 (2014-01-28 to 2014-04-17) | 12 | -20.3% | -28.7% to -16.2% | 0 | 0 | -22.2% | 12 |
+| latest print Q1 2014, EPS $6.1 (2014-04-25 to 2014-07-18) | 13 | -24.0% | -29.0% to -20.3% | 0 | 0 | -31.9% | 13 |
+| latest print Q2 2014, EPS $6.2 (2014-07-25 to 2014-10-17) | 13 | -14.3% | -19.3% to +1.1% | 0 | 0 | -30.2% | 13 |
+| latest print Q3 2014, EPS $6.5 (2014-10-24 to 2014-12-26) | 10 | +0.3% | -11.8% to +11.7% | 0 | 0 | -24.2% | 10 |
+
+- **RICH held on all 51.** At $86.17-111.08, 13.9-18.2x the FY14 guide, the stock returned -29.0% to +11.7% over two years, 5-42pp behind
+  SPY, and cleared no hurdle; every date landed nearest BASE (0.74-1.19 times its price) and sat through a 39-48% drawdown to the low close
+  of $57.91 on 2016-01-25. The guide was not the problem for the year itself: FY2014 came in at $6.38 excluding restructuring costs,
+  above every guide the models carried ($5.85-6.50); the next two years fell (FY2015 $4.64, FY2016 $3.42, both in the fact sheet's later
+  prints). Over three years they returned -0.5% (2014-04-17) to +75.7% (2014-12-26, into the 2017 rally), 14 of 51 ahead of SPY.
+- **Ranking:** the P/E on the guide (-0.64, -0.80), the EPP gap (-0.64, -0.80) and Ratio B (-0.42, -0.85) carried the right sign; the
+  entry price ranked the two-year return weakly (-0.26) and the m12-24 return strongly (-0.98); the composite ranked nothing (+0.17, -0.07).
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +34.7% | +7.5% to +141.0% | 27 | 51 | +9.2% | 2 |
+| latest print Q3 2014, EPS $6.5 (2015-01-02 to 2015-01-23) | 4 | +17.5% | +7.5% to +19.0% | 0 | 2 | -6.0% | 2 |
+| latest print Q4 2014, EPS $4.75 (2015-01-28 to 2015-04-17) | 12 | +24.6% | +18.9% to +31.3% | 0 | 12 | +4.0% | 0 |
+| latest print Q1 2015, EPS $5 (2015-04-24 to 2015-07-17) | 13 | +27.8% | +20.9% to +38.8% | 3 | 13 | +4.0% | 0 |
+| latest print Q2 2015, EPS $5 (2015-07-24 to 2015-10-16) | 13 | +70.2% | +50.3% to +100.8% | 13 | 13 | +33.5% | 0 |
+| latest print Q3 2015, EPS $4.6 (2015-10-23 to 2015-12-31) | 11 | +105.0% | +92.1% to +141.0% | 11 | 11 | +52.5% | 0 |
+
+- **RICH failed on 51 of 53.** Only 2015-01-02 and 2015-01-09 held (+7.5% and +12.3%, 3-6pp behind SPY). From the Q4 2014 print to the Q1
+  2015 period ($79.23-88.63, 16.4-17.9x the $4.75 and $5.00 guides) the stock returned +18.9% to +38.8%, ahead of SPY on all 25; from the Q2 2015
+  print (24 dates, $64.98-78.63, 13.0-16.1x the $5.00 and $4.60 guides) +50.3% to +141.0%, every one clearing the hurdle. Over three years
+  every 2015 date beat SPY (+66.8% to +151.6%). The two-year price landed nearest BULL on 49 dates (up to 3.1 times the BASE price).
+- **Ranking:** the entry price at -0.87 and -0.92; the P/E (-0.49, -0.54), the EPP gap (-0.62, -0.63) and Ratio B (-0.49, -0.50) with the
+  right sign; the adjusted gap (-0.68, -0.68) and the composite (-0.79, -0.80) with the wrong one.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +94.2% | +34.1% to +193.5% | 52 | 52 | +75.1% | 0 |
+| latest print Q3 2015, EPS $4.6 (2016-01-08 to 2016-01-22) | 3 | +190.4% | +172.1% to +193.5% | 3 | 3 | +91.1% | 0 |
+| latest print Q4 2015, EPS $4 (2016-01-29 to 2016-04-15) | 12 | +125.9% | +97.6% to +171.2% | 12 | 12 | +73.7% | 0 |
+| latest print Q1 2016, EPS $3.7 (2016-04-22 to 2016-07-22) | 14 | +105.7% | +80.3% to +131.7% | 14 | 14 | +82.4% | 0 |
+| latest print Q2 2016, EPS $3.55 (2016-07-27 to 2016-10-21) | 13 | +77.0% | +59.5% to +97.3% | 13 | 13 | +72.8% | 0 |
+| latest print Q3 2016, EPS $3.25 (2016-10-26 to 2016-12-30) | 10 | +43.8% | +34.1% to +60.6% | 10 | 10 | +57.5% | 0 |
+
+- **RICH failed on all 52, as in 2009.** From the January low ($59.87 on 2016-01-15) to $95.81 on 2016-11-25, at 13.0-29.5x a guide falling
+  from $4.60 to $3.25, the stock returned +34.1% to +193.5% over two years, cleared the hurdle and beat SPY on every date (by 10-141pp);
+  the two-year price landed nearest XBULL on 40 and BULL on 12, at 3.0-4.0 times the BASE price. The sales guides fell to $39 billion
+  (BASE -9% to -16%/yr) while the order cycle turned; within 2017 the FY17 guide itself rose from $2.90 to $6.25. A third sighting of the
+  2009-2010 hypothesis: a current-year P/E at a cyclical trough, and a falling fiscal-year sales guide carried as two-year growth, read a
+  recovery as richness; still a cross-ticker question for a new method version, never a CAT fit.
+- **Ranking:** the entry price at -0.96 and -0.80; the P/E on the guide (-0.96, -0.69), the EPP gap (-0.96, -0.69) and the adjusted gap
+  (+0.94, +0.64) with the right sign, all through the price; the composite (-0.83, -0.57) with the wrong one (it sat at 1.15-1.30, every
+  signal at or near BEAR, while the recovery was priced in).
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +24.3% | -1.4% to +58.9% | 24 | 29 | +25.5% | 23 |
+| latest print Q3 2016, EPS $3.25 (2017-01-06 to 2017-01-20) | 3 | +46.6% | +44.6% to +51.3% | 3 | 3 | +51.8% | 0 |
+| latest print Q4 2016, EPS $2.9 (2017-01-27 to 2017-04-21) | 13 | +49.8% | +40.2% to +58.9% | 13 | 13 | +47.1% | 0 |
+| latest print Q1 2017, EPS $3.75 (2017-04-26 to 2017-07-21) | 13 | +32.9% | +19.3% to +46.1% | 8 | 13 | +28.0% | 0 |
+| latest print Q2 2017, EPS $5 (2017-07-26 to 2017-10-20) | 13 | +8.2% | +0.7% to +23.1% | 0 | 0 | +11.6% | 13 |
+| latest print Q3 2017, EPS $6.25 (2017-10-25 to 2017-12-29) | 10 | +7.3% | -1.4% to +13.7% | 0 | 0 | -5.4% | 10 |
+
+- **RICH failed on the 29 dates to 2017-07-21 and held on the 23 from the Q2 2017 print.** The January to July dates ($92.15-108.77, 26.6-34.1x
+  the $2.90 and $3.75 guides, the 97th-100th percentile) returned +19.3% to +58.9% and beat SPY by 1-31pp; the two-year price landed
+  nearest XBULL or BULL. From the Q2 2017 print ($112.85-157.58, 21.8-26.3x the $5.00 and $6.25 guides, BASE +13% to +16%/yr) they returned -1.4% to
+  +23.1%, 3-26pp behind SPY, after the high close of $170.89 on 2018-01-22. Over three years (to the end of 2020) 12 of 52 beat SPY.
+- **Ranking:** the entry price at -0.92 and -0.99; the P/E (+0.79, +0.82), the EPP gap (+0.79, +0.82) and Ratio B (+0.69, +0.78) with the
+  wrong sign (the multiple was highest on the trough guide of January, the best entries); the adjusted gap (-0.83, -0.88) and the
+  composite (-0.89, -0.97) with the wrong sign as well.
+
+## 2014-2017: what the downturn and recovery show (hindsight)
+
+- **Calls held:** RICH 76 of 208 (2014: 51 of 51; 2015: 2 of 53; 2016: 0 of 52; 2017: 23 of 52). With 2008-2013: CHEAP 55 of 166, FAIR 13
+  of 21, RICH 138 of 335, 206 of 522 in all.
+- **One class for four years, so the class carried no timing.** Every 2014-2017 date was RICH, and the point-in-time sensitivity (README,
+  "CAT 2014-2017") shows no encoding or signal setting changes that: 2009's -61.5% year sits in the history as BEAR through 2018, so the
+  downside to BEAR is 88-95% on every date, and the falling guides pull BULL to or under the price. The same call was right at the 2014
+  top and wrong from the 2015 lows through mid-2017. Hypothesis, not a rule: one extreme year as BEAR for a decade makes Ratio B
+  insensitive for a deep cyclical; whether a BEAR drawn from more than one year, or capped, would discriminate is a cross-ticker question
+  for a new method version, never a CAT fit.
+- **The model's numbers did not rank the outcomes pooled.** Over the 208 dates the entry price ranks the two-year return at -0.79 and the
+  m12-24 return at -0.67; the P/E on the guide at +0.06 and +0.28, the EPP gap at -0.03 and +0.20, Ratio B at +0.23 and +0.35, the
+  adjusted gap at -0.63 and -0.72 and the composite at -0.75 and -0.76 (each the wrong sign or none), as in 2010-2013. Within years the
+  P/E, the EPP gap and Ratio B carried the right sign in 2014-2016 and the wrong one in 2017; across 2008-2017 (522 dates) the entry price
+  ranks at -0.68 and -0.64 and every model metric with the wrong sign (P/E +0.25 and +0.33, Ratio B +0.27 and +0.31, the adjusted gap -0.41
+  and -0.49, the composite -0.43 and -0.51).
+- **The trough pattern repeats.** The RICH calls failed where the guided EPS sat at its low and the price had already turned (2009 to
+  mid-2010; mid-2015 to mid-2017) and held where the guide was near its high (2014, late 2017). Together with 2008 and 2011-2012 (CHEAP at
+  peak guides that failed), CAT gives four sightings of the same hypothesis: for a capital-goods cyclical a P/E on the current-year guide
+  is pro-cyclical. It needs other cyclicals and periods before any method change.
+- **Today's profile** files CAT CYCLICAL, risk 1 (`profile_drift` in every outcome); the point-in-time kind agrees on every 2014-2017
+  date and only the risk score differs (2 then, 1 today).
