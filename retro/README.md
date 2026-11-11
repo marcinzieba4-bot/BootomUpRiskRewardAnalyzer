@@ -12389,9 +12389,18 @@ Controls and checks:
   523 dates each); the planted facts include a later STREAMING event and a later split on the price data's next split date.
 - No file shared with another ticker changed (the builder, fact sheet and engine are CMCSA's own; `taxonomy_eras.json` is unchanged),
   so no other model can move.
+- **Verification pass** (a second session, 2026-11-11, after the outcomes were committed; nothing rebuilt or re-encoded): all 523 CMCSA
+  models rebuild byte for byte; `retro_tool run` on the 209 dates rewrites nothing; the firewall passes again at the 27 cutoffs; the 16
+  releases' and 4 10-Ks' accession numbers and acceptance times match EDGAR's submissions index; all 176 raw figures of the 16 prints are
+  in their own filings, and their revenue and video growth re-derive; the FY2013-FY2016 company EPS, the four dividend rates, the split
+  and the FY2016 10-K's revenues, GAAP EPS, diluted shares and quoted sentences match their filings. An independent scan, with each
+  date's information set taken from EDGAR's timestamps rather than the fact sheet, finds every date's latest print, last history year,
+  dividend, EPS and split basis as expected, and no later filing's accession number, no quarter label past the next print and no fiscal
+  year past the next in any model, report or analysis. The 2008-2013 fact-sheet records are unchanged. One wording fix: the January
+  2014 dates' current year is FY13E, as the models print it (this section had FY14E).
 
 Seen in the build (method behaviour, not tuned):
-- **January 2014: RICH on the 4 dates before the Q4 2013 print** (BUY, Ratio B 0.44-0.49): FY14E is still FY12's $1.93 (the rollover
+- **January 2014: RICH on the 4 dates before the Q4 2013 print** (BUY, Ratio B 0.44-0.49): FY13E is still FY12's $1.93 (the rollover
   rule), so $51.07-53.54 is 26.5-27.7x (61st-62nd percentile), 39-46% above a 19x floor, and the conservative case loses 18-21%.
 - **From the Q4 2013 print to June 2016: CHEAP on 95 dates and FAIR on 31**, all BUY (Ratio B 0.17-0.69). On FY13's $2.47, FY14's $2.93
   and FY15's $3.25 the stock ($47.96-64.27) is 17.5-24.1x, the 48th-76th percentile of a window whose median falls from 19.1x to 17.6x
