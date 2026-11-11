@@ -1,0 +1,111 @@
+# CAT retrospective series
+
+Point-in-time columns use only information public on the as-of date. The last four columns are hindsight: 2-year total return incl. dividends, its excess vs SPY, the return to the average price over months 12-24 (endpoint-robust), and whether the price-state call held.
+
+| as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | m12-24 avg | call |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2008-01-04 | $68.53 | Caterpillar 8-K: third-quarter 2007 results release | 2.50 | +0.63 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -9.8% | +6.5pp | -38.6% | ✓ |
+| 2008-01-11 | $66.01 | Caterpillar 8-K: third-quarter 2007 results release | 2.50 | +0.72 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +2.1% | +16.7pp | -35.8% | ✓ |
+| 2008-01-18 | $62.81 | Caterpillar 8-K: third-quarter 2007 results release | 2.50 | +0.81 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +1.0% | +11.2pp | -32.0% | ✓ |
+| 2008-01-25 | $65.93 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.66 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -11.4% | +2.4pp | -34.6% | ✓ |
+| 2008-02-01 | $71.76 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.53 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -21.6% | -3.3pp | -39.3% | ✗ |
+| 2008-02-08 | $68.01 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.62 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -20.5% | -3.7pp | -35.4% | ✗ |
+| 2008-02-15 | $69.95 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.57 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -14.9% | +1.5pp | -36.6% | ✓ |
+| 2008-02-22 | $71.18 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.57 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -13.8% | +0.6pp | -36.9% | ✓ |
+| 2008-02-29 | $72.33 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.54 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -16.6% | -3.0pp | -37.1% | ✗ |
+| 2008-03-07 | $69.84 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.60 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -10.5% | -2.3pp | -33.9% | ✗ |
+| 2008-03-14 | $74.79 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.46 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -14.9% | -7.7pp | -37.4% | ✗ |
+| 2008-03-20 | $73.82 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.50 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -15.1% | -6.5pp | -35.7% | ✗ |
+| 2008-03-28 | $77.09 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.37 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -14.7% | -7.0pp | -37.6% | ✗ |
+| 2008-04-04 | $77.83 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.34 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | -13.5% | -3.1pp | -37.4% | ✓ |
+| 2008-04-11 | $74.80 | Caterpillar 8-K: fourth-quarter 2007 results release | 2.20 | +0.46 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -8.3% | -1.5pp | -34.0% | ✗ |
+| 2008-04-18 | $85.28 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.44 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -18.1% | -7.7pp | -41.3% | ✓ |
+| 2008-04-25 | $82.25 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.53 | 1.03x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -12.3% | -2.9pp | -38.3% | ✗ |
+| 2008-05-02 | $82.80 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.52 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -13.7% | -1.0pp | -37.9% | ✗ |
+| 2008-05-09 | $81.76 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.54 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -19.9% | -3.4pp | -36.4% | ✗ |
+| 2008-05-16 | $83.70 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.48 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | -18.5% | -1.6pp | -37.2% | ✓ |
+| 2008-05-23 | $81.55 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.56 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -22.2% | -4.9pp | -34.9% | ✗ |
+| 2008-05-30 | $82.64 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.52 | 1.04x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -22.4% | -3.7pp | -35.3% | ✗ |
+| 2008-06-06 | $79.99 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.61 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -23.6% | -5.4pp | -32.6% | ✗ |
+| 2008-06-13 | $81.50 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.56 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -22.0% | -6.0pp | -33.4% | ✗ |
+| 2008-06-20 | $79.08 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.65 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -12.5% | -0.9pp | -30.6% | ✗ |
+| 2008-06-27 | $73.75 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.85 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -7.7% | +4.1pp | -24.8% | ✓ |
+| 2008-07-03 | $70.31 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.94 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -11.1% | +4.4pp | -20.4% | ✓ |
+| 2008-07-11 | $69.81 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.95 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -2.5% | +6.6pp | -19.0% | ✓ |
+| 2008-07-18 | $70.89 | Caterpillar 8-K: first-quarter 2008 results release | 2.55 | +0.92 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -5.0% | +6.7pp | -19.3% | ✓ |
+| 2008-07-23 | $72.42 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.22 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +0.4% | +10.6pp | -20.3% | ✓ |
+| 2008-08-01 | $68.14 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.30 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +7.3% | +16.3pp | -14.5% | ✓ |
+| 2008-08-08 | $70.90 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.25 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +5.7% | +15.3pp | -17.1% | ✓ |
+| 2008-08-15 | $70.35 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.26 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +1.5% | +14.7pp | -15.8% | ✓ |
+| 2008-08-22 | $70.27 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.26 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +2.8% | +16.3pp | -15.1% | ✓ |
+| 2008-08-29 | $70.73 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.25 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -2.1% | +11.4pp | -15.1% | ✓ |
+| 2008-09-05 | $64.07 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.57 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +14.7% | +21.8pp | -5.6% | ✓ |
+| 2008-09-12 | $65.46 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.55 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +14.0% | +22.0pp | -7.0% | ✓ |
+| 2008-09-19 | $66.49 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.33 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.1% | +20.9pp | -7.9% | ✓ |
+| 2008-09-26 | $64.13 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.57 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.6% | +30.9pp | -3.7% | ✓ |
+| 2008-10-03 | $51.21 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.79 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.3% | +51.4pp | +21.7% | ✓ |
+| 2008-10-10 | $43.13 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +1.94 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.2% | +57.4pp | +45.7% | ✓ |
+| 2008-10-17 | $39.32 | Caterpillar 8-K: second-quarter 2008 results release | 2.70 | +2.11 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +110.4% | +79.2pp | +61.1% | ✓ |
+| 2008-10-22 | $36.52 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +123.8% | +88.2pp | +74.6% | ✓ |
+| 2008-10-31 | $38.20 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +114.7% | +87.6pp | +68.1% | ✓ |
+| 2008-11-07 | $38.45 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +126.1% | +90.6pp | +68.3% | ✓ |
+| 2008-11-14 | $36.96 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +128.5% | +84.5pp | +76.3% | ✓ |
+| 2008-11-21 | $34.67 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +152.0% | +95.1pp | +89.2% | ✓ |
+| 2008-11-28 | $40.99 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +113.5% | +76.7pp | +61.1% | ✓ |
+| 2008-12-05 | $38.26 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +142.5% | +97.6pp | +74.0% | ✓ |
+| 2008-12-12 | $42.08 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.80 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +121.8% | +76.9pp | +59.8% | ✓ |
+| 2008-12-19 | $42.69 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.78 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +124.9% | +78.9pp | +59.1% | ✓ |
+| 2008-12-26 | $42.72 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.78 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +129.0% | +79.8pp | +60.3% | ✓ |
+| 2008-12-31 | $44.67 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.75 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +117.8% | +73.5pp | +54.5% | ✓ |
+| 2009-01-09 | $43.20 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.77 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +124.8% | +77.1pp | +61.7% | ✓ |
+| 2009-01-16 | $39.55 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +145.2% | +88.0pp | +78.2% | ✓ |
+| 2009-01-23 | $35.66 | Caterpillar 8-K: third-quarter 2008 results release | 2.55 | +1.96 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +169.7% | +109.9pp | +99.3% | ✓ |
+| 2009-01-27 | $32.32 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | -0.16 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +209.6% | +150.5pp | +121.7% | ✓ |
+| 2009-02-06 | $33.28 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | -0.22 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +209.5% | +153.6pp | +118.8% | ✗ |
+| 2009-02-13 | $30.94 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | -0.08 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +245.7% | +179.5pp | +138.3% | ✓ |
+| 2009-02-20 | $26.66 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | +0.36 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +309.9% | +230.4pp | +179.8% | ✓ |
+| 2009-02-27 | $24.61 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | +0.55 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +328.4% | +243.4pp | +206.2% | ✓ |
+| 2009-03-06 | $23.23 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | +0.67 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +358.3% | +259.6pp | +228.1% | ✓ |
+| 2009-03-13 | $26.78 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | +0.33 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +286.3% | +208.5pp | +187.7% | ✓ |
+| 2009-03-20 | $27.07 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | +0.32 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +300.7% | +228.4pp | +187.8% | ✓ |
+| 2009-03-27 | $30.35 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | +0.01 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +270.7% | +204.4pp | +159.7% | ✓ |
+| 2009-04-03 | $32.15 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | -0.09 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +262.5% | +199.2pp | +147.9% | ✓ |
+| 2009-04-09 | $32.52 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | -0.10 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +248.2% | +188.2pp | +147.9% | ✓ |
+| 2009-04-17 | $32.29 | Caterpillar 8-K: fourth-quarter 2008 results release | 2.05 | -0.09 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +241.3% | +184.6pp | +152.1% | ✓ |
+| 2009-04-22 | $32.45 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.30 | 39.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +247.8% | +184.3pp | +152.8% | ✗ |
+| 2009-05-01 | $37.26 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +219.0% | +158.7pp | +122.6% | ✗ |
+| 2009-05-08 | $39.64 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +187.0% | +137.9pp | +111.5% | ✗ |
+| 2009-05-15 | $35.74 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +207.1% | +151.0pp | +137.0% | ✗ |
+| 2009-05-22 | $34.31 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +214.1% | +159.0pp | +149.4% | ✗ |
+| 2009-05-29 | $35.46 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +204.7% | +155.6pp | +143.7% | ✗ |
+| 2009-06-05 | $38.47 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +171.7% | +129.1pp | +126.4% | ✗ |
+| 2009-06-12 | $37.73 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +165.7% | +126.8pp | +133.0% | ✗ |
+| 2009-06-19 | $33.65 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +195.4% | +152.4pp | +163.1% | ✗ |
+| 2009-06-26 | $34.56 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +199.3% | +156.3pp | +158.3% | ✗ |
+| 2009-07-02 | $31.74 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.27 | 16.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +253.1% | +198.9pp | +183.9% | ✗ |
+| 2009-07-10 | $30.53 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.23 | 7.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +272.9% | +214.9pp | +197.7% | ✗ |
+| 2009-07-17 | $33.99 | Caterpillar 8-K: first-quarter 2009 results release | 1.15 | -2.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +230.6% | +185.9pp | +169.8% | ✗ |
+| 2009-07-22 | $38.66 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.07 | 4.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +181.0% | +135.4pp | +139.2% | ✗ |
+| 2009-07-31 | $44.06 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.34 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +132.1% | +96.6pp | +111.5% | ✗ |
+| 2009-08-07 | $47.78 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.7% | +74.6pp | +96.0% | ✗ |
+| 2009-08-14 | $46.00 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.8% | +81.1pp | +104.3% | ✗ |
+| 2009-08-21 | $47.30 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.4% | +62.6pp | +99.4% | ✗ |
+| 2009-08-28 | $46.71 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.8% | +71.3pp | +102.7% | ✗ |
+| 2009-09-04 | $46.11 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.7% | +72.8pp | +106.3% | ✗ |
+| 2009-09-11 | $48.53 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.2% | +65.2pp | +96.5% | ✗ |
+| 2009-09-18 | $53.42 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.3% | +49.1pp | +79.0% | ✗ |
+| 2009-09-25 | $51.20 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.1% | +37.9pp | +86.9% | ✗ |
+| 2009-10-02 | $48.83 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.3% | +43.4pp | +95.8% | ✗ |
+| 2009-10-09 | $53.64 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +35.1pp | +78.1% | ✗ |
+| 2009-10-16 | $54.57 | Caterpillar 8-K: second-quarter 2009 results release | 1.15 | -2.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.5% | +43.6pp | +75.1% | ✗ |
+| 2009-10-21 | $58.40 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.4% | +37.5pp | +63.6% | ✗ |
+| 2009-10-30 | $55.06 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +82.3% | +53.6pp | +74.2% | ✗ |
+| 2009-11-06 | $57.60 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.3% | +50.8pp | +67.0% | ✗ |
+| 2009-11-13 | $58.78 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.5% | +49.7pp | +64.1% | ✗ |
+| 2009-11-20 | $57.95 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.2% | +52.4pp | +66.9% | ✗ |
+| 2009-11-27 | $57.45 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.49 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.1% | +46.6pp | +68.5% | ✗ |
+| 2009-12-04 | $58.30 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.2% | +54.5pp | +66.3% | ✗ |
+| 2009-12-11 | $57.51 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.0% | +55.4pp | +68.7% | ✗ |
+| 2009-12-18 | $57.19 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +43.9pp | +69.6% | ✗ |
+| 2009-12-24 | $58.33 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.2% | +47.5pp | +66.1% | ✗ |
+| 2009-12-31 | $56.99 | Caterpillar 8-K: third-quarter 2009 results release | 1.15 | -2.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.2% | +48.2pp | +69.9% | ✗ |
