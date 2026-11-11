@@ -39,6 +39,10 @@ the company's profit per share excluding restructuring costs (from 2016 also mar
 2016-05-16 recasting 2011-2015 for mark-to-market pension accounting is a vintage of its own; a release that republishes an earlier
 year's company figure restates it until the next 10-K ('restates', the PFE encoding, EPS only); ENERGY_TRANSITION, live from
 2015-12-12, is scoped to reserves and refining, so it stays off the watch list and the texts say so ('why_theme_tail', the BKR reading).
+From 2018 (retro/README.md, "CAT 2018-2022"): the releases guide profit per share only (the company's adjusted range where both are
+given), so BASE takes the latest quarter's sales growth; a guide may withdraw named fields of its year ('withdrawn': the 8-K of
+2020-03-26), which voids them in every earlier guide for that year; no outlook follows in 2020-2022, so the last full year's EPS
+stands; EV, live from 2020-01-01, is read as out of scope as well (text only).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open, except Q1 2008's and Q4 2010's
@@ -52,6 +56,7 @@ Usage
   python3 retro/build_cat.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_cat.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_cat.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_cat.py --weekly 2018-01-01 2022-12-31
   python3 retro/build_cat.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CAT/<AS_OF>
 """
@@ -239,6 +244,12 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year, each field from the latest guide that states it (in either form, the WMT rule) ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
+    # a withdrawal voids the fields it names in every earlier guide for its year (the WMT, LOW and SHW rule: the 8-K of 2020-03-26;
+    # retro/README.md, "CAT 2018-2022"), so the last full year's EPS stands and BASE takes the latest quarter's sales growth
+    wd = [g for g in guides if g.get("withdrawn")]
+    for w in wd:
+        guides = [({k: v for k, v in g.items() if k not in w["withdrawn"]} if g["published"] < w["published"] else g) for g in guides]
+    w = wd[-1] if wd else None
     stated = lambda *ks: next((g for g in reversed(guides) if any(k in g for k in ks)), None)
     ge = stated("eps_guide", "eps_growth")
     gr = stated("rev_guide_usd_b", "rev_guide_pct")
@@ -259,7 +270,9 @@ def build(as_of, facts, raw, spx, engine, out):
     else:                                              # no numeric EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[last_fy]
         eps_fig = None
-        eps_label = f"{fy_e}: no numeric profit per share guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
+        eps_label = (f"{fy_e}: the {w['doc']} withdrew the outlook ('{w['withdrawn_quote']}'), FY{last_fy % 100:02d}'s "
+                     f"${money(eps_now)} stands" if w else
+                     f"{fy_e}: no numeric profit per share guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands")
     if gr and "rev_guide_usd_b" in gr:                 # a dollar level or range, read against the last full year (the PFE rule)
         fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
         rev_fig = usd_rng(*gr["rev_guide_usd_b"])
@@ -287,6 +300,7 @@ def build(as_of, facts, raw, spx, engine, out):
                ([f"'{grw['rev_words']}' (words or a one-sided bound: no field)"] if grw else []) + \
                ([f"profit per share {eps_fig}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else
                 ["no profit per share guide in numbers"]) + \
+               ([f"withdrawn by the {w['doc']}: '{w['withdrawn_quote']}'"] if w else []) + \
                [g["note"] for g in guides[-1:] if g.get("note")]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(x['doc'] for x in guides))}): " + "; ".join(bits)
     else:
@@ -349,11 +363,25 @@ def build(as_of, facts, raw, spx, engine, out):
         trigger = "No live disruption theme covers construction and mining equipment, engines and turbines"
         theme_summary = (f"ENERGY_TRANSITION is live from {et['live_from']} but scoped to oil, gas and coal reserves and refining; no theme "
                          "in scope has dated evidence")
+    # EV is live from 2020-01-01 (an approximate date) and scoped to battery-electric vehicles displacing ICE powertrains, auto parts
+    # suppliers and fuel retail; Caterpillar's machines, off-highway engines and turbines are not road vehicles and its 10-Ks name no
+    # electrification risk, so it is read as out of scope too (retro/README.md, "CAT 2018-2022"; text only, and every earlier date
+    # precedes its live date)
+    ev = retro_tool.load_taxonomy()["themes"]["EV"]
+    ev_live = ev["live_from"] <= as_of
+    if ev_live:
+        theme_summary = (f"ENERGY_TRANSITION (live from {et['live_from']}) and EV (live from {ev['live_from']}) are scoped to oil, gas "
+                         "and coal reserves and refining and to battery-electric vehicles; no theme in scope has dated evidence")
     if h.get("why_theme_tail"):
-        why += (f"; ENERGY_TRANSITION is live from {et['live_from']} but scoped to oil, gas and coal reserves and refining, which {maker} "
+        why += (f"; ENERGY_TRANSITION (live from {et['live_from']}) is scoped to oil, gas and coal reserves and refining, which {maker} "
+                f"does not hold, and EV (live from {ev['live_from']}) to battery-electric vehicles displacing ICE powertrains, auto parts "
+                f"suppliers and fuel retail, which its machines, off-highway engines and turbines are not, so {h['why_theme_tail']} "
+                "stays here" if ev_live else
+                f"; ENERGY_TRANSITION is live from {et['live_from']} but scoped to oil, gas and coal reserves and refining, which {maker} "
                 f"does not hold, so {h['why_theme_tail']} stays here" if et_live else
                 f"; no disruption theme is live for {maker}, so {h['why_theme_tail']} stays here")
     cat3 = (f"(3) {fy_now} profit per share guide {eps_fig} ({ge['doc']}): the company's own read of the year" if ge else
+            f"(3) A {fy_now} profit per share guide in numbers — withdrawn by the {w['doc']}" if w else
             f"(3) A {fy_now} profit per share guide in numbers — none yet")
     cat4 = (f"(4) {fy_now} sales and revenues guide {rev_fig} ({gr['doc']}): volume, price and currency in one number" if gr else
             f"(4) A {fy_now} sales and revenues guide in numbers — none yet")

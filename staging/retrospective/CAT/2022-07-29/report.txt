@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  CAT  ·  Caterpillar Inc.  ·  $198.25  ·  RETROSPECTIVE as of 2022-07-29
+  Signal: ✕ AVOID   Ratio B: 1.80x   Adj gap: +0.08  [FAIRLY VALUED]
+  Point-in-time: 6 sources, latest published 2022-07-29; latest print Q1 2022 (Apr 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E sales and revenues, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Line of business             FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Construction Industries   $    25.0  $  25.0  $  23.6      +0.0      -1.4
+    +30.3% external sales and revenues in FY21
+  Resource Industries       $    10.8  $  10.8  $  10.2      +0.0      -0.6
+    +27.6% external sales and revenues in FY21
+  Energy & Transportation   $    19.0  $  19.0  $  17.9      +0.0      -1.1
+    +13.7% external sales and revenues in FY21
+  Financial Products Segme  $     3.5  $   3.5  $   3.3      +0.0      -0.2
+    +1.0% external sales and revenues in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    58.3  $  58.3  $  55.0      +0.0      -3.3
+  FY2022E = FY21 $50.97B × (1 + 14.3%: no FY22 sales and revenues guide in numbers, Q1 2022 growth, applied to the year); split pro rata to FY21 external sales of the four reportable segments (FY2021 10-K; the MD&A's sales by geographic region, external column; All Other and corporate items left out)
+  Q1 2022 (Apr 28): sales and revenues $13.59B +14.3%; Machinery +17.3%; Engines +10.2%;
+  operating margin 13.65% (-161.0bp); profit per share $2.86 vs $2.77 (+3.2%)
+  Machinery (Construction Industries $6,086M and Resource Industries $2,759M against $5,441M and $2,097M a year earlier, +17.3%), Engines (Energy & Transportation $4,032M against $3,658M, +10.2%), as the release's sales and revenues by segment show them; the release: 'Adjusted profit per share in the first quarter of 2022 was $2.88, compared with first-quarter 2021 adjusted profit per share of $2.87.'
+  FY22: no guide in numbers yet
+
+  FY2022E EPS check:  $58.3B × 16.1% pre-tax × (1−21.2%) ÷ 0.538B  =  $13.74  (FY2022E: no numeric profit per share guide yet, FY21's $10.81 stands)
+  FY2024E BEAR check: $58.3B × 16.1% ÷ 0.514B  =  $14.37  (scenario $3.58)
+  FY2024E BULL check: $55.0B × 16.5% ÷ 0.514B  =  $13.90  (scenario $14.68)
+  Every 1pp of pre-tax margin ≈ $0.85 EPS ≈ $13/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Machinery sales growth             -33.0%  ≥-13.0%    ≥8.0%   ≥38.0%    +17.3%  ▲ BULL  ███░
+  Engines sales growth               -19.0%   ≥-3.0%   ≥13.0%   ≥37.0%    +10.2%  ◦ BASE  ██░░
+  Sales and revenues growth          -24.0%   ≥-6.0%   ≥12.0%   ≥33.0%    +14.3%  ▲ BULL  ███░
+  Profit per share growth            -92.0%  ≥-36.0%   ≥20.0%   ≥85.0%     +3.2%  ◦ BASE  ██░░
+  Operating margin change           -710.0bp  ≥-320.0bp  ≥80.0bp  ≥160.0bp  -161.0bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   2.32 / 4.00  (back-solved from $198 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj -0.10  →  Adj composite 2.40  →  Gap +0.08  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY21 sales and revenues +22.1%, Machinery +29.5%, Engines +13.7%; Q1 operating margin 13.65% (-161.0bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.3x FY22E vs a 15.1x 10-yr median (68th percentile of its own range)  (-0.30 × 25%  =  -0.075)
+    +  Growth vs own history: no FY22 sales and revenues guide in numbers, Q1 2022 growth +14.3% vs a -1.7% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY21 year-end cash and short-term investments $9.254B, FY21 operating cash flow $7.198B, dividend $4.80 a year, dividends paid $2,332M and common shares repurchased $2,668M in 2021 (FY2021 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Machinery sales growth              +17.3%    -33.0%  -50.3%  Construction and mining fleets stop g…
+  Engines sales growth                +10.2%    -19.0%  -29.2%  Truck, power and oil and gas engines …
+  Sales and revenues growth           +14.3%    -24.0%  -38.3%  Volume and price fall together
+  Profit per share growth              +3.2%    -92.0%  -95.2%  Costs stay up while volume falls
+  Operating margin change           -161.0bp  -710.0bp  -549.0bp  Factories deleverage on lower volume
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers const…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$102  (model)  /  $42 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: Machinery sales growth went from +27.5% (Q4 2021) to +17.3% (Q1 2022);
+  the bear case needs a fall in machinery demand that Engines (+10.2% now) and
+  price realization no longer offset. The 10-K ties demand to the energy and mining industries and to infrastructure,
+  housing and commercial construction; dealer inventory changes move company sales either way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $10.81  (FY2022E: no numeric profit per share guide yet, FY21's $10.81 stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2012 10.1x, 2013 13.5x, 2014 12.1x, 2015 11.9x, 2016 16.9x, 2017 13.3x, 2018 10.0x, 2019 9.9x, 2020 14.0x, 2021 16.7x, 2022 15.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $141/share
+  Current $198 vs Updated EPP $141:  +41%  ⚠ far above floor — large drawdown room
+  Bear $42 vs Updated EPP $141:  -70%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Machinery sales growth                     -13.0      -30.3   BASE floor (vs +17 now)
+  Engines sales growth                        -3.0      -13.2   BASE floor (vs +10 now)
+  Sales and revenues growth                   -6.0      -20.3   BASE floor (vs +14 now)
+  Profit per share growth                    -36.0      -39.2   BASE floor (vs +3 now)
+  Operating margin change                   -320.0     -159.0   BASE floor (vs -161 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $10.81 × (1+14.5%)² = $14.18
+  At 15x P/E (conservative):  $213/share
+  + Cumul. dividends (2yr):  +$9.89/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $213  (▲14 from $198)
+  Conservative total return:  +12% over 2yr  = +6%/yr
+
+  14.5% EPS growth is what is left once the premium multiple (18.3x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2024E EPS of $12.56,
+  i.e. 7.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $167.08  –  $237.90  (at 44th pct of range)
+  Annual dividend:      $4.80/share  (yield 2.4%)
+  Realized vol (1yr):   31% annualized
+  Beta vs broad market: 0.75
+  1-sigma range (1yr):  $137  –  $259  ($198 ± 31%)
+  2-sigma range (1yr):  $76  –  $320
+  ────────────────────────────────────────────────────────────
+  Bear $42 requires:  ~2.6σ price move  (unusual — requires fundamental break)
+  The largest maker of construction and mining equipment with a 0.8 beta: the stock is +17% off its July
+  low while Machinery sales growth went from +27.5% (Q4 2021) to +17.3% (Q1 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.58  11.6x  $     42    12.0%     12.6%    -0.6pp  EPS -42.5%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE       14.68  15.1x  $    222    42.0%     43.9%    -1.9pp  EPS +16.5%/yr (Q1 sales and revenues + margin + buyback); P/E at its 10-yr median
+  BULL       14.68  19.4x  $    285    38.7%     36.6%    +2.1pp  EPS +16.5%/yr (FY12-FY21 CAGR); P/E holds its 75th pct
+  XBULL      35.46  22.3x  $    791     7.3%      6.9%    +0.4pp  EPS +81.1%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct
+
+  Proxy EV (2yr): $266  /  Market EV: $262  /  Current: $198
+  Conservative EV (2yr, ④): $213 + $9.89 divs = $223 total value
+  Downside (→ Bear $42): 78.8%   Upside (→ Bull $285): 43.8%   Ratio B 1.80x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $198 the market needs $262 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.32 against a model
+  read of 2.40: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.80x     +41%    +0.08  FAIRLY VALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.17x     +41%    +0.49  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     6.71x     +41%    -0.32  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.64x     +41%    +0.12  FAIRLY VALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          2.04x     +41%    +0.02  FAIRLY VALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.80x     +41%    +0.38  MODESTLY UNDERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 1.80x     +15%    +0.18  FAIRLY VALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    1.80x     +41%    +0.23  MODESTLY UNDERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2022 print (late July) — the next read on Machinery sales (+17.3% now) and the guide
+  (2) Operating margin — -161.0bp in Q1 2022: price realization against material and factory costs, what must hold if volume does not
+  (3) A FY22 profit per share guide in numbers — none yet
+  (4) A FY22 sales and revenues guide in numbers — none yet
+  (5) Capital return at 18x — In the quarter, the company repurchased $0.8 billion of Caterpillar common stock and paid dividends of $0.6 billion.: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $141  |  ADD below ~$189  |  TRIM above $285
+════════════════════════════════════════════════════════════════════════
+
