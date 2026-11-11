@@ -1,12 +1,13 @@
 # CMCSA retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CMCSA weekly dates: 314 from 2008-01-04 to 2013-12-31, all Comcast Corporation (Nasdaq: CMCSA,
+Patterns seen in `outcome.json` for the CMCSA weekly dates: 523 from 2008-01-04 to 2017-12-29, all Comcast Corporation (Nasdaq: CMCSA,
 the Class A shares). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored
-only after its point-in-time build was committed and pushed (2008-2009: 573d484; 2010-2013: 99b3102). Outcomes were computed on
-2026-11-11 from the closes posted to 2026-11-10; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30). Total
-returns include the quarterly dividends from April 2008 ($0.0625, then $0.0675, $0.0945, $0.1125, $0.1625 and $0.195); the prices are on
-the as-traded basis of the models (Yahoo's series times its 2017 split and its 2026 factor, both after every horizon). Medians of an even
-count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. "Call held" is
+only after its point-in-time build was committed and pushed (2008-2009: 573d484; 2010-2013: 99b3102; 2014-2017: 33c01d6). Outcomes were
+computed on 2026-11-11 from the closes posted to 2026-11-10; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends
+2020-12-29). Total returns include the quarterly dividends from April 2008 ($0.0625, then $0.0675, $0.0945, $0.1125, $0.1625, $0.195,
+$0.225, $0.25, $0.275 and $0.315 before the 2017 split, then the later rates); every price and dividend is on the as-traded basis of its
+own model's date (Yahoo's series times its factors after that date: the 2017 split for dates before 2017-02-21, the 2026 factor for
+all). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. "Call held" is
 `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it, and RICH should miss the
 hurdle and lag it.
 
@@ -164,6 +165,106 @@ hurdle and lag it.
   +0.85; the proxy composite at -0.40, the wrong sign.
 - **The two-year price landed nearest BASE on all 53 dates,** at 1.06-1.50 times the BASE price and 0.45-0.55 times BULL.
 
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 38 | +25.0% | +15.2% to +32.3% | 2 | 38 | +14.0% | 38 |
+| class FAIR, legacy tier BUY | 10 | +22.4% | +8.6% to +26.3% | 0 | 9 | +9.4% | 9 |
+| class RICH, legacy tier BUY | 4 | +9.2% | +4.2% to +13.7% | 0 | 0 | +12.4% | 4 |
+| FY2013E: FY12's $1.93 stands (2014-01-03 to 2014-01-24) | 4 | +9.2% | +4.2% to +13.7% | 0 | 0 | +12.4% | 4 |
+| FY2014E: FY13's $2.47 stands (2014-01-29 to 2014-12-26) | 48 | +24.2% | +8.6% to +32.3% | 2 | 47 | +13.3% | 47 |
+| latest print Q3 2013 (2014-01-03 to 2014-01-24) | 4 | +9.2% | +4.2% to +13.7% | 0 | 0 | +12.4% | 4 |
+| latest print Q4 2013 (2014-01-29 to 2014-04-17) | 12 | +20.7% | +8.6% to +32.2% | 1 | 11 | +16.2% | 12 |
+| latest print Q1 2014 (2014-04-23 to 2014-07-18) | 13 | +23.1% | +19.0% to +27.4% | 0 | 13 | +13.7% | 13 |
+| latest print Q2 2014 (2014-07-23 to 2014-10-17) | 13 | +27.0% | +18.7% to +32.3% | 1 | 13 | +11.8% | 13 |
+| latest print Q3 2014 (2014-10-24 to 2014-12-26) | 10 | +25.5% | +15.2% to +29.9% | 0 | 10 | +12.3% | 9 |
+
+- **The classes ordered the outcomes and held on 51 of 52.** CHEAP ($47.96-55.35) returned +15.2% to +32.3% over two years and beat SPY
+  (+6.2% to +17.9%) on all 38, by 5.9-19.2pp, though only 2 cleared the hurdle; FAIR ($53.06-58.39) +8.6% to +26.3%, within 15pp of SPY on
+  9 of 10 (2014-12-05 beat it by 15.2pp); the four January RICH dates ($51.07-53.54, on FY12's stand-in EPS) +4.2% to +13.7%, lagging SPY
+  by 1.8-2.9pp. Over three years (to 2017) every CHEAP date beat SPY and 21 of 38 cleared the three-year hurdle.
+- **A modest year for an absolute call:** CHEAP at the 52nd-65th percentile of its own range, 29-49% above the floor, was a relative call
+  that held; the two-year price landed nearest BASE on all 52 dates (0.95-1.34 times the BASE price, 0.37-0.55 times BULL).
+- **Within the year the entry price ranks the m12-24 return at Spearman -0.85** and the EPP gap at -0.86, but barely the two-year return
+  (-0.09); the adjusted gap ranks it at +0.48 (the right sign), the proxy composite at +0.22.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 35 | +37.9% | +23.2% to +51.2% | 25 | 31 | +22.2% | 32 |
+| class FAIR, legacy tier BUY | 18 | +29.6% | +17.6% to +45.7% | 4 | 13 | +14.8% | 13 |
+| FY2014E: FY13's $2.47 stands (2015-01-02 to 2015-02-20) | 8 | +32.3% | +24.5% to +45.7% | 4 | 8 | +12.9% | 3 |
+| FY2015E: FY14's $2.93 stands (2015-02-25 to 2015-12-31) | 45 | +33.1% | +17.6% to +51.2% | 25 | 36 | +21.2% | 42 |
+| latest print Q3 2014 (2015-01-02 to 2015-02-20) | 8 | +32.3% | +24.5% to +45.7% | 4 | 8 | +12.9% | 3 |
+| latest print Q4 2014 (2015-02-25 to 2015-05-01) | 10 | +31.1% | +27.5% to +37.9% | 3 | 10 | +14.3% | 10 |
+| latest print Q1 2015 (2015-05-05 to 2015-07-17) | 11 | +40.2% | +25.5% to +46.1% | 8 | 11 | +18.7% | 11 |
+| latest print Q2 2015 (2015-07-24 to 2015-10-23) | 14 | +38.0% | +21.6% to +51.2% | 9 | 10 | +27.1% | 12 |
+| latest print Q3 2015 (2015-10-28 to 2015-12-31) | 10 | +36.5% | +17.6% to +46.3% | 5 | 5 | +25.8% | 9 |
+
+- **CHEAP held on 32 of 35:** +23.2% to +51.2% over two years, 25 cleared the hurdle; the three misses (2015-10-09, 2015-10-16,
+  2015-11-13) gained 23-29% but lagged SPY's 2016-2017 rally by 1.9-7.0pp. Over three years (to 2018) the CHEAP dates returned only
+  +11.9% to +38.1% and 2 beat SPY.
+- **FAIR missed on 5 of 18, all by doing too well:** the January-February dates ($53.15-59.62, on FY13's $2.47 before the Q4 2014 print)
+  returned +24.5% to +45.7% and beat SPY by 11.4-27.2pp, five of them by more than the 15pp the FAIR band allows. The ten FAIR dates of
+  July and October-November ($61.59-64.27) landed within the band (-10.2 to +8.7pp).
+- **The adjusted gap ranks the outcome:** Spearman +0.72 for the two-year return and +0.81 for m12-24; the entry price -0.67 and -0.30;
+  the proxy composite +0.15 and -0.14. Every two-year price landed nearest BASE.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 24 | +23.9% | +7.2% to +61.9% | 8 | 4 | +29.5% | 8 |
+| class FAIR, legacy tier ACCUMULATE | 1 | +19.4% | +19.4% to +19.4% | 0 | 0 | +8.3% | 1 |
+| class FAIR, legacy tier BUY | 3 | +4.9% | +2.2% to +6.1% | 0 | 0 | +19.4% | 0 |
+| class RICH, legacy tier ACCUMULATE | 19 | +10.3% | +3.0% to +17.3% | 0 | 0 | +9.4% | 19 |
+| class RICH, legacy tier BUY | 1 | +16.5% | +16.5% to +16.5% | 0 | 0 | +12.2% | 1 |
+| class RICH, legacy tier WATCHLIST | 4 | +11.6% | -0.7% to +12.0% | 0 | 0 | +3.8% | 4 |
+| FY2015E: FY14's $2.93 stands (2016-01-08 to 2016-01-29) | 4 | +59.3% | +52.4% to +61.9% | 4 | 4 | +40.8% | 4 |
+| FY2016E: FY15's $3.25 stands (2016-02-04 to 2016-12-30) | 48 | +12.6% | -0.7% to +45.3% | 4 | 0 | +13.5% | 29 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-29) | 4 | +59.3% | +52.4% to +61.9% | 4 | 4 | +40.8% | 4 |
+| latest print Q4 2015 (2016-02-04 to 2016-04-22) | 12 | +26.1% | +10.6% to +45.3% | 4 | 0 | +30.4% | 4 |
+| latest print Q1 2016 (2016-04-28 to 2016-07-22) | 13 | +7.2% | +2.2% to +13.7% | 0 | 0 | +19.7% | 4 |
+| latest print Q2 2016 (2016-07-28 to 2016-10-21) | 13 | +11.3% | +7.2% to +16.7% | 0 | 0 | +9.5% | 13 |
+| latest print Q3 2016 (2016-10-27 to 2016-12-30) | 10 | +16.9% | -0.7% to +28.6% | 0 | 0 | +4.8% | 8 |
+
+- **The worst year for the calls: 33 of 52 held.** The eight CHEAP dates of January-February ($53.89-58.21, at the early-2016 low)
+  returned +39.9% to +61.9% and cleared the hurdle. The 14 CHEAP dates of March-June ($59.16-62.37) and the 3 FAIR dates of May-June
+  ($62.80-63.56) returned +2.2% to +29.5% over two years against SPY's +31.6% to +42.1%: the two-year endpoint fell in the first half of
+  2018 ($66-73 on the pre-split basis), after the high of 2018-01-24 ($85.98), so none held, though the m12-24 average price was 19-32% above entry. The two CHEAP
+  dates after the Rio-Olympics print (2016-10-27 and 2016-11-04, BASE at +16.8%/yr on the Olympics quarter) also lagged SPY by 6.5-10.1pp:
+  the sensitivity without the Olympics quarter's growth files 2016-10-27 FAIR.
+- **RICH held on all 24 from July 2016** ($64.06-70.65): -0.7% to +17.3% over two years against SPY's +11.0% to +40.3%, lagging by
+  9.1-30.1pp; the m12-24 average price was only 1.6-13.5% above entry. The class's turn to RICH came with 2005 leaving the history
+  (BULL from +29% to +21%/yr), a mechanical change that the outcome agreed with.
+- **Entry price ranks the m12-24 return at Spearman -0.98,** Ratio B at -0.98, the EPP gap at -0.95 and the adjusted gap at +0.80, all the
+  right signs; the proxy composite at -0.26.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 24 | +13.6% | +1.1% to +20.3% | 0 | 0 | -2.9% | 24 |
+| class RICH, legacy tier WATCHLIST | 28 | +15.0% | -2.1% to +31.0% | 0 | 11 | -2.2% | 17 |
+| FY2016E: FY15's $3.25 stands (2017-01-06 to 2017-01-20) | 3 | +2.2% | +1.8% to +5.9% | 0 | 0 | -2.2% | 3 |
+| FY2017E: FY16's $3.48 stands (2017-01-27 to 2017-02-17) | 4 | +3.8% | -2.1% to +4.0% | 0 | 0 | -6.4% | 4 |
+| FY2017E: FY16's $1.74 stands (2017-02-24 to 2017-12-29) | 45 | +14.7% | +1.1% to +31.0% | 0 | 11 | -2.5% | 34 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +2.2% | +1.8% to +5.9% | 0 | 0 | -2.2% | 3 |
+| latest print Q4 2016 (2017-01-27 to 2017-04-21) | 13 | +8.8% | -2.1% to +15.1% | 0 | 0 | -5.9% | 13 |
+| latest print Q1 2017 (2017-04-28 to 2017-07-21) | 13 | +13.9% | +1.1% to +17.7% | 0 | 0 | -6.2% | 13 |
+| latest print Q2 2017 (2017-07-28 to 2017-10-20) | 13 | +20.3% | +8.1% to +31.0% | 0 | 6 | +3.6% | 7 |
+| latest print Q3 2017 (2017-10-27 to 2017-12-29) | 10 | +26.8% | +11.9% to +29.8% | 0 | 5 | +11.3% | 5 |
+
+- **RICH held on 41 of 52.** The 34 dates of January-August ($70.27-75.95 before the split, $37.14-41.99 after) returned -2.1% to +17.7% and
+  lagged SPY by 8.4-22.5pp; their m12-24 average price was 11.5% under to 1.6% over entry, through the 2018 fall (a 28.8% drawdown within
+  two years on every 2017 date). The 11 misses (2017-09-08 to 2017-11-24, $35.68-38.21) gained 21.7-31.0% to the 2019 recovery and beat
+  SPY by 0.1-10.5pp, while staying under the hurdle: the RICH calls were right about the hurdle on every date and wrong about SPY on 11.
+- **The BULL case was low enough to be reached:** the two-year price landed nearest BULL on 29 dates (0.75-1.00 times it), the first
+  CMCSA year where it did, after 2005 left the history.
+- Within the year the entry price ranks the two-year return at Spearman -0.73 and the proxy composite ranks the m12-24 return at +0.76.
+
 ## The encoding calls, seen afterwards
 
 In 2008-2009 no judgement call recorded in retro/README.md ("CMCSA") moves a class or a tier: GAAP or company-adjusted EPS, the 2004-2005 adjusted
@@ -180,3 +281,15 @@ releases' pro forma growth moves 2 (both would still have held as FAIR), GAAP EP
 from 2006 moves 71 (all held as built, 14 would as moved). Across all 314 dates the call held on 295 (35, 52, 52, 52, 52 and 52), and
 18 of the 19 misses are 2008 entries: the depressed-earnings window that set 2008's floor too high is the one that kept 2010-2013 CHEAP through the
 re-rating. Both are hypotheses to test across tickers, never a reason to re-encode CMCSA.
+
+In 2014-2017 the calls held on 170 of 209 dates (51, 45, 33 and 41), and the classes ordered the outcomes: CHEAP held on 78 of 97 (median
+two-year return +28.6%, +10.5pp over SPY), FAIR on 23 of 32 (+24.5%, +7.6pp) and RICH on 69 of 80 (+11.8%, -12.6pp). The judgement calls,
+scored afterwards: GAAP EPS moves 33 classes, of which 19 held as built and 25 would have held as moved (176 of 209 in all, against 170);
+the history from 2004 in every vintage moves 26 (15 held as built, 17 as moved); the growth excluding the Olympics and the Super Bowl
+moves 5 (1 and 2); every signal at its BEAR value moves 124 (96 held as built, 42 as moved) and at its XBULL value 73 (60 and 30). No
+call's moved set would have done much better, and the signal extremes would have done far worse. The STREAMING watch list (126 dates from
+2015-08-07) changed no class; the calls on those dates held on 93. The mechanical turn of 2016, when 2005's $0.25 left the history and
+BULL fell from +29% to +21%/yr, is what took the class from CHEAP to RICH; the RICH calls held on 69 of 80, the misses being late-2017
+entries that beat SPY's return to the 2019 recovery. Across all 523 dates the call held on 465. Hypotheses only, never a reason to
+re-encode CMCSA: a history whose first year is a depressed base keeps BULL high and the class CHEAP until that year leaves the window,
+and the ten-year cut then moves the class by itself, whatever the business did that quarter.
