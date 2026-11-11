@@ -1,0 +1,1981 @@
+{
+ "_doc": "Point-in-time fact sheet for CAT retrospectives (retro/build_cat.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days, except Q1 2008's (during the session). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it, in either form) and the latest declared dividend (else the vintage's). Caterpillar's fiscal year is the calendar year; the recast of the FY2006-FY2008 statements (8-K of 2009-05-14) is a vintage of its own. EPS is profit per share - diluted, replaced by the company's figure where a filing publishes one excluding only one-offs (2001). Per-share figures published before the 2-for-1 split of 2005-07-14 carry their publication dates ('eps_published', 'shares_published') so the split restates them. Guides: sales and revenues as a dollar level or range ('rev_guide_usd_b', read against the last full year) or as growth ('rev_guide_pct', on the last full year unless 'rev_growth_base_b' names another base); profit per share as a dollar level or range ('eps_guide'; the 2009 guides excluding redundancy costs, with the inclusive figure in 'eps_guide_note') or as growth ('eps_growth', on the last full year unless 'eps_growth_base' names another base); words and one-sided bounds in 'rev_words' give no field. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
+ "ticker": "CAT",
+ "sources": {
+  "CT1": {
+   "published": "1999-03-31",
+   "filed": "1999-03-31 (EDGAR gives the filing date only)",
+   "title": "Caterpillar FY1998 10-K405 (plain text)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/0000950131-99-001977.txt",
+   "supports": "Consolidated Results of Operations 1996-1998 (sales and revenues $16,522M, $18,925M, $20,977M; operating profit $1,992M, $2,430M, $2,253M; profit per share assuming dilution $3.50, $4.37, $4.11); external sales of Machinery $11,862M, $13,350M, $13,448M and Engines $3,952M, $4,760M, $6,524M (Enterprise-Wide Disclosures)"
+  },
+  "CT2": {
+   "published": "2000-03-30",
+   "filed": "2000-03-30 (EDGAR gives the filing date only)",
+   "title": "Caterpillar FY1999 10-K405, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000102140800001352/0001021408-00-001352-d8.html",
+   "supports": "Consolidated Results of Operations 1997-1999 (sales and revenues $18,925M, $20,977M, $19,702M; operating profit $2,430M, $2,253M, $1,494M; profit per share assuming dilution $4.37, $4.11, $2.63; diluted shares 380,540,960 in 1997); external sales of Machinery $13,350M, $13,448M, $11,705M and Engines $4,760M, $6,524M, $6,854M"
+  },
+  "CT3": {
+   "published": "2001-03-15",
+   "filed": "2001-03-15 (EDGAR gives the filing date only)",
+   "title": "Caterpillar FY2000 10-K, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823001500017/exthirteen.htm",
+   "supports": "Results of Operations 1998-2000 (sales and revenues $20,977M, $19,702M, $20,175M; operating profit $2,253M, $1,494M, $1,737M; profit per share assuming dilution $4.11, $2.63, $3.02; diluted shares 368,130,362 in 1998); external sales of Machinery $13,448M, $11,705M, $11,857M and Engines $6,524M, $6,854M, $7,056M"
+  },
+  "CT4": {
+   "published": "2002-01-23",
+   "filed": "2002-01-23 (EDGAR gives the filing date only)",
+   "title": "Caterpillar 8-K: fourth-quarter and full-year 2001 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823002000003/form8k012302-4q01results.htm",
+   "supports": "2001 profit per share excluding the nonrecurring charges: 'Excluding the nonrecurring charges of 28 cents per share, profit was $902 million, or $2.60 per share' (GAAP $2.32)"
+  },
+  "CT5": {
+   "published": "2002-03-22",
+   "filed": "2002-03-22 (EDGAR gives the filing date only)",
+   "title": "Caterpillar FY2001 10-K405, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823002000014/exhibit_13.htm",
+   "supports": "Five-year Financial Summary 1997-2001 (sales and revenues $18,925M in 1997; profit per share diluted $4.37 in 1997); Results of Operations 1999-2001 (sales and revenues $19,702M, $20,175M; operating profit $1,494M, $1,737M; profit per share diluted $2.63, $3.02; diluted shares 359.4M in 1999); external sales of Machinery $11,705M, $11,857M and Engines $6,854M, $7,056M"
+  },
+  "CT6": {
+   "published": "2003-04-01",
+   "filed": "2003-03-31 17:10 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar FY2002 10-K, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823003000130/ex_13.htm",
+   "supports": "Five-year Financial Summary 1998-2002 (sales and revenues $20,977M and profit per share diluted $4.11 in 1998); Results of Operations 2000-2002 (sales and revenues $20,175M, $20,450M; operating profit $1,737M, $1,311M; profit per share diluted $3.02, $2.32; diluted shares 348.9M in 2000); external sales of Machinery $11,857M, $12,158M and Engines $7,056M, $6,869M"
+  },
+  "CT7": {
+   "published": "2004-03-10",
+   "filed": "2004-03-10 14:17 ET",
+   "title": "Caterpillar FY2003 10-K, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823004000161/ex_13.htm",
+   "supports": "Five-year Financial Summary 1999-2003 (sales and revenues $19,702M and profit per share diluted $2.63 in 1999); Results of Operations 2001-2003 (sales and revenues $20,450M, $20,152M; operating profit $1,311M, $1,324M; profit per share diluted $2.32, $2.30; diluted shares 347.1M in 2001); external sales of Machinery $12,158M, $11,975M and Engines $6,869M, $6,673M"
+  },
+  "CT8": {
+   "published": "2005-02-25",
+   "filed": "2005-02-24 16:42 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar FY2004 10-K, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000218/ex13.htm",
+   "supports": "Five-year Financial Summary 2000-2004 (sales and revenues $20,175M and profit per share diluted $3.02 in 2000); Results of Operations 2002-2004 (sales and revenues $20,152M, $22,763M; operating profit $1,324M, $1,688M; profit per share diluted $2.30, $3.13; diluted shares 346.9M in 2002); external sales of Machinery $11,975M, $13,678M and Engines $6,673M, $7,370M"
+  },
+  "CT9": {
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  "CT10": {
+   "published": "2006-02-23",
+   "filed": "2006-02-22 17:28 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar FY2005 10-K, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823006000139/ex13.htm",
+   "supports": "Five-year Financial Summary 2001-2005 (sales and revenues $20,510M and profit per share diluted $1.16 in 2001, after the split); Results of Operations 2003-2005 (sales and revenues $22,807M, $30,306M; operating profit $1,670M, $2,684M; profit per share diluted $1.56, $2.88; diluted shares 702.7M in 2003); external sales of Machinery $13,678M, $18,844M and Engines $7,370M, $9,492M"
+  },
+  "CT11": {
+   "published": "2006-12-13",
+   "filed": "2006-12-13 09:57 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Inc. Maintains Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823006000477/form8k_121306.htm",
+   "supports": "a quarterly cash dividend of $0.30 per share, payable February 20, 2007"
+  },
+  "CT12": {
+   "published": "2007-01-26",
+   "filed": "2007-01-26 08:23 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2006 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000021/exhibit_99-1.htm",
+   "supports": "2007 outlook: sales and revenues $41.5 to $43.6 billion, profit $5.20 to $5.70 per share"
+  },
+  "CT13": {
+   "published": "2007-02-23",
+   "filed": "2007-02-23 14:07 ET",
+   "title": "Caterpillar FY2006 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000053/ex_13.htm",
+   "supports": "Five-year Financial Summary 2002-2006 (sales and revenues $20,185M, $22,807M, $30,306M, $36,339M, $41,517M; profit per share diluted $1.15, $1.56, $2.88, $4.04, $5.17); Results of Operations 2004-2006 (operating profit $2,684M, $3,784M, $4,921M; profit before taxes $4,861M and provision for income taxes $1,405M in 2006; diluted shares 707.4M, 705.8M, 683.8M); external sales of Machinery $18,844M, $22,931M, $26,062M, Engines $9,492M, $11,075M, $12,807M and Financial Products $1,970M, $2,333M, $2,648M; cash and short-term investments $530M; operating cash flow $5,799M; treasury shares purchased $3,208M; Item 1 and Item 1A wording"
+  },
+  "CT14": {
+   "published": "2007-04-20",
+   "filed": "2007-04-20 08:42 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2007 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000277/exhibit_99-1.htm",
+   "supports": "2007 outlook raised: sales and revenues $42 to $44 billion, profit $5.30 to $5.80 per share"
+  },
+  "CT15": {
+   "published": "2007-06-13",
+   "filed": "2007-06-13 11:51 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Raises Dividend Rate 20 Percent'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000341/form8k_061307dividend.htm",
+   "supports": "a quarterly cash dividend of $0.36 per share, payable August 20, 2007"
+  },
+  "CT16": {
+   "published": "2007-07-20",
+   "filed": "2007-07-20 08:19 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2007 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000381/ex99-1.htm",
+   "supports": "second-quarter 2007 sales by geographic region and statement of results; 2007 outlook: sales and revenues of about $44 billion, profit $5.30 to $5.80 per share"
+  },
+  "CT17": {
+   "published": "2007-10-19",
+   "filed": "2007-10-19 09:23 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2007 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000480/ex99-1.htm",
+   "supports": "third-quarter 2007 sales by geographic region and statement of results; 2007 outlook: sales and revenues of about $44 billion, profit per share $5.20 to $5.60; preliminary 2008 outlook: sales and revenues up 5 to 10 percent, profit per share up 5 to 15 percent from the mid-point of the 2007 outlook range"
+  },
+  "CT18": {
+   "published": "2008-01-25",
+   "filed": "2008-01-25 08:32 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2007 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000025/ex_99-1.htm",
+   "supports": "fourth-quarter and full-year 2007 sales by geographic region and statement of results; 2008 outlook: sales and revenues up 5 to 10 percent, profit per share up 5 to 15 percent from 2007"
+  },
+  "CT19": {
+   "published": "2008-02-22",
+   "filed": "2008-02-22 13:39 ET",
+   "title": "Caterpillar FY2007 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000052/ex_13.htm",
+   "supports": "Five-year Financial Summary 2003-2007; Results of Operations 2005-2007 (operating profit $3,784M, $4,921M, $4,921M; profit before taxes $4,953M and provision for income taxes $1,485M in 2007; diluted shares 705.8M, 683.8M, 659.5M); external sales of Machinery $28,359M, Engines $13,603M and Financial Products $2,996M in 2007; cash and short-term investments $1,122M; operating cash flow $7,935M; treasury shares purchased $2,405M; Item 1 and Item 1A wording"
+  },
+  "CT20": {
+   "published": "2008-04-18",
+   "filed": "2008-04-18 10:53 ET (during the session)",
+   "title": "Caterpillar 8-K: first-quarter 2008 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000149/ex_99-1.htm",
+   "supports": "first-quarter 2008 sales by geographic region and statement of results; 2008 outlook unchanged: sales and revenues up 5 to 10 percent, profit per share up 5 to 15 percent from 2007"
+  },
+  "CT21": {
+   "published": "2008-06-11",
+   "filed": "2008-06-11 11:17 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Inc. Raises Dividend Rate 17 Percent' (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000222/ex_99-1.htm",
+   "supports": "a quarterly cash dividend of $0.42 per share, payable August 20, 2008"
+  },
+  "CT22": {
+   "published": "2008-07-22",
+   "filed": "2008-07-22 08:25 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2008 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000264/ex99-1.htm",
+   "supports": "second-quarter 2008 sales by geographic region and statement of results; 2008 outlook: sales and revenues of about $50 billion, profit of about $6.00 per share"
+  },
+  "CT23": {
+   "published": "2008-08-29",
+   "filed": "2008-08-28 17:17 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar 8-K, Item 7.01: the CEO's update of the 2008 sales and revenues guidance",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000302/form8k_082808.htm",
+   "supports": "'Owens indicated that Caterpillar expects total sales and revenues for 2008 to top $50 billion' (previously 'about $50 billion')"
+  },
+  "CT24": {
+   "published": "2008-10-21",
+   "filed": "2008-10-21 08:49 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2008 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000355/ex_99-1.htm",
+   "supports": "third-quarter 2008 sales by geographic region and statement of results; 2008 outlook maintained (sales and revenues to top $50 billion, profit of about $6.00 per share); 2009 sales and revenues about flat with 2008"
+  },
+  "CT25": {
+   "published": "2009-01-26",
+   "filed": "2009-01-26 08:33 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2008 results release (Exhibit 99.7)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000023/ex_99-7.htm",
+   "supports": "fourth-quarter and full-year 2008 sales by geographic region and statement of results; 2009 outlook: sales and revenues plus or minus 10 percent from $40 billion, profit of $2.50 per share excluding redundancy costs"
+  },
+  "CT26": {
+   "published": "2009-02-20",
+   "filed": "2009-02-20 14:49 ET",
+   "title": "Caterpillar FY2008 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000063/ex_13.htm",
+   "supports": "Five-year Financial Summary 2004-2008; Results of Operations 2006-2008 (operating profit $4,921M, $4,921M, $4,448M; profit before taxes $4,473M and provision for income taxes $953M in 2008; diluted shares 683.8M, 659.5M, 627.9M); external sales of Machinery $31,804M, Engines $16,240M and Financial Products $3,280M in 2008; cash and short-term investments $2,736M; operating cash flow $4,787M; treasury shares purchased $1,800M; Item 1 and Item 1A wording"
+  },
+  "CT27": {
+   "published": "2009-04-21",
+   "filed": "2009-04-21 08:57 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2009 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000153/ex_99-1.htm",
+   "supports": "first-quarter 2009 sales by geographic region and statement of results; 2009 outlook: sales and revenues plus or minus 10 percent around a midpoint of $35 billion, profit of about $1.25 per share excluding redundancy costs at the midpoint"
+  },
+  "CT28": {
+   "published": "2009-05-15",
+   "filed": "2009-05-14 16:51 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar 8-K, Item 8.01: the FY2006-FY2008 financial statements recast for SFAS 160 and the 2009 segments (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000186/ex_99-1.htm",
+   "supports": "Five-year Financial Summary 2004-2008 and Results of Operations 2006-2008 as recast: sales and revenues, operating profit, profit per share - diluted and diluted shares unchanged; consolidated profit before taxes $4,501M in 2008 (the FY2008 10-K: $4,473M) with the provision for income taxes of $953M; operating cash flow $4,797M; cash and short-term investments $2,736M; external sales of Machinery $31,804M, Engines $16,240M and Financial Products $3,280M"
+  },
+  "CT29": {
+   "published": "2009-07-21",
+   "filed": "2009-07-21 08:53 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2009 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000266/ex_99-1.htm",
+   "supports": "second-quarter 2009 sales by geographic region and statement of results; 2009 outlook: sales and revenues $32 billion to $36 billion, profit $1.15 to $2.25 per share excluding redundancy costs"
+  },
+  "CT30": {
+   "published": "2009-10-20",
+   "filed": "2009-10-20 08:19 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2009 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000433/ex_99-1.htm",
+   "supports": "third-quarter 2009 sales by geographic region and statement of results; 2009 outlook: sales and revenues $32 to $33 billion, profit $1.85 to $2.05 per share excluding redundancy costs; preliminary 2010 sales and revenues up 10 to 25 percent from the midpoint of the 2009 outlook range"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-23",
+   "sources": [
+    "CT13"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY06",
+   "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' and 'Annual sales and revenues are $41.517 billion, making Caterpillar the largest manufacturer in our industry' (FY2006 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The energy and mining industries are major users of our machines and engines. Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts, and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "1997": "1997-12-31",
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_gaap": {
+    "1997": 4.37,
+    "1998": 4.11,
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17
+   },
+   "eps_normalized": {
+    "1997": 4.37,
+    "1998": 4.11,
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17
+   },
+   "eps_sources": {
+    "1997": "CT5",
+    "1998": "CT6",
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT13",
+    "2004": "CT13",
+    "2005": "CT13",
+    "2006": "CT13"
+   },
+   "eps_published": {
+    "1997": "2002-03-22",
+    "1998": "2003-04-01",
+    "1999": "2004-03-10",
+    "2000": "2005-02-25",
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K); no other year has a published figure excluding one-offs (2000's Brazilian tax adjustment and 2008's fourth-quarter tax item have none), so they stay as reported",
+   "revenue_usd_b": {
+    "1997": 18.925,
+    "1998": 20.977,
+    "1999": 19.702,
+    "2000": 20.175,
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517
+   },
+   "revenue_sources": {
+    "1997": "CT5",
+    "1998": "CT6",
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT13",
+    "2004": "CT13",
+    "2005": "CT13",
+    "2006": "CT13"
+   },
+   "diluted_shares_m": {
+    "1997": 380.54096,
+    "1998": 368.130362,
+    "1999": 359.4,
+    "2000": 348.9,
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8
+   },
+   "shares_sources": {
+    "1997": "CT2",
+    "1998": "CT3",
+    "1999": "CT5",
+    "2000": "CT6",
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT13",
+    "2006": "CT13"
+   },
+   "shares_published": {
+    "1997": "2000-03-30",
+    "1998": "2001-03-15",
+    "1999": "2002-03-22",
+    "2000": "2003-04-01",
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 11.85,
+   "prev_fy_op_margin_note": "operating profit $4,921M / sales and revenues $41,517M (FY2006 10-K)",
+   "prev_fy_pretax_margin": 11.71,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $4,861M / sales and revenues $41,517M (FY2006 10-K)",
+   "prev_fy_sales_growth": 14.2,
+   "prev_fy_mach_pct": 13.7,
+   "prev_fy_eng_pct": 15.6,
+   "tax_rate": 0.289,
+   "tax_note": "provision for income taxes $1,405M / consolidated profit before taxes $4,861M (FY2006 10-K)",
+   "cash_b": 0.53,
+   "cash_label": "FY06",
+   "cash_note": "cash and short-term investments $530M at December 31, 2006 (FY2006 10-K)",
+   "ocf_b": 5.799,
+   "ocf_note": "consolidated net cash provided by operating activities $5,799M in 2006 (FY2006 10-K)",
+   "dividend_annual": 1.15,
+   "dividend_note": "cash dividends declared per common share $1.15 in 2006 (FY2006 10-K)",
+   "cash_return_text": "treasury shares purchased $3,208M in 2006 (FY2006 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Machinery",
+     26.062,
+     13.7
+    ],
+    [
+     "Engines",
+     12.807,
+     15.6
+    ],
+    [
+     "Financial Products",
+     2.648,
+     13.5
+    ]
+   ],
+   "groups_basis": "FY06 external sales and revenues by line of business (FY2006 10-K, Enterprise-wide Disclosures)"
+  },
+  {
+   "published": "2008-02-22",
+   "sources": [
+    "CT19"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2007 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The energy and mining industries are major users of our machines and engines. Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts, and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_gaap": {
+    "1998": 4.11,
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37
+   },
+   "eps_normalized": {
+    "1998": 4.11,
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37
+   },
+   "eps_sources": {
+    "1998": "CT6",
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT19",
+    "2005": "CT19",
+    "2006": "CT19",
+    "2007": "CT19"
+   },
+   "eps_published": {
+    "1998": "2003-04-01",
+    "1999": "2004-03-10",
+    "2000": "2005-02-25",
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K); no other year has a published figure excluding one-offs (2000's Brazilian tax adjustment and 2008's fourth-quarter tax item have none), so they stay as reported",
+   "revenue_usd_b": {
+    "1998": 20.977,
+    "1999": 19.702,
+    "2000": 20.175,
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958
+   },
+   "revenue_sources": {
+    "1998": "CT6",
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT19",
+    "2005": "CT19",
+    "2006": "CT19",
+    "2007": "CT19"
+   },
+   "diluted_shares_m": {
+    "1998": 368.130362,
+    "1999": 359.4,
+    "2000": 348.9,
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5
+   },
+   "shares_sources": {
+    "1998": "CT3",
+    "1999": "CT5",
+    "2000": "CT6",
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT19",
+    "2007": "CT19"
+   },
+   "shares_published": {
+    "1998": "2001-03-15",
+    "1999": "2002-03-22",
+    "2000": "2003-04-01",
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 10.95,
+   "prev_fy_op_margin_note": "operating profit $4,921M / sales and revenues $44,958M (FY2007 10-K)",
+   "prev_fy_pretax_margin": 11.02,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $4,953M / sales and revenues $44,958M (FY2007 10-K)",
+   "prev_fy_sales_growth": 8.3,
+   "prev_fy_mach_pct": 8.8,
+   "prev_fy_eng_pct": 6.2,
+   "tax_rate": 0.2998,
+   "tax_note": "provision for income taxes $1,485M / consolidated profit before taxes $4,953M (FY2007 10-K)",
+   "cash_b": 1.122,
+   "cash_label": "FY07",
+   "cash_note": "cash and short-term investments $1,122M at December 31, 2007 (FY2007 10-K)",
+   "ocf_b": 7.935,
+   "ocf_note": "consolidated net cash provided by operating activities $7,935M in 2007 (FY2007 10-K)",
+   "dividend_annual": 1.38,
+   "dividend_note": "cash dividends declared per common share $1.38 in 2007 (FY2007 10-K)",
+   "cash_return_text": "treasury shares purchased $2,405M in 2007 (FY2007 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Machinery",
+     28.359,
+     8.8
+    ],
+    [
+     "Engines",
+     13.603,
+     6.2
+    ],
+    [
+     "Financial Products",
+     2.996,
+     13.1
+    ]
+   ],
+   "groups_basis": "FY07 external sales and revenues by line of business (FY2007 10-K, Enterprise-wide Disclosures)"
+  },
+  {
+   "published": "2009-02-20",
+   "sources": [
+    "CT26"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2008 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'Our results of operations are materially affected by the conditions in the global economy generally and in the global capital markets.', 'Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the economy and the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_gaap": {
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66
+   },
+   "eps_normalized": {
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66
+   },
+   "eps_sources": {
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT26",
+    "2005": "CT26",
+    "2006": "CT26",
+    "2007": "CT26",
+    "2008": "CT26"
+   },
+   "eps_published": {
+    "1999": "2004-03-10",
+    "2000": "2005-02-25",
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K); no other year has a published figure excluding one-offs (2000's Brazilian tax adjustment and 2008's fourth-quarter tax item have none), so they stay as reported",
+   "revenue_usd_b": {
+    "1999": 19.702,
+    "2000": 20.175,
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324
+   },
+   "revenue_sources": {
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT26",
+    "2005": "CT26",
+    "2006": "CT26",
+    "2007": "CT26",
+    "2008": "CT26"
+   },
+   "diluted_shares_m": {
+    "1999": 359.4,
+    "2000": 348.9,
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9
+   },
+   "shares_sources": {
+    "1999": "CT5",
+    "2000": "CT6",
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT26",
+    "2007": "CT26",
+    "2008": "CT26"
+   },
+   "shares_published": {
+    "1999": "2002-03-22",
+    "2000": "2003-04-01",
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 8.67,
+   "prev_fy_op_margin_note": "operating profit $4,448M / sales and revenues $51,324M (FY2008 10-K)",
+   "prev_fy_pretax_margin": 8.72,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $4,473M / sales and revenues $51,324M (FY2008 10-K)",
+   "prev_fy_sales_growth": 14.2,
+   "prev_fy_mach_pct": 12.1,
+   "prev_fy_eng_pct": 19.4,
+   "tax_rate": 0.2131,
+   "tax_note": "provision for income taxes $953M / consolidated profit before taxes $4,473M (FY2008 10-K)",
+   "cash_b": 2.736,
+   "cash_label": "FY08",
+   "cash_note": "cash and short-term investments $2,736M at December 31, 2008 (FY2008 10-K)",
+   "ocf_b": 4.787,
+   "ocf_note": "consolidated net cash provided by operating activities $4,787M in 2008 (FY2008 10-K)",
+   "dividend_annual": 1.62,
+   "dividend_note": "cash dividends declared per common share $1.62 in 2008 (FY2008 10-K)",
+   "cash_return_text": "treasury shares purchased $1,800M in 2008 (FY2008 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Machinery",
+     31.804,
+     12.1
+    ],
+    [
+     "Engines",
+     16.24,
+     19.4
+    ],
+    [
+     "Financial Products",
+     3.28,
+     9.5
+    ]
+   ],
+   "groups_basis": "FY08 external sales and revenues by line of business (FY2008 10-K, Enterprise-wide Disclosures)"
+  },
+  {
+   "published": "2009-05-15",
+   "sources": [
+    "CT28"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2008 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'Our results of operations are materially affected by the conditions in the global economy generally and in the global capital markets.', 'Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the economy and the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_gaap": {
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66
+   },
+   "eps_normalized": {
+    "1999": 2.63,
+    "2000": 3.02,
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66
+   },
+   "eps_sources": {
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT28",
+    "2006": "CT28",
+    "2007": "CT28",
+    "2008": "CT28"
+   },
+   "eps_published": {
+    "1999": "2004-03-10",
+    "2000": "2005-02-25",
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K); no other year has a published figure excluding one-offs (2000's Brazilian tax adjustment and 2008's fourth-quarter tax item have none), so they stay as reported",
+   "revenue_usd_b": {
+    "1999": 19.702,
+    "2000": 20.175,
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324
+   },
+   "revenue_sources": {
+    "1999": "CT7",
+    "2000": "CT8",
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT28",
+    "2006": "CT28",
+    "2007": "CT28",
+    "2008": "CT28"
+   },
+   "diluted_shares_m": {
+    "1999": 359.4,
+    "2000": 348.9,
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9
+   },
+   "shares_sources": {
+    "1999": "CT5",
+    "2000": "CT6",
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT28",
+    "2008": "CT28"
+   },
+   "shares_published": {
+    "1999": "2002-03-22",
+    "2000": "2003-04-01",
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 8.67,
+   "prev_fy_op_margin_note": "operating profit $4,448M / sales and revenues $51,324M (FY2008 recast, 8-K of 2009-05-14)",
+   "prev_fy_pretax_margin": 8.77,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $4,501M / sales and revenues $51,324M (FY2008 recast, 8-K of 2009-05-14)",
+   "prev_fy_sales_growth": 14.2,
+   "prev_fy_mach_pct": 12.1,
+   "prev_fy_eng_pct": 19.4,
+   "tax_rate": 0.2117,
+   "tax_note": "provision for income taxes $953M / consolidated profit before taxes $4,501M (FY2008 recast, 8-K of 2009-05-14)",
+   "cash_b": 2.736,
+   "cash_label": "FY08",
+   "cash_note": "cash and short-term investments $2,736M at December 31, 2008 (FY2008 recast, 8-K of 2009-05-14)",
+   "ocf_b": 4.797,
+   "ocf_note": "consolidated net cash provided by operating activities $4,797M in 2008 (FY2008 recast, 8-K of 2009-05-14)",
+   "dividend_annual": 1.62,
+   "dividend_note": "cash dividends declared per common share $1.62 in 2008 (FY2008 recast, 8-K of 2009-05-14)",
+   "cash_return_text": "treasury shares purchased $1,800M in 2008 (FY2008 recast, 8-K of 2009-05-14)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Machinery",
+     31.804,
+     12.1
+    ],
+    [
+     "Engines",
+     16.24,
+     19.4
+    ],
+    [
+     "Financial Products",
+     3.28,
+     9.5
+    ]
+   ],
+   "groups_basis": "FY08 external sales and revenues by line of business (FY2008 recast, 8-K of 2009-05-14, Enterprise-wide Disclosures)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-20",
+   "source": "CT16",
+   "release": "Jul 20",
+   "release_time": "before the open on Jul 20: 8-K accepted 08:19 ET",
+   "period_end": "2007-06-30",
+   "raw": {
+    "mach_m": 7275,
+    "mach_prior_m": 6875,
+    "eng_m": 3338,
+    "eng_prior_m": 3081,
+    "rev_m": 11356,
+    "rev_prior_m": 10605,
+    "oi_m": 1213,
+    "oi_prior_m": 1479,
+    "diluted_shares_m": 662.8
+   },
+   "sales_b": 11.356,
+   "sales_pct": 7.1,
+   "mach_pct": 5.8,
+   "eng_pct": 8.3,
+   "op_margin": 10.68,
+   "op_margin_bp": -326.5,
+   "eps_q": 1.24,
+   "eps_q_prior": 1.52,
+   "eps_pct": -18.4,
+   "diluted_shares_m": 662.8,
+   "cash_return_text": "During the second quarter 6.6 million shares were repurchased at a cost of $506 million.",
+   "next_print": "Q3 2007 print (late October)"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-19",
+   "source": "CT17",
+   "release": "Oct 19",
+   "release_time": "before the open on Oct 19: 8-K accepted 09:23 ET",
+   "period_end": "2007-09-30",
+   "raw": {
+    "mach_m": 7123,
+    "mach_prior_m": 6472,
+    "eng_m": 3545,
+    "eng_prior_m": 3370,
+    "rev_m": 11442,
+    "rev_prior_m": 10517,
+    "oi_m": 1313,
+    "oi_prior_m": 1078,
+    "diluted_shares_m": 660.0
+   },
+   "sales_b": 11.442,
+   "sales_pct": 8.8,
+   "mach_pct": 10.1,
+   "eng_pct": 5.2,
+   "op_margin": 11.48,
+   "op_margin_bp": 122.5,
+   "eps_q": 1.4,
+   "eps_q_prior": 1.14,
+   "eps_pct": 22.8,
+   "diluted_shares_m": 660.0,
+   "cash_return_text": "Stock repurchase - $1,485 million—20.9 million shares were repurchased through open market transactions.",
+   "next_print": "Q4 2007 print (late January)"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-25",
+   "source": "CT18",
+   "release": "Jan 25",
+   "release_time": "before the open on Jan 25: 8-K accepted 08:32 ET",
+   "period_end": "2007-12-31",
+   "raw": {
+    "mach_m": 7460,
+    "mach_prior_m": 6603,
+    "eng_m": 3900,
+    "eng_prior_m": 3725,
+    "rev_m": 12144,
+    "rev_prior_m": 11003,
+    "oi_m": 1255,
+    "oi_prior_m": 1146,
+    "diluted_shares_m": 650.8
+   },
+   "sales_b": 12.144,
+   "sales_pct": 10.4,
+   "mach_pct": 13.0,
+   "eng_pct": 4.7,
+   "op_margin": 10.33,
+   "op_margin_bp": -8.1,
+   "eps_q": 1.5,
+   "eps_q_prior": 1.32,
+   "eps_pct": 13.6,
+   "diluted_shares_m": 650.8,
+   "cash_return_text": "Share Repurchase - $2.405 billion—used to repurchase 33.5 million shares",
+   "next_print": "Q1 2008 print (late April)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 5.37,
+    "revenue_usd_b": 44.958,
+    "diluted_shares_m": 659.5,
+    "normalization_note": "FY2007 $5.37, profit per share - diluted as reported (Q4 2007 release; no one-off excluded)",
+    "op_margin": 10.95,
+    "pretax_margin": 11.02,
+    "pretax_margin_note": "FY07 consolidated profit before taxes $4,953M / sales and revenues $44,958M (CT18)",
+    "sales_growth": 8.3,
+    "mach_pct": 8.8,
+    "eng_pct": 6.2,
+    "tax_rate": 0.2998,
+    "tax_note": "FY07 provision for income taxes $1,485M / consolidated profit before taxes $4,953M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-18",
+   "source": "CT20",
+   "release": "Apr 18",
+   "release_time": "during the session on Apr 18: 8-K accepted 10:53 ET",
+   "period_end": "2008-03-31",
+   "raw": {
+    "mach_m": 7548,
+    "mach_prior_m": 6501,
+    "eng_m": 3431,
+    "eng_prior_m": 2820,
+    "rev_m": 11796,
+    "rev_prior_m": 10016,
+    "oi_m": 1293,
+    "oi_prior_m": 1140,
+    "diluted_shares_m": 637.9
+   },
+   "sales_b": 11.796,
+   "sales_pct": 17.8,
+   "mach_pct": 16.1,
+   "eng_pct": 21.7,
+   "op_margin": 10.96,
+   "op_margin_bp": -42.0,
+   "eps_q": 1.45,
+   "eps_q_prior": 1.23,
+   "eps_pct": 17.9,
+   "diluted_shares_m": 637.9,
+   "cash_return_text": "Stock Repurchase - $692 million—used to repurchase 10.3 million shares.",
+   "next_print": "Q2 2008 print (late July)"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-22",
+   "source": "CT22",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 08:25 ET",
+   "period_end": "2008-06-30",
+   "raw": {
+    "mach_m": 8530,
+    "mach_prior_m": 7275,
+    "eng_m": 4267,
+    "eng_prior_m": 3338,
+    "rev_m": 13624,
+    "rev_prior_m": 11356,
+    "oi_m": 1525,
+    "oi_prior_m": 1213,
+    "diluted_shares_m": 635.5
+   },
+   "sales_b": 13.624,
+   "sales_pct": 20.0,
+   "mach_pct": 17.3,
+   "eng_pct": 27.8,
+   "op_margin": 11.19,
+   "op_margin_bp": 51.2,
+   "eps_q": 1.74,
+   "eps_q_prior": 1.24,
+   "eps_pct": 40.3,
+   "diluted_shares_m": 635.5,
+   "cash_return_text": "During the first half of the year we repurchased 19.4 million shares at a cost of $1.4 billion.",
+   "next_print": "Q3 2008 print (late October)"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-21",
+   "source": "CT24",
+   "release": "Oct 21",
+   "release_time": "before the open on Oct 21: 8-K accepted 08:49 ET",
+   "period_end": "2008-09-30",
+   "raw": {
+    "mach_m": 8051,
+    "mach_prior_m": 7123,
+    "eng_m": 4097,
+    "eng_prior_m": 3545,
+    "rev_m": 12981,
+    "rev_prior_m": 11442,
+    "oi_m": 1173,
+    "oi_prior_m": 1313,
+    "diluted_shares_m": 624.8
+   },
+   "sales_b": 12.981,
+   "sales_pct": 13.5,
+   "mach_pct": 13.0,
+   "eng_pct": 15.6,
+   "op_margin": 9.04,
+   "op_margin_bp": -243.9,
+   "eps_q": 1.39,
+   "eps_q_prior": 1.4,
+   "eps_pct": -0.7,
+   "diluted_shares_m": 624.8,
+   "cash_return_text": "In the third quarter we repurchased 5.9 million shares at a cost of $388 million.",
+   "next_print": "Q4 2008 print (late January)"
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-26",
+   "source": "CT25",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 08:33 ET",
+   "period_end": "2008-12-31",
+   "raw": {
+    "mach_m": 7675,
+    "mach_prior_m": 7460,
+    "eng_m": 4445,
+    "eng_prior_m": 3900,
+    "rev_m": 12923,
+    "rev_prior_m": 12144,
+    "oi_m": 457,
+    "oi_prior_m": 1255,
+    "diluted_shares_m": 610.6
+   },
+   "sales_b": 12.923,
+   "sales_pct": 6.4,
+   "mach_pct": 2.9,
+   "eng_pct": 14.0,
+   "op_margin": 3.54,
+   "op_margin_bp": -679.8,
+   "eps_q": 1.08,
+   "eps_q_prior": 1.5,
+   "eps_pct": -28.0,
+   "diluted_shares_m": 610.6,
+   "cash_return_text": "As a result of current economic conditions, we have temporarily put our stock repurchase program on hold.",
+   "next_print": "Q1 2009 print (late April)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 5.66,
+    "revenue_usd_b": 51.324,
+    "diluted_shares_m": 627.9,
+    "normalization_note": "FY2008 $5.66, profit per share - diluted as reported (Q4 2008 release; the $409 million favorable tax item of the fourth quarter has no published figure excluding it)",
+    "op_margin": 8.67,
+    "pretax_margin": 8.72,
+    "pretax_margin_note": "FY08 consolidated profit before taxes $4,473M / sales and revenues $51,324M (CT24)",
+    "sales_growth": 14.2,
+    "mach_pct": 12.1,
+    "eng_pct": 19.4,
+    "tax_rate": 0.2131,
+    "tax_note": "FY08 provision for income taxes $953M / consolidated profit before taxes $4,473M"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-21",
+   "source": "CT27",
+   "release": "Apr 21",
+   "release_time": "before the open on Apr 21: 8-K accepted 08:57 ET",
+   "period_end": "2009-03-31",
+   "raw": {
+    "mach_m": 5342,
+    "mach_prior_m": 7548,
+    "eng_m": 3168,
+    "eng_prior_m": 3431,
+    "rev_m": 9225,
+    "rev_prior_m": 11796,
+    "oi_m": -175,
+    "oi_prior_m": 1293,
+    "diluted_shares_m": 602.1
+   },
+   "sales_b": 9.225,
+   "sales_pct": -21.8,
+   "mach_pct": -29.2,
+   "eng_pct": -7.7,
+   "op_margin": -1.9,
+   "op_margin_bp": -1285.8,
+   "eps_q": -0.19,
+   "eps_q_prior": 1.45,
+   "eps_pct": -113.1,
+   "diluted_shares_m": 602.1,
+   "cash_return_text": "Suspension of Caterpillar stock repurchases.",
+   "next_print": "Q2 2009 print (late July)",
+   "note": "the quarter's loss of $0.19 a share includes redundancy costs of $0.58 a share (profit of $0.39 a share excluding them)"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-21",
+   "source": "CT29",
+   "release": "Jul 21",
+   "release_time": "before the open on Jul 21: 8-K accepted 08:53 ET",
+   "period_end": "2009-06-30",
+   "raw": {
+    "mach_m": 4338,
+    "mach_prior_m": 8530,
+    "eng_m": 2916,
+    "eng_prior_m": 4267,
+    "rev_m": 7975,
+    "rev_prior_m": 13624,
+    "oi_m": 347,
+    "oi_prior_m": 1525,
+    "diluted_shares_m": 619.8
+   },
+   "sales_b": 7.975,
+   "sales_pct": -41.5,
+   "mach_pct": -49.1,
+   "eng_pct": -31.7,
+   "op_margin": 4.35,
+   "op_margin_bp": -684.2,
+   "eps_q": 0.6,
+   "eps_q_prior": 1.74,
+   "eps_pct": -65.5,
+   "diluted_shares_m": 619.8,
+   "cash_return_text": "Stock repurchase spending is expected to be zero as the stock repurchase program is likely to remain suspended throughout 2009.",
+   "next_print": "Q3 2009 print (late October)",
+   "note": "the quarter's $0.60 a share includes redundancy costs of $0.12 a share (profit of $0.72 a share excluding them)"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-20",
+   "source": "CT30",
+   "release": "Oct 20",
+   "release_time": "before the open on Oct 20: 8-K accepted 08:19 ET",
+   "period_end": "2009-09-30",
+   "raw": {
+    "mach_m": 3904,
+    "mach_prior_m": 8051,
+    "eng_m": 2679,
+    "eng_prior_m": 4097,
+    "rev_m": 7298,
+    "rev_prior_m": 12981,
+    "oi_m": 277,
+    "oi_prior_m": 1173,
+    "diluted_shares_m": 635.5
+   },
+   "sales_b": 7.298,
+   "sales_pct": -43.8,
+   "mach_pct": -51.5,
+   "eng_pct": -34.6,
+   "op_margin": 3.8,
+   "op_margin_bp": -524.1,
+   "eps_q": 0.64,
+   "eps_q_prior": 1.39,
+   "eps_pct": -54.0,
+   "diluted_shares_m": 635.5,
+   "cash_return_text": "No stock repurchase is expected.",
+   "next_print": "Q4 2009 print (late January)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-01-26",
+   "source": "CT12",
+   "doc": "Q4 2006 release",
+   "rev_guide_usd_b": [
+    41.5,
+    43.6
+   ],
+   "eps_guide": [
+    5.2,
+    5.7
+   ]
+  },
+  {
+   "fy": 2007,
+   "published": "2007-04-20",
+   "source": "CT14",
+   "doc": "Q1 2007 release",
+   "rev_guide_usd_b": [
+    42.0,
+    44.0
+   ],
+   "eps_guide": [
+    5.3,
+    5.8
+   ]
+  },
+  {
+   "fy": 2007,
+   "published": "2007-07-20",
+   "source": "CT16",
+   "doc": "Q2 2007 release",
+   "rev_guide_usd_b": [
+    44.0,
+    44.0
+   ],
+   "eps_guide": [
+    5.3,
+    5.8
+   ]
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-19",
+   "source": "CT17",
+   "doc": "Q3 2007 release",
+   "rev_guide_usd_b": [
+    44.0,
+    44.0
+   ],
+   "eps_guide": [
+    5.2,
+    5.6
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2007-10-19",
+   "source": "CT17",
+   "doc": "Q3 2007 release",
+   "rev_guide_pct": [
+    5,
+    10
+   ],
+   "rev_growth_base_b": 44.0,
+   "rev_growth_base_note": "the 2007 outlook of about $44 billion",
+   "eps_growth": [
+    5,
+    15
+   ],
+   "eps_growth_base": 5.4,
+   "eps_growth_base_note": "the mid-point of the 2007 outlook range ($5.40)",
+   "note": "a preliminary outlook"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-01-25",
+   "source": "CT18",
+   "doc": "Q4 2007 release",
+   "rev_guide_pct": [
+    5,
+    10
+   ],
+   "eps_growth": [
+    5,
+    15
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-18",
+   "source": "CT20",
+   "doc": "Q1 2008 release",
+   "rev_guide_pct": [
+    5,
+    10
+   ],
+   "eps_growth": [
+    5,
+    15
+   ],
+   "note": "unchanged ('The company continues to expect another record year')"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-22",
+   "source": "CT22",
+   "doc": "Q2 2008 release",
+   "rev_guide_usd_b": [
+    50.0,
+    50.0
+   ],
+   "eps_guide": [
+    6.0,
+    6.0
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2008-08-29",
+   "source": "CT23",
+   "doc": "8-K of 2008-08-28",
+   "rev_words": "total sales and revenues for 2008 to top $50 billion",
+   "note": "the CEO at a press conference in Beijing, furnished under Item 7.01"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-21",
+   "source": "CT24",
+   "doc": "Q3 2008 release",
+   "rev_words": "sales and revenues to top $50 billion",
+   "eps_guide": [
+    6.0,
+    6.0
+   ],
+   "note": "maintained ('Caterpillar is maintaining its full-year outlook for 2008')"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-10-21",
+   "source": "CT24",
+   "doc": "Q3 2008 release",
+   "rev_words": "sales and revenues to be about flat with our full-year 2008 results",
+   "note": "no profit per share outlook ('we will issue our 2009 profit per share outlook with our year-end release in January')"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-26",
+   "source": "CT25",
+   "doc": "Q4 2008 release",
+   "rev_guide_usd_b": [
+    36.0,
+    44.0
+   ],
+   "eps_guide": [
+    2.5,
+    2.5
+   ],
+   "eps_guide_note": "excluding redundancy costs, at $40 billion of sales and revenues; about $500 million of redundancy expense expected",
+   "note": "sales and revenues 'in a range of plus or minus 10 percent from $40 billion'"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-21",
+   "source": "CT27",
+   "doc": "Q1 2009 release",
+   "rev_guide_usd_b": [
+    31.5,
+    38.5
+   ],
+   "eps_guide": [
+    1.25,
+    1.25
+   ],
+   "eps_guide_note": "excluding redundancy costs, at the midpoint; about $0.50 including them",
+   "note": "sales and revenues 'in a range of plus or minus 10 percent around a midpoint of $35 billion'"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-21",
+   "source": "CT29",
+   "doc": "Q2 2009 release",
+   "rev_guide_usd_b": [
+    32.0,
+    36.0
+   ],
+   "eps_guide": [
+    1.15,
+    2.25
+   ],
+   "eps_guide_note": "excluding redundancy costs; $0.40-1.50 including them"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-10-20",
+   "source": "CT30",
+   "doc": "Q3 2009 release",
+   "rev_guide_usd_b": [
+    32.0,
+    33.0
+   ],
+   "eps_guide": [
+    1.85,
+    2.05
+   ],
+   "eps_guide_note": "excluding redundancy costs; $1.10-1.30 including them"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-20",
+   "source": "CT30",
+   "doc": "Q3 2009 release",
+   "rev_guide_pct": [
+    10,
+    25
+   ],
+   "rev_growth_base_b": 32.5,
+   "rev_growth_base_note": "the midpoint of the 2009 outlook range ($32.5 billion)",
+   "note": "a preliminary outlook for sales and revenues only"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2006-12-13",
+   "source": "CT11",
+   "quarterly": 0.3,
+   "note": "$0.30 quarterly ('declared a quarterly cash dividend of 30 cents ($0.30) per share on its common stock, payable February 20, 2007')"
+  },
+  {
+   "published": "2007-06-13",
+   "source": "CT15",
+   "quarterly": 0.36,
+   "note": "$0.36 quarterly ('voted to again increase the quarterly cash dividend by six cents to thirty-six cents ($0.36) per share')"
+  },
+  {
+   "published": "2008-06-11",
+   "source": "CT21",
+   "quarterly": 0.42,
+   "note": "$0.42 quarterly ('voted to increase the quarterly cash dividend by six cents to forty-two ($0.42) cents per share')"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [
+  {
+   "effective": "2005-07-14",
+   "ratio": 2.0,
+   "source": "CT9",
+   "note": "two-for-one stock split, the shares distributed on July 13, 2005 to stockholders of record on June 22, 2005; Yahoo's split date is July 14, 2005. The 1997 split (Yahoo's 1997-07-14) precedes every per-share fact in this file"
+  }
+ ],
+ "rule_t": {
+  "_doc": "Rule T over fiscal 1997-2006, the decade of the FY2006 10-K (the vintage public on 2008-01-04): each annual change from the latest 10-K published by then whose statement of results (sales and revenues, operating profit, profit per share - diluted) and enterprise-wide sales table (external sales of Machinery and Engines) report both years. Seams stay in, as published: the 1999-2002 10-Ks' Engines lines are external sales (intersegment engines excluded), the FY2005 and FY2006 10-Ks restate 2003-2005 (revenue reclassifications, SFAS 123R), the 2004 change is on the split basis and the earlier ones are not (growth rates do not depend on it), Progress Rail enters Machinery from June 2006, and 2001 operating profit and profit per share include the nonrecurring charges (the values are as published; only the EPS history uses the company's figure excluding them)",
+  "mach": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 12.54,
+    "1998": 0.73,
+    "1999": -12.96,
+    "2000": 1.3,
+    "2001": 2.54,
+    "2002": -1.51,
+    "2003": 14.22,
+    "2004": 37.77,
+    "2005": 21.69,
+    "2006": 13.65
+   },
+   "raw": {
+    "1997": {
+     "source": "CT1",
+     "sales_m": [
+      11862,
+      13350
+     ]
+    },
+    "1998": {
+     "source": "CT2",
+     "sales_m": [
+      13350,
+      13448
+     ]
+    },
+    "1999": {
+     "source": "CT3",
+     "sales_m": [
+      13448,
+      11705
+     ]
+    },
+    "2000": {
+     "source": "CT5",
+     "sales_m": [
+      11705,
+      11857
+     ]
+    },
+    "2001": {
+     "source": "CT6",
+     "sales_m": [
+      11857,
+      12158
+     ]
+    },
+    "2002": {
+     "source": "CT7",
+     "sales_m": [
+      12158,
+      11975
+     ]
+    },
+    "2003": {
+     "source": "CT8",
+     "sales_m": [
+      11975,
+      13678
+     ]
+    },
+    "2004": {
+     "source": "CT10",
+     "sales_m": [
+      13678,
+      18844
+     ]
+    },
+    "2005": {
+     "source": "CT13",
+     "sales_m": [
+      18844,
+      22931
+     ]
+    },
+    "2006": {
+     "source": "CT13",
+     "sales_m": [
+      22931,
+      26062
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -33,
+    "BASE": -13,
+    "BULL": 8,
+    "XBULL": 38
+   }
+  },
+  "eng": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 20.45,
+    "1998": 37.06,
+    "1999": 5.06,
+    "2000": 2.95,
+    "2001": -2.65,
+    "2002": -2.85,
+    "2003": 10.45,
+    "2004": 28.79,
+    "2005": 16.68,
+    "2006": 15.64
+   },
+   "raw": {
+    "1997": {
+     "source": "CT1",
+     "sales_m": [
+      3952,
+      4760
+     ]
+    },
+    "1998": {
+     "source": "CT2",
+     "sales_m": [
+      4760,
+      6524
+     ]
+    },
+    "1999": {
+     "source": "CT3",
+     "sales_m": [
+      6524,
+      6854
+     ]
+    },
+    "2000": {
+     "source": "CT5",
+     "sales_m": [
+      6854,
+      7056
+     ]
+    },
+    "2001": {
+     "source": "CT6",
+     "sales_m": [
+      7056,
+      6869
+     ]
+    },
+    "2002": {
+     "source": "CT7",
+     "sales_m": [
+      6869,
+      6673
+     ]
+    },
+    "2003": {
+     "source": "CT8",
+     "sales_m": [
+      6673,
+      7370
+     ]
+    },
+    "2004": {
+     "source": "CT10",
+     "sales_m": [
+      7370,
+      9492
+     ]
+    },
+    "2005": {
+     "source": "CT13",
+     "sales_m": [
+      9492,
+      11075
+     ]
+    },
+    "2006": {
+     "source": "CT13",
+     "sales_m": [
+      11075,
+      12807
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -19,
+    "BASE": -3,
+    "BULL": 13,
+    "XBULL": 37
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 14.54,
+    "1998": 10.84,
+    "1999": -6.08,
+    "2000": 2.4,
+    "2001": 1.36,
+    "2002": -1.46,
+    "2003": 12.96,
+    "2004": 32.88,
+    "2005": 19.91,
+    "2006": 14.25
+   },
+   "raw": {
+    "1997": {
+     "source": "CT1",
+     "revenues_m": [
+      16522,
+      18925
+     ]
+    },
+    "1998": {
+     "source": "CT2",
+     "revenues_m": [
+      18925,
+      20977
+     ]
+    },
+    "1999": {
+     "source": "CT3",
+     "revenues_m": [
+      20977,
+      19702
+     ]
+    },
+    "2000": {
+     "source": "CT5",
+     "revenues_m": [
+      19702,
+      20175
+     ]
+    },
+    "2001": {
+     "source": "CT6",
+     "revenues_m": [
+      20175,
+      20450
+     ]
+    },
+    "2002": {
+     "source": "CT7",
+     "revenues_m": [
+      20450,
+      20152
+     ]
+    },
+    "2003": {
+     "source": "CT8",
+     "revenues_m": [
+      20152,
+      22763
+     ]
+    },
+    "2004": {
+     "source": "CT10",
+     "revenues_m": [
+      22807,
+      30306
+     ]
+    },
+    "2005": {
+     "source": "CT13",
+     "revenues_m": [
+      30306,
+      36339
+     ]
+    },
+    "2006": {
+     "source": "CT13",
+     "revenues_m": [
+      36339,
+      41517
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -24,
+    "BASE": -6,
+    "BULL": 12,
+    "XBULL": 33
+   }
+  },
+  "eps": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 24.86,
+    "1998": -5.95,
+    "1999": -36.01,
+    "2000": 14.83,
+    "2001": -23.18,
+    "2002": -0.86,
+    "2003": 36.09,
+    "2004": 84.62,
+    "2005": 40.28,
+    "2006": 27.97
+   },
+   "raw": {
+    "1997": {
+     "source": "CT1",
+     "eps": [
+      3.5,
+      4.37
+     ]
+    },
+    "1998": {
+     "source": "CT2",
+     "eps": [
+      4.37,
+      4.11
+     ]
+    },
+    "1999": {
+     "source": "CT3",
+     "eps": [
+      4.11,
+      2.63
+     ]
+    },
+    "2000": {
+     "source": "CT5",
+     "eps": [
+      2.63,
+      3.02
+     ]
+    },
+    "2001": {
+     "source": "CT6",
+     "eps": [
+      3.02,
+      2.32
+     ]
+    },
+    "2002": {
+     "source": "CT7",
+     "eps": [
+      2.32,
+      2.3
+     ]
+    },
+    "2003": {
+     "source": "CT8",
+     "eps": [
+      2.3,
+      3.13
+     ]
+    },
+    "2004": {
+     "source": "CT10",
+     "eps": [
+      1.56,
+      2.88
+     ]
+    },
+    "2005": {
+     "source": "CT13",
+     "eps": [
+      2.88,
+      4.04
+     ]
+    },
+    "2006": {
+     "source": "CT13",
+     "eps": [
+      4.04,
+      5.17
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -92,
+    "BASE": -36,
+    "BULL": 20,
+    "XBULL": 85
+   }
+  },
+  "op_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 78.4,
+    "1998": -210.0,
+    "1999": -315.7,
+    "2000": 102.7,
+    "2001": -219.9,
+    "2002": 15.9,
+    "2003": 84.5,
+    "2004": 153.4,
+    "2005": 155.7,
+    "2006": 144.0
+   },
+   "raw": {
+    "1997": {
+     "source": "CT1",
+     "revenues_m": [
+      16522,
+      18925
+     ],
+     "operating_profit_m": [
+      1992,
+      2430
+     ]
+    },
+    "1998": {
+     "source": "CT2",
+     "revenues_m": [
+      18925,
+      20977
+     ],
+     "operating_profit_m": [
+      2430,
+      2253
+     ]
+    },
+    "1999": {
+     "source": "CT3",
+     "revenues_m": [
+      20977,
+      19702
+     ],
+     "operating_profit_m": [
+      2253,
+      1494
+     ]
+    },
+    "2000": {
+     "source": "CT5",
+     "revenues_m": [
+      19702,
+      20175
+     ],
+     "operating_profit_m": [
+      1494,
+      1737
+     ]
+    },
+    "2001": {
+     "source": "CT6",
+     "revenues_m": [
+      20175,
+      20450
+     ],
+     "operating_profit_m": [
+      1737,
+      1311
+     ]
+    },
+    "2002": {
+     "source": "CT7",
+     "revenues_m": [
+      20450,
+      20152
+     ],
+     "operating_profit_m": [
+      1311,
+      1324
+     ]
+    },
+    "2003": {
+     "source": "CT8",
+     "revenues_m": [
+      20152,
+      22763
+     ],
+     "operating_profit_m": [
+      1324,
+      1688
+     ]
+    },
+    "2004": {
+     "source": "CT10",
+     "revenues_m": [
+      22807,
+      30306
+     ],
+     "operating_profit_m": [
+      1670,
+      2684
+     ]
+    },
+    "2005": {
+     "source": "CT13",
+     "revenues_m": [
+      30306,
+      36339
+     ],
+     "operating_profit_m": [
+      2684,
+      3784
+     ]
+    },
+    "2006": {
+     "source": "CT13",
+     "revenues_m": [
+      36339,
+      41517
+     ],
+     "operating_profit_m": [
+      3784,
+      4921
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -710,
+    "BASE": -320,
+    "BULL": 80,
+    "XBULL": 160
+   }
+  }
+ },
+ "price_basis": "Yahoo's CAT series is adjusted for the 2-for-1 splits of 1994-09-06, 1997-07-14 and 2005-07-14; no split follows 2005, so from 2008 Yahoo's close is the price as traded ($68.53 on 2008-01-04, $44.67 on 2008-12-31). Prices before 2005-07-14 are on the post-split basis in Yahoo's series, as are the per-share facts once the 'splits' record halves those published before that date."
+}
