@@ -53,7 +53,8 @@ print whose subscribers, margins, capital expenditures, raw figures and full-yea
 vintage before CUTOFF) and which restates every year of the history (CMCSA 2010-2013), a later guide with every guided field (a range,
 the words of a one-sided bound, the label and note); CAT: a print whose Machinery, Engines, sales, margins, profit per share, raw figures
 and full-year actuals are absurd (for the year after the latest vintage before CUTOFF), with the 2011 segments' raw figures and basis
-(CAT 2010-2013), a later vintage of the other kind with planted segment and normalization notes, and a later guide with every guided
+(CAT 2010-2013) and Energy & Transportation's, restating every year of the history (CAT 2014-2017), a later vintage of the other kind
+with planted segment, normalization and theme-tail notes, and a later guide with every guided
 field in both forms (dollar and growth ranges for sales and revenues and for profit per share, their bases, words and notes); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
@@ -193,7 +194,8 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED", period_end="PLANTED", release_time="PLANTED",
                      lines_basis="PLANTED",
                      raw=dict(mach_m=1, mach_prior_m=99, eng_m=1, eng_prior_m=99, rev_m=2, rev_prior_m=198, oi_m=-99, oi_prior_m=99,
-                              diluted_shares_m=1, ci_m=1, ci_prior_m=99, ri_m=1, ri_prior_m=99, ps_m=1, ps_prior_m=99))}[TICKER]
+                              diluted_shares_m=1, ci_m=1, ci_prior_m=99, ri_m=1, ri_prior_m=99, ps_m=1, ps_prior_m=99, et_m=1,
+                              et_prior_m=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -446,9 +448,11 @@ try:
     if TICKER == "CAT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF
         # the later vintage of the other kind, with planted segment and normalization notes (CAT 2010-2013)
         v.update(kind="DURABLE" if v.get("kind") == "CYCLICAL" else "CYCLICAL", groups_basis="PLANTED", lines_basis="PLANTED",
-                 normalization="PLANTED")
+                 normalization="PLANTED", why_theme_tail="PLANTED")
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         y0 = max(int(y) for y in v0["eps_normalized"]) + 1
+        # a later print restating every year of the history before CUTOFF (the 'restates' field of CAT 2014-2017)
+        last["restates"] = {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}
         last["fy_actual"] = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
                              "normalization_note": "PLANTED", "op_margin": -50.0, "pretax_margin": -50.0, "pretax_margin_note": "PLANTED",
                              "sales_growth": -60.0, "mach_pct": -60.0, "eng_pct": -60.0, "tax_rate": 0.99, "tax_note": "PLANTED"}

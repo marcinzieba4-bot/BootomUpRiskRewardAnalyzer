@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  CAT  ·  Caterpillar Inc.  ·  $80.06  ·  RETROSPECTIVE as of 2015-03-06
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.06  [OVERVALUED]
+  Point-in-time: 6 sources, latest published 2015-03-06; latest print Q4 2014 (Jan 27)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E sales and revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Line of business             FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Construction Industries   $    18.2  $  18.2  $  19.9      +0.0      +1.7
+    +4.5% external sales and revenues in FY14
+  Resource Industries       $     8.4  $   8.4  $   9.2      +0.0      +0.8
+    -24.4% external sales and revenues in FY14
+  Energy & Transportation   $    20.4  $  20.4  $  22.4      +0.0      +2.0
+    +7.8% external sales and revenues in FY14
+  Financial Products Segme  $     3.1  $   3.1  $   3.4      +0.0      +0.3
+    +2.8% external sales and revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    50.1  $  50.1  $  54.9      +0.0      +4.8
+  FY2015E = FY14 $55.18B × (1 − 9.4%: FY15 sales and revenues guide midpoint); split pro rata to FY14 external sales of the four reportable segments (FY2014 10-K; All Other and corporate items left out)
+  Q4 2014 (Jan 27): sales and revenues $14.24B -1.1%; Machinery -9.5%; Engines +11.2%;
+  operating margin 7.46% (-261.9bp); profit per share $1.23 vs $1.54 (-20.1%)
+  Machinery (Construction Industries $4,420M and Resource Industries $2,385M against $4,869M and $2,649M a year earlier, -9.5%), Engines (Energy & Transportation $6,191M against $5,565M, +11.2%), as the release's sales and revenues by segment show them; the release: 'Excluding restructuring costs, fourth-quarter 2014 profit per share was $1.35, compared with profit per share of $1.68 in the fourth quarter of 2013.'
+  FY15 guide (Q3 2014 release, Q4 2014 release): sales and revenues $50B; profit per share $4.75 (excluding restructuring costs of about $150 million; about $4.60 including them)
+
+  FY2015E EPS check:  $50.1B × 9.2% pre-tax × (1−27.2%) ÷ 0.616B  =  $5.46  (FY2015E EPS, guide midpoint (excluding restructuring costs of about $150 million; about $4.60 including them))
+  FY2017E BEAR check: $50.1B × 9.2% ÷ 0.600B  =  $5.60  (scenario $0.70)
+  FY2017E BULL check: $54.9B × 9.6% ÷ 0.600B  =  $6.40  (scenario $5.26)
+  Every 1pp of pre-tax margin ≈ $0.59 EPS ≈ $8/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Machinery sales growth             -33.0%  ≥-13.0%    ≥8.0%   ≥38.0%     -9.5%  ◦ BASE  ██░░
+  Engines sales growth               -19.0%   ≥-3.0%   ≥13.0%   ≥37.0%    +11.2%  ◦ BASE  ██░░
+  Sales and revenues growth          -24.0%   ≥-6.0%   ≥12.0%   ≥33.0%     -1.1%  ◦ BASE  ██░░
+  Profit per share growth            -92.0%  ≥-36.0%   ≥20.0%   ≥85.0%    -20.1%  ◦ BASE  ██░░
+  Operating margin change           -710.0bp  ≥-320.0bp  ≥80.0bp  ≥160.0bp  -261.9bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.86 / 4.00  (back-solved from $80 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.10  →  Adj composite 1.80  →  Gap -1.06  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 sales and revenues -0.8%, Machinery -6.8%, Engines +7.8%; Q4 operating margin 7.46% (-261.9bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 16.9x FY15E vs a 14.0x 10-yr median (87th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY15 sales and revenues guide -9.4% vs a 9.5% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY14 year-end cash and short-term investments $7.341B, FY14 operating cash flow $8.057B, dividend $2.80 a year, dividends paid $1,620M and treasury shares purchased $4,238M in 2014 (FY2014 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Machinery sales growth               -9.5%    -33.0%  -23.5%  Construction and mining fleets stop g…
+  Engines sales growth                +11.2%    -19.0%  -30.2%  Truck, power and oil and gas engines …
+  Sales and revenues growth            -1.1%    -24.0%  -22.9%  Volume and price fall together
+  Profit per share growth             -20.1%    -92.0%  -71.9%  Costs stay up while volume falls
+  Operating margin change           -261.9bp  -710.0bp  -448.1bp  Factories deleverage on lower volume
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$25  (model)  /  $8 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: Machinery sales growth went from -8.2% (Q3 2014) to -9.5% (Q4 2014);
+  the bear case needs a fall in machinery demand that Engines (+11.2% now) and
+  price realization no longer offset. The 10-K ties demand to the energy and mining industries and to infrastructure,
+  housing and commercial construction; dealer inventory changes move company sales either way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.75  (FY2015E EPS, guide midpoint (excluding restructuring costs of about $150 million; about $4.60 including them))
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2005 10.3x, 2006 11.2x, 2007 10.8x, 2008 5.8x, 2009 10.2x, 2010 12.2x, 2011 9.5x, 2012 9.4x, 2013 13.5x, 2014 13.5x, 2015 16.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $48/share
+  Current $80 vs Updated EPP $48:  +69%  ⚠ far above floor — large drawdown room
+  Bear $8 vs Updated EPP $48:  -83%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Machinery sales growth                     -13.0       -3.5   BASE floor (vs -10 now)
+  Engines sales growth                        -3.0      -14.2   BASE floor (vs +11 now)
+  Sales and revenues growth                   -6.0       -4.9   BASE floor (vs -1 now)
+  Profit per share growth                    -36.0      -15.9   BASE floor (vs -20 now)
+  Operating margin change                   -320.0      -58.1   BASE floor (vs -262 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.75 × (1+0.0%)² = $4.75
+  At 14x P/E (conservative):  $66/share
+  + Cumul. dividends (2yr):  +$5.77/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $66  (▼14 from $80)
+  Conservative total return:  -10% over 2yr  = -5%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (16.9x)
+  mean-reverts to 14x. Breakeven at 14x needs FY2017E EPS of $5.31,
+  i.e. 5.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $78.81  –  $111.46  (at 4th pct of range)
+  Annual dividend:      $2.80/share  (yield 3.5%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 1.21
+  1-sigma range (1yr):  $63  –  $97  ($80 ± 22%)
+  2-sigma range (1yr):  $45  –  $115
+  ────────────────────────────────────────────────────────────
+  Bear $8 requires:  ~4.2σ price move  (unusual — requires fundamental break)
+  The largest maker of construction and mining equipment with a 1.2 beta: the stock is +0% off its January
+  low while Machinery sales growth went from -8.2% (Q3 2014) to -9.5% (Q4 2014).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.70  10.9x  $      8    17.6%      5.0%   +12.6pp  EPS -61.5%/yr (worst year FY05-FY14, capped at 0%); P/E to its 10th pct
+  BASE        4.01  14.0x  $     56    61.5%     17.5%   +44.0pp  EPS +-8.1%/yr (FY15 guide + margin + buyback); P/E at its 10-yr median
+  BULL        5.26  15.2x  $     80    17.6%     60.9%   -43.3pp  EPS +5.2%/yr (FY05-FY14 CAGR); P/E holds its 75th pct
+  XBULL      16.12  17.4x  $    280     3.3%     16.6%   -13.3pp  EPS +84.2%/yr (best 2-yr run FY05-FY14); P/E at its 90th pct
+
+  Proxy EV (2yr): $59  /  Market EV: $105  /  Current: $80
+  Conservative EV (2yr, ④): $66 + $5.77 divs = $72 total value
+  Downside (→ Bear $8): 90.0%   Upside (→ Bull $80): -0.1%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $80 the market needs $106 in two years —
+  above the BULL case. That is a market composite of 2.86 against a model
+  read of 1.80: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +69%    -1.06  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     5.95x     +69%    -0.68  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +69%    -1.18  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         37.14x     +69%    -1.03  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +69%    -1.09  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +69%    -0.76  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +30%    -0.96  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +69%    -0.96  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2015 print (late April) — the next read on Machinery sales (-9.5% now) and the guide
+  (2) Operating margin — -261.9bp in Q4 2014: price realization against material and factory costs, what must hold if volume does not
+  (3) FY15 profit per share guide $4.75 (Q4 2014 release): the company's own read of the year
+  (4) FY15 sales and revenues guide $50B (Q4 2014 release): volume, price and currency in one number
+  (5) Capital return at 17x — During the year, we repurchased $4.2 billion of Caterpillar stock and increased the quarterly dividend by 17 percent.: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $48  |  ADD below ~$48  |  TRIM above $80
+════════════════════════════════════════════════════════════════════════
+

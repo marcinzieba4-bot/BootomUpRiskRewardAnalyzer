@@ -33,11 +33,17 @@ the external sales of Construction Industries plus Resource Industries and the E
 company describes its segments as supporting customers using machinery and using engines and turbines). From the FY2010 10-K, whose
 Item 1A calls the demand for Caterpillar's own products cyclical, the kind is CYCLICAL (the class label only; retro/README.md, "CAT
 2010-2013"). A print whose year-ago quarter is a loss (Q1 2010) measures profit per share growth on that loss's absolute value.
+From 2014 (retro/README.md, "CAT 2014-2017"): Power Systems is Energy & Transportation from Q1 2014 ('et_m'), still the Engines line;
+the company's profit per share excluding restructuring costs (from 2016 also mark-to-market pension and OPEB gains and losses, and in
+2016 a goodwill impairment and a deferred tax valuation allowance) is the ACN-rule figure for 2013-2016 and for the guides; the 8-K of
+2016-05-16 recasting 2011-2015 for mark-to-market pension accounting is a vintage of its own; a release that republishes an earlier
+year's company figure restates it until the next 10-K ('restates', the PFE encoding, EPS only); ENERGY_TRANSITION, live from
+2015-12-12, is scoped to reserves and refining, so it stays off the watch list and the texts say so ('why_theme_tail', the BKR reading).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2013 were accepted before the open, except Q1 2008's and Q4 2010's
-(during the session); the Q2 2007 to Q1 2008, Q1 2011 and Q2 2011 releases came on Fridays, so each of those weeks is dated its
-release day.
+is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open, except Q1 2008's and Q4 2010's
+(during the session); the Q2 2007 to Q1 2008, Q1 2011, Q2 2011 and Q1 2016 releases came on Fridays, so each of those weeks is dated
+its release day.
 
 Output goes to staging/retrospective/CAT until the series is added to the archive (--out archive/retrospective/CAT).
 
@@ -45,6 +51,7 @@ Usage
   python3 retro/build_cat.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_cat.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_cat.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_cat.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_cat.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CAT/<AS_OF>
 """
@@ -129,9 +136,11 @@ def rule_t(rt):
 
 def lines(r):
     """The Machinery and Engines lines of a print: as reported to 2010; from the 2011 segments, Construction Industries plus Resource
-    Industries and Power Systems (retro/README.md, "CAT 2010-2013")."""
+    Industries and Power Systems (retro/README.md, "CAT 2010-2013"), renamed Energy & Transportation from Q1 2014 ('et_m'; "CAT
+    2014-2017")."""
     if "ci_m" in r:
-        return r["ci_m"] + r["ri_m"], r["ci_prior_m"] + r["ri_prior_m"], r["ps_m"], r["ps_prior_m"]
+        e, e0 = (r["et_m"], r["et_prior_m"]) if "et_m" in r else (r["ps_m"], r["ps_prior_m"])
+        return r["ci_m"] + r["ri_m"], r["ci_prior_m"] + r["ri_prior_m"], e, e0
     return r["mach_m"], r["mach_prior_m"], r["eng_m"], r["eng_prior_m"]
 
 
@@ -204,6 +213,16 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_sales_growth=a["sales_growth"], prev_fy_mach_pct=a["mach_pct"], prev_fy_eng_pct=a["eng_pct"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a release may republish an earlier year's company figure ('restates': the Q4 2014 release's 2013 excluding restructuring costs,
+    # the Q1 2016 release's 2015 recast for mark-to-market pension accounting, the Q4 2016 release's 2015 adjusted figure); each year
+    # comes from the latest filing that reports it, so the figure replaces the year from the print until a 10-K vintage published after
+    # the print carries the year (the PFE encoding, EPS only; retro/README.md, "CAT 2014-2017")
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, r in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: r["eps"]}, normalization=f'{h["normalization"]}; {r["note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
@@ -317,6 +336,23 @@ def build(as_of, facts, raw, spx, engine, out):
                 "  housing and commercial construction; dealer inventory changes move company sales either way.")
     theme_summary = "no disruption theme has dated evidence"
     why = h["why"]
+    # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining, which a maker of construction and
+    # mining equipment, engines and turbines does not hold (the BKR reading; retro/README.md, "CAT 2014-2017"): from its live date the
+    # texts say so, and the 10-Ks' carbon-emissions and climate-change wording stays in the "why" (the PEP obesity rule). From the FY2013
+    # vintage the "why" ends with a clause that follows the theme's status on AS_OF ('why_theme_tail', naming the 10-K's wording); the
+    # earlier vintages keep their text and every earlier date precedes the live date, so those dates rebuild byte-identical
+    et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
+    et_live = et["live_from"] <= as_of
+    maker = "a maker of construction and mining equipment, engines and turbines"
+    if et_live:
+        sig_name = "Disruption theme: none in scope"
+        trigger = "No live disruption theme covers construction and mining equipment, engines and turbines"
+        theme_summary = (f"ENERGY_TRANSITION is live from {et['live_from']} but scoped to oil, gas and coal reserves and refining; no theme "
+                         "in scope has dated evidence")
+    if h.get("why_theme_tail"):
+        why += (f"; ENERGY_TRANSITION is live from {et['live_from']} but scoped to oil, gas and coal reserves and refining, which {maker} "
+                f"does not hold, so {h['why_theme_tail']} stays here" if et_live else
+                f"; no disruption theme is live for {maker}, so {h['why_theme_tail']} stays here")
     cat3 = (f"(3) {fy_now} profit per share guide {eps_fig} ({ge['doc']}): the company's own read of the year" if ge else
             f"(3) A {fy_now} profit per share guide in numbers — none yet")
     cat4 = (f"(4) {fy_now} sales and revenues guide {rev_fig} ({gr['doc']}): volume, price and currency in one number" if gr else
@@ -347,9 +383,11 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     r = latest["raw"]
     if "ci_m" in r:        # the 2011 segments read as the successors of the Machinery and Engines lines
+        e_name, e, e0 = (("Energy & Transportation", r["et_m"], r["et_prior_m"]) if "et_m" in r else
+                         ("Power Systems", r["ps_m"], r["ps_prior_m"]))
         volumes = (f"Machinery (Construction Industries ${r['ci_m']:,}M and Resource Industries ${r['ri_m']:,}M against "
-                   f"${r['ci_prior_m']:,}M and ${r['ri_prior_m']:,}M a year earlier, {latest['mach_pct']:+.1f}%), Engines (Power Systems "
-                   f"${r['ps_m']:,}M against ${r['ps_prior_m']:,}M, {latest['eng_pct']:+.1f}%), as the release's sales and revenues by "
+                   f"${r['ci_prior_m']:,}M and ${r['ri_prior_m']:,}M a year earlier, {latest['mach_pct']:+.1f}%), Engines ({e_name} "
+                   f"${e:,}M against ${e0:,}M, {latest['eng_pct']:+.1f}%), as the release's sales and revenues by "
                    "segment show them" + (f"; {latest['note']}" if latest.get("note") else ""))
     else:
         volumes = (f"Machinery sales ${r['mach_m']:,}M against ${r['mach_prior_m']:,}M a year earlier ({latest['mach_pct']:+.1f}%), "

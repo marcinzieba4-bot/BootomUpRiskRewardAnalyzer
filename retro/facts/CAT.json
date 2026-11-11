@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for CAT retrospectives (retro/build_cat.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2013 were accepted before the open on their release days, except Q1 2008's and Q4 2010's (during the session). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it, in either form) and the latest declared dividend (else the vintage's). Caterpillar's fiscal year is the calendar year; the recasts of the FY2006-FY2008 statements (8-K of 2009-05-14) and of the FY2008-FY2010 statements for the 2011 segments (8-K of 2011-05-23) are vintages of their own. EPS is profit per share - diluted, replaced by the company's figure where a filing publishes one excluding only one-offs (2001; 2009's $2.18 excluding redundancy costs); 2011 is $7.40 as reported, not the $7.79 excluding Bucyrus (a whole business, not a one-off), and 2012 is $8.48 as reported, with the Siwei impairment in it (no figure excluding it is published). From the 2011 segments a print reports Construction Industries, Resource Industries and Power Systems ('ci_m', 'ri_m', 'ps_m' in 'raw'), read as the successors of the Machinery and Engines lines ('lines_basis'). Per-share figures published before the 2-for-1 split of 2005-07-14 carry their publication dates ('eps_published', 'shares_published') so the split restates them. Guides: sales and revenues as a dollar level or range ('rev_guide_usd_b', read against the last full year) or as growth ('rev_guide_pct', on the last full year unless 'rev_growth_base_b' names another base); profit per share as a dollar level or range ('eps_guide'; the 2009 guides excluding redundancy costs, with the inclusive figure in 'eps_guide_note'; the 2011 guides including Bucyrus once it closed, with the figure excluding it in 'eps_guide_note'; 'near' and 'about' levels read as numbers) or as growth ('eps_growth', on the last full year unless 'eps_growth_base' names another base); words and one-sided bounds in 'rev_words' give no field. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
+ "_doc": "Point-in-time fact sheet for CAT retrospectives (retro/build_cat.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2013 were accepted before the open on their release days, except Q1 2008's and Q4 2010's (during the session). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it, in either form) and the latest declared dividend (else the vintage's). Caterpillar's fiscal year is the calendar year; the recasts of the FY2006-FY2008 statements (8-K of 2009-05-14) and of the FY2008-FY2010 statements for the 2011 segments (8-K of 2011-05-23) are vintages of their own. EPS is profit per share - diluted, replaced by the company's figure where a filing publishes one excluding only one-offs (2001; 2009's $2.18 excluding redundancy costs); 2011 is $7.40 as reported, not the $7.79 excluding Bucyrus (a whole business, not a one-off), and 2012 is $8.48 as reported, with the Siwei impairment in it (no figure excluding it is published). From the 2011 segments a print reports Construction Industries, Resource Industries and Power Systems ('ci_m', 'ri_m', 'ps_m' in 'raw'), read as the successors of the Machinery and Engines lines ('lines_basis'). Per-share figures published before the 2-for-1 split of 2005-07-14 carry their publication dates ('eps_published', 'shares_published') so the split restates them. Guides: sales and revenues as a dollar level or range ('rev_guide_usd_b', read against the last full year) or as growth ('rev_guide_pct', on the last full year unless 'rev_growth_base_b' names another base); profit per share as a dollar level or range ('eps_guide'; the 2009 guides excluding redundancy costs, with the inclusive figure in 'eps_guide_note'; the 2011 guides including Bucyrus once it closed, with the figure excluding it in 'eps_guide_note'; 'near' and 'about' levels read as numbers) or as growth ('eps_growth', on the last full year unless 'eps_growth_base' names another base); words and one-sided bounds in 'rev_words' give no field. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. From Q1 2014 Power Systems is Energy & Transportation ('et_m' in 'raw'); from the FY2013 vintage 'why_theme_tail' names the 10-K's carbon-emissions or climate-change wording, which the builder keeps in the 'why' with a clause that follows ENERGY_TRANSITION's status on AS_OF (live from 2015-12-12, scoped to reserves and refining). From 2013 the company's figure excluding restructuring costs (and, from the change to mark-to-market pension and OPEB accounting effective January 1, 2016, mark-to-market gains and losses; for 2016 also a goodwill impairment and a deferred tax valuation allowance) is the ACN-rule figure; the 8-K of 2016-05-16 recasting 2011-2015 for that change is a vintage of its own. A print may republish an earlier year's company figure ('restates', EPS only), which replaces it until a 10-K vintage published after the print. No later fact enters through this file.",
  "ticker": "CAT",
  "sources": {
   "CT1": {
@@ -386,6 +386,181 @@
    "title": "Caterpillar 8-K: third-quarter 2013 results release",
    "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913077181/a13-22637_1ex99d1.htm",
    "supports": "third-quarter 2013 sales and revenues by segment and statement of results; 2013 outlook: sales and revenues about $55 billion, profit about $5.50 per share; preliminary 2014 sales and revenues flat with 2013 in a plus or minus 5 percent range"
+  },
+  "CT56": {
+   "published": "2014-01-27",
+   "filed": "2014-01-27 08:32 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2013 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465914004203/a14-4305_1ex99d1.htm",
+   "supports": "fourth-quarter 2013 sales and revenues by segment and statement of results, full-year 2013 actuals; 2014 outlook: sales and revenues about $56 billion plus or minus 5 percent, profit $5.85 per share excluding restructuring costs ($5.30 including them)"
+  },
+  "CT57": {
+   "published": "2014-02-18",
+   "filed": "2014-02-18 14:25 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823014000058/cat_exx13x12312013.htm",
+   "title": "Caterpillar FY2013 10-K and Exhibit 13",
+   "supports": "2009-2013 sales and revenues and profit per share - diluted (five-year summary), 2011-2013 statement of results, 2012-2013 external sales by segment, 2013 cash, operating cash flow and dividends; Items 1 and 1A"
+  },
+  "CT58": {
+   "published": "2014-04-24",
+   "filed": "2014-04-24 08:35 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2014 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465914029739/a14-11018_1ex99d1.htm",
+   "supports": "first-quarter 2014 sales and revenues by segment and statement of results; 2014 outlook: sales and revenues unchanged, profit $6.10 per share excluding restructuring costs ($5.55 including them)"
+  },
+  "CT59": {
+   "published": "2014-06-11",
+   "filed": "2014-06-11 13:03 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823014000219/dividendpressrelease.htm",
+   "title": "Caterpillar 8-K: June 2014 dividend declaration (Exhibit 99.1)",
+   "supports": "quarterly dividend $0.70"
+  },
+  "CT60": {
+   "published": "2014-07-24",
+   "filed": "2014-07-24 08:49 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2014 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465914053146/a14-17612_1ex99d1.htm",
+   "supports": "second-quarter 2014 sales and revenues by segment and statement of results; 2014 outlook: sales and revenues $54 to $56 billion, profit $6.20 per share excluding restructuring costs ($5.75 including them)"
+  },
+  "CT61": {
+   "published": "2014-10-23",
+   "filed": "2014-10-23 08:32 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2014 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465914073213/a14-22847_1ex99d1.htm",
+   "supports": "third-quarter 2014 sales and revenues by segment and statement of results; 2014 outlook: sales and revenues about $55 billion, profit $6.50 per share excluding restructuring costs ($6.00 including them); preliminary 2015 sales and revenues flat to slightly up"
+  },
+  "CT62": {
+   "published": "2015-01-27",
+   "filed": "2015-01-27 08:30 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2014 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465915004614/a15-3146_1ex99d1.htm",
+   "supports": "fourth-quarter 2014 sales and revenues by segment and statement of results, full-year 2014 actuals and 2013 profit per share excluding restructuring costs; 2015 outlook: sales and revenues about $50 billion, profit $4.75 per share excluding restructuring costs ($4.60 including them)"
+  },
+  "CT63": {
+   "published": "2015-02-18",
+   "filed": "2015-02-17 17:15 ET (after the close)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823015000061/cat_exx13x12312014.htm",
+   "title": "Caterpillar FY2014 10-K and Exhibit 13",
+   "supports": "2010-2014 sales and revenues and profit per share - diluted (five-year summary), 2012-2014 statement of results, 2013-2014 external sales by segment, 2014 cash, operating cash flow and dividends; Items 1 and 1A"
+  },
+  "CT64": {
+   "published": "2015-04-23",
+   "filed": "2015-04-23 08:30 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2015 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465915029550/a15-9621_1ex99d1.htm",
+   "supports": "first-quarter 2015 sales and revenues by segment and statement of results; 2015 outlook: sales and revenues about $50 billion, profit $5.00 per share excluding restructuring costs ($4.70 including them)"
+  },
+  "CT65": {
+   "published": "2015-06-10",
+   "filed": "2015-06-10 14:06 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823015000205/exhibit991_dividendpressre.htm",
+   "title": "Caterpillar 8-K: June 2015 dividend declaration (Exhibit 99.1)",
+   "supports": "quarterly dividend $0.77"
+  },
+  "CT66": {
+   "published": "2015-07-23",
+   "filed": "2015-07-23 08:16 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2015 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465915052735/a15-14853_1ex99d1.htm",
+   "supports": "second-quarter 2015 sales and revenues by segment and statement of results; 2015 outlook: sales and revenues about $49 billion, profit $5.00 per share excluding restructuring costs ($4.70 including them)"
+  },
+  "CT67": {
+   "published": "2015-09-24",
+   "filed": "2015-09-24 09:03 ET (before the open)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823015000301/exhibit991_september24.htm",
+   "title": "Caterpillar 8-K, Items 2.05 and 7.01: restructuring and cost reduction plans (Exhibit 99.1)",
+   "supports": "2015 sales and revenues outlook about $48 billion (no profit outlook); 2016 sales and revenues about 5 percent below 2015"
+  },
+  "CT68": {
+   "published": "2015-10-22",
+   "filed": "2015-10-22 07:30 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2015 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465915072042/a15-21496_1ex99d1.htm",
+   "supports": "third-quarter 2015 sales and revenues by segment and statement of results; 2015 outlook: sales and revenues about $48 billion, profit $4.60 per share excluding restructuring costs (about $3.70 including them); preliminary 2016 sales and revenues down about 5 percent"
+  },
+  "CT69": {
+   "published": "2016-01-28",
+   "filed": "2016-01-28 07:39 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2015 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465916091860/a16-2992_1ex99d1.htm",
+   "supports": "fourth-quarter 2015 sales and revenues by segment and statement of results, full-year 2015 actuals; 2016 outlook: sales and revenues $40 to $44 billion, profit $4.00 per share excluding restructuring costs (about $3.50 including them)"
+  },
+  "CT70": {
+   "published": "2016-02-16",
+   "filed": "2016-02-16 11:20 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000410/cat_10-kx12312015.htm",
+   "title": "Caterpillar FY2015 10-K",
+   "supports": "2011-2015 sales and revenues and profit per share - diluted (five-year summary), 2013-2015 statement of results, 2014-2015 external sales by segment, 2015 cash, operating cash flow and dividends; Items 1 and 1A"
+  },
+  "CT71": {
+   "published": "2016-04-22",
+   "filed": "2016-04-22 07:45 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000503/cat_exx991xq1x2016xearning.htm",
+   "supports": "first-quarter 2016 sales and revenues by segment and statement of results, the year-ago quarter and 2015 recast for mark-to-market pension accounting; 2016 outlook: sales and revenues $40 to $42 billion, profit $3.70 per share excluding restructuring costs ($3.00 including them)"
+  },
+  "CT72": {
+   "published": "2016-05-16",
+   "filed": "2016-05-16 12:40 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000533/cat_8-kx12312015.htm",
+   "title": "Caterpillar 8-K, Item 8.01: the FY2015 10-K's Items 1, 6, 7 and 8 recast for mark-to-market pension and OPEB accounting and the 2016 segments (Exhibits 99.1-99.4)",
+   "supports": "2011-2015 profit per share - diluted as recast (five-year summary), 2013-2015 statement of results, 2014 and 2015 profit per share excluding restructuring costs and mark-to-market losses, 2014-2015 external sales of the 2016 segments, 2015 cash, operating cash flow and dividends"
+  },
+  "CT73": {
+   "published": "2016-07-26",
+   "filed": "2016-07-26 07:47 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000611/cat_exx991xq2x2016xearning.htm",
+   "supports": "second-quarter 2016 sales and revenues by segment and statement of results; 2016 outlook: sales and revenues $40.0 to $40.5 billion, profit about $3.55 per share excluding restructuring costs (about $2.75 including them)"
+  },
+  "CT74": {
+   "published": "2016-10-25",
+   "filed": "2016-10-25 09:05 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000702/cat_exx991xq3x2016xearning.htm",
+   "supports": "third-quarter 2016 sales and revenues by segment and statement of results; 2016 outlook: sales and revenues about $39 billion, profit $3.25 per share excluding restructuring costs ($2.35 including them); preliminary 2017 sales and revenues not significantly different"
+  },
+  "CT75": {
+   "published": "2017-01-26",
+   "filed": "2017-01-26 07:35 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000034/cat_exx991xq4x2016xearning.htm",
+   "supports": "fourth-quarter 2016 sales and revenues by segment and statement of results, full-year 2016 actuals and adjusted profit per share for 2016 and 2015; 2017 outlook: sales and revenues $36 to $39 billion, adjusted profit about $2.90 per share (about $2.30 including restructuring costs)"
+  },
+  "CT76": {
+   "published": "2017-02-15",
+   "filed": "2017-02-15 13:45 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000041/cat_10-kx12312016.htm",
+   "title": "Caterpillar FY2016 10-K",
+   "supports": "2012-2016 sales and revenues and profit per share - diluted (five-year summary), 2014-2016 statement of results, 2015-2016 external sales by segment, 2016 cash, operating cash flow and dividends; Items 1 and 1A"
+  },
+  "CT77": {
+   "published": "2017-04-25",
+   "filed": "2017-04-25 07:38 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2017 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000135/cat_exx991xq1x2017xearning.htm",
+   "supports": "first-quarter 2017 sales and revenues by segment and statement of results; 2017 outlook: sales and revenues $38 to $41 billion, profit about $3.75 per share excluding restructuring costs (about $2.10 including them)"
+  },
+  "CT78": {
+   "published": "2017-06-14",
+   "filed": "2017-06-14 10:21 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000172/finaldividendpressrelease_.htm",
+   "title": "Caterpillar 8-K: June 2017 dividend declaration (Exhibit 99.1)",
+   "supports": "quarterly dividend $0.78"
+  },
+  "CT79": {
+   "published": "2017-07-25",
+   "filed": "2017-07-25 07:35 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2017 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000226/cat_exx991xq2x2017xearning.htm",
+   "supports": "second-quarter 2017 sales and revenues by segment and statement of results; 2017 outlook: sales and revenues $42 to $44 billion, adjusted profit about $5.00 per share (about $3.50 including restructuring costs and the IronPlanet gain)"
+  },
+  "CT80": {
+   "published": "2017-10-24",
+   "filed": "2017-10-24 07:41 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2017 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000298/cat_exx991xq3x2017xearning.htm",
+   "supports": "third-quarter 2017 sales and revenues by segment and statement of results; 2017 outlook: sales and revenues about $44 billion, adjusted profit about $6.25 per share (about $4.60 including restructuring costs and the IronPlanet gain)"
   }
  },
  "history_vintages": [
@@ -1794,6 +1969,781 @@
    "groups_basis": "FY12 external sales of the four reportable segments (FY2012 10-K; All Other and corporate items left out)",
    "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')",
    "kind": "CYCLICAL"
+  },
+  {
+   "published": "2014-02-18",
+   "sources": [
+    "CT57"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY13",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2013 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Additional carbon emissions constraints may impact our capital expenditures, results of operations and competitive position.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K",
+   "why_theme_tail": "the carbon-emissions wording",
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31"
+   },
+   "eps_gaap": {
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48,
+    "2013": 5.75
+   },
+   "eps_normalized": {
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48,
+    "2013": 5.75
+   },
+   "eps_sources": {
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT40",
+    "2010": "CT57",
+    "2011": "CT57",
+    "2012": "CT57",
+    "2013": "CT57"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays GAAP: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); 2012 stays GAAP, with the $0.87 a share Siwei goodwill impairment in it: no figure excluding it is published; 2013 stays $5.75 as reported, with about $200 million of restructuring costs in it: no figure excluding them is published; no other year has a published figure excluding one-offs, so they stay as reported",
+   "revenue_usd_b": {
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138,
+    "2012": 65.875,
+    "2013": 55.656
+   },
+   "revenue_sources": {
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT57",
+    "2010": "CT57",
+    "2011": "CT57",
+    "2012": "CT57",
+    "2013": "CT57"
+   },
+   "diluted_shares_m": {
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1,
+    "2012": 669.6,
+    "2013": 658.6
+   },
+   "shares_sources": {
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT51",
+    "2011": "CT57",
+    "2012": "CT57",
+    "2013": "CT57"
+   },
+   "shares_published": {},
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 10.11,
+   "prev_fy_op_margin_note": "operating profit $5,628M / sales and revenues $55,656M (FY2013 10-K)",
+   "prev_fy_pretax_margin": 9.21,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $5,128M / sales and revenues $55,656M (FY2013 10-K)",
+   "prev_fy_sales_growth": -15.5,
+   "prev_fy_mach_pct": -21.7,
+   "prev_fy_eng_pct": -4.6,
+   "tax_rate": 0.2572,
+   "tax_note": "provision for income taxes $1,319M / consolidated profit before taxes $5,128M (FY2013 10-K)",
+   "cash_b": 6.081,
+   "cash_label": "FY13",
+   "cash_note": "cash and short-term investments $6,081M at December 31, 2013 (FY2013 10-K)",
+   "ocf_b": 10.191,
+   "ocf_note": "consolidated net cash provided by operating activities $10,191M in 2013 (FY2013 10-K)",
+   "dividend_annual": 2.32,
+   "dividend_note": "cash dividends declared per common share $2.32 in 2013 (FY2013 10-K)",
+   "cash_return_text": "dividends paid $1,111M and treasury shares purchased $2,000M in 2013 (FY2013 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     18.445,
+     -4.6
+    ],
+    [
+     "Resource Industries",
+     13.27,
+     -37.3
+    ],
+    [
+     "Power Systems",
+     20.155,
+     -4.6
+    ],
+    [
+     "Financial Products Segment",
+     3.224,
+     4.3
+    ]
+   ],
+   "groups_basis": "FY13 external sales of the four reportable segments (FY2013 10-K; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2015-02-18",
+   "sources": [
+    "CT63"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY14",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2014 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K",
+   "why_theme_tail": "the climate-change wording",
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31"
+   },
+   "eps_gaap": {
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48,
+    "2013": 5.75,
+    "2014": 5.88
+   },
+   "eps_normalized": {
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48,
+    "2013": 5.97,
+    "2014": 6.38
+   },
+   "eps_sources": {
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT40",
+    "2010": "CT63",
+    "2011": "CT63",
+    "2012": "CT63",
+    "2013": "CT63",
+    "2014": "CT63"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays GAAP: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); 2012 stays GAAP, with the $0.87 a share Siwei goodwill impairment in it: no figure excluding it is published; 2013 $5.97 and 2014 $6.38, the company's profit per share excluding restructuring costs (FY2014 10-K; GAAP $5.75 and $5.88); no other year has a published figure excluding one-offs, so they stay as reported",
+   "revenue_usd_b": {
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138,
+    "2012": 65.875,
+    "2013": 55.656,
+    "2014": 55.184
+   },
+   "revenue_sources": {
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT57",
+    "2010": "CT63",
+    "2011": "CT63",
+    "2012": "CT63",
+    "2013": "CT63",
+    "2014": "CT63"
+   },
+   "diluted_shares_m": {
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1,
+    "2012": 669.6,
+    "2013": 658.6,
+    "2014": 628.9
+   },
+   "shares_sources": {
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT51",
+    "2011": "CT57",
+    "2012": "CT63",
+    "2013": "CT63",
+    "2014": "CT63"
+   },
+   "shares_published": {},
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 9.65,
+   "prev_fy_op_margin_note": "operating profit $5,328M / sales and revenues $55,184M (FY2014 10-K)",
+   "prev_fy_pretax_margin": 9.21,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $5,083M / sales and revenues $55,184M (FY2014 10-K)",
+   "prev_fy_sales_growth": -0.8,
+   "prev_fy_mach_pct": -6.8,
+   "prev_fy_eng_pct": 7.8,
+   "tax_rate": 0.2715,
+   "tax_note": "provision for income taxes $1,380M / consolidated profit before taxes $5,083M (FY2014 10-K)",
+   "cash_b": 7.341,
+   "cash_label": "FY14",
+   "cash_note": "cash and short-term investments $7,341M at December 31, 2014 (FY2014 10-K)",
+   "ocf_b": 8.057,
+   "ocf_note": "consolidated net cash provided by operating activities $8,057M in 2014 (FY2014 10-K)",
+   "dividend_annual": 2.7,
+   "dividend_note": "cash dividends declared per common share $2.70 in 2014 (FY2014 10-K)",
+   "cash_return_text": "dividends paid $1,620M and treasury shares purchased $4,238M in 2014 (FY2014 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     19.362,
+     4.5
+    ],
+    [
+     "Resource Industries",
+     8.921,
+     -24.4
+    ],
+    [
+     "Energy & Transportation",
+     21.727,
+     7.8
+    ],
+    [
+     "Financial Products Segment",
+     3.313,
+     2.8
+    ]
+   ],
+   "groups_basis": "FY14 external sales of the four reportable segments (FY2014 10-K; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2016-02-16",
+   "sources": [
+    "CT70"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY15",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2015 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K",
+   "why_theme_tail": "the climate-change wording",
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31"
+   },
+   "eps_gaap": {
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48,
+    "2013": 5.75,
+    "2014": 5.88,
+    "2015": 3.5
+   },
+   "eps_normalized": {
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48,
+    "2013": 5.97,
+    "2014": 6.38,
+    "2015": 4.64
+   },
+   "eps_sources": {
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT40",
+    "2010": "CT63",
+    "2011": "CT70",
+    "2012": "CT70",
+    "2013": "CT63",
+    "2014": "CT70",
+    "2015": "CT70"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays GAAP: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); 2012 stays GAAP, with the $0.87 a share Siwei goodwill impairment in it: no figure excluding it is published; 2013 $5.97 excluding restructuring costs (FY2014 10-K, the latest filing that publishes it; GAAP $5.75); 2014 $6.38 and 2015 $4.64 excluding restructuring costs (FY2015 10-K; GAAP $5.88 and $3.50); no other year has a published figure excluding one-offs, so they stay as reported",
+   "revenue_usd_b": {
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138,
+    "2012": 65.875,
+    "2013": 55.656,
+    "2014": 55.184,
+    "2015": 47.011
+   },
+   "revenue_sources": {
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT57",
+    "2010": "CT63",
+    "2011": "CT70",
+    "2012": "CT70",
+    "2013": "CT70",
+    "2014": "CT70",
+    "2015": "CT70"
+   },
+   "diluted_shares_m": {
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1,
+    "2012": 669.6,
+    "2013": 658.6,
+    "2014": 628.9,
+    "2015": 601.3
+   },
+   "shares_sources": {
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT51",
+    "2011": "CT57",
+    "2012": "CT63",
+    "2013": "CT70",
+    "2014": "CT70",
+    "2015": "CT70"
+   },
+   "shares_published": {},
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 6.93,
+   "prev_fy_op_margin_note": "operating profit $3,256M / sales and revenues $47,011M (FY2015 10-K)",
+   "prev_fy_pretax_margin": 6.07,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $2,855M / sales and revenues $47,011M (FY2015 10-K)",
+   "prev_fy_sales_growth": -14.8,
+   "prev_fy_mach_pct": -14.7,
+   "prev_fy_eng_pct": -17.4,
+   "tax_rate": 0.2599,
+   "tax_note": "provision for income taxes $742M / consolidated profit before taxes $2,855M (FY2015 10-K)",
+   "cash_b": 6.46,
+   "cash_label": "FY15",
+   "cash_note": "cash and short-term investments $6,460M at December 31, 2015 (FY2015 10-K)",
+   "ocf_b": 6.675,
+   "ocf_note": "consolidated net cash provided by operating activities $6,675M in 2015 (FY2015 10-K)",
+   "dividend_annual": 3.01,
+   "dividend_note": "cash dividends declared per common share $3.01 in 2015 (FY2015 10-K)",
+   "cash_return_text": "dividends paid $1,757M and treasury shares purchased $2,025M in 2015 (FY2015 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     16.568,
+     -14.4
+    ],
+    [
+     "Resource Industries",
+     7.551,
+     -15.4
+    ],
+    [
+     "Energy & Transportation",
+     17.938,
+     -17.4
+    ],
+    [
+     "Financial Products Segment",
+     3.078,
+     -7.1
+    ]
+   ],
+   "groups_basis": "FY15 external sales of the four reportable segments (FY2015 10-K; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2016-05-16",
+   "sources": [
+    "CT72"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY15",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2015 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K",
+   "why_theme_tail": "the climate-change wording",
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31"
+   },
+   "eps_gaap": {
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 4.48,
+    "2012": 8.06,
+    "2013": 9.95,
+    "2014": 3.9,
+    "2015": 4.18
+   },
+   "eps_normalized": {
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 4.48,
+    "2012": 8.06,
+    "2013": 5.97,
+    "2014": 7.15,
+    "2015": 5.47
+   },
+   "eps_sources": {
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT40",
+    "2010": "CT63",
+    "2011": "CT72",
+    "2012": "CT72",
+    "2013": "CT63",
+    "2014": "CT72",
+    "2015": "CT72"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays GAAP: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); 2012 stays GAAP, with the $0.87 a share Siwei goodwill impairment in it: no figure excluding it is published; the 8-K of 2016-05-16 recasts 2011-2015 for mark-to-market pension and OPEB accounting, effective January 1, 2016 (a vintage of its own, the MSFT recast rule; 2006-2010 stay as published, a seam): 2011 $4.48 and 2012 $8.06 as recast, with their actuarial gains and losses in them, as no figure excluding them is published ($7.40 and $8.48 before the recast); 2013 is $9.95 as recast, with $3,441 million of mark-to-market gains in it, so the company's $5.97 excluding restructuring costs stands (FY2014 10-K, the latest filing that publishes a figure for 2013 excluding one-offs, on the earlier pension accounting); 2014 $7.15 and 2015 $5.47 excluding restructuring costs and mark-to-market losses (recast; GAAP $3.90 and $4.18); no other year has a published figure excluding one-offs, so they stay as reported",
+   "revenue_usd_b": {
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138,
+    "2012": 65.875,
+    "2013": 55.656,
+    "2014": 55.184,
+    "2015": 47.011
+   },
+   "revenue_sources": {
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT57",
+    "2010": "CT63",
+    "2011": "CT72",
+    "2012": "CT72",
+    "2013": "CT72",
+    "2014": "CT72",
+    "2015": "CT72"
+   },
+   "diluted_shares_m": {
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1,
+    "2012": 669.6,
+    "2013": 658.6,
+    "2014": 628.9,
+    "2015": 601.3
+   },
+   "shares_sources": {
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT51",
+    "2011": "CT57",
+    "2012": "CT63",
+    "2013": "CT72",
+    "2014": "CT72",
+    "2015": "CT72"
+   },
+   "shares_published": {},
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 8.05,
+   "prev_fy_op_margin_note": "operating profit $3,785M / sales and revenues $47,011M (FY2015 recast, 8-K of 2016-05-16)",
+   "prev_fy_pretax_margin": 7.32,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $3,439M / sales and revenues $47,011M (FY2015 recast, 8-K of 2016-05-16)",
+   "prev_fy_sales_growth": -14.8,
+   "prev_fy_mach_pct": -14.1,
+   "prev_fy_eng_pct": -17.0,
+   "tax_rate": 0.2664,
+   "tax_note": "provision for income taxes $916M / consolidated profit before taxes $3,439M (FY2015 recast, 8-K of 2016-05-16)",
+   "cash_b": 6.46,
+   "cash_label": "FY15",
+   "cash_note": "cash and short-term investments $6,460M at December 31, 2015 (FY2015 recast, 8-K of 2016-05-16)",
+   "ocf_b": 6.675,
+   "ocf_note": "consolidated net cash provided by operating activities $6,675M in 2015 (FY2015 recast, 8-K of 2016-05-16)",
+   "dividend_annual": 3.01,
+   "dividend_note": "cash dividends declared per common share $3.01 in 2015 (FY2015 recast, 8-K of 2016-05-16)",
+   "cash_return_text": "dividends paid $1,757M and treasury shares purchased $2,025M in 2015 (FY2015 recast, 8-K of 2016-05-16)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     17.797,
+     -13.6
+    ],
+    [
+     "Resource Industries",
+     7.739,
+     -15.3
+    ],
+    [
+     "Energy & Transportation",
+     18.519,
+     -17.0
+    ],
+    [
+     "Financial Products Segment",
+     3.078,
+     -7.1
+    ]
+   ],
+   "groups_basis": "FY15 external sales of the four reportable segments (FY2015 recast, 8-K of 2016-05-16; the 2016 segment definitions; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2017-02-15",
+   "sources": [
+    "CT76"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY16",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2016 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in periods of economic weakness characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K",
+   "why_theme_tail": "the climate-change wording",
+   "fiscal_year_ends": {
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31"
+   },
+   "eps_gaap": {
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 4.48,
+    "2012": 8.06,
+    "2013": 9.95,
+    "2014": 3.9,
+    "2015": 4.18,
+    "2016": -0.11
+   },
+   "eps_normalized": {
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 4.48,
+    "2012": 8.06,
+    "2013": 5.97,
+    "2014": 7.15,
+    "2015": 5.35,
+    "2016": 3.42
+   },
+   "eps_sources": {
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT40",
+    "2010": "CT63",
+    "2011": "CT72",
+    "2012": "CT76",
+    "2013": "CT63",
+    "2014": "CT72",
+    "2015": "CT76",
+    "2016": "CT76"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays GAAP: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); 2012 stays GAAP, with the $0.87 a share Siwei goodwill impairment in it: no figure excluding it is published; 2011 $4.48 (8-K of 2016-05-16) and 2012 $8.06 (FY2016 10-K) as recast for mark-to-market pension and OPEB accounting, with their actuarial gains and losses in them ($7.40 and $8.48 before the recast); 2006-2010 stay as published, a seam; 2013 $5.97 excluding restructuring costs (FY2014 10-K, the latest filing that publishes a figure for 2013 excluding one-offs; GAAP $9.95 as recast); 2014 $7.15 excluding restructuring costs and mark-to-market losses (8-K of 2016-05-16, the latest filing that publishes it; GAAP $3.90); 2015 $5.35 and 2016 $3.42, the company's adjusted profit per share, excluding restructuring costs, mark-to-market losses and, in 2016, a goodwill impairment and a deferred tax valuation allowance (FY2016 10-K; GAAP $4.18 and $(0.11)); no other year has a published figure excluding one-offs, so they stay as reported",
+   "revenue_usd_b": {
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138,
+    "2012": 65.875,
+    "2013": 55.656,
+    "2014": 55.184,
+    "2015": 47.011,
+    "2016": 38.537
+   },
+   "revenue_sources": {
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT57",
+    "2010": "CT63",
+    "2011": "CT72",
+    "2012": "CT76",
+    "2013": "CT76",
+    "2014": "CT76",
+    "2015": "CT76",
+    "2016": "CT76"
+   },
+   "diluted_shares_m": {
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1,
+    "2012": 669.6,
+    "2013": 658.6,
+    "2014": 628.9,
+    "2015": 601.3,
+    "2016": 584.3
+   },
+   "shares_sources": {
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT51",
+    "2011": "CT57",
+    "2012": "CT63",
+    "2013": "CT72",
+    "2014": "CT76",
+    "2015": "CT76",
+    "2016": "CT76"
+   },
+   "shares_published": {},
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 1.29,
+   "prev_fy_op_margin_note": "operating profit $498M / sales and revenues $38,537M (FY2016 10-K)",
+   "prev_fy_pretax_margin": 0.36,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $139M / sales and revenues $38,537M (FY2016 10-K)",
+   "prev_fy_sales_growth": -18.0,
+   "prev_fy_mach_pct": -16.4,
+   "prev_fy_eng_pct": -22.2,
+   "tax_rate": 1.3813,
+   "tax_note": "provision for income taxes $192M / consolidated profit before taxes $139M (FY2016 10-K)",
+   "cash_b": 7.168,
+   "cash_label": "FY16",
+   "cash_note": "cash and short-term investments $7,168M at December 31, 2016 (FY2016 10-K)",
+   "ocf_b": 5.608,
+   "ocf_note": "consolidated net cash provided by operating activities $5,608M in 2016 (FY2016 10-K)",
+   "dividend_annual": 3.08,
+   "dividend_note": "cash dividends declared per common share $3.08 in 2016 (FY2016 10-K)",
+   "cash_return_text": "dividends paid $1,799M and no treasury shares purchased in 2016 (FY2016 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     15.612,
+     -12.3
+    ],
+    [
+     "Resource Industries",
+     5.726,
+     -26.0
+    ],
+    [
+     "Energy & Transportation",
+     14.411,
+     -22.2
+    ],
+    [
+     "Financial Products Segment",
+     2.993,
+     -2.8
+    ]
+   ],
+   "groups_basis": "FY16 external sales of the four reportable segments (FY2016 10-K; the 2016 segment definitions; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release",
+   "kind": "CYCLICAL"
   }
  ],
  "prints": [
@@ -2789,6 +3739,680 @@
    "cash_return_text": "We repurchased $1 billion of stock in the third quarter of 2013 in addition to the $1 billion repurchased in the second quarter of 2013.",
    "next_print": "Q4 2013 print (late January)",
    "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q4 2013",
+   "fy": 2013,
+   "q": 4,
+   "published": "2014-01-27",
+   "source": "CT56",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 08:32 ET",
+   "period_end": "2013-12-31",
+   "raw": {
+    "ci_m": 4851,
+    "ci_prior_m": 4028,
+    "ri_m": 3019,
+    "ri_prior_m": 5776,
+    "ps_m": 5565,
+    "ps_prior_m": 5307,
+    "rev_m": 14402,
+    "rev_prior_m": 16075,
+    "oi_m": 1452,
+    "oi_prior_m": 1038,
+    "diluted_shares_m": 649.6
+   },
+   "sales_b": 14.402,
+   "sales_pct": -10.4,
+   "mach_pct": -19.7,
+   "eng_pct": 4.9,
+   "op_margin": 10.08,
+   "op_margin_bp": 362.5,
+   "eps_q": 1.54,
+   "eps_q_prior": 1.04,
+   "eps_pct": 48.1,
+   "diluted_shares_m": 649.6,
+   "cash_return_text": "We are also announcing our intention to repurchase approximately $1.7 billion of Caterpillar common stock during the first quarter of 2014.",
+   "next_print": "Q1 2014 print (late April)",
+   "note": "the release: 'Fourth-quarter 2012 included two large items—profit was negatively impacted by a goodwill impairment charge of $580 million, or $0.87 per share, but was positively impacted by a $300 million tax settlement, or $0.45 per share.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 5.75,
+    "revenue_usd_b": 55.656,
+    "diluted_shares_m": 658.6,
+    "normalization_note": "FY2013 $5.75, profit per share - diluted as reported (Q4 2013 release), with about $200 million of restructuring costs in it: the release publishes no figure excluding them",
+    "op_margin": 10.11,
+    "pretax_margin": 9.21,
+    "pretax_margin_note": "FY13 consolidated profit before taxes $5,128M / sales and revenues $55,656M (CT56)",
+    "sales_growth": -15.5,
+    "mach_pct": null,
+    "eng_pct": null,
+    "tax_rate": 0.2572,
+    "tax_note": "FY13 provision for income taxes $1,319M / consolidated profit before taxes $5,128M"
+   }
+  },
+  {
+   "quarter": "Q1 2014",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-04-24",
+   "source": "CT58",
+   "release": "Apr 24",
+   "release_time": "before the open on Apr 24: 8-K accepted 08:35 ET",
+   "period_end": "2014-03-31",
+   "raw": {
+    "ci_m": 5064,
+    "ci_prior_m": 4219,
+    "ri_m": 2123,
+    "ri_prior_m": 3353,
+    "et_m": 4776,
+    "et_prior_m": 4405,
+    "rev_m": 13241,
+    "rev_prior_m": 13210,
+    "oi_m": 1398,
+    "oi_prior_m": 1218,
+    "diluted_shares_m": 639.3
+   },
+   "sales_b": 13.241,
+   "sales_pct": 0.2,
+   "mach_pct": -5.1,
+   "eng_pct": 8.4,
+   "op_margin": 10.56,
+   "op_margin_bp": 133.8,
+   "eps_q": 1.44,
+   "eps_q_prior": 1.31,
+   "eps_pct": 9.9,
+   "diluted_shares_m": 639.3,
+   "cash_return_text": "The company repurchased $1.7 billion of Caterpillar common stock in the first quarter of 2014.",
+   "next_print": "Q2 2014 print (late July)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $1.61.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')"
+  },
+  {
+   "quarter": "Q2 2014",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-07-24",
+   "source": "CT60",
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 08:49 ET",
+   "period_end": "2014-06-30",
+   "raw": {
+    "ci_m": 5407,
+    "ci_prior_m": 4875,
+    "ri_m": 2241,
+    "ri_prior_m": 3135,
+    "et_m": 5175,
+    "et_prior_m": 5263,
+    "rev_m": 14150,
+    "rev_prior_m": 14621,
+    "oi_m": 1475,
+    "oi_prior_m": 1557,
+    "diluted_shares_m": 638.3
+   },
+   "sales_b": 14.15,
+   "sales_pct": -3.2,
+   "mach_pct": -4.5,
+   "eng_pct": -1.7,
+   "op_margin": 10.42,
+   "op_margin_bp": -22.5,
+   "eps_q": 1.57,
+   "eps_q_prior": 1.45,
+   "eps_pct": 8.3,
+   "diluted_shares_m": 638.3,
+   "cash_return_text": "Caterpillar is announcing its intention to repurchase approximately $2.5 billion of Caterpillar common stock during the third quarter of 2014.",
+   "next_print": "Q3 2014 print (late October)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $1.69.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')"
+  },
+  {
+   "quarter": "Q3 2014",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-10-23",
+   "source": "CT61",
+   "release": "Oct 23",
+   "release_time": "before the open on Oct 23: 8-K accepted 08:32 ET",
+   "period_end": "2014-09-30",
+   "raw": {
+    "ci_m": 4471,
+    "ci_prior_m": 4569,
+    "ri_m": 2172,
+    "ri_prior_m": 2668,
+    "et_m": 5585,
+    "et_prior_m": 4922,
+    "rev_m": 13549,
+    "rev_prior_m": 13423,
+    "oi_m": 1392,
+    "oi_prior_m": 1401,
+    "diluted_shares_m": 622.8
+   },
+   "sales_b": 13.549,
+   "sales_pct": 0.9,
+   "mach_pct": -8.2,
+   "eng_pct": 13.5,
+   "op_margin": 10.27,
+   "op_margin_bp": -16.3,
+   "eps_q": 1.63,
+   "eps_q_prior": 1.45,
+   "eps_pct": 12.4,
+   "diluted_shares_m": 622.8,
+   "cash_return_text": "As previously announced, the company repurchased $2.5 billion of Caterpillar common stock during the third quarter of 2014.",
+   "next_print": "Q4 2014 print (late January)",
+   "note": "the release: 'Excluding restructuring costs, third-quarter 2014 profit per share was $1.72.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')"
+  },
+  {
+   "quarter": "Q4 2014",
+   "fy": 2014,
+   "q": 4,
+   "published": "2015-01-27",
+   "source": "CT62",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 08:30 ET",
+   "period_end": "2014-12-31",
+   "raw": {
+    "ci_m": 4420,
+    "ci_prior_m": 4869,
+    "ri_m": 2385,
+    "ri_prior_m": 2649,
+    "et_m": 6191,
+    "et_prior_m": 5565,
+    "rev_m": 14244,
+    "rev_prior_m": 14402,
+    "oi_m": 1063,
+    "oi_prior_m": 1452,
+    "diluted_shares_m": 616.0
+   },
+   "sales_b": 14.244,
+   "sales_pct": -1.1,
+   "mach_pct": -9.5,
+   "eng_pct": 11.2,
+   "op_margin": 7.46,
+   "op_margin_bp": -261.9,
+   "eps_q": 1.23,
+   "eps_q_prior": 1.54,
+   "eps_pct": -20.1,
+   "diluted_shares_m": 616.0,
+   "cash_return_text": "During the year, we repurchased $4.2 billion of Caterpillar stock and increased the quarterly dividend by 17 percent.",
+   "next_print": "Q1 2015 print (late April)",
+   "note": "the release: 'Excluding restructuring costs, fourth-quarter 2014 profit per share was $1.35, compared with profit per share of $1.68 in the fourth quarter of 2013.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 6.38,
+    "revenue_usd_b": 55.184,
+    "diluted_shares_m": 628.9,
+    "normalization_note": "FY2014 $6.38, the company's profit per share excluding restructuring costs (Q4 2014 release; GAAP $5.88)",
+    "op_margin": 9.65,
+    "pretax_margin": 9.21,
+    "pretax_margin_note": "FY14 consolidated profit before taxes $5,083M / sales and revenues $55,184M (CT62)",
+    "sales_growth": -0.8,
+    "mach_pct": null,
+    "eng_pct": null,
+    "tax_rate": 0.2715,
+    "tax_note": "FY14 provision for income taxes $1,380M / consolidated profit before taxes $5,083M"
+   },
+   "restates": {
+    "2013": {
+     "eps": 5.97,
+     "note": "2013 $5.97, the company's profit per share excluding restructuring costs (Q4 2014 release; GAAP $5.75)"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2015",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-04-23",
+   "source": "CT64",
+   "release": "Apr 23",
+   "release_time": "before the open on Apr 23: 8-K accepted 08:30 ET",
+   "period_end": "2015-03-31",
+   "raw": {
+    "ci_m": 4695,
+    "ci_prior_m": 5064,
+    "ri_m": 1928,
+    "ri_prior_m": 2123,
+    "et_m": 4762,
+    "et_prior_m": 4776,
+    "rev_m": 12702,
+    "rev_prior_m": 13241,
+    "oi_m": 1527,
+    "oi_prior_m": 1398,
+    "diluted_shares_m": 612.7
+   },
+   "sales_b": 12.702,
+   "sales_pct": -4.1,
+   "mach_pct": -7.8,
+   "eng_pct": -0.3,
+   "op_margin": 12.02,
+   "op_margin_bp": 146.4,
+   "eps_q": 1.81,
+   "eps_q_prior": 1.44,
+   "eps_pct": 25.7,
+   "diluted_shares_m": 612.7,
+   "cash_return_text": "we repurchased $400 million of common stock in the first quarter of 2015",
+   "next_print": "Q2 2015 print (late July)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $1.86 in the first quarter of 2015, up from $1.61 per share in the first quarter of 2014.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')"
+  },
+  {
+   "quarter": "Q2 2015",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-07-23",
+   "source": "CT66",
+   "release": "Jul 23",
+   "release_time": "before the open on Jul 23: 8-K accepted 08:16 ET",
+   "period_end": "2015-06-30",
+   "raw": {
+    "ci_m": 4441,
+    "ci_prior_m": 5407,
+    "ri_m": 1991,
+    "ri_prior_m": 2241,
+    "et_m": 4544,
+    "et_prior_m": 5175,
+    "rev_m": 12317,
+    "rev_prior_m": 14150,
+    "oi_m": 1130,
+    "oi_prior_m": 1475,
+    "diluted_shares_m": 610.7
+   },
+   "sales_b": 12.317,
+   "sales_pct": -13.0,
+   "mach_pct": -15.9,
+   "eng_pct": -12.2,
+   "op_margin": 9.17,
+   "op_margin_bp": -125.0,
+   "eps_q": 1.16,
+   "eps_q_prior": 1.57,
+   "eps_pct": -26.1,
+   "diluted_shares_m": 610.7,
+   "cash_return_text": "Caterpillar is announcing its intention to repurchase approximately $1.5 billion of Caterpillar common stock during the third quarter of 2015.",
+   "next_print": "Q3 2015 print (late October)",
+   "note": "the release: 'Profit per share – $1.16, or $1.27 excluding restructuring costs'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')"
+  },
+  {
+   "quarter": "Q3 2015",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-10-22",
+   "source": "CT68",
+   "release": "Oct 22",
+   "release_time": "before the open on Oct 22: 8-K accepted 07:30 ET",
+   "period_end": "2015-09-30",
+   "raw": {
+    "ci_m": 3792,
+    "ci_prior_m": 4471,
+    "ri_m": 1796,
+    "ri_prior_m": 2172,
+    "et_m": 4213,
+    "et_prior_m": 5585,
+    "rev_m": 10962,
+    "rev_prior_m": 13549,
+    "oi_m": 713,
+    "oi_prior_m": 1392,
+    "diluted_shares_m": 594.8
+   },
+   "sales_b": 10.962,
+   "sales_pct": -19.1,
+   "mach_pct": -15.9,
+   "eng_pct": -24.6,
+   "op_margin": 6.5,
+   "op_margin_bp": -377.0,
+   "eps_q": 0.62,
+   "eps_q_prior": 1.63,
+   "eps_pct": -62.0,
+   "diluted_shares_m": 594.8,
+   "cash_return_text": "The company repurchased $1.5 billion of Caterpillar common stock during the third quarter of 2015.",
+   "next_print": "Q4 2015 print (late January)",
+   "note": "the release: 'Third-quarter profit per share was $0.62, or $0.75 excluding restructuring costs.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')"
+  },
+  {
+   "quarter": "Q4 2015",
+   "fy": 2015,
+   "q": 4,
+   "published": "2016-01-28",
+   "source": "CT69",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 07:39 ET",
+   "period_end": "2015-12-31",
+   "raw": {
+    "ci_m": 3640,
+    "ci_prior_m": 4420,
+    "ri_m": 1836,
+    "ri_prior_m": 2385,
+    "et_m": 4419,
+    "et_prior_m": 6191,
+    "rev_m": 11030,
+    "rev_prior_m": 14244,
+    "oi_m": -114,
+    "oi_prior_m": 1063,
+    "diluted_shares_m": 582.3
+   },
+   "sales_b": 11.03,
+   "sales_pct": -22.6,
+   "mach_pct": -19.5,
+   "eng_pct": -28.6,
+   "op_margin": -1.03,
+   "op_margin_bp": -849.6,
+   "eps_q": -0.15,
+   "eps_q_prior": 1.23,
+   "eps_pct": -112.2,
+   "diluted_shares_m": 582.3,
+   "cash_return_text": "During the year, we repurchased about $2 billion of Caterpillar stock and increased the quarterly dividend by 10 percent.",
+   "next_print": "Q1 2016 print (late April)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $0.74, compared with $1.35 per share in the fourth quarter of 2014.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives')",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 4.64,
+    "revenue_usd_b": 47.011,
+    "diluted_shares_m": 601.3,
+    "normalization_note": "FY2015 $4.64, the company's profit per share excluding restructuring costs (Q4 2015 release; GAAP $3.50)",
+    "op_margin": 6.93,
+    "pretax_margin": 6.07,
+    "pretax_margin_note": "FY15 consolidated profit before taxes $2,855M / sales and revenues $47,011M (CT69)",
+    "sales_growth": -14.8,
+    "mach_pct": null,
+    "eng_pct": null,
+    "tax_rate": 0.2599,
+    "tax_note": "FY15 provision for income taxes $742M / consolidated profit before taxes $2,855M"
+   }
+  },
+  {
+   "quarter": "Q1 2016",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-04-22",
+   "source": "CT71",
+   "release": "Apr 22",
+   "release_time": "before the open on Apr 22: 8-K accepted 07:45 ET",
+   "period_end": "2016-03-31",
+   "raw": {
+    "ci_m": 4043,
+    "ci_prior_m": 5014,
+    "ri_m": 1449,
+    "ri_prior_m": 1971,
+    "et_m": 3278,
+    "et_prior_m": 4915,
+    "rev_m": 9461,
+    "rev_prior_m": 12702,
+    "oi_m": 494,
+    "oi_prior_m": 1702,
+    "diluted_shares_m": 587.7
+   },
+   "sales_b": 9.461,
+   "sales_pct": -25.5,
+   "mach_pct": -21.4,
+   "eng_pct": -33.3,
+   "op_margin": 5.22,
+   "op_margin_bp": -817.8,
+   "eps_q": 0.46,
+   "eps_q_prior": 2.03,
+   "eps_pct": -77.3,
+   "diluted_shares_m": 587.7,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q2 2016 print (late July)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $0.67, compared with $2.07 per share in the first quarter of 2015.'; from Q1 2016 the year-ago quarter is the release's recast: mark-to-market pension and OPEB accounting and the 2016 segment changes, effective January 1, 2016",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release",
+   "restates": {
+    "2015": {
+     "eps": 5.47,
+     "note": "2015 $5.47 excluding restructuring costs and mark-to-market losses, recast for mark-to-market pension and OPEB accounting (Q1 2016 release; GAAP $4.18 as recast, $3.50 before)"
+    }
+   }
+  },
+  {
+   "quarter": "Q2 2016",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-07-26",
+   "source": "CT73",
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 07:47 ET",
+   "period_end": "2016-06-30",
+   "raw": {
+    "ci_m": 4426,
+    "ci_prior_m": 4803,
+    "ri_m": 1457,
+    "ri_prior_m": 2048,
+    "et_m": 3750,
+    "et_prior_m": 4708,
+    "rev_m": 10342,
+    "rev_prior_m": 12317,
+    "oi_m": 785,
+    "oi_prior_m": 1333,
+    "diluted_shares_m": 588.6
+   },
+   "sales_b": 10.342,
+   "sales_pct": -16.0,
+   "mach_pct": -14.1,
+   "eng_pct": -20.3,
+   "op_margin": 7.59,
+   "op_margin_bp": -323.2,
+   "eps_q": 0.93,
+   "eps_q_prior": 1.31,
+   "eps_pct": -29.0,
+   "diluted_shares_m": 588.6,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q3 2016 print (late October)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $1.09, down from $1.40 per share in the second quarter of 2015.'; from Q1 2016 the year-ago quarter is the release's recast: mark-to-market pension and OPEB accounting and the 2016 segment changes, effective January 1, 2016",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release"
+  },
+  {
+   "quarter": "Q3 2016",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-10-25",
+   "source": "CT74",
+   "release": "Oct 25",
+   "release_time": "before the open on Oct 25: 8-K accepted 09:05 ET",
+   "period_end": "2016-09-30",
+   "raw": {
+    "ci_m": 3554,
+    "ci_prior_m": 4075,
+    "ri_m": 1377,
+    "ri_prior_m": 1842,
+    "et_m": 3534,
+    "et_prior_m": 4352,
+    "rev_m": 9160,
+    "rev_prior_m": 10962,
+    "oi_m": 481,
+    "oi_prior_m": 925,
+    "diluted_shares_m": 589.6
+   },
+   "sales_b": 9.16,
+   "sales_pct": -16.4,
+   "mach_pct": -16.7,
+   "eng_pct": -18.8,
+   "op_margin": 5.25,
+   "op_margin_bp": -318.7,
+   "eps_q": 0.48,
+   "eps_q_prior": 0.94,
+   "eps_pct": -48.9,
+   "diluted_shares_m": 589.6,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q4 2016 print (late January)",
+   "note": "the release: 'Excluding restructuring costs, profit per share was $0.85, down from $1.05 per share in the third quarter of 2015.'; from Q1 2016 the year-ago quarter is the release's recast: mark-to-market pension and OPEB accounting and the 2016 segment changes, effective January 1, 2016",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release"
+  },
+  {
+   "quarter": "Q4 2016",
+   "fy": 2016,
+   "q": 4,
+   "published": "2017-01-26",
+   "source": "CT75",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 07:35 ET",
+   "period_end": "2016-12-31",
+   "raw": {
+    "ci_m": 3589,
+    "ci_prior_m": 3905,
+    "ri_m": 1443,
+    "ri_prior_m": 1878,
+    "et_m": 3849,
+    "et_prior_m": 4544,
+    "rev_m": 9574,
+    "rev_prior_m": 11030,
+    "oi_m": -1262,
+    "oi_prior_m": -175,
+    "diluted_shares_m": 585.8
+   },
+   "sales_b": 9.574,
+   "sales_pct": -13.2,
+   "mach_pct": -13.0,
+   "eng_pct": -15.3,
+   "op_margin": -13.18,
+   "op_margin_bp": -1159.5,
+   "eps_q": -2.0,
+   "eps_q_prior": -0.16,
+   "eps_pct": -1150.0,
+   "diluted_shares_m": 585.8,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q1 2017 print (late April)",
+   "note": "the release: 'Adjusted profit per share in the fourth quarter of 2016 was $0.83, the same as the fourth quarter of 2015, but higher than the outlook for profit per share excluding restructuring costs provided in October 2016.'; from Q1 2016 the year-ago quarter is the release's recast: mark-to-market pension and OPEB accounting and the 2016 segment changes, effective January 1, 2016",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 3.42,
+    "revenue_usd_b": 38.537,
+    "diluted_shares_m": 584.3,
+    "normalization_note": "FY2016 $3.42, the company's adjusted profit per share, excluding restructuring costs, mark-to-market losses, a goodwill impairment and a deferred tax valuation allowance (Q4 2016 release; GAAP loss of $(0.11))",
+    "op_margin": 1.29,
+    "pretax_margin": 0.36,
+    "pretax_margin_note": "FY16 consolidated profit before taxes $139M / sales and revenues $38,537M (CT75)",
+    "sales_growth": -18.0,
+    "mach_pct": null,
+    "eng_pct": null,
+    "tax_rate": 1.3813,
+    "tax_note": "FY16 provision for income taxes $192M / consolidated profit before taxes $139M"
+   },
+   "restates": {
+    "2015": {
+     "eps": 5.35,
+     "note": "2015 $5.35, the company's adjusted profit per share excluding restructuring costs and mark-to-market losses (Q4 2016 release; $5.47 in the recast, restructuring costs now at statutory tax rates)"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2017",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-04-25",
+   "source": "CT77",
+   "release": "Apr 25",
+   "release_time": "before the open on Apr 25: 8-K accepted 07:38 ET",
+   "period_end": "2017-03-31",
+   "raw": {
+    "ci_m": 4091,
+    "ci_prior_m": 4043,
+    "ri_m": 1670,
+    "ri_prior_m": 1449,
+    "et_m": 3356,
+    "et_prior_m": 3278,
+    "rev_m": 9822,
+    "rev_prior_m": 9461,
+    "oi_m": 417,
+    "oi_prior_m": 494,
+    "diluted_shares_m": 593.2
+   },
+   "sales_b": 9.822,
+   "sales_pct": 3.8,
+   "mach_pct": 4.9,
+   "eng_pct": 2.4,
+   "op_margin": 4.25,
+   "op_margin_bp": -97.6,
+   "eps_q": 0.32,
+   "eps_q_prior": 0.46,
+   "eps_pct": -30.4,
+   "diluted_shares_m": 593.2,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q2 2017 print (late July)",
+   "note": "the release: 'Excluding restructuring costs, first-quarter 2017 profit per share was $1.28, double first-quarter 2016 profit per share excluding restructuring costs of $0.64 per share.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release"
+  },
+  {
+   "quarter": "Q2 2017",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-07-25",
+   "source": "CT79",
+   "release": "Jul 25",
+   "release_time": "before the open on Jul 25: 8-K accepted 07:35 ET",
+   "period_end": "2017-06-30",
+   "raw": {
+    "ci_m": 4930,
+    "ci_prior_m": 4426,
+    "ri_m": 1759,
+    "ri_prior_m": 1457,
+    "et_m": 3941,
+    "et_prior_m": 3750,
+    "rev_m": 11331,
+    "rev_prior_m": 10342,
+    "oi_m": 1251,
+    "oi_prior_m": 785,
+    "diluted_shares_m": 595.4
+   },
+   "sales_b": 11.331,
+   "sales_pct": 9.6,
+   "mach_pct": 13.7,
+   "eng_pct": 5.1,
+   "op_margin": 11.04,
+   "op_margin_bp": 345.0,
+   "eps_q": 1.35,
+   "eps_q_prior": 0.93,
+   "eps_pct": 45.2,
+   "diluted_shares_m": 595.4,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q3 2017 print (late October)",
+   "note": "the release: 'Excluding restructuring costs and a gain on the sale of an equity investment in IronPlanet, second-quarter 2017 adjusted profit per share was $1.49, compared to second-quarter 2016 adjusted profit per share of $1.09'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release"
+  },
+  {
+   "quarter": "Q3 2017",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-10-24",
+   "source": "CT80",
+   "release": "Oct 24",
+   "release_time": "before the open on Oct 24: 8-K accepted 07:41 ET",
+   "period_end": "2017-09-30",
+   "raw": {
+    "ci_m": 4854,
+    "ci_prior_m": 3554,
+    "ri_m": 1870,
+    "ri_prior_m": 1377,
+    "et_m": 3961,
+    "et_prior_m": 3534,
+    "rev_m": 11413,
+    "rev_prior_m": 9160,
+    "oi_m": 1577,
+    "oi_prior_m": 481,
+    "diluted_shares_m": 600.1
+   },
+   "sales_b": 11.413,
+   "sales_pct": 24.6,
+   "mach_pct": 36.4,
+   "eng_pct": 12.1,
+   "op_margin": 13.82,
+   "op_margin_bp": 856.6,
+   "eps_q": 1.77,
+   "eps_q_prior": 0.48,
+   "eps_pct": 268.8,
+   "diluted_shares_m": 600.1,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q4 2017 print (late January)",
+   "note": "the release: 'Excluding restructuring costs, third-quarter 2017 adjusted profit per share was $1.95, compared with third-quarter 2016 adjusted profit per share of $0.85.'",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Energy & Transportation ('formerly Power Systems', from Q1 2014: 'supporting customers using reciprocating engines, turbines, diesel-electric locomotives'); from Q1 2016 on the 2016 segment definitions (forestry and paving products to Construction Industries, industrial and waste products to Resource Industries, remanufacturing and on-highway vocational trucks to Energy & Transportation), the year-ago quarter recast in the same release"
   }
  ],
  "guides": [
@@ -3280,6 +4904,299 @@
     5
    ],
    "note": "a preliminary outlook, 'flat with 2013 in a plus or minus 5 percent range'; no profit per share outlook"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-27",
+   "source": "CT56",
+   "doc": "Q4 2013 release",
+   "rev_guide_usd_b": [
+    53.2,
+    58.8
+   ],
+   "eps_guide": [
+    5.85,
+    5.85
+   ],
+   "eps_guide_note": "excluding restructuring costs; $5.30 including restructuring costs of $0.55 per share",
+   "note": "sales and revenues 'about $56 billion in a range of plus or minus 5 percent'"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-04-24",
+   "source": "CT58",
+   "doc": "Q1 2014 release",
+   "rev_guide_usd_b": [
+    53.2,
+    58.8
+   ],
+   "eps_guide": [
+    6.1,
+    6.1
+   ],
+   "eps_guide_note": "excluding restructuring costs; $5.55 including restructuring costs of $0.55 per share",
+   "note": "sales and revenues 'unchanged at $56 billion in a range of plus or minus 5 percent'"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-07-24",
+   "source": "CT60",
+   "doc": "Q2 2014 release",
+   "rev_guide_usd_b": [
+    54.0,
+    56.0
+   ],
+   "eps_guide": [
+    6.2,
+    6.2
+   ],
+   "eps_guide_note": "excluding restructuring costs, at the middle of the sales and revenues range; $5.75 including restructuring costs of $0.45 per share"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-10-23",
+   "source": "CT61",
+   "doc": "Q3 2014 release",
+   "rev_guide_usd_b": [
+    55.0,
+    55.0
+   ],
+   "eps_guide": [
+    6.5,
+    6.5
+   ],
+   "eps_guide_note": "excluding $450 million of restructuring costs; $6.00 including them"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-10-23",
+   "source": "CT61",
+   "doc": "Q3 2014 release",
+   "rev_words": "flat to slightly up from 2014",
+   "note": "a preliminary outlook in words; no profit per share outlook"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-01-27",
+   "source": "CT62",
+   "doc": "Q4 2014 release",
+   "rev_guide_usd_b": [
+    50.0,
+    50.0
+   ],
+   "eps_guide": [
+    4.75,
+    4.75
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $150 million; about $4.60 including them"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-04-23",
+   "source": "CT64",
+   "doc": "Q1 2015 release",
+   "rev_guide_usd_b": [
+    50.0,
+    50.0
+   ],
+   "eps_guide": [
+    5.0,
+    5.0
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $250 million; $4.70 including them"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-07-23",
+   "source": "CT66",
+   "doc": "Q2 2015 release",
+   "rev_guide_usd_b": [
+    49.0,
+    49.0
+   ],
+   "eps_guide": [
+    5.0,
+    5.0
+   ],
+   "eps_guide_note": "excluding restructuring costs, unchanged; $4.70 including them"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-09-24",
+   "source": "CT67",
+   "doc": "8-K of 2015-09-24",
+   "rev_guide_usd_b": [
+    48.0,
+    48.0
+   ],
+   "note": "no profit outlook: 'We will provide an update of the 2015 profit outlook with our third-quarter financial release in late October.'"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-09-24",
+   "source": "CT67",
+   "doc": "8-K of 2015-09-24",
+   "rev_guide_pct": [
+    -5,
+    -5
+   ],
+   "note": "a preliminary outlook, 'about 5 percent below 2015'; no profit per share outlook"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-10-22",
+   "source": "CT68",
+   "doc": "Q3 2015 release",
+   "rev_guide_usd_b": [
+    48.0,
+    48.0
+   ],
+   "eps_guide": [
+    4.6,
+    4.6
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $800 million; about $3.70 including them"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-10-22",
+   "source": "CT68",
+   "doc": "Q3 2015 release",
+   "rev_guide_pct": [
+    -5,
+    -5
+   ],
+   "rev_growth_base_b": 48.0,
+   "rev_growth_base_note": "the 2015 outlook of about $48 billion",
+   "note": "a preliminary outlook, 'down about 5 percent from the 2015 outlook'; no profit per share outlook"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-01-28",
+   "source": "CT69",
+   "doc": "Q4 2015 release",
+   "rev_guide_usd_b": [
+    40.0,
+    44.0
+   ],
+   "eps_guide": [
+    4.0,
+    4.0
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $400 million, at the midpoint of the sales and revenues range; about $3.50 including them; no mark-to-market gain or loss"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-04-22",
+   "source": "CT71",
+   "doc": "Q1 2016 release",
+   "rev_guide_usd_b": [
+    40.0,
+    42.0
+   ],
+   "eps_guide": [
+    3.7,
+    3.7
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $550 million, at the midpoint of the sales and revenues range; $3.00 including them"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-07-26",
+   "source": "CT73",
+   "doc": "Q2 2016 release",
+   "rev_guide_usd_b": [
+    40.0,
+    40.5
+   ],
+   "eps_guide": [
+    3.55,
+    3.55
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $700 million, at the midpoint of the sales and revenues range; about $2.75 including them"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-10-25",
+   "source": "CT74",
+   "doc": "Q3 2016 release",
+   "rev_guide_usd_b": [
+    39.0,
+    39.0
+   ],
+   "eps_guide": [
+    3.25,
+    3.25
+   ],
+   "eps_guide_note": "excluding restructuring costs of about $800 million; $2.35 including them"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-10-25",
+   "source": "CT74",
+   "doc": "Q3 2016 release",
+   "rev_words": "not significantly different than 2016",
+   "note": "a preliminary outlook in words; no profit per share outlook"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-01-26",
+   "source": "CT75",
+   "doc": "Q4 2016 release",
+   "rev_guide_usd_b": [
+    36.0,
+    39.0
+   ],
+   "eps_guide": [
+    2.9,
+    2.9
+   ],
+   "eps_guide_note": "adjusted, excluding restructuring costs of about $500 million, at the midpoint of the sales and revenues range; about $2.30 including them; no mark-to-market gain or loss"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-04-25",
+   "source": "CT77",
+   "doc": "Q1 2017 release",
+   "rev_guide_usd_b": [
+    38.0,
+    41.0
+   ],
+   "eps_guide": [
+    3.75,
+    3.75
+   ],
+   "eps_guide_note": "excluding restructuring costs, at the midpoint of the sales and revenues range; about $2.10 including them"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-07-25",
+   "source": "CT79",
+   "doc": "Q2 2017 release",
+   "rev_guide_usd_b": [
+    42.0,
+    44.0
+   ],
+   "eps_guide": [
+    5.0,
+    5.0
+   ],
+   "eps_guide_note": "adjusted, excluding restructuring costs of about $1.2 billion and the IronPlanet gain, at the midpoint of the sales and revenues range; about $3.50 including them"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-10-24",
+   "source": "CT80",
+   "doc": "Q3 2017 release",
+   "rev_guide_usd_b": [
+    44.0,
+    44.0
+   ],
+   "eps_guide": [
+    6.25,
+    6.25
+   ],
+   "eps_guide_note": "adjusted, excluding restructuring costs of about $1.3 billion and the IronPlanet gain; about $4.60 including them"
   }
  ],
  "dividends": [
@@ -3324,6 +5241,24 @@
    "source": "CT53",
    "quarterly": 0.6,
    "note": "$0.60 quarterly ('voted today to raise the quarterly cash dividend by eight cents to sixty cents ($0.60) per share of common stock')"
+  },
+  {
+   "published": "2014-06-11",
+   "source": "CT59",
+   "quarterly": 0.7,
+   "note": "$0.70 quarterly ('voted today to increase the quarterly cash dividend by 17 percent to seventy cents ($0.70) per share of common stock')"
+  },
+  {
+   "published": "2015-06-10",
+   "source": "CT65",
+   "quarterly": 0.77,
+   "note": "$0.77 quarterly ('voted today to increase the quarterly cash dividend by 10 percent to seventy-seven cents ($0.77) per share of common stock')"
+  },
+  {
+   "published": "2017-06-14",
+   "source": "CT78",
+   "quarterly": 0.78,
+   "note": "$0.78 quarterly ('voted today to increase the quarterly cash dividend by one cent to seventy-eight cents ($0.78) per share of common stock')"
   }
  ],
  "events": [],
