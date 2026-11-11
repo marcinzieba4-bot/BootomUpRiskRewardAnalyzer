@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CAT",
+ "as_of": "2011-11-18",
+ "computed": "2026-11-11",
+ "data_source": "Yahoo Finance daily closes + dividends (CAT, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2012-05-18",
+   "price": 88.68,
+   "dividends": 0.92,
+   "total_return_pct": -4.6,
+   "benchmark_total_return_pct": 7.5,
+   "excess_pct": -12.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2012-11-16",
+   "price": 81.93,
+   "dividends": 1.96,
+   "total_return_pct": -10.7,
+   "benchmark_total_return_pct": 14.1,
+   "excess_pct": -24.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2013-11-18",
+   "price": 84.04,
+   "dividends": 4.2,
+   "total_return_pct": -6.1,
+   "benchmark_total_return_pct": 52.2,
+   "excess_pct": -58.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2014-11-18",
+   "price": 102.04,
+   "dividends": 6.8,
+   "total_return_pct": 15.9,
+   "benchmark_total_return_pct": 76.6,
+   "excess_pct": -60.8,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2012-02-23",
+   "price": 116.2
+  },
+  "low": {
+   "date": "2012-07-12",
+   "price": 79.64
+  },
+  "max_drawdown_pct": -31.5,
+  "return_to_avg_price_m12_m24_pct": -7.4
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Caterpillar: heavy equipment; record backlog at a cycle-peak multiple",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
