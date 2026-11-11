@@ -1,16 +1,18 @@
 # PFE retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the PFE weekly dates: 732 from 2008-01-04 to 2021-12-31, all Pfizer Inc (NYSE: PFE). They are
+Patterns seen in `outcome.json` for the PFE weekly dates: 985 from 2008-01-04 to 2026-11-04, all Pfizer Inc (NYSE: PFE). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time
-build was committed and pushed (40abcf7 for 2008-2009, e054737 for 2010-2013, 0f08467 for 2014-2017, 0ce7593 for 2018-2021). Outcomes
-were computed on 2026-11-10 from the closes posted to 2026-11-09 (2008-2013) and 2026-11-10 (2014-2021); every date has its 6-month, 1-,
-2- and 3-year horizons (the last ends 2024-12-31). Total returns include the dividends paid in each horizon; the prices are on the
+build was committed and pushed (40abcf7 for 2008-2009, e054737 for 2010-2013, 0f08467 for 2014-2017, 0ce7593 for 2018-2021, 8536cfc for
+2022-2026). Outcomes were computed on 2026-11-10 from the closes posted to 2026-11-09 (2008-2013) and 2026-11-10 (2014-2021), and on
+2026-11-11 from the closes posted to 2026-11-10 (2022-2026); every date to 2021 has its 6-month, 1-, 2- and 3-year horizons (the last
+ends 2024-12-31), and from 2022 a date has only the horizons that have ended: two years to 2024-11-08, one year to 2025-11-05, six
+months to 2026-05-06, none from 2026-05-15 (26 dates). Total returns include the dividends paid in each horizon; the prices are on the
 as-traded basis of the models (Yahoo's series times its 1.054 factor of 2020-11-17, for the dates before that day: a horizon that
 crosses it counts the Upjohn/Viatris distribution as if it were a split, the tool's standing treatment, so the distributed Viatris
 shares stay in the holding (the MAR rule for outcomes); dates from 2020-11-17 use Yahoo's series as it is, the price as traded). Medians
 of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over
-three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of it,
-and RICH should miss the hurdle and lag it.
+three (+15% over one year, +7.2% over six months). "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark
+(SPY), FAIR should land within ±15pp of it, and RICH should miss the hurdle and lag it; one year and six months are not call checks.
 
 ## 2008 (53 dates)
 
@@ -395,6 +397,104 @@ and RICH should miss the hurdle and lag it.
 - **Hypothesis, not a rule:** a revenue guide lifted by one product's temporary surge, read as two years of EPS growth, may overstate
   BASE; test a guide-level check (one product's share of the guided growth) on other tickers and periods, never fit to PFE.
 
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | -38.7% | -45.9% to -23.2% | 0 | 0 | -38.3% | 0 |
+| FY21E $1.24 (2022-01-07 to 2022-02-04) | 5 | -41.9% | -43.4% to -40.3% | 0 | 0 | -34.2% | 0 |
+| FY22E $3.93 (2022-02-09 to 2022-12-30) | 47 | -37.4% | -45.9% to -23.2% | 0 | 0 | -39.6% | 0 |
+| latest print Q3 2021 (2022-01-07 to 2022-02-04) | 5 | -41.9% | -43.4% to -40.3% | 0 | 0 | -34.2% | 0 |
+| latest print Q4 2021 (2022-02-09 to 2022-04-29) | 12 | -40.1% | -45.9% to -35.0% | 0 | 0 | -33.1% | 0 |
+| latest print Q1 2022 (2022-05-04 to 2022-07-22) | 12 | -37.4% | -41.3% to -35.0% | 0 | 0 | -41.1% | 0 |
+| latest print Q2 2022 (2022-07-29 to 2022-10-28) | 14 | -29.3% | -36.6% to -23.2% | 0 | 0 | -37.4% | 0 |
+| latest print Q3 2022 (2022-11-02 to 2022-12-30) | 9 | -42.0% | -44.4% to -33.3% | 0 | 0 | -44.9% | 0 |
+
+- **CHEAP held on none of 52: the multiple was read on the COVID-19 peak.** With no reported guide, FY21's $3.93 stood for FY22E, and
+  BASE took the FY2022 revenue range ($98.0-102.0B, +24.5%/yr), lifted by the vaccine and Paxlovid. The stock ($42.32-55.72) returned
+  -45.9% to -23.2% over two years (median -38.7%) while SPY returned +3.2% to +67.2%; it landed nearest BEAR on all 52 and drew down
+  52-55% within the two years. Over three years it returned -26.1% to -51.4%; none held, none beat SPY.
+- **The five January dates** (FY21E still FY20's $1.24, 43-45x, CHEAP only on BASE's +97.0%/yr) returned -40.3% to -43.4%.
+- **Rankings:** entry price ranks the two-year return at -0.80, Ratio B at -0.80 and the EPP gap at -0.78; the proxy composite at +0.54.
+  Within one uniform class, the cheaper readings did less badly.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | -24.0% | -40.7% to +12.0% | 0 | 0 | -28.1% | 0 |
+| FY22E $3.93 (2023-01-06 to 2023-01-27) | 4 | -34.3% | -40.7% to -31.0% | 0 | 0 | -38.4% | 0 |
+| FY23E $5.47 (2023-02-01 to 2023-12-29) | 48 | -23.2% | -38.2% to +12.0% | 0 | 0 | -27.8% | 0 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-27) | 4 | -34.3% | -40.7% to -31.0% | 0 | 0 | -38.4% | 0 |
+| latest print Q4 2022 (2023-02-01 to 2023-04-28) | 13 | -32.1% | -38.2% to -23.9% | 0 | 0 | -32.8% | 0 |
+| latest print Q1 2023 (2023-05-03 to 2023-07-28) | 13 | -28.4% | -30.7% to -19.5% | 0 | 0 | -28.5% | 0 |
+| latest print Q2 2023 (2023-08-02 to 2023-10-27) | 13 | -18.5% | -24.0% to -6.5% | 0 | 0 | -25.0% | 0 |
+| latest print Q3 2023 (2023-11-01 to 2023-12-29) | 9 | -1.4% | -8.1% to +12.0% | 0 | 0 | -13.9% | 0 |
+
+- **CHEAP held on none of 52.** FY22's $5.47, the peak year, stood for FY23E at 5-8x while each 2023 print showed revenues down
+  28.8-54.1%; the stock fell from $50.92 to $26.63 within the year and returned -40.7% to +12.0% over two years (median -24.0%) against
+  SPY's +26.9% to +70.3%. Over three years (45 dates) -40.2% to +16.7%; none held. The two-year price landed nearest BASE on 42 dates
+  and BEAR on 10.
+- **Rankings:** entry price, the EPP gap and Ratio B each rank the m12-24 average price at -0.99: the later and cheaper the date, the
+  better the outcome, and still no date beat SPY or cleared the hurdle.
+
+## 2024 (52 dates; 45 with a two-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 45 | +7.6% | -9.1% to +22.9% | 0 | 0 | -10.1% | 0 |
+| FY23E $5.47 (2024-01-05 to 2024-01-26) | 4 | +2.7% | -3.1% to +6.6% | 0 | 0 | -12.4% | 0 |
+| FY24E $5.47 (2024-01-31 to 2024-11-08) | 41 | +8.7% | -9.1% to +22.9% | 0 | 0 | -10.1% | 0 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-26) | 4 | +2.7% | -3.1% to +6.6% | 0 | 0 | -12.4% | 0 |
+| latest print Q4 2023 (2024-01-31 to 2024-04-26) | 13 | +11.9% | +7.3% to +19.7% | 0 | 0 | -8.7% | 0 |
+| latest print Q1 2024 (2024-05-02 to 2024-07-26) | 13 | +1.5% | -9.1% to +7.6% | 0 | 0 | -10.4% | 0 |
+| latest print Q2 2024 (2024-07-31 to 2024-10-25) | 13 | +8.7% | -7.2% to +17.6% | 0 | 0 | -10.2% | 0 |
+| latest print Q3 2024 (2024-10-30 to 2024-11-08) | 2 | +22.9% | +19.0% to +22.9% | 0 | 0 | -0.4% | 0 |
+
+- **CHEAP held on none of 45.** With 2023 excluded, FY22's $5.47 still stood for FY24E (4.5-5.6x on $24.80-30.77). The dates returned
+  -9.1% to +22.9% over two years (median +7.6%), under the +32.2% hurdle on all and behind SPY by 2.5-53.1pp; the two-year price landed
+  nearest BEAR on 41. The EPP gap ranks the m12-24 average price at -0.81, entry price at -0.80.
+- **The seven dates of November-December 2024 have no two-year label yet.** Over one year they returned +0.7% to +8.0%, behind SPY by
+  6.2-16.5pp. Their two-year labels come in November-December 2026.
+
+## 2025 (52 dates; one-year horizon on 45)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 5 | +4.1% | +1.2% to +6.2% | 0 | 0 | - | - |
+| class CHEAP, legacy tier WATCHLIST | 5 | +30.7% | +23.0% to +32.2% | 5 | 1 | - | - |
+| class FAIR, legacy tier AVOID | 6 | +21.1% | +7.6% to +30.8% | 4 | 3 | - | - |
+| class FAIR, legacy tier WATCHLIST | 25 | +14.8% | +5.9% to +27.9% | 12 | 6 | - | - |
+| class RICH, legacy tier AVOID | 4 | +7.9% | +0.9% to +28.4% | 1 | 1 | - | - |
+| FY24E $5.47 (2025-01-03 to 2025-01-31) | 5 | +4.1% | +1.2% to +6.2% | 0 | 0 | - | - |
+| FY25E $1.41 (2025-02-05 to 2025-11-05) | 40 | +16.7% | +0.9% to +32.2% | 22 | 11 | - | - |
+| latest print Q3 2024 (2025-01-03 to 2025-01-31) | 5 | +4.1% | +1.2% to +6.2% | 0 | 0 | - | - |
+| latest print Q4 2024 (2025-02-05 to 2025-04-25) | 12 | +14.1% | +6.7% to +32.2% | 4 | 2 | - | - |
+| latest print Q1 2025 (2025-04-30 to 2025-08-01) | 14 | +13.8% | +0.9% to +23.0% | 6 | 0 | - | - |
+| latest print Q2 2025 (2025-08-06 to 2025-10-31) | 13 | +21.3% | +7.9% to +30.8% | 11 | 8 | - | - |
+| latest print Q3 2025 (2025-11-05 to 2025-11-05) | 1 | +28.4% | +28.4% to +28.4% | 1 | 1 | - | - |
+
+- **One year is not the method's horizon.** The five January dates (still CHEAP on FY22's $5.47) returned +1.2% to +6.2% and lagged SPY.
+  From the Q4 2024 print, on FY24's $1.41: the 31 FAIR dates returned +5.9% to +30.8%, the five CHEAP dates at the floor in April and
+  May 2025 +23.0% to +32.2% (one ahead of SPY), and the four RICH dates +0.9% to +28.4%. Entry price ranks the one-year return at -0.72;
+  the EPP gap, Ratio B and the composites rank it near zero.
+- **The seven RICH dates of November-December 2025 have six months:** +0.2% to +7.1%, behind SPY by 4.6-6.8pp and under the 7.2% hurdle.
+  No reading yet.
+
+## 2026 (45 dates; six-month horizon on 19; none from 2026-05-15)
+
+| Group | Dates | Median 6-month total return | Range | Cleared 7.2% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 19 | +5.7% | -2.5% to +19.2% | 9 | 4 | - | - |
+| FY25E $1.41 (2026-01-02 to 2026-01-30) | 5 | -0.8% | -2.5% to +1.4% | 0 | 0 | - | - |
+| FY26E $1.36 (2026-02-04 to 2026-05-06) | 14 | +8.2% | -1.9% to +19.2% | 9 | 4 | - | - |
+| latest print Q3 2025 (2026-01-02 to 2026-01-30) | 5 | -0.8% | -2.5% to +1.4% | 0 | 0 | - | - |
+| latest print Q4 2025 (2026-02-04 to 2026-05-01) | 13 | +7.5% | -1.9% to +19.2% | 8 | 3 | - | - |
+| latest print Q1 2026 (2026-05-06 to 2026-05-06) | 1 | +15.6% | +15.6% to +15.6% | 1 | 1 | - | - |
+
+- Six months only, on 19 RICH dates: a median +5.7% (-2.5% to +19.2%), 4 ahead of SPY. The 26 dates from 2026-05-15 have no horizon. No
+  reading yet.
+
 ## The encoding calls, seen afterwards (2008-2009)
 
 Only one judgement call recorded in retro/README.md ("PFE") moves classes: the 2003 exclusion taking the history and the window with it.
@@ -444,3 +544,19 @@ at XBULL 112 each. What separated the outcomes was, again, the GAAP year that st
 tax-inflated 2017 made 2018 look cheap and was wrong, the gain-inflated 2019 (with Upjohn) made 2020 look cheap and was right, and in 2021
 a revenue guide driven by one product carried BASE. These are hypotheses to test across tickers, never a reason to re-encode PFE: the
 encodings were decided before any outcome existed, and changing one means a new method version and a full re-run.
+
+## The encoding calls, seen afterwards (2022-2026)
+
+The calls of 2022-2024 held on none of the 149 dates with a two-year horizon (all CHEAP, BUY; median -26.0%, -45.9% to +22.9%, every one
+behind SPY) and on none of the 97 with three. Scored against the same outcomes, the README's sensitivity variants would have held on:
+2023 kept at its reported $0.37 41 (2024-01-31 to 2024-11-08, where the $0.37 standing for FY24E reads RICH); the adjusted EPS guide as
+current-year EPS 13 (2023-11-01 to 2024-01-26, where FY2023's $1.45-1.65 reads RICH); 2025 excluded on the test before tax, the revenue
+ranges unused, the Q4 2021 restatement ignored, the 8-K guides ignored and every signal at BEAR or XBULL 0 each. On the 52 dates with
+one year only (not a call check) the classes match the one-year result on 38; 2023 kept on 43, the adjusted guide on 23, the ranges
+unused on 27, every signal at BEAR on 20. What separated the outcomes was, for the third time in the PFE series, the GAAP year that
+stood in for current-year EPS with no reported guide: the tax-inflated 2017 in 2018, the gain-inflated 2019 in 2020, and now the
+COVID-19 peak, FY21's $3.93 through 2022 and FY22's $5.47 through 2023 and 2024 (with 2023 excluded), while the company's adjusted guide
+for 2023 ($3.25-3.45, then $1.45-1.65) and 2024 ($2.05-2.95) pointed to the fall. In 2022 a revenue range driven by two products also
+carried BASE, the 2021 pattern again. Hypotheses to test across tickers, never a reason to re-encode PFE: a check of the standing year's
+EPS against the direction of the company's own guided earnings, and a check on one product's share of the guided revenue. The encodings
+were decided before any outcome existed, and changing one means a new method version and a full re-run.

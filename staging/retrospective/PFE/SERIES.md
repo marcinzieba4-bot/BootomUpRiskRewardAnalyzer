@@ -736,3 +736,256 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $59.48 | Pfizer Q3 2021 results | 3.05 | +1.40 | 0.51x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -49.8% | -54.7pp | -36.6% | ✗ |
 | 2021-12-23 | $58.71 | Pfizer Q3 2021 results | 3.05 | +1.41 | 0.49x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -46.1% | -49.5pp | -36.5% | ✗ |
 | 2021-12-31 | $59.05 | Pfizer Q3 2021 results | 3.05 | +1.41 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -45.8% | -48.6pp | -37.5% | ✗ |
+| 2022-01-07 | $55.72 | Pfizer Q3 2021 results | 3.05 | +1.56 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.3% | -44.5pp | -34.4% | ✗ |
+| 2022-01-14 | $54.95 | Pfizer Q3 2021 results | 3.05 | +1.57 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.9% | -47.2pp | -34.2% | ✗ |
+| 2022-01-21 | $52.79 | Pfizer Q3 2021 results | 3.05 | +1.59 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.3% | -53.4pp | -32.0% | ✗ |
+| 2022-01-28 | $54.33 | Pfizer Q3 2021 results | 3.05 | +1.57 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -43.4% | -56.7pp | -34.5% | ✗ |
+| 2022-02-04 | $53.00 | Pfizer Q3 2021 results | 3.05 | +1.59 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -43.0% | -56.1pp | -33.5% | ✗ |
+| 2022-02-09 | $51.47 | Pfizer Q4 2021 results | 2.90 | +2.00 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.1% | -52.5pp | -32.1% | ✗ |
+| 2022-02-18 | $48.53 | Pfizer Q4 2021 results | 2.90 | +2.03 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.4% | -54.4pp | -28.7% | ✗ |
+| 2022-02-25 | $47.72 | Pfizer Q4 2021 results | 2.90 | +2.04 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.0% | -54.0pp | -28.0% | ✗ |
+| 2022-03-04 | $48.65 | Pfizer Q4 2021 results | 2.90 | +2.03 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.1% | -61.6pp | -30.0% | ✗ |
+| 2022-03-11 | $50.27 | Pfizer Q4 2021 results | 2.90 | +2.01 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.1% | -61.9pp | -32.8% | ✗ |
+| 2022-03-18 | $54.51 | Pfizer Q4 2021 results | 2.90 | +1.97 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -43.2% | -61.5pp | -38.5% | ✗ |
+| 2022-03-25 | $52.78 | Pfizer Q4 2021 results | 2.90 | +1.99 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.9% | -59.6pp | -36.9% | ✗ |
+| 2022-04-01 | $51.57 | Pfizer Q4 2021 results | 2.90 | +2.00 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -39.9% | -58.1pp | -35.9% | ✗ |
+| 2022-04-08 | $55.17 | Pfizer Q4 2021 results | 2.90 | +1.94 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -45.9% | -64.8pp | -40.5% | ✗ |
+| 2022-04-14 | $53.12 | Pfizer Q4 2021 results | 2.90 | +1.98 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -45.2% | -64.9pp | -38.8% | ✗ |
+| 2022-04-22 | $48.13 | Pfizer Q4 2021 results | 2.90 | +2.03 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -38.7% | -59.1pp | -33.1% | ✗ |
+| 2022-04-29 | $49.07 | Pfizer Q4 2021 results | 2.90 | +2.02 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.1% | -68.1pp | -34.9% | ✗ |
+| 2022-05-04 | $49.66 | Pfizer Q1 2022 results | 2.75 | +1.86 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.4% | -59.7pp | -36.0% | ✗ |
+| 2022-05-13 | $49.92 | Pfizer Q1 2022 results | 2.75 | +1.86 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.5% | -69.4pp | -36.9% | ✗ |
+| 2022-05-20 | $52.47 | Pfizer Q1 2022 results | 2.75 | +1.83 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -39.4% | -78.8pp | -40.2% | ✗ |
+| 2022-05-27 | $53.91 | Pfizer Q1 2022 results | 2.75 | +1.80 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.3% | -71.0pp | -42.2% | ✗ |
+| 2022-06-03 | $53.20 | Pfizer Q1 2022 results | 2.75 | +1.81 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -38.7% | -70.5pp | -41.7% | ✗ |
+| 2022-06-10 | $49.97 | Pfizer Q1 2022 results | 2.75 | +1.85 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.3% | -78.1pp | -38.3% | ✗ |
+| 2022-06-17 | $46.53 | Pfizer Q1 2022 results | 2.75 | +1.89 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.0% | -87.7pp | -34.3% | ✗ |
+| 2022-06-24 | $51.59 | Pfizer Q1 2022 results | 2.75 | +1.83 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -38.7% | -81.2pp | -41.1% | ✗ |
+| 2022-07-01 | $52.31 | Pfizer Q1 2022 results | 2.75 | +1.81 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -39.8% | -86.3pp | -42.2% | ✗ |
+| 2022-07-08 | $53.17 | Pfizer Q1 2022 results | 2.75 | +1.79 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.3% | -87.6pp | -43.4% | ✗ |
+| 2022-07-15 | $51.75 | Pfizer Q1 2022 results | 2.75 | +1.83 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.4% | -86.7pp | -42.1% | ✗ |
+| 2022-07-22 | $51.23 | Pfizer Q1 2022 results | 2.75 | +1.83 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.8% | -79.6pp | -41.8% | ✗ |
+| 2022-07-29 | $50.51 | Pfizer Q2 2022 results | 3.20 | +2.29 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.6% | -68.1pp | -41.2% | ✗ |
+| 2022-08-05 | $49.27 | Pfizer Q2 2022 results | 3.20 | +2.30 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.9% | -61.3pp | -39.9% | ✗ |
+| 2022-08-12 | $50.11 | Pfizer Q2 2022 results | 3.20 | +2.29 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.6% | -64.6pp | -41.2% | ✗ |
+| 2022-08-19 | $49.15 | Pfizer Q2 2022 results | 3.20 | +2.30 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -34.7% | -70.4pp | -40.4% | ✗ |
+| 2022-08-26 | $46.82 | Pfizer Q2 2022 results | 3.20 | +2.33 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -31.2% | -72.8pp | -37.7% | ✗ |
+| 2022-09-02 | $45.70 | Pfizer Q2 2022 results | 3.20 | +2.34 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.3% | -76.4pp | -36.5% | ✗ |
+| 2022-09-09 | $47.84 | Pfizer Q2 2022 results | 3.20 | +2.32 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -31.6% | -69.3pp | -39.6% | ✗ |
+| 2022-09-16 | $46.03 | Pfizer Q2 2022 results | 3.20 | +2.34 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -27.5% | -76.5pp | -37.4% | ✗ |
+| 2022-09-23 | $44.08 | Pfizer Q2 2022 results | 3.20 | +2.36 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -26.0% | -84.5pp | -34.8% | ✗ |
+| 2022-09-30 | $43.76 | Pfizer Q2 2022 results | 3.20 | +2.36 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -26.3% | -90.7pp | -34.5% | ✗ |
+| 2022-10-07 | $42.32 | Pfizer Q2 2022 results | 3.20 | +2.38 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -23.2% | -83.4pp | -32.5% | ✗ |
+| 2022-10-14 | $42.86 | Pfizer Q2 2022 results | 3.20 | +2.37 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.5% | -91.6pp | -33.5% | ✗ |
+| 2022-10-21 | $44.95 | Pfizer Q2 2022 results | 3.20 | +2.34 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.3% | -87.8pp | -36.7% | ✗ |
+| 2022-10-28 | $47.43 | Pfizer Q2 2022 results | 3.20 | +2.31 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.2% | -85.0pp | -40.1% | ✗ |
+| 2022-11-02 | $47.07 | Pfizer Q3 2022 results | 2.50 | +1.62 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -33.3% | -89.2pp | -39.7% | ✗ |
+| 2022-11-11 | $47.60 | Pfizer Q3 2022 results | 2.50 | +1.61 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.9% | -91.5pp | -40.5% | ✗ |
+| 2022-11-18 | $48.23 | Pfizer Q3 2022 results | 2.50 | +1.61 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.6% | -93.5pp | -41.5% | ✗ |
+| 2022-11-25 | $49.21 | Pfizer Q3 2022 results | 2.50 | +1.59 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.1% | -91.9pp | -42.8% | ✗ |
+| 2022-12-02 | $50.91 | Pfizer Q3 2022 results | 2.50 | +1.55 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -42.8% | -94.4pp | -44.9% | ✗ |
+| 2022-12-09 | $51.72 | Pfizer Q3 2022 results | 2.50 | +1.54 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -43.1% | -100.3pp | -45.8% | ✗ |
+| 2022-12-16 | $51.40 | Pfizer Q3 2022 results | 2.50 | +1.54 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -44.4% | -105.8pp | -45.6% | ✗ |
+| 2022-12-23 | $51.83 | Pfizer Q3 2022 results | 2.50 | +1.52 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -42.1% | -100.9pp | -46.1% | ✗ |
+| 2022-12-30 | $51.24 | Pfizer Q3 2022 results | 2.50 | +1.54 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -42.0% | -99.4pp | -45.5% | ✗ |
+| 2023-01-06 | $50.92 | Pfizer Q3 2022 results | 2.50 | +1.52 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.7% | -97.6pp | -45.3% | ✗ |
+| 2023-01-13 | $47.85 | Pfizer Q3 2022 results | 2.50 | +1.57 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.1% | -86.4pp | -41.9% | ✗ |
+| 2023-01-20 | $45.11 | Pfizer Q3 2022 results | 2.50 | +1.60 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -34.3% | -88.7pp | -38.4% | ✗ |
+| 2023-01-27 | $43.79 | Pfizer Q3 2022 results | 2.50 | +1.62 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -31.0% | -82.2pp | -36.6% | ✗ |
+| 2023-02-01 | $43.97 | Pfizer Q4 2022 results | 2.10 | +1.05 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.1% | -81.9pp | -36.9% | ✗ |
+| 2023-02-10 | $43.88 | Pfizer Q4 2022 results | 2.10 | +1.05 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -33.4% | -85.0pp | -36.8% | ✗ |
+| 2023-02-17 | $43.21 | Pfizer Q4 2022 results | 2.10 | +1.06 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -33.2% | -86.3pp | -35.9% | ✗ |
+| 2023-02-24 | $41.75 | Pfizer Q4 2022 results | 2.10 | +1.08 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.2% | -82.3pp | -33.8% | ✗ |
+| 2023-03-03 | $41.15 | Pfizer Q4 2022 results | 2.10 | +1.08 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.1% | -75.9pp | -32.8% | ✗ |
+| 2023-03-10 | $39.39 | Pfizer Q4 2022 results | 2.10 | +1.10 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -23.9% | -72.7pp | -29.8% | ✗ |
+| 2023-03-17 | $40.10 | Pfizer Q4 2022 results | 2.10 | +1.09 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -26.7% | -75.3pp | -31.2% | ✗ |
+| 2023-03-24 | $40.39 | Pfizer Q4 2022 results | 2.10 | +1.09 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -27.0% | -75.6pp | -31.7% | ✗ |
+| 2023-03-31 | $40.80 | Pfizer Q4 2022 results | 2.10 | +1.08 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.0% | -69.1pp | -32.5% | ✗ |
+| 2023-04-06 | $41.50 | Pfizer Q4 2022 results | 2.10 | +1.08 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.6% | -63.5pp | -33.8% | ✗ |
+| 2023-04-14 | $41.19 | Pfizer Q4 2022 results | 2.10 | +1.08 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -38.2% | -72.3pp | -33.6% | ✗ |
+| 2023-04-21 | $40.21 | Pfizer Q4 2022 results | 2.10 | +1.09 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.9% | -64.9pp | -32.1% | ✗ |
+| 2023-04-28 | $38.89 | Pfizer Q4 2022 results | 2.10 | +1.11 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.1% | -67.9pp | -29.9% | ✗ |
+| 2023-05-03 | $38.45 | Pfizer Q1 2023 results | 1.95 | +0.96 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.4% | -70.7pp | -29.2% | ✗ |
+| 2023-05-12 | $37.35 | Pfizer Q1 2023 results | 1.95 | +0.98 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.2% | -74.2pp | -27.5% | ✗ |
+| 2023-05-19 | $36.77 | Pfizer Q1 2023 results | 1.95 | +0.98 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.3% | -73.7pp | -26.6% | ✗ |
+| 2023-05-26 | $37.60 | Pfizer Q1 2023 results | 1.95 | +0.97 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.0% | -70.2pp | -28.5% | ✗ |
+| 2023-06-02 | $38.36 | Pfizer Q1 2023 results | 1.95 | +0.96 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.1% | -71.8pp | -30.2% | ✗ |
+| 2023-06-09 | $38.97 | Pfizer Q1 2023 results | 1.95 | +0.95 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.9% | -72.6pp | -31.6% | ✗ |
+| 2023-06-16 | $40.06 | Pfizer Q1 2023 results | 1.95 | +0.94 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.7% | -70.6pp | -33.6% | ✗ |
+| 2023-06-23 | $38.30 | Pfizer Q1 2023 results | 1.95 | +0.96 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.5% | -70.3pp | -30.7% | ✗ |
+| 2023-06-30 | $36.68 | Pfizer Q1 2023 results | 1.95 | +0.98 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.8% | -67.3pp | -27.8% | ✗ |
+| 2023-07-07 | $35.53 | Pfizer Q1 2023 results | 1.95 | +1.00 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.5% | -64.2pp | -25.6% | ✗ |
+| 2023-07-14 | $36.32 | Pfizer Q1 2023 results | 1.95 | +0.99 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.0% | -63.1pp | -27.4% | ✗ |
+| 2023-07-21 | $37.40 | Pfizer Q1 2023 results | 1.95 | +0.97 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -26.1% | -68.3pp | -29.7% | ✗ |
+| 2023-07-28 | $36.07 | Pfizer Q1 2023 results | 1.95 | +0.99 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -23.2% | -65.7pp | -27.4% | ✗ |
+| 2023-08-02 | $35.35 | Pfizer Q2 2023 results | 1.60 | +0.65 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.0% | -65.2pp | -26.3% | ✗ |
+| 2023-08-11 | $36.04 | Pfizer Q2 2023 results | 1.60 | +0.64 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -22.4% | -68.3pp | -28.0% | ✗ |
+| 2023-08-18 | $36.66 | Pfizer Q2 2023 results | 1.60 | +0.63 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -22.4% | -73.0pp | -29.4% | ✗ |
+| 2023-08-25 | $36.38 | Pfizer Q2 2023 results | 1.60 | +0.63 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.6% | -70.8pp | -29.1% | ✗ |
+| 2023-09-01 | $35.78 | Pfizer Q2 2023 results | 1.60 | +0.64 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.4% | -67.4pp | -28.1% | ✗ |
+| 2023-09-08 | $34.25 | Pfizer Q2 2023 results | 1.60 | +0.66 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -18.5% | -67.2pp | -25.1% | ✗ |
+| 2023-09-15 | $34.07 | Pfizer Q2 2023 results | 1.60 | +0.66 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.7% | -71.6pp | -25.0% | ✗ |
+| 2023-09-22 | $32.69 | Pfizer Q2 2023 results | 1.60 | +0.68 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -16.1% | -74.4pp | -22.2% | ✗ |
+| 2023-09-29 | $33.17 | Pfizer Q2 2023 results | 1.60 | +0.68 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.9% | -76.5pp | -23.6% | ✗ |
+| 2023-10-06 | $33.13 | Pfizer Q2 2023 results | 1.60 | +0.68 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -10.0% | -69.7pp | -23.6% | ✗ |
+| 2023-10-13 | $32.11 | Pfizer Q2 2023 results | 1.60 | +0.69 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -12.5% | -69.4pp | -21.5% | ✗ |
+| 2023-10-20 | $30.65 | Pfizer Q2 2023 results | 1.60 | +0.68 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.4% | -71.2pp | -18.0% | ✗ |
+| 2023-10-27 | $30.11 | Pfizer Q2 2023 results | 1.60 | +0.69 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -6.5% | -76.8pp | -16.8% | ✗ |
+| 2023-11-01 | $30.51 | Pfizer Q3 2023 results | 1.15 | +0.23 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.1% | -72.9pp | -18.2% | ✗ |
+| 2023-11-10 | $29.48 | Pfizer Q3 2023 results | 1.15 | +0.48 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -5.7% | -63.6pp | -15.5% | ✗ |
+| 2023-11-17 | $29.92 | Pfizer Q3 2023 results | 1.15 | +0.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -4.8% | -55.6pp | -16.8% | ✗ |
+| 2023-11-24 | $30.50 | Pfizer Q3 2023 results | 1.15 | +0.23 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -6.2% | -56.2pp | -18.4% | ✗ |
+| 2023-12-01 | $28.91 | Pfizer Q3 2023 results | 1.15 | +0.45 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -0.8% | -52.1pp | -13.9% | ✗ |
+| 2023-12-08 | $28.78 | Pfizer Q3 2023 results | 1.15 | +0.45 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +1.4% | -50.3pp | -13.5% | ✗ |
+| 2023-12-15 | $26.63 | Pfizer Q3 2023 results | 1.15 | +0.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.0% | -35.7pp | -6.5% | ✗ |
+| 2023-12-22 | $28.40 | Pfizer Q3 2023 results | 1.15 | +0.45 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +0.7% | -46.9pp | -12.4% | ✗ |
+| 2023-12-29 | $28.79 | Pfizer Q3 2023 results | 1.15 | +0.28 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -1.4% | -49.1pp | -13.7% | ✗ |
+| 2024-01-05 | $29.47 | Pfizer Q3 2023 results | 1.15 | +0.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -3.1% | -53.1pp | -15.8% | ✗ |
+| 2024-01-12 | $28.70 | Pfizer Q3 2023 results | 1.15 | +0.28 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -0.1% | -48.9pp | -13.6% | ✗ |
+| 2024-01-19 | $28.28 | Pfizer Q3 2023 results | 1.15 | +0.28 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +2.7% | -43.6pp | -12.4% | ✗ |
+| 2024-01-26 | $27.47 | Pfizer Q3 2023 results | 1.15 | +0.28 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +6.6% | -38.4pp | -9.8% | ✗ |
+| 2024-01-31 | $27.08 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +10.2% | -36.0pp | -8.5% | ✗ |
+| 2024-02-09 | $27.56 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +10.5% | -30.8pp | -10.1% | ✗ |
+| 2024-02-16 | $27.62 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.2% | -27.2pp | -10.2% | ✗ |
+| 2024-02-23 | $27.76 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.8% | -27.4pp | -10.5% | ✗ |
+| 2024-03-01 | $26.59 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +16.8% | -19.7pp | -6.6% | ✗ |
+| 2024-03-08 | $27.22 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +11.9% | -22.3pp | -8.7% | ✗ |
+| 2024-03-15 | $27.94 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +7.3% | -25.1pp | -11.0% | ✗ |
+| 2024-03-22 | $27.36 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +11.0% | -16.2pp | -9.0% | ✗ |
+| 2024-03-28 | $27.75 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.7% | -14.3pp | -10.2% | ✗ |
+| 2024-04-05 | $26.66 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.0% | -10.3pp | -6.2% | ✗ |
+| 2024-04-12 | $25.86 | Pfizer Q4 2023 results | 1.15 | +0.36 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +17.3% | -18.6pp | -2.9% | ✗ |
+| 2024-04-19 | $26.00 | Pfizer Q4 2023 results | 1.15 | +0.53 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.1% | -27.2pp | -3.1% | ✗ |
+| 2024-04-26 | $25.40 | Pfizer Q4 2023 results | 1.15 | +0.53 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.7% | -23.6pp | -0.5% | ✗ |
+| 2024-05-02 | $27.70 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +7.4% | -38.2pp | -8.5% | ✗ |
+| 2024-05-10 | $28.01 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.9% | -40.5pp | -9.3% | ✗ |
+| 2024-05-17 | $28.64 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +0.4% | -42.0pp | -11.1% | ✗ |
+| 2024-05-24 | $28.88 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +1.5% | -42.1pp | -11.7% | ✗ |
+| 2024-05-31 | $28.66 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.3% | -42.9pp | -10.8% | ✗ |
+| 2024-06-07 | $28.58 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.1% | -37.8pp | -10.4% | ✗ |
+| 2024-06-14 | $27.53 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +7.6% | -31.7pp | -6.9% | ✗ |
+| 2024-06-21 | $27.74 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.2% | -36.6pp | -7.5% | ✗ |
+| 2024-06-28 | $27.98 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -1.0% | -37.6pp | -8.3% | ✗ |
+| 2024-07-05 | $28.05 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -1.1% | -38.0pp | -8.6% | ✗ |
+| 2024-07-12 | $28.92 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -4.6% | -42.0pp | -11.4% | ✗ |
+| 2024-07-19 | $29.97 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -5.0% | -43.1pp | -14.5% | ✗ |
+| 2024-07-26 | $30.77 | Pfizer Q1 2024 results | 1.80 | +1.01 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -9.1% | -47.5pp | -16.8% | ✗ |
+| 2024-07-31 | $30.54 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -7.2% | -44.5pp | -16.1% | ✗ |
+| 2024-08-09 | $28.55 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +5.7% | -42.1pp | -10.1% | ✗ |
+| 2024-08-16 | $28.30 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +6.8% | -35.9pp | -9.2% | ✗ |
+| 2024-08-23 | $28.90 | Pfizer Q2 2024 results | 2.00 | +1.29 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.0% | -29.8pp | -10.9% | ✗ |
+| 2024-08-30 | $29.01 | Pfizer Q2 2024 results | 2.00 | +1.29 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +8.2% | -30.9pp | -11.0% | ✗ |
+| 2024-09-06 | $28.56 | Pfizer Q2 2024 results | 2.00 | +1.29 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +11.6% | -33.6pp | -9.4% | ✗ |
+| 2024-09-13 | $29.27 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +6.4% | -32.2pp | -11.4% | ✗ |
+| 2024-09-20 | $29.42 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +5.7% | -31.0pp | -11.6% | ✗ |
+| 2024-09-27 | $29.09 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +10.3% | -27.2pp | -10.3% | ✗ |
+| 2024-10-04 | $28.58 | Pfizer Q2 2024 results | 2.00 | +1.24 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.3% | -27.6pp | -8.5% | ✗ |
+| 2024-10-11 | $29.16 | Pfizer Q2 2024 results | 2.00 | +1.41 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +8.7% | -28.1pp | -10.2% | ✗ |
+| 2024-10-18 | $29.22 | Pfizer Q2 2024 results | 2.00 | +1.41 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.0% | -20.1pp | -10.1% | ✗ |
+| 2024-10-25 | $28.45 | Pfizer Q2 2024 results | 2.00 | +1.41 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +17.6% | -16.2pp | -7.3% | ✗ |
+| 2024-10-30 | $28.52 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.0% | -13.8pp | -7.1% | ✗ |
+| 2024-11-08 | $26.72 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.9% | -2.5pp | -0.4% | ✗ |
+| 2024-11-15 | $24.80 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +7.5% | - |
+| 2024-11-22 | $25.65 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.0% | - |
+| 2024-11-29 | $26.21 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +1.9% | - |
+| 2024-12-06 | $25.73 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +3.9% | - |
+| 2024-12-13 | $25.58 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +4.6% | - |
+| 2024-12-20 | $26.36 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +1.6% | - |
+| 2024-12-27 | $26.62 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +0.7% | - |
+| 2025-01-03 | $26.59 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +1.0% | - |
+| 2025-01-10 | $26.72 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +0.6% | - |
+| 2025-01-17 | $26.30 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +2.3% | - |
+| 2025-01-24 | $26.09 | Pfizer Q3 2024 results | 3.15 | +2.62 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +3.2% | - |
+| 2025-01-31 | $26.52 | Pfizer Q3 2024 results | 3.15 | +2.45 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | +1.6% | - |
+| 2025-02-05 | $26.44 | Pfizer Q4 2024 results | 2.95 | +1.06 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +2.0% | - |
+| 2025-02-14 | $25.53 | Pfizer Q4 2024 results | 2.95 | +1.13 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +5.6% | - |
+| 2025-02-21 | $26.30 | Pfizer Q4 2024 results | 2.95 | +1.07 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +2.5% | - |
+| 2025-02-28 | $26.43 | Pfizer Q4 2024 results | 2.95 | +1.05 | 1.75x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +1.9% | - |
+| 2025-03-07 | $26.73 | Pfizer Q4 2024 results | 2.95 | +1.02 | 1.80x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +0.8% | - |
+| 2025-03-14 | $25.72 | Pfizer Q4 2024 results | 2.95 | +1.11 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +4.8% | - |
+| 2025-03-21 | $26.28 | Pfizer Q4 2024 results | 2.95 | +1.06 | 1.72x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +2.5% | - |
+| 2025-03-28 | $25.21 | Pfizer Q4 2024 results | 2.95 | +1.14 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +6.8% | - |
+| 2025-04-04 | $22.97 | Pfizer Q4 2024 results | 2.95 | +1.25 | 1.22x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | +17.1% | - |
+| 2025-04-11 | $21.91 | Pfizer Q4 2024 results | 2.95 | +1.50 | 1.10x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +22.7% | - |
+| 2025-04-17 | $22.14 | Pfizer Q4 2024 results | 2.95 | +1.49 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +21.4% | - |
+| 2025-04-25 | $22.92 | Pfizer Q4 2024 results | 2.95 | +1.24 | 1.21x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | +17.2% | - |
+| 2025-04-30 | $24.41 | Pfizer Q1 2025 results | 1.60 | -0.18 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +10.1% | - |
+| 2025-05-09 | $22.28 | Pfizer Q1 2025 results | 1.60 | +0.12 | 1.20x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.7% | - |
+| 2025-05-16 | $22.83 | Pfizer Q1 2025 results | 1.60 | -0.12 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +18.0% | - |
+| 2025-05-23 | $23.32 | Pfizer Q1 2025 results | 1.60 | -0.15 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +15.8% | - |
+| 2025-05-30 | $23.49 | Pfizer Q1 2025 results | 1.60 | -0.16 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +15.1% | - |
+| 2025-06-06 | $23.35 | Pfizer Q1 2025 results | 1.60 | -0.15 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +16.0% | - |
+| 2025-06-13 | $24.54 | Pfizer Q1 2025 results | 1.60 | -0.22 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +10.6% | - |
+| 2025-06-20 | $23.97 | Pfizer Q1 2025 results | 1.60 | -0.19 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +13.5% | - |
+| 2025-06-27 | $24.19 | Pfizer Q1 2025 results | 1.60 | -0.20 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +13.1% | - |
+| 2025-07-03 | $25.38 | Pfizer Q1 2025 results | 1.60 | -0.27 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +8.3% | - |
+| 2025-07-11 | $25.65 | Pfizer Q1 2025 results | 1.60 | -0.29 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +8.0% | - |
+| 2025-07-18 | $24.47 | Pfizer Q1 2025 results | 1.60 | -0.22 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +13.9% | - |
+| 2025-07-25 | $24.79 | Pfizer Q1 2025 results | 1.60 | -0.24 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +13.3% | - |
+| 2025-08-01 | $23.49 | Pfizer Q1 2025 results | 1.60 | -0.16 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +20.5% | - |
+| 2025-08-06 | $23.93 | Pfizer Q2 2025 results | 2.50 | +0.72 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +18.9% | - |
+| 2025-08-15 | $25.14 | Pfizer Q2 2025 results | 2.50 | +0.64 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +13.9% | - |
+| 2025-08-22 | $25.88 | Pfizer Q2 2025 results | 2.50 | +0.59 | 1.90x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +11.0% | - |
+| 2025-08-29 | $24.76 | Pfizer Q2 2025 results | 2.50 | +0.67 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +16.2% | - |
+| 2025-09-05 | $24.88 | Pfizer Q2 2025 results | 2.50 | +0.66 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +15.7% | - |
+| 2025-09-12 | $23.87 | Pfizer Q2 2025 results | 2.50 | +0.72 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +21.0% | - |
+| 2025-09-19 | $24.03 | Pfizer Q2 2025 results | 2.50 | +0.71 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +20.9% | - |
+| 2025-09-26 | $23.76 | Pfizer Q2 2025 results | 2.50 | +0.72 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +22.9% | - |
+| 2025-10-03 | $27.37 | Pfizer Q2 2025 results | 2.50 | +0.48 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +7.2% | - |
+| 2025-10-10 | $24.78 | Pfizer Q2 2025 results | 2.50 | +0.66 | 1.80x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +19.9% | - |
+| 2025-10-17 | $24.51 | Pfizer Q2 2025 results | 2.50 | +0.68 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +22.0% | - |
+| 2025-10-24 | $24.76 | Pfizer Q2 2025 results | 2.50 | +0.66 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +20.7% | - |
+| 2025-10-31 | $24.65 | Pfizer Q2 2025 results | 2.50 | +0.67 | 1.77x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +21.1% | - |
+| 2025-11-05 | $24.61 | Pfizer Q3 2025 results | 1.80 | -0.03 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +18.8% | - |
+| 2025-11-14 | $25.06 | Pfizer Q3 2025 results | 1.80 | -0.07 | 2.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-11-21 | $25.04 | Pfizer Q3 2025 results | 1.80 | -0.07 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-11-28 | $25.74 | Pfizer Q3 2025 results | 1.80 | -0.13 | 2.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-05 | $26.03 | Pfizer Q3 2025 results | 1.80 | -0.16 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-12 | $25.85 | Pfizer Q3 2025 results | 1.80 | -0.15 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-19 | $25.19 | Pfizer Q3 2025 results | 1.80 | -0.14 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-26 | $25.09 | Pfizer Q3 2025 results | 1.80 | -0.14 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-02 | $25.18 | Pfizer Q3 2025 results | 1.80 | -0.15 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-09 | $25.48 | Pfizer Q3 2025 results | 1.80 | -0.17 | 3.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-16 | $25.65 | Pfizer Q3 2025 results | 1.80 | -0.18 | 3.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-23 | $25.65 | Pfizer Q3 2025 results | 1.80 | -0.18 | 3.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-30 | $26.44 | Pfizer Q3 2025 results | 1.80 | -0.22 | 4.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-04 | $26.78 | Pfizer Q4 2025 results | 1.95 | -0.14 | 8.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-13 | $27.58 | Pfizer Q4 2025 results | 1.95 | -0.18 | 10.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-20 | $26.65 | Pfizer Q4 2025 results | 1.95 | -0.12 | 7.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-27 | $27.65 | Pfizer Q4 2025 results | 1.95 | -0.19 | 11.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-06 | $27.05 | Pfizer Q4 2025 results | 1.95 | -0.16 | 8.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-13 | $26.58 | Pfizer Q4 2025 results | 1.95 | -0.12 | 7.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-20 | $26.97 | Pfizer Q4 2025 results | 1.95 | -0.14 | 8.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-27 | $27.04 | Pfizer Q4 2025 results | 1.95 | -0.16 | 8.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-02 | $28.32 | Pfizer Q4 2025 results | 1.95 | -0.22 | 16.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-10 | $26.92 | Pfizer Q4 2025 results | 1.95 | -0.14 | 8.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-17 | $27.56 | Pfizer Q4 2025 results | 1.95 | -0.18 | 10.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-24 | $27.00 | Pfizer Q4 2025 results | 1.95 | -0.15 | 8.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-01 | $26.33 | Pfizer Q4 2025 results | 1.95 | -0.10 | 6.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-06 | $26.53 | Pfizer Q1 2026 results | 2.15 | +0.08 | 7.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-15 | $25.33 | Pfizer Q1 2026 results | 2.15 | +0.16 | 5.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-22 | $25.90 | Pfizer Q1 2026 results | 2.15 | +0.12 | 6.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-29 | $26.18 | Pfizer Q1 2026 results | 2.15 | +0.11 | 6.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-05 | $26.04 | Pfizer Q1 2026 results | 2.15 | +0.12 | 6.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-12 | $26.21 | Pfizer Q1 2026 results | 2.15 | +0.10 | 6.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-18 | $25.21 | Pfizer Q1 2026 results | 2.15 | +0.17 | 5.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-26 | $24.29 | Pfizer Q1 2026 results | 2.15 | +0.24 | 4.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-02 | $24.32 | Pfizer Q1 2026 results | 2.15 | +0.24 | 4.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-10 | $24.17 | Pfizer Q1 2026 results | 2.15 | +0.25 | 3.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-17 | $25.05 | Pfizer Q1 2026 results | 2.15 | +0.18 | 4.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-24 | $24.54 | Pfizer Q1 2026 results | 2.15 | +0.21 | 4.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-31 | $25.01 | Pfizer Q1 2026 results | 2.15 | +0.18 | 4.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-05 | $25.81 | Pfizer Q2 2026 results | 2.00 | -0.03 | 5.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-14 | $26.79 | Pfizer Q2 2026 results | 2.00 | -0.09 | 8.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-21 | $28.07 | Pfizer Q2 2026 results | 2.00 | -0.17 | 14.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-28 | $27.96 | Pfizer Q2 2026 results | 2.00 | -0.17 | 13.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-04 | $28.45 | Pfizer Q2 2026 results | 2.00 | -0.18 | 17.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-11 | $27.72 | Pfizer Q2 2026 results | 2.00 | -0.15 | 11.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-18 | $27.66 | Pfizer Q2 2026 results | 2.00 | -0.15 | 11.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-25 | $28.67 | Pfizer Q2 2026 results | 2.00 | -0.20 | 20.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-02 | $27.80 | Pfizer Q2 2026 results | 2.00 | -0.15 | 12.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-09 | $28.28 | Pfizer Q2 2026 results | 2.00 | -0.18 | 15.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-16 | $29.58 | Pfizer Q2 2026 results | 2.00 | -0.24 | 68.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-23 | $30.03 | Pfizer Q2 2026 results | 2.00 | -0.25 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-30 | $30.52 | Pfizer Q2 2026 results | 2.00 | -0.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-11-04 | $30.79 | Pfizer Q3 2026 results | 2.00 | -0.21 | 24.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
