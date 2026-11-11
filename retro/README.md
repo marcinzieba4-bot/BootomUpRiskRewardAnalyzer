@@ -13317,7 +13317,9 @@ Controls and checks:
 - **Shared code untouched** (the engine template, `retro_tool.py`, `taxonomy_eras.json`); the builder and fact sheet are CAT's own and the
   fact sheet only gains records; the firewall changes only in its CAT branch, which now also plants a later withdrawal of every guided
   field.
-- **Firewall:** run on the committed series at the 33 cutoffs above; the result follows in the next commit.
+- **Firewall:** every kind of fact planted after the cutoff with absurd values (as for 2014-2017, plus a later withdrawal of every guided
+  field), and prices from the cutoff multiplied by 10, change no model and leave no planted text at any of the 33 cutoffs above (every
+  release, 10-K, dividend and withdrawal date of 2018-2022, the EV live date, 2018-01-01 and 2023-01-01; 522 to 783 dates each).
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 120 dates, FAIR on 31, RICH on 110.** 2018: CHEAP 49 (from the Q4 2017 print), RICH 3 (January, on FY17's $6.25 guide at
