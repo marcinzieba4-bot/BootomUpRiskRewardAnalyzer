@@ -6,8 +6,9 @@ The CMCSA sibling of build_pfe.py: the same frozen rules (retro method r2), the 
 with cable signals (retro/templates/cmcsa_engine.py.tmpl). For each as-of date the builder
   1. selects only the history vintage, prints, guides and dividends whose 'published' date is <= AS_OF,
   2. computes every market statistic from daily prices truncated at AS_OF, as traded (Yahoo's series times its factors after AS_OF:
-     the 2-for-1 split of 2017-02-21 and the 1.067 of 2026-01-05; the 3-for-2 split of 2007-02-22 precedes every date and restates
-     the per-share facts published before it through the fact sheet's 'splits'),
+     the 2-for-1 split of 2017-02-21 on the dates before it, and the 1.067 of 2026-01-05; each split restates the per-share facts
+     published before it through the fact sheet's 'splits': the 3-for-2 of 2007-02-22 precedes every date, and the 2-for-1 of
+     2017-02-21 halves the earlier per-share facts from its own date),
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 Comcast's fiscal year is the calendar year. EPS is diluted EPS from continuing operations, replaced by the company's adjusted figure
@@ -25,8 +26,13 @@ A Q4 print may restate an earlier year's EPS ('restates'): the Q4 2010 release f
 GAAP $1.26), so it replaces that year from the print until a 10-K vintage published after the print carries it (the PFE, XOM, SHW and
 BKR encoding; retro/README.md, "CMCSA 2010-2013"). NBCUniversal (consolidated from 2011-01-28) enters through the prints as published.
 
+From 2014 (retro/README.md, "CMCSA 2014-2017"): each 10-K vintage holds the ten years to its own year; no filing gives an outlook in
+numbers, so BASE takes the latest quarter's reported growth; STREAMING, live from 2015-08-04, joins the watch list from each 10-K's
+consumer-behaviour risk factor (company-acknowledged, no market read: the label and text only).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2009 were accepted before the open, none on a Friday.
+is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open except Q1 2011's (after the close, dated
+the next trading day); only Q3 2012's came on a Friday.
 
 Output goes to staging/retrospective/CMCSA until the series is added to the archive (--out archive/retrospective/CMCSA).
 
@@ -145,11 +151,16 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(int(k) for k in h["eps_normalized"]) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a cable operator in 2008-2009 (STREAMING, whose scope names pay-TV bundles,
-    # from 2015-08-04); the builder refuses events until a theme encoding is decided
-    events = [e for e in facts["events"] if e["published"] <= as_of]
-    if events:
+    # no disruption theme in taxonomy_eras.json is live for a cable operator before STREAMING (scoped to linear TV networks and pay-TV
+    # bundles, live from 2015-08-04). The one encoding decided (retro/README.md, "CMCSA 2014-2017"): each 10-K's consumer-behaviour risk
+    # factor, which names online video services as competition for Comcast's video services (streaming_company_acknowledged), puts
+    # STREAMING on the watch list from the theme's live date, with the latest 10-K's words (a 10-K's wording is replaced by the next
+    # 10-K's; the MSFT CLOUD, XOM and WMT rule). Any other event kind needs its encoding decided first
+    events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
+    if any(e["kind"] != "streaming_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the CMCSA builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
+    themes = retro_tool.load_taxonomy()["themes"]
+    events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -257,12 +268,42 @@ def build(as_of, facts, raw, spx, engine, out):
         yearly.append((y, round(pe[dd], 1), dd))
     ref = min(yr, key=lambda d: px[d][2])
 
-    # ── era-dependent text, from facts only: no disruption theme has dated evidence on AS_OF ──
+    # ── era-dependent text, from facts only: which disruption theme has dated evidence on AS_OF ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
     key_tail = ("DBS and phone-company video are the competition the 10-K names; pricing and\n"
                 "  digital, Internet and phone growth are what must cover the video losses.")
     theme_summary = "no disruption theme has dated evidence"
+    why = h["why"]
+    if h.get("why_theme_tail"):                    # from the FY2014 vintage the theme clause follows the theme's status on AS_OF
+        why += "; no disruption theme is live for it"
+    for e in [e for e in events if e["kind"] == "streaming_company_acknowledged"][-1:]:
+        # STREAMING is live from 2015-08-04; the latest 10-K's consumer-behaviour risk factor puts it on the watch list (the ACN CLOUD
+        # rule, as for WMT: company-acknowledged, no market read). The factor pair nets to zero and the theme signal stays at 2/4, so only
+        # text changes. The registry's market-pricing event (2015-08-04) is Disney's cable-network outlook and a sector sell-off, which
+        # names no Comcast fact, so it is quoted from its date and re-files nothing (the WMT, LOW and PEP reading); re-filing needs dated
+        # evidence of market pricing for Comcast
+        th = themes[e["theme"]]
+        mp = [x for x in th["pit_evidence"] if x["date"] <= as_of]
+        mp_txt = (f" The theme registry dates the market's pricing of streaming to {mp[-1]['date']} ({mp[-1]['event']}), evidence that "
+                  "names Disney's networks, not Comcast." if mp else "")
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "streaming"
+        watch = [{"theme": "STREAMING", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Comcast's own {e['doc']} says '{e['risk_quote']}' At the same time {e['offering']}. "
+                             f"The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}.{mp_txt} Re-file as DISRUPTION_EXPOSED "
+                             "(STREAMING) only if dated evidence shows the market pricing streaming substitution of Comcast's video "
+                             "customers or networks specifically.")}]
+        factors = [(f"Own streaming: {e['offering_short']}", 0.2, 0.10),
+                   (f"Online video competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "Streaming: net effect on video demand"
+        trigger = "Online video takes video customers and viewing faster than Comcast's own streaming keeps them"
+        key_tail = ("DBS, phone-company and online video services are the competition the 10-K names;\n"
+                    "  pricing and Internet and business services growth must cover the video losses.")
+        theme_summary = "streaming is live and company-acknowledged; no dated evidence ties the multiple to it"
+        assert h.get("why_theme_tail"), "a vintage before FY2014 states that no theme is live"
+        why = h["why"] + ("; STREAMING is live (from 2015-08-04) and its consumer-behaviour risk factor puts it on the watch list: "
+                          "company-acknowledged, with no dated evidence that the market prices it for Comcast")
     cat3 = (f"(3) {fy_now} revenue guide {pct_range(*fwd)} ({gr['doc']}): the company's own read of the year" if gr else
             f"(3) A {fy_now} revenue guide in numbers — none yet")
     cat4 = (f"(4) Capital intensity — capital expenditures {latest['capex_pct']:.1f}% of revenues in {latest['quarter']} "
@@ -280,7 +321,7 @@ def build(as_of, facts, raw, spx, engine, out):
     company, exchange = h["company"], h["exchange"]
     groups = [tuple(g) for g in h["groups"]]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
-           + ([dividend_src] if dividend_src else []) + split_ids)
+           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, CMCSA and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/CMCSA/history",
@@ -322,9 +363,9 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 PIT_PROFILE = {{
     "kind": "DURABLE",
     "risk": 2,
-    "why": {R(h["why"])},
+    "why": {R(why)},
     "theme_watch": {R(watch)},
-    "evidence": [],
+    "evidence": {R(list(dict.fromkeys(e["id"] for e in events)))},
 }}
 
 # ── FACTS: market (prices truncated at AS_OF, as traded on each day) ──────────
