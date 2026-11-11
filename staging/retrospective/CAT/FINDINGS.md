@@ -1,13 +1,13 @@
 # CAT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CAT weekly dates: 522 from 2008-01-04 to 2017-12-29 (105 in 2008-2009, 209 in 2010-2013,
-208 in 2014-2017), all
+Patterns seen in `outcome.json` for the CAT weekly dates: 783 from 2008-01-04 to 2022-12-30 (105 in 2008-2009, 209 in 2010-2013,
+208 in 2014-2017, 261 in 2018-2022), all
 Caterpillar Inc. (NYSE: CAT). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was
-scored only after its point-in-time build was committed and pushed (2008-2009: 26e9995; 2010-2013: a1a4479; 2014-2017: 6b020c8). Outcomes were computed on
-2026-11-11; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29). Total returns include the quarterly
+scored only after its point-in-time build was committed and pushed (2008-2009: 26e9995; 2010-2013: a1a4479; 2014-2017: 6b020c8; 2018-2022: e2fcc32). Outcomes were computed on
+2026-11-11; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2025-12-30). Total returns include the quarterly
 dividends ($0.36, then $0.42 from July 2008, $0.44 from July 2010, $0.46 from July 2011, $0.52 from July 2012, $0.60 from July 2013,
-$0.70 from July 2014, $0.77 from July 2015, $0.78 from July 2017, $0.86 from July 2018 and $1.03
-from July 2019, ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even
+$0.70 from July 2014, $0.77 from July 2015, $0.78 from July 2017, $0.86 from July 2018, $1.03
+from July 2019, $1.11 from July 2021 and $1.20 from July 2022, ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even
 count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call
 held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of the benchmark, and
 RICH should miss the hurdle and lag the benchmark.
@@ -299,3 +299,132 @@ RICH should miss the hurdle and lag the benchmark.
   is pro-cyclical. It needs other cyclicals and periods before any method change.
 - **Today's profile** files CAT CYCLICAL, risk 1 (`profile_drift` in every outcome); the point-in-time kind agrees on every 2014-2017
   date and only the risk score differs (2 then, 1 today).
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 3 | -9.0% | -10.0% to -4.0% | 0 | 0 | -21.5% | 3 |
+| class CHEAP, legacy tier ACCUMULATE | 13 | -12.0% | -35.6% to -5.7% | 0 | 0 | -14.2% | 0 |
+| class CHEAP, legacy tier BUY | 36 | +5.2% | -25.0% to +57.1% | 11 | 8 | -6.6% | 11 |
+| latest print Q3 2017, EPS $6.25 (2018-01-05 to 2018-01-19) | 3 | -9.0% | -10.0% to -4.0% | 0 | 0 | -21.5% | 3 |
+| latest print Q4 2017, EPS $8.75 (2018-01-26 to 2018-04-20) | 13 | -12.0% | -35.6% to -5.7% | 0 | 0 | -14.2% | 0 |
+| latest print Q1 2018, EPS $10.75 (2018-04-25 to 2018-07-27) | 14 | -6.5% | -25.0% to +4.0% | 0 | 0 | -10.5% | 0 |
+| latest print Q2 2018, EPS $11.5 (2018-07-31 to 2018-10-19) | 12 | +9.0% | -2.1% to +32.8% | 1 | 1 | -7.5% | 1 |
+| latest print Q3 2018, EPS $11.5 (2018-10-24 to 2018-12-28) | 10 | +48.3% | +33.8% to +57.1% | 10 | 7 | +10.5% | 10 |
+
+- **CHEAP failed on the 38 dates from the Q4 2017 print to 2018-10-12 and held on the 11 after it.** From the Q4 2017 print to the Q2 2018
+  period ($131.32-167.06, 11.4-19.1x guides of $8.75-11.50, with BASE at +24% to +36%/yr from the quarters' sales growth) the stock
+  returned -35.6% to +19.9% over two years, 9-37pp behind SPY, and landed nearest BEAR on 26 dates (as low as 0.38 times the BASE price):
+  the 2011 pattern again, a boom quarter carried as two-year growth (Q4 2017's +34.7%). The guided EPS was right (FY2018 came in at $11.22
+  against the $8.75-11.50 the models carried); the price fell with the 2019-2020 slowdown. The 11 dates from 2018-10-19 ($112.34-136.86, 9.8-11.9x,
+  under the floor) returned +32.8% to +57.1% and cleared the hurdle. The 3 RICH dates of January held (-10.0% to -4.0%).
+- **Ranking:** the P/E on the guide (-0.85, -0.89), the EPP gap (-0.85, -0.89), Ratio B (-0.69, -0.83) and the adjusted gap (+0.78, +0.88)
+  carried the right sign, as did the entry price (-0.78, -0.98); the composite (-0.65, -0.37) the wrong one (it was 3.0-3.2 all year).
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 51 | +64.7% | +38.1% to +108.1% | 51 | 41 | +41.5% | 51 |
+| class CHEAP, legacy tier ACCUMULATE | 1 | +44.8% | +44.8% to +44.8% | 1 | 0 | +42.6% | 1 |
+| latest print Q3 2018, EPS $11.5 (2019-01-04 to 2019-01-25) | 4 | +48.3% | +42.8% to +52.7% | 4 | 2 | +6.2% | 4 |
+| latest print Q4 2018, EPS $12.25 (2019-01-29 to 2019-04-18) | 12 | +69.3% | +50.9% to +80.4% | 12 | 12 | +14.2% | 12 |
+| latest print Q1 2019, EPS $12.25 (2019-04-25 to 2019-07-19) | 13 | +75.1% | +55.2% to +108.1% | 13 | 13 | +38.2% | 13 |
+| latest print Q2 2019, EPS $12.25 (2019-07-25 to 2019-10-18) | 13 | +66.4% | +55.4% to +94.1% | 13 | 13 | +60.5% | 13 |
+| latest print Q3 2019, EPS $10.84 (2019-10-24 to 2019-12-27) | 10 | +46.9% | +38.1% to +56.2% | 10 | 1 | +44.7% | 10 |
+
+- **CHEAP held on all 52.** At 9.3-13.7x the $12.25 and $10.84 guides (the 0th-35th percentile) the stock returned +38.1% to +108.1% over two
+  years, cleared the hurdle on every date and beat SPY on 41; every date landed nearest BASE (0.75-1.51 times its price), through a 39%
+  drawdown to the low close of $91.85 on 2020-03-23. Over three years 43 of 52 beat SPY.
+- **Ranking:** the P/E (-0.75, -0.42), the EPP gap (-0.75, -0.43) and Ratio B (-0.86, -0.42) with the right sign; the composite (-0.03, -0.93),
+  falling from 2.8 to 1.8 as the quarters slowed, the wrong one.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 2 | +59.9% | +45.1% to +59.9% | 2 | 1 | +44.1% | 2 |
+| class CHEAP, legacy tier BUY | 12 | +99.0% | +57.4% to +140.2% | 12 | 12 | +86.6% | 12 |
+| class FAIR, legacy tier ACCUMULATE | 4 | +59.6% | +56.2% to +68.1% | 4 | 4 | +71.9% | 1 |
+| class RICH, legacy tier ACCUMULATE | 11 | +43.9% | +18.5% to +71.3% | 8 | 11 | +49.2% | 0 |
+| class RICH, legacy tier WATCHLIST | 7 | +28.9% | +15.3% to +51.0% | 3 | 7 | +32.4% | 0 |
+| class FAIR, legacy tier BUY | 4 | +82.5% | +58.6% to +87.9% | 4 | 4 | +74.2% | 0 |
+| class RICH, legacy tier BUY | 3 | +46.6% | +46.3% to +57.9% | 3 | 3 | +62.3% | 0 |
+| class RICH, legacy tier AVOID | 10 | +36.5% | +10.8% to +42.9% | 7 | 10 | +15.3% | 0 |
+| latest print Q3 2019, EPS $10.84 (2020-01-03 to 2020-01-24) | 4 | +58.7% | +45.1% to +59.9% | 4 | 3 | +45.4% | 4 |
+| latest print Q4 2019, EPS $9.25/$11.06 (2020-01-31 to 2020-04-24) | 13 | +80.4% | +46.1% to +140.2% | 13 | 13 | +75.5% | 8 |
+| latest print Q1 2020, EPS $11.06 (2020-04-29 to 2020-07-24) | 13 | +71.3% | +32.1% to +99.1% | 12 | 13 | +69.5% | 3 |
+| latest print Q2 2020, EPS $11.06 (2020-07-31 to 2020-10-23) | 13 | +27.9% | +10.8% to +55.8% | 5 | 13 | +36.8% | 0 |
+| latest print Q3 2020, EPS $11.06 (2020-10-28 to 2020-12-31) | 10 | +39.5% | +31.7% to +51.0% | 9 | 10 | +15.3% | 0 |
+
+- **CHEAP held on all 14, RICH failed on all 31.** The CHEAP dates (January on the FY19 guide, and the March-May fall at 9.5-11.3x, $95.50-125.03)
+  returned +45.1% to +140.2% over two years. The 31 RICH dates (2 in February, 6 in May and June, and every date from 2020-07-02, on FY19's $11.06
+  with BASE at -19.5% to -29.2%/yr from the pandemic quarters) returned +10.8% to +71.3% and beat SPY on all 31 (by 3-39pp), landing
+  nearest BULL. A fourth sighting of the
+  trough pattern (2009, 2010, 2016 and now 2020): a falling quarter's sales growth carried as two-year growth reads a recovery as richness.
+  Of the 8 FAIR dates, 1 held. Over three years every 2020 date beat SPY (+47.4% to +144.5%).
+- **Ranking:** the entry price (-0.84, -0.99), the P/E (-0.75, -0.89), the EPP gap (-0.77, -0.92), Ratio B (-0.81, -0.90) and the adjusted gap
+  (+0.84, +0.88) all with the right sign; the composite (+0.69, +0.69) too, for once (it was lowest on the RICH dates of the second half).
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +29.0% | -9.7% to +49.6% | 21 | 40 | +5.8% | 12 |
+| latest print Q3 2020, EPS $11.06 (2021-01-08 to 2021-01-22) | 3 | +34.8% | +32.7% to +37.4% | 3 | 3 | +5.8% | 0 |
+| latest print Q4 2020, EPS $6.56 (2021-01-29 to 2021-04-23) | 13 | +3.1% | -5.4% to +49.6% | 2 | 7 | -5.5% | 6 |
+| latest print Q1 2021, EPS $6.56 (2021-04-30 to 2021-07-23) | 13 | +10.7% | -9.7% to +27.5% | 0 | 7 | -3.3% | 6 |
+| latest print Q2 2021, EPS $6.56 (2021-07-30 to 2021-10-22) | 13 | +39.4% | +29.0% to +45.3% | 11 | 13 | +13.3% | 0 |
+| latest print Q3 2021, EPS $6.56 (2021-10-29 to 2021-12-31) | 10 | +32.3% | +19.1% to +47.7% | 5 | 10 | +21.0% | 0 |
+
+- **RICH held on 12 of 52.** On FY2020's $6.56 (no outlook) the stock stood at 28-37x and returned -9.7% to +49.6% over two years; the
+  12 that held are the dates from 2021-03-19 to 2021-06-04 ($225.29-244.02, -9.7% to +2.2%, 2-11pp behind SPY); the 40 others beat SPY by 2-45pp
+  as FY2021 came in at $10.81 and the multiple on it fell to 15-22x. Over three years every 2021 date beat SPY (+40.2% to +112.8%).
+  Hypothesis, not a rule: with no guide, the last full year's EPS at a trough overstates the multiple; the rollover rule was written for
+  the weeks between a year-end and its Q4 print, not for years without guidance; whether a different anchor helps is a cross-ticker
+  question for a new method version, never a CAT fit.
+- **Ranking:** the entry price (-0.82, -0.85), the P/E (-0.82, -0.84), the EPP gap (-0.78, -0.81), Ratio B (-0.72, -0.78) and the adjusted
+  gap (+0.65, +0.74) with the right sign, all through the price; the composite (+0.49, +0.60) with the right sign as well.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 24 | +70.9% | +31.1% to +110.8% | 23 | 22 | +45.4% | 0 |
+| class FAIR, legacy tier WATCHLIST | 18 | +83.3% | +53.7% to +130.1% | 18 | 18 | +67.6% | 0 |
+| class CHEAP, legacy tier WATCHLIST | 4 | +132.2% | +72.8% to +144.6% | 4 | 4 | +92.2% | 4 |
+| class CHEAP, legacy tier ACCUMULATE | 1 | +78.4% | +78.4% to +78.4% | 1 | 1 | +37.4% | 1 |
+| class FAIR, legacy tier AVOID | 5 | +64.8% | +63.7% to +82.8% | 5 | 5 | +20.3% | 0 |
+| latest print Q3 2021, EPS $6.56 (2022-01-07 to 2022-01-21) | 3 | +33.2% | +31.1% to +37.8% | 2 | 3 | +11.4% | 0 |
+| latest print Q4 2021, EPS $10.81 (2022-01-28 to 2022-04-22) | 13 | +64.8% | +53.7% to +78.4% | 13 | 13 | +25.1% | 3 |
+| latest print Q1 2022, EPS $10.81 (2022-04-29 to 2022-07-29) | 14 | +79.5% | +53.1% to +105.2% | 14 | 14 | +53.7% | 0 |
+| latest print Q2 2022, EPS $10.81 (2022-08-03 to 2022-10-21) | 12 | +102.6% | +75.9% to +144.6% | 12 | 12 | +72.4% | 2 |
+| latest print Q3 2022, EPS $10.81 (2022-10-28 to 2022-12-30) | 10 | +72.1% | +55.9% to +82.8% | 10 | 8 | +45.7% | 0 |
+
+- **RICH and FAIR failed on all 47, CHEAP held on all 5.** On FY2021's $10.81 (no outlook) at 15-22x, the stock returned +31.1% to +130.1%
+  over two years; with the 5 CHEAP dates, 51 of the 52 cleared the hurdle and 50 beat SPY. The FAIR dates landed 20-70pp above SPY,
+  outside the ±15pp band. The 5
+  CHEAP dates (2022-02-18 to 2022-09-30 dips) returned +72.8% to +144.6%. Every date landed nearest BULL (1.22-1.91 times the BASE price);
+  the low close was $162.44 on 2022-09-27. Over three years every 2022 date beat SPY (+33.3% to +205.0%).
+- **Ranking:** the entry price (-0.75, -0.65), the P/E (-0.80, -0.71) and the EPP gap (-0.80, -0.71) with the right sign; Ratio B (-0.56,
+  -0.37) too; the adjusted gap (-0.03, -0.11) none; the composite (-0.60, -0.58) the wrong one.
+
+## 2018-2022: what the second cycle shows (hindsight)
+
+- **Calls held:** CHEAP 82 of 120, FAIR 1 of 31, RICH 15 of 110, 98 of 261 (2018: 14 of 52; 2019: 52 of 52; 2020: 15 of 53; 2021: 12 of 52;
+  2022: 5 of 52). With 2008-2017: CHEAP 137 of 286, FAIR 14 of 52, RICH 153 of 445, 304 of 783 in all.
+- **Within each year the valuation metrics ranked the outcomes; across years they did not.** In every year from 2018 to 2022 the P/E on the
+  guide, the EPP gap and Ratio B carried the right sign (-0.42 to -0.92 on the m12-24 return), unlike 2010-2017. Pooled over 2018-2022 the
+  entry price ranks at -0.29 and -0.31, the P/E at -0.41 and -0.36, the EPP gap at -0.44 and -0.40, Ratio B at -0.35 and -0.26 (the right
+  sign, weakly), the adjusted gap at +0.06 and -0.22 and the composite at -0.33 and -0.52 (none or the wrong sign). Across 2008-2022
+  (783 dates) only the adjusted gap (-0.26, -0.38), the composite (-0.38, -0.48) and the entry price (-0.21, -0.27) are clearly signed, and
+  the first two the wrong way.
+- **The level of the call was set by the anchor, not by the price.** CHEAP held where the EPS anchor was a guide near the cycle's level
+  (late 2018, 2019, early 2020); RICH failed where the anchor was a trough quarter's growth (the second half of 2020) or a trough year
+  with no outlook (2021, 2022). The boom quarter of Q4 2017 made the early-2018 CHEAP calls fail as in 2011.
+- **Hypotheses, not rules** (other cyclicals and periods first, then a new method version with a full re-run, never a CAT fit): BASE from
+  one quarter's sales growth misreads both a boom (2011, 2018) and a bust (2009, 2020) for a deep cyclical; and the rollover rule's
+  last-full-year EPS, applied for years when a company gives no outlook, anchors the multiple to a trough.
+- **Today's profile** files CAT CYCLICAL, risk 1 (`profile_drift`); the point-in-time kind agrees on every 2018-2022 date and only the risk
+  score differs (2 then, 1 today).
