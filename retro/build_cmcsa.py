@@ -21,6 +21,10 @@ the fiscal year in percent, pro forma, and no EPS. The method r2 inputs map as f
   - guided margin step: none (the operating cash flow growth guide is not an operating-margin guide; the AAPL gross-margin rule);
     the margin signal takes the latest quarter's operating margin change.
 
+A Q4 print may restate an earlier year's EPS ('restates'): the Q4 2010 release first publishes 2009's EPS excluding one-offs ($1.11;
+GAAP $1.26), so it replaces that year from the print until a 10-K vintage published after the print carries it (the PFE, XOM, SHW and
+BKR encoding; retro/README.md, "CMCSA 2010-2013"). NBCUniversal (consolidated from 2011-01-28) enters through the prints as published.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. The earnings 8-Ks of 2007-2009 were accepted before the open, none on a Friday.
 
@@ -166,6 +170,16 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_video_pct=a["video_pct"], prev_fy_video_note=a["video_note"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a Q4 print may restate an earlier year's EPS ('restates': the Q4 2010 release first publishes 2009 excluding one-offs); each year
+    # comes from the latest filing that reports it, so the restated figure replaces the year from the print until a 10-K vintage
+    # published after the print carries the year (retro/README.md, "CMCSA 2010-2013")
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, r in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: r["eps"]},
+                         normalization=f'{h["normalization"]}; {p["restates_note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
@@ -281,7 +295,7 @@ def build(as_of, facts, raw, spx, engine, out):
     volumes = (f"video subscribers {r['video_k']:,}K against {r['video_prior_k']:,}K a year earlier ({latest['video_pct']:+.2f}%), "
                f"as the release shows them; capital expenditures ${r['capex_m']:,}M against ${r['capex_prior_m']:,}M"
                + (f"; {latest['note']}" if latest.get("note") else ""))
-    cable = next(v for n, v, _ in groups if n == "Cable") / sum(v for _, v, _ in groups) * 100
+    cable = next(v for n, v, _ in groups if n in ("Cable", "Cable Communications")) / sum(v for _, v, _ in groups) * 100
     R = repr
     head = f'''#!/usr/bin/env python3
 """

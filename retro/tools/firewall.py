@@ -49,7 +49,8 @@ print whose full-year actuals are absurd and which restates every year of the hi
 withdrawal of every guided field of every guided year and a later reissue of the last print before CUTOFF (PFE 2014-2017), a later
 vintage excluding a year (PFE 2018-2021), and a later Q4 print whose full-year actuals exclude its own year (PFE 2022-2026); CMCSA: a
 print whose subscribers, margins, capital expenditures, raw figures and full-year actuals are absurd (for the year after the latest
-vintage before CUTOFF), a later guide with every guided field (a range, the words of a one-sided bound, the label and note); every
+vintage before CUTOFF) and which restates every year of the history (CMCSA 2010-2013), a later guide with every guided field (a range,
+the words of a one-sided bound, the label and note); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -426,6 +427,9 @@ try:
                              "normalization_note": "PLANTED", "op_margin": -50.0, "ocf_margin": 1.0, "pretax_margin": -50.0,
                              "pretax_margin_note": "PLANTED", "sales_growth": -60.0, "capex_pct": 99.0, "video_pct": -60.0,
                              "video_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED"}
+        # a later print restating every year of the history (the 'restates' field of CMCSA 2010-2013)
+        last["restates"] = {y: {"eps": 0.01} for y in v0["eps_normalized"]}
+        last["restates_note"] = "PLANTED"
     if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted

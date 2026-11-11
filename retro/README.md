@@ -12167,6 +12167,141 @@ Judgement calls that could carry hindsight:
 - the series key CMCSA (the Class A shares; the Class A Special shares, CMCSK, traded beside them) and Yahoo's 2017 and 2026 factors
   in the price basis.
 
+### CMCSA 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_cmcsa.py --weekly 2010-01-04 2013-12-31                 # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2008-07-01 2009-02-18 2010-01-01 2010-02-03 2010-02-23 2010-04-28 2010-07-28 2010-10-27 2011-02-16 2011-02-25 2011-05-04 \
+         2011-08-03 2011-11-02 2012-02-15 2012-02-23 2012-05-02 2012-08-01 2012-10-26 2013-02-13 2013-02-21 2013-05-01 2013-07-31 \
+         2013-10-30 2014-01-01; do python3 retro/tools/firewall.py $c CMCSA; done
+```
+
+Read: the 16 earnings releases from Q4 2009 to Q3 2013, the FY2009-FY2012 10-Ks, and every other 8-K of February 2010 to January 2014
+(34 filings, by their items and exhibits), all read directly, none delegated; the 10-Qs were not needed, as every dividend is in a
+release. The source ids are CM25-CM44. 244 strings were checked with `verbatim.py`, each against its own filing (490 with the 2008-2009
+batch's 246, all found), and a script found each of the 526 raw figures of both batches in the rows cited from its own source. Decided on
+2026-11-11, before any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (06:09-07:31 ET) except Q1 2011's, accepted on 2011-05-03 at 16:32
+  ET, after the close, and dated 2011-05-04 (the after-close rule; the release itself is dated May 3), so its week's date is 2011-05-05,
+  the day after the print (the AAPL and MSFT rule). The Q3 2012 release came on Friday 2012-10-26 before the open, so the week's date is
+  the release day and meets its close (the same-day rule). The 10-Ks: FY2009 2010-02-23 15:47 ET, FY2010 2011-02-25 15:02 ET (a Friday,
+  so it meets that day's close) and FY2011 2012-02-23 07:06 ET, each dated that day; FY2012 2013-02-20 18:48 ET, after the close, dated
+  2013-02-21.
+- **History: four more vintages,** 2004 to the 10-K's year, each year from the latest filing that reports it, on the same basis:
+  - EPS: 2004 $0.28 (FY2008 10-K) and 2005 $0.25 (FY2009 10-K) stay GAAP from continuing operations, and 2006-2008 keep the company's
+    $0.60, $0.74 and $0.91. 2009 is $1.26 as reported in the FY2009 vintage: the Q4 2009 release gives the per-share effects of a $0.04
+    financing charge and $0.20 of income tax benefits and says "Except for these items, 2009 EPS would have grown 23.6% over 2008", but
+    publishes no EPS without them, so nothing is derived (the NKE 2008 and BKR 2009 rule). The Q4 2010 release first publishes it: $1.11
+    excluding the tax adjustments, the financing charges and the NBCUniversal transaction costs, beside 2010's $1.31 (GAAP $1.29). Then
+    2011 $1.58 (GAAP $1.50) and 2012 $1.93 (GAAP $2.28, with the SpectrumCo spectrum gains), each the company's figure excluding
+    one-offs (the ACN rule; every listed item is a gain, a charge, a tax adjustment or a transaction cost).
+  - **A restated year (`restates`).** From the Q4 2010 print (2011-02-17) 2009 is $1.11 until the FY2010 10-K carries it (2011-02-25),
+    the PFE, XOM, SHW and BKR encoding: a builder change that moves no earlier output.
+  - Revenues: the FY2009 10-K reclassifies 2005-2009 for advertising commissions (2008 $34,423M against $34,256M); 2004 keeps the FY2008
+    10-K's $19,221M, the latest filing that reports it, a seam as published. NBCUniversal enters 2011's revenue ($55,842M against
+    $37,937M).
+  - The distorted-year test keeps every year: no year's listed items exceed half its income in either direction.
+  - 2003 stays excluded and the window starts on 2004-01-01: 6.0 years in January 2010, 10 years by the end of 2013.
+- **NBCUniversal in growth, as published.** Comcast closed the joint venture with GE on 2011-01-28 (51%) and consolidates it from that
+  day; Universal Orlando follows from July 2011. The prints take each release's statement of operations against the year-ago quarter as
+  reported, acquisitions in (the PEP, XOM, AVGO, BKR BJ Services and PFE Wyeth rule): revenue +31.8% (Q1 2011, two months), +50.5%,
+  +51.1% and +54.7% (Q4 2011) and +22.7% (Q1 2012); the operating cash flow margin -522bp to -581bp and the operating margin -131bp to
+  -269bp (NBCUniversal's lower margins); capital intensity -93bp to -564bp. The releases' consolidated pro forma growth (flat, +9.4%,
+  +4.9%, +3.0%, +9.6% and +3.5% for Q1 2011 to Q2 2012) is shown in each print's note, display only. Comcast's purchase of GE's 49%
+  (agreement 8-K accepted 2013-02-12 16:33 ET, closing 8-K 2013-03-19) adds nothing (no guided number, the XOM XTO rule); it enters
+  through the prints' EPS.
+- **No guide in numbers in any year.** No release or other filing of 2010-2013 gives an outlook in numbers, so:
+  - current-FY EPS is the last full year's (the rollover rule): FY08's $0.91 to 2010-01-29, FY09's $1.26 from 2010-02-04, FY10's $1.31
+    from 2011-02-17, FY11's $1.58 from 2012-02-16 and FY12's $1.93 from 2013-02-14;
+  - BASE growth and the growth factor take the latest quarter's revenue growth as reported: +2.9% (Q4 2009) to +7.3% in 2010, +31.8% to
+    +54.7% with NBCUniversal in 2011, +22.7%, +6.1% and +15.4% (Q3 2012, the London Olympics) in 2012, then +6.0%, +2.9%, +7.0% and
+    -2.4% (Q3 2013, against the Olympics quarter);
+  - no margin step.
+- **Dividends,** each from the first filing that states the rate: $0.0945 a quarter from the Q4 2009 release ("On December 3, 2009,
+  Comcast announced a 40% increase to its planned annual dividend to $0.378 a share"; that announcement was not filed, so $0.0675 stands
+  to 2010-01-29, the PFE December-declaration rule), $0.1125 from the Q4 2010 release, $0.1625 from Q4 2011 and $0.195 from Q4 2012.
+- **Signals and thresholds unchanged.** Table 1 still labels operating income before depreciation and amortization "Operating cash
+  flow". Video customers are the cable business's, from each release's customer table against the year-ago figure that release shows
+  (the column order is recorded on each print).
+- **Durability: DURABLE, risk 2, unchanged.** The "why" follows each 10-K: "a leading provider of video, high-speed Internet and phone
+  services" (FY2009, FY2010), "a leading provider of entertainment, information and communications products and services" (FY2011), "a
+  global media and technology company with two primary businesses, Comcast Cable and NBCUniversal" (FY2012), with each 10-K's online-video
+  competition: from the FY2011 10-K "Recently, new video services and devices have emerged that offer Internet video streaming ... The
+  success of these new services could negatively impact the demand for our video services". STREAMING is not live until 2015-08-04, so
+  the watch list stays empty and the words stay in the "why" (the PEP obesity rule).
+- **Segment bridge** (display only): the FY2009 and FY2010 10-Ks' Cable, Programming and Corporate and Other; from the FY2011 10-K Cable
+  Communications, Cable Networks, Broadcast Television, Filmed Entertainment and Theme Parks (the NBCUniversal segments new in FY11, with
+  no prior year). The builder finds the cable share under either name.
+- **Adds nothing:** the debt offering 8-Ks (2010-02-26, 2010-11-19, 2012-06-06, 2012-06-27, 2012-12-03, 2013-01-09), the auditor change
+  of the employee plans (2010-03-22), the vote, officer, director and by-law 8-Ks, GE's notice of 2010-12-03, the NBCUniversal closing
+  8-K (2011-01-31) and its financial and pro forma statements (8-K/A of 2011-04-15), the SpectrumCo and ZONES Reg FD notices
+  (2011-12-02, 2012-08-24, 2012-10-18, 2013-07-09), the credit agreement (2012-07-10), the NBCUniversal guarantee arrangements
+  (2013-03-27) and the guarantor-note update of the FY2012 financial statements (2013-09-18, Note 22 only).
+
+Controls and checks:
+- **Controls:** altering one value of each print (its video subscriber growth, each Q4 print's full-year EPS and the restated 2009),
+  each vintage (its last year's EPS and its 2009) and each dividend changes no model dated before its publication and changes the first
+  weekly date on or after it: 33 of 33 over the dates from October 2009.
+- **Leak scan:** the source ids, titles, notes, texts and figures of every later print, restatement, guide, vintage, dividend and source
+  appear in no model before their publication (0 hits in 42,862 pairs over all 314 models, after dropping 9 strings an earlier fact
+  carries).
+- **`retro_tool run`:** passes on all 209 dates, with no warning.
+- **Firewall:** passes at the 24 cutoffs above (every release and 10-K date of 2010-2013, 2010-01-01 and 2014-01-01, and two 2008-2009
+  cutoffs rerun after the builder change), with 0 files changed and no planted text (26 to 314 dates each).
+- No file shared with another ticker changed but the firewall's CMCSA plant (which now also restates every year of the history), so no
+  other model can move.
+
+Seen in the build (method behaviour, not tuned):
+- **2010: CHEAP on all 52 dates** (BUY). The four January dates stand on FY08's $0.91 (17.4-18.6x). From 2010-02-04, on FY09's $1.26,
+  the stock ($15.34-22.18) is 12.2-17.6x, the 12th-30th percentile of a window whose median falls from 35.5x to 32.0x, and 24-47% under
+  a 23x floor ($28.98). BASE is +6.1% to +10.5%/yr (the latest quarter and a 3.2%/yr buyback); BULL is the FY04-FY09 CAGR (+35.1%/yr,
+  $155-160), so Ratio B is 0.02-0.08.
+- **2011: CHEAP on all 52.** The six dates before the Q4 2010 print are 18.0-19.0x FY09's $1.26, 5-10% under a 20x floor. On FY10's
+  $1.31 from 2011-02-17 the stock ($19.96-26.21) is 15.2-20.0x (the 22nd-37th percentile; median 30.9x falling to 24.5x), up to 20% under
+  a 20x floor ($26.20), 19x from 2011-11-03 ($24.89). With NBCUniversal in growth BASE is +34.8%/yr from the Q1 2011 print and +53.5% and
+  +54.1% from Q2 and Q3 (+57.5% from the Q4 2011 print, 2012-02-16); BULL equals it and the growth factor sits at its +0.5 bound. Ratio B is
+  0.03-0.10.
+- **2012: CHEAP on all 52.** The six dates before the Q4 2011 print are 18.8-20.7x FY10's $1.31, 5-15% above an 18x floor. On FY11's
+  $1.58 from 2012-02-16 the stock ($28.28-37.61) is 17.9-23.8x (39th-53rd percentile, median 22.2-24.1x) and 19-59% above a 15x floor
+  ($23.70); BASE falls to +25.5% (Q1 2012, two months of NBCUniversal in the year-ago quarter), +8.9% and +18.2% (the Olympics), while
+  BULL (FY04-FY11, +28.0%/yr, $110-117) keeps Ratio B at 0.07-0.29. Robustness: all eight variants agree on 30 dates, 22 split two or
+  three ways.
+- **2013: CHEAP on 40, FAIR on 9 (2013-10-11 to 2013-12-13) and RICH on 4 (2013-11-29, 2013-12-20, 2013-12-27, 2013-12-31).** The six
+  dates before the Q4 2012 print are 24.1-25.5x FY11's $1.58, 27-34% above a 19x floor. On FY12's $1.93 from 2013-02-14 the stock ($39.74-51.97) is 20.6-26.9x, the 48th-61st percentile (median 20.9-21.7x), 21-58% above a 17x floor
+  ($32.81); BASE is +8.7%, +5.6%, +9.7% and then +0.3%/yr (Q3 2013's -2.4% against the Olympics quarter), BULL the FY04-FY12 CAGR
+  (+27.3%/yr, $120-126). The FAIR and RICH dates are exactly those more than 40% above the floor (the CHEAP dates reach 39.7%), at the
+  58th-61st percentile; every tier stays BUY (Ratio B 0.22-0.46). Robustness: all variants agree on 8 dates.
+- **BEAR is 2005 throughout** (-10.7%/yr) at the 10th-percentile P/E: $12 to 2011-02-11, $14 to 2012-02-10, $17 to 2013-02-08 and $21
+  after. **XBULL** is
+  the 2005-2007 run (+72.0%/yr) throughout.
+- **The proxy composite** is 1.75 on Q3 and Q4 2009, 1.90 on Q1 and Q2 2010, 1.75 on Q3 2010, 2.05 on Q4 2010, 2.00 on Q1-Q4 2011, 2.30
+  on Q1 2012, 1.75 on Q2 2012, 1.80 on Q3 2012, 1.75 on Q4 2012, 1.90 on Q1 2013, 1.75 on Q2 2013 and 2.05 on Q3 2013. Video subscribers
+  are at BEAR on every print (-1.5% to -3.5%); revenue at BEAR in 2010 and from Q2 2012 except the Olympics quarter, at BULL with
+  NBCUniversal; the operating cash flow margin at BEAR in 2011 (NBCUniversal's lower margin), at XBULL on Q3 2013 (+273bp against the
+  Olympics quarter).
+
+Sensitivity (each call changed alone, the 209 dates reclassified offline; no outcome consulted):
+- **the releases' pro forma growth for Q1 2011 to Q2 2012** instead of the as-published growth (BASE and the revenue signal): 2 classes
+  (CHEAP to FAIR, 2012-10-05 and 2012-10-19), no tier. The 2011 CHEAP calls do not rest on NBCUniversal in growth;
+- **GAAP EPS in every year** (2006 $0.70 to 2012 $2.28, no restatement): 16 classes (9 CHEAP to FAIR, 3 FAIR to CHEAP, 4 RICH to FAIR;
+  2012-09-14 to 2013-12-31), no tier;
+- **2009 at GAAP $1.26 throughout:** 1 class (2012-10-19, CHEAP to FAIR);
+- **every signal at its BEAR value:** 56 classes (25 CHEAP to FAIR, 22 CHEAP to RICH, 9 FAIR to RICH; from 2012-08-02); **at XBULL:** 7
+  (3 FAIR to CHEAP, 4 RICH to FAIR); no tier either way;
+- a diagnostic, not a reading of any rule: **the history and window from 2006** (2004-2005's $0.28 and $0.25 and their 63-69x lows
+  dropped): **71 classes** (45 CHEAP to RICH, 17 CHEAP to FAIR, 9 FAIR to RICH; from 2012-08-02) and 15 tiers. The CHEAP calls of
+  2012-2013 rest on the stock's 2004-2005 multiples, which the window keeps until 2014-2015.
+
+Judgement calls that could carry hindsight:
+- the company's EPS figures for 2009-2012 (16 classes with GAAP), and 2009 at GAAP until the Q4 2010 release first published its figure;
+- NBCUniversal in growth as published (2 classes with the pro forma comparisons);
+- 2003 taking the history and the window with it, which keeps 2004-2005 in the window (the diagnostic: 71 classes);
+- the signals and DURABLE, as in 2008-2009, and the online-video wording kept in the "why" rather than read as an early STREAMING date.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -12376,6 +12511,9 @@ What the gates enforce:
   its competitors (the FY2008 10-K adds "advances in communications technology, such as video streaming over the Internet"); the theme is
   not live, so the words stay in the durability "why" (the PEP obesity rule), and whether this earlier filing should move STREAMING's live
   date is left to the owner (the MSFT, XOM, WMT and BKR precedent).
+  It stays empty through 2013: Comcast becomes a media company with NBCUniversal (2011), and the FY2011 and FY2012 10-Ks say that new
+  video services offering "Internet video streaming" (then "digital distribution") "could negatively impact the demand for our video
+  services"; STREAMING is not live until 2015-08-04, so the words stay in the "why" ("CMCSA 2010-2013").
 
 ## Workflow
 
