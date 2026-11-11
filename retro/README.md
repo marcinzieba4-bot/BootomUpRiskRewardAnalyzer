@@ -12531,7 +12531,8 @@ Controls and checks:
   year, dividend, EPS and split basis is the expected one, and no later filing's accession number, no quarter past the next print and no
   fiscal year past the next appears in any model, report or analysis.
 - **`retro_tool run`:** passes on all 209 dates, with no warning.
-- **Firewall:** see below.
+- **Firewall:** passes at the 23 cutoffs above (every release and 10-K date of 2018-2021, 2018-01-01 and 2022-01-01, and one earlier
+  cutoff), with 0 files changed and no planted text (318 to 732 dates each).
 - No file shared with another ticker changed (`taxonomy_eras.json` and the engine are unchanged), so no other model can move.
 
 Seen in the build (method behaviour, not tuned):
