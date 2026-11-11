@@ -12658,7 +12658,8 @@ Controls and checks:
   their publication (0 hits in 520,706 pairs over all 985 models); the EDGAR-timeline scan (each date's latest print, last history year,
   dividend and EPS from EDGAR's acceptance times; no later filing, quarter or fiscal year in any model, report or analysis) finds nothing.
 - **`retro_tool run`:** passes on all 253 dates, with no warning.
-- **Firewall:** see below.
+- **Firewall:** passes at the 15 cutoffs above (the release and 10-K dates around the excluded 2022, the distribution and the 2026
+  prints, 2022-01-01, 2026-11-07 and one earlier cutoff), with 0 files changed and no planted text (523 to 985 dates each).
 - No file shared with another ticker changed, so no other model can move.
 
 Seen in the build (method behaviour, not tuned):
