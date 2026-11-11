@@ -12384,7 +12384,9 @@ Controls and checks:
   fact carries); 287 of the 312 strings of the 2014-2017 facts do appear in models on or after their publication (the other 25 are
   fields the builder never prints, such as a vintage's dividend note while a release's rate stands).
 - **`retro_tool run`:** passes on all 209 dates, with no warning.
-- **Firewall:** FIREWALL_RESULT
+- **Firewall:** passes at the 27 cutoffs above (every release and 10-K date of 2014-2017, STREAMING's live date, the split date,
+  2014-01-01 and 2018-01-01, and three earlier cutoffs rerun after the builder change), with 0 files changed and no planted text (26 to
+  523 dates each); the planted facts include a later STREAMING event and a later split on the price data's next split date.
 - No file shared with another ticker changed (the builder, fact sheet and engine are CMCSA's own; `taxonomy_eras.json` is unchanged),
   so no other model can move.
 
