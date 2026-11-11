@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  CAT  ·  Caterpillar Inc.  ·  $87.67  ·  RETROSPECTIVE as of 2013-05-17
+  Signal: ◐ WATCHLIST   Ratio B: 1.17x   Adj gap: -0.99  [OVERVALUED]
+  Point-in-time: 6 sources, latest published 2013-05-17; latest print Q1 2013 (Apr 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E sales and revenues, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Line of business             FY2013E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Construction Industries   $    17.6  $  17.6  $  22.3      +0.0      +4.7
+    -1.7% external sales and revenues in FY12
+  Resource Industries       $    19.3  $  19.3  $  24.4      +0.0      +5.1
+    +35.4% external sales and revenues in FY12
+  Power Systems             $    19.3  $  19.3  $  24.4      +0.0      +5.1
+    +5.0% external sales and revenues in FY12
+  Financial Products Segme  $     2.8  $   2.8  $   3.6      +0.0      +0.8
+    +2.9% external sales and revenues in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    59.0  $  59.0  $  74.7      +0.0     +15.7
+  FY2013E = FY12 $65.88B × (1 − 10.4%: FY13 sales and revenues guide midpoint); split pro rata to FY12 external sales of the four reportable segments (FY2012 10-K; All Other and corporate items left out)
+  Q1 2013 (Apr 22): sales and revenues $13.21B -17.3%; Machinery -20.0%; Engines -11.7%;
+  operating margin 9.22% (-531.6bp); profit per share $1.31 vs $2.37 (-44.7%)
+  Machinery (Construction Industries $4,197M and Resource Industries $3,676M against $5,062M and $4,778M a year earlier, -20.0%), Engines (Power Systems $4,405M against $4,987M, -11.7%), as the release's sales and revenues by segment show them
+  FY13 guide (Q4 2012 release, Q1 2013 release): sales and revenues $57-61B; profit per share $7.00 (about $7.00 at the middle of the sales and revenues range)
+
+  FY2013E EPS check:  $59.0B × 12.5% pre-tax × (1−30.7%) ÷ 0.672B  =  $7.61  (FY2013E EPS, guide midpoint (about $7.00 at the middle of the sales and revenues range))
+  FY2015E BEAR check: $59.0B × 12.5% ÷ 0.664B  =  $7.69  (scenario $1.04)
+  FY2015E BULL check: $74.7B × 12.9% ÷ 0.664B  =  $10.05  (scenario $10.20)
+  Every 1pp of pre-tax margin ≈ $0.61 EPS ≈ $8/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Machinery sales growth             -33.0%  ≥-13.0%    ≥8.0%   ≥38.0%    -20.0%  ⚠ BEAR  █░░░
+  Engines sales growth               -19.0%   ≥-3.0%   ≥13.0%   ≥37.0%    -11.7%  ⚠ BEAR  █░░░
+  Sales and revenues growth          -24.0%   ≥-6.0%   ≥12.0%   ≥33.0%    -17.3%  ⚠ BEAR  █░░░
+  Profit per share growth            -92.0%  ≥-36.0%   ≥20.0%   ≥85.0%    -44.7%  ⚠ BEAR  █░░░
+  Operating margin change           -710.0bp  ≥-320.0bp  ≥80.0bp  ≥160.0bp  -531.6bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.15 / 4.00
+  Market composite:   2.25 / 4.00  (back-solved from $88 + 15% hurdle)
+  SCA adjustment:    +0.11  ·  EPP-distance adj +0.00  →  Adj composite 1.26  →  Gap -0.99  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 sales and revenues +9.5%, Machinery +14.7%, Engines +5.0%; Q1 operating margin 9.22% (-531.6bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.5x FY13E vs a 13.5x 10-yr median (30th percentile of its own range)  (+0.33 × 25%  =  +0.083)
+    -  Growth vs own history: FY13 sales and revenues guide -13.5% to -7.4% vs a 14.2% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY12 year-end cash and short-term investments $5.490B, FY12 operating cash flow $5.241B, dividend $2.08 a year, dividends paid $1,617M and no treasury shares purchased in 2012 (FY2012 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Machinery sales growth              -20.0%    -33.0%  -13.0%  Construction and mining fleets stop g…
+  Engines sales growth                -11.7%    -19.0%   -7.3%  Truck, power and oil and gas engines …
+  Sales and revenues growth           -17.3%    -24.0%   -6.7%  Volume and price fall together
+  Profit per share growth             -44.7%    -92.0%  -47.3%  Costs stay up while volume falls
+  Operating margin change           -531.6bp  -710.0bp  -178.4bp  Factories deleverage on lower volume
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$38  (model)  /  $11 (defined)
+  Bear probability (proxy model):  72.2%
+
+  KEY TRIGGER: Machinery sales growth went from -5.8% (Q4 2012) to -20.0% (Q1 2013);
+  the bear case needs a fall in machinery demand that Engines (-11.7% now) and
+  price realization no longer offset. The 10-K ties demand to the energy and mining industries and to infrastructure,
+  housing and commercial construction; dealer inventory changes move company sales either way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.00  (FY2013E EPS, guide midpoint (about $7.00 at the middle of the sales and revenues range))
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2003 16.2x, 2004 12.1x, 2005 10.3x, 2006 11.2x, 2007 10.8x, 2008 5.8x, 2009 10.2x, 2010 12.2x, 2011 9.5x, 2012 9.4x, 2013 11.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $70/share
+  Current $88 vs Updated EPP $70:  +25%  moderate distance to floor
+  Bear $11 vs Updated EPP $70:  -84%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Machinery sales growth                     -13.0       +7.0   BASE floor (vs -20 now)
+  Engines sales growth                        -3.0       +8.7   BASE floor (vs -12 now)
+  Sales and revenues growth                   -6.0      +11.3   BASE floor (vs -17 now)
+  Profit per share growth                    -36.0       +8.7   BASE floor (vs -45 now)
+  Operating margin change                   -320.0     +211.6   BASE floor (vs -532 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.00 × (1+0.0%)² = $7.00
+  At 13x P/E (conservative):  $91/share
+  + Cumul. dividends (2yr):  +$4.28/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $91  (▲3 from $88)
+  Conservative total return:  +9% over 2yr  = +4%/yr
+
+  At 12.5x the multiple is already near its 13x median, so the conservative
+  case is a growth question: breakeven at 13x needs FY2015E EPS of $6.41,
+  i.e. -4.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $78.25  –  $99.70  (at 44th pct of range)
+  Annual dividend:      $2.08/share  (yield 2.4%)
+  Realized vol (1yr):   24% annualized
+  Beta vs broad market: 1.36
+  1-sigma range (1yr):  $67  –  $109  ($88 ± 24%)
+  2-sigma range (1yr):  $46  –  $129
+  ────────────────────────────────────────────────────────────
+  Bear $11 requires:  ~3.7σ price move  (unusual — requires fundamental break)
+  The largest maker of construction and mining equipment with a 1.4 beta: the stock is +10% off its July
+  low while Machinery sales growth went from -5.8% (Q4 2012) to -20.0% (Q1 2013).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.04  10.9x  $     11    72.2%     13.8%   +58.4pp  EPS -61.5%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct
+  BASE        5.68  13.5x  $     77    20.7%     48.3%   -27.6pp  EPS +-9.9%/yr (FY13 guide + margin + buyback); P/E at its 10-yr median
+  BULL       10.20  15.0x  $    153     5.9%     31.8%   -25.9pp  EPS +20.7%/yr (FY03-FY12 CAGR); P/E holds its 75th pct
+  XBULL      23.76  20.2x  $    480     1.1%      6.0%    -4.9pp  EPS +84.2%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct
+
+  Proxy EV (2yr): $38  /  Market EV: $116  /  Current: $88
+  Conservative EV (2yr, ④): $91 + $4.28 divs = $95 total value
+  Downside (→ Bear $11): 87.5%   Upside (→ Bull $153): 74.5%   Ratio B 1.17x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $88 the market needs $116 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.25 against a model
+  read of 1.26: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.17x     +25%    -0.99  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.63x     +25%    -0.77  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.54x     +25%    -1.16  OVERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          1.08x     +25%    -0.96  OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.27x     +25%    -1.02  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.17x     +25%    -0.69  OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.17x      -4%    -0.79  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.17x     +25%    -0.89  OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2013 print (late July) — the next read on Machinery sales (-20.0% now) and the guide
+  (2) Operating margin — -531.6bp in Q1 2013: price realization against material and factory costs, what must hold if volume does not
+  (3) FY13 profit per share guide $7.00 (Q1 2013 release): the company's own read of the year
+  (4) FY13 sales and revenues guide $57-61B (Q1 2013 release): volume, price and currency in one number
+  (5) Capital return at 13x — Better cash flow and the strength of our balance sheet are enabling us to resume stock repurchases: management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $70  |  ADD below ~$65  |  TRIM above $153
+════════════════════════════════════════════════════════════════════════
+

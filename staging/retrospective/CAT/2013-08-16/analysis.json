@@ -1,0 +1,214 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CAT",
+ "company": "Caterpillar Inc.",
+ "as_of": "2013-08-16",
+ "price_date": "2013-08-16",
+ "price": 85.16,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); machinery and engines signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2012 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2012 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it. cyclical (obsolescence risk 2/5); price rich; Ratio B 1.40x; +31% to EPP floor; model-vs-market gap -1.13; conservative 2yr +5%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.4,
+  "ratio_b_fmt": "1.40x",
+  "epp": 65.0,
+  "epp_gap_pct": 31.0,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.15,
+  "sca": 0.062,
+  "adj_composite": 1.212,
+  "market_composite": 2.34,
+  "adj_gap": -1.13,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 5.0,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.96,
+    "pe": 10.9,
+    "price": 10,
+    "desc": "EPS -61.5%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.92,
+    "pe": 13.5,
+    "price": 66,
+    "desc": "EPS +-13.0%/yr (FY13 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 9.47,
+    "pe": 14.7,
+    "price": 139,
+    "desc": "EPS +20.7%/yr (FY03-FY12 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 22.06,
+    "pe": 19.4,
+    "price": 428,
+    "desc": "EPS +84.2%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.4,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -1.13,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.74,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -0.9,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.75,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -1.28,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.28,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -1.1,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.51,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -1.16,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.4,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -0.83,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.4,
+   "epp_gap_pct": 0.8,
+   "adj_gap": -1.13,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.4,
+   "epp_gap_pct": 31.0,
+   "adj_gap": -1.04,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.0,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CAT (retrospective, 2013-08-16) ◐ WATCHLIST — Ratio B 1.40x (88.3% downside to Bear $10 / +63.2% upside to Bull $139) | Adj composite 1.21 vs market 2.34: gap -1.13 [OVERVALUED] | +31% above the EPP floor $65 (10x FY13E $6.50) | Conservative 2-yr case: +5.0% total (+2.5%/yr) | At 13.1x FY13E the 15% hurdle price $113 sits between the BASE and BULL cases; Machinery sales -21.5% in Q2 2013, forward revenues -15% to -12% (FY13 sales and revenues guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CT51",
+   "published": "2013-02-19",
+   "filed": "2013-02-19 12:26 ET",
+   "title": "Caterpillar FY2012 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823013000075/cat_exhibit13x12312012.htm",
+   "supports": "Five-year Financial Summary 2008-2012; Results of Operations 2010-2012 (operating profit $8,573M, profit before taxes $8,236M and tax $2,528M in 2012; diluted shares 650.4M, 666.1M, 669.6M); segment external sales of 2012 and 2011; cash and short-term investments $5,490M; operating cash flow $5,241M; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "CT50",
+   "published": "2013-01-28",
+   "filed": "2013-01-28 08:31 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2012 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913004907/a13-3703_1ex99d1.htm",
+   "supports": "fourth-quarter and full-year 2012 sales and revenues by segment and statement of results; 2012 profit per share $8.48 including the $0.87 Siwei goodwill impairment; 2013 outlook: sales and revenues $60 to $68 billion, profit $7.00 to $9.00"
+  },
+  {
+   "id": "CT52",
+   "published": "2013-04-22",
+   "filed": "2013-04-22 08:56 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2013 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913031098/a13-10442_1ex99d1.htm",
+   "supports": "first-quarter 2013 sales and revenues by segment and statement of results; 2013 outlook: sales and revenues $57 to $61 billion, profit about $7.00 per share at the middle"
+  },
+  {
+   "id": "CT54",
+   "published": "2013-07-24",
+   "filed": "2013-07-24 08:59 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2013 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913056080/a13-17022_1ex99d1.htm",
+   "supports": "second-quarter 2013 sales and revenues by segment and statement of results; 2013 outlook: sales and revenues $56 to $58 billion, profit about $6.50 per share at the middle"
+  },
+  {
+   "id": "CT53",
+   "published": "2013-06-12",
+   "filed": "2013-06-12 11:53 ET",
+   "title": "Caterpillar 8-K: June 2013 dividend declaration (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823013000278/pressrelease_ex991.htm",
+   "supports": "a quarterly cash dividend of $0.60 per share, payable August 20, 2013"
+  },
+  {
+   "id": "CT9",
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  {
+   "id": "W0",
+   "published": "2013-08-16",
+   "title": "Yahoo Finance daily prices, CAT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CAT/history",
+   "supports": "close $85.16 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

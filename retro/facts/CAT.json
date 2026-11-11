@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for CAT retrospectives (retro/build_cat.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open on their release days, except Q1 2008's (during the session). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it, in either form) and the latest declared dividend (else the vintage's). Caterpillar's fiscal year is the calendar year; the recast of the FY2006-FY2008 statements (8-K of 2009-05-14) is a vintage of its own. EPS is profit per share - diluted, replaced by the company's figure where a filing publishes one excluding only one-offs (2001). Per-share figures published before the 2-for-1 split of 2005-07-14 carry their publication dates ('eps_published', 'shares_published') so the split restates them. Guides: sales and revenues as a dollar level or range ('rev_guide_usd_b', read against the last full year) or as growth ('rev_guide_pct', on the last full year unless 'rev_growth_base_b' names another base); profit per share as a dollar level or range ('eps_guide'; the 2009 guides excluding redundancy costs, with the inclusive figure in 'eps_guide_note') or as growth ('eps_growth', on the last full year unless 'eps_growth_base' names another base); words and one-sided bounds in 'rev_words' give no field. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
+ "_doc": "Point-in-time fact sheet for CAT retrospectives (retro/build_cat.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2013 were accepted before the open on their release days, except Q1 2008's and Q4 2010's (during the session). The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it, in either form) and the latest declared dividend (else the vintage's). Caterpillar's fiscal year is the calendar year; the recasts of the FY2006-FY2008 statements (8-K of 2009-05-14) and of the FY2008-FY2010 statements for the 2011 segments (8-K of 2011-05-23) are vintages of their own. EPS is profit per share - diluted, replaced by the company's figure where a filing publishes one excluding only one-offs (2001; 2009's $2.18 excluding redundancy costs); 2011 is $7.40 as reported, not the $7.79 excluding Bucyrus (a whole business, not a one-off), and 2012 is $8.48 as reported, with the Siwei impairment in it (no figure excluding it is published). From the 2011 segments a print reports Construction Industries, Resource Industries and Power Systems ('ci_m', 'ri_m', 'ps_m' in 'raw'), read as the successors of the Machinery and Engines lines ('lines_basis'). Per-share figures published before the 2-for-1 split of 2005-07-14 carry their publication dates ('eps_published', 'shares_published') so the split restates them. Guides: sales and revenues as a dollar level or range ('rev_guide_usd_b', read against the last full year) or as growth ('rev_guide_pct', on the last full year unless 'rev_growth_base_b' names another base); profit per share as a dollar level or range ('eps_guide'; the 2009 guides excluding redundancy costs, with the inclusive figure in 'eps_guide_note'; the 2011 guides including Bucyrus once it closed, with the figure excluding it in 'eps_guide_note'; 'near' and 'about' levels read as numbers) or as growth ('eps_growth', on the last full year unless 'eps_growth_base' names another base); words and one-sided bounds in 'rev_words' give no field. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
  "ticker": "CAT",
  "sources": {
   "CT1": {
@@ -211,6 +211,181 @@
    "title": "Caterpillar 8-K: third-quarter 2009 results release (Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000433/ex_99-1.htm",
    "supports": "third-quarter 2009 sales by geographic region and statement of results; 2009 outlook: sales and revenues $32 to $33 billion, profit $1.85 to $2.05 per share excluding redundancy costs; preliminary 2010 sales and revenues up 10 to 25 percent from the midpoint of the 2009 outlook range"
+  },
+  "CT31": {
+   "published": "2010-01-27",
+   "filed": "2010-01-27 09:03 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2009 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000040/ex_99-1.htm",
+   "supports": "fourth-quarter and full-year 2009 sales by geographic region and statement of results; 2009 profit per share $1.43, $2.18 excluding redundancy costs; 2010 outlook: sales and revenues up 10 to 25 percent, profit about $2.50 per share at the midpoint"
+  },
+  "CT32": {
+   "published": "2010-02-19",
+   "filed": "2010-02-19 12:42 ET",
+   "title": "Caterpillar FY2009 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000092/ex_13.htm",
+   "supports": "Five-year Financial Summary 2005-2009; Results of Operations 2007-2009 (operating profit $577M, profit before taxes $569M and a tax benefit of $270M in 2009; diluted shares 659.5M, 627.9M, 626.0M); 2009 profit per share $1.43, or $2.18 excluding redundancy costs; external sales of Machinery $18,148M, Engines $11,392M and Financial Products $2,856M in 2009; cash and short-term investments $4,867M; operating cash flow $6,343M; Item 1 and Item 1A wording"
+  },
+  "CT33": {
+   "published": "2010-04-26",
+   "filed": "2010-04-26 09:04 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2010 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000212/ex_99-1.htm",
+   "supports": "first-quarter 2010 sales by geographic region and statement of results; 2010 outlook: sales and revenues $38 to $42 billion, profit $2.50 to $3.25 per share"
+  },
+  "CT34": {
+   "published": "2010-06-14",
+   "filed": "2010-06-11 16:53 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar 8-K: annual meeting results and dividend release (Exhibit 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000299/ex_99-2.htm",
+   "supports": "a quarterly cash dividend of $0.44 per share, payable August 20, 2010"
+  },
+  "CT35": {
+   "published": "2010-07-22",
+   "filed": "2010-07-22 08:24 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2010 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000348/ex_99-1.htm",
+   "supports": "second-quarter 2010 sales by geographic region and statement of results; 2010 outlook: sales and revenues $39 to $42 billion, profit $3.15 to $3.85 per share"
+  },
+  "CT36": {
+   "published": "2010-10-21",
+   "filed": "2010-10-21 08:19 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2010 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000494/ex_99-1.htm",
+   "supports": "third-quarter 2010 sales by geographic region and statement of results; 2010 outlook: sales and revenues $41 to $42 billion, profit $3.80 to $4.00 per share; preliminary 2011 sales and revenues approaching $50 billion"
+  },
+  "CT37": {
+   "published": "2011-01-27",
+   "filed": "2011-01-27 09:56 ET (during the session)",
+   "title": "Caterpillar 8-K: fourth-quarter 2010 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911003292/a11-4658_1ex99d1.htm",
+   "supports": "fourth-quarter and full-year 2010 sales by geographic region and statement of results; 2009 profit per share $2.18 excluding redundancy costs; 2011 outlook: sales and revenues to exceed $50 billion, profit near $6.00 per share"
+  },
+  "CT38": {
+   "published": "2011-02-23",
+   "filed": "2011-02-22 17:15 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar FY2010 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911008938/a10-18643_1ex13.htm",
+   "supports": "Five-year Financial Summary 2006-2010; Results of Operations 2008-2010 (operating profit $3,963M, profit before taxes $3,750M and tax $968M in 2010; diluted shares 627.9M, 626.0M, 650.4M); 2009 profit per share $2.18 excluding redundancy costs; external sales of Machinery $27,767M, Engines $12,100M and Financial Products $2,721M in 2010; cash and short-term investments $3,592M; operating cash flow $5,009M; Item 1 and Item 1A wording"
+  },
+  "CT39": {
+   "published": "2011-04-29",
+   "filed": "2011-04-29 08:55 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2011 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911023974/a11-11079_1ex99d1.htm",
+   "supports": "first-quarter 2011 sales and revenues by segment and statement of results; 2011 outlook: sales and revenues $52 to $54 billion, profit $6.25 to $6.75 per share"
+  },
+  "CT40": {
+   "published": "2011-05-23",
+   "filed": "2011-05-23 12:24 ET",
+   "title": "Caterpillar 8-K, Item 8.01: the FY2008-FY2010 financial statements recast for the 2011 segments (Exhibit 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911030771/a11-8821_5ex99d2.htm",
+   "supports": "Five-year Financial Summary 2006-2010 and Results of Operations 2008-2010 as recast (unchanged; 2009 profit per share $2.18 excluding redundancy costs); external sales of Construction Industries $13,572M, Resource Industries $8,667M, Power Systems $15,537M and the Financial Products Segment $2,946M in 2010 ($8,507M, $5,857M, $13,389M and $3,139M in 2009)"
+  },
+  "CT41": {
+   "published": "2011-06-08",
+   "filed": "2011-06-08 11:55 ET",
+   "title": "Caterpillar 8-K: June 2011 dividend declaration (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823011000329/ex_99-1.htm",
+   "supports": "a quarterly cash dividend of $0.46 per share, payable August 20, 2011"
+  },
+  "CT42": {
+   "published": "2011-07-22",
+   "filed": "2011-07-22 09:17 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2011 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911040237/a11-20592_1ex99d1.htm",
+   "supports": "second-quarter 2011 sales and revenues by segment and statement of results; 2011 outlook including Bucyrus: sales and revenues $56 to $58 billion, profit $6.25 to $6.75 per share ($54 to $56 billion and $6.75 to $7.25 excluding it)"
+  },
+  "CT43": {
+   "published": "2011-10-24",
+   "filed": "2011-10-24 08:53 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2011 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911057256/a11-28404_1ex99d1.htm",
+   "supports": "third-quarter 2011 sales and revenues by segment and statement of results; 2011 outlook: sales and revenues about $58 billion, profit about $6.75 per share; preliminary 2012 sales and revenues up 10 to 20 percent from about $58 billion"
+  },
+  "CT44": {
+   "published": "2012-01-26",
+   "filed": "2012-01-26 08:45 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2011 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465912004076/a12-3475_1ex99d1.htm",
+   "supports": "fourth-quarter and full-year 2011 sales and revenues by segment and statement of results; 2012 outlook: sales and revenues $68 to $72 billion, profit about $9.25 per share at the middle"
+  },
+  "CT45": {
+   "published": "2012-02-21",
+   "filed": "2012-02-21 15:49 ET",
+   "title": "Caterpillar FY2011 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465912011331/a12-2184_1ex13.htm",
+   "supports": "Five-year Financial Summary 2007-2011; Results of Operations 2009-2011 (operating profit $7,153M, profit before taxes $6,725M and tax $1,720M in 2011; diluted shares 626.0M, 650.4M, 666.1M); segment external sales of 2011 and 2010; cash and short-term investments $3,057M; operating cash flow $7,010M; Item 1 and Item 1A wording"
+  },
+  "CT46": {
+   "published": "2012-04-25",
+   "filed": "2012-04-25 09:00 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2012 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465912028060/a12-10341_1ex99d1.htm",
+   "supports": "first-quarter 2012 sales and revenues by segment and statement of results; 2012 outlook: sales and revenues $68 to $72 billion, profit about $9.50 per share at the middle"
+  },
+  "CT47": {
+   "published": "2012-06-13",
+   "filed": "2012-06-13 12:51 ET",
+   "title": "Caterpillar 8-K: June 2012 dividend declaration (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823012000320/ex991.htm",
+   "supports": "a quarterly cash dividend of $0.52 per share, payable August 20, 2012"
+  },
+  "CT48": {
+   "published": "2012-07-25",
+   "filed": "2012-07-25 08:20 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2012 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465912050814/a12-16916_1ex99d1.htm",
+   "supports": "second-quarter 2012 sales and revenues by segment and statement of results; 2012 outlook: sales and revenues $68 to $70 billion, profit about $9.60 per share at the middle"
+  },
+  "CT49": {
+   "published": "2012-10-22",
+   "filed": "2012-10-22 09:00 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2012 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465912070239/a12-24539_1ex99d1.htm",
+   "supports": "third-quarter 2012 sales and revenues by segment and statement of results; 2012 outlook: sales and revenues about $66 billion, profit $9.00 to $9.25 per share"
+  },
+  "CT50": {
+   "published": "2013-01-28",
+   "filed": "2013-01-28 08:31 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2012 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913004907/a13-3703_1ex99d1.htm",
+   "supports": "fourth-quarter and full-year 2012 sales and revenues by segment and statement of results; 2012 profit per share $8.48 including the $0.87 Siwei goodwill impairment; 2013 outlook: sales and revenues $60 to $68 billion, profit $7.00 to $9.00"
+  },
+  "CT51": {
+   "published": "2013-02-19",
+   "filed": "2013-02-19 12:26 ET",
+   "title": "Caterpillar FY2012 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823013000075/cat_exhibit13x12312012.htm",
+   "supports": "Five-year Financial Summary 2008-2012; Results of Operations 2010-2012 (operating profit $8,573M, profit before taxes $8,236M and tax $2,528M in 2012; diluted shares 650.4M, 666.1M, 669.6M); segment external sales of 2012 and 2011; cash and short-term investments $5,490M; operating cash flow $5,241M; Item 1 and Item 1A wording"
+  },
+  "CT52": {
+   "published": "2013-04-22",
+   "filed": "2013-04-22 08:56 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2013 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913031098/a13-10442_1ex99d1.htm",
+   "supports": "first-quarter 2013 sales and revenues by segment and statement of results; 2013 outlook: sales and revenues $57 to $61 billion, profit about $7.00 per share at the middle"
+  },
+  "CT53": {
+   "published": "2013-06-12",
+   "filed": "2013-06-12 11:53 ET",
+   "title": "Caterpillar 8-K: June 2013 dividend declaration (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823013000278/pressrelease_ex991.htm",
+   "supports": "a quarterly cash dividend of $0.60 per share, payable August 20, 2013"
+  },
+  "CT54": {
+   "published": "2013-07-24",
+   "filed": "2013-07-24 08:59 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2013 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913056080/a13-17022_1ex99d1.htm",
+   "supports": "second-quarter 2013 sales and revenues by segment and statement of results; 2013 outlook: sales and revenues $56 to $58 billion, profit about $6.50 per share at the middle"
+  },
+  "CT55": {
+   "published": "2013-10-23",
+   "filed": "2013-10-23 08:48 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2013 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465913077181/a13-22637_1ex99d1.htm",
+   "supports": "third-quarter 2013 sales and revenues by segment and statement of results; 2013 outlook: sales and revenues about $55 billion, profit about $5.50 per share; preliminary 2014 sales and revenues flat with 2013 in a plus or minus 5 percent range"
   }
  },
  "history_vintages": [
@@ -843,6 +1018,782 @@
     ]
    ],
    "groups_basis": "FY08 external sales and revenues by line of business (FY2008 recast, 8-K of 2009-05-14, Enterprise-wide Disclosures)"
+  },
+  {
+   "published": "2010-02-19",
+   "sources": [
+    "CT32"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY09",
+   "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2009 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'Our results of operations are materially affected by the conditions in the global economy generally and various capital markets.', 'The energy and mining industries are major users of our machines and engines.', 'Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts and commercial construction play a significant role in our results.' (Item 1A): demand that depends on the economy and the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31"
+   },
+   "eps_gaap": {
+    "2000": 3.02,
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43
+   },
+   "eps_normalized": {
+    "2000": 3.02,
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18
+   },
+   "eps_sources": {
+    "2000": "CT8",
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT32",
+    "2007": "CT32",
+    "2008": "CT32",
+    "2009": "CT32"
+   },
+   "eps_published": {
+    "2000": "2005-02-25",
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K), and 2009 $2.18 excluding redundancy costs (FY2009 10-K; GAAP $1.43); no other year has a published figure excluding one-offs (2000's Brazilian tax adjustment and 2008's fourth-quarter tax item have none), so they stay as reported",
+   "revenue_usd_b": {
+    "2000": 20.175,
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396
+   },
+   "revenue_sources": {
+    "2000": "CT8",
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT32",
+    "2007": "CT32",
+    "2008": "CT32",
+    "2009": "CT32"
+   },
+   "diluted_shares_m": {
+    "2000": 348.9,
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0
+   },
+   "shares_sources": {
+    "2000": "CT6",
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT32",
+    "2009": "CT32"
+   },
+   "shares_published": {
+    "2000": "2003-04-01",
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 1.78,
+   "prev_fy_op_margin_note": "operating profit $577M / sales and revenues $32,396M (FY2009 10-K)",
+   "prev_fy_pretax_margin": 1.76,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $569M / sales and revenues $32,396M (FY2009 10-K)",
+   "prev_fy_sales_growth": -36.9,
+   "prev_fy_mach_pct": -42.9,
+   "prev_fy_eng_pct": -29.9,
+   "tax_rate": -0.4745,
+   "tax_note": "provision for income taxes $-270M / consolidated profit before taxes $569M (FY2009 10-K)",
+   "cash_b": 4.867,
+   "cash_label": "FY09",
+   "cash_note": "cash and short-term investments $4,867M at December 31, 2009 (FY2009 10-K)",
+   "ocf_b": 6.343,
+   "ocf_note": "consolidated net cash provided by operating activities $6,343M in 2009 (FY2009 10-K)",
+   "dividend_annual": 1.68,
+   "dividend_note": "cash dividends declared per common share $1.68 in 2009 (FY2009 10-K)",
+   "cash_return_text": "dividends paid $1,029M and no treasury shares purchased in 2009 (FY2009 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Machinery",
+     18.148,
+     -42.9
+    ],
+    [
+     "Engines",
+     11.392,
+     -29.9
+    ],
+    [
+     "Financial Products",
+     2.856,
+     -12.9
+    ]
+   ],
+   "groups_basis": "FY09 external sales and revenues by line of business (FY2009 10-K, Enterprise-wide Disclosures)"
+  },
+  {
+   "published": "2011-02-23",
+   "sources": [
+    "CT38"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY10",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2010 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our machines and engines.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31"
+   },
+   "eps_gaap": {
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15
+   },
+   "eps_normalized": {
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15
+   },
+   "eps_sources": {
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT38",
+    "2007": "CT38",
+    "2008": "CT38",
+    "2009": "CT38",
+    "2010": "CT38"
+   },
+   "eps_published": {
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K), and 2009 $2.18 excluding redundancy costs (FY2010 10-K; GAAP $1.43); no other year has a published figure excluding one-offs (2008's fourth-quarter tax item and 2010's U.S. health care tax charge have none), so they stay as reported",
+   "revenue_usd_b": {
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588
+   },
+   "revenue_sources": {
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT38",
+    "2007": "CT38",
+    "2008": "CT38",
+    "2009": "CT38",
+    "2010": "CT38"
+   },
+   "diluted_shares_m": {
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4
+   },
+   "shares_sources": {
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT38",
+    "2009": "CT38",
+    "2010": "CT38"
+   },
+   "shares_published": {
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 9.31,
+   "prev_fy_op_margin_note": "operating profit $3,963M / sales and revenues $42,588M (FY2010 10-K)",
+   "prev_fy_pretax_margin": 8.81,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $3,750M / sales and revenues $42,588M (FY2010 10-K)",
+   "prev_fy_sales_growth": 31.5,
+   "prev_fy_mach_pct": 53.0,
+   "prev_fy_eng_pct": 6.2,
+   "tax_rate": 0.2581,
+   "tax_note": "provision for income taxes $968M / consolidated profit before taxes $3,750M (FY2010 10-K)",
+   "cash_b": 3.592,
+   "cash_label": "FY10",
+   "cash_note": "cash and short-term investments $3,592M at December 31, 2010 (FY2010 10-K)",
+   "ocf_b": 5.009,
+   "ocf_note": "consolidated net cash provided by operating activities $5,009M in 2010 (FY2010 10-K)",
+   "dividend_annual": 1.74,
+   "dividend_note": "cash dividends declared per common share $1.74 in 2010 (FY2010 10-K)",
+   "cash_return_text": "dividends paid $1,084M and no treasury shares purchased in 2010 (FY2010 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Machinery",
+     27.767,
+     53.0
+    ],
+    [
+     "Engines",
+     12.1,
+     6.2
+    ],
+    [
+     "Financial Products",
+     2.721,
+     -4.7
+    ]
+   ],
+   "groups_basis": "FY10 external sales and revenues by line of business (FY2010 10-K, Enterprise-wide Disclosures)",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2011-05-23",
+   "sources": [
+    "CT40"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY10",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2010 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our machines and engines.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31"
+   },
+   "eps_gaap": {
+    "2001": 2.32,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15
+   },
+   "eps_normalized": {
+    "2001": 2.6,
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15
+   },
+   "eps_sources": {
+    "2001": "CT4",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT40",
+    "2008": "CT40",
+    "2009": "CT40",
+    "2010": "CT40"
+   },
+   "eps_published": {
+    "2001": "2002-01-23"
+   },
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2001 $2.60 before the 2005 split (Q4 2001 release, excluding the nonrecurring charges for the sale of the Challenger tractor line, plant closings and employment reductions; GAAP $1.16 after the split, FY2005 10-K), and 2009 $2.18 excluding redundancy costs (FY2010 recast, 8-K of 2011-05-23; GAAP $1.43); no other year has a published figure excluding one-offs (2008's fourth-quarter tax item and 2010's U.S. health care tax charge have none), so they stay as reported",
+   "revenue_usd_b": {
+    "2001": 20.51,
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588
+   },
+   "revenue_sources": {
+    "2001": "CT10",
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT40",
+    "2008": "CT40",
+    "2009": "CT40",
+    "2010": "CT40"
+   },
+   "diluted_shares_m": {
+    "2001": 347.1,
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4
+   },
+   "shares_sources": {
+    "2001": "CT7",
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT40",
+    "2010": "CT40"
+   },
+   "shares_published": {
+    "2001": "2004-03-10",
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 9.31,
+   "prev_fy_op_margin_note": "operating profit $3,963M / sales and revenues $42,588M (FY2010 recast, 8-K of 2011-05-23)",
+   "prev_fy_pretax_margin": 8.81,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $3,750M / sales and revenues $42,588M (FY2010 recast, 8-K of 2011-05-23)",
+   "prev_fy_sales_growth": 31.5,
+   "prev_fy_mach_pct": 54.8,
+   "prev_fy_eng_pct": 16.0,
+   "tax_rate": 0.2581,
+   "tax_note": "provision for income taxes $968M / consolidated profit before taxes $3,750M (FY2010 recast, 8-K of 2011-05-23)",
+   "cash_b": 3.592,
+   "cash_label": "FY10",
+   "cash_note": "cash and short-term investments $3,592M at December 31, 2010 (FY2010 recast, 8-K of 2011-05-23)",
+   "ocf_b": 5.009,
+   "ocf_note": "consolidated net cash provided by operating activities $5,009M in 2010 (FY2010 recast, 8-K of 2011-05-23)",
+   "dividend_annual": 1.74,
+   "dividend_note": "cash dividends declared per common share $1.74 in 2010 (FY2010 recast, 8-K of 2011-05-23)",
+   "cash_return_text": "dividends paid $1,084M and no treasury shares purchased in 2010 (FY2010 recast, 8-K of 2011-05-23)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     13.572,
+     59.5
+    ],
+    [
+     "Resource Industries",
+     8.667,
+     48.0
+    ],
+    [
+     "Power Systems",
+     15.537,
+     16.0
+    ],
+    [
+     "Financial Products Segment",
+     2.946,
+     -6.1
+    ]
+   ],
+   "groups_basis": "FY10 external sales of the four reportable segments (FY2010 recast, 8-K of 2011-05-23; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2012-02-21",
+   "sources": [
+    "CT45"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY11",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2011 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31"
+   },
+   "eps_gaap": {
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 7.4
+   },
+   "eps_normalized": {
+    "2002": 1.15,
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 7.4
+   },
+   "eps_sources": {
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT45",
+    "2009": "CT40",
+    "2010": "CT45",
+    "2011": "CT45"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays $7.40 as reported: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); no other year has a published figure excluding one-offs (2008's fourth-quarter tax item and 2010's U.S. health care tax charge have none), so they stay as reported",
+   "revenue_usd_b": {
+    "2002": 20.185,
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138
+   },
+   "revenue_sources": {
+    "2002": "CT13",
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT45",
+    "2009": "CT45",
+    "2010": "CT45",
+    "2011": "CT45"
+   },
+   "diluted_shares_m": {
+    "2002": 346.9,
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1
+   },
+   "shares_sources": {
+    "2002": "CT8",
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT45",
+    "2011": "CT45"
+   },
+   "shares_published": {
+    "2002": "2005-02-25"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 11.89,
+   "prev_fy_op_margin_note": "operating profit $7,153M / sales and revenues $60,138M (FY2011 10-K)",
+   "prev_fy_pretax_margin": 11.18,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $6,725M / sales and revenues $60,138M (FY2011 10-K)",
+   "prev_fy_sales_growth": 41.2,
+   "prev_fy_mach_pct": 58.7,
+   "prev_fy_eng_pct": 29.5,
+   "tax_rate": 0.2558,
+   "tax_note": "provision for income taxes $1,720M / consolidated profit before taxes $6,725M (FY2011 10-K)",
+   "cash_b": 3.057,
+   "cash_label": "FY11",
+   "cash_note": "cash and short-term investments $3,057M at December 31, 2011 (FY2011 10-K)",
+   "ocf_b": 7.01,
+   "ocf_note": "consolidated net cash provided by operating activities $7,010M in 2011 (FY2011 10-K)",
+   "dividend_annual": 1.82,
+   "dividend_note": "cash dividends declared per common share $1.82 in 2011 (FY2011 10-K)",
+   "cash_return_text": "dividends paid $1,159M and no treasury shares purchased in 2011 (FY2011 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     19.667,
+     44.9
+    ],
+    [
+     "Resource Industries",
+     15.629,
+     80.3
+    ],
+    [
+     "Power Systems",
+     20.114,
+     29.5
+    ],
+    [
+     "Financial Products Segment",
+     3.003,
+     1.9
+    ]
+   ],
+   "groups_basis": "FY11 external sales of the four reportable segments (FY2011 10-K; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')",
+   "kind": "CYCLICAL"
+  },
+  {
+   "published": "2013-02-19",
+   "sources": [
+    "CT51"
+   ],
+   "company": "Caterpillar Inc.",
+   "exchange": "NYSE",
+   "fy_label": "FY12",
+   "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2012 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it",
+   "fiscal_year_ends": {
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31"
+   },
+   "eps_gaap": {
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 1.43,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48
+   },
+   "eps_normalized": {
+    "2003": 1.56,
+    "2004": 2.88,
+    "2005": 4.04,
+    "2006": 5.17,
+    "2007": 5.37,
+    "2008": 5.66,
+    "2009": 2.18,
+    "2010": 4.15,
+    "2011": 7.4,
+    "2012": 8.48
+   },
+   "eps_sources": {
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT40",
+    "2010": "CT51",
+    "2011": "CT51",
+    "2012": "CT51"
+   },
+   "eps_published": {},
+   "normalization": "profit per share - diluted, each year from the latest filing that reports it (five-year summaries; the FY2006 10-K's 2002-2006 reflect its retrospective adoption of SFAS 123R, earlier years stay as published); a company figure excluding only one-offs replaces it (the ACN rule): 2009 $2.18 excluding redundancy costs (8-K of 2011-05-23, the latest filing that publishes it; GAAP $1.43); 2011 stays $7.40 as reported: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs (the CMCSA rule); 2012 stays $8.48 as reported, with the $0.87 a share Siwei goodwill impairment in it: no figure excluding it is published; no other year has a published figure excluding one-offs (2008's fourth-quarter tax item and 2010's U.S. health care tax charge have none), so they stay as reported",
+   "revenue_usd_b": {
+    "2003": 22.807,
+    "2004": 30.306,
+    "2005": 36.339,
+    "2006": 41.517,
+    "2007": 44.958,
+    "2008": 51.324,
+    "2009": 32.396,
+    "2010": 42.588,
+    "2011": 60.138,
+    "2012": 65.875
+   },
+   "revenue_sources": {
+    "2003": "CT19",
+    "2004": "CT28",
+    "2005": "CT32",
+    "2006": "CT40",
+    "2007": "CT45",
+    "2008": "CT51",
+    "2009": "CT51",
+    "2010": "CT51",
+    "2011": "CT51",
+    "2012": "CT51"
+   },
+   "diluted_shares_m": {
+    "2003": 702.7,
+    "2004": 707.4,
+    "2005": 705.8,
+    "2006": 683.8,
+    "2007": 659.5,
+    "2008": 627.9,
+    "2009": 626.0,
+    "2010": 650.4,
+    "2011": 666.1,
+    "2012": 669.6
+   },
+   "shares_sources": {
+    "2003": "CT10",
+    "2004": "CT13",
+    "2005": "CT19",
+    "2006": "CT28",
+    "2007": "CT32",
+    "2008": "CT40",
+    "2009": "CT45",
+    "2010": "CT51",
+    "2011": "CT51",
+    "2012": "CT51"
+   },
+   "shares_published": {},
+   "pe_window_start": null,
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 13.01,
+   "prev_fy_op_margin_note": "operating profit $8,573M / sales and revenues $65,875M (FY2012 10-K)",
+   "prev_fy_pretax_margin": 12.5,
+   "prev_fy_pretax_margin_note": "consolidated profit before taxes $8,236M / sales and revenues $65,875M (FY2012 10-K)",
+   "prev_fy_sales_growth": 9.5,
+   "prev_fy_mach_pct": 14.7,
+   "prev_fy_eng_pct": 5.0,
+   "tax_rate": 0.3069,
+   "tax_note": "provision for income taxes $2,528M / consolidated profit before taxes $8,236M (FY2012 10-K)",
+   "cash_b": 5.49,
+   "cash_label": "FY12",
+   "cash_note": "cash and short-term investments $5,490M at December 31, 2012 (FY2012 10-K)",
+   "ocf_b": 5.241,
+   "ocf_note": "consolidated net cash provided by operating activities $5,241M in 2012 (FY2012 10-K)",
+   "dividend_annual": 2.02,
+   "dividend_note": "cash dividends declared per common share $2.02 in 2012 (FY2012 10-K)",
+   "cash_return_text": "dividends paid $1,617M and no treasury shares purchased in 2012 (FY2012 10-K)",
+   "business_line": "construction and mining equipment, diesel and natural gas engines and industrial gas turbines, with Financial Products (Cat Financial)",
+   "groups": [
+    [
+     "Construction Industries",
+     19.334,
+     -1.7
+    ],
+    [
+     "Resource Industries",
+     21.158,
+     35.4
+    ],
+    [
+     "Power Systems",
+     21.122,
+     5.0
+    ],
+    [
+     "Financial Products Segment",
+     3.09,
+     2.9
+    ]
+   ],
+   "groups_basis": "FY12 external sales of the four reportable segments (FY2012 10-K; All Other and corporate items left out)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')",
+   "kind": "CYCLICAL"
   }
  ],
  "prints": [
@@ -1209,6 +2160,635 @@
    "diluted_shares_m": 635.5,
    "cash_return_text": "No stock repurchase is expected.",
    "next_print": "Q4 2009 print (late January)"
+  },
+  {
+   "quarter": "Q4 2009",
+   "fy": 2009,
+   "q": 4,
+   "published": "2010-01-27",
+   "source": "CT31",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 09:03 ET",
+   "period_end": "2009-12-31",
+   "raw": {
+    "mach_m": 4564,
+    "mach_prior_m": 7675,
+    "eng_m": 2629,
+    "eng_prior_m": 4445,
+    "rev_m": 7898,
+    "rev_prior_m": 12923,
+    "oi_m": 128,
+    "oi_prior_m": 457,
+    "diluted_shares_m": 641.7
+   },
+   "sales_b": 7.898,
+   "sales_pct": -38.9,
+   "mach_pct": -40.5,
+   "eng_pct": -40.9,
+   "op_margin": 1.62,
+   "op_margin_bp": -191.6,
+   "eps_q": 0.36,
+   "eps_q_prior": 1.08,
+   "eps_pct": -66.7,
+   "diluted_shares_m": 641.7,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q1 2010 print (late April)",
+   "note": "the quarter's $0.36 a share includes redundancy costs ($0.41 a share excluding them)",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 2.18,
+    "revenue_usd_b": 32.396,
+    "diluted_shares_m": 626.0,
+    "normalization_note": "FY2009 $2.18, the company's profit per share excluding redundancy costs (Q4 2009 release; GAAP $1.43)",
+    "op_margin": 1.78,
+    "pretax_margin": 1.76,
+    "pretax_margin_note": "FY09 consolidated profit before taxes $569M / sales and revenues $32,396M (N01)",
+    "sales_growth": -36.9,
+    "mach_pct": -42.9,
+    "eng_pct": -29.9,
+    "tax_rate": -0.4745,
+    "tax_note": "FY09 provision for income taxes $-270M / consolidated profit before taxes $569M"
+   }
+  },
+  {
+   "quarter": "Q1 2010",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-04-26",
+   "source": "CT33",
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 09:04 ET",
+   "period_end": "2010-03-31",
+   "raw": {
+    "mach_m": 5262,
+    "mach_prior_m": 5342,
+    "eng_m": 2289,
+    "eng_prior_m": 3168,
+    "rev_m": 8238,
+    "rev_prior_m": 9225,
+    "oi_m": 508,
+    "oi_prior_m": -175,
+    "diluted_shares_m": 643.5
+   },
+   "sales_b": 8.238,
+   "sales_pct": -10.7,
+   "mach_pct": -1.5,
+   "eng_pct": -27.7,
+   "op_margin": 6.17,
+   "op_margin_bp": 806.4,
+   "eps_q": 0.36,
+   "eps_q_prior": -0.19,
+   "eps_pct": 289.5,
+   "diluted_shares_m": 643.5,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q2 2010 print (late July)",
+   "note": "the quarter's $0.36 a share includes the $90 million tax charge for the U.S. health care legislation ($0.50 a share excluding it); the year-ago quarter is a loss of $0.19 a share, so profit per share growth is measured on its absolute value"
+  },
+  {
+   "quarter": "Q2 2010",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-07-22",
+   "source": "CT35",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 08:24 ET",
+   "period_end": "2010-06-30",
+   "raw": {
+    "mach_m": 6733,
+    "mach_prior_m": 4338,
+    "eng_m": 2990,
+    "eng_prior_m": 2916,
+    "rev_m": 10409,
+    "rev_prior_m": 7975,
+    "oi_m": 977,
+    "oi_prior_m": 347,
+    "diluted_shares_m": 647.0
+   },
+   "sales_b": 10.409,
+   "sales_pct": 30.5,
+   "mach_pct": 55.2,
+   "eng_pct": 2.5,
+   "op_margin": 9.39,
+   "op_margin_bp": 503.5,
+   "eps_q": 1.09,
+   "eps_q_prior": 0.6,
+   "eps_pct": 81.7,
+   "diluted_shares_m": 647.0,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q3 2010 print (late October)"
+  },
+  {
+   "quarter": "Q3 2010",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-10-21",
+   "source": "CT36",
+   "release": "Oct 21",
+   "release_time": "before the open on Oct 21: 8-K accepted 08:19 ET",
+   "period_end": "2010-09-30",
+   "raw": {
+    "mach_m": 7201,
+    "mach_prior_m": 3904,
+    "eng_m": 3251,
+    "eng_prior_m": 2679,
+    "rev_m": 11134,
+    "rev_prior_m": 7298,
+    "oi_m": 1187,
+    "oi_prior_m": 277,
+    "diluted_shares_m": 651.6
+   },
+   "sales_b": 11.134,
+   "sales_pct": 52.6,
+   "mach_pct": 84.5,
+   "eng_pct": 21.4,
+   "op_margin": 10.66,
+   "op_margin_bp": 686.5,
+   "eps_q": 1.22,
+   "eps_q_prior": 0.64,
+   "eps_pct": 90.6,
+   "diluted_shares_m": 651.6,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q4 2010 print (late January)"
+  },
+  {
+   "quarter": "Q4 2010",
+   "fy": 2010,
+   "q": 4,
+   "published": "2011-01-27",
+   "source": "CT37",
+   "release": "Jan 27",
+   "release_time": "during the session on Jan 27: 8-K accepted 09:56 ET",
+   "period_end": "2010-12-31",
+   "raw": {
+    "mach_m": 8571,
+    "mach_prior_m": 4564,
+    "eng_m": 3570,
+    "eng_prior_m": 2629,
+    "rev_m": 12807,
+    "rev_prior_m": 7898,
+    "oi_m": 1291,
+    "oi_prior_m": 128,
+    "diluted_shares_m": 659.6
+   },
+   "sales_b": 12.807,
+   "sales_pct": 62.2,
+   "mach_pct": 87.8,
+   "eng_pct": 35.8,
+   "op_margin": 10.08,
+   "op_margin_bp": 846.0,
+   "eps_q": 1.47,
+   "eps_q_prior": 0.36,
+   "eps_pct": 308.3,
+   "diluted_shares_m": 659.6,
+   "cash_return_text": "However, due to the size of acquisitions that we expect to close, particularly Bucyrus, we do not expect to buy back stock in 2011.",
+   "next_print": "Q1 2011 print (late April)",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 4.15,
+    "revenue_usd_b": 42.588,
+    "diluted_shares_m": 650.4,
+    "normalization_note": "FY2010 $4.15, profit per share - diluted as reported (Q4 2010 release; no one-off excluded)",
+    "op_margin": 9.31,
+    "pretax_margin": 8.81,
+    "pretax_margin_note": "FY10 consolidated profit before taxes $3,750M / sales and revenues $42,588M (N07)",
+    "sales_growth": 31.5,
+    "mach_pct": 53.0,
+    "eng_pct": 6.2,
+    "tax_rate": 0.2581,
+    "tax_note": "FY10 provision for income taxes $968M / consolidated profit before taxes $3,750M"
+   }
+  },
+  {
+   "quarter": "Q1 2011",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-04-29",
+   "source": "CT39",
+   "release": "Apr 29",
+   "release_time": "before the open on Apr 29: 8-K accepted 08:55 ET",
+   "period_end": "2011-03-31",
+   "raw": {
+    "ci_m": 4471,
+    "ci_prior_m": 2612,
+    "ri_m": 2768,
+    "ri_prior_m": 1503,
+    "ps_m": 4449,
+    "ps_prior_m": 2941,
+    "rev_m": 12949,
+    "rev_prior_m": 8238,
+    "oi_m": 1833,
+    "oi_prior_m": 508,
+    "diluted_shares_m": 664.9
+   },
+   "sales_b": 12.949,
+   "sales_pct": 57.2,
+   "mach_pct": 75.9,
+   "eng_pct": 51.3,
+   "op_margin": 14.16,
+   "op_margin_bp": 798.9,
+   "eps_q": 1.84,
+   "eps_q_prior": 0.36,
+   "eps_pct": 411.1,
+   "diluted_shares_m": 664.9,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q2 2011 print (late July)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q2 2011",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-07-22",
+   "source": "CT42",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 09:17 ET",
+   "period_end": "2011-06-30",
+   "raw": {
+    "ci_m": 4941,
+    "ci_prior_m": 3391,
+    "ri_m": 3206,
+    "ri_prior_m": 2095,
+    "ps_m": 4918,
+    "ps_prior_m": 3736,
+    "rev_m": 14230,
+    "rev_prior_m": 10409,
+    "oi_m": 1601,
+    "oi_prior_m": 977,
+    "diluted_shares_m": 667.2
+   },
+   "sales_b": 14.23,
+   "sales_pct": 36.7,
+   "mach_pct": 48.5,
+   "eng_pct": 31.6,
+   "op_margin": 11.25,
+   "op_margin_bp": 186.5,
+   "eps_q": 1.52,
+   "eps_q_prior": 1.09,
+   "eps_pct": 39.4,
+   "diluted_shares_m": 667.2,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q3 2011 print (late October)",
+   "note": "Bucyrus is in Resource Industries from July 8, 2011",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q3 2011",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-10-24",
+   "source": "CT43",
+   "release": "Oct 24",
+   "release_time": "before the open on Oct 24: 8-K accepted 08:53 ET",
+   "period_end": "2011-09-30",
+   "raw": {
+    "ci_m": 4900,
+    "ci_prior_m": 3466,
+    "ri_m": 4599,
+    "ri_prior_m": 2262,
+    "ps_m": 5075,
+    "ps_prior_m": 4196,
+    "rev_m": 15716,
+    "rev_prior_m": 11134,
+    "oi_m": 1759,
+    "oi_prior_m": 1187,
+    "diluted_shares_m": 666.0
+   },
+   "sales_b": 15.716,
+   "sales_pct": 41.2,
+   "mach_pct": 65.8,
+   "eng_pct": 20.9,
+   "op_margin": 11.19,
+   "op_margin_bp": 53.1,
+   "eps_q": 1.71,
+   "eps_q_prior": 1.22,
+   "eps_pct": 40.2,
+   "diluted_shares_m": 666.0,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q4 2011 print (late January)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q4 2011",
+   "fy": 2011,
+   "q": 4,
+   "published": "2012-01-26",
+   "source": "CT44",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 08:45 ET",
+   "period_end": "2011-12-31",
+   "raw": {
+    "ci_m": 5355,
+    "ci_prior_m": 4103,
+    "ri_m": 5056,
+    "ri_prior_m": 2807,
+    "ps_m": 5672,
+    "ps_prior_m": 4664,
+    "rev_m": 17243,
+    "rev_prior_m": 12807,
+    "oi_m": 1960,
+    "oi_prior_m": 1291,
+    "diluted_shares_m": 665.9
+   },
+   "sales_b": 17.243,
+   "sales_pct": 34.6,
+   "mach_pct": 50.7,
+   "eng_pct": 21.6,
+   "op_margin": 11.37,
+   "op_margin_bp": 128.7,
+   "eps_q": 2.32,
+   "eps_q_prior": 1.47,
+   "eps_pct": 57.8,
+   "diluted_shares_m": 665.9,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q1 2012 print (late April)",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 7.4,
+    "revenue_usd_b": 60.138,
+    "diluted_shares_m": 666.1,
+    "normalization_note": "FY2011 $7.40, profit per share - diluted as reported (Q4 2011 release); its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out a whole business, not only one-offs, so it is not used (the CMCSA 2004-2005 rule)",
+    "op_margin": 11.89,
+    "pretax_margin": 11.18,
+    "pretax_margin_note": "FY11 consolidated profit before taxes $6,725M / sales and revenues $60,138M (N14)",
+    "sales_growth": 41.2,
+    "mach_pct": 58.7,
+    "eng_pct": 29.5,
+    "tax_rate": 0.2558,
+    "tax_note": "FY11 provision for income taxes $1,720M / consolidated profit before taxes $6,725M"
+   },
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q1 2012",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-04-25",
+   "source": "CT46",
+   "release": "Apr 25",
+   "release_time": "before the open on Apr 25: 8-K accepted 09:00 ET",
+   "period_end": "2012-03-31",
+   "raw": {
+    "ci_m": 5062,
+    "ci_prior_m": 4471,
+    "ri_m": 4778,
+    "ri_prior_m": 2768,
+    "ps_m": 4987,
+    "ps_prior_m": 4449,
+    "rev_m": 15981,
+    "rev_prior_m": 12949,
+    "oi_m": 2323,
+    "oi_prior_m": 1833,
+    "diluted_shares_m": 670.2
+   },
+   "sales_b": 15.981,
+   "sales_pct": 23.4,
+   "mach_pct": 35.9,
+   "eng_pct": 12.1,
+   "op_margin": 14.54,
+   "op_margin_bp": 38.0,
+   "eps_q": 2.37,
+   "eps_q_prior": 1.84,
+   "eps_pct": 28.8,
+   "diluted_shares_m": 670.2,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q2 2012 print (late July)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q2 2012",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-07-25",
+   "source": "CT48",
+   "release": "Jul 25",
+   "release_time": "before the open on Jul 25: 8-K accepted 08:20 ET",
+   "period_end": "2012-06-30",
+   "raw": {
+    "ci_m": 5340,
+    "ci_prior_m": 4941,
+    "ri_m": 5390,
+    "ri_prior_m": 3206,
+    "ps_m": 5511,
+    "ps_prior_m": 4918,
+    "rev_m": 17374,
+    "rev_prior_m": 14230,
+    "oi_m": 2616,
+    "oi_prior_m": 1601,
+    "diluted_shares_m": 669.6
+   },
+   "sales_b": 17.374,
+   "sales_pct": 22.1,
+   "mach_pct": 31.7,
+   "eng_pct": 12.1,
+   "op_margin": 15.06,
+   "op_margin_bp": 380.6,
+   "eps_q": 2.54,
+   "eps_q_prior": 1.52,
+   "eps_pct": 67.1,
+   "diluted_shares_m": 669.6,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q3 2012 print (late October)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-10-22",
+   "source": "CT49",
+   "release": "Oct 22",
+   "release_time": "before the open on Oct 22: 8-K accepted 09:00 ET",
+   "period_end": "2012-09-30",
+   "raw": {
+    "ci_m": 4904,
+    "ci_prior_m": 4900,
+    "ri_m": 5214,
+    "ri_prior_m": 4599,
+    "ps_m": 5317,
+    "ps_prior_m": 5075,
+    "rev_m": 16445,
+    "rev_prior_m": 15716,
+    "oi_m": 2596,
+    "oi_prior_m": 1759,
+    "diluted_shares_m": 668.7
+   },
+   "sales_b": 16.445,
+   "sales_pct": 4.6,
+   "mach_pct": 6.5,
+   "eng_pct": 4.8,
+   "op_margin": 15.79,
+   "op_margin_bp": 459.4,
+   "eps_q": 2.54,
+   "eps_q_prior": 1.71,
+   "eps_pct": 48.5,
+   "diluted_shares_m": 668.7,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q4 2012 print (late January)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-01-28",
+   "source": "CT50",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 08:31 ET",
+   "period_end": "2012-12-31",
+   "raw": {
+    "ci_m": 4028,
+    "ci_prior_m": 5355,
+    "ri_m": 5776,
+    "ri_prior_m": 5056,
+    "ps_m": 5307,
+    "ps_prior_m": 5672,
+    "rev_m": 16075,
+    "rev_prior_m": 17243,
+    "oi_m": 1038,
+    "oi_prior_m": 1960,
+    "diluted_shares_m": 669.3
+   },
+   "sales_b": 16.075,
+   "sales_pct": -6.8,
+   "mach_pct": -5.8,
+   "eng_pct": -6.4,
+   "op_margin": 6.46,
+   "op_margin_bp": -491.0,
+   "eps_q": 1.04,
+   "eps_q_prior": 2.32,
+   "eps_pct": -55.2,
+   "diluted_shares_m": 669.3,
+   "cash_return_text": "no stock repurchase stated in the release",
+   "next_print": "Q1 2013 print (late April)",
+   "note": "the quarter's $1.04 a share includes the $580 million ($0.87 a share) Siwei goodwill impairment",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 8.48,
+    "revenue_usd_b": 65.875,
+    "diluted_shares_m": 669.6,
+    "normalization_note": "FY2012 $8.48, profit per share - diluted as reported (Q4 2012 release), with the $0.87 Siwei goodwill impairment in it: no per-share figure excluding it is published",
+    "op_margin": 13.01,
+    "pretax_margin": 12.5,
+    "pretax_margin_note": "FY12 consolidated profit before taxes $8,236M / sales and revenues $65,875M (N20)",
+    "sales_growth": 9.5,
+    "mach_pct": null,
+    "eng_pct": null,
+    "tax_rate": 0.3069,
+    "tax_note": "FY12 provision for income taxes $2,528M / consolidated profit before taxes $8,236M"
+   },
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-22",
+   "source": "CT52",
+   "release": "Apr 22",
+   "release_time": "before the open on Apr 22: 8-K accepted 08:56 ET",
+   "period_end": "2013-03-31",
+   "raw": {
+    "ci_m": 4197,
+    "ci_prior_m": 5062,
+    "ri_m": 3676,
+    "ri_prior_m": 4778,
+    "ps_m": 4405,
+    "ps_prior_m": 4987,
+    "rev_m": 13210,
+    "rev_prior_m": 15981,
+    "oi_m": 1218,
+    "oi_prior_m": 2323,
+    "diluted_shares_m": 671.6
+   },
+   "sales_b": 13.21,
+   "sales_pct": -17.3,
+   "mach_pct": -20.0,
+   "eng_pct": -11.7,
+   "op_margin": 9.22,
+   "op_margin_bp": -531.6,
+   "eps_q": 1.31,
+   "eps_q_prior": 2.37,
+   "eps_pct": -44.7,
+   "diluted_shares_m": 671.6,
+   "cash_return_text": "Better cash flow and the strength of our balance sheet are enabling us to resume stock repurchases",
+   "next_print": "Q2 2013 print (late July)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-24",
+   "source": "CT54",
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 08:59 ET",
+   "period_end": "2013-06-30",
+   "raw": {
+    "ci_m": 4850,
+    "ci_prior_m": 5340,
+    "ri_m": 3571,
+    "ri_prior_m": 5390,
+    "ps_m": 5263,
+    "ps_prior_m": 5511,
+    "rev_m": 14621,
+    "rev_prior_m": 17374,
+    "oi_m": 1557,
+    "oi_prior_m": 2616,
+    "diluted_shares_m": 662.7
+   },
+   "sales_b": 14.621,
+   "sales_pct": -15.8,
+   "mach_pct": -21.5,
+   "eng_pct": -4.5,
+   "op_margin": 10.65,
+   "op_margin_bp": -440.8,
+   "eps_q": 1.45,
+   "eps_q_prior": 2.54,
+   "eps_pct": -42.9,
+   "diluted_shares_m": 662.7,
+   "cash_return_text": "In April of this year, we announced our intention to repurchase approximately $1 billion of stock, which we completed in June.",
+   "next_print": "Q3 2013 print (late October)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-23",
+   "source": "CT55",
+   "release": "Oct 23",
+   "release_time": "before the open on Oct 23: 8-K accepted 08:48 ET",
+   "period_end": "2013-09-30",
+   "raw": {
+    "ci_m": 4547,
+    "ci_prior_m": 4904,
+    "ri_m": 3004,
+    "ri_prior_m": 5214,
+    "ps_m": 4922,
+    "ps_prior_m": 5317,
+    "rev_m": 13423,
+    "rev_prior_m": 16445,
+    "oi_m": 1401,
+    "oi_prior_m": 2596,
+    "diluted_shares_m": 651.9
+   },
+   "sales_b": 13.423,
+   "sales_pct": -18.4,
+   "mach_pct": -25.4,
+   "eng_pct": -7.4,
+   "op_margin": 10.44,
+   "op_margin_bp": -534.9,
+   "eps_q": 1.45,
+   "eps_q_prior": 2.54,
+   "eps_pct": -42.9,
+   "diluted_shares_m": 651.9,
+   "cash_return_text": "We repurchased $1 billion of stock in the third quarter of 2013 in addition to the $1 billion repurchased in the second quarter of 2013.",
+   "next_print": "Q4 2013 print (late January)",
+   "lines_basis": "from the 2011 segments: Machinery is the external sales of Construction Industries and Resource Industries, Engines those of Power Systems (the company: segments 'supporting customers using machinery' and 'using reciprocating engines, turbines')"
   }
  ],
  "guides": [
@@ -1432,6 +3012,274 @@
    "rev_growth_base_b": 32.5,
    "rev_growth_base_note": "the midpoint of the 2009 outlook range ($32.5 billion)",
    "note": "a preliminary outlook for sales and revenues only"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-27",
+   "source": "CT31",
+   "doc": "Q4 2009 release",
+   "rev_guide_pct": [
+    10,
+    25
+   ],
+   "eps_guide": [
+    2.5,
+    2.5
+   ],
+   "eps_guide_note": "'about $2.50 per share at the midpoint of the sales and revenues range'"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-26",
+   "source": "CT33",
+   "doc": "Q1 2010 release",
+   "rev_guide_usd_b": [
+    38.0,
+    42.0
+   ],
+   "eps_guide": [
+    2.5,
+    3.25
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2010-07-22",
+   "source": "CT35",
+   "doc": "Q2 2010 release",
+   "rev_guide_usd_b": [
+    39.0,
+    42.0
+   ],
+   "eps_guide": [
+    3.15,
+    3.85
+   ]
+  },
+  {
+   "fy": 2010,
+   "published": "2010-10-21",
+   "source": "CT36",
+   "doc": "Q3 2010 release",
+   "rev_guide_usd_b": [
+    41.0,
+    42.0
+   ],
+   "eps_guide": [
+    3.8,
+    4.0
+   ]
+  },
+  {
+   "fy": 2011,
+   "published": "2010-10-21",
+   "source": "CT36",
+   "doc": "Q3 2010 release",
+   "rev_words": "sales and revenues approaching $50 billion",
+   "note": "a preliminary outlook; no profit per share outlook"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-01-27",
+   "source": "CT37",
+   "doc": "Q4 2010 release",
+   "rev_words": "sales and revenues in 2011 to exceed $50 billion",
+   "eps_guide": [
+    6.0,
+    6.0
+   ],
+   "eps_guide_note": "'near $6.00 per share'",
+   "note": "the outlook includes EMD but not MWM or Bucyrus, which had not closed"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-29",
+   "source": "CT39",
+   "doc": "Q1 2011 release",
+   "rev_guide_usd_b": [
+    52.0,
+    54.0
+   ],
+   "eps_guide": [
+    6.25,
+    6.75
+   ],
+   "note": "the outlook does not include MWM or Bucyrus, which had not closed"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-07-22",
+   "source": "CT42",
+   "doc": "Q2 2011 release",
+   "rev_guide_usd_b": [
+    56.0,
+    58.0
+   ],
+   "eps_guide": [
+    6.25,
+    6.75
+   ],
+   "eps_guide_note": "including Bucyrus; $6.75-7.25 excluding it",
+   "note": "including Bucyrus, about $2 billion of 2011 sales ($54-56 billion excluding it)"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-10-24",
+   "source": "CT43",
+   "doc": "Q3 2011 release",
+   "rev_guide_usd_b": [
+    58.0,
+    58.0
+   ],
+   "eps_guide": [
+    6.75,
+    6.75
+   ],
+   "eps_guide_note": "about $6.75 including Bucyrus; about $7.25 excluding it",
+   "note": "about $58 billion including about $2 billion of Bucyrus sales (about $56 billion excluding them)"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-10-24",
+   "source": "CT43",
+   "doc": "Q3 2011 release",
+   "rev_guide_pct": [
+    10,
+    20
+   ],
+   "rev_growth_base_b": 58.0,
+   "rev_growth_base_note": "the 2011 outlook of about $58 billion",
+   "note": "a preliminary outlook for sales and revenues only"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-01-26",
+   "source": "CT44",
+   "doc": "Q4 2011 release",
+   "rev_guide_usd_b": [
+    68.0,
+    72.0
+   ],
+   "eps_guide": [
+    9.25,
+    9.25
+   ],
+   "eps_guide_note": "'about $9.25 at the middle of the sales and revenues range'"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-04-25",
+   "source": "CT46",
+   "doc": "Q1 2012 release",
+   "rev_guide_usd_b": [
+    68.0,
+    72.0
+   ],
+   "eps_guide": [
+    9.5,
+    9.5
+   ],
+   "eps_guide_note": "about $9.50 at the middle of the sales and revenues range"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-07-25",
+   "source": "CT48",
+   "doc": "Q2 2012 release",
+   "rev_guide_usd_b": [
+    68.0,
+    70.0
+   ],
+   "eps_guide": [
+    9.6,
+    9.6
+   ],
+   "eps_guide_note": "about $9.60 at the middle of the sales and revenues range"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-10-22",
+   "source": "CT49",
+   "doc": "Q3 2012 release",
+   "rev_guide_usd_b": [
+    66.0,
+    66.0
+   ],
+   "eps_guide": [
+    9.0,
+    9.25
+   ],
+   "note": "with the gain on the sale of a majority interest in the third party logistics business in it"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-01-28",
+   "source": "CT50",
+   "doc": "Q4 2012 release",
+   "rev_guide_usd_b": [
+    60.0,
+    68.0
+   ],
+   "eps_guide": [
+    7.0,
+    9.0
+   ]
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-22",
+   "source": "CT52",
+   "doc": "Q1 2013 release",
+   "rev_guide_usd_b": [
+    57.0,
+    61.0
+   ],
+   "eps_guide": [
+    7.0,
+    7.0
+   ],
+   "eps_guide_note": "about $7.00 at the middle of the sales and revenues range"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-24",
+   "source": "CT54",
+   "doc": "Q2 2013 release",
+   "rev_guide_usd_b": [
+    56.0,
+    58.0
+   ],
+   "eps_guide": [
+    6.5,
+    6.5
+   ],
+   "eps_guide_note": "about $6.50 at the middle of the sales and revenues range"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-10-23",
+   "source": "CT55",
+   "doc": "Q3 2013 release",
+   "rev_guide_usd_b": [
+    55.0,
+    55.0
+   ],
+   "eps_guide": [
+    5.5,
+    5.5
+   ],
+   "eps_guide_note": "about $5.50"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-10-23",
+   "source": "CT55",
+   "doc": "Q3 2013 release",
+   "rev_guide_pct": [
+    -5,
+    5
+   ],
+   "note": "a preliminary outlook, 'flat with 2013 in a plus or minus 5 percent range'; no profit per share outlook"
   }
  ],
  "dividends": [
@@ -1452,6 +3300,30 @@
    "source": "CT21",
    "quarterly": 0.42,
    "note": "$0.42 quarterly ('voted to increase the quarterly cash dividend by six cents to forty-two ($0.42) cents per share')"
+  },
+  {
+   "published": "2010-06-14",
+   "source": "CT34",
+   "quarterly": 0.44,
+   "note": "$0.44 quarterly ('voted today to raise the quarterly cash dividend by two cents to forty-four ($0.44) cents per share of common stock')"
+  },
+  {
+   "published": "2011-06-08",
+   "source": "CT41",
+   "quarterly": 0.46,
+   "note": "$0.46 quarterly ('voted today to raise the quarterly cash dividend by two cents to forty-six ($0.46) cents per share of common stock')"
+  },
+  {
+   "published": "2012-06-13",
+   "source": "CT47",
+   "quarterly": 0.52,
+   "note": "$0.52 quarterly ('voted today to raise the quarterly cash dividend by six cents to fifty-two ($0.52) cents per share of common stock')"
+  },
+  {
+   "published": "2013-06-12",
+   "source": "CT53",
+   "quarterly": 0.6,
+   "note": "$0.60 quarterly ('voted today to raise the quarterly cash dividend by eight cents to sixty cents ($0.60) per share of common stock')"
   }
  ],
  "events": [],

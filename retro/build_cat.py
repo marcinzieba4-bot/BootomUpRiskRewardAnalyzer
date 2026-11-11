@@ -11,10 +11,13 @@ with machinery and engines signals (retro/templates/cat_engine.py.tmpl). For eac
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 Caterpillar's fiscal year is the calendar year. EPS is profit per share - diluted, replaced by the company's figure where a filing
-publishes one excluding only one-offs (2001: the Q4 2001 release's $2.60 excluding the nonrecurring charges; the ACN rule). The
-releases guide the fiscal year only, never a quarter: sales and revenues as a dollar level or range ('about $44 billion', '$42 to $44
+publishes one excluding only one-offs (2001: the Q4 2001 release's $2.60 excluding the nonrecurring charges; 2009: $2.18 excluding
+redundancy costs; the ACN rule). 2011 stays $7.40 as reported: its $7.79 'excluding the impact of the acquisition of Bucyrus' leaves out
+a whole business, not only one-offs (the CMCSA rule); 2012 stays $8.48, with the Siwei goodwill impairment in it, as no figure excluding
+it is published. The releases guide the fiscal year only, never a quarter: sales and revenues as a dollar level or range ('about $44 billion', '$42 to $44
 billion', 'plus or minus 10 percent from $40 billion') or as growth on the last year ('up 5 to 10 percent'), and profit per share as
-a dollar level or range or as growth ('up 5 to 15 percent from 2007'); the 2009 guides are stated with and without redundancy costs.
+a dollar level or range or as growth ('up 5 to 15 percent from 2007'); the 2009 guides are stated with and without redundancy costs,
+the 2011 guides from the Q2 2011 release with and without Bucyrus (the figure including it is used: the acquisition had closed).
 The method r2 inputs map as follows (retro/README.md, "CAT"):
   - current-FY EPS: the fiscal-year profit per share guide midpoint (a growth guide on its stated base, at its midpoint), the figure
     excluding redundancy costs where both are given (the ACN rule for a guide with and without an announced item); no guide: the last
@@ -25,16 +28,23 @@ The method r2 inputs map as follows (retro/README.md, "CAT"):
   - guided margin step: none (no margin guide in numbers); the margin signal takes the latest quarter's operating margin change.
 A recast of earlier statements is a history vintage of its own (the MSFT recast rule): the 8-K of 2009-05-14 (SFAS 160 and the 2009
 segments; dated 2009-05-15) changes only profit before taxes and operating cash flow, which feed the display-only EPS check and balance line.
+The 8-K of 2011-05-23 recasts FY2008-FY2010 for the 2011 segments: from then, and in every print from Q1 2011, the Machinery line is
+the external sales of Construction Industries plus Resource Industries and the Engines line those of Power Systems (lines(); the
+company describes its segments as supporting customers using machinery and using engines and turbines). From the FY2010 10-K, whose
+Item 1A calls the demand for Caterpillar's own products cyclical, the kind is CYCLICAL (the class label only; retro/README.md, "CAT
+2010-2013"). A print whose year-ago quarter is a loss (Q1 2010) measures profit per share growth on that loss's absolute value.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2009 were accepted before the open, except Q1 2008's (during the session);
-the Q2 2007 to Q1 2008 releases came on Fridays, so each of those weeks is dated its release day.
+is the first trading day after it. The earnings 8-Ks of 2007-2013 were accepted before the open, except Q1 2008's and Q4 2010's
+(during the session); the Q2 2007 to Q1 2008, Q1 2011 and Q2 2011 releases came on Fridays, so each of those weeks is dated its
+release day.
 
 Output goes to staging/retrospective/CAT until the series is added to the archive (--out archive/retrospective/CAT).
 
 Usage
   python3 retro/build_cat.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_cat.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_cat.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_cat.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CAT/<AS_OF>
 """
@@ -117,15 +127,26 @@ def rule_t(rt):
     return out
 
 
+def lines(r):
+    """The Machinery and Engines lines of a print: as reported to 2010; from the 2011 segments, Construction Industries plus Resource
+    Industries and Power Systems (retro/README.md, "CAT 2010-2013")."""
+    if "ci_m" in r:
+        return r["ci_m"] + r["ri_m"], r["ci_prior_m"] + r["ri_prior_m"], r["ps_m"], r["ps_prior_m"]
+    return r["mach_m"], r["mach_prior_m"], r["eng_m"], r["eng_prior_m"]
+
+
 def check_print(p):
     """Re-derive a print's growth and margins from its raw published figures (they must match)."""
     r = p["raw"]
     o, o0 = r["oi_m"] / r["rev_m"] * 100, r["oi_prior_m"] / r["rev_prior_m"] * 100
+    m, m0, e, e0 = lines(r)
+    e1, e0q = p["eps_q"], p["eps_q_prior"]
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": round((r["rev_m"] / r["rev_prior_m"] - 1) * 100, 1),
-            "mach_pct": round((r["mach_m"] / r["mach_prior_m"] - 1) * 100, 1),
-            "eng_pct": round((r["eng_m"] / r["eng_prior_m"] - 1) * 100, 1),
+            "mach_pct": round((m / m0 - 1) * 100, 1),
+            "eng_pct": round((e / e0 - 1) * 100, 1),
             "op_margin": round(o, 2), "op_margin_bp": round((o - o0) * 100, 1),
-            "eps_pct": round((p["eps_q"] / p["eps_q_prior"] - 1) * 100, 1),
+            # growth on a loss is measured on its absolute value, so its direction stays right (every earlier base is positive)
+            "eps_pct": round((e1 / e0q - 1) * 100, 1) if e0q > 0 else round((e1 - e0q) / abs(e0q) * 100, 1),
             "diluted_shares_m": float(r["diluted_shares_m"])}
     for k, v in want.items():
         assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
@@ -325,10 +346,17 @@ def build(as_of, facts, raw, spx, engine, out):
                    "eps_q_prior", "eps_pct")
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     r = latest["raw"]
-    volumes = (f"Machinery sales ${r['mach_m']:,}M against ${r['mach_prior_m']:,}M a year earlier ({latest['mach_pct']:+.1f}%), "
-               f"Engines ${r['eng_m']:,}M against ${r['eng_prior_m']:,}M ({latest['eng_pct']:+.1f}%), as the release's sales table "
-               "shows them" + (f"; {latest['note']}" if latest.get("note") else ""))
+    if "ci_m" in r:        # the 2011 segments read as the successors of the Machinery and Engines lines
+        volumes = (f"Machinery (Construction Industries ${r['ci_m']:,}M and Resource Industries ${r['ri_m']:,}M against "
+                   f"${r['ci_prior_m']:,}M and ${r['ri_prior_m']:,}M a year earlier, {latest['mach_pct']:+.1f}%), Engines (Power Systems "
+                   f"${r['ps_m']:,}M against ${r['ps_prior_m']:,}M, {latest['eng_pct']:+.1f}%), as the release's sales and revenues by "
+                   "segment show them" + (f"; {latest['note']}" if latest.get("note") else ""))
+    else:
+        volumes = (f"Machinery sales ${r['mach_m']:,}M against ${r['mach_prior_m']:,}M a year earlier ({latest['mach_pct']:+.1f}%), "
+                   f"Engines ${r['eng_m']:,}M against ${r['eng_prior_m']:,}M ({latest['eng_pct']:+.1f}%), as the release's sales table "
+                   "shows them" + (f"; {latest['note']}" if latest.get("note") else ""))
     R = repr
+    pp = lambda x: "n/r" if x is None else f"{x:+.1f}%"    # a full-year line the Q4 release does not report (FY2012's segments)
     head = f'''#!/usr/bin/env python3
 """
 CAT Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
@@ -352,7 +380,7 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 
 # Durability as judged on AS_OF from the dated facts above.
 PIT_PROFILE = {{
-    "kind": "DURABLE",
+    "kind": "{h.get('kind', 'DURABLE')}",
     "risk": 2,
     "why": {R(why)},
     "theme_watch": {R(watch)},
@@ -402,7 +430,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} sales and revenues {h['prev_fy_sales_growth']:+.1f}%, Machinery {h['prev_fy_mach_pct']:+.1f}%, Engines {h['prev_fy_eng_pct']:+.1f}%; {latest['quarter'].split()[0]} operating margin {latest['op_margin']:.2f}% ({latest['op_margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} sales and revenues {h['prev_fy_sales_growth']:+.1f}%, Machinery {pp(h['prev_fy_mach_pct'])}, Engines {pp(h['prev_fy_eng_pct'])}; {latest['quarter'].split()[0]} operating margin {latest['op_margin']:.2f}% ({latest['op_margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['cash_label']} year-end cash and short-term investments ${h['cash_b']:.3f}B, {h['cash_label']} operating cash flow ${h['ocf_b']:.3f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}

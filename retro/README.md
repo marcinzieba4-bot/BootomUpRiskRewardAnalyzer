@@ -12894,6 +12894,168 @@ Judgement calls that could carry hindsight:
 - rule T from the statements of results and the enterprise-wide tables rather than the five-year summaries (they agree on every year
   both report except the restated ones, the seam above).
 
+### CAT 2010-2013
+
+The same fact sheet, builder and engine, extended; the engine template and rule T are unchanged, and every 2008-2009 model rebuilds
+byte for byte (105 of 105).
+
+```bash
+python3 retro/build_cat.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for d in staging/retrospective/CAT/201[0-3]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series CAT
+for c in 2009-10-20 2010-01-01 2010-01-27 2010-02-19 2010-04-26 2010-06-14 2010-07-22 2010-10-21 2011-01-27 2011-02-23 2011-04-29 \
+         2011-05-23 2011-06-08 2011-07-22 2011-10-24 2012-01-26 2012-02-21 2012-04-25 2012-06-13 2012-07-25 2012-10-22 2013-01-28 \
+         2013-02-19 2013-04-22 2013-06-12 2013-07-24 2013-10-23 2014-01-01; do python3 retro/tools/firewall.py $c CAT; done
+```
+
+Read for the history: the statements of results, the five-year financial summaries and the segment tables of the FY2009-FY2012 10-Ks
+(Exhibit 13) and of the 8-K of 2011-05-23 that recasts FY2008-FY2010 for the 2011 segments; Items 1 and 1A of each 10-K. Read for the
+prints: the results releases of Q4 2009 to Q3 2013 (Exhibit 99.1), the dividend 8-Ks, and every other 8-K of January 2010 to December 2013
+by its items and exhibits. The filing list was fetched to 2014-01-27 and so includes the Q4 2013 release; nothing from it enters (the
+generator asserts that every source is published by 2013-10-23). All by Opus directly. The 25 new sources are `CT31`-`CT55` (numbered by
+publication date after the 2008-2009 ones, which keep theirs); 295 more strings were checked with `verbatim.py` against their own
+filings (565 in all) and 360 more raw figures found in the verified rows of their own sources (716 in all). Decided on 2026-11-11, before
+any 2010-2013 model was built or any 2010-2013 outcome computed (two citation fixes after the first build change no number: the EPS
+history's note now names 2009's company figure, and from the FY2010 10-K that figure cites the latest filing that prints it):
+
+- **Release timing.** Every results 8-K of Q4 2009 to Q3 2013 was accepted before the open on its release day (08:19-09:17 ET) except Q4
+  2010's (2011-01-27 09:56 ET, during the session; a Thursday, so dated 2011-01-28). Q1 2011 (2011-04-29) and Q2 2011 (2011-07-22) came on
+  Fridays and are dated the release day; the others on Mondays to Thursdays, so each week is dated the next trading day (2010-01-28,
+  2010-04-27, 2010-07-23, 2010-10-22, 2011-10-25, 2012-01-27, 2012-04-26, 2012-07-26, 2012-10-23, 2013-01-29, 2013-04-23, 2013-07-25,
+  2013-10-24). The FY2009 (2010-02-19 12:42 ET), FY2011 (2012-02-21 15:49 ET) and FY2012 (2013-02-19 12:26 ET) 10-Ks and the recast 8-K
+  (2011-05-23 12:24 ET) were accepted during the session; the FY2010 10-K (2011-02-22 17:15 ET) after the close, so dated 2011-02-23.
+- **History: each year from the latest filing that reports it,** a vintage per 10-K (2000-2009, 2001-2010, 2002-2011, 2003-2012) and one
+  for the recast; each Q4 print extends the history until the 10-K. The P/E window is the full ten years.
+  - **2009: $2.18, the company's figure excluding redundancy costs** (the ACN rule; GAAP $1.43): "Excluding redundancy costs of $0.75,
+    2009 profit was $2.18 per share" (Q4 2009 release), from the FY2009 10-K, the FY2010 10-K and the recast 8-K in turn; the FY2011 and
+    FY2012 10-Ks no longer print it, so the recast 8-K stays its source (the latest filing that publishes it).
+  - **2010: $4.15 as reported.** The Q1 2010 release gives the quarter excluding the $90 million tax charge for the U.S. health care
+    legislation ($0.50 against $0.36), but no filing gives a full-year figure excluding it, and nothing is derived (the XOM 1997 rule).
+  - **2011: $7.40 as reported, not the $7.79 "excluding the impact of the acquisition of Bucyrus".** That figure strips Bucyrus's
+    recurring results with the deal costs, so it does not exclude only one-offs (the CMCSA 2004-2005 and NKE FY2007 reading).
+  - **2012: $8.48 as reported,** with the $580 million ($0.87 a share) Siwei goodwill impairment in it: the Q4 2012 release and the FY2012
+    10-K give no figure excluding it, and none is derived.
+- **The 2011 segments.** From Q1 2011 the releases report sales and revenues by segment (Construction Industries, Resource Industries,
+  Power Systems, the Financial Products Segment) instead of the Machinery and Engines tables, and the 8-K of 2011-05-23 recasts
+  FY2008-FY2010 that way (a vintage of its own, the MSFT recast rule; totals, profit and shares unchanged). The company describes
+  Construction and Resource Industries as "supporting customers using machinery" and Power Systems as "supporting customers using
+  reciprocating engines, turbines" (the recast 8-K), so the Machinery signal reads Construction plus Resource Industries and the Engines
+  signal Power Systems (`lines_basis`), each against the year-ago quarter as the same release shows it; the 10-K line-of-business bridge
+  shows the four segments from the recast.
+- **Guides: the fiscal year only.** Each field from the latest guide for the current year that states it (the WMT rule); a dollar guide
+  against the last full year (the PFE rule); "about" and "near" levels are numbers, words and one-sided bounds give no field:
+  - FY2010 (current from the Q4 2009 print): sales "up 10 to 25 percent" and profit "about $2.50 per share at the midpoint" (Q4 2009
+    release); $38-42 billion and $2.50-3.25 (Q1 2010); $39-42 billion and $3.15-3.85 (Q2); $41-42 billion and $3.80-4.00 (Q3);
+  - FY2011: the Q3 2010 release's "approaching $50 billion" (words, never current); the Q4 2010 release's "to exceed $50 billion" (a
+    one-sided bound: no field, so BASE takes Q4 2010's sales growth of +62.2%) and "near $6.00 per share" (a number) to 2011-04-21;
+    $52-54 billion and $6.25-6.75 (Q1 2011, without Bucyrus, which had not closed); $56-58 billion and $6.25-6.75 including Bucyrus (Q2;
+    $54-56 billion and $6.75-7.25 without it); about $58 billion and about $6.75 (Q3; about $7.25 without it). Bucyrus closed on
+    2011-07-08 and is a business, not an announced one-off, so the figures including it are used (the reported basis of FY2011's $7.40);
+  - FY2012: the Q3 2011 release's preliminary "up 10 to 20 percent" from about $58 billion (superseded before FY2012 is current); $68-72
+    billion and about $9.25 (Q4 2011); $68-72 billion and about $9.50 (Q1 2012); $68-70 billion and about $9.60 (Q2); about $66 billion
+    and $9.00-9.25, with a logistics-sale gain in it (Q3). The 8-K of 2013-01-18 (Item 2.06) announces the Siwei impairment of about $0.87
+    a share in the fourth quarter; the guide is the figure without the announced item, so $9.125 stands on 2013-01-18 and 2013-01-25 (the
+    ACN rule);
+  - FY2013: $60-68 billion and $7.00-9.00 (Q4 2012); $57-61 billion and about $7.00 (Q1 2013); $56-58 billion and about $6.50 (Q2); about
+    $55 billion and about $5.50 (Q3). The Q3 2013 release's 2014 "flat with 2013 in a plus or minus 5 percent range" is never current.
+- **Dividends:** $0.44 a quarter from the 8-K of 2010-06-11 (16:53 ET, after the close, so 2010-06-14), $0.46 from 2011-06-08, $0.52 from
+  2012-06-13 and $0.60 from 2013-06-12. Buyback words are each release's own: none in the releases of Q4 2009 to Q4 2012 but the Q4 2010
+  release's "we do not expect to buy back stock in 2011" (Bucyrus); the resumption in the Q1 2013 release and the $1 billion purchases of
+  Q2 and Q3 2013 are quoted.
+- **Signals.** Unchanged: rule T over fiscal 1997-2006, the same five signals and weights. A year-ago quarter that is a loss (Q1 2009's
+  $(0.19)) makes profit per share growth the change over the loss's absolute value (Q1 2010: +289.5%, at XBULL either way).
+- **Durability: CYCLICAL from the FY2010 10-K** (2011-02-23). Its Item 1A first says "The demand for our products and services tends to
+  be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending,
+  lower corporate earnings and lower levels of government and business investment.", words no earlier CAT 10-K uses (the FY2009 10-K
+  has none: DURABLE to 2011-02-18). The company calls the demand for its own products cyclical, which is BKR's "Our business is cyclical"
+  reading, not AVGO's industry wording or SHW's "portions"; the FY2011 and FY2012 10-Ks repeat it. The kind changes the class label only.
+  No disruption theme is live, and the FY2009-FY2012 10-Ks name no climate, greenhouse-gas or electrification risk.
+- **Adds nothing:** the transcript 8-Ks (Item 7.01), the Tier 4 emissions 8-K (2010-02-11), the health care legislation 8-K (2010-03-24;
+  the charge is in the Q1 2010 print), the Electro-Motive (2010-06-01) and Bucyrus 8-Ks (2010-11-15, 2011-01-20, 2011-01-21, 2011-07-08),
+  the mining shovel and truck capacity plans (2010-06-17), the pricing actions (2010-09-30, 2011-03-18, 2011-09-30, 2013-09-30), the 2010
+  quarters by the new segments (2011-07-12; each 2011 release carries its own year-ago quarter), the Navistar agreement's termination
+  (2011-09-29), the repurchase program's extension (2011-12-16; no purchase stated), the mine safety 8-K (2012-06-26), the debt exchange
+  offers (2012-07-27 to 2012-08-28), the Siwei settlement (2013-05-17), the Gosselies restructuring (2013-12-23, after the last guide of
+  the batch), and the credit-facility, underwriting, officer, director, bylaw and annual-meeting 8-Ks.
+
+Controls: altering one value of each new print (its Machinery growth, and each Q4 print's full-year EPS), vintage (its last year's EPS,
+the recast's among them), guide (its first guided field) and dividend changes no date before its publication and changes the first weekly
+date on or after it (45 of 48; the other 3 are inert, never current on a built date: the Q3 2010 release's FY2011 words, the Q3 2011
+release's preliminary FY2012 growth and the Q3 2013 release's preliminary FY2014 range); the 36 controls of 2008-2009, rerun over all 314
+dates, give the same result (29, and 7 inert). A scan of the 314 models for the source ids, titles, notes, texts and figures of every
+later print, guide, vintage, dividend and source finds none before its publication (0 of 64,249 pairs, after dropping 997 pairs an earlier
+fact already carries: each release's "no stock repurchase stated in the release", guide levels a later guide repeats (the Q4 2010
+release's $6.00 as the Q2 2008 release's "about $6.00", the $68-72 billion of Q4 2011 in Q1 2012), the 10-Ks' repeated durability words,
+and Q3 2011's operating margin of 11.19%, Q2 2008's too). The shared code is untouched (the engine template, `retro_tool.py`,
+`taxonomy_eras.json`; the builder and fact sheet are CAT's own, and the firewall changes only in its CAT branch), so no other ticker's
+model can change. The firewall (as for 2008-2009, its planted print now also carrying the 2011 segments' raw figures and basis, with a
+later vintage of the other kind and planted segment and normalization notes) changes no model and leaves no planted text at any of the 28
+cutoffs above (94 to 314 dates each). All 209 dates pass `retro_tool run`; the 11 dates from 2010-10-22 to 2010-12-31 draw one warning
+(2011, in the Q3 2010 release's preliminary outlook), the 10 from 2011-10-25 to 2011-12-30 another (2012, the Q3 2011 release's) and the
+11 from 2013-10-24 to 2013-12-31 another (2014, the Q3 2013 release's).
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 102 dates, FAIR on 17, RICH on 90.** 2010: RICH 42, FAIR 10; 2011: CHEAP 44, FAIR 5, RICH 3; 2012: CHEAP on all 52; 2013:
+  RICH 45, CHEAP 6, FAIR 2. Legacy tiers: BUY 79, ACCUMULATE 36, WATCHLIST 32, AVOID 62. Robustness: 8 of 8 on 154 dates, 7 on 24, 6 on
+  12, 5 on 12, 4 or fewer on 7 (the FAIR dates around the Q4 2012 print among them).
+- **The window rolls over ten years** (AS_OF less ten years): median 13.4-14.7x, 10th percentile 10.5-11.9x, 75th 14.6-19.3x, 90th
+  17.3-23.1x. The calendar-year lows now include 2008's 5.8x (2008-10-27, on the $6.00 guide) and 2011's 9.5x and 2012's 8.3x, so the
+  floor falls from 11-12x (2010-2011) to 10x (from the Q4 2011 print).
+- **2010: the price ran ahead of the guide.** 27.8-30.9x FY09's $1.95 in January (97th-100th percentile), then 20.7-27.5x FY10's $2.50,
+  20.1-23.8x $2.875, 18.8-23.0x $3.50 and 20.1-24.2x $3.90 (76th-100th), 71-181% over the floor: RICH, FAIR only on the dips of the
+  Q2-Q3 2010 periods. BEAR is 2009's fall from the Q4 2009 print (-61.5%: $5.66 to $2.18), BULL the decade CAGR (+17.6% to +23.0%) or
+  BASE where BASE is higher, XBULL the 2003-2005 run (+60.9%/yr) and from the Q4 2011 print the 2009-2011 run (+84.2%/yr).
+- **2011: CHEAP from the Q4 2010 print.** "Near $6.00" put the price at 15.9-18.9x (61st-76th percentile), and with the sales outlook a
+  one-sided bound, BASE took Q4 2010's +62.2% sales growth (+62.9%/yr with the buyback; BULL and XBULL lift to it): CHEAP and BUY on all
+  13 dates to 2011-04-21, on two judgement calls together (below). The Q1 2011 guide ($6.25-6.75, sales +22.1% to +26.8%) gives
+  14.8-17.8x: CHEAP 7, FAIR 5; from the Q2 2011 print CHEAP on every date (11.4-16.2x; $73.84 on 2011-09-23, the 6th percentile).
+- **2012: CHEAP on every date,** at 8.5-12.5x the FY12 guide ($9.25 to $9.60, then $9.125), the 2nd-23rd percentile, from 25% over to 15%
+  under the floor; BASE +10.2% to +16.9%/yr with the sales guide.
+- **2013: RICH at a low multiple.** The Q4 2012 print guided $7.00-9.00 and sales of $60-68 billion (-8.9% to +3.2%): 10.1-12.3x (5th-26th
+  percentile), but BASE -2.3%/yr and the composite at 1.35 (profit per share -55.2% with the Siwei charge, the margin -491bp): RICH on 8
+  of 12, FAIR 2, CHEAP 2. From the Q1 2013 print the guide falls to $7.00, $6.50 and $5.50 and sales to -7.4% to -16.5%: BASE -9.9% to
+  -16.0%/yr puts the BASE price ($53-77) under the price ($82-91) and every signal sits at BEAR (composite 1.15): RICH on all 37 at
+  11.7-16.5x (18th-88th percentile). As in 2009, a falling guide reads as richness whatever the multiple. The BASE scenario prints as
+  "EPS +-9.9%/yr" (the display quirk above).
+- **The composite follows the cycle:** 1.15 on Q3 2009 and 1.30 on Q4 2009, 2.25 on Q1 2010, 3.00-3.70 from Q2 2010 to Q4 2011
+  (Machinery +48.5% to +87.8%, sales +30.5% to +62.2%), 2.45-2.80 in 2012 and 1.15-1.35 from Q4 2012.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- FY2009 at GAAP $1.43 instead of the company's $2.18: 19 classes (RICH to FAIR on 6 dates of 2010 and 7 of February-March 2013, FAIR to
+  CHEAP on 4 of 2011 and 2 of 2013) and 15 tiers;
+- 2011 excluding Bucyrus (the Q2 and Q3 2011 guides' $6.75-7.25 and about $7.25 with sales of $54-56 and about $56 billion; FY2011
+  $7.79): no class, 5 tiers;
+- "near $6.00" read as words (FY2010's $4.15 stands to 2011-04-21): 11 classes (CHEAP to FAIR on 9 dates, to RICH on 2) and 13 tiers;
+- "to exceed $50 billion" read as a $50 billion level (+17.4% on FY10's $42.588B instead of Q4 2010's +62.2%): 13 classes (CHEAP to FAIR
+  on 9, to RICH on 4) and 13 tiers (BUY to WATCHLIST or AVOID);
+- Machinery as Construction Industries alone: 4 classes (2013-03-28 to 2013-04-19, FAIR or CHEAP to RICH), no tier; each segment line at
+  the company's sales growth (as if no line were mapped): no class, no tier;
+- DURABLE instead of CYCLICAL: no class, no tier; the labels read COMPOUNDER AT LOW PRICE, QUALITY, NEUTRALLY VALUED and QUALITY, PRICED
+  FOR PERFECTION;
+- FY2012 excluding the Siwei impairment ($9.35, derived, as the company publishes no such figure): 1 class (2013-04-05 CHEAP to FAIR) and
+  2 tiers;
+- every signal at its BEAR value: 46 classes (FAIR to RICH on the 10 FAIR dates of 2010, CHEAP or FAIR to RICH on 26 of 2011, CHEAP to
+  FAIR or RICH on 5 of 2012 and 5 of 2013); at its XBULL value: 40 classes, all in 2013 (RICH to CHEAP on 22, to FAIR on 16, FAIR to
+  CHEAP on 2), and 13 tiers.
+The CHEAP calls from the Q2 2011 print to the Q3 2012 print rest on the price against the guided EPS and the floor and hold under every
+encoding but the BEAR signals. The 13 CHEAP dates of early 2011 rest on the two readings of the Q4 2010 outlook. The RICH calls of 2013
+rest on the falling guides and on the signals at BEAR together: with the signals at XBULL, 38 of the 45 turn CHEAP or FAIR. 2009's
+figure moves the dates nearest the class boundaries.
+
+Judgement calls that could carry hindsight:
+- the "to exceed $50 billion" bound read as no field, so BASE takes Q4 2010's +62.2% sales growth, and "near $6.00" read as a number:
+  together they make the 13 CHEAP dates of early 2011 (either one alone moves 11 or 13);
+- 2009 at the company's $2.18 rather than GAAP $1.43 (19 classes);
+- the 2011 segments read as Machinery (Construction plus Resource Industries) and Engines (Power Systems) (4 classes with Construction
+  Industries alone, none with no line mapped);
+- FY2011 and the 2011 guides including Bucyrus (no class); FY2012 with the Siwei impairment in it (1 class); the FY2012 guide standing
+  without the announced impairment for two dates;
+- CYCLICAL from the FY2010 10-K's own words (the class label only); profit per share growth over a loss's absolute value (one print);
+- the signals themselves, chosen by a builder who knows the 2011-2013 slowdown: at BEAR they move 46 classes, at XBULL 40 (all 2013).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -13115,9 +13277,11 @@ What the gates enforce:
   stands through 2017 (the WMT, LOW and PEP reading) ("CMCSA 2014-2017").
   CAT in 2008 carries none: no theme in the registry is live for a maker of construction and mining equipment, engines and turbines
   (ENERGY_TRANSITION, scoped to oil, gas and coal reserves and refining, from 2015-12-12; EV, scoped to ICE powertrains, from 2020;
-  OFFSHORE to IT services), so its watch list is empty through 2009 ("CAT"). Its FY2006-FY2008 10-Ks tie demand to "the energy and mining
-  industries" and to "infrastructure spending, housing starts, and commercial construction" and name no climate or electrification risk;
-  that is a cycle, not a substitution theme, and the words stay in the durability "why".
+  OFFSHORE to IT services), so its watch list is empty through 2013 ("CAT", "CAT 2010-2013"). Its FY2006-FY2008 10-Ks tie demand to "the
+  energy and mining industries" and to "infrastructure spending, housing starts, and commercial construction", and the FY2009-FY2012
+  10-Ks to the energy and mining industries likewise, naming no climate or electrification risk; that is a cycle, not a substitution
+  theme, and the words stay in the durability "why". From the FY2010 10-K (2011-02-23) the company calls the demand for its own products
+  cyclical ("The demand for our products and services tends to be cyclical"), so CAT is CYCLICAL from that date (the BKR reading).
 
 ## Workflow
 
