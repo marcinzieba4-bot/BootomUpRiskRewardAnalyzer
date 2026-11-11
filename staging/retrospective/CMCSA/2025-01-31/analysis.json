@@ -1,0 +1,318 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CMCSA",
+ "company": "Comcast Corporation",
+ "as_of": "2025-01-31",
+ "price_date": "2025-01-31",
+ "price": 33.66,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cable signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a global media and technology company that reaches customers, viewers and guests worldwide through the connectivity and platforms services we provide and the content and experiences we create' (FY2023 10-K); 'As consumers increasingly turn to DTC streaming and other OTT services in lieu of our linear video services, which continue to experience accelerated net customer losses, the number of video customers we have, the related video revenues and the amount of subscriber fees we receive for our linear television networks from other video service providers each decrease'; 'Weak economic conditions may have a negative impact on our businesses'; STREAMING is live (from 2015-08-04) and its consumer-behaviour risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Comcast",
+  "theme_watch": [
+   {
+    "theme": "STREAMING",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Comcast's own FY2023 10-K says 'Changes in consumer behavior continue to adversely affect our businesses and challenge existing business models. As consumers increasingly turn to DTC streaming and other OTT services in lieu of our linear video services, which continue to experience accelerated net customer losses, the number of video customers we have, the related video revenues and the amount of subscriber fees we receive for our linear television networks from other video service providers each decrease.' At the same time it offers its own streaming services: 'despite our efforts to adapt our video service offerings and offer new services, such as Peacock and NOW.'. The stock trades at 8.1x FY25E — a discount to its own history. The theme registry dates the market's pricing of streaming to 2015-08-04 (Disney lowers cable-network outlook on ESPN subscriber losses; media stocks sell off), evidence that names Disney's networks, not Comcast. Re-file as DISRUPTION_EXPOSED (STREAMING) only if dated evidence shows the market pricing streaming substitution of Comcast's video customers or networks specifically."
+   }
+  ],
+  "evidence": [
+   "CM96"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are a global media and technology company that reaches customers, viewers and guests worldwide through the connectivity and platforms services we provide and the content and experiences we create' (FY2023 10-K); 'As consumers increasingly turn to DTC streaming and other OTT services in lieu of our linear video services, which continue to experience accelerated net customer losses, the number of video customers we have, the related video revenues and the amount of subscriber fees we receive for our linear television networks from other video service providers each decrease'; 'Weak economic conditions may have a negative impact on our businesses'; STREAMING is live (from 2015-08-04) and its consumer-behaviour risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Comcast. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.11x; -38% to EPP floor; model-vs-market gap +0.95; conservative 2yr +117%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.11,
+  "ratio_b_fmt": "0.11x",
+  "epp": 53.82,
+  "epp_gap_pct": -37.5,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.9,
+  "sca": 0.156,
+  "adj_composite": 2.256,
+  "market_composite": 1.31,
+  "adj_gap": 0.95,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 117.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.69,
+    "pe": 10.2,
+    "price": 27,
+    "desc": "EPS -19.4%/yr (worst year FY14-FY24 ex-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.57,
+    "pe": 16.7,
+    "price": 76,
+    "desc": "EPS +5.1%/yr (Q4 revenues + margin + buyback); P/E at its 10-yr ex-FY22 median"
+   },
+   "BULL": {
+    "eps": 5.1,
+    "pe": 18.6,
+    "price": 95,
+    "desc": "EPS +10.9%/yr (FY14-FY24 ex-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.07,
+    "pe": 19.5,
+    "price": 118,
+    "desc": "EPS +21.1%/yr (best 2-yr run FY14-FY24 ex-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 0.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 1.22,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.15,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 0.77,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.09,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 0.99,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 0.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 1.25,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -49.2,
+   "adj_gap": 0.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -37.5,
+   "adj_gap": 1.16,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 117.2,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CMCSA (retrospective, 2025-01-31) ◉ BUY — Ratio B 0.11x (19.8% downside to Bear $27 / +182.2% upside to Bull $95) | Adj composite 2.26 vs market 1.31: gap +0.95 [UNDERVALUED] | -37% above the EPP floor $54 (13x FY25E $4.14) | Conservative 2-yr case: +117.2% total (+58.6%/yr) | At 8.1x FY25E the 15% hurdle price $45 sits at or below the BASE case; video subscribers -11.2% in Q4 2024, forward revenues +2.1% (no FY25 revenue guide in numbers, Q4 2024 revenue growth); streaming is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "CM96",
+   "published": "2024-01-31",
+   "filed": "2024-01-31 15:42 ET (during the session)",
+   "title": "Comcast FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-24-000011.txt",
+   "supports": "statements of income 2021-2023; diluted shares 4,148M, 4,430M, 4,654M; domestic video customers 2021-2023; segment revenues (Connectivity & Platforms and Content & Experiences); the $1.24 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM95",
+   "published": "2024-01-25",
+   "filed": "2024-01-25 07:09 ET (before the open)",
+   "title": "Comcast Q4 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-24-000005.txt",
+   "supports": "Q4 and full-year 2023 statement of income; GAAP EPS $3.71; Adjusted EPS $3.98; domestic video customers; capital expenditures; the dividend raised to $0.31 a quarter"
+  },
+  {
+   "id": "CM91",
+   "published": "2023-02-03",
+   "filed": "2023-02-03 12:15 ET (during the session)",
+   "title": "Comcast FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-23-000010.txt",
+   "supports": "statements of income 2020-2022; diluted shares 4,430M, 4,654M, 4,624M; video customers 2020-2022; segment revenues; the $1.16 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM86",
+   "published": "2022-02-02",
+   "filed": "2022-02-02 15:15 ET (during the session)",
+   "title": "Comcast FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-22-000009.txt",
+   "supports": "statements of income 2019-2021 (no selected financial data); diluted shares 4,654M, 4,624M, 4,610M; video customers 2019-2021; segment revenues; the $1.08 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM81",
+   "published": "2021-02-04",
+   "filed": "2021-02-03 18:08 ET (after the close)",
+   "title": "Comcast FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-21-000008.txt",
+   "supports": "selected financial data 2016-2020; diluted shares 4,624M, 4,610M, 4,640M; video customers 2018-2020; segment revenues; the $1.00 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM76",
+   "published": "2020-01-31",
+   "filed": "2020-01-30 16:41 ET (after the close)",
+   "title": "Comcast FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-20-000008.txt",
+   "supports": "selected financial data 2015-2019; diluted shares 4,610M, 4,640M, 4,786M; video customers 2017-2019; segment revenues; the $0.92 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM71",
+   "published": "2019-02-01",
+   "filed": "2019-01-31 17:00 ET (after the close)",
+   "title": "Comcast FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-19-000005.txt",
+   "supports": "selected financial data 2014-2018 (2016 and 2017 restated for the new revenue recognition standard); diluted shares 4,640M, 4,786M, 4,875M; video customers 2016-2018; segment revenues, Sky from the fourth quarter of 2018; the $0.84 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM70",
+   "published": "2019-01-23",
+   "filed": "2019-01-23 07:05 ET (before the open)",
+   "title": "Comcast Q4 2018 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-19-002843.txt",
+   "supports": "Q4 and full-year 2018 statement of income; EPS excluding adjustments, 2018 $2.55 and 2017 $2.03 as restated (GAAP $2.53 and $4.75); video customers; capital expenditures; the dividend raised to $0.21 a quarter; Sky consolidated from the fourth quarter of 2018"
+  },
+  {
+   "id": "CM66",
+   "published": "2018-02-01",
+   "filed": "2018-01-31 16:35 ET (after the close)",
+   "title": "Comcast FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-18-000004.txt",
+   "supports": "selected financial data 2013-2017 (post-split); diluted shares 4,786M, 4,875M, 5,035M; video customers 2015-2017; segment revenues; the $0.76 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM65",
+   "published": "2018-01-24",
+   "filed": "2018-01-24 07:05 ET (before the open)",
+   "title": "Comcast Q4 2017 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-18-003683.txt",
+   "supports": "Q4 and full-year 2017 statement of income; EPS excluding adjustments, 2017 $2.06 and 2016 $1.74 (GAAP $4.75, with $12.7 billion of net income tax benefits from the 2017 tax reform legislation, and $1.78); video customers; capital expenditures; the dividend raised to $0.19 a quarter"
+  },
+  {
+   "id": "CM61",
+   "published": "2017-02-03",
+   "filed": "2017-02-03 14:34 ET (during the session)",
+   "title": "Comcast FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-17-030512.txt",
+   "supports": "selected financial data 2012-2016 (pre-split); diluted shares 2,438M, 2,518M, 2,620M; video customers 2014-2016; segment revenues; the $1.26 pre-split annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM60",
+   "published": "2017-01-26",
+   "filed": "2017-01-26 07:05 ET (before the open)",
+   "title": "Comcast Q4 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-17-004122.txt",
+   "supports": "Q4 and full-year 2016 statement of income (pre-split); EPS excluding adjustments, 2016 $3.48 and 2015 $3.25 (GAAP $3.57 and $3.24); video customers; capital expenditures; the two-for-one stock split; the dividend raised to $1.26 a year pre-split ($0.1575 a quarter post-split)"
+  },
+  {
+   "id": "CM55",
+   "published": "2016-02-03",
+   "filed": "2016-02-03 07:05 ET (before the open)",
+   "title": "Comcast Q4 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-16-093384.txt",
+   "supports": "Q4 and full-year 2015 statement of income; EPS excluding adjustments, 2015 $3.25 and 2014 $2.93 (GAAP $3.24 and $3.20); video customers; capital expenditures; the dividend raised to $0.275 a quarter"
+  },
+  {
+   "id": "CM97",
+   "published": "2024-04-25",
+   "filed": "2024-04-25 07:05 ET (before the open)",
+   "title": "Comcast Q1 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-24-000028.txt",
+   "supports": "Q1 2024 statement of income; video customers; Adjusted EBITDA; capital expenditures; diluted shares"
+  },
+  {
+   "id": "CM98",
+   "published": "2024-07-23",
+   "filed": "2024-07-23 07:11 ET (before the open)",
+   "title": "Comcast Q2 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-24-000046.txt",
+   "supports": "Q2 2024 statement of income; video customers; Adjusted EBITDA; capital expenditures; diluted shares"
+  },
+  {
+   "id": "CM99",
+   "published": "2024-10-31",
+   "filed": "2024-10-31 07:06 ET (before the open)",
+   "title": "Comcast Q3 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-24-000054.txt",
+   "supports": "Q3 2024 statement of income; video customers; Adjusted EBITDA; capital expenditures; diluted shares"
+  },
+  {
+   "id": "CM100",
+   "published": "2025-01-30",
+   "filed": "2025-01-30 07:05 ET (before the open)",
+   "title": "Comcast Q4 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001166691-25-000006.txt",
+   "supports": "Q4 and full-year 2024 statement of income; GAAP EPS $4.14, with a $1.9 billion income tax benefit; Adjusted EPS $4.33; domestic video customers; capital expenditures; the dividend raised to $0.33 a quarter"
+  },
+  {
+   "id": "CM24",
+   "published": "2007-02-01",
+   "filed": "2007-02-01 07:06 ET (before the open)",
+   "title": "Comcast 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-017749.txt",
+   "supports": "a three-for-two stock split in the form of a 50% stock dividend payable on February 21, 2007 (the stock traded ex-dividend from February 22, 2007, FY2006 Annual Report)"
+  },
+  {
+   "id": "W0",
+   "published": "2025-01-31",
+   "title": "Yahoo Finance daily prices, CMCSA and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CMCSA/history",
+   "supports": "close $33.66 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY22 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

@@ -36,6 +36,11 @@ stands for 2017 ($2.06, restated to $2.03 by the Q4 2018 release, 'restates') an
 amortization of acquisition-related intangible assets, which recurs, so 2019 and 2020 are GAAP (the 2004-2005 rule). Still no outlook
 in numbers; Sky enters the growth as published from the fourth quarter of 2018.
 
+From 2022 (retro/README.md, "CMCSA 2022-2026"): 2022 is excluded as a distorted year (the Sky impairments; reported EPS under half the
+EPS without its listed items, no figure excluding only them), in the PFE encoding ('eps_excluded', an 'excluded_note' on the Q4 2022
+print's 'fy_actual'; its days leave the P/E window); the 2026 separation of Versant is a distribution ('distributions', the MAR and PFE
+rule: Yahoo's factor is undone for the days before it); from the FY2023 10-K the share line counts the Connectivity & Platforms segments.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open except Q1 2011's (after the close, dated
 the next trading day); only Q3 2012's came on a Friday.
@@ -141,20 +146,42 @@ def build(as_of, facts, raw, spx, engine, out):
     yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
                     for v in chart.get("events", {}).get("splits", {}).values()}
     assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
+    # a distribution (the 2026-01-02 separation of Versant, one Versant share for every 25 Comcast shares) is not a split: Yahoo books
+    # it as a 1067:1000 split on 2026-01-05, so from that date its factor is undone for the days before it and every price stays as
+    # traded (the MAR and PFE 'distributions' rule; the drop stays in the series); per-share facts are not restated
+    for x in facts.get("distributions", []):
+        ev = [v for v in chart.get("events", {}).get("splits", {}).values()
+              if dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat() == x["effective"]]
+        assert len(ev) == 1 and ev[0]["numerator"] / ev[0]["denominator"] == x["yahoo_factor"], (x["effective"], "Yahoo's factor")
+        if x["effective"] <= as_of:
+            px = {d: (tuple(v * x["yahoo_factor"] for v in hlc) if d < x["effective"] else hlc) for d, hlc in px.items()}
     for v in facts["history_vintages"]:            # the fiscal calendar the filings state must match the rule above
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
+    # on_basis (the shared split helper) divides every Q4 print's full-year EPS; an excluded year has none, so a NaN stands in for it
+    # there and None comes back after (the NKE, XOM and PFE encoding; no split follows an excluded year in the fact sheet)
+    held = {p["quarter"] for p in facts["prints"] if "fy_actual" in p and p["fy_actual"]["eps_normalized"] is None}
+    facts = {**facts, "prints": [{**p, "fy_actual": {**p["fy_actual"], "eps_normalized": math.nan}} if p["quarter"] in held else p
+                                 for p in facts["prints"]]}
     facts, split_ids = on_basis(facts, as_of)
+    for p in facts["prints"]:
+        if p["quarter"] in held:
+            p["fy_actual"]["eps_normalized"] = None
+            assert not any(p["published"] < sp["effective"] <= as_of for sp in facts.get("splits", [])), \
+                (as_of, "a split after an excluded year: decide how its GAAP figure is restated first")
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
+    # a year excluded from the EPS history ('eps_excluded': a year distorted by one-offs with no published figure excluding only them;
+    # retro/README.md, "CMCSA 2022-2026") is still reported (the NKE FY2018, XOM FY2020 and PFE 2023 rule)
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
     # prints published by AS_OF that report a fiscal year after the history (a Q4 print reports the year just ended, so it
     # stays in scope after the 10-K that follows it)
-    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
     # no disruption theme in taxonomy_eras.json is live for a cable operator before STREAMING (scoped to linear TV networks and pay-TV
@@ -173,10 +200,12 @@ def build(as_of, facts, raw, spx, engine, out):
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
+        if a and a["fy"] not in reported(h):          # the 10-K vintage, once out, wins
             y = str(a["fy"])
+            if a["eps_normalized"] is None:           # an excluded year: reported, but out of the EPS history
+                h.update(eps_excluded={**h.get("eps_excluded", {}), y: a["excluded_note"]})
             h.update(fy_label=a["fy_label"],
-                     eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
+                     eps_normalized={**h["eps_normalized"], **({y: a["eps_normalized"]} if a["eps_normalized"] is not None else {})},
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -204,7 +233,9 @@ def build(as_of, facts, raw, spx, engine, out):
     assert i > 0, (as_of, "the fact sheet needs the print before the latest one")
     prev = (public[i - 1]["video_pct"], public[i - 1]["quarter"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
-    cur_fy = max(eps_hist) + 1
+    excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
+    cur_fy = max(reported(h)) + 1
+    last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     last_rev = rev[max(rev)]
@@ -213,8 +244,9 @@ def build(as_of, facts, raw, spx, engine, out):
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
     gr = stated("rev_guide_pct")
-    eps_now = eps_hist[cur_fy - 1]           # Comcast guides no EPS: the last full year's EPS stands (rollover rule)
-    eps_label = f"{fy_e}: no EPS guide, {fy_now[:2]}{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
+    eps_now = eps_hist[last_fy]              # Comcast guides no EPS: the last full year's EPS stands (rollover rule)
+    eps_label = f"{fy_e}: no EPS guide, {fy_now[:2]}{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
+        f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fy_prev_s = f"FY{max(rev) % 100:02d}"
     if gr:                                   # the fiscal-year revenue growth range, as the release states it (pro forma)
         fwd = [float(v) for v in gr["rev_guide_pct"]]
@@ -260,9 +292,12 @@ def build(as_of, facts, raw, spx, engine, out):
     eps = {**eps_hist, cur_fy: eps_now}                                # + current-FY EPS, for the P/E series
     fy = lambda d: min(fiscal_year(d), cur_fy)     # a day past the last guided year keeps that year's EPS
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    # an excluded year's own days leave the window (the r2 rule's "the window starts after it", for a year that is not the first)
+    gone = sorted({fy(d) for d in window} & set(excluded))
+    window = [d for d in window if fy(d) not in excluded]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
-    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
+    window_label = ("10-yr" if years > 9.9 else f"{years:.1f}-yr") + "".join(f" ex-FY{y % 100:02d}" for y in gone)
     pe = {d: px[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -327,7 +362,8 @@ def build(as_of, facts, raw, spx, engine, out):
     company, exchange = h["company"], h["exchange"]
     groups = [tuple(g) for g in h["groups"]]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
-           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events])
+           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events]
+           + [x["source"] for x in facts.get("distributions", []) if x["effective"] <= as_of])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, CMCSA and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/CMCSA/history",
@@ -342,7 +378,10 @@ def build(as_of, facts, raw, spx, engine, out):
     volumes = (f"video subscribers {r['video_k']:,}K against {r['video_prior_k']:,}K a year earlier ({latest['video_pct']:+.2f}%), "
                f"as the release shows them; capital expenditures ${r['capex_m']:,}M against ${r['capex_prior_m']:,}M"
                + (f"; {latest['note']}" if latest.get("note") else ""))
-    cable = next(v for n, v, _ in groups if n in ("Cable", "Cable Communications")) / sum(v for _, v, _ in groups) * 100
+    cable_names = [n for n, _, _ in groups if n in ("Cable", "Cable Communications")]
+    cable_word = "cable" if cable_names else "connectivity & platforms"          # the segments from the FY2023 10-K
+    cable_names = cable_names or [n for n, _, _ in groups if "Connectivity" in n]
+    cable = sum(v for n, v, _ in groups if n in cable_names) / sum(v for _, v, _ in groups) * 100
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -417,7 +456,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, cable {cable:.0f}% of segment revenues, video subscribers {h['prev_fy_video_pct']:+.2f}% ({h['prev_fy_video_note']}); {latest['quarter'].split()[0]} operating cash flow margin {latest['ocf_margin']:.2f}% ({latest['ocf_margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, {cable_word} {cable:.0f}% of segment revenues, video subscribers {h['prev_fy_video_pct']:+.2f}% ({h['prev_fy_video_note']}); {latest['quarter'].split()[0]} operating cash flow margin {latest['ocf_margin']:.2f}% ({latest['ocf_margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['fcf_label']} year-end cash and current investments ${h['cash_b']:.2f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}

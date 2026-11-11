@@ -1,0 +1,158 @@
+
+════════════════════════════════════════════════════════════════════════
+  CMCSA  ·  Comcast Corporation  ·  $42.80  ·  RETROSPECTIVE as of 2024-03-01
+  Signal: ◉ BUY   Ratio B: 0.33x   Adj gap: +0.45  [MODESTLY UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2024-03-01; latest print Q4 2023 (Jan 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E revenues, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Residential Connectivity  $    70.4  $  70.4  $  79.9      +0.0      +9.5
+    -0.6% revenues in FY23
+  Business Services Connec  $     9.1  $   9.1  $  10.3      +0.0      +1.2
+    +4.9% revenues in FY23
+  Media                     $    24.8  $  24.8  $  28.2      +0.0      +3.4
+    -5.1% revenues in FY23
+  Studios                   $    11.4  $  11.4  $  12.9      +0.0      +1.5
+    -5.2% revenues in FY23
+  Theme Parks               $     8.8  $   8.8  $   9.9      +0.0      +1.1
+    +18.6% revenues in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   124.5  $ 124.5  $ 141.2      +0.0     +16.7
+  FY2024E = FY23 $121.57B × (1 + 2.3%: no FY24 revenue guide in numbers, Q4 2023 revenue growth, applied to the year); split pro rata to FY23 segment revenues before headquarters, other and eliminations (FY2023 10-K)
+  Q4 2023 (Jan 25): revenues $31.25B +2.3%; video subscribers -12.6%;
+  operating cash flow margin 25.64% (-54.9bp); operating margin 14.35% (-48.0bp);
+  capital expenditures 10.62% of revenues (-104.2bp); EPS $0.81 vs $0.70
+  video subscribers 14,106K against 16,142K a year earlier (-12.61%), as the release shows them; capital expenditures $3,320M against $3,564M; Adjusted EBITDA includes $527 million of severance and other
+  FY24: no guide in numbers yet
+
+  FY2024E EPS check:  $124.5B × 16.8% pre-tax × (1−26.2%) ÷ 4.039B  =  $3.83  (FY2024E: no EPS guide, FY23's $3.71 stands)
+  FY2026E BEAR check: $124.5B × 16.8% ÷ 3.829B  =  $4.04  (scenario $2.41)
+  FY2026E BULL check: $141.2B × 17.2% ÷ 3.829B  =  $4.69  (scenario $4.56)
+  Every 1pp of pre-tax margin ≈ $0.23 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Video subscriber growth            -10.0%   ≥-1.0%    ≥8.0%  ≥151.0%    -12.6%  ⚠ BEAR  █░░░
+  Revenue growth                      +0.0%   ≥10.0%   ≥19.0%  ≥126.0%     +2.3%  ⚠ BEAR  █░░░
+  Operating cash flow margin change  -510.0bp  ≥-230.0bp  ≥50.0bp  ≥220.0bp   -54.9bp  ◦ BASE  ██░░
+  Capital intensity change          +1270.0bp  ≤620.0bp  ≤-30.0bp  ≤-1150.0bp  -104.2bp  ▲ BULL  ███░
+  Operating margin change           -2440.0bp  ≥-1210.0bp  ≥10.0bp  ≥3370.0bp   -48.0bp  ◦ BASE  ██░░
+  Streaming: net effect on video demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   1.65 / 4.00  (back-solved from $43 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.10  →  Gap +0.45  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 revenues +0.1%, connectivity & platforms 64% of segment revenues, video subscribers -12.61% (video customers 14,106,000 against 16,142,000 (FY2023 10-K table)); Q4 operating cash flow margin 25.64% (-54.9bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 11.5x FY24E vs a 17.5x 10-yr ex-FY22 median (8th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY24 revenue guide in numbers, Q4 2023 revenue growth +2.3% vs a 8.3% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY23 year-end cash and current investments $6.21B, FY23 free cash flow $12.96B, dividend $1.24 a year, 262 million shares of Class A common stock repurchased in 2023 for $11.0 billion (FY2023 10-K)  (+0.30 × 15%  =  +0.045)
+    +  Own streaming: Peacock and NOW, its own streaming services  (+0.20 × 10%  =  +0.020)
+    -  Online video competition (FY2023 10-K): linear video services 'continue to experience accelerated net customer losses' as consumers turn to streaming  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Video subscriber growth             -12.6%    -10.0%   +2.6%  DBS and phone-company video take share
+  Revenue growth                       +2.3%     +0.0%   -2.3%  Housing, advertising and price pressure
+  Operating cash flow margin change   -54.9bp  -510.0bp  -455.1bp  Programming costs outrun price increases
+  Capital intensity change          -104.2bp  +1270.0bp  +1374.2bp  Boxes and network spend rise with churn
+  Operating margin change            -48.0bp  -2440.0bp  -2392.0bp  Depreciation and costs on slower sales
+  Streaming: net effect on video demand    +2.0/4    +1.0/4  -1.0/4  Online video takes video customers an…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$42  (model)  /  $29 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: video subscriber growth went from -12.6% (Q3 2023) to -12.6% (Q4 2023);
+  the bear case needs video losses that revenue growth (+2.3% now) and the
+  operating cash flow margin no longer absorb. DBS, phone-company and online video services are the competition the 10-K names;
+  pricing and Internet and business services growth must cover the video losses.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.71  (FY2024E: no EPS guide, FY23's $3.71 stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2014 16.4x, 2015 16.4x, 2016 15.4x, 2017 17.0x, 2018 12.0x, 2019 12.1x, 2020 14.2x, 2021 15.7x, 2023 9.5x, 2024 11.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $52/share
+  Current $43 vs Updated EPP $52:  -18%  ✓ BELOW panic floor — deep-value zone
+  Bear $29 vs Updated EPP $52:  -44%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Video subscriber growth                     -1.0      +11.6   BASE floor (vs -13 now)
+  Revenue growth                              10.0       +7.7   BASE floor (vs +2 now)
+  Operating cash flow margin change          -230.0     -175.1   BASE floor (vs -55 now)
+  Capital intensity change                   620.0     +724.2   BASE floor (vs -104 now)
+  Operating margin change                  -1210.0    -1162.0   BASE floor (vs -48 now)
+  Streaming: net effect on video demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.71 × (1+2.9%)² = $3.93
+  At 17x P/E (conservative):  $67/share
+  + Cumul. dividends (2yr):  +$2.55/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $67  (▲24 from $43)
+  Conservative total return:  +62% over 2yr  = +31%/yr
+
+  At 11.5x the multiple is already near its 17x median, so the conservative
+  case is a growth question: breakeven at 17x needs FY2026E EPS of $2.37,
+  i.e. -20.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $34.63  –  $47.46  (at 64th pct of range)
+  Annual dividend:      $1.24/share  (yield 2.9%)
+  Realized vol (1yr):   24% annualized
+  Beta vs broad market: 0.86
+  1-sigma range (1yr):  $33  –  $53  ($43 ± 24%)
+  2-sigma range (1yr):  $23  –  $63
+  ────────────────────────────────────────────────────────────
+  Bear $29 requires:  ~1.4σ price move  (within normal vol range)
+  The largest U.S. cable operator with a 0.9 beta: the stock is +21% off its March
+  low while video subscriber growth went from -12.6% (Q3 2023) to -12.6% (Q4 2023).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.41  11.9x  $     29    33.0%     40.7%    -7.7pp  EPS -19.4%/yr (worst year FY14-FY23 ex-FY22, capped at 0%); P/E to its 10th pct
+  BASE        4.08  17.5x  $     71    50.0%     44.2%    +5.8pp  EPS +4.9%/yr (Q4 revenues + margin + buyback); P/E at its 10-yr ex-FY22 median
+  BULL        4.56  18.7x  $     85    14.3%     12.7%    +1.7pp  EPS +10.9%/yr (FY14-FY23 ex-FY22 CAGR); P/E holds its 75th pct
+  XBULL       5.44  19.5x  $    106     2.7%      2.4%    +0.3pp  EPS +21.1%/yr (best 2-yr run FY14-FY23 ex-FY22); P/E at its 90th pct
+
+  Proxy EV (2yr): $60  /  Market EV: $57  /  Current: $43
+  Conservative EV (2yr, ④): $67 + $2.55 divs = $69 total value
+  Downside (→ Bear $29): 32.2%   Upside (→ Bull $85): 98.6%   Ratio B 0.33x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $43 the market needs $57 in two years —
+  at or below the BASE case. That is a market composite of 1.65 against a model
+  read of 2.10: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.33x     -18%    +0.45  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.15x     -18%    +0.61  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.42x     -18%    +0.22  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.28x     -18%    +0.50  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.37x     -18%    +0.40  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.33x     -18%    +0.75  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.33x     -32%    +0.45  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.33x     -18%    +0.57  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2024 print (late April) — the next read on video subscribers (-12.6% now) and the guide
+  (2) Operating cash flow margin — -54.9bp in Q4 2023: programming costs against pricing, what must hold if subscribers do not
+  (3) A FY24 revenue guide in numbers — none yet
+  (4) Capital intensity — capital expenditures 10.6% of revenues in Q4 2023 (-104.2bp): set-top boxes and network against free cash flow
+  (5) Capital return at 12x — In the fourth quarter of 2023, dividends of $1.2 billion paid and 81.9 million common shares repurchased for $3.5 billion; the dividend raised 6.9% to $1.24 a year: management's own read of the multiple
+  ◉ BUY  |  EPP floor $52  |  ADD below ~$60  |  TRIM above $85
+════════════════════════════════════════════════════════════════════════
+
