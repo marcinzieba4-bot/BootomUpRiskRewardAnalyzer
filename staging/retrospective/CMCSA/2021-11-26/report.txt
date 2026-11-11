@@ -1,0 +1,160 @@
+
+════════════════════════════════════════════════════════════════════════
+  CMCSA  ·  Comcast Corporation  ·  $51.10  ·  RETROSPECTIVE as of 2021-11-26
+  Signal: ✕ AVOID   Ratio B: 2.33x   Adj gap: -1.16  [OVERVALUED]
+  Point-in-time: 21 sources, latest published 2021-11-26; latest print Q3 2021 (Oct 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Cable Communications      $    69.1  $  69.1  $  79.2      +0.0     +10.1
+    +3.4% revenues in FY20
+  Cable Networks            $    12.5  $  12.5  $  14.3      +0.0      +1.8
+    -5.8% revenues in FY20
+  Broadcast Television      $    11.8  $  11.8  $  13.5      +0.0      +1.7
+    -0.2% revenues in FY20
+  Filmed Entertainment      $     6.1  $   6.1  $   7.0      +0.0      +0.9
+    -18.7% revenues in FY20
+  Theme Parks               $     2.1  $   2.1  $   2.4      +0.0      +0.3
+    -68.9% revenues in FY20
+  Sky                       $    21.4  $  21.4  $  24.5      +0.0      +3.1
+    -3.3% revenues in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   123.0  $ 123.0  $ 140.9      +0.0     +17.9
+  FY2021E = FY20 $103.56B × (1 + 18.7%: no FY21 revenue guide in numbers, Q3 2021 revenue growth, applied to the year); split pro rata to FY20 segment revenues before headquarters, other and eliminations (FY2020 10-K)
+  Q3 2021 (Oct 28): revenues $30.30B +18.7%; video subscribers -7.7%;
+  operating cash flow margin 29.56% (-13.7bp); operating margin 17.99% (+202.4bp);
+  capital expenditures 7.07% of revenues (-227.9bp); EPS $0.86 vs $0.44
+  video subscribers 18,549K against 20,094K a year earlier (-7.69%), as the release shows them; capital expenditures $2,142M against $2,387M; includes $1.8 billion of revenue from the Tokyo Olympics in the Media segment (Media revenue excluding them +9.2%)
+  FY21: no guide in numbers yet
+
+  FY2021E EPS check:  $123.0B × 13.6% pre-tax × (1−23.9%) ÷ 4.665B  =  $2.72  (FY2021E: no EPS guide, FY20's $2.28 stands)
+  FY2023E BEAR check: $123.0B × 13.6% ÷ 4.475B  =  $2.84  (scenario $1.48)
+  FY2023E BULL check: $140.9B × 14.0% ÷ 4.475B  =  $3.35  (scenario $3.32)
+  Every 1pp of pre-tax margin ≈ $0.20 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Video subscriber growth            -10.0%   ≥-1.0%    ≥8.0%  ≥151.0%     -7.7%  ⚠ BEAR  █░░░
+  Revenue growth                      +0.0%   ≥10.0%   ≥19.0%  ≥126.0%    +18.7%  ◦ BASE  ██░░
+  Operating cash flow margin change  -510.0bp  ≥-230.0bp  ≥50.0bp  ≥220.0bp   -13.7bp  ◦ BASE  ██░░
+  Capital intensity change          +1270.0bp  ≤620.0bp  ≤-30.0bp  ≤-1150.0bp  -227.9bp  ▲ BULL  ███░
+  Operating margin change           -2440.0bp  ≥-1210.0bp  ≥10.0bp  ≥3370.0bp  +202.4bp  ▲ BULL  ███░
+  Streaming: net effect on video demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.10 / 4.00
+  Market composite:   3.26 / 4.00  (back-solved from $51 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.10  →  Gap -1.16  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenues -4.9%, cable 56% of segment revenues, video subscribers -6.62% (video customers 19,846,000 against 21,254,000 (FY2020 10-K table)); Q3 operating cash flow margin 29.56% (-13.7bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 22.4x FY21E vs a 17.9x 10-yr median (91st percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY21 revenue guide in numbers, Q3 2021 revenue growth +18.7% vs a 8.3% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY20 year-end cash and current investments $11.74B, FY20 free cash flow $13.28B, dividend $1.00 a year, $534 million of repurchases of common stock under repurchase program and employee plans in 2020 (FY2020 10-K statement of cash flows)  (+0.30 × 15%  =  +0.045)
+    +  Own streaming: Peacock, its direct-to-consumer streaming service, launched across the United States in July 2020  (+0.20 × 10%  =  +0.020)
+    -  Online video competition (FY2020 10-K): as consumers turn to streaming, 'the number of Cable Communications’ video customers and subscribers to NBCUniversal’s cable networks decrease'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Video subscriber growth              -7.7%    -10.0%   -2.3%  DBS and phone-company video take share
+  Revenue growth                      +18.7%     +0.0%  -18.7%  Housing, advertising and price pressure
+  Operating cash flow margin change   -13.7bp  -510.0bp  -496.3bp  Programming costs outrun price increases
+  Capital intensity change          -227.9bp  +1270.0bp  +1497.9bp  Boxes and network spend rise with churn
+  Operating margin change           +202.4bp  -2440.0bp  -2642.4bp  Depreciation and costs on slower sales
+  Streaming: net effect on video demand    +2.0/4    +1.0/4  -1.0/4  Online video takes video customers an…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$32  (model)  /  $21 (defined)
+  Bear probability (proxy model):  16.3%
+
+  KEY TRIGGER: video subscriber growth went from -6.9% (Q2 2021) to -7.7% (Q3 2021);
+  the bear case needs video losses that revenue growth (+18.7% now) and the
+  operating cash flow margin no longer absorb. DBS, phone-company and online video services are the competition the 10-K names;
+  pricing and Internet and business services growth must cover the video losses.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.28  (FY2021E: no EPS guide, FY20's $2.28 stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2011 13.8x, 2012 12.7x, 2013 15.3x, 2014 16.4x, 2015 16.4x, 2016 15.4x, 2017 17.0x, 2018 12.0x, 2019 12.1x, 2020 14.2x, 2021 21.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $34/share
+  Current $51 vs Updated EPP $34:  +49%  ⚠ far above floor — large drawdown room
+  Bear $21 vs Updated EPP $34:  -39%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Video subscriber growth                     -1.0       +6.7   BASE floor (vs -8 now)
+  Revenue growth                              10.0       -8.7   BASE floor (vs +19 now)
+  Operating cash flow margin change          -230.0     -216.3   BASE floor (vs -14 now)
+  Capital intensity change                   620.0     +847.9   BASE floor (vs -228 now)
+  Operating margin change                  -1210.0    -1412.4   BASE floor (vs +202 now)
+  Streaming: net effect on video demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.28 × (1+18.8%)² = $3.22
+  At 17x P/E (conservative):  $55/share
+  + Cumul. dividends (2yr):  +$2.06/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $55  (▲4 from $51)
+  Conservative total return:  +11% over 2yr  = +6%/yr
+
+  18.8% EPS growth is what is left once the premium multiple (22.4x)
+  mean-reverts to 17x. Breakeven at 17x needs FY2023E EPS of $2.88,
+  i.e. 12.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $48.15  –  $61.80  (at 22th pct of range)
+  Annual dividend:      $1.00/share  (yield 2.0%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 0.99
+  1-sigma range (1yr):  $39  –  $63  ($51 ± 23%)
+  2-sigma range (1yr):  $27  –  $75
+  ────────────────────────────────────────────────────────────
+  Bear $21 requires:  ~2.5σ price move  (unusual — requires fundamental break)
+  The largest U.S. cable operator with a 1.0 beta: the stock is +6% off its January
+  low while video subscriber growth went from -6.9% (Q2 2021) to -7.7% (Q3 2021).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.48  14.2x  $     21    16.3%      3.4%   +12.8pp  EPS -19.4%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE        3.32  17.9x  $     59    56.8%     11.9%   +44.8pp  EPS +20.8%/yr (Q3 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        3.32  19.2x  $     64    22.7%     41.6%   -18.9pp  EPS +20.8%/yr (FY11-FY20 CAGR); P/E holds its 75th pct
+  XBULL       3.56  21.6x  $     77     4.3%     43.0%   -38.7pp  EPS +25.0%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct
+
+  Proxy EV (2yr): $55  /  Market EV: $68  /  Current: $51
+  Conservative EV (2yr, ④): $55 + $2.06 divs = $57 total value
+  Downside (→ Bear $21): 58.9%   Upside (→ Bull $64): 25.2%   Ratio B 2.33x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $51 the market needs $68 in two years —
+  above the BULL case. That is a market composite of 3.26 against a model
+  read of 2.10: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.33x     +49%    -1.16  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.34x     +49%    -0.43  MODESTLY OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     3.94x     +49%    -1.67  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.95x     +49%    -1.01  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.85x     +49%    -1.30  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.33x     +49%    -0.86  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.33x     +25%    -1.06  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.33x     +49%    -0.59  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2021 print (late January) — the next read on video subscribers (-7.7% now) and the guide
+  (2) Operating cash flow margin — -13.7bp in Q3 2021: programming costs against pricing, what must hold if subscribers do not
+  (3) A FY21 revenue guide in numbers — none yet
+  (4) Capital intensity — capital expenditures 7.1% of revenues in Q3 2021 (-227.9bp): set-top boxes and network against free cash flow
+  (5) Capital return at 22x — In the third quarter of 2021, dividends of $1.2 billion paid and 25.9 million common shares repurchased for $1.5 billion: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $34  |  ADD below ~$50  |  TRIM above $64
+════════════════════════════════════════════════════════════════════════
+

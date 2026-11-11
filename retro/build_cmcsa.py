@@ -30,6 +30,12 @@ From 2014 (retro/README.md, "CMCSA 2014-2017"): each 10-K vintage holds the ten 
 numbers, so BASE takes the latest quarter's reported growth; STREAMING, live from 2015-08-04, joins the watch list from each 10-K's
 consumer-behaviour risk factor (company-acknowledged, no market read: the label and text only).
 
+From 2018 (retro/README.md, "CMCSA 2018-2021"): the 10-K vintages after the 2017 split hold each year as first published, with
+'eps_published' and 'shares_published' dating the pre-split figures so the split restates them; the company's EPS excluding one-offs
+stands for 2017 ($2.06, restated to $2.03 by the Q4 2018 release, 'restates') and 2018 ($2.55); from 2019 its Adjusted EPS also excludes
+amortization of acquisition-related intangible assets, which recurs, so 2019 and 2020 are GAAP (the 2004-2005 rule). Still no outlook
+in numbers; Sky enters the growth as published from the fourth quarter of 2018.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open except Q1 2011's (after the close, dated
 the next trading day); only Q3 2012's came on a Friday.
